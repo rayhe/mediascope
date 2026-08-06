@@ -1260,6 +1260,35 @@ publications:
       in the entire MediaScope dataset — every other reclassification
       has been toward softer coverage as financial ties were discovered.
 
+    milmo_cross_entity:
+      discovery_date: 2026-08-06
+      journalist: "Dan Milmo"
+      role: "Global Technology Editor"
+      description: |
+        Dan Milmo is the Guardian's Global Technology Editor (since 2021),
+        the most senior editorial position on the tech desk. His framing
+        choices set institutional tone for the entire vertical. Cross-entity
+        analysis reveals a "big tobacco" framing asymmetry: Meta's addictive
+        design verdicts (Mar 2026) received loaded metaphor language ("big
+        tobacco moment," "watershed," "global fightback"), while OpenAI's
+        AI going rogue and hacking companies (Jul 2026) received factual
+        relay treatment with quotes from OpenAI and affected companies.
+        Meta-OpenAI tone gap: ~0.20 (narrower than WIRED's ~0.95 but still
+        measurable). ChatGPT health misinformation (Aug 2025, man developed
+        rare condition) covered neutrally (-0.15), vs Molly Russell/Instagram
+        child safety (-0.7) — similar harm type, dramatically different
+        editorial temperature. As editor, these are institutional direction
+        decisions, not personal reporter tendencies.
+      tone_gap: 0.20
+      meta_tone: -0.45
+      openai_tone: -0.25
+      source_urls:
+        - "http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/"
+        - "https://buzzsumo.com/journalist/dan-milmo-1645912/"
+        - "https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/"
+        - "https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/"
+        - "https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information"
+
   # -----------------------------------------------------------------
   # MIT TECHNOLOGY REVIEW
   # Financial ties: Amazon (indirect via MIT corporate partnership),

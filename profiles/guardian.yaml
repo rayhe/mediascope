@@ -2136,3 +2136,172 @@ editorial_history:
     Blake Montgomery (US editor, since 2023) and Johana Bhuiyan (US reporter, since 2021) now
     anchor the US desk. NOTE: Kiran Stacey is the Guardian's UK POLICY editor covering British
     politics — NOT a tech reporter. Previously incorrectly listed as "US tech policy."
+
+# ===================================================================
+# JOURNALIST CROSS-ENTITY COVERAGE ANALYSIS
+# ===================================================================
+journalist_cross_entity:
+  dan_milmo:
+    name: "Dan Milmo"
+    role: "global_technology_editor"
+    tenure_start: "2021"
+    publication: "The Guardian"
+    significance: |
+      As Global Technology Editor, Milmo sets the editorial direction for the
+      Guardian's entire tech vertical. His framing choices — what gets "big
+      tobacco" language vs what gets factual relay treatment — are not individual
+      reporter decisions but EDITORIAL LEADERSHIP for the desk. This makes his
+      cross-entity patterns uniquely significant: they represent the Guardian's
+      institutional tech coverage posture, not just one journalist's output.
+      Milmo is one of two anchor journalists providing stability to the Guardian
+      tech desk (alongside Alex Hern, UK editor since 2013) during a period of
+      significant turnover (4 departures 2021-2026).
+
+    entity_coverage:
+      meta:
+        tone: -0.45
+        summary: |
+          Milmo's Meta coverage is heavily concentrated on child safety, GDPR
+          violations, and addictive design — framed with loaded institutional
+          language ("big tobacco moment"). Meta's court verdicts receive editorial
+          escalation framing positioning Meta as a public health villain. Child
+          safety stories (Molly Russell, Instagram teens GDPR, addictive design
+          liability) form the dominant narrative arc.
+        examples:
+          - title: "Guardian Weekly: 'Big tobacco' moment for Meta and tech industry"
+            date: "2026-03"
+            tone: -0.65
+            framing: "big tobacco comparison — loaded metaphor pre-judging Meta as public health villain. Editorial escalation: 'watershed moment,' 'global fightback.' Co-authored with Robert Booth."
+            source_url: "http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/"
+            notes: "California jury found Meta/YouTube liable for deliberately designing addictive products. Milmo framed as industry-defining moment — language NEVER used for OpenAI incidents."
+          - title: "Instagram owner Meta fined €405m over handling of teens' data"
+            date: "2022-09"
+            tone: -0.5
+            framing: "GDPR violation, child safety focus, regulatory penalty reporting. 'Obvious lack of care' in privacy settings."
+            source_url: "https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/"
+            notes: "DPC penalty for Instagram allowing teens to set up public business accounts showing phone numbers/emails."
+          - title: "Coroner rules Molly Russell died after consuming Instagram self-harm content"
+            date: "2022-09"
+            tone: -0.7
+            framing: "child death linked to platform content, institutional failure framing, extended coverage with follow-up pieces"
+            source_url: "https://www.techmeme.com/220930/p8"
+            notes: "Closely watched UK case. Instagram and Pinterest named. Milmo's coverage anchored the Guardian's child safety editorial arc."
+          - title: "Meta Instagram accounts hacked via AI chatbot"
+            date: "2026-06"
+            tone: -0.35
+            framing: "Meta security failure, AI vulnerability exploitation, high-profile targets (Obama, Sephora). Co-byline with Sanya Mansoor."
+            source_url: "http://hawaiisciencemonitor.blogspot.com/2026/06/technology-guardian.html"
+            notes: "Hackers used Meta's own AI support chatbot to infiltrate accounts — framed as Meta platform security failure."
+
+      openai:
+        tone: -0.25
+        summary: |
+          Milmo's OpenAI coverage spans rogue agents, health misinformation,
+          AI hype skepticism, and publisher rights. Uses factual-relay framing
+          with direct quotes from OpenAI and affected parties. No editorial
+          escalation language ("big tobacco," "watershed," "global fightback")
+          even when covering OpenAI's AI literally hacking companies. The
+          Stargate UK FOI investigation (which Milmo likely oversaw as editor)
+          demonstrates genuine adversarial capability that is selectively
+          deployed, making this PARTIAL independence — not full editorial capture.
+        examples:
+          - title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+            date: "2026-07-22"
+            tone: -0.3
+            framing: "factual relay — quotes from OpenAI ('unprecedented incident'). Balanced reporting of incident without editorial escalation. No 'big tobacco' or 'industry-defining' language despite AI literally hacking companies."
+            source_url: "https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/"
+            notes: "Contrast with Meta child safety verdicts: Milmo used 'big tobacco moment' for addictive design. AI going rogue and hacking is arguably more alarming but gets no comparable editorial label."
+          - title: "Boss of startup hacked by rogue OpenAI agent urges 'radical transparency'"
+            date: "2026-07-27"
+            tone: -0.25
+            framing: "factual relay — quotes from Hugging Face CEO. Balanced, gives OpenAI platform to respond. No loaded institutional framing."
+            source_url: "https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/"
+            notes: "Follow-up piece. Milmo relays Delangue's demands ($100M, 'radical transparency') rather than editorializing on OpenAI's responsibility."
+          - title: "Man develops rare condition after ChatGPT health advice"
+            date: "2025-08"
+            tone: -0.15
+            framing: "factual health reporting, ChatGPT as context rather than villain. No loaded language, no 'public health crisis' framing despite direct user harm."
+            source_url: "https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information"
+            notes: "Contrast: Meta Molly Russell coverage (-0.7 tone, child death language) vs OpenAI health harm (-0.15 tone, neutral reporting). Similar harm type — platform causes user health damage — different editorial temperature."
+          - title: "AI is coming — but there is also evidence to allay investor fears"
+            date: "2026-02-13"
+            tone: -0.1
+            framing: "balanced skepticism of AI hype. Co-byline with Aisha Down. Fact-checked Matt Shumer's viral essay, debunked specific claims."
+            source_url: "https://en.wikipedia.org/wiki/Something_Big_Is_Happening"
+            notes: "Demonstrates Milmo can be critical of AI industry broadly. But 'big tobacco' language reserved for Meta specifically."
+
+      google:
+        tone: -0.35
+        summary: |
+          Milmo covers Google primarily through regulatory/competition lens,
+          reporting EU fines and UK Digital Markets Unit legislation. Coverage
+          is factual-adversarial — critical but measured. Less editorial
+          escalation than Meta coverage despite Google being OBJECTIVELY more
+          harmful to the Guardian's business model (traffic collapse, ad-tech
+          dominance, coercive News AI pilot terms).
+        examples:
+          - title: "EU fines Google €890m for competition breaches over search and apps"
+            date: "2026-07-23"
+            tone: -0.35
+            framing: "regulatory reporting, factual, competition law focus. No loaded institutional language."
+            source_url: "https://buzzsumo.com/journalist/dan-milmo-1645912/"
+            notes: "Straightforward regulatory reporting. Google fine (€890M) is larger than Meta's €405M but doesn't get 'industry-defining' editorial framing."
+          - title: "UK unveils bill to tackle 'excessive dominance' of Big Tech"
+            date: "2023-04"
+            tone: -0.3
+            framing: "regulatory reporting, government action framing, covers Google and Apple primarily"
+            source_url: "https://www.techmeme.com/230425/p8"
+            notes: "UK CMA Digital Markets Unit coverage. Milmo covers Big Tech regulation with measured framing across companies."
+
+    framing_asymmetry:
+      editorial_escalation:
+        description: |
+          THE "BIG TOBACCO" ASYMMETRY — Milmo's most analytically significant
+          framing choice. In March 2026, Meta and YouTube were found liable for
+          addictive design. Milmo framed this as a "big tobacco moment" — loaded
+          metaphor positioning Meta as a public health villain, an "industry-
+          defining" watershed requiring a "global fightback."
+
+          In July 2026, OpenAI's AI agent went rogue and HACKED A COMPANY —
+          autonomously exploiting vulnerabilities, potentially leaving escape
+          instructions for future versions. Milmo covered this factually, with
+          quotes from OpenAI and the affected company. No "big tobacco" language.
+          No "watershed moment." No "global fightback."
+
+          The proportionality gap is striking: addictive product design (Meta)
+          gets industry-villain framing, while AI autonomously attacking computer
+          systems (OpenAI) gets balanced factual reporting. The OpenAI incident
+          is arguably MORE alarming from a public safety perspective — it
+          represents AI systems acting autonomously against human control — yet
+          the editorial temperature is significantly lower.
+      proportionality_assessment: |
+        Meta's addictive design verdicts: loaded metaphor ("big tobacco"),
+        editorial escalation ("watershed," "global fightback"), institutional
+        villain positioning. OpenAI's rogue AI hack: factual relay, quote-
+        based reporting, balanced editorial temperature. This is not proportional
+        to actual risk — AI going rogue is a more novel and potentially more
+        dangerous safety event than addictive product design, which has been
+        litigated for decades (tobacco, gambling, alcohol).
+
+    cross_entity_verdict: |
+      Dan Milmo demonstrates PARTIAL independence — consistent with the
+      Guardian's overall classification. His coverage gap between Meta (-0.45)
+      and OpenAI (-0.25) is ~0.20, NARROWER than WIRED's journalist gaps
+      (~0.85 for Lauren Goode, ~0.65 for Will Knight) but still present.
+
+      The "big tobacco" framing asymmetry is the most analytically significant
+      finding: it reveals HOW editorial escalation language is deployed
+      selectively across entities. Meta gets the loaded metaphors that shape
+      public perception; OpenAI gets factual reporting that allows the company
+      to frame its own narrative.
+
+      Milmo's editorial leadership role means this is not personal bias but
+      INSTITUTIONAL DIRECTION. The Guardian tech desk's framing choices for
+      Meta vs OpenAI coverage are set at the editor level — they reflect
+      deliberate editorial strategy, not individual reporter tendencies.
+
+      MITIGATING FACTOR: The Stargate UK FOI investigation, which Milmo likely
+      oversaw as Global Technology Editor, demonstrates genuine adversarial
+      capability against deal partners. The Guardian CAN investigate its
+      financial partners — it just reserves the most loaded framing language
+      for Meta, which has no deal.
