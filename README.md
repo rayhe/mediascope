@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,011 | Across 169 test files |
+| Tests | 4,039 | Across 170 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4011 tests** across 169 test files, each covering a different analytical capability:
+MediaScope has **4039 tests** across 170 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -552,6 +552,7 @@ MediaScope has **4011 tests** across 169 test files, each covering a different a
 | `test_cannes_contractors.py` | 40 | Wired "Cannes" contractors story: Scale AI/Covalen/Character.AI cluster split (AI Infrastructure / AI Chatbot Products / Outsourcing-Contractors), Rumman Chowdhury + Humane Intelligence entity detection, Sama outsourcing context-aware detection, catastrophizing "death of" proper-noun exclusion, Outlook software-product source exclusion, deception/impersonation loaded_language patterns, Business Insider/Daily Beast source fragment leak prevention, headline-aware topic boosting, cross-sentence industry_normalization_undercut detection, tone gap regression (child-safety EI + Path B dynamic blend) |
 | `test_type_d_fixes.py` | 16 | Compound publication source extraction (Business Insider, Daily Beast, Daily Mail as organizational sources), bare confession framing patterns (no "in" prefix) |
 | `test_type_d_pattern_fixes_aug5.py` | 28 | Pattern fixes promoting 4 xfails: scale_magnitude $NNN million detection, loaded_language plural targets, investor_advisory parenthetical clause tolerance, no_comment_implication contraction forms (didn't/hasn't), cross-pattern regression guards |
+| `test_type_d_deal_count_cascade_aug6.py` | 28 | Post-Snowflake/xAI cascade validation: deal count consistency (19 total), xAI publisher-invisible entity integration, Snowflake Cortex marketplace documentation, stale count guards, Project Giraffe documentation, advertising_dependency type |
 | `test_verge_openai_coverage_asymmetry.py` | 28 | The Verge × OpenAI institutional coverage asymmetry: four-lane reporter system, io device paradox (camera-equipped AI wearable gets zero surveillance framing from OpenAI, 4+ terms for Meta), financial correlation, selective disclosure, reporter assignment taxonomy |
 | `test_type_d_relationship_types.py` | 18 | New financial relationship types: advertising_dependency and adversarial_litigation in FINANCIAL_TIE_WEIGHTS, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions, weight ordering validation |
 | `test_disclosure_audit.py` | 24 | Cross-publication financial disclosure audit: WSJ unique disclosure practice (Meta + OpenAI partnerships in articles), WIRED never-disclosed OpenAI deal, FT non-disclosure pattern, Atlantic dual Apple non-disclosure (ownership + News+), symmetric deals → balanced coverage correlation, 8 excluded publishers with meta_deal=none, 15+ total competitor deals |

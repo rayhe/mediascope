@@ -292,9 +292,9 @@ class TestAggregateIncentiveMatrix:
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]["publications"]
         assert len(matrix) == 8
 
-    def test_total_competitor_deals_is_eighteen(self, entities):
+    def test_total_competitor_deals_is_nineteen(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]
-        assert matrix["total_competitor_deal_count"] == 18
+        assert matrix["total_competitor_deal_count"] == 19
 
     def test_total_meta_deals_is_zero(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]

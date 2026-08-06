@@ -141,9 +141,9 @@ class TestFoxBusinessFullArticle:
             return f.read()
 
     def test_full_article_device_count(self, fox_article):
-        """Full article should detect exactly 8 framing devices."""
+        """Full article should detect exactly 9 framing devices (after million pattern fix)."""
         devices = detect_framing_devices(fox_article)
-        assert len(devices) == 8
+        assert len(devices) == 9
 
     def test_full_article_device_types(self, fox_article):
         """Full article device type distribution."""
@@ -151,7 +151,7 @@ class TestFoxBusinessFullArticle:
         type_counts = {}
         for d in devices:
             type_counts[d.device_type] = type_counts.get(d.device_type, 0) + 1
-        assert type_counts.get("scale_magnitude", 0) == 4
+        assert type_counts.get("scale_magnitude", 0) == 5
         assert type_counts.get("loaded_language", 0) == 1
         assert type_counts.get("recovery_narrative", 0) == 2
         assert type_counts.get("kicker_framing", 0) == 1

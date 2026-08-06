@@ -173,12 +173,6 @@ class TestWSJAIBacklashExecThreats:
             f"4 separate company non-responses. Got devices: {devices}"
         )
 
-    @pytest.mark.xfail(
-        reason="scale_magnitude pattern does not fire on percentage-change or "
-               "multiplier language ('sevenfold', '150%', '85.5%') in this "
-               "article. Gap: multiplier words and percentage-change markers "
-               "should trigger scale_magnitude. Discovered Jul 16, 2026."
-    )
     def test_scale_magnitude_detected(self, result):
         """'Sevenfold', '150%', '38.1%', '$5.6 million' should trigger
         scale/magnitude framing."""

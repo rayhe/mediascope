@@ -220,11 +220,11 @@ class TestGoogleCoerciveStructure:
 # ===================================================================
 
 class TestUpdatedAggregateCounts:
-    """Total counts reflect the new Perplexity deal."""
+    """Total counts reflect Perplexity + Snowflake deals (19 total as of Aug 5 23:00 PT)."""
 
-    def test_total_is_18_not_17(self, entities):
+    def test_total_is_19_not_17(self, entities):
         matrix = entities['meta_ai_deals']['aggregate_incentive_matrix']
-        assert matrix['total_competitor_deal_count'] == 18
+        assert matrix['total_competitor_deal_count'] == 19
 
     def test_wired_is_5_not_4(self, entities):
         pubs = entities['meta_ai_deals']['aggregate_incentive_matrix']['publications']
@@ -242,9 +242,9 @@ class TestUpdatedAggregateCounts:
         individual = sum(p['competitor_deals'] for p in matrix['publications'])
         assert individual == matrix['total_competitor_deal_count']
 
-    def test_critical_finding_mentions_18(self, entities):
+    def test_critical_finding_mentions_19(self, entities):
         finding = entities['meta_ai_deals'].get('critical_finding', '')
-        assert '18' in finding
+        assert '19' in finding
 
     def test_critical_finding_mentions_perplexity(self, entities):
         finding = entities['meta_ai_deals'].get('critical_finding', '').lower()
