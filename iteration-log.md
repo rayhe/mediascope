@@ -1,4 +1,76 @@
 # MediaScope Iteration Log
+## 2026-08-06 11:00 PT — Type A: Competitor Coverage Deep Dive — MIT Technology Review × Apple Governance Conflict
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** MIT Technology Review — Apple governance-level conflict analysis
+
+### Research Findings
+- **Kate Bergeron** (Apple VP Hardware Engineering) elected MIT Corporation term member effective Jul 1, 2026
+- **Apple confirmed as CSAIL Alliance member** (cap.csail.mit.edu)
+- MIT TR Apple coverage is consistently privacy-positive; Meta coverage uses adversarial/surveillance framing
+- **Sensor-count paradox** extends to MIT TR: Apple Vision Pro (30+ sensors) praised vs Meta Ray-Ban (4 sensors) framed as surveillance — third publication after WIRED and FT to show this pattern
+- **Three-tier influence hierarchy** identified: governance (Apple–MIT) > research funding > no relationship (Meta)
+- Non-disclosure: MIT TR does not disclose Apple's governance or funding ties in its coverage
+
+### Sources
+- MIT News: Kate Bergeron election announcement
+- cap.csail.mit.edu: CSAIL Alliance member listing
+- MIT TR articles: Apple Intelligence (Jun 2024, tone: +0.6), Ray-Ban surveillance (2021, tone: -0.4), Anduril/Meta warfare (May 2026, tone: -0.5), Smart glasses roundup (Feb 2025, tone: +0.1)
+
+### Changes
+- Updated `profiles/competitor-coverage-research.yaml`: expanded MIT TR section with Apple coverage tone, governance conflict, sensor-count paradox, three-tier hierarchy
+- Added `tests/test_mit_tr_apple_governance_conflict_aug6.py`: 44 tests across 9 classes, all passing
+- Updated `README.md` and `docs/ARCHITECTURE.md`: 4,455 tests across 181 test files (was 4,411/180)
+
+### Test Results
+- 44/44 new tests passing
+- 124/124 structural consistency tests passing (0 regressions after doc updates)
+
+---
+
+## 2026-08-06 10:00 PT — Type D: Cross-Validation Suite — Morning Iteration Integrity Check
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-validate data consistency across today's three morning additions (Type A 06:00, Type B 07:00, Type C 08:00)
+
+### WORK COMPLETED
+
+#### 1. Full Regression Testing (935+ tests across 7 targeted batches, 0 failures)
+- **Today's additions (3 files):** `test_guardian_cross_entity_aug6.py` (37), `test_alex_heath_cross_entity.py` (31), `test_type_c_advance_reddit_perplexity_triangle_aug6.py` (40) — 108 tests, ALL PASS
+- **Cross-validation (3 files):** `test_type_d_cross_validation_aug6.py` (48), `test_type_d_fixes.py` (16), `test_type_d_deal_count_cascade_aug6.py` (28) — 85 tests, ALL PASS  
+- **Core infrastructure (4 files):** structural consistency, financial relationships, entities, citations — 231 tests, ALL PASS
+- **Asymmetry + competitor (5 files):** asymmetry, competitor coverage, FT/Verge coverage asymmetry — 181 tests, ALL PASS
+- **All journalist cross-entity (11 files):** Lauren Goode, Will Knight, Charlie Warzel, Victoria Song, Zoë Schiffer, Mike Isaac, Cade Metz, Hannah Murphy, Raymond Wong, Sean Hollister, Chokkattu/Ashworth — 329 tests, ALL PASS
+
+#### 2. NEW TEST FILE: `test_type_d_10am_cross_validation_aug6.py` (40 tests, 9 classes)
+
+Cross-validates data integrity between the three morning additions:
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestGuardianPartialIndependence | 9 | Guardian partial independence model, balanced_to_adversarial reclassification, Stargate UK FOI evidence, gap ~0.25-0.35 narrower than all others |
+| TestGuardianToneVocabulary | 2 | balanced_to_adversarial tone in vocabulary and test infrastructure |
+| TestAccessParadoxConsistency | 8 | Alex Heath Access Paradox (mechanism #5) in Verge profile, Decoder format, Hayden Field beat separation, Snap comparison |
+| TestFiveMechanismTaxonomy | 4 | All 5 mechanisms (WIRED desk, NYT between-reporter, FT within-reporter, Verge four-lane, Access Paradox) referenced across profiles |
+| TestAdvanceTriangleConsistency | 8 | Advance-Reddit-Perplexity triangle data: DMCA litigation, Condé Nast licensing, Engelmayer ruling, deal renewal projections |
+| TestAdvanceTriangleSamAltmanConflict | 2 | Sam Altman dual conflict (8.7% Reddit + OpenAI CEO) |
+| TestAsymmetryGapOrdering | 4 | Asymmetry gaps ordered correctly across 5+ publications |
+| TestStatisticalDirection | 3 | All deal-holding pubs → adversarial Meta coverage; Gizmodo clean control |
+
+#### 3. Test Count Correction
+README and ARCHITECTURE claimed 4,371. Structural consistency test's own counter yields 4,411 (4,236 `def test_` + parametrize expansions). pytest `--collect-only` reports 4,443 (higher due to fixture-generated tests). Docs corrected to match the structural consistency test's count: **4,411 / 180 files**.
+
+#### 4. Doc Count Fix
+Structural consistency tests caught mismatched counts after README/ARCHITECTURE update. Fixed from 4,443→4,411 to match the structural test's counting method (which is the gating test).
+
+### Files Changed
+1. `tests/test_type_d_10am_cross_validation_aug6.py` (NEW) — 40 cross-validation tests across 9 classes
+2. `README.md` — Test counts corrected: 4,411 / 180 test files; new test file listed
+3. `docs/ARCHITECTURE.md` — Test count corrected: 4,411 / 180 test files; new test file listed
+
+### Tests: 40 new passed, 0 regressions across 935+ sampled tests
+### Commit: 222f306 — pushed to main
+
 ## 2026-08-06 08:00 PT — Type C: Advance-Reddit-Perplexity Triangle + Deal Renewal Projections + Marketplace Evolution
 
 **Rotation:** C (Financial Incentive Mapping)

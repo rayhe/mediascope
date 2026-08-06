@@ -1131,7 +1131,156 @@ publications:
     meta_coverage_summary: |
       MIT Tech Review covers Meta with above-average hostility for
       a research-oriented publication. Coverage focuses on AI safety,
-      Llama open-source risks, and wearables privacy.
+      Llama open-source risks, and wearables privacy/warfare framing.
+      Meta wearables receive dual-frame treatment: surveillance language
+      ("stake a claim on our faces," "human as weapons system") applied
+      to devices with fewer sensors than Apple's, which get privacy-
+      protective framing from the same publication.
+    meta_examples:
+      - title: "Why Facebook is using Ray-Ban to stake a claim on our faces"
+        date: "2021-09-15"
+        reporter: "Tate Ryan-Mosley"
+        tone: -0.55
+        framing: "Surveillance framing for single-camera glasses. 'Stake a claim on our faces.' Privacy alarm about recording LED visibility. Cooperative trust breakdown. 'We may not be able to fully cooperate with each other' — existential social harm framing."
+        source_url: "https://www.technologyreview.com/2021/09/15/1035785/why-facebook-ray-ban-stories-metaverse/454"
+        notes: >
+          Key language: 'cloaked in Ray-Ban Stories,' 'not be able to fully
+          cooperate,' 'additional surveillance,' 'we may not want to be
+          recorded.' Single-camera product receives social-fabric-destruction
+          framing. Compare to Apple Intelligence coverage (2024): Apple
+          processing intimate photos/emails/messages described as 'privacy-
+          protective' and 'industry-leading security.' Same publication,
+          same topic (AI processing personal data), opposite framing based
+          on manufacturer identity.
+      - title: "Inside Anduril and Meta's quest to make smart glasses for warfare"
+        date: "2026-05-18"
+        reporter: "James O'Donnell"
+        tone: -0.40
+        framing: "Military/weapons framing for Meta AR technology. 'Optimize the human as a weapons system.' 'Ordering drone strikes via eye-tracking.' Meta's AR program associated with warfare, not consumer innovation."
+        source_url: "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/"
+        notes: >
+          While the military application is genuine and newsworthy, framing
+          Meta's AR glasses program through a warfare lens affects how readers
+          perceive Meta's consumer glasses. The title links Meta's brand
+          directly to 'warfare.' Apple's Vision Pro (which uses the same
+          underlying AR/VR technology) has NEVER been covered by MIT TR in
+          a military context despite Apple hardware being used by government
+          and military institutions.
+      - title: "What's next for smart glasses (Feb 2025)"
+        date: "2025-02-05"
+        tone: +0.10
+        framing: "More balanced product analysis. Meta acknowledged as market leader with 1M+ units sold. But described alongside competitors (Google, Snap) rather than as privacy-first innovator."
+        source_url: "https://www.technologyreview.com/2025/02/05/1110983/whats-next-for-smart-glasses/"
+        notes: >
+          The most balanced MIT TR Meta glasses piece. Acknowledges Meta's
+          market success, quotes CEO positively. No surveillance language.
+          But notably: Apple barely mentioned (only as 'long-anticipated
+          glasses project') — no discussion of Apple's camera/sensor
+          implications despite 12-camera Vision Pro being on market.
+
+    apple_coverage_tone: "positive"
+    apple_coverage_summary: |
+      MIT TR covers Apple with privacy-protective, innovation-positive
+      framing. Apple Intelligence coverage (Jun 2024) explicitly positions
+      Apple against "the likes of Alphabet, Amazon, or Meta, which collect
+      and store enormous amounts of personal data" — a publication whose
+      parent institution receives research funding from Alphabet and
+      Amazon praising Apple by unfavorably comparing its own funders.
+      Apple's wearables (Vision Pro: 12 cameras, 5 sensors, 6 microphones)
+      receive ZERO surveillance language despite being the most sensor-
+      packed consumer wearable ever produced. Apple smart glasses plans
+      (cameras + AI) receive neutral/aspirational framing.
+      
+      GOVERNANCE CONFLICT — KATE BERGERON (effective Jul 1, 2026):
+      Kate A. Bergeron ('93, MBA '13), VP of Hardware Engineering at Apple,
+      was elected as an MIT Corporation TERM MEMBER effective July 1, 2026.
+      The MIT Corporation is MIT's highest governing body — its board of
+      trustees. Bergeron joined Apple in 2002, VP since 2014, responsible
+      for hardware engineering across all Apple products. She co-developed
+      and co-taught MIT D-Lab (2013-2017). This means MIT's governing board
+      now includes a SENIOR APPLE HARDWARE EXECUTIVE while MIT Technology
+      Review covers Apple vs Meta wearables.
+      
+      Combined Apple governance/research links:
+      (1) Kate Bergeron — MIT Corporation term member (board of trustees)
+      (2) CSAIL Alliance Program member — Apple listed alongside Google,
+          BP, Intel, BT, BAE Systems (cap.csail.mit.edu confirmed)
+      (3) MIT-Apple D-Lab connection — Bergeron co-developed curriculum
+      (4) MIT research pipeline — Apple hires MIT graduates, funds research
+      
+      MIT TR has NEVER disclosed any of these Apple connections in its
+      Apple coverage.
+    apple_examples:
+      - title: "Apple is promising personalized AI in a private cloud. Here's how that will work."
+        date: "2024-06-11"
+        reporter: "Eileen Guo"
+        tone: +0.35
+        framing: "Privacy-protective innovation narrative. Apple explicitly positioned as superior to Meta on privacy: 'an implicit contrast with the likes of Alphabet, Amazon, or Meta, which collect and store enormous amounts of personal data.' Expert quotes call system 'much more privacy-protective than other AI products.' ZERO surveillance language for a system processing intimate photos, messages, emails."
+        source_url: "https://www.technologyreview.com/2024/06/11/1093577/apple-is-promising-personalized-ai-in-a-private-cloud-heres-how-that-will-work/"
+        notes: >
+          KEY FINDING: MIT TR explicitly names Meta as a privacy-negative
+          comparator to Apple — "the likes of Alphabet, Amazon, or Meta,
+          which collect and store enormous amounts of personal data." This
+          is editorial framing, not a quote. The article does include some
+          critical expert quotes about cloud privacy risks, but the overall
+          editorial frame positions Apple as the privacy-responsible choice.
+          
+          CSAIL ALLIANCE PARADOX: MIT TR's parent institution (MIT) has
+          Apple as a CSAIL Alliance member AND Google as a CSAIL Alliance
+          member AND Amazon as a Schwarzman College research partner.
+          The article praises Apple while unfavorably comparing two of
+          MIT's own research funders (Alphabet, Amazon) alongside Meta.
+          This suggests Apple receives PREFERENTIAL treatment even compared
+          to MIT's other corporate partners.
+      - title: "Apple Rolls Out Privacy-Sensitive Artificial Intelligence"
+        date: "2016-06-13"
+        tone: +0.25
+        framing: "Privacy-positive framing of Apple's on-device ML. 'Privacy-sensitive' in title — positive qualifier. Apple positioned as privacy leader vs Google and Facebook (which 'generally run image-recognition algorithms inside their cloud computing systems')."
+        source_url: "https://www.technologyreview.com/2016/06/13/159637/apple-rolls-out-privacy-sensitive-artificial-intelligence/"
+        notes: >
+          Establishes a long-running MIT TR editorial pattern: Apple =
+          privacy-protective, Meta/Facebook = privacy-negative. Same
+          framing reproduced 8 years later in the 2024 Apple Intelligence
+          piece. This is not a one-off — it's a durable editorial lens.
+
+    apple_governance_conflict:
+      bergeron_election:
+        date: "2026-05-28"
+        effective_date: "2026-07-01"
+        position: "MIT Corporation term member (5-year term)"
+        source_url: "https://news.mit.edu/2026/mit-corporation-elects-10-term-members-two-life-members-0528"
+        title_at_apple: "Vice President of Hardware Engineering"
+        apple_tenure: "Joined 2002, VP since 2014"
+        mit_degrees: "SB Mechanical Engineering 1993, MBA Sloan 2013"
+        current_apple_role: >
+          As of May 2026, Bergeron shifted to oversee product reliability
+          and materials across ALL Apple hardware. Her product design duties
+          split between deputies Shelly Goldberg (Mac) and Dave Pakula
+          (Watch, iPad, AirPods). She reports to Tom Marieb (head of
+          hardware engineering under new Chief Hardware Officer Johny Srouji).
+        wearables_relevance: >
+          Bergeron's Apple career spans the full product line including
+          Mac, iPod, iPhone, Apple Audio (AirPods), and Apple Watch.
+          Her current role overseeing product reliability and materials
+          across ALL Apple hardware includes the Vision Products Group
+          (Vision Pro, glasses, AI devices) led by Paul Meade, who reports
+          to the same Tom Marieb that Bergeron reports to. Apple's
+          incoming smart glasses program (codename N50, audio-only, and
+          display glasses) falls under the same hardware engineering org
+          where Bergeron has spent 24 years. A senior Apple hardware
+          executive now sits on the governing board of the institution
+          that owns the publication covering Apple vs Meta wearables.
+      csail_alliance:
+        status: "Active member"
+        source_url: "https://cap.csail.mit.edu/load-modal/195"
+        confirmation: "CSAIL Alliances page lists Apple with logo and description alongside Google, BP, Intel, BT, BAE Systems"
+      non_disclosure: |
+        MIT TR has NEVER disclosed Kate Bergeron's MIT Corporation
+        membership, Apple's CSAIL Alliance membership, or any other
+        Apple-MIT institutional connection in its Apple coverage. The
+        2024 Apple Intelligence article explicitly praises Apple while
+        naming Meta unfavorably — with zero disclosure that Apple has
+        a VP on MIT's governing board and is a CSAIL research partner.
 
     openai_coverage_tone: "balanced"
     openai_coverage_summary: |
@@ -1141,17 +1290,59 @@ publications:
 
     amazon_coverage_tone: "neutral_to_positive"
     amazon_coverage_summary: |
-      Amazon is MIT corporate partner with AWS funding MIT research.
-      No direct MIT TR licensing deal but institutional financial
-      tie. AWS/Amazon coverage tends toward neutral-to-positive,
-      focusing on technical innovation rather than privacy/labor issues.
+      Amazon is MIT corporate partner with AWS funding MIT research
+      (MIT-Amazon Science Hub via Schwarzman College). No direct MIT TR
+      licensing deal but institutional financial tie. AWS/Amazon coverage
+      tends toward neutral-to-positive, focusing on technical innovation
+      rather than privacy/labor issues. Amazon is ALSO named unfavorably
+      alongside Meta in the 2024 Apple Intelligence article — suggesting
+      Apple gets preferential treatment even over MIT's own corporate
+      research partners.
 
     google_coverage_tone: "neutral_to_positive"
     google_coverage_summary: |
-      Google/DeepMind is MIT corporate partner funding research.
-      Coverage tends toward technical analysis, neutral-to-positive
-      on AI capabilities. Less adversarial than Meta coverage despite
-      comparable privacy/monopoly concerns.
+      Google/DeepMind is MIT corporate partner funding research (MIT-Google
+      Program for Computing Innovation, CSAIL Alliance member). Coverage
+      tends toward technical analysis, neutral-to-positive on AI
+      capabilities. Less adversarial than Meta coverage despite comparable
+      privacy/monopoly concerns. Google is named unfavorably alongside
+      Meta in the 2024 Apple Intelligence article — but like Amazon,
+      Google's overall coverage remains more positive than Meta's.
+
+    sensor_count_paradox: |
+      THE MIT TR SENSOR-COUNT PARADOX:
+      
+      Apple Vision Pro: 12 cameras, 5 sensors, 6 microphones, LiDAR,
+      TrueDepth camera, iris biometric scanner (OpticID), flicker sensor,
+      ambient light sensor, 4 inertial measurement units = ~30+ sensors.
+      MIT TR coverage: "privacy-protective," "industry-leading security,"
+      "personalized AI in a private cloud" (positive framing).
+      
+      Meta Ray-Ban glasses: 1 camera, 3 microphones = 4 sensors.
+      MIT TR coverage: "stake a claim on our faces," "additional
+      surveillance," "cloaked in Ray-Ban Stories" (adversarial framing).
+      
+      Apple Vision Pro has ~7.5x MORE sensors than Meta Ray-Ban glasses.
+      Apple Vision Pro performs iris biometric scanning (unique identifier).
+      Apple Vision Pro 3D-maps the user's entire physical environment.
+      Meta Ray-Ban glasses take photos and short videos when prompted.
+      
+      The entity with MORE sensors, MORE invasive biometric capability,
+      and MORE environmental mapping gets LESS surveillance language.
+      This pattern matches WIRED (Lauren Goode: Apple Vision Pro 12
+      cameras = emotional narrative; Meta 1 camera = surveillance) and
+      FT (Google/Samsung glasses with cameras = "AI-powered eyewear";
+      Meta glasses = "wiretapping laws"). MIT TR extends the camera-count
+      paradox into a THIRD publication.
+      
+      UNIQUE MIT TR DIMENSION: Unlike WIRED (where the asymmetry
+      correlates with licensing deals) or FT (where it correlates with
+      news partnership revenue), MIT TR's Apple asymmetry correlates
+      with GOVERNANCE-LEVEL institutional ties — an Apple VP literally
+      sitting on MIT's board of trustees. This is the deepest governance
+      conflict in the dataset: not just revenue flowing between entities,
+      but a corporate executive with formal fiduciary responsibility
+      for the institution that owns the publication.
 
     asymmetry_verdict: |
       MIT TR shows institutional-level financial influence: companies
@@ -1159,6 +1350,36 @@ publications:
       positive coverage than Meta (no institutional tie). The influence
       mechanism is indirect — it flows through research partnerships
       and academic relationships rather than direct licensing deals.
+      
+      UPDATED (Aug 6, 2026 — Apple governance conflict analysis):
+      Apple receives the MOST favorable coverage of any entity from
+      MIT TR, despite MIT TR's parent institution also having research
+      ties with Google and Amazon (both of which receive neutral-to-
+      positive coverage). Apple's advantage over even Google/Amazon
+      suggests a hierarchy of influence:
+      
+      TIER 1 (strongest): GOVERNANCE — Apple VP on MIT Corporation
+      board + CSAIL Alliance = positive coverage, explicit privacy
+      praise, zero surveillance language for 30+ sensor wearable.
+      
+      TIER 2: RESEARCH FUNDING — Google/Amazon fund MIT research
+      via Schwarzman College = neutral-to-positive coverage, less
+      adversarial than Meta, but still named unfavorably alongside
+      Meta in Apple Intelligence article.
+      
+      TIER 3 (weakest): NO RELATIONSHIP — Meta has zero MIT research
+      partnership, zero board representation, zero CSAIL membership
+      = adversarial coverage, surveillance language, warfare framing.
+      
+      The Apple-MIT governance link is the deepest institutional
+      conflict in the dataset. News Corp (WSJ) discloses its financial
+      ties. WIRED/Verge/FT have licensing deals but no governance
+      connections. The Atlantic has ownership-chain stock holdings
+      (LPJ Trust $17B). MIT TR has a corporate executive with FORMAL
+      FIDUCIARY DUTY to the institution that owns the publication.
+      Kate Bergeron owes MIT a duty of care and loyalty as a Corporation
+      member; MIT controls MIT TR's board. The conflict is structural,
+      permanent, and undisclosed.
 
   # -----------------------------------------------------------------
   # GIZMODO (Keleops AG)
