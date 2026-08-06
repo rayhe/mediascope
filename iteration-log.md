@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-08-06 14:00 PT — Type D: Cross-Validation Suite — Afternoon Iteration Integrity Check
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-validate data consistency across afternoon iterations (11:00 Type A, 12:00 Type B, 13:00 Type C)
+
+### WORK COMPLETED
+
+#### 1. Targeted Regression Testing (608+ tests, 0 failures after fixes)
+- **Afternoon additions (3 files):** MIT TR governance (44), Mims cross-entity (34), Google ad dependency (41) — 119 tests, ALL PASS
+- **Core infrastructure (6 files):** structural consistency, financial relationships, entities, citations, asymmetry, competitor coverage — 318 tests, ALL PASS
+- **Prior Type D suites (6 files):** 10am cross-validation, fixes, deal count cascade, relationship types, pattern fixes — 171 tests, ALL PASS
+
+#### 2. DATA GAPS FOUND AND FIXED
+
+| Issue | Source | Fix |
+|-------|--------|-----|
+| MIT TR `competitor_relationships.apple` had `financial_tie: "none"` — no governance data | 11:00 Type A added governance to research file only, not profile | Updated to `financial_tie: "indirect"` with full Bergeron/CSAIL governance conflict |
+| MIT TR Apple `coverage_prediction` used verbose format | Schema only allows: softer, neutral, adversarial, unknown | Changed to `"softer"` |
+| Mims cross-entity in research file had no source URLs | Iteration log had 3 URLs but they weren't in the YAML | Added `source_urls` list with 3 WSJ/Techmeme URLs |
+| NYT Q2 2026 sec_filings path | Tests assumed `nyt.sec_filings` but data is at `nyt.ownership_chain[1].sec_filings` | Fixed test navigation to traverse ownership_chain |
+
+#### 3. NEW TEST FILE: `test_type_d_2pm_cross_validation_aug6.py` (50 tests, 9 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestSensorCountParadoxConsistency | 7 | MIT TR is 3rd pub with adversarial-Meta/positive-Apple pattern (after WIRED, FT) |
+| TestWSJBalancedControlAggregate | 6 | Mims data reinforces News Corp balanced control in aggregate findings |
+| TestGoogleCoercionCondeNastConsistency | 8 | 4-layer coercion ↔ Condé Nast traffic collapse ↔ advertising paradox |
+| TestNYTQ2EarningsConsistency | 5 | NYT Q2 2026 profile (ownership_chain path) matches research data |
+| TestMimsToneInversion | 5 | Mims Meta(+0.3)/OpenAI(-0.3) is directional opposite of WIRED Meta(-0.85)/OpenAI(+0.1) |
+| TestWSJDisclosureUniqueness | 6 | WSJ only discloser, 7+ reporters, both Meta+OpenAI text, irony documented |
+| TestGoogleRevenueCoercionLink | 5 | Network revenue declining + total growing = publisher squeeze |
+| TestMITTRGovernanceAppleEntity | 4 | Profile governance data ↔ research file ↔ Apple entity consistency |
+| TestSourceURLPresence | 4 | All 3 afternoon additions have source URLs |
+
+### Test Results
+- 50/50 new cross-validation tests passing
+- 317/317 regression tests passing (MIT TR governance, Mims, structural consistency, competitor coverage)
+- 0 regressions after data fixes
+- Commit: 11bfdb9 — pushed to main
+
+---
 ## 2026-08-06 13:00 PT — Type C: Google Advertising Dependency Coercion — Q2 2026 Earnings + The Advertising Dependency Paradox
 
 **Rotation:** C (Financial Incentive Mapping)
