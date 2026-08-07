@@ -1857,6 +1857,95 @@ publications:
         financial relationships driving that asymmetry.
 
 # ===================================================================
+# CROSS-ENTITY FINANCIAL LEVERAGE ANALYSIS
+# ===================================================================
+
+cross_entity_leverage:
+  amazon_sextuple_leverage:
+    overview: |
+      Amazon has six distinct financial relationship mechanisms with
+      publishers — more categories than any other tech company in the
+      dataset. This cross-publication analysis examines how Amazon's
+      multi-tentacle relationships affect coverage across all profiled
+      publications.
+    leverage_layer_count: 6
+    leverage_layers:
+    - aws_cloud_hosting
+    - advertising_platform
+    - ai_content_licensing
+    - kindle_publishing_platform
+    - bezos_wapo_ownership
+    - anthropic_investment
+    comparison:
+      google_layers: 4
+      openai_layers: 1
+      meta_layers: 1
+      amazon_layers: 6
+    amazon_publisher_deal_count:
+      nyt: "$20-25M/yr (May 2025, Alexa/AI)"
+      conde_nast: "Multi-year Rufus deal (Jul 2025)"
+      hearst: "Multi-year Rufus deal (Jul 2025)"
+      microsoft_pcm_partners: "Condé Nast, Hearst, Vox Media, AP, USA Today, Business Insider (Feb 2026)"
+    anthropic_double_play:
+      description: |
+        Amazon simultaneously PAYS publishers for AI content (Rufus/Alexa
+        licensing deals) AND is the largest investor ($13B+) in Anthropic,
+        which has ZERO publisher content licensing deals. Amazon profits from
+        BOTH sides: licensing publisher content for its own AI products, and
+        backing an AI lab that avoids paying publishers entirely.
+        
+        Q2 2026 data: Amazon's Anthropic investment generated $53.4B in
+        non-operating pre-tax gain — nearly DOUBLE Amazon's entire operating
+        income ($27.5B). Amazon's most profitable asset is a company that
+        pays publishers nothing.
+      anthropic_total_invested_b: 13
+      anthropic_q2_2026_paper_gain_b: 53.4
+      amazon_q2_2026_operating_income_b: 27.5
+      anthropic_publisher_deal_count: 0
+    coverage_asymmetry_findings:
+    - publication: wired
+      amazon_tone: "neutral"
+      meta_tone: "adversarial (-0.85)"
+      amazon_deals: "OpenAI + Amazon Rufus + Microsoft PCM + Perplexity (via Condé Nast)"
+      meta_deals: "none"
+      note: |
+        Condé Nast (WIRED parent) has active deals with OpenAI, Amazon,
+        Microsoft, and Perplexity — four AI content licensing deals.
+        WIRED has ZERO deals with Meta. The deal-count differential
+        is 4-to-0. Amazon coverage is neutral; Meta coverage is
+        sustained adversarial investigative campaigns.
+    - publication: nytimes
+      amazon_tone: "neutral_to_positive"
+      meta_tone: "adversarial (-0.55)"
+      amazon_deals: "$20-25M/yr Alexa/AI content licensing"
+      meta_deals: "none"
+      note: |
+        NYT signed its FIRST-EVER AI licensing deal with Amazon (May 2025)
+        while still suing OpenAI for the same activity. Amazon pays NYT
+        ~$20-25M/yr (~1% of total NYT revenue). Coverage reflects the
+        financial relationship: Amazon gets neutral-to-positive treatment
+        while Meta (no deal) gets adversarial framing.
+    - publication: news_corp
+      amazon_tone: "neutral_to_positive"
+      meta_tone: "balanced"
+      amazon_deals: "indirect (WSJ AI licensing ecosystem)"
+      meta_deals: "$50M/yr"
+      note: |
+        News Corp's balanced Meta/OpenAI coverage extends to Amazon.
+        WSJ is the ONLY publication that discloses financial relationships
+        in articles — including Amazon deals. Mims cross-entity data shows
+        constructive tone toward both Meta and Amazon.
+    source_urls:
+    - https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+    - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
+    - https://www.geekwire.com/2025/report-amazon-to-pay-at-least-20m-a-year-in-ai-content-deal-with-new-york-times/
+    - https://www.thewrap.com/industry-news/business/jeff-bezos-washington-post-profit-relevance-cnbc-interview/
+    - https://www.thewrap.com/media-platforms/journalism/the-washington-post-lost-60000-subscribers-layoffs-jeff-bezos/
+    - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+    - https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
+
+# ===================================================================
 # AGGREGATE FINDINGS
 # ===================================================================
 
@@ -1918,6 +2007,17 @@ aggregate_findings:
         coverage; publications with asymmetric deals and no disclosure
         show asymmetric coverage. Disclosure and balance correlate.
       significance: "Creates a transparency dimension: balanced deals + disclosure = balanced coverage; asymmetric deals + no disclosure = asymmetric coverage"
+
+    - finding: "Amazon sextuple leverage vs Meta single layer"
+      description: |
+        Amazon has SIX financial relationship mechanisms with publishers
+        (cloud hosting, advertising, AI licensing, Kindle platform, Bezos/
+        WaPo ownership, Anthropic investment). Meta has ONE (AI licensing).
+        Amazon's Anthropic investment ($53.4B Q2 gain) makes Amazon the
+        largest backer of an AI lab with ZERO publisher deals. Yet
+        publications with Amazon deals (NYT $20-25M/yr, Condé Nast Rufus)
+        cover Amazon neutrally while covering Meta adversarially.
+      significance: "Demonstrates leverage-count asymmetry — the company with 6x more publisher leverage gets softer coverage than the company with 1x"
 
     - finding: "January 2026 publisher adtech lawsuits — Google as universal adversary"
       description: |

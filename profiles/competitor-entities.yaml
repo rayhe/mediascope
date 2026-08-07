@@ -72,6 +72,145 @@ entities:
     category: big_tech
     market_cap_approx: $2.3T
     ceo: Andy Jassy
+    q2_2026_earnings:
+      report_date: '2026-07-30'
+      total_revenue_b: 200.6
+      total_revenue_yoy_pct: 20
+      net_income_b: 62.6
+      eps: 5.75
+      eps_consensus: 1.82
+      anthropic_gain_b: 53.4
+      aws_revenue_b: 42.2
+      aws_yoy_pct: 37
+      aws_margin_pct: 39
+      advertising_revenue_b: 19.8
+      advertising_yoy_pct: 26
+      advertising_ttm_b: 76
+      capex_q2_b: 54.2
+      capex_2026_guidance_b: 220
+      free_cash_flow_b: -7.6
+      source_urls:
+      - https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+      - https://www.mediapost.com/publications/article/416930/amazon-advertising-up-26-in-q2-profits-soar-to.html
+      - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
+      - https://www.wsj.com/tech/ai/amazon-earnings-q2-2026-amzn-stock-3daf95f7
+    sextuple_publisher_leverage:
+      overview: |
+        Amazon has SIX distinct financial relationship mechanisms with
+        publishers — more than any other tech company in the MediaScope
+        dataset. Google has four (advertising, search traffic, Showcase,
+        pilot deals). OpenAI has one (content licensing). Meta has one
+        (content licensing). Amazon's six layers create the most complex
+        financial entanglement between any tech company and the publishing
+        industry, yet Amazon consistently receives softer coverage than
+        Meta from the same publications that are financially tied to Amazon.
+      layers:
+      - name: aws_cloud_hosting
+        detail: |
+          Publishers depend on Amazon's cloud infrastructure for hosting,
+          content delivery, and operational tech. AWS hosts media operations
+          for BBC, C-SPAN, Newsweek, Time Inc, SoundCloud, and hundreds of
+          others. AWS CloudFront CDN has 216+ points of presence. Publishers
+          embedded in AWS cannot easily migrate — vendor lock-in creates
+          structural dependency even without direct editorial pressure.
+          AWS revenue: $42.2B Q2 2026 (+37% YoY), fastest growth in 18 quarters.
+      - name: advertising_platform
+        detail: |
+          Amazon Advertising is the third-largest digital ad platform after
+          Google and Meta. Q2 2026 ad revenue: $19.8B (+26% YoY). Trailing
+          12-month ad revenue: $76B. Amazon's advertising ecosystem includes
+          Sponsored Products, Sponsored Prompts (Alexa+), Prime Video Ads
+          (Thursday Night Football, NBA, WNBA, NASCAR — all sold out),
+          and Ads Agent (AI-powered campaign tool, 11 countries).
+          Publishers with e-commerce affiliate content depend on Amazon's
+          ad/affiliate ecosystem for revenue. Amazon Associates program
+          pays publishers for referral traffic.
+      - name: ai_content_licensing
+        detail: |
+          Active AI licensing deals with: NYT ($20-25M/yr, May 2025),
+          Condé Nast (multi-year, Rufus, Jul 2025), Hearst (multi-year,
+          Rufus, Jul 2025). Building an AI content marketplace to scale
+          publisher licensing to all AI builders (announced Feb 2026).
+          Content feeds Alexa for Shopping (350M+ customers), Rufus AI
+          shopping assistant, and Amazon's proprietary AI models.
+      - name: kindle_publishing_platform
+        detail: |
+          Amazon controls the dominant ebook distribution platform. Kindle
+          Direct Publishing (KDP) is the largest self-publishing platform.
+          Amazon's Kindle store accounts for an estimated 60-80% of US
+          ebook sales. Book publishers (Hachette, HarperCollins, Simon &
+          Schuster, Penguin Random House) depend on Amazon for the majority
+          of their print and digital distribution. Amazon has a history of
+          using distribution leverage in publisher negotiations (Hachette
+          dispute, 2014).
+      - name: bezos_wapo_ownership
+        detail: |
+          Jeff Bezos personally owns The Washington Post (purchased 2013,
+          $250M). In Feb 2026, WaPo laid off 44% of its newsroom (350+
+          journalists), eliminated sports desk and book section, cut
+          international coverage. CEO Will Lewis departed days after layoffs.
+          Post lost 60,000+ subscribers post-layoffs. Bezos told CNBC
+          (May 2026) the Post must be "a profitable enterprise." This
+          creates a unique dynamic: the world's most powerful publisher
+          (WaPo) is owned by the same person who controls the world's
+          largest e-commerce and cloud company. WaPo coverage of Amazon
+          and its competitors is inherently conflicted.
+        source_urls:
+        - https://www.thewrap.com/industry-news/business/jeff-bezos-washington-post-profit-relevance-cnbc-interview/
+        - https://www.thewrap.com/media-platforms/journalism/the-washington-post-lost-60000-subscribers-layoffs-jeff-bezos/
+        - https://www.nprillinois.org/2026-02-09/days-after-mass-layoffs-washington-post-ceo-steps-down
+      - name: anthropic_investment
+        detail: |
+          Amazon is the largest financial backer of Anthropic, having
+          invested $13B+ ($8B initial + $5B Apr 2026). Q2 2026 reported
+          a $53.4B non-operating pre-tax gain primarily from Anthropic's
+          valuation increase. Amazon's Anthropic investment generated more
+          paper profit ($53.4B) than Amazon's entire operating income
+          ($27.5B) in Q2 2026.
+          CRITICAL CONFLICT: Anthropic has ZERO publisher content licensing
+          deals — the only major AI lab (alongside xAI) with none. Amazon
+          simultaneously PAYS publishers for AI content (Rufus/Alexa deals)
+          AND invests in an AI company (Anthropic) that pays publishers
+          NOTHING. Anthropic settled the Bartz class-action for $1.5B
+          (Jun 2026, author copyright) but has no voluntary publisher deals.
+          This means Amazon profits from BOTH sides: licensing publisher
+          content for its own AI, and backing an AI lab that avoids paying
+          publishers entirely.
+        anthropic_total_invested_b: 13
+        anthropic_q2_2026_gain_b: 53.4
+        anthropic_publisher_deals: 0
+        source_urls:
+        - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
+        - https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
+      meta_contrast: |
+        Meta has ONE financial relationship mechanism with publishers:
+        voluntary AI content licensing ($50M/yr News Corp, plus 12 others).
+        No cloud hosting dependency, no advertising platform dependency
+        (Meta's ad platform serves advertisers, not publishers), no
+        publishing platform control, no ownership of a newspaper, no
+        investment in an AI lab that avoids paying publishers.
+        Amazon has SIX mechanisms — yet publications receiving Amazon money
+        (NYT: $20-25M/yr Alexa deal; Condé Nast: Rufus + OpenAI + Microsoft
+        PCM deals; Hearst: Rufus deal) direct their most sustained
+        adversarial coverage at Meta, not at the company with six-fold
+        financial leverage over them.
+    publisher_content_marketplace:
+      announced: '2026-02'
+      status: building
+      detail: |
+        Amazon is building an AI content marketplace where publishers can
+        sell content to AI companies (reported Feb 2026). AWS circulated
+        slides grouping the marketplace with Bedrock and Quick Suite.
+        This makes Amazon both a BUYER in the marketplace (for Rufus/Alexa)
+        and the PLATFORM OPERATOR — controlling the infrastructure through
+        which publishers monetize their content with ALL AI companies.
+        Combined with Microsoft's PCM (launched Feb 2026 with Condé Nast,
+        Hearst, Vox Media, AP, USA Today, Business Insider as partners),
+        the marketplace model concentrates publisher-AI financial
+        relationships through Big Tech intermediaries.
+      source_urls:
+      - https://www.reuters.com/business/retail-consumer/amazon-discusses-ai-content-marketplace-with-publishers-information-reports-2026-02-10/
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
   apple:
     display_name: Apple
     aliases:
