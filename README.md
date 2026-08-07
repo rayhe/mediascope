@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,004 | Across 194 test files |
+| Tests | 5,050 | Across 195 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5004 tests** across 194 test files, each covering a different analytical capability:
+MediaScope has **5050 tests** across 195 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -483,6 +483,7 @@ MediaScope has **5004 tests** across 194 test files, each covering a different a
 | `test_nyt_article_improvements.py` | 28 | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |
 | `test_nyt_project_giraffe_xai_absence.py` | 44 | NYT-OpenAI Project Giraffe discovery obstruction (Jul 2026), xAI publisher absence mapping, Snowflake Cortex marketplace, NYT Litigation Paradox deepening |
 | `test_nyt_ai_reviews.py` | 33 | NYT AI voluntary review article: isolation framing, pressure language, regulatory passive framing, VADER positive-bias correction, regulatory favoritism, escalation amplification, entity euphemisms |
+| `test_nyt_amazon_february_simultaneous_paradox.py` | 46 | NYT × Amazon February 2026 Simultaneous Coverage Paradox: within same week, NYT published Kashmir Hill investigative exposé on Meta's UNRELEASED NameTag while covering Amazon Ring's DEPLOYED Familiar Faces as business story; financial relationship ($20-25M/yr) predicts coverage tone |
 | `test_nyt_school_targeting.py` | 29 | NYT school targeting article: education topic, National PTA/Cornell entity detection, safety team overrule hypocrisy frame, role-based adversarial stance for plaintiff attorneys, ironic quotation, scale/magnitude |
 | `test_nypost_muse_image_yanks_jul13.py` | 21 | NY Post Muse Image forced-retreat article: new loaded_language terms (slop, diabolical, heated backlash, harvesting identity), capitulation verbs in ACTIVE_NEGATIVE_FRAMING, Path C forced-retreat sentiment correction override, policy_reversal reclassified as adversarial |
 | `test_platform_death.py` | 30 | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |

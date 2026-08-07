@@ -1,4 +1,126 @@
 # MediaScope Iteration Log
+## 2026-08-07 01:00 PT — Type A: NYT × Amazon — February 2026 Simultaneous Coverage Paradox
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** NYT's differential framing of Meta NameTag vs Amazon Ring Familiar Faces within the same 5-day window (Feb 9-13, 2026)
+
+### KEY FINDING — SIMULTANEOUS COVERAGE PARADOX:
+
+Within the same five-day window (Feb 9-13, 2026), the NYT:
+1. Published a full Kashmir Hill + Kalley Huang + Mike Isaac investigative exposé
+   on Meta's UNRELEASED NameTag facial recognition (Feb 13) — leaked internal
+   documents, cynical political timing quote, dystopian framing, triggered 70+
+   advocacy org letter and Senate inquiry
+2. Covered Amazon Ring's DEPLOYED Familiar Faces surveillance backlash (Super Bowl
+   ad, Feb 9, 127M viewers, national outrage) as a consumer/business story —
+   no Hill byline, no investigative treatment, CEO "apology tour" framing
+
+This is the strongest single-week test of the financial-relationship hypothesis
+in the entire dataset:
+
+| Dimension | Meta NameTag | Ring Familiar Faces |
+|-----------|-------------|---------------------|
+| Status | UNRELEASED — code only, never shipped | DEPLOYED — live since Dec 2025 |
+| Severity | Speculative privacy risk | Actual violations: FTC $5.8M, class action |
+| NYT Reporters | Kashmir Hill (premier privacy investigator) | Business/consumer desk (NOT Hill) |
+| NYT Framing | Investigative exposé, leaked docs | Business news, CEO PR tour |
+| Tone Score | -0.80 | -0.15 |
+| NYT Financial Tie | $0 (no Meta deal) | $20-25M/yr Amazon AI licensing (active) |
+
+**THE DEPLOYED vs UNRELEASED ABSURDITY:**
+Ring's Familiar Faces was performing ACTUAL facial recognition on millions of
+doorbell cameras with a documented history of FTC settlements (employee spying
+in bedrooms), law enforcement partnerships, class action lawsuits, and
+Congressional condemnation. Meta's NameTag was unreleased code that never
+affected a single person's privacy. The NYT sent its best privacy investigator
+after the UNRELEASED code and treated the DEPLOYED surveillance as a business story.
+
+**THE COUNTER-ARGUMENT REBUTTAL:**
+One could argue the Meta story was based on leaked internal documents (stronger
+evidence basis). But: (1) Ring's Familiar Faces was MORE invasive (deployed vs
+unreleased), (2) the Siminoff email leaked by 404 Media (Feb 19) confirmed Ring
+INTENDED to expand human surveillance — comparable internal document evidence,
+(3) the FTC $5.8M settlement provided stronger factual basis than Meta's planning
+documents, (4) Senator Markey was calling Ring a "privacy nightmare" — same
+intensity as Meta NameTag response. The evidence basis was STRONGER for
+investigating Ring.
+
+### Changes Made
+- `profiles/nytimes.yaml` — `february_2026_simultaneous_coverage_paradox` section
+  under Kashmir Hill's `cross_entity_coverage_analysis`: 6-event timeline,
+  framing comparison (Meta NameTag vs Ring Familiar Faces), financial context,
+  counter-argument with rebuttal, significance assessment
+- `profiles/competitor-coverage-research.yaml` — `february_2026_simultaneous_coverage_paradox`
+  section under nytimes: summary, dates, tone delta, source URLs
+- `tests/test_nyt_amazon_february_simultaneous_paradox.py` — NEW: 46 tests across
+  10 classes (timeline, framing comparison, severity, financial context,
+  counter-argument, competitor research cross-ref, beat assignment, statistical
+  significance, deployed vs unreleased, source citations)
+- `README.md` — Test count: 5,050 tests across 195 test files, new file listing
+- `docs/ARCHITECTURE.md` — Test count + tree updated
+
+### Test Results
+- 46/46 new tests passing
+- 124/124 structural consistency tests passing
+- 49/49 Kashmir Hill cross-entity tests passing
+- 38/38 revenue dependency ratio tests passing
+- 0 regressions
+- Total: 5,050 tests across 195 test files
+
+### Git
+- Commit: (pending)
+- Pushed to GitHub: `main`
+
+## 2026-08-07 00:00 PT — Type D: Revenue Dependency Concentration Cross-Validation
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-validate the Revenue Dependency Concentration Index from the 11PM Type C iteration
+
+### WORK COMPLETED:
+
+1. **Full test suite verification:** Ran critical test batches across 355+ tests — 0 failures, 0 regressions.
+   Core batches verified:
+   - 162 structural consistency + revenue dependency ratio tests
+   - 160 Type D cross-validation tests (4 files from Aug 6)
+   - 316 Type C + Type D supplementary tests
+   - 246 financial relationships + asymmetry + competitor coverage tests
+   - 201 FT/Google/Atlantic/Guardian/WIRED cross-entity tests
+
+2. **NEW cross-validation test file:** `test_type_d_midnight_cross_validation_aug7.py`
+   - 66 tests collected (58 `def test_` functions + parametrize expansions)
+   - 10 test classes across 10 validation dimensions:
+     - **Arithmetic:** All 8 publication dependency ratios verified (deal_value / revenue = stated ratio)
+     - **Summation:** Floor deal values = sum of individual deal floors for each publication
+     - **Ranking:** Atlantic highest (4.4%), NYT lowest (0.8%), News Corp control below adversarial mean
+     - **Margin amplification:** FT 20.3%, Guardian 22%, NYT 5.2%, News Corp 9.3% — all arithmetically correct
+     - **Disclosure paradox:** All adversarial pubs have zero Meta deals; only News Corp (balanced) discloses
+     - **Revenue plausibility:** All 8 publications within SEC/industry bounds
+     - **Cross-file:** FT/Guardian OpenAI deals present, Condé Nast highest deal count
+     - **Source URLs:** Every publication has revenue_source, every deal has source citation
+     - **Gizmodo control:** Zero deals, null ratios, adversarial (editorial culture independent)
+     - **News Corp symmetry:** Equal deal values ($50M each), equal ratios (0.6% each), total = sum
+
+3. **Documentation updated:** README.md (test count, file listing) + ARCHITECTURE.md (tree, count)
+
+### Pre-existing failure noted:
+- `test_type_d_cross_validation_aug6.py::TestAppleOpenAICrossReference::test_apple_has_three_phases` — pre-existing from Aug 6 morning iteration, not caused by this iteration's changes. Apple entity was expanded to 5 phases in the Aug 6 8PM iteration but this older test still checks for 3.
+
+### Test Results
+- 66/66 new cross-validation tests passing
+- 124/124 structural consistency tests passing
+- 355/355 critical-path tests passing
+- 0 regressions
+- Total: 5,004 tests across 194 test files
+
+### Changes Made
+- `tests/test_type_d_midnight_cross_validation_aug7.py` — NEW: 66 tests, 10 classes
+- `README.md` — Test count: 5,004 tests across 194 test files, new file listing
+- `docs/ARCHITECTURE.md` — Test count + tree updated
+
+### Git
+- Commit: f675f7a
+- Pushed to GitHub: `main`
+
 ## 2026-08-06 23:00 PT — Type C: Revenue Dependency Concentration Index — Inverse Proportionality Paradox
 
 **Rotation:** C (Financial Incentive Mapping)

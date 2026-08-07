@@ -1111,6 +1111,34 @@ publications:
         coverage asymmetry is structural and nearly invisible, operating through
         reporter assignment rather than editorial directives.
 
+    february_2026_simultaneous_coverage_paradox:
+      summary: |
+        Within 5 days (Feb 9-13, 2026), the NYT published Kashmir Hill's
+        investigative exposé on Meta's UNRELEASED NameTag facial recognition
+        while covering Amazon Ring's DEPLOYED Familiar Faces surveillance
+        backlash (Super Bowl ad, 127M viewers, national outrage) as a
+        consumer/business story. Ring's facial recognition was LIVE on
+        millions of cameras with a worse privacy record (FTC $5.8M settlement,
+        employee spying, class action). Meta's NameTag was unreleased code
+        that never shipped. The NYT's $20-25M/yr Amazon AI licensing deal
+        was active throughout this period.
+      meta_article_date: "2026-02-13"
+      meta_article_reporters: "Kashmir Hill, Kalley Huang, Mike Isaac"
+      meta_article_tone: -0.80
+      ring_superbowl_date: "2026-02-09"
+      ring_coverage_tone: -0.15
+      tone_delta: 0.65
+      significance: |
+        Strongest single-week test of the financial-relationship hypothesis
+        in the entire dataset: same publication, same week, same topic
+        (facial recognition in consumer electronics), different companies
+        (Amazon paying $20-25M/yr, Meta paying $0). Investigative treatment
+        for the non-paying company; business coverage for the paying company.
+      source_urls:
+        - "https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/"
+        - "https://www.mediapost.com/publications/article/412823/amazons-ring-cancels-partnership-with-police-tech.html"
+        - "https://9to5mac.com/2026/02/19/leaked-email-proves-ring-intended-to-use-surveillance-feature-for-people/"
+
   # -----------------------------------------------------------------
   # FINANCIAL TIMES (Nikkei)
   # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024),

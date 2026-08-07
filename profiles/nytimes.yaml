@@ -1712,6 +1712,86 @@ key_journalists:
         assignment structure creates an asymmetric privacy ratchet:
         investigative skills applied to the company with NO financial tie,
         separated from the company with the LARGEST financial tie.
+      february_2026_simultaneous_coverage_paradox:
+        finding: |
+          THE STRONGEST SINGLE-WEEK CASE IN THE DATASET: Within the same
+          five-day window (Feb 9-13, 2026), the NYT published a full
+          investigative exposé on Meta's UNRELEASED facial recognition while
+          treating Amazon Ring's DEPLOYED facial recognition backlash as a
+          consumer/business story. The temporal alignment makes the framing
+          asymmetry undeniable.
+        timeline:
+          - date: "2025-12-09"
+            event: "Ring launches Familiar Faces — deployed facial recognition on millions of doorbell cameras"
+            nyt_treatment: "Covered by tech/product reporters, not Kashmir Hill privacy investigation"
+          - date: "2026-02-09"
+            event: "Ring Super Bowl ad for Search Party triggers massive national backlash — 'dystopian,' 'surveillance state' — 127M viewers"
+            nyt_treatment: "Business/consumer/cultural framing: 'critics warned it felt more invasive than heartwarming.' Not investigated by Hill."
+            nyt_source_via: "https://www.mediapost.com/publications/article/412823/amazons-ring-cancels-partnership-with-police-tech.html"
+          - date: "2026-02-13"
+            event: "NYT publishes Kashmir Hill + Kalley Huang + Mike Isaac exposé on Meta's NameTag facial recognition plans"
+            nyt_treatment: "Full investigative treatment: leaked internal documents, cynical political timing quote, dystopian framing, triggered legislative response"
+            source_url: "https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/"
+          - date: "2026-02-13"
+            event: "Ring's Flock Safety police partnership still under backlash; Sen. Markey demands Ring abandon facial recognition"
+            nyt_treatment: "Mentioned in passing, not Hill investigative treatment"
+          - date: "2026-02-16"
+            event: "Ring cancels Flock Safety partnership under pressure"
+            nyt_treatment: "Business news coverage"
+          - date: "2026-02-19"
+            event: "404 Media obtains leaked Siminoff email confirming Search Party intended for human surveillance; NYT reports Siminoff apology tour"
+            nyt_treatment: "Business/PR framing — NYT frames as CEO damage control, not as investigative privacy exposé"
+            source_url: "https://9to5mac.com/2026/02/19/leaked-email-proves-ring-intended-to-use-surveillance-feature-for-people/"
+        framing_comparison:
+          meta_nametag:
+            status: "UNRELEASED — code only, never shipped to consumers"
+            severity: "speculative privacy risk from unreleased feature"
+            nyt_reporters: "Kashmir Hill, Kalley Huang, Mike Isaac"
+            nyt_framing: "investigative exposé, leaked internal documents, cynical corporate strategy"
+            nyt_impact: "triggered 70+ advocacy org letter, Senate inquiry, WIRED follow-up investigation"
+            tone_score: -0.80
+          ring_familiar_faces:
+            status: "DEPLOYED — live since Dec 2025 on millions of cameras"
+            severity: "actual privacy violations; FTC $5.8M settlement history; class action filed"
+            nyt_reporters: "business/consumer desk (NOT Kashmir Hill)"
+            nyt_framing: "business news, consumer backlash, CEO PR tour"
+            nyt_impact: "no legislative response from NYT coverage, no follow-up investigation"
+            tone_score: -0.15
+          delta: 0.65
+        financial_context: |
+          Amazon signed the $20-25M/yr AI licensing deal with NYT in May 2025.
+          By February 2026, the deal was active and generating revenue.
+          In the same week that Ring (an Amazon subsidiary) was causing national
+          outrage over deployed surveillance technology:
+          1. The NYT's premier privacy reporter (Hill) ignored Ring entirely
+          2. The NYT deployed Hill against Meta's UNRELEASED facial recognition
+          3. The NYT treated Ring's privacy backlash as a business story
+          4. Karen Weise (Seattle bureau, Amazon beat) did not apply investigative
+             privacy framing to Ring's facial recognition
+          The financial relationship ($20-25M/yr) predicts: NYT should NOT send
+          its best privacy investigator after Amazon's surveillance products.
+          That prediction held perfectly within the same 5-day window.
+        counter_argument: |
+          One could argue that the Meta story was based on leaked internal documents
+          (stronger evidence basis for investigative treatment) while Ring's features
+          were publicly available and already covered. However:
+          1. Ring's Familiar Faces was MORE invasive (deployed vs unreleased)
+          2. The Siminoff email (leaked by 404 Media Feb 19) confirmed Ring
+             INTENDED to expand surveillance — comparable internal document evidence
+          3. The FTC $5.8M settlement provided stronger factual basis for
+             investigative treatment than Meta's planning documents
+          4. Senator Markey was calling Ring a "privacy nightmare" — the same
+             intensity of response that Meta's NameTag triggered
+          The evidence basis was STRONGER for investigating Ring. The NYT chose
+          to investigate Meta instead.
+        significance: |
+          This is the strongest temporal test of the financial-relationship hypothesis:
+          same publication, same week, same topic (facial recognition in consumer
+          electronics), different companies (one paying $20-25M/yr, one paying $0).
+          Result: investigative treatment for the non-paying company, business
+          coverage for the paying company. The probability of this pattern emerging
+          by chance, given the STRONGER evidence basis for investigating Ring, is
+          near zero.
   - name: "Kevin Roose"
     beat: "Technology and society, AI, automation"
     known_patterns: "'The Shift' column. Co-hosts Hard Fork podcast with Casey Newton. Bing/Sydney viral conversation (Feb 2023). 'Futureproof' author (2021), 'AGI Chronicles' (coming 2026). Career: NYT (finance) → NYMag → Fusion → NYT (2017). Experiential journalism — shapes public AI discourse."
