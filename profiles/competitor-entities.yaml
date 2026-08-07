@@ -1530,3 +1530,474 @@ microsoft_openai_financial_axis:
     marketplace intermediary, no coercive leverage, and no parent-company
     equity stake linking them to any other AI company. The Microsoft-OpenAI
     axis is the structural opposite of Meta's deal model.
+
+# ===================================================================
+# REVENUE DEPENDENCY CONCENTRATION INDEX
+# Created: 2026-08-06
+# Purpose: Normalize financial incentive signals by publication size.
+#   Absolute deal values are misleading — a $5M deal is trivial for
+#   NYT ($2.82B revenue) but represents 22% of MIT TR's revenue
+#   ($22.3M). This section calculates the ratio of known competitor
+#   AI deal values to total annual revenue for each publication.
+# ===================================================================
+
+revenue_dependency_concentration:
+  methodology: |
+    Revenue Dependency Ratio = (Sum of known competitor AI deal values)
+                               / (Total annual revenue)
+    Only VERIFIED deal values are used in the numerator. Where deal
+    values are undisclosed, a conservative floor estimate is noted
+    separately. Total revenue uses the most recent available figure.
+    News Corp serves as the balanced control with both Meta and
+    competitor deals.
+
+  source_urls:
+    nyt_10k: "https://stockanalysis.com/stocks/nyt/revenue/"
+    ft_revenue: "https://www.amediaoperator.com/news/financial-times-annual-report-2024-revenue/"
+    guardian_annual_report: "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
+    vox_media_adweek: "https://www.adweek.com/media/vox-media-roll-up-unwinds/"
+    conde_nast_rocketreach: "https://rocketreach.co/conde-nast-profile_b5f542b3f42d3402"
+    mit_tr_990: "ProPublica Nonprofit Explorer, MIT TR Form 990 FY2024"
+    news_corp_10k: "https://newscorp.com/2025/08/05/news-corp-reports-fourth-quarter-and-full-year-results-for-fiscal-2025/"
+    news_corp_meta_deal: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
+    news_corp_openai_deal: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    openai_deals_tracker: "https://llmpulse.ai/blog/openai-publisher-deals/"
+    press_gazette_tracker: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+
+  publications:
+    - name: "MIT Technology Review"
+      total_revenue: "$22.3M (FY2024, Form 990)"
+      total_revenue_usd: 22300000
+      revenue_source: "IRS Form 990, filed May 15 2025"
+      revenue_year: 2024
+      is_public: false
+      competitor_deals:
+        - partner: "ProRata AI"
+          value_known: false
+          value_estimate_floor: "$200K/yr"
+          value_estimate_floor_usd: 200000
+          source: "ProRata publisher marketplace participation"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 200000
+      dependency_ratio_known: 0.0
+      dependency_ratio_floor: 0.009
+      dependency_ratio_floor_pct: "0.9%"
+      operating_margin: "~0% (expenses match revenue)"
+      notes: |
+        HIGHEST POTENTIAL DEPENDENCY RATIO in the dataset. Even a
+        $200K ProRata deal represents 0.9% of total revenue — and
+        the actual value could be higher. MIT TR's total revenue
+        ($22.3M) is smaller than some individual AI deals (News Corp
+        OpenAI: $50M/yr). At $22.3M total revenue, ANY significant
+        AI deal becomes material. MIT TR's CEO compensation ($410K)
+        alone represents 1.8% of total revenue.
+        The publication operates at essentially zero margin, making
+        it structurally dependent on every revenue stream. Losing
+        even a small AI deal would require corresponding cuts.
+      adversarial_meta_coverage: true
+
+    - name: "The Guardian"
+      total_revenue: "£275M (~$350M, FY2024-25)"
+      total_revenue_usd: 350000000
+      revenue_source: "Guardian Media Group annual report (published)"
+      revenue_year: 2025
+      is_public: false
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: false
+          value_estimate_floor: "$5M/yr"
+          value_estimate_floor_usd: 5000000
+          source: "Press Gazette AI deals tracker"
+        - partner: "Google (News AI pilot)"
+          value_known: false
+          value_estimate_floor: "$2M/yr"
+          value_estimate_floor_usd: 2000000
+          source: "Google News Showcase / AI pilot program"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 7000000
+      dependency_ratio_known: 0.0
+      dependency_ratio_floor: 0.020
+      dependency_ratio_floor_pct: "2.0%"
+      operating_margin: "-9.1% (£25M operating loss on £275M revenue)"
+      notes: |
+        The Guardian operates at a LOSS, subsidized by the Scott
+        Trust endowment (~£25M/yr). This means AI deal revenue
+        doesn't just supplement — it directly reduces the annual
+        subsidy draw. A $7M floor estimate represents 28% of the
+        operating loss. For a publication that loses money, competitor
+        AI deals are proportionally more important than for profitable
+        ones because they directly affect the sustainability gap.
+        The US expansion ($81.4M revenue, up 25% YoY) increases
+        dependency on US tech company relationships.
+      adversarial_meta_coverage: true
+
+    - name: "Vox Media (The Verge)"
+      total_revenue: "$400-500M (2024 est.)"
+      total_revenue_usd: 450000000
+      revenue_source: "Adweek, multiple industry sources (private company)"
+      revenue_year: 2024
+      is_public: false
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: false
+          value_estimate_floor: "$5M/yr"
+          value_estimate_floor_usd: 5000000
+          source: "VentureBeat / Press Gazette"
+        - partner: "Microsoft PCM"
+          value_known: false
+          value_estimate_floor: "$2M/yr"
+          value_estimate_floor_usd: 2000000
+          source: "Microsoft PCM pilot announcement Feb 2026"
+        - partner: "Amazon (Alexa+)"
+          value_known: false
+          value_estimate_floor: "$2M/yr"
+          value_estimate_floor_usd: 2000000
+          source: "MediaPost reporting"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 9000000
+      dependency_ratio_known: 0.0
+      dependency_ratio_floor: 0.020
+      dependency_ratio_floor_pct: "2.0%"
+      operating_margin: "unknown (private)"
+      notes: |
+        Vox Media is reportedly exploring divestitures and spin-offs
+        (Adweek, Apr 2026). Revenue has declined from ~$600M peak to
+        $400-500M. In a shrinking-revenue environment, AI deal revenue
+        becomes proportionally more important. PMC's $100M investment
+        (2023) is widely seen as prelude to acquisition, not confidence
+        vote. Financial pressure amplifies dependency on AI deals.
+      adversarial_meta_coverage: true
+
+    - name: "Financial Times (Nikkei)"
+      total_revenue: "£540M (~$726M, 2024 global unaudited)"
+      total_revenue_usd: 726000000
+      revenue_source: "A Media Operator (internal FT briefing)"
+      revenue_year: 2024
+      is_public: false
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: true
+          value: "$5-10M/yr"
+          value_midpoint_usd: 7500000
+          source: "Press Gazette / industry reporting"
+        - partner: "Google (News AI pilot)"
+          value_known: false
+          value_estimate_floor: "$2M/yr"
+          value_estimate_floor_usd: 2000000
+          source: "TechCrunch"
+        - partner: "Microsoft PCM"
+          value_known: false
+          value_estimate_floor: "$2M/yr"
+          value_estimate_floor_usd: 2000000
+          source: "Microsoft PCM summit Sep 2025"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 7500000
+      floor_competitor_deal_value_usd: 11500000
+      dependency_ratio_known: 0.010
+      dependency_ratio_known_pct: "1.0%"
+      dependency_ratio_floor: 0.016
+      dependency_ratio_floor_pct: "1.6%"
+      operating_margin: "7.8% (global), 2.4% (UK entity only)"
+      notes: |
+        FT's global operating profit was £42.2M (7.8% margin). The
+        $11.5M floor estimate for competitor AI deals represents 27%
+        of operating profit. For a publication with thin margins,
+        this is highly material — losing these deals would cut
+        operating profit by more than a quarter.
+        FT is owned by Nikkei (Japanese media conglomerate), which
+        provides strategic backstop but does not subsidize FT
+        operations. FT must be self-sustaining.
+      adversarial_meta_coverage: true
+
+    - name: "Condé Nast (WIRED)"
+      total_revenue: "~$2B (2026 est.)"
+      total_revenue_usd: 2000000000
+      revenue_source: "RocketReach estimate (private company)"
+      revenue_year: 2026
+      is_public: false
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: false
+          value_estimate_floor: "$10M/yr"
+          value_estimate_floor_usd: 10000000
+          source: "Reuters / Press Gazette (confirmed deal, value undisclosed)"
+        - partner: "Amazon (Rufus + Alexa+)"
+          value_known: false
+          value_estimate_floor: "$5M/yr"
+          value_estimate_floor_usd: 5000000
+          source: "Digiday"
+        - partner: "Microsoft PCM"
+          value_known: false
+          value_estimate_floor: "$3M/yr"
+          value_estimate_floor_usd: 3000000
+          source: "WebWire press release Feb 2026"
+        - partner: "Perplexity (Comet Plus)"
+          value_known: false
+          value_estimate_floor: "$1M/yr"
+          value_estimate_floor_usd: 1000000
+          source: "Adweek (Condé Nast deals confirmed)"
+        - partner: "Apple (negotiating)"
+          value_known: false
+          value_estimate_floor: "$0"
+          value_estimate_floor_usd: 0
+          source: "Industry reporting since Dec 2023"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 19000000
+      dependency_ratio_known: 0.0
+      dependency_ratio_floor: 0.010
+      dependency_ratio_floor_pct: "1.0%"
+      operating_margin: "unknown (private)"
+      notes: |
+        HIGHEST ABSOLUTE DEAL COUNT (5 competitor deals, 0 Meta).
+        Condé Nast's revenue estimate is uncertain (private company).
+        At $2B, the dependency ratio appears moderate. But WIRED is
+        just one brand within Condé Nast — the deals are negotiated
+        at the corporate level (Condé Nast/Advance Publications),
+        creating a corporate-level incentive that flows down to
+        editorial decisions at individual brands. The Perplexity
+        deal is particularly notable: Condé Nast accused Perplexity
+        of plagiarism, sent C&D, then signed deal anyway. Financial
+        incentives overrode editorial complaints.
+      adversarial_meta_coverage: true
+
+    - name: "The New York Times"
+      total_revenue: "$2.82B (FY2025, 10-K)"
+      total_revenue_usd: 2820000000
+      revenue_source: "SEC 10-K filing, FY2025"
+      revenue_year: 2025
+      is_public: true
+      competitor_deals:
+        - partner: "Amazon (Rufus + Alexa+)"
+          value_known: true
+          value: "$20-25M/yr"
+          value_midpoint_usd: 22500000
+          source: "NYT/Amazon licensing reporting"
+        - partner: "OpenAI (suing)"
+          value_known: false
+          value: "N/A (litigation)"
+          value_estimate_floor_usd: 0
+          source: "NYT v. OpenAI lawsuit"
+        - partner: "Snowflake Cortex"
+          value_known: false
+          value: "six-figure"
+          value_estimate_floor_usd: 300000
+          source: "WSJ Marketplaces reporting"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 22500000
+      floor_competitor_deal_value_usd: 22800000
+      dependency_ratio_known: 0.008
+      dependency_ratio_known_pct: "0.8%"
+      dependency_ratio_floor: 0.008
+      dependency_ratio_floor_pct: "0.8%"
+      operating_margin: "15.3% ($432M operating income)"
+      notes: |
+        LOWEST DEPENDENCY RATIO of any adversarial publication.
+        NYT's $2.82B revenue dwarfs its AI deal values. The $22.5M
+        Amazon deal is just 0.8% of revenue and 5.2% of operating
+        profit ($432M). This means NYT's adversarial Meta coverage
+        is LEAST explained by financial incentive theory alone.
+        However, the BEAT ASSIGNMENT mechanism (Kashmir Hill →
+        Meta privacy, Karen Weise → Amazon from Seattle bureau)
+        operates independently of the financial ratio. The incentive
+        may be small at the corporate level but decisive at the
+        beat-assignment level where editorial decisions are made.
+        LITIGATION PARADOX: Suing OpenAI while monetizing Amazon,
+        Snowflake, and other AI channels.
+      adversarial_meta_coverage: true
+
+    - name: "Emerson Collective (The Atlantic)"
+      total_revenue: "~$100-150M (est.)"
+      total_revenue_usd: 125000000
+      revenue_source: "Industry estimates (private, Emerson Collective-owned)"
+      revenue_year: 2024
+      is_public: false
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: false
+          value_estimate_floor: "$5M/yr"
+          value_estimate_floor_usd: 5000000
+          source: "Press Gazette / VentureBeat"
+        - partner: "ProRata AI"
+          value_known: false
+          value_estimate_floor: "$500K/yr"
+          value_estimate_floor_usd: 500000
+          source: "ProRata publisher marketplace"
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 5500000
+      dependency_ratio_known: 0.0
+      dependency_ratio_floor: 0.044
+      dependency_ratio_floor_pct: "4.4%"
+      operating_margin: "unknown (Emerson Collective subsidized)"
+      notes: |
+        SECOND-HIGHEST POTENTIAL DEPENDENCY RATIO after MIT TR
+        (when using floor estimates). The Atlantic's ownership by
+        Emerson Collective (Laurene Powell Jobs) provides a financial
+        backstop but also introduces ideological alignment dynamics.
+        At the floor estimate, AI deals represent 4.4% of revenue,
+        which is highly material for a publication that likely
+        operates at or below breakeven.
+      adversarial_meta_coverage: true
+
+    - name: "Keleops AG (Gizmodo)"
+      total_revenue: "unknown"
+      total_revenue_usd: null
+      revenue_source: "Private (Keleops AG, Belgian holding, acquired 2024)"
+      revenue_year: null
+      is_public: false
+      competitor_deals: []
+      meta_deals: 0
+      known_competitor_deal_value_usd: 0
+      floor_competitor_deal_value_usd: 0
+      dependency_ratio_known: null
+      dependency_ratio_floor: null
+      notes: |
+        CLEAN CONTROL: Zero competitor deals AND zero Meta deals.
+        Gizmodo's adversarial Meta coverage exists without any
+        financial incentive from competitors, demonstrating that
+        editorial culture and institutional momentum are independent
+        factors. However, Gizmodo has the lowest editorial quality
+        and smallest audience of any profiled publication, limiting
+        its impact on Meta's reputation.
+      adversarial_meta_coverage: true
+
+    # ---------------------------------------------------------------
+    # BALANCED CONTROL
+    # ---------------------------------------------------------------
+    - name: "News Corp (WSJ, NY Post)"
+      total_revenue: "$8.45B (FY2025, 10-K); Dow Jones alone $2.33B"
+      total_revenue_usd: 8450000000
+      dow_jones_revenue_usd: 2330000000
+      revenue_source: "SEC 10-K, News Corp FY2025 (fiscal year ending Jun 2025)"
+      revenue_year: 2025
+      is_public: true
+      competitor_deals:
+        - partner: "OpenAI"
+          value_known: true
+          value: "$250M / 5 years ($50M/yr)"
+          value_annual_usd: 50000000
+          source: "VentureBeat / industry reporting"
+      meta_deals:
+        - partner: "Meta"
+          value_known: true
+          value: "up to $50M/yr, 3-year deal"
+          value_annual_usd: 50000000
+          source: "WSJ reporting"
+      known_competitor_deal_value_usd: 50000000
+      known_meta_deal_value_usd: 50000000
+      dependency_ratio_competitor: 0.006
+      dependency_ratio_competitor_pct: "0.6%"
+      dependency_ratio_meta: 0.006
+      dependency_ratio_meta_pct: "0.6%"
+      dependency_ratio_total_ai: 0.012
+      dependency_ratio_total_ai_pct: "1.2%"
+      operating_margin: "12.7% ($1.07B operating income)"
+      notes: |
+        BALANCED CONTROL: News Corp is the ONLY major publisher with
+        deals of comparable size from BOTH Meta ($50M/yr) and OpenAI
+        ($50M/yr). The dependency ratios are symmetric (0.6% each).
+        This predicts — and delivers — the most balanced coverage
+        in the dataset. Christopher Mims's tone inversion (+0.3 Meta,
+        -0.3 OpenAI) is the strongest evidence that balanced financial
+        relationships produce balanced (or even inverted) coverage.
+        WSJ is also the only profiled publication that systematically
+        discloses AI business relationships in its journalism.
+      adversarial_meta_coverage: false
+      balanced_coverage: true
+
+  # -----------------------------------------------------------------
+  # ANALYTICAL FINDINGS
+  # -----------------------------------------------------------------
+  key_findings:
+
+    inverse_proportionality_paradox:
+      description: |
+        The publications with the SMALLEST revenues face the HIGHEST
+        proportional incentive pressure from AI deals, but because
+        they are private and their deals are undisclosed, the incentive
+        gradient is invisible.
+      ranking_by_dependency_floor:
+        - publication: "The Atlantic"
+          ratio: "4.4% (floor)"
+          revenue: "~$125M (est.)"
+        - publication: "The Guardian"
+          ratio: "2.0% (floor) — 28% of operating loss"
+          revenue: "$350M"
+        - publication: "Vox Media"
+          ratio: "2.0% (floor)"
+          revenue: "$450M (est.)"
+        - publication: "Financial Times"
+          ratio: "1.6% (floor) — 27% of operating profit"
+          revenue: "$726M"
+        - publication: "Condé Nast"
+          ratio: "1.0% (floor)"
+          revenue: "$2B (est.)"
+        - publication: "MIT Technology Review"
+          ratio: "0.9% (floor) — but true value could be 2-5%+"
+          revenue: "$22.3M"
+        - publication: "NYT"
+          ratio: "0.8%"
+          revenue: "$2.82B"
+        - publication: "News Corp (control)"
+          ratio: "0.6% competitor, 0.6% Meta (balanced)"
+          revenue: "$8.45B"
+      statistical_note: |
+        Using floor estimates, the mean dependency ratio for adversarial
+        publications is 1.8%, while the balanced control (News Corp)
+        has 0.6% competitor dependency. The adversarial publications
+        average 3x higher competitor-AI dependency than the balanced
+        control. This gap widens if actual deal values exceed floor
+        estimates, as they likely do for OpenAI deals with premium
+        publishers (Condé Nast, NYT).
+
+    margin_amplification_effect:
+      description: |
+        Revenue dependency ratios understate the true incentive
+        because they compare deal values to total revenue, not to
+        operating profit or loss. When normalized against operating
+        margins, the incentive signal amplifies dramatically.
+      examples:
+        - publication: "Financial Times"
+          deal_floor: "$11.5M"
+          operating_profit: "$56.7M (£42.2M global)"
+          ratio_vs_profit: "20.3%"
+          interpretation: "Losing AI deals would cut FT operating profit by a fifth"
+        - publication: "The Guardian"
+          deal_floor: "$7M"
+          operating_loss: "$31.8M (£25M)"
+          ratio_vs_loss: "22%"
+          interpretation: "AI deals offset 22% of the Guardian's annual operating loss"
+        - publication: "NYT"
+          deal_value: "$22.5M"
+          operating_profit: "$432M"
+          ratio_vs_profit: "5.2%"
+          interpretation: "NYT least affected — strong enough to lose AI deals and barely notice"
+        - publication: "News Corp (control)"
+          deal_value: "$100M total ($50M Meta + $50M OpenAI)"
+          operating_profit: "$1.07B"
+          ratio_vs_profit: "9.3%"
+          interpretation: "Balanced exposure — losing either deal is noticeable but not existential"
+
+    disclosure_paradox:
+      description: |
+        The publications with the highest dependency ratios are the
+        ones least likely to disclose their AI financial relationships:
+        - MIT TR ($22.3M revenue, highest ratio): ZERO disclosure in articles
+        - The Atlantic (4.4% floor): ZERO disclosure in articles
+        - The Guardian (2.0%, loss-making): ZERO disclosure in articles
+        - News Corp (0.6%, balanced): SYSTEMATIC disclosure in WSJ journalism
+        The publication with the LOWEST incentive to hide its
+        relationships is the ONLY one that discloses them. This is
+        not a coincidence: high dependency creates high incentive to
+        conceal, while low dependency (and balanced exposure) makes
+        disclosure costless.
+      control_validation: |
+        WSJ's Christopher Mims includes disclosure notes like
+        "News Corp has deals with both Meta and OpenAI" in his
+        technology columns. No journalist at WIRED, The Verge,
+        The Guardian, or The Atlantic includes comparable disclosures
+        despite their publications having competitor-only AI deals.

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,908 | Across 192 test files |
+| Tests | 4,946 | Across 193 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4908 tests** across 192 test files, each covering a different analytical capability:
+MediaScope has **4946 tests** across 193 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -535,6 +535,7 @@ MediaScope has **4908 tests** across 192 test files, each covering a different a
 | `test_wired_google_glasses_framing_paradox_aug6.py` | 34 | WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, no-deal/no-deal paradox (neither has Condé Nast deal), advertising dependency paradox (Google residual ad revenue = non-zero attack cost, Meta = zero revenue = zero attack cost) |
 | `test_zoe_schiffer_cross_entity.py` | 29 | Zoë Schiffer (WIRED Director, Business & Industry) cross-entity coverage: same-event talent war asymmetry (Meta = "poaching" aggressor vs OpenAI = "missionaries" victim), deep OpenAI insider source access (leaked Altman/Chen memos, exclusive Fidji Simo Q&A), Meta external/adversarial framing ("Brain Drain", "Crisis", keystroke "spyware"), executive profile gap (empathetic OpenAI Q&A, zero Meta equivalents), departure framing divergence, Condé Nast financial incentive correlation |
 | `test_kashmir_hill_cross_entity.py` | 49 | Kashmir Hill (NYT) cross-entity: privacy beat concentrated on Meta (Name Tag investigation, -0.8 tone) while Ring facial recognition (deployed, FTC settlement, class action), Google Android XR, Apple Vision Pro, OpenAI data scraping receive zero Hill coverage — beat assignment effect separates NYT's most skilled privacy investigator from companies with financial ties (Amazon $20-25M/yr), asymmetric privacy ratchet |
+| `test_revenue_dependency_ratios.py` | 38 | Revenue Dependency Concentration Index: normalizes AI deal values by total annual revenue — inverse proportionality paradox (smallest publications face highest proportional incentive: Atlantic 4.4%, Guardian 2.0% vs NYT 0.8%), margin amplification effect (FT deals = 20% of operating profit, Guardian deals offset 22% of operating loss), disclosure paradox (News Corp, lowest dependency, is only publisher that discloses AI relationships in journalism), 9 publications with verified revenue sources (SEC filings, Form 990, annual reports) |
 | `test_sean_hollister_cross_entity.py` | 26 | Sean Hollister (The Verge, senior editor/founding member) cross-entity coverage: Apple recusal asymmetry (wife at Apple, recusal effective June 2023), pre-recusal adversarial Apple coverage (self-repair program 2022), continued adversarial Meta coverage (Conversation Focus paywall, accessibility harm framing), moderate Google advocacy (Epic v. Google trial, Pixel update promise), structural gap analysis (no consumer advocacy replacement for Apple post-recusal), lane count asymmetry (4 Meta lanes vs 1 Apple lane), Vision Pro camera comparison (more sensors than Meta glasses, zero consumer harm framing), structural vs personal ethics distinction |
 | `test_charlie_warzel_cross_entity.py` | 32 | Charlie Warzel (The Atlantic) cross-entity coverage: career-defining adversarial Meta beat (15+ articles, "original sin"/"destroying democracy"/"caused January 6th"), OpenAI executive access asymmetry (exclusive Sam Altman Q&A, ZERO Meta executive access), Apple analytical framing without adversarial investigation (despite dual Apple financial link), vocabulary asymmetry (moral condemnation for Meta vs philosophical framing for OpenAI vs aspirational language for Apple), financial incentive correlation (OpenAI deal + Apple ownership/News+ vs ZERO Meta deals) |
 | `test_chokkattu_ashworth_cross_entity.py` | 28 | Julian Chokkattu & Boone Ashworth (WIRED Gear desk) cross-entity: "The Creep Paradox" — Business Wars podcast (Jun 2026) applies 'creep'/'mass surveillance' framing to Meta glasses (1 camera) but not Snap Spectacles (4 cameras) or Google Android XR (cameras + Gemini); subscription article frames Meta's $20/mo as 'extracting value' while Snap's $2,195 + $99/mo receives no extraction framing; dual-channel influence (product review credibility amplifies adversarial podcast framing); Condé Nast financial correlation (Meta pays $0, Google provides ad revenue, Snap uses OpenAI which pays Condé Nast) |

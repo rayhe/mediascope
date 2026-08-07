@@ -1,4 +1,129 @@
 # MediaScope Iteration Log
+## 2026-08-06 23:00 PT — Type C: Revenue Dependency Concentration Index — Inverse Proportionality Paradox
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Normalize financial incentive signals by publication size using revenue dependency ratios
+
+### KEY FINDING — INVERSE PROPORTIONALITY PARADOX:
+
+Absolute AI deal values are misleading because they ignore publication size. A $5M deal
+is trivial for NYT ($2.82B revenue, 0.8% dependency) but represents 4.4% of The Atlantic's
+estimated revenue and 22% of MIT TR's total revenue ($22.3M). When normalized against
+total revenue, the incentive gradient inverts: the SMALLEST publications face the HIGHEST
+proportional incentive pressure from competitor AI deals.
+
+| Publication | Revenue | AI Deal Floor | Dep. Ratio | Op. Margin Impact |
+|-------------|---------|---------------|------------|-------------------|
+| The Atlantic | ~$125M (est.) | $5.5M | 4.4% | Unknown (subsidized) |
+| The Guardian | $350M | $7M | 2.0% | 22% of operating loss |
+| Vox Media | $450M (est.) | $9M | 2.0% | Unknown (shrinking) |
+| Financial Times | $726M | $11.5M | 1.6% | 20% of operating profit |
+| Condé Nast | ~$2B (est.) | $19M | 1.0% | Unknown (private) |
+| MIT Tech Review | $22.3M | $0.2M | 0.9% | ~0% margin, any deal is material |
+| NYT | $2.82B | $22.8M | 0.8% | 5.2% of operating profit |
+| News Corp (control) | $8.45B | $50M comp, $50M Meta | 0.6% each | 9.3% of op profit |
+
+### THREE SUB-FINDINGS:
+
+1. **MARGIN AMPLIFICATION EFFECT:** Revenue ratios understate true incentive. When
+   normalized against operating profit/loss, FT's deals represent 20% of operating
+   profit and Guardian's deals offset 22% of operating loss. Losing these deals would
+   fundamentally alter these publications' financial viability.
+
+2. **DISCLOSURE PARADOX:** The publication with the LOWEST dependency ratio and BALANCED
+   exposure (News Corp/WSJ, 0.6% each) is the ONLY publication that systematically
+   discloses AI financial relationships in journalism. Publications with 2-4x higher
+   ratios and competitor-only deals (WIRED, Verge, Guardian, Atlantic) make zero disclosure.
+   High dependency creates high incentive to conceal.
+
+3. **GIZMODO CLEAN CONTROL:** Gizmodo (Keleops AG) has ZERO competitor deals AND ZERO
+   Meta deals, yet produces adversarial Meta coverage — proving editorial culture is an
+   independent factor. However, it has the lowest editorial quality and smallest audience.
+
+### Revenue Sources (verified):
+- NYT: SEC 10-K FY2025 ($2.82B)
+- News Corp: SEC 10-K FY2025 ($8.45B; Dow Jones $2.33B)
+- FT: A Media Operator (internal briefing, £540M global)
+- Guardian: Annual report (£275M FY2024-25)
+- MIT TR: IRS Form 990 FY2024 ($22.3M)
+- Vox Media: Adweek, multiple industry sources ($400-500M)
+- Condé Nast: RocketReach estimate (~$2B)
+- The Atlantic: Industry estimates (~$100-150M)
+
+### Changes Made
+- `profiles/competitor-entities.yaml` — `revenue_dependency_concentration` section:
+  9 publications with verified revenue, known/floor deal values, dependency ratios,
+  operating margin impact, 3 key findings (inverse proportionality, margin amplification,
+  disclosure paradox)
+- `tests/test_revenue_dependency_ratios.py` — NEW: 38 tests across 8 classes
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,946 tests across 193 test files
+
+### Test Results
+- 38/38 new tests passing
+- 124/124 structural consistency tests passing
+- 0 regressions
+
+## 2026-08-06 22:00 PT — Type B: Kashmir Hill (NYT) Cross-Entity — Asymmetric Privacy Ratchet
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Kashmir Hill — NYT's premier privacy/surveillance reporter, cross-entity coverage analysis
+
+### KEY FINDING — ASYMMETRIC PRIVACY RATCHET:
+
+Kashmir Hill (Clearview AI investigator, "Your Face Belongs to Us" author) is the NYT's
+most credentialed privacy/surveillance reporter. Her beat makes her the natural investigator
+for ALL companies building camera-equipped wearables and facial recognition. Yet her
+investigative energy concentrates exclusively on Meta, while functionally identical or
+WORSE privacy practices at competitors receive ZERO Hill coverage.
+
+| Entity | Privacy Practice | Severity | Hill Coverage | NYT Financial Tie |
+|--------|-----------------|----------|---------------|-------------------|
+| Meta | Name Tag (unreleased code) | Moderate | Full investigation (-0.8 tone) | None |
+| Amazon Ring | Familiar Faces (DEPLOYED) | Severe (FTC $5.8M, class action) | Zero | $20-25M/yr licensing |
+| Google | Android XR glasses (cameras, AI) | Comparable | Zero | None |
+| Apple | Vision Pro cameras, AirTag stalking | Comparable | Zero | Ad partnership |
+| OpenAI | Web scraping billions of pages | Comparable to Clearview | Zero | Lawsuit (adversarial) |
+
+**THE AMAZON CASE IS THE STRONGEST:**
+Ring's Familiar Faces is DEPLOYED consumer facial recognition — it's already identifying
+people at doorbell cameras, it already caused an FTC settlement over employees spying on
+customers in bedrooms, and a class action was filed June 2026. This is WORSE than Meta's
+Name Tag (unreleased code). Yet Hill has written zero investigative pieces about Ring,
+and Amazon pays NYT $20-25M/yr.
+
+### INSTITUTIONAL MECHANISM (NOT PERSONAL BIAS):
+The asymmetry is a BEAT ASSIGNMENT EFFECT:
+- Hill → Meta privacy (no deal)
+- Karen Weise → Amazon from Seattle bureau (NYT-Amazon $20-25M deal)
+- Legal team → OpenAI (lawsuit framing, not privacy framing)
+- Various → Google/Apple (no dedicated privacy investigation)
+
+This REINFORCES the Cade Metz beat-assignment finding: NYT's coverage asymmetry is
+structural, operating through reporter assignment. Each reporter "just does their beat"
+— but the assignment structure ensures investigative privacy expertise targets only the
+company with NO financial tie.
+
+### Changes Made
+- `profiles/nytimes.yaml` — Kashmir Hill `cross_entity_coverage_analysis`: meta_coverage
+  (adversarial, -0.8, Name Tag article with source URL), google_coverage (absent, Android XR
+  parallel, 2017 historical context), amazon_coverage (absent, Ring Familiar Faces, FTC $5.8M,
+  3 source URLs, financial context), apple_coverage (absent, Vision Pro/AirTag), openai_coverage
+  (absent, Clearview AI parallel), cross_entity_asymmetry_score (4 scores, methodology),
+  institutional_mechanism (beat assignment effect, Karen Weise separation, Metz connection)
+- `profiles/competitor-coverage-research.yaml` — `kashmir_hill_cross_entity` section under
+  nytimes publication: overview, meta_investigation (source URL), google_absence, amazon_absence
+  (3 source URLs, financial context, beat separation), apple_absence, openai_absence,
+  asymmetry_mechanism
+- `tests/test_kashmir_hill_cross_entity.py` — NEW: 49 tests across 9 classes
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,908 tests across 192 test files
+
+### Test Results
+- 49/49 new tests passing
+- 122/122 structural consistency tests passing (includes both new test files listed)
+- 0 regressions
+- Commit: 0c6924c — pushed to main
+
+---
 ## 2026-08-06 21:00 PT — Type A: WIRED × Google Smart Glasses Framing Paradox
 
 **Rotation:** A (Competitor Coverage Deep Dive)

@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 4908 tests across 192 test files (all from real articles)
+├── tests/                       # 4946 tests across 193 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -524,6 +524,7 @@ mediascope/
 │   ├── test_wired_google_glasses_framing_paradox_aug6.py # WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, advertising dependency paradox
 │   ├── test_zoe_schiffer_cross_entity.py # Zoë Schiffer (WIRED Director) cross-entity: talent war framing asymmetry, OpenAI insider access, Meta adversarial framing, executive profile gap, departure framing divergence
 │   ├── test_kashmir_hill_cross_entity.py # Kashmir Hill (NYT) cross-entity: privacy beat concentrated on Meta (Name Tag investigation) while Ring facial recognition (deployed, FTC settlement), Google Android XR, Apple Vision Pro receive zero Hill coverage — beat assignment effect amplified by NYT-Amazon $20-25M deal
+│   ├── test_revenue_dependency_ratios.py # Revenue Dependency Concentration Index: normalizes AI deal values by total annual revenue — inverse proportionality paradox, margin amplification effect, disclosure paradox, 9 publications with verified revenue sources
 │   ├── test_sean_hollister_cross_entity.py # Sean Hollister (Verge senior editor) cross-entity: Apple recusal asymmetry, pre/post-recusal coverage shift, consumer harm lane gap, 3-entity coverage pattern, structural vs personal ethics
 │   ├── test_verge_anthropic_rogue_ai_comparison.py # The Verge Anthropic/OpenAI/Meta three-tier coverage: "Accidentally" Paradox, rogue AI safety comparison, pay→soft/neutral→factual/threaten→adversarial, reporter lane extension to Anthropic
 │   ├── test_raymond_wong_cross_entity.py # Gizmodo Raymond Wong cross-entity: Clean Control Paradox (no-deals publication balanced), Maxwell Zeff migration (Gizmodo→WIRED), three-tier model validation, aggregate control evidence
