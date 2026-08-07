@@ -20,13 +20,19 @@ entities:
         OpenAI's Apple partnership (Jun 2024) has collapsed into mutual
         litigation by mid-2026. OpenAI preparing breach-of-contract action
         (May 2026) while Apple sued OpenAI for trade secret theft (Jul 2026).
-        An OpenAI exec called the deal a "failure." Apple testing Claude
-        and Gemini as ChatGPT replacements in Siri.
+        Case escalated rapidly: Apple sought preliminary injunction (Aug 4),
+        OpenAI filed motion to dismiss calling suit "careless, aggressive
+        and oddly personal" (Aug 6). Apple testing Claude and Gemini as
+        ChatGPT replacements in Siri.
       breach_threat_date: 2026-05-14
       apple_trade_secret_suit_date: 2026-07-10
+      preliminary_injunction_date: 2026-08-04
+      motion_to_dismiss_date: 2026-08-06
       source_urls:
       - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
       - https://www.macrumors.com/2026/07/10/apple-sues-openai/
+      - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+      - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
   anthropic:
     display_name: Anthropic
     aliases:
@@ -266,6 +272,27 @@ entities:
           excluded from the lawsuit claims, but the relationship is now
           adversarial on multiple fronts.
         source_url: https://www.macrumors.com/2026/07/10/apple-sues-openai/
+      phase_4_preliminary_injunction:
+        date: 2026-08-04
+        event: Apple seeks preliminary injunction against OpenAI
+        detail: |
+          Apple seeks preliminary injunction barring OpenAI from using alleged
+          trade secrets + expedited discovery. Depositions sought for Tang Tan,
+          Chang Liu, io Products corporate representative. Apple reveals
+          ADDITIONAL former employees may be involved beyond initial filing.
+        source_url: https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+      phase_5_motion_to_dismiss:
+        date: 2026-08-06
+        event: OpenAI files motion to dismiss Apple's trade secret suit
+        detail: |
+          OpenAI files motion to dismiss, calling Apple's lawsuit "careless,
+          aggressive and oddly personal." Claims Apple failed to identify
+          protectable trade secrets. OpenAI blog post says Apple has "common
+          issue" of failing to lock up files when employees depart. WSJ and
+          Reuters cover within hours.
+        source_urls:
+          - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+          - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
       mediascope_relevance: |
         The Apple-OpenAI collapse has THREE implications for financial
         incentive analysis:

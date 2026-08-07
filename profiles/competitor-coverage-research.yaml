@@ -805,6 +805,11 @@ publications:
         within_hours: ["Reuters", "CNN", "WSJ", "TechCrunch", "Fox Business", "The Hill", "Bloomberg", "Android Authority", "NY Post", "LiveMint", "Barron's"]
         within_days: ["Gizmodo", "The Verge", "WIRED", "MIT Technology Review"]
         not_covered: ["The Atlantic"]
+      source_urls:
+        - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
+        - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+        - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+        - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
       mediascope_significance: |
         This is the strongest single piece of evidence that financial conflicts
         predict EDITORIAL OMISSION, not just editorial tone. It is not merely
