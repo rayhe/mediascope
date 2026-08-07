@@ -737,6 +737,195 @@ entities:
       Samsung's advertising relationship with publishers is standard tech-industry
       media buying, not the large-scale content licensing deals that predict softer
       coverage (like OpenAI, Amazon, or Microsoft's publisher deals).
+  microsoft:
+    display_name: Microsoft
+    aliases:
+    - Microsoft
+    - Satya Nadella
+    - Copilot
+    - Azure
+    - Bing
+    - LinkedIn
+    - MSN
+    - GitHub
+    regex: \b(Microsoft|Satya\s+Nadella|Copilot(?!\s+Plus)|Azure(?!\s+Sky)|Bing(?!\s+cherry)|MSN\b)\b
+    category: big_tech
+    market_cap_approx: $3.6T
+    ceo: Satya Nadella
+    fy26_q4_earnings:
+      report_date: '2026-07-29'
+      quarter_ended: '2026-06-30'
+      total_revenue_b: 90.0
+      total_revenue_yoy_pct: 18
+      operating_income_b: 40.6
+      net_income_gaap_b: 35.8
+      net_income_nongaap_b: 35.3
+      eps_gaap: 4.81
+      eps_nongaap: 4.74
+      azure_revenue_yoy_pct: 43
+      azure_fy26_total_over_100b: true
+      search_ad_rev_ex_tac_yoy_pct: 10
+      linkedin_revenue_yoy_pct: 12
+      cloud_revenue_q4_b: 59.3
+      bing_mau_milestone: 1B (first time, Q3 FY26)
+      copilot_paid_seats: 30M+
+      ai_business_arr_b: 37
+      openai_investment_q4_impact_m: -600
+      anthropic_investment_q4_gain_b: 3.2
+      fy26_total_revenue_b: 331.8
+      fy26_net_income_b: 133.7
+      source_urls:
+      - https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/
+      - https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
+    septuple_publisher_leverage:
+      overview: |
+        Microsoft has SEVEN distinct financial relationship mechanisms with
+        publishers — more than any other tech company in the MediaScope
+        dataset (Amazon has six, Google has four). Microsoft is the only
+        company that operates as both a BUYER of publisher content (Copilot
+        Daily, MSN) AND the MARKETPLACE OPERATOR (PCM) through which
+        publishers sell to other AI builders. Combined with its dual
+        investments in OpenAI ($13B, 27% stake) and Anthropic ($5B),
+        Microsoft captures value from publisher content across virtually
+        every monetization channel. Yet Microsoft consistently receives
+        the SOFTEST coverage of any major tech company from the same
+        publications that are financially entangled with it.
+      layers:
+      - name: openai_investment_axis
+        detail: |
+          Microsoft is the largest financial backer of OpenAI, which has
+          the MOST publisher content licensing deals of any AI company.
+          $13B invested → 27% equity stake (~$228B at $852B IPO valuation).
+          OpenAI pays Microsoft 20% revenue share through 2030 (capped at
+          $38B total). OpenAI committed $250B in Azure purchases. IP
+          license through 2032. Every OpenAI publisher deal (Condé Nast,
+          Time, The Atlantic, AP, News Corp, etc.) generates revenue that
+          partially flows to Microsoft. FY26 full-year: OpenAI investment
+          contributed $5.0B net gain to Microsoft's GAAP results.
+          See microsoft_openai_financial_axis section for full circular
+          revenue flow analysis.
+      - name: anthropic_investment
+        detail: |
+          Microsoft invested $5B in Anthropic (Nov 2025), OpenAI's primary
+          competitor. Q4 FY26: $3.2B gain from Anthropic investment (boosted
+          EPS by $0.33). Anthropic committed $30B in Azure compute. Microsoft
+          spends ~$500M/yr on Anthropic AI models for Copilot, 365, and
+          GitHub Copilot. Azure salespeople now receive equal quota credit
+          for selling Anthropic and OpenAI models. CRITICAL: Anthropic has
+          ZERO publisher content licensing deals — the only major AI lab
+          (alongside xAI) with none. Microsoft simultaneously invests in
+          the AI lab with the MOST publisher deals (OpenAI) and one with
+          ZERO deals (Anthropic), profiting regardless of which model
+          prevails. Anthropic settled the Bartz class-action for $1.5B
+          (author copyright, Jun 2026) but has no voluntary publisher deals.
+        invested_b: 5
+        q4_fy26_gain_b: 3.2
+        azure_commitment_b: 30
+        annual_model_spending_m: 500
+        source_urls:
+        - https://www.reuters.com/technology/anthropic-commits-30-billion-microsoft-azure-compute-2025-11-18/
+        - https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
+        - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
+        - https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
+      - name: pcm_marketplace_operator
+        detail: |
+          Publisher Content Marketplace (PCM) — launched Feb 2026 after
+          invite-only Monaco summit (Sep 2025). Microsoft is BOTH the
+          platform operator AND the first demand-side buyer (via Copilot).
+          Co-designed with 7 publishers: Business Insider, Condé Nast,
+          Hearst, People Inc, AP, USA TODAY, Vox Media. Yahoo is first
+          external demand partner. Microsoft invested >$10M. Publishers set
+          licensing terms; AI builders license content for grounding.
+          Usage-based reporting and compensation. This makes Microsoft the
+          INTERMEDIARY through which publishers monetize content with all
+          AI builders — controlling the marketplace infrastructure itself,
+          like Amazon's emerging AI content marketplace but further along.
+      - name: copilot_daily_content
+        detail: |
+          Paid content partnerships for AI-voiced news summaries in Copilot
+          Daily (launched Oct 2024). Partners: Reuters, Axel Springer,
+          Hearst Magazines, USA TODAY Network, Financial Times. Separate
+          from PCM — these are direct bilateral deals for Copilot-specific
+          content. Represents the first time Microsoft's AI licensing went
+          beyond its longstanding MSN content deals.
+        source_url: https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
+      - name: msn_start_licensing
+        detail: |
+          Longstanding content licensing deals with hundreds of publishers
+          for Microsoft Start (formerly MSN News). Pre-dates the AI era.
+          Publishers receive payment for news articles displayed in
+          Microsoft Start, Windows Start menu, Edge browser new tab, and
+          Outlook.com. This is the OLDEST publisher financial relationship
+          any tech company maintains. Creates baseline financial dependency
+          before any AI-specific deals are layered on top.
+      - name: bing_search_advertising
+        detail: |
+          Bing search and news advertising (excluding TAC) grew 10% YoY in
+          Q4 FY26. Bing reached 1B MAU for the first time (Q3 FY26, per
+          Satya Nadella). Publishers depend on Bing for search traffic and
+          advertising revenue, though far less than Google (~3-4% global
+          search market vs Google's ~90%). Microsoft is also co-defendant
+          with OpenAI in the NYT copyright lawsuit — sued for using NYT
+          content to train Copilot/Bing Chat. Edge browser has taken share
+          for 20 consecutive quarters, increasing publisher traffic from
+          Microsoft surfaces.
+      - name: azure_enterprise_hosting
+        detail: |
+          Azure revenue $39.3B Q4 FY26 (+32% / +31% CC), surpassed $100B
+          for full FY26 (first time). Publishers use Azure for cloud
+          infrastructure, content delivery, and operational technology.
+          Azure also hosts OpenAI's models AND Anthropic's models — meaning
+          publisher content licensed to either AI lab is processed on
+          Microsoft infrastructure. Azure's dominant position in enterprise
+          cloud creates structural dependency similar to AWS but with the
+          added dimension that Azure IS the inference layer for the two
+          largest AI labs. $678B in commercial remaining performance
+          obligations.
+      meta_contrast: |
+        Meta has ONE financial relationship mechanism with publishers:
+        voluntary AI content licensing ($50M/yr News Corp, plus 12 others).
+        No marketplace operator role (not in PCM or Amazon's marketplace).
+        No AI lab investment (no stake in any AI company).
+        No cloud hosting dependency (Meta doesn't run publisher cloud infra).
+        No search advertising (no search engine for publisher traffic).
+        No content aggregation platform (no MSN/Start equivalent).
+        No enterprise hosting for publishers.
+        Microsoft has SEVEN mechanisms — yet publications receiving Microsoft
+        money through multiple channels (Condé Nast: PCM + OpenAI axis +
+        Copilot Daily ecosystem; FT: Copilot Daily + OpenAI deal + PCM
+        early participant) direct their most sustained adversarial coverage
+        at Meta, not at the company with seven-fold financial leverage.
+      dual_ai_lab_investment_paradox: |
+        Microsoft is the ONLY company that invests in BOTH OpenAI (most
+        publisher deals) AND Anthropic (zero publisher deals). Amazon
+        invests in Anthropic only. Google invested in Anthropic ($2B+)
+        but has its own models (Gemini). No other company straddles both
+        sides of the publisher-deal divide like Microsoft does.
+
+        Q4 FY26 reveals the hedge: Microsoft wrote DOWN its OpenAI
+        investment by $600M while booking a $3.2B GAIN on Anthropic.
+        Microsoft profits regardless of which AI lab prevails — and
+        regardless of whether publishers get paid by AI labs or not.
+
+        This creates a perverse incentive: Microsoft's financial interest
+        is served by BOTH the narrative that "AI companies must pay
+        publishers" (strengthens OpenAI's licensing-based model, which
+        generates Azure revenue) AND the counter-narrative that "AI can
+        succeed without publisher deals" (validates Anthropic's approach,
+        which also generates Azure revenue). Microsoft wins either way.
+    publisher_deals_note: |
+      Microsoft has financial relationships with MORE MediaScope-profiled
+      publications than any other entity:
+      - Condé Nast (WIRED): PCM pilot partner + OpenAI licensing axis
+      - Nikkei (FT): Copilot Daily + OpenAI licensing + PCM participant
+      - Vox Media/PMC (The Verge): PCM co-design + OpenAI licensing (inherited)
+      - The Guardian: OpenAI deal (Microsoft co-benefits via 27% stake)
+      - MIT Tech Review: ProRata (no Microsoft-specific relationship)
+      - NYT: Adversarial litigation (co-defendant in NYT v. OpenAI)
+      - Gizmodo: No relationship
+      5 of 7 profiled publications have direct or axis-mediated financial
+      relationships with Microsoft. Only Gizmodo (clean control) and MIT
+      Tech Review have no Microsoft-adjacent revenue.
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

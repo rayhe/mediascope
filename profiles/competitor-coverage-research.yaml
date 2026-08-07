@@ -2492,6 +2492,41 @@ cross_entity_leverage:
       - https://www.reuters.com/technology/microsoft-openai-financial-relationship
       - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
 
+  microsoft_septuple_leverage:
+    overview: |
+      Microsoft entity profile added to competitor-entities.yaml (Aug 7 2026).
+      Microsoft has SEVEN distinct financial relationship mechanisms with
+      publishers — more than any other tech company (Amazon has six, Google
+      has four). Previously only the Microsoft-OpenAI axis was documented;
+      the full septuple model adds the Anthropic investment ($5B, $3.2B
+      gain Q4 FY26), Copilot Daily, MSN/Start, Bing search, and Azure
+      enterprise hosting layers.
+    discovery_date: "2026-08-07"
+    key_finding: |
+      DUAL AI LAB INVESTMENT PARADOX: Microsoft is the only company that
+      simultaneously invests in the AI lab with the MOST publisher deals
+      (OpenAI, $13B, 27% stake) AND one with ZERO publisher deals
+      (Anthropic, $5B, $3.2B gain Q4 FY26). Q4 FY26 showed the hedge
+      in action: Microsoft wrote DOWN its OpenAI investment by $600M
+      while booking a $3.2B GAIN on Anthropic. Microsoft profits
+      regardless of whether AI labs pay publishers or not.
+    leverage_layers:
+      - openai_investment_axis
+      - anthropic_investment
+      - pcm_marketplace_operator
+      - copilot_daily_content
+      - msn_start_licensing
+      - bing_search_advertising
+      - azure_enterprise_hosting
+    mediascope_profiled_publication_coverage: "5 of 7 have Microsoft-adjacent revenue"
+    meta_mechanisms: 1
+    source_urls:
+      - https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/
+      - https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
+      - https://www.reuters.com/technology/anthropic-commits-30-billion-microsoft-azure-compute-2025-11-18/
+      - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
+      - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
+
 # ===================================================================
 # AGGREGATE FINDINGS
 # ===================================================================
