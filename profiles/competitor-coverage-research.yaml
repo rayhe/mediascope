@@ -2283,6 +2283,64 @@ publications:
         adversarial asymmetry also suppress transparency about the
         financial relationships driving that asymmetry.
 
+  # -----------------------------------------------------------------
+  # Financial Times
+  # Financial ties: OpenAI (content deal, Apr 2024, est. $5-10M/yr),
+  #   Google News AI pilot (Feb 2026), Microsoft PCM (Feb 2026).
+  #   No Meta deal.
+  # -----------------------------------------------------------------
+  financial_times:
+    meta_coverage_tone: "adversarial-by-absence"
+    meta_coverage_summary: |
+      The Financial Times has ZERO dedicated Meta articles from its
+      AI correspondent Melissa Heikkilä. Meta appears only peripherally
+      in risk/regulatory contexts. Coverage volume tracks financial
+      relationships: VP-level interviews for Google (deal partner),
+      5+ institutional articles for OpenAI (deal partner), aspirational
+      framing for Anthropic (no deal but no tension), and zero dedicated
+      coverage for Meta (no deal).
+    heikkila_cross_entity:
+      career_migration:
+        from: "MIT Technology Review"
+        to: "Financial Times"
+        significance: |
+          Heikkilä moved from an independent publication with ZERO AI
+          content deals to the FT, which has three (OpenAI Apr 2024,
+          Google News AI pilot Feb 2026, Microsoft PCM Feb 2026). The
+          FT-OpenAI deal predated her hire. Her coverage portfolio
+          shifted accordingly.
+      coverage_by_entity:
+        google:
+          tone: "+0.30 (constructive)"
+          evidence: "VP Elizabeth Reid interview access, product framing"
+          deal_status: "Google News AI pilot (Feb 2026)"
+        openai:
+          tone: "+0.15 (neutral-constructive)"
+          evidence: "5+ institutional articles, partnership coverage"
+          deal_status: "OpenAI content deal (Apr 2024, $5-10M/yr)"
+        meta:
+          tone: "N/A (zero dedicated articles)"
+          evidence: "ZERO dedicated articles; peripheral risk/regulatory only"
+          deal_status: "No deal"
+        anthropic:
+          tone: "+0.20 (aspirational)"
+          evidence: "Innovation framing despite no FT financial relationship"
+          deal_status: "No deal"
+      reverse_editorial_pipeline:
+        mechanism: |
+          "State of AI" newsletter partnership (Oct 2025) creates a
+          reverse pipeline where FT coverage flows back to MIT Technology
+          Review. "The End of Privacy" topic — covering Meta wearables —
+          circulates through this pipeline.
+      asymmetry_score: 0.87
+      baseline_comparison: |
+        Gizmodo clean control (0.50 cultural baseline, ZERO financial
+        ties to any AI company) provides the neutral reference. The FT
+        delta above baseline (~0.37) represents the financial
+        amplification effect — the portion of coverage asymmetry
+        attributable to deal relationships rather than general editorial
+        culture.
+
 # ===================================================================
 # CROSS-ENTITY FINANCIAL LEVERAGE ANALYSIS
 # ===================================================================

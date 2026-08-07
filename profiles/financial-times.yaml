@@ -534,6 +534,91 @@ key_journalists:
       Jony Ive device coverage with Murgia. Business-reporting tone, deal-focused
       framing. Does not appear to have a company-specific adversarial posture.
 
+  # =================================================================
+  # Melissa Heikkilä — AI Correspondent (added 2026-08-07, Type B)
+  # KEY MIGRATION: MIT Tech Review → FT (Jan 27, 2025)
+  # =================================================================
+  - name: "Melissa Heikkilä"
+    beat: "AI, machine learning, AI policy, AI ethics, AI companies"
+    location: "London"
+    known_patterns: >
+      AI Correspondent at FT since Jan 27, 2025. Previously senior AI reporter at
+      MIT Technology Review (May 2022 – Jan 2025), where she wrote "The Algorithm"
+      newsletter. Earlier: AI correspondent at Politico Europe, assistant news
+      editor at The Economist, news anchor at Yle (Finnish public broadcaster).
+      University of Helsinki BA Communication. Forbes 30 Under 30 European Media 2020.
+      KEY MIGRATION: MIT TR (independent, ZERO AI content deals) → FT (OpenAI deal
+      Apr 2024, Google News AI pilot Feb 2026, Microsoft PCM Feb 2026, NO Meta deal).
+      The FT's OpenAI deal was signed BEFORE she was hired — she entered a pre-existing
+      financial incentive structure.
+      CROSS-PUBLICATION BRIDGE: Through the MIT TR × FT "State of AI" newsletter
+      partnership (launched Oct 29, 2025), her FT coverage feeds back into MIT TR.
+      Her specific topic is "The End of Privacy" (with MIT TR's Eileen Guo) —
+      directly relevant to Meta wearables/glasses/privacy coverage. This creates
+      a REVERSE PIPELINE: FT (financially-tied) → MIT TR (independent).
+
+    cross_entity_coverage_analysis:
+      finding: >
+        Heikkilä's FT coverage allocates executive-access interviews to Google
+        (VP Elizabeth Reid, AI Overviews, Apr 2025), sustained institutional analysis
+        to OpenAI (5+ articles on restructuring, valuation, model standards), and
+        aspirational strategy framing to Anthropic ("Claude enters the lab: bets big").
+        Meta receives ZERO dedicated articles — appears only in peripheral mentions
+        within multi-company stories or in risk-focused contexts (10-K risk disclaimers,
+        LLM training data memorization). Coverage volume tracks financial relationships:
+        Google (deal) = 3+ articles, OpenAI (deal) = 5+, Microsoft (deal) = 3+,
+        Anthropic (no deal) = 1-2, Meta (no deal) = 0 dedicated.
+
+      google_coverage:
+        tone: "constructive_executive_access"
+        examples:
+          - title: "Interview with Google VP of Search Elizabeth Reid on AI Overviews"
+            date: "2025-04-15"
+            framing: "extended_executive_interview"
+            source_url: "https://www.latestnigeriannews.com/p/4259011/an-interview-with-google-vp-of-search-elizabeth-reid-on-ai-overviews-launch-a-ye.html"
+          - title: "Google DeepMind unveils new robotics AI model that can sort laundry"
+            framing: "technology_achievement"
+
+      openai_coverage:
+        tone: "neutral_institutional"
+        examples:
+          - title: "Transcript: OpenAI's long-awaited restructuring deal"
+            framing: "institutional_analysis"
+          - title: "OpenAI restructuring pushes Microsoft's valuation above $4tn"
+            framing: "financial_analysis"
+          - title: "OpenAI investors question $852B valuation"
+            date: "2026-04-14"
+            framing: "financial_scrutiny"
+
+      meta_coverage:
+        tone: "absent_or_peripheral"
+        dedicated_articles: 0
+        examples:
+          - context: "World models story"
+            meta_role: "peripheral_supporting_quote"
+            quote: "such as Meta's LeCun have said this vision could take 10 years"
+          - context: "S&P 500 AI filings analysis"
+            meta_role: "exemplar_of_corporate_doubt"
+            quote: "There can be no assurance that the usage of AI will enhance our products"
+          - context: "LLMs memorize training data (Feb 23, 2026)"
+            meta_role: "one_of_five_companies_listed"
+
+      anthropic_coverage:
+        tone: "aspirational"
+        examples:
+          - title: "Claude enters the lab: Anthropic bets big on life sciences"
+            framing: "aspirational_strategy"
+
+      cross_entity_asymmetry_score: 0.87
+      asymmetry_notes: >
+        High asymmetry (0.87/1.0). Google (FT deal partner) gets VP interviews.
+        OpenAI (FT deal partner) gets 5+ institutional deep dives. Meta (no FT deal)
+        gets ZERO dedicated articles from Heikkilä despite being the world's largest
+        open-weight AI contributor. The MIT TR ↔ FT pipeline on "The End of Privacy"
+        means Meta wearables coverage from a financially-compromised publication now
+        feeds into an independent one's editorial ecosystem.
+
+
 # Known Conflicts of Interest
 known_conflicts:
   - type: "ownership_structure"
