@@ -299,6 +299,68 @@ publications:
     google_litigation_source: "https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
     google_coercion_source: "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
 
+    google_smart_glasses_framing:
+      discovery_date: "2026-08-06"
+      description: |
+        SMART GLASSES FRAMING PARADOX — WIRED treats Google/Samsung glasses
+        with product-review framing while treating functionally identical
+        Meta glasses with investigative-surveillance framing.
+
+        GOOGLE/SAMSUNG ANDROID XR GLASSES (I/O 2026, May 19):
+        Google and Samsung unveiled "Intelligent Eyewear" at I/O 2026 with
+        Warby Parker and Gentle Monster frames. Features: built-in cameras,
+        microphones, speakers, always-on Gemini AI, photo/video capture,
+        real-time translation, navigation. WIRED went hands-on with the
+        prototypes (confirmed by Android Authority: "Wired was able to go
+        hands-on with a pair of prototype glasses running Android XR").
+        Coverage framing: product-review, consumer-tech excitement,
+        feature walkthrough. ZERO surveillance language. ZERO "wiretapping"
+        or "biometric" framing. ZERO investigative exposé on privacy.
+        No articles about Google/Samsung glasses as "dormant surveillance
+        infrastructure" or "predator glasses."
+
+        META RAY-BAN GLASSES (same product category, same feature set):
+        Single 12MP camera, speakers, microphones, always-on Meta AI.
+        WIRED coverage: investigative exposé framing ("dormant surveillance
+        infrastructure," "wiretapping laws," "biometric data laws"),
+        NameTag facial recognition investigation (Jun 2026) that triggered
+        emergency Meta code deletion, sustained multi-article campaign.
+        Tone: -0.85. Most adversarial product coverage in the dataset.
+
+        THE PARADOX: Both products have cameras + microphones + always-on AI.
+        Both capture photos/video. Both raise identical privacy concerns for
+        bystanders. Google's glasses are being built by FOUR hardware
+        partners (Samsung, XREAL, Warby Parker, Gentle Monster) with
+        potentially MORE diverse deployment than Meta's single-partner
+        (EssilorLuxottica) model. Yet ONLY Meta gets surveillance framing.
+        Google gets product-review treatment.
+
+        STRUCTURAL EXPLANATION: This cannot be explained by the simple
+        deal/no-deal model — WIRED has NO deal with either Google OR Meta.
+        Both have adversarial financial relationships with Condé Nast.
+        The divergence reveals a second-order effect: the ADVERTISING
+        DEPENDENCY PARADOX. Google still provides residual ad revenue and
+        search traffic (even at reduced levels). Attacking Google's
+        product launches could accelerate the "Google Zero" timeline
+        before Condé Nast has fully completed its revenue pivot. Meta
+        provides ZERO residual revenue — attacking Meta's products is
+        cost-free.
+
+        ADDITIONAL FACTOR — COMPETITIVE POSITIONING:
+        Google/Samsung glasses are positioned as a COMPETITOR to Meta glasses.
+        WIRED's adversarial Meta glasses coverage serves Google/Samsung's
+        competitive interests: undermining consumer trust in Meta glasses
+        while Google/Samsung prepare their rival product. A publication
+        that simultaneously attacks Meta glasses (the market leader) and
+        reviews Google glasses positively is functionally providing
+        competitive intelligence marketing for Google's product launch.
+        Whether intentional or not, the differential framing advantages
+        the company that still sends WIRED traffic over the company that
+        sends zero traffic.
+      google_glasses_source: "http://androidauthority.com/how-google-android-xr-smart-glasses-work-3508597/"
+      samsung_google_io_source: "https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm"
+      privacy_comparison_source: "http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm"
+
     google_traffic_collapse:
       discovery_date: 2026-08-06
       description: |

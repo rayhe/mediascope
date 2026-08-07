@@ -1,4 +1,88 @@
 # MediaScope Iteration Log
+## 2026-08-06 21:00 PT — Type A: WIRED × Google Smart Glasses Framing Paradox
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** WIRED's differential framing of Google/Samsung Android XR glasses vs Meta Ray-Ban glasses
+
+### Key Finding: Smart Glasses Framing Paradox
+
+WIRED treats Google/Samsung Android XR glasses (cameras, mics, always-on Gemini AI)
+with product-review framing while treating functionally identical Meta Ray-Ban glasses
+with investigative-surveillance framing. This is despite Condé Nast having a MORE
+adversarial financial relationship with Google than with Meta.
+
+**The no-deal/no-deal paradox:** Neither Google nor Meta has a content licensing deal
+with Condé Nast. Both should receive similar editorial treatment under the simple
+deal/no-deal model. Yet Meta gets -0.85 adversarial tone while Google's smart glasses
+get neutral product-review coverage. This reveals a second-order effect:
+
+**Advertising Dependency Paradox at the product level:**
+- Google still provides residual ad revenue + search traffic (even declining) — attacking
+  Google product launches could accelerate "Google Zero" before Condé Nast completes
+  its revenue pivot. Risk: non-zero.
+- Meta provides ZERO residual revenue — attacking Meta products is completely cost-free.
+  Risk: zero.
+
+**Competitive positioning bonus:** Google/Samsung glasses are a direct Meta Ray-Ban
+competitor. WIRED's adversarial Meta coverage + neutral Google coverage functionally
+provides competitive marketing for Google's glasses launch. Whether intentional or not,
+the framing advantages the company that still sends traffic.
+
+### Changes Made
+- Added `google_smart_glasses_framing` section to `profiles/competitor-coverage-research.yaml`
+  under the `wired:` publication entry
+- Created `tests/test_wired_google_glasses_framing_paradox_aug6.py` (34 tests, 8 classes)
+
+### Test Results
+- 34/34 new tests passing
+- 99/99 tests passing in competitor coverage regression sample
+- 0 regressions
+
+---
+## 2026-08-06 20:00 PT — Type D: Cross-Validation Suite — Evening Integrity Check
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-validate data consistency across evening iterations (15:00 Type A, 16:00 Type B, 18:00 Type C) and fix entity-level gaps
+
+### DATA GAPS FOUND AND FIXED
+
+| Issue | Source | Fix |
+|-------|--------|-----|
+| OpenAI entity missing Aug 4 + Aug 6 case developments | `apple_partnership_collapse` stopped at phase 3 (Jul 10 filing) | Added `preliminary_injunction_date: 2026-08-04` and `motion_to_dismiss_date: 2026-08-06`, updated overview, added 2 new source URLs |
+| Apple entity missing phases 4-5 | `openai_partnership_collapse` stopped at `phase_3_apple_sues_openai` | Added `phase_4_preliminary_injunction` (Aug 4) and `phase_5_motion_to_dismiss` (Aug 6) with dates, details, and source URLs |
+| Atlantic silence missing `source_urls` list | Research had `escalation_sources` dict but no flat `source_urls` for schema consistency | Added 4-URL `source_urls` list matching escalation_sources values |
+
+### CROSS-VALIDATION CHECKS (8 initial, 3 failures → all fixed)
+
+1. ✅ Atlantic apple_v_openai_editorial_silence in research (correct path: `publications.atlantic`)
+2. ✅ Guardian milmo_cross_entity in research (correct path: `publications.guardian`)
+3. ✅ Microsoft-OpenAI axis in cross_entity_leverage (correct key: `microsoft_openai_axis`)
+4. ✅ Amazon sextuple leverage in entities (6 layers)
+5. ✅ OpenAI entity has all 5 escalation phases
+6. ✅ Apple entity has all 5 escalation phases
+7. ✅ Atlantic silence has source_urls list
+8. ✅ Milmo research has 5+ source URLs
+
+### NEW TEST FILE: `test_type_d_8pm_cross_validation_aug6.py` (37 tests, 8 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestOpenAIAppleEscalationPhases | 7 | All 5 phases present with correct dates, 4+ source URLs, overview mentions dismissal |
+| TestAppleEntityEscalationPhases | 7 | Phases 4-5 with dates, source URLs, cross-entity date consistency with OpenAI |
+| TestAtlanticSilenceSourceURLs | 5 | source_urls list present, 4+ URLs, both formats coexist, escalation URLs ⊂ source_urls |
+| TestGuardianMilmoConsistencyAcrossFiles | 5 | Profile + research both have Milmo, tones consistent, source URLs, role documented |
+| TestAmazonSextupleConsistencyAcrossFiles | 5 | Entity + research both have sextuple, 6 layers, Anthropic documented, meta_contrast |
+| TestMicrosoftOpenAIAxisPresent | 2 | Axis exists in cross_entity_leverage with non-empty content |
+| TestEveningIterationCoverage | 4 | All 3 evening iteration types (A/B/C) left data traces |
+| TestLeverageCountsConsistent | 2 | Amazon highest (6+), Meta fewer |
+
+### Test Results
+- 37/37 new tests passing
+- 367/367 regression tests passing (structural consistency, entities, financial relationships, competitor coverage, Atlantic silence, 7PM cross-validation)
+- 0 regressions after all changes
+- Commit: a29fb8a — pushed to main
+
+---
 ## 2026-08-06 18:00 PT — Type C: Amazon Sextuple Publisher Leverage Web — Financial Incentive Mapping
 
 **Rotation:** C (Financial Incentive Mapping)
