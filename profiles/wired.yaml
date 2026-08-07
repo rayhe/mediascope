@@ -1863,6 +1863,38 @@ competitor_relationships:
     description: "Multi-year content licensing deal via Condé Nast parent, Aug 2024. OpenAI displays WIRED content in ChatGPT and SearchGPT."
     source_url: "https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/"
     coverage_prediction: "softer"
+    apple_v_openai_silence:
+      finding_date: "2026-08-07"
+      event: "Apple v. OpenAI trade secret lawsuit (N.D. Cal.)"
+      filing_date: "2026-07-10"
+      days_of_silence: 28
+      wired_articles_published: 0
+      story_in_wired_beat: true
+      description: >
+        WIRED published ZERO articles about Apple's trade secret lawsuit against
+        OpenAI in 28 days (Jul 10 - Aug 7, 2026), despite the story involving
+        hardware trade secrets, former Apple VP Tang Tan, Jony Ive's $6.5B startup,
+        and the future of AI consumer devices — all squarely in WIRED's core beat.
+        The case escalated rapidly: initial filing Jul 10, preliminary injunction
+        Aug 4, OpenAI motion to dismiss Aug 6.
+        WIRED is the ONLY major profiled tech publication with zero coverage.
+        Every other publication — WSJ (3+), TechCrunch (3+), Reuters (4+), Gizmodo (1),
+        The Verge (1), CNN (1), Barron's (2), FT (1+) — covered the lawsuit.
+        This silence is the strongest single data point for the financial amplification
+        thesis: WIRED's parent Condé Nast has a direct content licensing deal with
+        OpenAI, and WIRED is silent on the most negative OpenAI story of 2026.
+      cross_pub_comparison:
+        wsj: {articles: 3, tone: -0.10, openai_deal: "News Corp $50M/yr"}
+        techcrunch: {articles: 3, tone: -0.35, openai_deal: "none"}
+        reuters: {articles: 4, tone: 0.00, openai_deal: "none"}
+        gizmodo: {articles: 1, tone: -0.15, openai_deal: "none"}
+        the_verge: {articles: 1, tone: -0.05, openai_deal: "indirect via Advance"}
+        cnn: {articles: 1, tone: -0.05, openai_deal: "none"}
+        barrons: {articles: 2, tone: -0.10, openai_deal: "none"}
+      source_urls:
+        - "https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/"
+        - "https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/"
+        - "https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/"
   meta:
     financial_tie: "none"
     estimated_value: "$0"
