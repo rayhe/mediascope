@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,946 | Across 193 test files |
+| Tests | 5,004 | Across 194 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4946 tests** across 193 test files, each covering a different analytical capability:
+MediaScope has **5004 tests** across 194 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -563,6 +563,7 @@ MediaScope has **4946 tests** across 193 test files, each covering a different a
 | `test_type_d_cross_validation_aug6.py` | 41 | Type D cross-validation suite (Aug 6): structural consistency across profiles, entity definitions, financial relationship data, citation URL reachability, cross-profile score validation |
 | `test_type_d_10am_cross_validation_aug6.py` | 40 | Type D cross-validation (Aug 6, 10 AM): Guardian partial independence model, Alex Heath Access Paradox (mechanism #5), Advance-Reddit-Perplexity triangle, asymmetry gap ordering, five-mechanism taxonomy, statistical direction consistency |
 | `test_type_d_7pm_cross_validation_aug6.py` | 33 | Type D cross-validation (Aug 6, 7 PM): MS-OpenAI axis cross-file consistency (entities ↔ research), Milmo tone scores cross-file (guardian.yaml ↔ research), Atlantic Apple-OpenAI silence verification, Amazon sextuple layer name matching, cross_entity_leverage completeness, aggregate findings source URL consistency, publication profiles competitor_relationships coverage |
+| `test_type_d_midnight_cross_validation_aug7.py` | 58 | Type D cross-validation (Aug 7, midnight): Revenue Dependency Concentration Index arithmetic (all 8 publication ratios verified), deal value summation consistency, inverse proportionality ranking validation, margin amplification arithmetic (FT/Guardian/NYT/News Corp), disclosure paradox consistency, revenue plausibility bounds, cross-file deal references, source URL completeness, Gizmodo clean control isolation, News Corp balanced symmetry |
 | `test_type_d_8pm_cross_validation_aug6.py` | 37 | Type D cross-validation (Aug 6, 8 PM): OpenAI/Apple entity escalation phases 4-5 (injunction + motion to dismiss), Atlantic silence source_urls schema consistency, Milmo profile↔research cross-file, Amazon sextuple entity↔research, MS-OpenAI axis presence, evening iteration data traces, leverage count consistency |
 | `test_type_d_2pm_cross_validation_aug6.py` | 50 | Type D cross-validation (Aug 6, 2 PM): sensor-count paradox cross-pub consistency, WSJ balanced control ↔ aggregate findings, Google coercion ↔ Condé Nast traffic, NYT Q2 2026 earnings ↔ profile, Mims tone inversion direction, WSJ disclosure uniqueness, Google revenue-coercion link, MIT TR governance ↔ Apple entity, source URL presence |
 | `test_type_d_aug6_cross_validation.py` | 48 | Type D cross-validation (Aug 6, 09:00): asymmetry gap ordering, five-mechanism taxonomy, Guardian partial independence, Advance-Reddit-Perplexity triangle, control groups, statistical direction consistency |
