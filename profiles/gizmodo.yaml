@@ -316,3 +316,133 @@ journalist_migrations:
       journalism. This is NOT an accusation of bias — it's a structural observation
       about how publication-level financial relationships create editorial gravity.
     notes: "Career path Gizmodo → TechCrunch → WIRED confirmed via Techmeme byline tracking"
+
+# ===================================================================
+# KYLE BARR CROSS-ENTITY COVERAGE — Added 2026-08-07
+# The "Privacy Gradient Paradox": Barr covers the SAME product category
+# (camera-equipped smart glasses) across Meta, Samsung, Apple, Google
+# but applies sharply differential privacy-alarm framing.
+# Contrast with Raymond Wong (same publication) who applies EQUAL
+# criticism across all entities — creating an intra-publication divergence.
+# ===================================================================
+journalist_cross_entity:
+  kyle_barr:
+    date_analyzed: '2026-08-07'
+    role: Staff Writer, Consumer Tech
+    beat: Smart glasses, consumer tech, Apple, wearables
+    author_page: https://gizmodo.com/author/kylebarr
+    article_volume: 115+ pages on Gizmodo author archive
+    finding: Privacy Gradient Paradox
+    finding_summary: 'Kyle Barr covers camera-equipped smart glasses across Meta, Samsung, Apple, and
+      Google -- all building functionally identical products with outward-facing cameras. But his framing
+      applies a sharp privacy-alarm gradient: Meta receives apocalyptic language (walking panopticons,
+      worst company, surveillance dystopia), Apple is cast as a sympathetic privacy hero facing an impossible
+      choice, Samsung is positioned as a privacy upgrade FROM Meta, and Google gets mild skepticism at
+      most.
+
+
+      This matters for the MediaScope model because Gizmodo has ZERO financial ties to any of these companies.
+      The gradient therefore isolates EDITORIAL CULTURE BIAS as a variable independent of financial incentives.
+      Combined with Raymond Wong''s equal-opportunity criticism at the SAME publication, the Barr-Wong
+      divergence proves that differential framing exists at the individual journalist level even absent
+      institutional financial pressure.'
+    meta:
+      aggregate_tone: -0.65
+      tone_label: apocalyptic_privacy_alarm
+      article_count: 3
+      key_language:
+      - the worst company
+      - ickiness, surveillance dystopia, and glassholism
+      - Meta, which does not seem to care as much about the privacy side of things
+      - Meta's Privacy-Invading Lunch
+      - walking panopticons
+      - breach of social contract
+      - paying to be walking panopticons
+      - recording device on her face
+      articles:
+      - title: Smart Glasses Are the One Privacy Nightmare Apple Can't Solve
+        date: 2026-07
+        url: https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443
+        tone: -0.6
+        framing_notes: 'Meta framed as uniquely dangerous: the worst company, ickiness, surveillance dystopia,
+          and glassholism. Samsung cameras get a pass: if you are not so much into having your private
+          moments reviewed by strangers -- positioned as privacy UPGRADE from Meta despite having identical
+          camera hardware. Apple gets sympathetic framing: long staked much of its brand on caring about
+          privacy.'
+      - title: Apple Is Coming for Meta's Privacy-Invading Lunch With Its Own Smart Glasses in Late 2027,
+          Report Says
+        date: 2026-06
+        url: https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491
+        tone: -0.75
+        framing_notes: 'Title itself frames Meta as the Privacy-Invading party and Apple as the disruptor.
+          Uses walking panopticons for Meta wearers. Opens with personal anecdote: medical receptionist
+          wearing Meta glasses treated as inherently alarming. Apple not framed as privacy risk despite
+          also planning camera glasses.'
+      - title: Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses
+        date: 2026-05
+        url: https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595
+        tone: -0.2
+        framing_notes: Meta appears only as the incumbent reference point. Rival framing positions Meta
+          as the target to challenge. No privacy alarm for Samsung or Google despite both having cameras.
+          Samsung/Google cameras described neutrally as product features.
+    apple:
+      aggregate_tone: -0.1
+      tone_label: sympathetic_privacy_hero
+      key_language:
+      - Apple has long staked much of its brand on caring about privacy
+      - impossible choice between privacy-friendly and commercially viable
+      - any deviation from that ethos is a big deal
+      - could jeopardize the brand's entire reputation
+      framing_pattern: 'Apple is consistently cast as the sympathetic actor forced into a moral dilemma
+        by Meta''s behavior. The narrative: Meta poisoned the smart glasses well with privacy violations,
+        and now Apple must choose between making a product that sells (with cameras) and maintaining its
+        privacy-first brand. Apple''s cameras are framed as a reluctant compromise, Meta''s as deliberate
+        invasion. The privacy hero faces impossible choice narrative presupposes Apple''s good intent
+        despite Apple having zero shipped smart glasses product to evaluate.'
+    samsung:
+      aggregate_tone: 0.1
+      tone_label: neutral_to_positive_product
+      key_language:
+      - if you are not so much into having your private moments reviewed by strangers
+      - Rival to Meta -- neutral competitive framing
+      - Samsung and Google want in on the smart glasses action
+      framing_pattern: Samsung receives pure product coverage with no privacy alarm. Despite Samsung's
+        smart glasses having confirmed cameras capable of photo and video capture -- functionally identical
+        to Meta's -- no privacy concern is raised. Samsung is instead positioned as a privacy UPGRADE
+        from Meta. The same camera hardware that makes Meta a walking panopticon is a feature, not a bug,
+        on Samsung.
+    google:
+      aggregate_tone: -0.05
+      tone_label: mild_skepticism
+      key_language:
+      - does not have the best track record for respecting user privacy
+      - audio glasses -- noting cameras despite Google billing them as such
+      framing_pattern: Google gets mild skepticism -- one sentence about privacy track record -- but no
+        alarm language, no apocalyptic framing, no nightmare or panopticon language. Google's confirmed
+        camera glasses are noted factually, not framed as surveillance infrastructure. Google Glass was
+        THE original glasshole product, yet Barr's 2026 coverage treats Google's return to camera glasses
+        as unremarkable.
+    privacy_gradient:
+      ordering: Meta (-0.65) << Google (-0.05) < Apple (-0.10 sympathetic) < Samsung (+0.10)
+      meta_apple_delta: 0.55
+      meta_samsung_delta: 0.75
+      meta_google_delta: 0.6
+      significance: 'All four companies are building camera-equipped smart glasses. The privacy risk is
+        structurally identical: an outward-facing camera on someone''s face, capable of discreet photo/video
+        capture. But only Meta triggers apocalyptic framing. This 0.55-0.75 tone delta across IDENTICAL
+        product categories at a publication with ZERO financial ties to any company represents the pure
+        editorial-culture component of coverage asymmetry.'
+    intra_publication_divergence:
+      comparison: Kyle Barr vs Raymond Wong
+      wong_meta_tone: balanced_product_first (tone ~-0.15)
+      barr_meta_tone: apocalyptic_privacy_alarm (tone -0.65)
+      wong_apple_tone: enthusiastic when warranted (~+0.20)
+      barr_apple_tone: sympathetic_privacy_hero (~-0.10)
+      divergence_significance: 'Two journalists at the SAME publication (Gizmodo, Keleops AG, zero financial
+        ties) covering the SAME product category (smart glasses) produce markedly different entity-specific
+        framing. Wong applies equal-opportunity criticism; Barr applies a privacy gradient that consistently
+        penalizes Meta and benefits Apple. This proves that differential framing is not solely institutional
+        -- it operates at the individual editorial-culture level. However, when Barr''s gradient DIVERGES
+        from Wong''s balance, the direction of divergence is NOT random: it always penalizes Meta and
+        benefits Apple, matching the industry-wide editorial consensus. Individual journalist culture
+        amplifies rather than randomizes the shared directional bias.'

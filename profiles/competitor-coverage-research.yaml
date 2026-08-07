@@ -2013,6 +2013,47 @@ publications:
       AMPLIFY this baseline by an additional 0.10-0.30, producing the
       extreme asymmetries documented at WIRED, NYT, and The Verge.
 
+    # KYLE BARR PRIVACY GRADIENT PARADOX — Added 2026-08-07
+    # Same publication, same beat, different journalist = different framing
+    kyle_barr_privacy_gradient:
+      finding: "Privacy Gradient Paradox"
+      date_analyzed: "2026-08-07"
+      journalist: "Kyle Barr"
+      role: "Staff Writer, Consumer Tech"
+      description: |
+        Kyle Barr covers camera-equipped smart glasses across Meta, Samsung,
+        Apple, and Google at Gizmodo (Keleops AG, ZERO financial ties). Despite
+        all four companies building functionally identical products, Barr applies
+        a sharp privacy-alarm gradient: Meta (-0.65), Google (-0.05), Apple
+        (-0.10 sympathetic), Samsung (+0.10 neutral). This contrasts with
+        Raymond Wong at the SAME publication, who applies equal-opportunity
+        criticism. The Barr-Wong intra-publication divergence proves differential
+        framing operates at the individual journalist level, independent of
+        institutional financial incentives — but the DIRECTION of the differential
+        always penalizes Meta and benefits Apple, matching the industry-wide
+        editorial consensus.
+      meta_tone: -0.65
+      apple_tone: -0.10
+      samsung_tone: 0.10
+      google_tone: -0.05
+      meta_apple_delta: 0.55
+      meta_samsung_delta: 0.75
+      key_articles:
+        - title: "Smart Glasses Are the One Privacy Nightmare Apple Can't Solve"
+          url: "https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443"
+        - title: "Apple Is Coming for Meta's Privacy-Invading Lunch"
+          url: "https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491"
+        - title: "Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses"
+          url: "https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595"
+      significance: |
+        Strengthens the additive bias model: the ~0.50 cultural baseline
+        (already identified in the rogue AI framing paradox) is ALSO visible
+        within smart glasses coverage at the same publication. The privacy
+        gradient is not a Raymond Wong artifact — a second journalist at the
+        same publication shows even LARGER asymmetry, proving the cultural
+        baseline is a robust, individual-level phenomenon.
+
+
   # -----------------------------------------------------------------
   # NEWS CORP (Murdoch family)
   # Financial ties: OpenAI ($50M/yr), Meta (up to $50M/yr).

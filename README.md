@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,366 | Across 203 test files |
+| Tests | 5,404 | Across 204 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5366 tests** across 203 test files, each covering a different analytical capability:
+MediaScope has **5404 tests** across 204 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -540,6 +540,7 @@ MediaScope has **5366 tests** across 203 test files, each covering a different a
 | `test_wired_google_glasses_framing_paradox_aug6.py` | 34 | WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, no-deal/no-deal paradox (neither has Condé Nast deal), advertising dependency paradox (Google residual ad revenue = non-zero attack cost, Meta = zero revenue = zero attack cost) |
 | `test_zoe_schiffer_cross_entity.py` | 29 | Zoë Schiffer (WIRED Director, Business & Industry) cross-entity coverage: same-event talent war asymmetry (Meta = "poaching" aggressor vs OpenAI = "missionaries" victim), deep OpenAI insider source access (leaked Altman/Chen memos, exclusive Fidji Simo Q&A), Meta external/adversarial framing ("Brain Drain", "Crisis", keystroke "spyware"), executive profile gap (empathetic OpenAI Q&A, zero Meta equivalents), departure framing divergence, Condé Nast financial incentive correlation |
 | `test_kashmir_hill_cross_entity.py` | 49 | Kashmir Hill (NYT) cross-entity: privacy beat concentrated on Meta (Name Tag investigation, -0.8 tone) while Ring facial recognition (deployed, FTC settlement, class action), Google Android XR, Apple Vision Pro, OpenAI data scraping receive zero Hill coverage — beat assignment effect separates NYT's most skilled privacy investigator from companies with financial ties (Amazon $20-25M/yr), asymmetric privacy ratchet |
+| `test_kyle_barr_cross_entity.py` | 38 | Kyle Barr (Gizmodo) cross-entity: Privacy Gradient Paradox — covers camera-equipped smart glasses across Meta (-0.65 apocalyptic: walking panopticons, worst company), Apple (-0.10 sympathetic hero), Samsung (+0.10 neutral product), Google (-0.05 mild skepticism). All four build identical camera glasses but only Meta triggers alarm framing. Intra-publication divergence with Raymond Wong (equal-opportunity critic) proves differential framing at individual journalist level. Gizmodo = ZERO financial ties clean control, isolating editorial culture bias from financial incentive bias. 10 classes, 38 tests |
 | `test_revenue_dependency_ratios.py` | 38 | Revenue Dependency Concentration Index: normalizes AI deal values by total annual revenue — inverse proportionality paradox (smallest publications face highest proportional incentive: Atlantic 4.4%, Guardian 2.0% vs NYT 0.8%), margin amplification effect (FT deals = 20% of operating profit, Guardian deals offset 22% of operating loss), disclosure paradox (News Corp, lowest dependency, is only publisher that discloses AI relationships in journalism), 9 publications with verified revenue sources (SEC filings, Form 990, annual reports) |
 | `test_samsung_equivalence_paradox_aug7.py` | 41 | Samsung Equivalence Paradox: Samsung Intelligent Eyewear (Galaxy Unpacked Jul 22, 2026) is functionally identical to Meta Ray-Ban in every privacy-relevant dimension (12MP camera, mics, speakers, always-on AI, LED indicator with obstruction detection, ~50g, no display, companion phone architecture), yet receives product-review framing ("takes privacy pretty seriously" — SamMobile; "important privacy feature" — GSMArena) while Meta receives adversarial framing ("I'm a Creep" — WIRED/Business Wars). Iberville Parish School System (Louisiana) banned "Meta glasses" BY NAME (Aug 4, 2026) — ban rationale applies equally to Samsung's identical glasses but Samsung would not be covered. Differential media framing → differential policy outcomes. |
 | `test_apple_google_gemini_publisher_chain_aug7.py` | 41 | Apple-Google $1B/yr Gemini Deal Publisher Content Chain: Apple's $1B/yr deal with Google (announced Jan 12, 2026; Bloomberg reported Nov 5, 2025) creates a financial pipeline where publisher content reaches 2B+ Apple devices without direct publisher compensation. Apple negotiated with Condé Nast, NBC News, IAC in Dec 2023 ($50M offers) but no confirmed deal signed. Instead, Apple bypassed publisher licensing by paying Google for a Gemini model trained on publisher content (Hachette/Cengage lawsuit confirms unauthorized training on millions of works). Meta pays publishers directly ($50M/yr News Corp); Apple pays publishers $0. Tests verify deal terms, content chain documentation, Condé Nast implications, financial arithmetic, source citations, and cross-file consistency. |
