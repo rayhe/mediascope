@@ -269,15 +269,152 @@ key_journalists:
       technology correspondent, tech editor at Daily Telegraph, associate editor at
       Wired UK. Hosts FT Tech Tonic podcast. Former Stern Fellow at Washington Post.
 
-    cross_entity_meta_coverage:
-      description: >
-        Murgia has covered Meta on occasion — notably the AI.Reverie acquisition
-        (2021, neutral business) and Facebook content moderators PTSD (2020,
-        adversarial toward outsourcing practices). However, her primary coverage
-        targets are OpenAI, Anthropic, and the broader AI safety/ethics landscape.
-        When she does cover Meta, her framing is more neutral/business than Murphy's.
-        Her OpenAI coverage is constructive/aspirational (Jony Ive device as
-        "iPhone of AI," spending framed as "fastest-growing company").
+    # ===================================================================
+    # CROSS-ENTITY COVERAGE ANALYSIS — Madhumita Murgia
+    # Added 2026-08-07 (Type B: Journalist Cross-Entity Tracking)
+    # KEY FINDING: Dual-Lens Paradox (Mechanism #6)
+    # ===================================================================
+    cross_entity_coverage_analysis:
+      finding: >
+        THE DUAL-LENS PARADOX (Mechanism #6): Murgia is the FT's AI Editor — the
+        most senior AI journalism position — mandated to "head up the FT's coverage
+        of artificial intelligence stories." She covers OpenAI, Anthropic, Google
+        DeepMind, and the broader AI industry with innovation/aspirational framing.
+        Yet she has NEAR-ZERO Meta coverage, despite Meta being the world's largest
+        open-source AI developer (Llama), a $100B+ AI infrastructure investor, and
+        the leading AI wearables manufacturer.
+
+        Instead, Meta's AI work is covered exclusively by Hannah Murphy (social media
+        beat reporter) using surveillance/privacy framing. This creates a structural
+        dual-lens: the SAME technology (AI-powered wearable) gets framed as
+        "innovation" or "surveillance" based solely on which editorial lens covers
+        the manufacturer. OpenAI's Jony Ive AI wearable → AI lens (Murgia/Hammond)
+        → "iPhone of AI." Meta's AI glasses → Platform lens (Murphy) → "surveillance
+        infrastructure." The technology is identical; the framing diverges completely.
+
+        Unlike the WIRED mechanism (#1, desk assignment) or NYT mechanism (#2,
+        between-reporter assignment), the FT mechanism operates at the EDITORIAL LENS
+        level: not just which reporter, but which conceptual framework covers which
+        company. The AI lens sees innovation; the platform lens sees surveillance.
+        The company determines the lens, not the technology.
+
+      dual_lens_paradox:
+        mechanism: "7"
+        name: "Dual-Lens Paradox"
+        description: >
+          Editorial lens assignment creates framing asymmetry independent of technology.
+          FT's AI desk (Murgia) covers every major AI company EXCEPT Meta.
+          FT's platform desk (Murphy) covers Meta using surveillance framing.
+          Same product category, different editorial framework, opposite framing.
+        ai_lens_entities: ["OpenAI", "Anthropic", "Google DeepMind", "xAI"]
+        platform_lens_entities: ["Meta", "Snap", "TikTok", "Pinterest"]
+        ai_lens_framing: "innovation, safety, responsibility, frontier"
+        platform_lens_framing: "surveillance, privacy, labor exploitation, gamble"
+
+      openai_deal_announcement:
+        finding: >
+          Murgia herself wrote the FT article announcing the FT-OpenAI content
+          licensing deal on April 29, 2024. She then continued covering OpenAI
+          extensively — rogue AI agents, China model sales, AI Labs podcast series —
+          without disclosing the financial relationship she personally announced.
+          This is the strongest evidence of PERSONAL non-disclosure in the dataset:
+          the journalist who announced the deal knows about it and covers the
+          company without mentioning it.
+        date: "2024-04-29"
+        techmeme_url: "https://www.techmeme.com/240429/p7"
+        subsequent_disclosure: false
+        subsequent_disclosure_note: >
+          Never disclosed in subsequent OpenAI coverage including rogue AI agent
+          article, China sales article, or AI Labs podcast series.
+        significance: >
+          Personal non-disclosure. The announcement-to-subsequent-coverage pipeline
+          eliminates any defense of ignorance — Murgia knows about the deal because
+          she reported it, yet her subsequent coverage treats OpenAI as if FT has no
+          financial interest.
+
+      ai_labs_podcast_series:
+        description: >
+          FT Tech Tonic "AI Labs" series (Apr 29 – Jun 3, 2026): five episodes
+          profiling the major AI labs. The Meta episode was the ONLY one NOT featuring
+          Murgia (the AI Editor). Instead, Murphy and Criddle (platform reporters)
+          covered Meta. Even when the FT produces an AI-industry podcast series about
+          AI companies, Meta is covered through the platform lens.
+        meta_episode:
+          title: "AI Labs: Zuckerberg's $100bn gamble"
+          subtitle: "Can Mark Zuckerberg's Meta buy its way into the AI game?"
+          date: "2026-06-03"
+          reporters: ["Cristina Criddle", "Hannah Murphy"]
+          host: "Murad Ahmed"
+          framing: "risk, excess, latecomer, doubt"
+          notes: >
+            ONLY episode NOT featuring Murgia. Platform reporters cover Meta even
+            in an AI-industry series. "Gamble" implies recklessness; "buy its way
+            in" implies Meta lacks inherent AI capability; subtitle is a doubting
+            question ("can Meta even buy entry?").
+        anthropic_episode:
+          title: "AI Labs: Are Anthropic really the good guys?"
+          subtitle: "Dario Amodei casts his company as the good guys of the AI race. Will that last?"
+          date: "2026-05-06"
+          framing: "virtue_presumed, sustainability_questioned"
+          notes: >
+            Starts from the PREMISE that Anthropic IS "the good guys" and merely
+            questions sustainability. Even the challenge is flattering.
+        openai_episode:
+          title: "AI Labs: Sam Altman may make or break OpenAI"
+          subtitle: "Will OpenAI's chief be its greatest asset or its greatest liability?"
+          date: "2026-05-20"
+          framing: "balanced_personality_risk"
+        google_episode:
+          title: "AI Labs: Google DeepMind plans its comeback"
+          subtitle: "Google and its AI lab DeepMind are bearing down OpenAI and Anthropic"
+          date: "2026-05-13"
+          framing: "recovery_challenger"
+        xai_episode:
+          title: "AI Labs: Elon Musk wants AI in space"
+          subtitle: "Will SpaceX's giant IPO turbocharge Elon Musk's AI ambitions?"
+          date: "2026-05-27"
+          framing: "ambition_narrative"
+        episodes:
+          - {company: "Anthropic", title: "Are Anthropic really the good guys?", tone: "virtue_presumed"}
+          - {company: "Google", title: "Google DeepMind plans its comeback", tone: "recovery"}
+          - {company: "OpenAI", title: "Sam Altman may make or break OpenAI", tone: "balanced_risk"}
+          - {company: "xAI", title: "Elon Musk wants AI in space", tone: "ambition"}
+          - {company: "Meta", title: "Zuckerberg's $100bn gamble", tone: "risk_excess_doubt"}
+        title_framing_analysis:
+          finding: >
+            Meta is the ONLY company framed through risk/doubt/excess language.
+            Anthropic gets virtue framing. Google gets recovery framing. OpenAI gets
+            balanced personality framing. xAI gets ambition framing. Meta gets
+            "gamble" + "can they buy their way in?" — uniquely adversarial.
+          meta_title_tone: -0.6
+          anthropic_title_tone: 0.1
+          openai_title_tone: -0.1
+          google_title_tone: 0.0
+          xai_title_tone: 0.1
+
+      wired_uk_background:
+        finding: >
+          Murgia was previously associate editor/senior editor at Wired UK, part of
+          the Condé Nast media family. She carries editorial culture from the same
+          publication group that produces the most adversarial Meta coverage in the
+          MediaScope dataset (WIRED US under Katie Drummond). While this does not
+          prove bias transfer, it provides a cultural context for how the FT's AI
+          desk may absorb framings from Condé Nast editorial norms.
+        role: "Associate editor/senior editor, Wired UK"
+        significance: >
+          Condé Nast connection provides cultural context but is NOT causally
+          determinative. FT's institutional norms and Nikkei ownership provide
+          independent editorial direction. The connection is noted for completeness
+          in mapping how editorial personnel carry framings between publications.
+
+      source_urls:
+        - "https://muckrack.com/madhu-murgia/articles"
+        - "https://en.wikipedia.org/wiki/Madhumita_Murgia"
+        - "https://www.techmeme.com/240429/p7"
+        - "https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/"
+        - "https://podcast.app/ft-tech-tonic-p172602"
+        - "https://www.radio.de/podcast/ft-tech-tonic"
+        - "https://www.techmeme.com/241205/p13"
 
     meta_articles:
       - article: "Meta acquired AI.Reverie, terminating $950M Air Force contract"
@@ -292,17 +429,102 @@ key_journalists:
         notes: "Adversarial toward outsourcing practices, not Meta-specific anti-tech"
 
     openai_articles:
+      - article: "FT signs deal with OpenAI (deal announcement)"
+        date: "2024-04-29"
+        url: "https://www.techmeme.com/240429/p7"
+        framing: "institutional_announcement"
+        notes: "Murgia wrote the article announcing FT's own deal with OpenAI"
+
       - article: "OpenAI Jony Ive device (with George Hammond)"
         date: "2025-10-05"
         url: "https://www.techmeme.com/251005/p1"
         framing: "constructive_neutral"
 
+      - article: "OpenAI and Anthropic models went rogue in cyber tests, UK watchdog says"
+        date: "2026-07"
+        framing: "factual_reporting"
+        notes: "Both OpenAI and Anthropic implicated equally; factual relay from AISI"
+
+      - article: "OpenAI and Google sell AI models to blacklisted China groups"
+        date: "2026-07"
+        framing: "adversarial_policy"
+        notes: "Adversarial toward OpenAI/Google national security lapse"
+
+    anthropic_articles:
+      - article: "Anthropic's relentless race to the top (Dario Amodei profile)"
+        date: "2026-Q1"
+        framing: "constructive_profile"
+        notes: "Extended profile of Dario Amodei — aspirational framing"
+
+      - article: "Anthropic chief tells G7 leaders to 'resist the temptation to splinter'"
+        date: "2026-Q2"
+        framing: "constructive_leadership"
+        notes: "Amodei as global AI statesman"
+
+      - article: "Anthropic scrambles after Trump administration freezes its top AI models"
+        date: "2026-Q2"
+        framing: "sympathetic_victim"
+        notes: "Anthropic as victim of government action"
+
+      - article: "Anthropic to expand Mythos access to more than 15 countries"
+        date: "2026-Q2"
+        framing: "constructive_expansion"
+
+      - article: "Anthropic offers EU access to Mythos"
+        date: "2026-Q2"
+        framing: "constructive_expansion"
+
+      - article: "UK in talks with Anthropic over Mythos access for banks"
+        date: "2026-Q2"
+        framing: "constructive_negotiation"
+
+      - article: "Big Tech workers press bosses to back Anthropic in Pentagon clash"
+        date: "2026-Q2"
+        framing: "sympathetic_underdog"
+        notes: "Anthropic as principled company backed by employees"
+
+      - article: "What is AI 'distillation'? (Anthropic claims Chinese theft)"
+        date: "2026-Q1"
+        framing: "sympathetic_victim"
+        notes: "Anthropic as victim of IP theft"
+
+      - article: "Dario Amodei: Democracies must maintain the lead in AI"
+        date: "2024-12-05"
+        url: "https://www.techmeme.com/241205/p13"
+        framing: "constructive_interview"
+        notes: "Extended Q&A positioning Amodei as democratic AI champion"
+
+    google_articles:
+      - article: "Google's AI shake-up boosts Brin as DeepMind's Hassabis steps aside"
+        date: "2026-Q3"
+        framing: "neutral_organizational"
+
+      - article: "Google DeepMind dismantles Nobel-winning AlphaFold team in strategy shift"
+        date: "2026-Q3"
+        framing: "critical_loss"
+        notes: "Loss narrative — dismantling a Nobel-winning team"
+
+      - article: "Google told staff it is 'proud' of Pentagon AI contract after internal backlash"
+        date: "2026-Q2"
+        framing: "adversarial_labor"
+
+      - article: "Google DeepMind founder Hassabis's investment in Anthropic revealed"
+        date: "2026-Q2"
+        framing: "investigative_disclosure"
+
     comparison_significance: >
-      Murgia's Meta coverage is sporadic and tends toward neutral business or
-      labor-focused adversarial (outsourcing). Her OpenAI coverage is consistently
-      constructive. This supports the FT's publication-level pattern: OpenAI
-      gets aspirational framing from its assigned reporters, while Meta gets
-      adversarial framing from its dedicated beat reporter.
+      ARTICLE CONCENTRATION PARADOX: Murgia's 2025-2026 coverage is dominated by
+      Anthropic (9+ articles) vs OpenAI (4), Google (4), and Meta (0 recent —
+      last Meta article was 2021). The FT's AI Editor has effectively never covered
+      Meta-as-AI-company in the current AI era. This is despite Meta being:
+      (a) the largest open-source AI developer (Llama, 700M+ downloads),
+      (b) a $100B+ annual AI infrastructure investor,
+      (c) the category leader in AI wearables (Ray-Ban Meta, 10M+ units).
+      Meta's AI work is covered exclusively through the platform/surveillance lens
+      (Murphy), never through the AI/innovation lens (Murgia). This editorial lens
+      assignment is the most structurally impactful asymmetry mechanism at FT,
+      because it determines which conceptual framework — and which set of loaded
+      metaphors — a reader encounters when reading about Meta's AI products.
 
   - name: "George Hammond"
     beat: "Tech deals, M&A, venture capital"

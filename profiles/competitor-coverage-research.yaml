@@ -1420,6 +1420,34 @@ publications:
       regulatory filings; Meta's adversarial treatment appears in the
       published coverage itself.
 
+    # Madhumita Murgia cross-entity — Dual-Lens Paradox (added 2026-08-07)
+    murgia_cross_entity:
+      finding: >
+        THE DUAL-LENS PARADOX (Mechanism #6): FT's AI Editor (Murgia, since Feb 2023)
+        covers every major AI company — OpenAI, Anthropic, Google DeepMind, xAI —
+        EXCEPT Meta. Meta is covered exclusively by platform desk (Murphy) with
+        surveillance/privacy framing. Same technology (AI wearable) gets "innovation"
+        framing from AI desk or "surveillance" framing from platform desk based solely
+        on manufacturer identity. Murgia has 9+ Anthropic articles, 4 OpenAI, 4 Google,
+        0 recent Meta (last: 2021). She wrote the FT-OpenAI deal announcement herself
+        (Apr 29, 2024) then continued covering OpenAI without disclosure.
+      podcast_evidence: >
+        AI Labs series (Apr–Jun 2026): Meta was the ONLY episode NOT featuring Murgia.
+        Murphy/Criddle (platform reporters) covered Meta. Title: "Zuckerberg's $100bn
+        gamble" (risk/excess/doubt) vs Anthropic: "Are Anthropic really the good guys?"
+        (virtue presumed).
+      mechanism: "7 — Editorial Lens Assignment (Dual-Lens Paradox)"
+      meta_anthropic_article_ratio: "0:9+"
+      personal_non_disclosure: true
+      source_urls:
+        - "https://muckrack.com/madhu-murgia/articles"
+        - "https://en.wikipedia.org/wiki/Madhumita_Murgia"
+        - "https://www.techmeme.com/240429/p7"
+        - "https://podcast.app/ft-tech-tonic-p172602"
+        - "https://www.radio.de/podcast/ft-tech-tonic"
+        - "https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/"
+        - "https://www.techmeme.com/241205/p13"
+
   # -----------------------------------------------------------------
   # THE GUARDIAN (Scott Trust / GMG)
   # Financial ties: OpenAI (licensing, Feb 2025), Google (mixed —
