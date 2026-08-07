@@ -1,4 +1,58 @@
 # MediaScope Iteration Log
+## 2026-08-06 18:00 PT — Type C: Amazon Sextuple Publisher Leverage Web — Financial Incentive Mapping
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Amazon's six-layer financial relationship model with publishers — the most complex entanglement in the dataset
+
+### KEY FINDING — SEXTUPLE PUBLISHER LEVERAGE:
+Amazon has SIX distinct financial relationship mechanisms with publishers — more categories than any other tech company. Google has four (advertising, search traffic, Showcase, pilot deals). OpenAI has one (content licensing). Meta has one (content licensing). Amazon's six-fold entanglement:
+
+| Layer | Mechanism | Scale |
+|-------|-----------|-------|
+| 1. AWS Cloud Hosting | Publishers depend on Amazon cloud for hosting/CDN | $42.2B Q2 2026 (+37% YoY) |
+| 2. Advertising Platform | Third-largest digital ad platform | $19.8B Q2 (+26% YoY), $76B TTM |
+| 3. AI Content Licensing | Rufus/Alexa deals with NYT, Condé Nast, Hearst | NYT: $20-25M/yr |
+| 4. Kindle Publishing Platform | Dominant ebook distribution (~60-80% US) | Book publisher dependency |
+| 5. Bezos/WaPo Ownership | Direct newspaper ownership | 350+ journalists laid off Feb 2026 |
+| 6. Anthropic Investment | Largest backer of AI lab with ZERO publisher deals | $13B+ invested, $53.4B Q2 gain |
+
+### KEY FINDING — ANTHROPIC DOUBLE PLAY:
+Amazon simultaneously PAYS publishers for AI content (Rufus/Alexa licensing deals) AND is the largest investor ($13B+) in Anthropic, which has ZERO publisher content licensing deals. Amazon's Anthropic gain ($53.4B) was nearly DOUBLE Amazon's entire operating income ($27.5B) in Q2 2026. Amazon's most profitable asset is a company that pays publishers nothing.
+
+### KEY FINDING — LEVERAGE COUNT ASYMMETRY:
+| Entity | Leverage Layers | Coverage Treatment |
+|--------|----------------|-------------------|
+| Amazon | 6 | Neutral |
+| Google | 4 | Mixed (coercive but soft) |
+| OpenAI | 1 | Neutral to positive |
+| Meta | 1 | Adversarial |
+
+Publications with Amazon financial ties (NYT: $20-25M/yr, Condé Nast: Rufus + OpenAI + Microsoft PCM + Perplexity — 4 deals) cover Amazon neutrally while covering Meta adversarially. The deal-count differential for Condé Nast is 4-to-0 (Amazon-ecosystem deals vs Meta deals).
+
+### Sources
+- Amazon Q2 2026 earnings: https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+- Amazon Anthropic gain: https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
+- Amazon Anthropic audit conflict: https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
+- NYT-Amazon deal value: https://www.geekwire.com/2025/report-amazon-to-pay-at-least-20m-a-year-in-ai-content-deal-with-new-york-times/
+- Bezos WaPo layoffs: https://www.thewrap.com/industry-news/business/jeff-bezos-washington-post-profit-relevance-cnbc-interview/
+- WaPo subscriber loss: https://www.thewrap.com/media-platforms/journalism/the-washington-post-lost-60000-subscribers-layoffs-jeff-bezos/
+- AI content marketplaces: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+- Microsoft PCM expansion: https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+
+### Changes
+- `profiles/competitor-entities.yaml` — Amazon entity expanded: Q2 2026 earnings section (revenue, AWS, advertising, Anthropic gain), sextuple_publisher_leverage (6 layers with detail + meta_contrast), publisher_content_marketplace section
+- `profiles/competitor-coverage-research.yaml` — New `cross_entity_leverage` section with `amazon_sextuple_leverage`: overview, 6 leverage layers, comparison counts, Anthropic double play, coverage asymmetry findings (WIRED/NYT/News Corp), 8 source URLs. Added Amazon finding to `aggregate_findings.key_evidence`
+- `tests/test_type_c_amazon_sextuple_leverage_aug6.py` — NEW: 46 tests across 10 classes (all passing)
+  - TestAmazonSextupleLeverage (6), TestAmazonQ2Earnings (7), TestAnthropicDoublePlay (6), TestBezosWapoOwnership (4), TestLeverageCountComparison (3), TestResearchFileCoverageAsymmetry (7), TestSourceURLs (3), TestAggregateFindingsUpdated (2), TestPublisherContentMarketplace (4), TestCrossEntityConsistency (4)
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,755 tests across 188 test files
+
+### Test Results
+- 46/46 new tests passing
+- 275/275 regression tests passing (structural consistency, financial relationships, competitor coverage, entities, citations, asymmetry)
+- 0 regressions after all changes
+- Commit: f2d6644 — pushed to main
+
+---
 ## 2026-08-06 16:00 PT — Type B: Dan Milmo (Guardian) Cross-Entity — "Big Tobacco" Framing Asymmetry
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -28509,3 +28563,45 @@ This iteration introduces two connected analytical frameworks:
 - 54/54 new tests passing
 - 8/8 structural consistency tests passing
 - 0 regressions after all changes
+
+---
+## 2026-08-06 19:00 PT — Type D: Cross-Validation Suite — Three Data Consistency Gaps Fixed
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-file data consistency validation between competitor-entities.yaml, competitor-coverage-research.yaml, and publication profiles
+
+### GAPS FOUND AND FIXED:
+
+**Gap 1: Microsoft-OpenAI Axis Missing from Research File**
+The `microsoft_openai_financial_axis` section existed in `competitor-entities.yaml` (top-level key with overview, equity stake, circular revenue flow, publisher dual exposure, Meta contrast) but was ABSENT from `competitor-coverage-research.yaml`'s `cross_entity_leverage` section. This meant the research file had only one cross-entity analysis (Amazon sextuple) when it should have had two.
+- **Fix:** Added `microsoft_openai_axis` to `cross_entity_leverage` in research file, mirroring the entities file structure with all key fields (overview, stake, publisher dual exposure for 3 publishers, Meta contrast, source URLs).
+
+**Gap 2: Dan Milmo Google Tone Missing from Research File**
+The Guardian profile (`guardian.yaml`) had Milmo's Google tone at -0.35, but the research file's `milmo_cross_entity` section only had `meta_tone` (-0.45) and `openai_tone` (-0.25) — no `google_tone`.
+- **Fix:** Added `google_tone: -0.35` to the research file's milmo_cross_entity section.
+
+**Gap 3: Iteration Log Entry Uncommitted**
+The Type C 18:00 iteration log entry was staged but not committed with commit f2d6644.
+
+### Cross-Validation Tests Written (33 tests):
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestMicrosoftOpenAIAxisCrossFile | 8 | MS-OpenAI axis exists in BOTH files, overview in both, publisher dual exposure consistency, equity stake, Meta contrast in both, source URLs, Condé Nast meta_deals=0 |
+| TestMilmoCrossEntityToneConsistency | 8 | Meta tone matches between files, OpenAI tone matches, Google tone present in research, Google tone cross-validated, tone_gap = |meta-openai|, Meta most negative, role matches, source URLs |
+| TestAtlanticSilenceCrossFile | 5 | Editorial silence in research, 27-day claim, Apple relationship in profile, Apple coverage_prediction softer, OpenAI relationship present |
+| TestAmazonSextupleCrossFile | 3 | 6 layers in entities, 6 layers in research, layer names match |
+| TestCrossEntityLeverageCompleteness | 3 | Has amazon_sextuple, has microsoft_openai_axis, at least 2 entries |
+| TestAggregateFindingsSourceURLConsistency | 4 | All have descriptions, all have significance, source URLs present, reasonable count |
+| TestPublicationProfilesHaveCompetitorRelationships | 2 | All 9 profiles have competitor_relationships, all have Meta entry |
+
+### Test Results
+- 33/33 new tests passing
+- 124/124 structural consistency tests passing
+- 0 regressions after all changes
+
+### Changes
+- `profiles/competitor-coverage-research.yaml` — Added `microsoft_openai_axis` to `cross_entity_leverage` (overview, stake, circular revenue, publisher dual exposure, Meta contrast, sources). Added `google_tone: -0.35` to `milmo_cross_entity`
+- `tests/test_type_d_7pm_cross_validation_aug6.py` — NEW: 33 tests across 7 classes (all passing)
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,788 tests across 189 test files
+
