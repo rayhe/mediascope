@@ -311,6 +311,93 @@ entities:
             and Gemini (Google) alongside ChatGPT means publishers' content
             licensed to OpenAI may flow through Apple devices via multiple
             AI models — raising questions about content licensing scope.
+    apple_google_gemini_deal:
+      announcement_date: '2026-01-12'
+      bloomberg_report_date: '2025-11-05'
+      annual_value_est_b: 1.0
+      model_parameters: '1.2 trillion'
+      overview: |
+        Apple signed a multi-year deal with Google to use a custom Gemini
+        AI model (1.2 trillion parameters) to power the rebuilt Siri,
+        announced Jan 12, 2026. Bloomberg first reported the deal Nov 5,
+        2025, estimating ~$1B/yr — confirmed by Reuters, CNN, Motley Fool.
+        Apple runs Gemini on its own Private Cloud Compute servers to
+        maintain its privacy narrative. Google supplies the model; Apple
+        keeps it behind its own infrastructure.
+      detail: |
+        The $1B/yr Gemini payment is only ~5% of the $20B/yr Google pays
+        Apple for default search engine placement on iPhone, making Apple
+        the clear financial winner in the AI relationship. Apple evaluated
+        OpenAI's ChatGPT and Anthropic's Claude before choosing Gemini —
+        Anthropic's fees were reportedly "too high."
+        Apple's own AI team is building a 1-trillion-parameter model
+        intended to replace Gemini "as early as next year," making this
+        an interim solution. Gemini handles Siri's summarizer and planner
+        functions (understanding context, multi-step task execution),
+        while Apple's in-house models handle other capabilities.
+        Google views the deal as a major validation ("Apple determined
+        Google's AI technology provides the most capable foundation").
+        Alphabet stock reached $4T market cap on announcement day.
+      source_urls:
+      - https://www.macrumors.com/2025/11/05/apple-google-new-siri-payment/
+      - https://www.reuters.com/business/google-apple-enter-into-multi-year-ai-deal-gemini-models-2026-01-12/
+      - https://www.cnn.com/2026/01/12/tech/apple-google-gemini-siri
+      - https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
+      - https://www.macrumors.com/2025/11/05/apple-siri-google-gemini-partnership/
+    publisher_content_bypass:
+      overview: |
+        Apple has ZERO confirmed publisher content licensing deals despite
+        2.5 years of negotiations (Dec 2023 - Aug 2026). Apple bypassed
+        publisher licensing entirely by paying Google $1B/yr for a Gemini
+        model that was trained on publisher content without authorization.
+      publisher_negotiation_history: |
+        Dec 2023: Apple approached Condé Nast (Vogue, WIRED, The New Yorker),
+        NBC News, and IAC (People, Daily Beast) with $50M multi-year offers.
+        NYT reported some publishers were "lukewarm" on the overture, with
+        concerns about overly broad terms and unclear AI applications.
+        No confirmed deal has been signed as of Aug 2026.
+        As of Jan 2026, Apple instead signed the $1B/yr Gemini deal with
+        Google, effectively accessing publisher content through Google's
+        training pipeline rather than licensing it directly.
+      content_chain: |
+        The publisher content laundering chain:
+        1. Google trains Gemini on publisher content (Hachette/Cengage/
+           Elsevier lawsuit Jul 2026 confirms unauthorized training on
+           "millions of books and journal articles")
+        2. Apple pays Google $1B/yr for customized Gemini model
+        3. Apple runs Gemini on Private Cloud Compute for Siri
+        4. Siri serves AI responses derived from publisher content to
+           2B+ Apple devices worldwide
+        5. Publishers receive $0 from Apple for this content flow
+
+        CONTRAST WITH DIRECT LICENSING:
+        - Meta: $50M/yr to News Corp (voluntary, bilateral, direct)
+        - OpenAI: Direct deals with NYT, People Inc., Condé Nast ($100M+ total)
+        - Amazon: Direct deals with NYT ($20-25M/yr), Condé Nast, Hearst
+        - Apple: $0 to publishers, $1B to Google (indirect access via training)
+
+        IRONY: Apple was praised in Dec 2023 for "asking permission" and
+        "showing willingness to pay" vs other AI companies that scraped
+        without asking. But Apple never closed a deal — it found a cheaper
+        path through Google's pre-trained model. The outcome is the same
+        as scraping: publisher content in AI without publisher compensation.
+      source_urls:
+      - https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+      - https://www.hachettebookgroup.com/hachette-book-group-news/publishers-and-authors-file-class-action-lawsuit-against-google-for-willful-copyright-infringement-to-develop-gemini-ai-models/
+      mediascope_relevance: |
+        Apple's content bypass strategy creates a FOURTH implication for
+        MediaScope (extending the three from openai_partnership_collapse):
+        (4) CONDÉ NAST DOUBLE LOSS: Condé Nast was approached for an Apple
+            deal ($50M) and apparently declined or stalled. Now their content
+            flows through Apple devices anyway via Google Gemini — but they
+            receive nothing from Apple for it. Meanwhile, they DO receive
+            payments from OpenAI (content deal, Aug 2024), Amazon (Rufus
+            deal, Jul 2025), and Microsoft (PCM deal, Feb 2026). The only
+            companies NOT paying Condé Nast are Apple (bypassed via Google)
+            and Meta (no deal). Yet WIRED's coverage targets Meta as the
+            primary adversary, not Apple — despite Apple's bypass being
+            arguably more damaging to publisher revenue than Meta's model
+            of offering voluntary direct licensing.
   google:
     display_name: Google / Alphabet
     aliases:
