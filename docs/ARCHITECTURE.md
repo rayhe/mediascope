@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5189 tests across 198 test files (all from real articles)
+├── tests/                       # 5235 tests across 199 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -559,6 +559,7 @@ mediascope/
 │   ├── test_type_d_10am_cross_validation_aug6.py # Type D 10 AM cross-validation: Guardian partial independence, Alex Heath Access Paradox, Advance-Reddit-Perplexity triangle, asymmetry gap ordering, five-mechanism taxonomy
 │   ├── test_type_d_7pm_cross_validation_aug6.py # Type D 7 PM cross-validation: MS-OpenAI axis cross-file, Milmo tones cross-file, Atlantic silence, Amazon layers, leverage completeness, source URL consistency
 │   ├── test_type_d_midnight_cross_validation_aug7.py # Type D midnight cross-validation: Revenue Dependency Concentration Index arithmetic, deal summation, inverse proportionality ranking, margin amplification, disclosure paradox, revenue plausibility, cross-file consistency, Gizmodo clean control, News Corp balanced symmetry
+│   ├── test_type_d_cross_validation_aug7_04am.py # Type D 04:00 cross-validation: Apple-OpenAI 5-phase expansion, Apple-Google Gemini deal integrity, publisher content bypass chain, Apple-Google-Publisher triangle consistency, Samsung equivalence, cross-platform summary, incentive matrix arithmetic, source URL validation
 │   ├── test_type_d_8pm_cross_validation_aug6.py # Type D 8 PM cross-validation: OpenAI/Apple entity escalation phases 4-5, Atlantic silence source_urls schema, Milmo profile↔research consistency, Amazon sextuple entity↔research, evening iteration coverage
 │   ├── test_type_d_2pm_cross_validation_aug6.py # Type D 2 PM cross-validation: sensor-count paradox, WSJ balanced control, Google coercion-Condé Nast consistency, NYT Q2 earnings, Mims tone inversion, WSJ disclosure uniqueness, MIT TR governance
 │   ├── test_type_d_aug6_cross_validation.py # Type D cross-validation (Aug 6 09:00): asymmetry gap ordering, five-mechanism taxonomy, Guardian partial independence, Advance-Reddit-Perplexity triangle, statistical direction consistency

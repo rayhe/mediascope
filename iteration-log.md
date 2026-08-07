@@ -29050,3 +29050,90 @@ two publications with different competitor financial relationships.
 - Commit: 5954b6a
 - Pushed to GitHub: `main`
 
+
+## 2026-08-07 04:00 PT — Type C: Apple-Google $1B/yr Gemini Deal — Publisher Content Bypass Chain
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Apple's $1B/yr Google Gemini deal as a publisher content bypass mechanism
+
+### KEY FINDING — PUBLISHER CONTENT BYPASS CHAIN:
+
+Apple's $1B/yr deal with Google (announced Jan 12, 2026; Bloomberg reported Nov 5,
+2025) creates a financial pipeline where publisher content reaches 2B+ Apple devices
+WITHOUT direct publisher compensation:
+
+  Publisher Content → Google Gemini Training → Apple $1B License → Siri → Users
+
+Timeline:
+1. Dec 2023: Apple approaches Condé Nast, NBC News, IAC with $50M multi-year offers
+2. Publishers "lukewarm" — no confirmed deal signed in 2.5 years
+3. Nov 2025: Bloomberg reports Apple finalizing $1B/yr Gemini deal with Google
+4. Jan 2026: Apple-Google Gemini deal announced; custom 1.2T parameter model
+5. Jul 2026: Hachette/Cengage/Elsevier class-action confirms Google trained Gemini
+   on "millions of books and journal articles" without authorization
+
+| Entity | Publisher Deal Model | Annual Value | Publishers Paid |
+|--------|---------------------|-------------|----------------|
+| Meta | Direct voluntary licensing | $50M/yr (News Corp) | Yes |
+| OpenAI | Direct deals | $100M+ (NYT, People, Condé Nast) | Yes |
+| Amazon | Direct deals | $20-25M/yr (NYT) + Condé Nast, Hearst | Yes |
+| Apple | Bypass via Google Gemini | $1B/yr to Google | $0 to publishers |
+
+IRONY: Apple was praised in Dec 2023 for "asking permission" and "showing
+willingness to pay." But Apple never closed a deal — it found a cheaper path
+through Google's pre-trained model. The outcome is functionally the same as
+scraping: publisher content powering AI without publisher compensation.
+
+CONDÉ NAST DOUBLE LOSS: Condé Nast (WIRED's parent) was specifically approached
+by Apple ($50M offer) and apparently declined. Now their content flows through
+Apple devices via Google Gemini anyway — but they receive nothing from Apple.
+Yet WIRED's coverage targets Meta (also $0 in deals) as the primary adversary,
+not Apple (which bypassed them through a more sophisticated mechanism).
+
+### Artifacts:
+- New: `tests/test_apple_google_gemini_publisher_chain_aug7.py` (41 tests, 10 classes)
+- Updated: `profiles/competitor-entities.yaml` (apple_google_gemini_deal + publisher_content_bypass)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (counts 5148→5189, 197→198 files)
+
+### Sources:
+- Bloomberg/MacRumors (Nov 5, 2025): https://www.macrumors.com/2025/11/05/apple-google-new-siri-payment/
+- Reuters (Jan 12, 2026): https://www.reuters.com/business/google-apple-enter-into-multi-year-ai-deal-gemini-models-2026-01-12/
+- CNN (Jan 12, 2026): https://www.cnn.com/2026/01/12/tech/apple-google-gemini-siri
+- Motley Fool (Jun 26, 2026): https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
+- Apple publisher negotiations (Dec 2023): https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+- Google copyright lawsuit (Jul 2026): https://www.hachettebookgroup.com/hachette-book-group-news/publishers-and-authors-file-class-action-lawsuit-against-google-for-willful-copyright-infringement-to-develop-gemini-ai-models/
+
+### Test Results
+- 41/41 new tests passing
+- 124/124 structural consistency tests passing
+- 0 regressions
+- Total: 5,189 tests across 198 test files
+
+### Git
+- Commit: a72eba5
+- Pushed to GitHub: `main`
+
+---
+
+## 2026-08-07 04:11 PT — Type D (Test & Verify)
+
+### Focus: Cross-Validation of Type C Apple-Google Gemini Deal + 5-Phase Expansion Fix
+
+**What was done:**
+1. **Fixed pre-existing failure:** `test_apple_has_three_phases` → renamed to `test_apple_has_five_phases` in `test_type_d_cross_validation_aug6.py`, updated chronological date test to cover all 5 phases
+2. **Created comprehensive cross-validation:** `test_type_d_cross_validation_aug7_04am.py` — 46 tests across 10 classes:
+   - `TestAppleOpenAI5PhaseExpansion` (10 tests): Validates all 5 Apple-OpenAI collapse phases, chronological ordering, Aug 2026 dates for phases 4-5, source URLs, content keywords
+   - `TestAppleGoogleGeminiDealIntegrity` (9 tests): $1B annual value, Jan 2026 announcement, Nov 2025 Bloomberg report, trillion-parameter model, Reuters source, overview content
+   - `TestPublisherContentBypassChain` (8 tests): Zero-deal assertion, Dec 2023 Condé Nast negotiation history, content chain mechanism, Hachette/Cengage cross-ref, MediaScope relevance
+   - `TestAppleGooglePublisherTriangle` (5 tests): Cross-entity consistency between Apple Gemini deal, Google publisher litigation, and Meta-News Corp deal contrast
+   - `TestSamsungEquivalenceParadox` (4 tests): Samsung entity from Type B 03:00 run
+   - `TestCrossPlatformSummaryCompleteness` (4 tests): Coverage of major deals, timeline chronology
+   - `TestAggregateIncentiveMatrix` (4 tests): Publication counts sum to total, meta=0 deals
+   - `TestSourceURLFormats` (3 tests): HTTPS-only, credible domains, no duplicates
+
+### Test Results
+- 46/46 new tests passing
+- 41/41 old cross-validation (aug6) tests passing (1 renamed fix)
+- 124/124 structural consistency tests passing
+- 0 regressions
+- Total: 5,235 tests across 199 test files

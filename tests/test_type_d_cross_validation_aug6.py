@@ -98,11 +98,14 @@ class TestAppleOpenAICrossReference:
         openai = entities['entities']['openai']
         assert 'apple_partnership_collapse' in openai
 
-    def test_apple_has_three_phases(self, entities):
+    def test_apple_has_five_phases(self, entities):
+        """Updated: Apple-OpenAI collapse expanded from 3 to 5 phases
+        with phase_4_preliminary_injunction (Aug 4) and
+        phase_5_motion_to_dismiss (Aug 6)."""
         apple = entities['entities']['apple']
         collapse = apple['openai_partnership_collapse']
         phase_keys = [k for k in collapse if k.startswith('phase_')]
-        assert len(phase_keys) == 3
+        assert len(phase_keys) == 5
 
     def test_cross_platform_summary_has_collapse(self, entities):
         cs = entities['meta_ai_deals']['cross_platform_summary']
@@ -123,13 +126,15 @@ class TestAppleOpenAICrossReference:
         assert len(apple_sources) > 0 or len(cs_sources) > 0, "At least one location must have source URLs"
 
     def test_apple_phase_dates_chronological(self, entities):
-        """Phases should be in chronological order."""
+        """Phases should be in chronological order (updated for 5 phases)."""
         apple = entities['entities']['apple']
         collapse = apple['openai_partnership_collapse']
         p1_date = str(collapse['phase_1_partnership']['date'])
         p2_date = str(collapse['phase_2_openai_breach_threat']['date'])
         p3_date = str(collapse['phase_3_apple_sues_openai']['date'])
-        assert p1_date < p2_date < p3_date
+        p4_date = str(collapse['phase_4_preliminary_injunction']['date'])
+        p5_date = str(collapse['phase_5_motion_to_dismiss']['date'])
+        assert p1_date < p2_date < p3_date < p4_date < p5_date
 
 
 # ─── Litigation Landscape Consistency ─────────────────────────────────
