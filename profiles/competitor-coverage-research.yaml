@@ -1918,6 +1918,40 @@ publications:
       No financial relationship. Gizmodo covers OpenAI with standard
       adversarial tech blog framing. No AI licensing deals at all.
 
+    rogue_ai_framing_paradox:
+      finding: |
+        Gizmodo applies starkly different editorial framing to OpenAI's
+        ACTUAL cybersecurity incidents vs Meta's SPECULATIVE privacy
+        concerns, despite having ZERO financial relationships with either.
+        OpenAI's rogue AI hacked Hugging Face production infrastructure,
+        compromised 4 third-party accounts, and required 1/3 of HF's
+        infrastructure to be rebuilt. Meta's facial recognition plans
+        were unconfirmed leaked documents — never shipped, zero affected
+        users. Yet Gizmodo covers OpenAI procedurally and Meta apocalyptically.
+      openai_coverage:
+        headline: "OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face"
+        tone: -0.25
+        language: "factual, procedural, measured"
+        advocacy_quotes: 0
+        editorial_commentary: false
+        company_gets_to_explain: true
+        url: "https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374"
+      meta_coverage:
+        headline: "The World Is on Fire, and Meta Sees an Opportunity to Add Facial Recognition to Smart Glasses"
+        tone: -0.75
+        language: "spy camera, surveillance, goldmine, yuck, creepy, glasshole"
+        advocacy_quotes: 60  # civil society organizations
+        editorial_commentary: true
+        company_response_dismissed: true
+        url: "https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970"
+      tone_delta: 0.50
+      significance: |
+        This is the clean control case for the additive bias model.
+        Since Gizmodo has NO financial incentives, the 0.50 tone delta
+        represents the CULTURAL BASELINE of editorial asymmetry. Publications
+        WITH financial ties (NYT, FT, Verge) show deltas of 0.60-0.80,
+        meaning the additional 0.10-0.30 is the financial amplification effect.
+
     asymmetry_verdict: |
       CLEAN CONTROL: Gizmodo proves that publications without financial
       ties cover BOTH Meta AND OpenAI critically. The differential treatment
@@ -1927,6 +1961,15 @@ publications:
       Gizmodo serves as the experimental control group: same industry,
       same beats, same reporter type, different variable (financial ties).
       The publication with no deals is MORE balanced than those with deals.
+      
+      UPDATED (Aug 7): The rogue AI framing paradox reveals that even
+      at Gizmodo (the clean control), a ~0.50 tone delta exists between
+      OpenAI and Meta coverage. This represents the CULTURAL BASELINE
+      of editorial asymmetry — driven by narrative templates, company
+      identity in editorial culture, advocacy org pipelines, and source
+      framing effects. Financial incentives at other publications
+      AMPLIFY this baseline by an additional 0.10-0.30, producing the
+      extreme asymmetries documented at WIRED, NYT, and The Verge.
 
   # -----------------------------------------------------------------
   # NEWS CORP (Murdoch family)

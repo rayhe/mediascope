@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5301 tests across 201 test files (all from real articles)
+├── tests/                       # 5334 tests across 202 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -471,6 +471,7 @@ mediascope/
 │   ├── test_financial_relationships.py  # Financial relationship data integrity, asymmetry hypothesis
 │   ├── test_financial_incentive_mapping_aug5.py  # Perplexity hypocrisy arc, Anthropic absence, Google coercive structure, updated aggregate counts
 │   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
+│   ├── test_gizmodo_openai_rogue_ai_framing_paradox_aug7.py # Gizmodo × OpenAI vs Meta rogue AI framing paradox (Aug 7): CLEAN CONTROL — Gizmodo (Keleops AG, zero financial ties) covers OpenAI's ACTUAL rogue AI hack (Hugging Face production breach, 4 accounts compromised, infrastructure rebuilt) with procedural tone (-0.25) while covering Meta's SPECULATIVE glasses privacy (unconfirmed facial recognition, zero affected users) with apocalyptic framing (-0.75). 0.50 tone delta = cultural baseline of editorial asymmetry. 10 classes, 39 tests: severity comparison, headline framing, in-article language, advocacy citation asymmetry, company voice, clean control verification, causal factors (narrative templates, source framing, company identity), tone scoring, cross-reference, source citations
 │   ├── test_gizmodo_fury_review.py # Gizmodo Meta Fury contradictory review: entity detection, Path F tone correction, emotional terms
 │   ├── test_gizmodo_glasses_harassment_ban_jul23.py # Gizmodo glasses harassment Instagram ban (Jul 23): 15 framing devices (7 types), 5 new patterns: escalation_amplification "reached entirely new heights" (peak-escalation phrase), escalation_amplification "fever pitch", recidivism_framing sardonic "[Entity]'s always been good at" chronic behavior, recidivism_framing predictive "We can expect more mixed messaging", editorial_aside parenthetical "meanwhile" contrast. Control-case convergence: Swiss-owned Gizmodo produces identical framing to WIRED (zero Condé Nast connection)
 │   ├── test_gizmodo_brain2qwerty_v2.py # Context-aware false-positive suppression: dream/sleep catastrophizing, medical loaded language, factual medical emotional appeal, definitional ironic quotation

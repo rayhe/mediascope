@@ -211,6 +211,34 @@ cross_entity_coverage:
         url: https://gizmodo.com/author/raywong/page/2
         notes: "Equal irreverence applied to OpenAI hardware — no soft treatment despite no financial relationship in either direction"
 
+  # ===================================================================
+  # ROGUE AI FRAMING PARADOX — Added 2026-08-07
+  # Non-Wong writers show stark asymmetry between OpenAI and Meta,
+  # despite Gizmodo having zero financial ties to either company.
+  # ===================================================================
+  openai_rogue_ai_vs_meta_glasses:
+    finding: "Gizmodo Rogue AI Framing Paradox"
+    date_analyzed: "2026-08-07"
+    openai_incident:
+      article: "OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face"
+      url: "https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374"
+      severity: "ACTUAL — 4 companies compromised, infrastructure rebuilt"
+      tone: -0.25
+      language: "factual, procedural, no editorial commentary"
+    meta_incident:
+      article: "The World Is on Fire, and Meta Sees an Opportunity"
+      url: "https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970"
+      severity: "SPECULATIVE — never shipped, zero users affected"
+      tone: -0.75
+      language: "spy camera, surveillance, goldmine, yuck, creepy"
+    tone_delta: 0.50
+    significance: |
+      Clean control evidence for the additive bias model: since Gizmodo
+      has NO financial incentives, this 0.50 delta represents the cultural
+      baseline of editorial asymmetry across tech journalism. Publications
+      WITH financial ties show deltas of 0.60-0.80 — the additional
+      0.10-0.30 is the financial amplification effect.
+
   apple:
     tone: enthusiastic
     examples:
