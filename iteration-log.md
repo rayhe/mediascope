@@ -1,4 +1,79 @@
 # MediaScope Iteration Log
+## 2026-08-07 14:00 PT — Type C: Snowflake Cortex Marketplace Intermediary + xAI Litigation Landscape
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Three-tier publisher monetization architecture — Snowflake Cortex as first neutral marketplace intermediary, xAI litigation update
+
+### KEY FINDING — THREE-TIER PUBLISHER MONETIZATION ARCHITECTURE:
+
+The publisher-AI financial landscape has evolved from bilateral deals to a three-tier architecture:
+
+| Tier | Mechanism | Incentive Direction | Examples |
+|------|-----------|-------------------|----------|
+| 1: Bilateral | Direct publisher-to-tech deals | Softer coverage of paying entity | OpenAI-News Corp $50M/yr, Meta-News Corp $50M/yr |
+| 2: Marketplace | Platform operators connecting publishers to AI buyers | Platform dependency → softer coverage of operator | Microsoft PCM, Snowflake Cortex, Amazon (planned) |
+| 3: Collective | Aggregate many publishers for bulk deals | Diffuse → minimal per-entity incentive | NMA-Bria (2,200 publishers), ProRata (500+), UK PLS |
+
+### SNOWFLAKE CORTEX — THE NEUTRAL CONTROL:
+
+Snowflake Cortex Knowledge Extensions (launched Jun 2025) is the FIRST operationally neutral marketplace:
+- **17 publishers** joined: Washington Post, AP, People Inc, USA Today Network (FT, Economist expressing interest)
+- **Six-figure deals** with financial institutions confirmed
+- **Zero revenue cut** — Snowflake profits from infrastructure usage only
+- **Zero AI lab investments** — no OpenAI, Anthropic, Google, or Amazon stake
+- **Not a content buyer** — pure infrastructure operator
+
+**Contrast with Microsoft PCM:**
+| Dimension | Snowflake Cortex | Microsoft PCM |
+|-----------|-----------------|---------------|
+| Revenue cut | Zero | Yes (via Copilot) |
+| Content buyer | No | Yes (first buyer) |
+| AI lab investments | Zero | $13B OpenAI + $5B Anthropic |
+| Conflict level | Lowest | Highest |
+| Launched | Jun 2025 | Feb 2026 |
+
+### xAI LITIGATION LANDSCAPE UPDATE:
+
+xAI maintains ZERO publisher content deals but faces massive non-publisher legal exposure:
+
+1. **Minor Plaintiffs v. xAI** (Mar 2026): Three teens sued over CSAM deepfakes; ~3M sexualized images in 11 days, ~23,000 depicting children
+2. **Doe v. xAI** (Jan 2026, N.D. Cal.): Non-consensual deepfake class action; Grok created bikini photo from clothed image
+3. **City of Baltimore v. xAI** (2026): Municipal enforcement; Musk amplified feature, output surged 300K→600K images/day
+
+xAI auto-response to press inquiries about lawsuits: "Legacy Media Lies"
+
+**ANALYTICAL SIGNIFICANCE:** xAI's zero publisher copyright lawsuits confirms "publisher-invisible" financial status. Coverage of xAI by WIRED/NYT/Gizmodo carries no financial consequence → useful CONTROL for measuring editorially unbiased coverage.
+
+### MARKETPLACE CONCENTRATION RISK:
+
+Meta is the ONLY major AI company that is:
+(a) NOT a marketplace operator
+(b) NOT a marketplace participant/buyer
+(c) NOT an AI lab investor
+(d) Has ONLY bilateral deals (News Corp confirmed, Mar 2026)
+
+Meta is the most financially isolated from the publisher marketplace ecosystem yet receives the most adversarial coverage from publishers entangled with Microsoft, Amazon, and OpenAI.
+
+### Artifacts:
+- New: `tests/test_type_c_snowflake_marketplace_intermediary_aug7.py` — 35 tests, 8 classes, all passing
+- Updated: `profiles/competitor-entities.yaml` — Snowflake entity + marketplace_intermediary_landscape taxonomy + xAI litigation section
+- Updated: `profiles/competitor-coverage-research.yaml` — FT asymmetry_verdict added
+- Updated: `tests/test_competitor_coverage.py` — entity set updated (microsoft, snowflake), publication set updated (financial_times)
+- Updated: `tests/test_financial_relationships.py` — added adversarial-by-absence to valid tone set
+- Updated: `README.md` + `docs/ARCHITECTURE.md` — test count 5568, 208 files
+- 124/124 structural consistency tests passing, 0 regressions
+
+### Sources:
+- Snowflake Cortex: https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+- Snowflake marketplace: https://marketwirenews.com/stock/snow/news/snowflake-marketplace-adds-agentic-products-and-ai-r-4984352061288192.html
+- WSJ marketplaces: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+- NMA-Bria: https://digiday.com/media/news-media-alliance-signs-ai-licensing-deal-to-unlock-recurring-rag-revenue-for-small-and-mid-sized-publishers/
+- xAI CSAM suit: https://betanews.com/article/teens-sue-musk-xai-grok-ai-csam-deepfake-lawsuit/
+- xAI deepfake class action: https://news.bloomberglaw.com/litigation/grok-maker-xai-faces-non-consensual-sexual-deepfake-class-suit
+- Baltimore v xAI: https://decrypt.co/362265/baltimore-sues-x-xai-grok-deepfakes
+
+### Stats: 5568 tests, 208 files, 0 failures
+
 ## 2026-08-07 12:00 PT — Type B: FT × Melissa Heikkilä Cross-Entity (Journalist Career Migration)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -29464,3 +29539,52 @@ FT's AI Editor covers every major AI company (OpenAI, Anthropic, Google DeepMind
 - 5,444 tests across 205 files
 - 0 regressions
 - Pushed to GitHub
+
+## 2026-08-07 13:00 PT — Type C: Microsoft Septuple Publisher Leverage — Entity Profile
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Add Microsoft as top-level entity with 7-layer publisher leverage model, dual AI lab investment paradox, FY26 Q4 earnings
+
+### KEY FINDING — DUAL AI LAB INVESTMENT PARADOX:
+
+Microsoft has SEVEN distinct financial relationship mechanisms with publishers — more than Amazon (6) or Google (4). Microsoft was the ONLY major entity missing a top-level profile in competitor-entities.yaml despite having the most complex financial web:
+
+| Layer | Mechanism | Key Data |
+|-------|-----------|----------|
+| 1 | OpenAI investment axis | $13B, 27% stake, 20% rev share through 2030, $250B Azure |
+| 2 | Anthropic investment | $5B invested, $3.2B Q4 gain, $30B Azure, $500M/yr models |
+| 3 | PCM marketplace operator | Platform operator + first buyer, 7 publisher partners |
+| 4 | Copilot Daily content | Reuters, Axel Springer, Hearst, USA TODAY, FT |
+| 5 | MSN/Start licensing | Oldest publisher financial relationship in tech |
+| 6 | Bing search advertising | 1B MAU, 10% YoY growth |
+| 7 | Azure enterprise hosting | $39.3B Q4, $100B+ FY26 (first time) |
+
+**THE PARADOX:** Microsoft is the ONLY company investing in BOTH the AI lab with the MOST publisher deals (OpenAI) AND one with ZERO deals (Anthropic). Q4 FY26 showed the hedge: $600M OpenAI writedown vs $3.2B Anthropic gain. Microsoft profits regardless of which model prevails — and regardless of whether AI labs pay publishers or not.
+
+**PERVERSE INCENTIVE:** Microsoft's financial interest is served by:
+- "AI must pay publishers" → strengthens OpenAI's licensing model → generates Azure revenue
+- "AI can succeed without publisher deals" → validates Anthropic → also generates Azure revenue
+Microsoft wins either way. No other entity has this dual-model hedge.
+
+**MEDIASCOPE COVERAGE:** 5 of 7 profiled publications have Microsoft-adjacent financial relationships. Only Gizmodo (clean control) and MIT Technology Review (ProRata only) have no Microsoft-adjacent revenue. Meta has ONE financial mechanism with publishers.
+
+### Sources:
+- Microsoft Q4 FY26 earnings: https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/
+- Microsoft Anthropic $3.2B gain: https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
+- Microsoft-Anthropic $5B/$30B deal: https://www.reuters.com/technology/anthropic-commits-30-billion-microsoft-azure-compute-2025-11-18/
+- Microsoft $500M/yr Anthropic spending: https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
+- Copilot Daily publisher partnerships: https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
+- Microsoft PCM launch: https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+- PCM co-design partners: https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+
+### Changes:
+- Added `microsoft` entity in `profiles/competitor-entities.yaml` — 7-layer leverage model, FY26 Q4 data, dual AI lab paradox
+- Added `microsoft_septuple_leverage` finding in `profiles/competitor-coverage-research.yaml`
+- Created `tests/test_microsoft_septuple_leverage_aug7.py` — 61 tests, 14 classes, all passing
+- Updated README.md and docs/ARCHITECTURE.md — test count 5533, 207 files
+- 124/124 structural consistency tests passing, 0 regressions
+- Committed and pushed to GitHub
+
+### Stats: 5533 tests, 207 files, 0 failures
+
+---

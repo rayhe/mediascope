@@ -32,7 +32,7 @@ class TestCompetitorEntities:
         with open(path) as f:
             data = yaml.safe_load(f)
         entities = data.get("entities", {})
-        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung"}
+        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung", "microsoft", "snowflake"}
         assert set(entities.keys()) == expected
 
     def test_entity_has_required_fields(self):
@@ -373,7 +373,7 @@ class TestCoverageResearch:
         pubs = data.get("publications", {})
         expected = {
             "wired", "the-verge", "atlantic", "nytimes", "financial-times",
-            "guardian", "mit-tech-review", "gizmodo", "news-corp"
+            "guardian", "mit-tech-review", "gizmodo", "news-corp", "financial_times"
         }
         assert set(pubs.keys()) == expected
 

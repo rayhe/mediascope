@@ -201,7 +201,7 @@ entities:
         adversarial coverage at Meta, not at the company with six-fold
         financial leverage over them.
     publisher_content_marketplace:
-      announced: '2026-02'
+      announced: 2026-02
       status: building
       detail: |
         Amazon is building an AI content marketplace where publishers can
@@ -242,9 +242,9 @@ entities:
       phase_1_partnership:
         date: 2024-06
         event: Apple integrates ChatGPT into Siri and Apple Intelligence
-        terms: No money changed hands at signing. Each side believed it gave
-          the other the more valuable asset. OpenAI expected subscription
-          growth "on par" with Apple's $20B/yr Google Search deal.
+        terms: No money changed hands at signing. Each side believed it gave the other
+          the more valuable asset. OpenAI expected subscription growth "on par" with
+          Apple's $20B/yr Google Search deal.
         source_url: https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
       phase_2_openai_breach_threat:
         date: 2026-05-14
@@ -255,8 +255,8 @@ entities:
           ChatGPT integration, hid implementation details, and subscription
           growth "hasn't come close to happening." Renegotiation stalled.
           Apple testing Claude and Gemini as alternatives to ChatGPT in Siri.
-        openai_exec_quote: "We have done everything from a product perspective.
-          They have not, and worse, they haven't even made an honest effort."
+        openai_exec_quote: We have done everything from a product perspective. They
+          have not, and worse, they haven't even made an honest effort.
         source_urls:
         - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
         - https://www.macrumors.com/2026/05/14/openai-considering-legal-action-against-apple/
@@ -291,8 +291,8 @@ entities:
           issue" of failing to lock up files when employees depart. WSJ and
           Reuters cover within hours.
         source_urls:
-          - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
-          - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
+        - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+        - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
       mediascope_relevance: |
         The Apple-OpenAI collapse has THREE implications for financial
         incentive analysis:
@@ -315,7 +315,7 @@ entities:
       announcement_date: '2026-01-12'
       bloomberg_report_date: '2025-11-05'
       annual_value_est_b: 1.0
-      model_parameters: '1.2 trillion'
+      model_parameters: 1.2 trillion
       overview: |
         Apple signed a multi-year deal with Google to use a custom Gemini
         AI model (1.2 trillion parameters) to power the rebuilt Siri,
@@ -470,7 +470,8 @@ entities:
       - https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/
       - https://www.reuters.com/legal/litigation/uk-regulator-enforces-new-competition-requirements-google-search-2026-06-03/
       - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
-      stat: Google AI Overviews has 2.5B+ monthly active users; AI Mode has 1B+ monthly users
+      stat: Google AI Overviews has 2.5B+ monthly active users; AI Mode has 1B+ monthly
+        users
     reddit_deal_instability:
       date: 2026-07 (late)
       detail: |
@@ -705,6 +706,68 @@ entities:
       nor being sued by them. Publishers have no financial relationship
       with xAI in either direction, which theoretically makes xAI
       coverage editorially neutral (no incentive to be soft OR hard).
+    press_response: Legacy Media Lies
+    litigation:
+    - type: csam_deepfake
+      case: Minor Plaintiffs v. xAI Corp.
+      court: Federal — California
+      filed: '2026-03-18'
+      plaintiff: Three anonymous teen plaintiffs
+      description: |
+        Three minors sued xAI alleging Grok generated CSAM deepfakes from
+        their clothed photos. Lawsuit claims xAI deliberately designed Grok
+        to produce sexually explicit content for financial gain. Center for
+        Countering Digital Hate estimated Grok generated ~3M sexualized
+        images in 11 days (Dec 29 2025 - Jan 8 2026), ~23,000 depicting
+        children. Seeks $150,000 per victim under Masha's Law. xAI's
+        auto-response to press inquiries: "Legacy Media Lies."
+      company_response: Legacy Media Lies (auto-generated)
+      source_urls:
+      - https://betanews.com/article/teens-sue-musk-xai-grok-ai-csam-deepfake-lawsuit/
+      - https://www.medianama.com/2026/03/223-grok-xai-class-action-child-abuse-lawsuit/
+      - https://Www.Law.com/therecorder/2026/03/18/xai-sued-over-alleged-child-exploitation-content-generated-on-grok-platform-/
+    - type: deepfake_class_action
+      case: Doe v. xAI Corp. and xAI LLC
+      court: N.D. Cal., No. 5:26-cv-00772
+      filed: '2026-01-23'
+      plaintiff: Jane Doe (anonymous adult)
+      description: |
+        Non-consensual sexual deepfake class action. Lead plaintiff alleges
+        Grok created revealing bikini photo from her fully-clothed image,
+        visible for 3 days on X. Seeks nationwide class of all victims.
+        Claims xAI's system prompt explicitly states Grok 'has no restrictions
+        on adult sexual content.' Seeks $5M+ in damages.
+      company_response: Legacy Media Lies (auto-generated)
+      source_url: https://news.bloomberglaw.com/litigation/grok-maker-xai-faces-non-consensual-sexual-deepfake-class-suit
+    - type: municipal_enforcement
+      case: City of Baltimore v. xAI / X
+      court: Federal — Maryland
+      filed: '2026'
+      plaintiff: City of Baltimore
+      description: |
+        City of Baltimore sued X and xAI over Grok deepfakes, alleging
+        they 'designed, marketed, and deployed' Grok knowing it could
+        generate non-consensual intimate imagery and CSAM. Cites Musk
+        amplifying Grok's image feature by responding 'Perfect' to a
+        bikini image, triggering output surge from ~300K to ~600K images
+        per day. Seeks civil penalties, injunctive relief, restitution,
+        and disgorgement.
+      company_response: ''
+      source_urls:
+      - https://decrypt.co/362265/baltimore-sues-x-xai-grok-deepfakes
+    litigation_mediascope_relevance: |
+      xAI's litigation landscape is analytically significant because it
+      demonstrates that ZERO publisher deals does NOT mean ZERO legal
+      exposure. xAI faces massive legal liability from CSAM/deepfake
+      lawsuits — but none from publisher copyright claims. This confirms
+      xAI's "publisher-invisible" status: publishers have no financial
+      stake in xAI coverage (positive or negative). Coverage of xAI
+      lawsuits by WIRED, NYT, Gizmodo, etc. can be treated as
+      editorially unbiased by financial incentive — the harshest
+      or softest xAI coverage carries no financial consequence for
+      the publication. This makes xAI coverage a useful CONTROL for
+      measuring how publications cover AI companies when financial
+      incentives are absent.
     telegram_deal_source: https://www.livemint.com/technology/tech-news/telegram-partners-with-xai-grok-chatbot-to-be-integrated-in-300-million-deal/amp-11748452711863.html
     gsa_contract_source: https://www.nextgov.com/acquisition/2025/09/gsa-inks-onegov-deal-grok-ai/408334/
   samsung:
@@ -731,7 +794,7 @@ entities:
       receives dramatically different media framing than Meta's. Samsung's
       camera glasses are described as "innovative" and "taking privacy seriously"
       while Meta's identical product is called "creepy" and "surveillance."
-    samsung_launch_source: "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear"
+    samsung_launch_source: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
     publisher_deals_note: |
       ZERO known content licensing deals with major tech publishers as of Aug 2026.
       Samsung's advertising relationship with publishers is standard tech-industry
@@ -926,6 +989,72 @@ entities:
       5 of 7 profiled publications have direct or axis-mediated financial
       relationships with Microsoft. Only Gizmodo (clean control) and MIT
       Tech Review have no Microsoft-adjacent revenue.
+  snowflake:
+    display_name: Snowflake
+    aliases:
+    - Snowflake
+    - Cortex Knowledge Extensions
+    - CKE
+    regex: \b(Snowflake|Cortex\s+Knowledge\s+Extensions|CKE)\b
+    category: marketplace_intermediary
+    market_cap_approx: $55B
+    ceo: Sridhar Ramaswamy
+    ai_lab_investments: 0
+    cortex_knowledge_extensions:
+      launched: 2025-06
+      description: |
+        Snowflake Cortex Knowledge Extensions is the FIRST operationally
+        neutral AI content marketplace — a monetized RAG pipeline where
+        publishers license paywalled/proprietary content to enterprise AI
+        systems without exposing raw feeds, losing control, or getting
+        scraped for model training. Enterprises query licensed content inside
+        Snowflake's governed environment via retrieval-augmented generation.
+        Unlike Microsoft PCM (which is both marketplace operator AND first
+        buyer via Copilot), Snowflake does NOT take a revenue cut from
+        licensing deals and does NOT buy publisher content for its own AI
+        products. Snowflake profits from infrastructure usage (storage,
+        compute bandwidth) when publishers and enterprises use its platform.
+        This makes Snowflake the most structurally neutral intermediary in
+        the publisher-AI financial landscape.
+      publisher_count: 17
+      named_publishers:
+      - Washington Post
+      - Associated Press
+      - People Inc
+      - USA Today Network
+      interested_publishers:
+      - Financial Times
+      - The Economist
+      deal_scale: Six-figure deals with financial institutions confirmed
+      contract_structure: Flat-fee licenses or usage-based access
+      revenue_cut: Zero — Snowflake profits from infrastructure usage, not licensing
+        revenue
+      is_content_buyer: false
+      mediascope_relevance: |
+        Snowflake is analytically significant as a NEUTRAL CONTROL for
+        marketplace intermediary bias. Unlike Microsoft (dual role as
+        marketplace operator + buyer + OpenAI/Anthropic investor) or
+        Amazon (planned marketplace + Rufus buyer + Bezos WaPo ownership +
+        Anthropic investor), Snowflake has:
+        (a) Zero AI lab investments
+        (b) Zero direct content purchasing for its own AI products
+        (c) Zero revenue cut from licensing deals
+        (d) Zero financial relationships with any AI lab
+        Publishers on Snowflake have no financial incentive to cover
+        Snowflake favorably because Snowflake is pure infrastructure.
+        This makes Snowflake the marketplace equivalent of Gizmodo's
+        clean control status among publications.
+      source_urls:
+      - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+      - https://marketwirenews.com/stock/snow/news/snowflake-marketplace-adds-agentic-products-and-ai-r-4984352061288192.html
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    publisher_deals_note: |
+      Snowflake is NOT a publisher content buyer — it is a MARKETPLACE
+      where publishers sell to enterprise AI builders. Snowflake has
+      ZERO financial relationships with any AI lab (OpenAI, Anthropic,
+      Google, Meta, xAI, Amazon). This makes Snowflake the only
+      marketplace intermediary with no conflicts of interest.
+    press_response: ''
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
@@ -949,21 +1078,14 @@ coverage_predictions:
   adversarial: Financial incentive or absence thereof predicts harsher coverage
   unknown: Insufficient data to predict coverage tone
 meta_ai_deals:
-  overview: 'Meta entered the AI content licensing market with Reuters (Oct 2024),
-
+  overview: |
+    Meta entered the AI content licensing market with Reuters (Oct 2024),
     then signed 8 publishers in Dec 2025, and expanded internationally
-
     in Mar 2026 (4 more, including News Corp at $50M/yr). As of Aug 2026,
-
     Meta has 13 known AI content partners. CRITICALLY, none of the 7
-
     publications profiled in MediaScope (WIRED, The Verge, The Atlantic,
-
     NYT, FT, Guardian, MIT Tech Review) have Meta deals. Only News Corp
-
-    (WSJ, NY Post, Barron''s) — profiled as a control — has a Meta deal.
-
-    '
+    (WSJ, NY Post, Barron's) — profiled as a control — has a Meta deal.
   partners:
   - name: Reuters
     parent: Thomson Reuters
@@ -1085,8 +1207,8 @@ meta_ai_deals:
       value: Revenue share (engagement-based)
       source_url: https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
       notes: 'HYPOCRISY ARC: WIRED accused Perplexity of plagiarism (Jun 2024), Condé
-        Nast sent cease-and-desist to Perplexity (Jul 2024, per The Information), then
-        Condé Nast SIGNED a deal with Perplexity (Oct 2025). The plagiarism accusation
+        Nast sent cease-and-desist to Perplexity (Jul 2024, per The Information),
+        then Condé Nast SIGNED a deal with Perplexity (Oct 2025). The plagiarism accusation
         did not prevent a financial relationship when money was on the table.'
     - partner: Apple
       type: negotiating
@@ -1175,8 +1297,8 @@ meta_ai_deals:
         content queryable by enterprise AI tools without raw feed exposure
       value: Six-figure range (reported)
       source_url: https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
-      notes: Among 17 publishers on Snowflake Cortex. Deepens the litigation paradox —
-        NYT is now monetizing content through MULTIPLE AI licensing channels while
+      notes: Among 17 publishers on Snowflake Cortex. Deepens the litigation paradox
+        — NYT is now monetizing content through MULTIPLE AI licensing channels while
         simultaneously suing OpenAI.
     meta_deal: none
     deal_count: 3
@@ -1201,11 +1323,11 @@ meta_ai_deals:
         NYT seeks: attorneys fees, prohibition on OpenAI using output logs,
         jury instruction that output logs show "substantial and systematic
         grounding on and regurgitation" of copyrighted material.
-      nyt_counsel_quote: "For over two years, OpenAI lied to The Times, The Daily
-        News Plaintiffs, the public, and the court."
-      openai_response: "As the Times' case weakens and they've been forced to drop
-        claims against us, they're persisting with their efforts to invade the
-        privacy of people who have nothing to do with this case."
+      nyt_counsel_quote: For over two years, OpenAI lied to The Times, The Daily News
+        Plaintiffs, the public, and the court.
+      openai_response: As the Times' case weakens and they've been forced to drop
+        claims against us, they're persisting with their efforts to invade the privacy
+        of people who have nothing to do with this case.
       source_urls:
       - https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/
       - https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/
@@ -1287,15 +1409,11 @@ meta_ai_deals:
   cross_platform_summary:
     google_news_ai_pilot:
       announced: '2025-12-10'
-      description: 'Google''s replacement for News Showcase. Provides AI-powered article
-
+      description: |
+        Google's replacement for News Showcase. Provides AI-powered article
         overviews in Google News with direct payments. Coercive structure:
-
         publishers who decline lose existing Showcase annual fees when
-
         Showcase sunsets. Requires broad content rights including AI training.
-
-        '
       confirmed_participants:
       - The Guardian (UK)
       - The Washington Post (US)
@@ -1348,25 +1466,17 @@ meta_ai_deals:
         DEAL INSTABILITY: Reddit ($60M/yr deal) reportedly reconsidering
         limiting Google access (late Jul 2026, WSJ). Reddit shares fell ~8%.
         Reuters, Politico, The Economist, USA Today also weighing blocks.
-      mediascope_relevance: '2 of 8 MediaScope-profiled publications (The Guardian,
-        FT) are in the
-
+      mediascope_relevance: |
+        2 of 8 MediaScope-profiled publications (The Guardian, FT) are in the
         Google News AI pilot. Both also have OpenAI deals. This creates a
-
-        double-layer financial relationship with Meta''s competitors.
-
-        '
+        double-layer financial relationship with Meta's competitors.
     microsoft_pcm:
       announced: 2025-09 (summit), 2026-02 (public launch)
-      description: 'Publisher Content Marketplace — centralized licensing hub where
-
+      description: |
+        Publisher Content Marketplace — centralized licensing hub where
         publishers set terms and AI builders (starting with Copilot,
-
         expanding to Yahoo and others) license premium content with
-
         usage-based compensation.
-
-        '
       pilot_partners:
       - Business Insider Inc
       - Condé Nast
@@ -1382,14 +1492,10 @@ meta_ai_deals:
       - https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
       - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
       - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
-      mediascope_relevance: '2 of 8 MediaScope-profiled publications'' parents (Condé
-        Nast/WIRED,
-
+      mediascope_relevance: |
+        2 of 8 MediaScope-profiled publications' parents (Condé Nast/WIRED,
         Vox Media/The Verge) are PCM pilot partners. Both receive Microsoft
-
         revenue while covering Meta adversarially.
-
-        '
     snowflake_cortex:
       announced: 2025-06 (launched), 2026-05 (publisher adoption reported)
       description: |
@@ -1478,13 +1584,10 @@ meta_ai_deals:
       - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
       - https://www.macrumors.com/2026/07/10/apple-sues-openai/
     amazon_rufus_deals:
-      description: 'Multi-year content licensing for Rufus AI shopping assistant.
-
+      description: |
+        Multi-year content licensing for Rufus AI shopping assistant.
         Content from publisher archives powers product recommendations
-
         and shopping guidance.
-
-        '
       confirmed_partners:
       - partner: The New York Times
         date: 2025-05
@@ -1501,11 +1604,9 @@ meta_ai_deals:
       source_url: https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
     amazon_alexa_plus:
       announced: '2025-02-26'
-      description: 'Alexa+ AI assistant content partnerships. Publishers'' content
-
+      description: |
+        Alexa+ AI assistant content partnerships. Publishers' content
         summarized with attribution + links. Over 200 outlets participating.
-
-        '
       confirmed_partners:
       - Condé Nast
       - The Associated Press
@@ -1521,15 +1622,11 @@ meta_ai_deals:
       - 200+ additional outlets
       source_url: https://www.Mediapost.Com/publications/article/403742/conde-nast-and-other-publishers-to-leverage-amazon.html
   aggregate_incentive_matrix:
-    description: 'Total distinct AI company revenue relationships for each MediaScope
-
+    description: |
+      Total distinct AI company revenue relationships for each MediaScope
       publication. Counts unique platform relationships (OpenAI, Amazon,
-
       Google, Microsoft, Perplexity/ProRata) regardless of deal structure.
-
       Meta = 0 for all 8 profiled adversarial-coverage publications.
-
-      '
     publications:
     - name: WIRED (Condé Nast)
       competitor_deals: 5
@@ -1600,155 +1697,79 @@ meta_ai_deals:
         suggesting editorial culture as independent factor
     total_competitor_deal_count: 19
     total_meta_deal_count: 0
-    statistical_note: '19 competitor revenue relationships across 7 of 8 publications
-      versus
-
+    statistical_note: |
+      19 competitor revenue relationships across 7 of 8 publications versus
       0 Meta relationships across ALL 8 publications. The probability of
-
-      this distribution occurring by chance, given Meta''s 13 publisher deals
-
+      this distribution occurring by chance, given Meta's 13 publisher deals
       and the total addressable publisher market, is vanishingly small.
-
-      It indicates either (a) Meta''s deal team systematically excluded
-
+      It indicates either (a) Meta's deal team systematically excluded
       adversarial publications, (b) adversarial publications systematically
-
       declined Meta offers, or (c) both — creating a self-reinforcing loop
-
       where financial misalignment and editorial hostility compound.
-
       Condé Nast leads with 5 competitor revenue streams (OpenAI, Amazon,
-
       Microsoft PCM, Perplexity, Apple negotiating), the highest of any
-
       profiled publication. The Perplexity deal is particularly notable:
-
       Condé Nast accused Perplexity of plagiarism, sent a cease-and-desist,
-
       then signed a deal anyway — demonstrating that financial incentives
-
       override editorial complaints when money is available but NOT when
-
       the potential partner is Meta.
-
       NYT LITIGATION PARADOX (updated Aug 2026): NYT now has 3 distinct
-
       AI revenue channels (Amazon Rufus $20-25M/yr, Amazon Alexa+,
-
       Snowflake Cortex six-figure RAG) while suing OpenAI for billions.
-
       Project Giraffe revelation (Jul 2026) strengthens case but anti-AI
-
       stance remains selective.
-
       xAI ABSENCE: xAI has zero publisher deals AND zero publisher
-
       litigation — "publisher-invisible" despite $50B+ valuation.
-
-      '
-    control_comparison: 'News Corp (WSJ, NY Post, Barron''s, MarketWatch): Has BOTH
-      OpenAI
-
+    control_comparison: |
+      News Corp (WSJ, NY Post, Barron's, MarketWatch): Has BOTH OpenAI
       ($250M/5yr) AND Meta ($50M/yr) deals. Shows balanced Meta coverage —
-
       the predicted outcome when financial relationships are symmetric.
-
       Gizmodo: Has NO deals with anyone. Shows adversarial Meta coverage —
-
       suggesting editorial culture contributes independently of money.
-
       Together these controls bound the financial incentive effect: money
-
-      alone doesn''t explain everything (Gizmodo), but when money is
-
+      alone doesn't explain everything (Gizmodo), but when money is
       asymmetric across competitors, coverage tone follows (the other 7).
-
-      '
-  critical_finding: 'Of the 8 publications profiled in MediaScope''s adversarial coverage
-
+  critical_finding: |
+    Of the 8 publications profiled in MediaScope's adversarial coverage
     analysis (WIRED, The Verge, The Atlantic, NYT, FT, Guardian, MIT TR,
-
     Gizmodo), ZERO have Meta AI content deals. Seven of eight have a
-
-    combined 19 revenue relationships with Meta''s competitors (OpenAI,
-
+    combined 19 revenue relationships with Meta's competitors (OpenAI,
     Amazon, Google, Microsoft, Perplexity/ProRata, Snowflake). Only Gizmodo
-
     (zero deals with anyone) has symmetric financial non-relationships. The
-
     comprehensive cross-platform mapping reveals that financial incentives
-
     are not limited to a single OpenAI deal — multiple publications
-
     receive revenue from 3-5 distinct Meta competitors simultaneously.
-
     Condé Nast (WIRED) leads with 5 competitor revenue streams; NYT, FT,
-
     and Vox Media (The Verge) each have 3. This creates a multi-layered
-
     financial incentive gradient far stronger than any single deal.
-
     News Corp (WSJ, NY Post) — which has BOTH OpenAI ($250M/5yr) AND
-
     Meta ($50M/yr) deals — shows balanced coverage, the predicted outcome
-
     when financial relationships are symmetric.
-
     PERPLEXITY PATTERN (new Aug 2026): Condé Nast accused Perplexity of
-
     plagiarism (WIRED investigation, Jun 2024), sent cease-and-desist
-
     (Jul 2024), then signed Perplexity Comet Plus deal (Oct 2025). This
-
     demonstrates that editorial complaints about AI companies using
-
     content without permission are resolved by financial deals — but ONLY
-
     for non-Meta companies. Meta receives no such resolution pathway.
-
     ANTHROPIC ABSENCE: Anthropic has zero publisher content licensing deals
-
     despite its $1.5B author copyright settlement (approved Jun 2026).
-
     This makes Anthropic the only major AI lab without publisher deals,
-
     though it is not yet profiled as an adversarial coverage target.
-
     xAI ABSENCE: xAI ($50B+ valuation) has zero publisher deals AND zero
-
     publisher lawsuits — "publisher-invisible." Relies on X/Twitter data,
-
     Grokipedia (Wikipedia-derived), and Telegram user interactions instead.
-
     NYT PROJECT GIRAFFE (Jul 2026): OpenAI deposition revealed internal
-
     tools (78M conversations + Bloom filter) measuring its own infringement
-
     BEFORE and shortly after the Dec 2023 lawsuit, while claiming search
-
     was infeasible. NYT seeking sanctions. Meanwhile NYT quietly builds
-
     AI licensing revenue through Amazon ($20-25M/yr), Snowflake Cortex
-
     (six-figure RAG), and Alexa+ — the "Litigation Paradox."
-
     MARKETPLACE LAYER (new Aug 2026): Snowflake Cortex (17 publishers),
-
     Microsoft PCM (7 publishers), Amazon (building new marketplace),
-
     and Factiva (8,100+ news sources) create an emerging AI content
-
     marketplace layer. NYT, WashPost, AP, USA Today on Snowflake. This
-
     adds a 4th-5th revenue channel beyond bilateral deals.
-
-    '
   last_verified: '2026-08-06'
-
-# ===================================================================
-# MICROSOFT-OPENAI FINANCIAL AXIS
-# The unified financial ecosystem connecting publisher deals
-# ===================================================================
 microsoft_openai_financial_axis:
   overview: |
     Microsoft and OpenAI are not independent entities from a publisher
@@ -1763,17 +1784,17 @@ microsoft_openai_financial_axis:
     not two independent relationships.
   microsoft_openai_stake:
     equity_pct: 27
-    equity_value_approx: "$135B (at $500B valuation, Oct 2025 restructuring)"
+    equity_value_approx: $135B (at $500B valuation, Oct 2025 restructuring)
     pre_restructuring_pct: 32.5
-    revenue_share: "20% of OpenAI revenue through 2030"
-    azure_commitment: "$250B incremental Azure cloud purchases"
-    ip_rights: "Extended through 2032, including post-AGI models"
-    ipo_projection: "$1T valuation target, 2027 listing (NYT reporting)"
+    revenue_share: 20% of OpenAI revenue through 2030
+    azure_commitment: $250B incremental Azure cloud purchases
+    ip_rights: Extended through 2032, including post-AGI models
+    ipo_projection: $1T valuation target, 2027 listing (NYT reporting)
     source_urls:
-      - "https://siliconangle.com/2025/10/28/newly-completed-openai-restructuring-gives-microsoft-135b-stake/"
-      - "https://www.geekwire.com/2025/microsoft-secures-27-stake-in-openai-in-new-deal-with-commitment-for-250b-in-azure-usage/"
-      - "https://www.fool.com/investing/2026/07/04/chatgpt-maker-openai-is-headed-for-a-1-trillion-ip/"
-      - "https://www.tomsguide.com/ai/microsoft-and-openai-announce-new-deal-and-microsoft-gets-27-percent-what-it-means-for-you"
+    - https://siliconangle.com/2025/10/28/newly-completed-openai-restructuring-gives-microsoft-135b-stake/
+    - https://www.geekwire.com/2025/microsoft-secures-27-stake-in-openai-in-new-deal-with-commitment-for-250b-in-azure-usage/
+    - https://www.fool.com/investing/2026/07/04/chatgpt-maker-openai-is-headed-for-a-1-trillion-ip/
+    - https://www.tomsguide.com/ai/microsoft-and-openai-announce-new-deal-and-microsoft-gets-27-percent-what-it-means-for-you
   circular_revenue_flow: |
     Publisher → OpenAI (licensing payment)
     OpenAI → Microsoft (20% revenue share through 2030)
@@ -1786,28 +1807,28 @@ microsoft_openai_financial_axis:
     AXIS — a unified financial pipeline from publishers through the
     Microsoft-OpenAI system.
   publisher_dual_exposure:
-    - publisher: "Condé Nast (WIRED)"
-      openai_deal: "Licensing (Aug 2024)"
-      pcm_deal: "Pilot partner (Feb 2026)"
-      amazon_deal: "Rufus licensing (Jul 2025)"
-      perplexity_deal: "Comet Plus (Oct 2025)"
-      total_axis_deals: 2
-      total_competitor_deals: 5
-      meta_deals: 0
-    - publisher: "Vox Media (The Verge)"
-      openai_deal: "Licensing (May 2024)"
-      pcm_deal: "Pilot partner (Feb 2026)"
-      amazon_deal: "Alexa+ (Feb 2025)"
-      total_axis_deals: 2
-      total_competitor_deals: 3
-      meta_deals: 0
-    - publisher: "Nikkei (Financial Times)"
-      openai_deal: "Licensing (Apr 2024, est. $5-10M/yr)"
-      pcm_deal: "Early participant (Sep 2025 summit)"
-      google_deal: "News AI pilot (Feb 2026)"
-      total_axis_deals: 2
-      total_competitor_deals: 3
-      meta_deals: 0
+  - publisher: Condé Nast (WIRED)
+    openai_deal: Licensing (Aug 2024)
+    pcm_deal: Pilot partner (Feb 2026)
+    amazon_deal: Rufus licensing (Jul 2025)
+    perplexity_deal: Comet Plus (Oct 2025)
+    total_axis_deals: 2
+    total_competitor_deals: 5
+    meta_deals: 0
+  - publisher: Vox Media (The Verge)
+    openai_deal: Licensing (May 2024)
+    pcm_deal: Pilot partner (Feb 2026)
+    amazon_deal: Alexa+ (Feb 2025)
+    total_axis_deals: 2
+    total_competitor_deals: 3
+    meta_deals: 0
+  - publisher: Nikkei (Financial Times)
+    openai_deal: Licensing (Apr 2024, est. $5-10M/yr)
+    pcm_deal: Early participant (Sep 2025 summit)
+    google_deal: News AI pilot (Feb 2026)
+    total_axis_deals: 2
+    total_competitor_deals: 3
+    meta_deals: 0
   mediascope_significance: |
     The Microsoft-OpenAI axis means that "deal count" analysis
     understates publisher financial dependency on the Meta competitor
@@ -1836,26 +1857,6 @@ microsoft_openai_financial_axis:
     marketplace intermediary, no coercive leverage, and no parent-company
     equity stake linking them to any other AI company. The Microsoft-OpenAI
     axis is the structural opposite of Meta's deal model.
-
-# ===================================================================
-# REVENUE DEPENDENCY CONCENTRATION INDEX
-# Created: 2026-08-06
-# Purpose: Normalize financial incentive signals by publication size.
-#   Absolute deal values are misleading — a $5M deal is trivial for
-#   NYT ($2.82B revenue) but represents 22% of MIT TR's revenue
-#   ($22.3M). This section calculates the ratio of known competitor
-#   AI deal values to total annual revenue for each publication.
-# ===================================================================
-
-# ===================================================================
-# PMC DEAL FRAGMENTATION PARADOX — Type C, Aug 7 2026
-#
-# When Vox Media was split between Lupa Systems and PMC in May-June
-# 2026, AI content licensing deals signed with "Vox Media" as a single
-# legal entity became fragmented across two successor companies.
-# The Verge's financial incentive structure is now ambiguous.
-# ===================================================================
-
 pmc_deal_fragmentation:
   overview: |
     Three AI-related financial relationships were signed with "Vox Media"
@@ -1892,7 +1893,6 @@ pmc_deal_fragmentation:
     enterprise agreement costs OUT). If it stayed with Lupa, The Verge's
     parent has no OpenAI revenue — but The Verge's content may still be
     flowing to OpenAI under a contract held by a different company.
-
   pmc_financial_matrix:
     google: adversarial_litigation
     openai: licensing (inherited, status unclear)
@@ -1900,7 +1900,6 @@ pmc_deal_fragmentation:
     meta: none
     apple: none
     amazon: none (standard affiliate only)
-
   perverse_incentive: |
     PMC's financial position creates a clear directional prediction:
     - Google: ADVERSARIAL (active federal antitrust lawsuit, D.C. district
@@ -1922,24 +1921,23 @@ pmc_deal_fragmentation:
     the Google lawsuit has been disclosure ("Disclosure is our brand") not
     adversarial editorial coverage. The Verge has NEVER disclosed its
     OpenAI or Microsoft financial relationships in coverage of those companies.
-
   pmc_google_lawsuit:
-    filed: "2025-09-13"
-    court: "U.S. District Court for the District of Columbia"
-    case_type: "Antitrust (Sherman Act §1, §2) + unjust enrichment"
+    filed: '2025-09-13'
+    court: U.S. District Court for the District of Columbia
+    case_type: Antitrust (Sherman Act §1, §2) + unjust enrichment
     claims: 6
     claim_list:
-      - "Reciprocal dealing (§1)"
-      - "Reciprocal dealing (§2)"
-      - "Unlawful monopoly leveraging"
-      - "Monopolization"
-      - "Attempted monopolization"
-      - "Common-law unjust enrichment"
-    google_mtd_filed: "2026-01-13"
+    - Reciprocal dealing (§1)
+    - Reciprocal dealing (§2)
+    - Unlawful monopoly leveraging
+    - Monopolization
+    - Attempted monopolization
+    - Common-law unjust enrichment
+    google_mtd_filed: '2026-01-13'
     google_mtd_number: 3
-    google_quote: "legally defective in every way"
-    pmc_affiliate_revenue_decline: ">33% from peak"
-    status: "Pending — no ruling on third MTD as of Aug 7, 2026"
+    google_quote: legally defective in every way
+    pmc_affiliate_revenue_decline: '>33% from peak'
+    status: Pending — no ruling on third MTD as of Aug 7, 2026
     significance: |
       First major US publisher to sue Google over AI Overviews.
       PMC claims Google forces publishers to permit AI summaries as a
@@ -1950,17 +1948,15 @@ pmc_deal_fragmentation:
       every way" and noting PMC's counsel represents Chegg in a
       parallel action with "substantially the same legal theories."
     source_urls:
-      - "https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
-      - "https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/"
-      - "https://decrypt.co/354532/google-seeks-dismissal-of-publisher-lawsuit-over-ai-search-summaries"
-
+    - https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/
+    - https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/
+    - https://decrypt.co/354532/google-seeks-dismissal-of-publisher-lawsuit-over-ai-search-summaries
   source_urls:
-    pmc_acquisition: "https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/"
-    reuters_acquisition: "https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/"
-    openai_vox_deal: "https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
-    microsoft_pcm: "https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
-    webwire_pmx: "https://www.webwire.com/ViewPressRel.asp?aId=356735"
-
+    pmc_acquisition: https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/
+    reuters_acquisition: https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/
+    openai_vox_deal: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+    microsoft_pcm: https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+    webwire_pmx: https://www.webwire.com/ViewPressRel.asp?aId=356735
 revenue_dependency_concentration:
   methodology: |
     Revenue Dependency Ratio = (Sum of known competitor AI deal values)
@@ -1970,370 +1966,352 @@ revenue_dependency_concentration:
     separately. Total revenue uses the most recent available figure.
     News Corp serves as the balanced control with both Meta and
     competitor deals.
-
   source_urls:
-    nyt_10k: "https://stockanalysis.com/stocks/nyt/revenue/"
-    ft_revenue: "https://www.amediaoperator.com/news/financial-times-annual-report-2024-revenue/"
-    guardian_annual_report: "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
-    vox_media_adweek: "https://www.adweek.com/media/vox-media-roll-up-unwinds/"
-    conde_nast_rocketreach: "https://rocketreach.co/conde-nast-profile_b5f542b3f42d3402"
-    mit_tr_990: "ProPublica Nonprofit Explorer, MIT TR Form 990 FY2024"
-    news_corp_10k: "https://newscorp.com/2025/08/05/news-corp-reports-fourth-quarter-and-full-year-results-for-fiscal-2025/"
-    news_corp_meta_deal: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
-    news_corp_openai_deal: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
-    openai_deals_tracker: "https://llmpulse.ai/blog/openai-publisher-deals/"
-    press_gazette_tracker: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-
+    nyt_10k: https://stockanalysis.com/stocks/nyt/revenue/
+    ft_revenue: https://www.amediaoperator.com/news/financial-times-annual-report-2024-revenue/
+    guardian_annual_report: https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/
+    vox_media_adweek: https://www.adweek.com/media/vox-media-roll-up-unwinds/
+    conde_nast_rocketreach: https://rocketreach.co/conde-nast-profile_b5f542b3f42d3402
+    mit_tr_990: ProPublica Nonprofit Explorer, MIT TR Form 990 FY2024
+    news_corp_10k: https://newscorp.com/2025/08/05/news-corp-reports-fourth-quarter-and-full-year-results-for-fiscal-2025/
+    news_corp_meta_deal: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+    news_corp_openai_deal: https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
+    openai_deals_tracker: https://llmpulse.ai/blog/openai-publisher-deals/
+    press_gazette_tracker: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
   publications:
-    - name: "MIT Technology Review"
-      total_revenue: "$22.3M (FY2024, Form 990)"
-      total_revenue_usd: 22300000
-      revenue_source: "IRS Form 990, filed May 15 2025"
-      revenue_year: 2024
-      is_public: false
-      competitor_deals:
-        - partner: "ProRata AI"
-          value_known: false
-          value_estimate_floor: "$200K/yr"
-          value_estimate_floor_usd: 200000
-          source: "ProRata publisher marketplace participation"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 200000
-      dependency_ratio_known: 0.0
-      dependency_ratio_floor: 0.009
-      dependency_ratio_floor_pct: "0.9%"
-      operating_margin: "~0% (expenses match revenue)"
-      notes: |
-        HIGHEST POTENTIAL DEPENDENCY RATIO in the dataset. Even a
-        $200K ProRata deal represents 0.9% of total revenue — and
-        the actual value could be higher. MIT TR's total revenue
-        ($22.3M) is smaller than some individual AI deals (News Corp
-        OpenAI: $50M/yr). At $22.3M total revenue, ANY significant
-        AI deal becomes material. MIT TR's CEO compensation ($410K)
-        alone represents 1.8% of total revenue.
-        The publication operates at essentially zero margin, making
-        it structurally dependent on every revenue stream. Losing
-        even a small AI deal would require corresponding cuts.
-      adversarial_meta_coverage: true
-
-    - name: "The Guardian"
-      total_revenue: "£275M (~$350M, FY2024-25)"
-      total_revenue_usd: 350000000
-      revenue_source: "Guardian Media Group annual report (published)"
-      revenue_year: 2025
-      is_public: false
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: false
-          value_estimate_floor: "$5M/yr"
-          value_estimate_floor_usd: 5000000
-          source: "Press Gazette AI deals tracker"
-        - partner: "Google (News AI pilot)"
-          value_known: false
-          value_estimate_floor: "$2M/yr"
-          value_estimate_floor_usd: 2000000
-          source: "Google News Showcase / AI pilot program"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 7000000
-      dependency_ratio_known: 0.0
-      dependency_ratio_floor: 0.020
-      dependency_ratio_floor_pct: "2.0%"
-      operating_margin: "-9.1% (£25M operating loss on £275M revenue)"
-      notes: |
-        The Guardian operates at a LOSS, subsidized by the Scott
-        Trust endowment (~£25M/yr). This means AI deal revenue
-        doesn't just supplement — it directly reduces the annual
-        subsidy draw. A $7M floor estimate represents 28% of the
-        operating loss. For a publication that loses money, competitor
-        AI deals are proportionally more important than for profitable
-        ones because they directly affect the sustainability gap.
-        The US expansion ($81.4M revenue, up 25% YoY) increases
-        dependency on US tech company relationships.
-      adversarial_meta_coverage: true
-
-    - name: "Vox Media (The Verge)"
-      total_revenue: "$400-500M (2024 est.)"
-      total_revenue_usd: 450000000
-      revenue_source: "Adweek, multiple industry sources (private company)"
-      revenue_year: 2024
-      is_public: false
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: false
-          value_estimate_floor: "$5M/yr"
-          value_estimate_floor_usd: 5000000
-          source: "VentureBeat / Press Gazette"
-        - partner: "Microsoft PCM"
-          value_known: false
-          value_estimate_floor: "$2M/yr"
-          value_estimate_floor_usd: 2000000
-          source: "Microsoft PCM pilot announcement Feb 2026"
-        - partner: "Amazon (Alexa+)"
-          value_known: false
-          value_estimate_floor: "$2M/yr"
-          value_estimate_floor_usd: 2000000
-          source: "MediaPost reporting"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 9000000
-      dependency_ratio_known: 0.0
-      dependency_ratio_floor: 0.020
-      dependency_ratio_floor_pct: "2.0%"
-      operating_margin: "unknown (private)"
-      notes: |
-        Vox Media is reportedly exploring divestitures and spin-offs
-        (Adweek, Apr 2026). Revenue has declined from ~$600M peak to
-        $400-500M. In a shrinking-revenue environment, AI deal revenue
-        becomes proportionally more important. PMC's $100M investment
-        (2023) is widely seen as prelude to acquisition, not confidence
-        vote. Financial pressure amplifies dependency on AI deals.
-      adversarial_meta_coverage: true
-
-    - name: "Financial Times (Nikkei)"
-      total_revenue: "£540M (~$726M, 2024 global unaudited)"
-      total_revenue_usd: 726000000
-      revenue_source: "A Media Operator (internal FT briefing)"
-      revenue_year: 2024
-      is_public: false
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: true
-          value: "$5-10M/yr"
-          value_midpoint_usd: 7500000
-          source: "Press Gazette / industry reporting"
-        - partner: "Google (News AI pilot)"
-          value_known: false
-          value_estimate_floor: "$2M/yr"
-          value_estimate_floor_usd: 2000000
-          source: "TechCrunch"
-        - partner: "Microsoft PCM"
-          value_known: false
-          value_estimate_floor: "$2M/yr"
-          value_estimate_floor_usd: 2000000
-          source: "Microsoft PCM summit Sep 2025"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 7500000
-      floor_competitor_deal_value_usd: 11500000
-      dependency_ratio_known: 0.010
-      dependency_ratio_known_pct: "1.0%"
-      dependency_ratio_floor: 0.016
-      dependency_ratio_floor_pct: "1.6%"
-      operating_margin: "7.8% (global), 2.4% (UK entity only)"
-      notes: |
-        FT's global operating profit was £42.2M (7.8% margin). The
-        $11.5M floor estimate for competitor AI deals represents 27%
-        of operating profit. For a publication with thin margins,
-        this is highly material — losing these deals would cut
-        operating profit by more than a quarter.
-        FT is owned by Nikkei (Japanese media conglomerate), which
-        provides strategic backstop but does not subsidize FT
-        operations. FT must be self-sustaining.
-      adversarial_meta_coverage: true
-
-    - name: "Condé Nast (WIRED)"
-      total_revenue: "~$2B (2026 est.)"
-      total_revenue_usd: 2000000000
-      revenue_source: "RocketReach estimate (private company)"
-      revenue_year: 2026
-      is_public: false
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: false
-          value_estimate_floor: "$10M/yr"
-          value_estimate_floor_usd: 10000000
-          source: "Reuters / Press Gazette (confirmed deal, value undisclosed)"
-        - partner: "Amazon (Rufus + Alexa+)"
-          value_known: false
-          value_estimate_floor: "$5M/yr"
-          value_estimate_floor_usd: 5000000
-          source: "Digiday"
-        - partner: "Microsoft PCM"
-          value_known: false
-          value_estimate_floor: "$3M/yr"
-          value_estimate_floor_usd: 3000000
-          source: "WebWire press release Feb 2026"
-        - partner: "Perplexity (Comet Plus)"
-          value_known: false
-          value_estimate_floor: "$1M/yr"
-          value_estimate_floor_usd: 1000000
-          source: "Adweek (Condé Nast deals confirmed)"
-        - partner: "Apple (negotiating)"
-          value_known: false
-          value_estimate_floor: "$0"
-          value_estimate_floor_usd: 0
-          source: "Industry reporting since Dec 2023"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 19000000
-      dependency_ratio_known: 0.0
-      dependency_ratio_floor: 0.010
-      dependency_ratio_floor_pct: "1.0%"
-      operating_margin: "unknown (private)"
-      notes: |
-        HIGHEST ABSOLUTE DEAL COUNT (5 competitor deals, 0 Meta).
-        Condé Nast's revenue estimate is uncertain (private company).
-        At $2B, the dependency ratio appears moderate. But WIRED is
-        just one brand within Condé Nast — the deals are negotiated
-        at the corporate level (Condé Nast/Advance Publications),
-        creating a corporate-level incentive that flows down to
-        editorial decisions at individual brands. The Perplexity
-        deal is particularly notable: Condé Nast accused Perplexity
-        of plagiarism, sent C&D, then signed deal anyway. Financial
-        incentives overrode editorial complaints.
-      adversarial_meta_coverage: true
-
-    - name: "The New York Times"
-      total_revenue: "$2.82B (FY2025, 10-K)"
-      total_revenue_usd: 2820000000
-      revenue_source: "SEC 10-K filing, FY2025"
-      revenue_year: 2025
-      is_public: true
-      competitor_deals:
-        - partner: "Amazon (Rufus + Alexa+)"
-          value_known: true
-          value: "$20-25M/yr"
-          value_midpoint_usd: 22500000
-          source: "NYT/Amazon licensing reporting"
-        - partner: "OpenAI (suing)"
-          value_known: false
-          value: "N/A (litigation)"
-          value_estimate_floor_usd: 0
-          source: "NYT v. OpenAI lawsuit"
-        - partner: "Snowflake Cortex"
-          value_known: false
-          value: "six-figure"
-          value_estimate_floor_usd: 300000
-          source: "WSJ Marketplaces reporting"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 22500000
-      floor_competitor_deal_value_usd: 22800000
-      dependency_ratio_known: 0.008
-      dependency_ratio_known_pct: "0.8%"
-      dependency_ratio_floor: 0.008
-      dependency_ratio_floor_pct: "0.8%"
-      operating_margin: "15.3% ($432M operating income)"
-      notes: |
-        LOWEST DEPENDENCY RATIO of any adversarial publication.
-        NYT's $2.82B revenue dwarfs its AI deal values. The $22.5M
-        Amazon deal is just 0.8% of revenue and 5.2% of operating
-        profit ($432M). This means NYT's adversarial Meta coverage
-        is LEAST explained by financial incentive theory alone.
-        However, the BEAT ASSIGNMENT mechanism (Kashmir Hill →
-        Meta privacy, Karen Weise → Amazon from Seattle bureau)
-        operates independently of the financial ratio. The incentive
-        may be small at the corporate level but decisive at the
-        beat-assignment level where editorial decisions are made.
-        LITIGATION PARADOX: Suing OpenAI while monetizing Amazon,
-        Snowflake, and other AI channels.
-      adversarial_meta_coverage: true
-
-    - name: "Emerson Collective (The Atlantic)"
-      total_revenue: "~$100-150M (est.)"
-      total_revenue_usd: 125000000
-      revenue_source: "Industry estimates (private, Emerson Collective-owned)"
-      revenue_year: 2024
-      is_public: false
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: false
-          value_estimate_floor: "$5M/yr"
-          value_estimate_floor_usd: 5000000
-          source: "Press Gazette / VentureBeat"
-        - partner: "ProRata AI"
-          value_known: false
-          value_estimate_floor: "$500K/yr"
-          value_estimate_floor_usd: 500000
-          source: "ProRata publisher marketplace"
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 5500000
-      dependency_ratio_known: 0.0
-      dependency_ratio_floor: 0.044
-      dependency_ratio_floor_pct: "4.4%"
-      operating_margin: "unknown (Emerson Collective subsidized)"
-      notes: |
-        SECOND-HIGHEST POTENTIAL DEPENDENCY RATIO after MIT TR
-        (when using floor estimates). The Atlantic's ownership by
-        Emerson Collective (Laurene Powell Jobs) provides a financial
-        backstop but also introduces ideological alignment dynamics.
-        At the floor estimate, AI deals represent 4.4% of revenue,
-        which is highly material for a publication that likely
-        operates at or below breakeven.
-      adversarial_meta_coverage: true
-
-    - name: "Keleops AG (Gizmodo)"
-      total_revenue: "unknown"
-      total_revenue_usd: null
-      revenue_source: "Private (Keleops AG, Belgian holding, acquired 2024)"
-      revenue_year: null
-      is_public: false
-      competitor_deals: []
-      meta_deals: 0
-      known_competitor_deal_value_usd: 0
-      floor_competitor_deal_value_usd: 0
-      dependency_ratio_known: null
-      dependency_ratio_floor: null
-      notes: |
-        CLEAN CONTROL: Zero competitor deals AND zero Meta deals.
-        Gizmodo's adversarial Meta coverage exists without any
-        financial incentive from competitors, demonstrating that
-        editorial culture and institutional momentum are independent
-        factors. However, Gizmodo has the lowest editorial quality
-        and smallest audience of any profiled publication, limiting
-        its impact on Meta's reputation.
-      adversarial_meta_coverage: true
-
-    # ---------------------------------------------------------------
-    # BALANCED CONTROL
-    # ---------------------------------------------------------------
-    - name: "News Corp (WSJ, NY Post)"
-      total_revenue: "$8.45B (FY2025, 10-K); Dow Jones alone $2.33B"
-      total_revenue_usd: 8450000000
-      dow_jones_revenue_usd: 2330000000
-      revenue_source: "SEC 10-K, News Corp FY2025 (fiscal year ending Jun 2025)"
-      revenue_year: 2025
-      is_public: true
-      competitor_deals:
-        - partner: "OpenAI"
-          value_known: true
-          value: "$250M / 5 years ($50M/yr)"
-          value_annual_usd: 50000000
-          source: "VentureBeat / industry reporting"
-      meta_deals:
-        - partner: "Meta"
-          value_known: true
-          value: "up to $50M/yr, 3-year deal"
-          value_annual_usd: 50000000
-          source: "WSJ reporting"
-      known_competitor_deal_value_usd: 50000000
-      known_meta_deal_value_usd: 50000000
-      dependency_ratio_competitor: 0.006
-      dependency_ratio_competitor_pct: "0.6%"
-      dependency_ratio_meta: 0.006
-      dependency_ratio_meta_pct: "0.6%"
-      dependency_ratio_total_ai: 0.012
-      dependency_ratio_total_ai_pct: "1.2%"
-      operating_margin: "12.7% ($1.07B operating income)"
-      notes: |
-        BALANCED CONTROL: News Corp is the ONLY major publisher with
-        deals of comparable size from BOTH Meta ($50M/yr) and OpenAI
-        ($50M/yr). The dependency ratios are symmetric (0.6% each).
-        This predicts — and delivers — the most balanced coverage
-        in the dataset. Christopher Mims's tone inversion (+0.3 Meta,
-        -0.3 OpenAI) is the strongest evidence that balanced financial
-        relationships produce balanced (or even inverted) coverage.
-        WSJ is also the only profiled publication that systematically
-        discloses AI business relationships in its journalism.
-      adversarial_meta_coverage: false
-      balanced_coverage: true
-
-  # -----------------------------------------------------------------
-  # ANALYTICAL FINDINGS
-  # -----------------------------------------------------------------
+  - name: MIT Technology Review
+    total_revenue: $22.3M (FY2024, Form 990)
+    total_revenue_usd: 22300000
+    revenue_source: IRS Form 990, filed May 15 2025
+    revenue_year: 2024
+    is_public: false
+    competitor_deals:
+    - partner: ProRata AI
+      value_known: false
+      value_estimate_floor: $200K/yr
+      value_estimate_floor_usd: 200000
+      source: ProRata publisher marketplace participation
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 200000
+    dependency_ratio_known: 0.0
+    dependency_ratio_floor: 0.009
+    dependency_ratio_floor_pct: 0.9%
+    operating_margin: ~0% (expenses match revenue)
+    notes: |
+      HIGHEST POTENTIAL DEPENDENCY RATIO in the dataset. Even a
+      $200K ProRata deal represents 0.9% of total revenue — and
+      the actual value could be higher. MIT TR's total revenue
+      ($22.3M) is smaller than some individual AI deals (News Corp
+      OpenAI: $50M/yr). At $22.3M total revenue, ANY significant
+      AI deal becomes material. MIT TR's CEO compensation ($410K)
+      alone represents 1.8% of total revenue.
+      The publication operates at essentially zero margin, making
+      it structurally dependent on every revenue stream. Losing
+      even a small AI deal would require corresponding cuts.
+    adversarial_meta_coverage: true
+  - name: The Guardian
+    total_revenue: £275M (~$350M, FY2024-25)
+    total_revenue_usd: 350000000
+    revenue_source: Guardian Media Group annual report (published)
+    revenue_year: 2025
+    is_public: false
+    competitor_deals:
+    - partner: OpenAI
+      value_known: false
+      value_estimate_floor: $5M/yr
+      value_estimate_floor_usd: 5000000
+      source: Press Gazette AI deals tracker
+    - partner: Google (News AI pilot)
+      value_known: false
+      value_estimate_floor: $2M/yr
+      value_estimate_floor_usd: 2000000
+      source: Google News Showcase / AI pilot program
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 7000000
+    dependency_ratio_known: 0.0
+    dependency_ratio_floor: 0.02
+    dependency_ratio_floor_pct: 2.0%
+    operating_margin: -9.1% (£25M operating loss on £275M revenue)
+    notes: |
+      The Guardian operates at a LOSS, subsidized by the Scott
+      Trust endowment (~£25M/yr). This means AI deal revenue
+      doesn't just supplement — it directly reduces the annual
+      subsidy draw. A $7M floor estimate represents 28% of the
+      operating loss. For a publication that loses money, competitor
+      AI deals are proportionally more important than for profitable
+      ones because they directly affect the sustainability gap.
+      The US expansion ($81.4M revenue, up 25% YoY) increases
+      dependency on US tech company relationships.
+    adversarial_meta_coverage: true
+  - name: Vox Media (The Verge)
+    total_revenue: $400-500M (2024 est.)
+    total_revenue_usd: 450000000
+    revenue_source: Adweek, multiple industry sources (private company)
+    revenue_year: 2024
+    is_public: false
+    competitor_deals:
+    - partner: OpenAI
+      value_known: false
+      value_estimate_floor: $5M/yr
+      value_estimate_floor_usd: 5000000
+      source: VentureBeat / Press Gazette
+    - partner: Microsoft PCM
+      value_known: false
+      value_estimate_floor: $2M/yr
+      value_estimate_floor_usd: 2000000
+      source: Microsoft PCM pilot announcement Feb 2026
+    - partner: Amazon (Alexa+)
+      value_known: false
+      value_estimate_floor: $2M/yr
+      value_estimate_floor_usd: 2000000
+      source: MediaPost reporting
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 9000000
+    dependency_ratio_known: 0.0
+    dependency_ratio_floor: 0.02
+    dependency_ratio_floor_pct: 2.0%
+    operating_margin: unknown (private)
+    notes: |
+      Vox Media is reportedly exploring divestitures and spin-offs
+      (Adweek, Apr 2026). Revenue has declined from ~$600M peak to
+      $400-500M. In a shrinking-revenue environment, AI deal revenue
+      becomes proportionally more important. PMC's $100M investment
+      (2023) is widely seen as prelude to acquisition, not confidence
+      vote. Financial pressure amplifies dependency on AI deals.
+    adversarial_meta_coverage: true
+  - name: Financial Times (Nikkei)
+    total_revenue: £540M (~$726M, 2024 global unaudited)
+    total_revenue_usd: 726000000
+    revenue_source: A Media Operator (internal FT briefing)
+    revenue_year: 2024
+    is_public: false
+    competitor_deals:
+    - partner: OpenAI
+      value_known: true
+      value: $5-10M/yr
+      value_midpoint_usd: 7500000
+      source: Press Gazette / industry reporting
+    - partner: Google (News AI pilot)
+      value_known: false
+      value_estimate_floor: $2M/yr
+      value_estimate_floor_usd: 2000000
+      source: TechCrunch
+    - partner: Microsoft PCM
+      value_known: false
+      value_estimate_floor: $2M/yr
+      value_estimate_floor_usd: 2000000
+      source: Microsoft PCM summit Sep 2025
+    meta_deals: 0
+    known_competitor_deal_value_usd: 7500000
+    floor_competitor_deal_value_usd: 11500000
+    dependency_ratio_known: 0.01
+    dependency_ratio_known_pct: 1.0%
+    dependency_ratio_floor: 0.016
+    dependency_ratio_floor_pct: 1.6%
+    operating_margin: 7.8% (global), 2.4% (UK entity only)
+    notes: |
+      FT's global operating profit was £42.2M (7.8% margin). The
+      $11.5M floor estimate for competitor AI deals represents 27%
+      of operating profit. For a publication with thin margins,
+      this is highly material — losing these deals would cut
+      operating profit by more than a quarter.
+      FT is owned by Nikkei (Japanese media conglomerate), which
+      provides strategic backstop but does not subsidize FT
+      operations. FT must be self-sustaining.
+    adversarial_meta_coverage: true
+  - name: Condé Nast (WIRED)
+    total_revenue: ~$2B (2026 est.)
+    total_revenue_usd: 2000000000
+    revenue_source: RocketReach estimate (private company)
+    revenue_year: 2026
+    is_public: false
+    competitor_deals:
+    - partner: OpenAI
+      value_known: false
+      value_estimate_floor: $10M/yr
+      value_estimate_floor_usd: 10000000
+      source: Reuters / Press Gazette (confirmed deal, value undisclosed)
+    - partner: Amazon (Rufus + Alexa+)
+      value_known: false
+      value_estimate_floor: $5M/yr
+      value_estimate_floor_usd: 5000000
+      source: Digiday
+    - partner: Microsoft PCM
+      value_known: false
+      value_estimate_floor: $3M/yr
+      value_estimate_floor_usd: 3000000
+      source: WebWire press release Feb 2026
+    - partner: Perplexity (Comet Plus)
+      value_known: false
+      value_estimate_floor: $1M/yr
+      value_estimate_floor_usd: 1000000
+      source: Adweek (Condé Nast deals confirmed)
+    - partner: Apple (negotiating)
+      value_known: false
+      value_estimate_floor: $0
+      value_estimate_floor_usd: 0
+      source: Industry reporting since Dec 2023
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 19000000
+    dependency_ratio_known: 0.0
+    dependency_ratio_floor: 0.01
+    dependency_ratio_floor_pct: 1.0%
+    operating_margin: unknown (private)
+    notes: |
+      HIGHEST ABSOLUTE DEAL COUNT (5 competitor deals, 0 Meta).
+      Condé Nast's revenue estimate is uncertain (private company).
+      At $2B, the dependency ratio appears moderate. But WIRED is
+      just one brand within Condé Nast — the deals are negotiated
+      at the corporate level (Condé Nast/Advance Publications),
+      creating a corporate-level incentive that flows down to
+      editorial decisions at individual brands. The Perplexity
+      deal is particularly notable: Condé Nast accused Perplexity
+      of plagiarism, sent C&D, then signed deal anyway. Financial
+      incentives overrode editorial complaints.
+    adversarial_meta_coverage: true
+  - name: The New York Times
+    total_revenue: $2.82B (FY2025, 10-K)
+    total_revenue_usd: 2820000000
+    revenue_source: SEC 10-K filing, FY2025
+    revenue_year: 2025
+    is_public: true
+    competitor_deals:
+    - partner: Amazon (Rufus + Alexa+)
+      value_known: true
+      value: $20-25M/yr
+      value_midpoint_usd: 22500000
+      source: NYT/Amazon licensing reporting
+    - partner: OpenAI (suing)
+      value_known: false
+      value: N/A (litigation)
+      value_estimate_floor_usd: 0
+      source: NYT v. OpenAI lawsuit
+    - partner: Snowflake Cortex
+      value_known: false
+      value: six-figure
+      value_estimate_floor_usd: 300000
+      source: WSJ Marketplaces reporting
+    meta_deals: 0
+    known_competitor_deal_value_usd: 22500000
+    floor_competitor_deal_value_usd: 22800000
+    dependency_ratio_known: 0.008
+    dependency_ratio_known_pct: 0.8%
+    dependency_ratio_floor: 0.008
+    dependency_ratio_floor_pct: 0.8%
+    operating_margin: 15.3% ($432M operating income)
+    notes: |
+      LOWEST DEPENDENCY RATIO of any adversarial publication.
+      NYT's $2.82B revenue dwarfs its AI deal values. The $22.5M
+      Amazon deal is just 0.8% of revenue and 5.2% of operating
+      profit ($432M). This means NYT's adversarial Meta coverage
+      is LEAST explained by financial incentive theory alone.
+      However, the BEAT ASSIGNMENT mechanism (Kashmir Hill →
+      Meta privacy, Karen Weise → Amazon from Seattle bureau)
+      operates independently of the financial ratio. The incentive
+      may be small at the corporate level but decisive at the
+      beat-assignment level where editorial decisions are made.
+      LITIGATION PARADOX: Suing OpenAI while monetizing Amazon,
+      Snowflake, and other AI channels.
+    adversarial_meta_coverage: true
+  - name: Emerson Collective (The Atlantic)
+    total_revenue: ~$100-150M (est.)
+    total_revenue_usd: 125000000
+    revenue_source: Industry estimates (private, Emerson Collective-owned)
+    revenue_year: 2024
+    is_public: false
+    competitor_deals:
+    - partner: OpenAI
+      value_known: false
+      value_estimate_floor: $5M/yr
+      value_estimate_floor_usd: 5000000
+      source: Press Gazette / VentureBeat
+    - partner: ProRata AI
+      value_known: false
+      value_estimate_floor: $500K/yr
+      value_estimate_floor_usd: 500000
+      source: ProRata publisher marketplace
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 5500000
+    dependency_ratio_known: 0.0
+    dependency_ratio_floor: 0.044
+    dependency_ratio_floor_pct: 4.4%
+    operating_margin: unknown (Emerson Collective subsidized)
+    notes: |
+      SECOND-HIGHEST POTENTIAL DEPENDENCY RATIO after MIT TR
+      (when using floor estimates). The Atlantic's ownership by
+      Emerson Collective (Laurene Powell Jobs) provides a financial
+      backstop but also introduces ideological alignment dynamics.
+      At the floor estimate, AI deals represent 4.4% of revenue,
+      which is highly material for a publication that likely
+      operates at or below breakeven.
+    adversarial_meta_coverage: true
+  - name: Keleops AG (Gizmodo)
+    total_revenue: unknown
+    total_revenue_usd: null
+    revenue_source: Private (Keleops AG, Belgian holding, acquired 2024)
+    revenue_year: null
+    is_public: false
+    competitor_deals: []
+    meta_deals: 0
+    known_competitor_deal_value_usd: 0
+    floor_competitor_deal_value_usd: 0
+    dependency_ratio_known: null
+    dependency_ratio_floor: null
+    notes: |
+      CLEAN CONTROL: Zero competitor deals AND zero Meta deals.
+      Gizmodo's adversarial Meta coverage exists without any
+      financial incentive from competitors, demonstrating that
+      editorial culture and institutional momentum are independent
+      factors. However, Gizmodo has the lowest editorial quality
+      and smallest audience of any profiled publication, limiting
+      its impact on Meta's reputation.
+    adversarial_meta_coverage: true
+  - name: News Corp (WSJ, NY Post)
+    total_revenue: $8.45B (FY2025, 10-K); Dow Jones alone $2.33B
+    total_revenue_usd: 8450000000
+    dow_jones_revenue_usd: 2330000000
+    revenue_source: SEC 10-K, News Corp FY2025 (fiscal year ending Jun 2025)
+    revenue_year: 2025
+    is_public: true
+    competitor_deals:
+    - partner: OpenAI
+      value_known: true
+      value: $250M / 5 years ($50M/yr)
+      value_annual_usd: 50000000
+      source: VentureBeat / industry reporting
+    meta_deals:
+    - partner: Meta
+      value_known: true
+      value: up to $50M/yr, 3-year deal
+      value_annual_usd: 50000000
+      source: WSJ reporting
+    known_competitor_deal_value_usd: 50000000
+    known_meta_deal_value_usd: 50000000
+    dependency_ratio_competitor: 0.006
+    dependency_ratio_competitor_pct: 0.6%
+    dependency_ratio_meta: 0.006
+    dependency_ratio_meta_pct: 0.6%
+    dependency_ratio_total_ai: 0.012
+    dependency_ratio_total_ai_pct: 1.2%
+    operating_margin: 12.7% ($1.07B operating income)
+    notes: |
+      BALANCED CONTROL: News Corp is the ONLY major publisher with
+      deals of comparable size from BOTH Meta ($50M/yr) and OpenAI
+      ($50M/yr). The dependency ratios are symmetric (0.6% each).
+      This predicts — and delivers — the most balanced coverage
+      in the dataset. Christopher Mims's tone inversion (+0.3 Meta,
+      -0.3 OpenAI) is the strongest evidence that balanced financial
+      relationships produce balanced (or even inverted) coverage.
+      WSJ is also the only profiled publication that systematically
+      discloses AI business relationships in its journalism.
+    adversarial_meta_coverage: false
+    balanced_coverage: true
   key_findings:
-
     inverse_proportionality_paradox:
       description: |
         The publications with the SMALLEST revenues face the HIGHEST
@@ -2341,30 +2319,30 @@ revenue_dependency_concentration:
         they are private and their deals are undisclosed, the incentive
         gradient is invisible.
       ranking_by_dependency_floor:
-        - publication: "The Atlantic"
-          ratio: "4.4% (floor)"
-          revenue: "~$125M (est.)"
-        - publication: "The Guardian"
-          ratio: "2.0% (floor) — 28% of operating loss"
-          revenue: "$350M"
-        - publication: "Vox Media"
-          ratio: "2.0% (floor)"
-          revenue: "$450M (est.)"
-        - publication: "Financial Times"
-          ratio: "1.6% (floor) — 27% of operating profit"
-          revenue: "$726M"
-        - publication: "Condé Nast"
-          ratio: "1.0% (floor)"
-          revenue: "$2B (est.)"
-        - publication: "MIT Technology Review"
-          ratio: "0.9% (floor) — but true value could be 2-5%+"
-          revenue: "$22.3M"
-        - publication: "NYT"
-          ratio: "0.8%"
-          revenue: "$2.82B"
-        - publication: "News Corp (control)"
-          ratio: "0.6% competitor, 0.6% Meta (balanced)"
-          revenue: "$8.45B"
+      - publication: The Atlantic
+        ratio: 4.4% (floor)
+        revenue: ~$125M (est.)
+      - publication: The Guardian
+        ratio: 2.0% (floor) — 28% of operating loss
+        revenue: $350M
+      - publication: Vox Media
+        ratio: 2.0% (floor)
+        revenue: $450M (est.)
+      - publication: Financial Times
+        ratio: 1.6% (floor) — 27% of operating profit
+        revenue: $726M
+      - publication: Condé Nast
+        ratio: 1.0% (floor)
+        revenue: $2B (est.)
+      - publication: MIT Technology Review
+        ratio: 0.9% (floor) — but true value could be 2-5%+
+        revenue: $22.3M
+      - publication: NYT
+        ratio: 0.8%
+        revenue: $2.82B
+      - publication: News Corp (control)
+        ratio: 0.6% competitor, 0.6% Meta (balanced)
+        revenue: $8.45B
       statistical_note: |
         Using floor estimates, the mean dependency ratio for adversarial
         publications is 1.8%, while the balanced control (News Corp)
@@ -2373,7 +2351,6 @@ revenue_dependency_concentration:
         control. This gap widens if actual deal values exceed floor
         estimates, as they likely do for OpenAI deals with premium
         publishers (Condé Nast, NYT).
-
     margin_amplification_effect:
       description: |
         Revenue dependency ratios understate the true incentive
@@ -2381,27 +2358,28 @@ revenue_dependency_concentration:
         operating profit or loss. When normalized against operating
         margins, the incentive signal amplifies dramatically.
       examples:
-        - publication: "Financial Times"
-          deal_floor: "$11.5M"
-          operating_profit: "$56.7M (£42.2M global)"
-          ratio_vs_profit: "20.3%"
-          interpretation: "Losing AI deals would cut FT operating profit by a fifth"
-        - publication: "The Guardian"
-          deal_floor: "$7M"
-          operating_loss: "$31.8M (£25M)"
-          ratio_vs_loss: "22%"
-          interpretation: "AI deals offset 22% of the Guardian's annual operating loss"
-        - publication: "NYT"
-          deal_value: "$22.5M"
-          operating_profit: "$432M"
-          ratio_vs_profit: "5.2%"
-          interpretation: "NYT least affected — strong enough to lose AI deals and barely notice"
-        - publication: "News Corp (control)"
-          deal_value: "$100M total ($50M Meta + $50M OpenAI)"
-          operating_profit: "$1.07B"
-          ratio_vs_profit: "9.3%"
-          interpretation: "Balanced exposure — losing either deal is noticeable but not existential"
-
+      - publication: Financial Times
+        deal_floor: $11.5M
+        operating_profit: $56.7M (£42.2M global)
+        ratio_vs_profit: 20.3%
+        interpretation: Losing AI deals would cut FT operating profit by a fifth
+      - publication: The Guardian
+        deal_floor: $7M
+        operating_loss: $31.8M (£25M)
+        ratio_vs_loss: 22%
+        interpretation: AI deals offset 22% of the Guardian's annual operating loss
+      - publication: NYT
+        deal_value: $22.5M
+        operating_profit: $432M
+        ratio_vs_profit: 5.2%
+        interpretation: NYT least affected — strong enough to lose AI deals and barely
+          notice
+      - publication: News Corp (control)
+        deal_value: $100M total ($50M Meta + $50M OpenAI)
+        operating_profit: $1.07B
+        ratio_vs_profit: 9.3%
+        interpretation: Balanced exposure — losing either deal is noticeable but not
+          existential
     disclosure_paradox:
       description: |
         The publications with the highest dependency ratios are the
@@ -2421,3 +2399,105 @@ revenue_dependency_concentration:
         technology columns. No journalist at WIRED, The Verge,
         The Guardian, or The Atlantic includes comparable disclosures
         despite their publications having competitor-only AI deals.
+marketplace_intermediary_landscape:
+  overview: |
+    The publisher-AI financial landscape has evolved from simple bilateral
+    deals (2024: OpenAI-News Corp, OpenAI-Condé Nast) to a three-tier
+    architecture where publishers monetize content through multiple channels
+    simultaneously. Each tier creates distinct financial incentive mechanisms
+    for coverage bias. The emergence of marketplace intermediaries (Tier 2)
+    is the most significant structural change since the original bilateral
+    deal era, because it creates PLATFORM DEPENDENCY — publishers who depend
+    on Microsoft PCM or Snowflake Cortex to reach AI buyers have incentives
+    similar to their dependence on Google for search traffic.
+  tier_1_bilateral:
+    description: |
+      Direct publisher-to-tech-company licensing deals. The original model.
+      Clear financial incentive: publisher receives money directly from
+      tech company, creating softer coverage incentive for that company.
+    examples:
+    - OpenAI-News Corp ($50M/yr, May 2024)
+    - OpenAI-Condé Nast (multi-year, Aug 2024)
+    - Meta-News Corp (up to $50M/yr, Mar 2026)
+    - Amazon-NYT ($20-25M/yr, May 2025)
+    - Amazon-Condé Nast (Rufus, Jul 2025)
+    incentive_direction: Direct → softer coverage of paying entity
+  tier_2_marketplace:
+    description: |
+      Marketplace platforms that connect publishers to AI content buyers.
+      Publishers monetize content at scale through marketplace operators
+      rather than negotiating bilateral deals. CRITICAL DISTINCTION: some
+      marketplace operators (Microsoft, Amazon) are ALSO buyers AND AI lab
+      investors, creating multi-layered conflicts. Snowflake is the only
+      pure infrastructure operator.
+    operators:
+    - name: Microsoft PCM
+      launched: 2026-02
+      dual_role: true
+      is_buyer: true
+      first_buyer: Microsoft Copilot
+      external_buyer: Yahoo
+      publishers:
+      - Condé Nast
+      - Hearst
+      - Business Insider
+      - AP
+      - USA Today
+      - People Inc
+      ai_lab_investments:
+      - OpenAI ($13B)
+      - Anthropic ($5B)
+      conflict_level: highest
+    - name: Snowflake Cortex
+      launched: 2025-06
+      dual_role: false
+      is_buyer: false
+      publishers:
+      - Washington Post
+      - AP
+      - People Inc
+      - USA Today Network
+      ai_lab_investments: []
+      conflict_level: lowest
+    - name: Amazon AI Marketplace
+      launched: 2026-02 (announced, building)
+      dual_role: true
+      is_buyer: true
+      first_buyer: Amazon (Rufus, Alexa)
+      publishers:
+      - NYT
+      - Condé Nast
+      - Hearst
+      ai_lab_investments:
+      - Anthropic ($13B+)
+      conflict_level: high
+    incentive_direction: Platform dependency → softer coverage of marketplace operator
+  tier_3_collective:
+    description: |
+      Collective licensing schemes aggregating many publishers for bulk
+      deals with AI companies. Revenue is diffuse and distributed across
+      hundreds of publishers, reducing per-publisher incentive.
+    examples:
+    - 'NMA-Bria: 2,200 publisher members, enterprise AI clients (Mar 2026)'
+    - 'ProRata AI: 500+ publishers, revenue-share model (2024)'
+    - 'UK PLS Generative AI Solution: voluntary opt-in, collective management (Mar
+      2026)'
+    incentive_direction: Diffuse → minimal per-entity coverage incentive
+  concentration_risk: |
+    The marketplace layer creates concentration risk analogous to Google's
+    control over search referral traffic. If publishers depend on Microsoft
+    PCM, Snowflake Cortex, and Amazon's marketplace to monetize their content
+    with ALL AI builders, then the marketplace operators gain leverage over
+    publishers' financial sustainability. Microsoft already operates as both
+    marketplace operator (PCM) AND first buyer (Copilot) AND dual AI lab
+    investor (OpenAI $13B + Anthropic $5B), creating the deepest
+    entanglement of any company in the dataset.
+    Meta is the ONLY major AI company that is:
+    (a) NOT a marketplace operator
+    (b) NOT a marketplace participant/buyer
+    (c) NOT an AI lab investor
+    (d) Has ONLY bilateral deals (News Corp only confirmed, Mar 2026)
+    This makes Meta the most financially isolated from the publisher
+    marketplace ecosystem — with the least structural leverage over
+    publishers' revenue diversification, yet receiving the most adversarial
+    coverage from publishers entangled with Microsoft, Amazon, and OpenAI.

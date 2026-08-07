@@ -166,8 +166,8 @@ class TestCompetitorCoverageResearch(unittest.TestCase):
     def test_tone_values_valid(self):
         """All coverage tone values should be from the expected vocabulary."""
         valid_tones = {
-            "adversarial", "adversarial_investigative", "balanced_adversarial",
-            "balanced_to_adversarial",
+            "adversarial", "adversarial_investigative", "adversarial-by-absence",
+            "balanced_adversarial", "balanced_to_adversarial",
             "critical", "negative", "mixed", "neutral", "balanced",
             "neutral_to_positive", "balanced_to_positive", "positive"
         }

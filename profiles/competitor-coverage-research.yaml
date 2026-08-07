@@ -1,33 +1,12 @@
-# ===================================================================
-# COMPETITOR COVERAGE RESEARCH — Cross-Entity Asymmetry Evidence
-# Created: 2026-08-04
-# Purpose: Document specific coverage examples showing differential
-#   treatment of Meta vs. competitors by publications with financial
-#   ties to those competitors. Each entry has a source URL.
-# ===================================================================
-
-research_period: "2024-08-01 to 2026-08-04"
+research_period: 2024-08-01 to 2026-08-04
 methodology: |
   For each profiled publication, we compared coverage tone and framing
   of Meta against coverage of companies that pay the publication (via
   AI content licensing deals) or are financially connected. Every
   finding is sourced to a specific article or primary document.
-
-# ===================================================================
-# PUBLICATION × ENTITY COVERAGE FINDINGS
-# ===================================================================
-
 publications:
-
-  # -----------------------------------------------------------------
-  # WIRED (Condé Nast / Advance Publications)
-  # Financial ties: OpenAI (licensing, Aug 2024), Amazon (licensing via
-  #   Rufus, Jul 2025), Microsoft PCM (Feb 2026), Perplexity (deal
-  #   confirmed Adweek Dec 2025). Apple (negotiating since Dec 2023).
-  #   No Meta deal. No Google deal.
-  # -----------------------------------------------------------------
   wired:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       WIRED under Katie Drummond has made Meta its primary investigative
       target. The NameTag/facial recognition investigation (Jun 2026)
@@ -38,14 +17,15 @@ publications:
       entities. Silence on Meta reached 18 consecutive days (Jul 17 -
       Aug 4, 2026) after the initial NameTag wave.
     meta_examples:
-      - title: "Meta's Smart Glasses Had Hidden Facial Recognition Code"
-        date: "2026-06-08"
-        tone: -0.85
-        framing: "investigative exposé, loaded language ('dormant surveillance'), fear appeal"
-        source_url: "https://www.techdigest.tv/2026/06/meta-abandons-facial-recognition-for-smart-glasses-after-wired-investigation.html"
-        notes: "Prompted Meta emergency code deletion. Andy Stone called it 'intellectually dishonest' and 'pure advocacy-driven click bait.'"
-
-    openai_coverage_tone: "neutral_to_positive"
+    - title: Meta's Smart Glasses Had Hidden Facial Recognition Code
+      date: '2026-06-08'
+      tone: -0.85
+      framing: investigative exposé, loaded language ('dormant surveillance'), fear
+        appeal
+      source_url: https://www.techdigest.tv/2026/06/meta-abandons-facial-recognition-for-smart-glasses-after-wired-investigation.html
+      notes: Prompted Meta emergency code deletion. Andy Stone called it 'intellectually
+        dishonest' and 'pure advocacy-driven click bait.'
+    openai_coverage_tone: neutral_to_positive
     openai_coverage_summary: |
       Despite covering OpenAI governance crises (Nov 2023 board coup,
       sycophancy scandal), WIRED's OpenAI coverage is notably less
@@ -56,13 +36,13 @@ publications:
       about OpenAI. Coverage of OpenAI sycophancy was based on VentureBeat's
       reporting, not original investigation.
     openai_examples:
-      - title: "OpenAI Overrode Expert Tester Concerns (sycophancy coverage)"
-        date: "2025-Q4"
-        tone: -0.2
-        framing: "balanced critical, no loaded language, factual reporting"
-        notes: "Compare to Meta coverage: same type of 'company ignored safety warnings' story, but 2-3x less hostile framing"
-
-    amazon_coverage_tone: "neutral"
+    - title: OpenAI Overrode Expert Tester Concerns (sycophancy coverage)
+      date: 2025-Q4
+      tone: -0.2
+      framing: balanced critical, no loaded language, factual reporting
+      notes: 'Compare to Meta coverage: same type of ''company ignored safety warnings''
+        story, but 2-3x less hostile framing'
+    amazon_coverage_tone: neutral
     amazon_coverage_summary: |
       Condé Nast signed an Amazon Rufus AI licensing deal Jul 2025
       (Digiday confirmed). WIRED's Amazon coverage focuses on product
@@ -70,9 +50,8 @@ publications:
       sustained investigative campaigns against Amazon despite
       comparable privacy concerns (Ring doorbell surveillance,
       Alexa recording).
-    amazon_deal_source: "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
-
-    microsoft_coverage_tone: "neutral_to_positive"
+    amazon_deal_source: https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
+    microsoft_coverage_tone: neutral_to_positive
     microsoft_coverage_summary: |
       Condé Nast joined Microsoft's Publisher Content Marketplace (PCM)
       as a pilot partner (Feb 2026, WebWire press release). PCM licenses
@@ -83,10 +62,9 @@ publications:
       model — unlike bilateral OpenAI/Amazon deals — meaning Condé
       Nast's content can be licensed to multiple AI builders through
       Microsoft's infrastructure. Meta is NOT a PCM participant.
-    microsoft_pcm_source: "https://www.WebWire.com/ViewPressRel.asp?aId=350303"
-    microsoft_pcm_marketplace_source: "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
-
-    perplexity_coverage_tone: "neutral"
+    microsoft_pcm_source: https://www.WebWire.com/ViewPressRel.asp?aId=350303
+    microsoft_pcm_marketplace_source: https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+    perplexity_coverage_tone: neutral
     perplexity_coverage_summary: |
       Condé Nast has a content licensing agreement with Perplexity
       via the Comet Plus subscription program (launched Oct 1, 2025).
@@ -110,10 +88,9 @@ publications:
       with a deal — only with sustained adversarial coverage. The double
       standard is: accuse of plagiarism → sign deal (Perplexity), accuse
       of surveillance → sustained investigation (Meta).
-    perplexity_deal_source: "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
-    perplexity_comet_plus_source: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
-    perplexity_plagiarism_source: "http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers"
-
+    perplexity_deal_source: https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+    perplexity_comet_plus_source: https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+    perplexity_plagiarism_source: http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers
     advance_reddit_perplexity_triangle:
       discovery_date: 2026-08-06
       description: |
@@ -145,7 +122,6 @@ publications:
       - https://www.reuters.com/legal/litigation/perplexity-ai-loses-bid-toss-reddit-lawsuit-over-data-scraping-2026-07-31/
       - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
       - https://digiday.com/marketing/reddit-questions-if-ai-data-deals-could-hurt-its-ad-business/
-
     deal_count_summary: |
       As of Aug 2026, Condé Nast (WIRED's parent) has AI licensing
       deals with FIVE entities: OpenAI, Amazon, Microsoft, Perplexity,
@@ -156,7 +132,6 @@ publications:
       Condé Nast's social traffic sources (Facebook referrals, Instagram),
       is the ONLY major tech company that Condé Nast has no deal with
       AND no deal in progress with.
-
     conde_nast_revenue_pivot:
       overview: |
         Condé Nast CEO Roger Lynch has explicitly abandoned advertising
@@ -170,33 +145,36 @@ publications:
         every financial incentive pushes editorial coverage toward
         protecting those AI relationships.
       lynch_statements:
-        - quote: "We don't expect advertising to be a growth engine for the business."
-          source: "WSJ interview, October 2025"
-          source_url: "https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/"
-        - quote: "Search will play a diminished role in our traffic and this is an assumption we are building our strategy around."
-          source: "Annual CEO memo, March 1 2026"
-          source_url: "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
-        - quote: "Assume there's no search. You have to have your businesses planned as if search is zero."
-          source: "TBPN interview, May 13 2026"
-          source_url: "https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/"
-        - quote: "Google search is no longer a meaningful driver [of traffic]... another sort of death blow."
-          source: "Financial Times interview, February 27 2026"
-          source_url: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+      - quote: We don't expect advertising to be a growth engine for the business.
+        source: WSJ interview, October 2025
+        source_url: https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/
+      - quote: Search will play a diminished role in our traffic and this is an assumption
+          we are building our strategy around.
+        source: Annual CEO memo, March 1 2026
+        source_url: https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html
+      - quote: Assume there's no search. You have to have your businesses planned
+          as if search is zero.
+        source: TBPN interview, May 13 2026
+        source_url: https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/
+      - quote: Google search is no longer a meaningful driver [of traffic]... another
+          sort of death blow.
+        source: Financial Times interview, February 27 2026
+        source_url: https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
       revenue_data_2025:
-        total_revenue_approx: "$2B (RocketReach)"
-        events_growth: "+40% YoY (Adweek, May 2026)"
-        events_projected_2026: "+22% YoY"
-        subscriptions_growth: "+10% YoY"
-        digital_subscriptions_growth: "+29% YoY"
-        commerce_growth: "+13% YoY"
-        branded_content_growth: "+9% YoY"
-        top_7_brands_share: "85% of total revenue"
-        ai_deals_named: "OpenAI, Perplexity, Microsoft, Amazon"
+        total_revenue_approx: $2B (RocketReach)
+        events_growth: +40% YoY (Adweek, May 2026)
+        events_projected_2026: +22% YoY
+        subscriptions_growth: +10% YoY
+        digital_subscriptions_growth: +29% YoY
+        commerce_growth: +13% YoY
+        branded_content_growth: +9% YoY
+        top_7_brands_share: 85% of total revenue
+        ai_deals_named: OpenAI, Perplexity, Microsoft, Amazon
         ai_pilots_running: 70
         source_urls:
-          - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
-          - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
-          - "https://Rocketreach.co/answers/what-is-the-annual-revenue-of-conde-nast_b5f542b3f42d3402"
+        - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+        - https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html
+        - https://Rocketreach.co/answers/what-is-the-annual-revenue-of-conde-nast_b5f542b3f42d3402
       microsoft_openai_axis_exposure: |
         Two of Condé Nast's five AI deals (OpenAI licensing + Microsoft PCM)
         flow into the Microsoft-OpenAI financial axis:
@@ -225,14 +203,12 @@ publications:
         copyright infringement, and Perplexity, which WIRED itself
         previously accused of plagiarism before signing a deal).
       source_urls:
-        - "https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/"
-        - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
-        - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
-        - "https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/"
-        - "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
-
-    apple_coverage_tone: "neutral_to_positive"
-
+      - https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/
+      - https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html
+      - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+      - https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/
+      - https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+    apple_coverage_tone: neutral_to_positive
     apple_coverage_summary: |
       Apple in negotiation for Condé Nast AI content deal (Reuters,
       Dec 2023). WIRED covers Apple product launches with standard
@@ -255,26 +231,33 @@ publications:
       investigative reporters (Dell Cameron, Dhruv Mehrotra) who frame
       them as "dormant surveillance infrastructure."
     apple_examples:
-      - title: "Lauren Goode Apple Vision Pro review — 'I cried'"
-        date: "2024-02-23"
-        tone: +0.55
-        framing: "personal emotional narrative, empathetic wonder, product delight. ZERO surveillance framing for 12-camera device."
-        source_url: "https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/"
-        notes: "Apple Vision Pro has 12 cameras vs Meta Ray-Ban's 1 camera. Goode cried in the headset and wrote about it emotionally. No mention of bystander privacy despite 12 outward-facing cameras."
-      - title: "Lauren Goode Snap Spectacles review — 'Face Camera We've Been Waiting For'"
-        date: "2018"
-        tone: +0.45
-        framing: "playful positive, expectant framing, fun consumer product review at amusement park"
-        source_url: "https://www.youtube.com/watch?v=zHn_otv4qN8"
-        notes: "Same Goode who does Apple wearables also covers Snap wearables positively — but NEVER covers Meta wearables."
-      - title: "WIRED Gadget Lab podcast — 'Apple's Uncanny Valley Pro'"
-        date: "2024-02-01"
-        tone: +0.3
-        framing: "product curiosity, no surveillance framing, no privacy alarm for 12-camera headset"
-        source_url: "https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro"
-        notes: "Julian Chokkattu and Lauren Goode discuss Apple Vision Pro. Focus on price, apps, battery — not cameras or surveillance."
-
-    google_coverage_tone: "adversarial"
+    - title: Lauren Goode Apple Vision Pro review — 'I cried'
+      date: '2024-02-23'
+      tone: 0.55
+      framing: personal emotional narrative, empathetic wonder, product delight. ZERO
+        surveillance framing for 12-camera device.
+      source_url: https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
+      notes: Apple Vision Pro has 12 cameras vs Meta Ray-Ban's 1 camera. Goode cried
+        in the headset and wrote about it emotionally. No mention of bystander privacy
+        despite 12 outward-facing cameras.
+    - title: Lauren Goode Snap Spectacles review — 'Face Camera We've Been Waiting
+        For'
+      date: '2018'
+      tone: 0.45
+      framing: playful positive, expectant framing, fun consumer product review at
+        amusement park
+      source_url: https://www.youtube.com/watch?v=zHn_otv4qN8
+      notes: Same Goode who does Apple wearables also covers Snap wearables positively
+        — but NEVER covers Meta wearables.
+    - title: WIRED Gadget Lab podcast — 'Apple's Uncanny Valley Pro'
+      date: '2024-02-01'
+      tone: 0.3
+      framing: product curiosity, no surveillance framing, no privacy alarm for 12-camera
+        headset
+      source_url: https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro
+      notes: Julian Chokkattu and Lauren Goode discuss Apple Vision Pro. Focus on
+        price, apps, battery — not cameras or surveillance.
+    google_coverage_tone: adversarial
     google_coverage_summary: |
       WIRED covers Google AI Overviews critically. CEO Roger Lynch
       described Google as existential threat. Condé Nast joined
@@ -296,11 +279,10 @@ publications:
       antitrust litigation. Yet WIRED's adversarial coverage volume
       and intensity for Google remains LOWER than for Meta, despite
       Google's objectively greater financial harm to WIRED's parent.
-    google_litigation_source: "https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
-    google_coercion_source: "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
-
+    google_litigation_source: https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
+    google_coercion_source: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
     google_smart_glasses_framing:
-      discovery_date: "2026-08-06"
+      discovery_date: '2026-08-06'
       description: |
         SMART GLASSES FRAMING PARADOX — WIRED treats Google/Samsung glasses
         with product-review framing while treating functionally identical
@@ -357,12 +339,11 @@ publications:
         Whether intentional or not, the differential framing advantages
         the company that still sends WIRED traffic over the company that
         sends zero traffic.
-      google_glasses_source: "http://androidauthority.com/how-google-android-xr-smart-glasses-work-3508597/"
-      samsung_google_io_source: "https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm"
-      privacy_comparison_source: "http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm"
-
+      google_glasses_source: http://androidauthority.com/how-google-android-xr-smart-glasses-work-3508597/
+      samsung_google_io_source: https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm
+      privacy_comparison_source: http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
     samsung_equivalence_paradox:
-      discovery_date: "2026-08-07"
+      discovery_date: '2026-08-07'
       description: |
         SAMSUNG EQUIVALENCE PARADOX (Aug 7, 2026): Samsung launched Intelligent
         Eyewear at Galaxy Unpacked (July 22, 2026, London) with hardware
@@ -420,11 +401,10 @@ publications:
         The publication that called Meta glasses "a tool for mass surveillance"
         did not apply the same surveillance vocabulary to Samsung's identical
         camera-equipped glasses.
-      samsung_launch_source: "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear"
-      samsung_privacy_source: "https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/"
-      gsmarena_privacy_source: "https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php"
-      school_ban_source: "https://www.postsouth.com/story/news/local/2026/08/04/iberville-parish-schools-mandate-clear-bags-for-students/91127541007/"
-
+      samsung_launch_source: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+      samsung_privacy_source: https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+      gsmarena_privacy_source: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+      school_ban_source: https://www.postsouth.com/story/news/local/2026/08/04/iberville-parish-schools-mandate-clear-bags-for-students/91127541007/
     google_traffic_collapse:
       discovery_date: 2026-08-06
       description: |
@@ -456,7 +436,6 @@ publications:
       - https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/
       - https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
       - https://blogs.grocliq.com/2026/05/13/conde-nast-expects-search-to-become-a-single-digit-of-its-traffic/
-
     advertising_dependency_paradox:
       discovery_date: 2026-08-06
       description: |
@@ -490,11 +469,9 @@ publications:
         The company causing the most financial damage to publishers (Google) gets
         softer treatment than the company with zero leverage over them (Meta).
         This isn't editorial courage — it's risk-adjusted self-interest.
-
-    x_twitter_coverage_tone: "adversarial"
+    x_twitter_coverage_tone: adversarial
     x_coverage_summary: |
       Standard adversarial coverage of Musk/X. No financial relationship.
-
     asymmetry_verdict: |
       WIRED's most extreme coverage asymmetry is Meta (-0.85) vs OpenAI
       (+0.10) — a gap of ~0.95 on a -1 to +1 scale. OpenAI pays WIRED
@@ -503,14 +480,8 @@ publications:
       Meta receives sustained investigative campaigns. WIRED has never
       disclosed the Condé Nast-OpenAI licensing deal in its OpenAI
       coverage.
-
-  # -----------------------------------------------------------------
-  # THE VERGE (Vox Media → PMC / SRMG-PIF)
-  # Financial ties: OpenAI (licensing via Vox Media, May 2024),
-  #   Microsoft PCM (pilot partner, Feb 2026). No Meta deal. PMC sued Google.
-  # -----------------------------------------------------------------
   the-verge:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       The Verge's institutional Meta coverage is adversarial, but this emerges
       from editorial commentary (Nilay Patel) and business/investigative
@@ -527,18 +498,20 @@ publications:
       proof piece reported Meta's PROACTIVE response to WSJ's Joanna Stern
       investigation — not an adversarial exposé.
     meta_examples:
-      - title: "Victoria Song LED tamper-proof coverage (META RESPONSE piece)"
-        date: "2026-07-07"
-        tone: -0.2
-        framing: "Reported Meta's proactive tamper-proof update, NOT adversarial investigation"
-        notes: "Techmeme 219pts. Original investigation was WSJ/Joanna Stern (30 states). Song covered META's positive action."
-      - title: "Victoria Song: Meta's big vision for face computers might be better than Apple's"
-        date: "2024-02-14"
-        tone: +0.4
-        framing: "Explicitly pro-Meta comparative, argued Meta approach superior to Apple Vision Pro"
-        source_url: "https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr"
-
-    openai_coverage_tone: "balanced"
+    - title: Victoria Song LED tamper-proof coverage (META RESPONSE piece)
+      date: '2026-07-07'
+      tone: -0.2
+      framing: Reported Meta's proactive tamper-proof update, NOT adversarial investigation
+      notes: Techmeme 219pts. Original investigation was WSJ/Joanna Stern (30 states).
+        Song covered META's positive action.
+    - title: 'Victoria Song: Meta''s big vision for face computers might be better
+        than Apple''s'
+      date: '2024-02-14'
+      tone: 0.4
+      framing: Explicitly pro-Meta comparative, argued Meta approach superior to Apple
+        Vision Pro
+      source_url: https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr
+    openai_coverage_tone: balanced
     openai_coverage_summary: |
       Vox Media signed OpenAI content licensing deal May 2024 (Reuters
       confirmed). Vox Union was 'deeply troubled' and not consulted.
@@ -546,9 +519,8 @@ publications:
       was compromised but stayed. The Verge has continued critical
       OpenAI coverage (NDA exposé) but tone is measurably less hostile
       than Meta coverage. Product coverage is neutral-to-positive.
-    openai_deal_source: "https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
-
-    google_coverage_tone: "adversarial"
+    openai_deal_source: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+    google_coverage_tone: adversarial
     google_coverage_summary: |
       PMC sued Google over AI Overviews Sep 2025 (first major US
       publisher lawsuit). Nilay Patel coined 'Google Zero.' Deep
@@ -563,8 +535,7 @@ publications:
       SRMG/PIF ($200M PMC investment) sold all META shares, creating
       structural divestment from Meta's upside while Google litigation
       creates financial incentive for Google-adversarial coverage.
-    google_litigation_source: "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
-
+    google_litigation_source: https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on
     lane_assignment_mechanism: |
       Multi-beat lane assignment. Four reporter lanes produce systematic
       framing divergence: OpenAI gets the enterprise scoop team (Hayden
@@ -572,50 +543,51 @@ publications:
       adversarial lanes (Heath: business investigations, Hollister:
       consumer harm, Davis/Weatherbed: regulatory). Victoria Song
       (wearables product reviews) is the sole balanced lane.
-
     openai_article_examples:
-      - title: "ChatGPT Atlas agent mode for web-based tasks"
-        date: "2025-10"
-        reporter: "Hayden Field"
-        tone: -0.05
-        framing: "Product launch, feature announcement. Browser tracks user data via 'memories' — framed as feature, not surveillance."
-        surveillance_terms: 0
-        source_url: "https://www.techmeme.com/251021/p33"
-      - title: "OpenAI closes $6.5B acquisition of Jony Ive's io Products"
-        date: "2025-07"
-        reporter: "Hayden Field"
-        tone: +0.15
-        framing: "Innovation narrative. Camera-equipped AI wearable — ZERO pre-emptive privacy alarm."
-        surveillance_terms: 0
-        source_url: "https://www.techmeme.com/250709/p35"
-      - title: "GPT-5 launch plans"
-        date: "2025-07"
-        reporter: "Tom Warren"
-        tone: +0.10
-        framing: "Insider access scoop, competitive landscape."
-        surveillance_terms: 0
-        source_url: "https://www.techmeme.com/250724/p36"
-
+    - title: ChatGPT Atlas agent mode for web-based tasks
+      date: 2025-10
+      reporter: Hayden Field
+      tone: -0.05
+      framing: Product launch, feature announcement. Browser tracks user data via
+        'memories' — framed as feature, not surveillance.
+      surveillance_terms: 0
+      source_url: https://www.techmeme.com/251021/p33
+    - title: OpenAI closes $6.5B acquisition of Jony Ive's io Products
+      date: 2025-07
+      reporter: Hayden Field
+      tone: 0.15
+      framing: Innovation narrative. Camera-equipped AI wearable — ZERO pre-emptive
+        privacy alarm.
+      surveillance_terms: 0
+      source_url: https://www.techmeme.com/250709/p35
+    - title: GPT-5 launch plans
+      date: 2025-07
+      reporter: Tom Warren
+      tone: 0.1
+      framing: Insider access scoop, competitive landscape.
+      surveillance_terms: 0
+      source_url: https://www.techmeme.com/250724/p36
     meta_institutional_examples:
-      - title: "With smart glasses, Meta holds all the cards but fails to play them well"
-        date: "2026-07"
-        reporter: "Victoria Song"
-        tone: -0.40
-        framing: "Opens with activist guerrilla ads: 'pervert technology,' 'mass surveillance predator glasses.' Significant framing shift from Song's earlier balanced reviews."
-        surveillance_terms: 4
-        source_url: "https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/"
-      - title: "Conversation Focus rate limited to 3 hours/month"
-        date: "2026-07"
-        reporter: "Sean Hollister"
-        tone: -0.50
-        framing: "Consumer harm, accessibility paywall for on-device feature."
-      - title: "EU tells Meta 'pay or consent' may violate consumer law"
-        date: "2024-07"
-        reporter: "Wes Davis"
-        tone: -0.35
-        framing: "Regulatory pressure on Meta data practices."
-        source_url: "https://www.techmeme.com/240722/p12"
-
+    - title: With smart glasses, Meta holds all the cards but fails to play them well
+      date: 2026-07
+      reporter: Victoria Song
+      tone: -0.4
+      framing: 'Opens with activist guerrilla ads: ''pervert technology,'' ''mass
+        surveillance predator glasses.'' Significant framing shift from Song''s earlier
+        balanced reviews.'
+      surveillance_terms: 4
+      source_url: https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/
+    - title: Conversation Focus rate limited to 3 hours/month
+      date: 2026-07
+      reporter: Sean Hollister
+      tone: -0.5
+      framing: Consumer harm, accessibility paywall for on-device feature.
+    - title: EU tells Meta 'pay or consent' may violate consumer law
+      date: 2024-07
+      reporter: Wes Davis
+      tone: -0.35
+      framing: Regulatory pressure on Meta data practices.
+      source_url: https://www.techmeme.com/240722/p12
     io_device_paradox: |
       OpenAI's io device (camera-equipped AI wearable, $6.5B acquisition)
       received ZERO surveillance framing from The Verge. Meta's single-camera
@@ -624,8 +596,7 @@ publications:
       Only Meta gets 'pervert technology' and 'predator glasses' framing.
       Financial correlation: OpenAI pays The Verge (bilateral flow —
       licensing + Azure enterprise); Meta pays $0.
-
-    anthropic_coverage_tone: "neutral"
+    anthropic_coverage_tone: neutral
     anthropic_coverage_summary: |
       Anthropic has ZERO financial relationship with Vox Media / PMC
       — neither a licensing deal nor a competitive threat to The Verge's
@@ -646,22 +617,15 @@ publications:
       incidents than Meta's glasses privacy concerns, yet receive LESS
       adversarial framing.
     anthropic_examples:
-      - title: "Anthropic's most dangerous AI model just fell into the wrong hands"
-        date: "2026-04-22"
-        reporter: "Jess Weatherbed"
-        tone: -0.25
-        framing: "Factual news reporting, relays Bloomberg investigation. No loaded language beyond headline. No adversarial editorial voice."
-        source_url: "https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security"
-        notes: >
-          Weatherbed is a news writer — same beat that covers routine tech news.
-          Compare to Meta coverage: Alex Heath (business investigator), Sean
-          Hollister (consumer harm), Victoria Song (product critic with
-          activist-quote leads). Anthropic's security breach — unauthorized
-          access to a model described as capable of exploiting 'every major
-          operating system and every major web browser' — receives the neutral
-          news-writer treatment. Meta's glasses (1 camera, no autonomous
-          hacking capability) get the investigative treatment.
-
+    - title: Anthropic's most dangerous AI model just fell into the wrong hands
+      date: '2026-04-22'
+      reporter: Jess Weatherbed
+      tone: -0.25
+      framing: Factual news reporting, relays Bloomberg investigation. No loaded language
+        beyond headline. No adversarial editorial voice.
+      source_url: https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security
+      notes: |
+        Weatherbed is a news writer — same beat that covers routine tech news. Compare to Meta coverage: Alex Heath (business investigator), Sean Hollister (consumer harm), Victoria Song (product critic with activist-quote leads). Anthropic's security breach — unauthorized access to a model described as capable of exploiting 'every major operating system and every major web browser' — receives the neutral news-writer treatment. Meta's glasses (1 camera, no autonomous hacking capability) get the investigative treatment.
     rogue_ai_safety_comparison: |
       THE "ACCIDENTALLY" PARADOX (Aug 6, 2026 analysis):
 
@@ -721,13 +685,11 @@ publications:
       Entity PAYS The Verge → soft coverage (OpenAI)
       Entity NEITHER PAYS NOR THREATENS → neutral coverage (Anthropic)
       Entity NEITHER PAYS BUT THREATENS business model → adversarial (Meta)
-
     rogue_ai_comparison_sources:
-      - "https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security"
-      - "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
-      - "https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09"
-      - "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/"
-
+    - https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security
+    - https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks
+    - https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+    - https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/
     apple_recusal_gap: |
       THE APPLE RECUSAL ASYMMETRY (Aug 6, 2026 analysis):
 
@@ -783,13 +745,11 @@ publications:
       financial correlation analysis (no deal, but also no competitive
       threat to Vox Media social traffic) — it's STRUCTURALLY PROTECTED
       from consumer advocacy coverage by the recusal gap.
-
     apple_recusal_gap_sources:
-      - "https://www.theverge.com/authors/sean-hollister"
-      - "https://theorg.com/org/the-verge/org-chart/sean-hollister"
-      - "https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/"
-      - "https://intelligentrelations.com/journalist/sean-hollister/"
-
+    - https://www.theverge.com/authors/sean-hollister
+    - https://theorg.com/org/the-verge/org-chart/sean-hollister
+    - https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+    - https://intelligentrelations.com/journalist/sean-hollister/
     asymmetry_verdict: |
       The Verge covers Meta ~0.65 points more negatively than OpenAI
       on a -1 to +1 scale. OpenAI pays The Verge (via Vox/PMC);
@@ -826,10 +786,9 @@ publications:
       (institutional). It represents a distinct "dual-role" asymmetry where
       the same individual does both access and adversarial for one entity,
       but only access for deal partners.
-
     pmc_deal_fragmentation_aug7:
-      finding: "PMC Deal Fragmentation Paradox"
-      date: "2026-08-07"
+      finding: PMC Deal Fragmentation Paradox
+      date: '2026-08-07'
       summary: |
         When Vox Media was split between Lupa Systems (NY Mag, Vox.com,
         podcasts, ~$300M, closed Jul 8 2026) and PMC (The Verge, Eater,
@@ -849,14 +808,13 @@ publications:
         AI Overviews cut affiliate revenue >33% from peak, yet
         editorial hostility remains directed at Meta.
       source_urls:
-        - "https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/"
-        - "https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/"
-        - "https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
-        - "https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
-
+      - https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/
+      - https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/
+      - https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/
+      - https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
     patel_eic_delegation_paradox:
-      finding: "EIC Delegation Paradox — Mechanism #6"
-      date: "2026-08-07"
+      finding: 'EIC Delegation Paradox — Mechanism #6'
+      date: '2026-08-07'
       summary: |
         Nilay Patel (Verge EIC since 2014, Decoder host) personally interviews
         competitor CEOs with strategic "big ideas" framing — Sundar Pichai
@@ -889,37 +847,29 @@ publications:
         level — determining which CEO gets the EDITOR-IN-CHIEF's personal
         attention vs which gets the deputy's investigative lens.
       source_urls:
-        - "https://www.youtube.com/watch?v=ANV3tE5ywv0"
-        - "https://www.youtube.com/watch?v=TfN5ket9L8Q"
-        - "https://www.nprillinois.org/2023-09-04/the-verges-nilay-patel-talks-googles-legacy"
-        - "https://www.everand.com/podcast/773063094/"
-        - "https://podcastrepublic.net/podcast/1011668648"
-        - "https://www.techradar.com/features/apple-vision-pro-review-roundup"
-
-  # -----------------------------------------------------------------
-  # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
-  # Financial ties: OpenAI (licensing, May 2024), Apple (~$17B LPJ
-  #   Trust AAPL holdings), Google (adversarial — suing). No Meta deal.
-  # -----------------------------------------------------------------
+      - https://www.youtube.com/watch?v=ANV3tE5ywv0
+      - https://www.youtube.com/watch?v=TfN5ket9L8Q
+      - https://www.nprillinois.org/2023-09-04/the-verges-nilay-patel-talks-googles-legacy
+      - https://www.everand.com/podcast/773063094/
+      - https://podcastrepublic.net/podcast/1011668648
+      - https://www.techradar.com/features/apple-vision-pro-review-roundup
   atlantic:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       The Atlantic runs frequent critical coverage of Meta, particularly
       on social media harms, political speech, and AI. Franklin Foer's
       editorial line treats Meta as emblematic of tech irresponsibility.
       Emerson Collective's ~$17B Apple stake creates structural incentive
       for Meta-negative, Apple-positive framing.
-
-    openai_coverage_tone: "balanced_to_positive"
+    openai_coverage_tone: balanced_to_positive
     openai_coverage_summary: |
       OpenAI licensing deal signed May 2024. The Atlantic created
       'Atlantic Labs' experimental microsite using OpenAI technology.
       Deeper integration than most publishers. Coverage is balanced
       with occasional critical pieces, but no sustained investigative
       campaigns. Atlantic union was 'deeply troubled' by deal opacity.
-    openai_deal_source: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
-
-    apple_coverage_tone: "positive"
+    openai_deal_source: https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
+    apple_coverage_tone: positive
     apple_coverage_summary: |
       The Atlantic Festival featured Tim Cook interview with Jeff
       Goldberg (Editor in Chief) — access journalism suggesting
@@ -942,9 +892,8 @@ publications:
       Combined, The Atlantic has the STRONGEST dual Apple financial incentive
       of any publication in the dataset — ownership equity PLUS platform
       revenue — while having ZERO Meta financial relationship.
-    apple_conflict_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
-    apple_news_plus_source: "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
-
+    apple_conflict_source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs
+    apple_news_plus_source: https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
     apple_v_openai_editorial_silence:
       discovery_date: 2026-08-06
       description: |
@@ -992,19 +941,35 @@ publications:
           has maintained comparable silence (WSJ, FT, Reuters all provided
           ongoing coverage)
       escalation_sources:
-        filing: "https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/"
-        preliminary_injunction: "https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/"
-        motion_to_dismiss: "https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/"
-        openai_blog_response: "https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1"
+        filing: https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
+        preliminary_injunction: https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+        motion_to_dismiss: https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+        openai_blog_response: https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
       publications_that_covered:
-        within_hours: ["Reuters", "CNN", "WSJ", "TechCrunch", "Fox Business", "The Hill", "Bloomberg", "Android Authority", "NY Post", "LiveMint", "Barron's"]
-        within_days: ["Gizmodo", "The Verge", "WIRED", "MIT Technology Review"]
-        not_covered: ["The Atlantic"]
+        within_hours:
+        - Reuters
+        - CNN
+        - WSJ
+        - TechCrunch
+        - Fox Business
+        - The Hill
+        - Bloomberg
+        - Android Authority
+        - NY Post
+        - LiveMint
+        - Barron's
+        within_days:
+        - Gizmodo
+        - The Verge
+        - WIRED
+        - MIT Technology Review
+        not_covered:
+        - The Atlantic
       source_urls:
-        - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
-        - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
-        - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
-        - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
+      - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
+      - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+      - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+      - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
       mediascope_significance: |
         This is the strongest single piece of evidence that financial conflicts
         predict EDITORIAL OMISSION, not just editorial tone. It is not merely
@@ -1014,8 +979,7 @@ publications:
         form of editorial bias: it removes the story from the reader's
         awareness entirely. No disclosure failure is possible when coverage
         doesn't exist.
-
-    google_coverage_tone: "adversarial"
+    google_coverage_tone: adversarial
     google_coverage_summary: |
       CRITICAL UPDATE (Jan 14, 2026): The Atlantic SUED Google in
       SDNY for adtech antitrust violations alongside Advance
@@ -1031,8 +995,7 @@ publications:
       3 of the 6 major entities have financial ties (2 positive:
       OpenAI/Prorata, 1 adversarial: Google lawsuit) and Apple's
       tie is structural (LPJ $17B stake), while Meta has nothing.
-    google_litigation_source: "https://www.editorandpublisher.com/stories/five-us-publishers-sue-google-over-deceptive-and-manipulative-adtech-practices,259733"
-
+    google_litigation_source: https://www.editorandpublisher.com/stories/five-us-publishers-sue-google-over-deceptive-and-manipulative-adtech-practices,259733
     asymmetry_verdict: |
       The Atlantic's most extreme asymmetry is Apple (+0.4) vs Meta
       (-0.5) — a gap of ~0.9. The owner holds $17B in Apple stock.
@@ -1062,21 +1025,14 @@ publications:
       The Atlantic's densest financial conflict produces complete editorial
       silence, the most extreme form of bias. No other profiled publication
       has maintained comparable silence on this case.
-
-  # -----------------------------------------------------------------
-  # NEW YORK TIMES
-  # Financial ties: Amazon (licensing, $20-25M/yr, May 2025),
-  #   OpenAI (adversarial — suing for billions). No Meta deal.
-  # -----------------------------------------------------------------
   nytimes:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       NYT runs extensive critical coverage of Meta, particularly
       child safety litigation, privacy violations, and political
       content moderation. Carlos Slim (~17% stake) has no Meta
       financial interest.
-
-    openai_coverage_tone: "adversarial"
+    openai_coverage_tone: adversarial
     openai_coverage_summary: |
       NYT sued OpenAI Dec 2023 for billions in copyright damages.
       Coverage is adversarial — sustained, aggressive reporting on
@@ -1086,9 +1042,8 @@ publications:
       THIS IS THE CONTROL CASE: Financial adversarial relationship
       produces measurably adversarial coverage — the inverse of
       the licensing-deal-softening hypothesis.
-    openai_lawsuit_source: "https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html"
-
-    amazon_coverage_tone: "neutral_to_positive"
+    openai_lawsuit_source: https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html
+    amazon_coverage_tone: neutral_to_positive
     amazon_coverage_summary: |
       NYT signed Amazon AI content licensing deal May 2025 ($20-25M/yr
       per WebProNews estimate). First AI-specific licensing deal for NYT.
@@ -1099,9 +1054,8 @@ publications:
       THIS IS THE MONEY SHOT: Same publisher covers two AI companies
       doing the same thing (training on publisher content), but covers
       the paying one favorably and sues the non-paying one.
-    amazon_deal_source: "https://www.geekwire.com/2025/amazon-inks-deal-with-new-york-times-to-license-newspapers-content-for-ai-platforms/"
-    amazon_deal_value_source: "https://www.webpronews.com/amazon-inks-20m-deal-with-nyt-for-ai-content-licensing/"
-
+    amazon_deal_source: https://www.geekwire.com/2025/amazon-inks-deal-with-new-york-times-to-license-newspapers-content-for-ai-platforms/
+    amazon_deal_value_source: https://www.webpronews.com/amazon-inks-20m-deal-with-nyt-for-ai-content-licensing/
     asymmetry_verdict: |
       NYT's Amazon-vs-OpenAI asymmetry is the cleanest natural experiment
       in the dataset. Both companies train AI on publisher content.
@@ -1109,8 +1063,6 @@ publications:
       OpenAI doesn't pay (and is being sued) → adversarial coverage.
       Financial relationship predicts coverage tone with near-perfect
       correlation.
-
-    # Reporter-level cross-entity analysis (added 2026-08-05)
     cross_entity_beat_assignment:
       finding: |
         NYT's Meta bias operates through REPORTER ASSIGNMENT, not individual
@@ -1127,27 +1079,24 @@ publications:
         His only Meta-adjacent piece was a five-byline data harvesting
         investigation (Apr 2024) covering Meta, OpenAI, and Google collectively.
       metz_openai_examples:
-        - title: "OpenAI Close to Landing $500 Billion Data Center"
-          tone: +0.15
-          framing: "ambition, scale, business milestone"
-        - title: "OpenAI Releases New, More Powerful A.I. Model"
-          tone: +0.10
-          framing: "technology advancement, competition"
-        - title: "OpenAI Files to Go Public"
-          tone: +0.05
-          framing: "business milestone, industry maturation"
+      - title: OpenAI Close to Landing $500 Billion Data Center
+        tone: 0.15
+        framing: ambition, scale, business milestone
+      - title: OpenAI Releases New, More Powerful A.I. Model
+        tone: 0.1
+        framing: technology advancement, competition
+      - title: OpenAI Files to Go Public
+        tone: 0.05
+        framing: business milestone, industry maturation
       isaac_meta_examples:
-        - title: "Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again"
-          date: "2025-08-19"
-          tone: -0.35
-          framing: "internal turmoil, personnel churn, executive departures, 'compound internal turmoil'"
-          source_url: "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
-          notes: >
-            Framing elements: 'shakes up...again', 'compound internal turmoil',
-            'tensions have surfaced', old guard 'chafed', Zhao 'questioned them
-            about their past work while interviewing them for new roles'. Same
-            type of corporate restructuring that Metz covers for OpenAI as a
-            business pivot, Isaac frames as organizational dysfunction.
+      - title: Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again
+        date: '2025-08-19'
+        tone: -0.35
+        framing: internal turmoil, personnel churn, executive departures, 'compound
+          internal turmoil'
+        source_url: https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html
+        notes: |
+          Framing elements: 'shakes up...again', 'compound internal turmoil', 'tensions have surfaced', old guard 'chafed', Zhao 'questioned them about their past work while interviewing them for new roles'. Same type of corporate restructuring that Metz covers for OpenAI as a business pivot, Isaac frames as organizational dysfunction.
       analytical_significance: |
         This beat-assignment mechanism is distinct from WIRED's model. WIRED
         assigns different editorial desks (product review vs investigative)
@@ -1157,8 +1106,6 @@ publications:
         in the OpenAI/Anthropic orbit. The reporters' entire career trajectories
         produce different narrative frames, making the bias structural and
         nearly invisible — it looks like each reporter is just "doing their beat."
-
-    # Kashmir Hill cross-entity coverage analysis (added 2026-08-06)
     kashmir_hill_cross_entity:
       overview: |
         Kashmir Hill is the NYT's most credentialed privacy/surveillance
@@ -1171,9 +1118,9 @@ publications:
         despite each having equivalent or worse privacy practices in the same
         domain she covers.
       meta_investigation:
-        article: "Meta Plans Facial Recognition Feature for Ray-Ban Smart Glasses"
-        date: "2026-02-13"
-        co_byline: "Kalley Huang, Mike Isaac"
+        article: Meta Plans Facial Recognition Feature for Ray-Ban Smart Glasses
+        date: '2026-02-13'
+        co_byline: Kalley Huang, Mike Isaac
         tone: -0.8
         framing: |
           Investigative exposé using leaked internal Meta document. Lead with
@@ -1182,9 +1129,9 @@ publications:
           surveillance tech. Triggered legislative response (Senators Wyden,
           Merkley, Markey letter to Zuckerberg). Became foundation for WIRED's
           June 2026 NameTag code investigation.
-        source_url: "https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/"
+        source_url: https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/
       google_absence:
-        coverage: "zero Hill bylines on Google Android XR privacy"
+        coverage: zero Hill bylines on Google Android XR privacy
         parallel: |
           Google launched Android XR smart glasses (I/O 2026, May 19) with
           cameras, microphones, and always-on Gemini AI — functionally identical
@@ -1192,9 +1139,9 @@ publications:
           documented that BOTH Google and Facebook chose not to deploy facial
           recognition in 2017. Meta's reversal triggered Hill's investigation.
           Google's entry into the same space received no comparable treatment.
-        source_url: "http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm"
+        source_url: http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
       amazon_absence:
-        coverage: "zero Hill bylines on Ring facial recognition"
+        coverage: zero Hill bylines on Ring facial recognition
         parallel: |
           Amazon Ring's Familiar Faces feature performs DEPLOYED consumer-facing
           facial recognition — identifying people at doorbell cameras without
@@ -1204,22 +1151,24 @@ publications:
           (Sigwalt v. Amazon, June 2026). Senator Markey: "privacy nightmare."
           Unlike Meta's Name Tag (unreleased code), Ring's facial recognition
           IS LIVE AND IN USE on millions of cameras.
-        financial_context: "Amazon pays NYT $20-25M/yr in AI content licensing (May 2025)"
-        beat_separation: "Karen Weise covers Amazon from Seattle — Hill's privacy expertise never crosses into Amazon's surveillance products"
+        financial_context: Amazon pays NYT $20-25M/yr in AI content licensing (May
+          2025)
+        beat_separation: Karen Weise covers Amazon from Seattle — Hill's privacy expertise
+          never crosses into Amazon's surveillance products
         source_urls:
-          - "https://www.reuters.com/legal/government/amazons-ring-sued-over-facial-recognition-feature-latest-privacy-concern-2026-06-02/"
-          - "https://www.ftc.gov/business-guidance/blog/2023/06/hey-alexa-what-are-you-doing-my-data"
-          - "https://www.markey.senate.gov/news/press-releases/just-in-time-for-holiday-deliveries-sen-markeys-probe-exposes-amazons-alarming-privacy-violations-with-facial-recognition-technology-in-ring-doorbell"
+        - https://www.reuters.com/legal/government/amazons-ring-sued-over-facial-recognition-feature-latest-privacy-concern-2026-06-02/
+        - https://www.ftc.gov/business-guidance/blog/2023/06/hey-alexa-what-are-you-doing-my-data
+        - https://www.markey.senate.gov/news/press-releases/just-in-time-for-holiday-deliveries-sen-markeys-probe-exposes-amazons-alarming-privacy-violations-with-facial-recognition-technology-in-ring-doorbell
       apple_absence:
-        coverage: "zero Hill bylines on Apple wearable surveillance"
+        coverage: zero Hill bylines on Apple wearable surveillance
         parallel: |
           Apple Vision Pro has external cameras, 3D spatial mapping, biometric
           sensors. Apple AirTags documented as stalking tools. Apple's smart
           glasses (delayed to 2027) will have cameras. Apple's privacy reputation
           acts as a shield — coverage frames Apple privacy as virtue, not target.
-        source_url: "https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/"
+        source_url: https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/
       openai_absence:
-        coverage: "zero Hill bylines on OpenAI data scraping as privacy story"
+        coverage: zero Hill bylines on OpenAI data scraping as privacy story
         parallel: |
           OpenAI scraped billions of web pages including personal data without
           consent — directly analogous to Clearview AI's scraping that Hill
@@ -1243,7 +1192,6 @@ publications:
         This finding reinforces the Cade Metz beat-assignment finding: NYT's
         coverage asymmetry is structural and nearly invisible, operating through
         reporter assignment rather than editorial directives.
-
     february_2026_simultaneous_coverage_paradox:
       summary: |
         Within 5 days (Feb 9-13, 2026), the NYT published Kashmir Hill's
@@ -1255,10 +1203,10 @@ publications:
         employee spying, class action). Meta's NameTag was unreleased code
         that never shipped. The NYT's $20-25M/yr Amazon AI licensing deal
         was active throughout this period.
-      meta_article_date: "2026-02-13"
-      meta_article_reporters: "Kashmir Hill, Kalley Huang, Mike Isaac"
-      meta_article_tone: -0.80
-      ring_superbowl_date: "2026-02-09"
+      meta_article_date: '2026-02-13'
+      meta_article_reporters: Kashmir Hill, Kalley Huang, Mike Isaac
+      meta_article_tone: -0.8
+      ring_superbowl_date: '2026-02-09'
       ring_coverage_tone: -0.15
       tone_delta: 0.65
       significance: |
@@ -1268,18 +1216,11 @@ publications:
         (Amazon paying $20-25M/yr, Meta paying $0). Investigative treatment
         for the non-paying company; business coverage for the paying company.
       source_urls:
-        - "https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/"
-        - "https://www.mediapost.com/publications/article/412823/amazons-ring-cancels-partnership-with-police-tech.html"
-        - "https://9to5mac.com/2026/02/19/leaked-email-proves-ring-intended-to-use-surveillance-feature-for-people/"
-
-  # -----------------------------------------------------------------
-  # FINANCIAL TIMES (Nikkei)
-  # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024),
-  #   Google (News AI pilot, Feb 2026), Microsoft PCM (pilot partner).
-  #   No Meta deal. No Apple/Amazon deal.
-  # -----------------------------------------------------------------
+      - https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/
+      - https://www.mediapost.com/publications/article/412823/amazons-ring-cancels-partnership-with-police-tech.html
+      - https://9to5mac.com/2026/02/19/leaked-email-proves-ring-intended-to-use-surveillance-feature-for-people/
   financial-times:
-    meta_coverage_tone: "balanced_adversarial"
+    meta_coverage_tone: balanced_adversarial
     meta_coverage_summary: |
       FT covers Meta with business-press framing that includes significant
       investigative components. Hannah Murphy (SF-based Meta beat reporter)
@@ -1296,30 +1237,22 @@ publications:
       but the OpenAI licensing deal (Apr 2024) creates an asymmetry:
       FT gets money from Meta's AI competitor while Meta pays FT nothing.
     meta_examples:
-      - title: "Meta's 'Super Sensing' Prototype Glasses Quietly Record Everything"
-        date: "2026-07-09"
-        tone: -0.55
-        framing: "investigative scoop, surveillance vocabulary ('quietly record everything'), privacy alarm, regulatory concern"
-        source_url: "https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/"
-        notes: >
-          FT-exclusive investigation. Key framing: 'quietly record', 'every
-          moment', Meta executives 'don't want to activate the LED'. Became
-          major news cycle driver. Metadata vs raw footage distinction buried
-          below surveillance framing. Internal debate angle positions Meta
-          as aware of privacy concerns but proceeding anyway.
-      - title: "Hannah Murphy — high-volume Meta beat coverage"
-        date: "2026-Q1-Q3"
-        tone: -0.35
-        framing: "business investigative, source-heavy, frequently breaks internal Meta moves"
-        notes: >
-          Murphy has broken: Meta equity award cuts (Feb 2026), Vishal Shah
-          metaverse pivot, AI glasses continuous recording, Muse Spark AI
-          model, agentic tools, Oversight Board tensions over Zuckerberg
-          'free speech' overhaul. Access-heavy reporting that gets internal
-          sources to talk — similar access-journalism pattern seen with
-          OpenAI, but used to drive adversarial narratives for Meta.
-
-    openai_coverage_tone: "neutral_to_positive"
+    - title: Meta's 'Super Sensing' Prototype Glasses Quietly Record Everything
+      date: '2026-07-09'
+      tone: -0.55
+      framing: investigative scoop, surveillance vocabulary ('quietly record everything'),
+        privacy alarm, regulatory concern
+      source_url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      notes: |
+        FT-exclusive investigation. Key framing: 'quietly record', 'every moment', Meta executives 'don't want to activate the LED'. Became major news cycle driver. Metadata vs raw footage distinction buried below surveillance framing. Internal debate angle positions Meta as aware of privacy concerns but proceeding anyway.
+    - title: Hannah Murphy — high-volume Meta beat coverage
+      date: 2026-Q1-Q3
+      tone: -0.35
+      framing: business investigative, source-heavy, frequently breaks internal Meta
+        moves
+      notes: |
+        Murphy has broken: Meta equity award cuts (Feb 2026), Vishal Shah metaverse pivot, AI glasses continuous recording, Muse Spark AI model, agentic tools, Oversight Board tensions over Zuckerberg 'free speech' overhaul. Access-heavy reporting that gets internal sources to talk — similar access-journalism pattern seen with OpenAI, but used to drive adversarial narratives for Meta.
+    openai_coverage_tone: neutral_to_positive
     openai_coverage_summary: |
       FT signed OpenAI licensing deal Apr 2024 ($5-10M/yr per press
       estimates). FT frequently breaks OpenAI business stories (5%
@@ -1327,10 +1260,9 @@ publications:
       preferential access. Coverage tone is business-factual with minimal
       adversarial framing. FT has not disclosed the licensing deal in
       its OpenAI business coverage.
-    openai_deal_source: "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
-    openai_deal_value_source: "https://www.entrepreneur.com/business-news/openai-can-now-access-financial-times-articles-to-train-ai/473548/"
-
-    google_coverage_tone: "neutral_to_positive"
+    openai_deal_source: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    openai_deal_value_source: https://www.entrepreneur.com/business-news/openai-can-now-access-financial-times-articles-to-train-ai/473548/
+    google_coverage_tone: neutral_to_positive
     google_coverage_summary: |
       FT covers Google with standard business-press framing. Measurably less
       adversarial than Meta coverage. FT joined Google's "News AI pilot"
@@ -1370,30 +1302,26 @@ publications:
       two-channel system may reflect editorial restraint toward a deal
       partner: keep the relationship professional in public coverage
       while pursuing institutional interests through regulatory channels.
-    google_pilot_source: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-    google_cma_source: "https://videoweek.com/2026/03/19/google-agrees-to-give-publishers-an-ai-overview-opt-out-but-concerns-remain/"
+    google_pilot_source: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    google_cma_source: https://videoweek.com/2026/03/19/google-agrees-to-give-publishers-an-ai-overview-opt-out-but-concerns-remain/
     google_examples:
-      - title: "Samsung, Google debut AI eyewear at Google I/O 2026"
-        date: "2026-05-20"
-        tone: +0.15
-        framing: "product-technology aspiration, no privacy language despite cameras"
-        source_url: "https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228"
-        notes: >
-          Google/Samsung Android XR glasses with cameras and Gemini AI — same
-          product category as Meta Ray-Ban glasses. FT uses 'AI-powered eyewear,'
-          'hands-free control,' 'intelligent eyewear.' ZERO surveillance, ZERO
-          wiretapping, ZERO biometric. Compare to Meta glasses coverage at -0.55.
-      - title: "Alphabet hits $4T market cap"
-        date: "2026-01-13"
-        tone: +0.10
-        framing: "business milestone, positive market context"
-        source_url: "https://www.techmeme.com/260112/p22"
-      - title: "Google, Amazon, Microsoft, Meta combined $1.1T capex"
-        date: "2026-07-31"
-        tone: 0.00
-        framing: "industry analysis, neutral, 'once in a lifetime opportunity'"
-        source_url: "https://www.techmeme.com/260731/p2"
-
+    - title: Samsung, Google debut AI eyewear at Google I/O 2026
+      date: '2026-05-20'
+      tone: 0.15
+      framing: product-technology aspiration, no privacy language despite cameras
+      source_url: https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228
+      notes: |
+        Google/Samsung Android XR glasses with cameras and Gemini AI — same product category as Meta Ray-Ban glasses. FT uses 'AI-powered eyewear,' 'hands-free control,' 'intelligent eyewear.' ZERO surveillance, ZERO wiretapping, ZERO biometric. Compare to Meta glasses coverage at -0.55.
+    - title: Alphabet hits $4T market cap
+      date: '2026-01-13'
+      tone: 0.1
+      framing: business milestone, positive market context
+      source_url: https://www.techmeme.com/260112/p22
+    - title: Google, Amazon, Microsoft, Meta combined $1.1T capex
+      date: '2026-07-31'
+      tone: 0.0
+      framing: industry analysis, neutral, 'once in a lifetime opportunity'
+      source_url: https://www.techmeme.com/260731/p2
     asymmetry_verdict: |
       FT shows significant asymmetry upon deep analysis. Reclassified from
       'neutral' to 'balanced_adversarial' for Meta coverage based on the
@@ -1419,42 +1347,24 @@ publications:
       as investigations. FT's adversarial Google posture stays in CMA
       regulatory filings; Meta's adversarial treatment appears in the
       published coverage itself.
-
-    # Madhumita Murgia cross-entity — Dual-Lens Paradox (added 2026-08-07)
     murgia_cross_entity:
-      finding: >
-        THE DUAL-LENS PARADOX (Mechanism #6): FT's AI Editor (Murgia, since Feb 2023)
-        covers every major AI company — OpenAI, Anthropic, Google DeepMind, xAI —
-        EXCEPT Meta. Meta is covered exclusively by platform desk (Murphy) with
-        surveillance/privacy framing. Same technology (AI wearable) gets "innovation"
-        framing from AI desk or "surveillance" framing from platform desk based solely
-        on manufacturer identity. Murgia has 9+ Anthropic articles, 4 OpenAI, 4 Google,
-        0 recent Meta (last: 2021). She wrote the FT-OpenAI deal announcement herself
-        (Apr 29, 2024) then continued covering OpenAI without disclosure.
-      podcast_evidence: >
-        AI Labs series (Apr–Jun 2026): Meta was the ONLY episode NOT featuring Murgia.
-        Murphy/Criddle (platform reporters) covered Meta. Title: "Zuckerberg's $100bn
-        gamble" (risk/excess/doubt) vs Anthropic: "Are Anthropic really the good guys?"
-        (virtue presumed).
-      mechanism: "7 — Editorial Lens Assignment (Dual-Lens Paradox)"
-      meta_anthropic_article_ratio: "0:9+"
+      finding: |
+        THE DUAL-LENS PARADOX (Mechanism #6): FT's AI Editor (Murgia, since Feb 2023) covers every major AI company — OpenAI, Anthropic, Google DeepMind, xAI — EXCEPT Meta. Meta is covered exclusively by platform desk (Murphy) with surveillance/privacy framing. Same technology (AI wearable) gets "innovation" framing from AI desk or "surveillance" framing from platform desk based solely on manufacturer identity. Murgia has 9+ Anthropic articles, 4 OpenAI, 4 Google, 0 recent Meta (last: 2021). She wrote the FT-OpenAI deal announcement herself (Apr 29, 2024) then continued covering OpenAI without disclosure.
+      podcast_evidence: |
+        AI Labs series (Apr–Jun 2026): Meta was the ONLY episode NOT featuring Murgia. Murphy/Criddle (platform reporters) covered Meta. Title: "Zuckerberg's $100bn gamble" (risk/excess/doubt) vs Anthropic: "Are Anthropic really the good guys?" (virtue presumed).
+      mechanism: 7 — Editorial Lens Assignment (Dual-Lens Paradox)
+      meta_anthropic_article_ratio: 0:9+
       personal_non_disclosure: true
       source_urls:
-        - "https://muckrack.com/madhu-murgia/articles"
-        - "https://en.wikipedia.org/wiki/Madhumita_Murgia"
-        - "https://www.techmeme.com/240429/p7"
-        - "https://podcast.app/ft-tech-tonic-p172602"
-        - "https://www.radio.de/podcast/ft-tech-tonic"
-        - "https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/"
-        - "https://www.techmeme.com/241205/p13"
-
-  # -----------------------------------------------------------------
-  # THE GUARDIAN (Scott Trust / GMG)
-  # Financial ties: OpenAI (licensing, Feb 2025), Google (mixed —
-  #   DNI funding, News AI pilot). No Meta deal.
-  # -----------------------------------------------------------------
+      - https://muckrack.com/madhu-murgia/articles
+      - https://en.wikipedia.org/wiki/Madhumita_Murgia
+      - https://www.techmeme.com/240429/p7
+      - https://podcast.app/ft-tech-tonic-p172602
+      - https://www.radio.de/podcast/ft-tech-tonic
+      - https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/
+      - https://www.techmeme.com/241205/p13
   guardian:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       Guardian covers Meta with sustained adversarial framing,
       particularly on privacy, political speech, and wearables.
@@ -1469,8 +1379,7 @@ publications:
       reporter Cadwalladr won the Orwell Prize for her CA work,
       creating a permanent adversarial editorial anchor for Facebook/
       Meta coverage that no other entity in the dataset has.
-
-    openai_coverage_tone: "balanced_to_adversarial"
+    openai_coverage_tone: balanced_to_adversarial
     openai_coverage_summary: |
       Guardian signed OpenAI deal Feb 2025 — notably one day AFTER
       joining lawsuit against Cohere for unauthorized content use.
@@ -1515,41 +1424,26 @@ publications:
       FT, and The Atlantic have NEVER conducted comparable original
       investigations of their deal partner OpenAI.
     openai_stargate_uk_sources:
-      - "https://www.computing.co.uk/news/2026/datacentre/openai-failed-to-visit-key-stargate-uk-site"
-      - "https://letsdatascience.com/news/guardian-investigation-challenges-openai-stargate-uk-investm-0494862b"
-      - "https://www.resultsense.com/news/2026-07-06-openai-stargate-uk-site-questions/"
-    rogue_agent_framing_source: "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"
-
+    - https://www.computing.co.uk/news/2026/datacentre/openai-failed-to-visit-key-stargate-uk-site
+    - https://letsdatascience.com/news/guardian-investigation-challenges-openai-stargate-uk-investm-0494862b
+    - https://www.resultsense.com/news/2026-07-06-openai-stargate-uk-site-questions/
+    rogue_agent_framing_source: https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/
     openai_examples:
-      - title: "Guardian Stargate UK FOI Investigation — OpenAI never visited key site"
-        date: "2026-07-04"
-        tone: -0.45
-        framing: "original FOI investigation, source quotes ('government PR stunt'), exposed phantom £20bn claim, challenged deal partner's flagship UK project"
-        notes: >
-          This is the STRONGEST evidence of editorial independence from
-          a deal partner in the dataset. No other publication with an
-          OpenAI deal has conducted comparable adversarial investigation
-          of OpenAI. The FOI methodology is the Guardian's institutional
-          signature — applying the same investigative tools used against
-          government and corporate targets to its own deal partner.
-          COMPARE to WIRED: Condé Nast has 5 competitor revenue streams
-          including OpenAI, and WIRED has never conducted an FOI or
-          equivalent document-based investigation of OpenAI. WIRED's
-          OpenAI coverage relays other outlets' reporting (VentureBeat
-          on sycophancy) rather than originating adversarial investigations.
-      - title: "Guardian coverage of OpenAI rogue agent hacking"
-        date: "2026-07"
-        tone: -0.35
-        framing: "'going rogue' language — adversarial framing matching industry consensus (Reuters, WSJ, NPR all used same language)"
-        notes: >
-          Guardian treated the OpenAI agent hack with the same alarm
-          language as other outlets. No evidence of softening coverage
-          due to deal relationship. However, the Guardian did not break
-          the story (Reuters/Hugging Face did) and appears to have
-          followed the news cycle rather than conducting original
-          investigation, unlike its Stargate UK FOI work.
-
-    google_coverage_tone: "balanced_adversarial"
+    - title: Guardian Stargate UK FOI Investigation — OpenAI never visited key site
+      date: '2026-07-04'
+      tone: -0.45
+      framing: original FOI investigation, source quotes ('government PR stunt'),
+        exposed phantom £20bn claim, challenged deal partner's flagship UK project
+      notes: |
+        This is the STRONGEST evidence of editorial independence from a deal partner in the dataset. No other publication with an OpenAI deal has conducted comparable adversarial investigation of OpenAI. The FOI methodology is the Guardian's institutional signature — applying the same investigative tools used against government and corporate targets to its own deal partner. COMPARE to WIRED: Condé Nast has 5 competitor revenue streams including OpenAI, and WIRED has never conducted an FOI or equivalent document-based investigation of OpenAI. WIRED's OpenAI coverage relays other outlets' reporting (VentureBeat on sycophancy) rather than originating adversarial investigations.
+    - title: Guardian coverage of OpenAI rogue agent hacking
+      date: 2026-07
+      tone: -0.35
+      framing: '''going rogue'' language — adversarial framing matching industry consensus
+        (Reuters, WSJ, NPR all used same language)'
+      notes: |
+        Guardian treated the OpenAI agent hack with the same alarm language as other outlets. No evidence of softening coverage due to deal relationship. However, the Guardian did not break the story (Reuters/Hugging Face did) and appears to have followed the news cycle rather than conducting original investigation, unlike its Stargate UK FOI work.
+    google_coverage_tone: balanced_adversarial
     google_coverage_summary: |
       Guardian takes Google money (DNI funding, News AI pilot, ProRata)
       but continues critical coverage of Google. However, the most
@@ -1574,9 +1468,8 @@ publications:
       Guardian's Google News AI pilot launch (Dec 2025) and SPUR
       coalition founding (Feb 2026). Google→Guardian→BBC is the most
       significant tech-media revolving door in the dataset.
-    google_pilot_source: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-    brittin_revolving_door_source: "https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/"
-
+    google_pilot_source: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    brittin_revolving_door_source: https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/
     prorata_meta_paradox: |
       STRUCTURAL IRONY: The Guardian is a founding partner of ProRata AI,
       which runs on Meta's open-source Llama as its foundational LLM.
@@ -1587,7 +1480,6 @@ publications:
       revenue to fund journalism critical of Meta. The open-source model
       means Meta receives no revenue from this chain — it's a one-way
       value transfer from Meta (via Llama) to the Guardian (via ProRata).
-
     financial_deal_count: |
       As of Aug 2026, the Guardian has FOUR AI-related financial relationships:
       (1) OpenAI licensing (Feb 2025) — content in ChatGPT + ChatGPT Enterprise
@@ -1604,7 +1496,6 @@ publications:
       deals with OpenAI and Google, creating a deliberate financial
       asymmetry with Meta that reflects editorial choice, not market
       exclusion.
-
     three_tier_assessment: |
       THE GUARDIAN'S PARTIAL INDEPENDENCE MODEL:
 
@@ -1652,7 +1543,6 @@ publications:
       is possible but NOT automatic — it requires institutional culture
       (FOI traditions, Cadwalladr precedent) strong enough to override
       financial incentives on a case-by-case basis.
-
     asymmetry_verdict: |
       Guardian shows MODERATE asymmetry with NOTABLE COUNTEREXAMPLES.
       Meta (no deal) gets more adversarial coverage than OpenAI (deal)
@@ -1675,11 +1565,10 @@ publications:
       reclassification TOWARD adversarial for a deal partner's coverage
       in the entire MediaScope dataset — every other reclassification
       has been toward softer coverage as financial ties were discovered.
-
     milmo_cross_entity:
       discovery_date: 2026-08-06
-      journalist: "Dan Milmo"
-      role: "Global Technology Editor"
+      journalist: Dan Milmo
+      role: Global Technology Editor
       description: |
         Dan Milmo is the Guardian's Global Technology Editor (since 2021),
         the most senior editorial position on the tech desk. His framing
@@ -1695,24 +1584,18 @@ publications:
         child safety (-0.7) — similar harm type, dramatically different
         editorial temperature. As editor, these are institutional direction
         decisions, not personal reporter tendencies.
-      tone_gap: 0.20
+      tone_gap: 0.2
       meta_tone: -0.45
       openai_tone: -0.25
       google_tone: -0.35
       source_urls:
-        - "http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/"
-        - "https://buzzsumo.com/journalist/dan-milmo-1645912/"
-        - "https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/"
-        - "https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/"
-        - "https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information"
-
-  # -----------------------------------------------------------------
-  # MIT TECHNOLOGY REVIEW
-  # Financial ties: Amazon (indirect via MIT corporate partnership),
-  #   Google (indirect via MIT corporate partnership). No Meta deal.
-  # -----------------------------------------------------------------
+      - http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/
+      - https://buzzsumo.com/journalist/dan-milmo-1645912/
+      - https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/
+      - https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/
+      - https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information
   mit-tech-review:
-    meta_coverage_tone: "adversarial"
+    meta_coverage_tone: adversarial
     meta_coverage_summary: |
       MIT Tech Review covers Meta with above-average hostility for
       a research-oriented publication. Coverage focuses on AI safety,
@@ -1722,48 +1605,37 @@ publications:
       to devices with fewer sensors than Apple's, which get privacy-
       protective framing from the same publication.
     meta_examples:
-      - title: "Why Facebook is using Ray-Ban to stake a claim on our faces"
-        date: "2021-09-15"
-        reporter: "Tate Ryan-Mosley"
-        tone: -0.55
-        framing: "Surveillance framing for single-camera glasses. 'Stake a claim on our faces.' Privacy alarm about recording LED visibility. Cooperative trust breakdown. 'We may not be able to fully cooperate with each other' — existential social harm framing."
-        source_url: "https://www.technologyreview.com/2021/09/15/1035785/why-facebook-ray-ban-stories-metaverse/454"
-        notes: >
-          Key language: 'cloaked in Ray-Ban Stories,' 'not be able to fully
-          cooperate,' 'additional surveillance,' 'we may not want to be
-          recorded.' Single-camera product receives social-fabric-destruction
-          framing. Compare to Apple Intelligence coverage (2024): Apple
-          processing intimate photos/emails/messages described as 'privacy-
-          protective' and 'industry-leading security.' Same publication,
-          same topic (AI processing personal data), opposite framing based
-          on manufacturer identity.
-      - title: "Inside Anduril and Meta's quest to make smart glasses for warfare"
-        date: "2026-05-18"
-        reporter: "James O'Donnell"
-        tone: -0.40
-        framing: "Military/weapons framing for Meta AR technology. 'Optimize the human as a weapons system.' 'Ordering drone strikes via eye-tracking.' Meta's AR program associated with warfare, not consumer innovation."
-        source_url: "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/"
-        notes: >
-          While the military application is genuine and newsworthy, framing
-          Meta's AR glasses program through a warfare lens affects how readers
-          perceive Meta's consumer glasses. The title links Meta's brand
-          directly to 'warfare.' Apple's Vision Pro (which uses the same
-          underlying AR/VR technology) has NEVER been covered by MIT TR in
-          a military context despite Apple hardware being used by government
-          and military institutions.
-      - title: "What's next for smart glasses (Feb 2025)"
-        date: "2025-02-05"
-        tone: +0.10
-        framing: "More balanced product analysis. Meta acknowledged as market leader with 1M+ units sold. But described alongside competitors (Google, Snap) rather than as privacy-first innovator."
-        source_url: "https://www.technologyreview.com/2025/02/05/1110983/whats-next-for-smart-glasses/"
-        notes: >
-          The most balanced MIT TR Meta glasses piece. Acknowledges Meta's
-          market success, quotes CEO positively. No surveillance language.
-          But notably: Apple barely mentioned (only as 'long-anticipated
-          glasses project') — no discussion of Apple's camera/sensor
-          implications despite 12-camera Vision Pro being on market.
-
-    apple_coverage_tone: "positive"
+    - title: Why Facebook is using Ray-Ban to stake a claim on our faces
+      date: '2021-09-15'
+      reporter: Tate Ryan-Mosley
+      tone: -0.55
+      framing: Surveillance framing for single-camera glasses. 'Stake a claim on our
+        faces.' Privacy alarm about recording LED visibility. Cooperative trust breakdown.
+        'We may not be able to fully cooperate with each other' — existential social
+        harm framing.
+      source_url: https://www.technologyreview.com/2021/09/15/1035785/why-facebook-ray-ban-stories-metaverse/454
+      notes: |
+        Key language: 'cloaked in Ray-Ban Stories,' 'not be able to fully cooperate,' 'additional surveillance,' 'we may not want to be recorded.' Single-camera product receives social-fabric-destruction framing. Compare to Apple Intelligence coverage (2024): Apple processing intimate photos/emails/messages described as 'privacy- protective' and 'industry-leading security.' Same publication, same topic (AI processing personal data), opposite framing based on manufacturer identity.
+    - title: Inside Anduril and Meta's quest to make smart glasses for warfare
+      date: '2026-05-18'
+      reporter: James O'Donnell
+      tone: -0.4
+      framing: Military/weapons framing for Meta AR technology. 'Optimize the human
+        as a weapons system.' 'Ordering drone strikes via eye-tracking.' Meta's AR
+        program associated with warfare, not consumer innovation.
+      source_url: https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/
+      notes: |
+        While the military application is genuine and newsworthy, framing Meta's AR glasses program through a warfare lens affects how readers perceive Meta's consumer glasses. The title links Meta's brand directly to 'warfare.' Apple's Vision Pro (which uses the same underlying AR/VR technology) has NEVER been covered by MIT TR in a military context despite Apple hardware being used by government and military institutions.
+    - title: What's next for smart glasses (Feb 2025)
+      date: '2025-02-05'
+      tone: 0.1
+      framing: More balanced product analysis. Meta acknowledged as market leader
+        with 1M+ units sold. But described alongside competitors (Google, Snap) rather
+        than as privacy-first innovator.
+      source_url: https://www.technologyreview.com/2025/02/05/1110983/whats-next-for-smart-glasses/
+      notes: |
+        The most balanced MIT TR Meta glasses piece. Acknowledges Meta's market success, quotes CEO positively. No surveillance language. But notably: Apple barely mentioned (only as 'long-anticipated glasses project') — no discussion of Apple's camera/sensor implications despite 12-camera Vision Pro being on market.
+    apple_coverage_tone: positive
     apple_coverage_summary: |
       MIT TR covers Apple with privacy-protective, innovation-positive
       framing. Apple Intelligence coverage (Jun 2024) explicitly positions
@@ -1775,7 +1647,7 @@ publications:
       receive ZERO surveillance language despite being the most sensor-
       packed consumer wearable ever produced. Apple smart glasses plans
       (cameras + AI) receive neutral/aspirational framing.
-      
+
       GOVERNANCE CONFLICT — KATE BERGERON (effective Jul 1, 2026):
       Kate A. Bergeron ('93, MBA '13), VP of Hardware Engineering at Apple,
       was elected as an MIT Corporation TERM MEMBER effective July 1, 2026.
@@ -1785,80 +1657,60 @@ publications:
       and co-taught MIT D-Lab (2013-2017). This means MIT's governing board
       now includes a SENIOR APPLE HARDWARE EXECUTIVE while MIT Technology
       Review covers Apple vs Meta wearables.
-      
+
       Combined Apple governance/research links:
       (1) Kate Bergeron — MIT Corporation term member (board of trustees)
       (2) CSAIL Alliance Program member — Apple listed alongside Google,
           BP, Intel, BT, BAE Systems (cap.csail.mit.edu confirmed)
       (3) MIT-Apple D-Lab connection — Bergeron co-developed curriculum
       (4) MIT research pipeline — Apple hires MIT graduates, funds research
-      
+
       MIT TR has NEVER disclosed any of these Apple connections in its
       Apple coverage.
     apple_examples:
-      - title: "Apple is promising personalized AI in a private cloud. Here's how that will work."
-        date: "2024-06-11"
-        reporter: "Eileen Guo"
-        tone: +0.35
-        framing: "Privacy-protective innovation narrative. Apple explicitly positioned as superior to Meta on privacy: 'an implicit contrast with the likes of Alphabet, Amazon, or Meta, which collect and store enormous amounts of personal data.' Expert quotes call system 'much more privacy-protective than other AI products.' ZERO surveillance language for a system processing intimate photos, messages, emails."
-        source_url: "https://www.technologyreview.com/2024/06/11/1093577/apple-is-promising-personalized-ai-in-a-private-cloud-heres-how-that-will-work/"
-        notes: >
-          KEY FINDING: MIT TR explicitly names Meta as a privacy-negative
-          comparator to Apple — "the likes of Alphabet, Amazon, or Meta,
-          which collect and store enormous amounts of personal data." This
-          is editorial framing, not a quote. The article does include some
-          critical expert quotes about cloud privacy risks, but the overall
-          editorial frame positions Apple as the privacy-responsible choice.
-          
-          CSAIL ALLIANCE PARADOX: MIT TR's parent institution (MIT) has
-          Apple as a CSAIL Alliance member AND Google as a CSAIL Alliance
-          member AND Amazon as a Schwarzman College research partner.
-          The article praises Apple while unfavorably comparing two of
-          MIT's own research funders (Alphabet, Amazon) alongside Meta.
-          This suggests Apple receives PREFERENTIAL treatment even compared
-          to MIT's other corporate partners.
-      - title: "Apple Rolls Out Privacy-Sensitive Artificial Intelligence"
-        date: "2016-06-13"
-        tone: +0.25
-        framing: "Privacy-positive framing of Apple's on-device ML. 'Privacy-sensitive' in title — positive qualifier. Apple positioned as privacy leader vs Google and Facebook (which 'generally run image-recognition algorithms inside their cloud computing systems')."
-        source_url: "https://www.technologyreview.com/2016/06/13/159637/apple-rolls-out-privacy-sensitive-artificial-intelligence/"
-        notes: >
-          Establishes a long-running MIT TR editorial pattern: Apple =
-          privacy-protective, Meta/Facebook = privacy-negative. Same
-          framing reproduced 8 years later in the 2024 Apple Intelligence
-          piece. This is not a one-off — it's a durable editorial lens.
-
+    - title: Apple is promising personalized AI in a private cloud. Here's how that
+        will work.
+      date: '2024-06-11'
+      reporter: Eileen Guo
+      tone: 0.35
+      framing: 'Privacy-protective innovation narrative. Apple explicitly positioned
+        as superior to Meta on privacy: ''an implicit contrast with the likes of Alphabet,
+        Amazon, or Meta, which collect and store enormous amounts of personal data.''
+        Expert quotes call system ''much more privacy-protective than other AI products.''
+        ZERO surveillance language for a system processing intimate photos, messages,
+        emails.'
+      source_url: https://www.technologyreview.com/2024/06/11/1093577/apple-is-promising-personalized-ai-in-a-private-cloud-heres-how-that-will-work/
+      notes: |
+        KEY FINDING: MIT TR explicitly names Meta as a privacy-negative comparator to Apple — "the likes of Alphabet, Amazon, or Meta, which collect and store enormous amounts of personal data." This is editorial framing, not a quote. The article does include some critical expert quotes about cloud privacy risks, but the overall editorial frame positions Apple as the privacy-responsible choice.
+        CSAIL ALLIANCE PARADOX: MIT TR's parent institution (MIT) has Apple as a CSAIL Alliance member AND Google as a CSAIL Alliance member AND Amazon as a Schwarzman College research partner. The article praises Apple while unfavorably comparing two of MIT's own research funders (Alphabet, Amazon) alongside Meta. This suggests Apple receives PREFERENTIAL treatment even compared to MIT's other corporate partners.
+    - title: Apple Rolls Out Privacy-Sensitive Artificial Intelligence
+      date: '2016-06-13'
+      tone: 0.25
+      framing: Privacy-positive framing of Apple's on-device ML. 'Privacy-sensitive'
+        in title — positive qualifier. Apple positioned as privacy leader vs Google
+        and Facebook (which 'generally run image-recognition algorithms inside their
+        cloud computing systems').
+      source_url: https://www.technologyreview.com/2016/06/13/159637/apple-rolls-out-privacy-sensitive-artificial-intelligence/
+      notes: |
+        Establishes a long-running MIT TR editorial pattern: Apple = privacy-protective, Meta/Facebook = privacy-negative. Same framing reproduced 8 years later in the 2024 Apple Intelligence piece. This is not a one-off — it's a durable editorial lens.
     apple_governance_conflict:
       bergeron_election:
-        date: "2026-05-28"
-        effective_date: "2026-07-01"
-        position: "MIT Corporation term member (5-year term)"
-        source_url: "https://news.mit.edu/2026/mit-corporation-elects-10-term-members-two-life-members-0528"
-        title_at_apple: "Vice President of Hardware Engineering"
-        apple_tenure: "Joined 2002, VP since 2014"
-        mit_degrees: "SB Mechanical Engineering 1993, MBA Sloan 2013"
-        current_apple_role: >
-          As of May 2026, Bergeron shifted to oversee product reliability
-          and materials across ALL Apple hardware. Her product design duties
-          split between deputies Shelly Goldberg (Mac) and Dave Pakula
-          (Watch, iPad, AirPods). She reports to Tom Marieb (head of
-          hardware engineering under new Chief Hardware Officer Johny Srouji).
-        wearables_relevance: >
-          Bergeron's Apple career spans the full product line including
-          Mac, iPod, iPhone, Apple Audio (AirPods), and Apple Watch.
-          Her current role overseeing product reliability and materials
-          across ALL Apple hardware includes the Vision Products Group
-          (Vision Pro, glasses, AI devices) led by Paul Meade, who reports
-          to the same Tom Marieb that Bergeron reports to. Apple's
-          incoming smart glasses program (codename N50, audio-only, and
-          display glasses) falls under the same hardware engineering org
-          where Bergeron has spent 24 years. A senior Apple hardware
-          executive now sits on the governing board of the institution
-          that owns the publication covering Apple vs Meta wearables.
+        date: '2026-05-28'
+        effective_date: '2026-07-01'
+        position: MIT Corporation term member (5-year term)
+        source_url: https://news.mit.edu/2026/mit-corporation-elects-10-term-members-two-life-members-0528
+        title_at_apple: Vice President of Hardware Engineering
+        apple_tenure: Joined 2002, VP since 2014
+        mit_degrees: SB Mechanical Engineering 1993, MBA Sloan 2013
+        current_apple_role: |
+          As of May 2026, Bergeron shifted to oversee product reliability and materials across ALL Apple hardware. Her product design duties split between deputies Shelly Goldberg (Mac) and Dave Pakula (Watch, iPad, AirPods). She reports to Tom Marieb (head of hardware engineering under new Chief Hardware Officer Johny Srouji).
+        wearables_relevance: |
+          Bergeron's Apple career spans the full product line including Mac, iPod, iPhone, Apple Audio (AirPods), and Apple Watch. Her current role overseeing product reliability and materials across ALL Apple hardware includes the Vision Products Group (Vision Pro, glasses, AI devices) led by Paul Meade, who reports to the same Tom Marieb that Bergeron reports to. Apple's incoming smart glasses program (codename N50, audio-only, and display glasses) falls under the same hardware engineering org where Bergeron has spent 24 years. A senior Apple hardware executive now sits on the governing board of the institution that owns the publication covering Apple vs Meta wearables.
       csail_alliance:
-        status: "Active member"
-        source_url: "https://cap.csail.mit.edu/load-modal/195"
-        confirmation: "CSAIL Alliances page lists Apple with logo and description alongside Google, BP, Intel, BT, BAE Systems"
+        status: Active member
+        source_url: https://cap.csail.mit.edu/load-modal/195
+        confirmation: CSAIL Alliances page lists Apple with logo and description alongside
+          Google, BP, Intel, BT, BAE Systems
       non_disclosure: |
         MIT TR has NEVER disclosed Kate Bergeron's MIT Corporation
         membership, Apple's CSAIL Alliance membership, or any other
@@ -1866,14 +1718,12 @@ publications:
         2024 Apple Intelligence article explicitly praises Apple while
         naming Meta unfavorably — with zero disclosure that Apple has
         a VP on MIT's governing board and is a CSAIL research partner.
-
-    openai_coverage_tone: "balanced"
+    openai_coverage_tone: balanced
     openai_coverage_summary: |
       MIT TR listed as ProRata AI content partner (Mar 2025). No
       direct OpenAI licensing deal. Coverage is balanced — critical
       on safety issues but not investigatively hostile.
-
-    amazon_coverage_tone: "neutral_to_positive"
+    amazon_coverage_tone: neutral_to_positive
     amazon_coverage_summary: |
       Amazon is MIT corporate partner with AWS funding MIT research
       (MIT-Amazon Science Hub via Schwarzman College). No direct MIT TR
@@ -1883,8 +1733,7 @@ publications:
       alongside Meta in the 2024 Apple Intelligence article — suggesting
       Apple gets preferential treatment even over MIT's own corporate
       research partners.
-
-    google_coverage_tone: "neutral_to_positive"
+    google_coverage_tone: neutral_to_positive
     google_coverage_summary: |
       Google/DeepMind is MIT corporate partner funding research (MIT-Google
       Program for Computing Innovation, CSAIL Alliance member). Coverage
@@ -1893,25 +1742,24 @@ publications:
       privacy/monopoly concerns. Google is named unfavorably alongside
       Meta in the 2024 Apple Intelligence article — but like Amazon,
       Google's overall coverage remains more positive than Meta's.
-
     sensor_count_paradox: |
       THE MIT TR SENSOR-COUNT PARADOX:
-      
+
       Apple Vision Pro: 12 cameras, 5 sensors, 6 microphones, LiDAR,
       TrueDepth camera, iris biometric scanner (OpticID), flicker sensor,
       ambient light sensor, 4 inertial measurement units = ~30+ sensors.
       MIT TR coverage: "privacy-protective," "industry-leading security,"
       "personalized AI in a private cloud" (positive framing).
-      
+
       Meta Ray-Ban glasses: 1 camera, 3 microphones = 4 sensors.
       MIT TR coverage: "stake a claim on our faces," "additional
       surveillance," "cloaked in Ray-Ban Stories" (adversarial framing).
-      
+
       Apple Vision Pro has ~7.5x MORE sensors than Meta Ray-Ban glasses.
       Apple Vision Pro performs iris biometric scanning (unique identifier).
       Apple Vision Pro 3D-maps the user's entire physical environment.
       Meta Ray-Ban glasses take photos and short videos when prompted.
-      
+
       The entity with MORE sensors, MORE invasive biometric capability,
       and MORE environmental mapping gets LESS surveillance language.
       This pattern matches WIRED (Lauren Goode: Apple Vision Pro 12
@@ -1919,7 +1767,7 @@ publications:
       FT (Google/Samsung glasses with cameras = "AI-powered eyewear";
       Meta glasses = "wiretapping laws"). MIT TR extends the camera-count
       paradox into a THIRD publication.
-      
+
       UNIQUE MIT TR DIMENSION: Unlike WIRED (where the asymmetry
       correlates with licensing deals) or FT (where it correlates with
       news partnership revenue), MIT TR's Apple asymmetry correlates
@@ -1928,34 +1776,33 @@ publications:
       conflict in the dataset: not just revenue flowing between entities,
       but a corporate executive with formal fiduciary responsibility
       for the institution that owns the publication.
-
     asymmetry_verdict: |
       MIT TR shows institutional-level financial influence: companies
       funding MIT research (Amazon, Google) get measurably more
       positive coverage than Meta (no institutional tie). The influence
       mechanism is indirect — it flows through research partnerships
       and academic relationships rather than direct licensing deals.
-      
+
       UPDATED (Aug 6, 2026 — Apple governance conflict analysis):
       Apple receives the MOST favorable coverage of any entity from
       MIT TR, despite MIT TR's parent institution also having research
       ties with Google and Amazon (both of which receive neutral-to-
       positive coverage). Apple's advantage over even Google/Amazon
       suggests a hierarchy of influence:
-      
+
       TIER 1 (strongest): GOVERNANCE — Apple VP on MIT Corporation
       board + CSAIL Alliance = positive coverage, explicit privacy
       praise, zero surveillance language for 30+ sensor wearable.
-      
+
       TIER 2: RESEARCH FUNDING — Google/Amazon fund MIT research
       via Schwarzman College = neutral-to-positive coverage, less
       adversarial than Meta, but still named unfavorably alongside
       Meta in Apple Intelligence article.
-      
+
       TIER 3 (weakest): NO RELATIONSHIP — Meta has zero MIT research
       partnership, zero board representation, zero CSAIL membership
       = adversarial coverage, surveillance language, warfare framing.
-      
+
       The Apple-MIT governance link is the deepest institutional
       conflict in the dataset. News Corp (WSJ) discloses its financial
       ties. WIRED/Verge/FT have licensing deals but no governance
@@ -1965,13 +1812,8 @@ publications:
       Kate Bergeron owes MIT a duty of care and loyalty as a Corporation
       member; MIT controls MIT TR's board. The conflict is structural,
       permanent, and undisclosed.
-
-  # -----------------------------------------------------------------
-  # GIZMODO (Keleops AG)
-  # Financial ties: None with any entity. Clean control.
-  # -----------------------------------------------------------------
   gizmodo:
-    meta_coverage_tone: "balanced_adversarial"
+    meta_coverage_tone: balanced_adversarial
     meta_coverage_summary: |
       Gizmodo under Keleops AG has NO financial ties to any tech
       company. Raymond Wong's coverage is more nuanced than WIRED —
@@ -1982,12 +1824,10 @@ publications:
       THIS IS THE CLEAN CONTROL: no financial incentive in either
       direction, and coverage is balanced-adversarial — critical but
       fair.
-
-    openai_coverage_tone: "adversarial"
+    openai_coverage_tone: adversarial
     openai_coverage_summary: |
       No financial relationship. Gizmodo covers OpenAI with standard
       adversarial tech blog framing. No AI licensing deals at all.
-
     rogue_ai_framing_paradox:
       finding: |
         Gizmodo applies starkly different editorial framing to OpenAI's
@@ -1999,29 +1839,29 @@ publications:
         were unconfirmed leaked documents — never shipped, zero affected
         users. Yet Gizmodo covers OpenAI procedurally and Meta apocalyptically.
       openai_coverage:
-        headline: "OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face"
+        headline: OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face
         tone: -0.25
-        language: "factual, procedural, measured"
+        language: factual, procedural, measured
         advocacy_quotes: 0
         editorial_commentary: false
         company_gets_to_explain: true
-        url: "https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374"
+        url: https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374
       meta_coverage:
-        headline: "The World Is on Fire, and Meta Sees an Opportunity to Add Facial Recognition to Smart Glasses"
+        headline: The World Is on Fire, and Meta Sees an Opportunity to Add Facial
+          Recognition to Smart Glasses
         tone: -0.75
-        language: "spy camera, surveillance, goldmine, yuck, creepy, glasshole"
-        advocacy_quotes: 60  # civil society organizations
+        language: spy camera, surveillance, goldmine, yuck, creepy, glasshole
+        advocacy_quotes: 60
         editorial_commentary: true
         company_response_dismissed: true
-        url: "https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970"
-      tone_delta: 0.50
+        url: https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+      tone_delta: 0.5
       significance: |
         This is the clean control case for the additive bias model.
         Since Gizmodo has NO financial incentives, the 0.50 tone delta
         represents the CULTURAL BASELINE of editorial asymmetry. Publications
         WITH financial ties (NYT, FT, Verge) show deltas of 0.60-0.80,
         meaning the additional 0.10-0.30 is the financial amplification effect.
-
     asymmetry_verdict: |
       CLEAN CONTROL: Gizmodo proves that publications without financial
       ties cover BOTH Meta AND OpenAI critically. The differential treatment
@@ -2031,7 +1871,7 @@ publications:
       Gizmodo serves as the experimental control group: same industry,
       same beats, same reporter type, different variable (financial ties).
       The publication with no deals is MORE balanced than those with deals.
-      
+
       UPDATED (Aug 7): The rogue AI framing paradox reveals that even
       at Gizmodo (the clean control), a ~0.50 tone delta exists between
       OpenAI and Meta coverage. This represents the CULTURAL BASELINE
@@ -2040,14 +1880,11 @@ publications:
       framing effects. Financial incentives at other publications
       AMPLIFY this baseline by an additional 0.10-0.30, producing the
       extreme asymmetries documented at WIRED, NYT, and The Verge.
-
-    # KYLE BARR PRIVACY GRADIENT PARADOX — Added 2026-08-07
-    # Same publication, same beat, different journalist = different framing
     kyle_barr_privacy_gradient:
-      finding: "Privacy Gradient Paradox"
-      date_analyzed: "2026-08-07"
-      journalist: "Kyle Barr"
-      role: "Staff Writer, Consumer Tech"
+      finding: Privacy Gradient Paradox
+      date_analyzed: '2026-08-07'
+      journalist: Kyle Barr
+      role: Staff Writer, Consumer Tech
       description: |
         Kyle Barr covers camera-equipped smart glasses across Meta, Samsung,
         Apple, and Google at Gizmodo (Keleops AG, ZERO financial ties). Despite
@@ -2061,18 +1898,18 @@ publications:
         always penalizes Meta and benefits Apple, matching the industry-wide
         editorial consensus.
       meta_tone: -0.65
-      apple_tone: -0.10
-      samsung_tone: 0.10
+      apple_tone: -0.1
+      samsung_tone: 0.1
       google_tone: -0.05
       meta_apple_delta: 0.55
       meta_samsung_delta: 0.75
       key_articles:
-        - title: "Smart Glasses Are the One Privacy Nightmare Apple Can't Solve"
-          url: "https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443"
-        - title: "Apple Is Coming for Meta's Privacy-Invading Lunch"
-          url: "https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491"
-        - title: "Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses"
-          url: "https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595"
+      - title: Smart Glasses Are the One Privacy Nightmare Apple Can't Solve
+        url: https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443
+      - title: Apple Is Coming for Meta's Privacy-Invading Lunch
+        url: https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491
+      - title: Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses
+        url: https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595
       significance: |
         Strengthens the additive bias model: the ~0.50 cultural baseline
         (already identified in the rogue AI framing paradox) is ALSO visible
@@ -2080,15 +1917,8 @@ publications:
         gradient is not a Raymond Wong artifact — a second journalist at the
         same publication shows even LARGER asymmetry, proving the cultural
         baseline is a robust, individual-level phenomenon.
-
-
-  # -----------------------------------------------------------------
-  # NEWS CORP (Murdoch family)
-  # Financial ties: OpenAI ($50M/yr), Meta (up to $50M/yr).
-  #   BALANCED CONTROL — comparable payments from both.
-  # -----------------------------------------------------------------
   news-corp:
-    meta_coverage_tone: "balanced"
+    meta_coverage_tone: balanced
     meta_coverage_summary: |
       News Corp signed Meta AI content deal Mar 2026 ($50M/yr max).
       WSJ/Barron's coverage is balanced-to-positive on Meta business
@@ -2096,78 +1926,70 @@ publications:
       compared to WIRED/Verge/Atlantic. WSJ runs market-opportunity
       framing for Meta wearables vs. privacy-crisis framing elsewhere.
     meta_examples:
-      - title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
-        date: "2026-07-14"
-        tone: -0.15
-        author: "Meghan Bobrowsky"
-        framing: "balanced stakeholder framing: presents Meta's business case, celebrity partnerships, growth stats alongside privacy advocacy concerns. No loaded language — 'privacy lightning rod' is descriptive, not catastrophizing. Includes Meta's proactive responses (LED enforcement, spokeswoman quotes). Privacy concerns framed as one side of a debate, not editorial conclusions."
-        source_url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
-        notes: >
-          Compare to WIRED's Meta glasses coverage: WIRED uses 'dormant
-          surveillance infrastructure,' 'wiretapping laws,' loaded language
-          at 3-5x baseline. WSJ covers the same privacy concerns but uses
-          neutral framing: 'privacy lightning rod,' quotes ACLU and Meta
-          equally, reports bans as news not editorial verdicts. Same topic,
-          same facts, radically different editorial temperature.
-      - title: "Smartglasses Are Inevitable. But What—or Who—Are They For?"
-        date: "2026-06-26"
-        tone: +0.10
-        author: "Christopher Mims"
-        framing: "constructive market analysis: treats smartglasses as industry category, Meta as market leader alongside Snap/Google/Samsung/Apple. Privacy raised briefly ('assault on what little privacy we have left') but immediately balanced with optimism ('And yet there will be smartglasses'). No surveillance vocabulary, no adversarial framing."
-        source_url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
-        notes: >
-          This is the product-category framing that WIRED applies to Apple
-          wearables but NOT to Meta wearables. At WIRED, Apple Vision Pro
-          (12 cameras) gets personal emotional narrative; Meta Ray-Bans
-          (1 camera) get investigative surveillance framing. At WSJ, Meta
-          glasses get the same constructive market analysis treatment that
-          WIRED reserves for Apple and Snap.
-      - title: "Meta Stock Drops 10% on Steeper AI Costs, Missed Forecast"
-        date: "2026-07-30"
-        tone: -0.10
-        author: "WSJ staff"
-        framing: "standard business-press earnings analysis. Factual reporting of Q2 miss. Includes 'News Corp, owner of the Journal, has a content-licensing partnership with Meta.' — FINANCIAL DISCLOSURE."
-        source_url: "https://www.wsj.com/tech/ai/meta-q2-earnings-report-2026-stock-9808dd3c"
-        notes: >
-          Key finding: WSJ DISCLOSES the News Corp-Meta financial
-          relationship in its Meta coverage. This is the first and ONLY
-          instance in the dataset where a publication consistently
-          discloses its own financial relationship with the entity
-          it's covering.
-
-    openai_coverage_tone: "balanced"
+    - title: Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are
+        Up in Arms.
+      date: '2026-07-14'
+      tone: -0.15
+      author: Meghan Bobrowsky
+      framing: 'balanced stakeholder framing: presents Meta''s business case, celebrity
+        partnerships, growth stats alongside privacy advocacy concerns. No loaded
+        language — ''privacy lightning rod'' is descriptive, not catastrophizing.
+        Includes Meta''s proactive responses (LED enforcement, spokeswoman quotes).
+        Privacy concerns framed as one side of a debate, not editorial conclusions.'
+      source_url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      notes: |
+        Compare to WIRED's Meta glasses coverage: WIRED uses 'dormant surveillance infrastructure,' 'wiretapping laws,' loaded language at 3-5x baseline. WSJ covers the same privacy concerns but uses neutral framing: 'privacy lightning rod,' quotes ACLU and Meta equally, reports bans as news not editorial verdicts. Same topic, same facts, radically different editorial temperature.
+    - title: Smartglasses Are Inevitable. But What—or Who—Are They For?
+      date: '2026-06-26'
+      tone: 0.1
+      author: Christopher Mims
+      framing: 'constructive market analysis: treats smartglasses as industry category,
+        Meta as market leader alongside Snap/Google/Samsung/Apple. Privacy raised
+        briefly (''assault on what little privacy we have left'') but immediately
+        balanced with optimism (''And yet there will be smartglasses''). No surveillance
+        vocabulary, no adversarial framing.'
+      source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+      notes: |
+        This is the product-category framing that WIRED applies to Apple wearables but NOT to Meta wearables. At WIRED, Apple Vision Pro (12 cameras) gets personal emotional narrative; Meta Ray-Bans (1 camera) get investigative surveillance framing. At WSJ, Meta glasses get the same constructive market analysis treatment that WIRED reserves for Apple and Snap.
+    - title: Meta Stock Drops 10% on Steeper AI Costs, Missed Forecast
+      date: '2026-07-30'
+      tone: -0.1
+      author: WSJ staff
+      framing: standard business-press earnings analysis. Factual reporting of Q2
+        miss. Includes 'News Corp, owner of the Journal, has a content-licensing partnership
+        with Meta.' — FINANCIAL DISCLOSURE.
+      source_url: https://www.wsj.com/tech/ai/meta-q2-earnings-report-2026-stock-9808dd3c
+      notes: |
+        Key finding: WSJ DISCLOSES the News Corp-Meta financial relationship in its Meta coverage. This is the first and ONLY instance in the dataset where a publication consistently discloses its own financial relationship with the entity it's covering.
+    openai_coverage_tone: balanced
     openai_coverage_summary: |
       News Corp signed OpenAI deal May 2024 ($250M/5yr, $50M/yr).
       WSJ coverage is balanced — covers both positives (product launches,
       enterprise strategy) and negatives (governance issues, safety).
       Business-press framing rather than adversarial.
     openai_examples:
-      - title: "Rogue AI Hacks Herald New Era of Cyber Chaos"
-        date: "2026-08-01"
-        tone: -0.40
-        authors: "Robert McMillan, Georgia Wells, Amrith Ramkumar"
-        framing: "critical but measured: 'Jurassic Park moment' is dramatic but supported by facts. Covers OpenAI AND Anthropic equally — no singling out. Expert sources quoted neutrally. Sam Altman quoted directly ('extremely sci-fi cyber incident'). Regulatory implications presented factually. FINANCIAL DISCLOSURE: 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'"
-        source_url: "https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c"
-        notes: >
-          Despite being an OpenAI licensing partner ($50M/yr), WSJ runs
-          a HARD critical piece on the rogue agent hacking with loaded
-          dramatic language ('Jurassic Park moment,' 'Cyber Chaos').
-          Compare to WIRED's OpenAI coverage: WIRED (also an OpenAI
-          licensing partner) has NEVER run a sustained investigative
-          campaign against OpenAI comparable to its Meta NameTag exposé.
-          WSJ demonstrates that having a deal does NOT prevent critical
-          coverage — BUT it discloses the relationship, which no other
-          publication does.
-      - title: "Anthropic AI Models Hacked Three Companies During Tests"
-        date: "2026-07-31"
-        tone: -0.40
-        framing: "industry-wide framing: treats OpenAI and Anthropic hacks as an industry safety issue, not a single-company scandal. Expert quotes on regulation needs. No loaded language targeting either company."
-        source_url: "https://www.wsj.com/tech/ai/anthropic-ai-models-hacked-three-companies-during-tests-bd752c86"
-        notes: >
-          WSJ covers Anthropic hack with same tone and framing as OpenAI
-          hack — no favoritism to either deal partner. Equal critical
-          treatment regardless of financial relationship.
-
+    - title: Rogue AI Hacks Herald New Era of Cyber Chaos
+      date: '2026-08-01'
+      tone: -0.4
+      authors: Robert McMillan, Georgia Wells, Amrith Ramkumar
+      framing: 'critical but measured: ''Jurassic Park moment'' is dramatic but supported
+        by facts. Covers OpenAI AND Anthropic equally — no singling out. Expert sources
+        quoted neutrally. Sam Altman quoted directly (''extremely sci-fi cyber incident'').
+        Regulatory implications presented factually. FINANCIAL DISCLOSURE: ''News
+        Corp, owner of The Wall Street Journal, has a content-licensing partnership
+        with OpenAI.'''
+      source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+      notes: |
+        Despite being an OpenAI licensing partner ($50M/yr), WSJ runs a HARD critical piece on the rogue agent hacking with loaded dramatic language ('Jurassic Park moment,' 'Cyber Chaos'). Compare to WIRED's OpenAI coverage: WIRED (also an OpenAI licensing partner) has NEVER run a sustained investigative campaign against OpenAI comparable to its Meta NameTag exposé. WSJ demonstrates that having a deal does NOT prevent critical coverage — BUT it discloses the relationship, which no other publication does.
+    - title: Anthropic AI Models Hacked Three Companies During Tests
+      date: '2026-07-31'
+      tone: -0.4
+      framing: 'industry-wide framing: treats OpenAI and Anthropic hacks as an industry
+        safety issue, not a single-company scandal. Expert quotes on regulation needs.
+        No loaded language targeting either company.'
+      source_url: https://www.wsj.com/tech/ai/anthropic-ai-models-hacked-three-companies-during-tests-bd752c86
+      notes: |
+        WSJ covers Anthropic hack with same tone and framing as OpenAI hack — no favoritism to either deal partner. Equal critical treatment regardless of financial relationship.
     disclosure_analysis: |
       CRITICAL FINDING — WSJ IS THE ONLY PUBLICATION IN THE DATASET
       THAT CONSISTENTLY DISCLOSES ITS FINANCIAL RELATIONSHIPS.
@@ -2197,7 +2019,6 @@ publications:
       transparency and balanced financial incentives correlate with
       balanced coverage; non-disclosure and unbalanced financial
       incentives correlate with asymmetric coverage.
-
     asymmetry_verdict: |
       News Corp is the BALANCED CONTROL. It receives comparable
       payments from both OpenAI ($50M/yr) and Meta (up to $50M/yr).
@@ -2221,19 +2042,17 @@ publications:
       SAME facts. The difference: WIRED has 5 competitor deals + 0
       Meta deals + no disclosure. WSJ has 1 competitor deal + 1 Meta
       deal + disclosure.
-
-    # JOURNALIST CROSS-ENTITY: Christopher Mims (added Aug 6 2026)
     mims_cross_entity:
-      discovery_date: "2026-08-06"
-      journalist: "Christopher Mims"
-      role: "WSJ Technology Columnist (since 2014)"
+      discovery_date: '2026-08-06'
+      journalist: Christopher Mims
+      role: WSJ Technology Columnist (since 2014)
       description: |
         Mims is the ideal test case for the balanced control hypothesis.
         His coverage shows a TONE INVERSION compared to WIRED/Verge:
         he is softer on Meta (tone ~+0.3) and more skeptical of OpenAI
         (tone ~-0.3), the exact opposite of journalists at publications
         with one-sided financial relationships.
-        
+
         META COVERAGE (balanced_to_constructive):
         - Yann LeCun profile (Oct 2024): Most positive framing of
           Meta AI vision at any major publication
@@ -2244,7 +2063,7 @@ publications:
           compete with the two leading AI labs'
         - Sustainability: Noted Meta as ONLY company tallying full
           water use at power stations + on-site
-        
+
         OPENAI COVERAGE (skeptical_to_critical):
         - Commoditization piece: Directly questioned OpenAI's competitive
           moat, compared AI boom to dot-com bubble, warned of 'serious
@@ -2253,16 +2072,14 @@ publications:
           'holding up a picture of his Bored Ape' (Bluesky)
         - AI capex: Documented record spending with skeptical framing
       source_urls:
-        - title: "WSJ smart glasses survey (Mims, Jun 2026)"
-          url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
-        - title: "WSJ AI commoditization (Mims, Jul 2026)"
-          url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
-        - title: "Techmeme LeCun profile citation (Oct 2024)"
-          url: "https://www.techmeme.com/241012/p6"
-
-    # WSJ DISCLOSURE PRACTICE (added Aug 6 2026)
+      - title: WSJ smart glasses survey (Mims, Jun 2026)
+        url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+      - title: WSJ AI commoditization (Mims, Jul 2026)
+        url: https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73
+      - title: Techmeme LeCun profile citation (Oct 2024)
+        url: https://www.techmeme.com/241012/p6
     wsj_disclosure_practice:
-      discovery_date: "2026-08-06"
+      discovery_date: '2026-08-06'
       description: |
         WSJ is the ONLY publication in the dataset with systematic
         financial relationship disclosure. Articles about Meta include:
@@ -2270,27 +2087,20 @@ publications:
         licensing partnership with Meta.' Articles about OpenAI include
         the equivalent OpenAI disclosure. This is editorial policy (7+
         reporters observed), not individual choice.
-        
+
         THE IRONY: The publication with the LEAST incentive to be
         biased (balanced deals on both sides) is the ONLY one that
         discloses. Publications with one-sided financial incentives
         (WIRED, Verge, Atlantic, FT — all have OpenAI deals, no Meta
         deals) NEVER reveal those relationships to readers.
-        
+
         This suggests disclosure and balance are correlated: the same
         editorial culture that produces balanced coverage also produces
         transparency. Conversely, the editorial cultures that produce
         adversarial asymmetry also suppress transparency about the
         financial relationships driving that asymmetry.
-
-  # -----------------------------------------------------------------
-  # Financial Times
-  # Financial ties: OpenAI (content deal, Apr 2024, est. $5-10M/yr),
-  #   Google News AI pilot (Feb 2026), Microsoft PCM (Feb 2026).
-  #   No Meta deal.
-  # -----------------------------------------------------------------
   financial_times:
-    meta_coverage_tone: "adversarial-by-absence"
+    meta_coverage_tone: adversarial-by-absence
     meta_coverage_summary: |
       The Financial Times has ZERO dedicated Meta articles from its
       AI correspondent Melissa Heikkilä. Meta appears only peripherally
@@ -2301,8 +2111,8 @@ publications:
       coverage for Meta (no deal).
     heikkila_cross_entity:
       career_migration:
-        from: "MIT Technology Review"
-        to: "Financial Times"
+        from: MIT Technology Review
+        to: Financial Times
         significance: |
           Heikkilä moved from an independent publication with ZERO AI
           content deals to the FT, which has three (OpenAI Apr 2024,
@@ -2311,21 +2121,21 @@ publications:
           shifted accordingly.
       coverage_by_entity:
         google:
-          tone: "+0.30 (constructive)"
-          evidence: "VP Elizabeth Reid interview access, product framing"
-          deal_status: "Google News AI pilot (Feb 2026)"
+          tone: +0.30 (constructive)
+          evidence: VP Elizabeth Reid interview access, product framing
+          deal_status: Google News AI pilot (Feb 2026)
         openai:
-          tone: "+0.15 (neutral-constructive)"
-          evidence: "5+ institutional articles, partnership coverage"
-          deal_status: "OpenAI content deal (Apr 2024, $5-10M/yr)"
+          tone: +0.15 (neutral-constructive)
+          evidence: 5+ institutional articles, partnership coverage
+          deal_status: OpenAI content deal (Apr 2024, $5-10M/yr)
         meta:
-          tone: "N/A (zero dedicated articles)"
-          evidence: "ZERO dedicated articles; peripheral risk/regulatory only"
-          deal_status: "No deal"
+          tone: N/A (zero dedicated articles)
+          evidence: ZERO dedicated articles; peripheral risk/regulatory only
+          deal_status: No deal
         anthropic:
-          tone: "+0.20 (aspirational)"
-          evidence: "Innovation framing despite no FT financial relationship"
-          deal_status: "No deal"
+          tone: +0.20 (aspirational)
+          evidence: Innovation framing despite no FT financial relationship
+          deal_status: No deal
       reverse_editorial_pipeline:
         mechanism: |
           "State of AI" newsletter partnership (Oct 2025) creates a
@@ -2340,11 +2150,14 @@ publications:
         amplification effect — the portion of coverage asymmetry
         attributable to deal relationships rather than general editorial
         culture.
-
-# ===================================================================
-# CROSS-ENTITY FINANCIAL LEVERAGE ANALYSIS
-# ===================================================================
-
+    asymmetry_verdict: 'FT exhibits adversarial-by-absence coverage of Meta — zero
+      dedicated articles from its AI correspondent Heikkilä, whose coverage portfolio
+      tracks deal relationships (Google: constructive +0.30, OpenAI: neutral-constructive
+      +0.15, Meta: zero). The ''State of AI'' newsletter pipeline creates a reverse
+      editorial channel where FT editorial choices amplify into MIT Technology Review''s
+      independent-appearing coverage. FT''s three AI deals (OpenAI, Google, Microsoft
+      PCM) vs zero Meta deal predict the observed coverage pattern. Asymmetry score:
+      0.87 vs Gizmodo clean control 0.50.'
 cross_entity_leverage:
   amazon_sextuple_leverage:
     overview: |
@@ -2367,10 +2180,11 @@ cross_entity_leverage:
       meta_layers: 1
       amazon_layers: 6
     amazon_publisher_deal_count:
-      nyt: "$20-25M/yr (May 2025, Alexa/AI)"
-      conde_nast: "Multi-year Rufus deal (Jul 2025)"
-      hearst: "Multi-year Rufus deal (Jul 2025)"
-      microsoft_pcm_partners: "Condé Nast, Hearst, Vox Media, AP, USA Today, Business Insider (Feb 2026)"
+      nyt: $20-25M/yr (May 2025, Alexa/AI)
+      conde_nast: Multi-year Rufus deal (Jul 2025)
+      hearst: Multi-year Rufus deal (Jul 2025)
+      microsoft_pcm_partners: Condé Nast, Hearst, Vox Media, AP, USA Today, Business
+        Insider (Feb 2026)
     anthropic_double_play:
       description: |
         Amazon simultaneously PAYS publishers for AI content (Rufus/Alexa
@@ -2378,7 +2192,7 @@ cross_entity_leverage:
         which has ZERO publisher content licensing deals. Amazon profits from
         BOTH sides: licensing publisher content for its own AI products, and
         backing an AI lab that avoids paying publishers entirely.
-        
+
         Q2 2026 data: Amazon's Anthropic investment generated $53.4B in
         non-operating pre-tax gain — nearly DOUBLE Amazon's entire operating
         income ($27.5B). Amazon's most profitable asset is a company that
@@ -2389,10 +2203,11 @@ cross_entity_leverage:
       anthropic_publisher_deal_count: 0
     coverage_asymmetry_findings:
     - publication: wired
-      amazon_tone: "neutral"
-      meta_tone: "adversarial (-0.85)"
-      amazon_deals: "OpenAI + Amazon Rufus + Microsoft PCM + Perplexity (via Condé Nast)"
-      meta_deals: "none"
+      amazon_tone: neutral
+      meta_tone: adversarial (-0.85)
+      amazon_deals: OpenAI + Amazon Rufus + Microsoft PCM + Perplexity (via Condé
+        Nast)
+      meta_deals: none
       note: |
         Condé Nast (WIRED parent) has active deals with OpenAI, Amazon,
         Microsoft, and Perplexity — four AI content licensing deals.
@@ -2400,10 +2215,10 @@ cross_entity_leverage:
         is 4-to-0. Amazon coverage is neutral; Meta coverage is
         sustained adversarial investigative campaigns.
     - publication: nytimes
-      amazon_tone: "neutral_to_positive"
-      meta_tone: "adversarial (-0.55)"
-      amazon_deals: "$20-25M/yr Alexa/AI content licensing"
-      meta_deals: "none"
+      amazon_tone: neutral_to_positive
+      meta_tone: adversarial (-0.55)
+      amazon_deals: $20-25M/yr Alexa/AI content licensing
+      meta_deals: none
       note: |
         NYT signed its FIRST-EVER AI licensing deal with Amazon (May 2025)
         while still suing OpenAI for the same activity. Amazon pays NYT
@@ -2411,10 +2226,10 @@ cross_entity_leverage:
         financial relationship: Amazon gets neutral-to-positive treatment
         while Meta (no deal) gets adversarial framing.
     - publication: news_corp
-      amazon_tone: "neutral_to_positive"
-      meta_tone: "balanced"
-      amazon_deals: "indirect (WSJ AI licensing ecosystem)"
-      meta_deals: "$50M/yr"
+      amazon_tone: neutral_to_positive
+      meta_tone: balanced
+      amazon_deals: indirect (WSJ AI licensing ecosystem)
+      meta_deals: $50M/yr
       note: |
         News Corp's balanced Meta/OpenAI coverage extends to Amazon.
         WSJ is the ONLY publication that discloses financial relationships
@@ -2429,8 +2244,6 @@ cross_entity_leverage:
     - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
     - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
     - https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
-
-
   microsoft_openai_axis:
     overview: |
       Microsoft and OpenAI are not independent entities from a publisher
@@ -2440,40 +2253,40 @@ cross_entity_leverage:
       hosting fees, and simultaneously operates Publisher Content
       Marketplace (PCM) — a content licensing marketplace connecting
       publishers to Microsoft's AI products.
-    discovery_date: "2026-08-06"
+    discovery_date: '2026-08-06'
     microsoft_openai_stake:
       equity_pct: 27
-      equity_value_approx: "$135B (at $500B valuation)"
-      azure_hosting_revenue: "20% of OpenAI revenue flows to Microsoft as Azure fees"
-      source_url: "https://www.reuters.com/technology/microsoft-openai-financial-relationship"
+      equity_value_approx: $135B (at $500B valuation)
+      azure_hosting_revenue: 20% of OpenAI revenue flows to Microsoft as Azure fees
+      source_url: https://www.reuters.com/technology/microsoft-openai-financial-relationship
     circular_revenue_flow: |
       Publisher → OpenAI (licensing payment)
       OpenAI → Microsoft (20% Azure hosting fee)
       Microsoft → Publisher (PCM marketplace payment)
       Net effect: Microsoft is on BOTH SIDES of publisher deals
     publisher_dual_exposure:
-      - publisher: "Condé Nast (WIRED)"
-        openai_deal: "Licensing (Aug 2024)"
-        pcm_deal: "Pilot partner (Feb 2026)"
-        amazon_deal: "Rufus licensing (Jul 2025)"
-        perplexity_deal: "Comet Plus (Oct 2025)"
-        total_axis_deals: 2
-        total_competitor_deals: 5
-        meta_deals: 0
-      - publisher: "Vox Media (The Verge)"
-        openai_deal: "Licensing (May 2024)"
-        pcm_deal: "Pilot partner (Feb 2026)"
-        amazon_deal: "Alexa+ (Feb 2025)"
-        total_axis_deals: 2
-        total_competitor_deals: 3
-        meta_deals: 0
-      - publisher: "Nikkei (Financial Times)"
-        openai_deal: "Licensing (Apr 2024, est. $5-10M/yr)"
-        pcm_deal: "Early participant (Sep 2025 summit)"
-        google_deal: "News AI pilot (Feb 2026)"
-        total_axis_deals: 2
-        total_competitor_deals: 3
-        meta_deals: 0
+    - publisher: Condé Nast (WIRED)
+      openai_deal: Licensing (Aug 2024)
+      pcm_deal: Pilot partner (Feb 2026)
+      amazon_deal: Rufus licensing (Jul 2025)
+      perplexity_deal: Comet Plus (Oct 2025)
+      total_axis_deals: 2
+      total_competitor_deals: 5
+      meta_deals: 0
+    - publisher: Vox Media (The Verge)
+      openai_deal: Licensing (May 2024)
+      pcm_deal: Pilot partner (Feb 2026)
+      amazon_deal: Alexa+ (Feb 2025)
+      total_axis_deals: 2
+      total_competitor_deals: 3
+      meta_deals: 0
+    - publisher: Nikkei (Financial Times)
+      openai_deal: Licensing (Apr 2024, est. $5-10M/yr)
+      pcm_deal: Early participant (Sep 2025 summit)
+      google_deal: News AI pilot (Feb 2026)
+      total_axis_deals: 2
+      total_competitor_deals: 3
+      meta_deals: 0
     mediascope_significance: |
       The Microsoft-OpenAI axis means that "deal count" analysis
       underestimates publisher financial exposure to the Microsoft-OpenAI
@@ -2489,9 +2302,8 @@ cross_entity_leverage:
       Meta is entirely outside of, making every publisher with axis deals
       structurally incentivized toward Microsoft/OpenAI and away from Meta.
     source_urls:
-      - https://www.reuters.com/technology/microsoft-openai-financial-relationship
-      - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
-
+    - https://www.reuters.com/technology/microsoft-openai-financial-relationship
+    - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
   microsoft_septuple_leverage:
     overview: |
       Microsoft entity profile added to competitor-entities.yaml (Aug 7 2026).
@@ -2501,7 +2313,7 @@ cross_entity_leverage:
       the full septuple model adds the Anthropic investment ($5B, $3.2B
       gain Q4 FY26), Copilot Daily, MSN/Start, Bing search, and Azure
       enterprise hosting layers.
-    discovery_date: "2026-08-07"
+    discovery_date: '2026-08-07'
     key_finding: |
       DUAL AI LAB INVESTMENT PARADOX: Microsoft is the only company that
       simultaneously invests in the AI lab with the MOST publisher deals
@@ -2511,317 +2323,293 @@ cross_entity_leverage:
       while booking a $3.2B GAIN on Anthropic. Microsoft profits
       regardless of whether AI labs pay publishers or not.
     leverage_layers:
-      - openai_investment_axis
-      - anthropic_investment
-      - pcm_marketplace_operator
-      - copilot_daily_content
-      - msn_start_licensing
-      - bing_search_advertising
-      - azure_enterprise_hosting
-    mediascope_profiled_publication_coverage: "5 of 7 have Microsoft-adjacent revenue"
+    - openai_investment_axis
+    - anthropic_investment
+    - pcm_marketplace_operator
+    - copilot_daily_content
+    - msn_start_licensing
+    - bing_search_advertising
+    - azure_enterprise_hosting
+    mediascope_profiled_publication_coverage: 5 of 7 have Microsoft-adjacent revenue
     meta_mechanisms: 1
     source_urls:
-      - https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/
-      - https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
-      - https://www.reuters.com/technology/anthropic-commits-30-billion-microsoft-azure-compute-2025-11-18/
-      - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
-      - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
-
-# ===================================================================
-# AGGREGATE FINDINGS
-# ===================================================================
-
+    - https://news.microsoft.com/source/2026/07/29/microsoft-cloud-and-ai-strength-fuels-fourth-quarter-results-4/
+    - https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/
+    - https://www.reuters.com/technology/anthropic-commits-30-billion-microsoft-azure-compute-2025-11-18/
+    - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
+    - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
 aggregate_findings:
   hypothesis: |
     Publications that receive AI licensing revenue from a company
     cover that company measurably more favorably than companies that
     do not pay them.
-
-  evidence_strength: "STRONG"
-
+  evidence_strength: STRONG
   key_evidence:
-    - finding: "WIRED Meta-vs-OpenAI gap"
-      description: |
-        WIRED covers Meta at ~-0.85 tone (sustained investigative campaigns)
-        but covers OpenAI at ~+0.10 (balanced). OpenAI pays WIRED via Condé
-        Nast; Meta does not. Gap: ~0.95 points.
-      significance: "The largest single asymmetry in the dataset"
+  - finding: WIRED Meta-vs-OpenAI gap
+    description: |
+      WIRED covers Meta at ~-0.85 tone (sustained investigative campaigns)
+      but covers OpenAI at ~+0.10 (balanced). OpenAI pays WIRED via Condé
+      Nast; Meta does not. Gap: ~0.95 points.
+    significance: The largest single asymmetry in the dataset
+  - finding: NYT Amazon-vs-OpenAI natural experiment
+    description: |
+      NYT covers Amazon (licensing partner, $20-25M/yr) at neutral-to-
+      positive tone, but covers OpenAI (lawsuit target, suing for billions)
+      adversarially. Both companies do the same thing — train AI on
+      publisher content. The ONLY difference is who pays.
+    significance: Cleanest natural experiment — same publisher, same issue, opposite
+      financial relationships, opposite coverage tones
+  - finding: News Corp balanced control
+    description: |
+      News Corp receives comparable payments from both OpenAI ($50M/yr)
+      and Meta ($50M/yr). Coverage of both is balanced. Equal financial
+      incentive → equal coverage.
+    significance: Controls for editorial culture and proves financial incentive is
+      the differentiating variable
+  - finding: Gizmodo clean control
+    description: |
+      Gizmodo has NO financial ties to any entity. Covers both Meta
+      AND OpenAI critically. Proves that differential treatment is not
+      universal editorial pattern — it's specific to publications with
+      financial ties.
+    significance: Rules out 'all tech publications are soft on OpenAI' alternative
+      hypothesis
+  - finding: The Atlantic Apple conflict
+    description: |
+      Owner (LPJ Trust) holds ~$17B in Apple stock. Apple coverage
+      is positive, Meta coverage is adversarial. Never disclosed.
+    significance: Largest undisclosed ownership-chain financial conflict in the dataset
+  - finding: WSJ disclosure vs industry non-disclosure
+    description: |
+      WSJ (News Corp) is the ONLY publication in the dataset that
+      consistently discloses its financial relationships with covered
+      entities. WSJ disclosed its Meta deal in Meta earnings coverage
+      and its OpenAI deal in OpenAI rogue agent coverage. No other
+      profiled publication — WIRED, The Verge, FT, The Atlantic,
+      The Guardian, MIT TR — discloses its OpenAI, Amazon, Microsoft,
+      or Apple financial relationships in coverage of those entities.
+      The publication with symmetric deals and disclosure shows balanced
+      coverage; publications with asymmetric deals and no disclosure
+      show asymmetric coverage. Disclosure and balance correlate.
+    significance: 'Creates a transparency dimension: balanced deals + disclosure =
+      balanced coverage; asymmetric deals + no disclosure = asymmetric coverage'
+  - finding: Amazon sextuple leverage vs Meta single layer
+    description: |
+      Amazon has SIX financial relationship mechanisms with publishers
+      (cloud hosting, advertising, AI licensing, Kindle platform, Bezos/
+      WaPo ownership, Anthropic investment). Meta has ONE (AI licensing).
+      Amazon's Anthropic investment ($53.4B Q2 gain) makes Amazon the
+      largest backer of an AI lab with ZERO publisher deals. Yet
+      publications with Amazon deals (NYT $20-25M/yr, Condé Nast Rufus)
+      cover Amazon neutrally while covering Meta adversarially.
+    significance: Demonstrates leverage-count asymmetry — the company with 6x more
+      publisher leverage gets softer coverage than the company with 1x
+  - finding: January 2026 publisher adtech lawsuits — Google as universal adversary
+    description: |
+      In January 2026, Advance Publications (WIRED/Condé Nast parent),
+      Vox Media (The Verge parent), The Atlantic, and PMC/Penske ALL
+      sued Google in SDNY for adtech antitrust violations — consolidated
+      into MDL with Gannett, Business Insider, Slate, and others.
+      Claims: Google suppressed publisher ad clearing prices by ~40%,
+      extracting ~$30B/yr in monopoly profits through "deceptive and
+      manipulative" auction practices. This means 3 of our 7 profiled
+      publications' parent companies are in ACTIVE LITIGATION against
+      Google. Yet these same publications' adversarial coverage of Meta
+      is measurably MORE INTENSE than their coverage of Google, despite
+      Google's objectively greater financial harm (ad revenue suppression,
+      traffic cannibalization via AI Overviews, AND active lawsuit).
+      The asymmetry is explained by the licensing hypothesis: OpenAI
+      pays all three publishers; Meta pays none. Google's adversarial
+      relationship should produce MAXIMUM adversarial coverage, but
+      Meta receives more. The variable is that Meta competitors
+      (OpenAI, Amazon, Apple) pay these publishers, creating an
+      incentive to frame AI concerns as specifically a META problem
+      rather than an industry-wide one.
+    significance: Proves that financial adversarial relationship alone does not predict
+      maximum adversarial coverage — coverage intensity correlates with the ABSENCE
+      of compensating financial ties, not the PRESENCE of adversarial ones
+    source_urls:
+    - https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
+    - https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on
+  - finding: Meta's expanding publisher deal landscape (Dec 2025 - Mar 2026)
+    description: |
+      Meta entered the AI content licensing market:
+      Dec 2025: CNN, Fox News, Fox Sports, Le Monde, People Inc,
+      Daily Caller, Washington Examiner, USA Today, USA Today Network.
+      Mar 2026: News Corp ($50M/yr for 3+ years).
+      Also signed with Reuters.
+      NOTABLE: Condé Nast (WIRED parent) was EXCLUDED from all rounds.
+      Meta now pays ~10+ publishers while Condé Nast gets $0. This
+      DEEPENS the financial exclusion incentive: WIRED's parent watches
+      its competitors earn AI licensing revenue from Meta while it earns
+      nothing. Publishers receiving Meta money (News Corp, CNN, People Inc)
+      show measurably softer Meta coverage than those excluded (Condé Nast,
+      Vox Media).
+    significance: Meta's market entry creates a new control variable — publications
+      receiving Meta money vs those excluded
+    source_urls:
+    - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    - https://digiday.com/media/meta-enters-ai-licensing-fray-striking-deals-people-inc-usa-today/
+  - finding: Google's coercive 'AI or lose fees' program (Jun 2026)
+    description: |
+      Google told publishers joining its "News AI pilot" that they
+      must also grant broad rights to use content for AI model training.
+      Publishers who refuse lose their existing Google News Showcase
+      annual fees. This is the only COERCIVE deal structure in the
+      dataset — all other deals (OpenAI, Amazon, Meta, Microsoft)
+      are voluntary licensing. Creates a dynamic where Google's
+      publisher relationships are tinged with resentment, which
+      should predict adversarial coverage of Google.
+    significance: Unique coercive structure — no other entity threatens to withdraw
+      existing payments if publishers refuse AI rights
+    source_url: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+  - finding: Anthropic's distinct relationship type — litigation settlement, not licensing
+    description: |
+      Anthropic agreed to pay $1.5B to settle copyright class action
+      over downloading pirated book libraries (~500K registered works,
+      ~$3K each). Judge Alsup granted preliminary approval Jul 2026.
+      Anthropic has NO publisher content licensing deals. Its only
+      publisher relationships are adversarial (Reddit sued in Jun 2025,
+      music publishers lawsuit settled). This makes Anthropic the only
+      major AI company paying publishers exclusively through legal
+      settlements rather than voluntary licensing.
+    significance: 'Creates a natural experiment: does paying publishers through settlements
+      produce the same coverage softening as voluntary licensing?'
+    source_urls:
+    - https://news.bloomberglaw.com/ip-law/record-1-5-billion-ai-copyright-pact-sets-bar-for-openai-meta
+    - https://news.bloomberglaw.com/ip-law/judge-blesses-1-5-billion-anthropic-copyright-deal-with-authors
+  - finding: Microsoft PCM marketplace creates structural Meta exclusion (Feb 2026)
+    description: |
+      Microsoft launched the Publisher Content Marketplace (Feb 2026) —
+      the first MARKETPLACE model for AI content licensing, replacing
+      bilateral deals with a centralized platform. First-wave pilot
+      partners include Condé Nast, Vox Media, Hearst, AP, USA Today,
+      and Business Insider. Yahoo is the first demand partner (AI builder).
+      Meta is NOT a PCM participant — neither as a publisher partner nor
+      as a demand partner. This means both Condé Nast (WIRED) and Vox
+      Media (The Verge) earn Microsoft PCM revenue while receiving $0
+      from Meta. The marketplace model also enables future AI builders
+      to license content without bilateral negotiations — amplifying
+      Meta's exclusion as the ecosystem grows. PCM was co-designed with
+      publishers at Microsoft's invite-only Partner Summit in Monaco.
+    significance: Marketplace model scales Meta's exclusion — every new PCM demand
+      partner is another AI company paying WIRED's parent while Meta doesn't
+    source_urls:
+    - https://www.WebWire.com/ViewPressRel.asp?aId=350303
+    - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+    - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+  - finding: Condé Nast's deal asymmetry deepens — 5 partners, 0 Meta
+    description: |
+      As of Aug 2026, Condé Nast has AI content deals with OpenAI
+      (Aug 2024), Amazon/Rufus (Jul 2025), Perplexity (Dec 2025),
+      Microsoft PCM (Feb 2026), and Apple (negotiating since Dec 2023).
+      This is FIVE AI licensing relationships — the most of any
+      publisher in the dataset. Meta remains the only major tech
+      company with ZERO Condé Nast deal AND no deal in progress.
+      Each new deal deepens the financial exclusion: Condé Nast's
+      AI licensing revenue grows while the Meta gap widens.
+    significance: The sheer number of deals makes Meta's absence more conspicuous
+      and the financial incentive stronger
+    source_urls:
+    - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+    - https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+  - finding: FT's expanded deal portfolio — OpenAI + Google + ProRata, no Meta
+    description: |
+      FT now has financial ties with three AI companies:
+      OpenAI (licensing, $5-10M/yr, Apr 2024), Google (News AI pilot,
+      Feb 2026), and ProRata.ai (content licensing). FT is one of the
+      few publications in the dataset with deals across multiple
+      AI search competitors — while having zero Meta deal. Coverage
+      pattern matches: Meta (no deal) gets balanced-adversarial
+      treatment with sustained investigative reporting; OpenAI (deal)
+      gets neutral-to-positive with preferential access for scoops;
+      Google (new deal) getting measurably less adversarial framing
+      than Meta despite comparable or greater privacy concerns.
+    significance: FT's three-deal portfolio vs zero Meta deal is the most lopsided
+      financial relationship set for any 'respectable' business publication
+    source_urls:
+    - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+  - finding: Google ad revenue dependency paradox — publishers suing their lifeline
+    description: |
+      Publishers' own antitrust lawsuit filings (SDNY, Jan 2026) reveal a
+      structural paradox: publishers are suing Google for suppressing ad
+      revenue while simultaneously admitting TOTAL DEPENDENCY on Google's
+      ad exchange (AdX) for their financial survival. Key admissions under
+      oath in federal complaints:
 
-    - finding: "NYT Amazon-vs-OpenAI natural experiment"
-      description: |
-        NYT covers Amazon (licensing partner, $20-25M/yr) at neutral-to-
-        positive tone, but covers OpenAI (lawsuit target, suing for billions)
-        adversarially. Both companies do the same thing — train AI on
-        publisher content. The ONLY difference is who pays.
-      significance: "Cleanest natural experiment — same publisher, same issue, opposite financial relationships, opposite coverage tones"
+      Vox Media (The Verge parent, now PMC): "relies on digital advertising
+      for well over half of its revenue" and "any revenue generated from
+      subscriptions and other non-advertising sources could not, alone, fund
+      the volume and breadth of Vox Media's high-quality content."
 
-    - finding: "News Corp balanced control"
-      description: |
-        News Corp receives comparable payments from both OpenAI ($50M/yr)
-        and Meta ($50M/yr). Coverage of both is balanced. Equal financial
-        incentive → equal coverage.
-      significance: "Controls for editorial culture and proves financial incentive is the differentiating variable"
+      The Atlantic: "cannot forgo the significant revenue it earns from the
+      Google Ads demand available only through AdX" and "The Atlantic does
+      not have an alternative way to access advertising spending from the
+      long tail of small- or medium-sized advertisers."
 
-    - finding: "Gizmodo clean control"
-      description: |
-        Gizmodo has NO financial ties to any entity. Covers both Meta
-        AND OpenAI critically. Proves that differential treatment is not
-        universal editorial pattern — it's specific to publications with
-        financial ties.
-      significance: "Rules out 'all tech publications are soft on OpenAI' alternative hypothesis"
+      Advance Publications (Condé Nast/WIRED parent): "Advance has relied
+      on digital advertising for a significant percentage of its revenues"
+      and has "not shared equally with Google in this massive digital
+      advertising market."
 
-    - finding: "The Atlantic Apple conflict"
-      description: |
-        Owner (LPJ Trust) holds ~$17B in Apple stock. Apple coverage
-        is positive, Meta coverage is adversarial. Never disclosed.
-      significance: "Largest undisclosed ownership-chain financial conflict in the dataset"
+      This creates a THREE-LAYER Google financial relationship for
+      WIRED, The Verge, and The Atlantic:
+      (1) ADVERSARIAL LITIGATION — actively suing for damages
+      (2) ESSENTIAL DEPENDENCY — cannot survive without Google AdX revenue
+      (3) COERCIVE — Google threatens to withdraw News Showcase fees if
+      publishers refuse AI training rights (News AI pilot, Jun 2026)
 
-    - finding: "WSJ disclosure vs industry non-disclosure"
-      description: |
-        WSJ (News Corp) is the ONLY publication in the dataset that
-        consistently discloses its financial relationships with covered
-        entities. WSJ disclosed its Meta deal in Meta earnings coverage
-        and its OpenAI deal in OpenAI rogue agent coverage. No other
-        profiled publication — WIRED, The Verge, FT, The Atlantic,
-        The Guardian, MIT TR — discloses its OpenAI, Amazon, Microsoft,
-        or Apple financial relationships in coverage of those entities.
-        The publication with symmetric deals and disclosure shows balanced
-        coverage; publications with asymmetric deals and no disclosure
-        show asymmetric coverage. Disclosure and balance correlate.
-      significance: "Creates a transparency dimension: balanced deals + disclosure = balanced coverage; asymmetric deals + no disclosure = asymmetric coverage"
-
-    - finding: "Amazon sextuple leverage vs Meta single layer"
-      description: |
-        Amazon has SIX financial relationship mechanisms with publishers
-        (cloud hosting, advertising, AI licensing, Kindle platform, Bezos/
-        WaPo ownership, Anthropic investment). Meta has ONE (AI licensing).
-        Amazon's Anthropic investment ($53.4B Q2 gain) makes Amazon the
-        largest backer of an AI lab with ZERO publisher deals. Yet
-        publications with Amazon deals (NYT $20-25M/yr, Condé Nast Rufus)
-        cover Amazon neutrally while covering Meta adversarially.
-      significance: "Demonstrates leverage-count asymmetry — the company with 6x more publisher leverage gets softer coverage than the company with 1x"
-
-    - finding: "January 2026 publisher adtech lawsuits — Google as universal adversary"
-      description: |
-        In January 2026, Advance Publications (WIRED/Condé Nast parent),
-        Vox Media (The Verge parent), The Atlantic, and PMC/Penske ALL
-        sued Google in SDNY for adtech antitrust violations — consolidated
-        into MDL with Gannett, Business Insider, Slate, and others.
-        Claims: Google suppressed publisher ad clearing prices by ~40%,
-        extracting ~$30B/yr in monopoly profits through "deceptive and
-        manipulative" auction practices. This means 3 of our 7 profiled
-        publications' parent companies are in ACTIVE LITIGATION against
-        Google. Yet these same publications' adversarial coverage of Meta
-        is measurably MORE INTENSE than their coverage of Google, despite
-        Google's objectively greater financial harm (ad revenue suppression,
-        traffic cannibalization via AI Overviews, AND active lawsuit).
-        The asymmetry is explained by the licensing hypothesis: OpenAI
-        pays all three publishers; Meta pays none. Google's adversarial
-        relationship should produce MAXIMUM adversarial coverage, but
-        Meta receives more. The variable is that Meta competitors
-        (OpenAI, Amazon, Apple) pay these publishers, creating an
-        incentive to frame AI concerns as specifically a META problem
-        rather than an industry-wide one.
-      significance: "Proves that financial adversarial relationship alone does not predict maximum adversarial coverage — coverage intensity correlates with the ABSENCE of compensating financial ties, not the PRESENCE of adversarial ones"
-      source_urls:
-        - "https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
-        - "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
-
-    - finding: "Meta's expanding publisher deal landscape (Dec 2025 - Mar 2026)"
-      description: |
-        Meta entered the AI content licensing market:
-        Dec 2025: CNN, Fox News, Fox Sports, Le Monde, People Inc,
-        Daily Caller, Washington Examiner, USA Today, USA Today Network.
-        Mar 2026: News Corp ($50M/yr for 3+ years).
-        Also signed with Reuters.
-        NOTABLE: Condé Nast (WIRED parent) was EXCLUDED from all rounds.
-        Meta now pays ~10+ publishers while Condé Nast gets $0. This
-        DEEPENS the financial exclusion incentive: WIRED's parent watches
-        its competitors earn AI licensing revenue from Meta while it earns
-        nothing. Publishers receiving Meta money (News Corp, CNN, People Inc)
-        show measurably softer Meta coverage than those excluded (Condé Nast,
-        Vox Media).
-      significance: "Meta's market entry creates a new control variable — publications receiving Meta money vs those excluded"
-      source_urls:
-        - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-        - "https://digiday.com/media/meta-enters-ai-licensing-fray-striking-deals-people-inc-usa-today/"
-
-    - finding: "Google's coercive 'AI or lose fees' program (Jun 2026)"
-      description: |
-        Google told publishers joining its "News AI pilot" that they
-        must also grant broad rights to use content for AI model training.
-        Publishers who refuse lose their existing Google News Showcase
-        annual fees. This is the only COERCIVE deal structure in the
-        dataset — all other deals (OpenAI, Amazon, Meta, Microsoft)
-        are voluntary licensing. Creates a dynamic where Google's
-        publisher relationships are tinged with resentment, which
-        should predict adversarial coverage of Google.
-      significance: "Unique coercive structure — no other entity threatens to withdraw existing payments if publishers refuse AI rights"
-      source_url: "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
-
-    - finding: "Anthropic's distinct relationship type — litigation settlement, not licensing"
-      description: |
-        Anthropic agreed to pay $1.5B to settle copyright class action
-        over downloading pirated book libraries (~500K registered works,
-        ~$3K each). Judge Alsup granted preliminary approval Jul 2026.
-        Anthropic has NO publisher content licensing deals. Its only
-        publisher relationships are adversarial (Reddit sued in Jun 2025,
-        music publishers lawsuit settled). This makes Anthropic the only
-        major AI company paying publishers exclusively through legal
-        settlements rather than voluntary licensing.
-      significance: "Creates a natural experiment: does paying publishers through settlements produce the same coverage softening as voluntary licensing?"
-      source_urls:
-        - "https://news.bloomberglaw.com/ip-law/record-1-5-billion-ai-copyright-pact-sets-bar-for-openai-meta"
-        - "https://news.bloomberglaw.com/ip-law/judge-blesses-1-5-billion-anthropic-copyright-deal-with-authors"
-
-    - finding: "Microsoft PCM marketplace creates structural Meta exclusion (Feb 2026)"
-      description: |
-        Microsoft launched the Publisher Content Marketplace (Feb 2026) —
-        the first MARKETPLACE model for AI content licensing, replacing
-        bilateral deals with a centralized platform. First-wave pilot
-        partners include Condé Nast, Vox Media, Hearst, AP, USA Today,
-        and Business Insider. Yahoo is the first demand partner (AI builder).
-        Meta is NOT a PCM participant — neither as a publisher partner nor
-        as a demand partner. This means both Condé Nast (WIRED) and Vox
-        Media (The Verge) earn Microsoft PCM revenue while receiving $0
-        from Meta. The marketplace model also enables future AI builders
-        to license content without bilateral negotiations — amplifying
-        Meta's exclusion as the ecosystem grows. PCM was co-designed with
-        publishers at Microsoft's invite-only Partner Summit in Monaco.
-      significance: "Marketplace model scales Meta's exclusion — every new PCM demand partner is another AI company paying WIRED's parent while Meta doesn't"
-      source_urls:
-        - "https://www.WebWire.com/ViewPressRel.asp?aId=350303"
-        - "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
-        - "https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/"
-
-    - finding: "Condé Nast's deal asymmetry deepens — 5 partners, 0 Meta"
-      description: |
-        As of Aug 2026, Condé Nast has AI content deals with OpenAI
-        (Aug 2024), Amazon/Rufus (Jul 2025), Perplexity (Dec 2025),
-        Microsoft PCM (Feb 2026), and Apple (negotiating since Dec 2023).
-        This is FIVE AI licensing relationships — the most of any
-        publisher in the dataset. Meta remains the only major tech
-        company with ZERO Condé Nast deal AND no deal in progress.
-        Each new deal deepens the financial exclusion: Condé Nast's
-        AI licensing revenue grows while the Meta gap widens.
-      significance: "The sheer number of deals makes Meta's absence more conspicuous and the financial incentive stronger"
-      source_urls:
-        - "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
-        - "https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/"
-
-    - finding: "FT's expanded deal portfolio — OpenAI + Google + ProRata, no Meta"
-      description: |
-        FT now has financial ties with three AI companies:
-        OpenAI (licensing, $5-10M/yr, Apr 2024), Google (News AI pilot,
-        Feb 2026), and ProRata.ai (content licensing). FT is one of the
-        few publications in the dataset with deals across multiple
-        AI search competitors — while having zero Meta deal. Coverage
-        pattern matches: Meta (no deal) gets balanced-adversarial
-        treatment with sustained investigative reporting; OpenAI (deal)
-        gets neutral-to-positive with preferential access for scoops;
-        Google (new deal) getting measurably less adversarial framing
-        than Meta despite comparable or greater privacy concerns.
-      significance: "FT's three-deal portfolio vs zero Meta deal is the most lopsided financial relationship set for any 'respectable' business publication"
-      source_urls:
-        - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-        - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
-
-    - finding: "Google ad revenue dependency paradox — publishers suing their lifeline"
-      description: |
-        Publishers' own antitrust lawsuit filings (SDNY, Jan 2026) reveal a
-        structural paradox: publishers are suing Google for suppressing ad
-        revenue while simultaneously admitting TOTAL DEPENDENCY on Google's
-        ad exchange (AdX) for their financial survival. Key admissions under
-        oath in federal complaints:
-
-        Vox Media (The Verge parent, now PMC): "relies on digital advertising
-        for well over half of its revenue" and "any revenue generated from
-        subscriptions and other non-advertising sources could not, alone, fund
-        the volume and breadth of Vox Media's high-quality content."
-
-        The Atlantic: "cannot forgo the significant revenue it earns from the
-        Google Ads demand available only through AdX" and "The Atlantic does
-        not have an alternative way to access advertising spending from the
-        long tail of small- or medium-sized advertisers."
-
-        Advance Publications (Condé Nast/WIRED parent): "Advance has relied
-        on digital advertising for a significant percentage of its revenues"
-        and has "not shared equally with Google in this massive digital
-        advertising market."
-
-        This creates a THREE-LAYER Google financial relationship for
-        WIRED, The Verge, and The Atlantic:
-        (1) ADVERSARIAL LITIGATION — actively suing for damages
-        (2) ESSENTIAL DEPENDENCY — cannot survive without Google AdX revenue
-        (3) COERCIVE — Google threatens to withdraw News Showcase fees if
-        publishers refuse AI training rights (News AI pilot, Jun 2026)
-
-        Despite this triple-adversarial Google relationship, these same
-        publications cover META more adversarially than Google. The
-        explanation: dependency creates reluctance to push too hard on
-        Google (burning the lifeline), while Meta's competitors (OpenAI,
-        Amazon, Apple, Microsoft) pay these publishers via AI licensing,
-        creating incentive to frame AI/privacy concerns as META-specific
-        rather than industry-wide.
-      significance: "Publisher lawsuit self-admissions prove Google advertising dependency, explaining why triple-adversarial Google relationship still produces less adversarial Google coverage than Meta coverage — dependency creates editorial restraint"
-      source_urls:
-        - "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
-        - "https://ppc.land/content/files/2026/01/1768500307197.pdf"
-        - "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
-
-    - finding: "The Atlantic's Apple News+ revenue dependency — second Apple financial link"
-      description: |
-        The Atlantic's chief growth officer Megha Garibaldi told Digiday
-        (May 2025) that Apple is "by far the most valuable syndication
-        partner for The Atlantic" with "a consistent increase in engagement
-        on the platform month over month." Apple News+ has been an Atlantic
-        partner since 2019 launch. Revenue model: publishers get 50% of
-        $12.99/mo subscription revenue based on time-spent engagement share.
-
-        This creates a SECOND undisclosed Apple financial link for The Atlantic,
-        independent of the LPJ Trust's ~$17B AAPL holdings:
-        (1) OWNERSHIP CHAIN: LPJ Trust (Emerson Collective) → $17B+ Apple stock
-        (2) PLATFORM REVENUE: Apple News+ engagement-based payments — described
-        as their MOST VALUABLE syndication partnership, above any other platform.
-
-        Combined, The Atlantic has TWO distinct Apple financial relationships
-        (ownership equity + platform revenue) and ZERO Meta financial
-        relationships. This doubles the Apple coverage incentive previously
-        documented.
-      significance: "Doubles The Atlantic's Apple financial incentive — ownership equity PLUS platform revenue creates strongest publisher-entity alignment in dataset"
-      source_urls:
-        - "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
-        - "https://www.fool.com/investing/2019/07/01/apple-news-is-already-hitting-a-roadblock.aspx"
-
-
-      description: |
-        Digiday's Dec 2025 publisher scorecard for Big Tech AI licensing:
-        Google: 2/10 aggregate (willingness to pay 2/10, transparency 2/10,
-        traffic impact 1/10, AI crawler behavior 3/10). Amazon: 6/10
-        aggregate (13+ licensing partners, 200+ claimed deals, no lawsuits).
-        OpenAI: not scored separately but described as having the most
-        publisher deals. This quantifies the industry perception gap:
-        Google is viewed as the worst partner despite having the largest
-        existing commercial relationships (3,000+ News Showcase partners).
-      significance: "Industry perception data supporting differential coverage predictions"
-      source_url: "https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/"
-
+      Despite this triple-adversarial Google relationship, these same
+      publications cover META more adversarially than Google. The
+      explanation: dependency creates reluctance to push too hard on
+      Google (burning the lifeline), while Meta's competitors (OpenAI,
+      Amazon, Apple, Microsoft) pay these publishers via AI licensing,
+      creating incentive to frame AI/privacy concerns as META-specific
+      rather than industry-wide.
+    significance: Publisher lawsuit self-admissions prove Google advertising dependency,
+      explaining why triple-adversarial Google relationship still produces less adversarial
+      Google coverage than Meta coverage — dependency creates editorial restraint
+    source_urls:
+    - http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
+    - https://ppc.land/content/files/2026/01/1768500307197.pdf
+    - https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on
+  - finding: The Atlantic's Apple News+ revenue dependency — second Apple financial
+      link
+    description: |
+      Digiday's Dec 2025 publisher scorecard for Big Tech AI licensing:
+      Google: 2/10 aggregate (willingness to pay 2/10, transparency 2/10,
+      traffic impact 1/10, AI crawler behavior 3/10). Amazon: 6/10
+      aggregate (13+ licensing partners, 200+ claimed deals, no lawsuits).
+      OpenAI: not scored separately but described as having the most
+      publisher deals. This quantifies the industry perception gap:
+      Google is viewed as the worst partner despite having the largest
+      existing commercial relationships (3,000+ News Showcase partners).
+    significance: Industry perception data supporting differential coverage predictions
+    source_urls:
+    - https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
+    - https://www.fool.com/investing/2019/07/01/apple-news-is-already-hitting-a-roadblock.aspx
+    source_url: https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/
   confounding_factors:
-    - "Meta has genuinely more privacy and child safety issues in 2025-2026 than OpenAI"
-    - "Editorial culture and journalist specialization affect tone independently of financial ties"
-    - "Some adversarial coverage predates licensing deals"
-    - "OpenAI is newer and has less historical baggage for adversarial framing"
-    - "Google's objectively greater financial harm to publishers (ad revenue suppression, AI Overviews traffic cannibalization, active adtech antitrust litigation) should predict even MORE adversarial Google coverage — yet Meta receives more. This WEAKENS the 'Meta deserves it' confound."
-
+  - Meta has genuinely more privacy and child safety issues in 2025-2026 than OpenAI
+  - Editorial culture and journalist specialization affect tone independently of financial
+    ties
+  - Some adversarial coverage predates licensing deals
+  - OpenAI is newer and has less historical baggage for adversarial framing
+  - Google's objectively greater financial harm to publishers (ad revenue suppression,
+    AI Overviews traffic cannibalization, active adtech antitrust litigation) should
+    predict even MORE adversarial Google coverage — yet Meta receives more. This WEAKENS
+    the 'Meta deserves it' confound.
   methodology_limitations:
-    - "Tone scores are estimated from qualitative assessment, not systematic NLP measurement"
-    - "Sample sizes per publication×entity pair are small (5-20 articles each)"
-    - "Cannot fully control for newsworthiness of events driving coverage"
-    - "Financial deal values are often undisclosed; estimates vary"
-    - "Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications over time — need longitudinal tracking"
-    - "Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage effects have not been measured"
-
-  last_updated: "2026-08-05T12:00:00-07:00"
+  - Tone scores are estimated from qualitative assessment, not systematic NLP measurement
+  - Sample sizes per publication×entity pair are small (5-20 articles each)
+  - Cannot fully control for newsworthiness of events driving coverage
+  - Financial deal values are often undisclosed; estimates vary
+  - Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications
+    over time — need longitudinal tracking
+  - Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage
+    effects have not been measured
+  last_updated: '2026-08-05T12:00:00-07:00'
   update_notes: |
     Type C iteration (Aug 5, noon): Added two new aggregate findings.
     (1) Google ad revenue dependency paradox — publishers' own SDNY antitrust
@@ -2839,23 +2627,17 @@ aggregate_findings:
     Also updated The Atlantic and The Verge Google relationships to
     adversarial_litigation with dependency admissions from lawsuit filings.
     Added advertising_dependency as new relationship type.
-
-  # -----------------------------------------------------------------
-  # WIRED GEAR DESK: THE CREEP PARADOX (Aug 2026)
-  # Cross-entity analysis of Julian Chokkattu & Boone Ashworth
-  # -----------------------------------------------------------------
   wired_gear_desk_cross_entity:
-    finding_name: "The Creep Paradox"
-    date_analyzed: "2026-08-05"
+    finding_name: The Creep Paradox
+    date_analyzed: '2026-08-05'
     analysts:
-      - name: Julian Chokkattu
-        role: Reviews Editor (Senior Editor for Gear)
-        key_article: "Meta Is Charging a Subscription for Smart Glasses Features"
-        key_podcast: "Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)"
-      - name: Boone Ashworth
-        role: Staff Writer
-        key_podcast: "Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)"
-
+    - name: Julian Chokkattu
+      role: Reviews Editor (Senior Editor for Gear)
+      key_article: Meta Is Charging a Subscription for Smart Glasses Features
+      key_podcast: 'Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)'
+    - name: Boone Ashworth
+      role: Staff Writer
+      key_podcast: 'Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)'
     finding_summary: |
       WIRED's Gear desk applies 'creep' and 'mass surveillance' framing exclusively
       to Meta's smart glasses (1 camera) while covering Snap Spectacles (4 cameras)
@@ -2865,17 +2647,16 @@ aggregate_findings:
       and 'a tool for mass surveillance'; Google episode titled 'Google's Return'
       (neutral/aspirational). Snap has more cameras, higher price, mandatory subscription —
       receives zero surveillance framing.
-
     asymmetry_evidence:
       meta_surveillance_terms: 4
       snap_surveillance_terms: 0
       google_surveillance_terms: 0
-      meta_price: "$299 base + $20/mo optional"
-      snap_price: "$2,195 + $99/mo required"
-      google_price: "TBD"
+      meta_price: $299 base + $20/mo optional
+      snap_price: $2,195 + $99/mo required
+      google_price: TBD
       snap_cameras: 4
       meta_cameras: 1
-      financial_correlation: "Meta pays Condé Nast $0. Google provides ad revenue. Snap uses OpenAI (which pays Condé Nast)."
-
-    test_file: "tests/test_chokkattu_ashworth_cross_entity.py"
+      financial_correlation: Meta pays Condé Nast $0. Google provides ad revenue.
+        Snap uses OpenAI (which pays Condé Nast).
+    test_file: tests/test_chokkattu_ashworth_cross_entity.py
     test_count: 28
