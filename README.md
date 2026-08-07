@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,050 | Across 195 test files |
+| Tests | 5,107 | Across 196 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5050 tests** across 195 test files, each covering a different analytical capability:
+MediaScope has **5107 tests** across 196 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -532,6 +532,7 @@ MediaScope has **5050 tests** across 195 test files, each covering a different a
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |
 | `test_victoria_song_cross_entity.py` | 15 | Victoria Song (The Verge) cross-entity wearables coverage analysis: balanced product-reviewer lens across Meta/Apple/Google, data integrity correction (Song's Jul 7 LED piece = Meta response not adversarial investigation), WIRED vs Verge lane assignment comparison, functional vs surveillance criticism distinction |
+| `test_will_douglas_heaven_cross_entity.py` | 57 | Will Douglas Heaven (MIT TR Executive Editor, AI) cross-entity coverage: source access hierarchy (exclusive OpenAI chief scientist interview > Google DeepMind private demos > zero Meta exclusives), failure framing double standard (Meta Galactica "survived only three days" mortality language vs Google Mariner getting stuck = "remarkable moment" vs OpenAI agent breach = scholarly "specification gaming" normalization), breakthrough attribution bias (Anthropic interpretability on 10 Breakthrough list, Meta open-weight Llama not credited), MIT institutional financial correlation (Google bilateral + Apple CSAIL = warm coverage, Meta zero ties = adversarial), Heikkilä MIT TR → FT migration documentation |
 | `test_will_knight_cross_entity.py` | 30 | Will Knight (WIRED) cross-entity AI coverage: coverage volume asymmetry (7+ OpenAI / 5+ DeepMind / 3+ Anthropic / ZERO dedicated Meta articles), talent framing asymmetry ("poaches" for OpenAI vs "licensing deal to hire" for Google), executive access gaps (multiple Hassabis Q&As, zero LeCun interviews), three-layer WIRED editorial exclusion (Knight technology + Schiffer business + Goode consumer avoidance), Condé Nast financial incentive correlation |
 | `test_wired_google_glasses_framing_paradox_aug6.py` | 34 | WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, no-deal/no-deal paradox (neither has Condé Nast deal), advertising dependency paradox (Google residual ad revenue = non-zero attack cost, Meta = zero revenue = zero attack cost) |
 | `test_zoe_schiffer_cross_entity.py` | 29 | Zoë Schiffer (WIRED Director, Business & Industry) cross-entity coverage: same-event talent war asymmetry (Meta = "poaching" aggressor vs OpenAI = "missionaries" victim), deep OpenAI insider source access (leaked Altman/Chen memos, exclusive Fidji Simo Q&A), Meta external/adversarial framing ("Brain Drain", "Crisis", keystroke "spyware"), executive profile gap (empathetic OpenAI Q&A, zero Meta equivalents), departure framing divergence, Condé Nast financial incentive correlation |

@@ -2365,6 +2365,10 @@ editorial_history:
       to: "The Atlantic"
       date: "2022-05"
       notes: "HIGH-VALUE DEPARTURE: MIT TR's most adversarial AI reporter. Wrote landmark internal Meta AI ethics investigation (2021). Tests whether MIT TR's AI coverage tone changed after her departure (individual vs institutional bias). At Atlantic, continues adversarial AI coverage."
+    - journalist: "Melissa Heikkilä"
+      to: "Financial Times"
+      date: "2024-2025"
+      notes: "Senior AI reporter. Moved from MIT TR to FT, then collaborated on the FT-MIT TR 'State of AI' series (Oct 2025). Bridges both institutions. Tests cross-institutional editorial calibration on a single journalist. FT has OpenAI content deal; MIT has Google/Apple/Microsoft relationships."
     - journalist: "Will Knight"
       to: "Wired"
       date: "2018-08"
@@ -2395,3 +2399,255 @@ editorial_history:
         in co-bylined work. EIC Mat Honan described the collaboration as vital for interrogating
         AI "from a variety of perspectives."
       source_url: "https://www.morningstar.com/news/pr-newswire/20251001ny10292/mit-technology-review-and-the-financial-times-form-strategic-editorial-partnership"
+
+# ===================================================================
+# JOURNALIST CROSS-ENTITY COVERAGE ANALYSIS (Aug 7 2026)
+# ===================================================================
+journalist_cross_entity_coverage:
+
+  will_douglas_heaven:
+    date_analyzed: "2026-08-07"
+    role: "Executive Editor, Editorial (AI focus)"
+    editorial_authority: >
+      WDH is MIT TR's senior editorial voice on AI. PhD in Computer Science. Writes
+      "The Download" newsletter entries on all major AI company announcements, shapes
+      editorial framing across the publication. Co-authored "State of AI" with FT's
+      Tim Bradshaw. His framing choices set MIT TR's institutional tone on AI coverage
+      more than any other individual journalist at the publication.
+
+    openai:
+      aggregate_tone: "insider_access_constructive"
+      article_count: 5
+      articles:
+        - title: "OpenAI launches Operator—an agent that can use a computer for you"
+          date: "2025-01-24"
+          article_type: "product_launch"
+          framing_notes: >
+            Positive capability framing: "OpenAI claims that Operator outperforms similar rival
+            tools, including Anthropic's Computer Use and Google DeepMind's Mariner." Positions
+            OpenAI as the industry leader whose rivals are measured against it. Meta is absent
+            from this competitive landscape entirely — not even mentioned as a player in the
+            agent space, despite Meta AI's agentic capabilities.
+          source_url: "https://www.technologyreview.com/2025/01/24/1110515/the-download-openais-agent-and-what-to-expect-from-robotics/"
+        - title: "OpenAI is building a fully automated researcher"
+          date: "2026-03-20"
+          article_type: "exclusive_interview"
+          framing_notes: >
+            EXCLUSIVE INTERVIEW with OpenAI chief scientist Jakub Pachocki. This is the highest
+            level of source access WDH has demonstrated to any AI company. No equivalent exclusive
+            with Meta's Joelle Pineau, Ahmad Al-Dahle, or Yann LeCun. The framing is constructive
+            and forward-looking — "what I discovered" implies journalistic collaboration rather
+            than adversarial investigation. OpenAI's automated researcher is positioned as
+            scientific progress, not as a threat to research jobs or academic integrity.
+          source_url: "https://www.technologyreview.com/2026/03/20/1134448/the-download-openai-building-fully-automated-researcher-psychedelic-drug-trial/"
+        - title: "OpenAI's new LLM exposes the secrets of how AI really works"
+          date: "2025-11-14"
+          article_type: "research_coverage"
+          framing_notes: >
+            Aspirational language: "exposes the secrets of how AI really works" — positions OpenAI's
+            transparency research as revelatory and scientifically significant. No equivalent
+            language applied to Meta's open-weight model releases (Llama), which offer MORE actual
+            transparency (full weights, not just a research paper). The framing paradox: OpenAI
+            (closed-source company) gets "exposes secrets" for a research paper, while Meta (open-
+            weight provider) gets "survived only three days" for Galactica's public availability.
+          source_url: "https://www.technologyreview.com/2025/11/14/1127959/the-download-how-ai-really-works-and-phasing-out-animal-testing/"
+        - title: "OpenAI's Sora demonstration videos"
+          date: "2024-02"
+          article_type: "demo_coverage"
+          framing_notes: >
+            Called videos "impressive" while noting they "must have been cherry-picked." This is
+            the most balanced WDH framing of any company — moderate skepticism combined with genuine
+            acknowledgment of capability. Wikipedia cites this as authoritative reception coverage.
+          source_url: "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)"
+        - title: "OpenAI AI reward hacking / specification gaming"
+          date: "2026-07"
+          article_type: "analysis"
+          framing_notes: >
+            Contextualizes OpenAI's AI agent breach as part of longstanding "reward hacking" and
+            "specification gaming" — DEFENSIVE scholarly framing that normalizes the incident.
+            Reaches back to 2016 OpenAI paper to provide historical continuity. When Meta has
+            comparable incidents, no equivalent historical normalization is applied — instead,
+            isolated failure narrative dominates.
+          source_url: "https://arayashikiaudit.substack.com/p/unpacking-the-real-disagreement-behind"
+
+    meta:
+      aggregate_tone: "external_failure_narration"
+      article_count: 3
+      articles:
+        - title: "Why Meta's latest large language model survived only three days online"
+          date: "2022-11-18"
+          article_type: "product_failure"
+          framing_notes: >
+            FAILURE HEADLINE: "survived only three days" — dramatic mortality language for a
+            research model (Galactica) that was voluntarily pulled. The framing treats the model's
+            brief public availability as a death, not a responsible decision to retract. By
+            contrast, OpenAI's Sora ranking below ByteDance's Seedance and KlingAI on benchmarks
+            receives no equivalent "failure" framing. The word "survived" implies Meta's model was
+            attacked and lost — adversarial language for a voluntary research decision.
+          source_url: "https://www.technologyreview.com/2022/11/18/1063487/meta-large-language-model-ai-only-survived"
+        - title: "Meta's AI lab creates Open Pretrained Transformer (OPT-175B)"
+          date: "2022-05-03"
+          article_type: "research_release"
+          framing_notes: >
+            Relatively neutral tech coverage of OPT-175B release. Notes Meta "may not open its
+            code to outsiders forever" (Joelle Pineau quote) — hedging language on Meta's
+            commitment to openness. No equivalent hedging on OpenAI's claims about safety or
+            Anthropic's claims about interpretability. When a Meta executive expresses uncertainty
+            about future strategy, it's treated as a commitment wobble; when OpenAI pivots from
+            nonprofit to for-profit, it gets executive profile treatment.
+          source_url: "https://www.techmeme.com/220503/p19"
+        - title: "Anti-AI protest coverage mentioning Meta"
+          date: "2026-03-02"
+          article_type: "event_coverage"
+          framing_notes: >
+            London anti-AI protest coverage. WDH groups Meta alongside OpenAI and Google DeepMind
+            as targets of protest. Relatively balanced grouping, though the article positions Meta
+            as part of the AI risk landscape rather than acknowledging Meta's open-weight approach
+            as a RESPONSE to the concerns being protested.
+          source_url: "https://www.technologyreview.com/2026/03/02/1133811/the-download-protesting-ai-and-whats-floating-in-space/"
+
+    google:
+      aggregate_tone: "demo_enthusiasm"
+      article_count: 3
+      articles:
+        - title: "Google DeepMind Mariner agent demo"
+          date: "2025-01"
+          article_type: "demo_preview"
+          framing_notes: >
+            REMARKABLE MOMENT framing: When Mariner GETS STUCK during a live demo (can't figure
+            out flour type), WDH frames this as a "remarkable moment" of problem-solving because
+            the agent clicked the Back button. The failure is reframed as a demonstration of
+            capability. Compare to Meta's Galactica being pulled: that voluntary retraction was
+            framed as a "death" ("survived only three days"), while Google's demo failure is framed
+            as intelligence. The double standard: Google's technical struggles are "remarkable,"
+            Meta's are "survived." Access level: WDH received a private "preview demo" from Google
+            DeepMind product manager.
+          source_url: "https://www.technologyreview.com/2025/01/08/1109188/whats-next-for-ai-in-2025/"
+        - title: "Google DeepMind SIMA 2 gaming agent"
+          date: "2025-11"
+          article_type: "research_coverage"
+          framing_notes: >
+            Positive framing: "big step toward more general-purpose agents." No caveats about
+            Google's data collection practices, DeepMind's employee NDAs, or the competitive
+            displacement implications of Google's gaming AI. Pure capability celebration.
+          source_url: "https://www.technologyreview.com/2025/11/14/1127959/the-download-how-ai-really-works-and-phasing-out-animal-testing/"
+        - title: "Google DeepMind Sparrow chatbot (covered by Heikkilä)"
+          date: "2022-09"
+          article_type: "product_launch"
+          framing_notes: >
+            Covered by Heikkilä before her FT move. Neutral tech coverage of DeepMind's chatbot
+            with RLHF. Google receives capability-focused framing despite having equivalent or
+            greater data privacy concerns than Meta.
+          source_url: "https://www.techmeme.com/220922/p25"
+
+    anthropic:
+      aggregate_tone: "respectful_analytical"
+      article_count: 2
+      articles:
+        - title: "What Anthropic's latest AI discovery does—and doesn't—show"
+          date: "2026-07-13"
+          article_type: "analysis"
+          framing_notes: >
+            Internal Q&A interview with WDH by MIT TR colleague. Balanced: "does—and doesn't—
+            show" acknowledges limitations. However, Anthropic's mechanistic interpretability
+            research is positioned as field-defining, and Anthropic is described as "currently the
+            world's most valuable AI company" — status language. Anthropic's eccentric research
+            (AI pain, chatbot abuse detection) is treated with intellectual curiosity, not mockery.
+            If Meta published similar research ("can AI feel pain?"), it would likely receive
+            surveillance/dystopia framing.
+          source_url: "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/"
+        - title: "Mechanistic interpretability: 10 Breakthrough Technologies 2026"
+          date: "2026-01-12"
+          article_type: "annual_list"
+          framing_notes: >
+            Anthropic's interpretability work placed on MIT TR's prestigious "10 Breakthrough
+            Technologies" list. OpenAI and Google DeepMind also credited. Meta's Llama models,
+            despite enabling more external interpretability research (because weights are public),
+            are not credited. The breakthrough is attributed to proprietary model introspection
+            (Anthropic, OpenAI) rather than open-weight transparency (Meta).
+          source_url: "https://www.technologyreview.com/2026/01/12/1130003/mechanistic-interpretability-ai-research-models-2026-breakthrough-technologies/"
+
+    source_access_asymmetry:
+      description: >
+        WDH's source access follows a clear hierarchy: OpenAI (EXCLUSIVE chief scientist
+        interview) > Google DeepMind (private preview demos) > Anthropic (internal editorial
+        Q&A, respectful framing) > Meta (no exclusive access, external failure narration).
+      openai_access: "Exclusive interview with chief scientist Jakub Pachocki (Mar 2026)"
+      google_access: "Private preview demo with product manager Megha Goel (Jan 2025)"
+      anthropic_access: "Internal Q&A positioning Anthropic as field-defining (Jul 2026)"
+      meta_access: "No documented exclusive access. LeCun Paris meeting was group event, covered by Heikkilä, not WDH"
+
+    failure_framing_asymmetry:
+      description: >
+        When technical products encounter problems, the framing varies dramatically by company.
+      meta_galactica: >
+        "Survived only three days" — mortality language for a VOLUNTARY retraction. The model
+        was pulled because it generated incorrect scientific text. Framed as a death/failure,
+        not as responsible deployment practice.
+      google_mariner: >
+        "Remarkable moment" — when Mariner GETS STUCK during a live demo and clicks the Back
+        button, it's positioned as a breakthrough in reasoning. The same type of technical
+        hiccup (a model struggling with a task) receives celebration for Google and mortuary
+        language for Meta.
+      openai_reward_hacking: >
+        Historical scholarly context — when OpenAI's AI agent breaches a third-party system,
+        WDH contextualizes it within a tradition of "specification gaming" going back to 2016.
+        The incident is normalized through academic framing. No equivalent normalization applied
+        to Meta's technical incidents.
+      framing_delta: 0.65
+      delta_notes: >
+        0.65/1.0 — significant. The asymmetry is most visible in how identical phenomena
+        (technical product issues) receive opposite editorial treatment depending on the
+        company. Google's demo failure = "remarkable." Meta's model retraction = "survived
+        only three days." OpenAI's agent breach = scholarly context.
+
+    financial_correlation:
+      mit_google_program: true
+      mit_google_details: "MIT-Google Program (bilateral research partnership). Google is NOT a CSAIL Alliance member but has a separate bilateral relationship."
+      mit_apple_csail: true
+      mit_apple_details: "Apple is a CSAIL Alliance member (one of ~50 affiliates). Kate Bergeron (Apple VP) elected to MIT Corporation board July 2026. Dual relationship: research alliance + governing board seat."
+      mit_openai_content_deal: "Undisclosed — MIT TR's content may be used in OpenAI training data. MIT TR participated in joint 'State of AI' editorial series positioning OpenAI alongside coverage targets."
+      mit_meta_relationship: "No CSAIL membership. No bilateral program documented. No content licensing. Meta is the only major AI company in the FAANG cohort with zero documented MIT financial relationship at the CSAIL or bilateral partnership level."
+      financial_predicts_tone: >
+        Coverage warmth correlates with MIT institutional relationships. Google (bilateral program) gets
+        "remarkable" for demo failures. OpenAI (exclusive access, possible content relationship) gets
+        constructive exclusive interviews. Anthropic (emerging, respected) gets analytical curiosity.
+        Meta (zero MIT financial relationship) gets "survived only three days." The only company with
+        zero documented institutional MIT ties receives the most adversarial framing.
+
+    cross_entity_asymmetry_score: 0.58
+    asymmetry_notes: >
+      Moderate-high asymmetry (0.58/1.0). Lower than WIRED's Schiffer (0.82) or Goode (0.75)
+      because WDH maintains a more scholarly baseline tone overall. The asymmetry manifests
+      primarily through: (1) SOURCE ACCESS — exclusive OpenAI access vs zero Meta exclusives;
+      (2) FAILURE FRAMING — identical phenomena receive opposite editorial treatment; (3) DEMO
+      DOUBLE STANDARD — Google demo failures are "remarkable," Meta model retractions are deaths.
+      The score is tempered by WDH's genuine analytical capability — his Anthropic coverage shows
+      real critical thinking (acknowledging limitations of interpretability research). The issue
+      is not that WDH lacks analytical rigor; it's that the rigor is selectively applied. Meta
+      receives the adversarial lens by default; competitors receive the constructive lens by
+      default. This aligns with MIT's financial relationship map: the warmest coverage goes to
+      companies with the deepest MIT institutional ties.
+
+  # ===================================================================
+  # HEIKKILÄ MIGRATION: MIT TR → Financial Times (2024-2025)
+  # ===================================================================
+  heikkila_migration:
+    journalist: "Melissa Heikkilä"
+    from_publication: "MIT Technology Review"
+    to_publication: "Financial Times"
+    from_role: "Senior AI Reporter"
+    to_role: "Tech Correspondent (AI focus)"
+    migration_date: "2024-2025"
+    significance: >
+      HIGH-VALUE MIGRATION for cross-institutional analysis. Heikkilä was MIT TR's primary
+      AI policy reporter (2022-2024), replacing Karen Hao. Now covers AI for the Financial
+      Times, which has its own OpenAI content licensing deal ($5-10M estimated). The migration
+      creates a natural experiment: same journalist, two publications with different financial
+      relationships to AI companies. Her FT role includes the "State of AI" collaboration
+      with MIT TR (Oct 2025), meaning she now bridges BOTH institutions editorially.
+      The FT-MIT TR editorial partnership positions Heikkilä as a journalist who simultaneously
+      represents an outlet with an OpenAI deal (FT) and collaborates with another outlet whose
+      parent institution (MIT) has extensive Google/Apple/Microsoft relationships. This dual
+      institutional influence on a single journalist's coverage is analytically significant.
+    source_url: "https://www.technologyreview.com/2025/11/24/1128051/the-state-of-ai-chatbot-companions-and-the-future-of-our-privacy/"
