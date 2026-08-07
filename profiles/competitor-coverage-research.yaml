@@ -827,6 +827,33 @@ publications:
       the same individual does both access and adversarial for one entity,
       but only access for deal partners.
 
+    pmc_deal_fragmentation_aug7:
+      finding: "PMC Deal Fragmentation Paradox"
+      date: "2026-08-07"
+      summary: |
+        When Vox Media was split between Lupa Systems (NY Mag, Vox.com,
+        podcasts, ~$300M, closed Jul 8 2026) and PMC (The Verge, Eater,
+        SB Nation, etc., June 18 2026), three AI-related content deals
+        signed with "Vox Media" as a single legal entity became
+        fragmented across two successor companies:
+        (1) OpenAI content licensing (May 2024): deal scope included
+            Forte data platform (went to PMC) and The Verge's content
+        (2) Microsoft PCM co-design pilot (Feb 2026): "Vox Media LLC"
+            named as co-design partner
+        (3) ProRata AI revenue share (2024)
+        Post-fragmentation, PMC's financial matrix is:
+        Google=adversarial (suing), OpenAI=positive (inherited deal),
+        Microsoft=positive (PCM+Azure), Meta=zero, Apple=zero.
+        This predicts adversarial Google + softer OpenAI coverage —
+        the opposite of observed editorial output. PMC claims Google
+        AI Overviews cut affiliate revenue >33% from peak, yet
+        editorial hostility remains directed at Meta.
+      source_urls:
+        - "https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/"
+        - "https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/"
+        - "https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
+        - "https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
+
   # -----------------------------------------------------------------
   # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
   # Financial ties: OpenAI (licensing, May 2024), Apple (~$17B LPJ

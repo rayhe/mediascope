@@ -1658,6 +1658,120 @@ microsoft_openai_financial_axis:
 #   AI deal values to total annual revenue for each publication.
 # ===================================================================
 
+# ===================================================================
+# PMC DEAL FRAGMENTATION PARADOX — Type C, Aug 7 2026
+#
+# When Vox Media was split between Lupa Systems and PMC in May-June
+# 2026, AI content licensing deals signed with "Vox Media" as a single
+# legal entity became fragmented across two successor companies.
+# The Verge's financial incentive structure is now ambiguous.
+# ===================================================================
+
+pmc_deal_fragmentation:
+  overview: |
+    Three AI-related financial relationships were signed with "Vox Media"
+    (later "Vox Media LLC") as a single legal entity. When Vox Media was
+    split — Lupa Systems acquired NY Mag/Vox.com/podcasts (May 2026, closed
+    Jul 8), PMC acquired The Verge/Eater/SB Nation/etc. (June 18, 2026) —
+    these contracts became orphaned across two successor companies:
+
+    1. OpenAI Content Licensing (May 29, 2024): Multi-year deal covering
+       "Vox Media's archives" + "current reporting" + "Forte" data platform
+       + OpenAI tech for product development. Forte and The Verge went to
+       PMC/PMX. The "Vox Media" brand went to Lupa. Contract signatory
+       entity was "Vox Media" — which corporate successor holds the deal?
+
+    2. Microsoft PCM Pilot (co-designed Feb 2026): "Vox Media LLC" listed
+       as one of 7 co-design partners for Publisher Content Marketplace.
+       PCM is an ongoing marketplace relationship. Concert (Vox Media's ad
+       marketplace, also went to PMC) and Forte were both part of the
+       operational integration. Again, "Vox Media LLC" was the named entity.
+
+    3. ProRata AI (2024): Content licensing via ProRata's marketplace with
+       50% revenue share model. Signed with "Vox Media."
+
+    POST-FRAGMENTATION: It is unclear whether these deals:
+    (a) Transferred to PMC/PMX with the assets they covered (The Verge's
+        content, Forte, Concert)
+    (b) Remained with Lupa's "Vox Media" (which retains the corporate name)
+    (c) Were voided by the corporate restructuring
+    (d) Are being renegotiated with both successor entities
+
+    This matters because The Verge's financial incentive structure depends
+    on which deals followed it to PMC. If the OpenAI deal transferred, PMC
+    has BILATERAL financial flows with OpenAI (licensing revenue IN + Azure
+    enterprise agreement costs OUT). If it stayed with Lupa, The Verge's
+    parent has no OpenAI revenue — but The Verge's content may still be
+    flowing to OpenAI under a contract held by a different company.
+
+  pmc_financial_matrix:
+    google: adversarial_litigation
+    openai: licensing (inherited, status unclear)
+    microsoft: enterprise_customer + pcm_pilot (inherited, status unclear)
+    meta: none
+    apple: none
+    amazon: none (standard affiliate only)
+
+  perverse_incentive: |
+    PMC's financial position creates a clear directional prediction:
+    - Google: ADVERSARIAL (active federal antitrust lawsuit, D.C. district
+      court, filed Sep 13, 2025; Google's third motion to dismiss filed
+      Jan 13, 2026). PMC claims affiliate revenue down >33% from peak due
+      to Google AI Overviews. PMC was first major US publisher to sue Google
+      over AI features. Financial incentive: MOST adversarial coverage.
+    - OpenAI: POSITIVE (content licensing deal, Azure enterprise customer).
+      Financial incentive: softer coverage.
+    - Microsoft: POSITIVE (PCM co-design partner, Azure OpenAI customer).
+      Financial incentive: softer coverage.
+    - Meta: ZERO (no deal, no negotiation, no litigation).
+      Financial incentive: NEUTRAL (no reason for soft OR hard coverage).
+
+    Yet The Verge's editorial output reverses these predictions:
+    Meta receives the most adversarial coverage, while Google — the company
+    PMC is literally suing in federal court for destroying its business —
+    receives less hostile editorial treatment. The editorial response to
+    the Google lawsuit has been disclosure ("Disclosure is our brand") not
+    adversarial editorial coverage. The Verge has NEVER disclosed its
+    OpenAI or Microsoft financial relationships in coverage of those companies.
+
+  pmc_google_lawsuit:
+    filed: "2025-09-13"
+    court: "U.S. District Court for the District of Columbia"
+    case_type: "Antitrust (Sherman Act §1, §2) + unjust enrichment"
+    claims: 6
+    claim_list:
+      - "Reciprocal dealing (§1)"
+      - "Reciprocal dealing (§2)"
+      - "Unlawful monopoly leveraging"
+      - "Monopolization"
+      - "Attempted monopolization"
+      - "Common-law unjust enrichment"
+    google_mtd_filed: "2026-01-13"
+    google_mtd_number: 3
+    google_quote: "legally defective in every way"
+    pmc_affiliate_revenue_decline: ">33% from peak"
+    status: "Pending — no ruling on third MTD as of Aug 7, 2026"
+    significance: |
+      First major US publisher to sue Google over AI Overviews.
+      PMC claims Google forces publishers to permit AI summaries as a
+      condition of remaining in search results. Google calls this
+      "reciprocal dealing" claim meritless, citing publishers' ability
+      to opt out of indexing. Third motion to dismiss is Google's most
+      aggressive — calling the amended complaint "legally defective in
+      every way" and noting PMC's counsel represents Chegg in a
+      parallel action with "substantially the same legal theories."
+    source_urls:
+      - "https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
+      - "https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/"
+      - "https://decrypt.co/354532/google-seeks-dismissal-of-publisher-lawsuit-over-ai-search-summaries"
+
+  source_urls:
+    pmc_acquisition: "https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/"
+    reuters_acquisition: "https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/"
+    openai_vox_deal: "https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
+    microsoft_pcm: "https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
+    webwire_pmx: "https://www.webwire.com/ViewPressRel.asp?aId=356735"
+
 revenue_dependency_concentration:
   methodology: |
     Revenue Dependency Ratio = (Sum of known competitor AI deal values)

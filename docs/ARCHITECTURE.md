@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5235 tests across 199 test files (all from real articles)
+├── tests/                       # 5281 tests across 200 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -506,6 +506,7 @@ mediascope/
 │   ├── test_nyt_school_targeting.py  # NYT school targeting: education topic, National PTA entity, safety team overrule hypocrisy, role-based adversarial stance
 │   ├── test_nypost_muse_image_yanks_jul13.py  # NY Post Muse Image: capitulation verbs, Path C forced-retreat override, policy_reversal adversarial
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
+│   ├── test_pmc_deal_fragmentation_paradox_aug7.py # PMC Deal Fragmentation Paradox: Vox Media split orphaned 3 AI licensing deals (OpenAI, Microsoft PCM, ProRata AI), PMC v. Google antitrust (6 Sherman Act claims), perverse incentive direction predicts adversarial Google + softer OpenAI — opposite of observed Meta-focused hostility
 │   ├── test_policy_reversal_competitive_deficit.py # Policy reversal and competitive deficit framing device detection, documentary source extraction
 │   ├── test_competitive_displacement.py # Competitive displacement framing device (new — fills-vacuum temporal conjunction), entity cluster additions: AI Research Orgs (AI2), HuggingFace, Princeton, plus OpenAI cluster expansions (GPT-2, gpt-oss, Miles Brundage)
 │   ├── test_competitor_coverage.py # Competitor entity definitions, publication competitor_relationships validation, financial asymmetry patterns, source URL verification

@@ -1,4 +1,47 @@
 # MediaScope Iteration Log
+## 2026-08-07 05:00 PT — Type C: PMC Deal Fragmentation Paradox — Financial Incentive Mapping
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Vox Media split creates orphaned AI licensing deals across PMC successor company
+
+### KEY FINDING — PMC DEAL FRAGMENTATION PARADOX:
+
+When Vox Media was split between Lupa Systems (~$300M, NY Mag/Vox.com/podcasts, closed Jul 8 2026)
+and PMC (The Verge/Eater/SB Nation, Jun 18 2026), three AI content licensing deals signed with
+"Vox Media" as a single legal entity became orphaned across two successor companies:
+
+1. **OpenAI content licensing** (May 29, 2024): Deal scope included Forte data platform (went to PMC) and The Verge content archives
+2. **Microsoft PCM co-design pilot** (Feb 2026): "Vox Media LLC" named as co-design partner
+3. **ProRata AI** (2024): Revenue share deal
+
+### PERVERSE INCENTIVE DIRECTION:
+
+PMC's financial matrix creates a predictable incentive direction:
+- Google = **adversarial** (active federal antitrust suit filed Sep 13, 2025; Google's 3rd MTD filed Jan 13, 2026; PMC claims affiliate revenue down >33%)
+- OpenAI = **positive** (inherited licensing deal + Azure enterprise customer)
+- Microsoft = **positive** (PCM co-design + Azure OpenAI agreement)
+- Meta = **zero** (no deal, no negotiation, no litigation)
+
+This predicts adversarial Google + softer OpenAI coverage — the **opposite** of observed editorial
+output, where Meta receives the most adversarial treatment. This is a significant finding because
+it rules out simple financial incentive as the primary driver of The Verge's Meta coverage framing.
+
+### Sources:
+- PMC acquisition: https://www.adweek.com/dealroom/penske-media-vox-media-brands-pmx/
+- Reuters: https://www.reuters.com/business/rolling-stone-magazine-parent-buys-vox-media-digital-media-expansion-2026-06-18/
+- OpenAI/Vox deal: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+- Microsoft PCM: https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+- PMC v. Google: https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/
+- Google MTD: https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/
+- Decrypt (3rd MTD): https://decrypt.co/354532/google-seeks-dismissal-of-publisher-lawsuit-over-ai-search-summaries
+
+### Changes:
+- Created `tests/test_pmc_deal_fragmentation_paradox_aug7.py` — 46 tests, 10 classes, all passing
+- Updated `profiles/competitor-entities.yaml` — Added `pmc_deal_fragmentation` section
+- Updated `profiles/competitor-coverage-research.yaml` — Added finding under the-verge section
+- Updated README.md and docs/ARCHITECTURE.md — test count 5281, 200 files
+- 124/124 structural consistency tests passing, 0 regressions
+
 ## 2026-08-07 03:00 PT — Type B: Samsung Equivalence Paradox — Journalist Cross-Entity Tracking
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
