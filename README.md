@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,620 | Across 185 test files |
+| Tests | 4,709 | Across 187 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4655 tests** across 186 test files, each covering a different analytical capability:
+MediaScope has **4709 tests** across 187 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -564,6 +564,7 @@ MediaScope has **4655 tests** across 186 test files, each covering a different a
 | `test_type_c_financial_landscape_aug6.py` | 45 | Apple-OpenAI partnership collapse (3 phases: partnership→breach threat→trade secret suit), Google publisher class-action (Hachette/Cengage/Elsevier/Turow v. Google SDNY), UK CMA AI Overviews opt-out ruling (quadruple coercion), Reddit $60M/yr deal instability, cross-platform summary updates |
 | `test_type_c_advance_reddit_perplexity_triangle_aug6.py` | 40 | Advance-Reddit-Perplexity Triangle conflict (Advance sues Perplexity via Reddit while profiting from Perplexity via Condé Nast deal), Reddit AI deal renewal projections ($550M/yr Wells Fargo forecast), Reddit v. Perplexity DMCA ruling (Jul 31 2026 Engelmayer SDNY), Reddit ad cannibalization debate (Digiday), Amazon vs Microsoft marketplace evolution, Sam Altman 8.7% Reddit stake conflict |
 | `test_type_c_google_ad_dependency_aug6.py` | 41 | Google advertising dependency coercion (quadruple coercion structure: ad dependency, search traffic, Showcase fees, pilot deal exclusion), Alphabet Q2 2026 Network revenue ($7.3B, -0.7% YoY, 8.9% of total Google ad revenue), NYT Q2 2026 earnings (Aug 5: $762.5M revenue, stock -13%, CEO blamed Google traffic decline), Condé Nast Google traffic collapse (majority→25%, "plan for zero search," "death blow"), Advertising Dependency Paradox (publishers most harmed by Google direct fury at Meta), Meta zero-leverage contrast |
+| `test_type_c_microsoft_openai_axis_aug6.py` | 54 | Microsoft-OpenAI Financial Axis: unified financial ecosystem (Microsoft 27% of OpenAI at $135B, 20% revenue share through 2030, $250B Azure commitment), circular revenue flow (Content Revenue Axis), publisher dual exposure (Conde Nast + Vox Media + FT each have 2+ axis deals with 0 Meta deals), Conde Nast revenue pivot (Lynch: advertising no longer growth engine, plan for zero search traffic, AI licensing as existential pillar with OpenAI/Microsoft/Perplexity/Amazon), editorial independence paradox, Meta zero-leverage contrast |
 | `test_verge_anthropic_rogue_ai_comparison.py` | 35 | The Verge × Anthropic coverage analysis, "Accidentally" Paradox (Jul 2026 rogue AI incidents vs Meta glasses framing), three-tier model (pay→soft, neutral→factual, threaten→adversarial), reporter lane assignment extension, asymmetry verdict update |
 | `test_raymond_wong_cross_entity.py` | 29 | Raymond Wong (Gizmodo) cross-entity analysis: "Clean Control Paradox" — Gizmodo (zero financial ties) applies equal-opportunity criticism to Meta/OpenAI/Apple/Google/Snap, contrasting with WIRED's deal-driven asymmetry. Maxwell Zeff journalist migration (Gizmodo→TechCrunch→WIRED). Three-tier publication model validation. |
 | `test_verge_openai_coverage_asymmetry.py` | 28 | The Verge × OpenAI institutional coverage asymmetry: four-lane reporter system, io device paradox (camera-equipped AI wearable gets zero surveillance framing from OpenAI, 4+ terms for Meta), financial correlation, selective disclosure, reporter assignment taxonomy |

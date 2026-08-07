@@ -157,6 +157,80 @@ publications:
       is the ONLY major tech company that Condé Nast has no deal with
       AND no deal in progress with.
 
+    conde_nast_revenue_pivot:
+      overview: |
+        Condé Nast CEO Roger Lynch has explicitly abandoned advertising
+        as a growth engine (WSJ, Oct 2025; FT, Feb 2026; annual memo,
+        Mar 2026). The company's stated revenue strategy now centers on
+        events, subscriptions, commerce, and AI licensing deals — with
+        OpenAI, Perplexity, Microsoft, and Amazon specifically named.
+        This transforms AI licensing from supplementary income to an
+        EXISTENTIAL revenue pillar. When the CEO tells teams to "plan
+        as if search is zero" and names AI deals as growth replacements,
+        every financial incentive pushes editorial coverage toward
+        protecting those AI relationships.
+      lynch_statements:
+        - quote: "We don't expect advertising to be a growth engine for the business."
+          source: "WSJ interview, October 2025"
+          source_url: "https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/"
+        - quote: "Search will play a diminished role in our traffic and this is an assumption we are building our strategy around."
+          source: "Annual CEO memo, March 1 2026"
+          source_url: "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+        - quote: "Assume there's no search. You have to have your businesses planned as if search is zero."
+          source: "TBPN interview, May 13 2026"
+          source_url: "https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/"
+        - quote: "Google search is no longer a meaningful driver [of traffic]... another sort of death blow."
+          source: "Financial Times interview, February 27 2026"
+          source_url: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+      revenue_data_2025:
+        total_revenue_approx: "$2B (RocketReach)"
+        events_growth: "+40% YoY (Adweek, May 2026)"
+        events_projected_2026: "+22% YoY"
+        subscriptions_growth: "+10% YoY"
+        digital_subscriptions_growth: "+29% YoY"
+        commerce_growth: "+13% YoY"
+        branded_content_growth: "+9% YoY"
+        top_7_brands_share: "85% of total revenue"
+        ai_deals_named: "OpenAI, Perplexity, Microsoft, Amazon"
+        ai_pilots_running: 70
+        source_urls:
+          - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+          - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+          - "https://Rocketreach.co/answers/what-is-the-annual-revenue-of-conde-nast_b5f542b3f42d3402"
+      microsoft_openai_axis_exposure: |
+        Two of Condé Nast's five AI deals (OpenAI licensing + Microsoft PCM)
+        flow into the Microsoft-OpenAI financial axis:
+        - Microsoft owns 27% of OpenAI (~$135B)
+        - Microsoft receives 20% of OpenAI's revenue through 2030
+        - OpenAI committed $250B in Azure purchases to Microsoft
+        This means Condé Nast's OpenAI licensing revenue partially flows
+        to Microsoft (via 20% revenue share), and its PCM licensing revenue
+        comes directly from Microsoft. The two "separate" deals are
+        economically one relationship with a unified financial system.
+        If WIRED publishes adversarial coverage of EITHER Microsoft OR
+        OpenAI, it risks BOTH revenue streams. If WIRED publishes adversarial
+        coverage of Meta (zero deals), it risks NOTHING.
+      editorial_independence_paradox: |
+        Lynch simultaneously claims:
+        (1) "firm stance against those who scrape and repurpose our journalism
+            without permission" (annual memo, Mar 2026)
+        (2) AI licensing deals with OpenAI, Microsoft, Perplexity, Amazon
+            are core to the revenue strategy
+        The paradox: the companies most aggressively using publisher content
+        for AI training (OpenAI, Google) are ALSO the ones Condé Nast has
+        commercial relationships with. The "firm stance" is selectively
+        applied — adversarial toward companies WITHOUT deals (Meta, which
+        uses no publisher content for Llama training), accommodating toward
+        companies WITH deals (OpenAI, which the NYT accuses of massive
+        copyright infringement, and Perplexity, which WIRED itself
+        previously accused of plagiarism before signing a deal).
+      source_urls:
+        - "https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/"
+        - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+        - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+        - "https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/"
+        - "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+
     apple_coverage_tone: "neutral_to_positive"
 
     apple_coverage_summary: |

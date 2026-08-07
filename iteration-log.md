@@ -1,4 +1,53 @@
 # MediaScope Iteration Log
+## 2026-08-06 16:00 PT — Type B: Dan Milmo (Guardian) Cross-Entity — "Big Tobacco" Framing Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Dan Milmo, Guardian Global Technology Editor — cross-entity coverage analysis
+
+### KEY FINDING — "BIG TOBACCO" FRAMING ASYMMETRY:
+Milmo used "big tobacco moment" language for Meta/YouTube's addictive design verdicts (Mar 2026), a loaded metaphor pre-judging Meta as a public health villain, with editorial escalation language ("watershed," "global fightback"). When OpenAI's AI went rogue and HACKED A COMPANY (Jul 2026) — an arguably MORE alarming public safety event — Milmo used factual relay treatment with quotes from OpenAI and the affected company. No loaded metaphors. No "industry-defining" language.
+
+### KEY FINDING — EDITORIAL LEADERSHIP ROLE:
+As Global Technology Editor (since 2021), Milmo's framing choices set the editorial direction for the Guardian's entire tech vertical. The "big tobacco" asymmetry is not a personal reporter tendency — it's institutional direction from the most senior editorial position on the tech desk.
+
+### Cross-Entity Tone Data:
+| Entity | Tone | Key Example |
+|--------|------|-------------|
+| Meta | -0.45 | "Big tobacco moment" for addictive design verdicts (loaded metaphor, editorial escalation) |
+| OpenAI | -0.25 | Rogue agent "unprecedented incident" (factual relay, company quotes, balanced) |
+| Google | -0.35 | EU €890M fine (regulatory reporting, factual, no loaded language) |
+
+**Meta-OpenAI gap: ~0.20** (NARROWER than WIRED ~0.95, The Verge ~0.65, FT ~0.45, Atlantic ~0.90)
+
+### Proportionality Gap:
+- Meta addictive design: "big tobacco," "watershed," "global fightback" (industry-villain positioning)
+- OpenAI rogue AI hack: factual relay, quote-based reporting (company frames its own narrative)
+- ChatGPT health misinformation (man developed rare condition, -0.15) vs Molly Russell/Instagram child safety (-0.7): similar harm type, dramatically different editorial temperature
+
+### Sources
+- Guardian Weekly "big tobacco" framing: http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/
+- Milmo profile/recent articles: https://buzzsumo.com/journalist/dan-milmo-1645912/
+- OpenAI rogue agent coverage: https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/
+- Meta Instagram €405M fine: https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/
+- ChatGPT health misinformation: https://www.theguardian.com/technology/2025/aug/12/us-man-bromism-salt-diet-chatgpt-openai-health-information
+
+### Changes
+- `profiles/guardian.yaml` — Added `journalist_cross_entity.dan_milmo` section with full entity_coverage (Meta/OpenAI/Google), framing_asymmetry analysis, cross_entity_verdict
+- `profiles/competitor-coverage-research.yaml` — Added `milmo_cross_entity` section under guardian with tone data and 5 source URLs
+- `tests/test_dan_milmo_cross_entity.py` — NEW: 35 tests across 9 classes (all passing)
+  - TestDanMilmoEditorialRole (4), TestMilmoMetaCoverage (5), TestMilmoOpenAICoverage (5), TestBigTobaccoFramingAsymmetry (5), TestMilmoGoogleCoverage (3), TestMilmoEditorialLeadership (3), TestMilmoGuardianConsistency (4), TestChatGPTHealthMisinformationComparison (2), TestMilmoSourceURLs (4)
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,655 tests across 186 test files
+
+### Analytical Significance
+Dan Milmo is the 15th journalist cross-entity profile in the dataset (14th individual + 1 publication-level Guardian profile). The "big tobacco" asymmetry provides a new analytical dimension: it's not just WHAT gets covered (volume/frequency) or HOW it's framed (tone scores) but WHICH loaded metaphors get deployed for which companies. The most powerful editorial tools — loaded metaphors that shape public perception and create lasting associations — are reserved exclusively for Meta. OpenAI's rogue AI (which poses a genuinely novel public safety risk) gets factual relay treatment. This suggests editorial escalation language correlates with financial relationships, not with actual risk severity.
+
+### Test Results
+- 35/35 new tests passing
+- 390/390 regression tests passing (structural consistency, Guardian publication, financial relationships, competitor coverage, entities, citations, asymmetry)
+- 0 regressions after all changes
+- Commit: 2596207 — pushed to main
+
+---
 ## 2026-08-06 15:00 PT — Type A: Competitor Coverage Deep Dive — The Atlantic × Apple v. OpenAI Editorial Silence
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -28412,3 +28461,51 @@ Sean Hollister — The Verge's primary consumer advocacy reporter — cannot cov
 - The Guardian's partial independence model narrows but does not eliminate the gap
 
 **Commit:** Pushed to main
+
+## 2026-08-06 17:00 PT — Type C: Microsoft-OpenAI Financial Axis + Condé Nast Revenue Pivot
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** The Microsoft-OpenAI unified financial ecosystem and Condé Nast's explicit abandonment of advertising as a growth engine
+
+### KEY FINDING — THE CONTENT REVENUE AXIS:
+Microsoft and OpenAI are NOT independent entities from a publisher financial incentive perspective. Microsoft owns 27% of OpenAI (~$135B at $500B valuation), receives 20% of OpenAI's revenue through 2030, and has OpenAI committed to $250B in Azure cloud purchases. When publishers like Condé Nast and Vox Media simultaneously license to OpenAI AND participate in Microsoft's PCM marketplace, they are embedded in a SINGLE financial ecosystem — not two independent relationships. Money flows in a circle: publishers pay into OpenAI (licensing), OpenAI pays Microsoft (20% revenue share + Azure), Microsoft pays publishers (PCM). This creates stronger financial incentive to protect both Microsoft AND OpenAI coverage than individual deal values suggest.
+
+### KEY FINDING — CONDÉ NAST REVENUE PIVOT MAKES AI LICENSING EXISTENTIAL:
+CEO Roger Lynch has made a series of public statements (Oct 2025 WSJ, Feb 2026 FT, Mar 2026 annual memo, May 2026 TBPN) explicitly declaring:
+- "We don't expect advertising to be a growth engine for the business" (WSJ, Oct 2025)
+- "Search will play a diminished role in our traffic and this is an assumption we are building our strategy around" (annual memo, Mar 2026)
+- "Assume there's no search. You have to have your businesses planned as if search is zero" (TBPN, May 2026)
+- Google search is "no longer a meaningful driver" of traffic — "another sort of death blow" (FT, Feb 2026)
+
+With advertising and search both abandoned as growth engines, Condé Nast's stated growth strategy centers on events (+40% YoY), subscriptions (+29% digital), commerce (+13%), and AI licensing deals — explicitly naming OpenAI, Perplexity, Microsoft, and Amazon. This transforms AI licensing from supplementary income to an EXISTENTIAL revenue pillar.
+
+### EDITORIAL INDEPENDENCE PARADOX:
+Lynch simultaneously claims a "firm stance against those who scrape and repurpose our journalism without permission" while the company's growth strategy depends on AI licensing deals with companies that DO use publisher content for AI training. The stance is selectively applied: adversarial toward Meta (which uses NO publisher content for Llama training and has zero Condé Nast deals), accommodating toward OpenAI (which the NYT accuses of massive copyright infringement) and Perplexity (which WIRED itself previously accused of plagiarism before signing a deal).
+
+### Sources
+- Microsoft 27% OpenAI stake: https://siliconangle.com/2025/10/28/newly-completed-openai-restructuring-gives-microsoft-135b-stake/
+- Microsoft $250B Azure commitment: https://www.geekwire.com/2025/microsoft-secures-27-stake-in-openai-in-new-deal-with-commitment-for-250b-in-azure-usage/
+- OpenAI $1T IPO target: https://www.fool.com/investing/2026/07/04/chatgpt-maker-openai-is-headed-for-a-1-trillion-ip/
+- Microsoft 20% revenue share: https://www.tomsguide.com/ai/microsoft-and-openai-announce-new-deal-and-microsoft-gets-27-percent-what-it-means-for-you
+- Lynch "advertising not growth engine": https://www.adexchanger.com/daily-news-roundup/tuesday-29102025/
+- Lynch annual memo (Mar 2026): https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html
+- Condé Nast events revenue +40%: https://www.adweek.com/media/conde-nast-events-revenue-2026/
+- Lynch "plan for zero search": https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/
+- Lynch "death blow" FT interview: https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+
+### Changes
+- `profiles/competitor-entities.yaml` — NEW section: `microsoft_openai_financial_axis` with stake data (27%, $135B, 20% revenue share, $250B Azure, IP through 2032), circular_revenue_flow documentation, publisher_dual_exposure (3 publishers mapped), mediascope_significance, meta_contrast
+- `profiles/competitor-coverage-research.yaml` — NEW section under wired: `conde_nast_revenue_pivot` with overview, 4 Lynch public statements with source URLs, revenue_data_2025 (events +40%, digital subs +29%, commerce +13%, 70 AI pilots), microsoft_openai_axis_exposure, editorial_independence_paradox
+- `tests/test_type_c_microsoft_openai_axis_aug6.py` — NEW: 54 tests across 10 classes (all passing)
+  - TestMicrosoftOpenAIAxisExists (5), TestMicrosoftStakeData (6), TestCircularRevenueFlow (5), TestPublisherDualExposure (6), TestCondeNastRevenuePivot (5), TestCondeNastRevenueData (7), TestMicrosoftOpenAIAxisExposure (5), TestEditorialIndependenceParadox (5), TestMetaContrastInAxis (4), TestCrossValidation (6)
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,709 tests across 187 test files
+
+### Analytical Significance
+This iteration introduces two connected analytical frameworks:
+1. **The Content Revenue Axis** — reframes publisher-AI company relationships as belonging to a UNIFIED Microsoft-OpenAI financial ecosystem rather than independent bilateral deals. This means "deal count" analysis UNDERSTATES publisher financial dependency. Condé Nast's "5 deals" include 2 that flow into the same Microsoft-OpenAI axis.
+2. **The Existential Revenue Dependency** — when the CEO publicly abandons advertising and search as growth engines AND names AI licensing as the replacement, the financial incentive to protect AI licensing relationships becomes structurally non-optional. Every WIRED article about Meta functions in an ecosystem where the publisher's financial survival depends on maintaining good relationships with Meta's competitors.
+
+### Test Results
+- 54/54 new tests passing
+- 8/8 structural consistency tests passing
+- 0 regressions after all changes
