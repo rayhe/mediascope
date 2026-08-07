@@ -28936,3 +28936,72 @@ The Type C 18:00 iteration log entry was staged but not committed with commit f2
 - `tests/test_type_d_7pm_cross_validation_aug6.py` — NEW: 33 tests across 7 classes (all passing)
 - `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,788 tests across 189 test files
 
+## 2026-08-07 02:00 PT — Type B: Will Douglas Heaven (MIT TR) Cross-Entity Coverage Analysis
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Will Douglas Heaven — MIT Technology Review Executive Editor for AI
+
+### KEY FINDING — SOURCE ACCESS HIERARCHY + FAILURE FRAMING DOUBLE STANDARD:
+
+WDH is MIT TR's most influential AI editorial voice (PhD in CS, executive editor).
+His cross-entity coverage reveals a systematic pattern where identical phenomena
+receive opposite editorial treatment depending on the company:
+
+**Source Access Hierarchy (highest to lowest):**
+1. OpenAI: EXCLUSIVE interview with chief scientist Jakub Pachocki (Mar 2026)
+2. Google DeepMind: Private preview demo with PM Megha Goel (Jan 2025)
+3. Anthropic: Internal Q&A positioning as field-defining (Jul 2026)
+4. Meta: ZERO documented exclusive access. LeCun Paris event was group press, covered by Heikkilä
+
+**Failure Framing Double Standard:**
+| Event | Company | WDH Framing | Language |
+|-------|---------|-------------|----------|
+| Model pulled | Meta (Galactica) | "Survived only three days" | Mortality/death |
+| Demo gets stuck | Google (Mariner) | "Remarkable moment" | Intelligence celebration |
+| Agent breaches system | OpenAI | "Specification gaming" | Scholarly normalization |
+
+Same phenomenon (technical product encountering difficulty), three radically different
+editorial frames. Meta's VOLUNTARY retraction of a research model is treated as a death.
+Google's live demo FAILURE is celebrated as intelligence. OpenAI's agent BREACHING a
+third-party system is normalized through academic history.
+
+**Breakthrough Attribution Bias:**
+Anthropic's mechanistic interpretability → MIT TR "10 Breakthrough Technologies 2026."
+Meta's Llama (open weights enabling MORE external interpretability) → not credited.
+Proprietary introspection gets the award; open transparency doesn't.
+
+**Financial Correlation:**
+- Google: MIT bilateral program → "remarkable" coverage
+- Apple: CSAIL member + Kate Bergeron on MIT Corporation → warm coverage
+- OpenAI: exclusive access, possible content relationship → constructive
+- Meta: ZERO documented MIT institutional ties → "survived only three days"
+
+Meta is the only FAANG company with no MIT institutional financial relationship.
+
+**Heikkilä Migration (MIT TR → FT):**
+Melissa Heikkilä left MIT TR for the Financial Times. Now bridges both institutions
+via the "State of AI" editorial collaboration. Natural experiment: same journalist,
+two publications with different competitor financial relationships.
+
+### Changes Made
+- `profiles/mit-tech-review.yaml` — NEW `journalist_cross_entity_coverage` section:
+  WDH analysis (13 articles across 4 entities, source access hierarchy, failure
+  framing double standard, financial correlation, 0.58 asymmetry score) + Heikkilä
+  migration documentation. Heikkilä added to `notable_departures`.
+- `tests/test_will_douglas_heaven_cross_entity.py` — NEW: 57 tests across 10 classes
+  (profile structure, aggregate tone, source access, failure framing, article framing,
+  financial correlation, asymmetry score, Heikkilä migration, cross-references,
+  counter-arguments)
+- `README.md` — Test count: 5,107 tests across 196 test files, new file listing
+- `docs/ARCHITECTURE.md` — Test count + tree updated
+
+### Test Results
+- 57/57 new tests passing
+- 124/124 structural consistency tests passing
+- 0 regressions
+- Total: 5,107 tests across 196 test files
+
+### Git
+- Commit: 5954b6a
+- Pushed to GitHub: `main`
+

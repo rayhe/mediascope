@@ -32,7 +32,7 @@ class TestCompetitorEntities:
         with open(path) as f:
             data = yaml.safe_load(f)
         entities = data.get("entities", {})
-        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai"}
+        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung"}
         assert set(entities.keys()) == expected
 
     def test_entity_has_required_fields(self):

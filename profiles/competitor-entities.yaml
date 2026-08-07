@@ -620,6 +620,36 @@ entities:
       coverage editorially neutral (no incentive to be soft OR hard).
     telegram_deal_source: https://www.livemint.com/technology/tech-news/telegram-partners-with-xai-grok-chatbot-to-be-integrated-in-300-million-deal/amp-11748452711863.html
     gsa_contract_source: https://www.nextgov.com/acquisition/2025/09/gsa-inks-onegov-deal-grok-ai/408334/
+  samsung:
+    display_name: Samsung
+    aliases:
+    - Samsung
+    - Galaxy
+    - Galaxy Glasses
+    - Intelligent Eyewear
+    - Samsung Electronics
+    regex: \b(Samsung|Galaxy\s+(Glasses|XR)|Intelligent\s+Eyewear)\b
+    category: big_tech
+    market_cap_approx: $320B
+    ceo: Jong-Hee (JH) Han
+    smart_glasses_note: |
+      Samsung Intelligent Eyewear announced Galaxy Unpacked July 22, 2026.
+      Hardware is functionally identical to Meta Ray-Ban glasses: 12MP camera,
+      microphones, speakers, always-on Gemini AI, LED recording indicator with
+      obstruction detection, ~50g weight, no display (first gen), companion
+      phone architecture. Frame partners: Gentle Monster and Warby Parker.
+      Runs Google's Android XR on Qualcomm Snapdragon AR1 Gen 1.
+      Fall 2026 launch window. Battery: 9 hours + 7 case charges.
+      ANALYTICAL VALUE: The Samsung Equivalence Paradox — identical hardware
+      receives dramatically different media framing than Meta's. Samsung's
+      camera glasses are described as "innovative" and "taking privacy seriously"
+      while Meta's identical product is called "creepy" and "surveillance."
+    samsung_launch_source: "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear"
+    publisher_deals_note: |
+      ZERO known content licensing deals with major tech publishers as of Aug 2026.
+      Samsung's advertising relationship with publishers is standard tech-industry
+      media buying, not the large-scale content licensing deals that predict softer
+      coverage (like OpenAI, Amazon, or Microsoft's publisher deals).
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

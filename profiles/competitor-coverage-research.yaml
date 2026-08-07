@@ -361,6 +361,70 @@ publications:
       samsung_google_io_source: "https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm"
       privacy_comparison_source: "http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm"
 
+    samsung_equivalence_paradox:
+      discovery_date: "2026-08-07"
+      description: |
+        SAMSUNG EQUIVALENCE PARADOX (Aug 7, 2026): Samsung launched Intelligent
+        Eyewear at Galaxy Unpacked (July 22, 2026, London) with hardware
+        FUNCTIONALLY IDENTICAL to Meta Ray-Ban glasses in every privacy-relevant
+        dimension:
+
+        HARDWARE EQUIVALENCE TABLE:
+        | Feature                    | Samsung IE         | Meta Ray-Ban     |
+        |----------------------------|--------------------|------------------|
+        | Camera                     | 12MP w/ autofocus  | 12MP ultrawide   |
+        | Microphones                | Yes                | Yes              |
+        | Speakers                   | Yes                | Yes              |
+        | Always-on AI               | Google Gemini      | Meta AI (Llama4) |
+        | LED recording indicator    | Yes                | Yes              |
+        | Obstruction detection      | Yes                | Yes              |
+        | Display (base model)       | No                 | No               |
+        | Weight                     | ~50g               | ~49g             |
+        | Form factor                | Smart glasses      | Smart glasses    |
+        | Companion device           | Galaxy phone       | Smartphone       |
+
+        COVERAGE FRAMING DELTA:
+        Samsung's launch received product-review framing across publications:
+        - SamMobile: "Samsung's smart glasses take privacy pretty seriously"
+        - GSMArena: "Samsung's smart glasses have this important privacy feature"
+        - Digital Trends: "Samsung enters the AI glasses race" (neutral/positive)
+        - HotHardware: "Samsung Galaxy Glasses Challenge Meta" (competitive)
+        - Memeburn: "Samsung Smart Glasses 2026 Take Aim at Meta Ray-Ban" (competitive)
+
+        Meta's identical product received adversarial framing:
+        - WIRED (Business Wars): "I'm a Creep" — episode title
+        - WIRED (Business Wars): "tool for mass surveillance"
+        - WIRED (Chokkattu): "extracting value" framing
+
+        THE SCHOOL BAN CONSEQUENCE (Aug 4, 2026):
+        Iberville Parish School System (Louisiana) banned "Meta glasses" BY NAME
+        on schoolgrounds. The ban language: "a ban on Meta glasses — also known
+        as 'smart frame' glasses." The stated rationale: "camera-enabled eyewear
+        that allow video and audio recording without the user realizing it."
+
+        THIS RATIONALE APPLIES EQUALLY TO SAMSUNG'S GLASSES — but Samsung's
+        Intelligent Eyewear would NOT be banned under this policy because the
+        ban names "Meta glasses" specifically, not "camera-equipped smart glasses."
+
+        This proves that differential media framing has shifted public perception
+        from a CATEGORY concern (cameras on faces) to a BRAND-SPECIFIC stigma
+        (Meta = creepy, Samsung = innovative). When a school board writes
+        "Meta glasses" instead of "camera-equipped smart glasses," the framing
+        asymmetry has produced a policy asymmetry.
+
+        THE WIRED COVERAGE ABSENCE:
+        WIRED's gear desk (Chokkattu/Ashworth) produced extensive adversarial
+        coverage of Meta's glasses (Business Wars podcast, subscription article)
+        but no comparable investigation or adversarial coverage of Samsung's
+        functionally identical Intelligent Eyewear launch at Galaxy Unpacked.
+        The publication that called Meta glasses "a tool for mass surveillance"
+        did not apply the same surveillance vocabulary to Samsung's identical
+        camera-equipped glasses.
+      samsung_launch_source: "https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear"
+      samsung_privacy_source: "https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/"
+      gsmarena_privacy_source: "https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php"
+      school_ban_source: "https://www.postsouth.com/story/news/local/2026/08/04/iberville-parish-schools-mandate-clear-bags-for-students/91127541007/"
+
     google_traffic_collapse:
       discovery_date: 2026-08-06
       description: |
