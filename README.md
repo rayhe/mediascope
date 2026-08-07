@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,334 | Across 202 test files |
+| Tests | 5,366 | Across 203 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5334 tests** across 202 test files, each covering a different analytical capability:
+MediaScope has **5366 tests** across 203 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -505,6 +505,7 @@ MediaScope has **5334 tests** across 202 test files, each covering a different a
 | `test_multiplier_scale_magnitude.py` | 15 | Multiplier scale/magnitude framing: N× comparisons (136.5 times more), ceiling multipliers (up to N times), national/global scale analogies (roughly half of the entire United States) |
 | `test_glasses_deep_dive.py` | 17 | Wired glasses launch deep dive fixes: kicker framing (negative final paragraph detection), product-name stop-filter for source extraction ("Meta Glasses"), emotional_appeal false-positive exclusion (question marks), loaded language expansion (nefarious, comically, discreetly) |
 | `test_gizmodo_openai_rogue_ai_framing_paradox_aug7.py` | 33 | Gizmodo × OpenAI vs Meta rogue AI framing paradox: CLEAN CONTROL — zero financial ties, covers OpenAI ACTUAL hack procedurally (-0.25) vs Meta SPECULATIVE privacy apocalyptically (-0.75), 0.50 tone delta = cultural baseline, additive bias model evidence |
+| `test_nilay_patel_cross_entity.py` | 32 | Nilay Patel (Verge EIC) cross-entity: EIC Delegation Paradox (mechanism #6) — Patel personally interviews competitor CEOs (Pichai annually, Suleyman, Farrow/OpenAI) with strategic framing but delegates all Meta CEO interviews to deputy Heath who applies adversarial-investigative framing, meta-google gap 0.30, publisher solidarity context |
 | `test_gizmodo_fury_review.py` | 19 | Gizmodo Meta Fury contradictory review: entity detection (Fury, Adventurer, Starfire, Garmin, Llama 4), Path F framing correction for mixed product reviews, emotional terms (ickiness, glassholism, privacy minefield, spying, paranoid) |
 | `test_gizmodo_glasses_harassment_ban_jul23.py` | 15 | Gizmodo glasses harassment Instagram ban (Jul 23): 15 framing devices (7 types), 5 new patterns (escalation_amplification peak-escalation, recidivism_framing sardonic chronic behavior + predictive closing, editorial_aside parenthetical meanwhile contrast), control-case convergence with Swiss-owned outlet |
 | `test_gizmodo_brain2qwerty_v2.py` | 13 | Context-aware false-positive suppression: catastrophizing in dream/sleep narrative, loaded language "invasive" in medical/surgical context, emotional appeal "unable to speak" as factual medical description, ironic quotation definitional introduction, framing correction guard on positive medical articles |

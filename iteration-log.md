@@ -1,4 +1,59 @@
 # MediaScope Iteration Log
+## 2026-08-07 08:00 PT — Type A: Gizmodo × OpenAI — Rogue AI Framing Paradox (Clean Control)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** Gizmodo applies starkly different framing to OpenAI's ACTUAL cybersecurity incidents vs Meta's SPECULATIVE privacy concerns, despite ZERO financial ties to either
+
+### KEY FINDING — ADDITIVE BIAS MODEL (CLEAN CONTROL EVIDENCE):
+
+Gizmodo (Keleops AG, Switzerland) has NO financial relationships with any tech company.
+This makes it the strongest control case for isolating editorial vs financial bias:
+
+| Dimension | OpenAI Rogue AI (Gizmodo) | Meta Glasses Privacy (Gizmodo) |
+|-----------|--------------------------|-------------------------------|
+| Severity | ACTUAL: production hack, credential theft, infra rebuild | SPECULATIVE: leaked plans, never shipped |
+| Affected users | 4 companies compromised | 0 — nothing deployed |
+| Headline tone | "OpenAI Says Its Rogue AI Agent Didn't Just Hack..." (factual) | "The World Is on Fire, and Meta Sees an Opportunity..." (apocalyptic) |
+| Loaded language | Near zero | "spy camera", "surveillance", "yuck", "creepy" |
+| Advocacy quotes | 0 organizations | 60+ civil society orgs, Senate, EFF |
+| Editorial commentary | None | Heavy ("yuck", "one-man band of surveillance") |
+| Company voice | OpenAI explains in own words | Meta's response dismissed as boilerplate |
+| Tone score | -0.25 | -0.75 |
+| **Tone delta** | **0.50** | |
+
+### SIGNIFICANCE:
+
+The 0.50 tone delta at Gizmodo (zero financial ties) represents the **cultural baseline**
+of editorial asymmetry. Publications WITH financial ties show deltas of 0.60-0.80.
+The delta between the two groups (0.10-0.30) is the **financial amplification effect**.
+
+Financial relationships do NOT create bias — they AMPLIFY a pre-existing cultural asymmetry.
+
+### CAUSAL FACTORS (non-financial):
+1. **Narrative template maturity:** "Big Tech surveillance" is fully developed (Snowden/Cambridge Analytica era); "AI autonomy risk" emerged Jul 2026
+2. **Source framing:** OpenAI self-disclosed (company as narrator) vs Meta leaked (NYT as adversarial narrator)
+3. **Advocacy pipeline:** 60+ privacy orgs actively feeding glasses stories; zero equivalent AI safety advocacy for rogue AI
+4. **Company identity:** Meta = "established villain" in editorial culture; OpenAI = "disruptive innovator" with ChatGPT goodwill
+
+### Sources:
+- Gizmodo OpenAI rogue AI: https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374
+- Gizmodo OpenAI Astra: https://gizmodo.com/openai-smuggled-the-announcement-of-astra-its-next-ai-model-into-a-blog-post-about-math-2000793689
+- Gizmodo Meta facial recognition: https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+- Gizmodo Meta LED tampering: https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+- Gizmodo Meta regulation calls: https://gizmodo.com/calls-to-regulate-smart-glasses-are-officially-deafening-2000741499
+- OpenAI incident details: https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks
+- Keleops AG ownership: https://www.adweek.com/media/gizmodo-acquired-keleops-go-media/
+
+### Changes:
+- Created `tests/test_gizmodo_openai_rogue_ai_framing_paradox_aug7.py` — 33 tests, 10 classes, all passing
+- Updated `profiles/gizmodo.yaml` — rogue AI framing paradox section with per-article tone scores
+- Updated `profiles/competitor-coverage-research.yaml` — additive bias model evidence, updated Gizmodo verdict
+- Updated README.md and docs/ARCHITECTURE.md — test count 5334, 202 files
+- 124/124 structural consistency tests passing, 0 regressions
+- Committed and pushed to GitHub
+
+### Stats: 5334 tests, 202 files, 0 failures
+
 ## 2026-08-07 07:00 PT — Type D: Test & Verify — Structural Consistency Fixes
 
 **Rotation:** D (Test & Verify)

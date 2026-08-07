@@ -951,6 +951,170 @@ key_journalists:
       AI (Copilot), and gaming. One of the most-cited sources for Microsoft news. His Microsoft focus
       creates a natural editorial counterweight — Microsoft (OpenAI's partner) vs Meta in AI.
 
+  - name: "Nilay Patel"
+    beat: "editor-in-chief, Decoder host, big tech CEOs, AI policy, product reviews"
+    known_patterns: >
+      Editor-in-chief of The Verge since 2014 and host of Decoder, the publication's flagship
+      interview podcast. Formerly EIC at Engadget (2011-2014). Law degree from Georgetown (practiced
+      IP law before tech journalism). His editorial decisions set the tone for The Verge's coverage
+      across all beats.
+
+      KEY CROSS-ENTITY PATTERN — EIC DELEGATION PARADOX (Mechanism #6):
+      Patel personally interviews competitor CEOs (Google/Sundar Pichai annually at I/O, Microsoft
+      AI chief Mustafa Suleyman, Bluesky CEO, Uber CEO) with strategic "big ideas" framing. But he
+      DELEGATES Meta CEO interviews to deputy editor Alex Heath, who applies adversarial-investigative
+      framing (Reality Labs layoffs, leaker crackdowns, internal strategy doubt). This produces
+      asymmetric editorial temperature at the leadership level without any individual being unfair.
+
+      PUBLISHER SOLIDARITY CONTEXT: Patel is an outspoken advocate for publisher content value. His
+      NPR interview called Google "secretly ruthless." His Decoder with Condé Nast CEO Roger Lynch
+      (Jul 2026) discussed AI content licensing from the publisher's perspective. He raised "Condé
+      Nast CEO says assume zero search traffic" directly in his Pichai interview. Zuckerberg's
+      "overestimate the value" comment about publisher content (reported by Heath/Robertson, not
+      Patel) positions Meta as uniquely adversarial to publishers, reinforcing the delegation
+      pattern: the company that dismisses publisher content value gets the adversarial deputy,
+      while companies that pay publishers (OpenAI licensing, Google News Showcase) get the
+      constructive EIC.
+    cross_entity_coverage_analysis:
+      meta_coverage:
+        tone: -0.45
+        delegation_pattern: >
+          Patel does NOT interview Zuckerberg directly on Decoder. All Zuckerberg Decoder
+          interviews (Meta Connect 2022, 2023, 2024) were conducted by Alex Heath (deputy
+          editor). Patel's direct Meta coverage is editorial-institutional: "A jury says
+          Meta and Google hurt a kid. What now?" (Apr 2, 2026), child safety verdict
+          analysis, and editorial commentary framing. The delegation ensures Meta's
+          highest-profile Verge platform is filtered through an adversarial-investigative
+          lens rather than the EIC's strategic lens.
+        key_examples:
+          - title: "A jury says Meta and Google hurt a kid. What now?"
+            date: "2026-04-02"
+            format: "Decoder episode (Patel host)"
+            tone: -0.4
+            framing: >
+              Covers BOTH Meta AND Google — one of the rare cross-entity equal-treatment
+              moments. Subtitle: "Why nuclear options like age limits and repealing Section
+              230 won't make social media safer." Adversarial toward the industry broadly,
+              not exclusively Meta.
+          - title: "Vision Pro review: magic, until it's not"
+            format: "Written review (Patel byline)"
+            tone: -0.1
+            framing: >
+              Patel personally reviews Apple Vision Pro — demonstrates he does direct
+              product coverage of competitors. Praised hardware as "astounding" but
+              criticized isolation and lack of purpose.
+        source_urls:
+          - "https://www.everand.com/podcast/773063094/"
+          - "https://podme.com/no/decoder-with-nilay-patel/1132076/"
+      google_coverage:
+        tone: -0.15
+        interview_format: "annual"
+        key_examples:
+          - title: "How Sundar Pichai is rethinking Google for the AI era"
+            date: "2026-05-26"
+            format: "Decoder episode (Patel host)"
+            tone: -0.1
+            framing: >
+              Fifth annual Patel-Pichai Decoder interview at Google I/O. Strategic "big
+              ideas" framing: "rethinking," "AI era," "the future of search." Raised
+              publisher concerns directly (Condé Nast "assume zero search traffic"). Also
+              challenged Pichai on Google Zero and AI Overviews. Constructive-adversarial,
+              not investigative-adversarial.
+          - title: "Google's legacy: 'Secretly ruthless'"
+            date: "2023-09-04"
+            format: "NPR All Things Considered interview"
+            tone: -0.3
+            framing: >
+              Patel called Google "secretly ruthless" and "an utterly ruthless advertising
+              company." Demonstrates willingness to be adversarial toward Google — but
+              through media interviews, not sustained investigative campaigns. This is
+              editorial commentary, not investigative reporting.
+        source_urls:
+          - "https://www.youtube.com/watch?v=ANV3tE5ywv0"
+          - "https://www.nprillinois.org/2023-09-04/the-verges-nilay-patel-talks-googles-legacy"
+          - "https://podcastrepublic.net/podcast/1011668648"
+      openai_coverage:
+        tone: -0.30
+        key_examples:
+          - title: "Ronan Farrow on Sam Altman's 'unconstrained' relationship with the truth"
+            date: "2026-04-16"
+            format: "Decoder episode (Patel host)"
+            tone: -0.5
+            framing: >
+              Patel hosted 62-minute deep-dive with Ronan Farrow about New Yorker exposé
+              on Sam Altman. Called it an "incredible deep-dive feature." Adversarial toward
+              Altman personally and OpenAI institutionally — but outsourced to Farrow's
+              New Yorker reporting, not The Verge's own investigation.
+          - title: "The AI industry's existential race for profits"
+            date: "2026-04-09"
+            format: "Decoder episode (Patel host)"
+            tone: -0.3
+            framing: >
+              Patel interviewed Hayden Field (Verge AI reporter) about AI monetization
+              cliff. Skeptical of OpenAI and Anthropic's ability to become profitable.
+              Make-or-break framing. More adversarial than Google coverage.
+          - title: "What Apple's OpenAI lawsuit is really about"
+            date: "2026-07-23"
+            format: "Decoder episode (Patel host)"
+            tone: -0.3
+            framing: "Legal analysis of Apple v. OpenAI trade secret case."
+        source_urls:
+          - "https://www.youtube.com/watch?v=TfN5ket9L8Q"
+          - "https://podme.com/no/decoder-with-nilay-patel/1789435"
+      microsoft_coverage:
+        tone: +0.05
+        key_examples:
+          - title: "Microsoft AI chief thinks superintelligence is near, but won't take your job"
+            date: "2026-06"
+            format: "Decoder episode (Patel host)"
+            tone: +0.1
+            framing: >
+              76-minute interview with Mustafa Suleyman (Microsoft AI CEO). Constructive-
+              strategic framing: "superintelligence," "automation," future-of-work lens.
+              No adversarial investigative layer despite Microsoft's OpenAI partnership
+              and content licensing deals (PCM with Condé Nast, Verge's parent).
+        source_urls:
+          - "https://cms.megaphone.fm/channel/recodedecode?selected=VMP8741400441"
+      apple_coverage:
+        tone: -0.10
+        key_examples:
+          - title: "Apple Vision Pro review: magic, until it's not"
+            date: "2024-01-30"
+            format: "Written review + YouTube video (Patel byline/presenter)"
+            tone: -0.1
+            framing: >
+              Patel PERSONALLY reviewed Apple Vision Pro — a $3,499 headset with 12
+              outward-facing cameras, 5 sensors, and 6 microphones. Called it "astounding"
+              but criticized isolation. ZERO surveillance or privacy framing despite the
+              sensor payload being 3x Meta Ray-Ban's. This is the sensor-count paradox
+              operating at the EIC level.
+        source_urls:
+          - "https://www.techradar.com/features/apple-vision-pro-review-roundup"
+      cross_entity_asymmetry_score:
+        meta_vs_google_gap: 0.30
+        meta_vs_microsoft_gap: 0.50
+        meta_vs_apple_gap: 0.35
+        methodology: >
+          Tone scores derived from Decoder episode framing, editorial commentary,
+          and product review language. Gap represents the difference in editorial
+          temperature when Patel covers (or delegates coverage of) each entity.
+          The EIC delegation pattern amplifies the gap: Meta gets investigative
+          framing (via Heath), competitors get strategic framing (via Patel directly).
+      cross_entity_verdict: >
+        Patel is NOT personally unfair — he has shown genuine adversarial capacity
+        toward ALL entities (Google "secretly ruthless," OpenAI "unconstrained,"
+        child safety critique naming Meta AND Google). The asymmetry emerges from
+        the DELEGATION STRUCTURE: by personally interviewing competitor CEOs with
+        his "big ideas" strategic lens and delegating Meta CEO interviews to a
+        deputy who applies investigative-adversarial framing, Patel creates
+        differential editorial temperature at the EIC level. This is mechanism #6
+        in the taxonomy — distinct from Heath's Access Paradox (#5) because it
+        operates at the level of which CEO gets the EDITOR-IN-CHIEF's personal
+        attention vs which gets the deputy's. Combined with the publisher content
+        value context (Meta dismisses publisher value, OpenAI/Google/Microsoft pay),
+        the delegation pattern aligns with financial incentives without requiring
+        personal bias.
+
   - name: "Adi Robertson"
     beat: "tech policy, VR/AR, platforms"
     known_patterns: >

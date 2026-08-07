@@ -854,6 +854,48 @@ publications:
         - "https://techcrunch.com/2025/09/14/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
         - "https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
 
+    patel_eic_delegation_paradox:
+      finding: "EIC Delegation Paradox — Mechanism #6"
+      date: "2026-08-07"
+      summary: |
+        Nilay Patel (Verge EIC since 2014, Decoder host) personally interviews
+        competitor CEOs with strategic "big ideas" framing — Sundar Pichai
+        annually at Google I/O (5 years running), Mustafa Suleyman (Microsoft
+        AI chief), Ronan Farrow on OpenAI/Altman — but DELEGATES all Meta CEO
+        interviews to deputy editor Alex Heath, who applies adversarial-
+        investigative framing (layoffs, internal strategy doubt, leaker
+        crackdowns). This creates asymmetric editorial temperature at the
+        leadership level: Meta gets the investigative deputy, competitors get
+        the constructive EIC.
+
+        Cross-entity tones (Patel-level):
+        - Google: -0.15 (annual strategic interviews, "secretly ruthless" NPR)
+        - OpenAI: -0.30 (Farrow episode, profitability skepticism)
+        - Apple: -0.10 (Vision Pro review, product lens)
+        - Microsoft: +0.05 (Suleyman interview, constructive)
+        - Meta: -0.45 (child safety editorial, institutional framing via Heath)
+        - Meta-Google gap: 0.30; Meta-Microsoft gap: 0.50
+
+        PUBLISHER SOLIDARITY CONTEXT: Patel raised "Condé Nast CEO says assume
+        zero search traffic" directly in his Pichai Decoder interview (May 2026).
+        Zuckerberg's "overestimate the value" comment about publisher content
+        (reported by Heath/Robertson) positions Meta as adversarial to publishers.
+        The company that dismisses publisher content value gets the adversarial
+        deputy; companies that pay publishers get the constructive EIC.
+
+        This is mechanism #6 after: (1) WIRED desk assignment, (2) NYT between-
+        reporter, (3) FT within-reporter, (4) Verge four-lane, (5) Verge Access
+        Paradox (Heath). It is distinct from #5 because it operates at the EIC
+        level — determining which CEO gets the EDITOR-IN-CHIEF's personal
+        attention vs which gets the deputy's investigative lens.
+      source_urls:
+        - "https://www.youtube.com/watch?v=ANV3tE5ywv0"
+        - "https://www.youtube.com/watch?v=TfN5ket9L8Q"
+        - "https://www.nprillinois.org/2023-09-04/the-verges-nilay-patel-talks-googles-legacy"
+        - "https://www.everand.com/podcast/773063094/"
+        - "https://podcastrepublic.net/podcast/1011668648"
+        - "https://www.techradar.com/features/apple-vision-pro-review-roundup"
+
   # -----------------------------------------------------------------
   # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
   # Financial ties: OpenAI (licensing, May 2024), Apple (~$17B LPJ
