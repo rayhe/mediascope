@@ -1025,6 +1025,92 @@ publications:
         produce different narrative frames, making the bias structural and
         nearly invisible — it looks like each reporter is just "doing their beat."
 
+    # Kashmir Hill cross-entity coverage analysis (added 2026-08-06)
+    kashmir_hill_cross_entity:
+      overview: |
+        Kashmir Hill is the NYT's most credentialed privacy/surveillance
+        reporter (Clearview AI investigation, "Your Face Belongs to Us" book).
+        Her beat — facial recognition, biometrics, tech surveillance — makes
+        her the natural investigator for ALL companies building camera-equipped
+        wearables, facial recognition, and surveillance technology. Analysis
+        of her coverage portfolio reveals extreme concentration on Meta, with
+        ZERO comparable investigations of Google, Amazon, Apple, or OpenAI
+        despite each having equivalent or worse privacy practices in the same
+        domain she covers.
+      meta_investigation:
+        article: "Meta Plans Facial Recognition Feature for Ray-Ban Smart Glasses"
+        date: "2026-02-13"
+        co_byline: "Kalley Huang, Mike Isaac"
+        tone: -0.8
+        framing: |
+          Investigative exposé using leaked internal Meta document. Lead with
+          cynical political timing quote about launching during "dynamic political
+          environment." Frames Meta as knowingly exploiting distraction to deploy
+          surveillance tech. Triggered legislative response (Senators Wyden,
+          Merkley, Markey letter to Zuckerberg). Became foundation for WIRED's
+          June 2026 NameTag code investigation.
+        source_url: "https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/"
+      google_absence:
+        coverage: "zero Hill bylines on Google Android XR privacy"
+        parallel: |
+          Google launched Android XR smart glasses (I/O 2026, May 19) with
+          cameras, microphones, and always-on Gemini AI — functionally identical
+          privacy architecture to Meta Ray-Ban glasses. In Hill's own book she
+          documented that BOTH Google and Facebook chose not to deploy facial
+          recognition in 2017. Meta's reversal triggered Hill's investigation.
+          Google's entry into the same space received no comparable treatment.
+        source_url: "http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm"
+      amazon_absence:
+        coverage: "zero Hill bylines on Ring facial recognition"
+        parallel: |
+          Amazon Ring's Familiar Faces feature performs DEPLOYED consumer-facing
+          facial recognition — identifying people at doorbell cameras without
+          their consent. Ring's record is objectively worse than Meta's:
+          FTC $5.8M settlement (2023, employee spying in bedrooms), law
+          enforcement partnerships without user consent, class action lawsuit
+          (Sigwalt v. Amazon, June 2026). Senator Markey: "privacy nightmare."
+          Unlike Meta's Name Tag (unreleased code), Ring's facial recognition
+          IS LIVE AND IN USE on millions of cameras.
+        financial_context: "Amazon pays NYT $20-25M/yr in AI content licensing (May 2025)"
+        beat_separation: "Karen Weise covers Amazon from Seattle — Hill's privacy expertise never crosses into Amazon's surveillance products"
+        source_urls:
+          - "https://www.reuters.com/legal/government/amazons-ring-sued-over-facial-recognition-feature-latest-privacy-concern-2026-06-02/"
+          - "https://www.ftc.gov/business-guidance/blog/2023/06/hey-alexa-what-are-you-doing-my-data"
+          - "https://www.markey.senate.gov/news/press-releases/just-in-time-for-holiday-deliveries-sen-markeys-probe-exposes-amazons-alarming-privacy-violations-with-facial-recognition-technology-in-ring-doorbell"
+      apple_absence:
+        coverage: "zero Hill bylines on Apple wearable surveillance"
+        parallel: |
+          Apple Vision Pro has external cameras, 3D spatial mapping, biometric
+          sensors. Apple AirTags documented as stalking tools. Apple's smart
+          glasses (delayed to 2027) will have cameras. Apple's privacy reputation
+          acts as a shield — coverage frames Apple privacy as virtue, not target.
+        source_url: "https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/"
+      openai_absence:
+        coverage: "zero Hill bylines on OpenAI data scraping as privacy story"
+        parallel: |
+          OpenAI scraped billions of web pages including personal data without
+          consent — directly analogous to Clearview AI's scraping that Hill
+          exposed. Both cases: mass data collection without consent, building
+          AI on scraped personal data, retroactive justification. NYT's OpenAI
+          coverage channeled through legal reporters (copyright lawsuit) rather
+          than privacy reporters, inadvertently shielding OpenAI from Hill's
+          investigative treatment.
+      asymmetry_mechanism: |
+        Kashmir Hill's coverage gap is a BEAT ASSIGNMENT EFFECT, not personal
+        bias. NYT's organizational structure channels her investigative privacy
+        expertise exclusively toward Meta (no financial tie), while companies
+        with worse privacy records and financial ties to NYT (Amazon: $20-25M/yr)
+        are covered by different reporters who don't apply investigative privacy
+        framing. This creates an ASYMMETRIC PRIVACY RATCHET: the NYT's most
+        skilled privacy investigator targets only the company that pays them
+        nothing, while the company paying them the most ($20-25M) has its
+        comparable surveillance products covered by a non-privacy-specialist
+        reporter from a different bureau.
+
+        This finding reinforces the Cade Metz beat-assignment finding: NYT's
+        coverage asymmetry is structural and nearly invisible, operating through
+        reporter assignment rather than editorial directives.
+
   # -----------------------------------------------------------------
   # FINANCIAL TIMES (Nikkei)
   # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024),
