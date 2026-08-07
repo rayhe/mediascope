@@ -1,4 +1,49 @@
 # MediaScope Iteration Log
+## 2026-08-07 03:00 PT — Type B: Samsung Equivalence Paradox — Journalist Cross-Entity Tracking
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Samsung Intelligent Eyewear as functionally identical comparator to Meta Ray-Ban glasses
+
+### KEY FINDING — SAMSUNG EQUIVALENCE PARADOX:
+
+Samsung Intelligent Eyewear (Galaxy Unpacked, Jul 22, 2026) matches Meta Ray-Ban
+in every privacy-relevant hardware dimension:
+
+| Dimension | Meta Ray-Ban | Samsung Intelligent Eyewear |
+|-----------|-------------|---------------------------|
+| Camera | 12MP ultra-wide | 12MP |
+| Audio | Speakers + mics | Speakers + 2 mics |
+| AI | Meta AI always-on | Galaxy AI + Gemini |
+| Privacy LED | Yes (obstruction detect) | Yes (obstruction detect) |
+| Weight | ~49g | ~51g |
+| Display | None | None |
+| Architecture | Phone companion | Phone companion |
+
+Yet coverage framing diverges sharply:
+- Samsung: "takes privacy pretty seriously" (SamMobile), "important privacy feature" (GSMArena)
+- Meta: "I'm a Creep" (WIRED/Business Wars), "tool for mass surveillance"
+
+### POLICY CONSEQUENCE — SCHOOL BAN:
+
+Iberville Parish School System (Louisiana, Aug 4, 2026) banned "Meta glasses" BY NAME.
+Ban rationale: "camera-enabled eyewear that allow video and audio recording" — applies
+equally to Samsung's identical glasses, but Samsung would NOT be covered.
+
+This proves differential media framing has produced differential policy outcomes.
+
+### Artifacts:
+- New: `tests/test_samsung_equivalence_paradox_aug7.py` (41 tests, 8 classes, all passing)
+- Updated: `profiles/competitor-coverage-research.yaml` (samsung_equivalence_paradox section)
+- Updated: `profiles/competitor-entities.yaml` (samsung entity added)
+- Updated: `tests/test_competitor_coverage.py` (samsung in expected entity set)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (counts 196→197, 5107→5148)
+
+### Sources:
+- Samsung launch: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+- SamMobile: https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+- GSMArena: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+- School ban: https://www.postsouth.com/story/news/local/2026/08/04/iberville-parish-schools-mandate-clear-bags-for-students/91127541007/
+
 ## 2026-08-07 01:00 PT — Type A: NYT × Amazon — February 2026 Simultaneous Coverage Paradox
 
 **Rotation:** A (Competitor Coverage Deep Dive)
