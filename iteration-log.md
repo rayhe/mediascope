@@ -1,4 +1,51 @@
 # MediaScope Iteration Log
+
+## 2026-08-07 15:00 PT — Type D: Cross-Validation — Financial Amplification Model Integrity
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-validate today's three iteration findings (Type A, B, C) for internal consistency
+
+### CROSS-VALIDATION RESULTS:
+
+| Validation Target | Status | Finding |
+|------------------|--------|---------|
+| Financial amplification ordering | ✅ PASS | Clean controls (Gizmodo 0.50, MIT TR 0.58) < financially connected (WIRED 0.82, FT 0.87, NYT 0.85-0.90) |
+| Three-tier marketplace taxonomy | ✅ PASS | All tiers defined, conflict ordering Snowflake < Amazon < Microsoft verified |
+| Snowflake entity completeness | ✅ PASS | Dict-keyed entity with category, regex, aliases, zero AI investments |
+| Meta financial isolation | ✅ PASS | NOT operator, NOT buyer, NOT AI lab investor — bilateral only |
+| Metric scale consistency | ✅ PASS | tone_delta and asymmetry_score both [0,1]; individual tones [-1,1] |
+| FT Heikkilä career migration | ✅ PASS | In key_journalists list, coverage data present, deals documented |
+| Research cross-references | ✅ PASS | All three today's findings documented in research file |
+| Structural consistency | ✅ PASS | 124/124 tests pass with updated counts |
+
+### STRUCTURAL FINDINGS:
+
+Two data structure mismatches discovered and fixed:
+1. **Entity lookup:** `competitor-entities.yaml` uses dict keyed by slug (e.g., `entities.snowflake`), not a list of dicts with `name` field. Tests that iterate as list will fail.
+2. **Journalist lookup:** FT uses `key_journalists` (list of dicts with `name` field), not `journalists` (empty dict). Cross-entity tests must check both patterns.
+
+### FINANCIAL AMPLIFICATION MODEL — VERIFIED ORDERING:
+
+| Publication | Financial Ties | Asymmetry Score | Category |
+|-------------|---------------|-----------------|----------|
+| Gizmodo | ZERO | 0.50 | Clean control |
+| MIT TR | ZERO AI deals | 0.58 | Clean control |
+| The Verge | Indirect (Advance/Reddit) | 0.65 | Weak connection |
+| NYT (vs Apple) | Amazon $20-25M/yr | 0.80 | Strong connection |
+| WIRED | Condé Nast / OpenAI | 0.82 | Strong connection |
+| NYT (vs Google) | Amazon $20-25M/yr | 0.85 | Strong connection |
+| FT (Heikkilä) | Google + OpenAI deals | 0.87 | Strong connection |
+| NYT (vs Amazon) | Amazon $20-25M/yr | 0.90 | Strongest (direct payer) |
+
+**Key insight:** NYT's highest asymmetry (0.90) is specifically on Amazon topics — the entity paying them directly. This is the strongest single data point for the financial-amplification thesis: asymmetry peaks precisely where the money flows.
+
+### Artifacts:
+- New: `tests/test_type_d_3pm_cross_validation_aug7.py` — 36 tests, 8 classes, all passing
+- Updated: `README.md` + `docs/ARCHITECTURE.md` — test count 5604, 209 files
+- 124/124 structural consistency tests passing, 0 regressions
+
+### Stats: 5604 tests, 209 files, 0 failures
+
 ## 2026-08-07 14:00 PT — Type C: Snowflake Cortex Marketplace Intermediary + xAI Litigation Landscape
 
 **Rotation:** C (Financial Incentive Mapping)
