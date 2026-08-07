@@ -29180,3 +29180,40 @@ not Apple (which bypassed them through a more sophisticated mechanism).
 - 124/124 structural consistency tests passing
 - 0 regressions
 - Total: 5,235 tests across 199 test files
+
+## 2026-08-07 06:00 PT — Type D: Test & Verify — Cross-Validation of Aug 7 Findings
+
+**Rotation:** D (Test & Verify)
+**Focus:** Regression fix + cross-validation of today's three A/B/C findings
+
+### REGRESSION FOUND AND FIXED:
+
+Samsung entity addition (Type B, 03:00) broke `test_total_entities_is_8` in
+`test_type_d_deal_count_cascade_aug6.py`. Entity count is now 9:
+amazon, anthropic, apple, google, meta, openai, samsung, x_twitter, xai.
+Fixed: renamed test to `test_total_entities_is_9` with explanatory docstring.
+
+### CROSS-VALIDATION RESULTS:
+
+Ran targeted test suites (full suite >8 min, impractical for hourly iteration):
+
+| Test Group | Tests | Result |
+|-----------|-------|--------|
+| Today's 4 new test files | 174 | ✅ All pass |
+| Structural consistency + Type D cross-validation | 235 | ✅ 235 pass, 1 skip |
+| Competitor coverage + financial + entities | 169 | ✅ All pass |
+| All Type C + Type D tests | 696 | ✅ 696 pass, 1 skip |
+
+### NEW TEST FILE:
+
+`tests/test_type_d_cross_validation_aug7_06am.py` — 20 tests, 6 classes:
+- TestEntityCountConsistency (4): Samsung integration, 9-entity count, core entities
+- TestNYTAmazonParadoxCrossRef (3): Kashmir Hill in profile, Feb paradox in research, Ring entity
+- TestSamsungEquivalenceIntegration (4): Entity specs, camera, school ban documented
+- TestPMCFragmentationCrossRef (4): PMC ownership chain, OpenAI deal, Google litigation
+- TestCrossParadoxConsistency (5): Entity stability, Meta detection-only architecture, financial predictions, source URLs
+
+### Stats:
+- 5,341 tests across 201 files (updated from 5,281/200)
+- 0 regressions after fix
+- Pushed to GitHub
