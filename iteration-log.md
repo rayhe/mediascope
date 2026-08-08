@@ -1,4 +1,93 @@
 # MediaScope Iteration Log
+## 2026-08-08 06:00 PT — Type C: Financial Incentive Mapping — Advance Publications Dual-Asset AI Content Monetization Architecture
+
+**Rotation:** C (Financial Incentive Mapping)
+
+### New finding: Advance Publications Dual-Asset AI Content Monetization Architecture
+Advance Publications operates TWO parallel AI content monetization channels — Reddit (23.3% economic stake, ~62% voting power at IPO, 2 board designees + 1 observer) and Condé Nast (wholly owned, parent of WIRED). This creates the most comprehensive undisclosed conflict of interest in AI journalism.
+
+**CHANNEL 1 — REDDIT (user-generated content):**
+- Q2 2026 earnings (Jul 30): Revenue $805M (+61% YoY), Other Revenue $43M (+24% YoY, includes data licensing)
+- Data licensing: Google $60M/yr, OpenAI ~$70M/yr, combined ~$130M/yr
+- Wells Fargo (Jun 2026, Alec Brondolo): projects renewal at $550M/yr — more than 4× current
+- Advance's 23.3% share of current licensing = ~$30M/yr; at renewal = ~$128M/yr
+- Huffman on renewal: "range of outcomes is wide," "not binary," exploring dynamic pricing tied to AI output usage
+- Search referral volatility: "AI overviews has yet to make a similar level of positive impact" — stock dropped post-earnings despite revenue beat
+
+**CHANNEL 2 — CONDÉ NAST (professional editorial content):**
+- CEO Roger Lynch (Oct 2025): advertising is "no longer a growth engine"
+- 5 AI deals: OpenAI, Amazon Rufus, Amazon Alexa+, Microsoft PCM, Perplexity — **0 Meta deals**
+- Events revenue: +40% in 2025, +22% projected in 2026 (Vanity Fair Oscars +65%, New Yorker Festival +86%, Vogue World +48%)
+- New growth pillars: events, subscriptions, commerce, AI licensing
+
+**THE CONVERGENCE:** Every WIRED article arguing "AI companies must pay for content" strengthens Reddit's renewal negotiations ($550M/yr projected) AND Condé Nast's own AI licensing position (5 deals). Every WIRED article adversarially covering Meta (0 Condé Nast deals) reinforces the narrative that non-paying companies are bad actors. Advance benefits whether AI companies license USER content (Reddit) or PROFESSIONAL content (Condé Nast).
+
+**SAM ALTMAN TRIPLE CONFLICT:** Altman (OpenAI CEO) personally owns 8.7% of Reddit (~$2.5B at ~$29B market cap). He profits from Reddit charging OpenAI more (Reddit equity appreciates), from OpenAI signing more publisher deals (OpenAI value), and from the $70M/yr OpenAI→Reddit deal itself flowing back to him through equity.
+
+### Data sourced from
+- Motley Fool Q2 2026 earnings call transcript (Jul 30, 2026)
+- Shacknews Q2 2026 earnings results
+- Barron's / Wells Fargo analyst note (Jun 2026)
+- FourWeekMBA ownership analysis
+- WebProNews Reddit data licensing negotiations
+- Adweek Condé Nast events revenue (2026)
+- Reuters OpenAI-Condé Nast deal announcement (Aug 2024)
+- The Wrap Advance-Reddit-Condé Nast analysis
+
+### Test results
+- New: `tests/test_advance_dual_asset_monetization_aug8.py` — 50 tests (9 classes), all passing
+- Structural consistency: 124 passed, 0 failed
+- Total: 6195 tests across 224 files
+- Commit: [pending]
+
+### Files modified
+- `profiles/competitor-entities.yaml` — added `advance_dual_asset_monetization` section
+- `profiles/competitor-coverage-research.yaml` — added finding + confounding factor
+- `tests/test_advance_dual_asset_monetization_aug8.py` — 50 new tests
+- `README.md` — updated test count (6195/224)
+- `docs/ARCHITECTURE.md` — updated test count (6195/224)
+
+## 2026-08-08 05:00 PT — Type B: Journalist Cross-Entity Tracking — Adi Robertson (The Verge) Comfort/Discomfort Paradox
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### New finding: The Comfort/Discomfort Paradox
+Adi Robertson — The Verge's longest-tenured staffer (14+ years, founding member Nov 2011) and primary XR voice post-Alex Heath departure (Sep 2025) — applies systematically different evaluation frameworks to Meta vs competitors:
+
+- **Meta Quest Pro (2022):** 2/5 — "irredeemably bad software," "uniquely tortuous" strap, "grainy" display, "doesn't look remotely like the real world," "launched without plan or purpose"
+- **Magic Leap 2 (2022, same year):** Positive hands-on, no numeric score — "a significantly improved device," "sharp and vibrant," "text is easy to read"
+- **Meta Quest 3 (2023):** "An upgraded VR game console with an extra feature… I can't tell if Meta is trying too hard" — dismissive, reductive
+- **Meta Quest 2 (2020):** "The new default for VR, if you're okay with Facebook" — privacy-conditional framing in headline/lede
+
+### New finding: Privacy Conditional Pattern
+Privacy-conditional language applied **exclusively** to Meta:
+- Quest 2: "if you're okay with Facebook" (headline-level conditional)
+- Ray-Ban Stories: "camera-toting glasses" (surveillance-adjacent language)
+- Apple Vision Pro (12 cameras, 5 sensors, 6 mics): **NO** privacy conditional
+- Magic Leap (multiple cameras): **NO** privacy conditional
+- Snap Spectacles (4 cameras): **NO** privacy conditional
+
+This mirrors the Chokkattu/Ashworth "Creep Paradox" on The Verge's product desk — demonstrating **cross-desk institutional consistency**: both the XR/policy desk and the product desk apply privacy framing exclusively to Meta.
+
+### Mechanism: institutional posture + humanities lens
+Not financially driven (no known personal financial ties). Cornell humanities BA (China/Asia-Pacific Studies) creates a moral-philosophy lens on surveillance that selectively triggers for Meta cameras but not Apple's 12-camera array. Single-publication career means no migration DiD available — she's a pure institutional control.
+
+### Institutional amplification
+- Post-Heath departure (Sep 2025): Robertson becomes The Verge's primary editorial voice on Meta Reality Labs. Individual framing patterns → institutional framing.
+- PMC acquisition (Jun 2026): Penske Media's entertainment portfolio (Variety, Rolling Stone, Deadline) with Apple TV+ ad dependencies potentially reinforces existing posture.
+
+### New test file:
+- `tests/test_adi_robertson_cross_entity.py` — **34 tests, 9 classes**, all passing
+
+### Test health:
+- 223 test files, 6145 tests total
+- 124/124 structural consistency passing
+- All new tests passing (34/34)
+
+### Commit: `f7d1876`
+
+---
+
 ## 2026-08-08 04:00 PT — Type A: Competitor Coverage Deep Dive — Atlantic × Matteo Wong Cross-Entity Framing
 
 **Rotation:** A (Competitor Coverage Deep Dive)

@@ -464,11 +464,12 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **6145 tests** across 223 test files, each covering a different analytical capability:
+MediaScope has **6195 tests** across 224 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
 | `test_accuracy_guide.py` | 13 | ACCURACY_GUIDE.md documentation consistency: existence and size, cross-references from README/AGENT_GUIDE/ARCHITECTURE, content structure (VADER polarity, genre accuracy, decision tree, correction paths A-L, misinterpretation patterns, validation checklist, known gaps), annotated article count sync with corpus |
+| `test_advance_dual_asset_monetization_aug8.py` | 50 | Advance Publications dual-asset AI content monetization architecture: Reddit Q2 2026 earnings ($805M revenue, $43M Other Revenue incl data licensing), Advance 23.3% economic stake + Condé Nast wholly owned, Sam Altman 8.7% Reddit stake triple conflict, Reddit data licensing deals (Google $60M/yr, OpenAI ~$70M/yr, Wells Fargo $550M/yr renewal projection), Condé Nast strategic pivot from advertising to AI licensing (5 deals, 0 Meta deals, events +40%), dual-asset editorial incentive analysis, financial math, cross-entity integration checks. 9 classes, 50 tests |
 | `test_analyst_quote_attribution.py` | 13 | Analyst/financial coverage: firm-level post-attribution suppression for short/long quotes, wire service cross-citation filtering, genuine scare quote preservation |
 | `test_entities.py` | 28 | Entity detection, regex patterns, false-positive exclusion, cluster formats, Mosseri/Instagram leadership |
 | `test_financial_relationships.py` | 40 | Financial relationship data integrity: competitor entity definitions, relationship types (adversarial_litigation, settlement, coercive), coverage research consistency, cross-profile validation, asymmetry scoring hypothesis (licensing coverage correlation, lawsuit paradox) |

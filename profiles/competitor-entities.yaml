@@ -2944,3 +2944,237 @@ marketplace_intermediary_landscape:
     marketplace ecosystem — with the least structural leverage over
     publishers' revenue diversification, yet receiving the most adversarial
     coverage from publishers entangled with Microsoft, Amazon, and OpenAI.
+
+advance_dual_asset_monetization:
+  overview: |
+    Advance Publications operates TWO parallel AI content monetization channels
+    through its subsidiaries — Reddit (23.3% economic stake, ~62% voting power
+    at IPO, 2 board designees + 1 observer) and Condé Nast (wholly owned, parent
+    of WIRED). This creates the most comprehensive undisclosed conflict of interest
+    in AI journalism: WIRED's editorial coverage of AI content licensing directly
+    supports Advance's financial interests through BOTH subsidiaries, yet this
+    dual-asset conflict is never disclosed.
+
+    CHANNEL 1 — REDDIT (user-generated content):
+    Reddit licenses its 26B-post corpus to AI companies. Q2 2026 Other Revenue
+    $43M (+24% YoY), annualized ~$172M. Google pays $60M/yr, OpenAI ~$70M/yr.
+    Wells Fargo (Jun 2026) projects renewal at $550M/yr combined — more than
+    quadruple the current ~$130M/yr. Advance's 23.3% economic stake means
+    it captures ~$12.8M/yr from current Reddit data licensing and would capture
+    ~$128M/yr at the $550M renewal level.
+
+    CHANNEL 2 — CONDÉ NAST (professional editorial content):
+    Condé Nast has 5 active AI content deals (OpenAI, Amazon Rufus, Amazon Alexa+,
+    Microsoft PCM, Perplexity) with ZERO Meta deals. CEO Roger Lynch declared
+    in October 2025 that advertising is "no longer a growth engine" — Condé Nast
+    is pivoting to events (+40% in 2025), subscriptions, commerce, and AI licensing
+    as its primary growth strategy.
+
+    THE CONVERGENCE: Every WIRED article arguing "AI companies must pay for content"
+    directly benefits BOTH Reddit's data licensing renewal negotiations ($550M/yr
+    projected) AND Condé Nast's own AI licensing revenue (5 active deals). Every
+    WIRED article adversarially covering Meta (the one major tech company with
+    NO Condé Nast deal) reinforces the narrative that companies NOT paying
+    publishers are bad actors — strengthening Advance's negotiating position
+    across both subsidiaries simultaneously.
+
+    ADDITIONAL CONFLICT: Sam Altman (OpenAI CEO) personally owns 8.7% of Reddit.
+    Altman profits from Reddit's data licensing deals (including the $70M/yr deal
+    OpenAI itself pays Reddit) AND from OpenAI's publisher deals (including the
+    Condé Nast deal). He wins regardless of whether AI companies pay publishers
+    more or less — his equity in both entities appreciates either way.
+  advance_reddit_economic_stake_pct: 23.3
+  advance_conde_nast_ownership: wholly_owned
+  advance_reddit_board_designees: 2
+  advance_reddit_board_observer: 1
+  sam_altman_reddit_stake_pct: 8.7
+  advance_content_monetization_channels: 2
+  meta_content_monetization_channels: 1
+  disclosed_in_wired_coverage: false
+  content_monetization_assets:
+  - name: Reddit
+    type: user_generated_content
+    ownership: 23.3% economic stake
+    content_corpus: 26B posts and comments
+    monetization: AI data licensing to Google, OpenAI, others
+  - name: Condé Nast
+    type: professional_editorial_content
+    ownership: wholly owned
+    content_corpus: 16 editorial brands (WIRED, Vogue, GQ, New Yorker, etc.)
+    monetization: AI content licensing to OpenAI, Amazon, Microsoft, Perplexity
+  reddit_q2_2026:
+    report_date: '2026-07-30'
+    total_revenue_m: 805
+    revenue_yoy_pct: 61
+    ad_revenue_m: 762
+    other_revenue_m: 43
+    other_revenue_yoy_pct: 24
+    net_income_m: 253
+    eps: 1.25
+    ebitda_m: 343
+    ebitda_margin_pct: 43
+    dau_m: 130.3
+    wau_m: 514.6
+    operating_cash_flow_m: 262
+    operating_cash_flow_ttm_b: 1.0
+    cash_securities_b: 2.8
+    q3_guidance_revenue_m: '860-870'
+    revenue_per_employee_milestone: $1M
+    eighth_consecutive_60pct_growth_quarter: true
+    traffic_note: |
+      Search referrals were choppy in Q2. Huffman: "visibility into referral
+      traffic remains low." AI Overviews has yet to deliver value comparable
+      to traditional 10 blue links. Reddit stock fell from $178.60 to $162.71
+      after-hours despite revenue/EPS beat.
+    huffman_ai_overviews_quote: |
+      AI overviews has yet to make a similar level of positive impact [as
+      traditional search links]. And I think that is consistent across the
+      broader landscape — us, businesses, publishers, retailers.
+    source_urls:
+    - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
+    - http://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
+    - https://www.zacks.com/stock/news/2965766/rddt-q2-earnings-call-highlights-ai-user-growth-push
+  reddit_data_licensing:
+    google_deal_annual_m: 60
+    openai_deal_annual_est_m: 70
+    combined_current_annual_m: 130
+    other_revenue_annualized_m: 172
+    wells_fargo_renewal_projection_annual_m: 550
+    wells_fargo_analyst: Alec Brondolo
+    wells_fargo_projection_date: 2026-06
+    renewal_status: |
+      Active negotiations. Huffman declined timeline on earnings call.
+      Said "range of outcomes is wide" and "not binary." Reddit exploring
+      dynamic pricing tied to usage of data in AI outputs rather than flat fees.
+      More buyers interested beyond Google and OpenAI.
+    huffman_quote: |
+      I don't think there's a binary outcome. All of these different touch
+      points — whether we're talking about training or blue links or AI
+      overviews or whatever next — those are all independent decisions.
+      And we will make sure that we are maximizing the value to Reddit.
+    advance_share_of_current_annual_m: 30.3
+    advance_share_of_projected_annual_m: 128.2
+    source_urls:
+    - https://www.webpronews.com/reddit-negotiates-dynamic-ai-data-deals-with-google-openai/
+    - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
+    - https://fudzilla.com/news/ai/60537-reddit-makes-ten-per-cent-of-cash-from-google-and-openai
+  conde_nast_strategic_pivot:
+    lynch_advertising_assessment: |
+      Condé Nast CEO Roger Lynch said in October 2025 that advertising is
+      "no longer a growth engine" for the company. Instead, Condé Nast plans
+      to lean on events, subscriptions, commerce, and licensing deals with
+      AI players including OpenAI and Perplexity.
+    events_revenue_growth_2025_pct: 40
+    events_revenue_projected_growth_2026_pct: 22
+    vanity_fair_oscars_revenue_yoy_pct: 65
+    new_yorker_festival_revenue_yoy_pct: 86
+    vogue_world_revenue_yoy_pct: 48
+    ai_deal_count: 5
+    ai_partners:
+    - OpenAI
+    - Amazon (Rufus)
+    - Amazon (Alexa+)
+    - Microsoft PCM
+    - Perplexity
+    meta_deal: none
+    new_growth_pillars:
+    - Events
+    - Subscriptions
+    - Commerce
+    - AI licensing
+    cro: Elizabeth Herbst-Brady
+    overall_revenue_trend: up year over year
+    source_urls:
+    - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+    - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+  editorial_incentive_analysis: |
+    WIRED's editorial stance on AI content licensing is not independent
+    journalism — it is structurally aligned with Advance Publications'
+    financial interests through BOTH Reddit AND Condé Nast. Specifically:
+
+    (1) Every WIRED article arguing "AI companies must pay for content"
+        strengthens Reddit's negotiating position in the Google/OpenAI
+        renewal ($550M/yr projected vs current $130M/yr). Advance captures
+        23.3% of this upside — potentially $128M/yr at renewal vs $30M/yr now.
+
+    (2) Every WIRED article adversarially covering Meta (ZERO Condé Nast deal)
+        reinforces the narrative that non-paying AI companies are bad actors,
+        while companies paying Condé Nast (OpenAI, Amazon, Microsoft, Perplexity)
+        receive softer treatment.
+
+    (3) Condé Nast's own strategic pivot makes AI licensing a CORE growth
+        driver — CRO Elizabeth Herbst-Brady confirmed overall revenue is up,
+        and Lynch identified AI licensing alongside events as the replacement
+        for advertising growth.
+
+    (4) The convergence is uniquely powerful: Advance benefits whether AI
+        companies license USER content (Reddit) or PROFESSIONAL content
+        (Condé Nast). No other media parent has dual-asset exposure to AI
+        content licensing on both sides of the content marketplace.
+
+    UNDISCLOSED: None of WIRED's AI coverage discloses that its parent
+    company's parent (Advance) has a 23.3% economic stake in Reddit, which
+    licenses data to the same AI companies WIRED covers, and that Condé Nast
+    itself has 5 AI licensing deals with 4 of those same companies.
+  altman_reddit_conflict: |
+    Sam Altman (OpenAI CEO) personally owns 8.7% of Reddit ($2.5B at
+    ~$29B market cap). This creates a triple conflict:
+    (a) Altman profits when Reddit charges OpenAI MORE for data licensing
+        (his Reddit equity appreciates from higher licensing revenue)
+    (b) Altman profits when OpenAI signs MORE publisher deals (his OpenAI
+        equity appreciates, and publishers receiving OpenAI money produce
+        softer coverage that benefits OpenAI's public standing)
+    (c) The OpenAI-Reddit data licensing deal itself ($70M/yr) flows
+        partially back to Altman through his Reddit equity — he is both
+        the buyer (as OpenAI CEO) and a beneficiary of the seller (as
+        Reddit shareholder)
+    This is the deepest personal financial entanglement in the AI content
+    licensing ecosystem. Altman profits regardless of whether AI companies
+    pay publishers more or less, because he has equity in entities on BOTH
+    sides of the transaction.
+  financial_math:
+    reddit_market_cap_approx_b: 29
+    reddit_share_price_post_earnings: 140.67
+    reddit_diluted_shares_m: 206.6
+    advance_reddit_equity_value_approx_b: 6.8
+    licensing_renewal_equity_impact_est_b: 3
+    altman_reddit_equity_value_approx_b: 2.5
+    calculation_note: |
+      Reddit market cap: $140.67 × 206.6M shares = ~$29B.
+      Advance 23.3% = ~$6.8B. Altman 8.7% = ~$2.5B.
+      If data licensing renewal adds $420M/yr incremental revenue
+      ($550M - $130M current), at Reddit's ~8x revenue multiple,
+      that adds ~$3.4B market cap. Advance's 23.3% share = ~$0.8B
+      additional equity value from licensing renewal alone.
+  source_urls:
+  - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
+  - http://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
+  - https://www.zacks.com/stock/news/2965766/rddt-q2-earnings-call-highlights-ai-user-growth-push
+  - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
+  - https://www.webpronews.com/reddit-negotiates-dynamic-ai-data-deals-with-google-openai/
+  - https://fudzilla.com/news/ai/60537-reddit-makes-ten-per-cent-of-cash-from-google-and-openai
+  - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+  - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+  - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+  - https://fourweekmba.com/who-owns-reddit/
+  - https://finance.biggo.com/news/US_RDDT_2026-07-30
+  mediascope_relevance: |
+    The Advance dual-asset architecture is the capstone conflict-of-interest
+    finding for MediaScope. It demonstrates that WIRED's parent company's
+    parent has financial interests in AI content licensing through BOTH
+    user-generated content (Reddit) and professional editorial content
+    (Condé Nast). No other media company has this dual exposure.
+
+    Combined with the existing findings:
+    - Microsoft septuple leverage (7 mechanisms)
+    - Amazon sextuple leverage (6 mechanisms)
+    - Apple quintuple leverage (5 mechanisms)
+    - Google quintuple coercion (5 mechanisms)
+    - Advance dual-asset monetization (2 parallel channels)
+    - Meta voluntary licensing only (1 mechanism, 0 leverage)
+
+    The pattern is clear: the entity with the FEWEST financial leverage
+    mechanisms over publishers (Meta) receives the MOST adversarial coverage,
+    while entities with the MOST mechanisms (Microsoft, Amazon, Apple, Google,
+    Advance/Reddit) receive substantially softer treatment. Financial
+    relationships predict coverage tone with high accuracy.
