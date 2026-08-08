@@ -4428,3 +4428,211 @@ advance_dual_asset_monetization:
     relationships predict coverage tone with high accuracy.
 
     '
+
+publisher_ai_revenue_opacity_index:
+  analysis_date: "2026-08-08"
+  finding_type: "financial_incentive_mapping"
+  rotation: "Type C"
+  title: "Publisher AI Revenue Opacity Index — How Disclosure Strategies Correlate with Coverage Adversariality"
+  thesis: >
+    The way publishers report (or hide) AI licensing revenue is itself a signal of their
+    financial entanglement with tech companies. Cross-referencing disclosure transparency
+    against MediaScope coverage pattern data reveals an inverse correlation: publishers
+    with ZERO financial disclosure show the STRONGEST adversarial Meta coverage, while
+    the most transparent publisher (News Corp) shows the most balanced cross-entity
+    coverage. The opacity is not incidental — it structurally prevents external verification
+    of the financial incentive → coverage tone model.
+
+  opacity_tiers:
+    - tier: 1
+      label: "BLACK BOX — Zero Public Disclosure"
+      description: >
+        Privately held publishers with no quarterly earnings, no SEC filings, and no
+        obligation to disclose AI licensing revenue. Financial relationships with tech
+        companies are entirely opaque to external analysis.
+      publishers:
+        - name: "Condé Nast (WIRED, Ars Technica, Vanity Fair)"
+          ownership: "Advance Publications (Newhouse family) — wholly owned, private"
+          ai_deals_known: 5
+          ai_deal_details: "OpenAI, Amazon Rufus, Amazon Alexa+, Microsoft PCM, Perplexity"
+          disclosed_values: 0
+          disclosure_mechanism: "None — private company, no filings"
+          meta_coverage_adversariality: "HIGH — WIRED among most adversarial Meta coverage outlets"
+          source_url: "https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/"
+
+        - name: "The Atlantic"
+          ownership: "Emerson Collective (Laurene Powell Jobs) — private"
+          ai_deals_known: 1
+          ai_deal_details: "OpenAI (announced Jan 2024, value undisclosed)"
+          disclosed_values: 0
+          disclosure_mechanism: "None — private company, no filings"
+          additional_conflicts: "Emerson Collective holds significant Apple equity via LPJ's Steve Jobs inheritance"
+          meta_coverage_adversariality: "HIGH — consistent adversarial framing"
+
+        - name: "Financial Times"
+          ownership: "Nikkei Inc. (acquired 2015 for £844M) — private"
+          ai_deals_known: 1
+          ai_deal_details: "OpenAI ($5-10M/yr estimated, exact value undisclosed)"
+          disclosed_values: 0
+          disclosure_mechanism: "None — private parent, no public filings"
+          meta_coverage_adversariality: "MODERATE-HIGH"
+
+        - name: "Vox Media / The Verge"
+          ownership: "PMC (Penske Media Corporation) acquired Jun 2026 — private"
+          ai_deals_known: 2
+          ai_deal_details: "Microsoft PCM deal, Condé Nast PCM content sharing"
+          disclosed_values: 0
+          disclosure_mechanism: "None — private company, no filings. PMC acquisition adds Apple TV+ ad dependencies"
+          meta_coverage_adversariality: "HIGH — The Verge among most adversarial"
+
+      tier_summary: >
+        4 of 7 MediaScope-profiled publication families are in Tier 1.
+        Combined known AI deals: 9. Combined disclosed deal values: 0.
+        These 4 publishers collectively show the HIGHEST adversarial Meta coverage scores.
+
+    - tier: 2
+      label: "BUNDLED — Revenue Exists but AI-Specific Revenue Hidden"
+      description: >
+        Publicly traded publishers that file SEC quarterly reports but bundle AI licensing
+        revenue with unrelated income streams (affiliate commissions, building rentals,
+        commercial printing, content syndication), making it impossible to isolate AI deal
+        contributions from public data.
+      publishers:
+        - name: "The New York Times Company"
+          ownership: "Public (NYSE: NYT), Ochs-Sulzberger family control via Class B stock"
+          bundle_label: "Affiliate, licensing and other"
+          q1_2026_bundle: "$68.5M (+7.8% YoY)"
+          q2_2026_bundle_derived: "$75.5M (~+3.4% YoY, derived: $762.5M - $537.9M - $149.1M)"
+          bundle_contents: >
+            Wirecutter Amazon Associates affiliate commissions, Amazon AI content licensing
+            ($20-25M/yr est.), building rental (~$6.8M/q), commercial printing, other licensing
+          ai_revenue_isolatable: false
+          ceo_ai_commentary: >
+            Levien (Q1 call May 6): "We've done a partnership with Amazon because it met those
+            conditions. And so far, so good. We're learning a lot there."
+          source_url: "https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/"
+          meta_coverage_adversariality: "MODERATE — adversarial on privacy/antitrust, balanced on product"
+
+        - name: "USA Today Co. (Gannett)"
+          ownership: "Public (NYSE: GCI)"
+          bundle_label: "Other digital revenue (includes digital content syndication, affiliate, content and AI partnerships and licensing)"
+          q1_2026_bundle: "$33.75M (+125.6% YoY)"
+          ai_revenue_isolatable: false
+          cfo_warning: "Gosser warned AI revenue would be 'lumpy or unpredictable' in the short term"
+          source_url: "https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/"
+          meta_coverage_adversariality: "LOW-MODERATE"
+
+        - name: "People Inc. (formerly IAC)"
+          ownership: "Public (NASDAQ: PPL, formerly IAC)"
+          bundle_label: "Licensing and other revenue"
+          q1_2026_bundle: "$40.7M (+26% YoY)"
+          ai_attribution: "Primarily driven by its Meta deal, and improved performance from Apple News+ and content syndication partners"
+          google_traffic_loss: "65% of referral traffic lost (per Barry Diller, Q1 call)"
+          source_url: "https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/"
+          meta_coverage_adversariality: "LOW-MODERATE"
+
+      tier_summary: >
+        3 publishers in Tier 2 report revenue but bundle AI licensing with 3-5 other income
+        streams. AI-specific revenue is impossible to extract from public filings. Notably,
+        People Inc. explicitly attributed growth to its Meta deal — the ONLY public attribution
+        of AI licensing to a specific tech company in Q1 2026 earnings. All three show
+        LOWER adversarial Meta coverage than Tier 1 publishers.
+
+    - tier: 3
+      label: "TRANSPARENT — AI Revenue Explicitly Discussed"
+      description: >
+        Publishers whose executive leadership explicitly names AI deal partners, describes
+        financial impact, and positions the company's AI licensing strategy as a core
+        business narrative.
+      publishers:
+        - name: "News Corp (Wall Street Journal, New York Post, Barron's, MarketWatch)"
+          ownership: "Public (NASDAQ: NWS/NWSA)"
+          ai_deals_named: "OpenAI, Meta"
+          q4_fy2026_revenue: "$2.34B (+11% YoY, beat $2.23B estimate)"
+          q4_fy2026_profitability: "Record — $230M from continuing operations (+167% YoY)"
+          q4_fy2026_adj_eps: "$0.35 (beat $0.21 estimate, nearly doubled from $0.19)"
+          ceo_ai_commentary: >
+            Thomson (Q4 FY2026, Aug 5): "We have trusted content relationships with OpenAI
+            and Meta, and are in advanced discussions with several other companies."
+            Also: "Without our journalists, our authors, our data, our brands and our
+            professional expertise, users would be drowning in a slimy sea of AI slop."
+          anthropic_settlement: "Expects proceeds from $1.5B Anthropic class-action settlement later in calendar year"
+          self_positioning: "'We are an AI inputs company' — Thomson, Q3 FY2026 call"
+          source_urls:
+            - "https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/"
+            - "https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/"
+          meta_coverage_adversariality: "LOW — WSJ shows most balanced cross-entity coverage"
+
+      tier_summary: >
+        News Corp is the ONLY publisher in MediaScope's coverage set that explicitly names
+        AI deal partners and describes the financial relationship in earnings calls. It also
+        shows the LOWEST adversarial Meta coverage among all profiled publishers. CEO Thomson's
+        self-positioning as "an AI inputs company" suggests News Corp sees AI licensing as
+        a feature, not a conflict — the opposite of Tier 1 publishers who hide deals while
+        running adversarial coverage of non-paying companies.
+
+  cross_tier_correlation:
+    finding: >
+      Inverse Transparency-Adversariality Pattern: Publishers that disclose MORE about their
+      AI financial relationships produce LESS adversarial coverage of companies they do
+      business with. Publishers that disclose NOTHING produce the MOST adversarial coverage
+      of companies that are NOT paying them.
+    evidence_points:
+      - point: "Tier 1 (zero disclosure) publishers show highest adversarial Meta coverage"
+        publications: ["WIRED", "The Atlantic", "The Verge", "Financial Times"]
+        disclosure_level: "Zero — all privately held"
+        adversariality: "HIGH"
+      - point: "Tier 2 (bundled disclosure) publishers show moderate Meta coverage"
+        publications: ["NYT", "USA Today", "People Inc."]
+        disclosure_level: "Revenue reported but AI-specific amounts hidden"
+        adversariality: "MODERATE"
+      - point: "Tier 3 (transparent) publisher shows lowest adversarial Meta coverage"
+        publications: ["WSJ", "New York Post", "Barron's"]
+        disclosure_level: "AI deals named, financial impact discussed"
+        adversariality: "LOW"
+    structural_implication: >
+      The opacity is not merely an accounting choice — it creates an information asymmetry
+      that benefits publishers. By hiding AI deal revenue while maintaining adversarial
+      coverage of non-paying companies, Tier 1 publishers can simultaneously:
+      (a) collect licensing fees from tech companies,
+      (b) signal editorial independence by attacking other tech companies,
+      (c) prevent readers from connecting financial relationships to editorial patterns.
+      This is the financial equivalent of "don't look behind the curtain" — and the private
+      ownership structure makes it permanent. Unlike Tier 2 publishers, whose bundling can
+      at least be partially unpacked via SEC filings, Tier 1 publishers face ZERO external
+      accountability for undisclosed financial relationships.
+
+  digiday_meta_finding:
+    title: "Industry-Wide Revenue Attribution Problem"
+    date: "2026-05-08"
+    source_url: "https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/"
+    key_quote: >
+      "While neither publisher broke out exactly how much money they made from AI licensing
+      deals in Q1 2026..." — Digiday, May 8, 2026
+    analyst_quote: >
+      "We haven't seen enough proof points to tell if the licensing story is going to play
+      out the way [IAC and USA Today] are envisioning. It's just too early to know."
+      — Daniel Kurnos, The Benchmark Company
+    mediascope_note: >
+      Even Digiday — the industry's own trade press — cannot determine how much publishers
+      make from AI licensing. The opacity is industry-wide, not publisher-specific. This
+      makes financial incentive mapping necessarily inferential rather than precise, which
+      is itself an important methodological acknowledgment for MediaScope's analysis.
+
+  news_corp_q4_fy2026_update:
+    report_date: "2026-08-05"
+    fiscal_period: "Q4 FY2026 (Apr-Jun 2026)"
+    total_revenue: "$2.34B (+11% YoY)"
+    adj_eps: "$0.35 (beat $0.21 est., vs $0.19 prior year)"
+    net_income_continuing: "$230M (+167% YoY)"
+    dow_jones_revenue: "$644M (+7%)"
+    digital_real_estate_revenue: "$553M (+19%)"
+    book_publishing_revenue: "$566M (+15%)"
+    ai_partnerships_status: "OpenAI and Meta deals active; 'advanced discussions' with several others"
+    anthropic_settlement_status: "Expects share of $1.5B payment, revenue impact 'later in calendar year'"
+    ceo_self_positioning: "'IP powers AI. IP is an input imperative.' — Thomson"
+    source_urls:
+      - "https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/"
+      - "https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/"
+      - "https://www.wsj.com/business/media/news-corp-revenue-rises-with-growth-across-all-segments-d5313004"
+

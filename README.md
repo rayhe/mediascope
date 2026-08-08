@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 6,456 | Across 231 test files |
+| Tests | 6,599 | Across 232 test files |
 
 ## ✨ Novel: Editorial Histories
 

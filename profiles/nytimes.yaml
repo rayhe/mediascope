@@ -86,9 +86,18 @@ ownership_chain:
           traffic to publishers. The Times isn't immune to that impact."
           Q3 guidance: digital-only subscription revenue +12-15% (mid-point below 14.2%
           consensus), total subscription +9-11%, ad revenue high-single to low-double digit.
+          DERIVED: Affiliate, licensing and other revenue = $762.5M - $537.9M - $149.1M =
+          $75.5M. Q1 2026 was $68.5M (+7.8% YoY). Q1 guidance for Q2 was "low single digit"
+          growth. Implied Q2 2025 affiliate/licensing/other ~$73M (total $687M - sub $480M -
+          ad $134M). YoY growth ~+3.4%, consistent with guidance. Growth rate DECELERATING:
+          Q4'25 n/a (seasonal spike $100.2M), Q1'26 +7.8%, Q2'26 ~+3.4%.
           MEDIASCOPE NOTE: Even the NYT — the most successful digital subscription publisher —
           is now explicitly acknowledging Google's traffic reduction. AI licensing revenue
-          STILL not broken out separately (bundled in affiliate/licensing/other).
+          STILL not broken out separately (bundled in affiliate/licensing/other). The $75.5M
+          figure bundles: (a) Wirecutter Amazon Associates affiliate commissions, (b) Amazon
+          AI content licensing deal ($20-25M/yr est.), (c) building rental income (~$6.8M/q),
+          (d) commercial printing, (e) any other licensing. Impossible to isolate AI deal
+          revenue from public filings alone.
   - name: "Ochs-Sulzberger Family / 1997 Trust"
     entity_type: "controlling_family"
     description: >
