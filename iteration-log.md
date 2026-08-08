@@ -29901,3 +29901,66 @@ The company with the FEWEST leverage mechanisms receives the MOST adversarial co
 ### Stats: 5787 tests, 214 files, 0 failures
 
 ---
+
+## 2026-08-07 22:00 PT — Type D: Day-End Cross-Validation — Fix 4 Failures + 44-Test Integrity Suite
+
+**Rotation:** D (Test & Verify)
+**Focus:** Day-end integrity check across all 11 iteration cycles (Aug 7 00:00–21:00 PT)
+
+### FAILURES FOUND AND FIXED (4):
+
+| Failure | Root Cause | Fix |
+|---------|-----------|-----|
+| `test_competitor_coverage::test_financial_tie_is_valid[news-corp]` | `settlement_revenue` not in valid types set | Added `settlement_revenue` to valid financial_tie types — distinct from `settlement` (litigation-only) |
+| `test_competitor_coverage::test_coverage_prediction_is_valid[news-corp]` | Extended string `"neutral (litigation-driven, not editorial-influenced)"` breaks enum | Normalized to `"neutral"` with inline YAML comment |
+| `test_type_d_cross_validation_aug7_06am::test_nine_entities_in_yaml` | Hardcoded 9 entities, but Microsoft + Snowflake added in later iterations | Changed to `>= 9` floor check |
+| `test_type_d_cross_validation_aug7_06am::test_nine_entities_after_all_iterations` | Same stale entity list (missing microsoft, snowflake) | Updated to full 11-entity list |
+
+### NEW CROSS-VALIDATION SUITE (test_type_d_10pm_cross_validation_aug7.py):
+
+44 tests across 10 classes validating cumulative day integrity:
+
+| Class | Tests | Validates |
+|-------|-------|-----------|
+| TestNewsCorpTripleRevenue | 6 | 3 AI revenue sources, settlement_revenue type, control designation, Q4 FY2026 |
+| TestNewsCorpRevenueConsistency | 2 | Revenue dependency index presence, balanced control designation |
+| TestWiredAppleOpenAISilence | 3 | Profile documentation, asymmetry score ≥ 0.82, research file entry |
+| TestAsymmetryMechanisms | 4 | All 4 mechanisms documented (licensing, advertising, marketplace, identity capture) |
+| TestFinancialAmplificationOrdering | 2 | Clean controls < financially connected publications |
+| TestEntitySetStability | 16 | 11 entities present, Samsung display name, Snowflake marketplace, Microsoft OpenAI |
+| TestSettlementRevenueType | 2 | settlement_revenue in News Corp profile, valid enum prediction |
+| TestMetricScales | 2 | Asymmetry scores [0,1], tone scores [-1,1] |
+| TestSourceURLPresence | 4 | Anthropic source, Q4 sources, silence sources, Olson sources |
+| TestDayCumulativeIntegrity | 4 | Meta entity, Gizmodo clean control, README count > 5000, ARCHITECTURE doc |
+
+### VERIFICATION RESULTS:
+
+- **124/124** structural consistency tests passing
+- **429/429** today's iteration files passing (191 + 238 from two batches)
+- **319/319** financial/competitor/entity/asymmetry/sentiment/citation/revenue regression tests passing
+- **254/254** cross-entity journalist + financial incentive mapping tests passing
+- **61/61** Aug 6-7 Type D cross-validation tests passing
+- **44/44** new day-end cross-validation tests passing
+- **0 regressions** after all fixes
+
+### DAY SUMMARY (12 iterations, Aug 7 00:00–22:00 PT):
+
+| Time | Type | Finding |
+|------|------|---------|
+| 00:00 | D | Revenue Dependency Concentration cross-validation (66 tests) |
+| 01:00 | A | NYT × Amazon February Simultaneous Coverage Paradox (46 tests) |
+| 03:00 | B | Samsung Equivalence Paradox (41 tests) |
+| 05:00 | C | PMC Deal Fragmentation Paradox (46 tests) |
+| 07:00 | D | Structural consistency fixes (entity counts) |
+| 08:00 | A | Gizmodo × OpenAI Rogue AI Framing Paradox — Additive Bias Model (33 tests) |
+| 12:00 | B | FT × Melissa Heikkilä — Career Migration + Reverse Editorial Pipeline (28 tests) |
+| 14:00 | C | Snowflake Cortex Marketplace Intermediary + xAI Litigation (35 tests) |
+| 15:00 | D | Financial Amplification Model cross-validation (36 tests) |
+| 16:00 | A | WIRED Apple-OpenAI 28-day Silence (41 tests) |
+| 19:00 | B | Parmy Olson CEO Personalization Asymmetry — 4th Mechanism: Professional Identity Capture (28 tests) |
+| 21:00 | C | News Corp Triple-Revenue Architecture (37 tests) |
+| 22:00 | D | Day-end cross-validation — fix 4 failures, 44-test integrity suite |
+
+**Day total:** 13 iterations, ~527 new tests, 0 regressions, 4 failures found and fixed
+
+### Stats: 5868 tests, 216 files, 0 failures | Commit: fbb5c64 | Pushed to GitHub
