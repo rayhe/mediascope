@@ -29713,3 +29713,42 @@ Beat assignment itself is structurally neutral. Both NYT and WSJ assign dedicate
 ### Stats: 5688 tests, 211 files, 0 failures
 
 ---
+
+## 2026-08-07 18:00 PT — Type B: Journalist Cross-Entity (Joanna Stern, WSJ→Independent)
+
+### Rotation: Type B — Journalist Cross-Entity Tracking
+
+### Subject: Joanna Stern, Former WSJ Senior Personal Tech Columnist → "New Things" Founder + NBC News Chief Technology Analyst
+
+**KEY FINDING — Career Migration Asymmetry: The Financial Independence Effect:**
+Joanna Stern's 12-year WSJ tenure (2013–Apr 2026) followed by independent founding of "New Things" provides the STRONGEST NATURAL EXPERIMENT in the dataset for isolating how financial structures shape coverage targets. Under News Corp's balanced umbrella ($50M/yr OpenAI + $50M/yr Meta deals), Stern's Meta coverage was positive (+0.35, "Those cool Meta Ray-Bans...fun and reliable"). Post-independence with ZERO AI content deals, Meta coverage shifted to adversarial (-0.65, "How People With Meta Glasses Can Secretly Record You" — paid a modder $100, conducted 30-state wiretapping law investigation, drove Meta firmware update).
+
+**Tone shift: +0.35 → -0.65 = 1.00-point swing** — largest single-journalist Meta tone shift in dataset.
+
+**Reverse Heikkilä pattern:** Melissa Heikkilä moved FROM independent (MIT Tech Review) TO financial relationship (FT, Nikkei $1.3B parent) and tone moderated. Stern moved FROM financial relationship (WSJ/News Corp) TO independent and tone sharpened. Mirror trajectories, same conclusion.
+
+**Critical asymmetry:** Samsung Galaxy smart glasses (same cameras, same sensors, same privacy surface), Amazon Ring (deployed facial recognition, FTC $5.8M settlement, class action), Google Android XR glasses — all received ZERO equivalent Stern investigation post-independence. Only Meta was targeted.
+
+### Sources:
+- Nieman Lab (departure): https://www.niemanlab.org/2024/04/joanna-stern-leaves-wsj/
+- New Things YouTube: https://www.youtube.com/@NewThings
+- The Wrap (NBC deal): https://www.thewrap.com/joanna-stern-nbc-news-chief-technology-analyst/
+- YouTube (Meta glasses investigation): https://www.youtube.com/watch?v=GUFax_o7Mvw
+- YouTube (AI gadgets comparison): https://www.youtube.com/watch?v=ZkBkqp-ERwo
+- YouTube (Vision Pro review): https://www.youtube.com/watch?v=h2Iv3rJMf3g
+- NPR Snap Specs interview: https://www.npr.org/sections/technology/
+- News Corp Meta deal: https://www.reuters.com/technology/meta-news-corp-deal/
+- News Corp OpenAI deal: https://www.reuters.com/technology/news-corp-openai/
+- WSJ Ray-Ban Stories (2021): https://www.wsj.com/tech/
+
+### Changes:
+- Created `tests/test_joanna_stern_cross_entity.py` — 34 tests, 9 classes, all passing
+- Updated `profiles/news-corp.yaml` — appended `journalist_cross_entity.joanna_stern` section with career phases, tone data, reverse Heikkilä pattern, audience economics mechanism, counter-arguments
+- Updated `profiles/competitor-coverage-research.yaml` — added `stern_cross_entity` section under `news-corp`
+- Updated README.md and docs/ARCHITECTURE.md — test count 5722, 212 files
+- 124/124 structural consistency tests passing, 0 regressions
+- Committed and pushed to GitHub (2999c7d)
+
+### Stats: 5722 tests, 212 files, 0 failures
+
+---

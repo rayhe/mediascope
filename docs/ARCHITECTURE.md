@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5722 tests across 212 test files (all from real articles)
+├── tests/                       # 5750 tests across 213 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -539,6 +539,7 @@ mediascope/
 │   ├── test_raymond_wong_cross_entity.py # Gizmodo Raymond Wong cross-entity: Clean Control Paradox (no-deals publication balanced), Maxwell Zeff migration (Gizmodo→WIRED), three-tier model validation, aggregate control evidence
 │   ├── test_charlie_warzel_cross_entity.py # Charlie Warzel (Atlantic) cross-entity: career-defining adversarial Meta beat, OpenAI executive access asymmetry, Apple coverage absence, vocabulary/investigation/financial incentive correlation
 │   ├── test_chokkattu_ashworth_cross_entity.py # Chokkattu & Ashworth (WIRED Gear desk) cross-entity: "Creep Paradox" — Meta glasses get 'creep'/'surveillance' framing, Snap (4 cameras) and Google (cameras + Gemini) get none; dual-channel influence via Business Wars podcast; Condé Nast financial correlation
+│   ├── test_parmy_olson_cross_entity.py # Parmy Olson (Bloomberg Opinion) cross-entity: CEO personalization asymmetry — 87.5% Meta headlines personalize to "Zuckerberg" vs 0% for OpenAI/Anthropic; loaded language asymmetry ("bait," "slop," "failure club" for Meta vs analytical framing for competitors); professional identity capture mechanism via "Supremacy" book — new asymmetry type distinct from financial incentives
 │   ├── test_christopher_mims_cross_entity.py # Mims (WSJ) cross-entity: TONE INVERSION — constructive Meta (+0.3) vs skeptical OpenAI (-0.3), validates balanced control; WSJ systematic disclosure (only pub that discloses financial ties)
 │   ├── test_dan_milmo_cross_entity.py    # Milmo (Guardian) cross-entity: "BIG TOBACCO" framing asymmetry — Meta gets loaded metaphor, OpenAI rogue agent gets factual relay. Gap ~0.20. Editorial leadership role means institutional direction.
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment

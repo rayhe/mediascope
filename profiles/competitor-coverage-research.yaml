@@ -2779,3 +2779,55 @@ aggregate_findings:
         Snap uses OpenAI (which pays Condé Nast).
     test_file: tests/test_chokkattu_ashworth_cross_entity.py
     test_count: 28
+
+  bloomberg_parmy_olson:
+    journalist: Parmy Olson
+    publication: Bloomberg Opinion
+    role: AI Columnist
+    book: "Supremacy: AI, ChatGPT, and the Race that Will Change the World (2024)"
+    mechanism: professional_identity_capture
+    mechanism_explanation: |
+      Bloomberg has NO known AI content licensing deals with OpenAI, Google, Amazon,
+      or Anthropic. The asymmetry stems from Olson's book "Supremacy" centering the
+      OpenAI-DeepMind rivalry as the defining AI narrative. Meta's emergence as a
+      major AI player threatens both the commercial viability of this thesis and
+      Olson's professional identity as its chronicler. This is a new asymmetry
+      mechanism distinct from publication-level financial incentives.
+    key_finding: CEO personalization asymmetry
+    finding_summary: |
+      Olson personalizes Meta coverage to "Zuckerberg"/"Mark Zuckerberg" in 87.5%
+      of headlines (7 of 8 articles) while NEVER personalizing OpenAI to "Sam Altman"
+      or Anthropic to "Dario Amodei" (0 of 6 combined). This is a documented
+      persuasion technique: personalizing corporate actions to an individual triggers
+      moral culpability attribution in readers. Meta headlines use emotionally loaded
+      words ("bait," "slop," "failure club," "groupthink," "secret weapon") while
+      OpenAI/Anthropic headlines use analytical framing ("risks," "pivot," "heat").
+    personalization_rates:
+      meta: 87.5%
+      openai: 0%
+      anthropic: 0%
+      google: 0%
+    tone_scores:
+      meta_average: -0.51
+      openai_average: -0.11
+      anthropic_average: +0.15
+      google_average: -0.35
+    tone_delta_meta_vs_openai: 0.40
+    follower_framing_instances:
+      - article: "AI Failure Club"
+        phrase: "chronic inability to develop an original idea"
+      - article: "Groupthink Over AI Godfather"
+        phrase: "scrambling to match OpenAI by cloning ChatGPT"
+      - article: "Days of Giving Away AI for Free"
+        phrase: "Llama is the flagship AI model Meta built to catch up with ChatGPT"
+    asymmetry_evidence:
+      meta_loaded_words: ["bait", "slop", "failure club", "groupthink", "secret weapon"]
+      openai_loaded_words: ["nightmare"]
+      anthropic_loaded_words: []
+      personalization_delta_pp: 87.5
+      bloomberg_financial_ties: none_known
+    source_urls:
+      - https://news.bloomberglaw.com/author/parmy-olson-22420307
+      - https://booktrib.com/2025/05/03/supremacy-parmy-olson/
+    test_file: tests/test_parmy_olson_cross_entity.py
+    test_count: 35
