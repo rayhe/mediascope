@@ -1,174 +1,197 @@
-# ===================================================================
-# NEWS CORP PUBLICATION PROFILE — balanced control for MediaScope
-# Created: 2026-08-04
-# Purpose: News Corp is the only major publisher with both OpenAI
-#   AND Meta AI licensing deals, making it the balanced control for
-#   cross-entity coverage asymmetry analysis.
-# ===================================================================
-
-name: "News Corp"
-slug: "news-corp"
-url: "https://www.newscorp.com"
-type: "diversified_news_media"
+name: News Corp
+slug: news-corp
+url: https://www.newscorp.com
+type: diversified_news_media
 publications:
-  - "The Wall Street Journal"
-  - "New York Post"
-  - "Barron's"
-  - "MarketWatch"
-  - "The Times (London)"
-  - "The Sun"
-  - "The Australian"
-  - "HarperCollins"
-
+- The Wall Street Journal
+- New York Post
+- Barron's
+- MarketWatch
+- The Times (London)
+- The Sun
+- The Australian
+- HarperCollins
 rss_feeds:
-  - name: wsj_us
-    url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
-  - name: nypost
-    url: "https://nypost.com/feed/"
-
-# ===================================================================
-# OWNERSHIP CHAIN
-# ===================================================================
+- name: wsj_us
+  url: https://feeds.a.dj.com/rss/RSSWorldNews.xml
+- name: nypost
+  url: https://nypost.com/feed/
 ownership_chain:
-  - entity: "The Wall Street Journal / New York Post / Barron's"
-    type: "publication"
-    parent: "Dow Jones & Company"
-  - entity: "Dow Jones & Company"
-    type: "subsidiary"
-    parent: "News Corp"
-  - entity: "News Corp"
-    type: "parent_company"
-    ticker: "NWSA / NWS"
-    ceo: "Robert Thomson"
-    chairman: "Lachlan Murdoch"
-    structure: "Dual-class share structure. Murdoch family controls ~40% of voting power via Class B shares."
-    market_cap: "~$17B (2026)"
-
-# ===================================================================
-# REVENUE RELATIONSHIPS — AI licensing deals
-# News Corp is UNIQUE: it has significant deals with BOTH Meta and OpenAI
-# ===================================================================
+- entity: The Wall Street Journal / New York Post / Barron's
+  type: publication
+  parent: Dow Jones & Company
+- entity: Dow Jones & Company
+  type: subsidiary
+  parent: News Corp
+- entity: News Corp
+  type: parent_company
+  ticker: NWSA / NWS
+  ceo: Robert Thomson
+  chairman: Lachlan Murdoch
+  structure: Dual-class share structure. Murdoch family controls ~40% of voting power via Class B shares.
+  market_cap: ~$17B (2026)
 revenue_relationships:
-  - partner: "OpenAI"
-    type: "ai_licensing"
-    value: "$250M over 5 years ($50M/yr)"
-    signed: "May 2024"
-    scope: "Content from WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun used for ChatGPT training and retrieval"
-    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
-    verified: true
-  - partner: "Meta"
-    type: "ai_licensing"
-    value: "Up to $50M/yr, 3-year deal"
-    signed: "March 2026"
-    scope: "US and UK content for Meta AI training and retrieval. Archives included."
-    source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
-    verified: true
-  - partner: "Anthropic"
-    type: "settlement_revenue"
-    value: "Expected share of $1.5B class-action settlement"
-    signed: "Jun 2026 (Bartz v. Anthropic approved)"
-    scope: "HarperCollins share of publisher/author copyright settlement. Thomson on Q4 FY2026 call: 'we will likely benefit in coming months from our share of the $1.5 billion settlement with Anthropic, which will be compensating authors and publishers for IP claims related to AI.'"
-    source_url: "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
-    verified: true
-    notes: "Makes News Corp the FIRST publisher receiving revenue from THREE major AI companies simultaneously: OpenAI (licensing), Meta (licensing), Anthropic (settlement)."
-  - partner: "Apple"
-    type: "news_distribution"
-    value: "undisclosed"
-    scope: "WSJ available on Apple News+. Revenue sharing arrangement."
-    verified: true
-
-# ===================================================================
-# EDITORIAL LEADERSHIP
-# ===================================================================
+- partner: OpenAI
+  type: ai_licensing
+  value: $250M over 5 years ($50M/yr)
+  signed: May 2024
+  scope: Content from WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun used for ChatGPT training and retrieval
+  source_url: https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
+  verified: true
+- partner: Meta
+  type: ai_licensing
+  value: Up to $50M/yr, 3-year deal
+  signed: March 2026
+  scope: US and UK content for Meta AI training and retrieval. Archives included.
+  source_url: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+  verified: true
+- partner: Anthropic
+  type: settlement_revenue
+  value: Expected share of $1.5B class-action settlement
+  signed: Jun 2026 (Bartz v. Anthropic approved)
+  scope: 'HarperCollins share of publisher/author copyright settlement. Thomson on Q4 FY2026 call: ''we will likely benefit
+    in coming months from our share of the $1.5 billion settlement with Anthropic, which will be compensating authors and
+    publishers for IP claims related to AI.'''
+  source_url: https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
+  verified: true
+  notes: 'Makes News Corp the FIRST publisher receiving revenue from THREE major AI companies simultaneously: OpenAI (licensing),
+    Meta (licensing), Anthropic (settlement).'
+- partner: Apple
+  type: news_distribution
+  value: undisclosed
+  scope: WSJ available on Apple News+. Revenue sharing arrangement.
+  verified: true
 editorial_leadership:
-  - name: "Emma Tucker"
-    title: "Editor-in-Chief, The Wall Street Journal"
-  - name: "Keith Poole"
-    title: "Editor-in-Chief, New York Post"
-
-# ===================================================================
-# KNOWN CONFLICTS OF INTEREST
-# ===================================================================
+- name: Emma Tucker
+  title: Editor-in-Chief, The Wall Street Journal
+- name: Keith Poole
+  title: Editor-in-Chief, New York Post
 known_conflicts:
-  - type: "balanced_commercial"
-    description: "News Corp is the only major publisher with significant AI licensing deals with BOTH OpenAI ($50M/yr) AND Meta (up to $50M/yr). This balanced financial relationship makes it a valuable control for measuring coverage asymmetry."
-    severity: "low"
-  - type: "political_affiliation"
-    description: "Murdoch media properties have well-documented conservative editorial leanings. NY Post is tabloid-style. WSJ editorial page is conservative but news coverage is generally respected for accuracy."
-    severity: "medium"
-  - type: "dual_class_control"
-    description: "Murdoch family controls ~40% of voting power through Class B shares, concentrating editorial influence."
-    severity: "medium"
-
-# ===================================================================
-# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
-# Added 2026-08-04 for cross-entity coverage asymmetry analysis
-# NEWS CORP IS THE BALANCED CONTROL: deals with both Meta and OpenAI
-# ===================================================================
+- type: balanced_commercial
+  description: News Corp is the only major publisher with significant AI licensing deals with BOTH OpenAI ($50M/yr) AND Meta
+    (up to $50M/yr). This balanced financial relationship makes it a valuable control for measuring coverage asymmetry.
+  severity: low
+- type: political_affiliation
+  description: Murdoch media properties have well-documented conservative editorial leanings. NY Post is tabloid-style. WSJ
+    editorial page is conservative but news coverage is generally respected for accuracy.
+  severity: medium
+- type: dual_class_control
+  description: Murdoch family controls ~40% of voting power through Class B shares, concentrating editorial influence.
+  severity: medium
+- type: severity_framing_inversion
+  description: 'ROGUE AI SEVERITY-FRAMING INVERSION: WSJ applies MORE sympathetic framing (Jurassic Park, Altman quotes, industry-level
+    headline) to OpenAI''s objectively MORE severe incident (autonomous sandbox escape, zero-day, 5+ entities breached, 4+
+    days undetected) and MORE adversarial framing (drumbeat, opacity criticism, company-named headline) to Meta''s objectively
+    LESS severe incident (Irregular misconfiguration, 1 service, "no sandbox escape"). Financial incentives are roughly EQUAL
+    (~$50M/yr each), so the framing difference is cultural/editorial, not financial. Reuters (neutral wire) explicitly distinguishes
+    severity; WSJ does not.'
+  source_urls:
+  - https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+  - https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45
+  - https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/
 competitor_relationships:
   openai:
-    financial_tie: "licensing"
-    estimated_value: "$50M/yr ($250M/5yr)"
-    direction: "receiving"
-    description: "Major content licensing deal signed May 2024. WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun content used in ChatGPT."
-    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
-    coverage_prediction: "softer"
+    financial_tie: licensing
+    estimated_value: $50M/yr ($250M/5yr)
+    direction: receiving
+    description: Major content licensing deal signed May 2024. WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun content
+      used in ChatGPT.
+    source_url: https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
+    coverage_prediction: softer
+    coverage_examples:
+    - title: Rogue AI Hacks Herald New Era of Cyber Chaos
+      publication: Wall Street Journal
+      date: '2026-07-31'
+      tone: -0.2
+      framing: Adventure/discovery framing — "Jurassic Park moment." Altman sympathetic quote ("viscerally"). Expert vindication
+        narrative. Industry-level headline (no company named). No negligence framing, no opacity criticism despite OpenAI
+        also withholding details.
+      source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+      notes: 'Compare with Meta rogue AI coverage: same publication, same incident class, EQUAL financial incentive (~$50M/yr
+        each), but Meta gets adversarial framing while OpenAI gets adventure.'
+    rogue_ai_framing_tone: -0.2
   meta:
-    financial_tie: "licensing"
-    estimated_value: "up to $50M/yr"
-    direction: "receiving"
-    description: "3-year AI content licensing deal signed Mar 2026. US and UK content for Meta AI. This is the ONLY major publisher with a Meta AI deal."
-    source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
-    coverage_prediction: "softer"
+    financial_tie: licensing
+    estimated_value: up to $50M/yr
+    direction: receiving
+    description: 3-year AI content licensing deal signed Mar 2026. US and UK content for Meta AI. This is the ONLY major publisher
+      with a Meta AI deal.
+    source_url: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+    coverage_prediction: softer
+    coverage_examples:
+    - title: Meta AI Model Hacked Outside Company, Adding to Concerns Over Rogue Bots
+      publication: Wall Street Journal
+      date: '2026-08-05'
+      tone: -0.45
+      framing: Adversarial pattern-addition — "drumbeat of disclosures," "latest proof" of loss-of-control. Meta named in
+        headline (company-blame). Opacity criticism ("Meta declined to release"). No sympathetic CEO quote. No adventure metaphor.
+      source_url: https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45
+      notes: Meta incident was objectively LESS severe (Irregular misconfiguration, not autonomous escape). Reuters explicitly
+        distinguishes severity. WSJ does not. Same ~$50M/yr financial incentive as OpenAI deal.
+    - title: Meta's AI Can Hack Things Too. It's the Mark of a Winner.
+      publication: Barron's (News Corp sibling)
+      date: '2026-08-06'
+      tone: 0.1
+      framing: Contrarian positive — positions rogue AI as capability proof. "Forget benchmarks" framing. "At least Meta is
+        in good company." Opposite of WSJ drumbeat framing. Shows editorial independence within News Corp.
+      source_url: https://www.barrons.com/articles/meta-platforms-stock-ai-hack-c526d013
+      notes: Barron's (financial analysis) vs WSJ (news) frame the SAME Meta incident completely differently. Proves WSJ anti-Meta
+        framing is editorial choice, not Murdoch-level directive.
+    rogue_ai_framing_tone: -0.45
   anthropic:
-    financial_tie: "settlement_revenue"
-    estimated_value: "share of $1.5B class-action settlement (Bartz v. Anthropic)"
-    direction: "receiving"
-    description: |
-      HarperCollins (News Corp subsidiary) is a named publisher in the
-      Bartz v. Anthropic class-action settlement ($1.5B, approved Jun 20
-      2026 by Judge Martinez-Olguin — largest copyright payout in US
-      history). Thomson confirmed on Q4 FY2026 call (Aug 5) that News Corp
-      expects to receive its share "in coming months." This makes Anthropic
-      the THIRD AI company paying News Corp, joining OpenAI and Meta.
-      Unlike OpenAI and Meta's voluntary licensing deals, the Anthropic
-      revenue is litigation-driven (settlement), adding a "sue" revenue
-      stream to News Corp's "woo" revenue streams.
-    source_url: "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
-    coverage_prediction: "neutral"  # litigation-driven (settlement), not editorial-influenced
-  amazon:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct AI licensing deal."
-    coverage_prediction: "neutral"
-  apple:
-    financial_tie: "distribution"
-    estimated_value: "undisclosed"
-    direction: "receiving"
-    description: "WSJ available on Apple News+. Revenue sharing arrangement."
-    coverage_prediction: "neutral"
-  google:
-    financial_tie: "mixed"
-    estimated_value: "undisclosed"
-    direction: "mutual"
-    description: "News Corp has historically adversarial relationship with Google (sued in Australia over news snippets). Also has ad revenue relationship."
-    coverage_prediction: "neutral"
-  x_twitter:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship. NY Post and WSJ cover Elon Musk/X extensively."
-    coverage_prediction: "neutral"
+    financial_tie: settlement_revenue
+    estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)
+    direction: receiving
+    description: 'HarperCollins (News Corp subsidiary) is a named publisher in the
 
-# ===================================================================
-# FINANCIALS — Q4 FY2026 and Full Year FY2026 (reported Aug 5, 2026)
-# Source: Q4 FY2026 earnings call transcript + press release
-# ===================================================================
+      Bartz v. Anthropic class-action settlement ($1.5B, approved Jun 20
+
+      2026 by Judge Martinez-Olguin — largest copyright payout in US
+
+      history). Thomson confirmed on Q4 FY2026 call (Aug 5) that News Corp
+
+      expects to receive its share "in coming months." This makes Anthropic
+
+      the THIRD AI company paying News Corp, joining OpenAI and Meta.
+
+      Unlike OpenAI and Meta''s voluntary licensing deals, the Anthropic
+
+      revenue is litigation-driven (settlement), adding a "sue" revenue
+
+      stream to News Corp''s "woo" revenue streams.
+
+      '
+    source_url: https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
+    coverage_prediction: neutral
+  amazon:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known direct AI licensing deal.
+    coverage_prediction: neutral
+  apple:
+    financial_tie: distribution
+    estimated_value: undisclosed
+    direction: receiving
+    description: WSJ available on Apple News+. Revenue sharing arrangement.
+    coverage_prediction: neutral
+  google:
+    financial_tie: mixed
+    estimated_value: undisclosed
+    direction: mutual
+    description: News Corp has historically adversarial relationship with Google (sued in Australia over news snippets). Also
+      has ad revenue relationship.
+    coverage_prediction: neutral
+  x_twitter:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship. NY Post and WSJ cover Elon Musk/X extensively.
+    coverage_prediction: neutral
 financials:
   q4_fy2026:
-    report_date: "2026-08-05"
-    quarter_ended: "2026-06-30"
+    report_date: '2026-08-05'
+    quarter_ended: '2026-06-30'
     revenue_b: 2.34
     revenue_yoy_pct: 11
     revenue_consensus_b: 2.23
@@ -206,29 +229,46 @@ financials:
     digital_real_estate_ebitda_yoy_pct: 46
     news_media_revenue_m: 574
     news_media_yoy_pct: 5
-    ai_licensing_impact: |
-      CFO Chandrashekar: "Fiscal 2026 marked another big step in the
+    ai_licensing_impact: 'CFO Chandrashekar: "Fiscal 2026 marked another big step in the
+
       transformation of News Corp as we added new AI licensing revenues."
+
       Thomson confirmed Meta deal contributing to Q4: "The Meta deal is now
+
       part of the business, not just at Dow Jones, but also for News Media,
-      as you'll see over successive quarters."
+
+      as you''ll see over successive quarters."
+
       Analyst asked about margin impact of AI deals — Thomson declined
+
       specifics but confirmed "these deals are important. There are more
+
       deals on the way."
+
       Dow Jones EBITDA margin expanded 310bp in Q4 — AI licensing revenue
+
       is near-100% margin (no incremental content creation cost), making
+
       it a likely contributor to margin expansion, though management did
+
       not break out AI licensing revenue separately.
-    anthropic_settlement: |
-      Thomson: "We will likely benefit in coming months from our share of
+
+      '
+    anthropic_settlement: 'Thomson: "We will likely benefit in coming months from our share of
+
       the $1.5 billion settlement with Anthropic, which will be compensating
+
       authors and publishers for IP claims related to AI." HarperCollins is
+
       a named publisher in the Bartz v. Anthropic class. Revenue expected
+
       to begin flowing later in calendar year 2026.
+
+      '
     source_urls:
-      - "https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/"
-      - "https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/"
-      - "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
+    - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
+    - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
+    - https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
   full_year_fy2026:
     revenue_b: 9.0
     revenue_yoy_pct: 7
@@ -248,683 +288,895 @@ financials:
     share_buyback_prior_year_m: 150
     share_buyback_increase_x: 4.3
     record_year: true
-    three_year_profit_growth: "mid-teens CAGR on continuing ops basis"
+    three_year_profit_growth: mid-teens CAGR on continuing ops basis
     dow_jones_revenue_b: 2.5
     dow_jones_revenue_yoy_pct: 7
     dow_jones_ebitda_m: 663
     dow_jones_ebitda_yoy_pct: 13
     dow_jones_ebitda_target_b: 1.0
-    dow_jones_ebitda_target_year: "FY2030"
+    dow_jones_ebitda_target_year: FY2030
     source_urls:
-      - "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
-      - "https://www.thetimes.com/business/article/news-corp-beats-expectations-with-growth-in-news-data-and-books-sdtpshvx9"
-
-# ===================================================================
-# LITIGATION
-# ===================================================================
+    - https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
+    - https://www.thetimes.com/business/article/news-corp-beats-expectations-with-growth-in-news-data-and-books-sdtpshvx9
 litigation_connections:
-  - case: "News Corp vs Perplexity AI"
-    type: "copyright"
-    status: "active"
-    description: "Two News Corp subsidiaries sued Perplexity for copyright infringement."
-  - case: "News Corp vs Brave Software (countersuit)"
-    type: "copyright_countersuit"
-    status: "active"
-    filed: "2026-07-22"
-    court: "N.D. Cal. (Oakland)"
-    description: |
-      News Corp filed countersuit against Brave Software, accusing it of
-      "flagrant theft" in distributing and selling versions of WSJ and
-      NY Post articles to AI companies via covert scraping. Thomson on
-      Q4 call: "Brave, a company brave in name only, which has shamelessly
-      stolen our content at scale." Allegations: masked web crawlers
-      scanning pages, repackaging stolen files, delivering near-verbatim
-      copies to enterprise customers. Seeking injunction + up to $150,000
-      per infringement. News Corp's key argument: "The more content Brave
-      copies and sells, the more revenue it generates, and the less
-      incentive AI companies have to negotiate licenses with the publishers
-      who produced the content."
-    source_urls:
-      - "https://www.reuters.com/business/media-telecom/news-corp-countersues-brave-allegedly-scraping-articles-ai-2026-07-22/"
-      - "https://www.editorandpublisher.com/stories/news-corp-accuses-search-engine-brave-of-ai-copyright-infringement,262712"
-    background: |
-      Brave preemptively sued News Corp in Mar 2025, seeking declaration
-      that indexing/scraping was fair use. Brave argued all search engines
-      must index to exist. Revised complaint May 2026 after failed
-      negotiations. Thomson called it "piratical, parasitical practices."
-    mediascope_relevance: |
-      Demonstrates News Corp's "woo and sue" strategy in action: partners
-      with companies that pay (OpenAI, Meta) while suing companies that
-      scrape without paying (Perplexity, Brave). This is the clearest
-      evidence that News Corp views content licensing as a revenue strategy,
-      not just an editorial arrangement. The Brave suit specifically argues
-      that unlicensed scraping UNDERMINES the licensing market News Corp has
-      built with OpenAI and Meta — making the licensing deals and the
-      litigation part of a unified commercial strategy.
+- case: News Corp vs Perplexity AI
+  type: copyright
+  status: active
+  description: Two News Corp subsidiaries sued Perplexity for copyright infringement.
+- case: News Corp vs Brave Software (countersuit)
+  type: copyright_countersuit
+  status: active
+  filed: '2026-07-22'
+  court: N.D. Cal. (Oakland)
+  description: 'News Corp filed countersuit against Brave Software, accusing it of
 
-# ===================================================================
-# MEDIA BIAS RATINGS
-# ===================================================================
+    "flagrant theft" in distributing and selling versions of WSJ and
+
+    NY Post articles to AI companies via covert scraping. Thomson on
+
+    Q4 call: "Brave, a company brave in name only, which has shamelessly
+
+    stolen our content at scale." Allegations: masked web crawlers
+
+    scanning pages, repackaging stolen files, delivering near-verbatim
+
+    copies to enterprise customers. Seeking injunction + up to $150,000
+
+    per infringement. News Corp''s key argument: "The more content Brave
+
+    copies and sells, the more revenue it generates, and the less
+
+    incentive AI companies have to negotiate licenses with the publishers
+
+    who produced the content."
+
+    '
+  source_urls:
+  - https://www.reuters.com/business/media-telecom/news-corp-countersues-brave-allegedly-scraping-articles-ai-2026-07-22/
+  - https://www.editorandpublisher.com/stories/news-corp-accuses-search-engine-brave-of-ai-copyright-infringement,262712
+  background: 'Brave preemptively sued News Corp in Mar 2025, seeking declaration
+
+    that indexing/scraping was fair use. Brave argued all search engines
+
+    must index to exist. Revised complaint May 2026 after failed
+
+    negotiations. Thomson called it "piratical, parasitical practices."
+
+    '
+  mediascope_relevance: 'Demonstrates News Corp''s "woo and sue" strategy in action: partners
+
+    with companies that pay (OpenAI, Meta) while suing companies that
+
+    scrape without paying (Perplexity, Brave). This is the clearest
+
+    evidence that News Corp views content licensing as a revenue strategy,
+
+    not just an editorial arrangement. The Brave suit specifically argues
+
+    that unlicensed scraping UNDERMINES the licensing market News Corp has
+
+    built with OpenAI and Meta — making the licensing deals and the
+
+    litigation part of a unified commercial strategy.
+
+    '
 bias_ratings:
-  - source: "AllSides"
-    rating: "Center (WSJ news), Right (WSJ editorial)"
-  - source: "Ad Fontes Media"
-    rating: "WSJ: Reliable, center-right editorial"
-
-# ===================================================================
-# MEDIASCOPE CONTROL DESIGNATION
-# ===================================================================
+- source: AllSides
+  rating: Center (WSJ news), Right (WSJ editorial)
+- source: Ad Fontes Media
+  rating: 'WSJ: Reliable, center-right editorial'
 control_designation:
-  type: "balanced_control"
-  rationale: |
-    News Corp receives comparable payments from both OpenAI ($50M/yr) and
+  type: balanced_control
+  rationale: 'News Corp receives comparable payments from both OpenAI ($50M/yr) and
+
     Meta (up to $50M/yr), plus expected Anthropic settlement revenue via
+
     HarperCollins. If financial incentives drive coverage tone, News Corp
+
     should show balanced coverage of both OpenAI and Meta. As of Q4 FY2026,
+
     AI licensing is confirmed as a material revenue driver by CFO
+
     Chandrashekar, with the Meta deal now contributing to results.
+
     Deviation from balance in either direction would suggest editorial
+
     bias beyond financial incentive.
+
+    '
   comparison_baseline: true
-  triple_revenue_note: |
-    News Corp is the ONLY publisher in the MediaScope dataset receiving
+  triple_revenue_note: 'News Corp is the ONLY publisher in the MediaScope dataset receiving
+
     AI-related revenue from THREE major AI companies simultaneously:
+
     (1) OpenAI: $50M/yr content licensing (voluntary, signed May 2024)
+
     (2) Meta: Up to $50M/yr content licensing (voluntary, signed Mar 2026)
+
     (3) Anthropic: Share of $1.5B settlement (litigation-driven, expected 2026)
-    
+
+
     PLUS significant deals in pipeline with "several other honorable
-    companies" per Thomson's Q4 FY2026 call (Aug 5, 2026).
-    
+
+    companies" per Thomson''s Q4 FY2026 call (Aug 5, 2026).
+
+
     This triple-revenue architecture creates the MOST diversified AI
+
     revenue stream of any publisher in the dataset. Compare:
+
     - Condé Nast: OpenAI + Amazon Rufus + Microsoft PCM + Perplexity (4 sources, NO Meta)
+
     - NYT: Amazon (1 source, suing OpenAI/Microsoft, NO Meta)
+
     - News Corp: OpenAI + Meta + Anthropic settlement (3 sources, BALANCED)
-    
+
+
     The key analytical distinction: News Corp is the ONLY publisher with
+
     revenue from both Meta AND its competitors. All other multi-deal
-    publishers have deals ONLY with Meta's competitors, creating one-sided
+
+    publishers have deals ONLY with Meta''s competitors, creating one-sided
+
     financial incentives to favor those competitors and produce adversarial
+
     Meta coverage.
 
-# ===================================================================
-# DISCLOSURE PRACTICE — WSJ is the ONLY publication that discloses
-# Added: 2026-08-06 for cross-entity analysis
-# ===================================================================
+    '
 disclosure_practice:
-  policy_type: "editorial_policy"
-  description: |
-    WSJ is the ONLY publication in the MediaScope dataset that
-    systematically discloses its parent company's financial relationships
+  policy_type: editorial_policy
+  description: 'WSJ is the ONLY publication in the MediaScope dataset that
+
+    systematically discloses its parent company''s financial relationships
+
     with the subjects of its articles. This is an editorial policy, not
+
     individual journalist choice — the same disclosure language appears
+
     across articles by different reporters on different beats.
-    
+
+
     The disclosure appears as a standalone sentence, typically near the end
+
     of articles, in the format: "News Corp, owner of The Wall Street Journal,
+
     has a content-licensing partnership with [Entity]."
-    
+
+
     KEY CONTRAST: WIRED (OpenAI deal), The Verge (OpenAI deal via Vox Media),
+
     The Atlantic (OpenAI deal), FT (OpenAI deal), NYT (Amazon/Bezos ownership),
+
     and Guardian (OpenAI deal via ProRata) NEVER disclose their financial
+
     relationships in their coverage. WSJ — the only publication with deals
+
     on BOTH sides — is also the only one that discloses. The publications
+
     with one-sided financial incentives (and thus the most bias potential)
+
     never reveal those incentives to readers.
+
+    '
   unique_in_dataset: true
-  meta_disclosure_text: "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with Meta."
-  openai_disclosure_text: "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI."
+  meta_disclosure_text: News Corp, owner of The Wall Street Journal, has a content-licensing partnership with Meta.
+  openai_disclosure_text: News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.
   observed_reporters:
-    - "Meghan Bobrowsky"
-    - "Georgia Wells"
-    - "Katie Deighton"
-    - "Keach Hagey"
-    - "Ben Eisen"
-    - "Amanda Coletta"
-    - "Tina Li"
+  - Meghan Bobrowsky
+  - Georgia Wells
+  - Katie Deighton
+  - Keach Hagey
+  - Ben Eisen
+  - Amanda Coletta
+  - Tina Li
   example_articles:
-    - title: "Meta Releases Coding Agent to Compete With OpenAI and Anthropic"
-      date: "2026-08-05"
-      disclosure_entity: "Meta"
-      reporters: "Meghan Bobrowsky, Tina Li"
-      source_url: "https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517"
-    - title: "The Teachers Getting $50,000 Bonuses Thanks to a Massive Meta Data Center"
-      date: "2026-06-12"
-      disclosure_entity: "Meta"
-      reporters: "Meghan Bobrowsky, Ben Eisen"
-      source_url: "https://www.wsj.com/us-news/education/the-teachers-getting-50-000-bonuses-thanks-to-a-massive-meta-data-center-b4631d05"
-    - title: "AI Chatbots Know How to Make Deadly Biological Weapons"
-      date: "2026-07-26"
-      disclosure_entity: "OpenAI"
-      source_url: "https://www.wsj.com/tech/ai/openai-chatbot-biological-weapons-poison-3d808e6c"
-    - title: "OpenAI Investigated by Coalition of State Attorneys General"
-      date: "2026-06-13"
-      disclosure_entity: "OpenAI"
-      reporters: "Keach Hagey, Georgia Wells"
-      source_url: "https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928"
-    - title: "OpenAI's Top Executive Fidji Simo to Take Medical Leave"
-      date: "2026-06-03"
-      disclosure_entity: "OpenAI"
-      source_url: "https://www.wsj.com/tech/openais-top-executive-fidji-simo-to-take-medical-leave-from-company-d6fab97c"
-    - title: "OpenAI Buys Tech-Industry Talk Show TBPN"
-      date: "2026-04-02"
-      disclosure_entity: "OpenAI"
-      reporters: "Katie Deighton"
-      source_url: "https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5"
-
-# ===================================================================
-# JOURNALIST PROFILES — Cross-Entity Coverage Analysis
-# Added: 2026-08-06
-# ===================================================================
+  - title: Meta Releases Coding Agent to Compete With OpenAI and Anthropic
+    date: '2026-08-05'
+    disclosure_entity: Meta
+    reporters: Meghan Bobrowsky, Tina Li
+    source_url: https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517
+  - title: The Teachers Getting $50,000 Bonuses Thanks to a Massive Meta Data Center
+    date: '2026-06-12'
+    disclosure_entity: Meta
+    reporters: Meghan Bobrowsky, Ben Eisen
+    source_url: https://www.wsj.com/us-news/education/the-teachers-getting-50-000-bonuses-thanks-to-a-massive-meta-data-center-b4631d05
+  - title: AI Chatbots Know How to Make Deadly Biological Weapons
+    date: '2026-07-26'
+    disclosure_entity: OpenAI
+    source_url: https://www.wsj.com/tech/ai/openai-chatbot-biological-weapons-poison-3d808e6c
+  - title: OpenAI Investigated by Coalition of State Attorneys General
+    date: '2026-06-13'
+    disclosure_entity: OpenAI
+    reporters: Keach Hagey, Georgia Wells
+    source_url: https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928
+  - title: OpenAI's Top Executive Fidji Simo to Take Medical Leave
+    date: '2026-06-03'
+    disclosure_entity: OpenAI
+    source_url: https://www.wsj.com/tech/openais-top-executive-fidji-simo-to-take-medical-leave-from-company-d6fab97c
+  - title: OpenAI Buys Tech-Industry Talk Show TBPN
+    date: '2026-04-02'
+    disclosure_entity: OpenAI
+    reporters: Katie Deighton
+    source_url: https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5
 journalist_profiles:
-  - name: "Christopher Mims"
-    current_role: "technology_columnist"
-    publication: "The Wall Street Journal"
-    wsj_start: "2014"
-    background: |
-      Neuroscience degree from Emory University. Prior stints at Quartz
-      (lead tech reporter/editor), freelance for MIT Technology Review,
-      Wired, The Atlantic, Scientific American, Smithsonian, Slate.
-      Author of "How to AI" (2026) and "Arriving Today" (2021).
-      Co-hosts "Bold Names" podcast with Tim Higgins.
-    output_format: "weekly column, podcast co-host"
-    source_urls:
-      - "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
-      - "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
-      - "https://www.techmeme.com/241012/p6"
-      - "https://intelligentrelations.com/journalist/christopher-mims/"
-    cross_entity_coverage:
-      meta:
-        tone: "balanced_to_constructive"
-        tone_value: 0.3
-        summary: |
-          Mims covers Meta with technology-respect framing. His Oct 2024
-          Yann LeCun profile was the most positive framing of Meta's AI
-          vision at any major publication, giving LeCun a platform to call
-          AI existential risk 'complete BS.' His Jun 2026 smart glasses
-          survey praised Meta for keeping glasses 'as normal-looking as
-          possible' and quoted Boz on Meta's design philosophy. In his
-          sustainability coverage, Mims specifically noted Meta as the
-          ONLY company that tallies water used at power stations in
-          addition to on-site — a positive distinction. No surveillance
-          vocabulary applied to Meta products. The Jun 2026 commoditization
-          piece framed Meta positively as a company that 'showed the world
-          it could potentially compete with the two leading AI labs.'
-        examples:
-          - title: "This AI Pioneer Thinks AI Is Dumber Than a Cat (LeCun profile)"
-            date: "2024-10-12"
-            tone: 0.45
-            framing_notes: |
-              Constructive platform for Meta's AI chief scientist.
-              LeCun's skepticism of LLMs framed as intellectually rigorous,
-              not contrarian. No institutional criticism of Meta embedded.
-            source_url: "https://www.techmeme.com/241012/p6"
-          - title: "Smartglasses Are Inevitable. But What—or Who—Are They For?"
-            date: "2026-06-26"
-            tone: 0.25
-            framing_notes: |
-              Balanced industry survey. Meta praised for partnership with
-              EssilorLuxottica, 'done a good job keeping its smartglasses
-              as normal-looking as possible.' Boz quoted constructively.
-              No surveillance framing for camera-equipped glasses.
-            source_url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
-          - title: "AI's Wider Availability Is Good for China, Not Great for OpenAI (Meta as competitor)"
-            date: "2026-07-17"
-            tone: 0.3
-            framing_notes: |
-              'Meta Platforms showed the world it could potentially compete
-              with the two leading AI labs, OpenAI and Anthropic, on their
-              own turf.' Meta framed as rising competitive force, not
-              surveillance company. Open-source strategy treated as
-              legitimate market advantage.
-            source_url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
-          - title: "Water and sustainability coverage (Meta positive distinction)"
-            date: "2025"
-            tone: 0.2
-            framing_notes: |
-              Specifically noted Meta as the ONLY tech company that
-              tallies water used at power stations feeding its data centers,
-              not just on-site water. Positive framing that distinguishes
-              Meta from Google, Microsoft, Amazon on transparency.
+- name: Christopher Mims
+  current_role: technology_columnist
+  publication: The Wall Street Journal
+  wsj_start: '2014'
+  background: 'Neuroscience degree from Emory University. Prior stints at Quartz
 
-      openai:
-        tone: "skeptical_to_critical"
-        tone_value: -0.3
-        summary: |
-          Mims is notably skeptical of OpenAI's business model
-          sustainability. His Jul 2026 commoditization column directly
-          questioned OpenAI's competitive moat: 'Without a competitive
-          moat, the darlings of today's AI boom could be headed for a
-          serious contraction.' He compared AI investment to dot-com
-          bubble. On Bluesky, mockingly compared AI computer control
-          to 'holding up a picture of his Bored Ape.' His coverage
-          treats OpenAI as vulnerable to commodity disruption, not as
-          a technology leader. This is the OPPOSITE of WIRED/Verge
-          coverage, where OpenAI receives neutral-to-positive treatment.
-        examples:
-          - title: "AI's Wider Availability Is Good for China, Not Great for OpenAI and Anthropic"
-            date: "2026-07-17"
-            tone: -0.35
-            framing_notes: |
-              Headline alone frames OpenAI negatively. Column questions
-              OpenAI's competitive moat, compares AI boom to 'bigger than
-              any nonwartime boom including railroads and dot-com bubble.'
-              Directly questions whether OpenAI can justify investment.
-            source_url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
-          - title: "AI capex coverage (AI investment scale)"
-            date: "2025"
-            tone: -0.2
-            framing_notes: |
-              Documented record AI capex spending in skeptical frame.
-              Cited Paul Kedrosky: AI infrastructure spending already
-              exceeds dot-com telecom peak as % of GDP. Neutral on
-              Meta's share, but used data to question sustainability
-              of the AI spending boom overall.
+    (lead tech reporter/editor), freelance for MIT Technology Review,
 
-      apple:
-        tone: "neutral"
-        tone_value: 0.0
-        summary: |
-          Standard tech coverage. No surveillance framing for Apple
-          Vision Pro's 12 cameras. No preferential treatment.
+    Wired, The Atlantic, Scientific American, Smithsonian, Slate.
 
-      google:
-        tone: "neutral_to_critical"
-        tone_value: -0.1
-        summary: |
-          Included Google in sustainability criticism (not tallying
-          full water use). Generally neutral on Google AI products.
+    Author of "How to AI" (2026) and "Arriving Today" (2021).
 
-    asymmetry_verdict: |
-      Mims exhibits a TONE INVERSION compared to WIRED and Verge
-      journalists: he is balanced-to-constructive on Meta (+0.3) and
-      skeptical-to-critical on OpenAI (-0.3), producing a gap of ~0.6
-      in the OPPOSITE direction from WIRED's gap (~0.95 favoring OpenAI
-      over Meta). This validates the balanced control hypothesis:
-      News Corp's balanced financial relationships ($50M/yr from both
-      OpenAI and Meta) produce the most balanced — and even inverted —
-      coverage in the dataset. Combined with WSJ's unique systematic
-      disclosure practice, News Corp/Mims represents the strongest
-      evidence that financial relationships predict coverage tone.
-      The irony: the publication with the least financial incentive to
-      be biased is also the only one that discloses its relationships.
+    Co-hosts "Bold Names" podcast with Tim Higgins.
 
-  - name: "Meghan Bobrowsky"
-    current_role: "meta_beat_reporter"
-    publication: "The Wall Street Journal"
-    wsj_start: "2021"
-    explicitly_assigned_to_meta: true
-    background: |
-      Technology reporter in WSJ's San Francisco bureau. Joined WSJ in
-      2021 after internship on the tech desk. Previously interned at
-      San Francisco Chronicle, Miami Herald, Sacramento Bee, Philadelphia
-      Inquirer. BA in Politics from Scripps College (2021). 2022 Best in
-      Business award (Society for Advancing Business Editing and Writing).
-      Officially tapped to cover Meta after general tech reporting stint.
-      Muck Rack profile: "Covers: Meta Platforms, social media and
-      artificial intelligence."
-    output_format: "enterprise reporting, investigative, earnings, podcast (The Journal)"
-    source_urls:
-      - "https://muckrack.com/meghan-bobrowsky"
-      - "https://meghanbobrowsky.com/"
-      - "https://talkingbiznews.com/media-news/wsj-taps-bobrowsky-to-cover-meta/"
-      - "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
-      - "https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868"
-      - "https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7"
-    cross_entity_coverage:
-      meta:
-        tone: "mixed_balanced"
-        tone_value: -0.15
-        summary: |
-          Bobrowsky is the WSJ's DEDICATED Meta beat reporter — the direct
-          structural analogue to Kashmir Hill (NYT→Meta privacy), Lauren
-          Goode (WIRED→Meta products), and Mike Isaac (NYT→Meta enterprise).
-          But her coverage tone is fundamentally different: mixed and event-
-          appropriate rather than systematically adversarial.
+    '
+  output_format: weekly column, podcast co-host
+  source_urls:
+  - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+  - https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73
+  - https://www.techmeme.com/241012/p6
+  - https://intelligentrelations.com/journalist/christopher-mims/
+  cross_entity_coverage:
+    meta:
+      tone: balanced_to_constructive
+      tone_value: 0.3
+      summary: 'Mims covers Meta with technology-respect framing. His Oct 2024
 
-          Her smartglasses article (Jul 14) uses "privacy lightning rod" —
-          descriptive, not catastrophizing. Compare WIRED's "dormant
-          surveillance infrastructure" for the same topic. She includes
-          Meta's business case, celebrity partnerships, and growth stats
-          alongside privacy advocacy concerns. The ACLU and Meta get equal
-          space. Privacy concerns are framed as one side of a debate, not
-          as editorial conclusions.
+        Yann LeCun profile was the most positive framing of Meta''s AI
 
-          Her Zuckerberg interview (Jul 29) lets the CEO make his case on
-          AI acceleration. Her Bosworth profile (May 2026) documents internal
-          AI tensions without adversarial editorializing. Her child safety
-          reporting (Feb 2026 trial, Aug 2026 $942M ruling) is straight
-          courtroom procedure — includes Meta's appeal plans and response.
+        vision at any major publication, giving LeCun a platform to call
 
-          Average tone: -0.15 (compare Kashmir Hill -0.80, Lauren Goode -0.85,
-          Dan Milmo -0.45, Gizmodo -0.50).
-        examples:
-          - title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
-            date: "2026-07-14"
-            tone: -0.35
-            framing_notes: |
-              Adversarial headline but balanced body. "Privacy lightning rod"
-              is descriptive. ACLU quoted, Meta's response included. No
-              surveillance vocabulary. Patent filing reported factually.
-              Privacy concerns presented as debate, not editorial verdict.
-            source_url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
-          - title: "Mark Zuckerberg Says U.S. Should Accelerate AI Development, Not Restrict It"
-            date: "2026-07-29"
-            tone: 0.15
-            framing_notes: |
-              Interview format lets CEO present his case. Gym camera
-              anecdote, daughter baking anecdote — humanizing treatment.
-              DISCLOSES: "News Corp, owner of the Journal, has a content-
-              licensing partnership with Meta."
-            source_url: "https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868"
-          - title: "Meta Ordered to Pay $942 Million to Address Harm to Kids From Social Media"
-            date: "2026-08-07"
-            tone: -0.20
-            framing_notes: |
-              Straight legal reporting. Includes Meta's planned appeal and
-              response quote. No editorial commentary. Co-bylined with
-              Erin Mulvaney (legal reporter). No loaded language.
-            source_url: "https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7"
-          - title: "The Man Unleashing AI at Meta (Bosworth profile)"
-            date: "2026-05-26"
-            tone: 0.05
-            framing_notes: |
-              Profile of CTO Bosworth. Internal tensions reported without
-              adversarial framing. Employee petition on keystroke recording
-              presented as newsworthy but not as crisis. Bosworth given
-              space to explain his position.
-          - title: "In A Landmark Trial, Zuckerberg Takes the Stand"
-            date: "2026-02-19"
-            tone: -0.25
-            framing_notes: |
-              Courtroom reporting for The Journal podcast. Factual procedural
-              coverage. Includes both plaintiff arguments and Meta's defense.
-              No editorial escalation language.
-            source_url: "https://www.iheart.com/podcast/300-the-journal-46363342/episode/in-a-landmark-trial-zuckerberg-takes-323771799/"
+        AI existential risk ''complete BS.'' His Jun 2026 smart glasses
 
-      openai:
-        tone: "not_primary_beat"
-        tone_value: null
-        summary: |
-          Bobrowsky does NOT cover OpenAI as a primary beat. OpenAI
-          coverage at WSJ is handled by Berber Jin (AI startups),
-          Georgia Wells (AI governance), Keach Hagey (media deals), and
-          Robert McMillan (cybersecurity). She appears on occasional
-          cross-entity pieces (OpenAI vesting policy, combined AI spending)
-          but these are co-bylined collaborative pieces, not her beat.
+        survey praised Meta for keeping glasses ''as normal-looking as
 
-          This structural separation is IDENTICAL to the NYT pattern
-          (Hill→Meta, Weise→Amazon) but operates in a fundamentally
-          different financial environment.
+        possible'' and quoted Boz on Meta''s design philosophy. In his
 
-      google:
-        tone: "not_primary_beat"
-        tone_value: null
-        summary: |
-          Google coverage at WSJ handled by other reporters. Bobrowsky's
-          Google references appear only in cross-entity context (smartglasses
-          competition, AI spending roundups).
+        sustainability coverage, Mims specifically noted Meta as the
 
-      amazon:
-        tone: "not_primary_beat"
-        tone_value: null
-        summary: |
-          Amazon coverage at WSJ handled by other reporters.
+        ONLY company that tallies water used at power stations in
 
-    beat_assignment_comparison:
-      title: "Balanced-Control Beat Assignment Model"
-      description: |
-        THE KEY INSIGHT: Beat assignment itself is NEUTRAL — both NYT and
-        WSJ assign dedicated Meta reporters. The asymmetry comes from the
-        FINANCIAL ENVIRONMENT in which the beat operates:
+        addition to on-site — a positive distinction. No surveillance
 
-        | Publication | Meta Reporter | Net Financial Incentive | Meta Tone | Disclosure |
-        |---|---|---|---|---|
-        | NYT | Kashmir Hill | Anti-Meta ($22.8M comp, $0 Meta) | -0.80 | Never |
-        | WIRED | Lauren Goode | Anti-Meta ($19M+ comp, $0 Meta) | -0.85 | Never |
-        | WSJ | Bobrowsky | Balanced ($50M Meta, $50M OpenAI) | -0.15 | Always |
-        | Gizmodo | Kyle Barr | Zero (no deals) | -0.50 | N/A |
-        | Guardian | Dan Milmo | Anti-Meta ($7M comp, $0 Meta) | -0.45 | Never |
-        | FT | Heikkilä | Anti-Meta ($11.5M comp, $0 Meta) | -0.45 | Never |
+        vocabulary applied to Meta products. The Jun 2026 commoditization
 
-        At one-sided publications (NYT, WIRED, Guardian, FT), beat assignment
-        CONCENTRATES adversarial energy on Meta — the company with NO financial
-        tie. At the balanced publication (WSJ), the same beat assignment
-        structure produces mixed-tone reporting that tracks event valence
-        rather than systematic bias.
+        piece framed Meta positively as a company that ''showed the world
 
-        This is the strongest evidence in the dataset that financial
-        relationships AMPLIFY editorial direction rather than beat
-        assignment itself being the mechanism of bias.
+        it could potentially compete with the two leading AI labs.''
 
-    wsj_beat_structure:
-      description: |
-        WSJ's tech desk assigns beat reporters by company, same as NYT.
-        The structural difference is financial environment, not editorial
-        organization.
-      beats:
-        - reporter: "Meghan Bobrowsky"
-          beat: "Meta"
-          news_corp_financial_tie: "$50M/yr (Meta AI licensing)"
-          net_incentive: "balanced"
-        - reporter: "Berber Jin"
-          beat: "OpenAI / AI startups"
-          news_corp_financial_tie: "$50M/yr (OpenAI content licensing)"
-          net_incentive: "balanced"
-          disclosure_observed: true
-          notes: |
-            Jin's Jul 31 "How OpenAI Lost Its AI Crown" article did NOT
-            include the News Corp-OpenAI disclosure. However, other WSJ
-            articles about OpenAI (by Keach Hagey, Georgia Wells, etc.)
-            DO include disclosure. The omission may be article-specific
-            rather than systemic.
-        - reporter: "Robert McMillan"
-          beat: "Cybersecurity"
-          notes: "Covers AI rogue incidents across all companies equally"
-        - reporter: "Christopher Mims"
-          beat: "Tech columnist (cross-entity)"
-          notes: "See separate Mims profile above"
+        '
+      examples:
+      - title: This AI Pioneer Thinks AI Is Dumber Than a Cat (LeCun profile)
+        date: '2024-10-12'
+        tone: 0.45
+        framing_notes: 'Constructive platform for Meta''s AI chief scientist.
 
-    asymmetry_verdict: |
-      Bobrowsky represents what dedicated Meta beat reporting looks like
-      when the publication has ZERO net financial incentive to favor
-      competitors. Her average tone (-0.15) is 0.65 points warmer than
-      Kashmir Hill (-0.80) and 0.70 points warmer than Lauren Goode (-0.85)
-      on the same company.
+          LeCun''s skepticism of LLMs framed as intellectually rigorous,
 
-      The gap cannot be explained by access (Hill has Zuckerberg access too),
-      personal bias (Bobrowsky was explicitly assigned to Meta, just like
-      Hill), or editorial standards (WSJ is if anything more rigorous).
-      The explanatory variable is the FINANCIAL ENVIRONMENT: News Corp's
-      balanced deals ($50M each side) eliminate the financial amplification
-      effect that concentrates adversarial energy at one-sided publications.
+          not contrarian. No institutional criticism of Meta embedded.
 
-      Combined with WSJ's disclosure practice, Bobrowsky's coverage is the
-      cleanest baseline for what Meta reporting looks like when financial
-      conflicts are both balanced and transparent.
+          '
+        source_url: https://www.techmeme.com/241012/p6
+      - title: Smartglasses Are Inevitable. But What—or Who—Are They For?
+        date: '2026-06-26'
+        tone: 0.25
+        framing_notes: 'Balanced industry survey. Meta praised for partnership with
+
+          EssilorLuxottica, ''done a good job keeping its smartglasses
+
+          as normal-looking as possible.'' Boz quoted constructively.
+
+          No surveillance framing for camera-equipped glasses.
+
+          '
+        source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+      - title: AI's Wider Availability Is Good for China, Not Great for OpenAI (Meta as competitor)
+        date: '2026-07-17'
+        tone: 0.3
+        framing_notes: '''Meta Platforms showed the world it could potentially compete
+
+          with the two leading AI labs, OpenAI and Anthropic, on their
+
+          own turf.'' Meta framed as rising competitive force, not
+
+          surveillance company. Open-source strategy treated as
+
+          legitimate market advantage.
+
+          '
+        source_url: https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73
+      - title: Water and sustainability coverage (Meta positive distinction)
+        date: '2025'
+        tone: 0.2
+        framing_notes: 'Specifically noted Meta as the ONLY tech company that
+
+          tallies water used at power stations feeding its data centers,
+
+          not just on-site water. Positive framing that distinguishes
+
+          Meta from Google, Microsoft, Amazon on transparency.
+
+          '
+    openai:
+      tone: skeptical_to_critical
+      tone_value: -0.3
+      summary: 'Mims is notably skeptical of OpenAI''s business model
+
+        sustainability. His Jul 2026 commoditization column directly
+
+        questioned OpenAI''s competitive moat: ''Without a competitive
+
+        moat, the darlings of today''s AI boom could be headed for a
+
+        serious contraction.'' He compared AI investment to dot-com
+
+        bubble. On Bluesky, mockingly compared AI computer control
+
+        to ''holding up a picture of his Bored Ape.'' His coverage
+
+        treats OpenAI as vulnerable to commodity disruption, not as
+
+        a technology leader. This is the OPPOSITE of WIRED/Verge
+
+        coverage, where OpenAI receives neutral-to-positive treatment.
+
+        '
+      examples:
+      - title: AI's Wider Availability Is Good for China, Not Great for OpenAI and Anthropic
+        date: '2026-07-17'
+        tone: -0.35
+        framing_notes: 'Headline alone frames OpenAI negatively. Column questions
+
+          OpenAI''s competitive moat, compares AI boom to ''bigger than
+
+          any nonwartime boom including railroads and dot-com bubble.''
+
+          Directly questions whether OpenAI can justify investment.
+
+          '
+        source_url: https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73
+      - title: AI capex coverage (AI investment scale)
+        date: '2025'
+        tone: -0.2
+        framing_notes: 'Documented record AI capex spending in skeptical frame.
+
+          Cited Paul Kedrosky: AI infrastructure spending already
+
+          exceeds dot-com telecom peak as % of GDP. Neutral on
+
+          Meta''s share, but used data to question sustainability
+
+          of the AI spending boom overall.
+
+          '
+    apple:
+      tone: neutral
+      tone_value: 0.0
+      summary: 'Standard tech coverage. No surveillance framing for Apple
+
+        Vision Pro''s 12 cameras. No preferential treatment.
+
+        '
+    google:
+      tone: neutral_to_critical
+      tone_value: -0.1
+      summary: 'Included Google in sustainability criticism (not tallying
+
+        full water use). Generally neutral on Google AI products.
+
+        '
+  asymmetry_verdict: 'Mims exhibits a TONE INVERSION compared to WIRED and Verge
+
+    journalists: he is balanced-to-constructive on Meta (+0.3) and
+
+    skeptical-to-critical on OpenAI (-0.3), producing a gap of ~0.6
+
+    in the OPPOSITE direction from WIRED''s gap (~0.95 favoring OpenAI
+
+    over Meta). This validates the balanced control hypothesis:
+
+    News Corp''s balanced financial relationships ($50M/yr from both
+
+    OpenAI and Meta) produce the most balanced — and even inverted —
+
+    coverage in the dataset. Combined with WSJ''s unique systematic
+
+    disclosure practice, News Corp/Mims represents the strongest
+
+    evidence that financial relationships predict coverage tone.
+
+    The irony: the publication with the least financial incentive to
+
+    be biased is also the only one that discloses its relationships.
+
+    '
+- name: Meghan Bobrowsky
+  current_role: meta_beat_reporter
+  publication: The Wall Street Journal
+  wsj_start: '2021'
+  explicitly_assigned_to_meta: true
+  background: 'Technology reporter in WSJ''s San Francisco bureau. Joined WSJ in
+
+    2021 after internship on the tech desk. Previously interned at
+
+    San Francisco Chronicle, Miami Herald, Sacramento Bee, Philadelphia
+
+    Inquirer. BA in Politics from Scripps College (2021). 2022 Best in
+
+    Business award (Society for Advancing Business Editing and Writing).
+
+    Officially tapped to cover Meta after general tech reporting stint.
+
+    Muck Rack profile: "Covers: Meta Platforms, social media and
+
+    artificial intelligence."
+
+    '
+  output_format: enterprise reporting, investigative, earnings, podcast (The Journal)
+  source_urls:
+  - https://muckrack.com/meghan-bobrowsky
+  - https://meghanbobrowsky.com/
+  - https://talkingbiznews.com/media-news/wsj-taps-bobrowsky-to-cover-meta/
+  - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+  - https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868
+  - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+  cross_entity_coverage:
+    meta:
+      tone: mixed_balanced
+      tone_value: -0.15
+      summary: 'Bobrowsky is the WSJ''s DEDICATED Meta beat reporter — the direct
+
+        structural analogue to Kashmir Hill (NYT→Meta privacy), Lauren
+
+        Goode (WIRED→Meta products), and Mike Isaac (NYT→Meta enterprise).
+
+        But her coverage tone is fundamentally different: mixed and event-
+
+        appropriate rather than systematically adversarial.
 
 
-# ===================================================================
-# JOANNA STERN — CAREER MIGRATION CROSS-ENTITY ANALYSIS (Aug 7, 2026)
-# ===================================================================
+        Her smartglasses article (Jul 14) uses "privacy lightning rod" —
+
+        descriptive, not catastrophizing. Compare WIRED''s "dormant
+
+        surveillance infrastructure" for the same topic. She includes
+
+        Meta''s business case, celebrity partnerships, and growth stats
+
+        alongside privacy advocacy concerns. The ACLU and Meta get equal
+
+        space. Privacy concerns are framed as one side of a debate, not
+
+        as editorial conclusions.
+
+
+        Her Zuckerberg interview (Jul 29) lets the CEO make his case on
+
+        AI acceleration. Her Bosworth profile (May 2026) documents internal
+
+        AI tensions without adversarial editorializing. Her child safety
+
+        reporting (Feb 2026 trial, Aug 2026 $942M ruling) is straight
+
+        courtroom procedure — includes Meta''s appeal plans and response.
+
+
+        Average tone: -0.15 (compare Kashmir Hill -0.80, Lauren Goode -0.85,
+
+        Dan Milmo -0.45, Gizmodo -0.50).
+
+        '
+      examples:
+      - title: Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms.
+        date: '2026-07-14'
+        tone: -0.35
+        framing_notes: 'Adversarial headline but balanced body. "Privacy lightning rod"
+
+          is descriptive. ACLU quoted, Meta''s response included. No
+
+          surveillance vocabulary. Patent filing reported factually.
+
+          Privacy concerns presented as debate, not editorial verdict.
+
+          '
+        source_url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      - title: Mark Zuckerberg Says U.S. Should Accelerate AI Development, Not Restrict It
+        date: '2026-07-29'
+        tone: 0.15
+        framing_notes: 'Interview format lets CEO present his case. Gym camera
+
+          anecdote, daughter baking anecdote — humanizing treatment.
+
+          DISCLOSES: "News Corp, owner of the Journal, has a content-
+
+          licensing partnership with Meta."
+
+          '
+        source_url: https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868
+      - title: Meta Ordered to Pay $942 Million to Address Harm to Kids From Social Media
+        date: '2026-08-07'
+        tone: -0.2
+        framing_notes: 'Straight legal reporting. Includes Meta''s planned appeal and
+
+          response quote. No editorial commentary. Co-bylined with
+
+          Erin Mulvaney (legal reporter). No loaded language.
+
+          '
+        source_url: https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+      - title: The Man Unleashing AI at Meta (Bosworth profile)
+        date: '2026-05-26'
+        tone: 0.05
+        framing_notes: 'Profile of CTO Bosworth. Internal tensions reported without
+
+          adversarial framing. Employee petition on keystroke recording
+
+          presented as newsworthy but not as crisis. Bosworth given
+
+          space to explain his position.
+
+          '
+      - title: In A Landmark Trial, Zuckerberg Takes the Stand
+        date: '2026-02-19'
+        tone: -0.25
+        framing_notes: 'Courtroom reporting for The Journal podcast. Factual procedural
+
+          coverage. Includes both plaintiff arguments and Meta''s defense.
+
+          No editorial escalation language.
+
+          '
+        source_url: https://www.iheart.com/podcast/300-the-journal-46363342/episode/in-a-landmark-trial-zuckerberg-takes-323771799/
+    openai:
+      tone: not_primary_beat
+      tone_value: null
+      summary: 'Bobrowsky does NOT cover OpenAI as a primary beat. OpenAI
+
+        coverage at WSJ is handled by Berber Jin (AI startups),
+
+        Georgia Wells (AI governance), Keach Hagey (media deals), and
+
+        Robert McMillan (cybersecurity). She appears on occasional
+
+        cross-entity pieces (OpenAI vesting policy, combined AI spending)
+
+        but these are co-bylined collaborative pieces, not her beat.
+
+
+        This structural separation is IDENTICAL to the NYT pattern
+
+        (Hill→Meta, Weise→Amazon) but operates in a fundamentally
+
+        different financial environment.
+
+        '
+    google:
+      tone: not_primary_beat
+      tone_value: null
+      summary: 'Google coverage at WSJ handled by other reporters. Bobrowsky''s
+
+        Google references appear only in cross-entity context (smartglasses
+
+        competition, AI spending roundups).
+
+        '
+    amazon:
+      tone: not_primary_beat
+      tone_value: null
+      summary: 'Amazon coverage at WSJ handled by other reporters.
+
+        '
+  beat_assignment_comparison:
+    title: Balanced-Control Beat Assignment Model
+    description: 'THE KEY INSIGHT: Beat assignment itself is NEUTRAL — both NYT and
+
+      WSJ assign dedicated Meta reporters. The asymmetry comes from the
+
+      FINANCIAL ENVIRONMENT in which the beat operates:
+
+
+      | Publication | Meta Reporter | Net Financial Incentive | Meta Tone | Disclosure |
+
+      |---|---|---|---|---|
+
+      | NYT | Kashmir Hill | Anti-Meta ($22.8M comp, $0 Meta) | -0.80 | Never |
+
+      | WIRED | Lauren Goode | Anti-Meta ($19M+ comp, $0 Meta) | -0.85 | Never |
+
+      | WSJ | Bobrowsky | Balanced ($50M Meta, $50M OpenAI) | -0.15 | Always |
+
+      | Gizmodo | Kyle Barr | Zero (no deals) | -0.50 | N/A |
+
+      | Guardian | Dan Milmo | Anti-Meta ($7M comp, $0 Meta) | -0.45 | Never |
+
+      | FT | Heikkilä | Anti-Meta ($11.5M comp, $0 Meta) | -0.45 | Never |
+
+
+      At one-sided publications (NYT, WIRED, Guardian, FT), beat assignment
+
+      CONCENTRATES adversarial energy on Meta — the company with NO financial
+
+      tie. At the balanced publication (WSJ), the same beat assignment
+
+      structure produces mixed-tone reporting that tracks event valence
+
+      rather than systematic bias.
+
+
+      This is the strongest evidence in the dataset that financial
+
+      relationships AMPLIFY editorial direction rather than beat
+
+      assignment itself being the mechanism of bias.
+
+      '
+  wsj_beat_structure:
+    description: 'WSJ''s tech desk assigns beat reporters by company, same as NYT.
+
+      The structural difference is financial environment, not editorial
+
+      organization.
+
+      '
+    beats:
+    - reporter: Meghan Bobrowsky
+      beat: Meta
+      news_corp_financial_tie: $50M/yr (Meta AI licensing)
+      net_incentive: balanced
+    - reporter: Berber Jin
+      beat: OpenAI / AI startups
+      news_corp_financial_tie: $50M/yr (OpenAI content licensing)
+      net_incentive: balanced
+      disclosure_observed: true
+      notes: 'Jin''s Jul 31 "How OpenAI Lost Its AI Crown" article did NOT
+
+        include the News Corp-OpenAI disclosure. However, other WSJ
+
+        articles about OpenAI (by Keach Hagey, Georgia Wells, etc.)
+
+        DO include disclosure. The omission may be article-specific
+
+        rather than systemic.
+
+        '
+    - reporter: Robert McMillan
+      beat: Cybersecurity
+      notes: Covers AI rogue incidents across all companies equally
+    - reporter: Christopher Mims
+      beat: Tech columnist (cross-entity)
+      notes: See separate Mims profile above
+  asymmetry_verdict: 'Bobrowsky represents what dedicated Meta beat reporting looks like
+
+    when the publication has ZERO net financial incentive to favor
+
+    competitors. Her average tone (-0.15) is 0.65 points warmer than
+
+    Kashmir Hill (-0.80) and 0.70 points warmer than Lauren Goode (-0.85)
+
+    on the same company.
+
+
+    The gap cannot be explained by access (Hill has Zuckerberg access too),
+
+    personal bias (Bobrowsky was explicitly assigned to Meta, just like
+
+    Hill), or editorial standards (WSJ is if anything more rigorous).
+
+    The explanatory variable is the FINANCIAL ENVIRONMENT: News Corp''s
+
+    balanced deals ($50M each side) eliminate the financial amplification
+
+    effect that concentrates adversarial energy at one-sided publications.
+
+
+    Combined with WSJ''s disclosure practice, Bobrowsky''s coverage is the
+
+    cleanest baseline for what Meta reporting looks like when financial
+
+    conflicts are both balanced and transparent.
+
+    '
 journalist_cross_entity:
   joanna_stern:
-    name: "Joanna Stern"
-    role: "Former WSJ Senior Personal Tech Columnist → Founder/CEO, New Things"
-    current_affiliation: "New Things (independent) + NBC News Chief Technology Analyst"
-    previous_affiliation: "The Wall Street Journal (2013–Apr 2026)"
-    credentials: "Emmy winner, Pulitzer finalist, NYT bestselling author, co-founded The Verge"
-    book: "I Am Not a Robot: My Year Using AI to Do (Almost) Everything (May 2026)"
-
+    name: Joanna Stern
+    role: Former WSJ Senior Personal Tech Columnist → Founder/CEO, New Things
+    current_affiliation: New Things (independent) + NBC News Chief Technology Analyst
+    previous_affiliation: The Wall Street Journal (2013–Apr 2026)
+    credentials: Emmy winner, Pulitzer finalist, NYT bestselling author, co-founded The Verge
+    book: 'I Am Not a Robot: My Year Using AI to Do (Almost) Everything (May 2026)'
     career_phases:
-      - employer: "The Wall Street Journal / News Corp"
-        period: "2013 – April 2026"
-        duration_years: 12
-        financial_context: "News Corp balanced umbrella: $50M/yr OpenAI (May 2024) + up to $50M/yr Meta (Mar 2026)"
-        coverage_character: "Balanced product reviews across all companies"
-      - employer: "New Things (independent) + NBC News"
-        period: "April 2026 – present"
-        financial_context: "Zero AI content licensing deals. Revenue: YouTube, newsletter subscriptions, NBC licensing, sponsored content"
-        coverage_character: "Investigative — first major piece targeted Meta glasses privacy"
-
-    # =============================================================
-    # WSJ PHASE: Balanced coverage under News Corp financial balance
-    # =============================================================
+    - employer: The Wall Street Journal / News Corp
+      period: 2013 – April 2026
+      duration_years: 12
+      financial_context: 'News Corp balanced umbrella: $50M/yr OpenAI (May 2024) + up to $50M/yr Meta (Mar 2026)'
+      coverage_character: Balanced product reviews across all companies
+    - employer: New Things (independent) + NBC News
+      period: April 2026 – present
+      financial_context: 'Zero AI content licensing deals. Revenue: YouTube, newsletter subscriptions, NBC licensing, sponsored
+        content'
+      coverage_character: Investigative — first major piece targeted Meta glasses privacy
     wsj_phase_coverage:
       meta:
         tone: 0.35
-        key_article: "Rabbit R1 vs. Meta Glasses vs. Humane Pin: AI Gadgets Reviewed"
-        date: "2024-05"
-        quote: "Those cool Meta Ray-Bans. Not only are Meta's AI tools fun and reliable but the glasses' built-in cameras make it easier to take pictures and videos when I'm playing with my kids."
-        framing: "Product comparison, positive, Meta glasses declared best of three AI gadgets"
-        source_url: "https://www.youtube.com/watch?v=Bhzno-IjuiY"
+        key_article: 'Rabbit R1 vs. Meta Glasses vs. Humane Pin: AI Gadgets Reviewed'
+        date: 2024-05
+        quote: Those cool Meta Ray-Bans. Not only are Meta's AI tools fun and reliable but the glasses' built-in cameras make
+          it easier to take pictures and videos when I'm playing with my kids.
+        framing: Product comparison, positive, Meta glasses declared best of three AI gadgets
+        source_url: https://www.youtube.com/watch?v=Bhzno-IjuiY
         additional:
-          - title: "Ray-Ban Stories Review: The Cool and Creepy of Facebook Cameras In Your Sunglasses"
-            date: "2021-09"
-            tone: 0.0
-            framing: "Balanced product review, acknowledged both convenience and privacy"
-            source_url: "https://www.youtube.com/watch?v=TA4Wo08vGqk"
+        - title: 'Ray-Ban Stories Review: The Cool and Creepy of Facebook Cameras In Your Sunglasses'
+          date: 2021-09
+          tone: 0.0
+          framing: Balanced product review, acknowledged both convenience and privacy
+          source_url: https://www.youtube.com/watch?v=TA4Wo08vGqk
       apple:
-        tone: -0.20
-        key_article: "I Spent 24 Hours Wearing Apple's Vision Pro Headset"
-        date: "2024-01"
-        quote: "I would not buy Vision Pro personally."
-        framing: "Critical product review — use cases too narrow for $3500 price"
-        source_url: "https://www.youtube.com/watch?v=8xI10SFgzQ8"
-        additional_context: "Also said Vision Pro 'in a drawer' like most VR headsets"
+        tone: -0.2
+        key_article: I Spent 24 Hours Wearing Apple's Vision Pro Headset
+        date: 2024-01
+        quote: I would not buy Vision Pro personally.
+        framing: Critical product review — use cases too narrow for $3500 price
+        source_url: https://www.youtube.com/watch?v=8xI10SFgzQ8
+        additional_context: Also said Vision Pro 'in a drawer' like most VR headsets
       humane:
-        tone: -0.60
-        framing: "Severely critical — product doesn't work"
+        tone: -0.6
+        framing: Severely critical — product doesn't work
       rabbit:
-        tone: -0.50
-        framing: "Critical — hardware limitations, software bugs"
-      assessment: |
-        At WSJ, Stern's coverage was genuinely balanced. Meta received the most
-        positive treatment (+0.35) among wearable/AI gadget companies. Apple's
-        Vision Pro received honest criticism (-0.20). Humane and Rabbit received
-        proportionate negativity for products that didn't work. This is
-        consistent with News Corp's balanced financial position.
+        tone: -0.5
+        framing: Critical — hardware limitations, software bugs
+      assessment: 'At WSJ, Stern''s coverage was genuinely balanced. Meta received the most
 
-    # =============================================================
-    # INDEPENDENT PHASE: Meta-focused investigative coverage
-    # =============================================================
+        positive treatment (+0.35) among wearable/AI gadget companies. Apple''s
+
+        Vision Pro received honest criticism (-0.20). Humane and Rabbit received
+
+        proportionate negativity for products that didn''t work. This is
+
+        consistent with News Corp''s balanced financial position.
+
+        '
     independent_phase_coverage:
       meta:
         tone: -0.65
-        key_article: "How People With Meta Glasses Can Secretly Record You"
-        date: "2026-06"
-        platform: "New Things (YouTube) + NBC News"
-        framing: "Full investigative piece — paid $100 modder in NJ garage, documented 30-state LED removal industry, drove Meta firmware update"
-        language: "spy cameras, covert cameras, stealth mode, glassholes"
-        source_url: "https://www.youtube.com/watch?v=EaJSPeJmqis"
-        impact: |
-          Meta released firmware update directly in response to Stern's
+        key_article: How People With Meta Glasses Can Secretly Record You
+        date: 2026-06
+        platform: New Things (YouTube) + NBC News
+        framing: Full investigative piece — paid $100 modder in NJ garage, documented 30-state LED removal industry, drove
+          Meta firmware update
+        language: spy cameras, covert cameras, stealth mode, glassholes
+        source_url: https://www.youtube.com/watch?v=EaJSPeJmqis
+        impact: 'Meta released firmware update directly in response to Stern''s
+
           reporting, improving LED tamper detection. Meta blog post specifically
+
           addressed the LED modding issue. This is legitimate journalism with
+
           real-world impact.
-        follow_up: "Meta reached out to Stern's New Things team with firmware update details — she published special edition newsletter"
+
+          '
+        follow_up: Meta reached out to Stern's New Things team with firmware update details — she published special edition
+          newsletter
       samsung:
         tone: null
         investigative_articles: 0
-        note: "Zero coverage despite Samsung Intelligent Eyewear having identical 12MP camera, identical privacy concerns, identical LED indicator design"
+        note: Zero coverage despite Samsung Intelligent Eyewear having identical 12MP camera, identical privacy concerns,
+          identical LED indicator design
       amazon:
         tone: null
         investigative_articles: 0
-        note: "Zero investigative coverage of Amazon Ring Familiar Faces despite DEPLOYED facial recognition, FTC $5.8M settlement, class action lawsuits, employee bedroom spying incidents"
+        note: Zero investigative coverage of Amazon Ring Familiar Faces despite DEPLOYED facial recognition, FTC $5.8M settlement,
+          class action lawsuits, employee bedroom spying incidents
       google:
         tone: null
         investigative_articles: 0
-        note: "Zero privacy investigation of Google/Samsung Android XR glasses despite comparable camera-equipped wearables launching fall 2026"
+        note: Zero privacy investigation of Google/Samsung Android XR glasses despite comparable camera-equipped wearables
+          launching fall 2026
       snap:
         tone: 0.0
-        coverage_type: "Industry analysis (NPR interview, Jun 2026)"
-        framing: "Neutral — discussed Snap Specs as part of broader smart glasses trend without privacy investigation"
-        source_url: "https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech"
-
-    # =============================================================
-    # CAREER MIGRATION TONE SHIFT
-    # =============================================================
+        coverage_type: Industry analysis (NPR interview, Jun 2026)
+        framing: Neutral — discussed Snap Specs as part of broader smart glasses trend without privacy investigation
+        source_url: https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
     tone_shift:
-      meta_delta: 1.00
-      direction: "positive (+0.35 at WSJ) → adversarial (-0.65 independent)"
+      meta_delta: 1.0
+      direction: positive (+0.35 at WSJ) → adversarial (-0.65 independent)
       wsj_meta_tone: 0.35
       independent_meta_tone: -0.65
-      significance: |
-        This is the LARGEST single-journalist Meta tone shift in the
+      significance: 'This is the LARGEST single-journalist Meta tone shift in the
+
         MediaScope dataset. The shift correlates precisely with the
+
         change from balanced-employer financial structure to zero-deal
+
         independent operation.
 
-    # =============================================================
-    # ANALYTICAL SIGNIFICANCE
-    # =============================================================
-    reverse_heikkila_pattern: |
-      Stern's trajectory is the MIRROR IMAGE of Melissa Heikkilä's:
-      - Heikkilä: independent (MIT TR, zero deals) → entangled (FT, 3 deals)
-        → Meta coverage MORE adversarial / absent at FT
-      - Stern: balanced employer (News Corp, equal deals) → independent (zero deals)
-        → Meta coverage shifts from positive to adversarial
+        '
+    reverse_heikkila_pattern: "Stern's trajectory is the MIRROR IMAGE of Melissa Heikkilä's:\n- Heikkilä: independent (MIT\
+      \ TR, zero deals) → entangled (FT, 3 deals)\n  → Meta coverage MORE adversarial / absent at FT\n- Stern: balanced employer\
+      \ (News Corp, equal deals) → independent (zero deals)\n  → Meta coverage shifts from positive to adversarial\n\nBoth\
+      \ migrations confirm: the direction of financial-structure change\npredicts the direction of Meta coverage tone change.\
+      \ Whether entering\nor leaving financial entanglement, the journalist's Meta coverage\nmoves toward adversarial.\n\n\
+      The KEY DIFFERENCE: Heikkilä's shift was toward ABSENCE (Meta just\ndoesn't get covered at FT); Stern's shift was toward\
+      \ ACTIVE\nINVESTIGATION (Meta becomes the primary target). The mechanism differs\nbut the direction is the same.\n"
+    audience_economics_mechanism: 'As an independent creator, Stern''s revenue now depends on:
 
-      Both migrations confirm: the direction of financial-structure change
-      predicts the direction of Meta coverage tone change. Whether entering
-      or leaving financial entanglement, the journalist's Meta coverage
-      moves toward adversarial.
-
-      The KEY DIFFERENCE: Heikkilä's shift was toward ABSENCE (Meta just
-      doesn't get covered at FT); Stern's shift was toward ACTIVE
-      INVESTIGATION (Meta becomes the primary target). The mechanism differs
-      but the direction is the same.
-
-    audience_economics_mechanism: |
-      As an independent creator, Stern's revenue now depends on:
       1. YouTube algorithm: anti-Meta investigative content generates engagement
+
       2. Newsletter subscriptions: provocative investigations drive sign-ups
+
       3. NBC News licensing: investigative pieces earn more broadcast airtime
-      4. Sponsored content: tech sponsors cannot be companies you're investigating
+
+      4. Sponsored content: tech sponsors cannot be companies you''re investigating
+
 
       None of these revenue streams penalize anti-Meta coverage. All reward it.
+
       Samsung, Google, and Amazon are all POTENTIAL sponsors or partners for
+
       an independent tech media venture — investigating them carries real
+
       financial risk. Meta (which has zero advertising or content deals with
+
       independent creators) carries zero financial risk to investigate.
 
+      '
     counter_arguments:
-      legitimate_journalism: |
-        The stealth mode story IS genuine, legitimate journalism that drove
+      legitimate_journalism: 'The stealth mode story IS genuine, legitimate journalism that drove
+
         real-world change (Meta firmware update). The question is not whether
+
         the story is valid — it is — but why IDENTICAL privacy concerns at
+
         Samsung (identical 12MP camera, identical LED design), Amazon Ring
+
         (DEPLOYED facial recognition, FTC settlement), and Google/Android XR
+
         receive zero investigative effort.
-      target_selection_not_quality: |
-        Stern is a veteran journalist (12 years WSJ, Emmy, Pulitzer finalist).
-        The career migration didn't change her journalism QUALITY — it changed
+
+        '
+      target_selection_not_quality: 'Stern is a veteran journalist (12 years WSJ, Emmy, Pulitzer finalist).
+
+        The career migration didn''t change her journalism QUALITY — it changed
+
         her target SELECTION. At WSJ she covered all companies equally; as
+
         an independent she concentrates investigative energy on Meta.
-      timing: |
-        The LED modding market grew during Stern's WSJ tenure but was first
+
+        '
+      timing: 'The LED modding market grew during Stern''s WSJ tenure but was first
+
         investigated only after she left. At WSJ, such an investigation would
-        have been complicated by News Corp's $50M Meta deal. As an independent,
+
+        have been complicated by News Corp''s $50M Meta deal. As an independent,
+
         no such complication exists.
 
+        '
     source_urls:
-      - "https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/"
-      - "https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/"
-      - "https://www.youtube.com/watch?v=Bhzno-IjuiY"
-      - "https://www.youtube.com/watch?v=TA4Wo08vGqk"
-      - "https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/"
-      - "https://www.youtube.com/watch?v=EaJSPeJmqis"
-      - "https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/"
-      - "https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech"
-      - "https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/"
-      - "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/"
-
+    - https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+    - https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/
+    - https://www.youtube.com/watch?v=Bhzno-IjuiY
+    - https://www.youtube.com/watch?v=TA4Wo08vGqk
+    - https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/
+    - https://www.youtube.com/watch?v=EaJSPeJmqis
+    - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
+    - https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
+    - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
+    - https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/
     cross_entity_asymmetry_score: 0.85
-    methodology: |
-      Score reflects: (1) magnitude of Meta tone shift (+0.35 → -0.65 = 1.00 delta),
+    methodology: 'Score reflects: (1) magnitude of Meta tone shift (+0.35 → -0.65 = 1.00 delta),
+
       (2) zero coverage of Samsung/Amazon/Google with identical privacy concerns,
+
       (3) timing correlation with career migration (balanced → independent).
+
       Slightly above WIRED (0.82) because the natural-experiment design —
+
       same journalist, same beat, different employer — is the strongest causal
+
       evidence in the dataset.
+
+      '
