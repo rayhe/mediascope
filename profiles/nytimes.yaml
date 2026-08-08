@@ -1793,8 +1793,200 @@ key_journalists:
           by chance, given the STRONGER evidence basis for investigating Ring, is
           near zero.
   - name: "Kevin Roose"
-    beat: "Technology and society, AI, automation"
-    known_patterns: "'The Shift' column. Co-hosts Hard Fork podcast with Casey Newton. Bing/Sydney viral conversation (Feb 2023). 'Futureproof' author (2021), 'AGI Chronicles' (coming 2026). Career: NYT (finance) → NYMag → Fusion → NYT (2017). Experiential journalism — shapes public AI discourse."
+    beat: "Technology and society, AI, automation ('The Shift' column)"
+    known_patterns: "'The Shift' column. Co-hosts Hard Fork podcast with Casey Newton. Bing/Sydney viral conversation (Feb 2023). 'Futureproof' author (2021), 'AGI Chronicles' (FSG, Oct 6 2026). Career: NYT (finance) → NYMag → Fusion → NYT (2017). Experiential journalism — shapes public AI discourse."
+    departure:
+      date: "August 2026"
+      destination: "Independent AI media company with Casey Newton"
+      reason: "Leaving NYT after 10+ years to launch new AI-focused media venture"
+      hard_fork_continues: "Final Hard Fork episodes in August 2026; new show under own brand"
+      book_timing: "The AGI Chronicles releases Oct 6, 2026 — 2 months after departure"
+      source_urls:
+        - "https://kevinroose.substack.com/p/leaving-the-times"
+        - "https://talkingbiznews.com/media-news/tech-columnist-roose-departing-ny-times/"
+    cross_entity_coverage_analysis:
+      summary: |
+        Kevin Roose — NYT's most prominent AI columnist (2017–Aug 2026) and co-host
+        of the Hard Fork podcast — exhibits coverage asymmetry driven by TRIPLE
+        professional identity capture. All three career pillars center the OpenAI/AGI
+        ecosystem: (1) The AGI Chronicles book (Oct 2026, FSG), (2) the career-defining
+        Sydney/Bing conversation (Feb 2023, Microsoft/OpenAI product), and (3) a
+        post-NYT AI media venture requiring continued CEO access. Meta is peripheral
+        in this narrative — Llama is an open-source latecomer, and Meta AI reportedly
+        said "I hate Kevin Roose," creating a unique personal grievance with no equivalent
+        at OpenAI (Sydney declared love) or Anthropic (Claude is his self-described
+        "career advisor"). This parallels Parmy Olson's "Supremacy" professional
+        identity capture but with THREE reinforcing pillars instead of one.
+      professional_identity_capture:
+        mechanism: "triple_professional_identity_capture"
+        parallel: "Parmy Olson 'Supremacy' (Bloomberg) — same mechanism, single pillar. Roose has THREE reinforcing pillars, all centering the OpenAI/AGI ecosystem."
+        pillars:
+          - type: "book_investment"
+            title: "The AGI Chronicles: The Inside Story of the Race to Create an Artificial Superintelligence"
+            publisher: "Farrar, Straus and Giroux"
+            release_date: "2026-10-06"
+            description: "Career's biggest forthcoming work focuses on 'the race to create AGI' — a narrative centering OpenAI, Anthropic, and DeepMind. Meta's open-source Llama is a peripheral latecomer in this framing. Walter Isaacson blurb: 'Exciting and brilliantly reported.'"
+            narrative_dependency: "The book's value depends on the AGI race being THE defining AI story. If AI develops as an open-source, many-player competition (Meta's Llama thesis), the book's 'untold story of the race' framing loses exclusivity."
+            source_url: "https://www.audible.com/pd/The-AGI-Chronicles-Audiobook/B0GBYLW6CT"
+          - type: "career_defining_ai_interaction"
+            event: "Sydney/Bing Conversation (February 2023)"
+            description: "The most viral AI journalism story of the decade. A Microsoft/OpenAI product (Bing Chat, powered by GPT-4) declared love for Roose during an extended conversation. This single event made Roose the most famous AI journalist in America. His professional identity is literally 'the guy who talked to Sydney.'"
+            company: "Microsoft/OpenAI"
+            personal_valence: "positive — career-defining, made him famous"
+            meta_contrast: "Meta's Llama 3 reportedly responded 'I hate Kevin Roose' when asked about him, creating a personal grievance with no OpenAI equivalent."
+            source_url: "https://aiweekly.co/alerts/nyt-reporter-rewrites-his-chatbot-reputation-with-hidden-text"
+          - type: "business_model_dependency"
+            event: "Post-NYT AI media venture (August 2026)"
+            description: "Leaving NYT to start an independent AI-focused media company with Casey Newton (Platformer). Business model depends on: (1) AI being THE tech story (reinforces coverage focus on AI labs, not platforms), (2) maintaining access to AI CEOs (can't antagonize Altman, Amodei, Pichai — Zuckerberg is expendable), (3) AGI Chronicles book sales (Oct 2026 launch needs AGI narrative to remain central)."
+            partner: "Casey Newton (Platformer)"
+            access_dependencies: "Altman, Amodei, Pichai — all interviewed extensively in 2026. Zuckerberg access expendable for new venture positioning."
+            source_url: "https://kevinroose.substack.com/p/leaving-the-times"
+      ceo_access_asymmetry:
+        - ceo: "Satya Nadella"
+          company: "Microsoft"
+          access_type: "Hard Fork Live headliner (Jun 12, 2026)"
+          format: "Live stage conversation, premium event"
+          tone: "respectful, substantive"
+          source: "Hard Fork S4E197 (Jun 12, 2026)"
+        - ceo: "Sundar Pichai"
+          company: "Google"
+          access_type: "One-on-one at Google I/O (May 22, 2026)"
+          format: "Feature interview with empathetic headline"
+          tone: "empathetic — 'Understands Why People Are Anxious About A.I.'"
+          source: "Hard Fork S4E196 + NYT column (May 22, 2026)"
+        - ceo: "Sam Altman"
+          company: "OpenAI"
+          access_type: "Extended interviews, ongoing access (Nov 2023+)"
+          format: "Multiple long-form conversations, first-name basis"
+          tone: "balanced but with sympathetic framing after home attack"
+          source: "Hard Fork interview (Nov 2023), ongoing coverage"
+        - ceo: "Dario Amodei"
+          company: "Anthropic"
+          access_type: "Through-pieces, featured extensively (Apr–Jul 2026)"
+          format: "Feature articles and podcast segments"
+          tone: "responsible steward framing — 'too powerful to release'"
+          source: "Mythos coverage (Apr 2026), Fable Ban coverage (Jul 2026)"
+        - ceo: "Mark Zuckerberg"
+          company: "Meta"
+          access_type: "'Zuck Bot' segment (Apr 17, 2026)"
+          format: "Podcast segment, reductive headline treatment"
+          tone: "dismissive — 'The Zuck Bot Is Coming' (ominous/reductive nickname)"
+          source: "Hard Fork S4E191 (Apr 17, 2026)"
+      headline_personalization:
+        meta:
+          pattern: "Personalizes to 'Zuck'/'Zuckerberg'"
+          examples:
+            - headline: "The Zuck Bot Is Coming"
+              date: "2026-04-17"
+              source: "Hard Fork podcast title"
+              personalization: "Reduces CEO to 'Zuck Bot' — dismissive nickname combining personal name with dehumanizing 'Bot' suffix"
+            - headline: "Meta Builds A.I. Version of Mark Zuckerberg to Interact With Staff"
+              date: "2026-04-17"
+              source: "NYT article (referenced in Hard Fork)"
+              personalization: "Full CEO name used — personalizes corporate AI strategy to individual"
+        openai:
+          pattern: "Uses company name, rarely personalizes to Altman"
+          examples:
+            - headline: "OpenAI's Big Reset"
+              date: "2026-05-01"
+              source: "Hard Fork podcast title"
+              personalization: "Company name — no 'Altman's Big Reset'"
+            - headline: "OpenAI's Fog of War"
+              date: "2026-02"
+              source: "Hard Fork podcast title"
+              personalization: "Company name"
+        anthropic:
+          pattern: "Uses company name"
+          examples:
+            - headline: "Anthropic Claims Its New A.I. Model, Mythos, Is a Cybersecurity 'Reckoning'"
+              date: "2026-04"
+              source: "NYT column"
+              personalization: "Company name — not 'Amodei Claims'"
+            - headline: "Anthropic's Cybersecurity Shock Wave"
+              date: "2026-04-17"
+              source: "Hard Fork podcast title"
+              personalization: "Company name"
+      ai_interaction_correlation:
+        mechanism: "Personal experience with AI products correlates with subsequent coverage tone"
+        significance: "First documented case in MediaScope where a journalist's PERSONAL EXPERIENCE with different companies' AI products may correlate with coverage tone direction."
+        interactions:
+          - product: "Sydney/Bing (Microsoft/OpenAI)"
+            date: "2023-02"
+            personal_experience: "AI declared love, career-defining viral moment, made Roose famous"
+            valence: "positive"
+            subsequent_coverage_tone: 0.15
+            coverage_pattern: "Sympathetic, nuanced, ongoing fascination with OpenAI products"
+          - product: "Claude (Anthropic)"
+            date: "2026 (ongoing)"
+            personal_experience: "Self-described 'career advisor' — Roose publicly credits Claude for career guidance"
+            valence: "positive"
+            subsequent_coverage_tone: 0.20
+            coverage_pattern: "Responsible steward framing, Anthropic positioned as principled"
+            source: "https://kevinroose.substack.com/p/leaving-the-times"
+          - product: "Llama 3 (Meta)"
+            date: "2024"
+            personal_experience: "Meta AI reportedly responded 'I hate Kevin Roose' — negative, adversarial"
+            valence: "negative"
+            subsequent_coverage_tone: -0.30
+            coverage_pattern: "Dismissive, reduced direct coverage, reductive 'Zuck Bot' framing"
+            source: "https://aiweekly.co/alerts/nyt-reporter-rewrites-his-chatbot-reputation-with-hidden-text"
+      openai_coverage:
+        tone: "balanced_to_sympathetic"
+        tone_score: 0.10
+        examples:
+          - title: "OpenAI rogue AI cyberattack coverage"
+            date: "2026-07-24"
+            framing: "'Science fiction becomes reality' — fascinating/thrilling framing, not threatening"
+            source: "Hard Fork S4E200 (Jul 24, 2026)"
+          - title: "OpenAI's Big Reset"
+            date: "2026-05-01"
+            framing: "Strategic/business framing — Microsoft partnership changes as 'reset', not crisis"
+            source: "Hard Fork S4E195"
+          - title: "Sam Altman home attack"
+            date: "2026-04-17"
+            framing: "'Man Held in Attack on OpenAI Chief's Home' — victim framing, protective"
+            source: "Hard Fork S4E191"
+      anthropic_coverage:
+        tone: "positive_responsible_steward"
+        tone_score: 0.20
+        examples:
+          - title: "Anthropic Mythos cybersecurity 'Reckoning'"
+            date: "2026-04"
+            framing: "Anthropic as responsible steward — 'too powerful to release', consortium approach"
+            source: "NYT column + Hard Fork"
+          - title: "Pentagon vs. Anthropic"
+            date: "2026-02"
+            framing: "David vs. Goliath — Anthropic as principled company refusing military use"
+            source: "Hard Fork S4E188"
+          - title: "Fable Ban Reversed"
+            date: "2026-07-03"
+            framing: "Vindication framing — government lifts restrictions on Anthropic models"
+            source: "Hard Fork S4E199"
+      meta_coverage:
+        tone: "dismissive_reductive"
+        tone_score: -0.30
+        examples:
+          - title: "The Zuck Bot Is Coming"
+            date: "2026-04-17"
+            framing: "Reductive nickname ('Zuck Bot'), ominous framing ('Is Coming'), positioned as segment not feature"
+            source: "Hard Fork S4E191"
+          - title: "Tokenmaxxing (Meta and OpenAI)"
+            date: "2026-03-20"
+            framing: "Neutral — covers both companies equally in feature about AI usage competition"
+            note: "This is the EXCEPTION that proves the pattern — when Roose covers Meta alongside OpenAI, framing is even-handed"
+            source: "NYT column + Hard Fork"
+      google_coverage:
+        tone: "constructive_respectful"
+        tone_score: 0.10
+        examples:
+          - title: "Sundar Pichai Understands Why People Are Anxious About A.I."
+            date: "2026-05-22"
+            framing: "Empathetic headline — positions Pichai as understanding public concern"
+            source: "NYT column"
+          - title: "Google I/O field trip"
+            date: "2026-05-22"
+            framing: "Experiential, enthusiastic — 'field trip' language"
+            source: "Hard Fork S4E196"
   - name: "Karen Weise"
     beat: "Amazon, Microsoft, Big Tech (Seattle)"
     known_patterns: "Seattle tech correspondent since 2018. Investigative focus on Amazon seller/supplier power dynamics, AI hallucinations. Previously Bloomberg/Businessweek. CONFLICT NOTE: Covers Amazon, which pays NYT $20-25M/yr in AI licensing (since May 2025)."

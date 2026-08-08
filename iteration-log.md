@@ -1,4 +1,21 @@
 # MediaScope Iteration Log
+## 2026-08-08 00:00 PT — Type A: NYT × Google — Q2 2026 Traffic Cannibalization Paradox
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** NYT × Google
+
+**Finding:** NYT CEO Levien explicitly blamed Google/big tech for traffic declines in Q2 2026 earnings (Aug 5, stock -13% worst since 2012), yet NYT editorial directs investigative resources primarily at Meta (zero licensing deal) rather than Google (~$100M+/yr ad dependency, 4 leverage mechanisms). Asymmetry score: NYT × Google = 0.85 vs Gizmodo clean control 0.50.
+
+**Key evidence:**
+- NYT Q2 revenue $762.5M (+11% beat), subs +280K (missed 295K est.)
+- CEO: "big tech companies whose moves continue to result in less traffic to publishers"
+- Google DeepMind leadership shakeup same day — business framing vs Meta Muse Spark adversarial framing
+- Oumi AI accuracy study commissioned by NYT (91% accuracy)
+
+**Tests:** 41 new (10 classes) in `test_nyt_google_traffic_cannibalization_paradox_aug8.py`
+**Stats:** 5,947 tests across 218 files (structural consistency 124/124 pass)
+**Commit:** 8626df9
+
 
 ## 2026-08-07 23:00 PT — Type D: End-of-Day Cross-Validation — Entity Count Regression Fix + Full Day Integrity
 

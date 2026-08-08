@@ -2931,6 +2931,36 @@ publications:
         domain she covers.
 
         '
+    kevin_roose_cross_entity:
+      overview: "Kevin Roose — NYT's most prominent AI columnist (2017–Aug 2026), Hard Fork co-host, AGI Chronicles author — exhibits TRIPLE professional identity capture centering OpenAI/AGI ecosystem. Parallels Parmy Olson 'Supremacy' mechanism but with 3 reinforcing pillars."
+      mechanism: professional_identity_capture
+      pillar_count: 3
+      pillars:
+        - book_investment: "The AGI Chronicles (FSG, Oct 6 2026) — career's biggest work centers OpenAI/AGI race narrative"
+        - career_defining_interaction: "Sydney/Bing conversation (Feb 2023) — made Roose famous via Microsoft/OpenAI product"
+        - business_model: "Post-NYT AI media venture with Casey Newton — access dependencies on AI lab CEOs"
+      ceo_access_pattern:
+        feature_treatment: "Nadella (Hard Fork Live headliner Jun 2026), Pichai (one-on-one at I/O May 2026), Altman (extended access)"
+        meta_treatment: "'The Zuck Bot Is Coming' — reductive nickname, segment not feature (Apr 2026)"
+      ai_interaction_correlation:
+        sydney_openai: "Declared love → sympathetic coverage"
+        llama_meta: "Reportedly said 'I hate Kevin Roose' → dismissive coverage"
+        claude_anthropic: "Self-described 'career advisor' → responsible steward framing"
+      tone_scores:
+        openai: 0.10
+        anthropic: 0.20
+        google: 0.10
+        meta: -0.30
+      departure:
+        date: "August 2026"
+        destination: "Independent AI media company with Casey Newton"
+      source_urls:
+        - "https://kevinroose.substack.com/p/leaving-the-times"
+        - "https://talkingbiznews.com/media-news/tech-columnist-roose-departing-ny-times/"
+        - "https://muckrack.com/kevinroose/articles"
+        - "https://aiweekly.co/alerts/nyt-reporter-rewrites-his-chatbot-reputation-with-hidden-text"
+        - "https://www.audible.com/pd/The-AGI-Chronicles-Audiobook/B0GBYLW6CT"
+      test_file: tests/test_kevin_roose_cross_entity.py
     meta_coverage_summary: 'NYT runs extensive critical coverage of Meta, particularly
 
       child safety litigation, privacy violations, and political
