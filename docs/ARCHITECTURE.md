@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6216 tests across 225 test files (all from real articles)
+├── tests/                       # 6254 tests across 226 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -545,6 +545,7 @@ mediascope/
 │   ├── test_christopher_mims_cross_entity.py # Mims (WSJ) cross-entity: TONE INVERSION — constructive Meta (+0.3) vs skeptical OpenAI (-0.3), validates balanced control; WSJ systematic disclosure (only pub that discloses financial ties)
 │   ├── test_dan_milmo_cross_entity.py    # Milmo (Guardian) cross-entity: "BIG TOBACCO" framing asymmetry — Meta gets loaded metaphor, OpenAI rogue agent gets factual relay. Gap ~0.20. Editorial leadership role means institutional direction.
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment
+│   ├── test_wired_amazon_surveillance_parity_paradox_aug8.py # WIRED × Amazon Surveillance Parity Paradox: Meta dormant NameTag code (never activated) gets multi-part investigation while Amazon's FTC Ring/Alexa settlements, active Familiar Faces lawsuit, and Bee wearable get editorial silence — despite two Condé Nast-Amazon licensing deals. 8 classes, 38 tests
 │   ├── test_wired_apple_openai_silence_aug7.py # WIRED 28-day silence on Apple v. OpenAI trade secret lawsuit, cross-pub comparison, financial amplification evidence
 │   ├── test_nyt_cade_metz_cross_entity.py # Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing vs Meta adversarial beat reporter assignment
 │   ├── test_mike_isaac_cross_entity.py # Mike Isaac (NYT) cross-entity coverage post-beat expansion: consistent framing across Meta/Anthropic/SpaceX, Eli Tan succession, institutional lane assignment

@@ -1909,11 +1909,142 @@ competitor_relationships:
     coverage_prediction: "neutral"
   amazon:
     financial_tie: "licensing"
-    estimated_value: "undisclosed"
+    estimated_value: "undisclosed, multi-year (2 deals)"
     direction: "receiving"
-    description: "Multi-year Rufus AI shopping assistant licensing deal via Condé Nast, Jul 2025."
+    description: >
+      TWO active content licensing deals via Condé Nast: (1) Amazon Rufus AI shopping
+      assistant (Jul 2025, multi-year), (2) Amazon Alexa for Shopping / Alexa+ integration
+      (May 2026, Rufus rebranded into Alexa). Condé Nast content feeds Amazon's AI
+      shopping ecosystem serving 350M+ customers.
     source_url: "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
+    secondary_sources:
+      - "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/"
+      - "https://www.geekwire.com/2026/amazon-unifies-alexa-and-rufus-as-ai-rivals-move-into-online-shopping/"
     coverage_prediction: "softer"
+    conde_nast_amazon_deal_count: 2
+    surveillance_parity_paradox:
+      finding_date: "2026-08-08"
+      description: >
+        WIRED conducted a multi-part investigative series (2+ articles) on Meta's DORMANT
+        NameTag facial recognition code in Jun 2026 — code that was never activated for
+        users and was promptly removed after discovery. The investigation generated massive
+        amplification: EFF verification, 70+ advocacy organizations petitioning Meta,
+        coverage in Gizmodo, Digital Trends, PetaPixel, Android Authority, Malwarebytes,
+        Northeastern University, and others.
+
+        In the SAME MONTH (Jun 2026), Amazon's Ring was sued in a class-action lawsuit
+        for its ACTIVE "Familiar Faces" facial recognition feature — a feature that is
+        actually deployed and collecting biometric data on millions of people passing by
+        Ring cameras. WIRED produced no comparable investigation of Ring's facial
+        recognition, despite it being an ACTIVE feature rather than dormant code.
+
+        Amazon's surveillance enforcement record is demonstrably worse than Meta's:
+        (1) FTC $5.8M Ring settlement (2023): employee spied on 81 women in bedrooms/
+        bathrooms for months; (2) FTC $25M Alexa settlement (2023): children's voice
+        recordings retained after parents requested deletion; (3) Ring shared footage
+        with police without warrants (confirmed 11 times by Amazon VP); (4) Ring
+        "Familiar Faces" class-action lawsuit filed Jun 2, 2026; (5) Amazon Bee
+        wearable acquisition (Jul 2025): always-listening AI wristband that records
+        ALL conversations unless manually muted; (6) Echo/Alexa: always-listening
+        device in 100M+ US homes.
+
+        Condé Nast has TWO active licensing deals with Amazon, creating financial
+        incentive to avoid adversarial coverage of Amazon's surveillance ecosystem.
+      asymmetry_score: 0.90
+      severity: critical
+      prediction_validated: true
+      meta_investigation:
+        feature_name: "NameTag"
+        date: "2026-06-04"
+        article_count: 3
+        status: "dormant code, never activated, removed Jun 8"
+        amplification:
+          - "EFF Threat Lab verification"
+          - "70+ advocacy organizations petition"
+          - "Gizmodo, Digital Trends, PetaPixel, Android Authority coverage"
+          - "Malwarebytes security advisory"
+          - "Northeastern University expert analysis"
+        rank_one_follow_up: >
+          WIRED published a follow-up revealing Meta licensed facial recognition
+          technology from Rank One, a company that contracts with US Marshals Service,
+          NCIS, and Special Operations Command. Additional investigative depth.
+      amazon_enforcement_events:
+        - event: "FTC Ring settlement"
+          date: "2023-05-31"
+          amount: "$5.8M"
+          detail: >
+            Employee spied on 81 women via bedroom/bathroom cameras for months.
+            FTC found Ring gave employees unrestricted access to customer video data.
+            Required deletion of data, models, and algorithms derived from
+            unlawfully reviewed videos.
+          source_url: "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users"
+        - event: "FTC Alexa children's recordings settlement"
+          date: "2023-05-31"
+          amount: "$25M"
+          detail: >
+            Amazon failed to delete Alexa recordings at parents' request and
+            kept children's voice recordings longer than necessary.
+          source_url: "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users"
+        - event: "Ring police sharing without warrants"
+          date: "2022"
+          detail: >
+            Amazon VP confirmed Ring shared footage with police 11 times
+            without court order or user permission. Sen. Ed Markey raised
+            concerns about privacy violations.
+          source_url: "https://www.consumerreports.org/law-enforcement/amazon-shared-ring-footage-with-police-without-a-warrant-a6093504500/"
+        - event: "Ring Familiar Faces facial recognition lawsuit"
+          date: "2026-06-02"
+          detail: >
+            Class-action lawsuit filed same month as WIRED's Meta NameTag
+            investigation. Ring's Familiar Faces is an ACTIVE feature that
+            collects biometric data on people passing Ring cameras without
+            their consent. Seeking $5M+ in damages.
+          source_url: "https://www.reuters.com/legal/government/amazons-ring-sued-over-facial-recognition-feature-latest-privacy-concern-2026-06-02/"
+        - event: "Amazon Bee wearable acquisition"
+          date: "2025-07-22"
+          detail: >
+            Amazon acquired Bee, an always-listening AI wristband ($49.99 +
+            $19.99/mo) that records ALL conversations unless manually muted.
+            Device transcribes and stores speech as searchable timeline.
+            Updated at CES 2026 with email/calendar drafting from conversations.
+          source_url: "https://techcrunch.com/2025/07/22/amazon-acquires-bee-the-ai-wearable-that-records-everything-you-say/"
+      wired_amazon_surveillance_articles: 0
+      device_comparison:
+        meta_glasses:
+          camera: true
+          microphone: true
+          always_on: false
+          installed_base: "5M+ (Meta AI app 50M+ downloads)"
+          ftc_enforcement: false
+          facial_recognition: "dormant code, removed"
+        ring:
+          camera: true
+          microphone: true
+          always_on: true
+          installed_base: "10M+ Ring devices"
+          ftc_enforcement: true
+          facial_recognition: "active Familiar Faces feature, under lawsuit"
+        alexa:
+          camera: "some Echo Show models"
+          microphone: true
+          always_on: true
+          installed_base: "100M+ US homes"
+          ftc_enforcement: true
+          facial_recognition: false
+        bee:
+          camera: false
+          microphone: true
+          always_on: true
+          installed_base: "early stage"
+          ftc_enforcement: false
+          facial_recognition: false
+      source_urls:
+        - "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users"
+        - "https://www.reuters.com/legal/government/amazons-ring-sued-over-facial-recognition-feature-latest-privacy-concern-2026-06-02/"
+        - "https://www.consumerreports.org/law-enforcement/amazon-shared-ring-footage-with-police-without-a-warrant-a6093504500/"
+        - "https://techcrunch.com/2025/07/22/amazon-acquires-bee-the-ai-wearable-that-records-everything-you-say/"
+        - "https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry"
+        - "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
   apple:
     financial_tie: "negotiating"
     estimated_value: "potential $50M+ multi-year"

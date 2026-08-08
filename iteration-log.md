@@ -1,4 +1,86 @@
 # MediaScope Iteration Log
+## 2026-08-08 08:00 PT — Type A: Competitor Coverage Deep Dive — WIRED × Amazon Surveillance Parity Paradox
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Finding: Surveillance Parity Paradox
+
+WIRED ran a multi-part investigative series on Meta's **dormant** NameTag facial recognition code (Jun 2026) — code that was never activated and was promptly removed. Meanwhile, WIRED has maintained editorial silence on Amazon's demonstrably worse surveillance enforcement record, despite Condé Nast (WIRED's parent company) having **two active Amazon licensing deals**.
+
+**Meta's NameTag (WIRED's target):**
+- Dormant code, never activated, promptly removed
+- Result: multi-part investigative series, EFF verification, 70+ advocacy orgs
+
+**Amazon (WIRED's silence):**
+- FTC $5.8M Ring settlement — Ring employee accessed video feeds of 81 women in bedrooms/bathrooms
+- FTC $25M Alexa settlement — retained children's voice recordings after deletion requests
+- Ring "Familiar Faces" active facial recognition lawsuit (Jun 2, 2026 — same month as NameTag coverage)
+- Ring police video sharing without warrants (pre-2024)
+- Bee always-listening wearable with ambient recording — ZERO comparable WIRED investigation
+
+**Asymmetry score:** 0.90 (critical severity)
+
+### Files modified
+- `profiles/wired.yaml` — expanded `competitor_relationships.amazon` with full `surveillance_parity_paradox` finding: meta_investigation, 5 amazon_enforcement_events with source URLs, device_comparison, asymmetry analysis
+- `tests/test_wired_amazon_surveillance_parity_paradox_aug8.py` — 38 new tests across 8 classes, all passing
+- `README.md` — test count update (6216→6254, 225→226 files), new test file listing
+- `docs/ARCHITECTURE.md` — test count update (6216→6254, 225→226 files), new test file listing
+
+### Test health
+- New tests: 38/38 passing
+- Structural consistency: 124/124 passing
+- Competitor coverage: 65/65 passing
+- Financial relationships: 40/40 passing
+- Total: 6254 tests across 226 files
+
+## 2026-08-08 07:00 PT — Type D: Test & Verify — Structural Fixes + HTTPS Enforcement + 21-Test Cross-Validation
+
+**Rotation:** D (Test & Verify)
+
+### Failures found and fixed
+
+**4 test failures across 3 files** (introduced by Types A/B/C earlier today):
+
+1. **`test_competitor_coverage.py::test_research_has_all_publications`** — 3 cross-publication findings (`nyt_google_q2_2026_traffic_cannibalization_paradox`, `google_showcase_coercive_cycle`, `advance_dual_asset_monetization`) were placed under the `publications` key instead of a dedicated section. Publications expected a fixed set of 10 known slugs; these findings polluted it.
+
+2. **`test_competitor_coverage.py::test_each_publication_has_meta_coverage`** — Same root cause. The findings don't have `meta_coverage_tone` because they're cross-publication analyses, not publication profiles.
+
+3. **`test_financial_relationships.py::test_publications_have_meta_coverage`** — Same root cause.
+
+4. **`test_type_d_cross_validation_aug7_04am.py::test_all_urls_are_https`** — Shacknews source URL in `advance_dual_asset_monetization` used HTTP instead of HTTPS.
+
+### Fixes applied
+
+1. **YAML structural migration:** Moved 3 cross-publication findings from `publications` to new `cross_publication_findings` top-level key in `competitor-coverage-research.yaml`. Used Python YAML roundtrip to avoid manual editing errors.
+
+2. **HTTPS enforcement sweep:** Fixed 8 HTTP→HTTPS URLs across both YAML files:
+   - `competitor-entities.yaml`: shacknews.com (×2), entrepreneur.com (×1)
+   - `competitor-coverage-research.yaml`: digiday.com, boomers-daily.com, techtimes.com (×2), androidauthority.com, venturebeat.com
+
+3. **Updated README.md and ARCHITECTURE.md:** Test counts 6195→6216, file counts 224→225.
+
+### New cross-validation test
+- `tests/test_type_d_07am_cross_validation_aug8.py` — **21 tests, 5 classes**, all passing:
+  - `TestPublicationsKeyIntegrity` (4 tests): no cross-pub pollution, known slugs only, meta_coverage_tone + asymmetry_verdict on all pubs
+  - `TestCrossPublicationFindings` (9 tests): schema completeness, test file refs exist, mechanism-specific fields (coercion counts, entity lists, key evidence)
+  - `TestSourceURLHTTPS` (3 tests): recursive HTTPS enforcement across all profiles + Shacknews regression
+  - `TestYAMLTopLevelStructure` (3 tests): required keys, no cross-section duplicates
+  - `TestFileCountIntegrity` (2 tests): minimum file count, all Aug 8 files present
+
+### Test health
+- Structural consistency: 124/124 passing (verified with new file count)
+- Previously failing: 4/4 now passing
+- New tests: 21/21 passing
+- Total: 6216 tests across 225 files
+- Commit: 9dc9212
+
+### Files modified
+- `profiles/competitor-coverage-research.yaml` — structural migration + 6 HTTP→HTTPS fixes
+- `profiles/competitor-entities.yaml` — 2 HTTP→HTTPS fixes
+- `README.md` — test count update (6216/225), new test file listing
+- `docs/ARCHITECTURE.md` — test count update (6216/225), new test file listing
+- `tests/test_type_d_07am_cross_validation_aug8.py` — 21 new tests
+
 ## 2026-08-08 06:00 PT — Type C: Financial Incentive Mapping — Advance Publications Dual-Asset AI Content Monetization Architecture
 
 **Rotation:** C (Financial Incentive Mapping)
