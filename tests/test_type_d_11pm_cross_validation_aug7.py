@@ -279,13 +279,22 @@ class TestTestInfrastructureHealth:
         readme_path = os.path.join(PROFILES_DIR, '..', 'README.md')
         with open(readme_path) as f:
             content = f.read()
-        assert '5,904' in content or '5904' in content
+        # Count grows as iterations add tests; check >= known floor
+        import re
+        match = re.search(r'\*\*(\d[\d,]*)\s+tests\*\*', content)
+        assert match, "README must state test count in '**N tests**' format"
+        count = int(match.group(1).replace(',', ''))
+        assert count >= 6040, f"README test count {count} below 6040 floor"
 
     def test_architecture_test_count_current(self):
         arch_path = os.path.join(PROFILES_DIR, '..', 'docs', 'ARCHITECTURE.md')
         with open(arch_path) as f:
             content = f.read()
-        assert '5904' in content
+        import re
+        match = re.search(r'(\d[\d,]*)\s+tests\s+across', content)
+        assert match, "ARCHITECTURE must state test count"
+        count = int(match.group(1).replace(',', ''))
+        assert count >= 6040, f"ARCHITECTURE test count {count} below 6040 floor"
 
     def test_all_aug7_test_files_exist(self):
         """All test files created during Aug 7 iterations should exist."""

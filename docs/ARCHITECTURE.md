@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6040 tests across 220 test files (all from real articles)
+├── tests/                       # 6132 tests across 221 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -578,6 +578,7 @@ mediascope/
 │   ├── test_type_d_3pm_cross_validation_aug7.py # Type D 15:00 cross-validation: financial amplification model ordering, three-tier marketplace taxonomy, Snowflake entity, Meta isolation claim, metric scale consistency, FT Heikkilä career migration, research cross-references
 │   ├── test_nyt_google_traffic_cannibalization_paradox_aug8.py # Type A: NYT × Google Q2 2026 traffic cannibalization paradox — CEO Levien explicitly blamed Google for traffic declines (stock -13%, worst since 2012), yet investigative resources target Meta (zero deal) not Google ($100M+ ad dependency). Oumi study paradox, beat assignment mechanism, attacker-vs-threat inverse relationship
 │   ├── test_type_d_11pm_cross_validation_aug7.py # Type D 23:00 end-of-day: entity set evolution (8→11), hardcoded count regression scan, News Corp triple-revenue, WIRED Apple-OpenAI silence, Parmy Olson identity capture, Samsung equivalence + school ban, financial amplification ordering, RDC adversarial zero-Meta invariant, test infrastructure health (217 files, 5994 tests), source URL coverage
+│   ├── test_type_d_03am_cross_validation_aug8.py # Type D 03:00 Aug 8 cross-validation: Google Showcase coercive cycle 3-stage model integrity, Kevin Roose triple identity capture in NYT profile, NYT Google traffic cannibalization paradox financial relationship, cross-iteration consistency (leverage hierarchy MSFT>GOOG>META, Roose departure+financial pressure alignment), entity/test-file count stability (221 files, 6132 tests), source URL integrity, financial amplification model direction. 8 classes, 35 tests
 │   ├── test_type_d_10pm_cross_validation_aug7.py # Type D 22:00 day-end cross-validation: News Corp triple-revenue consistency, WIRED Apple-OpenAI silence, 4 asymmetry mechanisms (licensing, advertising, marketplace, professional identity capture), entity set stability (11 entities), settlement_revenue type validation, metric scale integrity, source URL presence, cumulative day integrity
 │   ├── test_type_d_8pm_cross_validation_aug6.py # Type D 8 PM cross-validation: OpenAI/Apple entity escalation phases 4-5, Atlantic silence source_urls schema, Milmo profile↔research consistency, Amazon sextuple entity↔research, evening iteration coverage
 │   ├── test_type_d_2pm_cross_validation_aug6.py # Type D 2 PM cross-validation: sensor-count paradox, WSJ balanced control, Google coercion-Condé Nast consistency, NYT Q2 earnings, Mims tone inversion, WSJ disclosure uniqueness, MIT TR governance
