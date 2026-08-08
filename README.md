@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5652 tests** across 210 test files, each covering a different analytical capability:
+MediaScope has **5688 tests** across 211 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -678,6 +678,7 @@ MediaScope has **5652 tests** across 210 test files, each covering a different a
 | `test_analyticsinsight_meta_ai_layoff_discrimination_jul15.py` | 12 | Analytics Insight Meta AI layoff discrimination (Jul 15, 2026): hypocrisy_frame precedent-in-legal-context suppression, entity detection Meta cluster, sentiment legal article tone |
 | `test_techcentral_smartglasses_glassholes_jul14.py` | 26 | TechCentral smart glasses privacy editorial (Jul 14, 2026): negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8) |
 | `test_nypost_meta_child_safety_monitoring_jul16.py` | 11 | outsourced_intensity protective-context guard, Path N sentiment correction |
+| `test_meghan_bobrowsky_cross_entity.py` | 36 | Meghan Bobrowsky (WSJ) cross-entity coverage analysis — Balanced-Control Beat Assignment Model: dedicated Meta beat reporter at the ONLY publication with symmetric financial ties ($50M Meta + $50M OpenAI). Tone delta: Bobrowsky −0.15 vs Kashmir Hill −0.80 (0.65 gap) vs Lauren Goode −0.85 (0.70 gap) — largest single-journalist delta in dataset. WSJ beat structure (Bobrowsky→Meta, Berber Jin→OpenAI, McMillan→Cybersecurity, Mims→Tech columnist). Key finding: beat assignment is structurally neutral; asymmetry comes from financial ENVIRONMENT. One-sided pubs (NYT, WIRED) concentrate adversarial energy; balanced pub produces mixed-tone coverage. Profile cross-validation against news-corp.yaml and competitor-coverage-research.yaml |
 
 ```bash
 # Run all tests

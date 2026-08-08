@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5652 tests across 210 test files (all from real articles)
+├── tests/                       # 5688 tests across 211 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -666,6 +666,7 @@ mediascope/
 │   ├── test_analyticsinsight_meta_ai_layoff_discrimination_jul15.py # Analytics Insight Meta AI layoff discrimination Jul 15: hypocrisy_frame precedent-in-legal-context suppression (1), entity detection Meta cluster (1), sentiment legal article tone (1)
 │   ├── test_techcentral_smartglasses_glassholes_jul14.py # TechCentral smart glasses privacy editorial Jul 14: negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8)
 │   ├── test_nypost_meta_child_safety_monitoring_jul16.py # NY Post Meta child-safety chatbot monitoring (Jul 16): outsourced_intensity protective-context guard (crisis helpline, parental alerts), Path N sentiment correction (positive-action negative-domain VADER inflation: raw -0.541→corrected -0.08)
+│   ├── test_meghan_bobrowsky_cross_entity.py # Meghan Bobrowsky (WSJ) cross-entity: Balanced-Control Beat Assignment Model — dedicated Meta beat reporter at ONLY pub with symmetric financial ties ($50M Meta + $50M OpenAI). Tone: −0.15 vs Hill −0.80 (0.65 gap) / Goode −0.85 (0.70 gap) — largest single-journalist delta. WSJ beat structure (Bobrowsky→Meta, Jin→OpenAI, McMillan→Cybersecurity, Mims→Columnist). Beat assignment neutral; asymmetry from financial environment. 9 classes, 36 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

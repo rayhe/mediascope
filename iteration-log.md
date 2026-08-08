@@ -1,5 +1,43 @@
 # MediaScope Iteration Log
 
+## 2026-08-07 16:00 PT — Type A: Competitor Coverage Deep Dive — WIRED Apple v. OpenAI Silence
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** WIRED's 28-day silence on Apple v. OpenAI trade secret lawsuit
+
+### Discovery
+
+WIRED published ZERO articles on Apple's Jul 10, 2026 trade secret lawsuit against OpenAI in 28 days — despite hardware IP being WIRED's core beat. Cross-publication comparison shows WIRED is the ONLY major tech publication with zero coverage:
+
+| Publication | Coverage | Notes |
+|---|---|---|
+| WSJ | 3+ articles | Dual-deal balance (News Corp pays both OpenAI and Meta) |
+| TechCrunch | 3+ articles | Standard tech coverage |
+| Reuters | 4+ articles | Wire service baseline |
+| Gizmodo | 1 article | Deflected to Musk-Altman drama framing |
+| The Verge | 1 article | Standard coverage |
+| CNN | 1 article | Standard coverage |
+| Barron's | 2 articles | Financial angle |
+| FT | 1+ articles | Standard coverage |
+| **WIRED** | **0 articles** | **Only pub with OpenAI content licensing deal (Condé Nast, Aug 2024)** |
+
+### Significance
+
+The only silent publication is the only one whose parent company has a direct OpenAI financial relationship. This is the strongest single data point for the financial amplification thesis. WIRED asymmetry score updated: 0.82 → 0.85.
+
+### Artifacts
+- `tests/test_wired_apple_openai_silence_aug7.py` — 41 defs / 48 with parametrize (10 classes)
+- `profiles/wired.yaml` — added `apple_v_openai_silence` block
+- `profiles/competitor-coverage-research.yaml` — updated WIRED `asymmetry_verdict`
+- README.md + ARCHITECTURE.md — corrected to 5652 tests / 210 files
+
+### Sources
+- WIRED.com search: zero results for "Apple OpenAI lawsuit" or "Apple trade secret"
+- WSJ, TechCrunch, Reuters, Gizmodo, The Verge, CNN, Barron's, FT search results (all returning coverage)
+- Condé Nast–OpenAI content licensing deal (Aug 2024, publicly reported)
+
+**Stats:** 5652 tests, 210 files | Commit: 24a8d5e | All structural consistency tests pass (124/124)
+
 ## 2026-08-07 15:00 PT — Type D: Cross-Validation — Financial Amplification Model Integrity
 
 **Rotation:** D (Test & Verify)
@@ -29633,5 +29671,45 @@ Microsoft wins either way. No other entity has this dual-model hedge.
 - Committed and pushed to GitHub
 
 ### Stats: 5533 tests, 207 files, 0 failures
+
+---
+
+## 2026-08-07 17:00 PT — Type B: Journalist Cross-Entity (Meghan Bobrowsky, WSJ)
+
+### Rotation: Type B — Journalist Cross-Entity Tracking
+
+### Subject: Meghan Bobrowsky, WSJ Meta Beat Reporter
+
+**KEY FINDING — Balanced-Control Beat Assignment Model:**
+Beat assignment itself is structurally neutral. Both NYT and WSJ assign dedicated Meta reporters (Hill/Isaac at NYT, Bobrowsky at WSJ). The asymmetry comes from the FINANCIAL ENVIRONMENT in which the beat operates. At one-sided publications (NYT: Amazon $20-25M/yr, zero Meta deal; WIRED: Microsoft PCM, Perplexity, zero Meta deal), beat assignment CONCENTRATES adversarial energy on Meta. At the balanced publication (WSJ: $50M Meta + $50M OpenAI), the same beat structure produces mixed-tone (-0.15) reporting.
+
+**Tone delta (largest single-journalist gap in dataset):**
+- Bobrowsky (WSJ) -0.15 vs Kashmir Hill (NYT) -0.80 = **0.65 gap**
+- Bobrowsky (WSJ) -0.15 vs Lauren Goode (WIRED) -0.85 = **0.70 gap**
+
+**WSJ beat structure documented:**
+- Meghan Bobrowsky → Meta (dedicated, Muck Rack "Covers: Meta Platforms")
+- Berber Jin → OpenAI ("How OpenAI Lost Its AI Crown")
+- Robert McMillan → Cybersecurity/AI safety ("AI Just Went Rogue Again")
+- Christopher Mims → Tech columnist
+
+### Sources:
+- Muck Rack: https://muckrack.com/meghan-bobrowsky
+- Talking Biz News (beat assignment): https://talkingbiznews.com/media-news/wsj-taps-bobrowsky-to-cover-meta/
+- WSJ smartglasses privacy: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+- WSJ Zuckerberg interview: https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868
+- WSJ $942M ruling: https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+- WSJ OpenAI crown (Berber Jin): https://www.wsj.com/tech/ai/how-openai-lost-its-ai-crownand-the-fight-to-win-it-back-7d069695
+- WSJ AI rogue (McMillan): https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+
+### Changes:
+- Updated `profiles/news-corp.yaml` — Full Bobrowsky journalist profile with cross_entity_coverage, beat_assignment_comparison, wsj_beat_structure, asymmetry_verdict
+- Updated `profiles/competitor-coverage-research.yaml` — `bobrowsky_cross_entity` section under `news-corp`
+- Created `tests/test_meghan_bobrowsky_cross_entity.py` — 36 tests, 9 classes, all passing
+- Updated README.md and docs/ARCHITECTURE.md — test count 5688, 211 files
+- 124/124 structural consistency tests passing, 0 regressions
+- Committed and pushed to GitHub
+
+### Stats: 5688 tests, 211 files, 0 failures
 
 ---

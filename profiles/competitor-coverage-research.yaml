@@ -2111,6 +2111,77 @@ publications:
         transparency. Conversely, the editorial cultures that produce
         adversarial asymmetry also suppress transparency about the
         financial relationships driving that asymmetry.
+    bobrowsky_cross_entity:
+      discovery_date: '2026-08-07'
+      journalist: Meghan Bobrowsky
+      role: WSJ Meta Beat Reporter (assigned ~2023, WSJ since 2021)
+      description: |
+        Bobrowsky is the WSJ's DEDICATED Meta beat reporter — the direct
+        structural analogue to Kashmir Hill (NYT), Lauren Goode (WIRED),
+        and Mike Isaac (NYT). But she operates in a fundamentally different
+        financial environment: News Corp has BALANCED deals ($50M Meta +
+        $50M OpenAI), eliminating the net incentive to favor competitors.
+
+        BALANCED-CONTROL BEAT ASSIGNMENT MODEL:
+
+        Beat assignment itself is neutral. Both NYT and WSJ assign dedicated
+        Meta reporters. The asymmetry comes from the FINANCIAL ENVIRONMENT:
+
+        | Publication | Reporter | Net Incentive | Meta Tone |
+        |---|---|---|---|
+        | NYT | Kashmir Hill | Anti-Meta | -0.80 |
+        | WIRED | Lauren Goode | Anti-Meta | -0.85 |
+        | WSJ | Bobrowsky | Balanced | -0.15 |
+        | Gizmodo | Kyle Barr | Zero | -0.50 |
+        | Guardian | Dan Milmo | Anti-Meta | -0.45 |
+        | FT | Heikkilä | Anti-Meta | -0.45 |
+
+        At one-sided publications, beat assignment CONCENTRATES adversarial
+        energy on Meta. At the balanced publication, the same structure
+        produces mixed-tone reporting that tracks event valence rather than
+        systematic bias.
+
+        Bobrowsky's tone gap with Hill (-0.15 vs -0.80 = 0.65) is the
+        largest single-journalist delta in the dataset on the SAME company.
+        Both are dedicated Meta beat reporters. The explanatory variable is
+        financial environment.
+      wsj_beat_structure:
+        - reporter: Meghan Bobrowsky
+          beat: Meta
+          financial_tie: $50M/yr Meta
+        - reporter: Berber Jin
+          beat: OpenAI / AI startups
+          financial_tie: $50M/yr OpenAI
+        - reporter: Robert McMillan
+          beat: Cybersecurity (cross-entity)
+          financial_tie: null
+        - reporter: Christopher Mims
+          beat: Tech columnist (cross-entity)
+          financial_tie: null
+      meta_tone_value: -0.15
+      meta_coverage_examples:
+        - title: "Meta Is Flooding the Market With Smartglasses"
+          date: '2026-07-14'
+          tone: -0.35
+          framing: balanced stakeholder, 'privacy lightning rod' is descriptive
+        - title: "Mark Zuckerberg Says U.S. Should Accelerate AI"
+          date: '2026-07-29'
+          tone: 0.15
+          framing: interview, humanizing anecdotes, DISCLOSES financial tie
+        - title: "Meta Ordered to Pay $942 Million"
+          date: '2026-08-07'
+          tone: -0.20
+          framing: straight legal reporting, includes appeal plans
+        - title: "The Man Unleashing AI at Meta (Bosworth profile)"
+          date: '2026-05-26'
+          tone: 0.05
+          framing: balanced profile, internal tensions without adversarial editorializing
+      source_urls:
+        - https://muckrack.com/meghan-bobrowsky
+        - https://talkingbiznews.com/media-news/wsj-taps-bobrowsky-to-cover-meta/
+        - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        - https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868
+        - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
   financial_times:
     meta_coverage_tone: adversarial-by-absence
     meta_coverage_summary: |
