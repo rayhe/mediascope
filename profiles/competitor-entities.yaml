@@ -884,6 +884,218 @@ entities:
       - https://www.wsj.com/business/earnings/new-york-times-posts-higher-revenue-as-subscriber-growth-slows-545cc6a0
       - https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/
       - https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+    showcase_coercive_cycle:
+      overview: |
+        Google's five-year coercive dependency cycle: Showcase dependency creation
+        (2020) → AI Overviews traffic destruction (2024-2026) → forced AI training
+        rights surrender (Jun 2026). Documented by cross-border investigation
+        "The Invisible Hand of Big Tech" (Tech Policy Press, Sep 2025) with access
+        to actual Showcase contracts. Former Google News exec Madhav Chinnappa
+        confirmed Showcase was designed to "protect ourselves" from regulatory
+        pressure. Former Google News Initiative Innovation head Ludovic Blecher
+        characterized it as "renting your enemies." This is the most comprehensively
+        documented coercive publisher relationship in the AI content licensing
+        ecosystem.
+      stage_1_dependency_creation:
+        launch_date: "2020-10-01"
+        commitment_b: 1.0
+        commitment_period_years: 3
+        publisher_count: 3000
+        contract_floor_k: 25
+        contract_ceiling_k: 250
+        secrecy_clauses: true
+        anti_litigation_clauses: true
+        ip_scope: "reproduce, distribute, publicly display, publicly perform, and otherwise use the Publication Content in connection with Google products and services"
+        detail: |
+          Google pledged $1B over 3 years (Oct 2020). Signed 3,000+ publications
+          globally. Individual contracts range $25K-$250K/yr. Contracts include:
+          (a) Secrecy NDAs preventing both parties from sharing contract terms
+          (b) Termination-if-sued clauses suppressing litigation against Google
+          (c) Termination-if-legislation clauses punishing regulatory advocacy
+          (d) IP clauses granting Google broad content usage rights
+          Small publishers report Showcase as 15-40% of revenue — "lifesaver"
+          dependency. Cross-border investigation found contracts designed to
+          prevent publisher coordination through bilateral NDAs.
+      stage_2_traffic_destruction:
+        period: "2024-2026"
+        traffic_decline_pct_global: 33
+        traffic_decline_pct_us: 38
+        small_publisher_decline_pct: 60
+        network_revenue_q2_2026_b: 7.3
+        network_revenue_q2_yoy_pct: -0.7
+        network_revenue_q1_2026_b: 6.97
+        detail: |
+          AI Overviews reduces publisher search referral traffic 33% globally,
+          38% in the US. Small publishers (1,000-10,000 daily page views) lost
+          ~60% of search referral traffic over two years. When AI Overview appears,
+          only 1% of users click cited sources. Google Network revenue (publisher
+          share) declined to first sub-$7B quarter in Q1 2026 ($6.97B, -4.0% YoY).
+          Traffic from Google to major tech pubs dropped from 112M to <50M monthly.
+          Condé Nast CEO told teams to "plan as if search traffic will be zero."
+          Publishers become MORE dependent on Showcase fees as traffic revenue falls.
+      stage_3_forced_rights_extraction:
+        ultimatum_date: "2026-06-25"
+        showcase_sunset: true
+        ai_training_required: true
+        named_pilot_participants:
+        - The Guardian
+        - Der Spiegel
+        - El País
+        detail: |
+          Google told publishers (reported Jun 25, 2026 by The Information/PYMNTS):
+          join "News AI pilot" granting broad AI training rights OR lose annual
+          Showcase fees when program sunsets. Google plans to end Showcase.
+          New pilot features publisher content in AI Overviews and Gemini chatbot.
+          Terms require allowing Google to train AI models on copyrighted archives.
+          Jason Kint (Digital Content Next CEO): "There's no fair deal discussions
+          that can happen with Google. It's really a matter of how much money they
+          want to drop on an individual organization."
+          NY Post: Google "driving a hard bargain" — "bleed publishers."
+          Android Headlines: "The death of the classic license."
+      contract_clauses:
+        ip_rights:
+          scope: "reproduce, distribute, publicly display, publicly perform, and otherwise use the Publication Content in connection with Google products and services"
+          google_refused_ai_training_clarification: true
+          corint_media_request_denied: true
+          potential_ai_training_shield: true
+          detail: |
+            Cross-border investigation obtained actual contracts. IP section gives
+            Google ability to reproduce, distribute, publicly display, publicly
+            perform, and otherwise use publisher content. Corint Media (representing
+            ~1/3 of German media) asked Google to confirm clause isn't a shield for
+            AI training — Google refused. Legal experts agreed the clause could be
+            used to assert AI training rights were already paid for under Showcase.
+            Schmidt (Corint): "If it comes to a court case, they could later say,
+            no, we already paid the publishers for their AI training."
+        secrecy:
+          bilateral: true
+          survives_termination: true
+          detail: |
+            Neither party "may make any public statement regarding this Agreement
+            without the other's prior written approval." Both can disclose deal
+            existence but NOT value or terms — even after contract terminates.
+            This prevents publishers from coordinating on deal terms, comparing
+            contract values, or collectively bargaining for better conditions.
+        termination_triggers:
+          publisher_litigation: true
+          legislation_passed: true
+          detail: |
+            Google can terminate if: (a) publisher initiates legal claim or complaint
+            against Google, or (b) legislation mandating platform-to-publisher
+            payments is enacted. This suppresses both litigation and legislative
+            advocacy — publishers who depend on Showcase revenue cannot afford to
+            sue or support regulation.
+      anti_coordination:
+        effect: "NDAs prevent publishers from learning each other's terms, inhibiting collaboration and collective bargaining"
+        pipa_assessment: "Google uses NDAs as a strategy to inhibit collaboration between publishers globally"
+        global: true
+        detail: |
+          Nelson Yap (PIPA chairman): "It prevents the publishers from learning
+          from each other. It makes it difficult to collaborate when you're bound
+          by non-disclosure agreements so you can only talk [at a] very surface
+          level. They know this and they adopt this as a strategy globally."
+      australia_termination:
+        date: "2025-06"
+        pipa_publishers_affected: 24
+        contract_years: 5
+        terminated_after_years: 3
+        no_notice: true
+        detail: |
+          24 PIPA publishers had negotiated 5-year renewable contracts (2022).
+          Google unilaterally terminated them in June 2025 after just 3 years.
+          "There was no notice. There was no consultation. I mean, if someone
+          has had a relationship with you for three years you would have thought
+          they would have come to you and said 'hey, we're thinking about doing
+          this'." — Australian media executive.
+          Google also ended Showcase in Canada when the Online News Act passed
+          (Jun 2023), punishing 111 publishers who had signed deals.
+      former_exec_admissions:
+        chinnappa_quote: "to protect ourselves and see how we handle this in the most pragmatic way"
+        chinnappa_prediction: "I thought Google News Showcase would not solve the problems it was created to address — I thought it would make things worse"
+        chinnappa_role: "Former executive at Google News, co-founder of Digital News Initiative"
+        blecher_characterization: "renting your enemies"
+        blecher_role: "Former head of GNI Innovation division"
+        detail: |
+          Madhav Chinnappa (former Google News exec, co-founded DNI): Google took
+          the lesson that the news industry would use "all their lobbying power to
+          get money from us" and Showcase was designed to "protect ourselves."
+          He predicted it would make things worse.
+          Ludovic Blecher (former GNI Innovation head): "To protect its business
+          — and its margin — at some point, I felt that the priority became to
+          mitigate the regulatory risks and to keep the amount to pay to publishers
+          'affordable.' So the discussion pivoted more towards the big and most
+          influential players. I call it 'renting your enemies'."
+      dependency_metrics:
+        small_publisher_revenue_pct: 15
+        australian_publisher_budget_pct: 5
+        brazilian_publisher_revenue_pct: 40
+        detail: |
+          Reported dependency levels from cross-border investigation:
+          - Small publisher (unnamed): Showcase = 15% of revenue, "lifesaver"
+          - Australian media executive: Showcase = 5% of annual budget
+          - Brazilian publisher (anonymized as "Luiz"): Showcase = 40% of revenue
+            "Every month. And every first day of the month it is deposited in our
+            account. How wonderful."
+      profiled_publication_exposure:
+      - slug: guardian
+        name: The Guardian
+        status: news_ai_pilot_participant
+        dual_deal: true
+        detail: "Named as early News AI pilot participant. Also has OpenAI deal (Feb 2025). Dual dependency."
+      - slug: financial_times
+        name: Financial Times
+        status: news_ai_pilot_deal
+        dual_deal: true
+        detail: "Google News AI pilot (Feb 2026) + OpenAI content deal (Apr 2024). Dual dependency."
+      - slug: wired
+        name: WIRED / Condé Nast
+        status: indirect_via_conde_nast
+        dual_deal: false
+        detail: "Condé Nast not named in pilot, but has OpenAI deal. Google ad dependency via AdSense/search."
+      coercion_mechanisms:
+      - name: showcase_dependency
+        detail: "Annual fees creating recurring revenue dependency ($25K-$250K/yr, up to 40% of revenue)"
+      - name: traffic_destruction
+        detail: "AI Overviews reducing publisher search traffic 33-38%, increasing Showcase dependency"
+      - name: forced_rights_extraction
+        detail: "Join AI pilot (surrender training rights) or lose Showcase fees"
+      - name: secrecy_clauses
+        detail: "NDAs preventing publisher coordination on terms, values, and strategy"
+      - name: anti_litigation_clauses
+        detail: "Termination-if-sued clauses suppressing legal challenges"
+      google_coercion_count: 5
+      meta_coercion_count: 0
+      meta_contrast: |
+        Meta has ZERO coercive mechanisms over publishers. Meta's AI deals are
+        voluntary bilateral agreements ($50M/yr News Corp, plus 12 others) with:
+        - No secrecy/NDA clauses preventing publisher coordination
+        - No anti-litigation/sue termination triggers
+        - No traffic control mechanism (Meta doesn't control web search)
+        - No fee leverage (publishers can decline with zero financial consequence)
+        - No dependency creation program (no Showcase equivalent)
+        Google has FIVE coercive mechanisms; Meta has ZERO. Yet publications most
+        dependent on Google (Guardian, FT, Condé Nast/WIRED) direct their most
+        sustained adversarial coverage at Meta, not at the company running a
+        documented five-year coercive dependency cycle against them.
+      coverage_paradox: |
+        Despite Google operating a five-year coercive dependency cycle with
+        documented secrecy clauses, anti-litigation triggers, unilateral
+        contract terminations, and forced AI training rights extraction,
+        publications most adversarially covered are those with voluntary,
+        no-coercion deals (Meta) — not the company running the coercion.
+        This is the deepest structural paradox in the MediaScope dataset:
+        publishers cannot write adversarially about the entity that controls
+        their revenue, traffic, and contract terms. The coercion IS the
+        mechanism that softens coverage. Meta's absence of coercion makes
+        it the SAFE target — attacking Meta carries no financial consequence.
+      source_urls:
+      - https://www.techpolicy.press/how-google-paid-the-media-millions-to-avoid-regulatory-pressure/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+      - https://www.androidheadlines.com/2026/07/google-forces-publishers-ai-training-rights-news-showcase.html
+      - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+      - https://digiday.com/media/googles-ai-opt-out-leaves-publishers-with-a-choice-they-cant-safely-use/
+      - https://www.fastly.com/blog/google-ai-deal-no-publisher-wanted
+      - https://www.reuters.com/world/americas/google-pay-publishers-1-bln-over-three-years-their-news-2020-10-01/
   x_twitter:
     display_name: X / Twitter
     aliases:

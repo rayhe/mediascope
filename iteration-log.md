@@ -1,4 +1,25 @@
 # MediaScope Iteration Log
+## 2026-08-08 02:00 PT — Type C: Financial Incentive Mapping — Google's Five-Year Coercive Dependency Cycle
+
+**Finding:** Google's three-stage coercive extraction model documented by cross-border "Invisible Hand of Big Tech" investigation (Tech Policy Press, Sep 2025):
+
+1. **Stage 1 (2020-2024): Dependency Creation** — $1B News Showcase, 3,000+ publishers ($25K-$250K/yr), secrecy NDAs, anti-litigation clauses, broad IP rights. Former Google exec Chinnappa: Showcase was to "protect ourselves." Former GNI head Blecher: "renting your enemies."
+2. **Stage 2 (2024-2026): Traffic Destruction** — AI Overviews reduced publisher traffic 33-38% globally, making publishers MORE dependent on Showcase fees.
+3. **Stage 3 (Jun 2026): Forced Rights Extraction** — Join "News AI pilot" granting AI training rights OR lose Showcase fees. Guardian, Der Spiegel, El País named as pilot participants.
+
+**Key contrast:** Google has 5 coercive mechanisms; Meta has 0. Yet Meta gets most adversarial coverage.
+
+**Deliverables:**
+- `tests/test_google_showcase_coercive_cycle_aug8.py` — 50 tests, 10 classes, all passing
+- `profiles/competitor-entities.yaml` — `showcase_coercive_cycle` section under `google`
+- `profiles/competitor-coverage-research.yaml` — `google_showcase_coercive_cycle` finding
+- README.md + ARCHITECTURE.md updated (220 files, 6040 tests)
+- **124/124** structural consistency tests passing
+
+**Sources:** Tech Policy Press (Sep 2025), PYMNTS (Jun 2026), Android Headlines (Jul 2026), NY Post (Jun 2026), Digiday, Fastly, Reuters (Oct 2020)
+
+### Stats: 6040 tests, 220 files, 0 failures
+
 ## 2026-08-08 01:00 PT — Type B: Kevin Roose (NYT → Independent) — Triple Professional Identity Capture
 
 **Rotation:** B (Journalist Cross-Entity Tracking)

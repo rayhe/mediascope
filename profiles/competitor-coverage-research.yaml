@@ -4122,4 +4122,29 @@ publications:
     test_file: tests/test_nyt_google_traffic_cannibalization_paradox_aug8.py
     test_count: 43
     date_added: 2026-08-08
+  google_showcase_coercive_cycle:
+    publication: cross-publication
+    finding_type: financial_incentive_mapping
+    finding_summary: |
+      Google's five-year coercive dependency cycle documented by cross-border
+      investigation "The Invisible Hand of Big Tech." Three stages: (1) Showcase
+      dependency creation (2020, $1B pledge, 3,000+ publishers, $25K-$250K/yr
+      contracts with secrecy NDAs and anti-litigation clauses), (2) AI Overviews
+      traffic destruction (2024-2026, 33-38% publisher traffic decline, making
+      publishers MORE dependent on Showcase), (3) forced AI training rights
+      extraction (Jun 2026, join pilot granting training rights or lose Showcase
+      fees). Former Google exec: Showcase designed to "protect ourselves" from
+      regulation. Former GNI head: "renting your enemies." Google has FIVE
+      coercive mechanisms over publishers; Meta has ZERO. Yet Meta receives the
+      most adversarial coverage from publications trapped in Google's cycle.
+    google_coercion_mechanisms: 5
+    meta_coercion_mechanisms: 0
+    source_urls:
+    - https://www.techpolicy.press/how-google-paid-the-media-millions-to-avoid-regulatory-pressure/
+    - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+    - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+    - https://www.androidheadlines.com/2026/07/google-forces-publishers-ai-training-rights-news-showcase.html
+    test_file: tests/test_google_showcase_coercive_cycle_aug8.py
+    test_count: 52
+    date_added: 2026-08-08
 research_period: 2024-08-01 to 2026-08-08
