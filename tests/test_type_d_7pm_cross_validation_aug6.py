@@ -176,10 +176,14 @@ class TestAtlanticSilenceCrossFile(unittest.TestCase):
         atlantic_research = self.research['publications']['atlantic']
         self.assertIn('apple_v_openai_editorial_silence', atlantic_research)
 
-    def test_silence_mentions_27_days(self):
-        """Silence duration documented as 27 days."""
+    def test_silence_mentions_day_count(self):
+        """Silence duration documented with a day count >= 27 (grows as silence continues)."""
         silence = self.research['publications']['atlantic']['apple_v_openai_editorial_silence']
-        self.assertIn('27', str(silence.get('description', '')))
+        desc = str(silence.get('description', ''))
+        import re
+        day_counts = [int(m) for m in re.findall(r'(\d+)\s*days?', desc)]
+        self.assertTrue(any(d >= 27 for d in day_counts),
+                        f"Expected silence >= 27 days, found day counts: {day_counts}")
 
     def test_atlantic_has_apple_relationship(self):
         """Atlantic profile has Apple competitor relationship."""

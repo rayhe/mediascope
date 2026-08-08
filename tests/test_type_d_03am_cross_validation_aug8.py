@@ -343,10 +343,13 @@ class TestFinancialAmplificationModelIntegrity:
         """Meta should have the fewest coercive publisher mechanisms."""
         meta = self.entities['entities']['meta']
         google = self.entities['entities']['google']
-        meta_str = str(meta).lower()
+        # Google has its own showcase_coercive_cycle section; Meta does not
+        assert 'showcase_coercive_cycle' not in meta, \
+            "Meta should not have its own showcase_coercive_cycle section"
+        assert 'showcase_coercive_cycle' in google, \
+            "Google should have showcase_coercive_cycle section"
+        # Meta may reference Showcase comparatively, but should not operate it
         google_str = str(google).lower()
-        # Google has showcase (3000+ pubs), Meta doesn't
-        assert 'showcase' not in meta_str
         assert 'showcase' in google_str
 
     def test_google_coercive_count_exceeds_meta(self):

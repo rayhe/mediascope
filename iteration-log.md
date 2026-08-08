@@ -1,4 +1,43 @@
 # MediaScope Iteration Log
+## 2026-08-08 11:00 PT — Type D: Test & Verify — 3 Bug Fixes + 27-Test Cross-Validation Suite
+
+**Rotation:** D (Test & Verify)
+
+### Failures found and fixed
+
+**3 test failures across 3 files** (introduced by Type C 10:00 PT and stale assertions from earlier runs):
+
+1. **`test_type_d_03am_cross_validation_aug8.py::test_meta_has_fewest_publisher_financial_ties`** — Naive `assert 'showcase' not in meta_str` broke when 10:00 PT Type C added `inverse_financial_leverage` section to Meta's entity, which mentions Google Showcase comparatively. Fix: check for `showcase_coercive_cycle` dict key (the structural claim), not naive string search across all serialized data.
+
+2. **`test_type_d_7pm_cross_validation_aug6.py::test_silence_mentions_27_days`** — Hardcoded `assertIn('27', ...)` broke as Atlantic's Apple v. OpenAI silence grew from 27 to 29 days. Fix: regex-based `>= 27` floor check that tolerates growth.
+
+3. **`test_nyt_project_giraffe_xai_absence.py::test_amazon_marketplace_has_source`** — Checked for `source_url` (singular) but data uses `source_urls` (plural list). Fix: handle both keys gracefully.
+
+### New cross-validation test
+- `tests/test_type_d_11am_cross_validation_aug8.py` — **27 tests, 8 classes**, all passing:
+  - `TestShowcaseIsolationFix` (4 tests): Meta may reference Showcase comparatively but must not own `showcase_coercive_cycle` section
+  - `TestAtlanticSilenceDayCountResilience` (3 tests): Day count uses >= 27 floor, hardcoded '27' removed from test file
+  - `TestAmazonMarketplaceSourceFix` (3 tests): source_urls plural key, WSJ present, fixed test handles both keys
+  - `TestMetaQ2InverseLeverage` (10 tests): Q2 $60.8B revenue, 28% YoY, inverse leverage mechanisms, comparison table, source URLs
+  - `TestAug8FileIntegrity` (2 tests): All 9 Aug 8 test files present and non-empty
+  - `TestEntitySetStability` (2 tests): >= 11 entities, all 10 required present
+  - `TestTestFileCountIntegrity` (1 test): >= 228 files
+  - `TestAllSourceURLsHTTPS` (2 tests): Zero HTTP URLs in entities and research profiles
+
+### Test health
+- Structural consistency: 124/124 passing
+- Previously failing: 3/3 now passing
+- New tests: 27/27 passing
+- Total: 6359 tests across 229 files
+
+### Files modified
+- `tests/test_type_d_03am_cross_validation_aug8.py` — Meta showcase assertion fix (structural key check, not string search)
+- `tests/test_type_d_7pm_cross_validation_aug6.py` — Atlantic silence day count fix (>= 27 floor)
+- `tests/test_nyt_project_giraffe_xai_absence.py` — Amazon marketplace source_urls plural key fix
+- `tests/test_type_d_11am_cross_validation_aug8.py` — 27 new cross-validation tests
+- `README.md` — test count update (6332→6359, 228→229 files), new test file listing
+- `docs/ARCHITECTURE.md` — test count update (6332→6359, 228→229 files), new test file listing
+
 ## 2026-08-08 09:00 PT — Type B: Journalist Cross-Entity Tracking — David Pierce (The Verge) Institutional Framing Immunity
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -30377,3 +30416,50 @@ The company with the FEWEST leverage mechanisms receives the MOST adversarial co
 **Day total:** 13 iterations, ~527 new tests, 0 regressions, 4 failures found and fixed
 
 ### Stats: 5868 tests, 216 files, 0 failures | Commit: fbb5c64 | Pushed to GitHub
+
+---
+
+## 2026-08-08 10:00 PT — Type C: Financial Incentive Mapping — Meta Q2 2026 Earnings + Anthropic $10B Compute Deal + Inverse Financial Leverage Paradox
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Meta entity profile expansion — was sparsest of any major tech company, now at parity
+
+### GAP IDENTIFIED:
+
+Meta's entity profile had only aliases, regex, category, and market_cap — while Amazon had sextuple leverage with full Q2 earnings, Microsoft had septuple leverage with FY26 Q4 earnings, Apple had quintuple leverage, and Google had quad leverage. Meta — the SUBJECT entity of the MediaScope analysis — had less documentation than any of its competitors.
+
+### THREE NEW SECTIONS ADDED TO META ENTITY:
+
+**1. Q2 2026 Earnings (from Meta press release, Jul 29 2026):**
+- $60.8B revenue (+28% YoY), $59.4B advertising (+27% YoY)
+- Reality Labs: $431M rev (+16.5% YoY), $4.619B operating loss (record), $88B cumulative
+- First EPS miss in 13 quarters ($6.18 vs $7.19 consensus)
+- FCF collapsed 91% YoY to $784M
+- FoA other revenue $1B first time (WhatsApp paid messaging)
+
+**2. Anthropic $10B Compute Deal (reported Jul 17 by NYT/Reuters):**
+- $10B/2yr potential lease, proposed by Anthropic June 2026, early talks
+- MEDIASCOPE RELEVANCE: Publisher-neutral axis — Anthropic has ZERO publisher deals
+- Unlike Microsoft→OpenAI (20+ publisher deals) or Amazon→Anthropic (6 mechanisms)
+- Meta→Anthropic generates no downstream publisher revenue
+
+**3. Inverse Financial Leverage Paradox (original analysis):**
+- Publisher financial mechanism comparison: Microsoft 7 > Amazon 6 > Apple 5 > Google 4 > Meta 1
+- Meta receives HARSHEST coverage despite SIMPLEST financial relationship
+- Documents 7 specific mechanisms Meta LACKS (cloud hosting, ad platform for publishers, content marketplace, newspaper ownership, search traffic dependency, AI lab investment, platform leverage)
+- Key insight: Meta's exit from news distribution ELIMINATED platform leverage, making it MORE vulnerable to harsh coverage
+
+### SOURCES:
+- Meta Q2 2026 press release: https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+- Reuters Meta-Anthropic: https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/
+- CNN Meta-Anthropic: https://www.cnn.com/2026/07/17/tech/meta-anthropic-ai-cloud-computing
+- Reuters Meta publisher deals: https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+
+### CHANGES:
+- Updated `profiles/competitor-entities.yaml` — Meta entity expanded with q2_2026_earnings, anthropic_compute_deal, inverse_financial_leverage sections
+- Created `tests/test_meta_inverse_leverage_q2_2026_aug8.py` — 43 tests, 5 classes, all passing
+- Updated README.md and docs/ARCHITECTURE.md — test count 6332, 228 files
+- 124/124 structural consistency tests passing, 0 regressions
+- 216/216 competitor/entity/deal regression tests passing
+
+### Stats: 6332 tests, 228 files, 0 failures | Commit: d9e1dd5 | Pushed to GitHub

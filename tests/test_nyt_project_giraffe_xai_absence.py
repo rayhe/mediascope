@@ -273,8 +273,11 @@ class TestAmazonMarketplaceEmerging:
 
     def test_amazon_marketplace_has_source(self, entities):
         am = entities['meta_ai_deals']['cross_platform_summary']['amazon_marketplace_emerging']
-        assert 'source_url' in am
-        assert 'wsj' in am['source_url'].lower()
+        # Data may use source_urls (list) or source_url (string)
+        urls = am.get('source_urls', [am.get('source_url', '')])
+        urls_str = str(urls).lower()
+        assert urls, "Amazon marketplace should have source URL(s)"
+        assert 'wsj' in urls_str
 
 
 # ===================================================================
