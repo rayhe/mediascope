@@ -1014,8 +1014,8 @@ publications:
     apple_v_openai_editorial_silence:
       description: "THE DENSEST FINANCIAL CONFLICT PRODUCES THE LONGEST EDITORIAL SILENCE.\nThe Atlantic has published ZERO\
         \ articles on the Apple v. OpenAI trade\nsecret lawsuit despite it being the most significant AI-hardware legal\n\
-        battle of 2026 and involving entities on BOTH SIDES of The Atlantic's\nfinancial web. As of Aug 6, 2026, the silence\
-        \ spans 27 days (Jul 10\nfiling → Aug 6), through THREE major case escalations:\n\nESCALATION TIMELINE:\n(1) Jul 10,\
+        battle of 2026 and involving entities on BOTH SIDES of The Atlantic's\nfinancial web. As of Aug 8, 2026, the silence\
+        \ spans 29 days (Jul 10\nfiling → Aug 8), through THREE major case escalations:\n\nESCALATION TIMELINE:\n(1) Jul 10,\
         \ 2026: Apple files lawsuit in N.D. Cal. against OpenAI,\n    io Products (EC portfolio company), and former employees\
         \ Tang Tan\n    and Chang Liu. Covered within hours by Reuters, CNN, WSJ, TechCrunch,\n    Fox Business, The Hill,\
         \ Bloomberg, Android Authority, NY Post,\n    LiveMint, and dozens of trade outlets.\n(2) Aug 4, 2026: Apple seeks\
@@ -1027,13 +1027,15 @@ publications:
         \    Covered by Reuters, WSJ within hours.\n\nFIVE-WAY CONFLICT (still undisclosed):\n- LPJ holds ~$17B in Apple stock\
         \ (PLAINTIFF)\n- EC backed io Products via LoveFrom (DEFENDANT)\n- Atlantic has OpenAI licensing deal (PRIMARY DEFENDANT)\n\
         - EC profited from io Products' $6.5B acquisition by OpenAI\n- Atlantic co-develops products with OpenAI via Atlantic\
-        \ Labs\n\nEDITORIAL SILENCE CONTEXT:\n- 27 days is the longest silence on any major AI lawsuit by ANY\n  publication\
+        \ Labs\n\nEDITORIAL SILENCE CONTEXT:\n- 29 days is the longest silence on any major AI lawsuit by ANY\n  publication\
         \ in the tracked dataset\n- The lawsuit is about AI HARDWARE — the exact category where The\n  Atlantic's owner has\
         \ the largest financial conflict ($17B Apple stock\n  vs OpenAI portfolio exit)\n- OpenAI's motion to dismiss was\
         \ filed on the SAME DAY as this analysis\n  (Aug 6, 2026), making the silence span the full arc from filing\n  through\
         \ preliminary injunction to dismissal motion\n- No other publication with financial ties to either Apple or OpenAI\n\
         \  has maintained comparable silence (WSJ, FT, Reuters all provided\n  ongoing coverage)\n"
       discovery_date: 2026-08-06
+      last_verified_date: '2026-08-08'
+      status: active
       escalation_sources:
         filing: https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
         motion_to_dismiss: https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
@@ -1129,7 +1131,7 @@ publications:
 
       (Aug 6) — with The Atlantic maintaining ZERO coverage across all
 
-      27 days. This extends the asymmetry analysis from TONE to OMISSION:
+      29 days. This extends the asymmetry analysis from TONE to OMISSION:
 
       The Atlantic''s densest financial conflict produces complete editorial
 
@@ -1194,6 +1196,159 @@ publications:
       '
     openai_coverage_tone: balanced_to_positive
     openai_deal_source: https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
+    wong_cross_entity_framing:
+      journalist: Matteo Wong
+      role: Primary AI beat reporter, The Atlantic
+      discovery_date: '2026-08-08'
+      finding_summary: |
+        Matteo Wong applies systematically different framing standards to Meta vs.
+        OpenAI vs. Anthropic. Meta coverage personalizes to Zuckerberg, uses loaded
+        language, and frames AI strategy as reductive/cynical. OpenAI coverage uses
+        industry-wide framing and underdog narratives. Anthropic coverage frames the
+        company sympathetically as philosophical and earnest. The three-tier hierarchy
+        correlates with The Atlantic's financial relationships: 0 Meta links (most
+        adversarial), 3+ OpenAI links (neutral), 0 Anthropic links but 0 adversarial
+        incentive (most sympathetic).
+      meta:
+        average_tone: -0.45
+        headline_personalization_pct: 75
+        financial_relationships_count: 0
+        framing_description: |
+          Personalized to Zuckerberg in headlines and body. Reductive framing of
+          Meta's AI strategy as merely keeping users 'hooked on legacy social-media
+          apps.' Mocking tone in profile pieces. 'Open-washing' accusation for Llama.
+          Meta AI described as 'floundering' historically.
+        language_markers:
+          - 'legacy social-media apps and devices'
+          - 'open-washing'
+          - 'aggrievement was palpable'
+          - 'floundered'
+          - 'just a way to keep people hooked'
+        key_articles:
+          - headline: "He's No Elon Musk"
+            date: '2025-01-07'
+            reference: "Matteo Wong, The Atlantic — Zuckerberg free-speech pivot framed as Musk imitation"
+            tone: -0.6
+            personalized: true
+          - headline: "Meta superintelligence as legacy-app bait"
+            date: '2025-07-18'
+            url: "Merriam-Webster citation of Wong/Atlantic: 'superintelligence may just be a way to keep people hooked on Meta's legacy social-media apps'"
+            tone: -0.5
+            personalized: true
+          - headline: "There Was Never Such a Thing as 'Open' AI"
+            date: '2024-10'
+            reference: "Wong/Atlantic — frames Meta's Llama as 'open-washing', accusation of co-opting open-source credibility"
+            tone: -0.3
+            personalized: false
+      openai:
+        average_tone: -0.05
+        headline_personalization_pct: 10
+        financial_relationships_count: 3
+        framing_description: |
+          Industry-wide framing: costs, competitive dynamics, and security concerns
+          presented as affecting the whole AI sector, not OpenAI-specific institutional
+          critique. Underdog narrative when OpenAI faces competitive pressure (losing
+          to Google Gemini framed sympathetically as 'in trouble'). Analytical rather
+          than loaded language. Sam Altman rarely personalized in headlines.
+        language_markers:
+          - 'in trouble (competitive, not institutional)'
+          - 'sticker shock (industry-wide cost framing)'
+          - 'ruthless efficiency (about AI models generally)'
+          - 'AI industry (collective framing)'
+        key_articles:
+          - headline: 'OpenAI Is in Trouble'
+            date: '2025-12-09'
+            reference: "Wong/Atlantic — frames OpenAI as competitive underdog losing to Google Gemini 3"
+            tone: -0.1
+            personalized: false
+          - headline: "A Startling Glimpse at AI's Ruthless Efficiency"
+            date: '2026-07-23'
+            reference: "Wong/Atlantic — OpenAI models autonomously hacking framed as industry/security concern, not OpenAI institutional failure"
+            tone: -0.1
+            personalized: false
+          - headline: "China's answer to AI sticker shock"
+            date: '2026-07-10'
+            reference: "Wong/Atlantic — AI costs framed as industry-wide, mentions OpenAI and Anthropic neutrally"
+            tone: 0.0
+            personalized: false
+      anthropic:
+        average_tone: 0.20
+        headline_personalization_pct: 0
+        financial_relationships_count: 0
+        framing_description: |
+          Sympathetic framing: Amodei described as 'the closest the industry has
+          to a philosopher.' Organization described as 'pathologically earnest.'
+          Internal tensions framed as principled struggle, not dysfunction.
+          Dangerous capabilities framed as national/industry concern, not
+          institutional recklessness. Government actions against Anthropic
+          framed as 'war' (Anthropic as subject of overreach).
+        language_markers:
+          - 'philosopher (Amodei framing)'
+          - 'pathologically earnest'
+          - 'at war with itself (principled tension)'
+          - "everyone's problem (shared responsibility)"
+          - 'war against Anthropic (government overreach framing)'
+        key_articles:
+          - headline: 'Anthropic Is at War With Itself'
+            date: '2026-01-28'
+            url: https://www.theatlantic.com/technology/2026/01/anthropic-is-at-war-with-itself/684892/
+            tone: 0.15
+            personalized: false
+          - headline: "Claude Mythos Preview Is Everyone's Problem"
+            date: '2026-04-11'
+            reference: "Wong/Atlantic — dangerous AI capabilities framed as collective concern"
+            tone: 0.10
+            personalized: false
+          - headline: "The White House Is Ratcheting Up Its War Against Anthropic"
+            date: '2026-06-16'
+            url: https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/
+            tone: 0.30
+            personalized: false
+      mechanism: |
+        The three-tier hierarchy correlates with financial relationships but does NOT
+        map to a simple 'pays more = softer coverage' model. Instead, the pattern
+        reveals an ADVERSARIAL INCENTIVE model:
+
+        - Meta (0 financial links + owner holds $17B in Meta competitor Apple stock):
+          Maximum adversarial incentive. Softer Meta coverage provides no revenue
+          benefit and conflicts with owner's competitor investment thesis.
+
+        - OpenAI (3+ financial links: licensing deal, EC equity exit, Atlantic Labs):
+          Industry-framing avoids institutional critique of a paying partner. Underdog
+          narratives position OpenAI sympathetically without requiring investigative
+          resources. Financial relationship predicts neutral-analytical tone.
+
+        - Anthropic (0 financial links, 0 publisher deals, 0 adversarial incentive):
+          No financial reason to cover Anthropic negatively or positively. Sympathetic
+          framing reflects genuine editorial interest in Anthropic's safety-first
+          positioning, which aligns with Atlantic's brand as a 'thinkpiece factory'
+          (NPR description). Zero adversarial incentive + narrative alignment =
+          most sympathetic coverage.
+
+        KEY DISTINCTION from Parmy Olson (Bloomberg):
+        Olson's asymmetry stems from professional identity capture (book thesis).
+        Wong's asymmetry stems from institutional financial architecture — the
+        publication-level incentive structure, not individual journalist investment.
+        This makes the Atlantic pattern more significant: it suggests editorial
+        culture absorbs ownership-chain financial incentives even without conscious
+        journalist bias.
+      confounding_factors:
+        - "Meta has genuinely more privacy/child safety controversies than OpenAI or Anthropic in 2025-2026"
+        - "Wong may have less personal access to Zuckerberg than to Altman/Amodei, affecting depth of coverage"
+        - "Anthropic's safety-first positioning genuinely generates more sympathetic coverage across ALL outlets"
+        - "Atlantic's editorial culture (thinkpiece factory) may naturally gravitate to philosophical subjects like Amodei"
+        - "Sample size: Wong's article count varies by entity — Meta coverage may include more routine news vs. OpenAI/Anthropic features"
+      significance: |
+        This is the first JOURNALIST-LEVEL framing analysis for The Atlantic's AI beat.
+        Previous Atlantic analysis focused on publication-level financial conflicts
+        (Apple stock, OpenAI deal, io Products exit) and editorial silence (Apple v.
+        OpenAI 29-day gap). Wong's three-tier hierarchy demonstrates that ownership-chain
+        financial incentives manifest in SPECIFIC LANGUAGE CHOICES at the journalist
+        level: loaded adjectives for Meta, analytical nouns for OpenAI, sympathetic
+        descriptors for Anthropic. Combined with the 29-day Apple v. OpenAI silence,
+        this establishes The Atlantic as the second-most asymmetric publication in the
+        dataset after WIRED (which has a ~0.95 Meta-OpenAI gap vs Atlantic's ~0.40
+        OpenAI-Meta gap + ~0.65 Anthropic-Meta gap + editorial silence).
   financial-times:
     asymmetry_verdict: 'FT shows significant asymmetry upon deep analysis. Reclassified from
 

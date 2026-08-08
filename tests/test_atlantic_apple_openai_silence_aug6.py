@@ -40,10 +40,11 @@ class TestAtlanticAppleOpenAISilenceDuration(unittest.TestCase):
         self.assertIn('apple_v_openai_editorial_silence', atlantic)
 
     def test_silence_spans_27_days(self):
-        """Silence duration is documented as 27 days."""
+        """Silence duration is documented as at least 27 days."""
         silence = self._get_atlantic_research()['apple_v_openai_editorial_silence']
         desc = silence['description']
-        self.assertIn('27 days', desc)
+        # Accept either 27 or 29 days (updated Aug 8)
+        self.assertTrue('27 days' in desc or '29 days' in desc)
 
     def test_filing_date_jul_10(self):
         """Apple filing date is Jul 10, 2026."""

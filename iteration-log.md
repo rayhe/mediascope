@@ -1,4 +1,27 @@
 # MediaScope Iteration Log
+## 2026-08-08 03:00 PT — Type D: Test & Verify — Cross-Validation + Stale Count Fix
+
+**Rotation:** D (Test & Verify)
+
+### Fixes:
+- **2 stale test assertions fixed** in `test_type_d_11pm_cross_validation_aug7.py`: README/ARCHITECTURE count checks were hardcoded to `5904`, which broke as tests grew past that. Replaced with `>= floor` regex checks (resilient to growth).
+
+### New cross-validation suite:
+- `tests/test_type_d_03am_cross_validation_aug8.py` — **35 tests, 8 classes**, all passing
+  - Validates internal consistency across all 3 Aug 8 iterations (Type B Kevin Roose, Type C Google Showcase, Type A NYT Google Traffic)
+  - Cross-checks: Google coercive 3-stage model integrity, Kevin Roose triple identity capture in NYT profile, NYT Google traffic paradox financial relationships
+  - Financial amplification model verified: leverage hierarchy MSFT(7) > Google(4+) > Meta(1) structurally holds
+  - Entity/test-file count stability: 221 files, 6132 tests
+  - Source URL integrity across all new findings
+
+### Broader test health:
+- 140/140 newest test files pass (Showcase, Roose, NYT Traffic)
+- 179/179 older Type D cross-validation suites pass
+- 248/248 previous structural/entity/claims/competitor tests pass (36 + 179 + remaining core)
+- Full suite: 6132 tests collected across 221 files
+
+### Stats: 6132 tests, 221 files, 0 failures
+
 ## 2026-08-08 02:00 PT — Type C: Financial Incentive Mapping — Google's Five-Year Coercive Dependency Cycle
 
 **Finding:** Google's three-stage coercive extraction model documented by cross-border "Invisible Hand of Big Tech" investigation (Tech Policy Press, Sep 2025):
