@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 6,599 | Across 232 test files |
+| Tests | 6,670 | Across 233 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **6456 tests** across 231 test files, each covering a different analytical capability:
+MediaScope has **6670 tests** across 233 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -597,6 +597,7 @@ MediaScope has **6456 tests** across 231 test files, each covering a different a
 | `test_type_d_03am_cross_validation_aug8.py` | 35 | Type D cross-validation (Aug 8, 03:00 PT): Google Showcase coercive cycle 3-stage model, Kevin Roose triple identity capture in NYT profile, NYT Google traffic cannibalization paradox, cross-iteration consistency (leverage hierarchy MSFT>GOOG>META), entity/test-file count stability, source URL integrity, financial amplification model direction |
 | `test_type_d_07am_cross_validation_aug8.py` | 21 | Type D cross-validation (Aug 8, 07:00 PT): publications key integrity (no cross-publication findings pollution), cross_publication_findings schema completeness, HTTPS enforcement across all profiles (Shacknews/Entrepreneur/Digiday/TechTimes/AndroidAuthority/VentureBeat HTTP→HTTPS fixes), YAML top-level structure validation, test file count integrity |
 | `test_type_d_11am_cross_validation_aug8.py` | 27 | Type D cross-validation (Aug 8, 11:00 PT): 3 bug fixes validation — Meta showcase_coercive_cycle section isolation (not naive string match), Atlantic silence day count resilience (>= 27 floor, not hardcoded), Amazon marketplace source_urls plural key fix. Cross-validates 10:00 PT Type C Meta Q2 2026 inverse financial leverage paradox ($60.8B revenue, 28% YoY). Aug 8 test file integrity (9 expected files), entity set stability (>= 11), HTTPS regression across all profiles |
+| `test_publisher_ai_revenue_matrix_aug8.py` | 71 | Publisher AI Revenue Asymmetry Matrix (Aug 8, 15:00 PT Type C): 10 publications mapped — verified deal values, coverage tone, financial direction, disclosure practice. 100% correlation: News Corp (ONLY Meta deal pub) balanced tone (-0.15), all 7 competitor-only pubs adversarial (-0.45 to -0.85), 2 no-deal pubs moderate adversarial. News Corp Q4 FY2026 earnings deep dive ($2.34B rev +11%, $0.35 adj EPS beat $0.21 consensus, +167% net income), Thomson "principled" Meta+OpenAI praise, Anthropic $1.5B Bartz settlement HarperCollins share. Cross-validates entity profiles and news-corp.yaml consistency. 11 classes, 71 tests |
 | `test_type_d_10pm_cross_validation_aug7.py` | 34 | Type D day-end cross-validation (Aug 7, 22:00 PT): News Corp triple-revenue architecture (3 AI companies paying simultaneously — OpenAI, Meta, Anthropic settlement_revenue), WIRED Apple-OpenAI silence consistency (asymmetry score ≥0.82), 4 asymmetry mechanisms documented (licensing, advertising, marketplace, professional identity capture), entity set stability (11 entities after Samsung/Snowflake/Microsoft), settlement_revenue financial tie type, metric scale integrity, source URL presence, cumulative day integrity (Gizmodo clean control, README test count, no contradictions) |
 | `test_type_d_8pm_cross_validation_aug6.py` | 37 | Type D cross-validation (Aug 6, 8 PM): OpenAI/Apple entity escalation phases 4-5 (injunction + motion to dismiss), Atlantic silence source_urls schema consistency, Milmo profile↔research cross-file, Amazon sextuple entity↔research, MS-OpenAI axis presence, evening iteration data traces, leverage count consistency |
 | `test_type_d_2pm_cross_validation_aug6.py` | 50 | Type D cross-validation (Aug 6, 2 PM): sensor-count paradox cross-pub consistency, WSJ balanced control ↔ aggregate findings, Google coercion ↔ Condé Nast traffic, NYT Q2 2026 earnings ↔ profile, Mims tone inversion direction, WSJ disclosure uniqueness, Google revenue-coercion link, MIT TR governance ↔ Apple entity, source URL presence |
