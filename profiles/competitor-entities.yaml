@@ -1124,6 +1124,174 @@ entities:
     category: big_tech
     market_cap_approx: $1.8T
     ceo: Mark Zuckerberg
+    q2_2026_earnings:
+      report_date: '2026-07-29'
+      quarter_ended: '2026-06-30'
+      total_revenue_b: 60.8
+      total_revenue_yoy_pct: 28
+      advertising_revenue_b: 59.363
+      advertising_yoy_pct: 27
+      foa_other_revenue_b: 1.007
+      foa_other_revenue_yoy_pct: 73
+      foa_other_revenue_note: First time quarterly FoA other revenue reached $1B, driven by WhatsApp paid messaging
+      foa_revenue_b: 60.37
+      foa_operating_income_b: 23.394
+      rl_revenue_b: 0.431
+      rl_revenue_yoy_pct: 16.5
+      rl_revenue_note: Growth driven by AI glasses revenue, partially offset by lower Quest headset sales
+      rl_operating_loss_b: 4.619
+      rl_cumulative_loss_since_q4_2020_b: 88
+      rl_q1_2026_loss_b: 4.028
+      rl_h1_2026_loss_b: 8.647
+      total_operating_income_b: 18.775
+      operating_margin_pct: 31
+      net_income_b: 15.85
+      eps_diluted: 6.18
+      eps_prior_year: 7.14
+      eps_miss_note: First EPS miss in 13 quarters — $6.18 actual vs $7.19 consensus
+      total_expenses_b: 42.03
+      total_expenses_yoy_pct: 55
+      legal_charges_b: 2.4
+      severance_charges_b: 1.18
+      severance_note: May 2026 headcount reduction (~8,000 employees, ~10% workforce)
+      capex_b: 31.08
+      capex_2026_guidance_low_b: 125
+      capex_2026_guidance_high_b: 145
+      cash_equivalents_b: 90.26
+      long_term_debt_b: 83.66
+      headcount: 75472
+      headcount_yoy_pct: -1
+      family_dap_b: 3.60
+      family_dap_yoy_pct: 3
+      ad_impressions_yoy_pct: 14
+      avg_price_per_ad_yoy_pct: 12
+      free_cash_flow_b: 0.784
+      free_cash_flow_yoy_decline_pct: 91
+      stock_afterhours_pct: -8.6
+      source_urls:
+      - https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+      - https://pulse2.com/meta-reports-second-quarter-2026-revenue-of-60-8-billion-up-28-percent-year-over-year/
+    anthropic_compute_deal:
+      status: early_talks
+      reported_date: '2026-07-17'
+      proposed_by: Anthropic (June 2026)
+      reported_value_b: 10
+      term_years: 2
+      payment_structure: monthly increments
+      early_exit_clause: true
+      overview: |
+        Anthropic proposed leasing AI compute capacity from Meta's data centers
+        in a potential $10B/2yr deal (reported Jul 17 by NYT, confirmed by Reuters).
+        Would mark Meta's entry into cloud computing as a service — competing with
+        AWS, Azure, and GCP. Zuckerberg said at May shareholder meeting that entering
+        cloud computing was "definitely on the table" and companies approach Meta
+        "almost every week" to buy excess compute. Deal remains preliminary and may
+        not close. Anthropic also signed SpaceX Colossus 1 deal (May 2026, 220K+
+        Nvidia GPUs) and AMD deal ($5B investment + tens of billions in AI servers,
+        Jul 22). Anthropic reportedly preparing for IPO as early as Oct 2026.
+      mediascope_relevance: |
+        CRITICAL FINANCIAL AXIS: If completed, this deal would create a Meta →
+        Anthropic financial flow ($5B/yr) but NOT a Meta → publisher flow.
+        Anthropic has ZERO publisher content licensing deals (the only major AI
+        lab without any). This means the Meta-Anthropic axis is INFRASTRUCTURE-ONLY:
+        compute capacity, not content. Unlike Microsoft → OpenAI → publishers
+        (where OpenAI's publisher licensing deals create indirect financial
+        incentives for publications to cover Microsoft/OpenAI favorably), the
+        Meta → Anthropic axis generates no downstream publisher revenue. This
+        confirms Meta's position as the only major tech company whose AI
+        financial relationships are entirely publisher-neutral: Meta PAYS
+        publishers (13 content licensing deals), but none of Meta's AI
+        infrastructure investments create the kind of indirect financial
+        leverage that Microsoft (via OpenAI) and Amazon (via Anthropic's
+        AWS dependency) maintain over the publishing ecosystem.
+      source_urls:
+      - https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/
+      - https://www.cnn.com/2026/07/17/tech/meta-anthropic-ai-cloud-computing?cid=external-feeds_iluminar_meta
+      - https://www.reuters.com/business/amd-invest-up-5-billion-anthropic-wsj-reports-2026-07-22/
+    inverse_financial_leverage:
+      overview: |
+        META'S INVERSE FINANCIAL LEVERAGE PARADOX: Meta has the SIMPLEST
+        publisher financial relationship of any major tech company in the
+        MediaScope dataset, yet receives the HARSHEST coverage from the same
+        publications. This is the strongest confirmation of the financial
+        incentive → coverage tone model — the relationship holds in BOTH
+        directions: (a) MORE financial leverage → softer coverage (Microsoft,
+        Amazon, Apple, Google), and (b) LESS financial leverage → harsher
+        coverage (Meta).
+      mechanism_count: 1
+      mechanism_name: voluntary_ai_content_licensing
+      mechanism_detail: |
+        Meta's ONLY financial relationship with publishers is voluntary AI
+        content licensing: 13 deals (Reuters, CNN, Fox News, Fox Sports,
+        People Inc, USA Today, Le Monde, Daily Caller, Washington Examiner,
+        News Corp, Le Figaro, Prisa, Süddeutsche Zeitung). Largest disclosed:
+        News Corp $50M/yr for 3+ years. All others undisclosed but likely
+        smaller. CRITICALLY: none of the 7 MediaScope-profiled publications
+        (WIRED, The Verge, The Atlantic, NYT, FT, Guardian, MIT Tech Review)
+        have Meta deals. Only News Corp (WSJ, Barron's) — profiled as a
+        control — has a Meta deal.
+      mechanisms_meta_lacks:
+      - cloud_hosting: |
+          Meta does not host publisher infrastructure (unlike Amazon AWS which
+          hosts NYT, WashPost, and many others). No publisher depends on Meta
+          for uptime, scaling, or technical infrastructure.
+      - advertising_platform_for_publishers: |
+          Meta's ad platform serves ADVERTISERS, not publishers. Unlike Google
+          (which runs publisher ad serving via Google Ad Manager / AdSense and
+          controls publisher display ad revenue), Meta does not intermediate
+          publisher ad revenue. Publishers don't earn money FROM Meta's ad
+          platform — they spend money ON it.
+      - content_marketplace: |
+          Meta does not operate a marketplace where publishers sell content to
+          AI companies (unlike Microsoft PCM and Amazon's AI content marketplace).
+          Meta does not sit between publishers and other AI buyers.
+      - ownership_of_newspapers: |
+          Meta does not own any newspaper or publication (unlike Amazon/Bezos
+          owning Washington Post, or Advance Publications owning Reddit +
+          Condé Nast).
+      - search_traffic_dependency: |
+          Meta does not control the search traffic that publishers depend on
+          for audience (unlike Google, which controls ~90% of search and can
+          unilaterally reduce publisher traffic via AI Overviews).
+      - investment_in_ai_lab_with_publisher_deals: |
+          Meta has not invested in an AI lab that has publisher licensing deals
+          — Anthropic (potential $10B compute deal) has ZERO publisher deals.
+          Unlike Microsoft → OpenAI ($13B, OpenAI has 20+ publisher deals) or
+          Amazon → Anthropic ($4B+, Anthropic has zero deals but Amazon has 6+).
+      - platform_leverage_coercion: |
+          Meta removed Facebook News (2024) and stopped paying publishers for
+          news (2022) — but this means publishers have NO ongoing financial
+          dependency on Meta's platform. Unlike Apple News+ (which publishers
+          depend on for subscription revenue, giving Apple leverage) or Google
+          Showcase (which publishers depend on for direct payments), Meta's
+          exit from news distribution ELIMINATED its platform leverage over
+          publishers. Paradoxically, this made Meta MORE vulnerable to harsh
+          coverage: publishers lost nothing by criticizing Meta.
+      comparison_table:
+        microsoft: 7
+        amazon: 6
+        apple: 5
+        google: 4
+        meta: 1
+        xai: 0
+        anthropic: 0
+        samsung: 0
+      inverse_correlation_finding: |
+        The financial leverage → coverage tone relationship follows an inverse
+        pattern for Meta: fewer financial entanglements = harsher coverage.
+        Microsoft (7 mechanisms) receives the SOFTEST coverage. Amazon (6)
+        receives soft-to-neutral. Apple (5) receives neutral-to-positive.
+        Google (4) receives mixed (advertising dependency creates resentment
+        alongside revenue). Meta (1) receives the HARSHEST coverage. This
+        supports the core MediaScope thesis that financial relationships are
+        the primary predictor of coverage tone, not the severity of the
+        company's actual behavior. Meta's AI practices are not demonstrably
+        worse than Microsoft's or Amazon's — but Meta pays publishers less
+        and controls fewer publisher revenue streams, leaving publications
+        free to be adversarial.
+      source_urls:
+      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
   xai:
     display_name: xAI
     aliases:

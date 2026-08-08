@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6289 tests across 227 test files (all from real articles)
+├── tests/                       # 6332 tests across 228 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -551,6 +551,7 @@ mediascope/
 │   ├── test_nyt_cade_metz_cross_entity.py # Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing vs Meta adversarial beat reporter assignment
 │   ├── test_mike_isaac_cross_entity.py # Mike Isaac (NYT) cross-entity coverage post-beat expansion: consistent framing across Meta/Anthropic/SpaceX, Eli Tan succession, institutional lane assignment
 │   ├── test_meta_deal_landscape.py # Meta AI deal landscape: 13 partners, excluded publishers, WIRED/Verge Microsoft+Perplexity relationships, deal-coverage correlation validation
+│   ├── test_meta_inverse_leverage_q2_2026_aug8.py # Meta Q2 2026 earnings, Anthropic $10B compute deal, Inverse Financial Leverage Paradox (1 mechanism vs competitors 4-7)
 │   ├── test_beat_assignment_correlation.py # Cross-publication beat/lane assignment → coverage asymmetry correlation: WIRED desk, NYT reporter, Verge institutional split; financial deal-coverage prediction; asymmetry scorer statistical validity
 │   ├── test_ft_openai_meta_dual_standard.py # FT OpenAI vs Meta cross-entity framing: always-on device dual standard (Ive device aspirational vs Meta glasses surveillance), spending framing asymmetry, systematic non-disclosure of FT-OpenAI $5-10M/yr deal, reporter assignment (Murphy=Meta), financial incentive → coverage tone correlation
 │   ├── test_ft_google_coverage_asymmetry.py # FT Google vs Meta coverage asymmetry: Google (News AI pilot deal) gets neutral business framing, Meta (no deal) gets surveillance framing. Smart glasses double standard, reporter assignment, regulatory vs coverage split, capex framing delta 0.45

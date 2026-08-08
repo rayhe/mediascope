@@ -1,4 +1,43 @@
 # MediaScope Iteration Log
+## 2026-08-08 09:00 PT — Type B: Journalist Cross-Entity Tracking — David Pierce (The Verge) Institutional Framing Immunity
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Finding: Institutional Framing Immunity (Mechanism #7)
+
+David Pierce — The Verge's Editor-at-Large and Vergecast co-host — has worked at **5 publications** over 16 years: PC Magazine (2010–11), The Verge (2011–15), WIRED (2015–17), WSJ (2017–20), Protocol (2020–22), and The Verge again (2022–present). This career trajectory creates the **strongest natural experiment** in the MediaScope dataset for testing whether adversarial Meta coverage is reporter-driven (individual response to Meta's behavior) or institution-driven (editorial assignment and ownership incentives).
+
+**Key evidence — Pierce covers Meta products with balanced framing DESPITE working at two adversarial-to-Meta publications:**
+
+- **Quest 3 review (Oct 2023, The Verge):** "My favorite one yet" — balanced product review (+0.2 tone). Criticism is functional (not enough MR content, passthrough not sharp enough), NOT existential (surveillance, privacy). Zero surveillance language despite Quest 3's multiple outward-facing cameras.
+- **Orion AR glasses (Sep 2024, The Verge):** "A statement of purpose from Meta" (+0.4 tone) — constructive framing of Meta's AR vision.
+- **Ray-Ban Meta Smart Glasses (Sep 2023, The Verge):** Product-focused announcement coverage, no surveillance framing for camera-equipped eyewear.
+
+**Cross-entity comparison:**
+- **Apple Vision Pro (Jun 2023):** "Much better-looking than other AR/VR headsets" (+0.3) — no surveillance concerns despite 12 cameras, 5 sensors, 6 microphones
+- **Google Gemini:** "Unimpressed by uninteresting and sometimes inaccurate responses" (-0.2) — same functional critique style as Meta
+- **Snap Spectacles:** "Snap's Specs look good on nobody" (-0.3) — willingness to criticize non-Meta companies
+
+**5 patterns identified:**
+1. **INSTITUTIONAL FRAMING IMMUNITY:** Balanced Meta coverage across WIRED/WSJ/Verge institutional contexts
+2. **PODCAST BUFFER EFFECT:** As Vergecast co-host, Pierce moderates while Heath handles adversarial investigations
+3. **MULTI-INSTITUTIONAL NATURAL EXPERIMENT:** Same reporter, 3 different ownership structures, same balanced framing
+4. **ASSIGNMENT PARADOX:** Pierce reviews products (balanced); Heath investigates company (adversarial)
+5. **CROSS-ENTITY SENSOR BLINDNESS:** Zero surveillance framing for ANY company's camera devices
+
+**Direct contrast with WIRED:** Lauren Goode covers Apple/Snap but never Meta glasses → lane assignment asymmetry. Pierce covers BOTH Meta and Apple through the same balanced lens → proves lane assignment is deliberate editorial choice.
+
+### Files modified
+- `profiles/the-verge.yaml` — expanded David Pierce entry with full cross-entity analysis, Mechanism #7
+- `tests/test_david_pierce_cross_entity.py` — 35 new tests across 8 classes, all passing
+- `README.md` — test count update (6254→6289, 226→227 files), new test file listing
+- `docs/ARCHITECTURE.md` — test count and file listing updates
+
+### Test health
+- New tests: 35/35 passing
+- Structural consistency: 124/124 passing
+- Total: 6289 tests across 227 files
+- Commit: f51bb3d
 ## 2026-08-08 08:00 PT — Type A: Competitor Coverage Deep Dive — WIRED × Amazon Surveillance Parity Paradox
 
 **Rotation:** A (Competitor Coverage Deep Dive)
