@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,750 | Across 213 test files |
+| Tests | 5,787 | Across 214 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5750 tests** across 213 test files, each covering a different analytical capability:
+MediaScope has **5787 tests** across 214 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -681,6 +681,7 @@ MediaScope has **5750 tests** across 213 test files, each covering a different a
 | `test_techcentral_smartglasses_glassholes_jul14.py` | 26 | TechCentral smart glasses privacy editorial (Jul 14, 2026): negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8) |
 | `test_nypost_meta_child_safety_monitoring_jul16.py` | 11 | outsourced_intensity protective-context guard, Path N sentiment correction |
 | `test_meghan_bobrowsky_cross_entity.py` | 36 | Meghan Bobrowsky (WSJ) cross-entity coverage analysis — Balanced-Control Beat Assignment Model: dedicated Meta beat reporter at the ONLY publication with symmetric financial ties ($50M Meta + $50M OpenAI). Tone delta: Bobrowsky −0.15 vs Kashmir Hill −0.80 (0.65 gap) vs Lauren Goode −0.85 (0.70 gap) — largest single-journalist delta in dataset. WSJ beat structure (Bobrowsky→Meta, Berber Jin→OpenAI, McMillan→Cybersecurity, Mims→Tech columnist). Key finding: beat assignment is structurally neutral; asymmetry comes from financial ENVIRONMENT. One-sided pubs (NYT, WIRED) concentrate adversarial energy; balanced pub produces mixed-tone coverage. Profile cross-validation against news-corp.yaml and competitor-coverage-research.yaml |
+| `test_apple_news_platform_leverage_aug7.py` | 34 | Apple News+ platform leverage — The Lifeline Paradox: Apple has FIVE distinct financial relationship mechanisms with publishers (News+ 50% subscription revenue share on $12.99/mo across 400+ titles/125M MAU, App Store 15-30% subscription tax, Apple One bundle revenue dilution, 2.5B-device distribution monopoly, $1B/yr AI content bypass via Google Gemini deal). Makes Apple the THIRD most entangled entity after Microsoft (7) and Amazon (6). Completes leverage hierarchy: Microsoft (7) > Amazon (6) > Apple (5) > Google (4) > Meta (1). CIRP 24% US Apple customer penetration (2024, up from 15% in 2020). Profiled publisher exposure: Condé Nast (16 titles, 50% revenue share + $0 AI pipeline), Atlantic (CGO: "by far the most valuable syndication partner" + Apple ownership equity), WSJ (News+ participant + News Corp dual deals), FT (only profiled pub NOT on Apple News+). Q3 FY26: $30.7B Services revenue (+12% YoY), 1.5B paid subscriptions. The company with the FEWEST leverage mechanisms (Meta, 1) receives the MOST adversarial coverage. 9 classes, 37 tests |
 
 ```bash
 # Run all tests

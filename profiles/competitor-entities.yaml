@@ -398,6 +398,237 @@ entities:
             primary adversary, not Apple — despite Apple's bypass being
             arguably more damaging to publisher revenue than Meta's model
             of offering voluntary direct licensing.
+    apple_news_platform_leverage:
+      overview: |
+        Apple News+ creates a financial dependency between Apple and 400+
+        publishers that is DISTINCT from AI content licensing. Apple takes
+        50% of $12.99/mo subscription revenue, allocating the remainder
+        to publishers based on reading time engagement. With 125M monthly
+        active users across US, Canada, UK, and Australia, and CIRP data
+        showing 24% of US Apple customers paying for News+ (up from 15%
+        in 2020), Apple News+ represents "tens of millions of users"
+        publishers cannot reach alone. The Atlantic's chief growth officer
+        publicly called Apple "by far the most valuable syndication partner."
+        Semafor reported Apple News+ as a "lifeline" for publishers losing
+        Google/Meta referral traffic. Publishers cannot criticize the
+        platform they increasingly depend on for audience and revenue.
+      launched: '2019-03-25'
+      subscription_price_usd: 12.99
+      subscription_revenue_share_pct: 50
+      monthly_active_users_m: 125
+      title_count: 400
+      countries:
+      - United States
+      - Canada
+      - United Kingdom
+      - Australia
+      cirp_us_penetration_pct_2020: 15
+      cirp_us_penetration_pct_2024: 24
+      editors: 100
+      ranking: '#1 news app in US, Canada, Australia; #2 in UK (as of 2025)'
+      apple_one_premier_price_usd: 37.95
+      apple_one_premier_includes_news: true
+      news_partner_program_commission_pct: 15
+      app_store_standard_y1_commission_pct: 30
+      app_store_standard_y2_commission_pct: 15
+      profiled_publisher_participation:
+      - name: Condé Nast (WIRED)
+        status: partner
+        detail: |
+          Launch partner since 2019. Condé Nast CEO Bob Sauerberg praised
+          News+ as "an exciting opportunity to bring a premium experience
+          to millions more readers." Participating in Apple News+ Food
+          (2025). 16 Condé Nast titles on News+ (WIRED, Vogue, GQ,
+          Vanity Fair, The New Yorker, Architectural Digest, etc.)
+        disclosed_in_coverage: false
+      - name: The Atlantic
+        status: partner
+        detail: |
+          Launch partner since 2019. The Atlantic's CGO Megha Garibaldi:
+          "Apple is by far the most valuable syndication partner for
+          The Atlantic. Engagement on Apple News has been growing,
+          especially at a time when traffic from other previously reliable
+          platforms is becoming more volatile."
+        quote: Apple is by far the most valuable syndication partner for The Atlantic
+        disclosed_in_coverage: false
+      - name: News Corp (WSJ)
+        status: partner
+        detail: |
+          WSJ joined at launch (Mar 2019). Provides "a selection of
+          general interest news" through News+ while maintaining paywall
+          for business reporting. WSJ executives view News+ readers as
+          "prospective customers for full subscriptions."
+        disclosed_in_coverage: false
+      - name: Financial Times
+        status: not_available
+        detail: |
+          FT is notably NOT available on Apple News or Apple News+.
+          iPhone in Canada reported "The Financial Times isn't available
+          on Apple News." FT has expressed interest in Snowflake Cortex
+          instead. This makes FT the only MediaScope-profiled publication
+          that is financially INDEPENDENT of Apple's distribution platform.
+      disclosure_gap: |
+        None of the MediaScope-profiled Apple News+ partners (Condé Nast/
+        WIRED, The Atlantic, WSJ) disclose their Apple News+ financial
+        relationship when covering Apple products, Apple Intelligence,
+        or Apple's AI strategy. Yet these same publications cite their
+        lack of a Meta deal as implicit justification for adversarial
+        Meta coverage. The disclosure asymmetry mirrors the AI content
+        licensing disclosure gap: publications disclose NO financial
+        relationships with any tech company in their coverage.
+      mediascope_relevance: |
+        Apple News+ creates a FIFTH financial lever (extending the four
+        already documented: Gemini deal, publisher_content_bypass,
+        App Store tax, and Apple One dilution). The key analytical
+        insight is the LIFELINE PARADOX: publishers increasingly depend
+        on Apple News+ as Google/Meta referral traffic collapses, making
+        Apple's 50% revenue share and editorial curation power MORE
+        coercive over time, not less. Publishers who can't afford to
+        leave Apple News+ cannot afford to criticize Apple — creating
+        the same structural incentive to produce softer coverage that
+        MediaScope documents for AI content licensing deals, but through
+        a platform dependency mechanism rather than a bilateral deal.
+      source_urls:
+      - https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
+      - https://9to5mac.com/2024/05/29/apple-news-subscriptions-growing-4x-faster-than-major-publishers/
+      - https://www.cultofmac.com/news/apple-news-subscription-growth
+      - https://goodereader.com/blog/digital-publishing/apple-news-is-expanding-into-more-countries-in-2025
+      - https://www.webwire.com/ViewPressRel.asp?aId=349070
+      - https://www.cultofmac.com/news/apple-news-program-takes-a-smaller-cut-of-publishers-revenue
+    q3_fy26_earnings:
+      report_date: '2026-07-30'
+      quarter_ended: '2026-06-27'
+      total_revenue_b: 109.4
+      total_revenue_yoy_pct: 16
+      services_revenue_b: 30.7
+      services_revenue_yoy_pct: 12
+      iphone_revenue_b: 54.3
+      iphone_revenue_yoy_pct: 21.7
+      net_income_b: 29.8
+      eps: 2.02
+      gross_margin_pct: 50.1
+      paid_subscriptions_b: 1.5
+      active_devices_b: 2.5
+      services_gross_margin_pct: 75.6
+      ceo_transition: |
+        Tim Cook's final earnings call as CEO. John Ternus assumes CEO
+        role September 2026. The leadership transition has no immediate
+        MediaScope implications, but Ternus's hardware engineering
+        background (vs Cook's operations/services focus) may shift
+        Apple's publisher relationship priorities.
+      source_urls:
+      - https://appleinsider.com/articles/26/07/30/apple-hits-15-billion-subscription-milestone-still-falls-short-of-wall-street-wants
+      - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
+      - https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php
+      - https://www.macobserver.com/news/apple-q3-2026-earnings-results-revenue-hits-109-4-billion-up-16-eps-jumps-29/
+    quintuple_publisher_leverage:
+      overview: |
+        Apple has FIVE distinct financial relationship mechanisms with
+        publishers — making it the THIRD most entangled entity after
+        Microsoft (7) and Amazon (6). Apple's leverage is unique because
+        it combines a distribution monopoly (2.5B devices with News
+        preinstalled) with subscription revenue extraction (50% take rate)
+        AND AI content bypass ($0 to publishers, $1B to Google).
+
+        THE LIFELINE PARADOX: Publishers are INCREASING their dependency
+        on Apple News+ at the exact moment Google AI Overviews cuts their
+        search traffic by 34.5% and Meta deprioritizes news. Apple's
+        leverage grows stronger as alternatives weaken. Publishers who
+        publicly call Apple News their "lifeline" and "most valuable
+        partner" cannot then produce adversarial Apple coverage without
+        risking their increasingly important revenue stream. This creates
+        an editorial inhibition effect analogous to advertising dependency
+        — but through platform distribution, not ad dollars.
+
+        LEVERAGE COUNT COMPARISON:
+        Microsoft: 7 (OpenAI axis, Anthropic, PCM, Copilot Daily, MSN,
+                      Bing ads, Azure hosting)
+        Amazon:    6 (AWS hosting, ads, AI licensing, Kindle, Bezos/WaPo,
+                      Anthropic investment)
+        Apple:     5 (News+ platform, App Store tax, Apple One dilution,
+                      distribution monopoly, AI content bypass)
+        Google:    4 (advertising, search traffic, Showcase, pilot deals)
+        Meta:      1 (voluntary AI content licensing — no leverage)
+      layers:
+      - name: apple_news_plus_platform
+        detail: |
+          50% revenue share on $12.99/mo subscription. 400+ titles,
+          125M monthly users. Publishers split the remaining 50% based
+          on engagement (time spent reading). Apple controls discovery,
+          curation, and editorial promotion through 100 editors. Launch
+          partners include Condé Nast, The Atlantic, WSJ, LA Times, Hearst,
+          Dotdash Meredith. CIRP data shows 24% US Apple customer
+          penetration in 2024 (up from 15% in 2020). Growing 4x faster
+          than major publishers' own subscription businesses.
+      - name: app_store_subscription_tax
+        detail: |
+          All iOS subscription revenue runs through Apple's in-app purchase
+          system: 30% commission in year one, 15% thereafter. News Partner
+          Program (launched 2021) offers 15% from year one for qualifying
+          publishers. NYT has 10.8M digital subscribers — many subscribing
+          through iOS. This creates a recurring Apple revenue stream from
+          every publisher's direct subscription business on iPhone/iPad.
+          Publishers cannot sell digital subscriptions on iOS without
+          Apple taking a cut.
+      - name: apple_one_revenue_dilution
+        detail: |
+          Apple One Premier ($37.95/mo) bundles News+ with Music, TV+,
+          Arcade, Fitness+, and iCloud+. When subscribers access News+
+          through Apple One (instead of the $12.99 standalone), the
+          revenue allocated to News+ is diluted — less money flows to
+          publishers per subscriber. Apple doesn't disclose how it
+          allocates Apple One revenue across services, but the $37.95
+          Premier price is only ~3x the standalone News+ price while
+          including 6 services. The dilution effect reduces per-publisher
+          revenue while growing Apple's total subscriber count.
+      - name: content_distribution_monopoly
+        detail: |
+          Apple News is preinstalled on every iPhone, iPad, and Mac —
+          2.5B active devices worldwide. This creates a distribution
+          advantage no publisher can replicate. Apple News reached 125M
+          monthly users (Jan 2025), is the #1 news app in US, Canada,
+          and Australia. Publishers featured in Apple News get access to
+          a demographic that "trends towards a more wealthy" audience
+          (FT report) — making Apple's editorial curation power
+          commercially significant. Apple chooses which stories are
+          promoted, which publishers appear first, and which content
+          gets Audio narration (professionally narrated stories from
+          Bloomberg, The New Yorker, The Atlantic, Rolling Stone).
+      - name: publisher_content_bypass_for_ai
+        detail: |
+          Apple paid Google $1B/yr for a custom Gemini model (1.2T
+          parameters, Jan 2026) trained on publisher content without
+          publisher authorization. Publishers receive $0 from Apple
+          for AI content flowing through 2.5B devices. Apple bypassed
+          2.5 years of publisher deal negotiations ($50M multi-year
+          offers to Condé Nast, NBC News, IAC — none signed) by
+          accessing publisher content through Google's training pipeline.
+          Google's own copyright litigation (Hachette/Cengage/Elsevier,
+          Jul 2026) confirms unauthorized training on "millions of books
+          and journal articles." Apple's path is laundering: Google
+          trains → Apple pays Google → Siri serves → publishers get $0.
+      meta_contrast: |
+        Meta has ONE financial relationship mechanism with publishers:
+        voluntary AI content licensing ($50M/yr News Corp, plus 12 others).
+        No distribution platform (no preinstalled news app on devices).
+        No subscription revenue extraction (no 50% take rate).
+        No app store subscription tax (no iOS payment processing).
+        No content bypass (Meta pays for content directly, doesn't
+        launder through another company's training pipeline).
+
+        Apple has FIVE mechanisms yet receives substantially SOFTER
+        coverage from the same publishers Apple is financially extracting
+        from. The paradox: Condé Nast (WIRED) gives Apple 50% of News+
+        subscription revenue across 16 titles AND gets $0 for Apple's AI
+        content pipeline — yet directs its most sustained adversarial
+        coverage at Meta, which has offered Condé Nast voluntary AI
+        licensing deals that Condé Nast has not accepted.
+
+        LEVERAGE RANKING (highest → lowest):
+        Microsoft (7) > Amazon (6) > Apple (5) > Google (4) > Meta (1)
+
+        ADVERSARIAL COVERAGE RANKING (highest → lowest):
+        Meta (most adversarial) despite having the FEWEST leverage mechanisms
   google:
     display_name: Google / Alphabet
     aliases:

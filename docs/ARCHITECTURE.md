@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5750 tests across 213 test files (all from real articles)
+├── tests/                       # 5787 tests across 214 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -669,6 +669,7 @@ mediascope/
 │   ├── test_techcentral_smartglasses_glassholes_jul14.py # TechCentral smart glasses privacy editorial Jul 14: negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8)
 │   ├── test_nypost_meta_child_safety_monitoring_jul16.py # NY Post Meta child-safety chatbot monitoring (Jul 16): outsourced_intensity protective-context guard (crisis helpline, parental alerts), Path N sentiment correction (positive-action negative-domain VADER inflation: raw -0.541→corrected -0.08)
 │   ├── test_meghan_bobrowsky_cross_entity.py # Meghan Bobrowsky (WSJ) cross-entity: Balanced-Control Beat Assignment Model — dedicated Meta beat reporter at ONLY pub with symmetric financial ties ($50M Meta + $50M OpenAI). Tone: −0.15 vs Hill −0.80 (0.65 gap) / Goode −0.85 (0.70 gap) — largest single-journalist delta. WSJ beat structure (Bobrowsky→Meta, Jin→OpenAI, McMillan→Cybersecurity, Mims→Columnist). Beat assignment neutral; asymmetry from financial environment. 9 classes, 36 tests
+│   ├── test_apple_news_platform_leverage_aug7.py # Apple News+ platform leverage — Lifeline Paradox: Apple has FIVE financial mechanisms (News+ 50% rev share $12.99/mo 400+ titles 125M MAU, App Store 15-30% tax, Apple One dilution, 2.5B-device distribution monopoly, $1B/yr AI bypass via Google Gemini). THIRD most entangled after Microsoft (7) and Amazon (6). Completes hierarchy: MSFT(7)>AMZN(6)>AAPL(5)>GOOG(4)>META(1). Profiled pub exposure: Condé Nast 16 titles, Atlantic "most valuable syndication partner", WSJ participant, FT only non-participant. Q3 FY26 $30.7B Services +12% YoY. 9 classes, 37 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

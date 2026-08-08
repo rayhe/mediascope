@@ -1,5 +1,61 @@
 # MediaScope Iteration Log
 
+## 2026-08-07 19:00 PT — Type B: Journalist Cross-Entity — Parmy Olson (Bloomberg Opinion) CEO Personalization Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Parmy Olson, Bloomberg Opinion AI Columnist — CEO personalization asymmetry and professional identity capture
+
+### KEY FINDING — CEO PERSONALIZATION ASYMMETRY:
+
+Olson personalizes Meta coverage to "Zuckerberg"/"Mark Zuckerberg" in 87.5% of headlines while NEVER personalizing OpenAI to "Sam Altman" or Anthropic to "Dario Amodei":
+
+| Entity | Personalized to CEO | Company Name | Rate |
+|--------|-------------------|--------------|------|
+| Meta | 7 of 8 | 1 of 8 | 87.5% |
+| OpenAI | 0 of 4 | 4 of 4 | 0% |
+| Anthropic | 0 of 2 | 2 of 2 | 0% |
+| Google | 0 of 1 | 1 of 1 | 0% |
+
+### LOADED LANGUAGE ASYMMETRY:
+
+| Entity | Sample Headline Words | Avg Tone |
+|--------|----------------------|----------|
+| Meta | "bait," "slop," "failure club," "groupthink," "secret weapon" | -0.51 |
+| OpenAI | "risks," "pivot," "containment" | -0.11 |
+| Anthropic | "heat," "threat" (competitive/protective) | +0.15 |
+| Google | "serious problems" | -0.35 |
+
+Tone delta Meta-to-OpenAI: 0.40 (substantial asymmetry)
+
+### FOLLOWER FRAMING PATTERN:
+
+Olson consistently frames Meta as an AI imitator, never applying equivalent framing to competitors:
+- "chronic inability to develop an original idea" (Failure Club piece)
+- "scrambling to match OpenAI by cloning ChatGPT" (Groupthink piece)
+- "Llama is the flagship AI model Meta built to catch up with ChatGPT" (Days Numbered piece)
+
+### NEW MECHANISM — PROFESSIONAL IDENTITY CAPTURE:
+
+Bloomberg has NO known AI content licensing deals with OpenAI, Google, Amazon, or Anthropic. The asymmetry stems from Olson's book "Supremacy: AI, ChatGPT, and the Race that Will Change the World" (2024, FT shortlisted) centering the OpenAI-DeepMind rivalry as THE defining AI narrative. This is the 4th documented asymmetry mechanism:
+
+1. Content licensing deals (WIRED/Condé Nast-OpenAI)
+2. Advertising revenue dependency (NYT-Amazon)
+3. Marketplace platform dependency (Microsoft PCM)
+4. **Professional identity capture** (journalist career/book investment in specific narrative) ← NEW
+
+### Artifacts:
+- `tests/test_parmy_olson_cross_entity.py` — 28 defs / 35 with parametrize (10 classes)
+- `profiles/competitor-coverage-research.yaml` — added `bloomberg_parmy_olson` section
+- `README.md` + `docs/ARCHITECTURE.md` — corrected to 5750 tests / 213 files
+- 124/124 structural consistency tests pass, 0 regressions
+
+### Sources:
+- Bloomberg Law author page: https://news.bloomberglaw.com/author/parmy-olson-22420307
+- "Supremacy" book: https://booktrib.com/2025/05/03/supremacy-parmy-olson/
+- Individual article URLs documented in test file source_url fields
+
+**Stats:** 5750 tests, 213 files | Commit: e8a3fb9 | All structural consistency tests pass (124/124)
+
 ## 2026-08-07 16:00 PT — Type A: Competitor Coverage Deep Dive — WIRED Apple v. OpenAI Silence
 
 **Rotation:** A (Competitor Coverage Deep Dive)
