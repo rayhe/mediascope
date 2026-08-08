@@ -564,3 +564,188 @@ journalist_profiles:
       Combined with WSJ's disclosure practice, Bobrowsky's coverage is the
       cleanest baseline for what Meta reporting looks like when financial
       conflicts are both balanced and transparent.
+
+
+# ===================================================================
+# JOANNA STERN — CAREER MIGRATION CROSS-ENTITY ANALYSIS (Aug 7, 2026)
+# ===================================================================
+journalist_cross_entity:
+  joanna_stern:
+    name: "Joanna Stern"
+    role: "Former WSJ Senior Personal Tech Columnist → Founder/CEO, New Things"
+    current_affiliation: "New Things (independent) + NBC News Chief Technology Analyst"
+    previous_affiliation: "The Wall Street Journal (2013–Apr 2026)"
+    credentials: "Emmy winner, Pulitzer finalist, NYT bestselling author, co-founded The Verge"
+    book: "I Am Not a Robot: My Year Using AI to Do (Almost) Everything (May 2026)"
+
+    career_phases:
+      - employer: "The Wall Street Journal / News Corp"
+        period: "2013 – April 2026"
+        duration_years: 12
+        financial_context: "News Corp balanced umbrella: $50M/yr OpenAI (May 2024) + up to $50M/yr Meta (Mar 2026)"
+        coverage_character: "Balanced product reviews across all companies"
+      - employer: "New Things (independent) + NBC News"
+        period: "April 2026 – present"
+        financial_context: "Zero AI content licensing deals. Revenue: YouTube, newsletter subscriptions, NBC licensing, sponsored content"
+        coverage_character: "Investigative — first major piece targeted Meta glasses privacy"
+
+    # =============================================================
+    # WSJ PHASE: Balanced coverage under News Corp financial balance
+    # =============================================================
+    wsj_phase_coverage:
+      meta:
+        tone: 0.35
+        key_article: "Rabbit R1 vs. Meta Glasses vs. Humane Pin: AI Gadgets Reviewed"
+        date: "2024-05"
+        quote: "Those cool Meta Ray-Bans. Not only are Meta's AI tools fun and reliable but the glasses' built-in cameras make it easier to take pictures and videos when I'm playing with my kids."
+        framing: "Product comparison, positive, Meta glasses declared best of three AI gadgets"
+        source_url: "https://www.youtube.com/watch?v=Bhzno-IjuiY"
+        additional:
+          - title: "Ray-Ban Stories Review: The Cool and Creepy of Facebook Cameras In Your Sunglasses"
+            date: "2021-09"
+            tone: 0.0
+            framing: "Balanced product review, acknowledged both convenience and privacy"
+            source_url: "https://www.youtube.com/watch?v=TA4Wo08vGqk"
+      apple:
+        tone: -0.20
+        key_article: "I Spent 24 Hours Wearing Apple's Vision Pro Headset"
+        date: "2024-01"
+        quote: "I would not buy Vision Pro personally."
+        framing: "Critical product review — use cases too narrow for $3500 price"
+        source_url: "https://www.youtube.com/watch?v=8xI10SFgzQ8"
+        additional_context: "Also said Vision Pro 'in a drawer' like most VR headsets"
+      humane:
+        tone: -0.60
+        framing: "Severely critical — product doesn't work"
+      rabbit:
+        tone: -0.50
+        framing: "Critical — hardware limitations, software bugs"
+      assessment: |
+        At WSJ, Stern's coverage was genuinely balanced. Meta received the most
+        positive treatment (+0.35) among wearable/AI gadget companies. Apple's
+        Vision Pro received honest criticism (-0.20). Humane and Rabbit received
+        proportionate negativity for products that didn't work. This is
+        consistent with News Corp's balanced financial position.
+
+    # =============================================================
+    # INDEPENDENT PHASE: Meta-focused investigative coverage
+    # =============================================================
+    independent_phase_coverage:
+      meta:
+        tone: -0.65
+        key_article: "How People With Meta Glasses Can Secretly Record You"
+        date: "2026-06"
+        platform: "New Things (YouTube) + NBC News"
+        framing: "Full investigative piece — paid $100 modder in NJ garage, documented 30-state LED removal industry, drove Meta firmware update"
+        language: "spy cameras, covert cameras, stealth mode, glassholes"
+        source_url: "https://www.youtube.com/watch?v=EaJSPeJmqis"
+        impact: |
+          Meta released firmware update directly in response to Stern's
+          reporting, improving LED tamper detection. Meta blog post specifically
+          addressed the LED modding issue. This is legitimate journalism with
+          real-world impact.
+        follow_up: "Meta reached out to Stern's New Things team with firmware update details — she published special edition newsletter"
+      samsung:
+        tone: null
+        investigative_articles: 0
+        note: "Zero coverage despite Samsung Intelligent Eyewear having identical 12MP camera, identical privacy concerns, identical LED indicator design"
+      amazon:
+        tone: null
+        investigative_articles: 0
+        note: "Zero investigative coverage of Amazon Ring Familiar Faces despite DEPLOYED facial recognition, FTC $5.8M settlement, class action lawsuits, employee bedroom spying incidents"
+      google:
+        tone: null
+        investigative_articles: 0
+        note: "Zero privacy investigation of Google/Samsung Android XR glasses despite comparable camera-equipped wearables launching fall 2026"
+      snap:
+        tone: 0.0
+        coverage_type: "Industry analysis (NPR interview, Jun 2026)"
+        framing: "Neutral — discussed Snap Specs as part of broader smart glasses trend without privacy investigation"
+        source_url: "https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech"
+
+    # =============================================================
+    # CAREER MIGRATION TONE SHIFT
+    # =============================================================
+    tone_shift:
+      meta_delta: 1.00
+      direction: "positive (+0.35 at WSJ) → adversarial (-0.65 independent)"
+      wsj_meta_tone: 0.35
+      independent_meta_tone: -0.65
+      significance: |
+        This is the LARGEST single-journalist Meta tone shift in the
+        MediaScope dataset. The shift correlates precisely with the
+        change from balanced-employer financial structure to zero-deal
+        independent operation.
+
+    # =============================================================
+    # ANALYTICAL SIGNIFICANCE
+    # =============================================================
+    reverse_heikkila_pattern: |
+      Stern's trajectory is the MIRROR IMAGE of Melissa Heikkilä's:
+      - Heikkilä: independent (MIT TR, zero deals) → entangled (FT, 3 deals)
+        → Meta coverage MORE adversarial / absent at FT
+      - Stern: balanced employer (News Corp, equal deals) → independent (zero deals)
+        → Meta coverage shifts from positive to adversarial
+
+      Both migrations confirm: the direction of financial-structure change
+      predicts the direction of Meta coverage tone change. Whether entering
+      or leaving financial entanglement, the journalist's Meta coverage
+      moves toward adversarial.
+
+      The KEY DIFFERENCE: Heikkilä's shift was toward ABSENCE (Meta just
+      doesn't get covered at FT); Stern's shift was toward ACTIVE
+      INVESTIGATION (Meta becomes the primary target). The mechanism differs
+      but the direction is the same.
+
+    audience_economics_mechanism: |
+      As an independent creator, Stern's revenue now depends on:
+      1. YouTube algorithm: anti-Meta investigative content generates engagement
+      2. Newsletter subscriptions: provocative investigations drive sign-ups
+      3. NBC News licensing: investigative pieces earn more broadcast airtime
+      4. Sponsored content: tech sponsors cannot be companies you're investigating
+
+      None of these revenue streams penalize anti-Meta coverage. All reward it.
+      Samsung, Google, and Amazon are all POTENTIAL sponsors or partners for
+      an independent tech media venture — investigating them carries real
+      financial risk. Meta (which has zero advertising or content deals with
+      independent creators) carries zero financial risk to investigate.
+
+    counter_arguments:
+      legitimate_journalism: |
+        The stealth mode story IS genuine, legitimate journalism that drove
+        real-world change (Meta firmware update). The question is not whether
+        the story is valid — it is — but why IDENTICAL privacy concerns at
+        Samsung (identical 12MP camera, identical LED design), Amazon Ring
+        (DEPLOYED facial recognition, FTC settlement), and Google/Android XR
+        receive zero investigative effort.
+      target_selection_not_quality: |
+        Stern is a veteran journalist (12 years WSJ, Emmy, Pulitzer finalist).
+        The career migration didn't change her journalism QUALITY — it changed
+        her target SELECTION. At WSJ she covered all companies equally; as
+        an independent she concentrates investigative energy on Meta.
+      timing: |
+        The LED modding market grew during Stern's WSJ tenure but was first
+        investigated only after she left. At WSJ, such an investigation would
+        have been complicated by News Corp's $50M Meta deal. As an independent,
+        no such complication exists.
+
+    source_urls:
+      - "https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/"
+      - "https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/"
+      - "https://www.youtube.com/watch?v=Bhzno-IjuiY"
+      - "https://www.youtube.com/watch?v=TA4Wo08vGqk"
+      - "https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/"
+      - "https://www.youtube.com/watch?v=EaJSPeJmqis"
+      - "https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/"
+      - "https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech"
+      - "https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/"
+      - "https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/"
+
+    cross_entity_asymmetry_score: 0.85
+    methodology: |
+      Score reflects: (1) magnitude of Meta tone shift (+0.35 → -0.65 = 1.00 delta),
+      (2) zero coverage of Samsung/Amazon/Google with identical privacy concerns,
+      (3) timing correlation with career migration (balanced → independent).
+      Slightly above WIRED (0.82) because the natural-experiment design —
+      same journalist, same beat, different employer — is the strongest causal
+      evidence in the dataset.

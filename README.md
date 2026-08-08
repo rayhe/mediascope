@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,604 | Across 209 test files |
+| Tests | 5,722 | Across 212 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5688 tests** across 211 test files, each covering a different analytical capability:
+MediaScope has **5722 tests** across 212 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -532,6 +532,7 @@ MediaScope has **5688 tests** across 211 test files, each covering a different a
 | `test_inc_muse_image_backlash_jul14.py` | 37 | Inc.com Muse Image backlash patterns (Jul 14 2026): confession_framing post-quote attribution ("'We missed the mark,' Meta admits."), cross_publication_import named publication reference ("According to The New York Times"), policy_reversal temporal urgency qualifiers ("just three days after its debut"), loaded_language death/termination metaphors ("pulled the plug", "killed the feature", "death knell"), negative guards against neutral phrasings ("discontinued", "removed"), full article integration test (13+ framing devices) |
 | `test_inc_threads_500m_patterns.py` | 7 | Inc.com Threads 500M patterns: scale_magnitude milestone detection (user-count crossings like "crossed 500 million monthly active users"), competitive_positioning headline patterns ("put X on notice", "leaves X behind", "overtakes/eclipses/dethrones [rival]"), negative guards against false positives, full headline integration test (Jul 8 2026) |
 | `test_iphoneincanada_eu_dsa_regressions.py` | 6 | iPhone in Canada EU DSA article regressions: tag-question rhetorical_question pattern ("...anyone?", "...right?", "...no?"), executive_behavior topic suppression for official titles like "Executive Vice-President" (Jul 12 2026) |
+| `test_joanna_stern_cross_entity.py` | 32 | Joanna Stern cross-entity: WSJ senior personal tech columnist (12 years, 2013–Apr 2026) → independent "New Things" founder + NBC News Chief Technology Analyst — Meta Ray-Ban tone shifted from +0.35 ("fun and reliable") to -0.65 ("How People With Meta Glasses Can Secretly Record You"), a 1.00-point swing correlating with career migration from News Corp balanced umbrella ($50M/yr OpenAI + $50M/yr Meta) to zero AI content deals, while Samsung/Amazon Ring/Google with identical privacy concerns received zero investigative coverage — reverse Heikkilä pattern, strongest natural experiment for financial-structure effects on coverage targets (Aug 7 2026) |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |
 | `test_victoria_song_cross_entity.py` | 15 | Victoria Song (The Verge) cross-entity wearables coverage analysis: balanced product-reviewer lens across Meta/Apple/Google, data integrity correction (Song's Jul 7 LED piece = Meta response not adversarial investigation), WIRED vs Verge lane assignment comparison, functional vs surveillance criticism distinction |

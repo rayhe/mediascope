@@ -2182,6 +2182,42 @@ publications:
         - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
         - https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868
         - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+
+    stern_cross_entity:
+      overview: |
+        Joanna Stern's career migration (WSJ Apr 2026 → independent New Things +
+        NBC News) provides the strongest natural experiment in the dataset for
+        isolating financial-structure effects on coverage targets. Same journalist,
+        same beat, different employer financial context → tone shift of 1.00 on Meta.
+      wsj_meta_tone: 0.35
+      independent_meta_tone: -0.65
+      meta_tone_delta: 1.00
+      wsj_apple_tone: -0.20
+      key_pieces:
+        - title: "Rabbit R1 vs. Meta Glasses vs. Humane Pin: AI Gadgets Reviewed"
+          date: "2024-05"
+          phase: "wsj"
+          tone: 0.35
+          note: "Meta glasses declared best AI gadget — 'fun and reliable'"
+        - title: "How People With Meta Glasses Can Secretly Record You"
+          date: "2026-06"
+          phase: "independent"
+          tone: -0.65
+          note: "First major investigative piece as independent — 30-state LED removal industry, drove Meta firmware update"
+      reverse_heikkila_pattern: |
+        Stern (balanced employer → independent → Meta adversarial) mirrors
+        Heikkilä (independent → entangled employer → Meta adversarial).
+        Both confirm financial structure predicts Meta coverage direction.
+      samsung_amazon_google_coverage: zero
+      audience_economics: "YouTube algorithm + newsletter + NBC licensing all reward anti-Meta investigative content"
+      source_urls:
+        - "https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/"
+        - "https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/"
+        - "https://www.youtube.com/watch?v=EaJSPeJmqis"
+        - "https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/"
+        - "https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/"
+        - "https://www.youtube.com/watch?v=Bhzno-IjuiY"
+
   financial_times:
     meta_coverage_tone: adversarial-by-absence
     meta_coverage_summary: |
