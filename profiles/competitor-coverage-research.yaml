@@ -4032,4 +4032,64 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-04
+  nyt_google_q2_2026_traffic_cannibalization_paradox:
+    finding_summary: |
+      NYT Q2 2026 earnings (Aug 5) provide the strongest single data point for the
+      attacker-vs-threat paradox: the company causing the most direct financial harm
+      to NYT (Google — AI Overviews killing traffic, $100M+ ad dependency) receives
+      structurally softer coverage than the company with ZERO financial ties (Meta).
+      CEO Levien explicitly blamed "big tech companies whose moves continue to result
+      in less traffic to publishers." Stock dropped 13% (worst since 2012), subscriber
+      growth missed (280K vs 295K est.). Yet NYT's investigative apparatus continues
+      to target Meta preferentially.
+    key_evidence:
+    - type: ceo_acknowledgment
+      detail: |
+        CEO Meredith Kopit Levien (Aug 5, 2026 earnings call): "We delivered our
+        second-quarter results against the backdrop of a rapidly changing information
+        ecosystem shaped by a small number of big tech companies whose moves continue
+        to result in less traffic to publishers. The Times isn't immune to that impact."
+      source_url: https://www.reuters.com/business/media-telecom/new-york-times-misses-estimates-digital-subscriber-additions-2026-08-05/
+    - type: stock_market_validation
+      detail: NYT stock dropped 13% on Aug 5 — worst one-day loss since 2012. Investors
+        confirmed Google traffic impact is material to NYT's business.
+      source_url: https://www.wsj.com/business/earnings/new-york-times-posts-higher-revenue-as-subscriber-growth-slows-545cc6a0
+    - type: oumi_study_paradox
+      detail: |
+        NYT COMMISSIONED the Oumi accuracy study (spring 2026) to quantify Google AI
+        Overview failures (91% accuracy = millions of errors/hour). Used the study in
+        its journalism. But did NOT deploy investigative team (Kashmir Hill) for a
+        Google privacy/safety exposé — kept it as business/tech news framing.
+      source_url: https://www.fastcompany.com/91566646/publishers-cant-control-ai-answers-they-cant-ignore-them-either
+    - type: aug_5_temporal_alignment
+      detail: |
+        Aug 5, 2026: BOTH Google DeepMind leadership shakeup (Hassabis leaves CEO,
+        Jeff Dean departs) AND NYT Q2 earnings released. Neither triggered a Google
+        investigative piece. Meanwhile, Meta's Muse Spark hacking incident (same week)
+        received full adversarial framing.
+      source_urls:
+      - https://www.reuters.com/business/google-shakes-up-ai-leadership-deepmind-chief-shifts-role-2026-08-05/
+      - https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/
+    attacker_vs_threat_paradox:
+      description: |
+        The entity causing the MOST financial harm to NYT (Google, 4 leverage
+        mechanisms, $100M+ ad dependency, traffic cannibalization confirmed by CEO)
+        receives SOFTER coverage than the entity with ZERO financial ties (Meta,
+        1 mechanism, no leverage). This is the inverse of what threat-based
+        journalism would predict.
+      leverage_comparison:
+        google: 4 mechanisms (programmatic ads, search traffic, Showcase fees, pilot exclusion)
+        amazon: 6 mechanisms (AWS, ads, AI licensing, Kindle, Bezos/WaPo, Anthropic)
+        meta: 1 mechanism (voluntary AI content licensing — zero leverage)
+      hostility_ranking: Meta (most hostile) > Google > Amazon (least hostile)
+      expected_ranking: Google (most hostile, highest threat) > Amazon > Meta (least threat)
+    litigation_asymmetry: |
+      NYT sued OpenAI for AI training but has NOT sued Google despite Google using
+      NYT content in AI Overviews and Gemini. Google's Hachette/Cengage/Elsevier
+      lawsuit (Jul 2026) confirms unauthorized training on publisher content —
+      identical to NYT's claims against OpenAI. Possible explanation: Google's
+      $100M+ ad dependency and search traffic control make litigation too costly.
+    test_file: tests/test_nyt_google_traffic_cannibalization_paradox_aug8.py
+    test_count: 43
+    date_added: 2026-08-08
+research_period: 2024-08-01 to 2026-08-08
