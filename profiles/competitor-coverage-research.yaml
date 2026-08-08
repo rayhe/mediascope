@@ -3199,6 +3199,197 @@ publications:
       source_url: https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security
       title: Anthropic's most dangerous AI model just fell into the wrong hands
       tone: -0.25
+    robertson_cross_entity_framing:
+      journalist: Adi Robertson
+      role: Senior Editor / Tech Policy
+      tenure: 14+ years (founding member, Nov 2011)
+      finding_summary: >
+        Robertson applies a comfort-based evaluation framework that systematically
+        disadvantages Meta. Meta products receive deficit framing (what's wrong,
+        missing, uncomfortable) while competitors with equal or worse limitations
+        receive improvement framing (what's better, promising, comfortable).
+        Privacy-conditional language is applied exclusively to Meta products
+        despite competitors having equal or greater surveillance hardware.
+        Post-Alex Heath departure (Sep 2025), Robertson becomes The Verge's
+        primary XR voice, amplifying this institutional asymmetry. Under PMC
+        ownership (Jun 2026), her XR coverage direction is the primary test case
+        for whether the acquisition changes The Verge's Meta coverage posture.
+      mechanism: institutional_posture_humanities_lens
+      mechanism_explanation: >
+        Not commercially driven — Robertson has no known financial ties to any
+        tech company. The asymmetry stems from institutional editorial posture
+        (The Verge's adversarial relationship with Meta predates PMC) amplified
+        by a humanities-educated lens (Cornell China/Asia-Pacific Studies BA)
+        that frames privacy and surveillance concerns through moral philosophy
+        rather than technical equivalence. This creates a selective attention
+        pattern where Meta's cameras trigger moral alarm but Apple's 12-camera
+        array triggers technological wonder.
+      background:
+        education: Cornell University BA, China and Asia-Pacific Studies
+        career_type: single_publication_pure_journalist
+        no_tech_industry_prior: true
+      meta_framing:
+        pattern: deficit_framing
+        description: >
+          Meta XR products are framed through deficits — what's wrong, what's
+          uncomfortable, what's privacy-invading. Adjective stacking amplifies
+          negativity (multiple harsh descriptors per sentence).
+        language_markers:
+        - irredeemably bad software
+        - uniquely tortuous
+        - grainy
+        - doesn't look remotely like the real world
+        - launched without plan or purpose
+        - trying too hard
+        - game console with an extra feature
+        - if you're okay with Facebook
+        - camera-toting glasses
+        examples:
+        - product: Meta Quest Pro
+          year: 2022
+          score: '2/5'
+          language: >
+            launched without plan or purpose, highlighting VR's persistent
+            drawbacks without making good use of its strengths — and topped
+            off with some irredeemably bad software
+          source_url: https://en.wikipedia.org/wiki/Meta_Quest_Pro
+        - product: Meta Quest 3
+          year: 2023
+          language: >
+            An upgraded VR game console with an extra feature… I can't tell
+            if Meta is trying too hard to make me look at the world through…
+          source_url: https://www.techmeme.com/230927/p48
+        - product: Meta Quest 2
+          year: 2020
+          language: >
+            The new default for VR, if you're okay with Facebook
+          source_url: https://www.techmeme.com/200916/p39
+      competitor_framing:
+        magic_leap:
+          pattern: improvement_framing
+          description: >
+            Magic Leap products receive improvement framing — what's better
+            than before, what's promising, what's comfortable. Despite the
+            ML2 having a wired puck, limited FoV, and enterprise-only pricing,
+            framing emphasizes positives.
+          language_markers:
+          - surprisingly comfortable
+          - significantly improved device
+          - sharp and vibrant
+          - text is easy to read
+          examples:
+          - product: Magic Leap One
+            year: 2018
+            language: surprisingly comfortable
+            source_url: https://www.wareable.com/ar/magic-leap-one-first-impressions-roundup-6393
+          - product: Magic Leap 2
+            year: 2022
+            language: A significantly improved device — sharp and vibrant, text is easy to read
+            source_url: https://mixed-news.com/en/magic-leap-2-this-is-what-the-first-reviewers-say/
+        apple:
+          pattern: neutral_to_aspirational
+          description: >
+            Apple Vision Pro receives neutral-to-aspirational framing. Robertson
+            wrote The Verge's announcement article with no privacy conditional
+            despite the device containing 12 cameras, 5 sensors, and 6 mics.
+          source_url: https://www.techtaffy.com/apple-vision-pro-is-apples-new-ar-headset-the-verge/
+      comfort_discomfort_paradox:
+        description: >
+          In the same year (2022), Robertson gave Meta Quest Pro a 2/5 with
+          stacked negative adjectives while describing Magic Leap 2 as
+          significantly improved with sharp and vibrant visuals. Both products
+          had comparable limitations (tethered computing, limited FoV), but
+          only Meta's limitations received deficit framing.
+        meta_product: Meta Quest Pro
+        meta_product_year: 2022
+        meta_score: '2/5'
+        competitor_product: Magic Leap 2
+        competitor_product_year: 2022
+        competitor_score: no_numeric_positive_hands_on
+        shared_limitations:
+        - external/tethered computing unit (Quest Pro battery, ML2 wired puck)
+        - limited passthrough/AR quality by current standards
+        - enterprise-grade pricing ($1,500 Quest Pro, enterprise-only ML2)
+      privacy_conditional_pattern:
+        meta_exclusive: true
+        description: >
+          Privacy-conditional language (framing that makes product endorsement
+          contingent on accepting the company's privacy practices) is applied
+          exclusively to Meta. Competitors with equal or greater surveillance
+          hardware receive no such conditional.
+        meta_examples:
+        - product: Meta Quest 2
+          phrase: if you're okay with Facebook
+          location: headline/lede
+        - product: Ray-Ban Stories
+          phrase: camera-toting glasses
+          location: product description (TWiT podcast)
+        absent_from:
+        - entity: Apple Vision Pro
+          cameras: 12
+          sensors: 5
+          microphones: 6
+          note: More surveillance hardware than any Meta product — no privacy conditional
+        - entity: Magic Leap (1 and 2)
+          cameras: multiple
+          note: Cameras for spatial mapping — no privacy conditional
+        - entity: Snap Spectacles
+          cameras: 4
+          note: Four cameras — no privacy conditional from Robertson or The Verge product desk
+        hardware_comparison:
+          apple_vision_pro_cameras: 12
+          meta_ray_ban_cameras: 1
+          snap_spectacles_cameras: 4
+          magic_leap_cameras: 2
+      institutional_amplification:
+        heath_departure:
+          date: Sep 2025
+          effect: >
+            Alex Heath (The Verge's primary Meta business/RL investigative
+            reporter) departed Sep 2025. Robertson, already the longest-tenured
+            staff member and XR specialist, becomes the primary editorial voice
+            on Meta Reality Labs. Her individual framing patterns amplify into
+            institutional framing.
+        pmc_acquisition:
+          date: Jun 2026
+          effect: >
+            Penske Media Corporation acquired Vox Media (The Verge's parent).
+            PMC's entertainment portfolio creates potential advertising revenue
+            dependencies with Apple (Apple TV+ across Variety, Rolling Stone,
+            Deadline) that could structurally reinforce existing anti-Meta
+            editorial posture. Robertson's XR coverage is the primary test case.
+          entertainment_properties:
+          - Variety
+          - Rolling Stone
+          - Deadline
+          - Hollywood Reporter
+          - Billboard
+      cross_references:
+      - test: test_chokkattu_ashworth_cross_entity.py
+        pattern: Creep Paradox
+        connection: >
+          Both Robertson and Chokkattu/Ashworth apply privacy/surveillance
+          framing exclusively to Meta's cameras while ignoring functionally
+          identical hardware from Apple, Google, and Snap. Robertson's pattern
+          on the XR/policy desk mirrors Chokkattu/Ashworth's pattern on the
+          product/review desk — institutional consistency across beats.
+      cross_desk_consistency: >
+        The privacy-conditional pattern appears independently on both The Verge's
+        XR/policy desk (Robertson) and product/review desk (Chokkattu/Ashworth),
+        suggesting it is an institutional editorial norm rather than an individual
+        journalist's quirk. Meta cameras trigger privacy framing; identical
+        competitor cameras do not.
+      source_urls:
+      - https://en.wikipedia.org/wiki/Meta_Quest_Pro
+      - https://www.techmeme.com/230927/p48
+      - https://www.techmeme.com/200916/p39
+      - https://www.wareable.com/ar/magic-leap-one-first-impressions-roundup-6393
+      - https://mixed-news.com/en/magic-leap-2-this-is-what-the-first-reviewers-say/
+      - https://www.techtaffy.com/apple-vision-pro-is-apples-new-ar-headset-the-verge/
+      - https://twit.tv/shows/tech-news-weekly/episodes/200
+      - https://www.techmeme.com/240926/p6
+      test_count: 40
+      test_file: tests/test_adi_robertson_cross_entity.py
     apple_recusal_gap: "THE APPLE RECUSAL ASYMMETRY (Aug 6, 2026 analysis):\n\nSean Hollister — The Verge's primary consumer\
       \ advocacy reporter —\ncannot cover Apple products or Apple as a company (wife employed by\nApple as video producer;\
       \ recusal effective June 2023). This creates\na structural gap in consumer protection coverage:\n\nPRE-RECUSAL (before\

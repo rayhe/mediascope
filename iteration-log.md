@@ -1,4 +1,35 @@
 # MediaScope Iteration Log
+## 2026-08-08 04:00 PT — Type A: Competitor Coverage Deep Dive — Atlantic × Matteo Wong Cross-Entity Framing
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### New finding: Matteo Wong three-tier framing hierarchy
+The Atlantic's primary AI beat reporter applies systematically different framing standards:
+- **Meta:** -0.45 tone, 75% headline personalization to Zuckerberg, loaded language ("legacy social-media apps", "open-washing", "aggrievement was palpable")
+- **OpenAI:** -0.05 tone, <10% personalization, industry-wide analytical framing ("in trouble" as competitive not institutional, "sticker shock" as sector-wide)
+- **Anthropic:** +0.20 tone, 0% personalization, sympathetic philosophical framing ("philosopher", "pathologically earnest", government as aggressor)
+
+### Mechanism: adversarial incentive model
+Not simple "pays more = softer coverage." Instead:
+- Meta (0 financial links + owner's $17B Apple stake) → maximum adversarial incentive
+- OpenAI (3+ financial links) → neutral-analytical (industry framing avoids partner critique)
+- Anthropic (0 links, 0 publisher deals) → no adverse incentive → most sympathetic
+
+### Silence update
+Apple v. OpenAI editorial silence extended from 27 → **29 days** (Jul 10 → Aug 8). Status: still active.
+
+### New test file:
+- `tests/test_atlantic_wong_cross_entity_framing_aug8.py` — **36 tests, 10 classes**, all passing
+
+### Test health:
+- 222 test files, 6111 tests total
+- 124/124 structural consistency passing
+- All new + modified tests passing (36 + 40 = 76)
+
+### Commit: `19f5524`
+
+---
+
 ## 2026-08-08 03:00 PT — Type D: Test & Verify — Cross-Validation + Stale Count Fix
 
 **Rotation:** D (Test & Verify)
