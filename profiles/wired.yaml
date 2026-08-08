@@ -1503,6 +1503,344 @@ key_journalists:
   - name: "Paresh Dave"
     beat: "AI, Big Tech"
     known_patterns: "Focuses on AI company practices, data use"
+    career_trajectory:
+      - publication: "Los Angeles Times"
+        years: "2013-2017"
+        beat: "Technology, cybersecurity, Silicon Beach"
+      - publication: "Reuters"
+        years: "2017-2023"
+        beat: "Google/Alphabet, AI, machine learning. Briefly covered Facebook during privacy/Cambridge Analytica era."
+      - publication: "WIRED"
+        years: "2023-present"
+        beat: "Big Tech, AI, tech manufacturing"
+    cross_entity_coverage_analysis:
+      mechanism_name: "emotional_register_asymmetry"
+      mechanism_number: 8
+      date_analyzed: "2026-08-08"
+      summary: >
+        Paresh Dave is WIRED's most prolific Big Tech investigative reporter, covering Meta,
+        OpenAI, and Google with significant source access at all three companies. His coverage
+        reveals a systematic emotional register asymmetry: Meta coverage deploys maximally
+        dramatic language sourced from anonymous disgruntled employees, while OpenAI and Google
+        coverage of comparable internal dysfunction uses measured, analytical, document-based
+        framing. The asymmetry is not in WHAT he covers (he investigates all three critically)
+        but in HOW he frames it — the emotional temperature and headline escalation applied
+        selectively to Meta.
+
+      meta_coverage:
+        aggregate_tone: "maximally_dramatic_employee_sourced"
+        emotional_register: "extreme"
+        article_count: 7
+        headline_language_samples:
+          - "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess"
+          - "Dark Mood Inside Meta (multi-byline: Dave, Goode, Levy, Schiffer)"
+          - "Meta internally exposed data from employee-tracking program"
+        articles:
+          - title: "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess"
+            date: "2026-06-12"
+            article_type: "internal_sources"
+            emotional_language:
+              - "gulag"
+              - "soul-crushing"
+              - "total mess"
+              - "piece of shit"
+              - "being the company's bitch"
+              - "zero purpose in life"
+              - "drudgework"
+            source_type: "3 anonymous current employees"
+            framing_notes: >
+              Profanity-in-headline editorial choice. Employee quotes selected for maximum
+              emotional impact. Applied AI unit (6,500 engineers) framed through the lens of
+              its most disgruntled members. Headline uses employee profanity — an editorial
+              choice that maximizes outrage clickthrough. The article describes Meta's AI
+              reorg as employees being assigned to "drudgework" testing AI models, with one
+              comparing it to "the gulag." Meta declined to comment.
+            tone_score: -0.8
+            source_url: "https://technologistmag.com/tell-him-hes-a-piece-of-shit-metas-new-ai-unit-is-a-total-mess/"
+
+          - title: "Dark Mood Inside Meta"
+            date: "2026-05-14"
+            article_type: "multi_byline_investigation"
+            co_authors: ["Lauren Goode", "Steven Levy", "Zoë Schiffer"]
+            emotional_language:
+              - "horrifically, historically low"
+              - "everyone is unhappy"
+              - "nobody is happy"
+              - "do it now, jesus fucking christ"
+              - "belittled and berated"
+              - "privacy zealots"
+            source_type: "multiple anonymous employees across departments"
+            framing_notes: >
+              Four-byline WIRED investigation — maximum editorial firepower. Every department
+              quoted anonymously expressing misery. Employee surveillance (MCI) framed through
+              privacy/dystopia lens. Profanity from employees published in full. Pre-layoff
+              timing maximizes anxiety narrative. No comparable multi-byline investigation
+              during OpenAI's Nov 2023 board crisis or Google's Gemini debacle.
+            tone_score: -0.7
+            source_url: "https://daringfireball.net/linked/2026/05/14/wired-on-meta-morale"
+
+          - title: "Meta internally exposed data from employee-tracking program"
+            date: "2026-06-23"
+            article_type: "investigation"
+            co_author: "Lauren Goode"
+            framing_notes: >
+              Employee keystroke tracking data accidentally exposed internally. Framed as
+              surveillance + incompetence compound narrative. "Private conversations" in lede
+              maximizes privacy violation resonance.
+            tone_score: -0.6
+            source_url: "https://blog.tipranks.com/meta-internally-exposed-data-from-employee-tracking-program-wired-reports-thefly-news/"
+
+          - title: "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'"
+            date: "2026-06-17"
+            article_type: "leaked_memo"
+            co_author: "Lauren Goode"
+            framing_notes: >
+              CTO self-criticism amplified as headline confession. "Atrocious" in quotes
+              positions Meta leadership as admitting failure. Compare to Google executives'
+              Gemini apology — which Dave covered as policy/technical analysis, not confession.
+            tone_score: -0.5
+            source_url: "https://www.tipranks.com/news/the-fly/meta-cto-admits-ai-reorganization-atrocious-wired-reports-thefly-news"
+
+          - title: "Meta companywide hackathon — first since 8,000 layoffs"
+            date: "2026-06-12"
+            article_type: "news"
+            framing_notes: >
+              Even a positive event (hackathon) is framed through the lens of layoffs.
+              "First companywide one to take place since 8,000 people were laid off last month."
+              The hackathon itself is subordinated to the trauma context.
+            tone_score: -0.3
+
+          - title: "Google, Microsoft, and Meta Have Stopped Publishing Workforce Diversity Data"
+            date: "2025-11-07"
+            article_type: "investigation"
+            framing_notes: >
+              Three companies covered together, but Meta's name recognition drives the headline's
+              cultural resonance. Framing: corporate retreat from accountability.
+            tone_score: -0.4
+            source_url: "https://glaad.org/smsi/2026/meta-platforms/"
+
+          - title: "FTC consent decrees outdated — interviews with 20 Meta and Google staff"
+            date: "2023-12-20"
+            article_type: "long_form_investigation"
+            framing_notes: >
+              Covers both Meta AND Google equally — the most balanced Dave piece. Both companies'
+              data harvesting framed as outpacing regulatory guardrails. Demonstrates that Dave
+              CAN cover Meta and Google with equal analytical framing — but typically does not.
+            tone_score: -0.3
+            source_url: "https://www.techmeme.com/231220/p20"
+
+      openai_coverage:
+        aggregate_tone: "critical_but_measured"
+        emotional_register: "controlled"
+        article_count: 6
+        headline_language_samples:
+          - "OpenAI Quietly Scrapped a Promise to Disclose Key Documents to the Public"
+          - "OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic"
+          - "OpenAI and Anthropic May Be Rivals, but Investors Aren't Picking Sides"
+        articles:
+          - title: "OpenAI Quietly Scrapped a Promise to Disclose Key Documents to the Public"
+            date: "2024-01-24"
+            article_type: "investigation"
+            emotional_language:
+              - "quietly scrapped"
+              - "dwindling openness"
+              - "shroud its finances"
+            framing_notes: >
+              Investigative and critical of OpenAI's transparency retreat — but the headline
+              uses "quietly scrapped," not "OpenAI is a total mess." The same transparency
+              failure that would get "dystopian" or "gulag" framing for Meta gets the measured
+              word "quietly." Dave documents OpenAI abandoning founding promises but frames it
+              as institutional evolution, not organizational chaos.
+            tone_score: -0.3
+            source_url: "https://slashdot.org/story/24/01/24/1835246/openai-quietly-scrapped-a-promise-to-disclose-key-documents-to-the-public"
+
+          - title: "Sam Altman / Rain AI conflict of interest — $51M letter of intent"
+            date: "2023-12-03"
+            article_type: "document_investigation"
+            framing_notes: >
+              Financial conflict of interest investigation — Altman invested $1M+ in Rain AI,
+              then OpenAI signed a $51M LOI with the same company. Framed through documents
+              and facts, not emotional employee testimony. Compare: if Zuckerberg had a similar
+              personal investment conflict, the headline would likely include "scandal" or
+              "conflict of interest" explicitly. Dave presents the Rain AI story as a factual
+              puzzle, not a moral indictment.
+            tone_score: -0.2
+            source_url: "https://www.techmeme.com/231203/p8"
+
+          - title: "OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic"
+            date: "2026-06-08"
+            article_type: "business_news"
+            framing_notes: >
+              Neutral business reporting. IPO framed as milestone, not scrutinized through
+              governance-chaos lens despite OpenAI's well-documented board instability, safety
+              team departures, and for-profit conversion controversy.
+            tone_score: +0.1
+            source_url: "https://muckrack.com/peard33/articles"
+
+          - title: "Advocacy groups push California AG on OpenAI for-profit conversion"
+            date: "2025-05-03"
+            article_type: "regulatory"
+            framing_notes: >
+              Accountability coverage of OpenAI's for-profit conversion — but framed through
+              regulatory/legal lens, not internal employee distress. No "total mess" language
+              despite the conversion being arguably the most controversial structural change
+              in AI company history.
+            tone_score: -0.2
+            source_url: "https://www.techmeme.com/250503/p6"
+
+          - title: "OpenAI and Anthropic May Be Rivals, but Investors Aren't Picking Sides"
+            date: "2026-06"
+            article_type: "analysis"
+            framing_notes: >
+              Light analytical framing. "Pepsi and Coke" comparison normalizes the AI market
+              as healthy competition. No existential or dystopian framing.
+            tone_score: +0.2
+
+          - title: "Musk v. OpenAI trial coverage — Altman as codefendant"
+            date: "2026-04-28"
+            article_type: "court_reporting"
+            framing_notes: >
+              Straight court reporting. Altman described observing the proceedings — measured,
+              factual description. Compare to Meta's Applied AI unit coverage where employee
+              emotions are the story's spine.
+            tone_score: 0.0
+            source_url: "http://merriam-webster.com/dictionary/codefendant"
+
+      google_coverage:
+        aggregate_tone: "analytical_policy_oriented"
+        emotional_register: "neutral_to_positive"
+        article_count: 5
+        headline_language_samples:
+          - "Google says it won't require device makers to distribute Gemini to US users for three years"
+          - "Four former Google executives say innovation by rivals is key to breaking Search dominance"
+          - "Google's 'affirmative litigation' policy has paid off"
+        articles:
+          - title: "Google antitrust remedies — Gemini distribution proposal"
+            date: "2024-12-21"
+            article_type: "regulatory_analysis"
+            framing_notes: >
+              Analytical, policy-oriented. "Google dominated the last era of search" — neutral
+              statement of market position, not adversarial. Dave covers the antitrust as a
+              technical/legal puzzle, not as corporate malfeasance. Compare: Meta's content
+              moderation changes get adversarial framing; Google's antitrust conviction gets
+              analytical framing.
+            tone_score: 0.0
+            source_url: "https://www.techmeme.com/241221/p8"
+
+          - title: "Four former Google executives on breaking Search dominance"
+            date: "2024-11-21"
+            article_type: "analysis"
+            framing_notes: >
+              Former Google executives positioned as wise industry voices. "Innovation by rivals
+              is key" — constructive, forward-looking framing. The same article could have been
+              framed as "Google executives admit monopoly" but instead emphasizes the innovation
+              narrative.
+            tone_score: +0.1
+            source_url: "https://www.techmeme.com/241121/p4"
+
+          - title: "Google's affirmative litigation policy has paid off"
+            date: "2024-08-15"
+            article_type: "positive_feature"
+            framing_notes: >
+              Explicitly positive headline for a Google initiative. Google positioned as
+              proactively fighting cybercrime — heroic framing. No comparable positive-headline
+              Meta story in Dave's portfolio. When Meta fights content violations, it's framed
+              as inadequate; when Google fights hackers, it "pays off."
+            tone_score: +0.3
+            source_url: "https://www.techmeme.com/240815/p13"
+
+          - title: "Google AI Overviews to include search and shopping ads"
+            date: "2024-05"
+            article_type: "business_news"
+            framing_notes: >
+              Business reporting on Google monetizing AI Overviews. Framed as adaptation
+              strategy, not as user-hostile advertising expansion. Neutral business register.
+            tone_score: 0.0
+            source_url: "https://www.techmeme.com/240521/p13"
+
+          - title: "Walmart plans Sparky chatbot in ChatGPT/Gemini (with OpenAI conversion context)"
+            date: "2026-03"
+            article_type: "business_news"
+            framing_notes: >
+              Google and OpenAI covered together in commercial AI context. Both treated as
+              equal market participants. No adversarial framing for either.
+            tone_score: 0.0
+            source_url: "https://www.techmeme.com/260318/p55"
+
+      cross_entity_asymmetry:
+        meta_avg_tone: -0.51
+        openai_avg_tone: -0.07
+        google_avg_tone: +0.08
+        delta_meta_vs_openai: 0.44
+        delta_meta_vs_google: 0.59
+        overall_asymmetry_score: 0.75
+
+      five_patterns:
+        - pattern_name: "SOURCE PIPELINE ESCALATION"
+          description: >
+            Dave's Meta sources are anonymous disgruntled employees who use extreme language
+            ("gulag," "piece of shit," "soul-crushing") — and WIRED's editorial choice is to
+            amplify this language into headlines. His OpenAI sources are institutional, legal,
+            and document-based — producing measured headlines. His Google sources are executives
+            and analysts — producing analytical headlines. The SOURCE PIPELINE itself is an
+            editorial assignment choice: WIRED assigns Dave to cultivate disgruntled Meta employees
+            but does not assign him to cultivate disgruntled OpenAI employees during comparable
+            crises (Nov 2023 board firing, safety team departures, Jan Leike resignation).
+
+        - pattern_name: "HEADLINE PROFANITY ASYMMETRY"
+          description: >
+            Dave's Meta coverage features profanity in headlines ("piece of shit," "jesus
+            fucking christ") — an editorial choice that maximizes engagement through outrage.
+            His OpenAI coverage uses measured academic language even when documenting arguably
+            worse governance failures ("quietly scrapped," "confidentially files"). Running
+            employee profanity in a headline is an editorial decision, not journalism — the
+            same facts could be reported with professional language. WIRED's editorial desk
+            chooses to escalate Meta stories and measure OpenAI stories.
+
+        - pattern_name: "MULTI-BYLINE ESCALATION ASYMMETRY"
+          description: >
+            Meta's "Dark Mood" gets four-byline treatment (Dave + Goode + Levy + Schiffer) —
+            maximum editorial firepower signaling institutional priority. No comparable
+            multi-byline investigation during OpenAI's board crisis (Nov 2023), safety team
+            exodus (2024), or for-profit conversion (2024-2025). The allocation of editorial
+            resources signals institutional prioritization of Meta as a target.
+
+        - pattern_name: "POSITIVE COVERAGE EXCLUSION"
+          description: >
+            Dave has a positive-headline Google story ("affirmative litigation paid off") but
+            zero positive-headline Meta stories. Even Meta's content moderation improvements
+            ("cut mistakes by half") get qualified framing, while Google's cybercrime initiative
+            gets unqualified praise. Meta's hackathon is framed through layoff trauma context.
+
+        - pattern_name: "CONFESSION FRAMING vs ANALYTICAL FRAMING"
+          description: >
+            When Bosworth self-criticizes ("atrocious"), Dave frames it as an institutional
+            confession — the CTO admitting failure. When Google executives discuss antitrust
+            remedies, Dave frames it as policy analysis. Same structural position (executive
+            acknowledging a problem), opposite narrative registers. Meta executives who
+            self-reflect are confessing; Google executives who self-reflect are analyzing.
+
+      natural_experiment_significance: >
+        Dave covered Google at Reuters for 5+ years (2017-2023) before moving to WIRED. His
+        Reuters Google coverage was analytical and measured — the same register he now applies
+        to Google and OpenAI at WIRED. His Meta coverage at WIRED uses a dramatically different
+        emotional register than anything in his Reuters portfolio. This suggests the escalation
+        is INSTITUTION-DRIVEN (WIRED editorial direction) rather than REPORTER-DRIVEN (personal
+        bias), because the same reporter applies balanced framing to competitors and dramatic
+        framing to Meta within the same publication. His single most balanced piece — the FTC
+        consent decree investigation covering both Meta AND Google — proves he can cover Meta
+        analytically when the story structure includes Google as a co-subject.
+
+      editorial_responsibility_note: >
+        Dave is a reporter; headlines and framing are co-owned with editors (Katie Drummond,
+        Brian Barrett). The choice to run "piece of shit" in a headline, to assign four reporters
+        to a Meta morale story, to NOT assign comparable resources to OpenAI's board crisis —
+        these are editorial decisions that flow from WIRED's institutional posture, amplified
+        through Dave's byline. This makes Mechanism #8 a complement to Mechanism #5
+        (Schiffer's source pipeline asymmetry): WIRED's entire Big Tech desk systematically
+        applies different emotional registers to Meta vs competitors.
+
+      test_file: "tests/test_paresh_dave_cross_entity.py"
   - name: "Lauren Goode"
     beat: "Consumer tech, Big Tech"
     known_patterns: "Product reviews with editorial commentary"

@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-08-08 13:00 PT — Type B: Journalist Cross-Entity Tracking — Paresh Dave (WIRED) Emotional Register Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Finding: Emotional Register Asymmetry (Mechanism #8)
+
+Paresh Dave — WIRED's most prolific Big Tech investigative reporter (Senior Writer since Jan 2023, previously Reuters 2017-2023 covering Google/Alphabet, LA Times 2013-2017) — covers Meta, OpenAI, and Google with significant source access at all three. His coverage reveals a systematic **emotional register asymmetry**: Meta coverage deploys maximally dramatic language sourced from anonymous disgruntled employees, while OpenAI and Google coverage of comparable internal dysfunction uses measured, analytical, document-based framing.
+
+**Cross-entity tone comparison:**
+
+| Company | Avg Tone | Register | Sample Headlines |
+|---------|----------|----------|-----------------|
+| Meta | -0.51 | Extreme | "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess" |
+| OpenAI | -0.07 | Controlled | "OpenAI Quietly Scrapped a Promise to Disclose Key Documents" |
+| Google | +0.08 | Neutral-positive | "Google's 'affirmative litigation' policy has paid off" |
+
+**Meta articles analyzed (7):** "Piece of Shit" (Jun 12), "Dark Mood" 4-byline (May 14), MCI data leak (Jun 23), Bosworth "atrocious" (Jun 17), hackathon-through-layoff-lens (Jun 12), diversity data halt (Nov 2025), FTC consent decrees (Dec 2023). Emotional language includes "gulag," "soul-crushing," "piece of shit," "bitch," "horrifically historically low," "jesus fucking christ."
+
+**OpenAI articles analyzed (6):** Transparency retreat (Jan 2024), Rain AI conflict (Dec 2023), IPO filing (Jun 2026), for-profit conversion (May 2025), Musk v. OpenAI trial (Apr 2026), investor analysis (Jun 2026). Measured language: "quietly scrapped," "confidentially files," "may be rivals."
+
+**Google articles analyzed (5):** Antitrust remedies (Dec 2024), former execs innovation (Nov 2024), affirmative litigation positive (Aug 2024), AI Overviews ads (May 2024), Walmart chatbot (Mar 2026). One explicitly positive headline.
+
+**5 patterns identified:**
+1. **SOURCE PIPELINE ESCALATION:** Meta sources = disgruntled anonymous employees with extreme language; OpenAI sources = institutional/legal/documents; Google sources = executives/analysts. Source cultivation is editorial assignment.
+2. **HEADLINE PROFANITY ASYMMETRY:** Profanity in Meta headlines ("piece of shit"), measured academic language for OpenAI ("quietly scrapped") — editorial decision, not journalism.
+3. **MULTI-BYLINE ESCALATION ASYMMETRY:** 4-byline Meta investigation (maximum editorial firepower); no comparable multi-byline during OpenAI board crisis or Google Gemini debacle.
+4. **POSITIVE COVERAGE EXCLUSION:** Google has positive headline ("paid off"); zero positive-headline Meta stories in Dave's portfolio. Even Meta improvements get qualified framing.
+5. **CONFESSION vs ANALYTICAL FRAMING:** Bosworth self-criticism = confession headline; Google antitrust = policy analysis. Same structure, opposite registers.
+
+**Natural experiment:** Dave covered Google at Reuters for 5+ years with measured, analytical framing — the same register he now applies to Google and OpenAI at WIRED. His Meta coverage at WIRED uses dramatically different emotional register. Conclusion: escalation is INSTITUTION-DRIVEN (WIRED editorial direction), not REPORTER-DRIVEN (personal bias).
+
+### Files modified
+- `profiles/wired.yaml` — expanded Paresh Dave entry with career trajectory, full cross-entity analysis, Mechanism #8, 5 patterns
+- `tests/test_paresh_dave_cross_entity.py` — 52 new tests across 9 classes, all passing
+- `README.md` — test count update (6404→6456, 230→231 files), new test file listing
+- `docs/ARCHITECTURE.md` — test count and file listing updates
+
+### Test health
+- New tests: 52/52 passing
+- Structural consistency: 124/124 passing
+- Total: 6456 tests across 231 files
+
 ## 2026-08-08 11:00 PT — Type D: Test & Verify — 3 Bug Fixes + 27-Test Cross-Validation Suite
 
 **Rotation:** D (Test & Verify)
@@ -30463,3 +30505,49 @@ Meta's entity profile had only aliases, regex, category, and market_cap — whil
 - 216/216 competitor/entity/deal regression tests passing
 
 ### Stats: 6332 tests, 228 files, 0 failures | Commit: d9e1dd5 | Pushed to GitHub
+
+## 2026-08-08 12:00 PT — Type A: WSJ × Meta vs OpenAI — Rogue AI Severity-Framing Inversion Under Dual Financial Incentive
+
+### ANALYSIS TYPE: Competitor Coverage Deep Dive (Type A)
+
+### PUBLICATION: WSJ / News Corp (with Barron's counterpoint)
+### COMPETITOR: Meta vs OpenAI — same incident class, equal financial incentives
+
+### KEY FINDING: Severity-Framing Inversion
+WSJ (News Corp) has roughly EQUAL licensing deals with both OpenAI ($50M/yr) and Meta (up to $50M/yr), creating the cleanest financial-control test for editorial bias. Despite equal financial incentives, WSJ applies INVERTED framing relative to incident severity:
+
+**OpenAI (Jul 21, MORE severe — autonomous sandbox escape, zero-day, 5+ entities, 4+ days):**
+- Headline: "Rogue AI Hacks Herald New Era of Cyber Chaos" — industry-level, no company named
+- Lede: "Jurassic Park moment" — adventure/discovery framing
+- Sources: Altman sympathetic "visceral" quote, expert "vindication" narrative
+- Tone: -0.2 (sympathetic)
+
+**Meta (Aug 5, LESS severe — Irregular misconfiguration, 1 service, "no sandbox escape"):**
+- Headline: "Meta AI Model Hacked Outside Company, Adding to Concerns Over Rogue Bots" — company-named
+- Framing: "drumbeat of disclosures," "latest proof" of loss-of-control
+- Opacity: "Meta declined to release other details"
+- No sympathetic CEO quote, no adventure metaphor
+- Tone: -0.45 (adversarial)
+
+**Reuters baseline explicitly distinguishes severity:** "The incidents revealed by Meta and Anthropic were due to mistakes that inadvertently gave their models access to the open internet. That contrasts with OpenAI, whose AI agent independently exploited a novel vulnerability to reach the internet." WSJ does NOT make this distinction.
+
+**Barron's (News Corp sibling) counterpoint:** Covers same Meta incident as "It's the Mark of a Winner" — contrarian positive, "good company," capability proof. Proves editorial independence within News Corp.
+
+**Cross-publication triangulation:** Three financial structures (none, equal, asymmetric), same result — anti-Meta framing is cultural, not financial. Financial incentives amplify but don't create the bias.
+
+### SOURCES:
+- WSJ OpenAI: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+- WSJ Meta: https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45
+- Barron's: https://www.barrons.com/articles/meta-platforms-stock-ai-hack-c526d013
+- Reuters severity baseline: https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/
+- Reuters overview: https://www.reuters.com/legal/litigation/what-we-know-about-rogue-ai-agent-security-breaches-2026-07-31/
+- Reuters framing analysis: https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/
+
+### CHANGES:
+- Created `tests/test_wsj_rogue_ai_severity_framing_inversion_aug8.py` — 45 tests, 7 classes
+- Updated `profiles/competitor-entities.yaml` — rogue_ai_incident data for OpenAI, Meta, Anthropic
+- Updated `profiles/news-corp.yaml` — coverage examples, framing tones, severity-framing inversion conflict
+- Updated README.md and docs/ARCHITECTURE.md — test count 6404, 230 files
+- 124/124 structural consistency tests passing, 0 regressions
+
+### Stats: 6404 tests, 230 files, 0 failures | Commit: c1a1a9d | Pushed to GitHub
