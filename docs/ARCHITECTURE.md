@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5787 tests across 214 test files (all from real articles)
+├── tests/                       # 5824 tests across 215 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -559,6 +559,7 @@ mediascope/
 │   ├── test_cross_platform_financial_incentives.py # Cross-platform financial incentive matrix: 18 competitor revenue streams (OpenAI, Amazon Rufus/Alexa+, Google News AI pilot, Microsoft PCM, Perplexity, ProRata) across 7/8 MediaScope publications vs 0 Meta deals, aggregate incentive gradient, per-publisher deal breakdowns with source URLs, Google pilot coercive Showcase sunset, Gizmodo clean control
 │   ├── test_aggregate_incentive_matrix.py # Aggregate incentive matrix structural integrity: 8-publication matrix field validation, deal count consistency between matrix and excluded_publishers, platform distribution analysis, control group (News Corp balanced/Gizmodo independent) predictions, excluded_publishers schema migration to structured dict format with source_url verification
 │   ├── test_news_corp_balanced_control.py # News Corp balanced control verification: WSJ Meta coverage tone (-0.15 vs WIRED -0.85), WSJ OpenAI critical coverage despite deal (-0.40), financial disclosure analysis (WSJ only publication disclosing deals), tone delta quantification, aggregate disclosure finding validation
+│   ├── test_news_corp_triple_revenue_aug7.py # News Corp Triple-Revenue Architecture: ONLY publisher receiving AI revenue from three major AI companies simultaneously (OpenAI deal, Meta deal, Anthropic settlement via HarperCollins $1.5B Bartz v. Anthropic). Q4 FY2026 record quarter ($2.34B rev +11%, adj EPS $0.35 vs $0.21 consensus, net income +167%), full year FY2026 ($9B rev, 18% EBITDA margin, $811M FCF +42%, $643M buyback). Brave countersuit (filed 2026-07-22, N.D. Cal.). Thomson: Meta deal "part of the business," Anthropic settlement benefits "in coming months." Woo-and-sue strategy validation. 6 classes, 37 tests
 │   ├── test_google_ad_dependency_paradox.py # Google advertising revenue dependency paradox: publishers' SDNY antitrust filings reveal simultaneous Google litigation AND AdX revenue dependency; advertising_dependency relationship type; Vox Media/Atlantic/Advance Publications AdX admissions; Atlantic dual Apple financial link (ownership + News+ platform revenue); financial vector count validation
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
 │   ├── test_wired_gulag_patterns.py # Wired "gulag" coverage: conscript terms, keystroke surveillance, Scale AI entity, article-context loaded language

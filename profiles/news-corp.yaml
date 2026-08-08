@@ -63,6 +63,14 @@ revenue_relationships:
     scope: "US and UK content for Meta AI training and retrieval. Archives included."
     source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
     verified: true
+  - partner: "Anthropic"
+    type: "settlement_revenue"
+    value: "Expected share of $1.5B class-action settlement"
+    signed: "Jun 2026 (Bartz v. Anthropic approved)"
+    scope: "HarperCollins share of publisher/author copyright settlement. Thomson on Q4 FY2026 call: 'we will likely benefit in coming months from our share of the $1.5 billion settlement with Anthropic, which will be compensating authors and publishers for IP claims related to AI.'"
+    source_url: "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
+    verified: true
+    notes: "Makes News Corp the FIRST publisher receiving revenue from THREE major AI companies simultaneously: OpenAI (licensing), Meta (licensing), Anthropic (settlement)."
   - partner: "Apple"
     type: "news_distribution"
     value: "undisclosed"
@@ -113,11 +121,21 @@ competitor_relationships:
     source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
     coverage_prediction: "softer"
   anthropic:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: "settlement_revenue"
+    estimated_value: "share of $1.5B class-action settlement (Bartz v. Anthropic)"
+    direction: "receiving"
+    description: |
+      HarperCollins (News Corp subsidiary) is a named publisher in the
+      Bartz v. Anthropic class-action settlement ($1.5B, approved Jun 20
+      2026 by Judge Martinez-Olguin — largest copyright payout in US
+      history). Thomson confirmed on Q4 FY2026 call (Aug 5) that News Corp
+      expects to receive its share "in coming months." This makes Anthropic
+      the THIRD AI company paying News Corp, joining OpenAI and Meta.
+      Unlike OpenAI and Meta's voluntary licensing deals, the Anthropic
+      revenue is litigation-driven (settlement), adding a "sue" revenue
+      stream to News Corp's "woo" revenue streams.
+    source_url: "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
+    coverage_prediction: "neutral (litigation-driven, not editorial-influenced)"
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
@@ -144,6 +162,104 @@ competitor_relationships:
     coverage_prediction: "neutral"
 
 # ===================================================================
+# FINANCIALS — Q4 FY2026 and Full Year FY2026 (reported Aug 5, 2026)
+# Source: Q4 FY2026 earnings call transcript + press release
+# ===================================================================
+financials:
+  q4_fy2026:
+    report_date: "2026-08-05"
+    quarter_ended: "2026-06-30"
+    revenue_b: 2.34
+    revenue_yoy_pct: 11
+    revenue_consensus_b: 2.23
+    revenue_beat: true
+    ebitda_segment_m: 423
+    ebitda_yoy_pct: 31
+    ebitda_margin_pct: 18.1
+    ebitda_margin_expansion_bp: 280
+    net_income_continuing_m: 230
+    net_income_yoy_pct: 167
+    eps_reported: 0.33
+    eps_prior_year: 0.09
+    eps_adjusted: 0.35
+    eps_adjusted_prior_year: 0.19
+    eps_consensus: 0.21
+    eps_beat: true
+    consecutive_revenue_growth_quarters: 12
+    consecutive_ebitda_growth_quarters: 13
+    record_quarter: true
+    dow_jones_revenue_m: 644
+    dow_jones_revenue_yoy_pct: 7
+    dow_jones_ebitda_m: 181
+    dow_jones_ebitda_yoy_pct: 20
+    dow_jones_margin_pct: 28.1
+    dow_jones_margin_expansion_bp: 310
+    dow_jones_digital_revenue_pct: 84
+    dow_jones_b2b_ebitda_pct: 50
+    book_publishing_revenue_m: 566
+    book_publishing_yoy_pct: 15
+    book_publishing_ebitda_m: 57
+    book_publishing_ebitda_yoy_pct: 14
+    digital_real_estate_revenue_m: 553
+    digital_real_estate_yoy_pct: 19
+    digital_real_estate_ebitda_m: 222
+    digital_real_estate_ebitda_yoy_pct: 46
+    news_media_revenue_m: 574
+    news_media_yoy_pct: 5
+    ai_licensing_impact: |
+      CFO Chandrashekar: "Fiscal 2026 marked another big step in the
+      transformation of News Corp as we added new AI licensing revenues."
+      Thomson confirmed Meta deal contributing to Q4: "The Meta deal is now
+      part of the business, not just at Dow Jones, but also for News Media,
+      as you'll see over successive quarters."
+      Analyst asked about margin impact of AI deals — Thomson declined
+      specifics but confirmed "these deals are important. There are more
+      deals on the way."
+      Dow Jones EBITDA margin expanded 310bp in Q4 — AI licensing revenue
+      is near-100% margin (no incremental content creation cost), making
+      it a likely contributor to margin expansion, though management did
+      not break out AI licensing revenue separately.
+    anthropic_settlement: |
+      Thomson: "We will likely benefit in coming months from our share of
+      the $1.5 billion settlement with Anthropic, which will be compensating
+      authors and publishers for IP claims related to AI." HarperCollins is
+      a named publisher in the Bartz v. Anthropic class. Revenue expected
+      to begin flowing later in calendar year 2026.
+    source_urls:
+      - "https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/"
+      - "https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/"
+      - "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
+  full_year_fy2026:
+    revenue_b: 9.0
+    revenue_yoy_pct: 7
+    ebitda_b: 1.6
+    ebitda_yoy_pct: 15
+    ebitda_margin_pct: 18.0
+    ebitda_margin_prior_year_pct: 16.7
+    free_cash_flow_m: 811
+    free_cash_flow_yoy_pct: 42
+    free_cash_flow_ebitda_conversion_pct: 50
+    eps_reported: 1.03
+    eps_reported_yoy_pct: 23
+    eps_adjusted: 1.18
+    eps_adjusted_yoy_pct: 33
+    digital_revenue_pct: 61
+    share_buyback_m: 643
+    share_buyback_prior_year_m: 150
+    share_buyback_increase_x: 4.3
+    record_year: true
+    three_year_profit_growth: "mid-teens CAGR on continuing ops basis"
+    dow_jones_revenue_b: 2.5
+    dow_jones_revenue_yoy_pct: 7
+    dow_jones_ebitda_m: 663
+    dow_jones_ebitda_yoy_pct: 13
+    dow_jones_ebitda_target_b: 1.0
+    dow_jones_ebitda_target_year: "FY2030"
+    source_urls:
+      - "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
+      - "https://www.thetimes.com/business/article/news-corp-beats-expectations-with-growth-in-news-data-and-books-sdtpshvx9"
+
+# ===================================================================
 # LITIGATION
 # ===================================================================
 litigation_connections:
@@ -151,6 +267,40 @@ litigation_connections:
     type: "copyright"
     status: "active"
     description: "Two News Corp subsidiaries sued Perplexity for copyright infringement."
+  - case: "News Corp vs Brave Software (countersuit)"
+    type: "copyright_countersuit"
+    status: "active"
+    filed: "2026-07-22"
+    court: "N.D. Cal. (Oakland)"
+    description: |
+      News Corp filed countersuit against Brave Software, accusing it of
+      "flagrant theft" in distributing and selling versions of WSJ and
+      NY Post articles to AI companies via covert scraping. Thomson on
+      Q4 call: "Brave, a company brave in name only, which has shamelessly
+      stolen our content at scale." Allegations: masked web crawlers
+      scanning pages, repackaging stolen files, delivering near-verbatim
+      copies to enterprise customers. Seeking injunction + up to $150,000
+      per infringement. News Corp's key argument: "The more content Brave
+      copies and sells, the more revenue it generates, and the less
+      incentive AI companies have to negotiate licenses with the publishers
+      who produced the content."
+    source_urls:
+      - "https://www.reuters.com/business/media-telecom/news-corp-countersues-brave-allegedly-scraping-articles-ai-2026-07-22/"
+      - "https://www.editorandpublisher.com/stories/news-corp-accuses-search-engine-brave-of-ai-copyright-infringement,262712"
+    background: |
+      Brave preemptively sued News Corp in Mar 2025, seeking declaration
+      that indexing/scraping was fair use. Brave argued all search engines
+      must index to exist. Revised complaint May 2026 after failed
+      negotiations. Thomson called it "piratical, parasitical practices."
+    mediascope_relevance: |
+      Demonstrates News Corp's "woo and sue" strategy in action: partners
+      with companies that pay (OpenAI, Meta) while suing companies that
+      scrape without paying (Perplexity, Brave). This is the clearest
+      evidence that News Corp views content licensing as a revenue strategy,
+      not just an editorial arrangement. The Brave suit specifically argues
+      that unlicensed scraping UNDERMINES the licensing market News Corp has
+      built with OpenAI and Meta — making the licensing deals and the
+      litigation part of a unified commercial strategy.
 
 # ===================================================================
 # MEDIA BIAS RATINGS
@@ -166,8 +316,37 @@ bias_ratings:
 # ===================================================================
 control_designation:
   type: "balanced_control"
-  rationale: "News Corp receives comparable payments from both OpenAI ($50M/yr) and Meta (up to $50M/yr). If financial incentives drive coverage tone, News Corp should show balanced coverage of both. Deviation from balance in either direction would suggest editorial bias beyond financial incentive."
+  rationale: |
+    News Corp receives comparable payments from both OpenAI ($50M/yr) and
+    Meta (up to $50M/yr), plus expected Anthropic settlement revenue via
+    HarperCollins. If financial incentives drive coverage tone, News Corp
+    should show balanced coverage of both OpenAI and Meta. As of Q4 FY2026,
+    AI licensing is confirmed as a material revenue driver by CFO
+    Chandrashekar, with the Meta deal now contributing to results.
+    Deviation from balance in either direction would suggest editorial
+    bias beyond financial incentive.
   comparison_baseline: true
+  triple_revenue_note: |
+    News Corp is the ONLY publisher in the MediaScope dataset receiving
+    AI-related revenue from THREE major AI companies simultaneously:
+    (1) OpenAI: $50M/yr content licensing (voluntary, signed May 2024)
+    (2) Meta: Up to $50M/yr content licensing (voluntary, signed Mar 2026)
+    (3) Anthropic: Share of $1.5B settlement (litigation-driven, expected 2026)
+    
+    PLUS significant deals in pipeline with "several other honorable
+    companies" per Thomson's Q4 FY2026 call (Aug 5, 2026).
+    
+    This triple-revenue architecture creates the MOST diversified AI
+    revenue stream of any publisher in the dataset. Compare:
+    - Condé Nast: OpenAI + Amazon Rufus + Microsoft PCM + Perplexity (4 sources, NO Meta)
+    - NYT: Amazon (1 source, suing OpenAI/Microsoft, NO Meta)
+    - News Corp: OpenAI + Meta + Anthropic settlement (3 sources, BALANCED)
+    
+    The key analytical distinction: News Corp is the ONLY publisher with
+    revenue from both Meta AND its competitors. All other multi-deal
+    publishers have deals ONLY with Meta's competitors, creating one-sided
+    financial incentives to favor those competitors and produce adversarial
+    Meta coverage.
 
 # ===================================================================
 # DISCLOSURE PRACTICE — WSJ is the ONLY publication that discloses

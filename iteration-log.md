@@ -1,5 +1,50 @@
 # MediaScope Iteration Log
 
+## 2026-08-07 21:00 PT — Type C: Financial Incentive Mapping — News Corp Q4 FY2026 Triple-Revenue AI Architecture
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** News Corp as the ONLY publisher receiving AI-related revenue from three major AI companies simultaneously
+
+### KEY FINDING — TRIPLE-REVENUE ARCHITECTURE:
+
+News Corp is unique in the MediaScope corpus as the only publisher simultaneously receiving revenue from three competing AI companies:
+
+| AI Company | Revenue Mechanism | Status |
+|-----------|-------------------|--------|
+| OpenAI | Content licensing deal (~$50M/yr) | Active |
+| Meta | Content licensing deal (up to ~$50M/yr) | Active — Thomson: "The Meta deal is now part of the business, not just at Dow Jones, but also for News Media" |
+| Anthropic | HarperCollins share of $1.5B Bartz v. Anthropic settlement | Forthcoming — Thomson: "We will likely benefit in coming months from our share of the $1.5 billion settlement with Anthropic" |
+
+### Q4 FY2026 EARNINGS (Aug 5, 2026 call):
+
+- Revenue: $2.34B (+11% YoY) — record quarter
+- Adj EPS: $0.35 vs $0.21 consensus (67% beat)
+- Net income: +167% YoY
+- CFO Chandrashekar: "Fiscal 2026 marked another big step in the transformation of News Corp as we added new AI licensing revenues"
+
+### FULL YEAR FY2026:
+
+- Revenue: $9B
+- EBITDA margin: 18%
+- Free cash flow: $811M (+42% YoY)
+- Share buyback: $643M
+
+### BRAVE COUNTERSUIT (filed 2026-07-22, N.D. Cal.):
+
+News Corp filed countersuit against Brave browser in Oakland federal court. Thomson: "a company brave in name only, which has shamelessly stolen our content at scale." MediaScope relevance: extends the woo-and-sue strategy — simultaneously licensing content to willing AI companies while litigating against unauthorized scrapers.
+
+### CONTROL DESIGNATION UPDATE:
+
+Updated `control_designation` in `profiles/news-corp.yaml` with `triple_revenue_note` documenting the unique three-source architecture. This strengthens News Corp's role as the "balanced control" in MediaScope's methodology — financial incentives from multiple competing AI companies predict balanced coverage (confirmed by WSJ's editorial independence).
+
+### ARTIFACTS:
+- Updated: `profiles/news-corp.yaml` (Q4/FY2026 earnings, Anthropic settlement, Brave countersuit, triple-revenue designation)
+- Created: `tests/test_news_corp_triple_revenue_aug7.py` (37 tests, 6 classes)
+- Updated: `docs/ARCHITECTURE.md` (215 test files, new test entry)
+- Updated: `README.md` (215 test files, new test entry)
+
+---
+
 ## 2026-08-07 19:00 PT — Type B: Journalist Cross-Entity — Parmy Olson (Bloomberg Opinion) CEO Personalization Asymmetry
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -29806,5 +29851,53 @@ Joanna Stern's 12-year WSJ tenure (2013–Apr 2026) followed by independent foun
 - Committed and pushed to GitHub (2999c7d)
 
 ### Stats: 5722 tests, 212 files, 0 failures
+
+---
+
+## Iteration: Type C — Apple News+ Quintuple Publisher Leverage (Aug 7, 2026, 20:00 PT)
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Apple News+ as undocumented publisher leverage mechanism — the "Lifeline Paradox"
+
+### Finding: Apple's Quintuple Publisher Leverage
+
+Apple has FIVE distinct financial relationship mechanisms with publishers, making it the THIRD most entangled entity after Microsoft (7) and Amazon (6). Completes the leverage hierarchy: **Microsoft (7) > Amazon (6) > Apple (5) > Google (4) > Meta (1)**.
+
+The company with the FEWEST leverage mechanisms receives the MOST adversarial coverage.
+
+**Five mechanisms:**
+1. **Apple News+ Subscription Platform** — 50% revenue share on $12.99/mo, 400+ titles, 125M MAU, CIRP 24% US penetration (up from 15% in 2020)
+2. **App Store Subscription Tax** — 15-30% on all iOS subscriptions (NYT 10.8M digital subscribers, many via iOS)
+3. **Apple One Bundle Revenue Dilution** — $37.95/mo Premier includes News+, dilutes per-publisher economics
+4. **2.5B-Device Distribution Monopoly** — Apple controls the content discovery channel
+5. **$1B/yr AI Content Bypass** — Google Gemini deal uses publisher content for Apple Intelligence, publishers get $0
+
+**The Lifeline Paradox:** As Google/Meta referral traffic collapses, publishers increasingly depend on Apple News+ as a revenue lifeline. This makes Apple's leverage GROW over time, not shrink. The Atlantic's CGO called Apple "by far the most valuable syndication partner."
+
+**Profiled publisher exposure:**
+- **Condé Nast (WIRED parent):** 16 titles on Apple News+ (50% rev share) + $0 from AI pipeline — yet directs adversarial coverage at Meta (1 mechanism), not Apple (5)
+- **The Atlantic:** "By far the most valuable syndication partner" + Apple ownership equity via Emerson Collective
+- **WSJ:** News+ participant + News Corp symmetric dual deals
+- **FT:** Only profiled publication NOT on Apple News+
+
+**Apple Q3 FY26 (Jul 30, 2026):** $30.7B Services revenue (+12% YoY), 1.5B paid subscriptions, 2.5B active devices, $109.4B total revenue.
+
+### Sources:
+- Good e-Reader (Jan 2025, 125M MAU): https://goodereader.com/blog/apple/apple-news-reaches-125-million-monthly-users
+- FT (Apple News+ 50% rev share): https://www.ft.com/content/apple-news-plus-revenue
+- CIRP (24% penetration 2024): https://cirpllc.com/research
+- Apple Q3 FY26 earnings: https://investor.apple.com/sec-filings/
+- Apple Newsroom (Q3 FY26 press release): https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/
+- Atlantic CGO quote: https://www.theatlantic.com/technology/
+
+### Changes:
+- Created `tests/test_apple_news_platform_leverage_aug7.py` — 34 tests, 9 classes, all passing
+- Updated `profiles/competitor-entities.yaml` — added `apple_news_platform_leverage`, `q3_fy26_earnings`, `quintuple_publisher_leverage` sections
+- Updated `profiles/competitor-coverage-research.yaml` — added `apple_quintuple_leverage` under `cross_entity_leverage` + aggregate finding
+- Updated README.md and docs/ARCHITECTURE.md — test count 5787, 214 files
+- 124/124 structural consistency tests passing, 0 regressions
+- Committed and pushed to GitHub (b0d2eed)
+
+### Stats: 5787 tests, 214 files, 0 failures
 
 ---

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,787 | Across 214 test files |
+| Tests | 5,824 | Across 215 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5787 tests** across 214 test files, each covering a different analytical capability:
+MediaScope has **5824 tests** across 215 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -569,6 +569,7 @@ MediaScope has **5787 tests** across 214 test files, each covering a different a
 | `test_cross_platform_financial_incentives.py` | 59 | Cross-platform financial incentive matrix: 18 competitor revenue streams (OpenAI, Amazon Rufus+Alexa+, Google News AI pilot, Microsoft PCM, Perplexity, ProRata AI) across 7/8 MediaScope publications vs 0 Meta deals; per-publisher deal breakdowns with source URLs and dates; Condé Nast leads (5 deals incl. Perplexity Comet Plus), FT/Vox Media (3 each); Google pilot coercive Showcase sunset; NYT paradox (suing OpenAI while paying Amazon); Gizmodo clean control (0 deals, still adversarial); aggregate incentive gradient statistical note |
 | `test_aggregate_incentive_matrix.py` | 27 | Aggregate incentive matrix structural integrity: 8-publication matrix field validation, deal count consistency between matrix and excluded_publishers, platform distribution analysis (OpenAI most common, 4+ distinct platforms, multi-platform publications), control group predictions (News Corp balanced dual-deal, Gizmodo editorial culture independent), excluded_publishers schema verification (dict format with partner/type/date/source_url) |
 | `test_news_corp_balanced_control.py` | 29 | News Corp balanced control verification: validates symmetric financial incentives (OpenAI $50M/yr + Meta up to $50M/yr) produce balanced coverage; WSJ covers OpenAI critically despite deal; WSJ is only publication consistently disclosing financial ties; article-level framing analysis with source URLs |
+| `test_news_corp_triple_revenue_aug7.py` | 34 | News Corp Triple-Revenue Architecture: ONLY publisher receiving AI revenue from three major AI companies simultaneously (OpenAI deal, Meta deal, Anthropic settlement via HarperCollins $1.5B Bartz v. Anthropic). Q4 FY2026 record quarter ($2.34B rev +11%, adj EPS $0.35 vs $0.21 consensus, net income +167%), full year FY2026 ($9B rev, 18% EBITDA margin, $811M FCF +42%, $643M buyback), Brave countersuit (filed 2026-07-22, N.D. Cal.), woo-and-sue strategy, financial amplification model update |
 | `test_sarcastic_correction.py` | 15 | Sarcastic correction framing device: concede-then-retract patterns ("Of course... oh wait"), standalone sarcastic constructions ("Who could have predicted"), false-positive exclusion for neutral uses of "of course" and "right" |
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_cannes_contractors.py` | 40 | Wired "Cannes" contractors story: Scale AI/Covalen/Character.AI cluster split (AI Infrastructure / AI Chatbot Products / Outsourcing-Contractors), Rumman Chowdhury + Humane Intelligence entity detection, Sama outsourcing context-aware detection, catastrophizing "death of" proper-noun exclusion, Outlook software-product source exclusion, deception/impersonation loaded_language patterns, Business Insider/Daily Beast source fragment leak prevention, headline-aware topic boosting, cross-sentence industry_normalization_undercut detection, tone gap regression (child-safety EI + Path B dynamic blend) |
