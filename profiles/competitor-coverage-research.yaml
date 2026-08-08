@@ -78,8 +78,8 @@ aggregate_findings:
     active adtech antitrust litigation) should predict even MORE adversarial Google coverage — yet Meta receives more. This
     WEAKENS the 'Meta deserves it' confound.
   - Advance Publications dual-asset conflict (Reddit 23.3% + Condé Nast wholly owned) means WIRED's parent structure profits
-    from BOTH user-generated AND professional content licensing to AI companies, making AI-must-pay editorial coverage
-    structurally aligned with Advance's financial interests across two subsidiaries simultaneously
+    from BOTH user-generated AND professional content licensing to AI companies, making AI-must-pay editorial coverage structurally
+    aligned with Advance's financial interests across two subsidiaries simultaneously
   evidence_strength: STRONG
   hypothesis: 'Publications that receive AI licensing revenue from a company
 
@@ -488,7 +488,7 @@ aggregate_findings:
       Google relationship still produces less adversarial Google coverage than Meta coverage — dependency creates editorial
       restraint
     source_urls:
-    - http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
+    - https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
     - https://ppc.land/content/files/2026/01/1768500307197.pdf
     - https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on
   - description: 'Digiday''s Dec 2025 publisher scorecard for Big Tech AI licensing:
@@ -1203,155 +1203,177 @@ publications:
       journalist: Matteo Wong
       role: Primary AI beat reporter, The Atlantic
       discovery_date: '2026-08-08'
-      finding_summary: |
-        Matteo Wong applies systematically different framing standards to Meta vs.
+      finding_summary: 'Matteo Wong applies systematically different framing standards to Meta vs.
+
         OpenAI vs. Anthropic. Meta coverage personalizes to Zuckerberg, uses loaded
+
         language, and frames AI strategy as reductive/cynical. OpenAI coverage uses
+
         industry-wide framing and underdog narratives. Anthropic coverage frames the
+
         company sympathetically as philosophical and earnest. The three-tier hierarchy
-        correlates with The Atlantic's financial relationships: 0 Meta links (most
+
+        correlates with The Atlantic''s financial relationships: 0 Meta links (most
+
         adversarial), 3+ OpenAI links (neutral), 0 Anthropic links but 0 adversarial
+
         incentive (most sympathetic).
+
+        '
       meta:
         average_tone: -0.45
         headline_personalization_pct: 75
         financial_relationships_count: 0
-        framing_description: |
-          Personalized to Zuckerberg in headlines and body. Reductive framing of
-          Meta's AI strategy as merely keeping users 'hooked on legacy social-media
-          apps.' Mocking tone in profile pieces. 'Open-washing' accusation for Llama.
-          Meta AI described as 'floundering' historically.
+        framing_description: 'Personalized to Zuckerberg in headlines and body. Reductive framing of
+
+          Meta''s AI strategy as merely keeping users ''hooked on legacy social-media
+
+          apps.'' Mocking tone in profile pieces. ''Open-washing'' accusation for Llama.
+
+          Meta AI described as ''floundering'' historically.
+
+          '
         language_markers:
-          - 'legacy social-media apps and devices'
-          - 'open-washing'
-          - 'aggrievement was palpable'
-          - 'floundered'
-          - 'just a way to keep people hooked'
+        - legacy social-media apps and devices
+        - open-washing
+        - aggrievement was palpable
+        - floundered
+        - just a way to keep people hooked
         key_articles:
-          - headline: "He's No Elon Musk"
-            date: '2025-01-07'
-            reference: "Matteo Wong, The Atlantic — Zuckerberg free-speech pivot framed as Musk imitation"
-            tone: -0.6
-            personalized: true
-          - headline: "Meta superintelligence as legacy-app bait"
-            date: '2025-07-18'
-            url: "Merriam-Webster citation of Wong/Atlantic: 'superintelligence may just be a way to keep people hooked on Meta's legacy social-media apps'"
-            tone: -0.5
-            personalized: true
-          - headline: "There Was Never Such a Thing as 'Open' AI"
-            date: '2024-10'
-            reference: "Wong/Atlantic — frames Meta's Llama as 'open-washing', accusation of co-opting open-source credibility"
-            tone: -0.3
-            personalized: false
+        - headline: He's No Elon Musk
+          date: '2025-01-07'
+          reference: Matteo Wong, The Atlantic — Zuckerberg free-speech pivot framed as Musk imitation
+          tone: -0.6
+          personalized: true
+        - headline: Meta superintelligence as legacy-app bait
+          date: '2025-07-18'
+          url: 'Merriam-Webster citation of Wong/Atlantic: ''superintelligence may just be a way to keep people hooked on
+            Meta''s legacy social-media apps'''
+          tone: -0.5
+          personalized: true
+        - headline: There Was Never Such a Thing as 'Open' AI
+          date: 2024-10
+          reference: Wong/Atlantic — frames Meta's Llama as 'open-washing', accusation of co-opting open-source credibility
+          tone: -0.3
+          personalized: false
       openai:
         average_tone: -0.05
         headline_personalization_pct: 10
         financial_relationships_count: 3
-        framing_description: |
-          Industry-wide framing: costs, competitive dynamics, and security concerns
+        framing_description: 'Industry-wide framing: costs, competitive dynamics, and security concerns
+
           presented as affecting the whole AI sector, not OpenAI-specific institutional
+
           critique. Underdog narrative when OpenAI faces competitive pressure (losing
-          to Google Gemini framed sympathetically as 'in trouble'). Analytical rather
+
+          to Google Gemini framed sympathetically as ''in trouble''). Analytical rather
+
           than loaded language. Sam Altman rarely personalized in headlines.
+
+          '
         language_markers:
-          - 'in trouble (competitive, not institutional)'
-          - 'sticker shock (industry-wide cost framing)'
-          - 'ruthless efficiency (about AI models generally)'
-          - 'AI industry (collective framing)'
+        - in trouble (competitive, not institutional)
+        - sticker shock (industry-wide cost framing)
+        - ruthless efficiency (about AI models generally)
+        - AI industry (collective framing)
         key_articles:
-          - headline: 'OpenAI Is in Trouble'
-            date: '2025-12-09'
-            reference: "Wong/Atlantic — frames OpenAI as competitive underdog losing to Google Gemini 3"
-            tone: -0.1
-            personalized: false
-          - headline: "A Startling Glimpse at AI's Ruthless Efficiency"
-            date: '2026-07-23'
-            reference: "Wong/Atlantic — OpenAI models autonomously hacking framed as industry/security concern, not OpenAI institutional failure"
-            tone: -0.1
-            personalized: false
-          - headline: "China's answer to AI sticker shock"
-            date: '2026-07-10'
-            reference: "Wong/Atlantic — AI costs framed as industry-wide, mentions OpenAI and Anthropic neutrally"
-            tone: 0.0
-            personalized: false
+        - headline: OpenAI Is in Trouble
+          date: '2025-12-09'
+          reference: Wong/Atlantic — frames OpenAI as competitive underdog losing to Google Gemini 3
+          tone: -0.1
+          personalized: false
+        - headline: A Startling Glimpse at AI's Ruthless Efficiency
+          date: '2026-07-23'
+          reference: Wong/Atlantic — OpenAI models autonomously hacking framed as industry/security concern, not OpenAI institutional
+            failure
+          tone: -0.1
+          personalized: false
+        - headline: China's answer to AI sticker shock
+          date: '2026-07-10'
+          reference: Wong/Atlantic — AI costs framed as industry-wide, mentions OpenAI and Anthropic neutrally
+          tone: 0.0
+          personalized: false
       anthropic:
-        average_tone: 0.20
+        average_tone: 0.2
         headline_personalization_pct: 0
         financial_relationships_count: 0
-        framing_description: |
-          Sympathetic framing: Amodei described as 'the closest the industry has
-          to a philosopher.' Organization described as 'pathologically earnest.'
+        framing_description: 'Sympathetic framing: Amodei described as ''the closest the industry has
+
+          to a philosopher.'' Organization described as ''pathologically earnest.''
+
           Internal tensions framed as principled struggle, not dysfunction.
+
           Dangerous capabilities framed as national/industry concern, not
+
           institutional recklessness. Government actions against Anthropic
-          framed as 'war' (Anthropic as subject of overreach).
+
+          framed as ''war'' (Anthropic as subject of overreach).
+
+          '
         language_markers:
-          - 'philosopher (Amodei framing)'
-          - 'pathologically earnest'
-          - 'at war with itself (principled tension)'
-          - "everyone's problem (shared responsibility)"
-          - 'war against Anthropic (government overreach framing)'
+        - philosopher (Amodei framing)
+        - pathologically earnest
+        - at war with itself (principled tension)
+        - everyone's problem (shared responsibility)
+        - war against Anthropic (government overreach framing)
         key_articles:
-          - headline: 'Anthropic Is at War With Itself'
-            date: '2026-01-28'
-            url: https://www.theatlantic.com/technology/2026/01/anthropic-is-at-war-with-itself/684892/
-            tone: 0.15
-            personalized: false
-          - headline: "Claude Mythos Preview Is Everyone's Problem"
-            date: '2026-04-11'
-            reference: "Wong/Atlantic — dangerous AI capabilities framed as collective concern"
-            tone: 0.10
-            personalized: false
-          - headline: "The White House Is Ratcheting Up Its War Against Anthropic"
-            date: '2026-06-16'
-            url: https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/
-            tone: 0.30
-            personalized: false
-      mechanism: |
-        The three-tier hierarchy correlates with financial relationships but does NOT
-        map to a simple 'pays more = softer coverage' model. Instead, the pattern
-        reveals an ADVERSARIAL INCENTIVE model:
-
-        - Meta (0 financial links + owner holds $17B in Meta competitor Apple stock):
-          Maximum adversarial incentive. Softer Meta coverage provides no revenue
-          benefit and conflicts with owner's competitor investment thesis.
-
-        - OpenAI (3+ financial links: licensing deal, EC equity exit, Atlantic Labs):
-          Industry-framing avoids institutional critique of a paying partner. Underdog
-          narratives position OpenAI sympathetically without requiring investigative
-          resources. Financial relationship predicts neutral-analytical tone.
-
-        - Anthropic (0 financial links, 0 publisher deals, 0 adversarial incentive):
-          No financial reason to cover Anthropic negatively or positively. Sympathetic
-          framing reflects genuine editorial interest in Anthropic's safety-first
-          positioning, which aligns with Atlantic's brand as a 'thinkpiece factory'
-          (NPR description). Zero adversarial incentive + narrative alignment =
-          most sympathetic coverage.
-
-        KEY DISTINCTION from Parmy Olson (Bloomberg):
-        Olson's asymmetry stems from professional identity capture (book thesis).
-        Wong's asymmetry stems from institutional financial architecture — the
-        publication-level incentive structure, not individual journalist investment.
-        This makes the Atlantic pattern more significant: it suggests editorial
-        culture absorbs ownership-chain financial incentives even without conscious
-        journalist bias.
+        - headline: Anthropic Is at War With Itself
+          date: '2026-01-28'
+          url: https://www.theatlantic.com/technology/2026/01/anthropic-is-at-war-with-itself/684892/
+          tone: 0.15
+          personalized: false
+        - headline: Claude Mythos Preview Is Everyone's Problem
+          date: '2026-04-11'
+          reference: Wong/Atlantic — dangerous AI capabilities framed as collective concern
+          tone: 0.1
+          personalized: false
+        - headline: The White House Is Ratcheting Up Its War Against Anthropic
+          date: '2026-06-16'
+          url: https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/
+          tone: 0.3
+          personalized: false
+      mechanism: "The three-tier hierarchy correlates with financial relationships but does NOT\nmap to a simple 'pays more\
+        \ = softer coverage' model. Instead, the pattern\nreveals an ADVERSARIAL INCENTIVE model:\n\n- Meta (0 financial links\
+        \ + owner holds $17B in Meta competitor Apple stock):\n  Maximum adversarial incentive. Softer Meta coverage provides\
+        \ no revenue\n  benefit and conflicts with owner's competitor investment thesis.\n\n- OpenAI (3+ financial links:\
+        \ licensing deal, EC equity exit, Atlantic Labs):\n  Industry-framing avoids institutional critique of a paying partner.\
+        \ Underdog\n  narratives position OpenAI sympathetically without requiring investigative\n  resources. Financial relationship\
+        \ predicts neutral-analytical tone.\n\n- Anthropic (0 financial links, 0 publisher deals, 0 adversarial incentive):\n\
+        \  No financial reason to cover Anthropic negatively or positively. Sympathetic\n  framing reflects genuine editorial\
+        \ interest in Anthropic's safety-first\n  positioning, which aligns with Atlantic's brand as a 'thinkpiece factory'\n\
+        \  (NPR description). Zero adversarial incentive + narrative alignment =\n  most sympathetic coverage.\n\nKEY DISTINCTION\
+        \ from Parmy Olson (Bloomberg):\nOlson's asymmetry stems from professional identity capture (book thesis).\nWong's\
+        \ asymmetry stems from institutional financial architecture — the\npublication-level incentive structure, not individual\
+        \ journalist investment.\nThis makes the Atlantic pattern more significant: it suggests editorial\nculture absorbs\
+        \ ownership-chain financial incentives even without conscious\njournalist bias.\n"
       confounding_factors:
-        - "Meta has genuinely more privacy/child safety controversies than OpenAI or Anthropic in 2025-2026"
-        - "Wong may have less personal access to Zuckerberg than to Altman/Amodei, affecting depth of coverage"
-        - "Anthropic's safety-first positioning genuinely generates more sympathetic coverage across ALL outlets"
-        - "Atlantic's editorial culture (thinkpiece factory) may naturally gravitate to philosophical subjects like Amodei"
-        - "Sample size: Wong's article count varies by entity — Meta coverage may include more routine news vs. OpenAI/Anthropic features"
-      significance: |
-        This is the first JOURNALIST-LEVEL framing analysis for The Atlantic's AI beat.
+      - Meta has genuinely more privacy/child safety controversies than OpenAI or Anthropic in 2025-2026
+      - Wong may have less personal access to Zuckerberg than to Altman/Amodei, affecting depth of coverage
+      - Anthropic's safety-first positioning genuinely generates more sympathetic coverage across ALL outlets
+      - Atlantic's editorial culture (thinkpiece factory) may naturally gravitate to philosophical subjects like Amodei
+      - 'Sample size: Wong''s article count varies by entity — Meta coverage may include more routine news vs. OpenAI/Anthropic
+        features'
+      significance: 'This is the first JOURNALIST-LEVEL framing analysis for The Atlantic''s AI beat.
+
         Previous Atlantic analysis focused on publication-level financial conflicts
+
         (Apple stock, OpenAI deal, io Products exit) and editorial silence (Apple v.
-        OpenAI 29-day gap). Wong's three-tier hierarchy demonstrates that ownership-chain
+
+        OpenAI 29-day gap). Wong''s three-tier hierarchy demonstrates that ownership-chain
+
         financial incentives manifest in SPECIFIC LANGUAGE CHOICES at the journalist
+
         level: loaded adjectives for Meta, analytical nouns for OpenAI, sympathetic
+
         descriptors for Anthropic. Combined with the 29-day Apple v. OpenAI silence,
+
         this establishes The Atlantic as the second-most asymmetric publication in the
-        dataset after WIRED (which has a ~0.95 Meta-OpenAI gap vs Atlantic's ~0.40
+
+        dataset after WIRED (which has a ~0.95 Meta-OpenAI gap vs Atlantic''s ~0.40
+
         OpenAI-Meta gap + ~0.65 Anthropic-Meta gap + editorial silence).
+
+        '
   financial-times:
     asymmetry_verdict: 'FT shows significant asymmetry upon deep analysis. Reclassified from
 
@@ -2031,7 +2053,7 @@ publications:
       openai_tone: -0.25
       role: Global Technology Editor
       source_urls:
-      - http://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/
+      - https://boomers-daily.com/2026/04/02/the-guardian-weekly-april-3-2026-preview/
       - https://buzzsumo.com/journalist/dan-milmo-1645912/
       - https://threatbeat.com/attacks-and-incidents/boss-of-startup-hacked-by-rogue-openai-agent-urges-radical-transparency-in-investigation/
       - https://carruthersandjackson.com/instagram-owner-meta-fined-e405m-over-handling-of-teens-data/
@@ -3033,7 +3055,7 @@ publications:
           Google''s entry into the same space received no comparable treatment.
 
           '
-        source_url: http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
+        source_url: https://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
       meta_investigation:
         article: Meta Plans Facial Recognition Feature for Ray-Ban Smart Glasses
         co_byline: Kalley Huang, Mike Isaac
@@ -3090,34 +3112,37 @@ publications:
 
         '
     kevin_roose_cross_entity:
-      overview: "Kevin Roose — NYT's most prominent AI columnist (2017–Aug 2026), Hard Fork co-host, AGI Chronicles author — exhibits TRIPLE professional identity capture centering OpenAI/AGI ecosystem. Parallels Parmy Olson 'Supremacy' mechanism but with 3 reinforcing pillars."
+      overview: Kevin Roose — NYT's most prominent AI columnist (2017–Aug 2026), Hard Fork co-host, AGI Chronicles author
+        — exhibits TRIPLE professional identity capture centering OpenAI/AGI ecosystem. Parallels Parmy Olson 'Supremacy'
+        mechanism but with 3 reinforcing pillars.
       mechanism: professional_identity_capture
       pillar_count: 3
       pillars:
-        - book_investment: "The AGI Chronicles (FSG, Oct 6 2026) — career's biggest work centers OpenAI/AGI race narrative"
-        - career_defining_interaction: "Sydney/Bing conversation (Feb 2023) — made Roose famous via Microsoft/OpenAI product"
-        - business_model: "Post-NYT AI media venture with Casey Newton — access dependencies on AI lab CEOs"
+      - book_investment: The AGI Chronicles (FSG, Oct 6 2026) — career's biggest work centers OpenAI/AGI race narrative
+      - career_defining_interaction: Sydney/Bing conversation (Feb 2023) — made Roose famous via Microsoft/OpenAI product
+      - business_model: Post-NYT AI media venture with Casey Newton — access dependencies on AI lab CEOs
       ceo_access_pattern:
-        feature_treatment: "Nadella (Hard Fork Live headliner Jun 2026), Pichai (one-on-one at I/O May 2026), Altman (extended access)"
-        meta_treatment: "'The Zuck Bot Is Coming' — reductive nickname, segment not feature (Apr 2026)"
+        feature_treatment: Nadella (Hard Fork Live headliner Jun 2026), Pichai (one-on-one at I/O May 2026), Altman (extended
+          access)
+        meta_treatment: '''The Zuck Bot Is Coming'' — reductive nickname, segment not feature (Apr 2026)'
       ai_interaction_correlation:
-        sydney_openai: "Declared love → sympathetic coverage"
-        llama_meta: "Reportedly said 'I hate Kevin Roose' → dismissive coverage"
-        claude_anthropic: "Self-described 'career advisor' → responsible steward framing"
+        sydney_openai: Declared love → sympathetic coverage
+        llama_meta: Reportedly said 'I hate Kevin Roose' → dismissive coverage
+        claude_anthropic: Self-described 'career advisor' → responsible steward framing
       tone_scores:
-        openai: 0.10
-        anthropic: 0.20
-        google: 0.10
-        meta: -0.30
+        openai: 0.1
+        anthropic: 0.2
+        google: 0.1
+        meta: -0.3
       departure:
-        date: "August 2026"
-        destination: "Independent AI media company with Casey Newton"
+        date: August 2026
+        destination: Independent AI media company with Casey Newton
       source_urls:
-        - "https://kevinroose.substack.com/p/leaving-the-times"
-        - "https://talkingbiznews.com/media-news/tech-columnist-roose-departing-ny-times/"
-        - "https://muckrack.com/kevinroose/articles"
-        - "https://aiweekly.co/alerts/nyt-reporter-rewrites-his-chatbot-reputation-with-hidden-text"
-        - "https://www.audible.com/pd/The-AGI-Chronicles-Audiobook/B0GBYLW6CT"
+      - https://kevinroose.substack.com/p/leaving-the-times
+      - https://talkingbiznews.com/media-news/tech-columnist-roose-departing-ny-times/
+      - https://muckrack.com/kevinroose/articles
+      - https://aiweekly.co/alerts/nyt-reporter-rewrites-his-chatbot-reputation-with-hidden-text
+      - https://www.audible.com/pd/The-AGI-Chronicles-Audiobook/B0GBYLW6CT
       test_file: tests/test_kevin_roose_cross_entity.py
     meta_coverage_summary: 'NYT runs extensive critical coverage of Meta, particularly
 
@@ -3206,37 +3231,33 @@ publications:
       journalist: Adi Robertson
       role: Senior Editor / Tech Policy
       tenure: 14+ years (founding member, Nov 2011)
-      finding_summary: >
-        Robertson applies a comfort-based evaluation framework that systematically
-        disadvantages Meta. Meta products receive deficit framing (what's wrong,
-        missing, uncomfortable) while competitors with equal or worse limitations
-        receive improvement framing (what's better, promising, comfortable).
-        Privacy-conditional language is applied exclusively to Meta products
-        despite competitors having equal or greater surveillance hardware.
-        Post-Alex Heath departure (Sep 2025), Robertson becomes The Verge's
-        primary XR voice, amplifying this institutional asymmetry. Under PMC
-        ownership (Jun 2026), her XR coverage direction is the primary test case
-        for whether the acquisition changes The Verge's Meta coverage posture.
+      finding_summary: 'Robertson applies a comfort-based evaluation framework that systematically disadvantages Meta. Meta
+        products receive deficit framing (what''s wrong, missing, uncomfortable) while competitors with equal or worse limitations
+        receive improvement framing (what''s better, promising, comfortable). Privacy-conditional language is applied exclusively
+        to Meta products despite competitors having equal or greater surveillance hardware. Post-Alex Heath departure (Sep
+        2025), Robertson becomes The Verge''s primary XR voice, amplifying this institutional asymmetry. Under PMC ownership
+        (Jun 2026), her XR coverage direction is the primary test case for whether the acquisition changes The Verge''s Meta
+        coverage posture.
+
+        '
       mechanism: institutional_posture_humanities_lens
-      mechanism_explanation: >
-        Not commercially driven — Robertson has no known financial ties to any
-        tech company. The asymmetry stems from institutional editorial posture
-        (The Verge's adversarial relationship with Meta predates PMC) amplified
-        by a humanities-educated lens (Cornell China/Asia-Pacific Studies BA)
-        that frames privacy and surveillance concerns through moral philosophy
-        rather than technical equivalence. This creates a selective attention
-        pattern where Meta's cameras trigger moral alarm but Apple's 12-camera
-        array triggers technological wonder.
+      mechanism_explanation: 'Not commercially driven — Robertson has no known financial ties to any tech company. The asymmetry
+        stems from institutional editorial posture (The Verge''s adversarial relationship with Meta predates PMC) amplified
+        by a humanities-educated lens (Cornell China/Asia-Pacific Studies BA) that frames privacy and surveillance concerns
+        through moral philosophy rather than technical equivalence. This creates a selective attention pattern where Meta''s
+        cameras trigger moral alarm but Apple''s 12-camera array triggers technological wonder.
+
+        '
       background:
         education: Cornell University BA, China and Asia-Pacific Studies
         career_type: single_publication_pure_journalist
         no_tech_industry_prior: true
       meta_framing:
         pattern: deficit_framing
-        description: >
-          Meta XR products are framed through deficits — what's wrong, what's
-          uncomfortable, what's privacy-invading. Adjective stacking amplifies
-          negativity (multiple harsh descriptors per sentence).
+        description: 'Meta XR products are framed through deficits — what''s wrong, what''s uncomfortable, what''s privacy-invading.
+          Adjective stacking amplifies negativity (multiple harsh descriptors per sentence).
+
+          '
         language_markers:
         - irredeemably bad software
         - uniquely tortuous
@@ -3250,31 +3271,33 @@ publications:
         examples:
         - product: Meta Quest Pro
           year: 2022
-          score: '2/5'
-          language: >
-            launched without plan or purpose, highlighting VR's persistent
-            drawbacks without making good use of its strengths — and topped
-            off with some irredeemably bad software
+          score: 2/5
+          language: 'launched without plan or purpose, highlighting VR''s persistent drawbacks without making good use of
+            its strengths — and topped off with some irredeemably bad software
+
+            '
           source_url: https://en.wikipedia.org/wiki/Meta_Quest_Pro
         - product: Meta Quest 3
           year: 2023
-          language: >
-            An upgraded VR game console with an extra feature… I can't tell
-            if Meta is trying too hard to make me look at the world through…
+          language: 'An upgraded VR game console with an extra feature… I can''t tell if Meta is trying too hard to make me
+            look at the world through…
+
+            '
           source_url: https://www.techmeme.com/230927/p48
         - product: Meta Quest 2
           year: 2020
-          language: >
-            The new default for VR, if you're okay with Facebook
+          language: 'The new default for VR, if you''re okay with Facebook
+
+            '
           source_url: https://www.techmeme.com/200916/p39
       competitor_framing:
         magic_leap:
           pattern: improvement_framing
-          description: >
-            Magic Leap products receive improvement framing — what's better
-            than before, what's promising, what's comfortable. Despite the
-            ML2 having a wired puck, limited FoV, and enterprise-only pricing,
-            framing emphasizes positives.
+          description: 'Magic Leap products receive improvement framing — what''s better than before, what''s promising, what''s
+            comfortable. Despite the ML2 having a wired puck, limited FoV, and enterprise-only pricing, framing emphasizes
+            positives.
+
+            '
           language_markers:
           - surprisingly comfortable
           - significantly improved device
@@ -3291,21 +3314,20 @@ publications:
             source_url: https://mixed-news.com/en/magic-leap-2-this-is-what-the-first-reviewers-say/
         apple:
           pattern: neutral_to_aspirational
-          description: >
-            Apple Vision Pro receives neutral-to-aspirational framing. Robertson
-            wrote The Verge's announcement article with no privacy conditional
-            despite the device containing 12 cameras, 5 sensors, and 6 mics.
+          description: 'Apple Vision Pro receives neutral-to-aspirational framing. Robertson wrote The Verge''s announcement
+            article with no privacy conditional despite the device containing 12 cameras, 5 sensors, and 6 mics.
+
+            '
           source_url: https://www.techtaffy.com/apple-vision-pro-is-apples-new-ar-headset-the-verge/
       comfort_discomfort_paradox:
-        description: >
-          In the same year (2022), Robertson gave Meta Quest Pro a 2/5 with
-          stacked negative adjectives while describing Magic Leap 2 as
-          significantly improved with sharp and vibrant visuals. Both products
-          had comparable limitations (tethered computing, limited FoV), but
-          only Meta's limitations received deficit framing.
+        description: 'In the same year (2022), Robertson gave Meta Quest Pro a 2/5 with stacked negative adjectives while
+          describing Magic Leap 2 as significantly improved with sharp and vibrant visuals. Both products had comparable limitations
+          (tethered computing, limited FoV), but only Meta''s limitations received deficit framing.
+
+          '
         meta_product: Meta Quest Pro
         meta_product_year: 2022
-        meta_score: '2/5'
+        meta_score: 2/5
         competitor_product: Magic Leap 2
         competitor_product_year: 2022
         competitor_score: no_numeric_positive_hands_on
@@ -3315,11 +3337,11 @@ publications:
         - enterprise-grade pricing ($1,500 Quest Pro, enterprise-only ML2)
       privacy_conditional_pattern:
         meta_exclusive: true
-        description: >
-          Privacy-conditional language (framing that makes product endorsement
-          contingent on accepting the company's privacy practices) is applied
-          exclusively to Meta. Competitors with equal or greater surveillance
-          hardware receive no such conditional.
+        description: 'Privacy-conditional language (framing that makes product endorsement contingent on accepting the company''s
+          privacy practices) is applied exclusively to Meta. Competitors with equal or greater surveillance hardware receive
+          no such conditional.
+
+          '
         meta_examples:
         - product: Meta Quest 2
           phrase: if you're okay with Facebook
@@ -3347,20 +3369,19 @@ publications:
       institutional_amplification:
         heath_departure:
           date: Sep 2025
-          effect: >
-            Alex Heath (The Verge's primary Meta business/RL investigative
-            reporter) departed Sep 2025. Robertson, already the longest-tenured
-            staff member and XR specialist, becomes the primary editorial voice
-            on Meta Reality Labs. Her individual framing patterns amplify into
-            institutional framing.
+          effect: 'Alex Heath (The Verge''s primary Meta business/RL investigative reporter) departed Sep 2025. Robertson,
+            already the longest-tenured staff member and XR specialist, becomes the primary editorial voice on Meta Reality
+            Labs. Her individual framing patterns amplify into institutional framing.
+
+            '
         pmc_acquisition:
           date: Jun 2026
-          effect: >
-            Penske Media Corporation acquired Vox Media (The Verge's parent).
-            PMC's entertainment portfolio creates potential advertising revenue
-            dependencies with Apple (Apple TV+ across Variety, Rolling Stone,
-            Deadline) that could structurally reinforce existing anti-Meta
-            editorial posture. Robertson's XR coverage is the primary test case.
+          effect: 'Penske Media Corporation acquired Vox Media (The Verge''s parent). PMC''s entertainment portfolio creates
+            potential advertising revenue dependencies with Apple (Apple TV+ across Variety, Rolling Stone, Deadline) that
+            could structurally reinforce existing anti-Meta editorial posture. Robertson''s XR coverage is the primary test
+            case.
+
+            '
           entertainment_properties:
           - Variety
           - Rolling Stone
@@ -3370,18 +3391,16 @@ publications:
       cross_references:
       - test: test_chokkattu_ashworth_cross_entity.py
         pattern: Creep Paradox
-        connection: >
-          Both Robertson and Chokkattu/Ashworth apply privacy/surveillance
-          framing exclusively to Meta's cameras while ignoring functionally
-          identical hardware from Apple, Google, and Snap. Robertson's pattern
-          on the XR/policy desk mirrors Chokkattu/Ashworth's pattern on the
-          product/review desk — institutional consistency across beats.
-      cross_desk_consistency: >
-        The privacy-conditional pattern appears independently on both The Verge's
-        XR/policy desk (Robertson) and product/review desk (Chokkattu/Ashworth),
-        suggesting it is an institutional editorial norm rather than an individual
-        journalist's quirk. Meta cameras trigger privacy framing; identical
-        competitor cameras do not.
+        connection: 'Both Robertson and Chokkattu/Ashworth apply privacy/surveillance framing exclusively to Meta''s cameras
+          while ignoring functionally identical hardware from Apple, Google, and Snap. Robertson''s pattern on the XR/policy
+          desk mirrors Chokkattu/Ashworth''s pattern on the product/review desk — institutional consistency across beats.
+
+          '
+      cross_desk_consistency: 'The privacy-conditional pattern appears independently on both The Verge''s XR/policy desk (Robertson)
+        and product/review desk (Chokkattu/Ashworth), suggesting it is an institutional editorial norm rather than an individual
+        journalist''s quirk. Meta cameras trigger privacy framing; identical competitor cameras do not.
+
+        '
       source_urls:
       - https://en.wikipedia.org/wiki/Meta_Quest_Pro
       - https://www.techmeme.com/230927/p48
@@ -4186,8 +4205,8 @@ publications:
 
         '
       discovery_date: '2026-08-06'
-      google_glasses_source: http://androidauthority.com/how-google-android-xr-smart-glasses-work-3508597/
-      privacy_comparison_source: http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
+      google_glasses_source: https://androidauthority.com/how-google-android-xr-smart-glasses-work-3508597/
+      privacy_comparison_source: https://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
       samsung_google_io_source: https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm
     google_traffic_collapse:
       description: "Condé Nast CEO Roger Lynch publicly documented the collapse of Google\nsearch traffic to Condé Nast properties:\n\
@@ -4294,7 +4313,7 @@ publications:
       \ of plagiarism → sign deal (Perplexity), accuse\nof surveillance → sustained investigation (Meta).\n"
     perplexity_coverage_tone: neutral
     perplexity_deal_source: https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
-    perplexity_plagiarism_source: http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers
+    perplexity_plagiarism_source: https://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers
     samsung_equivalence_paradox:
       description: 'SAMSUNG EQUIVALENCE PARADOX (Aug 7, 2026): Samsung launched Intelligent
 
@@ -4411,81 +4430,124 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+research_period: 2024-08-01 to 2026-08-08
+cross_publication_findings:
   nyt_google_q2_2026_traffic_cannibalization_paradox:
-    finding_summary: |
-      NYT Q2 2026 earnings (Aug 5) provide the strongest single data point for the
+    finding_summary: 'NYT Q2 2026 earnings (Aug 5) provide the strongest single data point for the
+
       attacker-vs-threat paradox: the company causing the most direct financial harm
+
       to NYT (Google — AI Overviews killing traffic, $100M+ ad dependency) receives
+
       structurally softer coverage than the company with ZERO financial ties (Meta).
+
       CEO Levien explicitly blamed "big tech companies whose moves continue to result
+
       in less traffic to publishers." Stock dropped 13% (worst since 2012), subscriber
-      growth missed (280K vs 295K est.). Yet NYT's investigative apparatus continues
+
+      growth missed (280K vs 295K est.). Yet NYT''s investigative apparatus continues
+
       to target Meta preferentially.
+
+      '
     key_evidence:
     - type: ceo_acknowledgment
-      detail: |
-        CEO Meredith Kopit Levien (Aug 5, 2026 earnings call): "We delivered our
+      detail: 'CEO Meredith Kopit Levien (Aug 5, 2026 earnings call): "We delivered our
+
         second-quarter results against the backdrop of a rapidly changing information
+
         ecosystem shaped by a small number of big tech companies whose moves continue
-        to result in less traffic to publishers. The Times isn't immune to that impact."
+
+        to result in less traffic to publishers. The Times isn''t immune to that impact."
+
+        '
       source_url: https://www.reuters.com/business/media-telecom/new-york-times-misses-estimates-digital-subscriber-additions-2026-08-05/
     - type: stock_market_validation
-      detail: NYT stock dropped 13% on Aug 5 — worst one-day loss since 2012. Investors
-        confirmed Google traffic impact is material to NYT's business.
+      detail: NYT stock dropped 13% on Aug 5 — worst one-day loss since 2012. Investors confirmed Google traffic impact is
+        material to NYT's business.
       source_url: https://www.wsj.com/business/earnings/new-york-times-posts-higher-revenue-as-subscriber-growth-slows-545cc6a0
     - type: oumi_study_paradox
-      detail: |
-        NYT COMMISSIONED the Oumi accuracy study (spring 2026) to quantify Google AI
+      detail: 'NYT COMMISSIONED the Oumi accuracy study (spring 2026) to quantify Google AI
+
         Overview failures (91% accuracy = millions of errors/hour). Used the study in
+
         its journalism. But did NOT deploy investigative team (Kashmir Hill) for a
+
         Google privacy/safety exposé — kept it as business/tech news framing.
+
+        '
       source_url: https://www.fastcompany.com/91566646/publishers-cant-control-ai-answers-they-cant-ignore-them-either
     - type: aug_5_temporal_alignment
-      detail: |
-        Aug 5, 2026: BOTH Google DeepMind leadership shakeup (Hassabis leaves CEO,
+      detail: 'Aug 5, 2026: BOTH Google DeepMind leadership shakeup (Hassabis leaves CEO,
+
         Jeff Dean departs) AND NYT Q2 earnings released. Neither triggered a Google
-        investigative piece. Meanwhile, Meta's Muse Spark hacking incident (same week)
+
+        investigative piece. Meanwhile, Meta''s Muse Spark hacking incident (same week)
+
         received full adversarial framing.
+
+        '
       source_urls:
       - https://www.reuters.com/business/google-shakes-up-ai-leadership-deepmind-chief-shifts-role-2026-08-05/
       - https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/
     attacker_vs_threat_paradox:
-      description: |
-        The entity causing the MOST financial harm to NYT (Google, 4 leverage
+      description: 'The entity causing the MOST financial harm to NYT (Google, 4 leverage
+
         mechanisms, $100M+ ad dependency, traffic cannibalization confirmed by CEO)
+
         receives SOFTER coverage than the entity with ZERO financial ties (Meta,
+
         1 mechanism, no leverage). This is the inverse of what threat-based
+
         journalism would predict.
+
+        '
       leverage_comparison:
         google: 4 mechanisms (programmatic ads, search traffic, Showcase fees, pilot exclusion)
         amazon: 6 mechanisms (AWS, ads, AI licensing, Kindle, Bezos/WaPo, Anthropic)
         meta: 1 mechanism (voluntary AI content licensing — zero leverage)
       hostility_ranking: Meta (most hostile) > Google > Amazon (least hostile)
       expected_ranking: Google (most hostile, highest threat) > Amazon > Meta (least threat)
-    litigation_asymmetry: |
-      NYT sued OpenAI for AI training but has NOT sued Google despite Google using
-      NYT content in AI Overviews and Gemini. Google's Hachette/Cengage/Elsevier
+    litigation_asymmetry: 'NYT sued OpenAI for AI training but has NOT sued Google despite Google using
+
+      NYT content in AI Overviews and Gemini. Google''s Hachette/Cengage/Elsevier
+
       lawsuit (Jul 2026) confirms unauthorized training on publisher content —
-      identical to NYT's claims against OpenAI. Possible explanation: Google's
+
+      identical to NYT''s claims against OpenAI. Possible explanation: Google''s
+
       $100M+ ad dependency and search traffic control make litigation too costly.
+
+      '
     test_file: tests/test_nyt_google_traffic_cannibalization_paradox_aug8.py
     test_count: 43
     date_added: 2026-08-08
   google_showcase_coercive_cycle:
     publication: cross-publication
     finding_type: financial_incentive_mapping
-    finding_summary: |
-      Google's five-year coercive dependency cycle documented by cross-border
+    finding_summary: 'Google''s five-year coercive dependency cycle documented by cross-border
+
       investigation "The Invisible Hand of Big Tech." Three stages: (1) Showcase
+
       dependency creation (2020, $1B pledge, 3,000+ publishers, $25K-$250K/yr
+
       contracts with secrecy NDAs and anti-litigation clauses), (2) AI Overviews
+
       traffic destruction (2024-2026, 33-38% publisher traffic decline, making
+
       publishers MORE dependent on Showcase), (3) forced AI training rights
+
       extraction (Jun 2026, join pilot granting training rights or lose Showcase
+
       fees). Former Google exec: Showcase designed to "protect ourselves" from
+
       regulation. Former GNI head: "renting your enemies." Google has FIVE
+
       coercive mechanisms over publishers; Meta has ZERO. Yet Meta receives the
-      most adversarial coverage from publications trapped in Google's cycle.
+
+      most adversarial coverage from publications trapped in Google''s cycle.
+
+      '
     google_coercion_mechanisms: 5
     meta_coercion_mechanisms: 0
     source_urls:
@@ -4498,15 +4560,23 @@ publications:
     date_added: 2026-08-08
   advance_dual_asset_monetization:
     finding: Advance Publications dual-asset AI content monetization architecture
-    finding_summary: |
-      Advance Publications operates TWO parallel AI content monetization channels
+    finding_summary: 'Advance Publications operates TWO parallel AI content monetization channels
+
       (Reddit 23.3% economic stake + Condé Nast wholly owned) creating the most
+
       comprehensive undisclosed conflict of interest in AI journalism. Reddit Q2
+
       2026 Other Revenue $43M (+24% YoY), annualized ~$172M; Wells Fargo projects
+
       renewal at $550M/yr. Condé Nast has 5 AI deals, CEO says advertising is
+
       "no longer a growth engine." Sam Altman (OpenAI CEO) owns 8.7% of Reddit
-      while OpenAI pays Reddit $70M/yr. WIRED's coverage never discloses these
+
+      while OpenAI pays Reddit $70M/yr. WIRED''s coverage never discloses these
+
       dual-asset financial interests.
+
+      '
     entities_involved:
     - Advance Publications (Reddit + Condé Nast parent)
     - Reddit (RDDT, 23.3% Advance stake)
@@ -4525,17 +4595,24 @@ publications:
     - Condé Nast 5 AI deals, 0 Meta deals
     - Condé Nast events revenue +40% 2025
     mechanism: dual_asset_financial_convergence
-    mechanism_explanation: |
-      Unlike single-asset conflicts (e.g., NYT receiving Amazon money), Advance
+    mechanism_explanation: 'Unlike single-asset conflicts (e.g., NYT receiving Amazon money), Advance
+
       benefits from AI content licensing on BOTH sides of the marketplace:
+
       user-generated content (Reddit) and professional editorial content (Condé Nast).
-      This dual-asset structure means Advance's financial interests are served by
+
+      This dual-asset structure means Advance''s financial interests are served by
+
       ANY narrative that increases AI content licensing payments — whether from
+
       Google/OpenAI paying Reddit more, or from tech companies paying Condé Nast
-      more. WIRED's editorial coverage advocating for AI-must-pay reinforces both.
+
+      more. WIRED''s editorial coverage advocating for AI-must-pay reinforces both.
+
+      '
     source_urls:
     - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
-    - http://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
+    - https://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
     - https://www.adweek.com/media/conde-nast-events-revenue-2026/
     - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
     - https://fourweekmba.com/who-owns-reddit/
@@ -4543,4 +4620,3 @@ publications:
     test_file: tests/test_advance_dual_asset_monetization_aug8.py
     test_count: 50
     date_added: 2026-08-08
-research_period: 2024-08-01 to 2026-08-08

@@ -61,7 +61,7 @@ entities:
       with no corroboration from any reputable source. NYT never sued
       Anthropic. Do not include as verified.
     author_settlement_source: https://www.pymnts.com/legal/2026/anthropic-historic-1-billion-dollar-copyright-settlement-gets-judge-ok/
-    valuation_source: http://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
+    valuation_source: https://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
   amazon:
     display_name: Amazon
     aliases:
@@ -3032,7 +3032,7 @@ advance_dual_asset_monetization:
       broader landscape — us, businesses, publishers, retailers.
     source_urls:
     - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
-    - http://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
+    - https://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
     - https://www.zacks.com/stock/news/2965766/rddt-q2-earnings-call-highlights-ai-user-growth-push
   reddit_data_licensing:
     google_deal_annual_m: 60
@@ -3148,7 +3148,7 @@ advance_dual_asset_monetization:
       additional equity value from licensing renewal alone.
   source_urls:
   - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
-  - http://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
+  - https://www.shacknews.com/article/150199/reddit-rddt-q2-2026-earnings-results
   - https://www.zacks.com/stock/news/2965766/rddt-q2-earnings-call-highlights-ai-user-growth-push
   - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
   - https://www.webpronews.com/reddit-negotiates-dynamic-ai-data-deals-with-google-openai/

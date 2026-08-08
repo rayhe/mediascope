@@ -38,7 +38,7 @@ Advance Publications operates TWO parallel AI content monetization channels — 
 - New: `tests/test_advance_dual_asset_monetization_aug8.py` — 50 tests (9 classes), all passing
 - Structural consistency: 124 passed, 0 failed
 - Total: 6195 tests across 224 files
-- Commit: [pending]
+- Commit: f1a68ca
 
 ### Files modified
 - `profiles/competitor-entities.yaml` — added `advance_dual_asset_monetization` section
