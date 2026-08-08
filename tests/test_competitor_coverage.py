@@ -144,8 +144,8 @@ class TestPublicationRelationships:
         valid_types = {
             "licensing", "investment", "advertising", "distribution",
             "indirect", "mixed", "negotiating", "adversarial", "litigation",
-            "adversarial_litigation", "settlement", "coercive",
-            "commercial_partnership", "none"
+            "adversarial_litigation", "settlement", "settlement_revenue",
+            "coercive", "commercial_partnership", "none"
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]

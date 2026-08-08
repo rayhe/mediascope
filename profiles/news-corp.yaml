@@ -135,7 +135,7 @@ competitor_relationships:
       revenue is litigation-driven (settlement), adding a "sue" revenue
       stream to News Corp's "woo" revenue streams.
     source_url: "https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/"
-    coverage_prediction: "neutral (litigation-driven, not editorial-influenced)"
+    coverage_prediction: "neutral"  # litigation-driven (settlement), not editorial-influenced
   amazon:
     financial_tie: "none"
     estimated_value: "$0"

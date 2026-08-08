@@ -66,9 +66,9 @@ def wired_profile():
 class TestEntityCountConsistency:
     """After Samsung addition, entity counts must be consistent everywhere."""
 
-    def test_nine_entities_in_yaml(self, entities):
-        """competitor-entities.yaml should have exactly 9 entities."""
-        assert len(entities['entities']) == 9
+    def test_entities_in_yaml(self, entities):
+        """competitor-entities.yaml should have at least 9 entities (grew to 11 with microsoft + snowflake)."""
+        assert len(entities['entities']) >= 9
 
     def test_samsung_present(self, entities):
         """Samsung must be in the entities list."""
@@ -206,10 +206,11 @@ class TestCrossParadoxConsistency:
         assert 'source: ""' not in content, "No source URL should be an empty string"
         assert "source: ''" not in content, "No source URL should be an empty string"
 
-    def test_nine_entities_after_all_iterations(self, entities):
-        """Confirm entity count stable after all today's iterations."""
+    def test_entities_after_all_iterations(self, entities):
+        """Confirm entity count stable after all today's iterations (grew to 11)."""
         entity_names = sorted(entities['entities'].keys())
         expected = sorted(['amazon', 'anthropic', 'apple', 'google', 'meta',
-                          'openai', 'samsung', 'x_twitter', 'xai'])
+                          'microsoft', 'openai', 'samsung', 'snowflake',
+                          'x_twitter', 'xai'])
         assert entity_names == expected, \
                f"Entity list mismatch.\nExpected: {expected}\nGot: {entity_names}"

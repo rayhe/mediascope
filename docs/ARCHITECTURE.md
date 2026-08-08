@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 5824 tests across 215 test files (all from real articles)
+├── tests/                       # 5868 tests across 216 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -574,6 +574,7 @@ mediascope/
 │   ├── test_type_d_cross_validation_aug7_04am.py # Type D 04:00 cross-validation: Apple-OpenAI 5-phase expansion, Apple-Google Gemini deal integrity, publisher content bypass chain, Apple-Google-Publisher triangle consistency, Samsung equivalence, cross-platform summary, incentive matrix arithmetic, source URL validation
 │   ├── test_type_d_cross_validation_aug7_06am.py # Type D 06:00 cross-validation: NYT-Amazon February Simultaneous Paradox (NameTag vs Ring), Samsung Equivalence Paradox entity consistency, PMC Deal Fragmentation financial sums, cross-iteration source URL validation
 │   ├── test_type_d_3pm_cross_validation_aug7.py # Type D 15:00 cross-validation: financial amplification model ordering, three-tier marketplace taxonomy, Snowflake entity, Meta isolation claim, metric scale consistency, FT Heikkilä career migration, research cross-references
+│   ├── test_type_d_10pm_cross_validation_aug7.py # Type D 22:00 day-end cross-validation: News Corp triple-revenue consistency, WIRED Apple-OpenAI silence, 4 asymmetry mechanisms (licensing, advertising, marketplace, professional identity capture), entity set stability (11 entities), settlement_revenue type validation, metric scale integrity, source URL presence, cumulative day integrity
 │   ├── test_type_d_8pm_cross_validation_aug6.py # Type D 8 PM cross-validation: OpenAI/Apple entity escalation phases 4-5, Atlantic silence source_urls schema, Milmo profile↔research consistency, Amazon sextuple entity↔research, evening iteration coverage
 │   ├── test_type_d_2pm_cross_validation_aug6.py # Type D 2 PM cross-validation: sensor-count paradox, WSJ balanced control, Google coercion-Condé Nast consistency, NYT Q2 earnings, Mims tone inversion, WSJ disclosure uniqueness, MIT TR governance
 │   ├── test_type_d_aug6_cross_validation.py # Type D cross-validation (Aug 6 09:00): asymmetry gap ordering, five-mechanism taxonomy, Guardian partial independence, Advance-Reddit-Perplexity triangle, statistical direction consistency

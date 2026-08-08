@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 5,824 | Across 215 test files |
+| Tests | 5,868 | Across 216 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **5824 tests** across 215 test files, each covering a different analytical capability:
+MediaScope has **5868 tests** across 216 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -583,6 +583,7 @@ MediaScope has **5824 tests** across 215 test files, each covering a different a
 | `test_type_d_cross_validation_aug7_04am.py` | 46 | Type D cross-validation (Aug 7, 04:00 PT): Apple-OpenAI 5-phase expansion verification (phases 4-5 Aug 2026 litigation), Apple-Google $1B/yr Gemini deal integrity, publisher content bypass chain validation (Condé Nast/Hachette cross-refs), Apple-Google-Publisher triangle consistency (litigation ↔ deal chronology, training references), Samsung equivalence paradox entity checks, cross-platform summary completeness, aggregate incentive matrix arithmetic, source URL format validation |
 | `test_type_d_cross_validation_aug7_06am.py` | 20 | Type D cross-validation (Aug 7, 06:00 PT): NYT-Amazon February Simultaneous Paradox consistency (NameTag vs Ring Familiar Faces), Samsung Equivalence Paradox entity integration, PMC Deal Fragmentation financial relationship sums, cross-iteration source URL validation |
 | `test_type_d_3pm_cross_validation_aug7.py` | 36 | Type D cross-validation (Aug 7, 15:00 PT): Financial amplification model ordering (clean controls < financially connected), three-tier marketplace taxonomy integrity (Snowflake pure infrastructure, Microsoft highest conflict, tier conflict ordering), Snowflake entity completeness (category, regex, aliases, zero AI investments), Meta financial isolation claim (not operator/buyer/investor, bilateral only), metric scale consistency (tone_delta and asymmetry_score both [0,1], tone scores [-1,1]), FT Heikkilä career migration (journalist exists, competitor coverage, deal documentation), research file cross-references (Gizmodo control, FT Heikkilä, marketplace/Snowflake) |
+| `test_type_d_10pm_cross_validation_aug7.py` | 34 | Type D day-end cross-validation (Aug 7, 22:00 PT): News Corp triple-revenue architecture (3 AI companies paying simultaneously — OpenAI, Meta, Anthropic settlement_revenue), WIRED Apple-OpenAI silence consistency (asymmetry score ≥0.82), 4 asymmetry mechanisms documented (licensing, advertising, marketplace, professional identity capture), entity set stability (11 entities after Samsung/Snowflake/Microsoft), settlement_revenue financial tie type, metric scale integrity, source URL presence, cumulative day integrity (Gizmodo clean control, README test count, no contradictions) |
 | `test_type_d_8pm_cross_validation_aug6.py` | 37 | Type D cross-validation (Aug 6, 8 PM): OpenAI/Apple entity escalation phases 4-5 (injunction + motion to dismiss), Atlantic silence source_urls schema consistency, Milmo profile↔research cross-file, Amazon sextuple entity↔research, MS-OpenAI axis presence, evening iteration data traces, leverage count consistency |
 | `test_type_d_2pm_cross_validation_aug6.py` | 50 | Type D cross-validation (Aug 6, 2 PM): sensor-count paradox cross-pub consistency, WSJ balanced control ↔ aggregate findings, Google coercion ↔ Condé Nast traffic, NYT Q2 2026 earnings ↔ profile, Mims tone inversion direction, WSJ disclosure uniqueness, Google revenue-coercion link, MIT TR governance ↔ Apple entity, source URL presence |
 | `test_type_d_aug6_cross_validation.py` | 48 | Type D cross-validation (Aug 6, 09:00): asymmetry gap ordering, five-mechanism taxonomy, Guardian partial independence, Advance-Reddit-Perplexity triangle, control groups, statistical direction consistency |
