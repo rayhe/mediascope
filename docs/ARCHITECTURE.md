@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6881 tests across 239 test files (all from real articles)
+├── tests/                       # 6947 tests across 240 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -695,6 +695,7 @@ mediascope/
 │   ├── test_nypost_meta_child_safety_monitoring_jul16.py # NY Post Meta child-safety chatbot monitoring (Jul 16): outsourced_intensity protective-context guard (crisis helpline, parental alerts), Path N sentiment correction (positive-action negative-domain VADER inflation: raw -0.541→corrected -0.08)
 │   ├── test_meghan_bobrowsky_cross_entity.py # Meghan Bobrowsky (WSJ) cross-entity: Balanced-Control Beat Assignment Model — dedicated Meta beat reporter at ONLY pub with symmetric financial ties ($50M Meta + $50M OpenAI). Tone: −0.15 vs Hill −0.80 (0.65 gap) / Goode −0.85 (0.70 gap) — largest single-journalist delta. WSJ beat structure (Bobrowsky→Meta, Jin→OpenAI, McMillan→Cybersecurity, Mims→Columnist). Beat assignment neutral; asymmetry from financial environment. 9 classes, 36 tests
 │   ├── test_apple_news_platform_leverage_aug7.py # Apple News+ platform leverage — Lifeline Paradox: Apple has FIVE financial mechanisms (News+ 50% rev share $12.99/mo 400+ titles 125M MAU, App Store 15-30% tax, Apple One dilution, 2.5B-device distribution monopoly, $1B/yr AI bypass via Google Gemini). THIRD most entangled after Microsoft (7) and Amazon (6). Completes hierarchy: MSFT(7)>AMZN(6)>AAPL(5)>GOOG(4)>META(1). Profiled pub exposure: Condé Nast 16 titles, Atlantic "most valuable syndication partner", WSJ participant, FT only non-participant. Q3 FY26 $30.7B Services +12% YoY. 9 classes, 37 tests
+│   ├── test_openai_publisher_financial_displacement_aug8.py # OpenAI publisher financial displacement architecture: ad business launch Jan 2026, $100M ARR pilot in 6 weeks, $2.5B projected 2026 → $100B 2030, Chris Lehane dual role (ads+TBPN). TBPN acquired Apr 2 2026 (11 people, 70K daily viewers, $30M/yr). Publisher deals 20+ covering 160+ outlets, $300-400M/yr total, News Corp largest $250M/5yr. Ad rev exceeds deal spending 6-8× in 2026. OpenAI S-1 filed Jun 8 2026 $852B val. Anthropic S-1 filed Jun 1 2026 $965B val ZERO publisher deals — validates zero-deal model. Dual-IPO $1.8T+ combined, transparency inflection. 9 classes, 66 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

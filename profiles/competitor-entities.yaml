@@ -13,8 +13,175 @@ entities:
     - SearchGPT
     regex: \b(OpenAI|ChatGPT|GPT-[45o]|DALL[- ]E|Sora|SearchGPT)\b
     category: ai_lab
-    market_cap_approx: $300B (private valuation, 2026)
+    market_cap_approx: $852B (post-money, Mar 2026 funding round)
     ceo: Sam Altman
+    ipo_filing:
+      confidential_s1_date: '2026-06-08'
+      valuation_at_filing_b: 852
+      funding_round_mar_2026_b: 122
+      funding_round_valuation_b: 852
+      lead_investors:
+      - SoftBank ($30B)
+      - NVIDIA ($30B)
+      - Amazon ($50B)
+      potential_delay: 'NYT reported (late Jun 2026) OpenAI considering delay to 2027
+        for higher valuation, citing SpaceX post-IPO stock decline as cautionary.
+        '
+      ipo_banks_reported:
+      - Goldman Sachs
+      - Morgan Stanley
+      transparency_inflection: 'When the S-1 becomes public, OpenAI must disclose revenue
+        breakdowns, publisher deal terms, advertising metrics, and cost structure.
+        This is the FIRST TIME publisher content licensing deal values will be
+        verifiable from primary SEC filings rather than press reports. Currently,
+        only News Corp ($250M/5yr) and Axel Springer (~$13M/yr) have publicly
+        reported values — the other 18+ deals remain undisclosed.
+        '
+      source_urls:
+      - https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
+      - https://www.fool.com/investing/2026/06/28/openai-reportedly-considers-delaying-its-ipo-shoul/
+      - https://www.techrepublic.com/article/news-openai-confidential-sec-ipo-filing/
+    revenue_trajectory:
+      arr_jun_2025_b: 10
+      arr_dec_2025_b: 20
+      arr_feb_2026_b: 25
+      chatgpt_weekly_active_users_m: 900
+      projected_cash_burn_2026_b: 27
+      projected_cash_burn_2027_b: 63
+      source_urls:
+      - https://www.reuters.com/business/media-telecom/openais-annualized-revenue-hits-10-billion-up-55-billion-december-2024-2025-06-09/
+      - https://sqmagazine.co.uk/openai-vs-anthropic-statistics/
+    advertising_business:
+      launched: 2026-01
+      ads_manager_launched: 2026-04
+      pilot_100m_arr_weeks: 6
+      advertisers_at_launch: 600
+      projected_ad_revenue_2026_b: 2.5
+      projected_ad_revenue_2027_b: 11
+      projected_ad_revenue_2028_b: 25
+      projected_ad_revenue_2029_b: 53
+      projected_ad_revenue_2030_b: 100
+      projected_weekly_users_2030_b: 2.75
+      ad_format: 'Intent-based conversational placements — ads appear at the conclusion
+        of AI-generated responses as the "next logical step" (booking a flight,
+        purchasing a product). Unlike banner ads, these compete directly with
+        the product recommendation and discovery function that publishers serve.
+        '
+      strategy_chief: Chris Lehane (chief global affairs officer)
+      overview: 'OpenAI is building a $2.5B advertising business in 2026 that projects
+        to $100B by 2030, creating a NEW financial dependency channel with
+        publishers. ChatGPT ads pilot crossed $100M ARR within 6 weeks of
+        January 2026 launch. Self-serve Ads Manager launched April 2026.
+
+        CRITICAL MediaScope IMPLICATION: OpenAI''s projected 2026 ad revenue
+        ($2.5B) ALREADY EXCEEDS its total publisher content licensing spending
+        (~$300-400M/yr estimated). By 2030, publisher deals would represent
+        less than 0.4% of OpenAI''s projected ad revenue. This means:
+        (1) Publisher content licensing will become a rounding error
+        (2) OpenAI is replicating the SAME ad platform dominance that
+            currently shields Google from adverse coverage
+        (3) As OpenAI''s ad platform grows, publishers will become
+            financially dependent on OpenAI for advertising revenue —
+            the exact mechanism (ad dependency) that makes Google
+            "too big to criticize"
+        (4) OpenAI will simultaneously PAY publishers for content AND
+            compete with publishers for advertising revenue — the same
+            dual role Google plays but with content licensing as sweetener
+
+        COMPARISON WITH GOOGLE: Google controls $81.6B/yr in publisher
+        advertising revenue and receives consistently soft coverage.
+        OpenAI projects $100B/yr in ad revenue by 2030. If the financial
+        incentive → coverage tone model holds, OpenAI will become equally
+        "untouchable" by publications dependent on its advertising platform.
+        This is the most significant structural shift in the publisher-AI
+        financial landscape since Google Showcase.
+        '
+      source_urls:
+      - https://www.reuters.com/business/media-telecom/openai-projects-25-billion-ad-revenue-this-year-100-billion-by-2030-axios-2026-04-09/
+      - https://markets.financialcontent.com/stocks/article/marketminute-2026-4-10-openai-sets-sights-on-100-billion-ad-revenue-by-2030-amid-ipo-buzz-and-media-acquisitions
+    tbpn_media_acquisition:
+      acquisition_date: '2026-04-02'
+      target: TBPN (Technology Business Programming Network)
+      deal_value: low hundreds of millions (FT estimate)
+      team_size: 11
+      daily_viewers: 70000
+      pre_acquisition_revenue_m: 30
+      pre_acquisition_ad_revenue_note: Shut down as part of deal
+      founded: 2024-10
+      cofounders:
+      - Jordi Hays
+      - John Coogan (Soylent co-founder)
+      reports_to: Chris Lehane (chief global affairs officer)
+      editorial_independence_claim: true
+      overview: 'OpenAI acquired TBPN — the first AI company to buy a media property
+        outright. TBPN is positioned as a Silicon Valley-sympathetic alternative
+        to traditional tech press. WSJ described it as "more supportive of their
+        industry than traditional news outlets." Coogan has a relationship with
+        Altman since 2013.
+
+        MediaScope RELEVANCE: This is a QUALITATIVE financial displacement
+        mechanism. OpenAI now OWNS media that reaches the same tech executive
+        audience as WIRED, The Verge, and WSJ. Key implications:
+        (1) NARRATIVE CONTROL: TBPN reports to OpenAI''s chief global affairs
+            officer (same person running OpenAI''s advertising business). The
+            promise of "editorial independence" is structurally undermined by
+            the employer relationship.
+        (2) GOING DIRECT: OpenAI bypasses publishers entirely for its own
+            narrative. This follows Andreessen Horowitz buying Turpentine (2024)
+            and CoinDesk''s ownership by Digital Currency Group — a pattern of
+            AI/tech companies building owned media to circumvent coverage they
+            view as hostile.
+        (3) ADVERTISER DISPLACEMENT: TBPN was generating $30M/yr in advertising
+            revenue — money that would otherwise flow to tech publishers. Even
+            though OpenAI shut down TBPN''s ad business, the owned media platform
+            absorbs audience attention that publishers need for their own ad models.
+        '
+      altman_quote: They're fun, they're not sensationalist. They go into real levels
+        of technical depth, and it resonates with people.
+      simo_memo_quote: The standard communications playbook just doesn't apply to us.
+        We're not a typical company.
+      source_urls:
+      - https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5
+      - https://pitchbook.com/news/articles/openai-buys-tbpn-as-silicon-valley-increasingly-goes-direct
+      - https://www.thewrap.com/media-platforms/journalism/why-openai-bought-tbpn/
+      - https://www.pymnts.com/acquisitions/2026/openai-buys-tech-talk-show-tbpn-in-media-expansion/
+    publisher_content_deal_portfolio:
+      total_deals: 20+
+      total_outlets: 160+
+      languages: 20+
+      estimated_total_annual_value_m: 300-400
+      largest_deal: News Corp ($250M/5yr = $50M/yr)
+      second_largest: Axel Springer (~$13M/yr)
+      ft_deal_m_yr: 5-10
+      most_deals_undisclosed: true
+      notable_partners:
+      - News Corp (May 2024)
+      - Axel Springer (Dec 2023)
+      - Financial Times (Apr 2024)
+      - Associated Press (Jul 2023)
+      - Vox Media (Jun 2024)
+      - The Atlantic (Jun 2024)
+      - Condé Nast (Aug 2024)
+      - Hearst (Oct 2024)
+      - The Guardian (Feb 2025)
+      - Washington Post (Apr 2025)
+      - Le Monde (Mar 2024)
+      - Prisa Media (Mar 2024)
+      - Dotdash Meredith (May 2024)
+      - Time (Jun 2024)
+      - Schibsted Media (Feb 2025)
+      - Axios (Jan 2025)
+      deal_vs_ad_revenue_ratio: 'Publisher content deals ($300-400M/yr) represent only
+        12-16% of projected 2026 advertising revenue ($2.5B). By 2030, deals
+        would be <0.4% of projected ad revenue ($100B). Content licensing is
+        becoming a LOSS LEADER for OpenAI — a small cost to secure publisher
+        cooperation while the advertising platform that will eclipse publisher
+        revenue grows underneath.
+        '
+      source_urls:
+      - https://llmpulse.ai/blog/openai-publisher-deals/
+      - https://everything-pr.com/ai-licensing-tracker
+      - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
     apple_partnership_collapse:
       overview: 'OpenAI''s Apple partnership (Jun 2024) has collapsed into mutual
 
@@ -69,8 +236,56 @@ entities:
     - Daniela Amodei
     regex: \b(Anthropic|Claude\s+(AI|[234]|Sonnet|Opus|Haiku)|Dario\s+Amodei)\b
     category: ai_lab
-    market_cap_approx: $183B (private valuation, 2026)
+    market_cap_approx: $965B (post-money, May 2026 Series H)
     ceo: Dario Amodei
+    ipo_filing:
+      confidential_s1_date: '2026-06-01'
+      valuation_at_filing_b: 965
+      series_h_raised_b: 65
+      series_h_lead_investors:
+      - Altimeter Capital
+      - Dragoneer
+      - Greenoaks
+      - Sequoia Capital
+      strategic_investors:
+      - Alphabet/Google ($2B+)
+      - Amazon ($13B+)
+      target_listing: As early as October 2026
+      legal_counsel: Wilson Sonsini (handled Google 2004 IPO)
+      ipo_banks_reported:
+      - Goldman Sachs
+      - JPMorgan Chase
+      revenue_run_rate_at_filing_b: 47
+      revenue_trajectory_note: '$1B (Dec 2024) → $4B (mid-2025) → $9B (Dec 2025) →
+        $14B (Feb 2026) → $19B (Mar 2026) → $30B (Apr 2026) → $47B (May 2026).
+        Fastest revenue growth in enterprise software history. Claude Code alone
+        reached $2.5B ARR by Feb 2026.
+        '
+      zero_publisher_deal_ipo_paradox: 'Anthropic is heading to IPO at ~$1T valuation with
+        the fastest revenue growth in enterprise software history AND zero publisher
+        content licensing deals. If Anthropic''s IPO succeeds, it VALIDATES the model
+        of building a trillion-dollar AI company without paying publishers anything.
+        This undermines the core narrative that AI companies MUST license content —
+        and with it, the financial leverage publishers have in negotiating deals.
+
+        CONTRAST WITH OPENAI: OpenAI has 20+ publisher deals ($300-400M/yr estimated)
+        and $852B valuation. Anthropic has ZERO publisher deals and $965B valuation
+        (HIGHER than OpenAI). The market is pricing Anthropic ABOVE OpenAI despite
+        Anthropic paying publishers nothing. This is the strongest evidence that
+        publisher content licensing is not correlated with AI company valuation.
+
+        INVESTOR IMPLICATION: Every dollar OpenAI spends on publisher deals is a cost
+        that Anthropic avoids. If both companies achieve similar revenue trajectories,
+        Anthropic''s zero-deal model is strictly more capital-efficient. This creates
+        pressure on OpenAI to reduce publisher spending over time — and on publishers
+        to accept lower deal values as the Anthropic precedent demonstrates deals
+        are optional, not existential.
+        '
+      source_urls:
+      - https://www.fool.com/investing/2026/06/02/ai-start-up-anthropic-files-confidentially-for-ipo-here-s-what-investors-need-to-know/
+      - https://www.eweek.com/news/anthropic-confidential-ipo-filing/
+      - https://www.iowapublicradio.org/news-from-npr/2026-06-01/ai-giant-anthropic-prepares-to-sell-stock-to-the-public-files-preliminary-ipo-paperwork
+      - https://www.tipranks.com/news/private-companies/anthropic-pulls-the-trigger-on-2026-ipo-with-confidential-sec-s-1-filing
     publisher_deals_note: 'ZERO voluntary publisher content licensing deals as of Aug 2026.
 
       Anthropic is the only major AI lab without publisher deals, despite:
