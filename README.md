@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 7,110 | Across 244 test files |
+| Tests | 7,140 | Across 245 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **7110 tests** across 244 test files, each covering a different analytical capability:
+MediaScope has **7140 tests** across 245 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -602,6 +602,7 @@ MediaScope has **7110 tests** across 244 test files, each covering a different a
 | `test_type_d_3pm_cross_validation_aug7.py` | 36 | Type D cross-validation (Aug 7, 15:00 PT): Financial amplification model ordering (clean controls < financially connected), three-tier marketplace taxonomy integrity (Snowflake pure infrastructure, Microsoft highest conflict, tier conflict ordering), Snowflake entity completeness (category, regex, aliases, zero AI investments), Meta financial isolation claim (not operator/buyer/investor, bilateral only), metric scale consistency (tone_delta and asymmetry_score both [0,1], tone scores [-1,1]), FT Heikkilä career migration (journalist exists, competitor coverage, deal documentation), research file cross-references (Gizmodo control, FT Heikkilä, marketplace/Snowflake) |
 | `test_nyt_google_traffic_cannibalization_paradox_aug8.py` | 41 | Type A: NYT × Google Q2 2026 traffic cannibalization paradox — CEO Levien blamed Google for traffic declines (stock -13%, worst since 2012), Oumi study paradox, beat assignment structural avoidance, attacker-vs-threat inverse (Google 4 mechanisms → soft coverage; Meta 1 mechanism → harsh coverage), self-censorship hypothesis, $100M+ ad dependency creating editorial inhibition, Aug 5 temporal alignment (Google DeepMind shakeup + NYT earnings same day) |
 | `test_type_d_11pm_cross_validation_aug7.py` | 36 | Type D end-of-day cross-validation (Aug 7, 23:00 PT): Entity set evolution (8→11, Samsung/Microsoft/Snowflake), hardcoded entity count regression scan (no == 9 or == 8 in test suite), News Corp triple-revenue (21:00 Type C), WIRED Apple-OpenAI silence (16:00 Type A), Parmy Olson professional identity capture (19:00 Type B), Samsung equivalence paradox + school ban (03:00 Type B), financial amplification model ordering (Gizmodo clean control, three-tier taxonomy, Meta isolation), RDC 9 publications + adversarial zero-Meta-deal invariant, test infrastructure health (217 files, 5994 tests, all Aug 7 test files present), source URL coverage across all profiles |
+| `test_type_d_02am_cross_validation_aug9.py` | 30 | Type D cross-validation (Aug 9, 02:00 PT): Apple-OpenAI litigation cross-pressure ↔ publication profile consistency (WIRED/Atlantic/Guardian/Verge OpenAI deals match profiles, Guardian no-Apple-News confirmed, Atlantic LPJ Trust Apple stock exposure), cross-pressure model coherence (all 6 pubs have analysis, WSJ balanced=dual deal, Reuters=control, Apple 5-mechanism prediction), Anthropic settlement date consistency (no stale Jun 20 refs, Jul 20 present, Judge Martínez-Olguín), Gurman Mechanism #11 uniqueness (access dependency distinct from financial types 1-10), source URL integrity, README/ARCHITECTURE count sync (7110→7140 drift caught and fixed), financial data coherence (Meta excluded from cross-pressure pubs). 7 classes, 30 tests |
 | `test_type_d_03am_cross_validation_aug8.py` | 35 | Type D cross-validation (Aug 8, 03:00 PT): Google Showcase coercive cycle 3-stage model, Kevin Roose triple identity capture in NYT profile, NYT Google traffic cannibalization paradox, cross-iteration consistency (leverage hierarchy MSFT>GOOG>META), entity/test-file count stability, source URL integrity, financial amplification model direction |
 | `test_type_d_07am_cross_validation_aug8.py` | 21 | Type D cross-validation (Aug 8, 07:00 PT): publications key integrity (no cross-publication findings pollution), cross_publication_findings schema completeness, HTTPS enforcement across all profiles (Shacknews/Entrepreneur/Digiday/TechTimes/AndroidAuthority/VentureBeat HTTP→HTTPS fixes), YAML top-level structure validation, test file count integrity |
 | `test_type_d_11am_cross_validation_aug8.py` | 27 | Type D cross-validation (Aug 8, 11:00 PT): 3 bug fixes validation — Meta showcase_coercive_cycle section isolation (not naive string match), Atlantic silence day count resilience (>= 27 floor, not hardcoded), Amazon marketplace source_urls plural key fix. Cross-validates 10:00 PT Type C Meta Q2 2026 inverse financial leverage paradox ($60.8B revenue, 28% YoY). Aug 8 test file integrity (9 expected files), entity set stability (>= 11), HTTPS regression across all profiles |
