@@ -1542,8 +1542,202 @@ key_journalists:
         apply consistent standards; the asymmetry enters through institutional assignment
         decisions (who covers what).
   - name: "Sheera Frenkel"
-    beat: "Cybersecurity, Meta/Facebook, misinformation"
-    known_patterns: "Former decade-long Middle East foreign correspondent. Co-wrote 'An Ugly Truth' (2021) — definitive adversarial Facebook book. Pulitzer finalist (2019), George Polk Award, Gerald Loeb Award, Mirror Award (2022). Foreign correspondent framing toolkit applied to Big Tech."
+    beat: "Cybersecurity → AI/National Security, Meta/Facebook"
+    known_patterns: "Former decade-long Middle East foreign correspondent (Times of London, McClatchy, NPR — fluent Hebrew, conversational Arabic). BuzzFeed cybersecurity beat originator (2015-2017). NYT since 2017, initially cybersecurity beat alongside Nicole Perlroth. Co-wrote 'An Ugly Truth' (2021, HarperCollins, seven-figure advance) — NYT Book Review called it 'The ultimate takedown.' Pulitzer finalist (2019), George Polk Award, Gerald Loeb Award, Mirror Award (2022). 2025-2026 beat expanded to AI/national security: became NYT's primary Anthropic-Pentagon reporter."
+    cross_entity_coverage_analysis:
+      summary: |
+        Sheera Frenkel is NYT's most structurally conflicted cross-entity reporter.
+        Her 2025-2026 coverage reveals a SYMPATHY-ADVERSARIAL INVERSION: Anthropic
+        receives consistent sympathy framing (principled company victimized by
+        government overreach), while Meta receives consistent adversarial framing
+        (reckless corporation that must be forced to comply). This maps directly
+        to two structural factors: (1) her seven-figure book deal invested in
+        the "Meta is dangerous" thesis, and (2) NYT's institutional editorial
+        direction channels her adversarial expertise toward Meta — the one major
+        tech company with NO NYT content licensing deal.
+
+        KEY STRUCTURAL FINDING: Frenkel's beat migration from cybersecurity to
+        AI/national security did NOT reset her adversarial register for Meta.
+        Instead, the AI/national security beat gave her a NEW venue to apply
+        adversarial framing to Meta (government compliance articles) while
+        simultaneously developing sympathetic coverage of Anthropic. This is
+        the SAME reporter producing OPPOSITE registers for two companies in
+        the same industry within the same month (June-July 2026).
+
+        UNDISCLOSED FINANCIAL CONFLICT: Frenkel's seven-figure "An Ugly Truth"
+        book deal creates ongoing financial interest in maintaining the
+        adversarial Meta narrative. Every negative Meta article reinforces
+        the book's thesis and its commercial value. NYT does not disclose
+        this conflict in her Meta coverage.
+
+      mechanism_name: "book_deal_narrative_capture"
+      mechanism_number: 9
+      mechanism_description: |
+        Book Deal Narrative Capture: A reporter's commercial investment in
+        a specific adversarial thesis about one company creates structural
+        incentive to maintain that framing indefinitely. The seven-figure
+        advance for "An Ugly Truth" means Frenkel's financial interests are
+        aligned with continued adversarial Meta coverage. This is distinct
+        from beat assignment bias (Mechanism #8 — Paresh Dave) because the
+        financial interest is personal, not institutional.
+
+      meta_coverage:
+        tone: -0.55
+        register: "adversarial_institutional"
+        volume: "sustained — co-author of definitive adversarial Meta book + ongoing coverage"
+        recent_articles:
+          - title: "U.S. Presses Meta to Agree to A.I. Reviews as Security Concerns Rise"
+            date: "2026-06-23"
+            tone: -0.45
+            framing: |
+              Meta framed as "the lone major tech company holdout" — isolation
+              language positions Meta as the problem child refusing to cooperate
+              with government safety. Subhead: "Federal officials are urging the
+              lone major tech company holdout to allow government safety evaluations,
+              weeks after ordering Anthropic to pull its latest model." The word
+              "holdout" implies stubbornness and noncompliance. Compare with
+              Anthropic coverage where refusal to cooperate with Pentagon is
+              framed as principled resistance.
+            source_url: "https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html"
+
+        framing_pattern: |
+          Frenkel's Meta coverage consistently uses INSTITUTIONAL FAILURE language:
+          "battle for domination," "ugly truth," "holdout." Even when Meta's
+          position is defensible (declining voluntary AI reviews is legally within
+          their rights), the framing positions Meta as the outlier, the problem.
+          The "An Ugly Truth" thesis — that Facebook's failures are structural,
+          not incidental — infuses all subsequent coverage with deterministic
+          negativity: anything Meta does is reinterpreted through that lens.
+
+      anthropic_coverage:
+        tone: -0.05
+        register: "institutional_sympathy"
+        volume: "very high — at least 12 articles and 1 NYT Daily podcast in 2025-2026"
+        recent_articles:
+          - title: "U.S. Says Anthropic Is an 'Unacceptable' National Security Risk"
+            date: "2026-02"
+            tone: -0.15
+            framing: "Government aggressor vs. principled company. Scare quotes around 'unacceptable risk' signal editorial skepticism of the government's position."
+
+          - title: "Anthropic Sues Pentagon Over 'Supply Chain Risk' Label"
+            date: "2026-03-09"
+            tone: -0.10
+            framing: "Legal defense frame — Anthropic defending itself. Scare quotes around government label suggest editorial sympathy."
+
+          - title: "Anthropic Employees Accuse Trump Administration of Targeting Them"
+            date: "2026-03"
+            tone: -0.05
+            framing: "Workplace sympathy frame. Opens with 'alarming news' and '90 minutes' urgency — positions Anthropic employees as victims of government power."
+
+          - title: "Silicon Valley Rallies Behind Anthropic in A.I. Clash With Trump"
+            date: "2026-03"
+            co_byline: "Cade Metz, Julian E. Barnes"
+            tone: +0.05
+            framing: "Solidarity narrative — industry unites behind principled company. Google employees signing petition to 'refuse to comply' with Pentagon framed positively."
+
+          - title: "White House and Anthropic Hold 'Productive' Meeting, Aiming for a Compromise"
+            date: "2026-04"
+            tone: +0.10
+            framing: "Diplomatic resolution frame. 'Productive' in headline signals positive trajectory. Both sides described favorably."
+
+          - title: "U.S. Loosens Restrictions on Anthropic's Mythos A.I. Model"
+            date: "2026-06-26"
+            tone: +0.10
+            framing: "Vindication/de-escalation frame. 'Loosens' implies the restrictions were too tight. 'De-escalates a clash' positions resolution as positive."
+
+          - title: "U.S. Lifts Restrictions on Anthropic's Most Powerful A.I. Models"
+            date: "2026-07"
+            tone: +0.15
+            framing: "Full vindication. 'Lifts restrictions' = Anthropic wins. 'Most powerful technologies back online' = capability-admiration language."
+
+          - title: "China Sought Access to Anthropic's Newest A.I. The Answer Was No."
+            date: "2026-07"
+            co_byline: "Dustin Volz, Julian E. Barnes, Tripp Mickle"
+            tone: +0.05
+            framing: "Principled refusal narrative. Headline structure positions Anthropic as patriotic gatekeeper. 'The Answer Was No' = firm, admirable stance."
+
+        framing_pattern: |
+          Frenkel's Anthropic coverage follows a consistent REDEMPTION ARC:
+          victimization → resistance → vindication. The Pentagon targets
+          Anthropic → Anthropic fights back → Silicon Valley rallies →
+          compromise → restrictions lifted. This is a sympathetic narrative
+          structure. Critically, Anthropic's refusal to cooperate with the
+          Pentagon is framed as PRINCIPLED RESISTANCE, while Meta's refusal
+          to submit to voluntary AI reviews is framed as STUBBORN HOLDOUT.
+          Same behavior (refusing government demands), opposite framing.
+
+      google_coverage:
+        tone: +0.05
+        register: "neutral_institutional"
+        recent_articles:
+          - title: "Google Signs A.I. Deal With the Pentagon"
+            date: "2026-04-28"
+            tone: +0.10
+            framing: "Straightforward deal reporting. Google framed as cooperative partner, not scrutinized."
+
+      cross_entity_patterns:
+        - pattern_name: "REFUSAL FRAMING INVERSION"
+          description: |
+            Anthropic refuses Pentagon demands → "principled resistance,"
+            "Silicon Valley rallies behind," "targeting." Meta refuses
+            government AI review demands → "holdout," "lone major tech
+            company," isolation language. Same reporter, same subject
+            (company refusing government demands), opposite editorial registers.
+
+        - pattern_name: "BOOK DEAL FINANCIAL CAPTURE"
+          description: |
+            Frenkel received a seven-figure advance for "An Ugly Truth"
+            (HarperCollins, 2021), described by NYT's own Book Review as
+            "The ultimate takedown" of Facebook. This creates ongoing
+            financial incentive: her commercial brand IS adversarial Meta
+            coverage. Every negative Meta article reinforces the book's
+            thesis. No comparable commercial product exists for her Anthropic
+            coverage — allowing sympathetic framing without financial conflict.
+            NYT does not disclose this conflict.
+          severity: 4
+
+        - pattern_name: "BEAT MIGRATION AS REGISTER RESET"
+          description: |
+            Frenkel's beat expanded from cybersecurity to AI/national security
+            in 2025-2026. This migration PRESERVED her adversarial Meta register
+            while CREATING a sympathetic Anthropic register. In cybersecurity
+            framing, Meta is the threat. In AI/national security framing,
+            Anthropic is the victim. Same reporter, different beats, different
+            registers — but the Meta adversarial baseline never resets.
+
+        - pattern_name: "HEADLINE SENTIMENT LADDER"
+          description: |
+            Anthropic headlines follow ascending sentiment over time:
+            "Unacceptable Risk" → "Sues Pentagon" → "Employees Accuse" →
+            "Rallies Behind" → "Productive Meeting" → "Loosens Restrictions"
+            → "Lifts Restrictions" → "The Answer Was No" (patriotic).
+            This is a classic redemption narrative arc built across 12+ articles.
+            Meta headlines maintain adversarial stasis: "holdout," reinforcing
+            "An Ugly Truth" thesis indefinitely.
+
+        - pattern_name: "GOVERNMENT SCARE QUOTE ASYMMETRY"
+          description: |
+            Government labels applied to Anthropic consistently get scare quotes:
+            'supply chain risk,' 'unacceptable risk' — editorial signal that the
+            labels are questionable. Government pressure on Meta does not receive
+            scare quotes — the framing accepts government authority as legitimate
+            when applied to Meta.
+
+      book_financial_interest:
+        title: "An Ugly Truth: Inside Facebook's Battle for Domination"
+        publisher: "HarperCollins (Harper imprint)"
+        advance: "seven figures"
+        date: "2021-07-13"
+        co_author: "Cecilia Kang"
+        nyt_book_review_quote: "The ultimate takedown."
+        awards: "NYT Bestseller, SABEW Best in Business Award"
+        financial_conflict_note: |
+          The seven-figure book deal creates a structural financial interest
+          in maintaining adversarial Meta coverage. Frenkel's commercial brand
+          as a journalist IS "the person who exposed Facebook." Positive or
+          even neutral Meta coverage would undermine her book's thesis and
+          commercial value. This is an undisclosed financial conflict that
+          NYT does not note in her Meta coverage bylines.
   - name: "Kashmir Hill"
     beat: "Privacy, facial recognition, tech surveillance"
     known_patterns: "Clearview AI investigation (Jan 2020) changed national facial recognition policy. 'Your Face Belongs to Us' (2023) — Royal Society Science Book Prize shortlist. Career: Forbes → Fusion → Gizmodo investigative → NYT (2019). Known for experiential/experimental journalism."
