@@ -301,13 +301,17 @@ entities:
 
       (c) Revenue growing from $9B to $19B projected annual run rate
 
-      This absence means NO MediaScope-profiled publication has an
+      This absence means NO MediaScope-profiled publication has a DIRECT
 
-      Anthropic revenue relationship. Anthropic is financially neutral
+      Anthropic revenue relationship. However, Anthropic is NOT financially
 
-      to all profiled publishers — neither paying them (like OpenAI/Amazon/
+      neutral to publishers — see investor_advertiser_publisher_triangle
 
-      Google/Microsoft) nor threatening them (like Google''s traffic cannibalization).
+      below for the INDIRECT financial incentive structure created by
+
+      Amazon and Google holding both Anthropic equity and publisher
+
+      advertising/cloud relationships.
 
       NOTE: The FinancialContent/TokenRing report of an "Anthropic-NYT
 
@@ -355,6 +359,137 @@ entities:
         - https://www.fastcompany.com/91577047/anthropic-ai-lawsuit-settlement-payout-for-authors-update
         - http://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
     valuation_source: https://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
+    investor_advertiser_publisher_triangle:
+      overview: 'Anthropic has ZERO direct publisher content licensing deals, but
+        is NOT financially neutral to publishers. Its two largest strategic investors
+        — Amazon ($13B+ invested, ~$200B stake value) and Alphabet/Google ($3B+
+        invested, up to $40B committed, ~14% stake worth ~$135B) — are ALSO the two
+        largest sources of publisher advertising and infrastructure revenue. This
+        creates an INDIRECT coverage incentive triangle: publishers covering Anthropic
+        favorably boost the asset value of their own biggest financial partners.
+
+        MECHANISM: When a publisher writes favorably about Anthropic pre-IPO,
+        it contributes to positive market sentiment that increases Anthropic''s
+        valuation. Higher Anthropic valuation → higher paper gains for Amazon
+        (already $53.4B Q2 2026 gain) and Alphabet (14% stake). Healthier
+        Amazon and Alphabet → more advertising spend and better partnership
+        terms for those same publishers. This is not speculative — Amazon''s
+        Q2 2026 earnings showed Anthropic''s valuation gain ($53.4B) exceeded
+        Amazon''s entire operating income ($27.5B). The companies that pay
+        publishers bills are materially dependent on Anthropic''s success.
+
+        CONTRAST WITH META: Meta has no strategic investor whose advertising
+        revenue flows to publishers. Meta''s AI content licensing deals ($50M/yr
+        News Corp, plus others) are DIRECT — the financial relationship is
+        explicit and trackable. Anthropic''s influence on coverage is INDIRECT
+        — flowing through Amazon/Google advertising and cloud dependencies —
+        making it invisible to traditional conflict-of-interest disclosure.
+        No publication discloses "our advertising revenue depends on companies
+        that are Anthropic''s largest investors" because the connection requires
+        two-hop reasoning.
+        '
+      amazon_leg:
+        invested_total_b: 13
+        additional_committed_b: 20
+        stake_value_estimated_b: 200
+        q2_2026_paper_gain_b: 53.4
+        publisher_ad_revenue_ttm_b: 76
+        publisher_mechanism: 'Amazon Advertising ($76B TTM, 26% YoY growth) includes
+          Sponsored Products, Prime Video Ads, Amazon DSP, Amazon Associates
+          affiliate program, and Amazon Publisher Services (APS — header
+          bidding/server-side ad tech for mid-to-large publishers). Publishers
+          with Amazon ad/affiliate relationships include BuzzFeed, Hearst,
+          Pinterest, Ziff Davis (Lifehacker, Mashable), and hundreds of others
+          using APS for programmatic revenue. Amazon''s Ads Agent (AI-powered,
+          11 countries) further embeds publishers in Amazon''s ad ecosystem.
+          '
+        cloud_mechanism: 'AWS hosts media operations for BBC, C-SPAN, Newsweek,
+          Time Inc, SoundCloud, and hundreds of other publishers. $42.2B Q2
+          2026 revenue. Vendor lock-in creates structural dependency. Publishers
+          cannot easily divest from AWS without massive migration costs.
+          '
+        materiality: 'Amazon''s Anthropic gain ($53.4B) exceeded its Q2 operating
+          income ($27.5B). Anthropic''s success is now a MATERIAL driver of
+          Amazon''s stock price. Amazon''s stock price drives its advertising
+          spend capacity and partnership terms. Publishers'' Amazon ad revenue
+          is therefore INDIRECTLY linked to Anthropic''s valuation.
+          '
+      google_leg:
+        invested_total_b: 3
+        additional_committed_b: 40
+        max_stake_pct: 15
+        stake_value_estimated_b: 135
+        cloud_commitment_from_anthropic_b: 200
+        publisher_ad_revenue_annual_b: 81.6
+        publisher_mechanism: 'Google controls the dominant digital advertising
+          infrastructure for publishers: Google Ad Manager (formerly DFP/AdX),
+          Google AdSense, Google Showcase ($1B+, 700 publications), Google
+          News Initiative. Google''s ad tech stack is embedded in virtually
+          every major news publisher''s revenue operations. No publisher can
+          realistically divest from Google advertising without catastrophic
+          revenue loss.
+          '
+        materiality: 'Google committed up to $40B in Anthropic investment and
+          secured $200B in Google Cloud commitments from Anthropic. Anthropic
+          is now one of Google Cloud''s largest customers. Anthropic''s growth
+          directly drives Google Cloud revenue, which drives Alphabet''s stock,
+          which drives Google''s capacity to maintain publisher advertising
+          programs. The financial chain is: Anthropic growth → Google Cloud
+          revenue → Alphabet stock → Google ad platform investment → publisher
+          ad revenue.
+          '
+      triangle_dynamics:
+        - name: pre_ipo_coverage_pressure
+          detail: 'As Anthropic targets October 2026 IPO, every major
+            publication will cover the offering extensively. Their coverage
+            will shape retail and institutional investor sentiment. Positive
+            coverage boosts Anthropic valuation, which boosts Amazon and
+            Google investment returns, which sustains the advertising and
+            cloud revenue that funds those same publications. This is a
+            SELF-REINFORCING cycle that traditional disclosure does not
+            capture.
+            '
+        - name: settlement_revenue_adds_direct_layer
+          detail: 'The Bartz v. Anthropic $1.5B settlement (approved Jul 20)
+            adds a DIRECT financial relationship on top of the indirect
+            triangle. HarperCollins (News Corp), Hachette, and other book
+            publishers will receive settlement payments starting Aug 10.
+            News Corp CEO Thomson explicitly flagged this revenue on the Q4
+            FY2026 earnings call (Aug 5). This makes News Corp the FIRST
+            publisher receiving revenue from THREE major AI companies:
+            OpenAI (licensing $50M/yr), Meta (licensing up to $50M/yr),
+            and Anthropic (settlement share). The settlement creates a new
+            category: litigation-derived revenue as a coverage incentive.
+            '
+        - name: zero_deal_paradox_explained
+          detail: 'The "zero publisher deal" framing positions Anthropic as
+            financially independent of publishers. But through the investor-
+            advertiser triangle, Anthropic is MORE financially entangled with
+            publishers than its ZERO direct-deal count suggests. Google and
+            Amazon collectively control ~$157B/yr in revenue that flows through
+            publisher infrastructure (advertising, cloud, distribution). Their
+            combined Anthropic equity stake (~$335B at current valuation) means
+            Anthropic''s success is materially significant to both companies —
+            and by extension to every publisher dependent on Google and Amazon
+            revenue.
+            '
+        - name: coverage_prediction
+          detail: 'MODEL PREDICTION: Publications with the highest Google/Amazon
+            advertising dependency will produce the softest Anthropic IPO
+            coverage. WIRED/Condé Nast (Google Showcase + Amazon Rufus deal)
+            and Vox Media (Google Showcase + Amazon Rufus deal) are most
+            exposed. The Guardian (no Apple News+, but Google Showcase deal)
+            and FT (Google Showcase deal) will be softer on Anthropic than
+            expected given Anthropic''s zero-deal status. Reuters (minimal
+            ad dependency) and Gizmodo (no known deals) are cleanest controls.
+            '
+      source_urls:
+      - https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+      - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
+      - https://www.fool.com/investing/2026/07/07/forget-the-anthropic-ipo-these-2-stocks-could-bene/
+      - https://www.fool.com/investing/2026/06/06/these-stocks-are-about-to-cash-in-on-anthropics-up/
+      - https://www.reuters.com/commentary/breakingviews/anthropic-ipo-could-train-large-ma-model-2026-06-02/
+      - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
     rogue_ai_incident:
       date_disclosed: '2026-07-28'
       severity: high

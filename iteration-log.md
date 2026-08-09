@@ -31228,3 +31228,91 @@ The `count_stats.py --check` script caught two stale README stats:
 - Structural consistency: 124/124 passing (with stats fix)
 - Total: 6983 tests across 241 files (structural consistency counter)
 - NOTE: `pytest --collect-only` reports 7075 due to more accurate parametrize expansion counting — structural consistency regex counter is the commit gate
+
+---
+
+## Iteration: Type C — News Corp Factiva AI Marketplace Dual-Role Analysis
+- **Date:** 2026-08-09 05:00 PT
+- **Type:** C (Financial Incentive Mapping)
+- **Commit:** 09dd8ab
+
+### Key finding
+News Corp operates a unique DUAL ROLE in the AI content licensing ecosystem:
+(1) As a PUBLISHER selling content directly to OpenAI ($50M/yr) and Meta (up to $50M/yr)
+(2) As a MARKETPLACE OPERATOR through Factiva (Dow Jones subsidiary) selling AI licensing
+    rights to 8,100+ news sources — more than 25% of all Factiva sources.
+
+This creates a 4th financial incentive dimension beyond bilateral deals: News Corp profits
+from the growth of the broader AI content licensing market itself.
+
+WSJ self-disclosure verified: Jul 2, 2026 marketplace article disclosed Factiva/WSJ/News Corp
+conflict — consistent with WSJ being the ONLY profiled publication with systematic disclosure.
+
+Marketplace landscape now has 4 operators ranked by conflict level:
+Microsoft PCM (highest) > Amazon (high) > Factiva (medium) > Snowflake (lowest)
+
+### Files modified
+- `profiles/news-corp.yaml` — Added factiva_marketplace_role section (overview, factiva_ai_licensing, dual_role_implications, mediascope_significance, source_urls)
+- `profiles/competitor-entities.yaml` — Added Factiva as 4th tier_2_marketplace operator
+- `scripts/count_stats.py` — Aligned test counting with structural consistency test (regex-based, not pytest --collect-only) to prevent count drift
+- `tests/test_news_corp_factiva_marketplace_dual_role_aug9.py` — NEW: 41 tests, 8 classes
+- `README.md` — Updated stats (7256 tests, 248 files), added test file entry
+- `docs/ARCHITECTURE.md` — Updated stats and test file listing
+
+### Test health
+- New tests: 41/41 passing
+- Structural consistency: 124/124 passing
+- count_stats.py --check: passing
+- Total: 7256 tests across 248 files (structural consistency counter, now aligned with count_stats.py)
+
+---
+
+## Iteration: Type C — Anthropic IPO Investor-Advertiser-Publisher Triangle
+- **Date:** 2026-08-09 06:00 PT
+- **Type:** C (Financial Incentive Mapping)
+
+### Key finding: Anthropic IPO Investor-Advertiser-Publisher Triangle
+
+Anthropic has ZERO direct publisher content licensing deals, but is NOT "financially neutral"
+to publishers as previously claimed. Its two largest strategic investors — Amazon ($13B+ invested,
+~$200B stake value, $76B/yr TTM ad revenue) and Google ($3B+ invested, up to $40B committed,
+~14% stake worth ~$135B, $81.6B/yr ad revenue) — are ALSO the two largest sources of publisher
+advertising and infrastructure revenue.
+
+This creates an INDIRECT coverage incentive triangle: publishers covering Anthropic favorably
+boost the asset value of their own biggest financial partners.
+
+#### Amazon leg:
+- $13B+ invested, $20B more committed, ~$200B stake value
+- Q2 2026 paper gain from Anthropic ($53.4B) EXCEEDED Amazon's entire operating income ($27.5B)
+- Amazon Advertising: $76B TTM, publisher partners include BuzzFeed, Hearst, Ziff Davis
+- AWS hosts BBC, C-SPAN, Newsweek, Time Inc — cloud vendor lock-in
+
+#### Google leg:
+- $3B+ invested, up to $40B committed, 15% max stake (~$135B value)
+- Anthropic committed $200B to Google Cloud (one of GCP's largest customers)
+- Google controls dominant publisher ad stack: Ad Manager, AdSense, Showcase ($1B+, 700 pubs)
+
+#### Triangle dynamics:
+1. Pre-IPO coverage pressure (Oct 2026 target)
+2. Settlement revenue adds DIRECT layer ($1.5B Bartz v. Anthropic, Aug 10 payments start)
+3. Zero-deal paradox explained: combined investor-publisher revenue ~$157B/yr, combined equity ~$335B
+4. Coverage prediction: highest Google/Amazon ad dependency → softest Anthropic coverage
+
+#### Corrections:
+- **Old claim CORRECTED:** "Anthropic is financially neutral to all profiled publishers" → now
+  correctly notes Anthropic is NOT financially neutral due to indirect investor-advertiser triangle.
+- **Meta contrast:** Meta has no strategic investor whose advertising revenue flows to publishers.
+  Meta's influence on coverage is DIRECT (licensing), making it visible and trackable. Anthropic's
+  influence is INDIRECT (two-hop through Amazon/Google), making it invisible to traditional disclosure.
+
+### Files modified
+- `profiles/competitor-entities.yaml` — Added `investor_advertiser_publisher_triangle` section to Anthropic entity (overview, amazon_leg, google_leg, triangle_dynamics, source_urls). Corrected "financially neutral" claim in `publisher_deals_note`.
+- `tests/test_anthropic_ipo_investor_publisher_triangle_aug9.py` — NEW: 40 tests across 8 classes (TriangleStructure, AmazonLeg, GoogleLeg, TriangleDynamics, CorrectedNeutralityClaim, AmazonEntityCrossValidation, MetaContrast, CombinedRevenueScale)
+- `README.md` — Updated stats (7296 tests, 249 files), added test file entry
+- `docs/ARCHITECTURE.md` — Updated stats and test file listing
+
+### Test health
+- New tests: 40/40 passing
+- Structural consistency: 124/124 passing
+- Total: 7296 tests across 249 files
