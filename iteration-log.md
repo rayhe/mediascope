@@ -1,4 +1,63 @@
 # MediaScope Iteration Log
+## 2026-08-09 01:00 PT — Type C: Financial Incentive Mapping — Apple-OpenAI Litigation Publisher Cross-Pressure + Anthropic Settlement Correction
+
+**Rotation:** C (Financial Incentive Mapping)
+
+### Finding: Publisher Cross-Pressure from Apple-OpenAI Trade Secret Litigation (Jul-Aug 2026)
+
+The Apple-OpenAI litigation creates an unprecedented PUBLISHER CROSS-PRESSURE natural experiment. Almost every major publication with an OpenAI content licensing deal is ALSO financially dependent on Apple News+ (50% subscription revenue share, 125M MAU). When Apple sues OpenAI for trade secret theft (Jul 10) and seeks preliminary injunction (Aug 4), publications with dual financial ties must navigate coverage between their two financial partners.
+
+**Dual-relationship publications mapped:**
+
+| Publication | OpenAI Deal | Apple News+ | Cross-Pressure Level | Key Factor |
+|------------|-------------|-------------|---------------------|------------|
+| Condé Nast (WIRED) | Yes (Aug 2024, 16 titles) | Yes (16 titles, 50% rev share) | HIGHEST | Both partners significant revenue |
+| The Atlantic | Yes (Jun 2024) | Yes ("most valuable syndication partner") | EXTREME | LPJ Trust ~$17B Apple stock (undisclosed) |
+| Vox Media (The Verge) | Yes (Jun 2024) | Yes (multiple titles) | MODERATE | Apple coverage historically skeptical |
+| News Corp (WSJ) | Yes ($50M/yr) | Yes | MODERATE | Balanced dual-deal structure mitigates |
+| Washington Post | Yes (Apr 2025) | Yes | COMPLEX | Amazon/Anthropic/Bezos triple chain |
+| The Guardian | Yes (Feb 2025) | NO (dropped 2017) | LOW | Only OpenAI-deal publisher NOT on News+ |
+
+**Model prediction:** Publications tilt toward the greater-leverage partner. Apple (5 mechanisms) vs OpenAI (1 mechanism). Coverage framing will favor Apple.
+
+**Coverage artifact validation:**
+- WSJ: Balanced — reported OpenAI's "oddly personal" defense prominently (symmetric deals predict balanced)
+- TechCrunch: Apple-sympathetic — reproduced Apple's "tip of the iceberg" and "rotten to its core" language (Apple News+ dependency)
+- Reuters: Neutral wire service — clean control (no deals with either)
+
+### Anthropic Settlement Date Correction
+
+Fixed date error across 4 locations in competitor-entities.yaml: Jun 20 → Jul 20 2026.
+
+**Source:** openclassactions.com confirms final approval by Judge Araceli Martínez-Olguín on July 20, 2026 (not June 20).
+
+**Expanded settlement detail added:**
+- 482,460 works on the Works List
+- 92.77% claims filed
+- ~$3,100/work gross allocation
+- Attorneys' fees reduced from $187.5M → $101.6M
+- Payments estimated to start Aug 10, 2026
+- FinancialContent/TokenRing "Anthropic-NYT settlement" article confirmed fabricated — NYT never sued Anthropic
+
+### Files modified
+- `profiles/competitor-entities.yaml` — Apple `openai_litigation_publisher_cross_pressure` section (6 publications, coverage artifacts, outcome implications, 5 source URLs) + Anthropic settlement date fix (4 locations) + expanded `author_settlement_detail` section (12 fields, 5 source URLs)
+- `tests/test_apple_openai_litigation_cross_pressure_aug9.py` — 50 new tests across 8 classes:
+  - `TestAppleOpenAILitigationCrossPressure` (6 tests): section existence, overview content, prediction model
+  - `TestDualRelationshipPublications` (14 tests): all 6 publications present, fields complete, Guardian unique position
+  - `TestCoverageArtifacts` (7 tests): WSJ balanced, Reuters control, dates and framing present
+  - `TestFinancialImplications` (5 tests): both outcome scenarios documented, source URLs
+  - `TestAnthropicSettlementDateCorrection` (2 tests): Jul 20 present, Jun 20 absent
+  - `TestAnthropicSettlementDetails` (13 tests): all detail fields validated
+  - `TestAppleLeverageHierarchy` (3 tests): meta_contrast preserved, ranking in overview
+- `README.md` — Test count 7060→7110, file count 243→244, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7060→7110, file count 243→244, tree entry
+
+### Test health
+- New tests: 50/50 passing
+- Structural consistency: 124/124 passing
+- Total: 7110 tests across 244 files
+
+**Commit:** 79e90a7
 ## 2026-08-09 00:00 PT — Type B: Journalist Cross-Entity Tracking — Mark Gurman (Bloomberg) Access Dependency Mechanism
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
