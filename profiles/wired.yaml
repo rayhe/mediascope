@@ -3691,3 +3691,199 @@ journalist_cross_entity_coverage:
       - TestCompetitorPricingAsymmetry (2 tests)
       - TestCondeNastFinancialCorrelation (4 tests)
       - TestGearDeskVsInvestigativeDesk (2 tests)
+
+  google_io_2026_smart_glasses_coverage:
+    date: "2026-05-19"
+    event: "Google I/O 2026"
+    key_finding: "Lane Assignment Extends to Google — Camera Glasses Without Creep"
+    summary: |
+      WIRED sent 5 reporters to Google I/O 2026 — Boone Ashworth, Julian Chokkattu, Lauren Goode,
+      Steven Levy, and Reece Rogers — to cover Google's smart glasses announcement. Lauren Goode,
+      the senior consumer tech correspondent documented in the lane assignment analysis as covering
+      Apple/Snap wearables with empathetic framing while having NO major byline on Meta Ray-Ban
+      reviews, was part of the Google I/O smart glasses team. The live blog and hands-on coverage
+      used playful/enthusiastic framing for Google's camera-equipped, Gemini AI-integrated glasses —
+      the same hardware capability that generates "dormant surveillance infrastructure" and "mass
+      surveillance" framing when it's Meta's product.
+
+    wired_reporters_sent:
+      - name: Boone Ashworth
+        role: Staff Writer (Gear)
+      - name: Julian Chokkattu
+        role: Senior Editor (Gear) — same journalist who called Meta "a tool for mass surveillance" in Business Wars
+      - name: Lauren Goode
+        role: Senior Correspondent — same journalist with no major Meta Ray-Ban byline
+      - name: Steven Levy
+        role: Editor at Large
+      - name: Reece Rogers
+        role: Staff Writer
+
+    live_blog_framing:
+      source_url_proxy: "https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen"
+      source_note: "WIRED I/O live blog rehosted at technologytangle.com"
+      key_quotes:
+        - quote: "Nano Banana on smart glasses is actually bananas. The demo worked!"
+          context: "Google's AI photo manipulation feature on camera-equipped glasses"
+          tone: enthusiastic
+          meta_equivalent_framing: >
+            Google's Nano Banana can alter photos captured by face-mounted cameras via
+            voice command. This combines cameras (the thing that makes Meta "creepy") with
+            AI image manipulation (deepfake potential). Yet WIRED frames it as exciting
+            tech demo, not privacy/deepfake/manipulation threat.
+
+        - quote: "Nothing like doctoring photos in real time."
+          context: "Comment on Nano Banana AI image editing on glasses"
+          tone: mildly_ironic_but_not_alarmed
+          meta_equivalent_framing: >
+            Maximum criticism level for Google's AI photo manipulation: mild sarcasm.
+            When Meta's single 12MP camera captures photos, it's "surveillance."
+            When Google's cameras capture AND AI-MANIPULATE photos, it's "doctoring
+            photos in real time" — with a wry smile, not an investigative exposé.
+
+        - quote: "14 years (!) after Sergey parachuted into I/O to introduce Google Glass, we get a reference design for Google smart glasses."
+          context: "Google's return to face-mounted cameras"
+          tone: nostalgic_excitement
+          meta_equivalent_framing: >
+            The exclamation mark (!) signals excitement/nostalgia. Google Glass was the
+            ORIGINAL "Glasshole" controversy. When WIRED covers Meta's camera glasses,
+            the Google Glass precedent is invoked as a WARNING ("the rise of the Ray-Ban
+            Meta creep"). When Google ITSELF returns to face-mounted cameras, the same
+            precedent becomes a nostalgic milestone. Variable: manufacturer identity.
+
+        - quote: "Remember, they're not Smart Glasses, they are 'Intelligent Eyewear.'"
+          context: "Google/Samsung marketing terminology"
+          tone: gentle_teasing
+          meta_equivalent_framing: >
+            Light ribbing of marketing-speak. Contrast with Meta's marketing receiving
+            scare quotes as deceptive framing ("'expanded access'" treated as
+            consumer-hostile euphemism in Chokkattu's subscription article).
+
+        - quote: "Sergey wanted to be here, but he's busy parachuting into the White House."
+          context: "Reference to Google co-founder and political access"
+          tone: playful_joke
+          meta_equivalent_framing: >
+            Zuckerberg's political access → adversarial "lobbying"/influence framing.
+            Brin's political access → playful insider joke. Same dynamic: tech CEO
+            proximity to political power, different register based on manufacturer.
+
+      published_articles:
+        - title: "Hands-On With All of Google's Upcoming Smart Glasses"
+          wired_url_note: "Published on wired.com from I/O coverage, linked from live blog"
+          format: hands_on_product_review
+          lane: product_review_channel
+          privacy_surveillance_framing: false
+          note: >
+            Google's glasses have cameras + Gemini AI with live visual understanding
+            and AI photo manipulation. They receive the product-review treatment
+            (hands-on, feature assessment) — the same treatment Meta glasses are
+            DENIED by being routed to investigative reporters instead.
+
+    lane_assignment_extension:
+      finding: |
+        The Google I/O 2026 coverage EXTENDS the lane assignment pattern beyond
+        Apple and Snap to include Google:
+
+        PRODUCT REVIEW LANE (empathetic, feature-focused):
+          Apple Vision Pro → Lauren Goode ("I cried inside the Apple Vision Pro")
+          Snap Spectacles → Lauren Goode ("Are they the face camera we've been waiting for?")
+          Google Android XR → Lauren Goode + Chokkattu + Ashworth (hands-on, "bananas!")
+
+        INVESTIGATIVE LANE (surveillance, privacy alarm):
+          Meta Ray-Ban → Dell Cameron + Dhruv Mehrotra ("dormant surveillance infrastructure")
+          Meta Ray-Ban → Business Wars podcast ("mass surveillance," "I'm a Creep")
+
+        This is NOT just Apple/Snap vs Meta. It's EVERY competitor → product review,
+        Meta → investigative alarm. The variable that determines the editorial lane is
+        the manufacturer identity, not the hardware capability.
+
+      camera_count_comparison:
+        google_android_xr: "camera(s) + Gemini AI + Nano Banana AI photo manipulation"
+        snap_spectacles: "4 cameras"
+        apple_vision_pro: "12 cameras, 5 sensors, 6 microphones"
+        meta_ray_ban: "1 camera (12MP)"
+        meta_privacy_framing_count: 4  # "mass surveillance", "creep", "dormant surveillance infrastructure", "illegal"
+        google_privacy_framing_count: 0
+        snap_privacy_framing_count: 0
+        apple_privacy_framing_count: 0
+
+    ai_photo_manipulation_asymmetry:
+      finding: |
+        Google demonstrated Nano Banana — an AI that instantly alters photos taken by
+        face-mounted cameras via voice command. A Google employee showed the glasses
+        taking a photo of people in a room and instantly placing them in front of
+        Barcelona's Sagrada Família. This is camera surveillance + AI deepfake
+        capability combined in a face-mounted wearable.
+
+        WIRED's response: "actually bananas. The demo worked!" and
+        "Nothing like doctoring photos in real time" (mild irony).
+
+        For context: Meta's SINGLE camera generating unaltered photos is framed as
+        "dormant surveillance infrastructure." Google's camera generating AI-ALTERED
+        photos (deepfake-adjacent capability) is framed as an exciting demo.
+
+        The asymmetry is not about privacy risk — Google's capability is objectively
+        MORE concerning (cameras + AI manipulation > cameras alone). The variable is
+        manufacturer identity.
+      source_urls:
+        - "https://foxnews.com/tech/ai-smart-glasses-could-generate-fake-photos-instantly"
+
+    google_glass_precedent_reversal:
+      finding: |
+        Google Glass (2013) created the "Glasshole" phenomenon — the original public
+        backlash against face-mounted cameras. WIRED's Meta coverage EXPLICITLY invokes
+        this precedent: "The Rise of the Ray-Ban Meta Creep" echoes "Glasshole" framing.
+
+        When Google ITSELF returns to face-mounted cameras at I/O 2026, the same
+        precedent is treated as a nostalgia-tinged milestone: "14 years (!) after Sergey
+        parachuted into I/O to introduce Google Glass." The exclamation point signals
+        celebratory return, not cautionary echo.
+
+        The entity that CREATED the face-camera backlash gets a redemption narrative.
+        The entity that IMPROVED on the form factor (smaller, more camera-shy with
+        tamper-proof LED) gets the revival of the backlash framing.
+      source_urls:
+        - "https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/"
+
+    chokkattu_dual_standard_evidence:
+      finding: |
+        Julian Chokkattu was present at Google I/O 2026 covering Google's camera-equipped
+        smart glasses. This is the same journalist who:
+        - Called Meta "a tool for mass surveillance" (Business Wars, Jun 3, 2026)
+        - Appeared in "I'm a Creep" episode about Meta glasses (Jun 10, 2026)
+        - Applied "extracting value" framing to Meta's $20/mo subscription
+
+        At Google I/O just weeks earlier (May 19, 2026), the same journalist
+        covered Google's camera glasses with zero surveillance/creep language.
+        Google's camera glasses → hands-on product coverage.
+        Meta's camera glasses → "mass surveillance" and "I'm a Creep."
+
+        Chokkattu went from covering Google's cameras as exciting tech (May 19)
+        to calling Meta's cameras "mass surveillance" (Jun 3) — a 15-day swing
+        in framing for functionally identical hardware.
+
+    conde_nast_financial_correlation:
+      finding: |
+        Google remains a significant programmatic advertising revenue source for
+        Condé Nast despite having no AI content licensing deal. This creates a
+        financial incentive for softer Google coverage that aligns with the
+        observed framing pattern.
+
+        Meta has ZERO revenue relationship with Condé Nast — no advertising
+        revenue, no licensing deal, no content partnership.
+
+        Coverage framing tracks financial relationship:
+          Google (ad revenue to CN): neutral/enthusiastic glasses coverage
+          Snap (OpenAI partner; OpenAI pays CN): no surveillance framing
+          Apple (Apple News+ 50% rev share to CN): empathetic wearables coverage
+          Meta (zero CN revenue): "mass surveillance," "creep," investigative alarm
+
+    test_file: "tests/test_wired_google_io_2026_glasses_framing_aug9.py"
+    test_count: 40
+    test_classes:
+      - TestGoogleIO2026Coverage (8 tests)
+      - TestLiveBlogFramingAnalysis (7 tests)
+      - TestLaneAssignmentExtension (6 tests)
+      - TestAIPhotoManipulationAsymmetry (5 tests)
+      - TestGoogleGlassPrecedentReversal (4 tests)
+      - TestChokkattuDualStandard (5 tests)
+      - TestCondeNastFinancialCorrelation (5 tests)
