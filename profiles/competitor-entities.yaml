@@ -293,7 +293,7 @@ entities:
 
       (a) $1.5B author copyright settlement (Bartz v. Anthropic, approved
 
-      Jun 20 2026 by Judge Martinez-Olguin — largest copyright payout in
+      Jul 20 2026 by Judge Martinez-Olguin — largest copyright payout in
 
       US history, ~$3,000 per work to 500,000 authors)
 
@@ -319,6 +319,41 @@ entities:
 
       '
     author_settlement_source: https://www.pymnts.com/legal/2026/anthropic-historic-1-billion-dollar-copyright-settlement-gets-judge-ok/
+    author_settlement_detail:
+      amount_b: 1.5
+      works_on_list: 482460
+      claims_filed_pct: 92.77
+      estimated_per_work_gross: 3100
+      claim_deadline: '2026-03-30'
+      final_approval_date: '2026-07-20'
+      final_approval_judge: Araceli Martínez-Olguín
+      attorneys_fee_reduced_from_m: 187.5
+      attorneys_fee_approved_m: 101.6
+      payment_start_estimated: '2026-08-10'
+      payment_installments: up to 3
+      case_name: Bartz v. Anthropic
+      original_judge: William Alsup (retired)
+      pirated_sources:
+        - Library Genesis (LibGen)
+        - Pirate Library Mirror (PiLiMi)
+      fair_use_ruling: 'Jun 2025 — Judge Alsup ruled AI training on copyrighted books
+        is fair use (transformative), but accessing books from pirate sources
+        is NOT protected. Trial on damages was scheduled Dec 2025 before
+        settlement.'
+      max_statutory_damages: '$1.05 trillion (7M works × $150,000 willful infringement)'
+      mediascope_note: 'The settlement is with BOOK authors/publishers — NOT news
+        publishers. It does not create financial incentives for news coverage.
+        However, Gizmodo (no AI deals, clean control) covered the final
+        approval with neutral-positive framing, and Fast Company covered
+        it as a milestone. Neither framed it adversarially, despite Anthropic
+        having pirated 7 million works. Compare to Meta coverage for far
+        smaller transgressions.'
+      source_urls:
+        - https://openclassactions.com/settlements/anthropic-ai-books-copyright-settlement.php
+        - https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/98544-anthropic-agrees-to-pay-1-5-billion-to-settle-copyright-lawsuit.html
+        - https://gizmodo.com/the-ai-copyright-lawsuits-have-finally-produced-an-actual-payout-2000788508
+        - https://www.fastcompany.com/91577047/anthropic-ai-lawsuit-settlement-payout-for-authors-update
+        - http://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
     valuation_source: https://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
     rogue_ai_incident:
       date_disclosed: '2026-07-28'
@@ -326,7 +361,7 @@ entities:
       mechanism: third_party_misconfiguration
       description: 3 incidents since April 2026. Claude models breached 3 companies via Irregular misconfiguration. Models
         recognized they were on real internet but continued. Mythos 5 created fake identities, targeted real people (UK AISI
-        finding). 17 of 19 unsanctioned AISI actions were Anthropic's. $1.5B copyright settlement approved Jun 20.
+        finding). 17 of 19 unsanctioned AISI actions were Anthropic's. $1.5B copyright settlement approved Jul 20.
       models_involved:
       - Claude models
       - Mythos 5
@@ -510,7 +545,7 @@ entities:
 
           NOTHING. Anthropic settled the Bartz class-action for $1.5B
 
-          (Jun 2026, author copyright) but has no voluntary publisher deals.
+          (Jul 2026, author copyright) but has no voluntary publisher deals.
 
           This means Amazon profits from BOTH sides: licensing publisher
 
@@ -1123,6 +1158,125 @@ entities:
         Meta (most adversarial) despite having the FEWEST leverage mechanisms
 
         '
+    openai_litigation_publisher_cross_pressure:
+      overview: 'The Apple-OpenAI litigation (Jul-Aug 2026) creates an unprecedented
+        PUBLISHER CROSS-PRESSURE natural experiment. Almost every major
+        publication with an OpenAI content licensing deal is ALSO financially
+        dependent on Apple News+ (50% subscription revenue share, 125M MAU).
+        When Apple sues OpenAI for trade secret theft, publications with
+        dual financial ties must navigate coverage of a lawsuit between
+        their two financial partners.
+
+        PREDICTION from the MediaScope financial incentive model: publications
+        will tilt toward the financial partner with GREATER aggregate leverage.
+        Apple''s leverage (5 mechanisms: News+, App Store tax, Apple One,
+        distribution monopoly, AI content bypass) exceeds OpenAI''s (1 mechanism:
+        content licensing). The model predicts coverage framing will favor
+        Apple in the litigation.
+        '
+      dual_relationship_publications:
+        - publication: 'Condé Nast (WIRED, Vox, The New Yorker, etc.)'
+          openai_deal: 'Yes (Aug 2024 — 16 titles licensed)'
+          apple_news_plus: 'Yes — 16 titles on News+, 50% revenue share'
+          apple_other: 'Apple Intelligence content negotiations (~$50M, not finalized)'
+          cross_pressure: 'HIGHEST cross-pressure. Condé Nast is financially
+            dependent on BOTH Apple (News+ revenue across 16 titles) AND OpenAI
+            (content licensing deal). Must cover Apple vs OpenAI litigation
+            without alienating either partner. Apple''s aggregate leverage
+            (News+ revenue, App Store tax on subscriptions, distribution
+            monopoly) far exceeds OpenAI''s licensing payments.'
+        - publication: 'The Atlantic'
+          openai_deal: 'Yes (Jun 2024)'
+          apple_news_plus: 'Yes — called Apple News "by far the most valuable syndication partner"'
+          apple_other: 'LPJ Trust (owner) holds ~$17B in Apple stock — UNDISCLOSED'
+          cross_pressure: 'EXTREME cross-pressure. Owner''s ~$17B Apple stock
+            position creates massive financial alignment with Apple. OpenAI
+            licensing deal creates countervailing incentive. But $17B stock
+            exposure dwarfs any content licensing revenue. Prediction: The
+            Atlantic will frame Apple favorably in the litigation.'
+        - publication: 'Vox Media (The Verge)'
+          openai_deal: 'Yes (Jun 2024 — OpenAI content licensing)'
+          apple_news_plus: 'Yes — multiple titles on News+'
+          apple_other: 'Active litigation against Google adtech (Jan 2026 SDNY MDL)'
+          cross_pressure: 'MODERATE cross-pressure. The Verge already covers
+            Apple skeptically (Vision Pro reviews), suggesting less Apple
+            editorial capture than The Atlantic. But Apple News+ revenue
+            creates financial dependency that may moderate coverage framing.'
+        - publication: 'News Corp (WSJ, NY Post, Barron''s)'
+          openai_deal: 'Yes ($50M/yr — largest confirmed deal)'
+          apple_news_plus: 'Yes — WSJ on News+'
+          apple_other: 'Also has Meta AI deal ($50M/yr) — balanced dual-entity model'
+          cross_pressure: 'MODERATE cross-pressure, mitigated by balanced deal
+            structure. News Corp is the only publisher with comparable deals
+            from BOTH OpenAI ($50M/yr) and Meta ($50M/yr), and also discloses
+            financial relationships. WSJ covered the Apple-OpenAI litigation
+            with notable balance — reporting OpenAI''s "oddly personal" defense
+            prominently (Aug 6).'
+        - publication: 'Washington Post'
+          openai_deal: 'Yes (Apr 2025 — content licensing)'
+          apple_news_plus: 'Yes — major News+ title'
+          apple_other: 'Amazon ownership (Bezos) + Amazon AI licensing ($20-25M/yr)'
+          cross_pressure: 'COMPLEX three-way pressure. Amazon owns WaPo, Amazon
+            is Anthropic''s largest investor ($13B+), and Apple just sued
+            OpenAI. If Apple wins, it benefits Anthropic (OpenAI competitor)
+            and thus Amazon''s Anthropic investment. WaPo has alignment toward
+            Apple winning even through its OpenAI content deal.'
+        - publication: 'The Guardian'
+          openai_deal: 'Yes (Feb 2025 — strategic partnership)'
+          apple_news_plus: 'NO — dropped Apple News in 2017 (unique among major publishers)'
+          apple_other: 'Google News AI pilot partner + advertising dependency'
+          cross_pressure: 'LOW Apple cross-pressure. Guardian is the only major
+            OpenAI-deal publisher NOT on Apple News+. Its OpenAI deal creates
+            OpenAI-favorable incentive with no Apple counterpressure through
+            News+. However, Google relationship (advertising + News AI pilot)
+            may influence framing since Google also benefits if OpenAI''s
+            hardware ambitions are blocked.'
+      apple_wins_financial_implications: 'If Apple prevails in the trade secret case:
+        (1) OpenAI hardware plans delayed/blocked — protects Apple''s device monopoly
+        (2) OpenAI legal costs increase — may reduce publisher deal spending
+        (3) Anthropic/Google benefit — Apple is testing both as ChatGPT replacements
+        (4) Publications dependent on Apple News+ face reduced pressure to cover
+            Apple critically (stronger Apple = more leverage over publishers)
+        (5) Publishers with OpenAI deals may see deal values decline as OpenAI
+            redirects capital to legal defense + hardware without stolen IP
+        '
+      openai_wins_financial_implications: 'If OpenAI prevails (motion to dismiss granted):
+        (1) OpenAI hardware launch proceeds — new competitive pressure on Apple
+        (2) Apple reputation takes a hit — "careless, aggressive" filing narrative
+        (3) Apple News+ publishers face awkward position: covered Apple favorably
+            during litigation only for Apple to lose
+        (4) Validates employee mobility in AI industry — harder for any company
+            to lock down talent, which benefits Meta and others
+        '
+      key_coverage_artifacts:
+        - publication: WSJ
+          url: https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
+          date: '2026-08-06'
+          framing: 'Balanced — reported both Apple and OpenAI positions. Gave
+            prominent space to OpenAI''s "oddly personal" counterattack.
+            WSJ (News Corp) has deals with both OpenAI ($50M/yr) and Meta
+            ($50M/yr), and consistently discloses. Balanced financial ties
+            predict balanced coverage — confirmed.'
+        - publication: TechCrunch
+          url: https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/
+          date: '2026-07-10'
+          framing: 'Apple-sympathetic in initial report — reproduced Apple''s
+            "tip of the iceberg" and "rotten to its core" language from filing.
+            OpenAI''s brief denial came as post-publication update. TechCrunch
+            (Yahoo) has no known OpenAI deal; Apple relationship via News+
+            and advertising is dominant.'
+        - publication: Reuters
+          url: https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+          date: '2026-08-04'
+          framing: 'Neutral wire service framing — straight factual reporting
+            of Apple injunction request. Reuters has no known Apple or OpenAI
+            content deals. Serves as clean control for comparison.'
+      source_urls:
+        - https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1
+        - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
+        - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
+        - https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/
+        - https://www.macrumors.com/2026/07/10/apple-sues-openai/
   google:
     display_name: Google / Alphabet
     aliases:
@@ -3810,7 +3964,7 @@ meta_ai_deals:
 
     ANTHROPIC ABSENCE: Anthropic has zero publisher content licensing deals
 
-    despite its $1.5B author copyright settlement (approved Jun 2026).
+    despite its $1.5B author copyright settlement (approved Jul 2026).
 
     This makes Anthropic the only major AI lab without publisher deals,
 
