@@ -1,4 +1,47 @@
 # MediaScope Iteration Log
+## 2026-08-09 15:00 PT — Type A: Competitor Coverage Deep Dive — Gizmodo × Google I/O 2026 Camera Acknowledgment Paradox
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Finding: Camera Acknowledgment Paradox in the Clean Control
+
+Raymond Wong (Gizmodo's sole wearables beat reporter) wrote 6 articles about Google/Samsung camera glasses at I/O 2026 (May 2026). In one, he explicitly states camera parity: Google's glasses "most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI glasses." Despite this acknowledged equivalence:
+
+- **Google I/O headlines (6):** ZERO contain privacy/surveillance language. Headlines focus on product strategy ("Google Seems Pretty Scared of the Words 'Smart Glasses'"), product endorsement ("Project Aura XR Smart Glasses Are Legit"), and competitive analysis.
+- **Meta headlines (3+ in same period):** "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up," "Meta Has More Smart Glasses Coming Whether You Want Them or Not," "Concerns Over Meta's Smart Glasses Have Reached the U.S. Senate."
+- **Privacy mentions in body text:** Google articles have 1 gentle suggestion ("It could decide not to use videos and pictures to train AI as Meta has"). Meta articles have 15+ privacy/surveillance terms.
+
+### Analytical Decomposition
+
+The analysis separates the asymmetry into legitimate and editorial factors:
+
+**Legitimate factors:**
+1. Incident asymmetry — Meta has shipping products with documented incidents (Svenska Dagbladet contractor footage, extortion, South Korea exam cheating). Google's glasses haven't shipped.
+2. Data practice asymmetry — Meta explicitly trains AI on user-captured imagery. Google hasn't stated its policy.
+3. Market maturity — Meta has 7M+ pairs sold; Google's are prototypes.
+
+**Editorial factors:**
+1. Headline framing gap — Zero privacy headlines across 6 Google camera-glasses articles is an editorial choice, not forced by the facts.
+2. Google Glass amnesia — The 2013 "Glasshole" panic is recontextualized as Google's marketing challenge, not an ongoing privacy threat.
+3. Source ecosystem — Privacy advocacy organizations (EFF) target Meta specifically in press outreach.
+4. Temporal prediction — If Google ships and Wong applies same scrutiny, the asymmetry was temporal. If not, structural.
+
+### Cross-Reference Value
+
+Both WIRED (with financial ties to Google) and Gizmodo (with none) produce zero-privacy-alarm Google I/O coverage. Both Barr and Wong (same Gizmodo publication, divergent Meta tones) produce zero Google alarm. This suggests the Google-zero pattern is industry-wide and not specific to financial incentives.
+
+### Files modified
+- `profiles/gizmodo.yaml` — `google_io_2026_camera_paradox` section with 6 Google I/O articles, 3 Meta comparison articles, quantitative summary, decomposition, cross-references
+- `tests/test_gizmodo_google_io_2026_camera_paradox_aug9.py` — 35 tests across 8 classes
+- `README.md` — Test count 7624→7659, file count 257→258, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7624→7659, file count 257→258, new tree entry
+
+### Test health
+- New tests: 35/35 passing
+- Structural consistency: 124/124 passing
+
+**Commit:** pending
+
 ## 2026-08-09 14:00 PT — Type D: Test & Verify — Cross-Validation of Aug 9 Sprint (Ryan Mac ↔ Rogue AI, eMarketer ↔ Cross-Pressure, Dual Mechanism, Lane Assignment Coherence)
 
 **Rotation:** D (Test & Verify)
@@ -30,7 +73,7 @@ Validated internal consistency across 7 cross-cutting themes from the Aug 9 spri
 - New tests: 35/35 passing
 - Structural consistency: 124/124 passing
 
-**Commit:** (pending)
+**Commit:** ae8024e
 
 ## 2026-08-09 13:00 PT — Type C: Financial Incentive Mapping — OpenAI Ad Revenue eMarketer Counter-Forecast
 
