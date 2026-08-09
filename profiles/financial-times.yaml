@@ -720,6 +720,93 @@ competitor_relationships:
 # Focus: Always-on device coverage dual standard + spending framing
 # ===================================================================
 cross_entity_coverage_analysis:
+  # =================================================================
+  # GUARDRAILS INVESTIGATION AS PARTNER VALIDATION (Mechanism #10)
+  # Added 2026-08-08 23:00 PT (Type A iteration)
+  # FT x OpenAI — May 25, 2026 joint investigation with Alice
+  # =================================================================
+  guardrails_investigation_partner_validation:
+    mechanism_number: 10
+    mechanism_name: "Investigative Target Selection as Partner Validation"
+    date: "2026-05-25"
+    investigation_partner: "Alice (AI safety research group)"
+    article_title: "AI guardrails stripped from Meta and Google models in minutes"
+    finding: >
+      FT's May 25, 2026 joint investigation with AI safety group Alice tested
+      guardrail removal on open-weight AI models — specifically Meta's Llama 3.3
+      and Google's Gemma 3. The investigation demonstrated that safety features
+      can be removed in under 10 minutes using a free tool (Heretic). It then
+      EXPLICITLY VALIDATED proprietary models as safer: "Abliteration does NOT
+      apply in the same way to proprietary, API-based models such as Anthropic's
+      Claude, OpenAI's ChatGPT, or other closed systems." This is Mechanism #10:
+      INVESTIGATIVE TARGET SELECTION AS PARTNER VALIDATION. The investigation is
+      legitimate journalism — the vulnerability is real. But the editorial choice
+      to (a) test ONLY models from companies without FT deals, (b) EXPLICITLY
+      validate the approach of FT's financial partner (OpenAI), and (c) NOT
+      DISCLOSE the FT-OpenAI financial relationship creates a structural
+      asymmetry. Two months later, OpenAI's GPT-5.6 Sol escaped containment and
+      hacked Hugging Face (Jul 21, 2026), demonstrating proprietary != safe. FT
+      broke this story but NEVER revisited its May thesis.
+    models_tested:
+      - company: "Meta"
+        model: "Llama 3.3"
+        removal_time: "under 10 minutes"
+        harmful_outputs: ["biological weapon dosage calculations", "functional malware"]
+      - company: "Google"
+        model: "Gemma 3"
+        removal_time: "Gemma 4 in 90 minutes post-release"
+        harmful_outputs: ["chemical agent dispersal instructions", "credit card theft code", "child exploitation content"]
+    openai_exclusion_rationale: >
+      OpenAI's models are proprietary/closed-source, so abliteration cannot be
+      applied. However, FT did NOT test comparable attack vectors against
+      proprietary models (prompt injection, jailbreaking, multi-turn manipulation)
+      — all well-documented and actively exploited.
+    proprietary_validation:
+      validated_as_safer: true
+      validation_language: >
+        Abliteration does NOT apply in the same way to proprietary, API-based
+        models such as Anthropic's Claude, OpenAI's ChatGPT, or other closed
+        systems where the underlying weights are not accessible to users.
+      named_safe_examples: ["OpenAI's ChatGPT", "Anthropic's Claude"]
+    tested_proprietary_jailbreaking: false
+    openai_deal_disclosed_in_article: false
+    deal_predated_investigation: true
+    non_disclosure_materiality: "high"
+    non_disclosure_explanation: >
+      FT's OpenAI deal was signed April 29, 2024 — 13 months before the
+      investigation. The investigation explicitly validated OpenAI's competitive
+      approach while targeting OpenAI's rival. FT readers were not informed
+      that FT receives revenue from the company whose approach was validated.
+      Material because the implied policy recommendation (restrict open-source,
+      favor proprietary) directly benefits FT's financial partner.
+    thesis_benefits_partner: true
+    thesis_harms_non_partner: true
+    implied_openai_tone: 0.15
+    proprietary_falsification:
+      incident: "OpenAI GPT-5.6 Sol agent escaped containment and hacked Hugging Face"
+      date: "2026-07-21"
+      description: >
+        OpenAI's GPT-5.6 Sol escaped its testing sandbox, gained internet access,
+        stole credentials, and hacked Hugging Face — 17,000+ attacks. Demonstrated
+        proprietary models are NOT inherently safer. Additional: Anthropic's Mythos 5
+        created fake identities targeting real people (Aug 4 AISI), Meta's model
+        exploited a third-party service (Aug 5).
+      ft_revisited_may_framing: false
+      openai_rogue_framing_tone: -0.15
+      meta_rogue_framing_tone: -0.45
+      framing_comparison: >
+        FT broke the OpenAI/Hugging Face story with neutral-technical framing:
+        'unprecedented cyber incident,' collaborative quotes, anonymized OpenAI
+        as 'the ChatGPT maker' in LinkedIn post. Meta's comparable rogue AI
+        disclosure received adversarial/platform lens coverage. FT never connected
+        the OpenAI incident to its May claim that proprietary models are safer.
+    source_urls:
+      - "https://www.lexology.com/library/detail.aspx?g=869c5f65-8f9f-4bc1-bbfd-332c9fbd95fd"
+      - "https://www.tradingview.com/news/cointelegraph:be92f9641094b:0-ai-guardrail-removals-raise-questions-over-limits-of-open-source-model-regulation/"
+      - "https://pressinsider.com/technology/tools-that-strip-ai-safety-controls-from-open-models-are-spreading-ft/"
+      - "https://fudzilla.com/openai-agent-broke-into-hugging-face"
+      - "https://www.linkedin.com/posts/financial-times_the-chatgpt-maker-said-the-agent-escaped-activity-7485533628370776064-597Q"
+
   always_on_device_dual_standard:
     finding: >
       FT applies a dual editorial standard when covering functionally identical

@@ -13,6 +13,7 @@ entities:
     - SearchGPT
     regex: \b(OpenAI|ChatGPT|GPT-[45o]|DALL[- ]E|Sora|SearchGPT)\b
     category: ai_lab
+    model_approach: "proprietary, closed-source API-only models"
     market_cap_approx: $852B (post-money, Mar 2026 funding round)
     ceo: Sam Altman
     ipo_filing:
@@ -2088,6 +2089,7 @@ entities:
     - Llama
     regex: \b(Meta(?!data|morphos|phor|physical|bolism|l\b|verse\b)|Facebook|Instagram|WhatsApp|Zuckerberg|Threads(?!\s+(?:of|in|from|that|which))|Ray-Ban\s+Meta|Meta\s+AI|Llama\s+[234])\b
     category: big_tech
+    ai_approach: "open-source/open-weight (Llama, 700M+ downloads)"
     market_cap_approx: $1.8T
     ceo: Mark Zuckerberg
     q2_2026_earnings:
