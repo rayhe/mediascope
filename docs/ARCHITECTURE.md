@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 7473 tests across 253 test files (all from real articles)
+├── tests/                       # 7520 tests across 254 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -545,6 +545,7 @@ mediascope/
 │   ├── test_apple_google_gemini_publisher_chain_aug7.py # Apple-Google $1B/yr Gemini deal creates publisher content bypass chain: Apple negotiated with Condé Nast/NBC/IAC ($50M, Dec 2023) but signed no deals; instead paid Google for Gemini model trained on publisher content (Hachette/Cengage lawsuit confirms), bypassing direct publisher licensing entirely
 │   ├── test_verge_anthropic_rogue_ai_comparison.py # The Verge Anthropic/OpenAI/Meta three-tier coverage: "Accidentally" Paradox, rogue AI safety comparison, pay→soft/neutral→factual/threaten→adversarial, reporter lane extension to Anthropic
 │   ├── test_raymond_wong_cross_entity.py # Gizmodo Raymond Wong cross-entity: Clean Control Paradox (no-deals publication balanced), Maxwell Zeff migration (Gizmodo→WIRED), three-tier model validation, aggregate control evidence
+│   ├── test_ryan_mac_cross_entity.py  # Ryan Mac (NYT Tech Accountability) cross-entity: BEAT CAPTURE — hired for "all manner of tech companies" but covers exclusively Meta + Musk. Three mechanisms: sourcing lock-in, book-deal incentive (Character Limit parallels Frenkel's An Ugly Truth), institutional assignment. OpenAI sole article = NYT's own lawsuit (institutional advocacy). Coverage gap: Google 0, Apple 0, Amazon 0, Anthropic 0. Personal adversarial dynamic with Musk (Twitter suspension, Maye Musk racial attack). 7 classes, 47 tests
 │   ├── test_charlie_warzel_cross_entity.py # Charlie Warzel (Atlantic) cross-entity: career-defining adversarial Meta beat, OpenAI executive access asymmetry, Apple coverage absence, vocabulary/investigation/financial incentive correlation
 │   ├── test_chokkattu_ashworth_cross_entity.py # Chokkattu & Ashworth (WIRED Gear desk) cross-entity: "Creep Paradox" — Meta glasses get 'creep'/'surveillance' framing, Snap (4 cameras) and Google (cameras + Gemini) get none; dual-channel influence via Business Wars podcast; Condé Nast financial correlation
 │   ├── test_parmy_olson_cross_entity.py # Parmy Olson (Bloomberg Opinion) cross-entity: CEO personalization asymmetry — 87.5% Meta headlines personalize to "Zuckerberg" vs 0% for OpenAI/Anthropic; loaded language asymmetry ("bait," "slop," "failure club" for Meta vs analytical framing for competitors); professional identity capture mechanism via "Supremacy" book — new asymmetry type distinct from financial incentives

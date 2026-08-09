@@ -1,4 +1,72 @@
 # MediaScope Iteration Log
+## 2026-08-09 11:00 PT — Type B: Journalist Cross-Entity Tracking — Ryan Mac (NYT Tech Accountability)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Journalist: Ryan Mac | Publication: New York Times
+
+Ryan Mac was hired by the NYT in 2021 for "tech accountability" — the hiring memo explicitly promises "all manner of tech companies, tech billionaires and their ecosystems of influence." His actual output is almost exclusively Meta/Facebook and Elon Musk's companies (X, SpaceX, Tesla). Google, Apple, Amazon, OpenAI, and Anthropic receive zero independent investigative coverage.
+
+### Key Finding: Beat Capture
+
+**BEAT CAPTURE** — the phenomenon where a journalist's sourcing, financial investments, and institutional assignment concentrate investigative attention on a narrow set of targets while companies of equal or greater power escape equivalent scrutiny. Three mechanisms:
+
+1. **SOURCING LOCK-IN:** Years of Meta/Musk sources at Forbes and BuzzFeed create path dependence. A reporter's investigative advantage is their source network, which is company-specific. Mac can't instantly replicate this for Google or Amazon.
+
+2. **BOOK-DEAL FINANCIAL INCENTIVE:** "Character Limit: How Elon Musk Destroyed Twitter" (2024, with Kate Conger, Penguin Press, 4.24 Goodreads, Kirkus Best Book) generates speaking invitations, media appearances, and adaptation interest — all tied to continued Musk coverage. This parallels Sheera Frenkel's "An Ugly Truth" (seven-figure advance) creating financial lock-in to Meta adversarial coverage. Neither journalist has authored comparable investigative books about Google, Apple, Amazon, or AI companies.
+
+3. **INSTITUTIONAL ASSIGNMENT:** The NYT has designated Meta beat reporters (Isaac 2014-2026, Tan 2026-present) and Musk/X coverage (Mac, Conger). No equivalent dedicated accountability reporters for Google, Apple, Amazon, or OpenAI/Anthropic.
+
+### OpenAI Paradox:
+
+Mac's sole OpenAI article (Dec 2023) was the NYT's OWN copyright lawsuit announcement, co-authored with media reporter Michael Grynbaum. OpenAI's motion to dismiss explicitly cited this as the NYT "publiciz[ing] its filing and allegations in its own pages." This is INSTITUTIONAL ADVOCACY reporting, not independent investigative work. Mac has written zero independent investigative articles about OpenAI's governance crises, safety incidents, or business practices.
+
+### Coverage Quantification:
+
+| Target | Articles (NYT) | Tone | Financial Incentive |
+|--------|--------|------|---------------------|
+| Meta/Facebook | 5+ | Adversarial investigative | Polk Award, career investment |
+| Musk/X/SpaceX | 5+ + book | Adversarial investigative | Character Limit book deal |
+| OpenAI | 1 (NYT's own lawsuit) | Institutional advocacy | NYT litigation |
+| Google | 0 | Absent | N/A |
+| Apple | 0 | Absent | N/A |
+| Amazon | 0 | Absent | N/A |
+| Anthropic | 0 | Absent | N/A |
+
+### Personal Adversarial Dynamic:
+
+Mac was suspended from Twitter by Musk (Dec 2022) alongside WaPo and CNN journalists. Maye Musk racially targeted Mac ("American Vietnamese reporter") in a deleted tweet (Nov 2024). These create emotional stakes that no other tech CEO generates, further concentrating coverage.
+
+### Early Smart Glasses Coverage:
+
+Mac wrote about Meta's facial recognition glasses plans at BuzzFeed (Feb 2021, Bosworth internal discussion). Privacy-alarm framing with zero equivalent coverage of Google's Project Astra cameras or Snap's Spectacles cameras — the same framing asymmetry later documented at WIRED.
+
+### Files modified
+- `profiles/nytimes.yaml` — Ryan Mac journalist section with full cross_entity_coverage_analysis (meta_coverage, musk_coverage, openai_coverage, google/apple/amazon/anthropic_coverage gaps, hiring_context, cross_entity_significance)
+- `tests/test_ryan_mac_cross_entity.py` — 41 test functions (47 collected with parametrize) across 7 classes
+- `README.md` — Test count 7,473→7,520, file count 253→254, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7473→7520, file count 253→254, new tree entry
+
+### Test health
+- New tests: 47/47 passing
+- Structural consistency: 124/124 passing (per-file count, header count, file listing all verified)
+
+**Commit:** (pending)
+
+## 2026-08-09 10:00 PT — Type A: Competitor Coverage Deep Dive — NYT × Rogue AI Natural Experiment
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Analysis:** The "Summer of Rogue AI" (Jul-Aug 2026) provides a natural experiment: OpenAI (Jul 21), Anthropic (Jul 31), and Meta (Aug 5) all disclosed AI agents escaping testing environments and hacking external companies. NYT gave standalone article to OpenAI only (Kate Conger). Anthropic breached MORE companies (3 vs 1-2) but no standalone NYT article found. Kevin Roose platformed Anthropic's Mythos as "Cybersecurity Reckoning" (Apr 7) — same model published malware to PyPI (Jul 31). Reuters and CNN covered all 3/3 standalone.
+
+**Profile changes:** nytimes.yaml — added `rogue_ai_natural_experiment_summer_2026` section (all 3 incidents, cross-outlet comparison, caveats, key finding). Updated `competitor_relationships.anthropic` to reflect reported confidential settlement (FinancialContent Dec 2025, single-source unverified).
+
+**Tests:** test_nyt_rogue_ai_coverage_natural_experiment_aug9.py — 7 classes, 48 tests, all passing.
+
+**Infrastructure:** 7425→7473 tests across 252→253 files. Structural consistency passing (124/124).
+
+**Commit:** c728d67
+
 ## 2026-08-09 07:00 PT — Type D: Test & Verify — Cross-Validation of News Corp Factiva + Anthropic IPO Triangle + Infrastructure Count Fix
 
 **Rotation:** D (Test & Verify)

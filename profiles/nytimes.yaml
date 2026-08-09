@@ -2279,6 +2279,196 @@ key_journalists:
   - name: "Kate Conger"
     beat: "Tech labor, social media"
     known_patterns: "Joined from TechCrunch 2018. Co-authored 'Character Limit' on Elon Musk's Twitter."
+  - name: "Ryan Mac"
+    beat: "Tech accountability (official), Meta + Elon Musk (actual)"
+    known_patterns: >
+      Joined NYT from BuzzFeed News (2021). Stanford. Forbes → BuzzFeed → NYT.
+      Polk Award for Facebook coverage (2021). Mirror Award (2019).
+      Co-authored 'Character Limit: How Elon Musk Destroyed Twitter' (2024) with Kate Conger.
+      Hired explicitly for 'tech accountability' — broad mandate, narrow execution.
+      Musk suspends Mac from Twitter (Dec 2022). Maye Musk racially targets Mac ('American Vietnamese reporter').
+      Covers SpaceX IPO (2026), SpaceX Mars de-emphasis, Musk on TikTok/Instagram.
+      Co-wrote NYT v. OpenAI lawsuit announcement article (Dec 2023) — institutional advocacy, not investigative.
+    hiring_context:
+      date: "2021"
+      source_url: "https://talkingbiznews.com/they-talk-biz-news/ny-times-hires-buzzfeeds-mac-to-cover-tech-accountability/"
+      hiring_memo_framing: >
+        'dig into all manner of tech companies, tech billionaires and their
+        ecosystems of influence, and collaborate with reporters across the
+        newsroom to examine the increasing power of the industry'
+      stated_scope: "all tech companies, billionaires, ecosystems of influence"
+      actual_scope: "Meta/Facebook and Elon Musk/X/SpaceX"
+      scope_gap_analysis: |
+        The hiring memo says 'all manner of tech companies.' His BuzzFeed work
+        mentioned 'corporate accountability at Facebook, Google, Tesla and other
+        large companies.' At NYT, his Techmeme footprint shows overwhelmingly
+        Meta and Musk coverage. No standalone investigative articles about Google,
+        Apple, Amazon, or AI companies (OpenAI, Anthropic) through the
+        accountability lens that defines his beat.
+    cross_entity_coverage_analysis:
+      summary: |
+        Ryan Mac represents a textbook case of BEAT CAPTURE: a journalist hired
+        for broad 'tech accountability' whose actual output concentrates almost
+        exclusively on two targets — Meta and Elon Musk's companies — while
+        companies of equal or greater market power escape equivalent scrutiny.
+
+        This is not a criticism of Mac's individual journalism, which is solid.
+        It is a structural observation about the NYT's editorial assignment
+        decisions and the incentive dynamics of investigative book deals.
+
+        Three structural mechanisms drive the concentration:
+        1. SOURCING LOCK-IN: Years of Facebook and Musk sources create path
+           dependence. A reporter's investigative advantage is their source
+           network, which is company-specific.
+        2. BOOK-DEAL FINANCIAL INCENTIVE: 'Character Limit' creates ongoing
+           financial interest in continued Musk coverage (speaking engagements,
+           paperback, adaptation). Same dynamic as Frenkel's 'An Ugly Truth'
+           for Meta. No comparable book-level investment in Google, Apple,
+           Amazon, or AI company accountability.
+        3. INSTITUTIONAL ASSIGNMENT: The NYT has designated Meta beat reporters
+           (Isaac 2014-2026, Tan 2026-present) and Musk/X coverage (Mac, Conger).
+           No equivalent dedicated accountability reporters for Google (covered
+           by AI/antitrust reporters like Nico Grant), Apple (product review
+           by Tripp Mickle), Amazon (business desk), or OpenAI/Anthropic
+           (technology-progress by Cade Metz).
+      meta_coverage:
+        tone: "adversarial_investigative"
+        career_investment: |
+          BuzzFeed: Polk Award for Facebook coverage (2021), Facebook facial
+          recognition in smart glasses (Feb 2021, Bosworth internal discussion),
+          Facebook content policy failures, Facebook AI article summarization
+          tool, Facebook internal message boards restricted.
+          NYT: Meta/YouTube social media addiction trial and verdict (co-byline
+          with Cecilia Kang and Eli Tan, 2026-02 to 2026-03), Bosworth
+          blockchain memo (2021-12).
+        smart_glasses_early_coverage:
+          title: "Facebook's Andrew Bosworth told staff that Facebook is considering building facial recognition into future smart glasses products"
+          date: "2021-02-25"
+          outlet: "BuzzFeed News"
+          framing: "privacy alarm — internal executive discussion leaked, facial recognition dangers highlighted"
+          source_url: "https://www.techmeme.com/210225/p35"
+          significance: |
+            Mac's earliest smart glasses coverage was at BuzzFeed, framing
+            Meta's glasses plans through a PRIVACY ALARM lens (facial recognition,
+            internal memo leak). This framing — glasses as surveillance tools —
+            predates the WIRED investigative lane and was contemporaneous with the
+            first Ray-Ban Stories launch. No equivalent privacy-alarm coverage of
+            Google's Project Astra cameras or Snap's Spectacles cameras.
+        social_media_addiction_trial:
+          articles:
+            - title: "Meta and YouTube Found Negligent in Landmark Social Media Addiction Case"
+              date: "2026-03-25"
+              framing: "adversarial — 'validates a novel legal theory that social media sites can cause personal injury'"
+              co_byline: "Cecilia Kang, Eli Tan"
+              source_url: "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html"
+          analytical_note: |
+            The addiction verdict article names Meta and YouTube, but the NYT
+            framing — and Mac's TikTok explainer — emphasizes Meta. Google/YouTube
+            is positioned as secondary defendant, not the primary accountability
+            target, despite identical liability finding ($1.8M YouTube vs $4.2M Meta).
+      musk_coverage:
+        tone: "adversarial_investigative"
+        book_deal:
+          title: "Character Limit: How Elon Musk Destroyed Twitter"
+          co_author: "Kate Conger"
+          publisher: "Penguin Press"
+          date: "2024-09-03"
+          goodreads_rating: "4.24 (3,204 ratings)"
+          awards: "Named Best Book of Year by Kirkus Reviews"
+          financial_note: |
+            Book deals create ongoing financial incentive for continued coverage
+            of the subject. 'Character Limit' generates speaking invitations,
+            media appearances, and adaptation interest tied to Musk. This parallels
+            Sheera Frenkel's 'An Ugly Truth' (seven-figure advance) creating
+            financial lock-in to Meta adversarial coverage.
+        recent_articles:
+          - title: "Elon Musk TikTok and Instagram accounts (verified, promoting SpaceX/Tesla)"
+            date: "2026-04-13"
+            framing: "neutral-to-critical monitoring of Musk's social media expansion"
+            source_url: "https://www.techmeme.com/260413/p11"
+          - title: "SpaceX de-emphasizes Mars as it prepares to go public"
+            date: "2026-04-22"
+            framing: "adversarial — 'de-emphasized original aim,' mission drift narrative"
+            source_url: "https://www.techmeme.com/260422/p14"
+          - title: "SpaceX Falls Below IPO Price of $135"
+            date: "2026-07-15"
+            framing: "adversarial — stock weakness, 'raising questions' for other tech IPOs"
+        personal_adversarial_dynamic:
+          twitter_suspension: "Dec 2022 — Musk suspends Mac's account alongside WaPo, CNN journalists"
+          maye_musk_racial_attack: "Nov 2024 — Maye Musk labels Mac 'American Vietnamese reporter' in deleted tweet"
+          significance: |
+            Mac has a PERSONAL adversarial relationship with Musk beyond
+            professional beat coverage. Being suspended from Twitter and racially
+            targeted by Musk's mother creates emotional stakes that no other tech
+            CEO (Pichai, Cook, Jassy, Altman, Amodei) generates. This is not to
+            question Mac's professionalism, but to document a structural factor
+            that differentiates his Musk coverage posture from his (non-existent)
+            coverage of other billionaire tech CEOs.
+      openai_coverage:
+        tone: "institutional_advocacy"
+        sole_article:
+          title: "The Times Sues OpenAI and Microsoft Over A.I. Use of Copyrighted Work"
+          date: "2023-12-27"
+          co_byline: "Michael M. Grynbaum"
+          framing: "institutional advocacy — reporting on NYT's own lawsuit"
+          significance: |
+            This is NOT independent investigative journalism. Mac co-wrote the
+            announcement of the NYT's OWN copyright lawsuit against OpenAI.
+            The co-byline with media reporter Grynbaum (not a tech accountability
+            reporter) confirms this was institutional publicity, not beat coverage.
+            OpenAI's motion to dismiss explicitly cited this article as evidence
+            that 'the Times immediately publicized its filing and allegations in
+            its own pages.'
+
+            CONTROL TEST: Has Mac written ANY independent investigative articles
+            about OpenAI's governance crises, safety incidents (rogue AI agents,
+            sycophancy overrides), or business practices? No evidence found.
+      google_coverage:
+        tone: "absent"
+        articles_found: 0
+        note: |
+          Despite being hired for 'all manner of tech companies' and listing
+          Google among his BuzzFeed subjects, Mac has NO Techmeme-indexed
+          standalone investigative articles about Google at NYT. Google's antitrust
+          verdict (Aug 2024), ad auction manipulation, Search monopoly, YouTube
+          content moderation failures, and AI safety incidents receive zero
+          accountability coverage from Mac. Compare: his BuzzFeed hiring bio
+          said 'Facebook, Google, Tesla and other large companies.'
+      apple_coverage:
+        tone: "absent"
+        articles_found: 0
+        note: "No evidence of any Apple accountability coverage at NYT."
+      amazon_coverage:
+        tone: "absent"
+        articles_found: 0
+        note: "No evidence of any Amazon accountability coverage at NYT."
+      anthropic_coverage:
+        tone: "absent"
+        articles_found: 0
+        note: "No evidence of any Anthropic accountability coverage at NYT."
+      cross_entity_significance: |
+        Ryan Mac's coverage portfolio reveals the starkest beat capture in the
+        NYT tech desk. His hiring mandate was explicitly broad ('all manner of
+        tech companies'). His actual output is almost exclusively Meta + Musk.
+
+        QUANTITATIVE GAP: Across his entire NYT tenure (2021-present), Mac's
+        Techmeme-indexed articles cover:
+        - Meta/Facebook: 5+ articles (adversarial)
+        - Musk/X/SpaceX: 5+ articles (adversarial) + book
+        - OpenAI: 1 article (NYT's own lawsuit — institutional, not investigative)
+        - Google: 0 articles
+        - Apple: 0 articles
+        - Amazon: 0 articles
+        - Anthropic: 0 articles
+
+        This is not unique to Mac — it reflects the NYT's editorial structure.
+        But Mac's case is the most extreme because his HIRING MANDATE explicitly
+        promised broad coverage. The gap between mandate and execution reveals
+        how investigative capacity gets allocated: toward the company (Meta) with
+        NO financial relationship with the NYT, and the billionaire (Musk) with
+        a personal antagonism dynamic — and away from companies that are either
+        advertiser partners (Google, Amazon), litigation counterparties (OpenAI),
+        or untouchable market leaders (Apple).
   - name: "Eli Tan"
     beat: "Meta (dedicated, replaced Mike Isaac)"
     known_patterns: "Promoted from NYT fellowship to dedicated Meta beat reporter in 2026. Previous experience: CoinDesk (crypto), Washington Post (business, SBF trial), Columbia J-school. Replaced Mike Isaac's 12-year Meta beat — immediate continuity of adversarial lane."
