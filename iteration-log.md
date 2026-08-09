@@ -1,4 +1,38 @@
 # MediaScope Iteration Log
+## 2026-08-09 07:00 PT — Type D: Test & Verify — Cross-Validation of News Corp Factiva + Anthropic IPO Triangle + Infrastructure Count Fix
+
+**Rotation:** D (Test & Verify)
+
+### Cross-validation findings
+
+Validated internal consistency between the two Type C iterations (05:00 News Corp Factiva, 06:00 Anthropic IPO triangle):
+
+1. **News Corp triple revenue coherence:** The Anthropic triangle's `settlement_revenue_adds_direct_layer` correctly references News Corp receiving revenue from THREE AI companies (OpenAI, Meta, Anthropic), says "FIRST" publisher to achieve this, and cites Thomson's Q4 FY2026 earnings call. The Factiva marketplace's `parent_deals` list matches (OpenAI + Meta).
+
+2. **Anthropic marketplace absence:** Confirmed Anthropic is neither a marketplace operator nor a buyer in any of the 4 marketplace platforms (Microsoft PCM, Snowflake Cortex, Amazon, Factiva). The `zero_deal_paradox_explained` in the triangle correctly references the investor-advertiser mechanism (Google and Amazon).
+
+3. **Microsoft deepest entanglement validated:** Microsoft is `dual_role: true` and `is_buyer: true` in marketplace operators, with OpenAI in `ai_lab_investments`. `concentration_risk` names Microsoft explicitly. Cross-validated against `microsoft_openai_financial_axis` section which exists.
+
+4. **Meta isolation confirmed:** Meta absent from all marketplace operators, no AI lab investor flags. `concentration_risk` correctly claims Meta is the ONLY major AI company that is NOT a marketplace operator, NOT a marketplace buyer, NOT an AI lab investor — receiving the most adversarial coverage despite the least structural leverage.
+
+5. **Factiva source counts coherent:** 8,100+ sources with AI rights, 25%+ of total sources, `parent_is_publisher: true`, `is_buyer: false`. Consistent across all references.
+
+6. **Amazon dual-presence coherent:** Present as marketplace operator (with Anthropic in `ai_lab_investments`) AND in the Anthropic triangle (`amazon_leg` with `invested_total_b: 13`, `publisher_ad_revenue_ttm_b: 76`). Both sections consistent.
+
+7. **Infrastructure count drift caught and fixed:** README had TWO stale references — summary table said "7,256 | 248 files" and header said "7296 tests across 249 files." ARCHITECTURE said "7296 tests across 249 files." Canonical count (using structural consistency test's method): **7322 tests across 250 files**. All three references synced.
+
+### Files modified
+- `tests/test_type_d_07am_cross_validation_aug9.py` — 26 new tests across 7 classes
+- `README.md` — Test count 7,256→7,322 (summary table), 7296→7322 (header), file count 248→250 (summary), 249→250 (header), new table entry
+- `docs/ARCHITECTURE.md` — Test count 7296→7322, file count 249→250, new tree entry
+
+### Test health
+- New tests: 26/26 passing
+- Structural consistency: 124/124 passing
+- Core tests sampled: all passing (news_corp_factiva, anthropic_ipo, type_d_02am, wired_google_io, steven_levy, asymmetry, entities, competitor_coverage)
+
+**Commit:** ed0952e
+
 ## 2026-08-09 04:00 PT — Type B: Journalist Cross-Entity Tracking — Steven Levy (WIRED Editor at Large)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -31316,3 +31350,36 @@ boost the asset value of their own biggest financial partners.
 - New tests: 40/40 passing
 - Structural consistency: 124/124 passing
 - Total: 7296 tests across 249 files
+
+## 2026-08-09 08:00 PT — Type A: Competitor Coverage Deep Dive — The Verge × Snap Specs vs Meta Glasses (Camera Parity, Framing Divergence)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Publication: The Verge (PMC/PMX) | Competitor: Snap (Specs AR Glasses)
+
+Snap Specs ($2,195 AR glasses with visible + infrared cameras, OpenAI/Gemini AI integration, LED recording bar) receive pure product-review framing from The Verge. Meta Ray-Ban smart glasses ($299 with single 12MP camera, Meta AI, LED indicator) receive surveillance/harassment framing. The hardware is functionally similar — face-mounted cameras + AI + recording indicator — but the editorial treatment diverges by manufacturer identity.
+
+### Five sub-findings:
+
+1. **Product-Review Lane for Snap:** The Verge's Jun 16 Specs coverage: "This is a big moment for Snap." Technical specs, preorder details, constructive design commentary ("snow goggles, but fashionable"). Camera capabilities acknowledged — "They have visible light and infrared cameras, and while the Specs are recording, a little LED bar will glow" — described as a DESIGN ELEMENT, not a privacy safeguard. Zero surveillance, privacy, or harassment language.
+
+2. **Surveillance Lane for Meta:** The Verge's Meta glasses coverage references "erosion of privacy," "expansion of surveillance," "surreptitious filming," and the "pervert glasses" label. Even positive Meta actions (tamper-proof LED update, Jul 7) are framed through the surveillance lens — the story exists because of privacy concerns, not product capability.
+
+3. **The Camera Paradox Extended:** Snap Specs have MORE camera hardware (visible + infrared + hand tracking), MORE AI integration (OpenAI + Gemini — both Meta AI competitors), and HIGHER surveillance potential (standalone compute, 4hr battery, multiple processors). Meta Ray-Ban has a single 12MP camera. If camera capability drove editorial alarm, Snap would receive equal or greater scrutiny. They receive zero.
+
+4. **Financial Correlation — Three-Layer Alignment:** (a) OpenAI, Snap's AI partner, pays PMC licensing fees; Meta pays $0. (b) PIF (through SRMG → PMC chain) divested all Meta shares in Q2 2025 while retaining PMC equity investment. (c) PMC's Concert ad platform competes with Meta's ad network. Coverage tone tracks financial alignment at every ownership layer.
+
+5. **Mechanism Differs from WIRED, Outcome Identical:** WIRED applies lane assignment at the reporter level (Goode covers Apple/Snap/Google, investigators cover Meta). The Verge applies it at the editorial layer: Victoria Song covers ALL smart glasses including Meta with balanced product framing, but institutional coverage (Alex Heath investigations, Nilay Patel editorials, news desk reporting) adds an adversarial surveillance layer ONLY for Meta. For Snap, coverage stays in product-review lane exclusively — no investigative counterpart. Net outcome: Snap gets positive coverage, Meta gets negative. Same hardware, different treatment.
+
+### Files modified
+- `profiles/the-verge.yaml` — `snap_specs_vs_meta_glasses_coverage` section under `cross_entity_coverage_analysis` (camera comparison, financial correlation, editorial lane assignment, Snap coverage examples, Meta coverage examples, 4 source URLs). Asymmetry score updated 0.65→0.68.
+- `tests/test_verge_snap_specs_meta_glasses_framing_aug9.py` — 57 new tests across 7 classes (SectionStructure 12, SnapSpecsCoverage 9, MetaGlassesCoverage 8, CameraCapabilityComparison 9, FinancialCorrelation 7, EditorialLaneAssignment 6, CrossValidation 6)
+- `README.md` — Test count 7322→7379, file count 250→251, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7322→7379, file count 250→251, new tree entry
+
+### Test health
+- New tests: 57/57 passing
+- Structural consistency: 124/124 passing (count sync verified)
+- Core tests sampled (asymmetry, entities, competitor_coverage): all passing
+
+**Commit:** (pending)

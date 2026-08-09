@@ -2255,5 +2255,177 @@ cross_entity_coverage_analysis:
     (c) PIF/SRMG ownership chain that divested Meta stock
     The pattern is: disclose adversarial relationships, conceal aligned ones.
 
-  cross_entity_asymmetry_score: 0.65
-  last_updated: "2026-08-05"
+  # ===================================================================
+  # COMPETITOR COVERAGE DEEP DIVE: SNAP SPECS vs META GLASSES (Aug 9)
+  # ===================================================================
+  snap_specs_vs_meta_glasses_coverage:
+    date_analyzed: "2026-08-09"
+    rotation_type: "A"
+    publication: "The Verge"
+    competitor: "Snap"
+    hardware_comparison: "Snap Specs ($2,195 AR glasses) vs Meta Ray-Ban ($299 smart glasses)"
+
+    key_finding: >
+      The Verge applies systematically different editorial lanes to Snap's camera-equipped
+      AR glasses and Meta's camera-equipped smart glasses. Snap Specs — which have visible
+      light cameras, infrared cameras, and an LED recording indicator bar — receive pure
+      product-review framing. Meta Ray-Ban glasses — which have a single 12MP camera and
+      an LED recording indicator — receive surveillance/harassment/privacy-alarm framing.
+      The Verge's coverage of Snap Specs contains ZERO privacy or surveillance language
+      despite functionally similar camera capabilities. The hardware is the same category;
+      the framing diverges by manufacturer identity.
+
+    snap_specs_coverage:
+      tone: "+0.4 (product-enthusiastic)"
+      framing_register: "product_review"
+      surveillance_language_count: 0
+      privacy_concern_language_count: 0
+      key_articles:
+        - title: "Snap's first consumer AI glasses are coming this fall for $2,195"
+          date: "2026-06-16"
+          byline: "David Pierce (assumed from Verge product coverage)"
+          tone: +0.4
+          framing: >
+            "This is a big moment for Snap." Product-focused framing throughout. Technical
+            specs, preorder details, constructive comparisons. "You probably won't mistake
+            Specs, with their wide, bold frames, for any of Meta's smart glasses." Noted
+            camera capabilities without any privacy alarm: "They have visible light and
+            infrared cameras, and while the Specs are recording, a little LED bar will glow
+            in the middle of the glasses." The LED bar is described as a DESIGN ELEMENT,
+            not a privacy safeguard. No mention of surveillance, harassment potential,
+            surreptitious recording, or pickup artists. "Snow goggles, but fashionable"
+            framing is the strongest criticism.
+          source_note: "Quoted via Slashdot (tech.slashdot.org/story/26/06/16/1712214)"
+        - title: "Snap's Specs look good on nobody"
+          date: "2026"
+          format: "Vergecast episode"
+          byline: "Vergecast panel"
+          tone: -0.3
+          framing: >
+            Negative product critique of Snap Specs — but focused entirely on aesthetics
+            and practicality. NOT surveillance or privacy. The Verge is willing to be
+            CRITICAL of Snap on product grounds while applying zero surveillance framing
+            to camera-equipped glasses. This proves the surveillance lens is not triggered
+            by cameras per se — it is selectively applied to Meta.
+          source_note: "Referenced in existing David Pierce cross-entity profile"
+      camera_capabilities_acknowledged:
+        visible_light_cameras: true
+        infrared_cameras: true
+        led_recording_indicator: true
+        hand_tracking_cameras: true
+        surveillance_framing_applied: false
+
+    meta_glasses_coverage:
+      tone: "-0.35 (surveillance/harassment frame)"
+      framing_register: "investigative_alarm"
+      surveillance_language_examples:
+        - term: "erosion of privacy"
+          source: "virtual.reality.news citing The Verge, Jul 2026"
+        - term: "expansion of surveillance"
+          source: "virtual.reality.news citing The Verge, Jul 2026"
+        - term: "surreptitious filming"
+          source: "Meta spokesperson Albert Aydin quoted via The Verge"
+        - term: "pervert glasses"
+          source: "discussed across Verge ecosystem coverage"
+      key_articles:
+        - title: "Instagram banning harassing videos filmed with Meta smart glasses"
+          date: "2026-07"
+          tone: -0.4
+          framing: >
+            Coverage focused on harassment, pickup artists, "pervert glasses" label,
+            Instagram policy crackdown, privacy LED tampering. Meta spokesperson quoted
+            on camera disabling for tampered devices. Framing positions Meta glasses as
+            instruments of surveillance and harassment. Coverage is investigative-alarm,
+            not product-review.
+          source_note: "Virtual Reality News citing The Verge; Gizmodo; Business Insider"
+        - title: "Meta says it will update its smart glasses with a new feature that disables the camera when it detects that someone tampered with the device's privacy LED light"
+          date: "2026-07-07"
+          byline: "Victoria Song"
+          tone: -0.2
+          framing: >
+            Reports Meta's proactive tamper-proof response. Even this POSITIVE Meta
+            action story is framed through the surveillance lens — the story exists
+            because of privacy concerns, not product capability enthusiasm.
+          source_url: "https://www.techmeme.com/260707/p41"
+
+    camera_capability_comparison:
+      snap_specs:
+        cameras: "visible light + infrared (multiple)"
+        recording_indicator: "LED bar (center of glasses)"
+        ai_capabilities: "OpenAI, Gemini integration — can identify objects, translate, analyze environment"
+        surveillance_potential: "HIGH — standalone device with 4hr battery, always-on AI, discreet form factor aspirations"
+        verge_surveillance_framing: false
+      meta_ray_ban:
+        cameras: "single 12MP"
+        recording_indicator: "LED (temple area)"
+        ai_capabilities: "Meta AI — can identify objects, describe scenes, translate"
+        surveillance_potential: "MODERATE — looks like normal glasses, but single camera, shorter video clips"
+        verge_surveillance_framing: true
+      paradox: >
+        Snap Specs have MORE camera hardware (visible + infrared + hand tracking), MORE
+        AI integration partners (OpenAI + Gemini — both Meta AI competitors), and HIGHER
+        surveillance potential (standalone compute, 4hr battery, multiple processors) than
+        Meta Ray-Ban glasses. Yet The Verge applies surveillance/privacy framing ONLY to
+        Meta. If camera capability drove the editorial alarm, Snap Specs would receive
+        EQUAL or GREATER scrutiny. They receive zero.
+
+    financial_correlation:
+      snap_openai_partnership:
+        relationship: "Snap integrates OpenAI APIs into Specs for AI experiences"
+        significance: >
+          OpenAI is The Verge's parent company's (PMC/Vox Media) content licensing partner.
+          Snap's AI glasses use OpenAI's technology. Coverage enthusiasm for Snap Specs
+          indirectly validates the OpenAI AI ecosystem that PMC has a financial stake in.
+      snap_gemini_partnership:
+        relationship: "Snap integrates Google Gemini into Specs for AI Lenses"
+        significance: >
+          Google is PMC's litigation adversary (2 lawsuits). But Google's Gemini in Snap
+          Specs is framed as exciting ("agentic coding," developer tools) — not the
+          adversarial framing Google receives in search/ad tech coverage. The Gemini
+          integration receives neutral-to-positive treatment.
+      meta_no_pmc_deal:
+        relationship: "Meta has NO AI content licensing deal with PMC/Vox Media"
+        significance: >
+          The Verge's parent receives $0 from Meta's AI efforts. OpenAI (Snap's AI partner)
+          pays PMC licensing fees. Coverage tone tracks financial alignment: Snap's camera
+          glasses (powered by PMC's licensing partner) get product review; Meta's camera
+          glasses (no PMC financial relationship) get surveillance alarm.
+      pif_meta_divestiture:
+        relationship: "PIF (through SRMG chain) divested all Meta shares in Q2 2025"
+        significance: >
+          PMC's ultimate beneficial ownership chain includes SRMG/PIF, which actively sold
+          Meta stock. Financial alignment is structurally against Meta at every level of
+          The Verge's ownership: parent company (no Meta deal), sovereign investor (divested
+          Meta equity), advertising infrastructure (Concert competes with Meta ads).
+
+    editorial_lane_assignment:
+      pattern: >
+        The Verge's smart glasses lane assignment mirrors WIRED's but operates through
+        different mechanisms:
+
+        WIRED: Product reviewers (Goode, Chokkattu) cover Apple/Snap/Google glasses →
+        product-delight framing. Investigators (Cameron, Mehrotra) cover Meta glasses →
+        surveillance-alarm framing. Same hardware, different editorial lane by manufacturer.
+
+        THE VERGE: Product coverage (Pierce, Song) covers ALL smart glasses including Meta
+        through balanced product lens. BUT institutional coverage (Heath investigations,
+        Patel editorial commentary, news reporting) adds an adversarial surveillance layer
+        ONLY for Meta. For Snap, coverage stays in product-review lane exclusively —
+        no investigative counterpart examining Snap's camera privacy implications.
+
+        Result is functionally equivalent: Snap gets net-positive product coverage,
+        Meta gets net-negative (balanced product reviews drowned by volume of adversarial
+        institutional coverage). The mechanism differs (WIRED: lane assignment at reporter
+        level; The Verge: lane assignment at editorial-layer level) but the outcome is
+        identical: same camera hardware, different coverage treatment by manufacturer.
+      snap_investigative_articles: 0
+      meta_investigative_articles: "multiple (Heath, news desk)"
+
+    source_urls:
+      - "https://tech.slashdot.org/story/26/06/16/1712214/snaps-first-consumer-ai-glasses-are-coming-this-fall-for-2195"
+      - "https://virtual.reality.news/news/meta-smart-glasses-instagram-ban-explained-gaps-and-limits/"
+      - "https://www.techmeme.com/260707/p41"
+      - "https://petapixel.com/2026/07/27/instagram-is-banning-creepy-hidden-camera-videos-filmed-with-meta-smart-glasses/"
+
+  cross_entity_asymmetry_score: 0.68
+  last_updated: "2026-08-09"
