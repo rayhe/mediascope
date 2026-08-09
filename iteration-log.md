@@ -31383,3 +31383,36 @@ Snap Specs ($2,195 AR glasses with visible + infrared cameras, OpenAI/Gemini AI 
 - Core tests sampled (asymmetry, entities, competitor_coverage): all passing
 
 **Commit:** (pending)
+
+---
+
+## 2026-08-09 09:00 PT
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Journalist: Cecilia Kang (NYT) — Mechanism #9B (Parallel Beat Reinforcement)
+
+Co-author complement to Sheera Frenkel's Mechanism #9 (book deal financial capture). Both share the seven-figure "An Ugly Truth" book deal (HarperCollins, Jul 2021) but cover Meta from independent beats — Kang: regulatory/policy from DC; Frenkel: cybersecurity/AI from SF. Creates a dual-beat adversarial pipeline with no equivalent for any competitor at the NYT.
+
+### Tone scores
+- Meta: -0.50 (prosecutorial)
+- Google: -0.05 (procedural)
+- OpenAI/Anthropic: +0.05 (partnership)
+
+### Five cross-entity patterns
+1. Dual-beat pipeline — DC regulatory + SF cybersecurity converge on Meta only
+2. Headline naming asymmetry — Meta named in headlines, competitors described by category
+3. Regulatory pipeline circularity — Kang sources regulators she covers, whose actions she then reports as news
+4. Partnership-enforcement toggle — OpenAI framed as partner, Meta as subject of enforcement
+5. Book deal thesis lock-in — shared financial interest in sustaining adversarial Meta narrative
+
+### Files modified
+- `profiles/nytimes.yaml` — full `cross_entity_coverage_analysis` entry with career trajectory, meta/google/openai coverage, 5 patterns, book financial interest, 11 source URLs
+- `tests/test_cecilia_kang_cross_entity.py` — 46 new tests across 7 classes
+
+### Test health
+- New tests: 46/46 passing
+- Structural consistency: 124/124 passing
+- Total: 7,425 tests across 252 files
+
+**Commit:** fccd6e0 — pushed to GitHub
