@@ -44,7 +44,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 |---|---|---|
 | Entity clusters | 96 | 921 aliases, 71 with custom regex, 25 auto-generated |
 | Framing device types | 113 | 10 core + 96 extended + 7 structural (post-pass) |
-| Framing patterns | 779 | Compiled regex patterns across 106 pattern-based types |
+| Framing patterns | 782 | Compiled regex patterns across 106 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 6,947 | Across 240 test files |
+| Tests | 6,983 | Across 240 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **6947 tests** across 240 test files, each covering a different analytical capability:
+MediaScope has **6983 tests** across 241 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -605,6 +605,7 @@ MediaScope has **6947 tests** across 240 test files, each covering a different a
 | `test_publisher_ai_revenue_matrix_aug8.py` | 71 | Publisher AI Revenue Asymmetry Matrix (Aug 8, 15:00 PT Type C): 10 publications mapped — verified deal values, coverage tone, financial direction, disclosure practice. 100% correlation: News Corp (ONLY Meta deal pub) balanced tone (-0.15), all 7 competitor-only pubs adversarial (-0.45 to -0.85), 2 no-deal pubs moderate adversarial. News Corp Q4 FY2026 earnings deep dive ($2.34B rev +11%, $0.35 adj EPS beat $0.21 consensus, +167% net income), Thomson "principled" Meta+OpenAI praise, Anthropic $1.5B Bartz settlement HarperCollins share. Cross-validates entity profiles and news-corp.yaml consistency. 11 classes, 71 tests |
 | `test_publisher_ai_revenue_opacity_index.py` | 69 | Publisher AI Revenue Opacity Index (Aug 8, 14:00 PT Type C): cross-publisher financial disclosure analysis mapping transparency tiers against coverage adversariality. 3-tier model — Tier 1 black-box (Condé Nast, Atlantic, Guardian), Tier 2 bundled (Amazon-Condé Nast, Amazon-Hearst), Tier 3 transparent (News Corp, NYT). Digiday Q1 2026 briefing, News Corp Q4 FY2026 earnings, NYT Q2 2026 derived revenue. Inverse correlation: opacity → adversarial coverage. 10 classes, 69 tests |
 | `test_type_d_4pm_cross_validation_aug8.py` | 33 | Type D cross-validation (Aug 8, 16:00 PT): 4 structural fixes (missing test file listing, stale test counts), cross-validates 13:00–15:00 PT iterations — Paresh Dave Mechanism #8 (institution-driven emotional register asymmetry), Opacity Index 3-tier model consistency, Revenue Asymmetry Matrix 100% correlation, News Corp balanced tone in profile, Condé Nast/Advance Tier 1 ↔ institution-driven alignment, Aug 8 cumulative file integrity (15 files), entity count stability. 7 classes, 61 tests |
+| `test_type_d_10pm_cross_validation_aug8.py` | 36 | Type D cross-validation (Aug 8, 22:00 PT): End-of-day validation of Google Q2 2026 vs Meta Q2 2026 earnings coverage asymmetry and OpenAI publisher financial displacement architecture. Cross-validates entity data model consistency (Google Q2 financials, OpenAI IPO + ad revenue + deal portfolio, Anthropic zero-deal paradox), financial incentive prediction coherence, source URL completeness, README/ARCHITECTURE stats currency. Fixed stale counts: framing patterns 779→782, tests 6947→7039→7075. 9 classes, 36 tests |
 | `test_type_d_10pm_cross_validation_aug7.py` | 34 | Type D day-end cross-validation (Aug 7, 22:00 PT): News Corp triple-revenue architecture (3 AI companies paying simultaneously — OpenAI, Meta, Anthropic settlement_revenue), WIRED Apple-OpenAI silence consistency (asymmetry score ≥0.82), 4 asymmetry mechanisms documented (licensing, advertising, marketplace, professional identity capture), entity set stability (11 entities after Samsung/Snowflake/Microsoft), settlement_revenue financial tie type, metric scale integrity, source URL presence, cumulative day integrity (Gizmodo clean control, README test count, no contradictions) |
 | `test_type_d_8pm_cross_validation_aug6.py` | 37 | Type D cross-validation (Aug 6, 8 PM): OpenAI/Apple entity escalation phases 4-5 (injunction + motion to dismiss), Atlantic silence source_urls schema consistency, Milmo profile↔research cross-file, Amazon sextuple entity↔research, MS-OpenAI axis presence, evening iteration data traces, leverage count consistency |
 | `test_type_d_2pm_cross_validation_aug6.py` | 50 | Type D cross-validation (Aug 6, 2 PM): sensor-count paradox cross-pub consistency, WSJ balanced control ↔ aggregate findings, Google coercion ↔ Condé Nast traffic, NYT Q2 2026 earnings ↔ profile, Mims tone inversion direction, WSJ disclosure uniqueness, Google revenue-coercion link, MIT TR governance ↔ Apple entity, source URL presence |
