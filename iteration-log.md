@@ -1,4 +1,86 @@
 # MediaScope Iteration Log
+## 2026-08-09 14:00 PT — Type D: Test & Verify — Cross-Validation of Aug 9 Sprint (Ryan Mac ↔ Rogue AI, eMarketer ↔ Cross-Pressure, Dual Mechanism, Lane Assignment Coherence)
+
+**Rotation:** D (Test & Verify)
+
+### Cross-validation findings
+
+Validated internal consistency across 7 cross-cutting themes from the Aug 9 sprint (14 iterations, 03:00–13:00 PT):
+
+1. **Ryan Mac beat capture ↔ NYT rogue AI natural experiment:** Mac's zero independent OpenAI investigative coverage (beat capture) is consistent with the rogue AI experiment: Kate Conger wrote the standalone NYT OpenAI article, not Mac. Mac's sole OpenAI article remains the NYT's own lawsuit announcement (institutional advocacy). Anthropic's no-standalone-NYT result also consistent with Mac's zero Anthropic coverage.
+
+2. **eMarketer counter-forecast ↔ publisher cross-pressure:** The revised financial model (content licensing = 40-75% of plausible ad revenue) is consistent with Apple-OpenAI cross-pressure treating OpenAI deals as material. Condé Nast confirmed present in dual-relationship publications. 5+ publications documented with dual Apple News+ / OpenAI financial ties.
+
+3. **NYT dual mechanism (Mac + Frenkel):** Both produce Meta-adversarial coverage through different mechanisms — Mac via beat capture (institutional/structural), Frenkel via Mechanism #9 book deal financial capture (personal). Both documented in nytimes.yaml `key_journalists` with `cross_entity_coverage_analysis`. Mac's `Character Limit` book is for Musk (not Meta), distinguishing his financial incentive structure from Frenkel's `An Ugly Truth` which directly locks in Meta adversarial coverage. Frenkel's meta tone register confirmed adversarial_institutional at -0.55.
+
+4. **Cross-publication lane assignment coherence:** WIRED (`cross_entity_wearables_framing.editorial_lane_assignment_mechanism`) and The Verge (`cross_entity_coverage_analysis.lane_assignment_mechanism` + `snap_specs_vs_meta_glasses_coverage`) both document the same structural pattern: competitor camera glasses → product review lane, Meta → investigative/surveillance lane. WIRED's Google I/O extension confirms Google joins Apple and Snap in the product review lane. Verge confirms Snap Specs receive ZERO privacy/surveillance language despite identical camera hardware.
+
+5. **Steven Levy ↔ WIRED Google I/O:** Levy individually shows Google positive/neutral and Meta adversarial/clinical in `journalist_cross_entity_coverage.steven_levy`. He is confirmed among the 5 WIRED reporters sent to Google I/O 2026 in `google_io_2026_smart_glasses_coverage.wired_reporters_sent`. Headline asymmetry documented at both individual and event levels.
+
+6. **eMarketer ↔ Apple-OpenAI cross-pressure materiality:** OpenAI's $100B ad revenue target documented, eMarketer projects total chatbot market under $6B by 2030. OpenAI's `publisher_content_deal_portfolio` documented in entities. Content licensing materiality validated.
+
+7. **Cumulative Aug 9 integrity:** All 12 Aug 9 test files exist and are non-empty. 257+ total test files. nytimes.yaml has both Mac and Frenkel. wired.yaml has Levy. entities has eMarketer. Lane assignment documented in both WIRED and Verge.
+
+### Files modified
+- `tests/test_type_d_2pm_cross_validation_aug9.py` — 35 new tests across 7 classes
+- `README.md` — Test count 7589→7624, file count 256→257, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7589→7624, file count 256→257, new tree entry
+
+### Test health
+- New tests: 35/35 passing
+- Structural consistency: 124/124 passing
+
+**Commit:** (pending)
+
+## 2026-08-09 13:00 PT — Type C: Financial Incentive Mapping — OpenAI Ad Revenue eMarketer Counter-Forecast
+
+**Rotation:** C (Financial Incentive Mapping)
+
+### Finding: OpenAI's $100B Ad Revenue Target Will Miss By 90%
+
+eMarketer (Jul 17, 2026, analyst Nate Elliot) projects the ENTIRE US standalone chatbot ad market (ChatGPT + Copilot + AI Mode + Alexa for Shopping) at <$1B in 2026 and $5.41B by 2030. OpenAI's individual target of $100B by 2030 exceeds the projected total market by 18x. Quote: "Even if you assume that they will make 100% of all revenue from chatbot advertising five years from now, OpenAI will still miss their number by 90%."
+
+Three assumptions challenged by eMarketer:
+1. Capture search ad budgets en masse from traditional sellers
+2. Dominate a fully mature chatbot ad market
+3. Outperform every ad format in history
+
+Additional indicator: as of Jul 30, 2026 (Digiday), OpenAI is in the "coupon phase" — offering $50-$100 promo credits to recruit advertisers. Every major ad platform (Google, Meta, TikTok) has gone through this stage.
+
+### Financial Incentive Model Revision
+
+**Original thesis (based on OpenAI projections):**
+- Content licensing ($300-400M/yr) becomes rounding error vs $100B ads (0.4%)
+- OpenAI replicates Google's ad-dependency shield
+- Publishers become financially dependent on OpenAI for ad revenue
+
+**Revised thesis (based on eMarketer):**
+- Content licensing REMAINS financially material ($300-400M/yr vs ~$540M plausible OpenAI ad share of $5.41B market = 40-75% ratio, NOT 0.4%)
+- OpenAI does NOT replicate Google's ad dependency shield — market too small
+- 80%+ of AI ad spend goes "alongside AI content" (traditional search ads next to Google AI Overviews = $26.42B) — Google financial leverage INCREASES
+- Shift from "future ad dependency" to "present deal dependency" for OpenAI
+- Meta exclusion from adversarial publishers' deal portfolios STRENGTHENED under revised model
+
+### AI Ad Spend Distribution (2026)
+- Total US AI ad spend: $32.03B
+- Alongside-AI-content (Google AI Overviews): $26.42B (80%+)
+- Chatbot ads (ALL chatbots): <$1B (8%)
+
+### Also fixed
+- Structural consistency: added missing `test_reddit_ai_editorial_loop_advance_aug9.py` to README + ARCHITECTURE
+- Synced all test counts: 7589 tests across 256 files
+
+### Files modified
+- `profiles/competitor-entities.yaml` — `emarketer_counter_forecast` section added to OpenAI `advertising_business` with full data, `ads_head` (David Dugan), revised overview with financial incentive model revision
+- `tests/test_openai_ad_revenue_emarketer_counter_forecast_aug9.py` — 34 tests across 8 classes (eMarketer data, market projections, ad spend distribution, model revision, assumptions, sources, Meta contrast, Dugan hire)
+- `README.md` — Test count 7520→7589, file count 254→256, 2 new table entries
+- `docs/ARCHITECTURE.md` — Test count 7555→7589, file count 255→256, 2 new tree entries
+
+### Test health
+- New tests: 34/34 passing
+- Structural consistency: 124/124 passing
+
+**Commit:** 0f17b97
 ## 2026-08-09 11:00 PT — Type B: Journalist Cross-Entity Tracking — Ryan Mac (NYT Tech Accountability)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
