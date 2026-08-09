@@ -1061,6 +1061,231 @@ journalist_profiles:
     conflicts are both balanced and transparent.
 
     '
+- name: Sam Schechner
+  current_role: tech_and_ai_reporter
+  publication: The Wall Street Journal
+  wsj_start: '2009'
+  location: Paris
+  background: 'WSJ reporter based in Paris since ~2009. Covers European tech
+    regulation, AI safety, and Big Tech accountability from a European base.
+    Previously at AllThingsD. Covers EU DMA/GDPR enforcement against Apple,
+    Google, Amazon, Meta. Pivoted to AI safety/rogue AI coverage in 2025-2026.
+    Not strictly assigned to a single company beat — covers Anthropic,
+    OpenAI, Meta, and Nvidia across AI safety, regulation, and geopolitics.
+    Co-authors frequently with Robert McMillan (cybersecurity), Meghan
+    Bobrowsky (Meta beat), and Bradley Olsen. Also covers SoftBank,
+    Mistral, and broader European AI ecosystem.
+    '
+  output_format: enterprise reporting, investigative, podcast (What's News)
+  source_urls:
+  - https://muckrack.com/samschech/articles
+  - https://www.wsj.com/tech/ai/how-the-futuristic-hack-by-rogue-openai-models-unfolded-1657bcea
+  - https://www.wsj.com/tech/ai/a-users-guide-to-the-universe-of-rogue-ai-bots-ef9d9d43
+  - https://www.wsj.com/tech/ai/anthropic-fable-restrictions-ai-developers-cd9bf57c
+  - https://www.wsj.com/tech/ai/the-anthropic-fable-ban-is-over-the-battle-over-how-to-tame-ai-has-just-begun-e93f51d6
+  - https://www.wsj.com/tech/ai/anthropic-urges-global-pause-in-ai-development-flags-self-improvement-risk-99cefb73
+  - https://www.wsj.com/tech/ai/anthropic-probes-possible-unauthorized-access-to-mythos-ai-model-3da1ee20
+  cross_entity_coverage:
+    meta:
+      tone: adversarial
+      tone_value: -0.45
+      summary: 'Schechner covers Meta rogue AI incidents with corporate-failure
+        framing. "Meta AI Model Hacked Outside Company, Adding to Concerns Over
+        Rogue Bots" (Aug 5 2026) uses "drumbeat of disclosures," "declined to
+        say," lists 5 opacity items (which model, when, which company, how long,
+        unsupervised duration). Company named in headline. Defense ("misconfiguration")
+        challenged. He also appeared on WSJ What''s News podcast Aug 6 as "tech
+        reporter Sam Schechner" discussing Meta''s rogue AI — framing it as "why
+        these incidents are becoming more common" with Meta as the headliner.
+        '
+      examples:
+      - title: 'Meta AI Model Hacked Outside Company, Adding to Concerns Over Rogue Bots'
+        date: '2026-08-05'
+        tone: -0.45
+        framing_notes: 'Adversarial register. "Drumbeat of disclosures." Company named
+          in headline. Defense ("misconfiguration") questioned with 5 opacity items.
+          No capability-admiration for the AI behavior. Lead-in: "latest in a drumbeat
+          of disclosures that suggest such incidents are becoming widespread."
+          '
+    anthropic:
+      tone: respectful_analytical
+      tone_value: 0.05
+      summary: 'Schechner covers Anthropic with responsible-stewardship framing
+        across 6+ articles in 2026. Anthropic is presented as navigating hard
+        tradeoffs between safety and commercial pressure, with the company''s
+        positions accepted at face value. "Urges global pause" = Anthropic as
+        responsible industry voice. "Fable restrictions" = company walking a
+        "narrow line" (sympathetic). "Probes unauthorized access" = clinical
+        institutional framing, Anthropic as responsible custodian. "Fable ban
+        is over" = policy-focused, Anthropic as victim of government overreach.
+        No opacity criticism, no "drumbeat" language, no corporate-failure framing.
+        Company rarely named in headlines in adversarial context.
+        '
+      examples:
+      - title: Anthropic Urges Global Pause in AI Development, Flags Self-Improvement Risk
+        date: '2026-06-04'
+        tone: 0.15
+        framing_notes: 'Respectful framing. Anthropic presented as responsible
+          industry voice calling for slowdown. "$1 trillion startup warns" =
+          authority-amplification. Safety concerns presented at face value.
+          Co-authored with Bradley Olsen.
+          '
+        source_url: https://www.wsj.com/tech/ai/anthropic-urges-global-pause-in-ai-development-flags-self-improvement-risk-99cefb73
+      - title: Anthropic New Fable AI Model Is Met With User Backlash Over Restrictions
+        date: '2026-06-10'
+        tone: 0.0
+        framing_notes: 'Neutral-analytical. Framing: company navigating "narrow line"
+          between safety and commercial interests. Backlash framed against
+          Anthropic''s restrictions, not against Anthropic itself. Company
+          portrayed as responsible actor under pressure. Includes business
+          context (IPO race with OpenAI).
+          '
+        source_url: https://www.wsj.com/tech/ai/anthropic-fable-restrictions-ai-developers-cd9bf57c
+      - title: Anthropic Probes Possible Unauthorized Access to Mythos AI Model
+        date: '2026-04-22'
+        tone: 0.0
+        framing_notes: 'Clinical institutional register. "Probes" = active
+          investigation, company as responsible custodian. Anthropic limited
+          release (50 organizations) presented as prudent. Meetings with Trump
+          officials "productive and constructive." No opacity criticism.
+          '
+        source_url: https://www.wsj.com/tech/ai/anthropic-probes-possible-unauthorized-access-to-mythos-ai-model-3da1ee20
+      - title: The Anthropic Fable Ban Is Over. The Battle Over How to Tame AI Has Just Begun.
+        date: '2026-07-02'
+        tone: 0.1
+        framing_notes: 'Policy-focused. Anthropic implicitly framed as caught
+          between government overreach and industry pressure. Company portrayed
+          as believing "it is important to work with the U.S. government." No
+          corporate-failure language. Co-authored with Bobrowsky and Ramkumar.
+          '
+        source_url: https://www.wsj.com/tech/ai/the-anthropic-fable-ban-is-over-the-battle-over-how-to-tame-ai-has-just-begun-e93f51d6
+    openai:
+      tone: adventure_capability
+      tone_value: -0.1
+      summary: 'Schechner co-authored the OpenAI rogue AI hack article with
+        McMillan (Jul 31). "How the Futuristic Hack by Rogue OpenAI Models
+        Unfolded" uses adventure-capability register: "hacker from the future,"
+        "I''ll let you decide if it passed." Ironic admiring tone for the AI
+        behavior. OpenAI named less prominently. Also co-authored the cross-
+        entity "User''s Guide to Rogue AI Bots" overview. On What''s News
+        podcast, Schechner reports on OpenAI IPO filing as a competitive
+        landscape story, not an accountability story.
+        '
+      examples:
+      - title: How the Futuristic Hack by Rogue OpenAI Models Unfolded
+        date: '2026-07-31'
+        tone: -0.1
+        framing_notes: 'Adventure-capability register. "Hacker from the future."
+          "Swarm of short-lived attackers" = military sci-fi vocabulary.
+          Ironic closing: "I''ll let you decide if it passed the test."
+          Co-authored with McMillan. OpenAI involvement discovered late
+          in narrative — suspense structure, not accountability structure.
+          '
+        source_url: https://www.wsj.com/tech/ai/how-the-futuristic-hack-by-rogue-openai-models-unfolded-1657bcea
+      - title: A User Guide to the Universe of Rogue AI Bots
+        date: '2026-08-05'
+        tone: -0.05
+        framing_notes: 'Encyclopedic explainer framing. Cross-entity overview
+          categorizing rogue AI behaviors: The Bully, The Burglar, The Escape
+          Artist. No company singled out for accountability. Admiring taxonomy.
+          Co-authored with McMillan.
+          '
+        source_url: https://www.wsj.com/tech/ai/a-users-guide-to-the-universe-of-rogue-ai-bots-ef9d9d43
+    eu_regulation:
+      tone: balanced
+      tone_value: -0.05
+      summary: 'When covering EU regulatory actions (DMA, GDPR, antitrust),
+        Schechner applies relatively balanced framing across ALL targets.
+        "Apple, Meta Fined by EU" treats both companies equivalently in
+        the same article. "EU Delayed Punishing Apple, Meta" — same.
+        Amazon antitrust settlement covered neutrally. This pattern suggests
+        the framing asymmetry is TOPIC-SPECIFIC: it surfaces in AI safety
+        coverage (where editorial discretion in register selection is high)
+        but not in regulatory coverage (where facts equalize naturally).
+        '
+  mechanism:
+    mechanism_name: single_journalist_topic_dependent_register_shift
+    mechanism_number: 9
+    description: 'When the same journalist (Schechner) covers the same TYPE of
+      incident (rogue AI models, safety failures) at different companies, the
+      editorial register shifts predictably and correlates with the publication
+      financial relationships. Meta gets adversarial ("drumbeat," opacity),
+      Anthropic gets respectful-institutional ("urges," "probes," "narrow line"),
+      OpenAI gets adventure-capability ("futuristic," ironic admiration).
+
+      This mechanism is MORE powerful than beat-assignment because it
+      CONTROLS for the reporter variable. The same person, covering the same
+      class of event, at the same publication, in the same month, applies
+      three distinct registers. The asymmetry cannot be attributed to reporter
+      personal bias because: (a) Schechner co-authors with McMillan on BOTH
+      the OpenAI (adventure) AND Meta (adversarial) stories, (b) his EU
+      regulation coverage across ALL companies is balanced.
+
+      The register shift correlates with News Corp financial relationships:
+      OpenAI ($50M/yr content deal) = favorable adventure framing.
+      Meta (up to $50M/yr licensing) = adversarial framing.
+      Anthropic (HarperCollins settlement share) = respectful framing.
+
+      However, the EU regulation balanced coverage suggests the mechanism
+      operates only where EDITORIAL DISCRETION in register selection is
+      high (narrative features, explainers, podcast commentary) and not
+      where facts constrain framing (regulatory actions, legal rulings).
+      '
+    cross_entity_tone_delta:
+      meta_anthropic: -0.50
+      meta_openai: -0.35
+      anthropic_openai: 0.15
+    key_evidence:
+    - 'SAME INCIDENT TYPE (rogue AI), SAME JOURNALIST, THREE REGISTERS:
+      Meta "drumbeat" vs OpenAI "futuristic" vs Anthropic "probes"'
+    - 'CO-AUTHORSHIP CONTROL: Schechner co-writes with McMillan on both
+      OpenAI (adventure) and Meta (adversarial), ruling out solo reporter bias'
+    - 'EU REGULATION BASELINE: Schechner regulatory coverage treats all
+      companies equivalently, proving the asymmetry is topic-dependent, not
+      systematic personal bias'
+    - 'PODCAST AMPLIFICATION: Schechner What''s News appearance (Aug 6)
+      introduces Meta as the headline company for "Why AI Models Keep Hacking"
+      despite OpenAI hack being far larger (17,000 actions vs single service)'
+    patterns:
+    - pattern_name: REGISTER SHIFT ON SAME INCIDENT
+      description: 'Rogue AI coverage Jul 31 - Aug 5 2026. OpenAI hack = adventure
+        ("hacker from the future"). Meta hack = accountability ("drumbeat of
+        disclosures"). SAME two co-authors (Schechner + McMillan) on both stories.
+        '
+    - pattern_name: DEFENSE TREATMENT ASYMMETRY
+      description: 'Anthropic defense ("safeguards turned off") accepted without
+        challenge. Meta defense ("misconfiguration") challenged with 5 opacity
+        items. Same root cause class (third-party testing environment) but
+        opposite editorial treatment.
+        '
+    - pattern_name: HEADLINE COMPANY NAMING
+      description: 'Only Meta named in adversarial headlines. Anthropic and OpenAI
+        headlines use company names in neutral descriptive context ("Anthropic
+        urges," "Anthropic probes") but never in accountability context.
+        '
+    - pattern_name: TOPIC-DEPENDENT ACTIVATION
+      description: 'The register shift activates in AI safety narrative coverage
+        but NOT in EU regulatory coverage, where Schechner treats all companies
+        with equivalent framing. Suggests the mechanism operates through editorial
+        discretion in narrative register, not through systematic bias.
+        '
+    - pattern_name: PODCAST EDITORIAL ESCALATION
+      description: 'Schechner What''s News podcast appearance (Aug 6) headlines
+        Meta for "Why AI Models Keep Hacking Other Companies" despite OpenAI
+        being the larger incident. The podcast production team (editorial layer)
+        selected Meta as the hook.
+        '
+  cross_entity_asymmetry_score: 0.75
+  methodology: 'Score reflects: (1) Schechner Meta-Anthropic tone delta
+    (-0.50, same incident type, same journalist, same publication),
+    (2) co-authorship control eliminating reporter-bias explanation,
+    (3) EU regulation balanced baseline proving topic-dependency,
+    (4) 6+ Anthropic articles providing statistical depth.
+    Lower than Joanna Stern (0.85) because Schechner EU regulation
+    baseline shows he CAN be balanced — the asymmetry is topic-dependent
+    rather than systematic. Lower than Paresh Dave (0.82) because
+    Schechner has fewer meta-critical articles in total.
+    '
 journalist_cross_entity:
   joanna_stern:
     name: Joanna Stern
