@@ -1,4 +1,52 @@
 # MediaScope Iteration Log
+## 2026-08-08 19:00 PT — Type B: Journalist Cross-Entity Tracking — Sheera Frenkel (NYT) Book Deal Narrative Capture
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Finding: Sympathy-Adversarial Inversion — Seven-Figure Book Deal Creates Undisclosed Financial Conflict
+
+Sheera Frenkel is NYT's most structurally conflicted cross-entity reporter. Her 2025-2026 coverage reveals a SYMPATHY-ADVERSARIAL INVERSION: Anthropic receives consistent sympathy framing (principled company victimized by government overreach) while Meta receives consistent adversarial framing (reckless corporation that must be forced to comply). This maps to two structural factors: (1) her seven-figure "An Ugly Truth" book deal invested in the "Meta is dangerous" thesis, and (2) NYT's institutional editorial direction channels her adversarial expertise toward Meta — the one major tech company with NO NYT content licensing deal.
+
+**Cross-entity tone comparison:**
+
+| Company | Avg Tone | Register | Sample Coverage |
+|---------|----------|----------|----------------|
+| Meta | -0.55 | Adversarial institutional | "U.S. Presses Meta to Agree to A.I. Reviews" — Meta as "holdout" |
+| Anthropic | -0.05 | Institutional sympathy | 12+ articles forming redemption arc, "Rallies Behind," "Lifts Restrictions" |
+| Google | +0.05 | Neutral institutional | "Google Signs A.I. Deal With the Pentagon" — cooperative partner |
+
+**5 key patterns:**
+
+1. **REFUSAL FRAMING INVERSION:** Anthropic refuses Pentagon demands → "principled resistance," "Silicon Valley rallies behind," "targeting." Meta refuses government AI review demands → "holdout," "lone major tech company," isolation language. Same reporter, same behavior, opposite registers.
+
+2. **BOOK DEAL FINANCIAL CAPTURE (Mechanism #9):** Seven-figure advance for "An Ugly Truth" (HarperCollins, 2021 — NYT Book Review: "The ultimate takedown") creates structural financial interest. Frenkel's commercial brand IS adversarial Meta coverage. No comparable product for Anthropic coverage. NYT does not disclose this conflict.
+
+3. **BEAT MIGRATION AS REGISTER RESET:** Beat expanded from cybersecurity to AI/national security in 2025-2026. Migration PRESERVED adversarial Meta register while CREATING sympathetic Anthropic register. Same reporter, different beats, different registers — but the Meta adversarial baseline never resets.
+
+4. **HEADLINE SENTIMENT LADDER:** Anthropic headlines follow ascending sentiment over 12+ articles: "Unacceptable Risk" → "Sues Pentagon" → "Employees Accuse" → "Rallies Behind" → "Productive Meeting" → "Loosens Restrictions" → "Lifts Restrictions" → "The Answer Was No" (patriotic). Classic redemption narrative arc.
+
+5. **GOVERNMENT SCARE QUOTE ASYMMETRY:** Government labels on Anthropic get scare quotes ('supply chain risk,' 'unacceptable risk'). Government pressure on Meta receives no scare quotes — editorial acceptance of government authority when applied to Meta.
+
+**Mechanism #9 vs #8 distinction:** Paresh Dave's asymmetry (Mechanism #8) is INSTITUTION-DRIVEN (WIRED editorial direction). Frenkel's asymmetry is PERSONAL (book deal financial capture) amplified by institutional alignment (NYT $0 Meta relationship).
+
+### Files modified
+- `profiles/nytimes.yaml` — Expanded Frenkel entry with full cross-entity analysis, 5 patterns, Mechanism #9, book financial interest section
+- `tests/test_sheera_frenkel_cross_entity.py` — 44 new tests across 7 classes, all passing:
+  - `TestFrenkelProfileCompleteness` (9 tests): Profile structure validation
+  - `TestToneAsymmetry` (7 tests): Sympathy-adversarial inversion, tone gap ≥0.40
+  - `TestRefusalFramingInversion` (5 tests): Same behavior opposite framing, scare quote asymmetry
+  - `TestBookDealFinancialConflict` (7 tests): Seven-figure advance, undisclosed conflict, HarperCollins, NYT Book Review endorsement
+  - `TestAnthropicCoverageArc` (6 tests): 12+ articles, redemption arc structure, sentiment ladder
+  - `TestBeatMigrationPattern` (4 tests): Beat expansion preserved adversarial register
+  - `TestCrossValidation` (6 tests): Mechanism #9 vs #8 distinction, NYT financial relationship alignment, co-byline institutional pattern
+- `README.md` — Added test file entry, updated count 6773→6817, 237→238 files
+- `docs/ARCHITECTURE.md` — Added test file entry, updated counts
+
+### Test health
+- New tests: 44/44 passing
+- Structural consistency: 124/124 passing
+- Total: 6817 tests across 238 files
+
 ## 2026-08-08 17:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × Anthropic Rogue AI Deception Framing Triangle
 
 **Rotation:** A (Competitor Coverage Deep Dive)
