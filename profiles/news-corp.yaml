@@ -504,6 +504,77 @@ control_designation:
     Meta coverage.
 
     '
+factiva_marketplace_role:
+  overview: 'News Corp operates a DUAL financial role in the AI content licensing
+    ecosystem: (1) as a publisher selling content directly to AI companies
+    (OpenAI $50M/yr, Meta up to $50M/yr), and (2) as a MARKETPLACE OPERATOR
+    through Factiva (Dow Jones subsidiary) selling AI licensing rights to
+    8,100+ news sources — more than 25% of all Factiva news sources.
+
+    This dual role is unique among MediaScope-profiled publishers and creates
+    a financial incentive structure beyond simple bilateral content deals.
+    '
+  factiva_ai_licensing:
+    news_sources_with_ai_rights: 8100
+    pct_of_total_factiva_sources: 25
+    description: 'Factiva now sells access to rights-cleared content for AI use.
+      Financial institutions feed the licensed content into AI tools for
+      real-time trading decisions. Factiva CEO (and Dow Jones CEO) Almar
+      Latour: "The industry is working toward a new business model to
+      value information in the era of gen AI."
+      '
+    use_cases:
+    - enterprise_ai_tools
+    - real_time_trading
+    - financial_analysis
+    - knowledge_retrieval
+    parent_unit: Dow Jones
+  dual_role_implications:
+    description: 'News Corp is simultaneously:
+      (1) A SELLER of its own content to OpenAI and Meta (bilateral deals)
+      (2) An INTERMEDIARY facilitating other publishers'' AI content deals via Factiva
+      (3) A LITIGANT suing companies that scrape without paying (Perplexity, Brave)
+
+      This triple role creates:
+      - Commission/margin revenue from other publishers'' AI licensing
+      - Strategic intelligence about deal terms across the industry
+      - Competitive moat as gatekeeper between smaller publishers and AI companies
+      - Editorial conflict: WSJ coverage of AI content deals directly affects
+        the market that its sibling (Factiva) operates in
+      '
+    marketplace_competitors:
+    - Microsoft PCM (8 publishers including Condé Nast, Hearst, Vox Media, AP)
+    - Amazon AWS Marketplace (building, Feb 2026)
+    - Snowflake Cortex (17 publishers including WashPost, AP, USA Today)
+    - Tollbit (bot-gating service, Newsweek customer)
+    microsoft_pcm_investment: '>$10M including payments to publishers (Tim Frank, MS CVP)'
+    wsj_self_disclosure: 'The WSJ article (Jul 2, 2026) that reported on Factiva''s
+      marketplace included the disclosure: "Factiva and The Wall Street
+      Journal are both part of News Corp''s Dow Jones unit. News Corp has
+      a content deal with OpenAI. Two of News Corp''s subsidiaries have
+      sued Perplexity." This is consistent with WSJ''s unique disclosure
+      practice — they are the ONLY profiled publication that consistently
+      discloses parent company conflicts.
+      '
+  mediascope_significance: 'The Factiva marketplace role adds a 4th dimension to News Corp''s
+    financial incentive analysis. Beyond bilateral deals (OpenAI, Meta,
+    Anthropic settlement), News Corp profits from the GROWTH of the
+    AI content licensing market itself. This means:
+    (1) News Corp has an incentive for ALL AI companies to license content
+        (not just its direct partners), because more licensing = more
+        Factiva marketplace revenue
+    (2) News Corp has an incentive AGAINST unlicensed scraping (which
+        undermines both its bilateral deals AND its marketplace business)
+    (3) This aligns Thomson''s "woo and sue" strategy with Factiva''s
+        commercial interests — litigation against scrapers protects both
+        News Corp''s own content AND the broader licensing market Factiva operates in
+    (4) As marketplace operator, News Corp''s editorial coverage of AI
+        content deals is inherently conflicted — WSJ reporting on the
+        growth/contraction of AI licensing directly affects Factiva revenue
+    '
+  source_urls:
+  - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+  - https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
 disclosure_practice:
   policy_type: editorial_policy
   description: 'WSJ is the ONLY publication in the MediaScope dataset that

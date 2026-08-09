@@ -128,41 +128,88 @@ def count_journalists():
     }
 
 
-def count_tests():
-    """Count test files and total test cases (including parametrize expansions).
+def _count_top_level_items(text: str) -> int:
+    """Count top-level comma-separated items in a parametrize list.
 
-    Uses pytest --collect-only when available for exact count; falls back to
-    regex-based counting of test functions as a lower bound.
+    Tracks parenthesis/bracket depth so commas inside tuples like
+    ``("phrase", True)`` are not counted as item separators.
     """
-    import subprocess
+    text = text.strip()
+    if not text:
+        return 0
+    count = 1
+    depth = 0
+    in_string = None
+    last_comma_at_depth_zero = False
+    i = 0
+    while i < len(text):
+        c = text[i]
+        if in_string is not None:
+            if c == "\\" and i + 1 < len(text):
+                i += 2
+                continue
+            if c == in_string:
+                in_string = None
+        else:
+            if c == "#":
+                while i < len(text) and text[i] != "\n":
+                    i += 1
+                continue
+            if c in ('"', "'"):
+                in_string = c
+                last_comma_at_depth_zero = False
+            elif c in ("(", "[", "{"):
+                depth += 1
+                last_comma_at_depth_zero = False
+            elif c in (")", "]", "}"):
+                depth -= 1
+                last_comma_at_depth_zero = False
+            elif c == "," and depth == 0:
+                count += 1
+                last_comma_at_depth_zero = True
+            elif not c.isspace():
+                last_comma_at_depth_zero = False
+        i += 1
+    if last_comma_at_depth_zero:
+        count -= 1
+    return count
 
+
+def count_tests():
+    """Count test files and total test cases (def test_ + parametrize expansions).
+
+    Uses the same regex-based method as test_structural_consistency.py to ensure
+    the two counters always agree.
+    """
     test_dir = os.path.join(REPO_ROOT, "tests")
     test_files = glob.glob(os.path.join(test_dir, "test_*.py"))
     file_count = len(test_files)
 
-    # Try pytest --collect-only for exact count (fast: ~2-4s with cached bytecode)
-    try:
-        result = subprocess.run(
-            [sys.executable, "-m", "pytest", "--collect-only", "-q", test_dir],
-            capture_output=True,
-            text=True,
-            timeout=60,
-            cwd=REPO_ROOT,
-        )
-        # Last line is like "2556 tests collected in 2.34s"
-        m = re.search(r"(\d+) tests? collected", result.stdout)
-        if m:
-            return {"test_files": file_count, "total_tests": int(m.group(1))}
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        pass
-
-    # Fallback: regex count (underreports parametrized tests)
-    total_tests = 0
+    # Count def test_ functions
+    total = 0
     for tf in test_files:
         with open(tf) as f:
             content = f.read()
-        total_tests += len(re.findall(r"^\s+def test_\w+|^def test_\w+", content, re.MULTILINE))
-    return {"test_files": file_count, "total_tests": total_tests}
+        total += len(re.findall(r"^\s+def test_", content, re.MULTILINE))
+
+    # Count parametrize expansions
+    extra = 0
+    for tf in test_files:
+        with open(tf) as f:
+            content = f.read()
+        for m in re.finditer(
+            r'@pytest\.mark\.parametrize\(\s*"[^"]+",\s*\[(.*?)\]',
+            content,
+            re.DOTALL,
+        ):
+            items_text = m.group(1).strip()
+            if not items_text:
+                continue
+            n_items = _count_top_level_items(items_text)
+            if n_items > 1:
+                extra += n_items - 1
+
+    return {"test_files": file_count, "total_tests": total + extra}
 
 
 def count_topics():

@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-08-09 04:00 PT — Type B: Journalist Cross-Entity Tracking — Steven Levy (WIRED Editor at Large)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Journalist: Steven Levy | Publication: WIRED
+
+Steven Levy is WIRED's institutional voice — longest-tenured journalist (original contributing writer from 1993 founding), most CEO access, author of books on Google (In the Plex, 2011) and Facebook (The Inside Story, 2020). His editorial posture toward subjects IS WIRED's editorial posture.
+
+### Key Finding: Headline Diagnostic Asymmetry
+
+Levy applies systematically different headline framing to Meta vs. all competitors. The same editorial concepts — organizational struggle, talent departure, CEO communication — receive clinical-adversarial register for Meta and affectionate-playful or neutral-enterprise register for competitors.
+
+#### Meta Coverage — Institutional Pathology Language:
+1. **"Meta's Pursuit of the 'Careless People' Author Is Relentless and Self-Defeating"** (Jul 10, 2026): Loaded terms — "relentless" (institutional compulsion), "self-defeating" (pathological behavior), "punish a defector" (Techmeme summary). Meta framed as institutional bully.
+2. **"Dark Mood Inside Meta"** (2026, multi-byline): Clinical/psychological diagnosis of the organization. Four-byline treatment signals maximum editorial importance.
+
+#### Google Coverage — Neutral Enterprise Framing:
+1. **"Google's Top AI Brains Are Leaving to Launch Discovery Loop"** (Aug 5, 2026): Same concept (talent leaving) as Meta's "defector" stories, but zero loaded language. "Brains" is respectful; "Leaving to Launch" frames departure as entrepreneurial opportunity.
+2. **Google I/O 2026**: Levy was one of 5 WIRED reporters covering Google camera glasses with enthusiastic framing — same hardware that generates "mass surveillance" framing for Meta.
+
+#### Other Competitor Coverage — Personality-Driven/CEO-Platforming:
+1. **"Jeff Bezos Is Funding a Wild Hunt for the Brain's 'Core Algorithm'"** (Jun 4): Curiosity/adventure framing. No institutional diagnosis despite Amazon's surveillance controversies.
+2. **"Has Microsoft Lost Its Mojo (Again)?"** (Jun 5): Same concept as "Dark Mood Inside Meta" (company struggling) but opposite register — "mojo" is playful, "(Again)" is affectionate.
+3. **"Lyft's CEO Says, 'We're the Good Uber'"** (Jul 17): CEO's own quote as headline — pure platforming. Meta's CEO never gets equivalent self-framing.
+
+### Access-Book Trajectory Divergence:
+- **Post-Google book (2011):** Warm relationship maintained 15 years. No adversarial turn.
+- **Post-Facebook book (2020):** Shift to adversarial — Wynn-Williams sympathy, "Dark Mood" diagnosis, whistleblower amplification.
+- **Financial correlation:** Advance (Condé Nast parent) owns 65.2% Reddit voting power. Reddit competes with Meta, not Google. Framing asymmetry mirrors competitive interests.
+
+### Files modified
+- `profiles/wired.yaml` — `steven_levy` section under `journalist_cross_entity_coverage` (meta_coverage, google_coverage, other_competitor_coverage, headline_comparisons, access_dependency_analysis, whistleblower_amplification)
+- `tests/test_steven_levy_cross_entity.py` — 33 test functions (35 collected with parametrize) across 7 classes
+- `README.md` — Test count 7180→7215, file count 246→247, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7180→7215, file count 246→247, new tree entry
+
+### Test health
+- New tests: 35/35 passing
+- Structural consistency: 124/124 passing (per-file count, header count, file listing all verified)
+
+**Commit:** 1972785
+
 ## 2026-08-09 03:00 PT — Type A: Competitor Coverage Deep Dive — WIRED × Google I/O 2026 Smart Glasses (Lane Assignment Extends to Google)
 
 **Rotation:** A (Competitor Coverage Deep Dive)

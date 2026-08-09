@@ -4822,6 +4822,31 @@ marketplace_intermediary_landscape:
       ai_lab_investments:
       - Anthropic ($13B+)
       conflict_level: high
+    - name: Factiva (Dow Jones / News Corp)
+      launched: pre-2026 (AI licensing rights added 2025-2026)
+      dual_role: true
+      is_buyer: false
+      parent_is_publisher: true
+      parent_deals:
+      - OpenAI ($50M/yr)
+      - Meta (up to $50M/yr)
+      news_sources_with_ai_rights: 8100
+      pct_of_total_sources: 25
+      publishers: 8,100+ third-party sources
+      use_cases:
+      - enterprise AI tools
+      - real-time trading
+      - financial analysis
+      ai_lab_investments: []
+      conflict_level: medium
+      notes: 'Unique dual role: parent company (News Corp) is both a PUBLISHER
+        selling its own content bilaterally AND a MARKETPLACE OPERATOR through
+        Factiva. News Corp profits from both its own content licensing deals
+        AND the growth of the broader AI content licensing market. WSJ
+        disclosed this conflict in its Jul 2 2026 article on AI marketplaces.
+        Not an AI lab investor, but parent company has editorial coverage
+        interests in the AI licensing market Factiva serves.'
+      source_url: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
     incentive_direction: Platform dependency → softer coverage of marketplace operator
   tier_3_collective:
     description: 'Collective licensing schemes aggregating many publishers for bulk
