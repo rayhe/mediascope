@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6817 tests across 238 test files (all from real articles)
+├── tests/                       # 6881 tests across 239 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -537,6 +537,7 @@ mediascope/
 │   ├── test_sean_hollister_cross_entity.py # Sean Hollister (Verge senior editor) cross-entity: Apple recusal asymmetry, pre/post-recusal coverage shift, consumer harm lane gap, 3-entity coverage pattern, structural vs personal ethics
 │   ├── test_sam_schechner_cross_entity.py # Sam Schechner (WSJ Paris) cross-entity: Mechanism #9 topic-dependent register shift, same journalist 3 registers across Meta/Anthropic/OpenAI, co-authorship control, EU regulation baseline, podcast escalation
 │   ├── test_sheera_frenkel_cross_entity.py # Sheera Frenkel (NYT) cross-entity: Mechanism #9 Book Deal Narrative Capture, seven-figure "An Ugly Truth" undisclosed financial conflict, sympathy-adversarial inversion (Meta -0.55 vs Anthropic -0.05), refusal framing inversion, Anthropic redemption arc (12+ articles), government scare quote asymmetry, beat migration register preservation
+│   ├── test_google_q2_2026_meta_coverage_asymmetry_aug8.py # Google vs Meta Q2 2026 earnings coverage asymmetry: Alphabet Q2 earnings ($119.8B/+24%, $81.6B ads, $44.9B capex, -$5.9B FCF), 5 framing patterns (capex narrative inversion, net income quality erasure, FCF double standard, growth rate suppression, headline register asymmetry), financial incentive prediction 100%
 │   ├── test_safe_target_coefficient_aug8.py # Type C Safe Target Coefficient quantification: binary Meta-deal predictor (9/9 accuracy), competitor deal gradient (r≈0.52), per-publisher asymmetry scores + meta_avg_tone, News Corp symmetric control, Gizmodo zero-deal control, safe target delta range
 │   ├── test_samsung_equivalence_paradox_aug7.py # Samsung Equivalence Paradox: Samsung Intelligent Eyewear functionally identical to Meta Ray-Ban (12MP camera, mics, AI, LED indicator, ~50g, no display) yet receives product-review framing while Meta gets adversarial framing; Iberville Parish school ban names Meta glasses only despite identical Samsung hardware
 │   ├── test_apple_google_gemini_publisher_chain_aug7.py # Apple-Google $1B/yr Gemini deal creates publisher content bypass chain: Apple negotiated with Condé Nast/NBC/IAC ($50M, Dec 2023) but signed no deals; instead paid Google for Gemini model trained on publisher content (Hachette/Cengage lawsuit confirms), bypassing direct publisher licensing entirely

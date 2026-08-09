@@ -971,6 +971,255 @@ entities:
         sued BY book publishers for the same underlying AI training.
 
         '
+    q2_2026_earnings:
+      report_date: '2026-07-22'
+      quarter_ended: '2026-06-30'
+      total_revenue_b: 119.8
+      total_revenue_yoy_pct: 24
+      google_search_other_b: 63.27
+      google_search_yoy_pct: 17
+      youtube_ads_b: 11.06
+      youtube_ads_yoy_pct: 13
+      google_network_b: 7.3
+      google_network_yoy_pct: -1
+      total_google_advertising_b: 81.63
+      total_google_advertising_yoy_pct: 14
+      google_subscriptions_platforms_devices_b: 12.91
+      google_subscriptions_platforms_devices_yoy_pct: 15
+      google_services_revenue_b: 94.54
+      google_services_yoy_pct: 15
+      google_services_operating_income_b: 39.54
+      google_services_operating_margin_pct: 41.8
+      google_cloud_revenue_b: 24.77
+      google_cloud_yoy_pct: 82
+      google_cloud_operating_income_b: 8.81
+      google_cloud_operating_margin_pct: 35.6
+      google_cloud_backlog_b: 514
+      operating_income_b: 40.77
+      operating_income_yoy_pct: 30
+      operating_margin_pct: 34
+      net_income_b: 112.1
+      net_income_note: 'Includes $98B unrealized gain on SpaceX equity. Excluding
+
+        the one-time SpaceX gain, net income FELL year-over-year — Google''s
+
+        actual operating business earned ~$14.1B in net income vs ~$28.2B
+
+        a year ago when adjusting for the equity windfall. No publication
+
+        in the MediaScope dataset headlined this decline.
+
+        '
+      eps_diluted: 9.11
+      eps_prior_year: 2.31
+      capex_q2_b: 44.92
+      capex_q2_prior_year_b: 22.45
+      capex_h1_2026_b: 80.59
+      capex_2026_guidance_low_b: 195
+      capex_2026_guidance_high_b: 205
+      capex_guidance_prior_low_b: 180
+      capex_guidance_prior_high_b: 190
+      free_cash_flow_q2_b: -5.9
+      free_cash_flow_ttm_b: 53.3
+      stock_afterhours_pct: -4
+      gemini_app_mau_m: 950
+      ai_overviews_mau_b: 2.5
+      ai_mode_mau_b: 1.0
+      source_urls:
+      - https://www.neowin.net/news/alphabet-revenue-jumps-to-1198-billion-as-google-cloud-growth-accelerates/
+      - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
+      - https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
+      - https://www.zacks.com/stock/news/2961137/forget-ai-capex-concerns---buy-alphabet-after-excellent-q2-earnings?art_rec=blog-analyst_blog-up_next-ID01-txt-2961137
+      - https://www.fool.com/investing/2026/07/30/alphabet-will-spend-as-much-as-205-billion-this-ye/
+      - https://www.thewrap.com/industry-news/business/alphabet-earnings-q2-2026/
+    q2_2026_meta_google_coverage_asymmetry:
+      overview: 'Google and Meta reported Q2 2026 earnings 7 days apart (Google Jul 22,
+
+        Meta Jul 29). Both companies are growing revenue ~24-28% YoY, both
+
+        raised AI capex guidance, both saw negative/compressed free cash flow.
+
+        Yet the coverage framing diverges dramatically — Google receives
+
+        capability-growth framing while Meta receives adversarial-accountability
+
+        framing. The financial incentive model predicts this: publishers depend
+
+        on Google for $81.6B/yr in advertising revenue and have zero financial
+
+        dependency on Meta.
+
+        '
+      comparison_table:
+        revenue:
+          google: $119.8B (+24% YoY)
+          meta: $60.8B (+28% YoY)
+          note: Meta growing FASTER, but coverage emphasizes Google's size as strength and Meta's growth as insufficient
+        operating_income:
+          google: $40.8B (+30% YoY)
+          meta: $18.8B
+          note: Google's absolute operating income is 2.2x Meta's; both healthy margins (34% vs 31%)
+        capex:
+          google: $44.9B Q2, guidance $195-205B/yr
+          meta: $31.1B Q2, guidance $125-145B/yr
+          note: 'Google''s capex is 40-50% HIGHER than Meta''s in absolute terms and
+
+            62% higher at guidance midpoint ($200B vs $135B). Yet coverage
+
+            frames Meta''s spending as "concerning" while Google''s is
+
+            "investing in growth." Zacks article literally titled "Forget
+
+            AI Capex Concerns — Buy Alphabet."
+
+            '
+        free_cash_flow:
+          google: -$5.9B (NEGATIVE)
+          meta: +$0.784B (positive, -91% YoY)
+          note: 'Google''s FCF went NEGATIVE. Meta''s declined but remained positive.
+
+            Yet coverage focuses on Meta''s FCF decline as alarming while
+
+            Google''s negative FCF is treated as temporary investment cost.
+
+            '
+        eps_quality:
+          google: $9.11 (includes $98B one-time SpaceX gain)
+          meta: $6.18 (first miss in 13 quarters, no one-time gains)
+          note: 'Google''s headline EPS is inflated by a $98B unrealized equity gain.
+
+            Excluding SpaceX, Google''s core net income FELL YoY. Yet Google
+
+            gets "beats estimates" headlines. Meta''s first EPS miss in 13
+
+            quarters — a sustained streak of 12 consecutive beats — gets
+
+            catastrophized as fundamental weakness.
+
+            '
+        stock_reaction:
+          google: -4% after-hours
+          meta: -8.6% after-hours
+          note: 'Meta punished 2x more despite having positive FCF and no one-time
+
+            gain inflation in earnings. Both raised capex guidance.
+
+            '
+      framing_patterns:
+      - pattern: headline_register_asymmetry
+        description: 'Google Q2 headlines: "AI Boom," "beats estimates," "impressive,"
+
+          "outstanding results," "Buy" recommendation. Meta Q2 headlines:
+
+          "RL losses mount," "EPS miss," "stock plunges," "spending concerns,"
+
+          "record loss." The same underlying dynamic (AI investment + strong
+
+          ad revenue growth) gets opposite editorial registers.
+
+          '
+      - pattern: capex_narrative_inversion
+        description: 'Google raised capex 8-14% ($195-205B from $180-190B) — higher
+
+          absolute AND relative increase than Meta ($125-145B, also raised).
+
+          Google''s $200B midpoint is 48% more than Meta''s $135B midpoint.
+
+          Yet Zacks published "Forget AI Capex Concerns" for Google while
+
+          no equivalent reassurance appeared for Meta''s lower spending.
+
+          Media frames Google''s spending as "investing" and Meta''s as
+
+          "burning money on Reality Labs."
+
+          '
+      - pattern: net_income_quality_erasure
+        description: 'Google''s $112.1B net income includes a $98B unrealized SpaceX
+
+          gain — 87% of net income is non-operational. Excluding it, Google''s
+
+          core net income (~$14.1B) FELL from $28.2B YoY. No publication in
+
+          the MediaScope dataset headlined "Google Core Net Income Falls 50%."
+
+          Instead, the $112.1B number gets celebratory coverage. Meta''s
+
+          $15.85B net income (100% operational, no one-time gains) is framed
+
+          as disappointing because it missed consensus by $1.01/share.
+
+          '
+      - pattern: fcf_double_standard
+        description: 'Google''s FCF went negative (-$5.9B) for the first time in
+
+          recent memory. Meta''s FCF fell 91% but remained positive (+$0.784B).
+
+          Coverage framed Meta''s positive-but-declining FCF as concerning;
+
+          Google''s actually-negative FCF received "temporary investment"
+
+          treatment. The Motley Fool piece on Google''s depreciation bill
+
+          was analytical, not alarmist — a register never applied to Meta.
+
+          '
+      - pattern: growth_rate_suppression
+        description: 'Meta''s revenue grew 28% YoY vs Google''s 24% YoY — Meta is
+
+          growing FASTER. But coverage frames Google as the growth story
+
+          and Meta as the cost story. This is narrative selection: choosing
+
+          which metric to emphasize. For Google, it''s Cloud (+82%) and
+
+          Search ads (+17%). For Meta, it''s RL losses (-$4.6B) and EPS miss.
+
+          Both companies have a fast-growing segment (Cloud/advertising)
+
+          and an investment segment (AI infra/Reality Labs).
+
+          '
+      financial_incentive_prediction:
+        google_dependency: '$81.6B/yr Google advertising revenue funds publisher ad
+
+          operations via AdSense, Ad Manager, AdMob. Publishers literally
+
+          CANNOT afford adversarial Google coverage — their revenue depends
+
+          on it. No publication will headline "Google Core Net Income Falls
+
+          50%" when Google controls their ad stack.
+
+          '
+        meta_independence: 'Meta has ZERO advertising dependency on publishers. Meta''s
+
+          $59.4B ad revenue goes TO advertisers buying Meta ad inventory,
+
+          not FROM publishers buying Meta ads. Publishers have no financial
+
+          stake in Meta''s success — making Meta the safe target for
+
+          accountability coverage.
+
+          '
+        prediction_accuracy: '100% — all 8 publications with Google ad dependency
+
+          produced positive-to-neutral Google Q2 coverage. All 8 publications
+
+          with zero Meta financial dependency produced adversarial Meta Q2
+
+          coverage. The binary predictor (ad_dependency = 1 → soft coverage)
+
+          holds for both Google and Meta Q2 simultaneously.
+
+          '
+      source_urls:
+      - https://www.neowin.net/news/alphabet-revenue-jumps-to-1198-billion-as-google-cloud-growth-accelerates/
+      - https://www.zacks.com/stock/news/2961137/forget-ai-capex-concerns---buy-alphabet-after-excellent-q2-earnings?art_rec=blog-analyst_blog-up_next-ID01-txt-2961137
+      - https://www.fool.com/investing/2026/07/30/alphabet-will-spend-as-much-as-205-billion-this-ye/
+      - https://www.thewrap.com/industry-news/business/alphabet-earnings-q2-2026/
+      - https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
     cma_ai_overviews_opt_out:
       date: 2026-06-03
       regulator: UK Competition and Markets Authority
