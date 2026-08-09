@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 7379 tests across 251 test files (all from real articles)
+├── tests/                       # 7425 tests across 252 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -707,6 +707,7 @@ mediascope/
 │   ├── test_apple_news_platform_leverage_aug7.py # Apple News+ platform leverage — Lifeline Paradox: Apple has FIVE financial mechanisms (News+ 50% rev share $12.99/mo 400+ titles 125M MAU, App Store 15-30% tax, Apple One dilution, 2.5B-device distribution monopoly, $1B/yr AI bypass via Google Gemini). THIRD most entangled after Microsoft (7) and Amazon (6). Completes hierarchy: MSFT(7)>AMZN(6)>AAPL(5)>GOOG(4)>META(1). Profiled pub exposure: Condé Nast 16 titles, Atlantic "most valuable syndication partner", WSJ participant, FT only non-participant. Q3 FY26 $30.7B Services +12% YoY. 9 classes, 37 tests
 │   ├── test_openai_publisher_financial_displacement_aug8.py # OpenAI publisher financial displacement architecture: ad business launch Jan 2026, $100M ARR pilot in 6 weeks, $2.5B projected 2026 → $100B 2030, Chris Lehane dual role (ads+TBPN). TBPN acquired Apr 2 2026 (11 people, 70K daily viewers, $30M/yr). Publisher deals 20+ covering 160+ outlets, $300-400M/yr total, News Corp largest $250M/5yr. Ad rev exceeds deal spending 6-8× in 2026. OpenAI S-1 filed Jun 8 2026 $852B val. Anthropic S-1 filed Jun 1 2026 $965B val ZERO publisher deals — validates zero-deal model. Dual-IPO $1.8T+ combined, transparency inflection. 9 classes, 66 tests
 │   ├── test_news_corp_factiva_marketplace_dual_role_aug9.py # Type C: News Corp Factiva AI Marketplace Dual-Role — Factiva sells AI licensing rights to 8,100+ sources (>25% of Factiva), making News Corp dual role: publisher + marketplace operator. WSJ self-disclosure. 4 marketplace operators conflict ranking (MS PCM highest, Amazon high, Factiva medium, Snowflake lowest). Q4 FY2026 cross-validation. 8 classes, 41 tests
+│   ├── test_cecilia_kang_cross_entity.py        # Type B: Cecilia Kang (NYT) cross-entity — Mechanism #9B (Parallel Beat Reinforcement). Co-author of 'An Ugly Truth' with Frenkel, shares seven-figure book deal. Regulatory/policy beat (DC) vs Frenkel's cybersecurity (SF) creates dual-beat adversarial pipeline. Meta -0.50, Google -0.05, OpenAI +0.05. 5 patterns: dual-beat pipeline, headline naming asymmetry, regulatory circularity, partnership-enforcement toggle, thesis lock-in. 7 classes, 46 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

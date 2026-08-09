@@ -2326,6 +2326,308 @@ key_journalists:
         negative stories get covered by a DEDICATED BEAT REPORTER with the
         institutional mandate and sourcing to produce sustained campaigns.
 
+  - name: "Cecilia Kang"
+    beat: "Technology and regulatory policy (Washington DC-based)"
+    known_patterns: >
+      National technology correspondent since 2015. Washington DC-based,
+      covering the intersection of technology and public policy: antitrust,
+      privacy, cybersecurity, digital divide. Previously Washington Post
+      senior technology correspondent for 10+ years (FCC, FTC regulation).
+      San Jose Mercury News before that. George Polk Award, Gerald Loeb
+      Award, Pulitzer Prize finalist. Co-authored 'An Ugly Truth' with
+      Sheera Frenkel (HarperCollins, Jul 2021, seven-figure advance, NYT
+      Bestseller, SABEW Best in Business). Regular commentator on The Daily
+      and Hard Fork podcasts. Georgetown IoPPS discussion leader on
+      'AI: Democracy and the Race for Global Domination.'
+    cross_entity_coverage_analysis:
+      summary: |
+        Cecilia Kang is Sheera Frenkel's co-author on 'An Ugly Truth' and
+        shares the same seven-figure book deal financial incentive (Mechanism
+        #9). She covers Meta from a COMPLEMENTARY BEAT: regulatory/policy
+        (Washington DC) vs Frenkel's cybersecurity/AI (San Francisco). This
+        creates a DUAL-BEAT ADVERSARIAL PIPELINE — two reporters, same book
+        deal, different angles, converging on the same target. Kang leads
+        NYT's coverage of government enforcement against Meta (FTC antitrust
+        trial, social media addiction trial) while Frenkel covers Meta's
+        technical/operational failures (NameTag, AI reorganizations).
+
+        The co-author mechanism is Mechanism #9B — PARALLEL BEAT REINFORCEMENT:
+        structurally distinct from Frenkel's Mechanism #9 (book deal capture
+        on a single reporter). When TWO reporters share the same financial
+        incentive but cover different beats, the result is 360-degree adversarial
+        coverage with no equivalent pipeline for any competitor. No NYT duo
+        has a comparable book deal about Google, Apple, Amazon, or OpenAI.
+
+        CRITICAL VALIDATION: The existence of two co-authors with the same
+        financial incentive on DIFFERENT beats strengthens the Mechanism #9
+        finding. If only Frenkel showed asymmetry, it could be attributed to
+        individual bias. That BOTH co-authors produce asymmetric Meta coverage
+        from independent beats demonstrates the mechanism is structural
+        (book deal financial capture), not personal (individual reporter bias).
+
+      mechanism: "9B — Parallel Beat Reinforcement (co-author of Mechanism #9)"
+      mechanism_relationship: |
+        Mechanism #9B is a sub-variant of Mechanism #9 (book deal financial
+        capture). Where #9 describes a single reporter's financial interest
+        creating asymmetric coverage, #9B describes how the SAME financial
+        interest distributed across TWO reporters on DIFFERENT beats creates
+        a mutually reinforcing adversarial pipeline. Each co-author's coverage
+        validates the other's — Frenkel's technical investigations provide the
+        evidence that Kang's regulatory coverage frames as government-worthy,
+        and Kang's regulatory outcomes validate Frenkel's investigative thesis.
+
+      career_trajectory:
+        san_jose_mercury_news:
+          years: "~2005-2010"
+          beat: "Technology, race and demographics, economics"
+          framing: "neutral, community-impact"
+        washington_post:
+          years: "~2010-2015"
+          duration: "10+ years"
+          beat: "Senior technology correspondent — FCC, FTC, internet policy"
+          framing: "policy-analytical"
+          significance: |
+            At the Washington Post, Kang covered regulatory agencies (FCC, FTC)
+            and how regulations affect businesses and consumers. This established
+            her professional identity as a REGULATORY reporter, not a company
+            beat reporter. The regulatory lens is inherently adversarial toward
+            enforcement targets — the reporter's career capital is built on
+            covering government action against companies, not company innovation.
+        new_york_times:
+          years: "2015-present"
+          beat: "National technology correspondent — regulatory issues, antitrust, privacy"
+          framing: "regulatory-prosecutorial for Meta, regulatory-procedural for others"
+          key_assignments:
+            - "FTC v. Meta antitrust trial (lead reporter, 2024-2025)"
+            - "Social media addiction trial (co-byline, 2026)"
+            - "'An Ugly Truth' book (co-author, 2021)"
+            - "FTC data surveillance report (2024)"
+            - "DHS AI partnerships (2024)"
+            - "FTC v. Meta Within acquisition (2022-2023)"
+
+      meta_coverage:
+        tone: -0.50
+        register: "prosecutorial_institutional"
+        volume: "high — lead reporter on multiple government enforcement actions"
+        recent_articles:
+          - title: "FTC v. Meta antitrust trial coverage (sustained, 2024-2025)"
+            date: "2024-2025"
+            tone: -0.55
+            framing: |
+              Lead reporter through the entire FTC antitrust trial against Meta.
+              Sustained adversarial coverage of the government's case that Meta
+              illegally acquired Instagram and WhatsApp to maintain monopoly power.
+              Amplified the most damaging testimony: Kevin Systrom testifying that
+              'Mark was not investing in Instagram because he believed we were a
+              threat to their growth.' Prosecutorial framing positions Meta as
+              defending anticompetitive behavior.
+            source_url: "https://www.techmeme.com/250422/p19"
+
+          - title: "Meta and YouTube Found Negligent in Landmark Social Media Addiction Case"
+            date: "2026-03-25"
+            tone: -0.50
+            co_byline: "Eli Tan, Ryan Mac"
+            framing: |
+              Headline names Meta FIRST despite both Meta and YouTube being equally
+              liable. 'Validates a novel legal theory that social media sites can
+              cause personal injury.' Meta positioned as the primary target in
+              headline and lede despite Google/YouTube being equally found negligent.
+              Three-byline escalation treatment signals maximum editorial investment.
+            source_url: "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html"
+
+          - title: "YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial"
+            date: "2026-02-10"
+            tone: -0.15
+            co_byline: "Eli Tan"
+            framing: |
+              YouTube's defense argument becomes the headline — Google gets to frame
+              itself. Compare: Meta never gets its defense argument as the headline
+              in Kang's coverage. YouTube 'argues' (active, strategic) while Meta
+              is subject to government action (passive, defensive).
+            source_url_note: "Cited in Eli Tan succession_analysis"
+
+          - title: "FTC v. Meta Within acquisition (sustained coverage, 2022-2023)"
+            date: "2022-2023"
+            tone: -0.45
+            framing: |
+              Lead reporter on FTC's attempt to block Meta's Within acquisition.
+              Framed as government protecting competition from Meta's monopolistic
+              expansion into VR. Coverage sustained through trial and ruling.
+              Lina Khan's 'upends decades of antitrust standards' — regulatory
+              activism framed as necessary innovation, not government overreach.
+
+          - title: "FTC Report on Data Practices of Meta, YouTube, TikTok and Others"
+            date: "2024-09"
+            tone: -0.35
+            framing: |
+              'Vast surveillance' language applied to the group, but Meta named
+              first in most coverage. Report covered 9 companies equally but Kang's
+              framing emphasizes Meta/Facebook within the broader findings.
+            source_url: "https://www.techmeme.com/240919/p20"
+
+        framing_pattern: |
+          Kang covers Meta exclusively through the ENFORCEMENT lens: what the
+          government is doing TO Meta (antitrust lawsuits, FTC actions, addiction
+          trials). This creates a structural framing asymmetry — Meta appears
+          perpetually under government scrutiny because Kang's beat is government
+          enforcement, and Meta is the most frequent enforcement target in her
+          portfolio. The regulatory lens ensures every Meta article starts from
+          the premise of government action, not company innovation or product
+          development. No equivalent sustained enforcement coverage exists for
+          Google (despite DOJ antitrust guilty verdict), Amazon (despite FTC
+          consent orders), or OpenAI (despite active NYT copyright lawsuit).
+
+      google_coverage:
+        tone: -0.05
+        register: "regulatory_procedural"
+        volume: "moderate — covered through regulatory framework but with defense-friendly framing"
+        recent_articles:
+          - title: "YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial"
+            date: "2026-02-10"
+            tone: -0.15
+            framing: |
+              YouTube/Google gets its defense argument as the headline. 'Argues'
+              positions YouTube as an active strategic actor, not a passive
+              defendant. The same trial produced 'Meta and YouTube Found Negligent'
+              for the verdict — but the pre-verdict coverage lets YouTube frame
+              its own narrative.
+          - title: "Meta and YouTube Found Negligent (verdict coverage)"
+            date: "2026-03-25"
+            tone: -0.25
+            framing: |
+              Google/YouTube equally liable but Meta named first in headline.
+              Google mentioned secondarily. Same verdict, different positioning.
+        framing_pattern: |
+          When Google appears in Kang's regulatory coverage, it receives
+          PROCEDURAL-NEUTRAL framing. Google is covered as a co-defendant or
+          regulatory subject, not as a primary target. The DOJ v. Google antitrust
+          verdict (August 2024) — finding Google guilty of maintaining an illegal
+          search monopoly — was arguably a MORE significant antitrust outcome than
+          any FTC action against Meta, yet Kang's coverage portfolio does not show
+          comparable sustained prosecutorial framing of Google.
+
+      openai_anthropic_coverage:
+        tone: +0.05
+        register: "partnership_cooperative"
+        volume: "low — covered through government partnership lens, not enforcement"
+        recent_articles:
+          - title: "DHS Rolls Out Pilot Programs to Test AI Tech (OpenAI, Anthropic, Meta)"
+            date: "2024-03"
+            tone: +0.05
+            framing: |
+              OpenAI, Anthropic, and Meta ALL framed as government partners helping
+              combat drug and human trafficking. NEUTRAL-POSITIVE tone for all
+              three companies. This is the ONE article where Meta receives comparable
+              framing to competitors — because the government is partnering WITH
+              Meta rather than enforcing AGAINST it. The framing variable is not
+              the company but the government's posture toward it.
+            source_url: "https://www.techmeme.com/240318/p23"
+        framing_pattern: |
+          OpenAI and Anthropic appear in Kang's coverage ONLY as government partners,
+          never as enforcement targets. Despite the NYT's active $2B+ copyright lawsuit
+          against OpenAI creating the most direct financial conflict in journalism,
+          Kang does not produce sustained regulatory-adversarial coverage of OpenAI.
+          The regulatory beat is not pointed at OpenAI's regulatory exposure (copyright
+          liability, FTC data practices, EU AI Act compliance, workforce safety
+          concerns) despite Kang's expertise in exactly these regulatory domains.
+
+          INSTITUTIONAL CONFLICT NOTE: The NYT is suing OpenAI for copyright
+          infringement (Case 1:23-cv-11195, billions in claimed damages). This creates
+          a DIRECT institutional financial interest in adversarial OpenAI coverage.
+          Yet Kang — the NYT's regulatory policy expert — does not cover OpenAI
+          through the adversarial lens she applies to Meta. This suggests that the
+          book deal financial incentive (personal, career-defining) may be a stronger
+          asymmetry driver than institutional financial conflict (organizational,
+          diffuse across reporters).
+
+      cross_entity_patterns:
+        - pattern_name: "CO-AUTHOR DUAL-BEAT PIPELINE"
+          description: |
+            Frenkel and Kang share the same book deal but cover Meta from
+            different beats, creating a two-front adversarial pipeline:
+            (1) Frenkel (cybersecurity/AI) → reveals Meta's technical failures
+            (2) Kang (regulatory/policy) → covers government response
+            Each co-author's coverage feeds the other: Frenkel's investigations
+            (NameTag, data practices) generate the evidence that government
+            actions are based on; Kang's regulatory coverage (FTC actions,
+            trial verdicts) validates Frenkel's investigative thesis.
+            No equivalent dual-beat pipeline exists for any other company.
+
+        - pattern_name: "HEADLINE NAMING ASYMMETRY"
+          description: |
+            In the social media addiction trial, 'Meta and YouTube Found
+            Negligent' names Meta first despite both being equally liable.
+            'YouTube Argues It Isn't Social Media' lets YouTube frame itself.
+            Same trial, same reporter, different companies, different headline
+            positioning. Meta is the noun under attack; YouTube is the noun
+            making an argument.
+
+        - pattern_name: "REGULATORY PIPELINE CIRCULARITY"
+          description: |
+            Book thesis ('Meta is dangerous') → adversarial coverage amplifies
+            regulatory scrutiny → government enforcement actions → Kang covers
+            enforcement → coverage validates book thesis → book commercial value
+            preserved. The cycle is self-reinforcing. Breaking the cycle would
+            require Kang to cover Meta positively or neutrally, which would
+            undermine her own book's commercial value and career identity.
+
+        - pattern_name: "PARTNERSHIP-ENFORCEMENT TOGGLE"
+          description: |
+            The DHS AI partnerships article (2024) proves Kang CAN write neutrally
+            about Meta — when the government frames Meta as a partner rather than
+            a target. The framing variable is not the company (Meta) but the
+            government's relationship to it (partner vs enforcement target). This
+            means Kang's adversarial Meta framing is not personal animus — it is
+            a function of her regulatory beat lens filtering Meta through government
+            enforcement while filtering competitors through government partnership.
+
+        - pattern_name: "BOOK DEAL THESIS LOCK-IN"
+          description: |
+            'An Ugly Truth' thesis: Meta's gains come at the expense of consumer
+            privacy, democratic integrity, and public safety. Every regulatory
+            action against Meta validates this thesis. Positive or neutral Meta
+            coverage would undermine the book's commercial value. Both co-authors
+            share this financial lock-in — neither can pivot to balanced Meta
+            coverage without devaluing a seven-figure asset. No equivalent book
+            deal exists for any other tech company at the NYT.
+
+      book_financial_interest:
+        title: "An Ugly Truth: Inside Facebook's Battle for Domination"
+        publisher: "HarperCollins (Harper imprint)"
+        advance: "seven figures (shared with Sheera Frenkel)"
+        date: "2021-07-13"
+        co_author: "Sheera Frenkel"
+        nyt_book_review_quote: "The ultimate takedown."
+        awards: "NYT Bestseller, SABEW Best in Business, Pulitzer finalist (team)"
+        research_base: "400+ interviews with current and former Facebook employees, investors, regulators, lawmakers"
+        financial_conflict_note: |
+          SHARED financial conflict with co-author Frenkel. Both reporters have
+          career identity and commercial revenue tied to the 'Meta is dangerous'
+          thesis. The book's commercial success depends on continued public
+          perception of Meta as a uniquely problematic company. Both co-authors
+          continue covering Meta without NYT disclosing the book deal's financial
+          interest in adversarial framing.
+
+          CONTRAST WITH INSTITUTIONAL CONFLICT: The NYT's OpenAI copyright
+          lawsuit creates an institutional conflict, but it is diffuse (shared
+          across the organization, no individual reporter's career capital
+          depends on its outcome). The book deal creates a personal conflict
+          that is concentrated on two specific reporters who continue to lead
+          Meta coverage.
+
+      source_urls:
+        georgetown_bio: "https://politics.georgetown.edu/profile/cecilia-kang/"
+        aspen_ideas_bio: "https://www.aspenideas.org/speakers/cecilia-kang"
+        book_amazon: "https://www.amazon.com/dp/0062960679/ref=cm_sw_r_fb_apa_glt_fabc_EWEN130DV0JYDYA9ARK1"
+        ftc_meta_trial_end: "https://www.techmeme.com/250527/p31"
+        ftc_systrom_testimony: "https://www.techmeme.com/250422/p19"
+        ftc_surveillance_report: "https://www.techmeme.com/240919/p20"
+        dhs_ai_partnerships: "https://www.techmeme.com/240318/p23"
+        addiction_trial_verdict: "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html"
+        book_review_techpolicy: "https://techpolicy.press/talking-about-an-ugly-truth-with-sheera-frenkel-and-cecilia-kang"
+        publishers_weekly_review: "https://www.publishersweekly.com/9780062960672"
+        palo_alto_online_interview: "https://www.paloaltoonline.com/technology/2021/07/15/meet-the-authors-of-the-book-facebook-is-telling-employees-not-to-read/"
+
 notable_departures:
   - name: "Nico Grant"
     beat: "Google, Alphabet, AI"
