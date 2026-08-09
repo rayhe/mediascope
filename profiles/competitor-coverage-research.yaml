@@ -4915,3 +4915,215 @@ cross_publication_findings:
       with balanced deals is ALSO the only one that discloses them.
       Publications with one-sided deals that would benefit most from
       disclosure never provide it.
+
+
+  bloomberg_mark_gurman:
+    journalist: Mark Gurman
+    publication: Bloomberg
+    role: Chief Apple Correspondent, Power On newsletter author
+    key_finding: "Access Dependency — Beat Reporter Competitive Narration (Mechanism #11)"
+    finding_summary: >
+      Mark Gurman is Bloomberg's most influential Apple journalist, authoring the
+      weekly Power On newsletter — one of the most-read sources for Apple intelligence
+      in the industry. His coverage reveals a COMPETITIVE NARRATION pattern: Apple
+      is consistently framed as the strategic protagonist, while Meta appears primarily
+      as a competitive obstacle to be overcome. When both companies have comparable
+      product weaknesses, Apple receives developmental/aspirational framing while
+      Meta receives competitive-obstacle framing. This is not financial incentive
+      (Bloomberg has no known AI licensing deals with Apple) but ACCESS DEPENDENCY:
+      Gurman's professional value derives from maintaining privileged Apple source
+      access for exclusive scoops.
+
+    mechanism: access_dependency_competitive_narration
+    mechanism_explanation: >
+      Unlike financial incentive mechanisms (#1-#5) or personal financial capture
+      (#9), Mechanism #11 operates through the dynamics of access journalism. Gurman's
+      entire professional identity — his newsletter, his scoops, his reputation as
+      THE Apple insider — depends on maintaining relationships with Apple sources.
+      This creates a structural incentive to narrate Apple's competitive strategy
+      FROM THE INSIDE, using first-person strategic language ("if you're Apple, you
+      really want...") rather than external observation. Competitors like Meta are
+      naturally cast as obstacles in Apple's narrative, not as independent entities
+      with their own strategic narratives.
+
+      This mechanism is distinct from financial incentive because Bloomberg has no
+      known AI content licensing deal with Apple. It is distinct from book deal
+      capture (#9) because there is no external product invested in a specific thesis.
+      The incentive is purely access-based: maintain source relationships by narrating
+      favorably, or lose the scoops that define professional value.
+
+    cross_entity_coverage_analysis:
+      apple_wearables:
+        tone: 0.30
+        register: developmental_aspirational
+        framing_language:
+          - "better made"
+          - "premium material"
+          - "acetate, more durable and luxurious"
+          - "stronger privacy protections"
+          - "Apple brand is so strong"
+          - "a lot of ingredients to sell a lot of these smart glasses"
+          - "pull the rug out"
+        coverage_examples:
+          - article: "Apple Testing Four Smart Glasses Styles Made of High-End Materials"
+            date: "2026-04-13"
+            publication: Bloomberg Power On
+            framing: >
+              Aspirational product preview. Emphasizes "high-end material called acetate"
+              as "more durable and luxurious than the standard plastic used by most existing
+              brands." Focuses on four design options, color variety, and Apple design DNA.
+              Meta mentioned only as benchmark to surpass, not as an independent success.
+            source_url: "https://www.macrumors.com/2026/04/13/apple-smart-glasses-four-styles/"
+          - article: "Apple's plan to launch smart glasses and stop Meta's momentum"
+            date: "2026-04-21"
+            publication: Bloomberg (via Tom's Guide interview)
+            framing: >
+              Strategic warfare language. "If you're Apple, you really want [Apple Glasses]
+              to be introduced before the holiday season, because you don't want one more
+              cycle for Meta to get momentum." "Pull the rug out from under Google and Warby
+              Parker." Apple framed as strategic actor; Meta as competitive threat to neutralize.
+            source_url: "https://www.tomsguide.com/computing/smart-glasses/pull-the-rug-out-mark-gurman-explains-apples-plan-to-launch-smart-glasses-this-year-to-stop-metas-momentum"
+          - article: "Apple Glasses Reportedly Launching in 'Late 2027'"
+            date: "2026-05-31"
+            publication: Bloomberg Power On
+            framing: >
+              Despite reporting a DELAY (originally 2026, now late 2027), maintains aspirational
+              framing. Tim Cook views glasses as his "top priority." Multiple design options,
+              health device evolution, AR capability roadmap. Delay framed as product refinement,
+              not failure. Meta mentioned as comparison point but never as competitive threat
+              to Apple's narrative.
+            source_url: "https://www.macrumors.com/2026/05/31/apple-glasses-late-2027-report/"
+
+      apple_vision_pro:
+        tone: -0.15
+        register: constructive_critique
+        framing_language:
+          - "future potential"
+          - "four generations to ideal form"
+          - "could cannibalize iPad"
+          - "essentially a prototype"
+          - "buggiest first-gen product"
+          - "preview of the future"
+        pattern: >
+          Gurman criticizes the Vision Pro's execution MORE harshly than Meta's Ray-Ban
+          Display, but frames the criticism within a DEVELOPMENTAL NARRATIVE: "four
+          generations to ideal form" (Power On, Feb 2024). The product is "a prototype
+          where you have to pay Apple for the privilege of testing out" — strong language,
+          but positioned as a journey, not a verdict. Vision Pro failures are growing pains;
+          Meta failures are competitive vulnerabilities.
+
+      meta_wearables:
+        tone: -0.25
+        register: competitive_obstacle
+        framing_language:
+          - "low resolution"
+          - "1080p camera"
+          - "momentum (as threat to stop)"
+          - "one more cycle for Meta"
+          - "you don't want"
+        coverage_examples:
+          - article: "Meta Ray-Ban Display review"
+            date: "2025-10-09"
+            publication: Bloomberg
+            framing: >
+              Technical limitation focus: "good for uses like navigation and AI queries,
+              the neural band is great, but the display has low resolution and the camera
+              is 1080p." Title structure: praise → BUT → limitation. This is reasonable
+              as a product review, but the framing pattern becomes asymmetric when compared
+              to how Apple product issues get the "four generations" treatment.
+            source_url: "http://www.techmeme.com/251009/p36"
+          - article: "Meta Offered Apple AI Executive Over $200 Million to Leave"
+            date: "2025-08"
+            publication: Bloomberg
+            framing: >
+              Meta poaching Apple AI talent framed as aggressive raiding with headline
+              emphasis on the $200M figure. "Apple Loses Another Key AI Leader to Meta's
+              Superintelligence Labs" — Apple is the victim, Meta is the aggressor.
+              When Apple poaches from competitors, the framing focuses on Apple's talent
+              strategy, not the competitor's loss.
+            source_url: "https://www.macrumors.com/guide/mark-gurman/9/"
+
+      meta_reality_labs:
+        tone: -0.35
+        register: financial_concern
+        pattern: >
+          When Gurman covers Reality Labs financials, the framing emphasizes loss magnitude
+          ($19B, $83.6B cumulative) and investor concern. When Apple faces comparable
+          product market failures (Vision Pro interest "dying down," no killer app),
+          the framing emphasizes future potential and evolutionary timelines. Same class
+          of problem — expensive hardware bet with uncertain ROI — different editorial
+          register.
+
+    key_patterns:
+      - pattern_name: FIRST-PERSON STRATEGIC NARRATION
+        description: >
+          Gurman narrates Apple's competitive moves from the INSIDE: "If you're Apple,
+          you really want..." This is not external reporting — it's strategic advocacy
+          disguised as journalism. Competitors appear as obstacles in Apple's story,
+          not as independent actors with their own valid strategies.
+
+      - pattern_name: DEVELOPMENTAL FRAMING ASYMMETRY
+        description: >
+          When Apple products fail (Vision Pro too heavy, buggy, lacking apps), Gurman
+          frames it as a developmental journey: "four generations to ideal form,"
+          "preview of the future." When Meta products have issues (low resolution, 1080p),
+          the criticism stands as-is — no developmental arc, no future-potential softener.
+
+      - pattern_name: DELAY-AS-REFINEMENT VS DELAY-AS-FAILURE
+        description: >
+          Apple Glasses delayed from 2026 to late 2027 → framed as Tim Cook's "top priority"
+          with careful product development. Meta Vision Pro timeline struggles → framed in
+          context of $83.6B cumulative losses. Same event class (hardware delay),
+          different editorial temperature.
+
+      - pattern_name: TALENT NARRATIVE DIRECTIONALITY
+        description: >
+          Meta hiring Apple AI executives → "$200 million" aggressive raiding, "Apple Loses"
+          victim framing. Apple hiring from competitors → strategic talent acquisition,
+          building strength. The same labor market event gets opposite editorial valence
+          depending on which company benefits.
+
+      - pattern_name: PRODUCT LANGUAGE REGISTER
+        description: >
+          Apple unreleased product: "acetate," "luxurious," "premium," "icon."
+          Meta existing product: "low resolution," "1080p," "momentum" to stop.
+          Apple gets aspirational luxury language for a product that doesn't exist yet;
+          Meta gets technical limitation language for a product that's shipping and selling.
+
+    confounding_factors:
+      - >
+        Apple Glasses genuinely MIGHT be better made — acetate IS a premium material.
+        But Gurman is reporting Apple's claims without independent verification.
+      - >
+        Gurman's Vision Pro criticism was genuinely harsh, which suggests he CAN be
+        critical of Apple when the product clearly underdelivers. The asymmetry is
+        in the FRAMING of criticism (developmental vs terminal), not in whether
+        criticism exists.
+      - >
+        Bloomberg's editorial standards are high, and Gurman is respected as a reporter.
+        The access dependency mechanism doesn't imply corruption — it's a structural
+        incentive that naturally produces asymmetric framing without conscious bias.
+      - >
+        Gurman covers Apple as his PRIMARY beat. Some framing asymmetry is inherent
+        in beat journalism — you understand and empathize with the company you cover
+        most. The question is whether the resulting asymmetry creates misleading
+        coverage for readers.
+
+    evidence_strength: MODERATE
+    evidence_limitations: >
+      The evidence is currently limited to secondary sourcing (Macrumors summaries,
+      Tom's Guide interview, Techmeme headlines). Direct Bloomberg Power On newsletter
+      articles are paywalled. The framing patterns are consistent across multiple
+      articles and interviews, but the dataset is smaller than for journalists with
+      5+ directly analyzed articles. Additionally, access dependency is harder to prove
+      than financial incentive because it's invisible — there's no disclosure to make
+      and no deal to cite.
+
+    test_count: 42
+    test_file: tests/test_mark_gurman_cross_entity.py
+    tone_delta_meta_vs_apple_wearables: 0.55
+    tone_scores:
+      apple_wearables_average: 0.30
+      apple_vision_pro_average: -0.15
+      meta_wearables_average: -0.25
+      meta_reality_labs_average: -0.35

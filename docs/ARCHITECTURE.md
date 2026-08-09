@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 7019 tests across 242 test files (all from real articles)
+├── tests/                       # 7060 tests across 243 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -546,6 +546,7 @@ mediascope/
 │   ├── test_charlie_warzel_cross_entity.py # Charlie Warzel (Atlantic) cross-entity: career-defining adversarial Meta beat, OpenAI executive access asymmetry, Apple coverage absence, vocabulary/investigation/financial incentive correlation
 │   ├── test_chokkattu_ashworth_cross_entity.py # Chokkattu & Ashworth (WIRED Gear desk) cross-entity: "Creep Paradox" — Meta glasses get 'creep'/'surveillance' framing, Snap (4 cameras) and Google (cameras + Gemini) get none; dual-channel influence via Business Wars podcast; Condé Nast financial correlation
 │   ├── test_parmy_olson_cross_entity.py # Parmy Olson (Bloomberg Opinion) cross-entity: CEO personalization asymmetry — 87.5% Meta headlines personalize to "Zuckerberg" vs 0% for OpenAI/Anthropic; loaded language asymmetry ("bait," "slop," "failure club" for Meta vs analytical framing for competitors); professional identity capture mechanism via "Supremacy" book — new asymmetry type distinct from financial incentives
+│   ├── test_mark_gurman_cross_entity.py # Mark Gurman (Bloomberg) cross-entity: Access Dependency — Beat Reporter Competitive Narration (Mechanism #11). Apple wearables aspirational (+0.30) vs Meta wearables competitive-obstacle (−0.25). Key patterns: first-person strategic narration, developmental framing asymmetry, delay-as-refinement vs delay-as-failure, talent narrative directionality. Access dependency mechanism, not financial — distinct from Olson #9
 │   ├── test_christopher_mims_cross_entity.py # Mims (WSJ) cross-entity: TONE INVERSION — constructive Meta (+0.3) vs skeptical OpenAI (-0.3), validates balanced control; WSJ systematic disclosure (only pub that discloses financial ties)
 │   ├── test_dan_milmo_cross_entity.py    # Milmo (Guardian) cross-entity: "BIG TOBACCO" framing asymmetry — Meta gets loaded metaphor, OpenAI rogue agent gets factual relay. Gap ~0.20. Editorial leadership role means institutional direction.
 │   ├── test_david_pierce_cross_entity.py # Pierce (Verge) cross-entity: INSTITUTIONAL FRAMING IMMUNITY — 5-publication career proves adversarial Meta framing is editorially imposed, not reporter-driven. Balanced Meta tone across WIRED/WSJ/Verge contexts.
