@@ -1,4 +1,34 @@
 # MediaScope Iteration Log
+## 2026-08-09 02:00 PT — Type D: Test & Verify — Cross-Validation of Apple-OpenAI Cross-Pressure + Infrastructure Count Fix
+
+**Rotation:** D (Test & Verify)
+
+### Cross-validation findings
+
+Validated internal consistency of the 01:00 Type C Apple-OpenAI litigation publisher cross-pressure findings against individual publication profiles:
+
+1. **Profile ↔ cross-pressure consistency:** WIRED, Atlantic, Guardian, and Verge OpenAI deal descriptions in their profiles match the cross-pressure claims in competitor-entities.yaml. Guardian's no-Apple-News status confirmed in both cross-pressure section and guardian.yaml. Atlantic's LPJ Trust Apple stock exposure documented in both places.
+
+2. **Model coherence:** All 6 cross-pressure publications have analysis fields. WSJ's balanced framing matches its symmetric dual-deal prediction. Reuters serves as clean control (no deals). Apple's 5-mechanism leverage hierarchy is internally consistent.
+
+3. **Anthropic settlement date:** No stale "Jun 20" references remain in connection with the settlement. "Jul 20" and Judge Martínez-Olguín are present and correct.
+
+4. **Gurman Mechanism #11:** Access dependency (beat reporter access) is confirmed structurally distinct from financial incentive types 1-10. Bloomberg has no known content licensing deal with Apple — the asymmetry is source-access driven.
+
+5. **Infrastructure count drift caught:** README/ARCHITECTURE claimed 7110 tests but structural consistency test's precise count (def test_ + parametrize expansions) was 7140. Fixed to 7140 across 245 files.
+
+### Files modified
+- `tests/test_type_d_02am_cross_validation_aug9.py` — 30 new tests across 7 classes
+- `README.md` — Test count 7110→7140, file count 244→245, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7110→7140, file count 244→245, tree entry
+
+### Test health
+- New tests: 30/30 passing
+- Structural consistency: 124/124 passing (including the 2 count tests that were failing before the fix)
+- Core tests (313 across 7 key files): all passing
+
+**Commit:** 9abbb90
+
 ## 2026-08-09 01:00 PT — Type C: Financial Incentive Mapping — Apple-OpenAI Litigation Publisher Cross-Pressure + Anthropic Settlement Correction
 
 **Rotation:** C (Financial Incentive Mapping)
