@@ -1,4 +1,44 @@
 # MediaScope Iteration Log
+## 2026-08-09 03:00 PT — Type A: Competitor Coverage Deep Dive — WIRED × Google I/O 2026 Smart Glasses (Lane Assignment Extends to Google)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Publication: WIRED | Competitor: Google (Android XR smart glasses)
+
+WIRED sent 5 reporters to Google I/O 2026 (May 19) — Boone Ashworth, Julian Chokkattu, Lauren Goode, Steven Levy, and Reece Rogers — to cover Google's camera-equipped, Gemini AI-integrated smart glasses. The coverage used playful/enthusiastic framing for hardware functionally identical to Meta's Ray-Ban glasses, which receive "dormant surveillance infrastructure" and "mass surveillance" framing from the same publication.
+
+### Five sub-findings:
+
+1. **Live Blog Framing:** "Nano Banana on smart glasses is actually bananas. The demo worked!" — enthusiastic tone for Google cameras + AI photo manipulation. Meta's single 12MP camera → sustained investigative surveillance alarm.
+
+2. **AI Photo Manipulation Asymmetry:** Google's Nano Banana captures photos via face-mounted cameras and AI-alters them instantly (deepfake-adjacent). WIRED frames this as exciting demo: "Nothing like doctoring photos in real time." Meta's unaltered camera capture → "dormant surveillance infrastructure." Objectively MORE concerning capability receives zero alarm.
+
+3. **Google Glass Precedent Reversal:** Google created the "Glasshole" phenomenon. WIRED applies this framing to META. When Google returns to face-mounted cameras: "14 years (!) after Sergey parachuted into I/O" — nostalgic milestone. Google gets redemption, Meta gets revival of backlash.
+
+4. **Chokkattu 15-Day Framing Swing:** Same journalist covered Google camera glasses at I/O (May 19, zero surveillance language) then called Meta's cameras "a tool for mass surveillance" in Business Wars (Jun 3). 15 days, same hardware, opposite framing.
+
+5. **Condé Nast Financial Correlation:** Google (ad revenue → CN) → enthusiastic. Apple (50% News+ rev) → empathetic. Snap (via OpenAI → CN) → no alarm. Meta (zero CN revenue) → "mass surveillance," "creep," investigative alarm. Coverage tone tracks financial relationship.
+
+### Lane Assignment Extended:
+
+The pattern is NOT just Apple/Snap → product review, Meta → investigative alarm. It's:
+- **Product Review Lane:** Apple (Goode) + Snap (Goode) + Google (Goode + Chokkattu + Ashworth)
+- **Investigative Lane:** Meta only (Cameron + Mehrotra + Business Wars)
+
+Every competitor → product review treatment. Meta alone → investigative alarm. The variable is manufacturer identity, not hardware capability.
+
+### Files modified
+- `profiles/wired.yaml` — `google_io_2026_smart_glasses_coverage` section (live blog framing analysis, 5 quotes with meta_equivalent_framing, lane assignment extension, AI photo manipulation asymmetry, Google Glass precedent reversal, Chokkattu dual standard evidence, Condé Nast financial correlation)
+- `tests/test_wired_google_io_2026_glasses_framing_aug9.py` — 40 new tests across 7 classes
+- `README.md` — Test count 7140→7180, file count 245→246, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7140→7180, file count 245→246, new tree entry
+
+### Test health
+- New tests: 40/40 passing
+- Structural consistency: passing (count sync verified)
+
+**Commit:** bd710d2
+
 ## 2026-08-09 02:00 PT — Type D: Test & Verify — Cross-Validation of Apple-OpenAI Cross-Pressure + Infrastructure Count Fix
 
 **Rotation:** D (Test & Verify)
