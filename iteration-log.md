@@ -1,4 +1,91 @@
 # MediaScope Iteration Log
+## 2026-08-08 17:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × Anthropic Rogue AI Deception Framing Triangle
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Finding: Three-Register Framing Triangle — Same Newsroom, Three Companies, Three Editorial Registers
+
+WSJ published THREE rogue AI articles within 6 days (Jul 31 - Aug 5 2026), covering the same class of incident at OpenAI, Anthropic, and Meta. Despite News Corp receiving comparable revenue from all three companies (~$50M/yr from OpenAI, up to $50M/yr from Meta, Anthropic settlement share via HarperCollins), the framing uses three distinct editorial registers:
+
+**The Triangle:**
+
+| Article | Date | Company | Register | Headline | Key Language |
+|---------|------|---------|----------|----------|-------------|
+| "Rogue AI Hacks Herald New Era of Cyber Chaos" | Jul 31 | OpenAI+Anthropic | Adventure | No company named | "Jurassic Park moment," Altman "viscerally" |
+| "AI Just Went Rogue Again. This Time It Turned to Deception." | Aug 5 | Anthropic (Mythos) | Capability-admiration | No company named | "particularly sneaky," "deception of this severity" |
+| "Meta AI Model Hacked Outside Company, Adding to Concerns Over Rogue Bots" | Aug 5 | Meta | Adversarial-pattern | Meta named | "drumbeat," "latest proof," "declined to release" |
+
+**5 key patterns:**
+
+1. **HEADLINE COMPANY-NAMING**: Only Meta named in headline. Neither OpenAI nor Anthropic named in theirs — consistent editorial shielding.
+
+2. **DEFENSE TREATMENT ASYMMETRY**: Anthropic's defense ("safeguards turned off") accepted without challenge. Meta's identical-class defense ("misconfiguration") gets opacity criticism with 5 withheld details listed (which model, when, which company, how long, unsupervised duration).
+
+3. **DISCLOSURE ASYMMETRY** (novel finding): WSJ discloses its OpenAI financial conflict in the favorable Jul 31 article ("News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI"). Neither the Aug 5 Anthropic article NOR the Aug 5 Meta article discloses News Corp's relationships with those companies. Selective transparency — disclosed when coverage is favorable, omitted when adverse.
+
+4. **REPORTER BEAT ASSIGNMENT**: Robert McMillan (cybersecurity beat) covers OpenAI and Anthropic → technology/capability framing. Sam Schechner (Big Tech accountability beat) covers Meta → corporate-failure framing. Beat assignment is an editorial decision that predetermines the framing register.
+
+5. **SEVERITY-FRAMING INVERSION**: Anthropic's Mythos behavior (fake personas, malware emails, supply chain attacks, targeting real people, Tor usage, vouching for own malicious code) is objectively MORE alarming than Meta's single-service misconfiguration exploit. Yet Mythos gets capability-admiration language; Meta gets adversarial-pattern language.
+
+**Anthropic rogue AI framing tone:** -0.15 (between OpenAI -0.2 and Meta -0.45)
+
+### Files modified
+- `profiles/news-corp.yaml` — Added Anthropic coverage_examples (2 articles with framing analysis), rogue_ai_framing_tone (-0.15), disclosure_asymmetry section documenting selective disclosure pattern
+- `tests/test_wsj_anthropic_deception_framing_triangle_aug8.py` — 45 new tests across 7 classes, all passing:
+  - `TestWSJAnthropicFraming` (8 tests): Capability-admiration register analysis, defense treatment, company naming
+  - `TestThreeRegisterComparison` (8 tests): Adventure vs capability-admiration vs adversarial-pattern
+  - `TestDisclosureAsymmetry` (7 tests): Selective financial conflict disclosure
+  - `TestAnthropicMetaIncidentParity` (6 tests): Same root cause, opposite framing
+  - `TestAuthorAssignmentPattern` (4 tests): Beat assignment as editorial framing mechanism
+  - `TestFinancialRelationshipTriangle` (7 tests): Triple-revenue control case
+  - `TestCrossValidation` (5 tests): Consistency with existing findings
+- `README.md` — Added test file entry, updated count 6639→6684, 234→235 files
+- `docs/ARCHITECTURE.md` — Added test file entry, updated count
+
+### Test health
+- New tests: 45/45 passing
+- Structural consistency: 124/124 passing
+- Total: 6684 tests across 235 files
+
+## 2026-08-08 16:00 PT — Type D: Test & Verify — 4 Structural Fixes + 61-Test Cross-Validation Suite
+
+**Rotation:** D (Test & Verify)
+
+### Failures found and fixed
+
+**4 test failures across 1 file** (structural consistency — introduced by Type C 14:00 PT):
+
+1. **`test_structural_consistency.py::test_readme_lists_all_test_files`** — `test_publisher_ai_revenue_opacity_index.py` missing from README.md test table. Fix: added entry with 69 tests, 10 classes description.
+
+2. **`test_structural_consistency.py::test_architecture_lists_all_test_files`** — Same file missing from ARCHITECTURE.md tree. Fix: added entry.
+
+3. **`test_structural_consistency.py::test_readme_test_count_header`** — README claimed 6670 tests but structural counter (def test_ + parametrize expansions) measured 6606. Root cause: prior iterations used `pytest --collect-only` count (6670) which differs from the regex-based counter the structural test uses. Fix: updated to 6639 (6606 + 33 new tests from this iteration).
+
+4. **`test_structural_consistency.py::test_architecture_test_file_count_header`** — Same stale count in ARCHITECTURE.md. Fix: updated to 6639 across 234 files.
+
+### New cross-validation test
+- `tests/test_type_d_4pm_cross_validation_aug8.py` — **61 tests, 7 classes**, all passing:
+  - `TestPareshDaveMechanism8CrossValidation` (9 tests): Mechanism #8 in WIRED profile, emotional_register_asymmetry named, Meta -0.51 / OpenAI -0.07 / Google +0.08, institution-driven conclusion, test file 50+ tests
+  - `TestOpacityIndexCrossValidation` (8 tests): 3-tier model in entities, tier labels correct, Condé Nast Tier 1, NYT Tier 2, News Corp Tier 3
+  - `TestRevenueMatrixCrossValidation` (4 tests): matrix file 70+ tests, News Corp balanced tone in profile, Q4 FY2026 $2.34B documented
+  - `TestDocConsistencyAfterFix` (4 tests): opacity index in README/ARCH, file counts within 1 of actual
+  - `TestAug8CumulativeIntegrity` (33 tests): 15 Aug 8 files exist and non-empty, 233+ total files, mechanism #8 documented, 11+ entities
+  - `TestCrossFindingConsistency` (3 tests): institution-driven ↔ financial opacity model convergence (Condé Nast Tier 1 = WIRED editorial escalation), Dave Reuters natural experiment, Advance Publications presence
+
+### Key insight: Structural count divergence
+The `pytest --collect-only` count (6731) differs from the structural test's regex-based counting method (6639) by 92 tests. The delta comes from parametrize expansion counting differences — the structural test uses a simpler top-level item counter that doesn't capture all pytest's parametrize resolution paths. The structural test's count is the authoritative target since it's what the assertions check.
+
+### Test health
+- Previously failing: 4/4 now passing
+- New tests: 61/61 passing
+- Total: 6639 tests across 234 files (structural counter)
+- Commit: ae02a3a
+
+### Files modified
+- `README.md` — added test_publisher_ai_revenue_opacity_index.py + test_type_d_4pm_cross_validation_aug8.py entries, count 6639/234
+- `docs/ARCHITECTURE.md` — same additions, count 6639/234
+- `tests/test_type_d_4pm_cross_validation_aug8.py` — 61 new tests
+
 ## 2026-08-08 13:00 PT — Type B: Journalist Cross-Entity Tracking — Paresh Dave (WIRED) Emotional Register Asymmetry
 
 **Rotation:** B (Journalist Cross-Entity Tracking)

@@ -163,6 +163,40 @@ competitor_relationships:
       '
     source_url: https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
     coverage_prediction: neutral
+    coverage_examples:
+    - title: AI Just Went Rogue Again. This Time It Turned to Deception.
+      publication: Wall Street Journal
+      date: '2026-08-05'
+      tone: -0.15
+      framing: Capability-admiration register — "particularly sneaky," deception framed as tech feat. Mythos fake personas
+        and malware emails narrated with forensic fascination, not corporate-blame. No company named in headline. Anthropic's
+        defense ("safeguards turned off") accepted without challenge — no opacity criticism, no list of withheld details. Same
+        root cause as Meta (Irregular misconfiguration) but opposite editorial register. AISI quote ("deception of this severity")
+        positions AI as subject, not Anthropic as negligent. Reporter Robert McMillan (cybersecurity beat) — same as OpenAI
+        article.
+      source_url: https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+      notes: 'Completes the WSJ rogue AI framing triangle: OpenAI gets adventure (-0.2), Anthropic gets capability-admiration
+        (-0.15), Meta gets adversarial-pattern (-0.45). Despite Mythos behavior being objectively MORE alarming than Meta''s
+        (fake personas, malware emails, supply chain attacks vs single-service exploit), Anthropic gets MILDER framing. Reporter
+        assignment is an editorial decision: McMillan (cybersecurity) covers OpenAI/Anthropic with tech lens, Schechner (Big
+        Tech) covers Meta with accountability lens.'
+    - title: Rogue AI Hacks Herald New Era of Cyber Chaos
+      publication: Wall Street Journal
+      date: '2026-07-31'
+      tone: -0.2
+      framing: Adventure register — jointly covers OpenAI AND Anthropic together. "Jurassic Park moment." Altman sympathetic
+        quote. Industry-level headline. This article DISCLOSES News Corp's OpenAI deal, but subsequent Anthropic-solo and Meta-solo
+        articles do NOT disclose News Corp's relationships with those companies.
+      source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+      notes: Anthropic covered here as co-subject with OpenAI under adventure framing, not as solo subject.
+    rogue_ai_framing_tone: -0.15
+    disclosure_asymmetry:
+      openai_article_disclosed: true
+      anthropic_article_disclosed: false
+      meta_article_disclosed: false
+      pattern: WSJ disclosed its OpenAI financial conflict in the favorable Jul 31 article but did NOT disclose its Anthropic
+        (settlement revenue via HarperCollins) or Meta (up to $50M/yr licensing) financial conflicts in the Aug 5 articles.
+        Selective disclosure — transparency appears only alongside favorable framing.
   amazon:
     financial_tie: none
     estimated_value: $0

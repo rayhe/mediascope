@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 6639 tests across 234 test files (all from real articles)
+├── tests/                       # 6684 tests across 235 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -548,6 +548,7 @@ mediascope/
 │   ├── test_paresh_dave_cross_entity.py # Dave (WIRED) cross-entity: EMOTIONAL REGISTER ASYMMETRY (Mechanism #8) — Meta coverage uses "gulag"/"piece of shit" in headlines (tone -0.51), OpenAI uses "quietly scrapped" (tone -0.07), Google gets "paid off" (tone +0.08). Source pipeline + headline escalation institution-driven, not reporter-driven.
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment
 │   ├── test_wired_amazon_surveillance_parity_paradox_aug8.py # WIRED × Amazon Surveillance Parity Paradox: Meta dormant NameTag code (never activated) gets multi-part investigation while Amazon's FTC Ring/Alexa settlements, active Familiar Faces lawsuit, and Bee wearable get editorial silence — despite two Condé Nast-Amazon licensing deals. 8 classes, 38 tests
+│   ├── test_wsj_anthropic_deception_framing_triangle_aug8.py # WSJ Rogue AI Deception Triangle: Three articles, three companies (OpenAI/Anthropic/Meta), three registers (adventure/capability-admiration/adversarial). Only Meta named in headline. Disclosure asymmetry: OpenAI deal disclosed in favorable article, Anthropic/Meta deals omitted in adverse. Beat assignment predetermines frame. 7 classes, 45 tests
 │   ├── test_wsj_rogue_ai_severity_framing_inversion_aug8.py # WSJ Rogue AI Severity-Framing Inversion: Equal ~$50M/yr deals with OpenAI and Meta, inverted framing — OpenAI MORE severe gets "Jurassic Park" adventure, Meta LESS severe gets "drumbeat" adversarial. Barron's counterpoint, cross-publication triangulation. 7 classes, 45 tests
 │   ├── test_wired_apple_openai_silence_aug7.py # WIRED 28-day silence on Apple v. OpenAI trade secret lawsuit, cross-pub comparison, financial amplification evidence
 │   ├── test_nyt_cade_metz_cross_entity.py # Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing vs Meta adversarial beat reporter assignment
