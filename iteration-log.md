@@ -51,7 +51,7 @@ Mac wrote about Meta's facial recognition glasses plans at BuzzFeed (Feb 2021, B
 - New tests: 47/47 passing
 - Structural consistency: 124/124 passing (per-file count, header count, file listing all verified)
 
-**Commit:** (pending)
+**Commit:** 5c66d69
 
 ## 2026-08-09 10:00 PT — Type A: Competitor Coverage Deep Dive — NYT × Rogue AI Natural Experiment
 
@@ -31484,3 +31484,22 @@ Co-author complement to Sheera Frenkel's Mechanism #9 (book deal financial captu
 - Total: 7,425 tests across 252 files
 
 **Commit:** fccd6e0 — pushed to GitHub
+
+## 2026-08-09 12:00 PT — Type C: Financial Incentive Mapping — Reddit AI Data Licensing Circular Editorial Incentive Loop
+
+**Focus:** Reddit AI data licensing creates a circular editorial incentive for WIRED/Advance. WIRED amplifies "AI must license content" → strengthens Reddit's negotiating position → higher Reddit AI revenue → higher RDDT stock → higher Advance equity value.
+
+**Key data points:**
+- RDDT recovered from $140.67 (Jul 31 crash) to $161.70 (Aug 7), +15%. Advance stake: ~$6.82B
+- Margin loan 7.8M shares back above $145-149 offering floor
+- Wells Fargo projects Reddit AI licensing to reach $550M/yr at renewal (from ~$130M/yr current)
+- At 23.3% economic stake, $420M/yr AI licensing growth = ~$1.1B equity value increase for Advance
+- Advance controls BOTH plaintiffs suing Perplexity (Reddit + Condé Nast) — editorial/litigation coordination
+- SRMG Q2 2026: Revenue SAR 653.2M (+15.8% YoY), net profit SAR 71.2M (+77.7%), retained earnings turned positive
+
+**Files changed:**
+- `profiles/wired.yaml` — Added stock_recovery_aug_2026, reddit_ai_data_licensing_editorial_loop (finding, mechanism, meta_asymmetry, quantified_conflict, perplexity_dimension, srmg_q2_2026_update)
+- `profiles/competitor-entities.yaml` — Added reddit_stock_recovery_aug_2026, srmg_q2_2026_results
+- `tests/test_reddit_ai_editorial_loop_advance_aug9.py` — 35 tests (7 classes)
+
+**Stats:** 7555 tests across 255 files (+35 tests, +1 file)

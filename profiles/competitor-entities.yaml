@@ -1900,6 +1900,47 @@ entities:
         '
       source_urls:
       - https://digiday.com/marketing/reddit-questions-if-ai-data-deals-could-hurt-its-ad-business/
+    reddit_stock_recovery_aug_2026:
+      date: 2026-08-07
+      detail: 'RDDT recovered from Jul 31 crash low of $140.67 to $161.70 (+15%) by Aug 7 close.
+
+        Market cap ~$31.1B (partially recovered from $18.3B crash, still below ~$36.8B pre-crash).
+
+        Advance stake: 42.2M shares × $161.70 = ~$6.82B. Margin loan 7.8M shares now $1.26B,
+
+        back above $145-149 offering floor. YTD: -33.2%. 52-week range $119.27-$282.95.
+
+        '
+    srmg_q2_2026_results:
+      date: 2026-08 (Saudi Exchange filing)
+      detail: 'SRMG (PMC''s indirect Saudi investor, PIF → SNB → NCB Capital → Al Ahli →
+
+        SRMG → PMC → The Verge) reported Q2 2026: Revenue SAR 653.2M (+15.8% YoY vs
+
+        SAR 563.9M). Net profit SAR 71.2M (+77.7% YoY vs SAR 40M). EPS SAR 0.38
+
+        (vs SAR 0.21 YoY). Sequential recovery: Q4 2025 loss SAR 357M → Q1 2026 profit
+
+        SAR 33M → Q2 2026 profit SAR 71.2M. Retained earnings turned positive (SAR 2.5M)
+
+        after accumulated losses of SAR 68.7M in Q1. Still below FY2023 peak but trajectory
+
+        reversed. Shareholders equity SAR 2,402.7M (+12.2% YoY).
+
+        '
+      mediascope_relevance: 'SRMG''s financial stabilization reduces immediate pressure to
+
+        liquidate its $200M+ PMC equity position. The PIF → SRMG → PMC → The Verge
+
+        ownership chain remains intact. SRMG''s SRMG Ventures AI investment mandate
+
+        continues, maintaining the sovereign-linked AI ecosystem interest that conflicts
+
+        with The Verge''s editorial independence on AI coverage.
+
+        '
+      source_urls:
+      - https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements/
       mediascope_relevance: 'If Reddit''s AI deals ultimately cannibalize its ad business, this
 
         would pressure Advance''s $5.9B Reddit stake. This creates a scenario

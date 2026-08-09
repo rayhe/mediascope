@@ -552,6 +552,82 @@ advance_investments:
       could have flowed through Meta's commerce platforms. Advance's $8B+ Reddit stake benefits
       directly from Reddit's commerce growth, while Wired covers Meta's commerce competitors without
       disclosing this interest.
+    stock_recovery_aug_2026: >
+      REDDIT STOCK RECOVERY (Aug 1-7, 2026): After the catastrophic Jul 31 crash to $140.67 (-21%),
+      RDDT recovered to $161.70 by Aug 7 close (+15% from crash low). Market cap recovered to ~$31.1B
+      from $18.3B crash low. ADVANCE STAKE: 42.2M shares × $161.70 = ~$6.82B (recovered from ~$5.94B
+      crash, still below ~$8.07B mid-Jul peak). Margin loan 7.8M shares now $1.26B — back above
+      $145-149 offering floor, out of immediate margin call danger zone. BUT: YTD still -33.2%.
+      52-week range $119.27-$282.95 — stock is closer to 52-week low than high.
+      ADVANCE TOTAL PUBLIC EQUITY (estimated Aug 7, 2026):
+        - Reddit: ~$6.82B (42.2M × $161.70)
+        - Charter: TBD (Cox close mid-late Aug)
+        - WBD: TBD (Paramount merger deep freeze)
+        - Total: likely ~$12-13B (partially recovered from $11.51B Jul 31 trough)
+    reddit_ai_data_licensing_editorial_loop:
+      finding: >
+        CIRCULAR INCENTIVE: WIRED editorial coverage shapes the AI content licensing
+        narrative that directly increases the value of Advance's Reddit equity stake.
+      mechanism: >
+        1. Reddit sells user-generated content to Google ($60M/yr) and OpenAI (~$70M/yr)
+           for AI model training. Total AI licensing contracts ~$203M (disclosed 2024).
+        2. Wells Fargo projects combined Google + OpenAI renewals could reach $550M/yr —
+           quadrupling current levels. This makes AI licensing Reddit's fastest-growing
+           revenue segment and a major bull case for the stock (Barron's, Aug 1).
+        3. Advance Publications (WIRED's parent chain) owns 23.3% of Reddit equity
+           (~$6.82B at $161.70/share) with 65.2% voting control.
+        4. WIRED's editorial coverage of AI content licensing — framing unlicensed AI training
+           as theft, amplifying publisher coalition demands, covering AI copyright lawsuits
+           sympathetically — reinforces the industry norm that AI companies MUST license content.
+        5. This norm directly strengthens Reddit's negotiating position: the stronger the
+           "you must pay for content" consensus, the higher the renewal price Reddit can demand.
+        6. Every dollar Reddit's AI licensing grows is ~$0.23 more for Advance's equity value
+           (at its 23.3% economic stake).
+        7. Therefore: WIRED's pro-licensing editorial posture serves Advance's Reddit equity
+           interest — without any disclosure.
+      meta_asymmetry: >
+        Meta has NO Reddit data licensing deal and NO Condé Nast content licensing deal.
+        Meta is building AI models on publicly available data (Common Crawl, etc.) plus
+        its own user-generated content (Facebook, Instagram posts). The "AI companies must
+        license content" narrative that WIRED amplifies specifically hurts Meta's position
+        while benefiting Reddit's. When WIRED frames Meta's AI training as exploitative
+        and OpenAI's as legitimized-by-licensing, it's creating market conditions that
+        increase the value of its own parent's biggest equity holding.
+      quantified_conflict: >
+        If Reddit's AI licensing grows from ~$130M/yr to $550M/yr (Wells Fargo projection),
+        the additional $420M/yr at Reddit's current ~11x P/S multiple adds ~$4.6B to Reddit's
+        market cap. Advance's 23.3% stake would increase by ~$1.1B in equity value — solely
+        from AI data licensing growth. For context, the entire Condé Nast-OpenAI content
+        licensing deal is estimated at $20-50M/yr. The Reddit AI licensing pathway could be
+        20-50x more valuable to Advance than Condé Nast's own OpenAI deal.
+        When Reddit stock fell 9% on Jul 22 (WSJ report about Google deal non-renewal),
+        Advance's stake lost ~$600M in a single day — more than the estimated total value
+        of Condé Nast's OpenAI licensing deal. This reveals that Advance's financial exposure
+        to AI licensing narratives through Reddit dwarfs its direct Condé Nast licensing income.
+      perplexity_dimension: >
+        Reddit is SUING Perplexity AI for DMCA violations (Jul 2026, SDNY). Judge Engelmayer
+        rejected Perplexity's MTD motion Jul 31. Reddit seeks $150M in damages. Simultaneously,
+        Condé Nast ALSO sued Perplexity for copyright infringement (Oct 2024). Advance controls
+        BOTH plaintiffs in the same AI copyright fight: one through equity (Reddit, 65.2% voting),
+        one through full ownership (Condé Nast/WIRED). WIRED covers AI copyright as editorial
+        independent journalism; Advance litigates it as coordinated corporate strategy.
+      srmg_q2_2026_update: >
+        SRMG (PMC/The Verge's indirect Saudi investor) reported partial Q2 2026 results:
+        Revenue SAR 653.2M (+15.8% YoY), net profit SAR 71.2M (+77.7% YoY), EPS SAR 0.38
+        (vs SAR 0.21 YoY). Sequential improvement from Q4 2025 loss of SAR 357M → Q1 2026
+        profit SAR 33M → Q2 2026 profit SAR 71.2M. Retained earnings turned positive
+        (SAR 2.5M) after accumulated losses of SAR 68.7M in Q1. Revenue still well below
+        FY2023 peak (SAR 3.75B annual), but the trajectory has reversed.
+        IMPLICATION FOR PMC: SRMG's financial stabilization reduces the immediate pressure
+        to liquidate its $200M+ PMC equity position, maintaining the PIF → SRMG → PMC →
+        The Verge ownership chain. SRMG's AI investment mandate through SRMG Ventures
+        remains active despite parent company financial stress.
+      source_urls:
+        - "https://www.techtimes.com/articles/322357/20260730/reddit-revenue-soars-past-estimates-flags-google-search-traffic-choppy.htm"
+        - "https://www.webpronews.com/reddits-earnings-beat-masks-ai-traffic-squeeze-from-google-summaries/"
+        - "https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8"
+        - "https://stocktwits.com/news-articles/markets/equity/this-analyst-believes-reddit-not-renewing-google-ai-content-deal-would-be-a-step-backward/cZZm8iGR7Dl"
+        - "https://www.reuters.com/legal/litigation/perplexity-ai-loses-bid-toss-reddit-lawsuit-over-data-scraping-2026-07-31/"
     source_urls_financials:
       - "https://www.marketbeat.com/stocks/NYSE/RDDT/earnings/"
       - "https://stocktitan.net/stocks/RDDT/"
