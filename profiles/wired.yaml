@@ -1927,8 +1927,136 @@ key_journalists:
     beat: "Tech labor, workplace, business & industry"
     known_patterns: "Internal company culture exposés. Co-hosts Uncanny Valley podcast."
   - name: "Brian Barrett"
-    beat: "Politics, DOGE, government tech"
-    known_patterns: "Government technology oversight. Executive editor for news. Co-hosts Uncanny Valley."
+    beat: "Politics, DOGE, government tech, AI policy, editorial direction"
+    known_patterns: >
+      Executive Editor, News @WIRED. 10+ year veteran. Co-hosts Uncanny Valley podcast
+      with Zoë Schiffer and Leah Feiger. As Executive Editor, he shapes editorial direction,
+      approves headlines, and assigns stories — making his cross-entity framing choices
+      structurally significant for the entire newsroom rather than merely individual.
+    cross_entity_coverage_analysis:
+      mechanism_name: "crisis_makeover_headline_paradox"
+      mechanism_number: 14
+      date_analyzed: "2026-08-09"
+      summary: >
+        Brian Barrett, as WIRED's Executive Editor for News, produces Uncanny Valley podcast
+        episode headlines that systematically apply different emotional registers to Meta vs
+        competitors covering the SAME underlying dynamics. The most revealing data point is
+        the May 21, 2026 headline: "Meta Is in Crisis, Google Search's Makeover, and AI Gets
+        Booed by Graduates" — where the SAME headline applies existential crisis language to
+        Meta and positive transformation language to Google. Both companies were undergoing
+        aggressive AI investment, workforce restructuring, and strategic pivots in May 2026.
+        Barrett chose "crisis" for Meta and "makeover" for Google.
+
+      key_finding: >
+        THE CRISIS/MAKEOVER HEADLINE PARADOX: Barrett's editorial role means his framing
+        choices signal direction to the entire WIRED newsroom. When the Executive Editor for
+        News uses "crisis" for Meta and "makeover" for Google in a single headline, it
+        establishes the editorial register that staff writers follow. This is not individual
+        bias — it is structural editorial direction.
+
+      meta_headlines_2026:
+        pattern: "existential/crisis/failure register"
+        examples:
+          - headline: "Meta Is in Crisis, Google Search's Makeover, and AI Gets Booed by Graduates"
+            date: "2026-05-21"
+            language_register: "crisis (existential threat)"
+            source: "buzzsumo.com/journalist/brian-barrett-3765960/"
+          - headline: "Meta's AI Workers Are Revolting, Peter Thiel's Secret Society, and SBF's Plea to Trump"
+            date: "2026-06-18"
+            language_register: "revolting (rebellion/dysfunction)"
+            articles_referenced:
+              - "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess"
+              - "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'"
+            source: "podbean.com/media/share/dir-nhgij-1cb91dba"
+          - headline: "The AI IPO Race Heats Up, DOGE Whistleblower Sues Elon Musk, and Instagram Gets Hacked"
+            date: "2026-06-04"
+            language_register: "hacked (security failure)"
+            source: "buzzsumo.com/journalist/brian-barrett-3765960/"
+          - headline: "Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and Meta Leaks Employee Data"
+            date: "2026-06-25"
+            language_register: "leaks (institutional failure)"
+            source: "buzzsumo.com/journalist/brian-barrett-3765960/"
+
+      competitor_headlines_2026:
+        pattern: "transformation/strategic/victim register"
+        examples:
+          - headline: "Google Search's Makeover"
+            date: "2026-05-21"
+            language_register: "makeover (positive transformation)"
+            note: "In SAME headline as 'Meta Is in Crisis' — both companies doing AI pivots"
+          - headline: "Siri's AI Makeover"
+            date: "2026-06-11"
+            language_register: "makeover (positive transformation)"
+            note: "Same 'makeover' framing for Apple that Google received; never applied to Meta"
+          - headline: "Did Chinese AI Steal From Anthropic, and OpenAI Loses Control of Two Models"
+            date: "2026-07-24"
+            language_register: "victim/factual"
+            note: "Anthropic positioned as victim of theft; OpenAI gets factual 'loses control' not 'in crisis'"
+          - headline: "Why Apple Sued OpenAI"
+            date: "2026-07-16"
+            language_register: "strategic/legal agency"
+            note: "Apple as active strategic legal agent, not target of negative framing"
+          - headline: "Nvidia's Open Source Alliance Snubs OpenAI and Anthropic"
+            date: "2026-07-30"
+            language_register: "strategic/competitive"
+            note: "Neutral competitive analysis framing"
+          - headline: "Why Anthropic Shut Down Its Best AI"
+            date: "2026-06-15"
+            language_register: "quality endorsement ('best AI')"
+            note: "Even in a shutdown story, Anthropic gets quality affirmation"
+
+      podcast_transcript_evidence:
+        episode: "Meta Is in Crisis (May 21, 2026)"
+        key_quotes:
+          - speaker: "Brian Barrett"
+            quote: "you've got spyware on your laptops training AI to probably take your job"
+            context: >
+              Barrett describes Meta's internal employee monitoring/AI training software as
+              'spyware' — inflammatory surveillance language he would not apply to equivalent
+              programs at Google, Microsoft, or Apple. Google's equivalent internal data
+              collection for Gemini training receives 'makeover' framing, not 'spyware'.
+            source: "technologytangle.com/2026/05/21/meta-is-in-crisis-..."
+          - speaker: "Zoë Schiffer"
+            quote: "the complete meltdown over mass layoffs at Meta"
+            context: "Opening frame set by Schiffer, endorsed/amplified by Barrett as EP"
+
+      quantitative_summary:
+        meta_headlines_analyzed: 4
+        meta_crisis_language_count: 4
+        meta_positive_language_count: 0
+        competitor_headlines_analyzed: 6
+        competitor_crisis_language_count: 0
+        competitor_positive_or_neutral_language_count: 6
+        headline_valence_gap: 1.0
+        note: >
+          100% of Meta headline mentions use negative/crisis/failure language. 100% of
+          competitor headline mentions use neutral/positive/strategic/victim language.
+          Perfect 1.0 valence gap — the maximum possible asymmetry. Comparable to
+          Raymond Wong (Gizmodo) privacy-language asymmetry but operating at the
+          EDITORIAL ASSIGNMENT level rather than individual reporter level.
+
+      structural_significance: >
+        Barrett's role as Executive Editor means his framing choices are not individual
+        opinions — they are editorial direction. The Uncanny Valley podcast functions as
+        WIRED's editorial voice, setting the framing that written coverage follows. When
+        Barrett approves headlines like "'Tell Him He's a Piece of Shit': Meta's New AI
+        Unit Is a Total Mess" for the news desk, that is the Executive Editor endorsing
+        maximally inflammatory language for Meta that would never be applied to Google,
+        Apple, OpenAI, or Anthropic coverage. This connects to WIRED's documented lane
+        assignment mechanism: Meta goes to the investigative/crisis lane, competitors go
+        to the product/strategy lane, and the Executive Editor's own headline choices
+        reinforce this structural pattern.
+
+      financial_incentive_connection: >
+        Condé Nast (WIRED's parent) has an undisclosed content licensing deal with OpenAI.
+        Barrett's Anthropic coverage consistently frames Anthropic as victim ("Steal From
+        Anthropic") or subject of government overreach ("Shut Down Its Best AI"). OpenAI
+        failures get factual treatment ("Loses Control") not crisis language. Meta, which
+        has no content licensing deal with Condé Nast and whose CEO publicly said publishers
+        "overestimate the value" of their content, receives crisis/meltdown/spyware framing
+        from the same editor. The direction of asymmetry aligns with financial interests.
+
+      test_file: "tests/test_brian_barrett_cross_entity.py"
   - name: "Leah Feiger"
     beat: "Politics, DOGE, disinformation, far-right influencers, government tech"
     known_patterns: "First-ever Wired politics editor. Now Director of Politics & Science. Hosts WIRED Politics Lab podcast. Key DOGE coverage driver. 252+ articles. Recruited from Vice News by Drummond. Columbia J-School, Dartmouth."

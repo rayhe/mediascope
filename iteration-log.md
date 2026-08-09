@@ -1,4 +1,68 @@
 # MediaScope Iteration Log
+## 2026-08-09 16:00 PT — Type B: Journalist Cross-Entity Tracking — Brian Barrett (WIRED Executive Editor, News)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+### Journalist: Brian Barrett | Publication: WIRED | Role: Executive Editor, News
+
+Brian Barrett is WIRED's Executive Editor for News and co-hosts the Uncanny Valley podcast with Zoë Schiffer and Leah Feiger. His editorial role means he shapes story assignments, approves headlines, and sets framing direction for the entire WIRED news desk — making his cross-entity framing choices structurally significant rather than merely individual.
+
+### Key Finding: The Crisis/Makeover Headline Paradox (Mechanism #14)
+
+Barrett's Uncanny Valley episode headlines apply systematically different emotional registers to Meta vs competitors, even when covering the SAME underlying dynamics (AI investment, workforce restructuring, strategic pivots).
+
+**The cleanest data point:** May 21, 2026 headline — "Meta Is in Crisis, Google Search's Makeover, and AI Gets Booed by Graduates." In ONE headline, the same editor applies:
+- **"Crisis"** to Meta (existential threat register)
+- **"Makeover"** to Google (positive transformation register)
+
+Both companies were going through aggressive AI investment and workforce restructuring in May 2026.
+
+**Meta headlines (2026):**
+| Date | Headline excerpt | Register |
+|------|-----------------|----------|
+| May 21 | "Meta Is in Crisis" | crisis/existential |
+| Jun 18 | "Meta's AI Workers Are Revolting" | rebellion/dysfunction |
+| Jun 4 | "Instagram Gets Hacked" | security failure |
+| Jun 25 | "Meta Leaks Employee Data" | institutional failure |
+
+**Competitor headlines (2026):**
+| Date | Headline excerpt | Entity | Register |
+|------|-----------------|--------|----------|
+| May 21 | "Google Search's Makeover" | Google | positive transformation |
+| Jun 11 | "Siri's AI Makeover" | Apple | positive transformation |
+| Jul 16 | "Why Apple Sued OpenAI" | Apple | strategic legal agency |
+| Jul 24 | "Did Chinese AI Steal From Anthropic" | Anthropic | victim |
+| Jul 24 | "OpenAI Loses Control of Two Models" | OpenAI | factual/technical |
+| Jun 15 | "Why Anthropic Shut Down Its Best AI" | Anthropic | quality endorsement |
+
+**Quantitative result:** 4/4 Meta headlines use crisis/failure language (100%). 6/6 competitor headlines use neutral/positive/victim language (100%). Headline valence gap: 1.0 (maximum possible asymmetry).
+
+### Podcast Transcript Evidence
+
+In the May 21 episode, Barrett describes Meta's internal employee monitoring/AI training software as "spyware on your laptops training AI to probably take your job" — inflammatory surveillance language he would not apply to equivalent programs at Google, Microsoft, or Apple.
+
+The episode references two WIRED articles that Barrett, as Executive Editor, either commissioned or approved:
+- "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess"
+- "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'"
+
+### Financial Incentive Connection
+
+The asymmetry direction aligns with Condé Nast's financial interests:
+- Anthropic/OpenAI (content licensing deal partners) → victim/factual framing
+- Meta (CEO publicly said publishers "overestimate the value" of content, no licensing deal) → crisis/meltdown/spyware framing
+
+### Files modified
+- `profiles/wired.yaml` — Brian Barrett key_journalists entry expanded with full cross_entity_coverage_analysis (Mechanism #14), 4 Meta headlines, 6 competitor headlines, podcast transcript quotes, quantitative summary, financial incentive connection
+- `tests/test_brian_barrett_cross_entity.py` — 36 tests across 8 classes (role, Meta headlines, competitor headlines, Crisis/Makeover Paradox, quantitative summary, podcast evidence, financial incentive connection)
+- `README.md` — Test count 7659→7695, file count 258→259, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7659→7695, file count 258→259, new tree entry
+
+### Test health
+- New tests: 36/36 passing
+- Structural consistency: 124/124 passing
+
+**Commit:** (pending)
+
 ## 2026-08-09 15:00 PT — Type A: Competitor Coverage Deep Dive — Gizmodo × Google I/O 2026 Camera Acknowledgment Paradox
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -40,7 +104,7 @@ Both WIRED (with financial ties to Google) and Gizmodo (with none) produce zero-
 - New tests: 35/35 passing
 - Structural consistency: 124/124 passing
 
-**Commit:** pending
+**Commit:** a23a7b9
 
 ## 2026-08-09 14:00 PT — Type D: Test & Verify — Cross-Validation of Aug 9 Sprint (Ryan Mac ↔ Rogue AI, eMarketer ↔ Cross-Pressure, Dual Mechanism, Lane Assignment Coherence)
 
