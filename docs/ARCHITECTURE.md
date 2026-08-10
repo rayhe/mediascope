@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 8119 tests across 269 test files (all from real articles)
+├── tests/                       # 8161 tests across 270 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -725,6 +725,7 @@ mediascope/
 │   ├── test_guardian_google_sid_governance_capture_aug10.py  # Type A: Guardian × Google — Mechanism #17 (SID Governance Capture Privacy Scrutiny Inversion). Brittin (Google EMEA 18yrs) → Guardian SID → BBC DG. Compound dependency: advertising + AI pilot + revolving door vs Meta $0. Android XR glasses feature parity with Ray-Ban, no equivalent scrutiny. 8 classes, 46 tests
 │   ├── test_alex_reisner_cross_entity.py         # Type B: Alex Reisner (The Atlantic) cross-entity — Mechanism #16 (Training Data Investigative Target Gradient). Atlantic AI Watchdog investigates pirated training data, but employer has OpenAI content deal (May 2024). Books3 and LibGen coverage: Meta foregrounded in every headline/subhead, OpenAI absent or backgrounded with denial accepted at face value. ~90% narrative allocation to Meta despite both companies using same pirated libraries. Music investigation company-neutral (Suno target) = control case. Watchdog Paradox: investigates piracy at publication that licenses content to a pirate. 8 classes, 49 tests
 │   ├── test_kate_knibbs_cross_entity.py           # Type B: Kate Knibbs (WIRED) cross-entity — Mechanism #20 (Dual Watchdog Paradox). Industry's definitive AI copyright record-keeper (tracker cited in federal court NDCA, CA Assembly AB 412, academic papers) works for Condé Nast which SELLS training data to OpenAI/Amazon/Microsoft/Apple. $0 Meta, $0 Google. Meta headline prominence in shared lawsuits (Books3), dismissive product reviews, accusatory data coverage. OpenAI secondary in shared cases. Two-layer paradox: Condé Nast → OpenAI + Advance → Reddit (65.2% voting) → OpenAI/Alphabet. Record-keeper role = outsized discourse influence. 8 classes, 29 tests
+│   ├── test_ipo_underwriter_research_laundering_aug10.py  # Type C: IPO Underwriter Research Laundering Pipeline — Mechanism #21. GS+MS lead BOTH Anthropic+OpenAI IPOs (unprecedented), research divisions produce AI reports cited as independent analysis. Bank stocks fell 4-5% on OpenAI delay news. Meta zero IPO fees. Reddit Q2 data licensing verified. Anthropic secondary $1.2T. 8 classes, 42 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
