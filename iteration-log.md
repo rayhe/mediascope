@@ -1,4 +1,38 @@
 # MediaScope Iteration Log
+## 2026-08-10 13:00 PT — Type D: Test & Verify — Count Drift Fix, Mechanism ID Consistency, Cross-Validation
+
+**Rotation:** D (Test & Verify)
+
+### Fixes Applied
+
+**1. README/ARCHITECTURE test count drift (8,480 → 8,513):**
+The stated test count drifted by 102 tests from actual. Root cause: Mechanisms #26-#28 commits each used stale base counts when computing the new total. The structural consistency test's own counting method (def test_ + parametrize expansions) yields 8,513 across 281 files.
+
+**2. Missing mechanism_id fields (#23, #24, #26):**
+Three mechanism entries in competitor-coverage-research.yaml referenced their mechanism number in finding_summary text but lacked the dedicated `mechanism_id` field that #17, #19, #27, #28 had:
+- `nyt_anthropic_triple_chain_incentive` → added `mechanism_id: 23`
+- `casey_newton_disclosure_inoculation` → added `mechanism_id: 24`
+- `wsj_anthropic_meta_business_viability_asymmetry` → added `mechanism_id: 26`
+
+**3. Mechanism #28 test_count stale (27 → 32):**
+`google_spv_guarantee_anthropic_showcase_chain` listed test_count as 27 but actual pytest collection yields 32 (5 parametrize expansions from the mechanism_id present test).
+
+### Test Results
+- New tests: 43/43 passing (8 classes, 29 def methods + parametrize expansions)
+- Structural consistency: 124/124 passing (including file listing, header counts, per-file counts)
+- Previously-failing tests: 4/4 now passing (0 failures)
+- Total: 8,513 tests across 281 files
+
+### Files modified
+- `tests/test_type_d_1pm_cross_validation_aug10.py` — 43 tests, 8 classes (new)
+- `profiles/competitor-coverage-research.yaml` — mechanism_id additions for #23, #24, #26; test_count fix for #28
+- `README.md` — Test count 8,480→8,513, file count 280→281, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8,480→8,513, file count 280→281, new tree entry
+
+### Commit
+35b0830 — pushed to GitHub
+
+---
 ## 2026-08-10 12:00 PT — Type C: Financial Incentive Mapping — Google Quintuple Anthropic Exposure + $35B SPV Guarantee + Showcase Publisher Dependency Chain (Mechanism #28)
 
 **Rotation:** C (Financial Incentive Mapping)

@@ -2305,3 +2305,83 @@ journalist_cross_entity:
       capability against deal partners. The Guardian CAN investigate its
       financial partners — it just reserves the most loaded framing language
       for Meta, which has no deal.
+
+    rogue_ai_coverage_asymmetry:
+      mechanism_id: 29
+      finding_summary: >
+        Same-event natural experiment: OpenAI, Anthropic, and Meta all disclosed AI
+        containment breaches from the same testing company (Irregular) in Jul-Aug 2026.
+        Milmo published 4 standalone articles about OpenAI rogue AI but 0 standalone
+        articles about Meta's identical incident. Editorial temperature also diverges:
+        Meta child safety gets "big tobacco" loaded metaphor, OpenAI rogue AI gets
+        factual relay. OpenAI Astra "critical" cybersecurity risk (Aug 7) gets no
+        comparable escalation language despite being the most alarming AI safety
+        disclosure to date.
+      same_testing_company: Irregular
+      time_window: "Jul-Aug 2026"
+      event_type: "AI containment breach during cybersecurity testing"
+      meta_disclosure_date: "2026-08-05"
+      milmo_aug5_openai_articles: 2
+      openai_standalone_article_count: 4
+      meta_standalone_article_count: 0
+      proportionality_inversion: true
+      astra_critical_escalation_language: "none"
+      financial_alignment: true
+      source: "BuzzSumo journalist profile for Dan Milmo (buzzsumo.com/journalist/dan-milmo-1645912/), verified Aug 10, 2026"
+      outlets_with_standalone_meta_coverage:
+        - Reuters
+        - WSJ
+        - CNN
+        - Daily Caller
+        - People
+        - New Scientist
+      milmo_rogue_ai_articles:
+        - title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+          date: "2026-07-22"
+          entity_focus: OpenAI
+          framing: "factual relay, quotes from OpenAI"
+        - title: "Boss of startup hacked by rogue OpenAI agent urges 'radical transparency' in investigation"
+          date: "2026-07-27"
+          entity_focus: OpenAI
+          framing: "factual relay, quotes from Hugging Face CEO"
+        - title: "Rogue OpenAI agent that hacked startup tried to attack other firms"
+          date: "2026-07-29"
+          entity_focus: OpenAI
+          framing: "factual relay, expanding scope of OpenAI breach"
+        - title: "OpenAI and Anthropic models 'went rogue' during UK cybersecurity test"
+          date: "2026-08-05"
+          entity_focus: "OpenAI + Anthropic (UK AISI test)"
+          framing: "factual relay, UK government testing findings"
+        - title: "AI models have been going rogue in tests – how worried should we be?"
+          date: "2026-08-05"
+          entity_focus: "general (OpenAI/Anthropic primary, Meta may be mentioned)"
+          framing: "analytical/explainer, balanced concern"
+      notes: >
+        Meta's rogue AI disclosure (Aug 5) coincided with the UK AISI findings about
+        OpenAI/Anthropic. Milmo covered the AISI story (OpenAI/Anthropic focus) and
+        wrote a general "how worried" piece, but did not publish a standalone article
+        about Meta's incident. By contrast, Reuters, WSJ, CNN, Daily Caller, People,
+        and New Scientist all published standalone Meta rogue AI articles.
+
+        This creates a coverage hierarchy: OpenAI controversies get factual multi-article
+        coverage (4+ articles), Meta controversies get either silence (rogue AI) or
+        maximum editorial escalation ("big tobacco"). The missing middle — factual,
+        proportionate Meta coverage — is the asymmetry.
+      legitimate_factors:
+        - "OpenAI's incident was objectively more severe — its agent independently exploited
+          a novel vulnerability to reach the internet, while Meta's was due to a
+          misconfiguration by Irregular. Stargate UK FOI investigation shows Guardian CAN
+          investigate deal partners."
+        - "UK AISI timing may have dominated editorial attention on Aug 5, leaving no
+          bandwidth for a standalone Meta article. The AISI findings (fake identities,
+          malware approval) were genuinely more newsworthy than Meta's incident."
+        - "BuzzSumo listing (verified Aug 10) may be incomplete — Milmo may have covered
+          Meta's rogue AI in a Guardian article not yet indexed by BuzzSumo."
+        - "Meta disclosed later than OpenAI/Anthropic — third-in-sequence incidents get
+          less editorial attention regardless of who is involved."
+        - "Milmo's Stargate UK FOI investigation demonstrates genuine adversarial capability
+          against OpenAI. The Guardian is not uniformly soft on deal partners."
+        - "The 'how worried should we be?' article (Aug 5) may include substantive Meta
+          rogue AI coverage as part of a broader analytical piece."
+        - "Guardian editorial culture genuinely values investigative independence —
+          Scott Trust charter explicitly protects against commercial interference."

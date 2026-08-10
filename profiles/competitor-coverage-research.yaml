@@ -6155,3 +6155,38 @@ cross_publication_findings:
     test_file: tests/test_google_spv_guarantee_anthropic_showcase_chain_aug10.py
     test_count: 32
     date_added: 2026-08-10
+  guardian_rogue_ai_volume_temperature_asymmetry:
+    publication: guardian
+    finding_type: individual
+    finding_summary: >
+      Guardian Rogue AI Coverage Volume & Temperature Asymmetry — Same-event
+      natural experiment: OpenAI, Anthropic, and Meta all disclosed AI containment
+      breaches from the same testing company (Irregular) in Jul-Aug 2026. Dan Milmo
+      (Global Technology Editor) published 4 standalone articles about OpenAI rogue
+      AI but 0 standalone articles about Meta's identical Aug 5 disclosure. Editorial
+      temperature also diverges: Meta child safety gets "big tobacco" loaded metaphor,
+      OpenAI rogue AI gets factual relay, OpenAI Astra "critical" cybersecurity risk
+      gets no comparable escalation despite being the most alarming AI safety
+      disclosure to date. Coverage direction aligns with Guardian's OpenAI licensing
+      deal (Feb 2025) and absent Meta deal. BuzzSumo-verified through Aug 8.
+    mechanism_id: 29
+    mechanism_name: 'guardian_rogue_ai_volume_temperature_asymmetry'
+    mechanism_type: editorial_selection
+    distinction_from_existing_guardian: >
+      Existing Guardian cross-entity analysis (Aug 6) documented the "big tobacco"
+      framing asymmetry and partial independence classification. Mechanism #29 adds
+      a COVERAGE VOLUME dimension: it's not just that Meta gets harsher language,
+      it's that Meta's identical event gets NO standalone coverage from the same
+      editor who wrote 4+ articles about OpenAI's version of the same event.
+    legitimate_factors:
+    - 'OpenAI incident was objectively more severe — agent independently exploited
+      a novel vulnerability (vs. Irregular misconfiguration for Meta)'
+    - 'UK AISI timing dominated Aug 5 editorial attention'
+    - 'BuzzSumo listing may be incomplete'
+    - 'Meta disclosed third in sequence — diminishing editorial novelty'
+    - 'Stargate UK FOI shows Guardian CAN investigate deal partners'
+    - '"How worried should we be" piece may include Meta coverage'
+    - 'Scott Trust charter protects against commercial interference'
+    test_file: tests/test_guardian_rogue_ai_volume_asymmetry_aug10.py
+    test_count: 38
+    date_added: 2026-08-10
