@@ -32658,3 +32658,23 @@ NYT has three independent financial pathways converging to predict Anthropic-pos
 
 ### Commit
 985af41 — pushed to GitHub
+
+---
+
+## 2026-08-10 15:00 PT — Type B: Journalist Cross-Entity Tracking
+
+### Rotation Target
+Georgia Wells (WSJ) — cross-entity coverage of OpenAI and Meta
+
+### Mechanism #30: Disclosure-Correlated Editorial Independence Control Case
+Georgia Wells covers both OpenAI governance (AG investigation Jun 13, rogue AI exposé Aug 2) and Meta business AI (enterprise agents Jun 3) at WSJ. Despite News Corp's $250M+ OpenAI content-licensing deal, she co-authored adversarial OpenAI coverage. The rogue AI article includes best-in-class financial disclosure. This is a POSITIVE CONTROL: WSJ's disclosure practice correlates with more balanced cross-entity coverage than publications without disclosures (WIRED 0.95 tone gap, Guardian 0.80+ gap). Financial relationship does NOT predict coverage direction when disclosed.
+
+### Files Changed
+- `profiles/news-corp.yaml` — 5th journalist_profile (Georgia Wells cross-entity analysis)
+- `profiles/competitor-coverage-research.yaml` — Mechanism #30 appended
+- `tests/test_georgia_wells_cross_entity.py` — 7 classes, 27 tests (all pass)
+- `README.md` — Test count header fixed to 8574 tests / 283 files, new table entry
+- `docs/ARCHITECTURE.md` — Test count header fixed to 8574 tests / 283 files, new tree entry
+
+### Commit
+3877cf8 — pushed to GitHub

@@ -847,6 +847,41 @@ aggregate_findings:
         with comparable issues constitutes a structural blind spot reinforced by financial incentives.
 
         '
+  gizmodo_james_pero_editorial_direction_override:
+    journalist: James Pero
+    publication: Gizmodo (Keleops AG / G/O Media successor)
+    role: Senior Editor, Consumer Tech — self-described smart glasses specialist
+    finding_summary: 'Mechanism #31: Editorial Direction Override. James Pero demonstrates a measurable genre split in Meta
+      coverage: PRODUCT REVIEWS are balanced-to-positive (tone +0.10, Neural Band groundbreaking, affiliate links to Amazon/Best
+      Buy), while EDITORIAL/ANALYSIS pieces are adversarial (tone -0.40, competitors as privacy heroes, section titled The
+      anti-Meta plan). Same journalist, same publication, same topic, but genre determines framing direction. Samsung/Google
+      build identical 12MP camera glasses sending data to Google Gemini but receive ZERO surveillance framing. Apple, building
+      rumored camera glasses, is described as having often made privacy the core of its products. Distinct from Kyle Barr
+      Privacy Gradient (personal differential), Lauren Goode Lane Assignment (beat segregation), and Paresh Dave Emotional
+      Register (vocabulary escalation). Pero review ↔ editorial split isolates the EDITORIAL LAYER as the source of differential
+      framing — the journalist personally likes Meta hardware but produces adversarial editorials about Meta as a company.'
+    mechanism: editorial_direction_override
+    mechanism_id: 31
+    key_finding: Genre-dependent Meta framing (review=positive, editorial=adversarial)
+    genre_split_delta: 0.5
+    tone_scores:
+      meta_product_review: 0.1
+      meta_editorial: -0.4
+      google_coverage: -0.05
+      apple_coverage: 0.05
+    confounding_factors:
+    - Meta 69% market share makes it natural focus of scrutiny
+    - Meta has genuine privacy incidents (Kenya contractors)
+    - Editorial assignment is normal journalism
+    - Genre conventions differ between reviews and analysis pieces
+    - Pero may coherently believe Meta hardware is good but Meta behavior is problematic
+    source_urls:
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+    - https://gizmodo.com/smart-glasses-are-forcing-wearables-to-get-very-weird-2000674309
+    - https://gizmodo.com/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic-2000794504
+    test_file: tests/test_james_pero_cross_entity.py
+    test_count: 41
 cross_entity_leverage:
   amazon_sextuple_leverage:
     amazon_publisher_deal_count:
@@ -944,7 +979,8 @@ cross_entity_leverage:
 
       publishers — more categories than any other tech company in the
 
-      dataset (updated from six after Amazon''s $50B OpenAI investment, Feb 2026). This cross-publication analysis examines how Amazon''s
+      dataset (updated from six after Amazon''s $50B OpenAI investment, Feb 2026). This cross-publication analysis examines
+      how Amazon''s
 
       multi-tentacle relationships affect coverage across all profiled
 
@@ -5622,11 +5658,10 @@ cross_publication_findings:
     analysis_date: '2026-08-09T21:00:00-07:00'
     date_added: '2026-08-09'
     test_file: tests/test_child_safety_litigation_financial_ecosystem_aug9.py
-    finding_summary: 'Meta faces disproportionate children''s safety litigation coverage
-      compared to Google/YouTube despite both being found liable in the same bellwether
-      trial (KGM v. Meta & Google, LA March 2026). Google''s systematic early settlement
-      strategy removes YouTube from litigation narratives. Publisher financial dependencies
-      ($81.6B/yr Google advertising) predict coverage direction with 100% accuracy.'
+    finding_summary: Meta faces disproportionate children's safety litigation coverage compared to Google/YouTube despite
+      both being found liable in the same bellwether trial (KGM v. Meta & Google, LA March 2026). Google's systematic early
+      settlement strategy removes YouTube from litigation narratives. Publisher financial dependencies ($81.6B/yr Google advertising)
+      predict coverage direction with 100% accuracy.
     mechanism_id: 17
     mechanism_name: settle_and_silence_litigation_coverage_asymmetry
     finding: 'Meta faces disproportionate children''s safety litigation coverage compared to Google/YouTube despite both platforms
@@ -5819,11 +5854,9 @@ cross_publication_findings:
     journalist: Jeff Horwitz
     publication: Reuters (Thomson Reuters)
     date_added: '2026-08-10'
-    finding_summary: 'Jeff Horwitz applies maximum-depth investigative techniques (internal
-      documents, undercover experiments, whistleblower cultivation) exclusively to Meta,
-      while covering competitors with surface-level factual reporting. Triple-Deal
-      Narrative Lock-In (Mechanism #19) through Thomson Reuters content licensing deals
-      with all three major AI labs.'
+    finding_summary: 'Jeff Horwitz applies maximum-depth investigative techniques (internal documents, undercover experiments,
+      whistleblower cultivation) exclusively to Meta, while covering competitors with surface-level factual reporting. Triple-Deal
+      Narrative Lock-In (Mechanism #19) through Thomson Reuters content licensing deals with all three major AI labs.'
     role: Tech Investigations Reporter
     location: Oakland, California
     beat: Meta investigations, tech accountability
@@ -6025,35 +6058,28 @@ cross_publication_findings:
     publication: nytimes
     finding_type: financial_incentive_mapping
     mechanism_id: 23
-    finding_summary: 'NYT Triple-Chain Financial Incentive Structure (Mechanism #23):
-      Three independent financial pathways converging to predict Anthropic-positive
-      NYT coverage. Chain 1 (Direct): Reported confidential NYT-Anthropic settlement
-      (Dec 2025, FinancialContent — UNVERIFIED single source). Chain 2 (Indirect):
-      NYT ← Amazon ($20-25M/yr deal) ← Amazon owns 15-20% of Anthropic ($180-240B
-      at secondary, $53.4B Q2 2026 gain). Chain 3 (Litigation Halo): NYT suing OpenAI
-      (Case 1:23-cv-11195) for billions — Anthropic is OpenAI primary competitor,
-      positive Anthropic coverage strengthens NYT copyright litigation narrative.
-      Coverage evidence: Kevin Roose Anthropic platforming as Cybersecurity Reckoning
-      (Apr 7) vs Meta dismissed as The Zuck Bot (Apr 17) — 0.60 tone delta, same
-      reporter, 10 days. Rogue AI coverage gap: NYT standalone for OpenAI only.'
+    finding_summary: 'NYT Triple-Chain Financial Incentive Structure (Mechanism #23): Three independent financial pathways
+      converging to predict Anthropic-positive NYT coverage. Chain 1 (Direct): Reported confidential NYT-Anthropic settlement
+      (Dec 2025, FinancialContent — UNVERIFIED single source). Chain 2 (Indirect): NYT ← Amazon ($20-25M/yr deal) ← Amazon
+      owns 15-20% of Anthropic ($180-240B at secondary, $53.4B Q2 2026 gain). Chain 3 (Litigation Halo): NYT suing OpenAI
+      (Case 1:23-cv-11195) for billions — Anthropic is OpenAI primary competitor, positive Anthropic coverage strengthens
+      NYT copyright litigation narrative. Coverage evidence: Kevin Roose Anthropic platforming as Cybersecurity Reckoning
+      (Apr 7) vs Meta dismissed as The Zuck Bot (Apr 17) — 0.60 tone delta, same reporter, 10 days. Rogue AI coverage gap:
+      NYT standalone for OpenAI only.'
     test_file: tests/test_nyt_anthropic_triple_chain_incentive_aug10.py
     test_count: 27
     date_added: 2026-08-10
-
   casey_newton_disclosure_inoculation:
     publication: platformer
     finding_type: journalist_cross_entity
     mechanism_id: 24
-    finding_summary: 'Disclosure-as-Inoculation Paradox (Mechanism #24):
-      Casey Newton (Platformer/Hard Fork co-host) fiancé is Anthropic software
-      engineer (started Jan 2025, engaged Feb 2026). His ethics page is best-in-class
-      for independent journalism. But disclosure is entirely self-regulated — no
-      editorial board, no ethics editor, no institutional verification. Meta headlines
-      100% accountability framing ("Meta scam problem," "Zuckerberg 20-year mistake"),
-      Anthropic headlines 100% admiration framing ("Claude Code believer," "rapture
-      over Claude Opus 4.5"). Claude Code personal adoption creates a
-      journalist-as-customer → positive-coverage loop. Disclosure present but
-      operates as inoculation — readers see the warning and lower their guard.'
+    finding_summary: 'Disclosure-as-Inoculation Paradox (Mechanism #24): Casey Newton (Platformer/Hard Fork co-host) fiancé
+      is Anthropic software engineer (started Jan 2025, engaged Feb 2026). His ethics page is best-in-class for independent
+      journalism. But disclosure is entirely self-regulated — no editorial board, no ethics editor, no institutional verification.
+      Meta headlines 100% accountability framing ("Meta scam problem," "Zuckerberg 20-year mistake"), Anthropic headlines
+      100% admiration framing ("Claude Code believer," "rapture over Claude Opus 4.5"). Claude Code personal adoption creates
+      a journalist-as-customer → positive-coverage loop. Disclosure present but operates as inoculation — readers see the
+      warning and lower their guard.'
     test_file: tests/test_casey_newton_cross_entity.py
     test_count: 27
     date_added: 2026-08-10
@@ -6061,17 +6087,13 @@ cross_publication_findings:
     publication: wall_street_journal
     finding_type: competitor_coverage_deep_dive
     mechanism_id: 26
-    finding_summary: 'Business Viability Framing Asymmetry with Settlement-Incentive
-      Bias (Mechanism #26): WSJ applies deficit/follower language to Meta''s business
-      challenges ("Exposes Its Weak Hand," "lagging behind," "too little, too late")
-      while applying celebration/hero language to Anthropic''s trajectory ("home run,"
-      "New Way to Win"). Meta is profitable ($244B+ rev); Anthropic is unprofitable
-      ($47B ARR, $27B burn). The framing register is INVERSELY correlated with
-      financial health. News Corp''s Bartz v. Anthropic settlement creates a
-      pre-IPO incentive against critical Anthropic business analysis. The
-      "missing article" — no Heard on the Street column analyzing Anthropic''s
-      burn rate, valuation risk, or IPO uncertainty comparable to Meta''s "Weak Hand"
-      — is the structural absence that defines the asymmetry.'
+    finding_summary: 'Business Viability Framing Asymmetry with Settlement-Incentive Bias (Mechanism #26): WSJ applies deficit/follower
+      language to Meta''s business challenges ("Exposes Its Weak Hand," "lagging behind," "too little, too late") while applying
+      celebration/hero language to Anthropic''s trajectory ("home run," "New Way to Win"). Meta is profitable ($244B+ rev);
+      Anthropic is unprofitable ($47B ARR, $27B burn). The framing register is INVERSELY correlated with financial health.
+      News Corp''s Bartz v. Anthropic settlement creates a pre-IPO incentive against critical Anthropic business analysis.
+      The "missing article" — no Heard on the Street column analyzing Anthropic''s burn rate, valuation risk, or IPO uncertainty
+      comparable to Meta''s "Weak Hand" — is the structural absence that defines the asymmetry.'
     test_file: tests/test_wsj_anthropic_meta_business_viability_framing_aug10.py
     test_count: 46
     date_added: 2026-08-10
@@ -6080,173 +6102,148 @@ cross_publication_findings:
     finding_type: journalist_cross_entity
     journalist: Kate Clark
     mechanism_id: 27
-    mechanism_name: 'Startup Desk vs. Corporate Desk Narrative Segregation'
+    mechanism_name: Startup Desk vs. Corporate Desk Narrative Segregation
     mechanism_type: structural
-    finding_summary: 'Startup Desk vs. Corporate Desk Narrative Segregation (Mechanism #27):
-      Within a single publication (WSJ/News Corp, balanced $50M/$50M) the DESK
-      ASSIGNMENT creates framing asymmetry independent of financial incentive.
-      Kate Clark (VC/startup desk) covers Anthropic with hero-arc templates
-      ("scrappy underdog," "front-runner," "doing more with less," "Claude-pilled")
-      at +0.45 tone. Meghan Bobrowsky (corporate desk) covers Meta at -0.15 tone
-      with accountability templates ("wants in on," "investors have pressed,"
-      "lavish spending"). The 0.60-point tone gap comes from GENRE ASSIGNMENT,
-      not financial incentive. Anthropic ($50B ARR, $27B burn, 0% profit) gets
-      hero framing; Meta ($60.8B/quarter, profitable) gets deficit framing. Both
-      reporters apply the CORRECT templates for their respective beats — the
-      mechanism is the genre boundary itself. Extends Mechanism #26 by showing
-      that startup-desk narrative templates shape hard news coverage, not just
-      analytical columns.'
-    distinction_from_26: 'Mechanism #26 operates through Heard on the Street
-      ANALYTICAL COLUMNS (Asa Fitch, opinion/analysis desk). Mechanism #27
-      operates through HARD NEWS articles (Kate Clark, news desk). The
-      narrative segregation extends beyond opinion into the news pages —
-      the publication assigns the AI labs story to the startup desk, which
-      inherently uses aspirational narrative templates, and the Meta story
-      to the corporate desk, which inherently uses accountability templates.
-      Same publication, same balanced deals, different genre = different framing.'
+    finding_summary: 'Startup Desk vs. Corporate Desk Narrative Segregation (Mechanism #27): Within a single publication (WSJ/News
+      Corp, balanced $50M/$50M) the DESK ASSIGNMENT creates framing asymmetry independent of financial incentive. Kate Clark
+      (VC/startup desk) covers Anthropic with hero-arc templates ("scrappy underdog," "front-runner," "doing more with less,"
+      "Claude-pilled") at +0.45 tone. Meghan Bobrowsky (corporate desk) covers Meta at -0.15 tone with accountability templates
+      ("wants in on," "investors have pressed," "lavish spending"). The 0.60-point tone gap comes from GENRE ASSIGNMENT, not
+      financial incentive. Anthropic ($50B ARR, $27B burn, 0% profit) gets hero framing; Meta ($60.8B/quarter, profitable)
+      gets deficit framing. Both reporters apply the CORRECT templates for their respective beats — the mechanism is the genre
+      boundary itself. Extends Mechanism #26 by showing that startup-desk narrative templates shape hard news coverage, not
+      just analytical columns.'
+    distinction_from_26: 'Mechanism #26 operates through Heard on the Street ANALYTICAL COLUMNS (Asa Fitch, opinion/analysis
+      desk). Mechanism #27 operates through HARD NEWS articles (Kate Clark, news desk). The narrative segregation extends
+      beyond opinion into the news pages — the publication assigns the AI labs story to the startup desk, which inherently
+      uses aspirational narrative templates, and the Meta story to the corporate desk, which inherently uses accountability
+      templates. Same publication, same balanced deals, different genre = different framing.'
     test_file: tests/test_kate_clark_cross_entity.py
     test_count: 38
     date_added: 2026-08-10
   google_spv_guarantee_anthropic_showcase_chain:
     publication: cross_publication
     finding_type: financial_incentive_mapping
-    finding_summary: 'Google Quintuple Anthropic Exposure + $35B SPV Guarantee +
-      Showcase Publisher Dependency Chain (Mechanism #28): Google''s role as payment
-      GUARANTOR on Anthropic''s $35B off-balance-sheet SPV financing (Apollo/Blackstone,
-      Jul 2026) creates a fifth layer of Google-Anthropic financial entanglement.
-      Previously documented as four-way (equity investor, TPU co-designer, cloud
-      provider, cloud customer), the SPV guarantee adds CREDIT risk — if Anthropic
-      defaults, Google covers the shortfall. Combined with Google''s $1B+ Showcase
-      program paying 700+ publishers, this creates an INDIRECT coverage incentive
-      chain: Showcase-dependent publishers have structural incentive to avoid Anthropic
-      coverage that would impair Google''s $170B+ combined exposure ($135B equity +
-      $35B guarantee). Meanwhile, Anthropic has ZERO publicly disclosed publisher
-      content deals (confirmed by Rob Kelly''s 91-deal tracking). The SPV is
-      off-balance-sheet by design for IPO preparation — financial reporters who
-      examine only the S-1 without the SPV structure will present misleadingly clean
-      financials. Google''s quintuple exposure is structurally rational but its scale
-      means Anthropic''s fortunes are material to Google''s credit profile, stock
-      price, and by extension to every publisher dependent on Google advertising
-      and Showcase revenue.'
+    finding_summary: 'Google Quintuple Anthropic Exposure + $35B SPV Guarantee + Showcase Publisher Dependency Chain (Mechanism
+      #28): Google''s role as payment GUARANTOR on Anthropic''s $35B off-balance-sheet SPV financing (Apollo/Blackstone, Jul
+      2026) creates a fifth layer of Google-Anthropic financial entanglement. Previously documented as four-way (equity investor,
+      TPU co-designer, cloud provider, cloud customer), the SPV guarantee adds CREDIT risk — if Anthropic defaults, Google
+      covers the shortfall. Combined with Google''s $1B+ Showcase program paying 700+ publishers, this creates an INDIRECT
+      coverage incentive chain: Showcase-dependent publishers have structural incentive to avoid Anthropic coverage that would
+      impair Google''s $170B+ combined exposure ($135B equity + $35B guarantee). Meanwhile, Anthropic has ZERO publicly disclosed
+      publisher content deals (confirmed by Rob Kelly''s 91-deal tracking). The SPV is off-balance-sheet by design for IPO
+      preparation — financial reporters who examine only the S-1 without the SPV structure will present misleadingly clean
+      financials. Google''s quintuple exposure is structurally rational but its scale means Anthropic''s fortunes are material
+      to Google''s credit profile, stock price, and by extension to every publisher dependent on Google advertising and Showcase
+      revenue.'
     mechanism_id: 28
-    mechanism_name: 'spv_guarantee_showcase_chain'
+    mechanism_name: spv_guarantee_showcase_chain
     mechanism_type: financial_incentive
-    distinction_from_25: 'Mechanism #25 (Amazon dual-lab triangle) covers WaPo
-      via Bezos ownership. Mechanism #28 covers 700+ Showcase publishers via
-      Google''s SPV guarantee role. Different parent company, different publisher
-      set, different guarantee mechanism.'
-    distinction_from_26: 'Mechanism #26 (WSJ settlement-incentive bias) covers
-      News Corp''s settlement recovery from Bartz v. Anthropic. Mechanism #28
-      covers Google''s infrastructure guarantee exposure. Different financial
-      instrument (settlement vs. SPV lease guarantee), different entity chain.'
-    distinction_from_21: 'Mechanism #21 (IPO underwriter research laundering)
-      covers the analyst/bank side of IPO coverage incentives. Mechanism #28
-      covers the publisher side through Showcase dependency. Different actors
-      (investment banks vs. news publishers), different transmission channel
-      (research reports vs. news coverage).'
+    distinction_from_25: 'Mechanism #25 (Amazon dual-lab triangle) covers WaPo via Bezos ownership. Mechanism #28 covers 700+
+      Showcase publishers via Google''s SPV guarantee role. Different parent company, different publisher set, different guarantee
+      mechanism.'
+    distinction_from_26: 'Mechanism #26 (WSJ settlement-incentive bias) covers News Corp''s settlement recovery from Bartz
+      v. Anthropic. Mechanism #28 covers Google''s infrastructure guarantee exposure. Different financial instrument (settlement
+      vs. SPV lease guarantee), different entity chain.'
+    distinction_from_21: 'Mechanism #21 (IPO underwriter research laundering) covers the analyst/bank side of IPO coverage
+      incentives. Mechanism #28 covers the publisher side through Showcase dependency. Different actors (investment banks
+      vs. news publishers), different transmission channel (research reports vs. news coverage).'
     legitimate_factors:
-    - 'Google''s Anthropic investment has genuine commercial rationale (TPU adoption, cloud revenue)'
-    - 'Showcase payments are for content curation services, not coverage'
-    - 'Google editorial and investment decisions are siloed (Chinese walls)'
-    - 'Publishers may not be aware of Google''s SPV guarantee role'
-    - 'SPV structures are standard infrastructure financing (aircraft, telecom, PPAs)'
-    - 'Google''s guarantee is backed by Anthropic''s operating cash flow'
-    - 'Broadcom co-guarantees reduce Google''s net exposure'
+    - Google's Anthropic investment has genuine commercial rationale (TPU adoption, cloud revenue)
+    - Showcase payments are for content curation services, not coverage
+    - Google editorial and investment decisions are siloed (Chinese walls)
+    - Publishers may not be aware of Google's SPV guarantee role
+    - SPV structures are standard infrastructure financing (aircraft, telecom, PPAs)
+    - Google's guarantee is backed by Anthropic's operating cash flow
+    - Broadcom co-guarantees reduce Google's net exposure
     test_file: tests/test_google_spv_guarantee_anthropic_showcase_chain_aug10.py
     test_count: 32
     date_added: 2026-08-10
   guardian_rogue_ai_volume_temperature_asymmetry:
     publication: guardian
     finding_type: individual
-    finding_summary: >
-      Guardian Rogue AI Coverage Volume & Temperature Asymmetry — Same-event
-      natural experiment: OpenAI, Anthropic, and Meta all disclosed AI containment
-      breaches from the same testing company (Irregular) in Jul-Aug 2026. Dan Milmo
-      (Global Technology Editor) published 4 standalone articles about OpenAI rogue
-      AI but 0 standalone articles about Meta's identical Aug 5 disclosure. Editorial
-      temperature also diverges: Meta child safety gets "big tobacco" loaded metaphor,
-      OpenAI rogue AI gets factual relay, OpenAI Astra "critical" cybersecurity risk
-      gets no comparable escalation despite being the most alarming AI safety
-      disclosure to date. Coverage direction aligns with Guardian's OpenAI licensing
-      deal (Feb 2025) and absent Meta deal. BuzzSumo-verified through Aug 8.
+    finding_summary: 'Guardian Rogue AI Coverage Volume & Temperature Asymmetry — Same-event natural experiment: OpenAI, Anthropic,
+      and Meta all disclosed AI containment breaches from the same testing company (Irregular) in Jul-Aug 2026. Dan Milmo
+      (Global Technology Editor) published 4 standalone articles about OpenAI rogue AI but 0 standalone articles about Meta''s
+      identical Aug 5 disclosure. Editorial temperature also diverges: Meta child safety gets "big tobacco" loaded metaphor,
+      OpenAI rogue AI gets factual relay, OpenAI Astra "critical" cybersecurity risk gets no comparable escalation despite
+      being the most alarming AI safety disclosure to date. Coverage direction aligns with Guardian''s OpenAI licensing deal
+      (Feb 2025) and absent Meta deal. BuzzSumo-verified through Aug 8.
+
+      '
     mechanism_id: 29
-    mechanism_name: 'guardian_rogue_ai_volume_temperature_asymmetry'
+    mechanism_name: guardian_rogue_ai_volume_temperature_asymmetry
     mechanism_type: editorial_selection
-    distinction_from_existing_guardian: >
-      Existing Guardian cross-entity analysis (Aug 6) documented the "big tobacco"
-      framing asymmetry and partial independence classification. Mechanism #29 adds
-      a COVERAGE VOLUME dimension: it's not just that Meta gets harsher language,
-      it's that Meta's identical event gets NO standalone coverage from the same
-      editor who wrote 4+ articles about OpenAI's version of the same event.
+    distinction_from_existing_guardian: 'Existing Guardian cross-entity analysis (Aug 6) documented the "big tobacco" framing
+      asymmetry and partial independence classification. Mechanism #29 adds a COVERAGE VOLUME dimension: it''s not just that
+      Meta gets harsher language, it''s that Meta''s identical event gets NO standalone coverage from the same editor who
+      wrote 4+ articles about OpenAI''s version of the same event.
+
+      '
     legitimate_factors:
-    - 'OpenAI incident was objectively more severe — agent independently exploited
-      a novel vulnerability (vs. Irregular misconfiguration for Meta)'
-    - 'UK AISI timing dominated Aug 5 editorial attention'
-    - 'BuzzSumo listing may be incomplete'
-    - 'Meta disclosed third in sequence — diminishing editorial novelty'
-    - 'Stargate UK FOI shows Guardian CAN investigate deal partners'
+    - OpenAI incident was objectively more severe — agent independently exploited a novel vulnerability (vs. Irregular misconfiguration
+      for Meta)
+    - UK AISI timing dominated Aug 5 editorial attention
+    - BuzzSumo listing may be incomplete
+    - Meta disclosed third in sequence — diminishing editorial novelty
+    - Stargate UK FOI shows Guardian CAN investigate deal partners
     - '"How worried should we be" piece may include Meta coverage'
-    - 'Scott Trust charter protects against commercial interference'
+    - Scott Trust charter protects against commercial interference
     test_file: tests/test_guardian_rogue_ai_volume_asymmetry_aug10.py
     test_count: 38
     date_added: 2026-08-10
-
   wsj_georgia_wells_editorial_independence_control:
     journalist: Georgia Wells
     publication: The Wall Street Journal (News Corp)
-    finding_summary: >
-      Mechanism #30 — Disclosure-Correlated Editorial Independence Control Case.
-      Georgia Wells covers BOTH OpenAI governance/regulation AND Meta business AI,
-      making her a dual-beat cross-entity control case. Despite News Corp's $250M+
-      content licensing deal with OpenAI, Wells co-authored adversarial OpenAI coverage:
-      (1) "OpenAI Investigated by Coalition of State Attorneys General" (Jun 13, with
-      Keach Hagey) — regulatory enforcement framing; (2) "Rogue AI Hacks Herald New Era
-      of Cyber Chaos" (Aug 2, with McMillan + Ramkumar) — dramatic headline with
-      best-in-class financial disclosure. Her Meta coverage ("Zuckerberg Wants Meta's
-      New AI Agents to Run Your Whole Business," Jun 3) uses neutral business-reporting
-      register. The editorial register difference is explained by story TYPE (regulatory
-      enforcement vs business expansion), NOT the financial relationship. This is a
-      POSITIVE CONTROL: the WSJ's consistent disclosure practice (noting News Corp
-      licensing deals) correlates with more balanced cross-entity coverage than
-      publications without disclosures (WIRED 0.95 tone gap, Guardian 0.80+ gap).
+    finding_summary: 'Mechanism #30 — Disclosure-Correlated Editorial Independence Control Case. Georgia Wells covers BOTH
+      OpenAI governance/regulation AND Meta business AI, making her a dual-beat cross-entity control case. Despite News Corp''s
+      $250M+ content licensing deal with OpenAI, Wells co-authored adversarial OpenAI coverage: (1) "OpenAI Investigated by
+      Coalition of State Attorneys General" (Jun 13, with Keach Hagey) — regulatory enforcement framing; (2) "Rogue AI Hacks
+      Herald New Era of Cyber Chaos" (Aug 2, with McMillan + Ramkumar) — dramatic headline with best-in-class financial disclosure.
+      Her Meta coverage ("Zuckerberg Wants Meta''s New AI Agents to Run Your Whole Business," Jun 3) uses neutral business-reporting
+      register. The editorial register difference is explained by story TYPE (regulatory enforcement vs business expansion),
+      NOT the financial relationship. This is a POSITIVE CONTROL: the WSJ''s consistent disclosure practice (noting News Corp
+      licensing deals) correlates with more balanced cross-entity coverage than publications without disclosures (WIRED 0.95
+      tone gap, Guardian 0.80+ gap).
+
+      '
     mechanism_id: 30
     mechanism_name: disclosure_correlated_editorial_independence
     mechanism_type: positive_control
     key_articles:
-    - title: 'OpenAI Investigated by Coalition of State Attorneys General'
+    - title: OpenAI Investigated by Coalition of State Attorneys General
       date: '2026-06-13'
       authors: Keach Hagey, Georgia Wells
       entity: OpenAI
       tone: regulatory_enforcement
-      source_url: 'https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928'
-    - title: 'Rogue AI Hacks Herald New Era of Cyber Chaos'
+      source_url: https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928
+    - title: Rogue AI Hacks Herald New Era of Cyber Chaos
       date: '2026-08-02'
       authors: Robert McMillan, Georgia Wells, Amrith Ramkumar
       entity: OpenAI/Anthropic
       tone: alarm_but_factual
-      disclosure: 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'
-      source_url: 'https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c'
-    - title: 'Mark Zuckerberg Wants Meta''s New AI Agents to Run Your Whole Business'
+      disclosure: News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.
+      source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
+    - title: Mark Zuckerberg Wants Meta's New AI Agents to Run Your Whole Business
       date: '2026-06-03'
       authors: Georgia Wells
       entity: Meta
       tone: neutral_business_reporting
-      source_url: 'https://www.wsj.com/tech/mark-zuckerberg-wants-metas-new-ai-agents-to-run-your-whole-business-6e2100e2'
-    implication: >
-      Financial relationships do NOT uniformly predict softer coverage. The WSJ
-      demonstrates that consistent financial disclosure functions as an editorial
-      accountability mechanism that REDUCES coverage asymmetry. Publications that
-      disclose (WSJ) show weaker financial-coverage correlation than publications
-      that don't (WIRED, Guardian). This suggests the MediaScope hypothesis should
-      be refined: financial relationships predict SOFTER coverage PRIMARILY when the
-      relationship is UNDISCLOSED to readers.
+      source_url: https://www.wsj.com/tech/mark-zuckerberg-wants-metas-new-ai-agents-to-run-your-whole-business-6e2100e2
+    implication: 'Financial relationships do NOT uniformly predict softer coverage. The WSJ demonstrates that consistent financial
+      disclosure functions as an editorial accountability mechanism that REDUCES coverage asymmetry. Publications that disclose
+      (WSJ) show weaker financial-coverage correlation than publications that don''t (WIRED, Guardian). This suggests the
+      MediaScope hypothesis should be refined: financial relationships predict SOFTER coverage PRIMARILY when the relationship
+      is UNDISCLOSED to readers.
+
+      '
     legitimate_factors:
-    - 'OpenAI genuinely faces more regulatory enforcement in 2026'
-    - 'Story type (regulation vs business) explains register differences'
-    - 'WSJ Chinese wall practices may be stronger than at Condé Nast-owned publications'
-    - 'News Corp discloses BOTH its OpenAI and Meta deals, unlike competitors'
-    - 'WSJ has an editorial culture of disclosure dating to pre-AI era'
-    - 'Assignment patterns have legitimate editorial explanations (novelty, expertise)'
+    - OpenAI genuinely faces more regulatory enforcement in 2026
+    - Story type (regulation vs business) explains register differences
+    - WSJ Chinese wall practices may be stronger than at Condé Nast-owned publications
+    - News Corp discloses BOTH its OpenAI and Meta deals, unlike competitors
+    - WSJ has an editorial culture of disclosure dating to pre-AI era
+    - Assignment patterns have legitimate editorial explanations (novelty, expertise)
     test_file: tests/test_georgia_wells_cross_entity.py
     test_count: 28
     date_added: 2026-08-10

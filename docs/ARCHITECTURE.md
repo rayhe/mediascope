@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 8574 tests across 283 test files (all from real articles)
+├── tests/                       # 8618 tests across 284 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -500,6 +500,7 @@ mediascope/
 │   ├── test_inc_muse_image_backlash_jul14.py # Inc.com Muse Image backlash patterns (Jul 14 2026): confession_framing post-quote attribution, cross_publication_import named publication reference, policy_reversal temporal urgency qualifiers, loaded_language death/termination metaphors, full article integration test (13+ devices)
 │   ├── test_inc_threads_500m_patterns.py # Inc.com Threads 500M patterns: scale_magnitude milestone detection (user-count crossings), competitive_positioning headline patterns (put on notice, leaves behind, overtakes/eclipses/dethrones), full headline integration (Jul 8 2026)
 │   ├── test_iphoneincanada_eu_dsa_regressions.py # iPhone in Canada EU DSA article regressions: tag-question rhetorical_question pattern ("...anyone?"), executive_behavior title suppression for "Executive Vice-President" (Jul 12 2026)
+│   ├── test_james_pero_cross_entity.py # James Pero (Gizmodo) cross-entity: Editorial Direction Override (Mechanism #31) — self-described "resident smart glasses guy" with hands-on ALL brands. Meta product reviews balanced-positive (tone +0.10, Neural Band "groundbreaking", affiliate links), editorial pieces adversarial (tone -0.40, "The anti-Meta plan", competitors as privacy heroes). Samsung/Google identical 12MP camera glasses ZERO surveillance framing; Apple "privacy champion". Genre split delta 0.50 isolates editorial direction from personal bias. 10 classes, 41 tests
 │   ├── test_joanna_stern_cross_entity.py # Joanna Stern cross-entity: WSJ (12 years) → independent "New Things" + NBC News — Meta Ray-Ban tone +0.35 to -0.65 (1.00-point swing), reverse Heikkilä pattern, strongest natural experiment for financial-structure effects (Aug 7 2026)
 │   ├── test_loaded_language_uproar.py # Loaded language detection, workplace coercion terms
 │   ├── test_marketwatch_cloud_pivot.py # MarketWatch Meta cloud pivot: financial-defeat EL terms, ironic_quotation attribution suppression (wrote/believes), simple competitive_deficit pattern

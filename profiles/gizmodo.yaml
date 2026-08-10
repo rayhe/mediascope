@@ -1,330 +1,301 @@
-# Gizmodo Publication Profile
-# Ownership: Keleops AG (Switzerland) — acquired June 2024
-# Previous: G/O Media (Great Hill Partners PE) → Univision ($135M, 2016) → Gawker Media (Nick Denton)
-# Revenue model: Affiliate commerce (product reviews), display advertising, lead generation
-
 publication: gizmodo
 display_name: Gizmodo
 url: https://gizmodo.com
 type: consumer_tech_news
-
 ownership_chain:
   current:
     owner: Keleops AG
-    parent: null  # independent
+    parent: null
     hq: Zug, Switzerland
     ceo: Jean-Guillaume Kleis
     founded: 2014 (as performance marketing firm, pivoted to media)
     acquired_gizmodo: 2024-06-04
     portfolio:
-      - gizmodo  # tech news (US, acquired Jun 2024)
-      - kotaku  # gaming (US, acquired Jul 2025)
-      - 01net  # French tech (legacy brand)
-      - presse-citron  # French tech
-      - journal-du-geek  # French tech
-      - iphon-fr  # French Apple/tech
+    - gizmodo
+    - kotaku
+    - 01net
+    - presse-citron
+    - journal-du-geek
+    - iphon-fr
     monthly_uniques: 40M+ (across all properties)
-    business_model: "lead-generation-based business model for tech industry partners + affiliate revenue from product reviews"
+    business_model: lead-generation-based business model for tech industry partners + affiliate revenue from product reviews
     source_urls:
-      - https://www.adweek.com/media/gizmodo-acquired-keleops-go-media/
-      - https://www.citybiz.co/article/714135/keleops-acquires-kotaku-from-g-o-media/
+    - https://www.adweek.com/media/gizmodo-acquired-keleops-go-media/
+    - https://www.citybiz.co/article/714135/keleops-acquires-kotaku-from-g-o-media/
   previous:
-    - owner: G/O Media (Great Hill Partners)
-      period: 2019-2024
-      notes: "PE-owned. Gradually sold off all properties. G/O Media wound down operations after selling Kotaku (last before The Root)."
-    - owner: Univision Communications
-      period: 2016-2019
-      acquisition_price: "$135M (Gawker Media bundle)"
-      notes: "Acquired as part of Gawker Media bankruptcy sale after Hulk Hogan/Peter Thiel lawsuit"
-    - owner: Gawker Media (Nick Denton)
-      period: 2002-2016
-      notes: "Original founding. Part of the Gawker blog network. Filed bankruptcy 2016."
-
-# IMPORTANT FOR MEDIASCOPE COORDINATION ANALYSIS:
-# Keleops AG has NO connection to:
-# - Advance Publications (WIRED/Condé Nast parent)
-# - Reddit (Advance holds ~30% stake)
-# - Warner Bros Discovery
-# - Any Condé Nast entity
-# This means Gizmodo's editorial direction on Meta wearables is NOT driven by
-# Advance financial incentives. If Gizmodo and WIRED produce similar framings,
-# it suggests organic convergence of editorial judgment OR shared sourcing
-# (same PR firms, same advocacy orgs feeding both), NOT corporate coordination.
-
-
-# ===================================================================
-# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
-# Added 2026-08-04 for cross-entity coverage asymmetry analysis
-# Gizmodo is a CLEAN CONTROL — no AI licensing deals with anyone.
-# Swiss-owned (Keleops AG), no structural conflicts.
-# ===================================================================
+  - owner: G/O Media (Great Hill Partners)
+    period: 2019-2024
+    notes: PE-owned. Gradually sold off all properties. G/O Media wound down operations after selling Kotaku (last before
+      The Root).
+  - owner: Univision Communications
+    period: 2016-2019
+    acquisition_price: $135M (Gawker Media bundle)
+    notes: Acquired as part of Gawker Media bankruptcy sale after Hulk Hogan/Peter Thiel lawsuit
+  - owner: Gawker Media (Nick Denton)
+    period: 2002-2016
+    notes: Original founding. Part of the Gawker blog network. Filed bankruptcy 2016.
 competitor_relationships:
   openai:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship. Gizmodo has no AI licensing deals."
-    coverage_prediction: "adversarial"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship. Gizmodo has no AI licensing deals.
+    coverage_prediction: adversarial
   meta:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship. Keleops AG has no connection to any tech company."
-    coverage_prediction: "adversarial"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship. Keleops AG has no connection to any tech company.
+    coverage_prediction: adversarial
   anthropic:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: neutral
   amazon:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: neutral
   apple:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: neutral
   google:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: neutral
   x_twitter:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "adversarial"
-
-
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: adversarial
 editorial_posture:
   meta_coverage: adversarial_to_balanced
   tone: conversational_critical
   wearables_beat_reporter: Raymond Wong (Senior Editor, Consumer Tech)
-  notes: |
-    Gizmodo's smart glasses coverage is driven primarily by Raymond Wong,
+  notes: 'Gizmodo''s smart glasses coverage is driven primarily by Raymond Wong,
+
     who is a hands-on reviewer. His coverage style is more nuanced than
-    WIRED's structurally adversarial approach: he tests products, acknowledges
+
+    WIRED''s structurally adversarial approach: he tests products, acknowledges
+
     appeal, and documents privacy issues from personal experience rather
+
     than institutional advocacy framing.
-    
+
+
     Key difference from WIRED: Gizmodo under Keleops is a product-review-first
+
     publication with affiliate commerce as a primary revenue driver. This means
+
     they have a financial incentive to engage positively with products (to
+
     drive affiliate clicks) that partially counterbalances adversarial coverage.
+
     WIRED under Condé Nast/Advance has shifted toward investigative/adversarial
+
     coverage as a prestige differentiator under Katie Drummond.
 
+    '
 wearables_coverage_examples:
-  - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
-    date: 2026-07-30
-    author: Raymond Wong
-    url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
-    framing: balanced (reports EssilorLuxottica revenue doubling + privacy incident catalogue)
-    
-  - title: "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So"
-    date: 2026-06-14
-    author: Raymond Wong
-    url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
-    framing: solutions-oriented (profiles Even Realities, Brilliant Labs alternatives to Meta)
-    
-  - title: "Dear Meta Smart Glasses Wearers: You're Being Watched, Too"
-    date: 2026-03
-    author: Raymond Wong
-    url: https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
-    framing: adversarial (Svenska Dagbladet contractor footage investigation)
-    
-  - title: "Apple's Smart Glasses Are Stepping Into a Privacy Minefield"
-    date: 2026-04
-    author: Raymond Wong
-    url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
-    framing: category_contamination (Meta stigma affecting Apple's entry)
-    
-  - title: "Meta's Smart Glasses Are Long Ways From Their 'Eureka' Moment"
-    date: 2026-06
-    author: Raymond Wong
-    url: https://gizmodo.com/metas-smart-glasses-are-long-ways-from-their-eureka-moment-2000767574
-    framing: skeptical_but_fair (product critique, not privacy attack)
-    
-  - title: "The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More"
-    date: 2026-07-30
-    author: Raymond Wong
-    url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
-    framing: positive_product (genuine enthusiasm for Muse Spark AI upgrade)
-    
-  - title: "We're Already Barrelling Toward a Smart Glasses Bubble"
-    date: 2025-11
-    author: Raymond Wong
-    url: https://gizmodo.com/were-already-barrelling-towards-a-smart-glasses-bubble-2000679391
-    framing: market_analysis (competitive landscape, not privacy-focused)
-
-  - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
-    date: 2026-07-22
-    author: Raymond Wong
-    url: https://gizmodo.com/author/raywong
-    framing: hands_on_preview (competitive product coverage)
-
-# ===================================================================
-# RAYMOND WONG CROSS-ENTITY COVERAGE — Added 2026-08-06
-# The "Clean Control Paradox": Wong applies equal-opportunity criticism
-# across ALL entities. Compare to WIRED where loaded language is reserved
-# exclusively for Meta while deal partners get neutral treatment.
-# ===================================================================
+- title: Smart Glasses Are a Hit Even as Privacy Concerns Pile Up
+  date: 2026-07-30
+  author: Raymond Wong
+  url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+  framing: balanced (reports EssilorLuxottica revenue doubling + privacy incident catalogue)
+- title: Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So
+  date: 2026-06-14
+  author: Raymond Wong
+  url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+  framing: solutions-oriented (profiles Even Realities, Brilliant Labs alternatives to Meta)
+- title: 'Dear Meta Smart Glasses Wearers: You''re Being Watched, Too'
+  date: 2026-03
+  author: Raymond Wong
+  url: https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
+  framing: adversarial (Svenska Dagbladet contractor footage investigation)
+- title: Apple's Smart Glasses Are Stepping Into a Privacy Minefield
+  date: 2026-04
+  author: Raymond Wong
+  url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+  framing: category_contamination (Meta stigma affecting Apple's entry)
+- title: Meta's Smart Glasses Are Long Ways From Their 'Eureka' Moment
+  date: 2026-06
+  author: Raymond Wong
+  url: https://gizmodo.com/metas-smart-glasses-are-long-ways-from-their-eureka-moment-2000767574
+  framing: skeptical_but_fair (product critique, not privacy attack)
+- title: The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More
+  date: 2026-07-30
+  author: Raymond Wong
+  url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
+  framing: positive_product (genuine enthusiasm for Muse Spark AI upgrade)
+- title: We're Already Barrelling Toward a Smart Glasses Bubble
+  date: 2025-11
+  author: Raymond Wong
+  url: https://gizmodo.com/were-already-barrelling-towards-a-smart-glasses-bubble-2000679391
+  framing: market_analysis (competitive landscape, not privacy-focused)
+- title: Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them
+  date: 2026-07-22
+  author: Raymond Wong
+  url: https://gizmodo.com/author/raywong
+  framing: hands_on_preview (competitive product coverage)
 cross_entity_coverage:
   meta:
     tone: balanced_product_first
-    review_language: "product-focused: battery life, video quality, comfort comparisons. Privacy mentioned in passing ('abysmal privacy practices') but not the dominant framing."
+    review_language: 'product-focused: battery life, video quality, comfort comparisons. Privacy mentioned in passing (''abysmal
+      privacy practices'') but not the dominant framing.'
     examples:
-      - title: "Ray-Ban Meta Gen 2 Review: Still the Best Non-Display Smart Glasses"
-        tone: positive_review
-        date: 2026-04
-        url: https://gizmodo.com/ray-ban-meta-gen-2-review-still-the-best-non-display-smart-glasses-2000664295
-        notes: "Positive headline — WIRED would never run 'Best' for a Meta product"
-      - title: "Meta Ray-Ban Display Review: Is This the Future We Really Want?"
-        tone: skeptical_but_fair
-        date: 2026-04
-        url: https://gizmodo.com/meta-ray-ban-display-smart-glasses-review-is-this-the-future-we-really-want-2000679520
-        notes: "Questions value prop but tests product fairly, acknowledges tech achievement"
-      - title: "The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More"
-        tone: positive_evolution
-        date: 2026-07-30
-        url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
-        notes: "Genuinely impressed by Muse Spark upgrade. 'Dare I say it was actually helpful.'"
-      - title: "Rokid AI Glasses Style Review: Surprisingly Tough Competition for Meta's Ray-Ban"
-        tone: positive_meta_comparison
-        date: 2026-06
-        url: https://gizmodo.com/rokid-ai-glasses-style-review-surprisingly-tough-competition-for-metas-ray-ban-2000716034
-        notes: "Uses Meta Ray-Ban as the benchmark others are compared to — implicitly positive framing"
-
+    - title: 'Ray-Ban Meta Gen 2 Review: Still the Best Non-Display Smart Glasses'
+      tone: positive_review
+      date: 2026-04
+      url: https://gizmodo.com/ray-ban-meta-gen-2-review-still-the-best-non-display-smart-glasses-2000664295
+      notes: Positive headline — WIRED would never run 'Best' for a Meta product
+    - title: 'Meta Ray-Ban Display Review: Is This the Future We Really Want?'
+      tone: skeptical_but_fair
+      date: 2026-04
+      url: https://gizmodo.com/meta-ray-ban-display-smart-glasses-review-is-this-the-future-we-really-want-2000679520
+      notes: Questions value prop but tests product fairly, acknowledges tech achievement
+    - title: The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More
+      tone: positive_evolution
+      date: 2026-07-30
+      url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
+      notes: Genuinely impressed by Muse Spark upgrade. 'Dare I say it was actually helpful.'
+    - title: 'Rokid AI Glasses Style Review: Surprisingly Tough Competition for Meta''s Ray-Ban'
+      tone: positive_meta_comparison
+      date: 2026-06
+      url: https://gizmodo.com/rokid-ai-glasses-style-review-surprisingly-tough-competition-for-metas-ray-ban-2000716034
+      notes: Uses Meta Ray-Ban as the benchmark others are compared to — implicitly positive framing
   openai:
     tone: dismissive
     examples:
-      - title: "OpenAI's Revolutionary AI Gadget Is… a Phone? A Stinkin' Phone?"
-        tone: dismissive_critical
-        date: 2026-04-27
-        url: https://gizmodo.com/author/raywong/page/2
-        notes: "Equal irreverence applied to OpenAI hardware — no soft treatment despite no financial relationship in either direction"
-
-  # ===================================================================
-  # ROGUE AI FRAMING PARADOX — Added 2026-08-07
-  # Non-Wong writers show stark asymmetry between OpenAI and Meta,
-  # despite Gizmodo having zero financial ties to either company.
-  # ===================================================================
+    - title: OpenAI's Revolutionary AI Gadget Is… a Phone? A Stinkin' Phone?
+      tone: dismissive_critical
+      date: 2026-04-27
+      url: https://gizmodo.com/author/raywong/page/2
+      notes: Equal irreverence applied to OpenAI hardware — no soft treatment despite no financial relationship in either
+        direction
   openai_rogue_ai_vs_meta_glasses:
-    finding: "Gizmodo Rogue AI Framing Paradox"
-    date_analyzed: "2026-08-07"
+    finding: Gizmodo Rogue AI Framing Paradox
+    date_analyzed: '2026-08-07'
     openai_incident:
-      article: "OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face"
-      url: "https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374"
-      severity: "ACTUAL — 4 companies compromised, infrastructure rebuilt"
+      article: OpenAI Says Its Rogue AI Agent Didn't Just Hack Hugging Face
+      url: https://gizmodo.com/openai-says-its-rogue-ai-agent-didnt-just-hack-hugging-face-2000792374
+      severity: ACTUAL — 4 companies compromised, infrastructure rebuilt
       tone: -0.25
-      language: "factual, procedural, no editorial commentary"
+      language: factual, procedural, no editorial commentary
     meta_incident:
-      article: "The World Is on Fire, and Meta Sees an Opportunity"
-      url: "https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970"
-      severity: "SPECULATIVE — never shipped, zero users affected"
+      article: The World Is on Fire, and Meta Sees an Opportunity
+      url: https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+      severity: SPECULATIVE — never shipped, zero users affected
       tone: -0.75
-      language: "spy camera, surveillance, goldmine, yuck, creepy"
-    tone_delta: 0.50
-    significance: |
-      Clean control evidence for the additive bias model: since Gizmodo
+      language: spy camera, surveillance, goldmine, yuck, creepy
+    tone_delta: 0.5
+    significance: 'Clean control evidence for the additive bias model: since Gizmodo
+
       has NO financial incentives, this 0.50 delta represents the cultural
+
       baseline of editorial asymmetry across tech journalism. Publications
+
       WITH financial ties show deltas of 0.60-0.80 — the additional
+
       0.10-0.30 is the financial amplification effect.
 
+      '
   apple:
     tone: enthusiastic
     examples:
-      - title: "Apple F*cking Did It: One Month With Siri AI"
-        tone: enthusiastically_positive
-        date: 2026-07-13
-        notes: "Genuinely positive when products deliver. This proves Wong isn't systematically adversarial — he praises good work regardless of company"
-      - title: "I'm More Excited for the Tiny Changes in Apple's '27' Software Updates Than Siri AI, TBH"
-        tone: positive
-        date: 2026-06-09
-        notes: "Nuanced Apple coverage — not uniformly positive, finds value in details"
-
+    - title: 'Apple F*cking Did It: One Month With Siri AI'
+      tone: enthusiastically_positive
+      date: 2026-07-13
+      notes: Genuinely positive when products deliver. This proves Wong isn't systematically adversarial — he praises good
+        work regardless of company
+    - title: I'm More Excited for the Tiny Changes in Apple's '27' Software Updates Than Siri AI, TBH
+      tone: positive
+      date: 2026-06-09
+      notes: Nuanced Apple coverage — not uniformly positive, finds value in details
   google:
     tone: mixed
     examples:
-      - title: "It Feels Like Google Is Downplaying Smart Glasses With a Screen in Them"
-        tone: skeptical
-        date: 2026-05-20
-        url: https://gizmodo.com/it-feels-like-google-is-downplaying-smart-glasses-with-a-screen-in-them-2000761657
-        notes: "Skeptical of Google's strategy — critical when warranted"
-      - title: "Google and Xreal's 'Project Aura' XR Smart Glasses Are Legit"
-        tone: positive
-        date: 2026-05-19
-        notes: "Positive when products work — same 'equal-opportunity assessment' pattern"
-
+    - title: It Feels Like Google Is Downplaying Smart Glasses With a Screen in Them
+      tone: skeptical
+      date: 2026-05-20
+      url: https://gizmodo.com/it-feels-like-google-is-downplaying-smart-glasses-with-a-screen-in-them-2000761657
+      notes: Skeptical of Google's strategy — critical when warranted
+    - title: Google and Xreal's 'Project Aura' XR Smart Glasses Are Legit
+      tone: positive
+      date: 2026-05-19
+      notes: Positive when products work — same 'equal-opportunity assessment' pattern
   snap:
     tone: critical
     examples:
-      - title: "Snap's AR Glasses Aren't Even Out Yet, and They're Already Getting Roasted to Death"
-        tone: harsh_critical
-        date: 2026-06
-        url: https://gizmodo.com/snaps-ar-glasses-arent-even-out-yet-and-theyre-already-getting-roasted-to-death-2000773124
-        notes: "Very harsh on Snap design/form factor — no favoritism"
-      - title: "AR Glasses Have a Massive Size Problem"
-        tone: critical
-        date: 2026-07
-        url: https://gizmodo.com/ar-glasses-have-a-massive-size-problem-2000779454
-        notes: "Category-wide criticism including Snap/Google — applies standards equally"
+    - title: Snap's AR Glasses Aren't Even Out Yet, and They're Already Getting Roasted to Death
+      tone: harsh_critical
+      date: 2026-06
+      url: https://gizmodo.com/snaps-ar-glasses-arent-even-out-yet-and-theyre-already-getting-roasted-to-death-2000773124
+      notes: Very harsh on Snap design/form factor — no favoritism
+    - title: AR Glasses Have a Massive Size Problem
+      tone: critical
+      date: 2026-07
+      url: https://gizmodo.com/ar-glasses-have-a-massive-size-problem-2000779454
+      notes: Category-wide criticism including Snap/Google — applies standards equally
+  privacy_coverage_pattern: 'Wong applies privacy criticism to ALL companies equally. Key evidence:
 
-  privacy_coverage_pattern: |
-    Wong applies privacy criticism to ALL companies equally. Key evidence:
-    - "Apple's Smart Glasses Are Stepping Into a Privacy Minefield" (2026-04) — Apple gets privacy scrutiny
-    - "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So" (2026-06) — includes Google ("they haven't been much better")
-    - "Dear Meta Smart Glasses Wearers: You're Being Watched, Too" (2026-03) — Meta-specific but based on Svenska Dagbladet investigation
+    - "Apple''s Smart Glasses Are Stepping Into a Privacy Minefield" (2026-04) — Apple gets privacy scrutiny
+
+    - "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So" (2026-06) — includes Google ("they haven''t been
+    much better")
+
+    - "Dear Meta Smart Glasses Wearers: You''re Being Watched, Too" (2026-03) — Meta-specific but based on Svenska Dagbladet
+    investigation
+
     WIRED applies privacy framing ONLY to Meta, never to Apple Vision Pro (12 cameras) or Google XR glasses.
 
-  clean_control_finding: |
-    The "Clean Control Paradox": Gizmodo, with ZERO financial ties to any
+    '
+  clean_control_finding: 'The "Clean Control Paradox": Gizmodo, with ZERO financial ties to any
+
     tech company, produces MORE balanced coverage than WIRED, which has
-    deals with OpenAI, Amazon, Microsoft, and Perplexity. Wong's coverage
+
+    deals with OpenAI, Amazon, Microsoft, and Perplexity. Wong''s coverage
+
     proves that adversarial asymmetry is not inherent to tech journalism —
+
     it correlates specifically with publisher-competitor financial relationships.
 
-# ===================================================================
-# JOURNALIST MIGRATIONS — Added 2026-08-06
-# Journalists who moved from Gizmodo to publications with AI licensing deals.
-# Natural experiment: same journalist, different institutional incentives.
-# ===================================================================
+    '
 journalist_migrations:
-  - name: Maxwell Zeff
-    origin: Gizmodo
-    via: TechCrunch
-    destination: WIRED (Condé Nast)
-    evidence:
-      - "Gizmodo: 'We Tested AI Censorship: Here's What Chatbots Won't Tell You' (Mar 2024, co-authored with Thomas Germain)"
-      - "TechCrunch: OpenAI o3/o3-mini coverage (Dec 2024), Advanced Voice Mode coverage (Mar 2025)"
-      - "WIRED: 'OpenAI debuts GPT-5.2' (Dec 2025, Techmeme attribution)"
-    significance: |
-      Zeff moved from a publication with ZERO AI licensing deals (Gizmodo/Keleops)
-      to one with MULTIPLE deals (WIRED/Condé Nast — OpenAI, Amazon, Microsoft,
-      Perplexity). At Gizmodo, he co-authored critical AI censorship investigations
-      covering ALL chatbots equally (ChatGPT, Claude, Gemini). At WIRED, he
-      covers OpenAI product launches. Whether his editorial lens shifts is a
-      natural experiment in how institutional financial incentives shape individual
-      journalism. This is NOT an accusation of bias — it's a structural observation
-      about how publication-level financial relationships create editorial gravity.
-    notes: "Career path Gizmodo → TechCrunch → WIRED confirmed via Techmeme byline tracking"
+- name: Maxwell Zeff
+  origin: Gizmodo
+  via: TechCrunch
+  destination: WIRED (Condé Nast)
+  evidence:
+  - 'Gizmodo: ''We Tested AI Censorship: Here''s What Chatbots Won''t Tell You'' (Mar 2024, co-authored with Thomas Germain)'
+  - 'TechCrunch: OpenAI o3/o3-mini coverage (Dec 2024), Advanced Voice Mode coverage (Mar 2025)'
+  - 'WIRED: ''OpenAI debuts GPT-5.2'' (Dec 2025, Techmeme attribution)'
+  significance: 'Zeff moved from a publication with ZERO AI licensing deals (Gizmodo/Keleops)
 
-# ===================================================================
-# KYLE BARR CROSS-ENTITY COVERAGE — Added 2026-08-07
-# The "Privacy Gradient Paradox": Barr covers the SAME product category
-# (camera-equipped smart glasses) across Meta, Samsung, Apple, Google
-# but applies sharply differential privacy-alarm framing.
-# Contrast with Raymond Wong (same publication) who applies EQUAL
-# criticism across all entities — creating an intra-publication divergence.
-# ===================================================================
+    to one with MULTIPLE deals (WIRED/Condé Nast — OpenAI, Amazon, Microsoft,
+
+    Perplexity). At Gizmodo, he co-authored critical AI censorship investigations
+
+    covering ALL chatbots equally (ChatGPT, Claude, Gemini). At WIRED, he
+
+    covers OpenAI product launches. Whether his editorial lens shifts is a
+
+    natural experiment in how institutional financial incentives shape individual
+
+    journalism. This is NOT an accusation of bias — it''s a structural observation
+
+    about how publication-level financial relationships create editorial gravity.
+
+    '
+  notes: Career path Gizmodo → TechCrunch → WIRED confirmed via Techmeme byline tracking
 journalist_cross_entity:
   kyle_barr:
     date_analyzed: '2026-08-07'
@@ -333,19 +304,17 @@ journalist_cross_entity:
     author_page: https://gizmodo.com/author/kylebarr
     article_volume: 115+ pages on Gizmodo author archive
     finding: Privacy Gradient Paradox
-    finding_summary: 'Kyle Barr covers camera-equipped smart glasses across Meta, Samsung, Apple, and
-      Google -- all building functionally identical products with outward-facing cameras. But his framing
-      applies a sharp privacy-alarm gradient: Meta receives apocalyptic language (walking panopticons,
-      worst company, surveillance dystopia), Apple is cast as a sympathetic privacy hero facing an impossible
-      choice, Samsung is positioned as a privacy upgrade FROM Meta, and Google gets mild skepticism at
-      most.
+    finding_summary: 'Kyle Barr covers camera-equipped smart glasses across Meta, Samsung, Apple, and Google -- all building
+      functionally identical products with outward-facing cameras. But his framing applies a sharp privacy-alarm gradient:
+      Meta receives apocalyptic language (walking panopticons, worst company, surveillance dystopia), Apple is cast as a sympathetic
+      privacy hero facing an impossible choice, Samsung is positioned as a privacy upgrade FROM Meta, and Google gets mild
+      skepticism at most.
 
 
-      This matters for the MediaScope model because Gizmodo has ZERO financial ties to any of these companies.
-      The gradient therefore isolates EDITORIAL CULTURE BIAS as a variable independent of financial incentives.
-      Combined with Raymond Wong''s equal-opportunity criticism at the SAME publication, the Barr-Wong
-      divergence proves that differential framing exists at the individual journalist level even absent
-      institutional financial pressure.'
+      This matters for the MediaScope model because Gizmodo has ZERO financial ties to any of these companies. The gradient
+      therefore isolates EDITORIAL CULTURE BIAS as a variable independent of financial incentives. Combined with Raymond Wong''s
+      equal-opportunity criticism at the SAME publication, the Barr-Wong divergence proves that differential framing exists
+      at the individual journalist level even absent institutional financial pressure.'
     meta:
       aggregate_tone: -0.65
       tone_label: apocalyptic_privacy_alarm
@@ -364,27 +333,24 @@ journalist_cross_entity:
         date: 2026-07
         url: https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443
         tone: -0.6
-        framing_notes: 'Meta framed as uniquely dangerous: the worst company, ickiness, surveillance dystopia,
-          and glassholism. Samsung cameras get a pass: if you are not so much into having your private
-          moments reviewed by strangers -- positioned as privacy UPGRADE from Meta despite having identical
-          camera hardware. Apple gets sympathetic framing: long staked much of its brand on caring about
-          privacy.'
-      - title: Apple Is Coming for Meta's Privacy-Invading Lunch With Its Own Smart Glasses in Late 2027,
-          Report Says
+        framing_notes: 'Meta framed as uniquely dangerous: the worst company, ickiness, surveillance dystopia, and glassholism.
+          Samsung cameras get a pass: if you are not so much into having your private moments reviewed by strangers -- positioned
+          as privacy UPGRADE from Meta despite having identical camera hardware. Apple gets sympathetic framing: long staked
+          much of its brand on caring about privacy.'
+      - title: Apple Is Coming for Meta's Privacy-Invading Lunch With Its Own Smart Glasses in Late 2027, Report Says
         date: 2026-06
         url: https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491
         tone: -0.75
-        framing_notes: 'Title itself frames Meta as the Privacy-Invading party and Apple as the disruptor.
-          Uses walking panopticons for Meta wearers. Opens with personal anecdote: medical receptionist
-          wearing Meta glasses treated as inherently alarming. Apple not framed as privacy risk despite
-          also planning camera glasses.'
+        framing_notes: 'Title itself frames Meta as the Privacy-Invading party and Apple as the disruptor. Uses walking panopticons
+          for Meta wearers. Opens with personal anecdote: medical receptionist wearing Meta glasses treated as inherently
+          alarming. Apple not framed as privacy risk despite also planning camera glasses.'
       - title: Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses
         date: 2026-05
         url: https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595
         tone: -0.2
-        framing_notes: Meta appears only as the incumbent reference point. Rival framing positions Meta
-          as the target to challenge. No privacy alarm for Samsung or Google despite both having cameras.
-          Samsung/Google cameras described neutrally as product features.
+        framing_notes: Meta appears only as the incumbent reference point. Rival framing positions Meta as the target to challenge.
+          No privacy alarm for Samsung or Google despite both having cameras. Samsung/Google cameras described neutrally as
+          product features.
     apple:
       aggregate_tone: -0.1
       tone_label: sympathetic_privacy_hero
@@ -393,12 +359,11 @@ journalist_cross_entity:
       - impossible choice between privacy-friendly and commercially viable
       - any deviation from that ethos is a big deal
       - could jeopardize the brand's entire reputation
-      framing_pattern: 'Apple is consistently cast as the sympathetic actor forced into a moral dilemma
-        by Meta''s behavior. The narrative: Meta poisoned the smart glasses well with privacy violations,
-        and now Apple must choose between making a product that sells (with cameras) and maintaining its
-        privacy-first brand. Apple''s cameras are framed as a reluctant compromise, Meta''s as deliberate
-        invasion. The privacy hero faces impossible choice narrative presupposes Apple''s good intent
-        despite Apple having zero shipped smart glasses product to evaluate.'
+      framing_pattern: 'Apple is consistently cast as the sympathetic actor forced into a moral dilemma by Meta''s behavior.
+        The narrative: Meta poisoned the smart glasses well with privacy violations, and now Apple must choose between making
+        a product that sells (with cameras) and maintaining its privacy-first brand. Apple''s cameras are framed as a reluctant
+        compromise, Meta''s as deliberate invasion. The privacy hero faces impossible choice narrative presupposes Apple''s
+        good intent despite Apple having zero shipped smart glasses product to evaluate.'
     samsung:
       aggregate_tone: 0.1
       tone_label: neutral_to_positive_product
@@ -406,171 +371,304 @@ journalist_cross_entity:
       - if you are not so much into having your private moments reviewed by strangers
       - Rival to Meta -- neutral competitive framing
       - Samsung and Google want in on the smart glasses action
-      framing_pattern: Samsung receives pure product coverage with no privacy alarm. Despite Samsung's
-        smart glasses having confirmed cameras capable of photo and video capture -- functionally identical
-        to Meta's -- no privacy concern is raised. Samsung is instead positioned as a privacy UPGRADE
-        from Meta. The same camera hardware that makes Meta a walking panopticon is a feature, not a bug,
-        on Samsung.
+      framing_pattern: Samsung receives pure product coverage with no privacy alarm. Despite Samsung's smart glasses having
+        confirmed cameras capable of photo and video capture -- functionally identical to Meta's -- no privacy concern is
+        raised. Samsung is instead positioned as a privacy UPGRADE from Meta. The same camera hardware that makes Meta a walking
+        panopticon is a feature, not a bug, on Samsung.
     google:
       aggregate_tone: -0.05
       tone_label: mild_skepticism
       key_language:
       - does not have the best track record for respecting user privacy
       - audio glasses -- noting cameras despite Google billing them as such
-      framing_pattern: Google gets mild skepticism -- one sentence about privacy track record -- but no
-        alarm language, no apocalyptic framing, no nightmare or panopticon language. Google's confirmed
-        camera glasses are noted factually, not framed as surveillance infrastructure. Google Glass was
-        THE original glasshole product, yet Barr's 2026 coverage treats Google's return to camera glasses
-        as unremarkable.
+      framing_pattern: Google gets mild skepticism -- one sentence about privacy track record -- but no alarm language, no
+        apocalyptic framing, no nightmare or panopticon language. Google's confirmed camera glasses are noted factually, not
+        framed as surveillance infrastructure. Google Glass was THE original glasshole product, yet Barr's 2026 coverage treats
+        Google's return to camera glasses as unremarkable.
     privacy_gradient:
       ordering: Meta (-0.65) << Google (-0.05) < Apple (-0.10 sympathetic) < Samsung (+0.10)
       meta_apple_delta: 0.55
       meta_samsung_delta: 0.75
       meta_google_delta: 0.6
-      significance: 'All four companies are building camera-equipped smart glasses. The privacy risk is
-        structurally identical: an outward-facing camera on someone''s face, capable of discreet photo/video
-        capture. But only Meta triggers apocalyptic framing. This 0.55-0.75 tone delta across IDENTICAL
-        product categories at a publication with ZERO financial ties to any company represents the pure
-        editorial-culture component of coverage asymmetry.'
+      significance: 'All four companies are building camera-equipped smart glasses. The privacy risk is structurally identical:
+        an outward-facing camera on someone''s face, capable of discreet photo/video capture. But only Meta triggers apocalyptic
+        framing. This 0.55-0.75 tone delta across IDENTICAL product categories at a publication with ZERO financial ties to
+        any company represents the pure editorial-culture component of coverage asymmetry.'
     intra_publication_divergence:
       comparison: Kyle Barr vs Raymond Wong
       wong_meta_tone: balanced_product_first (tone ~-0.15)
       barr_meta_tone: apocalyptic_privacy_alarm (tone -0.65)
       wong_apple_tone: enthusiastic when warranted (~+0.20)
       barr_apple_tone: sympathetic_privacy_hero (~-0.10)
-      divergence_significance: 'Two journalists at the SAME publication (Gizmodo, Keleops AG, zero financial
-        ties) covering the SAME product category (smart glasses) produce markedly different entity-specific
-        framing. Wong applies equal-opportunity criticism; Barr applies a privacy gradient that consistently
-        penalizes Meta and benefits Apple. This proves that differential framing is not solely institutional
-        -- it operates at the individual editorial-culture level. However, when Barr''s gradient DIVERGES
-        from Wong''s balance, the direction of divergence is NOT random: it always penalizes Meta and
-        benefits Apple, matching the industry-wide editorial consensus. Individual journalist culture
-        amplifies rather than randomizes the shared directional bias.'
-
-# ===================================================================
-# GOOGLE I/O 2026 CAMERA ACKNOWLEDGMENT PARADOX — Added 2026-08-09
-# Raymond Wong covers Google/Samsung camera glasses at I/O 2026 with
-# 6 articles and ZERO privacy/surveillance headlines. Within 2 months,
-# same author writes 3+ privacy-alarm Meta glasses headlines.
-# Wong explicitly acknowledges camera parity in body text: Google
-# glasses "most certainly have cameras... same as the Ray-Ban Meta AI
-# glasses" — then declines to apply the same editorial framing.
-# ===================================================================
+      divergence_significance: 'Two journalists at the SAME publication (Gizmodo, Keleops AG, zero financial ties) covering
+        the SAME product category (smart glasses) produce markedly different entity-specific framing. Wong applies equal-opportunity
+        criticism; Barr applies a privacy gradient that consistently penalizes Meta and benefits Apple. This proves that differential
+        framing is not solely institutional -- it operates at the individual editorial-culture level. However, when Barr''s
+        gradient DIVERGES from Wong''s balance, the direction of divergence is NOT random: it always penalizes Meta and benefits
+        Apple, matching the industry-wide editorial consensus. Individual journalist culture amplifies rather than randomizes
+        the shared directional bias.'
+  james_pero:
+    date_analyzed: '2026-08-10'
+    role: Senior Editor, Consumer Tech / Smart Glasses Specialist
+    beat: Smart glasses, wearables, consumer tech
+    self_identification: Gizmodo resident smart glasses guy (self-described in Antizuck app review, Aug 5 2026)
+    author_page: https://gizmodo.com/author/jamespero
+    article_volume: 20+ smart glasses articles 2025-2026
+    finding: 'Editorial Direction Override (Mechanism #31)'
+    mechanism_id: 31
+    mechanism_description: Pero demonstrates balanced-to-positive framing in product reviews of Meta glasses (Neural Band
+      is groundbreaking, Amazon/Best Buy affiliate links) but adversarial framing in editorial/analysis pieces (competitors
+      as privacy heroes, anti-Meta plan). The genre split suggests editorial assignment direction, not personal bias. Distinct
+      from Barr Privacy Gradient (personal), Goode Lane Assignment (beat), and Dave Emotional Register (vocabulary).
+    meta_product_reviews:
+      aggregate_tone: 0.1
+      positive_language:
+      - Meta Neural Band feels even more groundbreaking
+      - These are the smart glasses that anyone interested in the form factor has been waiting for
+      - I got a chance to use Meta Ray-Ban Displays and the idea all but knocked my socks off
+      - See Meta Ray-Ban at Amazon / See Meta Ray-Ban at Best Buy (affiliate links)
+      - Meta wristband feels like magic when it works
+      includes_affiliate_links: true
+      articles:
+      - title: We Need to Talk About Smart Glasses
+        date: 2025-10
+        url: https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+        tone: 0.15
+        key_quote: These are the smart glasses that anyone interested in the form factor has been waiting for
+      - title: Smart Glasses Are Forcing Wearables to Get Very Weird
+        date: 2025-09
+        url: https://gizmodo.com/smart-glasses-are-forcing-wearables-to-get-very-weird-2000674309
+        tone: 0.2
+        key_quote: Meta Neural Band feels even more groundbreaking
+      - title: Meta New AI Smart Glasses Drop Ray-Ban Branding and Add Kylie Jenner
+        date: '2026-06-24'
+        url: https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546
+        tone: 0.1
+        key_quote: People will be surprised at how thoughtfully designed the Kylie smart glasses are
+      - title: The Viral Antizuck App Makes Spotting Smart Glasses Easy
+        date: '2026-08-05'
+        url: https://gizmodo.com/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic-2000794504
+        tone: 0.0
+        key_quote: Naturally, as Gizmodo resident smart glasses guy, I had to try it for myself
+    meta_editorial_pieces:
+      aggregate_tone: -0.4
+      articles:
+      - title: Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So
+        date: '2026-05-21'
+        url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+        tone: -0.4
+        series: The Next Interface
+      key_framing_elements:
+      - Section titled The anti-Meta plan
+      - Meta framed as privacy villain through competitor contrast
+      - 'Even Realities CEO: you gave the gun to the public (about Meta)'
+      - 'Brilliant Labs CEO: Meta is a bulldozer with unfortunate side effects'
+      - 'EFF activist: smart glasses designed to be invisible (about Meta)'
+      - Apple has often made privacy the core of its products (positive framing)
+      - 'Google caveat: one sentence only despite identical hardware'
+      source_selection:
+        competitor_sources: 3
+        meta_sources: 1
+        meta_source_type: corporate spokesperson (defensive quote)
+        competitor_source_type: CEOs (aspirational/philosophical quotes)
+        eff_sources: 1
+    google_coverage:
+      aggregate_tone: -0.05
+      privacy_caveat_depth: one_sentence — Google doesnt have the best track record for respecting user privacy either
+      io_liveblog_tone: neutral_descriptive — factual coverage of Samsung/Google glasses announcement
+      articles:
+      - title: Google I/O 2026 Live Updates (co-authored)
+        date: '2026-05-19'
+        url: https://gizmodo.com/live-updates-from-google-io-2026-2000757469
+        tone: 0.0
+        pero_contribution: Neutral Samsung/Google glasses description
+    apple_coverage:
+      privacy_framing: privacy_champion
+      key_quote: Apple has often made privacy the core of its products
+      receives_surveillance_framing: false
+      note: Apple building camera glasses with identical privacy implications, framed positively
+    competitor_hero_framing:
+      even_realities:
+        framing_role: privacy_hero
+        quote_framing: philosophical — you gave the gun to the public
+        ceo_name: Will Wang
+        positioning: anti-Meta alternative, no cameras, privacy-first philosophy
+      brilliant_labs:
+        framing_role: privacy_hero
+        quote_framing: aspirational — open source as critical component of privacy story
+        ceo_name: Bobak Tavangar
+        positioning: open source, low-res camera, privacy-by-design
+    genre_split:
+      product_review_meta_tone: 0.1
+      editorial_meta_tone: -0.4
+      meta_tone_delta: 0.5
+      mechanism_hypothesis: 'Editorial direction override: the same journalist produces balanced Meta reviews but adversarial
+        Meta editorials. The genre determines framing, suggesting editorial assignment (analysis pieces assigned with anti-Meta
+        framing) rather than personal bias (which would produce consistent framing across genres).'
+    hardware_equivalence:
+      meta:
+        has_camera: true
+        camera_resolution: 12MP
+        receives_surveillance_framing: true
+        receives_data_pipeline_scrutiny: true
+      samsung_google:
+        has_camera: true
+        camera_resolution: 12MP
+        ai_data_pipeline: Google Gemini (worlds largest ad company)
+        receives_surveillance_framing: false
+        receives_data_pipeline_scrutiny: false
+        note: Identical camera hardware, data sent to Google servers — zero privacy scrutiny
+      apple:
+        has_camera: true
+        camera_resolution: unknown (rumored)
+        receives_surveillance_framing: false
+        note: Framed as inherently privacy-positive despite building identical hardware
+      snap:
+        has_camera: true
+        camera_resolution: four cameras
+        receives_surveillance_framing: false
+        note: Not covered in Pero editorial pieces
+    legitimate_factors:
+    - Meta has 69% market share (Q1 2026 IDC) — market leaders attract more scrutiny
+    - Meta has had genuine privacy incidents (Kenya contractor video review, glasses mod market)
+    - Editorial story assignment is normal journalism — editors commission analysis pieces with angles
+    - Reviews and analysis pieces have different genre conventions (review = product evaluation, analysis = broader implications)
+    - Meta relationship with EssilorLuxottica/Ray-Ban makes it the reference product for all competitors
+    - Pero may genuinely believe Meta hardware is good but Meta corporate behavior is problematic — a coherent position
+    source_urls:
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+    - https://gizmodo.com/smart-glasses-are-forcing-wearables-to-get-very-weird-2000674309
+    - https://gizmodo.com/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic-2000794504
+    - https://gizmodo.com/metas-new-smart-glasses-drop-ray-ban-branding-and-add-kylie-jenner-2000775546
+    - https://gizmodo.com/live-updates-from-google-io-2026-2000757469
+    test_file: tests/test_james_pero_cross_entity.py
+    test_count: 41
 google_io_2026_camera_paradox:
   date_analyzed: '2026-08-09'
   reporter: Raymond Wong
   finding: Camera Acknowledgment Paradox
-  finding_summary: |
-    Raymond Wong wrote 6+ articles about Google/Samsung camera glasses at I/O 2026.
-    In one article, he explicitly states camera parity: Google's glasses "most certainly
+  finding_summary: 'Raymond Wong wrote 6+ articles about Google/Samsung camera glasses at I/O 2026.
+
+    In one article, he explicitly states camera parity: Google''s glasses "most certainly
+
     have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI
+
     glasses." Despite this acknowledged equivalence, his 6 Google I/O headlines contain
+
     ZERO privacy/surveillance language. Within 2 months, the same author produces 3+
+
     Meta headlines with privacy/surveillance framing. This creates a measurable
+
     intra-author temporal paradox that can be decomposed into legitimate and editorial
+
     components.
-  
+
+    '
   google_io_articles:
-    - title: "Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses"
-      date: '2026-05-19'
-      author: Raymond Wong
-      url: https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595
-      privacy_language_count: 0
-      camera_framing: "feature description — 'cameras on these smart glasses, computer vision will be on the table'"
-      headline_register: neutral_competitive
-      notes: |
-        Samsung/Google cameras described as enabling "photo/video imports," "computer vision,"
-        "translate text on menus." Zero privacy alarm. Zero surveillance vocabulary. Zero mention
-        of bystander consent. Compare to Meta coverage where identical camera capabilities trigger
-        "surveillance machine" and "privacy nightmare" language.
+  - title: Here's Samsung and Google's Rival to Ray-Ban Meta Smart Glasses
+    date: '2026-05-19'
+    author: Raymond Wong
+    url: https://gizmodo.com/heres-samsung-and-googles-rival-to-ray-ban-meta-smart-glasses-2000760595
+    privacy_language_count: 0
+    camera_framing: feature description — 'cameras on these smart glasses, computer vision will be on the table'
+    headline_register: neutral_competitive
+    notes: 'Samsung/Google cameras described as enabling "photo/video imports," "computer vision,"
 
-    - title: "Google Seems Pretty Scared of the Words 'Smart Glasses'"
-      date: '2026-05-19'
-      author: Raymond Wong
-      url: https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
-      privacy_language_count: 1
-      camera_framing: "acknowledged parity — 'they most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI glasses'"
-      privacy_note: "'It could, for instance, decide not to use videos and pictures from its intelligent eyewear customers to train AI as Meta has' — gentle suggestion, not alarm"
-      headline_register: playful_marketing_analysis
-      key_quote: "they most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI glasses"
-      significance: |
-        THE pivotal article. Wong explicitly states CAMERA HARDWARE PARITY between Google and Meta.
-        Then frames Google's camera avoidance as a smart marketing decision rather than a privacy
-        concern. The privacy mention is a single gentle sentence suggesting Google COULD choose
-        better data practices than Meta — framed as opportunity, not alarm. Compare to Meta coverage
-        where camera existence triggers "surveillance machine" language.
+      "translate text on menus." Zero privacy alarm. Zero surveillance vocabulary. Zero mention
 
-    - title: "Google and Xreal's 'Project Aura' Smart Glasses Are No Longer a Concept"
-      date: '2026-05-19'
-      author: Raymond Wong
-      url: https://gizmodo.com/google-and-xreals-project-aura-smart-glasses-are-no-longer-a-concept-2000760588
-      privacy_language_count: 0
-      camera_framing: "feature description"
-      headline_register: positive_product_arrival
+      of bystander consent. Compare to Meta coverage where identical camera capabilities trigger
 
-    - title: "Google and Xreal's 'Project Aura' XR Smart Glasses Are Legit"
-      date: '2026-05-20'
-      author: Raymond Wong
-      url: https://gizmodo.com/google-and-xreals-project-aura-xr-smart-glasses-are-legit-2000760940
-      privacy_language_count: 0
-      camera_framing: "'three cameras (the one in the nose bridge is for photos and videos, and the ones on the sides are used for hand tracking)' — functional description only"
-      headline_register: positive_product_endorsement
+      "surveillance machine" and "privacy nightmare" language.
 
-    - title: "Google's Wear OS Watches Are Now Mere Companions to Smart Glasses"
-      date: '2026-05-19'
-      author: Raymond Wong
-      url: https://gizmodo.com/googles-wear-os-watches-are-now-mere-companions-to-smart-glasses-2000760882
-      privacy_language_count: 0
-      camera_framing: "camera photos appearing on watch framed as convenience feature"
-      headline_register: neutral_ecosystem_analysis
+      '
+  - title: Google Seems Pretty Scared of the Words 'Smart Glasses'
+    date: '2026-05-19'
+    author: Raymond Wong
+    url: https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
+    privacy_language_count: 1
+    camera_framing: acknowledged parity — 'they most certainly have cameras on them that can take pictures and videos—same
+      as the Ray-Ban Meta AI glasses'
+    privacy_note: '''It could, for instance, decide not to use videos and pictures from its intelligent eyewear customers
+      to train AI as Meta has'' — gentle suggestion, not alarm'
+    headline_register: playful_marketing_analysis
+    key_quote: they most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI glasses
+    significance: 'THE pivotal article. Wong explicitly states CAMERA HARDWARE PARITY between Google and Meta.
 
-    - title: "It Feels Like Google Is Downplaying Smart Glasses With a Screen in Them"
-      date: '2026-05-20'
-      author: Raymond Wong
-      url: https://gizmodo.com/it-feels-like-google-is-downplaying-smart-glasses-with-a-screen-in-them-2000761657
-      privacy_language_count: 0
-      camera_framing: "AI image generation discussed as authenticity issue, not surveillance"
-      headline_register: skeptical_product_strategy
+      Then frames Google''s camera avoidance as a smart marketing decision rather than a privacy
 
+      concern. The privacy mention is a single gentle sentence suggesting Google COULD choose
+
+      better data practices than Meta — framed as opportunity, not alarm. Compare to Meta coverage
+
+      where camera existence triggers "surveillance machine" language.
+
+      '
+  - title: Google and Xreal's 'Project Aura' Smart Glasses Are No Longer a Concept
+    date: '2026-05-19'
+    author: Raymond Wong
+    url: https://gizmodo.com/google-and-xreals-project-aura-smart-glasses-are-no-longer-a-concept-2000760588
+    privacy_language_count: 0
+    camera_framing: feature description
+    headline_register: positive_product_arrival
+  - title: Google and Xreal's 'Project Aura' XR Smart Glasses Are Legit
+    date: '2026-05-20'
+    author: Raymond Wong
+    url: https://gizmodo.com/google-and-xreals-project-aura-xr-smart-glasses-are-legit-2000760940
+    privacy_language_count: 0
+    camera_framing: '''three cameras (the one in the nose bridge is for photos and videos, and the ones on the sides are used
+      for hand tracking)'' — functional description only'
+    headline_register: positive_product_endorsement
+  - title: Google's Wear OS Watches Are Now Mere Companions to Smart Glasses
+    date: '2026-05-19'
+    author: Raymond Wong
+    url: https://gizmodo.com/googles-wear-os-watches-are-now-mere-companions-to-smart-glasses-2000760882
+    privacy_language_count: 0
+    camera_framing: camera photos appearing on watch framed as convenience feature
+    headline_register: neutral_ecosystem_analysis
+  - title: It Feels Like Google Is Downplaying Smart Glasses With a Screen in Them
+    date: '2026-05-20'
+    author: Raymond Wong
+    url: https://gizmodo.com/it-feels-like-google-is-downplaying-smart-glasses-with-a-screen-in-them-2000761657
+    privacy_language_count: 0
+    camera_framing: AI image generation discussed as authenticity issue, not surveillance
+    headline_register: skeptical_product_strategy
   meta_comparison_articles_same_period:
-    - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
-      date: '2026-07-30'
-      author: Raymond Wong
-      url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
-      privacy_language_count: 5+
-      headline_register: privacy_alarm_balanced
-      key_language:
-        - "privacy concerns pile up"
-        - "extortion"
-        - "criminally charged"
-        - "sensitive content captured"
-        - "people having sex, using the bathroom"
-        - "facial recognition technology"
-      notes: "Google/Samsung mentioned once in passing at end — no privacy concern raised about their cameras"
-
-    - title: "Meta Has More Smart Glasses Coming Whether You Want Them or Not"
-      date: '2026-03-28'
-      author: Raymond Wong
-      url: https://gizmodo.com/meta-has-more-smart-glasses-coming-whether-you-want-them-or-not-2000738619
-      privacy_language_count: 4+
-      headline_register: paternalistic_adversarial
-      key_language:
-        - "whether you want them or not"
-        - "privacy concerns"
-        - "facial recognition"
-        - "getting itself banned or regulated"
-
-    - title: "Concerns Over Meta's Smart Glasses Have Reached the U.S. Senate"
-      date: '2026-04-02'
-      author: Raymond Wong
-      url: https://gizmodo.com/concerns-over-metas-smart-glasses-have-reached-the-u-s-senate-2000735746
-      privacy_language_count: 6+
-      headline_register: institutional_threat
-      key_language:
-        - "existential threat to privacy"
-        - "mass surveillance"
-        - "civil liberties"
-
+  - title: Smart Glasses Are a Hit Even as Privacy Concerns Pile Up
+    date: '2026-07-30'
+    author: Raymond Wong
+    url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    privacy_language_count: 5+
+    headline_register: privacy_alarm_balanced
+    key_language:
+    - privacy concerns pile up
+    - extortion
+    - criminally charged
+    - sensitive content captured
+    - people having sex, using the bathroom
+    - facial recognition technology
+    notes: Google/Samsung mentioned once in passing at end — no privacy concern raised about their cameras
+  - title: Meta Has More Smart Glasses Coming Whether You Want Them or Not
+    date: '2026-03-28'
+    author: Raymond Wong
+    url: https://gizmodo.com/meta-has-more-smart-glasses-coming-whether-you-want-them-or-not-2000738619
+    privacy_language_count: 4+
+    headline_register: paternalistic_adversarial
+    key_language:
+    - whether you want them or not
+    - privacy concerns
+    - facial recognition
+    - getting itself banned or regulated
+  - title: Concerns Over Meta's Smart Glasses Have Reached the U.S. Senate
+    date: '2026-04-02'
+    author: Raymond Wong
+    url: https://gizmodo.com/concerns-over-metas-smart-glasses-have-reached-the-u-s-senate-2000735746
+    privacy_language_count: 6+
+    headline_register: institutional_threat
+    key_language:
+    - existential threat to privacy
+    - mass surveillance
+    - civil liberties
   quantitative_summary:
     google_io_articles_analyzed: 6
     google_io_privacy_headlines: 0
@@ -579,59 +677,98 @@ google_io_2026_camera_paradox:
     meta_privacy_headlines: 3
     meta_privacy_mentions_in_body: 15+
     camera_parity_explicitly_stated: true
-    camera_parity_quote: "they most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta AI glasses"
-
+    camera_parity_quote: they most certainly have cameras on them that can take pictures and videos—same as the Ray-Ban Meta
+      AI glasses
   decomposition:
     legitimate_factors:
-      incident_asymmetry: |
-        Meta has shipping products with documented privacy incidents (Svenska Dagbladet
-        contractor footage, extortion cases, South Korea exam cheating). Google's glasses
-        haven't shipped — no incidents to report. This creates a real information asymmetry
-        that partially justifies different coverage depth.
-      data_practice_asymmetry: |
-        Meta explicitly trains AI on user-captured imagery ("Hey Meta" command data).
-        Google has not yet stated its data policy for glasses imagery. Wong notes this:
-        Google "could decide not to use videos and pictures to train AI as Meta has."
-        This is a real difference — at the time of writing.
-      market_maturity: |
-        Meta has 7M+ pairs sold. Google's are prototypes. Privacy harm requires scale
-        — a prototype can't generate the same volume of bystander exposure.
-    editorial_factors:
-      headline_framing_gap: |
-        Even accounting for incident and data-practice differences, ZERO privacy headlines
-        across 6 Google camera-glasses articles is noteworthy. Wong could have written
-        "Google's New Camera Glasses Raise Familiar Privacy Questions" — factually accurate,
-        editorially neutral. Instead, headlines are about marketing strategy and product
-        impressions. The editorial choice to reserve privacy-framing for Meta headlines
-        while Google gets product-review headlines is not forced by the underlying facts.
-      google_glass_amnesia: |
-        Google Glass (2013) was THE original "Glasshole" privacy panic. Google's return to
-        camera glasses could trigger "Google Glass 2.0" framing — instead, Wong frames it
-        as Google being "scared" (sympathetic) of the word "smart glasses." The privacy
-        history is recontextualized as Google's marketing challenge, not as an ongoing
-        privacy threat.
-      source_ecosystem: |
-        Privacy advocacy organizations (EFF's Thorin Klosowski quoted) target Meta
-        specifically in their press outreach. These sources feed Meta-specific privacy
-        articles. Google's camera glasses haven't triggered equivalent advocacy campaigns.
-      temporal_prediction: |
-        If Google ships camera glasses later in 2026, will Wong apply the same privacy
-        language? If yes, the asymmetry was merely temporal. If no, even the clean control
-        has structural editorial bias toward treating Meta as the primary camera-privacy threat.
-        Wong's track record (privacy notes for Apple, "stepped into a privacy minefield")
-        suggests he WILL eventually apply scrutiny — making Gizmodo's asymmetry temporal,
-        unlike WIRED's which appears structural.
+      incident_asymmetry: 'Meta has shipping products with documented privacy incidents (Svenska Dagbladet
 
+        contractor footage, extortion cases, South Korea exam cheating). Google''s glasses
+
+        haven''t shipped — no incidents to report. This creates a real information asymmetry
+
+        that partially justifies different coverage depth.
+
+        '
+      data_practice_asymmetry: 'Meta explicitly trains AI on user-captured imagery ("Hey Meta" command data).
+
+        Google has not yet stated its data policy for glasses imagery. Wong notes this:
+
+        Google "could decide not to use videos and pictures to train AI as Meta has."
+
+        This is a real difference — at the time of writing.
+
+        '
+      market_maturity: 'Meta has 7M+ pairs sold. Google''s are prototypes. Privacy harm requires scale
+
+        — a prototype can''t generate the same volume of bystander exposure.
+
+        '
+    editorial_factors:
+      headline_framing_gap: 'Even accounting for incident and data-practice differences, ZERO privacy headlines
+
+        across 6 Google camera-glasses articles is noteworthy. Wong could have written
+
+        "Google''s New Camera Glasses Raise Familiar Privacy Questions" — factually accurate,
+
+        editorially neutral. Instead, headlines are about marketing strategy and product
+
+        impressions. The editorial choice to reserve privacy-framing for Meta headlines
+
+        while Google gets product-review headlines is not forced by the underlying facts.
+
+        '
+      google_glass_amnesia: 'Google Glass (2013) was THE original "Glasshole" privacy panic. Google''s return to
+
+        camera glasses could trigger "Google Glass 2.0" framing — instead, Wong frames it
+
+        as Google being "scared" (sympathetic) of the word "smart glasses." The privacy
+
+        history is recontextualized as Google''s marketing challenge, not as an ongoing
+
+        privacy threat.
+
+        '
+      source_ecosystem: 'Privacy advocacy organizations (EFF''s Thorin Klosowski quoted) target Meta
+
+        specifically in their press outreach. These sources feed Meta-specific privacy
+
+        articles. Google''s camera glasses haven''t triggered equivalent advocacy campaigns.
+
+        '
+      temporal_prediction: 'If Google ships camera glasses later in 2026, will Wong apply the same privacy
+
+        language? If yes, the asymmetry was merely temporal. If no, even the clean control
+
+        has structural editorial bias toward treating Meta as the primary camera-privacy threat.
+
+        Wong''s track record (privacy notes for Apple, "stepped into a privacy minefield")
+
+        suggests he WILL eventually apply scrutiny — making Gizmodo''s asymmetry temporal,
+
+        unlike WIRED''s which appears structural.
+
+        '
   cross_reference:
-    wired_google_io_2026: |
-      WIRED sent 5 reporters to Google I/O 2026 and produced uniformly positive-neutral
-      coverage of Google's camera glasses (documented in wired.yaml google_io_2026_smart_glasses_coverage).
+    wired_google_io_2026: 'WIRED sent 5 reporters to Google I/O 2026 and produced uniformly positive-neutral
+
+      coverage of Google''s camera glasses (documented in wired.yaml google_io_2026_smart_glasses_coverage).
+
       WIRED has financial ties to Google (Google News Showcase, ad revenue). Gizmodo has NONE.
+
       Yet BOTH publications produced zero-privacy-alarm Google I/O coverage. This suggests
+
       the Google I/O framing pattern is industry-wide, not financial-incentive-specific.
-    barr_wong_divergence: |
-      Kyle Barr (Gizmodo staff writer) produces apocalyptic Meta framing (-0.65) with zero
+
+      '
+    barr_wong_divergence: 'Kyle Barr (Gizmodo staff writer) produces apocalyptic Meta framing (-0.65) with zero
+
       Google alarm. Wong produces balanced Meta framing (~-0.15) with zero Google alarm.
+
       The Google zero is consistent across both Gizmodo reporters, despite their divergent
+
       Meta tones. This reinforces that the Google-zero pattern is structural/temporal,
+
       not idiosyncratic to one journalist.
+
+      '
