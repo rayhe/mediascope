@@ -1,4 +1,63 @@
 # MediaScope Iteration Log
+## 2026-08-10 08:00 PT — Type C: Financial Incentive Mapping — Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle (Mechanism #25)
+
+**Rotation:** C (Financial Incentive Mapping)
+
+### Finding — Mechanism #25: Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle
+
+**PROFILE DATA CORRECTION:** competitor-entities.yaml previously stated "Amazon invests in Anthropic only" (under Microsoft's `dual_ai_lab_investment_paradox`). This was factually wrong after Amazon's $50B OpenAI investment in the Feb 2026 Series F round ($122B total: Amazon $50B, SoftBank $30B, NVIDIA $30B, Microsoft continued participation, $3B from individual investors). Amazon is now the LARGEST dual-lab investor ($50B OpenAI + $13B Anthropic = $63B), surpassing Microsoft ($13B OpenAI + $5B Anthropic = $18B) by 3.5x.
+
+**New Discovery — WaPo Non-Disclosure Pattern (Washingtonian, Jun 23, 2026):**
+
+Paul Farhi (former WaPo reporter, 35 years) documented systematic non-disclosure of Bezos's AI financial interests on WaPo editorial pages:
+- Zero opinion columns opposing data center construction in 6 months, despite Bezos/Amazon financial interest
+- WaPo has a "strategic content-sharing" agreement with OpenAI (content licensing deal) — not disclosed in columns specifically about ChatGPT
+- Amazon-OpenAI $138B AWS infrastructure deal never referenced in supportive editorial commentary
+- Bezos ownership mention appears only intermittently, near article bottoms
+- WaPo news side IS rigorous and consistent in disclosing — the gap is editorial/opinion only
+
+**Financial Chain (7 links):**
+1. Amazon → $50B OpenAI investment (Feb 2026, Series F)
+2. Amazon → $13B+ Anthropic investment ($8B initial + $5B Apr 2026)
+3. OpenAI → $138B multiyear investment into AWS infrastructure
+4. WaPo ← OpenAI content licensing deal ("strategic content-sharing")
+5. Jeff Bezos personally owns WaPo (purchased 2013, $250M)
+6. Anthropic → $53.4B paper gain for Amazon Q2 2026
+7. Both OpenAI (Jun 8) and Anthropic (Jun 1) filed confidential S-1s
+
+**Dual-IPO Exposure:**
+- Amazon's $63B across both pending IPOs is the largest financial stake any media-adjacent entity has in the AI lab IPO wave
+- If both IPOs succeed at target valuations (~$1T OpenAI, ~$965B+ Anthropic), appreciation could exceed $100B
+- Meta has ZERO investment in either IPO, ZERO newspaper ownership, and its own IPO was 2012
+
+**Amazon leverage updated from 6→7 layers** (added `openai_investment`). Microsoft `dual_ai_lab_investment_paradox` corrected to acknowledge Amazon as largest dual investor.
+
+**Legitimate factors (all documented in test file):**
+- WaPo news side independently rigorous in disclosing
+- Bezos has maintained editorial independence stance since 2013
+- Amazon investment decisions made by corporate leadership (Jassy), not Bezos personally
+- WaPo adversarial Meta coverage predates OpenAI investment
+- Amazon's OpenAI investment has commercial rationale (AWS revenue, Trainium)
+- Institutional investors routinely invest in competing companies
+
+### Files modified
+- `profiles/competitor-entities.yaml` — Amazon entity: 7th layer (openai_investment), Mechanism #25 section, WaPo-OpenAI content deal, AWS-OpenAI $138B deal, Microsoft dual-investor claim corrected
+- `profiles/competitor-coverage-research.yaml` — leverage layer counts 6→7
+- `tests/test_amazon_dual_lab_non_disclosure_triangle_aug10.py` — 26 tests, 8 classes (new)
+- `tests/test_type_c_amazon_sextuple_leverage_aug6.py` — Updated to expect 7 layers
+- `README.md` — Test count 8307→8333, file count 274→275, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8307→8333, file count 274→275, new tree entry
+
+### Test Results
+- New tests: 26/26 passing
+- Updated sextuple tests: 46/46 passing
+- Structural consistency: 124/124 passing
+- Total: 8,333 tests across 275 files
+
+### Commit
+131ec5c — pushed to GitHub
+
+---
 ## 2026-08-10 07:00 PT — Type B: Journalist Cross-Entity Tracking — Casey Newton (Platformer/Hard Fork) Disclosure-as-Inoculation Paradox (Mechanism #24)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
