@@ -1,4 +1,22 @@
 # MediaScope Iteration Log
+## 2026-08-10 14:00 PT — Type A: Competitor Coverage Deep Dive — Guardian × OpenAI
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Publication × Competitor:** Guardian × OpenAI
+
+**Finding:** Mechanism #29 — Guardian Rogue AI Coverage Volume & Temperature Asymmetry. Same-event natural experiment: OpenAI, Anthropic, and Meta all disclosed AI containment breaches from the same testing company (Irregular) in Jul–Aug 2026. Dan Milmo published 4 standalone OpenAI rogue AI articles but 0 standalone Meta articles despite identical Aug 5 disclosure. 6 other outlets (Reuters, WSJ, CNN, Daily Caller, People, New Scientist) all published standalone Meta rogue AI coverage. Editorial temperature diverges: Meta child safety gets "big tobacco" loaded metaphor; OpenAI rogue AI gets factual relay. Coverage direction aligns with Guardian's OpenAI deal (Feb 2025) and absent Meta deal. 7 legitimate factors documented.
+
+**Files modified:**
+- `tests/test_guardian_rogue_ai_volume_asymmetry_aug10.py` (NEW — 8 classes, 30 def tests, 34 pytest-collected)
+- `profiles/guardian.yaml` (rogue_ai_coverage_asymmetry under dan_milmo)
+- `profiles/competitor-coverage-research.yaml` (mechanism_id 29)
+- `README.md` (8547 tests, 282 files)
+- `docs/ARCHITECTURE.md` (8547 tests, 282 files)
+
+**Tests:** 34/34 mechanism tests pass, 124/124 structural consistency tests pass
+**Commit:** b748b18
+
+
 ## 2026-08-10 13:00 PT — Type D: Test & Verify — Count Drift Fix, Mechanism ID Consistency, Cross-Validation
 
 **Rotation:** D (Test & Verify)

@@ -1684,6 +1684,116 @@ journalist_profiles:
     rather than systematic. Lower than Paresh Dave (0.82) because
     Schechner has fewer meta-critical articles in total.
     '
+- name: Georgia Wells
+  current_role: ai_governance_reporter
+  publication: The Wall Street Journal
+  beat: AI governance, AI safety, technology regulation
+  background: >
+    Georgia Wells covers AI governance, cybersecurity policy, and technology
+    regulation for The Wall Street Journal. She reports across entity boundaries —
+    covering both OpenAI regulatory enforcement AND Meta business AI expansion.
+    This dual-beat scope makes her a critical cross-entity control case.
+  cross_entity_coverage_analysis:
+    mechanism_id: 30
+    key_finding: >
+      Editorial Independence Under Financial Conflict — Georgia Wells co-authored
+      adversarial OpenAI coverage (state AG investigation, Jun 13) despite News Corp's
+      $250M+ content licensing deal with OpenAI. She also co-authored the largest rogue
+      AI story of 2026 ("Rogue AI Hacks Herald New Era of Cyber Chaos," Aug 2) which
+      included News Corp's best-in-class financial disclosure. Her Meta coverage uses
+      standard business-reporting register without adversarial escalation. The editorial
+      register difference between her Meta and OpenAI coverage is explained by story TYPE
+      (business expansion vs regulatory enforcement/safety incident), not by the financial
+      relationship.
+    openai_coverage:
+      average_tone_category: mixed
+      articles:
+        - title: "OpenAI Investigated by Coalition of State Attorneys General"
+          date: "2026-06-13"
+          co_author: "Keach Hagey"
+          topic: "ag_investigation"
+          tone_category: "regulatory_enforcement"
+          tone_value: -0.35
+          includes_news_corp_disclosure: true
+          source_url: "https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928"
+          framing_notes: >
+            Adversarial regulatory coverage of OpenAI. State AGs investigating
+            OpenAI's data practices. Published DESPITE News Corp's $250M+ deal.
+        - title: "Rogue AI Hacks Herald New Era of Cyber Chaos"
+          date: "2026-08-02"
+          co_authors:
+            - Robert McMillan
+            - Amrith Ramkumar
+          topic: "rogue_ai_safety"
+          tone_category: "alarm_but_factual"
+          tone_value: -0.25
+          includes_news_corp_disclosure: true
+          source_url: "https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c"
+          framing_notes: >
+            3-reporter deep dive on OpenAI/Anthropic rogue AI incidents.
+            Includes disclosure: "News Corp, owner of The Wall Street Journal,
+            has a content-licensing partnership with OpenAI."
+        - title: "The Latest Scary-Sounding AI Milestone: A Brand-New Virus"
+          date: "2026-08-07"
+          co_author: "Alex Janin"
+          topic: "ai_biosecurity"
+          tone_category: "cautionary"
+          tone_value: -0.15
+          includes_news_corp_disclosure: false
+          source_url: "https://www.wsj.com/tech/ai/the-latest-scary-sounding-ai-milestone-a-brand-new-virus-6080b1db"
+    meta_coverage:
+      average_tone_category: "business_reporting"
+      adversarial_escalation: false
+      articles:
+        - title: "Mark Zuckerberg Wants Meta's New AI Agents to Run Your Whole Business"
+          date: "2026-06-03"
+          topic: "enterprise_expansion"
+          tone_category: "neutral"
+          tone_value: 0.05
+          includes_news_corp_disclosure: true
+          source_url: "https://www.wsj.com/tech/mark-zuckerberg-wants-metas-new-ai-agents-to-run-your-whole-business-6e2100e2"
+    register_difference_explanation: >
+      The editorial register difference between Wells's OpenAI and Meta coverage is
+      explained by story type/topic: OpenAI coverage involves regulatory enforcement
+      (AG investigation) and safety incidents (rogue AI), which inherently use more
+      adversarial language. Meta coverage involves business expansion (enterprise AI
+      agents), which uses neutral business reporting language.
+    financial_relationship_predictive: false
+    disclosure_correlation: >
+      The WSJ's consistent disclosure practice (noting News Corp licensing deals in
+      articles about both Meta and OpenAI) correlates with more balanced cross-entity
+      coverage compared to publications without disclosures. WIRED (no disclosure of
+      Condé Nast-OpenAI deal) shows 0.95 tone gap; Guardian (no disclosure of
+      Guardian-OpenAI deal) shows 0.80+ gap; WSJ with disclosure shows Wells covering
+      OpenAI adversarially despite the financial relationship. Transparency appears
+      to function as an accountability mechanism that reduces coverage asymmetry.
+    assignment_pattern:
+      openai_rogue_ai_reporters: 3
+      meta_rogue_ai_reporters: 1
+      wells_on_openai_rogue_ai: true
+      wells_on_meta_rogue_ai: false
+      meta_rogue_ai_reporter: "Sam Schechner"
+      legitimate_factors:
+        - "OpenAI/Anthropic incidents were first disclosures — novelty justifies more resources"
+        - "Meta rogue AI was a follow-on — fewer resources for follow-on stories"
+        - "Schechner had existing rogue AI expertise from earlier coverage"
+        - "Wells's governance beat naturally aligns with first-disclosure analysis"
+        - "3-reporter pieces are common for WSJ enterprise stories regardless of company"
+    legitimate_factors:
+      - "OpenAI has genuinely more regulatory exposure in 2026 (AG investigations, DOJ discrimination)"
+      - "Meta business AI coverage is a different story type than safety/governance"
+      - "WSJ consistently discloses financial relationships, reducing conflict-of-interest pressure"
+      - "Wells also covers non-company-specific AI risk (biosecurity), suggesting genuine beat"
+      - "The WSJ published adversarial Meta coverage by other reporters in the same period"
+      - "News Corp's OpenAI and Meta deals are both disclosed, unlike Condé Nast or Guardian"
+    source_urls:
+      - "https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928"
+      - "https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c"
+      - "https://www.wsj.com/tech/mark-zuckerberg-wants-metas-new-ai-agents-to-run-your-whole-business-6e2100e2"
+      - "https://www.wsj.com/tech/ai/the-latest-scary-sounding-ai-milestone-a-brand-new-virus-6080b1db"
+      - "https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45"
+    test_file: "tests/test_georgia_wells_cross_entity.py"
+    test_count: 28
 journalist_cross_entity:
   joanna_stern:
     name: Joanna Stern

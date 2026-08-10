@@ -6190,3 +6190,63 @@ cross_publication_findings:
     test_file: tests/test_guardian_rogue_ai_volume_asymmetry_aug10.py
     test_count: 38
     date_added: 2026-08-10
+
+  wsj_georgia_wells_editorial_independence_control:
+    journalist: Georgia Wells
+    publication: The Wall Street Journal (News Corp)
+    finding_summary: >
+      Mechanism #30 — Disclosure-Correlated Editorial Independence Control Case.
+      Georgia Wells covers BOTH OpenAI governance/regulation AND Meta business AI,
+      making her a dual-beat cross-entity control case. Despite News Corp's $250M+
+      content licensing deal with OpenAI, Wells co-authored adversarial OpenAI coverage:
+      (1) "OpenAI Investigated by Coalition of State Attorneys General" (Jun 13, with
+      Keach Hagey) — regulatory enforcement framing; (2) "Rogue AI Hacks Herald New Era
+      of Cyber Chaos" (Aug 2, with McMillan + Ramkumar) — dramatic headline with
+      best-in-class financial disclosure. Her Meta coverage ("Zuckerberg Wants Meta's
+      New AI Agents to Run Your Whole Business," Jun 3) uses neutral business-reporting
+      register. The editorial register difference is explained by story TYPE (regulatory
+      enforcement vs business expansion), NOT the financial relationship. This is a
+      POSITIVE CONTROL: the WSJ's consistent disclosure practice (noting News Corp
+      licensing deals) correlates with more balanced cross-entity coverage than
+      publications without disclosures (WIRED 0.95 tone gap, Guardian 0.80+ gap).
+    mechanism_id: 30
+    mechanism_name: disclosure_correlated_editorial_independence
+    mechanism_type: positive_control
+    key_articles:
+    - title: 'OpenAI Investigated by Coalition of State Attorneys General'
+      date: '2026-06-13'
+      authors: Keach Hagey, Georgia Wells
+      entity: OpenAI
+      tone: regulatory_enforcement
+      source_url: 'https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928'
+    - title: 'Rogue AI Hacks Herald New Era of Cyber Chaos'
+      date: '2026-08-02'
+      authors: Robert McMillan, Georgia Wells, Amrith Ramkumar
+      entity: OpenAI/Anthropic
+      tone: alarm_but_factual
+      disclosure: 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'
+      source_url: 'https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c'
+    - title: 'Mark Zuckerberg Wants Meta''s New AI Agents to Run Your Whole Business'
+      date: '2026-06-03'
+      authors: Georgia Wells
+      entity: Meta
+      tone: neutral_business_reporting
+      source_url: 'https://www.wsj.com/tech/mark-zuckerberg-wants-metas-new-ai-agents-to-run-your-whole-business-6e2100e2'
+    implication: >
+      Financial relationships do NOT uniformly predict softer coverage. The WSJ
+      demonstrates that consistent financial disclosure functions as an editorial
+      accountability mechanism that REDUCES coverage asymmetry. Publications that
+      disclose (WSJ) show weaker financial-coverage correlation than publications
+      that don't (WIRED, Guardian). This suggests the MediaScope hypothesis should
+      be refined: financial relationships predict SOFTER coverage PRIMARILY when the
+      relationship is UNDISCLOSED to readers.
+    legitimate_factors:
+    - 'OpenAI genuinely faces more regulatory enforcement in 2026'
+    - 'Story type (regulation vs business) explains register differences'
+    - 'WSJ Chinese wall practices may be stronger than at Condé Nast-owned publications'
+    - 'News Corp discloses BOTH its OpenAI and Meta deals, unlike competitors'
+    - 'WSJ has an editorial culture of disclosure dating to pre-AI era'
+    - 'Assignment patterns have legitimate editorial explanations (novelty, expertise)'
+    test_file: tests/test_georgia_wells_cross_entity.py
+    test_count: 28
+    date_added: 2026-08-10
