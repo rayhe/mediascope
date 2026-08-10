@@ -619,7 +619,7 @@ entities:
       - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
       - https://www.wsj.com/tech/ai/amazon-earnings-q2-2026-amzn-stock-3daf95f7
     sextuple_publisher_leverage:
-      overview: 'Amazon has SIX distinct financial relationship mechanisms with
+      overview: 'Amazon has SEVEN distinct financial relationship mechanisms with
 
         publishers — more than any other tech company in the MediaScope
 
@@ -627,13 +627,19 @@ entities:
 
         pilot deals). OpenAI has one (content licensing). Meta has one
 
-        (content licensing). Amazon''s six layers create the most complex
+        (content licensing). Amazon''s seven layers create the most complex
 
         financial entanglement between any tech company and the publishing
 
         industry, yet Amazon consistently receives softer coverage than
 
         Meta from the same publications that are financially tied to Amazon.
+
+        NOTE: Key name retained as sextuple_publisher_leverage for backward
+
+        compatibility; actual layer count is SEVEN after OpenAI $50B
+
+        investment (Feb 2026) discovery. See Mechanism #25.
 
         '
       layers:
@@ -651,6 +657,20 @@ entities:
           structural dependency even without direct editorial pressure.
 
           AWS revenue: $42.2B Q2 2026 (+37% YoY), fastest growth in 18 quarters.
+
+          OPENAI-AWS INFRASTRUCTURE DEAL: OpenAI committed $138B multiyear
+
+          investment into AWS cloud infrastructure (Feb 2026). AWS named
+
+          exclusive third-party cloud distribution provider for OpenAI
+
+          Frontier (agentic enterprise platform). OpenAI consumes 2GW
+
+          of Amazon Trainium capacity. This makes AWS both the cloud
+
+          provider for OpenAI AND the conduit for OpenAI enterprise
+
+          distribution — a deeper integration than any other AI lab.
 
           '
       - name: advertising_platform
@@ -716,15 +736,33 @@ entities:
 
           Post lost 60,000+ subscribers post-layoffs. Bezos told CNBC
 
-          (May 2026) the Post must be "a profitable enterprise." This
+          (May 2026) the Post must be "a profitable enterprise."
 
-          creates a unique dynamic: the world''s most powerful publisher
+          WAPO-OPENAI CONTENT DEAL: WaPo has a "strategic content-sharing"
 
-          (WaPo) is owned by the same person who controls the world''s
+          agreement with OpenAI — OpenAI pays WaPo to display Post links
 
-          largest e-commerce and cloud company. WaPo coverage of Amazon
+          and articles when ChatGPT users query breaking news, politics,
 
-          and its competitors is inherently conflicted.
+          tech, and global affairs. This means Bezos-owned WaPo is
+
+          financially linked to OpenAI through BOTH Amazon''s $50B
+
+          investment AND WaPo''s own content licensing deal.
+
+          NON-DISCLOSURE (documented by Washingtonian, Jun 23, 2026,
+
+          Paul Farhi — former WaPo reporter, 35 years): WaPo editorial
+
+          pages systematically omit disclosure of Bezos AI interests.
+
+          Zero opinion columns opposing data centers in 6 months.
+
+          WaPo-OpenAI deal not disclosed in ChatGPT columns.
+
+          Amazon-OpenAI $138B AWS deal never referenced. WaPo news
+
+          side IS rigorous in disclosing — the gap is editorial/opinion.
 
           '
         source_urls:
@@ -769,6 +807,39 @@ entities:
         source_urls:
         - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
         - https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
+      - name: openai_investment
+        detail: 'Amazon invested $50B in OpenAI''s $122B Series F round (Feb 2026),
+
+          making it the single largest investor in the round. Combined with
+
+          the $13B Anthropic investment, Amazon has $63B invested across
+
+          BOTH major AI labs — the largest dual-lab investment by any entity.
+
+          OpenAI separately committed $138B to AWS infrastructure (multi-year)
+
+          and named AWS as exclusive third-party cloud distribution provider
+
+          for OpenAI Frontier. OpenAI also consumes 2GW of Amazon Trainium
+
+          capacity. The investment creates a closed financial loop: Amazon
+
+          invests $50B in OpenAI, OpenAI routes $138B back through AWS.
+
+          Amazon profits regardless of whether OpenAI or Anthropic prevails.
+
+          Corrects prior claim that Amazon invested in Anthropic only.
+
+          '
+        openai_invested_b: 50
+        openai_round: 'Series F, Feb 2026'
+        openai_round_total_b: 122
+        aws_openai_infrastructure_deal_b: 138
+        combined_dual_lab_investment_b: 63
+        source_urls:
+        - https://www.engadget.com/ai/openai-secures-another-110-billion-in-funding-from-amazon-nvidia-and-softbank-171006356.html
+        - https://www.thetimes.com/business/companies-markets/article/openai-chatgpt-valuation-record-funding-round-9g5gfwt2b
+        - https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month
       meta_contrast: 'Meta has ONE financial relationship mechanism with publishers:
 
         voluntary AI content licensing ($50M/yr News Corp, plus 12 others).
@@ -781,7 +852,7 @@ entities:
 
         investment in an AI lab that avoids paying publishers.
 
-        Amazon has SIX mechanisms — yet publications receiving Amazon money
+        Amazon has SEVEN mechanisms — yet publications receiving Amazon money
 
         (NYT: $20-25M/yr Alexa deal; Condé Nast: Rufus + OpenAI + Microsoft
 
@@ -819,6 +890,72 @@ entities:
       source_urls:
       - https://www.reuters.com/business/retail-consumer/amazon-discusses-ai-content-marketplace-with-publishers-information-reports-2026-02-10/
       - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    mechanism_25_dual_lab_non_disclosure_triangle:
+      mechanism_id: 25
+      name: 'Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle'
+      finding: 'Amazon is the single largest investor in BOTH OpenAI ($50B,
+        Feb 2026 Series F) AND Anthropic ($13B+, cumulative through Apr 2026),
+        totaling $63B — the largest dual-lab investment by any entity, 3.5x
+        larger than Microsoft ($18B). Jeff Bezos personally owns the
+        Washington Post, which has its own strategic content-sharing agreement
+        with OpenAI. The Washingtonian (Jun 23, 2026, Paul Farhi) documented
+        systematic non-disclosure of Bezos AI financial interests on WaPo
+        editorial pages. Both OpenAI (Jun 8) and Anthropic (Jun 1) filed
+        confidential S-1s in June 2026. Meta has ZERO investment in either
+        IPO, ZERO newspaper ownership, and its own IPO was in 2012.
+        PROFILE CORRECTION: Prior entry stated "Amazon invests in Anthropic
+        only" — factually wrong after Feb 2026 $50B OpenAI round.'
+      non_disclosure_patterns:
+      - 'Zero WaPo editorial/opinion columns opposing data center construction
+        in 6 months, despite Bezos/Amazon financial interest in data centers'
+      - 'WaPo-OpenAI content licensing deal not disclosed in columns specifically
+        about ChatGPT'
+      - 'Amazon-OpenAI $138B AWS infrastructure deal never referenced in
+        supportive editorial commentary'
+      - 'Bezos ownership mention ("Amazon founder Jeff Bezos owns the Post")
+        appears only intermittently, near article bottoms'
+      - 'WaPo news side (distinct from opinion) IS rigorous and consistent
+        in disclosing Bezos ownership — the gap is editorial/opinion only'
+      dual_ipo_exposure:
+        openai_s1_filed: '2026-06-08'
+        anthropic_s1_filed: '2026-06-01'
+        openai_target_valuation_b: 1000
+        anthropic_valuation_b: 965
+        amazon_openai_investment_b: 50
+        amazon_anthropic_investment_b: 13
+        amazon_combined_investment_b: 63
+        meta_ipo_financial_stake_b: 0
+        meta_ipo_year: 2012
+        underwriters_shared: 'Goldman Sachs and Morgan Stanley lead BOTH IPOs'
+      legitimate_factors:
+      - 'WaPo news side is editorially independent and does consistently
+        disclose Bezos ownership — the non-disclosure is concentrated in
+        opinion/editorial pages'
+      - 'Bezos has maintained a public stance of editorial independence since
+        purchasing WaPo in 2013'
+      - 'Amazon investment decisions are made by corporate leadership (CEO
+        Andy Jassy), not by Bezos personally (executive chairman role)'
+      - 'WaPo adversarial Meta coverage predates the OpenAI investment by
+        many years'
+      - 'Amazon OpenAI investment has commercial rationale (AWS revenue,
+        Trainium compute sales, Frontier cloud distribution) separate from
+        any coverage influence'
+      - 'Large institutional investors routinely invest in competing companies
+        without direct coverage implications'
+      meta_contrast: 'Meta has ZERO investment in any AI lab IPO. ZERO newspaper
+        ownership. Meta IPO was 2012 — purely historical, no live financial
+        stake. Meta''s only publisher relationship is voluntary content
+        licensing. Amazon has $63B across two pending IPOs, owns a major
+        newspaper, has that newspaper''s own content deal with one of the
+        IPO companies, AND a $138B cloud infrastructure deal with the same
+        company. The temporal asymmetry: Meta IPO is past (2012); OpenAI/
+        Anthropic IPOs are active events with live financial exposure.'
+      source_urls:
+      - https://washingtonian.com/2026/06/23/the-washington-post-loves-data-centers-a-lot-more-than-disclosing-jeff-bezos-financial-interest-in-promoting-them/
+      - https://www.engadget.com/ai/openai-secures-another-110-billion-in-funding-from-amazon-nvidia-and-softbank-171006356.html
+      - https://www.thetimes.com/business/companies-markets/article/openai-chatgpt-valuation-record-funding-round-9g5gfwt2b
+      - https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month
+      - https://www.pymnts.com/artificial-intelligence-2/2026/openai-confidential-ipo-filing-joins-race-for-largest-public-listing-ever/
   apple:
     display_name: Apple
     aliases:
@@ -3242,16 +3379,14 @@ entities:
         at Meta, not at the company with seven-fold financial leverage.
 
         '
-      dual_ai_lab_investment_paradox: 'Microsoft is the ONLY company that invests in BOTH OpenAI (most
-
-        publisher deals) AND Anthropic (zero publisher deals). Amazon
-
-        invests in Anthropic only. Google invested in Anthropic ($2B+)
-
-        but has its own models (Gemini). No other company straddles both
-
-        sides of the publisher-deal divide like Microsoft does.
-
+      dual_ai_lab_investment_paradox: 'Both Microsoft and Amazon invest in BOTH OpenAI
+        AND Anthropic. Amazon is the LARGEST dual investor ($50B OpenAI +
+        $13B Anthropic = $63B), surpassing Microsoft ($13B OpenAI + $5B
+        Anthropic = $18B) by 3.5x. Google invested in Anthropic ($2B+) but
+        has its own models (Gemini). CORRECTED: Prior text stated "Microsoft
+        is the ONLY company that invests in BOTH" and "Amazon invests in
+        Anthropic only" — factually wrong after Amazon''s $50B OpenAI
+        investment in the Feb 2026 Series F round.
 
         Q4 FY26 reveals the hedge: Microsoft wrote DOWN its OpenAI
 
@@ -3273,6 +3408,12 @@ entities:
         succeed without publisher deals" (validates Anthropic''s approach,
 
         which also generates Azure revenue). Microsoft wins either way.
+
+        Amazon has the same hedged position but at 3.5x the scale, plus
+
+        it owns a major newspaper (WaPo) that Amazon''s AI partners
+
+        pay for content licensing.
 
         '
     publisher_deals_note: 'Microsoft has financial relationships with MORE MediaScope-profiled

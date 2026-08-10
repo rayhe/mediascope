@@ -880,7 +880,7 @@ cross_entity_leverage:
 
         '
     comparison:
-      amazon_layers: 6
+      amazon_layers: 7
       google_layers: 4
       meta_layers: 1
       openai_layers: 1
@@ -931,7 +931,7 @@ cross_entity_leverage:
 
         '
       publication: news_corp
-    leverage_layer_count: 6
+    leverage_layer_count: 7
     leverage_layers:
     - aws_cloud_hosting
     - advertising_platform
@@ -966,7 +966,7 @@ cross_entity_leverage:
       report_date: '2026-07-30'
       services_revenue_b: 30.7
     comparison:
-      amazon_layers: 6
+      amazon_layers: 7
       apple_layers: 5
       google_layers: 4
       meta_layers: 1

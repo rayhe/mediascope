@@ -48,14 +48,18 @@ class TestAmazonSextupleLeverage:
         assert 'sextuple_publisher_leverage' in amazon
 
     def test_exactly_six_layers(self, entities):
+        """Note: originally 6 layers (sextuple), now 7 after OpenAI $50B
+        investment documented in Mechanism #25 (Aug 10 2026). Key name
+        retained as sextuple_publisher_leverage for backward compat."""
         layers = entities['entities']['amazon']['sextuple_publisher_leverage']['layers']
-        assert len(layers) == 6
+        assert len(layers) == 7
 
     def test_layer_names_match(self, entities):
         layers = entities['entities']['amazon']['sextuple_publisher_leverage']['layers']
         expected = {
             'aws_cloud_hosting', 'advertising_platform', 'ai_content_licensing',
-            'kindle_publishing_platform', 'bezos_wapo_ownership', 'anthropic_investment'
+            'kindle_publishing_platform', 'bezos_wapo_ownership', 'anthropic_investment',
+            'openai_investment'
         }
         actual = {layer['name'] for layer in layers}
         assert actual == expected
@@ -72,8 +76,9 @@ class TestAmazonSextupleLeverage:
         assert 'ZERO' in leverage['meta_contrast'] or 'ONE' in leverage['meta_contrast']
 
     def test_overview_mentions_six_mechanisms(self, entities):
+        """Updated Aug 10 2026: now SEVEN after OpenAI $50B investment (Mechanism #25)."""
         overview = entities['entities']['amazon']['sextuple_publisher_leverage']['overview']
-        assert 'SIX' in overview or 'six' in overview
+        assert 'SEVEN' in overview or 'seven' in overview
 
 
 # ===================================================================
@@ -193,9 +198,10 @@ class TestLeverageCountComparison:
     """Validates comparative leverage counts across entities."""
 
     def test_amazon_has_most_layers(self, entities):
-        """Amazon (6) > Google (4) > OpenAI (1) = Meta (1)."""
+        """Amazon (7) > Google (4) > OpenAI (1) = Meta (1).
+        Updated Aug 10 2026: 6→7 after OpenAI $50B investment (Mechanism #25)."""
         leverage = entities['entities']['amazon']['sextuple_publisher_leverage']
-        assert len(leverage['layers']) == 6
+        assert len(leverage['layers']) == 7
 
     def test_google_has_four_coercion_layers(self, entities):
         """Google's quadruple coercion structure should be documented."""
@@ -226,12 +232,12 @@ class TestResearchFileCoverageAsymmetry:
 
     def test_leverage_layer_count_is_six(self, research):
         section = research['cross_entity_leverage']['amazon_sextuple_leverage']
-        assert section['leverage_layer_count'] == 6
+        assert section['leverage_layer_count'] == 7
 
     def test_comparison_data_present(self, research):
         comparison = research['cross_entity_leverage']['amazon_sextuple_leverage']['comparison']
         assert comparison['google_layers'] == 4
-        assert comparison['amazon_layers'] == 6
+        assert comparison['amazon_layers'] == 7
         assert comparison['meta_layers'] == 1
         assert comparison['openai_layers'] == 1
 
