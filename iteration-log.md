@@ -32115,3 +32115,77 @@ Legitimate factors documented: Frances Haugen source access, leaked documents av
 - `README.md` — test count updated to 8,182/268
 
 **Test results:** 63 passed, 0 failed
+
+## 2026-08-10 05:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × OpenAI Ad Cannibalization Self-Demonetization Paradox (Mechanism #22)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Publication:** Wall Street Journal (News Corp)
+**Competitor:** OpenAI (advertising business)
+
+### Finding
+**Mechanism #22: Content Licensee Self-Demonetization Paradox**
+
+News Corp/WSJ licenses content to OpenAI for $50M/yr → OpenAI uses that content to build an ad-supported chatbot (projected $2.5B in 2026, $100B by 2030) → The Paywall Penalty study (Jul 2026) shows WSJ gets 0% of AI-retrieval citations despite being a primary content source → WSJ doesn't investigate this self-demonetization cycle.
+
+Key insight: The asymmetry is in investigative DEPTH, not tone. WSJ covers OpenAI's ad expansion with the same neutral business register as Meta's ad dominance. But Meta's $243B ad business does NOT use publisher content — it runs on social media feeds. OpenAI's ads monetize content that publishers (including WSJ) supply. WSJ is uniquely positioned to investigate this structural threat but financially incentivized not to.
+
+**The Scoop Paradox:** WSJ broke the News Corp-OpenAI licensing deal story. When that same story was queried in the AI answer layer, AI returned Nieman Lab, Wikipedia, and TechCrunch — not WSJ. OpenAI monetizes WSJ's own scoops without citation or revenue sharing beyond the flat licensing fee.
+
+**6-step financial chain documented:**
+1. News Corp licenses content to OpenAI ($50M/yr)
+2. OpenAI uses content to train ChatGPT
+3. OpenAI launches ad business (Jan 2026)
+4. ChatGPT ads project $2.5B (2026), $100B (2030)
+5. Paywall Penalty: WSJ gets 0% AI citations
+6. $50M/yr creates disincentive to investigate
+
+**Score: 0.72** — below WIRED (0.82) because asymmetry is in investigative depth rather than tone, and legitimate editorial judgment about market maturity partly explains the gap.
+
+### Test Results
+- New tests: 62/62 passing (11 classes)
+- Structural consistency: 124/124 passing
+
+### Files modified
+- `profiles/news-corp.yaml` — Added mechanism #22 to competitor_relationships
+- `tests/test_wsj_openai_ad_cannibalization_self_demonetization_aug10.py` — 62 tests, 11 classes (new)
+- `README.md` — Test count 8191→8253, file count 271→272, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8191→8253, file count 271→272, new tree entry
+
+### Commit
+ecbc818 — pushed to GitHub
+
+## 2026-08-10 06:00 PT — Type A: Competitor Coverage Deep Dive — NYT × Anthropic Triple-Chain Financial Incentive Structure (Mechanism #23)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Publication:** New York Times
+**Competitor:** Anthropic
+
+### Finding
+**Mechanism #23: Triple-Chain Financial Incentive Structure**
+
+NYT has three independent financial pathways converging to predict Anthropic-positive coverage:
+
+- **Chain 1 (Direct):** Reported confidential NYT-Anthropic settlement (Dec 2025, FinancialContent — UNVERIFIED single source)
+- **Chain 2 (Indirect):** NYT ← Amazon ($20-25M/yr deal) ← Amazon owns 15-20% of Anthropic ($180-240B at secondary). Amazon posted $53.4B Q2 2026 gain from Anthropic stake.
+- **Chain 3 (Litigation Halo):** NYT suing OpenAI (Case 1:23-cv-11195) for billions. Anthropic is OpenAI's primary competitor; positive Anthropic coverage strengthens NYT's copyright litigation narrative.
+
+**Coverage evidence:**
+- Kevin Roose: Anthropic platformed as "Cybersecurity Reckoning" (Apr 7) vs Meta dismissed as "The Zuck Bot" (Apr 17) — 0.60 tone delta, same reporter, 10 days apart
+- NYT IPO coverage (Jun 1): "eclipsing OpenAI's $730 billion estimate"
+- $10B compute deal scoop (Jul 17): Anthropic as actor/buyer, Meta as reactor/vendor
+- Rogue AI coverage gap: NYT standalone for OpenAI only; Reuters/WSJ/CNN did standalone for all three incidents
+
+### Test Results
+- New tests: 27/27 passing (7 classes)
+- Mechanism number corrected: 22→23 (22 already assigned to WSJ Self-Demonetization)
+
+### Files modified
+- `profiles/nytimes.yaml` — Added `triple_chain_anthropic_incentive` section (Mechanism #23)
+- `profiles/competitor-coverage-research.yaml` — Added `nyt_anthropic_triple_chain_incentive` aggregate entry
+- `tests/test_nyt_anthropic_triple_chain_incentive_aug10.py` — 27 tests, 7 classes (new)
+- `README.md` — Test count 8253→8372, file count 272→273, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8253→8372, file count 272→273, new tree entry
+
+### Commit

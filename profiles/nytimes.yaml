@@ -4026,3 +4026,71 @@ notes: |
 # Aug 5, 2026. Analyst consensus $83.22 target (+11% upside). Slim position: $2.18B.
 # No new SEC filings since Jun 5 (Welch Form 4).
 # Updated: 2026-07-12
+
+# ===================================================================
+# MECHANISM #22: NYT-ANTHROPIC TRIPLE-CHAIN FINANCIAL INCENTIVE STRUCTURE
+# Type A: Competitor Coverage Deep Dive — Aug 10, 2026 06:00 PT
+# ===================================================================
+triple_chain_anthropic_incentive:
+  mechanism_number: 23
+  mechanism_name: "NYT-Anthropic Triple-Chain Incentive Structure"
+  summary: >
+    The NYT has three independent financial pathways that converge to predict
+    Anthropic-positive coverage. No other publication-entity pair in the dataset
+    has this many independent incentive chains pointing in the same direction.
+
+  chain_1_direct_settlement:
+    description: >
+      FinancialContent (Dec 29, 2025) reported a confidential settlement between
+      Anthropic and the NYT, including content licensing, source cards for Claude,
+      and data hygiene protocols. UNVERIFIED from second source.
+    status: "single_source_unverified"
+    if_confirmed_impact: "converts NYT from Anthropic adversary to financial partner"
+    source_url: "https://www.financialcontent.com/article/tokenring-2025-12-29-breaking-anthropic-and-the-new-york-times-reach-landmark-confidential-settlement-ending-high-stakes-copyright-battle"
+
+  chain_2_amazon_indirect:
+    description: >
+      NYT has $20-25M/yr Amazon deal. Amazon owns 15-20% of Anthropic ($180-240B
+      at secondary valuation). Amazon posted $53.4B Q2 2026 gain from Anthropic.
+      Amazon benefits from positive Anthropic coverage supporting IPO success.
+    nyt_amazon_deal: "$20-25M/yr AI content licensing"
+    amazon_anthropic_stake: "15-20% ($180-240B at $1.2T secondary)"
+    mechanism: "institutional incentive alignment without direct coordination"
+
+  chain_3_litigation_halo:
+    description: >
+      NYT suing OpenAI (Case 1:23-cv-11195, S.D.N.Y.) for billions. Anthropic
+      is OpenAI's primary competitor. Positive Anthropic coverage elevates the
+      'safety-first' narrative, implicitly contrasting with OpenAI's 'reckless'
+      approach — which trained on NYT content without permission.
+    case: "1:23-cv-11195, S.D.N.Y."
+    anthropic_openai_relationship: "primary competitor"
+
+  coverage_evidence:
+    kevin_roose_asymmetry:
+      anthropic_apr7: "Platforming — 'Cybersecurity Reckoning' — responsible steward"
+      meta_apr17: "Dismissive — 'The Zuck Bot Is Coming' — reductive personalization"
+      tone_delta: 0.60
+      same_reporter: true
+      days_apart: 10
+    ipo_coverage_jun1:
+      framing: "eclipsing OpenAI's $730B estimate — positions Anthropic ahead"
+      source: "https://headlinesbriefing.com/market/nyt-top-stories/anthropic-files-ipo-as-ai-listing-race-heats-up-400fa1bb"
+    compute_deal_jul17:
+      framing: "Anthropic proposed → Meta is considering — Anthropic as actor, Meta as reactor"
+      source: "https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/"
+    rogue_ai_coverage_gap:
+      openai_standalone: true
+      anthropic_standalone: false
+      meta_standalone: false
+      cross_outlet_control: "Reuters, WSJ, CNN all published standalone for all three"
+
+  legitimate_factors:
+    - "Settlement is unverified — Chain 1 may not exist"
+    - "Amazon Chinese walls separate licensing from investment teams"
+    - "OpenAI incident was first → inherent breaking-news value"
+    - "Kevin Roose safety-first framing may reflect beat orientation, not incentive"
+    - "NYT paywall may hide articles from search indexes"
+
+  test_file: "tests/test_nyt_anthropic_triple_chain_incentive_aug10.py"
+  test_count: 27

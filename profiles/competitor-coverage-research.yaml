@@ -6006,3 +6006,20 @@ cross_publication_findings:
       - https://www.reuters.com/legal/litigation/openai-anthropic-ai-agents-implicated-new-security-breaches-2026-08-05/
     test_count: 63
     test_file: tests/test_jeff_horwitz_cross_entity.py
+  nyt_anthropic_triple_chain_incentive:
+    publication: nytimes
+    finding_type: financial_incentive_mapping
+    finding_summary: 'NYT Triple-Chain Financial Incentive Structure (Mechanism #23):
+      Three independent financial pathways converging to predict Anthropic-positive
+      NYT coverage. Chain 1 (Direct): Reported confidential NYT-Anthropic settlement
+      (Dec 2025, FinancialContent — UNVERIFIED single source). Chain 2 (Indirect):
+      NYT ← Amazon ($20-25M/yr deal) ← Amazon owns 15-20% of Anthropic ($180-240B
+      at secondary, $53.4B Q2 2026 gain). Chain 3 (Litigation Halo): NYT suing OpenAI
+      (Case 1:23-cv-11195) for billions — Anthropic is OpenAI primary competitor,
+      positive Anthropic coverage strengthens NYT copyright litigation narrative.
+      Coverage evidence: Kevin Roose Anthropic platforming as Cybersecurity Reckoning
+      (Apr 7) vs Meta dismissed as The Zuck Bot (Apr 17) — 0.60 tone delta, same
+      reporter, 10 days. Rogue AI coverage gap: NYT standalone for OpenAI only.'
+    test_file: tests/test_nyt_anthropic_triple_chain_incentive_aug10.py
+    test_count: 27
+    date_added: 2026-08-10
