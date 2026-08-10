@@ -8454,6 +8454,7 @@ Also updated: distinct publications 411 → 412, career demo journalist count 22
 2,272 tests passing (no code changes — docs and tooling only).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `759b9ee`: Type D — 300 insertions, 9 deletions across 4 files. Pushed to GitHub.
 
 ## 2026-07-11 23:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
@@ -8510,6 +8511,7 @@ Also updated: distinct publications 411 → 412, career demo journalist count 22
 2,272 tests passing (all existing — no code changes, profile data only).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `8cdb156`: Type C — 89 insertions, 30 deletions in `nytimes.yaml`. Pushed to GitHub.
 
 ## 2026-07-11 22:00 PT — Type B: Journalist/Publication Research
@@ -8559,6 +8561,7 @@ Also updated: distinct publications 411 → 412, career demo journalist count 22
 2,272 tests passing (all existing — no code changes, profile data only).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `0e34669`: Type B — 175 insertions, 23 deletions across `journalists.yaml` and `editorial_changes.yaml`. Pushed to GitHub.
 
 ## 2026-07-11 15:00 PT — Type A: Article Deep Dive
@@ -8625,6 +8628,7 @@ Also updated: distinct publications 411 → 412, career demo journalist count 22
 - `_DEVICE_PATTERNS` has 90 keys (pattern-based) + 7 structural post-pass types = 97 total (consistent with docs)
 
 ### Commit
+0c167eb — pushed to GitHub
 - `b43dda3`: Type D — 53 insertions, 6 deletions across README.md and METHODOLOGY.md. Pushed to GitHub.
 
 ## 2026-07-11 09:00 PT — Type C: Ownership & Funding Deep Dive (Wired/Condé Nast)
@@ -8651,6 +8655,7 @@ Also updated: distinct publications 411 → 412, career demo journalist count 22
 - Fixed YAML parse error: data_breach_source_urls key was breaking description flow, moved after text block
 
 ### Commit
+0c167eb — pushed to GitHub
 - `e829e45`: Type C — 61 insertions, 16 deletions. All tests passing (2,242 total, 0 failures).
 
 ## 2026-07-11 07:00 PT — Type B: Journalist/Publication Research (4 profile expansions)
@@ -9884,6 +9889,7 @@ Article snippets based on real sources: Reuters, Barron's, Wired, MIT Tech Revie
 - `topic_classification_demo.py` runs successfully: 13/13 topic classifications correct
 
 ### Commit
+0c167eb — pushed to GitHub
 `97e276c` — Fix 'The Information' false positive, add content_licensing topic (28th), French Media Associations entity cluster, acronym org source extraction
 `983badf` — Type D: Topic classification demo + N-way comparison schema + Agent Guide improvements
 
@@ -9942,6 +9948,7 @@ Added 4 new journalist profiles to `profiles/careers/journalists.yaml`. Fixed Ca
 - Migration count consistency verified (553 tracker = 553 in docs)
 
 ### Commit
+0c167eb — pushed to GitHub
 `2a67f75` — Type B: Add 4 journalists (Williams, Bernal, Reynolds, Fussell) + tracker fix
 
 
@@ -12215,6 +12222,7 @@ Entity detection documentation gap: all 59 entity clusters were defined only in 
 - 75 structural consistency tests guarding doc-code synchronization
 
 ### Commit
+0c167eb — pushed to GitHub
 `dcd159d` — pushed to `rayhe/mediascope` main
 `8dc7920` — pushed to GitHub
 
@@ -14356,6 +14364,7 @@ This is the deepest documented governance entanglement between a media company's
 **Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
 
 ### Commit
+0c167eb — pushed to GitHub
 ee66311 — pushed to GitHub
 `3a62688`
 
@@ -15362,6 +15371,7 @@ Updated `test_topics.py::TestEdgeCases::test_all_topic_keywords_exist` to includ
 656 passing (641 → 656, +15 from `test_government_oversight_topic.py`). 26 test files.
 
 ### Commit
+0c167eb — pushed to GitHub
 
 `git commit -m "Add government_oversight topic + group_expert source detection (Type A MIT TR Anthropic, 16:00)"`
 
@@ -15945,6 +15955,7 @@ Added a cross-reference note in METHODOLOGY.md §7 explaining the two complement
 - `examples/sample_output/wired_meta_ai_gulag_engineer_revolt_2026_06_analysis.md` — NEW: full analysis
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 3d57fd3
 - Pushed to GitHub
 - Hash: 3bd7884
@@ -16008,6 +16019,7 @@ Added a cross-reference note in METHODOLOGY.md §7 explaining the two complement
 - `mediascope/cli.py` — analyze help text, score help text, score output label
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 078f9c8
 - Pushed to GitHub
 
@@ -16064,6 +16076,7 @@ CEO Roger Lynch (Oct 2025): "the company no longer expects advertising to be a g
 - `iteration-log.md` — This entry
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: ce2bf8c
 - Pushed to GitHub
 
@@ -16143,6 +16156,7 @@ All 518 tests pass.
 - All sample output files confirmed to exist on disk
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 55a245d
 - Pushed to GitHub
 
@@ -16205,6 +16219,7 @@ All sourced from advance.com corporate portfolio page and PitchBook investment r
 - 0 failures
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 35cb8bd
 
 ### Sources
@@ -16276,6 +16291,7 @@ This Guardian → Wired pipeline mirrors the Gizmodo → Wired pipeline already 
 - 0 failures
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: d37817d
 
 ---
@@ -16340,6 +16356,7 @@ Both reach the same conclusion (Meta is retaliating) but by fundamentally differ
 - 0 failures
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 89d528c
 
 ---
@@ -20137,6 +20154,7 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 - `docs/EDITORIAL_HISTORIES.md` — Journalist count 95→97, multi-pub count 92→96
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: e2e95b3
 - Pushed to GitHub
 
@@ -20195,6 +20213,7 @@ All 518 tests pass (no regressions).
 4. **The cross-analysis file already existed** (`wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md`) — this standalone analysis completes the pair by providing detailed toolkit validation for the Reuters side.
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 3f16877
 - Pushed to GitHub
 - Changes: `mediascope/analyze/framing.py` (3 pattern additions), `examples/sample_output/reuters_meta_mci_pause_2026_06_22_analysis.md` (new file)
@@ -20238,6 +20257,7 @@ All 518 tests pass (no regressions).
 All 518 tests pass (no regressions — data-only changes).
 
 ### Commit
+0c167eb — pushed to GitHub
 - Hash: 2a9212f
 - Pushed to GitHub
 
@@ -20288,6 +20308,7 @@ Alison Frankel's legal analysis column examines a parallel battle to Meta's soci
 All 563 tests pass (541 existing + 22 new, no regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -20327,6 +20348,7 @@ The toolkit detected loaded individual words ("atrocious," "gulag") but missed t
 All 616 tests pass (585 existing + 31 new, no regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `d0cb040` → `3fea382`
 
 ---
@@ -20367,6 +20389,7 @@ Article detection improved from 2 → 17 framing devices across 7 types. No new 
 All 641 tests pass (616 existing + 25 new, no regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `3fea382`
 
 ---
@@ -20411,6 +20434,7 @@ Fast Company: "Meta reverses decision to reassign employees to AI training roles
 All 660 tests pass (0 regressions). New trend_bundling correctly fires on Fast Company article (4 markers), correctly suppressed on NYT AI reviews article (factual enumeration, not bundling).
 
 ### Commit
+0c167eb — pushed to GitHub
 `5513ceb`
 
 ---
@@ -20448,6 +20472,7 @@ Pre-fix, only 6 framing devices detected (all `ironic_quotation`), with a mislea
 All 694 tests pass (34 new, 660 existing, 0 regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `c155627`
 
 ---
@@ -20476,6 +20501,7 @@ Guardian publication profile: ownership, revenue relationships, AI licensing, re
 All 694 tests pass (0 new, 0 regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `e242be6`
 
 ---
@@ -20513,6 +20539,7 @@ ARCHITECTURE.md tree listed 27 test files while the header claimed 28. `test_avc
 All 697 tests pass (3 new, 694 existing, 0 regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `e2a52a5`
 
 ---
@@ -20561,6 +20588,7 @@ Career data correctness, documentation accuracy, and parser robustness. Multiple
 All 697 tests pass (0 new, 697 existing, 0 regressions). CareerTracker loads all 101 journalists and detects 283 migrations.
 
 ### Commit
+0c167eb — pushed to GitHub
 `6f79d33`
 
 ---
@@ -20616,6 +20644,7 @@ Added post-detection filter in `detect_framing_devices()`:
 All **715 tests pass** (18 new, 697 existing, 0 regressions).
 
 ### Commit
+0c167eb — pushed to GitHub
 `10ce0dc`
 
 ---
@@ -21041,6 +21070,7 @@ This closes a significant gap in detecting editorial skepticism techniques that 
 3. product_launch: 0.1392 (announced, introduce)
 
 ### Commit
+0c167eb — pushed to GitHub
 - `05c939d` — fix: Quest false positive, add defense_military topic, framing correction Path E
 - 13 files changed, 256 insertions, 34 deletions
 - Pushed to GitHub
@@ -21178,6 +21208,7 @@ Entity detection gaps exposed by AI infrastructure/spending article. Nvidia, xAI
 - `examples/sample_output/mit_tr_ai_bubble_meta_spending_2025_12_15_analysis.md` (10,782 bytes)
 
 ### Commit
+0c167eb — pushed to GitHub
 `7d29ade` — pushed to origin/main
 
 ### Known remaining gaps (documented, not fixed this iteration)
@@ -21224,6 +21255,7 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - `examples/sample_output/mit_tr_data_centers_nimby_2026_01_14_analysis.md` (18,750 bytes)
 
 ### Commit
+0c167eb — pushed to GitHub
 `1776076` — pushed to origin/main
 
 ### Known remaining gaps (documented, not fixed this iteration)
@@ -21255,6 +21287,7 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - Topic classifier lacks "ai_safety" bucket; false-positive "product_launch"
 
 ### Commit
+0c167eb — pushed to GitHub
 `55e5fd9` — pushed to `rayhe/mediascope` main
 
 ---
@@ -21282,6 +21315,7 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - No pattern for protest-chant-as-literary-device (embedded poetry that reinforces editorial thesis)
 
 ### Commit
+0c167eb — pushed to GitHub
 `0061ab6` — pushed to `rayhe/mediascope` main
 
 ---
@@ -21319,6 +21353,7 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - Entity gaps: Pew Research Center, Block/Square, Atlassian, school districts, environmental groups invisible to entity detection.
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ## 2026-06-29 18:00 PT — Hour Type B: Journalist/Publication Research — Brian X. Chen (105th journalist, Macworld → Wired → NYT)
 
@@ -21416,6 +21451,7 @@ Sold Circle Internet Group and Samsara (IOT) entirely in Q1. Boston Omaha held v
 - Chronicle of Philanthropy: https://www.philanthropy.com
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -21454,6 +21490,7 @@ Article published same day as KIDS Act House vote (267-117 bipartisan) but ignor
 - Same-day context: USA Today, "House passes bill to protect kids online" (2026-06-29)
 
 ### Commit
+0c167eb — pushed to GitHub
 `70d9508` — "Type A deep dive: Gizmodo Project 2029 'Kids Over Clicks' (Jun 29)"
 
 ---
@@ -21489,6 +21526,7 @@ Same-day MIT TR article on AI agent marketing vs. reality. Tests toolkit on meas
 - MIT TR article: https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -21540,6 +21578,7 @@ Same-day MIT TR article on AI agent marketing vs. reality. Tests toolkit on meas
 - Inshorts: https://inshorts.com/news/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise-1750715753022
 
 ### Commit
+0c167eb — pushed to GitHub
 `2057cb6` (previous session) + `ae14e16` (this session)
 
 ---
@@ -21591,6 +21630,7 @@ Root cause of the 0.0 emotional_intensity: EMOTIONAL_LANGUAGE had zero labor dis
 ### Post-check: 978 tests passing (0 failing)
 
 ### Commit
+0c167eb — pushed to GitHub
 `de7d75f`
 
 ---
@@ -21635,6 +21675,7 @@ Annotation stated VADER compound of 0.634 for this article. Actual raw VADER com
 983 passed (38 files) — up from 978 (+5 new tests)
 
 ### Commit
+0c167eb — pushed to GitHub
 `47e8d5a`
 
 ---
@@ -21686,6 +21727,7 @@ Contradictory review pattern: positive 3.5/5 product assessment wrapped in deepl
 1002 passed (39 files) — up from 983 (+19 new tests)
 
 ### Commit
+0c167eb — pushed to GitHub
 `ad4c956`
 
 ---
@@ -21750,6 +21792,7 @@ Contradictory review pattern: positive 3.5/5 product assessment wrapped in deepl
 1048 passed (41 files) — up from 1018 (+30 new tests)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -21868,6 +21911,7 @@ TechTimes "Meta Conscripts 6,500 Engineers as Data Labelers: Revolt Exposes AI T
 - Journalists tracked: 106
 
 ### Commit
+0c167eb — pushed to GitHub
 4b8e96a — pushed to GitHub
 
 ## 2026-06-30 19:00 PT — Type A: Article Deep Dive — MIT TR Meta AI Agent Hack
@@ -21906,6 +21950,7 @@ MIT Technology Review "The Meta hack shows there's more to AI security than Myth
 - Journalists tracked: 106
 
 ### Commit
+0c167eb — pushed to GitHub
 a6f8e9d — pushed to GitHub
 
 ## 2026-06-30 20:00 PT — Type B: Journalist/Publication Research — Eileen Guo Deep Expansion
@@ -21940,6 +21985,7 @@ Eileen Guo — Senior reporter for features and investigations at MIT Technology
 - Valid event types: 15 (+1: foreign_posting)
 
 ### Commit
+0c167eb — pushed to GitHub
 7323d80 — pushed to GitHub
 
 ---
@@ -21985,6 +22031,7 @@ Eileen Guo — Senior reporter for features and investigations at MIT Technology
 - Sentiment miscalibration for dry/sardonic British editorial voice (overall_tone 0.603 too positive)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -22037,6 +22084,7 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 - Sentiment miscalibration for dry/sardonic British editorial voice (carried over)
 
 ### Commit
+0c167eb — pushed to GitHub
 `4ba4f49` — Type D (2026-06-30 17:00 PT)
 
 ---
@@ -22117,6 +22165,7 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 - VADER miscalibration for financial/sardonic content (carried over)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ## 2026-07-01 00:00 PT — Type B: Journalist Research (Zoë Schiffer Deep Expansion)
 
@@ -22221,6 +22270,7 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 - **Tone underestimation:** -0.05 toolkit vs -0.25 manual — negativity carried by framing structure (anthropomorphization, blame chain) rather than individual word sentiment. Improving this requires framing-aware tone correction.
 
 ### Commit
+0c167eb — pushed to GitHub
 260698a — "Type A: Malwarebytes Meta AI support bot hack — 5 improvements"
 
 ---
@@ -22813,6 +22863,7 @@ Google was documented in known_conflicts and notes but was MISSING from the form
 - Pattern count: 301 (up from 297)
 
 ### Commit
+0c167eb — pushed to GitHub
 - `d52032f` — Add delayed_defense + industry_normalization_undercut framing devices, strengthen headline topic boost
 - Pushed to `rayhe/mediascope` main
 
@@ -24083,6 +24134,7 @@ Resolve two long-standing xfailed tests and close a known gap in framing detecti
    - ARCHITECTURE.md, README.md, test_structural_consistency.py all updated
 
 ### Commit
+0c167eb — pushed to GitHub
 `0c15d5d` — pushed to GitHub
 
 ### Tests
@@ -25167,6 +25219,7 @@ Research and add new journalist profiles for publications in the tracked set. Ta
 - **1,453 tests pass** (0 failures, 1 deselected CLI timeout)
 
 ### Commit
+0c167eb — pushed to GitHub
 `ea4be27` — pushed to `rayhe/mediascope` main
 
 ---
@@ -25202,6 +25255,7 @@ Research and add new journalist profiles for publications in the tracked set. Ta
 - **1,454 tests pass** (0 failures)
 
 ### Commit
+0c167eb — pushed to GitHub
 `e344ba5` — pushed to `rayhe/mediascope` main
 
 ---
@@ -25265,6 +25319,7 @@ Five-layer enforcement stack now documented: (1) regulatory (CMA opt-out), (2) i
 - **1,454 tests pass** (0 failures)
 
 ### Commit
+0c167eb — pushed to GitHub
 `651b042` — pushed to `rayhe/mediascope` main
 
 
@@ -25303,6 +25358,7 @@ Five-layer enforcement stack now documented: (1) regulatory (CMA opt-out), (2) i
 - **1,456 tests pass** (0 failures)
 
 ### Commit
+0c167eb — pushed to GitHub
 `f324896` — pushed to `rayhe/mediascope` main
 
 ---
@@ -25347,6 +25403,7 @@ Added Bromley departure entry under wired section in editorial_changes.yaml with
 - **117 tests pass** (0 failures)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ## 2026-07-06 15:00 PT — Type B (Journalist/Publication Research)
 
@@ -25378,6 +25435,7 @@ Added Bromley departure entry under wired section in editorial_changes.yaml with
 21/21 passed (test_careers.py). YAML validation: 150 journalist entries, 134 editorial changes across 5 publications.
 
 ### Commit
+0c167eb — pushed to GitHub
 `8eeb26c` — pushed to origin/main via HTTPS egress proxy.
 
 ---
@@ -25709,6 +25767,7 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 4. "[Entity] executives have [verb]" indirect past-attribution not yet detected
 
 ### Commit
+0c167eb — pushed to GitHub
 `0a927bd` — pushed to GitHub
 
 ## 2026-07-07 13:00 PT — Type A: Article Deep Dive — Reuters Meta $1.4T Penalty (3 toolkit fixes + cross-pub comparison)
@@ -26450,6 +26509,7 @@ Reuters Muse Image wire article analysis + 5-way cross-publication comparison (R
 - **Regex patterns:** 468 (from 466)
 
 ### Commit
+0c167eb — pushed to GitHub
 `3b54d75` — Fix 'Superintelligence Labs' false positive in ai_ethics_safety topic + 5-way Muse Image cross-pub comparison
 
 
@@ -26495,6 +26555,7 @@ Reuters wire article: "French antitrust watchdog orders Meta to resume talks wit
 - **Annotated articles:** 128 (from 127)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ## Iteration: 2026-07-08 19:00 PT — Type A (Article Deep Dive)
 
@@ -26538,6 +26599,7 @@ Reuters wire article: "French antitrust watchdog orders Meta to resume talks wit
 - **Annotated articles:** 129 (from 128)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -26580,6 +26642,7 @@ Reuters: "French antitrust watchdog orders Meta to resume talks with media group
 - **Framing device types:** 83 (unchanged — escalation_amplification and precedent_analogy were added earlier in this session and already included in the 83 count)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ---
 
@@ -26656,6 +26719,7 @@ Same-event comparison: Reuters vs Barron's on Zuckerberg's AI agent admission fr
 - **Distinct publications:** 43
 
 ### Commit
+0c167eb — pushed to GitHub
 
 ## 2026-07-08 23:00 PT — Type A: Article Deep Dive (WSJ AI Spending Gap Fixes — 2 New Device Types + Speculative Framing Expansion)
 
@@ -27568,6 +27632,7 @@ Created `cross_pub_eu_dsa_investor_expansion_ibd_investopedia_2026_07_10.md`:
 98 structural consistency tests: **all pass** (25.95s)
 
 ### Commit
+0c167eb — pushed to GitHub
 
 `8500b7d` — "Add regulatory_risk_subordination (#93), expand EU DSA cluster to 5-way" — pushed to GitHub.
 
@@ -28199,6 +28264,7 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 2,272 tests passing (all existing + 10 from prior iteration).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `3c45ce1`: Type B — 3,758 insertions, 5,834 deletions across journalists.yaml, README.md, EDITORIAL_HISTORIES.md, careers_demo.py. Pushed to GitHub.
 
 ## 2026-07-11 19:00 PT — Type B: Journalist/Publication Research
@@ -28253,6 +28319,7 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 2,272 tests passing (0 failures after README/EDITORIAL_HISTORIES stat updates).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `cfa04e8`: Type B — Lauren Feiner deep-dive, 195 insertions, 25 deletions across journalists.yaml, README.md, EDITORIAL_HISTORIES.md, iteration-log.md. Pushed to GitHub.
 
 ## 2026-07-11 20:00 PT — Type B: Journalist/Publication Research
@@ -28294,6 +28361,7 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 - 58 insertions, 7 deletions across 2 files
 
 ### Commit
+0c167eb — pushed to GitHub
 - `923cb3d`: Type B — Mia Sato career expansion + 3 missing Verge editorial changes. Pushed to GitHub.
 
 ## 2026-07-11 21:00 PT — Type B: Journalist/Publication Research
@@ -28331,6 +28399,7 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 2,272 tests passing (all existing, no new tests needed for journalist profile updates).
 
 ### Commit
+0c167eb — pushed to GitHub
 - `3940323`: Type B — 5,995 insertions, 3,715 deletions (YAML reserialization + Kang profile expansion). Pushed to GitHub.
 
 ## 2026-07-12 02:00 PT — Type B: Journalist/Publication Research
@@ -28362,6 +28431,7 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 - 2,272 tests passing
 
 ### Commit
+0c167eb — pushed to GitHub
 - `6ac76f6`: Type B — Deep dive on Will Oremus and Gilad Edelman profiles. Pushed to GitHub.
 
 ## 2026-07-12 07:00 PT — Type B: Journalist/Publication Research (Will Knight Deep Dive)
@@ -29629,6 +29699,7 @@ Same AI-layoff discrimination lawsuit covered by 6 other outlets Jul 14-15.
    in match text AND surrounding context contains legal terms.
 
 ### Commit
+0c167eb — pushed to GitHub
 `dc1a20b` — `fix: source name extraction, dedup, stance, and hypocrisy_frame false positive`
 
 ### Files Created/Modified
@@ -29685,6 +29756,7 @@ Same AI-layoff discrimination lawsuit covered by 6 other outlets Jul 14-15.
    editorial force but no correction path fires.
 
 ### Commit
+0c167eb — pushed to GitHub
 `5500fc0` — `fix: negated loaded_language, editorial ironic_quotation, source false positives, 3 entity clusters`
 
 ### Files Created/Modified
@@ -32026,6 +32098,7 @@ This Type D validates internal consistency across the three preceding sprint ite
 - `docs/ARCHITECTURE.md` — Test count 7922→7944, file count 264→265, new tree entry
 
 ### Commit
+0c167eb — pushed to GitHub
 a82fe55 — pushed to GitHub
 
 ---
@@ -32058,6 +32131,7 @@ Financial chain: FT-OpenAI content deal ($5-10M/yr, announced Apr 29 2024 by Mur
 - `docs/ARCHITECTURE.md` — Test count 7944→7981, file count 265→266, new tree entry
 
 ### Commit
+0c167eb — pushed to GitHub
 3b54a6c — pushed to GitHub
 
 ## 2026-08-10 01:05 PDT — Type B: Jeff Horwitz Cross-Entity Tracking (Mechanism #18)
@@ -32153,6 +32227,7 @@ Key insight: The asymmetry is in investigative DEPTH, not tone. WSJ covers OpenA
 - `docs/ARCHITECTURE.md` — Test count 8191→8253, file count 271→272, new tree entry
 
 ### Commit
+0c167eb — pushed to GitHub
 ecbc818 — pushed to GitHub
 
 ## 2026-08-10 06:00 PT — Type A: Competitor Coverage Deep Dive — NYT × Anthropic Triple-Chain Financial Incentive Structure (Mechanism #23)
@@ -32189,3 +32264,4 @@ NYT has three independent financial pathways converging to predict Anthropic-pos
 - `docs/ARCHITECTURE.md` — Test count 8253→8372, file count 272→273, new tree entry
 
 ### Commit
+0c167eb — pushed to GitHub
