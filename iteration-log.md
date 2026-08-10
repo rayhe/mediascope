@@ -1,4 +1,29 @@
 # MediaScope Iteration Log
+## 2026-08-09 20:00 PT — Type B: Journalist Cross-Entity Tracking — Alex Reisner (The Atlantic) Training Data Investigative Target Gradient
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Journalist:** Alex Reisner — The Atlantic staff writer, AI Watchdog project lead, contributing writer 2023 → staff writer Oct 2025. Programmer-journalist hybrid who builds searchable piracy databases.
+
+**Mechanism #16: Training Data Investigative Target Gradient**
+
+When the same piracy practice (LibGen, Books3) implicates both Meta and OpenAI, Reisner's investigative depth, headline framing, and dramatic narrative are asymmetrically weighted toward Meta. The asymmetry direction aligns with The Atlantic's financial interests: OpenAI content licensing deal (May 29, 2024), no Meta deal.
+
+**Key evidence:**
+- Books3 (Aug 2023): 190K pirated books, Meta in every headline, OpenAI absent
+- LibGen (Mar 2025): 7.5M books, subhead names only Meta, ~90% narrative to Meta, OpenAI gets one denial quote accepted at face value
+- Music (Jun 2026): Suno target, company-neutral — control case proves balanced framing possible
+- The Watchdog Paradox: Atlantic's piracy investigator works at a publication that licenses content to a pirate
+
+**Legitimate factors:** Meta has more dramatic court evidence, more recent usage, Reisner covers other companies too
+
+**Selection process:** Rejected Leah Feiger (politics/DOGE beat, not tech company coverage) and Karen Hao (freelancer, no clean publication tie for financial analysis). Selected Reisner for unique Watchdog Paradox — no other journalist investigates the crime their employer commercially participates in with a suspect.
+
+**Files changed:** `tests/test_alex_reisner_cross_entity.py` (49 tests, 8 classes), `profiles/atlantic.yaml` (full cross_entity_coverage_analysis added), `README.md`, `docs/ARCHITECTURE.md`
+**Tests:** 7,884 total across 263 files. Structural consistency: 124/124 passing.
+**Commit:** 98ea60e — pushed to GitHub.
+
+---
 ## 2026-08-09 19:00 PT — Type A: Competitor Coverage Deep Dive — MIT TR × Anthropic Pre-IPO Product Validation Asymmetry
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -31766,3 +31791,22 @@ Co-author complement to Sheera Frenkel's Mechanism #9 (book deal financial captu
 - `tests/test_publisher_ai_revenue_materiality_aug9.py` — 64 tests (9 classes)
 
 **Stats:** 7759 tests across 260 files (+64 tests, +1 file)
+
+## 2026-08-09 21:00 PT — Type C: Financial Incentive Mapping — Children's Safety Litigation Coverage Financial Ecosystem
+
+**Mechanism #17: "Settle-and-Silence" Litigation Coverage Asymmetry**
+
+Meta faces disproportionate children's safety litigation coverage compared to Google/YouTube despite shared liability. The KGM bellwether trial (LA, Mar 25 2026) allocated 70% Meta / 30% YouTube liability ($6M total), yet YouTube settled separately (Jun 2026, terms undisclosed) and coverage overwhelmingly framed as "Meta lawsuit." NM $942M ruling (Aug 7 2026, $375M phase 1 + $567M phase 2) named Meta as sole defendant. Oakland trial (jury selection Aug 12, $1.4T demand from 4 states) names Meta only — YouTube not included. Google's cumulative youth safety settlements total $200M+ ($170M FTC COPPA 2019 + $30M class action 2025), yet receive minimal ongoing coverage. MDL 3047 co-lead counsel (Lieff Cabraser, Motley Rice, Seeger Weiss) have financial incentive to maintain Meta-focused framing. Publishers' coverage incentive aligns with litigation narrative: Meta as primary defendant generates more coverage volume than co-defendant framing.
+
+**New test file:** `test_child_safety_litigation_financial_ecosystem_aug9.py` — 38 tests across 8 classes covering litigation financial data, coverage asymmetry, settle-and-silence strategy, MDL counsel incentives, and profile YAML cross-validation.
+
+**Profile updates:**
+- `profiles/competitor-entities.yaml` — Added `youth_safety_settlement_history` under `google:` entity (FTC COPPA $170M, YouTube privacy $30M, KGM bellwether undisclosed, total $200M+) and `settle_and_silence_strategy` documentation
+- `profiles/competitor-coverage-research.yaml` — Added `child_safety_litigation_financial_ecosystem` under `cross_publication_findings:` with full KGM/NM/Oakland data, MDL counsel, publisher incentive alignment
+
+**Files changed:**
+- `profiles/competitor-entities.yaml` — Added Google youth safety settlement history + settle-and-silence strategy
+- `profiles/competitor-coverage-research.yaml` — Added child_safety_litigation_financial_ecosystem cross-publication finding
+- `tests/test_child_safety_litigation_financial_ecosystem_aug9.py` — 38 tests (8 classes)
+
+**Stats:** 7922 tests across 264 files (+38 tests, +1 file)

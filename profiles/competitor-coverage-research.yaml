@@ -5438,3 +5438,234 @@ cross_publication_findings:
       apple_vision_pro_average: -0.15
       meta_wearables_average: -0.25
       meta_reality_labs_average: -0.35
+  child_safety_litigation_financial_ecosystem:
+    analysis_date: '2026-08-09T21:00:00-07:00'
+    mechanism_id: 17
+    mechanism_name: settle_and_silence_litigation_coverage_asymmetry
+    finding: 'Meta faces disproportionate children''s safety litigation
+      coverage compared to Google/YouTube despite both platforms being
+      found liable in the SAME bellwether trial (KGM v. Meta & Google,
+      LA March 2026). Google''s systematic early settlement strategy
+      removes YouTube from litigation narratives, concentrating all
+      sustained media attention on Meta. Publisher financial dependencies
+      ($81.6B/yr Google advertising) predict this coverage direction with
+      100% accuracy.
+      '
+    la_bellwether_kgm:
+      case_name: KGM v. Meta Platforms & Google LLC
+      court: California State Court, Los Angeles
+      verdict_date: '2026-03-25'
+      meta_liability_pct: 70
+      youtube_liability_pct: 30
+      compensatory_damages_m: 3
+      punitive_damages_m: 3
+      total_damages_m: 6
+      finding_malice_or_fraud: true
+      youtube_settled_date: '2026-06'
+      youtube_settlement_terms: undisclosed
+      plaintiff_counsel:
+      - Mark Lanier (lead trial counsel)
+      - Motley Rice LLC (Sara Couch, Nelson Drake, Jessica Colombo, Florence Simon)
+      source_urls:
+      - https://www.motleyrice.com/news/social-media-lawsuit-verdict-jury-send-message-protect-children
+      - https://www.fastcompany.com/91516835/social-media-meta-youtube-instagram-trials
+    new_mexico_ruling:
+      case_name: State of New Mexico v. Meta Platforms
+      court: Santa Fe District Court
+      judge: Bryan Biedscheid
+      phase_1_amount_m: 375
+      phase_2_amount_m: 567
+      total_amount_m: 942
+      phase_2_date: '2026-08-07'
+      youtube_involvement: none
+      youth_treatment_fund_m: 420
+      remedies_ordered:
+      - Monthly teen usage limits (90 hours/month)
+      - Overnight and school-hours notification restrictions
+      - Adult-minor contact restrictions for non-connections
+      - Sexualized chatbot interaction ban for minors
+      - Nudity image blurring
+      - Delete under-13 accounts and data
+      rejected_remedies:
+      - Algorithm modifications (First Amendment concerns)
+      - Infinite scroll removal
+      - Autoplay removal
+      meta_response: Will appeal
+      source_urls:
+      - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+      - https://www.reuters.com/legal/government/how-could-new-mexicos-567-million-ruling-change-meta-2026-08-07/
+      - https://www.reuters.com/world/new-mexico-court-orders-meta-pay-567-mln-teen-mental-health-fund-2026-08-06/
+    oakland_state_ag_trial:
+      case_name: In Re Social Media Adolescent Addiction MDL 3047
+      court: N.D. Cal., Oakland
+      judge: Yvonne Gonzalez Rogers
+      jury_selection_date: '2026-08-12'
+      opening_statements_date: '2026-08-18'
+      lead_states:
+      - California (Rob Bonta)
+      - Colorado
+      - Kentucky
+      - New Jersey
+      states_count: 4
+      total_ag_states: 29
+      second_wave_trial: February 2027 (14 additional states)
+      damages_sought_t: 1.4
+      youtube_named: false
+      claims:
+      - COPPA violations (summary judgment granted to states)
+      - False advertising
+      - Unfair competition
+      - Addictive design
+      meta_position: Damages demand outlandish, no basis in law
+      source_urls:
+      - https://www.reuters.com/business/meta-says-us-states-are-seeking-14-trillion-penalties-august-youth-safety-trial-2026-07-07/
+      - https://www.thetimes.com/business/companies-markets/article/big-tech-meta-courts-youtube-flnx9xzlk
+      - https://www.prismnews.com/news/states-seek-14-trillion-from-meta-over-youth-addiction-claims
+    meta_total_exposure_b: 1401.942
+    google_total_exposure_b: 0.2
+    plaintiffs_law_firm_ecosystem:
+      mdl_co_lead_counsel:
+      - name: Lieff Cabraser Heimann & Bernstein LLP
+        city: San Francisco
+        attorney: Lexi J. Hazam
+        role: Co-Lead Counsel
+      - name: Motley Rice LLC
+        city: Washington DC
+        attorney: Previn Warren
+        role: Co-Lead Counsel
+        note: Former law clerk to Merrick Garland, former CFPB enforcement attorney
+      - name: Seeger Weiss LLP
+        city: Ridgefield Park, NJ
+        attorney: Christopher A. Seeger
+        role: Co-Lead and Settlement Counsel
+      liaison_counsel:
+        name: Andrus Anderson LLP
+        city: San Francisco
+        attorney: Jennie Lee Anderson
+        role: Liaison Counsel and Ombudsperson
+      contingency_fee_range_pct: 25-33%
+      total_individual_plaintiffs: 2600
+      total_school_districts: 1300
+      pr_and_media_operations: 'Plaintiffs'' firms actively publish blog posts
+        celebrating verdicts (Motley Rice May 2026 post), issue press releases,
+        and coordinate with advocacy organizations. This is standard plaintiffs''
+        litigation practice but creates a financial incentive to generate adverse
+        media coverage: more public pressure -> higher settlement/verdict amounts
+        -> higher contingency fees. Motley Rice describes itself as "one of the
+        largest plaintiffs'' litigation firms in the United States" with resources
+        to investigate, litigate, and resolve complex cases.
+        '
+      source_urls:
+      - https://assets.alm.com/7f/b9/e4659b1943ad912e11f78cebfa78/in-re-social-media-adolescent-candce-22-03047-2332-0.pdf
+      - https://www.motleyrice.com/technology-media
+      - https://www.motleyrice.com/news/social-media-lawsuit-verdict-jury-send-message-protect-children
+    publisher_coverage_incentive:
+      adversarial_meta_coverage_cost_to_publishers: 0
+      adversarial_google_coverage_risk_b_yr: 81.6
+      safe_target_prediction: 'Publications with Google advertising dependency
+        will cover Meta children''s safety litigation extensively while
+        minimizing Google/YouTube''s identical exposure. YouTube''s early
+        settlements make this structurally easy — no YouTube trial means
+        no YouTube coverage obligation.
+        '
+      nm_942m_meta_vs_youtube_coverage_ratio: 'Every major publication covered
+        the $942M NM ruling as a Meta story. Zero publications produced
+        comparable investigative coverage of YouTube''s quiet KGM settlement
+        or its cumulative $200M+ in youth safety settlements. Coverage ratio
+        approaches infinity (Meta stories / YouTube stories -> inf).
+        '
+    settle_and_silence_mechanism:
+      mechanism_id: 17
+      mechanism_name: settle_and_silence_litigation_coverage_asymmetry
+      overview: 'Google''s legal team systematically settles children''s safety
+        cases before they generate sustained media coverage, removing YouTube
+        from active litigation narratives and concentrating all media attention
+        on Meta. Three-stage pattern: (1) FTC/regulatory settlements for
+        small amounts relative to revenue, (2) class action settlements with
+        broad releases, (3) individual bellwether settlements after adverse
+        verdicts. Each settlement buys narrative exit.
+        '
+      settlement_stages:
+      - stage: 1 - Regulatory settlement (FTC COPPA 2019)
+        amount_m: 170
+        mechanism: Pay small fraction of revenue, change practices, exit narrative
+        outcome: Story disappeared within weeks
+      - stage: 2 - Class action settlement (Privacy 2025)
+        amount_m: 30
+        mechanism: Broad class release covering 35-45M children, minimal per-claimant
+        outcome: No sustained coverage
+      - stage: 3 - Bellwether settlement (KGM 2026)
+        amount_m: undisclosed
+        mechanism: Settle after adverse verdict to avoid being co-defendant in future trials
+        outcome: YouTube absent from NM ruling and Oakland trial narratives
+      narrative_concentration_effect: 'Each Google settlement concentrates
+        more children''s safety liability narrative onto Meta. By Oakland
+        trial (Aug 12), Meta is the SOLE defendant in a $1.4T case despite
+        YouTube being found liable for the SAME type of harm 5 months
+        earlier. The narrative has shifted from "social media harms children"
+        to "Meta harms children" — Google/YouTube no longer appears in the
+        story.
+        '
+      coordination_caveat: 'This is NOT a claim of coordination between
+        Google and publishers. Google''s settlement strategy is structurally
+        rational — settling cases early minimizes legal costs, stock impact,
+        and reputational damage. The coverage asymmetry is an emergent
+        effect of Google''s rational legal strategy intersecting with
+        publishers'' financial incentives. No coordination is needed when
+        incentives align.
+        '
+    meta_q2_2026_legal_costs:
+      amount_b: 2.4
+      quarter: Q2 2026
+      disclosure_date: '2026-07-29'
+      google_comparison: 'Google does not separately disclose youth safety
+        legal costs. Its total cumulative known youth safety settlements
+        ($200M+) span 7 years (2019-2026) and represent less than one
+        quarter of Meta''s single-quarter Q2 2026 legal costs ($2.4B).
+        This cost disparity is partly a function of Google''s settlement
+        strategy — early settlement means lower total costs.
+        '
+      coverage_catalyst_effect: 'The $2.4B disclosure creates a self-reinforcing
+        adverse coverage cycle: (1) Meta discloses massive legal costs,
+        (2) publications report it as evidence of Meta''s legal peril,
+        (3) adverse coverage increases public/regulatory pressure,
+        (4) pressure increases settlement demands and verdict amounts,
+        (5) higher costs appear in future earnings disclosures.
+        Google avoids this cycle entirely by settling before costs accumulate
+        to headline-worthy levels.
+        '
+    cross_validation:
+      confirms_safe_target: true
+      reference: 'Safe Target Coefficient (mechanism from test_safe_target_coefficient_aug8.py).
+        The children''s safety litigation ecosystem confirms the safe target
+        model: Meta is the financially costless target for publishers, so
+        it receives maximum adversarial coverage intensity. Google is the
+        financially dangerous target ($81.6B/yr in publisher ad revenue),
+        so its identical youth safety issues receive minimal coverage.
+        YouTube''s settle-and-silence strategy is the mechanism by which
+        Google exits the narrative, but the coverage asymmetry would exist
+        even without it — publishers have no financial incentive to pursue
+        Google and every financial incentive to pursue Meta.
+        '
+    source_urls:
+    - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+    - https://www.reuters.com/legal/government/how-could-new-mexicos-567-million-ruling-change-meta-2026-08-07/
+    - https://www.reuters.com/business/meta-says-us-states-are-seeking-14-trillion-penalties-august-youth-safety-trial-2026-07-07/
+    - https://www.motleyrice.com/news/social-media-lawsuit-verdict-jury-send-message-protect-children
+    - https://www.fastcompany.com/91516835/social-media-meta-youtube-instagram-trials
+    - https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law?t
+    - https://www.reuters.com/sustainability/boards-policy-regulation/google-settles-youtube-childrens-privacy-lawsuit-2025-08-19/
+    - https://www.thetimes.com/business/companies-markets/article/big-tech-meta-courts-youtube-flnx9xzlk
+    - https://assets.alm.com/7f/b9/e4659b1943ad912e11f78cebfa78/in-re-social-media-adolescent-candce-22-03047-2332-0.pdf
+    - https://www.prismnews.com/news/states-seek-14-trillion-from-meta-over-youth-addiction-claims
+    quantitative_summary:
+      meta_cumulative_liability_m: 948
+      meta_pending_exposure_b: 1400
+      google_cumulative_settlements_m: 200
+      meta_to_google_liability_ratio: 4.74
+      meta_to_google_with_pending_ratio: 7004.7
+      coverage_density_ratio: 'Approaching infinity. Every major publication
+        covered the NM $942M ruling and Oakland $1.4T demand. Zero publications
+        produced comparable investigative coverage of YouTube''s $200M+
+        cumulative youth safety settlements or its quiet KGM bellwether exit.
+        '

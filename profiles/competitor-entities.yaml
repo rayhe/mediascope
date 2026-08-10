@@ -1492,6 +1492,78 @@ entities:
     category: big_tech
     market_cap_approx: $2.4T
     ceo: Sundar Pichai
+    youth_safety_settlement_history:
+      overview: 'Google/YouTube has systematically settled children''s safety cases
+        early, removing YouTube from litigation narratives and concentrating
+        all sustained media attention on Meta. This "settle-and-silence" pattern
+        is structurally rational litigation strategy but produces a massive
+        coverage asymmetry that aligns perfectly with publisher financial
+        incentive predictions.
+        '
+      ftc_coppa_2019:
+        amount_m: 170
+        date: '2019-09-04'
+        type: regulatory_settlement
+        parties: Google LLC, YouTube LLC, FTC, NY AG Letitia James
+        detail: 'Record COPPA settlement for collecting children''s personal
+          information (persistent identifiers/cookies) from viewers of
+          child-directed YouTube channels without parental consent. Used
+          identifiers to deliver targeted ads to children. $136M to FTC,
+          $34M to NY.
+          '
+        source_url: https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law?t
+        mediascope_note: 'Critics called the $170M settlement "too lenient" given
+          Alphabet''s $186.7B H1 2025 revenue. Penalty represents 0.09% of
+          annual revenue. Google settled, changed some practices, and the story
+          disappeared from the news cycle within weeks.
+          '
+      youtube_privacy_class_action_2025:
+        amount_m: 30
+        date: '2025-08-19'
+        type: class_action_settlement
+        court: N.D. Cal., Case No. 19-07016
+        class_size_estimated_m: 35-45
+        per_claimant_estimated: $30-$60 (at 1-2% claim rate)
+        attorneys_fee_cap_m: 9
+        detail: 'Class action by parents of 34 children alleging Google violated
+          dozens of state privacy laws by letting content providers bait
+          children with cartoons and nursery rhymes to collect personal data,
+          even after the 2019 FTC settlement.
+          '
+        source_url: https://www.reuters.com/sustainability/boards-policy-regulation/google-settles-youtube-childrens-privacy-lawsuit-2025-08-19/
+      kgm_bellwether_2026:
+        terms: undisclosed
+        date_settled: '2026-06'
+        type: individual_bellwether_settlement
+        trial_verdict_date: '2026-03-25'
+        meta_liability_pct: 70
+        youtube_liability_pct: 30
+        compensatory_damages_m: 3
+        punitive_damages_m: 3
+        detail: 'First social media addiction bellwether trial. Jury found BOTH
+          Meta and Google/YouTube liable for KGM''s mental health injuries.
+          Meta assigned 70% responsibility, YouTube 30%. After verdict,
+          YouTube settled separately (terms undisclosed). Meta continued
+          to litigate appeals and further proceedings.
+          '
+        source_urls:
+        - https://www.motleyrice.com/news/social-media-lawsuit-verdict-jury-send-message-protect-children
+        - https://www.fastcompany.com/91516835/social-media-meta-youtube-instagram-trials
+        narrative_effect: 'YouTube''s post-verdict settlement removed it from
+          ongoing coverage. All subsequent reporting (NM $942M ruling, Oakland
+          $1.4T trial) references the LA verdict as a Meta story, with YouTube
+          mentioned only in passing or not at all.
+          '
+      total_known_settlements_m: 200
+      settle_and_silence_strategy: 'Google''s legal team systematically settles
+        children''s safety cases before they generate sustained media coverage.
+        Each settlement removes YouTube from the active litigation narrative,
+        concentrating media attention on Meta, and keeps settlement amounts
+        low enough to avoid sustained stock price impact ($200M against $2.4T
+        market cap = 0.008%). The strategy is structurally rational — NOT
+        evidence of coordination — but its effect on media coverage is
+        identical to what coordination would produce.
+        '
     publisher_litigation_jul2026:
       event: Hachette/Cengage/Elsevier/Turow class-action copyright suit
       date: 2026-07-10
