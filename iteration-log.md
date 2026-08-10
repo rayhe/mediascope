@@ -31810,3 +31810,80 @@ Meta faces disproportionate children's safety litigation coverage compared to Go
 - `tests/test_child_safety_litigation_financial_ecosystem_aug9.py` — 38 tests (8 classes)
 
 **Stats:** 7922 tests across 264 files (+38 tests, +1 file)
+
+---
+## 2026-08-09 22:00 PT — Type D: Test & Verify — Cross-Validation of 19:00–21:00 PT Sprint
+
+**Rotation:** D (Test & Verify)
+
+### Cross-Validation Themes
+
+This Type D validates internal consistency across the three preceding sprint iterations:
+
+1. **Mechanism Numbering Integrity** — Mechanisms 14–17 are sequential, non-conflicting, each assigned to a distinct finding: Barrett Crisis/Makeover (14, WIRED), MIT TR Pre-IPO Amplifier (15), Reisner Training Data Gradient (16, Atlantic), Child Safety Litigation (17, ecosystem). No duplicates, no gaps.
+
+2. **Financial Incentive Direction Consistency** — All three mechanisms predict Meta-negative asymmetry, but through three distinct causal pathways:
+   - MIT TR (#15): endowment investment → Google/Amazon stakes → Anthropic valuation
+   - Atlantic/Reisner (#16): OpenAI content licensing deal → softer OpenAI coverage → harder Meta coverage
+   - Child Safety (#17): litigation counsel fee incentives → Meta-focused framing → coverage volume
+   The convergence across different financial mechanisms rules out coincidence.
+
+3. **Zero-Deal Paradox Convergence** — MIT TR (indirect endowment chain) and Atlantic (direct OpenAI deal) both produce the same asymmetry direction despite fundamentally different financial structures. This rules out single-mechanism explanations — the asymmetry persists whether the financial chain is direct or indirect.
+
+4. **Watchdog Paradox ↔ Settle-and-Silence Complementarity** — Both patterns involve selective accountability aligned with financial incentives:
+   - Reisner investigates Meta's piracy while The Atlantic licenses content to OpenAI (a pirate)
+   - Litigation coverage focuses on Meta while ignoring Google's $200M+ in equivalent youth safety settlements
+   The two patterns operate at different scales (individual journalist vs. cross-publication ecosystem) but share the same structural logic: holding one entity accountable while granting functional immunity to competitors with financial ties.
+
+5. **Scale of Asymmetry** — The three mechanisms operate at non-overlapping analytical levels:
+   - Individual: Alex Reisner (journalist → Atlantic)
+   - Institutional: MIT TR (publication → MIT endowment → Google/Amazon)
+   - Ecosystem: child safety litigation (MDL counsel → multiple publications → coverage framing)
+
+6. **Test Count Correction** — README/ARCHITECTURE claimed 7922 tests. Structural consistency validator calculates 7944 (including parametrize expansion). Corrected to match the canonical structural consistency calculation.
+
+### Test Results
+- New tests: 22/22 passing (6 classes)
+- Structural consistency: 124/124 passing
+- Sprint files (3 test files from 19:00-21:00): 134/134 passing
+- All Aug 9 Type D files (4 files): 120/120 passing
+- Recent sprint validation (4 additional files): 181/181 passing
+
+### Files modified
+- `tests/test_type_d_10pm_cross_validation_aug9.py` — 22 tests, 6 classes (new)
+- `README.md` — Test count 7922→7944, file count 264→265, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7922→7944, file count 264→265, new tree entry
+
+### Commit
+a82fe55 — pushed to GitHub
+
+---
+
+## 2026-08-09 23:00 PT — Type A: Competitor Coverage Deep Dive
+
+### Rotation
+A→B→C→D cycle. Previous: Type D (22:00 PT). This: Type A.
+
+### Finding
+**Mechanism #18: FT × OpenAI Hardware Privacy Framing Inversion**
+
+Formalized the existing `always_on_device_dual_standard` section in `profiles/financial-times.yaml` as a numbered mechanism. The FT frames functionally identical always-on sensing technology with opposite privacy registers depending on manufacturer:
+
+- **OpenAI io device** (camera, mic, always-on, contextual memory): "normal development," "a friend who's a computer," "iPhone of AI." Privacy = design challenge. Reporters: George Hammond, Madhumita Murgia.
+- **Meta Ray-Ban glasses** (camera, mic, always-on, contextual memory): "surveillance infrastructure," "wiretapping laws," "biometric data laws." Privacy = societal threat. Reporter: Hannah Murphy.
+
+Financial chain: FT-OpenAI content deal ($5-10M/yr, announced Apr 29 2024 by Murgia herself). No FT-Meta deal. Extends Dual-Lens Paradox (Mechanism #7).
+
+5 corroboration sources added (TechCrunch, Livemint, PYMNTS, Android Authority, Windows Central).
+
+### Test Results
+- New tests: 37/37 passing (8 classes)
+- Structural consistency: 124/124 passing
+
+### Files modified
+- `profiles/financial-times.yaml` — Added mechanism_id: 18, date_analyzed, extends, corroboration_sources
+- `tests/test_ft_openai_hardware_privacy_double_standard_aug9.py` — 37 tests, 8 classes (new)
+- `README.md` — Test count 7944→7981, file count 265→266, new table entry
+- `docs/ARCHITECTURE.md` — Test count 7944→7981, file count 265→266, new tree entry
+
+### Commit

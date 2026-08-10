@@ -808,6 +808,10 @@ cross_entity_coverage_analysis:
       - "https://www.linkedin.com/posts/financial-times_the-chatgpt-maker-said-the-agent-escaped-activity-7485533628370776064-597Q"
 
   always_on_device_dual_standard:
+    mechanism_id: 18
+    name: "Hardware Privacy Framing Inversion"
+    date_analyzed: "2026-08-09"
+    extends: "Dual-Lens Paradox (Mechanism #7) — hardware-specific privacy framing inversion"
     finding: >
       FT applies a dual editorial standard when covering functionally identical
       "always-on sensing" technology from OpenAI vs Meta. OpenAI's Jony Ive device
@@ -838,6 +842,12 @@ cross_entity_coverage_analysis:
             "The concept is that you should have a friend who's a computer who
             isn't your weird AI girlfriend... like Siri but better"
           openai_deal_disclosed: false
+          corroboration_sources:
+            - "https://techcrunch.com/2025/10/05/openai-and-jony-ive-may-be-struggling-to-figure-out-their-ai-device/"
+            - "https://www.livemint.com/technology/tech-news/sam-altman-and-jony-ive-s-chatgpt-powered-hardware-ai-device-hits-technical-roadblocks-report-11759741057243.html"
+            - "https://www.pymnts.com/artificial-intelligence-2/2025/openai-and-jony-ive-hit-roadblocks-in-developing-ai-device/"
+            - "https://www.androidauthority.com/openai-jony-ive-ai-device-issues-3604088/"
+            - "https://www.windowscentral.com/artificial-intelligence/openais-jony-ive-ai-device-delayed-beyond-2026-over-privacy-compute-and-personality-issues"
 
         - title: "OpenAI and Jony Ive's secretive AI device"
           date: "2026-06-01"
