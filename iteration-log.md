@@ -1,4 +1,47 @@
 # MediaScope Iteration Log
+## 2026-08-10 03:00 PT — Type C: Financial Incentive Mapping — IPO Underwriter Research Laundering Pipeline (Mechanism #21)
+
+**Rotation:** C (Financial Incentive Mapping)
+
+**Finding — Mechanism #21: IPO Underwriter Research Laundering Pipeline**
+
+Goldman Sachs and Morgan Stanley are simultaneously leading BOTH the Anthropic IPO and OpenAI IPO — historically unprecedented (WSJ confirmed separate deal teams to prevent information leakage). Their research divisions produce AI industry reports that tech journalists cite as independent "Wall Street analysis," creating a structural incentive pipeline where the institutions producing "independent analysis" have hundreds of millions in IPO fees at stake from the companies their analysis covers.
+
+**Evidence of Material Financial Dependency:**
+- GS stock fell **4.8%**, MS fell **4.1%** when NYT reported OpenAI might delay IPO to 2027
+- MS posted a record Q2 2026 quarter, CEO Ted Pick: "10-15% through the investment cycle"
+- GS IB fee backlog at a 5-year high, driven by AI deal pipeline
+- Estimated IPO fee pools: Anthropic ~$500M, OpenAI ~$400M
+
+**Research → Journalism Citation Pipeline:**
+- GS "Decoding the Agentic Economy" (token demand 24x by 2030) → cited by Tom's Hardware, PYMNTS
+- GS capex risk report ($920B consensus "too conservative") → cited by Morningstar, MarketWatch
+- MS AI debt forecast ($570B in 2026) → cited by Reuters, TechTimes, Hindu Business Line
+- MS CEO Ted Pick earnings call ("10-15% through cycle") → cited as independent executive insight
+- No disclosure obligation: journalists citing GS/MS research never note the banks' IPO underwriting relationships
+
+**Disproportionate Meta Impact:**
+Meta went public in 2012. Generates ZERO current IPO underwriting fees for any bank. GS/MS research narrative tailwind (bullish AI forecasts that validate Anthropic/OpenAI growth stories) benefits IPO clients disproportionately. Meanwhile, GS capex risk warnings hit Meta ($125-145B capex guidance) harder than Anthropic/OpenAI whose growth narratives DEPEND on infrastructure investment — the same bank warning about capex risk earns IPO fees from the companies whose growth requires that capex.
+
+**Also Verified This Sprint:**
+- **Anthropic secondary market:** $1.2T (up from $965B Series H), now exceeds OpenAI ($852B)
+- **Amazon Anthropic stake:** 15-20%, worth $180-240B at secondary
+- **Morgan Stanley added to Anthropic IPO banks** (PYMNTS source)
+- **Reddit Q2 2026:** Other revenue $43M (+24% YoY), annualized ~$172M
+- **Huffman on data licensing renewals:** "not binary," "not commodity content"
+- **Advance Reddit ownership:** 42,191,092 Class B shares (~23.3%), via SEC S-1
+
+**Legitimate Factors:**
+- Banks maintain Chinese walls / information barriers between research and IB divisions
+- Research analysts subject to SEC independence requirements (Regulation AC, Global Research Analyst Settlement)
+- GS and MS DO cover Meta — asymmetry is in IPO fee incentives, not coverage absence
+- Bank research frequently includes balanced or cautionary analysis — the mechanism is probabilistic bias, not uniform bullishness
+
+**Files changed:** `tests/test_ipo_underwriter_research_laundering_aug10.py` (42 tests, 8 classes), `profiles/competitor-entities.yaml` (new `ipo_underwriter_research_pipeline` section + Anthropic secondary valuation + Amazon stake update + Morgan Stanley added to Anthropic IPO banks), `README.md`, `docs/ARCHITECTURE.md`
+**Tests:** 8,161 total across 270 files. Structural consistency: 124/124 passing.
+**Commit:** 02c1e06 — pushed to GitHub.
+
+---
 ## 2026-08-10 02:00 PT — Type B: Journalist Cross-Entity Tracking — Kate Knibbs (WIRED) Dual Watchdog Paradox
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
