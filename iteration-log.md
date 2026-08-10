@@ -1,4 +1,41 @@
 # MediaScope Iteration Log
+## 2026-08-10 04:00 PT — Type D: Test & Verify — Cross-Validation Sprint 01:00-03:00 (Mechanisms #19-#21)
+
+**Rotation:** D (Test & Verify)
+
+**Cross-Validation: 01:00–03:00 PT Sprint (Mechanisms #19–#21)**
+
+Built 30-test cross-validation suite (`test_type_d_04am_cross_validation_aug10.py`, 8 classes) validating internal consistency across the three most recent mechanisms:
+- **#19** Jeff Horwitz Triple-Deal Narrative Lock-In (individual scale)
+- **#20** Kate Knibbs Dual Watchdog Paradox (institutional scale)
+- **#21** IPO Underwriter Research Laundering Pipeline (systemic scale)
+
+**Cross-Validation Themes Verified:**
+
+1. **Mechanism numbering integrity (18-21):** Confirmed contiguous sequence — FT Hardware Privacy (#18), Horwitz (#19), Knibbs (#20), IPO Underwriter (#21). All distinct findings in different profile files with non-conflicting IDs.
+
+2. **Financial incentive scale escalation:** The three mechanisms represent genuinely different scales of financial incentive:
+   - Individual: Horwitz's personal book/movie/Pulitzer deals lock him to Meta-as-villain narrative
+   - Institutional: Condé Nast's corporate licensing portfolio (OpenAI, Amazon, Microsoft, Apple — $0 Meta) shapes the editorial environment Knibbs works in
+   - Systemic: Goldman Sachs/Morgan Stanley IPO underwriting for both Anthropic and OpenAI creates sector-wide research narrative tailwinds
+
+3. **Disclosure gap consistency:** All three identify undisclosed financial relationships that structurally bias coverage. Horwitz articles don't disclose competing financial interests. Knibbs' copyright tracker doesn't disclose Condé Nast's AI deals. Journalists citing GS/MS research have no obligation to note bank IPO underwriting.
+
+4. **Meta-negative convergence through independent causal chains:** All three predict Meta-negative asymmetry, but through genuinely independent pathways that don't reference each other's mechanisms.
+
+5. **Causal chain non-overlap:** Verified that book deals don't appear in the IPO mechanism, IPO fees don't appear in the Knibbs mechanism, and copyright trackers don't appear in the Horwitz mechanism.
+
+6. **Legitimate factors discipline:** Each mechanism documents non-trivial confounders (Frances Haugen access, Meta's larger litigation surface, Chinese walls, SEC Reg AC). Cross-checked that confounders don't contradict each other across mechanisms.
+
+7. **Watchdog Paradox taxonomy:** Mechanism #16 (Reisner/Atlantic) is single-layer; #20 (Knibbs/WIRED) is dual-layer (Condé Nast publisher deals + Advance platform deals via Reddit). Structural distinction confirmed in profile data.
+
+**Data Integrity Finding:** `advocacy-coalitions.yaml` has a pre-existing YAML parse error (line 84/87, `?` in block collection) — unrelated to this sprint but worth fixing.
+
+**Structural consistency:** 124/124 passing.
+**Tests:** 8,191 total across 271 files.
+**Commit:** 73c1561 — pushed to GitHub.
+
+---
 ## 2026-08-10 03:00 PT — Type C: Financial Incentive Mapping — IPO Underwriter Research Laundering Pipeline (Mechanism #21)
 
 **Rotation:** C (Financial Incentive Mapping)
