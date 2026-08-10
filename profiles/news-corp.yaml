@@ -1121,6 +1121,8 @@ journalist_profiles:
     meta:
       tone: mixed_balanced
       tone_value: -0.15
+      language_register: 'skeptical, corporate-governance metaphor (pressed, lavish
+        spending, declined to provide, wants in on)'
       summary: 'Bobrowsky is the WSJ''s DEDICATED Meta beat reporter — the direct
 
         structural analogue to Kashmir Hill (NYT→Meta privacy), Lauren
@@ -1263,6 +1265,78 @@ journalist_profiles:
       summary: 'Amazon coverage at WSJ handled by other reporters.
 
         '
+- name: Kate Clark
+  current_role: vc_ai_startup_reporter
+  publication: The Wall Street Journal
+  wsj_start: '2022'
+  beat: AI labs / startups (OpenAI, Anthropic, VC ecosystem)
+  background: 'VC and AI startups reporter at WSJ. Covers Anthropic, OpenAI,
+    venture capital, and AI lab fundraising from a startup-desk perspective.
+    Previously at The Information and TechCrunch covering VC. Her narrative
+    register is the STARTUP HERO ARC — aspirational, growth-celebrating,
+    competitive-sport metaphor, in contrast to the corporate-accountability
+    register applied to established tech companies by the same publication.
+    '
+  source_urls:
+  - https://muckrack.com/kate-clark-22/articles
+  - https://buzzsumo.com/journalist/kate-clark-299947022/
+  - https://www.wsj.com/tech/ai/anthropic-was-behind-now-its-the-ai-booms-front-runner-5020f621
+  anthropic_coverage:
+    key_article: "Anthropic Was Behind. Now It's the AI Boom's Front-Runner."
+    date: '2026-05-13'
+    source_url: https://www.wsj.com/tech/ai/anthropic-was-behind-now-its-the-ai-booms-front-runner-5020f621
+    tone: 0.45
+    language_register: aspirational, competitive-sport metaphor
+    hero_journey_language:
+    - scrappy underdog
+    - doing more with less
+    - Claude-pilled
+    - front-runner
+    - growth continues to accelerate rapidly
+    - forced into a more disciplined state
+    burn_rate_discussed: false
+    profitability_discussed: false
+    profitable: false
+    ipo_framing: 'Validation — IPO implied as natural coronation of front-runner
+      trajectory. Zero discussion of concentration risk, export ban impact, or
+      dual-IPO capital competition.'
+    revenue_context: '$50B run-rate by end of Jun 2026 (per article), counted
+      through cloud partners. Revenue growth presented as unqualified positive.'
+    financial_inversion:
+      description: 'NARRATIVE INVERSION PARADOX — company with WORSE financials
+        gets BETTER narrative framing due to startup-desk templates.'
+      anthropic_arr_b: 50
+      anthropic_burn_rate_b: 27
+      anthropic_profitable: false
+      meta_quarterly_revenue_b: 60.8
+      meta_annual_revenue_b: 244
+      meta_profitable: true
+      inversion: 'Anthropic ($50B ARR, $27B projected burn, 0% profit) receives
+        hero framing. Meta ($60.8B/quarter, $15B+ profit) receives deficit framing
+        from the SAME publication.'
+    bobrowsky_comparison:
+      description: 'Within the SAME publication, Bobrowsky covers Meta at -0.15 tone
+        with accountability language while Clark covers Anthropic at +0.45 tone with
+        aspirational language. 0.60-point gap from desk assignment, not financial
+        incentive.'
+      source_url: https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517
+      bobrowsky_meta_tone: -0.15
+      clark_anthropic_tone: 0.45
+      tone_gap: 0.60
+  legitimate_confounds:
+  - 'Genre expectation: startup reporting IS supposed to be aspirational. Clark
+    applies the correct template for her beat. Asymmetry comes from the genre
+    BOUNDARY, not from bias.'
+  - 'Anthropic genuinely is growing fast: $9B to $50B ARR in 6 months is
+    remarkable. Positive coverage of exceptional growth is defensible.'
+  - 'Access dependency: VC/startup reporters depend on insider sources at AI
+    labs for fundraising scoops. Adversarial coverage risks source access.'
+  - 'Pre-IPO positive coverage is industry norm: companies approaching IPO
+    receive more favorable coverage because investors are sources, roadshow
+    access is gated, and critical coverage can be perceived as market
+    manipulation.'
+  - 'WSJ disclosure: The front-runner article includes the News Corp-OpenAI
+    disclosure footnote. Transparency standard maintained regardless of desk.'
   beat_assignment_comparison:
     title: Balanced-Control Beat Assignment Model
     description: 'THE KEY INSIGHT: Beat assignment itself is NEUTRAL — both NYT and
@@ -1335,6 +1409,18 @@ journalist_profiles:
 
         rather than systemic.
 
+        '
+    - reporter: Kate Clark
+      beat: AI labs / VC (Anthropic, OpenAI fundraising)
+      news_corp_financial_tie: $50M/yr (OpenAI content licensing)
+      net_incentive: balanced
+      desk: VC / startup
+      narrative_template: hero_arc
+      notes: 'Clark covers Anthropic with startup-desk hero-arc framing
+        ("scrappy underdog," "front-runner," "doing more with less").
+        Mechanism #27 — same publication, balanced deals, but desk
+        assignment creates narrative segregation. See Kate Clark
+        journalist profile for detailed analysis.
         '
     - reporter: Robert McMillan
       beat: Cybersecurity

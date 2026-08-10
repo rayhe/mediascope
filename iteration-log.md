@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-08-10 10:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × Anthropic vs Meta Business Viability Framing Asymmetry (Mechanism #26)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+### Finding — Mechanism #26: Settlement-Incentive Bias in Business Viability Framing
+
+**Publication+Competitor Pair:** WSJ (News Corp) × Anthropic
+
+WSJ applies dramatically different editorial registers when analyzing Meta's business challenges vs. Anthropic's trajectory — deficit/follower language for profitable Meta ($244B+ rev) vs. hero/celebration language for unprofitable Anthropic ($47B ARR, $27B burn). The framing register is INVERSELY correlated with financial health.
+
+**Key Articles Analyzed:**
+
+1. **Meta deficit framing:** "Meta's Subscription Push Exposes Its Weak Hand in AI" (Jun 11, Asa Fitch, Heard on the Street) — 11 distinct loaded phrases ("badly needs," "too little too late," "far-fetched," "over its skis," "one-track business"). Most loaded business-analysis headline in the WSJ AI corpus. Applied to a company with $60.8B quarterly revenue.
+
+2. **Meta embedded follower framing:** "Mark Zuckerberg Lays Out New AI Vision in 6,500-Word Essay" (Aug 10, Meghan Bobrowsky) — embeds "lagging behind... trying to catch up to Anthropic and OpenAI" in paragraph 5 of a policy essay article, structurally positioned to undercut the essay's arguments.
+
+3. **Anthropic celebration framing:** "The Investors With a New Way to Win in Silicon Valley" (Jul 18, Berber Jin) — hero's journey narrative, $75M→$7B (93x return), zero discussion of burn rate, profitability, export ban risk, or IPO valuation risk.
+
+4. **Anthropic protagonist arc:** Three export ban articles (Jun-Jul 2026) form a classical hero's journey: compliance protagonist → urgency hero ("Dispatches Staff to D.C.") → vindication ("Rolls Back Part of Ban"). No comparable positive narrative arc exists for Meta regulatory encounters.
+
+**The Missing Article:** No WSJ Heard on the Street column analyzing Anthropic's arguably MORE severe business risks: $27B projected burn (exceeds Meta's entire RL division loss), 20x revenue valuation, export ban, Pentagon dispute, dual IPO capital competition. The "Weak Hand" column format exists but is selectively applied.
+
+**Settlement-Incentive Mechanism:** News Corp expects settlement revenue from the $1.5B Bartz v. Anthropic class-action (CEO Thomson Q4 FY2026: "We will likely benefit in coming months"). Settlement recovery DEPENDS on Anthropic's solvency — at $965B valuation, settlement is 0.16% (trivial if IPO succeeds). Critical WSJ business coverage could impair Anthropic's IPO and settlement payment. This creates a temporary but acute pre-IPO incentive against critical Anthropic business analysis, structurally different from steady-state licensing (Meta/OpenAI $50M/yr).
+
+**Legitimate Factors (6 documented with counterpoints):** Ad concentration is real risk (but Anthropic's 0% profit is worse by most metrics), column format difference (but absence of comparable Anthropic column IS the finding), model quality gap (but embedding follower framing in a policy essay is editorial choice), Chinese walls, Anthropic growth is impressive, WSJ best-in-class disclosure.
+
+### Test Results
+- New tests: 46/46 passing (8 classes, 36 def methods + parametrize expansions)
+- Structural consistency: 124/124 passing
+- Total: 8,415 tests across 278 files
+
+### Files modified
+- `tests/test_wsj_anthropic_meta_business_viability_framing_aug10.py` — 46 tests, 8 classes (new)
+- `profiles/news-corp.yaml` — business_viability_framing sections for Meta (deficit register) and Anthropic (celebration register + settlement incentive)
+- `profiles/competitor-coverage-research.yaml` — Mechanism #26 entry
+- `README.md` — Test count 8,374→8,415, file count 277→278, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8,374→8,415, file count 277→278, new tree entry
+
+### Commit
+3fc8f88 — pushed to GitHub
+
+---
 ## 2026-08-10 09:00 PT — Type D: Test & Verify — Schema Validation Fixes + Mechanism #24 Gap Resolution
 
 **Rotation:** D (Test & Verify)
@@ -32466,3 +32508,42 @@ NYT has three independent financial pathways converging to predict Anthropic-pos
 
 ### Commit
 0ef6eb9 — pushed to GitHub
+
+---
+
+## 2026-08-10 10:00 PT — Type A: WSJ Analytical Column Framing (Asa Fitch)
+
+### Discovery
+- **Mechanism #26:** WSJ Heard on the Street analytical columns (Asa Fitch) apply financial skepticism asymmetrically — Meta's AI spending framed as "lavish" and questionable ROI while Anthropic's identical spending pattern receives growth-narrative framing
+
+### Commit
+3fc8f88 — pushed to GitHub
+
+---
+
+## 2026-08-10 11:00 PT — Type B: WSJ Startup Desk Narrative Segregation (Kate Clark)
+
+### Discovery
+- **Mechanism #27:** Startup Desk vs. Corporate Desk Narrative Segregation
+- Kate Clark (WSJ VC/startup desk) covers Anthropic with hero-arc templates ("scrappy underdog," "front-runner," "doing more with less") at +0.45 tone
+- Meghan Bobrowsky (WSJ corporate desk) covers Meta at -0.15 tone with accountability templates ("investors have pressed," "lavish spending")
+- 0.60-point tone gap within the SAME publication (News Corp, balanced $50M/$50M deals) from GENRE/DESK ASSIGNMENT, not financial incentive
+- Distinct from Mechanism #26 (Asa Fitch analytical columns)
+- Berber Jin (WSJ) reinforces pattern — second startup desk reporter covering OpenAI with aspirational framing
+
+### New Test File
+- `test_kate_clark_cross_entity.py` — 38 tests (35 def + 3 parametrize), 8 classes
+
+### Test Results
+- Kate Clark tests: 38/38 passing
+- Structural consistency: 124/124 passing
+
+### Files modified
+- `profiles/news-corp.yaml` — Added Kate Clark journalist profile, language_register for Bobrowsky
+- `profiles/competitor-coverage-research.yaml` — Added Mechanism #27 entry, test_count fixed to 38
+- `tests/test_kate_clark_cross_entity.py` — 38 tests, 8 classes (new)
+- `README.md` — Test count 8415→8453, file count 278→279, new table entry (35 def test_)
+- `docs/ARCHITECTURE.md` — Test count 8415→8453, file count 278→279, new tree entry
+
+### Commit
+(pending)

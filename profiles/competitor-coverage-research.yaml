@@ -6072,3 +6072,35 @@ cross_publication_findings:
     test_file: tests/test_wsj_anthropic_meta_business_viability_framing_aug10.py
     test_count: 46
     date_added: 2026-08-10
+  wsj_kate_clark_startup_desk_narrative_segregation:
+    publication: wall_street_journal
+    finding_type: journalist_cross_entity
+    journalist: Kate Clark
+    mechanism_id: 27
+    mechanism_name: 'Startup Desk vs. Corporate Desk Narrative Segregation'
+    mechanism_type: structural
+    finding_summary: 'Startup Desk vs. Corporate Desk Narrative Segregation (Mechanism #27):
+      Within a single publication (WSJ/News Corp, balanced $50M/$50M) the DESK
+      ASSIGNMENT creates framing asymmetry independent of financial incentive.
+      Kate Clark (VC/startup desk) covers Anthropic with hero-arc templates
+      ("scrappy underdog," "front-runner," "doing more with less," "Claude-pilled")
+      at +0.45 tone. Meghan Bobrowsky (corporate desk) covers Meta at -0.15 tone
+      with accountability templates ("wants in on," "investors have pressed,"
+      "lavish spending"). The 0.60-point tone gap comes from GENRE ASSIGNMENT,
+      not financial incentive. Anthropic ($50B ARR, $27B burn, 0% profit) gets
+      hero framing; Meta ($60.8B/quarter, profitable) gets deficit framing. Both
+      reporters apply the CORRECT templates for their respective beats — the
+      mechanism is the genre boundary itself. Extends Mechanism #26 by showing
+      that startup-desk narrative templates shape hard news coverage, not just
+      analytical columns.'
+    distinction_from_26: 'Mechanism #26 operates through Heard on the Street
+      ANALYTICAL COLUMNS (Asa Fitch, opinion/analysis desk). Mechanism #27
+      operates through HARD NEWS articles (Kate Clark, news desk). The
+      narrative segregation extends beyond opinion into the news pages —
+      the publication assigns the AI labs story to the startup desk, which
+      inherently uses aspirational narrative templates, and the Meta story
+      to the corporate desk, which inherently uses accountability templates.
+      Same publication, same balanced deals, different genre = different framing.'
+    test_file: tests/test_kate_clark_cross_entity.py
+    test_count: 38
+    date_added: 2026-08-10
