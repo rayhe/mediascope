@@ -1,4 +1,50 @@
 # MediaScope Iteration Log
+## 2026-08-10 00:00 PT — Type A: Competitor Coverage Deep Dive — Guardian × Google SID Governance Capture Privacy Scrutiny Inversion
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Pair:** The Guardian × Google
+
+**Finding — Mechanism #17: SID Governance Capture Privacy Scrutiny Inversion**
+
+The Guardian — reader-funded, trust-owned, B Corp certified, no paywall — positions itself as the privacy-first quality news publication. Yet its scrutiny of Google's privacy practices is structurally softer than its scrutiny of Meta's identical practices. The asymmetry direction aligns with the Guardian's compound Google financial dependency and zero Meta relationship.
+
+**Governance Capture Chain:**
+1. Matt Brittin: Google EMEA President (18 years, 2007–2025) → Guardian Media Group Senior Independent Director (~2025–Mar 24, 2026) → BBC Director-General (confirmed Mar 23, 2026, started May 18, 2026, £565K salary). The SID is the most senior governance role after Chair — specifically responsible for ensuring board independence. Green Park conducted a "global search" to recruit Brittin; GMG Chair Charles Gurassa: "His expertise will be a welcome addition to the Board and management."
+2. Brittin's tenure overlapped: Guardian's Google News AI pilot launch (Dec 2025), OpenAI content deal (Feb 2025), SPUR coalition founding (Feb 2026). The person tasked with ensuring governance independence was himself the most significant potential source of conflicted governance.
+3. Google→Guardian→BBC: triple revolving door through the SID position. Brittin now leads the BBC while proposing BBC-Channel 4 partnership, calling the licence fee "yesterday's model."
+
+**Compound Financial Dependency:**
+- Google advertising: major programmatic revenue source (Google >90% UK search share). Guardian cited "less demand coming through Google's pipes" as concerning.
+- Google News AI pilot (Dec 2025): Guardian is an initial partner — receives direct payments. Google now pushing for broader AI training terms; publishers who don't join may lose Google Showcase payments.
+- OpenAI licensing (Feb 2025): receiving payments from another Meta competitor.
+- ProRata AI licensing (~2025): additional AI intermediary revenue.
+- Meta: $0. No deal. No licensing. No board ties.
+
+**Privacy Scrutiny Inversion — Smart Glasses Parity Test:**
+Google's Android XR glasses (announced I/O 2026, Warby Parker + Gentle Monster, launching fall 2026) have structurally identical privacy implications to Meta's Ray-Ban glasses:
+- Camera: both record photos/video from eye level
+- AI assistant: both use AI (Gemini / Meta AI) processing captured content
+- Voice activation: both use voice commands ("Hey Google" / "Hey Meta")
+- Public-space recording: both worn in public, recording bystanders without consent
+- LED indicator: both have small indicators debated as insufficient
+- Navigation/translation: both offer real-time AR features
+
+Media-wide, Meta's glasses receive extensive privacy scrutiny: NameTag facial recognition (NYT Feb 2026, WIRED Jun 2026), Kenyan data workers reviewing intimate footage (Swedish newspapers Feb 2026, class actions Mar 2026), ACLU letter (75+ organizations), EU Parliament questions, ICO investigation. Google's Android XR glasses — with identical capabilities — received predominantly product-showcase framing. The Guardian's 2013 coverage of Google Glass included privacy analysis (Charles Arthur: "is it a threat to privacy?"); the 2026 Android XR coverage lacks equivalent scrutiny despite more capable hardware.
+
+**Legitimate Factors:**
+- Guardian's privacy-first editorial identity predates Brittin's appointment
+- Guardian does cover Google critically on some topics (search monopoly, ad revenue)
+- Brittin left the GMG board in March 2026 (but his tenure covered the critical Dec 2025–Mar 2026 period)
+- Meta's glasses are shipping in volume (10M+ units) while Google's are not yet on sale — shipping products attract more scrutiny
+- Meta has a deeper history of privacy controversies (Cambridge Analytica, $7B+ in fines)
+
+**Selection process:** Rejected NYT × OpenAI (NYT's lawsuit creates obvious adversarial relationship, less analytically novel) and The Verge × Snap (thin article volume for Snap glasses). Selected Guardian × Google for the SID revolving door — the single strongest governance capture finding in the MediaScope corpus. No other publication had its most senior independent governance officer simultaneously be a former executive of the company whose coverage is being evaluated.
+
+**Files changed:** `tests/test_guardian_google_sid_governance_capture_aug10.py` (46 tests, 8 classes), `README.md`, `docs/ARCHITECTURE.md`
+**Tests:** 8,027 total across 267 files. Structural consistency: 124/124 passing.
+
+---
 ## 2026-08-09 20:00 PT — Type B: Journalist Cross-Entity Tracking — Alex Reisner (The Atlantic) Training Data Investigative Target Gradient
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -31887,3 +31933,4 @@ Financial chain: FT-OpenAI content deal ($5-10M/yr, announced Apr 29 2024 by Mur
 - `docs/ARCHITECTURE.md` — Test count 7944→7981, file count 265→266, new tree entry
 
 ### Commit
+3b54a6c — pushed to GitHub
