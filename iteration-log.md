@@ -61,7 +61,7 @@ The asymmetry direction aligns with Condé Nast's financial interests:
 - New tests: 36/36 passing
 - Structural consistency: 124/124 passing
 
-**Commit:** (pending)
+**Commit:** be672ee
 
 ## 2026-08-09 15:00 PT — Type A: Competitor Coverage Deep Dive — Gizmodo × Google I/O 2026 Camera Acknowledgment Paradox
 
@@ -31692,3 +31692,23 @@ Co-author complement to Sheera Frenkel's Mechanism #9 (book deal financial captu
 - `tests/test_reddit_ai_editorial_loop_advance_aug9.py` — 35 tests (7 classes)
 
 **Stats:** 7555 tests across 255 files (+35 tests, +1 file)
+
+**Commit:** pending
+
+## 2026-08-09 17:00 PT — Type C: Financial Incentive Mapping — Publisher AI Revenue Materiality Index
+
+**Focus:** SEC-filed AI licensing revenue quantification from Q1-Q2 2026 publisher earnings, documenting the Condé Nast Opacity Paradox.
+
+**Key data points:**
+- News Corp Q4 FY2026 (Aug 5): $2.34B revenue (+11% YoY), $230M net income (+167%), CEO Thomson praised Meta+OpenAI as "principled" partners
+- People Inc. Q2 2026 (Aug 3): $436.7M revenue, Meta deal primary Q1 licensing driver ($40.7M licensing +26% YoY), 26% EBITDA margin
+- USA Today Co. Q1 2026: $33.75M other digital revenue (+125.6% YoY), first "notable" AI licensing revenue
+- NYT Q1 2026: $45.2M digital affiliate/licensing/other (+12.7%) — AI revenue commingled with Wirecutter affiliate, cannot isolate
+- Wiley Q2 FY2026: ~$100M cumulative AI training revenue, $49M FY2026 AI (+22.5% YoY), partners: Anthropic/Perplexity/Mistral
+- Condé Nast Opacity Paradox: 4 competitor AI deals (OpenAI, Amazon Rufus, Microsoft PCM, Perplexity), zero Meta deals, zero public financial disclosure, -0.85 Meta coverage tone, zero SEC filing obligation — financial incentives structurally invisible
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — Added cross_publication_findings.publisher_ai_revenue_materiality_index (SEC-filed revenue data for 6 publishers + Condé Nast opacity analysis)
+- `tests/test_publisher_ai_revenue_materiality_aug9.py` — 64 tests (9 classes)
+
+**Stats:** 7759 tests across 260 files (+64 tests, +1 file)
