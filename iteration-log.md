@@ -1,4 +1,63 @@
 # MediaScope Iteration Log
+## 2026-08-10 12:00 PT — Type C: Financial Incentive Mapping — Google Quintuple Anthropic Exposure + $35B SPV Guarantee + Showcase Publisher Dependency Chain (Mechanism #28)
+
+**Rotation:** C (Financial Incentive Mapping)
+
+### Finding — Mechanism #28: Google's SPV Payment Guarantee → Showcase Publisher Dependency Chain
+
+**Discovery:** Google's role as payment GUARANTOR on Anthropic's $35B off-balance-sheet SPV financing (Apollo Global Management / Blackstone, reported Jul 16, 2026) creates a FIFTH layer of Google-Anthropic financial entanglement — upgrading the previously documented four-way exposure to quintuple exposure:
+
+1. **Equity investor** (~14%, ~$135B at $965B valuation)
+2. **TPU co-designer** (custom silicon Anthropic runs on)
+3. **Cloud compute provider** (multi-billion dollar agreement, 2025)
+4. **Lease payment guarantor** ($35B SPV, 2026) — NEW
+5. **AI XPV Platform partnership** (Broadcom-backed, 20+ GW through 2028) — NEW
+
+**SPV Structure Details (from Benjamin Collin, LinkedIn, Jul 16):**
+- $35B private credit facility via Apollo/Blackstone
+- Three tranches: A1 (~$6B, near Treasury+100bps), A2 (~$24B, ~5.75%), B (~$4.5B, 8.5%)
+- Google guarantees lease payments at all five facilities (NY, TX, LA, IN)
+- Broadcom guarantees residual value on senior tranche
+- Supports ~2.5 million TPUs
+- Off-balance-sheet BY DESIGN for IPO preparation — Anthropic's S-1 shows operating lease obligations but NOT $35B infrastructure debt
+- Same logic as aircraft leasing / telecom tower financing / power-purchase agreements, but unprecedented scale for an AI lab
+
+**Coverage Incentive Chain:**
+1. Google guarantees Anthropic's $35B SPV lease → Google has CREDIT risk (not just equity)
+2. Google owns ~14% of Anthropic (~$135B equity) + $35B guarantee = $170B+ combined exposure
+3. Google pays 700+ publishers via News Showcase ($1B+ program)
+4. Publishers dependent on Showcase have structural incentive not to anger Google
+5. Harsh Anthropic coverage impairs IPO valuation → material loss for Google
+6. Therefore: Showcase-dependent publishers have INDIRECT incentive for softer Anthropic coverage — even with ZERO direct Anthropic deals
+
+**Anthropic Zero-Deal Confirmation:**
+Rob Kelly's Media & the Machine tracking (91 public deals, Jun 2026) confirms Anthropic has ZERO publicly disclosed publisher content deals — the only major AI lab without any. Troveo's Marty Pesis suggests Anthropic may have PRIVATE deals. When Anthropic's S-1 becomes public, any material content licensing must be disclosed — first transparency inflection.
+
+**Legitimate Factors (7 documented):**
+1. Google's investment has genuine commercial rationale (TPU adoption, cloud revenue)
+2. Showcase payments are for content curation services
+3. Google editorial and investment decisions are siloed (Chinese walls)
+4. Publishers may not be aware of Google's SPV guarantee role
+5. SPV structures are standard infrastructure financing
+6. Google's guarantee is backed by Anthropic's operating cash flow
+7. Broadcom co-guarantees reduce Google's net exposure
+
+### Test Results
+- New tests: 32/32 passing (8 classes, 27 def methods + parametrize expansions)
+- Structural consistency: 124/124 passing (including file listing, header counts, per-file counts)
+- Total: 8,480 tests across 280 files
+
+### Files modified
+- `tests/test_google_spv_guarantee_anthropic_showcase_chain_aug10.py` — 32 tests, 8 classes (new)
+- `profiles/competitor-entities.yaml` — Anthropic: spv_infrastructure_financing section; Google google_leg: spv_guarantee with quintuple exposure, tranche structure, showcase_chain_mechanism; Google entity: anthropic_spv_guarantee_exposure section
+- `profiles/competitor-coverage-research.yaml` — Mechanism #28 entry
+- `README.md` — Test count updated to 8,480, file count 280, new table entry
+- `docs/ARCHITECTURE.md` — Test count updated to 8,480, file count 280, new tree entry
+
+### Commit
+Pending
+
+---
 ## 2026-08-10 10:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × Anthropic vs Meta Business Viability Framing Asymmetry (Mechanism #26)
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -32546,4 +32605,4 @@ NYT has three independent financial pathways converging to predict Anthropic-pos
 - `docs/ARCHITECTURE.md` — Test count 8415→8453, file count 278→279, new tree entry
 
 ### Commit
-(pending)
+985af41 — pushed to GitHub

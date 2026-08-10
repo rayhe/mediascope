@@ -429,6 +429,40 @@ entities:
         - https://www.fastcompany.com/91577047/anthropic-ai-lawsuit-settlement-payout-for-authors-update
         - https://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
     valuation_source: https://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
+    spv_infrastructure_financing:
+      date_reported: '2026-07-16'
+      total_credit_facility_b: 35
+      structurers:
+      - Apollo Global Management
+      - Blackstone
+      platform: 'Broadcom-backed AI XPV Platform'
+      off_balance_sheet: true
+      tpu_count_estimated: '2.5 million'
+      sites: 5
+      site_states:
+      - New York
+      - Texas
+      - Louisiana
+      - Indiana
+      google_guarantees_lease_payments: true
+      broadcom_guarantees_residual_value: true
+      ipo_relevance: 'SPV keeps $35B in infrastructure obligations off Anthropic''s
+        balance sheet for IPO preparation. S-1 will show operating lease obligations
+        but NOT the full $35B debt. Financial reporters covering the IPO must
+        examine the SPV structure separately to present accurate financial picture.
+        This is standard infrastructure financing practice but at unprecedented
+        scale for an AI lab.
+        '
+      zero_publisher_deals_note: 'As of August 2026, Anthropic has ZERO publicly
+        disclosed publisher content licensing deals. Rob Kelly''s Media & the Machine
+        tracking (91 public deals, Jun 2026) confirms zero. Troveo data provider
+        Marty Pesis suggests Anthropic may have PRIVATE/undisclosed deals. Anthropic''s
+        S-1 will be the first transparency inflection — any material content licensing
+        agreements must be disclosed. Anthropic''s "zero-deal" status is anomalous:
+        it is the ONLY major AI lab (among OpenAI, Google, Meta, Microsoft, Amazon)
+        without any publicly announced publisher content deal.
+        '
+      source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
     investor_advertiser_publisher_triangle:
       overview: 'Anthropic has ZERO direct publisher content licensing deals, but
         is NOT financially neutral to publishers. Its two largest strategic investors
@@ -512,6 +546,64 @@ entities:
           revenue → Alphabet stock → Google ad platform investment → publisher
           ad revenue.
           '
+        spv_guarantee:
+          date_reported: '2026-07-16'
+          spv_credit_facility_b: 35
+          structurers:
+          - Apollo Global Management
+          - Blackstone
+          platform: 'Broadcom-backed AI XPV Platform (20+ GW compute target through 2028)'
+          google_role: 'Payment guarantor — Google guarantees Anthropic''s lease payments
+            at all five SPV facilities. If Anthropic defaults, Google absorbs the
+            shortfall. This is CREDIT risk, not just equity/revenue risk. Google''s
+            investment-grade credit rating is directly exposed to Anthropic''s ability
+            to make lease payments on 2.5 million TPUs across five US sites (NY, TX,
+            LA, IN).
+            '
+          broadcom_role: 'Residual value guarantor on senior tranche — if Anthropic
+            defaults AND used TPUs cannot be resold at par, Broadcom absorbs the gap.
+            '
+          tranche_structure:
+            a1_senior_b: 6
+            a1_pricing: 'near Treasury+100bps'
+            a2_b: 24
+            a2_pricing: '~5.75%'
+            b_b: 4.5
+            b_pricing: '8.5%'
+          off_balance_sheet: 'SPV owns the TPUs, Anthropic leases them back. This keeps
+            $35B in obligations off Anthropic''s balance sheet — a critical consideration
+            for IPO preparation. Anthropic''s S-1 will show operating lease obligations
+            but NOT $35B in infrastructure debt. Financial reporters who examine only
+            the S-1 without digging into the SPV structure will present misleadingly
+            clean financials. This is STANDARD infrastructure financing (aircraft
+            leasing, telecom towers, power-purchase agreements) — not unusual, but
+            the scale ($35B) and the guarantor concentration (Google) are unprecedented
+            for an AI lab.
+            '
+          google_quintuple_exposure: 'Google is now FIVE-WAY exposed to Anthropic:
+            (1) Equity investor (~14%, ~$135B at $965B valuation)
+            (2) TPU co-designer (custom silicon Anthropic runs on)
+            (3) Cloud compute provider (multi-billion dollar agreement, 2025)
+            (4) Lease payment guarantor ($35B SPV, 2026)
+            (5) AI XPV Platform partnership (Broadcom-backed, 20+ GW through 2028)
+            Previously documented as "four-way" — the SPV guarantee adds the fifth.
+            '
+          showcase_chain_mechanism: 'MECHANISM #28: The chain from Google''s SPV guarantee
+            to publisher Anthropic coverage runs through Showcase dependency. Google
+            Showcase pays 700+ publishers $1B+ total. Publishers dependent on Showcase
+            revenue have structural incentive not to anger Google. Google has $170B+
+            combined Anthropic exposure ($135B equity + $35B guarantee). Harsh Anthropic
+            coverage impairs IPO valuation → material loss for Google → potential impact
+            on Showcase program continuation. Therefore: Showcase-dependent publishers
+            have INDIRECT incentive to produce softer Anthropic coverage — even with
+            ZERO direct Anthropic deals. This is structural, not conspiratorial:
+            publishers may not even be aware of Google''s SPV guarantee role, but the
+            financial dependency chain operates regardless of awareness.
+            '
+          source_urls:
+          - https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
+          - https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/
+          - https://www.fool.com/investing/2026/06/30/4-ways-to-own-anthropic-before-it-goes-public/
       triangle_dynamics:
         - name: pre_ipo_coverage_pressure
           detail: 'As Anthropic targets October 2026 IPO, every major
@@ -2676,6 +2768,23 @@ entities:
       - https://digiday.com/media/googles-ai-opt-out-leaves-publishers-with-a-choice-they-cant-safely-use/
       - https://www.fastly.com/blog/google-ai-deal-no-publisher-wanted
       - https://www.reuters.com/world/americas/google-pay-publishers-1-bln-over-three-years-their-news-2020-10-01/
+    anthropic_spv_guarantee_exposure:
+      overview: 'Google is payment GUARANTOR on Anthropic''s $35B off-balance-sheet
+        SPV lease financing (Apollo/Blackstone, Jul 2026). If Anthropic defaults on
+        lease payments for 2.5 million TPUs across five US sites, Google covers the
+        shortfall. This is CREDIT risk — Google''s investment-grade rating is directly
+        exposed. Combined with equity (~14%, ~$135B), TPU co-design, cloud compute
+        ($2B+), and AI XPV Platform partnership, Google has QUINTUPLE Anthropic
+        exposure totaling $170B+. See Anthropic entity google_leg.spv_guarantee for
+        full details including tranche structure. Structurally rational but
+        unprecedented concentration for a tech company backing an AI lab IPO.
+        '
+      mechanism_28_reference: 'Mechanism #28 (spv_guarantee_showcase_chain) connects
+        this guarantee exposure to Showcase-dependent publisher coverage incentives.
+        700+ Showcase publishers have indirect structural incentive to avoid Anthropic
+        coverage that would impair Google''s $170B+ combined exposure.
+        '
+      source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
   x_twitter:
     display_name: X / Twitter
     aliases:
