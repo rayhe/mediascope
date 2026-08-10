@@ -210,14 +210,14 @@ class TestAmazonSextupleCrossFile(unittest.TestCase):
         cls.research = load_yaml('competitor-coverage-research.yaml')
 
     def test_six_layers_in_entities(self):
-        """Entities file has exactly 6 Amazon leverage layers."""
+        """Entities file has exactly 7 Amazon leverage layers (updated: +openai_investment Feb 2026)."""
         layers = self.entities['entities']['amazon']['sextuple_publisher_leverage']['layers']
-        self.assertEqual(len(layers), 6)
+        self.assertEqual(len(layers), 7)
 
     def test_six_layers_in_research(self):
-        """Research file has exactly 6 Amazon leverage layers."""
+        """Research file has exactly 7 Amazon leverage layers (updated: +openai_investment Feb 2026)."""
         layers = self.research['cross_entity_leverage']['amazon_sextuple_leverage']['leverage_layers']
-        self.assertEqual(len(layers), 6)
+        self.assertEqual(len(layers), 7)
 
     def test_layer_names_match(self):
         """Layer identifiers are the same in both files."""

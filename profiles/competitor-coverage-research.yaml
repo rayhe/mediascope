@@ -939,11 +939,12 @@ cross_entity_leverage:
     - kindle_publishing_platform
     - bezos_wapo_ownership
     - anthropic_investment
-    overview: 'Amazon has six distinct financial relationship mechanisms with
+    - openai_investment
+    overview: 'Amazon has seven distinct financial relationship mechanisms with
 
       publishers — more categories than any other tech company in the
 
-      dataset. This cross-publication analysis examines how Amazon''s
+      dataset (updated from six after Amazon''s $50B OpenAI investment, Feb 2026). This cross-publication analysis examines how Amazon''s
 
       multi-tentacle relationships affect coverage across all profiled
 
@@ -1191,7 +1192,7 @@ cross_entity_leverage:
 
       Microsoft has SEVEN distinct financial relationship mechanisms with
 
-      publishers — more than any other tech company (Amazon has six, Google
+      publishers — more than any other tech company (Amazon has seven, Google
 
       has four). Previously only the Microsoft-OpenAI axis was documented;
 
@@ -5431,6 +5432,7 @@ cross_publication_findings:
   bloomberg_mark_gurman:
     journalist: Mark Gurman
     publication: Bloomberg
+    date_added: '2026-08-09'
     role: Chief Apple Correspondent, Power On newsletter author
     key_finding: 'Access Dependency — Beat Reporter Competitive Narration (Mechanism #11)'
     finding_summary: 'Mark Gurman is Bloomberg''s most influential Apple journalist, authoring the weekly Power On newsletter
@@ -5532,7 +5534,7 @@ cross_publication_findings:
             the "four generations" treatment.
 
             '
-          source_url: http://www.techmeme.com/251009/p36
+          source_url: https://www.techmeme.com/251009/p36
         - article: Meta Offered Apple AI Executive Over $200 Million to Leave
           date: 2025-08
           publication: Bloomberg
@@ -5618,6 +5620,13 @@ cross_publication_findings:
       meta_reality_labs_average: -0.35
   child_safety_litigation_financial_ecosystem:
     analysis_date: '2026-08-09T21:00:00-07:00'
+    date_added: '2026-08-09'
+    test_file: tests/test_child_safety_litigation_financial_ecosystem_aug9.py
+    finding_summary: 'Meta faces disproportionate children''s safety litigation coverage
+      compared to Google/YouTube despite both being found liable in the same bellwether
+      trial (KGM v. Meta & Google, LA March 2026). Google''s systematic early settlement
+      strategy removes YouTube from litigation narratives. Publisher financial dependencies
+      ($81.6B/yr Google advertising) predict coverage direction with 100% accuracy.'
     mechanism_id: 17
     mechanism_name: settle_and_silence_litigation_coverage_asymmetry
     finding: 'Meta faces disproportionate children''s safety litigation coverage compared to Google/YouTube despite both platforms
@@ -5809,6 +5818,12 @@ cross_publication_findings:
   reuters_jeff_horwitz:
     journalist: Jeff Horwitz
     publication: Reuters (Thomson Reuters)
+    date_added: '2026-08-10'
+    finding_summary: 'Jeff Horwitz applies maximum-depth investigative techniques (internal
+      documents, undercover experiments, whistleblower cultivation) exclusively to Meta,
+      while covering competitors with surface-level factual reporting. Triple-Deal
+      Narrative Lock-In (Mechanism #19) through Thomson Reuters content licensing deals
+      with all three major AI labs.'
     role: Tech Investigations Reporter
     location: Oakland, California
     beat: Meta investigations, tech accountability
