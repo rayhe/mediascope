@@ -596,6 +596,257 @@ aggregate_findings:
       '
     test_count: 28
     test_file: tests/test_chokkattu_ashworth_cross_entity.py
+  reuters_jeff_horwitz:
+    name: Jeff Horwitz
+    current_publication: Reuters
+    previous_publication: Wall Street Journal
+    beat: tech investigations / Meta accountability
+    career_trajectory:
+    - outlet: Wall Street Journal
+      years: 2014-2024
+      role: Technology reporter / investigations
+      key_work: Facebook Files (2021) — 20K+ internal documents, XCheck, teen mental health, human trafficking
+    - outlet: Reuters
+      years: 2024-present
+      role: Tech investigations reporter
+      key_work: Meta scam ads, AI chatbots and children, Instagram eating disorders
+    mechanism_id: 19
+    mechanism_name: triple_deal_narrative_lock_in
+    mechanism_description: 'The same investigative journalist applies maximum-depth investigation techniques (internal documents,
+      undercover experiments, whistleblower cultivation) exclusively to Meta, while covering competitors with surface-level
+      factual reporting. The asymmetry direction aligns with compounding personal financial/reputational incentives from a
+      book deal (ongoing royalties), movie deal (dramatic arc reinforcement), and Pulitzer Prize (professional identity lock-in).
+
+      '
+    date_analyzed: '2026-08-10'
+    triple_deal_structure:
+      book_deal:
+        title: 'Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'
+        publisher: Doubleday
+        publication_date: 2023-11
+        incentive: 'Ongoing royalties tied to Meta-as-villain narrative. Book sales benefit from continued adversarial Meta
+          coverage. Commercial viability depends on Meta remaining the primary villain in the tech accountability narrative.
+
+          '
+        source_url: https://www.penguinrandomhouse.com/books/706796/broken-code-by-jeff-horwitz/
+      movie_deal:
+        title: The Social Reckoning
+        studio: Sony/Columbia Pictures
+        director: Aaron Sorkin
+        actor_playing_horwitz: Jeremy Allen White
+        release_date: '2026-10-09'
+        incentive: 'Horwitz is portrayed as the heroic journalist protagonist. Any reporting that distributes investigative
+          blame more equally across tech companies would weaken the film''s dramatic arc right before its October 2026 release.
+          Maximum financial incentive to maintain Meta-villain narrative during the months leading up to release.
+
+          '
+        source_url: https://deadline.com/tag/the-social-reckoning/
+      pulitzer_prize:
+        category: Beat Reporting
+        year: 2026
+        citation_focus: Meta investigations at Reuters
+        incentive: 'Professional identity is now structurally locked to Meta as the primary target. Pulitzer won specifically
+          for Meta investigations means the journalist''s highest credential is defined by adversarial Meta coverage. Pivoting
+          to comparable scrutiny of competitors would dilute the professional brand that the Pulitzer certified.
+
+          '
+        source_url: https://www.pulitzer.org/winners/jeff-horwitz-reuters
+    cross_entity_coverage_analysis:
+      meta_coverage:
+        tone: -0.75
+        register: adversarial_investigative
+        investigative_depth: maximum
+        techniques_applied:
+        - internal_documents: true
+          description: 20K+ internal documents (Facebook Files, 2021)
+        - undercover_experiments: true
+          description: Created fake 14-year-old account to test AI chatbot safeguards; purchased scam ads to test Meta's ad
+            review system
+        - whistleblower_cultivation: true
+          description: Frances Haugen and other internal sources at Meta
+        - regulatory_pressure: true
+          description: Coverage directly contributed to congressional hearings and regulatory action
+        recent_articles:
+        - title: Meta earns ~$16B/yr from scam ads, 'global playbook' to defeat anti-scam regulations
+          outlet: Reuters
+          year: 2025
+          type: investigative_series
+          framing: knowingly exposed users, flooding users, global playbook
+          tone: -0.8
+        - title: Meta AI chatbot conversations with minors — sensual content
+          outlet: Reuters
+          year: 2025
+          type: investigative_undercover
+          framing: created fake 14-year-old account, exposed Meta allowing inappropriate AI interactions
+          tone: -0.85
+        - title: Instagram algorithm steering vulnerable teens toward eating disorder content
+          outlet: Reuters
+          year: 2026
+          type: investigative_internal_documents
+          framing: internal Meta documents showing algorithm steering, suppress critical research
+          tone: -0.8
+        - title: Facebook Files — XCheck, teen mental health, human trafficking, political violence
+          outlet: Wall Street Journal
+          year: 2021
+          type: investigative_series
+          framing: knowingly exposed, toxic secrets, internal documents reveal
+          tone: -0.85
+        - title: Death of cognitively disabled man linked to Meta AI chatbot interaction
+          outlet: Reuters
+          year: 2026
+          type: investigative
+          framing: documented death, chatbot safeguard failure
+          tone: -0.9
+        loaded_language:
+        - knowingly exposed
+        - flooding users
+        - toxic secrets
+        - global playbook
+        - suppress critical research
+      competitor_coverage:
+        openai:
+          tone: -0.1
+          register: factual_neutral
+          investigative_depth: surface
+          techniques_applied:
+          - internal_documents: false
+          - undercover_experiments: false
+          - whistleblower_cultivation: false
+          recent_articles:
+          - title: UK AISI finds 'new security breaches' and 'unsanctioned actions' in AI models
+            outlet: Reuters
+            date: '2026-08-04'
+            type: wire_service_report
+            framing: neutral reporting of UK government findings, no independent investigation
+            tone: -0.1
+            source_url: https://www.reuters.com/technology/artificial-intelligence/uk-finds-ai-models-can-deceive-developers-take-unsanctioned-actions-2026-08-04/
+        google_youtube:
+          tone: 0.0
+          register: absent
+          investigative_depth: none
+          techniques_applied:
+          - internal_documents: false
+          - undercover_experiments: false
+          - whistleblower_cultivation: false
+          recent_articles: []
+          notable_absence: 'LA trial found BOTH Meta ($4.2M) and YouTube ($1.8M) guilty on 7 counts of child safety violations.
+            Horwitz produced extensive investigative series on Meta''s child safety failures but ZERO comparable investigation
+            of YouTube despite identical findings of liability.
+
+            '
+        apple:
+          tone: 0.0
+          register: absent
+          investigative_depth: none
+          techniques_applied:
+          - internal_documents: false
+          - undercover_experiments: false
+          - whistleblower_cultivation: false
+          recent_articles: []
+        snap_tiktok:
+          tone: 0.0
+          register: absent
+          investigative_depth: none
+          techniques_applied:
+          - internal_documents: false
+          - undercover_experiments: false
+          - whistleblower_cultivation: false
+          recent_articles: []
+      cross_entity_patterns:
+      - pattern_name: INVESTIGATIVE TECHNIQUE EXCLUSIVITY
+        description: 'Internal documents, undercover experiments (fake accounts, purchasing scam ads), and whistleblower cultivation
+          are applied ONLY to Meta. Competitor coverage uses wire-service factual reporting exclusively. The same reporter
+          who creates fake 14-year-old accounts on Meta has never created fake accounts on YouTube, TikTok, or Snap to test
+          comparable safeguards.
+
+          '
+        severity: 5
+      - pattern_name: LA TRIAL COVERAGE GAP
+        description: 'Both Meta ($4.2M) and YouTube ($1.8M) were found liable for 7 counts of child safety violations, but
+          investigative series focuses exclusively on Meta. YouTube''s identical liability produces zero independent Horwitz
+          investigation.
+
+          '
+        severity: 4
+      - pattern_name: TRIPLE DEAL COMPOUNDING
+        description: 'Book royalties (ongoing), movie release timing (Oct 9, 2026), and Pulitzer professional identity create
+          compounding incentives. Each deal reinforces the others: the book provided the source material for the movie, the
+          movie validates the Pulitzer-winning narrative, and the Pulitzer certifies the book''s thesis. Diversifying investigative
+          targets would dilute all three simultaneously.
+
+          '
+        severity: 5
+      - pattern_name: MOVIE RELEASE TIMING PRESSURE
+        description: 'The Social Reckoning releases Oct 9, 2026. Maximum incentive to maintain Meta-villain narrative during
+          Q3 2026 reporting. Any coverage distributing blame to other platforms would weaken the film''s dramatic premise
+          right before its theatrical release.
+
+          '
+        severity: 4
+      - pattern_name: SCAM AD SELECTIVE INVESTIGATION
+        description: 'Horwitz conducted an undercover experiment purchasing scam ads on Meta''s platform to prove the ad review
+          system could be bypassed. No comparable experiment has been conducted on Google Ads, YouTube, TikTok, or X despite
+          documented scam ad problems on all these platforms. Google Ads has well-documented scam ad issues but receives zero
+          investigative attention from Horwitz.
+
+          '
+        severity: 4
+      legitimate_factors:
+      - factor: Frances Haugen access
+        description: 'Frances Haugen was a Meta employee who specifically leaked documents to Horwitz. This original access
+          was at Meta, not competitors. Source access drove initial story selection.
+
+          '
+        weight: high
+      - factor: Leaked documents availability
+        description: 'Meta''s internal documents were leaked to him; competitors'' internal documents were not. Investigative
+          journalism follows available evidence.
+
+          '
+        weight: high
+      - factor: Journalist specialization
+        description: 'Beat specialization is normal in investigative journalism. Reporters develop source networks and expertise
+          in specific companies over years.
+
+          '
+        weight: medium
+      - factor: Platform scale
+        description: 'Meta operates larger social media platforms (Facebook, Instagram) than some competitors by some metrics,
+          potentially justifying more scrutiny.
+
+          '
+        weight: medium
+      - factor: Facebook Files predated deals
+        description: 'The Facebook Files (2021) predated the book deal (2023) and movie deal. The narrative emerged from the
+          reporting, not the other way around. However, the deals now create forward-looking incentive to maintain the narrative.
+
+          '
+        weight: high
+      - factor: Pulitzer merit evaluation
+        description: 'The Pulitzer committee evaluated Horwitz''s work on its journalistic merit. The prize reflects quality
+          of reporting, not only choice of target.
+
+          '
+        weight: medium
+      - factor: Reuters editorial independence
+        description: 'Reuters is not a Condé Nast/PMC with competitor content deals. Reuters has no known AI content licensing
+          deals with OpenAI, Google, or other Meta competitors that would create publication-level financial incentives.
+
+          '
+        weight: high
+      investigative_depth_ratio:
+        meta: maximum (internal docs, undercover, whistleblowers)
+        openai: surface (wire-service neutral)
+        google_youtube: absent (zero coverage despite identical liability findings)
+        apple: absent
+        snap_tiktok: absent
+      asymmetry_score: 0.82
+      asymmetry_note: 'High asymmetry score reflects extreme gap between investigative depth applied to Meta vs all competitors.
+        Partially mitigated by legitimate factors (source access, leaked documents, specialization). The key question is not
+        whether Horwitz''s Meta reporting is wrong (it isn''t), but whether the ABSENCE of comparable investigation of competitors
+        with comparable issues constitutes a structural blind spot reinforced by financial incentives.
+
+        '
 cross_entity_leverage:
   amazon_sextuple_leverage:
     amazon_publisher_deal_count:
@@ -5753,255 +6004,5 @@ cross_publication_findings:
       - https://muckrack.com/jeff-horwitz/articles
       - https://indicator.media/p/watch-the-first-episode-of-show-tell-from-indicator-jeff-horwitz
       - https://www.reuters.com/legal/litigation/openai-anthropic-ai-agents-implicated-new-security-breaches-2026-08-05/
-    test_count: 0
+    test_count: 63
     test_file: tests/test_jeff_horwitz_cross_entity.py
-jeff_horwitz:
-  name: Jeff Horwitz
-  current_publication: Reuters
-  previous_publication: Wall Street Journal
-  beat: tech investigations / Meta accountability
-  career_trajectory:
-  - outlet: Wall Street Journal
-    years: 2014-2024
-    role: Technology reporter / investigations
-    key_work: Facebook Files (2021) — 20K+ internal documents, XCheck, teen mental health, human trafficking
-  - outlet: Reuters
-    years: 2024-present
-    role: Tech investigations reporter
-    key_work: Meta scam ads, AI chatbots and children, Instagram eating disorders
-  mechanism_id: 18
-  mechanism_name: triple_deal_narrative_lock_in
-  mechanism_description: 'The same investigative journalist applies maximum-depth investigation techniques (internal documents,
-    undercover experiments, whistleblower cultivation) exclusively to Meta, while covering competitors with surface-level
-    factual reporting. The asymmetry direction aligns with compounding personal financial/reputational incentives from a book
-    deal (ongoing royalties), movie deal (dramatic arc reinforcement), and Pulitzer Prize (professional identity lock-in).
-
-    '
-  date_analyzed: '2026-08-10'
-  triple_deal_structure:
-    book_deal:
-      title: 'Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'
-      publisher: Doubleday
-      publication_date: 2023-11
-      incentive: 'Ongoing royalties tied to Meta-as-villain narrative. Book sales benefit from continued adversarial Meta
-        coverage. Commercial viability depends on Meta remaining the primary villain in the tech accountability narrative.
-
-        '
-      source_url: https://www.penguinrandomhouse.com/books/706796/broken-code-by-jeff-horwitz/
-    movie_deal:
-      title: The Social Reckoning
-      studio: Sony/Columbia Pictures
-      director: Aaron Sorkin
-      actor_playing_horwitz: Jeremy Allen White
-      release_date: '2026-10-09'
-      incentive: 'Horwitz is portrayed as the heroic journalist protagonist. Any reporting that distributes investigative
-        blame more equally across tech companies would weaken the film''s dramatic arc right before its October 2026 release.
-        Maximum financial incentive to maintain Meta-villain narrative during the months leading up to release.
-
-        '
-      source_url: https://deadline.com/tag/the-social-reckoning/
-    pulitzer_prize:
-      category: Beat Reporting
-      year: 2026
-      citation_focus: Meta investigations at Reuters
-      incentive: 'Professional identity is now structurally locked to Meta as the primary target. Pulitzer won specifically
-        for Meta investigations means the journalist''s highest credential is defined by adversarial Meta coverage. Pivoting
-        to comparable scrutiny of competitors would dilute the professional brand that the Pulitzer certified.
-
-        '
-      source_url: https://www.pulitzer.org/winners/jeff-horwitz-reuters
-  cross_entity_coverage_analysis:
-    meta_coverage:
-      tone: -0.75
-      register: adversarial_investigative
-      investigative_depth: maximum
-      techniques_applied:
-      - internal_documents: true
-        description: 20K+ internal documents (Facebook Files, 2021)
-      - undercover_experiments: true
-        description: Created fake 14-year-old account to test AI chatbot safeguards; purchased scam ads to test Meta's ad
-          review system
-      - whistleblower_cultivation: true
-        description: Frances Haugen and other internal sources at Meta
-      - regulatory_pressure: true
-        description: Coverage directly contributed to congressional hearings and regulatory action
-      recent_articles:
-      - title: Meta earns ~$16B/yr from scam ads, 'global playbook' to defeat anti-scam regulations
-        outlet: Reuters
-        year: 2025
-        type: investigative_series
-        framing: knowingly exposed users, flooding users, global playbook
-        tone: -0.8
-      - title: Meta AI chatbot conversations with minors — sensual content
-        outlet: Reuters
-        year: 2025
-        type: investigative_undercover
-        framing: created fake 14-year-old account, exposed Meta allowing inappropriate AI interactions
-        tone: -0.85
-      - title: Instagram algorithm steering vulnerable teens toward eating disorder content
-        outlet: Reuters
-        year: 2026
-        type: investigative_internal_documents
-        framing: internal Meta documents showing algorithm steering, suppress critical research
-        tone: -0.8
-      - title: Facebook Files — XCheck, teen mental health, human trafficking, political violence
-        outlet: Wall Street Journal
-        year: 2021
-        type: investigative_series
-        framing: knowingly exposed, toxic secrets, internal documents reveal
-        tone: -0.85
-      - title: Death of cognitively disabled man linked to Meta AI chatbot interaction
-        outlet: Reuters
-        year: 2026
-        type: investigative
-        framing: documented death, chatbot safeguard failure
-        tone: -0.9
-      loaded_language:
-      - knowingly exposed
-      - flooding users
-      - toxic secrets
-      - global playbook
-      - suppress critical research
-    competitor_coverage:
-      openai:
-        tone: -0.1
-        register: factual_neutral
-        investigative_depth: surface
-        techniques_applied:
-        - internal_documents: false
-        - undercover_experiments: false
-        - whistleblower_cultivation: false
-        recent_articles:
-        - title: UK AISI finds 'new security breaches' and 'unsanctioned actions' in AI models
-          outlet: Reuters
-          date: '2026-08-04'
-          type: wire_service_report
-          framing: neutral reporting of UK government findings, no independent investigation
-          tone: -0.1
-          source_url: https://www.reuters.com/technology/artificial-intelligence/uk-finds-ai-models-can-deceive-developers-take-unsanctioned-actions-2026-08-04/
-      google_youtube:
-        tone: 0.0
-        register: absent
-        investigative_depth: none
-        techniques_applied:
-        - internal_documents: false
-        - undercover_experiments: false
-        - whistleblower_cultivation: false
-        recent_articles: []
-        notable_absence: 'LA trial found BOTH Meta ($4.2M) and YouTube ($1.8M) guilty on 7 counts of child safety violations.
-          Horwitz produced extensive investigative series on Meta''s child safety failures but ZERO comparable investigation
-          of YouTube despite identical findings of liability.
-
-          '
-      apple:
-        tone: 0.0
-        register: absent
-        investigative_depth: none
-        techniques_applied:
-        - internal_documents: false
-        - undercover_experiments: false
-        - whistleblower_cultivation: false
-        recent_articles: []
-      snap_tiktok:
-        tone: 0.0
-        register: absent
-        investigative_depth: none
-        techniques_applied:
-        - internal_documents: false
-        - undercover_experiments: false
-        - whistleblower_cultivation: false
-        recent_articles: []
-    cross_entity_patterns:
-    - pattern_name: INVESTIGATIVE TECHNIQUE EXCLUSIVITY
-      description: 'Internal documents, undercover experiments (fake accounts, purchasing scam ads), and whistleblower cultivation
-        are applied ONLY to Meta. Competitor coverage uses wire-service factual reporting exclusively. The same reporter who
-        creates fake 14-year-old accounts on Meta has never created fake accounts on YouTube, TikTok, or Snap to test comparable
-        safeguards.
-
-        '
-      severity: 5
-    - pattern_name: LA TRIAL COVERAGE GAP
-      description: 'Both Meta ($4.2M) and YouTube ($1.8M) were found liable for 7 counts of child safety violations, but investigative
-        series focuses exclusively on Meta. YouTube''s identical liability produces zero independent Horwitz investigation.
-
-        '
-      severity: 4
-    - pattern_name: TRIPLE DEAL COMPOUNDING
-      description: 'Book royalties (ongoing), movie release timing (Oct 9, 2026), and Pulitzer professional identity create
-        compounding incentives. Each deal reinforces the others: the book provided the source material for the movie, the
-        movie validates the Pulitzer-winning narrative, and the Pulitzer certifies the book''s thesis. Diversifying investigative
-        targets would dilute all three simultaneously.
-
-        '
-      severity: 5
-    - pattern_name: MOVIE RELEASE TIMING PRESSURE
-      description: 'The Social Reckoning releases Oct 9, 2026. Maximum incentive to maintain Meta-villain narrative during
-        Q3 2026 reporting. Any coverage distributing blame to other platforms would weaken the film''s dramatic premise right
-        before its theatrical release.
-
-        '
-      severity: 4
-    - pattern_name: SCAM AD SELECTIVE INVESTIGATION
-      description: 'Horwitz conducted an undercover experiment purchasing scam ads on Meta''s platform to prove the ad review
-        system could be bypassed. No comparable experiment has been conducted on Google Ads, YouTube, TikTok, or X despite
-        documented scam ad problems on all these platforms. Google Ads has well-documented scam ad issues but receives zero
-        investigative attention from Horwitz.
-
-        '
-      severity: 4
-    legitimate_factors:
-    - factor: Frances Haugen access
-      description: 'Frances Haugen was a Meta employee who specifically leaked documents to Horwitz. This original access
-        was at Meta, not competitors. Source access drove initial story selection.
-
-        '
-      weight: high
-    - factor: Leaked documents availability
-      description: 'Meta''s internal documents were leaked to him; competitors'' internal documents were not. Investigative
-        journalism follows available evidence.
-
-        '
-      weight: high
-    - factor: Journalist specialization
-      description: 'Beat specialization is normal in investigative journalism. Reporters develop source networks and expertise
-        in specific companies over years.
-
-        '
-      weight: medium
-    - factor: Platform scale
-      description: 'Meta operates larger social media platforms (Facebook, Instagram) than some competitors by some metrics,
-        potentially justifying more scrutiny.
-
-        '
-      weight: medium
-    - factor: Facebook Files predated deals
-      description: 'The Facebook Files (2021) predated the book deal (2023) and movie deal. The narrative emerged from the
-        reporting, not the other way around. However, the deals now create forward-looking incentive to maintain the narrative.
-
-        '
-      weight: high
-    - factor: Pulitzer merit evaluation
-      description: 'The Pulitzer committee evaluated Horwitz''s work on its journalistic merit. The prize reflects quality
-        of reporting, not only choice of target.
-
-        '
-      weight: medium
-    - factor: Reuters editorial independence
-      description: 'Reuters is not a Condé Nast/PMC with competitor content deals. Reuters has no known AI content licensing
-        deals with OpenAI, Google, or other Meta competitors that would create publication-level financial incentives.
-
-        '
-      weight: high
-    investigative_depth_ratio:
-      meta: maximum (internal docs, undercover, whistleblowers)
-      openai: surface (wire-service neutral)
-      google_youtube: absent (zero coverage despite identical liability findings)
-      apple: absent
-      snap_tiktok: absent
-    asymmetry_score: 0.82
-    asymmetry_note: 'High asymmetry score reflects extreme gap between investigative depth applied to Meta vs all competitors.
-      Partially mitigated by legitimate factors (source access, leaked documents, specialization). The key question is not
-      whether Horwitz''s Meta reporting is wrong (it isn''t), but whether the ABSENCE of comparable investigation of competitors
-      with comparable issues constitutes a structural blind spot reinforced by financial incentives.
-
-      '

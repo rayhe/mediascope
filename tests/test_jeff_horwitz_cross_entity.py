@@ -51,9 +51,9 @@ def load_competitor_research():
 
 
 def get_horwitz():
-    """Extract the jeff_horwitz section from competitor-coverage-research.yaml."""
+    """Extract the reuters_jeff_horwitz section from aggregate_findings in competitor-coverage-research.yaml."""
     data = load_competitor_research()
-    return data.get('jeff_horwitz')
+    return data.get('aggregate_findings', {}).get('reuters_jeff_horwitz')
 
 
 # ---------------------------------------------------------------------------
@@ -108,11 +108,11 @@ class TestJeffHorwitzBasicProfile(unittest.TestCase):
 # Test Class 2: Triple-Deal Narrative Lock-In (Mechanism #18)
 # ---------------------------------------------------------------------------
 class TestTripleDealNarrativeLockIn(unittest.TestCase):
-    """Verify mechanism #18 is fully documented with all three deal types."""
+    """Verify mechanism #19 is fully documented with all three deal types."""
 
-    def test_mechanism_id_is_18(self):
+    def test_mechanism_id_is_19(self):
         horwitz = get_horwitz()
-        self.assertEqual(horwitz['mechanism_id'], 18)
+        self.assertEqual(horwitz['mechanism_id'], 19)
 
     def test_mechanism_name(self):
         horwitz = get_horwitz()
