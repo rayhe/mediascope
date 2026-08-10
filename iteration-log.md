@@ -1,4 +1,45 @@
 # MediaScope Iteration Log
+## 2026-08-10 07:00 PT — Type B: Journalist Cross-Entity Tracking — Casey Newton (Platformer/Hard Fork) Disclosure-as-Inoculation Paradox (Mechanism #24)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Finding — Mechanism #24: Disclosure-as-Inoculation Paradox — Transparent Personal Conflict Without Independent Verification**
+
+Casey Newton (Platformer founder, Hard Fork co-host) has a fiancé who works as a software engineer at Anthropic (started Jan 2025, engaged Feb 2026). His ethics disclosure page (platformer.news/ethics) is best-in-class for independent journalism — per-column disclosure even on AI columns that don't mention Anthropic, email to new subscribers, permanent home page link. But the disclosure is entirely self-regulated: no editorial board, no ethics editor, no institutional verification mechanism.
+
+**Framing Asymmetry (from Platformer article listing):**
+
+Meta headlines: "Meta's scam problem, UK edition," "Meta's scam problem may trigger a legal reckoning," "Mark Zuckerberg's 20-year mistake" — 100% accountability framing.
+
+Anthropic headlines: "Claude Code for writers," "The project that turned me into a Claude Code believer," "the rapture over Claude Opus 4.5," "Following: Anthropic vs. The Pentagon" — 100% admiration/enthusiasm framing.
+
+**Claude Code Personal Adoption → Positive Coverage Loop:**
+Newton built his personal website (cnewton.org) with Claude Code, then wrote about it for Platformer. This crosses from journalism to customer advocacy — the journalist uses his fiancé's employer's product and writes multiple positive columns about the experience. Disclosure present, but the adoption + coverage combination creates a reinforcing loop.
+
+**Pentagon Framing vs. Academic Analysis:**
+Newton's "Following: Anthropic vs. The Pentagon" (Feb 2026) framed Anthropic as principled defender against government overreach. Harvard Berkman Klein Center's analysis (Sanders & Schneier, The Guardian, Mar 3, 2026) offered a more skeptical frame: "Don't bet that the Pentagon – or Anthropic – is acting in the public interest." Both valid, but Newton's systematically more favorable to his fiancé's employer.
+
+**Independence Transition (Aug 2026+):**
+Hard Fork ending Aug 2026. Newton and Kevin Roose launching independent AI media venture — zero institutional editorial oversight. NYT editorial standards and legal review no longer apply. Self-imposed disclosure becomes the ONLY check on an operation that will be the first fully independent AI journalism venture at scale.
+
+**The Paradox:**
+Transparent disclosure can reduce reader scrutiny rather than increase it. Readers see "My fiancé works at Anthropic" and may infer trustworthiness without examining whether the disclosure actually changes framing behavior. Disclosure addresses the ethical obligation but not the structural incentive.
+
+**Legitimate Factors (all documented in test file):**
+- Meta accountability journalism predates Anthropic relationship by 6 years ($52M Facebook/Cognizant settlement, 2019-2020)
+- Disclosure exceeds industry standard (most institutional journalists make no per-article disclosure of employer AI deals)
+- Fiancé's engineering role is outside Newton's product/policy coverage focus
+- Newton covers Substack, TikTok, X/Musk, Google critically — not uniformly soft
+- Anthropic's Pentagon stand genuinely newsworthy (federal judge ruled retaliation "likely unlawful")
+
+**Vox Media Secondary Conflict:**
+Newton also holds Vox Media stock options from his 2013-2020 Verge employment. When he amplifies Verge Meta coverage, the amplification comes from someone with both Anthropic personal AND Vox financial interests. Disclosed but not per-link.
+
+**Files changed:** `tests/test_casey_newton_cross_entity.py` (27 tests, 8 classes), `profiles/careers/journalists.yaml` (competitor_coverage section added), `README.md`, `docs/ARCHITECTURE.md`
+**Tests:** 8,307 total across 274 files. Structural consistency: 124/124 passing.
+**Commit:** 6d4ddb6 — pushed to GitHub.
+
+---
 ## 2026-08-10 04:00 PT — Type D: Test & Verify — Cross-Validation Sprint 01:00-03:00 (Mechanisms #19-#21)
 
 **Rotation:** D (Test & Verify)
