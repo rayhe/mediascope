@@ -2067,8 +2067,69 @@ key_journalists:
     beat: "AI research and policy"
     known_patterns: "AI safety and regulation focus"
   - name: "Kate Knibbs"
-    beat: "Culture, internet culture"
-    known_patterns: "Cultural criticism of tech"
+    beat: "AI copyright, IP law, AI-generated content, internet culture"
+    known_patterns: >
+      WIRED's primary AI copyright reporter. Maintains 'Every AI Copyright Lawsuit
+      in the US, Visualized' — the most widely cited AI copyright tracker in the
+      industry, referenced in federal court filings (NDCA Case 5:26-cv-03725-PCP),
+      California Assembly policy analyses (AB 412), and academic papers. De facto
+      industry record-keeper for AI training data disputes.
+    cross_entity_coverage_analysis:
+      mechanism: "Dual Watchdog Paradox — Copyright Record-Keeper With Undisclosed Employer Licensing"
+      mechanism_number: 20
+      description: >
+        The industry's definitive AI copyright record-keeper works for a company (Condé Nast)
+        that SELLS content for AI training to OpenAI (Aug 2024), Amazon Rufus (Jul 2025),
+        Microsoft Copilot (Dec 2025), and Apple Intelligence (in negotiations) — while having
+        $0 deals with Meta and $0 with Google. Condé Nast's parent Advance controls Reddit
+        (65.2% voting), which separately licenses training data to OpenAI and Alphabet.
+        Knibbs investigates AI companies' data practices from within a corporate structure that
+        profits from AI training data licensing at both publisher and platform levels.
+      meta_coverage:
+        - article: "The Battle Over Books3 Could Change AI Forever (Sep 2023)"
+          framing: "Meta receives headline prominence; OpenAI co-implicated but secondary"
+          source: "Cited in court filings, Case 5:26-cv-03725-PCP Doc 1 p.18-19"
+        - article: "Meta data deletion form broken / 'fake PR stunt' (Oct 2023)"
+          framing: "Dismissive/accusatory — Meta's compliance effort framed as performative"
+        - article: "Mark Lemley quits Meta copyright case Kadrey v. Meta (Jan 2025)"
+          framing: "Framed as significant loss for Meta's legal defense"
+        - article: "Ray-Ban Meta translation feature (Jun 2024)"
+          framing: "'too rudimentary and buggy to be anything more than a novelty'"
+        - article: "Meta/Anthropic copyright summary judgments (2026)"
+          framing: "Meta emphasized via piracy/theft angle; Anthropic via financial damages angle"
+      competitor_coverage:
+        - entity: "OpenAI"
+          relationship: "Condé Nast paid licensing deal (Aug 2024)"
+          framing: "Secondary/background in shared lawsuits with Meta"
+          deals_disclosed: false
+        - entity: "Google"
+          relationship: "$0 — adversarial (Google Zero posture)"
+          framing: "Critical but editorially motivated — WIRED's own content copied"
+        - entity: "Apple"
+          relationship: "In licensing negotiations"
+          framing: "Neutral/factual on Applebot-Extended crawler blocking"
+        - entity: "Anthropic"
+          relationship: "No Condé Nast deal"
+          framing: "Critical but market-focused — $1T damages potential"
+      asymmetry_direction: >
+        Coverage framing inversely correlates with deal value: Meta ($0) receives most
+        accusatory framing, OpenAI (paid) receives most favorable positioning in shared
+        lawsuits. Google ($0) critical but editorially self-interested. Apple (negotiating)
+        neutral/factual.
+      legitimate_factors:
+        - "Meta has larger copyright litigation surface with more documented evidence in court"
+        - "Meta products ship at scale (10M+ glasses units), attracting more product scrutiny"
+        - "Meta has deeper privacy controversy history (Cambridge Analytica, $7B+ fines)"
+        - "Knibbs does cover Google and Anthropic critically — not exclusively targeting Meta"
+      structural_significance: >
+        The Dual Watchdog Paradox is structurally DEEPER than a standard beat reporter's
+        bias because: (1) the copyright tracker IS the industry baseline — it cannot be
+        counterbalanced by other reporters the way an opinion can; (2) the tracker is cited
+        in court filings and legislative analyses without any disclosure of Condé Nast's
+        commercial AI relationships; (3) Advance's Reddit investment (~$8B, 65.2% voting)
+        adds a second paradox layer where the parent company profits from AI training data
+        licensing while its subsidiary's journalist tracks AI training data disputes.
+      test_file: "tests/test_kate_knibbs_cross_entity.py"
   - name: "Dell Cameron"
     beat: "National security, surveillance, privacy, Big Tech"
     known_patterns: "Investigative reporting on surveillance tech, law enforcement use of data. Won Edward R. Murrow Award for Investigative Reporting. Consistently frames commercial tech through surveillance/military lens."

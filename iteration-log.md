@@ -1,4 +1,49 @@
 # MediaScope Iteration Log
+## 2026-08-10 02:00 PT — Type B: Journalist Cross-Entity Tracking — Kate Knibbs (WIRED) Dual Watchdog Paradox
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Journalist:** Kate Knibbs — WIRED senior writer, AI copyright/IP law/internet culture beat. Maintains "Every AI Copyright Lawsuit in the US, Visualized" — the most widely cited AI copyright tracker in the industry.
+
+**Mechanism #20: Dual Watchdog Paradox — Copyright Record-Keeper With Undisclosed Employer Licensing Deals**
+
+Kate Knibbs is the de facto industry record-keeper for AI training data disputes. Her copyright tracker is cited in federal court filings (Case 5:26-cv-03725-PCP, NDCA), California Assembly policy analyses (AB 412, Bauer-Kahan), and academic papers (arxiv.org 2505.00174, 2505.00020). She occupies a unique structural position: not just a beat reporter but the baseline reference that courts, legislators, and researchers rely on.
+
+The paradox: she works for WIRED (Condé Nast / Advance Publications), which has paid AI licensing deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025), Microsoft Copilot (Dec 2025 pilot), and Apple Intelligence (in negotiations). Condé Nast has $0 deals with Meta and $0 with Google. Advance Publications (65.2% Reddit voting control) separately benefits from Reddit's AI training data licensing to OpenAI (~$60-70M/yr) and Alphabet. The journalism investigating AI data practices is produced within a corporate structure that profits from AI training data licensing at both the publisher and platform levels.
+
+**Coverage Framing Gradient (aligns with deal landscape):**
+- **Meta ($0 deal):** Most critical — Books3 headline prominence (Meta primary, OpenAI secondary in same lawsuits), data deletion form "broken"/"fake PR stunt," Mark Lemley quitting Meta case, glasses translation "too rudimentary and buggy to be anything more than a novelty," piracy/theft framing emphasis in summary judgment coverage
+- **Google ($0 deal):** Critical — AI Overviews "kinda messy" — but editorially motivated (WIRED's own content copied by Google). Aligns with Condé Nast CEO Lynch's "Google Zero" commercial posture
+- **Anthropic (no deal):** Critical but market-focused — "$1T+ damages potential" framing (financial, not accusatory)
+- **OpenAI (paid deal):** Secondary/background position in shared lawsuits. When both Meta and OpenAI used Books3/LibGen, Meta receives headline prominence
+- **Apple (in negotiations):** Neutral/factual — reported sites blocking Applebot-Extended without accusatory language
+
+**Two-Layer Paradox:**
+1. Condé Nast (WIRED parent) sells content to OpenAI for AI training
+2. Advance (Condé Nast parent) controls Reddit (65.2% voting), which sells training data to BOTH OpenAI AND Alphabet
+→ The watchdog's employer is a paid participant in the ecosystem at the publisher level, and the watchdog's ultimate parent is a participant at the platform level
+
+**Outsized Influence of Record-Keeper Role:**
+A beat reporter's bias can be counterbalanced by other reporters covering the same story. The industry's record-keeper CANNOT be counterbalanced — the tracker IS the baseline. If framing or selection in the tracker systematically features certain companies more prominently, it shapes the entire discourse without counterbalance. Courts and legislators citing the tracker have no way to assess whether Condé Nast's commercial AI relationships influence the tracker's framing.
+
+**Distinction from Alex Reisner / Atlantic (Mechanism #16):**
+Both exhibit watchdog paradoxes, but they differ structurally:
+- Reisner (Atlantic): investigates piracy at a publication licensing to a pirate (single-layer, single deal)
+- Knibbs (WIRED): maintains the INDUSTRY RECORD — the tracker cited in court/law/academia — within a TWO-LAYER corporate structure profiting from AI training data at both publisher (Condé Nast → OpenAI) and platform (Advance → Reddit → OpenAI/Alphabet) levels. The record-keeper's influence is orders of magnitude larger than any single beat reporter.
+
+**Legitimate factors:**
+- Meta has larger copyright litigation surface with more documented court evidence
+- Meta products ship at scale (10M+ glasses), attracting more scrutiny
+- Meta has deeper privacy controversy history (Cambridge Analytica, $7B+ fines)
+- Knibbs DOES cover Google and Anthropic critically — not exclusively targeting Meta
+- Undisclosed deals create APPEARANCE of conflict, not proof of individual bias
+
+**Selection process:** Rejected Tom Dotan (laid off from WSJ, no longer at profiled publication), Gerrit De Vynck (WaPo not yet profiled — would require new publication profile), Kate Clark (The Information, paywalled). Selected Knibbs because: (1) WIRED is the most important publication in the MediaScope corpus with highest conflict density; (2) she occupies a unique RECORD-KEEPER position; (3) her coverage spans multiple entities on the SAME issue (training data); (4) the Dual Watchdog Paradox is analytically distinct from Reisner's single-layer paradox; (5) WIRED already has 5 journalist profiles but none cover the most structurally significant reporter on the AI copyright beat.
+
+**Files changed:** `tests/test_kate_knibbs_cross_entity.py` (29 tests, 8 classes), `profiles/wired.yaml` (full cross_entity_coverage_analysis added), `README.md`, `docs/ARCHITECTURE.md`
+**Tests:** 8,211 total across 269 files.
+
+---
 ## 2026-08-10 00:00 PT — Type A: Competitor Coverage Deep Dive — Guardian × Google SID Governance Capture Privacy Scrutiny Inversion
 
 **Rotation:** A (Competitor Coverage Deep Dive)
