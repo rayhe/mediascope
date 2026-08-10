@@ -6024,6 +6024,7 @@ cross_publication_findings:
   nyt_anthropic_triple_chain_incentive:
     publication: nytimes
     finding_type: financial_incentive_mapping
+    mechanism_id: 23
     finding_summary: 'NYT Triple-Chain Financial Incentive Structure (Mechanism #23):
       Three independent financial pathways converging to predict Anthropic-positive
       NYT coverage. Chain 1 (Direct): Reported confidential NYT-Anthropic settlement
@@ -6042,6 +6043,7 @@ cross_publication_findings:
   casey_newton_disclosure_inoculation:
     publication: platformer
     finding_type: journalist_cross_entity
+    mechanism_id: 24
     finding_summary: 'Disclosure-as-Inoculation Paradox (Mechanism #24):
       Casey Newton (Platformer/Hard Fork co-host) fiancé is Anthropic software
       engineer (started Jan 2025, engaged Feb 2026). His ethics page is best-in-class
@@ -6058,6 +6060,7 @@ cross_publication_findings:
   wsj_anthropic_meta_business_viability_asymmetry:
     publication: wall_street_journal
     finding_type: competitor_coverage_deep_dive
+    mechanism_id: 26
     finding_summary: 'Business Viability Framing Asymmetry with Settlement-Incentive
       Bias (Mechanism #26): WSJ applies deficit/follower language to Meta''s business
       challenges ("Exposes Its Weak Hand," "lagging behind," "too little, too late")
@@ -6150,5 +6153,5 @@ cross_publication_findings:
     - 'Google''s guarantee is backed by Anthropic''s operating cash flow'
     - 'Broadcom co-guarantees reduce Google''s net exposure'
     test_file: tests/test_google_spv_guarantee_anthropic_showcase_chain_aug10.py
-    test_count: 27
+    test_count: 32
     date_added: 2026-08-10
