@@ -31963,3 +31963,30 @@ Legitimate factors documented: Frances Haugen source access, leaked documents av
 ### Files modified
 - `profiles/competitor-coverage-research.yaml` — Added `jeff_horwitz` top-level key with full mechanism #18 profile
 - `tests/test_jeff_horwitz_cross_entity.py` — 63 tests, 8 classes (new)
+
+## 2026-08-10 01:00 PT — Type B: Journalist Cross-Entity Tracking — Jeff Horwitz (Reuters) Triple-Deal Narrative Lock-In
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Subject:** Jeff Horwitz — Reuters tech investigations reporter (formerly WSJ)
+
+**Mechanism #19: Triple-Deal Narrative Lock-In**
+- Investigative journalist applies maximum-depth techniques (internal documents, undercover experiments, whistleblower cultivation) exclusively to Meta, while covering competitors (OpenAI, Google/YouTube, Apple, Snap, TikTok) with surface-level wire-service reporting
+- Asymmetry direction aligns with three compounding personal incentives:
+  1. **Book:** "Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets" (Doubleday, Nov 2023) — ongoing royalties tied to Meta-as-villain narrative
+  2. **Movie:** "The Social Reckoning" (Sony/Columbia, Aaron Sorkin directing, Jeremy Allen White as Horwitz, release Oct 9 2026) — dramatic arc depends on Meta as primary antagonist
+  3. **Pulitzer Prize for Beat Reporting (May 4, 2026)** — won specifically for Meta investigations at Reuters, with co-winner Engen Tham; professional identity now defined by Meta accountability reporting
+
+**Key evidence:**
+- Meta coverage: Facebook Files (20K+ docs, WSJ 2021), scam ads ($16B/yr, Reuters 2025-2026), AI chatbots & children (fake 14-year-old account), Instagram eating disorders — all maximum-depth with internal documents, undercover experiments, whistleblower cultivation
+- OpenAI/Anthropic rogue AI (Aug 4 2026): wire-service neutral framing, no independent investigation, no internal documents
+- Google/YouTube: zero investigative articles despite LA trial finding both liable for minors' mental health damages
+- Legitimate factors documented: Facebook Files predated all three deals; Frances Haugen provided unique access; Reuters editorial independence is real; beat specialization is standard
+
+**Files modified:**
+- `profiles/competitor-coverage-research.yaml` — added `reuters_jeff_horwitz` aggregate entry (mechanism_id 19) and `jeff_horwitz` profile (mechanism_id corrected 18→19)
+- `tests/test_jeff_horwitz_cross_entity.py` — 63 tests (508 lines), mechanism_id corrected to 19
+- `docs/ARCHITECTURE.md` — added test file entry
+- `README.md` — test count updated to 8,182/268
+
+**Test results:** 63 passed, 0 failed
