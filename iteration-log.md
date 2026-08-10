@@ -31934,3 +31934,32 @@ Financial chain: FT-OpenAI content deal ($5-10M/yr, announced Apr 29 2024 by Mur
 
 ### Commit
 3b54a6c — pushed to GitHub
+
+## 2026-08-10 01:05 PDT — Type B: Jeff Horwitz Cross-Entity Tracking (Mechanism #18)
+
+### New Mechanism: Triple-Deal Narrative Lock-In (#18)
+
+Jeff Horwitz (Reuters, previously WSJ) applies maximum-depth investigative techniques
+(internal documents, undercover experiments, whistleblower cultivation) exclusively to
+Meta, while covering competitors with surface-level wire-service reporting. The asymmetry
+direction aligns with three compounding personal financial/reputational incentives:
+
+1. **Book Deal:** "Broken Code" (Doubleday, Nov 2023) — ongoing royalties tied to Meta-as-villain narrative
+2. **Movie Deal:** "The Social Reckoning" (Sony/Columbia, dir. Aaron Sorkin, Oct 9 2026) — Jeremy Allen White plays Horwitz
+3. **Pulitzer Prize:** 2026 Beat Reporting, won specifically for "Meta investigations" at Reuters
+
+Key asymmetry indicators:
+- **Investigative Technique Exclusivity:** Fake 14-year-old accounts, scam ad purchases, whistleblower cultivation — Meta only. OpenAI/Anthropic gets neutral wire reporting.
+- **LA Trial Coverage Gap:** Both Meta ($4.2M) and YouTube ($1.8M) found liable on 7 counts, but zero Horwitz investigation of YouTube
+- **Scam Ad Selective Investigation:** Undercover experiment on Meta's ad platform but not Google Ads despite comparable problems
+- **Movie Release Timing:** Oct 9, 2026 creates maximum Q3 2026 incentive to maintain Meta-villain narrative
+
+Legitimate factors documented: Frances Haugen source access, leaked documents availability, journalist specialization, platform scale, Facebook Files predating deals, Pulitzer merit, Reuters editorial independence (no competitor content deals).
+
+### Test Results
+- New tests: 63/63 passing (8 classes)
+- Classes: BasicProfile, TripleDealNarrativeLockIn, BookDealIncentiveStructure, MovieDealIncentiveStructure, PulitzerCoverageIdentity, InvestigativeDepthAsymmetry, CompetitorCoverageAbsence, LegitimateFactors
+
+### Files modified
+- `profiles/competitor-coverage-research.yaml` — Added `jeff_horwitz` top-level key with full mechanism #18 profile
+- `tests/test_jeff_horwitz_cross_entity.py` — 63 tests, 8 classes (new)

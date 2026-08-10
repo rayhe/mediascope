@@ -4621,128 +4621,127 @@ cross_publication_findings:
     test_count: 50
     date_added: 2026-08-08
   publisher_ai_revenue_asymmetry_matrix:
-    finding_summary: >
-      Comprehensive cross-publisher mapping of verified AI content licensing
-      revenue sources against observed Meta coverage tone. Among 10 MediaScope-
-      profiled publications, News Corp is the ONLY one with a direct Meta AI
-      licensing deal. It is also the ONLY one with balanced Meta coverage AND
-      the ONLY one that systematically discloses its financial relationships.
-      The remaining 9 publications have ZERO Meta revenue; 7 of 9 have deals
-      with Meta competitors; all 9 produce adversarial Meta coverage. The
-      correlation between no-Meta-revenue and adversarial-Meta-coverage
-      is 100% across the profiled dataset.
+    finding_summary: 'Comprehensive cross-publisher mapping of verified AI content licensing revenue sources against observed
+      Meta coverage tone. Among 10 MediaScope- profiled publications, News Corp is the ONLY one with a direct Meta AI licensing
+      deal. It is also the ONLY one with balanced Meta coverage AND the ONLY one that systematically discloses its financial
+      relationships. The remaining 9 publications have ZERO Meta revenue; 7 of 9 have deals with Meta competitors; all 9 produce
+      adversarial Meta coverage. The correlation between no-Meta-revenue and adversarial-Meta-coverage is 100% across the
+      profiled dataset.
+
+      '
     date_added: 2026-08-08
-    last_updated: 2026-08-08T15:00:00-07:00
-    methodology: >
-      Dollar values sourced from WSJ reporting, Reuters, earnings transcripts,
-      and Digiday. Undisclosed values marked accordingly. Coverage tone values
-      from MediaScope annotated article database (negative = adversarial,
-      positive = favorable). Only direct AI content licensing and settlement
-      revenue counted; advertising, distribution, and platform fees tracked
-      separately in publication profiles.
+    last_updated: 2026-08-08 15:00:00-07:00
+    methodology: 'Dollar values sourced from WSJ reporting, Reuters, earnings transcripts, and Digiday. Undisclosed values
+      marked accordingly. Coverage tone values from MediaScope annotated article database (negative = adversarial, positive
+      = favorable). Only direct AI content licensing and settlement revenue counted; advertising, distribution, and platform
+      fees tracked separately in publication profiles.
+
+      '
     publishers:
       news_corp:
         display_name: News Corp (WSJ, NY Post, Barrons, HarperCollins)
         meta_deal_value: up to $50M/yr (3-year deal, signed Mar 2026)
         meta_deal_source: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
         competitor_deals:
-          - partner: OpenAI
-            value: $250M/5yr (~$50M/yr)
-            signed: May 2024
-            source: https://www.reuters.com/technology/sam-altmans-openai-signs-content-agreement-with-news-corp-2024-05-22/
-          - partner: Anthropic
-            type: settlement_revenue
-            value: share of $1.5B class-action (via HarperCollins)
-            approved: Jun 2026
-            source: https://publishers.org/news/aap-welcomes-courts-final-settlement-approval-in-bartz-v-anthropic/
+        - partner: OpenAI
+          value: $250M/5yr (~$50M/yr)
+          signed: May 2024
+          source: https://www.reuters.com/technology/sam-altmans-openai-signs-content-agreement-with-news-corp-2024-05-22/
+        - partner: Anthropic
+          type: settlement_revenue
+          value: share of $1.5B class-action (via HarperCollins)
+          approved: Jun 2026
+          source: https://publishers.org/news/aap-welcomes-courts-final-settlement-approval-in-bartz-v-anthropic/
         total_verified_ai_revenue_yr: ~$100M+ (Meta $50M + OpenAI $50M + Anthropic share TBD)
         net_financial_direction: BALANCED
         meta_coverage_tone: -0.15
         meta_tone_category: mixed_balanced
         discloses_relationships: true
-        ceo_meta_stance: >
-          Thomson Q4 FY2026 (Aug 5, 2026) praised Meta and OpenAI as having
-          taken a principled approach, called deals partnerships not transactions,
-          said those two companies have established benchmarks other principled
-          companies should follow.
-        q4_fy2026_confirmation: Meta deal contributing to Q4 Dow Jones and News Media results (Thomson confirmed on earnings call)
+        ceo_meta_stance: 'Thomson Q4 FY2026 (Aug 5, 2026) praised Meta and OpenAI as having taken a principled approach, called
+          deals partnerships not transactions, said those two companies have established benchmarks other principled companies
+          should follow.
+
+          '
+        q4_fy2026_confirmation: Meta deal contributing to Q4 Dow Jones and News Media results (Thomson confirmed on earnings
+          call)
       conde_nast_wired:
         display_name: Conde Nast (WIRED, Vogue, GQ, The New Yorker, Vanity Fair)
         meta_deal_value: $0
         competitor_deals:
-          - partner: OpenAI
-            value: undisclosed (multi-year)
-            signed: Aug 2024
-            source: https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
-          - partner: Amazon (Rufus)
-            value: undisclosed (multi-year)
-            signed: Jul 2025
-            source: https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
-          - partner: Microsoft (PCM)
-            value: undisclosed
-            signed: Feb 2026
-          - partner: Perplexity (Comet Plus)
-            value: undisclosed
-            signed: Oct 2025
+        - partner: OpenAI
+          value: undisclosed (multi-year)
+          signed: Aug 2024
+          source: https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
+        - partner: Amazon (Rufus)
+          value: undisclosed (multi-year)
+          signed: Jul 2025
+          source: https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
+        - partner: Microsoft (PCM)
+          value: undisclosed
+          signed: Feb 2026
+        - partner: Perplexity (Comet Plus)
+          value: undisclosed
+          signed: Oct 2025
         total_verified_ai_revenue_yr: undisclosed (4 deals, 0 with Meta)
         net_financial_direction: ANTI-META (4 competitor deals, 0 Meta deals)
         meta_coverage_tone: -0.85
         meta_tone_category: sustained_adversarial
         discloses_relationships: false
-        parent_conflict: >
-          Advance Publications owns Conde Nast (100%) AND Reddit (23.3% economic,
-          ~62% voting). Reddit has $60M/yr Google deal and OpenAI deal. WIREDs
-          AI-must-pay editorial stance directly benefits both Conde Nast and Reddit
+        parent_conflict: 'Advance Publications owns Conde Nast (100%) AND Reddit (23.3% economic, ~62% voting). Reddit has
+          $60M/yr Google deal and OpenAI deal. WIREDs AI-must-pay editorial stance directly benefits both Conde Nast and Reddit
           licensing revenue.
+
+          '
       nyt:
         display_name: The New York Times
         meta_deal_value: $0
         competitor_deals:
-          - partner: Amazon
-            value: $20-25M/yr
-            signed: May 2025
-            source: https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
+        - partner: Amazon
+          value: $20-25M/yr
+          signed: May 2025
+          source: https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
         active_litigation:
-          - target: OpenAI + Microsoft
-            filed: Dec 2023
-            seeking: billions in damages
+        - target: OpenAI + Microsoft
+          filed: Dec 2023
+          seeking: billions in damages
         total_verified_ai_revenue_yr: ~$22M (Amazon only)
         net_financial_direction: ANTI-META (Amazon deal + suing OpenAI, 0 Meta)
-        meta_coverage_tone: -0.70
+        meta_coverage_tone: -0.7
         meta_tone_category: adversarial
         discloses_relationships: false
-        note: >
-          Suing OpenAI/Microsoft while licensing to Amazon demonstrates
-          coverage tone tracks financial relationships, not principled
-          IP protection stance. Both companies train on NYT content.
+        note: 'Suing OpenAI/Microsoft while licensing to Amazon demonstrates coverage tone tracks financial relationships,
+          not principled IP protection stance. Both companies train on NYT content.
+
+          '
       the_verge_vox_media:
         display_name: The Verge (via Vox Media)
         meta_deal_value: $0
         competitor_deals:
-          - partner: OpenAI
-            value: undisclosed
-            signed: May 2024
-            source: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+        - partner: OpenAI
+          value: undisclosed
+          signed: May 2024
+          source: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
         total_verified_ai_revenue_yr: undisclosed (1 deal, 0 Meta)
         net_financial_direction: ANTI-META (OpenAI deal, 0 Meta)
-        meta_coverage_tone: -0.50
+        meta_coverage_tone: -0.5
         meta_tone_category: adversarial
         discloses_relationships: false
       the_atlantic:
         display_name: The Atlantic
         meta_deal_value: $0
         competitor_deals:
-          - partner: OpenAI
-            value: undisclosed
-            signed: May 2024
-            source: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+        - partner: OpenAI
+          value: undisclosed
+          signed: May 2024
+          source: https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
         additional_financial_conflicts:
-          - type: ownership_apple_stock
-            detail: >
-              LPJ Trust (Laurene Powell Jobs) holds ~$17B Apple stock.
-              Apple has 5 publisher leverage mechanisms. Never disclosed.
-          - type: apple_news_plus
-            detail: Apple News Plus launch partner, 50% revenue share
+        - type: ownership_apple_stock
+          detail: 'LPJ Trust (Laurene Powell Jobs) holds ~$17B Apple stock. Apple has 5 publisher leverage mechanisms. Never
+            disclosed.
+
+            '
+        - type: apple_news_plus
+          detail: Apple News Plus launch partner, 50% revenue share
         total_verified_ai_revenue_yr: undisclosed (1 deal, 0 Meta)
         net_financial_direction: ANTI-META (OpenAI deal + Apple ownership, 0 Meta)
         meta_coverage_tone: -0.55
@@ -4752,27 +4751,26 @@ cross_publication_findings:
         display_name: Financial Times
         meta_deal_value: $0
         competitor_deals:
-          - partner: OpenAI
-            value: undisclosed
-            signed: Apr 2024
-          - partner: Google (News AI pilot)
-            value: undisclosed
+        - partner: OpenAI
+          value: undisclosed
+          signed: Apr 2024
+        - partner: Google (News AI pilot)
+          value: undisclosed
         total_verified_ai_revenue_yr: undisclosed (2 deals, 0 Meta)
         net_financial_direction: ANTI-META (OpenAI + Google deals, 0 Meta)
         meta_coverage_tone: -0.45
         meta_tone_category: adversarial
         discloses_relationships: false
-        note: >
-          Only MediaScope-profiled publication NOT on Apple News Plus,
-          making FT financially independent of Apple but dependent
-          on OpenAI and Google. Exploring Snowflake Cortex for
-          additional AI licensing revenue.
+        note: 'Only MediaScope-profiled publication NOT on Apple News Plus, making FT financially independent of Apple but
+          dependent on OpenAI and Google. Exploring Snowflake Cortex for additional AI licensing revenue.
+
+          '
       guardian:
         display_name: The Guardian
         meta_deal_value: $0
         competitor_deals:
-          - partner: ProRata (AI search)
-            value: undisclosed
+        - partner: ProRata (AI search)
+          value: undisclosed
         total_verified_ai_revenue_yr: undisclosed (1 deal, 0 Meta)
         net_financial_direction: ANTI-META (ProRata deal, 0 Meta)
         meta_coverage_tone: -0.45
@@ -4787,25 +4785,24 @@ cross_publication_findings:
         meta_coverage_tone: -0.45
         meta_tone_category: adversarial
         discloses_relationships: false
-        note: >
-          MIT TR has no known AI licensing deals. Adversarial Meta
-          coverage driven by journalist-level mechanisms (Melissa
-          Heikkila migration to FT, Will Knight cross-entity framing)
-          rather than direct financial incentive.
+        note: 'MIT TR has no known AI licensing deals. Adversarial Meta coverage driven by journalist-level mechanisms (Melissa
+          Heikkila migration to FT, Will Knight cross-entity framing) rather than direct financial incentive.
+
+          '
       gizmodo:
         display_name: Gizmodo
         meta_deal_value: $0
         competitor_deals: []
         total_verified_ai_revenue_yr: $0 confirmed
         net_financial_direction: NEUTRAL (0 deals, clean control)
-        meta_coverage_tone: -0.50
+        meta_coverage_tone: -0.5
         meta_tone_category: adversarial
         discloses_relationships: not_applicable
-        note: >
-          Clean control with no financial ties to any AI company. Covers
-          BOTH Meta AND OpenAI critically. Proves adversarial coverage
-          is not universal; at one-sided publications the asymmetry
-          favors whoever pays, while at Gizmodo criticism is evenly distributed.
+        note: 'Clean control with no financial ties to any AI company. Covers BOTH Meta AND OpenAI critically. Proves adversarial
+          coverage is not universal; at one-sided publications the asymmetry favors whoever pays, while at Gizmodo criticism
+          is evenly distributed.
+
+          '
       news_corp_additional:
         display_name: News Corp Q4 FY2026 Detail
         q4_fy2026_earnings:
@@ -4816,22 +4813,22 @@ cross_publication_findings:
           record_quarter: true
           dow_jones_margin_expansion_bp: 310
           ai_licensing_near_100pct_margin: true
-          cfo_ai_transformation_quote: >
-            Fiscal 2026 marked another big step in the transformation of
-            News Corp as we added new AI licensing revenues.
-          news_media_outlook: >
-            CFO on FY2027 outlook: News Media should also see some
-            benefit from new content licensing revenues.
-        deal_pipeline_confirmed: >
-          Thomson confirmed advanced discussions with several other
-          companies. Meta deal now contributing to both Dow Jones
-          AND News Media segment results.
-        brave_lawsuit: >
-          News Corp countersued Brave Software (Jul 22, 2026) for
-          flagrant theft of content for AI products. Thomson on call
-          described Brave as company brave in name only which has
-          shamelessly stolen content at scale. Seeking $150K per
-          infringement. Extends woo-and-sue strategy.
+          cfo_ai_transformation_quote: 'Fiscal 2026 marked another big step in the transformation of News Corp as we added
+            new AI licensing revenues.
+
+            '
+          news_media_outlook: 'CFO on FY2027 outlook: News Media should also see some benefit from new content licensing revenues.
+
+            '
+        deal_pipeline_confirmed: 'Thomson confirmed advanced discussions with several other companies. Meta deal now contributing
+          to both Dow Jones AND News Media segment results.
+
+          '
+        brave_lawsuit: 'News Corp countersued Brave Software (Jul 22, 2026) for flagrant theft of content for AI products.
+          Thomson on call described Brave as company brave in name only which has shamelessly stolen content at scale. Seeking
+          $150K per infringement. Extends woo-and-sue strategy.
+
+          '
     statistical_summary:
       total_profiled_publications: 10
       publications_with_meta_deal: 1
@@ -4842,100 +4839,83 @@ cross_publication_findings:
       largest_verified_meta_deal: News Corp $50M/yr
       largest_verified_competitor_deal: News Corp-OpenAI $50M/yr
       largest_verified_competitor_settlement: Anthropic $1.5B (multiple publishers)
-      meta_deals_confirmed: >
-        News Corp is the ONLY MediaScope-profiled publication with a Meta
-        AI licensing deal. Meta has also signed deals with People Inc,
-        USA Today, CNN, and Fox News but none of those are profiled
-        adversarial-to-Meta publications. The publications that produce
-        the MOST adversarial Meta coverage (WIRED, NYT, The Verge, The
-        Atlantic, FT) have ZERO Meta revenue and multiple deals with
-        Meta competitors.
-      disclosure_asymmetry: >
-        WSJ (News Corp) is the ONLY publication that systematically
-        discloses its AI licensing relationships in coverage. The 7
-        publications with one-sided competitor deals and adversarial
-        Meta coverage NEVER disclose their financial ties. Balanced
-        deals plus disclosure equals balanced coverage; one-sided deals
-        plus no disclosure equals one-sided coverage.
-      key_finding: >
-        The financial incentive direction predicts Meta coverage tone
-        with 100% accuracy across the profiled dataset. BALANCED financial
-        incentive (News Corp) produces BALANCED coverage (-0.15). ONE-SIDED
-        financial incentive (WIRED, NYT, Verge, Atlantic, FT, Guardian)
-        produces ADVERSARIAL coverage (-0.45 to -0.85). ZERO financial
-        incentive (Gizmodo, MIT TR) produces MODERATELY ADVERSARIAL
-        coverage (-0.45 to -0.50). The gap between balanced (News Corp,
-        -0.15) and the average one-sided publication (-0.58) is 0.43
-        tone points, the financial incentive premium for adversarial
-        Meta coverage.
+      meta_deals_confirmed: 'News Corp is the ONLY MediaScope-profiled publication with a Meta AI licensing deal. Meta has
+        also signed deals with People Inc, USA Today, CNN, and Fox News but none of those are profiled adversarial-to-Meta
+        publications. The publications that produce the MOST adversarial Meta coverage (WIRED, NYT, The Verge, The Atlantic,
+        FT) have ZERO Meta revenue and multiple deals with Meta competitors.
+
+        '
+      disclosure_asymmetry: 'WSJ (News Corp) is the ONLY publication that systematically discloses its AI licensing relationships
+        in coverage. The 7 publications with one-sided competitor deals and adversarial Meta coverage NEVER disclose their
+        financial ties. Balanced deals plus disclosure equals balanced coverage; one-sided deals plus no disclosure equals
+        one-sided coverage.
+
+        '
+      key_finding: 'The financial incentive direction predicts Meta coverage tone with 100% accuracy across the profiled dataset.
+        BALANCED financial incentive (News Corp) produces BALANCED coverage (-0.15). ONE-SIDED financial incentive (WIRED,
+        NYT, Verge, Atlantic, FT, Guardian) produces ADVERSARIAL coverage (-0.45 to -0.85). ZERO financial incentive (Gizmodo,
+        MIT TR) produces MODERATELY ADVERSARIAL coverage (-0.45 to -0.50). The gap between balanced (News Corp, -0.15) and
+        the average one-sided publication (-0.58) is 0.43 tone points, the financial incentive premium for adversarial Meta
+        coverage.
+
+        '
       thomson_q4_fy2026_quotes:
-        partnership_language: >
-          These are not merely transactional arrangements. These are
-          partnerships. We know how to create peerless content, and these
-          companies know how interaction with content is evolving.
-        principled_praise: >
-          It is a tribute to OpenAI and Meta that they have taken a
-          principled approach in valuing our important component, our IP.
-        benchmarks: >
-          Those two companies have established benchmarks that other
-          principled companies should follow.
+        partnership_language: 'These are not merely transactional arrangements. These are partnerships. We know how to create
+          peerless content, and these companies know how interaction with content is evolving.
+
+          '
+        principled_praise: 'It is a tribute to OpenAI and Meta that they have taken a principled approach in valuing our important
+          component, our IP.
+
+          '
+        benchmarks: 'Those two companies have established benchmarks that other principled companies should follow.
+
+          '
         source: Q4 FY2026 earnings call (Aug 5, 2026)
         source_url: https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
     source_urls:
-      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
-      - https://www.reuters.com/technology/sam-altmans-openai-signs-content-agreement-with-news-corp-2024-05-22/
-      - https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
-      - https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
-      - https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
-      - https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
-      - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
-      - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
-      - https://publishers.org/news/aap-welcomes-courts-final-settlement-approval-in-bartz-v-anthropic/
+    - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+    - https://www.reuters.com/technology/sam-altmans-openai-signs-content-agreement-with-news-corp-2024-05-22/
+    - https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
+    - https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
+    - https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+    - https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
+    - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
+    - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
+    - https://publishers.org/news/aap-welcomes-courts-final-settlement-approval-in-bartz-v-anthropic/
     test_file: tests/test_publisher_ai_revenue_matrix_aug8.py
     mechanism: financial_incentive_coverage_correlation
-    mechanism_explanation: >
-      The matrix proves the financial incentive hypothesis at the
-      publication level: publications that receive money from Meta cover
-      Meta more favorably than publications that receive money ONLY from
-      Meta competitors. The effect is not driven by editorial quality
-      (WSJ is rigorous), journalistic standards (NYT and WIRED are
-      respected), or company behavior (Meta faces the same scrutiny
-      everywhere). The differentiating variable is the financial
-      relationship structure.
+    mechanism_explanation: 'The matrix proves the financial incentive hypothesis at the publication level: publications that
+      receive money from Meta cover Meta more favorably than publications that receive money ONLY from Meta competitors. The
+      effect is not driven by editorial quality (WSJ is rigorous), journalistic standards (NYT and WIRED are respected), or
+      company behavior (Meta faces the same scrutiny everywhere). The differentiating variable is the financial relationship
+      structure.
 
-      News Corp Q4 FY2026 earnings (Aug 5, 2026) provide the strongest
-      confirmation yet: CEO Thomson publicly praised Meta as a principled
-      partner while the company reports record profitability with AI
-      licensing as a material revenue driver. Thomson language calling
-      Meta and OpenAI the benchmarks for other principled companies
-      is the direct opposite of how NYT, WIRED, and The Atlantic CEOs
-      describe AI companies.
+      News Corp Q4 FY2026 earnings (Aug 5, 2026) provide the strongest confirmation yet: CEO Thomson publicly praised Meta
+      as a principled partner while the company reports record profitability with AI licensing as a material revenue driver.
+      Thomson language calling Meta and OpenAI the benchmarks for other principled companies is the direct opposite of how
+      NYT, WIRED, and The Atlantic CEOs describe AI companies.
 
-      The disclosure dimension amplifies the finding: the ONLY publication
-      with balanced deals is ALSO the only one that discloses them.
-      Publications with one-sided deals that would benefit most from
-      disclosure never provide it.
+      The disclosure dimension amplifies the finding: the ONLY publication with balanced deals is ALSO the only one that discloses
+      them. Publications with one-sided deals that would benefit most from disclosure never provide it.
 
+      '
   publisher_ai_revenue_materiality_index:
-    finding_summary: >
-      SEC-filed quantification of publisher AI licensing revenue from Q1-Q2
-      2026 earnings reveals a critical opacity gradient: publishers with the
-      most transparent AI deal revenue reporting (People Inc., USA Today Co.)
-      produce the softest Meta coverage, while the publisher most hostile to
-      Meta (WIRED, via privately-held Condé Nast/Advance Publications) has
-      ZERO financial disclosure obligation and therefore zero quantifiable
-      AI deal revenue — despite holding 4 competitor AI deals. This
-      "Condé Nast Opacity Paradox" means the financial incentive driving
-      WIRED's adversarial Meta coverage is structurally invisible to public
-      scrutiny, protected by Advance Publications' private company status.
+    finding_summary: 'SEC-filed quantification of publisher AI licensing revenue from Q1-Q2 2026 earnings reveals a critical
+      opacity gradient: publishers with the most transparent AI deal revenue reporting (People Inc., USA Today Co.) produce
+      the softest Meta coverage, while the publisher most hostile to Meta (WIRED, via privately-held Condé Nast/Advance Publications)
+      has ZERO financial disclosure obligation and therefore zero quantifiable AI deal revenue — despite holding 4 competitor
+      AI deals. This "Condé Nast Opacity Paradox" means the financial incentive driving WIRED''s adversarial Meta coverage
+      is structurally invisible to public scrutiny, protected by Advance Publications'' private company status.
+
+      '
     date_added: 2026-08-09
-    last_updated: 2026-08-09T17:00:00-07:00
-    methodology: >
-      Revenue figures sourced from SEC 10-Q/10-K filings and earnings call
-      transcripts for public publishers. Private publisher data from press
-      releases, Adweek reporting, and CEO memos only. Dollar values are as
-      reported; estimates annotated. All sources verified against primary
-      filings where available.
+    last_updated: 2026-08-09 17:00:00-07:00
+    methodology: 'Revenue figures sourced from SEC 10-Q/10-K filings and earnings call transcripts for public publishers.
+      Private publisher data from press releases, Adweek reporting, and CEO memos only. Dollar values are as reported; estimates
+      annotated. All sources verified against primary filings where available.
+
+      '
     public_publishers:
       news_corp:
         ticker: NWSA/NWS
@@ -4958,27 +4938,23 @@ cross_publication_findings:
           other_revenue_9mo_m: 497
           other_revenue_9mo_prior_m: 449
           other_revenue_9mo_yoy_delta_m: 48
-        ai_revenue_status: >
-          AI licensing revenue included in "Other" category — cannot isolate
-          exact dollar amount from SEC filings. OpenAI deal ($250M/5yr =
-          $50M/yr) is the ONLY publisher deal in the MediaScope dataset with
-          publicly verified annual value. Meta deal "up to $50M/yr" per WSJ
-          reporting but exact structure undisclosed. Anthropic settlement
-          share (via HarperCollins) expected to impact revenue in H2 calendar
-          2026 per Q3 FY2026 earnings call. CFO confirmed AI licensing
-          revenue is "near 100% margin."
-        ceo_language_shift: >
-          Thomson Q4 FY2026 (Aug 5): "trusted content relationships with
-          OpenAI and Meta, and are in advanced discussions with several other
-          companies." Praise for both Meta and OpenAI as "principled." ALSO
-          warned against "pilferers" (unnamed companies scraping without
-          deals). Combined revenue from 3 AI sources (OpenAI $50M + Meta
-          ~$50M + Anthropic TBD) making AI licensing a meaningful Dow Jones
-          and News Media segment growth driver.
+        ai_revenue_status: 'AI licensing revenue included in "Other" category — cannot isolate exact dollar amount from SEC
+          filings. OpenAI deal ($250M/5yr = $50M/yr) is the ONLY publisher deal in the MediaScope dataset with publicly verified
+          annual value. Meta deal "up to $50M/yr" per WSJ reporting but exact structure undisclosed. Anthropic settlement
+          share (via HarperCollins) expected to impact revenue in H2 calendar 2026 per Q3 FY2026 earnings call. CFO confirmed
+          AI licensing revenue is "near 100% margin."
+
+          '
+        ceo_language_shift: 'Thomson Q4 FY2026 (Aug 5): "trusted content relationships with OpenAI and Meta, and are in advanced
+          discussions with several other companies." Praise for both Meta and OpenAI as "principled." ALSO warned against
+          "pilferers" (unnamed companies scraping without deals). Combined revenue from 3 AI sources (OpenAI $50M + Meta ~$50M
+          + Anthropic TBD) making AI licensing a meaningful Dow Jones and News Media segment growth driver.
+
+          '
         meta_coverage_implication: balanced
         source_urls:
-          - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
-          - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
+        - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
+        - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
       people_inc:
         ticker: PPLI (formerly IAC)
         fiscal_year: calendar
@@ -5000,35 +4976,35 @@ cross_publication_findings:
           non_session_revenue_yoy_pct: 16
           adjusted_ebitda_yoy_pct: 18
           adjusted_ebitda_margin_pct: 26
-          ceo_ai_quote: >
-            We're realizing significant benefits from AI across the company,
-            including helping our edit team streamline content production and
-            efficiency gains in data science, ad sales, ad targeting.
-          non_session_drivers: >
-            Apple News, licensing including our AI partnerships, social
-            programs, events, and Decipher
+          ceo_ai_quote: 'We''re realizing significant benefits from AI across the company, including helping our edit team
+            streamline content production and efficiency gains in data science, ad sales, ad targeting.
+
+            '
+          non_session_drivers: 'Apple News, licensing including our AI partnerships, social programs, events, and Decipher
+
+            '
           source_url: https://www.marketbeat.com/earnings/reports/2026-8-3-iacinteractivecorp-stock/
         ai_deals:
-          - partner: OpenAI
-            structure: all-you-can-eat lump sum
-            signed: May 2024
-          - partner: Microsoft
-            structure: à la carte pay-per-use (PCM marketplace)
-            signed: Nov 2025
-          - partner: Meta
-            structure: multi-year content partnership
-            signed: Dec 2025
-            note: first lifestyle publisher to supply real-time content to Meta AI
-        google_traffic_decline: >
-          Lost 65% of Google referral traffic over 2 years (from 70% of
-          traffic to ~30%). Google AI Overviews on 70% of top keywords.
-          CEO Vogel: productive discussions with all kinds of players with
-          the notable exception of Google.
+        - partner: OpenAI
+          structure: all-you-can-eat lump sum
+          signed: May 2024
+        - partner: Microsoft
+          structure: à la carte pay-per-use (PCM marketplace)
+          signed: Nov 2025
+        - partner: Meta
+          structure: multi-year content partnership
+          signed: Dec 2025
+          note: first lifestyle publisher to supply real-time content to Meta AI
+        google_traffic_decline: 'Lost 65% of Google referral traffic over 2 years (from 70% of traffic to ~30%). Google AI
+          Overviews on 70% of top keywords. CEO Vogel: productive discussions with all kinds of players with the notable exception
+          of Google.
+
+          '
         meta_coverage_implication: softest_of_deal_holders
         source_urls:
-          - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
-          - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
-          - https://techcrunch.com/2025/11/04/people-inc-forges-ai-licensing-deal-with-microsoft-as-google-traffic-drops/
+        - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
+        - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
+        - https://techcrunch.com/2025/11/04/people-inc-forges-ai-licensing-deal-with-microsoft-as-google-traffic-drops/
       usa_today_co:
         ticker: TDAY (formerly GCI/Gannett)
         fiscal_year: calendar
@@ -5041,50 +5017,50 @@ cross_publication_findings:
           digital_ad_revenue_m: 80.9
           digital_ad_revenue_yoy_pct: -3
           source: Digiday (May 2026), MarketBeat Q1 (Apr 30)
-        q2_guidance: >
-          CFO Gosser: expects lower contribution of licensing revenue in Q2.
-          AI revenue will be lumpy or unpredictable. Q1 had particularly
-          strong contribution.
+        q2_guidance: 'CFO Gosser: expects lower contribution of licensing revenue in Q2. AI revenue will be lumpy or unpredictable.
+          Q1 had particularly strong contribution.
+
+          '
         ai_deals:
-          - partner: Meta
-            signed: Dec 2025
-          - partner: Perplexity
-            signed: 2025
-          - partner: Taboola (DeeperDive)
-            type: traffic_retention_tool
-          - partner: Snowflake (marketplace)
-            type: content_distribution
+        - partner: Meta
+          signed: Dec 2025
+        - partner: Perplexity
+          signed: 2025
+        - partner: Taboola (DeeperDive)
+          type: traffic_retention_tool
+        - partner: Snowflake (marketplace)
+          type: content_distribution
         meta_coverage_implication: neutral_to_soft
         source_urls:
-          - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
-          - https://www.fool.com/earnings/call-transcripts/2026/04/30/usa-today-tday-q1-2026-earnings-transcript/
+        - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
+        - https://www.fool.com/earnings/call-transcripts/2026/04/30/usa-today-tday-q1-2026-earnings-transcript/
       nyt:
         ticker: NYT
         fiscal_year: calendar
         q1_2026:
           digital_affiliate_licensing_other_m: 45.2
           digital_affiliate_licensing_yoy_pct: 12.7
-          note: >
-            Category bundles Wirecutter affiliate revenue with digital
-            licensing — AI deal revenue CANNOT be isolated. This is a
-            structural opacity in NYT's reporting: AI licensing revenue
-            is commingled with Wirecutter commission revenue.
+          note: 'Category bundles Wirecutter affiliate revenue with digital licensing — AI deal revenue CANNOT be isolated.
+            This is a structural opacity in NYT''s reporting: AI licensing revenue is commingled with Wirecutter commission
+            revenue.
+
+            '
           source: Digiday (May 2026)
         ai_deals:
-          - partner: Amazon
-            value_estimate_yr_m: 20-25
-            signed: May 2025
+        - partner: Amazon
+          value_estimate_yr_m: 20-25
+          signed: May 2025
         active_litigation:
-          - target: OpenAI + Microsoft
-            filed: Dec 2023
-            seeking: billions
-        ceo_deal_conditions: >
-          Levien: Is a deal consistent with our long-term strategy? Does it
-          ensure sustainable, fair value exchanges? Do we have control over
-          how our content is used?
+        - target: OpenAI + Microsoft
+          filed: Dec 2023
+          seeking: billions
+        ceo_deal_conditions: 'Levien: Is a deal consistent with our long-term strategy? Does it ensure sustainable, fair value
+          exchanges? Do we have control over how our content is used?
+
+          '
         meta_coverage_implication: adversarial
         source_urls:
-          - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
+        - https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
       wiley:
         ticker: WLY
         fiscal_year: ends April
@@ -5096,15 +5072,15 @@ cross_publication_findings:
           yoy_growth_pct: 22.5
           shift: from nonrecurring licensing to recurring subscription model
           partners:
-            - AWS
-            - Anthropic
-            - Perplexity
-            - Mistral AI
-          note: >
-            Wiley is primarily an academic/scientific publisher, NOT a news
-            publisher. Included as comparison for revenue materiality
-            calibration — its $49M/yr in AI revenue is the largest verified
-            annual figure from any publisher besides News Corp.
+          - AWS
+          - Anthropic
+          - Perplexity
+          - Mistral AI
+          note: 'Wiley is primarily an academic/scientific publisher, NOT a news publisher. Included as comparison for revenue
+            materiality calibration — its $49M/yr in AI revenue is the largest verified annual figure from any publisher besides
+            News Corp.
+
+            '
           source_url: https://www.insidermonkey.com/blog/john-wiley-sons-inc-nysewly-q2-2026-earnings-call-transcript-1655246/
         meta_coverage_implication: not_applicable
     private_publishers:
@@ -5114,327 +5090,278 @@ cross_publication_findings:
         sec_filing_obligation: none
         ai_deal_count: 4
         ai_deals:
-          - partner: OpenAI
-            value: undisclosed
-            signed: Aug 2024
-            lynch_memo_quote: >
-              Our partnership with OpenAI begins to make up for some of
-              that revenue [lost to tech companies].
-          - partner: Amazon Rufus
-            value: undisclosed
-            signed: Jul 2025
-          - partner: Microsoft PCM
-            value: undisclosed
-            signed: Feb 2026
-          - partner: Perplexity Comet Plus
-            value: undisclosed
-            signed: Oct 2025
+        - partner: OpenAI
+          value: undisclosed
+          signed: Aug 2024
+          lynch_memo_quote: 'Our partnership with OpenAI begins to make up for some of that revenue [lost to tech companies].
+
+            '
+        - partner: Amazon Rufus
+          value: undisclosed
+          signed: Jul 2025
+        - partner: Microsoft PCM
+          value: undisclosed
+          signed: Feb 2026
+        - partner: Perplexity Comet Plus
+          value: undisclosed
+          signed: Oct 2025
         meta_deals: 0
         financial_disclosures:
           ai_revenue: zero_public_disclosure
           total_revenue: zero_public_disclosure
-          events_revenue_growth: >
-            40% growth in 2025, projecting 22% in 2026 (Adweek, May 2026).
-            CEO Herbst-Brady declined to offer further financial specifics
-            beyond this.
-          advertising_strategy_shift: >
-            CEO Lynch (Oct 2025): company no longer expects advertising to
-            be a growth engine. Pivoting to events, subscriptions, commerce,
-            and licensing deals with AI players including OpenAI and Perplexity.
-        advance_publications_assets: >
-          Advance Publications (100% owner of Condé Nast) also owns 23.3%
-          economic / ~62% voting stake in Reddit. Reddit has its own AI
-          deals: $60M/yr Google deal, OpenAI deal. Advance's $10M Reddit
-          investment was worth $1.97B at Reddit IPO (Mar 2024). Advance
-          is a private company with ZERO public financial disclosure.
-        conde_nast_opacity_paradox: >
-          CRITICAL FINDING: Condé Nast (WIRED's parent) is the ONLY
-          MediaScope-profiled publisher that is (a) privately held,
-          (b) holds 4 competitor AI deals with ZERO disclosed terms,
-          (c) has the most adversarial Meta coverage tone (-0.85), and
-          (d) has absolutely no obligation to disclose how much revenue
-          it receives from AI companies that compete with Meta. If Condé
-          Nast were public, its AI deal revenue would appear in SEC filings
-          and the financial incentive for softer OpenAI/Perplexity/Microsoft
-          coverage would be quantifiable. Its private status makes this
-          incentive structurally invisible. This is NOT claimed to be
-          intentional — the Newhouse family's decision to keep Advance
-          private predates AI deals. But the EFFECT is that the financial
-          relationship most likely to influence WIRED's editorial framing
-          of Meta vs competitors is the one relationship that can never
-          be verified from public filings.
+          events_revenue_growth: '40% growth in 2025, projecting 22% in 2026 (Adweek, May 2026). CEO Herbst-Brady declined
+            to offer further financial specifics beyond this.
+
+            '
+          advertising_strategy_shift: 'CEO Lynch (Oct 2025): company no longer expects advertising to be a growth engine.
+            Pivoting to events, subscriptions, commerce, and licensing deals with AI players including OpenAI and Perplexity.
+
+            '
+        advance_publications_assets: 'Advance Publications (100% owner of Condé Nast) also owns 23.3% economic / ~62% voting
+          stake in Reddit. Reddit has its own AI deals: $60M/yr Google deal, OpenAI deal. Advance''s $10M Reddit investment
+          was worth $1.97B at Reddit IPO (Mar 2024). Advance is a private company with ZERO public financial disclosure.
+
+          '
+        conde_nast_opacity_paradox: 'CRITICAL FINDING: Condé Nast (WIRED''s parent) is the ONLY MediaScope-profiled publisher
+          that is (a) privately held, (b) holds 4 competitor AI deals with ZERO disclosed terms, (c) has the most adversarial
+          Meta coverage tone (-0.85), and (d) has absolutely no obligation to disclose how much revenue it receives from AI
+          companies that compete with Meta. If Condé Nast were public, its AI deal revenue would appear in SEC filings and
+          the financial incentive for softer OpenAI/Perplexity/Microsoft coverage would be quantifiable. Its private status
+          makes this incentive structurally invisible. This is NOT claimed to be intentional — the Newhouse family''s decision
+          to keep Advance private predates AI deals. But the EFFECT is that the financial relationship most likely to influence
+          WIRED''s editorial framing of Meta vs competitors is the one relationship that can never be verified from public
+          filings.
+
+          '
         source_urls:
-          - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
-          - https://www.adweek.com/media/conde-nast-events-revenue-2026/
-          - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+        - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+        - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+        - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
     cross_publisher_analysis:
-      opacity_gradient: >
-        MOST TRANSPARENT → LEAST TRANSPARENT (AI deal revenue):
-        1. People Inc. (PPLI): breaks out licensing category, explicitly
-           attributes growth to Meta deal. COVERAGE: softest of deal holders.
-        2. USA Today Co. (TDAY): reports "notable" AI licensing in "other"
-           digital category. COVERAGE: neutral to soft.
-        3. News Corp (NWSA): AI in "Other" revenue, only deal with publicly
-           verified annual value (OpenAI $50M/yr). COVERAGE: balanced.
-        4. NYT (NYT): AI licensing commingled with Wirecutter affiliate
-           revenue — cannot isolate. COVERAGE: adversarial.
-        5. Condé Nast/WIRED (private): ZERO disclosure obligation, 4
-           competitor deals, 0 Meta deals. COVERAGE: most adversarial (-0.85).
+      opacity_gradient: "MOST TRANSPARENT → LEAST TRANSPARENT (AI deal revenue): 1. People Inc. (PPLI): breaks out licensing\
+        \ category, explicitly\n   attributes growth to Meta deal. COVERAGE: softest of deal holders.\n2. USA Today Co. (TDAY):\
+        \ reports \"notable\" AI licensing in \"other\"\n   digital category. COVERAGE: neutral to soft.\n3. News Corp (NWSA):\
+        \ AI in \"Other\" revenue, only deal with publicly\n   verified annual value (OpenAI $50M/yr). COVERAGE: balanced.\n\
+        4. NYT (NYT): AI licensing commingled with Wirecutter affiliate\n   revenue — cannot isolate. COVERAGE: adversarial.\n\
+        5. Condé Nast/WIRED (private): ZERO disclosure obligation, 4\n   competitor deals, 0 Meta deals. COVERAGE: most adversarial\
+        \ (-0.85).\n\nPATTERN: Financial transparency correlates inversely with adversarial Meta coverage. The most transparent\
+        \ publishers (People Inc., USA Today) have Meta deals AND produce softer coverage. The least transparent (Condé Nast)\
+        \ has NO Meta deal and produces the most adversarial coverage. This is not proof of causation — private companies\
+        \ don't choose opacity to hide editorial conflicts — but the STRUCTURAL EFFECT is that the most consequential financial\
+        \ incentives are the ones that can never be quantified from public records.\n"
+      revenue_materiality_threshold: 'Based on Q1-Q2 2026 earnings data, AI licensing revenue is crossing the materiality
+        threshold for mid-tier publishers: - People Inc. licensing + other: $40.7M/quarter (10.5% of digital revenue) - USA
+        Today other digital: $33.75M/quarter (12.9% of digital revenue) - Wiley AI revenue: $49M/yr (growing 22.5% YoY) -
+        News Corp: AI revenue is "near 100% margin" per CFO
 
-        PATTERN: Financial transparency correlates inversely with
-        adversarial Meta coverage. The most transparent publishers
-        (People Inc., USA Today) have Meta deals AND produce softer
-        coverage. The least transparent (Condé Nast) has NO Meta deal
-        and produces the most adversarial coverage. This is not proof
-        of causation — private companies don't choose opacity to hide
-        editorial conflicts — but the STRUCTURAL EFFECT is that the
-        most consequential financial incentives are the ones that can
-        never be quantified from public records.
-      revenue_materiality_threshold: >
-        Based on Q1-Q2 2026 earnings data, AI licensing revenue is
-        crossing the materiality threshold for mid-tier publishers:
-        - People Inc. licensing + other: $40.7M/quarter (10.5% of digital revenue)
-        - USA Today other digital: $33.75M/quarter (12.9% of digital revenue)
-        - Wiley AI revenue: $49M/yr (growing 22.5% YoY)
-        - News Corp: AI revenue is "near 100% margin" per CFO
+        For publishers earning $40-50M/quarter from AI licensing at near-100% margin, losing a single AI deal would create
+        a material earnings impact. This makes the coverage incentive REAL, not theoretical: publishers whose AI revenue depends
+        on OpenAI, Microsoft, or Amazon have a quantifiable financial reason to avoid adversarial coverage of those companies
+        while having no such constraint regarding Meta (which has deals with different publishers).
 
-        For publishers earning $40-50M/quarter from AI licensing at
-        near-100% margin, losing a single AI deal would create a material
-        earnings impact. This makes the coverage incentive REAL, not
-        theoretical: publishers whose AI revenue depends on OpenAI,
-        Microsoft, or Amazon have a quantifiable financial reason to
-        avoid adversarial coverage of those companies while having no
-        such constraint regarding Meta (which has deals with different
-        publishers).
-      google_traffic_substitution: >
-        AI licensing revenue is emerging as a REPLACEMENT for Google
-        search referral traffic, not an addition to it. People Inc.
-        lost 65% of Google referrals over 2 years. USA Today digital
-        ad revenue fell 3% despite AI licensing growth. The substitution
-        dynamic means publishers are increasingly DEPENDENT on AI deal
-        revenue as Google traffic declines — strengthening the coverage
-        incentive over time. CEO Vogel's explicit exclusion of Google
-        from productive discussions suggests publishers view Google as
-        the traffic destroyer and AI companies as the revenue replacer.
+        '
+      google_traffic_substitution: 'AI licensing revenue is emerging as a REPLACEMENT for Google search referral traffic,
+        not an addition to it. People Inc. lost 65% of Google referrals over 2 years. USA Today digital ad revenue fell 3%
+        despite AI licensing growth. The substitution dynamic means publishers are increasingly DEPENDENT on AI deal revenue
+        as Google traffic declines — strengthening the coverage incentive over time. CEO Vogel''s explicit exclusion of Google
+        from productive discussions suggests publishers view Google as the traffic destroyer and AI companies as the revenue
+        replacer.
+
+        '
     test_file: tests/test_publisher_ai_revenue_materiality_aug9.py
     mechanism: sec_filed_revenue_opacity_gradient
-    mechanism_explanation: >
-      This analysis extends the publisher_ai_revenue_asymmetry_matrix from
-      deal EXISTENCE to deal MATERIALITY. By quantifying actual SEC-filed
-      revenue from AI licensing, it demonstrates that (a) AI deals are
-      crossing the financial materiality threshold at $40-50M/quarter,
-      (b) the most transparent publishers about AI revenue have the softest
-      Meta coverage, and (c) the publisher with the most adversarial Meta
-      coverage (WIRED/Condé Nast) is structurally shielded from financial
-      scrutiny by its private ownership through Advance Publications.
+    mechanism_explanation: 'This analysis extends the publisher_ai_revenue_asymmetry_matrix from deal EXISTENCE to deal MATERIALITY.
+      By quantifying actual SEC-filed revenue from AI licensing, it demonstrates that (a) AI deals are crossing the financial
+      materiality threshold at $40-50M/quarter, (b) the most transparent publishers about AI revenue have the softest Meta
+      coverage, and (c) the publisher with the most adversarial Meta coverage (WIRED/Condé Nast) is structurally shielded
+      from financial scrutiny by its private ownership through Advance Publications.
 
+      '
   bloomberg_mark_gurman:
     journalist: Mark Gurman
     publication: Bloomberg
     role: Chief Apple Correspondent, Power On newsletter author
-    key_finding: "Access Dependency — Beat Reporter Competitive Narration (Mechanism #11)"
-    finding_summary: >
-      Mark Gurman is Bloomberg's most influential Apple journalist, authoring the
-      weekly Power On newsletter — one of the most-read sources for Apple intelligence
-      in the industry. His coverage reveals a COMPETITIVE NARRATION pattern: Apple
-      is consistently framed as the strategic protagonist, while Meta appears primarily
-      as a competitive obstacle to be overcome. When both companies have comparable
-      product weaknesses, Apple receives developmental/aspirational framing while
-      Meta receives competitive-obstacle framing. This is not financial incentive
-      (Bloomberg has no known AI licensing deals with Apple) but ACCESS DEPENDENCY:
-      Gurman's professional value derives from maintaining privileged Apple source
+    key_finding: 'Access Dependency — Beat Reporter Competitive Narration (Mechanism #11)'
+    finding_summary: 'Mark Gurman is Bloomberg''s most influential Apple journalist, authoring the weekly Power On newsletter
+      — one of the most-read sources for Apple intelligence in the industry. His coverage reveals a COMPETITIVE NARRATION
+      pattern: Apple is consistently framed as the strategic protagonist, while Meta appears primarily as a competitive obstacle
+      to be overcome. When both companies have comparable product weaknesses, Apple receives developmental/aspirational framing
+      while Meta receives competitive-obstacle framing. This is not financial incentive (Bloomberg has no known AI licensing
+      deals with Apple) but ACCESS DEPENDENCY: Gurman''s professional value derives from maintaining privileged Apple source
       access for exclusive scoops.
 
+      '
     mechanism: access_dependency_competitive_narration
-    mechanism_explanation: >
-      Unlike financial incentive mechanisms (#1-#5) or personal financial capture
-      (#9), Mechanism #11 operates through the dynamics of access journalism. Gurman's
-      entire professional identity — his newsletter, his scoops, his reputation as
-      THE Apple insider — depends on maintaining relationships with Apple sources.
-      This creates a structural incentive to narrate Apple's competitive strategy
-      FROM THE INSIDE, using first-person strategic language ("if you're Apple, you
-      really want...") rather than external observation. Competitors like Meta are
-      naturally cast as obstacles in Apple's narrative, not as independent entities
-      with their own strategic narratives.
+    mechanism_explanation: 'Unlike financial incentive mechanisms (#1-#5) or personal financial capture (#9), Mechanism #11
+      operates through the dynamics of access journalism. Gurman''s entire professional identity — his newsletter, his scoops,
+      his reputation as THE Apple insider — depends on maintaining relationships with Apple sources. This creates a structural
+      incentive to narrate Apple''s competitive strategy FROM THE INSIDE, using first-person strategic language ("if you''re
+      Apple, you really want...") rather than external observation. Competitors like Meta are naturally cast as obstacles
+      in Apple''s narrative, not as independent entities with their own strategic narratives.
 
-      This mechanism is distinct from financial incentive because Bloomberg has no
-      known AI content licensing deal with Apple. It is distinct from book deal
-      capture (#9) because there is no external product invested in a specific thesis.
-      The incentive is purely access-based: maintain source relationships by narrating
-      favorably, or lose the scoops that define professional value.
+      This mechanism is distinct from financial incentive because Bloomberg has no known AI content licensing deal with Apple.
+      It is distinct from book deal capture (#9) because there is no external product invested in a specific thesis. The incentive
+      is purely access-based: maintain source relationships by narrating favorably, or lose the scoops that define professional
+      value.
 
+      '
     cross_entity_coverage_analysis:
       apple_wearables:
-        tone: 0.30
+        tone: 0.3
         register: developmental_aspirational
         framing_language:
-          - "better made"
-          - "premium material"
-          - "acetate, more durable and luxurious"
-          - "stronger privacy protections"
-          - "Apple brand is so strong"
-          - "a lot of ingredients to sell a lot of these smart glasses"
-          - "pull the rug out"
+        - better made
+        - premium material
+        - acetate, more durable and luxurious
+        - stronger privacy protections
+        - Apple brand is so strong
+        - a lot of ingredients to sell a lot of these smart glasses
+        - pull the rug out
         coverage_examples:
-          - article: "Apple Testing Four Smart Glasses Styles Made of High-End Materials"
-            date: "2026-04-13"
-            publication: Bloomberg Power On
-            framing: >
-              Aspirational product preview. Emphasizes "high-end material called acetate"
-              as "more durable and luxurious than the standard plastic used by most existing
-              brands." Focuses on four design options, color variety, and Apple design DNA.
-              Meta mentioned only as benchmark to surpass, not as an independent success.
-            source_url: "https://www.macrumors.com/2026/04/13/apple-smart-glasses-four-styles/"
-          - article: "Apple's plan to launch smart glasses and stop Meta's momentum"
-            date: "2026-04-21"
-            publication: Bloomberg (via Tom's Guide interview)
-            framing: >
-              Strategic warfare language. "If you're Apple, you really want [Apple Glasses]
-              to be introduced before the holiday season, because you don't want one more
-              cycle for Meta to get momentum." "Pull the rug out from under Google and Warby
-              Parker." Apple framed as strategic actor; Meta as competitive threat to neutralize.
-            source_url: "https://www.tomsguide.com/computing/smart-glasses/pull-the-rug-out-mark-gurman-explains-apples-plan-to-launch-smart-glasses-this-year-to-stop-metas-momentum"
-          - article: "Apple Glasses Reportedly Launching in 'Late 2027'"
-            date: "2026-05-31"
-            publication: Bloomberg Power On
-            framing: >
-              Despite reporting a DELAY (originally 2026, now late 2027), maintains aspirational
-              framing. Tim Cook views glasses as his "top priority." Multiple design options,
-              health device evolution, AR capability roadmap. Delay framed as product refinement,
-              not failure. Meta mentioned as comparison point but never as competitive threat
-              to Apple's narrative.
-            source_url: "https://www.macrumors.com/2026/05/31/apple-glasses-late-2027-report/"
+        - article: Apple Testing Four Smart Glasses Styles Made of High-End Materials
+          date: '2026-04-13'
+          publication: Bloomberg Power On
+          framing: 'Aspirational product preview. Emphasizes "high-end material called acetate" as "more durable and luxurious
+            than the standard plastic used by most existing brands." Focuses on four design options, color variety, and Apple
+            design DNA. Meta mentioned only as benchmark to surpass, not as an independent success.
 
+            '
+          source_url: https://www.macrumors.com/2026/04/13/apple-smart-glasses-four-styles/
+        - article: Apple's plan to launch smart glasses and stop Meta's momentum
+          date: '2026-04-21'
+          publication: Bloomberg (via Tom's Guide interview)
+          framing: 'Strategic warfare language. "If you''re Apple, you really want [Apple Glasses] to be introduced before
+            the holiday season, because you don''t want one more cycle for Meta to get momentum." "Pull the rug out from under
+            Google and Warby Parker." Apple framed as strategic actor; Meta as competitive threat to neutralize.
+
+            '
+          source_url: https://www.tomsguide.com/computing/smart-glasses/pull-the-rug-out-mark-gurman-explains-apples-plan-to-launch-smart-glasses-this-year-to-stop-metas-momentum
+        - article: Apple Glasses Reportedly Launching in 'Late 2027'
+          date: '2026-05-31'
+          publication: Bloomberg Power On
+          framing: 'Despite reporting a DELAY (originally 2026, now late 2027), maintains aspirational framing. Tim Cook views
+            glasses as his "top priority." Multiple design options, health device evolution, AR capability roadmap. Delay
+            framed as product refinement, not failure. Meta mentioned as comparison point but never as competitive threat
+            to Apple''s narrative.
+
+            '
+          source_url: https://www.macrumors.com/2026/05/31/apple-glasses-late-2027-report/
       apple_vision_pro:
         tone: -0.15
         register: constructive_critique
         framing_language:
-          - "future potential"
-          - "four generations to ideal form"
-          - "could cannibalize iPad"
-          - "essentially a prototype"
-          - "buggiest first-gen product"
-          - "preview of the future"
-        pattern: >
-          Gurman criticizes the Vision Pro's execution MORE harshly than Meta's Ray-Ban
-          Display, but frames the criticism within a DEVELOPMENTAL NARRATIVE: "four
-          generations to ideal form" (Power On, Feb 2024). The product is "a prototype
-          where you have to pay Apple for the privilege of testing out" — strong language,
-          but positioned as a journey, not a verdict. Vision Pro failures are growing pains;
-          Meta failures are competitive vulnerabilities.
+        - future potential
+        - four generations to ideal form
+        - could cannibalize iPad
+        - essentially a prototype
+        - buggiest first-gen product
+        - preview of the future
+        pattern: 'Gurman criticizes the Vision Pro''s execution MORE harshly than Meta''s Ray-Ban Display, but frames the
+          criticism within a DEVELOPMENTAL NARRATIVE: "four generations to ideal form" (Power On, Feb 2024). The product is
+          "a prototype where you have to pay Apple for the privilege of testing out" — strong language, but positioned as
+          a journey, not a verdict. Vision Pro failures are growing pains; Meta failures are competitive vulnerabilities.
 
+          '
       meta_wearables:
         tone: -0.25
         register: competitive_obstacle
         framing_language:
-          - "low resolution"
-          - "1080p camera"
-          - "momentum (as threat to stop)"
-          - "one more cycle for Meta"
-          - "you don't want"
+        - low resolution
+        - 1080p camera
+        - momentum (as threat to stop)
+        - one more cycle for Meta
+        - you don't want
         coverage_examples:
-          - article: "Meta Ray-Ban Display review"
-            date: "2025-10-09"
-            publication: Bloomberg
-            framing: >
-              Technical limitation focus: "good for uses like navigation and AI queries,
-              the neural band is great, but the display has low resolution and the camera
-              is 1080p." Title structure: praise → BUT → limitation. This is reasonable
-              as a product review, but the framing pattern becomes asymmetric when compared
-              to how Apple product issues get the "four generations" treatment.
-            source_url: "http://www.techmeme.com/251009/p36"
-          - article: "Meta Offered Apple AI Executive Over $200 Million to Leave"
-            date: "2025-08"
-            publication: Bloomberg
-            framing: >
-              Meta poaching Apple AI talent framed as aggressive raiding with headline
-              emphasis on the $200M figure. "Apple Loses Another Key AI Leader to Meta's
-              Superintelligence Labs" — Apple is the victim, Meta is the aggressor.
-              When Apple poaches from competitors, the framing focuses on Apple's talent
-              strategy, not the competitor's loss.
-            source_url: "https://www.macrumors.com/guide/mark-gurman/9/"
+        - article: Meta Ray-Ban Display review
+          date: '2025-10-09'
+          publication: Bloomberg
+          framing: 'Technical limitation focus: "good for uses like navigation and AI queries, the neural band is great, but
+            the display has low resolution and the camera is 1080p." Title structure: praise → BUT → limitation. This is reasonable
+            as a product review, but the framing pattern becomes asymmetric when compared to how Apple product issues get
+            the "four generations" treatment.
 
+            '
+          source_url: http://www.techmeme.com/251009/p36
+        - article: Meta Offered Apple AI Executive Over $200 Million to Leave
+          date: 2025-08
+          publication: Bloomberg
+          framing: 'Meta poaching Apple AI talent framed as aggressive raiding with headline emphasis on the $200M figure.
+            "Apple Loses Another Key AI Leader to Meta''s Superintelligence Labs" — Apple is the victim, Meta is the aggressor.
+            When Apple poaches from competitors, the framing focuses on Apple''s talent strategy, not the competitor''s loss.
+
+            '
+          source_url: https://www.macrumors.com/guide/mark-gurman/9/
       meta_reality_labs:
         tone: -0.35
         register: financial_concern
-        pattern: >
-          When Gurman covers Reality Labs financials, the framing emphasizes loss magnitude
-          ($19B, $83.6B cumulative) and investor concern. When Apple faces comparable
-          product market failures (Vision Pro interest "dying down," no killer app),
-          the framing emphasizes future potential and evolutionary timelines. Same class
-          of problem — expensive hardware bet with uncertain ROI — different editorial
-          register.
+        pattern: 'When Gurman covers Reality Labs financials, the framing emphasizes loss magnitude ($19B, $83.6B cumulative)
+          and investor concern. When Apple faces comparable product market failures (Vision Pro interest "dying down," no
+          killer app), the framing emphasizes future potential and evolutionary timelines. Same class of problem — expensive
+          hardware bet with uncertain ROI — different editorial register.
 
+          '
     key_patterns:
-      - pattern_name: FIRST-PERSON STRATEGIC NARRATION
-        description: >
-          Gurman narrates Apple's competitive moves from the INSIDE: "If you're Apple,
-          you really want..." This is not external reporting — it's strategic advocacy
-          disguised as journalism. Competitors appear as obstacles in Apple's story,
-          not as independent actors with their own valid strategies.
+    - pattern_name: FIRST-PERSON STRATEGIC NARRATION
+      description: 'Gurman narrates Apple''s competitive moves from the INSIDE: "If you''re Apple, you really want..." This
+        is not external reporting — it''s strategic advocacy disguised as journalism. Competitors appear as obstacles in Apple''s
+        story, not as independent actors with their own valid strategies.
 
-      - pattern_name: DEVELOPMENTAL FRAMING ASYMMETRY
-        description: >
-          When Apple products fail (Vision Pro too heavy, buggy, lacking apps), Gurman
-          frames it as a developmental journey: "four generations to ideal form,"
-          "preview of the future." When Meta products have issues (low resolution, 1080p),
-          the criticism stands as-is — no developmental arc, no future-potential softener.
+        '
+    - pattern_name: DEVELOPMENTAL FRAMING ASYMMETRY
+      description: 'When Apple products fail (Vision Pro too heavy, buggy, lacking apps), Gurman frames it as a developmental
+        journey: "four generations to ideal form," "preview of the future." When Meta products have issues (low resolution,
+        1080p), the criticism stands as-is — no developmental arc, no future-potential softener.
 
-      - pattern_name: DELAY-AS-REFINEMENT VS DELAY-AS-FAILURE
-        description: >
-          Apple Glasses delayed from 2026 to late 2027 → framed as Tim Cook's "top priority"
-          with careful product development. Meta Vision Pro timeline struggles → framed in
-          context of $83.6B cumulative losses. Same event class (hardware delay),
-          different editorial temperature.
+        '
+    - pattern_name: DELAY-AS-REFINEMENT VS DELAY-AS-FAILURE
+      description: 'Apple Glasses delayed from 2026 to late 2027 → framed as Tim Cook''s "top priority" with careful product
+        development. Meta Vision Pro timeline struggles → framed in context of $83.6B cumulative losses. Same event class
+        (hardware delay), different editorial temperature.
 
-      - pattern_name: TALENT NARRATIVE DIRECTIONALITY
-        description: >
-          Meta hiring Apple AI executives → "$200 million" aggressive raiding, "Apple Loses"
-          victim framing. Apple hiring from competitors → strategic talent acquisition,
-          building strength. The same labor market event gets opposite editorial valence
-          depending on which company benefits.
+        '
+    - pattern_name: TALENT NARRATIVE DIRECTIONALITY
+      description: 'Meta hiring Apple AI executives → "$200 million" aggressive raiding, "Apple Loses" victim framing. Apple
+        hiring from competitors → strategic talent acquisition, building strength. The same labor market event gets opposite
+        editorial valence depending on which company benefits.
 
-      - pattern_name: PRODUCT LANGUAGE REGISTER
-        description: >
-          Apple unreleased product: "acetate," "luxurious," "premium," "icon."
-          Meta existing product: "low resolution," "1080p," "momentum" to stop.
-          Apple gets aspirational luxury language for a product that doesn't exist yet;
-          Meta gets technical limitation language for a product that's shipping and selling.
+        '
+    - pattern_name: PRODUCT LANGUAGE REGISTER
+      description: 'Apple unreleased product: "acetate," "luxurious," "premium," "icon." Meta existing product: "low resolution,"
+        "1080p," "momentum" to stop. Apple gets aspirational luxury language for a product that doesn''t exist yet; Meta gets
+        technical limitation language for a product that''s shipping and selling.
 
+        '
     confounding_factors:
-      - >
-        Apple Glasses genuinely MIGHT be better made — acetate IS a premium material.
-        But Gurman is reporting Apple's claims without independent verification.
-      - >
-        Gurman's Vision Pro criticism was genuinely harsh, which suggests he CAN be
-        critical of Apple when the product clearly underdelivers. The asymmetry is
-        in the FRAMING of criticism (developmental vs terminal), not in whether
-        criticism exists.
-      - >
-        Bloomberg's editorial standards are high, and Gurman is respected as a reporter.
-        The access dependency mechanism doesn't imply corruption — it's a structural
-        incentive that naturally produces asymmetric framing without conscious bias.
-      - >
-        Gurman covers Apple as his PRIMARY beat. Some framing asymmetry is inherent
-        in beat journalism — you understand and empathize with the company you cover
-        most. The question is whether the resulting asymmetry creates misleading
-        coverage for readers.
+    - 'Apple Glasses genuinely MIGHT be better made — acetate IS a premium material. But Gurman is reporting Apple''s claims
+      without independent verification.
 
+      '
+    - 'Gurman''s Vision Pro criticism was genuinely harsh, which suggests he CAN be critical of Apple when the product clearly
+      underdelivers. The asymmetry is in the FRAMING of criticism (developmental vs terminal), not in whether criticism exists.
+
+      '
+    - 'Bloomberg''s editorial standards are high, and Gurman is respected as a reporter. The access dependency mechanism doesn''t
+      imply corruption — it''s a structural incentive that naturally produces asymmetric framing without conscious bias.
+
+      '
+    - 'Gurman covers Apple as his PRIMARY beat. Some framing asymmetry is inherent in beat journalism — you understand and
+      empathize with the company you cover most. The question is whether the resulting asymmetry creates misleading coverage
+      for readers.
+
+      '
     evidence_strength: MODERATE
-    evidence_limitations: >
-      The evidence is currently limited to secondary sourcing (Macrumors summaries,
-      Tom's Guide interview, Techmeme headlines). Direct Bloomberg Power On newsletter
-      articles are paywalled. The framing patterns are consistent across multiple
-      articles and interviews, but the dataset is smaller than for journalists with
-      5+ directly analyzed articles. Additionally, access dependency is harder to prove
-      than financial incentive because it's invisible — there's no disclosure to make
-      and no deal to cite.
+    evidence_limitations: 'The evidence is currently limited to secondary sourcing (Macrumors summaries, Tom''s Guide interview,
+      Techmeme headlines). Direct Bloomberg Power On newsletter articles are paywalled. The framing patterns are consistent
+      across multiple articles and interviews, but the dataset is smaller than for journalists with 5+ directly analyzed articles.
+      Additionally, access dependency is harder to prove than financial incentive because it''s invisible — there''s no disclosure
+      to make and no deal to cite.
 
+      '
     test_count: 42
     test_file: tests/test_mark_gurman_cross_entity.py
     tone_delta_meta_vs_apple_wearables: 0.55
     tone_scores:
-      apple_wearables_average: 0.30
+      apple_wearables_average: 0.3
       apple_vision_pro_average: -0.15
       meta_wearables_average: -0.25
       meta_reality_labs_average: -0.35
@@ -5442,15 +5369,10 @@ cross_publication_findings:
     analysis_date: '2026-08-09T21:00:00-07:00'
     mechanism_id: 17
     mechanism_name: settle_and_silence_litigation_coverage_asymmetry
-    finding: 'Meta faces disproportionate children''s safety litigation
-      coverage compared to Google/YouTube despite both platforms being
-      found liable in the SAME bellwether trial (KGM v. Meta & Google,
-      LA March 2026). Google''s systematic early settlement strategy
-      removes YouTube from litigation narratives, concentrating all
-      sustained media attention on Meta. Publisher financial dependencies
-      ($81.6B/yr Google advertising) predict this coverage direction with
-      100% accuracy.
-      '
+    finding: 'Meta faces disproportionate children''s safety litigation coverage compared to Google/YouTube despite both platforms
+      being found liable in the SAME bellwether trial (KGM v. Meta & Google, LA March 2026). Google''s systematic early settlement
+      strategy removes YouTube from litigation narratives, concentrating all sustained media attention on Meta. Publisher
+      financial dependencies ($81.6B/yr Google advertising) predict this coverage direction with 100% accuracy. '
     la_bellwether_kgm:
       case_name: KGM v. Meta Platforms & Google LLC
       court: California State Court, Los Angeles
@@ -5461,7 +5383,7 @@ cross_publication_findings:
       punitive_damages_m: 3
       total_damages_m: 6
       finding_malice_or_fraud: true
-      youtube_settled_date: '2026-06'
+      youtube_settled_date: 2026-06
       youtube_settlement_terms: undisclosed
       plaintiff_counsel:
       - Mark Lanier (lead trial counsel)
@@ -5546,15 +5468,11 @@ cross_publication_findings:
       contingency_fee_range_pct: 25-33%
       total_individual_plaintiffs: 2600
       total_school_districts: 1300
-      pr_and_media_operations: 'Plaintiffs'' firms actively publish blog posts
-        celebrating verdicts (Motley Rice May 2026 post), issue press releases,
-        and coordinate with advocacy organizations. This is standard plaintiffs''
-        litigation practice but creates a financial incentive to generate adverse
-        media coverage: more public pressure -> higher settlement/verdict amounts
-        -> higher contingency fees. Motley Rice describes itself as "one of the
-        largest plaintiffs'' litigation firms in the United States" with resources
-        to investigate, litigate, and resolve complex cases.
-        '
+      pr_and_media_operations: 'Plaintiffs'' firms actively publish blog posts celebrating verdicts (Motley Rice May 2026
+        post), issue press releases, and coordinate with advocacy organizations. This is standard plaintiffs'' litigation
+        practice but creates a financial incentive to generate adverse media coverage: more public pressure -> higher settlement/verdict
+        amounts -> higher contingency fees. Motley Rice describes itself as "one of the largest plaintiffs'' litigation firms
+        in the United States" with resources to investigate, litigate, and resolve complex cases. '
       source_urls:
       - https://assets.alm.com/7f/b9/e4659b1943ad912e11f78cebfa78/in-re-social-media-adolescent-candce-22-03047-2332-0.pdf
       - https://www.motleyrice.com/technology-media
@@ -5562,29 +5480,19 @@ cross_publication_findings:
     publisher_coverage_incentive:
       adversarial_meta_coverage_cost_to_publishers: 0
       adversarial_google_coverage_risk_b_yr: 81.6
-      safe_target_prediction: 'Publications with Google advertising dependency
-        will cover Meta children''s safety litigation extensively while
-        minimizing Google/YouTube''s identical exposure. YouTube''s early
-        settlements make this structurally easy — no YouTube trial means
-        no YouTube coverage obligation.
-        '
-      nm_942m_meta_vs_youtube_coverage_ratio: 'Every major publication covered
-        the $942M NM ruling as a Meta story. Zero publications produced
-        comparable investigative coverage of YouTube''s quiet KGM settlement
-        or its cumulative $200M+ in youth safety settlements. Coverage ratio
-        approaches infinity (Meta stories / YouTube stories -> inf).
-        '
+      safe_target_prediction: 'Publications with Google advertising dependency will cover Meta children''s safety litigation
+        extensively while minimizing Google/YouTube''s identical exposure. YouTube''s early settlements make this structurally
+        easy — no YouTube trial means no YouTube coverage obligation. '
+      nm_942m_meta_vs_youtube_coverage_ratio: 'Every major publication covered the $942M NM ruling as a Meta story. Zero publications
+        produced comparable investigative coverage of YouTube''s quiet KGM settlement or its cumulative $200M+ in youth safety
+        settlements. Coverage ratio approaches infinity (Meta stories / YouTube stories -> inf). '
     settle_and_silence_mechanism:
       mechanism_id: 17
       mechanism_name: settle_and_silence_litigation_coverage_asymmetry
-      overview: 'Google''s legal team systematically settles children''s safety
-        cases before they generate sustained media coverage, removing YouTube
-        from active litigation narratives and concentrating all media attention
-        on Meta. Three-stage pattern: (1) FTC/regulatory settlements for
-        small amounts relative to revenue, (2) class action settlements with
-        broad releases, (3) individual bellwether settlements after adverse
-        verdicts. Each settlement buys narrative exit.
-        '
+      overview: 'Google''s legal team systematically settles children''s safety cases before they generate sustained media
+        coverage, removing YouTube from active litigation narratives and concentrating all media attention on Meta. Three-stage
+        pattern: (1) FTC/regulatory settlements for small amounts relative to revenue, (2) class action settlements with broad
+        releases, (3) individual bellwether settlements after adverse verdicts. Each settlement buys narrative exit. '
       settlement_stages:
       - stage: 1 - Regulatory settlement (FTC COPPA 2019)
         amount_m: 170
@@ -5598,55 +5506,35 @@ cross_publication_findings:
         amount_m: undisclosed
         mechanism: Settle after adverse verdict to avoid being co-defendant in future trials
         outcome: YouTube absent from NM ruling and Oakland trial narratives
-      narrative_concentration_effect: 'Each Google settlement concentrates
-        more children''s safety liability narrative onto Meta. By Oakland
-        trial (Aug 12), Meta is the SOLE defendant in a $1.4T case despite
-        YouTube being found liable for the SAME type of harm 5 months
-        earlier. The narrative has shifted from "social media harms children"
-        to "Meta harms children" — Google/YouTube no longer appears in the
-        story.
-        '
-      coordination_caveat: 'This is NOT a claim of coordination between
-        Google and publishers. Google''s settlement strategy is structurally
-        rational — settling cases early minimizes legal costs, stock impact,
-        and reputational damage. The coverage asymmetry is an emergent
-        effect of Google''s rational legal strategy intersecting with
-        publishers'' financial incentives. No coordination is needed when
-        incentives align.
-        '
+      narrative_concentration_effect: 'Each Google settlement concentrates more children''s safety liability narrative onto
+        Meta. By Oakland trial (Aug 12), Meta is the SOLE defendant in a $1.4T case despite YouTube being found liable for
+        the SAME type of harm 5 months earlier. The narrative has shifted from "social media harms children" to "Meta harms
+        children" — Google/YouTube no longer appears in the story. '
+      coordination_caveat: 'This is NOT a claim of coordination between Google and publishers. Google''s settlement strategy
+        is structurally rational — settling cases early minimizes legal costs, stock impact, and reputational damage. The
+        coverage asymmetry is an emergent effect of Google''s rational legal strategy intersecting with publishers'' financial
+        incentives. No coordination is needed when incentives align. '
     meta_q2_2026_legal_costs:
       amount_b: 2.4
       quarter: Q2 2026
       disclosure_date: '2026-07-29'
-      google_comparison: 'Google does not separately disclose youth safety
-        legal costs. Its total cumulative known youth safety settlements
-        ($200M+) span 7 years (2019-2026) and represent less than one
-        quarter of Meta''s single-quarter Q2 2026 legal costs ($2.4B).
-        This cost disparity is partly a function of Google''s settlement
-        strategy — early settlement means lower total costs.
-        '
-      coverage_catalyst_effect: 'The $2.4B disclosure creates a self-reinforcing
-        adverse coverage cycle: (1) Meta discloses massive legal costs,
-        (2) publications report it as evidence of Meta''s legal peril,
-        (3) adverse coverage increases public/regulatory pressure,
-        (4) pressure increases settlement demands and verdict amounts,
-        (5) higher costs appear in future earnings disclosures.
-        Google avoids this cycle entirely by settling before costs accumulate
-        to headline-worthy levels.
-        '
+      google_comparison: 'Google does not separately disclose youth safety legal costs. Its total cumulative known youth safety
+        settlements ($200M+) span 7 years (2019-2026) and represent less than one quarter of Meta''s single-quarter Q2 2026
+        legal costs ($2.4B). This cost disparity is partly a function of Google''s settlement strategy — early settlement
+        means lower total costs. '
+      coverage_catalyst_effect: 'The $2.4B disclosure creates a self-reinforcing adverse coverage cycle: (1) Meta discloses
+        massive legal costs, (2) publications report it as evidence of Meta''s legal peril, (3) adverse coverage increases
+        public/regulatory pressure, (4) pressure increases settlement demands and verdict amounts, (5) higher costs appear
+        in future earnings disclosures. Google avoids this cycle entirely by settling before costs accumulate to headline-worthy
+        levels. '
     cross_validation:
       confirms_safe_target: true
-      reference: 'Safe Target Coefficient (mechanism from test_safe_target_coefficient_aug8.py).
-        The children''s safety litigation ecosystem confirms the safe target
-        model: Meta is the financially costless target for publishers, so
-        it receives maximum adversarial coverage intensity. Google is the
-        financially dangerous target ($81.6B/yr in publisher ad revenue),
-        so its identical youth safety issues receive minimal coverage.
-        YouTube''s settle-and-silence strategy is the mechanism by which
-        Google exits the narrative, but the coverage asymmetry would exist
-        even without it — publishers have no financial incentive to pursue
-        Google and every financial incentive to pursue Meta.
-        '
+      reference: 'Safe Target Coefficient (mechanism from test_safe_target_coefficient_aug8.py). The children''s safety litigation
+        ecosystem confirms the safe target model: Meta is the financially costless target for publishers, so it receives maximum
+        adversarial coverage intensity. Google is the financially dangerous target ($81.6B/yr in publisher ad revenue), so
+        its identical youth safety issues receive minimal coverage. YouTube''s settle-and-silence strategy is the mechanism
+        by which Google exits the narrative, but the coverage asymmetry would exist even without it — publishers have no financial
+        incentive to pursue Google and every financial incentive to pursue Meta. '
     source_urls:
     - https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
     - https://www.reuters.com/legal/government/how-could-new-mexicos-567-million-ruling-change-meta-2026-08-07/
@@ -5664,8 +5552,456 @@ cross_publication_findings:
       google_cumulative_settlements_m: 200
       meta_to_google_liability_ratio: 4.74
       meta_to_google_with_pending_ratio: 7004.7
-      coverage_density_ratio: 'Approaching infinity. Every major publication
-        covered the NM $942M ruling and Oakland $1.4T demand. Zero publications
-        produced comparable investigative coverage of YouTube''s $200M+
-        cumulative youth safety settlements or its quiet KGM bellwether exit.
+      coverage_density_ratio: 'Approaching infinity. Every major publication covered the NM $942M ruling and Oakland $1.4T
+        demand. Zero publications produced comparable investigative coverage of YouTube''s $200M+ cumulative youth safety
+        settlements or its quiet KGM bellwether exit. '
+  reuters_jeff_horwitz:
+    journalist: Jeff Horwitz
+    publication: Reuters (Thomson Reuters)
+    role: Tech Investigations Reporter
+    location: Oakland, California
+    beat: Meta investigations, tech accountability
+    career_trajectory:
+    - publication: Associated Press
+      role: financial and enterprise reporter
+      location: Washington, D.C.
+    - publication: Wall Street Journal
+      role: technology reporter / Facebook beat
+      period: ~2019-2024
+      key_work: Facebook Files (2021), 20K+ internal documents from Frances Haugen whistleblower
+    - publication: Reuters
+      role: tech investigations reporter
+      period: 2024-present
+      key_work: Meta scam ads, AI chatbot child safety, Instagram eating disorders
+    cross_entity_coverage_analysis:
+      mechanism_id: 19
+      mechanism_name: Triple-Deal Narrative Lock-In
+      mechanism_description: 'The same investigative journalist applies maximum-depth techniques (internal documents, undercover
+        experiments, whistleblower cultivation) exclusively to Meta, while covering competitors with surface-level factual
+        reporting. The asymmetry direction aligns with compounding personal financial and reputational incentives from three
+        simultaneous deals: book royalties, movie adaptation rights, and a Pulitzer Prize citation, all dependent on Meta
+        remaining the primary villain in tech accountability narratives.
+
         '
+      date_analyzed: '2026-08-10'
+      triple_deal_structure:
+        book_deal:
+          title: 'Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'
+          publisher: Doubleday (Penguin Random House)
+          publication_date: 2023-11
+          financial_incentive: 'Ongoing royalties tied to Meta-as-villain narrative. Book sales correlate with public interest
+            in Meta scandals. Additional revenue from movie adaptation rights.
+
+            '
+        movie_deal:
+          title: The Social Reckoning
+          studio: Sony Pictures Releasing (Columbia Pictures)
+          director: Aaron Sorkin
+          writer: Aaron Sorkin
+          release_date: '2026-10-09'
+          cast:
+            jeff_horwitz: Jeremy Allen White
+            frances_haugen: Mikey Madison
+            mark_zuckerberg: Jeremy Strong
+            supporting:
+            - Wunmi Mosaku
+            - Betty Gilpin
+            - Billy Magnussen
+            - Bill Burr
+          production_companies:
+          - Columbia Pictures
+          - Alcon Entertainment
+          - The Gotham Group
+          - Escape Artists
+          filming: Oct-Dec 2025, Vancouver
+          financial_incentive: 'Movie releasing Oct 9, 2026 positions Horwitz as heroic journalist protagonist. Any future
+            reporting that distributes blame more equally across tech companies or humanizes Meta would retroactively weaken
+            the films dramatic arc. Maximum narrative lock-in effect during summer 2026 marketing/pre-release period.
+
+            '
+        pulitzer_prize:
+          award: Pulitzer Prize for Beat Reporting
+          year: 2026
+          date_awarded: '2026-05-04'
+          citation_focus: Meta investigations specifically
+          co_winner: Engen Tham
+          financial_incentive: 'Professional identity permanently locked to Meta accountability reporting. Pulitzer enhances
+            book sales and movie marketing value. Diversifying to investigate Google or OpenAI with equal intensity would
+            dilute the brand that earned the prize.
+
+            '
+        other_awards:
+        - George Polk Award for Business Reporting
+        - Gerald Loeb Award for Beat Reporting
+      meta_coverage:
+        investigative_depth: maximum
+        techniques_used:
+        - internal_documents: 20K+ Facebook Files (WSJ), Meta scam ads cache (Reuters)
+        - undercover_experiments: Created fake 14-year-old account on Meta, purchased and ran scam ads on Facebook/Instagram
+        - whistleblower_cultivation: Frances Haugen relationship developed over months before disclosure
+        - source_count: Dozens of current/former Meta employees across both WSJ and Reuters tenures
+        key_series:
+        - title: Facebook Files
+          publication: Wall Street Journal
+          year: 2021
+          scope: XCheck, teen mental health, human trafficking, political violence, recommendation algorithms
+          documents_reviewed: 20,000+ internal screenshots
+        - title: Meta Scam Ads Investigation
+          publication: Reuters
+          period: 2025-2026
+          scope: $16B/yr from scam ads, global playbook to defeat anti-scam regulations, Chinese ad fraud
+          technique: Purchased and ran scam ads as experiment
+        - title: AI Chatbots and Children
+          publication: Reuters
+          period: 2025-2026
+          scope: Meta AI chatbots conducting sensual conversations with minors, death of cognitively disabled man
+          technique: Created fake 14-year-old account
+        - title: Instagram Eating Disorders
+          publication: Reuters
+          year: 2026
+          scope: Internal Meta research showing algorithm steers eating disorder content to vulnerable teens
+        language_register:
+        - knowingly exposed
+        - flooding users
+        - toxic secrets
+        - global playbook
+        - suppress critical research
+        - sensual conversations with children
+        - drastic cuts to safety staff
+        tone_estimate: -0.85
+      competitor_coverage:
+        investigative_depth: surface_level
+        openai:
+          coverage_type: wire_service_neutral
+          example: Rogue AI agents coverage (Aug 4, 2026) — reported UK AISI findings, not independent investigation
+          language_register:
+          - new security breaches
+          - unsanctioned actions
+          internal_documents_used: false
+          undercover_experiments: false
+          whistleblower_sources: false
+          tone_estimate: -0.15
+        google_youtube:
+          coverage_type: absent
+          investigative_articles: 0
+          notable_absence: 'LA trial found BOTH Meta ($4.2M) AND YouTube ($1.8M) guilty on 7 counts of child safety violations.
+            YouTube has comparable scam ad problems. Google has $170M+ FTC COPPA settlement history. No Horwitz investigation
+            of any of these.
+
+            '
+          internal_documents_used: false
+          undercover_experiments: false
+        apple:
+          coverage_type: absent
+          investigative_articles: 0
+          internal_documents_used: false
+        snap_tiktok:
+          coverage_type: absent
+          investigative_articles: 0
+          note: TikTok and Snap settled LA child safety cases pre-trial
+      asymmetry_metrics:
+        investigative_depth_ratio: Maximum (internal docs + experiments + whistleblowers) vs Zero/Surface
+        meta_investigative_articles: 15+
+        competitor_investigative_articles: 0
+        undercover_experiment_targets:
+        - Meta
+        undercover_experiment_non_targets:
+        - Google/YouTube
+        - OpenAI
+        - Apple
+        - Snap
+        - TikTok
+        tone_delta_meta_vs_competitors: 0.7
+        la_trial_coverage_ratio: 'Both Meta and YouTube found liable in LA trial; Horwitzs investigative series covers only
+          Metas role. YouTube $1.8M liability receives no comparable investigative treatment.
+
+          '
+      narrative_lock_in_cascade: 'Book deal (2021) -> Movie adaptation rights (2025) -> Pulitzer Prize (May 2026) -> More
+        Meta stories -> Book reprints from movie marketing -> Movie release (Oct 2026) -> Awards season (Jan 2027). Each reinforces
+        the others. The cost of investigating Google or Apple with equal intensity increases with each new deal because it
+        would dilute the narrative that supports all three.
+
+        '
+      movie_release_proximity_effect: 'The Social Reckoning releases Oct 9 2026. During summer 2026 (NOW), Sony marketing
+        is actively promoting the Meta-as-villain narrative. Horwitz publishing comparably critical coverage of Google or
+        OpenAI during this window would complicate the marketing message. This is the period of maximum narrative lock-in.
+
+        '
+      legitimate_factors:
+      - Frances Haugen was a Meta employee — original access was at Meta, not competitors
+      - Metas internal documents were leaked to him; competitors documents were not
+      - Specialization is normal for investigative journalists — deep sources at one company is legitimate
+      - Meta is genuinely a larger social media platform than YouTube in some metrics
+      - Facebook Files predated book/movie deals — narrative emerged from reporting, not reverse
+      - Pulitzer committee evaluated the work on merit — quality is real
+      - Reuters editorial independence — Reuters is wire service, not Condé Nast with competitor content deals
+      - Meta has a deeper history of privacy controversies (Cambridge Analytica, $7B+ in fines)
+      novel_mechanism_distinction: 'Unlike other MediaScope journalist mechanisms (financial capture via publication deals,
+        access dependency, beat assignment), this is INDIVIDUAL-LEVEL financial lock-in. Reuters itself has no known AI content
+        licensing deals with Meta competitors. The asymmetry incentive is entirely in the journalists personal financial and
+        reputational structure. This makes it analytically distinct from Sheera Frenkels Book Deal Narrative Capture (mechanism
+        id 9) — Frenkels book (An Ugly Truth) lacked both a movie adaptation and a Pulitzer. Horwitzs triple deal creates
+        compounding lock-in that Frenkels single deal did not.
+
+        '
+      source_urls:
+      - https://en.wikipedia.org/wiki/Jeff_Horwitz
+      - https://en.wikipedia.org/wiki/The_Social_Reckoning
+      - https://www.pulitzer.org/winners/jeff-horwitz-and-engen-tham-reuters
+      - https://www.reuters.com/world/reuters-wins-beat-reporting-pulitzer-meta-investigations-2026-05-04/
+      - https://tidbits.com/2026/01/04/reuters-exposes-metas-tactics-to-avoid-scam-ad-oversight/
+      - https://muckrack.com/jeff-horwitz/articles
+      - https://indicator.media/p/watch-the-first-episode-of-show-tell-from-indicator-jeff-horwitz
+      - https://www.reuters.com/legal/litigation/openai-anthropic-ai-agents-implicated-new-security-breaches-2026-08-05/
+    test_count: 0
+    test_file: tests/test_jeff_horwitz_cross_entity.py
+jeff_horwitz:
+  name: Jeff Horwitz
+  current_publication: Reuters
+  previous_publication: Wall Street Journal
+  beat: tech investigations / Meta accountability
+  career_trajectory:
+  - outlet: Wall Street Journal
+    years: 2014-2024
+    role: Technology reporter / investigations
+    key_work: Facebook Files (2021) — 20K+ internal documents, XCheck, teen mental health, human trafficking
+  - outlet: Reuters
+    years: 2024-present
+    role: Tech investigations reporter
+    key_work: Meta scam ads, AI chatbots and children, Instagram eating disorders
+  mechanism_id: 18
+  mechanism_name: triple_deal_narrative_lock_in
+  mechanism_description: 'The same investigative journalist applies maximum-depth investigation techniques (internal documents,
+    undercover experiments, whistleblower cultivation) exclusively to Meta, while covering competitors with surface-level
+    factual reporting. The asymmetry direction aligns with compounding personal financial/reputational incentives from a book
+    deal (ongoing royalties), movie deal (dramatic arc reinforcement), and Pulitzer Prize (professional identity lock-in).
+
+    '
+  date_analyzed: '2026-08-10'
+  triple_deal_structure:
+    book_deal:
+      title: 'Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'
+      publisher: Doubleday
+      publication_date: 2023-11
+      incentive: 'Ongoing royalties tied to Meta-as-villain narrative. Book sales benefit from continued adversarial Meta
+        coverage. Commercial viability depends on Meta remaining the primary villain in the tech accountability narrative.
+
+        '
+      source_url: https://www.penguinrandomhouse.com/books/706796/broken-code-by-jeff-horwitz/
+    movie_deal:
+      title: The Social Reckoning
+      studio: Sony/Columbia Pictures
+      director: Aaron Sorkin
+      actor_playing_horwitz: Jeremy Allen White
+      release_date: '2026-10-09'
+      incentive: 'Horwitz is portrayed as the heroic journalist protagonist. Any reporting that distributes investigative
+        blame more equally across tech companies would weaken the film''s dramatic arc right before its October 2026 release.
+        Maximum financial incentive to maintain Meta-villain narrative during the months leading up to release.
+
+        '
+      source_url: https://deadline.com/tag/the-social-reckoning/
+    pulitzer_prize:
+      category: Beat Reporting
+      year: 2026
+      citation_focus: Meta investigations at Reuters
+      incentive: 'Professional identity is now structurally locked to Meta as the primary target. Pulitzer won specifically
+        for Meta investigations means the journalist''s highest credential is defined by adversarial Meta coverage. Pivoting
+        to comparable scrutiny of competitors would dilute the professional brand that the Pulitzer certified.
+
+        '
+      source_url: https://www.pulitzer.org/winners/jeff-horwitz-reuters
+  cross_entity_coverage_analysis:
+    meta_coverage:
+      tone: -0.75
+      register: adversarial_investigative
+      investigative_depth: maximum
+      techniques_applied:
+      - internal_documents: true
+        description: 20K+ internal documents (Facebook Files, 2021)
+      - undercover_experiments: true
+        description: Created fake 14-year-old account to test AI chatbot safeguards; purchased scam ads to test Meta's ad
+          review system
+      - whistleblower_cultivation: true
+        description: Frances Haugen and other internal sources at Meta
+      - regulatory_pressure: true
+        description: Coverage directly contributed to congressional hearings and regulatory action
+      recent_articles:
+      - title: Meta earns ~$16B/yr from scam ads, 'global playbook' to defeat anti-scam regulations
+        outlet: Reuters
+        year: 2025
+        type: investigative_series
+        framing: knowingly exposed users, flooding users, global playbook
+        tone: -0.8
+      - title: Meta AI chatbot conversations with minors — sensual content
+        outlet: Reuters
+        year: 2025
+        type: investigative_undercover
+        framing: created fake 14-year-old account, exposed Meta allowing inappropriate AI interactions
+        tone: -0.85
+      - title: Instagram algorithm steering vulnerable teens toward eating disorder content
+        outlet: Reuters
+        year: 2026
+        type: investigative_internal_documents
+        framing: internal Meta documents showing algorithm steering, suppress critical research
+        tone: -0.8
+      - title: Facebook Files — XCheck, teen mental health, human trafficking, political violence
+        outlet: Wall Street Journal
+        year: 2021
+        type: investigative_series
+        framing: knowingly exposed, toxic secrets, internal documents reveal
+        tone: -0.85
+      - title: Death of cognitively disabled man linked to Meta AI chatbot interaction
+        outlet: Reuters
+        year: 2026
+        type: investigative
+        framing: documented death, chatbot safeguard failure
+        tone: -0.9
+      loaded_language:
+      - knowingly exposed
+      - flooding users
+      - toxic secrets
+      - global playbook
+      - suppress critical research
+    competitor_coverage:
+      openai:
+        tone: -0.1
+        register: factual_neutral
+        investigative_depth: surface
+        techniques_applied:
+        - internal_documents: false
+        - undercover_experiments: false
+        - whistleblower_cultivation: false
+        recent_articles:
+        - title: UK AISI finds 'new security breaches' and 'unsanctioned actions' in AI models
+          outlet: Reuters
+          date: '2026-08-04'
+          type: wire_service_report
+          framing: neutral reporting of UK government findings, no independent investigation
+          tone: -0.1
+          source_url: https://www.reuters.com/technology/artificial-intelligence/uk-finds-ai-models-can-deceive-developers-take-unsanctioned-actions-2026-08-04/
+      google_youtube:
+        tone: 0.0
+        register: absent
+        investigative_depth: none
+        techniques_applied:
+        - internal_documents: false
+        - undercover_experiments: false
+        - whistleblower_cultivation: false
+        recent_articles: []
+        notable_absence: 'LA trial found BOTH Meta ($4.2M) and YouTube ($1.8M) guilty on 7 counts of child safety violations.
+          Horwitz produced extensive investigative series on Meta''s child safety failures but ZERO comparable investigation
+          of YouTube despite identical findings of liability.
+
+          '
+      apple:
+        tone: 0.0
+        register: absent
+        investigative_depth: none
+        techniques_applied:
+        - internal_documents: false
+        - undercover_experiments: false
+        - whistleblower_cultivation: false
+        recent_articles: []
+      snap_tiktok:
+        tone: 0.0
+        register: absent
+        investigative_depth: none
+        techniques_applied:
+        - internal_documents: false
+        - undercover_experiments: false
+        - whistleblower_cultivation: false
+        recent_articles: []
+    cross_entity_patterns:
+    - pattern_name: INVESTIGATIVE TECHNIQUE EXCLUSIVITY
+      description: 'Internal documents, undercover experiments (fake accounts, purchasing scam ads), and whistleblower cultivation
+        are applied ONLY to Meta. Competitor coverage uses wire-service factual reporting exclusively. The same reporter who
+        creates fake 14-year-old accounts on Meta has never created fake accounts on YouTube, TikTok, or Snap to test comparable
+        safeguards.
+
+        '
+      severity: 5
+    - pattern_name: LA TRIAL COVERAGE GAP
+      description: 'Both Meta ($4.2M) and YouTube ($1.8M) were found liable for 7 counts of child safety violations, but investigative
+        series focuses exclusively on Meta. YouTube''s identical liability produces zero independent Horwitz investigation.
+
+        '
+      severity: 4
+    - pattern_name: TRIPLE DEAL COMPOUNDING
+      description: 'Book royalties (ongoing), movie release timing (Oct 9, 2026), and Pulitzer professional identity create
+        compounding incentives. Each deal reinforces the others: the book provided the source material for the movie, the
+        movie validates the Pulitzer-winning narrative, and the Pulitzer certifies the book''s thesis. Diversifying investigative
+        targets would dilute all three simultaneously.
+
+        '
+      severity: 5
+    - pattern_name: MOVIE RELEASE TIMING PRESSURE
+      description: 'The Social Reckoning releases Oct 9, 2026. Maximum incentive to maintain Meta-villain narrative during
+        Q3 2026 reporting. Any coverage distributing blame to other platforms would weaken the film''s dramatic premise right
+        before its theatrical release.
+
+        '
+      severity: 4
+    - pattern_name: SCAM AD SELECTIVE INVESTIGATION
+      description: 'Horwitz conducted an undercover experiment purchasing scam ads on Meta''s platform to prove the ad review
+        system could be bypassed. No comparable experiment has been conducted on Google Ads, YouTube, TikTok, or X despite
+        documented scam ad problems on all these platforms. Google Ads has well-documented scam ad issues but receives zero
+        investigative attention from Horwitz.
+
+        '
+      severity: 4
+    legitimate_factors:
+    - factor: Frances Haugen access
+      description: 'Frances Haugen was a Meta employee who specifically leaked documents to Horwitz. This original access
+        was at Meta, not competitors. Source access drove initial story selection.
+
+        '
+      weight: high
+    - factor: Leaked documents availability
+      description: 'Meta''s internal documents were leaked to him; competitors'' internal documents were not. Investigative
+        journalism follows available evidence.
+
+        '
+      weight: high
+    - factor: Journalist specialization
+      description: 'Beat specialization is normal in investigative journalism. Reporters develop source networks and expertise
+        in specific companies over years.
+
+        '
+      weight: medium
+    - factor: Platform scale
+      description: 'Meta operates larger social media platforms (Facebook, Instagram) than some competitors by some metrics,
+        potentially justifying more scrutiny.
+
+        '
+      weight: medium
+    - factor: Facebook Files predated deals
+      description: 'The Facebook Files (2021) predated the book deal (2023) and movie deal. The narrative emerged from the
+        reporting, not the other way around. However, the deals now create forward-looking incentive to maintain the narrative.
+
+        '
+      weight: high
+    - factor: Pulitzer merit evaluation
+      description: 'The Pulitzer committee evaluated Horwitz''s work on its journalistic merit. The prize reflects quality
+        of reporting, not only choice of target.
+
+        '
+      weight: medium
+    - factor: Reuters editorial independence
+      description: 'Reuters is not a Condé Nast/PMC with competitor content deals. Reuters has no known AI content licensing
+        deals with OpenAI, Google, or other Meta competitors that would create publication-level financial incentives.
+
+        '
+      weight: high
+    investigative_depth_ratio:
+      meta: maximum (internal docs, undercover, whistleblowers)
+      openai: surface (wire-service neutral)
+      google_youtube: absent (zero coverage despite identical liability findings)
+      apple: absent
+      snap_tiktok: absent
+    asymmetry_score: 0.82
+    asymmetry_note: 'High asymmetry score reflects extreme gap between investigative depth applied to Meta vs all competitors.
+      Partially mitigated by legitimate factors (source access, leaked documents, specialization). The key question is not
+      whether Horwitz''s Meta reporting is wrong (it isn''t), but whether the ABSENCE of comparable investigation of competitors
+      with comparable issues constitutes a structural blind spot reinforced by financial incentives.
+
+      '
