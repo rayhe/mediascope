@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 7788 tests across 261 test files (all from real articles)
+├── tests/                       # 7835 tests across 262 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -656,6 +656,7 @@ mediascope/
 │   ├── test_wired_subscription_era.py # Wired Conversation Focus paywall: consumer_ownership no-adverb "runs on-device", expert_contradiction ("it's not about X; it's about Y"), loss_leader_framing ("sold at cost" + subscription revenue), editorial_aside sarcastic "Guess..." opener, Path J expert-driven structural critique correction
 │   ├── test_child_safety_analysis.py # NYT child safety study analysis: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening
 │   ├── test_mit_tr_anduril_meta_warfare_glasses.py # MIT TR Anduril/Meta warfare glasses: defense-tech entity detection, failure_precedent (new device), analogy_stacking FP filters (factual similes, recall verb), context-gated Llama entity, selective_rehabilitation, editorial_deflation, sentiment calibration
+│   ├── test_mit_tr_anthropic_preipo_product_validation_aug9.py # MIT TR × Anthropic pre-IPO product validation asymmetry (Mechanism #15): fascinated/validating Anthropic framing (J-space, Claude Science, Code with Claude, 10 Breakthroughs) vs failure/warfare/dismissive Meta framing, max headline valence gap (1.0), competence-benchmark device, indirect endowment financial chain, pre-IPO amplification timeline
 │   ├── test_mit_tr_apple_governance_conflict_aug6.py # MIT TR × Apple governance-level conflict analysis: Bergeron MIT Corporation election, CSAIL Alliance membership, Apple privacy-positive vs Meta adversarial tone asymmetry, sensor-count paradox (Vision Pro 30+ praised vs Meta 4 surveilled), non-disclosure, three-tier influence hierarchy, profile cross-validation
 │   ├── test_multi_outlet_comparison.py # N-way cross-outlet same-event comparison: compare_multi_articles() function validation, 4-way Zuckerberg town hall cross-analysis (Reuters/TechCrunch/Barron's/PYMNTS), cross_publication_import detection, tone matrix generation, QUALITY_STANDARDS Tier 1 update guard
 │   ├── test_quote_forward_preference.py # Quote extraction forward-preference fix: _extract_nearby_quote prefers forward quotes over backward, regression test for Ji/Gong misattribution bug in MIT TR AI agent security article
