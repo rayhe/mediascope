@@ -1,4 +1,27 @@
 # MediaScope Iteration Log
+## 2026-08-09 19:00 PT — Type A: Competitor Coverage Deep Dive — MIT TR × Anthropic Pre-IPO Product Validation Asymmetry
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Pair:** MIT Technology Review × Anthropic
+
+**Finding — Mechanism #15: Pre-IPO Product Validation Amplifier**
+
+MIT TR's Jun-Jul 2026 Anthropic coverage uses fascinated/validating framing (4/4 positive: J-space, Claude Science, Code with Claude, 10 Breakthrough Technologies) while contemporaneous Meta coverage uses failure/warfare/dismissive framing (3/3 negative: Instagram hack, Anduril warfare glasses, brain typing). Headline valence gap: 1.0 (maximum).
+
+Key device: MIT TR uses Anthropic as the competence benchmark against which Meta's incompetence is measured. In "The Meta hack," Anthropic's Mythos is "too good at hacking to be released" (competence) while Meta is "practically mindless" (incompetence) — in the same article.
+
+Financial chain: Anthropic pre-IPO (target Oct 2026) → Google/Amazon stakes → MIT $27.4B endowment → OBBBA 8% tax pressure → Kornbluth corporate pivot.
+
+**Changes:**
+- Profile: expanded `competitor_relationships.anthropic` in `mit-tech-review.yaml` — `financial_tie: "indirect_endowment"` with full `pre_ipo_product_validation_paradox` analysis (mechanism_id: 15)
+- Tests: `test_mit_tr_anthropic_preipo_product_validation_aug9.py` — 47 tests across 8 classes, all passing
+- Docs: README.md + ARCHITECTURE.md updated 7788→7835 tests, 261→262 files
+- Structural consistency: 124/124 passing
+- Git: committed + pushed (ab81b47)
+
+---
+
 ## 2026-08-09 18:00 PT — Type D: Test & Verify — Cross-Validation of 15:00–17:00 PT Sprint
 
 **Rotation:** D (Test & Verify)

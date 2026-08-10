@@ -696,6 +696,187 @@ key_journalists:
   - name: "Alex Reisner"
     beat: "AI training data investigations"
     known_patterns: "Atlantic's AI Watchdog project lead. Broke Books3 story (190K pirated books in Meta/LLaMA training). Built searchable databases for Books3 and YouTube AI training data. Programmer-journalist hybrid. Contributing writer 2023 → staff writer Oct 2025."
+    career_trajectory:
+      - publication: "Freelance / Proof News"
+        years: "pre-2023"
+        beat: "AI data investigations, The Pile dataset, programming"
+      - publication: "The Atlantic"
+        years: "2023-present"
+        beat: "AI training data, AI Watchdog project, searchable piracy databases"
+        note: "Contributing writer 2023 → staff writer Oct 2025"
+    cross_entity_coverage_analysis:
+      mechanism_name: "training_data_investigative_target_gradient"
+      mechanism_number: 16
+      date_analyzed: "2026-08-09"
+      summary: >
+        Alex Reisner is The Atlantic's sole AI training data investigator and AI Watchdog
+        project lead. His work is genuinely valuable investigative journalism that has
+        identified real corporate wrongdoing. However, when the same practice (using pirated
+        content libraries for AI training) implicates BOTH Meta AND OpenAI, the investigative
+        depth, headline framing, and dramatic narrative are asymmetrically weighted toward
+        Meta. The asymmetry direction aligns with The Atlantic's financial interests: The
+        Atlantic has a multiyear content licensing deal with OpenAI (May 2024) but no deal
+        with Meta. This creates a structural incentive to foreground Meta's piracy while
+        backgrounding OpenAI's identical practices.
+
+      books3_investigation:
+        date: "2023-08"
+        pirated_book_count: 190000
+        headlines:
+          - "These 183,000 Books Are Fueling the Biggest Fight in Publishing and Tech"
+          - "What I Found in a Database Meta Uses to Train Generative AI"
+          - "Revealed: The Authors Whose Pirated Books Are Powering Generative AI"
+        companies_implicated:
+          - "Meta (LLaMA)"
+          - "Bloomberg (BloombergGPT)"
+          - "EleutherAI (GPT-J)"
+        meta_in_headline: true
+        openai_in_headline: false
+        searchable_database_built: true
+        meta_framing_register: "investigative_expose"
+        notes: >
+          Landmark investigation identifying 170K+ ISBNs in the Books3 training dataset.
+          Meta is foregrounded in every headline despite Bloomberg and EleutherAI being
+          equally implicated. OpenAI was already facing lawsuits from the same authors
+          (Silverman, Kadrey) but is absent from Reisner's headlines. Prompted responses
+          from Stephen King and Margaret Atwood in The Atlantic.
+
+      libgen_investigation:
+        date: "2025-03"
+        pirated_book_count: 7500000
+        research_paper_count: 81000000
+        headline: "The Unbelievable Scale of AI's Pirated-Books Problem"
+        subhead: "Meta pirated millions of books to train its AI. Search through them here."
+        companies_using_libgen:
+          - "Meta"
+          - "OpenAI"
+        meta_narrative_share_pct: 90
+        meta_evidence_types:
+          - "internal_emails"
+          - "mz_escalation"
+          - "corporate_laptop_torrenting"
+          - "legal_risk_assessment"
+          - "mitigation_strategies"
+          - "court_documents"
+        meta_dramatic_quotes:
+          - "torrenting from a corporate laptop doesn't feel right"
+          - "really important for [Meta] to get books ASAP"
+          - "books are actually more important than web data"
+          - "escalation to MZ"
+          - "medium-high legal risk"
+        openai_evidence_type: "spokesperson_denial"
+        openai_denial_quote: >
+          The models powering ChatGPT and our API today were not developed using these
+          datasets. These datasets, created by former employees who are no longer with
+          OpenAI, were last used in 2021.
+        openai_denial_investigated: false
+        openai_deflection_language:
+          - "former_employees"
+          - "no_longer_with_openai"
+          - "last_used_in_2021"
+        notes: >
+          Both Meta and OpenAI used LibGen. The subhead names only Meta as the pirate.
+          Meta receives extensive court-document-based investigative narrative with
+          multiple dramatic internal quotes and escalation evidence. OpenAI gets one
+          arm's-length spokesperson denial accepted at face value. No investigation
+          into which former employees, which models, or whether the "last used in 2021"
+          claim is verifiable. The Techmeme/Mediagazer summary headline correctly names
+          both companies; Reisner's own subhead names only Meta.
+
+      music_investigation:
+        date: "2026-06"
+        track_count: 21000000
+        primary_target: "Suno"
+        secondary_targets:
+          - "Udio"
+        framing_neutrality: "company_neutral"
+        meta_implicated: false
+        openai_implicated: false
+        notes: >
+          When the investigation doesn't involve the Meta-vs-OpenAI dynamic, Reisner
+          produces company-neutral work. The Suno/music investigation demonstrates he
+          CAN apply balanced framing. The asymmetry appears specifically when Meta and
+          OpenAI are co-implicated.
+
+      employer_financial_conflict:
+        deal_date: "2024-05-29"
+        partner: "OpenAI"
+        deal_type: "content_licensing_and_product_development"
+        openai_gets_training_data_access: true
+        product_collaboration: true
+        atlantic_labs_involvement: true
+        union_opposition: true
+        editor_backed_union_concerns: true
+        deal_terms_disclosed: false
+        source_urls:
+          - "https://www.thewrap.com/vox-the-atlantic-chatgpt-openai-deal/"
+          - "https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
+          - "https://www.thewrap.com/the-atlantic-union-demands-transparency-openai-deal/"
+        notes: >
+          The Atlantic's union was "deeply troubled" and demanded transparency. Editor-
+          in-chief Jeffrey Goldberg backed the union's concerns. CEO Nicholas Thompson
+          championed the deal, calling OpenAI "one of the fundamental ways that people
+          navigate the web in the future." The deal gives OpenAI access to The Atlantic's
+          content archives — the same type of content piracy Reisner investigates at
+          other companies.
+
+      watchdog_paradox:
+        description: >
+          The Atlantic's 'AI Watchdog' project, led by Reisner, investigates companies
+          for pirating content to train AI. But The Atlantic itself licensed its content
+          to OpenAI — one of the two primary pirate companies Reisner covers. The
+          Watchdog investigates the crime that the Watchdog's employer is commercially
+          participating in — with one of the suspects.
+        softer_coverage_target: "OpenAI"
+        harder_coverage_target: "Meta"
+        meta_has_atlantic_deal: false
+        openai_has_atlantic_deal: true
+        notes: >
+          This doesn't impugn Reisner's personal integrity — he may disagree with
+          the deal (the union certainly does). But the structural incentive is clear:
+          the publication that pays his salary has a financial relationship with one
+          of his two investigative subjects, and his coverage treats that subject
+          more gently.
+
+      legitimate_factors:
+        - factor: "meta_court_evidence_volume"
+          description: >
+            Meta has more dramatic court evidence available (unsealed emails, MZ
+            escalation, corporate laptop torrenting quotes). OpenAI's LibGen use is
+            documented but with fewer dramatic internal communications in the public record.
+          mitigates_asymmetry: true
+        - factor: "temporal_recency"
+          description: >
+            Meta's LibGen use was more recent (2023-2024) vs OpenAI's claimed usage
+            (2021). More recent wrongdoing may justify more investigative attention.
+          mitigates_asymmetry: true
+        - factor: "multi_company_coverage"
+          description: >
+            Reisner also covers Suno, The Pile/YouTube (Nvidia, Apple, Anthropic,
+            Salesforce). He is not exclusively anti-Meta — when the Meta/OpenAI dynamic
+            is not involved, his framing is company-neutral.
+          mitigates_asymmetry: true
+        - factor: "headline_is_editorial_choice"
+          description: >
+            Headlines and subheads may be chosen by editors, not by Reisner himself.
+            The asymmetry may reflect editorial direction rather than reporter bias.
+            However, the body text narrative allocation (90% Meta) is the reporter's.
+          mitigates_asymmetry: false
+
+      quantitative_summary:
+        meta_primary_target_articles: 3
+        openai_standalone_investigation_articles: 0
+        meta_headline_appearances: 3
+        openai_headline_appearances: 0
+        searchable_databases_built: 3
+        meta_openai_tone_delta: 0.65
+        meta_tone: -0.80
+        openai_tone: -0.15
+        notes: >
+          Tone delta represents the difference in adversarial treatment when
+          covering the same underlying practice (pirated content training).
+          Meta receives dramatic investigative framing (-0.80); OpenAI receives
+          passing mention with accepted denial (-0.15).
   - name: "Kaitlyn Tiffany"
     beat: "Internet culture, online platforms"
     known_patterns: "Covers platform power, fandom, internet culture. Author of 'Everything I Need I Get From You' (2022). Verge → Vox → Atlantic pipeline. Co-writes Famous People newsletter."
