@@ -1189,6 +1189,41 @@ journalists:
   source_urls:
   - https://en.wikipedia.org/wiki/Casey_Newton
   - https://www.platformer.news/
+  competitor_coverage:
+    mechanism_id: 24
+    mechanism_name: "Disclosure-as-Inoculation Paradox"
+    personal_conflicts:
+      anthropic:
+        relationship: "fiancé is software engineer at Anthropic (started Jan 2025, engaged Feb 2026)"
+        disclosure_quality: "best-in-class independent — per-column disclosure, dedicated ethics page, email to new subscribers"
+        disclosure_limitation: "self-regulated — no editorial board, no ethics editor, no institutional verification"
+        coverage_framing: "admiration/enthusiasm — 'Claude Code believer,' 'rapture over Claude Opus 4.5,' 'credit for consequential stands'"
+        product_adoption: "personally built cnewton.org with Claude Code, wrote multiple positive columns about the experience"
+        pentagon_framing: "'Following: Anthropic vs. The Pentagon' (Feb 2026) framed Anthropic as principled defender vs. government overreach; compare Harvard Berkman Klein skeptical analysis (Sanders & Schneier, Mar 2026)"
+        source_urls:
+        - https://www.platformer.news/ethics/
+        - https://en.wikipedia.org/wiki/Casey_Newton
+        - https://cyber.harvard.edu/story/2026-03/dont-bet-pentagon-or-anthropic-acting-public-interest
+      vox_media:
+        relationship: "stock options from 2013-2020 employment at The Verge (Vox Media)"
+        disclosure_quality: "disclosed but not per-link — only when writing about Vox/Verge as institutions"
+    meta_coverage:
+      framing: "accountability — scams, child safety, content moderation PTSD, '20-year mistake', design defects"
+      predates_anthropic: true
+      predates_by_years: 6
+      notable_investigation: "$52M Facebook/Cognizant content moderation settlement (2019-2020)"
+      product_enthusiasm_columns: 0
+    independence_transition:
+      date: "August 2026"
+      event: "Hard Fork ending; Newton + Kevin Roose launching independent AI media venture"
+      impact: "removes last institutional editorial oversight (NYT), leaving self-imposed disclosure as only check"
+      source_url: https://en.wikipedia.org/wiki/Casey_Newton
+    legitimate_factors:
+    - "Meta accountability journalism predates Anthropic relationship by 6 years"
+    - "Disclosure exceeds industry standard for independent and institutional journalists"
+    - "Fiancé's engineering role is outside Newton's product/policy coverage focus"
+    - "Newton produces critical coverage of Substack, TikTok, X, Google — not uniformly soft"
+    - "Anthropic's Pentagon stand was genuinely newsworthy (federal judge ruled retaliation 'likely unlawful')"
   education:
   - degree: BS
     field: Journalism
