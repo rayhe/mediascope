@@ -3548,13 +3548,17 @@ relationship_types:
   none: No known financial relationship
   negotiating: Deals under discussion but not yet signed
   settlement: Payment through legal settlement, not voluntary licensing
+  settlement_reported: Settlement reported by secondary sources but not confirmed by principals
   coercive: Publisher pressured to accept terms or lose existing benefits
   commercial_partnership: Cash payments for extended content display or AI features, not formal licensing
   adversarial_litigation: Active lawsuit filed by publisher against entity
   advertising_dependency: Publisher critically dependent on entity's advertising platform for majority of digital ad revenue
     — distinct from licensing or investment
+  indirect_endowment: No direct financial tie, but publisher's parent institution has endowment exposure to entity's investors
 coverage_predictions:
   softer: Financial incentive predicts measurably softer coverage tone
+  softer_than_expected: Coverage softer than editorial stance would predict, given indirect financial exposure
+  positive_if_deal_confirmed: Coverage predicted to shift positive if reported deal is confirmed
   neutral: No financial incentive to bias coverage in either direction
   adversarial: Financial incentive or absence thereof predicts harsher coverage
   unknown: Insufficient data to predict coverage tone

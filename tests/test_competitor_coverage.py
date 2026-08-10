@@ -143,8 +143,9 @@ class TestPublicationRelationships:
         """Each relationship must have a recognized financial_tie type."""
         valid_types = {
             "licensing", "investment", "advertising", "distribution",
-            "indirect", "mixed", "negotiating", "adversarial", "litigation",
-            "adversarial_litigation", "settlement", "settlement_revenue",
+            "indirect", "indirect_endowment", "mixed", "negotiating",
+            "adversarial", "litigation", "adversarial_litigation",
+            "settlement", "settlement_reported", "settlement_revenue",
             "coercive", "commercial_partnership", "none"
         }
         data = self._load_profile(pub)
@@ -157,7 +158,10 @@ class TestPublicationRelationships:
     @pytest.mark.parametrize("pub", PUBLICATIONS)
     def test_coverage_prediction_is_valid(self, pub):
         """Each relationship must have a valid coverage_prediction."""
-        valid_predictions = {"softer", "neutral", "adversarial", "unknown"}
+        valid_predictions = {
+            "softer", "softer_than_expected", "neutral", "adversarial",
+            "positive_if_deal_confirmed", "unknown"
+        }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]
         for entity, rel in cr.items():

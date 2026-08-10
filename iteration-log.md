@@ -1,4 +1,56 @@
 # MediaScope Iteration Log
+## 2026-08-10 09:00 PT — Type D: Test & Verify — Schema Validation Fixes + Mechanism #24 Gap Resolution
+
+**Rotation:** D (Test & Verify)
+
+### Finding — 5 Schema Validation Failures Fixed, Mechanism #24 Documentation Gap Closed
+
+**Schema failures (5→0):**
+
+Recent Type A/B/C iterations introduced new relationship types (`settlement_reported` for NYT-Anthropic, `indirect_endowment` for MIT TR-Anthropic) and new coverage predictions (`positive_if_deal_confirmed`, `softer_than_expected`) without updating the schema validators in `test_competitor_coverage.py` and `competitor-entities.yaml`. This caused 5 test failures across two files:
+
+1. `test_competitor_coverage.py::test_financial_tie_is_valid[nytimes]` — `settlement_reported` not in valid_types
+2. `test_competitor_coverage.py::test_financial_tie_is_valid[mit-tech-review]` — `indirect_endowment` not in valid_types
+3. `test_competitor_coverage.py::test_coverage_prediction_is_valid[nytimes]` — `positive_if_deal_confirmed` not in valid_predictions
+4. `test_competitor_coverage.py::test_coverage_prediction_is_valid[mit-tech-review]` — `softer_than_expected` not in valid_predictions
+5. `test_financial_relationships.py::test_relationship_types_valid` — `indirect_endowment` not in competitor-entities.yaml relationship_types
+
+**Fixes applied:**
+- `test_competitor_coverage.py`: Added `settlement_reported`, `indirect_endowment` to valid_types; added `softer_than_expected`, `positive_if_deal_confirmed` to valid_predictions
+- `profiles/competitor-entities.yaml`: Added `settlement_reported`, `indirect_endowment` to relationship_types section; added `softer_than_expected`, `positive_if_deal_confirmed` to coverage_predictions section, each with semantic descriptions
+
+**Mechanism #24 documentation gap:**
+
+The 08:00 PT Type D cross-validation covered Mechanisms #22, #23, #25 but skipped #24 (Casey Newton Disclosure-as-Inoculation Paradox). While the test file (`test_casey_newton_cross_entity.py`, 27 tests) existed from the 07:00 PT Type B run, Mechanism #24 was NOT documented in `competitor-coverage-research.yaml`, creating a cross-reference gap.
+
+**Fix:** Added `casey_newton_disclosure_inoculation` entry to competitor-coverage-research.yaml with finding_type, finding_summary (disclosure-as-inoculation paradox, fiancé Anthropic relationship, Claude Code adoption loop, framing asymmetry), test_file reference, test_count, and date_added.
+
+**New cross-validation test file:** `test_type_d_09am_cross_validation_aug10.py` — 18 tests, 8 classes:
+1. TestMechanism24Existence (3 tests): Verifies #24 documented in research profile, test file exists, individual scale
+2. TestMechanismFinancialScaleOrdering (3 tests): #22-#25 financial scale verification
+3. TestSchemaValidatorExpansion (6 tests): Schema type/prediction expansion self-consistency
+4. TestNYTAnthropicSchemaConsistency (2 tests): settlement_reported + conditional prediction
+5. TestMITTRAnthropicSchemaConsistency (2 tests): indirect_endowment + softer_than_expected
+6. TestAmazonLeverageLayerCount (1 test): 7-layer verification
+7. TestMechanismContiguity (1 test): #22-#25 all referenced in test corpus
+
+### Test Results
+- New tests: 18/18 passing
+- Previously-failing tests: 5/5 now passing (0 failures)
+- Structural consistency: 124/124 passing
+- Total: 8,374 tests across 277 files
+
+### Files modified
+- `tests/test_type_d_09am_cross_validation_aug10.py` — 18 tests, 8 classes (new)
+- `tests/test_competitor_coverage.py` — Schema validator expansion
+- `profiles/competitor-entities.yaml` — relationship_types + coverage_predictions expansion
+- `profiles/competitor-coverage-research.yaml` — Mechanism #24 entry added
+- `README.md` — Test count 8,333→8,374, file count 276→277, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8,333→8,374, file count 276→277, new tree entry
+
+### Commit
+[pending]
+
 ## 2026-08-10 08:00 PT — Type C: Financial Incentive Mapping — Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle (Mechanism #25)
 
 **Rotation:** C (Financial Incentive Mapping)
@@ -32365,3 +32417,52 @@ NYT has three independent financial pathways converging to predict Anthropic-pos
 
 ### Commit
 0c167eb — pushed to GitHub
+
+## 2026-08-10 08:00 PT — Type D: Test & Verify — Cross-Validation of Mechanisms #22-#25 + 11-Failure Fix Sprint
+
+**Rotation:** D (Test & Verify)
+
+### Failures Found (11 total, across 5 test files)
+
+**Category 1: HTTP URLs (3 failures)**
+- `competitor-entities.yaml`: entrepreneur.com Anthropic settlement URL was HTTP
+- `competitor-coverage-research.yaml`: techmeme.com Casey Newton URL was HTTP
+- Fixed: both → HTTPS
+
+**Category 2: Amazon layer count desync (3 failures)**
+- `competitor-entities.yaml` had 7 layers (openai_investment added by Mechanism #25)
+- `competitor-coverage-research.yaml` still had 6 layers
+- `test_type_d_7pm_cross_validation_aug6.py` expected 6
+- Fixed: synced research to 7 layers, updated test assertions + overview text
+
+**Category 3: Findings metadata incomplete (3 failures)**
+- `child_safety_litigation_financial_ecosystem`: missing finding_summary, test_file
+- `reuters_jeff_horwitz`: missing finding_summary, date_added
+- `bloomberg_mark_gurman`: missing date_added
+- Fixed: added all missing metadata fields
+
+**Category 4: Infrastructure count desync (2 failures)**
+- README summary table: 8,119/269 (stale) vs actual 8,356/276
+- README/ARCHITECTURE header: 8,333/275 → 8,356/276
+- Fixed: updated both files
+
+### New Test File
+- `test_type_d_08am_cross_validation_aug10.py` — 23 tests, 8 classes
+- Cross-validates Mechanisms #22-25, mechanism ID uniqueness, HTTPS consistency, Amazon layer sync, findings metadata completeness, infrastructure count sync
+
+### Test Results
+- All 11 previously-failing tests: PASSING
+- New cross-validation tests: 23/23 passing
+- Structural consistency: 124/124 passing
+- Combined verification: 299 passed, 1 skipped
+
+### Files modified
+- `profiles/competitor-entities.yaml` — HTTP→HTTPS fix
+- `profiles/competitor-coverage-research.yaml` — openai_investment layer, metadata additions, HTTP→HTTPS fix
+- `tests/test_type_d_7pm_cross_validation_aug6.py` — Amazon layer count 6→7
+- `tests/test_type_d_08am_cross_validation_aug10.py` — 23 tests, 8 classes (new)
+- `README.md` — Test count 8333→8356, file count 275→276, new table entry
+- `docs/ARCHITECTURE.md` — Test count 8333→8356, file count 275→276, new tree entry
+
+### Commit
+0ef6eb9 — pushed to GitHub

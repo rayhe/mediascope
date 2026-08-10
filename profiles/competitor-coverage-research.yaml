@@ -6038,3 +6038,20 @@ cross_publication_findings:
     test_file: tests/test_nyt_anthropic_triple_chain_incentive_aug10.py
     test_count: 27
     date_added: 2026-08-10
+
+  casey_newton_disclosure_inoculation:
+    publication: platformer
+    finding_type: journalist_cross_entity
+    finding_summary: 'Disclosure-as-Inoculation Paradox (Mechanism #24):
+      Casey Newton (Platformer/Hard Fork co-host) fiancé is Anthropic software
+      engineer (started Jan 2025, engaged Feb 2026). His ethics page is best-in-class
+      for independent journalism. But disclosure is entirely self-regulated — no
+      editorial board, no ethics editor, no institutional verification. Meta headlines
+      100% accountability framing ("Meta scam problem," "Zuckerberg 20-year mistake"),
+      Anthropic headlines 100% admiration framing ("Claude Code believer," "rapture
+      over Claude Opus 4.5"). Claude Code personal adoption creates a
+      journalist-as-customer → positive-coverage loop. Disclosure present but
+      operates as inoculation — readers see the warning and lower their guard.'
+    test_file: tests/test_casey_newton_cross_entity.py
+    test_count: 27
+    date_added: 2026-08-10
