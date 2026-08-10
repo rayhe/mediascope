@@ -6055,3 +6055,20 @@ cross_publication_findings:
     test_file: tests/test_casey_newton_cross_entity.py
     test_count: 27
     date_added: 2026-08-10
+  wsj_anthropic_meta_business_viability_asymmetry:
+    publication: wall_street_journal
+    finding_type: competitor_coverage_deep_dive
+    finding_summary: 'Business Viability Framing Asymmetry with Settlement-Incentive
+      Bias (Mechanism #26): WSJ applies deficit/follower language to Meta''s business
+      challenges ("Exposes Its Weak Hand," "lagging behind," "too little, too late")
+      while applying celebration/hero language to Anthropic''s trajectory ("home run,"
+      "New Way to Win"). Meta is profitable ($244B+ rev); Anthropic is unprofitable
+      ($47B ARR, $27B burn). The framing register is INVERSELY correlated with
+      financial health. News Corp''s Bartz v. Anthropic settlement creates a
+      pre-IPO incentive against critical Anthropic business analysis. The
+      "missing article" — no Heard on the Street column analyzing Anthropic''s
+      burn rate, valuation risk, or IPO uncertainty comparable to Meta''s "Weak Hand"
+      — is the structural absence that defines the asymmetry.'
+    test_file: tests/test_wsj_anthropic_meta_business_viability_framing_aug10.py
+    test_count: 46
+    date_added: 2026-08-10

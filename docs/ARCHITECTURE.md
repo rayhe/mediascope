@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 8374 tests across 277 test files (all from real articles)
+├── tests/                       # 8415 tests across 278 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -568,6 +568,7 @@ mediascope/
 │   ├── test_wsj_anthropic_deception_framing_triangle_aug8.py # WSJ Rogue AI Deception Triangle: Three articles, three companies (OpenAI/Anthropic/Meta), three registers (adventure/capability-admiration/adversarial). Only Meta named in headline. Disclosure asymmetry: OpenAI deal disclosed in favorable article, Anthropic/Meta deals omitted in adverse. Beat assignment predetermines frame. 7 classes, 45 tests
 │   ├── test_wsj_rogue_ai_severity_framing_inversion_aug8.py # WSJ Rogue AI Severity-Framing Inversion: Equal ~$50M/yr deals with OpenAI and Meta, inverted framing — OpenAI MORE severe gets "Jurassic Park" adventure, Meta LESS severe gets "drumbeat" adversarial. Barron's counterpoint, cross-publication triangulation. 7 classes, 45 tests
 │   ├── test_wsj_openai_ad_cannibalization_self_demonetization_aug10.py # WSJ × OpenAI Ad Cannibalization — Content Licensee Self-Demonetization Paradox (Mechanism #22): 6-step financial chain from $50M/yr content licensing to ad cannibalization, Paywall Penalty 0% citation data, investigative depth gap not tone gap. 11 classes, 62 tests
+│   ├── test_wsj_anthropic_meta_business_viability_framing_aug10.py # WSJ × Anthropic vs Meta — Business Viability Framing Asymmetry with Settlement-Incentive Bias (Mechanism #26): deficit/follower language for profitable Meta vs celebration/hero for unprofitable Anthropic. Settlement incentive, embedded follower framing, missing critical analysis. 8 classes, 46 tests
 │   ├── test_nyt_anthropic_triple_chain_incentive_aug10.py # NYT × Anthropic Triple-Chain Financial Incentive Structure (Mechanism #23): Three independent pathways — direct settlement (UNVERIFIED), Amazon indirect chain ($53.4B Q2 gain), litigation halo (NYT v. OpenAI). Kevin Roose 0.60 tone delta, rogue AI coverage gap. 7 classes, 27 tests
 │   ├── test_wired_apple_openai_silence_aug7.py # WIRED 28-day silence on Apple v. OpenAI trade secret lawsuit, cross-pub comparison, financial amplification evidence
 │   ├── test_nyt_cade_metz_cross_entity.py # Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing vs Meta adversarial beat reporter assignment

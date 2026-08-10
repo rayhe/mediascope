@@ -138,6 +138,50 @@ competitor_relationships:
       notes: Barron's (financial analysis) vs WSJ (news) frame the SAME Meta incident completely differently. Proves WSJ anti-Meta
         framing is editorial choice, not Murdoch-level directive.
     rogue_ai_framing_tone: -0.45
+    business_viability_framing:
+      mechanism_id: 26
+      finding_type: business_deficit_framing
+      articles:
+      - title: "Meta's Subscription Push Exposes Its Weak Hand in AI"
+        publication: Wall Street Journal (Heard on the Street)
+        date: '2026-06-11'
+        reporter: Asa Fitch
+        tone: -0.65
+        source_url: https://www.wsj.com/tech/ai/metas-subscription-push-exposes-its-weak-hand-in-ai-2fad4680
+        loaded_language:
+        - "exposes its weak hand"
+        - "badly needs it to work"
+        - "chances don't look great"
+        - "how little progress it has made"
+        - "further over its skis"
+        - "one-track business"
+        - "late entrant in a field already crowded"
+        - "struggle to peel people away"
+        - "repeated struggles to improve"
+        - "far-fetched"
+        - "too little, too late"
+        framing: 'Deficit register — 11 distinct loaded phrases in one article,
+          the densest concentration of negative business framing in the WSJ AI
+          corpus. Applied to a company with $244B+ annualized revenue, profitable,
+          cash-generative. The "Weak Hand" headline frames Meta as a losing card
+          player, not a company with 3.5B daily users and $60.8B quarterly revenue.'
+      - title: "Mark Zuckerberg Lays Out New AI Vision in 6,500-Word Essay"
+        publication: Wall Street Journal
+        date: '2026-08-10'
+        reporter: Meghan Bobrowsky
+        tone: -0.25
+        source_url: https://www.wsj.com/tech/ai/mark-zuckerberg-lays-out-new-ai-vision-in-6-500-word-essay-966e9a56
+        embedded_follower_framing:
+        - "Meta is currently lagging behind in the AI race"
+        - "trying to catch up to Anthropic and OpenAI"
+        - "Investors are also getting impatient"
+        - "led to a selloff in Meta's shares"
+        framing: 'Embedded follower register — even when covering Zuckerberg''s
+          OWN policy essay (open models, community investment, $1B fund), the
+          reporter inserts "lagging behind... trying to catch up" in paragraph 5,
+          structurally positioned to undercut the essay''s arguments before
+          readers absorb the substance. The follower framing is editorial
+          insertion, not a Zuckerberg quote or Meta statement.'
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)
@@ -190,6 +234,53 @@ competitor_relationships:
       source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
       notes: Anthropic covered here as co-subject with OpenAI under adventure framing, not as solo subject.
     rogue_ai_framing_tone: -0.15
+    business_viability_framing:
+      mechanism_id: 26
+      finding_type: celebration_framing
+      articles:
+      - title: "The Investors With a New Way to Win in Silicon Valley"
+        publication: Wall Street Journal
+        date: '2026-07-18'
+        reporter: Berber Jin
+        tone: 0.55
+        source_url: https://www.wsj.com/finance/venture-capital-anthropic-spark-yasmin-razavi-93dd6041
+        celebration_language:
+        - "home run"
+        - "new way to win"
+        - "elevated her and Spark's reputation"
+        - "most money it has ever raised"
+        framing: 'Hero/celebration register — profiles Spark Capital''s early
+          Anthropic bet ($75M → $7B, 93x return) as a triumph narrative.
+          Zero discussion of Anthropic burn rate ($27B projected 2026),
+          profitability challenges, export ban risk, or IPO valuation risk.
+          Frames Anthropic as a WEALTH-CREATION vehicle, not a business
+          with material risks. No comparable WSJ hero-investor profile
+          exists for early Meta investors despite Meta''s superior long-term
+          financial performance.'
+      export_ban_framing:
+        articles_count: 3
+        narrative_arc: crisis_quest_resolution
+        framing: 'Protagonist/victim register across three articles (Jun-Jul 2026).
+          Anthropic framed as responsible compliance protagonist ("shut off
+          access to everyone to comply"), then active hero ("dispatches
+          staff to D.C., racing to resolve"), then vindicated ("rolls back
+          ban"). The three articles form a classical hero''s journey arc.
+          No comparable positive narrative arc exists for Meta''s regulatory
+          encounters, which use accountability/blame register.'
+      settlement_incentive_mechanism:
+        description: 'News Corp expects settlement revenue from the $1.5B Bartz v.
+          Anthropic class-action. Settlement recovery DEPENDS on Anthropic''s
+          solvency and financial health. A successful IPO at $965B+ guarantees
+          payment (settlement is 0.16% of valuation — trivial). Critical WSJ
+          business coverage of Anthropic burn rate, valuation risk, or IPO
+          uncertainty could impair Anthropic''s IPO and settlement payment.
+          This creates a temporary but acute pre-IPO incentive against
+          critical Anthropic business analysis — structurally different from
+          the steady-state licensing incentive with Meta/OpenAI.'
+        legitimate_factors:
+        - Chinese walls between editorial and business operations
+        - Thomson statement is to shareholders, not to the newsroom
+        - The incentive is probabilistic/structural, not proven editorial direction
     disclosure_asymmetry:
       openai_article_disclosed: true
       anthropic_article_disclosed: false
