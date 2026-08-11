@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 8845 tests across 290 test files (all from real articles)
+├── tests/                       # 8870 tests across 291 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -672,6 +672,7 @@ mediascope/
 │   ├── test_type_d_09am_cross_validation_aug10.py # Type D cross-validation (Aug 10, 09:00 PT): Schema validator fixes (5→0), Mechanism #24 gap, relationship_type/coverage_prediction expansion, NYT/MITTR Anthropic consistency, Amazon 7-layer, Mechanisms #22-#25 contiguity. 8 classes, 18 tests
 │   ├── test_type_d_1pm_cross_validation_aug10.py # Type D cross-validation (Aug 10, 13:00 PT): Mechanism #26-#28 cross-validation, mechanism_id consistency fixes (#23/#24/#26), test_count fix (#28 27→32), README/ARCHITECTURE count drift fix (8480→8625, 280→281), schema integrity. 8 classes, 43 tests
 │   ├── test_type_d_6pm_cross_validation_aug10.py # Type D cross-validation (Aug 10, 18:00 PT): Mechanisms #30-#32 — fixed mechanism_id collision (Georgia Wells #30→#32), genre hypothesis convergence, positive control isolation, three ownership structures, contiguity #29-#32, causal chain non-overlap. 8 classes, 36 tests
+│   ├── test_type_d_11pm_cross_validation_aug10.py # Type D end-of-day cross-validation (Aug 10, 23:00 PT): Mechanisms #33-#36 — mechanism_id uniqueness/contiguity, facial recognition parity, rogue AI #34↔#29 coherence, Advance aggregate, pre-IPO convergence three chains, infrastructure sync (9005/291). 8 classes, 25 tests
 │   ├── test_openai_meta_facial_recognition_parity_aug10.py # Mechanism #33: Cross-Publication Facial Recognition Privacy Parity Test — OpenAI PLANNED facial recognition (always-on, cameras+mics) gets aspirational framing vs Meta DORMANT NameTag code gets alarm/investigative coverage. Financial relationships predict framing direction. 8 classes, 60 tests
 │   ├── test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py # Mechanism #34: WIRED Institutional Rogue AI Coverage Volume Asymmetry — Summer of Rogue AI natural experiment, 3:0 article ratio (OpenAI+Anthropic vs Meta) despite Meta least severe. Extends Will Knight + Guardian Mechanism #29. 9 classes, 42 tests
 │   ├── test_advance_conde_nast_aggregate_ai_dependency_aug10.py # Mechanism #35: Advance/Condé Nast Aggregate AI Revenue Dependency — The Omni-Deal Publisher. 6 AI revenue channels across 5 companies (OpenAI, Microsoft, Amazon, Perplexity, Reddit/Google, Apple News+), Meta excluded from all. ~$7.2B total exposure. 8 classes, ~35 tests
