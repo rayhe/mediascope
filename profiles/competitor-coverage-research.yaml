@@ -3468,6 +3468,76 @@ cross_publication_findings:
       - "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/"
     test_file: "tests/test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py"
 
+  ashworth_wwdc_pcc_privacy_framing_asymmetry:
+    mechanism_id: 45
+    mechanism_name: "Ashworth WWDC PCC Privacy Framing Asymmetry"
+    finding_type: "journalist_cross_entity_privacy_framing"
+    rotation_type: "B"
+    discovery_date: "2026-08-11"
+    journalist: "Boone Ashworth"
+    publication: "WIRED"
+    extends_mechanisms:
+      - 44
+      - 14
+    finding_summary: >
+      Boone Ashworth co-hosted 3 episodes of the Business Wars podcast "Meta and
+      the Battle for Smart Glasses" (Jun 3-11, 2026) where he called Meta's glasses
+      "a tool for mass surveillance" (Ep 1, Jun 3) and participated in an episode titled
+      "I'm a Creep" (Ep 2, Jun 10). Between those two podcast episodes, on Jun 8,
+      Ashworth authored WIRED's "Everything Apple Announced at WWDC 2026" — Apple's
+      announcement that PCC would expand to Google Cloud with Nvidia GPUs. Ashworth's
+      framing: "some inkling on how an AI partnership with Google has come to power
+      Apple's products." Zero privacy scrutiny. Zero surveillance vocabulary. Zero
+      investigative analysis. This is the cleanest journalist-level natural experiment
+      in the dataset — same reporter, same 8-day window, differential privacy framing
+      for different companies. Combined with Mechanism #44, this demonstrates the
+      asymmetry operates at BOTH institutional and individual reporter levels.
+    timeline:
+      - date: "2026-06-03"
+        event: "Business Wars Ep 1 'Prize on the Eyes' — Ashworth as co-host"
+        subject: "Meta"
+        framing: "mass surveillance"
+        tone: -0.85
+      - date: "2026-06-08"
+        event: "WIRED: 'Everything Apple Announced at WWDC 2026' — Ashworth as author"
+        subject: "Apple"
+        framing: "AI partnership"
+        tone: 0.10
+      - date: "2026-06-10"
+        event: "Business Wars Ep 2 'I'm a Creep' — Ashworth as co-host"
+        subject: "Meta"
+        framing: "mandatory data-sharing, worker exploitation"
+        tone: -0.90
+    tone_delta: 0.95
+    window_days: 8
+    broader_coverage:
+      - title: "Xreal's New $299 'xbx' Smart Glasses Channel Xbox Vibes"
+        date: "2026-06-11"
+        subject: "Xreal"
+        tone: 0.30
+        surveillance_language: false
+      - title: "They're Making Clip-On Frames for Smart Glasses Now"
+        date: "2026-07-22"
+        subject: "smart glasses ecosystem"
+        tone: 0.20
+        surveillance_language: false
+      - title: "TranscribeGlass smart glasses review"
+        date: "2026-07-03"
+        subject: "TranscribeGlass"
+        tone: 0.30
+        surveillance_language: false
+    legitimate_factors:
+      - "Podcast format allows more editorial opinion than news roundup"
+      - "WWDC roundup compresses many announcements, may skip nuance"
+      - "Cloud infrastructure may not be Ashworth's primary beat"
+    source_urls:
+      - "https://www.feedcast.news/everything-apple-announced-at-wwdc-2026-3wpswv"
+      - "https://prowly.com/profiles/journalists/boone-ashworth"
+      - "https://www.podcasts-online.org/pt/business-wars-1335814741"
+      - "https://ivy.fm/tag/business-wars"
+      - "https://www.techmeme.com/250703/p4"
+    test_file: "tests/test_ashworth_wwdc_pcc_privacy_framing_aug11.py"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

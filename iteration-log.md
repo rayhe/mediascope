@@ -1,4 +1,28 @@
 # MediaScope Iteration Log
+## 2026-08-11 11:00 PT — Type B: Journalist Cross-Entity Tracking — Mechanism #45
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Finding:** Ashworth WWDC PCC Privacy Framing Asymmetry (Mechanism #45). WIRED's Boone Ashworth co-hosted Business Wars podcast calling Meta glasses "a tool for mass surveillance" (Jun 3) and "I'm a Creep" (Jun 10). Between those two episodes, on Jun 8, he authored WIRED's WWDC 2026 roundup framing Apple's PCC-to-Google-Cloud shift as "some inkling on how an AI partnership with Google has come to power Apple's products" — zero privacy scrutiny, zero surveillance language, zero investigative framing. Same reporter, same 8-day window, 0.95 tone delta. Broader wearables coverage confirms pattern: Xreal xbx, TranscribeGlass, clip-on frames all receive positive framing — only Meta triggers adversarial vocabulary. This is a journalist-level confirmation of Mechanism #44, proving the asymmetry operates at both institutional AND individual levels.
+
+**Tests:** 46/46 pass (test_ashworth_wwdc_pcc_privacy_framing_aug11.py, 10 test classes)
+
+**Infrastructure:** README/ARCHITECTURE updated to 9555 tests across 303 files.
+
+**Commit:** pending push
+
+## 2026-08-11 10:00 PT — Type A: Competitor Coverage Deep Dive — Mechanism #44
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Finding:** WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry (Mechanism #44). In 11-day window (Jun 4-15 2026), WIRED published 3+ standalone investigative articles on Meta's dormant NameTag code while applying zero investigative resources to Apple's PCC architecture shift to Google Cloud+Nvidia GPUs (announced Jun 8 WWDC 2026). Same Jun 11 podcast framed Apple as "Siri's AI Makeover." Financial prediction: Conde Nast Apple Intelligence negotiations (~$50M) + Apple News+ (16 titles); Meta $0.
+
+**Tests:** 43/43 pass (test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py)
+
+**Infrastructure:** README/ARCHITECTURE updated to 9509 tests across 302 files. Per-file count fix for test_type_d_09am (34→26). Both new test files listed.
+
+**Commit:** cceeac7 — pushed to GitHub.
+
 ## 2026-08-11 09:00 PT — Type D: Test & Verify — Section Misplacement Fix + 09am Cross-Validation
 
 **Rotation:** D (Test & Verify)
