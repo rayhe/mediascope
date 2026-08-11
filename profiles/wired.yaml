@@ -4360,6 +4360,81 @@ google_io_2026_test_metadata:
     - TestCondeNastFinancialCorrelation (5 tests)
 
 
+chokkattu_samsung_coverage_selection_gap:
+  mechanism_id: 39
+  finding: "Samsung Coverage Selection Gap — Zero Articles Despite Hardware Parity"
+  date_analyzed: "2026-08-11"
+  journalist: "Julian Chokkattu"
+  extends_mechanism: 30
+  summary: |
+    Chokkattu published 3+ Meta smart glasses articles in the Jun–Jul 2026 window
+    (Business Wars podcast, Meta Starfire/Adventurer/Fury launch, subscription
+    pricing editorial) but published ZERO standalone articles about Samsung Galaxy
+    Glasses despite the major Unpacked announcement on Jul 22, 2026. Samsung's
+    glasses use the identical Snapdragon AR1 Gen 1 chip, have a 12MP camera,
+    Google Gemini AI integration, and the same LED anti-tamper privacy features.
+    This extends Mechanism #30 (Temporal Framing Oscillation) from a coverage
+    FRAMING asymmetry to a coverage SELECTION asymmetry: the same journalist
+    who oscillates between adversarial and neutral on Meta depending on genre
+    doesn't cover Samsung's identical product at all.
+  meta_articles_in_window:
+    - date: "2026-06-03"
+      title: "Business Wars S1E1: Prize on the Eyes"
+      type: podcast
+    - date: "2026-06-10"
+      title: "Business Wars S1E2: I'm a Creep"
+      type: podcast
+    - date: "2026-06-23"
+      title: "Meta Starfire/Adventurer/Fury launch"
+      type: product_article
+    - date: "2026-07-02"
+      title: "Meta Is Charging a Subscription for Smart Glasses Features"
+      type: editorial
+  samsung_articles_in_window: 0
+  samsung_event:
+    name: "Samsung Galaxy Unpacked"
+    date: "2026-07-22"
+    location: "London"
+    product: "Samsung Galaxy Glasses (Intelligent Eyewear)"
+    hardware_parity:
+      chip: "Same Snapdragon AR1 Gen 1"
+      camera: "12MP with autofocus (identical)"
+      ai: "Google Gemini (vs Meta AI)"
+      privacy_led: "LED + obstruction detection (identical to Meta)"
+      weight: "~50g (comparable)"
+  other_publications_covering_samsung_glasses:
+    - Android Police
+    - 9to5Google
+    - Android Authority
+    - Samsung Newsroom
+    - Gadgets360
+    - GSMArena
+    - SamMobile
+    - Wareable
+    - TechCabal
+    - Fast Company
+  legitimate_factors:
+    - factor: "Samsung Unpacked was in London — WIRED US may not have sent staff"
+      strength: moderate
+    - factor: "Samsung glasses won't ship until fall 2026 — preview not review"
+      strength: moderate
+    - factor: "WIRED may cover Samsung glasses in a newsletter or roundup not indexed"
+      strength: weak
+    - factor: "Samsung announcement shared stage with foldable phones and watches"
+      strength: weak
+    - factor: "Chokkattu may cover Samsung when they ship and are reviewable"
+      strength: moderate
+    - factor: "WIRED may have assigned a different reporter to Samsung coverage"
+      strength: weak
+  counterpoints:
+    - "WIRED sent 5 reporters to Google I/O 2026 (May 19) for Google's camera glasses — Samsung Unpacked should be equally staffable"
+    - "Chokkattu covers ALL other major smart glasses launches (Meta, Google I/O, Snap) — Samsung is the notable absence"
+    - "Samsung glasses are the CLOSEST competitor to Meta Ray-Bans in specs, price, and form factor — highest news-value competitor for a smart glasses reporter"
+    - "The selection gap means WIRED's smart glasses narrative focuses exclusively on Meta as the privacy threat without acknowledging identical Samsung/Google hardware"
+  test_file: "tests/test_chokkattu_samsung_coverage_selection_gap_aug11.py"
+  test_count: 42
+
+
 steven_levy:
   date_analyzed: "2026-08-09"
   role: "Editor at Large"

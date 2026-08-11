@@ -6603,3 +6603,37 @@ cross_publication_findings:
     test_file: tests/test_anthropic_meta_cloud_deal_coverage_selection_aug11.py
     test_count: 60
     date_added: 2026-08-11
+
+  chokkattu_samsung_coverage_selection_gap:
+    mechanism_id: 39
+    finding_type: journalist_coverage_selection
+    mechanism_name: "Chokkattu Samsung Coverage Selection Gap"
+    finding_summary: |
+      WIRED's Julian Chokkattu published 3+ Meta smart glasses articles in Jun-Jul
+      2026 (Business Wars podcast, Meta Starfire launch, subscription pricing editorial)
+      but ZERO standalone articles about Samsung Galaxy Glasses despite the major
+      Unpacked announcement on Jul 22, 2026. Samsung's glasses use the identical
+      Snapdragon AR1 Gen 1 chip, 12MP camera, Google Gemini AI, and LED anti-tamper
+      privacy features — functionally indistinguishable from Meta Ray-Bans.
+
+      Extends Mechanism #30 (Temporal Framing Oscillation) from a FRAMING asymmetry
+      to a SELECTION asymmetry. 20+ other publications covered Samsung's glasses.
+      WIRED sent 5 reporters to Google I/O 2026 (May 19) for Google's camera glasses
+      but appears absent from Samsung Unpacked coverage.
+
+      6 legitimate factors documented: London venue, pre-shipping product, possible
+      newsletter coverage, shared stage, future review timing, reporter assignment.
+    entities: [Meta, Samsung, Google, WIRED]
+    extends_mechanism: 30
+    distinction_from:
+      - mechanism_id: 30
+        distinction: "#30 tracks framing oscillation across genres; #39 tracks coverage presence vs absence across competitors"
+      - mechanism_id: 38
+        distinction: "#38 is publication-level coverage selection for deals; #39 is journalist-level coverage selection for product launches"
+    source_urls:
+      - "https://news.samsung.com/us/samsung-galaxy-ecosystem-everyday-eyewear"
+      - "https://biztoc.com/x/65c250c5f0d223b2"
+      - "https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/"
+    test_file: tests/test_chokkattu_samsung_coverage_selection_gap_aug11.py
+    test_count: 42
+    date_added: 2026-08-11
