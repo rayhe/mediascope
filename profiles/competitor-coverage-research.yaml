@@ -3813,6 +3813,146 @@ cross_publication_findings:
     test_count: 40
     test_file: "tests/test_meta_ad_competitor_structural_antagonism_aug11.py"
 
+  wired_openai_chatgpt_ad_coverage_selection_gap:
+    mechanism_id: 48
+    mechanism_name: "WIRED OpenAI ChatGPT Ad Business Coverage Selection Gap"
+    finding_type: "coverage_selection_gap"
+    rotation_type: "A"
+    discovery_date: "2026-08-11"
+    finding_summary: >
+      WIRED (Conde Nast, OpenAI content deal partner since Aug 2024) has ZERO
+      standalone articles found covering OpenAI's ChatGPT advertising business
+      launch and growth (Jan-Aug 2026), while 20+ other outlets (Reuters, CNN,
+      The Verge, TechCrunch, AdWeek, Engadget, Android Police, etc.) covered it
+      extensively. OpenAI's ChatGPT ad business is one of the most significant AI
+      business model shifts of 2026: ads launched Feb 2026, hit $100M annualized
+      revenue in 6 weeks (Reuters), 600+ advertisers by May, and projected $2.5B
+      for 2026. The ad business uses conversation data for targeting (more intimate
+      than Meta's social graph data), is led by two former Meta executives (Fidji
+      Simo as CEO of Applications, David Dugan as VP/Head of Global Ad Solutions),
+      and directly competes with publisher advertising revenue. ChatGPT uninstalls
+      jumped 132% YoY in April (Sensor Tower), Claude downloads surged 11x, and
+      2.5M users pledged boycott — user backlash of a scale WIRED would normally
+      cover extensively. Financial prediction: Conde Nast OpenAI content licensing
+      deal predicts coverage selection gap. Meta has ZERO Conde Nast content
+      licensing relationship, predicting no editorial constraint on adversarial
+      coverage of Meta's ad practices.
+    ad_business_timeline:
+      - date: "2026-01-16"
+        event: "OpenAI announced ads coming to ChatGPT free and Go tiers"
+      - date: "2026-02-09"
+        event: "Ads officially launched in ChatGPT"
+      - date: "2026-03-26"
+        event: "$100M annualized ad revenue reached in 6 weeks (Reuters)"
+      - date: "2026-05"
+        event: "Self-serve Ads Manager launched, 600+ advertisers enrolled"
+      - date: "2026-06"
+        event: "OpenAI presented at Cannes Lions, 50% drop in ad dismissal rate"
+    conversation_data_targeting:
+      methods:
+        - "Keywords in the conversation used for ad targeting"
+        - "Chat history and past interactions used for ad relevance"
+        - "Browsing metadata collected for ad personalization"
+      meta_comparison: >
+        OpenAI's conversation-context ad targeting uses the content of user
+        conversations — arguably more intimate than Meta's social graph and
+        behavioral targeting. Meta targets based on profile data, activity,
+        and third-party signals; OpenAI targets based on what users actively
+        say in private conversation. WIRED has extensively covered Meta's ad
+        targeting as 'surveillance capitalism' but has not scrutinized OpenAI's
+        conversation-level targeting with equivalent vocabulary.
+      opt_out: "Users can disable ad personalization, but conversation-context ads remain"
+      source: "Gadgets360 reporting on ChatGPT ad targeting methodology"
+    former_meta_executives:
+      - name: "Fidji Simo"
+        openai_role: "CEO of Applications"
+        meta_role: "Former Meta VP who oversaw Meta's advertising business"
+        meta_contrast_quote: "We will not optimize for time spent in ChatGPT"
+        source: "TechXplore interview"
+      - name: "David Dugan"
+        openai_role: "VP/Head of Global Ad Solutions"
+        meta_role: "Former Meta ads executive"
+        hired_date: "2026-03"
+        source: "Industry reporting on OpenAI ad team hiring"
+    coverage_comparison_matrix:
+      - outlet: "Reuters"
+        standalone_articles: 3
+        tone: "factual"
+      - outlet: "CNN"
+        standalone_articles: 1
+        tone: "factual"
+      - outlet: "The Verge"
+        standalone_articles: 2
+        tone: "factual, includes Decoder podcast exclusive"
+      - outlet: "TechCrunch"
+        standalone_articles: 1
+        tone: "factual"
+      - outlet: "AdWeek"
+        standalone_articles: 3
+        tone: "industry-focused"
+      - outlet: "Engadget"
+        standalone_articles: 1
+        tone: "factual"
+      - outlet: "Android Police"
+        standalone_articles: 1
+        tone: "consumer-focused"
+      - outlet: "WIRED"
+        standalone_articles: 0
+        tone: "N/A — no standalone coverage found"
+    wired_meta_ad_vocabulary:
+      adversarial_terms:
+        - "surveillance capitalism"
+        - "tracking"
+        - "behavioral targeting"
+        - "data harvesting"
+        - "spying on users"
+        - "privacy invasion"
+      openai_contrast: >
+        WIRED extensively uses adversarial vocabulary (surveillance, tracking,
+        spying) when covering Meta's ad practices but has produced zero standalone
+        articles examining OpenAI's arguably more intimate conversation-level
+        ad targeting. The vocabulary asymmetry is impossible to measure directly
+        because the coverage itself does not exist — which is the finding.
+    financial_prediction:
+      conde_nast_openai_deal: "Content licensing deal since Aug 2024"
+      conde_nast_apple_negotiations: "Apple Intelligence negotiations (~$50M)"
+      conde_nast_uk_ad_revenue_2023: "£200.5M advertising revenue (FY2023, declining)"
+      meta_conde_nast_relationship: "ZERO content licensing deals"
+      openai_ad_revenue_2026_projected: "$2.5B"
+      openai_ad_revenue_2030_projected: "$100B"
+      prediction: >
+        Conde Nast's OpenAI content licensing deal creates editorial constraint
+        on adversarial coverage of OpenAI's ad business. Meta's zero financial
+        relationship with Conde Nast removes any constraint on adversarial
+        coverage. OpenAI's ad business ($2.5B projected 2026) directly competes
+        with the same digital advertising budgets that publishers including
+        Conde Nast depend on — yet the competitive threat goes uncovered.
+    user_backlash_data:
+      chatgpt_uninstalls_yoy_april_pct: 132
+      chatgpt_uninstalls_yoy_march_pct: 413
+      claude_download_surge_multiple: "11x"
+      users_pledged_boycott: "2.5M"
+      ad_penetration_late_april_pct: 14
+      ad_penetration_march_pct: 1
+      source: "Sensor Tower data cited by The Verge"
+      wired_coverage: "No standalone WIRED coverage of ChatGPT user backlash found"
+    legitimate_factors:
+      - "WIRED may have covered the ChatGPT ad launch in subscriber-only newsletters not indexed by search engines"
+      - "WIRED may have bundled ChatGPT ad coverage into a broader AI business roundup rather than a standalone article"
+      - "OpenAI's ad business launch is an 'industry/business' story — WIRED's editorial focus skews toward consumer tech and product reviews"
+      - "WIRED's editorial priorities may have been on more reader-relevant stories during the same period"
+      - "The Verge's Decoder podcast secured the exclusive Nick Turley interview — competitive scoop factor may have reduced WIRED's incentive"
+      - "Search index gaps may miss existing WIRED coverage behind paywalls or in different content formats"
+      - "WIRED's advertising team may have considered covering OpenAI ads a conflict of interest given the Conde Nast deal, leading to editorial self-censorship as a principled choice"
+    source_urls:
+      - "https://www.reuters.com/technology/artificial-intelligence/openai-reaches-100-million-annualized-ad-revenue-weeks-after-launch-sources-say-2026-03-26/"
+      - "https://www.theverge.com/news/653614/chatgpt-uninstalls-spike-openai-ads-pentagon"
+      - "https://gadgets360.com/ai/news/chatgpt-ads-openai-conversation-data-targeting-8175432"
+      - "https://www.adweek.com/programmatic/openai-chatgpt-ads-self-serve-manager-600-advertisers/"
+      - "https://techxplore.com/news/2026-05-fidji-simo-openai-meta-time-spent.html"
+    test_count: 49
+    test_file: "tests/test_wired_openai_ad_coverage_selection_gap_aug11.py"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
