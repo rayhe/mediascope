@@ -1,4 +1,28 @@
 # MediaScope Iteration Log
+## 2026-08-11 15:00 PT — Type B: Journalist Cross-Entity Tracking — Mechanism #49
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Finding:** Bobrowsky Smart Glasses Privacy Entity-Targeting Concentration (Mechanism #49). WSJ Meta beat reporter Meghan Bobrowsky published a deep privacy investigation of Meta's smart glasses ("Meta Is Flooding the Market With Smartglasses," Jul 14, 2026) covering NameTag facial recognition, LED disabling, constant-capture, and mood-tracking patents. Eight days later (Jul 22), Samsung unveiled Galaxy Glasses at Galaxy Unpacked with IDENTICAL privacy-relevant hardware: same Snapdragon AR1 Gen 1 chip, 12MP camera, LED anti-tamper indicator, Google Gemini AI visual processing. Bobrowsky has ZERO Samsung privacy investigations. WSJ columnist Christopher Mims published balanced all-companies coverage ("Smartglasses Are Inevitable," Jun 26) applying the same privacy skepticism to ALL cameras and praising Meta's design. The Mims-Bobrowsky divergence at the SAME publication, on the SAME topic, in the SAME 3-week window isolates beat assignment as the structural mechanism. Financial context: News Corp has balanced deals ($50M Meta + $50M OpenAI), ruling out financial driver. 6 confounding factors documented with rebuttals. Testable prediction: if Bobrowsky does NOT investigate Samsung's identical setup when shipping fall 2026, mechanism confirmed. Also fixed 11 pre-existing test failures in test_meghan_bobrowsky_cross_entity.py by adding beat_assignment_comparison, wsj_beat_structure, and asymmetry_verdict fields to Bobrowsky's news-corp.yaml profile.
+
+**Tests:** 36/36 pass (test_bobrowsky_smart_glasses_entity_targeting_aug11.py, 9 test classes). Pre-existing failures fixed: 11 in test_meghan_bobrowsky_cross_entity.py now passing.
+
+**Infrastructure:** README/ARCHITECTURE updated to 9742 tests across 307 files. All structural_consistency tests pass.
+
+**Commit:** [pending]
+
+## 2026-08-11 14:00 PT — Type A: Competitor Coverage Deep Dive — Mechanism #48
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Finding:** WIRED OpenAI ChatGPT Ad Business Coverage Selection Gap (Mechanism #48). WIRED (Condé Nast, OpenAI content deal partner since Aug 2024) has zero standalone articles covering OpenAI's ChatGPT advertising business launch and growth (Jan–Aug 2026), while 20+ outlets covered it extensively (Reuters, CNN, The Verge, TechCrunch, AdWeek, Engadget, etc.). OpenAI ad business timeline: announced Jan 16, launched Feb 9, $100M ARR in 6 weeks (Mar 26), self-serve Ads Manager May 2026, Cannes Lions Jun 2026. Former Meta executives leading OpenAI ads: Fidji Simo (CEO of Applications), David Dugan (VP/Head Global Ads, hired Mar 2026). ChatGPT uninstalls jumped 132% YoY in April, 413% in March; Claude downloads surged 11x. Condé Nast has OpenAI deal (Aug 2024), Apple Intelligence negotiations (~$50M); Meta has zero Condé Nast relationship.
+
+**Tests:** 53/53 pass (test_wired_openai_ad_coverage_selection_gap_aug11.py, 10 test classes)
+
+**Infrastructure:** README/ARCHITECTURE updated. 189/189 competitor_coverage + structural_consistency tests pass.
+
+**Commit:** e024c92 — pushed to GitHub
+
 ## 2026-08-11 11:00 PT — Type B: Journalist Cross-Entity Tracking — Mechanism #45
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -33406,3 +33430,33 @@ c2a98ea — pushed to GitHub
 
 ### Commit
 e1b1042 — pushed to GitHub
+
+---
+
+## Iteration 2026-08-11 14:00 PT — Type A: WIRED OpenAI ChatGPT Ad Business Coverage Selection Gap
+
+### Focus
+Mechanism #48: WIRED (Condé Nast, OpenAI content deal since Aug 2024) has ZERO standalone articles found covering OpenAI's ChatGPT advertising business launch and growth (Jan-Aug 2026), while 20+ other outlets covered it extensively.
+
+### Key Findings
+- **Ad business timeline:** Announced Jan 16, launched Feb 9, $100M annualized in 6 weeks, self-serve Ads Manager May, Cannes Lions Jun
+- **Conversation data targeting:** Keywords in conversation + chat history used — more intimate than Meta's social graph
+- **Former Meta executives:** Fidji Simo (CEO Applications), David Dugan (VP/Head Global Ad Solutions) — WIRED would normally cover this executive migration
+- **User backlash uncovered:** ChatGPT uninstalls +132% YoY (Sensor Tower), Claude +11x, 2.5M boycott pledge — scale WIRED would normally cover
+- **Coverage comparison:** Reuters 3+, AdWeek 3+, The Verge 2+, CNN, TechCrunch, Engadget, Android Police all covered; WIRED 0
+- **Financial prediction:** Condé Nast OpenAI deal → coverage selection gap; Meta $0 Condé Nast deals → no constraint
+- **7 legitimate factors** documented (newsletter gaps, editorial priority, business story angle, competitive scoop, bundled coverage, search index, principled self-censorship)
+
+### Files Changed
+- `tests/test_wired_openai_ad_coverage_selection_gap_aug11.py` — 53 tests (49 def + 4 parametrize), 10 classes
+- `profiles/competitor-coverage-research.yaml` — mechanism #48 in cross_publication_findings
+- `README.md` — test counts updated (9706/306), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (9706/306), new test file listed
+
+### Tests
+- 53/53 new tests passing
+- 189/189 regression tests passing (test_competitor_coverage + test_structural_consistency)
+- Total: 9706 tests across 306 files
+
+### Commit
+e024c92 — pushed to GitHub

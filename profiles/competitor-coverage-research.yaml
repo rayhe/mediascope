@@ -3953,6 +3953,104 @@ cross_publication_findings:
     test_count: 49
     test_file: "tests/test_wired_openai_ad_coverage_selection_gap_aug11.py"
 
+  bobrowsky_smart_glasses_privacy_entity_targeting:
+    mechanism_id: 49
+    mechanism_name: "Bobrowsky Smart Glasses Privacy Entity-Targeting Concentration"
+    finding_type: "beat_assignment_entity_targeting"
+    rotation_type: "B"
+    discovery_date: "2026-08-11"
+    journalist: "Meghan Bobrowsky"
+    publication: "Wall Street Journal (News Corp)"
+    finding_summary: >
+      WSJ Meta beat reporter Meghan Bobrowsky published "Meta Is Flooding the
+      Market With Smartglasses. Privacy Advocates Are Up in Arms" (Jul 14, 2026)
+      — a deep privacy investigation of Meta's NameTag facial recognition,
+      always-on capture, LED disabling, and mood-tracking patents. Eight days
+      later (Jul 22), Samsung unveiled Galaxy Glasses at Galaxy Unpacked with
+      IDENTICAL privacy-relevant hardware: same Snapdragon AR1 Gen 1 chip,
+      12MP camera, LED recording indicator, and AI visual processing (Google
+      Gemini analyzing surroundings). Samsung's glasses implement the same LED
+      anti-tamper approach — "recording is disabled if the indicator is
+      obscured" (Wikipedia). Bobrowsky has ZERO privacy investigations of
+      Samsung/Google Galaxy Glasses despite identical hardware capabilities.
+      In the same 3-week window (Jun 26), WSJ COLUMNIST Christopher Mims
+      published "Smartglasses Are Inevitable" covering ALL companies (Meta,
+      Samsung, Google, Snap, Apple, Xreal) with consistent privacy framing
+      and praised Meta's design. The Mims-Bobrowsky divergence on the same
+      topic at the same publication isolates BEAT ASSIGNMENT as the mechanism:
+      Bobrowsky (Meta beat) channels privacy investigation exclusively toward
+      Meta; Mims (tech columnist, no beat assignment) applies equal scrutiny
+      across all companies. Financial context: News Corp has BALANCED deals
+      ($50M Meta + $50M OpenAI), so the asymmetry is NOT driven by financial
+      incentives — it is STRUCTURAL, arising from how beat assignments
+      concentrate investigative attention on a single company.
+    key_finding: "Beat assignment concentrates cross-cutting privacy investigation on assigned entity"
+    mechanism: "beat_assignment_entity_targeting_concentration"
+    samsung_hardware_parity:
+      chip: "Snapdragon AR1 Gen 1 (identical to Meta Ray-Ban)"
+      camera: "12MP (identical to Meta Ray-Ban Gen 2)"
+      led_indicator: "Front-facing LED indicates recording; disabled if obscured"
+      ai_processing: "Google Gemini analyzes surroundings via camera feed"
+      led_source_url: "https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses"
+    bobrowsky_meta_article:
+      title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
+      date: "2026-07-14"
+      url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
+      tone: -0.55
+      investigation_topics:
+        - "NameTag facial recognition"
+        - "LED disabling/stealth recording"
+        - "Constant audio/visual capture feature"
+        - "Mood-tracking patent application"
+        - "ACLU coalition letter (70+ organizations)"
+        - "New York court smartglasses ban"
+      loaded_language:
+        - "flooding the market"
+        - "privacy lightning rod"
+        - "privacy advocates are up in arms"
+    mims_balanced_article:
+      title: "Smartglasses Are Inevitable. But What—or Who—Are They For?"
+      date: "2026-06-26"
+      url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+      tone: -0.05
+      entities_covered:
+        - "Meta (praised for design: 'done a good job keeping glasses normal-looking')"
+        - "Samsung/Google Galaxy Glasses"
+        - "Snap Specs"
+        - "Apple (reportedly working on glasses)"
+        - "Xreal (Google-powered Aura)"
+        - "Qualcomm (chip supplier)"
+      privacy_framing: "Applied equally to ALL camera glasses: 'why should we be OK with everyone we meet pointing internet-connected cameras at us?'"
+    bobrowsky_samsung_coverage: "ZERO articles investigating Samsung Galaxy Glasses privacy implications"
+    tone_delta_bobrowsky_mims: 0.50
+    confounding_factors:
+      - "Bobrowsky's article predates Samsung Unpacked by 8 days — she couldn't cover Samsung's announcement"
+      - "Beat reporters are supposed to go deep on their company, not spread thin across competitors"
+      - "Meta's NameTag is a genuine privacy concern with real facial recognition capability"
+      - "Meta has 80%+ market share, making it the natural target for market-structure accountability"
+      - "Samsung hasn't shipped its glasses yet; Meta has 7M+ pairs in the market creating actual privacy impacts"
+      - "WSJ editorial independence culture may mean Bobrowsky's choices are purely journalistic, not influenced by ownership"
+    rebuttal_to_confounds: >
+      All confounding factors explain WHY the asymmetry exists, but don't
+      negate that it exists. The mechanism is structural, not individual:
+      beat assignment channels privacy investigation onto one company even
+      when multiple companies build identical privacy-relevant hardware.
+      The Mims control article demonstrates that a WSJ writer WITHOUT a
+      beat assignment naturally covers all companies equally on the same
+      topic. The prediction: as Samsung's glasses ship in fall 2026, if
+      Bobrowsky does NOT investigate Samsung's identical LED/camera/AI
+      setup with equivalent depth, the structural mechanism is confirmed.
+      If she does, the confounding factors adequately explain the timing gap.
+    source_urls:
+      - "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
+      - "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+      - "https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses"
+      - "https://news.samsung.com/us/samsung-galaxy-ecosystem-everyday-eyewear"
+      - "https://talkingbiznews.com/media-news/wsj-taps-bobrowsky-to-cover-meta/"
+      - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+    test_count: 42
+    test_file: "tests/test_bobrowsky_smart_glasses_entity_targeting_aug11.py"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

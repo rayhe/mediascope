@@ -1265,6 +1265,36 @@ journalist_profiles:
       summary: 'Amazon coverage at WSJ handled by other reporters.
 
         '
+  beat_assignment_comparison:
+    description: 'Beat assignment itself is neutral — all major publications assign
+      dedicated Meta reporters. Kashmir Hill (NYT) and Lauren Goode (WIRED) hold the
+      same structural role as Bobrowsky. The asymmetry emerges from the financial
+      environment in which the beat operates. At publications with one-sided financial
+      ties (NYT Amazon deal, WIRED Condé Nast parent), beat assignment CONCENTRATES
+      adversarial energy on Meta. At the balanced publication (WSJ, $50M Meta + $50M
+      OpenAI), the same beat structure produces mixed-tone, event-appropriate coverage.'
+  wsj_beat_structure:
+    beats:
+    - reporter: Meghan Bobrowsky
+      beat: Meta Platforms
+    - reporter: Berber Jin
+      beat: OpenAI / AI startups
+    - reporter: Georgia Wells
+      beat: AI governance / social media policy
+    - reporter: Keach Hagey
+      beat: Media deals / licensing
+    - reporter: Robert McMillan
+      beat: Cybersecurity / AI security
+  asymmetry_verdict: 'Beat assignment at WSJ is structurally identical to NYT and WIRED —
+    dedicated reporters cover Meta in isolation from competitors. The difference is
+    the financial environment: News Corp has balanced deals ($50M Meta + $50M OpenAI),
+    so there is no financial incentive to escalate adversarial framing on Meta specifically.
+    WSJ also practices inline financial disclosure — Bobrowsky''s Zuckerberg interview
+    includes "News Corp, owner of the Journal, has a content-licensing partnership with
+    Meta." This disclosure practice is absent at NYT (Amazon deal) and WIRED (Condé Nast
+    parent company deals). The combination of balanced financial ties and active disclosure
+    produces mixed-tone coverage from the same beat structure that yields adversarial
+    coverage at financially one-sided publications.'
 - name: Kate Clark
   current_role: vc_ai_startup_reporter
   publication: The Wall Street Journal
