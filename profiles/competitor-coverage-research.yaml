@@ -6360,3 +6360,76 @@ cross_publication_findings:
     test_file: tests/test_advance_conde_nast_aggregate_ai_dependency_aug10.py
     test_count: 35
     date_added: 2026-08-10
+  pre_ipo_owner_investor_publisher_convergence:
+    mechanism_id: 36
+    finding_type: financial_incentive_mapping
+    mechanism_name: "Pre-IPO Owner-Investor-Publisher Convergence — Anthropic IPO Financial Incentive Through Media Owner Equity"
+    finding_summary: |
+      Unlike OpenAI's direct publisher content licensing deals, Anthropic's financial
+      relationships with media flow through EQUITY OWNERSHIP by media owners. Three
+      documented chains: (1) Amazon ($13B invested, 15-20% stake, $145-193B value at
+      $965B) → Jeff Bezos → Washington Post. (2) Salesforce ($50M initial → $5B stake)
+      → Marc Benioff (CEO, personally owns Time since 2018) → Time magazine. Time named
+      Anthropic "World's Most Disruptive Company" — WEEX directly noted the conflict:
+      "Salesforce is also one of Anthropic's investors, and TIME Magazine's owner, Marc
+      Benioff, is the CEO of Salesforce." (3) Google (~14% equity, $135B + $35B SPV
+      guarantee) → News Showcase ($1B+) → 700+ publishers. Additionally, News Corp's
+      HarperCollins subsidiary receives Anthropic $1.5B copyright settlement funds
+      (final approval Jul 20, 2026, $3,000/book for 482,460 works, 91% claimed) while
+      News Corp's WSJ covers Anthropic — giving News Corp financial ties to ALL THREE
+      major AI labs (OpenAI $50M/yr deal, Meta $50M/yr deal, Anthropic settlement).
+      
+      Key structural insight: Owner equity positions are HARDER to disclose than direct
+      deals. A publication can say "we have an OpenAI deal" (1 disclosure hop) but
+      disclosing "our owner's other company holds $5B in Anthropic equity" requires 3
+      hops (Time → Benioff → Salesforce → Anthropic). No current framework mandates
+      multi-hop disclosure. Bezos's combined exposure: Amazon Anthropic equity
+      ($145-193B) is 580-772x the $250M he paid for the Washington Post.
+      
+      Pre-IPO window (Aug-Oct 2026) amplifies the incentive: positive coverage most
+      directly affects IPO pricing during this period. Anthropic S-1 filed Jun 1, 2026;
+      expected Oct 2026 IPO at $965B-$1.2T. The S-1 creates a natural experiment: if
+      Anthropic has private publisher deals (Troveo's Marty Pesis suggests possible),
+      the S-1 must disclose them. 7 legitimate factors documented including genuine
+      editorial independence promises, corporate Chinese walls, and Anthropic's
+      objectively strong product metrics ($47B ARR, Claude Code $1B ARR in 6 months).
+    entities: [Anthropic, Amazon, Salesforce, Google, Meta, OpenAI]
+    chains:
+      - name: "Amazon → Bezos → Washington Post"
+        investor: Amazon
+        investment_b: 13
+        stake_pct_range: "15-20%"
+        value_at_965b_range: "$145-193B"
+        media_owner: Jeff Bezos
+        publication: Washington Post
+        washpost_openai_deal: true
+        washpost_meta_deal: false
+      - name: "Salesforce → Benioff → Time"
+        investor: Salesforce
+        initial_investment_m: 50
+        current_value_b: 5
+        return_multiple: "100x"
+        media_owner: Marc Benioff
+        publication: Time
+        time_openai_deal: true
+        time_meta_deal: false
+        coverage_example: "Time named Anthropic 'World's Most Disruptive Company'"
+      - name: "News Corp → HarperCollins → Anthropic settlement"
+        mechanism: copyright_settlement
+        settlement_b: 1.5
+        settlement_approval_date: "2026-07-20"
+        subsidiary: HarperCollins
+        parent: News Corp
+        news_outlets: ["WSJ", "NY Post", "Barron's"]
+        news_corp_openai_deal_annual_m: 50
+        news_corp_meta_deal_annual_m: 50
+    source_urls:
+      - "https://www.fool.com/investing/2026/06/11/amazons-hidden-anthropic-stake-could-be-worth-more/"
+      - "https://www.tradingview.com/news/gurufocus:058e01502094b:0-salesforce-s-50-million-ai-bet-swells-to-5-billion/"
+      - "https://siliconangle.com/2026/07/20/anthropic-settles-authors-publishers-1-5-billion-landmark-copyright-case/"
+      - "https://www.weex.com/news/detail/time-magazine-names-anthropic-as-the-worlds-most-disruptive-company-367825"
+      - "https://www.marketbeat.com/articles/want-anthropic-exposure-before-the-ipo-these-2-ai-giants-are-already-there/"
+      - "https://firstamendment.mtsu.edu/post/judge-approves-1-5b-anthropic-settlement-over-pirated-books-used-to-train-chatbot/"
+    test_file: tests/test_pre_ipo_owner_investor_publisher_convergence_aug10.py
+    test_count: 55
+    date_added: 2026-08-10

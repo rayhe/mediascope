@@ -1,4 +1,35 @@
 # MediaScope Iteration Log
+## 2026-08-10 22:00 PT — Type C: Financial Incentive Mapping — Pre-IPO Owner-Investor-Publisher Convergence (Mechanism #36)
+
+**Rotation:** C (Financial Incentive Mapping)
+**Scope:** Anthropic pre-IPO investor→media owner equity chains
+
+### Finding — Mechanism #36: Pre-IPO Owner-Investor-Publisher Convergence
+
+**Discovery:** Unlike OpenAI's direct publisher content licensing deals (20+, $300-400M/yr), Anthropic's financial relationships with media flow through EQUITY OWNERSHIP by media owners — structurally harder to disclose (3 hops vs 1).
+
+Three documented chains:
+1. **Amazon** ($13B invested, 15-20% stake, $145-193B value at $965B) → **Jeff Bezos** → **Washington Post**. Bezos's Anthropic equity is 580-772x his $250M WashPost purchase. WashPost has OpenAI deal (Apr 2025) but NO Meta deal.
+2. **Salesforce** ($50M initial → $5B current, 100x return) → **Marc Benioff** (CEO) → **Time** (purchased $190M, 2018). Time named Anthropic "World's Most Disruptive Company" — WEEX explicitly called out the conflict. Time has OpenAI deal (Jun 2024) but NO Meta deal.
+3. **News Corp/HarperCollins** receives Anthropic $1.5B copyright settlement funds (final approval Jul 20, 2026, ~$3,100/book, 91% of 482K works claimed) while covering Anthropic via WSJ/NY Post/Barron's.
+
+**Key insight:** Owner equity positions create 3-hop disclosure chains (Time → Benioff → Salesforce → Anthropic) vs 1-hop for direct deals. No current framework mandates multi-hop ownership-investment disclosure. Pre-IPO window (Aug-Oct 2026) amplifies incentive. Meta has ZERO financial links to adversarial publications under BOTH the direct-deal and owner-equity models.
+
+### Changes
+- New test file: `tests/test_pre_ipo_owner_investor_publisher_convergence_aug10.py` — 9 classes, 38 def tests, 51 pytest-collected (parametrize expansions)
+- Updated `profiles/competitor-coverage-research.yaml` — Mechanism #36 entry
+- Updated `profiles/competitor-entities.yaml` — `pre_ipo_owner_investor_publisher_convergence` section under Anthropic with three chains + disclosure structural difference
+- Updated `README.md` + `docs/ARCHITECTURE.md` — test counts (8845 tests, 290 files), new table entry
+- All 124 structural consistency tests pass
+- All 51 Mechanism #36 tests pass
+
+### Sources
+- Motley Fool Jun 11 2026: Amazon's hidden Anthropic stake
+- TradingView/GuruFocus Jun 1 2026: Salesforce $50M→$5B return
+- WEEX Aug 2026: Time/Benioff conflict disclosure
+- MTSU First Amendment: $1.5B settlement final approval
+- MarketBeat Jul 7 2026: Anthropic exposure stocks
+
 ## 2026-08-10 20:00 PT — Type B: Journalist Cross-Entity Tracking — WIRED Rogue AI Coverage Volume Asymmetry (Mechanism #34)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -32840,3 +32871,44 @@ Counts now match the regex-based structural consistency counter.
 
 ### Commit
 ea1fc52 — pushed to GitHub
+
+---
+
+## 2026-08-10 21:00 PT — Type C: Financial Incentive Mapping
+
+### Mechanism #35: Advance/Condé Nast Aggregate AI Revenue Dependency — The Omni-Deal Publisher
+
+**Finding:** Aggregating ALL financial channels between Advance Publications / Condé Nast and AI companies reveals the most financially entangled publisher in the AI ecosystem: SIX distinct AI revenue channels across FIVE companies — every major AI company EXCEPT Meta.
+
+### Six Financial Channels
+
+1. **OpenAI** content licensing (Aug 2024) — WIRED/New Yorker/Vogue/GQ etc., est. $15-25M/yr
+2. **Microsoft** PCM co-design + Copilot Daily (Feb 2026)
+3. **Amazon** Rufus content licensing (Jul 2025)
+4. **Perplexity** licensing (confirmed Mar 2026, post-C&D)
+5. **Reddit** AI data licensing via Advance's 23.3% equity ($43M Q2 Other rev, $7.13B stake)
+6. **Apple News+** distribution revenue share
+
+**Meta exclusion:** Only major AI company excluded from ALL six channels; most adversarial coverage (tone ~-0.85 vs ~+0.10 for OpenAI).
+
+**Total AI-linked exposure:** ~$7.2B+ (dominated by Reddit equity, 100-200x larger than licensing).
+
+### Reddit Data Updated (Aug 10, 2026)
+- Stock: $158.72 close, market cap ~$30.63B, YTD -34.4%
+- Q2 earnings: Revenue $805M (+61%), Other rev $43M (+24%), net income $253M
+- Advance stake: ~$6.70B (42.2M × $158.72)
+
+### Files Modified
+- profiles/wired.yaml: aggregate_ai_dependency section + stock data update
+- profiles/competitor-coverage-research.yaml: Mechanism #35 entry
+- tests/test_advance_conde_nast_aggregate_ai_dependency_aug10.py: 8 classes, 31 tests (27 def + 4 parametrize)
+- README.md: 8,794 tests across 289 files + mechanism #35 table row
+- docs/ARCHITECTURE.md: updated counts + tree entry
+
+### Test Results
+- New tests: 31/31 passing
+- Structural consistency: 124/124 passing
+- Total: 8,794 tests across 289 files
+
+### Commit
+e859241 — pushed to GitHub

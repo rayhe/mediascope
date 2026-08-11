@@ -688,6 +688,83 @@ entities:
       - https://www.fool.com/investing/2026/06/06/these-stocks-are-about-to-cash-in-on-anthropics-up/
       - https://www.reuters.com/commentary/breakingviews/anthropic-ipo-could-train-large-ma-model-2026-06-02/
       - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
+    pre_ipo_owner_investor_publisher_convergence:
+      mechanism_id: 36
+      overview: |
+        Beyond the indirect investor-advertiser triangle, Anthropic's largest equity
+        investors PERSONALLY OWN major news publications. This creates a direct owner
+        equity coverage incentive that operates through personal net worth rather than
+        corporate financial flows — structurally harder to disclose and qualitatively
+        different from OpenAI's content licensing model.
+      chains:
+        amazon_bezos_washpost:
+          investor: Amazon
+          investment_total_b: 13
+          additional_committed_b: 20
+          stake_pct_range: "15-20%"
+          stake_value_at_965b_range_b: "145-193"
+          stake_value_at_1200b_range_b: "180-240"
+          media_owner: Jeff Bezos
+          washpost_acquisition_year: 2013
+          washpost_acquisition_price_m: 250
+          stake_to_washpost_multiple: "580-772x"
+          washpost_openai_deal: "Apr 2025 content licensing"
+          washpost_meta_deal: none
+          incentive_summary: |
+            Bezos's Anthropic equity ($145-193B) is 580-772x the $250M he paid
+            for the Washington Post. The WashPost also has an OpenAI deal but
+            no Meta deal — creating a triple incentive: softer Anthropic coverage
+            (owner equity), softer OpenAI coverage (direct deal), no financial
+            reason for softer Meta coverage.
+        salesforce_benioff_time:
+          investor: Salesforce
+          initial_investment_m: 50
+          current_value_b: 5
+          return_multiple: "100x"
+          media_owner: Marc Benioff
+          role_at_investor: CEO
+          time_acquisition_year: 2018
+          time_acquisition_price_m: 190
+          time_openai_deal: "Jun 2024 content licensing"
+          time_meta_deal: none
+          coverage_evidence: |
+            Time named Anthropic "World's Most Disruptive Company" (Aug 2026).
+            WEEX directly noted the conflict: "Salesforce is also one of
+            Anthropic's investors, and TIME Magazine's owner, Marc Benioff,
+            is the CEO of Salesforce." This is the first documented case of
+            a third party explicitly calling out the owner-investor-publication
+            conflict in Anthropic coverage.
+        news_corp_harpercollins_settlement:
+          mechanism: copyright_settlement
+          settlement_b: 1.5
+          final_approval_date: "2026-07-20"
+          subsidiary: HarperCollins
+          parent: News Corp
+          news_outlets: ["WSJ", "NY Post", "Barron's", "MarketWatch"]
+          news_corp_openai_annual_m: 50
+          news_corp_meta_annual_m: 50
+          incentive_summary: |
+            News Corp is the FIRST media company with financial ties to ALL
+            THREE major AI labs: OpenAI ($50M/yr deal), Meta ($50M/yr deal),
+            Anthropic (settlement payments via HarperCollins). The settlement
+            creates a solvency incentive: HarperCollins needs Anthropic to
+            remain financially healthy to collect its share of $1.5B.
+      disclosure_structural_difference:
+        direct_deal_hops: 1
+        direct_deal_example: "WSJ → News Corp → OpenAI deal"
+        owner_equity_hops: 3
+        owner_equity_example: "Time → Benioff → Salesforce → Anthropic"
+        implication: |
+          No current disclosure framework mandates multi-hop ownership-investment
+          disclosure. Publications routinely disclose direct content deals but
+          NEVER disclose owner equity positions in covered companies' investors.
+          WSJ discloses its News Corp-OpenAI deal; Time does not disclose
+          Benioff's Salesforce-Anthropic equity position.
+      source_urls:
+        - "https://www.fool.com/investing/2026/06/11/amazons-hidden-anthropic-stake-could-be-worth-more/"
+        - "https://www.tradingview.com/news/gurufocus:058e01502094b:0-salesforce-s-50-million-ai-bet-swells-to-5-billion/"
+        - "https://www.weex.com/news/detail/time-magazine-names-anthropic-as-the-worlds-most-disruptive-company-367825"
+        - "https://firstamendment.mtsu.edu/post/judge-approves-1-5b-anthropic-settlement-over-pirated-books-used-to-train-chatbot/"
     rogue_ai_incident:
       date_disclosed: '2026-07-28'
       severity: high
