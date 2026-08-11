@@ -6637,3 +6637,60 @@ cross_publication_findings:
     test_file: tests/test_chokkattu_samsung_coverage_selection_gap_aug11.py
     test_count: 42
     date_added: 2026-08-11
+
+  advance_total_ai_financial_exposure_index:
+    mechanism_id: 40
+    finding_type: financial_incentive_quantification
+    mechanism_name: "Advance Publications Total AI Financial Exposure Index"
+    finding_summary: |
+      First comprehensive quantification of Advance Publications' total financial
+      exposure to AI content licensing using Q2 2026 Reddit earnings data and active
+      litigation updates. Five components:
+
+      1. REDDIT EQUITY: ~$9.16B (30% of $30.54B market cap, Aug 10 2026)
+      2. REDDIT AI LICENSING: ~$39-42M/yr (30% of ~$130M AI licensing revenue;
+         Q2 2026 "Other revenue" $43M, +24% YoY)
+      3. CONDÉ NAST OPENAI DEAL: est. $15-30M/yr (undisclosed, bounded by
+         comparable deals: Axel Springer $13M/yr < X < News Corp $50M/yr)
+      4. REDDIT LITIGATION: Active suits against Anthropic (removed to federal
+         court Jul 3, 2026) and Perplexity (MTD denied Jul 31, 2026) —
+         reference: Anthropic paid $1.5B in Bartz author copyright suit
+      5. COLLATERALIZED LENDING: $1.2B credit facility against Reddit shares
+
+      Total quantifiable: ~$9.16B equity + $54-72M/yr recurring AI revenue.
+      Equity exposure is >100x annual revenue — Reddit stock price sensitivity
+      amplified by collateralized lending.
+
+      PAY VS SUE STRUCTURAL ASYMMETRY:
+      - Companies that PAY Reddit (Google $60M/yr, OpenAI $70M/yr) → content deals
+      - Companies that DON'T PAY (Anthropic, Perplexity) → active litigation
+      - Meta: no deal, no lawsuit, but open-weight model threatens licensing model
+      - WIRED editorial tone structurally aligned: softer toward payers, adversarial
+        toward non-payers and companies threatening the licensing model
+
+      Condé Nast financial distress amplifies dependency: 33 editorial staff cut
+      in 5 months (2026), SELF shuttered, Glamour/WIRED Italy reduced. CEO Lynch:
+      OpenAI deal "begins to make up for some of that [lost] revenue."
+
+      7 legitimate counterarguments documented, including 2 rated "strong."
+    entities: [Advance Publications, Reddit, Condé Nast, WIRED, OpenAI, Google, Anthropic, Perplexity, Meta]
+    extends_mechanism: null
+    distinction_from:
+      - mechanism_id: 37
+        distinction: "#37 maps Advance dual-asset monetization architecture; #40 quantifies total financial exposure with Q2 2026 earnings data, active litigation timeline, and pay-vs-sue structural asymmetry"
+    source_urls:
+      - "https://www.businesswire.com/news/home/20260730598707/en/Reddit-Reports-Second-Quarter-2026-Results"
+      - "https://stockanalysis.com/stocks/rddt/market-cap/"
+      - "https://en.wikipedia.org/wiki/Advance_Publications"
+      - "https://news.bloomberglaw.com/mergers-and-acquisitions/advance-magazine-said-to-seek-1-2-billion-in-reddit-share-sale"
+      - "https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/"
+      - "https://www.reuters.com/legal/litigation/perplexity-ai-loses-bid-toss-reddit-lawsuit-over-data-scraping-2026-07-31/"
+      - "https://news.bloomberglaw.com/ip-law/anthropic-shifts-reddits-ai-scraping-lawsuit-to-federal-court"
+      - "https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/"
+      - "https://tech.slashdot.org/story/25/02/14/0019213/ai-licensing-deals-with-google-and-openai-make-up-10-of-reddits-revenue"
+      - "https://www.status.news/p/cond-nast-layoffs-self-glamour-magazine"
+      - "https://stage.adweek.com/media/conde-nast-events-revenue-2026/"
+      - "https://www.fastcompany.com/91502976/reddit-most-innovative-companies-2026-steve-huffman-openai-ai-google-gemini-answers-search"
+    test_file: tests/test_advance_total_ai_financial_exposure_index_aug11.py
+    test_count: 64
+    date_added: 2026-08-11
