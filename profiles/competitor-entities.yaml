@@ -1298,6 +1298,41 @@ entities:
         \ publisher deal-maker.\n(3) SIRI AI PROVIDER DIVERSIFICATION: Apple testing Claude (Anthropic)\n    and Gemini (Google)\
         \ alongside ChatGPT means publishers' content\n    licensed to OpenAI may flow through Apple devices via multiple\n\
         \    AI models — raising questions about content licensing scope.\n"
+      dual_client_litigation_entanglement:
+        mechanism_id: 43
+        description: >
+          Five MediaScope-profiled publication groups maintain simultaneous
+          financial relationships with BOTH Apple (via News+) and OpenAI (via
+          content licensing). The lawsuit creates a dual-client conflict where
+          coverage favoring either side risks revenue from the other. Coverage
+          search Aug 11 2026 found WSJ produced factual-relay coverage (2 articles);
+          WIRED, The Verge, and The Atlantic had no confirmed standalone articles.
+          Meta has ZERO deals through EITHER channel, facing no financial constraint
+          on editorial direction. Loaded language in Apple-OpenAI coverage averages
+          1.2 terms/article vs 4.4 for Meta litigation (3.7x ratio).
+        dual_client_publishers:
+          conde_nast:
+            openai_deal: "Aug 2024, undisclosed"
+            apple_news_plus_titles: 16
+            apple_intelligence_negotiations: true
+            coverage_of_litigation: "No confirmed standalone article"
+          news_corp:
+            openai_deal: "May 2024, $250M+/5yr"
+            apple_news_plus: true
+            coverage_of_litigation: "WSJ: 2 articles, factual-relay framing"
+          vox_media:
+            openai_deal: "May 2024, undisclosed"
+            apple_news_plus: true
+            coverage_of_litigation: "No confirmed standalone article"
+          atlantic:
+            openai_deal: "May 2024, undisclosed"
+            apple_news_plus: true
+            coverage_of_litigation: "No confirmed standalone article"
+          hearst:
+            openai_deal: "Oct 2024, undisclosed"
+            apple_news_plus: true
+            coverage_of_litigation: "Not searched individually"
+        meta_deal_count_both_channels: 0
     apple_google_gemini_deal:
       announcement_date: '2026-01-12'
       bloomberg_report_date: '2025-11-05'
