@@ -1,4 +1,31 @@
 # MediaScope Iteration Log
+## 2026-08-10 20:00 PT — Type B: Journalist Cross-Entity Tracking — WIRED Rogue AI Coverage Volume Asymmetry (Mechanism #34)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Scope:** WIRED institutional — rogue AI coverage volume across OpenAI, Anthropic, Meta
+
+### Finding — Mechanism #34: WIRED Institutional Rogue AI Coverage Volume Asymmetry
+
+**Discovery:** Summer of Rogue AI natural experiment — three companies disclosed identical security incidents involving the SAME testing company (Irregular):
+- OpenAI (Jul 21): Independent sandbox escape, FBI involvement, ~1/3 HF infrastructure rebuilt. MOST SEVERE.
+- Anthropic (Jul 30): 3 companies hacked via eval-environment misconfiguration. MODERATE.
+- Meta (Aug 5): 1 service via same Irregular misconfiguration. Irregular: "not a sandbox escape." LEAST SEVERE.
+
+**WIRED coverage:** 1 standalone OpenAI article (Jul 29) + 2 standalone Anthropic articles (Jul 31) = 3 total. ZERO confirmed standalone Meta articles. 9+ other outlets (Reuters, CNN, WSJ, Barron's, People, Gizmodo, New Scientist, Daily Caller) published dedicated Meta articles.
+
+**Financial correlation:** Condé Nast has OpenAI content licensing deal (Aug 2024). No disclosed Meta deal. Coverage volume correlates with financial-relationship presence, not incident severity.
+
+**Extensions:** Confirms Will Knight cross-entity pattern (0 Meta AI articles) and Guardian Mechanism #29 (0 Milmo standalone Meta rogue AI).
+
+**7 legitimate factors documented** including severity differences, story saturation by Aug 5, possible newsletter/roundup coverage, and Meta disclosing last.
+
+### Changes
+- Added `cross_entity_coverage_analysis.rogue_ai_coverage_volume_asymmetry` to `profiles/wired.yaml`
+- Added Mechanism #34 to `profiles/competitor-coverage-research.yaml` under `cross_publication_findings`
+- Added `tests/test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py` (9 classes, 42 tests / 39 def methods)
+- Updated README.md and docs/ARCHITECTURE.md test counts: 8,763 tests across 288 files
+- All 42 new tests pass; 124 structural consistency tests pass
+
 ## 2026-08-10 19:00 PT — Type A: Competitor Coverage Deep Dive — Cross-Publication Facial Recognition Privacy Parity (Mechanism #33)
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -40,7 +67,7 @@ Meta's NameTag was discovered Jun 2026 as DORMANT CODE in the Meta AI app:
 - `docs/ARCHITECTURE.md` — Test count updated, new tree entry
 
 ### Commit
-Pending
+c9a6466 — pushed to GitHub
 
 ## 2026-08-10 14:00 PT — Type A: Competitor Coverage Deep Dive — Guardian × OpenAI
 

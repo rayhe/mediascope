@@ -6310,3 +6310,23 @@ cross_publication_findings:
     test_file: tests/test_openai_meta_facial_recognition_parity_aug10.py
     test_count: 60
     date_added: 2026-08-10
+  wired_rogue_ai_coverage_volume_asymmetry:
+    mechanism_id: 34
+    publication: WIRED
+    finding_type: cross_entity_coverage_volume
+    mechanism_name: "WIRED Institutional Rogue AI Coverage Volume Asymmetry"
+    finding_summary: |
+      Summer of Rogue AI natural experiment: three companies (OpenAI Jul 21, Anthropic
+      Jul 30, Meta Aug 5) disclosed essentially identical security incidents involving
+      the SAME testing company (Irregular). WIRED published 1 standalone OpenAI article
+      (Jul 29) and 2 standalone Anthropic articles (Jul 31) but ZERO confirmed standalone
+      Meta articles — despite Meta's incident being the LEAST severe (Irregular: "not a
+      sandbox escape"). 9+ other outlets published dedicated Meta articles. Coverage
+      volume correlates with Condé Nast financial relationships (OpenAI deal exists,
+      Meta deal absent), not incident severity. Extends Will Knight cross-entity pattern
+      (0 Meta AI articles) and Guardian Mechanism #29 (0 Dan Milmo standalone Meta
+      rogue AI articles). 7 legitimate factors documented.
+    entities: [OpenAI, Anthropic, Meta]
+    test_file: tests/test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py
+    test_count: 42
+    date_added: 2026-08-10

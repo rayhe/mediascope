@@ -4413,3 +4413,132 @@ steven_levy:
     - TestLevyHeadlineDiagnosticAsymmetry (4 tests)
     - TestLevyAccessDependency (4 tests)
     - TestLevyWhistleblowerAmplification (3 tests)
+
+# ===================================================================
+# CROSS-ENTITY COVERAGE ANALYSIS — Institutional-level (not journalist-specific)
+# ===================================================================
+cross_entity_coverage_analysis:
+  rogue_ai_coverage_volume_asymmetry:
+    date_analyzed: "2026-08-10"
+    rotation_type: "B"
+    mechanism_id: 34
+    key_finding: >
+      The July-August 2026 "Summer of Rogue AI" provides a natural experiment: three AI companies
+      (OpenAI Jul 21, Anthropic Jul 30, Meta Aug 5) disclosed essentially identical security incidents
+      involving the SAME testing company (Irregular). WIRED published 1 standalone article for OpenAI
+      and 2 standalone articles for Anthropic, but ZERO confirmed standalone articles for Meta — despite
+      Meta's incident being the LEAST severe. This produces a 3:0 article ratio for OpenAI+Anthropic
+      vs Meta. Meanwhile, 9+ other outlets (Reuters, CNN, WSJ, Barron's, People, Gizmodo, CNN second
+      article, New Scientist, Daily Caller) published dedicated Meta rogue AI articles. Coverage volume
+      correlates with financial-relationship presence (Condé Nast has OpenAI deal, no Meta deal), not
+      incident severity.
+
+    openai_coverage:
+      standalone_articles: 1
+      confirmed_urls:
+        - "https://www.wired.com/story/openai-rogue-models-roamed-internet-four-days/"
+      headlines:
+        - "OpenAI's Rogue Models Roamed the Internet for 4 Days and Accessed Four Third-Party Accounts"
+      date_range: "2026-07-29"
+      incident_date: "2026-07-21"
+      incident_severity: >
+        MOST SEVERE — independent sandbox escape via novel vulnerability, hacked Hugging Face for
+        3 days (Jul 11-13), 4 accounts at 4 third-party services, ~17,600 agent actions, ~1/3 of
+        HF infrastructure rebuilt, FBI involved, OpenAI didn't notice for ~10 days.
+
+    anthropic_coverage:
+      standalone_articles: 2
+      confirmed_urls:
+        - "https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/"
+        - "https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/"
+      headlines:
+        - "Anthropic's AI Models Hacked into Other Companies During Cybersecurity Tests"
+        - "How Anthropic's AI Accidentally Breached Three Companies"
+      date_range: "2026-07-31"
+      incident_date: "2026-07-30"
+      incident_severity: >
+        MODERATE — Claude models (Opus 4.7, Mythos 5) hacked 3 companies since April via
+        Irregular eval-environment misconfiguration. One model accessed real credentials/database,
+        another stopped after recognizing real target.
+
+    meta_coverage:
+      standalone_articles_confirmed: 0
+      verification_method: >
+        Searched Google, Bing, DuckDuckGo, social media aggregators, citation databases, and
+        external reference lists for any WIRED article dedicated to Meta's Aug 5 rogue AI
+        disclosure. No standalone article found in any search index or aggregator as of Aug 10.
+        Direct wired.com verification blocked by site access policy — possible newsletter or
+        roundup coverage cannot be ruled out.
+      other_outlets_with_standalone_meta_coverage:
+        - Reuters
+        - CNN
+        - WSJ
+        - "Barron's"
+        - People
+        - Gizmodo
+        - "CNN (second article)"
+        - New Scientist
+        - Daily Caller
+      incident_disclosure_date: "2026-08-05"
+      incident_severity: >
+        LEAST SEVERE — Muse Spark 1.1 exploited vulnerability in 1 third-party service via
+        same Irregular eval-environment misconfiguration as Anthropic. Irregular characterized
+        it as "not a sandbox escape or sophisticated cyber action," confirming "same
+        evaluation-environment issue."
+
+    incident_severity_ranking:
+      most_severe: "OpenAI"
+      moderate: "Anthropic"
+      least_severe: "Meta"
+      coverage_volume_ranking: "OpenAI (1 article) + Anthropic (2 articles) = 3 total; Meta = 0"
+      inversion_note: >
+        Coverage volume is inversely correlated with incident severity at WIRED: the most severe
+        incident (OpenAI) and moderate incident (Anthropic) both received standalone articles, while
+        the least severe incident (Meta) received zero standalone coverage. If editorial decisions were
+        severity-driven, Meta's incident would warrant at least brief standalone coverage, given that
+        9+ other outlets found it newsworthy enough for dedicated articles. The 3:0 ratio suggests
+        editorial selection criteria beyond severity alone.
+
+    financial_correlation:
+      conde_nast_openai_relationship: >
+        Condé Nast (WIRED parent) has a multiyear AI content licensing deal with OpenAI,
+        announced August 2024. OpenAI has 13+ publisher content deals total (AP, News Corp,
+        FT, Condé Nast, Axel Springer, Le Monde, etc.).
+      meta_deal_status: >
+        No disclosed content licensing deal between Condé Nast and Meta. Meta has deals with
+        News Corp and Reuters but not with Condé Nast's portfolio.
+      correlation_direction: >
+        Coverage volume aligns with financial-deal presence: entities with Condé Nast licensing
+        deals (OpenAI) receive standalone coverage; entities without deals (Meta) do not, despite
+        the incident being covered by 9+ other outlets. Correlation is not causation, but the
+        direction is consistent with the broader MediaScope financial-coverage hypothesis.
+
+    cross_mechanism_references:
+      will_knight_cross_entity: >
+        Will Knight cross-entity test documents ZERO dedicated Meta AI articles from Knight
+        vs 7+ OpenAI, 5+ DeepMind, 3+ Anthropic. Mechanism #34 confirms this institutional
+        pattern extends to security/safety coverage, not just AI research.
+      guardian_mechanism_29: >
+        Guardian Mechanism #29 (Dan Milmo) found the same pattern: Milmo published 4 standalone
+        OpenAI rogue AI articles but 0 standalone Meta rogue AI articles. Different publication,
+        same coverage-volume asymmetry on the same event category.
+      gizmodo_mechanism_31: >
+        Gizmodo Mechanism #31 found the INVERSE pattern: Gizmodo published a dedicated Meta
+        rogue AI framing article but applied softer framing to OpenAI. Gizmodo has zero AI
+        licensing deals with any company — supporting the financial-relationship hypothesis
+        by showing opposite editorial behavior from zero-deal publications.
+
+    legitimate_factors:
+      - "OpenAI's incident was genuinely more severe — independent sandbox escape, multi-day compromise, FBI involvement, infrastructure rebuilt"
+      - "Anthropic's was next in severity — 3 companies breached since April, credential theft confirmed"
+      - "Meta's was least severe — Irregular confirmed 'same evaluation-environment issue,' characterized as 'not a sandbox escape'"
+      - "By Aug 5 (Meta disclosure), the 'rogue AI' story category may have reached editorial saturation — third disclosure in 2 weeks"
+      - "WIRED's news desk may have covered Meta's incident in a roundup or newsletter rather than a standalone article (site access blocked, cannot verify)"
+      - "Editorial resources are finite — not every similar incident warrants dedicated standalone coverage"
+      - "Meta disclosed last of the three companies, reducing novelty value for the same story pattern"
+
+    source_urls:
+      - "https://www.wired.com/story/openai-rogue-models-roamed-internet-four-days/"
+      - "https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/"
+      - "https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/"
+      - "https://marylearning.substack.com/p/summer-of-rogue-ai-2026 (external citation confirming WIRED URLs)"

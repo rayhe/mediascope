@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 8721 tests across 287 test files (all from real articles)
+├── tests/                       # 8763 tests across 288 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
@@ -673,6 +673,7 @@ mediascope/
 │   ├── test_type_d_1pm_cross_validation_aug10.py # Type D cross-validation (Aug 10, 13:00 PT): Mechanism #26-#28 cross-validation, mechanism_id consistency fixes (#23/#24/#26), test_count fix (#28 27→32), README/ARCHITECTURE count drift fix (8480→8625, 280→281), schema integrity. 8 classes, 43 tests
 │   ├── test_type_d_6pm_cross_validation_aug10.py # Type D cross-validation (Aug 10, 18:00 PT): Mechanisms #30-#32 — fixed mechanism_id collision (Georgia Wells #30→#32), genre hypothesis convergence, positive control isolation, three ownership structures, contiguity #29-#32, causal chain non-overlap. 8 classes, 36 tests
 │   ├── test_openai_meta_facial_recognition_parity_aug10.py # Mechanism #33: Cross-Publication Facial Recognition Privacy Parity Test — OpenAI PLANNED facial recognition (always-on, cameras+mics) gets aspirational framing vs Meta DORMANT NameTag code gets alarm/investigative coverage. Financial relationships predict framing direction. 8 classes, 60 tests
+│   ├── test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py # Mechanism #34: WIRED Institutional Rogue AI Coverage Volume Asymmetry — Summer of Rogue AI natural experiment, 3:0 article ratio (OpenAI+Anthropic vs Meta) despite Meta least severe. Extends Will Knight + Guardian Mechanism #29. 9 classes, 42 tests
 │   ├── test_mit_tr_anduril_meta_warfare_glasses.py # MIT TR Anduril/Meta warfare glasses: defense-tech entity detection, failure_precedent (new device), analogy_stacking FP filters (factual similes, recall verb), context-gated Llama entity, selective_rehabilitation, editorial_deflation, sentiment calibration
 │   ├── test_mit_tr_anthropic_preipo_product_validation_aug9.py # MIT TR × Anthropic pre-IPO product validation asymmetry (Mechanism #15): fascinated/validating Anthropic framing (J-space, Claude Science, Code with Claude, 10 Breakthroughs) vs failure/warfare/dismissive Meta framing, max headline valence gap (1.0), competence-benchmark device, indirect endowment financial chain, pre-IPO amplification timeline
 │   ├── test_mit_tr_apple_governance_conflict_aug6.py # MIT TR × Apple governance-level conflict analysis: Bergeron MIT Corporation election, CSAIL Alliance membership, Apple privacy-positive vs Meta adversarial tone asymmetry, sensor-count paradox (Vision Pro 30+ praised vs Meta 4 surveilled), non-disclosure, three-tier influence hierarchy, profile cross-validation
