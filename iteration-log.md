@@ -32678,3 +32678,30 @@ Georgia Wells covers both OpenAI governance (AG investigation Jun 13, rogue AI e
 
 ### Commit
 3877cf8 — pushed to GitHub
+
+---
+
+## 2026-08-10 16:00 PT — Type B: Journalist Cross-Entity Tracking
+
+### Rotation Target
+James Pero (Gizmodo) — cross-entity editorial direction override
+
+### Mechanism #31: Editorial Direction Override
+James Pero is Gizmodo's self-described "resident smart glasses guy" with hands-on access to ALL major brands. The mechanism: his Meta PRODUCT REVIEWS are balanced-positive (tone +0.10, Neural Band "groundbreaking", Amazon/Best Buy affiliate links), but EDITORIAL pieces are adversarial (tone -0.40, "The anti-Meta plan" section, competitors as privacy heroes). Samsung/Google identical 12MP camera glasses sending data to Google Gemini get ZERO surveillance framing. Apple "has often made privacy the core of its products" despite planning camera glasses.
+
+Genre split delta: 0.50 — the largest genre-based divergence isolating editorial direction from personal journalist bias. Architecturally distinct from Barr Privacy Gradient (personal bias), Goode Lane Assignment (beat), Dave Emotional Register (vocabulary).
+
+6 legitimate confounding factors documented: market share, privacy incidents, editorial assignment, genre conventions, access/review unit provision, ad model.
+
+### Files Changed
+- `profiles/gizmodo.yaml` — journalist_cross_entity.james_pero with full cross-entity data, source URLs
+- `profiles/competitor-coverage-research.yaml` — Mechanism #31 registered
+- `tests/test_james_pero_cross_entity.py` — 10 classes, 41 def test_ (44 collected with parametrize), all pass
+- `README.md` — Test count header corrected to 8618 / 284 files, per-file count corrected to 41
+- `docs/ARCHITECTURE.md` — Test count header corrected to 8618 / 284 files, new tree entry added
+
+### Test Count Correction
+Previous iterations used pytest --collect-only counts (including parametrize expansions). The structural consistency test uses def test_ counting + its own parametrize expansion logic, yielding 8618 total (not 8730). Corrected in this commit. All 124 structural consistency tests pass.
+
+### Commit
+db8498e — pushed to GitHub

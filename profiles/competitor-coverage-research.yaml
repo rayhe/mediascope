@@ -882,6 +882,44 @@ aggregate_findings:
     - https://gizmodo.com/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic-2000794504
     test_file: tests/test_james_pero_cross_entity.py
     test_count: 41
+  chokkattu_temporal_framing_oscillation:
+    journalist: Julian Chokkattu
+    publication: WIRED (Condé Nast)
+    finding_summary: 'Within a single 30-day window (Jun 3 – Jul 2, 2026), Chokkattu published Meta
+      smart glasses content in three genres with dramatically different framing: adversarial podcast
+      (-0.85/-0.90 tone with "mass surveillance," "I''m a Creep"), balanced product announcement
+      (-0.05 tone, feature-focused Starfire/Adventurer/Fury launch), and adversarial editorial
+      analysis (-0.65 tone, "extracting value," "monetizing customers"). Same journalist, same
+      product, same month — framing determined by GENRE. This matches Mechanism #31 (Pero at
+      Gizmodo) across a different publication with different ownership, establishing genre-determined
+      framing as an industry-wide pattern rather than a publisher-specific directive. During the
+      same window, competitors (Google I/O cameras May 19, Snap 4 cameras Jun 16) received
+      exclusively enthusiastic/neutral coverage — zero surveillance vocabulary regardless of genre.'
+    mechanism: genre_determined_framing_direction
+    mechanism_id: 30
+    key_finding: Same-journalist temporal oscillation between adversarial and balanced framing
+    genre_split_delta: 0.85
+    tone_scores:
+      meta_podcast_average: -0.875
+      meta_product_article: -0.05
+      meta_editorial_analysis: -0.65
+      google_podcast: 0.05
+    cross_publication_convergence:
+      wired_owner: Condé Nast (Advance Publications)
+      gizmodo_owner: Keleops AG
+      pattern_match: true
+      significance: Same pattern at two publications with different ownership eliminates publisher-specific explanation
+    confounding_factors:
+    - Product announcements are inherently more neutral than analysis pieces
+    - Podcast format encourages more opinionated takes
+    - The subscription article addresses a genuinely controversial pricing change
+    - Editorial analysis is supposed to be more critical than product coverage
+    - Meta has more legacy privacy controversies than Google or Snap
+    source_urls:
+    - https://biztoc.com/x/65c250c5f0d223b2
+    - https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+    test_file: tests/test_chokkattu_temporal_framing_oscillation_aug10.py
+    test_count: 30
 cross_entity_leverage:
   amazon_sextuple_leverage:
     amazon_publisher_deal_count:

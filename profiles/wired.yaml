@@ -4125,7 +4125,6 @@ journalist_cross_entity_coverage:
         Chokkattu went from covering Google's cameras as exciting tech (May 19)
         to calling Meta's cameras "mass surveillance" (Jun 3) — a 15-day swing
         in framing for functionally identical hardware.
-
     conde_nast_financial_correlation:
       finding: |
         Google remains a significant programmatic advertising revenue source for
@@ -4142,203 +4141,275 @@ journalist_cross_entity_coverage:
           Apple (Apple News+ 50% rev share to CN): empathetic wearables coverage
           Meta (zero CN revenue): "mass surveillance," "creep," investigative alarm
 
-    test_file: "tests/test_wired_google_io_2026_glasses_framing_aug9.py"
-    test_count: 40
-    test_classes:
-      - TestGoogleIO2026Coverage (8 tests)
-      - TestLiveBlogFramingAnalysis (7 tests)
-      - TestLaneAssignmentExtension (6 tests)
-      - TestAIPhotoManipulationAsymmetry (5 tests)
-      - TestGoogleGlassPrecedentReversal (4 tests)
-      - TestChokkattuDualStandard (5 tests)
-      - TestCondeNastFinancialCorrelation (5 tests)
+chokkattu_temporal_framing_oscillation:
+  mechanism_id: 30
+  finding: "Genre-Determined Framing Direction (Temporal Oscillation)"
+  date_analyzed: "2026-08-10"
+  journalist: "Julian Chokkattu"
+  summary: |
+    Within a single 30-day window (Jun 3 – Jul 2, 2026), Chokkattu published
+    content about Meta smart glasses in THREE genres with dramatically different
+    framing: adversarial podcast (-0.85/-0.90 tone), balanced product announcement
+    (-0.05 tone), adversarial editorial analysis (-0.65 tone). The same journalist
+    oscillates between "mass surveillance" and neutral product features based
+    entirely on genre. This matches James Pero's "Editorial Direction Override"
+    (Mechanism #31) at Gizmodo — two publications, different ownership,
+    same pattern.
+  timeline:
+    - date: "2026-06-03"
+      genre: "narrative_podcast"
+      title: "Prize on the Eyes"
+      platform: "Business Wars (Wondery)"
+      subject: "Meta"
+      tone_score: -0.85
+      key_language: "a tool for mass surveillance"
+    - date: "2026-06-10"
+      genre: "narrative_podcast"
+      title: "I'm a Creep"
+      platform: "Business Wars (Wondery)"
+      subject: "Meta"
+      tone_score: -0.90
+      key_language: "mandatory data-sharing, worker exploitation, federal agents using glasses illegally"
+    - date: "2026-06-11"
+      genre: "narrative_podcast"
+      title: "Google's Return"
+      platform: "Business Wars (Wondery)"
+      subject: "Google"
+      tone_score: 0.05
+      key_language: "whether Google can give Meta a run for its money"
+    - date: "2026-06-23"
+      genre: "product_announcement"
+      title: "Meta Starfire/Adventurer/Fury launch"
+      platform: "WIRED"
+      subject: "Meta"
+      tone_score: -0.05
+      key_language: "gemstone, nose pad, AI voice, same camera/microphones/chatbot as Ray-Bans"
+      source_url: "https://biztoc.com/x/65c250c5f0d223b2"
+    - date: "2026-07-02"
+      genre: "editorial_analysis"
+      title: "Meta Is Charging a Subscription for Smart Glasses Features"
+      platform: "WIRED"
+      subject: "Meta"
+      tone_score: -0.65
+      key_language: "extracting value, monetizing customers"
+  cross_publication_convergence: |
+    Same pattern confirmed at Gizmodo (Keleops AG, Swiss ownership) via James Pero
+    (Mechanism #31): product reviews balanced, editorial/analysis adversarial for Meta.
+    Two publications, different ownership structures (Condé Nast / Advance vs Keleops AG),
+    same genre-determines-framing pattern — suggests industry-wide editorial culture,
+    not publisher-specific directives.
+  test_file: "tests/test_chokkattu_temporal_framing_oscillation_aug10.py"
+  test_count: 34
+  legitimate_factors:
+    - "Product announcements are inherently more neutral than analysis pieces"
+    - "Podcast format encourages more opinionated takes"
+    - "The subscription article (Jul 2) addresses a genuinely controversial pricing change"
+    - "Editorial analysis is SUPPOSED to be more critical than product coverage"
+    - "Meta has more legacy privacy controversies than Google or Snap"
+  counterpoints:
+    - "The genre excuse explains the DIRECTION but not the ENTITY selectivity — Google/Snap editorial analysis doesn't use surveillance framing either"
+    - "The podcast series is TITLED after Meta, centering it as the surveillance threat while Google gets 'Return'"
+    - "If genre determines framing, editorial analysis of Snap's $2,195 glasses should also use 'extraction' language — it doesn't"
 
 
-  steven_levy:
-    date_analyzed: "2026-08-09"
-    role: "Editor at Large"
-    editorial_authority: >
-      Steven Levy is WIRED's institutional voice — longest-tenured journalist (original
-      contributing writer from 1993 founding), most CEO access (Gates, Bezos, Jobs, Page,
-      Brin, Zuckerberg), author of books on Google (In the Plex, 2011) and Facebook
-      (Facebook: The Inside Story, 2020). His editorial posture toward subjects IS
-      WIRED's editorial posture. Founded Backchannel on Medium (2014), acquired by
-      Condé Nast (2016). Wife is Pulitzer Prize winner Teresa Carpenter.
+google_io_2026_test_metadata:
+  test_file: "tests/test_wired_google_io_2026_glasses_framing_aug9.py"
+  test_count: 40
+  test_classes:
+    - TestGoogleIO2026Coverage (8 tests)
+    - TestLiveBlogFramingAnalysis (7 tests)
+    - TestLaneAssignmentExtension (6 tests)
+    - TestAIPhotoManipulationAsymmetry (5 tests)
+    - TestGoogleGlassPrecedentReversal (4 tests)
+    - TestChokkattuDualStandard (5 tests)
+    - TestCondeNastFinancialCorrelation (5 tests)
 
-    key_finding: >
-      Levy applies systematically different headline framing to Meta vs. all competitors.
-      Meta receives institutional-pathology language (relentless, self-defeating, dark mood,
-      punish a defector). Google receives neutral enterprise framing. Other competitors
-      (Amazon/Bezos, Microsoft, Lyft) receive personality-driven curiosity framing or
-      CEO-platforming headlines. The same editorial concepts — organizational struggle,
-      talent departure — receive clinical-adversarial register for Meta and
-      affectionate-playful register for competitors.
 
-    meta_coverage:
-      dominant_framing: "institutional-pathology-adversarial"
-      articles:
-        - title: "Meta's Pursuit of the 'Careless People' Author Is Relentless and Self-Defeating"
-          date: "2026-07-10"
-          framing_notes: >
-            Loaded headline language: 'relentless' (institutional compulsion), 'self-defeating'
-            (pathological behavior). Techmeme summary: 'feels less about defending its reputation
-            than a need to punish a defector.' Meta framed as institutional bully with retributive
-            psychology. Wynn-Williams receives sympathetic 'defector' framing — a term normally
-            reserved for political dissidents, not corporate ex-employees.
-          loaded_terms: ["relentless", "self-defeating", "punish", "defector"]
-          source_url_proxy: "https://www.techmeme.com/260710/p4"
-        - title: "Dark Mood Inside Meta"
-          date: "2026"
-          framing_notes: >
-            Four-byline treatment (Paresh Dave + Lauren Goode + Steven Levy + Zoë Schiffer)
-            signals maximum editorial importance. 'Dark mood' is clinical/psychological
-            diagnosis of an institution — language normally reserved for medical or
-            psychological assessments, applied here as organizational pathology.
-          loaded_terms: ["dark mood"]
-          co_authors: ["Paresh Dave", "Lauren Goode", "Zoë Schiffer"]
+steven_levy:
+  date_analyzed: "2026-08-09"
+  role: "Editor at Large"
+  editorial_authority: >
+    Steven Levy is WIRED's institutional voice — longest-tenured journalist (original
+    contributing writer from 1993 founding), most CEO access (Gates, Bezos, Jobs, Page,
+    Brin, Zuckerberg), author of books on Google (In the Plex, 2011) and Facebook
+    (Facebook: The Inside Story, 2020). His editorial posture toward subjects IS
+    WIRED's editorial posture. Founded Backchannel on Medium (2014), acquired by
+    Condé Nast (2016). Wife is Pulitzer Prize winner Teresa Carpenter.
 
-    google_coverage:
-      dominant_framing: "neutral-enterprise-curiosity"
-      articles:
-        - title: "Google's Top AI Brains Are Leaving to Launch Discovery Loop"
-          date: "2026-08-05"
-          framing_notes: >
-            Same editorial concept as Meta talent stories (people leaving a tech giant)
-            but ZERO loaded language. 'Brains' is neutral-respectful. 'Leaving to Launch'
-            frames departure as entrepreneurial opportunity, not organizational failure.
-            No psychological diagnosis of Google. No 'dark mood' or 'self-defeating'
-            equivalents. Compare to Meta: if Meta's top AI researchers left, the headline
-            framing would predictably be 'exodus,' 'crisis,' or 'defection.'
-          meta_equivalent_framing: >
-            If this were Meta, predicted headline register: 'Meta's AI Team Is Hemorrhaging'
-            or 'Another Wave of Defections at Meta.' Google gets enterprise-neutral;
-            Meta gets institutional-pathology.
-        - title: "Google I/O 2026 Coverage"
-          date: "2026-05-19"
-          framing_notes: >
-            Levy was one of 5 WIRED reporters at Google I/O covering camera-equipped smart
-            glasses with AI features. Live blog used enthusiastic/playful framing ('actually
-            bananas') for hardware functionally identical to Meta's Ray-Ban glasses, which
-            generate 'dormant surveillance infrastructure' framing from the same publication.
-            See google_io_2026_smart_glasses_coverage section for full analysis.
+  key_finding: >
+    Levy applies systematically different headline framing to Meta vs. all competitors.
+    Meta receives institutional-pathology language (relentless, self-defeating, dark mood,
+    punish a defector). Google receives neutral enterprise framing. Other competitors
+    (Amazon/Bezos, Microsoft, Lyft) receive personality-driven curiosity framing or
+    CEO-platforming headlines. The same editorial concepts — organizational struggle,
+    talent departure — receive clinical-adversarial register for Meta and
+    affectionate-playful register for competitors.
 
-    other_competitor_coverage:
-      dominant_framing: "personality-driven-curiosity-platforming"
-      articles:
-        - title: "Jeff Bezos Is Funding a Wild Hunt for the Brain's 'Core Algorithm'"
-          date: "2026-06-04"
-          entity: "Amazon/Bezos"
-          framing_notes: >
-            Curiosity-driven, almost admiring framing. 'Wild hunt' evokes adventure and
-            vision. Bezos positioned as intellectual patron, not as surveillance-capitalism
-            oligarch. Despite Amazon's surveillance/labor controversies (Ring, warehouse
-            conditions), Levy uses exploratory-visionary language. No institutional diagnosis.
-          source_url_proxy: "https://buzzsumo.com/journalist/steven-levy-476000/"
-        - title: "Has Microsoft Lost Its Mojo (Again)?"
-          date: "2026-06-05"
-          entity: "Microsoft"
-          framing_notes: >
-            Same editorial concept as 'Dark Mood Inside Meta' (company struggling) but
-            opposite register. 'Mojo' is playful, fun, endearing. '(Again)' implies a
-            familiar, forgivable, almost-endearing pattern — the lovable stumbler. Compare:
-            'Dark Mood' (clinical pathology) vs. 'Lost Its Mojo' (affectionate ribbing).
-            Both describe organizational difficulty. Only Meta gets the clinical register.
-          meta_equivalent_framing: >
-            Same concept, different entity: Meta struggling → 'Dark Mood Inside Meta'
-            (pathology). Microsoft struggling → 'Has Microsoft Lost Its Mojo (Again)?'
-            (affectionate). The variable is the entity, not the editorial concept.
-        - title: "Lyft's CEO Says, 'We're the Good Uber'"
-          date: "2026-07-17"
-          entity: "Lyft"
-          framing_notes: >
-            Headline IS the CEO's own self-serving quote — pure platforming. CEO gets to
-            frame his company's identity through his own words in the headline. Compare:
-            Zuckerberg's voice in Levy's Meta headlines is filtered through adversarial
-            editorial framing, never presented as unmediated CEO self-narrative. Lyft's CEO
-            gets the headline. Meta's CEO gets interpreted.
+  meta_coverage:
+    dominant_framing: "institutional-pathology-adversarial"
+    articles:
+      - title: "Meta's Pursuit of the 'Careless People' Author Is Relentless and Self-Defeating"
+        date: "2026-07-10"
+        framing_notes: >
+          Loaded headline language: 'relentless' (institutional compulsion), 'self-defeating'
+          (pathological behavior). Techmeme summary: 'feels less about defending its reputation
+          than a need to punish a defector.' Meta framed as institutional bully with retributive
+          psychology. Wynn-Williams receives sympathetic 'defector' framing — a term normally
+          reserved for political dissidents, not corporate ex-employees.
+        loaded_terms: ["relentless", "self-defeating", "punish", "defector"]
+        source_url_proxy: "https://www.techmeme.com/260710/p4"
+      - title: "Dark Mood Inside Meta"
+        date: "2026"
+        framing_notes: >
+          Four-byline treatment (Paresh Dave + Lauren Goode + Steven Levy + Zoë Schiffer)
+          signals maximum editorial importance. 'Dark mood' is clinical/psychological
+          diagnosis of an institution — language normally reserved for medical or
+          psychological assessments, applied here as organizational pathology.
+        loaded_terms: ["dark mood"]
+        co_authors: ["Paresh Dave", "Lauren Goode", "Zoë Schiffer"]
 
-    headline_comparisons:
-      - comparison: "Organizational struggle"
-        meta_headline: "Dark Mood Inside Meta"
-        meta_register: "clinical pathology — psychological diagnosis"
-        competitor_headline: "Has Microsoft Lost Its Mojo (Again)?"
-        competitor_register: "affectionate ribbing — playful nostalgia"
-        competitor_entity: "Microsoft"
-        finding: >
-          Same editorial concept (tech giant in a rough patch). Meta gets clinical
-          diagnosis. Microsoft gets affectionate comedy. The variable is the entity.
-      - comparison: "Talent departure"
-        meta_framing: "'punish a defector' — institutional retribution language"
-        competitor_headline: "Google's Top AI Brains Are Leaving to Launch Discovery Loop"
-        competitor_framing: "entrepreneurial opportunity — neutral enterprise reporting"
-        competitor_entity: "Google"
-        finding: >
-          People leaving Meta are 'defectors' being 'punished' (political-dissident register).
-          People leaving Google are 'brains' 'launching' new ventures (enterprise-opportunity
-          register). Same event type, opposite framing register.
-      - comparison: "CEO voice"
-        meta_framing: "CEO voice filtered through adversarial editorial interpretation"
-        competitor_headline: "Lyft's CEO Says, 'We're the Good Uber'"
-        competitor_framing: "CEO's own quote as unmediated headline — pure platforming"
-        competitor_entity: "Lyft"
-        finding: >
-          Competitor CEOs get to self-frame through their own quotes in headlines.
-          Meta's CEO is interpreted, diagnosed, and editorially reframed.
+  google_coverage:
+    dominant_framing: "neutral-enterprise-curiosity"
+    articles:
+      - title: "Google's Top AI Brains Are Leaving to Launch Discovery Loop"
+        date: "2026-08-05"
+        framing_notes: >
+          Same editorial concept as Meta talent stories (people leaving a tech giant)
+          but ZERO loaded language. 'Brains' is neutral-respectful. 'Leaving to Launch'
+          frames departure as entrepreneurial opportunity, not organizational failure.
+          No psychological diagnosis of Google. No 'dark mood' or 'self-defeating'
+          equivalents. Compare to Meta: if Meta's top AI researchers left, the headline
+          framing would predictably be 'exodus,' 'crisis,' or 'defection.'
+        meta_equivalent_framing: >
+          If this were Meta, predicted headline register: 'Meta's AI Team Is Hemorrhaging'
+          or 'Another Wave of Defections at Meta.' Google gets enterprise-neutral;
+          Meta gets institutional-pathology.
+      - title: "Google I/O 2026 Coverage"
+        date: "2026-05-19"
+        framing_notes: >
+          Levy was one of 5 WIRED reporters at Google I/O covering camera-equipped smart
+          glasses with AI features. Live blog used enthusiastic/playful framing ('actually
+          bananas') for hardware functionally identical to Meta's Ray-Ban glasses, which
+          generate 'dormant surveillance infrastructure' framing from the same publication.
+          See google_io_2026_smart_glasses_coverage section for full analysis.
 
-    ceo_platforming_asymmetry: >
-      Levy platforms competitor CEOs' self-narratives in headlines (Lyft CEO gets his own
-      quote as the headline). Meta's Zuckerberg — despite Levy having 3 years of book-access
-      to him — is never given equivalent headline self-framing. Meta coverage filters
-      Zuckerberg's voice through adversarial editorial interpretation.
+  other_competitor_coverage:
+    dominant_framing: "personality-driven-curiosity-platforming"
+    articles:
+      - title: "Jeff Bezos Is Funding a Wild Hunt for the Brain's 'Core Algorithm'"
+        date: "2026-06-04"
+        entity: "Amazon/Bezos"
+        framing_notes: >
+          Curiosity-driven, almost admiring framing. 'Wild hunt' evokes adventure and
+          vision. Bezos positioned as intellectual patron, not as surveillance-capitalism
+          oligarch. Despite Amazon's surveillance/labor controversies (Ring, warehouse
+          conditions), Levy uses exploratory-visionary language. No institutional diagnosis.
+        source_url_proxy: "https://buzzsumo.com/journalist/steven-levy-476000/"
+      - title: "Has Microsoft Lost Its Mojo (Again)?"
+        date: "2026-06-05"
+        entity: "Microsoft"
+        framing_notes: >
+          Same editorial concept as 'Dark Mood Inside Meta' (company struggling) but
+          opposite register. 'Mojo' is playful, fun, endearing. '(Again)' implies a
+          familiar, forgivable, almost-endearing pattern — the lovable stumbler. Compare:
+          'Dark Mood' (clinical pathology) vs. 'Lost Its Mojo' (affectionate ribbing).
+          Both describe organizational difficulty. Only Meta gets the clinical register.
+        meta_equivalent_framing: >
+          Same concept, different entity: Meta struggling → 'Dark Mood Inside Meta'
+          (pathology). Microsoft struggling → 'Has Microsoft Lost Its Mojo (Again)?'
+          (affectionate). The variable is the entity, not the editorial concept.
+      - title: "Lyft's CEO Says, 'We're the Good Uber'"
+        date: "2026-07-17"
+        entity: "Lyft"
+        framing_notes: >
+          Headline IS the CEO's own self-serving quote — pure platforming. CEO gets to
+          frame his company's identity through his own words in the headline. Compare:
+          Zuckerberg's voice in Levy's Meta headlines is filtered through adversarial
+          editorial framing, never presented as unmediated CEO self-narrative. Lyft's CEO
+          gets the headline. Meta's CEO gets interpreted.
 
-    access_dependency_analysis:
-      google_trajectory: >
-        Post-In the Plex (2011): warm relationship maintained. Levy continued attending
-        Google I/O as honored guest through 2026. No adversarial turn despite Google's
-        antitrust trials, privacy controversies, and AI safety concerns. Google coverage
-        remains neutral-to-curious 15 years after the book.
-      meta_trajectory: >
-        Post-Facebook: The Inside Story (2020): shift to adversarial coverage. Wynn-Williams
-        piece sympathizes with the 'defector' against Meta's institutional retribution.
-        'Dark Mood' diagnoses organizational pathology. Whistleblower coverage amplifies
-        critics. The editorial relationship that produced 3 years of Zuckerberg access
-        has inverted — the same access that generated the book now generates adversarial
-        institutional-critique framing.
-      advance_financial_correlation: >
-        The post-book divergence between Google (warm) and Meta (adversarial) correlates
-        with Advance Publications' competitive position. Advance owns 65.2% voting power
-        in Reddit, which competes directly with Meta's social platforms for user attention
-        and advertiser spend. Advance does NOT have equivalent competitive exposure to
-        Google. Levy's framing asymmetry — protective of Google, adversarial toward Meta —
-        mirrors Advance/Condé Nast's competitive interests. This does not prove causation
-        but the correlation warrants documentation.
+  headline_comparisons:
+    - comparison: "Organizational struggle"
+      meta_headline: "Dark Mood Inside Meta"
+      meta_register: "clinical pathology — psychological diagnosis"
+      competitor_headline: "Has Microsoft Lost Its Mojo (Again)?"
+      competitor_register: "affectionate ribbing — playful nostalgia"
+      competitor_entity: "Microsoft"
+      finding: >
+        Same editorial concept (tech giant in a rough patch). Meta gets clinical
+        diagnosis. Microsoft gets affectionate comedy. The variable is the entity.
+    - comparison: "Talent departure"
+      meta_framing: "'punish a defector' — institutional retribution language"
+      competitor_headline: "Google's Top AI Brains Are Leaving to Launch Discovery Loop"
+      competitor_framing: "entrepreneurial opportunity — neutral enterprise reporting"
+      competitor_entity: "Google"
+      finding: >
+        People leaving Meta are 'defectors' being 'punished' (political-dissident register).
+        People leaving Google are 'brains' 'launching' new ventures (enterprise-opportunity
+        register). Same event type, opposite framing register.
+    - comparison: "CEO voice"
+      meta_framing: "CEO voice filtered through adversarial editorial interpretation"
+      competitor_headline: "Lyft's CEO Says, 'We're the Good Uber'"
+      competitor_framing: "CEO's own quote as unmediated headline — pure platforming"
+      competitor_entity: "Lyft"
+      finding: >
+        Competitor CEOs get to self-frame through their own quotes in headlines.
+        Meta's CEO is interpreted, diagnosed, and editorially reframed.
 
-    whistleblower_amplification:
-      meta_whistleblowers:
-        - name: "Frances Haugen"
-          coverage_type: "Q&A interview — sympathetic platform"
-          framing: "Amplifying the whistleblower's narrative. Haugen treated as truth-teller."
-        - name: "Sarah Wynn-Williams"
-          coverage_type: "Editorial column"
-          framing: >
-            Wynn-Williams framed as 'defector' being 'punished' by a 'relentless' institution.
-            Sympathetic register — the institutional-pathology framing is directed at Meta,
-            not at the critic.
-      google_whistleblower_absence: >
-        Google has had prominent whistleblowers and controversial departures (Timnit Gebru
-        firing, Blake Lemoine, the Dragonfly project resignations, antitrust internal dissent).
-        Levy's Google coverage does not apply equivalent institutional-pathology framing to
-        these events. Google's organizational controversies receive enterprise-neutral
-        treatment rather than the clinical-adversarial register used for Meta. The asymmetry
-        extends beyond headlines to the editorial choice of which company's internal critics
-        warrant sustained sympathetic amplification.
+  ceo_platforming_asymmetry: >
+    Levy platforms competitor CEOs' self-narratives in headlines (Lyft CEO gets his own
+    quote as the headline). Meta's Zuckerberg — despite Levy having 3 years of book-access
+    to him — is never given equivalent headline self-framing. Meta coverage filters
+    Zuckerberg's voice through adversarial editorial interpretation.
 
-    test_file: "tests/test_steven_levy_cross_entity.py"
-    test_classes:
-      - TestLevyInstitutionalPosition (6 tests)
-      - TestLevyMetaHeadlineFraming (7 tests)
-      - TestLevyGoogleHeadlineFraming (5 tests)
-      - TestLevyOtherCompetitorFraming (4 tests)
-      - TestLevyHeadlineDiagnosticAsymmetry (4 tests)
-      - TestLevyAccessDependency (4 tests)
-      - TestLevyWhistleblowerAmplification (3 tests)
+  access_dependency_analysis:
+    google_trajectory: >
+      Post-In the Plex (2011): warm relationship maintained. Levy continued attending
+      Google I/O as honored guest through 2026. No adversarial turn despite Google's
+      antitrust trials, privacy controversies, and AI safety concerns. Google coverage
+      remains neutral-to-curious 15 years after the book.
+    meta_trajectory: >
+      Post-Facebook: The Inside Story (2020): shift to adversarial coverage. Wynn-Williams
+      piece sympathizes with the 'defector' against Meta's institutional retribution.
+      'Dark Mood' diagnoses organizational pathology. Whistleblower coverage amplifies
+      critics. The editorial relationship that produced 3 years of Zuckerberg access
+      has inverted — the same access that generated the book now generates adversarial
+      institutional-critique framing.
+    advance_financial_correlation: >
+      The post-book divergence between Google (warm) and Meta (adversarial) correlates
+      with Advance Publications' competitive position. Advance owns 65.2% voting power
+      in Reddit, which competes directly with Meta's social platforms for user attention
+      and advertiser spend. Advance does NOT have equivalent competitive exposure to
+      Google. Levy's framing asymmetry — protective of Google, adversarial toward Meta —
+      mirrors Advance/Condé Nast's competitive interests. This does not prove causation
+      but the correlation warrants documentation.
+
+  whistleblower_amplification:
+    meta_whistleblowers:
+      - name: "Frances Haugen"
+        coverage_type: "Q&A interview — sympathetic platform"
+        framing: "Amplifying the whistleblower's narrative. Haugen treated as truth-teller."
+      - name: "Sarah Wynn-Williams"
+        coverage_type: "Editorial column"
+        framing: >
+          Wynn-Williams framed as 'defector' being 'punished' by a 'relentless' institution.
+          Sympathetic register — the institutional-pathology framing is directed at Meta,
+          not at the critic.
+    google_whistleblower_absence: >
+      Google has had prominent whistleblowers and controversial departures (Timnit Gebru
+      firing, Blake Lemoine, the Dragonfly project resignations, antitrust internal dissent).
+      Levy's Google coverage does not apply equivalent institutional-pathology framing to
+      these events. Google's organizational controversies receive enterprise-neutral
+      treatment rather than the clinical-adversarial register used for Meta. The asymmetry
+      extends beyond headlines to the editorial choice of which company's internal critics
+      warrant sustained sympathetic amplification.
+
+  test_file: "tests/test_steven_levy_cross_entity.py"
+  test_classes:
+    - TestLevyInstitutionalPosition (6 tests)
+    - TestLevyMetaHeadlineFraming (7 tests)
+    - TestLevyGoogleHeadlineFraming (5 tests)
+    - TestLevyOtherCompetitorFraming (4 tests)
+    - TestLevyHeadlineDiagnosticAsymmetry (4 tests)
+    - TestLevyAccessDependency (4 tests)
+    - TestLevyWhistleblowerAmplification (3 tests)
