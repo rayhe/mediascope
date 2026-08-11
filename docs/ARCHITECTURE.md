@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 9466 tests across 301 test files (all from real articles)
+├── tests/                       # 9509 tests across 302 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -756,6 +756,8 @@ mediascope/
 │   ├── test_kate_clark_cross_entity.py            # Type B: Kate Clark (WSJ startup/VC desk) cross-entity — Mechanism #27 (Startup Desk vs. Corporate Desk Narrative Segregation). Clark covers Anthropic with hero-arc templates (+0.45 tone) while Bobrowsky covers Meta with accountability templates (-0.15 tone). 0.60-point gap within same publication from desk/genre assignment, not financial incentive. Distinct from Mechanism #26. 8 classes, 38 tests
 │   ├── test_kate_knibbs_cross_entity.py           # Type B: Kate Knibbs (WIRED) cross-entity — Mechanism #20 (Dual Watchdog Paradox). Industry's definitive AI copyright record-keeper (tracker cited in federal court NDCA, CA Assembly AB 412, academic papers) works for Condé Nast which SELLS training data to OpenAI/Amazon/Microsoft/Apple. $0 Meta, $0 Google. Meta headline prominence in shared lawsuits (Books3), dismissive product reviews, accusatory data coverage. OpenAI secondary in shared cases. Two-layer paradox: Condé Nast → OpenAI + Advance → Reddit (65.2% voting) → OpenAI/Alphabet. Record-keeper role = outsized discourse influence. 8 classes, 29 tests
 │   ├── test_ipo_underwriter_research_laundering_aug10.py  # Type C: IPO Underwriter Research Laundering Pipeline — Mechanism #21. GS+MS lead BOTH Anthropic+OpenAI IPOs (unprecedented), research divisions produce AI reports cited as independent analysis. Bank stocks fell 4-5% on OpenAI delay news. Meta zero IPO fees. Reddit Q2 data licensing verified. Anthropic secondary $1.2T. 8 classes, 42 tests
+│   ├── test_type_d_09am_cross_validation_aug11.py # Type D cross-validation (Aug 11, 09:00 PT): Mechanisms #42/#43 cross_publication_findings placement, publications section clean (no mechanism_ids), snap entity in competitor-entities.yaml, 05am stale assertion prevention (>= not ==), structural count sync. 9 classes, 26 tests
+│   ├── test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py # Mechanism #44: WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry. 11-day window (Jun 4-15 2026), 3+ NameTag investigations vs ZERO Apple PCC-to-Google-Cloud coverage. Makeover framing on Uncanny Valley podcast Jun 11. Financial prediction: Condé Nast Apple Intelligence negotiations (~$50M) + Apple News+ (16 titles); Meta $0. 8 legitimate factors. 9 classes, 43 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

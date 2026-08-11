@@ -3375,6 +3375,99 @@ cross_publication_findings:
       - "https://www.wsj.com/tech/apple-openai-lawsuit-f86bd58c"
       - "https://www.barrons.com/articles/apple-openai-io-lawsuit-b4325be0"
 
+  wired_apple_pcc_google_cloud_privacy_pivot:
+    mechanism_id: 44
+    mechanism_name: "WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry"
+    finding_type: "coverage_selection_privacy_scrutiny_inversion"
+    rotation_type: "A"
+    discovery_date: "2026-08-11"
+    publication: "WIRED"
+    finding_summary: >
+      In a single 11-day window (Jun 4–15 2026), WIRED published 3+ standalone investigative
+      articles about Meta's dormant, never-activated, on-device facial recognition code
+      (NameTag) — including code review, EFF researcher analysis, Rank One Computing license
+      document procurement, and Pentagon/police supplier chain tracing — while applying ZERO
+      investigative resources to Apple's fundamental PCC architecture change announced Jun 8 at
+      WWDC 2026, in which Apple shifted Private Cloud Compute from Apple-only silicon servers to
+      Google Cloud with Nvidia GPUs. Apple's PCC shift affects ALL Apple Intelligence users'
+      intimate data (messages, emails, photos, Siri queries), is actively deployed (not dormant),
+      and routes data through third-party cloud infrastructure (Google) — a fundamental reversal
+      of Apple's 2024 promise that PCC would run exclusively on Apple silicon in Apple data
+      centers. WIRED's WWDC coverage instead used "makeover" framing (Brian Barrett, Uncanny
+      Valley podcast Jun 11: "Siri's AI Makeover"). The same Jun 11 episode that framed Apple
+      as receiving a "makeover" ALSO covered WIRED's own NameTag investigation. Financial
+      prediction: Condé Nast/WIRED is IN NEGOTIATIONS for Apple Intelligence content licensing
+      (~$50M est.) and has existing Apple News+ revenue sharing (16 titles). Meta has $0 in
+      Condé Nast deals. Coverage scrutiny inversely correlates with financial relationship.
+    privacy_scope_comparison:
+      meta_nametag:
+        status: "dormant, never activated, removed after WIRED report"
+        data_type: "facial biometrics"
+        processing_location: "on-device only, no central database"
+        user_impact: "zero (code never activated)"
+        articles_count: 3
+        language: "surveillance, Pentagon supplier, police tech, faceprints, biometric signatures"
+        sources_cited: "EFF researcher, ACLU, EPIC, security researchers, license documents"
+        investigation_depth: "code review, license document analysis, vendor identification"
+      apple_pcc_shift:
+        status: "active, deployed, announced at WWDC 2026"
+        data_type: "messages, emails, photos, Siri queries (intimate personal context)"
+        processing_location: "shifted from Apple-only silicon to Google Cloud + Nvidia GPUs"
+        user_impact: "ALL Apple Intelligence users (hundreds of millions)"
+        articles_count: 0
+        language: "makeover"
+        sources_cited: "Apple PR only"
+        investigation_depth: "none"
+    timeline:
+      - date: "2026-06-04"
+        event: "WIRED publishes NameTag investigation — dormant facial recognition code in Meta AI app"
+        source: "Gizmodo, Engadget, Digital Trends all reference WIRED as original source"
+      - date: "2026-06-05"
+        event: "Meta removes NameTag code after WIRED report"
+        source: "https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/"
+      - date: "2026-06-08"
+        event: "Apple WWDC 2026: announces PCC shifting to Google Cloud with Nvidia GPUs"
+        source: "https://www.macrumors.com/2026/06/08/apple-private-cloud-compute-google/"
+      - date: "2026-06-08"
+        event: "WIRED follow-up: Meta Deletes Face-Recognition System From Smart Glasses App"
+        source: "https://yro.slashdot.org/story/26/06/08/1945252/meta-deletes-face-recognition-system-from-its-smart-glasses-app"
+      - date: "2026-06-11"
+        event: "WIRED Uncanny Valley podcast: 'Siri's AI Makeover' — positive framing, same episode covers NameTag"
+        source: "https://buzzsumo.com/journalist/brian-barrett-3765960/"
+      - date: "2026-06-15"
+        event: "WIRED: 'Meta Tapped a Pentagon Supplier to Prototype Face Recognition for Its Glasses' (Rank One)"
+        source: "https://cybernoz.com/meta-tapped-a-pentagon-supplier-to-prototype-face-recognition-for-its-glasses/"
+    financial_prediction:
+      conde_nast_apple_deals:
+        - "Apple News+ distribution: 16 Condé Nast titles, launch partner, est. low millions/yr"
+        - "Apple Intelligence content licensing: in negotiations, est. ~$50M"
+      conde_nast_meta_deals: "$0 — Meta excluded from all Condé Nast AI licensing"
+      prediction: "Coverage scrutiny inversely correlates with financial relationship value"
+    cross_references:
+      - "Mechanism #33: Facial Recognition Privacy Parity (OpenAI vs Meta)"
+      - "Mechanism #41: MIT TR Apple WWDC 2026 PCC-to-Google-Cloud Omission"
+      - "Mechanism #42: Compound Competitor Wearables Coverage Selection Silence"
+      - "Mechanism #20: Kate Knibbs Dual Watchdog Paradox"
+    legitimate_factors:
+      - "Apple's PCC uses Nvidia confidential computing with hardware-level encryption (TDX, Titan chip)"
+      - "Apple has stronger privacy track record than Meta (end-to-end encryption, on-device ML)"
+      - "WIRED's NameTag investigation required genuine original reporting (code review, license documents)"
+      - "Apple's PCC shift was publicly announced, not secretly embedded"
+      - "Apple invited independent verification of PCC architecture"
+      - "Meta's NameTag was embedded in consumer app without public disclosure"
+      - "Facial recognition is generally considered more privacy-invasive than general AI processing"
+      - "Gizmodo independently described Apple's privacy erosion concerns (May 2026 article on PCC shift)"
+    source_urls:
+      - "https://buzzsumo.com/journalist/brian-barrett-3765960/"
+      - "https://www.macrumors.com/2026/06/08/apple-private-cloud-compute-google/"
+      - "https://gizmodo.com/apples-privacy-standards-may-be-eroding-as-new-siri-features-roll-out-report-says-2000759785"
+      - "https://gizmodo.com/metas-facial-recognition-plans-for-smart-glasses-are-worse-than-we-thought-2000768046"
+      - "https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/"
+      - "https://cybernoz.com/meta-tapped-a-pentagon-supplier-to-prototype-face-recognition-for-its-glasses/"
+      - "https://yro.slashdot.org/story/26/06/08/1945252/meta-deletes-face-recognition-system-from-its-smart-glasses-app"
+      - "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/"
+    test_file: "tests/test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
