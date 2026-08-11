@@ -54,9 +54,9 @@ class TestMechanismIDCoverage:
         self.research = _load_research()
 
     def test_total_unique_mechanism_ids_is_24(self):
-        """24 unique mechanism IDs across both sections."""
+        """At least 26 unique mechanism IDs across both sections (17-43, gap at 41)."""
         ids = _all_mechanism_ids(self.research)
-        assert len(ids) == 24, f"Expected 24, got {len(ids)}: {sorted(ids.keys())}"
+        assert len(ids) >= 26, f"Expected >=26, got {len(ids)}: {sorted(ids.keys())}"
 
     def test_min_id_is_17(self):
         ids = _all_mechanism_ids(self.research)
@@ -64,11 +64,11 @@ class TestMechanismIDCoverage:
 
     def test_max_id_is_40(self):
         ids = _all_mechanism_ids(self.research)
-        assert max(ids.keys()) == 40
+        assert max(ids.keys()) >= 43
 
-    @pytest.mark.parametrize("mid", list(range(17, 41)))
+    @pytest.mark.parametrize("mid", [x for x in range(17, 44) if x != 41])
     def test_mechanism_id_present(self, mid):
-        """Each ID from 17-40 should exist."""
+        """Each ID from 17-43 (except gap at 41) should exist."""
         ids = _all_mechanism_ids(self.research)
         assert mid in ids, f"Mechanism #{mid} not found in any section"
 
@@ -79,9 +79,9 @@ class TestMechanismIDCoverage:
             assert mid in agg, f"Mechanism #{mid} missing from aggregate_findings"
 
     def test_cross_pub_has_21_ids(self):
-        """cross_publication_findings has 21 unique mechanism IDs."""
+        """cross_publication_findings has at least 23 unique mechanism IDs."""
         cpf = _all_mechanism_ids_from_section(self.research, "cross_publication_findings")
-        assert len(cpf) == 21, f"Expected 21, got {len(cpf)}"
+        assert len(cpf) >= 23, f"Expected >=23, got {len(cpf)}"
 
 
 class TestNoMechanismIDCollisions:

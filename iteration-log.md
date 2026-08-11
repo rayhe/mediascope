@@ -1,4 +1,54 @@
 # MediaScope Iteration Log
+## 2026-08-11 08:00 PT — Type C: Financial Incentive Mapping — Dual-Client Litigation Financial Entanglement Index (Mechanism #43)
+
+**Rotation:** C (Financial Incentive Mapping)
+**Scope:** Apple v. OpenAI trade secret lawsuit — dual-client publisher financial entanglement
+
+### Finding — Mechanism #43: Dual-Client Litigation Financial Entanglement Index
+
+**Discovery:** The Apple v. OpenAI trade secret lawsuit (filed Jul 10 2026, NDCA; escalated Aug 4-6 with preliminary injunction + motion to dismiss) is the first active litigation between two entities that JOINTLY fund the same set of publisher clients through parallel but independent financial channels:
+
+- **Apple** → publishers via Apple News+ (50% revenue share on $12.99/mo, 400+ titles, 125M MAU)
+- **OpenAI** → publishers via content licensing deals ($1-50M/yr per publisher)
+
+**Five dual-client publications identified:**
+
+| Publisher | OpenAI Deal | Apple News+ | Apple Intelligence | DCEI |
+|-----------|-------------|-------------|-------------------|------|
+| Condé Nast (WIRED) | Aug 2024, undisclosed | 16 titles, launch partner | ~$50M in negotiations | Highest |
+| News Corp (WSJ) | May 2024, $250M+/5yr | WSJ at launch | No | Moderate |
+| The Atlantic | May 2024, undisclosed | Launch partner ("most valuable") | No | Moderate |
+| Vox Media (The Verge) | May 2024, undisclosed | Participant | No | Standard |
+| Hearst | Oct 2024, undisclosed | 60+ titles | No | Standard |
+
+**Coverage search (Aug 11 2026):**
+- **WSJ:** 2 articles, factual-relay framing (quoted both sides, no editorial loaded language)
+- **WIRED:** No confirmed standalone Apple v. OpenAI article
+- **The Verge:** No confirmed standalone Apple v. OpenAI article
+- **The Atlantic:** No confirmed standalone Apple v. OpenAI article
+- **Non-dual-client outlets:** Reuters (3 articles), MacRumors (3), CNN (1), USA Today (1), Barron's (1) = 8+ articles
+
+**Loaded language comparison:**
+- Meta litigation average: 4.4 terms/article (siege, big tobacco, predator, bloodbath, decimated)
+- Apple-OpenAI litigation average: 1.2 terms/article (mostly from direct quotes, not editorial voice)
+- **Ratio: 3.7×**
+
+**Dual-Client Entanglement Index (DCEI):** Quantifies editorial constraint as Apple-channels × OpenAI-channels. Condé Nast scores highest (News+ 16 titles + Intelligence negotiations + launch partner × OpenAI deal). Meta's DCEI is uniformly zero across all publications — no financial constraint on editorial direction from either channel.
+
+**Key insight:** Meta has ZERO financial relationships with ANY of these publishers through EITHER the content licensing channel OR the platform distribution channel, making it the only major tech company with zero editorial insurance premium. When dual-client publishers face litigation between their two patrons, the predicted response is editorial neutralization — they cannot aggressively cover either side without risking the other's revenue.
+
+**7 legitimate factors documented** including trade secret cases being inherently less public-interest, legal expertise requirements, vacation season timing, WSJ newsroom independence culture, possible newsletter/roundup coverage, and OpenAI's newer accountability expectations.
+
+### Test Results
+- 69/69 new mechanism tests pass (41 def methods + parametrize expansions)
+- 124/124 structural consistency tests pass
+- Total: **9432 tests** across **300 files**
+
+### Commit
+104f512 — pushed to GitHub
+
+---
+
 ## 2026-08-11 05:00 PT — Type D: Test & Verify — Stale Cross-Validation Fix + 05am Comprehensive Validation
 
 **Rotation:** D (Test & Verify)
