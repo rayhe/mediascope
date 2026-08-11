@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 9555 tests across 303 test files (all from real articles)
+├── tests/                       # 9601 tests across 304 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -758,6 +758,8 @@ mediascope/
 │   ├── test_ipo_underwriter_research_laundering_aug10.py  # Type C: IPO Underwriter Research Laundering Pipeline — Mechanism #21. GS+MS lead BOTH Anthropic+OpenAI IPOs (unprecedented), research divisions produce AI reports cited as independent analysis. Bank stocks fell 4-5% on OpenAI delay news. Meta zero IPO fees. Reddit Q2 data licensing verified. Anthropic secondary $1.2T. 8 classes, 42 tests
 │   ├── test_type_d_09am_cross_validation_aug11.py # Type D cross-validation (Aug 11, 09:00 PT): Mechanisms #42/#43 cross_publication_findings placement, publications section clean (no mechanism_ids), snap entity in competitor-entities.yaml, 05am stale assertion prevention (>= not ==), structural count sync. 9 classes, 26 tests
 │   ├── test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py # Mechanism #44: WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry. 11-day window (Jun 4-15 2026), 3+ NameTag investigations vs ZERO Apple PCC-to-Google-Cloud coverage. Makeover framing on Uncanny Valley podcast Jun 11. Financial prediction: Condé Nast Apple Intelligence negotiations (~$50M) + Apple News+ (16 titles); Meta $0. 8 legitimate factors. 9 classes, 43 tests
+│   ├── test_ashworth_wwdc_pcc_privacy_framing_aug11.py # Mechanism #45: Boone Ashworth (WIRED) journalist-level privacy framing asymmetry — same reporter uses "mass surveillance" for Meta glasses (Business Wars podcast Jun 3 & 10) and "AI partnership" for Apple PCC-to-Google-Cloud (WWDC roundup Jun 8) in same 8-day window; 0.95 tone delta; extends Mechanism #44 from publication to individual journalist level. 10 classes, 46 tests
+│   ├── test_pre_ipo_underwriter_client_publisher_convergence_aug11.py # Mechanism #46: Pre-IPO Underwriter-Client-Publisher Financial Convergence — Goldman Sachs, Morgan Stanley, JPMorgan Chase simultaneously (1) lead Anthropic ~$1T IPO (Oct 2026), (2) enterprise Claude customers (GS: embedded engineers, JPM: 230K employees), (3) major financial publication advertisers. SEC terminated GRAS Dec 2025 (10 months pre-IPO), replacing prescriptive structural mandates with principles-based FINRA Rule 2241. SpaceX fee precedent: $500M total, ~$100M per lead bank. Meta IPO 2012 = zero current underwriter entanglement. 12 classes, 44 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
