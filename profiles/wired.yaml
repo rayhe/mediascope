@@ -4677,3 +4677,26 @@ cross_entity_coverage_analysis:
       - "https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/"
       - "https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/"
       - "https://marylearning.substack.com/p/summer-of-rogue-ai-2026 (external citation confirming WIRED URLs)"
+
+  open_weight_policy_coverage_selection_asymmetry:
+    date_analyzed: "2026-08-11"
+    rotation_type: "A"
+    mechanism_id: 37
+    key_finding: >
+      Trump White House exempt open-weight models from voluntary AI safety testing (Aug 4, 2026).
+      Policy benefits Meta Llama and constrains OpenAI/Anthropic/Google. WIRED covered the rogue
+      AI incidents that triggered the policy (confirmed by Reuters Aug 5 naming "Wired" among
+      outlets using "going rogue" framing) but published no standalone article on the open-weight
+      exemption that benefits Meta. WSJ (balanced deals), Reuters, CNN, Washington Examiner, and
+      Forkast all published standalone coverage. OpenAI-only deal publications (WIRED, The Verge):
+      0% covered. No-deal publications: 100% covered. Balanced-deal publication (WSJ): 100% covered.
+    coverage_status: "NOT COVERED (standalone article)"
+    rogue_ai_coverage_status: "COVERED — confirmed by Reuters Aug 5 cross-reference"
+    financial_correlation: >
+      WIRED (Condé Nast/OpenAI deal, no Meta deal) covered the INCIDENT (rogue AI, serves
+      regulation narrative) but not the POLICY OUTCOME (open-weight exemption, positions Meta
+      Llama as government-trusted). Editorial selection correlates with financial relationships:
+      the half of the story that serves the regulation narrative gets covered; the half that
+      validates Meta's approach does not.
+    source_urls:
+      - "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"

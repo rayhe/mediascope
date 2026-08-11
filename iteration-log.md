@@ -32912,3 +32912,80 @@ ea1fc52 — pushed to GitHub
 
 ### Commit
 e859241 — pushed to GitHub
+
+## 2026-08-10 23:00 PT — Type D: Test & Verify — End-of-Day Cross-Validation (#33–#36)
+
+**Rotation:** D (Test & Verify)
+**Scope:** Cross-validate today's 4 new mechanisms, fix stale assertions, infrastructure sync
+
+### Fixes Applied
+1. **Stale test counts:** README (8,794→8,870) and ARCHITECTURE (8,845→8,870) synced to structural consistency heuristic. File count 289→291.
+2. **Mechanism_id cross-ref logic:** `test_type_d_1pm_cross_validation_aug10.py` had overly strict assertion — flagged Chokkattu #30 referencing Pero #31 as an error. Fixed to accept valid cross-mechanism references.
+3. **Count tolerance:** 1pm cross-validation hardcoded ~8513 — updated to ~8870 with ±100 tolerance for ongoing growth.
+
+### New Test File
+- `tests/test_type_d_11pm_cross_validation_aug10.py` — 8 classes, 25 tests:
+  - Mechanism_id uniqueness (no dupes except known nested #17, #19; #25 known gap)
+  - #33 facial recognition parity: OpenAI hardware_devices in entities
+  - #34 WIRED rogue AI ↔ #29 Guardian rogue AI coherence (same Irregular experiment)
+  - #35 Advance aggregate: Condé Nast reference validated
+  - #36 pre-IPO convergence: 3 chains (Amazon→WashPost, Salesforce→Time, News Corp), Anthropic entities section present
+  - Infrastructure: 8870 tests / 291 files, all Aug 10 test files present, all mechanism test_file references resolve
+  - Cross-mechanism Meta isolation consistent across #33 + #36
+
+### Test Results
+- 124/124 structural consistency tests pass
+- 25/25 new cross-validation tests pass
+- 299/299 all targeted tests (structural + all Aug 10 cross-validation) pass
+- Total: 8,870 tests across 291 files (structural consistency heuristic)
+
+### Commit
+c5a82ff — pushed to GitHub
+
+---
+
+## Iteration: Aug 11, 2026 00:00 PT — Type A: Competitor Coverage Deep Dive
+
+### Rotation
+A→B→C→D→**A** — Competitor Coverage Deep Dive
+
+### New Mechanism
+**Mechanism #37: Open-Weight Policy Coverage Selection Asymmetry**
+
+Natural experiment: Trump White House exempted open-weight AI models from voluntary safety testing (Aug 4, 2026). Policy benefits Meta Llama, constrains OpenAI/Anthropic/Google.
+
+**Key finding:** Publications with OpenAI-only content deals (WIRED, The Verge) covered the rogue AI incidents that TRIGGERED the policy but published zero standalone articles on the policy OUTCOME that benefits Meta. Publications without asymmetric deals (Reuters, WSJ, CNN, Washington Examiner, Forkast) all covered both.
+
+Coverage rate by deal status:
+- OpenAI-only deal pubs: **0/2** covered exemption (0%)
+- No-deal pubs: **4/4** covered exemption (100%)
+- Balanced-deal pub (WSJ): **1/1** covered exemption (100%)
+
+Extends Mechanism #34 (WIRED rogue AI volume asymmetry) and #35 (Advance/Condé Nast aggregate dependency). 6 confounding factors documented; strongest is recency (7 days as of analysis).
+
+### Profile Updates
+- `profiles/competitor-coverage-research.yaml` — added Mechanism #37 entry
+- `profiles/wired.yaml` — added open_weight_policy_coverage_selection_asymmetry section
+- `profiles/competitor-entities.yaml` — added open_weight_safety_exemption under Meta entity
+
+### New Test File
+- `tests/test_open_weight_policy_coverage_selection_asymmetry_aug11.py` — 12 classes, 46 def tests (55 parametrized):
+  - Event structure (date, beneficiaries, constrained, voluntary framework)
+  - Rogue AI incident chronology and severity ranking
+  - Coverage presence/absence by publication
+  - Coverage selection bias (WIRED/Verge: rogue AI yes, exemption no)
+  - Financial relationship correlation (OpenAI-only → skip, no-deal → cover, balanced → cover)
+  - WSJ framing analysis (neutral analytical, balanced deals)
+  - Narrative selection pattern (incident vs policy outcome)
+  - 6 confounding factors with weights and explanations
+  - Cross-validation with Mechanisms #34, #35
+  - Meta policy positioning (Zuckerberg Aug 10 statement, competitive moat)
+  - Statistical summary (coverage rates by deal status)
+
+### Test Results
+- 55/55 new mechanism tests pass
+- 124/124 structural consistency tests pass
+- Total: 8,920 tests across 292 files
+
+### Commit
+(pending)

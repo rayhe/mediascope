@@ -2970,6 +2970,25 @@ entities:
       source_urls:
       - https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
       - https://pulse2.com/meta-reports-second-quarter-2026-revenue-of-60-8-billion-up-28-percent-year-over-year/
+    open_weight_safety_exemption:
+      date: "2026-08-04"
+      event: "Trump White House AI safety testing framework exempts open-weight models"
+      framework: "Voluntary 30-day pre-release safety review via CAISI/NIST"
+      meta_status: "EXEMPT — Llama is open-weight"
+      openai_status: "MUST COMPLY — closed models"
+      anthropic_status: "MUST COMPLY — closed models"
+      google_status: "MUST COMPLY — closed models"
+      nvidia_status: "EXEMPT — Nemotron is open-weight"
+      zuckerberg_statement_date: "2026-08-10"
+      zuckerberg_statement: "Championed open-weight push, cited government endorsement"
+      competitive_significance: >
+        Creates structural regulatory moat for open-weight developers: zero review burden
+        vs 30-day review for closed models. Positions Meta Llama as government-endorsed.
+        25 tech companies signed supporting letter; OpenAI and Anthropic did NOT sign.
+      coverage_asymmetry_mechanism_id: 37
+      source_urls:
+        - https://www.reuters.com/business/trump-advisers-tell-ai-firms-they-will-not-safety-test-open-weight-models-2026-08-04/
+        - https://www.wsj.com/tech/ai/white-houses-ai-guidelines-exempt-u-s-open-models-from-government-review-74924eb8
     anthropic_compute_deal:
       status: early_talks
       reported_date: '2026-07-17'

@@ -6433,3 +6433,55 @@ cross_publication_findings:
     test_file: tests/test_pre_ipo_owner_investor_publisher_convergence_aug10.py
     test_count: 55
     date_added: 2026-08-10
+  open_weight_policy_coverage_selection_asymmetry:
+    mechanism_id: 37
+    finding_type: competitor_coverage_deep_dive
+    mechanism_name: "Open-Weight Policy Coverage Selection Asymmetry — WIRED/Verge Skip Meta-Favorable AI Policy"
+    finding_summary: |
+      The Trump White House's August 4, 2026 decision to exempt open-weight AI models
+      from voluntary safety testing is a clean natural experiment. The policy benefits
+      Meta (Llama = open-weight, exempt from 30-day review) and constrains OpenAI,
+      Anthropic, and Google (closed models, must submit). Triggered by rogue AI
+      incidents from OpenAI (Jul 21) and Anthropic (Jul 30).
+      
+      COVERAGE SELECTION PATTERN:
+      - Publications WITHOUT asymmetric OpenAI deals all covered the exemption:
+        Reuters (3 articles), WSJ (neutral analytical), CNN (balanced explainer),
+        Washington Examiner (pro-exemption op-ed), Forkast (structural analysis).
+      - Publications WITH OpenAI-only deals SKIPPED the exemption:
+        WIRED (Condé Nast/OpenAI deal, no Meta deal) — zero standalone articles.
+        The Verge (PMC, fragmented deals, no Meta deal) — zero standalone articles.
+      - WSJ (balanced: both OpenAI and Meta deals) covered both rogue AI AND exemption.
+      
+      KEY ASYMMETRY: WIRED covered the rogue AI incidents extensively (confirmed by
+      Reuters Aug 5 article naming "Wired" among publications using "going rogue").
+      But WIRED did NOT cover the policy OUTCOME that positions Meta's open-weight
+      approach as government-endorsed. The incident (scary, regulation-supporting)
+      got covered. The resolution (Meta-favorable) did not.
+      
+      Coverage rate by deal status:
+      - OpenAI-only deal publications: 0% covered exemption (0/2)
+      - No-deal publications: 100% covered exemption (4/4)
+      - Balanced-deal publication (WSJ): 100% covered (1/1)
+      
+      Extends Mechanisms #34 (WIRED rogue AI volume asymmetry) and #35 (Advance/Condé
+      Nast aggregate AI dependency). 6 confounding factors documented (recency, newsletter
+      coverage, editorial bandwidth, voluntary framework, search index limitations,
+      WIRED covering embarrassing OpenAI stories too). Strongest confound is recency
+      (7 days); no confound rated HIGH.
+    entities: [Meta, OpenAI, Anthropic, Google, WIRED, The Verge, WSJ]
+    coverage_rates:
+      openai_deal_only: "0% (0/2)"
+      no_deal: "100% (4/4)"
+      balanced_deals: "100% (1/1)"
+    source_urls:
+      - "https://www.reuters.com/legal/litigation/meta-anthropic-google-openai-meet-with-trump-white-house-amid-rogue-ai-agent-2026-08-04/"
+      - "https://www.wsj.com/tech/ai/white-houses-ai-guidelines-exempt-u-s-open-models-from-government-review-74924eb8"
+      - "https://www.cnn.com/2026/08/06/tech/open-closed-ai-models"
+      - "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"
+      - "https://www.reuters.com/world/china/meta-launches-new-ai-model-zuckerberg-champions-open-weight-push-2026-08-10/"
+      - "https://www.washingtonexaminer.com/op-eds/4675890/trump-open-source-ai-regulation-openai-anthropic/"
+      - "https://forkast.news/white-house-ai-framework-excludes-open-weight-models-from-federal-security-review-creating-structural-competitive-asymmetry/"
+    test_file: tests/test_open_weight_policy_coverage_selection_asymmetry_aug11.py
+    test_count: 55
+    date_added: 2026-08-11
