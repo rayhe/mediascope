@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 8,920 | Across 292 test files |
+| Tests | 9,378 | Across 298 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **9292 tests** across 297 test files, each covering a different analytical capability:
+MediaScope has **9333 tests** across 298 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -704,6 +704,7 @@ MediaScope has **9292 tests** across 297 test files, each covering a different a
 | `test_mit_tr_anduril_meta_warfare_glasses.py` | 30 | MIT TR Anduril/Meta warfare glasses: defense-tech entity detection (Anduril, EagleEye, SBMC), failure_precedent framing device (new — Microsoft $22B cancelled contract), analogy_stacking false-positive filters (factual similes, memory-verb "recalls that"), context-gated Llama entity alias (case-sensitive with model/AI/LLM lookahead), selective_rehabilitation (Palmer Luckey), editorial_deflation ("That's the idea, anyway"), sentiment calibration for neutral-skeptical military reporting |
 | `test_mit_tr_anthropic_preipo_product_validation_aug9.py` | 47 | MIT TR × Anthropic pre-IPO product validation asymmetry (Mechanism #15): fascinated/validating framing for Anthropic products (J-space, Claude Science, Code with Claude, 10 Breakthrough Technologies) vs failure/warfare/dismissive framing for contemporaneous Meta coverage (Instagram hack, Anduril warfare glasses, brain typing), maximum headline valence gap (1.0), Anthropic-as-competence-benchmark device ("too good at hacking" vs Meta "practically mindless" in same article), indirect endowment financial chain (Google/Amazon stakes → MIT $27.4B endowment → OBBBA 8% tax → Kornbluth corporate pivot), pre-IPO amplification timeline (target Oct 2026), 8-class coverage with cross-validation against profile YAML |
 | `test_mit_tr_apple_governance_conflict_aug6.py` | 44 | MIT TR × Apple governance-level conflict analysis: Kate Bergeron (Apple VP Hardware Eng) MIT Corporation term member election (Jul 2026), CSAIL Alliance membership verification, Apple coverage tone (privacy-positive) vs Meta coverage tone (adversarial/surveillance framing), sensor-count paradox (Apple Vision Pro 30+ sensors praised vs Meta 4 sensors surveilled), non-disclosure of governance ties, three-tier influence hierarchy (governance > research funding > no relationship), cross-validation against competitor-coverage-research.yaml profile, statistical direction consistency |
+| `test_mit_tr_apple_wwdc_2026_pcc_omission_aug11.py` | 39 | MIT TR × Apple WWDC 2026 PCC-to-Google-Cloud coverage omission (Mechanism #41): MIT TR praised Apple PCC at WWDC 2024, published Meta-Anduril warfare glasses alarm piece May 2026, but skipped Apple WWDC 2026 PCC shift to Google Cloud. Apple 3 camera AI wearables (glasses, AirPods, pendant) receive zero surveillance language vs Meta warfare/cyborg framing. Kate Bergeron MIT Corporation election (Jul 1 2026) deepens governance conflict during coverage gap. 5 confounding factors, cross-mechanism validation with #33 sensor-count paradox. 9 classes, 41 tests |
 | `test_multi_outlet_comparison.py` | 10 | N-way cross-outlet same-event comparison: compare_multi_articles() function validation (import, min-2 guard, length-mismatch guard, matrix generation), 4-way Zuckerberg town hall cross-analysis file (existence, outlet references, comparison matrix, cross_publication_import detection, tone value numerics), QUALITY_STANDARDS Tier 1 PYMNTS update guard |
 | `test_quote_forward_preference.py` | 3 | Quote extraction forward-preference fix: _extract_nearby_quote prefers forward quotes over backward to prevent cross-speaker misattribution, backward fallback when no forward quote exists, regression test for Ji/Gong misattribution in MIT TR AI agent security article |
 | `test_muse_image_deflation.py` | 22 | iPhone-in-Canada Muse Image rollout: editorial_deflation (better-late-than-never idiom, I-guess hedge, conditional deflation, trailing minimizer), rhetorical_question (Who's-actually contraction), latecomer_narrative (saving-you-steps-from, competitor listing), false-positive guards, integration test for closing-paragraph device cluster |

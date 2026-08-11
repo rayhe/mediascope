@@ -1,4 +1,49 @@
 # MediaScope Iteration Log
+## 2026-08-11 05:00 PT — Type D: Test & Verify — Stale Cross-Validation Fix + 05am Comprehensive Validation
+
+**Rotation:** D (Test & Verify)
+
+### Fix: 01am Cross-Validation Stale Assertions (3 failures → 0)
+
+The 01:00 PT cross-validation test (`test_type_d_01am_cross_validation_aug11.py`) had 3 failures caused by hardcoded values that became stale when mechanisms #38-#40 were added in subsequent iterations:
+
+| Failure | Root Cause | Fix |
+|---------|-----------|-----|
+| `test_mechanism_id_range_17_to_37` | Max ID was 37 at 01:00, now 40 | Changed to `test_mechanism_id_range_17_to_40`, asserts `≥40` |
+| `test_readme_count_is_9107` | README updated from 9107→9260 by later iterations | Changed to `test_readme_count_is_current`, asserts `≥9260` |
+| `test_architecture_count_is_9107` | Same as above | Changed to `test_architecture_count_is_current`, asserts `≥9260` |
+| `test_mechanism_id_count` (bonus) | Expected ≥24 but `cross_publication_findings` has 21 (IDs 19/30/31 in `aggregate_findings`) | Changed to `≥21` |
+
+### New: 05am Cross-Validation Test (55 tests, 9 classes)
+
+`test_type_d_05am_cross_validation_aug11.py` validates the full current state:
+
+1. **TestMechanismIDCoverage** — 24 unique IDs (17-40) across both YAML sections, parametric coverage of all 24
+2. **TestNoMechanismIDCollisions** — IDs 19/30/31 in `aggregate_findings` only, 21 in `cross_publication_findings`, zero overlap
+3. **TestMechanism38Integrity** — Cloud deal coverage selection has finding_summary, test_file, finding_type
+4. **TestMechanism39Integrity** — Samsung selection gap cross-references mechanism #30
+5. **TestMechanism40Integrity** — Advance exposure index cross-references #35 or #37
+6. **TestCoverageSelectionMechanismsHaveLegitimateFactors** — #37, #38, #39 all document legitimate editorial factors
+7. **TestTestCountSync** — README/ARCHITECTURE ≥9260, file count ±1 disk match
+8. **TestAllMechanismTestFilesExist** — All YAML `test_file` references resolve (REPO_ROOT-relative, not TESTS_DIR-relative)
+9. **TestStale01amFixVerified** — No hardcoded `9107` or `max(ids)==37` in 01am file
+
+### Key lesson: test_file path resolution
+
+Mechanism `test_file` values in YAML include the `tests/` prefix (e.g., `tests/test_foo.py`). Must resolve from `REPO_ROOT`, not from `TESTS_DIR` (which would double the prefix to `tests/tests/test_foo.py`).
+
+### Test Results
+- 55/55 new 05am cross-validation tests pass
+- 57/57 fixed 01am cross-validation tests pass
+- 124/124 structural consistency tests pass
+- 332/332 all Aug 11 test files pass combined
+- Total: **9292 tests** across **297 files**
+
+### Commit
+b9fa35a — pushed to GitHub
+
+---
+
 ## 2026-08-11 04:00 PT — Type C: Financial Incentive Mapping — Advance Publications Total AI Financial Exposure Index (Mechanism #40)
 
 **Rotation:** C (Financial Incentive Mapping)
