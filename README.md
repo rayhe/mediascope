@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 8,648 | Across 285 test files |
+| Tests | 8,684 | Across 286 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **8648 tests** across 285 test files, each covering a different analytical capability:
+MediaScope has **8684 tests** across 286 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -689,6 +689,7 @@ MediaScope has **8648 tests** across 285 test files, each covering a different a
 | `test_type_d_08am_cross_validation_aug10.py` | 23 | Type D cross-validation (Aug 10, 08:00 PT): Cross-validates Mechanisms #22–#25 (WSJ Self-Demonetization, NYT Triple-Chain, Casey Newton Disclosure-as-Inoculation, Amazon Dual-Lab Non-Disclosure), mechanism ID uniqueness across all profiles, HTTPS URL consistency (entrepreneur.com/techmeme.com HTTP→HTTPS fixes), Amazon layer count sync (6→7 after OpenAI investment), cross_publication_findings metadata completeness (finding_summary, date_added, test_file for all entries), infrastructure count sync (README/ARCHITECTURE file+test counts). 8 classes, 23 tests |
 | `test_type_d_09am_cross_validation_aug10.py` | 18 | Type D cross-validation (Aug 10, 09:00 PT): Schema validator fixes (5 failures → 0), Mechanism #24 gap resolution (added to competitor-coverage-research.yaml), relationship_type expansion (settlement_reported, indirect_endowment), coverage_prediction expansion (softer_than_expected, positive_if_deal_confirmed), NYT-Anthropic/MITTR-Anthropic schema consistency, Amazon 7-layer verification, Mechanisms #22–#25 contiguity and financial scale ordering. 8 classes, 18 tests |
 | `test_type_d_1pm_cross_validation_aug10.py` | 29 | Type D cross-validation (Aug 10, 13:00 PT): Mechanism #26-#28 cross-validation — mechanism_id field consistency (added missing IDs for #23, #24, #26), Mechanism #28 test_count fix (27→32), README/ARCHITECTURE count drift fix (8,480→8,625 tests, 280→281 files), mechanism_id-summary reference matching, Aug 10 cumulative file integrity (≥11 files), schema integrity (integer mechanism_ids, no duplicates, positive test counts). 8 classes, 43 tests |
+| `test_type_d_6pm_cross_validation_aug10.py` | 25 | Type D cross-validation (Aug 10, 18:00 PT): Mechanisms #30-#32 cross-validation — fixed mechanism_id collision (Georgia Wells #30→#32), genre hypothesis convergence (#30 Chokkattu WIRED + #31 Pero Gizmodo cross-publication pair), positive control isolation (#32 Wells WSJ), three ownership structures (Condé Nast, Keleops AG, News Corp), mechanism contiguity #29-#32, causal chain non-overlap, legitimate factors presence. 8 classes, 36 tests |
 | `test_mit_tr_anduril_meta_warfare_glasses.py` | 30 | MIT TR Anduril/Meta warfare glasses: defense-tech entity detection (Anduril, EagleEye, SBMC), failure_precedent framing device (new — Microsoft $22B cancelled contract), analogy_stacking false-positive filters (factual similes, memory-verb "recalls that"), context-gated Llama entity alias (case-sensitive with model/AI/LLM lookahead), selective_rehabilitation (Palmer Luckey), editorial_deflation ("That's the idea, anyway"), sentiment calibration for neutral-skeptical military reporting |
 | `test_mit_tr_anthropic_preipo_product_validation_aug9.py` | 47 | MIT TR × Anthropic pre-IPO product validation asymmetry (Mechanism #15): fascinated/validating framing for Anthropic products (J-space, Claude Science, Code with Claude, 10 Breakthrough Technologies) vs failure/warfare/dismissive framing for contemporaneous Meta coverage (Instagram hack, Anduril warfare glasses, brain typing), maximum headline valence gap (1.0), Anthropic-as-competence-benchmark device ("too good at hacking" vs Meta "practically mindless" in same article), indirect endowment financial chain (Google/Amazon stakes → MIT $27.4B endowment → OBBBA 8% tax → Kornbluth corporate pivot), pre-IPO amplification timeline (target Oct 2026), 8-class coverage with cross-validation against profile YAML |
 | `test_mit_tr_apple_governance_conflict_aug6.py` | 44 | MIT TR × Apple governance-level conflict analysis: Kate Bergeron (Apple VP Hardware Eng) MIT Corporation term member election (Jul 2026), CSAIL Alliance membership verification, Apple coverage tone (privacy-positive) vs Meta coverage tone (adversarial/surveillance framing), sensor-count paradox (Apple Vision Pro 30+ sensors praised vs Meta 4 sensors surveilled), non-disclosure of governance ties, three-tier influence hierarchy (governance > research funding > no relationship), cross-validation against competitor-coverage-research.yaml profile, statistical direction consistency |

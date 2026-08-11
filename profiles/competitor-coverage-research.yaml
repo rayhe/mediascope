@@ -6233,7 +6233,7 @@ cross_publication_findings:
   wsj_georgia_wells_editorial_independence_control:
     journalist: Georgia Wells
     publication: The Wall Street Journal (News Corp)
-    finding_summary: 'Mechanism #30 — Disclosure-Correlated Editorial Independence Control Case. Georgia Wells covers BOTH
+    finding_summary: 'Mechanism #32 — Disclosure-Correlated Editorial Independence Control Case. Georgia Wells covers BOTH
       OpenAI governance/regulation AND Meta business AI, making her a dual-beat cross-entity control case. Despite News Corp''s
       $250M+ content licensing deal with OpenAI, Wells co-authored adversarial OpenAI coverage: (1) "OpenAI Investigated by
       Coalition of State Attorneys General" (Jun 13, with Keach Hagey) — regulatory enforcement framing; (2) "Rogue AI Hacks
@@ -6245,7 +6245,7 @@ cross_publication_findings:
       tone gap, Guardian 0.80+ gap).
 
       '
-    mechanism_id: 30
+    mechanism_id: 32
     mechanism_name: disclosure_correlated_editorial_independence
     mechanism_type: positive_control
     key_articles:

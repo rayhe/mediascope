@@ -87,7 +87,7 @@ class TestWellsProfileStructure:
         data = load_news_corp_profile()
         profile = get_wells_profile(data)
         analysis = profile.get("cross_entity_coverage_analysis", {})
-        assert analysis.get("mechanism_id") == 30
+        assert analysis.get("mechanism_id") == 32
 
 
 # ---------------------------------------------------------------------------

@@ -32705,3 +32705,30 @@ Previous iterations used pytest --collect-only counts (including parametrize exp
 
 ### Commit
 db8498e — pushed to GitHub
+
+---
+
+## 2026-08-10 17:00 PT — Type B: Journalist Cross-Entity Tracking
+
+### Rotation Target
+Julian Chokkattu (WIRED Reviews Editor) — genre-determined framing direction
+
+### Mechanism #30: Genre-Determined Framing Direction (Temporal Oscillation)
+Same journalist oscillates between adversarial and balanced framing within a single 30-day window (Jun 3 – Jul 2, 2026), driven by output genre:
+- Business Wars podcast (Jun 3-11): adversarial (-0.85/-0.90 tone, "mass surveillance," "I'm a Creep")
+- WIRED product article (Jun 23, Starfire/Adventurer/Fury launch): balanced (-0.05 tone, feature-focused)
+- WIRED editorial analysis (Jul 2, subscription pricing): adversarial (-0.65 tone, "extracting value")
+
+Genre split delta: 0.85 — the largest single-journalist oscillation measured. Cross-publication convergence with James Pero's Mechanism #31 at Gizmodo (Keleops AG ownership vs Condé Nast) — same genre-determines-framing pattern at two independent publications with different ownership eliminates publisher-specific explanation.
+
+5 confounding factors documented: product announcement neutrality, podcast opinion conventions, controversial pricing change, editorial analysis expectations, Meta privacy legacy.
+
+### Files Changed
+- `tests/test_chokkattu_temporal_framing_oscillation_aug10.py` — 7 classes, 30 tests, all pass
+- `profiles/wired.yaml` — added chokkattu_temporal_framing_oscillation section, fixed conde_nast_financial_correlation nesting under google_io section
+- `profiles/competitor-coverage-research.yaml` — Mechanism #30 entry (test_count corrected to 30)
+- `README.md` — 285 test files, 8648 tests
+- `docs/ARCHITECTURE.md` — 285 test files, 8648 tests, new tree entry
+
+### Commit
+f8a3a1d — pushed to GitHub

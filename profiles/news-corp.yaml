@@ -1694,7 +1694,7 @@ journalist_profiles:
     covering both OpenAI regulatory enforcement AND Meta business AI expansion.
     This dual-beat scope makes her a critical cross-entity control case.
   cross_entity_coverage_analysis:
-    mechanism_id: 30
+    mechanism_id: 32
     key_finding: >
       Editorial Independence Under Financial Conflict — Georgia Wells co-authored
       adversarial OpenAI coverage (state AG investigation, Jun 13) despite News Corp's
