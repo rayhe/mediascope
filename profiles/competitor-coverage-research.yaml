@@ -6285,3 +6285,28 @@ cross_publication_findings:
     test_file: tests/test_georgia_wells_cross_entity.py
     test_count: 28
     date_added: 2026-08-10
+  openai_meta_facial_recognition_parity:
+    mechanism_id: 33
+    finding_type: competitor_coverage_deep_dive
+    finding_summary: |
+      Cross-Publication Facial Recognition Privacy Parity Test. OpenAI's Jony Ive
+      hardware device (smart speaker, $200-$300, early 2027) was publicly reported
+      in Feb 2026 to PLAN facial recognition as an advertised feature: Face ID-like
+      auth, always-on cameras + mics, continuous data collection, observes users and
+      suggests actions based on what it sees and hears. Meta's NameTag was discovered
+      Jun 2026 as DORMANT CODE (not activated) in the Meta AI app, processing on-device
+      only with no central database. Coverage asymmetry: OpenAI's PLANNED facial
+      recognition generated zero investigative exposés, zero civil rights coalition
+      letters, zero Congressional letters. Meta's DORMANT code generated 2+ major
+      investigations (WIRED, NYT), 70+ org coalition letter, Senate attention, and
+      alarm language across a dozen+ publications. OpenAI receives aspirational framing
+      ("make us happy," "iPhone killer," "companion not tool"). Meta receives alarm
+      framing ("surveillance," "creepy," "pervert glasses," "mass surveillance predator
+      glasses"). Financial relationship is the variable that predicts the framing
+      direction: all major alarm-framing publications have OpenAI licensing deals and
+      zero Meta deals. 7 legitimate factors documented.
+    publications: [WIRED, The Verge, NYT, Gizmodo, multiple]
+    entities: [OpenAI, Meta]
+    test_file: tests/test_openai_meta_facial_recognition_parity_aug10.py
+    test_count: 60
+    date_added: 2026-08-10

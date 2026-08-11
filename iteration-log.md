@@ -1,4 +1,47 @@
 # MediaScope Iteration Log
+## 2026-08-10 19:00 PT — Type A: Competitor Coverage Deep Dive — Cross-Publication Facial Recognition Privacy Parity (Mechanism #33)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Scope:** OpenAI × Meta — cross-publication facial recognition coverage asymmetry
+
+### Finding — Mechanism #33: Cross-Publication Facial Recognition Privacy Parity Test
+
+**Discovery:** OpenAI's Jony Ive hardware device (smart speaker, $200-$300, early 2027 target) was publicly reported in Feb 2026 (The Information, via MacRumors, Hypebeast, 9to5Mac) to PLAN facial recognition as an advertised feature:
+- Camera with facial recognition similar to Apple's Face ID
+- Always-on cameras + microphones for "environmental awareness"
+- Continuous data collection ("always on strategy," no wake word)
+- "Observe users and suggest actions to help them achieve goals"
+- "Active participant in daily life rather than a passive voice assistant"
+- 200+ employees on hardware team
+
+Meta's NameTag was discovered Jun 2026 as DORMANT CODE in the Meta AI app:
+- Not activated for consumers
+- On-device biometric processing only, no central database
+- Meta stated it was "merely evidence" of exploration
+
+**Coverage Asymmetry:**
+- OpenAI: Zero investigative exposés, zero civil rights coalition letters, zero Congressional attention. Aspirational framing ("make us happy," "iPhone killer," "simple beautiful playful," "companion not tool")
+- Meta: 2+ major investigations (WIRED Jun 4, NYT Feb 13), 70+ civil rights organization coalition letter, US Senators' letter, alarm framing across 12+ publications ("surveillance," "creepy," "pervert glasses," "mass surveillance predator glasses," "worse than we thought")
+
+**Key Insight:** OpenAI's device has MORE invasive features by design (always-on, continuous data collection, observes users) yet receives LESS scrutiny. The variable that predicts the framing direction is NOT the capability's invasiveness — it's the financial relationship. All major alarm-framing publications (WIRED/Condé Nast, The Verge/PMC, NYT) have OpenAI content licensing deals and zero Meta deals.
+
+**7 Legitimate Factors Documented:** Meta's NameTag was hidden (deception narrative valid), Meta has facial recognition history (billion-faceprint DB deleted 2021), Meta glasses are shipping (pre-launch vs shipping scrutiny differential), "dynamic political environment" memo is genuinely alarming, on-device vs cloud processing distinction, Face ID comparison frames as authentication not identification, form factor differences (public wearable vs home speaker).
+
+### Test Results
+- New tests: 60/60 passing (37 def methods + parametrize expansions → 60 pytest-collected)
+- Structural consistency: 124/124 passing
+- Total: 8,721 tests across 287 files (structural consistency estimate)
+
+### Files modified
+- `tests/test_openai_meta_facial_recognition_parity_aug10.py` — 60 tests, 8 classes (new)
+- `profiles/competitor-coverage-research.yaml` — Mechanism #33 entry
+- `profiles/competitor-entities.yaml` — OpenAI hardware_devices section with facial_recognition_privacy_parity
+- `README.md` — Test count updated, new table entry
+- `docs/ARCHITECTURE.md` — Test count updated, new tree entry
+
+### Commit
+Pending
+
 ## 2026-08-10 14:00 PT — Type A: Competitor Coverage Deep Dive — Guardian × OpenAI
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -32732,3 +32775,41 @@ Genre split delta: 0.85 — the largest single-journalist oscillation measured. 
 
 ### Commit
 f8a3a1d — pushed to GitHub
+
+## 2026-08-10 18:00 PT — Type D: Test & Verify — Mechanism ID Collision Fix + Cross-Validation (#30-#32)
+
+**Rotation:** D (Test & Verify)
+
+### Fixes Applied
+
+**1. Mechanism ID collision (#30 → #32 for Georgia Wells):**
+Three unlogged commits (15:00–17:00 PT) created mechanisms #30, #31, and then a SECOND #30, causing a collision:
+- 15:00 PT: Georgia Wells (WSJ) → Mechanism #30
+- 16:00 PT: James Pero (Gizmodo) → Mechanism #31
+- 17:00 PT: Chokkattu (WIRED) → also claimed Mechanism #30
+
+Fix: Georgia Wells renumbered to #32. Chokkattu (#30) and Pero (#31) kept as a conceptual pair — both document genre-determined framing direction across different publications/ownership structures. Updated in: competitor-coverage-research.yaml (finding_summary + mechanism_id), news-corp.yaml (journalist_profiles → Georgia Wells cross_entity_coverage_analysis), test_georgia_wells_cross_entity.py (assertion).
+
+**2. README/ARCHITECTURE test count drift (8,648 → 8,684, 285 → 286 files):**
+Counts now match the regex-based structural consistency counter.
+
+### Cross-Validation Results (test_type_d_6pm_cross_validation_aug10.py, 36 tests)
+
+8 classes:
+1. **TestMechanismIDUniqueness** (5 tests): No duplicate mechanism_ids in aggregate_findings, #30=Chokkattu, #32=Georgia Wells, test file and profile references updated
+2. **TestGenreHypothesisConvergence** (5 tests): #30 (WIRED/Condé Nast) and #31 (Gizmodo/Keleops AG) find same pattern across different ownership
+3. **TestPositiveControlIsolation** (3 tests): #32 labeled positive_control, predicts balanced coverage, references WIRED 0.95 gap
+4. **TestMechanismContiguity** (6 tests): #29-#32 contiguous, no gaps
+5. **TestThreeOwnershipStructures** (3 tests): Condé Nast, Keleops AG, News Corp confirmed
+6. **TestRecentTestFiles** (9 tests): All 3 files exist, have docstrings, have minimum class counts
+7. **TestCausalChainNonOverlap** (3 tests): Genre, editorial direction, and disclosure mechanisms independent
+8. **TestLegitimateFactorsPresence** (3 tests): All files document legitimate factors or cross-publication convergence
+
+### Test Results
+- New tests: 36/36 passing
+- Structural consistency: 124/124 passing
+- Recent mechanism files (Georgia Wells, Pero, Chokkattu): 101/101 passing
+- Total: 8,684 tests across 286 files
+
+### Commit
+ea1fc52 — pushed to GitHub

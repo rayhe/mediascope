@@ -16,6 +16,38 @@ entities:
     model_approach: "proprietary, closed-source API-only models"
     market_cap_approx: $852B (post-money, Mar 2026 funding round)
     ceo: Sam Altman
+    hardware_devices:
+      smart_speaker:
+        designer: Jony Ive (LoveFrom / io Products, acquired for $6.5B)
+        price_range: "$200-$300"
+        launch_target: "early 2027"
+        features:
+          camera: true
+          facial_recognition: "Face ID-like authentication + identification"
+          always_on: true
+          continuous_data_collection: true
+          observe_users_suggest_actions: true
+          environmental_awareness: true
+          microphones: true
+        employees_on_hardware: 200+
+        internal_framing: "active participant in daily life, not a passive voice assistant"
+        privacy_scrutiny_received: zero
+        source: "The Information (Feb 20, 2026), via MacRumors, Hypebeast, 9to5Mac"
+      smart_glasses:
+        status: "in development, 2028+"
+      smart_lamp:
+        status: "in development, 2028+"
+      facial_recognition_privacy_parity:
+        mechanism_id: 33
+        finding: |
+          OpenAI's PLANNED facial recognition (cameras, Face ID-like auth, always-on,
+          observe users and suggest actions) received zero investigative exposés,
+          zero civil rights coalition letters, zero Congressional attention.
+          Meta's DORMANT NameTag code (not activated, on-device only, no central
+          database) generated 2+ major investigations, 70+ org coalition letter,
+          Senate attention, alarm language across 12+ publications. Financial
+          relationships are the predictor: publications with OpenAI deals frame
+          OpenAI hardware aspirationally, Meta hardware with alarm.
     ipo_filing:
       confidential_s1_date: '2026-06-08'
       valuation_at_filing_b: 852
