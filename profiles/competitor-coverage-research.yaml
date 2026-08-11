@@ -4050,6 +4050,75 @@ cross_publication_findings:
       - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
     test_count: 42
     test_file: "tests/test_bobrowsky_smart_glasses_entity_targeting_aug11.py"
+  google_news_ai_prisoner_dilemma_regulatory_arbitrage:
+    date_added: 2026-08-11
+    entities:
+    - Google
+    - Meta
+    - OpenAI
+    - Anthropic
+    finding_summary: 'Google''s News AI pilot program has enrolled 200+ publications globally
+      (confirmed Aug 4, 2026 by Press Gazette citing Google spokesperson), converting the
+      Showcase dependency relationship into AI training rights extraction at scale.
+      Industry insiders characterize the dynamics as a "prisoner''s dilemma" — publishers
+      cannot rationally opt out because competitors who sign get traffic AND cash. A source
+      with inside knowledge called them "no-sue deals" that "rent peace." UK CMA''s
+      world-first ruling (Jun 3, 2026) requiring Google to allow publisher opt-out without
+      ranking harm is effectively neutralized — most major UK publishers are signing anyway
+      because refusing means losing Showcase fees while competitors receive cash. Guardian
+      and FT confirmed as participants earning "single figure millions" GBP annually.
+      Google UK attracted 36B page views in April 2026 (+31% YoY), more than the next 24
+      publishers COMBINED, while taking £21.5B in UK ad spend (+7.5%) vs £1.1B (-5%) for
+      newsbrands/magazines. Meta has ZERO equivalent coercive mechanisms — all 13 Meta
+      publisher deals are voluntary with no anti-litigation clauses, no NDAs, no fee
+      leverage, no traffic control. Yet the same publications signing Google''s coercive
+      deals (Guardian, FT, Condé Nast titles) direct their most sustained adversarial
+      coverage at Meta. The prisoner''s dilemma framing is the first game-theoretic
+      admission from the industry itself that publisher capture is structurally inevitable
+      under Google''s model.
+      '
+    finding_type: financial_incentive_mapping
+    mechanism_id: 50
+    mechanism_name: "Google News AI Prisoner's Dilemma — CMA Regulatory Arbitrage"
+    publication: cross_publication
+    confounding_factors:
+    - factor: Google AI products may genuinely benefit publishers
+      rebuttal: 'Press Gazette sources describe deals as "no-sue deals" that "rent peace"
+        — explicitly NOT product-value exchanges. Chinnappa (ex-Google): optimizing for
+        short term, not sustainable ecosystem.'
+    - factor: Publishers may have independently concluded AI training rights have limited value
+      rebuttal: 'Same publishers (NYT, Condé Nast) are actively suing OTHER companies for
+        AI training use. If training rights were worthless, litigation would be irrational.
+        They surrender rights to Google while suing others for the same thing.'
+    - factor: CMA ruling may still have effect on publishers who haven''t signed
+      rebuttal: '200+ already signed from total pool. Prisoner''s dilemma dynamics
+        accelerate conversion — each new signee increases pressure on holdouts. CMA
+        ruling provides theoretical protection but zero practical benefit when the economic
+        incentives all point toward signing.'
+    - factor: Meta may simply generate more newsworthy privacy/safety controversies
+      rebuttal: 'Google operates a 5-year documented coercive dependency cycle with
+        secrecy clauses, anti-litigation triggers, unilateral contract terminations, and
+        forced AI training rights extraction. These are demonstrably more coercive practices
+        than anything attributed to Meta — yet generate less adversarial coverage.'
+    - factor: Deal amounts may be too small to influence editorial coverage
+      rebuttal: 'Press Gazette reports Guardian and FT earn "single figure millions" GBP
+        annually. For publications where digital revenue is flat or declining, even £5M/yr
+        represents material revenue. Combined with traffic dependency (36B page views) and
+        Showcase fee leverage, the total financial relationship is existential, not marginal.'
+    testable_prediction: 'If the prisoner''s dilemma mechanism is real, we should see:
+      (1) News AI pilot enrollment exceeding 500 publications by mid-2027
+      (2) Zero major publications withdrawing from News AI despite CMA protections
+      (3) Google AI Overviews/AI Mode criticism remaining muted relative to Meta AI criticism
+          across signing publications
+      (4) No WIRED, Guardian, or FT investigation of Google''s coercive deal mechanics
+          comparable to their Meta privacy investigations
+      If any of these predictions FAIL, the mechanism needs revision.'
+    source_urls:
+    - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+    - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+    - https://digiday.com/media/googles-ai-opt-out-leaves-publishers-with-a-choice-they-cant-safely-use/
+    test_count: 51
+    test_file: "tests/test_google_news_ai_prisoner_dilemma_aug11.py"
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

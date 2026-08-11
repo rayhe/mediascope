@@ -9,7 +9,7 @@
 
 **Infrastructure:** README/ARCHITECTURE updated to 9742 tests across 307 files. All structural_consistency tests pass.
 
-**Commit:** [pending]
+**Commit:** ad87656 — pushed to GitHub
 
 ## 2026-08-11 14:00 PT — Type A: Competitor Coverage Deep Dive — Mechanism #48
 

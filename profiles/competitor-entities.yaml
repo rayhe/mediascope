@@ -2935,6 +2935,75 @@ entities:
         it the SAFE target — attacking Meta carries no financial consequence.
 
         '
+      stage_4_scale_confirmation_aug2026:
+        date_confirmed: '2026-08-04'
+        source: Press Gazette
+        news_ai_pilot_global_count: 200+
+        showcase_global_count: 2800
+        showcase_countries: 33
+        uk_deal_terms:
+          duration_years: 2
+          exit_clause_days: 90
+          nda_clauses: true
+          no_sue_clauses: true
+          guardian_annual_revenue: single figure millions GBP
+          ft_annual_revenue: single figure millions GBP
+        uk_market_dominance:
+          google_uk_page_views_apr_2026_b: 36
+          google_uk_page_views_yoy_pct: 31
+          google_uk_page_views_vs_next: more than next 24 biggest website publishers combined
+          google_uk_adspend_2025_b_gbp: 21.5
+          google_uk_adspend_yoy_pct: 7.5
+          newsbrands_magazines_adspend_b_gbp: 1.1
+          newsbrands_magazines_adspend_yoy_pct: -5
+        industry_characterization:
+          prisoner_dilemma: 'AI strategy advisor: "If your competitor has a deal and
+            you are opting out, they get the small amount of traffic and the cash.
+            There is no upside to saying no. It is the prisoner''s dilemma because
+            your competitors have already caved."
+            '
+          no_sue_deals: 'Source with close knowledge of Google: "These deals don''t
+            have product value, they are renting peace and that means the deals
+            will go away."
+            '
+          divide_and_rule: 'Industry source: Google''s strategy is "divide and rule" —
+            bilateral NDAs prevent publishers from coordinating, while individual
+            deals make collective action irrational for each publisher.
+            '
+          chinnappa_long_term: 'Madhav Chinnappa (former Google News exec): "If you
+            are optimising for the short term, doing a deal might be viable. If you
+            are optimising for a sustainable pluralistic media ecosystem in the long
+            term, these deals are not good for that."
+            '
+        cma_regulatory_arbitrage:
+          cma_ruling_date: '2026-06-03'
+          cma_ruling: Publishers allowed to opt out of AI training without ranking harm
+          ruling_undermined: true
+          detail: 'UK CMA''s world-first ruling requiring Google to allow publisher
+            opt-out of AI training without search ranking penalty is effectively
+            nullified. Most major UK publishers are signing Google AI deals anyway
+            because (a) refusing means losing Showcase fees, (b) competitors who
+            sign get cash + traffic, (c) no upside to opting out when competitors
+            have already signed. The regulatory remedy exists on paper but is
+            unenforceable against Google''s financial leverage. Publishers
+            collectively lose bargaining power while each individually gains
+            short-term revenue — the classic prisoner''s dilemma outcome where
+            individual rationality produces collective harm.
+            '
+        mediascope_significance: 'The 200+ publisher enrollment confirms that Google''s
+          coercive Showcase-to-AI-deals pipeline has achieved critical mass. With
+          3,000 Showcase publishers available and 200+ already converted, Google is
+          on pace to capture the majority within 12-18 months. Each conversion
+          simultaneously: (1) extracts AI training rights, (2) suppresses litigation
+          via no-sue clauses, (3) silences regulatory advocacy via NDAs, and
+          (4) creates financial dependency that softens coverage. Meta has converted
+          ZERO publishers through coercive mechanisms — all 13 Meta deals are
+          voluntary with no anti-litigation, no NDAs, and no fee leverage. Yet Meta
+          receives the most adversarial coverage from the SAME publications signing
+          Google''s coercive deals. The prisoner''s dilemma characterization is the
+          first game-theoretic admission from the industry itself that publisher
+          capture is structurally inevitable under Google''s model.
+          '
       source_urls:
       - https://www.techpolicy.press/how-google-paid-the-media-millions-to-avoid-regulatory-pressure/
       - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
@@ -2943,6 +3012,7 @@ entities:
       - https://digiday.com/media/googles-ai-opt-out-leaves-publishers-with-a-choice-they-cant-safely-use/
       - https://www.fastly.com/blog/google-ai-deal-no-publisher-wanted
       - https://www.reuters.com/world/americas/google-pay-publishers-1-bln-over-three-years-their-news-2020-10-01/
+      - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
     anthropic_spv_guarantee_exposure:
       overview: 'Google is payment GUARANTOR on Anthropic''s $35B off-balance-sheet
         SPV lease financing (Apollo/Blackstone, Jul 2026). If Anthropic defaults on
