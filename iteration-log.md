@@ -1,4 +1,29 @@
 # MediaScope Iteration Log
+## 2026-08-11 04:00 PT — Type C: Financial Incentive Mapping — Advance Publications Total AI Financial Exposure Index (Mechanism #40)
+
+**Rotation:** C (Financial Incentive Mapping)
+**Scope:** Advance Publications — total AI content licensing financial exposure quantification
+
+### Finding — Mechanism #40: Advance Publications Total AI Financial Exposure Index
+
+**Discovery:** First comprehensive quantification of Advance's total financial exposure to AI content licensing, extending Mechanism #37 (Advance Dual-Asset Monetization) with Q2 2026 Reddit earnings data and active litigation updates.
+
+**Key financial data (all sourced this session):**
+- Reddit Q2 2026 (reported Jul 30): Revenue $805M (+61% YoY), Other revenue $43M (+24% YoY), EPS $1.25, DAUq 130.3M
+- Reddit market cap: $30.54B as of Aug 10, 2026
+- Advance ~30% Reddit stake → ~$9.16B exposure
+- Reddit v. Perplexity: MTD denied Jul 31, 2026 (Judge Engelmayer, S.D.N.Y.)
+- Reddit v. Anthropic: removed to federal court Jul 3, 2026 (N.D. Cal.)
+- Anthropic $1.5B author copyright settlement: final approval Jul 20, 2026
+- Condé Nast: 33 editorial staff cut in 5 months (2026), SELF shuttered, events revenue +40%
+- Meta-Anthropic $10B compute lease deal: in early talks (NYT Jul 17, 2026)
+
+**Test file:** `test_advance_total_ai_financial_exposure_index_aug11.py` — 9 classes, 41 tests (all passing)
+**Structural consistency:** 124/124 passing after README.md and ARCHITECTURE.md updates (296 files, 9260 tests)
+**Git:** Committed and pushed to `rayhe/mediascope-asymmetry` main
+
+---
+
 ## 2026-08-11 03:00 PT — Type B: Journalist Cross-Entity Tracking — Chokkattu Samsung Coverage Selection Gap (Mechanism #39)
 
 **Rotation:** B (Journalist Cross-Entity Tracking)

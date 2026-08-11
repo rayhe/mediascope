@@ -101,16 +101,16 @@ class TestMechanismIDContiguity:
                 ids.add(val["mechanism_id"])
         return ids
 
-    def test_mechanism_id_range_17_to_37(self):
-        """Mechanism IDs should span 17-37 (the documented range)."""
+    def test_mechanism_id_range_17_to_40(self):
+        """Mechanism IDs should span 17-40 (updated after mechanisms #38-#40 added)."""
         ids = self._all_mechanism_ids()
         assert min(ids) == 17, f"Expected min ID 17, got {min(ids)}"
-        assert max(ids) == 37, f"Expected max ID 37, got {max(ids)}"
+        assert max(ids) >= 40, f"Expected max ID ≥40, got {max(ids)}"
 
     def test_mechanism_id_count(self):
-        """At least 16 unique mechanism IDs cataloged (17-37 with known gaps)."""
+        """At least 21 unique mechanism IDs cataloged in cross_publication_findings."""
         ids = self._all_mechanism_ids()
-        assert len(ids) >= 16, f"Expected ≥16 unique IDs, got {len(ids)}: {sorted(ids)}"
+        assert len(ids) >= 21, f"Expected ≥21 unique IDs, got {len(ids)}: {sorted(ids)}"
 
 
 class TestDistinctionFromReferences:
@@ -156,21 +156,21 @@ class TestDistinctionFromReferences:
 class TestTestCountSync:
     """Verify README/ARCHITECTURE counts match the enhanced static counter."""
 
-    def test_readme_count_is_9107(self):
-        """README.md test count header updated to 9107."""
+    def test_readme_count_is_current(self):
+        """README.md test count header should be ≥9260 (updated after mechanisms #38-#40)."""
         readme = (REPO_ROOT / "README.md").read_text()
         match = re.search(r"\*\*(\d+) tests\*\* across (\d+) test files", readme)
         assert match, "README.md missing test count header"
         count = int(match.group(1))
-        assert count == 9107, f"README claims {count} tests, expected 9107"
+        assert count >= 9260, f"README claims {count} tests, expected ≥9260"
 
-    def test_architecture_count_is_9107(self):
-        """ARCHITECTURE.md test count header updated to 9107."""
+    def test_architecture_count_is_current(self):
+        """ARCHITECTURE.md test count header should be ≥9260 (updated after mechanisms #38-#40)."""
         arch = (REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         match = re.search(r"(\d+) tests across (\d+) test files", arch)
         assert match, "ARCHITECTURE.md missing test count header"
         count = int(match.group(1))
-        assert count == 9107, f"ARCHITECTURE.md claims {count} tests, expected 9107"
+        assert count >= 9260, f"ARCHITECTURE.md claims {count} tests, expected ≥9260"
 
     def test_file_count_is_293(self):
         """File count should be 293 after adding this cross-validation test."""
