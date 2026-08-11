@@ -6092,6 +6092,73 @@ cross_publication_findings:
       - https://www.reuters.com/legal/litigation/openai-anthropic-ai-agents-implicated-new-security-breaches-2026-08-05/
     test_count: 63
     test_file: tests/test_jeff_horwitz_cross_entity.py
+  ft_openai_hardware_privacy_double_standard:
+    publication: financial-times
+    finding_type: competitor_coverage_deep_dive
+    mechanism_id: 18
+    finding_summary: 'Hardware Privacy Framing Inversion (Mechanism #18): FT covers OpenAI''s Jony Ive hardware
+      device (always-on cameras + microphones, facial recognition, continuous data collection, no wake word,
+      "observe users") with aspirational framing while applying alarm framing to Meta Ray-Ban glasses (which
+      have an LED recording indicator, no always-on cameras, no facial recognition). OpenAI''s device has
+      MORE invasive features by design yet receives LESS scrutiny from the same publication. FT''s OpenAI
+      content licensing deal (Mar 2024, €5M+/yr) and absent Meta deal predict the framing direction.'
+    test_file: tests/test_ft_openai_hardware_privacy_double_standard_aug9.py
+    test_count: 37
+    date_added: 2026-08-09
+  kate_knibbs_dual_watchdog_paradox:
+    publication: wired
+    finding_type: journalist_cross_entity
+    journalist: Kate Knibbs
+    mechanism_id: 20
+    finding_summary: 'Dual Watchdog Paradox (Mechanism #20): Kate Knibbs maintains WIRED''s "Every AI Copyright
+      Lawsuit in the US, Visualized" — the most widely cited AI copyright tracker, referenced in federal court
+      filings. She is simultaneously employed by Condé Nast, which has an OpenAI content licensing deal (Aug
+      2024). Her tracker functions as an authoritative record of AI IP disputes while her employer profits
+      from one of the defendants'' business model. No disclosure of employer''s financial relationship with
+      OpenAI accompanies the tracker or related coverage.'
+    test_file: tests/test_kate_knibbs_cross_entity.py
+    test_count: 29
+    date_added: 2026-08-09
+  ipo_underwriter_research_laundering:
+    publication: cross_publication
+    finding_type: financial_incentive_mapping
+    mechanism_id: 21
+    finding_summary: 'IPO Underwriter Research Laundering Pipeline (Mechanism #21): Goldman Sachs and Morgan
+      Stanley simultaneously lead BOTH the Anthropic IPO and OpenAI IPO (WSJ confirmed separate deal teams)
+      while producing AI industry research widely cited by tech journalists as independent "Wall Street analysis."
+      Banks earn 2-7% on combined $250B+ valuations ($5-17.5B fees). Their research teams produce "AI economy"
+      reports and price targets that journalists cite without disclosing the issuing bank''s underwriting role.
+      Creates a research-laundering pipeline: underwriter analysis → journalist citation → public sentiment
+      → IPO demand → underwriter fees.'
+    test_file: tests/test_ipo_underwriter_research_laundering_aug10.py
+    test_count: 42
+    date_added: 2026-08-10
+  wsj_openai_ad_cannibalization_self_demonetization:
+    publication: wall_street_journal
+    finding_type: competitor_coverage_deep_dive
+    mechanism_id: 22
+    finding_summary: 'Content Licensee Self-Demonetization Paradox (Mechanism #22): News Corp/WSJ licenses
+      content to OpenAI ($50M/yr) → OpenAI uses that content to build an ad-supported chatbot → ChatGPT ads
+      directly compete with publisher ad revenue → Paywall Penalty study shows WSJ gets 0% AI citations →
+      WSJ does not investigate this self-demonetization cycle. The publication that should be most motivated
+      to investigate OpenAI''s ad cannibalization of publisher revenue is structurally inhibited by its own
+      licensing deal.'
+    test_file: tests/test_wsj_openai_ad_cannibalization_self_demonetization_aug10.py
+    test_count: 62
+    date_added: 2026-08-10
+  amazon_dual_lab_non_disclosure_triangle:
+    publication: cross_publication
+    finding_type: financial_incentive_mapping
+    mechanism_id: 25
+    finding_summary: 'Amazon-Bezos $63B Dual-Lab Non-Disclosure Triangle (Mechanism #25): Amazon is the single
+      largest investor in BOTH OpenAI ($50B, Feb 2026) AND Anthropic ($13B+, cumulative through Apr 2026),
+      totaling $63B across the two AI labs that have both filed confidential S-1s for IPO. Jeff Bezos personally
+      owns the Washington Post, which has its own strategic content-sharing agreement with OpenAI. WaPo editorial
+      pages systematically omit disclosure of Bezos''s AI financial interests. Three-hop disclosure chain
+      (WaPo → Bezos → Amazon → OpenAI/Anthropic) creates structural opacity.'
+    test_file: tests/test_amazon_dual_lab_non_disclosure_triangle_aug10.py
+    test_count: 26
+    date_added: 2026-08-10
   nyt_anthropic_triple_chain_incentive:
     publication: nytimes
     finding_type: financial_incentive_mapping

@@ -526,19 +526,81 @@ class TestTestFileListingConsistency:
             count -= 1
         return count
 
+    @staticmethod
+    def _resolve_variable_list_length(content: str, var_expr: str) -> int | None:
+        """Resolve the length of a variable-referenced list in a Python file.
+
+        Handles:
+        - Simple variables: ``PUBLICATIONS`` → finds ``PUBLICATIONS = [...]``
+        - Dictionary access: ``SOME_DICT["key"]`` → finds the key's value list
+        - Class-level variables: ``VARNAME = [...]`` inside a class body
+
+        Returns the item count or None if unresolvable.
+        """
+        # Strip whitespace
+        var_expr = var_expr.strip()
+
+        # Case 1: dict access like VAR["key"] or VAR['key']
+        dict_match = re.match(r"(\w+)\[(['\"])(.+?)\2\]", var_expr)
+        if dict_match:
+            dict_name = dict_match.group(1)
+            key = dict_match.group(3)
+            # Find the dict definition and extract the key's value
+            # Look for key: [...] or "key": [...]
+            dict_pattern = re.compile(
+                rf'{dict_name}\s*=\s*\{{', re.MULTILINE
+            )
+            dict_m = dict_pattern.search(content)
+            if dict_m:
+                # Find the key within the dict
+                # Search for "key": [...] or 'key': [...]
+                remaining = content[dict_m.end():]
+                key_pattern = re.compile(
+                    rf'["\']?{re.escape(key)}["\']?\s*:\s*\[(.*?)\]',
+                    re.DOTALL,
+                )
+                key_m = key_pattern.search(remaining)
+                if key_m:
+                    items_text = key_m.group(1).strip()
+                    if items_text:
+                        return TestTestFileListingConsistency._count_top_level_items(items_text)
+            return None
+
+        # Case 2: simple variable like PUBLICATIONS
+        if re.match(r"^\w+$", var_expr):
+            # Search for VARNAME = [...] at module level or class level
+            var_pattern = re.compile(
+                rf'^\s*{re.escape(var_expr)}\s*=\s*\[(.*?)\]',
+                re.MULTILINE | re.DOTALL,
+            )
+            var_m = var_pattern.search(content)
+            if var_m:
+                items_text = var_m.group(1).strip()
+                if items_text:
+                    return TestTestFileListingConsistency._count_top_level_items(items_text)
+            return None
+
+        return None
+
     def _count_parametrize_expansions(self) -> int:
         """Count extra tests from @pytest.mark.parametrize decorators.
 
         Each parametrize decorator with N items produces N tests from 1 def,
         so the expansion is (N - 1) per decorator.  Uses depth-aware item
         counting to correctly handle tuple-valued parametrize entries.
+
+        Handles both inline lists and variable references:
+        - Inline: ``@pytest.mark.parametrize("x", [1, 2, 3])``
+        - Variable: ``@pytest.mark.parametrize("x", MY_LIST)``
+        - Dict access: ``@pytest.mark.parametrize("x", MY_DICT["key"])``
         """
         tests_dir = _REPO_ROOT / "tests"
         extra = 0
         for f in tests_dir.glob("test_*.py"):
             content = f.read_text()
+            # Pattern 1: inline list (single or double quotes for param name)
             for m in re.finditer(
-                r"@pytest\.mark\.parametrize\(\s*\"[^\"]+\",\s*\[(.*?)\]",
+                r"@pytest\.mark\.parametrize\(\s*[\"'][^\"']+[\"'],\s*\[(.*?)\]",
                 content,
                 re.DOTALL,
             ):
@@ -547,6 +609,19 @@ class TestTestFileListingConsistency:
                     continue
                 n_items = self._count_top_level_items(items_text)
                 if n_items > 1:
+                    extra += n_items - 1
+            # Pattern 2: variable reference (not an inline list)
+            for m in re.finditer(
+                r"@pytest\.mark\.parametrize\(\s*[\"'][^\"']+[\"'],\s*"
+                r"(?!\[)"            # negative lookahead: not an inline list
+                r"(\w+(?:\[[\"'][^\"']+[\"']\])?)",  # VARNAME or VARNAME["key"]
+                content,
+            ):
+                var_expr = m.group(1).strip()
+                if not var_expr or var_expr.startswith("["):
+                    continue
+                n_items = self._resolve_variable_list_length(content, var_expr)
+                if n_items is not None and n_items > 1:
                     extra += n_items - 1
         return extra
 
