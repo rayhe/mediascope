@@ -6552,3 +6552,54 @@ cross_publication_findings:
     test_file: tests/test_open_weight_policy_coverage_selection_asymmetry_aug11.py
     test_count: 55
     date_added: 2026-08-11
+
+  anthropic_meta_cloud_deal_coverage_selection:
+    mechanism_id: 38
+    finding_type: competitor_coverage_deep_dive
+    mechanism_name: "Anthropic-Meta Cloud Deal Coverage Selection Asymmetry"
+    finding_summary: |
+      On July 17, 2026, the NYT reported Anthropic is in early talks to lease
+      computing power from Meta in a deal worth up to $10 billion over two years.
+      Anthropic approached Meta in June 2026. The deal would make Anthropic a
+      Meta CUSTOMER and validate Meta's $130-145B capex spending.
+      
+      COVERAGE SELECTION PATTERN:
+      - Reuters, Bloomberg, CNN, CNBC, eWeek, financial press: all covered
+      - NYT: broke the story (original source)
+      - WSJ (balanced deals): covered via CIO Journal
+      - WIRED (Condé Nast/OpenAI deal): NO standalone article found via web search
+      - The Verge (PMC, no Meta deal): NO standalone article found via web search
+      
+      COMPARISON WITH OTHER ANTHROPIC DEALS:
+      - SpaceX/Colossus ($45B/3yr): covered by TechCrunch, The Verge, Reuters, Bloomberg
+      - CoreWeave (multi-year GPU): covered by TechCrunch, The Verge, Reuters, Bloomberg
+      - Fluidstack ($50B): covered by TechCrunch, Reuters
+      - When the partner is NOT Meta, tech publications cover the deal
+      - When the partner IS Meta, publications with adversarial Meta tone omit it
+      
+      KEY INSIGHT: Coverage SELECTION is as powerful as coverage FRAMING.
+      A story that is never published cannot shape reader understanding.
+      The Meta-Anthropic deal validates Meta's infrastructure spending and 
+      complicates the "Meta overbuilds / Anthropic is responsible" narrative.
+      
+      7 legitimate factors documented: deal still preliminary, B2B vs consumer news,
+      possible newsletter coverage, news cycle competition, editorial bandwidth,
+      search indexing lag, and consistency control (did publications also skip
+      non-Meta Anthropic deals?). None rated HIGH.
+    entities: [Meta, Anthropic, WIRED, The Verge, NYT, WSJ, Reuters, CNN, Bloomberg]
+    distinction_from:
+      - mechanism_id: 37
+        distinction: "#37 is about policy coverage selection; #38 is about deal coverage selection"
+      - mechanism_id: 34
+        distinction: "#34 is about incident coverage volume; #38 is about business deal coverage presence"
+      - mechanism_id: 36
+        distinction: "#36 maps existing owner-investor-publisher chains; #38 shows reaction when a NEW financial link (Meta-Anthropic) forms"
+    source_urls:
+      - "https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/"
+      - "https://www.cnn.com/2026/07/17/tech/meta-anthropic-ai-cloud-computing"
+      - "https://www.zacks.com/stock/news/2956097/anthropic-meta-ai-deal-in-the-cards-etfs-in-focus"
+      - "https://www.eweek.com/news/meta-anthropic-10b-ai-compute-lease/"
+      - "https://www.fool.com/investing/2026/07/29/mark-zuckerbergs-meta-is-in-early-talks-to-lease-1/"
+    test_file: tests/test_anthropic_meta_cloud_deal_coverage_selection_aug11.py
+    test_count: 60
+    date_added: 2026-08-11

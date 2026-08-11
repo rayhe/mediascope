@@ -1,4 +1,50 @@
 # MediaScope Iteration Log
+## 2026-08-11 01:00 PT — Type D: Test & Verify — Parametrize Counter Fix + Missing Mechanism IDs
+
+**Rotation:** D (Test & Verify)
+
+### Fix 1: Parametrize Counter Enhancement
+
+The structural consistency test's static test counter (`_count_parametrize_expansions`) only handled inline list parametrize (`@pytest.mark.parametrize("x", [1, 2, 3])`), missing:
+- **Variable references:** `@pytest.mark.parametrize("pub", PUBLICATIONS)` — resolves class/module-level variable assignments
+- **Dict access:** `@pytest.mark.parametrize("phrase", DICT["key"])` — resolves dictionary key lookups
+- **Single-quote param names:** `@pytest.mark.parametrize('factor', [...])` — now supported
+
+**Impact:** Static count jumped from 8920 to 9107 (+187, of which 130 were previously uncounted variable parametrize expansions). Real pytest collection: 9117 (10-test residual gap from list comprehensions in parametrize, accepted as static-analysis limitation).
+
+### Fix 2: Five Missing Mechanism IDs
+
+Five mechanisms existed in test files and cross-validation references but had NO entry in `competitor-coverage-research.yaml`:
+
+| ID | Name | Test File | Tests |
+|----|------|-----------|-------|
+| 18 | FT Hardware Privacy Double Standard | test_ft_openai_hardware_privacy_double_standard_aug9.py | 37 |
+| 20 | Kate Knibbs Dual Watchdog Paradox | test_kate_knibbs_cross_entity.py | 29 |
+| 21 | IPO Underwriter Research Laundering | test_ipo_underwriter_research_laundering_aug10.py | 42 |
+| 22 | WSJ OpenAI Ad Cannibalization | test_wsj_openai_ad_cannibalization_self_demonetization_aug10.py | 62 |
+| 25 | Amazon Dual-Lab Non-Disclosure Triangle | test_amazon_dual_lab_non_disclosure_triangle_aug10.py | 26 |
+
+All now have full entries with mechanism_id, finding_summary, finding_type, test_file, test_count, and date_added.
+
+### Cross-Validation
+
+New test file: `tests/test_type_d_01am_cross_validation_aug11.py` — 8 classes, 57 tests:
+- Mechanism ID completeness (#18, #20, #21, #22, #25 now cataloged)
+- Mechanism ID uniqueness and contiguity (17-37 range, 21 unique IDs)
+- Distinction_from cross-references validate against cataloged IDs
+- New entry schema validation (required fields, test file existence)
+- README/ARCHITECTURE count sync (9107 tests, 293 files)
+- Parametrize counter enhancement verification
+- Aug 10-11 cumulative file integrity
+- Mechanism #37 structural integrity
+
+### Test Results
+- 57/57 cross-validation tests pass
+- 124/124 structural consistency tests pass
+- Total: 9107 tests across 293 files (static counter)
+
+### Commit
+8f72b9e — pushed to GitHub
 ## 2026-08-10 22:00 PT — Type C: Financial Incentive Mapping — Pre-IPO Owner-Investor-Publisher Convergence (Mechanism #36)
 
 **Rotation:** C (Financial Incentive Mapping)
@@ -32989,3 +33035,39 @@ Extends Mechanism #34 (WIRED rogue AI volume asymmetry) and #35 (Advance/Condé 
 
 ### Commit
 42a6a2d — pushed to GitHub
+
+---
+
+## Aug 11, 2026 02:00 PT — Type A: Competitor Coverage Deep Dive
+
+### Mechanism #38: Anthropic-Meta Cloud Deal Coverage Selection Asymmetry
+
+**Event:** On Jul 17, 2026, NYT reported Anthropic in early talks to lease $10B/2yr of compute from Meta. Anthropic approached Meta in June 2026. The deal would make Anthropic a Meta customer.
+
+**Coverage map (Jul 17-18):**
+- Covered: NYT (original), Reuters, Bloomberg, CNN, CNBC, eWeek, Zacks, Motley Fool
+- NOT covered (standalone): WIRED, The Verge
+
+**Key asymmetry:** WIRED and The Verge DID cover Anthropic's non-Meta compute deals (SpaceX Colossus $45B/3yr, CoreWeave, Fluidstack $50B). Coverage SELECTION (choosing what to report) is a subtler form of editorial influence than coverage FRAMING.
+
+**Why it matters:**
+1. Validates Meta's $130-145B capex spending
+2. Makes Anthropic a Meta customer
+3. Complicates adversarial "Meta bad / Anthropic good" narrative
+
+**Legitimate factors documented:** Deal is early-stage, may be considered financial not tech news, newsletter coverage not searchable, editorial bandwidth limits, web search may miss articles.
+
+### Files Created/Updated
+- `tests/test_anthropic_meta_cloud_deal_coverage_selection_aug11.py` — 8 classes, 43 def tests (60 parametrized)
+- `profiles/competitor-coverage-research.yaml` — Mechanism #38 appended
+- `profiles/competitor-entities.yaml` — `meta_cloud_compute_deal` section added under `anthropic:`
+- `docs/ARCHITECTURE.md` — test count updated to 9161
+- `README.md` — test file entry added, count updated to 9161
+
+### Test Results
+- 60/60 new mechanism tests pass
+- 124/124 structural consistency tests pass
+- Total: 9,161 tests across 294 files
+
+### Commit
+0b5ac7d — pushed to GitHub

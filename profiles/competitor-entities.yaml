@@ -495,6 +495,37 @@ entities:
         without any publicly announced publisher content deal.
         '
       source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
+    meta_cloud_compute_deal:
+      mechanism_id: 38
+      date_reported: '2026-07-17'
+      original_source: New York Times
+      deal_value_b: 10
+      deal_duration_years: 2
+      deal_type: compute_lease
+      payment_structure: monthly_increments
+      proposer: Anthropic (approached Meta in June 2026)
+      deal_status: early_talks
+      meta_capex_context_b: '130-145 (2026 expected)'
+      zuckerberg_quote: 'Almost every week there are different companies that come
+        to us from outside asking us if we have compute that they could buy from
+        us at some premium to what we''ve bought it at.'
+      significance: |
+        1. Makes Anthropic a META customer (inverting adversarial narrative)
+        2. Validates Meta's $130-145B capex spending as revenue-generating
+        3. Opens Meta cloud business competing with AWS/Azure/GCP
+        4. Creates Anthropic-Meta financial relationship — complicates
+           publications' narrative of adversarial Meta / favorable Anthropic
+      coverage_selection_finding: |
+        8+ outlets covered (NYT, Reuters, Bloomberg, CNN, CNBC, eWeek, Zacks,
+        Motley Fool). WIRED and The Verge — publications with documented
+        adversarial Meta coverage — had NO standalone articles found via
+        web search as of Aug 11, 2026. Both publications covered Anthropic's
+        non-Meta compute deals (SpaceX, CoreWeave, Fluidstack) with
+        standalone articles.
+      source_urls:
+        - https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/
+        - https://www.cnn.com/2026/07/17/tech/meta-anthropic-ai-cloud-computing
+        - https://www.zacks.com/stock/news/2956097/anthropic-meta-ai-deal-in-the-cards-etfs-in-focus
     investor_advertiser_publisher_triangle:
       overview: 'Anthropic has ZERO direct publisher content licensing deals, but
         is NOT financially neutral to publishers. Its two largest strategic investors
