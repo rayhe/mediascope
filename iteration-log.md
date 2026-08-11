@@ -1,4 +1,49 @@
 # MediaScope Iteration Log
+## 2026-08-11 03:00 PT — Type B: Journalist Cross-Entity Tracking — Chokkattu Samsung Coverage Selection Gap (Mechanism #39)
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Scope:** Julian Chokkattu (WIRED) — Meta vs Samsung coverage selection
+
+### Finding — Mechanism #39: Chokkattu Samsung Coverage Selection Gap
+
+**Discovery:** Extends Mechanism #30 (Temporal Framing Oscillation) from a FRAMING asymmetry to a SELECTION asymmetry. WIRED's Julian Chokkattu published 3+ Meta smart glasses articles in the Jun–Jul 2026 window but ZERO standalone articles about Samsung Galaxy Glasses despite the major Galaxy Unpacked announcement on Jul 22, 2026.
+
+**Chokkattu's Meta coverage in the window:**
+- Jun 3: Business Wars S1E1 "Prize on the Eyes" — "mass surveillance" (-0.85 tone)
+- Jun 10: Business Wars S1E2 "I'm a Creep" — adversarial (-0.90 tone)
+- Jun 23: WIRED article on Meta Starfire/Adventurer/Fury launch — balanced (-0.05)
+- Jul 2: WIRED editorial on subscription pricing — "extracting value" (-0.65)
+
+**Samsung Galaxy Glasses hardware parity:**
+- Same Snapdragon AR1 Gen 1 chip as Meta Ray-Ban
+- 12MP camera with autofocus (identical)
+- AI integration (Google Gemini vs Meta AI)
+- LED recording indicator + obstruction detection (identical anti-tamper)
+- ~50g weight (comparable)
+- Warby Parker + Gentle Monster frame partners
+- ~9 hours battery life
+- Android XR platform
+
+**20+ publications covered Samsung's glasses.** WIRED sent 5 reporters to Google I/O 2026 (May 19) for Google's camera glasses but appears absent from Samsung Unpacked coverage entirely.
+
+**Key insight:** Coverage SELECTION (choosing what to report) is a subtler form of editorial influence than coverage FRAMING (how you report it). The Samsung selection gap means WIRED's smart glasses narrative focuses exclusively on Meta as the privacy threat without acknowledging identical Samsung/Google hardware.
+
+**6 legitimate factors documented:** London venue (moderate), pre-shipping product (moderate), possible newsletter coverage (weak), shared stage (weak), future review timing (moderate), reporter assignment (weak).
+
+### Changes
+- New test file: `tests/test_chokkattu_samsung_coverage_selection_gap_aug11.py` — 8 classes, 41 tests (37 def methods + parametrize expansions)
+- Updated `profiles/wired.yaml` — Mechanism #39 section with timeline, hardware parity, 10 other publications, 6 factors, 4 counterpoints
+- Updated `profiles/competitor-coverage-research.yaml` — Mechanism #39 entry with distinction_from #30 and #38
+- Updated `README.md` + `docs/ARCHITECTURE.md` — 9202 tests across 295 files
+
+### Test Results
+- 41/41 new mechanism tests pass
+- 124/124 structural consistency tests pass
+- Total: 9202 tests across 295 files
+
+### Commit
+1ee04be — pushed to GitHub
+
 ## 2026-08-11 01:00 PT — Type D: Test & Verify — Parametrize Counter Fix + Missing Mechanism IDs
 
 **Rotation:** D (Test & Verify)
