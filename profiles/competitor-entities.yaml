@@ -3036,6 +3036,21 @@ entities:
       source_urls:
       - https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
       - https://pulse2.com/meta-reports-second-quarter-2026-revenue-of-60-8-billion-up-28-percent-year-over-year/
+    ad_revenue_competitor_structural_antagonism:
+      mechanism_id: 47
+      overview: >
+        Meta is publishers' DIRECT BUSINESS COMPETITOR in the advertising market.
+        Projected to reach $243.46B in 2026 ad revenue (eMarketer), surpassing Google
+        ($239.54B) for the first time. Meta is the ONLY entity among the 7 profiled
+        competitors that is both a massive ad market competitor AND provides zero
+        revenue to publishers. This structural antagonism is permanent, independent
+        of content licensing deals, and intensifies as Meta's ad business grows faster
+        (24.1% in 2026) than publisher ad revenue.
+      meta_2026_projected_ad_revenue_b: 243.46
+      first_time_surpassing_google: true
+      meta_growth_rate_2026_pct: 24.1
+      publisher_revenue_provided_by_meta: 0
+      unique_pure_adversarial_position: true
     open_weight_safety_exemption:
       date: "2026-08-04"
       event: "Trump White House AI safety testing framework exempts open-weight models"

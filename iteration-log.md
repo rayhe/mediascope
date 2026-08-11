@@ -33364,3 +33364,45 @@ Apple announced 3 camera-equipped AI wearables (smart glasses N50, camera AirPod
 
 ### Commit
 c2a98ea — pushed to GitHub
+
+---
+
+## 2026-08-11 12:00 PT — Type C: Financial Incentive Mapping
+
+### Mechanism #46: Pre-IPO Underwriter-Client-Publisher Financial Convergence
+
+**Finding:** Goldman Sachs, Morgan Stanley, and JPMorgan Chase simultaneously (1) lead Anthropic's ~$1T IPO (Oct 2026 target), (2) deploy Claude as enterprise customers (GS: embedded engineers, JPM: 230K employees, MS: published Claude research), and (3) advertise in financial publications that set narrative framing for tech coverage. SEC terminated the Global Research Analyst Settlement in Dec 2025 — 10 months pre-IPO — replacing prescriptive structural mandates with principles-based FINRA Rule 2241. SpaceX fee precedent: $500M total. Meta IPO'd 2012 = zero underwriter entanglement.
+
+### Test Results
+- 46/46 mechanism tests pass (12 classes, 44 def test_ + 2 parametrize expansions)
+- 124/124 structural consistency tests pass
+- Total: 9601 tests across 304 files
+
+### Commit
+074f382 — pushed to GitHub
+
+---
+
+## 2026-08-11 13:00 PT — Type C: Financial Incentive Mapping
+
+### Mechanism #47: Meta Ad Revenue Competitor Structural Antagonism Index
+
+**Finding:** Meta is unique among all 7 profiled competitor entities in being publishers' DIRECT BUSINESS COMPETITOR in the advertising market while providing ZERO revenue TO publishers — creating structural zero-sum antagonism independent of content licensing deals. Meta projected $243.46B 2026 ad revenue (eMarketer Apr 2026), surpassing Google ($239.54B) for first time. Growth accelerating: 22.1% (2025) → 24.1% (2026). Meta quarterly ad revenue ($59.4B) = 93× NYT quarterly total revenue ($636M). Condé Nast CEO Roger Lynch (Oct 2025): "no longer expects advertising to be a growth engine" — pivoting to events (+40%), subscriptions (+29%), AI licensing. Google+Meta+Amazon = 62.3% global digital ad spend.
+
+**Structural Antagonism Matrix:** OpenAI/Amazon/Apple provide revenue TO publishers (cooperative). Google/Microsoft compete but also provide revenue (mixed). Meta alone is pure adversarial — competes for ad dollars, provides zero publisher revenue.
+
+### Files Created/Updated
+- `tests/test_meta_ad_competitor_structural_antagonism_aug11.py` — 9 classes, 40 def test_ methods (52 parametrized), all passing
+- `profiles/competitor-coverage-research.yaml` — Mechanism #47 added to `cross_publication_findings`
+- `profiles/competitor-entities.yaml` — `ad_revenue_competitor_structural_antagonism` section under `meta:` entity
+- `README.md` — test count updated to 9653 / 305 files
+- `docs/ARCHITECTURE.md` — test count updated to 9653 / 305 files
+
+### Test Results
+- 52/52 mechanism tests pass
+- 124/124 structural consistency tests pass
+- 157/157 combined mechanism + competitor + financial tests pass
+- Total: 9653 tests across 305 files
+
+### Commit
+e1b1042 — pushed to GitHub

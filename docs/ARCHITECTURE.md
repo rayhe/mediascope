@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 9601 tests across 304 test files (all from real articles)
+├── tests/                       # 9653 tests across 305 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -760,6 +760,7 @@ mediascope/
 │   ├── test_wired_apple_pcc_privacy_pivot_coverage_asymmetry_aug11.py # Mechanism #44: WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry. 11-day window (Jun 4-15 2026), 3+ NameTag investigations vs ZERO Apple PCC-to-Google-Cloud coverage. Makeover framing on Uncanny Valley podcast Jun 11. Financial prediction: Condé Nast Apple Intelligence negotiations (~$50M) + Apple News+ (16 titles); Meta $0. 8 legitimate factors. 9 classes, 43 tests
 │   ├── test_ashworth_wwdc_pcc_privacy_framing_aug11.py # Mechanism #45: Boone Ashworth (WIRED) journalist-level privacy framing asymmetry — same reporter uses "mass surveillance" for Meta glasses (Business Wars podcast Jun 3 & 10) and "AI partnership" for Apple PCC-to-Google-Cloud (WWDC roundup Jun 8) in same 8-day window; 0.95 tone delta; extends Mechanism #44 from publication to individual journalist level. 10 classes, 46 tests
 │   ├── test_pre_ipo_underwriter_client_publisher_convergence_aug11.py # Mechanism #46: Pre-IPO Underwriter-Client-Publisher Financial Convergence — Goldman Sachs, Morgan Stanley, JPMorgan Chase simultaneously (1) lead Anthropic ~$1T IPO (Oct 2026), (2) enterprise Claude customers (GS: embedded engineers, JPM: 230K employees), (3) major financial publication advertisers. SEC terminated GRAS Dec 2025 (10 months pre-IPO), replacing prescriptive structural mandates with principles-based FINRA Rule 2241. SpaceX fee precedent: $500M total, ~$100M per lead bank. Meta IPO 2012 = zero current underwriter entanglement. 12 classes, 44 tests
+│   ├── test_meta_ad_competitor_structural_antagonism_aug11.py # Mechanism #47: Meta Ad Revenue Competitor Structural Antagonism Index — Meta projected $243.46B 2026 ad revenue (surpassing Google for first time). Meta is ONLY entity among 7 profiled that is pure ad competitor with zero publisher revenue. Structural antagonism matrix, Condé Nast CEO "no longer expects advertising to be a growth engine", publisher ad decline. 9 classes, 52 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
