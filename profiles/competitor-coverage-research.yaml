@@ -6330,3 +6330,33 @@ cross_publication_findings:
     test_file: tests/test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py
     test_count: 42
     date_added: 2026-08-10
+  advance_conde_nast_aggregate_ai_dependency:
+    mechanism_id: 35
+    publication: WIRED / Condé Nast
+    finding_type: aggregate_financial_dependency
+    mechanism_name: "Advance/Condé Nast Aggregate AI Revenue Dependency — The Omni-Deal Publisher"
+    finding_summary: |
+      Aggregating ALL financial channels between Advance Publications / Condé Nast and AI
+      companies reveals the most financially entangled publisher in the AI ecosystem: SIX
+      distinct AI revenue channels across FIVE different companies/platforms — every major
+      AI company EXCEPT Meta. Channels: (1) OpenAI content licensing (Aug 2024, est.
+      $15-25M/yr), (2) Microsoft PCM co-design + Copilot Daily (Feb 2026), (3) Amazon
+      Rufus licensing (Jul 2025), (4) Perplexity licensing (confirmed Mar 2026),
+      (5) Reddit AI data licensing via Advance's 23.3% equity ($43M Q2 2026 Other
+      revenue, Advance equity ~$7.13B), (6) Apple News+ distribution. Total AI-linked
+      financial exposure: ~$7.2B+ (dominated by Reddit equity). Meta is the ONLY major
+      AI company excluded from all six channels — yet WIRED produces the most sustained
+      adversarial Meta AI coverage (tone ~-0.85 vs ~+0.10 for OpenAI). No WIRED article
+      discloses this aggregate relationship. By comparison, News Corp has 3 channels
+      (balanced, includes Meta), The Guardian has 2 channels, PMC/The Verge has ~0 direct
+      deals. 7 legitimate factors documented.
+    entities: [OpenAI, Microsoft, Amazon, Perplexity, Reddit/Google, Apple, Meta]
+    source_urls:
+      - "https://www.businesswire.com/news/home/20260730598707/en/"
+      - "https://stockanalysis.com/stocks/rddt/market-cap/"
+      - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+      - "https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/"
+      - "https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777"
+    test_file: tests/test_advance_conde_nast_aggregate_ai_dependency_aug10.py
+    test_count: 35
+    date_added: 2026-08-10

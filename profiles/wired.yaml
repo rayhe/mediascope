@@ -553,29 +553,33 @@ advance_investments:
       directly from Reddit's commerce growth, while Wired covers Meta's commerce competitors without
       disclosing this interest.
     stock_recovery_aug_2026: >
-      REDDIT STOCK RECOVERY (Aug 1-7, 2026): After the catastrophic Jul 31 crash to $140.67 (-21%),
-      RDDT recovered to $161.70 by Aug 7 close (+15% from crash low). Market cap recovered to ~$31.1B
-      from $18.3B crash low. ADVANCE STAKE: 42.2M shares × $161.70 = ~$6.82B (recovered from ~$5.94B
-      crash, still below ~$8.07B mid-Jul peak). Margin loan 7.8M shares now $1.26B — back above
-      $145-149 offering floor, out of immediate margin call danger zone. BUT: YTD still -33.2%.
-      52-week range $119.27-$282.95 — stock is closer to 52-week low than high.
-      ADVANCE TOTAL PUBLIC EQUITY (estimated Aug 7, 2026):
-        - Reddit: ~$6.82B (42.2M × $161.70)
+      REDDIT STOCK RECOVERY & CURRENT (Aug 1-10, 2026): After catastrophic Jul 31 crash to
+      $140.67 (-21%), RDDT recovered to $161.70 by Aug 7 then pulled back to $158.72 on Aug 10
+      close (-1.84%). Market cap: ~$30.63B (StockAnalysis Aug 10). ADVANCE STAKE: 42.2M shares
+      × $158.72 = ~$6.70B (recovered from ~$5.94B crash, still below ~$8.07B mid-Jul peak).
+      Margin loan 7.8M shares now $1.24B — near $145-149 offering floor, still vulnerable.
+      YTD: -34.4%. 52-week range $119.27-$282.95 — stock closer to 52-week low than high.
+      Q2 2026 EARNINGS: Revenue $805M (+61% YoY), Net income $253M (+183% YoY), EPS $1.25.
+      Other revenue (primarily AI licensing): $43M (+24% YoY). Ad revenue: $762M (+64% YoY).
+      DAUq: 130.3M (+18%). WAUq: 514.6M (+24%, crossed 500M milestone). ARPU: $6.18 (+36%).
+      Q3 guidance: $860-870M revenue (47-49% growth).
+      ADVANCE TOTAL PUBLIC EQUITY (estimated Aug 10, 2026):
+        - Reddit: ~$6.70B (42.2M × $158.72)
         - Charter: TBD (Cox close mid-late Aug)
         - WBD: TBD (Paramount merger deep freeze)
-        - Total: likely ~$12-13B (partially recovered from $11.51B Jul 31 trough)
+        - Total: likely ~$12-13B
     reddit_ai_data_licensing_editorial_loop:
       finding: >
         CIRCULAR INCENTIVE: WIRED editorial coverage shapes the AI content licensing
         narrative that directly increases the value of Advance's Reddit equity stake.
       mechanism: >
-        1. Reddit sells user-generated content to Google ($60M/yr) and OpenAI (~$70M/yr)
-           for AI model training. Total AI licensing contracts ~$203M (disclosed 2024).
+        1. Reddit sells user-generated content to Google ($60M/yr expanding) and OpenAI (~$70M/yr)
+           for AI model training. Q2 2026 "Other revenue" (primarily AI licensing) = $43M (+24% YoY).
         2. Wells Fargo projects combined Google + OpenAI renewals could reach $550M/yr —
            quadrupling current levels. This makes AI licensing Reddit's fastest-growing
            revenue segment and a major bull case for the stock (Barron's, Aug 1).
         3. Advance Publications (WIRED's parent chain) owns 23.3% of Reddit equity
-           (~$6.82B at $161.70/share) with 65.2% voting control.
+           (~$6.70B at $158.72/share, Aug 10 2026) with 65.2% voting control.
         4. WIRED's editorial coverage of AI content licensing — framing unlicensed AI training
            as theft, amplifying publisher coalition demands, covering AI copyright lawsuits
            sympathetically — reinforces the industry norm that AI companies MUST license content.
@@ -640,6 +644,137 @@ advance_investments:
       - "https://techcrunch.com/reddit-testing-ai-search-feature-shopping/"
       - "https://finance.yahoo.com/quote/RDDT/"
       - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001713445&type=8-K&dateb=&owner=include&count=40"
+    aggregate_ai_dependency:
+      mechanism_id: 35
+      finding: >
+        MECHANISM #35: ADVANCE/CONDÉ NAST AGGREGATE AI REVENUE DEPENDENCY —
+        THE OMNI-DEAL PUBLISHER. When all financial channels between Advance Publications /
+        Condé Nast and AI companies are aggregated, Advance/Condé Nast emerges as the most
+        financially entangled publisher in the AI ecosystem: SIX distinct AI revenue channels
+        across FIVE different AI companies/platforms — every major AI company EXCEPT Meta.
+      channels:
+        - name: openai_content_licensing
+          channel_number: 1
+          date: Aug 2024
+          counterparty: OpenAI
+          detail: >
+            Multi-year content licensing for WIRED, New Yorker, Vogue, GQ, Vanity Fair, Bon
+            Appétit, Architectural Digest, Condé Nast Traveler, and 12+ other brands. Content
+            surfaces in ChatGPT and SearchGPT. Value undisclosed; estimated $15-25M/yr based
+            on portfolio breadth (20+ brands, largest undisclosed deal after News Corp's $50M/yr).
+          source_url: "https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777"
+        - name: microsoft_pcm_partnership
+          channel_number: 2
+          date: Feb 2026
+          counterparty: Microsoft
+          detail: >
+            Condé Nast was one of 7 founding co-design partners for Microsoft's Publisher Content
+            Marketplace (PCM), launched after invite-only Monaco summit (Sep 2025). Microsoft is
+            BOTH the platform operator AND the first demand-side buyer (via Copilot). Additional
+            Copilot Daily content licensing for AI-voiced news summaries.
+          source_url: "https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00"
+        - name: amazon_rufus_licensing
+          channel_number: 3
+          date: Jul 2025
+          counterparty: Amazon
+          detail: >
+            Multi-year content licensing deal for Amazon's Rufus AI shopping assistant.
+            Content feeds Alexa for Shopping (350M+ customers) and Amazon's proprietary
+            AI models. Confirmed by CEO Roger Lynch in Mar 2026 annual memo.
+          source_url: "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+        - name: perplexity_licensing
+          channel_number: 4
+          date: Confirmed Mar 2026
+          counterparty: Perplexity
+          detail: >
+            After initial cease-and-desist (Aug 2024), transitioned to licensing deal.
+            Confirmed by CEO Lynch in Mar 2026 annual memo alongside OpenAI, Microsoft,
+            and Amazon deals.
+          source_url: "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+        - name: reddit_ai_data_licensing
+          channel_number: 5
+          counterparty: Google + OpenAI (via Reddit)
+          detail: >
+            Advance Publications owns 23.3% equity / 65.2% voting control of Reddit.
+            Reddit Q2 2026 "Other revenue" (primarily AI data licensing) = $43M (+24% YoY).
+            Reddit has AI data licensing deals with Google ($60M/yr expanding) and OpenAI
+            (~$70M/yr). Advance's equity exposure: 23.3% of $30.63B market cap = ~$7.13B
+            (Aug 10, 2026). Every dollar Reddit's AI licensing grows directly benefits
+            Advance's equity value. Advance also controls Reddit governance via veto rights
+            over CEO removal, M&A, and board size.
+          source_urls:
+            - "https://www.businesswire.com/news/home/20260730598707/en/"
+            - "https://stockanalysis.com/stocks/rddt/market-cap/"
+        - name: apple_news_plus_distribution
+          channel_number: 6
+          counterparty: Apple
+          detail: >
+            Condé Nast brands (WIRED, New Yorker, Vanity Fair, GQ, Vogue, etc.) distributed
+            on Apple News+ with revenue sharing arrangement. Undisclosed value (est. low
+            millions/yr). Apple has NO direct AI content licensing deals with any publisher
+            but accesses publisher content indirectly via $1B/yr Google Gemini model deal.
+      meta_exclusion: >
+        META IS THE ONLY MAJOR AI COMPANY EXCLUDED FROM ALL SIX CHANNELS.
+        Meta has zero content licensing with Condé Nast, zero data licensing with Reddit,
+        zero marketplace participation through Condé Nast, zero distribution deals.
+        Meta's sole publisher content licensing deal is with News Corp (up to $50M/yr,
+        Mar 2026) — a balanced-control publisher that also receives $50M/yr from OpenAI.
+        Condé Nast's flagship tech publication (WIRED) produces the most sustained
+        adversarial coverage of Meta's AI efforts — tone score ~-0.85 vs ~+0.10 for
+        OpenAI. The company generating zero AI revenue for WIRED's parent chain
+        receives the most hostile coverage.
+      aggregate_exposure: >
+        AGGREGATE FINANCIAL EXPOSURE (estimated Aug 10, 2026):
+        - Direct Condé Nast AI licensing revenue: est. $25-45M/yr aggregate across
+          OpenAI ($15-25M), Microsoft PCM (undisclosed), Amazon Rufus (undisclosed),
+          Perplexity (undisclosed)
+        - Reddit equity exposure (Advance 23.3%): ~$7.13B market value
+        - Reddit AI-specific revenue flowing to Advance (23.3%): ~$10M/yr annualized
+          from $43M Q2 Other revenue
+        - Apple News+ revenue share: undisclosed (est. low millions/yr)
+        - Total AI-linked financial exposure: ~$7.2B+ (equity + revenue combined)
+        The equity exposure via Reddit DWARFS all direct licensing revenue by 100-200x.
+        This makes Advance's financial interest in AI industry dynamics primarily an
+        EQUITY story (Reddit), not a licensing story (Condé Nast).
+      publisher_comparison: >
+        COMPARATIVE ANALYSIS — ADVANCE/CONDÉ NAST IS THE MOST ENTANGLED PUBLISHER:
+        - News Corp: 3 AI revenue channels (OpenAI $50M/yr, Meta up to $50M/yr,
+          Anthropic settlement share). Balance creates relatively neutral incentives.
+        - PMC/The Verge: No confirmed direct AI deals (Vox Media's pre-acquisition
+          OpenAI deal status unclear). PIF→SRMG→PMC chain creates indirect alignment.
+        - The Guardian: 2 channels (OpenAI deal Feb 2025, Google Showcase). No equity.
+        - Financial Times: 2 channels (OpenAI deal, Google Showcase). No equity.
+        - Advance/Condé Nast: 6 channels, 5 companies, ~$7.2B+ total exposure.
+          The most entangled publisher by an order of magnitude. The only publisher
+          with BOTH direct AI licensing deals AND a controlling equity stake in a
+          company (Reddit) that sells AI training data.
+      non_disclosure: >
+        WIRED does not disclose that its corporate parent chain:
+        (1) Receives AI licensing revenue from OpenAI (WIRED's own content is in ChatGPT)
+        (2) Profits from Reddit's AI data licensing growth (23.3% equity, 65.2% voting)
+        (3) Co-designed Microsoft's AI content marketplace
+        (4) Has content licensing deals with Amazon and Perplexity
+        (5) Has zero financial relationship with Meta (most adversarially covered company)
+        (6) Has pledged Reddit shares as collateral for a $1.2B credit facility, creating
+            acute financial sensitivity to AI-licensing-driven Reddit stock price movements
+        No WIRED article covering Meta AI, OpenAI, or AI content licensing discloses any
+        of these relationships. The aggregate picture — where every major AI company
+        except Meta pays Advance/Condé Nast — is never presented to readers.
+      legitimate_factors:
+        - "Meta has genuine privacy and child safety issues worth investigating"
+        - "Meta's scale (3.5B daily users) creates proportionally more editorial interest"
+        - "WIRED's adversarial tech journalism tradition predates the AI licensing era"
+        - "Editorial teams may be genuinely independent from business-side deal decisions"
+        - "OpenAI deal was signed after WIRED's adversarial Meta coverage pattern was established"
+        - "Not all adversarial coverage is financially motivated — some reflects real reporting"
+        - "Reddit AI licensing ($43M Q2) is only 5.3% of Reddit's total $805M Q2 revenue"
+      source_urls:
+        - "https://www.businesswire.com/news/home/20260730598707/en/"
+        - "https://stockanalysis.com/stocks/rddt/market-cap/"
+        - "https://www.mediapost.com/publications/article/413157/conde-nast-digs-in-ceo-roger-lynch-describes-grow.html"
+        - "https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/"
+        - "https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777"
+        - "https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00"
     governance_control: >
       FAR DEEPER THAN 2 BOARD SEATS. Per Reddit 2026 proxy (SEC filing rddt-20260423, DEF 14A filed Apr 23, 2026),
       Advance has consent/veto rights over Reddit's most consequential decisions:
