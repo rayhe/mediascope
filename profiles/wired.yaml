@@ -4775,3 +4775,149 @@ cross_entity_coverage_analysis:
       validates Meta's approach does not.
     source_urls:
       - "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"
+
+# ===================================================================
+# CHOKKATTU COMPOUND COMPETITOR SILENCE (Mechanism #42, Aug 11 2026)
+# ===================================================================
+chokkattu_compound_competitor_silence:
+  mechanism_id: 42
+  mechanism_name: "Compound Competitor Wearables Coverage Selection Silence"
+  finding_type: "coverage_selection_silence"
+  analysis_date: "2026-08-11"
+  finding_summary: >
+    WIRED's wearables beat published 3+ Meta smart glasses articles in the Jun-Jul 2026
+    window but ZERO standalone articles about either Snap Specs consumer launch ($2,195,
+    Jun 16, 2026) or Samsung Galaxy Glasses (Galaxy Unpacked, Jul 22, 2026). Every other
+    major tech publication covered both events. This extends Mechanism #39 from an isolated
+    Samsung gap to a systematic compound silence pattern across both major competitor
+    wearable launches in the same season.
+  pattern_type: "systematic compound silence"
+
+  snap_specs_launch:
+    date: "2026-06-16"
+    venue: "Augmented World Expo (AWE) 2026, Long Beach, CA"
+    price_usd: 2195
+    camera_count: 4
+    camera_types:
+      - "2x RGB front cameras"
+      - "2x IR computer vision cameras (hand tracking)"
+    standalone: true
+    weight_grams: 132  # 47mm model
+    fov_degrees: 51
+    battery_hours: 4
+    wired_standalone_articles: 0
+    publications_that_covered:
+      - "TechCrunch"
+      - "Reuters"
+      - "Gizmodo"
+      - "Engadget"
+      - "Fast Company"
+      - "MacRumors"
+      - "Android Authority"
+      - "Android Police"
+      - "Dezeen"
+      - "Road to VR"
+      - "USA Today"
+      - "Wareable"
+      - "Tom's Guide"
+      - "Slashdot (citing The Verge)"
+    source_urls:
+      - "https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/"
+      - "https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/"
+      - "https://gizmodo.com/snaps-ar-glasses-arent-even-out-yet-and-theyre-already-getting-roasted-to-death-2000773124"
+      - "https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel"
+      - "https://www.engadget.com/2194982/awe-xr-2026-snap-live-blog/"
+      - "https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human"
+
+  samsung_galaxy_glasses:
+    date: "2026-07-22"
+    venue: "Galaxy Unpacked 2026"
+    camera_megapixels: 12
+    chip: "Snapdragon AR1 Gen 1"
+    ai_integration: "Google Gemini"
+    weight_grams: 50
+    wired_standalone_articles: 0
+    cross_references:
+      - "Mechanism #39 (Samsung Coverage Selection Gap)"
+    source_urls:
+      - "https://news.samsung.com/us/samsung-galaxy-ecosystem-everyday-eyewear"
+
+  meta_coverage_same_window:
+    standalone_article_count: 3
+    articles:
+      - date: "2026-06-03"
+        author: "Julian Chokkattu"
+        type: "podcast"
+        title: "Business Wars: Meta Glasses episodes (Jun 3-11)"
+        tone: -0.85
+      - date: "2026-06-23"
+        author: "Julian Chokkattu"
+        type: "product_article"
+        title: "Meta Starfire/Adventurer/Fury launch"
+        tone: -0.05
+      - date: "2026-07-02"
+        author: "Julian Chokkattu"
+        type: "editorial_analysis"
+        title: "Meta glasses subscription pricing"
+        tone: -0.65
+
+  camera_privacy_paradox:
+    description: >
+      Snap Specs have 4x the cameras of Meta Ray-Ban (4 vs 1), yet receive zero
+      surveillance/privacy framing from any publication. Samsung Galaxy Glasses have
+      identical specs to Meta Ray-Ban, yet receive zero surveillance framing. Only Meta
+      triggers "mass surveillance," "I'm a Creep," "nefarious" vocabulary from WIRED.
+      But since WIRED didn't cover Snap Specs or Samsung at all, the framing comparison
+      is preempted by the selection silence.
+    snap_specs:
+      camera_count: 4
+      surveillance_language_instances: 0
+    meta_ray_ban:
+      camera_count: 1
+      surveillance_language_examples:
+        - "mass surveillance"
+        - "I'm a Creep"
+        - "nefarious"
+        - "discreetly"
+    samsung_galaxy_glasses:
+      camera_count_megapixels: 12
+      surveillance_language_instances: 0
+
+  comparison_window:
+    start: "2026-06-01"
+    end: "2026-07-31"
+
+  missed_competitor_events:
+    - event: "Snap Specs consumer launch"
+      date: "2026-06-16"
+    - event: "Samsung Galaxy Glasses launch"
+      date: "2026-07-22"
+
+  legitimate_factors:
+    - factor: "Editorial bandwidth constraints"
+      description: "WIRED may have allocated resources to other coverage priorities"
+      weight: "moderate"
+    - factor: "Shipping status"
+      description: "Snap Specs not yet shipping at announcement; hands-on review impossible"
+      weight: "moderate"
+    - factor: "Beat assignment"
+      description: "Chokkattu may focus on products available for hands-on review"
+      weight: "moderate"
+    - factor: "Platform relevance"
+      description: "Snap Specs targeting developers, not WIRED subscriber demo"
+      weight: "weak — consumer launch with celebrity campaign"
+    - factor: "Market significance"
+      description: "Snap is smaller market cap and less culturally relevant than Meta"
+      weight: "weak — $3.5B invested, major industry milestone"
+
+  cross_references:
+    - "Mechanism #39: Chokkattu Samsung Coverage Selection Gap"
+    - "Mechanism #30: Chokkattu Temporal Framing Oscillation"
+    - "Mechanism #33: Facial Recognition Privacy Parity (OpenAI planned cameras vs Meta dormant code)"
+
+  statistical_summary:
+    wired_meta_glasses_articles: 3
+    wired_competitor_glasses_articles: 0
+    pubs_covering_snap_specs: 14
+    pubs_covering_samsung_glasses: 20
+    meta_to_competitor_ratio: "infinity (3:0)"

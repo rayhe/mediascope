@@ -3805,6 +3805,51 @@ entities:
 
       '
     press_response: ''
+  snap:
+    display_name: Snap Inc.
+    aliases:
+    - Snap
+    - Snapchat
+    - Snap Specs
+    - Snap Spectacles
+    - Evan Spiegel
+    regex: \b(Snap(?:chat)?|Spectacles|Snap Specs)\b
+    category: social_media_hardware
+    ceo: Evan Spiegel
+    market_cap_approx: "~$14B (Aug 2026)"
+    stock_ticker: SNAP
+    hardware_devices:
+      specs_consumer:
+        name: "Snap Specs (6th gen, consumer)"
+        announced: "2026-06-16"
+        venue: "Augmented World Expo (AWE) 2026"
+        price_usd: 2195
+        ship_date: "Fall 2026"
+        markets: ["US", "UK", "France"]
+        form_factor: "standalone AR glasses"
+        weight_grams_47mm: 132
+        weight_grams_52mm: 136
+        cameras:
+          total: 4
+          types:
+            - "2x full-color high-resolution RGB cameras (front)"
+            - "2x infrared computer vision cameras (hand tracking)"
+        processors: "2x Qualcomm Snapdragon (unspecified)"
+        battery_hours: 4
+        case_total_hours: 20
+        standalone: true
+        privacy_features:
+          - "LED indicator when recording"
+          - "On-device processing (except AI)"
+          - "User control over data storage/sync/deletion"
+        privacy_scrutiny_received: zero
+        surveillance_framing_count: 0
+    publisher_financial_relationships:
+      content_licensing_deals: []
+      ad_revenue_significance: "minimal"
+    source_urls:
+      - "https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human"
+      - "https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/"
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

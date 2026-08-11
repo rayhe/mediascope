@@ -6866,4 +6866,34 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-08
+  # ── Mechanism #42: Compound Competitor Coverage Selection Silence ──
+  compound_competitor_silence:
+    mechanism_id: 42
+    mechanism_name: "Compound Competitor Wearables Coverage Selection Silence"
+    finding_type: "coverage_selection_silence"
+    rotation_type: "B"
+    discovery_date: "2026-08-11"
+    publication: "WIRED"
+    journalist: "Julian Chokkattu (Reviews Editor)"
+    finding_summary: >
+      WIRED published 3+ Meta smart glasses articles in the Jun-Jul 2026 window
+      but ZERO standalone articles about either Snap Specs consumer launch ($2,195,
+      Jun 16, AWE) or Samsung Galaxy Glasses (Galaxy Unpacked, Jul 22). Every other
+      major tech publication covered both launches. This extends Mechanism #39 from
+      an isolated Samsung gap to a systematic compound silence across BOTH major
+      competitor wearable launches in the same season. The Camera Count Paradox:
+      Snap Specs have 4 cameras (4x Meta's 1) yet received zero surveillance framing
+      from any publication. The coverage silence prevents WIRED from even needing to
+      apply its surveillance vocabulary to competitors — selection asymmetry preempts
+      framing asymmetry.
+    test_file: "tests/test_chokkattu_wired_compound_competitor_silence_aug11.py"
+    cross_references:
+      - "Mechanism #39: Samsung Coverage Selection Gap"
+      - "Mechanism #30: Temporal Framing Oscillation"
+      - "Mechanism #33: Facial Recognition Privacy Parity"
+    legitimate_factors: 5
+    source_urls:
+      - "https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/"
+      - "https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/"
+
+research_period: 2024-08-01 to 2026-08-11

@@ -33186,3 +33186,54 @@ Extends Mechanism #34 (WIRED rogue AI volume asymmetry) and #35 (Advance/Condé 
 
 ### Commit
 0b5ac7d — pushed to GitHub
+
+---
+
+## 2026-08-11 06:00 PT — Type A: Competitor Coverage Deep Dive — MIT TR × Apple WWDC 2026 PCC-to-Google-Cloud Omission (Mechanism #41)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Scope:** MIT Technology Review × Apple — coverage selection asymmetry at WWDC 2026
+
+### Finding — Mechanism #41: MIT TR WWDC 2026 PCC Coverage Omission + Apple Wearables Privacy Silence
+
+**Discovery:** MIT Technology Review covered Apple's WWDC 2024 Private Cloud Compute announcement favorably (Eileen Guo, Jun 11, 2024 — Apple explicitly positioned against "the likes of Alphabet, Amazon, or Meta, which collect and store enormous amounts of personal data") but did NOT produce a standalone article covering Apple's WWDC 2026 (Jun 8, 2026) where PCC was fundamentally expanded from Apple-only servers to Google Cloud with NVIDIA GPUs.
+
+**Temporal contrast:**
+- May 18, 2026: MIT TR publishes "Inside Anduril and Meta's quest to make smart glasses for warfare" — alarm framing ("cyborg-inspired," "optimize the human as a weapons system," "massive new risks of errors")
+- Jun 8, 2026: Apple WWDC 2026 — PCC expanded to Google Cloud; Siri AI with Google Gemini foundation
+- Jun 8 – Aug 11, 2026: No MIT TR standalone article found covering Apple's WWDC 2026 PCC-to-Google-Cloud shift
+- Jul 1, 2026: Kate Bergeron (Apple VP Hardware Engineering) effective as MIT Corporation term member — deepening governance ties during coverage gap
+
+**Apple wearables privacy silence:**
+Apple announced 3 camera-equipped AI wearables (smart glasses N50, camera AirPods B790, AI pendant — ALL with cameras + always-on AI + environmental awareness). These are functionally equivalent to Meta Ray-Ban glasses in sensor capability. MIT TR has applied ZERO surveillance/privacy-alarm language to Apple's wearables while framing Meta's shipping product in warfare/cyborg context.
+
+**Other outlets that covered WWDC 2026 PCC shift:**
+- 9to5Mac (Jul 6, 2026) — Apple popup for data sent to Google Cloud
+- Gizmodo (Jun 8, 2026) — Apple's Google-Infused AI privacy claims
+- MacRumors (Jun 8, 2026) — Apple's Private AI on Google's Servers
+- Reuters (Jan 12, 2026) — Apple-Google Gemini deal
+- TechSpot (Jun 16, 2026) — Apple AI hardware roadmap
+- TechRepublic (Aug 4, 2026) — Apple camera AirPods
+
+**5 confounding factors documented:**
+1. Newsletter coverage (moderate) — MIT TR may have covered in subscriber-only newsletters
+2. Editorial calendar (moderate) — MIT TR covers themes, not product launches
+3. Pre-announcement status (moderate) — Apple wearables not yet shipping
+4. Genuine newsworthiness of Anduril piece (strong) — military AI with drone strikes is inherently newsworthy
+5. Google Cloud PCC may preserve privacy (moderate) — confidential compute may not represent regression
+
+**Cross-references:** Extends existing MIT TR Apple governance conflict (Bergeron, CSAIL Alliance), sensor-count paradox, and Mechanism #33 (OpenAI facial recognition parity — same double standard pattern)
+
+### Files Created/Updated
+- `tests/test_mit_tr_apple_wwdc_2026_pcc_omission_aug11.py` — 9 classes, 39 def test_ methods (41 parametrized), all passing
+- `profiles/competitor-coverage-research.yaml` — Mechanism #41 added to `publications.mit-tech-review` section, Apple wearables privacy silence section added, Meta-Anduril example added
+- `README.md` — test count updated to 9333 / 298 files, test file entry added
+- `docs/ARCHITECTURE.md` — test count updated, test file entry added
+
+### Test Results
+- 41/41 new mechanism tests pass
+- 124/124 structural consistency tests pass
+- Total: 9333 tests across 298 files
+
+### Commit
+c2a98ea — pushed to GitHub
