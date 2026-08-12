@@ -2010,6 +2010,18 @@ entities:
         - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
         - https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/
         - https://www.macrumors.com/2026/07/10/apple-sues-openai/
+    privacy_innovation_attribution:
+      _ref_mechanism_id: 55
+      _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
+      summary: 'Apple''s smart glasses delay (Jul 26, 2026) framed as "prioritizing
+        privacy" and responsible leadership — "Apple wants none of it" (privacy
+        baggage). Nineteen days earlier, Meta shipped an industry-first camera-
+        disable-on-LED-tampering feature that was framed as reactive damage
+        control. Apple receives aspirational framing for NOT shipping, while Meta
+        receives adversarial framing for shipping an industry-first privacy feature.'
+      testable_prediction: 'Apple''s eventual smart glasses launch (2027+) will
+        receive "Apple leads on privacy" framing for features Meta already shipped
+        in July 2026, regardless of chronological priority.'
   google:
     display_name: Google / Alphabet
     aliases:
@@ -3639,6 +3651,17 @@ entities:
       coverage (like OpenAI, Amazon, or Microsoft''s publisher deals).
 
       '
+    privacy_innovation_attribution:
+      _ref_mechanism_id: 55
+      _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
+      summary: 'Samsung Galaxy Glasses (Jul 22, 2026) unveiled with physical privacy
+        toggle — framed neutrally as a product feature across publications.
+        Fifteen days earlier, Meta shipped an industry-first camera-disable-on-
+        LED-tampering feature that was framed as reactive damage control.
+        Identical hardware privacy concern, inverted framing by company identity.'
+      testable_prediction: 'When Galaxy Glasses ship Fall 2026, privacy incidents
+        will occur (identical camera hardware) but will NOT receive "privacy
+        nightmare" framing applied to Meta''s identical product.'
   microsoft:
     display_name: Microsoft
     aliases:

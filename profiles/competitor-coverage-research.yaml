@@ -4545,6 +4545,165 @@ cross_publication_findings:
     discovery_date: '2026-06-08'
     rotation_type: A
     publication: MIT Technology Review
+  privacy_innovation_attribution_inversion:
+    mechanism_id: 55
+    mechanism_name: Privacy Innovation Attribution Inversion
+    finding_type: cross_entity_journalist_tracking
+    rotation_type: B
+    date_added: '2026-08-11'
+    discovery_date: '2026-08-11'
+    journalist: Cross-publication (Ben Schoon, Chandra Steele, Kyle Barr, others)
+    journalists:
+    - Ben Schoon (9to5Google)
+    - Chandra Steele (Android Police)
+    - Kyle Barr (Gizmodo)
+    publication: Cross-publication (9to5Google, Android Police, Digital Trends, PetaPixel, Gizmodo, WebProNews, Fast Company)
+    finding_summary: >
+      Meta announced an industry-first privacy feature on July 7, 2026: smart glasses
+      camera automatically disables if the LED indicator is physically tampered with or
+      destroyed. Meta explicitly stated: "No other kind of camera has done this and we're
+      proud to lead the industry forward." Despite being genuinely first-in-industry,
+      coverage across publications framed this as reactive damage control. Fifteen days
+      later (Jul 22), Samsung unveiled Galaxy Glasses with a physical privacy toggle —
+      framed neutrally as a product feature. Nineteen days later (Jul 26), Apple's smart
+      glasses delay was reported as "prioritizing privacy" — framed aspirationally. The
+      SAME privacy concern (cameras on faces) receives INVERTED framing based on which
+      company implements the solution. This constitutes a Privacy Innovation Attribution
+      Inversion: when Meta leads on privacy, the framing is "catching up to criticism";
+      when competitors follow or delay, the framing is "responsible" or "innovative."
+      The asymmetry is strongest in language choice — "privacy nightmare" and "nefarious
+      means" vs "privacy feature" and "takes privacy seriously" — for functionally
+      identical hardware decisions.
+    mechanism: privacy_innovation_attribution_inversion
+    articles:
+    - publication: 9to5Google
+      journalist: Ben Schoon
+      date: '2026-07-07'
+      title: 'Meta Ray-Ban glasses now disable the camera if privacy light breaks'
+      url: https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
+      tone: adversarial
+      tone_score: -0.60
+      framing: 'Opening line: "Smart glasses with a camera are inherently a privacy
+        nightmare." Uses "nefarious means" for users, "intense public backlash" for
+        context. Innovation subordinated to threat narrative.'
+      key_language:
+      - inherently a privacy nightmare
+      - nefarious means
+      - intense public backlash
+    - publication: Android Police
+      journalist: Chandra Steele
+      date: '2026-07-08'
+      title: 'Meta updates smart glasses to curb covert filming, but women''s safety remains an issue'
+      url: https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/
+      tone: adversarial
+      tone_score: -0.55
+      framing: 'Frames innovation as insufficient with "but women''s safety remains an
+        issue" qualifier in headline. Innovation acknowledged but immediately undercut
+        by unresolved concern framing.'
+      key_language:
+      - curb covert filming
+      - but women's safety remains an issue
+    - publication: Digital Trends
+      journalist: null
+      date: '2026-07-08'
+      title: 'Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light'
+      url: https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
+      tone: adversarial
+      tone_score: -0.50
+      framing: 'Frame: "Ever since Meta launched its first smart glasses...they have
+        built a reputation as a creep''s weapon." Innovation is subordinated to
+        accumulated narrative — the new feature is positioned as partial mitigation
+        of an inherent flaw rather than a proactive advance.'
+      key_language:
+      - creep's weapon
+      - built a reputation
+    - publication: PetaPixel
+      journalist: null
+      date: '2026-07-08'
+      title: 'If users conceal the recording light on smart glasses, Meta says it will disable the camera'
+      url: https://petapixel.com/2026/07/08/if-users-conceal-the-recording-light-on-smart-glasses-meta-says-it-will-disable-the-camera/
+      tone: mixed-reactive
+      tone_score: -0.25
+      framing: 'Relatively balanced: "Meta is listening to the criticism" and "promising"
+        but still frames as reactive (listening to criticism) rather than innovative
+        (leading the industry). Most balanced of the Meta coverage set.'
+      key_language:
+      - listening to the criticism
+      - promising
+    - publication: Gizmodo
+      journalist: Kyle Barr
+      date: '2026-07-22'
+      title: 'Samsung let me touch its Warby Parker x Gentle Monster smart glasses, but not wear them'
+      url: https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+      tone: neutral-positive
+      tone_score: +0.10
+      framing: 'Privacy toggle mentioned as a product feature, not a response to
+        controversy. Even favorably compared Meta build quality: "Ray-Ban Meta AI
+        glasses...feel more high-end." Zero surveillance/nightmare vocabulary despite
+        identical camera hardware. Same journalist (Barr) who covers Meta adversarially
+        elsewhere.'
+      key_language:
+      - feel more high-end
+      - privacy toggle
+    - publication: WebProNews
+      journalist: null
+      date: '2026-07-26'
+      title: 'Apple''s Privacy Reckoning: Why Smart Glasses Face Another Year in the Lab'
+      url: https://www.webpronews.com/apples-privacy-reckoning-why-smart-glasses-face-another-year-in-the-lab/
+      tone: aspirational
+      tone_score: +0.15
+      framing: 'Frames Apple delay as responsible leadership: Meta''s glasses carry
+        "privacy baggage" while Apple "wants none of it." Delay framed as principled
+        restraint rather than competitive failure. References Gurman: Apple privacy
+        work is "priority No. 1."'
+      key_language:
+      - privacy baggage
+      - Apple wants none of it
+      - priority No. 1
+    - publication: Fast Company (SA)
+      journalist: null
+      date: '2026-07-10'
+      title: 'The Problem with MetaRayBan glasses'
+      url: https://fastcompany.co.za/tech/2026-07-10-the-problem-with-metarayban-glasses/
+      tone: adversarial
+      tone_score: -0.55
+      framing: 'Frames Meta''s privacy update within a litany of controversies: "court
+        bans to paywalled features to LED light hacks." The update is presented as one
+        in a series of problems, not as a solution.'
+      key_language:
+      - court bans
+      - paywalled features
+      - LED light hacks
+    confounding_factors:
+    - 'Meta has a longer track record of privacy controversies (Cambridge Analytica,
+      FTC consent decree, etc.) which creates legitimate editorial priors that do not
+      apply to Samsung or Apple in the same way.'
+    - 'Meta''s smart glasses are already shipping with documented misuse incidents;
+      Samsung''s and Apple''s glasses have not shipped yet and therefore have not faced
+      real-world privacy testing.'
+    - 'Meta''s camera-disable update was directly triggered by reported misuse (users
+      covering the LED indicator) — it IS genuinely reactive to a specific problem,
+      even if the solution is industry-first.'
+    - 'Samsung and Apple have not yet faced the same real-world testing that exposed
+      Meta''s privacy challenges, making direct framing comparison inherently unequal.'
+    - 'Market leaders receive more scrutiny than followers — Meta holds ~90%+ smart
+      glasses market share as of mid-2026, making it the natural editorial target for
+      category concerns.'
+    - 'Reporter expertise differs: tech product writers covering Samsung launches
+      apply different editorial standards than privacy/policy beat reporters covering
+      Meta updates.'
+    testable_predictions:
+    - 'When Samsung Galaxy Glasses ship in Fall 2026, privacy incidents will occur
+      (identical camera hardware enables identical misuse) — coverage will NOT use
+      "privacy nightmare" framing that was applied to Meta''s identical product.'
+    - 'If Samsung copies or is found to already implement Meta''s camera-disable-on-
+      tampering feature, it will be framed as "Samsung includes privacy protection"
+      rather than "Samsung responds to privacy backlash."'
+    - 'Apple''s eventual smart glasses launch (2027+) will receive "Apple leads on
+      privacy" framing for features Meta already shipped in July 2026, regardless of
+      chronological priority.'
+    test_file: tests/test_privacy_innovation_attribution_inversion_aug11.py
+    test_count: 56
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
