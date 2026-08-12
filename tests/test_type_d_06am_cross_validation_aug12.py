@@ -176,7 +176,7 @@ class TestMechanism59Structure(unittest.TestCase):
 
 
 class TestMechanismIDSequenceThrough61(unittest.TestCase):
-    """Mechanism IDs 1-61 should be contiguous with no gaps in the 50-61 range."""
+    """Mechanism IDs 1-62 should be contiguous with no gaps in the 50-62 range."""
 
     def setUp(self):
         data = load_competitor_research()
@@ -186,9 +186,9 @@ class TestMechanismIDSequenceThrough61(unittest.TestCase):
             if isinstance(val, dict) and 'mechanism_id' in val:
                 self.all_ids.append(val['mechanism_id'])
 
-    def test_max_mechanism_is_61(self):
-        self.assertEqual(max(self.all_ids), 61,
-                         f"Expected max mechanism_id=61, got {max(self.all_ids)}")
+    def test_max_mechanism_is_62(self):
+        self.assertEqual(max(self.all_ids), 62,
+                         f"Expected max mechanism_id=62, got {max(self.all_ids)}")
 
     def test_no_duplicate_ids(self):
         seen = set()
@@ -199,11 +199,11 @@ class TestMechanismIDSequenceThrough61(unittest.TestCase):
             seen.add(mid)
         self.assertFalse(dupes, f"Duplicate mechanism IDs: {dupes}")
 
-    def test_50_through_61_contiguous(self):
+    def test_50_through_62_contiguous(self):
         recent = sorted(mid for mid in self.all_ids if mid >= 50)
-        expected = list(range(50, 62))
+        expected = list(range(50, 63))
         self.assertEqual(recent, expected,
-                         f"Gap in mechanisms 50-61: {recent} vs expected {expected}")
+                         f"Gap in mechanisms 50-62: {recent} vs expected {expected}")
 
 
 class TestAug12TestFilesCoverage(unittest.TestCase):

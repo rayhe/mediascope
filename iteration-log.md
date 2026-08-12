@@ -1,5 +1,43 @@
 # MediaScope Iteration Log
 
+## Iteration 62 — 2026-08-12 06:00 PT (Type D: Test & Verify)
+
+### Bug Found & Fixed: Mechanism #60/#61 Data Integrity — Misplaced Confounding Factors
+
+**Root Cause:** Iteration 60 (Karen Hao, mechanism #60) left `confounding_factors`, `testable_predictions`, and `cross_references` empty in `competitor-coverage-research.yaml`. Iteration 61 (Apple News+, mechanism #61) then accidentally received Karen Hao's content in those fields — including a stray Karen Hao Wikipedia URL in `source_urls`.
+
+**Impact:** 11 test failures:
+- 10 in `test_karen_hao_cross_entity.py` (structure, confounding factor quality, cross-reference integrity — all empty)
+- 1 in `test_type_d_02am_cross_validation_aug12.py` (stale max mechanism assertion: expected 58, found 61)
+
+**Fixes Applied:**
+1. Moved Karen Hao confounding_factors (7), testable_predictions (4), cross_references (4 → #57 Seetharaman, #49 Bobrowsky, #17 Guardian SID, MIT TR) to mechanism #60
+2. Replaced mechanism #61 confounding_factors with correct Apple News+ content (7 structured factors with strength ratings), testable_predictions (4 — WIRED N50, Atlantic, FT control, camera removal), cross_references (4 → #30, #43, #47, #55)
+3. Removed Karen Hao Wikipedia URL from mechanism #61 source_urls
+4. Updated stale assertion in `test_type_d_02am_cross_validation_aug12.py`: max mechanism 58→61, contiguous range doc 50-58→50-61
+
+### New Cross-Validation Test
+- `tests/test_type_d_06am_cross_validation_aug12.py` — 28 tests, 8 classes
+  - Validates no cross-contamination between mechanisms #60 and #61
+  - Verifies cross-reference targets (#60→{57,49,17,MIT}, #61→{30,43,47,55})
+  - Mechanism ID sequence 50-61 contiguous, no duplicates
+  - Entity YAML consistency with research YAML
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #60 fields added, #61 fields corrected
+- `tests/test_type_d_02am_cross_validation_aug12.py` — stale assertions updated
+- `tests/test_type_d_06am_cross_validation_aug12.py` — 28 tests, 8 classes (NEW)
+- `README.md` — test counts updated (10,324/323)
+- `docs/ARCHITECTURE.md` — test counts updated (10,324/323), new test file listed
+
+### Tests
+- 124/124 structural consistency tests passing
+- 293/293 combined verification (all recent mechanism + cross-validation tests)
+- Total: **10,324 tests** across **323 files**
+
+### Commit
+0ba1866 — pushed to GitHub
+
 ## Iteration 61 — 2026-08-12 05:00 PT (Type C: Financial Incentive Mapping)
 
 ### Finding: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel (Mechanism #61)

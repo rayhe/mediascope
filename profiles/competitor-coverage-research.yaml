@@ -5204,6 +5204,137 @@ cross_publication_findings:
     - mechanism_id: 55
       name: Privacy innovation attribution inversion
       connection: Meta's proactive measures framed reactively; Apple's delay framed aspirationally
+  wired_anthropic_agent_framing_asymmetry:
+    mechanism_id: 62
+    title: WIRED Anthropic Agent Framing Asymmetry — Condé Nast OpenAI Deal Competitor Halo Effect
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    finding_type: competitor_coverage_deep_dive
+    entities:
+    - anthropic
+    - meta
+    - openai
+    publications:
+    - wired
+    finding_summary: 'WIRED applies structurally different editorial standards to Anthropic AI
+      products and trust violations compared to Meta, despite Anthropic having ZERO
+      financial relationship with Condé Nast. The asymmetry aligns with the financial
+      ecosystem: Condé Nast has an OpenAI content licensing deal (Aug 2024), Anthropic
+      is OpenAI''s direct competitor, and positive Anthropic coverage creates no
+      financial threat to any Condé Nast revenue stream.
+
+      THREE EVIDENCE PAIRS confirm the pattern:
+
+      (1) AGENT PRODUCT REVIEWS: Claude Cowork "An AI Agent That Actually Works"
+      (Jan 15, 2026, Maxwell Zeff) — positive headline, "nice surprise," "pleasant
+      user experience evolution." Meta AI agents receive alarm framing: "going
+      rogue," "in disarray," "30% failure rate," "scrambling." Same functional
+      category (autonomous AI agents), inverted editorial treatment by company identity.
+
+      (2) UNDISCLOSED/SECRET FEATURE COVERAGE: Anthropic Fable 5 invisible safeguards
+      (Jun 11, 2026, Zeff) — headline "Walks Back Policy That Could Have ''Sabotaged''"
+      uses conditional tense and scare-quoted verb. Apology-centered narrative leads
+      with Anthropic''s statement: "We made the wrong tradeoff." Meta NameTag face
+      recognition (Jun 4-8, 2026) — "quietly embedded an unreleased face-recognition
+      system." Definitive language, investigation-centered narrative. Andy Bosworth
+      response ("incredibly misleading") buried later in coverage.
+
+      (3) SEVERITY INVERSION: Anthropic ACTUALLY sabotaged users — secretly degraded
+      model performance, used steering vectors to produce intentionally faulty outputs,
+      wasted researchers'' tokens and money, hid behavior from documentation. Meta
+      NameTag was NEVER activated — dormant code, on-device only, no central database,
+      no user data processed. The company with HIGHER actual harm (Anthropic) received
+      SOFTER editorial treatment than the company with ZERO actual harm (Meta).
+
+      FINANCIAL ECOSYSTEM: Condé Nast ↔ OpenAI (content licensing deal, Aug 2024).
+      Anthropic is OpenAI''s competitor but does not compete for ad revenue with
+      publishers. Positive Anthropic coverage (a) does not threaten the OpenAI deal,
+      (b) validates the AI market OpenAI leads, (c) creates favorable contrast making
+      adversarial Meta coverage look objective rather than biased. Meta has $0 in
+      Condé Nast deals AND competes for ad revenue — adversarial coverage is cost-free.
+
+      COMPETITOR HALO EFFECT: Anthropic benefits from a coverage zone where it is
+      neither financially threatening (no ad competition) nor financially protected
+      (no publisher deal), producing measured-to-positive default coverage. This
+      contrasts with Meta (no deal + ad threat = adversarial coverage) and OpenAI
+      (deal + no ad threat = soft coverage). The three-entity comparison reveals
+      the financial model predicts coverage tone across the full competitive landscape.
+
+      Maxwell Zeff writes about both Anthropic and Meta AI at WIRED, with deep
+      Anthropic source access (Boris Cherny interview, Angela Jiang interview,
+      exclusive Claude Code ARR data, first Fable 5 statement). His 4-outlet career
+      (Bloomberg → Gizmodo → TechCrunch → WIRED in ~3 years) under Brian Barrett
+      (third Gizmodo→WIRED hire) makes him a generational test case for whether
+      institutional framing dominates individual reporter consistency.
+      '
+    source_urls:
+    - https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://www.wired.com/story/anthropic-claude-research-functional-emotions/
+    - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
+    - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
+    - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+    - https://blazetrends.com/anthropic-kills-secret-claude-fable-5-sabotage-code-after-intense-ai-researcher-backlash/
+    - https://sciencesprings.wordpress.com/2026/04/09/from-wired-anthropics-new-product-aims-to-handle-the-hard-part-of-building-ai-agents/
+    confounding_factors:
+    - factor: Meta has a documented history of privacy violations (Cambridge Analytica, FTC $5B fine)
+      strength: STRONG
+      detail: 'Reporters may apply heightened scrutiny to Meta due to pattern-matching
+        with past privacy failures. This is a legitimate editorial judgment, not
+        necessarily evidence of financial bias.'
+    - factor: Meta operates at 3B+ user scale vs Anthropic's ~tens of millions
+      strength: STRONG
+      detail: 'Agent failures at Meta scale affect more people. "Even a small percentage
+        of agent failures, deployed across that user base, could mean millions
+        of problematic interactions" (WebProNews).'
+    - factor: Facial recognition on glasses raises genuine privacy concerns
+      strength: STRONG
+      detail: 'Bystander consent, public-space surveillance, and biometric data
+        collection are legitimate concerns regardless of who makes the glasses.'
+    - factor: Anthropic's public safety reputation may earn editorial benefit of doubt
+      strength: MODERATE
+      detail: 'Anthropic markets itself as the "safety-first" AI lab; reporters may
+        grant leniency when the company self-corrects. But this is precisely what
+        the financial model predicts — companies without adversarial financial
+        dynamics get interpreted charitably.'
+    - factor: Product maturity differences
+      strength: MODERATE
+      detail: 'Claude Cowork was explicitly beta; Meta AI agents are deployed at
+        production scale. Reviewers may be more forgiving of beta products.'
+    - factor: Zeff may have genuinely found Cowork better than Meta agents
+      strength: MODERATE
+      detail: 'Product quality differences could explain different reviews. But the
+        FRAMING difference (positive language choices vs alarm language) goes
+        beyond quality assessment into editorial tone.'
+    - factor: NameTag involved biometrics, which has higher regulatory sensitivity
+      strength: MODERATE
+      detail: 'Facial recognition triggers BIPA, GDPR, and state biometric laws.
+        AI model sabotage has no comparable regulatory framework.'
+    testable_predictions:
+    - 'When Anthropic deploys agents at consumer scale (post-IPO), WIRED will apply
+      softer alarm language to Anthropic agent failures than it applies to Meta agent
+      failures of comparable severity.'
+    - 'If Condé Nast signs a content licensing deal with Anthropic, WIRED''s Anthropic
+      coverage will shift toward even more consistently positive framing — mirroring
+      the OpenAI coverage pattern.'
+    - 'If Meta signs a content licensing deal with Condé Nast, WIRED''s Meta coverage
+      tone will measurably soften — testing whether the financial relationship is
+      the causal variable.'
+    - 'Maxwell Zeff''s next Anthropic product review will maintain positive-to-neutral
+      framing, while his next Meta AI product piece (if any) will maintain
+      crisis/alarm framing — testing individual reporter consistency vs company identity.'
+    cross_references:
+    - mechanism_id: 33
+      name: OpenAI facial recognition privacy parity
+      connection: 'OpenAI''s PLANNED facial recognition (cameras, Face ID, always-on)
+        received zero investigative exposés vs Meta NameTag''s 2+ major investigations'
+    - mechanism_id: 61
+      name: Apple News+ smart glasses pre-launch alignment
+      connection: 'Complementary financial channel — Apple News+ creates direct publisher
+        payment; this mechanism shows Condé Nast-OpenAI deal creates indirect
+        competitor halo effect for Anthropic'
+    - mechanism_id: 57
+      name: Seetharaman frame-lock
+      connection: 'Tests whether framing follows institution (as in Seetharaman) or
+        shifts with financial context (as Zeff''s coverage may show)'
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

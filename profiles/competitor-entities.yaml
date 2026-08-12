@@ -932,6 +932,26 @@ entities:
       source_urls:
       - https://www.reuters.com/legal/litigation/what-we-know-about-rogue-ai-agent-security-breaches-2026-07-31/
       - https://www.thetimes.com/uk/technology-uk/article/ai-agent-anthropic-claude-mythos-openai-gpt-hacking-spree-gchq-8cw70sqrx
+    wired_coverage_framing_asymmetry:
+      mechanism_id: 62
+      finding: |
+        WIRED applies softer editorial standards to Anthropic AI products and trust
+        violations vs Meta, despite Anthropic having $0 in Condé Nast deals.
+        Condé Nast's OpenAI deal creates a "competitor halo" — positive Anthropic
+        coverage doesn't threaten the OpenAI relationship, doesn't compete for ad
+        revenue, and creates favorable contrast that normalizes adversarial Meta
+        coverage. Key evidence: Claude Cowork "actually works" (positive, Jan 2026)
+        vs Meta AI agents "going rogue" (alarm); Fable 5 sabotage "Could Have
+        'Sabotaged'" (conditional) vs Meta NameTag "quietly embedded" (definitive);
+        severity inversion — Anthropic ACTUALLY harmed users, Meta's NameTag was
+        never activated. Maxwell Zeff covers both at WIRED with deep Anthropic
+        source access.
+      date_added: '2026-08-12'
+      source_urls:
+      - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
+      - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
+      - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+
   amazon:
     display_name: Amazon
     aliases:
