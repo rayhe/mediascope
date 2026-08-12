@@ -2390,6 +2390,34 @@ entities:
       - https://www.zacks.com/stock/news/2961137/forget-ai-capex-concerns---buy-alphabet-after-excellent-q2-earnings?art_rec=blog-analyst_blog-up_next-ID01-txt-2961137
       - https://www.fool.com/investing/2026/07/30/alphabet-will-spend-as-much-as-205-billion-this-ye/
       - https://www.thewrap.com/industry-news/business/alphabet-earnings-q2-2026/
+    cloudflare_publisher_crawl_block:
+      mechanism_id: 64
+      overview: 'Cloudflare announces Sep 15, 2026 default policy change blocking mixed-use AI
+        crawlers from ad-supported pages. Google''s Googlebot is the primary affected crawler
+        because it serves both search indexing AND AI Overviews/AI Mode. Three MediaScope-profiled
+        publications (Condé Nast, Financial Times, The Atlantic) are Cloudflare customers AND have
+        OpenAI content licensing deals — their OpenAI revenue is API-based and unaffected by
+        Cloudflare blocking. Publisher traffic declines accelerating: USA Today -18%, Politico -20%,
+        CNN -31%, Business Insider -31-35% (Semrush, Jun 2025-Jun 2026). Reddit weighing ending
+        $60M/yr Google content licensing deal. Cloudflare CEO Prince: >55% of web traffic now
+        non-human. Google offers Google-Extended for AI training opt-out, but it does NOT cover
+        AI Overviews or AI Mode — Cloudflare explicitly flagged this gap.
+        '
+      effective_date: '2026-09-15'
+      cloudflare_customers_with_openai_deals:
+      - conde_nast
+      - financial_times
+      - atlantic
+      publisher_traffic_declines_jun25_jun26:
+        usa_today: -18%
+        politico: -20%
+        cnn: -31%
+        business_insider: -31% to -35%
+      non_human_traffic_pct: 55+
+      source_urls:
+      - https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/
+      - https://www.wsj.com/business/media/google-search-publishers-ai-content-0fb06e41
+      - https://www.adweek.com/media/adweek-tech-advantage-publishers-pull-back-from-google-ai-search-while-creators-push-on/
     q2_2026_meta_google_coverage_asymmetry:
       overview: 'Google and Meta reported Q2 2026 earnings 7 days apart (Google Jul 22,
 

@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10427 tests across 325 test files (all from real articles)
+├── tests/                       # 10484 tests across 326 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -468,6 +468,7 @@ mediascope/
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
 │   ├── test_citations.py       # Citation extraction, source grading, domain classification
 │   ├── test_cli_doc_consistency.py # Structural consistency: validates all CLI examples in docs/*.md and README.md use real CLI flags (catches phantom flags) and that documented commands are real
+│   ├── test_cloudflare_publisher_crawl_block_google_openai_asymmetry_aug12.py # Mechanism #64: Cloudflare default-block mixed-use AI crawlers → Google-OpenAI financial asymmetry accelerator
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
 │   ├── test_financial_relationships.py  # Financial relationship data integrity, asymmetry hypothesis

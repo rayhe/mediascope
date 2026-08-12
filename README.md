@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 10,427 | Across 325 test files |
+| Tests | 10,484 | Across 326 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **10427 tests** across 325 test files, each covering a different analytical capability:
+MediaScope has **10484 tests** across 326 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -497,6 +497,7 @@ MediaScope has **10427 tests** across 325 test files, each covering a different 
 | `test_quality_standards.py` | 49 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic, zero-named-sources detection (attribution pattern coverage, score penalty, organizational attribution exclusion) |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
 | `test_cli_doc_consistency.py` | 2 | Structural consistency: validates all CLI examples in docs/*.md and README.md use real CLI flags (catches phantom flags), and that documented commands are real CLI commands |
+| `test_cloudflare_publisher_crawl_block_google_openai_asymmetry_aug12.py` | 55 | Mechanism #64: Cloudflare Publisher AI Crawl Default-Block — Google-OpenAI Financial Asymmetry Accelerator. Cloudflare Sep 15, 2026 default policy blocks mixed-use AI crawlers from ad-supported pages. Google (crawler-dependent) affected; OpenAI (deal-dependent, API-based) unaffected. Three MediaScope publications (Condé Nast, FT, The Atlantic) are Cloudflare customers AND have OpenAI deals — first third-party infrastructure intervention creating differential competitor impact. Publisher traffic declines (USA Today -18%, Politico -20%, CNN -31%, BI -35%), Google negative FCF (-$5.9B), Reddit renegotiating $60M/yr Google deal (Advance owns 23.3%), 55%+ non-human web traffic. 12 classes, 57 tests. |
 | `test_topics.py` | 44 | Topic classification: all 29 standardized topic buckets, confidence scoring (keyword coverage + density), length-aware density normalization (short-text dampening, proportional scaling, full-length no-dampening), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, design-feature addiction terms (infinite scroll, body dysmorphia, cosmetic filters), bellwether/Section 230 litigation terms, ai_ethics_safety alignment/philosopher, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 | `test_atlantic_analysis.py` | 31 | Atlantic-specific coverage analysis: Emerson Collective ownership conflicts, Apple/OpenAI financial interest detection, AI coverage framing patterns, data center environmental articles |

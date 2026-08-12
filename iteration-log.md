@@ -1,5 +1,73 @@
 # MediaScope Iteration Log
 
+## Iteration 65 — 2026-08-12 09:00 PT (Type C: Financial Incentive Mapping)
+
+### New Finding: Cloudflare Publisher AI Crawl Default-Block — Google-OpenAI Financial Asymmetry Accelerator (Mechanism #64)
+
+**Core Finding:** Cloudflare's September 15, 2026 default policy change — blocking mixed-use AI crawlers from ad-supported pages — creates a structural asymmetry that ACCELERATES the divergence between Google (crawler-dependent) and OpenAI (deal-dependent) financial relationships with publishers. First third-party infrastructure provider intervention that differentially impacts competitor entities.
+
+**Three MediaScope-profiled Cloudflare customers with OpenAI deals:** Condé Nast (WIRED), Financial Times, The Atlantic. All maintain OpenAI licensing revenue (API-based, unaffected) while Cloudflare blocks Google's mixed-use Googlebot from ad-supported pages.
+
+**Publisher traffic decline data (Jun 2025→Jun 2026):** USA Today -18%, Politico -20%, CNN -31%, Business Insider -31-35% (Semrush). Ahrefs: 58% lower avg CTR with AI Overview. 75% of AI Mode sessions never leave for the web (GrowthMemo).
+
+**Google financial stress:** Q2 2026 negative FCF (-$5.9B) — first time in company history. Search+ads $63.3B (+17%) but AI capex cannibalizing profitability.
+
+**Reddit-Google deal renegotiation:** Reddit weighing ending $60M/yr Google deal. Advance Publications owns 23.3% of Reddit AND 100% of Condé Nast — dual position in the decoupling. Reddit stock -9% on news.
+
+**Coverage incentive shift:** Google dependency weakened (blocking reduces leverage). OpenAI deals preserved (API-based, unaffected). Meta unchanged (zero deals through either channel).
+
+**7 confounding factors, 4 testable predictions, 11 source URLs, 4 cross-references (#35, #41, #47, #55).**
+
+### Files Changed
+- `tests/test_cloudflare_publisher_crawl_block_google_openai_asymmetry_aug12.py` — 12 classes, 55 def test_ methods (57 pytest-collected), all passing (NEW)
+- `profiles/competitor-coverage-research.yaml` — mechanism #64 added to cross_publication_findings
+- `profiles/competitor-entities.yaml` — cloudflare_publisher_crawl_block section added under google entity
+- `README.md` — test counts updated (10,484/326), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,484/326), new test file listed
+
+### Tests
+- 57/57 new mechanism tests passing (pytest-collected)
+- 124/124 structural consistency tests passing
+- Total: **10,484 tests** across **326 files**
+
+### Commit
+Pending push
+
+## Iteration 64 — 2026-08-12 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Finding: Maxwell Zeff Cross-Entity Coverage — Source Access Asymmetry Amplifies Institutional Financial Incentives (Mechanism #63)
+
+**Journalist:** Maxwell Zeff (Gizmodo → TechCrunch → WIRED)
+
+**Core Finding:** Cross-publication framing shift correlates with institutional financial incentives. At Gizmodo (G/O Media, no AI content licensing deals, Aug 2023-Jun 2024), Zeff covered ALL major AI companies adversarially — Meta (Project Ghostbusters wiretapping), OpenAI (board chaos, governance dysfunction). At WIRED (Condé Nast, OpenAI content licensing deal Aug 2024, joined Nov 2025), coverage bifurcated: Meta receives institutional-decay framing (layoffs, morale, dysfunction) while OpenAI and Anthropic receive access-based business journalism (executive profiles, revenue scoops, product launches).
+
+**Source Access Asymmetry:** Zeff cultivated inside access at Anthropic (Boris Cherny, head of Claude Code, exclusive ARR data showing $100M+ growth) and OpenAI (Greg Brockman interviews, internal reorg memos, Thibault Sottiaux profile). No comparable inside Meta AI access documented. WIRED output Nov 2025-Aug 2026: 6+ OpenAI pieces, 3+ Anthropic pieces, 0 dedicated Meta AI business pieces — despite Meta's Llama and Meta AI chatbot being comparably newsworthy.
+
+**Beat-Access Dependency:** As WIRED's AI business reporter, Zeff's ability to break scoops depends on maintaining source relationships at AI labs. Adversarial coverage risks burning sources at companies providing access (OpenAI, Anthropic); Meta provides no access to lose, making adversarial coverage cost-free.
+
+**Transitional Evidence (TechCrunch):** At TechCrunch (Yahoo, no OpenAI deal), intermediate framing: Meta's LlamaCon framed as "all about undercutting OpenAI" (reactive positioning), while Anthropic court hallucination received straightforward adversarial coverage. Supports institutional-alignment hypothesis.
+
+**Pipeline Significance:** Third confirmed Gizmodo→WIRED migration under Executive Editor Brian Barrett (after Dell Cameron, Dhruv Mehrotra). Adversarial instincts from Gawker-descendant culture selectively channeled at WIRED — applied to Meta, muted for OpenAI/Anthropic.
+
+**Cross-references:** #62 (WIRED-Anthropic institutional framing), #60 (Hao institutional alignment), #57 (Seetharaman frame-lock contrast).
+
+**6 confounding factors, 4 testable predictions, 9 source URLs.**
+
+### Files Changed
+- `tests/test_maxwell_zeff_cross_entity.py` — 41 test methods (57 pytest-collected), 10 classes (NEW)
+- `profiles/competitor-coverage-research.yaml` — mechanism #63 in cross_publication_findings
+- `profiles/careers/journalists.yaml` — Maxwell Zeff competitor_coverage with cross_entity_analysis
+- `README.md` — test counts updated (10,427/325), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,427/325), new test file listed
+
+### Tests
+- 57/57 new mechanism tests passing (pytest-collected)
+- 124/124 structural consistency tests passing
+- Total: **10,427 tests** across **325 files**
+
+### Commit
+5febc02 — pushed to GitHub
+
 ## Iteration 63 — 2026-08-12 07:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### New Finding: WIRED Anthropic Agent Framing Asymmetry — Condé Nast OpenAI Deal Competitor Halo Effect (Mechanism #62)
