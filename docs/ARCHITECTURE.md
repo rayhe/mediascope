@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10131 tests across 317 test files (all from real articles)
+├── tests/                       # 10155 tests across 318 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -648,6 +648,7 @@ mediascope/
 │   ├── test_jul7_regressions.py  # Jul 7 regressions: disclosure+PublicationProfile compat, regex backtracking, investments coercion
 │   ├── test_jul8_regressions.py  # Jul 8 regressions: "mounting" escalation, auxiliary confession verbs, "largest ever" precedent
 │   ├── test_confession_framing.py # Confession framing: "admitted," "conceded," voluntary-to-forced-admission reframing, false-positive exclusion
+│   ├── test_conde_nast_ai_deal_portfolio_dependency_index_aug12.py # Mechanism #58: CN AI deal portfolio dependency, Perplexity C&D→deal arc, TBPN venue conflict, marginal revenue analysis
 │   ├── test_delayed_defense_and_normalization.py # Delayed defense (corporate response buried late in article), industry normalization undercut (acknowledging then singling out), headline boost strength for child_safety topic
 │   ├── test_government_oversight_topic.py # government_oversight topic bucket: national security, export controls, AI regulation, group_expert source detection
 │   ├── test_grudging_concession.py # Grudging concession framing device (#95): positive action editorially minimized via "finally," "only after backlash," "it's about time" — framing legitimate progress as reluctant, forced, or insufficient; discovered from Gizmodo LED tamper article (Jul 8, 2026); negative guards for neutral reporting

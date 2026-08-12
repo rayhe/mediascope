@@ -8460,4 +8460,44 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-11
+  conde_nast_ai_deal_portfolio_dependency_index:
+    date_added: 2026-08-12
+    entities:
+    - OpenAI
+    - Amazon
+    - Perplexity
+    - Meta
+    - Google
+    finding_summary: 'Deepens Mechanism #35 with fresh 2026 Q1-Q2 evidence quantifying Condé Nast''s
+      AI deal portfolio as a strategic revenue pillar. Three key extensions: (1) PERPLEXITY
+      COVERAGE ARC — a natural experiment showing coverage tone tracks deal status. In Jul
+      2024, WIRED published adversarial investigations of Perplexity''s scraping and Condé
+      Nast sent a cease-and-desist letter. By Oct 2025, Lynch named Perplexity alongside
+      OpenAI as an AI licensing partner (Adweek May 2026). Coverage shifted from adversarial
+      to neutral with deal status. Meta, which never scraped WIRED content, receives consistently
+      adversarial coverage with $0 in CN deals. (2) TBPN VENUE CONFLICT — Lynch appeared
+      on TBPN (acquired by OpenAI Apr 2, 2026) at least 3 times to discuss CN strategy,
+      including the ''Google Zero'' directive. The CEO of WIRED''s parent is providing strategic
+      narratives on the media platform owned by his company''s largest AI licensing partner.
+      Nilay Patel (Verge EIC, whose parent PMC has a separate OpenAI deal via Vox Media)
+      amplified Lynch''s narrative on Decoder podcast. (3) FINANCIAL QUANTIFICATION — estimated
+      total AI licensing revenue of $14-45M/yr across OpenAI ($10-30M), Amazon/Rufus ($3-10M),
+      and Perplexity ($1-5M). While only 0.7-2.25% of CN''s ~$2B revenue, this is MARGINAL
+      revenue replacing declining advertising. If ad revenue declines ~$50M/yr, AI licensing
+      replaces 28-90% of the decline. Lynch explicitly named AI licensing as a strategic pillar
+      (Oct 2025), confirmed by portfolio pruning (Self, Glamour intl, Wired Italy shut Apr 2026).
+      Events revenue up 40% (2025), digital subscriptions up 29% (2025). Meta: $0 across all
+      channels. 7 confounding factors documented, 4 falsifiable predictions.'
+    finding_type: financial_dependency_quantification
+    mechanism_id: 58
+    mechanism_name: Condé Nast AI Deal Portfolio Dependency Index — Marginal Revenue Significance
+    publication: WIRED / Condé Nast
+    source_urls:
+    - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+    - https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/
+    - https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
+    - https://www.mediapost.com/publications/article/414381/conde-nast-shrinks-publisher-is-closing-self-an.html
+    - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+    test_count: 24
+    test_file: tests/test_conde_nast_ai_deal_portfolio_dependency_index_aug12.py
+research_period: 2024-08-01 to 2026-08-12

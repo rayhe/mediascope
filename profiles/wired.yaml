@@ -775,6 +775,51 @@ advance_investments:
         - "https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/"
         - "https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777"
         - "https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00"
+    perplexity_coverage_arc:
+      mechanism_id_ref: 58
+      overview: >
+        NATURAL EXPERIMENT — COVERAGE TONE TRACKS DEAL STATUS (Mechanism #58).
+        In Jul 2024, WIRED published adversarial investigations of Perplexity's content
+        scraping and Condé Nast sent a cease-and-desist letter. By Oct 2025, Lynch named
+        Perplexity alongside OpenAI as an AI licensing partner (Adweek, May 2026). The
+        coverage shifted from adversarial to neutral with deal status. Meta, which never
+        scraped WIRED content without permission, receives consistently adversarial
+        coverage with $0 in CN deals. This is the cleanest available natural experiment:
+        same publisher, same company, coverage tone correlating to deal status.
+      timeline:
+        - date: "2024-06"
+          event: "WIRED publishes adversarial Perplexity scraping investigation"
+          tone: adversarial
+        - date: "2024-07"
+          event: "Condé Nast sends cease-and-desist to Perplexity"
+          tone: adversarial
+        - date: "2025-10"
+          event: "Lynch names Perplexity as AI licensing partner (confirmed Adweek May 2026)"
+          tone: neutral
+      source_urls:
+        - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+    marginal_revenue_analysis:
+      mechanism_id_ref: 58
+      overview: >
+        MECHANISM #58: MARGINAL REVENUE SIGNIFICANCE. While AI licensing is estimated at
+        only 0.7-2.25% of CN's ~$2B total revenue, its MARGINAL importance is disproportionate.
+        Lynch explicitly named AI licensing as a strategic revenue pillar (Oct 2025, Adweek),
+        replacing declining advertising. If advertising declines ~$50M/yr on a ~$1B base,
+        AI licensing at $14-45M/yr replaces 28-90% of the decline. The Apr 2026 portfolio
+        pruning (Self, Glamour intl, Wired Italy) concentrates the remaining portfolio on
+        higher-margin businesses including AI licensing. Updated financial data (Adweek May 2026):
+        events revenue up 40% (2025), digital subscriptions up 29% (2025), subscription
+        total up 10%, commerce up 13%. Advertising "no longer expected to be a growth engine."
+      estimated_deal_values:
+        openai_annual_m: "10-30"
+        amazon_rufus_annual_m: "3-10"
+        perplexity_annual_m: "1-5"
+        total_annual_m: "14-45"
+        as_pct_of_2b_revenue: "0.7-2.25%"
+      source_urls:
+        - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+        - "https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/"
+        - "https://www.mediapost.com/publications/article/414381/conde-nast-shrinks-publisher-is-closing-self-an.html"
     governance_control: >
       FAR DEEPER THAN 2 BOARD SEATS. Per Reddit 2026 proxy (SEC filing rddt-20260423, DEF 14A filed Apr 23, 2026),
       Advance has consent/veto rights over Reddit's most consequential decisions:

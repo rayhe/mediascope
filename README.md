@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 10,101 | Across 316 test files |
+| Tests | 10,155 | Across 318 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **10131 tests** across 317 test files, each covering a different analytical capability:
+MediaScope has **10155 tests** across 318 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -683,6 +683,7 @@ MediaScope has **10131 tests** across 317 test files, each covering a different 
 | `test_ultimatum_framing.py` | 25 | Ultimatum framing device (#96): multi-stage regulatory/legal proceeding compressed into binary "do X or face Y" construction; em-dash-or, must-or-face, comply-or, deadline, either-or variants; discovered from NY Post EU DSA headline (Jul 10, 2026); cross-publication comparison (Reuters softer variant, CNN/WSJ non-matches); 6 negative guards |
 | `test_recidivism_framing.py` | 25 | Recidivism framing device (#98): entity framed as serial offender through temporal recurrence markers — "once again caught," "has a long history of violations," "serial violator," "pattern of," "track record of failures," "continues to violate" — distinct from repeated_disruption (organizational instability); 20 positive tests, 5 negative guards including positive-context filtering |
 | `test_confession_framing.py` | 31 | Confession framing (#33): "admitted," "conceded," "finally acknowledged," "was forced to admit" reframing corporate statements as confessions. Cross-publication patterns (Guardian, NYT, Atlantic, MIT TR). False-positive exclusion for legal/judicial confessions, direct-quote self-description. Attribution asymmetry detection. |
+| `test_conde_nast_ai_deal_portfolio_dependency_index_aug12.py` | 24 | Mechanism #58: Condé Nast AI Deal Portfolio Dependency Index — Marginal Revenue Significance. Quantifies CN's complete AI licensing portfolio (OpenAI $10-30M/yr, Amazon Rufus $3-10M/yr, Perplexity $1-5M/yr, total $14-45M/yr = 0.7-2.25% of ~$2B revenue). NATURAL EXPERIMENT: Perplexity C&D→deal arc (adversarial investigation Jul 2024, deal partner by Oct 2025, coverage tone shifted with deal status). TBPN venue conflict: Lynch appeared 3× on OpenAI-owned media with active deal, co-amplified by Verge EIC Patel ("Google Zero"). Marginal revenue analysis: AI licensing replaces 28-90% of annual ad revenue decline, named by Lynch as strategic pillar. Portfolio pruning (Self, Glamour intl, Wired Italy) concentrates on AI licensing. Meta: $0 across all channels. 7 confounders, 4 falsifiable predictions. 8 classes, 24 tests |
 | `test_delayed_defense_and_normalization.py` | 27 | Delayed defense (corporate response buried after 65% of article, including 'defended' verb), industry normalization undercut, headline boost strength, outsourced intensity document-catalog variant (reviewed documents with disturbing enumerated content), expanded child_safety keywords (suicide, self-harm, eating disorders, cyberbullying). |
 | `test_precedent_analogy.py` | 22 | Precedent analogy framing: opioid/tobacco/asbestos crisis import via "echoes of," "much like," "following the playbook" patterns. Insurance entity detection (Hartford, Chubb, Flashlight Capital). Legal entity detection (Section 230, DSA, bellwether). Scale/magnitude expansions ("hundreds of millions," "tens of billions"). Analogy marker boundary fixes. |
 | `test_resistance_patterns.py` | 35 | MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof amplification, stalled-dollar and workforce-percentage scale magnitude. |
