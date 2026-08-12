@@ -1351,10 +1351,157 @@ key_journalists:
   - name: "Hayden Field"
     beat: "AI, artificial intelligence"
     known_patterns: >
-      Senior AI Reporter. Previously at CNBC. Covers AI industry developments, AI policy, and AI
-      products. Her AI reporting is the most directly affected by The Verge's OpenAI licensing
-      deal — every AI industry comparison (OpenAI vs Meta AI, Gemini vs Llama) occurs in context
-      of financial relationships with one competitor but not others.
+      Senior AI Reporter. Joined The Verge from CNBC on June 2, 2025. Covers AI industry
+      developments, AI policy, and AI products. Her AI reporting is the most directly affected
+      by The Verge's OpenAI licensing deal — every AI industry comparison (OpenAI vs Meta AI,
+      Gemini vs Llama) occurs in context of financial relationships with one competitor but
+      not others.
+
+      CAREER PATH (2 publications, 5+ years):
+      1. CNBC (~2021–2025) — AI/enterprise reporter, built AI beat covering OpenAI, Anthropic
+      2. The Verge (Jun 2, 2025–present) — Senior AI Reporter, PMC/PMX ownership
+
+      HIRING ANNOUNCEMENT (TalkingBizNews): Field would "lead coverage of the biggest names
+      in AI — including OpenAI, Anthropic, Google, Meta, Apple, and others." Six companies
+      listed equally in the stated mandate.
+
+    cross_entity_coverage_analysis:
+      mechanism_name: "ai_beat_concentration"
+      mechanism_id: 52
+      description: >
+        Hayden Field's AI beat at The Verge is functionally an OpenAI/Anthropic beat.
+        In 14 months (Jun 2025 – Aug 2026), she produced ~15+ articles on OpenAI/Anthropic
+        vs ~2-3 on Meta AI — a volume ratio of roughly 5-7:1. Framing diverges systematically:
+        OpenAI/Anthropic receive aspiration/underdog/business-milestone framing ("betting its
+        future," "officially filed to go public," "solidarity"), while Meta AI receives
+        follower/deficit framing ("reentering the AI race," researchers "rejected Meta's
+        offers"). This is the THIRD documented instance of the "AI reporter beat concentration"
+        pattern after Cade Metz at NYT and Will Knight at WIRED, establishing it as an
+        INDUSTRY-WIDE phenomenon: the AI beat at financially-entangled publications
+        functionally means "OpenAI/Anthropic reporter."
+
+      openai_anthropic_coverage:
+        volume: "high (~15+ articles in 14 months)"
+        coverage_volume: "~15+ standalone articles and Decoder podcast appearances"
+        framing_direction: "aspiration / underdog / business milestone / regulatory drama"
+        framing_indicators:
+          - "'betting its future' (Anthropic agents — aspiration vocabulary)"
+          - "'officially filed to go public' (Anthropic — business milestone)"
+          - "'employees across OpenAI and Google support Anthropic' (solidarity/hero framing)"
+          - "'fight over Claude Mythos 5' (Anthropic as victim of government overreach)"
+          - "'got hit by export rules nobody understands' (sympathetic framing)"
+          - "'$122B at $850B valuation' (OpenAI — financial milestone, neutral)"
+          - "'Who decides when AI is too dangerous?' (Decoder, Anthropic focus — existential framing)"
+        examples:
+          - title: "Anthropic has officially filed to go public"
+            date: "2026-06-01"
+            framing: "Business milestone — IPO filing as maturation event"
+            source_url: "https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/"
+          - title: "Employees across OpenAI and Google support Anthropic's lawsuit against the Pentagon"
+            date: "2026-03-09"
+            framing: "Solidarity narrative — Anthropic as hero fighting government overreach"
+            source_url: "https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/"
+          - title: "Anthropic cuts off Fable 5 and Mythos 5 access following government order"
+            framing: "Regulatory drama — Anthropic as compliant victim"
+          - title: "Anthropic got hit by export rules nobody understands"
+            framing: "Sympathetic — policy complexity, not corporate misconduct"
+          - title: "The vibes are off at OpenAI"
+            framing: "Insider critical analysis — governance concerns"
+          - title: "Why OpenAI killed Sora"
+            framing: "Strategic analysis — editorial choice, not ethical failure"
+          - title: "OpenAI just bought TBPN"
+            framing: "Neutral business news"
+          - title: "OpenAI raises another $122B at $850B valuation"
+            framing: "Financial milestone — neutral business reporting"
+          - title: "Decoder: Who decides when AI is too dangerous?"
+            framing: "Anthropic Fable 5 focus — existential/philosophical framing"
+            source_url: "https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/"
+          - title: "Decoder: Why Anthropic is betting its future on AI coding agents"
+            framing: "Aspiration — 'betting its future' is forward-looking, confident vocabulary"
+          - title: "Decoder: The AI industry's existential race for profits"
+            framing: "Anthropic + OpenAI focus — industry-level analysis"
+          - title: "Decoder: The AI industry is at a major crossroads"
+            framing: "OpenAI DevDay focus — strategic inflection point"
+          - title: "Anthropic received a $2.5B revolving credit line"
+            date: "2025-05"
+            framing: "Financial milestone (CNBC era — professional network carried over)"
+            source_url: "https://www.techmeme.com/250516/p19"
+
+      meta_coverage:
+        volume: "near-zero (~2-3 articles in 14 months, ~10% of OpenAI/Anthropic volume)"
+        coverage_volume: "~2-3 standalone articles plus brief mentions in AI feed"
+        framing_direction: "follower / deficit / reentry framing"
+        framing_indicators:
+          - "'reentering' implies Meta LEFT the race — follower framing"
+          - "'rejected Meta's offers to stay at jobs that align with their values' — implies Meta doesn't align with researcher values"
+          - "Muse Glimmer brief mention in AI feed — not a standalone article"
+        examples:
+          - title: "Meta is reentering the AI race with a new model called Muse Spark"
+            date: "2026-04-08"
+            framing: "'REENTERING' implies Meta left the race. Deficit/follower vocabulary"
+            source_url: "https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/"
+          - title: "Sources: some AI researchers rejected Meta's offers to stay at jobs that align with their values"
+            date: "2025-07"
+            framing: "Frames Meta as employer whose values researchers reject. Far fewer defected from Anthropic and DeepMind than OpenAI"
+            source_url: "https://www.techmeme.com/250710/p29"
+          - title: "Muse Glimmer AI feed mention"
+            date: "2026-08"
+            framing: "Brief mention in aggregate AI coverage — not elevated to standalone article"
+        notable_absences:
+          - "No Field article on Llama 4 launch (major open-weight release)"
+          - "No Field article on Meta's open-weight AI policy (defining industry stance)"
+          - "No Field article on Meta AI reaching 1B MAU (milestone)"
+          - "No Field article on Meta AI on glasses (product-AI convergence)"
+
+      mandate_vs_reality_gap:
+        hiring_description: >
+          TalkingBizNews June 2025: Field would "lead coverage of the biggest names in AI —
+          including OpenAI, Anthropic, Google, Meta, Apple, and others." Six companies listed
+          equally.
+        actual_portfolio: >
+          14-month output (Jun 2025 – Aug 2026) is dominated by 2 of the 6 listed companies.
+          OpenAI and Anthropic receive ~85-90% of Field's AI beat coverage volume. Meta, Google,
+          and Apple are effectively absent from her primary beat coverage, with Meta receiving
+          the most systematically different framing when it does appear.
+        gap_assessment: >
+          The mandate-vs-reality gap is the mechanism itself: beat assignment as coverage
+          selection. An "AI reporter" who covers 2 of 6 named companies produces editorial
+          concentration that shapes which AI companies get sustained attention and which
+          exist only in peripheral mentions.
+
+      industry_pattern_match:
+        third_instance: true
+        description: >
+          This is the THIRD documented instance of the "AI reporter beat concentration"
+          pattern, establishing it as an INDUSTRY-WIDE phenomenon rather than an isolated
+          editorial choice.
+        parallel_instances:
+          - journalist: "Cade Metz"
+            publication: "New York Times"
+            pattern: "AI reporter covers OpenAI/Anthropic extensively, near-zero Meta AI articles"
+            counter_example: "Victoria Song at The Verge — wearables reporter covers Meta balanced-to-positive, but covers products not AI research"
+          - journalist: "Will Knight"
+            publication: "WIRED (Condé Nast)"
+            pattern: "AI reporter covers OpenAI/Anthropic extensively, zero Meta AI articles"
+
+      financial_correlation_note: >
+        The Verge/PMC has an OpenAI content licensing deal (via Vox Media, May 2024) and an
+        Azure OpenAI enterprise agreement for editorial AI operations. No Meta content deal
+        exists. Coverage volume correlates with financial-relationship presence: companies
+        that pay The Verge's parent (OpenAI) get sustained beat reporter attention; companies
+        that don't (Meta) fall outside the beat reporter's primary coverage portfolio. This
+        matches the pattern at Condé Nast/WIRED (6 AI deals, none with Meta) and NYT
+        (Amazon/Apple financial relationships, no Meta deal).
+
+      source_urls:
+        - "https://talkingbiznews.com/media-news/the-verge-hires-field-as-senior-ai-reporter/"
+        - "https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/"
+        - "https://www.techmeme.com/250710/p29"
+        - "https://www.techmeme.com/250516/p19"
+        - "https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/"
+        - "https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/"
+        - "https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/"
+        - "https://www.youtube.com/watch?v=8WGEky2D3iY"
 
   - name: "Sean Hollister"
     beat: "consumer tech, gaming, reviews"

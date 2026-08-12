@@ -4175,6 +4175,89 @@ cross_publication_findings:
       - https://www.mondaq.com/unitedstates/licensing-syndication/1792816/major-publishers-challenge-ai-training-practices-in-landmark-copyright-suit-against-meta
       - https://9to5mac.com/2025/01/13/meta-training-ai-pirated-content/
       - https://www.eweek.com/news/anthropic-15-billion-ai-copyright-settlement-approved/
+  hayden_field_ai_beat_concentration:
+    mechanism_id: 52
+    mechanism_name: "Hayden Field AI Beat Concentration — The Verge AI Coverage as OpenAI/Anthropic Coverage"
+    finding_type: journalist_beat_concentration
+    rotation_type: B
+    discovery_date: '2026-08-11'
+    journalist: Hayden Field
+    publication: "The Verge (PMC/PMX)"
+    finding_summary: >
+      Hayden Field joined The Verge from CNBC as senior AI reporter on June 2, 2025. Her hiring
+      announcement explicitly stated she would "lead coverage of the biggest names in AI —
+      including OpenAI, Anthropic, Google, Meta, Apple, and others." Her actual portfolio
+      (Jun 2025 – Aug 2026) reveals massive beat concentration toward OpenAI and Anthropic,
+      with Meta AI receiving ~10% of the coverage volume and systematically different framing.
+
+      COVERAGE VOLUME: ~15+ OpenAI/Anthropic articles vs ~2-3 Meta AI articles in 14 months.
+      FRAMING DIRECTION: Anthropic gets aspiration/underdog/victim framing ("betting its future,"
+      "officially filed to go public," "employees support Anthropic's lawsuit"); Meta gets
+      follower/deficit framing ("reentering the AI race," researchers "rejected Meta's offers
+      to stay at jobs that align with their values").
+
+      KEY FRAMING INDICATORS: "Reentering" (Meta Muse Spark) vs "betting its future" (Anthropic
+      agents) — deficit vs aspiration vocabulary. Meta talent war headline: researchers "rejected
+      Meta's offers" to stay at "jobs that align with their values" — implies Meta doesn't align
+      with researcher values. No Field article on Meta's Llama 4 launch, Meta's open-weight
+      policy, Meta AI reaching 1B MAU, or Meta AI on glasses — all major Meta AI milestones
+      absent from her beat coverage.
+
+      MANDATE VS REALITY GAP: Job description listed 6 companies equally; actual coverage
+      dominated by 2. Beat assignment as coverage selection — the "AI reporter" beat at
+      financially entangled publications functionally means "OpenAI/Anthropic reporter."
+
+      FINANCIAL CORRELATION: The Verge/PMC has OpenAI content deal (via Vox Media, May 2024)
+      + Azure OpenAI enterprise agreement. No Meta content deal. Coverage volume correlates
+      with financial-relationship presence.
+
+      INDUSTRY-WIDE PATTERN: This is the THIRD documented instance of "AI reporter beat
+      concentration" after Cade Metz at NYT and Will Knight at WIRED. Three AI reporters at
+      three publications with three different ownership structures all functionally cover
+      OpenAI/Anthropic to the near-exclusion of Meta AI. Victoria Song at The Verge is a
+      COUNTER-example — wearables reporter covers Meta balanced-to-positive, but Song covers
+      products not AI research.
+    legitimate_factors:
+      - factor: "OpenAI and Anthropic had more dramatic news events (Pentagon dispute, IPO filings, rogue AI)"
+        strength: MODERATE
+        rebuttal: "Meta also had major events: Muse Spark/Glimmer launch, Llama 4, open-weight policy, Meta AI reaching 1B MAU"
+      - factor: "The Verge has dedicated Meta reporters (Alex Heath was deputy editor until Sep 2025)"
+        strength: MODERATE
+        rebuttal: "Field's mandate was explicitly ALL AI companies — beat assignment is editorial choice"
+      - factor: "OpenAI/Anthropic are pure-play AI companies, generating more AI-specific news"
+        strength: MODERATE
+        rebuttal: "Meta AI is now the most-used AI assistant globally with 1B+ MAU"
+      - factor: "Field's CNBC portfolio was already OpenAI/Anthropic-heavy (professional network)"
+        strength: WEAK
+        rebuttal: "Professional network carrying over doesn't explain the mandate gap — she was explicitly hired to cover all 6 companies"
+      - factor: "Anthropic's regulatory crisis (Pentagon dispute) was genuinely unprecedented and newsworthy"
+        strength: STRONG
+        rebuttal: "Legitimate, but doesn't explain absence of ANY Field coverage of Meta's Llama 4, open-weight policy, or 1B MAU milestone"
+      - factor: "Meta AI is often covered by product reviewers (Victoria Song) rather than AI industry reporters"
+        strength: MODERATE
+        rebuttal: "Beat assignment IS the mechanism — editorial choice about which reporter covers which company shapes the coverage"
+      - factor: "Field may have Meta AI articles not surfaced in search"
+        strength: WEAK
+        rebuttal: "Techmeme tracks all major tech articles; absence from Techmeme index is strong evidence of absence"
+    distinction_from:
+      - mechanism_id: 6
+        name: "Patel EIC Delegation"
+        how: "Beat concentration (what is covered) not delegation (who covers what)"
+      - mechanism_id: 49
+        name: "Bobrowsky Smart Glasses Entity-Targeting"
+        how: "Bobrowsky targets investigative attention on one company; Field's pattern is ABSENCE of coverage, not adversarial targeting"
+    test_file: "tests/test_hayden_field_ai_beat_concentration_aug11.py"
+    test_count: 48
+    date_added: '2026-08-11'
+    source_urls:
+      - "https://talkingbiznews.com/media-news/the-verge-hires-field-as-senior-ai-reporter/"
+      - "https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/"
+      - "https://www.techmeme.com/250710/p29"
+      - "https://www.techmeme.com/250516/p19"
+      - "https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/"
+      - "https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/"
+      - "https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/"
+      - "https://www.youtube.com/watch?v=8WGEky2D3iY"
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
