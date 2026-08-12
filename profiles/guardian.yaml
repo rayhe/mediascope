@@ -603,6 +603,16 @@ revenue_relationships:
       2026 push for broader terms (including AI training) represents an escalation that could
       deepen this dependency or force the Guardian to exit the pilot.
 
+dual_role_paradox:
+  _ref: "cross_publication_findings.guardian_google_dual_role_paradox (mechanism #59)"
+  summary: >
+    The Guardian simultaneously profits from Google's AI content usage (pilot partner,
+    "single figure millions" GBP annually) while its industry body the EPC complains
+    that Google's AI content usage is abusive (Article 102 TFEU antitrust complaint,
+    Feb 2026). This dual positioning aligns with the coverage asymmetry: Meta ($0 deal)
+    gets "big tobacco" editorial escalation; Google (millions in annual revenue) gets
+    measured regulatory reporting. See mechanism #59.
+
 gmg_ventures_mercuri:
   description: "Scott Trust's venture capital arm. Founded 2017 as GMG Ventures, rebranded to Mercuri in 2023."
   fund_1:

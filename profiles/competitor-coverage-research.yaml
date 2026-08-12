@@ -5015,6 +5015,75 @@ cross_publication_findings:
     - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
     test_count: 24
     test_file: tests/test_conde_nast_ai_deal_portfolio_dependency_index_aug12.py
+  guardian_google_dual_role_paradox:
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    finding_summary: 'Guardian Dual-Role Paradox — Simultaneous Google AI Pilot Partner
+      and EPC Antitrust Complainant (Mechanism #59). The Guardian is a named commercial
+      partner in Google''s AI news pilot (Dec 2025, testing AI-powered article overviews
+      and audio briefings alongside WaPo, Der Spiegel, El País), earning "single figure
+      millions" GBP annually from Google (Press Gazette confirmed). Simultaneously, the
+      Guardian is an affiliate member of the European Publishers Council (EPC), which
+      filed a formal Article 102 TFEU antitrust complaint against Google over AI Overviews
+      in February 2026 — alleging abuse of dominance by using publisher content without
+      adequate compensation or opt-out. Google''s pilot terms ask participating publishers
+      to grant broad AI training rights for flat annual fees (Brief.news, Jun 26, 2026).
+      Governance overlap: Matthew Brittin (Google EMEA President, 18 years) served as
+      GMG''s Senior Independent Director from ~2025 until Mar 24, 2026 — overlapping with
+      both the pilot launch and the EPC complaint period. Brittin was recruited via global
+      executive search (Green Park) and later became BBC Director-General. Coverage
+      comparison (Dan Milmo, Global Technology Editor): Meta receives -0.45 tone with
+      "big tobacco" escalation and loaded institutional metaphors ($0 Guardian deal). Google
+      receives -0.35 tone with measured regulatory/factual framing ("single figure millions"
+      GBP annual deal). Despite Google being objectively more harmful to Guardian''s
+      business model (traffic collapse from AI Overviews, ad-tech dominance, coercive
+      pilot terms), editorial temperature is significantly lower. The dual-role paradox
+      creates a coverage equilibrium: aggressive Meta coverage is cost-free (no financial
+      relationship), while aggressive Google coverage risks the pilot revenue stream.
+      This aligns with the broader financial-relationship prediction: companies paying
+      publishers receive softer coverage than companies not paying. Meta has $0 across
+      all Guardian channels since ending Facebook News Tab payments (Jul 2022). 7
+      confounding factors documented, 4 testable predictions.'
+    finding_type: competitor_coverage_deep_dive
+    legitimate_factors:
+    - 'EPC membership is an industry coalition position, not editorial policy — the
+      Guardian''s EPC affiliation does not mean its editorial team endorsed the complaint'
+    - Scott Trust charter explicitly protects editorial independence from commercial interference
+    - 'Dan Milmo''s Google coverage IS critical — covers EU fines (€890M) and CMA regulation
+      with factual-adversarial framing'
+    - 'Guardian has published content critical of Google (AI Overviews traffic impact
+      reporting, EU antitrust coverage) — not entirely silent'
+    - 'Multiple revenue streams (1.3M recurring digital supporters, events +40%, endowment
+      £1.25B) reduce single-source Google dependency'
+    - Editorial and commercial functions are structurally separated at Guardian — no evidence
+      of direct editorial interference
+    - 'Google''s regulatory exposure is a legitimate standalone beat that warrants factual
+      coverage regardless of commercial relationships'
+    mechanism_id: 59
+    mechanism_name: Guardian Dual-Role Paradox — Google AI Pilot Partner and EPC Complainant
+    mechanism_type: structural_paradox
+    publication: guardian
+    source_urls:
+    - https://thekeyword.medium.com/google-tests-ai-powered-article-overviews-with-publishers-117791b1415d
+    - https://www.medianama.com/2026/02/223-european-publishers-antitrust-complaint-google-ai-overviews/
+    - https://www.brief.news/2026/06/26/google-ai-content-deal-frays-rights
+    - https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history
+    - https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/
+    - https://www.prolificnorth.co.uk/news/bbc-board-confirms-former-google-exec-and-guardian-board-member-matt-brittin-will-step-into-565k-director-general-role/
+    - https://buzzsumo.com/journalist/dan-milmo-1645912/
+    test_count: 34
+    test_file: tests/test_guardian_google_dual_role_paradox_aug12.py
+    testable_predictions:
+    - 'If the Guardian exits the Google AI pilot, Google coverage tone will shift toward
+      Meta-level adversarial framing (-0.45) within 6 months'
+    - 'Guardian will not apply "big tobacco" or equivalent loaded metaphor to Google''s
+      AI Overviews traffic cannibalization, despite it being a direct threat to Guardian
+      revenue — the financial relationship deflects editorial escalation'
+    - 'Dan Milmo will continue to cover Google antitrust factually without the editorial
+      escalation (loaded metaphors, "industry-defining" language) applied to Meta child
+      safety verdicts'
+    - 'If Meta signs a content licensing deal with the Guardian, Meta coverage tone will
+      moderate measurably from -0.45 toward Google''s -0.35 within one editorial cycle'
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
