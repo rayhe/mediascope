@@ -4782,51 +4782,42 @@ cross_publication_findings:
     publications_covered:
     - Wall Street Journal (News Corp) — 2015–2025
     - Reuters (Thomson Reuters) — 2025–present
-    finding_summary: >
-      When a reporter builds a decade of professional reputation on adversarial coverage
-      of one company, that frame persists even after migrating to a new publication —
-      including one that has a direct financial relationship with the covered company.
-      Meanwhile, the new beat mandate shapes aspirational framing for the companies named in it.
+    finding_summary: 'When a reporter builds a decade of professional reputation on adversarial coverage of one company, that
+      frame persists even after migrating to a new publication — including one that has a direct financial relationship with
+      the covered company. Meanwhile, the new beat mandate shapes aspirational framing for the companies named in it.
 
-      Deepa Seetharaman spent 10 years at WSJ (News Corp, parent of Dow Jones) as the primary
-      Meta/Facebook beat reporter, winning a George Polk Award and Gerald Loeb Award for the
-      Facebook Files investigation. In May 2025, she moved to Reuters. Thomson Reuters has a
-      multi-year Meta AI content licensing deal (announced Oct 25, 2024) AND is in licensing
-      talks with other AI providers (confirmed by CEO Steve Hasker). At Reuters, Seetharaman
-      was explicitly hired to cover "AI and OpenAI" — the company literally named in her beat
-      mandate.
+      Deepa Seetharaman spent 10 years at WSJ (News Corp, parent of Dow Jones) as the primary Meta/Facebook beat reporter,
+      winning a George Polk Award and Gerald Loeb Award for the Facebook Files investigation. In May 2025, she moved to Reuters.
+      Thomson Reuters has a multi-year Meta AI content licensing deal (announced Oct 25, 2024) AND is in licensing talks with
+      other AI providers (confirmed by CEO Steve Hasker). At Reuters, Seetharaman was explicitly hired to cover "AI and OpenAI"
+      — the company literally named in her beat mandate.
 
-      Despite Reuters having a direct Meta content licensing deal, Seetharaman's Meta coverage
-      at Reuters retains adversarial stress framing. The Meta layoffs exclusive (Mar 2026, with
-      co-authors Jeff Horwitz and Katie Paul) uses "sweeping layoffs," "costly AI infrastructure
-      bets," "setbacks with Llama 4," "lagged expectations," "Behemoth abandoned." Meanwhile,
-      her OpenAI coverage uses product-launch framing ("long-awaited super app," "competitive
-      with models that are far more expensive," "twice the speed"), and her Anthropic coverage
-      uses growth/aspiration framing ("aims to nearly triple annualized revenue," "rapid
-      adoption," "enterprise products," "strong investor demand").
+      Despite Reuters having a direct Meta content licensing deal, Seetharaman''s Meta coverage at Reuters retains adversarial
+      stress framing. The Meta layoffs exclusive (Mar 2026, with co-authors Jeff Horwitz and Katie Paul) uses "sweeping layoffs,"
+      "costly AI infrastructure bets," "setbacks with Llama 4," "lagged expectations," "Behemoth abandoned." Meanwhile, her
+      OpenAI coverage uses product-launch framing ("long-awaited super app," "competitive with models that are far more expensive,"
+      "twice the speed"), and her Anthropic coverage uses growth/aspiration framing ("aims to nearly triple annualized revenue,"
+      "rapid adoption," "enterprise products," "strong investor demand").
 
-      The cross-entity delta is stark. Meta at Reuters = structural stress (costs, layoffs,
-      model failures). Anthropic at Reuters = structural growth (revenue tripling, enterprise
-      adoption). OpenAI at Reuters = structural ambition (super app, enterprise growth). The
-      "Anthropic v. OpenAI" narrative feature (Jun 2026, with Echo Wang) frames both AI labs
-      as grand protagonists in an epic rivalry — a framing register never applied to Meta's
-      AI efforts.
+      The cross-entity delta is stark. Meta at Reuters = structural stress (costs, layoffs, model failures). Anthropic at
+      Reuters = structural growth (revenue tripling, enterprise adoption). OpenAI at Reuters = structural ambition (super
+      app, enterprise growth). The "Anthropic v. OpenAI" narrative feature (Jun 2026, with Echo Wang) frames both AI labs
+      as grand protagonists in an epic rivalry — a framing register never applied to Meta''s AI efforts.
 
-      This suggests professional identity capture is a more powerful framing determinant than
-      institutional financial incentives. The Meta-Reuters content deal should theoretically
-      create softer Meta coverage, but it doesn't — because Seetharaman's professional identity
-      was built on adversarial Meta reporting over a decade. She carried her frame with her
-      across institutional boundaries.
+      This suggests professional identity capture is a more powerful framing determinant than institutional financial incentives.
+      The Meta-Reuters content deal should theoretically create softer Meta coverage, but it doesn''t — because Seetharaman''s
+      professional identity was built on adversarial Meta reporting over a decade. She carried her frame with her across institutional
+      boundaries.
 
-      Wire service amplification effect: Reuters content feeds into hundreds of outlets
-      globally (syndicated via UOL, Valor Econômico, Business Insider, Fox News, HuffPost,
-      MSN, Reuters Japan, and more). A reporter's framing choices at Reuters have far greater
-      global propagation than at WSJ. The adversarial Meta frame and aspirational OpenAI/Anthropic
-      frame are amplified across the entire international media ecosystem.
+      Wire service amplification effect: Reuters content feeds into hundreds of outlets globally (syndicated via UOL, Valor
+      Econômico, Business Insider, Fox News, HuffPost, MSN, Reuters Japan, and more). A reporter''s framing choices at Reuters
+      have far greater global propagation than at WSJ. The adversarial Meta frame and aspirational OpenAI/Anthropic frame
+      are amplified across the entire international media ecosystem.
 
-      Third instance of the "AI beat = OpenAI beat" pattern, after Cade Metz (NYT) and
-      Hayden Field (The Verge, Mechanism #52). At all three financially-entangled publications,
-      the AI beat functionally operates as the OpenAI/Anthropic beat.
+      Third instance of the "AI beat = OpenAI beat" pattern, after Cade Metz (NYT) and Hayden Field (The Verge, Mechanism
+      #52). At all three financially-entangled publications, the AI beat functionally operates as the OpenAI/Anthropic beat.
+
+      '
     meta_coverage_at_reuters:
       article: 'Exclusive: Meta planning sweeping layoffs as AI costs mount'
       date: '2026-03-13'
@@ -4877,90 +4868,84 @@ cross_publication_findings:
       reuters_ai_provider_talks: Thomson Reuters CEO confirmed licensing talks with multiple AI providers
       meta_reuters_relationship: Fact-checking partnership since 2020 + content deal since Oct 2024
       meta_wsj_deal: $0 — no content licensing during Seetharaman's WSJ tenure
-    structural_insight: >
-      Reporter frame-lock operates independently of institutional financial incentives.
-      Despite moving from a publication hostile to Meta (WSJ/News Corp with $0 Meta deal)
-      to a publication financially aligned with Meta (Reuters with multi-year Meta deal),
-      Seetharaman's adversarial Meta frame persisted. The professional reputation built over
-      a decade — George Polk Award, Gerald Loeb Award, Facebook Files — constitutes career
-      capital that is reinforced by maintaining the adversarial stance. Softening Meta coverage
-      would contradict the narrative that built her professional identity.
+    structural_insight: 'Reporter frame-lock operates independently of institutional financial incentives. Despite moving
+      from a publication hostile to Meta (WSJ/News Corp with $0 Meta deal) to a publication financially aligned with Meta
+      (Reuters with multi-year Meta deal), Seetharaman''s adversarial Meta frame persisted. The professional reputation built
+      over a decade — George Polk Award, Gerald Loeb Award, Facebook Files — constitutes career capital that is reinforced
+      by maintaining the adversarial stance. Softening Meta coverage would contradict the narrative that built her professional
+      identity.
 
-      Conversely, the new beat mandate ("AI and OpenAI") shapes aspirational framing for the
-      companies named in it. This is the same structural effect documented in Mechanism #52
-      (Hayden Field at The Verge) — the AI beat at financially-entangled publications
-      functionally operates as the OpenAI/Anthropic beat, creating aspirational coverage for
-      those entities by default.
+      Conversely, the new beat mandate ("AI and OpenAI") shapes aspirational framing for the companies named in it. This is
+      the same structural effect documented in Mechanism #52 (Hayden Field at The Verge) — the AI beat at financially-entangled
+      publications functionally operates as the OpenAI/Anthropic beat, creating aspirational coverage for those entities by
+      default.
 
-      The reporter-level mechanism is more deterministic than the institutional mechanism
-      because it is self-reinforcing: adversarial coverage wins awards, awards build reputation,
-      reputation creates demand for more adversarial coverage of the same entity. This is a
-      career flywheel that no institutional content deal can override.
+      The reporter-level mechanism is more deterministic than the institutional mechanism because it is self-reinforcing:
+      adversarial coverage wins awards, awards build reputation, reputation creates demand for more adversarial coverage of
+      the same entity. This is a career flywheel that no institutional content deal can override.
+
+      '
     wire_service_amplification:
-      syndication_reach: Hundreds of outlets globally via UOL, Valor Econômico, Business Insider, Fox News, HuffPost, MSN, Reuters Japan
-      propagation_effect: >
-        Reuters wire stories set the framing baseline for international media coverage.
-        A Reuters exclusive framing Meta as "costs mount" and "layoffs loom" is picked up
-        by hundreds of outlets worldwide, each amplifying the stress frame. The same reporter's
-        Anthropic exclusive framing "revenue tripling" amplifies the growth frame. Individual
-        reporter framing choices at a wire service have orders of magnitude greater global
-        impact than at a single-publication outlet like WSJ or WIRED.
+      syndication_reach: Hundreds of outlets globally via UOL, Valor Econômico, Business Insider, Fox News, HuffPost, MSN,
+        Reuters Japan
+      propagation_effect: 'Reuters wire stories set the framing baseline for international media coverage. A Reuters exclusive
+        framing Meta as "costs mount" and "layoffs loom" is picked up by hundreds of outlets worldwide, each amplifying the
+        stress frame. The same reporter''s Anthropic exclusive framing "revenue tripling" amplifies the growth frame. Individual
+        reporter framing choices at a wire service have orders of magnitude greater global impact than at a single-publication
+        outlet like WSJ or WIRED.
+
+        '
     confounding_factors:
     - factor: Wire service editorial style constraints
       strength: moderate
-      rebuttal: Reuters wire style limits editorial voice, but word choice within that style
-        still reveals framing direction (e.g. "sweeping" vs "planned," "setbacks" vs "challenges")
+      rebuttal: Reuters wire style limits editorial voice, but word choice within that style still reveals framing direction
+        (e.g. "sweeping" vs "planned," "setbacks" vs "challenges")
     - factor: Co-authorship on Meta layoffs piece
       strength: moderate
-      rebuttal: Seetharaman co-authored the Meta layoffs piece with Jeff Horwitz (also a former
-        WSJ Meta beat reporter) and Katie Paul. All three share the adversarial Meta frame from
-        their WSJ tenure. Horwitz himself moved from WSJ to Reuters in June 2025.
+      rebuttal: Seetharaman co-authored the Meta layoffs piece with Jeff Horwitz (also a former WSJ Meta beat reporter) and
+        Katie Paul. All three share the adversarial Meta frame from their WSJ tenure. Horwitz himself moved from WSJ to Reuters
+        in June 2025.
     - factor: Layoff stories are inherently negative
       strength: strong
-      rebuttal: True, but the choice of what to emphasize matters. The piece foregrounds model
-        failures (Llama 4 benchmarks, Behemoth abandoned, Avocado lagging) beyond what a pure
-        layoff story requires. Compare to how Anthropic's spending is framed as investment, not cost.
+      rebuttal: True, but the choice of what to emphasize matters. The piece foregrounds model failures (Llama 4 benchmarks,
+        Behemoth abandoned, Avocado lagging) beyond what a pure layoff story requires. Compare to how Anthropic's spending
+        is framed as investment, not cost.
     - factor: Anthropic revenue growth is legitimately newsworthy
       strength: strong
-      rebuttal: Agreed — nearly tripling revenue is genuinely significant. The asymmetry is
-        not in WHAT is covered but HOW. Meta's $60.8B quarterly revenue (Q2 2026) received stress
-        framing (EPS miss, RL losses) while Anthropic's ~$9B projected annual revenue received
-        growth framing. Scale disparity (7x revenue difference) does not justify framing disparity.
+      rebuttal: Agreed — nearly tripling revenue is genuinely significant. The asymmetry is not in WHAT is covered but HOW.
+        Meta's $60.8B quarterly revenue (Q2 2026) received stress framing (EPS miss, RL losses) while Anthropic's ~$9B projected
+        annual revenue received growth framing. Scale disparity (7x revenue difference) does not justify framing disparity.
     - factor: Reuters beat mandate explicitly names OpenAI
       strength: strong
-      rebuttal: This IS the mechanism. The beat mandate creates structural alignment between the
-        reporter and the named entity. When your job is defined as "covering AI and OpenAI," OpenAI
-        becomes the protagonist of your narrative. This is editorial structure, not individual bias.
+      rebuttal: This IS the mechanism. The beat mandate creates structural alignment between the reporter and the named entity.
+        When your job is defined as "covering AI and OpenAI," OpenAI becomes the protagonist of your narrative. This is editorial
+        structure, not individual bias.
     - factor: Different article types (exclusives vs. news coverage)
       strength: moderate
-      rebuttal: Exclusives on Anthropic revenue = sourced to company insiders who provide growth
-        narrative. Exclusives on Meta layoffs = sourced to anonymous leakers providing stress
-        narrative. Source selection itself reflects frame direction.
+      rebuttal: Exclusives on Anthropic revenue = sourced to company insiders who provide growth narrative. Exclusives on
+        Meta layoffs = sourced to anonymous leakers providing stress narrative. Source selection itself reflects frame direction.
     - factor: Career incentives at new employer
       strength: weak
-      rebuttal: At Reuters, Seetharaman has no incentive to maintain WSJ-era adversarial Meta
-        framing except professional identity. Reuters has a Meta deal. The persistence of the
-        frame despite changed incentives is the strongest evidence for frame-lock.
+      rebuttal: At Reuters, Seetharaman has no incentive to maintain WSJ-era adversarial Meta framing except professional
+        identity. Reuters has a Meta deal. The persistence of the frame despite changed incentives is the strongest evidence
+        for frame-lock.
     legitimate_factors: 7
     testable_predictions:
-    - If Seetharaman writes a Reuters exclusive on Meta AI product launches, it will use more
-      cautious/qualified language than her OpenAI product launch coverage (e.g., "Meta claims"
-      vs quoting OpenAI executives' claims without qualification).
-    - If another Reuters reporter (without prior Meta beat history) covers the same Meta story,
-      the framing will be softer/more neutral than Seetharaman's framing — demonstrating that
-      the frame-lock is reporter-specific, not publication-wide.
-    - If Seetharaman covers an Anthropic failure (model safety incident, revenue miss), the
-      framing will be less severe than equivalent Meta failure coverage — demonstrating
-      entity-specific framing asymmetry within a single reporter's output.
-    - Jeff Horwitz, who also migrated from WSJ to Reuters, will show the same adversarial
-      Meta frame persistence — confirming that WSJ Meta beat migration carries the frame.
+    - If Seetharaman writes a Reuters exclusive on Meta AI product launches, it will use more cautious/qualified language
+      than her OpenAI product launch coverage (e.g., "Meta claims" vs quoting OpenAI executives' claims without qualification).
+    - If another Reuters reporter (without prior Meta beat history) covers the same Meta story, the framing will be softer/more
+      neutral than Seetharaman's framing — demonstrating that the frame-lock is reporter-specific, not publication-wide.
+    - If Seetharaman covers an Anthropic failure (model safety incident, revenue miss), the framing will be less severe than
+      equivalent Meta failure coverage — demonstrating entity-specific framing asymmetry within a single reporter's output.
+    - Jeff Horwitz, who also migrated from WSJ to Reuters, will show the same adversarial Meta frame persistence — confirming
+      that WSJ Meta beat migration carries the frame.
     test_file: tests/test_deepa_seetharaman_cross_entity.py
     cross_references:
     - 'Mechanism #52: Hayden Field AI Beat Concentration (parallel pattern — AI beat = OpenAI beat)'
-    - 'Mechanism #56: The Verge Intra-Publication Beat Segregation (different reporters, same
-      publication — this mechanism is same reporter, different publications)'
-    - 'Mechanism #54: FT Capital-Raise Framing Asymmetry (ecosystem-level financial bias — this
-      mechanism adds reporter-level professional identity capture)'
+    - 'Mechanism #56: The Verge Intra-Publication Beat Segregation (different reporters, same publication — this mechanism
+      is same reporter, different publications)'
+    - 'Mechanism #54: FT Capital-Raise Framing Asymmetry (ecosystem-level financial bias — this mechanism adds reporter-level
+      professional identity capture)'
     - 'Cade Metz (NYT) cross-entity: first documented AI beat = OpenAI beat pattern'
     - 'Jeff Horwitz cross-entity: parallel WSJ→Reuters migration, same frame persistence expected'
     source_urls:
@@ -4983,26 +4968,21 @@ cross_publication_findings:
     - Perplexity
     - Meta
     - Google
-    finding_summary: 'Deepens Mechanism #35 with fresh 2026 Q1-Q2 evidence quantifying Condé Nast''s
-      AI deal portfolio as a strategic revenue pillar. Three key extensions: (1) PERPLEXITY
-      COVERAGE ARC — a natural experiment showing coverage tone tracks deal status. In Jul
-      2024, WIRED published adversarial investigations of Perplexity''s scraping and Condé
-      Nast sent a cease-and-desist letter. By Oct 2025, Lynch named Perplexity alongside
-      OpenAI as an AI licensing partner (Adweek May 2026). Coverage shifted from adversarial
-      to neutral with deal status. Meta, which never scraped WIRED content, receives consistently
-      adversarial coverage with $0 in CN deals. (2) TBPN VENUE CONFLICT — Lynch appeared
-      on TBPN (acquired by OpenAI Apr 2, 2026) at least 3 times to discuss CN strategy,
-      including the ''Google Zero'' directive. The CEO of WIRED''s parent is providing strategic
-      narratives on the media platform owned by his company''s largest AI licensing partner.
-      Nilay Patel (Verge EIC, whose parent PMC has a separate OpenAI deal via Vox Media)
-      amplified Lynch''s narrative on Decoder podcast. (3) FINANCIAL QUANTIFICATION — estimated
-      total AI licensing revenue of $14-45M/yr across OpenAI ($10-30M), Amazon/Rufus ($3-10M),
-      and Perplexity ($1-5M). While only 0.7-2.25% of CN''s ~$2B revenue, this is MARGINAL
-      revenue replacing declining advertising. If ad revenue declines ~$50M/yr, AI licensing
-      replaces 28-90% of the decline. Lynch explicitly named AI licensing as a strategic pillar
-      (Oct 2025), confirmed by portfolio pruning (Self, Glamour intl, Wired Italy shut Apr 2026).
-      Events revenue up 40% (2025), digital subscriptions up 29% (2025). Meta: $0 across all
-      channels. 7 confounding factors documented, 4 falsifiable predictions.'
+    finding_summary: 'Deepens Mechanism #35 with fresh 2026 Q1-Q2 evidence quantifying Condé Nast''s AI deal portfolio as
+      a strategic revenue pillar. Three key extensions: (1) PERPLEXITY COVERAGE ARC — a natural experiment showing coverage
+      tone tracks deal status. In Jul 2024, WIRED published adversarial investigations of Perplexity''s scraping and Condé
+      Nast sent a cease-and-desist letter. By Oct 2025, Lynch named Perplexity alongside OpenAI as an AI licensing partner
+      (Adweek May 2026). Coverage shifted from adversarial to neutral with deal status. Meta, which never scraped WIRED content,
+      receives consistently adversarial coverage with $0 in CN deals. (2) TBPN VENUE CONFLICT — Lynch appeared on TBPN (acquired
+      by OpenAI Apr 2, 2026) at least 3 times to discuss CN strategy, including the ''Google Zero'' directive. The CEO of
+      WIRED''s parent is providing strategic narratives on the media platform owned by his company''s largest AI licensing
+      partner. Nilay Patel (Verge EIC, whose parent PMC has a separate OpenAI deal via Vox Media) amplified Lynch''s narrative
+      on Decoder podcast. (3) FINANCIAL QUANTIFICATION — estimated total AI licensing revenue of $14-45M/yr across OpenAI
+      ($10-30M), Amazon/Rufus ($3-10M), and Perplexity ($1-5M). While only 0.7-2.25% of CN''s ~$2B revenue, this is MARGINAL
+      revenue replacing declining advertising. If ad revenue declines ~$50M/yr, AI licensing replaces 28-90% of the decline.
+      Lynch explicitly named AI licensing as a strategic pillar (Oct 2025), confirmed by portfolio pruning (Self, Glamour
+      intl, Wired Italy shut Apr 2026). Events revenue up 40% (2025), digital subscriptions up 29% (2025). Meta: $0 across
+      all channels. 7 confounding factors documented, 4 falsifiable predictions.'
     finding_type: financial_dependency_quantification
     mechanism_id: 58
     mechanism_name: Condé Nast AI Deal Portfolio Dependency Index — Marginal Revenue Significance
@@ -5018,47 +4998,37 @@ cross_publication_findings:
   guardian_google_dual_role_paradox:
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
-    finding_summary: 'Guardian Dual-Role Paradox — Simultaneous Google AI Pilot Partner
-      and EPC Antitrust Complainant (Mechanism #59). The Guardian is a named commercial
-      partner in Google''s AI news pilot (Dec 2025, testing AI-powered article overviews
-      and audio briefings alongside WaPo, Der Spiegel, El País), earning "single figure
-      millions" GBP annually from Google (Press Gazette confirmed). Simultaneously, the
-      Guardian is an affiliate member of the European Publishers Council (EPC), which
-      filed a formal Article 102 TFEU antitrust complaint against Google over AI Overviews
-      in February 2026 — alleging abuse of dominance by using publisher content without
-      adequate compensation or opt-out. Google''s pilot terms ask participating publishers
-      to grant broad AI training rights for flat annual fees (Brief.news, Jun 26, 2026).
-      Governance overlap: Matthew Brittin (Google EMEA President, 18 years) served as
-      GMG''s Senior Independent Director from ~2025 until Mar 24, 2026 — overlapping with
-      both the pilot launch and the EPC complaint period. Brittin was recruited via global
-      executive search (Green Park) and later became BBC Director-General. Coverage
-      comparison (Dan Milmo, Global Technology Editor): Meta receives -0.45 tone with
-      "big tobacco" escalation and loaded institutional metaphors ($0 Guardian deal). Google
-      receives -0.35 tone with measured regulatory/factual framing ("single figure millions"
-      GBP annual deal). Despite Google being objectively more harmful to Guardian''s
-      business model (traffic collapse from AI Overviews, ad-tech dominance, coercive
-      pilot terms), editorial temperature is significantly lower. The dual-role paradox
-      creates a coverage equilibrium: aggressive Meta coverage is cost-free (no financial
-      relationship), while aggressive Google coverage risks the pilot revenue stream.
-      This aligns with the broader financial-relationship prediction: companies paying
-      publishers receive softer coverage than companies not paying. Meta has $0 across
-      all Guardian channels since ending Facebook News Tab payments (Jul 2022). 7
-      confounding factors documented, 4 testable predictions.'
+    finding_summary: 'Guardian Dual-Role Paradox — Simultaneous Google AI Pilot Partner and EPC Antitrust Complainant (Mechanism
+      #59). The Guardian is a named commercial partner in Google''s AI news pilot (Dec 2025, testing AI-powered article overviews
+      and audio briefings alongside WaPo, Der Spiegel, El País), earning "single figure millions" GBP annually from Google
+      (Press Gazette confirmed). Simultaneously, the Guardian is an affiliate member of the European Publishers Council (EPC),
+      which filed a formal Article 102 TFEU antitrust complaint against Google over AI Overviews in February 2026 — alleging
+      abuse of dominance by using publisher content without adequate compensation or opt-out. Google''s pilot terms ask participating
+      publishers to grant broad AI training rights for flat annual fees (Brief.news, Jun 26, 2026). Governance overlap: Matthew
+      Brittin (Google EMEA President, 18 years) served as GMG''s Senior Independent Director from ~2025 until Mar 24, 2026
+      — overlapping with both the pilot launch and the EPC complaint period. Brittin was recruited via global executive search
+      (Green Park) and later became BBC Director-General. Coverage comparison (Dan Milmo, Global Technology Editor): Meta
+      receives -0.45 tone with "big tobacco" escalation and loaded institutional metaphors ($0 Guardian deal). Google receives
+      -0.35 tone with measured regulatory/factual framing ("single figure millions" GBP annual deal). Despite Google being
+      objectively more harmful to Guardian''s business model (traffic collapse from AI Overviews, ad-tech dominance, coercive
+      pilot terms), editorial temperature is significantly lower. The dual-role paradox creates a coverage equilibrium: aggressive
+      Meta coverage is cost-free (no financial relationship), while aggressive Google coverage risks the pilot revenue stream.
+      This aligns with the broader financial-relationship prediction: companies paying publishers receive softer coverage
+      than companies not paying. Meta has $0 across all Guardian channels since ending Facebook News Tab payments (Jul 2022).
+      7 confounding factors documented, 4 testable predictions.'
     finding_type: competitor_coverage_deep_dive
     legitimate_factors:
-    - 'EPC membership is an industry coalition position, not editorial policy — the
-      Guardian''s EPC affiliation does not mean its editorial team endorsed the complaint'
+    - EPC membership is an industry coalition position, not editorial policy — the Guardian's EPC affiliation does not mean
+      its editorial team endorsed the complaint
     - Scott Trust charter explicitly protects editorial independence from commercial interference
-    - 'Dan Milmo''s Google coverage IS critical — covers EU fines (€890M) and CMA regulation
-      with factual-adversarial framing'
-    - 'Guardian has published content critical of Google (AI Overviews traffic impact
-      reporting, EU antitrust coverage) — not entirely silent'
-    - 'Multiple revenue streams (1.3M recurring digital supporters, events +40%, endowment
-      £1.25B) reduce single-source Google dependency'
-    - Editorial and commercial functions are structurally separated at Guardian — no evidence
-      of direct editorial interference
-    - 'Google''s regulatory exposure is a legitimate standalone beat that warrants factual
-      coverage regardless of commercial relationships'
+    - Dan Milmo's Google coverage IS critical — covers EU fines (€890M) and CMA regulation with factual-adversarial framing
+    - Guardian has published content critical of Google (AI Overviews traffic impact reporting, EU antitrust coverage) — not
+      entirely silent
+    - Multiple revenue streams (1.3M recurring digital supporters, events +40%, endowment £1.25B) reduce single-source Google
+      dependency
+    - Editorial and commercial functions are structurally separated at Guardian — no evidence of direct editorial interference
+    - Google's regulatory exposure is a legitimate standalone beat that warrants factual coverage regardless of commercial
+      relationships
     mechanism_id: 59
     mechanism_name: Guardian Dual-Role Paradox — Google AI Pilot Partner and EPC Complainant
     mechanism_type: structural_paradox
@@ -5074,16 +5044,73 @@ cross_publication_findings:
     test_count: 34
     test_file: tests/test_guardian_google_dual_role_paradox_aug12.py
     testable_predictions:
-    - 'If the Guardian exits the Google AI pilot, Google coverage tone will shift toward
-      Meta-level adversarial framing (-0.45) within 6 months'
-    - 'Guardian will not apply "big tobacco" or equivalent loaded metaphor to Google''s
-      AI Overviews traffic cannibalization, despite it being a direct threat to Guardian
-      revenue — the financial relationship deflects editorial escalation'
-    - 'Dan Milmo will continue to cover Google antitrust factually without the editorial
-      escalation (loaded metaphors, "industry-defining" language) applied to Meta child
-      safety verdicts'
-    - 'If Meta signs a content licensing deal with the Guardian, Meta coverage tone will
-      moderate measurably from -0.45 toward Google''s -0.35 within one editorial cycle'
+    - If the Guardian exits the Google AI pilot, Google coverage tone will shift toward Meta-level adversarial framing (-0.45)
+      within 6 months
+    - Guardian will not apply "big tobacco" or equivalent loaded metaphor to Google's AI Overviews traffic cannibalization,
+      despite it being a direct threat to Guardian revenue — the financial relationship deflects editorial escalation
+    - Dan Milmo will continue to cover Google antitrust factually without the editorial escalation (loaded metaphors, "industry-defining"
+      language) applied to Meta child safety verdicts
+    - If Meta signs a content licensing deal with the Guardian, Meta coverage tone will moderate measurably from -0.45 toward
+      Google's -0.35 within one editorial cycle
+  karen_hao_institutional_alignment:
+    mechanism_id: 60
+    title: Institutional Financial Alignment Predicts Investigative Target Selection
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    finding_type: journalist_cross_entity
+    journalist: Karen Hao
+    publications:
+    - mit-tech-review
+    - wall-street-journal
+    - atlantic
+    finding_summary: 'Karen Hao''s investigative target selection at MIT Technology Review aligns with the financial incentive
+      structure of her employing institution — a distinct pattern from Mechanism #57 (Seetharaman frame-lock), where the journalist''s
+      framing persists across institutions. Hao''s targeting SHIFTS with institutional context. At MIT TR, where Google funds
+      research through the MIT-Google Program and Eric Schmidt''s personal philanthropy, she produced a 9-month adversarial
+      investigation of Facebook (''The Facebook Gatekeeper,'' March 11, 2021) — which has $0 in MIT/MIT TR financial relationships
+      — while publishing NO comparable adversarial investigation of Google, despite Google''s AI ethics crisis peaking that
+      same week (Gebru fired Dec 2020, Mitchell fired Feb 2021). Post-MIT TR, her book ''Empire of AI'' (2025, Penguin Press)
+      adversarially targets OpenAI — which has no institutional financial relationship with the publisher — while consistently
+      positioning Google DeepMind''s AlphaFold as the counter-example of ''good AI'' across TechCrunch, MIT, and IBM Think
+      interviews. The depth asymmetry is not suppression: Hao mentions Google tangentially and criticizes its data center
+      water usage in Chile, but applies a substantially different investigative depth standard — 9-month inside-access adversarial
+      investigation for the entity with zero institutional financial ties vs. structural/systems-level mention for the entity
+      with bilateral research funding.'
+    source_urls:
+    - https://www.technologyreview.com/2021/03/11/1020600/facebook-responsible-ai-misinformation/
+    - https://venturebeat.com/business/ai-weekly-facebook-google-and-the-tension-between-profits-and-fairness
+    - https://techcrunch.com/2025/09/14/karen-hao-on-the-empire-of-ai-agi-evangelists-and-the-cost-of-belief/
+    - https://news.mit.edu/2026/right-path-for-ai-karen-hao-paola-ricaurte-0320
+    - https://www.ibm.com/think/news/cracking-empire-of-ai
+    - https://letsdatascience.com/news/karen-hao-frames-ai-as-threat-to-democracy-05a0fd08
+    - https://Www.timeshighereducation.com/news/conference-suspends-google-sponsorship-after-ethics-experts-exit
+    - https://www.earwolf.com/episode/why-facebook-refuses-to-fix-the-misinformation-crisis-it-created-with-karen-hao/
+    - https://en.wikipedia.org/wiki/Karen_Hao
+    confounding_factors:
+    - Hao began the Facebook investigation ~9 months before publication — timing was NOT opportunistic relative to the Gebru
+      crisis
+    - Individual journalists cannot investigate every company simultaneously — bandwidth constraint
+    - The Gebru/Mitchell story was being covered by other reporters (Metz at NYT, Schiffer at Platformer)
+    - Facebook was Hao's primary beat at MIT TR; investigative depth follows beat assignment
+    - Hao DID critique Google in the AI Colonialism series (Chilean water) — at a systems level, not adversarial corporate
+      investigation
+    - Her book adversarially targeted OpenAI, showing willingness to investigate powerful companies when they have no institutional
+      financial relationship
+    - MIT TR claims editorial independence from MIT per stated policy
+    testable_predictions:
+    - Hao will not publish a 9-month-class adversarial investigation of Google AI operations comparable to The Facebook Gatekeeper
+    - Hao will continue to cite AlphaFold as a positive counter-example despite Google broader AI ethics record and environmental
+      impact
+    - If Hao takes a position at a Google-funded institution, her OpenAI criticism will moderate relative to her freelance-era
+      adversarial depth
+    - Her AI Now Institute board role will not produce investigations targeting Google with the same depth/adversarial framing
+      as her Facebook work
+    cross_references:
+    - 'Mechanism #57 (Seetharaman frame-lock): contrast — Hao target selection shifts WITH institutions, unlike frame-lock
+      persistence'
+    - 'Mechanism #49 (Bobrowsky entity targeting): parallel — beat assignment as mechanism for entity selection asymmetry'
+    - 'Mechanism #17 (Guardian SID governance capture): parallel — governance + financial ties correlate with softer coverage'
+    - 'MIT TR profile: Google/MIT bilateral financial relationships, MIT-Google Program, Schmidt philanthropy documented'
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

@@ -1,5 +1,50 @@
 # MediaScope Iteration Log
 
+## Iteration 59 — 2026-08-12 03:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Finding: Guardian Dual-Role Paradox — Simultaneous Google AI Pilot Partner and EPC Antitrust Complainant (Mechanism #59)
+
+**Publication × Competitor:** The Guardian × Google
+
+**Core Paradox:** The Guardian simultaneously occupies two structurally contradictory positions in the Google AI content licensing landscape:
+
+1. **Commercial Partner:** Named partner in Google's AI news pilot (launched Dec 2025) alongside The Washington Post, Der Spiegel, El País, and others. Google pays participating publishers directly. The Guardian earns "single figure millions" GBP annually from Google (Press Gazette confirmed). Google's June 2026 terms expansion asks pilot publishers to grant broad AI training rights for flat annual fees.
+
+2. **Antitrust Complainant:** Affiliate member of the European Publishers Council (EPC), which filed a formal Article 102 TFEU antitrust complaint against Google over AI Overviews in February 2026 — alleging abuse of dominance by using publisher content without adequate compensation or meaningful opt-out.
+
+**Governance Overlap:** Matthew Brittin (Google EMEA President, 18 years) served as GMG's Senior Independent Director — the highest independent governance role after Chair — from ~2025 until March 24, 2026. His tenure overlapped with both the Google News AI pilot launch (Dec 2025) and the EPC complaint filing period. Brittin was specifically recruited via global executive search (Green Park) for his tech expertise, then left to become BBC Director-General ($565K salary, started May 18, 2026).
+
+**Coverage Comparison (Dan Milmo, Global Technology Editor):**
+- **Meta:** -0.45 tone. "Big tobacco" loaded metaphor for child safety verdicts, "industry-defining" language, 4+ standalone rogue AI articles. **$0 Guardian deal.**
+- **Google:** -0.35 tone. Measured regulatory/factual framing. Straightforward competition law reporting. EU €890M fine covered without "industry-defining" editorial framing. **"Single figure millions" GBP annual deal.**
+- **Gap:** 0.10 tone points, but editorial TEMPERATURE gap much wider (loaded metaphors vs factual relay). Google is objectively MORE harmful to Guardian's business (traffic collapse from AI Overviews, ad-tech dominance, coercive pilot terms) yet receives SOFTER editorial treatment.
+
+**Structural Insight:** The dual-role paradox creates a coverage equilibrium: aggressive Meta coverage is cost-free (no financial relationship), while aggressive Google coverage risks the pilot revenue stream. This aligns with the broader financial-relationship prediction model: companies paying publishers receive softer coverage.
+
+**7 confounding factors documented** (Scott Trust charter, editorial/commercial separation, Milmo IS critical of Google, multiple revenue streams reduce single-source dependency, etc.).
+
+**4 testable predictions** (including: Guardian will not apply "big tobacco" to Google AI Overviews traffic cannibalization; if Meta signs a Guardian deal, Meta coverage will moderate).
+
+**Relationship to existing mechanisms:**
+- Complements Mechanism #29 (Guardian rogue AI volume asymmetry — documents coverage gap; #59 adds the structural explanation)
+- Complements Mechanism #17 (Guardian SID governance capture — documents Brittin revolving door; #59 adds the EPC dual-role dimension)
+- Complements Mechanism #50 (Google News AI prisoner's dilemma — documents Google's coercive mechanics; #59 adds Guardian-specific dual positioning)
+
+### Files Changed
+- `tests/test_guardian_google_dual_role_paradox_aug12.py` — 32 tests, 10 classes (NEW)
+- `profiles/competitor-coverage-research.yaml` — mechanism #59 in cross_publication_findings
+- `profiles/guardian.yaml` — dual_role_paradox _ref pointer to mechanism #59
+- `README.md` — test counts updated (10,206/320), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,206/320), new test file listed + fixed pre-existing missing entry for test_type_d_02am_cross_validation_aug12.py
+
+### Tests
+- 32/32 new mechanism tests passing
+- 124/124 structural consistency tests passing
+- Total: **10,206 tests** across **320 files** (static counter); **10,269** pytest-collected
+
+### Commit
+4c75ecb — pushed to GitHub
+
 ## Iteration 58 — 2026-08-12 02:00 PT (Type D: Test & Verify)
 
 ### Fixes: Mechanism #58 Structural Placement & Cross-Validation

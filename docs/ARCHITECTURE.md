@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10206 tests across 320 test files (all from real articles)
+├── tests/                       # 10246 tests across 321 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -532,6 +532,7 @@ mediascope/
 │   ├── test_will_knight_cross_entity.py # Will Knight (WIRED) cross-entity AI coverage: 7+ OpenAI / 5+ DeepMind / 3+ Anthropic / ZERO Meta articles, talent framing asymmetry, executive access gaps, three-layer WIRED exclusion
 │   ├── test_wired_google_glasses_framing_paradox_aug6.py # WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, advertising dependency paradox
 │   ├── test_zoe_schiffer_cross_entity.py # Zoë Schiffer (WIRED Director) cross-entity: talent war framing asymmetry, OpenAI insider access, Meta adversarial framing, executive profile gap, departure framing divergence
+│   ├── test_karen_hao_cross_entity.py # Karen Hao cross-entity: Mechanism #60 — 4-institution career path, MIT-Google financial alignment predicts investigative target selection, AlphaFold Signal, Gebru timing gap
 │   ├── test_kashmir_hill_cross_entity.py # Kashmir Hill (NYT) cross-entity: privacy beat concentrated on Meta (Name Tag investigation) while Ring facial recognition (deployed, FTC settlement), Google Android XR, Apple Vision Pro receive zero Hill coverage — beat assignment effect amplified by NYT-Amazon $20-25M deal
 │   ├── test_kevin_roose_cross_entity.py # Kevin Roose (NYT → Independent) cross-entity: TRIPLE professional identity capture (AGI Chronicles book, Sydney/Bing career, post-NYT AI media venture), CEO access asymmetry, headline personalization, AI interaction correlation mechanism
 │   ├── test_kyle_barr_cross_entity.py # Kyle Barr (Gizmodo) cross-entity: Privacy Gradient Paradox — identical camera glasses, Meta (-0.65 apocalyptic) vs Apple (-0.10 sympathetic) vs Samsung (+0.10 neutral) vs Google (-0.05 mild). Intra-publication Barr/Wong divergence isolates individual editorial culture from institutional incentives. Clean control: ZERO financial ties. 10 classes, 38 tests

@@ -49,6 +49,29 @@ journalists:
     institution: Massachusetts Institute of Technology
     year: '2015'
     source_url: https://en.wikipedia.org/wiki/Karen_Hao
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 60
+      pattern: institutional_alignment
+      description: 'Investigative target selection aligns with employing institution''s financial incentive structure. At
+        MIT TR (Google funds MIT research): 9-month adversarial Facebook investigation, zero comparable Google investigation
+        despite concurrent Gebru/Mitchell crisis. Post-MIT TR (freelance, no institutional ties): adversarially targets OpenAI
+        in Empire of AI. Consistently positions Google DeepMind AlphaFold as positive counter-example. CONTRAST with Mechanism
+        #57 (Seetharaman): Hao''s targeting shifts WITH institutions; Seetharaman''s framing persists ACROSS institutions.'
+      facebook_investigation:
+        title: The Facebook Gatekeeper
+        date: '2021-03-11'
+        publication: mit-tech-review
+        depth: 9-month adversarial investigation with inside sources
+        url: https://www.technologyreview.com/2021/03/11/1020600/facebook-responsible-ai-misinformation/
+      google_coverage:
+        depth: systems-level mentions, no adversarial deep-dive
+        alphafold_positive_framing: true
+        chile_water_criticism: true
+        comparable_adversarial_investigation: false
+      openai_coverage:
+        depth: adversarial book-length investigation (Empire of AI, 2025)
+        institutional_context: published freelance via Penguin Press, no financial ties to OpenAI
 - career:
   - beat: technology, product reviews
     end: 2007-01
@@ -207,152 +230,162 @@ journalists:
       tone: deep_institutional_access
       article_count_estimate: 7
       examples:
-      - title: "OpenAI Poaches 4 High-Ranking Engineers From Tesla, xAI, and Meta"
-        date: "2026-07"
+      - title: OpenAI Poaches 4 High-Ranking Engineers From Tesla, xAI, and Meta
+        date: 2026-07
         publication: wired
-        framing_notes: >
-          Talent movement scoop framed as OpenAI's aggressive hiring success. Meta appears as one of several companies
-          LOSING talent to OpenAI — not as a tech leader in its own right. Framing positions OpenAI as the gravitational
+        framing_notes: 'Talent movement scoop framed as OpenAI''s aggressive hiring success. Meta appears as one of several
+          companies LOSING talent to OpenAI — not as a tech leader in its own right. Framing positions OpenAI as the gravitational
           center of the AI talent market, with Meta as a source to be poached from rather than a destination.
+
+          '
         source_url: https://www.techmeme.com/260722/p27
-      - title: "A look at OpenAI's ongoing talent exodus and the intensifying competition to hire the next wave"
-        date: "2024-10"
+      - title: A look at OpenAI's ongoing talent exodus and the intensifying competition to hire the next wave
+        date: 2024-10
         publication: wired
-        framing_notes: >
-          Extended organizational analysis of OpenAI's talent dynamics — deep bench, departures, hiring priorities.
-          Lengthy feature-style coverage reflecting sustained insider access to OpenAI's organizational structure.
-          No equivalent organizational analysis has been published by Knight for Meta AI or FAIR.
+        framing_notes: 'Extended organizational analysis of OpenAI''s talent dynamics — deep bench, departures, hiring priorities.
+          Lengthy feature-style coverage reflecting sustained insider access to OpenAI''s organizational structure. No equivalent
+          organizational analysis has been published by Knight for Meta AI or FAIR.
+
+          '
         source_url: https://www.techmeme.com/241007/p27
-      - title: "Sources: OpenAI is recruiting AI researchers to work on humanoid robots"
-        date: "2025-09"
+      - title: 'Sources: OpenAI is recruiting AI researchers to work on humanoid robots'
+        date: 2025-09
         publication: wired
-        framing_notes: >
-          Exclusive sourced scoop on OpenAI's robotics ambitions. Framed as strategic expansion into physical AI.
-          Knight covers OpenAI's moves into robotics as visionary; no equivalent coverage of Meta's robot/embodied AI
+        framing_notes: 'Exclusive sourced scoop on OpenAI''s robotics ambitions. Framed as strategic expansion into physical
+          AI. Knight covers OpenAI''s moves into robotics as visionary; no equivalent coverage of Meta''s robot/embodied AI
           investments (despite Meta acquiring Assured Robot Intelligence in 2026).
+
+          '
         source_url: https://www.techmeme.com/250915/p19
-      - title: "OpenAI releases a research paper by its disbanded 'superalignment' team"
-        date: "2024-06"
+      - title: OpenAI releases a research paper by its disbanded 'superalignment' team
+        date: 2024-06
         publication: wired
-        framing_notes: >
-          Research-depth coverage of OpenAI's internal safety team dynamics. Knight treats OpenAI's safety work as
-          significant intellectual contribution. No equivalent coverage of Meta's open-source safety research (e.g.,
+        framing_notes: 'Research-depth coverage of OpenAI''s internal safety team dynamics. Knight treats OpenAI''s safety
+          work as significant intellectual contribution. No equivalent coverage of Meta''s open-source safety research (e.g.,
           Llama Guard, Purple Llama) which received ZERO Knight bylines.
+
+          '
         source_url: https://www.techmeme.com/240606/p32
     google_deepmind:
       tone: reverential_executive_access
       article_count_estimate: 5
       examples:
-      - title: "Q&A with Google DeepMind CEO Demis Hassabis on AGI, AI agents, Gemini Pro 1.5, UK AI Safety Institute"
-        date: "2024-02"
+      - title: Q&A with Google DeepMind CEO Demis Hassabis on AGI, AI agents, Gemini Pro 1.5, UK AI Safety Institute
+        date: 2024-02
         publication: wired
-        framing_notes: >
-          Extended executive Q&A interview with Hassabis — rare long-form access. Language: "needing more than scale
-          to get to AGI" positions DeepMind as thoughtful and scientifically rigorous. No equivalent Q&A has been
-          conducted by Knight with Yann LeCun (Meta FAIR chief scientist) despite LeCun being equally prominent in AI
-          research and far more active on social media.
+        framing_notes: 'Extended executive Q&A interview with Hassabis — rare long-form access. Language: "needing more than
+          scale to get to AGI" positions DeepMind as thoughtful and scientifically rigorous. No equivalent Q&A has been conducted
+          by Knight with Yann LeCun (Meta FAIR chief scientist) despite LeCun being equally prominent in AI research and far
+          more active on social media.
+
+          '
         source_url: https://www.techmeme.com/240219/p13
-      - title: "Google DeepMind hires former Boston Dynamics CTO Aaron Saunders; Hassabis envisions Gemini as robot OS"
-        date: "2025-11"
+      - title: Google DeepMind hires former Boston Dynamics CTO Aaron Saunders; Hassabis envisions Gemini as robot OS
+        date: 2025-11
         publication: wired
-        framing_notes: >
-          Talent acquisition framed as strategic vision — "Gemini becoming a sort of robot OS." Positive, aspirational
-          language. Compare to Meta talent coverage where Meta appears only as a poaching victim. Google acquiring
-          talent = visionary. Meta losing talent = vulnerability.
+        framing_notes: 'Talent acquisition framed as strategic vision — "Gemini becoming a sort of robot OS." Positive, aspirational
+          language. Compare to Meta talent coverage where Meta appears only as a poaching victim. Google acquiring talent
+          = visionary. Meta losing talent = vulnerability.
+
+          '
         source_url: https://www.techmeme.com/251120/p4
-      - title: "Google Gemini Is Taking Control of Humanoid Robots on Auto Factory Floors"
-        date: "2026-01"
+      - title: Google Gemini Is Taking Control of Humanoid Robots on Auto Factory Floors
+        date: 2026-01
         publication: wired
-        framing_notes: >
-          Enthusiastic framing of Google's robotics integration. Language: "intelligence required to navigate
-          unfamiliar environments and identify and manipulate objects." Technology-as-achievement framing with no
-          surveillance, labor displacement, or societal concern overlay. Compare: Meta's camera-glasses technology
-          covered by WIRED colleagues through surveillance vocabulary.
+        framing_notes: 'Enthusiastic framing of Google''s robotics integration. Language: "intelligence required to navigate
+          unfamiliar environments and identify and manipulate objects." Technology-as-achievement framing with no surveillance,
+          labor displacement, or societal concern overlay. Compare: Meta''s camera-glasses technology covered by WIRED colleagues
+          through surveillance vocabulary.
+
+          '
         source_url: https://singularityhub.com/2026/01/10/this-weeks-awesome-tech-stories-from-around-the-web-through-january-10/
-      - title: "Source: Google DeepMind signs a licensing deal with Hume AI to hire CEO Alan Cowen and ~7 top engineers"
-        date: "2026-01"
+      - title: 'Source: Google DeepMind signs a licensing deal with Hume AI to hire CEO Alan Cowen and ~7 top engineers'
+        date: 2026-01
         publication: wired
-        framing_notes: >
-          Google DeepMind talent acquisition framed neutrally as a "licensing deal" — professional language, no
-          "poaching" vocabulary. When OpenAI takes Meta engineers, Knight uses "poaches." When Google takes Hume AI's
+        framing_notes: 'Google DeepMind talent acquisition framed neutrally as a "licensing deal" — professional language,
+          no "poaching" vocabulary. When OpenAI takes Meta engineers, Knight uses "poaches." When Google takes Hume AI''s
           entire leadership, Knight uses "licensing deal to hire." Framing asymmetry in talent movement language.
+
+          '
         source_url: https://www.techmeme.com/260122/p18
     anthropic:
       tone: policy_drama_spotlight
       article_count_estimate: 3
       examples:
-      - title: "Trump Moves to Ban Anthropic From the US Government"
-        date: "2026-02-27"
+      - title: Trump Moves to Ban Anthropic From the US Government
+        date: '2026-02-27'
         publication: wired
-        framing_notes: >
-          Major policy scoop. Anthropic framed as principled underdog resisting military pressure — "Anthropic dropped
-          restrictions on how its AI can be used by the military" under government pressure. Knight treats Anthropic's
-          ethical stance as newsworthy and sympathetic. Also wrote follow-up "Anthropic Supply Chain Risk Shockwaves
-          Silicon Valley." Two-article sustained investigative arc on Anthropic's government relations — more sustained
-          coverage than Knight has ever given Meta AI's policy positions.
+        framing_notes: 'Major policy scoop. Anthropic framed as principled underdog resisting military pressure — "Anthropic
+          dropped restrictions on how its AI can be used by the military" under government pressure. Knight treats Anthropic''s
+          ethical stance as newsworthy and sympathetic. Also wrote follow-up "Anthropic Supply Chain Risk Shockwaves Silicon
+          Valley." Two-article sustained investigative arc on Anthropic''s government relations — more sustained coverage
+          than Knight has ever given Meta AI''s policy positions.
+
+          '
         source_url: https://technewstube.com/wired/1810836/trump-moves-to-ban-anthropic-us-government/
-      - title: "Anthropic, OpenAI, Block, Google, AWS, Microsoft launch the Agentic AI Foundation"
-        date: "2025-12"
+      - title: Anthropic, OpenAI, Block, Google, AWS, Microsoft launch the Agentic AI Foundation
+        date: 2025-12
         publication: wired
-        framing_notes: >
-          Multi-company industry standards piece. Knight covers the formation of the Agentic AI Foundation under
-          the Linux Foundation. Anthropic gets top billing in headline alongside OpenAI. Meta is NOT mentioned in
-          the headline or Techmeme summary despite Meta being a major AI agent developer (Llama-based agents).
-          Meta's open-source agent ecosystem is invisible in Knight's coverage of the agentic AI movement.
+        framing_notes: 'Multi-company industry standards piece. Knight covers the formation of the Agentic AI Foundation under
+          the Linux Foundation. Anthropic gets top billing in headline alongside OpenAI. Meta is NOT mentioned in the headline
+          or Techmeme summary despite Meta being a major AI agent developer (Llama-based agents). Meta''s open-source agent
+          ecosystem is invisible in Knight''s coverage of the agentic AI movement.
+
+          '
         source_url: https://www.techmeme.com/251209/p30
     meta:
       tone: absent_or_peripheral
       article_count_estimate: 0
-      coverage_gap_notes: >
-        CRITICAL FINDING: Will Knight — WIRED's senior AI writer and AI Lab newsletter author — has ZERO identified
-        dedicated articles about Meta's AI technology, strategy, or leadership. Meta appears in Knight's coverage
-        ONLY in peripheral roles: (1) as a talent source being poached FROM by OpenAI ("OpenAI Poaches 4 High-Ranking
-        Engineers From Tesla, xAI, and Meta"); (2) as a national security concern (NeurIPS analysis: "Llama featured
-        in 106 Chinese papers"); (3) as a benchmark to be surpassed ("Databricks says DBRX outshines Llama 2").
+      coverage_gap_notes: 'CRITICAL FINDING: Will Knight — WIRED''s senior AI writer and AI Lab newsletter author — has ZERO
+        identified dedicated articles about Meta''s AI technology, strategy, or leadership. Meta appears in Knight''s coverage
+        ONLY in peripheral roles: (1) as a talent source being poached FROM by OpenAI ("OpenAI Poaches 4 High-Ranking Engineers
+        From Tesla, xAI, and Meta"); (2) as a national security concern (NeurIPS analysis: "Llama featured in 106 Chinese
+        papers"); (3) as a benchmark to be surpassed ("Databricks says DBRX outshines Llama 2").
 
-        This is analytically extraordinary given that:
-        - Meta operates FAIR, one of the world's top AI research labs
-        - Meta released Llama 2/3/4, the most widely used open-weight AI models
-        - Yann LeCun (Meta chief AI scientist) is a Turing Award winner and one of the most prominent voices in AI
-        - Meta's AI infrastructure spending ($130-145B capex) rivals or exceeds any competitor's
+        This is analytically extraordinary given that: - Meta operates FAIR, one of the world''s top AI research labs - Meta
+        released Llama 2/3/4, the most widely used open-weight AI models - Yann LeCun (Meta chief AI scientist) is a Turing
+        Award winner and one of the most prominent voices in AI - Meta''s AI infrastructure spending ($130-145B capex) rivals
+        or exceeds any competitor''s
 
-        Knight has published ZERO Q&A interviews with Yann LeCun (compare: multiple extended Demis Hassabis Q&As).
-        Knight has published ZERO organizational analyses of Meta AI/FAIR (compare: extended OpenAI talent exodus piece).
-        Knight has published ZERO pieces on Llama's technical achievements (compare: Databricks DBRX, VERSES AXIOM,
-        Mira Murati's Tinker).
+        Knight has published ZERO Q&A interviews with Yann LeCun (compare: multiple extended Demis Hassabis Q&As). Knight
+        has published ZERO organizational analyses of Meta AI/FAIR (compare: extended OpenAI talent exodus piece). Knight
+        has published ZERO pieces on Llama''s technical achievements (compare: Databricks DBRX, VERSES AXIOM, Mira Murati''s
+        Tinker).
 
-        The coverage gap is not random — it correlates perfectly with Condé Nast's financial incentive structure:
-        Condé Nast has content licensing deals with OpenAI ($0 from Meta), and Knight's coverage allocates 7+ articles
-        to OpenAI, 5+ to Google DeepMind, 3+ to Anthropic, and ZERO dedicated articles to Meta. As WIRED's AI agenda-
-        setter (AI Lab newsletter), Knight's coverage choices determine which AI companies WIRED's audience perceives
-        as leading the field.
+        The coverage gap is not random — it correlates perfectly with Condé Nast''s financial incentive structure: Condé Nast
+        has content licensing deals with OpenAI ($0 from Meta), and Knight''s coverage allocates 7+ articles to OpenAI, 5+
+        to Google DeepMind, 3+ to Anthropic, and ZERO dedicated articles to Meta. As WIRED''s AI agenda- setter (AI Lab newsletter),
+        Knight''s coverage choices determine which AI companies WIRED''s audience perceives as leading the field.
+
+        '
     apple:
       tone: constructive_analysis
       examples:
-      - title: "Apple's WWDC demos show the value of seeing AI as a feature, not a standalone app or device"
-        date: "2024-06"
+      - title: Apple's WWDC demos show the value of seeing AI as a feature, not a standalone app or device
+        date: 2024-06
         publication: wired
-        framing_notes: >
-          Positive analytical framing of Apple's AI integration strategy. "The value of seeing AI as a feature" is
-          constructive business analysis. No surveillance, privacy, or bystander-consent framing despite Apple
-          Intelligence collecting and processing user data across all Apple devices. Mirrors the broader WIRED
-          pattern of treating Apple's data collection as an acceptable part of vertical integration while treating
-          Meta's data practices as adversarial. Knight's Apple coverage is business-analytical; his institution's
-          Meta coverage is surveillance-critical.
+        framing_notes: 'Positive analytical framing of Apple''s AI integration strategy. "The value of seeing AI as a feature"
+          is constructive business analysis. No surveillance, privacy, or bystander-consent framing despite Apple Intelligence
+          collecting and processing user data across all Apple devices. Mirrors the broader WIRED pattern of treating Apple''s
+          data collection as an acceptable part of vertical integration while treating Meta''s data practices as adversarial.
+          Knight''s Apple coverage is business-analytical; his institution''s Meta coverage is surveillance-critical.
+
+          '
         source_url: https://www.techmeme.com/240613/p26
     cross_entity_asymmetry_score: 0.91
-    asymmetry_notes: >
-      Extremely high asymmetry (0.91/1.0). Knight is WIRED's most influential AI coverage voice (AI Lab newsletter,
-      senior writer, 20+ year AI beat veteran), and his coverage allocation creates a structural gap: WIRED's primary
-      AI product gives OpenAI, Google DeepMind, and Anthropic deep organizational coverage while Meta AI — the world's
-      largest open-source AI contributor — receives ZERO dedicated Knight coverage. This matters because Knight shapes
-      WIRED's "fundamental technology" narrative layer, distinct from Schiffer's business coverage or Goode's consumer
-      coverage. The result: WIRED's AI narrative architecture has no positive Meta presence at the foundational
-      technology level. Meta's AI story is told by WIRED only through business adversarialism (Schiffer) and consumer
-      surveillance framing (Goode/others), never through technology achievement framing (Knight's domain). This three-
-      layer editorial exclusion — technology (Knight), business (Schiffer), consumer (Goode lane avoidance) — creates
-      a comprehensive institutional framing asymmetry that no single journalist controls but the editorial structure
-      produces. Correlates with Condé Nast's OpenAI content deal and absence of any Meta financial relationship.
+    asymmetry_notes: 'Extremely high asymmetry (0.91/1.0). Knight is WIRED''s most influential AI coverage voice (AI Lab newsletter,
+      senior writer, 20+ year AI beat veteran), and his coverage allocation creates a structural gap: WIRED''s primary AI
+      product gives OpenAI, Google DeepMind, and Anthropic deep organizational coverage while Meta AI — the world''s largest
+      open-source AI contributor — receives ZERO dedicated Knight coverage. This matters because Knight shapes WIRED''s "fundamental
+      technology" narrative layer, distinct from Schiffer''s business coverage or Goode''s consumer coverage. The result:
+      WIRED''s AI narrative architecture has no positive Meta presence at the foundational technology level. Meta''s AI story
+      is told by WIRED only through business adversarialism (Schiffer) and consumer surveillance framing (Goode/others), never
+      through technology achievement framing (Knight''s domain). This three- layer editorial exclusion — technology (Knight),
+      business (Schiffer), consumer (Goode lane avoidance) — creates a comprehensive institutional framing asymmetry that
+      no single journalist controls but the editorial structure produces. Correlates with Condé Nast''s OpenAI content deal
+      and absence of any Meta financial relationship.
+
+      '
 - awards:
   - notes: 'Portfolio/Penguin Random House, Feb 13 2024, 352pp, hardcover, ISBN 9780593716601. Based on 60+ employee interviews,
       thousands of internal docs/Slack messages. NYT: "crisp, matter-of-fact style to excellent effect." FT: "sharp and deeply
@@ -584,140 +617,147 @@ journalists:
     apple:
       tone: empathetic_wonder
       examples:
-      - title: "I Cried Inside the Apple Vision Pro — WIRED Review"
-        date: "2024-02"
+      - title: I Cried Inside the Apple Vision Pro — WIRED Review
+        date: 2024-02
         publication: wired
-        framing_notes: >
-          Deeply personal, first-person emotional narrative. Lead: "From the inside, though, the view is incredible. It really
-          is. I'm just as surprised by this as you are." Describes crying watching Life is Beautiful, tears pooling in the
-          face cushion, texting friends "Honestly, I'm starting to love this thing." ZERO surveillance/privacy framing despite
-          Apple Vision Pro having multiple outward-facing cameras (12 cameras, 5 sensors, 6 microphones). Criticism is framed
-          as personal loss of human connection ("I also missed the people in the darkened space around me... I loved the Apple
-          Vision Pro until I didn't. I started to dread putting it on") — not as surveillance risk, data harvesting, or
-          corporate trust violation. The device's cameras are never mentioned as a privacy concern for bystanders. Source:
+        framing_notes: 'Deeply personal, first-person emotional narrative. Lead: "From the inside, though, the view is incredible.
+          It really is. I''m just as surprised by this as you are." Describes crying watching Life is Beautiful, tears pooling
+          in the face cushion, texting friends "Honestly, I''m starting to love this thing." ZERO surveillance/privacy framing
+          despite Apple Vision Pro having multiple outward-facing cameras (12 cameras, 5 sensors, 6 microphones). Criticism
+          is framed as personal loss of human connection ("I also missed the people in the darkened space around me... I loved
+          the Apple Vision Pro until I didn''t. I started to dread putting it on") — not as surveillance risk, data harvesting,
+          or corporate trust violation. The device''s cameras are never mentioned as a privacy concern for bystanders. Source:
           MacDailyNews reprint (https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/).
-      - title: "Apple Vision Pro WWDC Hands-On — WIRED Uncanny Valley Podcast"
-        date: "2023-06"
+
+          '
+      - title: Apple Vision Pro WWDC Hands-On — WIRED Uncanny Valley Podcast
+        date: 2023-06
         publication: wired
-        framing_notes: >
-          Measured technical analysis on WIRED's Uncanny Valley podcast and Gadget Lab. Described the device as "conceptually AR"
-          — nuanced, precise language. No surveillance, privacy, or bystander-consent language despite the headset's camera
-          array. Framing: Apple = impressive engineering feat, potential new platform. Source: Everand podcast listing, Newcomer
-          podcast interview.
-      - title: "Apple Vision Pro Lives Deep in the Uncanny Valley — WIRED Gadget Lab"
-        date: "2024-02"
+        framing_notes: 'Measured technical analysis on WIRED''s Uncanny Valley podcast and Gadget Lab. Described the device
+          as "conceptually AR" — nuanced, precise language. No surveillance, privacy, or bystander-consent language despite
+          the headset''s camera array. Framing: Apple = impressive engineering feat, potential new platform. Source: Everand
+          podcast listing, Newcomer podcast interview.
+
+          '
+      - title: Apple Vision Pro Lives Deep in the Uncanny Valley — WIRED Gadget Lab
+        date: 2024-02
         publication: wired
-        framing_notes: >
-          Extended podcast discussion about comfort, ergonomics, the pinch gesture. Physical comfort critique ("I can't
-          comfortably do that... It's very uncomfortable") but NEVER surveillance framing. Even when describing recording
-          capabilities, no "bystander consent" or "creepy" language. The device's name — containing "Vision" — is treated
-          neutrally, not as surveillance metaphor. Source: TechnologyMag.org transcript.
+        framing_notes: 'Extended podcast discussion about comfort, ergonomics, the pinch gesture. Physical comfort critique
+          ("I can''t comfortably do that... It''s very uncomfortable") but NEVER surveillance framing. Even when describing
+          recording capabilities, no "bystander consent" or "creepy" language. The device''s name — containing "Vision" —
+          is treated neutrally, not as surveillance metaphor. Source: TechnologyMag.org transcript.
+
+          '
     snap:
       tone: playful_positive
       examples:
-      - title: "Snap Spectacles: Are They the Face Camera We've Been Waiting For? — WIRED YouTube"
-        date: "2018"
+      - title: 'Snap Spectacles: Are They the Face Camera We''ve Been Waiting For? — WIRED YouTube'
+        date: '2018'
         publication: wired
-        framing_notes: >
-          WIRED YouTube video with Lauren Goode and Arielle Pardes testing Snap Spectacles at California's Great America
-          amusement park. Title uses expectant/positive framing for a literal face camera — "the face camera we've been
-          waiting for" implies desire rather than alarm. Keywords include "first impressions" and "hands on" — no "privacy",
-          "surveillance", "creepy", "consent", or "recording" language. Fun, consumer-friendly framing for a face-mounted
-          camera product from a social media company. Source: YouTube (https://www.youtube.com/watch?v=zHn_otv4qN8).
+        framing_notes: 'WIRED YouTube video with Lauren Goode and Arielle Pardes testing Snap Spectacles at California''s
+          Great America amusement park. Title uses expectant/positive framing for a literal face camera — "the face camera
+          we''ve been waiting for" implies desire rather than alarm. Keywords include "first impressions" and "hands on" —
+          no "privacy", "surveillance", "creepy", "consent", or "recording" language. Fun, consumer-friendly framing for a
+          face-mounted camera product from a social media company. Source: YouTube (https://www.youtube.com/watch?v=zHn_otv4qN8).
+
+          '
     meta:
       tone: clinical_to_editorial_avoidance
-      coverage_gap_notes: >
-        ANALYTICALLY SIGNIFICANT: Despite being WIRED's most senior consumer tech correspondent (Senior Correspondent since
-        ~2025) with 15+ years covering wearables specifically, Lauren Goode has NO major standalone Meta Ray-Ban smart glasses
-        product review. Her ONE Meta hardware byline was the Oct 2023 Meta Connect event recap ("Meta's Quest 3 VR Headset
-        and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality"), which used clinical/skeptical framing: "The
-        face-computing metaverse still hasn't gone mainstream, but that isn't stopping Meta from trying to make it so" and
-        "most of us would rather bury our faces in the glass slabs in our hands than limit our vision in a full-fledged face
-        computer." Compare Apple Vision Pro review (4 months later): "I Cried Inside the Apple Vision Pro" — deeply personal,
-        emotional, tears pooling. Same journalist, same product category (face-mounted cameras), radically different emotional
-        register. Post-2023, her beat shifted to AI semiconductors (Nvidia Jensen Huang 1-on-1 SIGGRAPH 2024, AMD Lisa Su
-        profile Aug 2025, Arm CEO interview Mar 2026, Intel advanced packaging feature Apr 2026) and Silicon Valley culture —
-        precisely as Meta glasses became WIRED's most surveillance-framed hardware story. Meta Ray-Ban coverage went to Dell
-        Cameron and Dhruv Mehrotra (investigative team) for the NameTag exposé. This creates a lane assignment asymmetry:
-        Goode personally champions Apple Vision Pro (emotional first-person review) and Snap Spectacles (fun theme park video),
-        but Meta's camera glasses go to other WIRED staffers through the surveillance/accountability lens rather than the
-        product-delight lens Goode brings to competitor products.
+      coverage_gap_notes: 'ANALYTICALLY SIGNIFICANT: Despite being WIRED''s most senior consumer tech correspondent (Senior
+        Correspondent since ~2025) with 15+ years covering wearables specifically, Lauren Goode has NO major standalone Meta
+        Ray-Ban smart glasses product review. Her ONE Meta hardware byline was the Oct 2023 Meta Connect event recap ("Meta''s
+        Quest 3 VR Headset and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality"), which used clinical/skeptical
+        framing: "The face-computing metaverse still hasn''t gone mainstream, but that isn''t stopping Meta from trying to
+        make it so" and "most of us would rather bury our faces in the glass slabs in our hands than limit our vision in a
+        full-fledged face computer." Compare Apple Vision Pro review (4 months later): "I Cried Inside the Apple Vision Pro"
+        — deeply personal, emotional, tears pooling. Same journalist, same product category (face-mounted cameras), radically
+        different emotional register. Post-2023, her beat shifted to AI semiconductors (Nvidia Jensen Huang 1-on-1 SIGGRAPH
+        2024, AMD Lisa Su profile Aug 2025, Arm CEO interview Mar 2026, Intel advanced packaging feature Apr 2026) and Silicon
+        Valley culture — precisely as Meta glasses became WIRED''s most surveillance-framed hardware story. Meta Ray-Ban coverage
+        went to Dell Cameron and Dhruv Mehrotra (investigative team) for the NameTag exposé. This creates a lane assignment
+        asymmetry: Goode personally champions Apple Vision Pro (emotional first-person review) and Snap Spectacles (fun theme
+        park video), but Meta''s camera glasses go to other WIRED staffers through the surveillance/accountability lens rather
+        than the product-delight lens Goode brings to competitor products.
+
+        '
       meta_connect_2023:
-        title: "Meta's Quest 3 VR Headset and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality"
-        date: "2023-10"
+        title: Meta's Quest 3 VR Headset and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality
+        date: 2023-10
         publication: wired
-        framing_notes: >
-          Event recap of Meta Connect keynote. Clinical/skeptical framing: "face-computing metaverse still hasn't
-          gone mainstream," "most of us would rather bury our faces in the glass slabs in our hands," "I'm not
-          sure where to start" on the recording LED ("The new LED light didn't appear that much more obvious to me
-          when I saw it"). Contrast with Apple Vision Pro review 4 months later: personal, emotional, wonderstruck.
-          Same journalist covering face-mounted camera products from two different companies with opposite emotional
-          registers. Source: WIRED article reprinted at sxyngh.com.
-        source_url: "http://www.sxyngh.com/index-216.html"
+        framing_notes: 'Event recap of Meta Connect keynote. Clinical/skeptical framing: "face-computing metaverse still hasn''t
+          gone mainstream," "most of us would rather bury our faces in the glass slabs in our hands," "I''m not sure where
+          to start" on the recording LED ("The new LED light didn''t appear that much more obvious to me when I saw it").
+          Contrast with Apple Vision Pro review 4 months later: personal, emotional, wonderstruck. Same journalist covering
+          face-mounted camera products from two different companies with opposite emotional registers. Source: WIRED article
+          reprinted at sxyngh.com.
+
+          '
+        source_url: http://www.sxyngh.com/index-216.html
     google:
       tone: team_coverage_playful
-      coverage_notes: >
-        Goode was on-ground at Google I/O 2026 (May 2026) as part of WIRED's five-person team covering Android XR
-        smart glasses, Gemini updates, and Google's AI announcements. The WIRED live blog included the playful
-        observation "Remember, they're not Smart Glasses, they are 'Intelligent Eyewear'" — mild snark about
-        Google's branding that is tonally FRIENDLY, not adversarial. Zero surveillance/privacy language applied
-        to Google's camera-equipped Android XR glasses despite functional similarity to Meta Ray-Ban glasses.
-        Google I/O coverage assigned to a large team including Goode (consumer tech), Ashworth, Chokkattu, Levy,
-        and Rogers — collaborative product-tech coverage rather than the investigative-adversarial lens applied
-        to Meta's functionally similar products.
+      coverage_notes: 'Goode was on-ground at Google I/O 2026 (May 2026) as part of WIRED''s five-person team covering Android
+        XR smart glasses, Gemini updates, and Google''s AI announcements. The WIRED live blog included the playful observation
+        "Remember, they''re not Smart Glasses, they are ''Intelligent Eyewear''" — mild snark about Google''s branding that
+        is tonally FRIENDLY, not adversarial. Zero surveillance/privacy language applied to Google''s camera-equipped Android
+        XR glasses despite functional similarity to Meta Ray-Ban glasses. Google I/O coverage assigned to a large team including
+        Goode (consumer tech), Ashworth, Chokkattu, Levy, and Rogers — collaborative product-tech coverage rather than the
+        investigative-adversarial lens applied to Meta''s functionally similar products.
+
+        '
       google_io_2026:
-        date: "2026-05-19"
+        date: '2026-05-19'
         publication: wired
-        framing_notes: >
-          Live blog team coverage. Tone: playful, snarky but friendly toward Google. "Intelligent Eyewear" joke
-          about branding — no privacy alarm, no surveillance vocabulary, no bystander consent language despite
-          Google's Android XR glasses having cameras and always-on AI (Gemini). Compare: Meta's camera glasses
-          trigger "wiretapping laws," "biometric data," "dormant surveillance" from WIRED colleagues.
-        source_url: "https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen"
+        framing_notes: 'Live blog team coverage. Tone: playful, snarky but friendly toward Google. "Intelligent Eyewear" joke
+          about branding — no privacy alarm, no surveillance vocabulary, no bystander consent language despite Google''s Android
+          XR glasses having cameras and always-on AI (Gemini). Compare: Meta''s camera glasses trigger "wiretapping laws,"
+          "biometric data," "dormant surveillance" from WIRED colleagues.
+
+          '
+        source_url: https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
     executive_access_asymmetry:
-      description: >
-        Goode has direct 1-on-1 executive interview access to EVERY major AI semiconductor company and a key Meta
+      description: 'Goode has direct 1-on-1 executive interview access to EVERY major AI semiconductor company and a key Meta
         AI competitor, but ZERO 1-on-1 interviews with Meta leadership despite Meta being her former primary beat:
+
+        '
       access_map:
-        nvidia: "Jensen Huang — SIGGRAPH 2024 1-on-1 interview, Jan 2026 Vera Rubin coverage"
-        amd: "Lisa Su — Aug 2025 Big Story profile ('Lisa Su Runs AMD'), Dec 2025 WIRED interview on AI bubble"
-        arm: "Rene Haas — Mar 2026 interview ('Arm's CEO Insists the Market Needs His New CPU')"
-        intel: "Intel leadership — Apr 2026 advanced packaging feature (sources: Intel in talks with Google, Amazon)"
-        anthropic: "Mike Krieger (Anthropic Labs head) — Jun 2026 co-interview at Big Technology AI Summit"
-        meta: "ZERO — No Goode 1-on-1 with Zuckerberg, Bosworth, LeCun, or any Meta hardware leadership"
+        nvidia: Jensen Huang — SIGGRAPH 2024 1-on-1 interview, Jan 2026 Vera Rubin coverage
+        amd: Lisa Su — Aug 2025 Big Story profile ('Lisa Su Runs AMD'), Dec 2025 WIRED interview on AI bubble
+        arm: Rene Haas — Mar 2026 interview ('Arm's CEO Insists the Market Needs His New CPU')
+        intel: 'Intel leadership — Apr 2026 advanced packaging feature (sources: Intel in talks with Google, Amazon)'
+        anthropic: Mike Krieger (Anthropic Labs head) — Jun 2026 co-interview at Big Technology AI Summit
+        meta: ZERO — No Goode 1-on-1 with Zuckerberg, Bosworth, LeCun, or any Meta hardware leadership
       source_urls:
-        - "https://www.youtube.com/watch?v=H0WxJ7caZQU"
-        - "https://chipbriefing.substack.com/p/weekly-arm-ceo-on-arms-new-chip"
-        - "https://sciencesprings.wordpress.com/2026/04/07/from-wired-the-ridiculously-nerdy-intel-bet-that-could-rake-in-billions/"
-        - "https://www.itbear.com/tag/amd/"
-        - "https://podtail.nl/podcast/big-technology-podcast/meta-s-cto-on-its-augmented-reality-dreams-with-an/"
+      - https://www.youtube.com/watch?v=H0WxJ7caZQU
+      - https://chipbriefing.substack.com/p/weekly-arm-ceo-on-arms-new-chip
+      - https://sciencesprings.wordpress.com/2026/04/07/from-wired-the-ridiculously-nerdy-intel-bet-that-could-rake-in-billions/
+      - https://www.itbear.com/tag/amd/
+      - https://podtail.nl/podcast/big-technology-podcast/meta-s-cto-on-its-augmented-reality-dreams-with-an/
     beat_shift:
-      description: >
-        2024-2026 beat evolution: consumer tech/wearables → AI semiconductors + Silicon Valley culture.
-        Goode's coverage shifted to Nvidia (Jensen Huang SIGGRAPH 2024, Vera Rubin Jan 2026), AMD (Lisa Su
-        profile Aug 2025, AI bubble interview Dec 2025), Intel (advanced chip packaging Apr 2026), Arm (CEO
-        interview Mar 2026). Also moderated HumanX 2026 panel with AMD CTO Mark Papermaster and Micron CBO
-        Sumit Sadana. This shift coincides precisely with Meta Ray-Ban glasses becoming WIRED's primary
-        investigative target (NameTag exposé Jun 2026), creating a de facto editorial lane split: Goode covers
-        the AI chip supply chain while Cameron/Mehrotra cover Meta hardware through surveillance framing.
+      description: '2024-2026 beat evolution: consumer tech/wearables → AI semiconductors + Silicon Valley culture. Goode''s
+        coverage shifted to Nvidia (Jensen Huang SIGGRAPH 2024, Vera Rubin Jan 2026), AMD (Lisa Su profile Aug 2025, AI bubble
+        interview Dec 2025), Intel (advanced chip packaging Apr 2026), Arm (CEO interview Mar 2026). Also moderated HumanX
+        2026 panel with AMD CTO Mark Papermaster and Micron CBO Sumit Sadana. This shift coincides precisely with Meta Ray-Ban
+        glasses becoming WIRED''s primary investigative target (NameTag exposé Jun 2026), creating a de facto editorial lane
+        split: Goode covers the AI chip supply chain while Cameron/Mehrotra cover Meta hardware through surveillance framing.
+
+        '
     cross_entity_asymmetry_score: 0.87
-    asymmetry_notes: >
-      High asymmetry (0.87/1.0, increased from 0.82 with new evidence). Apple Vision Pro has 12 outward-facing
-      cameras and 6 microphones — a far more capable surveillance device than Meta's single 12MP camera — yet
-      receives empathetic emotional framing ("I cried", "the view is incredible") while Meta's camera glasses
-      receive surveillance/privacy framing from WIRED as an institution. Snap Spectacles are literally named
-      "the face camera we've been waiting for" in Goode's video title — language that would be unthinkable
-      applied to Meta's glasses in WIRED's editorial frame. Key differentiator: Apple = personal experience
-      product, Snap = fun social device, Meta = surveillance infrastructure. Same hardware (cameras on face),
-      different narrative frame determined by manufacturer identity. Goode's personal coverage patterns
-      instantiate this at the individual journalist level. NEW EVIDENCE: (1) Meta Connect 2023 article shows
-      clinical/skeptical framing ("face-computing metaverse still hasn't gone mainstream") vs emotional Apple
-      framing 4 months later — within-journalist tone divergence confirmed. (2) Beat shift to AI semiconductors
-      (Nvidia, AMD, Intel, Arm) 2024-2026 coincides with Meta glasses becoming WIRED's investigative target.
-      (3) Executive access asymmetry: Goode has 1-on-1 access to Jensen Huang, Lisa Su, Rene Haas, Mike
-      Krieger (Anthropic), but ZERO with Meta leadership. (4) Google I/O 2026: playful tone toward Google's
-      Android XR glasses (cameras + Gemini AI) with zero surveillance language — further confirms manufacturer-
+    asymmetry_notes: 'High asymmetry (0.87/1.0, increased from 0.82 with new evidence). Apple Vision Pro has 12 outward-facing
+      cameras and 6 microphones — a far more capable surveillance device than Meta''s single 12MP camera — yet receives empathetic
+      emotional framing ("I cried", "the view is incredible") while Meta''s camera glasses receive surveillance/privacy framing
+      from WIRED as an institution. Snap Spectacles are literally named "the face camera we''ve been waiting for" in Goode''s
+      video title — language that would be unthinkable applied to Meta''s glasses in WIRED''s editorial frame. Key differentiator:
+      Apple = personal experience product, Snap = fun social device, Meta = surveillance infrastructure. Same hardware (cameras
+      on face), different narrative frame determined by manufacturer identity. Goode''s personal coverage patterns instantiate
+      this at the individual journalist level. NEW EVIDENCE: (1) Meta Connect 2023 article shows clinical/skeptical framing
+      ("face-computing metaverse still hasn''t gone mainstream") vs emotional Apple framing 4 months later — within-journalist
+      tone divergence confirmed. (2) Beat shift to AI semiconductors (Nvidia, AMD, Intel, Arm) 2024-2026 coincides with Meta
+      glasses becoming WIRED''s investigative target. (3) Executive access asymmetry: Goode has 1-on-1 access to Jensen Huang,
+      Lisa Su, Rene Haas, Mike Krieger (Anthropic), but ZERO with Meta leadership. (4) Google I/O 2026: playful tone toward
+      Google''s Android XR glasses (cameras + Gemini AI) with zero surveillance language — further confirms manufacturer-
       identity-dependent framing.
+
+      '
   source_urls:
   - https://clarku.edu/news/lauren-goode-03-stays-wired-to-the-tech-world/
   - https://allthingsd.com/20110824/introducing-lauren-goode/
@@ -861,216 +901,180 @@ journalists:
       article_count_estimate: 15
       coverage_type: sustained_adversarial_beat
       examples:
-      - title: "Facebook's Original Sin (Offline podcast)"
-        date: "2021-12"
+      - title: Facebook's Original Sin (Offline podcast)
+        date: 2021-12
         publication: atlantic
-        framing_notes: >
-          Frames Facebook's problems as architectural and fundamental —
-          "original sin" language treats the platform's design as inherently
-          harmful. Warzel has covered Facebook for 10+ years, "long before it was
-          cool to point out that Facebook is destroying our democracy" (Jon Favreau
-          intro). This is not analytical criticism; it is existential condemnation.
+        framing_notes: 'Frames Facebook''s problems as architectural and fundamental — "original sin" language treats the
+          platform''s design as inherently harmful. Warzel has covered Facebook for 10+ years, "long before it was cool to
+          point out that Facebook is destroying our democracy" (Jon Favreau intro). This is not analytical criticism; it is
+          existential condemnation.
+
+          '
         source_url: https://podscripts.co/podcasts/offline-with-jon-favreau/charlie-warzel-on-facebooks-original-sin
-      - title: "Zuck Sucks-Up to Trump (Bulwark Podcast)"
-        date: "2025-01"
+      - title: Zuck Sucks-Up to Trump (Bulwark Podcast)
+        date: 2025-01
         publication: atlantic
-        framing_notes: >
-          Adversarial framing of Zuckerberg's political positioning. Title
-          language ("sucks-up") is mocking/contemptuous, not analytical.
-          Warzel discussed Facebook's content moderation changes, fact-checker
-          removal, and trust-and-safety team moves as capitulation. Compare
-          to his Sam Altman interview, which used analytical framing.
+        framing_notes: 'Adversarial framing of Zuckerberg''s political positioning. Title language ("sucks-up") is mocking/contemptuous,
+          not analytical. Warzel discussed Facebook''s content moderation changes, fact-checker removal, and trust-and-safety
+          team moves as capitulation. Compare to his Sam Altman interview, which used analytical framing.
+
+          '
         source_url: https://podscripts.co/podcasts/the-bulwark-podcast/charlie-warzel-zuck-sucks-up-to-trump
-      - title: "How Facebook caused January 6th (Panic World podcast)"
-        date: "2025-01"
+      - title: How Facebook caused January 6th (Panic World podcast)
+        date: 2025-01
         publication: atlantic
-        framing_notes: >
-          Frames Facebook as a CAUSAL FACTOR in the Capitol insurrection.
-          Extreme adversarial framing — assigning blame for political
-          violence to a specific platform. No equivalent causal-blame framing
-          has been applied by Warzel to any other tech company.
+        framing_notes: 'Frames Facebook as a CAUSAL FACTOR in the Capitol insurrection. Extreme adversarial framing — assigning
+          blame for political violence to a specific platform. No equivalent causal-blame framing has been applied by Warzel
+          to any other tech company.
+
+          '
         source_url: https://podbay.fm/p/panic-world/e/1736323800
-      - title: "Q&A with Second Life journalist on Meta metaverse"
-        date: "2022-03"
+      - title: Q&A with Second Life journalist on Meta metaverse
+        date: 2022-03
         publication: atlantic
-        framing_notes: >
-          Covers Meta's metaverse struggles through a critical lens —
-          "companies such as Meta struggling to foster healthy metaverse
-          communities." Framing focuses on Meta's failures rather than
-          the technology's potential.
+        framing_notes: 'Covers Meta''s metaverse struggles through a critical lens — "companies such as Meta struggling to
+          foster healthy metaverse communities." Framing focuses on Meta''s failures rather than the technology''s potential.
+
+          '
         source_url: https://www.techmeme.com/220320/p4
-      coverage_gap_notes: >
-        Warzel's Meta coverage is exclusively adversarial. Every identified
-        Meta-specific article, interview, or podcast appearance frames Meta
-        as harmful, failing, or politically compromised. ZERO identified
-        pieces cover Meta's AI achievements (Llama, FAIR research), Meta's
-        wearables success (Ray-Ban Meta glasses as breakout product), or
-        Meta's open-source contributions to AI. This is analytically
-        significant because Warzel's Galaxy Brain covers AI extensively —
-        he discusses AI's impact on the workforce, AI data centers, AI's
-        economic implications, and AI's battlefield applications — but
-        Meta's AI story is ABSENT from this coverage despite Meta being
-        the world's largest open-source AI contributor. The entity-specific
-        adversarialism does not extend to his general AI coverage.
+      coverage_gap_notes: 'Warzel''s Meta coverage is exclusively adversarial. Every identified Meta-specific article, interview,
+        or podcast appearance frames Meta as harmful, failing, or politically compromised. ZERO identified pieces cover Meta''s
+        AI achievements (Llama, FAIR research), Meta''s wearables success (Ray-Ban Meta glasses as breakout product), or Meta''s
+        open-source contributions to AI. This is analytically significant because Warzel''s Galaxy Brain covers AI extensively
+        — he discusses AI''s impact on the workforce, AI data centers, AI''s economic implications, and AI''s battlefield
+        applications — but Meta''s AI story is ABSENT from this coverage despite Meta being the world''s largest open-source
+        AI contributor. The entity-specific adversarialism does not extend to his general AI coverage.
+
+        '
     openai:
       tone: analytical_with_executive_access
       article_count_estimate: 3
       examples:
-      - title: "Interview with Sam Altman and Arianna Huffington on Thrive AI Health"
-        date: "2024-07"
+      - title: Interview with Sam Altman and Arianna Huffington on Thrive AI Health
+        date: 2024-07
         publication: atlantic
-        framing_notes: >
-          EXCLUSIVE Q&A interview with OpenAI CEO Sam Altman. Analytical framing:
-          "why AI has become a technology of faith." Warzel was GIVEN ACCESS to
-          Altman — this is cooperative journalism, not adversarial investigation.
-          No equivalent executive access has been granted to any Meta leader
-          by Warzel. The framing is philosophical/analytical ("technology of
-          faith") rather than the moral condemnation applied to Meta ("original
-          sin," "destroying democracy," "caused January 6th").
+        framing_notes: 'EXCLUSIVE Q&A interview with OpenAI CEO Sam Altman. Analytical framing: "why AI has become a technology
+          of faith." Warzel was GIVEN ACCESS to Altman — this is cooperative journalism, not adversarial investigation. No
+          equivalent executive access has been granted to any Meta leader by Warzel. The framing is philosophical/analytical
+          ("technology of faith") rather than the moral condemnation applied to Meta ("original sin," "destroying democracy,"
+          "caused January 6th").
+
+          '
         source_url: https://www.techmeme.com/240714/p8
-      - title: "Too Much Is Happening Too Fast"
-        date: "2026"
+      - title: Too Much Is Happening Too Fast
+        date: '2026'
         publication: atlantic
-        framing_notes: >
-          Mentions Nat Friedman using OpenClaw (autonomous AI agent) in a positive,
-          wonder-tinged context — the AI agent ordering him to drink water is
-          framed as amusing and noteworthy, not surveillance or overreach.
-          When Meta's AI does similar things (tracking behavior, making
-          suggestions), Warzel's colleagues frame it as privacy invasion.
+        framing_notes: 'Mentions Nat Friedman using OpenClaw (autonomous AI agent) in a positive, wonder-tinged context —
+          the AI agent ordering him to drink water is framed as amusing and noteworthy, not surveillance or overreach. When
+          Meta''s AI does similar things (tracking behavior, making suggestions), Warzel''s colleagues frame it as privacy
+          invasion.
+
+          '
         source_url: https://muckrack.com/cwarzel/articles
-      coverage_gap_notes: >
-        Despite OpenAI's data practices, training on copyrighted content,
-        governance crises (board coup, safety team departures), and mass
-        layoffs, Warzel has published ZERO sustained adversarial coverage
-        of OpenAI comparable to his decade-long Meta beat. His OpenAI
-        coverage is analytical or features executive access. This is notable
-        because The Atlantic has an OpenAI content licensing deal, creating
-        a financial incentive for non-adversarial coverage.
+      coverage_gap_notes: 'Despite OpenAI''s data practices, training on copyrighted content, governance crises (board coup,
+        safety team departures), and mass layoffs, Warzel has published ZERO sustained adversarial coverage of OpenAI comparable
+        to his decade-long Meta beat. His OpenAI coverage is analytical or features executive access. This is notable because
+        The Atlantic has an OpenAI content licensing deal, creating a financial incentive for non-adversarial coverage.
+
+        '
     apple:
       tone: analytical_ecosystem_critique
       article_count_estimate: 2
       examples:
-      - title: "Apple Intelligence and Siri integration analysis (with Matteo Wong)"
-        date: "2024-06"
+      - title: Apple Intelligence and Siri integration analysis (with Matteo Wong)
+        date: 2024-06
         publication: atlantic
-        framing_notes: >
-          Analytical coverage of Apple Intelligence. Language: Apple "sees itself
-          as the central technological force mediating the overscheduled lives
-          of upwardly mobile achievers." This frames Apple as ASPIRATIONAL and
-          AMBITIOUS. The criticism is about ecosystem lock-in, not about privacy
-          violation, surveillance, or democratic harm. Compare: Meta's AI is
-          framed as causing democratic collapse and political violence.
+        framing_notes: 'Analytical coverage of Apple Intelligence. Language: Apple "sees itself as the central technological
+          force mediating the overscheduled lives of upwardly mobile achievers." This frames Apple as ASPIRATIONAL and AMBITIOUS.
+          The criticism is about ecosystem lock-in, not about privacy violation, surveillance, or democratic harm. Compare:
+          Meta''s AI is framed as causing democratic collapse and political violence.
+
+          '
         source_url: https://www.holo.mg/stream/the-atlantic-charlie-warzel-matteo-wong-chatgpt-siri-openai-apple-integration/
-      - title: "Flipping Off Phones / Month Offline"
-        date: "2026"
+      - title: Flipping Off Phones / Month Offline
+        date: '2026'
         publication: atlantic
-        framing_notes: >
-          Anti-smartphone piece where colleague swaps iPhone for flip phone.
-          Frames smartphone addiction as a human/cultural problem, NOT as
-          Apple's moral failing. No "Apple's Original Sin" framing. No
-          causal-blame language. The phone is harmful because of what it does
-          to attention, not because Apple designed it to be addictive (contrast
-          with Meta's platform architecture being labeled an "original sin").
+        framing_notes: 'Anti-smartphone piece where colleague swaps iPhone for flip phone. Frames smartphone addiction as
+          a human/cultural problem, NOT as Apple''s moral failing. No "Apple''s Original Sin" framing. No causal-blame language.
+          The phone is harmful because of what it does to attention, not because Apple designed it to be addictive (contrast
+          with Meta''s platform architecture being labeled an "original sin").
+
+          '
         source_url: https://muckrack.com/cwarzel/articles
-      coverage_gap_notes: >
-        Despite Apple's extensive data collection (App Tracking Transparency
-        data, Siri recordings, Apple Intelligence processing), Warzel has
-        published ZERO adversarial investigations of Apple's privacy claims.
-        Apple collects biometric data (Face ID), location data, health data,
-        and processes user messages through Apple Intelligence — practices
-        that, if performed by Meta, would trigger Warzel's "privacy struggles"
-        coverage. The absence correlates with The Atlantic's dual Apple
-        financial link: LPJ Trust ownership (~$17B AAPL) and Apple News+
-        ("most valuable syndication partner" per CGO Megha Garibaldi).
+      coverage_gap_notes: 'Despite Apple''s extensive data collection (App Tracking Transparency data, Siri recordings, Apple
+        Intelligence processing), Warzel has published ZERO adversarial investigations of Apple''s privacy claims. Apple collects
+        biometric data (Face ID), location data, health data, and processes user messages through Apple Intelligence — practices
+        that, if performed by Meta, would trigger Warzel''s "privacy struggles" coverage. The absence correlates with The
+        Atlantic''s dual Apple financial link: LPJ Trust ownership (~$17B AAPL) and Apple News+ ("most valuable syndication
+        partner" per CGO Megha Garibaldi).
+
+        '
     google:
       tone: narrative_analytical
       article_count_estimate: 2
       examples:
-      - title: "Behind the Curtain at Google (Galaxy Brain podcast)"
-        date: "2026"
+      - title: Behind the Curtain at Google (Galaxy Brain podcast)
+        date: '2026'
         publication: atlantic
-        framing_notes: >
-          Former Google employee interview. Claire Stapleton describes
-          executives as "benevolent kings" early on, with culture deteriorating
-          over time. Critical but through PERSONAL NARRATIVE framing — a human
-          story about disillusionment, not an investigative expose. No loaded
-          language ("original sin," "destroying democracy"). No causal-blame
-          framing. Warzel lets the interviewee tell her story rather than
-          imposing an adversarial frame.
+        framing_notes: 'Former Google employee interview. Claire Stapleton describes executives as "benevolent kings" early
+          on, with culture deteriorating over time. Critical but through PERSONAL NARRATIVE framing — a human story about
+          disillusionment, not an investigative expose. No loaded language ("original sin," "destroying democracy"). No causal-blame
+          framing. Warzel lets the interviewee tell her story rather than imposing an adversarial frame.
+
+          '
         source_url: https://muckrack.com/cwarzel/articles
-      - title: "Ask Jeeves co-creator on chatbots Microsoft and Google are building"
-        date: "2023-03"
+      - title: Ask Jeeves co-creator on chatbots Microsoft and Google are building
+        date: 2023-03
         publication: atlantic
-        framing_notes: >
-          Historical/analytical framing. Compares Ask Jeeves to modern
-          Google/Microsoft AI chatbots. Technology-as-evolution narrative,
-          not technology-as-threat narrative. No surveillance vocabulary,
-          no democracy-harm vocabulary.
+        framing_notes: 'Historical/analytical framing. Compares Ask Jeeves to modern Google/Microsoft AI chatbots. Technology-as-evolution
+          narrative, not technology-as-threat narrative. No surveillance vocabulary, no democracy-harm vocabulary.
+
+          '
         source_url: https://www.techmeme.com/230305/p7
-      coverage_gap_notes: >
-        Despite Google's massive data collection, antitrust violations
-        (DOJ case, EU fines), and AI safety concerns, Warzel has published
-        ZERO adversarial investigations of Google comparable to his Meta
-        coverage. His Google coverage uses narrative and analytical framing
-        rather than investigative-adversarial framing.
+      coverage_gap_notes: 'Despite Google''s massive data collection, antitrust violations (DOJ case, EU fines), and AI safety
+        concerns, Warzel has published ZERO adversarial investigations of Google comparable to his Meta coverage. His Google
+        coverage uses narrative and analytical framing rather than investigative-adversarial framing.
+
+        '
     elon_musk_x:
       tone: investigative_critical
       article_count_estimate: 5
       examples:
-      - title: "How Elon Musk Became More Powerful Than Ever"
-        date: "2026"
+      - title: How Elon Musk Became More Powerful Than Ever
+        date: '2026'
         publication: atlantic
-        framing_notes: >
-          Investigative and critical. Explores Musk's power across multiple
-          companies and political influence. More adversarial than Apple/Google
-          coverage but LESS sustained than Meta coverage. Warzel treats Musk
-          as a subject of power analysis, while treating Meta/Facebook as a
-          subject of moral condemnation.
+        framing_notes: 'Investigative and critical. Explores Musk''s power across multiple companies and political influence.
+          More adversarial than Apple/Google coverage but LESS sustained than Meta coverage. Warzel treats Musk as a subject
+          of power analysis, while treating Meta/Facebook as a subject of moral condemnation.
+
+          '
         source_url: https://muckrack.com/cwarzel/articles
-      - title: "What Is Twitter's Legacy, 20 Years Later?"
-        date: "2026-03"
+      - title: What Is Twitter's Legacy, 20 Years Later?
+        date: 2026-03
         publication: atlantic
-        framing_notes: >
-          Historical analysis with former Twitter executive Jason Goldman.
-          Critical of what Twitter/X has become but through historical/cultural
-          lens rather than the causal-blame lens applied to Facebook/Meta.
+        framing_notes: 'Historical analysis with former Twitter executive Jason Goldman. Critical of what Twitter/X has become
+          but through historical/cultural lens rather than the causal-blame lens applied to Facebook/Meta.
+
+          '
         source_url: https://muckrack.com/cwarzel/articles
     cross_entity_asymmetry_score: 0.82
-    asymmetry_notes: >
-      High asymmetry (0.82/1.0). Warzel's career is DEFINED by adversarial
-      Facebook/Meta coverage — his Mirror Award, his NYT Privacy Project tenure,
-      and his Galaxy Brain beat all center on treating Meta as fundamentally
-      harmful. In contrast, OpenAI gets executive access and analytical framing,
-      Apple gets ecosystem critique without moral condemnation, and Google gets
-      narrative-analytical treatment. The asymmetry is particularly notable because
-      of these financial correlation patterns:
-
-      1. VOCABULARY ASYMMETRY: Meta gets "original sin," "destroying democracy,"
-         "caused January 6th." OpenAI gets "technology of faith." Apple gets
-         "central technological force." Google gets "benevolent kings" (via
-         interviewee). The moral weight of language decreases dramatically as
-         financial relationships increase.
-
-      2. ACCESS ASYMMETRY: Warzel was GIVEN exclusive interview access to Sam
-         Altman (OpenAI CEO) and published it as a cooperative Q&A. He has NEVER
-         published an equivalent cooperative interview with Mark Zuckerberg or
-         any senior Meta leader. Meta is covered FROM THE OUTSIDE; OpenAI is
-         covered FROM THE INSIDE.
-
-      3. INVESTIGATION ASYMMETRY: Warzel has spent 10+ years investigating
-         Facebook/Meta. He has spent ZERO equivalent investigative effort on
-         OpenAI (despite board coup, safety team departures, copyright lawsuits),
-         Apple (despite data collection, App Store monopoly, labor conditions),
-         or Google (despite DOJ antitrust, surveillance advertising, YouTube
-         radicalization).
-
-      4. FINANCIAL INCENTIVE CORRELATION: The Atlantic has an OpenAI content deal,
-         dual Apple financial link (LPJ Trust ownership ~$17B AAPL + Apple News+
-         "most valuable syndication partner"), and ZERO Meta financial
-         relationships. Warzel's adversarial energy allocates perfectly with
-         this incentive structure: maximum adversarialism toward the company
-         that pays The Atlantic nothing, minimum adversarialism toward the
-         companies that provide revenue.
+    asymmetry_notes: "High asymmetry (0.82/1.0). Warzel's career is DEFINED by adversarial Facebook/Meta coverage — his Mirror\
+      \ Award, his NYT Privacy Project tenure, and his Galaxy Brain beat all center on treating Meta as fundamentally harmful.\
+      \ In contrast, OpenAI gets executive access and analytical framing, Apple gets ecosystem critique without moral condemnation,\
+      \ and Google gets narrative-analytical treatment. The asymmetry is particularly notable because of these financial correlation\
+      \ patterns:\n1. VOCABULARY ASYMMETRY: Meta gets \"original sin,\" \"destroying democracy,\"\n   \"caused January 6th.\"\
+      \ OpenAI gets \"technology of faith.\" Apple gets\n   \"central technological force.\" Google gets \"benevolent kings\"\
+      \ (via\n   interviewee). The moral weight of language decreases dramatically as\n   financial relationships increase.\n\
+      \n2. ACCESS ASYMMETRY: Warzel was GIVEN exclusive interview access to Sam\n   Altman (OpenAI CEO) and published it as\
+      \ a cooperative Q&A. He has NEVER\n   published an equivalent cooperative interview with Mark Zuckerberg or\n   any\
+      \ senior Meta leader. Meta is covered FROM THE OUTSIDE; OpenAI is\n   covered FROM THE INSIDE.\n\n3. INVESTIGATION ASYMMETRY:\
+      \ Warzel has spent 10+ years investigating\n   Facebook/Meta. He has spent ZERO equivalent investigative effort on\n\
+      \   OpenAI (despite board coup, safety team departures, copyright lawsuits),\n   Apple (despite data collection, App\
+      \ Store monopoly, labor conditions),\n   or Google (despite DOJ antitrust, surveillance advertising, YouTube\n   radicalization).\n\
+      \n4. FINANCIAL INCENTIVE CORRELATION: The Atlantic has an OpenAI content deal,\n   dual Apple financial link (LPJ Trust\
+      \ ownership ~$17B AAPL + Apple News+\n   \"most valuable syndication partner\"), and ZERO Meta financial\n   relationships.\
+      \ Warzel's adversarial energy allocates perfectly with\n   this incentive structure: maximum adversarialism toward the\
+      \ company\n   that pays The Atlantic nothing, minimum adversarialism toward the\n   companies that provide revenue.\n"
 - career:
   - beat: state politics, local government
     end: 2010-11
@@ -1191,39 +1195,41 @@ journalists:
   - https://www.platformer.news/
   competitor_coverage:
     mechanism_id: 24
-    mechanism_name: "Disclosure-as-Inoculation Paradox"
+    mechanism_name: Disclosure-as-Inoculation Paradox
     personal_conflicts:
       anthropic:
-        relationship: "fiancé is software engineer at Anthropic (started Jan 2025, engaged Feb 2026)"
-        disclosure_quality: "best-in-class independent — per-column disclosure, dedicated ethics page, email to new subscribers"
-        disclosure_limitation: "self-regulated — no editorial board, no ethics editor, no institutional verification"
-        coverage_framing: "admiration/enthusiasm — 'Claude Code believer,' 'rapture over Claude Opus 4.5,' 'credit for consequential stands'"
-        product_adoption: "personally built cnewton.org with Claude Code, wrote multiple positive columns about the experience"
-        pentagon_framing: "'Following: Anthropic vs. The Pentagon' (Feb 2026) framed Anthropic as principled defender vs. government overreach; compare Harvard Berkman Klein skeptical analysis (Sanders & Schneier, Mar 2026)"
+        relationship: fiancé is software engineer at Anthropic (started Jan 2025, engaged Feb 2026)
+        disclosure_quality: best-in-class independent — per-column disclosure, dedicated ethics page, email to new subscribers
+        disclosure_limitation: self-regulated — no editorial board, no ethics editor, no institutional verification
+        coverage_framing: admiration/enthusiasm — 'Claude Code believer,' 'rapture over Claude Opus 4.5,' 'credit for consequential
+          stands'
+        product_adoption: personally built cnewton.org with Claude Code, wrote multiple positive columns about the experience
+        pentagon_framing: '''Following: Anthropic vs. The Pentagon'' (Feb 2026) framed Anthropic as principled defender vs.
+          government overreach; compare Harvard Berkman Klein skeptical analysis (Sanders & Schneier, Mar 2026)'
         source_urls:
         - https://www.platformer.news/ethics/
         - https://en.wikipedia.org/wiki/Casey_Newton
         - https://cyber.harvard.edu/story/2026-03/dont-bet-pentagon-or-anthropic-acting-public-interest
       vox_media:
-        relationship: "stock options from 2013-2020 employment at The Verge (Vox Media)"
-        disclosure_quality: "disclosed but not per-link — only when writing about Vox/Verge as institutions"
+        relationship: stock options from 2013-2020 employment at The Verge (Vox Media)
+        disclosure_quality: disclosed but not per-link — only when writing about Vox/Verge as institutions
     meta_coverage:
-      framing: "accountability — scams, child safety, content moderation PTSD, '20-year mistake', design defects"
+      framing: accountability — scams, child safety, content moderation PTSD, '20-year mistake', design defects
       predates_anthropic: true
       predates_by_years: 6
-      notable_investigation: "$52M Facebook/Cognizant content moderation settlement (2019-2020)"
+      notable_investigation: $52M Facebook/Cognizant content moderation settlement (2019-2020)
       product_enthusiasm_columns: 0
     independence_transition:
-      date: "August 2026"
-      event: "Hard Fork ending; Newton + Kevin Roose launching independent AI media venture"
-      impact: "removes last institutional editorial oversight (NYT), leaving self-imposed disclosure as only check"
+      date: August 2026
+      event: Hard Fork ending; Newton + Kevin Roose launching independent AI media venture
+      impact: removes last institutional editorial oversight (NYT), leaving self-imposed disclosure as only check
       source_url: https://en.wikipedia.org/wiki/Casey_Newton
     legitimate_factors:
-    - "Meta accountability journalism predates Anthropic relationship by 6 years"
-    - "Disclosure exceeds industry standard for independent and institutional journalists"
-    - "Fiancé's engineering role is outside Newton's product/policy coverage focus"
-    - "Newton produces critical coverage of Substack, TikTok, X, Google — not uniformly soft"
-    - "Anthropic's Pentagon stand was genuinely newsworthy (federal judge ruled retaliation 'likely unlawful')"
+    - Meta accountability journalism predates Anthropic relationship by 6 years
+    - Disclosure exceeds industry standard for independent and institutional journalists
+    - Fiancé's engineering role is outside Newton's product/policy coverage focus
+    - Newton produces critical coverage of Substack, TikTok, X, Google — not uniformly soft
+    - Anthropic's Pentagon stand was genuinely newsworthy (federal judge ruled retaliation 'likely unlawful')
   education:
   - degree: BS
     field: Journalism
@@ -11498,46 +11504,44 @@ journalists:
     "Optimizer" newsletter. Most authoritative wearables reviewer in mainstream tech media. Meta Ray-Ban coverage spans product
     reviews and privacy/surveillance analysis. Migration from Gizmodo (declining G/O Media) to The Verge (well-resourced Vox/PMC)
     provides natural experiment for institutional framing effects. Not investigative — product reviewer with increasing editorial
-    voice on surveillance/privacy. Korean-American cultural context visible in Samsung/Korean tech coverage.
-    JULY 2026 KEY COVERAGE: (1) Jul 7 — broke the Meta LED tamper-proof update story at The Verge, reporting Meta will
-    disable the camera if the privacy LED is physically tampered with or destroyed. Story picked up by Techmeme (219 pts),
-    Gizmodo (citing "as noticed by the Verge''s Victoria Song"), PetaPixel, RoadToVR, 9to5Google, TheStreet, and 8+ other
-    outlets. This is the single most widely-cited original report on the Jul 7 Meta privacy update. (2) Her LED tamper-proof
-    article directly created a same-day juxtaposition narrative when FT''s Hannah Murphy published the "super sensing"
-    always-on prototype report Jul 8, producing a "defend the light / plan to bypass the light" contradiction frame
-    that TheStreet, TechTimes, and others explicitly weaponized. (3) Interviewed Alex Himel (Meta VP Wearables) for
-    RoadToVR''s Jul 7 piece — Himel told Song the privacy update was meant to follow the cheaper Meta Glasses launch.
-    (4) Vergecast guest host covering accessibility + smart glasses (low-vision community episode with Be My Eyes CEO
-    Mike Buckley and visually impaired reader Jason Valley). Also co-hosted Vergecast on Meta Ray-Ban Display with Mia Sato
-    answering "do smart glasses belong in the bedroom?" — a framing that normalizes the surveillance debate through
-    intimate personal scenarios. (5) TWiT appearance with Leo Laporte reviewing Meta Ray-Ban Display glasses after
-    international travel field testing. NARRATIVE ROLE: Victoria Song has become the single most influential journalist
-    in shaping the Meta wearables privacy narrative. Her Jul 7 story is the origin node for the entire "Meta defending
-    privacy while planning to abandon it" frame that dominated the Jul 7-12 news cycle. Not adversarial-investigative
-    — her framing power comes from product authority (13+ years) making privacy concerns land as credible rather than
-    activist. SOURCE NETWORK: Quotes Alex Himel (Meta VP Wearables) directly — has active working relationship with
-    Meta wearables PR.
+    voice on surveillance/privacy. Korean-American cultural context visible in Samsung/Korean tech coverage. JULY 2026 KEY
+    COVERAGE: (1) Jul 7 — broke the Meta LED tamper-proof update story at The Verge, reporting Meta will disable the camera
+    if the privacy LED is physically tampered with or destroyed. Story picked up by Techmeme (219 pts), Gizmodo (citing "as
+    noticed by the Verge''s Victoria Song"), PetaPixel, RoadToVR, 9to5Google, TheStreet, and 8+ other outlets. This is the
+    single most widely-cited original report on the Jul 7 Meta privacy update. (2) Her LED tamper-proof article directly created
+    a same-day juxtaposition narrative when FT''s Hannah Murphy published the "super sensing" always-on prototype report Jul
+    8, producing a "defend the light / plan to bypass the light" contradiction frame that TheStreet, TechTimes, and others
+    explicitly weaponized. (3) Interviewed Alex Himel (Meta VP Wearables) for RoadToVR''s Jul 7 piece — Himel told Song the
+    privacy update was meant to follow the cheaper Meta Glasses launch. (4) Vergecast guest host covering accessibility +
+    smart glasses (low-vision community episode with Be My Eyes CEO Mike Buckley and visually impaired reader Jason Valley).
+    Also co-hosted Vergecast on Meta Ray-Ban Display with Mia Sato answering "do smart glasses belong in the bedroom?" — a
+    framing that normalizes the surveillance debate through intimate personal scenarios. (5) TWiT appearance with Leo Laporte
+    reviewing Meta Ray-Ban Display glasses after international travel field testing. NARRATIVE ROLE: Victoria Song has become
+    the single most influential journalist in shaping the Meta wearables privacy narrative. Her Jul 7 story is the origin
+    node for the entire "Meta defending privacy while planning to abandon it" frame that dominated the Jul 7-12 news cycle.
+    Not adversarial-investigative — her framing power comes from product authority (13+ years) making privacy concerns land
+    as credible rather than activist. SOURCE NETWORK: Quotes Alex Himel (Meta VP Wearables) directly — has active working
+    relationship with Meta wearables PR.
 
-    JULY 17-31 COVERAGE UPDATE: (6) Jul 20 — "Leaning into ''pervert glasses'' sure is a choice" — short editorial
-    commentary on Leonardo Del Vecchio (President of Ray-Ban, CSO at EssilorLuxottica) posting Meta glasses content to his
-    Instagram story. Significant because Song frames a glasses-partner executive''s social media post through the "pervert
-    glasses" lens — applying the surveillance backlash frame even to legitimate marketing from the manufacturing partner.
-    (7) "I spy" (early-mid Jul) — longform essay using Netflix''s "A Man on the Inside" (Ted Danson) to illustrate the
-    cultural problem with smart glasses. Frame: Hollywood has "inadvertently" shown why glasses are culturally toxic by
-    depicting them as a private investigation tool. Notable for embedding the surveillance critique in entertainment
-    analysis rather than tech review — reaches different audience segment. References NYT and WIRED investigations as
-    reigniting debate. Fan-base pushback noted: accessibility use cases, family video, pet video. (8) "With smart glasses,
-    Meta holds all the cards but fails to play them well" (late Jul) — her most comprehensive wearables narrative piece.
-    Opens with Everyone Hates Elon (EHE) guerrilla campaign across NYC, London, and DC: "the biggest advancement in pervert
-    technology since the trenchcoat" and Kylie Jenner face replaced with "mass surveillance predator glasses." This article
-    represents a NARRATIVE ESCALATION: Song moves from product-review-with-privacy-concerns to explicit framing of the
-    entire Meta wearables strategy as a failure of PR positioning. COORDINATION SIGNAL: Song''s article cites the EHE
-    guerrilla campaign as her opening frame — the same campaign Hyperallergic (Jul 14), PetaPixel (Jul 23), Engadget,
-    Fstoppers, and The Times (Jul 26) all covered. This creates a citation cascade where activist street art →
-    arts/photography press → mainstream tech press → Victoria Song (The Verge, highest-authority wearables voice). The
-    cascade amplifies an activist group''s framing through the credibility of a senior product reviewer. Not evidence of
-    coordination — more likely organic amplification through shared news feeds (Techmeme, Twitter/X, Bluesky). But the
-    effect is identical: activist framing reaches mainstream tech audience through the most credible wearables journalist
+    JULY 17-31 COVERAGE UPDATE: (6) Jul 20 — "Leaning into ''pervert glasses'' sure is a choice" — short editorial commentary
+    on Leonardo Del Vecchio (President of Ray-Ban, CSO at EssilorLuxottica) posting Meta glasses content to his Instagram
+    story. Significant because Song frames a glasses-partner executive''s social media post through the "pervert glasses"
+    lens — applying the surveillance backlash frame even to legitimate marketing from the manufacturing partner. (7) "I spy"
+    (early-mid Jul) — longform essay using Netflix''s "A Man on the Inside" (Ted Danson) to illustrate the cultural problem
+    with smart glasses. Frame: Hollywood has "inadvertently" shown why glasses are culturally toxic by depicting them as a
+    private investigation tool. Notable for embedding the surveillance critique in entertainment analysis rather than tech
+    review — reaches different audience segment. References NYT and WIRED investigations as reigniting debate. Fan-base pushback
+    noted: accessibility use cases, family video, pet video. (8) "With smart glasses, Meta holds all the cards but fails to
+    play them well" (late Jul) — her most comprehensive wearables narrative piece. Opens with Everyone Hates Elon (EHE) guerrilla
+    campaign across NYC, London, and DC: "the biggest advancement in pervert technology since the trenchcoat" and Kylie Jenner
+    face replaced with "mass surveillance predator glasses." This article represents a NARRATIVE ESCALATION: Song moves from
+    product-review-with-privacy-concerns to explicit framing of the entire Meta wearables strategy as a failure of PR positioning.
+    COORDINATION SIGNAL: Song''s article cites the EHE guerrilla campaign as her opening frame — the same campaign Hyperallergic
+    (Jul 14), PetaPixel (Jul 23), Engadget, Fstoppers, and The Times (Jul 26) all covered. This creates a citation cascade
+    where activist street art → arts/photography press → mainstream tech press → Victoria Song (The Verge, highest-authority
+    wearables voice). The cascade amplifies an activist group''s framing through the credibility of a senior product reviewer.
+    Not evidence of coordination — more likely organic amplification through shared news feeds (Techmeme, Twitter/X, Bluesky).
+    But the effect is identical: activist framing reaches mainstream tech audience through the most credible wearables journalist
     in the industry.
 
     '
@@ -17764,22 +17768,37 @@ journalists:
     publication: financial-times
     role: world_news_desk
     start: '2015'
-    notes: 'Started at FT on world news desk. Data journalism focus. Earlier bylines at Reuters, Bloomberg, The Independent, and The Evening Standard before joining FT full-time.'
+    notes: Started at FT on world news desk. Data journalism focus. Earlier bylines at Reuters, Bloomberg, The Independent,
+      and The Evening Standard before joining FT full-time.
   - beat: financial services, fintech, crypto, online trading, market structure
     end: '2019'
     publication: financial-times
     role: reporter
     start: '2016'
-    notes: 'Covered financial services from FT London office. Reported on online trading, stockbroking, market structure, and emerging crypto assets. Won MHP 30 under 30 To Watch: Young Journalists of the Year 2018.'
+    notes: 'Covered financial services from FT London office. Reported on online trading, stockbroking, market structure,
+      and emerging crypto assets. Won MHP 30 under 30 To Watch: Young Journalists of the Year 2018.'
   - beat: Meta, social media, AI, AR/VR, disinformation, cyber security, election security
     end: present
     publication: financial-times
     role: tech_correspondent
     start: '2019'
-    notes: 'Moved to San Francisco ~2019 to become FT Facebook/Meta beat reporter, replacing Hannah Kuchler (who moved to biotech/pharma). Covers Meta, X/Twitter, TikTok, AI, metaverse, disinformation, cyber/election security. Channel 4 documentary "Billionaires" (Zuckerberg focus). FT Tech Tonic podcast contributor. FT Video documentary maker. BBC live broadcast appearances. Prolific source-driven scoops: Meta equity award cuts (Feb 2026), Vishal Shah metaverse→AI PM move, Meta AI glasses continuous recording, Alexandr Wang/Muse Spark model, Meta agentic tools, Oversight Board free-speech tensions (Jan 2026), "Zuck Bucks" virtual currency plans (2022), Meta NFT/creator monetization (2022), Trump ban deliberations (2023). One of the most productive and well-sourced Meta reporters across all tracked publications.'
+    notes: 'Moved to San Francisco ~2019 to become FT Facebook/Meta beat reporter, replacing Hannah Kuchler (who moved to
+      biotech/pharma). Covers Meta, X/Twitter, TikTok, AI, metaverse, disinformation, cyber/election security. Channel 4 documentary
+      "Billionaires" (Zuckerberg focus). FT Tech Tonic podcast contributor. FT Video documentary maker. BBC live broadcast
+      appearances. Prolific source-driven scoops: Meta equity award cuts (Feb 2026), Vishal Shah metaverse→AI PM move, Meta
+      AI glasses continuous recording, Alexandr Wang/Muse Spark model, Meta agentic tools, Oversight Board free-speech tensions
+      (Jan 2026), "Zuck Bucks" virtual currency plans (2022), Meta NFT/creator monetization (2022), Trump ban deliberations
+      (2023). One of the most productive and well-sourced Meta reporters across all tracked publications.'
   multi_publication: false
   name: Hannah Murphy
-  notes: 'FT tech correspondent, San Francisco. Primary Meta beat reporter since ~2019. Oxford BA Hons, City University London MA Financial Journalism. MHP 30 under 30 Young Journalists of the Year 2018. Previous bylines: Reuters, Bloomberg, The Independent, The Evening Standard. Moderates tech events/panels. Creates FT Video documentaries. Appeared on BBC. Channel 4 "Billionaires" documentary on Zuckerberg. Her FT career is entirely single-publication (FT since 2015) — not a multi-publication migration candidate for DiD analysis, but extremely high-value as Meta beat primary. FT has NO AI licensing deals with Meta competitors (unlike Wired/Condé Nast), making her coverage a useful structural comparator: if her framing tracks Wired/WIRED on the same stories, it suggests industry-wide posture rather than conflict-driven bias. If it diverges, that difference isolates the Condé Nast revenue conflict effect.'
+  notes: 'FT tech correspondent, San Francisco. Primary Meta beat reporter since ~2019. Oxford BA Hons, City University London
+    MA Financial Journalism. MHP 30 under 30 Young Journalists of the Year 2018. Previous bylines: Reuters, Bloomberg, The
+    Independent, The Evening Standard. Moderates tech events/panels. Creates FT Video documentaries. Appeared on BBC. Channel
+    4 "Billionaires" documentary on Zuckerberg. Her FT career is entirely single-publication (FT since 2015) — not a multi-publication
+    migration candidate for DiD analysis, but extremely high-value as Meta beat primary. FT has NO AI licensing deals with
+    Meta competitors (unlike Wired/Condé Nast), making her coverage a useful structural comparator: if her framing tracks
+    Wired/WIRED on the same stories, it suggests industry-wide posture rather than conflict-driven bias. If it diverges, that
+    difference isolates the Condé Nast revenue conflict effect.'
   source_urls:
   - https://me.sh/profile/hannahmurphyftcom
   - https://rio.websummit.com/speakers/hannah-murphy
@@ -17793,15 +17812,14 @@ journalists:
     field: Financial Journalism
     institution: City, University of London
     source_url: https://me.sh/profile/hannahmurphyftcom
-
 - career:
   - beat: consumer technology, gadgets, smartphones
     end: '2018'
     event_type: hired
     notes: 'Senior Tech Correspondent at Mashable. ~6 year tenure. Led consumer tech coverage. Built reputation for hands-on
       product reviews and photography-driven gadget journalism. Covered smartphones, laptops, gaming, cameras. Known for sharp
-      visual review style with original product photography. INSTITUTIONAL CONTEXT: Mashable under Pete Cashmore was
-      viral-social-first media before pivoting to entertainment/commerce. Wong left as Mashable''s tech coverage declined.'
+      visual review style with original product photography. INSTITUTIONAL CONTEXT: Mashable under Pete Cashmore was viral-social-first
+      media before pivoting to entertainment/commerce. Wong left as Mashable''s tech coverage declined.'
     publication: mashable
     role: senior_correspondent
     source_url: https://muckrack.com/raymond-wong
@@ -17809,11 +17827,11 @@ journalists:
   - beat: consumer tech reviews, smartphones, gaming, design
     end: '2022'
     event_type: hired
-    notes: 'Founding editor of Input Magazine (Bustle Digital Group), later became Deputy Editor of Reviews & Guides at
-      Inverse (also BDG). Led tech reviews, guides, and gaming verticals. Known investigation: Samsung Galaxy S21 Ultra
-      AI moon photo manipulation story, which influenced Samsung''s product response. Also contributed to GearJunkie.
-      INSTITUTIONAL CONTEXT: BDG acquired Input/Inverse — Wong was founding editorial voice at Input, a rare consumer-tech
-      vertical inside a lifestyle media company. BDG shut down Input in 2023, triggering Wong''s departure.'
+    notes: 'Founding editor of Input Magazine (Bustle Digital Group), later became Deputy Editor of Reviews & Guides at Inverse
+      (also BDG). Led tech reviews, guides, and gaming verticals. Known investigation: Samsung Galaxy S21 Ultra AI moon photo
+      manipulation story, which influenced Samsung''s product response. Also contributed to GearJunkie. INSTITUTIONAL CONTEXT:
+      BDG acquired Input/Inverse — Wong was founding editorial voice at Input, a rare consumer-tech vertical inside a lifestyle
+      media company. BDG shut down Input in 2023, triggering Wong''s departure.'
     publication: inverse
     role: deputy_editor
     source_url: https://nc.inverse.com/input/profile/raymond-wong-18812870
@@ -17821,8 +17839,8 @@ journalists:
   - beat: freelance consumer tech reviews
     end: 2025-04
     event_type: freelance
-    notes: 'Freelance tech journalist for ~9 months after BDG/Input shutdown. Contributed to GearJunkie and other outlets.
-      Maintained consumer tech review expertise during interstitial period.'
+    notes: Freelance tech journalist for ~9 months after BDG/Input shutdown. Contributed to GearJunkie and other outlets.
+      Maintained consumer tech review expertise during interstitial period.
     publication: freelance
     role: freelancer
     source_url: https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
@@ -17830,19 +17848,18 @@ journalists:
   - beat: consumer tech, smart glasses, wearables, smartphones, foldables, gaming
     event_type: hired
     notes: 'Senior Editor, Consumer Tech at Gizmodo (Gizmodo Media Group / G/O Media). Rebooting and rebuilding the consumer
-      tech section. PRIMARY COVERAGE: Meta Ray-Ban smart glasses (product reviews, privacy analysis, market commentary),
-      Samsung Galaxy Unpacked events, Apple WWDC, Google Pixel, smart glasses bubble/market analysis. KEY ARTICLES:
-      "We''re Already Barrelling Toward a Smart Glasses Bubble" (Nov 2025), "Nobody Seems to Agree on Smart Glasses" (Dec 2025),
-      "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (Jul 30, 2026 — analyzing EssilorLuxottica earnings vs
-      privacy backlash). FRAMING ANALYSIS: Wong occupies a unique position — product-reviewer with increasing editorial
-      commentary on privacy/surveillance tensions. His framing is notably balanced: acknowledges both market growth AND
-      privacy concerns without pure advocacy in either direction. His photography credits appear on Gizmodo''s smart glasses
-      coverage (''© Raymond Wong / Gizmodo''), indicating he does his own product photography — a consumer-reviewer marker.
-      WEARABLES NARRATIVE SIGNIFICANCE: As Gizmodo''s primary smart glasses reviewer, his framing choices determine how
-      the largest remaining G/O Media tech property positions the wearables narrative. Post-Victoria Song departure from
-      Gizmodo to Verge, Wong is the institutional replacement for wearables authority at Gizmodo. His Jul 30 2026 article
-      is the most recent comprehensive smart glasses market piece, notable for acknowledging revenue doubling while also
-      cataloging the full privacy incident history.'
+      tech section. PRIMARY COVERAGE: Meta Ray-Ban smart glasses (product reviews, privacy analysis, market commentary), Samsung
+      Galaxy Unpacked events, Apple WWDC, Google Pixel, smart glasses bubble/market analysis. KEY ARTICLES: "We''re Already
+      Barrelling Toward a Smart Glasses Bubble" (Nov 2025), "Nobody Seems to Agree on Smart Glasses" (Dec 2025), "Smart Glasses
+      Are a Hit Even as Privacy Concerns Pile Up" (Jul 30, 2026 — analyzing EssilorLuxottica earnings vs privacy backlash).
+      FRAMING ANALYSIS: Wong occupies a unique position — product-reviewer with increasing editorial commentary on privacy/surveillance
+      tensions. His framing is notably balanced: acknowledges both market growth AND privacy concerns without pure advocacy
+      in either direction. His photography credits appear on Gizmodo''s smart glasses coverage (''© Raymond Wong / Gizmodo''),
+      indicating he does his own product photography — a consumer-reviewer marker. WEARABLES NARRATIVE SIGNIFICANCE: As Gizmodo''s
+      primary smart glasses reviewer, his framing choices determine how the largest remaining G/O Media tech property positions
+      the wearables narrative. Post-Victoria Song departure from Gizmodo to Verge, Wong is the institutional replacement for
+      wearables authority at Gizmodo. His Jul 30 2026 article is the most recent comprehensive smart glasses market piece,
+      notable for acknowledging revenue doubling while also cataloging the full privacy incident history.'
     publication: gizmodo
     role: senior_editor
     source_url: https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
@@ -17857,13 +17874,12 @@ journalists:
   name: Raymond Wong
   notes: 'Key migration: Mashable → Input/Inverse (BDG) → freelance → Gizmodo. Consumer tech reviewer and smart glasses beat
     reporter with 14+ years experience. Hunter College graduate (NYC). Known for high-quality original product photography.
-    Samsung AI moon photo investigation demonstrated investigative capability beyond pure product reviewing.
-    MIGRATION SIGNIFICANCE: Mashable → Inverse/Input → Gizmodo represents lateral moves within mid-tier consumer tech media,
-    all product-review focused. No migration to prestige investigative outlet. This positions him as a consistent product
-    reviewer whose framing reflects consumer-advocate perspective rather than investigative-adversarial posture.
-    WEARABLES BEAT ROLE: Gizmodo''s primary smart glasses/wearables voice since April 2025. His coverage directly follows
-    Victoria Song''s departure from Gizmodo to The Verge in 2022 — he fills the institutional gap she left.
-    Twitter/X: @raywongy. Email: ray.wong@gizmodo.com.'
+    Samsung AI moon photo investigation demonstrated investigative capability beyond pure product reviewing. MIGRATION SIGNIFICANCE:
+    Mashable → Inverse/Input → Gizmodo represents lateral moves within mid-tier consumer tech media, all product-review focused.
+    No migration to prestige investigative outlet. This positions him as a consistent product reviewer whose framing reflects
+    consumer-advocate perspective rather than investigative-adversarial posture. WEARABLES BEAT ROLE: Gizmodo''s primary smart
+    glasses/wearables voice since April 2025. His coverage directly follows Victoria Song''s departure from Gizmodo to The
+    Verge in 2022 — he fills the institutional gap she left. Twitter/X: @raywongy. Email: ray.wong@gizmodo.com.'
   source_urls:
   - https://muckrack.com/raymond-wong
   - https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
@@ -17879,8 +17895,8 @@ journalists:
   - beat: consumer tech, gadgets
     end: '2013'
     event_type: hired
-    notes: 'Staff writer at Tom''s Guide and Laptop Mag (both Purch/Future plc properties). Entry-level tech journalism
-      after SUNY Purchase BA (2012). Built initial product review skills in structured review-format environment.'
+    notes: Staff writer at Tom's Guide and Laptop Mag (both Purch/Future plc properties). Entry-level tech journalism after
+      SUNY Purchase BA (2012). Built initial product review skills in structured review-format environment.
     publication: toms-guide
     role: staff_writer
     source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
@@ -17888,8 +17904,8 @@ journalists:
   - beat: technology news
     end: '2015'
     event_type: hired
-    notes: 'Tech reporter at International Business Times (IBT Media). Covered consumer tech news and product announcements.
-      Also contributed to Digital Trends as freelancer during this period.'
+    notes: Tech reporter at International Business Times (IBT Media). Covered consumer tech news and product announcements.
+      Also contributed to Digital Trends as freelancer during this period.
     publication: international-business-times
     role: tech_reporter
     source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
@@ -17906,9 +17922,9 @@ journalists:
   - beat: Apple, consumer tech
     end: '2021'
     event_type: hired
-    notes: 'Senior Tech Correspondent at Business Insider/Insider. Primary Apple beat reporter. Covered broader consumer
-      tech industry. INSTITUTIONAL CONTEXT: Business Insider (Axel Springer) emphasizes accessible tech coverage for
-      business-curious general audience. Apple beat experience shapes product-launch framing instincts.'
+    notes: 'Senior Tech Correspondent at Business Insider/Insider. Primary Apple beat reporter. Covered broader consumer tech
+      industry. INSTITUTIONAL CONTEXT: Business Insider (Axel Springer) emphasizes accessible tech coverage for business-curious
+      general audience. Apple beat experience shapes product-launch framing instincts.'
     publication: business-insider
     role: senior_correspondent
     source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
@@ -17916,9 +17932,9 @@ journalists:
   - beat: mobile devices, consumer tech
     end: '2025'
     event_type: hired
-    notes: 'Senior Editor at CNET covering mobile devices. CNET is Red Ventures property. 4-year tenure focused on smartphones,
-      tablets, and emerging mobile tech. CNET''s institutional style emphasizes structured product reviews with consumer
-      buying-guide framing.'
+    notes: Senior Editor at CNET covering mobile devices. CNET is Red Ventures property. 4-year tenure focused on smartphones,
+      tablets, and emerging mobile tech. CNET's institutional style emphasizes structured product reviews with consumer buying-guide
+      framing.
     publication: cnet
     role: senior_editor
     source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
@@ -17926,19 +17942,18 @@ journalists:
   - beat: technology, AI devices, wearables, smartphones, Apple, Samsung
     event_type: hired
     notes: 'Tech Editor at CNN Business. Covers all consumer technology including AI wearables, smart glasses, smartphones,
-      and Big Tech product launches. KEY ARTICLE: "AI devices that see, listen and record: Are we ready for the
-      post-smartphone world?" (Jul 26, 2026) — multi-month hands-on review of Meta Ray-Ban glasses, Amazon Bee Pioneer
-      wristband, and Plaud Notepin S. Article is balanced but skepticism-leaning: acknowledges utility while emphasizing
-      social awkwardness and privacy concerns. Notable for first-person testing methodology across months and multiple
-      contexts (work, travel, social gatherings). FRAMING ANALYSIS: Compared to Gizmodo/WIRED adversarial approach,
-      Eadicicco''s CNN framing is experiential and consumer-narrative: "I tried living in this future" rather than
-      "here is what Big Tech is doing wrong." This personal-experience framing is characteristic of CNN Business tech
-      coverage — makes abstract privacy concerns concrete through anecdote. WEARABLES NARRATIVE SIGNIFICANCE: CNN is
-      the largest mainstream news outlet to run a comprehensive AI wearables privacy piece in late July 2026. The
-      article positions smart glasses as part of a broader "AI devices that observe" category alongside wristbands
-      and clip-on recorders — a narrative frame that broadens the privacy concern beyond just Meta. Quotes Lorde:
-      "F**k the glasses." Includes Meta spokesperson response (Dina El-Kassaby). Includes EPIC''s Calli Schroeder
-      and Santa Clara University''s Irina Raicu as expert sources.'
+      and Big Tech product launches. KEY ARTICLE: "AI devices that see, listen and record: Are we ready for the post-smartphone
+      world?" (Jul 26, 2026) — multi-month hands-on review of Meta Ray-Ban glasses, Amazon Bee Pioneer wristband, and Plaud
+      Notepin S. Article is balanced but skepticism-leaning: acknowledges utility while emphasizing social awkwardness and
+      privacy concerns. Notable for first-person testing methodology across months and multiple contexts (work, travel, social
+      gatherings). FRAMING ANALYSIS: Compared to Gizmodo/WIRED adversarial approach, Eadicicco''s CNN framing is experiential
+      and consumer-narrative: "I tried living in this future" rather than "here is what Big Tech is doing wrong." This personal-experience
+      framing is characteristic of CNN Business tech coverage — makes abstract privacy concerns concrete through anecdote.
+      WEARABLES NARRATIVE SIGNIFICANCE: CNN is the largest mainstream news outlet to run a comprehensive AI wearables privacy
+      piece in late July 2026. The article positions smart glasses as part of a broader "AI devices that observe" category
+      alongside wristbands and clip-on recorders — a narrative frame that broadens the privacy concern beyond just Meta. Quotes
+      Lorde: "F**k the glasses." Includes Meta spokesperson response (Dina El-Kassaby). Includes EPIC''s Calli Schroeder and
+      Santa Clara University''s Irina Raicu as expert sources.'
     publication: cnn-business
     role: tech_editor
     source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
@@ -17952,19 +17967,18 @@ journalists:
   multi_publication: true
   name: Lisa Eadicicco
   notes: 'Key migration: Tom''s Guide → IBTimes → TIME → Business Insider → CNET → CNN Business. Consumer tech journalist
-    with 14+ years experience, now serving as CNN Business'' tech editor. SUNY Purchase BA Journalism (2012). Based in
-    New York. Migration pattern shows consistent upward trajectory through consumer tech media hierarchy: review-focused
-    (Tom''s Guide, CNET) → business-tech hybrid (BI, CNN Business). Her move to CNN Business (2025) is significant for
-    wearables narrative analysis because CNN reaches the broadest general audience of any outlet covering smart glasses.
-    Her Jul 26 2026 wearables piece reached CNN''s full distribution network including CNN en Español translation,
-    indicating editorial investment in the wearables-privacy story.
-    ANALYTICAL VALUE: (1) 6-publication trajectory provides richest non-migration-clustered career path — each move
-    was a genuine career advancement, not lateral reshuffling within the same media group. (2) Her Apple beat experience
-    at BI gives her a specific competitor lens on Meta wearables — she evaluates Meta glasses against Apple''s potential
-    smart glasses entry. (3) CNN Business position means her framing choices reach the widest general audience of any
-    wearables journalist tracked. (4) Personal-testing methodology (wearing devices for months) produces first-person
-    narrative frames that are more persuasive to general audiences than investigative-adversarial approaches.
-    Email: Via CNN Business. Twitter/X: @lisaeadicicco.'
+    with 14+ years experience, now serving as CNN Business'' tech editor. SUNY Purchase BA Journalism (2012). Based in New
+    York. Migration pattern shows consistent upward trajectory through consumer tech media hierarchy: review-focused (Tom''s
+    Guide, CNET) → business-tech hybrid (BI, CNN Business). Her move to CNN Business (2025) is significant for wearables narrative
+    analysis because CNN reaches the broadest general audience of any outlet covering smart glasses. Her Jul 26 2026 wearables
+    piece reached CNN''s full distribution network including CNN en Español translation, indicating editorial investment in
+    the wearables-privacy story. ANALYTICAL VALUE: (1) 6-publication trajectory provides richest non-migration-clustered career
+    path — each move was a genuine career advancement, not lateral reshuffling within the same media group. (2) Her Apple
+    beat experience at BI gives her a specific competitor lens on Meta wearables — she evaluates Meta glasses against Apple''s
+    potential smart glasses entry. (3) CNN Business position means her framing choices reach the widest general audience of
+    any wearables journalist tracked. (4) Personal-testing methodology (wearing devices for months) produces first-person
+    narrative frames that are more persuasive to general audiences than investigative-adversarial approaches. Email: Via CNN
+    Business. Twitter/X: @lisaeadicicco.'
   source_urls:
   - https://muckrack.com/lisa-eadicicco
   - https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
@@ -17981,8 +17995,8 @@ journalists:
   - beat: Android, Google, consumer tech
     end: '2016'
     event_type: founded
-    notes: 'Co-founded an independent tech publication in 2013. Learned writing, product photography, and videography
-      skills. No formal journalism training — self-taught through independent publishing. Based in Winston-Salem, NC.'
+    notes: Co-founded an independent tech publication in 2013. Learned writing, product photography, and videography skills.
+      No formal journalism training — self-taught through independent publishing. Based in Winston-Salem, NC.
     publication: independent-tech-blog
     role: co_founder
     source_url: https://9to5google.com/ninetofive_staff/ben-schoon/
@@ -17990,31 +18004,30 @@ journalists:
   - beat: Android, Google Pixel, Samsung Galaxy, Android TV, Chromecast, smart glasses, wearables
     event_type: hired
     notes: 'Senior Editor at 9to5Google (925 LLC, Seth Weintraub''s independently owned network). One of the site''s primary
-      news writers since 2016, now ~10-year tenure. 14,500+ articles. Extremely prolific — average 4-5 articles per day.
-      KEY BEATS: Google Pixel devices, Samsung Galaxy, Android TV/Google TV, Chromecast, and increasingly Meta/Google smart
-      glasses. SCOOPS: First in-person Pixel 4 photo leak (2019), Pixel Recorder/Themes apps leaked months ahead of launch,
-      first to report Pixel foldable and $49 Chromecast with Google TV price point. META WEARABLES COVERAGE (Jul 2026):
-      (1) Jul 7 — "Meta Ray-Ban glasses now disable the camera if privacy light breaks" (aggregated Victoria Song''s Verge
-      report, added original analysis of Gen 1 vs Gen 2 enforcement gap). (2) Jul 9 — "Meta developing always-on glasses
-      with less-active privacy light" (aggregated FT/Hannah Murphy report, original editorial noting the contradiction
-      with Jul 7 LED defense). (3) Jun 1 — "Meta reportedly has several new smart glasses coming" (aggregated The
-      Information report on Modelo/Luna/RBM2 Refresh/Mojito VIP/Artemis/SSG codenames). FRAMING ANALYSIS: Ben''s coverage
-      is aggregation-editorial — he takes original reports from The Verge, FT, The Information and adds his own editorial
-      color plus Android ecosystem context. Not original investigative. His framing tends to be skepticism-forward on
-      privacy but product-enthusiast on features — typical of the 9to5 network house style. The "Needless to say, there
-      are a lot of problems with that idea, including privacy (you cannot and should not be recording all the time)"
-      editorial voice is characteristic. PUBLICATION CONTEXT: 9to5Google is part of Seth Weintraub''s 925 LLC network
-      (9to5Mac, 9to5Google, 9to5Toys, Electrek, DroneDJ, SpaceExplored — all wholly owned by Weintraub). The network
-      is independently owned (no VC, no corporate media parent), funded primarily by affiliate revenue + display ads.
-      This independence means no Condé Nast/Advance Publications/Vox Media institutional pressure, but the affiliate
-      revenue model creates incentive alignment with product adoption rather than adversarial coverage. The network''s
-      house style — "If we review something we don''t like or find interesting, we usually won''t post it" — explicitly
-      optimizes for positive-product framing. WEARABLES NARRATIVE ROLE: Secondary amplifier — takes original reports
-      from prestige outlets (Verge, FT, WSJ) and broadcasts them to the Android enthusiast audience (7.5M monthly
-      uniques). His Jul 7 and Jul 9 articles are the primary vector by which the "LED defense vs always-on contradiction"
+      news writers since 2016, now ~10-year tenure. 14,500+ articles. Extremely prolific — average 4-5 articles per day. KEY
+      BEATS: Google Pixel devices, Samsung Galaxy, Android TV/Google TV, Chromecast, and increasingly Meta/Google smart glasses.
+      SCOOPS: First in-person Pixel 4 photo leak (2019), Pixel Recorder/Themes apps leaked months ahead of launch, first to
+      report Pixel foldable and $49 Chromecast with Google TV price point. META WEARABLES COVERAGE (Jul 2026): (1) Jul 7 —
+      "Meta Ray-Ban glasses now disable the camera if privacy light breaks" (aggregated Victoria Song''s Verge report, added
+      original analysis of Gen 1 vs Gen 2 enforcement gap). (2) Jul 9 — "Meta developing always-on glasses with less-active
+      privacy light" (aggregated FT/Hannah Murphy report, original editorial noting the contradiction with Jul 7 LED defense).
+      (3) Jun 1 — "Meta reportedly has several new smart glasses coming" (aggregated The Information report on Modelo/Luna/RBM2
+      Refresh/Mojito VIP/Artemis/SSG codenames). FRAMING ANALYSIS: Ben''s coverage is aggregation-editorial — he takes original
+      reports from The Verge, FT, The Information and adds his own editorial color plus Android ecosystem context. Not original
+      investigative. His framing tends to be skepticism-forward on privacy but product-enthusiast on features — typical of
+      the 9to5 network house style. The "Needless to say, there are a lot of problems with that idea, including privacy (you
+      cannot and should not be recording all the time)" editorial voice is characteristic. PUBLICATION CONTEXT: 9to5Google
+      is part of Seth Weintraub''s 925 LLC network (9to5Mac, 9to5Google, 9to5Toys, Electrek, DroneDJ, SpaceExplored — all
+      wholly owned by Weintraub). The network is independently owned (no VC, no corporate media parent), funded primarily
+      by affiliate revenue + display ads. This independence means no Condé Nast/Advance Publications/Vox Media institutional
+      pressure, but the affiliate revenue model creates incentive alignment with product adoption rather than adversarial
+      coverage. The network''s house style — "If we review something we don''t like or find interesting, we usually won''t
+      post it" — explicitly optimizes for positive-product framing. WEARABLES NARRATIVE ROLE: Secondary amplifier — takes
+      original reports from prestige outlets (Verge, FT, WSJ) and broadcasts them to the Android enthusiast audience (7.5M
+      monthly uniques). His Jul 7 and Jul 9 articles are the primary vector by which the "LED defense vs always-on contradiction"
       narrative reached the Android/Google community. He is NOT a narrative originator for Meta wearables privacy coverage
-      but his amplification reach and editorial voice shape how the Android ecosystem interprets these stories.
-      Twitter/X: @nexusben. Email: schoon@9to5mac.com. Encrypted: benschoon@protonmail.com.'
+      but his amplification reach and editorial voice shape how the Android ecosystem interprets these stories. Twitter/X:
+      @nexusben. Email: schoon@9to5mac.com. Encrypted: benschoon@protonmail.com.'
     publication: 9to5google
     role: senior_editor
     source_url: https://9to5google.com/ninetofive_staff/ben-schoon/
@@ -18029,20 +18042,19 @@ journalists:
   - chromecast
   multi_publication: false
   name: Ben Schoon
-  notes: 'Key career: independent blog → 9to5Google (10-year tenure). Self-taught tech journalist with 14,500+ articles.
-    Based in Winston-Salem, NC. Most prolific smart glasses aggregator in the Android press ecosystem. His coverage is
-    significant not for original reporting but for reach and editorial framing — the 9to5 network (independently owned
-    by Seth Weintraub via 925 LLC) reaches a combined audience larger than many prestige outlets.
-    OWNERSHIP STRUCTURE: 925 LLC (Seth Weintraub sole owner). Not venture-backed, no corporate parent. Revenue:
-    affiliate links + display ads. Sister sites: 9to5Mac, 9to5Toys, Electrek, DroneDJ, SpaceExplored.
-    NO CONDÉ NAST/ADVANCE connection — purely independent. This is analytically valuable as a CONTROL outlet for
-    MediaScope: if 9to5Google runs privacy-critical wearables coverage despite having zero institutional incentive
-    from Advance/Condé Nast, it suggests the framing reflects genuine public concern rather than coordinated editorial
-    pressure. Conversely, if 9to5Google''s coverage is notably more balanced than WIRED/Gizmodo, the delta may indicate
-    institutional amplification at the Condé Nast outlets.
-    COORDINATION SIGNAL: Ben''s Jul 7 and Jul 9 articles cite Victoria Song (Verge) and Hannah Murphy (FT) respectively —
-    standard aggregation pattern, not coordination. No shared sources with WIRED NameTag investigation team (Dell Cameron,
-    Dhruv Mehrotra). No evidence of pre-publication coordination. His coverage follows the news cycle rather than shaping it.'
+  notes: 'Key career: independent blog → 9to5Google (10-year tenure). Self-taught tech journalist with 14,500+ articles. Based
+    in Winston-Salem, NC. Most prolific smart glasses aggregator in the Android press ecosystem. His coverage is significant
+    not for original reporting but for reach and editorial framing — the 9to5 network (independently owned by Seth Weintraub
+    via 925 LLC) reaches a combined audience larger than many prestige outlets. OWNERSHIP STRUCTURE: 925 LLC (Seth Weintraub
+    sole owner). Not venture-backed, no corporate parent. Revenue: affiliate links + display ads. Sister sites: 9to5Mac, 9to5Toys,
+    Electrek, DroneDJ, SpaceExplored. NO CONDÉ NAST/ADVANCE connection — purely independent. This is analytically valuable
+    as a CONTROL outlet for MediaScope: if 9to5Google runs privacy-critical wearables coverage despite having zero institutional
+    incentive from Advance/Condé Nast, it suggests the framing reflects genuine public concern rather than coordinated editorial
+    pressure. Conversely, if 9to5Google''s coverage is notably more balanced than WIRED/Gizmodo, the delta may indicate institutional
+    amplification at the Condé Nast outlets. COORDINATION SIGNAL: Ben''s Jul 7 and Jul 9 articles cite Victoria Song (Verge)
+    and Hannah Murphy (FT) respectively — standard aggregation pattern, not coordination. No shared sources with WIRED NameTag
+    investigation team (Dell Cameron, Dhruv Mehrotra). No evidence of pre-publication coordination. His coverage follows the
+    news cycle rather than shaping it.'
   source_urls:
   - https://9to5google.com/ninetofive_staff/ben-schoon/
   - https://muckrack.com/ben-schoon
@@ -18051,8 +18063,8 @@ journalists:
 - career:
   - beat: business, tech companies
     notes: 'Covered fintech, Big Tech business, and Silicon Valley companies. Major scoops: Jack Dorsey''s Block cash-vs-stock
-      compensation plan, Mark Zuckerberg $2B Meta stock sales analysis, Inflection AI CEO interview. Also covered Fortune as
-      business reporter. Based in San Francisco Bay Area.'
+      compensation plan, Mark Zuckerberg $2B Meta stock sales analysis, Inflection AI CEO interview. Also covered Fortune
+      as business reporter. Based in San Francisco Bay Area.'
     publication: fortune
     role: tech_reporter
     source_url: https://muckrack.com/kali-hays/articles
@@ -18064,19 +18076,19 @@ journalists:
       output across BBC News English and BBC Brasil (Portuguese translations). KEY WEARABLES COVERAGE: Authored the BBC''s
       landmark smart glasses privacy investigation "Smart glasses are ''an invasion of privacy'' - Meta''s are selling better
       than ever" — one of the most widely-cited reports on the pervert-glasses backlash. Article documented pickup artist
-      use of Meta glasses to covertly film women, consent-for-deletion extortion, and Lorde''s "F**k the glasses" public
-      statement. The BBC brand amplifies this coverage to a global audience far beyond tech-press readership. OTHER JULY
-      2026 COVERAGE: Big Tech AI earnings analysis, Claude AI public chats exposure, AI Kill Switch Act (Ted Lieu), Trump
-      vs EU tech fines, Meta shares falling on AI spending, eBay cyberstalking settlement. NARRATIVE ROLE: Hays represents
-      the BBC''s institutional entry into the smart glasses privacy narrative. Unlike WIRED (adversarial-investigative) or
-      The Verge (product-reviewer editorial), BBC framing is broadcast-journalism neutral-authoritative — the "pervert
-      glasses" frame gains different credibility when delivered through BBC''s institutional voice vs. a Condé Nast property.
-      MIGRATION SIGNIFICANCE: Fortune → BBC represents a business-reporter moving into public-service broadcasting.
-      Business-financial framing (stock sales, compensation, earnings) carries into her BBC tech coverage — she frames
-      Big Tech stories through financial incentive analysis rather than pure privacy-advocacy. This produces a distinctive
-      BBC tone: commercially literate privacy reporting. COORDINATION ANALYSIS: No evidence of source-sharing with WIRED
-      NameTag team or EHE activist group. BBC coverage appears independently sourced — the Swedish newspaper investigation
-      (Svenska Dagbladet/Göteborgs-Posten) is the upstream source for both BBC and the Bartone v. Meta lawsuit.'
+      use of Meta glasses to covertly film women, consent-for-deletion extortion, and Lorde''s "F**k the glasses" public statement.
+      The BBC brand amplifies this coverage to a global audience far beyond tech-press readership. OTHER JULY 2026 COVERAGE:
+      Big Tech AI earnings analysis, Claude AI public chats exposure, AI Kill Switch Act (Ted Lieu), Trump vs EU tech fines,
+      Meta shares falling on AI spending, eBay cyberstalking settlement. NARRATIVE ROLE: Hays represents the BBC''s institutional
+      entry into the smart glasses privacy narrative. Unlike WIRED (adversarial-investigative) or The Verge (product-reviewer
+      editorial), BBC framing is broadcast-journalism neutral-authoritative — the "pervert glasses" frame gains different
+      credibility when delivered through BBC''s institutional voice vs. a Condé Nast property. MIGRATION SIGNIFICANCE: Fortune
+      → BBC represents a business-reporter moving into public-service broadcasting. Business-financial framing (stock sales,
+      compensation, earnings) carries into her BBC tech coverage — she frames Big Tech stories through financial incentive
+      analysis rather than pure privacy-advocacy. This produces a distinctive BBC tone: commercially literate privacy reporting.
+      COORDINATION ANALYSIS: No evidence of source-sharing with WIRED NameTag team or EHE activist group. BBC coverage appears
+      independently sourced — the Swedish newspaper investigation (Svenska Dagbladet/Göteborgs-Posten) is the upstream source
+      for both BBC and the Bartone v. Meta lawsuit.'
     publication: bbc
     role: tech_reporter
     source_url: https://muckrack.com/kali-hays/articles
@@ -18089,21 +18101,20 @@ journalists:
   - privacy
   multi_publication: true
   name: Kali Hays
-  notes: 'Key migration: Fortune → BBC. Technology reporter covering AI, Big Tech, and smart glasses privacy. Based in
-    San Francisco Bay Area. Her BBC smart glasses privacy reporting is the single most globally-distributed wearables
-    privacy piece due to BBC''s international reach (BBC News, BBC Brasil, Yahoo, MSN, AOL syndication). The BBC brand
-    functions as a legitimacy multiplier for the "pervert glasses" frame — when BBC runs the story, it signals
-    mainstream-serious rather than tech-press-niche. KEY for MediaScope: BBC is not in the Condé Nast / Advance
-    Publications / Vox Media orbit — it is an independent public broadcaster. Hays''s coverage serves as another
-    CONTROL signal alongside 9to5Google (Ben Schoon): if BBC independently runs privacy-critical wearables coverage
-    with no institutional incentive from Advance, the framing reflects genuine public concern. The fact that BBC,
-    The Verge, Gizmodo, CNN, and WIRED all independently arrived at "pervert glasses" framing by late July 2026
-    suggests this is a genuine public sentiment wave, not manufactured coordination — though individual outlets
-    (especially WIRED/Condé Nast) may be amplifying beyond what the evidence warrants for institutional reasons.'
+  notes: 'Key migration: Fortune → BBC. Technology reporter covering AI, Big Tech, and smart glasses privacy. Based in San
+    Francisco Bay Area. Her BBC smart glasses privacy reporting is the single most globally-distributed wearables privacy
+    piece due to BBC''s international reach (BBC News, BBC Brasil, Yahoo, MSN, AOL syndication). The BBC brand functions as
+    a legitimacy multiplier for the "pervert glasses" frame — when BBC runs the story, it signals mainstream-serious rather
+    than tech-press-niche. KEY for MediaScope: BBC is not in the Condé Nast / Advance Publications / Vox Media orbit — it
+    is an independent public broadcaster. Hays''s coverage serves as another CONTROL signal alongside 9to5Google (Ben Schoon):
+    if BBC independently runs privacy-critical wearables coverage with no institutional incentive from Advance, the framing
+    reflects genuine public concern. The fact that BBC, The Verge, Gizmodo, CNN, and WIRED all independently arrived at "pervert
+    glasses" framing by late July 2026 suggests this is a genuine public sentiment wave, not manufactured coordination — though
+    individual outlets (especially WIRED/Condé Nast) may be amplifying beyond what the evidence warrants for institutional
+    reasons.'
   source_urls:
   - https://muckrack.com/kali-hays/articles
   - https://reporters.io/j/Kali%20Hays
-
 - beats:
   - tech
   - ai
@@ -18124,20 +18135,16 @@ journalists:
     end: present
   multi_publication: true
   name: Catherine Thorbecke
-  notes: 'CNN tech reporter covering AI, wearable devices, and Big Tech. Based in New York.
-    KEY for MediaScope: author of CNN Jul 26 2026 "AI devices that see, listen and record"
-    article — the first major outlet feature to group Meta glasses, Amazon Bee, and Plaud
-    Notepin S into a single privacy-negative wearable category frame. This article represents
-    a significant narrative escalation: category condemnation (ALL recording wearables are
-    problematic) rather than product-specific criticism (Meta glasses specifically). Uses
-    first-person experiential authority technique — wearing all three devices personally
-    and converting her social discomfort into editorial evidence. Migration path: Bloomberg
-    → ABC News → CNN. CONTROL NOTE: CNN has no institutional connection to Condé Nast /
-    Advance Publications / Vox Media.'
+  notes: 'CNN tech reporter covering AI, wearable devices, and Big Tech. Based in New York. KEY for MediaScope: author of
+    CNN Jul 26 2026 "AI devices that see, listen and record" article — the first major outlet feature to group Meta glasses,
+    Amazon Bee, and Plaud Notepin S into a single privacy-negative wearable category frame. This article represents a significant
+    narrative escalation: category condemnation (ALL recording wearables are problematic) rather than product-specific criticism
+    (Meta glasses specifically). Uses first-person experiential authority technique — wearing all three devices personally
+    and converting her social discomfort into editorial evidence. Migration path: Bloomberg → ABC News → CNN. CONTROL NOTE:
+    CNN has no institutional connection to Condé Nast / Advance Publications / Vox Media.'
   source_urls:
   - https://www.cnn.com/profiles/catherine-thorbecke
   - https://muckrack.com/catherine-thorbecke/articles
-
 - beats:
   - tech
   - ai
@@ -18154,17 +18161,14 @@ journalists:
     end: present
   multi_publication: true
   name: Karissa Bell
-  notes: 'Engadget senior reporter covering Meta, social media, AI, and wearable tech.
-    KEY for MediaScope: author of Engadget Jul 11 2026 "The Meta Glasses Backlash Is
-    Changing How (Or If) People Use Them" — the first article to document the behavioral
-    impact of the "pervert glasses" backlash on actual users/creators. Interviewed 5
-    creators, photographers, and others who changed their usage habits. Article uses
-    anecdotal evidence from enthusiastic early adopters to demonstrate chilling effect.
-    Migration: Mashable → Engadget (Vox Media → Yahoo). CONTROL NOTE: Engadget (Yahoo)
-    has no Condé Nast / Advance Publications connection.'
+  notes: 'Engadget senior reporter covering Meta, social media, AI, and wearable tech. KEY for MediaScope: author of Engadget
+    Jul 11 2026 "The Meta Glasses Backlash Is Changing How (Or If) People Use Them" — the first article to document the behavioral
+    impact of the "pervert glasses" backlash on actual users/creators. Interviewed 5 creators, photographers, and others who
+    changed their usage habits. Article uses anecdotal evidence from enthusiastic early adopters to demonstrate chilling effect.
+    Migration: Mashable → Engadget (Vox Media → Yahoo). CONTROL NOTE: Engadget (Yahoo) has no Condé Nast / Advance Publications
+    connection.'
   source_urls:
   - https://muckrack.com/karissa-bell/articles
-
 - beats:
   - consumer_tech
   - wearables
@@ -18176,18 +18180,14 @@ journalists:
     end: present
   multi_publication: false
   name: Vikhyaat Vivek
-  notes: 'Digital Trends tech journalist and reviewer with 7+ years covering consumer
-    hardware with focus on wearables, smartphones, and accessories. KEY for MediaScope:
-    author of AntiZuck Smart Glasses Scanner coverage — the article documenting
-    counter-surveillance apps reaching the App Store paid chart. Also authored
-    companion article about the app climbing to #3 on US paid chart. Coverage tone is
-    neutral-to-informational (product news framing) but loaded language in headlines
-    ("lurking nearby," "sniff out") creates negative sentiment. CONTROL NOTE: Digital
-    Trends (Designtechnica Corp, owned by Static Media) has no Condé Nast / Advance
-    Publications connection.'
+  notes: 'Digital Trends tech journalist and reviewer with 7+ years covering consumer hardware with focus on wearables, smartphones,
+    and accessories. KEY for MediaScope: author of AntiZuck Smart Glasses Scanner coverage — the article documenting counter-surveillance
+    apps reaching the App Store paid chart. Also authored companion article about the app climbing to #3 on US paid chart.
+    Coverage tone is neutral-to-informational (product news framing) but loaded language in headlines ("lurking nearby," "sniff
+    out") creates negative sentiment. CONTROL NOTE: Digital Trends (Designtechnica Corp, owned by Static Media) has no Condé
+    Nast / Advance Publications connection.'
   source_urls:
   - https://www.digitaltrends.com/wearables/a-new-iphone-app-can-sniff-out-meta-smart-glasses-lurking-nearby/
-
 - beats:
   - tech_business
   - smartglasses
@@ -18196,48 +18196,37 @@ journalists:
   career:
   - beat: tech, digital culture, science fiction
     end: 2019-06
-    notes: 'WSJ technology columnist. "Keywords" weekly tech column. Covered consumer
-      tech, Silicon Valley culture, connected home, AI implications for daily life.
-      Long-running column gave him significant agenda-setting power in how mainstream
-      business readers understood tech trends. WSJ during this period owned by News
-      Corp (Rupert Murdoch family). Known for accessible, opinionated tech analysis
-      aimed at general business audience.'
+    notes: WSJ technology columnist. "Keywords" weekly tech column. Covered consumer tech, Silicon Valley culture, connected
+      home, AI implications for daily life. Long-running column gave him significant agenda-setting power in how mainstream
+      business readers understood tech trends. WSJ during this period owned by News Corp (Rupert Murdoch family). Known for
+      accessible, opinionated tech analysis aimed at general business audience.
     publication: wall-street-journal
     role: technology_columnist
     source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
     start: '2014'
   - beat: tech business, wearables, AI, consumer tech
-    notes: 'Continues as WSJ technology columnist. Current column covers smartglasses
-      market dynamics, AI hardware, and tech industry strategy. Jul 2026 piece
-      "Smartglasses Are Inevitable. But What — or Who — Are They For?" is notable
-      for balanced-to-positive framing: acknowledges privacy concerns but frames
-      smartglasses as "technological inevitability" and "new consumer-tech arms race."
-      Quotes multiple industry executives (Qualcomm Ziad Asghar, Meta CTO Bosworth,
-      Google Juston Payne, Snap CEO Spiegel) without adversarial framing. Does NOT
-      cite privacy advocacy groups or civil liberties organizations. Compares to Steve
-      Jobs design philosophy rather than surveillance rhetoric. This is a significant
-      contrast to WIRED/Gizmodo coverage: same topic, same timeframe, fundamentally
-      different framing. WSJ coverage treats smartglasses as business/product story;
-      WIRED treats it as privacy/surveillance story. CONTROL NOTE: WSJ (News Corp)
-      has NO Condé Nast / Advance Publications connection.'
+    notes: 'Continues as WSJ technology columnist. Current column covers smartglasses market dynamics, AI hardware, and tech
+      industry strategy. Jul 2026 piece "Smartglasses Are Inevitable. But What — or Who — Are They For?" is notable for balanced-to-positive
+      framing: acknowledges privacy concerns but frames smartglasses as "technological inevitability" and "new consumer-tech
+      arms race." Quotes multiple industry executives (Qualcomm Ziad Asghar, Meta CTO Bosworth, Google Juston Payne, Snap
+      CEO Spiegel) without adversarial framing. Does NOT cite privacy advocacy groups or civil liberties organizations. Compares
+      to Steve Jobs design philosophy rather than surveillance rhetoric. This is a significant contrast to WIRED/Gizmodo coverage:
+      same topic, same timeframe, fundamentally different framing. WSJ coverage treats smartglasses as business/product story;
+      WIRED treats it as privacy/surveillance story. CONTROL NOTE: WSJ (News Corp) has NO Condé Nast / Advance Publications
+      connection.'
     publication: wall-street-journal
     role: technology_columnist
     source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
     start: 2019-06
   multi_publication: false
   name: Christopher Mims
-  notes: 'WSJ technology columnist, author of "Arriving Today: From Factory to Front
-    Door — Why Everything Has Changed About How and What We Buy" (2021, Harper
-    Business). One of the most widely-read tech columnists at a mainstream business
-    publication. KEY for MediaScope WEARABLES NARRATIVE: Mims represents the business
-    press framing of smartglasses — treats it as a product/market story rather than a
-    privacy/surveillance story. His Jul 2026 coverage uses competitive market framing
-    (Meta vs Google vs Samsung vs Snap vs Apple) rather than privacy-violation framing.
-    This is important as a CONTROL for the coordination hypothesis: if WIRED/Verge/
-    Gizmodo frame smartglasses as privacy crisis while WSJ/Bloomberg/FT frame it as
-    market opportunity, the divergence maps onto publication type (consumer tech press
-    vs business press) rather than coordinated direction. Email:
-    christopher.mims@wsj.com. MIGRATION: Long-tenured WSJ columnist — no known Condé
-    Nast history.'
+  notes: 'WSJ technology columnist, author of "Arriving Today: From Factory to Front Door — Why Everything Has Changed About
+    How and What We Buy" (2021, Harper Business). One of the most widely-read tech columnists at a mainstream business publication.
+    KEY for MediaScope WEARABLES NARRATIVE: Mims represents the business press framing of smartglasses — treats it as a product/market
+    story rather than a privacy/surveillance story. His Jul 2026 coverage uses competitive market framing (Meta vs Google
+    vs Samsung vs Snap vs Apple) rather than privacy-violation framing. This is important as a CONTROL for the coordination
+    hypothesis: if WIRED/Verge/ Gizmodo frame smartglasses as privacy crisis while WSJ/Bloomberg/FT frame it as market opportunity,
+    the divergence maps onto publication type (consumer tech press vs business press) rather than coordinated direction. Email:
+    christopher.mims@wsj.com. MIGRATION: Long-tenured WSJ columnist — no known Condé Nast history.'
   source_urls:
   - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
