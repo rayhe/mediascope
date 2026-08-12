@@ -18243,3 +18243,104 @@ journalists:
     christopher.mims@wsj.com. MIGRATION: Long-tenured WSJ columnist — no known Condé Nast history.'
   source_urls:
   - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+- career:
+  - beat: tech products, lifestyle tech
+    end: '2015'
+    notes: Assistant tech editor. Early career before BuzzFeed. Covered consumer gadgets
+      and lifestyle technology.
+    publication: popsugartechnews
+    role: assistant_tech_editor
+    start: '2013'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-hires-buzzfeeds-nguyen-to-write-tech-column/amp/
+  - beat: technology, consumer products, privacy, fake reviews
+    end: 2019-02
+    event_type: hired
+    notes: 'Tech reporter in San Francisco bureau under Mat Honan (formerly of WIRED).
+      Part of BuzzFeed''s first tech journalism team in SF alongside John Paczkowski
+      (ex-Re/code). Wrote about fake review ecosystems, stolen art in Amazon marketplace,
+      app developers secretly selling location data, unreported security flaws. Also
+      launched and ran video production for BuzzFeed Tech SF. KEY: BuzzFeed News under
+      Mat Honan covered ALL tech companies adversarially — no sacred cows. Nguyen
+      applied investigative scrutiny across Amazon, Google, Apple, and Facebook. This
+      broad adversarial scope narrowed upon moving to WSJ''s personal tech column beat.'
+    publication: buzzfeed-news
+    role: tech_reporter
+    start: 2015-03
+    source_url: https://talkingbiznews.com/business-media-news/buzzfeed-hires-tech-journalists-for-san-francisco/
+  - beat: personal technology, consumer products, AI, privacy, wearables
+    end: present
+    event_type: hired
+    notes: 'Personal Technology columnist. Initially worked alongside Joanna Stern
+      under personal tech editor Wilson Rothman. After Stern''s departure (May 2026
+      to found "New Things" / NBC News), Nguyen became WSJ''s lead personal tech voice.
+      Beat covers Apple product reviews (iPhone, AirPods, WWDC events), Samsung (Galaxy
+      S26 Ultra Privacy Display), health wearables (Garmin Cirqa, AI fitness coaches),
+      AI chatbot privacy, home tech, and subscription management. KEY for MediaScope:
+      Her beat assignment structurally separates consumer product reviews (product-utility
+      framing) from Meta investigative coverage (assigned to Bobrowsky). When Nguyen
+      covers surveillance cameras (Feb 2026 "Dragnet Era"), she targets Ring (Amazon)
+      and Nest (Google), NOT Meta glasses. This is not individual bias — it is beat
+      assignment structure at WSJ separating the promotional and adversarial voices
+      into different bylines.'
+    publication: wsj
+    role: personal_tech_columnist
+    start: 2019-02
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-hires-buzzfeeds-nguyen-to-write-tech-column/amp/
+  multi_publication: true
+  name: Nicole Nguyen
+  notes: 'WSJ Personal Technology columnist (Feb 2019–present), formerly BuzzFeed
+    News tech reporter (2015–2019) and PopSugar Tech assistant editor. Based in San
+    Francisco. "Advocate for the normals" — approaches technology from a non-engineering
+    consumer perspective. Covers AI and privacy broadly but through the personal tech
+    lens, not the investigative/enterprise lens. Mother (son born ~2024 based on cloud
+    storage article references). KEY for MediaScope: Exemplifies Mechanism #67 — WSJ
+    beat assignment asymmetry where consumer tech, investigative, and industry analysis
+    channels produce structurally different coverage of the same companies.'
+  source_urls:
+  - https://talkingbiznews.com/they-talk-biz-news/wsj-hires-buzzfeeds-nguyen-to-write-tech-column/amp/
+  - https://talkingbiznews.com/business-media-news/buzzfeed-hires-tech-journalists-for-san-francisco/
+  - https://www.katchuniversity.com/post/nicole-nguyen
+  - https://muckrack.com/nicole-nguyen-43/articles
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 67
+      pattern: beat_assignment_asymmetry
+      description: 'Mechanism #67: WSJ beat assignment separates consumer tech reviews
+        (Nguyen — product-utility framing for Apple, Samsung, health wearables) from
+        investigative Meta coverage (Bobrowsky — adversarial privacy framing for Meta
+        glasses). When Nguyen covers surveillance cameras (Feb 2026 "Dragnet Era of
+        Home Security Cameras"), she targets Ring (Amazon) and Nest (Google), NOT Meta
+        glasses — despite Meta glasses being a more prominent privacy concern at 7M+
+        deployed units. This is a structural beat assignment effect, not individual
+        bias. Extends Mechanism #56 (Verge beat segregation) to News Corp/WSJ.'
+      apple_coverage:
+        framing: product_utility_promotional
+        tone: 0.25
+        wwdc_access: true
+        sample_articles:
+        - title: "Apple's Tech Marvel Comes With Sacrifices"
+          date: '2025-09-11'
+          framing: admiring_with_tradeoffs
+        - title: "Apple's 'affordable' new iPhone 17e"
+          date: '2026-03'
+          framing: product_utility
+        - title: "Five Big Differences With New AirPods Pro"
+          date: '2025-09-17'
+          framing: product_review
+        - title: "Apple WWDC 2026 Three Key Takeaways"
+          date: '2026-06'
+          framing: event_access_reportage
+      meta_coverage:
+        framing: limited_not_adversarial
+        tone: 0.10
+        sample_articles:
+        - title: "WhatsApp Breaks Through Apple's Walled Garden"
+          date: '2025-11-20'
+          framing: positive_competitive_meta_vs_apple
+      surveillance_coverage:
+        dragnet_article:
+          title: "The Dragnet Era of Home Security Cameras"
+          date: '2026-02-13'
+          targets: Ring (Amazon), Nest (Google)
+          meta_glasses_targeted: false
+          framing: privacy_adversarial_toward_amazon_google

@@ -1105,7 +1105,7 @@ Rob Kelly's Media & the Machine tracking (91 public deals, Jun 2026) confirms An
 - `docs/ARCHITECTURE.md` — Test count updated to 8,480, file count 280, new tree entry
 
 ### Commit
-Pending
+c08d8a3 — pushed to GitHub
 
 ---
 ## 2026-08-10 10:00 PT — Type A: Competitor Coverage Deep Dive — WSJ × Anthropic vs Meta Business Viability Framing Asymmetry (Mechanism #26)
