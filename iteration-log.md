@@ -1,3 +1,17 @@
+## Iteration 71 — 2026-08-12 16:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #69: NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Execution Performance (Adversarial), Aligned with Litigation Interests
+
+**Finding:** The NYT — uniquely suing OpenAI (Dec 2023, escalated Jul 2026 with sanctions motion) — produces bifurcated Meta AI coverage correlating with litigation interests. Open-source philosophy receives positive framing ("Zuckaissance," "genuinely good") that undermines OpenAI's closed-model approach, while execution performance receives standard adversarial treatment ("trailing," "scrambles," "abandoned"). The Asymmetric Firewall Hypothesis: editorial independence blocks adversarial corporate relationships from worsening coverage but does not block favorable ones from softening it — inverse of deal-alignment at WIRED (#62), FT (#54), WaPo (#65).
+
+**Changes:**
+- `profiles/competitor-coverage-research.yaml`: Mechanism #69 added to `cross_publication_findings` (7 confounding factors, 4 testable predictions, 4 cross-references)
+- `profiles/nytimes.yaml`: `_ref` pointer to #69 under meta competitor_relationships
+- `tests/test_nyt_meta_ai_bifurcated_coverage_alignment_aug12.py`: 33 tests across 10 classes — all passing
+- `README.md`, `docs/ARCHITECTURE.md`: Updated to 10,834 tests / 333 files
+
+**Commit:** 908352e
+
 ## Iteration 70 — 2026-08-12 15:00 PT (Type D: Test & Verify)
 
 ### Stat Drift Audit + Cross-Validation Test Suite
