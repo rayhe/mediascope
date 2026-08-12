@@ -3723,7 +3723,7 @@ entities:
     - Grokipedia
     regex: \b(xAI|Grok(?!\s+(?:monster|puppet)))\b
     category: ai_lab
-    market_cap_approx: $50B+ (private valuation, 2026)
+    market_cap_approx: $230B (private valuation, Nov 2025 WSJ; $20B Series E Jun 2026 PitchBook)
     ceo: Elon Musk
     publisher_deals_note: "ZERO publisher content licensing deals as of Aug 2026.\nxAI is the only major AI lab alongside\
       \ Anthropic with no publisher deals.\nInstead of licensing, xAI relies on:\n(a) X/Twitter public posts for training\
@@ -3828,6 +3828,26 @@ entities:
       '
     telegram_deal_source: https://www.livemint.com/technology/tech-news/telegram-partners-with-xai-grok-chatbot-to-be-integrated-in-300-million-deal/amp-11748452711863.html
     gsa_contract_source: https://www.nextgov.com/acquisition/2025/09/gsa-inks-onegov-deal-grok-ai/408334/
+    dual_entity_destruction_chain:
+      _ref_mechanism_id: 68
+      _ref_location: cross_publication_findings.xai_x_dual_entity_publisher_financial_destruction
+      summary: >
+        xAI-X is the ONLY entity in the MediaScope dataset with an ACTIVELY NEGATIVE
+        financial relationship with publishers. Three channels of destruction: (1)
+        X referral traffic to publishers down 65-75% since Oct 2022 acquisition,
+        (2) zero content licensing deals despite $230B+ valuation, (3) hostile press
+        relations including automated "Legacy Media Lies" response. The financial
+        relationship spectrum model predicts maximum adversarial coverage for negative-
+        tier entities, moderated only by the volume paradox (Meta receives MORE
+        adversarial volume despite less hostile relationship, due to ad competition scale
+        and competitive benefit to publisher financial partners).
+      valuation_b: 230
+      total_funding_b: 45
+      x_referral_decline_pct: 65
+      x_ad_revenue_peak_b: 4.5
+      x_ad_revenue_current_b: 2.9
+      publisher_deals: 0
+      publisher_settlement_b: 0
   samsung:
     display_name: Samsung
     aliases:

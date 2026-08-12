@@ -184,7 +184,7 @@ print(f"Portable: {decomp.portable_bias_score:.3f}")
 
 ## Starter Data
 
-MediaScope ships with career data for **253 journalists** across the 5 starter publications plus 428 notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 410+ others). 240 of these have multi-publication careers suitable for migration analysis. The CareerTracker auto-detects **754 migrations** between publications from the career event timelines, using gap analysis to distinguish genuine job changes from concurrent freelance roles.
+MediaScope ships with career data for **254 journalists** across the 5 starter publications plus 428 notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 410+ others). 241 of these have multi-publication careers suitable for migration analysis. The CareerTracker auto-detects **756 migrations** between publications from the career event timelines, using gap analysis to distinguish genuine job changes from concurrent freelance roles.
 
 ### High-Value Migration Events
 
@@ -264,7 +264,7 @@ MediaScope's Editorial Histories module fills this gap by:
 1. Treating journalist migrations as natural experiments (novel application of DiD)
 2. Building a reusable career tracking infrastructure that any AI agent can extend
 3. Producing decomposition scores that are interpretable, comparable, and auditable
-4. Shipping with verified starter data for **253 journalists** across 435+ publications, with 240 having multi-publication careers suitable for migration analysis
+4. Shipping with verified starter data for **254 journalists** across 435+ publications, with 241 having multi-publication careers suitable for migration analysis
 
 ## References
 

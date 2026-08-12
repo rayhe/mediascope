@@ -1,4 +1,68 @@
+## Iteration 69 — 2026-08-12 14:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #68: xAI-X Dual-Entity Publisher Financial Destruction Chain
+
+**Finding:** xAI and X (both Musk-controlled) are the ONLY competitor entity in the MediaScope dataset with an ACTIVELY NEGATIVE financial relationship with publishers. Three channels of destruction: (1) X referral traffic to publishers down 65-75% since Oct 2022 acquisition, (2) zero content licensing deals despite $230B+ valuation and $45B+ funding, (3) hostile press relations including automated "Legacy Media Lies" response and personal journalist attacks.
+
+**Financial Relationship Spectrum (3-tier model):**
+- POSITIVE: OpenAI (20+ deals, $1.25B+), Google (ad revenue backbone), Apple News+ ($12.99/mo × 125M MAU)
+- NEUTRAL: Meta (13 deals but $243B ad competition), Anthropic (zero deals, neutral relations)
+- NEGATIVE: xAI-X (active traffic destruction + zero deals + hostile press)
+
+**Volume Paradox:** Meta receives MORE adversarial coverage despite LESS hostile relationship — explained by three factors: (1) Meta's $243B ad revenue directly competes with publisher revenue, (2) adversarial Meta coverage benefits publisher financial partners (OpenAI, Google, Apple), (3) Meta's larger market footprint generates more coverage surface area.
+
+**Key data points:**
+- X referral traffic decline: 65% since Oct 2022 (Press Gazette/Chartbeat Jul 2025)
+- X ad revenue: $4.5B (2022) → $2.2B (2023) → $2.6B (2024) → ~$2.9B projected (2025)
+- xAI valuation: $230B (Nov 2025 WSJ); Series E: $20B (PitchBook Jun 2026)
+- xAI acquired X: Mar 2025, $80B + $33B = $113B combined
+- Publisher deals: ZERO across entire xAI-X entity
+
+**Test file:** `test_xai_x_dual_entity_publisher_financial_destruction_aug12.py` (50 tests, 12 classes)
+**Cross-references:** #47 (Google Ad Revenue), #53 (OpenAI Triple-Layer), #50 (CNN Layoff Asymmetry), #57 (Publisher Revenue Crisis)
+**Infrastructure:** Updated xAI entity in competitor-entities.yaml (valuation $50B→$230B, added dual_entity_destruction_chain section). Fixed mechanism #68 placement in cross_publication_findings. Updated README/ARCHITECTURE/EDITORIAL_HISTORIES counts (10704 tests / 331 files / 254 journalists / 756 migrations).
+
 # MediaScope Iteration Log
+
+## Iteration 68 — 2026-08-12 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #67: WSJ Beat Assignment Asymmetry — Consumer vs Investigative Channels (Nicole Nguyen)
+
+**Focus:** Nicole Nguyen (WSJ Personal Technology Columnist) — first News Corp journalist profiled who covers consumer tech at a publication with BALANCED financial deals ($50M/yr OpenAI + up to $50M/yr Meta).
+
+**Finding:**
+
+WSJ assigns different reporters to different aspects of the same wearables/AI category, producing systematically different framing for Apple vs Meta. Three distinct coverage channels:
+
+1. **Consumer tech (Nicole Nguyen):** Apple products receive product-utility framing ("tech marvel," "affordable," WWDC event access). When Nguyen covers surveillance cameras (Feb 2026 "Dragnet Era of Home Security Cameras"), she targets Ring (Amazon) and Nest (Google) — NOT Meta glasses despite 7M+ deployed units. Meta coverage limited but not adversarial (WhatsApp "breaks through Apple's walled garden" = positive competitive framing).
+
+2. **Investigative (Meghan Bobrowsky):** Meta glasses receive adversarial privacy framing ("flooding the market," "privacy lightning rod," "privacy advocates up in arms"). Zero comparable investigative coverage of Apple, Google, or Samsung smart glasses despite identical camera hardware.
+
+3. **Industry analysis (Christopher Mims):** Balanced landscape coverage giving Meta credit for 82% market share and normal-looking design.
+
+**News Corp Balanced-Deal Paradox:** Despite symmetric $50M/yr deals with both OpenAI and Meta, beat assignment structure produces asymmetric coverage because no single reporter applies BOTH product-utility and adversarial framings to BOTH companies.
+
+**Nicole Nguyen Career Migration:** PopSugar Tech → BuzzFeed News (2015-2019, adversarial tech reporting under Mat Honan covering ALL companies without sacred cows) → WSJ (2019-present, personal tech column). BuzzFeed→WSJ migration demonstrates how broad adversarial instincts are channeled into company-specific lanes by institutional beat assignment.
+
+Extends Mechanism #56 (Verge beat segregation) to News Corp/WSJ, demonstrating beat assignment asymmetry is an INDUSTRY-WIDE structural pattern across different ownership structures.
+
+6 confounding factors (incl. STRONG: Ring/Nest ARE larger surveillance networks; beat assignments ARE editorially rational). 4 testable predictions. 4 cross-references (#56, #11, #66, #53).
+
+### Files Changed
+- `tests/test_nicole_nguyen_wsj_beat_assignment_asymmetry_aug12.py` — 12 classes, 52 tests (NEW)
+- `profiles/careers/journalists.yaml` — Nicole Nguyen full career profile added
+- `profiles/competitor-coverage-research.yaml` — mechanism #67 added to cross_publication_findings
+- `README.md` — test counts updated (10,717/330), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,717/330)
+
+### Tests
+- 52/52 new mechanism tests passing
+- Total: **10,717 tests** across **330 files**
+
+### Commit
+aec089a — pushed to GitHub
+
+---
 
 ## Iteration 67 — 2026-08-12 11:00 PT (Type A: Competitor Coverage Deep Dive)
 
