@@ -1,5 +1,82 @@
 # MediaScope Iteration Log
 
+## Iteration 58 — 2026-08-12 02:00 PT (Type D: Test & Verify)
+
+### Fixes: Mechanism #58 Structural Placement & Cross-Validation
+
+**Bug found:** Iteration 57 (Type C) misplaced mechanism #58 (Condé Nast AI Deal Portfolio Dependency Index) under the `publications` section of `competitor-coverage-research.yaml` instead of `cross_publication_findings`. This caused 4 test failures in prior cross-validation tests:
+
+1. `TestNoMechanismsInPublications.test_publications_clean` — mechanism_id found in publications section
+2. `TestStructuralSpotCheck.test_all_pubs_have_meta_coverage_tone` — the entry lacked publication-required fields
+3. `TestPublicationsCount.test_exactly_nine_publications` — 10 entries instead of expected 9
+4. `TestPublicationsCount.test_expected_publications_present` — unexpected key in publications
+
+**Additional fix:** Mechanism #58 was also missing the required `discovery_date` field.
+
+**Fixes applied:**
+1. Moved mechanism #58 from `publications` to `cross_publication_findings` in `competitor-coverage-research.yaml`
+2. Added `discovery_date: 2026-08-12` to mechanism #58
+3. All 4 prior cross-validation test failures now pass (48/48)
+
+### New Cross-Validation Test
+- `tests/test_type_d_02am_cross_validation_aug12.py` — 19 tests, 7 classes
+  - `TestMechanism58PlacementFix` — verifies #58 is in cross_publication_findings, NOT publications
+  - `TestPublicationsSectionClean` — 9 pubs exactly, no mechanism_ids, all have meta_coverage_tone
+  - `TestMechanisms51Through58Completeness` — required fields, source URLs, existence
+  - `TestMechanismIDSequenceIntegrity` — no duplicates, max=58, contiguous 50-58
+  - `TestAug12TestFilesExist` — on-disk verification
+  - `TestMechanism57And58CrossReference` — complementary finding types
+
+### Tests
+- 19/19 new cross-validation tests passing
+- 148/148 targeted regression tests passing (aug11+aug12 type_d + mechanism #58 tests)
+- Total: **10,237 tests** across **319 files** (pytest-collected)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #58 relocated + discovery_date added
+- `tests/test_type_d_02am_cross_validation_aug12.py` — 19 new cross-validation tests
+- `README.md` — test counts updated (10,237/319), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,237/319)
+
+## Iteration 57 — 2026-08-12 01:00 PT (Type C: Financial Incentive Mapping)
+
+### Finding: Condé Nast AI Deal Portfolio Dependency Index — Marginal Revenue Significance (Mechanism #58)
+
+**Extension of Mechanism #35:** Deepens the aggregate Advance/CN AI dependency finding with three new evidence layers from 2026 Q1-Q2 data.
+
+**1. Perplexity Coverage Arc — Natural Experiment:**
+In Jul 2024, WIRED published adversarial investigations of Perplexity's content scraping and Condé Nast sent a cease-and-desist letter. By Oct 2025, Lynch named Perplexity alongside OpenAI as an AI licensing partner (confirmed Adweek May 2026). Coverage shifted from adversarial to neutral with deal status. Meta, which never scraped WIRED content, has $0 in CN deals and receives consistently adversarial coverage. The 15-month C&D→deal arc is the cleanest available natural experiment showing coverage tone tracks deal status.
+
+**2. TBPN Venue Conflict — Executive-Level Platform Alignment:**
+Lynch appeared on TBPN (acquired by OpenAI Apr 2, 2026) at least 3 times to discuss CN strategy, including the "Google Zero" directive. The CEO of WIRED's parent company is providing strategic narratives on the media platform owned by his company's largest AI licensing partner. Nilay Patel (Verge EIC, whose parent PMC has a separate OpenAI deal via Vox Media) co-amplified the "Google Zero" narrative on Decoder podcast.
+
+**3. Financial Quantification — Marginal Revenue Analysis:**
+- Estimated total AI licensing: $14-45M/yr (OpenAI $10-30M, Amazon/Rufus $3-10M, Perplexity $1-5M)
+- = 0.7-2.25% of CN's ~$2B total revenue
+- BUT: Lynch explicitly named AI licensing as a strategic revenue pillar (Oct 2025)
+- If advertising declines ~$50M/yr, AI licensing replaces 28-90% of annual decline
+- Portfolio pruning (Self, Glamour intl, Wired Italy shut Apr 2026) concentrates remaining portfolio
+- Events revenue: +40% (2025), digital subscriptions: +29% (2025)
+- Advertising "no longer expected to be a growth engine" (Lynch, Oct 2025)
+- Meta: $0 across all channels
+
+**7 confounding factors documented, 4 falsifiable predictions.**
+
+### Files Changed
+- `tests/test_conde_nast_ai_deal_portfolio_dependency_index_aug12.py` — 24 tests, 8 classes
+- `profiles/competitor-coverage-research.yaml` — mechanism #58 in cross_publication_findings
+- `profiles/wired.yaml` — perplexity_coverage_arc + marginal_revenue_analysis sections
+- `README.md` — test counts updated (10,155/318), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,155/318), new test file listed
+
+### Tests
+- 24/24 new tests passing
+- 124/124 structural consistency tests passing
+- Total: **10,155 tests** across **318 files** (pytest-collected)
+
+### Commit
+84dcf59 — pushed to GitHub
+
 ## Iteration 56 — 2026-08-12 00:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Finding: Reporter Frame-Lock — Deepa Seetharaman Cross-Institutional Beat Migration (Mechanism #57)
