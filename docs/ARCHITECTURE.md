@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10101 tests across 316 test files (all from real articles)
+├── tests/                       # 10131 tests across 317 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -569,6 +569,7 @@ mediascope/
 │   ├── test_christopher_mims_cross_entity.py # Mims (WSJ) cross-entity: TONE INVERSION — constructive Meta (+0.3) vs skeptical OpenAI (-0.3), validates balanced control; WSJ systematic disclosure (only pub that discloses financial ties)
 │   ├── test_dan_milmo_cross_entity.py    # Milmo (Guardian) cross-entity: "BIG TOBACCO" framing asymmetry — Meta gets loaded metaphor, OpenAI rogue agent gets factual relay. Gap ~0.20. Editorial leadership role means institutional direction.
 │   ├── test_david_pierce_cross_entity.py # Pierce (Verge) cross-entity: INSTITUTIONAL FRAMING IMMUNITY — 5-publication career proves adversarial Meta framing is editorially imposed, not reporter-driven. Balanced Meta tone across WIRED/WSJ/Verge contexts.
+│   ├── test_deepa_seetharaman_cross_entity.py # Seetharaman (Reuters, formerly WSJ) cross-entity: REPORTER FRAME-LOCK — professional identity capture persists across institutional boundaries. 10-year WSJ Meta beat → Reuters with Meta deal. Adversarial Meta frame persists despite employer financial alignment.
 │   ├── test_paresh_dave_cross_entity.py # Dave (WIRED) cross-entity: EMOTIONAL REGISTER ASYMMETRY (Mechanism #8) — Meta coverage uses "gulag"/"piece of shit" in headlines (tone -0.51), OpenAI uses "quietly scrapped" (tone -0.07), Google gets "paid off" (tone +0.08). Source pipeline + headline escalation institution-driven, not reporter-driven.
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment
 │   ├── test_wired_amazon_surveillance_parity_paradox_aug8.py # WIRED × Amazon Surveillance Parity Paradox: Meta dormant NameTag code (never activated) gets multi-part investigation while Amazon's FTC Ring/Alexa settlements, active Familiar Faces lawsuit, and Bee wearable get editorial silence — despite two Condé Nast-Amazon licensing deals. 8 classes, 38 tests

@@ -1,5 +1,41 @@
 # MediaScope Iteration Log
 
+## Iteration 56 — 2026-08-12 00:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Finding: Reporter Frame-Lock — Deepa Seetharaman Cross-Institutional Beat Migration (Mechanism #57)
+
+**Natural experiment:** Deepa Seetharaman spent 10 years at WSJ (News Corp, $250M/5yr OpenAI deal) as the primary Meta/Facebook beat reporter, winning a George Polk Award and Gerald Loeb Award for the Facebook Files investigation. In May 2025, she moved to Reuters, where Thomson Reuters has a multi-year Meta AI content licensing deal (announced Oct 25, 2024) AND is in licensing talks with other AI providers. At Reuters, she was explicitly hired to cover "AI and OpenAI" — OpenAI literally named in her beat mandate.
+
+**Key finding: Professional identity capture overrides institutional financial incentives.**
+
+Despite Reuters being Meta's content licensing partner, Seetharaman's Meta coverage at Reuters retains adversarial stress framing:
+- Meta layoffs exclusive (Mar 2026): "sweeping layoffs," "costly AI infrastructure bets," "setbacks with Llama 4," "lagged expectations," "Behemoth abandoned"
+
+Meanwhile, her Anthropic and OpenAI coverage uses growth/aspiration framing:
+- Anthropic revenue exclusive (Oct 2025): "nearly triple," "rapid adoption," "enterprise products"
+- OpenAI super app (Jul 2026): "long-awaited," "competitive with models far more expensive," "twice the speed"
+- Anthropic v. OpenAI feature (Jun 2026): "bitter battle for the future of AI," "technological revolution," "blockbuster IPOs"
+
+**Structural insight:** Reporter frame-lock operates independently of institutional financial incentives. The Meta-Reuters content deal should theoretically create softer Meta coverage, but it doesn't — because Seetharaman's professional identity was built on adversarial Meta reporting over a decade. Awards reinforce the adversarial frame, creating a self-reinforcing career flywheel no institutional deal can override. The beat mandate ("AI and OpenAI") shapes aspirational framing for the companies named in it.
+
+**Wire service amplification:** Reuters content feeds hundreds of global outlets. One reporter's framing choices have orders of magnitude greater propagation than at any single publication. This is the third documented "AI beat = OpenAI beat" pattern (after Cade Metz/NYT and Hayden Field/Verge #52).
+
+**Confounding factors:** 7 documented with strength ratings and rebuttals (wire style constraints, co-authorship, inherently negative layoff stories, legitimate Anthropic growth, beat mandate naming, different article types, career incentives). 4 testable predictions.
+
+### Files Changed
+- `tests/test_deepa_seetharaman_cross_entity.py` — 30 tests, 10 classes
+- `profiles/competitor-coverage-research.yaml` — mechanism #57 in cross_publication_findings
+- `README.md` — test counts updated (10,131/317), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,131/317), new test file listed
+
+### Tests
+- 30/30 new tests passing
+- 124/124 structural consistency tests passing
+- Total: **10,131 tests** across **317 files** (pytest-collected)
+
+### Commit
+[pending]
+
 ## Iteration 55 — 2026-08-11 21:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Finding: FT Capital-Raise Framing Asymmetry — Anthropic (Aspiration) vs Meta (Desperation) (Mechanism #54)
@@ -33727,4 +33763,4 @@ First mechanism documenting different-journalist, same-publication, same-entity 
 - Total: 10,101 tests across 316 files
 
 ### Commit
-(pending)
+8c0a16a — pushed to GitHub
