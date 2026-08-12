@@ -338,19 +338,19 @@ class TestResearchFileConsistency:
 
     def test_murgia_in_research_file(self):
         research = load_yaml('competitor-coverage-research.yaml')
-        ft_section = research.get('publications', {}).get('financial_times', {})
+        ft_section = research.get('publications', {}).get('financial-times', {})
         if ft_section:
             assert 'murgia' in str(ft_section).lower()
 
     def test_dual_lens_in_research(self):
         research = load_yaml('competitor-coverage-research.yaml')
-        ft_section = research.get('publications', {}).get('financial_times', {})
+        ft_section = research.get('publications', {}).get('financial-times', {})
         if ft_section:
             assert 'dual_lens' in str(ft_section).lower() or 'dual-lens' in str(ft_section).lower()
 
     def test_source_urls_present(self):
         research = load_yaml('competitor-coverage-research.yaml')
-        ft_section = research.get('publications', {}).get('financial_times', {})
+        ft_section = research.get('publications', {}).get('financial-times', {})
         if ft_section:
             murgia_section = ft_section.get('murgia_cross_entity', {})
             if murgia_section:

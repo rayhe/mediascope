@@ -36,7 +36,7 @@ class TestPublicationsKeyIntegrity:
 
     VALID_PUBLICATION_SLUGS = {
         'wired', 'the-verge', 'atlantic', 'nytimes', 'financial-times',
-        'guardian', 'mit-tech-review', 'gizmodo', 'news-corp', 'financial_times'
+        'guardian', 'mit-tech-review', 'gizmodo', 'news-corp'
     }
 
     def test_no_cross_publication_findings_in_publications(self):

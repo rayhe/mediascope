@@ -377,7 +377,7 @@ class TestCoverageResearch:
         pubs = data.get("publications", {})
         expected = {
             "wired", "the-verge", "atlantic", "nytimes", "financial-times",
-            "guardian", "mit-tech-review", "gizmodo", "news-corp", "financial_times"
+            "guardian", "mit-tech-review", "gizmodo", "news-corp"
         }
         assert set(pubs.keys()) == expected
 
