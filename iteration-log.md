@@ -1,5 +1,20 @@
 # MediaScope Iteration Log
 
+## Iteration 63 — 2026-08-12 07:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### New Finding: WIRED Anthropic Agent Framing Asymmetry — Condé Nast OpenAI Deal Competitor Halo Effect (Mechanism #62)
+
+**Evidence pairs:**
+1. Claude Cowork "actually works" (positive, Zeff) vs Meta AI agents "going rogue" (alarm) — same product category
+2. Fable 5 sabotage "Could Have 'Sabotaged'" (conditional, apology-centered) vs NameTag "quietly embedded" (definitive, investigation-led)
+3. Severity inversion: Anthropic ACTIVE harm (degraded outputs, wasted tokens) vs Meta DORMANT code (never activated) — higher harm got softer treatment
+
+**Financial mechanism:** Condé Nast-OpenAI deal → competitor halo for Anthropic ($0 threat). Maxwell Zeff covers both with asymmetric source access.
+
+**Test file:** `test_wired_anthropic_agent_framing_asymmetry_aug12.py` — 10 classes, 46 tests, all passing. Fixed `_get_mechanism()` dict iteration pattern across all test classes. Updated 02am/06am cross-validation tests for mechanism #62.
+
+**Infrastructure:** 10,370 tests across 324 test files. Commit `d50947f`, pushed to GitHub.
+
 ## Iteration 62 — 2026-08-12 06:00 PT (Type D: Test & Verify)
 
 ### Bug Found & Fixed: Mechanism #60/#61 Data Integrity — Misplaced Confounding Factors

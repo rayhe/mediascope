@@ -8847,6 +8847,19 @@ journalists:
     from those who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct
     comparison with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment
     or institutional culture is the stronger framing determinant within a single publication.'
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 63
+      pattern: source_access_institutional_alignment
+      description: 'Cross-publication framing shift correlates with institutional financial incentives. At Gizmodo (G/O Media,
+        no AI deals): adversarial coverage of ALL companies including Meta (Project Ghostbusters) and OpenAI (board crisis).
+        At WIRED (Condé Nast, OpenAI deal Aug 2024): bifurcated coverage — Meta receives institutional-decay framing (layoffs,
+        morale); OpenAI/Anthropic receive access-based business journalism (executive profiles, revenue scoops). Source access
+        asymmetry reinforces: cultivated inside access at Anthropic (Boris Cherny, Claude Code ARR exclusive) and OpenAI (Brockman
+        interviews, internal memos); no comparable Meta AI access. WIRED output Nov 2025-Aug 2026: 6+ OpenAI, 3+ Anthropic,
+        0 dedicated Meta AI business pieces. Third Gizmodo→WIRED migration under Barrett — adversarial instincts selectively
+        channeled (applied to Meta, muted for OpenAI/Anthropic). CONTRAST with #60 (Hao target-shift) and #57 (Seetharaman
+        frame-lock): Zeff shows FRAMING-shift — same companies, different treatment at different outlets.'
 - career:
   - beat: Apple, consumer technology
     end: 2009-01
