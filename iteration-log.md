@@ -33664,3 +33664,67 @@ e024c92 — pushed to GitHub
 
 ### Commit
 b198a6f — pushed to GitHub
+
+---
+
+## Iteration — 2026-08-11 22:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Mechanism #55 — Privacy Innovation Attribution Inversion
+
+Cross-journalist framing analysis of Meta's industry-first camera-disable feature (Jul 7) vs Samsung Galaxy Glasses privacy toggle (Jul 22) vs Apple smart glasses delay (Jul 26). Same privacy concern (cameras on faces), inverted framing by company identity.
+
+### Evidence
+- Ben Schoon (9to5Google): "inherently a privacy nightmare" for Meta's innovation
+- Chandra Steele (Android Police): "but women's safety remains an issue" qualifier
+- Digital Trends: "creep's weapon" framing subordinates innovation to narrative
+- PetaPixel: "listening to the criticism" reactive framing
+- Kyle Barr (Gizmodo): Samsung covered neutrally, Meta praised for build quality
+- WebProNews: Apple's delay framed as "prioritizing privacy" vs Meta's "baggage"
+- Fast Company (SA): "The Problem with MetaRayBan glasses" litany framing
+
+### Changes
+- New: `tests/test_privacy_innovation_attribution_inversion_aug11.py` (56 tests, 9 classes)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #55 in cross_publication_findings)
+- Updated: `profiles/competitor-entities.yaml` (Samsung + Apple _ref pointers)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (10,078 tests / 315 files)
+
+### Test Results
+- 56/56 mechanism tests passing
+- 124/124 structural consistency tests passing (including README/ARCHITECTURE listing checks)
+- Total: 10,078 tests across 315 files
+
+### Commit
+0f5a802 — pushed to GitHub
+
+---
+
+## Iteration #56 — 2026-08-11 23:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Duration:** ~15 min
+**Mechanism:** #56 — The Verge Intra-Publication Beat Segregation Effect
+
+### Finding
+At The Verge (PMC/Vox Media), platform/product reporter Jess Weatherbed covers Meta features with neutral language ("adds," "rolls out," "new open-weight AI model") while AI/industry beat reporter Hayden Field (joined from CNBC Jun 2025) covers Meta with deficit/follower language ("reentering the AI race," "catching up to OpenAI/Anthropic"). The SAME publication, in the SAME week, produces both framings for the SAME entity.
+
+This is a structural artifact of beat assignment, not journalist personality: the AI beat functionally operates as the "OpenAI/Anthropic beat" because they are market leaders, and covering Meta through that lens necessarily produces deficit framing. PMC/Vox Media's OpenAI content licensing deal ($0 Meta relationship) correlates — the AI beat concentrates on the deal partner with aspirational framing.
+
+### Novelty
+First mechanism documenting different-journalist, same-publication, same-entity framing divergence. Prior mechanisms documented: same journalist/different genres (#30, #31), same journalist/different entities (#20, #24), different publications/same entity (many). This adds the intra-publication controlled comparison.
+
+### Evidence
+- Weatherbed: Muse Glimmer (Aug 10), WhatsApp translation, Threads group chats, AI system cards deep dive, scam detection tools, CTO demo explanation
+- Field: AI coding race, researcher recruitment deficit, OpenAI/Anthropic competitive framing
+- Sources: Techmeme citations, Muck Rack profile
+
+### Changes
+- New: `tests/test_verge_intra_publication_beat_segregation_aug11.py` (23 tests, 9 classes)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #56 in cross_publication_findings)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (10,101 tests / 316 files)
+
+### Test Results
+- 23/23 mechanism tests passing
+- 124/124 structural consistency tests passing
+- Total: 10,101 tests across 316 files
+
+### Commit
+(pending)

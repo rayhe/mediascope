@@ -4103,23 +4103,19 @@ cross_publication_findings:
     rotation_type: A
     date_added: '2026-08-11'
     discovery_date: '2026-08-11'
-    finding_summary: 'The Financial Times broke exclusive stories on BOTH Anthropic and Meta raising
-      tens of billions of dollars for AI infrastructure in H1 2026. The framing divergence is stark:
-      Anthropic''s four fundraising events (Jan-May 2026, $20B-$50B raises, $350B-$900B valuations)
-      received aspiration/confidence language -- "six times the interest originally expected," "inbound
-      investment offers," "investors ready to throw any dollar amount," "insatiable demand." Meta''s
-      equity raise exploration (Jun 5, 2026) received desperation/uncertainty language -- "exploring
-      creative ways to raise cash," "seeks new sources of capital," "premature to conclude Meta had
-      settled on a financing strategy." Meta''s stock dropped 6.6% on the FT report. Both companies
-      were doing fundamentally the same thing: raising tens of billions for AI infrastructure. FT was
-      the primary source for both stories, eliminating source-access as an explanation. The asymmetry
-      is ecosystem-level, not company-specific: FT was neutral-to-negative about OpenAI in its Apr 14
-      piece (investors having "second thoughts" about OpenAI due to Anthropic''s rise), ruling out
-      pure "FT protects its deal partner" explanations. Instead, FT frames the AI lab ecosystem
-      (which pays publishers for content) aspirationally while framing Meta (which ended Facebook
-      News payments in 2022 and pays publishers $0) as financially stressed. FT has a confirmed
-      OpenAI content licensing deal (announced Apr 29, 2024 by AI Editor Madhumita Murgia).
-      Anthropic has 20+ content licensing deals. Meta pays $0.'
+    finding_summary: 'The Financial Times broke exclusive stories on BOTH Anthropic and Meta raising tens of billions of dollars
+      for AI infrastructure in H1 2026. The framing divergence is stark: Anthropic''s four fundraising events (Jan-May 2026,
+      $20B-$50B raises, $350B-$900B valuations) received aspiration/confidence language -- "six times the interest originally
+      expected," "inbound investment offers," "investors ready to throw any dollar amount," "insatiable demand." Meta''s equity
+      raise exploration (Jun 5, 2026) received desperation/uncertainty language -- "exploring creative ways to raise cash,"
+      "seeks new sources of capital," "premature to conclude Meta had settled on a financing strategy." Meta''s stock dropped
+      6.6% on the FT report. Both companies were doing fundamentally the same thing: raising tens of billions for AI infrastructure.
+      FT was the primary source for both stories, eliminating source-access as an explanation. The asymmetry is ecosystem-level,
+      not company-specific: FT was neutral-to-negative about OpenAI in its Apr 14 piece (investors having "second thoughts"
+      about OpenAI due to Anthropic''s rise), ruling out pure "FT protects its deal partner" explanations. Instead, FT frames
+      the AI lab ecosystem (which pays publishers for content) aspirationally while framing Meta (which ended Facebook News
+      payments in 2022 and pays publishers $0) as financially stressed. FT has a confirmed OpenAI content licensing deal (announced
+      Apr 29, 2024 by AI Editor Madhumita Murgia). Anthropic has 20+ content licensing deals. Meta pays $0.'
     publication: Financial Times
     entities_compared:
     - Anthropic
@@ -4128,51 +4124,50 @@ cross_publication_findings:
     - date: '2026-01-27'
       amount_billions: 20
       valuation_billions: 350
-      ft_framing: 'aspirational — "six times the interest originally expected," oversubscribed'
+      ft_framing: aspirational — "six times the interest originally expected," oversubscribed
       source: Reuters relay of FT exclusive
     - date: '2026-04-14'
       amount_billions: null
       valuation_billions: 380
-      ft_framing: 'aspirational — Anthropic as "relative bargain," demand "insatiable," contrasted
-        with OpenAI investors having "second thoughts"'
+      ft_framing: aspirational — Anthropic as "relative bargain," demand "insatiable," contrasted with OpenAI investors having
+        "second thoughts"
       source: TechCrunch relay of FT exclusive
     - date: '2026-05-07'
       amount_billions: 50
       valuation_billions: 900
-      ft_framing: 'aspirational — "inbound investment offers," "investors ready to throw any dollar
-        amount," "annualized revenue nearing $45B"'
+      ft_framing: aspirational — "inbound investment offers," "investors ready to throw any dollar amount," "annualized revenue
+        nearing $45B"
       source: FT exclusive relayed by PYMNTS, Blockonomi, Intellectia
     - date: '2026-05-15'
       amount_billions: 30
       valuation_billions: 900
-      ft_framing: 'aspirational — "strong investor demand," "came together in weeks"'
+      ft_framing: aspirational — "strong investor demand," "came together in weeks"
       source: FT exclusive relayed by SpendNode, TechTimes
     anthropic_framing_language:
-    - 'six times the interest originally expected'
-    - 'demand for Anthropic shares has grown nearly insatiable'
-    - 'investors ready to throw any dollar amount at Anthropic'
-    - 'inbound investment offers'
-    - 'strong investor demand'
-    - 'came together in weeks'
-    - 'annualized revenue nearing $45B'
+    - six times the interest originally expected
+    - demand for Anthropic shares has grown nearly insatiable
+    - investors ready to throw any dollar amount at Anthropic
+    - inbound investment offers
+    - strong investor demand
+    - came together in weeks
+    - annualized revenue nearing $45B
     meta_capital_event:
       date: '2026-06-05'
-      amount_billions: 'tens of billions (unspecified)'
+      amount_billions: tens of billions (unspecified)
       type: public equity offering (stock sale)
       stock_impact_percent: -6.6
-      ft_framing: 'desperation/uncertainty — "exploring creative ways to raise cash," "seeks new
-        sources of capital," "premature to conclude," spokesperson called it "pure speculation"'
+      ft_framing: desperation/uncertainty — "exploring creative ways to raise cash," "seeks new sources of capital," "premature
+        to conclude," spokesperson called it "pure speculation"
     meta_framing_language:
-    - 'exploring "creative" ways to raise cash'
-    - 'seeks new sources of capital'
-    - 'premature to conclude Meta had settled on a financing strategy'
-    - 'all options remain under consideration'
+    - exploring "creative" ways to raise cash
+    - seeks new sources of capital
+    - premature to conclude Meta had settled on a financing strategy
+    - all options remain under consideration
     framing_delta:
       anthropic_tone: aspirational
       meta_tone: desperation
-      delta_description: 'Same publication, same topic (raising billions for AI), same 5-month
-        window, FT as primary source for both — yet Anthropic gets confidence/momentum language
-        while Meta gets uncertainty/stress language'
+      delta_description: Same publication, same topic (raising billions for AI), same 5-month window, FT as primary source
+        for both — yet Anthropic gets confidence/momentum language while Meta gets uncertainty/stress language
     temporal_window_months: 5
     ft_primary_source_both: true
     ft_openai_negative_coverage_documented: true
@@ -4181,64 +4176,50 @@ cross_publication_findings:
       ft_openai_deal_date: '2024-04-29'
       ft_openai_deal_announced_by: Madhumita Murgia (FT AI Editor)
       anthropic_content_licensor: true
-      anthropic_content_deals_count: '20+'
+      anthropic_content_deals_count: 20+
       meta_publisher_payments_post_2022: 0
-      meta_facebook_news_ended: '2022-07'
-    structural_insight: 'The asymmetry is NOT "FT protects OpenAI" — FT ran negative OpenAI coverage
-      in the Apr 14 piece. The asymmetry operates at the ecosystem level: FT is financially aligned
-      with the AI lab ecosystem (OpenAI deal, potential future Anthropic deal, general publisher
-      content licensing economy). Companies that pay publishers (Anthropic, OpenAI) receive
-      aspirational framing. Companies that DON''T pay publishers (Meta) receive stress framing.
-      The mechanism is "content licensing ecosystem alignment" not "specific deal partner protection."
-      This is the first documented case where FT''s framing predicts ecosystem-level not
-      company-level bias.'
+      meta_facebook_news_ended: 2022-07
+    structural_insight: 'The asymmetry is NOT "FT protects OpenAI" — FT ran negative OpenAI coverage in the Apr 14 piece.
+      The asymmetry operates at the ecosystem level: FT is financially aligned with the AI lab ecosystem (OpenAI deal, potential
+      future Anthropic deal, general publisher content licensing economy). Companies that pay publishers (Anthropic, OpenAI)
+      receive aspirational framing. Companies that DON''T pay publishers (Meta) receive stress framing. The mechanism is "content
+      licensing ecosystem alignment" not "specific deal partner protection." This is the first documented case where FT''s
+      framing predicts ecosystem-level not company-level bias.'
     confounding_factors:
-    - factor: 'Private vs public: Anthropic raised private VC capital; Meta explored public equity,
-        which dilutes existing shareholders'
-      rebuttal: 'Framing difference is about LANGUAGE, not structure. "Exploring creative ways to
-        raise cash" implies financial distress regardless of instrument. A neutral reporter would
-        frame both as "raising capital to fund AI ambitions." Alphabet''s $85B equity raise was
-        framed neutrally by most outlets. FT chose loaded language specifically for Meta.'
-    - factor: 'Dilution risk: public equity offerings dilute existing shareholders, justifying
-        negative market reaction'
-      rebuttal: 'Stock impact (6.6% drop) is market reaction to the FT REPORT, not to a confirmed
-        offering. Meta called it "pure speculation." FT''s framing created the negative market
-        signal. A neutrally framed report ("Meta evaluates options to fund AI expansion") would
-        not have caused the same reaction.'
-    - factor: 'Growth rate: Anthropic was growing revenue 5x in 8 months (from $9B to $45B ARR);
-        Meta''s growth rate is lower'
-      rebuttal: 'Meta''s Q2 2026 revenue was $60.8B quarterly ($243B ARR) — FIVE TIMES Anthropic''s
-        $45B ARR. Meta is the larger, more profitable company. High growth rate alone does not
-        justify describing capital-raising as "creative ways to raise cash." Anthropic''s growth
-        is impressive but its absolute revenue is a fraction of Meta''s.'
-    - factor: 'Profitability: Meta is profitable while Anthropic likely is not (common for
-        high-growth startups)'
-      rebuttal: 'If anything, Meta''s profitability should make its capital raise LESS alarming.
-        A profitable company exploring options to fund growth is routine. FT framed it as
-        distress, which is the opposite of what financial fundamentals suggest.'
-    - factor: 'Track record: Anthropic is a "new" AI lab with momentum; Meta has a "metaverse
-        money pit" narrative'
-      rebuttal: 'The "money pit" narrative is itself a media construct. Meta''s RL losses ($8.6B
-        H1 2026) are material but offset by $60.8B quarterly revenue. FT''s choice to frame
-        Meta''s raise as distress while framing Anthropic''s as confidence reflects the narrative
-        FT has already constructed, not financial reality.'
-    - factor: 'Different reporters may have written the two stories with different editorial
-        instincts'
-      rebuttal: 'Institutional framing. Both stories went through FT editorial process with
-        headline selection, language review. FT''s editorial DNA determines language choices.
-        The dual-lens mechanism (Mechanism #7) documents that FT systematically assigns different
-        editorial lenses to AI labs vs platform companies.'
-    - factor: 'Anthropic''s oversubscription is genuinely noteworthy as financial news'
-      rebuttal: 'Meta''s potential equity raise is equally noteworthy — first major public equity
-        offering by a MAG7 company for AI. The financial novelty argument applies to both. FT
-        chose to frame one as validation and the other as stress.'
-    testable_prediction: 'If the ecosystem-level framing mechanism is real: (1) FT will continue
-      framing Anthropic''s IPO aspirationally even if valuation concerns emerge (2) FT will frame
-      Meta''s future capital actions (debt, equity, or hybrid) with stress/uncertainty language
-      (3) When Anthropic''s S-1 reveals unprofitable operations, FT will frame this as "growth
-      investment" not "unsustainable burn" — the opposite framing it uses for Meta RL losses
-      (4) If Meta signs a content licensing deal with FT, the framing will shift within 6 months.
-      If ANY of these predictions FAIL, the mechanism needs revision.'
+    - factor: 'Private vs public: Anthropic raised private VC capital; Meta explored public equity, which dilutes existing
+        shareholders'
+      rebuttal: Framing difference is about LANGUAGE, not structure. "Exploring creative ways to raise cash" implies financial
+        distress regardless of instrument. A neutral reporter would frame both as "raising capital to fund AI ambitions."
+        Alphabet's $85B equity raise was framed neutrally by most outlets. FT chose loaded language specifically for Meta.
+    - factor: 'Dilution risk: public equity offerings dilute existing shareholders, justifying negative market reaction'
+      rebuttal: Stock impact (6.6% drop) is market reaction to the FT REPORT, not to a confirmed offering. Meta called it
+        "pure speculation." FT's framing created the negative market signal. A neutrally framed report ("Meta evaluates options
+        to fund AI expansion") would not have caused the same reaction.
+    - factor: 'Growth rate: Anthropic was growing revenue 5x in 8 months (from $9B to $45B ARR); Meta''s growth rate is lower'
+      rebuttal: Meta's Q2 2026 revenue was $60.8B quarterly ($243B ARR) — FIVE TIMES Anthropic's $45B ARR. Meta is the larger,
+        more profitable company. High growth rate alone does not justify describing capital-raising as "creative ways to raise
+        cash." Anthropic's growth is impressive but its absolute revenue is a fraction of Meta's.
+    - factor: 'Profitability: Meta is profitable while Anthropic likely is not (common for high-growth startups)'
+      rebuttal: If anything, Meta's profitability should make its capital raise LESS alarming. A profitable company exploring
+        options to fund growth is routine. FT framed it as distress, which is the opposite of what financial fundamentals
+        suggest.
+    - factor: 'Track record: Anthropic is a "new" AI lab with momentum; Meta has a "metaverse money pit" narrative'
+      rebuttal: The "money pit" narrative is itself a media construct. Meta's RL losses ($8.6B H1 2026) are material but offset
+        by $60.8B quarterly revenue. FT's choice to frame Meta's raise as distress while framing Anthropic's as confidence
+        reflects the narrative FT has already constructed, not financial reality.
+    - factor: Different reporters may have written the two stories with different editorial instincts
+      rebuttal: 'Institutional framing. Both stories went through FT editorial process with headline selection, language review.
+        FT''s editorial DNA determines language choices. The dual-lens mechanism (Mechanism #7) documents that FT systematically
+        assigns different editorial lenses to AI labs vs platform companies.'
+    - factor: Anthropic's oversubscription is genuinely noteworthy as financial news
+      rebuttal: Meta's potential equity raise is equally noteworthy — first major public equity offering by a MAG7 company
+        for AI. The financial novelty argument applies to both. FT chose to frame one as validation and the other as stress.
+    testable_prediction: 'If the ecosystem-level framing mechanism is real: (1) FT will continue framing Anthropic''s IPO
+      aspirationally even if valuation concerns emerge (2) FT will frame Meta''s future capital actions (debt, equity, or
+      hybrid) with stress/uncertainty language (3) When Anthropic''s S-1 reveals unprofitable operations, FT will frame this
+      as "growth investment" not "unsustainable burn" — the opposite framing it uses for Meta RL losses (4) If Meta signs
+      a content licensing deal with FT, the framing will shift within 6 months. If ANY of these predictions FAIL, the mechanism
+      needs revision.'
     source_urls:
     - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
     - https://www.reuters.com/world/asia-pacific/sequoia-join-gic-coatue-anthropic-investment-ft-reports-2026-01-18/
@@ -4558,34 +4539,29 @@ cross_publication_findings:
     - Chandra Steele (Android Police)
     - Kyle Barr (Gizmodo)
     publication: Cross-publication (9to5Google, Android Police, Digital Trends, PetaPixel, Gizmodo, WebProNews, Fast Company)
-    finding_summary: >
-      Meta announced an industry-first privacy feature on July 7, 2026: smart glasses
-      camera automatically disables if the LED indicator is physically tampered with or
-      destroyed. Meta explicitly stated: "No other kind of camera has done this and we're
-      proud to lead the industry forward." Despite being genuinely first-in-industry,
-      coverage across publications framed this as reactive damage control. Fifteen days
-      later (Jul 22), Samsung unveiled Galaxy Glasses with a physical privacy toggle —
-      framed neutrally as a product feature. Nineteen days later (Jul 26), Apple's smart
-      glasses delay was reported as "prioritizing privacy" — framed aspirationally. The
-      SAME privacy concern (cameras on faces) receives INVERTED framing based on which
-      company implements the solution. This constitutes a Privacy Innovation Attribution
-      Inversion: when Meta leads on privacy, the framing is "catching up to criticism";
-      when competitors follow or delay, the framing is "responsible" or "innovative."
-      The asymmetry is strongest in language choice — "privacy nightmare" and "nefarious
-      means" vs "privacy feature" and "takes privacy seriously" — for functionally
-      identical hardware decisions.
+    finding_summary: 'Meta announced an industry-first privacy feature on July 7, 2026: smart glasses camera automatically
+      disables if the LED indicator is physically tampered with or destroyed. Meta explicitly stated: "No other kind of camera
+      has done this and we''re proud to lead the industry forward." Despite being genuinely first-in-industry, coverage across
+      publications framed this as reactive damage control. Fifteen days later (Jul 22), Samsung unveiled Galaxy Glasses with
+      a physical privacy toggle — framed neutrally as a product feature. Nineteen days later (Jul 26), Apple''s smart glasses
+      delay was reported as "prioritizing privacy" — framed aspirationally. The SAME privacy concern (cameras on faces) receives
+      INVERTED framing based on which company implements the solution. This constitutes a Privacy Innovation Attribution Inversion:
+      when Meta leads on privacy, the framing is "catching up to criticism"; when competitors follow or delay, the framing
+      is "responsible" or "innovative." The asymmetry is strongest in language choice — "privacy nightmare" and "nefarious
+      means" vs "privacy feature" and "takes privacy seriously" — for functionally identical hardware decisions.
+
+      '
     mechanism: privacy_innovation_attribution_inversion
     articles:
     - publication: 9to5Google
       journalist: Ben Schoon
       date: '2026-07-07'
-      title: 'Meta Ray-Ban glasses now disable the camera if privacy light breaks'
+      title: Meta Ray-Ban glasses now disable the camera if privacy light breaks
       url: https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
       tone: adversarial
-      tone_score: -0.60
-      framing: 'Opening line: "Smart glasses with a camera are inherently a privacy
-        nightmare." Uses "nefarious means" for users, "intense public backlash" for
-        context. Innovation subordinated to threat narrative.'
+      tone_score: -0.6
+      framing: 'Opening line: "Smart glasses with a camera are inherently a privacy nightmare." Uses "nefarious means" for
+        users, "intense public backlash" for context. Innovation subordinated to threat narrative.'
       key_language:
       - inherently a privacy nightmare
       - nefarious means
@@ -4593,55 +4569,50 @@ cross_publication_findings:
     - publication: Android Police
       journalist: Chandra Steele
       date: '2026-07-08'
-      title: 'Meta updates smart glasses to curb covert filming, but women''s safety remains an issue'
+      title: Meta updates smart glasses to curb covert filming, but women's safety remains an issue
       url: https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/
       tone: adversarial
       tone_score: -0.55
-      framing: 'Frames innovation as insufficient with "but women''s safety remains an
-        issue" qualifier in headline. Innovation acknowledged but immediately undercut
-        by unresolved concern framing.'
+      framing: Frames innovation as insufficient with "but women's safety remains an issue" qualifier in headline. Innovation
+        acknowledged but immediately undercut by unresolved concern framing.
       key_language:
       - curb covert filming
       - but women's safety remains an issue
     - publication: Digital Trends
       journalist: null
       date: '2026-07-08'
-      title: 'Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light'
+      title: Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light
       url: https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
       tone: adversarial
-      tone_score: -0.50
-      framing: 'Frame: "Ever since Meta launched its first smart glasses...they have
-        built a reputation as a creep''s weapon." Innovation is subordinated to
-        accumulated narrative — the new feature is positioned as partial mitigation
-        of an inherent flaw rather than a proactive advance.'
+      tone_score: -0.5
+      framing: 'Frame: "Ever since Meta launched its first smart glasses...they have built a reputation as a creep''s weapon."
+        Innovation is subordinated to accumulated narrative — the new feature is positioned as partial mitigation of an inherent
+        flaw rather than a proactive advance.'
       key_language:
       - creep's weapon
       - built a reputation
     - publication: PetaPixel
       journalist: null
       date: '2026-07-08'
-      title: 'If users conceal the recording light on smart glasses, Meta says it will disable the camera'
+      title: If users conceal the recording light on smart glasses, Meta says it will disable the camera
       url: https://petapixel.com/2026/07/08/if-users-conceal-the-recording-light-on-smart-glasses-meta-says-it-will-disable-the-camera/
       tone: mixed-reactive
       tone_score: -0.25
-      framing: 'Relatively balanced: "Meta is listening to the criticism" and "promising"
-        but still frames as reactive (listening to criticism) rather than innovative
-        (leading the industry). Most balanced of the Meta coverage set.'
+      framing: 'Relatively balanced: "Meta is listening to the criticism" and "promising" but still frames as reactive (listening
+        to criticism) rather than innovative (leading the industry). Most balanced of the Meta coverage set.'
       key_language:
       - listening to the criticism
       - promising
     - publication: Gizmodo
       journalist: Kyle Barr
       date: '2026-07-22'
-      title: 'Samsung let me touch its Warby Parker x Gentle Monster smart glasses, but not wear them'
+      title: Samsung let me touch its Warby Parker x Gentle Monster smart glasses, but not wear them
       url: https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
       tone: neutral-positive
-      tone_score: +0.10
-      framing: 'Privacy toggle mentioned as a product feature, not a response to
-        controversy. Even favorably compared Meta build quality: "Ray-Ban Meta AI
-        glasses...feel more high-end." Zero surveillance/nightmare vocabulary despite
-        identical camera hardware. Same journalist (Barr) who covers Meta adversarially
-        elsewhere.'
+      tone_score: 0.1
+      framing: 'Privacy toggle mentioned as a product feature, not a response to controversy. Even favorably compared Meta
+        build quality: "Ray-Ban Meta AI glasses...feel more high-end." Zero surveillance/nightmare vocabulary despite identical
+        camera hardware. Same journalist (Barr) who covers Meta adversarially elsewhere.'
       key_language:
       - feel more high-end
       - privacy toggle
@@ -4651,11 +4622,10 @@ cross_publication_findings:
       title: 'Apple''s Privacy Reckoning: Why Smart Glasses Face Another Year in the Lab'
       url: https://www.webpronews.com/apples-privacy-reckoning-why-smart-glasses-face-another-year-in-the-lab/
       tone: aspirational
-      tone_score: +0.15
-      framing: 'Frames Apple delay as responsible leadership: Meta''s glasses carry
-        "privacy baggage" while Apple "wants none of it." Delay framed as principled
-        restraint rather than competitive failure. References Gurman: Apple privacy
-        work is "priority No. 1."'
+      tone_score: 0.15
+      framing: 'Frames Apple delay as responsible leadership: Meta''s glasses carry "privacy baggage" while Apple "wants none
+        of it." Delay framed as principled restraint rather than competitive failure. References Gurman: Apple privacy work
+        is "priority No. 1."'
       key_language:
       - privacy baggage
       - Apple wants none of it
@@ -4663,47 +4633,144 @@ cross_publication_findings:
     - publication: Fast Company (SA)
       journalist: null
       date: '2026-07-10'
-      title: 'The Problem with MetaRayBan glasses'
+      title: The Problem with MetaRayBan glasses
       url: https://fastcompany.co.za/tech/2026-07-10-the-problem-with-metarayban-glasses/
       tone: adversarial
       tone_score: -0.55
-      framing: 'Frames Meta''s privacy update within a litany of controversies: "court
-        bans to paywalled features to LED light hacks." The update is presented as one
-        in a series of problems, not as a solution.'
+      framing: 'Frames Meta''s privacy update within a litany of controversies: "court bans to paywalled features to LED light
+        hacks." The update is presented as one in a series of problems, not as a solution.'
       key_language:
       - court bans
       - paywalled features
       - LED light hacks
     confounding_factors:
-    - 'Meta has a longer track record of privacy controversies (Cambridge Analytica,
-      FTC consent decree, etc.) which creates legitimate editorial priors that do not
-      apply to Samsung or Apple in the same way.'
-    - 'Meta''s smart glasses are already shipping with documented misuse incidents;
-      Samsung''s and Apple''s glasses have not shipped yet and therefore have not faced
-      real-world privacy testing.'
-    - 'Meta''s camera-disable update was directly triggered by reported misuse (users
-      covering the LED indicator) — it IS genuinely reactive to a specific problem,
-      even if the solution is industry-first.'
-    - 'Samsung and Apple have not yet faced the same real-world testing that exposed
-      Meta''s privacy challenges, making direct framing comparison inherently unequal.'
-    - 'Market leaders receive more scrutiny than followers — Meta holds ~90%+ smart
-      glasses market share as of mid-2026, making it the natural editorial target for
-      category concerns.'
-    - 'Reporter expertise differs: tech product writers covering Samsung launches
-      apply different editorial standards than privacy/policy beat reporters covering
-      Meta updates.'
+    - Meta has a longer track record of privacy controversies (Cambridge Analytica, FTC consent decree, etc.) which creates
+      legitimate editorial priors that do not apply to Samsung or Apple in the same way.
+    - Meta's smart glasses are already shipping with documented misuse incidents; Samsung's and Apple's glasses have not shipped
+      yet and therefore have not faced real-world privacy testing.
+    - Meta's camera-disable update was directly triggered by reported misuse (users covering the LED indicator) — it IS genuinely
+      reactive to a specific problem, even if the solution is industry-first.
+    - Samsung and Apple have not yet faced the same real-world testing that exposed Meta's privacy challenges, making direct
+      framing comparison inherently unequal.
+    - Market leaders receive more scrutiny than followers — Meta holds ~90%+ smart glasses market share as of mid-2026, making
+      it the natural editorial target for category concerns.
+    - 'Reporter expertise differs: tech product writers covering Samsung launches apply different editorial standards than
+      privacy/policy beat reporters covering Meta updates.'
     testable_predictions:
-    - 'When Samsung Galaxy Glasses ship in Fall 2026, privacy incidents will occur
-      (identical camera hardware enables identical misuse) — coverage will NOT use
-      "privacy nightmare" framing that was applied to Meta''s identical product.'
-    - 'If Samsung copies or is found to already implement Meta''s camera-disable-on-
-      tampering feature, it will be framed as "Samsung includes privacy protection"
-      rather than "Samsung responds to privacy backlash."'
-    - 'Apple''s eventual smart glasses launch (2027+) will receive "Apple leads on
-      privacy" framing for features Meta already shipped in July 2026, regardless of
-      chronological priority.'
+    - When Samsung Galaxy Glasses ship in Fall 2026, privacy incidents will occur (identical camera hardware enables identical
+      misuse) — coverage will NOT use "privacy nightmare" framing that was applied to Meta's identical product.
+    - If Samsung copies or is found to already implement Meta's camera-disable-on- tampering feature, it will be framed as
+      "Samsung includes privacy protection" rather than "Samsung responds to privacy backlash."
+    - Apple's eventual smart glasses launch (2027+) will receive "Apple leads on privacy" framing for features Meta already
+      shipped in July 2026, regardless of chronological priority.
     test_file: tests/test_privacy_innovation_attribution_inversion_aug11.py
     test_count: 56
+  verge_intra_publication_beat_segregation:
+    mechanism_id: 56
+    mechanism_name: The Verge Intra-Publication Beat Segregation Effect
+    finding_type: intra_publication_beat_segregation
+    rotation_type: B
+    discovery_date: '2026-08-11'
+    date_added: '2026-08-11'
+    publication: The Verge (PMC / Vox Media)
+    journalist: Jess Weatherbed (platform/product beat) vs Hayden Field (AI/industry beat)
+    finding_summary: 'The Verge applies systematically different framing to Meta depending on beat assignment. Platform/product
+      reporter Jess Weatherbed covers Meta features with neutral language: "Meta has a new open-weight AI model" (Muse Glimmer,
+      Aug 10 2026), "Meta starts rolling out built-in message translation in WhatsApp," "Meta adds group chats to Threads,"
+      "Meta publishes a deep dive into how AI recommends content" — standard feature-story register treating Meta as a tech
+      company shipping products. AI/industry beat reporter Hayden Field (joined from CNBC Jun 2025) covers Meta with deficit/follower
+      language: "reentering the AI race," researchers "rejected Meta''s offers," "catching up to OpenAI and Anthropic" — positioning
+      Meta as a laggard in a race defined by OpenAI/Anthropic leadership.
+
+
+      This produces the intra-publication beat segregation effect: in the SAME week, The Verge publishes Weatherbed writing
+      "Meta has a new open-weight AI model" (neutral, feature-story) alongside Field writing about Meta''s AI deficit vs OpenAI/Anthropic
+      (competitive, follower framing). The framing divergence is NOT driven by journalist personality — it is a structural
+      artifact of beat assignment. The AI beat functionally operates as the "OpenAI/Anthropic beat" because those companies
+      ARE the market leaders; when it covers Meta, it necessarily positions Meta relative to those leaders, producing deficit
+      language.
+
+
+      Financial relationship correlation: PMC/Vox Media has an OpenAI content licensing deal. Meta has no content deal with
+      PMC ($0 relationship). The AI beat concentrates coverage on the deal partner (OpenAI) and its closest competitor (Anthropic),
+      generating aspirational framing for both. When the AI beat covers Meta, it frames Meta through the lens of OpenAI/Anthropic
+      leadership.
+
+
+      NOVELTY: This is the first mechanism documenting framing divergence between different journalists at the SAME publication
+      covering the SAME entity. Prior mechanisms documented: same journalist different genres (#30 Chokkattu, #31 Pero), same
+      journalist different entities (#20 Knibbs, #24 Newton), different publications same entity (many). This adds: different
+      journalists + same publication + same entity + different beat assignments → different framing directions.'
+    platform_beat_reporters:
+      Jess Weatherbed:
+        role: Platform/product reporter
+        framing_register: neutral-to-positive feature language
+        meta_coverage_examples:
+        - Meta has a new open-weight AI model (Muse Glimmer, Aug 10 2026)
+        - Meta starts rolling out built-in message translation in WhatsApp (19+ languages)
+        - Meta adds group chats to Threads (up to 50 followers)
+        - Meta publishes deep dive into AI recommendation system (22 system cards)
+        - Meta adds more scam detection tools (WhatsApp device linking, FB friend request warnings)
+        - Meta CTO explains live demo technical issues (self-inflicted DDoS, glasses sleep bug)
+        framing_language:
+        - adds
+        - rolls out
+        - launches
+        - starts
+        - publishes
+        - new
+        - explains
+    ai_beat_reporters:
+      Hayden Field:
+        role: AI/industry beat reporter (joined from CNBC Jun 2025)
+        framing_register: deficit/follower/competitive language
+        meta_coverage_framing:
+        - Meta "reentering" or "catching up in" the AI race
+        - Researchers "rejected" Meta offers (positioning Meta as undesirable employer)
+        - Meta positioned relative to OpenAI/Anthropic leadership
+        - Deficit framing in AI model comparisons
+        framing_language:
+        - race
+        - catching up
+        - reentering
+        - behind
+        - rejected
+        - deficit
+    structural_insight: 'Beat segregation is not bias — it is an editorial structure that produces differential framing as
+      an emergent property. The AI beat at any publication would naturally center OpenAI/Anthropic because they are market
+      leaders. The asymmetry-relevant observation is that this structural effect aligns with PMC financial relationships:
+      the beat that covers deal partners (OpenAI) produces aspirational framing, while the same beat covering non-deal partners
+      (Meta) produces deficit framing. Product beats, which are not aligned with content deals, produce neutral coverage of
+      all entities.'
+    financial_context:
+      pmc_openai_deal: Active content licensing deal
+      pmc_meta_deal: $0 — no content licensing relationship
+      correlation: AI beat concentrates on deal-partner entity with aspirational framing
+    confounding_factors:
+    - Product beats legitimately cover different news types (launches vs industry trends)
+    - Meta IS behind OpenAI/Anthropic on some coding benchmarks — deficit framing has factual basis
+    - Weatherbed and Field have different career backgrounds, training, and editorial styles
+    - Field joined The Verge Jun 2025 from CNBC — her Verge sample is 14 months
+    - Product reporters at ALL publications tend toward neutral feature coverage — not Verge-specific
+    - The AI beat at ANY publication would naturally center market leaders (structural not conspiratorial)
+    legitimate_factors: 6
+    test_file: tests/test_verge_intra_publication_beat_segregation_aug11.py
+    cross_references:
+    - 'Mechanism #52: Hayden Field AI Beat Concentration (extends — adds intra-publication comparison)'
+    - 'Mechanism #30: Chokkattu Temporal Framing Oscillation (same journalist, different genres — this mechanism is different
+      journalists, same publication)'
+    - 'Mechanism #31: James Pero Editorial Direction Override (same journalist, different framing — prior art for framing
+      divergence)'
+    - 'Mechanism #45: Will Knight Gemini Vocabulary Gradient (WIRED AI beat — parallel AI beat effect at different publication)'
+    - 'Mechanism #53: WIRED Apple PCC Privacy Pivot Coverage Asymmetry (publication-level framing — this adds journalist-level
+      granularity)'
+    source_urls:
+    - https://www.techmeme.com/230629/p15
+    - https://www.techmeme.com/250923/p20
+    - https://www.techmeme.com/260310/p25
+    - https://www.techmeme.com/250919/p13
+    - http://muckrack.com/jess-weatherbed/articles
+    - https://www.techmeme.com/260311/p15
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
