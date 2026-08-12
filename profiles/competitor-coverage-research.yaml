@@ -4096,6 +4096,85 @@ cross_publication_findings:
     test_count: 51
     test_file: tests/test_google_news_ai_prisoner_dilemma_aug11.py
     discovery_date: '2026-08-11'
+  wired_copyright_piracy_framing_parity:
+    mechanism_id: 51
+    mechanism_name: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta
+    finding_type: competitor_coverage_deep_dive
+    rotation_type: A
+    discovery_date: '2026-08-11'
+    finding_summary: >
+      Both Anthropic and Meta pirated books from LibGen to train their AI models (Claude / Llama).
+      Both faced copyright lawsuits. Judge Alsup ruled in both cases that AI training itself was
+      fair use but piracy acquisition was not. The underlying conduct is functionally identical.
+      WIRED (Condé Nast) applies systematically different framing: Meta receives piracy/theft
+      angle (morally loaded language, CEO accountability, "torrenting from a corporate laptop"),
+      while Anthropic receives financial damages angle (business/legal framing, settlement terms,
+      "meaningful relief," "$1T damages potential"). Meta's framing: how dare they. Anthropic's
+      framing: how much will it cost. This framing divergence correlates with financial
+      relationships: Condé Nast has $0 Meta deal (most adversarial), OpenAI deal valued at
+      $5-10M/yr (Anthropic is OpenAI's primary competitor), and Amazon deal (Amazon is Anthropic's
+      largest investor at $53.4B). Financial exclusion predicts morally-loaded framing; financial
+      adjacency predicts business-neutral framing, even for identical underlying conduct.
+    publication: WIRED (Condé Nast / Advance Publications)
+    journalist: Kate Knibbs
+    meta_conduct:
+      volume: 81.7TB of pirated books
+      sources: LibGen, Z-Library, Anna's Archive
+      method: BitTorrent with VPN masking from corporate laptops
+      ceo_involvement: CEO Zuckerberg reportedly approved pirated dataset use
+      internal_dissent: '"torrenting from a corporate laptop doesn''t feel right"'
+      legal_status: fighting (Kadrey v. Meta NDCA, Elsevier v. Meta SDNY ongoing)
+      wired_framing: piracy/theft angle — morally loaded, CEO blame
+    anthropic_conduct:
+      volume: 7M+ pirated books
+      sources: LibGen, Pirate Library Mirror
+      method: mass downloading from pirate sites
+      legal_status: settled ($1.5B, Jul 20 2026, final approval)
+      judge_ruling: training = fair use, piracy acquisition ≠ fair use (same as Meta)
+      wired_framing: financial damages angle — market-focused, settlement terms
+    framing_comparison:
+      meta_language:
+        - piracy
+        - theft
+        - torrenting
+        - didn't care about IP
+        - corporate laptop
+        - fake PR stunt
+        - CEO accountability
+      anthropic_language:
+        - settlement
+        - landmark
+        - meaningful relief
+        - financial damages
+        - market-focused
+        - $1T damages potential
+      meta_moral_frame: how dare they
+      anthropic_moral_frame: how much will it cost
+    financial_relationships:
+      conde_nast_openai: $5-10M/yr content licensing (Aug 2024)
+      conde_nast_amazon: multi-year Rufus/Alexa deal (Jul 2025)
+      conde_nast_meta: $0
+      conde_nast_anthropic: $0
+      amazon_anthropic_investment: $53.4B (Q2 2026 valuation gain)
+    confounding_factors:
+      - Meta's piracy is arguably MORE egregious (81.7TB, CEO involvement, VPN masking)
+      - Settlements generally receive less adversarial coverage than ongoing fights
+      - Meta has deeper privacy controversy history (Cambridge Analytica, $7B+ fines)
+      - Anthropic's safety-focused branding may generate editorial sympathy
+      - Knibbs does cover both critically — not exclusively targeting Meta
+      - Open-weight distribution creates downstream piracy concern absent from Anthropic
+    testable_prediction: >
+      When Meta's Kadrey v. Meta reaches settlement in 2026-2027, WIRED will frame it
+      with more adversarial language than Anthropic's settlement. If Meta settles, it
+      will be framed as "admission" or "capitulation" while Anthropic's was "landmark."
+    test_count: 27
+    test_file: tests/test_wired_copyright_piracy_framing_parity_aug11.py
+    source_urls:
+      - https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/
+      - https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/
+      - https://www.mondaq.com/unitedstates/licensing-syndication/1792816/major-publishers-challenge-ai-training-practices-in-landmark-copyright-suit-against-meta
+      - https://9to5mac.com/2025/01/13/meta-training-ai-pirated-content/
+      - https://www.eweek.com/news/anthropic-15-billion-ai-copyright-settlement-approved/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

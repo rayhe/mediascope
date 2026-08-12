@@ -1,4 +1,38 @@
 # MediaScope Iteration Log
+## 2026-08-11 18:00 PT — Type A: Competitor Coverage Deep Dive — Mechanism #51
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+
+**Mechanism #51: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta**
+
+Both Anthropic and Meta pirated books from LibGen to train AI models. Judge Alsup ruled identically in both cases (training = fair use, piracy acquisition ≠ fair use). WIRED (Condé Nast) applies systematically different framing: Meta gets piracy/theft angle (morally loaded language, CEO accountability, "torrenting from a corporate laptop"), while Anthropic gets financial damages angle (market-focused, settlement terms, "meaningful relief," "$1T damages potential"). Financial exclusion predicts morally-loaded framing; Condé Nast has $0 Meta deal, $5-10M/yr OpenAI deal, multi-year Amazon deal (Amazon is Anthropic's largest investor at $53.4B).
+
+**Bug Fix:** Previous agent placed mechanism #51 inside `publications:` section instead of `cross_publication_findings:`. Relocated to correct parent key. Fixed README/ARCHITECTURE test counts (9840 tests across 310 files).
+
+**Tests:** 26/26 mechanism tests pass (test_wired_copyright_piracy_framing_parity_aug11.py). 189/189 structural + competitor tests pass. All 6 previously-failing tests resolved.
+
+**Infrastructure:** README.md and docs/ARCHITECTURE.md updated — 9840 tests across 310 test files, both listings include new test files.
+## 2026-08-11 17:00 PT — Type D: Test & Verify — FT Deduplication + Cross-Validation
+
+**Rotation:** D (Test & Verify)
+
+**Bug Found: Duplicate Financial Times publication entries.** `competitor-coverage-research.yaml` had two separate entries for the same publication: `financial-times` (hyphenated, with google/openai coverage analysis) and `financial_times` (underscored, with Heikkilä journalist-level analysis). The inconsistency masked data fragmentation — different tests referenced different keys, and the structural test had been updated to expect both keys rather than fixing the root cause.
+
+**Root Cause:** Earlier iterations (Type A/C vs Type B) added FT analysis under different key formats without checking for an existing entry.
+
+**Fixes Applied:**
+1. Merged `financial_times` unique data (heikkila_cross_entity) into canonical `financial-times` entry
+2. Removed duplicate `financial_times` key — publications count 10 → 9
+3. Added missing `date_added` field to mechanisms 42-50 (8 entries)
+4. Added missing `discovery_date` to mechanism #50
+5. Updated 3 test files referencing the old underscore key
+
+**Tests:** 21/21 new cross-validation tests pass (test_type_d_5pm_cross_validation_aug11.py — FT unification, publications count, mechanism completeness, ID uniqueness, test file existence). 250 core tests pass (structural + competitor + murgia + aug8 cross-val). 212 Aug 11 cross-validation tests pass. 598 Aug 11 mechanism tests pass.
+
+**Infrastructure:** README/ARCHITECTURE updated to 9308 tests across 309 files.
+
+**Commit:** 1c4f35a — pushed to GitHub
+
 ## 2026-08-11 16:00 PT — Type C: Financial Incentive Mapping — Mechanism #50
 
 **Rotation:** C (Financial Incentive Mapping)
