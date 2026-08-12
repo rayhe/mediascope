@@ -4101,20 +4101,20 @@ cross_publication_findings:
     mechanism_name: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta
     finding_type: competitor_coverage_deep_dive
     rotation_type: A
+    date_added: '2026-08-11'
     discovery_date: '2026-08-11'
-    finding_summary: >
-      Both Anthropic and Meta pirated books from LibGen to train their AI models (Claude / Llama).
-      Both faced copyright lawsuits. Judge Alsup ruled in both cases that AI training itself was
-      fair use but piracy acquisition was not. The underlying conduct is functionally identical.
-      WIRED (Condé Nast) applies systematically different framing: Meta receives piracy/theft
-      angle (morally loaded language, CEO accountability, "torrenting from a corporate laptop"),
-      while Anthropic receives financial damages angle (business/legal framing, settlement terms,
-      "meaningful relief," "$1T damages potential"). Meta's framing: how dare they. Anthropic's
-      framing: how much will it cost. This framing divergence correlates with financial
-      relationships: Condé Nast has $0 Meta deal (most adversarial), OpenAI deal valued at
-      $5-10M/yr (Anthropic is OpenAI's primary competitor), and Amazon deal (Amazon is Anthropic's
-      largest investor at $53.4B). Financial exclusion predicts morally-loaded framing; financial
-      adjacency predicts business-neutral framing, even for identical underlying conduct.
+    finding_summary: 'Both Anthropic and Meta pirated books from LibGen to train their AI models (Claude / Llama). Both faced
+      copyright lawsuits. Judge Alsup ruled in both cases that AI training itself was fair use but piracy acquisition was
+      not. The underlying conduct is functionally identical. WIRED (Condé Nast) applies systematically different framing:
+      Meta receives piracy/theft angle (morally loaded language, CEO accountability, "torrenting from a corporate laptop"),
+      while Anthropic receives financial damages angle (business/legal framing, settlement terms, "meaningful relief," "$1T
+      damages potential"). Meta''s framing: how dare they. Anthropic''s framing: how much will it cost. This framing divergence
+      correlates with financial relationships: Condé Nast has $0 Meta deal (most adversarial), OpenAI deal valued at $5-10M/yr
+      (Anthropic is OpenAI''s primary competitor), and Amazon deal (Amazon is Anthropic''s largest investor at $53.4B). Financial
+      exclusion predicts morally-loaded framing; financial adjacency predicts business-neutral framing, even for identical
+      underlying conduct.
+
+      '
     publication: WIRED (Condé Nast / Advance Publications)
     journalist: Kate Knibbs
     meta_conduct:
@@ -4134,20 +4134,20 @@ cross_publication_findings:
       wired_framing: financial damages angle — market-focused, settlement terms
     framing_comparison:
       meta_language:
-        - piracy
-        - theft
-        - torrenting
-        - didn't care about IP
-        - corporate laptop
-        - fake PR stunt
-        - CEO accountability
+      - piracy
+      - theft
+      - torrenting
+      - didn't care about IP
+      - corporate laptop
+      - fake PR stunt
+      - CEO accountability
       anthropic_language:
-        - settlement
-        - landmark
-        - meaningful relief
-        - financial damages
-        - market-focused
-        - $1T damages potential
+      - settlement
+      - landmark
+      - meaningful relief
+      - financial damages
+      - market-focused
+      - $1T damages potential
       meta_moral_frame: how dare they
       anthropic_moral_frame: how much will it cost
     financial_relationships:
@@ -4157,185 +4157,242 @@ cross_publication_findings:
       conde_nast_anthropic: $0
       amazon_anthropic_investment: $53.4B (Q2 2026 valuation gain)
     confounding_factors:
-      - Meta's piracy is arguably MORE egregious (81.7TB, CEO involvement, VPN masking)
-      - Settlements generally receive less adversarial coverage than ongoing fights
-      - Meta has deeper privacy controversy history (Cambridge Analytica, $7B+ fines)
-      - Anthropic's safety-focused branding may generate editorial sympathy
-      - Knibbs does cover both critically — not exclusively targeting Meta
-      - Open-weight distribution creates downstream piracy concern absent from Anthropic
-    testable_prediction: >
-      When Meta's Kadrey v. Meta reaches settlement in 2026-2027, WIRED will frame it
-      with more adversarial language than Anthropic's settlement. If Meta settles, it
-      will be framed as "admission" or "capitulation" while Anthropic's was "landmark."
+    - Meta's piracy is arguably MORE egregious (81.7TB, CEO involvement, VPN masking)
+    - Settlements generally receive less adversarial coverage than ongoing fights
+    - Meta has deeper privacy controversy history (Cambridge Analytica, $7B+ fines)
+    - Anthropic's safety-focused branding may generate editorial sympathy
+    - Knibbs does cover both critically — not exclusively targeting Meta
+    - Open-weight distribution creates downstream piracy concern absent from Anthropic
+    testable_prediction: 'When Meta''s Kadrey v. Meta reaches settlement in 2026-2027, WIRED will frame it with more adversarial
+      language than Anthropic''s settlement. If Meta settles, it will be framed as "admission" or "capitulation" while Anthropic''s
+      was "landmark."
+
+      '
     test_count: 27
     test_file: tests/test_wired_copyright_piracy_framing_parity_aug11.py
     source_urls:
-      - https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/
-      - https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/
-      - https://www.mondaq.com/unitedstates/licensing-syndication/1792816/major-publishers-challenge-ai-training-practices-in-landmark-copyright-suit-against-meta
-      - https://9to5mac.com/2025/01/13/meta-training-ai-pirated-content/
-      - https://www.eweek.com/news/anthropic-15-billion-ai-copyright-settlement-approved/
+    - https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/
+    - https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/
+    - https://www.mondaq.com/unitedstates/licensing-syndication/1792816/major-publishers-challenge-ai-training-practices-in-landmark-copyright-suit-against-meta
+    - https://9to5mac.com/2025/01/13/meta-training-ai-pirated-content/
+    - https://www.eweek.com/news/anthropic-15-billion-ai-copyright-settlement-approved/
   hayden_field_ai_beat_concentration:
     mechanism_id: 52
-    mechanism_name: "Hayden Field AI Beat Concentration — The Verge AI Coverage as OpenAI/Anthropic Coverage"
+    mechanism_name: Hayden Field AI Beat Concentration — The Verge AI Coverage as OpenAI/Anthropic Coverage
     finding_type: journalist_beat_concentration
     rotation_type: B
+    date_added: '2026-08-11'
     discovery_date: '2026-08-11'
     journalist: Hayden Field
-    publication: "The Verge (PMC/PMX)"
-    finding_summary: >
-      Hayden Field joined The Verge from CNBC as senior AI reporter on June 2, 2025. Her hiring
-      announcement explicitly stated she would "lead coverage of the biggest names in AI —
-      including OpenAI, Anthropic, Google, Meta, Apple, and others." Her actual portfolio
-      (Jun 2025 – Aug 2026) reveals massive beat concentration toward OpenAI and Anthropic,
+    publication: The Verge (PMC/PMX)
+    finding_summary: 'Hayden Field joined The Verge from CNBC as senior AI reporter on June 2, 2025. Her hiring announcement
+      explicitly stated she would "lead coverage of the biggest names in AI — including OpenAI, Anthropic, Google, Meta, Apple,
+      and others." Her actual portfolio (Jun 2025 – Aug 2026) reveals massive beat concentration toward OpenAI and Anthropic,
       with Meta AI receiving ~10% of the coverage volume and systematically different framing.
 
-      COVERAGE VOLUME: ~15+ OpenAI/Anthropic articles vs ~2-3 Meta AI articles in 14 months.
-      FRAMING DIRECTION: Anthropic gets aspiration/underdog/victim framing ("betting its future,"
-      "officially filed to go public," "employees support Anthropic's lawsuit"); Meta gets
-      follower/deficit framing ("reentering the AI race," researchers "rejected Meta's offers
-      to stay at jobs that align with their values").
+      COVERAGE VOLUME: ~15+ OpenAI/Anthropic articles vs ~2-3 Meta AI articles in 14 months. FRAMING DIRECTION: Anthropic
+      gets aspiration/underdog/victim framing ("betting its future," "officially filed to go public," "employees support Anthropic''s
+      lawsuit"); Meta gets follower/deficit framing ("reentering the AI race," researchers "rejected Meta''s offers to stay
+      at jobs that align with their values").
 
-      KEY FRAMING INDICATORS: "Reentering" (Meta Muse Spark) vs "betting its future" (Anthropic
-      agents) — deficit vs aspiration vocabulary. Meta talent war headline: researchers "rejected
-      Meta's offers" to stay at "jobs that align with their values" — implies Meta doesn't align
-      with researcher values. No Field article on Meta's Llama 4 launch, Meta's open-weight
-      policy, Meta AI reaching 1B MAU, or Meta AI on glasses — all major Meta AI milestones
-      absent from her beat coverage.
+      KEY FRAMING INDICATORS: "Reentering" (Meta Muse Spark) vs "betting its future" (Anthropic agents) — deficit vs aspiration
+      vocabulary. Meta talent war headline: researchers "rejected Meta''s offers" to stay at "jobs that align with their values"
+      — implies Meta doesn''t align with researcher values. No Field article on Meta''s Llama 4 launch, Meta''s open-weight
+      policy, Meta AI reaching 1B MAU, or Meta AI on glasses — all major Meta AI milestones absent from her beat coverage.
 
-      MANDATE VS REALITY GAP: Job description listed 6 companies equally; actual coverage
-      dominated by 2. Beat assignment as coverage selection — the "AI reporter" beat at
-      financially entangled publications functionally means "OpenAI/Anthropic reporter."
+      MANDATE VS REALITY GAP: Job description listed 6 companies equally; actual coverage dominated by 2. Beat assignment
+      as coverage selection — the "AI reporter" beat at financially entangled publications functionally means "OpenAI/Anthropic
+      reporter."
 
-      FINANCIAL CORRELATION: The Verge/PMC has OpenAI content deal (via Vox Media, May 2024)
-      + Azure OpenAI enterprise agreement. No Meta content deal. Coverage volume correlates
-      with financial-relationship presence.
+      FINANCIAL CORRELATION: The Verge/PMC has OpenAI content deal (via Vox Media, May 2024) + Azure OpenAI enterprise agreement.
+      No Meta content deal. Coverage volume correlates with financial-relationship presence.
 
-      INDUSTRY-WIDE PATTERN: This is the THIRD documented instance of "AI reporter beat
-      concentration" after Cade Metz at NYT and Will Knight at WIRED. Three AI reporters at
-      three publications with three different ownership structures all functionally cover
-      OpenAI/Anthropic to the near-exclusion of Meta AI. Victoria Song at The Verge is a
-      COUNTER-example — wearables reporter covers Meta balanced-to-positive, but Song covers
-      products not AI research.
+      INDUSTRY-WIDE PATTERN: This is the THIRD documented instance of "AI reporter beat concentration" after Cade Metz at
+      NYT and Will Knight at WIRED. Three AI reporters at three publications with three different ownership structures all
+      functionally cover OpenAI/Anthropic to the near-exclusion of Meta AI. Victoria Song at The Verge is a COUNTER-example
+      — wearables reporter covers Meta balanced-to-positive, but Song covers products not AI research.
+
+      '
     legitimate_factors:
-      - factor: "OpenAI and Anthropic had more dramatic news events (Pentagon dispute, IPO filings, rogue AI)"
-        strength: MODERATE
-        rebuttal: "Meta also had major events: Muse Spark/Glimmer launch, Llama 4, open-weight policy, Meta AI reaching 1B MAU"
-      - factor: "The Verge has dedicated Meta reporters (Alex Heath was deputy editor until Sep 2025)"
-        strength: MODERATE
-        rebuttal: "Field's mandate was explicitly ALL AI companies — beat assignment is editorial choice"
-      - factor: "OpenAI/Anthropic are pure-play AI companies, generating more AI-specific news"
-        strength: MODERATE
-        rebuttal: "Meta AI is now the most-used AI assistant globally with 1B+ MAU"
-      - factor: "Field's CNBC portfolio was already OpenAI/Anthropic-heavy (professional network)"
-        strength: WEAK
-        rebuttal: "Professional network carrying over doesn't explain the mandate gap — she was explicitly hired to cover all 6 companies"
-      - factor: "Anthropic's regulatory crisis (Pentagon dispute) was genuinely unprecedented and newsworthy"
-        strength: STRONG
-        rebuttal: "Legitimate, but doesn't explain absence of ANY Field coverage of Meta's Llama 4, open-weight policy, or 1B MAU milestone"
-      - factor: "Meta AI is often covered by product reviewers (Victoria Song) rather than AI industry reporters"
-        strength: MODERATE
-        rebuttal: "Beat assignment IS the mechanism — editorial choice about which reporter covers which company shapes the coverage"
-      - factor: "Field may have Meta AI articles not surfaced in search"
-        strength: WEAK
-        rebuttal: "Techmeme tracks all major tech articles; absence from Techmeme index is strong evidence of absence"
+    - factor: OpenAI and Anthropic had more dramatic news events (Pentagon dispute, IPO filings, rogue AI)
+      strength: MODERATE
+      rebuttal: 'Meta also had major events: Muse Spark/Glimmer launch, Llama 4, open-weight policy, Meta AI reaching 1B MAU'
+    - factor: The Verge has dedicated Meta reporters (Alex Heath was deputy editor until Sep 2025)
+      strength: MODERATE
+      rebuttal: Field's mandate was explicitly ALL AI companies — beat assignment is editorial choice
+    - factor: OpenAI/Anthropic are pure-play AI companies, generating more AI-specific news
+      strength: MODERATE
+      rebuttal: Meta AI is now the most-used AI assistant globally with 1B+ MAU
+    - factor: Field's CNBC portfolio was already OpenAI/Anthropic-heavy (professional network)
+      strength: WEAK
+      rebuttal: Professional network carrying over doesn't explain the mandate gap — she was explicitly hired to cover all
+        6 companies
+    - factor: Anthropic's regulatory crisis (Pentagon dispute) was genuinely unprecedented and newsworthy
+      strength: STRONG
+      rebuttal: Legitimate, but doesn't explain absence of ANY Field coverage of Meta's Llama 4, open-weight policy, or 1B
+        MAU milestone
+    - factor: Meta AI is often covered by product reviewers (Victoria Song) rather than AI industry reporters
+      strength: MODERATE
+      rebuttal: Beat assignment IS the mechanism — editorial choice about which reporter covers which company shapes the coverage
+    - factor: Field may have Meta AI articles not surfaced in search
+      strength: WEAK
+      rebuttal: Techmeme tracks all major tech articles; absence from Techmeme index is strong evidence of absence
     distinction_from:
-      - mechanism_id: 6
-        name: "Patel EIC Delegation"
-        how: "Beat concentration (what is covered) not delegation (who covers what)"
-      - mechanism_id: 49
-        name: "Bobrowsky Smart Glasses Entity-Targeting"
-        how: "Bobrowsky targets investigative attention on one company; Field's pattern is ABSENCE of coverage, not adversarial targeting"
-    test_file: "tests/test_hayden_field_ai_beat_concentration_aug11.py"
+    - mechanism_id: 6
+      name: Patel EIC Delegation
+      how: Beat concentration (what is covered) not delegation (who covers what)
+    - mechanism_id: 49
+      name: Bobrowsky Smart Glasses Entity-Targeting
+      how: Bobrowsky targets investigative attention on one company; Field's pattern is ABSENCE of coverage, not adversarial
+        targeting
+    test_file: tests/test_hayden_field_ai_beat_concentration_aug11.py
     test_count: 48
-    date_added: '2026-08-11'
     source_urls:
-      - "https://talkingbiznews.com/media-news/the-verge-hires-field-as-senior-ai-reporter/"
-      - "https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/"
-      - "https://www.techmeme.com/250710/p29"
-      - "https://www.techmeme.com/250516/p19"
-      - "https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/"
-      - "https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/"
-      - "https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/"
-      - "https://www.youtube.com/watch?v=8WGEky2D3iY"
+    - https://talkingbiznews.com/media-news/the-verge-hires-field-as-senior-ai-reporter/
+    - https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/
+    - https://www.techmeme.com/250710/p29
+    - https://www.techmeme.com/250516/p19
+    - https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/
+    - https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/
+    - https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/
+    - https://www.youtube.com/watch?v=8WGEky2D3iY
   openai_triple_layer_journalism_funding:
     mechanism_id: 53
-    mechanism_name: "OpenAI Triple-Layer Journalism Funding Architecture"
+    mechanism_name: OpenAI Triple-Layer Journalism Funding Architecture
     finding_type: financial_incentive_triple_layer
     rotation_type: C
+    date_added: '2026-08-11'
     discovery_date: '2026-08-11'
     publication: cross_publication
-    finding_summary: >
-      OpenAI operates THREE distinct, simultaneous financial relationship channels
-      with journalism — creating compounded financial dependencies at different
-      organizational levels that are structurally unprecedented for any single
+    finding_summary: 'OpenAI operates THREE distinct, simultaneous financial relationship channels with journalism — creating
+      compounded financial dependencies at different organizational levels that are structurally unprecedented for any single
       AI company:
 
-      LAYER 1 — CONTENT LICENSING (Publisher/Corporate Level): 20+ publisher deals
-      covering 160+ outlets in 20+ languages. Largest: News Corp $250M/5yr. IAC filings
-      confirm Dotdash Meredith at $16M/yr minimum. Partners include AP, Axel Springer,
+      LAYER 1 — CONTENT LICENSING (Publisher/Corporate Level): 20+ publisher deals covering 160+ outlets in 20+ languages.
+      Largest: News Corp $250M/5yr. IAC filings confirm Dotdash Meredith at $16M/yr minimum. Partners include AP, Axel Springer,
       Le Monde, FT, Vox Media, The Atlantic, Condé Nast, Hearst, Guardian, Washington Post.
 
-      LAYER 2 — DIRECT SALARY FUNDING (Individual Journalist Level): Axios deal (Jan 2025)
-      directly funds reporter salaries in 4 new cities (Pittsburgh, Kansas City, Boulder,
-      Huntsville), expanding to 7-9 more in 2026. First time OpenAI directly funded
-      journalist positions. Lenfest Institute (Oct 2024): OpenAI + Microsoft jointly
-      fund $10M for AI fellows at 5 metro newsrooms (Chicago Public Media, Minnesota
-      Star Tribune, Newsday, Philadelphia Inquirer, Seattle Times).
+      LAYER 2 — DIRECT SALARY FUNDING (Individual Journalist Level): Axios deal (Jan 2025) directly funds reporter salaries
+      in 4 new cities (Pittsburgh, Kansas City, Boulder, Huntsville), expanding to 7-9 more in 2026. First time OpenAI directly
+      funded journalist positions. Lenfest Institute (Oct 2024): OpenAI + Microsoft jointly fund $10M for AI fellows at 5
+      metro newsrooms (Chicago Public Media, Minnesota Star Tribune, Newsday, Philadelphia Inquirer, Seattle Times).
 
-      LAYER 3 — PHILANTHROPIC/NONPROFIT GRANTS (Ecosystem Level): AJP Phase 1 (Jul 2023):
-      $5M cash + $5M API credits to American Journalism Project, funding 41+ nonprofit
-      newsrooms. Initial 13 direct grantees include The Marshall Project, Spotlight PA,
-      THE CITY. AJP Phase 2 (Jul 2026): another $5M + $3M credits, now 50+ newsrooms
-      across 38 states. 31 organizations received direct grants in first phase.
+      LAYER 3 — PHILANTHROPIC/NONPROFIT GRANTS (Ecosystem Level): AJP Phase 1 (Jul 2023): $5M cash + $5M API credits to American
+      Journalism Project, funding 41+ nonprofit newsrooms. Initial 13 direct grantees include The Marshall Project, Spotlight
+      PA, THE CITY. AJP Phase 2 (Jul 2026): another $5M + $3M credits, now 50+ newsrooms across 38 states. 31 organizations
+      received direct grants in first phase.
 
-      META CONTRAST (Mirror Image): Meta ended Facebook News payments ($105M/3yr) in
-      Jul 2022, killed Bulletin in 2023, removing News Tab in Europe. Meta has ZERO
-      content licensing deals, ZERO salary funding programs, ZERO journalism grants
-      post-2022. Active withdrawal at all three levels simultaneously creates structural
-      resentment in journalism circles.
+      META CONTRAST (Mirror Image): Meta ended Facebook News payments ($105M/3yr) in Jul 2022, killed Bulletin in 2023, removing
+      News Tab in Europe. Meta has ZERO content licensing deals, ZERO salary funding programs, ZERO journalism grants post-2022.
+      Active withdrawal at all three levels simultaneously creates structural resentment in journalism circles.
 
-      STRUCTURAL INSIGHT: No tech company has simultaneously operated financial
-      relationships at all three levels of the journalism stack — corporate, individual,
-      and ecosystem. This creates structural incentive alignment without editorial
-      control: dependency is real but invisible at editorial decision-making.
+      STRUCTURAL INSIGHT: No tech company has simultaneously operated financial relationships at all three levels of the journalism
+      stack — corporate, individual, and ecosystem. This creates structural incentive alignment without editorial control:
+      dependency is real but invisible at editorial decision-making.
+
+      '
     confounding_factors:
-      - factor: "Genuine good faith — OpenAI may sincerely want to support journalism"
-        strength: MODERATE
-      - factor: "Industry need — local journalism genuinely needs funding regardless of source"
-        strength: STRONG
-      - factor: "Intermediary buffer — AJP provides editorial independence between OpenAI and newsrooms"
-        strength: MODERATE
-      - factor: "Meta's economic rationality — Meta withdrew because users don't come to Facebook for news"
-        strength: STRONG
-      - factor: "Local vs tech coverage — many AJP newsrooms cover local issues, not tech/AI"
-        strength: MODERATE
-      - factor: "Scale difference — OpenAI journalism investment ($20M+ AJP + Axios + Lenfest) tiny vs Meta ad revenue, but signaling effect outsized"
-        strength: WEAK
-      - factor: "Voluntary participation — publishers chose to sign deals; no coercion claimed"
-        strength: MODERATE
+    - factor: Genuine good faith — OpenAI may sincerely want to support journalism
+      strength: MODERATE
+    - factor: Industry need — local journalism genuinely needs funding regardless of source
+      strength: STRONG
+    - factor: Intermediary buffer — AJP provides editorial independence between OpenAI and newsrooms
+      strength: MODERATE
+    - factor: Meta's economic rationality — Meta withdrew because users don't come to Facebook for news
+      strength: STRONG
+    - factor: Local vs tech coverage — many AJP newsrooms cover local issues, not tech/AI
+      strength: MODERATE
+    - factor: Scale difference — OpenAI journalism investment ($20M+ AJP + Axios + Lenfest) tiny vs Meta ad revenue, but signaling
+        effect outsized
+      strength: WEAK
+    - factor: Voluntary participation — publishers chose to sign deals; no coercion claimed
+      strength: MODERATE
     testable_predictions:
-      - "AJP-funded newsrooms will produce zero investigative coverage of OpenAI data practices or copyright litigation strategy"
-      - "Axios Local coverage of AI topics will be predominantly OpenAI-positive vs Meta-negative"
-      - "As OpenAI journalism funding network grows, the publication ecosystem available for adversarial OpenAI reporting shrinks"
-      - "No mainstream press investigation of OpenAI triple-layer journalism funding as a conflict of interest"
-    test_file: "tests/test_openai_triple_layer_journalism_funding_aug11.py"
+    - AJP-funded newsrooms will produce zero investigative coverage of OpenAI data practices or copyright litigation strategy
+    - Axios Local coverage of AI topics will be predominantly OpenAI-positive vs Meta-negative
+    - As OpenAI journalism funding network grows, the publication ecosystem available for adversarial OpenAI reporting shrinks
+    - No mainstream press investigation of OpenAI triple-layer journalism funding as a conflict of interest
+    test_file: tests/test_openai_triple_layer_journalism_funding_aug11.py
     test_count: 65
-    date_added: '2026-08-11'
     source_urls:
-      - "https://llmpulse.ai/blog/openai-publisher-deals/"
-      - "https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/"
-      - "https://www.adweek.com/media/axios-local-openai-2026/"
-      - "http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/"
-      - "https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/"
-      - "https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project"
-      - "https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/"
-      - "https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/"
-      - "https://www.theajp.org/news-insights/announcements/exploring-emerging-technologies-an-update-on-our-product-ai-studio/"
-      - "https://news.slashdot.org/story/24/10/22/2045216/openai-microsoft-funding-10-million-in-grants-for-ai-powered-journalism"
-      - "https://www.livemint.com/companies/news/facebook-to-end-payments-to-us-news-publishers-11659025905218.html"
-      - "https://www.nasdaq.com/articles/metas-facebook-is-done-paying-publishers-for-news-tab-content"
-      - "https://www.fastcompany.com/90963282/meta-was-never-really-the-medias-friend"
+    - https://llmpulse.ai/blog/openai-publisher-deals/
+    - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
+    - https://www.adweek.com/media/axios-local-openai-2026/
+    - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+    - https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
+    - https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project
+    - https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/
+    - https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/
+    - https://www.theajp.org/news-insights/announcements/exploring-emerging-technologies-an-update-on-our-product-ai-studio/
+    - https://news.slashdot.org/story/24/10/22/2045216/openai-microsoft-funding-10-million-in-grants-for-ai-powered-journalism
+    - https://www.livemint.com/companies/news/facebook-to-end-payments-to-us-news-publishers-11659025905218.html
+    - https://www.nasdaq.com/articles/metas-facebook-is-done-paying-publishers-for-news-tab-content
+    - https://www.fastcompany.com/90963282/meta-was-never-really-the-medias-friend
+  mit_tr_apple_wwdc_2026_pcc_omission:
+    apple_wwdc_coverage_rate: 1 of 2 — covered 2024 (positive), did not cover 2026 (PCC shift to Google Cloud)
+    confounding_factors:
+    - explanation: MIT TR may have covered WWDC 2026 in its subscriber-only newsletter (The Download, The Debrief) which may
+        not be indexed by web search.
+      factor: Newsletter coverage
+      weight: moderate
+    - explanation: MIT TR may not prioritize annual Apple events in its editorial calendar — it covers themes rather than
+        product launches.
+      factor: Editorial calendar
+      weight: moderate
+    - explanation: Apple smart glasses (N50, 2027), camera AirPods, and AI pendant are pre-announcement. MIT TR may wait for
+        shipping products before applying scrutiny.
+      factor: Pre-announcement status of Apple wearables
+      weight: moderate
+    - explanation: The Meta-Anduril warfare glasses story is a legitimate defense-tech scoop — military AI with drone strike
+        capabilities is inherently newsworthy.
+      factor: Anduril piece is genuinely newsworthy
+      weight: strong
+    - explanation: Apple's confidential compute implementation on Google Cloud may genuinely preserve privacy guarantees,
+        making it less newsworthy than a regression.
+      factor: Google Cloud PCC may not be privacy-negative
+      weight: moderate
+    cross_references:
+    - Apple governance conflict (Kate Bergeron MIT Corporation, CSAIL Alliance)
+    - 'Sensor-count paradox (Apple Vision Pro: 12 cameras, 5 sensors, 6 microphones — zero surveillance language)'
+    - 'Mechanism #33 (OpenAI facial recognition privacy parity — same double standard pattern)'
+    days_after_anduril_piece: 21
+    event_date: '2026-06-08'
+    finding_summary: MIT TR covered Apple's WWDC 2024 PCC announcement favorably (Eileen Guo, Jun 11 2024) but did NOT cover
+      Apple's WWDC 2026 (Jun 8 2026) where PCC was expanded to Google Cloud — a fundamental privacy architecture change. MIT
+      TR published Meta-Anduril warfare glasses with alarm framing (May 18 2026, 21 days before WWDC 2026). Apple's three
+      camera-equipped AI wearables (smart glasses, AirPods, pendant — all with cameras + always-on AI) receive zero surveillance
+      framing from MIT TR. The Apple-MIT governance ties (Kate Bergeron on MIT Corporation effective Jul 1 2026, CSAIL Alliance)
+      are the deepest institutional tech company connection in MIT TR's ownership chain.
+    finding_type: coverage_selection_omission
+    governance_timing_note: Kate Bergeron (Apple VP Hardware Engineering) was elected MIT Corporation term member effective
+      July 1, 2026 — 23 days after WWDC 2026. This deepens Apple-MIT governance ties during the exact period when MIT TR would
+      have published follow-up analysis on the PCC shift.
+    materiality_rationale: MIT TR previously praised Apple's PCC in June 2024 as 'the first time ever' Apple extended privacy
+      into the cloud, explicitly naming Meta as a privacy-negative comparator. The 2026 shift to Google Cloud fundamentally
+      changes the architecture MIT TR endorsed — user data now flows to Google servers (albeit with confidential compute).
+      A publication that praised the original system has editorial obligation to cover material changes to it.
+    mechanism_id: 41
+    mit_tr_coverage_status: Not found — no MIT TR standalone article on WWDC 2026 PCC-to-Google-Cloud shift found in web search
+    outlets_that_covered:
+    - 9to5Mac (Jul 6 2026) — Apple adds new popup for AI features that send data to Google Cloud
+    - Gizmodo (Jun 8 2026) — Apple Says Its New Google-Infused AI Is All About Privacy
+    - MacRumors (Jun 8 2026) — Apple's Private AI Will Run on Google's Servers
+    - Reuters (Jan 12 2026) — Apple, Google strike Gemini deal for revamped Siri
+    - TechSpot (Jun 16 2026) — Apple's AI hardware roadmap
+    - TechRepublic (Aug 4 2026) — Apple camera-equipped AirPods
+    privacy_shift_description: Apple expanded Private Cloud Compute (PCC) from Apple-only servers to Google Cloud, using NVIDIA
+      GPUs with confidential compute. This is a fundamental departure from the Apple-only server architecture MIT TR praised
+      in June 2024. Apple also confirmed that its foundation models are trained using outputs from Google Gemini frontier
+      models. iOS 27 beta adds a new popup notifying users when data is sent to Google Cloud.
+    source_urls:
+    - https://www.technologyreview.com/2024/06/11/1093577/apple-is-promising-personalized-ai-in-a-private-cloud-heres-how-that-will-work/
+    - https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/
+    test_file: tests/test_mit_tr_apple_wwdc_2026_pcc_omission_aug11.py
+    mechanism_name: MIT TR Apple WWDC 2026 PCC-to-Google-Cloud Omission
+    date_added: '2026-08-11'
+    discovery_date: '2026-06-08'
+    rotation_type: A
+    publication: MIT Technology Review
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -5855,67 +5912,9 @@ publications:
       for the institution that owns the publication.
 
       '
-    wwdc_2026_pcc_omission:
-      apple_wwdc_coverage_rate: 1 of 2 — covered 2024 (positive), did not cover 2026 (PCC shift to Google Cloud)
-      confounding_factors:
-      - explanation: MIT TR may have covered WWDC 2026 in its subscriber-only newsletter (The Download, The Debrief) which
-          may not be indexed by web search.
-        factor: Newsletter coverage
-        weight: moderate
-      - explanation: MIT TR may not prioritize annual Apple events in its editorial calendar — it covers themes rather than
-          product launches.
-        factor: Editorial calendar
-        weight: moderate
-      - explanation: Apple smart glasses (N50, 2027), camera AirPods, and AI pendant are pre-announcement. MIT TR may wait
-          for shipping products before applying scrutiny.
-        factor: Pre-announcement status of Apple wearables
-        weight: moderate
-      - explanation: The Meta-Anduril warfare glasses story is a legitimate defense-tech scoop — military AI with drone strike
-          capabilities is inherently newsworthy.
-        factor: Anduril piece is genuinely newsworthy
-        weight: strong
-      - explanation: Apple's confidential compute implementation on Google Cloud may genuinely preserve privacy guarantees,
-          making it less newsworthy than a regression.
-        factor: Google Cloud PCC may not be privacy-negative
-        weight: moderate
-      cross_references:
-      - Apple governance conflict (Kate Bergeron MIT Corporation, CSAIL Alliance)
-      - 'Sensor-count paradox (Apple Vision Pro: 12 cameras, 5 sensors, 6 microphones — zero surveillance language)'
-      - 'Mechanism #33 (OpenAI facial recognition privacy parity — same double standard pattern)'
-      days_after_anduril_piece: 21
-      event_date: '2026-06-08'
-      finding_summary: MIT TR covered Apple's WWDC 2024 PCC announcement favorably (Eileen Guo, Jun 11 2024) but did NOT cover
-        Apple's WWDC 2026 (Jun 8 2026) where PCC was expanded to Google Cloud — a fundamental privacy architecture change.
-        MIT TR published Meta-Anduril warfare glasses with alarm framing (May 18 2026, 21 days before WWDC 2026). Apple's
-        three camera-equipped AI wearables (smart glasses, AirPods, pendant — all with cameras + always-on AI) receive zero
-        surveillance framing from MIT TR. The Apple-MIT governance ties (Kate Bergeron on MIT Corporation effective Jul 1
-        2026, CSAIL Alliance) are the deepest institutional tech company connection in MIT TR's ownership chain.
-      finding_type: coverage_selection_omission
-      governance_timing_note: Kate Bergeron (Apple VP Hardware Engineering) was elected MIT Corporation term member effective
-        July 1, 2026 — 23 days after WWDC 2026. This deepens Apple-MIT governance ties during the exact period when MIT TR
-        would have published follow-up analysis on the PCC shift.
-      materiality_rationale: MIT TR previously praised Apple's PCC in June 2024 as 'the first time ever' Apple extended privacy
-        into the cloud, explicitly naming Meta as a privacy-negative comparator. The 2026 shift to Google Cloud fundamentally
-        changes the architecture MIT TR endorsed — user data now flows to Google servers (albeit with confidential compute).
-        A publication that praised the original system has editorial obligation to cover material changes to it.
+    wwdc_2026_pcc_omission_ref:
+      note: 'Full mechanism #41 entry moved to cross_publication_findings.mit_tr_apple_wwdc_2026_pcc_omission'
       mechanism_id: 41
-      mit_tr_coverage_status: Not found — no MIT TR standalone article on WWDC 2026 PCC-to-Google-Cloud shift found in web
-        search
-      outlets_that_covered:
-      - 9to5Mac (Jul 6 2026) — Apple adds new popup for AI features that send data to Google Cloud
-      - Gizmodo (Jun 8 2026) — Apple Says Its New Google-Infused AI Is All About Privacy
-      - MacRumors (Jun 8 2026) — Apple's Private AI Will Run on Google's Servers
-      - Reuters (Jan 12 2026) — Apple, Google strike Gemini deal for revamped Siri
-      - TechSpot (Jun 16 2026) — Apple's AI hardware roadmap
-      - TechRepublic (Aug 4 2026) — Apple camera-equipped AirPods
-      privacy_shift_description: Apple expanded Private Cloud Compute (PCC) from Apple-only servers to Google Cloud, using
-        NVIDIA GPUs with confidential compute. This is a fundamental departure from the Apple-only server architecture MIT
-        TR praised in June 2024. Apple also confirmed that its foundation models are trained using outputs from Google Gemini
-        frontier models. iOS 27 beta adds a new popup notifying users when data is sent to Google Cloud.
-      source_urls:
-      - https://www.technologyreview.com/2024/06/11/1093577/apple-is-promising-personalized-ai-in-a-private-cloud-heres-how-that-will-work/
-      - https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/
-      test_file: tests/test_mit_tr_apple_wwdc_2026_pcc_omission_aug11.py
   news-corp:
     asymmetry_verdict: 'News Corp is the BALANCED CONTROL. It receives comparable
 

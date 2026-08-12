@@ -46,7 +46,16 @@ def entities():
 
 @pytest.fixture(scope='module')
 def mit_tr_section(research):
-    return research['publications']['mit-tech-review']
+    section = dict(research['publications']['mit-tech-review'])
+    # Mechanism #41 was moved to cross_publication_findings — re-inject for test access
+    section['wwdc_2026_pcc_omission'] = research['cross_publication_findings']['mit_tr_apple_wwdc_2026_pcc_omission']
+    return section
+
+
+@pytest.fixture(scope='module')
+def mechanism_41(research):
+    """Mechanism #41 data — canonical location in cross_publication_findings."""
+    return research['cross_publication_findings']['mit_tr_apple_wwdc_2026_pcc_omission']
 
 
 # ===================================================================

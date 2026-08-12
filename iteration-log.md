@@ -1,4 +1,34 @@
 # MediaScope Iteration Log
+
+## Iteration 53 — 2026-08-11 20:00 PT (Type C: Financial Incentive Mapping)
+
+### Finding: OpenAI Triple-Layer Journalism Funding Architecture (Mechanism #53)
+
+**Mechanism #53**: OpenAI operates three simultaneous, structurally distinct financial channels with journalism — unprecedented for any single AI company:
+
+- **Layer 1 (Content Licensing — Publisher/Corporate Level):** 20+ deals covering 160+ outlets in 20+ languages. Reported values: News Corp $250M/5yr, Dotdash Meredith $16M/yr (IAC filings), Axel Springer tens of millions of euros, Reddit ~$70M/yr. Partners include Condé Nast (WIRED, GQ, Vogue, New Yorker, Vanity Fair), Vox Media (The Verge), FT, Guardian, Washington Post, Hearst (60+ titles), Future plc (200+ brands), and more.
+- **Layer 2 (Direct Salary Funding — Individual Reporter Level):** Axios deal (Jan 2025) funds reporter salaries in 4 cities, expanding to 11-13 in 2026. Lenfest/Microsoft $10M joint program places 2-year AI fellows at 5 metro newsrooms (Chicago Public Media, MN Star Tribune, Newsday, Philly Inquirer, Seattle Times). FIRST TIME OpenAI directly funded journalists' jobs.
+- **Layer 3 (Philanthropic/Nonprofit Ecosystem Grants):** AJP Phase 1 (Jul 2023): $5M + $5M API credits to 41+ nonprofits. AJP Phase 2 (Jul 2026): another $5M + $3M credits, now 50+ newsrooms across 38 states. 31 orgs received direct grants. Initial 13 grantees include Marshall Project, Spotlight PA, THE CITY.
+
+**Meta mirror image:** Ended $105M Facebook News tab payments (Jul 2022), killed Bulletin newsletter platform (2023), removing News Tab in Europe. Zero content licensing, zero salary funding, zero journalism grants post-2022. Active financial withdrawal at all three levels creates structural resentment vs OpenAI's structural dependency.
+
+**Structural insight:** No tech company has simultaneously operated financial relationships at ALL THREE levels of the journalism stack (corporate, individual, ecosystem). This creates "structural incentive alignment" without editorial control — financial dependency is real but invisible at the point of editorial decision-making. 7 confounding factors documented. 4 testable predictions.
+
+### Files Changed
+- `tests/test_openai_triple_layer_journalism_funding_aug11.py` — 65 tests, 10 classes
+- `profiles/competitor-entities.yaml` — triple_layer_journalism_funding section under OpenAI
+- `profiles/competitor-coverage-research.yaml` — mechanism #53 in cross_publication_findings
+- `README.md` — test counts updated (9953/312), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (9953/312), new test file listed
+
+### Tests
+- 65/65 new tests passing
+- 124/124 structural consistency tests passing
+- Total: 9953 tests across 312 files
+
+### Commit
+4d2f2bc — pushed to GitHub
+
 ## 2026-08-11 19:00 PT — Type B: Journalist Cross-Entity Tracking — Mechanism #52
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
