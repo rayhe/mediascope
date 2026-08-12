@@ -5648,6 +5648,235 @@ cross_publication_findings:
       connection: 'Mechanism #15 documented MIT TR Pre-IPO Product Validation in the same
         pre-IPO window. MIT''s chain goes through endowment holdings, not direct
         proprietor ownership — WaPo''s is the most direct chain in the dataset'
+  cameron_mehrotra_investigative_resource_allocation:
+    mechanism: investigative_resource_allocation_entity_targeting
+    mechanism_id: 66
+    publication: WIRED
+    journalists:
+      - name: Dell Cameron
+        role: investigative_reporter
+        beat: privacy_surveillance_cybersecurity
+      - name: Dhruv Mehrotra
+        role: investigative_reporter
+        beat: privacy_surveillance_cybersecurity
+    key_finding: >
+      Mechanism #66: WIRED's investigative privacy team (Cameron/Mehrotra) published a multi-part
+      investigative series on Meta's NameTag facial recognition code (Jun 2026) demonstrating genuine
+      skill: code analysis, expert reproduction, timeline reconstruction. But they have ZERO
+      equivalent investigations of Apple (12-camera Vision Pro, upcoming smart glasses), Google
+      (Android XR camera glasses), Samsung (Galaxy Glasses), or Snap (4-camera Spectacles). The
+      asymmetry is in editorial resource allocation: investigative reporters assigned to Meta,
+      consumer reviewers (Goode) assigned to Apple/Snap. Same publication, same hardware category,
+      radically different editorial treatment determined by manufacturer identity.
+    meta_investigations:
+      - title: "Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)"
+        date: "2026-06-04"
+        authors: "Dell Cameron, Dhruv Mehrotra"
+        framing: "dormant surveillance infrastructure, biometric faceprints deployed to millions of phones"
+        tone: -0.85
+        description: >
+          Three AI models (face detection, cropping, biometric encoding) deployed to users' phones
+          via Meta AI app before public acknowledgment. EFF researcher confirmed code was nearly
+          functional. Meta's Andy Stone called reporting 'dishonest'; Bosworth called it 'incredibly
+          misleading'. Meta subsequently removed the code.
+        source_urls:
+          - "https://yro.slashdot.org/story/26/06/08/1945252/meta-deletes-face-recognition-system-from-its-smart-glasses-app"
+          - "https://pxlnv.com/linklog/meta-ai-facial-recognition-code/"
+          - "https://gizmodo.com/metas-facial-recognition-plans-for-smart-glasses-are-worse-than-we-thought-2000768046"
+      - title: "Meta Removes Face-Recognition Code After WIRED Report"
+        date: "2026-06-08"
+        authors: "Dell Cameron, Dhruv Mehrotra"
+        framing: "company caught and forced to remove controversial code, denial despite evidence"
+        tone: -0.75
+        description: >
+          Follow-up documenting Meta's removal of NameTag code from Meta AI app after WIRED's initial
+          report. Framing emphasized Meta's denial despite evidence of deployed code, creating
+          narrative of deception caught by journalists.
+        source_urls:
+          - "https://gizmodo.com/meta-removes-face-recognition-system-from-its-smart-glasses-is-mad-about-it-2000768975"
+          - "https://www.digitaltrends.com/wearables/meta-denied-face-scanning-tech-on-ai-smartglasses-and-then-silently-wiped-the-evidence/"
+      - title: "Meta Licensing Facial Recognition From Military/Police Supplier (Rank One Computing)"
+        date: "2026-06"
+        authors: "Dell Cameron, Dhruv Mehrotra"
+        framing: "consumer technology meets surveillance infrastructure, military-grade facial recognition"
+        tone: -0.80
+        description: >
+          Investigation revealed Meta licensed facial recognition technology from Rank One Computing,
+          a Denver firm earning 80% of revenue from government clients including US Marshals, NCIS,
+          US Special Operations Command. CEO formerly ran FBI biometric database division. Board
+          includes ex-CIA, FBI, Pentagon officials. First known Meta-Rank One business relationship.
+        source_urls:
+          - "https://www.digitaltrends.com/wearables/meta-is-testing-smart-glass-facial-recognition-tech-thats-also-used-by-police-and-military-report/"
+    competitor_investigation_absence:
+      - entity: Apple
+        product: "Apple Vision Pro"
+        camera_count: 12
+        privacy_relevant_capability: >
+          12 outward-facing cameras, 5 sensors, 6 microphones — objectively the most
+          surveillance-capable consumer wearable ever manufactured. Captures eye tracking,
+          hand tracking, and spatial mapping data. No Cameron/Mehrotra investigation of
+          Apple's camera data pipeline, processing, storage, or third-party access.
+        cameron_mehrotra_investigations: 0
+      - entity: Google
+        product: "Android XR glasses"
+        camera_count: 2
+        privacy_relevant_capability: >
+          Camera-equipped smart glasses with Google Gemini AI processing. Google's data
+          collection practices, AI training pipelines, and advertiser data access are
+          well-documented privacy concerns. No Cameron/Mehrotra investigation of Google's
+          glasses privacy practices.
+        cameron_mehrotra_investigations: 0
+      - entity: Samsung
+        product: "Galaxy Glasses (Intelligent Eyewear)"
+        camera_count: 2
+        privacy_relevant_capability: >
+          Same Snapdragon AR1 Gen 1 chip as Meta Ray-Ban, 12MP camera, LED recording indicator.
+          Functionally identical privacy-relevant hardware. Launched at Galaxy Unpacked Jul 2026.
+          No Cameron/Mehrotra investigation despite identical camera capabilities.
+        cameron_mehrotra_investigations: 0
+      - entity: Snap
+        product: "Snap Spectacles"
+        camera_count: 4
+        privacy_relevant_capability: >
+          Four cameras (more than Meta Ray-Ban), $2,195 price, AR display. Snap has faced
+          previous FTC complaints over disappearing messages. No Cameron/Mehrotra investigation
+          of Snap's quadruple-camera privacy practices.
+        cameron_mehrotra_investigations: 0
+    lane_assignment_analysis:
+      consumer_review_reporters:
+        - name: "Lauren Goode"
+          role: "Senior Correspondent"
+          entities_covered: ["Apple", "Snap"]
+          tone: "empathetic/positive"
+          example: "'I Cried Inside the Apple Vision Pro' — no surveillance framing for 12-camera device"
+        - name: "Julian Chokkattu"
+          role: "Senior Gear Editor"
+          entities_covered: ["Meta", "Samsung", "Google"]
+          tone: "mixed, adversarial for Meta only"
+          example: "Business Wars 'I'm a Creep' about Meta; neutral for Samsung/Google"
+      investigative_reporters:
+        - name: "Dell Cameron"
+          role: "Investigative Reporter"
+          entities_covered: ["Meta"]
+          tone: "adversarial/investigative"
+          example: "NameTag face recognition exposé, Rank One Computing military supplier"
+        - name: "Dhruv Mehrotra"
+          role: "Investigative Reporter"
+          entities_covered: ["Meta"]
+          tone: "adversarial/investigative"
+          example: "Co-authored NameTag series, code analysis"
+      editor_in_chief: "Katie Drummond"
+      structural_effect: >
+        The editorial assignment determines the narrative before a single word is written.
+        Investigative reporters (Cameron/Mehrotra) produce surveillance-alarm framing by
+        professional function. Consumer reviewers (Goode) produce empathetic first-person
+        narrative by professional function. The asymmetry is not in the journalists' individual
+        bias but in the editorial ALLOCATION of reporting resources: Meta gets the investigative
+        team, Apple/Snap get the consumer reviewer.
+    camera_count_paradox:
+      apple_vision_pro_cameras: 12
+      meta_rayban_cameras: 1
+      snap_spectacles_cameras: 4
+      samsung_galaxy_glasses_cameras: 2
+      google_android_xr_cameras: 2
+      conclusion: >
+        The device with 1 camera (Meta Ray-Ban) receives multi-part investigative series
+        about surveillance infrastructure. The device with 12 cameras (Apple Vision Pro)
+        receives 'I Cried Inside' personal essay. The variable is manufacturer identity,
+        not hardware surveillance capability. This eliminates 'Meta glasses are inherently
+        more privacy-risky' as an explanation for the coverage differential.
+    financial_context:
+      meta_conde_nast_deal: "None. Meta pays Condé Nast $0."
+      conde_nast_ai_deals:
+        - partner: "OpenAI"
+          date: "2024-08"
+          terms: "multiyear content licensing"
+        - partner: "Amazon Rufus"
+          date: "2025-07"
+          terms: "content licensing"
+        - partner: "Perplexity"
+          date: "2025"
+          terms: "content licensing"
+        - partner: "Microsoft Copilot"
+          date: "2025-12"
+          terms: "pilot marketplace"
+      apple_relationship: "Apple News Plus distribution; Apple Intelligence licensing negotiations ongoing"
+      alignment_summary: >
+        Investigative resources target the company with $0 financial relationship (Meta).
+        No investigative resources target companies with active or negotiated financial
+        relationships (OpenAI, Amazon, Apple, Microsoft). The resource allocation pattern
+        correlates perfectly with the financial incentive structure.
+    confounding_factors:
+      - factor: "Meta has a worse privacy track record (Cambridge Analytica, FTC $5B settlement)"
+        strength: STRONG
+        response: >
+          Valid. Meta's historical privacy violations justify heightened scrutiny. However,
+          this explains WHY editors might assign more resources to Meta — it does not explain
+          WHY editors assign ZERO resources to investigating competitors with identical hardware.
+      - factor: "Apple Vision Pro has smaller installed base (discontinued 2025) vs Meta's 7M+ glasses"
+        strength: MODERATE
+        response: >
+          Valid. Scale of deployment affects privacy impact. However, Apple is developing
+          camera glasses targeting mass market (2027 launch). The investigation gap will
+          become more visible as Apple ships.
+      - factor: "NameTag was genuinely newsworthy — face recognition on widely-deployed glasses"
+        strength: STRONG
+        response: >
+          Valid. The NameTag investigation was legitimate, important journalism. The asymmetry
+          is not in covering NameTag — it is in NOT covering competitors' equivalent privacy
+          practices with equivalent rigor.
+      - factor: "Competitor camera glasses not yet shipped (as of Aug 2026)"
+        strength: MODERATE
+        response: >
+          Valid for Samsung/Google (Jul 2026 announcement, fall 2026 ship). Does NOT apply
+          to Apple Vision Pro (shipped Feb 2024, 12 cameras) or Snap Spectacles (multiple
+          generations shipped). The absence of investigation into Apple's EXISTING 12-camera
+          product is not explained by competitor product maturity.
+      - factor: "Cameron/Mehrotra may have pitched Meta stories themselves"
+        strength: WEAK
+        response: >
+          Possible but does not change the structural pattern. Editors approve pitches —
+          editorial leadership at WIRED has consistently approved Meta privacy investigations
+          while not commissioning or approving equivalent competitor investigations.
+    testable_predictions:
+      - prediction: >
+          When Apple ships camera glasses (projected late 2027), WIRED will NOT assign
+          Cameron/Mehrotra to investigate Apple's privacy practices. Coverage will go to
+          Lauren Goode (consumer review) or a news desk reporter (neutral framing).
+        timeframe: "Late 2027"
+        falsifiable: true
+      - prediction: >
+          When Samsung/Google ship camera glasses (fall 2026), WIRED's investigative desk
+          will not produce equivalent 'dormant surveillance infrastructure' coverage despite
+          identical camera hardware (same Snapdragon AR1 Gen 1 chip).
+        timeframe: "Fall 2026"
+        falsifiable: true
+      - prediction: >
+          If Apple ships glasses without a camera, WIRED will frame this as 'privacy
+          leadership' rather than 'feature deficiency' — positive framing for the
+          competitor's hardware limitation.
+        timeframe: "2027"
+        falsifiable: true
+      - prediction: >
+          Cameron/Mehrotra will produce at least 2 more Meta privacy investigations through
+          2027 without equivalent investigations of Apple, Google, or Samsung privacy practices.
+        timeframe: "Through 2027"
+        falsifiable: true
+    cross_references:
+      - mechanism_id: 14
+        name: "Barrett Crisis/Makeover Headline Paradox"
+        connection: "Same publication, different lane assignment producing different framing"
+      - mechanism_id: 44
+        name: "WIRED Apple PCC-to-Google-Cloud Privacy Pivot Coverage Selection Asymmetry"
+        connection: "Ashworth applies surveillance language to Meta, partnership language to Apple PCC shift"
+      - mechanism_id: 49
+        name: "Bobrowsky Smart Glasses Privacy Entity-Targeting Concentration"
+        connection: "WSJ equivalent: Bobrowsky assigned to Meta beat, Mims writes balanced all-company coverage"
+      - mechanism_id: 11
+        name: "Gurman Access Dependency Competitive Narration"
+        connection: "Bloomberg's Gurman favors Apple via access; WIRED's Cameron/Mehrotra targets Meta via assignment"
+    discovery_date: "2026-08-12"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

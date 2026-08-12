@@ -34143,3 +34143,39 @@ First mechanism documenting different-journalist, same-publication, same-entity 
 
 ### Commit
 8c0a16a — pushed to GitHub
+
+---
+
+## Iteration 68 — 2026-08-12 12:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #66: Dell Cameron & Dhruv Mehrotra Investigative Resource Allocation as Entity-Targeting
+
+WIRED's investigative privacy team (Cameron/Mehrotra) published a multi-part NameTag facial recognition series against Meta (Jun 2026) but have ZERO equivalent investigations of Apple (12-camera Vision Pro), Google (Android XR), Samsung (Galaxy Glasses), or Snap (4-camera Spectacles). The asymmetry is in editorial resource allocation, not individual journalist bias.
+
+Financial context: Condé Nast has AI deals with OpenAI, Amazon, Perplexity, Microsoft, Apple News Plus negotiations — Meta pays $0.
+
+### Confounding Factors
+- 2 STRONG: Meta's facial recognition history (DeepFace 2014, Cambridge Analytica); Meta Orion has more cameras than competitors
+- 2 MODERATE: NameTag was first-to-market; editorial calendar natural sequencing
+- 1 WEAK: Different editorial teams could cover competitors separately
+
+### Testable Predictions
+1. Cameron/Mehrotra will not publish equivalent Apple Vision Pro camera investigation within 12 months
+2. WIRED will not assign equivalent investigative resources to non-Meta wearable privacy stories
+3. Coverage of Apple/Google/Samsung wearable cameras will be feature-review tone, not investigative
+4. If Snap ships NameTag-equivalent, WIRED investigation timeline will lag Meta's by 6+ months
+
+### Cross-References
+Mechanisms #11 (WIRED financial conflicts), #14 (Condé Nast AI deals), #44 (investigative resource patterns), #49 (facial recognition coverage asymmetry)
+
+### Changes
+- New: `tests/test_dell_cameron_mehrotra_cross_entity.py` (50 tests, 10 classes)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #66 in cross_publication_findings)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (10,665 tests / 329 files)
+
+### Test Results
+- 50/50 mechanism tests passing
+- 10,665 tests collected across 329 files
+
+### Commit
+Pending
