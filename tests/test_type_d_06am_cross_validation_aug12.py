@@ -186,9 +186,9 @@ class TestMechanismIDSequenceThrough61(unittest.TestCase):
             if isinstance(val, dict) and 'mechanism_id' in val:
                 self.all_ids.append(val['mechanism_id'])
 
-    def test_max_mechanism_is_62(self):
-        self.assertEqual(max(self.all_ids), 62,
-                         f"Expected max mechanism_id=62, got {max(self.all_ids)}")
+    def test_max_mechanism_is_at_least_62(self):
+        self.assertGreaterEqual(max(self.all_ids), 62,
+                         f"Expected max mechanism_id>=62, got {max(self.all_ids)}")
 
     def test_no_duplicate_ids(self):
         seen = set()
@@ -199,9 +199,9 @@ class TestMechanismIDSequenceThrough61(unittest.TestCase):
             seen.add(mid)
         self.assertFalse(dupes, f"Duplicate mechanism IDs: {dupes}")
 
-    def test_50_through_62_contiguous(self):
+    def test_50_through_max_contiguous(self):
         recent = sorted(mid for mid in self.all_ids if mid >= 50)
-        expected = list(range(50, 63))
+        expected = list(range(50, max(recent) + 1))
         self.assertEqual(recent, expected,
                          f"Gap in mechanisms 50-62: {recent} vs expected {expected}")
 

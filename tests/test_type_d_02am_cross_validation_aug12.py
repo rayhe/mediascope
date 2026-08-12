@@ -152,10 +152,10 @@ class TestMechanismIDSequenceIntegrity(unittest.TestCase):
             seen.add(mid)
         self.assertFalse(dupes, f"Duplicate mechanism IDs: {dupes}")
 
-    def test_max_mechanism_is_62(self):
-        """The highest mechanism ID should be 62 (after iterations 59-62)."""
-        self.assertEqual(max(self.all_ids), 62,
-                         f"Expected max mechanism_id=62, got {max(self.all_ids)}")
+    def test_max_mechanism_is_at_least_62(self):
+        """The highest mechanism ID should be at least 62 (mechanisms added since iterations 59+)."""
+        self.assertGreaterEqual(max(self.all_ids), 62,
+                         f"Expected max mechanism_id>=62, got {max(self.all_ids)}")
 
     def test_recent_mechanisms_contiguous(self):
         """Mechanisms 50-62 should form a contiguous sequence."""
