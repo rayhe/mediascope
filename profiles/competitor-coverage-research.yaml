@@ -5085,44 +5085,6 @@ cross_publication_findings:
     - https://letsdatascience.com/news/karen-hao-frames-ai-as-threat-to-democracy-05a0fd08
     - https://Www.timeshighereducation.com/news/conference-suspends-google-sponsorship-after-ethics-experts-exit
     - https://www.earwolf.com/episode/why-facebook-refuses-to-fix-the-misinformation-crisis-it-created-with-karen-hao/
-  apple_news_glasses_prelaunch_alignment:
-    mechanism_id: 61
-    title: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel
-    date_added: '2026-08-12'
-    discovery_date: '2026-08-12'
-    finding_type: financial_incentive_mapping
-    entities:
-    - apple
-    - meta
-    publications:
-    - wired
-    - atlantic
-    - verge
-    - guardian
-    - financial-times
-    finding_summary: |
-      Apple News+ creates financial dependency between Apple and 400+ publishers
-      (50% of $12.99/mo, engagement-weighted, 125M MAU, 1.5B paid subscriptions).
-      Apple simultaneously prepares smart glasses (N50, WWDC Jun 2027) with explicit
-      strategy to "distance the launch from criticism faced by Meta's Ray-Ban
-      glasses" (Gurman, Jul 26 2026). TRIPLE ALIGNMENT: (1) Financial — Apple News+
-      publishers earn revenue from Apple, $0 from Meta; adversarial Meta coverage
-      is cost-free. (2) Competitive — every "privacy nightmare" article damages
-      Apple's #1 smart glasses competitor. (3) Editorial curation — Apple's 100
-      editors control Top Stories placement, driving engagement-weighted revenue.
-      Enders Analysis: national newspapers get 55% of engagement time despite being
-      5% of titles. The lifeline paradox intensifies: publishers increasingly depend
-      on Apple News+ as Google AI Overviews cuts referral traffic 34.5% and Meta
-      deprioritizes news. Apple is the last major platform growing publisher traffic.
-      FT is the CONTROL case — not on Apple News+, may apply comparable privacy
-      scrutiny to N50 as to Meta. 7 confounding factors, 4 testable predictions.
-    source_urls:
-    - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
-    - https://www.neowin.net/news/report-apples-smart-glasses-delayed-due-to-privacy-concerns/
-    - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
-    - https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
-    - https://9to5mac.com/2024/05/22/apple-news-lifeline/
-    - https://en.wikipedia.org/wiki/Karen_Hao
     confounding_factors:
     - Hao began the Facebook investigation ~9 months before publication — timing was NOT opportunistic relative to the Gebru
       crisis
@@ -5148,6 +5110,100 @@ cross_publication_findings:
     - 'Mechanism #49 (Bobrowsky entity targeting): parallel — beat assignment as mechanism for entity selection asymmetry'
     - 'Mechanism #17 (Guardian SID governance capture): parallel — governance + financial ties correlate with softer coverage'
     - 'MIT TR profile: Google/MIT bilateral financial relationships, MIT-Google Program, Schmidt philanthropy documented'
+  apple_news_glasses_prelaunch_alignment:
+    mechanism_id: 61
+    title: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    finding_type: financial_incentive_mapping
+    entities:
+    - apple
+    - meta
+    publications:
+    - wired
+    - atlantic
+    - verge
+    - guardian
+    - financial-times
+    finding_summary: 'Apple News+ creates financial dependency between Apple and 400+ publishers
+
+      (50% of $12.99/mo, engagement-weighted, 125M MAU, 1.5B paid subscriptions).
+
+      Apple simultaneously prepares smart glasses (N50, WWDC Jun 2027) with explicit
+
+      strategy to "distance the launch from criticism faced by Meta''s Ray-Ban
+
+      glasses" (Gurman, Jul 26 2026). TRIPLE ALIGNMENT: (1) Financial — Apple News+
+
+      publishers earn revenue from Apple, $0 from Meta; adversarial Meta coverage
+
+      is cost-free. (2) Competitive — every "privacy nightmare" article damages
+
+      Apple''s #1 smart glasses competitor. (3) Editorial curation — Apple''s 100
+
+      editors control Top Stories placement, driving engagement-weighted revenue.
+
+      Enders Analysis: national newspapers get 55% of engagement time despite being
+
+      5% of titles. The lifeline paradox intensifies: publishers increasingly depend
+
+      on Apple News+ as Google AI Overviews cuts referral traffic 34.5% and Meta
+
+      deprioritizes news. Apple is the last major platform growing publisher traffic.
+
+      FT is the CONTROL case — not on Apple News+, may apply comparable privacy
+
+      scrutiny to N50 as to Meta. 7 confounding factors, 4 testable predictions.
+
+      '
+    source_urls:
+    - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
+    - https://www.neowin.net/news/report-apples-smart-glasses-delayed-due-to-privacy-concerns/
+    - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+    - https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
+    - https://9to5mac.com/2024/05/22/apple-news-lifeline/
+    confounding_factors:
+    - factor: Privacy concerns about camera glasses are legitimate
+      strength: STRONG
+      detail: Bystander discomfort is real regardless of who makes the glasses
+    - factor: Apple genuinely has a stronger public privacy track record
+      strength: STRONG
+      detail: Apple's privacy marketing and on-device processing history is well-established
+    - factor: Apple may genuinely invest more in N50 privacy features
+      strength: MODERATE
+      detail: N50 may include novel protections not seen in Meta glasses
+    - factor: Some non-Apple-News+ publications also frame delay positively
+      strength: MODERATE
+      detail: BetaNews, gHacks etc. are not on Apple News+
+    - factor: Bloomberg (Gurman) is the primary source, not on News+
+      strength: MODERATE
+      detail: The coverage originates from a Bloomberg reporter with no Apple News+ dependency
+    - factor: Publisher Apple News+ revenue is modest for large publishers
+      strength: MODERATE
+      detail: Single-digit millions annually, not existential for Condé Nast ($2B+)
+    - factor: Apple's 100 editors may exercise genuine editorial judgment
+      strength: WEAK
+      detail: No evidence of direct editorial quid pro quo
+    testable_predictions:
+    - WIRED (16 Condé Nast titles on Apple News+) will cover N50 launch with softer framing than it applied to Meta glasses
+      — no "mass surveillance" or "creep's weapon" vocabulary
+    - The Atlantic ("most valuable syndication partner") will position Apple glasses as the "responsible alternative" to Meta
+    - FT (NOT on Apple News+) will apply comparable privacy scrutiny to N50 as it applied to Meta glasses — no aspirational
+      differential
+    - If Apple removes N50 camera, Apple News+ publishers will frame the removal as "principled" rather than "feature-cutting"
+    cross_references:
+    - mechanism_id: 30
+      name: Chokkattu temporal framing oscillation
+      connection: Genre interaction layer on top of financial incentive
+    - mechanism_id: 43
+      name: Dual-client litigation entanglement
+      connection: Apple-OpenAI lawsuit creates dual-client pressure on same publishers
+    - mechanism_id: 47
+      name: Meta ad revenue competitor structural antagonism
+      connection: Meta is publishers' direct ad competitor; Apple News+ is revenue replacement
+    - mechanism_id: 55
+      name: Privacy innovation attribution inversion
+      connection: Meta's proactive measures framed reactively; Apple's delay framed aspirationally
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
