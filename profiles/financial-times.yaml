@@ -1191,3 +1191,13 @@ google_coverage_analysis:
       wearables sensing — Google Assistant, Android telemetry, Gemini
       data processing, YouTube tracking — yet FT's privacy investigations
       target Meta exclusively.
+
+  capital_raise_framing_asymmetry:
+    _ref: mechanism_54
+    mechanism_id_ref: 54
+    finding: >
+      FT broke exclusive stories on both Anthropic and Meta raising tens of
+      billions for AI in H1 2026. Anthropic's raises (Jan-May) received
+      aspiration/confidence language; Meta's equity raise exploration (Jun 5)
+      received desperation/uncertainty language. Stock dropped 6.6% on FT's
+      Meta report. Full analysis in cross_publication_findings mechanism #54.

@@ -4096,6 +4096,158 @@ cross_publication_findings:
     test_count: 51
     test_file: tests/test_google_news_ai_prisoner_dilemma_aug11.py
     discovery_date: '2026-08-11'
+  ft_anthropic_meta_capital_raise_framing_asymmetry:
+    mechanism_id: 54
+    mechanism_name: FT Capital-Raise Framing Asymmetry — Anthropic (Aspiration) vs Meta (Desperation)
+    finding_type: competitor_coverage_deep_dive
+    rotation_type: A
+    date_added: '2026-08-11'
+    discovery_date: '2026-08-11'
+    finding_summary: 'The Financial Times broke exclusive stories on BOTH Anthropic and Meta raising
+      tens of billions of dollars for AI infrastructure in H1 2026. The framing divergence is stark:
+      Anthropic''s four fundraising events (Jan-May 2026, $20B-$50B raises, $350B-$900B valuations)
+      received aspiration/confidence language -- "six times the interest originally expected," "inbound
+      investment offers," "investors ready to throw any dollar amount," "insatiable demand." Meta''s
+      equity raise exploration (Jun 5, 2026) received desperation/uncertainty language -- "exploring
+      creative ways to raise cash," "seeks new sources of capital," "premature to conclude Meta had
+      settled on a financing strategy." Meta''s stock dropped 6.6% on the FT report. Both companies
+      were doing fundamentally the same thing: raising tens of billions for AI infrastructure. FT was
+      the primary source for both stories, eliminating source-access as an explanation. The asymmetry
+      is ecosystem-level, not company-specific: FT was neutral-to-negative about OpenAI in its Apr 14
+      piece (investors having "second thoughts" about OpenAI due to Anthropic''s rise), ruling out
+      pure "FT protects its deal partner" explanations. Instead, FT frames the AI lab ecosystem
+      (which pays publishers for content) aspirationally while framing Meta (which ended Facebook
+      News payments in 2022 and pays publishers $0) as financially stressed. FT has a confirmed
+      OpenAI content licensing deal (announced Apr 29, 2024 by AI Editor Madhumita Murgia).
+      Anthropic has 20+ content licensing deals. Meta pays $0.'
+    publication: Financial Times
+    entities_compared:
+    - Anthropic
+    - Meta
+    anthropic_capital_events:
+    - date: '2026-01-27'
+      amount_billions: 20
+      valuation_billions: 350
+      ft_framing: 'aspirational — "six times the interest originally expected," oversubscribed'
+      source: Reuters relay of FT exclusive
+    - date: '2026-04-14'
+      amount_billions: null
+      valuation_billions: 380
+      ft_framing: 'aspirational — Anthropic as "relative bargain," demand "insatiable," contrasted
+        with OpenAI investors having "second thoughts"'
+      source: TechCrunch relay of FT exclusive
+    - date: '2026-05-07'
+      amount_billions: 50
+      valuation_billions: 900
+      ft_framing: 'aspirational — "inbound investment offers," "investors ready to throw any dollar
+        amount," "annualized revenue nearing $45B"'
+      source: FT exclusive relayed by PYMNTS, Blockonomi, Intellectia
+    - date: '2026-05-15'
+      amount_billions: 30
+      valuation_billions: 900
+      ft_framing: 'aspirational — "strong investor demand," "came together in weeks"'
+      source: FT exclusive relayed by SpendNode, TechTimes
+    anthropic_framing_language:
+    - 'six times the interest originally expected'
+    - 'demand for Anthropic shares has grown nearly insatiable'
+    - 'investors ready to throw any dollar amount at Anthropic'
+    - 'inbound investment offers'
+    - 'strong investor demand'
+    - 'came together in weeks'
+    - 'annualized revenue nearing $45B'
+    meta_capital_event:
+      date: '2026-06-05'
+      amount_billions: 'tens of billions (unspecified)'
+      type: public equity offering (stock sale)
+      stock_impact_percent: -6.6
+      ft_framing: 'desperation/uncertainty — "exploring creative ways to raise cash," "seeks new
+        sources of capital," "premature to conclude," spokesperson called it "pure speculation"'
+    meta_framing_language:
+    - 'exploring "creative" ways to raise cash'
+    - 'seeks new sources of capital'
+    - 'premature to conclude Meta had settled on a financing strategy'
+    - 'all options remain under consideration'
+    framing_delta:
+      anthropic_tone: aspirational
+      meta_tone: desperation
+      delta_description: 'Same publication, same topic (raising billions for AI), same 5-month
+        window, FT as primary source for both — yet Anthropic gets confidence/momentum language
+        while Meta gets uncertainty/stress language'
+    temporal_window_months: 5
+    ft_primary_source_both: true
+    ft_openai_negative_coverage_documented: true
+    financial_context:
+      ft_openai_deal: true
+      ft_openai_deal_date: '2024-04-29'
+      ft_openai_deal_announced_by: Madhumita Murgia (FT AI Editor)
+      anthropic_content_licensor: true
+      anthropic_content_deals_count: '20+'
+      meta_publisher_payments_post_2022: 0
+      meta_facebook_news_ended: '2022-07'
+    structural_insight: 'The asymmetry is NOT "FT protects OpenAI" — FT ran negative OpenAI coverage
+      in the Apr 14 piece. The asymmetry operates at the ecosystem level: FT is financially aligned
+      with the AI lab ecosystem (OpenAI deal, potential future Anthropic deal, general publisher
+      content licensing economy). Companies that pay publishers (Anthropic, OpenAI) receive
+      aspirational framing. Companies that DON''T pay publishers (Meta) receive stress framing.
+      The mechanism is "content licensing ecosystem alignment" not "specific deal partner protection."
+      This is the first documented case where FT''s framing predicts ecosystem-level not
+      company-level bias.'
+    confounding_factors:
+    - factor: 'Private vs public: Anthropic raised private VC capital; Meta explored public equity,
+        which dilutes existing shareholders'
+      rebuttal: 'Framing difference is about LANGUAGE, not structure. "Exploring creative ways to
+        raise cash" implies financial distress regardless of instrument. A neutral reporter would
+        frame both as "raising capital to fund AI ambitions." Alphabet''s $85B equity raise was
+        framed neutrally by most outlets. FT chose loaded language specifically for Meta.'
+    - factor: 'Dilution risk: public equity offerings dilute existing shareholders, justifying
+        negative market reaction'
+      rebuttal: 'Stock impact (6.6% drop) is market reaction to the FT REPORT, not to a confirmed
+        offering. Meta called it "pure speculation." FT''s framing created the negative market
+        signal. A neutrally framed report ("Meta evaluates options to fund AI expansion") would
+        not have caused the same reaction.'
+    - factor: 'Growth rate: Anthropic was growing revenue 5x in 8 months (from $9B to $45B ARR);
+        Meta''s growth rate is lower'
+      rebuttal: 'Meta''s Q2 2026 revenue was $60.8B quarterly ($243B ARR) — FIVE TIMES Anthropic''s
+        $45B ARR. Meta is the larger, more profitable company. High growth rate alone does not
+        justify describing capital-raising as "creative ways to raise cash." Anthropic''s growth
+        is impressive but its absolute revenue is a fraction of Meta''s.'
+    - factor: 'Profitability: Meta is profitable while Anthropic likely is not (common for
+        high-growth startups)'
+      rebuttal: 'If anything, Meta''s profitability should make its capital raise LESS alarming.
+        A profitable company exploring options to fund growth is routine. FT framed it as
+        distress, which is the opposite of what financial fundamentals suggest.'
+    - factor: 'Track record: Anthropic is a "new" AI lab with momentum; Meta has a "metaverse
+        money pit" narrative'
+      rebuttal: 'The "money pit" narrative is itself a media construct. Meta''s RL losses ($8.6B
+        H1 2026) are material but offset by $60.8B quarterly revenue. FT''s choice to frame
+        Meta''s raise as distress while framing Anthropic''s as confidence reflects the narrative
+        FT has already constructed, not financial reality.'
+    - factor: 'Different reporters may have written the two stories with different editorial
+        instincts'
+      rebuttal: 'Institutional framing. Both stories went through FT editorial process with
+        headline selection, language review. FT''s editorial DNA determines language choices.
+        The dual-lens mechanism (Mechanism #7) documents that FT systematically assigns different
+        editorial lenses to AI labs vs platform companies.'
+    - factor: 'Anthropic''s oversubscription is genuinely noteworthy as financial news'
+      rebuttal: 'Meta''s potential equity raise is equally noteworthy — first major public equity
+        offering by a MAG7 company for AI. The financial novelty argument applies to both. FT
+        chose to frame one as validation and the other as stress.'
+    testable_prediction: 'If the ecosystem-level framing mechanism is real: (1) FT will continue
+      framing Anthropic''s IPO aspirationally even if valuation concerns emerge (2) FT will frame
+      Meta''s future capital actions (debt, equity, or hybrid) with stress/uncertainty language
+      (3) When Anthropic''s S-1 reveals unprofitable operations, FT will frame this as "growth
+      investment" not "unsustainable burn" — the opposite framing it uses for Meta RL losses
+      (4) If Meta signs a content licensing deal with FT, the framing will shift within 6 months.
+      If ANY of these predictions FAIL, the mechanism needs revision.'
+    source_urls:
+    - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+    - https://www.reuters.com/world/asia-pacific/sequoia-join-gic-coatue-anthropic-investment-ft-reports-2026-01-18/
+    - https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/
+    - https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
+    - https://www.morningstar.com/news/dow-jones/202606056054/meta-platforms-slips-on-report-of-plans-for-multibillion-dollar-offering-to-fund-ai-buildout
+    - https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-close-to-finalizing-fundraising-deal-at-350-billion-valuation/
+    test_count: 38
+    test_file: tests/test_ft_anthropic_meta_capital_raise_framing_asymmetry_aug11.py
   wired_copyright_piracy_framing_parity:
     mechanism_id: 51
     mechanism_name: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta

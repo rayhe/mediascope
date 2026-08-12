@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 9980 tests across 313 test files (all from real articles)
+├── tests/                       # 10022 tests across 314 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -585,6 +585,7 @@ mediascope/
 │   ├── test_meta_inverse_leverage_q2_2026_aug8.py # Meta Q2 2026 earnings, Anthropic $10B compute deal, Inverse Financial Leverage Paradox (1 mechanism vs competitors 4-7)
 │   ├── test_beat_assignment_correlation.py # Cross-publication beat/lane assignment → coverage asymmetry correlation: WIRED desk, NYT reporter, Verge institutional split; financial deal-coverage prediction; asymmetry scorer statistical validity
 │   ├── test_ft_openai_meta_dual_standard.py # FT OpenAI vs Meta cross-entity framing: always-on device dual standard (Ive device aspirational vs Meta glasses surveillance), spending framing asymmetry, systematic non-disclosure of FT-OpenAI $5-10M/yr deal, reporter assignment (Murphy=Meta), financial incentive → coverage tone correlation
+│   ├── test_ft_anthropic_meta_capital_raise_framing_asymmetry_aug11.py # FT Capital-Raise Framing Asymmetry (Mechanism #54): Anthropic aspirational vs Meta desperation framing for identical capital-raising activity. 7 confounding factors, ecosystem-level bias. 10 classes, 40 tests
 │   ├── test_ft_openai_guardrails_partner_validation_aug8.py # FT × OpenAI Mechanism #10: investigative target selection as partner validation — May 25 guardrails investigation tested Meta Llama/Google Gemma, validated proprietary (OpenAI/Anthropic) as safer, undisclosed FT-OpenAI deal, proprietary falsification by GPT-5.6 Sol Hugging Face hack
 │   ├── test_ft_openai_hardware_privacy_double_standard_aug9.py # FT × OpenAI Mechanism #18: Hardware Privacy Framing Inversion — identical always-on sensing tech (camera, mic, contextual memory) framed as "iPhone of AI" for OpenAI io device vs "surveillance infrastructure" for Meta glasses; FT-OpenAI $5-10M/yr deal, no FT-Meta deal; extends Dual-Lens Paradox (Mechanism #7)
 │   ├── test_jeff_horwitz_cross_entity.py # Reuters × Jeff Horwitz Mechanism #19: Triple-Deal Narrative Lock-In — investigative journalist applies maximum-depth techniques (internal documents, undercover experiments, whistleblower cultivation) exclusively to Meta while covering competitors with surface-level wire-service reporting; compounding incentives from book deal (Broken Code, Doubleday), movie deal (The Social Reckoning, Sony/Columbia, Aaron Sorkin, Oct 2026 release), and Pulitzer Prize for Beat Reporting (May 2026)

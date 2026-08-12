@@ -1,5 +1,87 @@
 # MediaScope Iteration Log
 
+## Iteration 55 — 2026-08-11 21:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Finding: FT Capital-Raise Framing Asymmetry — Anthropic (Aspiration) vs Meta (Desperation) (Mechanism #54)
+
+**Natural experiment:** The Financial Times broke exclusive stories on BOTH Anthropic and Meta raising tens of billions of dollars for AI infrastructure in H1 2026. The framing divergence is stark.
+
+**Anthropic capital raises (FT as primary source):**
+- Jan 27: $20B raise at $350B valuation — "six times the interest originally expected"
+- Apr 14: Investor comparison — Anthropic as "relative bargain," demand "insatiable," OpenAI investors having "second thoughts"
+- May 7-8: $50B at ~$900B valuation — "inbound investment offers," "investors ready to throw any dollar amount"
+- May 15: $30B closed at $900B — "strong investor demand," "came together in weeks"
+
+**Meta equity raise (FT as primary source):**
+- Jun 5: Equity raise exploration — "exploring 'creative' ways to raise cash," "seeks new sources of capital," "premature to conclude Meta had settled on a financing strategy"
+- Stock dropped 6.6% on FT report
+
+**Key structural insight:** The asymmetry is NOT "FT protects OpenAI" — FT was neutral-to-negative about OpenAI in the Apr 14 piece. The asymmetry operates at the **ecosystem level**: FT is financially aligned with the AI lab content-licensing ecosystem (OpenAI deal, potential future Anthropic deal). Companies that pay publishers receive aspirational framing; companies that don't (Meta, $0 since 2022) receive stress framing. This is the first mechanism documenting ecosystem-level rather than company-level financial bias prediction.
+
+**Confounding factors:** 7 documented with rebuttals (private vs public capital, dilution, growth rate, profitability, track record, different reporters, oversubscription novelty).
+
+**Testable predictions:** 4 falsifiable predictions, including that FT's Meta framing will shift if Meta signs a content licensing deal.
+
+### Files Changed
+- `tests/test_ft_anthropic_meta_capital_raise_framing_asymmetry_aug11.py` — 38 tests (42 pytest-collected with parametrize), 10 classes
+- `profiles/competitor-coverage-research.yaml` — mechanism #54 in cross_publication_findings
+- `profiles/financial-times.yaml` — capital_raise_framing_asymmetry _ref pointer to mechanism #54
+- `README.md` — test counts updated (10,022/314), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,022/314), new test file listed
+
+### Tests
+- 42/42 new tests passing (38 methods, 5 parametrize expansions)
+- 124/124 structural consistency tests passing
+- Total: **10,022 tests** across **314 files** (pytest-collected)
+
+### Commit
+Pending push
+
+## Iteration 54 — 2026-08-11 20:00 PT (Type D: Test & Verify)
+
+### Fixes Applied
+
+**1. Mechanism #41 misplaced in publications section:**
+Same structural issue as #42/#43 (fixed 09:00). Mechanism #41 (MIT TR Apple WWDC 2026 PCC-to-Google-Cloud Omission) was nested inside `publications.mit-tech-review.wwdc_2026_pcc_omission` instead of `cross_publication_findings`. Moved to canonical location, left `_ref` pointer at old location. Updated test fixture to re-inject data for backward compatibility (all 41 tests pass).
+
+**2. Missing `date_added` on mechanisms #51, #52, #53:**
+All three had `discovery_date` but not `date_added`, violating the schema enforced by 5pm cross-validation test. Added `date_added: '2026-08-11'` to all three.
+
+**3. README/ARCHITECTURE test count correction:**
+README claimed 9,953 tests (from Iteration #53). Actual counts:
+- Structural consistency static counter: **9,980 tests**
+- pytest --collect-only: **10,043 tests** (63-test gap from parametrize expansions static counter can't resolve)
+- Updated to use static counter value (9,980) as that's what the structural consistency test validates against.
+- File count updated from 312 → 313 (new cross-validation file).
+
+### Structural State After Fixes
+- Mechanism IDs 17–53: all present across `cross_publication_findings` (34 IDs) + `aggregate_findings` (IDs 19, 30, 31). Zero gaps.
+- Publications section: zero mechanism_id entries (only `_ref` pointers).
+- All `cross_publication_findings` entries have both `date_added` and `mechanism_id`.
+- FT deduplication (5pm fix): still holding.
+- #42/#43 relocation (9am fix): still holding.
+
+### New: 8pm Cross-Validation Test (27 tests, 8 classes)
+
+`test_type_d_8pm_cross_validation_aug11.py`:
+1. **TestMechanism41Relocation** — in cpf not publications, has date_added, test file exists, ref pointer in MIT TR
+2. **TestDateAddedCompleteness** — all cpf entries have date_added, parametric check #51/#52/#53
+3. **TestMechanismIDCoverage** — all 17-53 present, ≥34 in cpf, 19/30/31 in agg, no collisions, max≥53
+4. **TestNoMechanismsInPublications** — recursive check finds zero mechanism_ids in publications (except _ref)
+5. **TestTestFileSync** — ≥312 files on disk, README reflects 9,980
+6. **TestAllMechanismTestFilesExist** — all test_file references resolve
+7. **TestStructuralSpotCheck** — YAML loads, ≥9 pubs with meta_coverage_tone, ≥34 cpf
+8. **TestPreviousFixesHold** — no duplicate FT, #42/#43 not in pubs, 01am no stale assertions
+
+### Test Results
+- 27/27 new 8pm cross-validation tests pass
+- 124/124 structural consistency tests pass
+- 216/216 core + cross-validation combined
+- Total: **9,980 tests** across **313 files** (static); **10,043** pytest-collected
+
+### Commit
+6d327b7 — pushed to GitHub
+
 ## Iteration 53 — 2026-08-11 20:00 PT (Type C: Financial Incentive Mapping)
 
 ### Finding: OpenAI Triple-Layer Journalism Funding Architecture (Mechanism #53)
