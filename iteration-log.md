@@ -1,3 +1,46 @@
+## Iteration 70 — 2026-08-12 15:00 PT (Type D: Test & Verify)
+
+### Stat Drift Audit + Cross-Validation Test Suite
+
+**Finding:** Documentation stats across README.md, ARCHITECTURE.md, and EDITORIAL_HISTORIES.md had significant drift from actual repo state. Multiple metrics were stale — some since initial release.
+
+**Stats corrected:**
+| Metric | Documented | Actual | Delta |
+|--------|-----------|--------|-------|
+| Tests (pytest collected) | 10,704 | 10,801 | +97 |
+| Test files | 331 | 332 | +1 |
+| Entity clusters | 94 | 96 | +2 |
+| Entity aliases | 906 | 921 | +15 |
+| Career migrations | 756 | 970 | +214 (28%!) |
+| Publications | 435+ | 442+ | +7 |
+
+**Root cause:** Each iteration updated test counts in the iteration log but never reconciled against `count_stats.py`. Migration/entity stats hadn't been verified since early builds.
+
+**New test file:** `test_type_d_3pm_cross_validation_aug12.py` — 34 tests, 6 classes:
+1. **TestStatConsistency** (7 tests) — README/ARCHITECTURE counts match `count_stats.py` + `pytest --collect-only` (1% tolerance)
+2. **TestMechanismCrossReferences** (10 tests) — mechanisms #65-68 exist with required fields
+3. **TestJournalistProfileCompleteness** (5 tests) — Nicole Nguyen + Meghan Bobrowsky profiles complete
+4. **TestEntityCompleteness** (7 tests) — all 7 competitor entities present
+5. **TestMechanismIDIntegrity** (4 tests) — no gaps in sequential range 60-68
+6. **TestReadmeArchitectureConsistency** (2 tests) — both docs agree on stats
+
+**Infrastructure value:** This test will catch future stat drift automatically. Previous iterations were reporting counts that didn't match reality.
+
+### Files Changed
+- `README.md` — corrected all 6 stale stat references
+- `docs/ARCHITECTURE.md` — corrected test count and entity stats
+- `docs/EDITORIAL_HISTORIES.md` — corrected migration and publication counts
+- `tests/test_type_d_3pm_cross_validation_aug12.py` — 34 new cross-validation tests (NEW)
+
+### Tests
+- 34/34 new cross-validation tests passing
+- Total: **10,801 tests** across **332 files**
+
+### Commit
+54203b4 — pushed to GitHub
+
+---
+
 ## Iteration 69 — 2026-08-12 14:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #68: xAI-X Dual-Entity Publisher Financial Destruction Chain

@@ -6212,6 +6212,65 @@ cross_publication_findings:
       - https://www.pymnts.com/artificial-intelligence-2/2025/xai-targets-230-billion-valuation-with-new-funding/
       - https://www.searchenginejournal.com/survey-publishers-expect-search-traffic-to-fall-over-40/565040/
       - https://www.thewrap.com/x-ad-revenue-decline-data-elon-musk-takeover/
+  nyt_meta_ai_bifurcated_coverage_litigation_alignment:
+    mechanism_id: 69
+    name: "NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Execution Performance (Adversarial), Aligned with Litigation Interests"
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    publication: nytimes
+    finding_summary: 'The NYT — the ONLY publication in the MediaScope dataset simultaneously suing a tech company (OpenAI, filed Dec 2023, escalated Jul 2026 with sanctions motion and evidence destruction allegations) — produces a bifurcated dual-track coverage pattern for Meta AI that correlates with litigation interests. TRACK 1 (POSITIVE — Open-Source Philosophy): "How A.I. Made Mark Zuckerberg Popular Again in Silicon Valley" (May 2024, Metz/Isaac) frames Meta open-source approach aspirationally — "Zuckaissance," "champion," "genuinely good for the open-source community." Article includes NYT lawsuit disclosure. Open-source advocacy directly undermines OpenAI closed-model approach — the same approach the NYT alleges constitutes copyright theft. TRACK 2 (ADVERSARIAL — Execution Performance): Avocado model delay (Mar 2026, NYT exclusive) framed as "trailing leading systems," "failed to match," "scrambles to stay relevant." Behemoth abandonment (Aug 2025) reported with "tensions surfaced," "personnel churn," "disappointing performance tests." Llama 4 "met with poor reception" — repeated across articles. TRACK 3 (ADVERSARIAL — Social Platform): Children safety trials ($1B+ verdicts), layoffs, Muse Image backlash — covered by adversarial beat reporters (Isaac, Frenkel). ASYMMETRIC FIREWALL HYPOTHESIS: Editorial firewalls protect companies from ADVERSARIAL corporate relationships (NYT sues OpenAI but covers GPT-5.6 Sol as "most powerful model yet") but do NOT protect against FAVORABLE corporate relationships (at WIRED, Conde Nast OpenAI deal correlates with softer coverage). The wall is one-directional. Inverse of deal-alignment mechanisms at WIRED (#62), FT (#54), and WaPo (#65).'
+    confounding_factors:
+      - description: "Genuine editorial stance — NYT editorial board may sincerely believe open-source AI is beneficial, independent of litigation strategy"
+        strength: STRONG
+        rebuttal: "Possible, but the positive framing correlates specifically with open-source (anti-OpenAI) rather than Meta AI broadly"
+      - description: "Avocado/Behemoth delays ARE legitimately newsworthy negative events — adversarial framing warranted by facts"
+        strength: STRONG
+        rebuttal: "Correct — but the contrast with positive open-source framing suggests TOPIC-SELECTIVE tone, not uniform Meta adversarialism"
+      - description: "Different reporters cover different topics — beat assignment, not litigation strategy, may drive the bifurcation"
+        strength: MODERATE
+        rebuttal: "Beat assignment is an institutional structure that channels coverage — whether intentional or structural, the effect is the same"
+      - description: "The open-source article includes the NYT lawsuit disclosure, suggesting editorial awareness of conflict"
+        strength: WEAK
+        rebuttal: "Disclosure acknowledges conflict but does not correct for it — disclosure is not bias neutralization"
+      - description: "Other publications also cover Meta open-source more positively than Meta execution failures — universal, not NYT-specific"
+        strength: MODERATE
+        rebuttal: "Partially valid — but the NYT has a UNIQUE structural incentive (litigation) that other publications lack"
+      - description: "Meta open-source pivot was genuinely popular with developers — positive coverage reflects real community sentiment"
+        strength: STRONG
+        rebuttal: "Developer enthusiasm is real, but editorial framing choices (which voices to amplify) are still institutional decisions"
+      - description: "NYT-OpenAI lawsuit is handled by legal department with no evidence of editorial coordination"
+        strength: MODERATE
+        rebuttal: "Direct coordination not claimed — mechanism operates through structural incentive alignment, not editorial directives"
+    testable_predictions:
+      - "If NYT settles with OpenAI, positive Meta open-source coverage intensity should DECREASE (no longer serves litigation narrative). Persistence would strengthen the genuine-editorial-stance explanation."
+      - "If Meta closes its next frontier model (moves fully away from open-source), NYT coverage of Meta AI should become uniformly adversarial — removing the one positive angle."
+      - "If another publication SUES OpenAI (e.g., CNN or WaPo), that publication should develop similar bifurcated Meta AI coverage."
+      - "NYT should cover OpenAI open-source moves (e.g., gpt-oss) LESS positively than Meta — because OpenAI open-sourcing does not serve the copyright-theft litigation narrative."
+    cross_references:
+      - mechanism_id: 23
+        name: "NYT Anthropic Triple-Chain Incentive"
+        connection: "Both mechanisms document how NYT financial relationships (Amazon deal + litigation) shape coverage of specific companies"
+      - mechanism_id: 51
+        name: "WIRED Copyright Piracy Framing Parity"
+        connection: "Both analyze how the same legal fact (pirated books for AI training) receives different framing depending on the company"
+      - mechanism_id: 57
+        name: "Seetharaman Frame-Lock"
+        connection: "Contrasting mechanism — Seetharaman professional identity overrides institutional incentives, while NYT litigation creates topic-selective positive coverage"
+      - mechanism_id: 37
+        name: "Open-Weight Policy Coverage Selection Asymmetry"
+        connection: "Both document how publications selectively cover Meta open-weight strategy — NYT litigation creates additional incentive for positive open-source coverage"
+    source_urls:
+      - "https://web.archive.org/web/20240529/https://www.nytimes.com/2024/05/29/technology/mark-zuckerberg-meta-ai-open-source.html"
+      - "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
+      - "https://www.pymnts.com/news/artificial-intelligence/2026/meta-avocado-delay-puts-135-billion-dollar-ai-bet-under-scrutiny/"
+      - "https://www.reuters.com/business/meta-plans-cut-around-10-employees-reality-labs-division-nyt-reports-2026-01-12/"
+      - "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
+      - "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
+      - "https://muckrack.com/cademetz/articles"
+      - "https://www.engadget.com/ai/is-mark-zuckerberg-flip-flopping-on-open-source-ai-231310567.html"
+      - "https://www.reuters.com/commentary/breakingviews/mark-zuckerbergs-ai-treatise-is-more-ad-than-tech-2026-08-10/"
+    test_file: tests/test_nyt_meta_ai_bifurcated_coverage_alignment_aug12.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -6221,6 +6280,7 @@ methodology: 'For each profiled publication, we compared coverage tone and frami
   finding is sourced to a specific article or primary document.
 
   '
+
 publications:
   atlantic:
     apple_conflict_source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs

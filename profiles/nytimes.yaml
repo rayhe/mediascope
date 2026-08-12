@@ -3209,6 +3209,13 @@ competitor_relationships:
     direction: "none"
     description: "No AI licensing deal. Carlos Slim (~17% NYT stake) has no known Meta financial interest."
     coverage_prediction: "adversarial"
+    meta_ai_bifurcated_coverage:
+      _ref: "mechanism #69 in cross_publication_findings"
+      note: >
+        Meta coverage is BIFURCATED by topic: open-source AI philosophy receives
+        POSITIVE framing (serves anti-OpenAI litigation narrative), while AI execution
+        performance and social platform issues receive standard ADVERSARIAL treatment.
+        See mechanism #69 for full analysis.
   anthropic:
     financial_tie: "settlement_reported"
     estimated_value: "undisclosed (confidential)"
