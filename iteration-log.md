@@ -1,5 +1,82 @@
 # MediaScope Iteration Log
 
+## Iteration 61 — 2026-08-12 05:00 PT (Type C: Financial Incentive Mapping)
+
+### Finding: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel (Mechanism #61)
+
+**Entity × Publication:** Apple × All MediaScope-profiled publications
+
+**Core Finding:** Apple News+ creates a TRIPLE ALIGNMENT where publisher financial incentives converge with Apple's competitive positioning as it prepares N50 smart glasses (WWDC Jun 2027):
+
+1. **FINANCIAL:** Apple News+ publishers earn revenue from Apple (50% of $12.99/mo, engagement-weighted, 125M MAU, 400+ titles, 24% US Apple customer penetration). Meta provides $0 to publishers. Adversarial Meta coverage is cost-free.
+
+2. **COMPETITIVE:** Apple explicitly aims to "distance the launch from criticism faced by Meta's Ray-Ban glasses" (Gurman, Bloomberg, Jul 26, 2026). Every "privacy nightmare" article about Meta damages Apple's #1 smart glasses competitor.
+
+3. **EDITORIAL CURATION:** Apple employs 100 editors controlling Top Stories placement. Enders Analysis UK data: national newspapers get 55% of engagement despite being 5% of titles. Placement drives engagement-weighted revenue share.
+
+**Lifeline Paradox:** Publishers increasingly depend on Apple News+ as Google AI Overviews cuts referral traffic (-34.5%) and Meta deprioritizes news. Semafor called Apple News+ a "lifeline." The Atlantic's CGO: "Apple is by far the most valuable syndication partner." Dependency intensifies precisely as Apple enters smart glasses market.
+
+**Coverage Framing Evidence:** Apple N50 delay received uniformly aspirational framing ("Privacy Focus," "prioritizing privacy," "beat Meta where it matters"). Meta's proactive camera-disable innovation (Jul 7 2026) received reactive framing ("responded after reports," "privacy nightmare"). Same privacy concern (cameras on faces), inverted editorial treatment by company identity.
+
+**Control Case:** FT is NOT on Apple News+ — may apply comparable privacy scrutiny to N50 as to Meta.
+
+**7 confounding factors, 4 testable predictions, 4 cross-references (#30, #43, #47, #55).**
+
+### Files Changed
+- `tests/test_apple_news_plus_glasses_prelaunch_alignment_aug12.py` — 44 tests, 12 classes (NEW)
+- `profiles/competitor-entities.yaml` — `apple_news_glasses_prelaunch_alignment` section under `apple:` entity
+- `profiles/competitor-coverage-research.yaml` — mechanism #61 in `cross_publication_findings`
+- `README.md` — test counts updated (10,296/322), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,296/322), new test file listed
+
+### Tests
+- 44/44 new mechanism tests passing (50 pytest-collected incl. parametrize)
+- 124/124 structural consistency tests passing
+- Total: **10,296 tests** across **322 files**
+
+### Commit
+(pending)
+
+## Iteration 60 — 2026-08-12 04:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Finding: Institutional Financial Alignment Predicts Investigative Target Selection — Karen Hao (Mechanism #60)
+
+**Journalist:** Karen Hao (MIT Tech Review → WSJ → Atlantic → freelance)
+
+**Core Finding:** Karen Hao's investigative target selection aligns with the financial incentive structure of her employing institution — a distinct pattern from Mechanism #57 (Seetharaman frame-lock), where framing persists across institutions. Hao's targeting SHIFTS with institutional context.
+
+**Career Path as Natural Experiment:**
+
+1. **MIT Technology Review (2018-2022):** Google funds MIT research through MIT-Google Program, Eric Schmidt's personal philanthropy, and Schwarzman College collaborations. Facebook/Meta: $0 in MIT/MIT TR financial relationships.
+   - **Published:** "The Facebook Gatekeeper" — 9-month adversarial investigation (Mar 11, 2021)
+   - **NOT published:** Comparable adversarial investigation of Google AI ethics
+   - **Gebru Timing Gap:** Published the Facebook investigation the same week Google's AI ethics crisis peaked (Gebru fired Dec 2020, Mitchell fired Feb 2021, employee open letters about harassment)
+
+2. **"Empire of AI" book (2025, Penguin Press):** No institutional financial ties to any Big Tech company.
+   - Primary target: OpenAI (adversarial, book-length investigation)
+   - Counter-example of "good AI": Google DeepMind's AlphaFold — cited across TechCrunch (Sep 2025), MIT event (Mar 2026), IBM Think (May 2026)
+
+**The AlphaFold Signal:** Hao consistently positions Google DeepMind's AlphaFold as the exemplar of how AI SHOULD be done — "Those are the types of AI systems that we need. AlphaFold does not create mental health crises" (TechCrunch). Google receives POSITIVE framing despite comparable AI scale, environmental impact, and a more dramatic internal ethics crisis (firing Gebru/Mitchell).
+
+**Key Distinction from Mechanism #57:** Seetharaman's adversarial Meta framing persisted from WSJ to Reuters (frame-lock). Hao's targeting SHIFTED — Facebook at MIT TR, OpenAI in her book — suggesting institutional financial alignment as the driver rather than professional identity capture.
+
+**7 confounding factors documented, 4 testable predictions, 4 cross-references.**
+
+### Files Changed
+- `tests/test_karen_hao_cross_entity.py` — 40 tests, 10 classes (NEW)
+- `profiles/competitor-coverage-research.yaml` — mechanism #60 in cross_publication_findings
+- `profiles/careers/journalists.yaml` — Karen Hao competitor_coverage with cross_entity_analysis
+- `README.md` — test counts updated (10,246/321), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,246/321), new test file listed
+
+### Tests
+- 40/40 new mechanism tests passing
+- 124/124 structural consistency tests passing
+- Total: **10,246 tests** across **321 files** (structural count); **10,309** pytest-collected
+
+### Commit
+9c88001 — pushed to GitHub
+
 ## Iteration 59 — 2026-08-12 03:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Finding: Guardian Dual-Role Paradox — Simultaneous Google AI Pilot Partner and EPC Antitrust Complainant (Mechanism #59)

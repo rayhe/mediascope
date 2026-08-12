@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10246 tests across 321 test files (all from real articles)
+├── tests/                       # 10296 tests across 322 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -777,6 +777,7 @@ mediascope/
 │   ├── test_meta_ad_competitor_structural_antagonism_aug11.py # Mechanism #47: Meta Ad Revenue Competitor Structural Antagonism Index — Meta projected $243.46B 2026 ad revenue (surpassing Google for first time). Meta is ONLY entity among 7 profiled that is pure ad competitor with zero publisher revenue. Structural antagonism matrix, Condé Nast CEO "no longer expects advertising to be a growth engine", publisher ad decline. 9 classes, 52 tests
 │   ├── test_privacy_innovation_attribution_inversion_aug11.py # Mechanism #55: Privacy Innovation Attribution Inversion — cross-journalist framing of Meta's industry-first camera-disable feature (Jul 7 2026, "No other kind of camera has done this") vs Samsung Galaxy Glasses privacy toggle (Jul 22, neutral) vs Apple smart glasses delay (Jul 26, aspirational). Same privacy concern, inverted framing by company. Ben Schoon (9to5Google "privacy nightmare"), Chandra Steele (Android Police "but women's safety"), Digital Trends ("creep's weapon"), PetaPixel (reactive), Gizmodo/Barr (Samsung neutral), WebProNews (Apple "reckoning"), Fast Company ("The Problem"). 6 confounders, 3 testable predictions. 9 classes, 56 tests
 │   ├── test_verge_intra_publication_beat_segregation_aug11.py # Mechanism #56: Verge Intra-Publication Beat Segregation — Weatherbed (platform) neutral framing vs Field (AI beat) deficit framing of Meta. PMC/Vox OpenAI deal correlation. First different-journalist same-publication framing divergence mechanism. 9 classes, 23 tests
+│   ├── test_apple_news_plus_glasses_prelaunch_alignment_aug12.py # Mechanism #61: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel — TRIPLE ALIGNMENT of Apple News+ financial dependency (50% of $12.99/mo, 125M MAU, 400+ titles), N50 competitive positioning (WWDC Jun 2027, explicit Meta distancing), and editorial curation (100 editors, Top Stories placement). Lifeline Paradox: dependency intensifies as Google/Meta referral traffic declines. Aspirational Apple framing vs reactive Meta framing for identical privacy concern. FT control case (not on Apple News+). 4 cross-refs (#30, #43, #47, #55), 7 confounders, 4 predictions. 12 classes, 50 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

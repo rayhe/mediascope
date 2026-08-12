@@ -1732,6 +1732,157 @@ entities:
       - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
       - https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php
       - https://www.macobserver.com/news/apple-q3-2026-earnings-results-revenue-hits-109-4-billion-up-16-eps-jumps-29/
+    apple_news_glasses_prelaunch_alignment:
+      mechanism_id: 61
+      overview: |
+        Apple News+ creates a financial dependency between Apple and 400+
+        publishers (50% of $12.99/mo, engagement-weighted, 125M MAU). Apple
+        simultaneously prepares to launch smart glasses (N50, WWDC Jun 2027)
+        with an explicit strategy to "distance the launch from criticism faced
+        by Meta's Ray-Ban glasses" (Gurman, Bloomberg, Jul 26, 2026). Apple's
+        Vision hardware group sees privacy as "priority No. 1." This
+        creates a TRIPLE ALIGNMENT where publisher financial incentives converge
+        with Apple's competitive positioning: (1) Apple News+ publishers earn
+        revenue from Apple, $0 from Meta — anti-Meta coverage is cost-free;
+        (2) every article framing Meta glasses as a "privacy nightmare" damages
+        Apple's #1 smart glasses competitor and strengthens N50 positioning;
+        (3) Apple employs 100 editors controlling Top Stories placement — editorial
+        curation drives engagement-weighted revenue share. UK data (Enders
+        Analysis) shows national newspapers get 55% of engagement time despite
+        being 5% of titles. Apple's growing referral traffic is replacing
+        declining Google/Meta traffic — Semafor called Apple News+ a "lifeline"
+        — making publisher dependency intensify precisely as Apple enters the
+        smart glasses market. Meta has ZERO financial relationships with Apple
+        News+ publishers. Meta's proactive camera-disable innovation (Jul 7 2026)
+        received reactive framing ("responded after reports") while Apple's delay
+        received aspirational framing ("privacy focus," "prioritizing privacy").
+      n50:
+        codename: N50
+        original_timeline: late 2026 reveal, early 2027 launch
+        current_timeline: WWDC Jun 2027 reveal, late 2027 launch
+        delay_reason: privacy concerns
+        source: Mark Gurman, Bloomberg, Jul 26 2026
+        camera_options_tested:
+          - camera with new privacy restrictions (most likely)
+          - camera for AI only, no saving/sharing
+          - no camera at all
+        explicit_meta_distancing: |
+          Apple's Vision hardware group "see privacy as priority No. 1"
+          and aim to "keep the launch separate from the criticism directed
+          at Meta's Ray-Ban glasses." — Gurman, Jul 26, 2026
+      triple_alignment:
+        financial: |
+          Apple News+ publishers earn revenue from Apple (50% of $12.99/mo
+          engagement-weighted). No publisher earns revenue from Meta.
+          Adversarial Meta coverage is cost-free; adversarial Apple coverage
+          risks Apple News+ revenue and editorial placement.
+        competitive: |
+          Every article framing Meta glasses as "privacy nightmare" or
+          "pervert glasses" damages Apple's #1 competitor in smart glasses
+          and strengthens Apple's "responsible alternative" positioning
+          for N50. Apple benefits commercially from negative Meta coverage.
+        editorial_curation: |
+          Apple employs 100 editors controlling Top Stories placement on
+          Apple News. UK Enders Analysis data shows placement drives revenue:
+          national newspapers get 55% of engagement despite being 5% of
+          titles. Publishers who support Apple's narrative may receive
+          favorable positioning and higher engagement-weighted revenue.
+      coverage_framing_evidence:
+        apple_n50_delay_framing:
+          - publication: TechRepublic
+            headline: 'Apple Smart Glasses Target 2027 With Privacy Focus'
+            framing: 'virtue — privacy focus as intentional positive choice'
+            url: https://www.techrepublic.com/article/news-apple-smart-glasses-privacy/
+          - publication: Neowin
+            headline: 'Report: Apple smart glasses delayed due to privacy concerns'
+            framing: 'responsible — prioritizing privacy intentional delay'
+            url: https://www.neowin.net/news/report-apples-smart-glasses-delayed-due-to-privacy-concerns/
+          - publication: TechCrunch
+            headline: 'Can Apple make smart glasses that are not a constant privacy threat?'
+            framing: 'aspirational — implies others ARE threats, Apple seeks solution'
+            url: https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+          - publication: Digital Trends
+            headline: 'Apple smart glasses are running late because they do not want to stir a privacy storm'
+            framing: 'heroic delay — Apple sacrifices speed for responsibility'
+            url: https://www.digitaltrends.com/wearables/apples-smart-glasses-are-running-late-because-they-dont-want-to-stir-a-privacy-storm/
+          - publication: Android Authority
+            headline: 'Apple glasses could beat Android XR and Meta where it matters'
+            framing: 'competitive advantage — privacy as winning differentiator'
+            url: https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/
+        meta_glasses_reactive_framing:
+          - publication: Digital Trends
+            framing: 'demonstrated the privacy nightmare — Meta as cautionary tale'
+            url: https://www.digitaltrends.com/wearables/apples-smart-glasses-are-running-late-because-they-dont-want-to-stir-a-privacy-storm/
+          - publication: Neowin
+            framing: 'gained a poor reputation for privacy — Meta as damaged brand'
+            url: https://www.neowin.net/news/report-apples-smart-glasses-delayed-due-to-privacy-concerns/
+          - publication: Notebookcheck
+            framing: 'Meta mixed reputation does not exactly help — permanent stigma'
+            url: https://www.notebookcheck.net/Apple-Smart-Glasses-said-to-launch-in-2027-with-privacy-focus.1352829.0.html
+        framing_asymmetry: |
+          Meta shipped camera-disable on LED tamper detection (Jul 7 2026) — an
+          industry-first proactive privacy innovation. Coverage framed it as
+          "responded after reports" (reactive). Apple has NOT shipped a product
+          and may remove the camera entirely, yet receives aspirational "privacy
+          focus" framing. The same privacy concern (cameras on faces) receives
+          INVERTED editorial treatment depending on company identity.
+      confounding_factors:
+        - factor: Privacy concerns about camera glasses are legitimate
+          strength: STRONG
+          detail: Bystander discomfort is real regardless of who makes the glasses
+        - factor: Apple genuinely has a stronger public privacy track record
+          strength: STRONG
+          detail: Apple's privacy marketing and on-device processing history is well-established
+        - factor: Apple may genuinely invest more in N50 privacy features
+          strength: MODERATE
+          detail: N50 may include novel protections not seen in Meta glasses
+        - factor: Some non-Apple-News+ publications also frame delay positively
+          strength: MODERATE
+          detail: BetaNews, gHacks etc. are not on Apple News+
+        - factor: Bloomberg (Gurman) is the primary source, not on News+
+          strength: MODERATE
+          detail: The coverage originates from a Bloomberg reporter with no Apple News+ dependency
+        - factor: Publisher Apple News+ revenue is modest for large publishers
+          strength: MODERATE
+          detail: Single-digit millions annually, not existential for Condé Nast ($2B+)
+        - factor: Apple's 100 editors may exercise genuine editorial judgment
+          strength: WEAK
+          detail: No evidence of direct editorial quid pro quo
+      testable_predictions:
+        - WIRED (16 Condé Nast titles on Apple News+) will cover N50 launch
+          with softer framing than it applied to Meta glasses — no "mass surveillance"
+          or "creep's weapon" vocabulary
+        - The Atlantic ("most valuable syndication partner") will position
+          Apple glasses as the "responsible alternative" to Meta
+        - FT (NOT on Apple News+) will apply comparable privacy scrutiny to
+          N50 as it applied to Meta glasses — no aspirational differential
+        - If Apple removes N50 camera, Apple News+ publishers will frame
+          the removal as "principled" rather than "feature-cutting"
+      cross_references:
+        - mechanism_id: 30
+          name: Chokkattu temporal framing oscillation
+          connection: Genre interaction layer on top of financial incentive
+        - mechanism_id: 43
+          name: Dual-client litigation entanglement
+          connection: Apple-OpenAI lawsuit creates dual-client pressure on same publishers
+        - mechanism_id: 47
+          name: Meta ad revenue competitor structural antagonism
+          connection: Meta is publishers' direct ad competitor; Apple News+ is revenue replacement
+        - mechanism_id: 55
+          name: Privacy innovation attribution inversion
+          connection: Meta's proactive measures framed reactively; Apple's delay framed aspirationally
+      source_urls:
+        - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
+        - https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
+        - https://www.digitaltrends.com/wearables/apples-smart-glasses-are-running-late-because-they-dont-want-to-stir-a-privacy-storm/
+        - https://www.neowin.net/news/report-apples-smart-glasses-delayed-due-to-privacy-concerns/
+        - https://www.techrepublic.com/article/news-apple-smart-glasses-privacy/
+        - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+        - https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/
+        - https://9to5mac.com/2024/05/22/apple-news-lifeline/
+        - https://9to5mac.com/2024/05/29/apple-news-subscriptions-growing-4x-faster-than-major-publishers/
+        - https://digiday.com/media/media-briefing-apple-news-ad-monetization-still-abysmal-for-some/
+        - https://www.mactech.com/2026/01/30/report-the-influence-of-apple-news-will-grow-as-ai-usage-increases/
     quintuple_publisher_leverage:
       overview: "Apple has FIVE distinct financial relationship mechanisms with\npublishers — making it the THIRD most entangled\
         \ entity after\nMicrosoft (7) and Amazon (6). Apple's leverage is unique because\nit combines a distribution monopoly\
