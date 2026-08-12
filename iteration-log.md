@@ -1,4 +1,16 @@
 # MediaScope Iteration Log
+## 2026-08-11 19:00 PT — Type B: Journalist Cross-Entity Tracking — Mechanism #52
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+
+**Finding:** Hayden Field AI Beat Concentration — The Verge's AI Coverage as OpenAI/Anthropic Coverage (Mechanism #52). Field joined The Verge from CNBC on Jun 2, 2025 with an explicit mandate to "lead coverage of the biggest names in AI — including OpenAI, Anthropic, Google, Meta, Apple, and others." Her actual portfolio (Jun 2025 – Aug 2026) reveals a ~10:1 coverage volume asymmetry: ~15+ OpenAI/Anthropic articles and 4+ Decoder podcast appearances vs ~2-3 Meta AI articles. When Meta IS covered, framing uses follower/deficit language ("reentering the AI race," researchers "rejected Meta's offers to stay at jobs that align with their values"), while Anthropic gets aspiration/victim framing ("betting its future," "fight over Claude Mythos 5," solidarity from OpenAI/Google employees). The Verge/PMC has an OpenAI content deal; no Meta deal. Coverage volume correlates with financial-relationship presence. This is the THIRD documented instance of the "AI reporter beat concentration" pattern (after Cade Metz at NYT and Will Knight at WIRED), establishing it as an industry-wide phenomenon: at financially-entangled publications, the AI beat functionally operates as the OpenAI/Anthropic beat. Victoria Song (The Verge wearables) is a documented counter-example — she covers Meta balanced-to-positive, but through the product lens, not the AI industry lens. 7 legitimate factors documented with strength ratings.
+
+**Tests:** 48/48 pass (test_hayden_field_ai_beat_concentration_aug11.py, 10 test classes). 124/124 structural consistency tests pass.
+
+**Infrastructure:** README.md and docs/ARCHITECTURE.md updated — 9,888 tests across 311 test files.
+
+**Commit:** b198a6f — pushed to GitHub
+
 ## 2026-08-11 18:00 PT — Type A: Competitor Coverage Deep Dive — Mechanism #51
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -33506,3 +33518,37 @@ Mechanism #48: WIRED (Condé Nast, OpenAI content deal since Aug 2024) has ZERO 
 
 ### Commit
 e024c92 — pushed to GitHub
+
+---
+
+## Iteration 52 — 2026-08-11 19:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Finding: Hayden Field AI Beat Concentration at The Verge
+
+**Mechanism #52**: Hayden Field joined The Verge from CNBC as senior AI reporter (Jun 2, 2025) with an explicit mandate to "lead coverage of the biggest names in AI — including OpenAI, Anthropic, Google, Meta, Apple, and others." Her actual portfolio reveals massive beat concentration:
+
+- **Volume**: ~15+ OpenAI/Anthropic articles vs ~2-3 Meta AI articles in 14 months
+- **Framing**: Anthropic gets aspiration/milestone framing ("betting its future," "officially filed to go public"), Meta gets follower/deficit framing ("reentering the AI race," researchers "rejected Meta's offers")
+- **Notable absences**: No Field article on Llama 4 launch, Meta's open-weight policy, Meta AI reaching 1B MAU, or Meta AI on glasses
+- **Industry pattern**: THIRD documented instance of "AI reporter beat concentration" after Cade Metz/NYT and Will Knight/WIRED — establishing this as INDUSTRY-WIDE
+
+**Financial correlation**: PMC/The Verge has OpenAI content deal + Azure OpenAI enterprise agreement. No Meta deal. Coverage volume correlates with financial-relationship presence.
+
+**Counter-example**: Victoria Song (The Verge wearables reporter) covers Meta balanced-to-positive — but Song covers products not AI research. Beat assignment as coverage selection IS the mechanism.
+
+**7 legitimate factors** documented with strength ratings (1 STRONG, 4 MODERATE, 2 WEAK).
+
+### Files Changed
+- `profiles/the-verge.yaml` — Expanded Hayden Field entry with full cross_entity_coverage_analysis (13 OAI/Anthropic examples, 3 Meta examples, 4 notable absences, mandate vs reality gap, industry pattern match, financial correlation, 8 source URLs)
+- `profiles/competitor-coverage-research.yaml` — mechanism #52 in cross_publication_findings
+- `tests/test_hayden_field_ai_beat_concentration_aug11.py` — 48 tests, 10 classes
+- `README.md` — test counts updated (9888/311), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (9888/311), new test file listed
+
+### Tests
+- 48/48 new tests passing
+- 124/124 structural consistency tests passing
+- Total: 9888 tests across 311 files
+
+### Commit
+b198a6f — pushed to GitHub

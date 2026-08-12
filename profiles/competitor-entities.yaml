@@ -325,6 +325,126 @@ entities:
       - https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
       - https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks
       - https://www.scientificamerican.com/article/openai-admits-its-agent-went-rogue-and-hacked-ai-startup-hugging-face/
+    triple_layer_journalism_funding:
+      mechanism_id: 53
+      discovery_date: '2026-08-11'
+      summary: >
+        OpenAI operates three distinct, simultaneous financial relationship channels
+        with journalism, creating compounded dependencies at different organizational
+        levels unprecedented for any single AI company. Layer 1 (content licensing)
+        targets publisher executives, Layer 2 (salary funding) targets individual
+        reporters' jobs, Layer 3 (philanthropic grants) targets the nonprofit
+        journalism ecosystem infrastructure. Meta's trajectory is the mirror image:
+        active financial withdrawal from all three levels since 2022.
+      layer_2_salary_funding:
+        axios:
+          date: '2025-01'
+          initial_cities:
+            - Pittsburgh
+            - Kansas City
+            - Boulder
+            - Huntsville
+          expansion_2026: '7-9 additional cities'
+          deal_type: content licensing + training + direct newsroom funding
+          significance: 'First time OpenAI directly funded journalist salaries'
+          source_urls:
+            - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
+            - https://www.adweek.com/media/axios-local-openai-2026/
+            - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+        lenfest_institute:
+          date: '2024-10'
+          total_funding_m: 10
+          joint_partner: Microsoft
+          newsrooms:
+            - Chicago Public Media
+            - Minnesota Star Tribune
+            - Newsday
+            - Philadelphia Inquirer
+            - Seattle Times
+          fellow_duration_years: 2
+          source_url: https://news.slashdot.org/story/24/10/22/2045216/openai-microsoft-funding-10-million-in-grants-for-ai-powered-journalism
+      layer_3_philanthropic_grants:
+        ajp_phase_1:
+          date: '2023-07'
+          cash_m: 5
+          api_credits_m: 5
+          portfolio_newsrooms: 41+
+          initial_grantees:
+            - Centro de Periodismo Investigativo
+            - Cityside
+            - Civic News Company
+            - CT Mirror
+            - inewsource
+            - The Marshall Project
+            - Montana Free Press
+            - Outlier Media
+            - Nebraska Journalism Trust
+            - Open Campus
+            - Sahan Journal
+            - Spotlight PA
+            - THE CITY
+          source_urls:
+            - https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
+            - https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project
+            - https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/
+        ajp_phase_2:
+          date: '2026-07'
+          cash_m: 5
+          tech_credits_m: 3
+          newsrooms_covered: '50+'
+          states: 38
+          organizations_with_direct_grants_phase_1: 31
+          source_url: https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/
+      meta_contrast:
+        news_tab_payments_ended: '2022-07'
+        news_tab_total_value: '$105M over 3 years (2019-2022)'
+        bulletin_killed: '2023'
+        news_tab_europe_removed: true
+        content_licensing_deals: 0
+        salary_funding_programs: 0
+        philanthropy_grants_post_2022: 0
+        structural_trajectory: 'Active withdrawal from all three journalism funding
+          levels simultaneously, creating structural resentment in journalism industry'
+        source_urls:
+          - https://www.livemint.com/companies/news/facebook-to-end-payments-to-us-news-publishers-11659025905218.html
+          - https://www.nasdaq.com/articles/metas-facebook-is-done-paying-publishers-for-news-tab-content
+          - https://www.fastcompany.com/90963282/meta-was-never-really-the-medias-friend
+      structural_insight:
+        levels:
+          - level: corporate
+            mechanism: content licensing to publisher executives
+            channel: publisher_content_deal_portfolio
+          - level: individual
+            mechanism: salary funding for specific reporters
+            channel: layer_2_salary_funding
+          - level: ecosystem
+            mechanism: philanthropic grants to nonprofit journalism infrastructure
+            channel: layer_3_philanthropic_grants
+        unprecedented: 'No tech company has simultaneously operated financial
+          relationships at all three levels of the journalism stack'
+        effect: 'Structural incentive alignment without editorial control —
+          financial dependency is real but invisible at the point of editorial
+          decision-making'
+      total_journalism_investment_summary:
+        layer_1_annual_m: '300-400 (estimated from disclosed deal values)'
+        layer_2_total_m: '10+ (Lenfest $10M joint with Microsoft; Axios undisclosed)'
+        layer_3_total_m: '18 ($10M cash + $8M credits across AJP Phase 1 and 2)'
+        total_disclosed_m: '328-418+'
+        meta_equivalent_m: 0
+      source_urls:
+        - https://llmpulse.ai/blog/openai-publisher-deals/
+        - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
+        - https://www.adweek.com/media/axios-local-openai-2026/
+        - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+        - https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
+        - https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project
+        - https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/
+        - https://www.newscaststudio.com/2026/07/22/openai-renews-local-news-partnership-with-5-million-investment/
+        - https://www.theajp.org/news-insights/announcements/exploring-emerging-technologies-an-update-on-our-product-ai-studio/
+        - https://news.slashdot.org/story/24/10/22/2045216/openai-microsoft-funding-10-million-in-grants-for-ai-powered-journalism
+        - https://www.livemint.com/companies/news/facebook-to-end-payments-to-us-news-publishers-11659025905218.html
+        - https://www.nasdaq.com/articles/metas-facebook-is-done-paying-publishers-for-news-tab-content
+        - https://www.fastcompany.com/90963282/meta-was-never-really-the-medias-friend
   anthropic:
     display_name: Anthropic
     aliases:
