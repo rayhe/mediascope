@@ -1,5 +1,64 @@
 # MediaScope Iteration Log
 
+## Iteration 67 — 2026-08-12 11:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #65: WaPo Bezos Ownership Chain — Amazon → Anthropic Pre-IPO Coverage Alignment
+
+**Focus:** Washington Post × Anthropic — the strongest direct-ownership conflict chain in the MediaScope dataset. First WaPo profile entry.
+
+**Finding:**
+
+Jeff Bezos owns WaPo outright ($250M, 2013). Bezos founded Amazon and remains executive chairman / largest shareholder. Amazon invested $13B+ in Anthropic (largest external investment in Amazon history), holding 15-20% equity worth ~$150-200B at ~$965B secondary valuation. Anthropic filed a confidential S-1 in June 2026 targeting ~$1T IPO.
+
+This is DIRECT OWNERSHIP — not content licensing (FT-OpenAI), not ad dependency (Google-Guardian), not an endowment chain (MIT-Anthropic). At IPO, Amazon's Anthropic stake could be worth 150-200x the purchase price of WaPo itself. Coverage evidence: WaPo AI political bias study positions Claude as MOST balanced chatbot; "Anthropic lost the Pentagon but won over America" heroic framing; Claude persuasion study framed as scientifically interesting, not alarming. Meta coverage through adversarial/privacy-alarm lens (Gen Z backlash, spokesperson declining questions). Meta pays WaPo $0.
+
+7 confounding factors documented (3 STRONG: Pentagon newsworthiness, Amazon critical coverage, methodology objectivity). 4 testable predictions including IPO framing and Fable 5 underreporting. Cross-references to mechanisms #22 (NYT triple-chain), #54 (FT capital-raise), #15 (MIT TR pre-IPO).
+
+### Files Changed
+- `tests/test_wapo_bezos_anthropic_ownership_coverage_alignment_aug12.py` — 8 classes, 29 tests (NEW)
+- `profiles/competitor-coverage-research.yaml` — mechanism #65 added to cross_publication_findings
+- `profiles/competitor-entities.yaml` — `wapo_bezos_ownership_chain` section added to anthropic entity
+- `README.md` — test counts updated (10,615/328)
+- `docs/ARCHITECTURE.md` — test counts updated (10,615/328)
+
+### Tests
+- 29/29 new mechanism tests passing
+- Total: **10,615 tests** across **328 files**
+
+---
+
+## Iteration 66 — 2026-08-12 10:00 PT (Type D: Test & Verify)
+
+### Cross-Validation of Mechanisms #63-64, Stale Assertion Fixes
+
+**Focus:** Validate recent mechanisms (Zeff Source Access #63, Cloudflare Crawl Block #64) for profile completeness, cross-reference integrity, entity integration, and finding quality. Fix stale test assertions from earlier iterations.
+
+**Findings:**
+
+1. **Stale mechanism-count assertions (FIXED):** `test_type_d_02am_cross_validation_aug12.py` and `test_type_d_06am_cross_validation_aug12.py` both hardcoded `max_mechanism_id=62` and `range(50, 63)`. Mechanisms 63 and 64 were added in iterations 64-65, causing 3 test failures. Fixed by converting to `assertGreaterEqual(max, 62)` and dynamic range computation.
+
+2. **Cross-reference format inconsistency (NOTED, TESTS ADAPTED):** Mechanisms #42-#44, #56-#57, #60 use string-format cross-references while newer mechanisms (#62-#64) use dict-format with `mechanism_id`, `name`, `connection` keys. New cross-validation test handles both formats. Not a data integrity issue — two valid formats coexist.
+
+3. **Mechanism #46 empty connection field (NOTED):** Cross-ref to #28 has `connection: ""` but valid `relationship` field. Test adapted to check both.
+
+4. **All 39 new cross-validation tests pass.** Profile completeness, entity integration, journalist career tracking, mechanism sequence integrity, cross-reference graph, and finding summary quality all validated.
+
+### Files Changed
+- `tests/test_type_d_10am_cross_validation_aug12.py` — 8 classes, 39 tests (NEW)
+- `tests/test_type_d_02am_cross_validation_aug12.py` — fixed stale max=62 assertion
+- `tests/test_type_d_06am_cross_validation_aug12.py` — fixed stale max=62 and range(50,63) assertions
+- `README.md` — test counts updated (10,523/327), new test file listed
+- `docs/ARCHITECTURE.md` — test counts updated (10,523/327), new test file listed
+
+### Tests
+- 39/39 new cross-validation tests passing
+- 210/210 combined (new + fixed + structural consistency) passing
+- 184/184 today's mechanism tests (aug12) passing
+- Total: **10,523 tests** across **327 files**
+
+### Commit
+134cb56 — pushed to GitHub
+
 ## Iteration 65 — 2026-08-12 09:00 PT (Type C: Financial Incentive Mapping)
 
 ### New Finding: Cloudflare Publisher AI Crawl Default-Block — Google-OpenAI Financial Asymmetry Accelerator (Mechanism #64)

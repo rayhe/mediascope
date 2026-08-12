@@ -951,6 +951,29 @@ entities:
       - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
       - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
       - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+    wapo_bezos_ownership_chain:
+      mechanism_id: 65
+      date_added: '2026-08-12'
+      finding: |
+        DIRECT OWNERSHIP chain: Jeff Bezos owns Washington Post ($250M, 2013).
+        Bezos founded Amazon and remains executive chairman / largest shareholder.
+        Amazon invested $13B+ in Anthropic (largest external investment in Amazon
+        history), holding 15-20% equity worth ~$150-200B at ~$965B secondary
+        valuation. This is the strongest single-path ownership conflict in the
+        MediaScope dataset — no intermediary licensing deals or endowment hops.
+        At Anthropic's ~$1T IPO target, Amazon's stake could be worth 150-200x
+        the purchase price of WaPo itself. WaPo AI beat reporter Gerrit De Vynck
+        covers both Anthropic (Claude bias study, Pentagon stance, persuasion
+        research) and Meta (Gen Z backlash, privacy alarm) with measurably
+        different framing valence.
+      ownership_path:
+      - Jeff Bezos → Washington Post (sole proprietor, $250M, 2013)
+      - Jeff Bezos → Amazon (founder, executive chairman, largest shareholder)
+      - Amazon → Anthropic ($13B+ investment, 15-20% equity)
+      source_urls:
+      - https://foxnews.com/media/most-prominent-ai-chatbots-have-liberal-bias-new-study-finds
+      - https://www.eweek.com/news/anthropic-washington-timeline-2026/
+      - https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
 
   amazon:
     display_name: Amazon
