@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 94 clusters with 906 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 96 clusters with 921 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 10,704 | Across 331 test files |
+| Tests | 10,801 | Across 332 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **254 journalists** (60 with structured education records) across 435+ publications (756 migrations). Notable high-value migrations include:
+Ships with verified career data for **254 journalists** (60 with structured education records) across 442+ publications (970 migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -272,7 +272,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 113 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
-| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 94 entity clusters (906 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
+| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 96 entity clusters (921 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 13 sentiment correction paths (A–N)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
 | [ACCURACY_GUIDE.md](docs/ACCURACY_GUIDE.md) | **Practical accuracy reference** — when to trust scores, genre-specific accuracy, known failure modes, decision tree for interpreting results, common misinterpretation patterns |
 | [CROSS_PUBLICATION_REFERENCE.md](docs/CROSS_PUBLICATION_REFERENCE.md) | **Quick-reference card for same-event cross-publication comparison** — the most powerful evidence technique; 7-dimension matrix, wire-service baseline method, editorial mode taxonomy, 13 validated comparison clusters |
@@ -376,7 +376,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 13 distinct correction paths (A–N), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 254 journalists, 756 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 254 journalists, 970 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **10704 tests** across 331 test files, each covering a different analytical capability:
+MediaScope has **10801 tests** across 332 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
