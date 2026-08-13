@@ -1,3 +1,39 @@
+## Iteration 80 — 2026-08-13 03:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #78: Gemini Android XR Data Retention Investigation Gap — Active vs Dormant Severity Inversion
+
+**Finding:** Google's Gemini Apps Privacy Hub (updated May 5, 2026) EXPLICITLY lists "Gemini on Android XR" as a covered service. Under this LIVE, ACTIVE policy: activity stored 18 months by default, human-reviewed conversations retained 3 YEARS (NOT deleted when user clears activity), no glasses-specific policy confirmed. Meta's NameTag was DORMANT: never activated, never processed user data, removed within 24 hours. Despite this severity inversion, NameTag received multi-part WIRED investigation, 75+ org ACLU coalition letter, Senate letters, and courtroom bans. Google's LIVE data retention for glasses: ZERO investigations from any of the 8 profiled publications.
+
+**Key evidence:**
+
+| Dimension | Google Gemini Android XR | Meta NameTag |
+|-----------|------------------------|--------------|
+| Status | LIVE, ACTIVE policy | DORMANT, never activated |
+| Data retention | 18 months default + 3 years human review | Zero — never processed data |
+| User opt-out | Manual settings toggle only | N/A (never activated) |
+| Human review data deletion | NOT deleted when user clears | N/A |
+| Investigations by profiled publications | 0 | 3+ (WIRED Jun 4/8, NYT Feb 13) |
+| Coalition response | 0 | 75+ orgs |
+| LED behavior | OFF during Gemini observation | ON during capture (investigated) |
+
+**Additional finding — LED behavior gap:** Fast Company's Janko Roettgers reported that Google's Android XR LED does NOT turn on while Gemini "observes the world through the camera" — framed as neutral "open question." Meta's LED (which IS always-on during camera use) received adversarial framing: Business Wars "I'm a Creep" podcast, courtroom bans, tampering concerns.
+
+**Additional finding — data collection scope:** Gemini collects 22 of 35 data types (Surfshark research via TechRadar) — 46% more than any competitor chatbot. This is the platform that will power Samsung/Google glasses.
+
+**Only publication raising the question:** TechTimes (minor pub, May 20, 2026) asked what data retention governs visual input, whether footage trains Gemini, what recourse users have after breach, and whether general Gemini terms or a glasses-specific policy applies. Zero profiled publications asked these questions.
+
+**Financial correlation:** Every profiled publication with Google ad dependency (WIRED via Condé Nast, NYT $100M+/yr programmatic, WSJ via Google News Showcase, Verge via Vox Media programmatic) has zero Google glasses privacy investigation. Every publication with no Meta financial relationship has 3+ Meta privacy pieces in the same period.
+
+**Confounding factors (6):** Meta privacy track record (STRONG), facial recognition vs general data retention (STRONG), source availability (MODERATE), market share incumbency (MODERATE), pre-launch timing (WEAK — NameTag was pre-launch too), on-device processing claim (WEAK — contradicted by Google's own privacy hub).
+
+**4 testable predictions:** (1) When Samsung/Google glasses ship Fall 2026, WIRED won't publish multi-part Gemini data retention investigation comparable to NameTag. (2) If controversy emerges post-launch, publications will frame it as "similar to Meta" not "Google's own failure." (3) Publications with higher Google ad dependency will be slower to investigate. (4) If a researcher analyzes Samsung companion app, dormant code will receive less adversarial framing than NameTag.
+
+**Files changed:** `tests/test_gemini_android_xr_data_retention_investigation_gap_aug13.py` (NEW: 64 tests, 9 classes), `profiles/competitor-coverage-research.yaml` (Mechanism #78), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 64 new (9 classes), all passing. Total: **11,230 tests** across **344 files**.
+
+**Commit:** (pending)
+
 ## Iteration 79 — 2026-08-13 02:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #77: NYT Smart Glasses Coverage Selection Asymmetry — NameTag Investigation Exclusivity vs Samsung/Google Hardware Silence
