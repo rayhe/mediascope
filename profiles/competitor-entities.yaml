@@ -3498,6 +3498,67 @@ entities:
         coverage that would impair Google''s $170B+ combined exposure.
         '
       source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
+    publisher_ai_deal_revolt:
+      overview: |
+        As of July 2026, at least 6 major publishers/platforms are publicly considering limiting
+        or ending Google's access to their content for AI training. This revolt targets Google's
+        Content Licensing channel (Channel 1) but CANNOT address the structurally non-exitable
+        Advertising Revenue channel (Channel 2). Google's dual-channel financial leverage means
+        even a full publisher exodus from AI deals leaves the ad dependency incentive intact.
+      publishers:
+        - name: Reddit
+          action: Considering ending $60M/yr Google AI deal
+          quote: "focusing on doing what's best for Reddit"
+          traffic_decline: N/A (user-generated)
+        - name: USA Today Co.
+          action: Considering blocking Google's crawler entirely
+          ceo: Mike Reed
+          quote: "It's time to take a stand and say enough is enough"
+          traffic_decline_pct: 50
+        - name: Reuters
+          action: Weighing blocking bot for consumer-facing news
+          president: Paul Bascobert
+          quote: "We are certainly looking at the economic trade-offs between search and AI summaries"
+        - name: Politico (Axel Springer)
+          action: Discussed blocking bots + adding registration wall
+          traffic_decline_pct: 23
+        - name: The Economist
+          action: Reconsidering access
+        - name: People Inc.
+          action: Considering full blocking
+          ceo: Neil Vogel
+          quote: "Turning them off and blocking them entirely is 100% on the table"
+      dual_channel_model:
+        channel_1_deal:
+          description: Content licensing deals (Google News AI pilot, Showcase, Reddit)
+          budget: "$1B+ globally, 200+ publishers"
+          publisher_can_exit: true
+        channel_2_ad:
+          description: Advertising revenue (Google Network, programmatic display)
+          quarterly_revenue_b: 7.44
+          publisher_share_pct: 8.9
+          publisher_share_trend: "declining from 10.3% (Q2 2025)"
+          programmatic_dominance_pct: "60-90% of most publishers' display ad revenue"
+          publisher_can_exit: false
+      semrush_traffic_declines:
+        period: "Jun 2025 → Jun 2026"
+        usa_today_pct: 50
+        business_insider_pct: 85
+        cnn_pct: 31
+        politico_pct: 23
+      mechanism_88_reference: |
+        Mechanism #88 (publisher_ai_deal_revolt_dual_channel_decoupling) maps the collective
+        revolt and introduces the dual-channel decoupling model showing that Channel 1 exit
+        does not address Channel 2 advertising dependency. The revolt is the AGENCY response
+        to the revenue collapse spiral documented in mechanism #82.
+      source_urls:
+        - https://www.wsj.com/business/media/google-search-publishers-ai-content-0fb06e41
+        - https://www.emarketer.com/content/reddit-reportedly-weighs-ending-google-content-licensing-deal-publisher-traffic-concerns-mount
+        - https://www.techrepublic.com/article/news-reddit-google-ai-partnership-ai-search-publishers-2026/
+        - https://nypost.com/2026/07/22/business/reddit-news-outlets-weigh-cutting-google-off-as-ai-summaries-kill-traffic-report/
+        - https://gizmodo.com/major-publishers-are-reportedly-considering-a-drastic-step-to-get-their-content-out-of-googles-ai-answers-2000788873
+        - https://www.fool.com/investing/2026/07/28/reddit-considers-a-bold-move-cutting-off-googles-a/
+        - https://www.barrons.com/articles/reddit-stock-ai-google-754caed8
   x_twitter:
     display_name: X / Twitter
     aliases:

@@ -7942,6 +7942,111 @@ cross_publication_findings:
         description: Trusted Reviews — Samsung glasses Snapdragon AR1 Gen 1 + 9hr battery + privacy toggle
     test_file: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
 
+  publisher_ai_deal_revolt_dual_channel_decoupling:
+    mechanism_id: 88
+    mechanism_name: Publisher AI Deal Revolt — Dual-Channel Financial Leverage Decoupling
+    finding_type: financial_incentive_mapping
+    rotation_type: C
+    discovery_date: '2026-08-13'
+    date_added: '2026-08-13'
+    finding_summary: |
+      As of July 22, 2026 (WSJ), at least 6 major publishers/platforms are publicly considering
+      limiting or ending Google's access to their content for AI training: Reddit ($60M/yr deal),
+      USA Today Co. (CEO Mike Reed: "It's time to take a stand and say enough is enough"),
+      Reuters (President Paul Bascobert: "We are certainly looking at the economic trade-offs
+      between search and AI summaries"), Politico (Axel Springer), The Economist, and People Inc.
+      (CEO Neil Vogel: "Turning them off and blocking them entirely is 100% on the table").
+
+      KEY INSIGHT — Dual-Channel Financial Leverage Decoupling: Google's financial leverage over
+      publishers operates through TWO INDEPENDENT channels:
+        Channel 1 (DEAL): Google News AI pilot ($1B+ globally, 200+ pubs), Showcase ($25K-$250K/yr),
+          Reddit ($60M/yr). Money flows: Google → Publisher. Publisher CAN exit.
+        Channel 2 (AD): Google Network revenue $7.44B/quarter (Q2 2026), publisher share ~8.9%
+          (down from 10.3% Q2 2025). Google programmatic = 60-90% of most publishers' display ad
+          revenue. Money flows: Advertisers → Google → Publisher. Publisher CANNOT exit — no viable
+          alternative at scale.
+
+      The revolt targets Channel 1 ONLY. Even if ALL publishers exit Google AI deals, Channel 2's
+      advertising dependency still provides financial incentive for softer coverage. For wearables:
+      Samsung glasses coverage silence is predicted to persist because Channel 2 (ad dependency)
+      drives it, not Channel 1 (deal payments).
+
+      Traffic evidence (Semrush Jun 2025 → Jun 2026): USA Today -50%, Business Insider >85%,
+      CNN -31% (WSJ), Politico -23%.
+    distinction_from_82: |
+      Mechanism #82 documents the BROAD publisher revenue collapse spiral (traffic decline →
+      AI deal dependency → coverage softening → more extraction). Mechanism #88 documents
+      specific publisher COLLECTIVE ACTION responses (named companies, CEO quotes, datable
+      decisions from July 2026) — the revolt is the AGENCY response to the spiral. Different
+      scope: industry-wide trend (#82) vs. named publisher decisions (#88).
+    distinction_from_86: |
+      Mechanism #86 documents Google's PRODUCT DECISIONS that erode publisher revenue (Display
+      Ads deprecation, Demand Gen defaults, Performance Planner removal). Mechanism #88
+      documents PUBLISHER DECISIONS in response to Google's actions — the companies choosing
+      to exit or restrict Google's AI content access. Different actor: Google product team (#86)
+      vs. publisher executives (#88).
+    distinction_from_73: |
+      Mechanism #73 documents REGULATORY intervention (CMA opt-out remedy with no-sue clauses
+      neutralizing publisher exit power). Mechanism #88 documents MARKET-DRIVEN exit decisions
+      by publishers acting independently of regulatory frameworks. Different causal mechanism:
+      regulatory (#73) vs. market dynamics (#88).
+    confounding_factors:
+      - rating: STRONG
+        factor: 'Publishers may be posturing for better deal terms, not genuinely planning to exit.'
+        counter: "USA Today CEO's 'enough is enough' and existing lawsuit suggest genuine threat."
+      - rating: STRONG
+        factor: 'Google search traffic collapse may be temporary/seasonal.'
+        counter: 'Decline is structural (AI Overviews), not seasonal (multi-quarter trend).'
+      - rating: MODERATE
+        factor: 'Publishers exiting deals could INCREASE adversarial coverage of Google regardless of ad dependency.'
+        counter: 'Ad channel creates countervailing incentive; partial shift, not full reversal.'
+      - rating: MODERATE
+        factor: 'CMA opt-out remedy may give publishers exit ramp without losing search visibility.'
+        counter: 'UK-only, no timeline for global rollout; existing deals include no-sue clauses (#73).'
+      - rating: WEAK
+        factor: 'New intermediaries (Snowflake Cortex) could provide alternative revenue.'
+        counter: 'RAG revenue is small (~six-figure deals) compared to Google ad revenue.'
+      - rating: WEAK
+        factor: 'Publishers may find other AI deal partners (OpenAI, Amazon) to replace Google.'
+        counter: "Replacing Google deal doesn't address Google AD dependency."
+    testable_predictions:
+      - 'P88.1: Publishers that exit Google AI deals will NOT produce significantly more adversarial
+        Samsung/Google glasses coverage — because Channel 2 (ad dependency) remains.'
+      - 'P88.2: Of the 6 revolt publishers, the ones with lowest Google ad dependency (Reuters B2B
+        model, The Economist paywall model) will take the most aggressive action.'
+      - 'P88.3: Google will increase AI deal payments (from "single figure millions" to double
+        digits) to retain key publishers — increasing Channel 1 leverage rather than losing it.'
+      - 'P88.4: No MediaScope-profiled publication will produce adversarial coverage of the
+        publisher revolt itself (i.e., calling it harmful to journalism by reducing Google AI
+        quality) — because adversarial Google-revolt coverage would be self-defeating.'
+    cross_references:
+      - mechanism_id: 82
+        name: Publisher revenue collapse dependency spiral
+        connection: The broad spiral (#82) is the context; the revolt (#88) is the publisher agency response
+      - mechanism_id: 86
+        name: Google Display Ads Deprecation — Publisher Revenue Floor Erosion
+        connection: Google product decisions (#86) accelerate the conditions driving the revolt (#88)
+      - mechanism_id: 73
+        name: CMA No-Sue Regulatory Neutralization
+        connection: Regulatory opt-out attempt (#73) was neutralized; publisher revolt (#88) is market-driven alternative
+      - mechanism_id: 76
+        name: Samsung-Google Compound Advertiser Leverage
+        connection: Samsung's $9.7B ad spend flows through the same Google ad platform (Channel 2) that constrains revolt publishers
+      - mechanism_id: 47
+        name: Google Ad Dependency Paradox
+        connection: Channel 2 structural dependency (#47) explains why Channel 1 revolt (#88) is insufficient
+    publication: cross_publication
+    source_urls:
+      - https://www.wsj.com/business/media/google-search-publishers-ai-content-0fb06e41
+      - https://www.emarketer.com/content/reddit-reportedly-weighs-ending-google-content-licensing-deal-publisher-traffic-concerns-mount
+      - https://www.techrepublic.com/article/news-reddit-google-ai-partnership-ai-search-publishers-2026/
+      - https://nypost.com/2026/07/22/business/reddit-news-outlets-weigh-cutting-google-off-as-ai-summaries-kill-traffic-report/
+      - https://gizmodo.com/major-publishers-are-reportedly-considering-a-drastic-step-to-get-their-content-out-of-googles-ai-answers-2000788873
+      - https://www.fool.com/investing/2026/07/28/reddit-considers-a-bold-move-cutting-off-googles-a/
+      - https://www.barrons.com/articles/reddit-stock-ai-google-754caed8
+    test_count: 60
+    test_file: tests/test_publisher_ai_deal_revolt_dual_channel_decoupling_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
