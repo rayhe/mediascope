@@ -22,7 +22,7 @@
 
 **Stats after this iteration:** ~11,661 tests / 352 files / 84 mechanisms
 
-**Commit:** TBD — pushing to GitHub
+**Commit:** c96c13d — pushed to GitHub ✅
 
 ---
 
@@ -34973,3 +34973,49 @@ Mechanisms #59, #29, #77, #76, #80, #81
 
 ### Commit
 2885b70 — pushed to GitHub
+
+---
+
+## Iteration 88 — Type B: Journalist Cross-Entity Tracking
+**Date:** 2026-08-13 12:00 PT
+
+### Target: Chris Welch (The Verge → Bloomberg Career Migration)
+
+### Mechanism #85: Career Migration Privacy Vocabulary Non-Portability
+
+Chris Welch spent 14 years at The Verge (2011-2025, 6,000+ articles) — the largest single-journalist corpus at any tracked publication — before moving to Bloomberg's consumer tech team under Mark Gurman. His Samsung Galaxy Glasses coverage at Bloomberg for Galaxy Unpacked (Jul 22, 2026) was the Techmeme lead story with neutral-positive framing ("nine-hour battery life and privacy features"). Zero adversarial or surveillance vocabulary.
+
+**Key Finding:** Adversarial smart glasses framing is primarily INSTITUTIONAL, not PERSONAL. The Verge's adversarial culture (Song #75, Cameron, Mehrotra) did NOT transfer when Welch moved to Bloomberg. This establishes a portability taxonomy:
+- **Portable (personal):** Stern's adversarial shift traveled with her (News Corp → Independent, tone +0.35 → -0.65, #42)
+- **Non-portable (institutional):** Verge's adversarial frame stayed at The Verge when Welch left
+
+Fifth career-migration natural experiment (N=5: Stern, Heikkilä, Field, Tiku, Welch). Controls for beat assignment — Welch was a product reviewer at BOTH publications.
+
+### Confounding Factors (6)
+1. STRONG: Bloomberg vs Verge editorial culture differences (financial-first vs editorial-first)
+2. STRONG: Samsung glasses pre-launch vs Meta glasses shipping (7M+ units)
+3. MODERATE: Welch was product reviewer not privacy investigator at both pubs
+4. MODERATE: Bloomberg consumer tech team newly formed, culture still developing
+5. WEAK: Self-selection bias in job choice
+6. WEAK: Samsung Unpacked demo restrictions
+
+### Testable Predictions
+1. Bloomberg will NOT publish multi-part adversarial Samsung privacy investigation post-ship
+2. Samsung incident coverage at Bloomberg will use neutral not adversarial vocabulary
+3. Verge adversarial Meta coverage volume unchanged after Welch departure
+4. Additional Verge → Bloomberg alumni will similarly adopt neutral-positive framing
+
+### Cross-References
+Mechanisms #42, #52, #72, #75, #76, #81, #11
+
+### Changes
+- New: `tests/test_chris_welch_career_migration_privacy_portability_aug13.py` (11 classes, 45 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #85)
+- Updated: `profiles/careers/journalists.yaml` (Welch competitor_coverage section)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (11,706 tests / 353 files / 85 mechanisms)
+
+### Test Results
+- 45/45 mechanism tests passing
+- 11,706 tests collected across 353 files
+
+### Commit

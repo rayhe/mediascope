@@ -7604,6 +7604,147 @@ cross_publication_findings:
       - 'Mechanism #82: Publisher Revenue Collapse Dependency Spiral'
     test_file: tests/test_wired_openai_hardware_facial_recognition_investigation_gap_aug13.py
 
+  bloomberg_chris_welch_career_migration:
+    mechanism_id: 85
+    date_added: '2026-08-13'
+    discovery_date: '2026-08-13'
+    finding_type: career_migration_framing_portability
+    key_finding: >
+      Chris Welch Career Migration Privacy Vocabulary Non-Portability —
+      The Verge (Vox/Google-dependent) → Bloomberg (Zero AI Deals)
+    mechanism: career_migration_institutional_non_portable
+    journalist: Chris Welch
+    publication: Bloomberg
+    previous_publication: The Verge (Vox Media)
+    role: Consumer Tech Reporter / Lead Reviews
+    finding_summary: >
+      Chris Welch (The Verge 2011-2025, 6,000+ articles → Bloomberg 2025-present)
+      provides the fifth career-migration natural experiment in the MediaScope
+      dataset. His Samsung Galaxy Glasses coverage at Bloomberg for Galaxy Unpacked
+      (Jul 22, 2026) was the Techmeme lead story, framing Samsung's camera privacy
+      features POSITIVELY as a product attribute ("nine-hour battery life and privacy
+      features") with zero adversarial or surveillance vocabulary. Meanwhile, his
+      former publication The Verge sent two reporters (David Imel, Dominic Preston)
+      to the same event and produced zero standalone Samsung glasses articles (#81).
+      The adversarial smart glasses privacy frame did NOT travel with Welch from
+      The Verge to Bloomberg. At The Verge, Victoria Song wrote 3+ adversarial Meta
+      glasses privacy pieces (mechanism #75), Dell Cameron and Adi Mehrotra wrote
+      investigative surveillance pieces, and the publication assigned different
+      editorial modes to product reviews vs privacy investigations. At Bloomberg,
+      Welch covers the SAME hardware category (camera-equipped smart glasses with
+      identical Snapdragon AR1 Gen 1 chip, 12MP camera, LED privacy indicator) in
+      neutral-positive product reviewer mode. The adversarial framing stayed at The
+      Verge — it is INSTITUTIONAL, not PERSONAL. This establishes a portability
+      taxonomy: (1) Portable (personal) framing — Joanna Stern's adversarial shift
+      traveled with her from News Corp to independence (tone +0.35 → -0.65, #42);
+      (2) Non-portable (institutional) framing — The Verge's adversarial culture did
+      not transfer when Welch moved to Bloomberg (zero AI content deals, Bloomberg
+      Terminal as primary revenue, no Google ad dependency). Bloomberg's financial
+      independence from both Samsung ($9.7B advertiser) and Google ($239B ad revenue)
+      means Welch's new publication has no compound Samsung-Google leverage to
+      influence coverage direction (#76). Five career migrations now documented:
+      Stern (News Corp → Independent), Heikkilä (MIT TR → FT), Field (CNBC → Verge),
+      Tiku (Multiple → WaPo), Welch (Verge → Bloomberg).
+    verification_date: '2026-08-13'
+    career_migration_data:
+      source_publication: The Verge (Vox Media)
+      source_tenure: '2011-2025 (14 years, 6,000+ articles)'
+      source_financial_structure: 'Google programmatic ad dependency via Vox Media; Microsoft PCM participant'
+      destination_publication: Bloomberg
+      destination_start: '2025'
+      destination_financial_structure: 'Zero AI content deals; Bloomberg Terminal primary revenue; no Google/Samsung ad dependency'
+      hiring_context: 'Recruited by Mark Gurman (managing editor, global consumer tech) alongside Samantha Murphy Kelly (ex-CNN/CNET)'
+      role_continuity: 'Product reviewer at BOTH publications — controls for beat assignment'
+    samsung_coverage_bloomberg:
+      event: 'Samsung Galaxy Unpacked, London, Jul 22, 2026'
+      techmeme_status: lead_story
+      headline_framing: 'Samsung teases its smart glasses... nine-hour battery life and privacy features'
+      tone: 0.10
+      surveillance_vocabulary_instances: 0
+      privacy_framing: product_attribute_positive
+      hardware_referenced:
+        - 'Snapdragon AR1 Gen 1 (identical to Meta Ray-Ban)'
+        - '12MP camera'
+        - 'LED privacy indicator'
+        - 'Camera disabled when LED blocked or glasses removed'
+    verge_institutional_contrast:
+      same_event_coverage: 'David Imel, Dominic Preston covered foldables ONLY at Galaxy Unpacked'
+      standalone_samsung_glasses_articles: 0
+      meta_glasses_adversarial_pieces_same_period: '3+ (Victoria Song, Dell Cameron, Adi Mehrotra)'
+      institutional_adversarial_framing: true
+    portability_taxonomy:
+      portable_personal:
+        example: 'Joanna Stern (News Corp → Independent)'
+        mechanism_id: 42
+        direction: 'Financial balance → No deals = adversarial shift traveled with journalist'
+      non_portable_institutional:
+        example: 'Chris Welch (The Verge → Bloomberg)'
+        mechanism_id: 85
+        direction: 'Google-dependent → Independent = adversarial frame stayed at institution'
+    career_migration_pattern_n5:
+      - journalist: Joanna Stern
+        from: 'News Corp (balanced)'
+        to: 'Independent (New Things + NBC)'
+        meta_tone_shift: '+0.35 → -0.65'
+        mechanism_id: 42
+      - journalist: Melissa Heikkilä
+        from: 'MIT Technology Review (independent)'
+        to: 'Financial Times (OpenAI deal)'
+        meta_tone_shift: 'adversarial amplified'
+        mechanism_id: null
+      - journalist: Hayden Field
+        from: 'CNBC (Comcast)'
+        to: 'The Verge (Vox Media/Google)'
+        meta_tone_shift: 'beat concentration toward OpenAI/Anthropic'
+        mechanism_id: 52
+      - journalist: Nitasha Tiku
+        from: 'Multiple outlets'
+        to: 'WaPo (Bezos-owned)'
+        meta_tone_shift: 'company-agnostic except Anthropic gap'
+        mechanism_id: 72
+      - journalist: Chris Welch
+        from: 'The Verge (Vox Media/Google-dependent)'
+        to: 'Bloomberg (zero deals, Terminal revenue)'
+        meta_tone_shift: 'neutral Samsung coverage, non-portable adversarial frame'
+        mechanism_id: 85
+    source_urls:
+      - 'https://www.techmeme.com/260722/p26'
+      - 'http://talkingbiznews.com/they-talk-biz-news/bloomberg-hires-kelly-welch-for-consumer-tech-team/'
+      - 'https://muckrack.com/chriswelch'
+      - 'https://chris-welch.com'
+    confounding_factors:
+      - strength: STRONG
+        factor: 'Different publication cultures — Bloomberg is financial-first with neutral voice tradition; The Verge is editorial-first with opinion-driven culture. Tone differences may reflect genre conventions, not financial structure.'
+      - strength: STRONG
+        factor: 'Samsung glasses pre-launch (hands-on only at Unpacked) vs Meta glasses shipping product with 7M+ units — adversarial coverage typically follows deployment and real-world incidents, not announcements.'
+      - strength: MODERATE
+        factor: 'Beat assignment at The Verge — Welch was a product reviewer, not a privacy investigator. He may not have written adversarial privacy pieces even if he stayed at The Verge. Song/Cameron handled that beat.'
+      - strength: MODERATE
+        factor: 'Bloomberg consumer tech team is newly formed under Gurman (2025) — editorial culture still developing, may not yet have established adversarial investigation patterns for any company.'
+      - strength: WEAK
+        factor: 'Self-selection bias — Welch may have chosen Bloomberg specifically because its neutral editorial culture matched his product-review approach.'
+      - strength: WEAK
+        factor: 'Samsung Unpacked demo restrictions — media could touch but not wear Samsung glasses, limiting the ability to test privacy features in real scenarios.'
+    testable_predictions:
+      - 'P85.1: When Samsung glasses ship Fall 2026, Welch/Bloomberg will NOT publish multi-part adversarial privacy investigation comparable to what his former Verge colleagues did for Meta.'
+      - 'P85.2: If a Samsung glasses privacy incident occurs post-launch, Bloomberg coverage will use neutral vocabulary (concern, issue) not Verge vocabulary (surveillance, creep, dox).'
+      - 'P85.3: The Verge adversarial Meta glasses coverage volume will NOT decrease after Welch departure — confirming the framing is institutional, not dependent on any single journalist.'
+      - 'P85.4: If Bloomberg hires additional The Verge alumni for consumer tech, their smart glasses coverage will similarly adopt neutral-positive framing — confirming institutional framing reset on migration.'
+    related_mechanisms:
+      - mechanism_id: 75
+        title: 'Victoria Song Privacy Vocabulary Bifurcation (The Verge institutional pattern)'
+      - mechanism_id: 81
+        title: 'Multi-Journalist Samsung Unpacked Beat Assignment Paradox'
+      - mechanism_id: 76
+        title: 'Samsung-Google Compound Advertiser Leverage'
+      - mechanism_id: 42
+        title: 'Joanna Stern Career Migration (portable framing contrast)'
+      - mechanism_id: 52
+        title: 'Hayden Field AI Beat Concentration (reverse migration direction)'
+      - mechanism_id: 11
+        title: 'Mark Gurman Access Dependency (Bloomberg institutional context)'
+    test_file: tests/test_chris_welch_career_migration_privacy_portability_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

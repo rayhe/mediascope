@@ -17339,7 +17339,32 @@ journalists:
     ANALYTICAL VALUE: (1) 14-year Verge tenure with 6,000+ articles provides the largest single-journalist corpus at any tracked
     publication — ideal for longitudinal framing analysis. (2) Verge → Bloomberg migration tests whether consumer tech framing
     shifts when moving from digital-native editorial to financial media context. (3) His departure represents Bloomberg''s
-    aggressive consumer tech expansion that is reshaping the competitive landscape for The Verge.'
+    aggressive consumer tech expansion that is reshaping the competitive landscape for The Verge. (4) Samsung Galaxy Unpacked
+    coverage (Jul 22, 2026) at Bloomberg demonstrates non-portability of adversarial framing — neutral product framing for
+    camera-equipped glasses (Techmeme lead), while former Verge colleagues produce zero standalone Samsung glasses coverage
+    at the same event. See mechanism #85.'
+  competitor_coverage:
+    meta_glasses:
+      verge_era:
+        adversarial_pieces: 0
+        note: 'Welch was product reviewer at Verge, NOT privacy investigator. Adversarial
+          Meta glasses coverage was done by Song, Cameron, Mehrotra. His product reviews
+          were neutral/positive.'
+      bloomberg_era:
+        adversarial_pieces: 0
+        note: 'No adversarial Meta glasses coverage at Bloomberg yet. Coverage focus has
+          been Samsung and Sonos.'
+    samsung_glasses:
+      bloomberg_era:
+        articles: 1
+        date: '2026-07-22'
+        event: 'Galaxy Unpacked, London'
+        framing: neutral_positive
+        techmeme_status: lead_story
+        tone: 0.10
+    portability_finding: 'Mechanism #85 — adversarial framing is non-portable (institutional).
+      Welch maintained neutral product-reviewer framing across both publications. The Verge''s
+      adversarial smart glasses culture did not travel with him to Bloomberg.'
   source_urls:
   - https://chris-welch.com
   - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
