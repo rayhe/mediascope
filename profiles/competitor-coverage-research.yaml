@@ -7745,6 +7745,103 @@ cross_publication_findings:
         title: 'Mark Gurman Access Dependency (Bloomberg institutional context)'
     test_file: tests/test_chris_welch_career_migration_privacy_portability_aug13.py
 
+  google_display_deprecation_publisher_revenue_floor_erosion:
+    mechanism_id: 86
+    mechanism_name: Google Display Ads Deprecation — Publisher Revenue Floor Erosion Through Platform Default Shift
+    finding_type: financial_incentive_mapping
+    rotation_type: C
+    discovery_date: '2026-08-13'
+    date_added: '2026-08-13'
+    finding_summary: |
+      Google announced May 26, 2026 that standalone Display Ads campaigns are being retired,
+      with the Google Display Network folded into Demand Gen. In standalone Display campaigns,
+      GDN (publisher inventory) was the DEFAULT and entire purpose. In Demand Gen, GDN is an
+      OPT-IN channel — default campaigns route spend to Google-owned surfaces (YouTube, Discover,
+      Gmail, Maps) where no publisher revenue share applies. This structural default-to-opt-in
+      shift accelerates the already-declining Google Network revenue: publisher share of Google's
+      total ad revenue dropped from 10.3% (Q2 2025) to 8.9% (Q2 2026), a 1.4pp decline on an
+      $81.63B base implying ~$1.11B/quarter less flowing to publishers than if the prior ratio
+      had held. Combined with three other 2026 Google product decisions — Performance Planner
+      removing Display/Video support (Mar 9), Search campaigns no longer auto-including GDN,
+      and AI Overviews reducing publisher traffic by 34.5% — this creates a FOUR-VECTOR
+      publisher revenue erosion: (1) search traffic vector via AI Overviews, (2) display
+      budget vector via Demand Gen defaults, (3) planning infrastructure vector via Performance
+      Planner removal, (4) search campaign vector via GDN auto-opt-out.
+
+      MEDIASCOPE SIGNIFICANCE: Publishers who depend on Google's GDN for ad revenue are losing
+      that revenue BECAUSE OF Google's own product decisions. Simultaneously, Google's content
+      licensing deals (Showcase, $1B+) and AI training data demands become more materially
+      important as traditional ad revenue shrinks. This strengthens ALL existing Google financial
+      leverage mechanisms: publishers cannot afford adversarial coverage of the company that is
+      simultaneously their biggest ad revenue source AND their biggest ad revenue threat.
+      Mechanism #86 isolates Google's specific PRODUCT DESIGN decisions that accelerate the
+      revenue decline documented in mechanism #82 (broad industry spiral).
+    distinction_from_47: |
+      Mechanism #47 covers Meta's structural antagonism as publishers' direct ad competitor.
+      Mechanism #86 covers Google's PLATFORM DESIGN decisions that reduce publisher revenue
+      from within — Google is not competing WITH publishers for ad dollars, it is redirecting
+      advertiser spend AWAY from publishers toward its own properties through product defaults.
+      Different company, different transmission mechanism.
+    distinction_from_82: |
+      Mechanism #82 documents the broad publisher revenue collapse spiral (traffic decline →
+      AI deal dependency → coverage softening → more extraction). Mechanism #86 isolates
+      SPECIFIC, DATABLE Google product decisions that accelerate that spiral: Display Ads
+      deprecation (May 26, 2026), Performance Planner removal (Mar 9, 2026), GDN auto-opt-out
+      (Aug 2025). Different scope (industry-wide vs. Google-specific) and different evidence
+      type (aggregate trends vs. specific product changes).
+    distinction_from_showcase_coercive_cycle: |
+      Google Showcase coercive cycle covers PAYMENTS from Google to publishers ($25K-$250K/yr
+      Showcase contracts with secrecy NDAs). Mechanism #86 covers REDUCED PAYMENTS from
+      Google's ad platform to publishers through product default changes. Different Google
+      product (Showcase vs Display/Demand Gen), opposite direction of money flow
+      (Google pays publishers vs publishers earn less from Google's ad network).
+    confounding_factors:
+      - rating: STRONG
+        factor: 'Demand Gen campaigns may increase total ad spend reaching GDN if advertisers
+          discover and opt into GDN inventory they were not previously using.'
+      - rating: STRONG
+        factor: 'Google claims 9.5% ROI improvement and highlights GoFood case study — if
+          true, more advertisers may actively choose GDN within Demand Gen.'
+      - rating: MODERATE
+        factor: 'Network revenue decline may reflect broader market shift away from display
+          advertising toward video/social, independent of Google product decisions.'
+      - rating: MODERATE
+        factor: 'Q2 2026 network decline (-0.7% YoY) was smaller than Q1 2026 (-4.0% YoY),
+          suggesting seasonal factors may dominate the structural shift.'
+      - rating: WEAK
+        factor: 'Migration timeline extends through 2027 — full revenue impact not yet realized.'
+      - rating: WEAK
+        factor: 'Some advertisers may have been paying for GDN inadvertently — removing default
+          inclusion could improve ad quality without reducing intentional publisher revenue.'
+    testable_predictions:
+      - 'Google Network revenue will decline below $7B for at least one quarter in 2026-2027
+        as Display-to-Demand-Gen migration progresses.'
+      - 'Publisher share of total Google advertising revenue will fall below 8% by Q4 2026,
+        continuing the decline from 10.3% (Q2 2025) to 8.9% (Q2 2026).'
+      - 'Post-deprecation, no publication in the MediaScope dataset will publish an adversarial
+        investigation of Google''s Display Ads deprecation framing it as harmful to publishers.'
+      - 'Condé Nast''s AI licensing deal dependency (mechanism #58) will increase in materiality
+        as its Google Network ad revenue declines.'
+    cross_references:
+      - mechanism_id: 82
+        name: Publisher revenue collapse dependency spiral
+        connection: Google Display deprecation is a specific accelerant of the broad spiral
+      - mechanism_id: 47
+        name: Meta ad competitor structural antagonism
+        connection: Google reduces publisher revenue through product design; Meta competes for it directly
+      - mechanism_id: 76
+        name: Samsung-Google compound advertiser leverage
+        connection: Samsung's $9.7B ad spend flows through the same Google ad platform being restructured
+    publication: cross_publication
+    source_urls:
+      - https://ppc.land/googles-display-ads-are-dead-here-is-what-replaces-them-in-2026/
+      - https://www.searchenginejournal.com/google-is-retiring-standalone-display-campaigns-in-favor-of-demand-gen/575889/
+      - https://strategiq.co/hub/googles-most-consequential-month-for-paid-search/
+      - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm
+      - https://medium.com/@anerluzz/the-ad-market-is-growing-faster-than-ever-but-publisher-revenue-is-declining-heres-why-231db78c529a
+    test_count: 76
+    test_file: tests/test_google_display_deprecation_publisher_revenue_floor_erosion_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

@@ -2924,6 +2924,52 @@ entities:
         Traffic from Google to major tech pubs dropped from 112M to <50M monthly
 
         '
+    display_ads_deprecation:
+      announcement_date: '2026-05-26'
+      migration_tool_start: '2026-06-01'
+      full_migration_deadline: '2027'
+      structural_change: |
+        Google retired standalone Display Ads campaigns, folding the Google
+        Display Network (GDN) into Demand Gen. In standalone Display, GDN
+        publisher inventory was the DEFAULT and entire purpose of the campaign.
+        In Demand Gen, GDN is an OPT-IN channel accessed via channel controls
+        at the ad group level. Default campaign configuration routes spend to
+        Google-owned surfaces (YouTube, Discover, Gmail, Maps) where NO publisher
+        revenue share applies.
+      publisher_revenue_impact: |
+        Every advertiser who migrates without explicitly enabling GDN via channel
+        controls will, by default, direct visual advertising spend toward Google-
+        owned surfaces. Budget that previously flowed to external websites through
+        AdSense now flows to YouTube, Discover, Gmail, and Maps instead. This
+        shifts GDN from default-inclusion to opt-in, structurally reducing publisher
+        ad revenue independent of traffic volume changes.
+      supporting_product_decisions:
+        - action: 'Performance Planner removed Display/Video campaign support'
+          date: '2026-03-09'
+          effect: 'Advertisers can no longer model or forecast standalone Display campaigns'
+        - action: 'Search campaigns no longer auto-include GDN (pre-checked → unchecked)'
+          date: '2025-08'
+          effect: 'Removes accidental GDN spend from Search campaigns'
+        - action: 'YouTube Video Action campaigns retired into Demand Gen'
+          date: '2025-04'
+          effect: 'Precedent for campaign type consolidation into Demand Gen'
+      quantified_shift:
+        q2_2025_network_b: 7.354
+        q1_2026_network_b: 6.97
+        q2_2026_network_b: 7.303
+        q2_2025_network_share_pct: 10.3
+        q2_2026_network_share_pct: 8.9
+        share_decline_pp: 1.4
+        implied_quarterly_loss_b: 1.14
+        implied_quarterly_loss_note: |
+          If publisher share had remained at 10.3% of the $81.63B Q2 2026
+          total, network revenue would have been $8.41B not $7.30B — a
+          $1.11B quarterly shortfall vs prior ratio.
+      source_urls:
+        - https://ppc.land/googles-display-ads-are-dead-here-is-what-replaces-them-in-2026/
+        - https://www.searchenginejournal.com/google-is-retiring-standalone-display-campaigns-in-favor-of-demand-gen/575889/
+        - https://strategiq.co/hub/googles-most-consequential-month-for-paid-search/
+        - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm
     advertising_dependency_coercion:
       description: 'Google''s relationship with publishers operates through a quadruple
 
