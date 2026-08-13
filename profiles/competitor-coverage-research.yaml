@@ -7394,6 +7394,103 @@ cross_publication_findings:
     test_count: 70
     test_file: tests/test_publisher_revenue_collapse_ai_deal_dependency_spiral_aug13.py
 
+  guardian_samsung_google_glasses_coverage_silence:
+    mechanism_id: 83
+    date_added: '2026-08-13'
+    discovery_date: '2026-08-13'
+    finding_type: coverage_selection_silence
+    key_finding: >
+      Guardian Samsung/Google Smart Glasses Coverage Selection Silence — Wearables
+      Extension of Dual-Role Paradox
+    mechanism: financial_alignment_coverage_selection
+    finding_summary: >
+      The Guardian publishes sustained adversarial Meta wearables coverage (Kenya/Sama
+      contractor footage review, NameTag facial recognition, Cambridge Analytica legacy
+      framing) yet has published ZERO standalone Samsung smart glasses articles in 2026,
+      including ZERO coverage of Samsung Galaxy Unpacked (Jul 22, 2026). Samsung Galaxy
+      Glasses run Google's Android XR platform with Google Gemini as the AI assistant
+      processing camera data — making Google the privacy-relevant entity for data
+      processing scrutiny. The Guardian is Google's News AI pilot partner ("single figure
+      millions" GBP/yr). This extends mechanism #59 (Guardian dual-role paradox) from
+      antitrust/licensing to wearables-specific coverage selection. Unlike mechanism #77
+      (NYT Samsung silence), the Guardian has a DIRECT financial relationship with Google,
+      the entity whose AI platform powers Samsung glasses. Meanwhile, 4+ non-profiled
+      publications (9to5Google, Android Police, Gadget Hacks, Memeburn) all covered Samsung
+      glasses privacy concerns — confirming the story is coverage-worthy. The ICO (UK
+      privacy regulator) is already reviewing Meta glasses; the Guardian has not asked
+      whether ICO plans equivalent review of Samsung/Google glasses.
+    publication: guardian
+    verification_date: '2026-08-13'
+    search_queries_returning_zero:
+      - "site:theguardian.com Samsung smart glasses"
+      - "site:theguardian.com Galaxy Glasses"
+      - "site:theguardian.com Android XR"
+      - "site:theguardian.com Samsung Galaxy Unpacked glasses"
+    samsung_glasses_platform:
+      os: Android XR (Google)
+      ai_assistant: Google Gemini
+      soc: Snapdragon AR1 Gen 1 (same as Meta Ray-Ban)
+      privacy_hw: LED indicator + tamper-detection auto-disable (same as Meta)
+    guardian_financial_alignment:
+      google_deal: Google News AI pilot (Dec 2025, single-figure millions GBP/yr)
+      openai_deal: OpenAI licensing (Feb 2025)
+      prorata_deal: ProRata AI founding partner
+      meta_deal: ZERO
+    guardian_meta_wearables_coverage:
+      tone: adversarial
+      examples:
+        - Kenya/Sama contractor footage review amplification (Mar 2026)
+        - Cambridge Analytica legacy framing (Cadwalladr, Orwell Prize)
+        - Dan Milmo meta_tone -0.45 vs google_tone -0.35
+    non_profiled_samsung_coverage:
+      - publication: 9to5Google
+        date: '2026-07-23'
+        angle: "Samsung and Google betting they can avoid Meta's perv glasses problem"
+        source: https://9to5google.com/2026/07/23/inbox-newsletter-4/
+      - publication: Android Police
+        date: '2026-07-23'
+        angle: "How will Samsung address privacy?"
+        source: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+      - publication: Gadget Hacks
+        date: '2026-05-14'
+        angle: data retention policies, on-device vs cloud breakdown undisclosed
+        source: https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
+      - publication: Memeburn
+        date: '2026-07-25'
+        angle: privacy safeguards do not fully resolve broader concerns
+        source: https://memeburn.com/samsung-smart-glasses-2026/
+    confounding_factors:
+      - strength: MODERATE
+        factor: Samsung glasses not yet shipping (fall 2026)
+        counter: Apple N50 (late 2027) gets pre-launch privacy coverage; Samsung ships sooner
+      - strength: STRONG
+        factor: Cambridge Analytica institutional anchor creates genuine Meta editorial focus
+        counter: Explains Meta focus but not Samsung/Google ZERO coverage
+      - strength: MODERATE
+        factor: Google's Gemini data policies may genuinely differ from Meta's
+        counter: Unknown precisely because uninvestigated
+      - strength: STRONG
+        factor: Guardian editorial independence is real (Stargate UK FOI)
+        counter: Independence from OpenAI does not prove independence from Google on wearables
+      - strength: WEAK
+        factor: Samsung event may have been editorially deprioritized
+        counter: Galaxy Unpacked is second-largest consumer tech event; other products covered
+    testable_predictions:
+      - "P83.1: Guardian will NOT produce standalone investigation of Gemini's Samsung glasses data handling within 90 days of Samsung launch"
+      - "P83.2: If Samsung glasses privacy scandal emerges, Guardian will frame as 'category problem' not 'Google problem'"
+      - "P83.3: Guardian will NOT file FOI with ICO about Google Gemini's Samsung glasses data handling"
+      - "P83.4: Apple N50 will get aspirational privacy framing from Guardian — creating 3-tier hierarchy: Apple (aspirational), Samsung/Google (absent), Meta (adversarial)"
+      - "P83.5: Dan Milmo will NOT use 'big tobacco' framing for Google/Samsung glasses"
+    related_mechanisms:
+      - "Mechanism #59: Guardian Dual-Role Paradox (Google AI pilot + EPC complainant)"
+      - "Mechanism #29: Guardian Rogue AI Volume/Temperature Asymmetry"
+      - "Mechanism #77: NYT Samsung Glasses Coverage Selection Silence"
+      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
+      - "Mechanism #80: Gizmodo Samsung 4-Entity Clean Control"
+      - "Mechanism #81: Multi-Journalist Samsung Unpacked Beat Assignment"
+    test_count: 55
+    test_file: tests/test_guardian_samsung_google_glasses_coverage_silence_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

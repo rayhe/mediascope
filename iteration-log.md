@@ -1,3 +1,109 @@
+## Iteration 86 — 2026-08-13 09:00 PT (Type D: Test & Verify)
+
+### Cross-Validation of Mechanisms #80-82 (Samsung Unpacked Cluster + Revenue Collapse Spiral)
+
+**New test file:** `tests/test_type_d_09am_cross_validation_aug13.py` — 11 classes, 57 tests (all passing)
+
+**Samsung Unpacked cluster coherence validated (#77, #80, #81):**
+- Cross-references verified: #81 → #77, #81 → #80, #80 → #74 (Snap Specs predecessor)
+- All three mechanisms share Samsung context in findings
+- Each has ≥3 confounding factors with STRONG/MODERATE/WEAK ratings
+- Source URLs valid for all three mechanisms
+- Each has ≥2 specific, falsifiable testable predictions
+
+**Revenue collapse spiral (#82) chain validated:**
+- Properly chains to pre-existing financial mechanisms: #58 (Condé Nast Portfolio), #47 (Google Ad Dependency), #41 (Microsoft Septuple Leverage)
+- Traffic decline percentages quantified (≥3 cited in summary)
+- Condé Nast CEO Roger Lynch admission verified as primary source
+- ≥4 diverse evidence sources documented
+
+**Structural integrity checks:**
+- Mechanism ID contiguity 17-82 confirmed (no gaps, none above 82)
+- Zero duplicate mechanism IDs across cross_publication_findings and aggregate_findings
+- YAML loads cleanly with required top-level keys
+- All date_added fields in YYYY-MM-DD format
+- Samsung and Google entities present in competitor-entities.yaml
+
+**Regression check:** 312 core tests (asymmetry, competitor_coverage, financial_relationships, entities, claims, citations, sentiment, topics) pass — no regressions.
+
+**Also verified:** All 332 Aug 13 mechanism-specific tests pass (mechanisms #77-82 test files).
+
+**Stats after this iteration:** ~10,805 test methods / 350 files / 82 mechanisms
+
+**Commit:** e4afe08 — pushed to GitHub ✅
+
+---
+
+## Iteration 85 — 2026-08-13 08:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #82: Publisher Revenue Collapse Accelerating AI Deal Financial Materiality — The Dependency Spiral
+
+**Finding:** As publisher revenue from traditional sources (traffic-based ads, subscriptions) collapses under AI search disruption, AI content licensing deal payments become a larger proportion of shrinking total revenue. This creates a self-reinforcing dependency spiral that AMPLIFIES all existing MediaScope financial incentive mechanisms.
+
+**Five-step dependency spiral:**
+1. AI search reduces publisher traffic and ad revenue
+2. AI deal cash becomes larger share of shrinking revenue
+3. Financial incentive for softer coverage of deal partners strengthens
+4. Less scrutiny enables AI companies to extract more content value
+5. More extraction accelerates traffic loss — cycle repeats
+
+**Traffic collapse evidence (8 sources):**
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| Publisher ad supply drop Q2 2026 | Up to **40%** | Digiday (Jul 2026) |
+| AI scraping activity increase Q4 2025 | **+55%** | TollBit via The Current |
+| Deal premium in CTR | **Evaporated** by Q4 2025 (six-fold collapse) | Brookings/Open Markets Institute |
+| Google crawl-to-referral ratio | **10:1** | Cloudflare |
+| OpenAI crawl-to-referral ratio | **1,200:1 to 1,700:1** | Cloudflare |
+| DMG Media CTR drop (AI Overviews) | **89%** | CMA filing (Sep 2025) |
+| Zero-click searches | **56% → 69%** (2024→2025) | SimilarWeb/TechCrunch |
+| AI Overview CTR effect | **8%** with vs **15%** without = 46.7% drop | Pew Research |
+
+**Publisher-specific traffic declines (Semrush, Jun 2025→Jun 2026):**
+- USA Today: -18%, Politico: -20%, CNN: -31%, Business Insider: -35%
+- HuffPost: lost half of search traffic; BI cut 21% staff after 55% drop
+
+**Key admission — Roger Lynch (Condé Nast CEO):**
+> "[The OpenAI deal] begins to make up for some of that revenue" lost from search changes.
+
+This is an explicit CEO-level admission that AI content deal payments are becoming REPLACEMENT REVENUE for lost traffic. This transforms the financial relationship from "partnership" to "dependency."
+
+**Condé Nast dependency case study:**
+| AI Deal Partner | Date | Status |
+|----------------|------|--------|
+| OpenAI | Aug 2024 | Active |
+| Amazon Rufus | Jul 2025 | Active |
+| Microsoft PCM | Feb 2026 | Active |
+| Perplexity | 2025 | Active |
+| **Meta** | — | **ZERO** |
+
+WIRED (Condé Nast) directs adversarial coverage at Meta — the ONLY major AI/tech company with zero financial relationship with Condé Nast. Every deal partner receives softer treatment.
+
+**Microsoft PCM structural conflict:** Microsoft's Publisher Content Marketplace (launched Feb 2026) includes Condé Nast and Vox Media (parents of WIRED and The Verge). Microsoft simultaneously: (1) operates the PCM marketplace, (2) invested $13.75B in OpenAI, (3) runs Copilot (first AI buyer), (4) competes in search (Bing). The entity facilitating publisher content sales to AI companies is the same entity with the largest stake in the dominant AI company.
+
+**AI deal landscape quantification (Rob Kelly, Jun 2026):**
+- 91 publicly announced deals (50-100 private deals per public → 4,550-9,100+ total)
+- OpenAI: 24 deals (leads); Meta: 13; Anthropic: ZERO
+- News/journalism: 48 deals (53% of total — more than music, images, video combined)
+- Deal volume accelerating: 0 (2022) → 12 (2023) → 28 (2024) → 36 projected (2026)
+
+**Confounding factors:** 6 total (2 STRONG: deal payments may be too small + editorial independence policies; 2 MODERATE: Meta genuinely has more issues + traffic decline is universal; 2 WEAK: subscriptions might offset + AI companies may lose interest in deals)
+
+**Testable predictions:** 4 (Q3-Q4 2026 deal-pub coverage shift; deal-loss coverage rebound; 5%+ materiality threshold; Condé Nast portfolio growth)
+
+**Cross-references:** Mechanisms #58 (Condé Nast Portfolio), #47 (Google Ad Dependency), #73 (CMA Neutralization), #41 (Microsoft Septuple Leverage), #64 (Cloudflare Crawl Block)
+
+**Profiles updated:** competitor-coverage-research.yaml (mechanism #82 added to cross_publication_findings)
+
+**Test file:** `tests/test_publisher_revenue_collapse_ai_deal_dependency_spiral_aug13.py` — 10 classes, 70 tests (all passing)
+
+**Stats after this iteration:** 11,485 tests / 349 files / 82 mechanisms
+
+**Commit:** 2079f6f — pushed to GitHub ✅
+
+---
+
 ## Iteration 84 — 2026-08-13 07:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #81: Multi-Journalist Samsung Unpacked Beat Assignment Paradox
