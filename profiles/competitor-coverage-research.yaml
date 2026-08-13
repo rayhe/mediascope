@@ -6915,6 +6915,89 @@ cross_publication_findings:
       name: WaPo Bezos-Anthropic Ownership Chain
       connection: 'Different mechanism, same structural outcome — both produce editorial softening toward a financially connected
         entity. #65 is ownership, #73 is contract.'
+  nyt_samsung_glasses_coverage_selection_silence:
+    mechanism_id: 77
+    title: "NYT Smart Glasses Coverage Selection Asymmetry: NameTag Investigation Exclusivity vs Samsung/Google Hardware Silence"
+    finding_summary: >
+      NYT Smart Glasses Coverage Selection (Mechanism #77): The New York Times
+      broke the Meta NameTag facial recognition exclusive (Feb 13, 2026) with
+      leaked internal memos, triggering 75+ org ACLU coalition letter, Senate
+      letters (Wyden/Merkley/Markey), and New York courtroom bans. Samsung and
+      Google launched IDENTICAL camera-equipped smart glasses (Google I/O May 19,
+      Galaxy Unpacked Jul 22, 2026) with same 12MP camera, privacy LED, and AI
+      visual processing (Google Gemini). NYT has published ZERO standalone
+      privacy investigations of Samsung/Google glasses. Coverage differential:
+      Meta 3+ investigations, Samsung 0, Google 0, Apple 0. Google Gemini on
+      Samsung glasses has access to Google's entire user data ecosystem and can
+      perform visual identification via Google Lens — a SHIPPING capability,
+      not a leaked plan — yet receives no NYT investigative scrutiny. Financial
+      context: Samsung is 4th-largest global advertiser ($9.7B/yr), Google
+      provides NYT $100M+/yr in programmatic ad revenue, Meta is NYT's direct
+      ad competitor with no ad revenue relationship. Connects to Samsung-Google
+      Compound Advertiser Leverage (Mechanism #76) and Samsung Equivalence
+      Paradox (existing mechanism).
+    date_added: "2026-08-13"
+    test_file: tests/test_nyt_samsung_glasses_coverage_selection_silence_aug13.py
+    type: "Type A: Competitor Coverage Deep Dive"
+    publication: "New York Times"
+    competitor: "Samsung/Google (Android XR)"
+    sources:
+      - description: "NYT NameTag exclusive (Feb 13, 2026) — leaked internal Meta documents"
+        note: "Reported via MacRumors, Slashdot, PetaPixel referencing NYT exclusive"
+      - url: "https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/"
+        description: "Samsung Android XR glasses privacy light details (Jul 23, 2026)"
+      - url: "https://www.nyclu.org/press-release/aclu-and-75-organizations-sound-alarm-on-metas-plan-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyegl"
+        description: "ACLU coalition letter: 75+ orgs to Zuckerberg (Apr 2026)"
+      - url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
+        description: "WSJ Bobrowsky Meta privacy investigation (Jul 14, 2026) — for comparison"
+      - url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+        description: "WSJ Mims category-wide analysis (Jun 26, 2026) — balanced comparison"
+    coverage_differential:
+      meta_nyt_privacy_investigations: 3
+      samsung_nyt_privacy_investigations: 0
+      google_nyt_privacy_investigations: 0
+      apple_nyt_privacy_investigations: 0
+      meta_specific_features_investigated:
+        - "NameTag facial recognition (Feb 2026)"
+        - "LED tamper disabling (multiple 2026)"
+        - "Constant-capture ambient AI (Jul 2026)"
+      samsung_equivalent_features_not_investigated:
+        - "12MP camera (identical to Meta)"
+        - "Google Gemini visual identification (Google Lens)"
+        - "Privacy LED with anti-tamper (copied Meta design)"
+        - "Always-on AI companion architecture"
+    financial_context:
+      samsung_global_ad_spend_yr: "$9.7B (4th-largest global advertiser)"
+      google_nyt_programmatic_ad_revenue: "$100M+/yr"
+      meta_nyt_ad_relationship: "NONE — Meta is NYT's direct ad competitor"
+      nyt_google_litigation: "PMC v. Google (D.D.C., Case 1:25-cv-03192-APM) — adversarial"
+      compound_leverage_ref: "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
+    confounding_factors:
+      - strength: STRONG
+        factor: "Source access — NYT had leaked Meta internal documents (NameTag memo); may not have equivalent Samsung/Google sources"
+      - strength: STRONG
+        factor: "NameTag was specifically FACIAL RECOGNITION — Samsung has not announced an equivalent feature. Meta reversal (shutting down FB face recognition 2021, then reintroducing via glasses) is a unique narrative"
+      - strength: STRONG
+        factor: "Samsung/Google glasses launched AFTER the NameTag story — different news cycle, investigation may simply be pending"
+      - strength: MODERATE
+        factor: "Beat assignment — NYT has established Meta beat reporters (Mike Isaac, Sheera Frenkel) but no dedicated Samsung wearables beat reporter"
+      - strength: MODERATE
+        factor: "Cambridge Analytica / Facebook Papers legacy creates editorial priors making Meta the default privacy villain"
+      - strength: MODERATE
+        factor: "NYT is SUING Google (via PMC) — Google advertising leverage is partially offset by adversarial litigation posture"
+      - strength: WEAK
+        factor: "Google Gemini visual identification is a general AI capability, not a dedicated face-recognition feature — editorial distinction may be warranted"
+    testable_predictions:
+      - "When Samsung glasses ship (Fall 2026), NYT will NOT publish a standalone privacy investigation within 90 days of launch"
+      - "If Samsung announces facial recognition for its glasses, NYT will use softer vocabulary than NameTag reporting"
+      - "Publications with LOWER Samsung advertising revenue are MORE likely to investigate Samsung glasses privacy"
+      - "If Gemini on Samsung glasses performs visual identification, NYT will frame it as a Google AI feature not a Samsung surveillance tool"
+    related_mechanisms:
+      - "Samsung Equivalence Paradox — cross-publication framing gap"
+      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
+      - "Mechanism #69: NYT Meta AI Coverage Bifurcation"
+      - "Mechanism #49: Bobrowsky Smart Glasses Entity-Targeting Concentration (WSJ)"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

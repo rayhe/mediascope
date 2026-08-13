@@ -1,3 +1,30 @@
+## Iteration 78 — 2026-08-13 01:00 PT (Type D: Test & Verify)
+
+### Data Integrity Sweep — 9 Missing test_file Refs, Stale Assertions, count_stats Class-Level Parametrize Fix
+
+**Three categories of issues found and fixed:**
+
+**1. YAML metadata gaps (competitor-coverage-research.yaml):**
+- 9 mechanisms (#60-68, #71) had test files on disk but NO `test_file` reference in the YAML — all 9 added
+- 2 mechanisms (#66, #67) missing `date_added` field — both set to 2026-08-12
+- All 55 mechanisms now have complete metadata; IDs #17-76 contiguous across cpf + agg sections
+
+**2. Stale hardcoded assertions in prior cross-validation tests:**
+- `test_type_d_3pm_cross_validation_aug12.py`: `test_migration_count_matches_readme` — regex matched prose count (757 tracked migrations) instead of table count (971 career-entry migrations). Fixed regex to match table row format.
+- `test_type_d_3pm_cross_validation_aug12.py`: `test_mechanisms_are_sequential_from_max` — hardcoded `assert max_id == 68`, actual max is 76. Converted to `assert max_id >= 68` with dynamic contiguity check.
+- `test_type_d_8pm_cross_validation_aug11.py`: 2 failures from mechanisms #66-67 missing `date_added` and #68 missing `tests/` prefix in test_file path — fixed by YAML metadata repair above.
+
+**3. count_stats.py class-level parametrize variable resolution:**
+- **Root cause:** `_resolve_variable_list` regex `^VAR_NAME` only matched module-level variables. 35 class-level variables (indented inside test classes) were invisible.
+- **Fix:** Try module scope first (`^`), fall back to class scope (`^\s+`).
+- **Impact:** Regex counter gap closed from **279 → 80** tests (11,033 → vs 11,144 pytest). Remaining 80-test gap comes from `range()` expressions and dict subscript references (`REGISTER["key"]`) that require AST parsing. `--pytest` flag remains authoritative.
+
+**Files changed:** `tests/test_type_d_01am_cross_validation_aug13.py` (NEW: 31 tests, 5 classes), `tests/test_type_d_3pm_cross_validation_aug12.py` (2 assertion fixes), `profiles/competitor-coverage-research.yaml` (9 test_file + 2 date_added fixes), `scripts/count_stats.py` (class-level variable resolution), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 31 new (5 classes), all passing. All 4 previously-failing tests now pass. Total: **11,144 tests** across **342 files**.
+
+**Commit:** f694c17
+
 ## Iteration 77 — 2026-08-13 00:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #76: Samsung-Google Compound Advertiser Leverage on Wearables Coverage
