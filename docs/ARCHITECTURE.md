@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10923 tests across 337 test files (all from real articles)
+├── tests/                       # 10999 tests across 338 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -793,6 +793,7 @@ mediascope/
 │   ├── test_nitasha_tiku_cross_entity_aug12.py  # Mechanism #72: Nitasha Tiku Tech Culture Beat Structural Independence — Company-Agnostic Adversarial Coverage with Anthropic Gap. Valleywag EDITOR lineage → universal adversarial coverage across Google/OpenAI/Meta/xAI/Character AI. Beat structure (tech culture) is company-agnostic. Anthropic Gap: no dedicated adversarial investigation at Bezos-owned WaPo, consistent with Mechanism #65. Second WaPo reporter (after De Vynck #71) exhibiting ownership-chain blind spot. 11 classes, 50 tests
 │   ├── test_cma_nosue_regulatory_neutralization_aug12.py  # Mechanism #73: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections. UK CMA world-first ruling (Jun 4 2026) requires opt-out without search penalty. Google's 200+ publisher News AI deals include no-sue/NDA clauses neutralizing the remedy. Three-layer contradiction: opt-out vs payment, transparency vs NDA, bargaining vs no-sue. Guardian and FT confirmed as signers at single figure millions/yr (Press Gazette Aug 2026). Meta has zero coercive mechanisms. 8 classes, 36 tests
 │   ├── test_type_d_3pm_cross_validation_aug12.py # Type D cross-validation (Aug 12 3 PM): README/ARCHITECTURE stat consistency, mechanism #65-#68 cross-references, journalist profile completeness, financial claim sources, mechanism ID contiguity. 34 tests
+│   ├── test_type_d_9pm_cross_validation_aug12.py # Type D cross-validation (Aug 12 9 PM): count_stats.py parametrize regression fix — variable-reference + single-quote handling, pytest-authoritative verifier, stat drift correction. 13 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

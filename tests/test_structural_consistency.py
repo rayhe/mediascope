@@ -626,7 +626,26 @@ class TestTestFileListingConsistency:
         return extra
 
     def _count_pytest_tests(self) -> int:
-        """Total pytest-collected test count (def test_ + parametrize expansions)."""
+        """Total pytest-collected test count (authoritative via pytest --collect-only).
+
+        Falls back to regex-based counting if subprocess fails.
+        """
+        import subprocess
+        try:
+            result = subprocess.run(
+                [sys.executable, "-m", "pytest", "--collect-only", "-q"],
+                capture_output=True,
+                text=True,
+                timeout=120,
+                cwd=str(_REPO_ROOT),
+            )
+            for line in result.stdout.strip().split("\n"):
+                m_line = re.search(r"(\d+)\s+tests?\s+collected", line)
+                if m_line:
+                    return int(m_line.group(1))
+        except (subprocess.TimeoutExpired, FileNotFoundError, OSError):
+            pass
+        # Fall back to regex
         return self._count_def_tests() + self._count_parametrize_expansions()
 
 

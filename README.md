@@ -49,10 +49,10 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 253 | Career data with source URLs |
-| Career-entry migrations | 968 | Across 441+ publications |
+| Journalists tracked | 255 | Career data with source URLs |
+| Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 10,923 | Across 337 test files |
+| Tests | 10,999 | Across 338 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **255 journalists** (60 with structured education records) across 442+ publications (757 migrations). Notable high-value migrations include:
+Ships with verified career data for **255 journalists** (60 with structured education records) across 442+ publications (757 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **10923 tests** across 337 test files, each covering a different analytical capability:
+MediaScope has **10999 tests** across 338 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -730,6 +730,7 @@ MediaScope has **10923 tests** across 337 test files, each covering a different 
 | `test_nitasha_tiku_cross_entity_aug12.py` | 50 | Mechanism #72: Nitasha Tiku Tech Culture Beat Structural Independence — Company-Agnostic Adversarial Coverage with Ownership-Chain Blind Spot. Tiku (Valleywag EDITOR → The Verge → BuzzFeed → WIRED → WaPo) is one of the ONLY reporters applying adversarial framing across ALL major AI entities (Google, OpenAI, Meta, xAI, Character AI) without entity-specific bifurcation. Three structural factors: (1) "tech culture" beat is company-agnostic by definition, (2) deepest Gawker/Valleywag lineage in dataset (was EDITOR), (3) layoff-rehire cycle (Feb 2026 WaPo mass layoff, rehired ~Mar-Apr 2026) weakened institutional loyalty. CRITICAL: despite universal adversarial coverage, Anthropic Gap — no dedicated adversarial investigation — consistent with Mechanism #65 (Bezos→Amazon→$13B Anthropic). Second WaPo reporter (after De Vynck #71) exhibiting the Anthropic Gap, strengthening N=2 institutional pattern. CONTRAST with Zeff (#63): same Gawker lineage, different outcome at WIRED vs WaPo — beat structure is the differentiating variable. 7 confounders (2 STRONG), 4 testable predictions, 4 cross-references (#65, #57, #63, #67). 11 classes, 50 tests |
 | `test_cma_nosue_regulatory_neutralization_aug12.py` | 36 | Mechanism #73: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections. UK CMA "world-first" ruling (Jun 4, 2026) requires Google to let publishers opt out of AI Overviews without losing search visibility. But Google's simultaneous News AI pilot deals (200+ publications, Press Gazette Aug 2026) include no-sue clauses and NDAs. Three-layer contradiction: (1) CMA opt-out rights vs Google payment incentives, (2) CMA transparency vs Google NDAs, (3) CMA bargaining power vs Google no-sue clauses. Guardian and FT confirmed as deal signers at "single figure millions/yr" each (Press Gazette Aug 3 2026), both are coalition members that TRIGGERED the CMA ruling. Meta has ZERO coercive mechanisms yet receives more adversarial coverage from deal-bound publications. 5 confounders (2 STRONG), 5 testable predictions, 4 cross-references (#44, #49, #53, #65). 8 classes, 36 tests |
 | `test_type_d_3pm_cross_validation_aug12.py` | 34 | Type D cross-validation (Aug 12, 3 PM PT): README/ARCHITECTURE stat consistency, cross-reference integrity for mechanisms #65–#68, journalist profile completeness, financial claim source coverage, no gaps in mechanism IDs. 34 tests |
+| `test_type_d_9pm_cross_validation_aug12.py` | 13 | Type D cross-validation (Aug 12, 9 PM PT): count_stats.py parametrize regression — root cause: regex missed 43 variable-reference + 6 single-quote parametrize blocks (290-test delta). Fixed count_stats.py, added count_tests_pytest() authoritative verifier, corrected README/ARCHITECTURE stat drift (tests 10,923→10,999, migrations 968→971, journalists 253→255). 13 tests |
 | `test_dell_cameron_mehrotra_cross_entity.py` | 50 | Dell Cameron / Aisha Mehrotra cross-entity coverage analysis — camera count paradox and cross-publication framing patterns. 50 tests |
 | `test_wapo_bezos_anthropic_ownership_coverage_alignment_aug12.py` | 29 | Mechanism #65: WaPo Bezos-Anthropic Ownership Coverage Alignment — Jeff Bezos $4B Anthropic investment + Washington Post ownership creates coverage alignment channel. Aspirational AI framing for Anthropic, adversarial framing for Meta. 29 tests |
 | `test_wired_copyright_piracy_framing_parity_aug11.py` | 21 | Mechanism #51: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta. Both Anthropic and Meta pirated books from LibGen to train AI models; Judge Alsup ruled identically (training = fair use, piracy acquisition ≠ fair use). WIRED applies systematically different framing: Meta gets piracy/theft angle (morally loaded, CEO accountability, "torrenting from a corporate laptop"), Anthropic gets financial damages angle (market-focused, settlement terms, "meaningful relief"). Financial correlation: Condé Nast has $0 Meta deal, $5-10M/yr OpenAI deal, multi-year Amazon deal (Amazon is Anthropic's largest investor at $53.4B). Financial exclusion predicts morally-loaded framing. 6 legitimate confounding factors. 8 classes, 26 tests |

@@ -175,11 +175,32 @@ def _count_top_level_items(text: str) -> int:
     return count
 
 
+def _resolve_variable_list(var_name, content):
+    """Resolve a module-level variable to its list items count.
+
+    Looks for ``VAR_NAME = [...]`` at module level and counts top-level items.
+    Returns the item count, or 0 if the variable cannot be resolved.
+    """
+    # Match VAR = [...] at module scope (no leading whitespace)
+    pattern = re.compile(
+        r"^" + re.escape(var_name) + r"\s*=\s*\[(.*?)\]",
+        re.MULTILINE | re.DOTALL,
+    )
+    m = pattern.search(content)
+    if not m:
+        return 0
+    items_text = m.group(1).strip()
+    if not items_text:
+        return 0
+    return _count_top_level_items(items_text)
+
+
 def count_tests():
     """Count test files and total test cases (def test_ + parametrize expansions).
 
-    Uses the same regex-based method as test_structural_consistency.py to ensure
-    the two counters always agree.
+    Handles both inline ``@pytest.mark.parametrize("x", [...])`` and
+    variable-reference ``@pytest.mark.parametrize("x", MY_LIST, ...)`` patterns,
+    with both single- and double-quoted parameter names.
     """
     test_dir = os.path.join(REPO_ROOT, "tests")
     test_files = glob.glob(os.path.join(test_dir, "test_*.py"))
@@ -192,13 +213,15 @@ def count_tests():
             content = f.read()
         total += len(re.findall(r"^\s+def test_", content, re.MULTILINE))
 
-    # Count parametrize expansions
+    # Count parametrize expansions — inline lists (single or double quotes)
     extra = 0
     for tf in test_files:
         with open(tf) as f:
             content = f.read()
+
+        # Pattern 1: inline list  @pytest.mark.parametrize("x", [...])
         for m in re.finditer(
-            r'@pytest\.mark\.parametrize\(\s*"[^"]+",\s*\[(.*?)\]',
+            r"""@pytest\.mark\.parametrize\(\s*["'][^"']+["'],\s*\[(.*?)\]""",
             content,
             re.DOTALL,
         ):
@@ -209,7 +232,51 @@ def count_tests():
             if n_items > 1:
                 extra += n_items - 1
 
+        # Pattern 2: variable reference  @pytest.mark.parametrize("x", VAR_NAME)
+        # or  @pytest.mark.parametrize("x", VAR_NAME, indirect=...)
+        for m in re.finditer(
+            r"""@pytest\.mark\.parametrize\(\s*["'][^"']+["'],\s*([A-Z_][A-Z0-9_]+)""",
+            content,
+        ):
+            var_name = m.group(1)
+            # Skip if this is actually an inline list (already counted above)
+            # by checking if the char after var_name is a comma, paren, or newline
+            n_items = _resolve_variable_list(var_name, content)
+            if n_items > 1:
+                extra += n_items - 1
+
     return {"test_files": file_count, "total_tests": total + extra}
+
+
+def count_tests_pytest():
+    """Count tests using pytest --collect-only (authoritative, slower).
+
+    Falls back to regex-based count_tests() if pytest collection fails.
+    Returns the same dict shape as count_tests().
+    """
+    import subprocess
+
+    test_dir = os.path.join(REPO_ROOT, "tests")
+    test_files = glob.glob(os.path.join(test_dir, "test_*.py"))
+    file_count = len(test_files)
+
+    try:
+        result = subprocess.run(
+            [sys.executable, "-m", "pytest", "--collect-only", "-q"],
+            capture_output=True,
+            text=True,
+            timeout=120,
+            cwd=REPO_ROOT,
+        )
+        for line in result.stdout.strip().split("\n"):
+            m = re.search(r"(\d+)\s+tests?\s+collected", line)
+            if m:
+                return {"test_files": file_count, "total_tests": int(m.group(1))}
+    except (subprocess.TimeoutExpired, FileNotFoundError, OSError):
+        pass
+
+    # Fall back to regex count
+    return count_tests()
 
 
 def count_topics():
@@ -236,6 +303,11 @@ def main():
         action="store_true",
         help="Check README.md stats against actual counts; exit 1 if stale",
     )
+    parser.add_argument(
+        "--pytest",
+        action="store_true",
+        help="Use pytest --collect-only for authoritative test count (slower but exact)",
+    )
     args = parser.parse_args()
 
     # Gather all counts
@@ -246,7 +318,10 @@ def main():
     correction_paths = count_sentiment_correction_paths()
     annotated = count_annotated_articles()
     careers = count_journalists()
-    test_files = count_tests()
+    if args.pytest or args.check:
+        test_files = count_tests_pytest()
+    else:
+        test_files = count_tests()
     topics = count_topics()
 
     stats = {

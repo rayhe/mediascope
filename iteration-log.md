@@ -1,3 +1,25 @@
+## Iteration 73 — 2026-08-12 20:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #73: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections
+
+**Finding:** The UK CMA issued a "world-first" ruling on June 4, 2026 requiring Google to let publishers opt out of AI Overviews without losing search visibility. But Google's simultaneous News AI pilot deals (200+ publications by Aug 2026, per Press Gazette) include no-sue clauses and NDAs. Three-layer regulatory contradiction: (1) CMA opt-out rights vs Google payment incentives ("single figure millions/yr" for Guardian and FT), (2) CMA transparency vs Google NDAs preventing deal term disclosure, (3) CMA bargaining power vs Google no-sue clauses preventing legal claims. The Guardian — a member of the publisher coalition (via Foxglove) that TRIGGERED the CMA ruling — has signed Google's AI deal that neutralizes it. Neither Guardian nor FT disclosed their Google deal when covering the CMA ruling. Press Gazette (Aug 3 2026): "Google's secret AI deals could make that ruling largely irrelevant if most UK publishers sign these hard-fought rights away."
+
+**New financial quantification (Press Gazette Aug 3, 2026):**
+- Guardian: "single figure millions" GBP/yr from Google News AI deal
+- FT: "single figure millions" GBP/yr from Google News AI deal
+- 200+ publications signed globally (up from ~20 at launch)
+- Deals run 2 years with 90-day exit clause
+- No-sue + NDA clauses confirmed in NEW AI deals
+- Anthropic: ZERO publisher deals (explicitly confirmed)
+
+**Meta contrast:** Zero coercive mechanisms, zero NDAs, zero no-sue clauses. All 13 Meta deals are voluntary. Yet deal-bound publications produce more adversarial coverage of Meta than Google.
+
+**Files changed:** `tests/test_cma_nosue_regulatory_neutralization_aug12.py` (NEW: 36 tests, 8 classes), `profiles/competitor-entities.yaml`, `profiles/competitor-coverage-research.yaml`, `profiles/guardian.yaml`, `profiles/financial-times.yaml`, `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 36/36 new passing, 124/124 structural consistency passing. Total: **10,923 tests** across **337 files**.
+
+**Commit:** 0d7edd9
+
 ## Iteration 72 — 2026-08-12 19:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #72: Nitasha Tiku — Tech Culture Beat Structural Independence (Company-Agnostic Adversarial Coverage with Anthropic Gap)
