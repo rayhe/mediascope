@@ -34345,3 +34345,55 @@ Mechanisms #45 (Ashworth WWDC PCC), #11 (WIRED financial conflicts), #14 (Condé
 
 ### Commit
 Pending
+
+---
+
+## Iteration 72 — Wed Aug 12, 2026 18:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Gerrit De Vynck (Washington Post)
+**Mechanism:** #71 — WaPo Beat Drift + Facebook Papers Career Identity Capture
+
+### Summary
+First WaPo individual reporter profiled, directly testing Mechanism #65 (Bezos→Amazon→$13B Anthropic ownership chain). De Vynck was hired Jan 2021 explicitly to cover Google/Alphabet. His career-defining moment — the Facebook Papers investigation (SAJA Business Reporting Award, 2022) — established a persistent adversarial Meta framing identity. His current coverage exhibits a dual-track pattern:
+
+- **OpenAI:** Access-based data journalism (47K ChatGPT conversations analysis) — neutral/exploratory framing
+- **Meta:** Adversarial/political power framing ("reengineer Congress," Facebook Papers legacy)
+- **Anthropic:** WaPo institutional AI bias study (Jun 2026) positioned Claude as "most balanced" chatbot — first individual-level evidence testing #65
+
+Four reinforcing mechanisms: beat drift from Google-specific to all-AI + Facebook Papers career identity capture + access asymmetry (OpenAI provides data, Meta does not) + institutional ownership alignment (Bezos→Amazon→Anthropic).
+
+Also fixed pre-existing YAML parse error in competitor-coverage-research.yaml — `methodology:` block was misplaced between mechanism entries, blocking YAML parse for test files that load it. Moving it after the last mechanism entry and before `publications:` resolved 48 tests that were erroring during collection.
+
+### Key Evidence
+- Hiring announcement: https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-de-vynck-as-ai-algorithms-reporter/
+- SAJA award: https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
+- ChatGPT usage study: https://www.techmeme.com/250915/p3
+- PAC political power framing: https://www.benton.org/headlines/tech-moguls-close-president-trump-see-midterms-path-long-term-power
+- WaPo AI bias study (Claude = most balanced): https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
+
+### Confounding Factors
+- 2 STRONG: Facebook Papers genuinely important journalism; ChatGPT data study genuinely novel
+- 3 MODERATE: Co-authorship dilutes attribution; Meta IS a larger state-level spender; WaPo editorial independence
+- 2 WEAK: Beat assignment not personal bias; Bloomberg background = Google expertise
+
+### Testable Predictions
+1. WaPo will NOT produce comparable multi-part adversarial Anthropic investigation
+2. Future OpenAI data access → neutral framing, never adversarial
+3. Meta content deal → De Vynck framing moderates within 6-12 months
+4. Post-Anthropic IPO → aspirational not stress language from WaPo
+
+### Cross-References
+Mechanisms #65 (WaPo Bezos-Anthropic), #57 (Seetharaman Frame-Lock), #63 (Zeff Source Access), #69 (NYT Bifurcated Coverage)
+
+### Changes
+- New: `tests/test_gerrit_de_vynck_cross_entity_aug12.py` (33 tests, 10 classes)
+- Updated: `profiles/careers/journalists.yaml` (Gerrit De Vynck full career + competitor_coverage)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #71 + YAML parse fix)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (10,900 tests / 335 files)
+
+### Test Results
+- 33/33 mechanism tests passing
+- 10,900 tests collected across 335 files (0 collection errors — YAML fix resolved prior error)
+
+### Commit
+Pending

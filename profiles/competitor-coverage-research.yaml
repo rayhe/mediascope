@@ -6271,15 +6271,6 @@ cross_publication_findings:
       - "https://www.reuters.com/commentary/breakingviews/mark-zuckerbergs-ai-treatise-is-more-ad-than-tech-2026-08-10/"
     test_file: tests/test_nyt_meta_ai_bifurcated_coverage_alignment_aug12.py
 
-methodology: 'For each profiled publication, we compared coverage tone and framing
-
-  of Meta against coverage of companies that pay the publication (via
-
-  AI content licensing deals) or are financially connected. Every
-
-  finding is sourced to a specific article or primary document.
-
-  '
   ashworth_accessibility_framing_inversion:
     mechanism_id: 70
     name: "Boone Ashworth Accessibility Framing Inversion — TranscribeGlass (Empathetic) vs Meta Conversation Focus (Adversarial)"
@@ -6325,6 +6316,118 @@ methodology: 'For each profiled publication, we compared coverage tone and frami
       rebuttal: 'Criticism of the paywall is legitimate; the asymmetry is the complete
         erasure of accessibility framing for the same functional category'
 
+  de_vynck_beat_drift_facebook_papers_identity:
+    mechanism_id: 71
+    name: "WaPo Beat Drift + Facebook Papers Career Identity Capture — Gerrit De Vynck"
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    publication: washington-post
+    journalist: Gerrit De Vynck
+    finding_type: journalist_cross_entity_beat_drift
+    rotation_type: B
+    extends_mechanisms:
+    - 65
+    - 57
+    - 63
+    - 69
+    finding_summary: 'Gerrit De Vynck (Bloomberg -> Washington Post, Jan 2021) was hired
+      explicitly to cover Google/Alphabet but his career-defining moment was the adversarial
+      Facebook Papers investigation (2021-2022, SAJA Business Reporting Award). His current
+      coverage exhibits a dual-track pattern: OpenAI receives access-based data journalism
+      (47K ChatGPT conversations analysis, first public usage study -- neutral/exploratory
+      framing) while Meta receives adversarial/political power framing ("tech moguls close
+      to President Trump...reengineer Congress," Facebook Papers legacy). First WaPo
+      individual reporter tested against Mechanism #65 (Bezos->Amazon->$13B Anthropic
+      ownership chain). WaPo institutional AI political bias study (Jun 2026) positioned
+      Anthropic Claude as the "most balanced" chatbot -- first individual-level evidence
+      that the ownership chain correlates with favorable competitor positioning. Beat drift
+      from Google-specific to all-AI coverage + Facebook Papers career identity capture +
+      access asymmetry (OpenAI provides data, Meta does not) + institutional ownership
+      alignment = four reinforcing mechanisms producing asymmetric framing at a publication
+      with $0 from Meta and a $200B+ indirect Anthropic ownership stake.'
+    source_urls:
+    - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-de-vynck-as-ai-algorithms-reporter/
+    - https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
+    - https://www.techmeme.com/250915/p3
+    - https://www.benton.org/headlines/tech-moguls-close-president-trump-see-midterms-path-long-term-power
+    - https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
+    - https://theorg.com/org/the-washington-post/org-chart/gerrit-de-vynck
+    - http://gerritdevynck.com/
+    - https://talkingbiznews.com/1/bloombergs-de-vynck-moves-to-google-beat-carville-to-cover-ibm/
+    testable_predictions:
+    - 'WaPo will NOT produce a comparable multi-part adversarial Anthropic investigation
+      at Facebook Papers depth, despite Anthropic having comparable governance concerns
+      (Mythos safety, distillation scandals, government export controls).'
+    - 'If De Vynck receives exclusive OpenAI data access for a future study, the
+      resulting coverage will maintain neutral/exploratory framing -- never adversarial
+      depth applied to Meta.'
+    - 'If Meta signs a WaPo content licensing deal, De Vynck Meta coverage framing
+      will moderate within 6-12 months (same prediction as Mechanism #65).'
+    - 'Post-Anthropic IPO, WaPo coverage of Anthropic valuation trajectory will use
+      aspirational language ("exceeded expectations," "investor confidence") rather than
+      stress language ("overvalued," "bubble risk").'
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Facebook Papers was genuinely important journalism'
+      rebuttal: 'The question is not whether the investigation was justified, but whether
+        its career-defining impact created a persistent adversarial frame applied to
+        unrelated Meta stories (AI PACs, AI products) while comparable stories about
+        OpenAI/Anthropic receive different framing.'
+    - strength: STRONG
+      factor: 'OpenAI ChatGPT data study was genuinely novel'
+      rebuttal: 'The framing asymmetry is not about whether to cover these stories
+        differently, but about the absence of comparable adversarial investigation of
+        OpenAI business practices, governance failures, or societal harms despite
+        extensive available material (safety team departures, board coup, content
+        licensing controversies).'
+    - strength: MODERATE
+      factor: 'Co-authorship dilutes individual attribution'
+      rebuttal: 'De Vynck is named in the SAJA award citation and article bylines.
+        Co-authorship distributes credit but the reporter frame shapes the pitch.'
+    - strength: MODERATE
+      factor: 'Meta IS a larger political spender at state level'
+      rebuttal: 'NYT analysis shows combined AI industry spending of $150M+. OpenAI
+        Brockman donated $50M personally. The framing choice to single out "the social
+        network giant Meta" for "reengineering Congress" while other companies get
+        aggregate treatment is editorial, not mathematical.'
+    - strength: WEAK
+      factor: 'Beat assignment, not personal bias'
+      rebuttal: 'Coverage volume and framing tone are both within a reporter discretion.
+        Writing more OpenAI data stories and more Meta adversarial stories is a pattern,
+        not a coincidence.'
+    - strength: MODERATE
+      factor: 'WaPo editorial independence from Bezos investments'
+      rebuttal: 'Mechanism #65 documents that editorial independence blocks adversarial
+        relationships from worsening coverage but does NOT block favorable ones from
+        softening it. The AI bias study positioning Claude favorably is institutional,
+        not individual.'
+    - strength: WEAK
+      factor: 'Bloomberg background means Google expertise, not Meta adversarialism'
+      rebuttal: 'The pattern is not Google-positive vs Meta-negative. It is
+        OpenAI-access-based + Anthropic-favorable-institutional vs Meta-adversarial. The
+        Google-to-AI beat drift is the structural cause.'
+    cross_references:
+    - mechanism_id: 65
+      name: "WaPo Bezos-Anthropic Ownership Chain"
+      connection: "De Vynck operates within the institutional context #65 documents; first individual-reporter test of ownership chain predictions"
+    - mechanism_id: 57
+      name: "Seetharaman Frame-Lock"
+      connection: "Career identity capture via award-winning adversarial investigation -- but De Vynck capture happened WITHIN his institution (WaPo) rather than persisting across institutions"
+    - mechanism_id: 63
+      name: "Zeff Source Access Asymmetry"
+      connection: "OpenAI provides exclusive data access to WaPo (47K conversations) creating access-dependent neutral coverage, same pattern as WIRED"
+    - mechanism_id: 69
+      name: "NYT Bifurcated Coverage"
+      connection: "Both NYT and WaPo produce bifurcated coverage -- NYT anti-litigation framing softens Meta, WaPo anti-ownership framing softens Anthropic. Different institutional mechanisms, same structural outcome"
+methodology: 'For each profiled publication, we compared coverage tone and framing
+
+  of Meta against coverage of companies that pay the publication (via
+
+  AI content licensing deals) or are financially connected. Every
+
+  finding is sourced to a specific article or primary document.
+
+  '
 publications:
   atlantic:
     apple_conflict_source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs

@@ -18412,3 +18412,116 @@ journalists:
           targets: Ring (Amazon), Nest (Google)
           meta_glasses_targeted: false
           framing: privacy_adversarial_toward_amazon_google
+- name: Gerrit De Vynck
+  current_publication: washington-post
+  role: AI and algorithms reporter
+  location: San Francisco
+  education:
+    university: Carleton University
+    degrees:
+    - Bachelor of Journalism
+    - Bachelor of Arts (Global Politics)
+    graduation_year: 2013
+  career:
+  - publication: bloomberg-news
+    title: Reporter
+    start_date: '2013-06'
+    end_date: '2020-12'
+    location: Toronto, then New York City
+    beats:
+    - Canadian telecom startups
+    - IBM
+    - Google/Alphabet
+    notes: 'Started covering Canadian technology companies (Etsy, Shopify, tech startups,
+      BCE, Rogers), later moved to Google/Alphabet beat (~2019-2020 from New York).
+      Hired as one of Bloomberg youngest tech reporters.'
+  - publication: washington-post
+    title: AI and algorithms reporter
+    start_date: '2021-01'
+    end_date: present
+    location: San Francisco
+    beats:
+    - Google/Alphabet (initial mandate)
+    - AI and algorithms (beat drift)
+    - AI industry broadly
+    notes: 'Hired explicitly to "focus on telling the story of Google and its parent,
+      Alphabet, and the power of algorithms." Beat drifted to cover all of AI. Career-defining
+      moment: Facebook Papers investigation (2021-2022). Won SAJA Business Reporting
+      Award for "Facebook Under Fire" series with Cat Zakrzewski, Niha Masih, Shibani Mahtani.'
+    hiring_announcement: https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-de-vynck-as-ai-algorithms-reporter/
+  awards:
+  - name: SAJA Business Reporting Award
+    year: 2022
+    for: "Facebook Under Fire / Facebook Papers series"
+    co_recipients:
+    - Cat Zakrzewski
+    - Niha Masih
+    - Shibani Mahtani
+    source: https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
+  competitor_coverage:
+    openai_coverage:
+    - title: "OpenAI releases first detailed public study on how people use ChatGPT"
+      date: '2025-09-15'
+      framing: neutral_data_journalism
+      notes: 'WaPo compiled 47,000 publicly shared ChatGPT conversations for analysis.
+        Neutral/exploratory framing -- data journalism mode, not adversarial.'
+      source: https://www.techmeme.com/250915/p3
+    - title: "ChatGPT data study (47K conversations)"
+      date: '2025-11'
+      framing: neutral_data_journalism
+      notes: 'Follow-up analysis of ChatGPT usage patterns. Access-based journalism
+        enabled by OpenAI data availability.'
+    - title: "OpenAI influence operations disruption"
+      framing: neutral_reporting
+      notes: 'Standard reporting on OpenAI disrupting influence operations -- neither
+        adversarial nor access-puff.'
+    - title: "OpenAI class-action lawsuit coverage"
+      framing: neutral_legal_reporting
+    meta_coverage:
+    - title: "Facebook Under Fire / Facebook Papers"
+      date: '2021-10'
+      framing: adversarial_investigation
+      notes: 'Career-defining multi-part investigation. WaPo team revealed Meta
+        "privately and meticulously tracked real-world harms exacerbated by its
+        platforms, ignored warnings from its employees." SAJA award-winning.'
+      source: https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
+    - title: "Tech moguls close to President Trump see the midterms as a path to long-term power"
+      date: '2025-12'
+      framing: political_power_adversarial
+      notes: 'Lede: "super PACs backed by Trump-supporting tech moguls and the social
+        network giant Meta try to use the 2026 midterms to reengineer Congress." Singles
+        out Meta for "reengineering Congress" despite OpenAI Brockman $50M donation and
+        Anthropic $20M to similar PACs.'
+      source: https://www.benton.org/headlines/tech-moguls-close-president-trump-see-midterms-path-long-term-power
+    - title: "Meta layoffs TWiT appearance"
+      date: '2022-11'
+      framing: stress_narrative
+      notes: 'TWiT guest appearance discussing Meta layoffs with stress/decline framing.'
+    anthropic_coverage:
+    - title: "AI companies get comfortable offering their technology to the military"
+      framing: neutral_industry_survey
+      notes: 'Co-authored piece mentioning both Meta and Anthropic -- neutral treatment
+        of both in military AI context.'
+    google_coverage:
+    - title: "James Manyika SVP Google profile"
+      framing: access_journalism_positive
+      notes: 'Profile of Google SVP -- access-based, positive framing consistent with
+        original Google beat expertise.'
+    - title: "Google civil rights review"
+      framing: standard_regulatory
+    - title: "Google+ $350M settlement"
+      framing: standard_legal_reporting
+    cross_entity_analysis:
+      mechanism_id: 71
+      pattern: beat_origin_drift
+      description: 'Hired to cover Google, career-defined by Facebook Papers adversarial
+        investigation. OpenAI coverage is access-based data journalism (47K ChatGPT
+        conversations -- neutral/exploratory). Meta coverage carries persistent adversarial
+        framing from Facebook Papers identity capture. Google coverage is standard
+        regulatory/access from original beat expertise. Operates within WaPo
+        Bezos->Amazon->Anthropic ownership chain (Mechanism #65).'
+      wapo_institutional_anthropic_evidence:
+        study: "WaPo AI political bias study (Jun 24, 2026)"
+        finding: "Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning"
+        significance: "First individual-level evidence testing Mechanism #65 ownership chain predictions"
+        source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
