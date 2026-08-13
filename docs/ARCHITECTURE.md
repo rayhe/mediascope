@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 11267 tests across 345 test files (all from real articles)
+├── tests/                       # 11313 tests across 346 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -693,6 +693,7 @@ mediascope/
 │   ├── test_type_d_01am_cross_validation_aug11.py # Type D cross-validation (Aug 11, 01:00 PT): parametrize counter fix (variable refs + single quotes, 8920→9107), missing mechanism_id catalog (#18/#20/#21/#22/#25), Mechanism #37 integrity, distinction_from cross-refs, new entry schema. 8 classes, 57 tests
 │   ├── test_type_d_01am_cross_validation_aug13.py # Type D cross-validation (Aug 13, 1 AM PT): data integrity sweep — 9 mechanisms missing test_file refs, 2 missing date_added, stale assertions, count_stats class-level variable resolution. 5 classes, 16 tests
 │   ├── test_type_d_05am_cross_validation_aug11.py # Type D cross-validation (Aug 11, 05:00 PT): Full mechanism ID coverage (24 IDs, 17-40), mechanisms #38-#40 integrity, test_file existence, count sync (9292/297), 01am fix verified, no ID collisions, coverage selection legitimate factors. 9 classes, 55 tests
+│   ├── test_type_d_05am_cross_validation_aug13.py # Type D cross-validation (Aug 13, 05:00 PT): Fixed mechanism #78 missing from YAML, validated #77-#79 field completeness, ID contiguity 17-79, stat sync (11313/346), glasses privacy cluster coherence, confounding factor strength validation. 8 classes, 46 tests
 │   ├── test_openai_meta_facial_recognition_parity_aug10.py # Mechanism #33: Cross-Publication Facial Recognition Privacy Parity Test — OpenAI PLANNED facial recognition (always-on, cameras+mics) gets aspirational framing vs Meta DORMANT NameTag code gets alarm/investigative coverage. Financial relationships predict framing direction. 8 classes, 60 tests
 │   ├── test_wired_rogue_ai_coverage_volume_asymmetry_aug10.py # Mechanism #34: WIRED Institutional Rogue AI Coverage Volume Asymmetry — Summer of Rogue AI natural experiment, 3:0 article ratio (OpenAI+Anthropic vs Meta) despite Meta least severe. Extends Will Knight + Guardian Mechanism #29. 9 classes, 42 tests
 │   ├── test_advance_conde_nast_aggregate_ai_dependency_aug10.py # Mechanism #35: Advance/Condé Nast Aggregate AI Revenue Dependency — The Omni-Deal Publisher. 6 AI revenue channels across 5 companies (OpenAI, Microsoft, Amazon, Perplexity, Reddit/Google, Apple News+), Meta excluded from all. ~$7.2B total exposure. 8 classes, ~35 tests

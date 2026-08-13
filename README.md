@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 11,267 | Across 345 test files |
+| Tests | 11,313 | Across 346 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **11267 tests** across 345 test files, each covering a different analytical capability:
+MediaScope has **11313 tests** across 346 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -713,6 +713,7 @@ MediaScope has **11267 tests** across 345 test files, each covering a different 
 | `test_type_d_11pm_cross_validation_aug10.py` | 25 | Type D end-of-day cross-validation (Aug 10, 23:00 PT): Mechanisms #33-#36 cross-validation — mechanism_id uniqueness and contiguity (#25 known gap), facial recognition parity #33 (OpenAI hardware_devices in entities), rogue AI #34 ↔ #29 coherence (Guardian + WIRED same Irregular experiment), Advance aggregate dependency #35 Condé Nast reference, pre-IPO convergence #36 three chains (Amazon→WashPost, Salesforce→Time, News Corp settlement), infrastructure count sync (9005 tests / 291 files), all Aug 10 test files present, mechanism test_file references valid, Meta isolation consistent across #33 + #36. 8 classes, 25 tests |
 | `test_type_d_01am_cross_validation_aug11.py` | 25 | Type D cross-validation (Aug 11, 01:00 PT): Parametrize counter enhancement (variable-referenced and single-quote parametrize now counted, 8920→9107 static total), missing mechanism_id catalog entries for #18 (FT Hardware Privacy), #20 (Kate Knibbs Dual Watchdog), #21 (IPO Underwriter Research Laundering), #22 (WSJ Ad Cannibalization), #25 (Amazon Dual-Lab Triangle), Mechanism #37 integrity, mechanism_id uniqueness and contiguity, distinction_from cross-references, new entry schema validation, Aug 10-11 cumulative file integrity. 8 classes, 57 tests |
 | `test_type_d_05am_cross_validation_aug11.py` | 28 | Type D cross-validation (Aug 11, 05:00 PT): Full mechanism ID coverage (26 IDs, 17-43 with gap at 41), mechanisms #38-#40 structural integrity, test_file existence for all mechanisms, README/ARCHITECTURE count sync, 01am stale assertion fix verified, no mechanism_id collisions between sections, coverage selection mechanisms (#37/#38/#39) legitimate factors check. 9 classes, 55 tests |
+| `test_type_d_05am_cross_validation_aug13.py` | 46 | Type D cross-validation (Aug 13, 05:00 PT): Fixed mechanism #78 missing from competitor-coverage-research.yaml (had test file + ARCHITECTURE.md entry but no YAML entry). Validated mechanisms #77-#79 field completeness (title, finding_summary, test_file, date_added, confounding_factors, testable_predictions), ID contiguity 17-79, stat sync (11313/346), glasses privacy cluster coherence (#77/#78 cross-reference + #76 Samsung Compound Leverage), confounding factor strength validation. 8 classes, 46 tests |
 | `test_type_d_09am_cross_validation_aug11.py` | 26 | Type D cross-validation (Aug 11, 09:00 PT): Mechanisms #42 and #43 correctly placed in cross_publication_findings (not publications), publications section clean (no mechanism_ids, all have meta_coverage_tone), snap entity exists in competitor-entities.yaml (12 total), 05am stale assertion prevention (>= not ==), test file count >=301, README count >=9432. 9 classes, 26 tests |
 | `test_type_d_5pm_cross_validation_aug11.py` | 21 | Type D cross-validation (Aug 11, 17:00 PT): Financial Times publication entry unification (no duplicate financial_times/financial-times), mechanisms 42-50 required fields (mechanism_id, date_added, discovery_date), no duplicate mechanism IDs across cross_publication_findings, Heikkilä cross-entity data under canonical financial-times key, publications count exactly 9, all Aug 11 mechanisms have test files. 21 tests |
 | `test_type_d_8pm_cross_validation_aug11.py` | 25 | Type D cross-validation (Aug 11, 20:00 PT): Mechanism #41 relocation from publications to cross_publication_findings, date_added completeness for mechanisms #51-53, full mechanism ID coverage 17-53 with no gaps, no mechanism IDs remaining in publications (except refs), README/ARCHITECTURE count sync with pytest collection (9,980 tests, 313 files), previous Type D fixes regression check (FT dedup, #42/#43 relocation, 01am stale assertions). 27 tests |

@@ -1,3 +1,64 @@
+## Iteration 82 — 2026-08-13 05:00 PT (Type D: Test & Verify)
+
+### Data Integrity Fix: Mechanism #78 Missing from YAML
+
+**Finding:** Mechanism #78 (Gemini Android XR Data Retention Investigation Gap) was added in iteration 80 with a test file (`test_gemini_android_xr_data_retention_investigation_gap_aug13.py`, 64 tests) and an ARCHITECTURE.md entry, but was **never added to `competitor-coverage-research.yaml`**. This caused a silent data integrity gap — the mechanism's structured data (sources, confounding factors, testable predictions, financial context) was not queryable via the YAML-based analysis pipeline.
+
+**Fix:** Added full mechanism #78 entry to `competitor-coverage-research.yaml` with all required fields:
+- `mechanism_id: 78`
+- `title`, `finding_summary`, `date_added`, `test_file`, `type`
+- 4 sources (Google Gemini Privacy Hub, Surfshark/TechRadar, Fast Company, TechTimes)
+- Coverage differential (Meta NameTag 3 investigations vs Google Gemini XR 0)
+- 5 journalists who covered Google I/O without investigating data retention
+- Financial context for all 4 parent companies
+- 6 confounding factors (2 STRONG, 2 MODERATE, 2 WEAK)
+- 4 testable predictions
+- 4 related mechanisms
+
+**Cross-validation results:**
+- Mechanism ID contiguity: 17-79, no gaps ✅
+- All mechanisms #77-#79 have required fields ✅
+- ARCHITECTURE.md lists all three mechanisms ✅
+- Cross-references within #77-#79 point to existing mechanisms ✅
+- Glasses privacy cluster coherence (#77/#78 cross-reference, both ref #76) ✅
+- Confounding factor strengths use valid labels ✅
+- All have at least one STRONG confounding factor ✅
+
+**Stat updates:** README + ARCHITECTURE updated from 11,267/345 → **11,313 tests / 346 files**. Two stale count locations in README fixed (table row + prose paragraph).
+
+**Test file:** `test_type_d_05am_cross_validation_aug13.py` — 8 classes, 46 tests
+**Cumulative:** 79 mechanisms, 11,313 tests, 346 files
+
+---
+
+## Iteration 81 — 2026-08-13 04:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #79: Parallel Publisher Copyright Litigation Financial Conflict — Natural Experiment
+
+**Finding:** The same plaintiff coalition (Hachette, Cengage, Elsevier, Scott Turow) filed nearly identical copyright infringement class actions against BOTH Meta (May 5, 2026, S.D.N.Y. 1:26-cv-03689) and Google (Jul 10, 2026, S.D.N.Y. 1:26-cv-05870) — same court, same plaintiffs, same legal theory. Only the defendant differs, creating a natural experiment for coverage asymmetry analysis.
+
+**Financial incentive asymmetry:**
+
+| Dimension | Meta Lawsuit | Google Lawsuit |
+|-----------|-------------|----------------|
+| Internal risk admission | Zuckerberg escalation, "torrenting" | "$10Bs-$100Bs in potential fines" |
+| CEO named personally | Yes (Zuckerberg) | No |
+| Publication financial exposure | ZERO (Meta is ad competitor) | ALL depend on Google ad revenue |
+| Coverage constraint | None | Adversarial coverage risks primary revenue |
+| Narrative drama | High (internal comms) | Low (institutional risk estimate) |
+
+**Publisher-as-licensor paradox:** Publications with AI content deals (Condé Nast → OpenAI/Amazon/Microsoft/Perplexity; FT → OpenAI; News Corp → OpenAI + Meta; WaPo → OpenAI/Amazon) face structural conflict — the lawsuits argue AI training is infringement, while their own licensing deals treat it as a licensable right. Adversarial coverage could undermine the legal basis that makes their own deals valuable.
+
+**Benchmark:** Anthropic $1.5B copyright settlement (final approval Jul 20, 2026) — largest in US copyright history, ~500K eligible writers, $3K+ minimum payment.
+
+**Test file:** `test_parallel_publisher_copyright_litigation_financial_conflict_aug13.py` — 9 classes, 37 tests
+**Commit:** 141c316
+**Cumulative:** 79 mechanisms, 11,267 tests, 345 files
+
+Also fixed: Mechanism #78 missing from ARCHITECTURE.md (iteration 80 gap) and README test count corrected (34 def functions, 64 parametrized).
+
+---
+
 ## Iteration 80 — 2026-08-13 03:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #78: Gemini Android XR Data Retention Investigation Gap — Active vs Dormant Severity Inversion
