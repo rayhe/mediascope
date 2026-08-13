@@ -1,3 +1,17 @@
+## Iteration 88 — 2026-08-13 15:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #87: FT Dual-Partner Wearables Coverage Silence — Samsung/Google Glasses Privacy Investigation Gap
+
+**Finding:** The Financial Times actively covers Meta wearables through Hannah Murphy with adversarial framing (Kenya/Sama contractor review, NameTag facial recognition, LED tamper-proofing, continuous recording) while publishing ZERO standalone Samsung Galaxy Glasses privacy investigations post-Galaxy Unpacked (Jul 22, 2026). Samsung glasses share identical hardware (Snapdragon AR1 Gen 1, 12MP camera, LED indicator) and run Google Android XR + Gemini AI. The FT has TWO financial relationships with Samsung glasses ecosystem partners — Google News AI pilot deal ("single figure millions" GBP/yr) and OpenAI content licensing deal (Apr 2024) — and ZERO financial relationship with Meta.
+
+**Key insight:** The FT's dual-lens editorial structure (Murphy=Meta/adversarial, Murgia=AI/positive) creates a Samsung glasses no-man's-land. Murphy covers META wearables adversarially but Samsung glasses run GOOGLE AI (Murgia's territory). Murgia covers GOOGLE AI positively but doesn't do adversarial hardware privacy work. Neither lens assigns Samsung glasses to a reporter for privacy investigation. WSJ (Bobrowsky) explicitly cross-references FT's prior Meta glasses reporting, confirming the FT covers the wearables category — the Samsung absence is editorial selection, not disinterest.
+
+**Confounding factors:** 6 (2 STRONG: pre-launch timing, Meta installed base; 2 MODERATE: beat assignment, Cambridge Analytica memory; 2 WEAK: event focus, resource constraints).
+
+**Cross-references:** #73 (CMA/FT-Google deal), #78 (Gemini data retention gap), #83 (Guardian parallel silence), #6 (Murgia dual-lens).
+
+**Stats:** 11,826 tests / 355 files / 87 mechanisms (+44 tests, +1 file, +1 mechanism)
+
 ## Iteration 87 — 2026-08-13 11:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #84: WIRED OpenAI Hardware Camera/FR Privacy Investigation Gap — Investigator-as-Deal-Partner Coverage Selectivity
