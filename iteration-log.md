@@ -35019,3 +35019,46 @@ Mechanisms #42, #52, #72, #75, #76, #81, #11
 - 11,706 tests collected across 353 files
 
 ### Commit
+
+---
+
+## Iteration #89 — Thu Aug 13, 2026 14:00 PT (Type C: Financial Incentive Mapping)
+
+### Target: Google Display Ads Deprecation — Publisher Revenue Floor Erosion
+
+### Mechanism #86: Google Display Ads Deprecation — Publisher Revenue Floor Erosion Through Platform Default Shift
+
+Google retired standalone Display Ads campaigns (announced May 26, 2026), folding GDN into Demand Gen where GDN shifts from DEFAULT to OPT-IN. Default campaigns now route spend to Google-owned surfaces (YouTube, Discover, Gmail, Maps) with no publisher revenue share. Publisher share of Google's total ad revenue dropped from 10.3% (Q2 2025) to 8.9% (Q2 2026) — a 1.4pp decline on $81.63B implying ~$1.11B/quarter less to publishers.
+
+**Key Finding:** Combined with Performance Planner Display removal (Mar 9, 2026), Search auto-GDN removal, and AI Overviews traffic reduction, creates FOUR-VECTOR publisher revenue erosion: (1) search traffic, (2) display budget, (3) planning infrastructure, (4) search campaign defaults. Strengthens all existing Google financial leverage mechanisms.
+
+### Confounding Factors (6)
+1. STRONG: Google claims Demand Gen campaigns perform better (higher ROAS)
+2. STRONG: Publisher revenue decline may be caused by overall digital ad market shifts
+3. MODERATE: Some advertisers may manually opt back into GDN within Demand Gen
+4. MODERATE: Google Network revenue decline (-0.7%) could reflect advertiser mix changes
+5. WEAK: Publisher ad tech stack evolution may offset some losses
+6. WEAK: Other ad networks may capture displaced GDN spend
+
+### Testable Predictions
+1. Publisher GDN revenue will decline >15% in Q3-Q4 2026 as remaining standalone campaigns sunset
+2. Demand Gen GDN opt-in rates will be <30% of previous default GDN spend
+3. Google-owned surface ad revenue will grow faster than total Google ad revenue through 2027
+4. At least one major publisher will publicly cite GDN deprecation in earnings commentary by Q4 2026
+
+### Cross-References
+Mechanisms #82 (dependency spiral), #47 (Meta ad competition), #76 (Samsung compound leverage)
+
+### Changes
+- New: `tests/test_google_display_deprecation_publisher_revenue_floor_erosion_aug13.py` (11 classes, 76 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #86)
+- Updated: `profiles/competitor-entities.yaml` (display_ads_deprecation section)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (11,782 tests / 354 files / 86 mechanisms)
+
+### Test Results
+- 76/76 mechanism tests passing
+- 312/312 core regression tests passing
+- 11,782 tests collected across 354 files
+
+### Commit
+f5fabe5

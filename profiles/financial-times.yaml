@@ -1110,6 +1110,16 @@ google_coverage_analysis:
       privacy concerns. The ONLY variable is manufacturer identity — and whether that
       manufacturer pays FT.
 
+    # Mechanism #87 (2026-08-13): FT Dual-Partner Wearables Coverage Silence
+    # Samsung Galaxy Glasses (announced Jul 22, 2026 at Unpacked) share identical
+    # hardware (Snapdragon AR1 Gen 1, 12MP camera, LED indicator) with Meta
+    # Ray-Ban. FT has ZERO standalone Samsung glasses privacy investigations.
+    # The dual-lens structure (Murphy=Meta adversarial, Murgia=AI positive)
+    # creates an editorial no-man's-land for Samsung/Google glasses privacy.
+    # FT's Google AI deal + OpenAI deal compound the financial incentive.
+    # WSJ (Bobrowsky, Jul 14 2026) confirms FT does cover wearables category.
+    mechanism_87_cross_ref: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
+
   capex_coverage:
     articles:
       - title: "Alphabet hits a $4T market cap, fourth Big Tech company to reach milestone"

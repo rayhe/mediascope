@@ -7842,6 +7842,106 @@ cross_publication_findings:
     test_count: 76
     test_file: tests/test_google_display_deprecation_publisher_revenue_floor_erosion_aug13.py
 
+  ft_dual_partner_wearables_coverage_silence:
+    mechanism_id: 87
+    mechanism_name: FT Dual-Partner Wearables Coverage Selection — Samsung/Google Glasses Privacy Investigation Silence
+    finding_type: journalist_cross_entity
+    rotation_type: B
+    type: Type B
+    discovery_date: '2026-08-13'
+    date_added: '2026-08-13'
+    finding_summary: |
+      The Financial Times actively covers Meta wearables through Hannah Murphy with adversarial
+      framing (Kenya/Sama contractor review, NameTag facial recognition, LED tamper-proofing,
+      continuous recording) while publishing ZERO standalone Samsung Galaxy Glasses privacy
+      investigations post-Galaxy Unpacked (Jul 22, 2026) — despite Samsung glasses sharing identical hardware (Snapdragon AR1 Gen 1,
+      12MP camera, LED indicator) and running Google Android XR + Gemini AI.
+      The FT has TWO financial relationships with Samsung glasses ecosystem partners: Google News
+      AI pilot deal ("single figure millions" GBP/yr) and OpenAI content licensing deal (Apr 2024).
+      The FT has ZERO financial relationship with Meta.
+      The dual-lens editorial structure (Murphy=Meta/adversarial, Murgia=AI/positive) creates a
+      Samsung glasses no-man's-land where neither reporter investigates Samsung/Google wearables
+      privacy. The WSJ explicitly cross-references FT's prior Meta glasses reporting, confirming
+      the FT covers the wearables category — the Samsung absence is editorial selection, not
+      disinterest.
+    confounding_factors:
+      - factor: Samsung glasses not yet shipping (fall 2026 launch)
+        strength: STRONG
+        description: >
+          Pre-launch products receive less investigative coverage than shipping
+          products. However, Meta's NameTag was ALSO pre-launch (dormant code,
+          never activated for consumers) and received FT adversarial coverage.
+      - factor: Meta has larger installed base (7M+ pairs sold)
+        strength: STRONG
+        description: >
+          Larger user base creates more real-world privacy incidents. However,
+          the FT covered Meta glasses adversarially BEFORE the installed base
+          was large (2023-2024 coverage predates mass adoption).
+      - factor: Beat assignment rather than financial incentive
+        strength: MODERATE
+        description: >
+          Murphy may not cover Samsung because it's not her beat. But Samsung
+          glasses' AI platform (Google Gemini) falls in Murgia's AI beat, and
+          Murgia does not do adversarial privacy investigations of Google.
+      - factor: Cambridge Analytica institutional memory
+        strength: MODERATE
+        description: >
+          Meta is the default privacy villain in tech journalism due to 2018
+          scandal. However, FT publishes neutral/positive Meta business coverage
+          (earnings, strategic analysis) — adversarial framing activates
+          selectively for privacy-adjacent stories.
+      - factor: Samsung Unpacked was primarily a foldable event
+        strength: WEAK
+        description: >
+          Galaxy Glasses were a secondary announcement. But multiple publications
+          (Gizmodo, Android Police, 9to5Google) produced standalone glasses
+          articles from the same event.
+      - factor: Editorial resource constraints
+        strength: WEAK
+        description: >
+          FT may not have attended Samsung Unpacked. But FT covers Samsung as a
+          major tech company (earnings, semiconductor) and Google I/O regularly.
+    testable_predictions:
+      - prediction: >
+          When Samsung glasses ship (fall 2026), the FT will NOT publish standalone
+          privacy investigations within 90 days — unlike the immediate adversarial
+          coverage Meta glasses received.
+        timeframe: 90 days post-Samsung glasses launch
+        falsifiable: true
+      - prediction: >
+          If a Samsung glasses privacy incident occurs, the FT will frame it through
+          Meta comparison lens rather than as standalone Samsung/Google failure.
+        falsifiable: true
+      - prediction: >
+          If FT assigns Samsung wearables coverage, it will go to Murgia (AI lens,
+          positive) not Murphy (platform lens, adversarial).
+        falsifiable: true
+      - prediction: >
+          Publications with lower Google financial dependency will produce earlier
+          and more adversarial Samsung glasses privacy coverage than the FT.
+        falsifiable: true
+    related_mechanisms:
+      - mechanism_id: 73
+        title: CMA No-Sue Regulatory Neutralization (same FT-Google deal)
+      - mechanism_id: 78
+        title: Gemini Android XR Data Retention Investigation Gap
+      - mechanism_id: 83
+        title: Guardian Samsung/Google Glasses Coverage Silence (parallel pattern)
+      - mechanism_id: 6
+        title: Madhumita Murgia Cross-Entity (AI Editor dual-lens)
+    sources:
+      - url: https://pressgazette.co.uk/media_business/google-news-licensing-deals-2026/
+        description: Press Gazette (Aug 3, 2026) — Google News AI deal details
+      - url: https://www.ft.com/content/33328743-ba0d-4a5e-9e5b-ef5e4be70e7e
+        description: FT-OpenAI content licensing deal announcement (Apr 29, 2024)
+      - url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        description: WSJ (Bobrowsky, Jul 14 2026) — cross-references FT prior Meta glasses reporting
+      - url: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+        description: Samsung Galaxy Unpacked (Jul 22, 2026) — Galaxy Glasses announcement
+      - url: https://www.trustedreviews.com/news/samsungs-android-xr-glasses-last-longer-than-metas-alternative
+        description: Trusted Reviews — Samsung glasses Snapdragon AR1 Gen 1 + 9hr battery + privacy toggle
+    test_file: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
