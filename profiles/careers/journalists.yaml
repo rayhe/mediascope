@@ -6104,6 +6104,83 @@ journalists:
   - https://www.wired.com/author/nitasha-tiku/
   - https://www.theverge.com/authors/nitasha-tiku
   - https://www.cjr.org/analysis/washington-post-tries-regroup-after-major-cuts-layoffs-delayed-rehire-former-staff.php
+  multi_publication: true
+  education:
+  - degree: BA
+    field: English & Comparative Literature
+    institution: Columbia University
+    source_url: https://theorg.com/org/the-washington-post/org-chart/nitasha-tiku
+  - degree: MJ
+    field: Journalism
+    institution: New York University
+    source_url: https://theorg.com/org/the-washington-post/org-chart/nitasha-tiku
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 72
+      pattern: beat_structural_independence
+      description: 'Company-agnostic adversarial coverage across ALL major AI entities (Google, OpenAI, Meta, xAI, Character
+        AI) without entity-specific bifurcation. Three structural factors: (1) tech culture beat is company-agnostic by definition,
+        (2) Gawker/Valleywag EDITOR role provides deepest adversarial DNA in dataset, (3) layoff-rehire cycle under Bezos
+        ownership weakened institutional loyalty. CRITICAL: despite universal adversarial coverage, Anthropic Gap — no dedicated
+        adversarial investigation — is consistent with Mechanism #65 (WaPo-Bezos-Anthropic). CONTRAST with Zeff (#63): same
+        Gawker lineage → different outcome at WIRED because beat structure differs (AI business vs tech culture).'
+    google_coverage:
+      tone: adversarial
+      key_articles:
+      - title: The Google Engineer who thinks the company's AI has come to life
+        date: '2022-06-11'
+        url_ref: techmeme_220611
+        framing: adversarial_internal_culture
+      - title: Google drops pledge not to use AI for weapons or surveillance
+        date: 2025-02
+        co_byline: Gerrit De Vynck
+        framing: adversarial_policy_reversal
+    openai_coverage:
+      tone: adversarial
+      key_articles:
+      - title: OpenAI whistleblowers ask SEC to investigate restrictive NDAs
+        date: '2024-07-14'
+        framing: adversarial_corporate_governance
+        notes: SEC complaint investigation, exclusive documents from Sen. Grassley
+      - title: OpenAI promised to make its AI safe. Employees say it failed its first test
+        framing: adversarial_safety_failures
+      - title: For years, they worried AI might break free. Now they have to stop it.
+        date: '2026-07-23'
+        co_byline: Gerrit De Vynck; Ian Duncan
+        framing: adversarial_rogue_ai
+    meta_coverage:
+      tone: adversarial
+      key_articles:
+      - title: Meta AI users confide on sex, God and Trump. Some don't know it's public
+        date: '2025-06-13'
+        co_byline: Naomi Nix
+        framing: adversarial_privacy_exposure
+      - title: Meta bolsters data trove with $15 billion stake in startup Scale AI
+        date: '2025-06-10'
+        co_byline: Naomi Nix
+        framing: neutral_business
+      - title: 140+ CZI scientists urge Zuckerberg to reconsider Facebook policies
+        date: 2020-06
+        framing: adversarial_stakeholder_pressure
+    xai_coverage:
+      tone: adversarial
+      key_articles:
+      - title: Elon Musk cutting safeguards at xAI
+        date: 2026-02
+        framing: adversarial_safety_culture
+        notes: Front page of Washington Post, published same day as layoff
+    anthropic_coverage:
+      tone: included_in_group_coverage_only
+      notes: 'No dedicated adversarial investigation. Anthropic mentioned only in group articles (e.g., "OpenAI, Anthropic
+        and Google DeepMind workers warn of AI dangers"). This Anthropic Gap is consistent with Mechanism #65 but also with
+        null hypothesis (fewer consumer-facing scandals).'
+    character_ai_coverage:
+      tone: adversarial
+      key_articles:
+      - title: A teen contemplating suicide turned to a chatbot. Is it liable for her death?
+        framing: adversarial_teen_safety
+      - title: Senators weigh regulating AI chatbots to protect kids
+        framing: adversarial_regulatory_scrutiny
 - career:
   - beat: comparative literature
     event_type: education
@@ -10911,51 +10988,43 @@ journalists:
       tone: empathetic_positive
       framing_category: accessibility
       examples:
-      - title: 'A look at the ~$377 TranscribeGlass smart glasses, which weigh 36g
-          and use AI to subtitle conversations in nearly real time, for the deaf and
-          hard-of-hearing'
+      - title: A look at the ~$377 TranscribeGlass smart glasses, which weigh 36g and use AI to subtitle conversations in
+          nearly real time, for the deaf and hard-of-hearing
         date: '2025-07-03'
         techmeme_url: https://www.techmeme.com/250703/p4
         accessibility_language: true
         surveillance_language: false
         monetization_skepticism: false
-        notes: 'Techmeme frontpage. Empathetic framing of non-Meta smart glasses
-          serving hearing-impaired users. Zero privacy/surveillance vocabulary despite
-          the device being worn on the face and processing ambient audio.'
+        notes: Techmeme frontpage. Empathetic framing of non-Meta smart glasses serving hearing-impaired users. Zero privacy/surveillance
+          vocabulary despite the device being worn on the face and processing ambient audio.
     meta:
       tone: adversarial
       framing_category: monetization_criticism
       examples:
-      - title: 'Meta Is Charging a Subscription for Smart Glasses Features. Welcome
-          to the New Era of Consumer Tech'
+      - title: Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech
         date: '2026-07-02'
         co_author: Julian Chokkattu
         source_url_proxy: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
         accessibility_language: false
         surveillance_language: false
         monetization_skepticism: true
-        notes: 'Conversation Focus is a hearing-assistance feature (beamforming audio
-          amplification) — functionally analogous to TranscribeGlass. But WIRED frames
-          it as "extracting value" and "monetizing customers" with ZERO accessibility
-          language. The framing inversion is complete: same functional category, opposite
-          editorial treatment by manufacturer.'
-      - title: 'Business Wars podcast S1E1-E2: Meta as "mass surveillance" and "I''m
-          a Creep"'
+        notes: 'Conversation Focus is a hearing-assistance feature (beamforming audio amplification) — functionally analogous
+          to TranscribeGlass. But WIRED frames it as "extracting value" and "monetizing customers" with ZERO accessibility
+          language. The framing inversion is complete: same functional category, opposite editorial treatment by manufacturer.'
+      - title: 'Business Wars podcast S1E1-E2: Meta as "mass surveillance" and "I''m a Creep"'
         date: '2026-06-03'
         co_participant: Julian Chokkattu
         platform: Wondery Business Wars
-        notes: 'Ashworth as WIRED expert guest. Meta episodes use pejorative/adversarial
-          framing. Google episode ("Google''s Return") same week receives neutral/aspirational
-          treatment despite identical camera hardware.'
+        notes: Ashworth as WIRED expert guest. Meta episodes use pejorative/adversarial framing. Google episode ("Google's
+          Return") same week receives neutral/aspirational treatment despite identical camera hardware.
     apple:
       tone: neutral_to_aspirational
       framing_category: technology_partnership
       examples:
       - title: Everything Apple Announced at WWDC 2026
         date: '2026-06-08'
-        notes: 'Written BETWEEN Business Wars Meta episodes (Jun 3 and Jun 10).
-          Apple PCC/Google Cloud partnership framed as "AI partnership" with zero
-          privacy scrutiny. See Mechanism #45 for 8-day window analysis.'
+        notes: 'Written BETWEEN Business Wars Meta episodes (Jun 3 and Jun 10). Apple PCC/Google Cloud partnership framed
+          as "AI partnership" with zero privacy scrutiny. See Mechanism #45 for 8-day window analysis.'
       mechanism_references:
       - 45
     google:
@@ -10964,15 +11033,13 @@ journalists:
       examples:
       - title: 'Business Wars S1E3: "Google''s Return"'
         date: '2026-06-11'
-        notes: 'Google Android XR glasses with cameras receive neutral/aspirational
-          "return" framing from same WIRED experts who called Meta''s cameras "mass
-          surveillance" and "creepy" one week earlier.'
+        notes: Google Android XR glasses with cameras receive neutral/aspirational "return" framing from same WIRED experts
+          who called Meta's cameras "mass surveillance" and "creepy" one week earlier.
     mechanism_70_accessibility_framing_inversion:
       discovery_date: '2026-08-12'
-      pattern: 'Accessibility Framing Inversion: hearing-assistance smart glasses
-        receive empathetic accessibility framing when built by non-Meta companies
-        (TranscribeGlass) but monetization-criticism framing when built by Meta
-        (Conversation Focus), despite serving the same functional use case.'
+      pattern: 'Accessibility Framing Inversion: hearing-assistance smart glasses receive empathetic accessibility framing
+        when built by non-Meta companies (TranscribeGlass) but monetization-criticism framing when built by Meta (Conversation
+        Focus), despite serving the same functional use case.'
       test_file: tests/test_boone_ashworth_cross_entity_aug12.py
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
@@ -18314,8 +18381,7 @@ journalists:
 - career:
   - beat: tech products, lifestyle tech
     end: '2015'
-    notes: Assistant tech editor. Early career before BuzzFeed. Covered consumer gadgets
-      and lifestyle technology.
+    notes: Assistant tech editor. Early career before BuzzFeed. Covered consumer gadgets and lifestyle technology.
     publication: popsugartechnews
     role: assistant_tech_editor
     start: '2013'
@@ -18323,14 +18389,12 @@ journalists:
   - beat: technology, consumer products, privacy, fake reviews
     end: 2019-02
     event_type: hired
-    notes: 'Tech reporter in San Francisco bureau under Mat Honan (formerly of WIRED).
-      Part of BuzzFeed''s first tech journalism team in SF alongside John Paczkowski
-      (ex-Re/code). Wrote about fake review ecosystems, stolen art in Amazon marketplace,
-      app developers secretly selling location data, unreported security flaws. Also
-      launched and ran video production for BuzzFeed Tech SF. KEY: BuzzFeed News under
-      Mat Honan covered ALL tech companies adversarially — no sacred cows. Nguyen
-      applied investigative scrutiny across Amazon, Google, Apple, and Facebook. This
-      broad adversarial scope narrowed upon moving to WSJ''s personal tech column beat.'
+    notes: 'Tech reporter in San Francisco bureau under Mat Honan (formerly of WIRED). Part of BuzzFeed''s first tech journalism
+      team in SF alongside John Paczkowski (ex-Re/code). Wrote about fake review ecosystems, stolen art in Amazon marketplace,
+      app developers secretly selling location data, unreported security flaws. Also launched and ran video production for
+      BuzzFeed Tech SF. KEY: BuzzFeed News under Mat Honan covered ALL tech companies adversarially — no sacred cows. Nguyen
+      applied investigative scrutiny across Amazon, Google, Apple, and Facebook. This broad adversarial scope narrowed upon
+      moving to WSJ''s personal tech column beat.'
     publication: buzzfeed-news
     role: tech_reporter
     start: 2015-03
@@ -18338,32 +18402,26 @@ journalists:
   - beat: personal technology, consumer products, AI, privacy, wearables
     end: present
     event_type: hired
-    notes: 'Personal Technology columnist. Initially worked alongside Joanna Stern
-      under personal tech editor Wilson Rothman. After Stern''s departure (May 2026
-      to found "New Things" / NBC News), Nguyen became WSJ''s lead personal tech voice.
-      Beat covers Apple product reviews (iPhone, AirPods, WWDC events), Samsung (Galaxy
-      S26 Ultra Privacy Display), health wearables (Garmin Cirqa, AI fitness coaches),
-      AI chatbot privacy, home tech, and subscription management. KEY for MediaScope:
-      Her beat assignment structurally separates consumer product reviews (product-utility
-      framing) from Meta investigative coverage (assigned to Bobrowsky). When Nguyen
-      covers surveillance cameras (Feb 2026 "Dragnet Era"), she targets Ring (Amazon)
-      and Nest (Google), NOT Meta glasses. This is not individual bias — it is beat
-      assignment structure at WSJ separating the promotional and adversarial voices
-      into different bylines.'
+    notes: 'Personal Technology columnist. Initially worked alongside Joanna Stern under personal tech editor Wilson Rothman.
+      After Stern''s departure (May 2026 to found "New Things" / NBC News), Nguyen became WSJ''s lead personal tech voice.
+      Beat covers Apple product reviews (iPhone, AirPods, WWDC events), Samsung (Galaxy S26 Ultra Privacy Display), health
+      wearables (Garmin Cirqa, AI fitness coaches), AI chatbot privacy, home tech, and subscription management. KEY for MediaScope:
+      Her beat assignment structurally separates consumer product reviews (product-utility framing) from Meta investigative
+      coverage (assigned to Bobrowsky). When Nguyen covers surveillance cameras (Feb 2026 "Dragnet Era"), she targets Ring
+      (Amazon) and Nest (Google), NOT Meta glasses. This is not individual bias — it is beat assignment structure at WSJ separating
+      the promotional and adversarial voices into different bylines.'
     publication: wsj
     role: personal_tech_columnist
     start: 2019-02
     source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-hires-buzzfeeds-nguyen-to-write-tech-column/amp/
   multi_publication: true
   name: Nicole Nguyen
-  notes: 'WSJ Personal Technology columnist (Feb 2019–present), formerly BuzzFeed
-    News tech reporter (2015–2019) and PopSugar Tech assistant editor. Based in San
-    Francisco. "Advocate for the normals" — approaches technology from a non-engineering
-    consumer perspective. Covers AI and privacy broadly but through the personal tech
-    lens, not the investigative/enterprise lens. Mother (son born ~2024 based on cloud
-    storage article references). KEY for MediaScope: Exemplifies Mechanism #67 — WSJ
-    beat assignment asymmetry where consumer tech, investigative, and industry analysis
-    channels produce structurally different coverage of the same companies.'
+  notes: 'WSJ Personal Technology columnist (Feb 2019–present), formerly BuzzFeed News tech reporter (2015–2019) and PopSugar
+    Tech assistant editor. Based in San Francisco. "Advocate for the normals" — approaches technology from a non-engineering
+    consumer perspective. Covers AI and privacy broadly but through the personal tech lens, not the investigative/enterprise
+    lens. Mother (son born ~2024 based on cloud storage article references). KEY for MediaScope: Exemplifies Mechanism #67
+    — WSJ beat assignment asymmetry where consumer tech, investigative, and industry analysis channels produce structurally
+    different coverage of the same companies.'
   source_urls:
   - https://talkingbiznews.com/they-talk-biz-news/wsj-hires-buzzfeeds-nguyen-to-write-tech-column/amp/
   - https://talkingbiznews.com/business-media-news/buzzfeed-hires-tech-journalists-for-san-francisco/
@@ -18373,41 +18431,39 @@ journalists:
     cross_entity_analysis:
       mechanism_id: 67
       pattern: beat_assignment_asymmetry
-      description: 'Mechanism #67: WSJ beat assignment separates consumer tech reviews
-        (Nguyen — product-utility framing for Apple, Samsung, health wearables) from
-        investigative Meta coverage (Bobrowsky — adversarial privacy framing for Meta
-        glasses). When Nguyen covers surveillance cameras (Feb 2026 "Dragnet Era of
-        Home Security Cameras"), she targets Ring (Amazon) and Nest (Google), NOT Meta
-        glasses — despite Meta glasses being a more prominent privacy concern at 7M+
-        deployed units. This is a structural beat assignment effect, not individual
-        bias. Extends Mechanism #56 (Verge beat segregation) to News Corp/WSJ.'
+      description: 'Mechanism #67: WSJ beat assignment separates consumer tech reviews (Nguyen — product-utility framing for
+        Apple, Samsung, health wearables) from investigative Meta coverage (Bobrowsky — adversarial privacy framing for Meta
+        glasses). When Nguyen covers surveillance cameras (Feb 2026 "Dragnet Era of Home Security Cameras"), she targets Ring
+        (Amazon) and Nest (Google), NOT Meta glasses — despite Meta glasses being a more prominent privacy concern at 7M+
+        deployed units. This is a structural beat assignment effect, not individual bias. Extends Mechanism #56 (Verge beat
+        segregation) to News Corp/WSJ.'
       apple_coverage:
         framing: product_utility_promotional
         tone: 0.25
         wwdc_access: true
         sample_articles:
-        - title: "Apple's Tech Marvel Comes With Sacrifices"
+        - title: Apple's Tech Marvel Comes With Sacrifices
           date: '2025-09-11'
           framing: admiring_with_tradeoffs
-        - title: "Apple's 'affordable' new iPhone 17e"
-          date: '2026-03'
+        - title: Apple's 'affordable' new iPhone 17e
+          date: 2026-03
           framing: product_utility
-        - title: "Five Big Differences With New AirPods Pro"
+        - title: Five Big Differences With New AirPods Pro
           date: '2025-09-17'
           framing: product_review
-        - title: "Apple WWDC 2026 Three Key Takeaways"
-          date: '2026-06'
+        - title: Apple WWDC 2026 Three Key Takeaways
+          date: 2026-06
           framing: event_access_reportage
       meta_coverage:
         framing: limited_not_adversarial
-        tone: 0.10
+        tone: 0.1
         sample_articles:
-        - title: "WhatsApp Breaks Through Apple's Walled Garden"
+        - title: WhatsApp Breaks Through Apple's Walled Garden
           date: '2025-11-20'
           framing: positive_competitive_meta_vs_apple
       surveillance_coverage:
         dragnet_article:
-          title: "The Dragnet Era of Home Security Cameras"
+          title: The Dragnet Era of Home Security Cameras
           date: '2026-02-13'
           targets: Ring (Amazon), Nest (Google)
           meta_glasses_targeted: false
@@ -18425,34 +18481,36 @@ journalists:
   career:
   - publication: bloomberg-news
     title: Reporter
-    start_date: '2013-06'
-    end_date: '2020-12'
+    start_date: 2013-06
+    end_date: 2020-12
     location: Toronto, then New York City
     beats:
     - Canadian telecom startups
     - IBM
     - Google/Alphabet
-    notes: 'Started covering Canadian technology companies (Etsy, Shopify, tech startups,
-      BCE, Rogers), later moved to Google/Alphabet beat (~2019-2020 from New York).
-      Hired as one of Bloomberg youngest tech reporters.'
+    notes: Started covering Canadian technology companies (Etsy, Shopify, tech startups, BCE, Rogers), later moved to Google/Alphabet
+      beat (~2019-2020 from New York). Hired as one of Bloomberg youngest tech reporters.
+    start: 2013-06
+    end: 2020-12
   - publication: washington-post
     title: AI and algorithms reporter
-    start_date: '2021-01'
+    start_date: 2021-01
     end_date: present
     location: San Francisco
     beats:
     - Google/Alphabet (initial mandate)
     - AI and algorithms (beat drift)
     - AI industry broadly
-    notes: 'Hired explicitly to "focus on telling the story of Google and its parent,
-      Alphabet, and the power of algorithms." Beat drifted to cover all of AI. Career-defining
-      moment: Facebook Papers investigation (2021-2022). Won SAJA Business Reporting
-      Award for "Facebook Under Fire" series with Cat Zakrzewski, Niha Masih, Shibani Mahtani.'
+    notes: 'Hired explicitly to "focus on telling the story of Google and its parent, Alphabet, and the power of algorithms."
+      Beat drifted to cover all of AI. Career-defining moment: Facebook Papers investigation (2021-2022). Won SAJA Business
+      Reporting Award for "Facebook Under Fire" series with Cat Zakrzewski, Niha Masih, Shibani Mahtani.'
     hiring_announcement: https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-de-vynck-as-ai-algorithms-reporter/
+    start: 2021-01
+    end: present
   awards:
   - name: SAJA Business Reporting Award
     year: 2022
-    for: "Facebook Under Fire / Facebook Papers series"
+    for: Facebook Under Fire / Facebook Papers series
     co_recipients:
     - Cat Zakrzewski
     - Niha Masih
@@ -18460,68 +18518,60 @@ journalists:
     source: https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
   competitor_coverage:
     openai_coverage:
-    - title: "OpenAI releases first detailed public study on how people use ChatGPT"
+    - title: OpenAI releases first detailed public study on how people use ChatGPT
       date: '2025-09-15'
       framing: neutral_data_journalism
-      notes: 'WaPo compiled 47,000 publicly shared ChatGPT conversations for analysis.
-        Neutral/exploratory framing -- data journalism mode, not adversarial.'
+      notes: WaPo compiled 47,000 publicly shared ChatGPT conversations for analysis. Neutral/exploratory framing -- data
+        journalism mode, not adversarial.
       source: https://www.techmeme.com/250915/p3
-    - title: "ChatGPT data study (47K conversations)"
-      date: '2025-11'
+    - title: ChatGPT data study (47K conversations)
+      date: 2025-11
       framing: neutral_data_journalism
-      notes: 'Follow-up analysis of ChatGPT usage patterns. Access-based journalism
-        enabled by OpenAI data availability.'
-    - title: "OpenAI influence operations disruption"
+      notes: Follow-up analysis of ChatGPT usage patterns. Access-based journalism enabled by OpenAI data availability.
+    - title: OpenAI influence operations disruption
       framing: neutral_reporting
-      notes: 'Standard reporting on OpenAI disrupting influence operations -- neither
-        adversarial nor access-puff.'
-    - title: "OpenAI class-action lawsuit coverage"
+      notes: Standard reporting on OpenAI disrupting influence operations -- neither adversarial nor access-puff.
+    - title: OpenAI class-action lawsuit coverage
       framing: neutral_legal_reporting
     meta_coverage:
-    - title: "Facebook Under Fire / Facebook Papers"
-      date: '2021-10'
+    - title: Facebook Under Fire / Facebook Papers
+      date: 2021-10
       framing: adversarial_investigation
-      notes: 'Career-defining multi-part investigation. WaPo team revealed Meta
-        "privately and meticulously tracked real-world harms exacerbated by its
-        platforms, ignored warnings from its employees." SAJA award-winning.'
+      notes: Career-defining multi-part investigation. WaPo team revealed Meta "privately and meticulously tracked real-world
+        harms exacerbated by its platforms, ignored warnings from its employees." SAJA award-winning.
       source: https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
-    - title: "Tech moguls close to President Trump see the midterms as a path to long-term power"
-      date: '2025-12'
+    - title: Tech moguls close to President Trump see the midterms as a path to long-term power
+      date: 2025-12
       framing: political_power_adversarial
-      notes: 'Lede: "super PACs backed by Trump-supporting tech moguls and the social
-        network giant Meta try to use the 2026 midterms to reengineer Congress." Singles
-        out Meta for "reengineering Congress" despite OpenAI Brockman $50M donation and
-        Anthropic $20M to similar PACs.'
+      notes: 'Lede: "super PACs backed by Trump-supporting tech moguls and the social network giant Meta try to use the 2026
+        midterms to reengineer Congress." Singles out Meta for "reengineering Congress" despite OpenAI Brockman $50M donation
+        and Anthropic $20M to similar PACs.'
       source: https://www.benton.org/headlines/tech-moguls-close-president-trump-see-midterms-path-long-term-power
-    - title: "Meta layoffs TWiT appearance"
-      date: '2022-11'
+    - title: Meta layoffs TWiT appearance
+      date: 2022-11
       framing: stress_narrative
-      notes: 'TWiT guest appearance discussing Meta layoffs with stress/decline framing.'
+      notes: TWiT guest appearance discussing Meta layoffs with stress/decline framing.
     anthropic_coverage:
-    - title: "AI companies get comfortable offering their technology to the military"
+    - title: AI companies get comfortable offering their technology to the military
       framing: neutral_industry_survey
-      notes: 'Co-authored piece mentioning both Meta and Anthropic -- neutral treatment
-        of both in military AI context.'
+      notes: Co-authored piece mentioning both Meta and Anthropic -- neutral treatment of both in military AI context.
     google_coverage:
-    - title: "James Manyika SVP Google profile"
+    - title: James Manyika SVP Google profile
       framing: access_journalism_positive
-      notes: 'Profile of Google SVP -- access-based, positive framing consistent with
-        original Google beat expertise.'
-    - title: "Google civil rights review"
+      notes: Profile of Google SVP -- access-based, positive framing consistent with original Google beat expertise.
+    - title: Google civil rights review
       framing: standard_regulatory
-    - title: "Google+ $350M settlement"
+    - title: Google+ $350M settlement
       framing: standard_legal_reporting
     cross_entity_analysis:
       mechanism_id: 71
       pattern: beat_origin_drift
-      description: 'Hired to cover Google, career-defined by Facebook Papers adversarial
-        investigation. OpenAI coverage is access-based data journalism (47K ChatGPT
-        conversations -- neutral/exploratory). Meta coverage carries persistent adversarial
-        framing from Facebook Papers identity capture. Google coverage is standard
-        regulatory/access from original beat expertise. Operates within WaPo
-        Bezos->Amazon->Anthropic ownership chain (Mechanism #65).'
+      description: 'Hired to cover Google, career-defined by Facebook Papers adversarial investigation. OpenAI coverage is
+        access-based data journalism (47K ChatGPT conversations -- neutral/exploratory). Meta coverage carries persistent
+        adversarial framing from Facebook Papers identity capture. Google coverage is standard regulatory/access from original
+        beat expertise. Operates within WaPo Bezos->Amazon->Anthropic ownership chain (Mechanism #65).'
       wapo_institutional_anthropic_evidence:
-        study: "WaPo AI political bias study (Jun 24, 2026)"
-        finding: "Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning"
-        significance: "First individual-level evidence testing Mechanism #65 ownership chain predictions"
+        study: WaPo AI political bias study (Jun 24, 2026)
+        finding: Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning
+        significance: 'First individual-level evidence testing Mechanism #65 ownership chain predictions'
         source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/

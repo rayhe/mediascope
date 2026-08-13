@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 10900 tests across 335 test files (all from real articles)
+├── tests/                       # 10887 tests across 336 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -787,6 +787,11 @@ mediascope/
 │   ├── test_wapo_bezos_anthropic_ownership_coverage_alignment_aug12.py # Mechanism #65: WaPo Bezos-Anthropic Ownership Coverage Alignment — Bezos $4B Anthropic investment + WaPo ownership creates coverage alignment channel. 12 classes, 50 tests
 │   ├── test_nicole_nguyen_wsj_beat_assignment_asymmetry_aug12.py # Mechanism #67: WSJ Beat Assignment Asymmetry — Consumer Tech vs Investigative Channels Create Parallel Coverage Voices for Apple and Meta. 12 classes, 52 tests
 │   ├── test_xai_x_dual_entity_publisher_financial_destruction_aug12.py # Mechanism #68: xAI-X Dual-Entity Publisher Financial Destruction Chain — Active Revenue Demolition Predicts Maximum Coverage Hostility. Three-tier financial relationship spectrum: POSITIVE → NEUTRAL → NEGATIVE. xAI-X is the ONLY entity with actively negative publisher relationship (65-75% traffic destruction, zero deals, hostile press). Volume Paradox: Meta receives MORE adversarial coverage despite less hostile relationship. 12 classes, 50 tests
+│   ├── test_nyt_meta_ai_bifurcated_coverage_alignment_aug12.py # Mechanism #69: NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Product Safety (Negative). Bifurcated framing analysis. 9 classes, 33 tests
+│   ├── test_boone_ashworth_cross_entity_aug12.py  # Mechanism #70: Boone Ashworth (WIRED) Cross-Entity Coverage Analysis. Beat structure, entity coverage distribution, Condé Nast financial correlation. 9 classes, 33 tests
+│   ├── test_gerrit_de_vynck_cross_entity_aug12.py # Mechanism #71: Gerrit De Vynck (Washington Post) Cross-Entity Coverage Analysis. Primary AI reporter, Bezos ownership chain → Anthropic Gap. 9 classes, 33 tests
+│   ├── test_nitasha_tiku_cross_entity_aug12.py  # Mechanism #72: Nitasha Tiku Tech Culture Beat Structural Independence — Company-Agnostic Adversarial Coverage with Anthropic Gap. Valleywag EDITOR lineage → universal adversarial coverage across Google/OpenAI/Meta/xAI/Character AI. Beat structure (tech culture) is company-agnostic. Anthropic Gap: no dedicated adversarial investigation at Bezos-owned WaPo, consistent with Mechanism #65. Second WaPo reporter (after De Vynck #71) exhibiting ownership-chain blind spot. 11 classes, 50 tests
+│   ├── test_type_d_3pm_cross_validation_aug12.py # Type D cross-validation (Aug 12 3 PM): README/ARCHITECTURE stat consistency, mechanism #65-#68 cross-references, journalist profile completeness, financial claim sources, mechanism ID contiguity. 34 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
