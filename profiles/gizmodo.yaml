@@ -387,6 +387,103 @@ cross_entity_coverage:
     it correlates specifically with publisher-competitor financial relationships.
 
     '
+  samsung:
+    samsung_unpacked_4entity_clean_control:
+      mechanism_id: 80
+      date_analyzed: "2026-08-13"
+      finding: "Gizmodo Samsung Galaxy Unpacked 4-Entity Clean Control Privacy Vocabulary Comparison"
+      finding_summary: >
+        Extends Mechanism #74 (Snap Specs) to Samsung, completing a 4-entity privacy
+        vocabulary comparison at Gizmodo — the only publication in the MediaScope dataset
+        with ZERO financial ties to any tech company (owned by Keleops AG, Luxembourg).
+        All four entities (Meta, Google, Snap, Samsung) make camera-equipped smart glasses
+        with functionally identical privacy-relevant hardware: cameras, AI processing, LED
+        recording indicators. Only Meta receives adversarial surveillance vocabulary at
+        Gizmodo. Samsung's Galaxy Glasses use the SAME Snapdragon AR1 Gen 1 chip as Meta's,
+        have a 12MP camera (same as Meta), LED anti-tamper privacy indicator (same as Meta),
+        and Google Gemini AI visual processing. Since Gizmodo has zero financial ties to
+        ANY entity, this 4-entity comparison isolates CULTURAL NARRATIVE CODING as the
+        primary asymmetry mechanism (~70%), with financial incentives as an amplifier (~30%).
+      samsung_articles:
+        - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
+          url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+          date: "2026-07-22"
+          surveillance_vocabulary_count: 0
+          framing: "Product review — weight, build quality, fashion design. Zero privacy investigation despite 12MP camera + Gemini AI."
+        - title: "Leak Suggests Samsung Cribbed Meta's Smart Glasses Design — Except Maybe Not Violate Your Privacy as Easily"
+          url: "https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362"
+          date: "2026-04-27"
+          surveillance_vocabulary_count: 0
+          framing: "Samsung privacy features framed POSITIVELY — 'except maybe not violate your privacy as easily'."
+        - title: "Samsung's Smart Glasses Might Not Have to Do Much, Thanks to Meta"
+          url: "https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490"
+          date: "2026-03-09"
+          surveillance_vocabulary_count: 0
+          framing: "Camera + AI specs described as neutral product features. Meta positioned as 'reference point' competitor."
+        - title: "Samsung's Smart Glasses Could Team Up With Its Rings and Watches"
+          url: "https://gizmodo.com/samsungs-smart-glasses-could-team-up-with-its-rings-and-watches-2000780248"
+          date: "2026-07-09"
+          surveillance_vocabulary_count: 0
+          framing: "Ecosystem integration — aspirational product journalism, zero privacy concern."
+      entity_comparison:
+        - entity: Meta
+          tone: -0.75
+          surveillance_vocabulary_count: 5
+          key_framing: "You're Being Watched — adversarial surveillance vocabulary, panopticon framing"
+        - entity: Google
+          tone: 0.4
+          surveillance_vocabulary_count: 0
+          key_framing: "Legit — aspirational product review, zero surveillance vocabulary"
+        - entity: Snap
+          tone: -0.10
+          surveillance_vocabulary_count: 0
+          key_framing: "cameras that enable spatial experiences — neutral product preview"
+        - entity: Samsung
+          tone: 0.2
+          surveillance_vocabulary_count: 0
+          key_framing: "very light, build quality, ecosystem — product-first, zero surveillance vocabulary"
+      samsung_hardware:
+        has_cameras: true
+        camera_resolution: "12MP"
+        camera_resolution_mp: 12
+        has_led_recording_indicator: true
+        has_ai_processing: true
+        chip: "Qualcomm Snapdragon AR1 Gen 1"
+        ai_platform: "Google Gemini"
+      hardware_privacy_parity: true
+      clean_control_validation:
+        gizmodo_financial_ties_to_meta: "none"
+        gizmodo_financial_ties_to_google: "none"
+        gizmodo_financial_ties_to_snap: "none"
+        gizmodo_financial_ties_to_samsung: "none"
+        owner: "Keleops AG (Luxembourg)"
+        primary_mechanism_isolated: "Cultural narrative coding — Cambridge Analytica / Facebook Papers legacy creates default adversarial frame for Meta only"
+        cultural_coding_percentage: 70
+        financial_amplifier_percentage: 30
+      confounding_factors:
+        - factor: "Meta market incumbency (7M+ deployed units) vs Samsung pre-launch — more deployed Meta cameras means more real-world privacy incidents"
+          strength: STRONG
+        - factor: "Cambridge Analytica / Facebook Papers legacy creates default privacy-adversarial editorial frame for Meta"
+          strength: STRONG
+        - factor: "Samsung privacy features designed in response to Meta backlash — editorial framing as 'lesson learned'"
+          strength: MODERATE
+        - factor: "Different article genres: product preview (Samsung) vs investigative (Meta) — but Gizmodo CHOSE different genres"
+          strength: MODERATE
+        - factor: "Different Gizmodo authors across entities — editorial culture sets the frame, not individuals"
+          strength: WEAK
+        - factor: "Samsung glasses not yet shipping — privacy incidents haven't occurred. But Meta NameTag was ALSO pre-launch / never activated when investigated"
+          strength: WEAK
+      testable_predictions:
+        - "When Samsung glasses ship Fall 2026, Gizmodo will NOT apply surveillance vocabulary in the review"
+        - "If a Samsung user is caught recording without consent, Gizmodo will frame it as a 'smart glasses problem' not 'Samsung problem'"
+        - "If Samsung's Gemini AI processes faces, Gizmodo will NOT produce a dedicated facial recognition investigation comparable to Meta NameTag"
+        - "Google I/O 2027 glasses updates will receive aspirational framing regardless of interim privacy incidents"
+      cross_references:
+        - "#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression"
+        - "#6 — Kyle Barr Privacy Gradient"
+        - "#76 — Samsung-Google Compound Advertiser Leverage"
+        - "#77 — NYT Samsung Glasses Coverage Selection Silence"
+        - "Google I/O Camera Paradox (gizmodo.yaml google_io_2026_camera_paradox section)"
 journalist_migrations:
 - name: Maxwell Zeff
   origin: Gizmodo
@@ -493,6 +590,106 @@ journalist_cross_entity:
         confirmed cameras capable of photo and video capture -- functionally identical to Meta's -- no privacy concern is
         raised. Samsung is instead positioned as a privacy UPGRADE from Meta. The same camera hardware that makes Meta a walking
         panopticon is a feature, not a bug, on Samsung.
+      samsung_unpacked_4entity_clean_control:
+        mechanism_id: 80
+        date_analyzed: "2026-08-13"
+        finding: "Gizmodo Samsung Galaxy Unpacked 4-Entity Clean Control Privacy Vocabulary Comparison"
+        finding_summary: >
+          Extends Mechanism #74 (Snap Specs) to Samsung, completing a 4-entity privacy
+          vocabulary comparison at Gizmodo — the only publication in the MediaScope dataset
+          with ZERO financial ties to any tech company (owned by Keleops AG, Luxembourg).
+          All four entities (Meta, Google, Snap, Samsung) make camera-equipped smart glasses
+          with functionally identical privacy-relevant hardware: cameras, AI processing,
+          LED recording indicators. Only Meta receives adversarial surveillance vocabulary
+          at Gizmodo. Samsung's Galaxy Glasses use the SAME Snapdragon AR1 Gen 1 chip as
+          Meta's Ray-Ban glasses, have a 12MP camera (same as Meta), LED anti-tamper privacy
+          indicator (same as Meta), and Google Gemini AI visual processing. Despite this
+          hardware parity, Gizmodo's Samsung coverage is product-first with zero surveillance
+          vocabulary, while Meta coverage deploys 5+ surveillance vocabulary instances per
+          article. Since Gizmodo has zero financial ties to ANY entity, this 4-entity
+          comparison isolates CULTURAL NARRATIVE CODING as the primary asymmetry mechanism
+          (~70%), with financial incentives at other publications as an amplifier (~30%).
+        samsung_articles:
+          - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
+            url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+            date: "2026-07-22"
+            surveillance_vocabulary_count: 0
+            framing: "Product review — weight, build quality, fashion design. Zero privacy investigation despite 12MP camera + Gemini AI."
+          - title: "Leak Suggests Samsung Cribbed Meta's Smart Glasses Design — Except Maybe Not Violate Your Privacy as Easily"
+            url: "https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362"
+            date: "2026-04-27"
+            surveillance_vocabulary_count: 0
+            framing: "Samsung privacy features framed POSITIVELY — 'except maybe not violate your privacy as easily' treats Samsung as privacy upgrade."
+          - title: "Samsung's Smart Glasses Might Not Have to Do Much, Thanks to Meta"
+            url: "https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490"
+            date: "2026-03-09"
+            surveillance_vocabulary_count: 0
+            framing: "Camera + AI specs described as technical product features. Meta positioned as the 'reference point' competitor, not privacy villain."
+          - title: "Samsung's Smart Glasses Could Team Up With Its Rings and Watches"
+            url: "https://gizmodo.com/samsungs-smart-glasses-could-team-up-with-its-rings-and-watches-2000780248"
+            date: "2026-07-09"
+            surveillance_vocabulary_count: 0
+            framing: "Ecosystem integration framing — aspirational product journalism, zero privacy concern despite camera + AI ecosystem."
+        entity_comparison:
+          - entity: Meta
+            tone: -0.75
+            surveillance_vocabulary_count: 5
+            key_framing: "You're Being Watched — adversarial surveillance vocabulary, panopticon framing"
+          - entity: Google
+            tone: 0.4
+            surveillance_vocabulary_count: 0
+            key_framing: "Legit — aspirational product review, zero surveillance vocabulary"
+          - entity: Snap
+            tone: -0.10
+            surveillance_vocabulary_count: 0
+            key_framing: "cameras that enable spatial experiences — neutral product preview"
+          - entity: Samsung
+            tone: 0.2
+            surveillance_vocabulary_count: 0
+            key_framing: "very light, build quality, ecosystem — product-first, zero surveillance vocabulary"
+        samsung_hardware:
+          has_cameras: true
+          camera_resolution: "12MP"
+          camera_resolution_mp: 12
+          has_led_recording_indicator: true
+          has_ai_processing: true
+          chip: "Qualcomm Snapdragon AR1 Gen 1"
+          ai_platform: "Google Gemini"
+          notes: "Functionally identical to Meta Ray-Ban for privacy purposes — same chip, same camera resolution class, same LED indicator, same AI visual processing."
+        hardware_privacy_parity: true
+        clean_control_validation:
+          gizmodo_financial_ties_to_meta: "none"
+          gizmodo_financial_ties_to_google: "none"
+          gizmodo_financial_ties_to_snap: "none"
+          gizmodo_financial_ties_to_samsung: "none"
+          owner: "Keleops AG (Luxembourg)"
+          primary_mechanism_isolated: "Cultural narrative coding — Cambridge Analytica / Facebook Papers legacy creates default adversarial frame for Meta only"
+          cultural_coding_percentage: 70
+          financial_amplifier_percentage: 30
+        confounding_factors:
+          - factor: "Meta market incumbency (7M+ deployed units) vs Samsung pre-launch — more deployed Meta cameras means more real-world privacy incidents to report on"
+            strength: STRONG
+          - factor: "Cambridge Analytica / Facebook Papers legacy creates default privacy-adversarial editorial frame for anything Meta builds"
+            strength: STRONG
+          - factor: "Samsung's privacy features explicitly designed in response to Meta's backlash — editorial framing as 'lesson learned' rather than fresh risk"
+            strength: MODERATE
+          - factor: "Different article genres: product preview (Samsung) vs investigative (Meta) — but Gizmodo CHOSE to write different genres for different entities"
+            strength: MODERATE
+          - factor: "Different Gizmodo authors across entities — editorial culture sets the frame, not individual journalists"
+            strength: WEAK
+          - factor: "Samsung glasses not yet shipping — privacy incidents haven't occurred. But Meta NameTag was ALSO pre-launch / never activated when it received investigation"
+            strength: WEAK
+        testable_predictions:
+          - "When Samsung glasses ship Fall 2026, Gizmodo will NOT apply surveillance vocabulary in the shipping review — product-first framing will persist"
+          - "If a Samsung user is caught recording without consent, Gizmodo will frame it as a 'smart glasses problem' not a 'Samsung problem' — unlike Meta-specific blame framing"
+          - "If Samsung's Gemini AI processes faces, Gizmodo will NOT produce a dedicated facial recognition investigation comparable to Meta NameTag coverage"
+          - "Google I/O 2027 glasses updates will receive aspirational framing regardless of any privacy incidents in the interim — the cultural frame is durable"
+        cross_references:
+          - "#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression"
+          - "#6 — Kyle Barr Privacy Gradient"
+          - "#76 — Samsung-Google Compound Advertiser Leverage"
+          - "#77 — NYT Samsung Glasses Coverage Selection Silence"
+          - "Google I/O Camera Paradox (gizmodo.yaml google_io_2026_camera_paradox section)"
     google:
       aggregate_tone: -0.05
       tone_label: mild_skepticism
