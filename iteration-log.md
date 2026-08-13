@@ -1,3 +1,31 @@
+## Iteration 87 — 2026-08-13 11:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #84: WIRED OpenAI Hardware Camera/FR Privacy Investigation Gap — Investigator-as-Deal-Partner Coverage Selectivity
+
+**Finding:** WIRED (Condé Nast, OpenAI content deal since Aug 2024) conducted a multi-part adversarial investigation of Meta's NameTag facial recognition (Jun 4+8, 2026) — dormant code that was never activated, never processed consumer data, and was removed within 48 hours. That same publication reported on OpenAI's planned hardware device (Feb 2026) — featuring an integrated camera, Face ID-like facial recognition for purchase authentication, always-on environmental awareness, and continuous home data collection — only in neutral business terms (io trademark delay, court filings). Zero privacy investigation of OpenAI's equivalent capability.
+
+**Control comparison:** Gizmodo (zero financial ties to either company) published more adversarial OpenAI hardware coverage (tone -0.30) than WIRED (tone 0.0), confirming that the investigation gap correlates with WIRED's financial relationship, not lack of newsworthiness.
+
+**Distinguishing from prior mechanisms:**
+- #33 (broad cross-publication FR parity): #84 isolates WIRED specifically as investigator-turned-deal-partner
+- #48 (WIRED OpenAI ad gap): different domain — ad investigation vs hardware/FR investigation
+- #78 (Gemini data retention): different company (Google vs OpenAI) and different capability
+
+**Confounding factors:** 6 documented (2 STRONG, 2 MODERATE, 2 WEAK)
+**Testable predictions:** 4 specific, falsifiable predictions
+
+**New test file:** `tests/test_wired_openai_hardware_facial_recognition_investigation_gap_aug13.py` — 11 classes, 70 tests (all passing)
+
+**YAML updates:** Mechanism #84 added to `profiles/competitor-coverage-research.yaml`, `openai_hardware_privacy_investigation_gap` section added to `profiles/wired.yaml`
+
+**Also fixed:** 3 test files missing from README test table (mechanisms #83, #84, Type D 09:00 cross-validation), 2 test files missing from ARCHITECTURE.md tree (#84, Type D 09:00), 2 pre-existing stale test counts in README (#81: 42→38, #82: 70→48), header file counts corrected (354→352 in both README and ARCHITECTURE.md)
+
+**Stats after this iteration:** ~11,661 tests / 352 files / 84 mechanisms
+
+**Commit:** TBD — pushing to GitHub
+
+---
+
 ## Iteration 86 — 2026-08-13 09:00 PT (Type D: Test & Verify)
 
 ### Cross-Validation of Mechanisms #80-82 (Samsung Unpacked Cluster + Revenue Collapse Spiral)
@@ -34896,3 +34924,52 @@ Mechanisms #65 (WaPo Bezos-Anthropic), #57 (Seetharaman Frame-Lock), #63 (Zeff S
 
 ### Commit
 Pending
+
+## Iteration #87 — Thu Aug 13, 2026 10:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #83: Guardian Samsung/Google Smart Glasses Coverage Selection Silence
+
+**Publication+Competitor Pair:** Guardian + Samsung/Google (smart glasses)
+
+The Guardian publishes sustained adversarial Meta wearables coverage (Kenya/Sama contractor footage review, NameTag facial recognition, Cambridge Analytica legacy framing) yet has published ZERO standalone Samsung smart glasses articles — verified via 4 separate site:theguardian.com searches returning 0 results as of Aug 13, 2026.
+
+The key structural insight: Samsung Galaxy Glasses run Google's Android XR platform with Google Gemini processing camera input. From a privacy investigation standpoint, Google is the entity whose data policies govern the camera-to-AI pipeline — the exact layer that triggered the Kenya/Sama investigation for Meta. The Guardian is Google's News AI pilot partner ("single figure millions" GBP/yr).
+
+This extends mechanism #59 (Guardian Dual-Role Paradox) from antitrust/licensing to wearables-specific coverage selection. Unlike mechanism #77 (NYT Samsung silence), the Guardian has a DIRECT financial relationship with Google, giving the coverage silence a stronger financial alignment signal.
+
+Additional evidence from non-profiled publications: 9to5Google, Android Police, Gadget Hacks, and Memeburn all covered Samsung glasses privacy concerns — Gadget Hacks even flagged the ICO (UK privacy regulator, the Guardian's home jurisdiction) as relevant for Samsung data policies. The Guardian has not pursued this angle despite having demonstrated FOI capability with the Stargate UK investigation.
+
+### Key Evidence
+- site:theguardian.com Samsung smart glasses = 0 results
+- site:theguardian.com Android XR = 0 results
+- Guardian Google News AI pilot: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- 9to5Google Samsung privacy: https://9to5google.com/2026/07/23/inbox-newsletter-4/
+- Android Police Samsung privacy: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+- Gadget Hacks data retention gaps: https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
+
+### Confounding Factors
+- 2 STRONG: Cambridge Analytica institutional anchor; Guardian editorial independence (Stargate UK FOI)
+- 3 MODERATE: Samsung not yet shipping (Apple N50 pre-launch coverage weakens); Google Gemini policies unknown; Milmo Google tone already -0.35
+- 1 WEAK: Samsung event editorial deprioritization
+
+### Testable Predictions
+1. No standalone Gemini/Samsung data investigation within 90 days of Samsung launch
+2. Any Samsung scandal framed as "category problem" not "Google problem"
+3. No FOI with ICO about Gemini Samsung glasses data handling
+4. Apple N50 aspirational framing creating 3-tier hierarchy
+5. No Milmo "big tobacco" framing for Google/Samsung glasses
+
+### Cross-References
+Mechanisms #59, #29, #77, #76, #80, #81
+
+### Changes
+- New: `tests/test_guardian_samsung_google_glasses_coverage_silence_aug13.py` (10 classes, 49 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #83)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (11,591 tests / 353 files / 83 mechanisms)
+
+### Test Results
+- 49/49 mechanism tests passing
+- 11,591 tests collected across 353 files
+
+### Commit
+2885b70 — pushed to GitHub

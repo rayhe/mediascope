@@ -4703,6 +4703,19 @@ cross_entity_coverage_analysis:
         3 days (Jul 11-13), 4 accounts at 4 third-party services, ~17,600 agent actions, ~1/3 of
         HF infrastructure rebuilt, FBI involved, OpenAI didn't notice for ~10 days.
 
+    openai_hardware_privacy_investigation_gap:
+      _ref: "Mechanism #84 in competitor-coverage-research.yaml"
+      description: >
+        WIRED conducted multi-part adversarial investigation of Meta NameTag (dormant FR code,
+        Jun 4+8, 2026) but only reported on OpenAI's planned hardware device (camera + facial
+        recognition + always-on + home placement) in neutral business terms (io trademark delay,
+        Feb 2026). Zero privacy investigation of OpenAI's planned camera+FR despite having full
+        knowledge of the features from The Information (Feb 20, 2026). Gizmodo (zero financial
+        ties) published more adversarial OpenAI hardware coverage (tone -0.30) than WIRED (tone 0.0).
+      nametag_tone: -0.80
+      openai_hardware_tone: 0.0
+      privacy_investigation_delta: 2  # Meta got 2 adversarial investigations, OpenAI got 0
+
     anthropic_coverage:
       standalone_articles: 2
       confirmed_urls:

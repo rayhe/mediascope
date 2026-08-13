@@ -7491,6 +7491,119 @@ cross_publication_findings:
     test_count: 55
     test_file: tests/test_guardian_samsung_google_glasses_coverage_silence_aug13.py
 
+  wired_openai_hardware_facial_recognition_investigation_gap:
+    mechanism_id: 84
+    date_added: '2026-08-13'
+    discovery_date: '2026-08-13'
+    finding_type: investigator_deal_partner_selectivity
+    key_finding: >
+      WIRED OpenAI Hardware Camera/Facial Recognition Privacy Investigation Gap —
+      Investigator-as-Deal-Partner Coverage Selectivity
+    mechanism: financial_alignment_investigation_selectivity
+    publication: wired
+    finding_summary: >
+      WIRED (Condé Nast) conducted a multi-part adversarial investigation of Meta's
+      NameTag facial recognition system (Jun 4 + Jun 8, 2026) — DORMANT code that was
+      never activated, never processed consumer data, and was removed within 48 hours.
+      WIRED also reported on OpenAI's planned hardware device (Feb 2026) which has
+      ACTIVE PLANNED features including an integrated camera designed to "observe users
+      and suggest actions," facial recognition similar to Face ID for purchase
+      authentication, always-on environmental awareness, and continuous data collection
+      from inside the home. WIRED's OpenAI hardware coverage focused EXCLUSIVELY on
+      business/trademark angles (io trademark dispute, delay to 2027). ZERO investigation
+      into the privacy implications of OpenAI's camera + facial recognition system despite
+      having full knowledge of the planned features, the same journalist network that did
+      NameTag, and an EFF security researcher who could analyze OpenAI's privacy implications.
+      Financial correlation: Condé Nast has an OpenAI content licensing deal (Aug 2024);
+      ZERO Meta deal; Meta is Condé Nast's direct ad competitor ($243B). Severity inversion:
+      OpenAI's device with always-on camera + FR placed INSIDE homes is arguably MORE
+      privacy-invasive than Meta's dormant code for glasses worn in public with an LED
+      indicator. Gizmodo (zero financial ties to any entity) published MORE adversarial
+      OpenAI hardware coverage ("Smart Speaker That No One Asked For," tone -0.30) than
+      WIRED (neutral business reporting, tone 0.0) — consistent with financial independence
+      as a predictor of editorial independence.
+    verification_date: '2026-08-13'
+    wired_nametag_investigation:
+      date_initial: '2026-06-04'
+      date_followup: '2026-06-08'
+      framing: adversarial_multi_part
+      tone: -0.80
+      surveillance_vocabulary_instances: 8
+      external_verification: 'Cooper Quintin, EFF Threat Lab'
+      feature_status: dormant_code_never_activated
+      external_impact:
+        - '75+ org ACLU coalition letter'
+        - 'US Senators letter (Wyden/Merkley/Markey)'
+        - 'EFF Victory declaration'
+        - 'New York state courtroom bans'
+    wired_openai_hardware_coverage:
+      date: '2026-02-10'
+      framing: neutral_business
+      tone: 0.0
+      surveillance_vocabulary_instances: 0
+      privacy_investigation_articles: 0
+      angle: 'trademark dispute and timeline delay ONLY'
+    openai_hardware_privacy_features:
+      camera: true
+      facial_recognition: 'Face ID-like purchase authentication'
+      always_on: true
+      environmental_observation: true
+      conversation_monitoring: true
+      placement: inside_home
+      feature_status: planned_active_for_shipping_product
+    gizmodo_control_comparison:
+      article: 'OpenAI Might Be Making a Smart Speaker That No One Asked For'
+      date: '2026-02-21'
+      tone: -0.30
+      framing: skeptical_dismissive
+      source_url: 'https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650'
+    financial_context:
+      wired_openai_deal: 'Condé Nast content licensing (Aug 2024)'
+      wired_meta_deal: ZERO
+      meta_ad_competition: '$243B direct competitor to publisher ad budgets'
+    sources:
+      - url: null
+        description: 'WIRED (Jun 4, 2026): NameTag dormant code investigation'
+      - url: null
+        description: 'WIRED (Jun 8, 2026): Meta removes NameTag code after WIRED report'
+      - url: null
+        description: 'WIRED (Feb 10, 2026): OpenAI io device delayed to 2027 (trademark angle)'
+      - url: 'https://www.macrumors.com/2026/02/20/jony-ive-openai-smart-speaker-2027/'
+        description: 'MacRumors (Feb 20, 2026): OpenAI smart speaker with camera + FR'
+      - url: 'https://hypebeast.com/2026/2/openai-x-jony-ive-plan-camera-smart-speaker-for-2027'
+        description: 'Hypebeast (Feb 2026): OpenAI device as active participant in daily life'
+      - url: 'http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry'
+        description: 'EFF (Jun 2026): Victory — Meta strips FR code after public outcry'
+      - url: 'https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650'
+        description: 'Gizmodo (Feb 2026): Smart Speaker That No One Asked For'
+      - url: 'https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777'
+        description: 'CampaignLive: Condé Nast-OpenAI deal confirmed (Aug 2024)'
+    confounding_factors:
+      - strength: STRONG
+        factor: 'Hidden code vs public announcement — Meta NameTag was secret code in a shipping app, OpenAI hardware was publicly announced'
+      - strength: STRONG
+        factor: 'Cambridge Analytica / Facebook Papers legacy creates higher editorial risk assessment for Meta FR'
+      - strength: MODERATE
+        factor: 'Meta glasses shipping (7M+ units) vs OpenAI device pre-launch (Feb 2027)'
+      - strength: MODERATE
+        factor: 'Dynamic political environment memo is a genuine editorial smoking gun'
+      - strength: WEAK
+        factor: 'Form factor privacy dynamics — glasses in public vs speaker at home create different concerns'
+      - strength: WEAK
+        factor: 'Authentication vs identification distinction — OpenAI frames FR as purchase auth, Meta as stranger ID'
+    testable_predictions:
+      - 'P84.1: When OpenAI ships its camera+FR smart speaker (2027), WIRED will NOT publish multi-part adversarial investigation comparable to NameTag'
+      - 'P84.2: If OpenAI code reveals undisclosed privacy features, WIRED will use softer vocabulary than faceprints and biometric signatures'
+      - 'P84.3: Gizmodo will apply more adversarial scrutiny to OpenAI hardware privacy than WIRED'
+      - 'P84.4: WIRED investigation gap for OpenAI hardware will exceed the 5-month Meta NameTag gap'
+    related_mechanisms:
+      - 'Mechanism #33: Cross-Publication FR Parity (broad multi-pub; #84 is WIRED-specific)'
+      - 'Mechanism #48: WIRED OpenAI Ad Coverage Gap (ads not hardware)'
+      - 'Mechanism #78: Gemini Android XR Data Retention (Google not OpenAI)'
+      - 'Mechanism #58: Condé Nast AI Deal Portfolio Dependency Index'
+      - 'Mechanism #82: Publisher Revenue Collapse Dependency Spiral'
+    test_file: tests/test_wired_openai_hardware_facial_recognition_investigation_gap_aug13.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
