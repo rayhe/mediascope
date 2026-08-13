@@ -282,6 +282,83 @@ aggregate_findings:
         title: "Samsung-Google Compound Advertiser Leverage"
       - mechanism_id: 77
         title: "NYT Samsung Glasses Coverage Selection Silence"
+  multi_journalist_samsung_unpacked_beat_assignment_paradox:
+    mechanism_id: 81
+    title: "Multi-Journalist Samsung Unpacked Beat Assignment Paradox"
+    finding_summary: >
+      At Samsung Galaxy Unpacked (Jul 22, 2026, London), publications with financial
+      dependency on Google/Samsung advertising sent multiple reporters who published
+      standalone foldable phone articles but ZERO standalone smart glasses articles,
+      despite Samsung's glasses using identical camera hardware to Meta Ray-Ban (same
+      Snapdragon AR1 Gen 1, 12MP camera, LED anti-tamper, audio-only form factor).
+
+      The Verge (Vox Media, Google programmatic ad dependency):
+      - David Imel: Fold 8 Ultra hands-on (standalone article)
+      - Dominic Preston: Fold 8 hands-on (standalone article)
+      - YouTube: "Samsung Galaxy Unpacked in 15 minutes" — glasses get 67 seconds
+        (7.4% of video, relegated to final minute)
+      - Standalone written Samsung smart glasses article: ZERO
+
+      WIRED (Conde Nast, OpenAI/Amazon/Microsoft/Perplexity deals):
+      - Covered Fold 8 Ultra (listed on Techmeme Jul 22)
+      - Julian Chokkattu: ZERO Samsung glasses articles (documented Mechanism #39)
+      - Standalone Samsung smart glasses article: ZERO
+
+      Gizmodo (Keleops AG, ZERO financial ties to any tech company):
+      - Raymond Wong: Standalone Samsung glasses hands-on article
+      - Kyle Barr + Matt Wille: Samsung glasses commentary in live blog
+      - Standalone Samsung smart glasses article: YES
+
+      This is a SAME-EVENT natural experiment: all three publications sent reporters
+      to the same venue, same press conference, same demo area. The variable is
+      financial structure. Publications with Google/Samsung ad dependency chose to
+      cover foldable phones; the publication with zero financial ties chose to also
+      cover smart glasses.
+
+      Prior Meta glasses coverage from the same reporters and publications:
+      - The Verge: Victoria Song 3+ standalone Meta glasses privacy pieces
+      - WIRED: Julian Chokkattu 3+ standalone Meta glasses articles in Jun-Jul window
+      - This disparity extends the individual-journalist findings (#39, #75) into
+        a multi-journalist, multi-publication, single-event pattern.
+    date_added: "2026-08-13"
+    test_file: tests/test_multi_journalist_samsung_unpacked_beat_assignment_aug13.py
+    type: "Type B: Journalist Cross-Entity Tracking"
+    sources:
+      - description: "Techmeme river Jul 22, 2026 — David Imel/Verge, Dominic Preston/Verge, WIRED for Fold 8"
+        url: "https://www.techmeme.com/260722/h1610"
+      - description: "Techmeme river Jul 22, 2026 — earlier snapshot with same attribution"
+        url: "https://www.techmeme.com/260722/h1525"
+      - description: "The Verge YouTube 'Samsung Galaxy Unpacked in 15 minutes' — glasses at 13:53"
+        url: "https://www.youtube.com/watch?v=c-MWq-DFTwo"
+      - description: "Gizmodo Raymond Wong standalone Samsung glasses hands-on"
+        url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+      - description: "Gizmodo live blog (Wong, Barr, Wille covering Samsung glasses)"
+        url: "https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539"
+      - description: "Cult of Mac recap citing Dominic Preston/Verge for Fold 8"
+        url: "https://www.cultofmac.com/news/samsung-galaxy-z-fold8-launch"
+    confounding_factors:
+      - strength: STRONG
+        factor: "Samsung glasses pre-launch timing — not yet shipping, less newsworthy than foldables with confirmed specs/pricing/dates"
+      - strength: STRONG
+        factor: "Editorial priority — Samsung Unpacked is traditionally a foldable phone event; glasses were a secondary announcement"
+      - strength: MODERATE
+        factor: "Beat assignment specialization — Verge reporters at Unpacked (Imel, Preston) cover Samsung phones, not wearables; Song (wearables) may not have attended"
+      - strength: MODERATE
+        factor: "Samsung restricted demo access — attendees could hold glasses but not wear or test them, limiting review-worthy content"
+      - strength: WEAK
+        factor: "Event packing — Samsung announced 6+ products in one event; publications may have triaged based on audience demand for foldable coverage"
+      - strength: WEAK
+        factor: "Pre-existing foldable rivalry narrative — Apple foldable iPhone rumors made Samsung Fold 8 comparison more editorially urgent"
+    testable_predictions:
+      - prediction: "When Samsung glasses ship Fall 2026, The Verge will publish a review but will NOT apply 'glasshole' or surveillance vocabulary from Song's Meta glasses coverage"
+      - prediction: "WIRED's Samsung glasses review will be product-focused, without the adversarial framing applied to Meta in Chokkattu's subscription article or Business Wars podcast"
+      - prediction: "If Samsung glasses generate a privacy incident post-launch, The Verge will frame it as an 'AI glasses problem' not a 'Samsung surveillance tool' — contrasting with Meta-specific privacy framing"
+      - prediction: "Gizmodo will produce proportionally more Samsung glasses coverage (articles per product) than The Verge or WIRED, maintaining the coverage-selection gap"
+    related_mechanisms:
+      - 39
+      - 75
+      - 77
+      - 80
   gizmodo_james_pero_editorial_direction_override:
     confounding_factors:
     - Meta 69% market share makes it natural focus of scrutiny

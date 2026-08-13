@@ -4436,6 +4436,8 @@ chokkattu_samsung_coverage_selection_gap:
       title: "Meta Is Charging a Subscription for Smart Glasses Features"
       type: editorial
   samsung_articles_in_window: 0
+  samsung_unpacked_glasses_articles: 0
+  meta_articles_same_period: 4
   samsung_event:
     name: "Samsung Galaxy Unpacked"
     date: "2026-07-22"

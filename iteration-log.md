@@ -1,3 +1,38 @@
+## Iteration 84 — 2026-08-13 07:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #81: Multi-Journalist Samsung Unpacked Beat Assignment Paradox
+
+**Finding:** Same-event natural experiment at Samsung Galaxy Unpacked (Jul 22, 2026, London). Three profiled publications sent reporters to the same press conference and demo area. Their coverage choices split along financial structure lines:
+
+| Publication | Financial Structure | Reporters Present | Foldable Articles | Glasses Articles |
+|-------------|-------------------|-------------------|-------------------|-----------------|
+| The Verge (Vox Media) | Google programmatic ad dependency | David Imel, Dominic Preston | 2 standalone | **0** |
+| WIRED (Condé Nast) | OpenAI/Amazon/Microsoft/Perplexity deals | staff | 1+ (Techmeme listed) | **0** |
+| Gizmodo (Keleops AG) | ZERO financial ties to any tech company | Raymond Wong, Kyle Barr, Matt Wille | yes | **1 standalone + live blog** |
+
+**Hardware parity:** Samsung's glasses use the IDENTICAL Snapdragon AR1 Gen 1 chip, 12MP camera, LED anti-tamper feature, and audio-only form factor as Meta Ray-Ban. Only the AI platform differs (Gemini vs Meta AI).
+
+**YouTube evidence:** The Verge's "Samsung Galaxy Unpacked in 15 minutes" relegated glasses to the final 67 seconds (7.4% of ~900s video, starting at 13:53).
+
+**Prior Meta coverage from same reporters/publications:**
+- The Verge: Victoria Song published 3+ standalone Meta glasses privacy pieces
+- WIRED: Julian Chokkattu published 3+ standalone Meta glasses articles in Jun-Jul window
+- The Samsung zero is not an editorial accident — these publications actively choose to cover glasses when the manufacturer is Meta
+
+**Confounding factors:** 6 total (2 STRONG: pre-launch timing + editorial priority/foldable dominance; 2 MODERATE: beat assignment + Samsung demo restrictions; 2 WEAK: event packing + foldable rivalry narrative)
+
+**Testable predictions:** 4 (Samsung review framing, privacy incident framing, Gizmodo proportional coverage advantage, WIRED adversarial framing absence)
+
+**Cross-references:** Mechanisms #39 (Chokkattu Samsung gap), #75 (Song privacy bifurcation), #77 (NYT Samsung silence), #80 (Gizmodo 4-entity control)
+
+**Profiles updated:** the-verge.yaml (samsung_unpacked_beat_assignment_paradox section), gizmodo.yaml (samsung_unpacked_glasses_coverage section), wired.yaml (samsung_unpacked_glasses_articles field), competitor-coverage-research.yaml (mechanism #81)
+
+**Test file:** `tests/test_multi_journalist_samsung_unpacked_beat_assignment_aug13.py` — 9 classes, 42 tests (all passing)
+
+**Stats after this iteration:** 11,313 tests / 348 files / 81 mechanisms
+
+---
+
 ## Iteration 83 — 2026-08-13 06:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #80: Gizmodo Samsung Galaxy Unpacked 4-Entity Clean Control Privacy Vocabulary Comparison

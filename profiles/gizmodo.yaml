@@ -1087,3 +1087,29 @@ google_io_2026_camera_paradox:
       not idiosyncratic to one journalist.
 
       '
+
+samsung_unpacked_glasses_coverage:
+  event: "Samsung Galaxy Unpacked July 2026"
+  date: "2026-07-22"
+  location: "London, UK"
+  standalone_articles:
+    - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
+      author: "Raymond Wong"
+      date: "2026-07-22"
+      url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+      tone: "product-neutral"
+      privacy_vocabulary_count: 0
+      key_framing: "very light, build quality comparison to Meta, tech specs"
+  reporters_covering_glasses:
+    - "Raymond Wong (standalone hands-on article + live blog)"
+    - "Kyle Barr (live blog: weight comparison to Meta)"
+    - "Matt Wille (live blog: design/fashion comparison to Meta)"
+  live_blog_url: "https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539"
+  significance: >
+    Gizmodo (Keleops AG, zero financial ties to any tech company) is the ONLY
+    profiled publication to publish a standalone written Samsung smart glasses
+    article from Galaxy Unpacked. The Verge (Vox Media, Google ad dependency)
+    and WIRED (Conde Nast, multiple AI deals) both sent reporters who published
+    foldable phone hands-ons but zero standalone glasses articles. This confirms
+    Gizmodo as the experimental control: same event, same product availability,
+    different coverage choices predicted by financial relationship structure.
