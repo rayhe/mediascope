@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 11045 tests across 339 test files (all from real articles)
+├── tests/                       # 11076 tests across 340 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -529,6 +529,7 @@ mediascope/
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_victoria_song_cross_entity.py # Victoria Song (Verge) cross-entity coverage: balanced Meta/Apple lens, lane comparison vs WIRED
+│   ├── test_victoria_song_privacy_vocabulary_bifurcation_aug12.py # Mechanism #75: Song dual-mode editorial bifurcation — privacy-adversarial mode Meta-only despite balanced product reviews
 │   ├── test_will_douglas_heaven_cross_entity.py # Will Douglas Heaven (MIT TR) cross-entity: source access hierarchy, failure framing double standard (Galactica vs Mariner vs OpenAI reward hacking), MIT financial correlation, Heikkilä migration
 │   ├── test_will_knight_cross_entity.py # Will Knight (WIRED) cross-entity AI coverage: 7+ OpenAI / 5+ DeepMind / 3+ Anthropic / ZERO Meta articles, talent framing asymmetry, executive access gaps, three-layer WIRED exclusion
 │   ├── test_wired_google_glasses_framing_paradox_aug6.py # WIRED smart glasses framing paradox: Google/Samsung Android XR gets product-review framing while functionally identical Meta Ray-Ban gets investigative-surveillance framing, advertising dependency paradox

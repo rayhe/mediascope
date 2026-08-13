@@ -1124,6 +1124,146 @@ key_journalists:
           other staff. Limited Song bylines on Snap wearables found. This is notable:
           unlike WIRED's lane assignment asymmetry (where Goode covers Apple/Snap but NOT
           Meta), Song covers all major wearables brands through a consistent lens.
+      privacy_vocabulary_bifurcation:
+        mechanism_ref: "#75"
+        finding: >
+          Victoria Song applies BIFURCATED editorial modes to camera-equipped wearables.
+          Her PRODUCT reviews are genuinely balanced across Meta, Apple, and Google. But she
+          writes dedicated privacy/surveillance/doxing pieces EXCLUSIVELY about Meta's
+          camera-equipped glasses, never about Apple Vision Pro (12 cameras, 5 sensors, 6 mics),
+          Google Android XR (cameras + AI), or Snap Specs (4 cameras + AI). This creates a more
+          subtle asymmetry than WIRED's lane assignment: the SAME journalist applies two different
+          editorial MODES, but the privacy-adversarial mode activates only for Meta.
+        meta_surveillance_vocabulary_count: 8
+        meta_privacy_pieces:
+          - title: "College students used Meta's smart glasses to dox people in real time"
+            date: "2024-10-02"
+            framing: >
+              Investigative privacy piece. Called doxing demo "eerie" and "unsettling."
+              Described Meta glasses as enabling real-time identity exposure. Used words:
+              "dox," "eerie," "chilling," "unsettling," "privacy nightmare." Dedicated
+              adversarial privacy piece specifically about Meta's 1-camera glasses.
+            source_url: "https://vuink.com/post/guriretr-d-dpbz/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy"
+          - title: "Meta's glasses will turn off the camera if you tamper with the privacy light"
+            date: "2026-07-07"
+            framing: >
+              Reported Meta's proactive tamper-proof LED update. While framed as Meta
+              responding positively, the article's existence reinforces Meta-glasses-as-
+              surveillance-tool frame. No equivalent article about Apple disabling Vision
+              Pro cameras or Google disabling Android XR cameras.
+            source_url: "https://www.techmeme.com/260707/p41"
+          - title: "Do smart glasses belong in the bedroom? (Vergecast)"
+            date: "2025-07-15"
+            framing: >
+              Co-hosted Vergecast segment posing intimate-scenario question about Meta
+              glasses. The question normalizes surveillance anxiety specifically for Meta's
+              product. No equivalent question posed about Apple Vision Pro in bedrooms.
+        camera_count_vs_scrutiny:
+          meta_cameras: 1
+          apple_cameras: 12
+          google_cameras: 4
+          meta_privacy_piece_count: 3
+          apple_privacy_piece_count: 0
+          google_privacy_piece_count: 0
+          paradox_note: >
+            Apple Vision Pro has 12x Meta's camera count plus 5 sensors and 6 mics.
+            Google Android XR glasses have cameras + always-on AI. Yet Song writes 3+
+            dedicated privacy pieces about Meta's 1-camera glasses and zero about either
+            competitor's camera-equipped wearables.
+        podcast_privacy_appearances:
+          - title: "kill switch podcast — 'the glassholes are back'"
+            entity_discussed: "meta"
+            key_quotes:
+              - "Someone's going to figure out a way to hack that [LED indicator]"
+              - "What is going to be the social etiquette going forward for these glasses?"
+              - "Are they going to be banned from certain professions?"
+            framing: >
+              Song raises privacy/surveillance concerns specifically about Meta glasses
+              on this podcast. Discusses LED hacking, social etiquette, profession bans.
+              No equivalent podcast appearance raises these concerns about Apple or Google
+              camera-equipped wearables.
+            source_url: "https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/"
+        intimate_scenario_framing:
+          entity: "meta"
+          piece: "Vergecast: 'Do smart glasses belong in the bedroom?'"
+          date: "2025-07-15"
+          note: >
+            The 'bedroom question' is posed specifically about Meta glasses, not about
+            Apple Vision Pro (which also has cameras and could theoretically be used in
+            intimate settings). This selective framing associates Meta with intimate
+            surveillance scenarios without applying the same frame to competitors.
+        doxing_story_analysis:
+          headline_entity: "meta"
+          technique_universality_noted: true
+          note: >
+            The I-XRAY doxing technique (facial recognition + public database lookup via
+            livestream) works with ANY camera device — laptop webcams, phone cameras, any
+            smart glasses. The Harvard students chose Meta glasses for their demo, and Song's
+            headline names Meta specifically. A journalist applying equal standards might note
+            the technique's universality or investigate equivalent risks with Apple/Google
+            camera wearables. Song reported the Meta-specific demo without broadening the frame.
+        framing_evolution:
+          - stage: "product_positive"
+            period: "2022-2024"
+            primary_entity: "all"
+            description: >
+              Song covers Meta, Apple, Google wearables with consistent product-reviewer
+              enthusiasm. 'Best glasses I've ever tried,' 'make the future look cool,'
+              'Meta's vision might be better than Apple's.'
+          - stage: "mixed_privacy_emergence"
+            period: "2024"
+            primary_entity: "meta"
+            description: >
+              First privacy-adversarial piece (doxing story, Oct 2024) specifically about
+              Meta. Product reviews remain positive. Privacy mode activated only for Meta.
+              Apple Vision Pro launched same year — no privacy pieces about its 12 cameras.
+          - stage: "dual_mode_established"
+            period: "2025-2026"
+            primary_entity: "meta"
+            description: >
+              Song maintains positive product reviews (accessibility, 'Tony Stark' Google XR)
+              while producing Meta-specific privacy content (LED piece, bedroom question,
+              podcast privacy appearances). The dual-mode pattern is fully established:
+              product mode = balanced, privacy mode = Meta only.
+        confounding_factors:
+          - factor: "market_share"
+            description: >
+              Meta has 7M+ glasses sold; Apple/Google have near-zero consumer glasses.
+              Privacy scrutiny scales with deployed units — more devices = more incidents.
+          - factor: "form_factor"
+            description: >
+              Meta glasses look like normal glasses (covert recording potential). Vision Pro
+              is an obvious face computer. The stealth factor legitimately raises different
+              privacy concerns.
+          - factor: "doxing_news_peg"
+            description: >
+              I-XRAY demo used Meta glasses specifically — Song reported on the demo as
+              presented, not by choosing to investigate Meta. However, editorial choice to
+              cover the demo (vs. noting technique universality) is still a framing decision.
+          - factor: "instagram_livestream"
+            description: >
+              Meta's Instagram livestream integration enables the specific doxing workflow.
+              Apple/Google lack equivalent consumer video streaming from glasses. This is a
+              legitimate technical differentiator.
+          - factor: "beat_assignment"
+            description: >
+              The Verge may assign privacy investigation pieces to Song because she's the
+              primary Meta wearables reviewer. This would be editorial assignment, not
+              personal bias — but the effect on coverage asymmetry is the same.
+          - factor: "chronological_exposure"
+            description: >
+              Meta glasses launched years before Apple/Google consumer glasses. More time
+              = more privacy incidents to cover. Future Apple/Google glasses launches will
+              test whether Song applies equal scrutiny.
+        subtlety_note: >
+          This bifurcation is MORE SUBTLE and MORE EFFECTIVE than WIRED's lane assignment
+          asymmetry. At WIRED, different journalists cover different entities — observable
+          and analyzable. With Song, the SAME journalist appears balanced (because her product
+          reviews ARE balanced) while selectively activating privacy-adversarial mode only
+          for one entity. A reader sees Song praise Meta glasses AND raise privacy concerns
+          about them, interpreting this as 'even the journalist who likes Meta is worried.'
+          The absence of equivalent privacy coverage for Apple/Google is invisible unless
+          explicitly compared cross-entity.
       cross_entity_analytical_significance: >
         Victoria Song demonstrates what FAIR wearables journalism looks like when the
         same journalist covers both Meta and Apple products with consistent editorial

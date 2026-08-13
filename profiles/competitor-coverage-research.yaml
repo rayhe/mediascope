@@ -148,6 +148,74 @@ aggregate_findings:
       - Different authors (Wong vs Pero) may have different privacy sensitivities
       - Meta has legacy privacy controversies (Cambridge Analytica) creating editorial reflexes
       - Genre difference (investigative vs product preview) affects expected adversarial tone
+    cross_references:
+      - mechanism_id: 75
+        relationship: "Mechanism #75 (Song Privacy Vocabulary Bifurcation) shows same pattern at The Verge"
+  victoria_song_privacy_vocabulary_bifurcation:
+    mechanism_id: 75
+    journalist: Victoria Song
+    publication: The Verge (PMC/Penske Media)
+    key_finding: Privacy Vocabulary Bifurcation — Same Journalist, Dual Editorial Modes
+    mechanism: dual_mode_editorial_bifurcation
+    finding_summary: >
+      Victoria Song applies BIFURCATED editorial standards to camera-equipped wearables.
+      Her PRODUCT reviews are genuinely balanced across Meta, Apple, and Google — "best
+      glasses I've ever tried" for Meta, "Tony Stark" for Google, balanced Apple Vision
+      Pro coverage. But she writes dedicated privacy/surveillance/doxing pieces EXCLUSIVELY
+      about Meta: "College students used Meta's smart glasses to dox people in real time"
+      (Oct 2024), LED tamper-proof update coverage (Jul 2026), "do smart glasses belong in
+      the bedroom?" Vergecast segment, kill switch podcast privacy concerns. ZERO equivalent
+      privacy pieces about Apple Vision Pro (12 cameras, 5 sensors, 6 mics) or Google
+      Android XR (cameras + AI). This is MORE SUBTLE than WIRED's lane assignment: the SAME
+      journalist appears balanced while selectively activating privacy-adversarial mode for
+      one entity. A reader interpreting Song as "fair because she praises Meta products" also
+      absorbs her Meta-specific privacy alarm without noticing the absence of equivalent alarm
+      for Apple/Google wearables.
+    tone_delta: 0.5
+    tone_scores:
+      meta_product_reviews: +0.3
+      meta_privacy_pieces: -0.3
+      apple_all_coverage: +0.2
+      google_all_coverage: +0.4
+    privacy_piece_counts:
+      meta: 3
+      apple: 0
+      google: 0
+    camera_count_paradox:
+      meta: 1
+      apple: 12
+      google: 4
+    test_count: 46
+    test_file: tests/test_victoria_song_privacy_vocabulary_bifurcation_aug12.py
+    source_urls:
+      - https://vuink.com/post/guriretr-d-dpbz/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy
+      - https://www.techmeme.com/260707/p41
+      - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+      - https://www.youtube.com/watch?v=pgu0a9QK75E
+      - https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr
+    confounding_factors:
+      - Meta has 7M+ glasses sold vs near-zero for Apple/Google consumer glasses — scale drives incidents
+      - Meta glasses look like normal glasses (covert recording); Vision Pro is obvious face computer
+      - I-XRAY demo used Meta glasses specifically — Song reported the demo as presented
+      - Meta Instagram livestream enables the doxing workflow; Apple/Google lack equivalent streaming
+      - Beat assignment by The Verge editors may direct privacy pieces to Song for Meta (institutional)
+      - Meta glasses launched years before Apple/Google consumer glasses — more time for privacy incidents
+    cross_references:
+      - mechanism_id: 6
+        relationship: "Barr Privacy Gradient — entity-specific surveillance vocabulary suppression"
+      - mechanism_id: 31
+        relationship: "Pero Editorial Direction Override — balanced product reviews co-exist with adversarial editorial"
+      - mechanism_id: 74
+        relationship: "Gizmodo Snap Specs Camera Privacy — same privacy vocabulary suppression at the cultural level"
+      - mechanism_id: 72
+        relationship: "Tiku Company-Agnostic Adversarial — CONTRAST: Tiku applies adversarial framing across ALL entities"
+      - mechanism_id: 63
+        relationship: "Zeff Source Access Asymmetry — institutional financial incentives amplify individual framing"
+    testable_predictions:
+      - "When Apple launches consumer smart glasses, test whether Song writes dedicated privacy pieces about them"
+      - "When Google launches consumer Android XR glasses, test for equivalent doxing/bedroom/surveillance framing"
+      - "Track whether Snap Specs consumer launch triggers Song privacy coverage"
+      - "If The Verge assigns Apple glasses privacy coverage to a DIFFERENT journalist, it confirms beat_assignment confound"
   gizmodo_james_pero_editorial_direction_override:
     confounding_factors:
     - Meta 69% market share makes it natural focus of scrutiny

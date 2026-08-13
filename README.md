@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 11,045 | Across 339 test files |
+| Tests | 11,076 | Across 340 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **11045 tests** across 339 test files, each covering a different analytical capability:
+MediaScope has **11076 tests** across 340 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -541,6 +541,7 @@ MediaScope has **11045 tests** across 339 test files, each covering a different 
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |
 | `test_victoria_song_cross_entity.py` | 15 | Victoria Song (The Verge) cross-entity wearables coverage analysis: balanced product-reviewer lens across Meta/Apple/Google, data integrity correction (Song's Jul 7 LED piece = Meta response not adversarial investigation), WIRED vs Verge lane assignment comparison, functional vs surveillance criticism distinction |
+| `test_victoria_song_privacy_vocabulary_bifurcation_aug12.py` | 26 | Mechanism #75: Victoria Song Privacy Vocabulary Bifurcation — same journalist applies DUAL editorial modes to camera-equipped wearables. Product reviews balanced across Meta/Apple/Google, but privacy-adversarial pieces written EXCLUSIVELY about Meta (doxing story, LED tamper-proof, bedroom question, podcast surveillance concerns). Apple Vision Pro (12 cameras) and Google Android XR get zero privacy vocabulary. 6 confounding factors documented. 9 classes, 31 collected (6 parametrized) |
 | `test_kate_clark_cross_entity.py` | 35 | Kate Clark (WSJ startup/VC desk) cross-entity: Mechanism #27 — Startup Desk vs. Corporate Desk Narrative Segregation. Clark covers Anthropic with hero-arc templates ("scrappy underdog," "front-runner," "doing more with less") at +0.45 tone; Bobrowsky covers Meta at -0.15 tone with accountability templates ("investors have pressed," "lavish spending"). 0.60-point tone gap within SAME publication (News Corp, balanced $50M/$50M deals) from GENRE/DESK ASSIGNMENT, not financial incentive. Distinct from Mechanism #26 (Asa Fitch analytical columns). 8 classes, 38 tests |
 | `test_kate_knibbs_cross_entity.py` | 29 | Kate Knibbs (WIRED) cross-entity: Dual Watchdog Paradox — industry's definitive AI copyright record-keeper (tracker cited in federal court, CA Assembly AB 412, academic papers) works for publisher that SELLS training data to OpenAI (Aug 2024), Amazon, Microsoft, Apple (negotiating), $0 Meta / $0 Google. Meta headline prominence in shared lawsuits (Books3), dismissive product reviews ("rudimentary/buggy novelty"), accusatory data deletion coverage ("fake PR stunt"). OpenAI secondary in shared cases. Google critical but editorially self-interested (WIRED content copied). Apple neutral/factual. Two-layer paradox: Condé Nast sells to OpenAI + Advance controls Reddit (65.2% voting) which sells to OpenAI AND Alphabet. Record-keeper role = outsized influence (tracker shapes discourse baseline, no counterbalance). 8 classes, 29 tests |
 | `test_ipo_underwriter_research_laundering_aug10.py` | 42 | Type C Financial Incentive Mapping: IPO Underwriter Research Laundering Pipeline (Mechanism #21) — Goldman Sachs and Morgan Stanley simultaneously lead BOTH Anthropic and OpenAI IPOs (unprecedented, WSJ confirmed separate deal teams), while their research divisions produce AI industry reports cited by journalists as independent Wall Street analysis. GS fell 4.8% and MS fell 4.1% on OpenAI IPO delay news, proving material financial dependency. MS record Q2 2026, GS IB backlog 5-year high. Meta went public 2012, generates zero IPO fees — bank research narrative tailwind disproportionately benefits IPO clients. Reddit Q2 2026 data licensing verification ($43M Other revenue, +24% YoY, annualized ~$172M), Advance 23.3% stake, Huffman "not binary" on renewals. Anthropic secondary market $1.2T (exceeds OpenAI $852B). Amazon stake 15-20%, worth $180-240B at secondary. 8 classes, 42 tests |
