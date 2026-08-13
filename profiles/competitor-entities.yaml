@@ -3942,6 +3942,44 @@ entities:
       coverage (like OpenAI, Amazon, or Microsoft''s publisher deals).
 
       '
+    advertising_leverage:
+      global_measured_media_spend_b: 9.7
+      global_advertiser_rank: 4
+      media_properties_count: 250
+      media_agency: 'Publicis Media (Starcom) — US media buying, global coordination'
+      interbrand_brand_value_b: 100.8
+      interbrand_year: 2024
+      us_spending_note: '$100M+ in digital, print, and national TV in last year (MediaRadar).
+
+        US alone $152M+ (TNS Media Intelligence, older figure). Global media
+
+        buying account valued at $600M+ (RCR Wireless / Publicis Starcom).
+
+        Samsung is the 4th-largest advertiser in the WORLD by measured media.
+
+        '
+      compound_leverage_with_google:
+        mechanism_id: 76
+        summary: 'Samsung''s Intelligent Eyewear runs Google''s Android XR + Gemini.
+
+          Favorable Samsung glasses coverage simultaneously pleases Samsung
+
+          ($9.7B global ad spend, 250+ properties) AND Google (publishers''
+
+          primary ad revenue source, content deals, News Showcase). This
+
+          COMPOUND financial leverage is unique to Samsung''s glasses and
+
+          absent from Meta''s (Meta has no platform partner, IS publishers''
+
+          direct ad competitor at $243.46B projected 2026 ad revenue).
+
+          '
+      source_urls:
+      - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+      - https://advertisers.mediaradar.com/samsung-group-advertising-profile
+      - http://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
+      - https://sqmagazine.co.uk/samsung-statistics/
     privacy_innovation_attribution:
       _ref_mechanism_id: 55
       _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion

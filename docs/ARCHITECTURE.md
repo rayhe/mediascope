@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 11076 tests across 340 test files (all from real articles)
+├── tests/                       # 11113 tests across 341 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -558,6 +558,7 @@ mediascope/
 │   ├── test_google_q2_2026_meta_coverage_asymmetry_aug8.py # Google vs Meta Q2 2026 earnings coverage asymmetry: Alphabet Q2 earnings ($119.8B/+24%, $81.6B ads, $44.9B capex, -$5.9B FCF), 5 framing patterns (capex narrative inversion, net income quality erasure, FCF double standard, growth rate suppression, headline register asymmetry), financial incentive prediction 100%
 │   ├── test_safe_target_coefficient_aug8.py # Type C Safe Target Coefficient quantification: binary Meta-deal predictor (9/9 accuracy), competitor deal gradient (r≈0.52), per-publisher asymmetry scores + meta_avg_tone, News Corp symmetric control, Gizmodo zero-deal control, safe target delta range
 │   ├── test_samsung_equivalence_paradox_aug7.py # Samsung Equivalence Paradox: Samsung Intelligent Eyewear functionally identical to Meta Ray-Ban (12MP camera, mics, AI, LED indicator, ~50g, no display) yet receives product-review framing while Meta gets adversarial framing; Iberville Parish school ban names Meta glasses only despite identical Samsung hardware
+│   ├── test_samsung_google_compound_advertiser_leverage_aug13.py # Samsung-Google Compound Advertiser Leverage (Mechanism #76): Samsung is 4th-largest global advertiser ($9.7B/yr, 250+ properties); glasses run Google Android XR + Gemini = compound financial leverage on publisher coverage; cross-entity comparison matrix (Samsung+Google positive, Meta negative, Snap zero); 7 confounding factors, 4 testable predictions
 │   ├── test_apple_google_gemini_publisher_chain_aug7.py # Apple-Google $1B/yr Gemini deal creates publisher content bypass chain: Apple negotiated with Condé Nast/NBC/IAC ($50M, Dec 2023) but signed no deals; instead paid Google for Gemini model trained on publisher content (Hachette/Cengage lawsuit confirms), bypassing direct publisher licensing entirely
 │   ├── test_verge_anthropic_rogue_ai_comparison.py # The Verge Anthropic/OpenAI/Meta three-tier coverage: "Accidentally" Paradox, rogue AI safety comparison, pay→soft/neutral→factual/threaten→adversarial, reporter lane extension to Anthropic
 │   ├── test_raymond_wong_cross_entity.py # Gizmodo Raymond Wong cross-entity: Clean Control Paradox (no-deals publication balanced), Maxwell Zeff migration (Gizmodo→WIRED), three-tier model validation, aggregate control evidence

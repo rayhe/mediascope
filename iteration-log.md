@@ -1,3 +1,70 @@
+## Iteration 77 — 2026-08-13 00:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #76: Samsung-Google Compound Advertiser Leverage on Wearables Coverage
+
+**Finding:** Samsung is the 4th-largest global advertiser (~$9.7B/yr in measured media, 250+ media properties via Publicis Media). Samsung's Intelligent Eyewear runs Google's Android XR + Gemini AI, creating COMPOUND financial leverage that is unique among all wearables competitors: favorable Samsung glasses coverage simultaneously pleases two entities with massive publisher financial relationships.
+
+**Compound leverage matrix (per wearables competitor):**
+
+| Entity | Ad Spend | Platform Partner | Content Deals | Publisher Ad Competitor? | Compound Leverage |
+|--------|----------|-----------------|--------------|------------------------|--------------------|
+| Samsung+Google | $9.7B (Samsung) + $239.54B (Google) | Google (Android XR + Gemini) | 0 (Samsung) + multiple (Google) | No | **HIGH (positive compound)** |
+| Meta | $0 publisher spend | None | 13 (non-adversarial pubs only) | **YES** ($243.46B) | **NEGATIVE** |
+| Snap | <$1B | None | 0 | No | ZERO |
+| OpenAI (hardware) | <$0.1B | None | 20+ | No (not yet) | MODERATE (deal-based) |
+
+**Why this is distinct from the Samsung Equivalence Paradox (Mechanism, Aug 7):** The Equivalence Paradox documented the FRAMING asymmetry (identical hardware, different coverage). This Type C mapping provides the FINANCIAL EXPLANATION: Samsung's coverage is softer because covering Samsung favorably serves Samsung's $9.7B advertising relationship AND Google's financial leverage simultaneously. Meta's coverage is adversarial because it costs the publication nothing — Meta is their direct ad competitor and has no partner multiplier.
+
+**Why Samsung gets softer coverage than even Snap:** Snap's Spectacles ($2,195, 4 cameras) also received softer coverage than Meta's (Mechanism #74), but Snap's leverage is ZERO — no ads, no deals, no partner. The Samsung-Snap comparison isolates the Samsung advertising effect: both get softer coverage than Meta, but Samsung's is EVEN softer because Samsung's advertising spend creates implicit dependency.
+
+**Key distinction — advertising vs. content deal leverage:** Samsung's advertising leverage is IMPLICIT and structural. Unlike OpenAI's content licensing deals (explicit quid pro quo: money for training data + softer coverage), Samsung doesn't attach editorial conditions to ad buys. But publications with significant Samsung ad revenue have a dependency relationship that creates self-censorship incentives — no editor will greenlight an adversarial Samsung investigation right before a Galaxy Unpacked campaign worth hundreds of thousands in ad revenue.
+
+**Confounding factors (7):** Pre-launch vs post-launch coverage baseline; Cambridge Analytica/Facebook Papers legacy; Samsung perceived as hardware-first; market incumbency (Meta 76% vs Samsung 0%); Samsung LED privacy features may genuinely differ; Google Glass failure history; advertising ≠ quid pro quo.
+
+**4 testable predictions:** (1) When Samsung glasses ship, privacy incidents will NOT receive surveillance-vocabulary framing; (2) Publications with highest Samsung ad revenue will produce most favorable Samsung glasses coverage; (3) Absence of Samsung privacy coverage correlates with Google financial relationship strength; (4) If Samsung Ads expands to compete directly with publisher display ads, coverage will shift adversarial.
+
+**Files changed:** `tests/test_samsung_google_compound_advertiser_leverage_aug13.py` (NEW: 37 collected, 9 classes), `profiles/competitor-entities.yaml` (Samsung advertising_leverage section), `profiles/competitor-coverage-research.yaml` (Mechanism #76 + cross-entity comparison matrix), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 37 new (9 classes), all passing. Structural consistency: 124/124 passing. Total: **11,113 tests** across **341 files**.
+
+## Iteration 76 — 2026-08-12 23:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #75: Victoria Song Privacy Vocabulary Bifurcation — Same Journalist, Dual Editorial Modes
+
+**Finding:** Victoria Song (The Verge) applies BIFURCATED editorial modes to camera-equipped wearables. Her PRODUCT reviews are genuinely balanced across Meta, Apple, and Google ("best glasses I've ever tried" for Meta, "Tony Stark" for Google, balanced Apple Vision Pro coverage). But she writes dedicated privacy/surveillance/doxing pieces EXCLUSIVELY about Meta's 1-camera glasses, never about Apple Vision Pro (12 cameras, 5 sensors, 6 mics), Google Android XR (cameras + AI), or Snap Specs (4 cameras + AI).
+
+**Framing comparison (same journalist, different entities):**
+
+| Dimension | Meta glasses (1 camera) | Apple Vision Pro (12 cameras) | Google Android XR (cameras + AI) |
+|-----------|------------------------|-------------------------------|----------------------------------|
+| Product tone | +0.3 (balanced-positive) | +0.2 (balanced-positive) | +0.4 (positive) |
+| Privacy pieces | 3 (doxing, LED, bedroom) | 0 | 0 |
+| Surveillance vocabulary | 8 instances across pieces | 0 instances | 0 instances |
+| Podcast privacy concerns | kill switch (LED hacking, profession bans) | None | None |
+| Key language | "dox," "eerie," "chilling," "unsettling" | Weight, keyboard, display specs | "Tony Stark," "Jarvis," "sci-fi" |
+
+**Key privacy pieces (Meta only):**
+1. "College students used Meta's smart glasses to dox people in real time" (Oct 2024) — dedicated adversarial piece, names Meta in headline despite I-XRAY technique working with ANY camera device
+2. LED tamper-proof update (Jul 2026) — reports Meta's proactive response but reinforces glasses-as-surveillance-tool frame
+3. "Do smart glasses belong in the bedroom?" (Vergecast Jul 2025) — intimate-scenario question posed specifically about Meta, not about Apple Vision Pro
+4. kill switch podcast — "Someone's going to figure out a way to hack that [LED]" — privacy concerns specific to Meta
+
+**Camera-count paradox:** Apple Vision Pro has 12× Meta's camera count plus 5 sensors and 6 mics. Google Android XR has 4+ cameras. Yet Song writes 3+ dedicated privacy pieces about Meta's 1-camera glasses and ZERO about either competitor's camera-equipped wearables.
+
+**Why this is more subtle than WIRED's lane assignment:** At WIRED, different journalists cover different entities — observable and analyzable. With Song, the SAME journalist appears balanced (because her product reviews ARE balanced) while selectively activating privacy-adversarial mode only for one entity. A reader sees Song praise Meta glasses AND raise privacy concerns about them, interpreting this as "even the journalist who likes Meta is worried." The absence of equivalent privacy coverage for Apple/Google is invisible unless explicitly compared cross-entity.
+
+**Confounding factors (6):** Market share (Meta 7M+ vs near-zero consumer glasses for Apple/Google); form factor (Meta glasses covert-capable vs Vision Pro obvious); news peg (I-XRAY demo chose Meta glasses); Instagram livestream integration; beat assignment (editorial decision, not personal bias); chronological exposure (Meta glasses launched years before competitors).
+
+**Extends:** Mechanism #6 (Barr Privacy Gradient), #31 (Pero Editorial Direction Override), #74 (Gizmodo Snap Specs Camera Privacy). CONTRASTS with #72 (Tiku Company-Agnostic Adversarial — Tiku applies adversarial framing across ALL entities at WaPo).
+
+**4 testable predictions:** (1) When Apple launches consumer smart glasses, does Song write dedicated privacy pieces? (2) When Google launches consumer Android XR glasses, does she frame with equivalent doxing/surveillance vocabulary? (3) Does Snap Specs consumer launch trigger Song privacy coverage? (4) If The Verge assigns Apple glasses privacy to a DIFFERENT journalist, it confirms beat_assignment confound.
+
+**Files changed:** `tests/test_victoria_song_privacy_vocabulary_bifurcation_aug12.py` (NEW: 31 collected, 9 classes), `profiles/the-verge.yaml` (privacy_vocabulary_bifurcation section), `profiles/competitor-coverage-research.yaml` (Mechanism #75 + cross-refs to #74), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 31 new (9 classes), all passing. Structural consistency: 124/124 passing. Total: **11,076 tests** across **340 files**.
+
+**Commit:** 00a73ea
+
 ## Iteration 75 — 2026-08-12 22:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #74: Gizmodo Snap Specs Camera Privacy — Surveillance Vocabulary Suppression at Clean Control

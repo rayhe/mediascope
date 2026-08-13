@@ -1381,6 +1381,109 @@ cross_entity_leverage:
     - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
     - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
 cross_publication_findings:
+  samsung_google_compound_advertiser_leverage:
+    mechanism_id: 76
+    name: 'Samsung-Google Compound Advertiser Leverage on Wearables Coverage'
+    date_added: '2026-08-13'
+    discovery_date: '2026-08-13'
+    finding: |
+      Samsung (4th-largest global advertiser, ~$9.7B/yr measured media, 250+ media
+      properties) ships Intelligent Eyewear running Google's Android XR + Gemini.
+      This creates COMPOUND financial leverage: favorable Samsung glasses coverage
+      simultaneously pleases two entities with massive publisher financial
+      relationships. Samsung provides direct advertising revenue; Google provides
+      ad revenue dependency, News Showcase payments, and content licensing deals.
+      Neither entity competes with publisher ad revenue (unlike Meta at $243.46B).
+
+      Meta's glasses have ZERO or NEGATIVE compound leverage: Meta has no/minimal
+      content deals with adversarial publications, IS publishers' direct ad
+      competitor, and has no platform partner that adds financial weight.
+      Snap's glasses have ZERO compound leverage: no ad leverage, no platform partner.
+
+      This is the first mechanism quantifying how two entities' financial
+      relationships COMPOUND to create stronger coverage incentives than either alone.
+    leverage_type: 'advertising (implicit dependency) + platform partnership (compound)'
+    mechanism_explanation: |
+      Advertising leverage is IMPLICIT and structural — Samsung doesn't attach
+      editorial conditions to ad buys, but publications with significant Samsung
+      ad revenue have a dependency relationship that creates self-censorship
+      incentives. The Google platform coupling MULTIPLIES this: covering Samsung
+      glasses favorably simultaneously validates Google's Android XR/Gemini
+      platform, which serves Google's financial interests with the same publication.
+      The compound effect exceeds what either Samsung or Google advertising alone
+      would predict.
+    financial_scale: |
+      Samsung's $9.7B global ad spend DWARFS all publisher content licensing deals
+      combined (~$300-400M/yr from ALL AI companies combined). A single Samsung
+      Galaxy Unpacked campaign's media buy exceeds most publishers' annual AI
+      licensing revenue. This makes advertising leverage quantitatively larger
+      than content deal leverage, but less visible because it operates through
+      structural dependency rather than explicit contractual terms.
+    entity_comparisons:
+      samsung_google:
+        leverage_type: positive_compound
+        ad_spend_b: 9.7
+        platform_partner: Google (Android XR + Gemini)
+        content_deals: 0
+        publisher_ad_competitor: false
+        compound_leverage: 'HIGH — Samsung ad revenue + Google ad dependency +
+          Google content deals + Google News Showcase. Two entities, one product.'
+      meta:
+        leverage_type: negative
+        ad_spend_b: 0
+        platform_partner: none
+        content_deals: 13
+        publisher_ad_competitor: true
+        compound_leverage: 'NEGATIVE — Meta IS publishers'' direct ad competitor
+          ($243.46B projected 2026). No platform partner adds weight. Content
+          deals are with non-adversarial publications only. Covering Meta
+          favorably financially benefits a direct competitor.'
+      snap:
+        leverage_type: zero
+        ad_spend_b: '<1'
+        platform_partner: none
+        content_deals: 0
+        publisher_ad_competitor: false
+        compound_leverage: 'ZERO — Snap has minimal advertising at publisher
+          scale, no content deals, no platform partner. Coverage is driven
+          by cultural narrative coding (Mechanism #74), not financial incentives.'
+      openai:
+        leverage_type: positive_deal
+        ad_spend_b: '<0.1'
+        platform_partner: none
+        content_deals: '20+'
+        publisher_ad_competitor: false
+        compound_leverage: 'MODERATE — Content licensing deals create direct
+          financial dependency. Growing ad business ($2.5B projected 2026)
+          is NOT yet competing with publisher ad revenue. No compound partner.'
+    confounding_factors:
+    - Samsung glasses haven't shipped yet — pre-launch coverage is inherently more favorable than post-launch
+    - Meta has Cambridge Analytica / Facebook Papers legacy controversies that Samsung lacks
+    - Samsung is perceived as primarily a hardware company, less data-hungry than Meta
+    - Market incumbency — Meta has 76% of smart glasses market, Samsung has 0%
+    - Samsung's LED privacy features may genuinely differ from Meta's at launch
+    - Google has its own Glass failure history but is repositioning via Samsung partnership
+    - Samsung's advertising relationship is standard media buying, not quid pro quo
+    testable_predictions:
+    - When Samsung Intelligent Eyewear ships (Fall 2026), privacy incidents WILL occur but will NOT receive surveillance-vocabulary framing
+    - Publications that receive the most Samsung ad revenue will produce the most favorable Samsung glasses coverage
+    - The absence of Samsung privacy coverage will correlate with Google financial relationship strength (Showcase payments, ad dependency)
+    - If Samsung ever becomes a direct ad-revenue competitor (Samsung Ads expanding beyond CTV to publisher display), coverage will shift adversarial
+    extends_mechanisms:
+    - 'Mechanism #6 (Barr Privacy Gradient)'
+    - 'Mechanism #30 (Chokkattu Temporal Framing Oscillation)'
+    - 'Mechanism #47 (Meta Ad Revenue Competitor Structural Antagonism)'
+    - 'Mechanism #55 (Privacy Innovation Attribution Inversion)'
+    - 'Mechanism #74 (Gizmodo Snap Specs Camera Privacy)'
+    - 'Samsung Equivalence Paradox (Aug 7)'
+    source_urls:
+    - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+    - https://advertisers.mediaradar.com/samsung-group-advertising-profile
+    - http://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
+    - https://sqmagazine.co.uk/samsung-statistics/
+    - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+    - https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm
+    test_file: tests/test_samsung_google_compound_advertiser_leverage_aug13.py
   advance_conde_nast_aggregate_ai_dependency:
     date_added: 2026-08-10
     entities:
@@ -10245,4 +10348,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-12
+research_period: 2024-08-01 to 2026-08-13
