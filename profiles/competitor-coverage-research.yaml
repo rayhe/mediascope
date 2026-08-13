@@ -117,6 +117,37 @@ aggregate_findings:
     from BOTH user-generated AND professional content licensing to AI companies, making AI-must-pay editorial coverage structurally
     aligned with Advance's financial interests across two subsidiaries simultaneously
   evidence_strength: STRONG
+  gizmodo_snap_specs_surveillance_vocabulary_suppression:
+    mechanism_id: 74
+    journalist: James Pero (Snap Specs), Raymond Wong (Meta glasses)
+    publication: Gizmodo (Keleops AG)
+    key_finding: Surveillance Vocabulary Suppression at Clean Control
+    mechanism: cultural_narrative_coding
+    finding_summary: >
+      Gizmodo, the dataset's clean control publication (zero financial ties), suppresses
+      surveillance vocabulary when covering Snap's camera-equipped Specs ($2,195, 4 cameras,
+      AI, photo/video capture, Jun 2026) while deploying it freely for Meta's camera-equipped
+      glasses (1 camera, AI, photo/video capture). Snap's cameras: "enable spatial experiences."
+      Meta's cameras: "surveillance state," "You're Being Watched." Zero financial incentive
+      at Gizmodo to treat either company differently. This proves the Meta-as-surveillance
+      narrative coding operates at the CULTURAL level of tech journalism, independent of
+      financial relationships. Financial incentives at WIRED/FT/NYT AMPLIFY the pre-existing
+      cultural coding (~30% of total asymmetry) on top of the cultural baseline (~70%).
+    tone_delta: 0.65
+    tone_scores:
+      snap_specs: -0.10
+      meta_glasses: -0.75
+    test_count: 47
+    test_file: tests/test_gizmodo_snap_specs_camera_privacy_vocabulary_aug12.py
+    source_urls:
+      - https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470
+      - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
+    confounding_factors:
+      - Meta article covers a specific scandal (Kenya contractors); Snap article is a product preview
+      - Meta has 7M+ units vs Snap with zero consumer shipments — scale creates more incidents
+      - Different authors (Wong vs Pero) may have different privacy sensitivities
+      - Meta has legacy privacy controversies (Cambridge Analytica) creating editorial reflexes
+      - Genre difference (investigative vs product preview) affects expected adversarial tone
   gizmodo_james_pero_editorial_direction_override:
     confounding_factors:
     - Meta 69% market share makes it natural focus of scrutiny

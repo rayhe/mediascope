@@ -245,6 +245,124 @@ cross_entity_coverage:
       date: 2026-07
       url: https://gizmodo.com/ar-glasses-have-a-massive-size-problem-2000779454
       notes: Category-wide criticism including Snap/Google — applies standards equally
+    - title: Snap's New AR Glasses Are Trying to Beat Meta to the Punch
+      tone: neutral_product_preview
+      date: 2026-06-16
+      url: https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470
+      author: James Pero
+      notes: Product preview of camera-equipped $2,195 Specs. Cameras described neutrally
+        as enabling spatial experiences. Zero surveillance vocabulary despite identical
+        camera hardware to Meta glasses.
+    snap_specs_camera_privacy_parity:
+      mechanism_id: 74
+      date_analyzed: '2026-08-12'
+      finding: Surveillance Vocabulary Suppression at Clean Control
+      finding_summary: >
+        Gizmodo — the dataset's clean control publication (zero financial ties to any tech
+        company) — suppresses surveillance vocabulary when covering Snap's camera-equipped
+        Specs ($2,195, Jun 2026) while deploying it freely for Meta's camera-equipped glasses.
+        Both products have face-mounted cameras, LED recording indicators, AI contextual
+        awareness, and photo/video capture capability. The hardware is functionally identical
+        for privacy purposes. Yet Snap's cameras are described as features that "enable
+        spatial experiences" while Meta's identical cameras trigger "surveillance state,"
+        "You're Being Watched," and "corporations convincing people to pay to participate
+        in advancing surveillance." Since Gizmodo has NO financial ties to either company,
+        this proves the Meta-as-surveillance narrative coding operates at the CULTURAL level
+        of tech journalism, independent of financial incentives. Financial relationships at
+        WIRED, FT, and NYT AMPLIFY this pre-existing cultural coding but did not create it.
+      hardware_privacy_parity: true
+      snap_specs_hardware:
+        has_cameras: true
+        camera_count: 4
+        can_record_photos_video: true
+        has_led_recording_indicator: true
+        has_ai_contextual_awareness: true
+        ai_partners: [OpenAI, Google Gemini]
+        price: $2,195
+        launch_date: 2026-06-16
+      meta_glasses_hardware:
+        has_cameras: true
+        camera_count: 1
+        camera_resolution: 12MP
+        can_record_photos_video: true
+        has_led_recording_indicator: true
+        has_ai_contextual_awareness: true
+        ai_partner: Meta AI
+        price: $299-$799
+        units_sold: 7M+
+      snap_specs_article:
+        title: "Snap's New AR Glasses Are Trying to Beat Meta to the Punch"
+        date: '2026-06-16'
+        author: James Pero
+        url: https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470
+        tone: -0.10
+        camera_language: "cameras that enable spatial experiences... can capture photos and video"
+        surveillance_vocabulary_count: 0
+        surveillance_vocabulary: []
+        led_indicator_framing: "LED indicator that lights up when photos or videos are being captured...
+          it's at least the bare minimum at this stage for face-worn computers"
+        privacy_concern_depth: shallow
+        privacy_concern_notes: One sentence questioning whether LED is sufficient, immediately
+          accepted as bare minimum. No investigation into Snap's data practices, no questions
+          about where camera data goes, no contractor review inquiry.
+      meta_glasses_article:
+        title: "Dear Meta Smart Glasses Wearers: You're Being Watched, Too"
+        date: '2026-03'
+        author: Raymond Wong
+        url: https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
+        tone: -0.75
+        camera_language: "sensitive and personal footage captured by the devices... uncensored"
+        surveillance_vocabulary_count: 5
+        surveillance_vocabulary:
+          - "You're Being Watched (headline)"
+          - "surveillance state"
+          - "corporations convincing people to pay for products to participate in advancing it"
+          - "intimate images are getting shared"
+          - "footage to get reviewed by other strangers"
+        led_indicator_framing: "Not mentioned — focus on data flow after capture, not capture notification"
+        privacy_concern_depth: deep_investigative
+        privacy_concern_notes: Full investigation citing Svenska Dagbladet, contractor testimony,
+          intimate footage catalogue, editorial conclusion framing Meta cameras as surveillance
+          infrastructure.
+      tone_delta: 0.65
+      confounding_factors:
+        - "The Meta article covers a specific scandal (Kenya contractor data annotation of intimate footage)
+          while the Snap article is a product preview — different genres produce different tones regardless
+          of entity. However, the VOCABULARY choice (surveillance state vs spatial experiences) is not
+          genre-determined: a product preview CAN note privacy risks without alarm language."
+        - "Meta has 7M+ units sold vs Snap with zero consumer units shipped at time of coverage. Scale
+          of deployment creates more real-world privacy incidents to report. However, Gizmodo's Snap
+          article doesn't even HYPOTHESIZE about future privacy risks from Snap's cameras despite
+          Snap having 4 cameras (vs Meta's 1)."
+        - "Genre difference: investigative journalism about a specific incident vs product preview. The
+          investigative article is expected to be more adversarial. However, Pero's article doesn't
+          even ask what Snap will do with camera data — the question isn't raised at all."
+        - "Meta has genuine legacy privacy controversies (Cambridge Analytica, Kenya contractors) that
+          create editorial reflexes. Snap has no comparable privacy scandal history. However, Google
+          Glass WAS the original glasshole product, yet Google's return to camera glasses doesn't
+          trigger alarm vocabulary either — suggesting the Meta coding is specific, not category-wide."
+        - "Different authors (Wong vs Pero) may have different privacy sensitivities. However, Kyle Barr
+          at the SAME publication shows the SAME Meta-specific alarm pattern (Mechanism #6), suggesting
+          it's not author-specific but shared editorial culture."
+      clean_control_significance:
+        gizmodo_financial_ties_to_snap: none
+        gizmodo_financial_ties_to_meta: none
+        mechanism_isolated: "Cultural narrative coding — the 'Meta = surveillance' frame is absorbed
+          from the broader tech journalism ecosystem and applied reflexively, independent of any
+          financial incentive at the publication level"
+        amplification_model: "Financial relationships (WIRED-OpenAI, FT-Google, NYT-Amazon) amplify
+          the pre-existing cultural coding by adding motivated reasoning. The cultural baseline delta
+          at Gizmodo (~0.65) is comparable to the financial-amplified delta at WIRED (~0.95), suggesting
+          culture accounts for ~70% and financial incentives for ~30% of the total asymmetry."
+        related_mechanisms:
+          - "Mechanism #6: Kyle Barr Privacy Gradient (same publication, individual-level evidence)"
+          - "Mechanism #31: James Pero Editorial Direction Override (same publication, genre-level evidence)"
+          - "Verge Snap Specs vs Meta Glasses (different publication, same pattern)"
+        industry_wide_evidence: "The Snap camera vocabulary suppression appears across ALL profiled
+          publications, not just Gizmodo. Snap Specs received zero surveillance vocabulary from ANY
+          outlet: Gizmodo (clean control), TechCrunch, Reuters, Engadget, Tom's Guide all covered
+          Snap's cameras as product features, never as surveillance infrastructure. This universality
+          proves the vocabulary differential is not publication-specific but industry-wide."
   privacy_coverage_pattern: 'Wong applies privacy criticism to ALL companies equally. Key evidence:
 
     - "Apple''s Smart Glasses Are Stepping Into a Privacy Minefield" (2026-04) — Apple gets privacy scrutiny

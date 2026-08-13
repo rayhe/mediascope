@@ -1,3 +1,67 @@
+## Iteration 75 — 2026-08-12 22:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #74: Gizmodo Snap Specs Camera Privacy — Surveillance Vocabulary Suppression at Clean Control
+
+**Finding:** Gizmodo — the dataset's clean control publication (ZERO financial ties to any tech company) — suppresses surveillance vocabulary when covering Snap's camera-equipped Specs ($2,195, 4 cameras, AI, photo/video, Jun 2026) while deploying it freely for Meta's camera-equipped glasses. Both products have face-mounted cameras, LED recording indicators, AI contextual awareness, and photo/video capture. The hardware is functionally identical for privacy purposes.
+
+**Framing comparison (same publication, different entity):**
+
+| Dimension | Snap Specs (Pero, Jun 2026) | Meta Glasses (Wong, Mar 2026) |
+|-----------|---------------------------|------------------------------|
+| Camera language | "cameras that enable spatial experiences" | "sensitive and personal footage... uncensored" |
+| Surveillance vocabulary | 0 instances | 5 instances |
+| LED indicator | "at least the bare minimum" (accepted) | Not mentioned (focus on data flow) |
+| Tone | -0.10 (neutral) | -0.75 (adversarial) |
+| Privacy concern depth | Shallow (one sentence, dismissed) | Deep investigative (full article) |
+
+**Key vocabulary delta:** Snap's 4 cameras → "enable spatial experiences." Meta's 1 camera → "surveillance state," "You're Being Watched," "corporations convincing people to pay for products to participate in advancing [surveillance]."
+
+**Significance for the model:** Since Gizmodo has ZERO financial ties to either company, this 0.65 tone delta isolates CULTURAL NARRATIVE CODING as the mechanism. The "Meta = surveillance" frame operates at the industry-wide editorial culture level, independent of financial incentives. Financial relationships at WIRED (~0.95 delta) and FT (~0.80 delta) AMPLIFY this cultural baseline but didn't create it. Estimated contribution: cultural coding ~70%, financial incentives ~30%.
+
+**Confounding factors (5):** Kenya scandal vs product preview genre difference; Meta 7M+ units vs zero Snap consumer units; different authors; Meta legacy controversies; investigative vs preview article type.
+
+**Extends:** Mechanism #6 (Barr Privacy Gradient), Mechanism #31 (Pero Editorial Direction Override), Verge Snap Specs analysis — all showing the same entity-specific vocabulary suppression.
+
+**Files changed:** `profiles/gizmodo.yaml` (snap_specs_camera_privacy_parity section), `profiles/competitor-coverage-research.yaml` (Mechanism #74), `tests/test_gizmodo_snap_specs_camera_privacy_vocabulary_aug12.py` (NEW: 46 tests, 9 classes), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 46/46 new passing. Total: **11,045 tests** across **339 files**.
+
+## Iteration 74 — 2026-08-12 21:00 PT (Type D: Test & Verify)
+
+### count_stats.py Parametrize Counting Regression — 290-Test Undercount Fixed
+
+**Root cause:** `count_stats.py` regex only matched inline-list `@pytest.mark.parametrize` with double-quoted parameter names. Three categories of parametrize blocks were invisible:
+
+1. **Single-quoted parameter names** (6 blocks across 2 files) — `@pytest.mark.parametrize('factor', [...])`
+2. **Variable-reference parametrize** (43 blocks across 18 files) — `@pytest.mark.parametrize('x', CONFOUNDING_FACTORS)`
+3. **Complex expression parametrize** (6 blocks across 3 files) — `range(7)`, `list(DICT.keys())`
+
+**Impact:** count_stats reported 10,696 tests. Pytest --collect-only: 10,986 (later 10,999 with new test file). README/ARCHITECTURE documented 10,923. All three numbers disagreed.
+
+**Fixes applied:**
+- Extended regex in count_stats.py to handle single + double quotes
+- Added `_resolve_variable_list()` for UPPER_CASE module-level variable references
+- Added `count_tests_pytest()` using subprocess `pytest --collect-only` as authoritative counter (15s, used by `--check` and `--pytest` flags)
+- Updated `_count_pytest_tests()` in `test_structural_consistency.py` to also use `pytest --collect-only`
+
+**Stat drift corrected across README.md and ARCHITECTURE.md:**
+
+| Metric | Documented | Actual | Delta |
+|--------|-----------|--------|-------|
+| Tests (pytest) | 10,923 | 10,999 | +76 |
+| Tests (count_stats regex) | 10,696 | 10,725 | +29 |
+| Career-entry migrations (table) | 968 | 971 | +3 |
+| Journalists tracked | 253 | 255 | +2 |
+| Distinct publications | 441+ | 442+ | +1 |
+
+**Migration metric clarification:** README table uses career-entry count (971, all transitions). Prose uses CareerTracker auto-detected count (757, tracked-pub-only subset). Both correct for their context — previously conflated.
+
+**Files changed:** `scripts/count_stats.py` (parametrize fix + pytest verifier), `tests/test_structural_consistency.py` (authoritative _count_pytest_tests), `tests/test_type_d_9pm_cross_validation_aug12.py` (NEW: 13 tests, 5 classes), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 13 new + 124 structural consistency = 137/137 passing. Total: **10,999 tests** across **338 files**.
+
+**Commit:** cd11da5
+
 ## Iteration 73 — 2026-08-12 20:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #73: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections

@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **10999 tests** across 338 test files, each covering a different analytical capability:
+MediaScope has **11045 tests** across 339 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
