@@ -34300,3 +34300,48 @@ Mechanisms #11 (WIRED financial conflicts), #14 (Condé Nast AI deals), #44 (inv
 
 ### Commit
 Pending
+
+## Iteration #72 — 2026-08-12 17:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Target: Boone Ashworth (WIRED)
+
+### Mechanism #70: Accessibility Framing Inversion — TranscribeGlass (Empathetic) vs Meta Conversation Focus (Adversarial)
+
+Boone Ashworth covers TranscribeGlass ($377 non-Meta smart glasses for hearing-impaired users) with empathetic accessibility framing — Techmeme frontpage, "for the deaf and hard-of-hearing" — but co-authors coverage of Meta's Conversation Focus (beamforming hearing amplification, same functional category) as "extracting value" and "monetizing customers" with ZERO accessibility language.
+
+The feature serves the same use case: helping hearing-impaired people communicate in noisy environments. TranscribeGlass transcribes to text; Conversation Focus amplifies audio. Both are hearing-assistance smart glasses features. But only the non-Meta version receives accessibility framing.
+
+This extends the Business Wars podcast asymmetry (Meta = "mass surveillance" / "I'm a Creep" vs Google = "Google's Return") and the WWDC PCC privacy framing asymmetry (Mechanism #45), demonstrating entity-correlated editorial posture at the individual journalist level.
+
+#### Evidence Sources
+- TranscribeGlass coverage: https://www.techmeme.com/250703/p4
+- Meta Conversation Focus paywall: https://news.slashdot.org/story/26/07/02/182227/
+- Conversation Focus technical verification: https://www.androidauthority.com/meta-smart-glasses-rate-limits-3683323/
+- Apple N50 delay context: https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
+
+### Confounding Factors
+- 1 STRONG: Meta facial recognition history (DeepFace 2014, Cambridge Analytica) — explains camera scrutiny, not accessibility framing omission
+- 2 MODERATE: TranscribeGlass is a startup (different audience expectations); paywall is genuinely newsworthy (but doesn't explain accessibility erasure)
+- 1 WEAK: Conversation Focus not marketed as medical device (neither is TranscribeGlass)
+
+### Testable Predictions
+1. Non-Meta company paywalling accessibility glasses feature → WIRED will use accessibility language
+2. Meta adds free accessibility feature → WIRED will NOT frame with accessibility empathy
+3. Apple N50 hearing features → will receive accessibility-positive framing even if paid
+4. Ashworth future non-Meta captioning coverage → will continue empathetic accessibility vocabulary
+
+### Cross-References
+Mechanisms #45 (Ashworth WWDC PCC), #11 (WIRED financial conflicts), #14 (Condé Nast AI deals), #61 (Apple News+ Glasses), #66 (Cameron/Mehrotra)
+
+### Changes
+- New: `tests/test_boone_ashworth_cross_entity_aug12.py` (33 tests, 10 classes)
+- Updated: `profiles/careers/journalists.yaml` (competitor_coverage for Boone Ashworth)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #70)
+- Updated: `README.md` + `docs/ARCHITECTURE.md` (10,867 tests / 334 files)
+
+### Test Results
+- 33/33 mechanism tests passing
+- 10,867 tests collected across 334 files (1 pre-existing YAML parse error in test_type_d_aug6)
+
+### Commit
+Pending

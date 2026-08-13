@@ -10906,6 +10906,74 @@ journalists:
     most Drummond-era hires. (3) His beat (consumer tech, gadgets, right-to-repair) is adjacent to but distinct from the adversarial
     Big Tech accountability coverage on Schiffer''s business desk. Tests whether Wired''s consumer/product coverage carries
     different framing from its investigative coverage of the same companies.'
+  competitor_coverage:
+    transcribeglass:
+      tone: empathetic_positive
+      framing_category: accessibility
+      examples:
+      - title: 'A look at the ~$377 TranscribeGlass smart glasses, which weigh 36g
+          and use AI to subtitle conversations in nearly real time, for the deaf and
+          hard-of-hearing'
+        date: '2025-07-03'
+        techmeme_url: https://www.techmeme.com/250703/p4
+        accessibility_language: true
+        surveillance_language: false
+        monetization_skepticism: false
+        notes: 'Techmeme frontpage. Empathetic framing of non-Meta smart glasses
+          serving hearing-impaired users. Zero privacy/surveillance vocabulary despite
+          the device being worn on the face and processing ambient audio.'
+    meta:
+      tone: adversarial
+      framing_category: monetization_criticism
+      examples:
+      - title: 'Meta Is Charging a Subscription for Smart Glasses Features. Welcome
+          to the New Era of Consumer Tech'
+        date: '2026-07-02'
+        co_author: Julian Chokkattu
+        source_url_proxy: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+        accessibility_language: false
+        surveillance_language: false
+        monetization_skepticism: true
+        notes: 'Conversation Focus is a hearing-assistance feature (beamforming audio
+          amplification) — functionally analogous to TranscribeGlass. But WIRED frames
+          it as "extracting value" and "monetizing customers" with ZERO accessibility
+          language. The framing inversion is complete: same functional category, opposite
+          editorial treatment by manufacturer.'
+      - title: 'Business Wars podcast S1E1-E2: Meta as "mass surveillance" and "I''m
+          a Creep"'
+        date: '2026-06-03'
+        co_participant: Julian Chokkattu
+        platform: Wondery Business Wars
+        notes: 'Ashworth as WIRED expert guest. Meta episodes use pejorative/adversarial
+          framing. Google episode ("Google''s Return") same week receives neutral/aspirational
+          treatment despite identical camera hardware.'
+    apple:
+      tone: neutral_to_aspirational
+      framing_category: technology_partnership
+      examples:
+      - title: Everything Apple Announced at WWDC 2026
+        date: '2026-06-08'
+        notes: 'Written BETWEEN Business Wars Meta episodes (Jun 3 and Jun 10).
+          Apple PCC/Google Cloud partnership framed as "AI partnership" with zero
+          privacy scrutiny. See Mechanism #45 for 8-day window analysis.'
+      mechanism_references:
+      - 45
+    google:
+      tone: neutral_aspirational
+      framing_category: competitor_return
+      examples:
+      - title: 'Business Wars S1E3: "Google''s Return"'
+        date: '2026-06-11'
+        notes: 'Google Android XR glasses with cameras receive neutral/aspirational
+          "return" framing from same WIRED experts who called Meta''s cameras "mass
+          surveillance" and "creepy" one week earlier.'
+    mechanism_70_accessibility_framing_inversion:
+      discovery_date: '2026-08-12'
+      pattern: 'Accessibility Framing Inversion: hearing-assistance smart glasses
+        receive empathetic accessibility framing when built by non-Meta companies
+        (TranscribeGlass) but monetization-criticism framing when built by Meta
+        (Conversation Focus), despite serving the same functional use case.'
+      test_file: tests/test_boone_ashworth_cross_entity_aug12.py
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
   career:

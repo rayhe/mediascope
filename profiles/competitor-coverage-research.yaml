@@ -6280,6 +6280,50 @@ methodology: 'For each profiled publication, we compared coverage tone and frami
   finding is sourced to a specific article or primary document.
 
   '
+  ashworth_accessibility_framing_inversion:
+    mechanism_id: 70
+    name: "Boone Ashworth Accessibility Framing Inversion — TranscribeGlass (Empathetic) vs Meta Conversation Focus (Adversarial)"
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    publication: wired
+    journalist: Boone Ashworth
+    finding_type: journalist_cross_entity_accessibility_framing
+    rotation_type: B
+    extends_mechanisms:
+    - 45
+    - 11
+    - 14
+    - 61
+    - 66
+    finding_summary: 'Boone Ashworth (WIRED staff writer) covers TranscribeGlass ($377
+      non-Meta smart glasses for hearing-impaired users) with empathetic accessibility
+      framing — Techmeme frontpage, "for the deaf and hard-of-hearing" — but co-authors
+      coverage of Meta''s Conversation Focus (beamforming hearing amplification, same
+      functional category) as "extracting value" and "monetizing customers" with ZERO
+      accessibility language. The feature serves the same use case: helping hearing-impaired
+      people communicate in noisy environments. TranscribeGlass transcribes to text;
+      Conversation Focus amplifies audio. Both are hearing-assistance smart glasses
+      features. But only the non-Meta version receives accessibility framing. Combined
+      with Business Wars podcast framing asymmetry (Meta = "mass surveillance" / "I''m
+      a Creep" vs Google = "Google''s Return") and Apple N50 aspirational privacy framing,
+      this demonstrates entity-correlated editorial posture at the individual journalist
+      level — not feature-correlated or function-correlated.'
+    test_file: tests/test_boone_ashworth_cross_entity_aug12.py
+    source_transcribeglass: https://www.techmeme.com/250703/p4
+    source_meta_paywall_proxy: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+    source_conversation_focus_tech: https://www.androidauthority.com/meta-smart-glasses-rate-limits-3683323/
+    confounders:
+    - strength: STRONG
+      factor: 'Meta facial recognition history (DeepFace 2014, Cambridge Analytica)'
+      rebuttal: 'Explains surveillance scrutiny of cameras, not the omission of accessibility
+        framing for a hearing feature with no camera involvement'
+    - strength: MODERATE
+      factor: 'TranscribeGlass is a startup, not a platform company'
+      rebuttal: 'WIRED claims to cover technology by function, not manufacturer reputation'
+    - strength: MODERATE
+      factor: 'The subscription paywall IS genuinely newsworthy'
+      rebuttal: 'Criticism of the paywall is legitimate; the asymmetry is the complete
+        erasure of accessibility framing for the same functional category'
 
 publications:
   atlantic:
