@@ -176,23 +176,25 @@ def _count_top_level_items(text: str) -> int:
 
 
 def _resolve_variable_list(var_name, content):
-    """Resolve a module-level variable to its list items count.
+    """Resolve a variable to its list items count.
 
-    Looks for ``VAR_NAME = [...]`` at module level and counts top-level items.
-    Returns the item count, or 0 if the variable cannot be resolved.
+    Looks for ``VAR_NAME = [...]`` at module level OR class level (indented)
+    and counts top-level items.  Returns the item count, or 0 if the variable
+    cannot be resolved.
     """
-    # Match VAR = [...] at module scope (no leading whitespace)
-    pattern = re.compile(
-        r"^" + re.escape(var_name) + r"\s*=\s*\[(.*?)\]",
-        re.MULTILINE | re.DOTALL,
-    )
-    m = pattern.search(content)
-    if not m:
-        return 0
-    items_text = m.group(1).strip()
-    if not items_text:
-        return 0
-    return _count_top_level_items(items_text)
+    # Try module scope first (no leading whitespace), then class scope (indented)
+    for scope_prefix in (r"^", r"^\s+"):
+        pattern = re.compile(
+            scope_prefix + re.escape(var_name) + r"\s*=\s*\[(.*?)\]",
+            re.MULTILINE | re.DOTALL,
+        )
+        m = pattern.search(content)
+        if m:
+            items_text = m.group(1).strip()
+            if not items_text:
+                return 0
+            return _count_top_level_items(items_text)
+    return 0
 
 
 def count_tests():

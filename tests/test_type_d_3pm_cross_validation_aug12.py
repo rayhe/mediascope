@@ -106,9 +106,11 @@ class TestStatConsistency:
         assert mig_match
         actual = int(mig_match.group(1))
         readme = read_file('README.md')
-        readme_match = re.search(r'\((\d+) migrations\)', readme)
-        assert readme_match
-        assert int(readme_match.group(1)) == actual
+        # Match the table row format: | Career-entry migrations | 971 | ...
+        readme_match = re.search(r'Career-entry migrations\s*\|\s*(\d[\d,]*)', readme)
+        assert readme_match, "Could not find Career-entry migrations in README table"
+        readme_val = int(readme_match.group(1).replace(',', ''))
+        assert readme_val == actual, f"README table ({readme_val}) != count_stats ({actual})"
 
     def test_alias_count_matches_readme(self, count_stats):
         alias_match = re.search(r'Entity aliases\s+(\d+)', count_stats)
@@ -293,9 +295,13 @@ class TestMechanismIDIntegrity:
         assert not missing, f"Missing mechanism IDs in range 60-68: {missing}"
 
     def test_mechanisms_are_sequential_from_max(self, all_mechanism_ids):
-        """The highest mechanism ID shouldn't be more than 68 right now."""
+        """The highest mechanism ID should be at least 68 and contiguous from 1."""
         max_id = max(id for id in all_mechanism_ids if id <= 100)
-        assert max_id == 68, f"Expected max mechanism ID to be 68, got {max_id}"
+        assert max_id >= 68, f"Expected max mechanism ID >= 68, got {max_id}"
+        # Verify no gaps in 60..max_id range
+        expected = set(range(60, max_id + 1))
+        missing = expected - all_mechanism_ids
+        assert not missing, f"Missing mechanism IDs in range 60-{max_id}: {missing}"
 
     def test_today_test_files_exist(self):
         test_dir = os.path.join(REPO_ROOT, 'tests')

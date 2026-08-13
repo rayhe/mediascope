@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 11,113 | Across 341 test files |
+| Tests | 11,144 | Across 342 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **11113 tests** across 341 test files, each covering a different analytical capability:
+MediaScope has **11144 tests** across 342 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -734,6 +734,7 @@ MediaScope has **11113 tests** across 341 test files, each covering a different 
 | `test_cma_nosue_regulatory_neutralization_aug12.py` | 36 | Mechanism #73: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections. UK CMA "world-first" ruling (Jun 4, 2026) requires Google to let publishers opt out of AI Overviews without losing search visibility. But Google's simultaneous News AI pilot deals (200+ publications, Press Gazette Aug 2026) include no-sue clauses and NDAs. Three-layer contradiction: (1) CMA opt-out rights vs Google payment incentives, (2) CMA transparency vs Google NDAs, (3) CMA bargaining power vs Google no-sue clauses. Guardian and FT confirmed as deal signers at "single figure millions/yr" each (Press Gazette Aug 3 2026), both are coalition members that TRIGGERED the CMA ruling. Meta has ZERO coercive mechanisms yet receives more adversarial coverage from deal-bound publications. 5 confounders (2 STRONG), 5 testable predictions, 4 cross-references (#44, #49, #53, #65). 8 classes, 36 tests |
 | `test_type_d_3pm_cross_validation_aug12.py` | 34 | Type D cross-validation (Aug 12, 3 PM PT): README/ARCHITECTURE stat consistency, cross-reference integrity for mechanisms #65–#68, journalist profile completeness, financial claim source coverage, no gaps in mechanism IDs. 34 tests |
 | `test_type_d_9pm_cross_validation_aug12.py` | 13 | Type D cross-validation (Aug 12, 9 PM PT): count_stats.py parametrize regression — root cause: regex missed 43 variable-reference + 6 single-quote parametrize blocks (290-test delta). Fixed count_stats.py, added count_tests_pytest() authoritative verifier, corrected README/ARCHITECTURE stat drift (tests 10,923→10,999, migrations 968→971, journalists 253→255). 13 tests |
+| `test_type_d_01am_cross_validation_aug13.py` | 31 | Type D cross-validation (Aug 13, 1 AM PT): data integrity sweep — fixed 9 mechanisms (#60-68, #71) missing test_file refs, 2 mechanisms (#66-67) missing date_added, stale hardcoded assertions in prior cross-validation tests, count_stats.py class-level parametrize variable resolution (closed 279→80 test-count gap). Validates mechanism contiguity #17-76, README/ARCHITECTURE stat agreement, prior fix stability. 31 tests |
 | `test_dell_cameron_mehrotra_cross_entity.py` | 50 | Dell Cameron / Aisha Mehrotra cross-entity coverage analysis — camera count paradox and cross-publication framing patterns. 50 tests |
 | `test_wapo_bezos_anthropic_ownership_coverage_alignment_aug12.py` | 29 | Mechanism #65: WaPo Bezos-Anthropic Ownership Coverage Alignment — Jeff Bezos $4B Anthropic investment + Washington Post ownership creates coverage alignment channel. Aspirational AI framing for Anthropic, adversarial framing for Meta. 29 tests |
 | `test_wired_copyright_piracy_framing_parity_aug11.py` | 21 | Mechanism #51: WIRED Copyright Piracy Framing Parity — Anthropic vs Meta. Both Anthropic and Meta pirated books from LibGen to train AI models; Judge Alsup ruled identically (training = fair use, piracy acquisition ≠ fair use). WIRED applies systematically different framing: Meta gets piracy/theft angle (morally loaded, CEO accountability, "torrenting from a corporate laptop"), Anthropic gets financial damages angle (market-focused, settlement terms, "meaningful relief"). Financial correlation: Condé Nast has $0 Meta deal, $5-10M/yr OpenAI deal, multi-year Amazon deal (Amazon is Anthropic's largest investor at $53.4B). Financial exclusion predicts morally-loaded framing. 6 legitimate confounding factors. 8 classes, 26 tests |

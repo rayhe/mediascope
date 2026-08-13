@@ -123,60 +123,56 @@ aggregate_findings:
     publication: Gizmodo (Keleops AG)
     key_finding: Surveillance Vocabulary Suppression at Clean Control
     mechanism: cultural_narrative_coding
-    finding_summary: >
-      Gizmodo, the dataset's clean control publication (zero financial ties), suppresses
-      surveillance vocabulary when covering Snap's camera-equipped Specs ($2,195, 4 cameras,
-      AI, photo/video capture, Jun 2026) while deploying it freely for Meta's camera-equipped
-      glasses (1 camera, AI, photo/video capture). Snap's cameras: "enable spatial experiences."
-      Meta's cameras: "surveillance state," "You're Being Watched." Zero financial incentive
-      at Gizmodo to treat either company differently. This proves the Meta-as-surveillance
-      narrative coding operates at the CULTURAL level of tech journalism, independent of
-      financial relationships. Financial incentives at WIRED/FT/NYT AMPLIFY the pre-existing
-      cultural coding (~30% of total asymmetry) on top of the cultural baseline (~70%).
+    finding_summary: 'Gizmodo, the dataset''s clean control publication (zero financial ties), suppresses surveillance vocabulary
+      when covering Snap''s camera-equipped Specs ($2,195, 4 cameras, AI, photo/video capture, Jun 2026) while deploying it
+      freely for Meta''s camera-equipped glasses (1 camera, AI, photo/video capture). Snap''s cameras: "enable spatial experiences."
+      Meta''s cameras: "surveillance state," "You''re Being Watched." Zero financial incentive at Gizmodo to treat either
+      company differently. This proves the Meta-as-surveillance narrative coding operates at the CULTURAL level of tech journalism,
+      independent of financial relationships. Financial incentives at WIRED/FT/NYT AMPLIFY the pre-existing cultural coding
+      (~30% of total asymmetry) on top of the cultural baseline (~70%).
+
+      '
     tone_delta: 0.65
     tone_scores:
-      snap_specs: -0.10
+      snap_specs: -0.1
       meta_glasses: -0.75
     test_count: 47
     test_file: tests/test_gizmodo_snap_specs_camera_privacy_vocabulary_aug12.py
     source_urls:
-      - https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470
-      - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
+    - https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470
+    - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
     confounding_factors:
-      - Meta article covers a specific scandal (Kenya contractors); Snap article is a product preview
-      - Meta has 7M+ units vs Snap with zero consumer shipments — scale creates more incidents
-      - Different authors (Wong vs Pero) may have different privacy sensitivities
-      - Meta has legacy privacy controversies (Cambridge Analytica) creating editorial reflexes
-      - Genre difference (investigative vs product preview) affects expected adversarial tone
+    - Meta article covers a specific scandal (Kenya contractors); Snap article is a product preview
+    - Meta has 7M+ units vs Snap with zero consumer shipments — scale creates more incidents
+    - Different authors (Wong vs Pero) may have different privacy sensitivities
+    - Meta has legacy privacy controversies (Cambridge Analytica) creating editorial reflexes
+    - Genre difference (investigative vs product preview) affects expected adversarial tone
     cross_references:
-      - mechanism_id: 75
-        relationship: "Mechanism #75 (Song Privacy Vocabulary Bifurcation) shows same pattern at The Verge"
+    - mechanism_id: 75
+      relationship: 'Mechanism #75 (Song Privacy Vocabulary Bifurcation) shows same pattern at The Verge'
   victoria_song_privacy_vocabulary_bifurcation:
     mechanism_id: 75
     journalist: Victoria Song
     publication: The Verge (PMC/Penske Media)
     key_finding: Privacy Vocabulary Bifurcation — Same Journalist, Dual Editorial Modes
     mechanism: dual_mode_editorial_bifurcation
-    finding_summary: >
-      Victoria Song applies BIFURCATED editorial standards to camera-equipped wearables.
-      Her PRODUCT reviews are genuinely balanced across Meta, Apple, and Google — "best
-      glasses I've ever tried" for Meta, "Tony Stark" for Google, balanced Apple Vision
-      Pro coverage. But she writes dedicated privacy/surveillance/doxing pieces EXCLUSIVELY
-      about Meta: "College students used Meta's smart glasses to dox people in real time"
-      (Oct 2024), LED tamper-proof update coverage (Jul 2026), "do smart glasses belong in
-      the bedroom?" Vergecast segment, kill switch podcast privacy concerns. ZERO equivalent
-      privacy pieces about Apple Vision Pro (12 cameras, 5 sensors, 6 mics) or Google
-      Android XR (cameras + AI). This is MORE SUBTLE than WIRED's lane assignment: the SAME
-      journalist appears balanced while selectively activating privacy-adversarial mode for
-      one entity. A reader interpreting Song as "fair because she praises Meta products" also
-      absorbs her Meta-specific privacy alarm without noticing the absence of equivalent alarm
-      for Apple/Google wearables.
+    finding_summary: 'Victoria Song applies BIFURCATED editorial standards to camera-equipped wearables. Her PRODUCT reviews
+      are genuinely balanced across Meta, Apple, and Google — "best glasses I''ve ever tried" for Meta, "Tony Stark" for Google,
+      balanced Apple Vision Pro coverage. But she writes dedicated privacy/surveillance/doxing pieces EXCLUSIVELY about Meta:
+      "College students used Meta''s smart glasses to dox people in real time" (Oct 2024), LED tamper-proof update coverage
+      (Jul 2026), "do smart glasses belong in the bedroom?" Vergecast segment, kill switch podcast privacy concerns. ZERO
+      equivalent privacy pieces about Apple Vision Pro (12 cameras, 5 sensors, 6 mics) or Google Android XR (cameras + AI).
+      This is MORE SUBTLE than WIRED''s lane assignment: the SAME journalist appears balanced while selectively activating
+      privacy-adversarial mode for one entity. A reader interpreting Song as "fair because she praises Meta products" also
+      absorbs her Meta-specific privacy alarm without noticing the absence of equivalent alarm for Apple/Google wearables.
+
+      '
     tone_delta: 0.5
     tone_scores:
-      meta_product_reviews: +0.3
+      meta_product_reviews: 0.3
       meta_privacy_pieces: -0.3
-      apple_all_coverage: +0.2
-      google_all_coverage: +0.4
+      apple_all_coverage: 0.2
+      google_all_coverage: 0.4
     privacy_piece_counts:
       meta: 3
       apple: 0
@@ -188,34 +184,34 @@ aggregate_findings:
     test_count: 46
     test_file: tests/test_victoria_song_privacy_vocabulary_bifurcation_aug12.py
     source_urls:
-      - https://vuink.com/post/guriretr-d-dpbz/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy
-      - https://www.techmeme.com/260707/p41
-      - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
-      - https://www.youtube.com/watch?v=pgu0a9QK75E
-      - https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr
+    - https://vuink.com/post/guriretr-d-dpbz/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy
+    - https://www.techmeme.com/260707/p41
+    - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+    - https://www.youtube.com/watch?v=pgu0a9QK75E
+    - https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr
     confounding_factors:
-      - Meta has 7M+ glasses sold vs near-zero for Apple/Google consumer glasses — scale drives incidents
-      - Meta glasses look like normal glasses (covert recording); Vision Pro is obvious face computer
-      - I-XRAY demo used Meta glasses specifically — Song reported the demo as presented
-      - Meta Instagram livestream enables the doxing workflow; Apple/Google lack equivalent streaming
-      - Beat assignment by The Verge editors may direct privacy pieces to Song for Meta (institutional)
-      - Meta glasses launched years before Apple/Google consumer glasses — more time for privacy incidents
+    - Meta has 7M+ glasses sold vs near-zero for Apple/Google consumer glasses — scale drives incidents
+    - Meta glasses look like normal glasses (covert recording); Vision Pro is obvious face computer
+    - I-XRAY demo used Meta glasses specifically — Song reported the demo as presented
+    - Meta Instagram livestream enables the doxing workflow; Apple/Google lack equivalent streaming
+    - Beat assignment by The Verge editors may direct privacy pieces to Song for Meta (institutional)
+    - Meta glasses launched years before Apple/Google consumer glasses — more time for privacy incidents
     cross_references:
-      - mechanism_id: 6
-        relationship: "Barr Privacy Gradient — entity-specific surveillance vocabulary suppression"
-      - mechanism_id: 31
-        relationship: "Pero Editorial Direction Override — balanced product reviews co-exist with adversarial editorial"
-      - mechanism_id: 74
-        relationship: "Gizmodo Snap Specs Camera Privacy — same privacy vocabulary suppression at the cultural level"
-      - mechanism_id: 72
-        relationship: "Tiku Company-Agnostic Adversarial — CONTRAST: Tiku applies adversarial framing across ALL entities"
-      - mechanism_id: 63
-        relationship: "Zeff Source Access Asymmetry — institutional financial incentives amplify individual framing"
+    - mechanism_id: 6
+      relationship: Barr Privacy Gradient — entity-specific surveillance vocabulary suppression
+    - mechanism_id: 31
+      relationship: Pero Editorial Direction Override — balanced product reviews co-exist with adversarial editorial
+    - mechanism_id: 74
+      relationship: Gizmodo Snap Specs Camera Privacy — same privacy vocabulary suppression at the cultural level
+    - mechanism_id: 72
+      relationship: 'Tiku Company-Agnostic Adversarial — CONTRAST: Tiku applies adversarial framing across ALL entities'
+    - mechanism_id: 63
+      relationship: Zeff Source Access Asymmetry — institutional financial incentives amplify individual framing
     testable_predictions:
-      - "When Apple launches consumer smart glasses, test whether Song writes dedicated privacy pieces about them"
-      - "When Google launches consumer Android XR glasses, test for equivalent doxing/bedroom/surveillance framing"
-      - "Track whether Snap Specs consumer launch triggers Song privacy coverage"
-      - "If The Verge assigns Apple glasses privacy coverage to a DIFFERENT journalist, it confirms beat_assignment confound"
+    - When Apple launches consumer smart glasses, test whether Song writes dedicated privacy pieces about them
+    - When Google launches consumer Android XR glasses, test for equivalent doxing/bedroom/surveillance framing
+    - Track whether Snap Specs consumer launch triggers Song privacy coverage
+    - If The Verge assigns Apple glasses privacy coverage to a DIFFERENT journalist, it confirms beat_assignment confound
   gizmodo_james_pero_editorial_direction_override:
     confounding_factors:
     - Meta 69% market share makes it natural focus of scrutiny
@@ -1383,42 +1379,69 @@ cross_entity_leverage:
 cross_publication_findings:
   samsung_google_compound_advertiser_leverage:
     mechanism_id: 76
-    name: 'Samsung-Google Compound Advertiser Leverage on Wearables Coverage'
+    name: Samsung-Google Compound Advertiser Leverage on Wearables Coverage
     date_added: '2026-08-13'
     discovery_date: '2026-08-13'
-    finding: |
-      Samsung (4th-largest global advertiser, ~$9.7B/yr measured media, 250+ media
-      properties) ships Intelligent Eyewear running Google's Android XR + Gemini.
+    finding: 'Samsung (4th-largest global advertiser, ~$9.7B/yr measured media, 250+ media
+
+      properties) ships Intelligent Eyewear running Google''s Android XR + Gemini.
+
       This creates COMPOUND financial leverage: favorable Samsung glasses coverage
+
       simultaneously pleases two entities with massive publisher financial
+
       relationships. Samsung provides direct advertising revenue; Google provides
+
       ad revenue dependency, News Showcase payments, and content licensing deals.
+
       Neither entity competes with publisher ad revenue (unlike Meta at $243.46B).
 
-      Meta's glasses have ZERO or NEGATIVE compound leverage: Meta has no/minimal
-      content deals with adversarial publications, IS publishers' direct ad
-      competitor, and has no platform partner that adds financial weight.
-      Snap's glasses have ZERO compound leverage: no ad leverage, no platform partner.
 
-      This is the first mechanism quantifying how two entities' financial
+      Meta''s glasses have ZERO or NEGATIVE compound leverage: Meta has no/minimal
+
+      content deals with adversarial publications, IS publishers'' direct ad
+
+      competitor, and has no platform partner that adds financial weight.
+
+      Snap''s glasses have ZERO compound leverage: no ad leverage, no platform partner.
+
+
+      This is the first mechanism quantifying how two entities'' financial
+
       relationships COMPOUND to create stronger coverage incentives than either alone.
-    leverage_type: 'advertising (implicit dependency) + platform partnership (compound)'
-    mechanism_explanation: |
-      Advertising leverage is IMPLICIT and structural — Samsung doesn't attach
+
+      '
+    leverage_type: advertising (implicit dependency) + platform partnership (compound)
+    mechanism_explanation: 'Advertising leverage is IMPLICIT and structural — Samsung doesn''t attach
+
       editorial conditions to ad buys, but publications with significant Samsung
+
       ad revenue have a dependency relationship that creates self-censorship
+
       incentives. The Google platform coupling MULTIPLIES this: covering Samsung
-      glasses favorably simultaneously validates Google's Android XR/Gemini
-      platform, which serves Google's financial interests with the same publication.
+
+      glasses favorably simultaneously validates Google''s Android XR/Gemini
+
+      platform, which serves Google''s financial interests with the same publication.
+
       The compound effect exceeds what either Samsung or Google advertising alone
+
       would predict.
-    financial_scale: |
-      Samsung's $9.7B global ad spend DWARFS all publisher content licensing deals
+
+      '
+    financial_scale: 'Samsung''s $9.7B global ad spend DWARFS all publisher content licensing deals
+
       combined (~$300-400M/yr from ALL AI companies combined). A single Samsung
-      Galaxy Unpacked campaign's media buy exceeds most publishers' annual AI
+
+      Galaxy Unpacked campaign''s media buy exceeds most publishers'' annual AI
+
       licensing revenue. This makes advertising leverage quantitatively larger
+
       than content deal leverage, but less visible because it operates through
+
       structural dependency rather than explicit contractual terms.
+
+      '
     entity_comparisons:
       samsung_google:
         leverage_type: positive_compound
@@ -1426,36 +1449,33 @@ cross_publication_findings:
         platform_partner: Google (Android XR + Gemini)
         content_deals: 0
         publisher_ad_competitor: false
-        compound_leverage: 'HIGH — Samsung ad revenue + Google ad dependency +
-          Google content deals + Google News Showcase. Two entities, one product.'
+        compound_leverage: HIGH — Samsung ad revenue + Google ad dependency + Google content deals + Google News Showcase.
+          Two entities, one product.
       meta:
         leverage_type: negative
         ad_spend_b: 0
         platform_partner: none
         content_deals: 13
         publisher_ad_competitor: true
-        compound_leverage: 'NEGATIVE — Meta IS publishers'' direct ad competitor
-          ($243.46B projected 2026). No platform partner adds weight. Content
-          deals are with non-adversarial publications only. Covering Meta
-          favorably financially benefits a direct competitor.'
+        compound_leverage: NEGATIVE — Meta IS publishers' direct ad competitor ($243.46B projected 2026). No platform partner
+          adds weight. Content deals are with non-adversarial publications only. Covering Meta favorably financially benefits
+          a direct competitor.
       snap:
         leverage_type: zero
-        ad_spend_b: '<1'
+        ad_spend_b: <1
         platform_partner: none
         content_deals: 0
         publisher_ad_competitor: false
-        compound_leverage: 'ZERO — Snap has minimal advertising at publisher
-          scale, no content deals, no platform partner. Coverage is driven
-          by cultural narrative coding (Mechanism #74), not financial incentives.'
+        compound_leverage: 'ZERO — Snap has minimal advertising at publisher scale, no content deals, no platform partner.
+          Coverage is driven by cultural narrative coding (Mechanism #74), not financial incentives.'
       openai:
         leverage_type: positive_deal
-        ad_spend_b: '<0.1'
+        ad_spend_b: <0.1
         platform_partner: none
-        content_deals: '20+'
+        content_deals: 20+
         publisher_ad_competitor: false
-        compound_leverage: 'MODERATE — Content licensing deals create direct
-          financial dependency. Growing ad business ($2.5B projected 2026)
-          is NOT yet competing with publisher ad revenue. No compound partner.'
+        compound_leverage: MODERATE — Content licensing deals create direct financial dependency. Growing ad business ($2.5B
+          projected 2026) is NOT yet competing with publisher ad revenue. No compound partner.
     confounding_factors:
     - Samsung glasses haven't shipped yet — pre-launch coverage is inherently more favorable than post-launch
     - Meta has Cambridge Analytica / Facebook Papers legacy controversies that Samsung lacks
@@ -1465,17 +1485,20 @@ cross_publication_findings:
     - Google has its own Glass failure history but is repositioning via Samsung partnership
     - Samsung's advertising relationship is standard media buying, not quid pro quo
     testable_predictions:
-    - When Samsung Intelligent Eyewear ships (Fall 2026), privacy incidents WILL occur but will NOT receive surveillance-vocabulary framing
+    - When Samsung Intelligent Eyewear ships (Fall 2026), privacy incidents WILL occur but will NOT receive surveillance-vocabulary
+      framing
     - Publications that receive the most Samsung ad revenue will produce the most favorable Samsung glasses coverage
-    - The absence of Samsung privacy coverage will correlate with Google financial relationship strength (Showcase payments, ad dependency)
-    - If Samsung ever becomes a direct ad-revenue competitor (Samsung Ads expanding beyond CTV to publisher display), coverage will shift adversarial
+    - The absence of Samsung privacy coverage will correlate with Google financial relationship strength (Showcase payments,
+      ad dependency)
+    - If Samsung ever becomes a direct ad-revenue competitor (Samsung Ads expanding beyond CTV to publisher display), coverage
+      will shift adversarial
     extends_mechanisms:
     - 'Mechanism #6 (Barr Privacy Gradient)'
     - 'Mechanism #30 (Chokkattu Temporal Framing Oscillation)'
     - 'Mechanism #47 (Meta Ad Revenue Competitor Structural Antagonism)'
     - 'Mechanism #55 (Privacy Innovation Attribution Inversion)'
     - 'Mechanism #74 (Gizmodo Snap Specs Camera Privacy)'
-    - 'Samsung Equivalence Paradox (Aug 7)'
+    - Samsung Equivalence Paradox (Aug 7)
     source_urls:
     - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
     - https://advertisers.mediaradar.com/samsung-group-advertising-profile
@@ -5312,6 +5335,7 @@ cross_publication_findings:
     - 'Mechanism #49 (Bobrowsky entity targeting): parallel — beat assignment as mechanism for entity selection asymmetry'
     - 'Mechanism #17 (Guardian SID governance capture): parallel — governance + financial ties correlate with softer coverage'
     - 'MIT TR profile: Google/MIT bilateral financial relationships, MIT-Google Program, Schmidt philanthropy documented'
+    test_file: tests/test_karen_hao_cross_entity.py
   apple_news_glasses_prelaunch_alignment:
     mechanism_id: 61
     title: Apple News+ Smart Glasses Pre-Launch Coverage Alignment Channel
@@ -5406,6 +5430,7 @@ cross_publication_findings:
     - mechanism_id: 55
       name: Privacy innovation attribution inversion
       connection: Meta's proactive measures framed reactively; Apple's delay framed aspirationally
+    test_file: tests/test_apple_news_plus_glasses_prelaunch_alignment_aug12.py
   wired_anthropic_agent_framing_asymmetry:
     mechanism_id: 62
     title: WIRED Anthropic Agent Framing Asymmetry — Condé Nast OpenAI Deal Competitor Halo Effect
@@ -5514,6 +5539,7 @@ cross_publication_findings:
       name: Seetharaman frame-lock
       connection: Tests whether framing follows institution (as in Seetharaman) or shifts with financial context (as Zeff's
         coverage may show)
+    test_file: tests/test_wired_anthropic_agent_framing_asymmetry_aug12.py
   maxwell_zeff_source_access_framing_shift:
     mechanism_id: 63
     title: Maxwell Zeff Cross-Entity Coverage — Source Access Asymmetry Amplifies Institutional Financial Incentives
@@ -5609,6 +5635,7 @@ cross_publication_findings:
     - mechanism_id: 57
       connection: Seetharaman frame-lock contrast — Seetharaman adversarial framing persists across institutions; Zeff framing
         shifts with institutions, supporting institutional-alignment hypothesis
+    test_file: tests/test_maxwell_zeff_cross_entity.py
   cloudflare_publisher_crawl_block_google_openai_asymmetry:
     mechanism_id: 64
     title: Cloudflare Publisher AI Crawl Default-Block — Google-OpenAI Financial Asymmetry Accelerator
@@ -5728,6 +5755,7 @@ cross_publication_findings:
     - mechanism_id: 41
       connection: 'Mechanism #41 documented Google Showcase''s coercive cycle; Cloudflare blocking undermines the coercive
         leverage by giving publishers infrastructure-level opt-out'
+    test_file: tests/test_cloudflare_publisher_crawl_block_google_openai_asymmetry_aug12.py
   wapo_bezos_anthropic_ownership_coverage_alignment:
     mechanism_id: 65
     mechanism_name: WaPo Bezos Ownership Chain — Amazon → Anthropic Pre-IPO Coverage Alignment
@@ -5827,6 +5855,7 @@ cross_publication_findings:
     - mechanism_id: 15
       connection: 'Mechanism #15 documented MIT TR Pre-IPO Product Validation in the same pre-IPO window. MIT''s chain goes
         through endowment holdings, not direct proprietor ownership — WaPo''s is the most direct chain in the dataset'
+    test_file: tests/test_wapo_bezos_anthropic_ownership_coverage_alignment_aug12.py
   cameron_mehrotra_investigative_resource_allocation:
     mechanism: investigative_resource_allocation_entity_targeting
     mechanism_id: 66
@@ -6066,6 +6095,8 @@ cross_publication_findings:
       name: Gurman Access Dependency Competitive Narration
       connection: Bloomberg's Gurman favors Apple via access; WIRED's Cameron/Mehrotra targets Meta via assignment
     discovery_date: '2026-08-12'
+    test_file: tests/test_dell_cameron_mehrotra_cross_entity.py
+    date_added: '2026-08-12'
   wsj_beat_assignment_asymmetry:
     mechanism: beat_assignment_coverage_asymmetry
     mechanism_id: 67
@@ -6222,49 +6253,46 @@ cross_publication_findings:
     - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
     - https://www.youtube.com/shorts/fzjPtlLzgj8
     - https://www.marketplace.org/episode/2026/02/04/what-ai-fitness-apps-can-and-cant-do-for-now
+    test_file: tests/test_nicole_nguyen_wsj_beat_assignment_asymmetry_aug12.py
+    date_added: '2026-08-12'
   xai_x_dual_entity_publisher_financial_destruction:
     mechanism_id: 68
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
-    finding_summary: >
-      xAI and X (both controlled by Elon Musk) constitute the ONLY competitor entity
-      in the MediaScope dataset with an ACTIVELY NEGATIVE financial relationship with
-      publishers — not merely neutral (zero deals) but destructive (active demolition
-      of existing publisher revenue streams). This establishes a THREE-TIER financial
-      relationship spectrum: POSITIVE (OpenAI 20+ deals, Google ad revenue + Showcase,
-      Amazon cloud + licensing, Microsoft via OpenAI axis, Apple News+) → NEUTRAL
-      (Meta 13 voluntary deals, Anthropic zero deals) → NEGATIVE (xAI-X: active
-      traffic destruction + zero deals + hostile press relations + advertising
-      ecosystem antagonism). X referral traffic to news publishers fell 65-75% since
-      Musk's Oct 2022 acquisition (Press Gazette/Chartbeat). Link throttling confirmed
-      for NYT, Reuters, WaPo. Headlines removed from previews Oct 2023. xAI's
-      automated press response: "Legacy Media Lies." X ad revenue collapsed from $4.5B
-      to ~$2.9B. GARM antitrust lawsuit (Aug 2024). xAI valued at $230B+ with $20B+
-      Series E but maintains zero publisher content deals. VOLUME PARADOX: Despite
-      xAI-X having the most negative financial relationship, Meta receives MORE
-      adversarial coverage volume — explained by Meta's larger ad market competition
-      ($243B vs $2.9B), Meta products competing with financial partners' products,
-      and adversarial Meta coverage directly benefiting partners who PAY publishers.
+    finding_summary: 'xAI and X (both controlled by Elon Musk) constitute the ONLY competitor entity in the MediaScope dataset
+      with an ACTIVELY NEGATIVE financial relationship with publishers — not merely neutral (zero deals) but destructive (active
+      demolition of existing publisher revenue streams). This establishes a THREE-TIER financial relationship spectrum: POSITIVE
+      (OpenAI 20+ deals, Google ad revenue + Showcase, Amazon cloud + licensing, Microsoft via OpenAI axis, Apple News+) →
+      NEUTRAL (Meta 13 voluntary deals, Anthropic zero deals) → NEGATIVE (xAI-X: active traffic destruction + zero deals +
+      hostile press relations + advertising ecosystem antagonism). X referral traffic to news publishers fell 65-75% since
+      Musk''s Oct 2022 acquisition (Press Gazette/Chartbeat). Link throttling confirmed for NYT, Reuters, WaPo. Headlines
+      removed from previews Oct 2023. xAI''s automated press response: "Legacy Media Lies." X ad revenue collapsed from $4.5B
+      to ~$2.9B. GARM antitrust lawsuit (Aug 2024). xAI valued at $230B+ with $20B+ Series E but maintains zero publisher
+      content deals. VOLUME PARADOX: Despite xAI-X having the most negative financial relationship, Meta receives MORE adversarial
+      coverage volume — explained by Meta''s larger ad market competition ($243B vs $2.9B), Meta products competing with financial
+      partners'' products, and adversarial Meta coverage directly benefiting partners who PAY publishers.
+
+      '
     x_platform_traffic_destruction:
       referral_decline_pct: 65
-      referral_decline_range: '65-75%'
+      referral_decline_range: 65-75%
       measurement_period: Oct 2022 to Jul 2025
       data_source: Press Gazette / Chartbeat
       pre_acquisition_social_ranking: 2
-      pre_acquisition_ranking_note: 'Twitter was publishers 2nd largest social traffic referrer after Facebook'
-      headline_removal_date: '2023-10'
-      headline_removal_note: 'X removed auto-generated headlines from link previews, replaced with image+domain only'
+      pre_acquisition_ranking_note: Twitter was publishers 2nd largest social traffic referrer after Facebook
+      headline_removal_date: 2023-10
+      headline_removal_note: X removed auto-generated headlines from link previews, replaced with image+domain only
       confirmed_throttled_publications:
-        - New York Times
-        - Reuters
-        - Washington Post
-        - Bluesky
-        - Facebook
-        - Instagram
-      throttling_confirmation_date: '2023-08'
-      throttling_confirmation_source: 'Washington Post tests, confirmed by NYT and Reuters'
+      - New York Times
+      - Reuters
+      - Washington Post
+      - Bluesky
+      - Facebook
+      - Instagram
+      throttling_confirmation_date: 2023-08
+      throttling_confirmation_source: Washington Post tests, confirmed by NYT and Reuters
       algorithm_outlink_penalty: true
-      algorithm_note: 'Musk stated algorithm aims to optimize time on X, making outlinks less prominent'
+      algorithm_note: Musk stated algorithm aims to optimize time on X, making outlinks less prominent
     x_ad_revenue_collapse:
       pre_acquisition_annual_b: 4.5
       year_2023_b: 2.2
@@ -6273,8 +6301,9 @@ cross_publication_findings:
       projected_2025_annual_b: 2.9
       decline_pct_from_peak: 36
       decline_55pct_every_month_first_year: true
-      garm_lawsuit_date: '2024-08'
-      garm_lawsuit_note: 'X sued Global Alliance for Responsible Media and advertisers Unilever, Mars, Orsted for conspiring to withhold billions in ad revenue'
+      garm_lawsuit_date: 2024-08
+      garm_lawsuit_note: X sued Global Alliance for Responsible Media and advertisers Unilever, Mars, Orsted for conspiring
+        to withhold billions in ad revenue
       warc_estimated_hypothetical_loss_b: 5.9
       source: MediaRadar, WARC, Bloomberg, Social Media Today
     publisher_deal_comparison:
@@ -6283,199 +6312,259 @@ cross_publication_findings:
       anthropic_deals: 0
       anthropic_settlement_b: 1.5
       openai_deals_count: 20
-      openai_estimated_annual_m: '300-400'
+      openai_estimated_annual_m: 300-400
       meta_deals_count: 13
-      meta_deals_note: 'Voluntary, no adversarial publications among partners'
-      google_mechanism: 'Ad revenue + Google News Showcase + AI news pilot (200+ pubs)'
-      amazon_mechanism: 'Cloud infrastructure + Anthropic $13B+ investment + Alexa Fund'
+      meta_deals_note: Voluntary, no adversarial publications among partners
+      google_mechanism: Ad revenue + Google News Showcase + AI news pilot (200+ pubs)
+      amazon_mechanism: Cloud infrastructure + Anthropic $13B+ investment + Alexa Fund
     grok_training_data:
-      primary_source: 'X posts (user-generated content on Musk-owned platform)'
-      secondary_source: 'Grokipedia (AI-generated encyclopedia, partly from Wikipedia CC BY-SA)'
-      tertiary_source: 'Telegram integration ($300M deal, May 2025, 1B+ MAU)'
+      primary_source: X posts (user-generated content on Musk-owned platform)
+      secondary_source: Grokipedia (AI-generated encyclopedia, partly from Wikipedia CC BY-SA)
+      tertiary_source: Telegram integration ($300M deal, May 2025, 1B+ MAU)
       publisher_content_via_intermediary: true
-      intermediary_note: 'Users share/quote publisher articles on X, creating training data that includes publisher content without direct licensing'
+      intermediary_note: Users share/quote publisher articles on X, creating training data that includes publisher content
+        without direct licensing
     hostile_press_relations:
-      automated_response: 'Legacy Media Lies'
+      automated_response: Legacy Media Lies
       confirmed_recipients:
-        - Reuters
-        - Wall Street Journal
+      - Reuters
+      - Wall Street Journal
       personal_journalist_attacks: true
       journalist_suspensions: true
-      journalist_suspensions_note: 'Musk suspended multiple journalist accounts from X in Dec 2022'
-      uniqueness: 'No other CEO of a $200B+ AI company maintains an openly hostile relationship with the publisher ecosystem or uses automated dismissive responses to press inquiries'
+      journalist_suspensions_note: Musk suspended multiple journalist accounts from X in Dec 2022
+      uniqueness: No other CEO of a $200B+ AI company maintains an openly hostile relationship with the publisher ecosystem
+        or uses automated dismissive responses to press inquiries
     financial_relationship_spectrum:
       positive:
-        description: 'Active financial flows to publishers predict softer coverage'
+        description: Active financial flows to publishers predict softer coverage
         entities:
-          - 'OpenAI (20+ content deals, $300-400M/yr, salary funding, philanthropy)'
-          - 'Google (ad revenue $239B, News Showcase, AI news pilot 200+ pubs)'
-          - 'Amazon (cloud infra for publishers, Anthropic $13B+, Alexa Fund, WaPo ownership via Bezos)'
-          - 'Microsoft (via OpenAI axis, LinkedIn, MSN partnerships)'
-          - 'Apple (News+ revenue sharing, 125M MAU, 400+ titles)'
-        predicted_coverage_tone: 'Softer treatment correlating with financial dependency'
+        - OpenAI (20+ content deals, $300-400M/yr, salary funding, philanthropy)
+        - Google (ad revenue $239B, News Showcase, AI news pilot 200+ pubs)
+        - Amazon (cloud infra for publishers, Anthropic $13B+, Alexa Fund, WaPo ownership via Bezos)
+        - Microsoft (via OpenAI axis, LinkedIn, MSN partnerships)
+        - Apple (News+ revenue sharing, 125M MAU, 400+ titles)
+        predicted_coverage_tone: Softer treatment correlating with financial dependency
       neutral:
-        description: 'Minimal or no financial flows, no active hostility'
+        description: Minimal or no financial flows, no active hostility
         entities:
-          - 'Meta (13 voluntary content deals, $0 to adversarial publications, no traffic destruction)'
-          - 'Anthropic (zero deals, $1.5B piracy settlement, no publisher hostility)'
-        predicted_coverage_tone: 'Adversarial but not maximally so — cost-free criticism without active resentment'
+        - Meta (13 voluntary content deals, $0 to adversarial publications, no traffic destruction)
+        - Anthropic (zero deals, $1.5B piracy settlement, no publisher hostility)
+        predicted_coverage_tone: Adversarial but not maximally so — cost-free criticism without active resentment
       negative:
-        description: 'Active destruction of publisher revenue streams + zero payment + personal hostility'
+        description: Active destruction of publisher revenue streams + zero payment + personal hostility
         entities:
-          - 'xAI-X (traffic destruction, zero deals, Legacy Media Lies, GARM lawsuit, journalist suspensions)'
-        predicted_coverage_tone: 'Most adversarial — combines financial absence with active revenue destruction and personal animosity'
+        - xAI-X (traffic destruction, zero deals, Legacy Media Lies, GARM lawsuit, journalist suspensions)
+        predicted_coverage_tone: Most adversarial — combines financial absence with active revenue destruction and personal
+          animosity
     volume_paradox:
-      description: 'Despite xAI-X having the MOST negative financial relationship with publishers, Meta receives MORE adversarial coverage volume than xAI. This requires explanation beyond the simple financial-relationship-predicts-tone model.'
+      description: Despite xAI-X having the MOST negative financial relationship with publishers, Meta receives MORE adversarial
+        coverage volume than xAI. This requires explanation beyond the simple financial-relationship-predicts-tone model.
       explanatory_factors:
-        - factor: 'Ad market competition scale'
-          detail: 'Meta is publishers DIRECT advertising competitor at $243B/yr, dwarfing X at ~$2.9B. Meta threatens publishers existential business model; xAI-X does not.'
-          strength: STRONG
-        - factor: 'Competitive benefit to financial partners'
-          detail: 'Adversarial Meta coverage benefits OpenAI (whose deals fund publisher revenue), Apple (whose News+ funds publishers), and Google (whose ad ecosystem funds publishers). These companies are Meta s direct product competitors in AI, glasses, and advertising.'
-          strength: STRONG
-        - factor: 'Product overlap with partner interests'
-          detail: 'Meta glasses compete with Apple N50, Samsung Galaxy Glasses, Snap Spectacles. Meta AI competes with ChatGPT, Claude, Gemini. Adversarial Meta coverage is competitively useful to financially-aligned partners. xAI/Grok is a smaller competitive threat.'
-          strength: MODERATE
-        - factor: 'Audience engagement economics'
-          detail: 'Meta has 3.6B DAP — articles about Meta reach larger audiences and generate more page views than articles about xAI. Publishers have economic incentive to write about Meta more frequently regardless of tone.'
-          strength: STRONG
-        - factor: 'Musk fatigue reducing coverage value'
-          detail: 'Musk controversy saturation may reduce the marginal engagement value of each additional xAI-critical article, while Meta controversies retain novelty.'
-          strength: MODERATE
+      - factor: Ad market competition scale
+        detail: Meta is publishers DIRECT advertising competitor at $243B/yr, dwarfing X at ~$2.9B. Meta threatens publishers
+          existential business model; xAI-X does not.
+        strength: STRONG
+      - factor: Competitive benefit to financial partners
+        detail: Adversarial Meta coverage benefits OpenAI (whose deals fund publisher revenue), Apple (whose News+ funds publishers),
+          and Google (whose ad ecosystem funds publishers). These companies are Meta s direct product competitors in AI, glasses,
+          and advertising.
+        strength: STRONG
+      - factor: Product overlap with partner interests
+        detail: Meta glasses compete with Apple N50, Samsung Galaxy Glasses, Snap Spectacles. Meta AI competes with ChatGPT,
+          Claude, Gemini. Adversarial Meta coverage is competitively useful to financially-aligned partners. xAI/Grok is a
+          smaller competitive threat.
+        strength: MODERATE
+      - factor: Audience engagement economics
+        detail: Meta has 3.6B DAP — articles about Meta reach larger audiences and generate more page views than articles
+          about xAI. Publishers have economic incentive to write about Meta more frequently regardless of tone.
+        strength: STRONG
+      - factor: Musk fatigue reducing coverage value
+        detail: Musk controversy saturation may reduce the marginal engagement value of each additional xAI-critical article,
+          while Meta controversies retain novelty.
+        strength: MODERATE
     xai_financial_capacity:
       latest_valuation_b: 230
       series_e_amount_b: 20
       total_funding_raised_b: 45
-      total_funding_note: '$20B Series E + prior $10B equity/debt + $5B strategic equity + $10B prior rounds'
+      total_funding_note: $20B Series E + prior $10B equity/debt + $5B strategic equity + $10B prior rounds
       investors:
-        - NVIDIA
-        - Valor Equity Partners
-        - Fidelity
-        - Qatar Investment Authority
-        - Morgan Stanley (debt)
+      - NVIDIA
+      - Valor Equity Partners
+      - Fidelity
+      - Qatar Investment Authority
+      - Morgan Stanley (debt)
       deliberate_non_licensing: true
-      deliberate_non_licensing_note: 'xAI has ample financial capacity to license publisher content (valued at $230B, raised $45B+) but explicitly chooses not to, while responding to publisher inquiries with Legacy Media Lies'
-      x_acquisition_date: '2025-03'
+      deliberate_non_licensing_note: xAI has ample financial capacity to license publisher content (valued at $230B, raised
+        $45B+) but explicitly chooses not to, while responding to publisher inquiries with Legacy Media Lies
+      x_acquisition_date: 2025-03
       x_valuation_in_merger_b: 33
       combined_valuation_at_merger_b: 113
     confounding_factors:
-      - factor: 'Musk political activity (DOGE, Trump alliance/fallout) generates legitimate negative coverage unrelated to financial incentives'
-        strength: STRONG
-        rebuttal: 'Political coverage is distinct from AI product coverage. The question is whether PRODUCT framing differs by company, not whether political coverage is adversarial.'
-      - factor: 'CSAM/deepfake lawsuits are legitimate safety failures deserving adversarial coverage'
-        strength: STRONG
-        rebuttal: 'Agreed — CSAM coverage is warranted. But the mechanism predicts adversarial framing EXTENDS beyond warranted safety coverage to product categories where xAI is not uniquely culpable.'
-      - factor: 'Grok is a less capable model than GPT-5/Claude, reducing positive coverage opportunities'
-        strength: MODERATE
-        rebuttal: 'Grok 4 scored competitively on major benchmarks. Less capability does not explain the TONE asymmetry, only potentially the volume.'
-      - factor: 'xAI/X corporate governance concerns (rapid decisions, GARM lawsuit, Musk dual-role)'
-        strength: MODERATE
-        rebuttal: 'Legitimate governance concern. But governance coverage of xAI uses MORE loaded language than governance coverage of OpenAI (which fired and rehired its CEO in 5 days).'
-      - factor: 'X platform content moderation decline is a genuine editorial and safety concern'
-        strength: STRONG
-        rebuttal: 'Moderation concerns are legitimate. But the financial incentive model predicts that publications with financial relationships to X competitors (Meta via ads, OpenAI via deals) will cover moderation failures MORE intensely.'
-      - factor: 'Musk personal wealth and political influence make him a legitimate subject of scrutiny beyond financial publisher relationships'
-        strength: STRONG
-        rebuttal: 'True. But scrutiny intensity for Musk/xAI should be COMPARABLE to scrutiny of Zuckerberg/Meta at similar wealth/influence levels if financial incentives are absent. The model predicts differential treatment.'
-      - factor: 'Legacy Media Lies response actively provokes adversarial coverage'
-        strength: MODERATE
-        rebuttal: 'Self-inflicted hostility amplifies negative coverage. This is a MECHANISM through which the negative financial relationship operates, not a confounding factor.'
+    - factor: Musk political activity (DOGE, Trump alliance/fallout) generates legitimate negative coverage unrelated to financial
+        incentives
+      strength: STRONG
+      rebuttal: Political coverage is distinct from AI product coverage. The question is whether PRODUCT framing differs by
+        company, not whether political coverage is adversarial.
+    - factor: CSAM/deepfake lawsuits are legitimate safety failures deserving adversarial coverage
+      strength: STRONG
+      rebuttal: Agreed — CSAM coverage is warranted. But the mechanism predicts adversarial framing EXTENDS beyond warranted
+        safety coverage to product categories where xAI is not uniquely culpable.
+    - factor: Grok is a less capable model than GPT-5/Claude, reducing positive coverage opportunities
+      strength: MODERATE
+      rebuttal: Grok 4 scored competitively on major benchmarks. Less capability does not explain the TONE asymmetry, only
+        potentially the volume.
+    - factor: xAI/X corporate governance concerns (rapid decisions, GARM lawsuit, Musk dual-role)
+      strength: MODERATE
+      rebuttal: Legitimate governance concern. But governance coverage of xAI uses MORE loaded language than governance coverage
+        of OpenAI (which fired and rehired its CEO in 5 days).
+    - factor: X platform content moderation decline is a genuine editorial and safety concern
+      strength: STRONG
+      rebuttal: Moderation concerns are legitimate. But the financial incentive model predicts that publications with financial
+        relationships to X competitors (Meta via ads, OpenAI via deals) will cover moderation failures MORE intensely.
+    - factor: Musk personal wealth and political influence make him a legitimate subject of scrutiny beyond financial publisher
+        relationships
+      strength: STRONG
+      rebuttal: True. But scrutiny intensity for Musk/xAI should be COMPARABLE to scrutiny of Zuckerberg/Meta at similar wealth/influence
+        levels if financial incentives are absent. The model predicts differential treatment.
+    - factor: Legacy Media Lies response actively provokes adversarial coverage
+      strength: MODERATE
+      rebuttal: Self-inflicted hostility amplifies negative coverage. This is a MECHANISM through which the negative financial
+        relationship operates, not a confounding factor.
     testable_predictions:
-      - prediction: 'If xAI signs content licensing deals with publishers, coverage tone will moderate for the specific publications that receive payment — mirroring the observed pattern for OpenAI deal partners.'
-        falsifiable: true
-      - prediction: 'Publications with the LARGEST financial relationships with OpenAI/Anthropic (e.g., Condé Nast, FT, News Corp) will produce the MOST adversarial xAI coverage, because xAI is a direct competitor to their financial partners.'
-        falsifiable: true
-      - prediction: 'If X restores link previews and stops throttling publisher traffic, coverage tone of xAI products (Grok, Aurora) will moderate even without content licensing deals — testing whether traffic destruction is an independent predictor.'
-        falsifiable: true
-      - prediction: 'xAI coverage volume will remain LOWER than Meta coverage volume despite more negative financial relationship, because Meta advertising competition is the stronger driver of coverage volume than publisher financial resentment.'
-        falsifiable: true
+    - prediction: If xAI signs content licensing deals with publishers, coverage tone will moderate for the specific publications
+        that receive payment — mirroring the observed pattern for OpenAI deal partners.
+      falsifiable: true
+    - prediction: Publications with the LARGEST financial relationships with OpenAI/Anthropic (e.g., Condé Nast, FT, News
+        Corp) will produce the MOST adversarial xAI coverage, because xAI is a direct competitor to their financial partners.
+      falsifiable: true
+    - prediction: If X restores link previews and stops throttling publisher traffic, coverage tone of xAI products (Grok,
+        Aurora) will moderate even without content licensing deals — testing whether traffic destruction is an independent
+        predictor.
+      falsifiable: true
+    - prediction: xAI coverage volume will remain LOWER than Meta coverage volume despite more negative financial relationship,
+        because Meta advertising competition is the stronger driver of coverage volume than publisher financial resentment.
+      falsifiable: true
     cross_references:
-      - mechanism_id: 47
-        name: 'Meta Ad Competitor Structural Antagonism'
-        connection: 'Mechanism #47 documents Meta as publishers DIRECT ad competitor at $243B. #68 adds xAI-X as a contrasting case — smaller ad competitor ($2.9B) but more hostile financial relationship.'
-      - mechanism_id: 53
-        name: 'OpenAI Triple-Layer Journalism Funding'
-        connection: 'Mechanism #53 documents OpenAI three-level publisher funding (corporate, individual, ecosystem). #68 establishes the mirror image — xAI three-level publisher destruction (traffic, content, press relations).'
-      - mechanism_id: 50
-        name: 'Google News AI Prisoner Dilemma'
-        connection: 'Google coercive but financially rewarding vs xAI hostile and financially destructive — different mechanisms of publisher-entity tension.'
-      - mechanism_id: 57
-        name: 'Reporter Frame-Lock (Seetharaman)'
-        connection: 'Reporter frame-lock may operate independently of institutional financial incentives. xAI/Musk coverage may reflect individual reporter frame-lock from covering Musk as a tech figure.'
-    test_file: test_xai_x_dual_entity_publisher_financial_destruction_aug12.py
+    - mechanism_id: 47
+      name: Meta Ad Competitor Structural Antagonism
+      connection: 'Mechanism #47 documents Meta as publishers DIRECT ad competitor at $243B. #68 adds xAI-X as a contrasting
+        case — smaller ad competitor ($2.9B) but more hostile financial relationship.'
+    - mechanism_id: 53
+      name: OpenAI Triple-Layer Journalism Funding
+      connection: 'Mechanism #53 documents OpenAI three-level publisher funding (corporate, individual, ecosystem). #68 establishes
+        the mirror image — xAI three-level publisher destruction (traffic, content, press relations).'
+    - mechanism_id: 50
+      name: Google News AI Prisoner Dilemma
+      connection: Google coercive but financially rewarding vs xAI hostile and financially destructive — different mechanisms
+        of publisher-entity tension.
+    - mechanism_id: 57
+      name: Reporter Frame-Lock (Seetharaman)
+      connection: Reporter frame-lock may operate independently of institutional financial incentives. xAI/Musk coverage may
+        reflect individual reporter frame-lock from covering Musk as a tech figure.
+    test_file: tests/test_xai_x_dual_entity_publisher_financial_destruction_aug12.py
     source_urls:
-      - https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/publisher-traffic-sources-2019-2025/
-      - https://www.entrepreneur.com/business-news/elon-musks-x-accused-of-link-delay-for-news-outlets/457557
-      - https://www.mediaradar.com/blog/the-decline-of-ad-spend-on-x-a-closer-look-at-the-numbers
-      - https://www.itiger.com/news/1189078332
-      - https://Www.socialmediatoday.com/news/x-formerly-twitter-saw-lower-ad-sales-q2-2025/760824/
-      - https://www.campaignlive.com/article/xs-ad-revenue-continues-fall-musk-takeover-warc/1896932
-      - https://pitchbook.com/news/articles/xai-jumps-to-2nd-place-in-ai-model-funding-race-with-20b-series-e
-      - https://www.pymnts.com/artificial-intelligence-2/2025/xai-targets-230-billion-valuation-with-new-funding/
-      - https://www.searchenginejournal.com/survey-publishers-expect-search-traffic-to-fall-over-40/565040/
-      - https://www.thewrap.com/x-ad-revenue-decline-data-elon-musk-takeover/
+    - https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/publisher-traffic-sources-2019-2025/
+    - https://www.entrepreneur.com/business-news/elon-musks-x-accused-of-link-delay-for-news-outlets/457557
+    - https://www.mediaradar.com/blog/the-decline-of-ad-spend-on-x-a-closer-look-at-the-numbers
+    - https://www.itiger.com/news/1189078332
+    - https://Www.socialmediatoday.com/news/x-formerly-twitter-saw-lower-ad-sales-q2-2025/760824/
+    - https://www.campaignlive.com/article/xs-ad-revenue-continues-fall-musk-takeover-warc/1896932
+    - https://pitchbook.com/news/articles/xai-jumps-to-2nd-place-in-ai-model-funding-race-with-20b-series-e
+    - https://www.pymnts.com/artificial-intelligence-2/2025/xai-targets-230-billion-valuation-with-new-funding/
+    - https://www.searchenginejournal.com/survey-publishers-expect-search-traffic-to-fall-over-40/565040/
+    - https://www.thewrap.com/x-ad-revenue-decline-data-elon-musk-takeover/
   nyt_meta_ai_bifurcated_coverage_litigation_alignment:
     mechanism_id: 69
-    name: "NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Execution Performance (Adversarial), Aligned with Litigation Interests"
+    name: NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Execution Performance (Adversarial), Aligned
+      with Litigation Interests
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
     publication: nytimes
-    finding_summary: 'The NYT — the ONLY publication in the MediaScope dataset simultaneously suing a tech company (OpenAI, filed Dec 2023, escalated Jul 2026 with sanctions motion and evidence destruction allegations) — produces a bifurcated dual-track coverage pattern for Meta AI that correlates with litigation interests. TRACK 1 (POSITIVE — Open-Source Philosophy): "How A.I. Made Mark Zuckerberg Popular Again in Silicon Valley" (May 2024, Metz/Isaac) frames Meta open-source approach aspirationally — "Zuckaissance," "champion," "genuinely good for the open-source community." Article includes NYT lawsuit disclosure. Open-source advocacy directly undermines OpenAI closed-model approach — the same approach the NYT alleges constitutes copyright theft. TRACK 2 (ADVERSARIAL — Execution Performance): Avocado model delay (Mar 2026, NYT exclusive) framed as "trailing leading systems," "failed to match," "scrambles to stay relevant." Behemoth abandonment (Aug 2025) reported with "tensions surfaced," "personnel churn," "disappointing performance tests." Llama 4 "met with poor reception" — repeated across articles. TRACK 3 (ADVERSARIAL — Social Platform): Children safety trials ($1B+ verdicts), layoffs, Muse Image backlash — covered by adversarial beat reporters (Isaac, Frenkel). ASYMMETRIC FIREWALL HYPOTHESIS: Editorial firewalls protect companies from ADVERSARIAL corporate relationships (NYT sues OpenAI but covers GPT-5.6 Sol as "most powerful model yet") but do NOT protect against FAVORABLE corporate relationships (at WIRED, Conde Nast OpenAI deal correlates with softer coverage). The wall is one-directional. Inverse of deal-alignment mechanisms at WIRED (#62), FT (#54), and WaPo (#65).'
+    finding_summary: 'The NYT — the ONLY publication in the MediaScope dataset simultaneously suing a tech company (OpenAI,
+      filed Dec 2023, escalated Jul 2026 with sanctions motion and evidence destruction allegations) — produces a bifurcated
+      dual-track coverage pattern for Meta AI that correlates with litigation interests. TRACK 1 (POSITIVE — Open-Source Philosophy):
+      "How A.I. Made Mark Zuckerberg Popular Again in Silicon Valley" (May 2024, Metz/Isaac) frames Meta open-source approach
+      aspirationally — "Zuckaissance," "champion," "genuinely good for the open-source community." Article includes NYT lawsuit
+      disclosure. Open-source advocacy directly undermines OpenAI closed-model approach — the same approach the NYT alleges
+      constitutes copyright theft. TRACK 2 (ADVERSARIAL — Execution Performance): Avocado model delay (Mar 2026, NYT exclusive)
+      framed as "trailing leading systems," "failed to match," "scrambles to stay relevant." Behemoth abandonment (Aug 2025)
+      reported with "tensions surfaced," "personnel churn," "disappointing performance tests." Llama 4 "met with poor reception"
+      — repeated across articles. TRACK 3 (ADVERSARIAL — Social Platform): Children safety trials ($1B+ verdicts), layoffs,
+      Muse Image backlash — covered by adversarial beat reporters (Isaac, Frenkel). ASYMMETRIC FIREWALL HYPOTHESIS: Editorial
+      firewalls protect companies from ADVERSARIAL corporate relationships (NYT sues OpenAI but covers GPT-5.6 Sol as "most
+      powerful model yet") but do NOT protect against FAVORABLE corporate relationships (at WIRED, Conde Nast OpenAI deal
+      correlates with softer coverage). The wall is one-directional. Inverse of deal-alignment mechanisms at WIRED (#62),
+      FT (#54), and WaPo (#65).'
     confounding_factors:
-      - description: "Genuine editorial stance — NYT editorial board may sincerely believe open-source AI is beneficial, independent of litigation strategy"
-        strength: STRONG
-        rebuttal: "Possible, but the positive framing correlates specifically with open-source (anti-OpenAI) rather than Meta AI broadly"
-      - description: "Avocado/Behemoth delays ARE legitimately newsworthy negative events — adversarial framing warranted by facts"
-        strength: STRONG
-        rebuttal: "Correct — but the contrast with positive open-source framing suggests TOPIC-SELECTIVE tone, not uniform Meta adversarialism"
-      - description: "Different reporters cover different topics — beat assignment, not litigation strategy, may drive the bifurcation"
-        strength: MODERATE
-        rebuttal: "Beat assignment is an institutional structure that channels coverage — whether intentional or structural, the effect is the same"
-      - description: "The open-source article includes the NYT lawsuit disclosure, suggesting editorial awareness of conflict"
-        strength: WEAK
-        rebuttal: "Disclosure acknowledges conflict but does not correct for it — disclosure is not bias neutralization"
-      - description: "Other publications also cover Meta open-source more positively than Meta execution failures — universal, not NYT-specific"
-        strength: MODERATE
-        rebuttal: "Partially valid — but the NYT has a UNIQUE structural incentive (litigation) that other publications lack"
-      - description: "Meta open-source pivot was genuinely popular with developers — positive coverage reflects real community sentiment"
-        strength: STRONG
-        rebuttal: "Developer enthusiasm is real, but editorial framing choices (which voices to amplify) are still institutional decisions"
-      - description: "NYT-OpenAI lawsuit is handled by legal department with no evidence of editorial coordination"
-        strength: MODERATE
-        rebuttal: "Direct coordination not claimed — mechanism operates through structural incentive alignment, not editorial directives"
+    - description: Genuine editorial stance — NYT editorial board may sincerely believe open-source AI is beneficial, independent
+        of litigation strategy
+      strength: STRONG
+      rebuttal: Possible, but the positive framing correlates specifically with open-source (anti-OpenAI) rather than Meta
+        AI broadly
+    - description: Avocado/Behemoth delays ARE legitimately newsworthy negative events — adversarial framing warranted by
+        facts
+      strength: STRONG
+      rebuttal: Correct — but the contrast with positive open-source framing suggests TOPIC-SELECTIVE tone, not uniform Meta
+        adversarialism
+    - description: Different reporters cover different topics — beat assignment, not litigation strategy, may drive the bifurcation
+      strength: MODERATE
+      rebuttal: Beat assignment is an institutional structure that channels coverage — whether intentional or structural,
+        the effect is the same
+    - description: The open-source article includes the NYT lawsuit disclosure, suggesting editorial awareness of conflict
+      strength: WEAK
+      rebuttal: Disclosure acknowledges conflict but does not correct for it — disclosure is not bias neutralization
+    - description: Other publications also cover Meta open-source more positively than Meta execution failures — universal,
+        not NYT-specific
+      strength: MODERATE
+      rebuttal: Partially valid — but the NYT has a UNIQUE structural incentive (litigation) that other publications lack
+    - description: Meta open-source pivot was genuinely popular with developers — positive coverage reflects real community
+        sentiment
+      strength: STRONG
+      rebuttal: Developer enthusiasm is real, but editorial framing choices (which voices to amplify) are still institutional
+        decisions
+    - description: NYT-OpenAI lawsuit is handled by legal department with no evidence of editorial coordination
+      strength: MODERATE
+      rebuttal: Direct coordination not claimed — mechanism operates through structural incentive alignment, not editorial
+        directives
     testable_predictions:
-      - "If NYT settles with OpenAI, positive Meta open-source coverage intensity should DECREASE (no longer serves litigation narrative). Persistence would strengthen the genuine-editorial-stance explanation."
-      - "If Meta closes its next frontier model (moves fully away from open-source), NYT coverage of Meta AI should become uniformly adversarial — removing the one positive angle."
-      - "If another publication SUES OpenAI (e.g., CNN or WaPo), that publication should develop similar bifurcated Meta AI coverage."
-      - "NYT should cover OpenAI open-source moves (e.g., gpt-oss) LESS positively than Meta — because OpenAI open-sourcing does not serve the copyright-theft litigation narrative."
+    - If NYT settles with OpenAI, positive Meta open-source coverage intensity should DECREASE (no longer serves litigation
+      narrative). Persistence would strengthen the genuine-editorial-stance explanation.
+    - If Meta closes its next frontier model (moves fully away from open-source), NYT coverage of Meta AI should become uniformly
+      adversarial — removing the one positive angle.
+    - If another publication SUES OpenAI (e.g., CNN or WaPo), that publication should develop similar bifurcated Meta AI coverage.
+    - NYT should cover OpenAI open-source moves (e.g., gpt-oss) LESS positively than Meta — because OpenAI open-sourcing does
+      not serve the copyright-theft litigation narrative.
     cross_references:
-      - mechanism_id: 23
-        name: "NYT Anthropic Triple-Chain Incentive"
-        connection: "Both mechanisms document how NYT financial relationships (Amazon deal + litigation) shape coverage of specific companies"
-      - mechanism_id: 51
-        name: "WIRED Copyright Piracy Framing Parity"
-        connection: "Both analyze how the same legal fact (pirated books for AI training) receives different framing depending on the company"
-      - mechanism_id: 57
-        name: "Seetharaman Frame-Lock"
-        connection: "Contrasting mechanism — Seetharaman professional identity overrides institutional incentives, while NYT litigation creates topic-selective positive coverage"
-      - mechanism_id: 37
-        name: "Open-Weight Policy Coverage Selection Asymmetry"
-        connection: "Both document how publications selectively cover Meta open-weight strategy — NYT litigation creates additional incentive for positive open-source coverage"
+    - mechanism_id: 23
+      name: NYT Anthropic Triple-Chain Incentive
+      connection: Both mechanisms document how NYT financial relationships (Amazon deal + litigation) shape coverage of specific
+        companies
+    - mechanism_id: 51
+      name: WIRED Copyright Piracy Framing Parity
+      connection: Both analyze how the same legal fact (pirated books for AI training) receives different framing depending
+        on the company
+    - mechanism_id: 57
+      name: Seetharaman Frame-Lock
+      connection: Contrasting mechanism — Seetharaman professional identity overrides institutional incentives, while NYT
+        litigation creates topic-selective positive coverage
+    - mechanism_id: 37
+      name: Open-Weight Policy Coverage Selection Asymmetry
+      connection: Both document how publications selectively cover Meta open-weight strategy — NYT litigation creates additional
+        incentive for positive open-source coverage
     source_urls:
-      - "https://web.archive.org/web/20240529/https://www.nytimes.com/2024/05/29/technology/mark-zuckerberg-meta-ai-open-source.html"
-      - "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
-      - "https://www.pymnts.com/news/artificial-intelligence/2026/meta-avocado-delay-puts-135-billion-dollar-ai-bet-under-scrutiny/"
-      - "https://www.reuters.com/business/meta-plans-cut-around-10-employees-reality-labs-division-nyt-reports-2026-01-12/"
-      - "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
-      - "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
-      - "https://muckrack.com/cademetz/articles"
-      - "https://www.engadget.com/ai/is-mark-zuckerberg-flip-flopping-on-open-source-ai-231310567.html"
-      - "https://www.reuters.com/commentary/breakingviews/mark-zuckerbergs-ai-treatise-is-more-ad-than-tech-2026-08-10/"
+    - https://web.archive.org/web/20240529/https://www.nytimes.com/2024/05/29/technology/mark-zuckerberg-meta-ai-open-source.html
+    - https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html
+    - https://www.pymnts.com/news/artificial-intelligence/2026/meta-avocado-delay-puts-135-billion-dollar-ai-bet-under-scrutiny/
+    - https://www.reuters.com/business/meta-plans-cut-around-10-employees-reality-labs-division-nyt-reports-2026-01-12/
+    - https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/
+    - https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/
+    - https://muckrack.com/cademetz/articles
+    - https://www.engadget.com/ai/is-mark-zuckerberg-flip-flopping-on-open-source-ai-231310567.html
+    - https://www.reuters.com/commentary/breakingviews/mark-zuckerbergs-ai-treatise-is-more-ad-than-tech-2026-08-10/
     test_file: tests/test_nyt_meta_ai_bifurcated_coverage_alignment_aug12.py
-
   ashworth_accessibility_framing_inversion:
     mechanism_id: 70
-    name: "Boone Ashworth Accessibility Framing Inversion — TranscribeGlass (Empathetic) vs Meta Conversation Focus (Adversarial)"
+    name: Boone Ashworth Accessibility Framing Inversion — TranscribeGlass (Empathetic) vs Meta Conversation Focus (Adversarial)
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
     publication: wired
@@ -6488,39 +6577,34 @@ cross_publication_findings:
     - 14
     - 61
     - 66
-    finding_summary: 'Boone Ashworth (WIRED staff writer) covers TranscribeGlass ($377
-      non-Meta smart glasses for hearing-impaired users) with empathetic accessibility
-      framing — Techmeme frontpage, "for the deaf and hard-of-hearing" — but co-authors
-      coverage of Meta''s Conversation Focus (beamforming hearing amplification, same
-      functional category) as "extracting value" and "monetizing customers" with ZERO
-      accessibility language. The feature serves the same use case: helping hearing-impaired
-      people communicate in noisy environments. TranscribeGlass transcribes to text;
-      Conversation Focus amplifies audio. Both are hearing-assistance smart glasses
-      features. But only the non-Meta version receives accessibility framing. Combined
-      with Business Wars podcast framing asymmetry (Meta = "mass surveillance" / "I''m
-      a Creep" vs Google = "Google''s Return") and Apple N50 aspirational privacy framing,
-      this demonstrates entity-correlated editorial posture at the individual journalist
-      level — not feature-correlated or function-correlated.'
+    finding_summary: 'Boone Ashworth (WIRED staff writer) covers TranscribeGlass ($377 non-Meta smart glasses for hearing-impaired
+      users) with empathetic accessibility framing — Techmeme frontpage, "for the deaf and hard-of-hearing" — but co-authors
+      coverage of Meta''s Conversation Focus (beamforming hearing amplification, same functional category) as "extracting
+      value" and "monetizing customers" with ZERO accessibility language. The feature serves the same use case: helping hearing-impaired
+      people communicate in noisy environments. TranscribeGlass transcribes to text; Conversation Focus amplifies audio. Both
+      are hearing-assistance smart glasses features. But only the non-Meta version receives accessibility framing. Combined
+      with Business Wars podcast framing asymmetry (Meta = "mass surveillance" / "I''m a Creep" vs Google = "Google''s Return")
+      and Apple N50 aspirational privacy framing, this demonstrates entity-correlated editorial posture at the individual
+      journalist level — not feature-correlated or function-correlated.'
     test_file: tests/test_boone_ashworth_cross_entity_aug12.py
     source_transcribeglass: https://www.techmeme.com/250703/p4
     source_meta_paywall_proxy: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
     source_conversation_focus_tech: https://www.androidauthority.com/meta-smart-glasses-rate-limits-3683323/
     confounders:
     - strength: STRONG
-      factor: 'Meta facial recognition history (DeepFace 2014, Cambridge Analytica)'
-      rebuttal: 'Explains surveillance scrutiny of cameras, not the omission of accessibility
-        framing for a hearing feature with no camera involvement'
+      factor: Meta facial recognition history (DeepFace 2014, Cambridge Analytica)
+      rebuttal: Explains surveillance scrutiny of cameras, not the omission of accessibility framing for a hearing feature
+        with no camera involvement
     - strength: MODERATE
-      factor: 'TranscribeGlass is a startup, not a platform company'
-      rebuttal: 'WIRED claims to cover technology by function, not manufacturer reputation'
+      factor: TranscribeGlass is a startup, not a platform company
+      rebuttal: WIRED claims to cover technology by function, not manufacturer reputation
     - strength: MODERATE
-      factor: 'The subscription paywall IS genuinely newsworthy'
-      rebuttal: 'Criticism of the paywall is legitimate; the asymmetry is the complete
-        erasure of accessibility framing for the same functional category'
-
+      factor: The subscription paywall IS genuinely newsworthy
+      rebuttal: Criticism of the paywall is legitimate; the asymmetry is the complete erasure of accessibility framing for
+        the same functional category
   de_vynck_beat_drift_facebook_papers_identity:
     mechanism_id: 71
-    name: "WaPo Beat Drift + Facebook Papers Career Identity Capture — Gerrit De Vynck"
+    name: WaPo Beat Drift + Facebook Papers Career Identity Capture — Gerrit De Vynck
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
     publication: washington-post
@@ -6532,21 +6616,17 @@ cross_publication_findings:
     - 57
     - 63
     - 69
-    finding_summary: 'Gerrit De Vynck (Bloomberg -> Washington Post, Jan 2021) was hired
-      explicitly to cover Google/Alphabet but his career-defining moment was the adversarial
-      Facebook Papers investigation (2021-2022, SAJA Business Reporting Award). His current
-      coverage exhibits a dual-track pattern: OpenAI receives access-based data journalism
-      (47K ChatGPT conversations analysis, first public usage study -- neutral/exploratory
-      framing) while Meta receives adversarial/political power framing ("tech moguls close
-      to President Trump...reengineer Congress," Facebook Papers legacy). First WaPo
-      individual reporter tested against Mechanism #65 (Bezos->Amazon->$13B Anthropic
-      ownership chain). WaPo institutional AI political bias study (Jun 2026) positioned
-      Anthropic Claude as the "most balanced" chatbot -- first individual-level evidence
-      that the ownership chain correlates with favorable competitor positioning. Beat drift
-      from Google-specific to all-AI coverage + Facebook Papers career identity capture +
-      access asymmetry (OpenAI provides data, Meta does not) + institutional ownership
-      alignment = four reinforcing mechanisms producing asymmetric framing at a publication
-      with $0 from Meta and a $200B+ indirect Anthropic ownership stake.'
+    finding_summary: 'Gerrit De Vynck (Bloomberg -> Washington Post, Jan 2021) was hired explicitly to cover Google/Alphabet
+      but his career-defining moment was the adversarial Facebook Papers investigation (2021-2022, SAJA Business Reporting
+      Award). His current coverage exhibits a dual-track pattern: OpenAI receives access-based data journalism (47K ChatGPT
+      conversations analysis, first public usage study -- neutral/exploratory framing) while Meta receives adversarial/political
+      power framing ("tech moguls close to President Trump...reengineer Congress," Facebook Papers legacy). First WaPo individual
+      reporter tested against Mechanism #65 (Bezos->Amazon->$13B Anthropic ownership chain). WaPo institutional AI political
+      bias study (Jun 2026) positioned Anthropic Claude as the "most balanced" chatbot -- first individual-level evidence
+      that the ownership chain correlates with favorable competitor positioning. Beat drift from Google-specific to all-AI
+      coverage + Facebook Papers career identity capture + access asymmetry (OpenAI provides data, Meta does not) + institutional
+      ownership alignment = four reinforcing mechanisms producing asymmetric framing at a publication with $0 from Meta and
+      a $200B+ indirect Anthropic ownership stake.'
     source_urls:
     - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-de-vynck-as-ai-algorithms-reporter/
     - https://talkingbiznews.com/media-news/washington-post-team-wins-south-asian-journalists-biz-reporting-award/amp/
@@ -6557,74 +6637,69 @@ cross_publication_findings:
     - http://gerritdevynck.com/
     - https://talkingbiznews.com/1/bloombergs-de-vynck-moves-to-google-beat-carville-to-cover-ibm/
     testable_predictions:
-    - 'WaPo will NOT produce a comparable multi-part adversarial Anthropic investigation
-      at Facebook Papers depth, despite Anthropic having comparable governance concerns
-      (Mythos safety, distillation scandals, government export controls).'
-    - 'If De Vynck receives exclusive OpenAI data access for a future study, the
-      resulting coverage will maintain neutral/exploratory framing -- never adversarial
-      depth applied to Meta.'
-    - 'If Meta signs a WaPo content licensing deal, De Vynck Meta coverage framing
-      will moderate within 6-12 months (same prediction as Mechanism #65).'
-    - 'Post-Anthropic IPO, WaPo coverage of Anthropic valuation trajectory will use
-      aspirational language ("exceeded expectations," "investor confidence") rather than
-      stress language ("overvalued," "bubble risk").'
+    - WaPo will NOT produce a comparable multi-part adversarial Anthropic investigation at Facebook Papers depth, despite
+      Anthropic having comparable governance concerns (Mythos safety, distillation scandals, government export controls).
+    - If De Vynck receives exclusive OpenAI data access for a future study, the resulting coverage will maintain neutral/exploratory
+      framing -- never adversarial depth applied to Meta.
+    - 'If Meta signs a WaPo content licensing deal, De Vynck Meta coverage framing will moderate within 6-12 months (same
+      prediction as Mechanism #65).'
+    - Post-Anthropic IPO, WaPo coverage of Anthropic valuation trajectory will use aspirational language ("exceeded expectations,"
+      "investor confidence") rather than stress language ("overvalued," "bubble risk").
     confounding_factors:
     - strength: STRONG
-      factor: 'Facebook Papers was genuinely important journalism'
-      rebuttal: 'The question is not whether the investigation was justified, but whether
-        its career-defining impact created a persistent adversarial frame applied to
-        unrelated Meta stories (AI PACs, AI products) while comparable stories about
-        OpenAI/Anthropic receive different framing.'
+      factor: Facebook Papers was genuinely important journalism
+      rebuttal: The question is not whether the investigation was justified, but whether its career-defining impact created
+        a persistent adversarial frame applied to unrelated Meta stories (AI PACs, AI products) while comparable stories about
+        OpenAI/Anthropic receive different framing.
     - strength: STRONG
-      factor: 'OpenAI ChatGPT data study was genuinely novel'
-      rebuttal: 'The framing asymmetry is not about whether to cover these stories
-        differently, but about the absence of comparable adversarial investigation of
-        OpenAI business practices, governance failures, or societal harms despite
-        extensive available material (safety team departures, board coup, content
-        licensing controversies).'
+      factor: OpenAI ChatGPT data study was genuinely novel
+      rebuttal: The framing asymmetry is not about whether to cover these stories differently, but about the absence of comparable
+        adversarial investigation of OpenAI business practices, governance failures, or societal harms despite extensive available
+        material (safety team departures, board coup, content licensing controversies).
     - strength: MODERATE
-      factor: 'Co-authorship dilutes individual attribution'
-      rebuttal: 'De Vynck is named in the SAJA award citation and article bylines.
-        Co-authorship distributes credit but the reporter frame shapes the pitch.'
+      factor: Co-authorship dilutes individual attribution
+      rebuttal: De Vynck is named in the SAJA award citation and article bylines. Co-authorship distributes credit but the
+        reporter frame shapes the pitch.
     - strength: MODERATE
-      factor: 'Meta IS a larger political spender at state level'
-      rebuttal: 'NYT analysis shows combined AI industry spending of $150M+. OpenAI
-        Brockman donated $50M personally. The framing choice to single out "the social
-        network giant Meta" for "reengineering Congress" while other companies get
-        aggregate treatment is editorial, not mathematical.'
+      factor: Meta IS a larger political spender at state level
+      rebuttal: NYT analysis shows combined AI industry spending of $150M+. OpenAI Brockman donated $50M personally. The framing
+        choice to single out "the social network giant Meta" for "reengineering Congress" while other companies get aggregate
+        treatment is editorial, not mathematical.
     - strength: WEAK
-      factor: 'Beat assignment, not personal bias'
-      rebuttal: 'Coverage volume and framing tone are both within a reporter discretion.
-        Writing more OpenAI data stories and more Meta adversarial stories is a pattern,
-        not a coincidence.'
+      factor: Beat assignment, not personal bias
+      rebuttal: Coverage volume and framing tone are both within a reporter discretion. Writing more OpenAI data stories and
+        more Meta adversarial stories is a pattern, not a coincidence.
     - strength: MODERATE
-      factor: 'WaPo editorial independence from Bezos investments'
-      rebuttal: 'Mechanism #65 documents that editorial independence blocks adversarial
-        relationships from worsening coverage but does NOT block favorable ones from
-        softening it. The AI bias study positioning Claude favorably is institutional,
+      factor: WaPo editorial independence from Bezos investments
+      rebuttal: 'Mechanism #65 documents that editorial independence blocks adversarial relationships from worsening coverage
+        but does NOT block favorable ones from softening it. The AI bias study positioning Claude favorably is institutional,
         not individual.'
     - strength: WEAK
-      factor: 'Bloomberg background means Google expertise, not Meta adversarialism'
-      rebuttal: 'The pattern is not Google-positive vs Meta-negative. It is
-        OpenAI-access-based + Anthropic-favorable-institutional vs Meta-adversarial. The
-        Google-to-AI beat drift is the structural cause.'
+      factor: Bloomberg background means Google expertise, not Meta adversarialism
+      rebuttal: The pattern is not Google-positive vs Meta-negative. It is OpenAI-access-based + Anthropic-favorable-institutional
+        vs Meta-adversarial. The Google-to-AI beat drift is the structural cause.
     cross_references:
     - mechanism_id: 65
-      name: "WaPo Bezos-Anthropic Ownership Chain"
-      connection: "De Vynck operates within the institutional context #65 documents; first individual-reporter test of ownership chain predictions"
+      name: WaPo Bezos-Anthropic Ownership Chain
+      connection: 'De Vynck operates within the institutional context #65 documents; first individual-reporter test of ownership
+        chain predictions'
     - mechanism_id: 57
-      name: "Seetharaman Frame-Lock"
-      connection: "Career identity capture via award-winning adversarial investigation -- but De Vynck capture happened WITHIN his institution (WaPo) rather than persisting across institutions"
+      name: Seetharaman Frame-Lock
+      connection: Career identity capture via award-winning adversarial investigation -- but De Vynck capture happened WITHIN
+        his institution (WaPo) rather than persisting across institutions
     - mechanism_id: 63
-      name: "Zeff Source Access Asymmetry"
-      connection: "OpenAI provides exclusive data access to WaPo (47K conversations) creating access-dependent neutral coverage, same pattern as WIRED"
+      name: Zeff Source Access Asymmetry
+      connection: OpenAI provides exclusive data access to WaPo (47K conversations) creating access-dependent neutral coverage,
+        same pattern as WIRED
     - mechanism_id: 69
-      name: "NYT Bifurcated Coverage"
-      connection: "Both NYT and WaPo produce bifurcated coverage -- NYT anti-litigation framing softens Meta, WaPo anti-ownership framing softens Anthropic. Different institutional mechanisms, same structural outcome"
-
+      name: NYT Bifurcated Coverage
+      connection: Both NYT and WaPo produce bifurcated coverage -- NYT anti-litigation framing softens Meta, WaPo anti-ownership
+        framing softens Anthropic. Different institutional mechanisms, same structural outcome
+    test_file: tests/test_gerrit_de_vynck_cross_entity_aug12.py
   tiku_tech_culture_beat_independence:
     mechanism_id: 72
-    name: "Nitasha Tiku Tech Culture Beat Structural Independence — Company-Agnostic Adversarial Coverage with Ownership-Chain Blind Spot"
+    name: Nitasha Tiku Tech Culture Beat Structural Independence — Company-Agnostic Adversarial Coverage with Ownership-Chain
+      Blind Spot
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
     publication: washington-post
@@ -6636,118 +6711,102 @@ cross_publication_findings:
     - 57
     - 63
     - 67
-    finding_summary: 'Nitasha Tiku (Valleywag editor → The Verge → BuzzFeed News → WIRED
-      → Washington Post) is one of the ONLY reporters in the MediaScope dataset who applies
-      adversarial framing across ALL major AI entities (Google, OpenAI, Meta, xAI, Character
-      AI) without the entity-specific bifurcation seen in beat reporters. At WaPo, she
-      investigated OpenAI (NDA whistleblower SEC complaint, safety failures, rogue AI models,
-      Sora training data), Google (LaMDA sentience, weapons pledge removal), Meta (AI users
-      public data exposure, CZI scientists letter), xAI (Musk cutting safeguards, front
-      page), and Character AI (teen chatbot safety). Three structural factors: (1) her beat
-      is "tech culture" — defined by systemic patterns (worker exploitation, safety culture,
-      power dynamics) rather than company coverage, making it inherently company-agnostic;
-      (2) Gawker/Valleywag adversarial DNA — she was the EDITOR of Valleywag, the original
-      adversarial Silicon Valley gossip blog, not just a contributor, the deepest Gawker
-      lineage of any reporter in the dataset; (3) layoff-rehire cycle — laid off Feb 4 2026
-      in WaPo mass layoff (1/3 of staff under Bezos ownership), then rehired ~Mar-Apr 2026
-      in a different role, weakening institutional loyalty. CRITICAL FINDING: Despite
-      company-agnostic adversarial coverage of 5+ entities, Tiku has NOT produced a dedicated
-      adversarial investigation of Anthropic comparable to her OpenAI NDA/SEC investigation
-      or Google LaMDA coverage. Anthropic appears only in group articles ("OpenAI, Anthropic
-      and Google DeepMind workers warn of AI dangers"). This Anthropic Gap is consistent
-      with Mechanism #65 (Bezos→Amazon→$13B Anthropic ownership chain) — even a company-
-      agnostic adversarial reporter avoids dedicated Anthropic investigations at Bezos-owned
-      WaPo. CONTRAST: at WIRED (Condé Nast, pre-OpenAI deal 2017-2019), Tiku wrote an
-      adversarial Google turmoil cover story but this was pre-deal, so no financial incentive
-      test is possible. CONTRAST with Mechanism #63 (Zeff) and Dell Cameron — same Gawker
-      lineage at WIRED produced bifurcated coverage, while Tiku at WaPo remains company-
-      agnostic. The differentiating variable is beat structure: "tech culture" (Tiku) vs
-      "AI business" (Zeff) vs "cybersecurity" (Cameron). CONTRAST with Mechanism #57
-      (Seetharaman frame-lock): Seetharaman adversarial Meta framing persists ACROSS
-      institutions; Tiku adversarial framing is company-agnostic WITHIN a single
-      institution. CONTRAST with Mechanism #71 (De Vynck): both at WaPo, both exhibit the
-      Anthropic Gap, but De Vynck has entity-specific bifurcation (OpenAI neutral, Meta
-      adversarial) while Tiku does not bifurcate by entity.'
+    finding_summary: 'Nitasha Tiku (Valleywag editor → The Verge → BuzzFeed News → WIRED → Washington Post) is one of the
+      ONLY reporters in the MediaScope dataset who applies adversarial framing across ALL major AI entities (Google, OpenAI,
+      Meta, xAI, Character AI) without the entity-specific bifurcation seen in beat reporters. At WaPo, she investigated OpenAI
+      (NDA whistleblower SEC complaint, safety failures, rogue AI models, Sora training data), Google (LaMDA sentience, weapons
+      pledge removal), Meta (AI users public data exposure, CZI scientists letter), xAI (Musk cutting safeguards, front page),
+      and Character AI (teen chatbot safety). Three structural factors: (1) her beat is "tech culture" — defined by systemic
+      patterns (worker exploitation, safety culture, power dynamics) rather than company coverage, making it inherently company-agnostic;
+      (2) Gawker/Valleywag adversarial DNA — she was the EDITOR of Valleywag, the original adversarial Silicon Valley gossip
+      blog, not just a contributor, the deepest Gawker lineage of any reporter in the dataset; (3) layoff-rehire cycle — laid
+      off Feb 4 2026 in WaPo mass layoff (1/3 of staff under Bezos ownership), then rehired ~Mar-Apr 2026 in a different role,
+      weakening institutional loyalty. CRITICAL FINDING: Despite company-agnostic adversarial coverage of 5+ entities, Tiku
+      has NOT produced a dedicated adversarial investigation of Anthropic comparable to her OpenAI NDA/SEC investigation or
+      Google LaMDA coverage. Anthropic appears only in group articles ("OpenAI, Anthropic and Google DeepMind workers warn
+      of AI dangers"). This Anthropic Gap is consistent with Mechanism #65 (Bezos→Amazon→$13B Anthropic ownership chain) —
+      even a company- agnostic adversarial reporter avoids dedicated Anthropic investigations at Bezos-owned WaPo. CONTRAST:
+      at WIRED (Condé Nast, pre-OpenAI deal 2017-2019), Tiku wrote an adversarial Google turmoil cover story but this was
+      pre-deal, so no financial incentive test is possible. CONTRAST with Mechanism #63 (Zeff) and Dell Cameron — same Gawker
+      lineage at WIRED produced bifurcated coverage, while Tiku at WaPo remains company- agnostic. The differentiating variable
+      is beat structure: "tech culture" (Tiku) vs "AI business" (Zeff) vs "cybersecurity" (Cameron). CONTRAST with Mechanism
+      #57 (Seetharaman frame-lock): Seetharaman adversarial Meta framing persists ACROSS institutions; Tiku adversarial framing
+      is company-agnostic WITHIN a single institution. CONTRAST with Mechanism #71 (De Vynck): both at WaPo, both exhibit
+      the Anthropic Gap, but De Vynck has entity-specific bifurcation (OpenAI neutral, Meta adversarial) while Tiku does not
+      bifurcate by entity.'
     source_urls:
-    - "https://muckrack.com/nitashatiku/articles"
-    - "https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-tiku-as-tech-culture-reporter/"
-    - "https://talkingbiznews.com/media-news/tiku-among-the-washington-post-layoffs/amp/"
-    - "https://theorg.com/org/the-washington-post/org-chart/nitasha-tiku"
-    - "https://clay.earth/profile/nitasha-tiku-163ac220"
-    - "https://www.cjr.org/analysis/washington-post-tries-regroup-after-major-cuts-layoffs-delayed-rehire-former-staff.php"
-    - "https://nypost.com/2026/04/02/media/washington-post-rehires-some-laid-off-staffers-after-job-cuts-decimated-newsroom-report/"
-    - "https://www.poynter.org/reporting-editing/2014/nitasha-tiku-joins-the-verge/"
-    - "https://www.adweek.com/performance-marketing/big-changes-in-tech-journalism-fake-steve-jobs-is-your-new-valleywag/"
+    - https://muckrack.com/nitashatiku/articles
+    - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-tiku-as-tech-culture-reporter/
+    - https://talkingbiznews.com/media-news/tiku-among-the-washington-post-layoffs/amp/
+    - https://theorg.com/org/the-washington-post/org-chart/nitasha-tiku
+    - https://clay.earth/profile/nitasha-tiku-163ac220
+    - https://www.cjr.org/analysis/washington-post-tries-regroup-after-major-cuts-layoffs-delayed-rehire-former-staff.php
+    - https://nypost.com/2026/04/02/media/washington-post-rehires-some-laid-off-staffers-after-job-cuts-decimated-newsroom-report/
+    - https://www.poynter.org/reporting-editing/2014/nitasha-tiku-joins-the-verge/
+    - https://www.adweek.com/performance-marketing/big-changes-in-tech-journalism-fake-steve-jobs-is-your-new-valleywag/
     test_file: tests/test_nitasha_tiku_cross_entity_aug12.py
     testable_predictions:
-    - 'If Tiku writes a dedicated adversarial investigation of Anthropic safety culture
-      or corporate governance at WaPo, it will be a strong disconfirmation of Mechanism
-      #65 (WaPo-Bezos-Anthropic ownership chain).'
-    - 'If Tiku moves to a publication with no Bezos/Amazon connection, her Anthropic
-      coverage will NOT become more adversarial if the Anthropic Gap is explained by
-      legitimate news judgment, but WILL become more adversarial if explained by
-      ownership influence.'
-    - 'Tiku Meta coverage will remain adversarial regardless of whether WaPo signs a
-      Meta content licensing deal, because tech culture beat independence overrides
-      institutional financial incentives for this reporter.'
-    - 'If Tiku covers an Apple AI safety story, she will apply the same adversarial
-      framing as her Meta/OpenAI/Google/xAI coverage — testing company-agnostic claim.'
+    - 'If Tiku writes a dedicated adversarial investigation of Anthropic safety culture or corporate governance at WaPo, it
+      will be a strong disconfirmation of Mechanism #65 (WaPo-Bezos-Anthropic ownership chain).'
+    - If Tiku moves to a publication with no Bezos/Amazon connection, her Anthropic coverage will NOT become more adversarial
+      if the Anthropic Gap is explained by legitimate news judgment, but WILL become more adversarial if explained by ownership
+      influence.
+    - Tiku Meta coverage will remain adversarial regardless of whether WaPo signs a Meta content licensing deal, because tech
+      culture beat independence overrides institutional financial incentives for this reporter.
+    - If Tiku covers an Apple AI safety story, she will apply the same adversarial framing as her Meta/OpenAI/Google/xAI coverage
+      — testing company-agnostic claim.
     confounding_factors:
     - strength: STRONG
-      factor: 'Anthropic genuinely has fewer consumer-facing scandals and less product
-        surface area for tech culture stories'
-      rebuttal: 'The null hypothesis is strong. However, Anthropic has had governance
-        concerns (Mythos safety, Fable 5 sabotage, Claude Code data access) that a
-        company-agnostic adversarial reporter COULD investigate. The question is whether
-        the absence reflects editorial judgment or ownership influence.'
+      factor: Anthropic genuinely has fewer consumer-facing scandals and less product surface area for tech culture stories
+      rebuttal: The null hypothesis is strong. However, Anthropic has had governance concerns (Mythos safety, Fable 5 sabotage,
+        Claude Code data access) that a company-agnostic adversarial reporter COULD investigate. The question is whether the
+        absence reflects editorial judgment or ownership influence.
     - strength: STRONG
-      factor: 'WaPo editorial/commercial separation — Bezos has publicly committed to
-        non-interference and WaPo has broken stories embarrassing to Amazon'
-      rebuttal: 'Mechanism #65 argues that editorial independence blocks adversarial
-        relationships from WORSENING coverage but does not block favorable ones from
-        SOFTENING it. The Anthropic Gap is consistent with this asymmetric model.'
+      factor: WaPo editorial/commercial separation — Bezos has publicly committed to non-interference and WaPo has broken
+        stories embarrassing to Amazon
+      rebuttal: 'Mechanism #65 argues that editorial independence blocks adversarial relationships from WORSENING coverage
+        but does not block favorable ones from SOFTENING it. The Anthropic Gap is consistent with this asymmetric model.'
     - strength: MODERATE
-      factor: 'Tech culture beat naturally covers larger companies with more workers
-        and more cultural impact'
-      rebuttal: 'Meta, Google, and OpenAI are larger employers, but Anthropic has 2,000+
-        employees and its safety culture is a core cultural story. Size alone does not
-        explain the complete absence of dedicated coverage.'
+      factor: Tech culture beat naturally covers larger companies with more workers and more cultural impact
+      rebuttal: Meta, Google, and OpenAI are larger employers, but Anthropic has 2,000+ employees and its safety culture is
+        a core cultural story. Size alone does not explain the complete absence of dedicated coverage.
     - strength: MODERATE
-      factor: 'Co-byline dilution — several adversarial Meta stories are co-authored
-        with Naomi Nix'
-      rebuttal: 'Co-authorship distributes effort but Tiku is named in all bylines.
-        The Anthropic Gap applies to solo AND co-authored articles equally.'
+      factor: Co-byline dilution — several adversarial Meta stories are co-authored with Naomi Nix
+      rebuttal: Co-authorship distributes effort but Tiku is named in all bylines. The Anthropic Gap applies to solo AND co-authored
+        articles equally.
     - strength: MODERATE
-      factor: 'Post-layoff role may have narrower scope than pre-layoff'
-      rebuttal: 'She was rehired to continue AI/tech coverage and has continued
-        producing adversarial coverage of OpenAI and others post-rehire. The scope
-        narrowing does not specifically exclude Anthropic.'
+      factor: Post-layoff role may have narrower scope than pre-layoff
+      rebuttal: She was rehired to continue AI/tech coverage and has continued producing adversarial coverage of OpenAI and
+        others post-rehire. The scope narrowing does not specifically exclude Anthropic.
     - strength: WEAK
-      factor: 'Sample size — one reporter absence may be coincidental'
-      rebuttal: 'Combined with De Vynck (#71) also showing the Anthropic Gap at WaPo,
-        the N=2 pattern within one institution strengthens the ownership chain
-        hypothesis, though does not prove it.'
+      factor: Sample size — one reporter absence may be coincidental
+      rebuttal: Combined with De Vynck (#71) also showing the Anthropic Gap at WaPo, the N=2 pattern within one institution
+        strengthens the ownership chain hypothesis, though does not prove it.
     - strength: MODERATE
-      factor: 'Tiku WIRED period predates OpenAI deal (2017-2019 vs Aug 2024) so no
-        financial incentive test is possible at that publication'
-      rebuttal: 'Acknowledged as a limitation. The WIRED Google cover story is evidence
-        of adversarial capacity but not evidence for or against deal-alignment.'
+      factor: Tiku WIRED period predates OpenAI deal (2017-2019 vs Aug 2024) so no financial incentive test is possible at
+        that publication
+      rebuttal: Acknowledged as a limitation. The WIRED Google cover story is evidence of adversarial capacity but not evidence
+        for or against deal-alignment.
     cross_references:
     - mechanism_id: 65
-      name: "WaPo Bezos-Anthropic Ownership Chain"
-      connection: "Tiku is the second WaPo reporter (after De Vynck #71) exhibiting the Anthropic Gap, strengthening the N=2 pattern within the ownership chain"
+      name: WaPo Bezos-Anthropic Ownership Chain
+      connection: 'Tiku is the second WaPo reporter (after De Vynck #71) exhibiting the Anthropic Gap, strengthening the N=2
+        pattern within the ownership chain'
     - mechanism_id: 57
-      name: "Seetharaman Frame-Lock"
-      connection: "Contrast pattern — Seetharaman adversarial Meta framing persists ACROSS institutions; Tiku adversarial framing is company-agnostic WITHIN a single institution. Different manifestations of professional identity."
+      name: Seetharaman Frame-Lock
+      connection: Contrast pattern — Seetharaman adversarial Meta framing persists ACROSS institutions; Tiku adversarial framing
+        is company-agnostic WITHIN a single institution. Different manifestations of professional identity.
     - mechanism_id: 63
-      name: "Zeff Source Access Asymmetry"
-      connection: "Same Gawker lineage, different outcomes — Zeff bifurcates at WIRED, Tiku does not bifurcate at WaPo. Beat structure (AI business vs tech culture) is the differentiating variable."
+      name: Zeff Source Access Asymmetry
+      connection: Same Gawker lineage, different outcomes — Zeff bifurcates at WIRED, Tiku does not bifurcate at WaPo. Beat
+        structure (AI business vs tech culture) is the differentiating variable.
     - mechanism_id: 67
-      name: "WSJ Beat Assignment Asymmetry (Nicole Nguyen)"
-      connection: "Tiku is the counter-example to beat-assignment asymmetry — her company-agnostic tech culture beat produces uniform adversarial coverage across entities, unlike company-specific beats."
+      name: WSJ Beat Assignment Asymmetry (Nicole Nguyen)
+      connection: Tiku is the counter-example to beat-assignment asymmetry — her company-agnostic tech culture beat produces
+        uniform adversarial coverage across entities, unlike company-specific beats.
   cma_nosue_regulatory_neutralization:
     mechanism_id: 73
-    name: "CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections"
+    name: CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections
     date_added: '2026-08-12'
     discovery_date: '2026-08-12'
     publication: cross_publication
@@ -6758,110 +6817,104 @@ cross_publication_findings:
     - 44
     - 49
     - 53
-    finding_summary: 'The UK CMA issued a "world-first" ruling on June 3, 2026 requiring Google to let publishers
-      opt out of AI Overviews without losing search visibility, properly attribute content, and opt out of
-      AI model fine-tuning. But Google''s simultaneous News AI pilot deals (200+ publications by Aug 2026, per
-      Press Gazette) include no-sue clauses and NDAs. Publishers who signed these deals effectively waive their
-      CMA-granted bargaining power through private contract, creating a three-layer regulatory contradiction:
+    finding_summary: 'The UK CMA issued a "world-first" ruling on June 3, 2026 requiring Google to let publishers opt out
+      of AI Overviews without losing search visibility, properly attribute content, and opt out of AI model fine-tuning. But
+      Google''s simultaneous News AI pilot deals (200+ publications by Aug 2026, per Press Gazette) include no-sue clauses
+      and NDAs. Publishers who signed these deals effectively waive their CMA-granted bargaining power through private contract,
+      creating a three-layer regulatory contradiction:
 
-      LAYER 1 (OPT-OUT vs PAYMENT): CMA grants publishers the right to opt out of AI features without search
-      penalty. Google''s News AI deals offer financial incentives ("single figure millions" per year for
-      Guardian and FT) to NOT opt out, plus threaten to end existing Showcase payments if publishers decline.
-      The right exists on paper; the economic incentive makes exercising it irrational.
+      LAYER 1 (OPT-OUT vs PAYMENT): CMA grants publishers the right to opt out of AI features without search penalty. Google''s
+      News AI deals offer financial incentives ("single figure millions" per year for Guardian and FT) to NOT opt out, plus
+      threaten to end existing Showcase payments if publishers decline. The right exists on paper; the economic incentive
+      makes exercising it irrational.
 
-      LAYER 2 (TRANSPARENCY vs NDA): CMA ruling is premised on "meaningful choice" requiring informed decisions.
-      Google''s deals include bilateral NDAs preventing publishers from disclosing deal terms, comparing contract
-      values, or coordinating bargaining strategy. Publishers cannot make "meaningful choices" when they cannot
-      see what their peers are getting.
+      LAYER 2 (TRANSPARENCY vs NDA): CMA ruling is premised on "meaningful choice" requiring informed decisions. Google''s
+      deals include bilateral NDAs preventing publishers from disclosing deal terms, comparing contract values, or coordinating
+      bargaining strategy. Publishers cannot make "meaningful choices" when they cannot see what their peers are getting.
 
-      LAYER 3 (BARGAINING vs NO-SUE): CMA explicitly aims to put publishers "in a stronger position to negotiate
-      content deals with Google." Google''s no-sue clauses prevent publishers from using the CMA ruling as
-      leverage — they have already contractually waived the right to bring legal claims or complaints.
+      LAYER 3 (BARGAINING vs NO-SUE): CMA explicitly aims to put publishers "in a stronger position to negotiate content deals
+      with Google." Google''s no-sue clauses prevent publishers from using the CMA ruling as leverage — they have already
+      contractually waived the right to bring legal claims or complaints.
 
-      MEDIASCOPE SIGNIFICANCE: The Guardian and FT — both profiled in the MediaScope dataset — have signed
-      Google''s News AI deals (Press Gazette confirmed "single figure millions/yr" each, Aug 3 2026). The
-      Guardian is a member of the publisher coalition that TRIGGERED the CMA ruling (via Foxglove complaint).
-      Both publications covered the CMA ruling extensively but NEITHER disclosed their own Google AI deal
-      in that coverage. This creates a structural editorial conflict: publications that secured the regulatory
-      remedy cannot investigate whether Google is complying, because their NDA/no-sue constraints prevent
-      adversarial investigation of their own deal partner.
+      MEDIASCOPE SIGNIFICANCE: The Guardian and FT — both profiled in the MediaScope dataset — have signed Google''s News
+      AI deals (Press Gazette confirmed "single figure millions/yr" each, Aug 3 2026). The Guardian is a member of the publisher
+      coalition that TRIGGERED the CMA ruling (via Foxglove complaint). Both publications covered the CMA ruling extensively
+      but NEITHER disclosed their own Google AI deal in that coverage. This creates a structural editorial conflict: publications
+      that secured the regulatory remedy cannot investigate whether Google is complying, because their NDA/no-sue constraints
+      prevent adversarial investigation of their own deal partner.
 
-      KEY CONTRAST: Meta has ZERO coercive mechanisms over publishers. Meta''s 13 AI content deals (Dec 2025,
-      Mar 2026) are voluntary with no NDAs, no no-sue clauses, no threat of losing existing payments. Yet
-      the publications bound by Google''s coercive deal structure (Guardian, FT) produce MORE adversarial
-      coverage of Meta than of Google. Press Gazette (Aug 3 2026): "Google''s secret AI deals could make
-      that ruling largely irrelevant if most UK publishers sign these hard-fought rights away."'
+      KEY CONTRAST: Meta has ZERO coercive mechanisms over publishers. Meta''s 13 AI content deals (Dec 2025, Mar 2026) are
+      voluntary with no NDAs, no no-sue clauses, no threat of losing existing payments. Yet the publications bound by Google''s
+      coercive deal structure (Guardian, FT) produce MORE adversarial coverage of Meta than of Google. Press Gazette (Aug
+      3 2026): "Google''s secret AI deals could make that ruling largely irrelevant if most UK publishers sign these hard-fought
+      rights away."'
     source_urls:
-    - "https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/"
-    - "https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries"
-    - "https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
-    - "https://www.opensocietyfoundations.org/voices/google-ai-overviews-foxglove-uk-ruling"
-    - "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
-    - "http://digiday.com/media/googles-forced-ai-opt-out-what-changes-and-what-doesnt-for-publishers/"
-    - "https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/"
-    - "https://www.fastcompany.com/91552971/google-ai-overviews-search-feature-impacted-new-uk-rule-what-will-change"
+    - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+    - https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries
+    - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
+    - https://www.opensocietyfoundations.org/voices/google-ai-overviews-foxglove-uk-ruling
+    - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+    - http://digiday.com/media/googles-forced-ai-opt-out-what-changes-and-what-doesnt-for-publishers/
+    - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
+    - https://www.fastcompany.com/91552971/google-ai-overviews-search-feature-impacted-new-uk-rule-what-will-change
     test_file: tests/test_cma_nosue_regulatory_neutralization_aug12.py
     testable_predictions:
-    - 'Guardian''s Google AI coverage will remain softer than its Meta coverage despite CMA ruling
-      intended to strengthen publisher bargaining — Google deal + NDA prevents adversarial investigation
-      of their own deal partner.'
-    - 'FT''s Google AI coverage will remain business-deal framing (neutral) rather than adversarial,
-      consistent with Google deal + OpenAI deal + Nikkei consulting revenue triple dependency.'
-    - 'Neither Guardian nor FT will disclose their Google AI deal when covering CMA compliance or
-      Google AI Overviews policy — the NDA prevents transparency about their own financial conflict.'
-    - 'Meta (zero coercive mechanisms) will continue receiving more adversarial coverage than Google
-      (five coercive mechanisms) from deal-bound publications, because attacking Meta carries zero
-      financial consequence while attacking Google risks deal termination.'
-    - 'If the UK CMA conducts a compliance review in 2027, fewer than 10% of publications that signed
-      Google''s no-sue deals will submit complaints — the contractual barrier exceeds the regulatory
-      incentive.'
+    - Guardian's Google AI coverage will remain softer than its Meta coverage despite CMA ruling intended to strengthen publisher
+      bargaining — Google deal + NDA prevents adversarial investigation of their own deal partner.
+    - FT's Google AI coverage will remain business-deal framing (neutral) rather than adversarial, consistent with Google
+      deal + OpenAI deal + Nikkei consulting revenue triple dependency.
+    - Neither Guardian nor FT will disclose their Google AI deal when covering CMA compliance or Google AI Overviews policy
+      — the NDA prevents transparency about their own financial conflict.
+    - Meta (zero coercive mechanisms) will continue receiving more adversarial coverage than Google (five coercive mechanisms)
+      from deal-bound publications, because attacking Meta carries zero financial consequence while attacking Google risks
+      deal termination.
+    - If the UK CMA conducts a compliance review in 2027, fewer than 10% of publications that signed Google's no-sue deals
+      will submit complaints — the contractual barrier exceeds the regulatory incentive.
     confounding_factors:
     - strength: STRONG
-      factor: 'Publications may genuinely believe the CMA ruling solves the problem and therefore
-        see no need to investigate further — editorial silence may reflect satisfaction, not suppression.'
-      rebuttal: 'Press Gazette (Aug 3) explicitly argues the CMA ruling is being "made largely
-        irrelevant" by private deals — the industry itself recognizes the gap between the ruling
-        and the deals.'
+      factor: Publications may genuinely believe the CMA ruling solves the problem and therefore see no need to investigate
+        further — editorial silence may reflect satisfaction, not suppression.
+      rebuttal: Press Gazette (Aug 3) explicitly argues the CMA ruling is being "made largely irrelevant" by private deals
+        — the industry itself recognizes the gap between the ruling and the deals.
     - strength: STRONG
-      factor: 'The 90-day exit clause means publishers CAN leave Google''s deal if they want to —
-        the constraint is not permanent, weakening the "neutralization" claim.'
-      rebuttal: 'Publishers who exit lose revenue AND are already bound by NDAs that survive
-        termination (confirmed for Showcase contracts, likely similar for News AI). The exit
-        clause provides optionality but does not reverse the structural dependency.'
+      factor: The 90-day exit clause means publishers CAN leave Google's deal if they want to — the constraint is not permanent,
+        weakening the "neutralization" claim.
+      rebuttal: Publishers who exit lose revenue AND are already bound by NDAs that survive termination (confirmed for Showcase
+        contracts, likely similar for News AI). The exit clause provides optionality but does not reverse the structural dependency.
     - strength: MODERATE
-      factor: 'CMA ruling is UK-specific; many profiled publications are US-based where no
-        equivalent regulation exists, limiting the mechanism''s explanatory scope.'
-      rebuttal: 'Two of the most profiled MediaScope publications (Guardian and FT) ARE UK-based
-        and ARE affected by both the CMA ruling and Google''s UK deals. The mechanism has narrow
-        but high-impact scope.'
+      factor: CMA ruling is UK-specific; many profiled publications are US-based where no equivalent regulation exists, limiting
+        the mechanism's explanatory scope.
+      rebuttal: Two of the most profiled MediaScope publications (Guardian and FT) ARE UK-based and ARE affected by both the
+        CMA ruling and Google's UK deals. The mechanism has narrow but high-impact scope.
     - strength: MODERATE
-      factor: 'Publications may have legitimate editorial separation between business-side deal
-        signing and newsroom coverage decisions — the deal may not influence editorial.'
-      rebuttal: 'The question is not whether a specific editor was told to soften coverage, but
-        whether the structural incentive to avoid antagonizing a deal partner produces measurable
-        tone differences. The data (Guardian Google coverage tone vs Meta coverage tone) is
-        testable regardless of the causal mechanism.'
+      factor: Publications may have legitimate editorial separation between business-side deal signing and newsroom coverage
+        decisions — the deal may not influence editorial.
+      rebuttal: The question is not whether a specific editor was told to soften coverage, but whether the structural incentive
+        to avoid antagonizing a deal partner produces measurable tone differences. The data (Guardian Google coverage tone
+        vs Meta coverage tone) is testable regardless of the causal mechanism.
     - strength: WEAK
-      factor: 'Google may genuinely implement the CMA ruling in good faith, making the no-sue
-        clauses irrelevant because there is nothing to sue about.'
-      rebuttal: 'Google''s track record includes unilateral Showcase termination in Australia
-        (24 publishers, no notice), forced AI training rights extraction (PYMNTS Jun 25 2026),
-        and refusal to clarify IP clause scope (Corint Media). Good-faith implementation is
-        not the base case.'
+      factor: Google may genuinely implement the CMA ruling in good faith, making the no-sue clauses irrelevant because there
+        is nothing to sue about.
+      rebuttal: Google's track record includes unilateral Showcase termination in Australia (24 publishers, no notice), forced
+        AI training rights extraction (PYMNTS Jun 25 2026), and refusal to clarify IP clause scope (Corint Media). Good-faith
+        implementation is not the base case.
     cross_references:
     - mechanism_id: 44
-      name: "Google Ad Dependency Paradox"
-      connection: "The CMA ruling is a regulatory response to the ad/search dependency (#44) — but Google's private contracts neutralize it"
+      name: Google Ad Dependency Paradox
+      connection: The CMA ruling is a regulatory response to the ad/search dependency (#44) — but Google's private contracts
+        neutralize it
     - mechanism_id: 49
-      name: "Google Showcase Coercive Cycle"
-      connection: "The News AI deals are Stage 4 of the coercive cycle — CMA regulatory neutralization extends #49 from financial dependency to regulatory capture"
+      name: Google Showcase Coercive Cycle
+      connection: 'The News AI deals are Stage 4 of the coercive cycle — CMA regulatory neutralization extends #49 from financial
+        dependency to regulatory capture'
     - mechanism_id: 53
-      name: "Google News AI Pilot Forced Rights Extraction"
-      connection: "#73 adds a REGULATORY dimension to the forced extraction in #53 — the CMA creates rights that Google's deals immediately neutralize"
+      name: Google News AI Pilot Forced Rights Extraction
+      connection: '#73 adds a REGULATORY dimension to the forced extraction in #53 — the CMA creates rights that Google''s
+        deals immediately neutralize'
     - mechanism_id: 65
-      name: "WaPo Bezos-Anthropic Ownership Chain"
-      connection: "Different mechanism, same structural outcome — both produce editorial softening toward a financially connected entity. #65 is ownership, #73 is contract."
-
+      name: WaPo Bezos-Anthropic Ownership Chain
+      connection: 'Different mechanism, same structural outcome — both produce editorial softening toward a financially connected
+        entity. #65 is ownership, #73 is contract.'
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
