@@ -1,3 +1,19 @@
+## Iteration 72 — 2026-08-12 19:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #72: Nitasha Tiku — Tech Culture Beat Structural Independence (Company-Agnostic Adversarial Coverage with Anthropic Gap)
+
+**Finding:** Nitasha Tiku (WaPo) is one of the ONLY reporters applying adversarial framing across ALL major AI entities (Google, OpenAI, Meta, xAI, Character AI) without entity-specific bifurcation. Three structural factors: (1) tech culture beat is company-agnostic by definition, (2) deepest Gawker/Valleywag lineage in dataset — was EDITOR, not just contributor, (3) layoff-rehire cycle (Feb 2026 WaPo mass layoff, rehired ~Mar-Apr 2026) weakened institutional loyalty. CRITICAL sub-finding: Anthropic Gap — despite universal adversarial coverage, no dedicated adversarial investigation of Anthropic, consistent with Mechanism #65 (Bezos→Amazon→$13B Anthropic). Second WaPo reporter (after De Vynck #71) exhibiting ownership-chain blind spot, strengthening N=2 institutional pattern. CONTRAST with Zeff (#63): same Gawker lineage, different outcome at WIRED vs WaPo — beat structure is the differentiating variable.
+
+**Career path:** NYMag → NY Observer (Betabeat) → Gawker/Valleywag EDITOR → The Verge → BuzzFeed News → WIRED (2017–2019) → Washington Post (Sep 2019, laid off Feb 4 2026, rehired ~Mar-Apr 2026).
+
+**Data fixes:** Merged duplicate Tiku entry in journalists.yaml, fixed De Vynck career start/end field naming, updated all doc counts (255 journalists, 242 multi-pub, 757 migrations, 10887 tests / 336 files), added 4 missing test files to README/ARCHITECTURE.
+
+**Files changed:** `tests/test_nitasha_tiku_cross_entity_aug12.py` (NEW: 50 tests), `profiles/competitor-coverage-research.yaml`, `profiles/careers/journalists.yaml`, `README.md`, `docs/ARCHITECTURE.md`, `docs/EDITORIAL_HISTORIES.md`, `examples/careers_demo.py`
+
+**Tests:** 50 new (11 classes), all passing. Structural consistency: 124/124 passing.
+
+**Commit:** 952f612
+
 ## Iteration 71 — 2026-08-12 16:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #69: NYT Meta AI Coverage Bifurcation — Open-Source Philosophy (Positive) vs Execution Performance (Adversarial), Aligned with Litigation Interests

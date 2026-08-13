@@ -6543,6 +6543,123 @@ cross_publication_findings:
     - mechanism_id: 67
       name: "WSJ Beat Assignment Asymmetry (Nicole Nguyen)"
       connection: "Tiku is the counter-example to beat-assignment asymmetry — her company-agnostic tech culture beat produces uniform adversarial coverage across entities, unlike company-specific beats."
+  cma_nosue_regulatory_neutralization:
+    mechanism_id: 73
+    name: "CMA Regulatory Remedy Neutralization — Google's Private No-Sue Contracts Undermining Public Regulatory Protections"
+    date_added: '2026-08-12'
+    discovery_date: '2026-08-12'
+    publication: cross_publication
+    journalist: null
+    finding_type: financial_regulatory_contradiction
+    rotation_type: C
+    extends_mechanisms:
+    - 44
+    - 49
+    - 53
+    finding_summary: 'The UK CMA issued a "world-first" ruling on June 3, 2026 requiring Google to let publishers
+      opt out of AI Overviews without losing search visibility, properly attribute content, and opt out of
+      AI model fine-tuning. But Google''s simultaneous News AI pilot deals (200+ publications by Aug 2026, per
+      Press Gazette) include no-sue clauses and NDAs. Publishers who signed these deals effectively waive their
+      CMA-granted bargaining power through private contract, creating a three-layer regulatory contradiction:
+
+      LAYER 1 (OPT-OUT vs PAYMENT): CMA grants publishers the right to opt out of AI features without search
+      penalty. Google''s News AI deals offer financial incentives ("single figure millions" per year for
+      Guardian and FT) to NOT opt out, plus threaten to end existing Showcase payments if publishers decline.
+      The right exists on paper; the economic incentive makes exercising it irrational.
+
+      LAYER 2 (TRANSPARENCY vs NDA): CMA ruling is premised on "meaningful choice" requiring informed decisions.
+      Google''s deals include bilateral NDAs preventing publishers from disclosing deal terms, comparing contract
+      values, or coordinating bargaining strategy. Publishers cannot make "meaningful choices" when they cannot
+      see what their peers are getting.
+
+      LAYER 3 (BARGAINING vs NO-SUE): CMA explicitly aims to put publishers "in a stronger position to negotiate
+      content deals with Google." Google''s no-sue clauses prevent publishers from using the CMA ruling as
+      leverage — they have already contractually waived the right to bring legal claims or complaints.
+
+      MEDIASCOPE SIGNIFICANCE: The Guardian and FT — both profiled in the MediaScope dataset — have signed
+      Google''s News AI deals (Press Gazette confirmed "single figure millions/yr" each, Aug 3 2026). The
+      Guardian is a member of the publisher coalition that TRIGGERED the CMA ruling (via Foxglove complaint).
+      Both publications covered the CMA ruling extensively but NEITHER disclosed their own Google AI deal
+      in that coverage. This creates a structural editorial conflict: publications that secured the regulatory
+      remedy cannot investigate whether Google is complying, because their NDA/no-sue constraints prevent
+      adversarial investigation of their own deal partner.
+
+      KEY CONTRAST: Meta has ZERO coercive mechanisms over publishers. Meta''s 13 AI content deals (Dec 2025,
+      Mar 2026) are voluntary with no NDAs, no no-sue clauses, no threat of losing existing payments. Yet
+      the publications bound by Google''s coercive deal structure (Guardian, FT) produce MORE adversarial
+      coverage of Meta than of Google. Press Gazette (Aug 3 2026): "Google''s secret AI deals could make
+      that ruling largely irrelevant if most UK publishers sign these hard-fought rights away."'
+    source_urls:
+    - "https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/"
+    - "https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries"
+    - "https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
+    - "https://www.opensocietyfoundations.org/voices/google-ai-overviews-foxglove-uk-ruling"
+    - "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
+    - "http://digiday.com/media/googles-forced-ai-opt-out-what-changes-and-what-doesnt-for-publishers/"
+    - "https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/"
+    - "https://www.fastcompany.com/91552971/google-ai-overviews-search-feature-impacted-new-uk-rule-what-will-change"
+    test_file: tests/test_cma_nosue_regulatory_neutralization_aug12.py
+    testable_predictions:
+    - 'Guardian''s Google AI coverage will remain softer than its Meta coverage despite CMA ruling
+      intended to strengthen publisher bargaining — Google deal + NDA prevents adversarial investigation
+      of their own deal partner.'
+    - 'FT''s Google AI coverage will remain business-deal framing (neutral) rather than adversarial,
+      consistent with Google deal + OpenAI deal + Nikkei consulting revenue triple dependency.'
+    - 'Neither Guardian nor FT will disclose their Google AI deal when covering CMA compliance or
+      Google AI Overviews policy — the NDA prevents transparency about their own financial conflict.'
+    - 'Meta (zero coercive mechanisms) will continue receiving more adversarial coverage than Google
+      (five coercive mechanisms) from deal-bound publications, because attacking Meta carries zero
+      financial consequence while attacking Google risks deal termination.'
+    - 'If the UK CMA conducts a compliance review in 2027, fewer than 10% of publications that signed
+      Google''s no-sue deals will submit complaints — the contractual barrier exceeds the regulatory
+      incentive.'
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Publications may genuinely believe the CMA ruling solves the problem and therefore
+        see no need to investigate further — editorial silence may reflect satisfaction, not suppression.'
+      rebuttal: 'Press Gazette (Aug 3) explicitly argues the CMA ruling is being "made largely
+        irrelevant" by private deals — the industry itself recognizes the gap between the ruling
+        and the deals.'
+    - strength: STRONG
+      factor: 'The 90-day exit clause means publishers CAN leave Google''s deal if they want to —
+        the constraint is not permanent, weakening the "neutralization" claim.'
+      rebuttal: 'Publishers who exit lose revenue AND are already bound by NDAs that survive
+        termination (confirmed for Showcase contracts, likely similar for News AI). The exit
+        clause provides optionality but does not reverse the structural dependency.'
+    - strength: MODERATE
+      factor: 'CMA ruling is UK-specific; many profiled publications are US-based where no
+        equivalent regulation exists, limiting the mechanism''s explanatory scope.'
+      rebuttal: 'Two of the most profiled MediaScope publications (Guardian and FT) ARE UK-based
+        and ARE affected by both the CMA ruling and Google''s UK deals. The mechanism has narrow
+        but high-impact scope.'
+    - strength: MODERATE
+      factor: 'Publications may have legitimate editorial separation between business-side deal
+        signing and newsroom coverage decisions — the deal may not influence editorial.'
+      rebuttal: 'The question is not whether a specific editor was told to soften coverage, but
+        whether the structural incentive to avoid antagonizing a deal partner produces measurable
+        tone differences. The data (Guardian Google coverage tone vs Meta coverage tone) is
+        testable regardless of the causal mechanism.'
+    - strength: WEAK
+      factor: 'Google may genuinely implement the CMA ruling in good faith, making the no-sue
+        clauses irrelevant because there is nothing to sue about.'
+      rebuttal: 'Google''s track record includes unilateral Showcase termination in Australia
+        (24 publishers, no notice), forced AI training rights extraction (PYMNTS Jun 25 2026),
+        and refusal to clarify IP clause scope (Corint Media). Good-faith implementation is
+        not the base case.'
+    cross_references:
+    - mechanism_id: 44
+      name: "Google Ad Dependency Paradox"
+      connection: "The CMA ruling is a regulatory response to the ad/search dependency (#44) — but Google's private contracts neutralize it"
+    - mechanism_id: 49
+      name: "Google Showcase Coercive Cycle"
+      connection: "The News AI deals are Stage 4 of the coercive cycle — CMA regulatory neutralization extends #49 from financial dependency to regulatory capture"
+    - mechanism_id: 53
+      name: "Google News AI Pilot Forced Rights Extraction"
+      connection: "#73 adds a REGULATORY dimension to the forced extraction in #53 — the CMA creates rights that Google's deals immediately neutralize"
+    - mechanism_id: 65
+      name: "WaPo Bezos-Anthropic Ownership Chain"
+      connection: "Different mechanism, same structural outcome — both produce editorial softening toward a financially connected entity. #65 is ownership, #73 is contract."
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

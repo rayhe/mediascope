@@ -695,7 +695,8 @@ competitor_relationships:
     coverage_prediction: "neutral"
   google:
     financial_tie: "commercial_partnership"
-    estimated_value: "undisclosed"
+    estimated_value: "Single figure millions GBP/yr (Press Gazette Aug 3 2026)"
+    annual_revenue_range: "single figure millions per year (confirmed by Press Gazette Aug 2026)"
     direction: "receiving"
     description: |
       FT joined Google's 'News AI pilot' commercial partnership in Feb 2026

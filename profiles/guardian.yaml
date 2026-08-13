@@ -564,7 +564,8 @@ revenue_relationships:
     source_url: "https://adexchanger.com/publishers/the-guardian-us-is-following-programmatic-budgets-to-private-marketplaces/"
   - partner: "Google (News AI Pilot)"
     relationship_type: "ai_licensing_pilot"
-    estimated_value: "Undisclosed (direct payments from Google; replaces/extends Google Showcase fees)"
+    estimated_value: "Single figure millions GBP/yr (Press Gazette Aug 3 2026)"
+    annual_revenue_range: "single figure millions per year (confirmed by Press Gazette Aug 2026)"
     description: >
       CRITICAL NEW FINDING: Guardian is an INITIAL PARTNER in Google's News AI pilot program,
       launched December 2025. Partners include The Washington Post, Der Spiegel, El País, Folha,

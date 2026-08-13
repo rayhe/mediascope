@@ -3367,6 +3367,55 @@ entities:
       - https://www.fastly.com/blog/google-ai-deal-no-publisher-wanted
       - https://www.reuters.com/world/americas/google-pay-publishers-1-bln-over-three-years-their-news-2020-10-01/
       - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+    cma_regulatory_neutralization:
+      cma_ruling_date: '2026-06-04'
+      opt_out_without_search_penalty: true
+      implementation_months: 9
+      compliance_report_interval_months: 6
+      complaint_filer: Foxglove (Open Society Foundations grantee)
+      news_ai_pilot_publications_global: 200
+      deal_nosue_clauses: true
+      deal_nda_clauses: true
+      deal_duration_years: 2
+      deal_exit_notice_days: 90
+      showcase_sunset_confirmed: true
+      traffic_loss_top_ranked_pct: 79
+      deal_characterization: "Renting peace — prisoner's dilemma. Industry source:
+        'These deals don't have product value, they are renting peace and that
+        means the deals will go away.' AI strategy advisor: 'It is the prisoner's
+        dilemma because your competitors have already caved.'"
+      press_gazette_assessment: "Google's secret AI deals could make that ruling
+        largely irrelevant if most UK publishers sign these hard-fought rights away."
+      contradiction_layers:
+      - name: opt_out_vs_payment
+        cma_grants: Right to opt out of AI features without losing search visibility
+        google_neutralizes: Financial incentives (single figure millions/yr) to NOT opt out, plus threat of losing Showcase fees
+      - name: transparency_vs_nda
+        cma_grants: Meaningful choice requiring informed decisions
+        google_neutralizes: Bilateral NDAs preventing disclosure of deal terms, value comparisons, or coordinated bargaining
+      - name: bargaining_vs_nosue
+        cma_grants: Stronger bargaining position for content deals
+        google_neutralizes: No-sue clauses preventing legal claims or regulatory complaints using CMA-granted rights
+      coalition_members_who_signed_deal:
+      - The Guardian
+      - Financial Times
+      testable_predictions:
+      - "Guardian's Google AI coverage will remain softer than its Meta coverage despite CMA ruling — Google deal + NDA prevents adversarial investigation"
+      - "FT's Google AI coverage will remain business-deal framing (neutral), consistent with Google deal + OpenAI deal + Nikkei consulting revenue"
+      - "Neither Guardian nor FT will disclose their Google AI deal when covering CMA compliance — NDA prevents transparency"
+      - "Meta (zero coercive mechanisms) will continue receiving more adversarial coverage than Google from deal-bound publications"
+      meta_contrast:
+        nosue_clauses: false
+        coercive_mechanisms: 0
+        google_coercive_mechanisms: 5
+        deal_model: voluntary
+      source_urls:
+      - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+      - https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries
+      - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
+      - https://www.opensocietyfoundations.org/voices/google-ai-overviews-foxglove-uk-ruling
+      - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+      - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
     anthropic_spv_guarantee_exposure:
       overview: 'Google is payment GUARANTOR on Anthropic''s $35B off-balance-sheet
         SPV lease financing (Apollo/Blackstone, Jul 2026). If Anthropic defaults on
