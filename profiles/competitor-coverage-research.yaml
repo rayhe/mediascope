@@ -7294,6 +7294,105 @@ cross_publication_findings:
       - "Meta Inverse Leverage — Meta's LACK of financial relationships inversely predicts coverage intensity"
       - "Google Ad Dependency Paradox — Google's ad dominance creates coverage self-censorship"
       - "WIRED Copyright Piracy Framing Parity — framing pattern analysis (this mechanism is about FINANCIAL incentives behind selection)"
+  publisher_revenue_collapse_ai_deal_dependency_spiral:
+    mechanism_id: 82
+    date_added: '2026-08-13'
+    discovery_date: '2026-08-13'
+    finding_type: financial_incentive_mapping
+    key_finding: Publisher Revenue Collapse Accelerating AI Deal Financial Materiality — The Dependency Spiral
+    mechanism: financial_dependency_spiral
+    finding_summary: >
+      As publisher revenue from traditional sources (traffic-based ads, subscriptions) collapses under
+      AI search disruption, AI content licensing deal payments become a larger proportion of shrinking
+      total revenue. This creates a dependency spiral where the financial incentive to produce softer
+      coverage of AI deal partners STRENGTHENS over time. Key evidence: publisher ad supply fell up to
+      40% in Q2 2026 (Digiday); AI scraping jumped 55% in Q4 2025 while CTR dropped regardless of
+      whether publishers had deals (TollBit); the 'deal premium' in CTR evaporated by Q4 2025 amid a
+      six-fold collapse (Brookings/Open Markets Institute); Google crawl-to-referral ratio 10:1 vs
+      OpenAI 1,200:1 to 1,700:1 (Cloudflare); DMG Media reported 89% CTR drop from AI Overviews (CMA
+      filing); zero-click searches rose 56% to 69% (2024-2025). Roger Lynch (Conde Nast CEO) explicitly
+      stated the OpenAI deal 'begins to make up for some of that revenue' lost from search changes —
+      confirming AI deal payments are becoming REPLACEMENT revenue. Conde Nast now has 4+ simultaneous
+      AI deals (OpenAI, Amazon Rufus, Microsoft PCM, Perplexity) while WIRED directs adversarial coverage
+      at Meta (zero deal partner, direct ad competitor). 91 publicly announced AI content deals tracked
+      (Rob Kelly, Jun 2026); OpenAI leads with 24, Anthropic has ZERO. The dependency spiral is a
+      structural amplifier for ALL existing MediaScope financial incentive mechanisms.
+    publication: cross_publication
+    conde_nast_deal_portfolio:
+      openai: Aug 2024
+      amazon_rufus: Jul 2025
+      microsoft_pcm: Feb 2026
+      perplexity: '2025'
+      meta: ZERO
+    lynch_admission:
+      quote: begins to make up for some of that revenue
+      context: lost from search changes
+      source_url: https://www.thewrap.com/conde-nast-openai-deal-revenue/
+    traffic_collapse_data:
+      ai_overview_ctr_drop_pct: 46.7
+      zero_click_increase: 56% to 69% (2024-2025)
+      google_crawl_referral_ratio: '10:1'
+      openai_crawl_referral_ratio: '1200:1 to 1700:1'
+      dmg_media_ctr_drop_pct: 89
+      publisher_ad_supply_drop_q2_2026_pct: 40
+      ai_scraping_increase_q4_2025_pct: 55
+    deal_landscape_jun_2026:
+      total_public_deals: 91
+      openai_deals: 24
+      meta_deals: 13
+      anthropic_deals: 0
+      news_journalism_deals: 48
+      source: Rob Kelly / Media & the Machine (Jun 2026)
+    publisher_traffic_declines_jun2025_jun2026:
+      usa_today_pct: -18
+      politico_pct: -20
+      cnn_pct: -31
+      business_insider_pct: -35
+      source: Semrush via Search Engine Journal
+    confounding_factors:
+    - factor: Deal payments may be too small to influence editorial decisions
+      strength: STRONG
+    - factor: Editorial independence policies prevent financial influence on coverage
+      strength: STRONG
+    - factor: Meta genuinely has more privacy and child safety issues
+      strength: MODERATE
+    - factor: Traffic decline affects all publishers equally regardless of coverage
+      strength: MODERATE
+    - factor: Publisher subscription revenue may offset traffic losses
+      strength: WEAK
+    - factor: AI companies may lose interest in content deals
+      strength: WEAK
+    testable_predictions:
+    - As Q3-Q4 2026 earnings reveal further traffic declines, deal-holding pubs will increase positive coverage of deal partners
+    - If a major pub loses its AI deal, adversarial coverage of that AI company will increase within 90 days
+    - Pubs where deal revenue exceeds 5% of total will show statistically softer deal-partner coverage
+    - Conde Nast AI deal portfolio will grow to 6+ by end 2026 while WIRED adversarial focus stays on Meta
+    cross_references:
+    - mechanism_id: 58
+      name: Conde Nast AI Deal Portfolio Dependency Index
+      connection: '#58 documents the deal portfolio; #82 documents the structural force making each deal increasingly material'
+    - mechanism_id: 47
+      name: Google Ad Dependency Paradox
+      connection: Google AI Overviews is the primary traffic collapse driver
+    - mechanism_id: 73
+      name: CMA Regulatory Neutralization
+      connection: Private no-sue/NDA deals keep publishers locked in the dependency spiral
+    - mechanism_id: 41
+      name: Microsoft Septuple Leverage
+      connection: PCM adds marketplace layer to dependency spiral
+    - mechanism_id: 64
+      name: Cloudflare Publisher AI Crawl Block
+      connection: Dependency spiral prevents publishers from blocking deal partners crawlers
+    source_urls:
+    - https://digiday.com/media/publisher-ad-supply-fell-by-up-to-40-in-q2-as-ai-search-choked-the-open-web/
+    - https://www.thecurrent.com/marketing-strategy-ai-reshaping-open-internet-buy-side-paying-attention
+    - https://www.brookings.edu/articles/same-gatekeepers-new-tollbooths-in-the-ai-content-licensing-market/
+    - https://www.searchenginejournal.com/llm-payments-to-publishers-the-new-economics-of-search/562124/
+    - https://www.campaignlive.com/article/1-click-through-rate-google-ai-overviews-killing-publishers/1927692
+    - https://mediaandthemachine.substack.com/p/ai-content-licensing-deals-june-2026
+    - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+    test_count: 70
+    test_file: tests/test_publisher_revenue_collapse_ai_deal_dependency_spiral_aug13.py
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
