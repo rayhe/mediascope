@@ -1,3 +1,9 @@
+## Iteration 89 — Thu 2026-08-13 16:00 PT (Type C: Financial Incentive Mapping)
+- **Mechanism #88:** Publisher AI Deal Revolt — Dual-Channel Financial Leverage Decoupling
+- **Finding:** July 2026 multi-publisher revolt against Google AI content access (WSJ Jul 22). Six publishers (Reddit, USA Today, Reuters, Politico, The Economist, People Inc) considering exit. Dual-channel model: publishers can exit AI licensing deals (Channel 1) but cannot exit Google programmatic ad dependency (Channel 2). Revolt targets Channel 1 only — Channel 2 keeps them locked. Samsung glasses coverage silence persists via Channel 2.
+- **Stats:** 11,221 tests / 356 files / 88 mechanisms
+- **Commit:** 245e1ac
+
 ## Iteration 88 — 2026-08-13 15:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #87: FT Dual-Partner Wearables Coverage Silence — Samsung/Google Glasses Privacy Investigation Gap
