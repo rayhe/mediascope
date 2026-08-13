@@ -1,3 +1,32 @@
+## Iteration 79 — 2026-08-13 02:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #77: NYT Smart Glasses Coverage Selection Asymmetry — NameTag Investigation Exclusivity vs Samsung/Google Hardware Silence
+
+**Finding:** The New York Times broke the Meta NameTag facial recognition exclusive (Feb 13, 2026) with leaked internal memos, triggering a chain reaction: 75+ org ACLU coalition letter, Senate letters (Wyden/Merkley/Markey), and New York state courtroom bans. Samsung and Google launched IDENTICAL camera-equipped smart glasses (Google I/O May 19, Galaxy Unpacked Jul 22, 2026) with the SAME privacy-relevant hardware: 12MP camera, privacy LED with anti-tamper detection, AI visual processing (Google Gemini). NYT has published ZERO standalone privacy investigations of Samsung/Google glasses.
+
+**Coverage differential:**
+
+| Entity | NYT Privacy Investigations | Hardware (cameras) | AI Platform |
+|--------|---------------------------|--------------------|-------------|
+| Meta | 3+ (NameTag, LED, data) | 1x 12MP | Meta AI |
+| Samsung | 0 | 1x 12MP | Google Gemini |
+| Google | 0 | N/A (platform) | Google Gemini |
+| Apple | 0 | Planned (N50) | Siri (planned) |
+
+**Critical distinction — Google Gemini visual identification:** Google Gemini on Samsung glasses has ACCESS to Google's entire user data ecosystem (Search, Gmail, Maps, Photos, YouTube). When a user asks Samsung glasses "who is this?" — Gemini's visual identification capability (Google Lens) can identify public figures WITHOUT a dedicated "NameTag" feature. This is a SHIPPING AI capability, not a leaked plan. Yet it receives no NYT investigative scrutiny.
+
+**Financial context:** Samsung is 4th-largest global advertiser ($9.7B/yr) — significant NYT ad buyer. Google provides NYT $100M+/yr in programmatic ad revenue (structurally dominant). Meta is NYT's direct ad competitor with NO ad revenue relationship. NYT is SUING Google (PMC v. Google, D.D.C.) — partially offsetting Google leverage.
+
+**Confounding factors (7):** Source access (STRONG — NYT had leaked Meta docs, may not have Samsung sources); NameTag was specifically facial recognition (STRONG — Samsung hasn't announced FR); timing (STRONG — Samsung launched after NameTag story); beat assignment (MODERATE — NYT has Meta beat reporters, no Samsung wearables reporter); Cambridge Analytica legacy (MODERATE — Meta is default privacy villain); NYT-Google litigation (MODERATE — adversarial posture offsets ad dependency); AI capability vs feature distinction (WEAK — Google Lens is general, not dedicated FR).
+
+**4 testable predictions:** (1) NYT will NOT publish standalone Samsung glasses privacy investigation within 90 days of Fall 2026 launch; (2) If Samsung announces facial recognition, NYT will use softer vocabulary than NameTag reporting; (3) Publications with lower Samsung ad revenue are more likely to investigate Samsung glasses; (4) If Gemini on Samsung glasses does visual identification, NYT will frame it as a "Google AI feature" not a "Samsung surveillance tool."
+
+**Files changed:** `tests/test_nyt_samsung_glasses_coverage_selection_silence_aug13.py` (NEW: 22 tests, 9 classes), `profiles/competitor-coverage-research.yaml` (Mechanism #77), `README.md`, `docs/ARCHITECTURE.md`
+
+**Tests:** 22 new (9 classes), all passing. Structural consistency: 124/124 passing. Total: **11,166 tests** across **343 files**.
+
+**Commit:** a0baa20
+
 ## Iteration 78 — 2026-08-13 01:00 PT (Type D: Test & Verify)
 
 ### Data Integrity Sweep — 9 Missing test_file Refs, Stale Assertions, count_stats Class-Level Parametrize Fix
