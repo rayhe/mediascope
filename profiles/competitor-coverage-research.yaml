@@ -6998,6 +6998,81 @@ cross_publication_findings:
       - "Mechanism #69: NYT Meta AI Coverage Bifurcation"
       - "Mechanism #49: Bobrowsky Smart Glasses Entity-Targeting Concentration (WSJ)"
 
+  parallel_publisher_copyright_litigation_financial_conflict:
+    mechanism_id: 79
+    title: "Parallel Publisher Copyright Litigation Financial Conflict — Same Plaintiffs, Different Defendants, Asymmetric Financial Incentives"
+    finding_summary: >
+      The same book publisher coalition (Hachette, Cengage, Elsevier, Scott Turow)
+      filed nearly identical copyright infringement class action lawsuits against
+      BOTH Meta (May 5, 2026, Case 1:26-cv-03689) and Google (Jul 10, 2026,
+      Case 1:26-cv-05870) in the same court (S.D.N.Y.), with the same core
+      allegations — "one of the most massive/prolific infringements of copyrighted
+      materials in history." This creates a NATURAL EXPERIMENT for coverage
+      analysis: independent variable is the defendant, everything else is controlled.
+
+      Financial incentive asymmetry predicting coverage direction:
+      (1) ZERO profiled publications have a Meta financial relationship that would
+          constrain adversarial copyright lawsuit coverage. Meta is publishers'
+          direct ad competitor ($243.46B TTM). Coverage is unconstrained.
+      (2) EVERY profiled publication depends on Google for programmatic ad revenue
+          ($239.54B TTM Google ads). Several have Google News Showcase deals.
+          Adversarial Google copyright coverage risks the publication's primary
+          revenue channel.
+      (3) PUBLISHER-AS-LICENSOR PARADOX: Publications with AI content deals (Condé
+          Nast → OpenAI/Amazon/Microsoft/Perplexity; FT → OpenAI; News Corp →
+          OpenAI + Meta; WaPo → OpenAI/Amazon) face structural conflict — the
+          lawsuits argue AI training is infringement, while publications' own
+          licensing deals treat it as a licensable right. Adversarial coverage
+          could undermine the legal basis that makes their own deals valuable.
+
+      Key factual asymmetry: Google's internal documents acknowledge "$10Bs-$100Bs
+      in potential fines" (per complaint) — a STRONGER admission of wrongdoing
+      than anything in the Meta complaint. Yet the Meta complaint names Zuckerberg
+      personally and includes dramatic internal comms ("torrenting from a corporate
+      laptop doesn't feel right"), creating more compelling narrative. Financial
+      incentive predicts which admission gets more coverage intensity.
+
+      Anthropic settlement benchmark: $1.5B final approval Jul 20, 2026 — largest
+      payout in US copyright history, ~500K eligible writers, $3K+ minimum payment.
+    date_added: "2026-08-13"
+    test_file: tests/test_parallel_publisher_copyright_litigation_financial_conflict_aug13.py
+    type: "Type C: Financial Incentive Mapping"
+    sources:
+      - description: "Elsevier v. Meta (S.D.N.Y. Case 1:26-cv-03689, filed May 5, 2026)"
+        url: "https://publishers.org/news/publishers-and-authors-file-class-action-lawsuit-against-meta-and-zuckerberg-for-willful-copyright-infringement-to-develop-llama-ai-models/"
+      - description: "Hachette v. Google (S.D.N.Y. Case 1:26-cv-05870, filed Jul 10, 2026)"
+        url: "https://gizmodo.com/hatchette-and-elsevier-sue-google-for-using-their-work-to-train-ai-2000785480"
+      - description: "Adweek coverage of Google lawsuit — notes identical plaintiff roster"
+        url: "https://www.adweek.com/media/book-publishers-sue-google/"
+      - description: "Reuters coverage of Meta lawsuit"
+        url: "https://www.reuters.com/sustainability/boards-policy-regulation/major-publishers-sue-meta-copyright-infringement-over-ai-training-2026-05-05/"
+      - description: "TechCrunch coverage + Anthropic $1.5B settlement context"
+        url: "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/"
+    confounding_factors:
+      - strength: STRONG
+        factor: "Cambridge Analytica / Facebook Papers legacy makes Meta the default infringer in editorial priors"
+      - strength: STRONG
+        factor: "Zuckerberg named personally in Meta suit; no CEO named in Google suit — creates more compelling narrative regardless of financial incentives"
+      - strength: STRONG
+        factor: "Meta complaint contains more dramatic internal comms (torrenting, Zuckerberg escalation) than Google complaint"
+      - strength: MODERATE
+        factor: "Meta lawsuit filed 2 months before Google — temporal novelty gives first-filed suit more attention"
+      - strength: MODERATE
+        factor: "Meta Llama is open-source — pirated content embedded in freely available model, amplifying perceived harm"
+      - strength: WEAK
+        factor: "Google's $10B-$100B internal risk estimate partially offsets narrative disadvantage — should generate more coverage, not less"
+    testable_predictions:
+      - "Profiled publications will produce MORE standalone articles about the Meta copyright lawsuit than the Google copyright lawsuit over the 6-month period following each filing"
+      - "Coverage of Meta lawsuit will use MORE loaded/adversarial language than coverage of Google lawsuit, despite Google's stronger self-assessed risk admission"
+      - "Google's '$10Bs-$100Bs in potential fines' internal estimate will appear in FEWER headlines than Meta's 'escalation to Zuckerberg' or 'corporate torrenting' language"
+      - "If Google settles (following Anthropic $1.5B pattern), it will be framed as 'industry standard' — if Meta settles, as 'accountability' or 'admission'"
+    related_mechanisms:
+      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
+      - "Mechanism #77: NYT Samsung Glasses Coverage Selection Silence"
+      - "Meta Inverse Leverage — Meta's LACK of financial relationships inversely predicts coverage intensity"
+      - "Google Ad Dependency Paradox — Google's ad dominance creates coverage self-censorship"
+      - "WIRED Copyright Piracy Framing Parity — framing pattern analysis (this mechanism is about FINANCIAL incentives behind selection)"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

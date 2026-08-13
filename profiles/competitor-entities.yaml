@@ -2352,6 +2352,25 @@ entities:
         sued BY book publishers for the same underlying AI training.
 
         '
+      parallel_litigation_mechanism_79: 'NATURAL EXPERIMENT (Mechanism #79): The same plaintiff
+
+        coalition (Hachette, Cengage, Elsevier, Turow) filed nearly identical
+
+        lawsuits against BOTH Google (Jul 10, 1:26-cv-05870) and Meta (May 5,
+
+        1:26-cv-03689) in S.D.N.Y. Same court, same plaintiffs, same legal theory.
+
+        Google internally acknowledged "$10Bs-$100Bs in potential fines" — a
+
+        stronger admission than anything in the Meta complaint. Yet Meta has
+
+        ZERO financial relationships with adversarial publications, while Google
+
+        provides all profiled publications with programmatic ad revenue ($239.54B
+
+        TTM). Financial incentive predicts which lawsuit receives more adversarial
+
+        coverage. See test_parallel_publisher_copyright_litigation_financial_conflict_aug13.py.'
     q2_2026_earnings:
       report_date: '2026-07-22'
       quarter_ended: '2026-06-30'
