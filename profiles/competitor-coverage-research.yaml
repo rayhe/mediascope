@@ -1516,6 +1516,46 @@ cross_entity_leverage:
     - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
     - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
 cross_publication_findings:
+  essilorluxottica_conde_nast_advertising_paradox:
+    mechanism_id: 103
+    name: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding: >
+      EssilorLuxottica spends ~€1.8-2B/yr on advertising/marketing (H1 2023:
+      €828M = 6.4% of revenue). Ray-Ban and Oakley campaigns flow to Condé
+      Nast fashion titles (Vogue, GQ, Vanity Fair). Oakley maintained a DIRECT
+      "global brand alliance" with WIRED (~2014) — co-created sponsored content
+      + brand advertising in print and on WIRED.com. Yet WIRED produces the
+      most adversarial coverage of Meta Ray-Ban and Oakley Meta glasses, the
+      SAME products driving EssilorLuxottica's fastest-growing revenue (AI
+      glasses nearly doubled Q2 2026, 7M+ units FY2025). EssilorLuxottica's
+      ad revenue flows to the PARENT (Condé Nast/Advance) that also owns
+      WIRED, but adversarial framing targets "Meta" not "Ray-Ban"/"Oakley."
+      Samsung contrast: Samsung's $9.7B ad spend creates softer coverage (#76);
+      EssilorLuxottica's ~€2B does NOT — because "Meta" in the product name
+      overrides the manufacturing partner's advertising relationship.
+    entities_involved:
+      - EssilorLuxottica (Meta manufacturing partner, ~€2B ad spend)
+      - Condé Nast (parent of WIRED + Vogue/GQ/VF, receives EL ad revenue)
+      - Advance Publications (ultimate parent of Condé Nast)
+      - Meta (brand trigger in "Meta Ray-Ban" / "Oakley Meta")
+      - Samsung (contrast case — $9.7B ad spend creates softer coverage)
+    significance: >
+      Demonstrates that even a direct historical advertising partnership
+      between an EssilorLuxottica brand (Oakley) and WIRED did not create
+      durable coverage softness. The "Meta" brand name in the product
+      overrides any advertising financial relationship, isolating brand-
+      triggered editorial framing as distinct from financial-incentive-driven
+      framing. Cross-validates with Samsung contrast (#76) and Gizmodo
+      clean-control (#98).
+    cross_references:
+      - mechanism_id: 76
+        relationship: Samsung-Google Compound Advertiser Leverage contrast
+      - mechanism_id: 102
+        relationship: Adrienne So Wearables Privacy Vocabulary Bifurcation
+      - mechanism_id: 78
+        relationship: Condé Nast AI Deal Portfolio Dependency Index
   samsung_google_compound_advertiser_leverage:
     mechanism_id: 76
     name: Samsung-Google Compound Advertiser Leverage on Wearables Coverage

@@ -2684,6 +2684,20 @@ competitor_relationships:
     direction: "none"
     description: "No AI licensing deal. No financial relationship. Advance's $6.5B Reddit stake creates indirect competitive tension with Meta's social platforms."
     coverage_prediction: "adversarial"
+  essilorluxottica:
+    financial_tie: "historical_advertising_alliance"
+    estimated_value: "undisclosed (part of ~€2B/yr EL global ad spend; historical brand alliance ~2014)"
+    direction: "receiving"
+    description: >
+      Oakley (EssilorLuxottica) maintained a "global brand alliance" with WIRED
+      (~2014): co-created and sponsored multi-media content + brand advertising
+      in international print editions and across WIRED.com. Theme: "disruption
+      in design, technology, manufacturing and business." Current status unknown.
+      EssilorLuxottica's broader ~€1.8-2B/yr ad spend flows to Condé Nast parent
+      via fashion titles (Vogue, GQ, VF). Despite this parent-level relationship,
+      WIRED produces the most adversarial coverage of Oakley Meta/Ray-Ban Meta.
+      Mechanism #103.
+    coverage_prediction: "adversarial (brand trigger 'Meta' overrides ad relationship)"
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"

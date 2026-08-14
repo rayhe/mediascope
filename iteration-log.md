@@ -1,3 +1,77 @@
+## Iteration 105 — Fri 2026-08-14 14:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #103: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox
+
+**Finding:** EssilorLuxottica spends ~€1.8-2B/yr on advertising and marketing (H1 2023: €828M on €12.85B revenue = 6.4%). Ray-Ban and Oakley ad campaigns flow to Condé Nast fashion titles (Vogue, GQ, Vanity Fair, Architectural Digest). Critically, Oakley maintained a DIRECT "global brand alliance" with WIRED (~2014 era): co-created and sponsored multi-media content exploring "disruption in design, technology, manufacturing and business" + brand advertising in international print editions and across WIRED.com (source: SGB Media Online / Adweek).
+
+Yet WIRED produces the most consistently adversarial coverage of Oakley Meta Vanguard and Ray-Ban Meta smart glasses — the SAME products driving EssilorLuxottica's fastest-growing revenue segment: AI glasses nearly doubled in Q2 2026 revenue, 7M+ units sold FY2025, contributing to €14.82B H1 2026 revenue (+9.7%).
+
+**The paradox has three layers:**
+
+1. **Parent-level advertising:** EssilorLuxottica's ~€2B/yr ad budget flows to Condé Nast parent (via Vogue/GQ/VF), which also owns WIRED. Yet WIRED's adversarial coverage targets EssilorLuxottica's highest-growth product line.
+
+2. **Direct WIRED alliance:** Oakley's "global brand alliance" with WIRED promoted "disruption in design and technology" — the EXACT category Oakley Meta Vanguard falls into. Now WIRED attacks it with Adrienne So's "(which are garbage)" parenthetical (Mechanism #102).
+
+3. **Condé Nast AI deal exclusion:** Condé Nast has AI content deals with OpenAI (Aug 2024), Amazon/Rufus (Jul 2025), Perplexity (Dec 2025), Microsoft PCM (Feb 2026) — FIVE AI relationships, ZERO with Meta. EssilorLuxottica sends advertising revenue TO Condé Nast, but Meta has ZERO content licensing revenue flowing back. Every new AI deal deepens the asymmetry.
+
+**Samsung contrast (Mechanism #76):** Samsung's $9.7B global ad spend creates COMPOUND positive coverage for Samsung glasses. EssilorLuxottica's ~€2B does NOT. Why? Samsung glasses are branded "Samsung Galaxy" (advertiser = brand). EssilorLuxottica's glasses carry "Meta" (competitor name overrides manufacturer's ad relationship). This isolates "Meta" as the editorial trigger.
+
+**EssilorLuxottica financial data:**
+- H1 2023: €828M advertising/marketing on €12.85B revenue (6.4%)
+- FY2025: €28.49B revenue, 7M+ AI glasses sold, record €2.8B FCF
+- H1 2026: €14.82B revenue (+9.7%), adj. operating margin 18.9%
+- Q2 2026: AI glasses nearly doubled in revenue
+- Q1 2026: +10.8%, Ray-Ban and Oakley top performers from AI glasses
+
+**Confounding factors (6):** 2 STRONG (WIRED editorial wall between advertising and editorial; Meta genuine Cambridge Analytica/FB Papers history), 2 MODERATE (Oakley-WIRED alliance was ~2014, may be lapsed; fashion ad budgets flow through different departments than WIRED tech editorial), 2 WEAK (different reader demographics; no explicit editorial conditions on ad spend).
+
+**Testable predictions (4):** (1) WIRED avoids mentioning EL's financial success in product reviews; (2) Condé Nast fashion titles (Vogue/GQ) cover Ray-Ban Meta more favorably than WIRED; (3) Samsung glasses avoiding "Google" in name get softer WIRED coverage; (4) EL earnings increasingly emphasize AI glasses without sympathetic WIRED coverage.
+
+**Files:**
+- NEW: `tests/test_essilorluxottica_conde_nast_advertising_paradox_aug14.py` (10 classes, 39 tests)
+- Updated: `profiles/competitor-entities.yaml` (full essilorluxottica section with mechanism #103)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #103 in cross_publication_findings)
+- Updated: `profiles/wired.yaml` (essilorluxottica financial relationship entry)
+- Updated: `README.md`, `docs/ARCHITECTURE.md` (376 files, ~12,809 tests)
+
+**Sources:** EssilorLuxottica H1 2023 Interim Financial Report, FY2025 Results, Q2/H1 2026 Results, Q1 2026 Results (Reuters), Oakley-WIRED global brand alliance (SGB Media), Condé Nast-OpenAI deal (SiliconANGLE), Condé Nast-Microsoft PCM pilot (WebWire)
+
+**Stats:** 376 test files | ~12,809 tests | 103 mechanisms
+
+---
+
+## Iteration 104 — Fri 2026-08-14 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #102: Adrienne So (WIRED) — Wearables Privacy Vocabulary Bifurcation Across Entities
+
+**Journalist:** Adrienne So (WIRED, Condé Nast / Advance Publications)
+**Beat:** Wearables, fitness trackers, smartwatches, smart glasses
+
+**Finding:** Adrienne So applies ENTITY-SELECTIVE privacy vocabulary in wearables product reviews. Her Oakley Meta Vanguard review (Oct 21, 2025) inserts an explicit parenthetical attack — "(which are garbage)" — about Meta's AI and privacy policies within a product review. Her Pixel Watch 4 review (Oct 8, 2025), covering a product that collects FAR more sensitive biometric data (heart rate, blood oxygen, sleep stages, GPS, menstrual cycles fed into Google's ad ecosystem via Fitbit), contains ZERO privacy caveats and uses a promotional headline ("Surprisingly Close" to Apple Watch Ultra 3).
+
+**Data sensitivity inversion:** Meta's Oakley Vanguard is a camera/speaker product with NO biometric health sensors — yet receives the privacy attack. Google's Pixel Watch collects the most intimate health data possible — yet receives frictionless praise. The privacy alarm targets the LESS data-sensitive product. Google's Project Nightingale (2019) and Fitbit FTC concerns (2021) are omitted from the health wearable context.
+
+**Editorial team scope:** With So (fitness/wearables lane), the privacy vocabulary bifurcation now spans WIRED's ENTIRE wearables editorial team: Chokkattu (#93, glasses/phones), Ashworth (#73/#87, glasses/tech), Rogers (#97, privacy investigations), and So (#102, fitness/wearables). Four independent journalists at one publication, same entity-selective pattern = institutional, not individual.
+
+**Articles analyzed (5):**
+1. "Oakley Meta Vanguard Review" (Oct 21, 2025) — Adrienne So, WIRED — "(which are garbage)" parenthetical + limitation-first Techmeme headline
+2. "Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close" (Oct 8, 2025) — Adrienne So, WIRED — promotional frame, zero privacy caveats
+3. Pixel Watch 3 running features assessment (Aug 2024) — Adrienne So (referenced by Chokkattu) — functionality criticism only, no privacy framing
+4. Pixel Watch 3 spring sale recommendation (Mar 2025) — Adrienne So — "virtually perfect" Google/Fitbit integration, zero caveats
+5. Best Garmin watch guide (Mar 2026) — Adrienne So — positive Vanguard-Garmin integration, no privacy caveats in this context
+
+**Confounding factors (5):** 1 STRONG (Meta genuine privacy reputation from Cambridge Analytica/FB Papers), 2 MODERATE (camera vs watch visibility, health product privacy expectations), 2 WEAK (category differences, personal experience).
+
+**Files:**
+- NEW: `tests/test_adrienne_so_wearables_privacy_vocabulary_bifurcation_aug14.py` (10 classes, 29 tests)
+- Updated: `profiles/careers/journalists.yaml` (Adrienne So profile)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #102)
+- Updated: `README.md`, `docs/ARCHITECTURE.md` (375 files, ~12,770 tests)
+
+**Commit:** 9fdeca3
+
+---
+
 ## Iteration 103 — Fri 2026-08-14 11:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #101: Apple N50 Pre-Launch Privacy-Hero Cascade
