@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 12,056 | Across 359 test files |
+| Tests | 12,092 | Across 360 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **12056 tests** across 359 test files, each covering a different analytical capability:
+MediaScope has **12092 tests** across 360 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -827,6 +827,7 @@ MediaScope has **12056 tests** across 359 test files, each covering a different 
 | `test_type_d_05pm_cross_validation_aug13.py` | 27 | Type D cross-validation (Aug 13, 17:00 PT): Validates mechanisms #84-#88 structural integrity after iterations 87-89. Metadata completeness (date_added, test_file, finding_summary, confounding_factors, testable_predictions). Confounding factor quality (strength ratings, distribution). Mechanism ID contiguity 17-88, no duplicates. Cross-reference coherence (#84/#87 related mechanisms). Samsung glasses cluster coherence (#81/#84/#87/#88). Wearables investigation gap cluster (#78/#84/#87). Test file existence and minimum counts. README/ARCHITECTURE stat consistency. Finding summary distinctiveness (Jaccard <0.7). Prior mechanism regression guards (#77-#83). Mixed finding type distribution. 10 classes, 88 tests |
 | `test_wired_ashworth_category_headline_meta_substance_aug13.py` | 30 | Mechanism #89: WIRED Category-Universal Privacy Headline with Entity-Specific Substance. Boone Ashworth's Aug 2, 2026 article "Is It Possible to Make Smart Glasses That Aren't Creepy?" uses a category-universal headline but delivers overwhelmingly Meta-specific substance. Samsung Galaxy Glasses — announced 11 days earlier at Galaxy Unpacked (Jul 22) with identical privacy-relevant hardware (same Snapdragon AR1 Gen 1, 12MP camera, LED, anti-tamper) — receive one dismissive sentence ("later this year"). Apple framed sympathetically for delaying "to address the privacy issues." WIRED self-cites its NameTag investigation. Headline-substance gap creates rhetorical synecdoche where Meta IS the smart glasses category. 6 confounding factors (2 STRONG), 4 testable predictions, 6 cross-references (#70/#45/#30/#84/#80/#81). 11 classes, 30 tests |
 | `test_victoria_song_health_data_investigation_asymmetry_aug13.py` | 33 | Mechanism #90: Victoria Song Health Data Privacy Investigation Asymmetry. Song writes standalone privacy investigations about Meta camera data (doxing piece Oct 2024, LED tamper Jul 2026) but published ZERO coverage of Samsung Health's Jul 2026 AI training data coercion — despite being The Verge's primary Samsung wearable health reviewer (Galaxy Watch, Galaxy Ring, Optimizer newsletter). Samsung forced consent-or-delete on menstrual cycle, medication, diagnosis data. 6+ independent outlets covered (Digital Trends, Android Authority, 9to5Google, GSMArena, SamMobile). Multi-publication silence: Verge 0, WIRED 0, NYT 0. Samsung $9.7B ad spend + Google dependency alignment. Extends #75 (privacy vocabulary bifurcation), #81 (Unpacked beat assignment), #76 (Samsung-Google compound leverage). 4 confounding factors (1 MODERATE). 9 classes, 33 tests |
+| `test_qualcomm_comarketing_supply_chain_financial_multiplier_aug13.py` | 36 | Mechanism #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier. Samsung Galaxy Glasses create a TRIPLE-entity financial incentive chain: Samsung ($9.7B global ad spend), Google (Android XR/Gemini, $239B ad revenue + News Showcase + content deals), and Qualcomm ($25M+ media spend, 50/50 co-marketing with Samsung). Qualcomm CMO Don McGuire confirmed co-branded Samsung TV ads (Galaxy S24 with Snapdragon tag, US), digital/OOH in LatAm. Jul 2026 expanded partnership covers glasses (Snapdragon AR1 Gen 1). "Snapdragon. That's How" campaign (72andSunny) runs in same channels as glass reviews. Samsung spent $9.2B on Qualcomm chips in 2025. Meta uses same AR1 chip but has NO co-marketing with Qualcomm for wearables; EssilorLuxottica has zero tech publication ad presence. Snap/Specs (Snapdragon XR but no Samsung/Google multiplier) serves as isolation control. Extends #76 (compound leverage). 6 confounding factors (2 STRONG). 9 classes, 36 tests |
 
 ```bash
 # Run all tests

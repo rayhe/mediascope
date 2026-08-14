@@ -4117,6 +4117,104 @@ entities:
       testable_prediction: 'When Galaxy Glasses ship Fall 2026, privacy incidents
         will occur (identical camera hardware) but will NOT receive "privacy
         nightmare" framing applied to Meta''s identical product.'
+    qualcomm_comarketing:
+      mechanism_id: 91
+      date_added: '2026-08-13'
+      finding_summary: 'Samsung Galaxy Glasses create a TRIPLE-entity financial incentive chain
+        unique among smart glasses products. Samsung (OEM, $9.7B global ad spend),
+        Google (Android XR/Gemini platform, $239.54B projected 2026 ad revenue +
+        News Showcase + content licensing deals), and Qualcomm (Snapdragon AR1 Gen 1
+        silicon, $25M+ annual media spend + 50/50 co-marketing budget split with
+        Samsung) each independently have financial relationships with the
+        publications reviewing smart glasses. Qualcomm CMO Don McGuire confirmed
+        regional co-marketing with Samsung including co-branded TV ads (Galaxy S24
+        with Snapdragon tag) and digital/out-of-home campaigns. The Jul 2026
+        expanded Snapdragon partnership now covers phones, watches, AND smart
+        glasses. Qualcomm''s "Snapdragon. That''s How" campaign (72andSunny,
+        Q1 2026) runs across broadcast, CTV, online, social, TikTok, and
+        Instagram — the same channels as Galaxy Glasses launch coverage.
+        Samsung spent 13.8 trillion won ($9.2B) on Qualcomm chips in 2025
+        (up 26.5% YoY), creating deep procurement dependency.
+
+        META CONTRAST: Meta''s Ray-Ban glasses also use Qualcomm Snapdragon
+        AR1 Gen 1 but have NO known co-marketing arrangement with Qualcomm
+        for wearables. Meta''s supply chain partner EssilorLuxottica has ZERO
+        advertising relationship with tech publications. Meta designs its own
+        AI (Llama), making it a self-contained supply chain with no third-party
+        financial amplifier. Favorable Meta glasses coverage pleases only Meta
+        (a direct ad competitor to publishers at $243.46B), while favorable
+        Samsung glasses coverage pleases Samsung ($9.7B advertiser), Google
+        (ad/deal partner), AND Qualcomm (co-marketer) simultaneously.
+
+        SNAP COMPARISON: Snap''s Specs also run Snapdragon XR (multi-year deal
+        Apr 2026) but lack Samsung''s $9.7B ad spend and Google''s platform/deal
+        leverage. If the triple-entity chain drives softer coverage, Snap Specs
+        should receive more adversarial privacy coverage than Samsung despite
+        similar Qualcomm partnership — isolating the Samsung+Google amplifier.'
+      qualcomm_annual_media_spend_m: 25
+      qualcomm_media_spend_source: 'COMvergence estimate, 2024 (via Adweek)'
+      comarketing_split: '50/50 Qualcomm-Samsung (confirmed Qualcomm CMO Don McGuire)'
+      creative_agency: '72andSunny (Snapdragon Compute AOR, Jan 2026) + McCann Worldgroup (global AOR since 2016)'
+      campaign_name: 'Snapdragon. That''s How'
+      campaign_channels:
+        - broadcast
+        - connected TV (CTV)
+        - online
+        - social (TikTok, Instagram)
+      samsung_qualcomm_procurement_2025: '13.8 trillion won ($9.2B), up 26.5% YoY'
+      expanded_partnership_date: '2026-07'
+      expanded_partnership_scope: 'phones (Snapdragon 8 Elite Gen 5), watches (Snapdragon Wear Elite), smart glasses (Snapdragon AR1 Gen 1)'
+      cobranded_examples:
+        - 'Samsung Galaxy S24 TV ads with Snapdragon branding (US market, confirmed McGuire at Snapdragon Summit 2024)'
+        - 'Out-of-home and digital co-marketing in Latin America'
+        - 'Snapdragon campaign spots shot on Samsung S25 Ultra (Marketing Dive)'
+      related_mechanisms:
+        - 76
+        - 81
+        - 83
+        - 87
+        - 90
+      confounding_factors:
+        - '[STRONG] Meta camera glasses on market since 2021 (Ray-Ban Stories), accumulating more negative coverage history vs pre-launch Samsung'
+        - '[STRONG] Qualcomm $25M media spend is small relative to Samsung $9.7B or Google $239B — marginal influence alone may be minimal'
+        - '[MODERATE] Meta also uses Qualcomm AR1 Gen 1 — the chip supplier is shared; the difference is the co-marketing relationship'
+        - '[MODERATE] Competition stories are inherently positive-framed; Samsung launching against Meta''s dominant product benefits from challenger framing'
+        - '[WEAK] Qualcomm co-marketing may target consumer electronics sites more than specialist tech journalism reviewing smart glasses'
+        - '[WEAK] Samsung frame partners (Gentle Monster, Warby Parker) add a fourth potential financial node in fashion/lifestyle publications'
+      testable_predictions:
+        - 'Publications with higher Samsung ad revenue dependency will show measurably softer Galaxy Glasses coverage'
+        - 'When Galaxy Glasses ship (Fall 2026), Qualcomm will run co-branded launch campaigns in the same publications reviewing the product'
+        - 'Camera privacy concerns for Galaxy Glasses will be framed as "addressed" rather than "alarming" in publications where all three supply chain entities advertise'
+        - 'Snap Specs (Snapdragon XR, but WITHOUT Samsung ad spend or Google deal leverage) will receive MORE adversarial privacy coverage than Samsung, isolating the Samsung+Google amplifier'
+      test_file: tests/test_qualcomm_comarketing_supply_chain_financial_multiplier_aug13.py
+      source_urls:
+        - https://www.adweek.com/agencies/72andsunny-agency-of-record-qualcomm-snapdragon/?itm_source=homepage&itm_medium=agencies-edge&itm_campaign=5
+        - https://www.sammobile.com/news/qualcomm-cmo-sheds-light-on-the-regional-co-marketing-wins-with-samsung/
+        - https://bestmediainfo.com/mediainfo/mediainfo-marketing/snapdragon-wants-consumers-to-demand-the-chip-not-just-the-phone-10620176
+        - https://www.thestreet.com/technology/qualcomm-samsung-expanded-chip-partnership
+        - https://www.marketingdive.com/news/how-qualcomm-is-building-an-iconic-consumer-brand-for-the-ai-era/819041/
+        - https://www.theinvestor.co.kr/article/10702659
+        - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+        - https://advertisers.mediaradar.com/samsung-group-advertising-profile
+      overview: 'Qualcomm operates a 50/50 co-marketing budget split with OEM partners
+        (confirmed CMO Don McGuire, bestmediainfo.com). Samsung is Qualcomm''s
+        largest customer ($9.2B chip procurement in 2025). Regional co-marketing
+        includes co-branded Samsung TV ads with Snapdragon tag (US, Galaxy S24),
+        digital and out-of-home in Latin America, and the global "Snapdragon.
+        That''s How" campaign (72andSunny, Q1 2026) across broadcast, CTV,
+        online, social, TikTok, and Instagram. The Jul 2026 expanded partnership
+        now covers smart glasses (Snapdragon AR1 Gen 1) alongside phones and
+        watches — meaning co-marketing amplification extends to Galaxy Glasses.
+
+        META HAS NO EQUIVALENT: Meta''s Ray-Ban glasses use the same Qualcomm
+        AR1 Gen 1 chip but have no known co-marketing arrangement with Qualcomm
+        for wearables. Meta''s frame partner EssilorLuxottica has zero advertising
+        presence in tech publications. The structural absence of a co-marketing
+        amplifier means positive Meta glasses coverage rewards only Meta (a direct
+        ad revenue competitor to publishers), while positive Samsung glasses
+        coverage rewards Samsung ($9.7B advertiser), Google (ad/deal partner),
+        and Qualcomm (co-marketing partner) — a triple financial alignment absent
+        from any other smart glasses product on the market.'
   microsoft:
     display_name: Microsoft
     aliases:
