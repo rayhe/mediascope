@@ -8047,6 +8047,119 @@ cross_publication_findings:
     test_count: 60
     test_file: tests/test_publisher_ai_deal_revolt_dual_channel_decoupling_aug13.py
 
+  ashworth_category_headline_meta_substance:
+    mechanism_id: 89
+    title: "WIRED Category-Universal Privacy Headline with Entity-Specific Substance"
+    journalist: Boone Ashworth
+    publication: WIRED (Condé Nast)
+    key_finding: Category-universal headline masks entity-specific Meta criticism
+    mechanism: category_headline_entity_substance_gap
+    article_headline: "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+    article_date: "2026-08-02"
+    samsung_unpacked_date: "2026-07-22"
+    days_after_samsung_unpacked: 11
+    finding_summary: >
+      WIRED's "Is It Possible to Make Smart Glasses That Aren't Creepy?" (Boone Ashworth,
+      Aug 2, 2026) uses a category-universal headline — implying the entire smart glasses
+      industry — but delivers substance that is overwhelmingly Meta-specific. Meta receives
+      3+ substantive paragraphs covering camera capabilities, LED bypass workarounds, the
+      NameTag facial recognition code (with WIRED self-citing its own June 4 investigation),
+      and anti-tamper updates. Samsung Galaxy Glasses — announced with hands-on demos at
+      Galaxy Unpacked just 11 days prior (Jul 22, 2026) using IDENTICAL privacy-relevant
+      hardware (same Snapdragon AR1 Gen 1 chip, 12MP camera, LED anti-tamper, wear detection)
+      — receive a single dismissive sentence framing them as future entrants ("enter the
+      space later this year"). Apple is framed sympathetically for "reportedly delayed
+      production to address the privacy issues." Small companies (Even Realities, Solos,
+      Vuzix) are positioned as privacy-first alternatives in the "anti-Meta crowd."
+
+      The headline-substance gap creates a rhetorical synecdoche where Meta IS the smart
+      glasses category in WIRED's framing, and competitors exist only as footnotes or
+      sympathetic counterpoints. A category-level privacy question published AFTER Samsung's
+      identical hardware was publicly announced, with detailed specs and hands-on demos,
+      should logically compare both companies' privacy approaches. Instead, Samsung's
+      existence is treated as hypothetical while Meta's is treated as the industry's
+      defining privacy problem.
+    entity_mention_analysis:
+      meta_substantive_paragraphs: 4
+      samsung_substantive_paragraphs: 0
+      google_substantive_paragraphs: 0
+      apple_substantive_paragraphs: 0
+      small_companies_substantive_paragraphs: 2
+      meta_approximate_word_count: 250
+      samsung_approximate_word_count: 12
+      google_approximate_word_count: 8
+      apple_approximate_word_count: 20
+    samsung_framing: "enter the space later this year"
+    apple_framing: "reportedly delayed production to address the privacy issues"
+    self_citation_present: true
+    self_citation_detail: "Article states 'a WIRED report exposed this feature' referring to WIRED's June 4, 2026 NameTag facial recognition investigation"
+    samsung_specs_public_before_article:
+      snapdragon_ar1_gen1: true
+      12mp_camera: true
+      led_indicator: true
+      anti_tamper: true
+      wear_detection: true
+    hardware_parity:
+      meta_camera_mp: 12
+      samsung_camera_mp: 12
+      meta_chip: "Snapdragon AR1 Gen 1"
+      samsung_chip: "Snapdragon AR1 Gen 1"
+      meta_led_indicator: true
+      samsung_led_indicator: true
+      meta_anti_tamper: true
+      samsung_anti_tamper: true
+    tone_scores:
+      meta: -0.55
+      samsung: 0.0
+      google: 0.0
+      apple: 0.15
+      small_companies: 0.30
+    source_urls:
+      - description: "WIRED article 'Is It Possible to Make Smart Glasses That Aren't Creepy?' (Aug 2, 2026)"
+        url: "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/"
+      - description: "Mirror reproduction of WIRED article (full text)"
+        url: "https://gokawiil.com/article/325902"
+      - description: "Samsung Newsroom interview on Galaxy Unpacked intelligent eyewear engineering (Jul 2026)"
+        url: "https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear"
+      - description: "Samsung Newsroom interview on intelligent eyewear privacy and AI (Jul 2026)"
+        url: "https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface"
+      - description: "PlayTechDeep VR smart glasses brief citing WIRED article (Aug 2, 2026)"
+        url: "https://playtechdeep.blog/2026/08/02/smart-glasses-brief-for-august-02-2026-meta-snap-and-the-stories-worth-watching/"
+    confounding_factors:
+      - strength: STRONG
+        factor: "Meta has 69% market share (IDC Q1 2026) and 7M+ deployed units — legitimate editorial focus on the dominant player in an industry privacy piece"
+      - strength: STRONG
+        factor: "Samsung glasses hadn't shipped yet at article publication — fewer real-world privacy incidents to report compared to Meta's years of deployed hardware"
+      - strength: MODERATE
+        factor: "WIRED's own NameTag investigation gives them unique source material that naturally centers Meta — self-citation is editorially rational"
+      - strength: MODERATE
+        factor: "Article is relatively short (~450 visible words) — space constraints limit competitor coverage depth"
+      - strength: WEAK
+        factor: "Samsung's detailed privacy specs (LED, anti-tamper, wear detection) emerged gradually after Unpacked — some details may not have been fully public on Aug 2"
+      - strength: WEAK
+        factor: "Ashworth may genuinely believe the privacy question is driven by Meta's scale and installed base, not by hardware capabilities"
+    testable_predictions:
+      - "When Samsung glasses ship (Fall 2026), WIRED will NOT publish a 'Samsung glasses privacy investigation' comparable in depth to the Meta NameTag exposé"
+      - "If Samsung's Gemini data retention practices are exposed as problematic, WIRED will frame it as a 'Google AI problem' rather than a 'Samsung glasses problem'"
+      - "WIRED will NOT self-reference this Aug 2 article when covering Samsung glasses privacy, unlike how they repeatedly self-reference the NameTag investigation"
+      - "Future WIRED 'industry' or 'category' privacy articles about smart glasses will continue using Meta as the primary/sole substantive example"
+    cross_references:
+      - mechanism_id: 70
+        title: "Ashworth Accessibility Framing Inversion"
+      - mechanism_id: 45
+        title: "Ashworth WWDC PCC Privacy Framing Asymmetry"
+      - mechanism_id: 30
+        title: "Chokkattu Temporal Framing Oscillation"
+      - mechanism_id: 84
+        title: "WIRED OpenAI Hardware FR Investigation Gap"
+      - mechanism_id: 80
+        title: "Gizmodo 4-Entity Clean Control"
+      - mechanism_id: 81
+        title: "Multi-Journalist Samsung Unpacked Beat Assignment"
+    date_added: "2026-08-13"
+    test_file: "tests/test_wired_ashworth_category_headline_meta_substance_aug13.py"
+    type: "Type A: Competitor Coverage Deep Dive"
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
