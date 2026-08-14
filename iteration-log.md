@@ -1,3 +1,43 @@
+## Iteration 97 — Fri 2026-08-14 02:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #94: Apple Advertising Revenue Structural Opacity — Coverage Accountability Asymmetry
+
+**Finding:** Apple's advertising business set a June-quarter revenue record in Q3 FY2026 (reported Jul 30, 2026) as part of $30.7B Services revenue. CFO Kevan Parekh identified advertising as one of four categories showing "strong double-digit growth." eMarketer estimates ~$8.5B for 2026; Bloomberg estimated $7-10B. Yet Apple discloses NO separate advertising revenue figure — the ONLY major tech company to maintain this opacity.
+
+**The one-way transparency street:**
+- Meta: Discloses $39.7B quarterly ad revenue (Q2 2026) → publisher dependency calculable → coverage independence perpetually questionable
+- Google: Discloses $88.3B quarterly ad revenue (Q2 2026) → same accountability mechanism
+- Apple: Discloses ZERO → publisher dependency CANNOT be calculated → coverage accountability structurally impossible
+
+**Apple's ad business expansion (all undisclosed revenue):**
+- Apr 2025: Rebranded from "Apple Search Ads" to "Apple Ads"
+- 2024: Took direct ad sales from NBCUniversal — Apple now directly controls publisher financial relationships
+- Mar 2026: Added multiple App Store search ad positions
+- Apr 2026: Apple Business launched across 200+ countries
+- Summer 2026: Apple Maps ads launching in US/Canada
+- Apple Ads ToS rewrite removed requirement for ads on Apple-owned properties
+- Tim Cook Q4 FY2025: "I'm dodging the question intentionally because we don't split it at that level"
+
+**Publisher revenue share (undisclosed amounts):**
+- Apple News in-article ads: 70% to publishers
+- Apple News+ subscription: 50/50 split engagement-weighted
+- Self-sold ads: 100% to publishers
+- Apple's 100 editors curate Top Stories → editorial curation is a financial lever
+
+**Data integrity fix:** Mechanisms #93 (Samsung Privacy Feature Framing Inversion) and #94 were incorrectly placed under `publications` in competitor-coverage-research.yaml by prior runs. Both relocated to `cross_publication_findings` where they belong.
+
+**New test file:** `tests/test_apple_ad_revenue_opacity_coverage_accountability_asymmetry_aug14.py` — 9 classes, 37 tests (all passing)
+
+**Updated profiles:**
+- `competitor-entities.yaml` — added `apple_ad_revenue_opacity` section with mechanism_id 94, entity disclosure comparison, Q3 FY2026 record details, ad business expansion timeline, 7 source URLs, accountability asymmetry analysis
+- `competitor-coverage-research.yaml` — mechanism #94 under cross_publication_findings with 5 confounding factors (2 STRONG, 3 MODERATE), 4 testable predictions, 7 source URLs, cross-refs [46, 61, 37, 42]
+- `README.md` — added test file entries for #92-#94 + 2 cross-validation tests, updated stats to 12,293 tests / 365 files / 94 mechanisms
+- `docs/ARCHITECTURE.md` — added test file entries for iterations 91-97, updated stats
+
+**Stats:** 365 test files | ~12,293 tests | 94 mechanisms | 124 structural consistency tests passing
+
+---
+
 ## Iteration 94 — Thu 2026-08-13 23:00 PT (Type D: Test & Verify)
 
 ### Cross-Validation of Mechanisms #89-#91 (Iterations 91-93)

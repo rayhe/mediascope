@@ -1775,6 +1775,89 @@ entities:
       - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
       - https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php
       - https://www.macobserver.com/news/apple-q3-2026-earnings-results-revenue-hits-109-4-billion-up-16-eps-jumps-29/
+    apple_ad_revenue_opacity:
+      mechanism_id: 94
+      title: Apple Advertising Revenue Structural Opacity — Coverage Accountability Asymmetry
+      finding_summary: |
+        Apple's advertising business set a June-quarter revenue record in Q3 FY2026
+        (reported Jul 30, 2026) as part of $30.7B Services revenue. CFO Kevan Parekh
+        identified advertising as one of four categories showing "strong double-digit
+        growth." Yet Apple discloses NO separate advertising revenue figure — the ONLY
+        major tech company to maintain this opacity. This creates a structural
+        accountability asymmetry: media critics can question whether Meta/Google coverage
+        is influenced by advertising spending because those figures are PUBLIC ($39.7B
+        Meta Q2 2026, $88.3B Google Q2 2026). They CANNOT make the equivalent case for
+        Apple coverage because Apple's ad revenue is structurally hidden. Publications
+        that profit from Apple's ad business (70% in-article ad share on Apple News,
+        50/50 subscription split on Apple News+) are shielded from the exact accountability
+        framework routinely applied to their Meta and Google coverage.
+      apple_ad_revenue_disclosed: false
+      emarketer_estimate_2026_b: 8.5
+      bloomberg_estimate_low_b: 7
+      bloomberg_estimate_high_b: 10
+      in_article_ad_publisher_share_pct: 70
+      feed_ad_publisher_share: engagement-based, varies by user interaction
+      self_sold_ad_publisher_share_pct: 100
+      q3_fy2026_record:
+        set_record: true
+        report_date: '2026-07-30'
+        cfo_description: "Strong double-digit growth in advertising; June quarter record"
+        sec_filing_language: "primarily due to higher net sales from advertising and cloud services"
+        services_revenue_b: 30.7
+        no_dollar_figure_disclosed: true
+      cook_q4_fy2025_dodge: |
+        Tim Cook Q4 FY2025 earnings call (Oct 2025): "The advertising category,
+        which is a combination of third party and first party, did set a record
+        during the quarter... I'm dodging the question intentionally because we
+        don't split it at that level."
+      ad_business_expansion_timeline:
+        - date: '2025-04-14'
+          event: "Rebranded from Apple Search Ads to Apple Ads — signaling expansion beyond App Store"
+        - date: '2024'
+          event: "Took direct ad sales from NBCUniversal — Apple now directly controls publisher financial relationships on Apple News"
+        - date: '2026-03-03'
+          event: "Added multiple ad positions in App Store search"
+        - date: '2026-04-14'
+          event: "Apple Business launched across 200+ countries"
+        - date: '2026-summer'
+          event: "Apple Maps ads launching in US and Canada (confirmed by Parekh Apr 30 call)"
+        - date: '2025'
+          event: "Apple Ads ToS rewrite removed requirement for ads to run on Apple-owned properties — opened third-party inventory"
+        - date: '2027'
+          event: "Ford navigation deal places Apple Maps in vehicles"
+      entity_disclosure_comparison:
+        meta:
+          discloses_ad_revenue: true
+          q2_2026_total_revenue_b: 60.8
+          ad_revenue_is_primary: true
+          publisher_dependency_calculable: true
+        google:
+          discloses_ad_revenue: true
+          q2_2026_ad_revenue_b: 88.3
+          news_showcase_deals_reported: true
+          publisher_dependency_calculable: true
+        apple:
+          discloses_ad_revenue: false
+          estimated_range_b: "7-10 (Bloomberg), 8.5 (eMarketer)"
+          publisher_dependency_calculable: false
+      accountability_asymmetry: |
+        Media critics and ombudsmen can question whether a publication's Meta or
+        Google coverage is influenced by ad spending because those figures are PUBLIC.
+        They CANNOT make the equivalent case for Apple because the figures are
+        structurally hidden. This creates a one-way transparency street: Meta/Google
+        coverage is perpetually subject to financial conflict scrutiny, while Apple
+        coverage is structurally shielded from the same analysis. Publications with
+        Apple News+ partnerships (Condé Nast/WIRED, Vox Media/The Verge, News Corp/WSJ,
+        The Atlantic) receive undisclosed advertising revenue from Apple while covering
+        Apple products — and no external party can quantify the dependency.
+      source_urls:
+        - https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/a8-kex991q3202606272026.htm
+        - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
+        - https://searchenginewatch.com/2026/08/04/apples-advertising-business-just-had-its-best-quarter-ever/
+        - https://www.campaignlive.com/article/apple-begins-selling-news-ads-directly/1897348
+        - https://www.livemint.com/us/business/apples-next-revenue-push-reports-suggest-ads-are-coming-to-maps-as-part-of-its-100-billion-services-strategy-11761495201330.html
+        - http://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
+        - https://seekingalpha.com/article/4928290-apple-inc-aapl-q3-2026-earnings-call-transcript
     apple_news_glasses_prelaunch_alignment:
       mechanism_id: 61
       overview: |
