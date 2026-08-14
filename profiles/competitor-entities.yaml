@@ -7172,6 +7172,40 @@ publisher_ai_revenue_opacity_index:
     - https://www.reuters.com/business/media-telecom/wsj-publisher-news-corp-beats-revenue-estimates-real-estate-dow-jones-strength-2026-08-05/
     - https://nypost.com/2026/08/05/media/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
     - https://www.wsj.com/business/media/news-corp-revenue-rises-with-growth-across-all-segments-d5313004
+  news_corp_triple_revenue_ecosystem:
+    mechanism_id: 100
+    date_added: '2026-08-14'
+    entity: news_corp
+    finding: >
+      News Corp operates the most complex AI revenue structure of any publisher in the
+      MediaScope dataset. Three simultaneous revenue channels: (1) direct bilateral AI
+      content licensing from OpenAI ($50M/yr) + Meta (up to $50M/yr) = ~$100M/yr;
+      (2) Factiva marketplace (Dow Jones subsidiary) intermediary role selling AI rights
+      to 8,100+ news sources; (3) HarperCollins settlement revenue from Anthropic's
+      $1.5B copyright case. Q4 FY2026 record profitability ($9.03B annual revenue,
+      $811M FCF, $423M EBITDA +31% YoY) with AI licensing described as "high-margin."
+      Despite equal ~$50M/yr financial incentive from both OpenAI and Meta, WSJ applied
+      asymmetric framing (OpenAI rogue AI -0.20, Meta rogue AI -0.45), consistent with
+      cultural mechanism accounting for ~70% of asymmetry.
+    triple_revenue_channels:
+      direct_licensing:
+        openai_annual_m: 50
+        meta_annual_m: 50
+        combined_annual_m: 100
+      marketplace_intermediary:
+        platform: Factiva
+        ai_licensed_sources: 8100
+        pct_of_total: 25
+      settlement_revenue:
+        source: Anthropic (Bartz v. Anthropic, $1.5B)
+        subsidiary: HarperCollins
+    related_mechanisms: [41, 47, 82, 88]
+    test_file: tests/test_news_corp_triple_revenue_ai_ecosystem_aug14.py
+    source_urls:
+      - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
+      - https://www.businesswire.com/news/home/20260120489743/en/Dow-Jones-Factiva-Surpasses-8000-Licensed-Sources-for-GenAI-Use
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
 ipo_underwriter_research_pipeline:
   mechanism_id: 21
   mechanism_name: IPO Underwriter Research Laundering Pipeline

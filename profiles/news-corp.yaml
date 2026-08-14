@@ -746,6 +746,7 @@ control_designation:
 
     '
 factiva_marketplace_role:
+  mechanism_id: 100
   overview: 'News Corp operates a DUAL financial role in the AI content licensing
     ecosystem: (1) as a publisher selling content directly to AI companies
     (OpenAI $50M/yr, Meta up to $50M/yr), and (2) as a MARKETPLACE OPERATOR

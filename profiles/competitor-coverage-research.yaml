@@ -9295,6 +9295,54 @@ cross_publication_findings:
     - 98
     - 74
     - 95
+  news_corp_triple_revenue_ai_ecosystem:
+    mechanism_id: 100
+    title: "News Corp Triple-Revenue AI Financial Ecosystem \u2014 Publisher, Marketplace Operator, and Litigant"
+    type: financial_incentive_mapping
+    date_added: "2026-08-14"
+    publication: news_corp
+    finding_summary: >
+      News Corp operates the most complex AI revenue structure of any publisher: (1) direct content
+      licensing from OpenAI ($50M/yr) AND Meta (up to $50M/yr) = ~$100M/yr; (2) Factiva marketplace
+      (Dow Jones subsidiary) selling AI rights to 8,100+ news sources as intermediary; (3) HarperCollins
+      settlement revenue from Anthropic $1.5B copyright case. This triple role creates comprehensive
+      coverage incentive alignment because each position generates News Corp revenue. Q4 FY2026 record
+      profitability ($9.03B annual revenue, $811M FCF +42%, $423M EBITDA +31%) with AI licensing described
+      as "high-margin" revenue stream. Despite equal ~$50M/yr financial incentive from both OpenAI and
+      Meta, WSJ applied MORE adversarial framing to Meta rogue AI (tone -0.45) vs OpenAI (tone -0.20),
+      suggesting ~30% financial / ~70% cultural asymmetry (consistent with Gizmodo clean control).
+    confounding_factors:
+    - strength: STRONG
+      factor: "WSJ editorial independence \u2014 robust disclosure practice, Barron's framed same Meta rogue AI positively"
+    - strength: STRONG
+      factor: "Murdoch family dual-class ~40% voting control may influence editorial independently"
+    - strength: MODERATE
+      factor: "Factiva AI marketplace revenue not separately disclosed"
+    - strength: MODERATE
+      factor: "HarperCollins Anthropic settlement share undisclosed"
+    - strength: WEAK
+      factor: "Conservative editorial lean may independently affect framing"
+    - strength: WEAK
+      factor: "WSJ disclosure practice partially offsets incentive structure"
+    testable_predictions:
+    - "WSJ marketplace coverage more favorable than bypass-company coverage"
+    - "Woo-and-sue correlation: paying companies softer, non-paying harsher"
+    - "AI licensing EBITDA share growth correlates with incrementally favorable coverage"
+    - "WSJ self-investigation gap: Factiva marketplace role not covered as conflict"
+    test_file: tests/test_news_corp_triple_revenue_ai_ecosystem_aug14.py
+    source_urls:
+    - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
+    - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+    - https://venturebeat.com/ai/openai-partners-with-wall-street-journal-publisher-news-corp
+    - https://www.businesswire.com/news/home/20260120489743/en/Dow-Jones-Factiva-Surpasses-8000-Licensed-Sources-for-GenAI-Use
+    - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    - https://www.thewrap.com/industry-news/business/news-corp-beats-q4-revenue-earnings-estimates/
+    - https://www.adnews.com.au/news/news-corp-posts-record-results-as-its-pursues-pilferers
+    cross_references:
+    - 41
+    - 47
+    - 82
+    - 88
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

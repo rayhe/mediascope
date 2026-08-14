@@ -1,3 +1,40 @@
+## Iteration 101 — Fri 2026-08-14 09:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #100: News Corp Triple-Revenue AI Financial Ecosystem — Publisher, Marketplace Operator, and Litigant
+
+**Finding:** News Corp operates the most complex and diversified AI revenue structure of any publisher in the MediaScope dataset. It simultaneously occupies THREE financial roles: (1) direct content licensing from OpenAI ($50M/yr) + Meta (up to $50M/yr) = ~$100M/yr in bilateral revenue; (2) Factiva marketplace operator (Dow Jones subsidiary) selling AI licensing rights to 8,100+ news sources as intermediary; (3) HarperCollins settlement beneficiary from Anthropic's $1.5B copyright case. Q4 FY2026 record profitability ($9.03B annual revenue, $811M FCF +42%, $423M EBITDA +31%) with AI licensing described as "high-margin" revenue. Thomson's language shifted from "woo and sue" threats to "trusted content relationships." Despite equal ~$50M/yr financial incentive from both OpenAI and Meta, WSJ applied MORE adversarial framing to Meta rogue AI (-0.45) vs OpenAI (-0.20), suggesting ~30% financial / ~70% cultural asymmetry (consistent with Gizmodo clean control).
+
+**Key financial data (News Corp Q4 FY2026 earnings, Aug 5, 2026):**
+- $2.34B Q4 revenue (+11% YoY), $9.03B full-year (+7%)
+- Net income $230M (+167%), EBITDA $423M (+31%), FCF $811M (+42%)
+- Dow Jones revenue $644M (+7%), driven partly by "higher content licensing revenue"
+- Thomson: "trusted content relationships with OpenAI and Meta"
+- CFO: "added new AI licensing revenues" as FY2026 highlight
+
+**Triple-revenue channels:**
+1. OpenAI: $250M/5yr ($50M/yr), signed May 2024
+2. Meta: up to $50M/yr, 3-year deal, signed Mar 2026
+3. Anthropic: HarperCollins share of $1.5B settlement (approved Jul 20, 2026)
++ Factiva marketplace intermediary: 8,100+ AI-licensed sources (>25% of Factiva total)
+
+**Comparative publisher analysis:**
+- Condé Nast: 4 bilateral deals (OpenAI, Amazon, Microsoft, Perplexity) — NO Meta deal, no marketplace role
+- FT: 1 deal (OpenAI) — no marketplace role
+- NYT: 1 deal (Amazon) — suing OpenAI
+- Vox Media: 1 deal (OpenAI) — selling New York Magazine
+
+**Confounding factors (6):** 2 STRONG (WSJ editorial independence + Murdoch dual-class control), 2 MODERATE (Factiva AI revenue not disclosed, settlement share undisclosed), 2 WEAK (conservative editorial lean, disclosure practice as partial mitigator).
+
+**Testable predictions (4):** WSJ marketplace coverage favorability, "woo and sue" framing correlation, AI licensing EBITDA share → incrementally favorable coverage, Factiva self-investigation gap.
+
+**New test file:** `tests/test_news_corp_triple_revenue_ai_ecosystem_aug14.py` — 10 classes, 58 tests (all passing)
+
+**Updated profiles:** competitor-coverage-research.yaml (mechanism #100 in cross_publication_findings), competitor-entities.yaml (news_corp_triple_revenue_ecosystem), news-corp.yaml (mechanism_id 100 on factiva_marketplace_role), README.md (stats: 372 files, 12,682 tests), ARCHITECTURE.md (stats)
+
+**Stats:** 372 test files | ~12,682 tests | 100 mechanisms
+
+---
+
 ## Iteration 100 — Fri 2026-08-14 08:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #99: James Pero (Gizmodo) Google Smart Glasses Temporal Redemption Narrative vs Meta Perpetual Surveillance Default
