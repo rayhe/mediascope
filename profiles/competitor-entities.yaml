@@ -985,6 +985,39 @@ entities:
       - https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/
       - https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
       test_file: tests/test_wired_aisi_accountability_coverage_trajectory_break_aug14.py
+    gizmodo_clean_control_adversarial_coverage:
+      mechanism_id: 98
+      type: clean_control_cross_entity
+      date_added: '2026-08-14'
+      finding_summary: 'Gizmodo (Keleops AG, zero financial ties) published 6+ standalone adversarial articles about
+        Anthropic AI safety/security incidents (Aug 2025 - Jun 2026, 10 months): Claude exploitation (crime spree, 17
+        companies breached), Mythos leak (Pentagon, unprecedented cybersecurity risks), Claude Code source leak (8000+
+        DMCA takedowns), Mythos unauthorized access (contractor breach), and Mythos NSA penetration (classified systems
+        in hours, Five Eyes warning). Aggregate tone ~-0.60, comparable to Gizmodo Meta coverage (-0.75). Validates
+        clean-control thesis in AI safety/security domain with longitudinal timeframe.'
+      gizmodo_article_count: 6
+      gizmodo_aggregate_tone: -0.60
+      coverage_timespan: 'Aug 2025 - Jun 2026 (10 months)'
+      incident_categories:
+      - claude_exploitation_breach
+      - mythos_leak_pentagon
+      - claude_code_source_leak
+      - mythos_unauthorized_access
+      - mythos_nsa_penetration
+      related_mechanisms:
+      - 74
+      - 80
+      - 92
+      - 95
+      - 96
+      source_urls:
+      - https://gizmodo.com/claude-chatbot-crime-spree-2000649123
+      - https://gizmodo.com/leaked-anthropic-model-presents-unprecedented-cybersecurity-risks-much-to-pentagons-pleasure-2000739088
+      - https://gizmodo.com/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time-2000740379
+      - https://gizmodo.com/anthropic-cant-cover-up-its-claude-code-leak-fast-enough-2000740972
+      - https://gizmodo.com/some-unknown-group-is-reportedly-using-claude-mythos-without-permission-2000749327
+      - https://gizmodo.com/anthropics-mythos-ai-reportedly-hacked-the-nsas-most-sensitive-systems-in-hours-2000776836
+      test_file: tests/test_gizmodo_anthropic_ai_safety_clean_control_adversarial_coverage_aug14.py
   amazon:
     display_name: Amazon
     aliases:

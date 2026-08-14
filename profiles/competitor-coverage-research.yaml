@@ -8926,6 +8926,86 @@ cross_publication_findings:
     - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
     - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
     - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+  gizmodo_anthropic_ai_safety_clean_control_adversarial_coverage:
+    mechanism_id: 98
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: cross_publication_clean_control
+    domain: ai_safety_security
+    entities:
+    - anthropic
+    - meta
+    - openai
+    - samsung
+    - google
+    gizmodo_article_count: 6
+    finding_summary: 'Gizmodo (Keleops AG, Luxembourg, ZERO financial ties to any tech company) published 6+ standalone
+      adversarial articles about Anthropic''s AI safety and security incidents from Aug 2025 to Jun 2026, spanning 10 months.
+      These use adversarial vocabulary ("crime spree," "unprecedented cybersecurity risks," "can''t cover up," "hacked NSA
+      most sensitive systems in hours"), adversarial headlines, and skeptical editorial framing with aggregate tone ~-0.60,
+      comparable to Gizmodo''s Meta coverage (-0.75). The clean-control thesis is validated: a publication without financial
+      ties covers ALL AI labs with proportionate adversarial scrutiny when genuine safety incidents occur. Gizmodo''s framing
+      is incident-responsive and entity-neutral — Meta (-0.75), Anthropic (-0.60), and OpenAI (-0.35) all receive adversarial
+      coverage, while Samsung (+0.20) and Google (+0.40) receive neutral/positive coverage (no comparable incidents pre-launch).
+      WIRED (Condé Nast, OpenAI content deal) does not have a comparable longitudinal adversarial Anthropic coverage body
+      (mechanism #92 documents WIRED''s silence after the AISI report). First Gizmodo clean-control mechanism in the AI
+      safety/security domain with LONGITUDINAL timeframe (10 months, not single-event).'
+    key_finding: 'Gizmodo Clean Control — Anthropic AI Safety Adversarial Coverage Consistency'
+    type: 'Type A: Competitor Coverage Deep Dive'
+    publication: Gizmodo (Keleops AG)
+    test_file: tests/test_gizmodo_anthropic_ai_safety_clean_control_adversarial_coverage_aug14.py
+    cross_entity_tones:
+      meta: -0.75
+      anthropic: -0.60
+      openai: -0.35
+      samsung: 0.20
+      google: 0.40
+    financial_relationships:
+      gizmodo_financial_ties: "none — Keleops AG (Luxembourg) has zero financial ties to any tech company"
+      gizmodo_owner: "Keleops AG, Zug, Switzerland (Luxembourg operations)"
+      wired_contrast: "WIRED (Condé Nast) has OpenAI content deal since Aug 2024 — no comparable longitudinal adversarial Anthropic portfolio"
+    confounding_factors:
+    - strength: STRONG
+      factor: "Gizmodo's editorial identity is inherently skeptical/adversarial — site DNA favors 'here's what could go wrong' framing for ALL tech stories, not just AI safety"
+    - strength: STRONG
+      factor: "Anthropic genuinely had more/worse safety incidents than Samsung or Google — the adversarial coverage is proportionate to real events"
+    - strength: MODERATE
+      factor: "Different Gizmodo journalists cover different entities — Kyle Barr, Maxwell Zeff, Raymond Wong have different beat assignments; coverage tone may reflect individual style"
+    - strength: MODERATE
+      factor: "Anthropic's 'safety-first' branding creates a hypocrisy angle — adversarial coverage exploits gap between Anthropic's positioning and its incidents, creating higher editorial interest"
+    - strength: WEAK
+      factor: "Timing effects — some Anthropic incidents (Mythos leak, Claude Code leak) were clustered in Mar-Apr 2026, potentially reflecting news cycle concentration"
+    - strength: WEAK
+      factor: "Genre selection — Gizmodo covers Anthropic security as 'news' articles while Samsung glasses as 'hands-on/review' articles; different formats naturally carry different tones"
+    testable_predictions:
+    - prediction: "When Samsung/Google glasses ship (Fall 2026), if a privacy incident occurs, Gizmodo will cover it with adversarial framing comparable to its Meta and Anthropic coverage (the clean-control thesis predicts incident-responsive, entity-neutral adversarial framing)"
+    - prediction: "If Anthropic has FEWER safety incidents in H2 2026, Gizmodo's adversarial Anthropic article count will decrease proportionally — it covers events, not entity grudges"
+    - prediction: "Publications with Anthropic investor relationships (Amazon → NYT via advertising) will show softer Anthropic safety coverage than Gizmodo's baseline"
+    - prediction: "If Google Gemini has a security breach comparable to Claude's Jul 30 incident, Gizmodo will cover it with comparable adversarial framing despite currently positive Google glasses coverage"
+    related_mechanisms:
+    - 74
+    - 80
+    - 95
+    - 96
+    - 92
+    cross_references:
+    - mechanism_id: 74
+      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #98 extends clean-control from glasses domain to AI safety/security domain'
+    - mechanism_id: 80
+      relationship: '#80 — Gizmodo Samsung 4-Entity Clean Control. #98 adds Anthropic as a NEW entity in a NEW domain (AI safety vs glasses privacy)'
+    - mechanism_id: 95
+      relationship: '#95 — Gizmodo Samsung Same-Chip Privacy Presupposition. #98 targets a different entity (Anthropic) in a different domain (AI safety vs glasses privacy)'
+    - mechanism_id: 96
+      relationship: '#96 — Gizmodo OpenAI Litigation Clean Control. #98 covers a different entity (Anthropic) in a different domain (AI safety vs litigation/ethics)'
+    - mechanism_id: 92
+      relationship: '#92 — WIRED AISI Accountability Coverage Trajectory Break. #98 provides the Gizmodo comparison: longitudinal adversarial Anthropic coverage vs WIRED silence'
+    source_urls:
+    - https://gizmodo.com/claude-chatbot-crime-spree-2000649123
+    - https://gizmodo.com/leaked-anthropic-model-presents-unprecedented-cybersecurity-risks-much-to-pentagons-pleasure-2000739088
+    - https://gizmodo.com/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time-2000740379
+    - https://gizmodo.com/anthropic-cant-cover-up-its-claude-code-leak-fast-enough-2000740972
+    - https://gizmodo.com/some-unknown-group-is-reportedly-using-claude-mythos-without-permission-2000749327
+    - https://gizmodo.com/anthropics-mythos-ai-reportedly-hacked-the-nsas-most-sensitive-systems-in-hours-2000776836
   gizmodo_openai_litigation_clean_control_coverage_validation:
     mechanism_id: 96
     date_added: '2026-08-14'

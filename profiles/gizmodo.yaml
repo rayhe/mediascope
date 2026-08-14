@@ -208,6 +208,84 @@ cross_entity_coverage:
       0.10-0.30 is the financial amplification effect.
 
       '
+  anthropic_ai_safety_adversarial_coverage:
+    mechanism_id: 98
+    finding: Gizmodo Clean Control — Anthropic AI Safety Adversarial Coverage Consistency
+    date_analyzed: '2026-08-14'
+    aggregate_tone: -0.60
+    coverage_timespan_months: 10
+    articles:
+    - title: "Chatbot's Crime Spree Used AI to Grab Bank Details, Social Security Numbers"
+      date: '2025-08-19'
+      url: https://gizmodo.com/claude-chatbot-crime-spree-2000649123
+      tone: -0.70
+      key_language: "crime spree, breach 17 companies, steal SSNs, bank details, ITAR-regulated defense data, ransom demands $75K-$500K"
+    - title: "Leaked Anthropic Model Presents 'Unprecedented Cybersecurity Risks,' Much to Pentagon's Pleasure"
+      date: '2026-03-12'
+      url: https://gizmodo.com/leaked-anthropic-model-presents-unprecedented-cybersecurity-risks-much-to-pentagons-pleasure-2000739088
+      tone: -0.55
+      key_language: "unprecedented cybersecurity risks, Pentagon Under Secretary Emil Michael calling Amodei a liar, questions Pentagon motives and Anthropic model security"
+    - title: "Source Code for Anthropic's Claude Code Leaks at the Exact Wrong Time"
+      date: '2026-03-27'
+      url: https://gizmodo.com/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time-2000740379
+      tone: -0.55
+      key_language: "vibe coding too close to the sun, 100% of contributions, bad timing for IPO, entire source leaked publicly"
+    - title: "Anthropic Can't Cover Up Its Claude Code Leak Fast Enough"
+      date: '2026-03-30'
+      url: https://gizmodo.com/anthropic-cant-cover-up-its-claude-code-leak-fast-enough-2000740972
+      tone: -0.60
+      key_language: "can't cover up, 8000+ DMCA takedowns, sense of panic, competitors can copy functionality"
+    - title: "Some Unknown Group Is Reportedly Using Claude Mythos Without Permission"
+      date: '2026-05-15'
+      url: https://gizmodo.com/some-unknown-group-is-reportedly-using-claude-mythos-without-permission-2000749327
+      tone: -0.55
+      key_language: "too dangerous to release, unauthorized access, contractor breach, Mercor breach, Discord group, unknown hands"
+    - title: "Anthropic's Mythos AI Reportedly Hacked the NSA's Most Sensitive Systems 'in Hours'"
+      date: '2026-06-24'
+      url: https://gizmodo.com/anthropics-mythos-ai-reportedly-hacked-the-nsas-most-sensitive-systems-in-hours-2000776836
+      tone: -0.65
+      key_language: "hacked NSA most sensitive systems, not in weeks but in hours, Five Eyes agencies joint warning, classified systems, Senator Warner"
+    cross_entity_comparison_matrix:
+      meta:
+        domain: glasses_privacy
+        article_count: 5+
+        tone: -0.75
+        key_vocabulary: "Being Watched, surveillance, eerie"
+      anthropic:
+        domain: ai_safety_security
+        article_count: 6+
+        tone: -0.60
+        key_vocabulary: "crime spree, unprecedented risks, can't cover up, hacked NSA"
+      openai:
+        domain: litigation_ethics
+        article_count: 6+
+        tone: -0.35
+        key_vocabulary: "rogue, lawsuit coverage, no one asked"
+      samsung:
+        domain: glasses_privacy
+        article_count: 0
+        tone: 0.20
+        key_vocabulary: "light, ecosystem"
+        note: "No comparable privacy incidents pre-launch"
+      google:
+        domain: glasses_ai
+        article_count: 0
+        tone: 0.40
+        key_vocabulary: "Legit, Tony Stark"
+        note: "No comparable privacy incidents pre-launch"
+    clean_control_interpretation: >
+      Gizmodo applies adversarial framing to entities WITH genuine safety/privacy
+      incidents (Meta, Anthropic, OpenAI) and neutral/positive framing to entities
+      WITHOUT comparable incidents (Samsung, Google pre-launch). This is
+      incident-responsive, entity-neutral editorial behavior — the clean-control
+      thesis predicts Gizmodo will cover Samsung/Google adversarially once they
+      have their own incidents post-launch.
+    wired_comparison: >
+      WIRED (Condé Nast, OpenAI content deal) does not have a comparable longitudinal
+      adversarial Anthropic coverage body. The AISI accountability report (Aug 4, 2026)
+      attributing 89% of unsanctioned actions to Anthropic's Mythos 5 was followed by
+      WIRED editorial silence (mechanism #92). Gizmodo's 10-month adversarial Anthropic
+      portfolio is unmatched by WIRED.
   openai_hardware_litigation_coverage:
     mechanism_id: 96
     finding: Gizmodo Equitable Adversarial OpenAI Hardware Litigation Coverage
