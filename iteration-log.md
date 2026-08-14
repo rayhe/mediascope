@@ -1,3 +1,52 @@
+## Iteration 98 — Fri 2026-08-14 03:00 PT (Type D: Test & Verify)
+
+### Cross-Validation of Mechanisms #92-#94 (Iterations 95-97)
+
+**New test file:** `tests/test_type_d_03am_cross_validation_aug14.py` — 12 classes, 53 tests (all passing)
+
+**Mechanisms validated (#92-#94):**
+- #92: WIRED AISI Accountability Report Coverage Trajectory Break
+- #93: Samsung Privacy Feature Framing Inversion
+- #94: Apple Advertising Revenue Structural Opacity
+
+**Data integrity fixes discovered during validation:**
+- Mechanism #92 had EMPTY `source_urls` in CCR — added 5 URLs (AISI report, 3 WIRED articles, Malwarebytes)
+- Mechanism #92 was MISSING from competitor-entities.yaml — added under `anthropic.wired_aisi_trajectory_break` with full metadata (timeline, AISI incident data, related_mechanisms)
+- Mechanism #93 had `test_file: None` in CCR — set to actual file path
+- Mechanism #93 had `source_urls: None` in CCR — added 6 URLs (4 Samsung positive sources, 2 Meta negative sources)
+- Mechanism #93 was MISSING from competitor-entities.yaml — added under `samsung.privacy_feature_framing_inversion` with full metadata
+- Cross-validation test `collect_all_mechanism_ids` expanded to search `aggregate_findings` + `cross_entity_leverage` sections, not just `cross_publication_findings` — mechanism #30 (Chokkattu temporal framing) lives in `aggregate_findings`
+
+**Metadata completeness:** All 3 mechanisms have `date_added` (2026-08-14), `test_file` (exists on disk), `finding_summary` (≥100 chars), `confounding_factors` (≥3 each), and `testable_predictions` (≥2 each). ✅
+
+**Confounding factor quality:** Every mechanism has ≥1 STRONG confounding factor and factors at 2+ strength levels. ✅
+
+**ID integrity:** Max ID = 94, no duplicate top-level CPF IDs. ✅
+
+**Cross-reference coherence:** All references point to existing mechanisms (expanded search scope covers aggregate_findings). ✅
+
+**Finding distinctiveness:** Jaccard similarity <0.7 between all mechanism pairs. Each targets expected entity. ✅
+
+**Entity targeting:** #92→WIRED/Anthropic, #93→Samsung/Meta, #94→Apple/advertising. ✅
+
+**Samsung cluster coherence:** #93 references [30, 74, 76, 81]. ✅
+
+**WIRED investigation cluster coherence:** #92 references [34, 48, 58, 82, 84]. ✅
+
+**Regression guards:** Mechanisms #89-#91 all still present with test_file fields. ✅
+
+**CE consistency:** All 3 mechanisms present in competitor-entities.yaml. ✅
+
+**Test file importability:** All 3 mechanism test files import without errors. ✅
+
+**Source URL presence:** All mechanisms have ≥1 source URL (after fixes). ✅
+
+**Structural consistency:** 124 passing (README/ARCHITECTURE stats updated to 366 files / 12,346 tests / 94 mechanisms). ✅
+
+**Stats:** 366 test files | ~12,346 tests | 94 mechanisms | Commit: a4294c1
+
+---
+
 ## Iteration 97 — Fri 2026-08-14 02:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #94: Apple Advertising Revenue Structural Opacity — Coverage Accountability Asymmetry
@@ -35324,3 +35373,40 @@ trajectory continuity — a different dependent variable. #34 asks "Why no Meta 
 5. `tests/test_type_d_09pm_cross_validation_aug13.py` — max ID guard 91→92
 
 **Stats:** 363 test files | ~11,381 tests | 92 mechanisms | Commit: dd5783e
+
+---
+
+## Iteration 98 — Aug 14, 2026 04:00 PT
+
+**Type A: Competitor Coverage Deep Dive**
+**Mechanism #95: Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition**
+
+Raymond Wong at Gizmodo (clean control, zero financial ties to any tech company,
+owned by Keleops AG) demonstrates entity-specific privacy vocabulary selectivity
+when covering Samsung Galaxy Glasses vs Meta Ray-Ban despite IDENTICAL hardware:
+same Snapdragon AR1 Gen 1 chip, same 12MP camera resolution, same LED indicator.
+
+Key evidence:
+- Apr 28: Wong notes Samsung has same 12MP cameras, adds "except maybe not
+  violate your privacy as easily" — presupposition without evidence
+- Jul 22: Samsung hands-on, 1 paragraph on privacy, Samsung exec's knife
+  analogy accepted without pushback
+- Jul 30: Within-article asymmetry — Meta gets 5 privacy-scandal paragraphs,
+  Samsung gets 1 sentence as positive market entry (entity tone delta: 0.60)
+
+Samsung articles: 0 surveillance vocabulary across 3 articles.
+Meta articles: 5+ surveillance vocabulary instances per article.
+Same journalist. Same time period. Same chip. Same camera.
+
+Extends #74 (Snap Specs, niche $2,195) to Samsung (mass-market direct
+competitor, $299-$499), establishing robustness of cultural baseline
+asymmetry at the clean control publication.
+
+**Updates:**
+1. `profiles/gizmodo.yaml` — samsung.gizmodo_same_chip_privacy_presupposition section
+2. `profiles/competitor-coverage-research.yaml` — mechanism #95 under cross_publication_findings
+3. `profiles/competitor-entities.yaml` — samsung.gizmodo_same_chip_privacy_presupposition entry
+4. `README.md` — test inventory entry + stat sync (12,415 tests, 367 files)
+5. `docs/ARCHITECTURE.md` — test file listing + stat sync
+
+**Stats:** 367 test files | 12,415 tests | 95 mechanisms

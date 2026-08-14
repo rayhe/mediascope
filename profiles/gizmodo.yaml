@@ -484,6 +484,142 @@ cross_entity_coverage:
         - "#76 — Samsung-Google Compound Advertiser Leverage"
         - "#77 — NYT Samsung Glasses Coverage Selection Silence"
         - "Google I/O Camera Paradox (gizmodo.yaml google_io_2026_camera_paradox section)"
+    gizmodo_same_chip_privacy_presupposition:
+      mechanism_id: 95
+      date_analyzed: "2026-08-14"
+      finding: "Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition"
+      journalist: Raymond Wong
+      finding_summary: >
+        Raymond Wong at Gizmodo demonstrates entity-specific privacy vocabulary
+        selectivity when covering Samsung Galaxy Glasses vs Meta Ray-Ban despite
+        IDENTICAL hardware: same Snapdragon AR1 Gen 1 chip, same 12MP camera, same
+        LED indicator. Wong acknowledges hardware parity (Apr 28) but presupposes
+        Samsung as privacy-superior ("except maybe not violate your privacy as easily")
+        WITHOUT evidence. Within-article asymmetry (Jul 30): Meta gets 5 privacy-scandal
+        paragraphs; Samsung gets 1 sentence as positive market entry. Since Gizmodo has
+        ZERO financial ties to any tech company, this extends #74 (niche Snap $2,195) to
+        mass-market Samsung ($299-$499), establishing cultural-level privacy framing
+        robustness at the clean control publication.
+      samsung_hardware:
+        chip: "Qualcomm Snapdragon AR1 Gen 1"
+        camera_resolution_mp: 12
+        has_led_recording_indicator: true
+        has_ai_processing: true
+        ai_platform: "Google Gemini"
+      meta_hardware:
+        chip: "Qualcomm Snapdragon AR1 Gen 1"
+        camera_resolution_mp: 12
+        has_led_recording_indicator: true
+        has_ai_processing: true
+        ai_platform: "Meta AI (Llama)"
+      hardware_privacy_parity: true
+      samsung_articles:
+        - title: "Leak Suggests Samsung Cribbed Meta's Smart Glasses Design"
+          url: "https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362"
+          date: "2026-04-28"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 0
+          tone: -0.10
+          framing: "Samsung framed as design copycat (mild criticism) but privacy-safe. 'except maybe not violate your privacy as easily' — editorial assumption, no evidence."
+        - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
+          url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+          date: "2026-07-22"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 0
+          tone: -0.05
+          framing: "Product-focused hands-on. 1 paragraph on privacy. Samsung exec knife analogy accepted without pushback."
+        - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+          url: "https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911"
+          date: "2026-07-30"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 0
+          framing: "Samsung mentioned only as positive market entry. 'The entrance of Google and Samsung' may 'balloon' growth further."
+      meta_articles:
+        - title: "Dear Meta Smart Glasses Wearers: You're Being Watched, Too"
+          url: "https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207"
+          date: "2026-03"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 5
+          tone: -0.65
+          framing: "Adversarial headline, surveillance vocabulary — 'surveillance,' 'watched,' 'privacy minefield.'"
+        - title: "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So"
+          url: "https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803"
+          date: "2026-06-14"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 3
+          tone: -0.40
+          framing: "Meta = the privacy problem. Alternatives = the solutions."
+        - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+          url: "https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911"
+          date: "2026-07-30"
+          author: Raymond Wong
+          surveillance_vocabulary_count: 5
+          tone: -0.60
+          framing: "5 substantive Meta privacy-scandal paragraphs. 'Deafening,' 'pile up,' surveillance framing."
+      samsung_aggregate_tone: -0.05
+      meta_aggregate_tone: -0.55
+      within_article_asymmetry:
+        title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+        url: "https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911"
+        date: "2026-07-30"
+        meta_privacy_paragraphs: 5
+        samsung_mention_type: "1 sentence as positive market growth entry"
+        meta_tone: -0.60
+        samsung_tone: 0.00
+        entity_tone_delta: 0.60
+      pre_emptive_privacy_pass:
+        date: "2026-04-28"
+        article_url: "https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362"
+        editorial_quote: "except maybe not violate your privacy as easily"
+        presupposition_type: "Editorial assumption without evidence — Samsung product not shipped"
+        evidence_basis: "None. Samsung Galaxy Glasses had not shipped. No privacy track record exists."
+      samsung_exec_framing_adoption:
+        date: "2026-07-22"
+        article_url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+        executive_analogy: "Just like how you use your knife... (Samsung exec)"
+        journalist_pushback: "none"
+        significance: "Samsung exec's deflection analogy accepted without challenge. No comparable Meta exec framing accepted uncritically."
+      confounding_factors:
+        - factor: "Pre-launch product — Samsung glasses hadn't shipped during coverage period. Privacy violations require deployed hardware with real users. Meta has 7M+ units in the wild."
+          strength: STRONG
+        - factor: "Cambridge Analytica legacy — Meta has a documented history of privacy scandals that primes journalists for adversarial framing regardless of hardware parity."
+          strength: STRONG
+        - factor: "Installed base asymmetry — Meta's 7M+ units create more documented privacy incidents (extortion, cheating, contractor footage). Samsung has zero user-generated incidents."
+          strength: MODERATE
+        - factor: "Google partnership halo — Samsung's Google/Gemini partnership may invoke Google's 'don't be evil' brand association, buffering privacy skepticism."
+          strength: MODERATE
+        - factor: "Event access — Samsung Galaxy Unpacked provided hands-on access at a controlled demo, which naturally produces product-focused coverage. Meta glasses are reviewed in uncontrolled environments."
+          strength: WEAK
+      testable_predictions:
+        - "When Samsung Galaxy Glasses ship (fall 2026), if identical privacy incidents occur (filming without consent, data collection), Gizmodo will take longer to produce adversarial coverage than it did for Meta."
+        - "If Samsung implements Google Gemini camera vision features, Wong will describe them as 'AI intelligence' or 'computer vision,' not 'surveillance' or 'always-watching.'"
+        - "If Samsung glasses are used for non-consensual recording, the initial Gizmodo coverage will attribute blame to 'bad actors' rather than Samsung as a company."
+        - "Future 'category-wide' privacy articles will continue to lead with Meta as the exemplar, even after Samsung enters the market with identical hardware."
+      clean_control_significance:
+        gizmodo_financial_ties_to_samsung: "none"
+        gizmodo_financial_ties_to_meta: "none"
+        owner: "Keleops AG (Luxembourg)"
+        mechanism_isolated: "Cultural narrative coding — privacy vocabulary is entity-coded to Meta independent of financial incentives"
+        extends_mechanism: [74]
+        extension_description: "Extends #74 (Snap Specs, niche $2,195) to Samsung (mass-market direct competitor, $299-$499), establishing robustness across competitor price points and market segments at the clean control publication."
+      cross_references:
+        - mechanism_id: 74
+          relationship: "#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression (niche competitor)"
+        - mechanism_id: 31
+          relationship: "#31 — James Pero Editorial Direction Override (genre oscillation at Gizmodo)"
+        - mechanism_id: 89
+          relationship: "#89 — WIRED Ashworth Samsung (financial-tie publication shows same pattern)"
+        - mechanism_id: 93
+          relationship: "#93 — Samsung Privacy Feature Framing Inversion (cross-publication, same hardware, opposite vocabulary)"
+        - mechanism_id: 80
+          relationship: "#80 — Gizmodo Samsung Unpacked 4-Entity Clean Control (extends the 4-entity comparison)"
+      source_urls:
+        - https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362
+        - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+        - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+        - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
+        - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
+        - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
 journalist_migrations:
 - name: Maxwell Zeff
   origin: Gizmodo

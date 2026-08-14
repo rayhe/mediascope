@@ -8851,6 +8851,81 @@ cross_publication_findings:
     - https://www.livemint.com/us/business/apples-next-revenue-push-reports-suggest-ads-are-coming-to-maps-as-part-of-its-100-billion-services-strategy-11761495201330.html
     - http://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
     - https://seekingalpha.com/article/4928290-apple-inc-aapl-q3-2026-earnings-call-transcript
+  gizmodo_samsung_same_chip_privacy_presupposition:
+    mechanism_id: 95
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: entity_specific_coverage_selectivity
+    entities:
+    - samsung
+    - meta
+    iteration: 98
+    finding_summary: 'Raymond Wong at Gizmodo (clean control, zero financial ties to any tech company, owned by Keleops AG)
+      demonstrates entity-specific privacy vocabulary selectivity for Samsung Galaxy Glasses vs Meta Ray-Ban despite IDENTICAL
+      hardware: same Snapdragon AR1 Gen 1 chip, same 12MP camera resolution, same LED indicator. Wong explicitly acknowledges
+      hardware parity (Apr 28, 2026) but presupposes Samsung as privacy-superior ("except maybe not violate your privacy as
+      easily") WITHOUT evidence. Within-article asymmetry (Jul 30, 2026): Meta gets 5 substantive privacy-scandal paragraphs;
+      Samsung gets 1 sentence as positive market entry. Samsung coverage: 0 surveillance vocabulary across 3 articles. Meta
+      coverage: 5+ surveillance vocabulary instances per article, adversarial headlines ("You''re Being Watched, Too"),
+      surveillance/minefield/pile-up language. Since Gizmodo has ZERO financial ties to Samsung, Google, Meta, or any tech
+      company, this establishes that Samsung-favorable privacy framing operates at the CULTURAL level. Financial relationships
+      at WIRED (Conde Nast OpenAI deal), FT (Google/OpenAI deals), and NYT (Amazon deal) AMPLIFY this pre-existing cultural
+      coding but did not create it. Extends #74 (Snap Specs, niche $2,195) to Samsung (mass-market direct competitor,
+      $299-$499), establishing robustness across competitor price points.'
+    key_finding: 'Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition — Clean Control Entity-Specific Coverage Selectivity'
+    type: 'Type A: Competitor Coverage Deep Dive'
+    publication: Gizmodo (Keleops AG)
+    journalist: Raymond Wong
+    test_file: tests/test_gizmodo_samsung_same_chip_privacy_presupposition_aug14.py
+    related_mechanisms:
+    - 74
+    - 31
+    - 89
+    - 93
+    - 80
+    cross_references:
+    - mechanism_id: 74
+      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #95 extends from niche Snap ($2,195) to mass-market Samsung ($299-$499)'
+    - mechanism_id: 31
+      relationship: '#31 — James Pero Editorial Direction Override. Different mechanism (genre oscillation) but same publication, complementary evidence'
+    - mechanism_id: 89
+      relationship: '#89 — WIRED Ashworth Samsung. Different publication (WIRED has financial ties; Gizmodo has zero). #95 shows the CONTROL also exhibits the pattern'
+    - mechanism_id: 93
+      relationship: '#93 — Samsung Privacy Feature Framing Inversion. Cross-publication pattern; #95 establishes the clean control baseline'
+    - mechanism_id: 80
+      relationship: '#80 — Gizmodo Samsung Unpacked 4-Entity Clean Control. #95 deepens the same-journalist same-chip analysis within the 4-entity framework'
+    confounding_factors:
+    - factor: 'Pre-launch product — Samsung glasses had not shipped during coverage period. Privacy violations require deployed
+        hardware with real users. Meta has 7M+ units in the wild.'
+      strength: STRONG
+    - factor: 'Cambridge Analytica legacy — Meta has a documented history of privacy scandals that primes journalists for
+        adversarial framing regardless of hardware parity.'
+      strength: STRONG
+    - factor: 'Installed base asymmetry — Meta''s 7M+ units create more documented privacy incidents (extortion, cheating,
+        contractor footage). Samsung has zero user-generated incidents.'
+      strength: MODERATE
+    - factor: 'Google partnership halo — Samsung''s Google/Gemini partnership may invoke Google''s "don''t be evil" brand
+        association, buffering privacy skepticism.'
+      strength: MODERATE
+    - factor: 'Event access — Samsung Galaxy Unpacked provided hands-on access at a controlled demo, which naturally produces
+        product-focused coverage. Meta glasses are reviewed in uncontrolled environments.'
+      strength: WEAK
+    testable_predictions:
+    - 'P95.1: When Samsung Galaxy Glasses ship (fall 2026), if identical privacy incidents occur (filming without consent,
+      data collection), Gizmodo will take longer to produce adversarial coverage than it did for Meta.'
+    - 'P95.2: If Samsung implements Google Gemini camera vision features, Wong will describe them as "AI intelligence" or
+      "computer vision," not "surveillance" or "always-watching."'
+    - 'P95.3: If Samsung glasses are used for non-consensual recording, the initial Gizmodo coverage will attribute blame
+      to "bad actors" rather than Samsung as a company — the same framing Samsung exec used in the Jul 22 roundtable.'
+    - 'P95.4: Future "category-wide" privacy articles will continue to lead with Meta as the exemplar, even after Samsung
+      enters the market with identical hardware.'
+    source_urls:
+    - https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362
+    - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

@@ -4258,6 +4258,31 @@ entities:
       - 76
       - 81
       test_file: tests/test_samsung_privacy_feature_framing_inversion_aug14.py
+    gizmodo_same_chip_privacy_presupposition:
+      mechanism_id: 95
+      date_added: '2026-08-14'
+      finding_summary: >
+        Raymond Wong at Gizmodo (clean control, zero financial ties) demonstrates entity-specific
+        privacy vocabulary selectivity for Samsung Galaxy Glasses vs Meta Ray-Ban despite identical
+        hardware: same Snapdragon AR1 Gen 1 chip, same 12MP camera, same LED indicator. Samsung
+        receives 0 surveillance vocabulary across 3 articles; Meta receives 5+ instances per article
+        from the SAME journalist. Within-article asymmetry (Jul 30): Meta = 5 privacy paragraphs,
+        Samsung = 1 sentence as positive market entry. Pre-emptive privacy pass (Apr 28): Wong
+        presupposes Samsung as privacy-superior ("except maybe not violate your privacy as easily")
+        without evidence. Extends #74 from niche Snap to mass-market Samsung.
+      source_urls:
+      - https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362
+      - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+      - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+      - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
+      - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
+      related_mechanisms:
+      - 74
+      - 31
+      - 80
+      - 89
+      - 93
+      test_file: tests/test_gizmodo_samsung_same_chip_privacy_presupposition_aug14.py
   microsoft:
     display_name: Microsoft
     aliases:
