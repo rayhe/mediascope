@@ -756,6 +756,144 @@ cross_entity_coverage:
         - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
         - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
         - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+  pero_google_redemption_temporal_narrative:
+    mechanism_id: 99
+    finding: "Google Temporal Redemption Narrative vs Meta Recidivism Loop"
+    date_analyzed: '2026-08-14'
+    journalist: James Pero
+    mechanism_description: >
+      James Pero, Gizmodo's self-described "resident smart glasses guy," constructs
+      DIFFERENT TEMPORAL NARRATIVES for Google vs Meta when covering identical smart
+      glasses hardware. Google gets a REDEMPTION ARC (failure → learning → growth),
+      while Meta gets a RECIDIVISM LOOP (failure → more failure → escalation). Both
+      entities build camera-equipped smart glasses with the SAME Snapdragon AR1 Gen 1
+      chip, 12MP cameras, LED indicators, and AI visual processing. The temporal
+      narrative asymmetry isolates CULTURAL CODING as a mechanism distinct from
+      financial incentives (Gizmodo/Keleops AG has ZERO financial ties to any tech
+      company). Distinct from #31 (genre split), #80 (framing vocabulary), #98
+      (Anthropic AI safety), and #74 (Snap privacy vocabulary suppression). This
+      mechanism covers TEMPORAL NARRATIVE structure — how the same journalist
+      constructs different STORY TYPES (redemption vs recidivism) for different
+      entities covering the same hardware category.
+    google_redemption_arc:
+      aggregate_tone: 0.0
+      surveillance_vocabulary_count: 0
+      key_vocabulary:
+      - learned something
+      - may have actually learned
+      - may revolutionize
+      - may prosper
+      - scared of the words (playful mockery, not adversarial)
+      articles:
+      - title: "Google's Next Smart Glasses May Have Actually Learned Something From the Glasshole Days"
+        date: '2026-01-14'
+        url: https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
+        tone: 0.05
+        key_language: "learned a thing or two about privacy and distraction, better than Meta on privacy, on-device processing"
+      - title: "Google Seems Pretty Scared of the Words 'Smart Glasses'"
+        date: '2026-05-19'
+        url: https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
+        tone: 0.0
+        key_language: "intelligent eyewear, playful mockery of branding, cameras described neutrally without surveillance framing"
+      - title: "Google's Project Astra May Revolutionize Smart Glasses—but Not Today"
+        date: '2025-05-20'
+        url: https://gizmodo.com/googles-project-astra-may-revolutionize-smart-glasses-but-not-today-2000604663
+        tone: 0.05
+        key_language: "revolutionize, cautiously excited, compelling, solid improvements, most compelling"
+    meta_recidivism_loop:
+      aggregate_tone: -0.45
+      meta_privacy_paragraph_dominance: "8 of 10 substantive paragraphs in 'Privacy Concerns Pile Up'"
+      key_vocabulary:
+      - privacy concerns pile up
+      - encroach on people's privacy
+      - the anti-Meta plan
+      - thanks to Meta
+      - surveillance techniques
+      - crossed privacy boundaries
+      - sensitive content
+      - shamed into covering their cameras
+      articles:
+      - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+        date: '2026-07-30'
+        url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+        tone: -0.40
+        key_language: "privacy concerns pile up, encroach on people's privacy, crossed privacy boundaries, sensitive content, extortion, criminal charges"
+        meta_paragraph_share: "8/10"
+      - title: "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So"
+        date: '2026-05-21'
+        url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+        tone: -0.40
+        key_language: "the anti-Meta plan, privacy nightmare, threat to personal privacy, surveillance, riled privacy watchdogs"
+        key_framing: "Section titled 'The anti-Meta plan.' Competitors positioned as privacy heroes against Meta as implied villain."
+      - title: "Smart Glasses Companies Are Getting Shamed Into Covering Their Cameras"
+        date: '2026-03-23'
+        url: https://gizmodo.com/smart-glasses-are-getting-shamed-into-covering-their-cameras-2000736843
+        tone: -0.35
+        key_language: "Thanks to Meta, smart glasses are getting scrutinized extra intensely. Other companies' camera concerns treated as collateral damage from Meta."
+        key_framing: "Opens with 'Thanks to Meta' — attributing industry-wide camera scrutiny to Meta specifically."
+      - title: "Smart Glasses Are Catching on With U.S. Police"
+        date: '2026-08-11'
+        url: https://gizmodo.com/smart-glasses-are-catching-on-with-u-s-police-2000797054
+        tone: -0.50
+        key_language: "Ray-Ban Meta AI glasses, surveillance techniques, facial recognition in play, police forces and easy surveillance"
+    temporal_coding_inversion: >
+      Both companies shipped camera glasses. Google's PREVIOUS failure (Google Glass
+      2013-2015) is framed as LEARNING — the headline literally says "May Have
+      Actually Learned Something." Meta's CONTINUED market success (7M+ units sold)
+      is framed as ESCALATING THREAT — "Privacy Concerns Pile Up," "Shamed Into
+      Covering Their Cameras." The temporal coding inverts: failure becomes virtue
+      (for Google), success becomes menace (for Meta). Google Glass was the original
+      "Glasshole" era — yet that history is treated as resolved growth, while Meta's
+      identical hardware category generates perpetual surveillance narrative.
+    hardware_parity:
+      shared_chip: "Snapdragon AR1 Gen 1"
+      camera_resolution: "12MP"
+      led_indicator: "Both have LED recording indicators"
+      ai_processing: "Both use AI visual processing (Google Gemini / Meta AI)"
+      note: "Identical core hardware for privacy purposes — cameras, chips, LED indicators"
+    google_actual_privacy_record:
+      gemini_data_collection: "Google Gemini collects 22 of 35 data types (Surfshark research) — 46% more than any competitor chatbot"
+      gemini_retention: "18-month default data retention, 3-year human review retention, data NOT deleted when user clears activity"
+      android_xr_led: "Google Android XR LED does NOT turn on during Gemini 'observation' mode (Fast Company)"
+      glasshole_history: "Google Glass 2013-2015 generated equivalent privacy backlash — but redemption framing treats this as resolved"
+    confounding_factors:
+    - strength: STRONG
+      factor: "Google Glass failure IS a genuine narrative event — Google did publicly fail and retreat from consumer smart glasses in 2015, making 'learning from mistakes' a defensible editorial frame"
+    - strength: STRONG
+      factor: "Meta has genuine privacy scandals (Cambridge Analytica 2018, Kenya contractor video review 2026) that create a reasonable baseline for adversarial coverage beyond what Google currently faces"
+    - strength: MODERATE
+      factor: "Pero's beat developed during Meta's market dominance (7M+ units) — Google glasses are pre-launch, making adversarial privacy coverage premature since there are no real-world incidents to cover"
+    - strength: MODERATE
+      factor: "Google's 'intelligent eyewear' and 'audio glasses' branding actively downplays cameras — this corporate framing may reduce the editorial impulse to write privacy-focused coverage"
+    - strength: WEAK
+      factor: "Different article timing — Google articles are anticipatory/preview pieces written before product launch, while Meta articles respond to actual incidents and data. Preview pieces inherently have more positive framing."
+    - strength: WEAK
+      factor: "Editor assignment — Pero may have been assigned Google coverage as product preview and Meta coverage as privacy investigation, with the temporal narrative being an artifact of assignment rather than personal framing choice"
+    testable_predictions:
+    - prediction: "When Samsung/Google glasses ship Fall 2026 and generate real-world privacy incidents, Pero will frame them as 'growing pains' for the smart glasses category rather than entity-specific recidivism"
+    - prediction: "If Google Gemini's visual identification capabilities on glasses are used inappropriately (stalking, cheating, unauthorized recording), Pero will frame it as a Google AI or category problem rather than a 'surveillance glasses' problem — avoiding the entity-specific language used for Meta"
+    - prediction: "Post-launch Samsung/Google privacy coverage from Pero will use softer vocabulary (concern, question, challenge, growing pains) than Meta privacy coverage (invasive, surveillance, encroaching, pile up, shamed)"
+    - prediction: "Pero's year-end smart glasses retrospective (if written) will credit Google/Samsung with 'pushing the category forward' while Meta gets credit only for market creation, not privacy improvement — even if Meta makes concrete privacy improvements in H2 2026"
+    related_mechanisms:
+    - 31
+    - 80
+    - 98
+    - 74
+    - 95
+    distinctiveness:
+      from_31: "Mechanism #31 covers review vs editorial GENRE split. #99 covers TEMPORAL NARRATIVE structure applied to different entities within the same article genre (both editorial/analysis pieces)."
+      from_80: "Mechanism #80 covers FRAMING VOCABULARY in the glasses domain (4-entity clean control). #99 covers how the same journalist constructs different STORY TYPES (redemption arc vs recidivism loop)."
+      from_98: "Mechanism #98 covers Gizmodo's adversarial Anthropic coverage (AI safety domain). #99 covers Google-specific temporal narrative in the glasses domain by a specific journalist."
+      from_74: "Mechanism #74 covers Snap Specs privacy vocabulary suppression. #99 is about narrative ARC STRUCTURE (redemption vs recidivism), not vocabulary selection."
+    source_urls:
+    - https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
+    - https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
+    - https://gizmodo.com/googles-project-astra-may-revolutionize-smart-glasses-but-not-today-2000604663
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    - https://gizmodo.com/smart-glasses-are-getting-shamed-into-covering-their-cameras-2000736843
+    - https://gizmodo.com/smart-glasses-are-catching-on-with-u-s-police-2000797054
+    test_file: tests/test_james_pero_google_redemption_temporal_narrative_aug14.py
 journalist_migrations:
 - name: Maxwell Zeff
   origin: Gizmodo

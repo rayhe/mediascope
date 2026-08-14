@@ -3669,6 +3669,23 @@ entities:
       - https://gizmodo.com/major-publishers-are-reportedly-considering-a-drastic-step-to-get-their-content-out-of-googles-ai-answers-2000788873
       - https://www.fool.com/investing/2026/07/28/reddit-considers-a-bold-move-cutting-off-googles-a/
       - https://www.barrons.com/articles/reddit-stock-ai-google-754caed8
+    pero_temporal_narrative_mechanism_99:
+      mechanism_id: 99
+      journalist: James Pero
+      publication: Gizmodo
+      date_added: '2026-08-14'
+      finding: >
+        Pero constructs a REDEMPTION ARC for Google smart glasses (failure → learning → growth)
+        vs a RECIDIVISM LOOP for Meta (failure → more failure → escalation). Google and Meta
+        build cameras on the SAME Snapdragon AR1 Gen 1 chip with 12MP cameras and LED
+        indicators. Google's Glass-era failure is framed as "learned something" while Meta's
+        market success is framed as "privacy concerns pile up." Isolates cultural coding
+        as a mechanism at a zero-financial-ties publication.
+      test_file: tests/test_james_pero_google_redemption_temporal_narrative_aug14.py
+      source_urls:
+      - https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
+      - https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
+      - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
   x_twitter:
     display_name: X / Twitter
     aliases:
