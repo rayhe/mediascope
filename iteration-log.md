@@ -1,3 +1,37 @@
+## Iteration 102 — Fri 2026-08-14 10:00 PT (Type D: Test & Verify)
+
+### Test Suite Verification, Bug Fixes, and Cross-Validation
+
+**Scope:** Full verification of test suite integrity after mechanisms #98-100 were added in iterations 99-101.
+
+**Failures found and fixed (14 total):**
+
+1. **Samsung framing inversion test (#93) — 10 failures:** Recursive search function hit cross-reference stubs instead of full mechanism entries. `gizmodo_samsung_same_chip_privacy_presupposition.cross_references[3]` has `{mechanism_id: 93, relationship: ...}` which the naive DFS overwrote the correct 17-key full mechanism with a 2-key stub. Fix: Added `find_mechanism()` helper that collects all candidates and returns the most complete match.
+
+2. **Stale max-ID assertions — 3 failures:** Cross-validation tests hardcoded old max mechanism IDs (91, 93, 94) that were overtaken by new mechanisms. Fixed to `>=` or updated to 100.
+
+3. **HTTP→HTTPS source URLs — 1 failure (16 URLs fixed):** 5 URLs in competitor-entities.yaml and 11 URLs in competitor-coverage-research.yaml used `http://` instead of `https://`. Domains: openai.com, eff.org, fool.com, androidauthority.com, muckrack.com, techmeme.com, gerritdevynck.com, digiday.com, talkingbiznews.com.
+
+**New test file:** `tests/test_type_d_10am_cross_validation_aug14.py` — 14 tests covering:
+- Mechanism inventory (count, ID range, uniqueness)
+- Cross-reference integrity (no new dangling refs beyond known set of 8)
+- Source URL quality (all HTTPS in both profile files)
+- Search function robustness (cross-ref stubs don't shadow full mechanisms)
+- README stats freshness (test file count, mechanism count vs ID range)
+- Confounding factor presence (mechanisms ≥95 have confounding_factors and testable_predictions)
+
+**Bug pattern documented:** `dict.update()` merging mechanism databases loses the more complete research-file entries when the entities-file has a shorter version. Fixed with key-count-aware merge.
+
+**Verification passed:**
+- ✅ All aug14 tests pass (496 tests across 10 files)
+- ✅ Core test suite pass (asymmetry, entities, competitor_coverage, financial_relationships, citations — 194 tests)
+- ✅ README stats current (373 files, 12,696 tests)
+- ✅ Cross-reference integrity: 0 new dangling refs
+
+**Stats:** 373 test files | ~12,696 tests | 100 mechanisms | Commit: d1a48b1
+
+---
+
 ## Iteration 101 — Fri 2026-08-14 09:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #100: News Corp Triple-Revenue AI Financial Ecosystem — Publisher, Marketplace Operator, and Litigant

@@ -2089,6 +2089,9 @@ entities:
       - mechanism_id: 55
         name: Privacy innovation attribution inversion
         connection: Meta's proactive measures framed reactively; Apple's delay framed aspirationally
+      - mechanism_id: 101
+        name: Apple N50 pre-launch privacy-hero cascade
+        connection: Cross-publication cascade from Gurman report; 7+ outlets, identical narrative arc, Samsung invisible
       source_urls:
       - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
       - https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/

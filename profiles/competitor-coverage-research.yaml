@@ -9343,6 +9343,206 @@ cross_publication_findings:
     - 47
     - 82
     - 88
+  apple_n50_privacy_hero_cascade:
+    mechanism_id: 101
+    title: "Apple N50 Pre-Launch Privacy-Hero Cascade \u2014 Cross-Publication Narrative Uniformity and Samsung Shipped-Product Invisibility"
+    type: competitor_coverage_deep_dive
+    date_added: "2026-08-14"
+    finding_summary: >
+      Bloomberg's Gurman reported (Jul 26, 2026) that Apple delayed N50 smart glasses to WWDC Jun
+      2027, citing privacy as "priority No. 1" and aiming to "distance the launch from criticism
+      faced by Meta's Ray-Ban glasses." Within 72 hours, 7+ publications produced standalone articles
+      framing Apple's ABSENCE of a product as moral superiority over Meta's EXISTING product. Samsung
+      Galaxy Glasses launched at Galaxy Unpacked on Jul 22 (4 days BEFORE the Gurman report) with
+      identical privacy-relevant hardware (AR1 Gen 1, 12MP camera, LED anti-tamper, physical toggle,
+      10% patents privacy-related) yet received ZERO "privacy hero" narrative framing. All 7+ cascade
+      articles derive from a single Bloomberg source with no Apple PR statements, no independent
+      verification, and no comparison to Samsung's shipped equivalent features. Narrative arc is
+      uniform across all publications: (1) smart glasses have a privacy problem (setup), (2) Meta
+      demonstrated this (foil), (3) Apple is taking privacy seriously (hero). Samsung is invisible
+      or relegated to a passing clause. Meta references outnumber Samsung references ~30:1.
+    cascade_publications:
+    - name: gHacks
+      headline: "Apple Delays First Smart Glasses to WWDC 2027 Over Privacy Concerns"
+      date: "2026-07-28"
+      source_url: https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 3
+      samsung_references: 0
+      apple_tone: 0.45
+    - name: Macworld
+      headline: "Apple eyes WWDC smart glasses launch with a focus on privacy"
+      date: "2026-07-27"
+      source_url: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 5
+      samsung_references: 1
+      apple_tone: 0.50
+    - name: BetaNews
+      headline: "Apple delays first smart glasses to WWDC 2027 for privacy"
+      date: "2026-07-27"
+      source_url: https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 4
+      samsung_references: 0
+      apple_tone: 0.40
+    - name: TechCrunch
+      headline: "Can Apple make smart glasses that aren't a constant privacy threat?"
+      date: "2026-07-26"
+      source_url: https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 5
+      samsung_references: 0
+      apple_tone: 0.30
+    - name: Computerworld
+      headline: "Apple's future success with smart glasses depends on privacy"
+      date: "2026-07-27"
+      source_url: https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 4
+      samsung_references: 0
+      apple_tone: 0.35
+    - name: Road to VR
+      headline: "Apple's First Smart Glasses Reportedly Set to Unveil at WWDC 2027"
+      date: "2026-07-26"
+      source_url: https://roadtovr.com/apples-smart-glasses-unveil-wwdc-2027-release-date/
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 3
+      samsung_references: 0
+      apple_tone: 0.25
+    - name: AppleInsider
+      headline: "Smart glasses distrust will be a challenge for Apple Glass"
+      date: "2026-07-26"
+      source_url: https://appleinsider.com/articles/26/07/26/public-distrust-in-smart-glasses-will-be-a-a-challenge-for-apple-glass
+      primary_source: "Gurman Bloomberg Power On"
+      meta_references: 5
+      samsung_references: 0
+      apple_tone: 0.20
+    cascade_window_hours: 48
+    gurman_report_date: "2026-07-26"
+    samsung_unpacked_date: "2026-07-22"
+    apple_product_status: "Unshipped, pre-launch. No Apple PR. No official announcement. Earliest reveal WWDC Jun 2027."
+    apple_earliest_reveal: "WWDC June 2027"
+    apple_official_statements: 0
+    independent_verification_count: 0
+    primary_source_report:
+      reporter: "Mark Gurman"
+      publication: "Bloomberg Power On newsletter"
+      date: "2026-07-26"
+    samsung_shipped_privacy_features:
+    - "LED recording indicator with anti-tamper detection"
+    - "Physical privacy toggle on arm"
+    - "Camera auto-disable on LED tamper"
+    - "10% of smart glasses patents related to privacy/misuse prevention"
+    - "No user data used for AI training (Samsung executive statement)"
+    apple_promised_privacy_features:
+    - name: "LED recording indicator"
+      status: "Reported by Gurman, unconfirmed by Apple"
+    - name: "Camera disable on LED tamper"
+      status: "Reported as planned, unconfirmed"
+    - name: "Three camera configurations tested"
+      status: "Reported by Gurman, no Apple confirmation"
+    - name: "On-device processing"
+      status: "Reported as likely, unconfirmed"
+    - name: "No facial recognition"
+      status: "Reported by Gurman, promised by unnamed sources"
+    narrative_arc:
+      setup: "Smart glasses have a privacy problem (category framing)"
+      villain: "Meta's Ray-Ban glasses demonstrated this problem (Meta as cautionary tale)"
+      hero: "Apple is taking privacy seriously and delaying to get it right (Apple as protagonist)"
+    samsung_framing_comparison:
+      framing_type: "Descriptive/technical"
+      hero_narrative_articles: 0
+      examples:
+      - "Samsung's smart glasses have this important privacy feature (GSMArena)"
+      - "Here's how Samsung's smart glasses will keep perverts away (Android Authority)"
+      - "Samsung's smart glasses take privacy seriously (SamMobile)"
+      tone_range: "+0.10 to +0.20"
+    apple_cascade_framing:
+      framing_type: "Narrative/aspirational"
+      hero_narrative_articles: 7
+      examples:
+      - "Apple delays for privacy (heroic delay narrative)"
+      - "Can Apple make glasses that aren't a privacy threat? (Apple as solver)"
+      - "Apple's future success depends on privacy (brand = privacy)"
+      tone_range: "+0.20 to +0.50"
+    meta_proactive_measures:
+      date: "2026-07-07"
+      measure: "Camera auto-disable on LED tamper detection"
+      cascade_framing: "Reactive framing: described as 'responded after reports' and 'following months of public backlash' rather than industry-leading innovation"
+    confounding_factors:
+    - strength: STRONG
+      factor: >
+        Apple genuinely has a stronger public privacy track record than Meta. ATT, on-device
+        processing, and 10 years of privacy marketing create legitimate editorial framing.
+        However, Samsung also has Knox, on-device processing, and a privacy-positive record
+        but receives zero narrative framing.
+    - strength: STRONG
+      factor: >
+        Gurman is THE premium Apple source and his report was genuinely newsworthy. A shift
+        in Apple's product timeline IS news. However, coverage uniformity extends beyond
+        reporting the delay to constructing a privacy-hero narrative well beyond Gurman's claims.
+    - strength: MODERATE
+      factor: >
+        Samsung's Galaxy Glasses were pre-launch at announcement (shipping fall 2026) so
+        deep privacy analysis may be premature. However, Apple's N50 has ZERO concrete features
+        to analyze yet received more privacy coverage than Samsung's disclosed features.
+    - strength: MODERATE
+      factor: >
+        Cambridge Analytica creates genuine institutional privacy concern explaining
+        disproportionate Meta scrutiny. However, this should affect all publications equally;
+        the cascade's uniform narrative structure suggests editorial convention.
+    - strength: WEAK
+      factor: >
+        Apple PR may have independently briefed journalists beyond Gurman, creating
+        parallel coverage tracks. No evidence exists; all articles cite Gurman/Bloomberg.
+    - strength: WEAK
+      factor: >
+        Summer news cycle lull may amplify any substantive report into cascade. However,
+        Samsung Galaxy Unpacked (Jul 22) was also a summer event and did NOT generate
+        a comparable privacy cascade.
+    testable_predictions:
+    - >
+      When Apple officially announces N50 (WWDC Jun 2027), cascade publications will use
+      softer privacy framing than they applied to Meta Ray-Ban launch or Samsung Galaxy
+      Glasses launch, even if N50's camera features are functionally identical.
+    - >
+      Samsung Galaxy Glasses privacy features will NOT generate a "privacy hero" narrative
+      cascade at launch, despite being identical to Apple's promises, because Samsung lacks
+      the institutional privacy brand narrative shortcut.
+    - >
+      If Apple removes the N50 camera entirely, publications will frame the removal as
+      "principled restraint" rather than "feature-cutting" or "competitive disadvantage."
+    - >
+      Future Meta privacy innovations will continue to receive reactive framing ("responded
+      to criticism") rather than proactive framing ("industry-leading"), regardless of
+      chronological order vs competitors.
+    - >
+      No cascade publication will publish a follow-up comparing Apple's promised privacy
+      features to Samsung's shipped privacy features.
+    cross_references:
+    - mechanism_id: 49
+      relationship: "Bobrowsky entity targeting concentrates Meta scrutiny at WSJ; cascade extends this to 7+ publications"
+    - mechanism_id: 61
+      relationship: "Apple News+ financial channel; cascade shows narrative uniformity beyond financial incentive"
+    - mechanism_id: 80
+      relationship: "Gizmodo clean control confirms entity coding exists; cascade shows entity coding amplified cross-publication"
+    - mechanism_id: 89
+      relationship: "Ashworth category headline with entity-specific substance; cascade is the cross-publication version"
+    - mechanism_id: 95
+      relationship: "Samsung same-chip privacy presupposition; cascade adds Apple as third entity with narrative framing inversion"
+    test_file: tests/test_apple_n50_privacy_hero_cascade_cross_publication_aug14.py
+    source_urls:
+    - https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
+    - https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+    - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
+    - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+    - https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html
+    - https://roadtovr.com/apples-smart-glasses-unveil-wwdc-2027-release-date/
+    - https://appleinsider.com/articles/26/07/26/public-distrust-in-smart-glasses-will-be-a-a-challenge-for-apple-glass
+    - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+    - https://www.androidauthority.com/samsung-smart-glasses-privacy-durability-3691448/
+    - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
