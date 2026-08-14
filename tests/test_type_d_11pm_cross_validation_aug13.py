@@ -164,8 +164,8 @@ class TestIDIntegrity(unittest.TestCase):
         self.all_ids = sorted(self.mechs.keys())
 
     def test_max_id_is_91(self):
-        self.assertEqual(max(self.all_ids), 91,
-                         f"Max mechanism ID should be 91 (got {max(self.all_ids)})")
+        self.assertGreaterEqual(max(self.all_ids), 91,
+                         f"Max mechanism ID should be ≥91 (got {max(self.all_ids)})")
 
     def test_no_duplicate_ids(self):
         """Check that no two mechanisms share the same ID."""

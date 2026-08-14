@@ -102,6 +102,32 @@ def load_yaml(filepath):
         return yaml.safe_load(f)
 
 
+def find_mechanism(data, mechanism_id):
+    """Find the FULL mechanism entry (not cross-reference stubs) by ID.
+
+    Cross-reference entries also carry mechanism_id but have only 2-3 keys
+    (mechanism_id, relationship). The full mechanism always has finding_summary,
+    date_added, etc. We collect all matches and return the most complete one.
+    """
+    candidates = []
+
+    def _search(obj):
+        if isinstance(obj, dict):
+            if obj.get('mechanism_id') == mechanism_id:
+                candidates.append(obj)
+            for v in obj.values():
+                _search(v)
+        elif isinstance(obj, list):
+            for item in obj:
+                _search(item)
+
+    _search(data)
+    if not candidates:
+        return None
+    # Prefer the candidate with the most keys (full mechanism entry)
+    return max(candidates, key=lambda c: len(c))
+
+
 class TestMechanism93Existence:
     """Verify mechanism #93 is documented in research profiles."""
 
@@ -124,19 +150,7 @@ class TestMechanism93Existence:
 
     def test_mechanism_93_has_finding_summary(self):
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None, "Mechanism #93 not found"
         assert 'finding_summary' in mechanism, "Mechanism #93 must have finding_summary"
         assert len(mechanism['finding_summary']) >= 100, \
@@ -144,19 +158,7 @@ class TestMechanism93Existence:
 
     def test_mechanism_93_has_confounding_factors(self):
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         assert 'confounding_factors' in mechanism
         assert len(mechanism['confounding_factors']) >= 3, \
@@ -164,19 +166,7 @@ class TestMechanism93Existence:
 
     def test_mechanism_93_has_source_urls(self):
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         # Sources are split into samsung_positive_sources and meta_negative_sources
         samsung_sources = mechanism.get('samsung_positive_sources', [])
@@ -397,19 +387,7 @@ class TestCrossReferenceIntegrity:
     def test_references_mechanism_81(self):
         """Must reference mechanism #81 (Samsung Unpacked beat assignment)."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         refs = mechanism.get('cross_references', []) or mechanism.get('related_mechanisms', [])
         assert 81 in refs, "Must cross-reference mechanism #81"
@@ -417,19 +395,7 @@ class TestCrossReferenceIntegrity:
     def test_references_mechanism_74(self):
         """Must reference mechanism #74 (Gizmodo Snap Specs suppression)."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         refs = mechanism.get('cross_references', []) or mechanism.get('related_mechanisms', [])
         assert 74 in refs, "Must cross-reference mechanism #74"
@@ -437,19 +403,7 @@ class TestCrossReferenceIntegrity:
     def test_references_mechanism_30(self):
         """Must reference mechanism #30 (Chokkattu temporal oscillation)."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         refs = mechanism.get('cross_references', []) or mechanism.get('related_mechanisms', [])
         assert 30 in refs, "Must cross-reference mechanism #30"
@@ -461,19 +415,7 @@ class TestConfoundingFactorQuality:
     def test_samsung_wear_detection_advantage(self):
         """Must acknowledge Samsung's wear detection is a genuine advantage."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         factors = mechanism.get('confounding_factors', [])
         factors_text = ' '.join(str(f) for f in factors).lower()
@@ -483,19 +425,7 @@ class TestConfoundingFactorQuality:
     def test_meta_has_more_installed_base(self):
         """Must acknowledge Meta's larger installed base creates more incidents."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         factors = mechanism.get('confounding_factors', [])
         factors_text = ' '.join(str(f) for f in factors).lower()
@@ -505,19 +435,7 @@ class TestConfoundingFactorQuality:
     def test_samsung_not_yet_shipped(self):
         """Must acknowledge Samsung glasses haven't shipped yet."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         factors = mechanism.get('confounding_factors', [])
         factors_text = ' '.join(str(f) for f in factors).lower()
@@ -527,19 +445,7 @@ class TestConfoundingFactorQuality:
     def test_has_strong_confounding_factor(self):
         """At least one confounding factor must be STRONG."""
         data = load_yaml(RESEARCH_FILE)
-        mechanism = None
-        def search(obj):
-            nonlocal mechanism
-            if isinstance(obj, dict):
-                if obj.get('mechanism_id') == 93:
-                    mechanism = obj
-                    return
-                for v in obj.values():
-                    search(v)
-            elif isinstance(obj, list):
-                for item in obj:
-                    search(item)
-        search(data)
+        mechanism = find_mechanism(data, 93)
         assert mechanism is not None
         factors = mechanism.get('confounding_factors', [])
         assert len(factors) >= 3

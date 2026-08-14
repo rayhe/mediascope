@@ -1641,7 +1641,7 @@ cross_publication_findings:
     source_urls:
     - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
     - https://advertisers.mediaradar.com/samsung-group-advertising-profile
-    - http://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
+    - https://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
     - https://sqmagazine.co.uk/samsung-statistics/
     - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
     - https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm
@@ -4815,7 +4815,7 @@ cross_publication_findings:
     - https://llmpulse.ai/blog/openai-publisher-deals/
     - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
     - https://www.adweek.com/media/axios-local-openai-2026/
-    - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+    - https://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
     - https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
     - https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project
     - https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/
@@ -5133,7 +5133,7 @@ cross_publication_findings:
     - https://www.techmeme.com/250923/p20
     - https://www.techmeme.com/260310/p25
     - https://www.techmeme.com/250919/p13
-    - http://muckrack.com/jess-weatherbed/articles
+    - https://muckrack.com/jess-weatherbed/articles
     - https://www.techmeme.com/260311/p15
   deepa_seetharaman_reporter_frame_lock:
     mechanism_id: 57
@@ -5623,7 +5623,7 @@ cross_publication_findings:
     - https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://www.wired.com/story/anthropic-claude-research-functional-emotions/
     - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
     - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
-    - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+    - https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
     - https://blazetrends.com/anthropic-kills-secret-claude-fable-5-sabotage-code-after-intense-ai-researcher-backlash/
     - https://sciencesprings.wordpress.com/2026/04/09/from-wired-anthropics-new-product-aims-to-handle-the-hard-part-of-building-ai-agents/
     confounding_factors:
@@ -5728,7 +5728,7 @@ cross_publication_findings:
     source_urls:
     - https://gizmodo.com/project-ghostbusters-facebook-accused-of-using-your-pho-1851366446
     - https://techcrunch.com/2025/04/29/metas-llamacon-was-all-about-undercutting-openai/
-    - http://www.techmeme.com/260123/p18
+    - https://www.techmeme.com/260123/p18
     - https://www.techmeme.com/260212/p47
     - https://www.techmeme.com/260612/p20
     - https://www.wired.com/story/anthropic-launches-claude-managed-agents/
@@ -6773,7 +6773,7 @@ cross_publication_findings:
     - https://www.benton.org/headlines/tech-moguls-close-president-trump-see-midterms-path-long-term-power
     - https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
     - https://theorg.com/org/the-washington-post/org-chart/gerrit-de-vynck
-    - http://gerritdevynck.com/
+    - https://gerritdevynck.com/
     - https://talkingbiznews.com/1/bloombergs-de-vynck-moves-to-google-beat-carville-to-cover-ibm/
     testable_predictions:
     - WaPo will NOT produce a comparable multi-part adversarial Anthropic investigation at Facebook Papers depth, despite
@@ -6993,7 +6993,7 @@ cross_publication_findings:
     - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
     - https://www.opensocietyfoundations.org/voices/google-ai-overviews-foxglove-uk-ruling
     - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
-    - http://digiday.com/media/googles-forced-ai-opt-out-what-changes-and-what-doesnt-for-publishers/
+    - https://digiday.com/media/googles-forced-ai-opt-out-what-changes-and-what-doesnt-for-publishers/
     - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
     - https://www.fastcompany.com/91552971/google-ai-overviews-search-feature-impacted-new-uk-rule-what-will-change
     test_file: tests/test_cma_nosue_regulatory_neutralization_aug12.py
@@ -7544,7 +7544,7 @@ cross_publication_findings:
       description: 'MacRumors (Feb 20, 2026): OpenAI smart speaker with camera + FR'
     - url: https://hypebeast.com/2026/2/openai-x-jony-ive-plan-camera-smart-speaker-for-2027
       description: 'Hypebeast (Feb 2026): OpenAI device as active participant in daily life'
-    - url: http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+    - url: https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
       description: 'EFF (Jun 2026): Victory — Meta strips FR code after public outcry'
     - url: https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
       description: 'Gizmodo (Feb 2026): Smart Speaker That No One Asked For'
@@ -7676,7 +7676,7 @@ cross_publication_findings:
       mechanism_id: 85
     source_urls:
     - https://www.techmeme.com/260722/p26
-    - http://talkingbiznews.com/they-talk-biz-news/bloomberg-hires-kelly-welch-for-consumer-tech-team/
+    - https://talkingbiznews.com/they-talk-biz-news/bloomberg-hires-kelly-welch-for-consumer-tech-team/
     - https://muckrack.com/chriswelch
     - https://chris-welch.com
     confounding_factors:
@@ -8849,7 +8849,7 @@ cross_publication_findings:
     - https://searchenginewatch.com/2026/08/04/apples-advertising-business-just-had-its-best-quarter-ever/
     - https://www.campaignlive.com/article/apple-begins-selling-news-ads-directly/1897348
     - https://www.livemint.com/us/business/apples-next-revenue-push-reports-suggest-ads-are-coming-to-maps-as-part-of-its-100-billion-services-strategy-11761495201330.html
-    - http://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
+    - https://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
     - https://seekingalpha.com/article/4928290-apple-inc-aapl-q3-2026-earnings-call-transcript
   gizmodo_samsung_same_chip_privacy_presupposition:
     mechanism_id: 95
@@ -9188,7 +9188,7 @@ cross_publication_findings:
     - https://technewstube.com/wired/1672376/viral-goodbye-meta-ai-copypasta-not-protect/
     - https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
     - https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms
-    - http://www.techmeme.com/250930/p18
+    - https://www.techmeme.com/250930/p18
     - https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/
     cross_references:
     - 30

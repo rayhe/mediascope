@@ -356,7 +356,7 @@ entities:
           source_urls:
           - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
           - https://www.adweek.com/media/axios-local-openai-2026/
-          - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+          - https://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
         lenfest_institute:
           date: 2024-10
           total_funding_m: 10
@@ -440,7 +440,7 @@ entities:
       - https://llmpulse.ai/blog/openai-publisher-deals/
       - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
       - https://www.adweek.com/media/axios-local-openai-2026/
-      - http://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+      - https://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
       - https://openai.com/index/partnership-with-american-journalism-project-to-support-local-news/
       - https://venturebeat.com/ai/openai-commits-5m-to-local-news-partnership-with-the-american-journalism-project
       - https://www.reuters.com/business/media-telecom/openai-partners-with-american-journalism-project-support-local-news-2023-07-18/
@@ -918,7 +918,7 @@ entities:
       source_urls:
       - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
       - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
-      - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+      - https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
     wapo_bezos_ownership_chain:
       mechanism_id: 65
       date_added: '2026-08-12'
@@ -1907,7 +1907,7 @@ entities:
       - https://searchenginewatch.com/2026/08/04/apples-advertising-business-just-had-its-best-quarter-ever/
       - https://www.campaignlive.com/article/apple-begins-selling-news-ads-directly/1897348
       - https://www.livemint.com/us/business/apples-next-revenue-push-reports-suggest-ads-are-coming-to-maps-as-part-of-its-100-billion-services-strategy-11761495201330.html
-      - http://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
+      - https://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
       - https://seekingalpha.com/article/4928290-apple-inc-aapl-q3-2026-earnings-call-transcript
     apple_news_glasses_prelaunch_alignment:
       mechanism_id: 61
@@ -4229,7 +4229,7 @@ entities:
       source_urls:
       - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
       - https://advertisers.mediaradar.com/samsung-group-advertising-profile
-      - http://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
+      - https://www.androidauthority.com/reuters-samsung-14-billion-ads-marketing-galaxy-other-devices-this-year-320700/
       - https://sqmagazine.co.uk/samsung-statistics/
     privacy_innovation_attribution:
       _ref_mechanism_id: 55
