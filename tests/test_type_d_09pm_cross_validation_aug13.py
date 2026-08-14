@@ -196,14 +196,14 @@ class TestConfoundingFactorQuality:
 class TestIDIntegrity:
     """Mechanism IDs are contiguous, no duplicates, correct max."""
 
-    def test_max_id_is_91(self, all_mechanism_ids):
-        assert max(all_mechanism_ids) == 91
+    def test_max_id_is_92(self, all_mechanism_ids):
+        assert max(all_mechanism_ids) == 92
 
     def test_min_id_is_17_or_lower(self, all_mechanism_ids):
         assert min(all_mechanism_ids) <= 17
 
     def test_no_gaps_in_17_to_91(self, all_mechanism_ids):
-        expected = set(range(17, 92))
+        expected = set(range(17, 93))
         missing = expected - all_mechanism_ids
         assert not missing, f"Missing mechanism IDs: {sorted(missing)}"
 

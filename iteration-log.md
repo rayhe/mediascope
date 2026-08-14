@@ -1,3 +1,42 @@
+## Iteration 94 — Thu 2026-08-13 23:00 PT (Type D: Test & Verify)
+
+### Cross-Validation of Mechanisms #89-#91 (Iterations 91-93)
+
+**New test file:** `tests/test_type_d_11pm_cross_validation_aug13.py` — 13 classes, 37 tests (all passing)
+
+**Mechanisms validated (#89-#91):**
+- #89: WIRED Ashworth Category-Universal Headline with Entity-Specific Substance
+- #90: Victoria Song Health Data Privacy Investigation Asymmetry
+- #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier
+
+**Data integrity fixes discovered during validation:**
+- Mechanism #91 was ONLY in competitor-entities.yaml — missing from competitor-coverage-research.yaml. Added with full metadata (finding_summary, confounding_factors, testable_predictions, source_urls, cross_references). Both YAML files now consistent.
+- Mechanism #89 had empty `related_mechanisms` — populated with [12, 30, 45, 70, 80, 81, 84] (Ashworth cross-entity + Samsung cluster + Chokkattu temporal)
+
+**Metadata completeness:** All 3 mechanisms have `date_added` (2026-08-13), `test_file` (exists on disk), `finding_summary` (≥100 chars), `confounding_factors` (≥3 each), and `testable_predictions` (≥2 each). ✅
+
+**Confounding factor quality:** Every mechanism has ≥1 STRONG confounding factor and factors at 2+ strength levels. ✅
+
+**ID integrity:** Max ID = 91, no duplicates. ✅
+
+**Cross-reference coherence:** All related_mechanisms/cross_references point to existing or known-nested IDs. ✅
+
+**Finding distinctiveness:** Jaccard similarity <0.7 between all mechanism pairs. Each targets its expected entity/pattern. ✅
+
+**Regression guards:** Mechanisms #84–#88 all still present with test_file fields. ✅
+
+**Samsung cluster coherence:** #76, #89, #90, #91 at top level; all new mechanisms reference at least one existing cluster member (#76, #80, #81). ✅
+
+**Source URL presence:** All mechanisms have ≥1 source URL. ✅
+
+**Test file importability:** All 3 mechanism test files import without errors. ✅
+
+**Pre-existing structural note:** Mechanisms #80 and #81 are parsed as nested sub-entries in competitor-coverage-research.yaml (not top-level cross_publication_findings keys). Tests accommodate this with a known-nested ID set.
+
+**Stats:** 362 test files | ~12,172 tests | 91 mechanisms | Commit: b757e17
+
+---
+
 ## Iteration 93 — Thu 2026-08-13 21:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier

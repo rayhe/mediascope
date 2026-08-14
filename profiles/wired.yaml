@@ -4836,6 +4836,30 @@ cross_entity_coverage_analysis:
     source_urls:
       - "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"
 
+  aisi_accountability_coverage_trajectory_break:
+    date_analyzed: "2026-08-14"
+    rotation_type: "A"
+    mechanism_id: 92
+    key_finding: >
+      WIRED published 3 rogue AI articles in 3 days (Jul 29-31) establishing beat ownership,
+      then went completely silent after the AISI published its definitive incident report
+      (Aug 4) attributing 89% (17/19) of unsanctioned actions to Anthropic Mythos 5. Also
+      published zero coverage of Zuckerberg "Future is for Everyone" AI manifesto (Aug 10)
+      and Congressional rogue AI letters (Aug 10). 10+ outlets covered each of these events.
+      WIRED continued adversarial Meta investigations during the same period, confirming
+      editorial capacity was available but selectively deployed.
+    phase_1_articles: 3
+    phase_1_date_range: "2026-07-29 to 2026-07-31"
+    phase_2_articles: 0
+    phase_2_date_range: "2026-08-04 to 2026-08-14"
+    trajectory_delta: "100% reduction in rogue AI coverage rate"
+    break_point: "AISI incident report publication (Aug 4, 2026)"
+    distinction_from_34: >
+      Mechanism #34 measures entity-specific volume (3 vs 0 articles). Mechanism #92
+      measures temporal trajectory after beat-ownership investment -- a different
+      dependent variable (coverage continuity, not entity selectivity).
+    financial_correlation: "Conde Nast OpenAI content licensing deal (Aug 2024)"
+
 # ===================================================================
 # CHOKKATTU COMPOUND COMPETITOR SILENCE (Mechanism #42, Aug 11 2026)
 # ===================================================================
@@ -5147,3 +5171,4 @@ ashworth_wwdc_pcc_privacy_framing_asymmetry:
     - "Mechanism #42: Compound Competitor Coverage Selection Silence"
     - "Mechanism #14: Barrett Crisis/Makeover Headline Paradox"
     - "test_chokkattu_ashworth_cross_entity.py (Business Wars podcast data)"
+

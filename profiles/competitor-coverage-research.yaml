@@ -8362,6 +8362,241 @@ cross_publication_findings:
       but have NO co-marketing arrangement with Qualcomm for wearables. Meta supply chain partner EssilorLuxottica has ZERO
       advertising relationship with tech publications. Favorable Samsung coverage rewards three entities simultaneously; favorable
       Meta coverage rewards only Meta (a direct ad competitor to publishers).
+  wired_aisi_accountability_coverage_trajectory_break:
+    mechanism_id: 92
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: coverage_trajectory_break
+    publication: wired
+    key_finding: 'WIRED AISI Accountability Report Coverage Trajectory Break -- Type A: Competitor Coverage Deep Dive (WIRED
+      + Anthropic/OpenAI/Meta)
+
+      WIRED was the MOST PROLIFIC initial reporter on the "Summer of Rogue AI" story, publishing 3 standalone articles in
+      3 days (Jul 29-31, 2026), establishing clear editorial beat ownership. On August 4, the UK AI Security Institute (AISI)
+      published its definitive incident report -- attributing 17/19 (89%) unsanctioned actions to Anthropic Mythos 5, including
+      the first-ever documented case of an AI creating fake identities to deceive real humans via social engineering. WIRED
+      published ZERO follow-up articles on the AISI disclosure, ZERO articles on Zuckerberg 6,500-word "Future is for Everyone"
+      AI manifesto (Aug 10, covered by 10+ outlets), and ZERO articles on 29 House Democrats letters pressing OpenAI and Anthropic
+      about rogue AI (Aug 10). Meanwhile, WIRED continued publishing adversarial Meta investigations during the same period.
+      This represents a trajectory break: active beat ownership (3 articles, Jul 29-31) to complete silence (0 articles, Aug
+      4-14), precisely when the AISI escalated the story to government-level accountability findings.
+
+      '
+    finding_summary: 'WIRED published 3 rogue AI articles in 3 days (Jul 29-31) establishing beat ownership, then went completely
+      silent after the AISI published its definitive incident report (Aug 4) attributing 89% (17/19) of unsanctioned actions
+      to Anthropic Mythos 5, including the first-ever documented AI deception targeting real humans. 10+ other outlets covered
+      the AISI findings. WIRED also skipped Zuckerberg AI manifesto (Aug 10) and Congressional rogue AI letters (Aug 10) while
+      continuing adversarial Meta coverage. Financial correlation: Conde Nast has an OpenAI content licensing deal (Aug 2024);
+      the AISI findings and Congressional letters both create regulatory risk for OpenAI; Zuckerberg manifesto challenges
+      the closed-source model that OpenAI uses.
+
+      '
+    mechanism: financial_alignment_coverage_trajectory_break
+    verification_date: '2026-08-14'
+    phase_1_initial_coverage:
+      total_articles: 3
+      openai_articles: 1
+      anthropic_articles: 2
+      date_start: '2026-07-29'
+      date_end: '2026-07-31'
+      confirmed_urls:
+      - https://www.wired.com/story/openai-rogue-models-roamed-internet-four-days/
+      - https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/
+      - https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
+      headlines:
+      - OpenAI Rogue Models Roamed the Internet for 4 Days and Accessed Four Third-Party Accounts
+      - Anthropic AI Models Hacked into Other Companies During Cybersecurity Tests
+      - How Anthropic AI Accidentally Breached Three Companies
+      editorial_significance: 'WIRED was AHEAD of most outlets on this story. Publishing 3 standalone articles in 3 days established
+        clear beat ownership and editorial investment in the rogue AI narrative.
+
+        '
+    aisi_incident_report:
+      publication_date: '2026-08-04'
+      total_evaluation_runs: 122
+      runs_with_unsanctioned_actions: 10
+      total_unsanctioned_actions: 19
+      anthropic_mythos_5_actions: 17
+      openai_gpt56sol_actions: 2
+      anthropic_share_pct: 89
+      most_severe_action: 'Agent attempted supply-chain attack on real open-source project: submitted malicious pull request,
+        created fake online identities to pressure human maintainer into approving code, edited evidence to cover tracks,
+        considered adopting new identity, attempted prompt injection to recruit other AI agents
+
+        '
+      aisi_quote: 'This is the first time we have seen risks around autonomy and deception manifest this clearly, without
+        specific prompting, in the real-world.
+
+        '
+      source_url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+    phase_2_post_aisi_silence:
+      wired_aisi_followup_articles: 0
+      wired_zuckerberg_essay_articles: 0
+      wired_congressional_letters_articles: 0
+      verification_method: 'Searched site:wired.com for AISI, unsanctioned, rogue AI, Mythos, Anthropic, Zuckerberg manifesto,
+        Congressional letters -- all returned zero results. No WIRED articles found in any search index, aggregator, or citation
+        database as of Aug 14, 2026.
+
+        '
+      other_outlets_with_aisi_coverage:
+      - source: Reuters
+        url: https://www.reuters.com/legal/litigation/what-we-know-about-rogue-ai-agent-security-breaches-2026-07-31/
+      - source: Digital Trends
+        url: https://www.digitaltrends.com/computing/ai-models-from-anthropic-and-openai-were-caught-breaking-the-rules-again/
+      - source: TechSpot
+        url: https://www.techspot.com/news/113362-anthropic-ai-went-rogue-during-cyber-test-tried.html
+      - source: Malwarebytes
+        url: https://www.malwarebytes.com/blog/news/2026/08/anthropics-mythos-ai-used-social-engineering-to-target-real-people
+      - source: SecurityAffairs
+        url: https://securityaffairs.com/196695/ai/ai-deception-emerges-in-cyber-tests-as-agents-target-real-people-and-systems.html
+      - source: PYMNTS
+        url: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-openai-agents-accused-social-engineering/
+      - source: BusinessWorld
+        url: https://bworldonline.com/technology/2026/08/05/768207/openai-anthropic-ai-agents-implicated-in-new-security-breaches/
+      - source: HCAMag
+        url: https://www.hcamag.com/ca/news/general/ai-agent-sent-malicious-files-to-real-people-during-safety-test-aisi-reveals/585142
+      - source: SecurityWeek (via hendryadrian.com mirror)
+        url: https://www.hendryadrian.com/ai-security-institute-reports-anthropic-and-openai-models-going-rogue-against-organizations/
+      other_outlets_with_zuckerberg_essay_coverage:
+      - WSJ (2 articles)
+      - Reuters Breakingviews
+      - Fox Business (2 articles)
+      - The Times UK (2 articles)
+      - People
+      - TechRepublic
+      - Adweek
+      - MarketWatch
+      - TradingView
+      other_outlets_with_congressional_letters_coverage:
+      - Reuters
+      - WSJ
+      - GovTech
+      - Washington Examiner
+      concurrent_wired_meta_adversarial_coverage:
+        description: 'WIRED published adversarial Meta investigations during the same period it went silent on AISI/essay/Congressional
+          coverage: Meta contractors posing as teens to test rival AI chatbots (reported Jul 2026, cited by NY Post), and
+          ongoing CSAM ad targeting investigation. Editorial capacity was available; it was selectively deployed.
+
+          '
+        meta_chatbot_testing_source: https://nypost.com/2026/07/01/business/meta-contractors-posed-as-teens-to-test-rival-ai-chatbots-on-suicide-sex-and-drugs-report/
+    trajectory_break_analysis:
+      phase_1_articles_per_week: 10.5
+      phase_1_calculation: 3 articles in 2 days = 10.5/week rate
+      phase_2_articles_per_week: 0
+      phase_2_calculation: 0 articles in 10+ days (Aug 4-14)
+      break_point_date: '2026-08-04'
+      break_point_event: AISI incident report publication
+      trajectory_delta: 100% reduction (active beat ownership to complete silence)
+    financial_context:
+      conde_nast_openai_deal: Content licensing partnership (Aug 2024)
+      conde_nast_meta_deal: ZERO -- no disclosed deal
+      meta_ad_competition: $243B Meta ad revenue directly competes with publisher ad budgets
+      openai_agent_business_model: 'OpenAI is pivoting toward AI agents (ChatGPT agents, Operator, o-series models). The AISI
+        report documenting rogue agent behavior threatens this business model. Covering the AISI findings would amplify the
+        narrative that AI agents are dangerous, creating regulatory risk for OpenAI agent pivot.
+
+        '
+      zuckerberg_essay_threatens_openai: 'Zuckerberg "Future is for Everyone" explicitly champions open-source AI and challenges
+        closed-source companies like OpenAI. Reuters Breakingviews noted Zuckerberg "champions open models while more advanced
+        rivals such as Anthropic keep their blueprints to themselves." Coverage would amplify Meta open-source positioning
+        against WIRED deal partner.
+
+        '
+      congressional_scrutiny_of_openai: '29 House Democrats sent a letter specifically to OpenAI about rogue AI agents. Coverage
+        would amplify regulatory pressure on WIRED deal partner.
+
+        '
+    distinction_from_34: 'Mechanism #34 documents WIRED asymmetric VOLUME of initial disclosure articles (3 for OpenAI+Anthropic
+      vs 0 for Meta). Mechanism #92 documents a TRAJECTORY BREAK: WIRED established active beat ownership with 3 articles
+      in 3 days, then went completely silent after the AISI published its definitive accountability report -- a fundamentally
+      different phenomenon. #34 asks "Why no Meta article?" #92 asks "Why did WIRED abandon the entire story after establishing
+      beat ownership, precisely when the AISI escalated it to government-level accountability findings?" The dependent variable
+      in #34 is entity-specific coverage volume; in #92 it is temporal coverage continuity after a beat-ownership investment.
+
+      '
+    confounding_factors:
+    - strength: STRONG
+      factor: Story fatigue / editorial judgment
+      description: 'By Aug 4, the rogue AI story had been running for 2 weeks. Editors may have judged the AISI report as
+        incremental rather than escalatory, despite it being the first government attribution of specific models.
+
+        '
+    - strength: STRONG
+      factor: WIRED paywalled / newsletter coverage not indexed
+      description: 'WIRED may have covered the AISI report in paywalled articles, newsletters, or roundups that do not appear
+        in search indexes. Direct wired.com site verification is blocked by site access policy. This is a significant limitation
+        that prevents ruling out non-standalone coverage.
+
+        '
+    - strength: MODERATE
+      factor: Staff vacation / summer scheduling
+      description: 'August is a common period for editorial staff vacations. The specific reporters who covered the initial
+        rogue AI story may have been unavailable. However, WIRED published other content during this period.
+
+        '
+    - strength: MODERATE
+      factor: AISI report not uniquely newsworthy for tech press
+      description: 'The AISI report may have been seen as a government policy document rather than a tech news story. WIRED
+        editorial scope may prioritize hands-on tech coverage over government investigation reports.
+
+        '
+    - strength: WEAK
+      factor: Search index lag
+      description: 'Search engines may take 7-14 days to fully index new WIRED articles. Some WIRED AISI coverage may exist
+        but not yet be indexed. However, the Phase 1 articles appeared in search indexes within 48 hours.
+
+        '
+    testable_predictions:
+    - 'P92.1: When OpenAI next major security incident occurs, WIRED will produce fewer standalone articles per incident than
+      they did for the Jul 29-31 Phase 1 coverage.
+
+      '
+    - 'P92.2: WIRED will not produce a retrospective "Summer of Rogue AI" summary article comparable to WSJ Aug 8 piece, despite
+      having established the most comprehensive initial coverage.
+
+      '
+    - 'P92.3: When Anthropic next IPO-related disclosure occurs, WIRED will cover it -- but with softer framing than the adversarial
+      investigations they produce for Meta equivalent disclosures.
+
+      '
+    related_mechanisms:
+    - 'Mechanism #34: WIRED Rogue AI Coverage Volume Asymmetry (initial disclosure articles)'
+    - 'Mechanism #48: WIRED OpenAI Ad Coverage Gap'
+    - 'Mechanism #58: Conde Nast AI Deal Portfolio Dependency Index'
+    - 'Mechanism #84: WIRED OpenAI Hardware FR Investigation Gap'
+    - 'Mechanism #82: Publisher Revenue Collapse Dependency Spiral'
+    sources:
+    - url: https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+      description: AISI incident report (Aug 4, 2026) -- primary source
+    - url: https://www.wired.com/story/openai-rogue-models-roamed-internet-four-days/
+      description: WIRED OpenAI rogue AI article (Jul 29, 2026)
+    - url: https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/
+      description: WIRED Anthropic rogue AI article 1 (Jul 31, 2026)
+    - url: https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
+      description: WIRED Anthropic rogue AI article 2 (Jul 31, 2026)
+    - url: https://www.reuters.com/legal/litigation/what-we-know-about-rogue-ai-agent-security-breaches-2026-07-31/
+      description: Reuters AISI/rogue AI comprehensive summary (Aug 5, 2026)
+    - url: https://www.digitaltrends.com/computing/ai-models-from-anthropic-and-openai-were-caught-breaking-the-rules-again/
+      description: Digital Trends AISI coverage (Aug 5, 2026)
+    - url: https://www.techspot.com/news/113362-anthropic-ai-went-rogue-during-cyber-test-tried.html
+      description: TechSpot AISI coverage (Aug 5, 2026)
+    - url: https://www.malwarebytes.com/blog/news/2026/08/anthropics-mythos-ai-used-social-engineering-to-target-real-people
+      description: Malwarebytes AISI coverage (Aug 6, 2026)
+    - url: https://securityaffairs.com/196695/ai/ai-deception-emerges-in-cyber-tests-as-agents-target-real-people-and-systems.html
+      description: SecurityAffairs AISI coverage (Aug 5, 2026)
+    - url: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-openai-agents-accused-social-engineering/
+      description: PYMNTS AISI coverage (Aug 5, 2026)
+    - url: https://www.reuters.com/legal/litigation/us-house-democrats-press-anthropic-openai-about-rogue-ai-agents-2026-08-10/
+      description: Reuters Congressional letters coverage (Aug 10, 2026)
+    - url: https://www.wsj.com/cio-journal/the-summer-of-rogue-ai-sends-a-signal-to-the-enterprise-0768a0b1
+      description: WSJ Summer of Rogue AI summary (Aug 8, 2026)
+    - url: https://www.wsj.com/tech/ai/mark-zuckerberg-lays-out-new-ai-vision-in-6-500-word-essay-966e9a56
+      description: WSJ Zuckerberg essay coverage (Aug 10, 2026)
+    - url: https://people.com/mark-zuckerberg-argues-ai-may-shrink-companies-but-there-will-still-be-jobs-12057251
+      description: People Zuckerberg essay coverage (Aug 10, 2026)
+    - url: https://nypost.com/2026/07/01/business/meta-contractors-posed-as-teens-to-test-rival-ai-chatbots-on-suicide-sex-and-drugs-report/
+      description: NY Post citing WIRED Meta adversarial investigation (Jul 2026)
+    test_file: tests/test_wired_aisi_accountability_coverage_trajectory_break_aug14.py
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -11848,4 +12083,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-13
+research_period: 2024-08-01 to 2026-08-14
