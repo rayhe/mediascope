@@ -9543,6 +9543,131 @@ cross_publication_findings:
     - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
     - https://www.androidauthority.com/samsung-smart-glasses-privacy-durability-3691448/
     - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+  adrienne_so_wearables_privacy_vocabulary_bifurcation:
+    mechanism_id: 102
+    title: "Adrienne So (WIRED) — Wearables Privacy Vocabulary Bifurcation Across Entities"
+    type: journalist_cross_entity_tracking
+    date_added: "2026-08-14"
+    journalist: Adrienne So
+    publication: WIRED (Condé Nast / Advance Publications)
+    beat: wearables, fitness trackers, smartwatches, smart glasses
+    finding_summary: >
+      Adrienne So, WIRED's primary wearables/fitness reviewer, applies ENTITY-SELECTIVE privacy
+      vocabulary when reviewing structurally identical product categories. In her Oakley Meta
+      Vanguard review (Oct 21, 2025), she inserts an explicit parenthetical attack — "(which are
+      garbage)" — about Meta's AI and privacy policies within a PRODUCT REVIEW of fitness glasses.
+      When reviewing Google's Pixel Watch 4 (Oct 8, 2025), which collects far more sensitive
+      biometric health data (heart rate, blood oxygen, sleep stages, GPS, menstrual cycles fed
+      directly into Google's advertising ecosystem via Fitbit), she writes ZERO privacy caveats
+      and uses a promotional headline ("Surprisingly Close" to Apple Watch Ultra 3) that actively
+      elevates Google's competitive position. The Oakley Vanguard is a CAMERA product with NO
+      biometric health sensors — the privacy attack targets Meta's company reputation, not the
+      product's actual data collection. This extends the WIRED privacy vocabulary bifurcation
+      pattern (Chokkattu #93, Ashworth #73/#87, Rogers #97) to the fitness/wearables editorial
+      lane, establishing that the bifurcation is team-wide and institutional, not isolated to
+      individual beat reporters covering smart glasses.
+    data_sensitivity_inversion: >
+      Google's Pixel Watch collects heart rate, blood oxygen, sleep stages, GPS location,
+      menstrual cycles, and body composition — all fed into Google's advertising ecosystem
+      via Fitbit/Google Health Connect. Meta's Oakley Vanguard is a camera/speaker product
+      with no biometric health sensors. The privacy alarm is applied to the LESS data-sensitive
+      product (Meta camera glasses) while the MORE data-sensitive product (Google health watch)
+      receives frictionless praise.
+    google_health_data_history_gap: >
+      So's Google Pixel Watch reviews contain ZERO mention of Google's documented health data
+      controversies: Project Nightingale/Ascension (2019, secret collection of millions of
+      patients' health records) and the Fitbit acquisition FTC antitrust concerns (2021).
+      These are directly relevant to a health wearable review but are omitted, while Meta's
+      broader privacy reputation is volunteered in a camera product review.
+    editorial_team_scope: >
+      With Adrienne So covering the fitness/wearables lane, the privacy vocabulary bifurcation
+      now spans WIRED's entire wearables editorial team: Chokkattu (smart glasses/phones),
+      Ashworth (smart glasses/tech), Rogers (privacy investigations), and So (fitness/wearables).
+      Four independent journalists at one publication, all showing the same entity-selective
+      pattern, establishes institutional rather than individual causation.
+    meta_articles:
+    - title: Oakley Meta Vanguard Review
+      author: Adrienne So
+      date: "2025-10-21"
+      privacy_vocabulary: "Whatever you may think of Meta's AI and privacy policies (which are garbage)"
+      body_tone: positive
+      headline_framing: limitation_first
+      url: https://www.techmeme.com/251021/p19
+    google_articles:
+    - title: "Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close"
+      author: Adrienne So
+      date: "2025-10-08"
+      privacy_vocabulary: none
+      body_tone: promotional
+      headline_framing: elevating_competitive_position
+    - title: Pixel Watch 3 running features
+      author: Adrienne So (referenced by Julian Chokkattu)
+      date: "2024-08"
+      privacy_vocabulary: none
+      body_tone: critical_of_functionality
+      notes: "Running feature criticism framed as functionality, not privacy/data concern"
+    financial_context:
+      google_relationships:
+      - Google News Showcase payments to Condé Nast/Advance (mechanism #17)
+      - Google advertising revenue dependency for Condé Nast titles (mechanism #22)
+      - Google News Initiative participation
+      meta_relationship: "No equivalent Meta → WIRED/Condé Nast/Advance financial deal exists"
+    confounding_factors:
+    - strength: strong
+      factor: "Meta has a genuinely worse privacy reputation from Cambridge Analytica,
+        Facebook Papers, and repeated FTC consent decrees — this prior justifies
+        SOME differential in privacy skepticism"
+    - strength: moderate
+      factor: "Oakley Vanguard has a camera (more visible privacy surface area than a watch),
+        though the parenthetical attacks Meta's 'AI and privacy policies' broadly,
+        not the camera specifically"
+    - strength: moderate
+      factor: "Google's Pixel Watch is primarily a health/fitness product where privacy
+        context may be less expected by readers than in a camera glasses review"
+    - strength: weak
+      factor: "Different product categories may invite different editorial framings
+        independent of the company behind them"
+    - strength: weak
+      factor: "Adrienne So may have personal Meta-specific negative experiences
+        that drive the vocabulary differential"
+    testable_predictions:
+    - "If Adrienne So reviews Samsung/Google Android XR smart glasses (which have cameras
+      identical to Meta's), she will NOT insert equivalent privacy parentheticals or
+      '(which are garbage)' language about Samsung/Google's privacy policies"
+    - "If a Google wearable faces a data breach or privacy controversy, So's coverage
+      will use euphemistic/passive language compared to active/accusatory language
+      for equivalent Meta incidents"
+    - "Future WIRED wearable roundups by So will position Google products without
+      privacy caveats that accompany Meta products in the same list"
+    cross_references:
+    - mechanism_id: 93
+      relationship: "Same publication, same privacy vocabulary bifurcation pattern
+        — Chokkattu on Samsung same-chip glasses"
+    - mechanism_id: 73
+      relationship: "Ashworth category headline analysis — Meta substance
+        foregrounded, competitor substance omitted"
+    - mechanism_id: 87
+      relationship: "Boone Ashworth cross-entity framing at WIRED"
+    - mechanism_id: 97
+      relationship: "Reece Rogers privacy investigation topic routing — same
+        entity-selective privacy alarm vocabulary at WIRED"
+    - mechanism_id: 75
+      relationship: "Victoria Song privacy vocabulary bifurcation — related
+        pattern at a different publication (The Verge)"
+    - mechanism_id: 17
+      relationship: "Google News Showcase financial relationship with Condé Nast"
+    - mechanism_id: 22
+      relationship: "Google advertising dependency for WIRED/Condé Nast"
+    sources:
+    - url: https://www.techmeme.com/251021/p19
+      description: "Techmeme entry for Adrienne So's Oakley Meta Vanguard review with
+        limitation-first headline framing"
+    - url: https://web.archive.org/web/20260328113528/https://www.wired.com/story/best-garmin-watch/
+      description: "WIRED best Garmin watch guide with positive Vanguard-Garmin integration mention"
+    - url: https://www.wsj.com/articles/google-s-secret-project-nightingale-gathers-personal-health-data-on-millions-of-americans-11573496790
+      description: "WSJ investigation into Google Project Nightingale health data collection"
+    - url: https://www.ftc.gov/legal-library/browse/cases-proceedings/public-statements/statement-chair-lina-khan-joined-commissioner-slaughter-regarding-googles-acquisition-fitbit
+      description: "FTC Chair Lina Khan statement on Google's Fitbit acquisition antitrust concerns"
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

@@ -1,3 +1,19 @@
+## Iteration 103 — Fri 2026-08-14 11:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #101: Apple N50 Pre-Launch Privacy-Hero Cascade
+
+**Finding:** Cross-publication narrative uniformity and Samsung shipped-product invisibility. Bloomberg's Gurman reported (Jul 26) Apple delayed N50 to WWDC Jun 2027, citing privacy. Within 48 hours, 7+ publications produced standalone articles framing Apple's absence of a product as moral superiority over Meta. Samsung Galaxy Glasses launched Jul 22 (4 days before) with identical privacy hardware — zero "privacy hero" framing. All cascade articles derive from single Bloomberg source. Meta references outnumber Samsung ~30:1.
+
+**Files:**
+- NEW: `tests/test_apple_n50_privacy_hero_cascade_cross_publication_aug14.py` (12 classes, 45 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #101)
+- Updated: `profiles/competitor-entities.yaml` (Apple xref)
+- Updated: `README.md`, `docs/ARCHITECTURE.md` (374 files, ~12,741 tests)
+
+**Commit:** 14eb3a2
+
+---
+
 ## Iteration 102 — Fri 2026-08-14 10:00 PT (Type D: Test & Verify)
 
 ### Test Suite Verification, Bug Fixes, and Cross-Validation

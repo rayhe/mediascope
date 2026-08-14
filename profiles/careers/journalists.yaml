@@ -18600,3 +18600,87 @@ journalists:
         finding: Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning
         significance: 'First individual-level evidence testing Mechanism #65 ownership chain predictions'
         source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
+
+- name: Adrienne So
+  publications:
+  - name: WIRED
+    role: Senior Associate Editor / Contributor
+    period: 2014-present
+    primary_beat: true
+  beats:
+  - wearables
+  - fitness trackers
+  - smartwatches
+  - smart glasses
+  - outdoor tech
+  - running/fitness technology
+  profile_urls:
+  - https://www.wired.com/author/adrienne-so/
+  - https://www.techmeme.com/251021/p19
+  meta_coverage:
+  - title: Oakley Meta Vanguard Review
+    date: 2025-10-21
+    framing: qualification_first_with_explicit_privacy_attack
+    headline_framing: 'Limitation-first: Techmeme headline leads with "camera specs aren''t too impressive"
+      despite substantially positive body text ("sound amazing," "might just replace your action cam")'
+    privacy_parenthetical: '"Whatever you may think of Meta''s AI and privacy policies (which are garbage)"
+      — explicit parenthetical attack inserted into a PRODUCT REVIEW, not an editorial'
+    body_tone: positive
+    body_quotes:
+    - sound amazing
+    - might just replace your action cam
+    - I can't wait to take the Vanguards out snowboarding this year
+    techmeme_url: https://www.techmeme.com/251021/p19
+    notes: 'Oakley Vanguard is a CAMERA/fitness product with no biometric health sensors.
+      Privacy parenthetical targets Meta''s company reputation broadly, not the specific
+      product''s data collection. Camera product with lower data sensitivity than a health
+      watch, yet receives explicit privacy attack.'
+  - title: Best Garmin Watch guide (Vanguard integration mention)
+    date: 2026-03
+    framing: positive_integration
+    source_url: https://web.archive.org/web/20260328113528/https://www.wired.com/story/best-garmin-watch/
+    notes: 'Positive mention of Vanguard-Garmin integration for autocapture of running
+      clips. No privacy caveats in this context — product utility framing only.'
+  google_coverage:
+  - title: 'Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close'
+    date: 2025-10-08
+    framing: promotional_elevating
+    headline_analysis: '"Surprisingly Close" actively elevates Google''s competitive
+      position to Apple''s premium tier — promotional framing'
+    privacy_caveats: none
+    privacy_parenthetical: none
+    notes: 'ZERO privacy caveats about Google Health Connect data collection (heart rate,
+      blood oxygen, sleep stages, GPS, menstrual cycles). ZERO mention of Google''s
+      advertising business model or health data controversies (Project Nightingale/Ascension
+      2019, Fitbit FTC concerns 2021). Google Watch collects MORE sensitive biometric data
+      than Meta camera glasses. Fitbit data feeds directly into Google''s advertising ecosystem.'
+  - title: Pixel Watch 3 running features assessment
+    date: 2024-08
+    framing: critical_of_functionality_not_privacy
+    notes: 'Running features assessment was negative ("which wasn''t great" per Chokkattu
+      reference) but framed as FUNCTIONALITY criticism, not privacy/data concern. The
+      running data is collected by Google/Fitbit — no concern expressed about who processes
+      this data.'
+  - title: Pixel Watch 3 recommendation (spring sale)
+    date: 2025-03
+    framing: positive_recommendation
+    notes: '"one of the best-looking smartwatches and one of the best-looking fitness
+      trackers," "Fitbit is still one of the best fitness platforms available and Google''s
+      integration with it is virtually perfect" — frictionless praise, zero privacy caveats'
+  apple_coverage:
+  - title: Apple Watch Series 10
+    date: 2024-2025
+    framing: standard_positive
+    notes: 8/10 WIRED Recommends. Standard positive review language, no unusual privacy caveats.
+  cross_entity_analysis:
+    mechanism_id: 102
+    pattern: wearables_privacy_vocabulary_bifurcation
+    description: 'Adrienne So applies ENTITY-SELECTIVE privacy vocabulary in wearables
+      reviews. Meta Oakley Vanguard (camera glasses, Oct 2025) receives explicit parenthetical
+      attack: "(which are garbage)" about Meta''s privacy policies, inserted into a product
+      review. Google Pixel Watch 4 (Oct 2025), which collects far more sensitive biometric
+      health data (heart rate, blood oxygen, sleep, GPS, menstrual cycles), receives ZERO
+      privacy caveats and promotional headline framing ("Surprisingly Close" to Apple Watch
+      Ultra). Extends the WIRED privacy vocabulary bifurcation pattern (Chokkattu #93,
+      Ashworth #73/#87, Rogers #97) to the fitness/wearables editorial lane, establishing
+      team-wide institutional scope.'
