@@ -1,3 +1,27 @@
+## Iteration 93 — Thu 2026-08-13 21:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier
+
+**Finding:** Samsung Galaxy Glasses create a TRIPLE-entity financial incentive chain unique among smart glasses products. Samsung (OEM, $9.7B global ad spend, 4th-largest global advertiser), Google (Android XR/Gemini platform, $239B+ projected 2026 ad revenue + News Showcase + content deals), and Qualcomm (Snapdragon AR1 Gen 1 silicon, $25M+ annual media spend + 50/50 co-marketing budget split with Samsung) each independently have financial relationships with the publications reviewing smart glasses.
+
+**Key new evidence:**
+- Qualcomm $25M media spend 2024 (COMvergence via Adweek)
+- Qualcomm CMO Don McGuire confirmed 50/50 co-marketing model with OEMs, regional co-marketing wins with Samsung including co-branded TV ads (Galaxy S24 with Snapdragon tag, US market) and digital/OOH in Latin America (SamMobile, Snapdragon Summit 2024)
+- Jul 2026 expanded Snapdragon partnership now covers phones, watches, AND smart glasses — Snapdragon AR1 Gen 1 for Samsung Intelligent Eyewear (The Street)
+- Samsung spent 13.8 trillion won ($9.2B) on Qualcomm chips in 2025, up 26.5% YoY (The Investor, Korea) — deep procurement dependency
+- Qualcomm's "Snapdragon. That's How" campaign (72andSunny, Q1 2026) runs across broadcast, CTV, online, social, TikTok, Instagram — same channels as Galaxy Glasses launch coverage (Marketing Dive)
+- Snap also has multi-year Snapdragon XR deal (Apr 2026) but receives MORE adversarial coverage, suggesting Samsung+Google amplifier is the driver
+
+**Meta contrast:** Meta Ray-Ban glasses use the same Qualcomm AR1 Gen 1 chip but have NO co-marketing arrangement with Qualcomm. EssilorLuxottica (Meta's frame partner) has zero tech publication advertising relationship. Favorable Samsung coverage rewards three entities simultaneously; favorable Meta coverage rewards only Meta (a direct ad competitor to publishers).
+
+**New test file:** `tests/test_qualcomm_comarketing_supply_chain_financial_multiplier_aug13.py` — 9 classes, 36 tests (all passing)
+
+**Updated profiles:** `competitor-entities.yaml` — added `qualcomm_comarketing` section under Samsung with mechanism_id 91, 8 source URLs, 6 confounding factors (2 STRONG), 4 testable predictions
+
+**Stats:** 360 test files | ~12,092 tests | 91 mechanisms | Commit: 825bfc4
+
+---
+
 ## Iteration 92 — Thu 2026-08-13 20:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #90: Victoria Song Health Data Privacy Investigation Asymmetry
@@ -35145,3 +35169,43 @@ Mechanisms #82 (dependency spiral), #47 (Meta ad competition), #76 (Samsung comp
 
 ### Commit
 f5fabe5
+
+## Iteration 94 — Thu 2026-08-13 22:00 PT (Type D: Test & Verify)
+
+### Cross-Validation of Mechanisms #89-#91 (Iterations 91-93)
+
+**New test file:** `tests/test_type_d_09pm_cross_validation_aug13.py` — 10 classes, 43 tests (all passing)
+
+**Mechanisms validated (#89-#91):**
+- #89: WIRED Category-Universal Privacy Headline with Entity-Specific Substance (Ashworth)
+- #90: Victoria Song Health Data Privacy Investigation Asymmetry
+- #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier
+
+**Fixes applied during validation:**
+1. **ARCHITECTURE.md stat drift:** Test file count said 359, actual was 360 (from iteration #93). Fixed to 361 (including this new test).
+2. **Mechanism #90 misplaced section:** Was under `publications` in competitor-coverage-research.yaml instead of `cross_publication_findings`. Moved to correct section.
+3. **Mechanism #90 missing metadata:** Missing `date_added`, `finding_summary`, and `testable_predictions`. Added all three fields plus promoted confounding factor strength to STRONG for Samsung's 48-hour clarification.
+4. **Stale cross-validation max IDs:** Two older cross-validation tests had hardcoded `test_max_is_79` and `test_no_ids_above_82` — updated to 90 and 91 respectively.
+5. **README/ARCHITECTURE stat sync:** Both now show 12,135 tests / 361 files / 91 mechanisms.
+
+**Validation checks (all passing):**
+- Metadata completeness: All 3 mechanisms have date_added, finding_summary (≥100 chars), confounding_factors (≥3 each), testable_predictions (≥2 each) ✅
+- Confounding factor quality: Each has ≥1 STRONG + ≥2 strength levels ✅
+- ID integrity: Contiguous 17-91 (no gaps, no duplicates), max=91 ✅
+- Cross-reference coherence: All related_mechanisms point to existing mechanisms ✅
+- Finding distinctiveness: Jaccard <0.7 between all pairs ✅
+- Source URLs: All 3 have sources ✅
+- README/ARCHITECTURE consistency: Test file + test counts match ✅
+- Test file existence: All 3 test files exist on disk ✅
+- Regression guards: Mechanisms #84-#88 all still present ✅
+- Samsung glasses cluster (#76, #81, #84, #87, #89, #90, #91): All present, correct entities ✅
+
+**Prior failures resolved:** 6 test failures from older cross-validation tests now fixed:
+- test_architecture_test_file_count_matches_disk ✅
+- test_no_ids_above_82 → test_no_ids_above_91 ✅
+- test_max_is_79 → test_max_is_90 ✅
+- test_test_count_agreement ✅
+- test_test_file_count_agreement ✅
+- test_no_mechanism_in_publications ✅
+
+**Stats:** 361 test files | ~12,135 tests | 91 mechanisms | Commit: pending

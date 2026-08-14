@@ -214,151 +214,143 @@ aggregate_findings:
     - If The Verge assigns Apple glasses privacy coverage to a DIFFERENT journalist, it confirms beat_assignment confound
   gizmodo_samsung_unpacked_4entity_clean_control:
     mechanism_id: 80
-    title: "Gizmodo Samsung Galaxy Unpacked 4-Entity Clean Control Privacy Vocabulary Comparison"
-    finding_summary: >
-      Extends Mechanism #74 (Snap Specs) to Samsung, completing a 4-entity privacy
-      vocabulary comparison at Gizmodo — the only publication in the MediaScope dataset
-      with ZERO financial ties to any tech company (owned by Keleops AG, Luxembourg).
+    title: Gizmodo Samsung Galaxy Unpacked 4-Entity Clean Control Privacy Vocabulary Comparison
+    finding_summary: 'Extends Mechanism #74 (Snap Specs) to Samsung, completing a 4-entity privacy vocabulary comparison at
+      Gizmodo — the only publication in the MediaScope dataset with ZERO financial ties to any tech company (owned by Keleops
+      AG, Luxembourg).
 
-      All four entities (Meta, Google, Snap, Samsung) make camera-equipped smart glasses
-      with functionally identical privacy-relevant hardware: cameras, AI processing, LED
-      recording indicators. Only Meta receives adversarial surveillance vocabulary at
-      Gizmodo. Samsung's Galaxy Glasses use the SAME Snapdragon AR1 Gen 1 chip as Meta's
-      Ray-Ban glasses, have a 12MP camera (same as Meta), LED anti-tamper privacy indicator
-      (same as Meta), and Google Gemini AI visual processing.
+      All four entities (Meta, Google, Snap, Samsung) make camera-equipped smart glasses with functionally identical privacy-relevant
+      hardware: cameras, AI processing, LED recording indicators. Only Meta receives adversarial surveillance vocabulary at
+      Gizmodo. Samsung''s Galaxy Glasses use the SAME Snapdragon AR1 Gen 1 chip as Meta''s Ray-Ban glasses, have a 12MP camera
+      (same as Meta), LED anti-tamper privacy indicator (same as Meta), and Google Gemini AI visual processing.
 
-      4-entity comparison matrix at Gizmodo (zero financial ties to any entity):
-      - Meta:    tone -0.75, surveillance vocab 5+, adversarial investigation framing
-      - Google:  tone +0.4,  surveillance vocab 0,  aspirational product review
-      - Snap:    tone -0.10, surveillance vocab 0,  neutral product preview
-      - Samsung: tone +0.2,  surveillance vocab 0,  product-first design/ecosystem framing
+      4-entity comparison matrix at Gizmodo (zero financial ties to any entity): - Meta:    tone -0.75, surveillance vocab
+      5+, adversarial investigation framing - Google:  tone +0.4,  surveillance vocab 0,  aspirational product review - Snap:    tone
+      -0.10, surveillance vocab 0,  neutral product preview - Samsung: tone +0.2,  surveillance vocab 0,  product-first design/ecosystem
+      framing
 
-      Since Gizmodo has zero financial ties to ANY entity, this 4-entity comparison
-      isolates CULTURAL NARRATIVE CODING as the primary asymmetry mechanism (~70% of
-      coverage gap), with financial incentives at other publications as an amplifier (~30%).
+      Since Gizmodo has zero financial ties to ANY entity, this 4-entity comparison isolates CULTURAL NARRATIVE CODING as
+      the primary asymmetry mechanism (~70% of coverage gap), with financial incentives at other publications as an amplifier
+      (~30%).
 
-      Key Samsung articles: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart
-      Glasses" (Jul 22, Galaxy Unpacked hands-on, zero surveillance vocabulary); "Leak
-      Suggests Samsung Cribbed Meta's Design" (Apr 27, Samsung privacy framed positively);
-      "Samsung's Smart Glasses Might Not Have to Do Much" (Mar 9, camera/AI specs as
-      neutral product features); "Samsung's Smart Glasses Could Team Up With Its Rings
-      and Watches" (Jul 9, ecosystem integration, aspirational framing).
-    date_added: "2026-08-13"
+      Key Samsung articles: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses" (Jul 22, Galaxy Unpacked
+      hands-on, zero surveillance vocabulary); "Leak Suggests Samsung Cribbed Meta''s Design" (Apr 27, Samsung privacy framed
+      positively); "Samsung''s Smart Glasses Might Not Have to Do Much" (Mar 9, camera/AI specs as neutral product features);
+      "Samsung''s Smart Glasses Could Team Up With Its Rings and Watches" (Jul 9, ecosystem integration, aspirational framing).
+
+      '
+    date_added: '2026-08-13'
     test_file: tests/test_gizmodo_samsung_unpacked_4entity_clean_control_aug13.py
-    type: "Type A: Competitor Coverage Deep Dive"
+    type: 'Type A: Competitor Coverage Deep Dive'
     sources:
-      - description: "Samsung Galaxy Unpacked hands-on (Jul 22, 2026) — Warby Parker x Gentle Monster smart glasses"
-        url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
-      - description: "Samsung cribbed Meta's design — privacy framed positively (Apr 27, 2026)"
-        url: "https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362"
-      - description: "Samsung smart glasses specs — camera/AI as product features (Mar 9, 2026)"
-        url: "https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490"
-      - description: "Samsung smart glasses ecosystem integration (Jul 9, 2026)"
-        url: "https://gizmodo.com/samsungs-smart-glasses-could-team-up-with-its-rings-and-watches-2000780248"
+    - description: Samsung Galaxy Unpacked hands-on (Jul 22, 2026) — Warby Parker x Gentle Monster smart glasses
+      url: https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+    - description: Samsung cribbed Meta's design — privacy framed positively (Apr 27, 2026)
+      url: https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362
+    - description: Samsung smart glasses specs — camera/AI as product features (Mar 9, 2026)
+      url: https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490
+    - description: Samsung smart glasses ecosystem integration (Jul 9, 2026)
+      url: https://gizmodo.com/samsungs-smart-glasses-could-team-up-with-its-rings-and-watches-2000780248
     confounding_factors:
-      - strength: STRONG
-        factor: "Meta market incumbency (7M+ deployed units) vs Samsung pre-launch — more deployed Meta cameras means more real-world privacy incidents"
-      - strength: STRONG
-        factor: "Cambridge Analytica / Facebook Papers legacy creates default privacy-adversarial editorial frame for Meta"
-      - strength: MODERATE
-        factor: "Samsung's privacy features explicitly designed in response to Meta's backlash — editorial framing as 'lesson learned'"
-      - strength: MODERATE
-        factor: "Different article genres: product preview (Samsung) vs investigative (Meta) — but Gizmodo CHOSE to write different genres"
-      - strength: WEAK
-        factor: "Different Gizmodo authors across entities — editorial culture sets the frame, not individuals"
-      - strength: WEAK
-        factor: "Samsung glasses not yet shipping — privacy incidents haven't occurred. But Meta NameTag was ALSO pre-launch / never activated when investigated"
+    - strength: STRONG
+      factor: Meta market incumbency (7M+ deployed units) vs Samsung pre-launch — more deployed Meta cameras means more real-world
+        privacy incidents
+    - strength: STRONG
+      factor: Cambridge Analytica / Facebook Papers legacy creates default privacy-adversarial editorial frame for Meta
+    - strength: MODERATE
+      factor: Samsung's privacy features explicitly designed in response to Meta's backlash — editorial framing as 'lesson
+        learned'
+    - strength: MODERATE
+      factor: 'Different article genres: product preview (Samsung) vs investigative (Meta) — but Gizmodo CHOSE to write different
+        genres'
+    - strength: WEAK
+      factor: Different Gizmodo authors across entities — editorial culture sets the frame, not individuals
+    - strength: WEAK
+      factor: Samsung glasses not yet shipping — privacy incidents haven't occurred. But Meta NameTag was ALSO pre-launch
+        / never activated when investigated
     testable_predictions:
-      - "When Samsung glasses ship Fall 2026, Gizmodo will NOT apply surveillance vocabulary in the review"
-      - "If a Samsung user is caught recording without consent, Gizmodo will frame it as a 'smart glasses problem' not 'Samsung problem'"
-      - "If Samsung's Gemini AI processes faces, Gizmodo will NOT produce a dedicated facial recognition investigation comparable to Meta NameTag"
-      - "Google I/O 2027 glasses updates will receive aspirational framing regardless of interim privacy incidents"
+    - When Samsung glasses ship Fall 2026, Gizmodo will NOT apply surveillance vocabulary in the review
+    - If a Samsung user is caught recording without consent, Gizmodo will frame it as a 'smart glasses problem' not 'Samsung
+      problem'
+    - If Samsung's Gemini AI processes faces, Gizmodo will NOT produce a dedicated facial recognition investigation comparable
+      to Meta NameTag
+    - Google I/O 2027 glasses updates will receive aspirational framing regardless of interim privacy incidents
     cross_references:
-      - mechanism_id: 74
-        title: "Gizmodo Snap Specs Camera Privacy Vocabulary Suppression"
-      - mechanism_id: 6
-        title: "Kyle Barr Privacy Gradient"
-      - mechanism_id: 76
-        title: "Samsung-Google Compound Advertiser Leverage"
-      - mechanism_id: 77
-        title: "NYT Samsung Glasses Coverage Selection Silence"
+    - mechanism_id: 74
+      title: Gizmodo Snap Specs Camera Privacy Vocabulary Suppression
+    - mechanism_id: 6
+      title: Kyle Barr Privacy Gradient
+    - mechanism_id: 76
+      title: Samsung-Google Compound Advertiser Leverage
+    - mechanism_id: 77
+      title: NYT Samsung Glasses Coverage Selection Silence
   multi_journalist_samsung_unpacked_beat_assignment_paradox:
     mechanism_id: 81
-    title: "Multi-Journalist Samsung Unpacked Beat Assignment Paradox"
-    finding_summary: >
-      At Samsung Galaxy Unpacked (Jul 22, 2026, London), publications with financial
-      dependency on Google/Samsung advertising sent multiple reporters who published
-      standalone foldable phone articles but ZERO standalone smart glasses articles,
-      despite Samsung's glasses using identical camera hardware to Meta Ray-Ban (same
-      Snapdragon AR1 Gen 1, 12MP camera, LED anti-tamper, audio-only form factor).
-
-      The Verge (Vox Media, Google programmatic ad dependency):
-      - David Imel: Fold 8 Ultra hands-on (standalone article)
-      - Dominic Preston: Fold 8 hands-on (standalone article)
-      - YouTube: "Samsung Galaxy Unpacked in 15 minutes" — glasses get 67 seconds
-        (7.4% of video, relegated to final minute)
-      - Standalone written Samsung smart glasses article: ZERO
-
-      WIRED (Conde Nast, OpenAI/Amazon/Microsoft/Perplexity deals):
-      - Covered Fold 8 Ultra (listed on Techmeme Jul 22)
-      - Julian Chokkattu: ZERO Samsung glasses articles (documented Mechanism #39)
-      - Standalone Samsung smart glasses article: ZERO
-
-      Gizmodo (Keleops AG, ZERO financial ties to any tech company):
-      - Raymond Wong: Standalone Samsung glasses hands-on article
-      - Kyle Barr + Matt Wille: Samsung glasses commentary in live blog
-      - Standalone Samsung smart glasses article: YES
-
-      This is a SAME-EVENT natural experiment: all three publications sent reporters
-      to the same venue, same press conference, same demo area. The variable is
-      financial structure. Publications with Google/Samsung ad dependency chose to
-      cover foldable phones; the publication with zero financial ties chose to also
-      cover smart glasses.
-
-      Prior Meta glasses coverage from the same reporters and publications:
-      - The Verge: Victoria Song 3+ standalone Meta glasses privacy pieces
-      - WIRED: Julian Chokkattu 3+ standalone Meta glasses articles in Jun-Jul window
-      - This disparity extends the individual-journalist findings (#39, #75) into
-        a multi-journalist, multi-publication, single-event pattern.
-    date_added: "2026-08-13"
+    title: Multi-Journalist Samsung Unpacked Beat Assignment Paradox
+    finding_summary: "At Samsung Galaxy Unpacked (Jul 22, 2026, London), publications with financial dependency on Google/Samsung\
+      \ advertising sent multiple reporters who published standalone foldable phone articles but ZERO standalone smart glasses\
+      \ articles, despite Samsung's glasses using identical camera hardware to Meta Ray-Ban (same Snapdragon AR1 Gen 1, 12MP\
+      \ camera, LED anti-tamper, audio-only form factor).\nThe Verge (Vox Media, Google programmatic ad dependency): - David\
+      \ Imel: Fold 8 Ultra hands-on (standalone article) - Dominic Preston: Fold 8 hands-on (standalone article) - YouTube:\
+      \ \"Samsung Galaxy Unpacked in 15 minutes\" — glasses get 67 seconds\n  (7.4% of video, relegated to final minute)\n\
+      - Standalone written Samsung smart glasses article: ZERO\nWIRED (Conde Nast, OpenAI/Amazon/Microsoft/Perplexity deals):\
+      \ - Covered Fold 8 Ultra (listed on Techmeme Jul 22) - Julian Chokkattu: ZERO Samsung glasses articles (documented Mechanism\
+      \ #39) - Standalone Samsung smart glasses article: ZERO\nGizmodo (Keleops AG, ZERO financial ties to any tech company):\
+      \ - Raymond Wong: Standalone Samsung glasses hands-on article - Kyle Barr + Matt Wille: Samsung glasses commentary in\
+      \ live blog - Standalone Samsung smart glasses article: YES\nThis is a SAME-EVENT natural experiment: all three publications\
+      \ sent reporters to the same venue, same press conference, same demo area. The variable is financial structure. Publications\
+      \ with Google/Samsung ad dependency chose to cover foldable phones; the publication with zero financial ties chose to\
+      \ also cover smart glasses.\nPrior Meta glasses coverage from the same reporters and publications: - The Verge: Victoria\
+      \ Song 3+ standalone Meta glasses privacy pieces - WIRED: Julian Chokkattu 3+ standalone Meta glasses articles in Jun-Jul\
+      \ window - This disparity extends the individual-journalist findings (#39, #75) into\n  a multi-journalist, multi-publication,\
+      \ single-event pattern.\n"
+    date_added: '2026-08-13'
     test_file: tests/test_multi_journalist_samsung_unpacked_beat_assignment_aug13.py
-    type: "Type B: Journalist Cross-Entity Tracking"
+    type: 'Type B: Journalist Cross-Entity Tracking'
     sources:
-      - description: "Techmeme river Jul 22, 2026 — David Imel/Verge, Dominic Preston/Verge, WIRED for Fold 8"
-        url: "https://www.techmeme.com/260722/h1610"
-      - description: "Techmeme river Jul 22, 2026 — earlier snapshot with same attribution"
-        url: "https://www.techmeme.com/260722/h1525"
-      - description: "The Verge YouTube 'Samsung Galaxy Unpacked in 15 minutes' — glasses at 13:53"
-        url: "https://www.youtube.com/watch?v=c-MWq-DFTwo"
-      - description: "Gizmodo Raymond Wong standalone Samsung glasses hands-on"
-        url: "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
-      - description: "Gizmodo live blog (Wong, Barr, Wille covering Samsung glasses)"
-        url: "https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539"
-      - description: "Cult of Mac recap citing Dominic Preston/Verge for Fold 8"
-        url: "https://www.cultofmac.com/news/samsung-galaxy-z-fold8-launch"
+    - description: Techmeme river Jul 22, 2026 — David Imel/Verge, Dominic Preston/Verge, WIRED for Fold 8
+      url: https://www.techmeme.com/260722/h1610
+    - description: Techmeme river Jul 22, 2026 — earlier snapshot with same attribution
+      url: https://www.techmeme.com/260722/h1525
+    - description: The Verge YouTube 'Samsung Galaxy Unpacked in 15 minutes' — glasses at 13:53
+      url: https://www.youtube.com/watch?v=c-MWq-DFTwo
+    - description: Gizmodo Raymond Wong standalone Samsung glasses hands-on
+      url: https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+    - description: Gizmodo live blog (Wong, Barr, Wille covering Samsung glasses)
+      url: https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539
+    - description: Cult of Mac recap citing Dominic Preston/Verge for Fold 8
+      url: https://www.cultofmac.com/news/samsung-galaxy-z-fold8-launch
     confounding_factors:
-      - strength: STRONG
-        factor: "Samsung glasses pre-launch timing — not yet shipping, less newsworthy than foldables with confirmed specs/pricing/dates"
-      - strength: STRONG
-        factor: "Editorial priority — Samsung Unpacked is traditionally a foldable phone event; glasses were a secondary announcement"
-      - strength: MODERATE
-        factor: "Beat assignment specialization — Verge reporters at Unpacked (Imel, Preston) cover Samsung phones, not wearables; Song (wearables) may not have attended"
-      - strength: MODERATE
-        factor: "Samsung restricted demo access — attendees could hold glasses but not wear or test them, limiting review-worthy content"
-      - strength: WEAK
-        factor: "Event packing — Samsung announced 6+ products in one event; publications may have triaged based on audience demand for foldable coverage"
-      - strength: WEAK
-        factor: "Pre-existing foldable rivalry narrative — Apple foldable iPhone rumors made Samsung Fold 8 comparison more editorially urgent"
+    - strength: STRONG
+      factor: Samsung glasses pre-launch timing — not yet shipping, less newsworthy than foldables with confirmed specs/pricing/dates
+    - strength: STRONG
+      factor: Editorial priority — Samsung Unpacked is traditionally a foldable phone event; glasses were a secondary announcement
+    - strength: MODERATE
+      factor: Beat assignment specialization — Verge reporters at Unpacked (Imel, Preston) cover Samsung phones, not wearables;
+        Song (wearables) may not have attended
+    - strength: MODERATE
+      factor: Samsung restricted demo access — attendees could hold glasses but not wear or test them, limiting review-worthy
+        content
+    - strength: WEAK
+      factor: Event packing — Samsung announced 6+ products in one event; publications may have triaged based on audience
+        demand for foldable coverage
+    - strength: WEAK
+      factor: Pre-existing foldable rivalry narrative — Apple foldable iPhone rumors made Samsung Fold 8 comparison more editorially
+        urgent
     testable_predictions:
-      - prediction: "When Samsung glasses ship Fall 2026, The Verge will publish a review but will NOT apply 'glasshole' or surveillance vocabulary from Song's Meta glasses coverage"
-      - prediction: "WIRED's Samsung glasses review will be product-focused, without the adversarial framing applied to Meta in Chokkattu's subscription article or Business Wars podcast"
-      - prediction: "If Samsung glasses generate a privacy incident post-launch, The Verge will frame it as an 'AI glasses problem' not a 'Samsung surveillance tool' — contrasting with Meta-specific privacy framing"
-      - prediction: "Gizmodo will produce proportionally more Samsung glasses coverage (articles per product) than The Verge or WIRED, maintaining the coverage-selection gap"
+    - prediction: When Samsung glasses ship Fall 2026, The Verge will publish a review but will NOT apply 'glasshole' or surveillance
+        vocabulary from Song's Meta glasses coverage
+    - prediction: WIRED's Samsung glasses review will be product-focused, without the adversarial framing applied to Meta
+        in Chokkattu's subscription article or Business Wars podcast
+    - prediction: If Samsung glasses generate a privacy incident post-launch, The Verge will frame it as an 'AI glasses problem'
+        not a 'Samsung surveillance tool' — contrasting with Meta-specific privacy framing
+    - prediction: Gizmodo will produce proportionally more Samsung glasses coverage (articles per product) than The Verge
+        or WIRED, maintaining the coverage-selection gap
     related_mechanisms:
-      - 39
-      - 75
-      - 77
-      - 80
+    - 39
+    - 75
+    - 77
+    - 80
   gizmodo_james_pero_editorial_direction_override:
     confounding_factors:
     - Meta 69% market share makes it natural focus of scrutiny
@@ -7064,236 +7056,225 @@ cross_publication_findings:
         entity. #65 is ownership, #73 is contract.'
   nyt_samsung_glasses_coverage_selection_silence:
     mechanism_id: 77
-    title: "NYT Smart Glasses Coverage Selection Asymmetry: NameTag Investigation Exclusivity vs Samsung/Google Hardware Silence"
-    finding_summary: >
-      NYT Smart Glasses Coverage Selection (Mechanism #77): The New York Times
-      broke the Meta NameTag facial recognition exclusive (Feb 13, 2026) with
-      leaked internal memos, triggering 75+ org ACLU coalition letter, Senate
-      letters (Wyden/Merkley/Markey), and New York courtroom bans. Samsung and
-      Google launched IDENTICAL camera-equipped smart glasses (Google I/O May 19,
-      Galaxy Unpacked Jul 22, 2026) with same 12MP camera, privacy LED, and AI
-      visual processing (Google Gemini). NYT has published ZERO standalone
-      privacy investigations of Samsung/Google glasses. Coverage differential:
-      Meta 3+ investigations, Samsung 0, Google 0, Apple 0. Google Gemini on
-      Samsung glasses has access to Google's entire user data ecosystem and can
-      perform visual identification via Google Lens — a SHIPPING capability,
-      not a leaked plan — yet receives no NYT investigative scrutiny. Financial
-      context: Samsung is 4th-largest global advertiser ($9.7B/yr), Google
-      provides NYT $100M+/yr in programmatic ad revenue, Meta is NYT's direct
-      ad competitor with no ad revenue relationship. Connects to Samsung-Google
-      Compound Advertiser Leverage (Mechanism #76) and Samsung Equivalence
-      Paradox (existing mechanism).
-    date_added: "2026-08-13"
+    title: 'NYT Smart Glasses Coverage Selection Asymmetry: NameTag Investigation Exclusivity vs Samsung/Google Hardware Silence'
+    finding_summary: 'NYT Smart Glasses Coverage Selection (Mechanism #77): The New York Times broke the Meta NameTag facial
+      recognition exclusive (Feb 13, 2026) with leaked internal memos, triggering 75+ org ACLU coalition letter, Senate letters
+      (Wyden/Merkley/Markey), and New York courtroom bans. Samsung and Google launched IDENTICAL camera-equipped smart glasses
+      (Google I/O May 19, Galaxy Unpacked Jul 22, 2026) with same 12MP camera, privacy LED, and AI visual processing (Google
+      Gemini). NYT has published ZERO standalone privacy investigations of Samsung/Google glasses. Coverage differential:
+      Meta 3+ investigations, Samsung 0, Google 0, Apple 0. Google Gemini on Samsung glasses has access to Google''s entire
+      user data ecosystem and can perform visual identification via Google Lens — a SHIPPING capability, not a leaked plan
+      — yet receives no NYT investigative scrutiny. Financial context: Samsung is 4th-largest global advertiser ($9.7B/yr),
+      Google provides NYT $100M+/yr in programmatic ad revenue, Meta is NYT''s direct ad competitor with no ad revenue relationship.
+      Connects to Samsung-Google Compound Advertiser Leverage (Mechanism #76) and Samsung Equivalence Paradox (existing mechanism).
+
+      '
+    date_added: '2026-08-13'
     test_file: tests/test_nyt_samsung_glasses_coverage_selection_silence_aug13.py
-    type: "Type A: Competitor Coverage Deep Dive"
-    publication: "New York Times"
-    competitor: "Samsung/Google (Android XR)"
+    type: 'Type A: Competitor Coverage Deep Dive'
+    publication: New York Times
+    competitor: Samsung/Google (Android XR)
     sources:
-      - description: "NYT NameTag exclusive (Feb 13, 2026) — leaked internal Meta documents"
-        note: "Reported via MacRumors, Slashdot, PetaPixel referencing NYT exclusive"
-      - url: "https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/"
-        description: "Samsung Android XR glasses privacy light details (Jul 23, 2026)"
-      - url: "https://www.nyclu.org/press-release/aclu-and-75-organizations-sound-alarm-on-metas-plan-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyegl"
-        description: "ACLU coalition letter: 75+ orgs to Zuckerberg (Apr 2026)"
-      - url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
-        description: "WSJ Bobrowsky Meta privacy investigation (Jul 14, 2026) — for comparison"
-      - url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
-        description: "WSJ Mims category-wide analysis (Jun 26, 2026) — balanced comparison"
+    - description: NYT NameTag exclusive (Feb 13, 2026) — leaked internal Meta documents
+      note: Reported via MacRumors, Slashdot, PetaPixel referencing NYT exclusive
+    - url: https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+      description: Samsung Android XR glasses privacy light details (Jul 23, 2026)
+    - url: https://www.nyclu.org/press-release/aclu-and-75-organizations-sound-alarm-on-metas-plan-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyegl
+      description: 'ACLU coalition letter: 75+ orgs to Zuckerberg (Apr 2026)'
+    - url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      description: WSJ Bobrowsky Meta privacy investigation (Jul 14, 2026) — for comparison
+    - url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+      description: WSJ Mims category-wide analysis (Jun 26, 2026) — balanced comparison
     coverage_differential:
       meta_nyt_privacy_investigations: 3
       samsung_nyt_privacy_investigations: 0
       google_nyt_privacy_investigations: 0
       apple_nyt_privacy_investigations: 0
       meta_specific_features_investigated:
-        - "NameTag facial recognition (Feb 2026)"
-        - "LED tamper disabling (multiple 2026)"
-        - "Constant-capture ambient AI (Jul 2026)"
+      - NameTag facial recognition (Feb 2026)
+      - LED tamper disabling (multiple 2026)
+      - Constant-capture ambient AI (Jul 2026)
       samsung_equivalent_features_not_investigated:
-        - "12MP camera (identical to Meta)"
-        - "Google Gemini visual identification (Google Lens)"
-        - "Privacy LED with anti-tamper (copied Meta design)"
-        - "Always-on AI companion architecture"
+      - 12MP camera (identical to Meta)
+      - Google Gemini visual identification (Google Lens)
+      - Privacy LED with anti-tamper (copied Meta design)
+      - Always-on AI companion architecture
     financial_context:
-      samsung_global_ad_spend_yr: "$9.7B (4th-largest global advertiser)"
-      google_nyt_programmatic_ad_revenue: "$100M+/yr"
-      meta_nyt_ad_relationship: "NONE — Meta is NYT's direct ad competitor"
-      nyt_google_litigation: "PMC v. Google (D.D.C., Case 1:25-cv-03192-APM) — adversarial"
-      compound_leverage_ref: "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
+      samsung_global_ad_spend_yr: $9.7B (4th-largest global advertiser)
+      google_nyt_programmatic_ad_revenue: $100M+/yr
+      meta_nyt_ad_relationship: NONE — Meta is NYT's direct ad competitor
+      nyt_google_litigation: PMC v. Google (D.D.C., Case 1:25-cv-03192-APM) — adversarial
+      compound_leverage_ref: 'Mechanism #76: Samsung-Google Compound Advertiser Leverage'
     confounding_factors:
-      - strength: STRONG
-        factor: "Source access — NYT had leaked Meta internal documents (NameTag memo); may not have equivalent Samsung/Google sources"
-      - strength: STRONG
-        factor: "NameTag was specifically FACIAL RECOGNITION — Samsung has not announced an equivalent feature. Meta reversal (shutting down FB face recognition 2021, then reintroducing via glasses) is a unique narrative"
-      - strength: STRONG
-        factor: "Samsung/Google glasses launched AFTER the NameTag story — different news cycle, investigation may simply be pending"
-      - strength: MODERATE
-        factor: "Beat assignment — NYT has established Meta beat reporters (Mike Isaac, Sheera Frenkel) but no dedicated Samsung wearables beat reporter"
-      - strength: MODERATE
-        factor: "Cambridge Analytica / Facebook Papers legacy creates editorial priors making Meta the default privacy villain"
-      - strength: MODERATE
-        factor: "NYT is SUING Google (via PMC) — Google advertising leverage is partially offset by adversarial litigation posture"
-      - strength: WEAK
-        factor: "Google Gemini visual identification is a general AI capability, not a dedicated face-recognition feature — editorial distinction may be warranted"
+    - strength: STRONG
+      factor: Source access — NYT had leaked Meta internal documents (NameTag memo); may not have equivalent Samsung/Google
+        sources
+    - strength: STRONG
+      factor: NameTag was specifically FACIAL RECOGNITION — Samsung has not announced an equivalent feature. Meta reversal
+        (shutting down FB face recognition 2021, then reintroducing via glasses) is a unique narrative
+    - strength: STRONG
+      factor: Samsung/Google glasses launched AFTER the NameTag story — different news cycle, investigation may simply be
+        pending
+    - strength: MODERATE
+      factor: Beat assignment — NYT has established Meta beat reporters (Mike Isaac, Sheera Frenkel) but no dedicated Samsung
+        wearables beat reporter
+    - strength: MODERATE
+      factor: Cambridge Analytica / Facebook Papers legacy creates editorial priors making Meta the default privacy villain
+    - strength: MODERATE
+      factor: NYT is SUING Google (via PMC) — Google advertising leverage is partially offset by adversarial litigation posture
+    - strength: WEAK
+      factor: Google Gemini visual identification is a general AI capability, not a dedicated face-recognition feature — editorial
+        distinction may be warranted
     testable_predictions:
-      - "When Samsung glasses ship (Fall 2026), NYT will NOT publish a standalone privacy investigation within 90 days of launch"
-      - "If Samsung announces facial recognition for its glasses, NYT will use softer vocabulary than NameTag reporting"
-      - "Publications with LOWER Samsung advertising revenue are MORE likely to investigate Samsung glasses privacy"
-      - "If Gemini on Samsung glasses performs visual identification, NYT will frame it as a Google AI feature not a Samsung surveillance tool"
+    - When Samsung glasses ship (Fall 2026), NYT will NOT publish a standalone privacy investigation within 90 days of launch
+    - If Samsung announces facial recognition for its glasses, NYT will use softer vocabulary than NameTag reporting
+    - Publications with LOWER Samsung advertising revenue are MORE likely to investigate Samsung glasses privacy
+    - If Gemini on Samsung glasses performs visual identification, NYT will frame it as a Google AI feature not a Samsung
+      surveillance tool
     related_mechanisms:
-      - "Samsung Equivalence Paradox — cross-publication framing gap"
-      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
-      - "Mechanism #69: NYT Meta AI Coverage Bifurcation"
-      - "Mechanism #49: Bobrowsky Smart Glasses Entity-Targeting Concentration (WSJ)"
-
+    - Samsung Equivalence Paradox — cross-publication framing gap
+    - 'Mechanism #76: Samsung-Google Compound Advertiser Leverage'
+    - 'Mechanism #69: NYT Meta AI Coverage Bifurcation'
+    - 'Mechanism #49: Bobrowsky Smart Glasses Entity-Targeting Concentration (WSJ)'
   gemini_android_xr_data_retention_investigation_gap:
     mechanism_id: 78
-    title: "Gemini Android XR Data Retention Investigation Gap — Active vs Dormant Severity Inversion"
-    finding_summary: >
-      Google's Gemini Apps Privacy Hub (updated May 5, 2026) EXPLICITLY lists
-      "Gemini on Android XR" as a covered service. Under this LIVE, ACTIVE policy:
-      activity stored 18 months by default, human-reviewed conversations retained
-      3 YEARS (NOT deleted when user clears activity), no glasses-specific policy
-      confirmed. Meta's NameTag was DORMANT: never activated, never processed user
-      data, removed within 24 hours. Despite this severity inversion, NameTag
-      received multi-part WIRED investigation (Dell Cameron & Dhruv Mehrotra,
-      Jun 4/8), NYT exclusive (Feb 13, 2026), 75+ org ACLU coalition letter,
-      Senate letters (Wyden/Merkley/Markey), and courtroom bans. Google's LIVE
-      data retention for glasses: ZERO investigations from any of the 8 profiled
-      publications. Additional LED behavior gap: Fast Company reported Google's
-      Android XR LED does NOT turn on while Gemini "observes the world through
-      the camera" — framed as neutral "open question." Meta's LED (always-on
-      during camera use) received adversarial framing. Gemini collects 22 of 35
-      data types (Surfshark research via TechRadar) — 46% more than any
-      competitor chatbot. Only TechTimes (minor pub, May 20, 2026) raised the
-      Gemini data retention question for Android XR glasses.
-    date_added: "2026-08-13"
+    title: Gemini Android XR Data Retention Investigation Gap — Active vs Dormant Severity Inversion
+    finding_summary: 'Google''s Gemini Apps Privacy Hub (updated May 5, 2026) EXPLICITLY lists "Gemini on Android XR" as a
+      covered service. Under this LIVE, ACTIVE policy: activity stored 18 months by default, human-reviewed conversations
+      retained 3 YEARS (NOT deleted when user clears activity), no glasses-specific policy confirmed. Meta''s NameTag was
+      DORMANT: never activated, never processed user data, removed within 24 hours. Despite this severity inversion, NameTag
+      received multi-part WIRED investigation (Dell Cameron & Dhruv Mehrotra, Jun 4/8), NYT exclusive (Feb 13, 2026), 75+
+      org ACLU coalition letter, Senate letters (Wyden/Merkley/Markey), and courtroom bans. Google''s LIVE data retention
+      for glasses: ZERO investigations from any of the 8 profiled publications. Additional LED behavior gap: Fast Company
+      reported Google''s Android XR LED does NOT turn on while Gemini "observes the world through the camera" — framed as
+      neutral "open question." Meta''s LED (always-on during camera use) received adversarial framing. Gemini collects 22
+      of 35 data types (Surfshark research via TechRadar) — 46% more than any competitor chatbot. Only TechTimes (minor pub,
+      May 20, 2026) raised the Gemini data retention question for Android XR glasses.
+
+      '
+    date_added: '2026-08-13'
     test_file: tests/test_gemini_android_xr_data_retention_investigation_gap_aug13.py
-    type: "Type B: Journalist Cross-Entity Tracking"
-    publication: "Cross-publication (WIRED, NYT, WSJ, Verge, Guardian, FT, Gizmodo, MIT Tech Review)"
-    competitor: "Google (Android XR / Gemini)"
+    type: 'Type B: Journalist Cross-Entity Tracking'
+    publication: Cross-publication (WIRED, NYT, WSJ, Verge, Guardian, FT, Gizmodo, MIT Tech Review)
+    competitor: Google (Android XR / Gemini)
     sources:
-      - url: "https://support.google.com/gemini/answer/13594961"
-        description: "Google Gemini Apps Privacy Hub — lists 'Gemini on Android XR' as covered service (updated May 5, 2026)"
-      - url: "https://www.techradar.com/computing/artificial-intelligence/gemini-collects-more-of-your-data-than-any-other-chatbot-according-to-research"
-        description: "Surfshark research via TechRadar — Gemini collects 22 of 35 data types, 46% more than any competitor"
-      - description: "Fast Company / Janko Roettgers — Google I/O May 19, 2026: Android XR LED does NOT turn on during Gemini observation"
-      - description: "TechTimes (May 20, 2026) — only publication to raise Gemini data retention question for XR glasses"
+    - url: https://support.google.com/gemini/answer/13594961
+      description: Google Gemini Apps Privacy Hub — lists 'Gemini on Android XR' as covered service (updated May 5, 2026)
+    - url: https://www.techradar.com/computing/artificial-intelligence/gemini-collects-more-of-your-data-than-any-other-chatbot-according-to-research
+      description: Surfshark research via TechRadar — Gemini collects 22 of 35 data types, 46% more than any competitor
+    - description: 'Fast Company / Janko Roettgers — Google I/O May 19, 2026: Android XR LED does NOT turn on during Gemini
+        observation'
+    - description: TechTimes (May 20, 2026) — only publication to raise Gemini data retention question for XR glasses
     coverage_differential:
       meta_nametag_investigations: 3
       google_gemini_xr_data_retention_investigations: 0
-      meta_status: "DORMANT — never activated, removed within 24 hours"
-      google_status: "LIVE — active policy, 18-month default + 3-year human review retention"
-      led_investigation_meta: "Multiple adversarial articles (Business Wars podcast, courtroom bans)"
-      led_investigation_google: "One neutral mention (Fast Company 'open question')"
+      meta_status: DORMANT — never activated, removed within 24 hours
+      google_status: LIVE — active policy, 18-month default + 3-year human review retention
+      led_investigation_meta: Multiple adversarial articles (Business Wars podcast, courtroom bans)
+      led_investigation_google: One neutral mention (Fast Company 'open question')
     journalists_who_covered_google_io_without_investigating_data_retention:
-      - "Boone Ashworth (WIRED) — attended I/O, covered Android XR. Co-authored Meta subscription criticism, Business Wars podcast"
-      - "Julian Chokkattu (WIRED) — Reviews Editor, multiple Meta privacy pieces, 0 Google/Samsung"
-      - "David Pierce (The Verge) — covered Google I/O, extensive Meta coverage"
-      - "Victoria Song (The Verge) — 3+ Meta privacy pieces, 0 Google/Samsung privacy"
-      - "Meghan Bobrowsky (WSJ) — Meta 'flooding the market' piece, no Google/Samsung equivalent"
+    - Boone Ashworth (WIRED) — attended I/O, covered Android XR. Co-authored Meta subscription criticism, Business Wars podcast
+    - Julian Chokkattu (WIRED) — Reviews Editor, multiple Meta privacy pieces, 0 Google/Samsung
+    - David Pierce (The Verge) — covered Google I/O, extensive Meta coverage
+    - Victoria Song (The Verge) — 3+ Meta privacy pieces, 0 Google/Samsung privacy
+    - Meghan Bobrowsky (WSJ) — Meta 'flooding the market' piece, no Google/Samsung equivalent
     financial_context:
-      conde_nast_wired_parent: "AI deals with OpenAI, Amazon, Perplexity, Microsoft. NO Meta deal. Google provides dominant programmatic ad revenue"
-      nyt: "Google provides $100M+/yr programmatic ad revenue. Amazon deal exists. NO Meta financial relationship"
-      news_corp_wsj_parent: "OpenAI deal ($250M/5yr), Google News Showcase deal. Meta is direct ad competitor"
-      vox_media_verge_parent: "Google ad dependency, Apple News Plus revenue. NO Meta financial relationship"
+      conde_nast_wired_parent: AI deals with OpenAI, Amazon, Perplexity, Microsoft. NO Meta deal. Google provides dominant
+        programmatic ad revenue
+      nyt: Google provides $100M+/yr programmatic ad revenue. Amazon deal exists. NO Meta financial relationship
+      news_corp_wsj_parent: OpenAI deal ($250M/5yr), Google News Showcase deal. Meta is direct ad competitor
+      vox_media_verge_parent: Google ad dependency, Apple News Plus revenue. NO Meta financial relationship
     confounding_factors:
-      - strength: STRONG
-        factor: "Meta has worse privacy track record (Cambridge Analytica, $5B FTC, $1.4B IL biometric)"
-      - strength: STRONG
-        factor: "NameTag was facial recognition specifically (biometric), while Gemini data retention is general cloud storage"
-      - strength: MODERATE
-        factor: "Source availability — WIRED had leaked Meta code, Google privacy policy is public but no leaked code"
-      - strength: MODERATE
-        factor: "Market share — Meta has 7M+ glasses shipped, Google/Samsung has zero"
-      - strength: WEAK
-        factor: "Pre-launch timing — NameTag was pre-launch too, so the asymmetry holds"
-      - strength: WEAK
-        factor: "Google's on-device processing claim — contradicted by Google's own privacy hub"
+    - strength: STRONG
+      factor: Meta has worse privacy track record (Cambridge Analytica, $5B FTC, $1.4B IL biometric)
+    - strength: STRONG
+      factor: NameTag was facial recognition specifically (biometric), while Gemini data retention is general cloud storage
+    - strength: MODERATE
+      factor: Source availability — WIRED had leaked Meta code, Google privacy policy is public but no leaked code
+    - strength: MODERATE
+      factor: Market share — Meta has 7M+ glasses shipped, Google/Samsung has zero
+    - strength: WEAK
+      factor: Pre-launch timing — NameTag was pre-launch too, so the asymmetry holds
+    - strength: WEAK
+      factor: Google's on-device processing claim — contradicted by Google's own privacy hub
     testable_predictions:
-      - "When Samsung/Google glasses ship Fall 2026, WIRED won't publish multi-part Gemini data retention investigation comparable to NameTag"
-      - "If controversy emerges post-launch, publications will frame it as 'similar to Meta' not 'Google's own failure'"
-      - "Publications with higher Google ad dependency will be slower to investigate"
-      - "If a researcher analyzes Samsung companion app, dormant code will receive less adversarial framing than NameTag"
+    - When Samsung/Google glasses ship Fall 2026, WIRED won't publish multi-part Gemini data retention investigation comparable
+      to NameTag
+    - If controversy emerges post-launch, publications will frame it as 'similar to Meta' not 'Google's own failure'
+    - Publications with higher Google ad dependency will be slower to investigate
+    - If a researcher analyzes Samsung companion app, dormant code will receive less adversarial framing than NameTag
     related_mechanisms:
-      - "Mechanism #77: NYT Smart Glasses Coverage Selection Asymmetry"
-      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
-      - "Mechanism #72: WIRED Apple PCC Privacy Pivot Coverage Asymmetry"
-      - "Mechanism #40: Boone Ashworth Cross-Entity Framing"
-
+    - 'Mechanism #77: NYT Smart Glasses Coverage Selection Asymmetry'
+    - 'Mechanism #76: Samsung-Google Compound Advertiser Leverage'
+    - 'Mechanism #72: WIRED Apple PCC Privacy Pivot Coverage Asymmetry'
+    - 'Mechanism #40: Boone Ashworth Cross-Entity Framing'
   parallel_publisher_copyright_litigation_financial_conflict:
     mechanism_id: 79
-    title: "Parallel Publisher Copyright Litigation Financial Conflict — Same Plaintiffs, Different Defendants, Asymmetric Financial Incentives"
-    finding_summary: >
-      The same book publisher coalition (Hachette, Cengage, Elsevier, Scott Turow)
-      filed nearly identical copyright infringement class action lawsuits against
-      BOTH Meta (May 5, 2026, Case 1:26-cv-03689) and Google (Jul 10, 2026,
-      Case 1:26-cv-05870) in the same court (S.D.N.Y.), with the same core
-      allegations — "one of the most massive/prolific infringements of copyrighted
-      materials in history." This creates a NATURAL EXPERIMENT for coverage
-      analysis: independent variable is the defendant, everything else is controlled.
-
-      Financial incentive asymmetry predicting coverage direction:
-      (1) ZERO profiled publications have a Meta financial relationship that would
-          constrain adversarial copyright lawsuit coverage. Meta is publishers'
-          direct ad competitor ($243.46B TTM). Coverage is unconstrained.
-      (2) EVERY profiled publication depends on Google for programmatic ad revenue
-          ($239.54B TTM Google ads). Several have Google News Showcase deals.
-          Adversarial Google copyright coverage risks the publication's primary
-          revenue channel.
-      (3) PUBLISHER-AS-LICENSOR PARADOX: Publications with AI content deals (Condé
-          Nast → OpenAI/Amazon/Microsoft/Perplexity; FT → OpenAI; News Corp →
-          OpenAI + Meta; WaPo → OpenAI/Amazon) face structural conflict — the
-          lawsuits argue AI training is infringement, while publications' own
-          licensing deals treat it as a licensable right. Adversarial coverage
-          could undermine the legal basis that makes their own deals valuable.
-
-      Key factual asymmetry: Google's internal documents acknowledge "$10Bs-$100Bs
-      in potential fines" (per complaint) — a STRONGER admission of wrongdoing
-      than anything in the Meta complaint. Yet the Meta complaint names Zuckerberg
-      personally and includes dramatic internal comms ("torrenting from a corporate
-      laptop doesn't feel right"), creating more compelling narrative. Financial
-      incentive predicts which admission gets more coverage intensity.
-
-      Anthropic settlement benchmark: $1.5B final approval Jul 20, 2026 — largest
-      payout in US copyright history, ~500K eligible writers, $3K+ minimum payment.
-    date_added: "2026-08-13"
+    title: Parallel Publisher Copyright Litigation Financial Conflict — Same Plaintiffs, Different Defendants, Asymmetric
+      Financial Incentives
+    finding_summary: "The same book publisher coalition (Hachette, Cengage, Elsevier, Scott Turow) filed nearly identical\
+      \ copyright infringement class action lawsuits against BOTH Meta (May 5, 2026, Case 1:26-cv-03689) and Google (Jul 10,\
+      \ 2026, Case 1:26-cv-05870) in the same court (S.D.N.Y.), with the same core allegations — \"one of the most massive/prolific\
+      \ infringements of copyrighted materials in history.\" This creates a NATURAL EXPERIMENT for coverage analysis: independent\
+      \ variable is the defendant, everything else is controlled.\nFinancial incentive asymmetry predicting coverage direction:\
+      \ (1) ZERO profiled publications have a Meta financial relationship that would\n    constrain adversarial copyright\
+      \ lawsuit coverage. Meta is publishers'\n    direct ad competitor ($243.46B TTM). Coverage is unconstrained.\n(2) EVERY\
+      \ profiled publication depends on Google for programmatic ad revenue\n    ($239.54B TTM Google ads). Several have Google\
+      \ News Showcase deals.\n    Adversarial Google copyright coverage risks the publication's primary\n    revenue channel.\n\
+      (3) PUBLISHER-AS-LICENSOR PARADOX: Publications with AI content deals (Condé\n    Nast → OpenAI/Amazon/Microsoft/Perplexity;\
+      \ FT → OpenAI; News Corp →\n    OpenAI + Meta; WaPo → OpenAI/Amazon) face structural conflict — the\n    lawsuits argue\
+      \ AI training is infringement, while publications' own\n    licensing deals treat it as a licensable right. Adversarial\
+      \ coverage\n    could undermine the legal basis that makes their own deals valuable.\n\nKey factual asymmetry: Google's\
+      \ internal documents acknowledge \"$10Bs-$100Bs in potential fines\" (per complaint) — a STRONGER admission of wrongdoing\
+      \ than anything in the Meta complaint. Yet the Meta complaint names Zuckerberg personally and includes dramatic internal\
+      \ comms (\"torrenting from a corporate laptop doesn't feel right\"), creating more compelling narrative. Financial incentive\
+      \ predicts which admission gets more coverage intensity.\nAnthropic settlement benchmark: $1.5B final approval Jul 20,\
+      \ 2026 — largest payout in US copyright history, ~500K eligible writers, $3K+ minimum payment.\n"
+    date_added: '2026-08-13'
     test_file: tests/test_parallel_publisher_copyright_litigation_financial_conflict_aug13.py
-    type: "Type C: Financial Incentive Mapping"
+    type: 'Type C: Financial Incentive Mapping'
     sources:
-      - description: "Elsevier v. Meta (S.D.N.Y. Case 1:26-cv-03689, filed May 5, 2026)"
-        url: "https://publishers.org/news/publishers-and-authors-file-class-action-lawsuit-against-meta-and-zuckerberg-for-willful-copyright-infringement-to-develop-llama-ai-models/"
-      - description: "Hachette v. Google (S.D.N.Y. Case 1:26-cv-05870, filed Jul 10, 2026)"
-        url: "https://gizmodo.com/hatchette-and-elsevier-sue-google-for-using-their-work-to-train-ai-2000785480"
-      - description: "Adweek coverage of Google lawsuit — notes identical plaintiff roster"
-        url: "https://www.adweek.com/media/book-publishers-sue-google/"
-      - description: "Reuters coverage of Meta lawsuit"
-        url: "https://www.reuters.com/sustainability/boards-policy-regulation/major-publishers-sue-meta-copyright-infringement-over-ai-training-2026-05-05/"
-      - description: "TechCrunch coverage + Anthropic $1.5B settlement context"
-        url: "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/"
+    - description: Elsevier v. Meta (S.D.N.Y. Case 1:26-cv-03689, filed May 5, 2026)
+      url: https://publishers.org/news/publishers-and-authors-file-class-action-lawsuit-against-meta-and-zuckerberg-for-willful-copyright-infringement-to-develop-llama-ai-models/
+    - description: Hachette v. Google (S.D.N.Y. Case 1:26-cv-05870, filed Jul 10, 2026)
+      url: https://gizmodo.com/hatchette-and-elsevier-sue-google-for-using-their-work-to-train-ai-2000785480
+    - description: Adweek coverage of Google lawsuit — notes identical plaintiff roster
+      url: https://www.adweek.com/media/book-publishers-sue-google/
+    - description: Reuters coverage of Meta lawsuit
+      url: https://www.reuters.com/sustainability/boards-policy-regulation/major-publishers-sue-meta-copyright-infringement-over-ai-training-2026-05-05/
+    - description: TechCrunch coverage + Anthropic $1.5B settlement context
+      url: https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/
     confounding_factors:
-      - strength: STRONG
-        factor: "Cambridge Analytica / Facebook Papers legacy makes Meta the default infringer in editorial priors"
-      - strength: STRONG
-        factor: "Zuckerberg named personally in Meta suit; no CEO named in Google suit — creates more compelling narrative regardless of financial incentives"
-      - strength: STRONG
-        factor: "Meta complaint contains more dramatic internal comms (torrenting, Zuckerberg escalation) than Google complaint"
-      - strength: MODERATE
-        factor: "Meta lawsuit filed 2 months before Google — temporal novelty gives first-filed suit more attention"
-      - strength: MODERATE
-        factor: "Meta Llama is open-source — pirated content embedded in freely available model, amplifying perceived harm"
-      - strength: WEAK
-        factor: "Google's $10B-$100B internal risk estimate partially offsets narrative disadvantage — should generate more coverage, not less"
+    - strength: STRONG
+      factor: Cambridge Analytica / Facebook Papers legacy makes Meta the default infringer in editorial priors
+    - strength: STRONG
+      factor: Zuckerberg named personally in Meta suit; no CEO named in Google suit — creates more compelling narrative regardless
+        of financial incentives
+    - strength: STRONG
+      factor: Meta complaint contains more dramatic internal comms (torrenting, Zuckerberg escalation) than Google complaint
+    - strength: MODERATE
+      factor: Meta lawsuit filed 2 months before Google — temporal novelty gives first-filed suit more attention
+    - strength: MODERATE
+      factor: Meta Llama is open-source — pirated content embedded in freely available model, amplifying perceived harm
+    - strength: WEAK
+      factor: Google's $10B-$100B internal risk estimate partially offsets narrative disadvantage — should generate more coverage,
+        not less
     testable_predictions:
-      - "Profiled publications will produce MORE standalone articles about the Meta copyright lawsuit than the Google copyright lawsuit over the 6-month period following each filing"
-      - "Coverage of Meta lawsuit will use MORE loaded/adversarial language than coverage of Google lawsuit, despite Google's stronger self-assessed risk admission"
-      - "Google's '$10Bs-$100Bs in potential fines' internal estimate will appear in FEWER headlines than Meta's 'escalation to Zuckerberg' or 'corporate torrenting' language"
-      - "If Google settles (following Anthropic $1.5B pattern), it will be framed as 'industry standard' — if Meta settles, as 'accountability' or 'admission'"
+    - Profiled publications will produce MORE standalone articles about the Meta copyright lawsuit than the Google copyright
+      lawsuit over the 6-month period following each filing
+    - Coverage of Meta lawsuit will use MORE loaded/adversarial language than coverage of Google lawsuit, despite Google's
+      stronger self-assessed risk admission
+    - Google's '$10Bs-$100Bs in potential fines' internal estimate will appear in FEWER headlines than Meta's 'escalation
+      to Zuckerberg' or 'corporate torrenting' language
+    - If Google settles (following Anthropic $1.5B pattern), it will be framed as 'industry standard' — if Meta settles, as
+      'accountability' or 'admission'
     related_mechanisms:
-      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
-      - "Mechanism #77: NYT Samsung Glasses Coverage Selection Silence"
-      - "Meta Inverse Leverage — Meta's LACK of financial relationships inversely predicts coverage intensity"
-      - "Google Ad Dependency Paradox — Google's ad dominance creates coverage self-censorship"
-      - "WIRED Copyright Piracy Framing Parity — framing pattern analysis (this mechanism is about FINANCIAL incentives behind selection)"
+    - 'Mechanism #76: Samsung-Google Compound Advertiser Leverage'
+    - 'Mechanism #77: NYT Samsung Glasses Coverage Selection Silence'
+    - Meta Inverse Leverage — Meta's LACK of financial relationships inversely predicts coverage intensity
+    - Google Ad Dependency Paradox — Google's ad dominance creates coverage self-censorship
+    - WIRED Copyright Piracy Framing Parity — framing pattern analysis (this mechanism is about FINANCIAL incentives behind
+      selection)
   publisher_revenue_collapse_ai_deal_dependency_spiral:
     mechanism_id: 82
     date_added: '2026-08-13'
@@ -7301,22 +7282,20 @@ cross_publication_findings:
     finding_type: financial_incentive_mapping
     key_finding: Publisher Revenue Collapse Accelerating AI Deal Financial Materiality — The Dependency Spiral
     mechanism: financial_dependency_spiral
-    finding_summary: >
-      As publisher revenue from traditional sources (traffic-based ads, subscriptions) collapses under
-      AI search disruption, AI content licensing deal payments become a larger proportion of shrinking
-      total revenue. This creates a dependency spiral where the financial incentive to produce softer
-      coverage of AI deal partners STRENGTHENS over time. Key evidence: publisher ad supply fell up to
-      40% in Q2 2026 (Digiday); AI scraping jumped 55% in Q4 2025 while CTR dropped regardless of
-      whether publishers had deals (TollBit); the 'deal premium' in CTR evaporated by Q4 2025 amid a
-      six-fold collapse (Brookings/Open Markets Institute); Google crawl-to-referral ratio 10:1 vs
-      OpenAI 1,200:1 to 1,700:1 (Cloudflare); DMG Media reported 89% CTR drop from AI Overviews (CMA
-      filing); zero-click searches rose 56% to 69% (2024-2025). Roger Lynch (Conde Nast CEO) explicitly
-      stated the OpenAI deal 'begins to make up for some of that revenue' lost from search changes —
-      confirming AI deal payments are becoming REPLACEMENT revenue. Conde Nast now has 4+ simultaneous
-      AI deals (OpenAI, Amazon Rufus, Microsoft PCM, Perplexity) while WIRED directs adversarial coverage
-      at Meta (zero deal partner, direct ad competitor). 91 publicly announced AI content deals tracked
-      (Rob Kelly, Jun 2026); OpenAI leads with 24, Anthropic has ZERO. The dependency spiral is a
-      structural amplifier for ALL existing MediaScope financial incentive mechanisms.
+    finding_summary: 'As publisher revenue from traditional sources (traffic-based ads, subscriptions) collapses under AI
+      search disruption, AI content licensing deal payments become a larger proportion of shrinking total revenue. This creates
+      a dependency spiral where the financial incentive to produce softer coverage of AI deal partners STRENGTHENS over time.
+      Key evidence: publisher ad supply fell up to 40% in Q2 2026 (Digiday); AI scraping jumped 55% in Q4 2025 while CTR dropped
+      regardless of whether publishers had deals (TollBit); the ''deal premium'' in CTR evaporated by Q4 2025 amid a six-fold
+      collapse (Brookings/Open Markets Institute); Google crawl-to-referral ratio 10:1 vs OpenAI 1,200:1 to 1,700:1 (Cloudflare);
+      DMG Media reported 89% CTR drop from AI Overviews (CMA filing); zero-click searches rose 56% to 69% (2024-2025). Roger
+      Lynch (Conde Nast CEO) explicitly stated the OpenAI deal ''begins to make up for some of that revenue'' lost from search
+      changes — confirming AI deal payments are becoming REPLACEMENT revenue. Conde Nast now has 4+ simultaneous AI deals
+      (OpenAI, Amazon Rufus, Microsoft PCM, Perplexity) while WIRED directs adversarial coverage at Meta (zero deal partner,
+      direct ad competitor). 91 publicly announced AI content deals tracked (Rob Kelly, Jun 2026); OpenAI leads with 24, Anthropic
+      has ZERO. The dependency spiral is a structural amplifier for ALL existing MediaScope financial incentive mechanisms.
+
+      '
     publication: cross_publication
     conde_nast_deal_portfolio:
       openai: Aug 2024
@@ -7332,7 +7311,7 @@ cross_publication_findings:
       ai_overview_ctr_drop_pct: 46.7
       zero_click_increase: 56% to 69% (2024-2025)
       google_crawl_referral_ratio: '10:1'
-      openai_crawl_referral_ratio: '1200:1 to 1700:1'
+      openai_crawl_referral_ratio: 1200:1 to 1700:1
       dmg_media_ctr_drop_pct: 89
       publisher_ad_supply_drop_q2_2026_pct: 40
       ai_scraping_increase_q4_2025_pct: 55
@@ -7393,39 +7372,35 @@ cross_publication_findings:
     - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
     test_count: 70
     test_file: tests/test_publisher_revenue_collapse_ai_deal_dependency_spiral_aug13.py
-
   guardian_samsung_google_glasses_coverage_silence:
     mechanism_id: 83
     date_added: '2026-08-13'
     discovery_date: '2026-08-13'
     finding_type: coverage_selection_silence
-    key_finding: >
-      Guardian Samsung/Google Smart Glasses Coverage Selection Silence — Wearables
-      Extension of Dual-Role Paradox
+    key_finding: 'Guardian Samsung/Google Smart Glasses Coverage Selection Silence — Wearables Extension of Dual-Role Paradox
+
+      '
     mechanism: financial_alignment_coverage_selection
-    finding_summary: >
-      The Guardian publishes sustained adversarial Meta wearables coverage (Kenya/Sama
-      contractor footage review, NameTag facial recognition, Cambridge Analytica legacy
-      framing) yet has published ZERO standalone Samsung smart glasses articles in 2026,
-      including ZERO coverage of Samsung Galaxy Unpacked (Jul 22, 2026). Samsung Galaxy
-      Glasses run Google's Android XR platform with Google Gemini as the AI assistant
-      processing camera data — making Google the privacy-relevant entity for data
-      processing scrutiny. The Guardian is Google's News AI pilot partner ("single figure
-      millions" GBP/yr). This extends mechanism #59 (Guardian dual-role paradox) from
-      antitrust/licensing to wearables-specific coverage selection. Unlike mechanism #77
-      (NYT Samsung silence), the Guardian has a DIRECT financial relationship with Google,
-      the entity whose AI platform powers Samsung glasses. Meanwhile, 4+ non-profiled
-      publications (9to5Google, Android Police, Gadget Hacks, Memeburn) all covered Samsung
-      glasses privacy concerns — confirming the story is coverage-worthy. The ICO (UK
-      privacy regulator) is already reviewing Meta glasses; the Guardian has not asked
-      whether ICO plans equivalent review of Samsung/Google glasses.
+    finding_summary: 'The Guardian publishes sustained adversarial Meta wearables coverage (Kenya/Sama contractor footage
+      review, NameTag facial recognition, Cambridge Analytica legacy framing) yet has published ZERO standalone Samsung smart
+      glasses articles in 2026, including ZERO coverage of Samsung Galaxy Unpacked (Jul 22, 2026). Samsung Galaxy Glasses
+      run Google''s Android XR platform with Google Gemini as the AI assistant processing camera data — making Google the
+      privacy-relevant entity for data processing scrutiny. The Guardian is Google''s News AI pilot partner ("single figure
+      millions" GBP/yr). This extends mechanism #59 (Guardian dual-role paradox) from antitrust/licensing to wearables-specific
+      coverage selection. Unlike mechanism #77 (NYT Samsung silence), the Guardian has a DIRECT financial relationship with
+      Google, the entity whose AI platform powers Samsung glasses. Meanwhile, 4+ non-profiled publications (9to5Google, Android
+      Police, Gadget Hacks, Memeburn) all covered Samsung glasses privacy concerns — confirming the story is coverage-worthy.
+      The ICO (UK privacy regulator) is already reviewing Meta glasses; the Guardian has not asked whether ICO plans equivalent
+      review of Samsung/Google glasses.
+
+      '
     publication: guardian
     verification_date: '2026-08-13'
     search_queries_returning_zero:
-      - "site:theguardian.com Samsung smart glasses"
-      - "site:theguardian.com Galaxy Glasses"
-      - "site:theguardian.com Android XR"
-      - "site:theguardian.com Samsung Galaxy Unpacked glasses"
+    - site:theguardian.com Samsung smart glasses
+    - site:theguardian.com Galaxy Glasses
+    - site:theguardian.com Android XR
+    - site:theguardian.com Samsung Galaxy Unpacked glasses
     samsung_glasses_platform:
       os: Android XR (Google)
       ai_assistant: Google Gemini
@@ -7439,312 +7414,313 @@ cross_publication_findings:
     guardian_meta_wearables_coverage:
       tone: adversarial
       examples:
-        - Kenya/Sama contractor footage review amplification (Mar 2026)
-        - Cambridge Analytica legacy framing (Cadwalladr, Orwell Prize)
-        - Dan Milmo meta_tone -0.45 vs google_tone -0.35
+      - Kenya/Sama contractor footage review amplification (Mar 2026)
+      - Cambridge Analytica legacy framing (Cadwalladr, Orwell Prize)
+      - Dan Milmo meta_tone -0.45 vs google_tone -0.35
     non_profiled_samsung_coverage:
-      - publication: 9to5Google
-        date: '2026-07-23'
-        angle: "Samsung and Google betting they can avoid Meta's perv glasses problem"
-        source: https://9to5google.com/2026/07/23/inbox-newsletter-4/
-      - publication: Android Police
-        date: '2026-07-23'
-        angle: "How will Samsung address privacy?"
-        source: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
-      - publication: Gadget Hacks
-        date: '2026-05-14'
-        angle: data retention policies, on-device vs cloud breakdown undisclosed
-        source: https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
-      - publication: Memeburn
-        date: '2026-07-25'
-        angle: privacy safeguards do not fully resolve broader concerns
-        source: https://memeburn.com/samsung-smart-glasses-2026/
+    - publication: 9to5Google
+      date: '2026-07-23'
+      angle: Samsung and Google betting they can avoid Meta's perv glasses problem
+      source: https://9to5google.com/2026/07/23/inbox-newsletter-4/
+    - publication: Android Police
+      date: '2026-07-23'
+      angle: How will Samsung address privacy?
+      source: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+    - publication: Gadget Hacks
+      date: '2026-05-14'
+      angle: data retention policies, on-device vs cloud breakdown undisclosed
+      source: https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
+    - publication: Memeburn
+      date: '2026-07-25'
+      angle: privacy safeguards do not fully resolve broader concerns
+      source: https://memeburn.com/samsung-smart-glasses-2026/
     confounding_factors:
-      - strength: MODERATE
-        factor: Samsung glasses not yet shipping (fall 2026)
-        counter: Apple N50 (late 2027) gets pre-launch privacy coverage; Samsung ships sooner
-      - strength: STRONG
-        factor: Cambridge Analytica institutional anchor creates genuine Meta editorial focus
-        counter: Explains Meta focus but not Samsung/Google ZERO coverage
-      - strength: MODERATE
-        factor: Google's Gemini data policies may genuinely differ from Meta's
-        counter: Unknown precisely because uninvestigated
-      - strength: STRONG
-        factor: Guardian editorial independence is real (Stargate UK FOI)
-        counter: Independence from OpenAI does not prove independence from Google on wearables
-      - strength: WEAK
-        factor: Samsung event may have been editorially deprioritized
-        counter: Galaxy Unpacked is second-largest consumer tech event; other products covered
+    - strength: MODERATE
+      factor: Samsung glasses not yet shipping (fall 2026)
+      counter: Apple N50 (late 2027) gets pre-launch privacy coverage; Samsung ships sooner
+    - strength: STRONG
+      factor: Cambridge Analytica institutional anchor creates genuine Meta editorial focus
+      counter: Explains Meta focus but not Samsung/Google ZERO coverage
+    - strength: MODERATE
+      factor: Google's Gemini data policies may genuinely differ from Meta's
+      counter: Unknown precisely because uninvestigated
+    - strength: STRONG
+      factor: Guardian editorial independence is real (Stargate UK FOI)
+      counter: Independence from OpenAI does not prove independence from Google on wearables
+    - strength: WEAK
+      factor: Samsung event may have been editorially deprioritized
+      counter: Galaxy Unpacked is second-largest consumer tech event; other products covered
     testable_predictions:
-      - "P83.1: Guardian will NOT produce standalone investigation of Gemini's Samsung glasses data handling within 90 days of Samsung launch"
-      - "P83.2: If Samsung glasses privacy scandal emerges, Guardian will frame as 'category problem' not 'Google problem'"
-      - "P83.3: Guardian will NOT file FOI with ICO about Google Gemini's Samsung glasses data handling"
-      - "P83.4: Apple N50 will get aspirational privacy framing from Guardian — creating 3-tier hierarchy: Apple (aspirational), Samsung/Google (absent), Meta (adversarial)"
-      - "P83.5: Dan Milmo will NOT use 'big tobacco' framing for Google/Samsung glasses"
+    - 'P83.1: Guardian will NOT produce standalone investigation of Gemini''s Samsung glasses data handling within 90 days
+      of Samsung launch'
+    - 'P83.2: If Samsung glasses privacy scandal emerges, Guardian will frame as ''category problem'' not ''Google problem'''
+    - 'P83.3: Guardian will NOT file FOI with ICO about Google Gemini''s Samsung glasses data handling'
+    - 'P83.4: Apple N50 will get aspirational privacy framing from Guardian — creating 3-tier hierarchy: Apple (aspirational),
+      Samsung/Google (absent), Meta (adversarial)'
+    - 'P83.5: Dan Milmo will NOT use ''big tobacco'' framing for Google/Samsung glasses'
     related_mechanisms:
-      - "Mechanism #59: Guardian Dual-Role Paradox (Google AI pilot + EPC complainant)"
-      - "Mechanism #29: Guardian Rogue AI Volume/Temperature Asymmetry"
-      - "Mechanism #77: NYT Samsung Glasses Coverage Selection Silence"
-      - "Mechanism #76: Samsung-Google Compound Advertiser Leverage"
-      - "Mechanism #80: Gizmodo Samsung 4-Entity Clean Control"
-      - "Mechanism #81: Multi-Journalist Samsung Unpacked Beat Assignment"
+    - 'Mechanism #59: Guardian Dual-Role Paradox (Google AI pilot + EPC complainant)'
+    - 'Mechanism #29: Guardian Rogue AI Volume/Temperature Asymmetry'
+    - 'Mechanism #77: NYT Samsung Glasses Coverage Selection Silence'
+    - 'Mechanism #76: Samsung-Google Compound Advertiser Leverage'
+    - 'Mechanism #80: Gizmodo Samsung 4-Entity Clean Control'
+    - 'Mechanism #81: Multi-Journalist Samsung Unpacked Beat Assignment'
     test_count: 55
     test_file: tests/test_guardian_samsung_google_glasses_coverage_silence_aug13.py
-
   wired_openai_hardware_facial_recognition_investigation_gap:
     mechanism_id: 84
     date_added: '2026-08-13'
     discovery_date: '2026-08-13'
     finding_type: investigator_deal_partner_selectivity
-    key_finding: >
-      WIRED OpenAI Hardware Camera/Facial Recognition Privacy Investigation Gap —
-      Investigator-as-Deal-Partner Coverage Selectivity
+    key_finding: 'WIRED OpenAI Hardware Camera/Facial Recognition Privacy Investigation Gap — Investigator-as-Deal-Partner
+      Coverage Selectivity
+
+      '
     mechanism: financial_alignment_investigation_selectivity
     publication: wired
-    finding_summary: >
-      WIRED (Condé Nast) conducted a multi-part adversarial investigation of Meta's
-      NameTag facial recognition system (Jun 4 + Jun 8, 2026) — DORMANT code that was
-      never activated, never processed consumer data, and was removed within 48 hours.
-      WIRED also reported on OpenAI's planned hardware device (Feb 2026) which has
-      ACTIVE PLANNED features including an integrated camera designed to "observe users
-      and suggest actions," facial recognition similar to Face ID for purchase
-      authentication, always-on environmental awareness, and continuous data collection
-      from inside the home. WIRED's OpenAI hardware coverage focused EXCLUSIVELY on
-      business/trademark angles (io trademark dispute, delay to 2027). ZERO investigation
-      into the privacy implications of OpenAI's camera + facial recognition system despite
-      having full knowledge of the planned features, the same journalist network that did
-      NameTag, and an EFF security researcher who could analyze OpenAI's privacy implications.
-      Financial correlation: Condé Nast has an OpenAI content licensing deal (Aug 2024);
-      ZERO Meta deal; Meta is Condé Nast's direct ad competitor ($243B). Severity inversion:
-      OpenAI's device with always-on camera + FR placed INSIDE homes is arguably MORE
-      privacy-invasive than Meta's dormant code for glasses worn in public with an LED
-      indicator. Gizmodo (zero financial ties to any entity) published MORE adversarial
-      OpenAI hardware coverage ("Smart Speaker That No One Asked For," tone -0.30) than
-      WIRED (neutral business reporting, tone 0.0) — consistent with financial independence
-      as a predictor of editorial independence.
+    finding_summary: 'WIRED (Condé Nast) conducted a multi-part adversarial investigation of Meta''s NameTag facial recognition
+      system (Jun 4 + Jun 8, 2026) — DORMANT code that was never activated, never processed consumer data, and was removed
+      within 48 hours. WIRED also reported on OpenAI''s planned hardware device (Feb 2026) which has ACTIVE PLANNED features
+      including an integrated camera designed to "observe users and suggest actions," facial recognition similar to Face ID
+      for purchase authentication, always-on environmental awareness, and continuous data collection from inside the home.
+      WIRED''s OpenAI hardware coverage focused EXCLUSIVELY on business/trademark angles (io trademark dispute, delay to 2027).
+      ZERO investigation into the privacy implications of OpenAI''s camera + facial recognition system despite having full
+      knowledge of the planned features, the same journalist network that did NameTag, and an EFF security researcher who
+      could analyze OpenAI''s privacy implications. Financial correlation: Condé Nast has an OpenAI content licensing deal
+      (Aug 2024); ZERO Meta deal; Meta is Condé Nast''s direct ad competitor ($243B). Severity inversion: OpenAI''s device
+      with always-on camera + FR placed INSIDE homes is arguably MORE privacy-invasive than Meta''s dormant code for glasses
+      worn in public with an LED indicator. Gizmodo (zero financial ties to any entity) published MORE adversarial OpenAI
+      hardware coverage ("Smart Speaker That No One Asked For," tone -0.30) than WIRED (neutral business reporting, tone 0.0)
+      — consistent with financial independence as a predictor of editorial independence.
+
+      '
     verification_date: '2026-08-13'
     wired_nametag_investigation:
       date_initial: '2026-06-04'
       date_followup: '2026-06-08'
       framing: adversarial_multi_part
-      tone: -0.80
+      tone: -0.8
       surveillance_vocabulary_instances: 8
-      external_verification: 'Cooper Quintin, EFF Threat Lab'
+      external_verification: Cooper Quintin, EFF Threat Lab
       feature_status: dormant_code_never_activated
       external_impact:
-        - '75+ org ACLU coalition letter'
-        - 'US Senators letter (Wyden/Merkley/Markey)'
-        - 'EFF Victory declaration'
-        - 'New York state courtroom bans'
+      - 75+ org ACLU coalition letter
+      - US Senators letter (Wyden/Merkley/Markey)
+      - EFF Victory declaration
+      - New York state courtroom bans
     wired_openai_hardware_coverage:
       date: '2026-02-10'
       framing: neutral_business
       tone: 0.0
       surveillance_vocabulary_instances: 0
       privacy_investigation_articles: 0
-      angle: 'trademark dispute and timeline delay ONLY'
+      angle: trademark dispute and timeline delay ONLY
     openai_hardware_privacy_features:
       camera: true
-      facial_recognition: 'Face ID-like purchase authentication'
+      facial_recognition: Face ID-like purchase authentication
       always_on: true
       environmental_observation: true
       conversation_monitoring: true
       placement: inside_home
       feature_status: planned_active_for_shipping_product
     gizmodo_control_comparison:
-      article: 'OpenAI Might Be Making a Smart Speaker That No One Asked For'
+      article: OpenAI Might Be Making a Smart Speaker That No One Asked For
       date: '2026-02-21'
-      tone: -0.30
+      tone: -0.3
       framing: skeptical_dismissive
-      source_url: 'https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650'
+      source_url: https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
     financial_context:
-      wired_openai_deal: 'Condé Nast content licensing (Aug 2024)'
+      wired_openai_deal: Condé Nast content licensing (Aug 2024)
       wired_meta_deal: ZERO
-      meta_ad_competition: '$243B direct competitor to publisher ad budgets'
+      meta_ad_competition: $243B direct competitor to publisher ad budgets
     sources:
-      - url: null
-        description: 'WIRED (Jun 4, 2026): NameTag dormant code investigation'
-      - url: null
-        description: 'WIRED (Jun 8, 2026): Meta removes NameTag code after WIRED report'
-      - url: null
-        description: 'WIRED (Feb 10, 2026): OpenAI io device delayed to 2027 (trademark angle)'
-      - url: 'https://www.macrumors.com/2026/02/20/jony-ive-openai-smart-speaker-2027/'
-        description: 'MacRumors (Feb 20, 2026): OpenAI smart speaker with camera + FR'
-      - url: 'https://hypebeast.com/2026/2/openai-x-jony-ive-plan-camera-smart-speaker-for-2027'
-        description: 'Hypebeast (Feb 2026): OpenAI device as active participant in daily life'
-      - url: 'http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry'
-        description: 'EFF (Jun 2026): Victory — Meta strips FR code after public outcry'
-      - url: 'https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650'
-        description: 'Gizmodo (Feb 2026): Smart Speaker That No One Asked For'
-      - url: 'https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777'
-        description: 'CampaignLive: Condé Nast-OpenAI deal confirmed (Aug 2024)'
+    - url: null
+      description: 'WIRED (Jun 4, 2026): NameTag dormant code investigation'
+    - url: null
+      description: 'WIRED (Jun 8, 2026): Meta removes NameTag code after WIRED report'
+    - url: null
+      description: 'WIRED (Feb 10, 2026): OpenAI io device delayed to 2027 (trademark angle)'
+    - url: https://www.macrumors.com/2026/02/20/jony-ive-openai-smart-speaker-2027/
+      description: 'MacRumors (Feb 20, 2026): OpenAI smart speaker with camera + FR'
+    - url: https://hypebeast.com/2026/2/openai-x-jony-ive-plan-camera-smart-speaker-for-2027
+      description: 'Hypebeast (Feb 2026): OpenAI device as active participant in daily life'
+    - url: http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+      description: 'EFF (Jun 2026): Victory — Meta strips FR code after public outcry'
+    - url: https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+      description: 'Gizmodo (Feb 2026): Smart Speaker That No One Asked For'
+    - url: https://www.campaignlive.com/article/openai-inks-multi-year-deal-conde-nast/1885777
+      description: 'CampaignLive: Condé Nast-OpenAI deal confirmed (Aug 2024)'
     confounding_factors:
-      - strength: STRONG
-        factor: 'Hidden code vs public announcement — Meta NameTag was secret code in a shipping app, OpenAI hardware was publicly announced'
-      - strength: STRONG
-        factor: 'Cambridge Analytica / Facebook Papers legacy creates higher editorial risk assessment for Meta FR'
-      - strength: MODERATE
-        factor: 'Meta glasses shipping (7M+ units) vs OpenAI device pre-launch (Feb 2027)'
-      - strength: MODERATE
-        factor: 'Dynamic political environment memo is a genuine editorial smoking gun'
-      - strength: WEAK
-        factor: 'Form factor privacy dynamics — glasses in public vs speaker at home create different concerns'
-      - strength: WEAK
-        factor: 'Authentication vs identification distinction — OpenAI frames FR as purchase auth, Meta as stranger ID'
+    - strength: STRONG
+      factor: Hidden code vs public announcement — Meta NameTag was secret code in a shipping app, OpenAI hardware was publicly
+        announced
+    - strength: STRONG
+      factor: Cambridge Analytica / Facebook Papers legacy creates higher editorial risk assessment for Meta FR
+    - strength: MODERATE
+      factor: Meta glasses shipping (7M+ units) vs OpenAI device pre-launch (Feb 2027)
+    - strength: MODERATE
+      factor: Dynamic political environment memo is a genuine editorial smoking gun
+    - strength: WEAK
+      factor: Form factor privacy dynamics — glasses in public vs speaker at home create different concerns
+    - strength: WEAK
+      factor: Authentication vs identification distinction — OpenAI frames FR as purchase auth, Meta as stranger ID
     testable_predictions:
-      - 'P84.1: When OpenAI ships its camera+FR smart speaker (2027), WIRED will NOT publish multi-part adversarial investigation comparable to NameTag'
-      - 'P84.2: If OpenAI code reveals undisclosed privacy features, WIRED will use softer vocabulary than faceprints and biometric signatures'
-      - 'P84.3: Gizmodo will apply more adversarial scrutiny to OpenAI hardware privacy than WIRED'
-      - 'P84.4: WIRED investigation gap for OpenAI hardware will exceed the 5-month Meta NameTag gap'
+    - 'P84.1: When OpenAI ships its camera+FR smart speaker (2027), WIRED will NOT publish multi-part adversarial investigation
+      comparable to NameTag'
+    - 'P84.2: If OpenAI code reveals undisclosed privacy features, WIRED will use softer vocabulary than faceprints and biometric
+      signatures'
+    - 'P84.3: Gizmodo will apply more adversarial scrutiny to OpenAI hardware privacy than WIRED'
+    - 'P84.4: WIRED investigation gap for OpenAI hardware will exceed the 5-month Meta NameTag gap'
     related_mechanisms:
-      - 'Mechanism #33: Cross-Publication FR Parity (broad multi-pub; #84 is WIRED-specific)'
-      - 'Mechanism #48: WIRED OpenAI Ad Coverage Gap (ads not hardware)'
-      - 'Mechanism #78: Gemini Android XR Data Retention (Google not OpenAI)'
-      - 'Mechanism #58: Condé Nast AI Deal Portfolio Dependency Index'
-      - 'Mechanism #82: Publisher Revenue Collapse Dependency Spiral'
+    - 'Mechanism #33: Cross-Publication FR Parity (broad multi-pub; #84 is WIRED-specific)'
+    - 'Mechanism #48: WIRED OpenAI Ad Coverage Gap (ads not hardware)'
+    - 'Mechanism #78: Gemini Android XR Data Retention (Google not OpenAI)'
+    - 'Mechanism #58: Condé Nast AI Deal Portfolio Dependency Index'
+    - 'Mechanism #82: Publisher Revenue Collapse Dependency Spiral'
     test_file: tests/test_wired_openai_hardware_facial_recognition_investigation_gap_aug13.py
-
   bloomberg_chris_welch_career_migration:
     mechanism_id: 85
     date_added: '2026-08-13'
     discovery_date: '2026-08-13'
     finding_type: career_migration_framing_portability
-    key_finding: >
-      Chris Welch Career Migration Privacy Vocabulary Non-Portability —
-      The Verge (Vox/Google-dependent) → Bloomberg (Zero AI Deals)
+    key_finding: 'Chris Welch Career Migration Privacy Vocabulary Non-Portability — The Verge (Vox/Google-dependent) → Bloomberg
+      (Zero AI Deals)
+
+      '
     mechanism: career_migration_institutional_non_portable
     journalist: Chris Welch
     publication: Bloomberg
     previous_publication: The Verge (Vox Media)
     role: Consumer Tech Reporter / Lead Reviews
-    finding_summary: >
-      Chris Welch (The Verge 2011-2025, 6,000+ articles → Bloomberg 2025-present)
-      provides the fifth career-migration natural experiment in the MediaScope
-      dataset. His Samsung Galaxy Glasses coverage at Bloomberg for Galaxy Unpacked
-      (Jul 22, 2026) was the Techmeme lead story, framing Samsung's camera privacy
-      features POSITIVELY as a product attribute ("nine-hour battery life and privacy
-      features") with zero adversarial or surveillance vocabulary. Meanwhile, his
-      former publication The Verge sent two reporters (David Imel, Dominic Preston)
-      to the same event and produced zero standalone Samsung glasses articles (#81).
-      The adversarial smart glasses privacy frame did NOT travel with Welch from
-      The Verge to Bloomberg. At The Verge, Victoria Song wrote 3+ adversarial Meta
-      glasses privacy pieces (mechanism #75), Dell Cameron and Adi Mehrotra wrote
-      investigative surveillance pieces, and the publication assigned different
-      editorial modes to product reviews vs privacy investigations. At Bloomberg,
-      Welch covers the SAME hardware category (camera-equipped smart glasses with
-      identical Snapdragon AR1 Gen 1 chip, 12MP camera, LED privacy indicator) in
-      neutral-positive product reviewer mode. The adversarial framing stayed at The
-      Verge — it is INSTITUTIONAL, not PERSONAL. This establishes a portability
-      taxonomy: (1) Portable (personal) framing — Joanna Stern's adversarial shift
-      traveled with her from News Corp to independence (tone +0.35 → -0.65, #42);
-      (2) Non-portable (institutional) framing — The Verge's adversarial culture did
-      not transfer when Welch moved to Bloomberg (zero AI content deals, Bloomberg
-      Terminal as primary revenue, no Google ad dependency). Bloomberg's financial
-      independence from both Samsung ($9.7B advertiser) and Google ($239B ad revenue)
-      means Welch's new publication has no compound Samsung-Google leverage to
-      influence coverage direction (#76). Five career migrations now documented:
-      Stern (News Corp → Independent), Heikkilä (MIT TR → FT), Field (CNBC → Verge),
-      Tiku (Multiple → WaPo), Welch (Verge → Bloomberg).
+    finding_summary: 'Chris Welch (The Verge 2011-2025, 6,000+ articles → Bloomberg 2025-present) provides the fifth career-migration
+      natural experiment in the MediaScope dataset. His Samsung Galaxy Glasses coverage at Bloomberg for Galaxy Unpacked (Jul
+      22, 2026) was the Techmeme lead story, framing Samsung''s camera privacy features POSITIVELY as a product attribute
+      ("nine-hour battery life and privacy features") with zero adversarial or surveillance vocabulary. Meanwhile, his former
+      publication The Verge sent two reporters (David Imel, Dominic Preston) to the same event and produced zero standalone
+      Samsung glasses articles (#81). The adversarial smart glasses privacy frame did NOT travel with Welch from The Verge
+      to Bloomberg. At The Verge, Victoria Song wrote 3+ adversarial Meta glasses privacy pieces (mechanism #75), Dell Cameron
+      and Adi Mehrotra wrote investigative surveillance pieces, and the publication assigned different editorial modes to
+      product reviews vs privacy investigations. At Bloomberg, Welch covers the SAME hardware category (camera-equipped smart
+      glasses with identical Snapdragon AR1 Gen 1 chip, 12MP camera, LED privacy indicator) in neutral-positive product reviewer
+      mode. The adversarial framing stayed at The Verge — it is INSTITUTIONAL, not PERSONAL. This establishes a portability
+      taxonomy: (1) Portable (personal) framing — Joanna Stern''s adversarial shift traveled with her from News Corp to independence
+      (tone +0.35 → -0.65, #42); (2) Non-portable (institutional) framing — The Verge''s adversarial culture did not transfer
+      when Welch moved to Bloomberg (zero AI content deals, Bloomberg Terminal as primary revenue, no Google ad dependency).
+      Bloomberg''s financial independence from both Samsung ($9.7B advertiser) and Google ($239B ad revenue) means Welch''s
+      new publication has no compound Samsung-Google leverage to influence coverage direction (#76). Five career migrations
+      now documented: Stern (News Corp → Independent), Heikkilä (MIT TR → FT), Field (CNBC → Verge), Tiku (Multiple → WaPo),
+      Welch (Verge → Bloomberg).
+
+      '
     verification_date: '2026-08-13'
     career_migration_data:
       source_publication: The Verge (Vox Media)
-      source_tenure: '2011-2025 (14 years, 6,000+ articles)'
-      source_financial_structure: 'Google programmatic ad dependency via Vox Media; Microsoft PCM participant'
+      source_tenure: 2011-2025 (14 years, 6,000+ articles)
+      source_financial_structure: Google programmatic ad dependency via Vox Media; Microsoft PCM participant
       destination_publication: Bloomberg
       destination_start: '2025'
-      destination_financial_structure: 'Zero AI content deals; Bloomberg Terminal primary revenue; no Google/Samsung ad dependency'
-      hiring_context: 'Recruited by Mark Gurman (managing editor, global consumer tech) alongside Samantha Murphy Kelly (ex-CNN/CNET)'
-      role_continuity: 'Product reviewer at BOTH publications — controls for beat assignment'
+      destination_financial_structure: Zero AI content deals; Bloomberg Terminal primary revenue; no Google/Samsung ad dependency
+      hiring_context: Recruited by Mark Gurman (managing editor, global consumer tech) alongside Samantha Murphy Kelly (ex-CNN/CNET)
+      role_continuity: Product reviewer at BOTH publications — controls for beat assignment
     samsung_coverage_bloomberg:
-      event: 'Samsung Galaxy Unpacked, London, Jul 22, 2026'
+      event: Samsung Galaxy Unpacked, London, Jul 22, 2026
       techmeme_status: lead_story
-      headline_framing: 'Samsung teases its smart glasses... nine-hour battery life and privacy features'
-      tone: 0.10
+      headline_framing: Samsung teases its smart glasses... nine-hour battery life and privacy features
+      tone: 0.1
       surveillance_vocabulary_instances: 0
       privacy_framing: product_attribute_positive
       hardware_referenced:
-        - 'Snapdragon AR1 Gen 1 (identical to Meta Ray-Ban)'
-        - '12MP camera'
-        - 'LED privacy indicator'
-        - 'Camera disabled when LED blocked or glasses removed'
+      - Snapdragon AR1 Gen 1 (identical to Meta Ray-Ban)
+      - 12MP camera
+      - LED privacy indicator
+      - Camera disabled when LED blocked or glasses removed
     verge_institutional_contrast:
-      same_event_coverage: 'David Imel, Dominic Preston covered foldables ONLY at Galaxy Unpacked'
+      same_event_coverage: David Imel, Dominic Preston covered foldables ONLY at Galaxy Unpacked
       standalone_samsung_glasses_articles: 0
-      meta_glasses_adversarial_pieces_same_period: '3+ (Victoria Song, Dell Cameron, Adi Mehrotra)'
+      meta_glasses_adversarial_pieces_same_period: 3+ (Victoria Song, Dell Cameron, Adi Mehrotra)
       institutional_adversarial_framing: true
     portability_taxonomy:
       portable_personal:
-        example: 'Joanna Stern (News Corp → Independent)'
+        example: Joanna Stern (News Corp → Independent)
         mechanism_id: 42
-        direction: 'Financial balance → No deals = adversarial shift traveled with journalist'
+        direction: Financial balance → No deals = adversarial shift traveled with journalist
       non_portable_institutional:
-        example: 'Chris Welch (The Verge → Bloomberg)'
+        example: Chris Welch (The Verge → Bloomberg)
         mechanism_id: 85
-        direction: 'Google-dependent → Independent = adversarial frame stayed at institution'
+        direction: Google-dependent → Independent = adversarial frame stayed at institution
     career_migration_pattern_n5:
-      - journalist: Joanna Stern
-        from: 'News Corp (balanced)'
-        to: 'Independent (New Things + NBC)'
-        meta_tone_shift: '+0.35 → -0.65'
-        mechanism_id: 42
-      - journalist: Melissa Heikkilä
-        from: 'MIT Technology Review (independent)'
-        to: 'Financial Times (OpenAI deal)'
-        meta_tone_shift: 'adversarial amplified'
-        mechanism_id: null
-      - journalist: Hayden Field
-        from: 'CNBC (Comcast)'
-        to: 'The Verge (Vox Media/Google)'
-        meta_tone_shift: 'beat concentration toward OpenAI/Anthropic'
-        mechanism_id: 52
-      - journalist: Nitasha Tiku
-        from: 'Multiple outlets'
-        to: 'WaPo (Bezos-owned)'
-        meta_tone_shift: 'company-agnostic except Anthropic gap'
-        mechanism_id: 72
-      - journalist: Chris Welch
-        from: 'The Verge (Vox Media/Google-dependent)'
-        to: 'Bloomberg (zero deals, Terminal revenue)'
-        meta_tone_shift: 'neutral Samsung coverage, non-portable adversarial frame'
-        mechanism_id: 85
+    - journalist: Joanna Stern
+      from: News Corp (balanced)
+      to: Independent (New Things + NBC)
+      meta_tone_shift: +0.35 → -0.65
+      mechanism_id: 42
+    - journalist: Melissa Heikkilä
+      from: MIT Technology Review (independent)
+      to: Financial Times (OpenAI deal)
+      meta_tone_shift: adversarial amplified
+      mechanism_id: null
+    - journalist: Hayden Field
+      from: CNBC (Comcast)
+      to: The Verge (Vox Media/Google)
+      meta_tone_shift: beat concentration toward OpenAI/Anthropic
+      mechanism_id: 52
+    - journalist: Nitasha Tiku
+      from: Multiple outlets
+      to: WaPo (Bezos-owned)
+      meta_tone_shift: company-agnostic except Anthropic gap
+      mechanism_id: 72
+    - journalist: Chris Welch
+      from: The Verge (Vox Media/Google-dependent)
+      to: Bloomberg (zero deals, Terminal revenue)
+      meta_tone_shift: neutral Samsung coverage, non-portable adversarial frame
+      mechanism_id: 85
     source_urls:
-      - 'https://www.techmeme.com/260722/p26'
-      - 'http://talkingbiznews.com/they-talk-biz-news/bloomberg-hires-kelly-welch-for-consumer-tech-team/'
-      - 'https://muckrack.com/chriswelch'
-      - 'https://chris-welch.com'
+    - https://www.techmeme.com/260722/p26
+    - http://talkingbiznews.com/they-talk-biz-news/bloomberg-hires-kelly-welch-for-consumer-tech-team/
+    - https://muckrack.com/chriswelch
+    - https://chris-welch.com
     confounding_factors:
-      - strength: STRONG
-        factor: 'Different publication cultures — Bloomberg is financial-first with neutral voice tradition; The Verge is editorial-first with opinion-driven culture. Tone differences may reflect genre conventions, not financial structure.'
-      - strength: STRONG
-        factor: 'Samsung glasses pre-launch (hands-on only at Unpacked) vs Meta glasses shipping product with 7M+ units — adversarial coverage typically follows deployment and real-world incidents, not announcements.'
-      - strength: MODERATE
-        factor: 'Beat assignment at The Verge — Welch was a product reviewer, not a privacy investigator. He may not have written adversarial privacy pieces even if he stayed at The Verge. Song/Cameron handled that beat.'
-      - strength: MODERATE
-        factor: 'Bloomberg consumer tech team is newly formed under Gurman (2025) — editorial culture still developing, may not yet have established adversarial investigation patterns for any company.'
-      - strength: WEAK
-        factor: 'Self-selection bias — Welch may have chosen Bloomberg specifically because its neutral editorial culture matched his product-review approach.'
-      - strength: WEAK
-        factor: 'Samsung Unpacked demo restrictions — media could touch but not wear Samsung glasses, limiting the ability to test privacy features in real scenarios.'
+    - strength: STRONG
+      factor: Different publication cultures — Bloomberg is financial-first with neutral voice tradition; The Verge is editorial-first
+        with opinion-driven culture. Tone differences may reflect genre conventions, not financial structure.
+    - strength: STRONG
+      factor: Samsung glasses pre-launch (hands-on only at Unpacked) vs Meta glasses shipping product with 7M+ units — adversarial
+        coverage typically follows deployment and real-world incidents, not announcements.
+    - strength: MODERATE
+      factor: Beat assignment at The Verge — Welch was a product reviewer, not a privacy investigator. He may not have written
+        adversarial privacy pieces even if he stayed at The Verge. Song/Cameron handled that beat.
+    - strength: MODERATE
+      factor: Bloomberg consumer tech team is newly formed under Gurman (2025) — editorial culture still developing, may not
+        yet have established adversarial investigation patterns for any company.
+    - strength: WEAK
+      factor: Self-selection bias — Welch may have chosen Bloomberg specifically because its neutral editorial culture matched
+        his product-review approach.
+    - strength: WEAK
+      factor: Samsung Unpacked demo restrictions — media could touch but not wear Samsung glasses, limiting the ability to
+        test privacy features in real scenarios.
     testable_predictions:
-      - 'P85.1: When Samsung glasses ship Fall 2026, Welch/Bloomberg will NOT publish multi-part adversarial privacy investigation comparable to what his former Verge colleagues did for Meta.'
-      - 'P85.2: If a Samsung glasses privacy incident occurs post-launch, Bloomberg coverage will use neutral vocabulary (concern, issue) not Verge vocabulary (surveillance, creep, dox).'
-      - 'P85.3: The Verge adversarial Meta glasses coverage volume will NOT decrease after Welch departure — confirming the framing is institutional, not dependent on any single journalist.'
-      - 'P85.4: If Bloomberg hires additional The Verge alumni for consumer tech, their smart glasses coverage will similarly adopt neutral-positive framing — confirming institutional framing reset on migration.'
+    - 'P85.1: When Samsung glasses ship Fall 2026, Welch/Bloomberg will NOT publish multi-part adversarial privacy investigation
+      comparable to what his former Verge colleagues did for Meta.'
+    - 'P85.2: If a Samsung glasses privacy incident occurs post-launch, Bloomberg coverage will use neutral vocabulary (concern,
+      issue) not Verge vocabulary (surveillance, creep, dox).'
+    - 'P85.3: The Verge adversarial Meta glasses coverage volume will NOT decrease after Welch departure — confirming the
+      framing is institutional, not dependent on any single journalist.'
+    - 'P85.4: If Bloomberg hires additional The Verge alumni for consumer tech, their smart glasses coverage will similarly
+      adopt neutral-positive framing — confirming institutional framing reset on migration.'
     related_mechanisms:
-      - mechanism_id: 75
-        title: 'Victoria Song Privacy Vocabulary Bifurcation (The Verge institutional pattern)'
-      - mechanism_id: 81
-        title: 'Multi-Journalist Samsung Unpacked Beat Assignment Paradox'
-      - mechanism_id: 76
-        title: 'Samsung-Google Compound Advertiser Leverage'
-      - mechanism_id: 42
-        title: 'Joanna Stern Career Migration (portable framing contrast)'
-      - mechanism_id: 52
-        title: 'Hayden Field AI Beat Concentration (reverse migration direction)'
-      - mechanism_id: 11
-        title: 'Mark Gurman Access Dependency (Bloomberg institutional context)'
+    - mechanism_id: 75
+      title: Victoria Song Privacy Vocabulary Bifurcation (The Verge institutional pattern)
+    - mechanism_id: 81
+      title: Multi-Journalist Samsung Unpacked Beat Assignment Paradox
+    - mechanism_id: 76
+      title: Samsung-Google Compound Advertiser Leverage
+    - mechanism_id: 42
+      title: Joanna Stern Career Migration (portable framing contrast)
+    - mechanism_id: 52
+      title: Hayden Field AI Beat Concentration (reverse migration direction)
+    - mechanism_id: 11
+      title: Mark Gurman Access Dependency (Bloomberg institutional context)
     test_file: tests/test_chris_welch_career_migration_privacy_portability_aug13.py
-
   google_display_deprecation_publisher_revenue_floor_erosion:
     mechanism_id: 86
     mechanism_name: Google Display Ads Deprecation — Publisher Revenue Floor Erosion Through Platform Default Shift
@@ -7752,96 +7728,133 @@ cross_publication_findings:
     rotation_type: C
     discovery_date: '2026-08-13'
     date_added: '2026-08-13'
-    finding_summary: |
-      Google announced May 26, 2026 that standalone Display Ads campaigns are being retired,
+    finding_summary: 'Google announced May 26, 2026 that standalone Display Ads campaigns are being retired,
+
       with the Google Display Network folded into Demand Gen. In standalone Display campaigns,
+
       GDN (publisher inventory) was the DEFAULT and entire purpose. In Demand Gen, GDN is an
+
       OPT-IN channel — default campaigns route spend to Google-owned surfaces (YouTube, Discover,
+
       Gmail, Maps) where no publisher revenue share applies. This structural default-to-opt-in
-      shift accelerates the already-declining Google Network revenue: publisher share of Google's
+
+      shift accelerates the already-declining Google Network revenue: publisher share of Google''s
+
       total ad revenue dropped from 10.3% (Q2 2025) to 8.9% (Q2 2026), a 1.4pp decline on an
+
       $81.63B base implying ~$1.11B/quarter less flowing to publishers than if the prior ratio
+
       had held. Combined with three other 2026 Google product decisions — Performance Planner
+
       removing Display/Video support (Mar 9), Search campaigns no longer auto-including GDN,
+
       and AI Overviews reducing publisher traffic by 34.5% — this creates a FOUR-VECTOR
+
       publisher revenue erosion: (1) search traffic vector via AI Overviews, (2) display
+
       budget vector via Demand Gen defaults, (3) planning infrastructure vector via Performance
+
       Planner removal, (4) search campaign vector via GDN auto-opt-out.
 
-      MEDIASCOPE SIGNIFICANCE: Publishers who depend on Google's GDN for ad revenue are losing
-      that revenue BECAUSE OF Google's own product decisions. Simultaneously, Google's content
+
+      MEDIASCOPE SIGNIFICANCE: Publishers who depend on Google''s GDN for ad revenue are losing
+
+      that revenue BECAUSE OF Google''s own product decisions. Simultaneously, Google''s content
+
       licensing deals (Showcase, $1B+) and AI training data demands become more materially
+
       important as traditional ad revenue shrinks. This strengthens ALL existing Google financial
+
       leverage mechanisms: publishers cannot afford adversarial coverage of the company that is
+
       simultaneously their biggest ad revenue source AND their biggest ad revenue threat.
-      Mechanism #86 isolates Google's specific PRODUCT DESIGN decisions that accelerate the
+
+      Mechanism #86 isolates Google''s specific PRODUCT DESIGN decisions that accelerate the
+
       revenue decline documented in mechanism #82 (broad industry spiral).
-    distinction_from_47: |
-      Mechanism #47 covers Meta's structural antagonism as publishers' direct ad competitor.
-      Mechanism #86 covers Google's PLATFORM DESIGN decisions that reduce publisher revenue
+
+      '
+    distinction_from_47: 'Mechanism #47 covers Meta''s structural antagonism as publishers'' direct ad competitor.
+
+      Mechanism #86 covers Google''s PLATFORM DESIGN decisions that reduce publisher revenue
+
       from within — Google is not competing WITH publishers for ad dollars, it is redirecting
+
       advertiser spend AWAY from publishers toward its own properties through product defaults.
+
       Different company, different transmission mechanism.
-    distinction_from_82: |
-      Mechanism #82 documents the broad publisher revenue collapse spiral (traffic decline →
+
+      '
+    distinction_from_82: 'Mechanism #82 documents the broad publisher revenue collapse spiral (traffic decline →
+
       AI deal dependency → coverage softening → more extraction). Mechanism #86 isolates
+
       SPECIFIC, DATABLE Google product decisions that accelerate that spiral: Display Ads
+
       deprecation (May 26, 2026), Performance Planner removal (Mar 9, 2026), GDN auto-opt-out
+
       (Aug 2025). Different scope (industry-wide vs. Google-specific) and different evidence
+
       type (aggregate trends vs. specific product changes).
-    distinction_from_showcase_coercive_cycle: |
-      Google Showcase coercive cycle covers PAYMENTS from Google to publishers ($25K-$250K/yr
+
+      '
+    distinction_from_showcase_coercive_cycle: 'Google Showcase coercive cycle covers PAYMENTS from Google to publishers ($25K-$250K/yr
+
       Showcase contracts with secrecy NDAs). Mechanism #86 covers REDUCED PAYMENTS from
-      Google's ad platform to publishers through product default changes. Different Google
+
+      Google''s ad platform to publishers through product default changes. Different Google
+
       product (Showcase vs Display/Demand Gen), opposite direction of money flow
-      (Google pays publishers vs publishers earn less from Google's ad network).
+
+      (Google pays publishers vs publishers earn less from Google''s ad network).
+
+      '
     confounding_factors:
-      - rating: STRONG
-        factor: 'Demand Gen campaigns may increase total ad spend reaching GDN if advertisers
-          discover and opt into GDN inventory they were not previously using.'
-      - rating: STRONG
-        factor: 'Google claims 9.5% ROI improvement and highlights GoFood case study — if
-          true, more advertisers may actively choose GDN within Demand Gen.'
-      - rating: MODERATE
-        factor: 'Network revenue decline may reflect broader market shift away from display
-          advertising toward video/social, independent of Google product decisions.'
-      - rating: MODERATE
-        factor: 'Q2 2026 network decline (-0.7% YoY) was smaller than Q1 2026 (-4.0% YoY),
-          suggesting seasonal factors may dominate the structural shift.'
-      - rating: WEAK
-        factor: 'Migration timeline extends through 2027 — full revenue impact not yet realized.'
-      - rating: WEAK
-        factor: 'Some advertisers may have been paying for GDN inadvertently — removing default
-          inclusion could improve ad quality without reducing intentional publisher revenue.'
+    - rating: STRONG
+      factor: Demand Gen campaigns may increase total ad spend reaching GDN if advertisers discover and opt into GDN inventory
+        they were not previously using.
+    - rating: STRONG
+      factor: Google claims 9.5% ROI improvement and highlights GoFood case study — if true, more advertisers may actively
+        choose GDN within Demand Gen.
+    - rating: MODERATE
+      factor: Network revenue decline may reflect broader market shift away from display advertising toward video/social,
+        independent of Google product decisions.
+    - rating: MODERATE
+      factor: Q2 2026 network decline (-0.7% YoY) was smaller than Q1 2026 (-4.0% YoY), suggesting seasonal factors may dominate
+        the structural shift.
+    - rating: WEAK
+      factor: Migration timeline extends through 2027 — full revenue impact not yet realized.
+    - rating: WEAK
+      factor: Some advertisers may have been paying for GDN inadvertently — removing default inclusion could improve ad quality
+        without reducing intentional publisher revenue.
     testable_predictions:
-      - 'Google Network revenue will decline below $7B for at least one quarter in 2026-2027
-        as Display-to-Demand-Gen migration progresses.'
-      - 'Publisher share of total Google advertising revenue will fall below 8% by Q4 2026,
-        continuing the decline from 10.3% (Q2 2025) to 8.9% (Q2 2026).'
-      - 'Post-deprecation, no publication in the MediaScope dataset will publish an adversarial
-        investigation of Google''s Display Ads deprecation framing it as harmful to publishers.'
-      - 'Condé Nast''s AI licensing deal dependency (mechanism #58) will increase in materiality
-        as its Google Network ad revenue declines.'
+    - Google Network revenue will decline below $7B for at least one quarter in 2026-2027 as Display-to-Demand-Gen migration
+      progresses.
+    - Publisher share of total Google advertising revenue will fall below 8% by Q4 2026, continuing the decline from 10.3%
+      (Q2 2025) to 8.9% (Q2 2026).
+    - Post-deprecation, no publication in the MediaScope dataset will publish an adversarial investigation of Google's Display
+      Ads deprecation framing it as harmful to publishers.
+    - 'Condé Nast''s AI licensing deal dependency (mechanism #58) will increase in materiality as its Google Network ad revenue
+      declines.'
     cross_references:
-      - mechanism_id: 82
-        name: Publisher revenue collapse dependency spiral
-        connection: Google Display deprecation is a specific accelerant of the broad spiral
-      - mechanism_id: 47
-        name: Meta ad competitor structural antagonism
-        connection: Google reduces publisher revenue through product design; Meta competes for it directly
-      - mechanism_id: 76
-        name: Samsung-Google compound advertiser leverage
-        connection: Samsung's $9.7B ad spend flows through the same Google ad platform being restructured
+    - mechanism_id: 82
+      name: Publisher revenue collapse dependency spiral
+      connection: Google Display deprecation is a specific accelerant of the broad spiral
+    - mechanism_id: 47
+      name: Meta ad competitor structural antagonism
+      connection: Google reduces publisher revenue through product design; Meta competes for it directly
+    - mechanism_id: 76
+      name: Samsung-Google compound advertiser leverage
+      connection: Samsung's $9.7B ad spend flows through the same Google ad platform being restructured
     publication: cross_publication
     source_urls:
-      - https://ppc.land/googles-display-ads-are-dead-here-is-what-replaces-them-in-2026/
-      - https://www.searchenginejournal.com/google-is-retiring-standalone-display-campaigns-in-favor-of-demand-gen/575889/
-      - https://strategiq.co/hub/googles-most-consequential-month-for-paid-search/
-      - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm
-      - https://medium.com/@anerluzz/the-ad-market-is-growing-faster-than-ever-but-publisher-revenue-is-declining-heres-why-231db78c529a
+    - https://ppc.land/googles-display-ads-are-dead-here-is-what-replaces-them-in-2026/
+    - https://www.searchenginejournal.com/google-is-retiring-standalone-display-campaigns-in-favor-of-demand-gen/575889/
+    - https://strategiq.co/hub/googles-most-consequential-month-for-paid-search/
+    - https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm
+    - https://medium.com/@anerluzz/the-ad-market-is-growing-faster-than-ever-but-publisher-revenue-is-declining-heres-why-231db78c529a
     test_count: 76
     test_file: tests/test_google_display_deprecation_publisher_revenue_floor_erosion_aug13.py
-
   ft_dual_partner_wearables_coverage_silence:
     mechanism_id: 87
     mechanism_name: FT Dual-Partner Wearables Coverage Selection — Samsung/Google Glasses Privacy Investigation Silence
@@ -7850,98 +7863,115 @@ cross_publication_findings:
     type: Type B
     discovery_date: '2026-08-13'
     date_added: '2026-08-13'
-    finding_summary: |
-      The Financial Times actively covers Meta wearables through Hannah Murphy with adversarial
-      framing (Kenya/Sama contractor review, NameTag facial recognition, LED tamper-proofing,
-      continuous recording) while publishing ZERO standalone Samsung Galaxy Glasses privacy
-      investigations post-Galaxy Unpacked (Jul 22, 2026) — despite Samsung glasses sharing identical hardware (Snapdragon AR1 Gen 1,
-      12MP camera, LED indicator) and running Google Android XR + Gemini AI.
-      The FT has TWO financial relationships with Samsung glasses ecosystem partners: Google News
-      AI pilot deal ("single figure millions" GBP/yr) and OpenAI content licensing deal (Apr 2024).
-      The FT has ZERO financial relationship with Meta.
-      The dual-lens editorial structure (Murphy=Meta/adversarial, Murgia=AI/positive) creates a
-      Samsung glasses no-man's-land where neither reporter investigates Samsung/Google wearables
-      privacy. The WSJ explicitly cross-references FT's prior Meta glasses reporting, confirming
-      the FT covers the wearables category — the Samsung absence is editorial selection, not
-      disinterest.
-    confounding_factors:
-      - factor: Samsung glasses not yet shipping (fall 2026 launch)
-        strength: STRONG
-        description: >
-          Pre-launch products receive less investigative coverage than shipping
-          products. However, Meta's NameTag was ALSO pre-launch (dormant code,
-          never activated for consumers) and received FT adversarial coverage.
-      - factor: Meta has larger installed base (7M+ pairs sold)
-        strength: STRONG
-        description: >
-          Larger user base creates more real-world privacy incidents. However,
-          the FT covered Meta glasses adversarially BEFORE the installed base
-          was large (2023-2024 coverage predates mass adoption).
-      - factor: Beat assignment rather than financial incentive
-        strength: MODERATE
-        description: >
-          Murphy may not cover Samsung because it's not her beat. But Samsung
-          glasses' AI platform (Google Gemini) falls in Murgia's AI beat, and
-          Murgia does not do adversarial privacy investigations of Google.
-      - factor: Cambridge Analytica institutional memory
-        strength: MODERATE
-        description: >
-          Meta is the default privacy villain in tech journalism due to 2018
-          scandal. However, FT publishes neutral/positive Meta business coverage
-          (earnings, strategic analysis) — adversarial framing activates
-          selectively for privacy-adjacent stories.
-      - factor: Samsung Unpacked was primarily a foldable event
-        strength: WEAK
-        description: >
-          Galaxy Glasses were a secondary announcement. But multiple publications
-          (Gizmodo, Android Police, 9to5Google) produced standalone glasses
-          articles from the same event.
-      - factor: Editorial resource constraints
-        strength: WEAK
-        description: >
-          FT may not have attended Samsung Unpacked. But FT covers Samsung as a
-          major tech company (earnings, semiconductor) and Google I/O regularly.
-    testable_predictions:
-      - prediction: >
-          When Samsung glasses ship (fall 2026), the FT will NOT publish standalone
-          privacy investigations within 90 days — unlike the immediate adversarial
-          coverage Meta glasses received.
-        timeframe: 90 days post-Samsung glasses launch
-        falsifiable: true
-      - prediction: >
-          If a Samsung glasses privacy incident occurs, the FT will frame it through
-          Meta comparison lens rather than as standalone Samsung/Google failure.
-        falsifiable: true
-      - prediction: >
-          If FT assigns Samsung wearables coverage, it will go to Murgia (AI lens,
-          positive) not Murphy (platform lens, adversarial).
-        falsifiable: true
-      - prediction: >
-          Publications with lower Google financial dependency will produce earlier
-          and more adversarial Samsung glasses privacy coverage than the FT.
-        falsifiable: true
-    related_mechanisms:
-      - mechanism_id: 73
-        title: CMA No-Sue Regulatory Neutralization (same FT-Google deal)
-      - mechanism_id: 78
-        title: Gemini Android XR Data Retention Investigation Gap
-      - mechanism_id: 83
-        title: Guardian Samsung/Google Glasses Coverage Silence (parallel pattern)
-      - mechanism_id: 6
-        title: Madhumita Murgia Cross-Entity (AI Editor dual-lens)
-    sources:
-      - url: https://pressgazette.co.uk/media_business/google-news-licensing-deals-2026/
-        description: Press Gazette (Aug 3, 2026) — Google News AI deal details
-      - url: https://www.ft.com/content/33328743-ba0d-4a5e-9e5b-ef5e4be70e7e
-        description: FT-OpenAI content licensing deal announcement (Apr 29, 2024)
-      - url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
-        description: WSJ (Bobrowsky, Jul 14 2026) — cross-references FT prior Meta glasses reporting
-      - url: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
-        description: Samsung Galaxy Unpacked (Jul 22, 2026) — Galaxy Glasses announcement
-      - url: https://www.trustedreviews.com/news/samsungs-android-xr-glasses-last-longer-than-metas-alternative
-        description: Trusted Reviews — Samsung glasses Snapdragon AR1 Gen 1 + 9hr battery + privacy toggle
-    test_file: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
+    finding_summary: 'The Financial Times actively covers Meta wearables through Hannah Murphy with adversarial
 
+      framing (Kenya/Sama contractor review, NameTag facial recognition, LED tamper-proofing,
+
+      continuous recording) while publishing ZERO standalone Samsung Galaxy Glasses privacy
+
+      investigations post-Galaxy Unpacked (Jul 22, 2026) — despite Samsung glasses sharing identical hardware (Snapdragon
+      AR1 Gen 1,
+
+      12MP camera, LED indicator) and running Google Android XR + Gemini AI.
+
+      The FT has TWO financial relationships with Samsung glasses ecosystem partners: Google News
+
+      AI pilot deal ("single figure millions" GBP/yr) and OpenAI content licensing deal (Apr 2024).
+
+      The FT has ZERO financial relationship with Meta.
+
+      The dual-lens editorial structure (Murphy=Meta/adversarial, Murgia=AI/positive) creates a
+
+      Samsung glasses no-man''s-land where neither reporter investigates Samsung/Google wearables
+
+      privacy. The WSJ explicitly cross-references FT''s prior Meta glasses reporting, confirming
+
+      the FT covers the wearables category — the Samsung absence is editorial selection, not
+
+      disinterest.
+
+      '
+    confounding_factors:
+    - factor: Samsung glasses not yet shipping (fall 2026 launch)
+      strength: STRONG
+      description: 'Pre-launch products receive less investigative coverage than shipping products. However, Meta''s NameTag
+        was ALSO pre-launch (dormant code, never activated for consumers) and received FT adversarial coverage.
+
+        '
+    - factor: Meta has larger installed base (7M+ pairs sold)
+      strength: STRONG
+      description: 'Larger user base creates more real-world privacy incidents. However, the FT covered Meta glasses adversarially
+        BEFORE the installed base was large (2023-2024 coverage predates mass adoption).
+
+        '
+    - factor: Beat assignment rather than financial incentive
+      strength: MODERATE
+      description: 'Murphy may not cover Samsung because it''s not her beat. But Samsung glasses'' AI platform (Google Gemini)
+        falls in Murgia''s AI beat, and Murgia does not do adversarial privacy investigations of Google.
+
+        '
+    - factor: Cambridge Analytica institutional memory
+      strength: MODERATE
+      description: 'Meta is the default privacy villain in tech journalism due to 2018 scandal. However, FT publishes neutral/positive
+        Meta business coverage (earnings, strategic analysis) — adversarial framing activates selectively for privacy-adjacent
+        stories.
+
+        '
+    - factor: Samsung Unpacked was primarily a foldable event
+      strength: WEAK
+      description: 'Galaxy Glasses were a secondary announcement. But multiple publications (Gizmodo, Android Police, 9to5Google)
+        produced standalone glasses articles from the same event.
+
+        '
+    - factor: Editorial resource constraints
+      strength: WEAK
+      description: 'FT may not have attended Samsung Unpacked. But FT covers Samsung as a major tech company (earnings, semiconductor)
+        and Google I/O regularly.
+
+        '
+    testable_predictions:
+    - prediction: 'When Samsung glasses ship (fall 2026), the FT will NOT publish standalone privacy investigations within
+        90 days — unlike the immediate adversarial coverage Meta glasses received.
+
+        '
+      timeframe: 90 days post-Samsung glasses launch
+      falsifiable: true
+    - prediction: 'If a Samsung glasses privacy incident occurs, the FT will frame it through Meta comparison lens rather
+        than as standalone Samsung/Google failure.
+
+        '
+      falsifiable: true
+    - prediction: 'If FT assigns Samsung wearables coverage, it will go to Murgia (AI lens, positive) not Murphy (platform
+        lens, adversarial).
+
+        '
+      falsifiable: true
+    - prediction: 'Publications with lower Google financial dependency will produce earlier and more adversarial Samsung glasses
+        privacy coverage than the FT.
+
+        '
+      falsifiable: true
+    related_mechanisms:
+    - mechanism_id: 73
+      title: CMA No-Sue Regulatory Neutralization (same FT-Google deal)
+    - mechanism_id: 78
+      title: Gemini Android XR Data Retention Investigation Gap
+    - mechanism_id: 83
+      title: Guardian Samsung/Google Glasses Coverage Silence (parallel pattern)
+    - mechanism_id: 6
+      title: Madhumita Murgia Cross-Entity (AI Editor dual-lens)
+    sources:
+    - url: https://pressgazette.co.uk/media_business/google-news-licensing-deals-2026/
+      description: Press Gazette (Aug 3, 2026) — Google News AI deal details
+    - url: https://www.ft.com/content/33328743-ba0d-4a5e-9e5b-ef5e4be70e7e
+      description: FT-OpenAI content licensing deal announcement (Apr 29, 2024)
+    - url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      description: WSJ (Bobrowsky, Jul 14 2026) — cross-references FT prior Meta glasses reporting
+    - url: https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+      description: Samsung Galaxy Unpacked (Jul 22, 2026) — Galaxy Glasses announcement
+    - url: https://www.trustedreviews.com/news/samsungs-android-xr-glasses-last-longer-than-metas-alternative
+      description: Trusted Reviews — Samsung glasses Snapdragon AR1 Gen 1 + 9hr battery + privacy toggle
+    test_file: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
   publisher_ai_deal_revolt_dual_channel_decoupling:
     mechanism_id: 88
     mechanism_name: Publisher AI Deal Revolt — Dual-Channel Financial Leverage Decoupling
@@ -7949,136 +7979,134 @@ cross_publication_findings:
     rotation_type: C
     discovery_date: '2026-08-13'
     date_added: '2026-08-13'
-    finding_summary: |
-      As of July 22, 2026 (WSJ), at least 6 major publishers/platforms are publicly considering
-      limiting or ending Google's access to their content for AI training: Reddit ($60M/yr deal),
-      USA Today Co. (CEO Mike Reed: "It's time to take a stand and say enough is enough"),
-      Reuters (President Paul Bascobert: "We are certainly looking at the economic trade-offs
-      between search and AI summaries"), Politico (Axel Springer), The Economist, and People Inc.
-      (CEO Neil Vogel: "Turning them off and blocking them entirely is 100% on the table").
+    finding_summary: "As of July 22, 2026 (WSJ), at least 6 major publishers/platforms are publicly considering\nlimiting\
+      \ or ending Google's access to their content for AI training: Reddit ($60M/yr deal),\nUSA Today Co. (CEO Mike Reed:\
+      \ \"It's time to take a stand and say enough is enough\"),\nReuters (President Paul Bascobert: \"We are certainly looking\
+      \ at the economic trade-offs\nbetween search and AI summaries\"), Politico (Axel Springer), The Economist, and People\
+      \ Inc.\n(CEO Neil Vogel: \"Turning them off and blocking them entirely is 100% on the table\").\n\nKEY INSIGHT — Dual-Channel\
+      \ Financial Leverage Decoupling: Google's financial leverage over\npublishers operates through TWO INDEPENDENT channels:\n\
+      \  Channel 1 (DEAL): Google News AI pilot ($1B+ globally, 200+ pubs), Showcase ($25K-$250K/yr),\n    Reddit ($60M/yr).\
+      \ Money flows: Google → Publisher. Publisher CAN exit.\n  Channel 2 (AD): Google Network revenue $7.44B/quarter (Q2\
+      \ 2026), publisher share ~8.9%\n    (down from 10.3% Q2 2025). Google programmatic = 60-90% of most publishers' display\
+      \ ad\n    revenue. Money flows: Advertisers → Google → Publisher. Publisher CANNOT exit — no viable\n    alternative\
+      \ at scale.\n\nThe revolt targets Channel 1 ONLY. Even if ALL publishers exit Google AI deals, Channel 2's\nadvertising\
+      \ dependency still provides financial incentive for softer coverage. For wearables:\nSamsung glasses coverage silence\
+      \ is predicted to persist because Channel 2 (ad dependency)\ndrives it, not Channel 1 (deal payments).\n\nTraffic evidence\
+      \ (Semrush Jun 2025 → Jun 2026): USA Today -50%, Business Insider >85%,\nCNN -31% (WSJ), Politico -23%.\n"
+    distinction_from_82: 'Mechanism #82 documents the BROAD publisher revenue collapse spiral (traffic decline →
 
-      KEY INSIGHT — Dual-Channel Financial Leverage Decoupling: Google's financial leverage over
-      publishers operates through TWO INDEPENDENT channels:
-        Channel 1 (DEAL): Google News AI pilot ($1B+ globally, 200+ pubs), Showcase ($25K-$250K/yr),
-          Reddit ($60M/yr). Money flows: Google → Publisher. Publisher CAN exit.
-        Channel 2 (AD): Google Network revenue $7.44B/quarter (Q2 2026), publisher share ~8.9%
-          (down from 10.3% Q2 2025). Google programmatic = 60-90% of most publishers' display ad
-          revenue. Money flows: Advertisers → Google → Publisher. Publisher CANNOT exit — no viable
-          alternative at scale.
-
-      The revolt targets Channel 1 ONLY. Even if ALL publishers exit Google AI deals, Channel 2's
-      advertising dependency still provides financial incentive for softer coverage. For wearables:
-      Samsung glasses coverage silence is predicted to persist because Channel 2 (ad dependency)
-      drives it, not Channel 1 (deal payments).
-
-      Traffic evidence (Semrush Jun 2025 → Jun 2026): USA Today -50%, Business Insider >85%,
-      CNN -31% (WSJ), Politico -23%.
-    distinction_from_82: |
-      Mechanism #82 documents the BROAD publisher revenue collapse spiral (traffic decline →
       AI deal dependency → coverage softening → more extraction). Mechanism #88 documents
+
       specific publisher COLLECTIVE ACTION responses (named companies, CEO quotes, datable
+
       decisions from July 2026) — the revolt is the AGENCY response to the spiral. Different
+
       scope: industry-wide trend (#82) vs. named publisher decisions (#88).
-    distinction_from_86: |
-      Mechanism #86 documents Google's PRODUCT DECISIONS that erode publisher revenue (Display
+
+      '
+    distinction_from_86: 'Mechanism #86 documents Google''s PRODUCT DECISIONS that erode publisher revenue (Display
+
       Ads deprecation, Demand Gen defaults, Performance Planner removal). Mechanism #88
-      documents PUBLISHER DECISIONS in response to Google's actions — the companies choosing
-      to exit or restrict Google's AI content access. Different actor: Google product team (#86)
+
+      documents PUBLISHER DECISIONS in response to Google''s actions — the companies choosing
+
+      to exit or restrict Google''s AI content access. Different actor: Google product team (#86)
+
       vs. publisher executives (#88).
-    distinction_from_73: |
-      Mechanism #73 documents REGULATORY intervention (CMA opt-out remedy with no-sue clauses
+
+      '
+    distinction_from_73: 'Mechanism #73 documents REGULATORY intervention (CMA opt-out remedy with no-sue clauses
+
       neutralizing publisher exit power). Mechanism #88 documents MARKET-DRIVEN exit decisions
+
       by publishers acting independently of regulatory frameworks. Different causal mechanism:
+
       regulatory (#73) vs. market dynamics (#88).
+
+      '
     confounding_factors:
-      - rating: STRONG
-        factor: 'Publishers may be posturing for better deal terms, not genuinely planning to exit.'
-        counter: "USA Today CEO's 'enough is enough' and existing lawsuit suggest genuine threat."
-      - rating: STRONG
-        factor: 'Google search traffic collapse may be temporary/seasonal.'
-        counter: 'Decline is structural (AI Overviews), not seasonal (multi-quarter trend).'
-      - rating: MODERATE
-        factor: 'Publishers exiting deals could INCREASE adversarial coverage of Google regardless of ad dependency.'
-        counter: 'Ad channel creates countervailing incentive; partial shift, not full reversal.'
-      - rating: MODERATE
-        factor: 'CMA opt-out remedy may give publishers exit ramp without losing search visibility.'
-        counter: 'UK-only, no timeline for global rollout; existing deals include no-sue clauses (#73).'
-      - rating: WEAK
-        factor: 'New intermediaries (Snowflake Cortex) could provide alternative revenue.'
-        counter: 'RAG revenue is small (~six-figure deals) compared to Google ad revenue.'
-      - rating: WEAK
-        factor: 'Publishers may find other AI deal partners (OpenAI, Amazon) to replace Google.'
-        counter: "Replacing Google deal doesn't address Google AD dependency."
+    - rating: STRONG
+      factor: Publishers may be posturing for better deal terms, not genuinely planning to exit.
+      counter: USA Today CEO's 'enough is enough' and existing lawsuit suggest genuine threat.
+    - rating: STRONG
+      factor: Google search traffic collapse may be temporary/seasonal.
+      counter: Decline is structural (AI Overviews), not seasonal (multi-quarter trend).
+    - rating: MODERATE
+      factor: Publishers exiting deals could INCREASE adversarial coverage of Google regardless of ad dependency.
+      counter: Ad channel creates countervailing incentive; partial shift, not full reversal.
+    - rating: MODERATE
+      factor: CMA opt-out remedy may give publishers exit ramp without losing search visibility.
+      counter: UK-only, no timeline for global rollout; existing deals include no-sue clauses (#73).
+    - rating: WEAK
+      factor: New intermediaries (Snowflake Cortex) could provide alternative revenue.
+      counter: RAG revenue is small (~six-figure deals) compared to Google ad revenue.
+    - rating: WEAK
+      factor: Publishers may find other AI deal partners (OpenAI, Amazon) to replace Google.
+      counter: Replacing Google deal doesn't address Google AD dependency.
     testable_predictions:
-      - 'P88.1: Publishers that exit Google AI deals will NOT produce significantly more adversarial
-        Samsung/Google glasses coverage — because Channel 2 (ad dependency) remains.'
-      - 'P88.2: Of the 6 revolt publishers, the ones with lowest Google ad dependency (Reuters B2B
-        model, The Economist paywall model) will take the most aggressive action.'
-      - 'P88.3: Google will increase AI deal payments (from "single figure millions" to double
-        digits) to retain key publishers — increasing Channel 1 leverage rather than losing it.'
-      - 'P88.4: No MediaScope-profiled publication will produce adversarial coverage of the
-        publisher revolt itself (i.e., calling it harmful to journalism by reducing Google AI
-        quality) — because adversarial Google-revolt coverage would be self-defeating.'
+    - 'P88.1: Publishers that exit Google AI deals will NOT produce significantly more adversarial Samsung/Google glasses
+      coverage — because Channel 2 (ad dependency) remains.'
+    - 'P88.2: Of the 6 revolt publishers, the ones with lowest Google ad dependency (Reuters B2B model, The Economist paywall
+      model) will take the most aggressive action.'
+    - 'P88.3: Google will increase AI deal payments (from "single figure millions" to double digits) to retain key publishers
+      — increasing Channel 1 leverage rather than losing it.'
+    - 'P88.4: No MediaScope-profiled publication will produce adversarial coverage of the publisher revolt itself (i.e., calling
+      it harmful to journalism by reducing Google AI quality) — because adversarial Google-revolt coverage would be self-defeating.'
     cross_references:
-      - mechanism_id: 82
-        name: Publisher revenue collapse dependency spiral
-        connection: The broad spiral (#82) is the context; the revolt (#88) is the publisher agency response
-      - mechanism_id: 86
-        name: Google Display Ads Deprecation — Publisher Revenue Floor Erosion
-        connection: Google product decisions (#86) accelerate the conditions driving the revolt (#88)
-      - mechanism_id: 73
-        name: CMA No-Sue Regulatory Neutralization
-        connection: Regulatory opt-out attempt (#73) was neutralized; publisher revolt (#88) is market-driven alternative
-      - mechanism_id: 76
-        name: Samsung-Google Compound Advertiser Leverage
-        connection: Samsung's $9.7B ad spend flows through the same Google ad platform (Channel 2) that constrains revolt publishers
-      - mechanism_id: 47
-        name: Google Ad Dependency Paradox
-        connection: Channel 2 structural dependency (#47) explains why Channel 1 revolt (#88) is insufficient
+    - mechanism_id: 82
+      name: Publisher revenue collapse dependency spiral
+      connection: The broad spiral (#82) is the context; the revolt (#88) is the publisher agency response
+    - mechanism_id: 86
+      name: Google Display Ads Deprecation — Publisher Revenue Floor Erosion
+      connection: Google product decisions (#86) accelerate the conditions driving the revolt (#88)
+    - mechanism_id: 73
+      name: CMA No-Sue Regulatory Neutralization
+      connection: Regulatory opt-out attempt (#73) was neutralized; publisher revolt (#88) is market-driven alternative
+    - mechanism_id: 76
+      name: Samsung-Google Compound Advertiser Leverage
+      connection: Samsung's $9.7B ad spend flows through the same Google ad platform (Channel 2) that constrains revolt publishers
+    - mechanism_id: 47
+      name: Google Ad Dependency Paradox
+      connection: Channel 2 structural dependency (#47) explains why Channel 1 revolt (#88) is insufficient
     publication: cross_publication
     source_urls:
-      - https://www.wsj.com/business/media/google-search-publishers-ai-content-0fb06e41
-      - https://www.emarketer.com/content/reddit-reportedly-weighs-ending-google-content-licensing-deal-publisher-traffic-concerns-mount
-      - https://www.techrepublic.com/article/news-reddit-google-ai-partnership-ai-search-publishers-2026/
-      - https://nypost.com/2026/07/22/business/reddit-news-outlets-weigh-cutting-google-off-as-ai-summaries-kill-traffic-report/
-      - https://gizmodo.com/major-publishers-are-reportedly-considering-a-drastic-step-to-get-their-content-out-of-googles-ai-answers-2000788873
-      - https://www.fool.com/investing/2026/07/28/reddit-considers-a-bold-move-cutting-off-googles-a/
-      - https://www.barrons.com/articles/reddit-stock-ai-google-754caed8
+    - https://www.wsj.com/business/media/google-search-publishers-ai-content-0fb06e41
+    - https://www.emarketer.com/content/reddit-reportedly-weighs-ending-google-content-licensing-deal-publisher-traffic-concerns-mount
+    - https://www.techrepublic.com/article/news-reddit-google-ai-partnership-ai-search-publishers-2026/
+    - https://nypost.com/2026/07/22/business/reddit-news-outlets-weigh-cutting-google-off-as-ai-summaries-kill-traffic-report/
+    - https://gizmodo.com/major-publishers-are-reportedly-considering-a-drastic-step-to-get-their-content-out-of-googles-ai-answers-2000788873
+    - https://www.fool.com/investing/2026/07/28/reddit-considers-a-bold-move-cutting-off-googles-a/
+    - https://www.barrons.com/articles/reddit-stock-ai-google-754caed8
     test_count: 60
     test_file: tests/test_publisher_ai_deal_revolt_dual_channel_decoupling_aug13.py
-
   ashworth_category_headline_meta_substance:
     mechanism_id: 89
-    title: "WIRED Category-Universal Privacy Headline with Entity-Specific Substance"
+    title: WIRED Category-Universal Privacy Headline with Entity-Specific Substance
     journalist: Boone Ashworth
     publication: WIRED (Condé Nast)
     key_finding: Category-universal headline masks entity-specific Meta criticism
     mechanism: category_headline_entity_substance_gap
-    article_headline: "Is It Possible to Make Smart Glasses That Aren't Creepy?"
-    article_date: "2026-08-02"
-    samsung_unpacked_date: "2026-07-22"
+    article_headline: Is It Possible to Make Smart Glasses That Aren't Creepy?
+    article_date: '2026-08-02'
+    samsung_unpacked_date: '2026-07-22'
     days_after_samsung_unpacked: 11
-    finding_summary: >
-      WIRED's "Is It Possible to Make Smart Glasses That Aren't Creepy?" (Boone Ashworth,
-      Aug 2, 2026) uses a category-universal headline — implying the entire smart glasses
-      industry — but delivers substance that is overwhelmingly Meta-specific. Meta receives
-      3+ substantive paragraphs covering camera capabilities, LED bypass workarounds, the
-      NameTag facial recognition code (with WIRED self-citing its own June 4 investigation),
-      and anti-tamper updates. Samsung Galaxy Glasses — announced with hands-on demos at
-      Galaxy Unpacked just 11 days prior (Jul 22, 2026) using IDENTICAL privacy-relevant
-      hardware (same Snapdragon AR1 Gen 1 chip, 12MP camera, LED anti-tamper, wear detection)
-      — receive a single dismissive sentence framing them as future entrants ("enter the
-      space later this year"). Apple is framed sympathetically for "reportedly delayed
-      production to address the privacy issues." Small companies (Even Realities, Solos,
-      Vuzix) are positioned as privacy-first alternatives in the "anti-Meta crowd."
+    finding_summary: 'WIRED''s "Is It Possible to Make Smart Glasses That Aren''t Creepy?" (Boone Ashworth, Aug 2, 2026) uses
+      a category-universal headline — implying the entire smart glasses industry — but delivers substance that is overwhelmingly
+      Meta-specific. Meta receives 3+ substantive paragraphs covering camera capabilities, LED bypass workarounds, the NameTag
+      facial recognition code (with WIRED self-citing its own June 4 investigation), and anti-tamper updates. Samsung Galaxy
+      Glasses — announced with hands-on demos at Galaxy Unpacked just 11 days prior (Jul 22, 2026) using IDENTICAL privacy-relevant
+      hardware (same Snapdragon AR1 Gen 1 chip, 12MP camera, LED anti-tamper, wear detection) — receive a single dismissive
+      sentence framing them as future entrants ("enter the space later this year"). Apple is framed sympathetically for "reportedly
+      delayed production to address the privacy issues." Small companies (Even Realities, Solos, Vuzix) are positioned as
+      privacy-first alternatives in the "anti-Meta crowd."
 
-      The headline-substance gap creates a rhetorical synecdoche where Meta IS the smart
-      glasses category in WIRED's framing, and competitors exist only as footnotes or
-      sympathetic counterpoints. A category-level privacy question published AFTER Samsung's
-      identical hardware was publicly announced, with detailed specs and hands-on demos,
-      should logically compare both companies' privacy approaches. Instead, Samsung's
-      existence is treated as hypothetical while Meta's is treated as the industry's
-      defining privacy problem.
+      The headline-substance gap creates a rhetorical synecdoche where Meta IS the smart glasses category in WIRED''s framing,
+      and competitors exist only as footnotes or sympathetic counterpoints. A category-level privacy question published AFTER
+      Samsung''s identical hardware was publicly announced, with detailed specs and hands-on demos, should logically compare
+      both companies'' privacy approaches. Instead, Samsung''s existence is treated as hypothetical while Meta''s is treated
+      as the industry''s defining privacy problem.
+
+      '
     entity_mention_analysis:
       meta_substantive_paragraphs: 4
       samsung_substantive_paragraphs: 0
@@ -8089,10 +8117,11 @@ cross_publication_findings:
       samsung_approximate_word_count: 12
       google_approximate_word_count: 8
       apple_approximate_word_count: 20
-    samsung_framing: "enter the space later this year"
-    apple_framing: "reportedly delayed production to address the privacy issues"
+    samsung_framing: enter the space later this year
+    apple_framing: reportedly delayed production to address the privacy issues
     self_citation_present: true
-    self_citation_detail: "Article states 'a WIRED report exposed this feature' referring to WIRED's June 4, 2026 NameTag facial recognition investigation"
+    self_citation_detail: Article states 'a WIRED report exposed this feature' referring to WIRED's June 4, 2026 NameTag facial
+      recognition investigation
     samsung_specs_public_before_article:
       snapdragon_ar1_gen1: true
       12mp_camera: true
@@ -8102,8 +8131,8 @@ cross_publication_findings:
     hardware_parity:
       meta_camera_mp: 12
       samsung_camera_mp: 12
-      meta_chip: "Snapdragon AR1 Gen 1"
-      samsung_chip: "Snapdragon AR1 Gen 1"
+      meta_chip: Snapdragon AR1 Gen 1
+      samsung_chip: Snapdragon AR1 Gen 1
       meta_led_indicator: true
       samsung_led_indicator: true
       meta_anti_tamper: true
@@ -8113,53 +8142,138 @@ cross_publication_findings:
       samsung: 0.0
       google: 0.0
       apple: 0.15
-      small_companies: 0.30
+      small_companies: 0.3
     source_urls:
-      - description: "WIRED article 'Is It Possible to Make Smart Glasses That Aren't Creepy?' (Aug 2, 2026)"
-        url: "https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/"
-      - description: "Mirror reproduction of WIRED article (full text)"
-        url: "https://gokawiil.com/article/325902"
-      - description: "Samsung Newsroom interview on Galaxy Unpacked intelligent eyewear engineering (Jul 2026)"
-        url: "https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear"
-      - description: "Samsung Newsroom interview on intelligent eyewear privacy and AI (Jul 2026)"
-        url: "https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface"
-      - description: "PlayTechDeep VR smart glasses brief citing WIRED article (Aug 2, 2026)"
-        url: "https://playtechdeep.blog/2026/08/02/smart-glasses-brief-for-august-02-2026-meta-snap-and-the-stories-worth-watching/"
+    - description: WIRED article 'Is It Possible to Make Smart Glasses That Aren't Creepy?' (Aug 2, 2026)
+      url: https://www.wired.com/story/is-it-possible-to-make-privacy-friendly-smart-glasses/
+    - description: Mirror reproduction of WIRED article (full text)
+      url: https://gokawiil.com/article/325902
+    - description: Samsung Newsroom interview on Galaxy Unpacked intelligent eyewear engineering (Jul 2026)
+      url: https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+    - description: Samsung Newsroom interview on intelligent eyewear privacy and AI (Jul 2026)
+      url: https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+    - description: PlayTechDeep VR smart glasses brief citing WIRED article (Aug 2, 2026)
+      url: https://playtechdeep.blog/2026/08/02/smart-glasses-brief-for-august-02-2026-meta-snap-and-the-stories-worth-watching/
     confounding_factors:
-      - strength: STRONG
-        factor: "Meta has 69% market share (IDC Q1 2026) and 7M+ deployed units — legitimate editorial focus on the dominant player in an industry privacy piece"
-      - strength: STRONG
-        factor: "Samsung glasses hadn't shipped yet at article publication — fewer real-world privacy incidents to report compared to Meta's years of deployed hardware"
-      - strength: MODERATE
-        factor: "WIRED's own NameTag investigation gives them unique source material that naturally centers Meta — self-citation is editorially rational"
-      - strength: MODERATE
-        factor: "Article is relatively short (~450 visible words) — space constraints limit competitor coverage depth"
-      - strength: WEAK
-        factor: "Samsung's detailed privacy specs (LED, anti-tamper, wear detection) emerged gradually after Unpacked — some details may not have been fully public on Aug 2"
-      - strength: WEAK
-        factor: "Ashworth may genuinely believe the privacy question is driven by Meta's scale and installed base, not by hardware capabilities"
+    - strength: STRONG
+      factor: Meta has 69% market share (IDC Q1 2026) and 7M+ deployed units — legitimate editorial focus on the dominant
+        player in an industry privacy piece
+    - strength: STRONG
+      factor: Samsung glasses hadn't shipped yet at article publication — fewer real-world privacy incidents to report compared
+        to Meta's years of deployed hardware
+    - strength: MODERATE
+      factor: WIRED's own NameTag investigation gives them unique source material that naturally centers Meta — self-citation
+        is editorially rational
+    - strength: MODERATE
+      factor: Article is relatively short (~450 visible words) — space constraints limit competitor coverage depth
+    - strength: WEAK
+      factor: Samsung's detailed privacy specs (LED, anti-tamper, wear detection) emerged gradually after Unpacked — some
+        details may not have been fully public on Aug 2
+    - strength: WEAK
+      factor: Ashworth may genuinely believe the privacy question is driven by Meta's scale and installed base, not by hardware
+        capabilities
     testable_predictions:
-      - "When Samsung glasses ship (Fall 2026), WIRED will NOT publish a 'Samsung glasses privacy investigation' comparable in depth to the Meta NameTag exposé"
-      - "If Samsung's Gemini data retention practices are exposed as problematic, WIRED will frame it as a 'Google AI problem' rather than a 'Samsung glasses problem'"
-      - "WIRED will NOT self-reference this Aug 2 article when covering Samsung glasses privacy, unlike how they repeatedly self-reference the NameTag investigation"
-      - "Future WIRED 'industry' or 'category' privacy articles about smart glasses will continue using Meta as the primary/sole substantive example"
+    - When Samsung glasses ship (Fall 2026), WIRED will NOT publish a 'Samsung glasses privacy investigation' comparable in
+      depth to the Meta NameTag exposé
+    - If Samsung's Gemini data retention practices are exposed as problematic, WIRED will frame it as a 'Google AI problem'
+      rather than a 'Samsung glasses problem'
+    - WIRED will NOT self-reference this Aug 2 article when covering Samsung glasses privacy, unlike how they repeatedly self-reference
+      the NameTag investigation
+    - Future WIRED 'industry' or 'category' privacy articles about smart glasses will continue using Meta as the primary/sole
+      substantive example
     cross_references:
-      - mechanism_id: 70
-        title: "Ashworth Accessibility Framing Inversion"
-      - mechanism_id: 45
-        title: "Ashworth WWDC PCC Privacy Framing Asymmetry"
-      - mechanism_id: 30
-        title: "Chokkattu Temporal Framing Oscillation"
-      - mechanism_id: 84
-        title: "WIRED OpenAI Hardware FR Investigation Gap"
-      - mechanism_id: 80
-        title: "Gizmodo 4-Entity Clean Control"
-      - mechanism_id: 81
-        title: "Multi-Journalist Samsung Unpacked Beat Assignment"
-    date_added: "2026-08-13"
-    test_file: "tests/test_wired_ashworth_category_headline_meta_substance_aug13.py"
-    type: "Type A: Competitor Coverage Deep Dive"
+    - mechanism_id: 70
+      title: Ashworth Accessibility Framing Inversion
+    - mechanism_id: 45
+      title: Ashworth WWDC PCC Privacy Framing Asymmetry
+    - mechanism_id: 30
+      title: Chokkattu Temporal Framing Oscillation
+    - mechanism_id: 84
+      title: WIRED OpenAI Hardware FR Investigation Gap
+    - mechanism_id: 80
+      title: Gizmodo 4-Entity Clean Control
+    - mechanism_id: 81
+      title: Multi-Journalist Samsung Unpacked Beat Assignment
+    date_added: '2026-08-13'
+    test_file: tests/test_wired_ashworth_category_headline_meta_substance_aug13.py
+    type: 'Type A: Competitor Coverage Deep Dive'
+  song_health_data_investigation_asymmetry:
+    mechanism_id: 90
+    title: Victoria Song Health Data Privacy Investigation Asymmetry
+    type: B
+    journalist: Victoria Song
+    publication: The Verge (Vox Media)
+    key_finding: 'Victoria Song writes standalone privacy investigations about Meta''s smart glasses camera data practices
+      but published ZERO coverage of Samsung Health''s July 2026 AI training data coercion — despite being The Verge''s primary
+      reviewer of Samsung wearable health products (Galaxy Watch, Galaxy Ring, Galaxy Watch Ultra).
 
+      '
+    mechanism: health_data_investigation_asymmetry
+    meta_privacy_pieces_count: 3
+    samsung_health_coverage_count: 0
+    samsung_health_event_date: '2026-07-13'
+    samsung_health_data_categories:
+    - menstrual cycle tracking
+    - medication records
+    - health records (diagnoses, test results)
+    - sleep data
+    - body measurements
+    - biometric data (HRV, SpO2, skin temp)
+    publications_that_covered:
+    - Digital Trends
+    - Android Authority
+    - 9to5Google
+    - GSMArena
+    - SamMobile
+    - How-To Geek
+    multi_publication_silence:
+      verge_coverage_count: 0
+      wired_coverage_count: 0
+      nyt_coverage_count: 0
+    financial_context:
+      samsung_global_ad_spend_billions: 9.7
+      vox_media_google_ad_dependency: true
+      meta_verge_deals_count: 0
+    confounding_factors:
+    - factor: Samsung clarified policy quickly; no persistent user data loss confirmed
+      strength: STRONG
+      level: STRONG
+    - level: MODERATE
+      factor: Samsung clarified within 48 hours that only AI-specific data deleted
+      strength: MODERATE
+    - level: WEAK
+      factor: Story broke on a weekend (Jul 13 is Sunday)
+      strength: WEAK
+    - level: WEAK
+      factor: Song may have been on vacation/assignment week of Jul 13
+      strength: WEAK
+    - level: WEAK
+      factor: Verge may classify Samsung Health as phone story, not wearables
+      strength: WEAK
+    cross_references:
+    - 75
+    - 76
+    - 81
+    source_urls:
+    - https://www.digitaltrends.com/phones/samsung-health-threatens-to-delete-your-data-if-you-opt-out-of-ai-training/
+    - https://www.androidauthority.com/samsung-health-train-ai-data-3686684/
+    - https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/
+    - https://www.digitaltrends.com/phones/refusing-samsung-health-ai-training-will-not-wipe-your-health-history-after-all/
+    - https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php
+    - https://www.sammobile.com/news/samsung-health-data-deleted-dont-consent-use-ai-training/
+    - https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm
+    test_file: tests/test_victoria_song_health_data_investigation_asymmetry_aug13.py
+    date_added: '2026-08-13'
+    finding_summary: 'Victoria Song writes standalone privacy investigations about Meta''s smart glasses camera data practices
+      but published ZERO coverage of Samsung Health''s July 2026 AI training data coercion — despite being The Verge''s primary
+      reviewer of Samsung wearable health products (Galaxy Watch, Galaxy Ring, Galaxy Watch Ultra).
+
+      '
+    testable_predictions:
+    - Song will continue reviewing Samsung wearables without referencing the health data coercion incident
+    - Future Samsung health data privacy incidents will receive less coverage from The Verge than equivalent Meta incidents
+    - Independent outlets (Android Authority, Digital Trends) will continue covering Samsung privacy issues that The Verge
+      skips
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -11646,63 +11760,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  song_health_data_investigation_asymmetry:
-    mechanism_id: 90
-    title: "Victoria Song Health Data Privacy Investigation Asymmetry"
-    type: B
-    journalist: "Victoria Song"
-    publication: "The Verge (Vox Media)"
-    key_finding: >
-      Victoria Song writes standalone privacy investigations about Meta's smart glasses
-      camera data practices but published ZERO coverage of Samsung Health's July 2026
-      AI training data coercion — despite being The Verge's primary reviewer of Samsung
-      wearable health products (Galaxy Watch, Galaxy Ring, Galaxy Watch Ultra).
-    mechanism: health_data_investigation_asymmetry
-    meta_privacy_pieces_count: 3
-    samsung_health_coverage_count: 0
-    samsung_health_event_date: "2026-07-13"
-    samsung_health_data_categories:
-      - "menstrual cycle tracking"
-      - "medication records"
-      - "health records (diagnoses, test results)"
-      - "sleep data"
-      - "body measurements"
-      - "biometric data (HRV, SpO2, skin temp)"
-    publications_that_covered:
-      - "Digital Trends"
-      - "Android Authority"
-      - "9to5Google"
-      - "GSMArena"
-      - "SamMobile"
-      - "How-To Geek"
-    multi_publication_silence:
-      verge_coverage_count: 0
-      wired_coverage_count: 0
-      nyt_coverage_count: 0
-    financial_context:
-      samsung_global_ad_spend_billions: 9.7
-      vox_media_google_ad_dependency: true
-      meta_verge_deals_count: 0
-    confounding_factors:
-      - level: MODERATE
-        factor: "Samsung clarified within 48 hours that only AI-specific data deleted"
-      - level: WEAK
-        factor: "Story broke on a weekend (Jul 13 is Sunday)"
-      - level: WEAK
-        factor: "Song may have been on vacation/assignment week of Jul 13"
-      - level: WEAK
-        factor: "Verge may classify Samsung Health as phone story, not wearables"
-    cross_references:
-      - 75
-      - 76
-      - 81
-    source_urls:
-      - "https://www.digitaltrends.com/phones/samsung-health-threatens-to-delete-your-data-if-you-opt-out-of-ai-training/"
-      - "https://www.androidauthority.com/samsung-health-train-ai-data-3686684/"
-      - "https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/"
-      - "https://www.digitaltrends.com/phones/refusing-samsung-health-ai-training-will-not-wipe-your-health-history-after-all/"
-      - "https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php"
-      - "https://www.sammobile.com/news/samsung-health-data-deleted-dont-consent-use-ai-training/"
-      - "https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm"
-    test_file: tests/test_victoria_song_health_data_investigation_asymmetry_aug13.py
 research_period: 2024-08-01 to 2026-08-13

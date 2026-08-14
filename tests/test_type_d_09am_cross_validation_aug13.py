@@ -242,10 +242,10 @@ class TestMechanismContiguity:
             f"Missing mechanism IDs in contiguous range 17-82: {sorted(gaps)}"
         )
 
-    def test_no_ids_above_82(self, all_mechanisms):
-        above = {mid for mid in all_mechanisms if mid > 82}
+    def test_no_ids_above_91(self, all_mechanisms):
+        above = {mid for mid in all_mechanisms if mid > 91}
         assert not above, (
-            f"Mechanism IDs above 82 found (unexpected): {sorted(above)}"
+            f"Mechanism IDs above 91 found (unexpected): {sorted(above)}"
         )
 
 
