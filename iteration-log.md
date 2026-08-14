@@ -4,6 +4,31 @@
 
 **Finding:** James Pero constructs DIFFERENT TEMPORAL NARRATIVES for Google vs Meta when covering identical smart glasses hardware (Snapdragon AR1 Gen 1, 12MP camera, LED). Google gets a REDEMPTION ARC (failure → learning → growth, aggregate tone 0.0, zero surveillance vocabulary). Meta gets a RECIDIVISM LOOP (failure → escalation, aggregate tone -0.45, "privacy concerns pile up," "the anti-Meta plan," "thanks to Meta"). The temporal coding inverts: Google's Glass-era FAILURE is framed as LEARNING; Meta's market SUCCESS is framed as ESCALATING THREAT. Isolates CULTURAL CODING as a mechanism at a zero-financial-ties publication (Gizmodo/Keleops AG).
 
+**Articles analyzed (7, all by James Pero at Gizmodo):**
+
+Google redemption arc (3):
+1. "Google's Next Smart Glasses May Have Actually Learned Something From the Glasshole Days" (Jan 14, 2026) — https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
+2. "Google Seems Pretty Scared of the Words 'Smart Glasses'" (May 19, 2026) — https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
+3. "Google's Project Astra May Revolutionize Smart Glasses—but Not Today" (May 20, 2025) — https://gizmodo.com/googles-project-astra-may-revolutionize-smart-glasses-but-not-today-2000604663
+
+Meta recidivism loop (4):
+4. "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (Jul 30, 2026) — https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+5. "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So" (May 21, 2026) — https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+6. "Smart Glasses Companies Are Getting Shamed Into Covering Their Cameras" (Mar 23, 2026) — https://gizmodo.com/smart-glasses-are-getting-shamed-into-covering-their-cameras-2000736843
+7. "Smart Glasses Are Catching on With U.S. Police" (Aug 11, 2026) — https://gizmodo.com/smart-glasses-are-catching-on-with-u-s-police-2000797054
+
+**Confounding factors (6):** 2 STRONG (Google Glass genuine failure narrative, Meta genuine privacy scandals), 2 MODERATE (Meta market dominance vs Google pre-launch, Google branding downplays cameras), 2 WEAK (article timing differences, editor assignment).
+
+**Testable predictions (4):** Samsung/Google post-launch "growing pains" framing, Gemini misuse → AI/category problem not surveillance, softer post-launch vocabulary, year-end credit asymmetry.
+
+**New test file:** `tests/test_james_pero_google_redemption_temporal_narrative_aug14.py` — 12 classes, 59 tests (all passing)
+
+**Updated profiles:** gizmodo.yaml (pero_google_redemption_temporal_narrative in cross_entity_coverage), competitor-coverage-research.yaml (mechanism #99 in cross_publication_findings, removed duplicate from publications), competitor-entities.yaml (pero_temporal_narrative_mechanism_99 under google)
+
+**Regression fix:** Removed duplicate mechanism #99 entry from publications section in competitor-coverage-research.yaml (caused test_competitor_coverage.py failures).
+
+**Stats:** 371 test files | ~12,624 tests | 99 mechanisms | Commits: 2669c55, 184155c
+
 **Sources:** 7 Gizmodo articles (3 Google, 4 Meta) by James Pero (Jan 2025 – Aug 2026)
 
 **Stats:** 371 test files | 12,624 tests | 99 mechanisms | commit 2669c55
