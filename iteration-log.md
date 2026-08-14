@@ -34,7 +34,7 @@
 
 **Updated profiles:** gizmodo.yaml (anthropic_ai_safety_adversarial_coverage section), competitor-coverage-research.yaml (mechanism #98 in cross_publication_findings), competitor-entities.yaml (gizmodo_clean_control_adversarial_coverage under anthropic)
 
-**Stats:** 370 test files | ~11,692 tests | 98 mechanisms | Commit: pending
+**Stats:** 370 test files | ~12,565 tests | 98 mechanisms | Commit: 008ca07
 
 ---
 
