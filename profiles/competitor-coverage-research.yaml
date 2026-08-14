@@ -11646,4 +11646,63 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  song_health_data_investigation_asymmetry:
+    mechanism_id: 90
+    title: "Victoria Song Health Data Privacy Investigation Asymmetry"
+    type: B
+    journalist: "Victoria Song"
+    publication: "The Verge (Vox Media)"
+    key_finding: >
+      Victoria Song writes standalone privacy investigations about Meta's smart glasses
+      camera data practices but published ZERO coverage of Samsung Health's July 2026
+      AI training data coercion — despite being The Verge's primary reviewer of Samsung
+      wearable health products (Galaxy Watch, Galaxy Ring, Galaxy Watch Ultra).
+    mechanism: health_data_investigation_asymmetry
+    meta_privacy_pieces_count: 3
+    samsung_health_coverage_count: 0
+    samsung_health_event_date: "2026-07-13"
+    samsung_health_data_categories:
+      - "menstrual cycle tracking"
+      - "medication records"
+      - "health records (diagnoses, test results)"
+      - "sleep data"
+      - "body measurements"
+      - "biometric data (HRV, SpO2, skin temp)"
+    publications_that_covered:
+      - "Digital Trends"
+      - "Android Authority"
+      - "9to5Google"
+      - "GSMArena"
+      - "SamMobile"
+      - "How-To Geek"
+    multi_publication_silence:
+      verge_coverage_count: 0
+      wired_coverage_count: 0
+      nyt_coverage_count: 0
+    financial_context:
+      samsung_global_ad_spend_billions: 9.7
+      vox_media_google_ad_dependency: true
+      meta_verge_deals_count: 0
+    confounding_factors:
+      - level: MODERATE
+        factor: "Samsung clarified within 48 hours that only AI-specific data deleted"
+      - level: WEAK
+        factor: "Story broke on a weekend (Jul 13 is Sunday)"
+      - level: WEAK
+        factor: "Song may have been on vacation/assignment week of Jul 13"
+      - level: WEAK
+        factor: "Verge may classify Samsung Health as phone story, not wearables"
+    cross_references:
+      - 75
+      - 76
+      - 81
+    source_urls:
+      - "https://www.digitaltrends.com/phones/samsung-health-threatens-to-delete-your-data-if-you-opt-out-of-ai-training/"
+      - "https://www.androidauthority.com/samsung-health-train-ai-data-3686684/"
+      - "https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/"
+      - "https://www.digitaltrends.com/phones/refusing-samsung-health-ai-training-will-not-wipe-your-health-history-after-all/"
+      - "https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php"
+      - "https://www.sammobile.com/news/samsung-health-data-deleted-dont-consent-use-ai-training/"
+      - "https://www.techtimes.com/articles/316904/20260520/samsung-google-reveal-gemini-smart-glasses-fall-2026-launch-ios-support-no-data-policy-disclosed.htm"
+    test_file: tests/test_victoria_song_health_data_investigation_asymmetry_aug13.py
 research_period: 2024-08-01 to 2026-08-13

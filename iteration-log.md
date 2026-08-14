@@ -1,3 +1,31 @@
+## Iteration 92 — Thu 2026-08-13 20:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #90: Victoria Song Health Data Privacy Investigation Asymmetry
+
+**Journalist:** Victoria Song (The Verge)
+
+**Finding:** Song writes standalone privacy investigations about Meta's smart glasses camera data (doxing piece Oct 2024, LED tamper-proof Jul 2026) but published ZERO coverage of Samsung Health's July 2026 AI training data coercion — despite being The Verge's primary Samsung wearable health reviewer (Galaxy Watch, Galaxy Ring, Galaxy Watch Ultra, Optimizer newsletter). Samsung Health forced users to consent to health data AI training (menstrual cycles, medication records, diagnoses) or face data deletion + cloud sync termination. Story covered by 6+ independent outlets (Digital Trends, Android Authority, 9to5Google, GSMArena, SamMobile, How-To Geek). Multi-publication silence: The Verge 0, WIRED 0, NYT 0. Samsung $9.7B global ad spend + Vox Media Google dependency creates dual financial alignment with silence. Extends mechanisms #75 (privacy vocabulary bifurcation), #81 (Samsung Unpacked beat assignment), #76 (Samsung-Google compound leverage).
+
+**New test file:** `tests/test_victoria_song_health_data_investigation_asymmetry_aug13.py` — 9 classes, 33 tests (all passing)
+
+**Stats:** 359 test files | ~12,056 tests | 90 mechanisms | Commit: 640bb3d
+
+---
+
+## Iteration 91 — Thu 2026-08-13 19:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #89: WIRED Category-Universal Privacy Headline with Entity-Specific Substance
+
+**Article:** Boone Ashworth, "Is It Possible to Make Smart Glasses That Aren't Creepy?" (WIRED, Aug 2, 2026)
+
+**Finding:** Category-universal headline masks entity-specific Meta criticism. Meta receives 4 substantive paragraphs; Samsung Galaxy Glasses (announced 11 days earlier at Galaxy Unpacked with identical hardware — same Snapdragon AR1 Gen 1, 12MP camera, LED, anti-tamper) receive one dismissive sentence ("later this year"). Apple framed sympathetically. WIRED self-cites its NameTag investigation.
+
+**New test file:** `tests/test_wired_ashworth_category_headline_meta_substance_aug13.py` — 11 classes, 30 tests (all passing)
+
+**Stats:** 358 test files | ~12,023 tests | 89 mechanisms | Commit: 124ef13
+
+---
+
 ## Iteration 90 — Thu 2026-08-13 17:00 PT (Type D: Test & Verify)
 
 ### Cross-Validation of Mechanisms #84-#88 (Iterations 87-89)

@@ -1278,6 +1278,83 @@ key_journalists:
         individual journalist framing CAN be fair across entities — and that The Verge's
         institutional adversarial tone toward Meta emerges from editorial assignment and
         executive commentary, not from its dedicated wearables reviewer.
+      samsung_health_data_investigation_gap:
+        mechanism_ref: "#90"
+        finding: >
+          Victoria Song published ZERO coverage of Samsung Health's July 2026 AI training
+          data coercion — despite being The Verge's primary reviewer of Samsung wearable
+          health products (Galaxy Watch, Galaxy Ring). Samsung Health forced users to consent
+          to health data use for AI training (including human review) or face data deletion
+          and cloud sync termination. Data categories included menstrual cycles, medication
+          records, diagnoses, sleep, and biometrics. The story was covered by Digital Trends,
+          Android Authority, 9to5Google, GSMArena, SamMobile, and How-To Geek. The Verge
+          published zero articles. This extends Song's privacy vocabulary bifurcation
+          (mechanism #75): she investigates Meta camera data adversarially but does not
+          investigate Samsung health data practices despite reviewing Samsung health products.
+        event:
+          date: "2026-07-13"
+          description: >
+            Samsung Health app update forced users to consent to health data AI training
+            or face deletion of synced health data and cloud sync termination. Samsung
+            clarified 48 hours later that only AI-specific data would be deleted.
+        data_categories:
+          - "menstrual cycle tracking"
+          - "medication records (prescriptions and dosages)"
+          - "full health records (diagnoses, test results)"
+          - "sleep data"
+          - "body measurements"
+          - "biological aging indicators"
+          - "body fat percentage"
+          - "heart rate variability"
+          - "skin temperature"
+          - "blood oxygen levels"
+        coercion_description: >
+          Users who declined or withdrew consent received a warning that Samsung Health
+          would stop syncing data to their Samsung account and DELETE all stored health
+          data unless legally required to retain it. Samsung later clarified that only
+          data collected specifically for AI development would be deleted.
+        song_articles_count: 0
+        verge_total_articles: 0
+        publications_that_covered:
+          - name: "Digital Trends"
+            date: "2026-07-14"
+            url: "https://www.digitaltrends.com/phones/samsung-health-threatens-to-delete-your-data-if-you-opt-out-of-ai-training/"
+          - name: "Android Authority"
+            date: "2026-07-13"
+            url: "https://www.androidauthority.com/samsung-health-train-ai-data-3686684/"
+          - name: "9to5Google"
+            date: "2026-07-15"
+            url: "https://9to5google.com/2026/07/15/samsung-health-ai-training-data-consent/"
+          - name: "GSMArena"
+            url: "https://www.gsmarena.com/samsung_health_data_ai_training_consent-news-73683.php"
+          - name: "SamMobile"
+            url: "https://www.sammobile.com/news/samsung-health-data-deleted-dont-consent-use-ai-training/"
+          - name: "How-To Geek"
+            note: "Original source of the story"
+        privacy_severity_comparison:
+          samsung_aggressiveness: >
+            Samsung's consent-or-delete model is MORE aggressive than Meta's opt-in AI
+            training on glasses photos, which preserves user data regardless of consent.
+          applicable_regulations:
+            - "GDPR Art. 9 (special category health data)"
+            - "HIPAA (health data in US context)"
+            - "CCPA/CPRA (sensitive personal information)"
+          post_dobbs_salience: >
+            Menstrual cycle tracking data has explicit political sensitivity post-Dobbs.
+            Samsung collecting this data for AI training with human review creates
+            reproductive health privacy risks not present in Meta's camera data.
+        song_samsung_health_expertise:
+          products_reviewed:
+            - "Samsung Galaxy Watch 7"
+            - "Samsung Galaxy Watch Ultra"
+            - "Samsung Galaxy Ring"
+            - "Samsung Galaxy Watch 9 (Unpacked Jul 2026)"
+          newsletter: "Optimizer — weekly Verge newsletter covering wearable health tech"
+          note: >
+            Victoria Song is The Verge's primary Samsung wearables health reviewer. She
+            tested Galaxy Watch 7 health metrics, Galaxy Ring sleep/cycle tracking, and
+            Galaxy Watch Ultra fitness features. She is the MOST natural reporter at
+            The Verge to cover Samsung Health data practices.
 
   - name: "Alex Cranz"
     beat: "consumer tech, reviews"
