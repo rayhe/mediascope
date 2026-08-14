@@ -4716,6 +4716,48 @@ cross_entity_coverage_analysis:
       openai_hardware_tone: 0.0
       privacy_investigation_delta: 2  # Meta got 2 adversarial investigations, OpenAI got 0
 
+    apple_openai_lawsuit_coverage_gap:
+      _ref: "Mechanism #96 in competitor-coverage-research.yaml"
+      mechanism_id: 96
+      date_analyzed: '2026-08-14'
+      description: >
+        WIRED produced ZERO standalone wired.com articles on the Apple vs OpenAI trade-secret
+        lawsuit (Jul 10 - Aug 14, 2026), despite this being one of the biggest tech legal stories
+        of 2026: 400+ poached employees, systematic hardware IP theft allegations, supplier fraud
+        claims, Apple preliminary injunction (Aug 4), OpenAI motion to dismiss (Aug 6). Gizmodo
+        (zero financial ties) produced 5+ standalone articles covering the same lawsuit with
+        adversarial framing. During the same period, WIRED published Boone Ashworth's "Is It
+        Possible to Make Smart Glasses That Aren't Creepy?" (Aug 2) targeting Meta. Financial
+        relationship: Condé Nast OpenAI content deal (since Aug 2024) predicts the gap.
+      standalone_wired_articles: 0
+      observation_start: '2026-07-10'
+      observation_end: '2026-08-14'
+      lawsuit_significance: "400+ poached employees, systematic hardware IP theft, supplier fraud, preliminary injunction"
+      paresh_dave_marketplace_appearance:
+        date: '2026-07-17'
+        platform: "Marketplace.org podcast"
+        is_wired_article: false
+        note: >
+          WIRED reporter Paresh Dave discussed the lawsuit on Marketplace.org podcast — this is
+          a Marketplace interview, NOT a WIRED article. Demonstrates reporter awareness of the
+          story without WIRED editorial assignment.
+      concurrent_meta_coverage:
+        article_count: 1
+        examples:
+        - title: "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+          author: "Boone Ashworth"
+          date: '2026-08-02'
+          tone: -0.65
+          note: "Adversarial Meta coverage published during the same window WIRED produced zero OpenAI lawsuit articles"
+      gizmodo_comparison:
+        gizmodo_articles: 5
+        gizmodo_owner: "Keleops AG (zero financial ties)"
+        gizmodo_tone: -0.35
+        coverage_gap_significance: >
+          Same-period natural experiment: publication with OpenAI deal (WIRED) produces 0 articles
+          on OpenAI's legal scandal; publication with zero financial ties (Gizmodo) produces 5.
+          Financial relationship predicts coverage selectivity.
+
     anthropic_coverage:
       standalone_articles: 2
       confirmed_urls:

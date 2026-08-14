@@ -208,6 +208,64 @@ cross_entity_coverage:
       0.10-0.30 is the financial amplification effect.
 
       '
+  openai_hardware_litigation_coverage:
+    mechanism_id: 96
+    finding: Gizmodo Equitable Adversarial OpenAI Hardware Litigation Coverage
+    date_analyzed: '2026-08-14'
+    aggregate_tone: -0.35
+    articles:
+    - title: "OpenAI Might Be Making a Smart Speaker That No One Asked for"
+      date: '2026-02-20'
+      url: https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+      tone: -0.40
+      key_language: "we have run out of ideas, folks, zero points for originality, whatever inane idea"
+    - title: "Apple's Lawsuit Against OpenAI Sparks Another Musk-Altman Online Spat"
+      date: '2026-07-10'
+      url: https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
+      tone: -0.25
+      key_language: "covered lawsuit day-of, quoted Apple allegations in full, sourced court filings"
+    - title: "Apple Is Coming for the People Building OpenAI's Future"
+      date: '2026-07-14'
+      url: https://gizmodo.com/apple-is-coming-for-the-people-building-openais-future-2000787036
+      tone: -0.30
+      key_language: "follow-up with additional detail on poached employees and IP theft claims"
+    - title: "OpenAI Just Launched Its First Hardware Product—and It's a Tiny Keyboard"
+      date: '2026-07-14'
+      url: https://gizmodo.com/openai-just-launched-its-first-hardware-product-and-its-a-tiny-keyboard-for-bossing-around-ai-agents-2000786080
+      tone: -0.30
+      key_language: "embedded lawsuit context in hardware coverage"
+    - title: "OpenAI Is Trying to Shame Apple Into Backing Down From Its Lawsuit"
+      date: '2026-08-04'
+      url: https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
+      tone: -0.45
+      key_language: "trying to shame, analyzed OpenAI blog post rebuttal critically"
+    - title: "OpenAI Says Apple's Real Problem Is Being Bad at AI, Not Stolen Secrets"
+      date: '2026-08-06'
+      url: https://gizmodo.com/openai-says-apples-real-problem-is-being-bad-at-ai-not-stolen-secrets-2000795382
+      tone: -0.35
+      key_language: "covered motion to dismiss with balance, sourced filing"
+    cross_entity_comparison:
+      meta_tone: -0.75
+      openai_tone: -0.35
+      tone_delta: 0.40
+      equitable_finding: >
+        Both Meta and OpenAI receive adversarial framing from Gizmodo (zero financial
+        ties to either company). Meta receives more intense adversarial framing (-0.75
+        vs -0.35) due to legacy Cambridge Analytica/surveillance narrative coding, but
+        both are covered with skepticism and critical editorial framing. This confirms
+        equitable editorial standards at Gizmodo: adversarial coverage is not reserved
+        for one entity. WIRED (OpenAI content deal) shows the opposite pattern — Meta
+        adversarial, OpenAI absent/neutral.
+    wired_comparison:
+      wired_apple_openai_lawsuit_articles: 0
+      gizmodo_apple_openai_lawsuit_articles: 5
+      observation_period: "Jul 10 - Aug 14, 2026"
+      significance: >
+        During the same 35-day period, WIRED published zero standalone articles on the
+        Apple vs OpenAI trade-secret lawsuit while publishing adversarial Meta glasses
+        coverage (Ashworth "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+        Aug 2). Gizmodo covered the lawsuit with 5 standalone articles. Financial
+        relationship (Condé Nast OpenAI content deal) predicts the coverage gap.
   apple:
     tone: enthusiastic
     examples:

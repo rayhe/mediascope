@@ -267,6 +267,27 @@ entities:
       - https://www.macrumors.com/2026/07/10/apple-sues-openai/
       - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
       - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+    litigation_coverage_analysis:
+      mechanism_id: 96
+      date_analyzed: '2026-08-14'
+      finding: >
+        The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment
+        for coverage selectivity. Gizmodo (zero financial ties) produced 6 standalone articles
+        with adversarial framing (~-0.35 tone). WIRED (Condé Nast, OpenAI content deal since
+        Aug 2024) produced zero standalone articles over 35 days. The lawsuit involves 400+
+        poached employees, systematic hardware IP theft allegations, supplier fraud claims,
+        preliminary injunction (Aug 4), and motion to dismiss (Aug 6). This is distinct from
+        the hardware privacy coverage gap (#84) — #96 covers litigation/ethics selectivity.
+      gizmodo_coverage:
+        article_count: 6
+        tone: -0.35
+        date_range: "Feb 20 - Aug 6, 2026"
+      wired_coverage:
+        article_count: 0
+        date_range: "Jul 10 - Aug 14, 2026"
+      source_urls:
+      - https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
+      - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
     rogue_ai_incident:
       date_disclosed: '2026-07-21'
       incident_dates: 2026-07-09 to 2026-07-13

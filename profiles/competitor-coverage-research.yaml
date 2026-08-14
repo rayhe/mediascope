@@ -8926,6 +8926,99 @@ cross_publication_findings:
     - https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000740207
     - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000771803
     - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+  gizmodo_openai_litigation_clean_control_coverage_validation:
+    mechanism_id: 96
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: cross_publication_coverage_selectivity
+    domain: litigation_ethics
+    entities:
+    - openai
+    - meta
+    - apple
+    gizmodo_article_count: 6
+    wired_lawsuit_article_count: 0
+    finding_summary: 'Gizmodo (Keleops AG, zero financial ties to any tech company) produced 6 standalone articles covering
+      OpenAI''s hardware device and the Apple vs OpenAI trade-secret lawsuit (Feb 20 - Aug 6, 2026), applying consistent
+      skepticism and adversarial framing (~-0.35 aggregate tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024)
+      produced zero identifiable standalone wired.com articles covering the Apple vs OpenAI trade-secret lawsuit over 35 days
+      (Jul 10 - Aug 14, 2026), despite this being one of the biggest tech legal stories of 2026 (400+ poached employees,
+      systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction filed Aug 4). During the same
+      period, WIRED published Boone Ashworth''s adversarial Meta glasses piece "Is It Possible to Make Smart Glasses That
+      Aren''t Creepy?" (Aug 2). Extends the Gizmodo clean-control pattern from hardware/privacy (#80) into the litigation/ethics
+      domain. Gizmodo covers BOTH Meta (tone -0.75) AND OpenAI (tone -0.35) adversarially, confirming equitable editorial
+      standards. Financial relationship (Condé Nast-OpenAI deal) predicts coverage selectivity.'
+    key_finding: 'Gizmodo Equitable Adversarial OpenAI Hardware Litigation Coverage — Clean Control Cross-Entity Validation'
+    type: 'Type A: Competitor Coverage Deep Dive'
+    publication: Gizmodo (Keleops AG)
+    test_file: tests/test_gizmodo_openai_litigation_clean_control_coverage_validation_aug14.py
+    other_outlets_covering_lawsuit:
+    - Reuters
+    - Bloomberg
+    - CNN
+    - TechCrunch
+    - The Verge
+    - MacRumors
+    - Ars Technica
+    - 9to5Mac
+    financial_relationships:
+      wired_openai_deal: "Condé Nast content deal with OpenAI since Aug 2024"
+      gizmodo_financial_ties: "none — Keleops AG has zero financial ties to any tech company"
+      gizmodo_owner: "Keleops AG, Zug, Switzerland"
+      coverage_prediction: "Publication with OpenAI deal (WIRED) produces zero articles on OpenAI legal scandal; publication with zero financial ties (Gizmodo) produces 6 articles with adversarial framing. Financial relationship predicts coverage selectivity."
+    related_mechanisms:
+    - 80
+    - 84
+    - 48
+    - 58
+    - 82
+    cross_references:
+    - mechanism_id: 80
+      relationship: '#80 — Gizmodo 4-Entity Clean Control. #96 extends from hardware/privacy vocabulary into litigation/ethics coverage'
+    - mechanism_id: 84
+      relationship: '#84 — WIRED OpenAI Hardware FR Investigation Gap. #96 covers lawsuit coverage gap (not privacy investigation gap)'
+    - mechanism_id: 48
+      relationship: '#48 — WIRED OpenAI Ad Coverage Selection Gap. Same pattern (WIRED silence on OpenAI) in different domain'
+    - mechanism_id: 58
+      relationship: '#58 — Condé Nast Portfolio Dependency. Structural financial incentive driving WIRED coverage gaps'
+    - mechanism_id: 82
+      relationship: '#82 — Publisher Revenue Collapse Dependency Spiral. Broader financial dependency context'
+    confounding_factors:
+    - factor: 'Beat assignment — WIRED may not have assigned a reporter to the Apple-OpenAI lawsuit because their OpenAI/hardware
+        reporters focus on different angles (privacy investigations, product reviews).'
+      strength: STRONG
+    - factor: 'Apple-OpenAI lawsuit timing — The lawsuit landed Jul 10, 2026 during a busy news period with Samsung Unpacked
+        (Jul 22), rogue AI incidents (Jul 21-28), and multiple competing stories. Editorial bandwidth constraints may have
+        deprioritized legal coverage.'
+      strength: STRONG
+    - factor: 'Story prominence — The lawsuit was widely covered by tech press but is a legal/business story, not core WIRED
+        territory (which skews toward product reviews and privacy investigations).'
+      strength: MODERATE
+    - factor: 'Wire service dependency — Many publications run Reuters/AP for lawsuit coverage rather than producing original
+        standalone articles.'
+      strength: MODERATE
+    - factor: 'Paresh Dave podcast appearance — WIRED''s reporter DID discuss the lawsuit publicly on Marketplace.org podcast
+        (Jul 17), demonstrating awareness without a WIRED.com article. This may indicate editorial choice rather than ignorance.'
+      strength: WEAK
+    - factor: 'Apple partnership considerations — WIRED/Condé Nast may also be cautious about Apple coverage (Apple News Plus
+        via Condé Nast provides subscription revenue), creating dual hesitancy about covering Apple vs OpenAI.'
+      strength: WEAK
+    testable_predictions:
+    - 'P96.1: When OpenAI announces its hardware device (expected late 2026/early 2027), WIRED will cover the product but
+      NOT investigate the trade-secret provenance of its design.'
+    - 'P96.2: Gizmodo will produce more adversarial OpenAI hardware coverage volume than WIRED in the 90 days following the
+      device announcement.'
+    - 'P96.3: If the Apple vs OpenAI case produces discovery revelations, publications with OpenAI content deals will lag
+      Gizmodo in coverage speed by 24-72 hours.'
+    - 'P96.4: WIRED''s first OpenAI hardware device review will use neutral/aspirational framing, not the adversarial surveillance
+      vocabulary applied to Meta glasses by Ashworth and Chokkattu.'
+    source_urls:
+    - https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+    - https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
+    - https://gizmodo.com/apple-is-coming-for-the-people-building-openais-future-2000787036
+    - https://gizmodo.com/openai-just-launched-its-first-hardware-product-and-its-a-tiny-keyboard-for-bossing-around-ai-agents-2000786080
+    - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
+    - https://gizmodo.com/openai-says-apples-real-problem-is-being-bad-at-ai-not-stolen-secrets-2000795382
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

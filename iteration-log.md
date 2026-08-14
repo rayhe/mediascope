@@ -35376,7 +35376,7 @@ trajectory continuity — a different dependent variable. #34 asks "Why no Meta 
 
 ---
 
-## Iteration 98 — Aug 14, 2026 04:00 PT
+## Iteration 99 — Fri 2026-08-14 04:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Type A: Competitor Coverage Deep Dive**
 **Mechanism #95: Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition**
@@ -35410,3 +35410,26 @@ asymmetry at the clean control publication.
 5. `docs/ARCHITECTURE.md` — test file listing + stat sync
 
 **Stats:** 367 test files | 12,415 tests | 95 mechanisms
+
+---
+
+## Iteration 99 — Mechanism #96: Gizmodo OpenAI Hardware Litigation Clean Control (Aug 14, 2026 05:00 PT)
+
+**Type A: Competitor Coverage Deep Dive**
+**Hour rotation: A**
+
+**Finding:** Gizmodo (Keleops AG, zero financial ties) produced 6 standalone articles covering OpenAI's hardware device and the Apple vs OpenAI trade-secret lawsuit (Feb 20 - Aug 6, 2026), applying consistent skepticism and adversarial framing (~-0.35 aggregate tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024) produced zero standalone wired.com articles on the same lawsuit over 35 days (Jul 10 - Aug 14), despite this being one of the biggest tech legal stories of 2026 (400+ poached employees, IP theft, supplier fraud, preliminary injunction). During the same period, WIRED published Ashworth's adversarial Meta glasses piece (Aug 2).
+
+Extends Gizmodo clean-control pattern from hardware/privacy (#80) into litigation/ethics domain. Gizmodo covers BOTH Meta (-0.75) AND OpenAI (-0.35) adversarially — equitable editorial standards. Financial relationship (Condé Nast-OpenAI deal) predicts the WIRED coverage gap.
+
+**Updates:**
+1. `tests/test_gizmodo_openai_litigation_clean_control_coverage_validation_aug14.py` — 56 tests, 11 classes
+2. `profiles/gizmodo.yaml` — openai_hardware_litigation_coverage section under cross_entity_coverage
+3. `profiles/wired.yaml` — apple_openai_lawsuit_coverage_gap section
+4. `profiles/competitor-coverage-research.yaml` — mechanism #96 under cross_publication_findings
+5. `profiles/competitor-entities.yaml` — litigation_coverage_analysis under openai entity
+6. `README.md` — test inventory entry + stat sync (12,350 tests, 368 files)
+7. `docs/ARCHITECTURE.md` — test file listing
+
+**Stats:** 368 test files | 12,471 tests | 96 mechanisms
+**Commit:** d79caee
