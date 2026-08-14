@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 12293 tests across 365 test files (all from real articles)
+├── tests/                       # 12346 tests across 366 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -710,6 +710,7 @@ mediascope/
 │   ├── test_qualcomm_comarketing_supply_chain_financial_multiplier_aug13.py # Mechanism #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier. TRIPLE-entity chain: Samsung+Google+Qualcomm. Meta has same chip, zero co-marketing. 9 classes, 36 tests
 │   ├── test_type_d_09pm_cross_validation_aug13.py # Type D cross-validation (Aug 13, 21:00 PT): Mechanisms #89-#91 cross-validation. 13 classes, 43 tests
 │   ├── test_type_d_11pm_cross_validation_aug13.py # Type D cross-validation (Aug 13, 23:00 PT): Mechanisms #89-#91 metadata completeness, ID integrity, Samsung cluster coherence. 13 classes, 37 tests
+│   ├── test_type_d_03am_cross_validation_aug14.py # Type D cross-validation (Aug 14, 03:00 PT): Mechanisms #92-#94 metadata + data integrity fixes. 12 classes, 53 tests
 │   ├── test_wired_aisi_accountability_coverage_trajectory_break_aug14.py # Mechanism #92: WIRED AISI Accountability Report Coverage Trajectory Break. WIRED published 3 rogue AI articles in 3 days then went silent after AISI definitive report (Aug 4, 89% Anthropic). 11 classes, 52 tests
 │   ├── test_samsung_privacy_feature_framing_inversion_aug14.py # Mechanism #93: Samsung Privacy Feature Framing Inversion. Same features, opposite vocabulary: Samsung POSITIVE, Meta NEGATIVE. 8 classes, 32 tests
 │   ├── test_apple_ad_revenue_opacity_coverage_accountability_asymmetry_aug14.py # Mechanism #94: Apple Advertising Revenue Structural Opacity. Apple ad business record Q3 FY2026, zero disclosure. Meta/Google disclose, enabling accountability analysis impossible for Apple. 9 classes, 37 tests

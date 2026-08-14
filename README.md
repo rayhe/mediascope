@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 12,293 | Across 365 test files |
+| Tests | 12,346 | Across 366 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **12293 tests** across 365 test files, each covering a different analytical capability:
+MediaScope has **12346 tests** across 366 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -833,6 +833,7 @@ MediaScope has **12293 tests** across 365 test files, each covering a different 
 | `test_qualcomm_comarketing_supply_chain_financial_multiplier_aug13.py` | 36 | Mechanism #91: Qualcomm Co-Marketing Supply Chain Financial Multiplier. Samsung Galaxy Glasses create a TRIPLE-entity financial incentive chain: Samsung ($9.7B global ad spend), Google (Android XR/Gemini, $239B ad revenue + News Showcase + content deals), and Qualcomm ($25M+ media spend, 50/50 co-marketing with Samsung). Qualcomm CMO Don McGuire confirmed co-branded Samsung TV ads (Galaxy S24 with Snapdragon tag, US), digital/OOH in LatAm. Jul 2026 expanded partnership covers glasses (Snapdragon AR1 Gen 1). "Snapdragon. That's How" campaign (72andSunny) runs in same channels as glass reviews. Samsung spent $9.2B on Qualcomm chips in 2025. Meta uses same AR1 chip but has NO co-marketing with Qualcomm for wearables; EssilorLuxottica has zero tech publication ad presence. Snap/Specs (Snapdragon XR but no Samsung/Google multiplier) serves as isolation control. Extends #76 (compound leverage). 6 confounding factors (2 STRONG). 9 classes, 36 tests |
 | `test_type_d_09pm_cross_validation_aug13.py` | 23 | Type D cross-validation (Aug 13, 21:00 PT): Cross-validates mechanisms #89-#91 (Ashworth category headline, Victoria Song health data asymmetry, Qualcomm co-marketing multiplier). Samsung glasses cluster coherence, confounding factor strength distribution, mechanism ID integrity, finding distinctiveness, source URL presence. 13 classes, 43 tests |
 | `test_type_d_11pm_cross_validation_aug13.py` | 37 | Type D cross-validation (Aug 13, 23:00 PT): Validates mechanisms #89-#91 metadata completeness (date_added, test_file, finding_summary, confounding_factors, testable_predictions). Confounding factor quality (STRONG factors present, multi-level strength). ID contiguity max=91. Cross-reference coherence. Samsung cluster coherence (#76/#89/#90/#91). Source URL presence. Test file importability. Regression guards #84-#88. 13 classes, 37 tests |
+| `test_type_d_03am_cross_validation_aug14.py` | 23 | Type D cross-validation (Aug 14, 03:00 PT): Validates mechanisms #92-#94 metadata completeness, confounding factor quality, source URL presence, ID integrity (max=94), cross-reference coherence (expanded to aggregate_findings + cross_entity_leverage), finding distinctiveness (Jaccard <0.7), Samsung cluster coherence (#93), WIRED investigation cluster coherence (#92), entity targeting, regression guards #89-#91, CE consistency, test file importability. Data integrity fixes: #92 source_urls added, #93 test_file + source_urls added, #92/#93 added to competitor-entities.yaml. 12 classes, 53 tests |
 
 ```bash
 # Run all tests

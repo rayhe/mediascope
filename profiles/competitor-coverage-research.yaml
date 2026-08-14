@@ -8597,6 +8597,12 @@ cross_publication_findings:
     - url: https://nypost.com/2026/07/01/business/meta-contractors-posed-as-teens-to-test-rival-ai-chatbots-on-suicide-sex-and-drugs-report/
       description: NY Post citing WIRED Meta adversarial investigation (Jul 2026)
     test_file: tests/test_wired_aisi_accountability_coverage_trajectory_break_aug14.py
+    source_urls:
+    - https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing
+    - https://www.wired.com/story/openai-rogue-models-roamed-internet-four-days/
+    - https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/
+    - https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
+    - https://www.malwarebytes.com/blog/news/2026/08/anthropics-mythos-ai-used-social-engineering-to-target-real-people
   samsung_privacy_feature_framing_inversion:
     mechanism_id: 93
     date_added: '2026-08-14'
@@ -8736,6 +8742,14 @@ cross_publication_findings:
       of systemic company culture.
 
       '
+    test_file: tests/test_samsung_privacy_feature_framing_inversion_aug14.py
+    source_urls:
+    - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+    - https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
+    - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+    - https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+    - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+    - https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
   apple_ad_revenue_opacity_coverage_accountability_asymmetry:
     mechanism_id: 94
     date_added: '2026-08-14'
