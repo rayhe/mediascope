@@ -202,9 +202,9 @@ class TestIDIntegrity:
                 ids.append(val["mechanism_id"])
         assert len(ids) == len(set(ids)), f"Duplicate top-level CPF IDs: {[x for x in ids if ids.count(x) > 1]}"
 
-    def test_max_id_is_100(self, ccr_data, cpf):
+    def test_max_id_is_103(self, ccr_data, cpf):
         all_ids = collect_all_mechanism_ids(cpf, ccr_data)
-        assert max(all_ids) == 100, f"Max mechanism ID is {max(all_ids)}, expected 100"
+        assert max(all_ids) == 103, f"Max mechanism ID is {max(all_ids)}, expected 103"
 
 
 # ── Cross-Reference Coherence ──

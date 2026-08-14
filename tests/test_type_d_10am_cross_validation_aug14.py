@@ -111,9 +111,9 @@ class TestMechanismInventory:
         assert len(all_mechanisms) >= 80, \
             f"Expected ≥80 mechanisms, found {len(all_mechanisms)}"
 
-    def test_max_mechanism_id_is_100(self, all_mechanisms):
-        assert max(all_mechanisms.keys()) == 100, \
-            f"Max mechanism ID is {max(all_mechanisms.keys())}, expected 100"
+    def test_max_mechanism_id_is_103(self, all_mechanisms):
+        assert max(all_mechanisms.keys()) == 103, \
+            f"Max mechanism ID is {max(all_mechanisms.keys())}, expected 103"
 
     def test_min_mechanism_id_is_17_or_lower(self, all_mechanisms):
         assert min(all_mechanisms.keys()) <= 17
