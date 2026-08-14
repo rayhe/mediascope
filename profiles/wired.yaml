@@ -4162,6 +4162,69 @@ journalist_cross_entity_coverage:
         role: Editor at Large
       - name: Reece Rogers
         role: Staff Writer
+        privacy_investigation_topic_routing:
+          mechanism_id: 97
+          date_added: "2026-08-14"
+          finding: >
+            Rogers writes privacy investigations and alarm-framed pieces about Meta's
+            products but applies convenience/informational framing when covering structurally
+            identical privacy concerns at Google and other Condé Nast financial partners.
+            His investigative energy on privacy is entity-selective: Meta privacy → alarm;
+            Google privacy → convenience; non-competitor privacy (McDonald's) → aggressive
+            investigation. Financial relationships predict the framing direction.
+          meta_coverage_adversarial:
+            - piece: "TikTok ghost dot sticker for Meta Ray-Ban"
+              date: "2025-08-05"
+              co_author: Boone Ashworth
+              framing: alarm
+              headline_language: "secretly recording"
+              source_proxy: "https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/"
+            - piece: "Meta Muse Image Instagram opt-out burden"
+              date: "2026-07-07"
+              framing: alarm_opt_out_burden
+              headline_language: "need to opt out"
+              source: "https://www.techmeme.com/260707/p37"
+            - piece: "Goodbye Meta AI copypasta"
+              date: "2024-09-25"
+              framing: alarm_implied
+              note: "Debunking copypasta but centering Meta data collection as threat"
+              source_proxy: "https://technewstube.com/wired/1672376/viral-goodbye-meta-ai-copypasta-not-protect/"
+            - piece: "Meta 2FA trusted device changes"
+              framing: privacy_security_concern
+          google_coverage_neutral:
+            - piece: "Google I/O 2026 smart glasses live blog"
+              date: "2026-05-19"
+              framing: enthusiastic_neutral
+              privacy_articles_count: 0
+              note: "On-site, camera+AI glasses with identical capabilities to Meta Ray-Ban, zero surveillance vocabulary"
+            - piece: "Google selfie video login facial recognition"
+              date: "2026-07"
+              framing: convenience
+              note: >
+                Google building facial recognition training dataset via opt-in toggle.
+                Rogers completed setup 'in less than five minutes' — convenience framing.
+                Meta's dormant NameTag code (never activated) generated 2+ investigations.
+              source: "https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms"
+          anthropic_coverage_informational:
+            - piece: "Anthropic privacy terms change"
+              date: "2025-09-30"
+              framing: informational
+              note: "AI training on user data — same structural dynamic as Muse Image but without alarm framing"
+              source: "http://www.techmeme.com/250930/p18"
+          non_competitor_control:
+            - piece: "McDonald's 515-page data dossier"
+              date: "2026-08-13"
+              framing: aggressive_investigative
+              headline_language: "Minority Report-style"
+              note: "McDonald's has zero financial ties to Condé Nast — gets full investigative treatment"
+              source: "https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/"
+          entity_tone_matrix:
+            meta: -0.55
+            google: +0.10
+            anthropic: -0.05
+            mcdonalds: -0.70
+          tone_delta_meta_vs_google: 0.65
+          test_file: "tests/test_reece_rogers_cross_entity.py"
 
     live_blog_framing:
       source_url_proxy: "https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen"

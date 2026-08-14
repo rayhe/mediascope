@@ -9019,6 +9019,105 @@ cross_publication_findings:
     - https://gizmodo.com/openai-just-launched-its-first-hardware-product-and-its-a-tiny-keyboard-for-bossing-around-ai-agents-2000786080
     - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
     - https://gizmodo.com/openai-says-apples-real-problem-is-being-bad-at-ai-not-stolen-secrets-2000795382
+  reece_rogers_privacy_investigation_topic_routing_asymmetry:
+    mechanism_id: 97
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: journalist_cross_entity_framing_asymmetry
+    domain: privacy_investigation_topic_routing
+    entities:
+    - meta
+    - google
+    - anthropic
+    journalist: Reece Rogers
+    publication: WIRED (Condé Nast)
+    finding_summary: >
+      Reece Rogers at WIRED writes privacy investigations and alarm-framed pieces
+      about Meta's products (ghost dot sticker for Ray-Ban recording light Aug 2025,
+      Muse Image opt-out burden Jul 2026, 'Goodbye Meta AI' copypasta Sep 2024,
+      Meta 2FA changes) but applies convenience/informational framing when covering
+      structurally identical privacy concerns at Google and Condé Nast financial
+      partners. Rogers was 1 of 5 WIRED reporters on-site at Google I/O 2026 where
+      Google demonstrated camera glasses with identical capabilities to Meta Ray-Ban
+      and produced zero standalone privacy articles about Google's cameras. Rogers
+      covered Google's selfie video login — which explicitly includes a toggle for
+      Google to use facial data to 'develop and improve facial recognition across
+      Google services' — with convenience framing ('completed in less than five
+      minutes'), while Meta's dormant NameTag code (never activated, on-device only)
+      generated 2+ WIRED investigations with alarm language. Rogers covered Anthropic's
+      training data opt-in (same structural dynamic as Meta Muse Image) informationally
+      rather than with opt-out burden framing. Rogers' McDonald's data dossier piece
+      (Aug 2026) proves he does aggressive privacy investigations against entities
+      with zero Condé Nast financial ties. Financial relationships predict the
+      framing direction: Condé Nast has content deals with OpenAI, Microsoft,
+      Amazon, Perplexity; depends on Google advertising revenue; distributes via
+      Apple News+. Meta has zero content deal and is a direct advertising competitor.
+    key_finding: 'Reece Rogers Privacy Investigation Topic Routing Asymmetry'
+    type: 'Type B: Journalist Cross-Entity Tracking'
+    meta_privacy_article_count: 4
+    google_privacy_article_count: 0
+    mcdonalds_privacy_article_count: 1
+    entity_tone_matrix:
+      meta: -0.55
+      google: +0.10
+      anthropic: -0.05
+      mcdonalds: -0.70
+    tone_delta_meta_vs_google: 0.65
+    test_file: tests/test_reece_rogers_cross_entity.py
+    confounding_factors:
+    - factor: >
+        STRONG: Meta has documented facial recognition history (DeepFace 2014) that
+        Google does not share at the same scale, creating a legitimate editorial rationale
+        for heightened Meta scrutiny on facial recognition topics.
+      strength: STRONG
+    - factor: >
+        STRONG: Rogers may be assigned Meta privacy stories by editors rather than
+        self-selecting them. The entity-specific routing may be a publication-level
+        editorial allocation pattern, not individual journalist preference.
+      strength: STRONG
+    - factor: >
+        MODERATE: Google I/O live blog is a collaborative multi-reporter product;
+        individual contributions are harder to isolate. Rogers' neutral Google framing
+        may reflect collaborative tone-setting rather than personal framing choice.
+      strength: MODERATE
+    - factor: >
+        MODERATE: The Meta ghost dot sticker piece was co-authored with Boone Ashworth;
+        Ashworth may have initiated the alarm framing angle, not Rogers independently.
+      strength: MODERATE
+    - factor: >
+        WEAK: Product maturity difference — Meta glasses are shipping consumer products
+        while Google I/O glasses were demos — but privacy concerns should arguably be
+        HIGHER for always-on AI camera demos where bystanders cannot consent to recording
+        in a conference setting.
+      strength: WEAK
+    testable_predictions:
+    - >
+      P97.1: When Samsung/Google smart glasses ship (Fall 2026), Rogers will NOT write
+      a privacy investigation about Samsung/Google glasses' recording LED concealment
+      risk equivalent to the Meta ghost dot sticker piece.
+    - >
+      P97.2: If Google expands selfie video facial recognition data collection,
+      Rogers will cover it with informational framing, not alarm framing equivalent
+      to Meta Muse Image.
+    - >
+      P97.3: Rogers' next 5 privacy articles will include more Meta-entity alarm
+      pieces than Google-entity alarm pieces, maintaining the current 4:0 ratio.
+    source_urls:
+    - https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
+    - https://www.techmeme.com/260707/p37
+    - https://technewstube.com/wired/1672376/viral-goodbye-meta-ai-copypasta-not-protect/
+    - https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+    - https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms
+    - http://www.techmeme.com/250930/p18
+    - https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/
+    cross_references:
+    - 30
+    - 33
+    - 45
+    - 70
+    - 11
+    - 14
+    - 95
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

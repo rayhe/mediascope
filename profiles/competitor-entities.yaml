@@ -288,6 +288,30 @@ entities:
       source_urls:
       - https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
       - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
+    wired_rogers_privacy_topic_routing:
+      mechanism_id: 97
+      date_analyzed: '2026-08-14'
+      journalist: Reece Rogers
+      publication: WIRED (Condé Nast)
+      finding: >
+        Reece Rogers at WIRED writes privacy investigations about Meta products (ghost dot
+        sticker, Muse Image opt-out, copypasta debunk, 2FA changes) with alarm framing but
+        covers Google's structurally identical privacy concerns (camera glasses at I/O, selfie
+        video facial recognition training) with convenience/informational framing. Google's
+        selfie login explicitly collects facial recognition training data via opt-in toggle;
+        Meta's dormant NameTag code (never activated, on-device only) generated 2+ WIRED
+        investigations. Rogers' McDonald's data dossier piece (Aug 2026) confirms he does
+        aggressive privacy work against entities with zero Condé Nast financial ties.
+      meta_privacy_articles: 4
+      google_privacy_articles: 0
+      entity_tone_delta: 0.65
+      related_mechanisms: [30, 33, 45, 70, 95]
+      source_urls:
+      - https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
+      - https://www.techmeme.com/260707/p37
+      - https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+      - https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms
+      - https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/
     rogue_ai_incident:
       date_disclosed: '2026-07-21'
       incident_dates: 2026-07-09 to 2026-07-13
