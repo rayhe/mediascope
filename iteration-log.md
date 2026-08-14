@@ -35208,4 +35208,4 @@ f5fabe5
 - test_test_file_count_agreement ✅
 - test_no_mechanism_in_publications ✅
 
-**Stats:** 361 test files | ~12,135 tests | 91 mechanisms | Commit: pending
+**Stats:** 361 test files | ~12,135 tests | 91 mechanisms | Commit: 5dc77e3
