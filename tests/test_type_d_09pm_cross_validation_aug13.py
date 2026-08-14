@@ -197,7 +197,7 @@ class TestIDIntegrity:
     """Mechanism IDs are contiguous, no duplicates, correct max."""
 
     def test_max_id_is_92(self, all_mechanism_ids):
-        assert max(all_mechanism_ids) == 92
+        assert max(all_mechanism_ids) == 93
 
     def test_min_id_is_17_or_lower(self, all_mechanism_ids):
         assert min(all_mechanism_ids) <= 17

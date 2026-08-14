@@ -12083,4 +12083,144 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  samsung_privacy_feature_framing_inversion:
+    mechanism_id: 93
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: cross_entity_vocabulary_inversion
+    entities: [samsung, meta, google]
+    iteration: 96
+    finding_summary: >
+      Samsung Galaxy Glasses privacy features (LED indicator, anti-tamper detection, wear detection) receive
+      POSITIVE framing ("got it right out of the gate", "important privacy feature", "keeping perverts away")
+      from 4+ publications. Meta's IDENTICAL features (LED indicator since Gen 2, anti-tamper since v26 Jul 2026)
+      receive NEGATIVE framing ("not informed consent", "nearly invisible", "too little too late") from 5+
+      publications. Samsung: 0 privacy investigations launched. Meta: 3+ investigations (Stern LED mod, WIRED
+      NameTag dormant code, BBC privacy expose). Same features, same Snapdragon AR1 chip, opposite vocabulary.
+      The framing inversion confirms privacy vocabulary is entity-coded (culturally assigned to Meta), not
+      feature-coded (based on what the hardware does). This persists even at Gizmodo (zero financial ties),
+      indicating cultural narrative coding amplified by, but not caused by, financial relationships.
+    key_finding: >
+      Privacy Feature Framing Inversion -- Type B: Journalist Cross-Entity Tracking
+
+      Samsung Galaxy Glasses and Meta Ray-Ban Gen 2 use the same Snapdragon AR1 Gen 1 chip, similar 12MP
+      cameras, same LED privacy indicator design, and both disable the camera when the LED is tampered with.
+      Despite this feature parity, media coverage applies opposite vocabulary:
+
+      SAMSUNG positive framing (Jul-Aug 2026):
+        - 9to5Google (Ben Schoon): "sounds like Samsung and Google have got it right out of the gate"
+        - GSMArena: "important privacy feature"
+        - Android Authority (C. Scott Brown): "How Samsung's smart glasses will keep perverts away"
+        - Android Police (Andy Boxall): "Here's why Meta should be worried" (privacy as Samsung advantage)
+
+      META negative framing for IDENTICAL features (same period):
+        - Civil society / multiple outlets: "not informed consent"
+        - Multiple outlets: LED described as "nearly invisible"
+        - Multiple outlets: v26 anti-tamper update framed as "too little too late"
+        - 3+ investigative pieces launched (Stern, WIRED, BBC)
+
+      INVESTIGATION GAP:
+        - Samsung: ZERO privacy investigations despite Google Gemini processing all camera data,
+          unknown data retention policies, no confirmed on-device processing
+        - Meta: 3+ investigations in 90 days (Jun-Aug 2026)
+
+      The framing inversion maps directly to cultural narrative coding: "surveillance" vocabulary
+      is assigned to Meta by default and does NOT transfer to Samsung/Google despite identical
+      hardware and arguably more opaque data handling (Google Gemini cloud processing vs Meta AI).
+
+    journalist_level_evidence:
+      - journalist: Ben Schoon
+        publication: 9to5Google
+        samsung_tone: 0.45
+        meta_tone: -0.15
+        tone_delta: 0.60
+        samsung_quote: "sounds like Samsung and Google have got it right out of the gate"
+        meta_framing: neutral-critical of Meta v26 LED update (Jul 7, 2026)
+        gap_days: 16
+      - journalist: C. Scott Brown
+        publication: Android Authority
+        samsung_headline: "How Samsung's smart glasses will keep perverts away"
+        samsung_framing: protective (Samsung solves the pervert problem)
+        meta_typical_framing: threatening (Meta IS the pervert problem)
+        vocabulary_inversion: same safety concern, opposite entity attribution
+      - journalist: Andy Boxall
+        publication: Android Police
+        samsung_headline: "Here's why Meta should be worried"
+        framing: Samsung privacy as competitive advantage over Meta
+        note: Meta implements the same features Samsung announced
+      - journalist: Raymond Wong
+        publication: Gizmodo
+        financial_ties: zero
+        samsung_privacy_framing: potential Samsung advantage over Meta
+        note: cultural coding persists without financial incentive
+    samsung_positive_sources:
+      - url: https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+        publication: 9to5Google
+      - url: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+        publication: GSMArena
+      - url: https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
+        publication: Android Authority
+      - url: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+        publication: Android Police
+    meta_negative_sources:
+      - url: https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
+        publication: 9to5Google
+      - url: https://www.bbc.com/news/articles/cj37z8357e5o
+        publication: BBC
+      - url: https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+        publication: Road to VR
+    related_mechanisms: [30, 74, 81]
+    cross_references: [30, 74, 81]
+    confounding_factors:
+    - strength: STRONG
+      factor: Samsung glasses not yet shipped
+      description: >
+        Samsung glasses were announced at Unpacked (Jul 22, 2026) but ship in Fall 2026. Investigative
+        pressure typically follows real-world deployment and consumer incidents. Meta has 7+ million units
+        in the field generating actual privacy incidents. Pre-launch coverage is naturally more optimistic.
+        However, privacy VOCABULARY choices (proactive vs reactive, protective vs threatening) reflect
+        cultural coding independent of deployment status.
+    - strength: STRONG
+      factor: Meta has much larger installed base generating real incidents
+      description: >
+        With 7+ million Ray-Ban Meta units sold, Meta generates real-world privacy incidents (modder
+        market, unauthorized recordings in schools/gyms). Samsung has zero units in consumer hands.
+        The investigation gap may partly reflect incident volume rather than editorial bias. However,
+        the VOCABULARY inversion (same features described oppositely) cannot be explained by incident
+        volume alone.
+    - strength: MODERATE
+      factor: Samsung wear detection is a genuine additional feature
+      description: >
+        Samsung adds wear detection that disables the camera when glasses are removed from the face.
+        Meta does not have this feature as of Aug 2026. This is a legitimate privacy advantage, though
+        it does not explain why Samsung's LED (identical to Meta's) receives positive framing while
+        Meta's LED receives negative framing.
+    - strength: MODERATE
+      factor: Google/Samsung financial ecosystem creates positive incentive
+      description: >
+        9to5Google and Android Authority are financially aligned with the Google ecosystem through
+        AdSense, Google News, and Android-focused traffic. Positive Samsung/Google framing may reflect
+        ecosystem alignment rather than anti-Meta bias specifically.
+    - strength: WEAK
+      factor: Samsung event embargo framing
+      description: >
+        Unpacked hands-on coverage operates under different editorial expectations than investigative
+        reporting. First-hands-on articles are traditionally more positive. However, Meta Connect
+        hands-on coverage does NOT receive equivalent positive privacy framing.
+    testable_predictions:
+    - >
+      P93.1: When Samsung glasses ship (Fall 2026), privacy investigation articles per 1M units
+      shipped will be significantly fewer than Meta's rate at equivalent deployment milestones.
+    - >
+      P93.2: Google Gemini's processing of Samsung glasses camera data will receive fewer
+      investigative articles than Meta AI's processing of Ray-Ban camera data, at any comparable
+      adoption level.
+    - >
+      P93.3: "Spy glasses" and "pervert glasses" vocabulary will remain exclusively associated
+      with Meta and will not transfer to Samsung even after Samsung reaches significant consumer
+      deployment.
+    - >
+      P93.4: If Samsung experiences a privacy incident (unauthorized recording, LED tampering),
+      coverage will frame it as an isolated incident rather than a systemic Samsung problem,
+      unlike Meta where individual incidents are framed as evidence of systemic company culture.
 research_period: 2024-08-01 to 2026-08-14
