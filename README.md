@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~12,850 | Across 377 test files |
+| Tests | ~12,890 | Across 378 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **12809 tests** across 376 test files, each covering a different analytical capability:
+MediaScope has **12888 tests** across 378 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -841,6 +841,7 @@ MediaScope has **12809 tests** across 376 test files, each covering a different 
 | `test_type_d_09pm_cross_validation_aug13.py` | 23 | Type D cross-validation (Aug 13, 21:00 PT): Cross-validates mechanisms #89-#91 (Ashworth category headline, Victoria Song health data asymmetry, Qualcomm co-marketing multiplier). Samsung glasses cluster coherence, confounding factor strength distribution, mechanism ID integrity, finding distinctiveness, source URL presence. 13 classes, 43 tests |
 | `test_type_d_11pm_cross_validation_aug13.py` | 37 | Type D cross-validation (Aug 13, 23:00 PT): Validates mechanisms #89-#91 metadata completeness (date_added, test_file, finding_summary, confounding_factors, testable_predictions). Confounding factor quality (STRONG factors present, multi-level strength). ID contiguity max=91. Cross-reference coherence. Samsung cluster coherence (#76/#89/#90/#91). Source URL presence. Test file importability. Regression guards #84-#88. 13 classes, 37 tests |
 | `test_type_d_03am_cross_validation_aug14.py` | 23 | Type D cross-validation (Aug 14, 03:00 PT): Validates mechanisms #92-#94 metadata completeness, confounding factor quality, source URL presence, ID integrity (max=94), cross-reference coherence (expanded to aggregate_findings + cross_entity_leverage), finding distinctiveness (Jaccard <0.7), Samsung cluster coherence (#93), WIRED investigation cluster coherence (#92), entity targeting, regression guards #89-#91, CE consistency, test file importability. Data integrity fixes: #92 source_urls added, #93 test_file + source_urls added, #92/#93 added to competitor-entities.yaml. 12 classes, 53 tests |
+| `test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py` | 46 | Mechanism #104: TechCrunch (Yahoo/Apollo) Privacy-Improvement-As-Indictment Framing. TechCrunch published adversarial Meta glasses privacy coverage on Jul 8, 2026 (same day as v26 LED anti-tamper update), framing the improvement as cynical ("seem less creepy...says otherwise"), invoking Cambridge Analytica (8 years prior). Samsung Galaxy Glasses launched 14 days later with identical hardware (Snapdragon AR1 Gen 1, camera, LED) and Google Gemini cloud processing, no published data retention policy. Zero TechCrunch adversarial Samsung privacy investigations. NEW FINANCIAL ARCHETYPE: Apollo Global Management (Yahoo's majority owner) co-financed $35B AI XPV Platform for Anthropic/OpenAI and $3.4B for xAI — $38B+ total, largest documented ownership-chain-to-competitor financial link. Confounding: Yahoo editorial independence, CEO anti-AI-scraping stance, causation NOT established. Extends #93, #89, #95, #100. 6 classes, 46 tests |
 
 ```bash
 # Run all tests

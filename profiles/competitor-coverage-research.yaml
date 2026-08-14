@@ -1516,6 +1516,113 @@ cross_entity_leverage:
     - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
     - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
 cross_publication_findings:
+  techcrunch_yahoo_apollo_privacy_indictment_framing:
+    mechanism_id: 104
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: private_equity_ai_financing_coverage_asymmetry
+    domain: wearables_privacy
+    publication: TechCrunch (Yahoo / Apollo Global Management)
+    ownership_archetype: private equity AI infrastructure financing
+    entities:
+    - meta
+    - samsung
+    - anthropic
+    - openai
+    - xai
+    iteration: 107
+    test_file: test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py
+    ownership_chain:
+      immediate_parent: Yahoo Inc.
+      ultimate_owner: Apollo Global Management
+      acquisition_date: '2021-09'
+      acquisition_price_usd_billions: 5
+      archetype: private_equity
+    apollo_ai_financing:
+      ai_xpv_platform:
+        amount_usd_billions: 35
+        customers:
+        - Anthropic
+        - OpenAI
+        announced_date: '2026-06-09'
+        co_investors:
+        - Blackstone
+        - Broadcom
+        source_url: https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e
+      xai_chip_lease:
+        amount_usd_billions: 3.4
+        entity: xAI (Elon Musk)
+        reported_date: '2026-02-09'
+        source_url: https://www.reuters.com/business/apollo-xai-near-34-billion-deal-fund-ai-chips-information-reports-2026-02-09/
+      total_ai_financing_usd_billions: 38.4
+    meta_glasses_article:
+      url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+      title: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+      publication_date: '2026-07-08'
+      same_day_as_meta_v26_update: true
+      improvement_reframed_as_cynicism: true
+      meta_tone: -0.60
+      rhetorical_devices:
+      - device: cambridge_analytica_invocation
+        example: "Meta's reputation on privacy has been tainted for years after numerous leaks and lost lawsuits... the Cambridge Analytica data scandal"
+        years_prior: 8
+      - device: persistence_framing
+        example: "Still, the company plows forward with what many people would consider privacy-violating ideas"
+      - device: historical_liability_anchor
+        example: "reputation on privacy has been tainted for years"
+      - device: improvement_dismissal
+        example: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise"
+      - device: juxtaposition_undercut
+        example: "On the same day it announced the Meta glasses' new safeguard, it shared that Meta AI can now use anyone's public Instagram photos"
+    samsung_comparison:
+      chip: Snapdragon AR1 Gen 1
+      has_led_indicator: true
+      published_data_retention_policy: false
+      techcrunch_adversarial_privacy_articles: 0
+      camera_resolution_disclosed: false
+      cloud_ai_processing: Google Gemini
+      launch_date: '2026-07-22'
+      days_after_meta_article: 14
+    finding_summary: >
+      TechCrunch (Yahoo, majority-owned by Apollo Global Management since Sep 2021)
+      published adversarial privacy-improvement-as-indictment coverage of Meta Ray-Ban
+      glasses on Jul 8, 2026 — the same day Meta shipped its v26 LED anti-tamper update.
+      The article reframes the privacy improvement as cynical ("seem less creepy...says
+      otherwise"), invokes Cambridge Analytica (8 years prior), and frames Meta's ongoing
+      privacy efforts as fundamentally untrustworthy. Samsung Galaxy Glasses launched 14
+      days later (Jul 22) with identical hardware (same Snapdragon AR1 Gen 1, camera, LED)
+      and Google Gemini cloud processing, with no published data retention policy. Zero
+      TechCrunch adversarial privacy investigations of Samsung glasses exist.
+      Apollo Global Management co-financed the $35B AI XPV Platform (Jun 9, 2026) for
+      Anthropic and OpenAI compute expansion, and separately financed $3.4B for xAI chip
+      leasing (Feb 2026). This $38B+ total represents the largest documented financial
+      relationship between a publication's ownership chain and Meta's AI competitors.
+      CONFOUNDING: Yahoo CEO Jim Lanzone is vocally anti-AI-scraping; Yahoo editorial
+      may operate independently of Apollo investment decisions. Causation NOT established.
+    confounding_factors:
+    - strength: STRONG
+      factor: Yahoo editorial independence from Apollo investment decisions
+    - strength: STRONG
+      factor: Yahoo CEO anti-AI-scraping stance (RSL backing) suggests independent editorial direction
+    - strength: MODERATE
+      factor: Meta's documented privacy record provides legitimate editorial basis for criticism
+    - strength: MODERATE
+      factor: Samsung is newer product with shorter track record (less to investigate)
+    cross_references:
+    - mechanism_id: 93
+      relationship: '#93 Samsung Privacy Feature Framing Inversion — #104 adds TechCrunch as new publication with unique ownership chain'
+    - mechanism_id: 89
+      relationship: '#89 WIRED category headline — both show improvement-as-indictment pattern but different publications/owners'
+    - mechanism_id: 95
+      relationship: '#95 Gizmodo same-chip — #104 extends same-chip observation to TechCrunch/Yahoo/Apollo'
+    - mechanism_id: 100
+      relationship: '#100 News Corp triple revenue — #104 adds private equity financing as new financial relationship archetype'
+    source_urls:
+    - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+    - https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e
+    - https://www.reuters.com/business/apollo-xai-near-34-billion-deal-fund-ai-chips-information-reports-2026-02-09/
+    - https://www.fool.com/investing/2026/06/17/apollo-and-blackstone-just-closed-a-35-billion-pri/
+    - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
   essilorluxottica_conde_nast_advertising_paradox:
     mechanism_id: 103
     name: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox

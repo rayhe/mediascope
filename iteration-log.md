@@ -1,3 +1,71 @@
+## Iteration #107 — Fri 2026-08-14 16:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #104: TechCrunch (Yahoo/Apollo) Privacy-Improvement-As-Indictment Framing**
+
+TechCrunch (Yahoo, majority-owned by Apollo Global Management) published "Meta wants
+its AI glasses to seem less creepy. Its AI strategy says otherwise" on Jul 8, 2026 —
+the SAME DAY Meta shipped its v26 LED anti-tamper update. The article reframes the
+privacy improvement as cynical, invokes Cambridge Analytica (8 years prior), and
+concludes Meta's privacy efforts are fundamentally untrustworthy.
+
+Samsung Galaxy Glasses launched 14 days later (Jul 22) with identical hardware
+(Snapdragon AR1 Gen 1, camera, LED) and Google Gemini cloud processing, no published
+data retention policy. Zero TechCrunch adversarial privacy investigations exist
+for Samsung glasses.
+
+NEW FINANCIAL ARCHETYPE: Apollo Global Management co-financed $35B AI XPV Platform
+(Jun 9, 2026) for Anthropic + OpenAI compute, plus $3.4B for xAI chip leasing.
+$38B+ total = largest documented financial relationship between a publication's
+ownership chain and Meta's AI competitors.
+
+CONFOUNDING: Yahoo editorial independence from Apollo noted. Yahoo CEO anti-AI-scraping.
+Causation NOT established. This is the first private equity ownership chain in the dataset.
+
+**Updates:**
+1. `tests/test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py` — 46 tests, 6 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #104
+3. `README.md` — test inventory + stat sync (12,888 tests, 378 files)
+4. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 378 test files | 12,888 tests | 104 mechanisms
+
+---
+
+## Iteration 106 — Fri 2026-08-14 15:00 PT (Type D: Test & Verify)
+
+### Cross-Validation & Fixes for Mechanisms #101-103
+
+**Bugs fixed (2):**
+1. **Stale max-ID assertions:** `test_type_d_03am_cross_validation_aug14.py` and `test_type_d_10am_cross_validation_aug14.py` hardcoded max mechanism ID at 100. Mechanisms #101-103 were added today, breaking these assertions. Updated both to 103.
+2. **Field name inconsistency:** Mechanism #103 (EssilorLuxottica) used `finding` instead of `finding_summary` in both `competitor-coverage-research.yaml` and `competitor-entities.yaml`. The `collect_mechanisms()` fixture requires `finding_summary` or `key_finding` to recognize full mechanisms, so #103 was invisible to cross-validation tests. Standardized to `finding_summary` in both files.
+
+**New test file:** `test_type_d_3pm_cross_validation_aug14.py` — 33 tests validating:
+- All three mechanisms (#101-103) properly registered in CCR and CE YAML profiles
+- EssilorLuxottica entity has financial data (advertising spend, revenue figures)
+- WIRED editorial team bifurcation pattern confirmed across 5+ journalists (Ashworth, Chokkattu, Rogers, So, plus others)
+- Cross-reference integrity between mechanisms
+- ID continuity (no gaps 101-103), max ID = 103
+- File count validation (377 test files, 12+ aug14 files)
+- Confounding factors and date fields present on all recent mechanisms
+- Source URL quality (HTTPS only, documented in test file docstrings)
+- Field name consistency regression guard: all mechanisms 98+ must use `finding_summary`
+
+**Test results:** 609 passed (all aug14 tests), 0 failed after fixes. Today's new tests: 113 (mechanisms) + 33 (cross-validation) = 146 new tests.
+
+**Files:**
+- FIXED: `tests/test_type_d_03am_cross_validation_aug14.py` (max ID 100→103)
+- FIXED: `tests/test_type_d_10am_cross_validation_aug14.py` (max ID 100→103)
+- FIXED: `profiles/competitor-coverage-research.yaml` (finding→finding_summary for #103)
+- FIXED: `profiles/competitor-entities.yaml` (finding→finding_summary for #103)
+- NEW: `tests/test_type_d_3pm_cross_validation_aug14.py` (33 tests)
+- Updated: `README.md`, `docs/ARCHITECTURE.md` (377 files, ~12,850 tests)
+
+**Commit:** e0d7dcb — pushed to GitHub
+
+**Stats:** 377 test files | ~12,850 tests | 103 mechanisms
+
+---
+
 ## Iteration 105 — Fri 2026-08-14 14:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #103: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox
