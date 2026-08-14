@@ -1,3 +1,15 @@
+## Iteration 100 — Fri 2026-08-14 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #99: James Pero (Gizmodo) Google Smart Glasses Temporal Redemption Narrative vs Meta Perpetual Surveillance Default
+
+**Finding:** James Pero constructs DIFFERENT TEMPORAL NARRATIVES for Google vs Meta when covering identical smart glasses hardware (Snapdragon AR1 Gen 1, 12MP camera, LED). Google gets a REDEMPTION ARC (failure → learning → growth, aggregate tone 0.0, zero surveillance vocabulary). Meta gets a RECIDIVISM LOOP (failure → escalation, aggregate tone -0.45, "privacy concerns pile up," "the anti-Meta plan," "thanks to Meta"). The temporal coding inverts: Google's Glass-era FAILURE is framed as LEARNING; Meta's market SUCCESS is framed as ESCALATING THREAT. Isolates CULTURAL CODING as a mechanism at a zero-financial-ties publication (Gizmodo/Keleops AG).
+
+**Sources:** 7 Gizmodo articles (3 Google, 4 Meta) by James Pero (Jan 2025 – Aug 2026)
+
+**Stats:** 371 test files | 12,624 tests | 99 mechanisms | commit 2669c55
+
+---
+
 ## Iteration 99 — Fri 2026-08-14 07:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #98: Gizmodo Clean Control — Anthropic AI Safety Adversarial Coverage Consistency
