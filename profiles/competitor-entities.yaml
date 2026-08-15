@@ -5027,6 +5027,35 @@ entities:
       - 104
       - 108
       - 6
+    q2_2026_financial_update:
+      mechanism_id: 111
+      date_analyzed: '2026-08-15'
+      data_source: 'Apollo Q2 2026 earnings (reported Aug 4, 2026)'
+      aum_exceeded_1t: true
+      capital_solutions_fees_m: 277
+      capital_solutions_fees_note: 'Record; 5th consecutive quarter above $200M.
+        This is the specific fee income line where AI infrastructure deals
+        generate revenue for Apollo'
+      fee_related_earnings_m: 785
+      fre_yoy_growth_pct: 25
+      adjusted_net_income_b: 1.3
+      originations_b: 74
+      originations_note: 'Excludes $35B XPV deal (recognized at close)'
+      total_digital_infrastructure_since_2022_b: 40
+      digital_infrastructure_team_size: 60
+      ai_chip_leader: 'Reed Rayman (Partner, appointed Aug 5 2026; chip-focused deal origination)'
+      stream_data_centers: majority stake acquired
+      stack_infrastructure: European colocation carve-out
+      scaling_significance: 'Apollo AI infrastructure financing is its FASTEST-GROWING
+        business line. CEO Rowan on Q2 call: "Second quarter was really all about
+        momentum." The $35B XPV was excluded from the $74B origination figure —
+        $50B+ in signed deals will feed future quarters. Financial incentive for
+        Yahoo publications to cover AI competitors softly is EXPANDING, not static.'
+      source_urls:
+      - https://finance.biggo.com/news/US_APO_2026-08-04
+      - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
+      - https://www.pymnts.com/news/artificial-intelligence/2026/apollo-global-management-targets-more-ai-infrastructure-deals/
+      - https://www.privatemarketsinsights.com/post/apollo-s-record-origination-machine-hits-74-billion-as-private-credit-s-largest-platform-rewires-ma
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

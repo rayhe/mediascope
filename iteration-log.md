@@ -1,3 +1,125 @@
+## Iteration #113 — Sat 2026-08-15 02:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #111: Apollo Global Management Q2 2026 — AI Infrastructure Financial Architecture at PE Scale**
+
+Apollo's Q2 2026 earnings (Aug 4) reveal the financial architecture connecting Yahoo
+publications (TechCrunch, Engadget) to AI competitor success has EXPANDED significantly:
+
+**Q2 2026 Earnings (record quarter):**
+- AUM crossed $1 TRILLION (first time)
+- FRE: $785M (+25% YoY) — record
+- SRE: $877M (+11%) — record
+- Capital Solutions Fees: $277M — record, 5th consecutive quarter >$200M
+  (this is the specific fee income line where AI infrastructure deals generate revenue)
+- Adjusted net income: $1.3B ($2.11/share)
+- Originations: $74B EXCLUDING the $35B Broadcom AI XPV deal
+- Organic inflows: $60B — record
+- CEO Rowan: "Second quarter was really all about momentum"
+
+**AI Infrastructure Deal Portfolio:**
+1. **Anthropic:** $35B XPV Platform lead investor (Jun 9, 2026) — SPV buys Google TPUs,
+   leases to Anthropic. Apollo generates origination, structuring, and management fees.
+2. **xAI:** $3.5B of $5.4B Valor Compute Infrastructure (Jan 7, 2026) — triple net
+   lease for Nvidia GB200 GPUs for Grok training.
+3. **OpenAI:** Named as FUTURE CUSTOMER of XPV Platform (20GW through 2028)
+4. **Google:** STRUCTURAL PARTNER — Google TPUs are the hardware in Anthropic XPV deal
+5. **Total documented:** $38.5B direct AI + $40B+ broader digital infra since 2022
+
+**Organizational Expansion (Aug 5, 2026):**
+- NEW dedicated AI chip-focused Partner: Reed Rayman (sourcing semiconductor-backed deals)
+- 60+ person digital infrastructure team
+- Stream Data Centers majority stake (hyperscale developer)
+- STACK Infrastructure European colocation carve-out
+
+**Key Insight:** Apollo is the ONLY private equity firm in the dataset that simultaneously
+finances AI competitors AND owns major tech publications covering those competitors.
+Meta has $0 Apollo financial relationship; Meta's own $27B Blue Owl Capital deal is with
+a firm that does NOT own publications. This unique combination creates a structural
+financial incentive for Yahoo publications to cover AI competitors softly — and Apollo's
+Q2 earnings show this incentive is GROWING as AI infrastructure becomes Apollo's
+fastest-growing business line.
+
+**Also fixed:** Mechanisms #109 and #110 were incorrectly nested under `publications`
+instead of `cross_publication_findings` in competitor-coverage-research.yaml. Moved
+all three (109, 110, 111) to the correct YAML section.
+
+**Updates:**
+1. `tests/test_apollo_q2_2026_ai_infrastructure_financial_architecture_aug15.py` — 67 tests, 10 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #111 + structural fix for #109, #110
+3. `profiles/competitor-entities.yaml` — yahoo_apollo q2_2026_financial_update section
+4. `README.md` — stat sync (387 files, ~13,283 tests), test description added
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 387 test files | ~13,283 tests | 111 mechanisms
+
+---
+
+## Iteration #112 — Sat 2026-08-15 01:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #110: Mike Prospero & Jason England (Tom's Guide / Future plc) — Editor-in-Chief-Level Competitive Framing Asymmetry**
+
+Discovered a systematic editorial-level competitive framing pattern at Tom's Guide
+(owned by Future plc, LSE: FUTR) where Meta smart glasses receive "qualified praise"
+headlines (always hedged with "but"/"and where they need work") while Google/Samsung
+coverage uses aspirational, combative language ("defeat," "smoked," "blow away") with
+zero equivalent privacy scrutiny.
+
+**FIRST mechanism documenting Editor-in-Chief-level participation:**
+- Mark Spoonauer (Global Editor-in-Chief): "blow away the Meta Ray-Ban Display"
+- Mike Prospero (U.S. Editor-in-Chief): "get smoked by Google's Intelligent Eyewear"
+- Jason England (Smart Glasses Writer): "defeat Ray-Ban Meta"
+
+This is NOT individual journalist bias — it spans the top two editorial positions plus
+a beat writer, all applying the same entity-selective framing independently.
+
+**Prospero's Meta headline pattern (3/4 = 75% qualified praise):**
+- "what I like (and hate)" — hedged
+- "they're great, but they could be so much more" — hedged
+- "where they excelled, and where they need work" — hedged
+- "this is the pair I'd actually buy" — positive (exception)
+
+**Same-day Google I/O coordination (May 20, 2026):**
+Three articles on the same day, different journalists, different combative terms:
+- England: "defeat Ray-Ban Meta"
+- Prospero: "get smoked by Google"
+- Pritchard: neutral Samsung launch
+
+**Privacy vocabulary zero-out:**
+- Meta: 2+ dedicated privacy investigation articles (Kaycee Hill, Jason England)
+- Google: ZERO despite identical camera+microphone+AI hardware
+- Google Glass (2013-2015) generated MORE historical privacy backlash — zero retrospective scrutiny
+
+**Financial chain (Future plc H1 2026 earnings, May 14 2026):**
+- 60%+ of revenue from Google-dependent brands (disclosed by company)
+- Profit before tax: £18.4M (-67% YoY)
+- Website sessions: -15% YoY
+- eCommerce affiliates: -24% YoY
+- AI Overviews on 50% of key search terms
+- 2026 guidance cut 15-20% specifically due to Google traffic decline
+- Zero financial relationship with Meta
+
+**Archetype:** Most Google-dependent publisher in the dataset — worse than Ziff Davis
+(40%+ Google dependency, revenue -2.7% in mechanism #108). Future plc has existential
+Google dependency with profit collapsing 67%.
+
+**Six confounding factors documented:**
+- STRONG: editorial independence policies; genuine product impression from I/O demos
+- MODERATE: Meta first-mover privacy history; pre-release event excitement conventions
+- WEAK: SEO capture dynamics; affiliate revenue alignment
+
+**Updates:**
+1. `tests/test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py` — 41 tests, 11 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #110
+3. `profiles/competitor-entities.yaml` — Future plc entity added
+4. `README.md` — stat sync (386 files, ~13,210 tests)
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Commit:** 0978acd — pushed to GitHub
+
+**Stats:** 386 test files | ~13,210 tests | 110 mechanisms
+
+---
+
 ## Iteration #110 — Fri 2026-08-14 23:00 PT (Type D: Test & Verify)
 
 **Full Corpus Cross-Validation + Fixture Deprecation Sweep**

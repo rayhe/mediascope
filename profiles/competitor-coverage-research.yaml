@@ -1619,17 +1619,17 @@ cross_publication_findings:
       relationship: '#100 News Corp triple revenue — #104 adds private equity financing as new financial relationship archetype'
     testable_predictions:
     - id: tc_samsung_post_launch
-      prediction: TechCrunch will NOT publish adversarial privacy investigations of Samsung Galaxy Glasses
-        within 90 days of Samsung launch (Jul 22 2026), despite identical Snapdragon AR1 camera hardware
+      prediction: TechCrunch will NOT publish adversarial privacy investigations of Samsung Galaxy Glasses within 90 days
+        of Samsung launch (Jul 22 2026), despite identical Snapdragon AR1 camera hardware
     - id: apollo_portfolio_coverage_softness
-      prediction: TechCrunch coverage of Apollo portfolio AI companies (Anthropic compute, xAI chips)
-        will be neutral-to-positive, lacking the adversarial framing applied to Meta privacy improvements
+      prediction: TechCrunch coverage of Apollo portfolio AI companies (Anthropic compute, xAI chips) will be neutral-to-positive,
+        lacking the adversarial framing applied to Meta privacy improvements
     - id: yahoo_improvement_dismissal_pattern
-      prediction: Future Meta privacy improvements (LED updates, camera restrictions, data retention
-        transparency) will be framed as cynical or insufficient rather than substantive
+      prediction: Future Meta privacy improvements (LED updates, camera restrictions, data retention transparency) will be
+        framed as cynical or insufficient rather than substantive
     - id: pe_ownership_editorial_correlation
-      prediction: Other PE-owned tech publications whose parent funds AI competitors will show
-        similar coverage asymmetry toward Meta vs the funded competitors
+      prediction: Other PE-owned tech publications whose parent funds AI competitors will show similar coverage asymmetry
+        toward Meta vs the funded competitors
     source_urls:
     - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
     - https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e
@@ -9958,43 +9958,40 @@ cross_publication_findings:
     - snap
     iteration: 108
     test_file: tests/test_scott_stein_cross_entity_enthusiasm_gradient_aug14.py
-    finding_summary: 'Scott Stein (CNET, 15+ years covering XR) applies entity-selective enthusiasm
-      gradient and privacy deferral in smart glasses coverage. In the SAME article (Google I/O,
-      May 19, 2026), Google/Samsung glasses receive superlative promotional language ("I was wowed,"
-      "best smart glasses out there," "redefine what smart glasses can be") while Meta receives
-      a single-sentence privacy dismissal ("muddy lines on its AI privacy policies"). Google gets
-      extended executive quotes about privacy planning; Meta gets no defense. Samsung Galaxy Glasses
-      share identical Snapdragon AR1 Gen 1 hardware. CNET (Ziff Davis) depends heavily on Google
-      search traffic for ad/affiliate revenue (68% organic traffic loss 2020-2024). Samsung is
-      4th-largest global advertiser ($9.7B). Snap covered Stein AWE 2026 travel costs (disclosed).
-      CNET has ZERO documented financial relationship with Meta.'
+    finding_summary: Scott Stein (CNET, 15+ years covering XR) applies entity-selective enthusiasm gradient and privacy deferral
+      in smart glasses coverage. In the SAME article (Google I/O, May 19, 2026), Google/Samsung glasses receive superlative
+      promotional language ("I was wowed," "best smart glasses out there," "redefine what smart glasses can be") while Meta
+      receives a single-sentence privacy dismissal ("muddy lines on its AI privacy policies"). Google gets extended executive
+      quotes about privacy planning; Meta gets no defense. Samsung Galaxy Glasses share identical Snapdragon AR1 Gen 1 hardware.
+      CNET (Ziff Davis) depends heavily on Google search traffic for ad/affiliate revenue (68% organic traffic loss 2020-2024).
+      Samsung is 4th-largest global advertiser ($9.7B). Snap covered Stein AWE 2026 travel costs (disclosed). CNET has ZERO
+      documented financial relationship with Meta.
     confounding_factors:
     - strength: STRONG
-      factor: 'Google Android XR software integration IS objectively more advanced for app
-        connectivity — Stein enthusiasm may reflect genuine product assessment'
+      factor: Google Android XR software integration IS objectively more advanced for app connectivity — Stein enthusiasm
+        may reflect genuine product assessment
     - strength: STRONG
-      factor: 'Stein has 15+ years covering XR — expert perspective may reflect genuine
-        innovation evaluation rather than financial alignment'
+      factor: Stein has 15+ years covering XR — expert perspective may reflect genuine innovation evaluation rather than financial
+        alignment
     - strength: MODERATE
-      factor: 'Meta IS market leader with genuine privacy incidents (Cambridge Analytica,
-        contractor data review) — legitimate to hold to higher scrutiny'
+      factor: Meta IS market leader with genuine privacy incidents (Cambridge Analytica, contractor data review) — legitimate
+        to hold to higher scrutiny
     - strength: MODERATE
-      factor: 'Google I/O is curated press event designed for excitement; Meta Connect demos
-        had technical failures — different contexts produce different tone'
+      factor: Google I/O is curated press event designed for excitement; Meta Connect demos had technical failures — different
+        contexts produce different tone
     - strength: WEAK
-      factor: 'Pre-release products naturally get more optimistic framing than shipped ones'
+      factor: Pre-release products naturally get more optimistic framing than shipped ones
     - strength: WEAK
-      factor: 'Different article formats (preview article vs podcast reflection) may produce
-        different tones'
+      factor: Different article formats (preview article vs podcast reflection) may produce different tones
     testable_predictions:
-    - 'Samsung/Google post-launch privacy incidents will receive growing pains framing from
-      Stein, not muddy lines adversarial language'
-    - 'Stein CNET reviews of shipped Samsung/Google glasses will retain superlative vocabulary
-      even after real-world privacy testing'
-    - 'If Gemini processes camera data identically to Meta AI, Stein will NOT produce a
-      standalone privacy investigation of Google glasses'
-    - 'When Google reveals fall event privacy policy details, Stein will cover it more
-      sympathetically than Meta equivalent privacy documentation'
+    - Samsung/Google post-launch privacy incidents will receive growing pains framing from Stein, not muddy lines adversarial
+      language
+    - Stein CNET reviews of shipped Samsung/Google glasses will retain superlative vocabulary even after real-world privacy
+      testing
+    - If Gemini processes camera data identically to Meta AI, Stein will NOT produce a standalone privacy investigation of
+      Google glasses
+    - When Google reveals fall event privacy policy details, Stein will cover it more sympathetically than Meta equivalent
+      privacy documentation
     source_urls:
     - https://www.armwoodtechnology.com/2026/05/google-has-so-many-new-smart-glasses.html
     - https://voicesofvr.com/1654-cnets-scott-steins-reflections-on-meta-ray-ban-display-glasses-neural-band-implications/
@@ -10021,44 +10018,38 @@ cross_publication_findings:
     - meta
     iteration: 108
     test_file: tests/test_kerry_wan_zdnet_privacy_scrutiny_asymmetry_aug14.py
-    finding_summary: 'Kerry Wan (ZDNET managing editor, primary smart glasses reviewer)
-      demonstrates entity-selective privacy scrutiny in coverage of identical hardware.
-      Meta Ray-Ban reviews are genuinely positive ("favorite tech purchase this year,"
-      "most practical smart glasses on the market") but ALWAYS include explicit privacy
-      warnings in buying advice: "questionable AI and data policies," "consider other
-      wearable options." Google Android XR glasses previews contain ZERO equivalent
-      privacy scrutiny despite identical camera/mic hardware and Google advertising
-      revenue ($306B/yr, 2.3x Meta). Pattern spans 4+ articles over 2024-2026.
-      ZDNET (Ziff Davis) depends on Google search traffic for ad/affiliate revenue.
-      Same Ziff Davis pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO
-      documented financial relationship with Meta.'
+    finding_summary: 'Kerry Wan (ZDNET managing editor, primary smart glasses reviewer) demonstrates entity-selective privacy
+      scrutiny in coverage of identical hardware. Meta Ray-Ban reviews are genuinely positive ("favorite tech purchase this
+      year," "most practical smart glasses on the market") but ALWAYS include explicit privacy warnings in buying advice:
+      "questionable AI and data policies," "consider other wearable options." Google Android XR glasses previews contain ZERO
+      equivalent privacy scrutiny despite identical camera/mic hardware and Google advertising revenue ($306B/yr, 2.3x Meta).
+      Pattern spans 4+ articles over 2024-2026. ZDNET (Ziff Davis) depends on Google search traffic for ad/affiliate revenue.
+      Same Ziff Davis pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO documented financial relationship with Meta.'
     confounding_factors:
     - strength: STRONG
-      factor: 'Google/Samsung glasses had not shipped during Wan enthusiastic coverage —
-        pre-release products naturally get more optimistic framing than shipped products
-        with documented real-world privacy incidents'
+      factor: Google/Samsung glasses had not shipped during Wan enthusiastic coverage — pre-release products naturally get
+        more optimistic framing than shipped products with documented real-world privacy incidents
     - strength: STRONG
-      factor: 'Meta HAS genuine privacy incidents (Cambridge Analytica, contractor data
-        review lawsuits, FTC consent decree) — legitimate to flag in buying advice'
+      factor: Meta HAS genuine privacy incidents (Cambridge Analytica, contractor data review lawsuits, FTC consent decree)
+        — legitimate to flag in buying advice
     - strength: MODERATE
-      factor: 'The beats Meta in 3 ways article focused on DISPLAY features (in-lens
-        display Google has, base Meta Ray-Ban does not) — genuine hardware distinction'
+      factor: The beats Meta in 3 ways article focused on DISPLAY features (in-lens display Google has, base Meta Ray-Ban
+        does not) — genuine hardware distinction
     - strength: MODERATE
-      factor: 'Wan IS genuinely enthusiastic about Meta hardware — favorite tech purchase
-        suggests personal preference, not animus. Asymmetry is in privacy CAVEAT not
-        product enthusiasm'
+      factor: Wan IS genuinely enthusiastic about Meta hardware — favorite tech purchase suggests personal preference, not
+        animus. Asymmetry is in privacy CAVEAT not product enthusiasm
     - strength: WEAK
-      factor: 'Google demo at Google own Hudson River office — Google-sponsored press
-        access may create more favorable context than post-launch user testing'
+      factor: Google demo at Google own Hudson River office — Google-sponsored press access may create more favorable context
+        than post-launch user testing
     testable_predictions:
-    - 'Wan Samsung Galaxy Glasses review (Fall 2026) will NOT include privacy caveat
-      equivalent to Meta questionable AI and data policies'
-    - 'Wan will NOT recommend readers consider other options due to Google data practices
-      despite Google $306B advertising-based revenue model'
-    - 'Post-launch Samsung/Google glasses privacy incident will be framed as growing pains
-      rather than structural questionable policies language'
-    - 'Future Wan Meta articles will CONTINUE including privacy warnings even after Meta
-      ships additional privacy features (anti-tamper, LED improvements)'
+    - Wan Samsung Galaxy Glasses review (Fall 2026) will NOT include privacy caveat equivalent to Meta questionable AI and
+      data policies
+    - Wan will NOT recommend readers consider other options due to Google data practices despite Google $306B advertising-based
+      revenue model
+    - Post-launch Samsung/Google glasses privacy incident will be framed as growing pains rather than structural questionable
+      policies language
+    - Future Wan Meta articles will CONTINUE including privacy warnings even after Meta ships additional privacy features
+      (anti-tamper, LED improvements)
     source_urls:
     - https://www.zdnet.com/article/who-should-buy-meta-ray-bans-in-2025-after-months-of-testing-my-verdict-is-two-fold/
     - https://newsnuzzle.com/i-wore-googles-upcoming-android-xr-smart-glasses-and-its-a-future-id-actually-want-to-live-in/
@@ -10074,19 +10065,24 @@ cross_publication_findings:
     finding_type: corporate_financial_incentive_architecture
     domain: cross_entity_coverage_asymmetry
     publication_owner: 'Ziff Davis (NASDAQ: ZD)'
-    publications: [CNET, ZDNET, PCMag, Mashable]
-    entities: [google, openai, meta, samsung]
+    publications:
+    - CNET
+    - ZDNET
+    - PCMag
+    - Mashable
+    entities:
+    - google
+    - openai
+    - meta
+    - samsung
     iteration: 109
     test_file: tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py
-    finding_summary: 'Ziff Davis (NASDAQ: ZD, ~$2B market cap) faces a "triple squeeze"
-      of simultaneous financial pressures predicting entity-selective coverage: (1) Google
-      existential dependency — 40%+ traffic from search, ZDNET lost 97% organic traffic,
-      57% ad revenue dependent on search; (2) OpenAI active litigation — copyright suit
-      filed Apr 2025 seeking hundreds of millions; (3) Meta zero-relationship — no AI deal,
-      no ad dependency, no litigation, lowest-cost editorial target. Samsung/Google advertiser
-      compound chain amplifies: Samsung $9.7B ad spend flows through CNET/ZDNET/PCMag,
-      Samsung glasses use Google Gemini. Q2 2026 financial distress: $286.7M revenue
-      (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment.'
+    finding_summary: 'Ziff Davis (NASDAQ: ZD, ~$2B market cap) faces a "triple squeeze" of simultaneous financial pressures
+      predicting entity-selective coverage: (1) Google existential dependency — 40%+ traffic from search, ZDNET lost 97% organic
+      traffic, 57% ad revenue dependent on search; (2) OpenAI active litigation — copyright suit filed Apr 2025 seeking hundreds
+      of millions; (3) Meta zero-relationship — no AI deal, no ad dependency, no litigation, lowest-cost editorial target.
+      Samsung/Google advertiser compound chain amplifies: Samsung $9.7B ad spend flows through CNET/ZDNET/PCMag, Samsung glasses
+      use Google Gemini. Q2 2026 financial distress: $286.7M revenue (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment.'
     confounding_factors:
     - strength: STRONG
       factor: Ziff Davis editorial teams may operate independently of corporate financial pressures
@@ -10102,21 +10098,355 @@ cross_publication_findings:
       factor: Organic beat assignment patterns
     testable_predictions:
     - id: zd_google_soft
-      prediction: CNET/ZDNET/PCMag will apply less adversarial privacy scrutiny to Google products
-        than to Meta products with equivalent data collection
+      prediction: CNET/ZDNET/PCMag will apply less adversarial privacy scrutiny to Google products than to Meta products with
+        equivalent data collection
     - id: zd_openai_hard
-      prediction: CNET/ZDNET coverage of OpenAI will be more adversarial than Google coverage,
-        reflecting active litigation posture
+      prediction: CNET/ZDNET coverage of OpenAI will be more adversarial than Google coverage, reflecting active litigation
+        posture
     - id: zd_meta_default_target
-      prediction: Meta will receive the highest volume of adversarial privacy coverage across
-        all four Ziff Davis publications proportional to financial zero-cost
+      prediction: Meta will receive the highest volume of adversarial privacy coverage across all four Ziff Davis publications
+        proportional to financial zero-cost
     - id: zd_samsung_soft
-      prediction: Samsung glasses will receive positive hardware reviews without structural
-        privacy warnings, unlike Meta glasses reviews
-    cross_references: [106, 107, 76, 93]
+      prediction: Samsung glasses will receive positive hardware reviews without structural privacy warnings, unlike Meta
+        glasses reviews
+    cross_references:
+    - 106
+    - 107
+    - 76
+    - 93
     source_urls:
     - https://www.zdnet.com/article/ray-ban-meta-smart-glasses-review/
     - https://investors.ziffdavis.com/news-releases/news-release-details/ziff-davis-reports-second-quarter-2026-results
+  apollo_q2_2026_ai_infrastructure_financial_architecture:
+    mechanism_id: 111
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: financial_incentive_architecture_scaling
+    domain: private_equity_ai_infrastructure_media_ownership
+    publication_owner: 'Apollo Global Management (NYSE: APO)'
+    publications:
+    - TechCrunch
+    - Engadget
+    entities:
+    - anthropic
+    - openai
+    - xai
+    - google
+    iteration: 113
+    test_file: tests/test_apollo_q2_2026_ai_infrastructure_financial_architecture_aug15.py
+    finding_summary: 'Apollo Q2 2026 earnings (Aug 4) reveal the financial architecture connecting Yahoo publications (TechCrunch,
+      Engadget) to AI competitor success has EXPANDED: AUM crossed $1T, Capital Solutions Fees hit record $277M (5th consecutive
+      quarter >$200M), $74B originations EXCLUDING the $35B XPV deal, new dedicated AI chip leader Reed Rayman (Aug 5), 60+
+      person digital infra team. Total AI infrastructure: $38.5B documented deals + $40B+ broader digital infra since 2022.
+      Apollo profits from Anthropic ($35B XPV), xAI ($3.5B), OpenAI (future XPV customer), and Google (hardware supplier)
+      succeeding. ONLY private equity firm financing AI competitors that also owns major tech publications.'
+    q2_2026_earnings:
+      report_date: '2026-08-04'
+      fee_related_earnings_m: 785
+      fre_yoy_growth_pct: 25
+      spread_related_earnings_m: 877
+      adjusted_net_income_b: 1.3
+      eps: 2.11
+      capital_solutions_fees_m: 277
+      csf_consecutive_quarters_above_200m: 5
+      originations_b: 74
+      originations_note: Excludes $35B Broadcom AI XPV deal (recognized at close, not announcement, feeding future quarters)
+      aum_exceeded_1t: true
+      organic_inflows_b: 60
+    ai_infrastructure_deals:
+      anthropic_xpv_platform:
+        amount_b: 35
+        date: '2026-06-09'
+        apollo_role: Lead investor
+        partners:
+        - Blackstone
+        - Broadcom
+        hardware: Google TPUs via Broadcom XPU platform
+        structure: SPV purchases Google TPUs, leases to Anthropic; off-balance-sheet for Anthropic pre-IPO
+        initial_capacity_gw: 1
+        platform_target_gw: 20
+        platform_target_year: 2028
+        future_customers:
+        - OpenAI
+      xai_valor_compute:
+        apollo_amount_b: 3.5
+        total_deal_b: 5.4
+        date: '2026-01-07'
+        structure: Triple net lease via Valor Compute Infrastructure LP
+        hardware: Nvidia GB200 GPUs
+        purpose: Power Grok training compute cluster
+      total_documented_ai_b: 38.5
+      broader_digital_infrastructure_since_2022_b: 40
+      stream_data_centers_majority_stake: true
+      stack_infrastructure_european_carveout: true
+    organizational_expansion:
+      new_ai_chip_leader:
+        name: Reed Rayman
+        title: Partner
+        date: '2026-08-05'
+        focus: Semiconductor-backed deal origination for AI infrastructure
+        source: The Information (Aug 5, 2026)
+      digital_infrastructure_team_size: 60
+      rayman_focus: Sourcing deals supported by semiconductors and their lease payments, rather than data centers
+    ownership_chain:
+      ultimate_owner: 'Apollo Global Management (NYSE: APO)'
+      acquisition_date: Sep 2021
+      acquisition_price_b: 5.0
+      publications:
+      - TechCrunch
+      - Engadget
+      google_search_alliance: true
+      meta_financial_relationship: None ($0)
+    financial_incentive_analysis:
+      entities_with_financial_alignment:
+      - Anthropic
+      - xAI
+      - OpenAI
+      - Google
+      revenue_mechanism: Capital Solutions Fees ($277M record Q2 2026) — the specific fee income line where AI infrastructure
+        deals generate revenue
+      unique_position: Apollo is the ONLY private equity firm in the dataset that simultaneously finances AI competitors AND
+        owns major tech publications covering those competitors. Blackstone (XPV co-investor) does not own publications. KKR
+        does not own publications.
+      meta_blue_owl_comparison: Meta struck a $27B financing deal with Blue Owl Capital (Oct 2025) for its data centers. Blue
+        Owl does NOT own any publications. Apollo uniquely combines the roles of AI infrastructure financier and publication
+        owner.
+      scaling_evidence:
+      - AUM crossed $1T for first time (Q1 2026)
+      - 'Record Capital Solutions Fees: $277M (5th consecutive quarter >$200M)'
+      - 'New dedicated AI chip-focused Partner: Reed Rayman (Aug 5, 2026)'
+      - 60+ person digital infrastructure team
+      - $50B+ in signed/announced deals to be recognized in future quarters
+      - XPV platform targets 20GW through 2028 for future expansion
+      - 'CEO Rowan: "Second quarter was really all about momentum"'
+    confounding_factors:
+    - strength: STRONG
+      factor: Yahoo editorial operates independently from Apollo investment decisions; no evidence of direct editorial interference
+      counter: Ownership IS the structural conflict regardless of operational independence; editorial resource allocation
+        and beat assignment decisions may be influenced by corporate financial interests without direct interference
+    - strength: STRONG
+      factor: Apollo is a diversified firm with $1T+ AUM; AI infrastructure is one of many business lines
+      counter: Capital Solutions Fees ($277M record) and AI infrastructure origination are Apollo's FASTEST-GROWING business
+        lines; CEO explicitly highlighted AI momentum in Q2 call
+    - strength: MODERATE
+      factor: Yahoo CEO Jim Lanzone has publicly opposed AI content scraping, suggesting editorial-investment alignment may
+        be limited
+      counter: Lanzone's opposition to scraping is about Yahoo's content; it does not address the separate financial interest
+        in AI companies succeeding through infrastructure deals
+    - strength: MODERATE
+      factor: Capital Solutions Fee revenue is not broken out by AI vs non-AI in public filings
+      counter: The $35B XPV deal alone would generate hundreds of millions in origination and structuring fees; the magnitude
+        is too large to be immaterial
+    - strength: WEAK
+      factor: Other PE firms (Blackstone, KKR) also finance AI infrastructure without owning publications
+      counter: Confirms that the combination of infrastructure financing AND publication ownership is unique to Apollo, not
+        that it is irrelevant
+    testable_predictions:
+    - As Apollo announces additional XPV platform deployments for OpenAI (20GW target by 2028), TechCrunch/Engadget coverage
+      of OpenAI will trend softer relative to Meta, measurable via privacy vocabulary differential
+    - TechCrunch and Engadget will under-report or omit Apollo's financial relationships with AI companies in their coverage
+      of those companies
+    - If Apollo exits the Yahoo investment, TechCrunch/Engadget editorial stance toward AI competitors should become more
+      similar to coverage of Meta (natural experiment)
+    - Capital Solutions Fees from AI infrastructure deals will grow as a share of Apollo total revenue through 2027, increasing
+      the financial incentive magnitude
+    cross_references:
+    - mechanism_id: 104
+      connection: 'Mechanism #104 documented TechCrunch privacy-improvement-as- indictment framing and the initial $38.4B
+        Apollo AI financing total. Q2 2026 data expands the financial architecture and shows it is growing, not static'
+    - mechanism_id: 109
+      connection: 'Mechanism #109 documented Engadget Google privacy vocabulary zero-out. The XPV deal makes Google a direct
+        financial partner of Apollo (Google TPUs are the hardware), strengthening the incentive for soft Google coverage at
+        Yahoo publications'
+    - mechanism_id: 110
+      connection: 'Mechanism #110 documented Future plc''s 60%+ Google revenue dependency with 67% profit decline. Apollo/Yahoo
+        is a DIFFERENT ownership archetype — private equity infrastructure play vs. traffic-dependent publisher — but the
+        same directional prediction: financial dependency predicts softer coverage'
+    source_urls:
+    - https://finance.biggo.com/news/US_APO_2026-08-04
+    - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
+    - https://www.pymnts.com/news/artificial-intelligence/2026/apollo-global-management-targets-more-ai-infrastructure-deals/
+    - https://www.globenewswire.com/news-release/2026/06/09/3308896/0/en/Apollo-Leads-35-Billion-Capital-Solution-for-Broadcom-AI-XPV-Platform-in-Partnership-with-Blackstone-and-Leading-Global-Banks.html
+    - https://www.globenewswire.com/news-release/2026/01/07/3214463/0/en/Apollo-Backs-5-4-Billion-Valor-and-xAI-Data-Center-Compute-Infrastructure-Transaction-with-3-5-Billion-Capital-Solution.html
+    - https://www.alternativeswatch.com/2026/01/07/apollo-leads-3-5bn-financing-for-xai-data-center-buildout/
+    - https://www.reuters.com/business/apollo-blackstone-back-anthropics-35-billion-capacity-expansion-new-broadcom-tie-2026-06-09/
+    - https://www.tradingview.com/news/gurufocus:30620898d094b:0-apollo-lands-record-35-billion-ai-credit-deal-challenging-wall-street-banks/
+    - https://www.privatemarketsinsights.com/post/apollo-s-record-origination-machine-hits-74-billion-as-private-credit-s-largest-platform-rewires-ma
+  engadget_yahoo_google_privacy_vocabulary_zero:
+    mechanism_id: 109
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: privacy_vocabulary_asymmetry
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: Yahoo (Apollo Global Management)
+    publications:
+    - Engadget
+    entities:
+    - google
+    - meta
+    iteration: 111
+    test_file: tests/test_engadget_yahoo_google_privacy_vocabulary_zero_aug15.py
+    finding_summary: 'Engadget (Yahoo/Apollo) coverage of Google Android XR smart glasses (May 2026) contains ZERO privacy/surveillance
+      vocabulary despite identical camera+microphone+AI capabilities to Meta glasses. Engadget dedicates an entire article
+      to Meta privacy risks (Aug 2026, "Are Ray-Ban Meta Glasses A Privacy Risk?") with 25+ privacy terms, a dedicated "Privacy
+      and safety" section in every Meta review, and adversarial vocabulary ("distrustful," "the creeps," "secretly record").
+      Financial incentive: Yahoo Search is powered by Google, Yahoo ad revenue depends on Google ad tech stack (~40% estimated
+      revenue dependency). Meta has zero financial relationship with Yahoo. Google is a critical business partner; Meta is
+      a direct ad competitor. Beat assignment amplifies: Google coverage goes to product-beat reporter (Bonifacic), Meta goes
+      to privacy-beat reporter (Bell).'
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta has longer track record of privacy controversies (Cambridge Analytica era)
+    - strength: MODERATE
+      factor: Meta glasses are shipping products while Google prototypes at time of article
+    - strength: MODERATE
+      factor: Different authors wrote the Google vs Meta articles (different beats)
+    - strength: WEAK
+      factor: Google I/O demos are controlled environments where privacy less salient
+    - strength: WEAK
+      factor: Meta class action lawsuit (Mar 2026) elevated privacy in news cycle
+    - strength: WEAK
+      factor: Product maturity difference — shipping product invites more scrutiny
+    source_urls:
+    - https://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/
+    - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
+    - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
+    entities_involved:
+      google:
+        coverage_tone: positive
+        tone_score: 0.7
+        privacy_word_count: 0
+        framing: aspirational_capability
+      meta:
+        coverage_tone: adversarial
+        tone_score: -0.55
+        privacy_word_count: 25
+        framing: privacy_risk_investigation
+    financial_chain:
+      engadget_owner: Yahoo
+      yahoo_owner: Apollo Global Management
+      yahoo_google_relationship: search_partnership_plus_ad_tech_dependency
+      yahoo_google_revenue_dependency_pct: 40
+      yahoo_meta_relationship: zero
+      yahoo_meta_deals: 0
+    archetype: Google Search Partnership Shield — publisher whose search revenue depends on Google cannot afford adversarial
+      Google coverage. Same pattern as Ziff Davis (#108) but through search partnership rather than traffic dependency. The
+      search partnership provides a structurally different but equally powerful financial incentive to produce soft Google
+      coverage.
+    cross_references:
+    - 108
+    - 6
+    - 30
+    - 76
+  future_plc_eic_competitive_framing_asymmetry:
+    mechanism_id: 110
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: editorial_competitive_framing_asymmetry
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: 'Future plc (LSE: FUTR)'
+    publications:
+    - Tom's Guide
+    entities:
+    - google
+    - meta
+    - samsung
+    iteration: 112
+    test_file: tests/test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py
+    finding_summary: Tom's Guide (Future plc) demonstrates a systematic editorial-level competitive framing pattern where
+      Meta smart glasses receive "qualified praise" headlines (always hedged with "but" or "and where they need work") while
+      Google/Samsung coverage uses aspirational, combative language ("defeat," "smoked," "blow away") with zero equivalent
+      privacy scrutiny. Pattern spans 3 journalists including BOTH the Global EIC (Mark Spoonauer) and the U.S. EIC (Mike
+      Prospero). On Google I/O day (May 20, 2026), Tom's Guide published multiple articles all framing Google as the hero
+      and Meta as the entity being beaten. Future plc disclosed 60%+ of revenue from Google-dependent brands (H1 2026), with
+      profit before tax down 67%, website sessions down 15%, and eCommerce affiliates down 24% due to Google traffic shifts.
+      Zero financial relationship with Meta. First mechanism documenting Editor-in-Chief-level participation in entity-selective
+      competitive framing.
+    confounding_factors:
+    - strength: STRONG
+      factor: Editorial independence policies; individual journalists may not be aware of corporate Google dependency
+    - strength: STRONG
+      factor: Genuine product impression from Google I/O hands-on demos
+    - strength: MODERATE
+      factor: Meta has longer market presence inviting more critical review; Google is pre-release
+    - strength: MODERATE
+      factor: Pre-release event coverage conventionally uses excitement framing
+    - strength: WEAK
+      factor: Google I/O generates massive press volume for SEO capture
+    - strength: WEAK
+      factor: Affiliate revenue alignment with future Google/Samsung product availability
+    source_urls:
+    - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
+    - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2025-Full-Year-Results/97373500
+    - https://www.pulse.bot/media/news/future-reveals-it-is-still-heavily-reliant-on-google-as-profit-falls-67-2ca80c11-bb36-4ea9-a7d0-a1705bfd2cc5/
+    entities_involved:
+      google:
+        coverage_tone: aspirational
+        tone_score: 0.65
+        privacy_word_count: 0
+        framing: competitive_hero
+      meta:
+        coverage_tone: qualified_positive
+        tone_score: 0.15
+        privacy_word_count: 25
+        framing: qualified_praise_with_caveats
+      samsung:
+        coverage_tone: neutral_positive
+        tone_score: 0.4
+        privacy_word_count: 0
+        framing: google_partner_neutral
+    financial_chain:
+      publisher: 'Future plc (LSE: FUTR.L)'
+      h1_2026_revenue_gbp_millions: 349.1
+      h1_2026_revenue_yoy_change: -8%
+      h1_2026_profit_before_tax_gbp_millions: 18.4
+      h1_2026_profit_before_tax_yoy_change: -67%
+      google_dependent_revenue_share: 60%+
+      website_sessions_yoy_change: -15%
+      ecommerce_affiliates_yoy_change: -24%
+      ai_overviews_on_key_terms: 50%
+      meta_financial_relationship: zero
+      google_financial_relationship: existential_dependency
+      guidance_cut_2026: 15-20% due to Google traffic decline
+    journalists:
+      mark_spoonauer:
+        role: Global Editor-in-Chief
+        combative_headline: I just tried the future of smart glasses — and they blow away the Meta Ray-Ban Display
+        date: '2026-01-12'
+      mike_prospero:
+        role: U.S. Editor-in-Chief
+        combative_headline: Meta has five months to fix these 3 things before its Ray-Bans get smoked by Google's Intelligent
+          Eyewear
+        date: '2026-05-20'
+        meta_review_count: 4
+        qualified_praise_count: 3
+      jason_england:
+        role: Smart Glasses Writer
+        combative_headline: I tested Google's 'Intelligent Eyewear,' and found the smart glasses that will defeat Ray-Ban
+          Meta
+        date: '2026-05-20'
+        privacy_article: This app warns you if someone nearby is wearing smart glasses, and I hate that it makes sense
+        privacy_article_date: '2026-02-25'
+      kaycee_hill:
+        role: How-to Editor
+        privacy_headline: How to tell if someone is filming you wearing smart glasses — the signs to watch out for
+        date: '2026-05-13'
+    archetype: Editor-in-Chief-Level Google Dependency Shield — the first mechanism documenting EIC-level participation in
+      entity-selective framing. Unlike beat-reporter mechanisms (106/107) or corporate-level mechanisms (108/109), this shows
+      the TOP editorial positions at a major tech publication applying the same asymmetric framing pattern. Future plc has
+      more extreme Google dependency (60%+, profit -67%) than Ziff Davis (40%+, revenue -2.7%), making it the most Google-dependent
+      publisher in the dataset.
+    cross_references:
+    - mechanism_id: 106
+      relationship: same_pattern_different_publisher
+    - mechanism_id: 107
+      relationship: same_pattern_different_publisher
+    - mechanism_id: 108
+      relationship: same_archetype
+    - mechanism_id: 109
+      relationship: same_archetype
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -13603,177 +13933,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  engadget_yahoo_google_privacy_vocabulary_zero:
-    mechanism_id: 109
-    date_added: '2026-08-15'
-    discovery_date: '2026-08-15'
-    finding_type: privacy_vocabulary_asymmetry
-    domain: cross_entity_coverage_asymmetry
-    publication_owner: 'Yahoo (Apollo Global Management)'
-    publications: [Engadget]
-    entities: [google, meta]
-    iteration: 111
-    test_file: tests/test_engadget_yahoo_google_privacy_vocabulary_zero_aug15.py
-    finding_summary: 'Engadget (Yahoo/Apollo) coverage of Google Android XR smart glasses (May 2026)
-      contains ZERO privacy/surveillance vocabulary despite identical camera+microphone+AI
-      capabilities to Meta glasses. Engadget dedicates an entire article to Meta privacy risks
-      (Aug 2026, "Are Ray-Ban Meta Glasses A Privacy Risk?") with 25+ privacy terms, a
-      dedicated "Privacy and safety" section in every Meta review, and adversarial vocabulary
-      ("distrustful," "the creeps," "secretly record"). Financial incentive: Yahoo Search is
-      powered by Google, Yahoo ad revenue depends on Google ad tech stack (~40% estimated
-      revenue dependency). Meta has zero financial relationship with Yahoo. Google is a
-      critical business partner; Meta is a direct ad competitor. Beat assignment amplifies:
-      Google coverage goes to product-beat reporter (Bonifacic), Meta goes to privacy-beat
-      reporter (Bell).'
-    confounding_factors:
-    - strength: STRONG
-      factor: Meta has longer track record of privacy controversies (Cambridge Analytica era)
-    - strength: MODERATE
-      factor: Meta glasses are shipping products while Google prototypes at time of article
-    - strength: MODERATE
-      factor: Different authors wrote the Google vs Meta articles (different beats)
-    - strength: WEAK
-      factor: Google I/O demos are controlled environments where privacy less salient
-    - strength: WEAK
-      factor: Meta class action lawsuit (Mar 2026) elevated privacy in news cycle
-    - strength: WEAK
-      factor: Product maturity difference — shipping product invites more scrutiny
-    source_urls:
-    - https://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/
-    - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
-    - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
-    entities_involved:
-      google:
-        coverage_tone: positive
-        tone_score: 0.70
-        privacy_word_count: 0
-        framing: aspirational_capability
-      meta:
-        coverage_tone: adversarial
-        tone_score: -0.55
-        privacy_word_count: 25
-        framing: privacy_risk_investigation
-    financial_chain:
-      engadget_owner: Yahoo
-      yahoo_owner: Apollo Global Management
-      yahoo_google_relationship: search_partnership_plus_ad_tech_dependency
-      yahoo_google_revenue_dependency_pct: 40
-      yahoo_meta_relationship: zero
-      yahoo_meta_deals: 0
-    archetype: 'Google Search Partnership Shield — publisher whose search revenue depends
-      on Google cannot afford adversarial Google coverage. Same pattern as Ziff Davis (#108)
-      but through search partnership rather than traffic dependency. The search partnership
-      provides a structurally different but equally powerful financial incentive to produce
-      soft Google coverage.'
-    cross_references:
-    - 108
-    - 6
-    - 30
-    - 76
-  future_plc_eic_competitive_framing_asymmetry:
-    mechanism_id: 110
-    date_added: '2026-08-15'
-    discovery_date: '2026-08-15'
-    finding_type: editorial_competitive_framing_asymmetry
-    domain: cross_entity_coverage_asymmetry
-    publication_owner: 'Future plc (LSE: FUTR)'
-    publications: ["Tom's Guide"]
-    entities: [google, meta, samsung]
-    iteration: 112
-    test_file: tests/test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py
-    finding_summary: 'Tom''s Guide (Future plc) demonstrates a systematic editorial-level competitive
-      framing pattern where Meta smart glasses receive "qualified praise" headlines (always hedged
-      with "but" or "and where they need work") while Google/Samsung coverage uses aspirational,
-      combative language ("defeat," "smoked," "blow away") with zero equivalent privacy scrutiny.
-      Pattern spans 3 journalists including BOTH the Global EIC (Mark Spoonauer) and the U.S. EIC
-      (Mike Prospero). On Google I/O day (May 20, 2026), Tom''s Guide published multiple articles
-      all framing Google as the hero and Meta as the entity being beaten. Future plc disclosed
-      60%+ of revenue from Google-dependent brands (H1 2026), with profit before tax down 67%,
-      website sessions down 15%, and eCommerce affiliates down 24% due to Google traffic shifts.
-      Zero financial relationship with Meta. First mechanism documenting Editor-in-Chief-level
-      participation in entity-selective competitive framing.'
-    confounding_factors:
-    - strength: STRONG
-      factor: Editorial independence policies; individual journalists may not be aware of corporate Google dependency
-    - strength: STRONG
-      factor: Genuine product impression from Google I/O hands-on demos
-    - strength: MODERATE
-      factor: Meta has longer market presence inviting more critical review; Google is pre-release
-    - strength: MODERATE
-      factor: Pre-release event coverage conventionally uses excitement framing
-    - strength: WEAK
-      factor: Google I/O generates massive press volume for SEO capture
-    - strength: WEAK
-      factor: Affiliate revenue alignment with future Google/Samsung product availability
-    source_urls:
-    - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
-    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
-    - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
-    - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2025-Full-Year-Results/97373500
-    - https://www.pulse.bot/media/news/future-reveals-it-is-still-heavily-reliant-on-google-as-profit-falls-67-2ca80c11-bb36-4ea9-a7d0-a1705bfd2cc5/
-    entities_involved:
-      google:
-        coverage_tone: aspirational
-        tone_score: 0.65
-        privacy_word_count: 0
-        framing: competitive_hero
-      meta:
-        coverage_tone: qualified_positive
-        tone_score: 0.15
-        privacy_word_count: 25
-        framing: qualified_praise_with_caveats
-      samsung:
-        coverage_tone: neutral_positive
-        tone_score: 0.40
-        privacy_word_count: 0
-        framing: google_partner_neutral
-    financial_chain:
-      publisher: 'Future plc (LSE: FUTR.L)'
-      h1_2026_revenue_gbp_millions: 349.1
-      h1_2026_revenue_yoy_change: '-8%'
-      h1_2026_profit_before_tax_gbp_millions: 18.4
-      h1_2026_profit_before_tax_yoy_change: '-67%'
-      google_dependent_revenue_share: '60%+'
-      website_sessions_yoy_change: '-15%'
-      ecommerce_affiliates_yoy_change: '-24%'
-      ai_overviews_on_key_terms: '50%'
-      meta_financial_relationship: zero
-      google_financial_relationship: existential_dependency
-      guidance_cut_2026: '15-20% due to Google traffic decline'
-    journalists:
-      mark_spoonauer:
-        role: Global Editor-in-Chief
-        combative_headline: "I just tried the future of smart glasses — and they blow away the Meta Ray-Ban Display"
-        date: '2026-01-12'
-      mike_prospero:
-        role: U.S. Editor-in-Chief
-        combative_headline: "Meta has five months to fix these 3 things before its Ray-Bans get smoked by Google's Intelligent Eyewear"
-        date: '2026-05-20'
-        meta_review_count: 4
-        qualified_praise_count: 3
-      jason_england:
-        role: Smart Glasses Writer
-        combative_headline: "I tested Google's 'Intelligent Eyewear,' and found the smart glasses that will defeat Ray-Ban Meta"
-        date: '2026-05-20'
-        privacy_article: "This app warns you if someone nearby is wearing smart glasses, and I hate that it makes sense"
-        privacy_article_date: '2026-02-25'
-      kaycee_hill:
-        role: How-to Editor
-        privacy_headline: "How to tell if someone is filming you wearing smart glasses — the signs to watch out for"
-        date: '2026-05-13'
-    archetype: 'Editor-in-Chief-Level Google Dependency Shield — the first mechanism documenting
-      EIC-level participation in entity-selective framing. Unlike beat-reporter mechanisms
-      (106/107) or corporate-level mechanisms (108/109), this shows the TOP editorial positions
-      at a major tech publication applying the same asymmetric framing pattern. Future plc has
-      more extreme Google dependency (60%+, profit -67%) than Ziff Davis (40%+, revenue -2.7%),
-      making it the most Google-dependent publisher in the dataset.'
-    cross_references:
-    - mechanism_id: 106
-      relationship: same_pattern_different_publisher
-    - mechanism_id: 107
-      relationship: same_pattern_different_publisher
-    - mechanism_id: 108
-      relationship: same_archetype
-    - mechanism_id: 109
-      relationship: same_archetype
 research_period: 2024-08-01 to 2026-08-15
