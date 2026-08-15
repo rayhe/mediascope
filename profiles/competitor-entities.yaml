@@ -3763,20 +3763,24 @@ entities:
     ziff_davis_triple_squeeze_mechanism_108:
       mechanism_id: 108
       date_analyzed: '2026-08-14'
+      date_updated: '2026-08-15'
       publication_owner: 'Ziff Davis (NASDAQ: ZD)'
       publications: [CNET, ZDNET, PCMag, Mashable]
       finding_summary: 'Ziff Davis faces a "triple squeeze" of simultaneous financial pressures
-        predicting entity-selective coverage: (1) Google existential dependency — 40%+ traffic
+        predicting entity-selective coverage: (1) Google existential dependency -- 40%+ traffic
         from search, ZDNET 97% organic decline, 57% revenue from ads dependent on search, AI
-        Overviews on 20%+ queries, NO Google AI deal; (2) OpenAI active litigation — copyright
-        suit filed Apr 2025 seeking hundreds of millions, chose litigation over licensing;
-        (3) Meta zero-relationship — no AI deal, no ad dependency, no litigation, lowest-cost
-        editorial target. Samsung/Google advertiser compound chain amplifies: Samsung $9.7B
-        global ad spend flows through CNET/ZDNET/PCMag, Samsung glasses use Google Gemini,
-        soft Samsung protects ads + soft Google protects traffic. This corporate architecture
-        explains journalist patterns in #106 (Stein/CNET) and #107 (Wan/ZDNET). Q2 2026:
-        $286.7M revenue (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment,
-        strategic review of asset sales underway.'
+        Overviews NOW on 50% of relevant queries (up from 36%, CEO Shah Q2 2026 call), NO
+        Google AI deal; (2) OpenAI active litigation -- copyright suit filed Apr 2025 seeking
+        hundreds of millions, CEO Shah Q2 2026: "litigation continuing," "not inclined to enter
+        RAG-focused agreements"; (3) Meta zero-relationship -- no AI deal, no ad dependency,
+        no litigation, lowest-cost editorial target. Samsung/Google advertiser compound chain
+        amplifies: Samsung $9.7B global ad spend flows through CNET/ZDNET/PCMag, Samsung
+        glasses use Google Gemini, soft Samsung protects ads + soft Google protects traffic.
+        This corporate architecture explains journalist patterns in #106 (Stein/CNET) and
+        #107 (Wan/ZDNET). Cross-publisher divergence from News Corp (#117): NC has deals
+        with OpenAI and Meta, record profitability; ZD has lawsuit and no deals, operating
+        loss. Q2 2026: $286.7M revenue (-2.7%), operating LOSS $(44.7M), $54.8M goodwill
+        impairment, strategic review of asset sales underway.'
       financial_data:
         ticker: ZD
         market_cap_b: 1.988
@@ -3788,12 +3792,20 @@ entities:
         search_traffic_pct: 40
         zdnet_organic_decline_pct: 97
         connectivity_sale_m: 1216.1
+        google_ai_overviews_pct: 50
+        google_ai_overviews_prior_pct: 36
+        ceo_anti_rag_quote: 'not inclined to enter agreements focused on retrieval-augmented
+          generation that could compromise its ability to seek compensation for foundational
+          model training'
+        ceo_litigation_quote: "the company's litigation with OpenAI is continuing"
+        semrush_most_cited: [CNET, PCMag, IGN]
       openai_lawsuit:
         filed: '2025-04-24'
         court: federal court, Delaware
         complaint_pages: 62
         damages_sought: hundreds of millions
         allegations: copyright infringement, DMCA violations, unjust enrichment, trademark dilution
+        status_q2_2026: continuing
       meta_relationship: zero (no deal, no ads, no litigation)
       google_relationship: existential dependency (traffic + revenue source)
       samsung_relationship: advertiser (product reviews + affiliate commissions)
@@ -3807,6 +3819,7 @@ entities:
       - 106
       - 107
       - 76
+      - 117
     verge_pmc_google_litigation_wearables_paradox_mechanism_112:
       mechanism_id: 112
       date_added: '2026-08-15'

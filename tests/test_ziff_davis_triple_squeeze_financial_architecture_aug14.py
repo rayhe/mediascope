@@ -214,10 +214,12 @@ class TestGoogleExistentialDependency:
         zd_properties_in_top_10 = ['ZDNET', 'CNET', 'PCMag', 'Mashable']
         assert len(zd_properties_in_top_10) == 4  # Most of any single owner
 
-    def test_ai_overviews_on_20pct_plus_queries(self):
-        """Google AI Overviews appear on 20%+ of top Ziff Davis queries (Q1 2025 call)."""
-        ai_overview_pct = 20
-        assert ai_overview_pct >= 20
+    def test_ai_overviews_on_50pct_of_relevant_queries(self):
+        """Google AI Overviews appear on ~50% of top Ziff Davis queries (Q2 2026 call).
+        CEO Shah: 'share of relevant search queries presenting Google AI Overviews
+        rising to roughly 50% from approximately 36%.' Previously reported as 20%+."""
+        ai_overview_pct = 50
+        assert ai_overview_pct >= 50
 
     def test_no_google_ai_content_licensing_deal(self):
         """Ziff Davis has NO AI content licensing deal with Google.

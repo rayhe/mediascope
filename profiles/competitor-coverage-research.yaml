@@ -14777,4 +14777,83 @@ publications:
     - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
     - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
 
+  news_corp_q4_fy2026_woo_sue_posture:
+    mechanism_id: 117
+    date_analyzed: '2026-08-15'
+    journalist: Robert Thomson (CEO, News Corp)
+    publication: News Corp (WSJ, NY Post, MarketWatch, HarperCollins)
+    finding: >-
+      News Corp Q4 FY2026 earnings call (Aug 5, 2026) introduced "woo and sue" as explicit corporate
+      AI posture: OpenAI and Meta are "trusted content relationships" (deal partners), while unlicensed
+      AI scrapers are "pilferers" and "crass kleptomaniacs." Record quarter: revenue $2.34B (+11%), EBITDA $423M
+      (+31%). Dow Jones revenue $644M (+7%) with "higher content licensing revenue" explicitly cited as growth
+      driver. News Corp is the first publisher receiving revenue from THREE AI entities: OpenAI ($50M/yr
+      licensing), Meta (licensing), and Anthropic ($1.5B settlement share via HarperCollins). Targets $1B
+      Dow Jones EBITDA by FY2030, AI licensing integral to trajectory. Cross-publisher contrast with Ziff Davis
+      Q2 2026 (Mechanism #108): ZD revenue $286.7M (-2.7%), operating LOSS $(44.7M), suing OpenAI, refuses
+      RAG licensing, Google AI Overviews now at 50% of relevant queries (up from 36%). The financial posture
+      divergence (deal vs litigation) predicts coverage direction: News Corp publications (WSJ) frame Meta
+      through human-interest/business-positive lens; Ziff Davis publications (CNET/ZDNET) apply entity-selective
+      privacy vocabulary (Mechanisms #106, #107).
+    key_finding: Cross-publisher AI posture revenue divergence predicts coverage direction
+    mechanism: corporate_ai_posture_revenue_alignment
+    confounding_factors:
+    - 'STRONG: Editorial independence policies at both companies'
+    - 'STRONG: Individual journalists may be unaware of corporate AI postures'
+    - 'STRONG: Meta genuinely has more historical privacy controversies'
+    - 'MODERATE: WSJ is business publication, CNET is consumer tech (genre difference)'
+    - 'MODERATE: News Corp revenue growth has multiple drivers beyond AI licensing'
+    - 'WEAK: Sample size of earnings calls is limited'
+    - 'WEAK: Woo and sue language may be performative for shareholders'
+    news_corp_financials:
+      q4_fy2026_revenue_b: 2.34
+      q4_revenue_growth_pct: 11
+      q4_ebitda_m: 423
+      q4_ebitda_growth_pct: 31
+      fy2026_revenue_b: 9.03
+      fy2026_net_income_m: 743
+      dow_jones_q4_revenue_m: 644
+      dow_jones_q4_ebitda_m: 181
+      ai_deal_partners: ['OpenAI', 'Meta']
+      anthropic_settlement_expected: true
+      ai_revenue_streams_count: 3
+    ziff_davis_financials:
+      q2_2026_revenue_m: 286.7
+      q2_revenue_growth_pct: -2.7
+      q2_operating_income_m: -44.7
+      goodwill_impairment_m: 54.8
+      ai_deals: 0
+      openai_lawsuit_active: true
+      google_ai_overviews_pct: 50
+    cross_publisher_backreferences:
+    - mechanism_id: 108
+      relationship: counterpart_posture
+      connection: >-
+        Mechanism #108 documents Ziff Davis triple squeeze. Mechanism #117 documents News Corp
+        woo-and-sue posture. Together they show how opposite AI licensing strategies predict
+        divergent coverage patterns at the publication level.
+    - mechanism_id: 106
+      relationship: editorial_effect
+      connection: >-
+        Mechanism #106 (Scott Stein/CNET enthusiasm gradient) is the editorial EFFECT of
+        Ziff Davis's zero-Meta-deal financial architecture documented in #108 and contrasted in #117.
+    - mechanism_id: 107
+      relationship: editorial_effect
+      connection: >-
+        Mechanism #107 (Kerry Wan/ZDNET privacy scrutiny asymmetry) is another editorial EFFECT
+        of the same financial architecture.
+    - mechanism_id: 42
+      relationship: news_corp_triple_revenue
+      connection: >-
+        Mechanism #42 documented News Corp triple-revenue AI ecosystem. #117 updates with Q4 FY2026
+        earnings data confirming the Anthropic settlement revenue stream and Thomson's explicit
+        "woo and sue" language.
+    source_urls:
+    - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
+    - https://thefinancialnews247.com/news-corp-posts-record-profitability-11-jump-in-q4-revenue/
+    - https://seekingalpha.com/news/4627081-news-corp-targets-1b-dow-jones-ebitda-by-fiscal-30-while-signaling-further-margin-expansion
+    - https://www.thewrap.com/industry-news/business/news-corp-beats-q4-revenue-earnings-estimates/
+    - https://www.businesswire.com/news/home/20260806819569/en/Ziff-Davis-Reports-Second-Quarter-2026-Financial-Results
+    - https://www.marketbeat.com/instant-alerts/ziff-davis-q2-earnings-call-highlights-2026-08-07/
+
 research_period: 2024-08-01 to 2026-08-15
