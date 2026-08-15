@@ -18727,3 +18727,43 @@ journalists:
       samsung_coverage_independent: 0
       snap_coverage_independent: neutral
       openai_coverage_independent: curious
+
+- name: Scott Stein
+  career:
+  - beat: XR, VR, AR, wearables, smart glasses
+    end: present
+    publication: cnet
+    role: senior_editor
+    start: '2012'
+    notes: '15+ years covering XR, VR, AR at CNET. Editor-at-large / senior editor
+      for XR and wearable tech. One of the most prolific smart glasses reviewers in
+      tech journalism. CNET owned by Ziff Davis since Q3 2024 (previously Red Ventures
+      2020-2024, CBS Interactive before that).'
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 106
+      pattern: enthusiasm_gradient_with_privacy_deferral
+      description: 'Applies entity-selective enthusiasm gradient. In same Google I/O
+        article (May 19, 2026): Google/Samsung glasses receive superlative promotional
+        language ("wowed," "best smart glasses," "redefine") while Meta gets single-sentence
+        privacy dismissal ("muddy lines"). Google gets executive quotes on privacy planning;
+        Meta gets no defense. CNET depends on Google for search traffic revenue.'
+      google_coverage:
+        tone: 0.65
+        vocabulary: ['wowed', 'best smart glasses out there', 'redefine what smart glasses can be']
+        privacy_treatment: deferral_with_exec_quotes
+        adversarial_investigation: false
+      meta_coverage:
+        tone: -0.10
+        vocabulary: ['muddy lines', 'privacy problems', 'janky']
+        privacy_treatment: single_sentence_dismissal
+        adversarial_investigation: false
+      snap_coverage:
+        travel_sponsorship: true
+        event: AWE 2026
+        disclosed: true
+    financial_context:
+      cnet_owner: Ziff Davis
+      google_search_dependency: high
+      samsung_advertising: $9.7B annual
+      meta_relationship: none

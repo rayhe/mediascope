@@ -3693,6 +3693,41 @@ entities:
       - https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
       - https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
       - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    scott_stein_cnet_enthusiasm_gradient_mechanism_106:
+      mechanism_id: 106
+      journalist: Scott Stein
+      publication: CNET (Ziff Davis)
+      date_added: '2026-08-14'
+      finding_summary: 'Stein applies entity-selective enthusiasm gradient with privacy deferral.
+        In the SAME Google I/O article (May 19, 2026), Google/Samsung glasses receive superlative
+        language ("I was wowed," "best smart glasses out there," "redefine what smart glasses can be")
+        while Meta receives single-sentence privacy dismissal ("muddy lines on its AI privacy policies").
+        Google executives quoted at length about privacy planning; Meta gets no defense. Samsung Galaxy
+        Glasses share identical Snapdragon AR1 Gen 1 hardware. CNET (Ziff Davis) depends heavily on
+        Google search traffic for ad/affiliate revenue (68% organic decline 2020-2024). Samsung is
+        4th-largest global advertiser ($9.7B). Snap covered Stein AWE 2026 travel costs (disclosed).
+        CNET has ZERO financial relationship with Meta.'
+      test_file: tests/test_scott_stein_cross_entity_enthusiasm_gradient_aug14.py
+      financial_context:
+        cnet_owner: Ziff Davis (acquired Q3 2024 for $100M+ from Red Ventures)
+        cnet_google_dependency: high (68% organic traffic loss 2020-2024, SEO-driven revenue model)
+        samsung_ad_spend: $9.7B annual (4th-largest global advertiser)
+        snap_travel_sponsorship: AWE 2026 (disclosed)
+        meta_financial_relationship: none
+      tone_comparison:
+        google_glasses: +0.65 (superlative promotional)
+        meta_glasses: -0.10 (mildly critical)
+        tone_delta: 0.75
+      source_urls:
+      - https://www.armwoodtechnology.com/2026/05/google-has-so-many-new-smart-glasses.html
+      - https://voicesofvr.com/1654-cnets-scott-steins-reflections-on-meta-ray-ban-display-glasses-neural-band-implications/
+      - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
+      - https://www.hechoencalifornia1010.com/awe-2026-live-smart-glasses-are-bringing-ai-to-our-faces/
+      related_mechanisms:
+      - 76
+      - 89
+      - 91
+      - 102
   x_twitter:
     display_name: X / Twitter
     aliases:

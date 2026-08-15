@@ -35814,3 +35814,27 @@ Joanna Stern's WSJ→New Things/NBC career migration (Apr 2026) provides the str
 6. `docs/ARCHITECTURE.md` — stat sync
 
 **Stats:** 379 test files | ~12,930 tests | 105 mechanisms
+
+---
+
+### Iteration #109 — Type B (Journalist Cross-Entity Tracking)
+**Time:** 2026-08-14 19:00 PT
+**Rotation:** A→D→C→B→A→D→C→B→A→B (continuing B)
+
+**Finding:** Scott Stein (CNET / Ziff Davis) — Entity-Selective Enthusiasm Gradient with Privacy Deferral (Mechanism #106)
+
+Scott Stein, CNET's senior XR/wearables editor (15+ years), applies graduated enthusiasm spectrum to smart glasses. In the SAME Google I/O article (May 19, 2026): Google/Samsung glasses receive superlatives ("I was wowed," "best smart glasses out there," "redefine what smart glasses can be") while Meta receives single-sentence privacy dismissal ("muddy lines on its AI privacy policies"). Google exec Shahram Izadi quoted at length about privacy planning; Meta gets no defense. Samsung Galaxy Glasses share identical Snapdragon AR1 Gen 1 hardware, 12MP camera, LED indicator.
+
+Financial context: CNET (Ziff Davis since Q3 2024) depends heavily on Google search traffic for ad/affiliate revenue (68% organic decline 2020-2024). Samsung 4th-largest global advertiser ($9.7B). Snap covered Stein's AWE 2026 travel costs (disclosed). CNET has ZERO documented financial relationship with Meta.
+
+6 confounding factors documented (2 STRONG, 2 MODERATE, 2 WEAK). 4 testable predictions.
+
+**Updates:**
+1. `tests/test_scott_stein_cross_entity_enthusiasm_gradient_aug14.py` — 14 classes, 42 tests (all passing)
+2. `profiles/competitor-coverage-research.yaml` — mechanism #106 under cross_publication_findings
+3. `profiles/competitor-entities.yaml` — scott_stein_cnet_enthusiasm_gradient_mechanism_106 under google entity
+4. `profiles/careers/journalists.yaml` — Scott Stein entry with career history and mechanism #106
+5. `README.md` — stat sync (380 files, ~12,972 tests)
+6. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 380 test files | ~12,972 tests | 106 mechanisms

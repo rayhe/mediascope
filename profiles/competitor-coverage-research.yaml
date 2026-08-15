@@ -9930,6 +9930,70 @@ cross_publication_findings:
     - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
     - https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/
     - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
+  scott_stein_cnet_enthusiasm_gradient_privacy_deferral:
+    mechanism_id: 106
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: journalist_cross_entity_enthusiasm_gradient
+    domain: wearables_privacy
+    journalist: Scott Stein
+    publication: CNET (Ziff Davis)
+    entities:
+    - google
+    - samsung
+    - meta
+    - snap
+    iteration: 108
+    test_file: tests/test_scott_stein_cross_entity_enthusiasm_gradient_aug14.py
+    finding_summary: 'Scott Stein (CNET, 15+ years covering XR) applies entity-selective enthusiasm
+      gradient and privacy deferral in smart glasses coverage. In the SAME article (Google I/O,
+      May 19, 2026), Google/Samsung glasses receive superlative promotional language ("I was wowed,"
+      "best smart glasses out there," "redefine what smart glasses can be") while Meta receives
+      a single-sentence privacy dismissal ("muddy lines on its AI privacy policies"). Google gets
+      extended executive quotes about privacy planning; Meta gets no defense. Samsung Galaxy Glasses
+      share identical Snapdragon AR1 Gen 1 hardware. CNET (Ziff Davis) depends heavily on Google
+      search traffic for ad/affiliate revenue (68% organic traffic loss 2020-2024). Samsung is
+      4th-largest global advertiser ($9.7B). Snap covered Stein AWE 2026 travel costs (disclosed).
+      CNET has ZERO documented financial relationship with Meta.'
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Google Android XR software integration IS objectively more advanced for app
+        connectivity — Stein enthusiasm may reflect genuine product assessment'
+    - strength: STRONG
+      factor: 'Stein has 15+ years covering XR — expert perspective may reflect genuine
+        innovation evaluation rather than financial alignment'
+    - strength: MODERATE
+      factor: 'Meta IS market leader with genuine privacy incidents (Cambridge Analytica,
+        contractor data review) — legitimate to hold to higher scrutiny'
+    - strength: MODERATE
+      factor: 'Google I/O is curated press event designed for excitement; Meta Connect demos
+        had technical failures — different contexts produce different tone'
+    - strength: WEAK
+      factor: 'Pre-release products naturally get more optimistic framing than shipped ones'
+    - strength: WEAK
+      factor: 'Different article formats (preview article vs podcast reflection) may produce
+        different tones'
+    testable_predictions:
+    - 'Samsung/Google post-launch privacy incidents will receive growing pains framing from
+      Stein, not muddy lines adversarial language'
+    - 'Stein CNET reviews of shipped Samsung/Google glasses will retain superlative vocabulary
+      even after real-world privacy testing'
+    - 'If Gemini processes camera data identically to Meta AI, Stein will NOT produce a
+      standalone privacy investigation of Google glasses'
+    - 'When Google reveals fall event privacy policy details, Stein will cover it more
+      sympathetically than Meta equivalent privacy documentation'
+    source_urls:
+    - https://www.armwoodtechnology.com/2026/05/google-has-so-many-new-smart-glasses.html
+    - https://voicesofvr.com/1654-cnets-scott-steins-reflections-on-meta-ray-ban-display-glasses-neural-band-implications/
+    - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
+    - https://www.hechoencalifornia1010.com/awe-2026-live-smart-glasses-are-bringing-ai-to-our-faces/
+    - https://twit.tv/posts/tech/scott-stein-explains-metas-ray-ban-display-breakthroughs
+    cross_references:
+    - 76
+    - 89
+    - 91
+    - 97
+    - 102
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
