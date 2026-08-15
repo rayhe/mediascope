@@ -13670,4 +13670,110 @@ publications:
     - 6
     - 30
     - 76
+  future_plc_eic_competitive_framing_asymmetry:
+    mechanism_id: 110
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: editorial_competitive_framing_asymmetry
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: 'Future plc (LSE: FUTR)'
+    publications: ["Tom's Guide"]
+    entities: [google, meta, samsung]
+    iteration: 112
+    test_file: tests/test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py
+    finding_summary: 'Tom''s Guide (Future plc) demonstrates a systematic editorial-level competitive
+      framing pattern where Meta smart glasses receive "qualified praise" headlines (always hedged
+      with "but" or "and where they need work") while Google/Samsung coverage uses aspirational,
+      combative language ("defeat," "smoked," "blow away") with zero equivalent privacy scrutiny.
+      Pattern spans 3 journalists including BOTH the Global EIC (Mark Spoonauer) and the U.S. EIC
+      (Mike Prospero). On Google I/O day (May 20, 2026), Tom''s Guide published multiple articles
+      all framing Google as the hero and Meta as the entity being beaten. Future plc disclosed
+      60%+ of revenue from Google-dependent brands (H1 2026), with profit before tax down 67%,
+      website sessions down 15%, and eCommerce affiliates down 24% due to Google traffic shifts.
+      Zero financial relationship with Meta. First mechanism documenting Editor-in-Chief-level
+      participation in entity-selective competitive framing.'
+    confounding_factors:
+    - strength: STRONG
+      factor: Editorial independence policies; individual journalists may not be aware of corporate Google dependency
+    - strength: STRONG
+      factor: Genuine product impression from Google I/O hands-on demos
+    - strength: MODERATE
+      factor: Meta has longer market presence inviting more critical review; Google is pre-release
+    - strength: MODERATE
+      factor: Pre-release event coverage conventionally uses excitement framing
+    - strength: WEAK
+      factor: Google I/O generates massive press volume for SEO capture
+    - strength: WEAK
+      factor: Affiliate revenue alignment with future Google/Samsung product availability
+    source_urls:
+    - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
+    - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2025-Full-Year-Results/97373500
+    - https://www.pulse.bot/media/news/future-reveals-it-is-still-heavily-reliant-on-google-as-profit-falls-67-2ca80c11-bb36-4ea9-a7d0-a1705bfd2cc5/
+    entities_involved:
+      google:
+        coverage_tone: aspirational
+        tone_score: 0.65
+        privacy_word_count: 0
+        framing: competitive_hero
+      meta:
+        coverage_tone: qualified_positive
+        tone_score: 0.15
+        privacy_word_count: 25
+        framing: qualified_praise_with_caveats
+      samsung:
+        coverage_tone: neutral_positive
+        tone_score: 0.40
+        privacy_word_count: 0
+        framing: google_partner_neutral
+    financial_chain:
+      publisher: 'Future plc (LSE: FUTR.L)'
+      h1_2026_revenue_gbp_millions: 349.1
+      h1_2026_revenue_yoy_change: '-8%'
+      h1_2026_profit_before_tax_gbp_millions: 18.4
+      h1_2026_profit_before_tax_yoy_change: '-67%'
+      google_dependent_revenue_share: '60%+'
+      website_sessions_yoy_change: '-15%'
+      ecommerce_affiliates_yoy_change: '-24%'
+      ai_overviews_on_key_terms: '50%'
+      meta_financial_relationship: zero
+      google_financial_relationship: existential_dependency
+      guidance_cut_2026: '15-20% due to Google traffic decline'
+    journalists:
+      mark_spoonauer:
+        role: Global Editor-in-Chief
+        combative_headline: "I just tried the future of smart glasses — and they blow away the Meta Ray-Ban Display"
+        date: '2026-01-12'
+      mike_prospero:
+        role: U.S. Editor-in-Chief
+        combative_headline: "Meta has five months to fix these 3 things before its Ray-Bans get smoked by Google's Intelligent Eyewear"
+        date: '2026-05-20'
+        meta_review_count: 4
+        qualified_praise_count: 3
+      jason_england:
+        role: Smart Glasses Writer
+        combative_headline: "I tested Google's 'Intelligent Eyewear,' and found the smart glasses that will defeat Ray-Ban Meta"
+        date: '2026-05-20'
+        privacy_article: "This app warns you if someone nearby is wearing smart glasses, and I hate that it makes sense"
+        privacy_article_date: '2026-02-25'
+      kaycee_hill:
+        role: How-to Editor
+        privacy_headline: "How to tell if someone is filming you wearing smart glasses — the signs to watch out for"
+        date: '2026-05-13'
+    archetype: 'Editor-in-Chief-Level Google Dependency Shield — the first mechanism documenting
+      EIC-level participation in entity-selective framing. Unlike beat-reporter mechanisms
+      (106/107) or corporate-level mechanisms (108/109), this shows the TOP editorial positions
+      at a major tech publication applying the same asymmetric framing pattern. Future plc has
+      more extreme Google dependency (60%+, profit -67%) than Ziff Davis (40%+, revenue -2.7%),
+      making it the most Google-dependent publisher in the dataset.'
+    cross_references:
+    - mechanism_id: 106
+      relationship: same_pattern_different_publisher
+    - mechanism_id: 107
+      relationship: same_pattern_different_publisher
+    - mechanism_id: 108
+      relationship: same_archetype
+    - mechanism_id: 109
+      relationship: same_archetype
 research_period: 2024-08-01 to 2026-08-15

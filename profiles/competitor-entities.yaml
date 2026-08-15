@@ -7730,3 +7730,21 @@ essilorluxottica:
     - https://www.reuters.com/business/essilorluxottica-first-quarter-revenues-rise-108-boosted-by-ai-glasses-2026-04-22/
     - https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
     - https://www.WebWire.com/ViewPressRel.asp?aId=350303
+  future_plc:
+    type: publisher_owner
+    ticker: FUTR.L
+    exchange: LSE
+    brands_count: 170
+    key_tech_brands: ["Tom's Guide", "TechRadar", "Tom's Hardware", "PC Gamer"]
+    google_dependent_revenue_share: 0.60
+    h1_2026_profit_before_tax_yoy_change: -0.67
+    meta_financial_relationship: none
+    google_financial_relationship: existential_dependency
+    mechanisms:
+    - mechanism_id: 110
+      relationship: 'Editor-in-Chief-Level Google Dependency Shield'
+    cross_references:
+    - mechanism_id: 108
+      relationship: 'Ziff Davis Triple Squeeze — same Google dependency archetype, different publisher'
+    - mechanism_id: 109
+      relationship: 'Engadget Yahoo/Apollo — same Google partnership shield pattern'
