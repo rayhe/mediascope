@@ -11533,6 +11533,61 @@ cross_publication_findings:
       - 'https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/'
       - 'https://www.kaspersky.com/blog/meta-smart-glasses-nametag-privacy-concerns/56104/'
       - 'https://www.digit.in/features/general/claude-ai-has-functional-emotions-that-influence-behaviour-anthropic-study-finds.html'
+  mechanism_119_matt_burgess_cross_entity_ceo_attribution_remediation:
+    title: 'Matt Burgess (WIRED UK) Cross-Entity CEO Attribution and Remediation Framing Asymmetry'
+    discovery_date: '2026-08-15'
+    asymmetry_score: 0.88
+    journalist: Matt Burgess
+    publication: wired
+    entities_compared: [Meta, Google, Apple, OpenAI]
+    articles:
+      - title: 'Meta Ran Ads That Contained Child Sexual Abuse Imagery'
+        author: Matt Burgess
+        date: '2026-08-05'
+        entity: Meta
+        framing: adversarial-scandal
+        syndication_url: https://globalcommunityweekly.substack.com/p/meta-ran-ads-that-contained-child
+        features: [CEO personal attribution, graphic detail, watchdog sourcing, negligence implication, PR orchestration framing]
+      - title: 'Google VP warns EU DMA proposals could lead to fraud'
+        author: Matt Burgess
+        date: '2026-06-29'
+        entity: Google
+        framing: protector
+        techmeme_url: https://www.techmeme.com/260629/p17
+        features: [VP platformed as expert, Google as security warner, no adversarial framing]
+      - title: 'Gemini Calendar Invite Smart Home Hijack'
+        author: Matt Burgess
+        date: '2025-08-06'
+        entity: Google
+        framing: remediation-forward
+        techmeme_url: https://www.techmeme.com/250806/p20
+        features: [remediation in headline, Google fixed framing, no CEO attribution]
+      - title: 'Apple Vision Pro GAZEploit'
+        author: Matt Burgess
+        date: '2024-09-12'
+        entity: Apple
+        framing: remediation-forward
+        techmeme_url: https://www.techmeme.com/240912/p43
+        features: [now-fixed framing, no CEO attribution]
+      - title: 'OpenAI Connectors data extraction'
+        author: Matt Burgess
+        date: '2025-08-07'
+        entity: OpenAI
+        framing: neutral-technical
+        techmeme_url: https://www.techmeme.com/250807/p6
+        features: [vulnerability disclosure, no CEO attribution, weakness framing]
+    pattern_summary: 'Three measurable dimensions of asymmetry: (1) CEO Personal Attribution:
+      Meta articles use "Mark Zuckerberg''s Meta" in opening sentence. Google, Apple,
+      OpenAI articles never attribute to CEO by name. (2) Perpetrator vs Protector:
+      Meta positioned as facilitator of harm ("reviewed, approved, and allowed to run").
+      Google positioned as warner/fixer. (3) Remediation Emphasis: Google/Apple get
+      "fixed"/"now-fixed" in headlines. Meta remediation buried after adversarial framing.
+      Pattern holds across 9+ articles from 2021 to 2026. Financial predictor: Google
+      is WIRED/Condé Nast advertising revenue source. Meta is direct advertising competitor.'
+    cross_references: [mechanism_8_safe_target, mechanism_118_anthropic_framing_inversion]
+    test_file: tests/test_matt_burgess_cross_entity_ceo_attribution_remediation_framing_aug15.py
+    test_count: 38
+    test_classes: 9
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

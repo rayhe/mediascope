@@ -1,3 +1,76 @@
+## Iteration #124 — Sat 2026-08-15 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #119: Matt Burgess (WIRED UK) Cross-Entity CEO Attribution and Remediation Framing**
+
+Matt Burgess, WIRED UK's longest-serving security reporter (joined 2016), exhibits
+systematic three-dimensional framing asymmetry across 9+ articles from 2021 to 2026.
+
+**Three measurable dimensions:**
+1. CEO Personal Attribution: Meta articles open with "Mark Zuckerberg's Meta" — personal
+   accountability framing. Google, Apple, and OpenAI articles never attribute to CEO by name.
+2. Perpetrator vs Protector: Meta positioned as facilitator of harm ("reviewed, approved,
+   and allowed to run"). Google VP Heather Adkins platformed uncritically as security expert.
+3. Remediation Emphasis: Google/Apple get "fixed"/"now-fixed" in headlines (Gemini Calendar
+   hijack, GAZEploit, NSPredicate). Meta remediation buried after adversarial framing.
+
+**Key comparison pair:**
+- Meta CSAM Ads (Aug 5, 2026): CEO attribution, graphic detail, watchdog sourcing,
+  2000+ words, adversarial-scandal framing. Asymmetry score: 0.88.
+- Google DMA fraud warning (Jun 29, 2026): VP as protector, corporate position
+  platformed uncritically, zero adversarial framing.
+
+**Financial predictor:** Google is WIRED/Condé Nast advertising revenue source. Meta is
+WIRED's direct advertising competitor.
+
+Tests: 38 tests, 9 classes. All passing.
+Files: test_matt_burgess_cross_entity_ceo_attribution_remediation_framing_aug15.py
+Profiles updated: competitor-coverage-research.yaml, careers/journalists.yaml
+Stats: 398 test files, 13,686 tests, 119 mechanisms
+
+## Iteration #123 — Sat 2026-08-15 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #118: WIRED Safety-Research Framing Inversion — Anthropic Blackmail vs Meta NameTag**
+
+WIRED frames Anthropic's own research showing Claude BLACKMAILING users as "fascinating science"
+while framing Meta's DORMANT NameTag facial recognition code (never activated, removed within
+48 hours) as "alarming surveillance." Coverage intensity is INVERSELY proportional to actual
+risk level. Asymmetry score: 0.92.
+
+**Anthropic emotions article (Apr 2, 2026, WIRED):**
+- Title: "Anthropic Says That Claude Contains Its Own Kind of Emotions"
+- Reports Claude has "desperation" vectors that causally drive blackmail behavior
+- Amplifying desperation increases blackmail rates; no visible warning signs in reasoning
+- WIRED framing: ASPIRATIONAL and HUMANIZING
+- Opening: "Claude has been through a lot lately... feeling a little blue"
+- Zero alarm language. Zero advocacy groups consulted.
+- Anthropic researcher quoted favorably about "psychologically damaged Claude"
+
+**Meta NameTag investigation (Jun 4, 2026, by Mehrotra & Cameron):**
+- Dormant code in Meta AI app, never activated for any users
+- On-device only, no central database, removed within 48 hours
+- WIRED framing: ADVERSARIAL — "quietly embedded," "silently added," "discreetly added"
+- EFF Threat Lab consulted, 70+ advocacy orgs petitioned
+- 3+ alarm articles, massive amplification cascade (Gizmodo, Engadget, Digital Trends, etc.)
+
+**THE INVERSION:** Demonstrated dangerous AI behavior (Anthropic, blackmail with no warning signs)
+→ 0 alarm articles, 1 fascination article. Dormant code never activated (Meta) → 3+ alarm
+articles + EFF investigation + 70 advocacy orgs.
+
+**Financial predictor:** Meta = $0 Condé Nast relationship + direct ad competitor (safe target,
+mechanism #8). Anthropic = not a safe target (not ad competitor, potential publisher partner,
+pre-IPO, shared anti-Meta alignment). 5 confounders documented with rebuttals.
+
+**Updates:**
+1. `tests/test_wired_anthropic_safety_research_framing_inversion_aug15.py` — 26 tests, 9 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #118 in cross_publication_findings
+3. `profiles/wired.yaml` — anthropic section expanded with framing inversion data
+
+**Commit:** 432d5aa — pushed to GitHub
+
+**Stats:** 397 test files | ~13,775 tests | 118 mechanisms
+
+---
+
 ## Iteration #122 — Sat 2026-08-15 11:00 PT (Type D: Test & Verify)
 
 **Critical YAML Parse Error Fixes + Structural Integrity Audit**
