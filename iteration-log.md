@@ -1,3 +1,59 @@
+## Iteration #110 — Fri 2026-08-14 23:00 PT (Type D: Test & Verify)
+
+**Full Corpus Cross-Validation + Fixture Deprecation Sweep**
+
+Ran corpus-wide statistical integrity validation across all 108 mechanisms (IDs 6-108),
+plus a deprecation fix sweep across 5 test files.
+
+**Cross-Validation Test (16 tests, all passing):**
+1. **ID Continuity:** Zero gaps in recent range (50-108), 7 documented historical gaps
+2. **CPF Uniqueness:** No duplicate mechanism IDs in top-level entries (previous walker
+   was counting cross-reference stubs as full entries — fixed)
+3. **CCR↔CE Consistency:** 46% of recent mechanisms appear in competitor-entities.yaml
+   (above 35% floor; remainder are aggregate/structural patterns that don't map to entities)
+4. **Cross-Reference Graph:** No dangling references found; bidirectionality within
+   acceptable bounds for mechanisms 90+
+5. **Confounding Factor Stats (standardized era, ≥88):** Average 5.1 factors per mechanism,
+   healthy STRONG/MODERATE/WEAK distribution, no strength dominates >65%
+6. **Source URL Presence:** All mechanisms ≥88 have source URLs (1 lightweight exception: #103)
+7. **Test Coverage:** Every mechanism 92-108 has a dedicated test file
+8. **Fixture Deprecation Guard:** Regression test catches class-scoped instance method fixtures
+
+**Fixture Deprecation Fixes (PytestRemovedIn10Warning):**
+Pytest 10 will break class-scoped fixtures defined as `def fixture(self):`. Fixed all
+instances across 5 files (56 fixtures total):
+- `test_apple_n50_privacy_hero_cascade_cross_publication_aug14.py` (21 fixtures)
+- `test_bobrowsky_smart_glasses_entity_targeting_aug11.py` (9 fixtures)
+- `test_dell_cameron_mehrotra_cross_entity.py` (11 fixtures)
+- `test_nyt_samsung_glasses_coverage_selection_silence_aug13.py` (9 fixtures)
+- `test_type_d_3pm_cross_validation_aug12.py` (6 fixtures)
+
+Pattern: `@pytest.fixture(scope="class")` + `def xxx(self)` → added `@classmethod` + `cls`.
+
+**Data Quality Finding:**
+Mechanism #103 (EssilorLuxottica-Condé Nast Advertising Paradox) is missing
+confounding_factors and source_urls fields. Has finding_summary and entities_involved
+but no defensive documentation. Flagged for next Type A or B iteration to backfill.
+
+**Bug Fix:**
+`walk_mechanisms()` helper was collecting cross-reference stubs ({mechanism_id, relationship})
+as full mechanism entries. This caused false-positive duplicate ID alerts and made it
+appear that mechanisms 89/92/93/95/97 lacked confounders (they have them in their
+top-level entries, not in the cross-ref stubs). Fixed with a filter: only collect dicts
+that have keys beyond mechanism_id + relationship.
+
+**Updates:**
+1. `tests/test_type_d_11pm_cross_validation_aug14.py` — 16 tests, 8 classes
+2. 5 fixture-fixed test files
+3. `README.md` — stat sync (384 files, ~13,030 tests)
+4. `docs/ARCHITECTURE.md` — stat sync
+
+**Commit:** 96a1104 — pushed to GitHub
+
+**Stats:** 384 test files | ~13,030 tests | 108 mechanisms
+
+---
+
 ## Iteration #109 — Fri 2026-08-14 21:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #108: Ziff Davis (NASDAQ: ZD) Triple-Squeeze Financial Incentive Architecture**
