@@ -9994,6 +9994,66 @@ cross_publication_findings:
     - 91
     - 97
     - 102
+  kerry_wan_zdnet_privacy_scrutiny_asymmetry:
+    mechanism_id: 107
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: journalist_cross_entity_privacy_scrutiny
+    domain: wearables_privacy
+    journalist: Kerry Wan
+    publication: ZDNET (Ziff Davis)
+    entities:
+    - google
+    - samsung
+    - meta
+    iteration: 108
+    test_file: tests/test_kerry_wan_zdnet_privacy_scrutiny_asymmetry_aug14.py
+    finding_summary: 'Kerry Wan (ZDNET managing editor, primary smart glasses reviewer)
+      demonstrates entity-selective privacy scrutiny in coverage of identical hardware.
+      Meta Ray-Ban reviews are genuinely positive ("favorite tech purchase this year,"
+      "most practical smart glasses on the market") but ALWAYS include explicit privacy
+      warnings in buying advice: "questionable AI and data policies," "consider other
+      wearable options." Google Android XR glasses previews contain ZERO equivalent
+      privacy scrutiny despite identical camera/mic hardware and Google advertising
+      revenue ($306B/yr, 2.3x Meta). Pattern spans 4+ articles over 2024-2026.
+      ZDNET (Ziff Davis) depends on Google search traffic for ad/affiliate revenue.
+      Same Ziff Davis pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO
+      documented financial relationship with Meta.'
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Google/Samsung glasses had not shipped during Wan enthusiastic coverage —
+        pre-release products naturally get more optimistic framing than shipped products
+        with documented real-world privacy incidents'
+    - strength: STRONG
+      factor: 'Meta HAS genuine privacy incidents (Cambridge Analytica, contractor data
+        review lawsuits, FTC consent decree) — legitimate to flag in buying advice'
+    - strength: MODERATE
+      factor: 'The beats Meta in 3 ways article focused on DISPLAY features (in-lens
+        display Google has, base Meta Ray-Ban does not) — genuine hardware distinction'
+    - strength: MODERATE
+      factor: 'Wan IS genuinely enthusiastic about Meta hardware — favorite tech purchase
+        suggests personal preference, not animus. Asymmetry is in privacy CAVEAT not
+        product enthusiasm'
+    - strength: WEAK
+      factor: 'Google demo at Google own Hudson River office — Google-sponsored press
+        access may create more favorable context than post-launch user testing'
+    testable_predictions:
+    - 'Wan Samsung Galaxy Glasses review (Fall 2026) will NOT include privacy caveat
+      equivalent to Meta questionable AI and data policies'
+    - 'Wan will NOT recommend readers consider other options due to Google data practices
+      despite Google $306B advertising-based revenue model'
+    - 'Post-launch Samsung/Google glasses privacy incident will be framed as growing pains
+      rather than structural questionable policies language'
+    - 'Future Wan Meta articles will CONTINUE including privacy warnings even after Meta
+      ships additional privacy features (anti-tamper, LED improvements)'
+    source_urls:
+    - https://www.zdnet.com/article/who-should-buy-meta-ray-bans-in-2025-after-months-of-testing-my-verdict-is-two-fold/
+    - https://newsnuzzle.com/i-wore-googles-upcoming-android-xr-smart-glasses-and-its-a-future-id-actually-want-to-live-in/
+    cross_references:
+    - 106
+    - 76
+    - 89
+    - 91
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

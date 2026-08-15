@@ -3728,6 +3728,37 @@ entities:
       - 89
       - 91
       - 102
+    kerry_wan_zdnet_privacy_scrutiny_mechanism_107:
+      mechanism_id: 107
+      journalist: Kerry Wan
+      publication: ZDNET (Ziff Davis)
+      date_added: '2026-08-14'
+      finding_summary: 'Wan demonstrates entity-selective privacy scrutiny: Meta Ray-Ban reviews
+        always include explicit privacy/data warnings in buying advice ("questionable AI and data
+        policies," "consider other wearable options") while Google Android XR glasses previews
+        contain zero privacy scrutiny despite identical camera/mic hardware and Google $306B/yr
+        advertising revenue (2.3x Meta). Pattern spans 4+ articles over 2024-2026. ZDNET (Ziff
+        Davis) depends on Google search traffic for ad/affiliate revenue. Same Ziff Davis family
+        pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO documented financial relationship
+        with Meta.'
+      test_file: tests/test_kerry_wan_zdnet_privacy_scrutiny_asymmetry_aug14.py
+      financial_context:
+        zdnet_owner: Ziff Davis (same parent as CNET)
+        zdnet_google_dependency: high (search-driven content model, Google primary traffic source)
+        samsung_ad_spend: $9.7B annual (4th-largest global advertiser)
+        meta_financial_relationship: none
+      tone_comparison:
+        meta_glasses: +0.55 (positive review with privacy caveat)
+        google_glasses: +0.80 (aspirational, no privacy caveat)
+        tone_delta: 0.25
+        privacy_warning_delta: 1.0 (present for Meta, absent for Google)
+      source_urls:
+      - https://www.zdnet.com/article/who-should-buy-meta-ray-bans-in-2025-after-months-of-testing-my-verdict-is-two-fold/
+      - https://newsnuzzle.com/i-wore-googles-upcoming-android-xr-smart-glasses-and-its-a-future-id-actually-want-to-live-in/
+      related_mechanisms:
+      - 106
+      - 76
+      - 89
   x_twitter:
     display_name: X / Twitter
     aliases:
