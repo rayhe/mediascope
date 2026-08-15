@@ -628,10 +628,12 @@ class TestProfileRegistration:
     """Verify mechanism #113 is properly registered in YAML profiles."""
 
     @pytest.fixture(scope="class")
+    @classmethod
     def ccr_data(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
+    @classmethod
     def ce_data(cls):
         return load_yaml("competitor-entities.yaml")
 
