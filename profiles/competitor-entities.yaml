@@ -4987,7 +4987,8 @@ entities:
     - TechCrunch
     - Yahoo
     - Apollo
-    regex: \b(Yahoo|TechCrunch|Apollo\s+Global)\b
+    - Engadget
+    regex: \b(Yahoo|TechCrunch|Engadget|Apollo\s+Global)\b
     category: media_conglomerate
     techcrunch_privacy_indictment_mechanism_104:
       mechanism_id: 104
@@ -5007,6 +5008,25 @@ entities:
       - 89
       - 95
       - 100
+    engadget_google_privacy_vocabulary_zero_mechanism_109:
+      mechanism_id: 109
+      date_analyzed: '2026-08-15'
+      publication: Engadget
+      ownership_chain: 'Engadget → Yahoo → Apollo Global Management'
+      google_search_partnership: 'Yahoo Search powered by Google under renewed Search Alliance agreement'
+      google_ad_tech_dependency: 'Yahoo display advertising revenue depends on Google ad tech stack'
+      finding_summary: 'Engadget (Yahoo/Apollo) gives Google Android XR smart glasses ZERO
+        privacy vocabulary despite identical camera capabilities to Meta glasses, while
+        dedicating entire articles to Meta privacy risks. Yahoo-Google search partnership
+        creates structural incentive for soft Google coverage. Beat assignment channels
+        Meta to privacy-beat reporter (Karissa Bell), Google to product-beat reporter
+        (Bonifacic). Combined with TechCrunch mechanism #104, establishes a CORPORATE-LEVEL
+        pattern: both Yahoo publications (TechCrunch + Engadget) produce adversarial Meta
+        coverage and soft competitor coverage, consistent with Apollo financial alignment.'
+      related_mechanisms:
+      - 104
+      - 108
+      - 6
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

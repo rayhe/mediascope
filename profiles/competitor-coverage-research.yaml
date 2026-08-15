@@ -13603,4 +13603,71 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-14
+  engadget_yahoo_google_privacy_vocabulary_zero:
+    mechanism_id: 109
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: privacy_vocabulary_asymmetry
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: 'Yahoo (Apollo Global Management)'
+    publications: [Engadget]
+    entities: [google, meta]
+    iteration: 111
+    test_file: tests/test_engadget_yahoo_google_privacy_vocabulary_zero_aug15.py
+    finding_summary: 'Engadget (Yahoo/Apollo) coverage of Google Android XR smart glasses (May 2026)
+      contains ZERO privacy/surveillance vocabulary despite identical camera+microphone+AI
+      capabilities to Meta glasses. Engadget dedicates an entire article to Meta privacy risks
+      (Aug 2026, "Are Ray-Ban Meta Glasses A Privacy Risk?") with 25+ privacy terms, a
+      dedicated "Privacy and safety" section in every Meta review, and adversarial vocabulary
+      ("distrustful," "the creeps," "secretly record"). Financial incentive: Yahoo Search is
+      powered by Google, Yahoo ad revenue depends on Google ad tech stack (~40% estimated
+      revenue dependency). Meta has zero financial relationship with Yahoo. Google is a
+      critical business partner; Meta is a direct ad competitor. Beat assignment amplifies:
+      Google coverage goes to product-beat reporter (Bonifacic), Meta goes to privacy-beat
+      reporter (Bell).'
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta has longer track record of privacy controversies (Cambridge Analytica era)
+    - strength: MODERATE
+      factor: Meta glasses are shipping products while Google prototypes at time of article
+    - strength: MODERATE
+      factor: Different authors wrote the Google vs Meta articles (different beats)
+    - strength: WEAK
+      factor: Google I/O demos are controlled environments where privacy less salient
+    - strength: WEAK
+      factor: Meta class action lawsuit (Mar 2026) elevated privacy in news cycle
+    - strength: WEAK
+      factor: Product maturity difference — shipping product invites more scrutiny
+    source_urls:
+    - https://www.engadget.com/2177283/android-xr-is-finally-starting-to-feel-real/
+    - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
+    - https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html
+    entities_involved:
+      google:
+        coverage_tone: positive
+        tone_score: 0.70
+        privacy_word_count: 0
+        framing: aspirational_capability
+      meta:
+        coverage_tone: adversarial
+        tone_score: -0.55
+        privacy_word_count: 25
+        framing: privacy_risk_investigation
+    financial_chain:
+      engadget_owner: Yahoo
+      yahoo_owner: Apollo Global Management
+      yahoo_google_relationship: search_partnership_plus_ad_tech_dependency
+      yahoo_google_revenue_dependency_pct: 40
+      yahoo_meta_relationship: zero
+      yahoo_meta_deals: 0
+    archetype: 'Google Search Partnership Shield — publisher whose search revenue depends
+      on Google cannot afford adversarial Google coverage. Same pattern as Ziff Davis (#108)
+      but through search partnership rather than traffic dependency. The search partnership
+      provides a structurally different but equally powerful financial incentive to produce
+      soft Google coverage.'
+    cross_references:
+    - 108
+    - 6
+    - 30
+    - 76
+research_period: 2024-08-01 to 2026-08-15

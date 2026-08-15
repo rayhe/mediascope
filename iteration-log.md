@@ -36051,3 +36051,50 @@ Financial context: CNET (Ziff Davis since Q3 2024) depends heavily on Google sea
 **Commit:** 130c957 — pushed to GitHub
 
 **Stats:** 383 test files | ~13,140 tests | 108 mechanisms
+
+## Iteration #111 — Sat 2026-08-15 00:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #109: Engadget (Yahoo/Apollo) Google Android XR Privacy Vocabulary Zero-Out**
+
+Analyzed Engadget's coverage of Google Android XR smart glasses vs Meta smart glasses,
+documenting a complete privacy vocabulary zero-out in Google coverage despite identical
+camera+microphone+AI hardware capabilities.
+
+**Key Finding:**
+Engadget's Google Android XR article (May 2026, "Android XR Is Finally Starting To Feel
+Real") contains ZERO privacy/surveillance vocabulary. The article describes cameras as
+enabling "multimodal capabilities" and "surfacing information" with enthusiastic framing
+(tone: +0.70). In contrast, Engadget dedicates an entire article to Meta privacy risks
+(Aug 2026, "Are Ray-Ban Meta Glasses A Privacy Risk?") with 25+ privacy terms, adversarial
+vocabulary ("distrustful," "the creeps," "secretly record"), and a tone score of -0.55.
+
+**Financial Incentive Chain:**
+- Engadget → Yahoo → Apollo Global Management (majority owner since Sep 2021)
+- Yahoo Search powered by Google under renewed Search Alliance agreement
+- Yahoo display advertising revenue depends on Google ad tech stack (~40% estimated)
+- Google is a critical business partner for Yahoo
+- Meta has ZERO financial relationship with Yahoo (no deals, no ad dependency)
+- Meta is a direct competitor in digital advertising
+
+**Beat Assignment Amplification:**
+Google coverage assigned to product-beat reporter (Igor Bonifacic) → capability framing.
+Meta coverage assigned to privacy-beat reporter (Karissa Bell) → adversarial framing.
+Beat assignment IS the editorial mechanism, not a confounding factor.
+
+**Cross-Reference:**
+Combines with TechCrunch mechanism #104 (also Yahoo/Apollo) to establish a CORPORATE-LEVEL
+pattern: both Yahoo publications produce adversarial Meta coverage and soft competitor
+coverage, consistent with Apollo's $38B+ AI financing alignment. Also mirrors Ziff Davis
+Triple Squeeze (#108) — publisher financially dependent on Google produces soft Google
+coverage — but through search partnership rather than traffic dependency.
+
+**6 confounding factors documented, 5 rebuttals provided.**
+
+**Updates:**
+1. `tests/test_engadget_yahoo_google_privacy_vocabulary_zero_aug15.py` — 19 tests, 1 class
+2. `profiles/competitor-coverage-research.yaml` — mechanism #109 added
+3. `profiles/competitor-entities.yaml` — yahoo_apollo entity updated with Engadget data
+4. `README.md` — stat sync (385 files, ~13,175 tests)
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 385 test files | ~13,175 tests | 109 mechanisms
