@@ -4987,6 +4987,8 @@ entities:
     - TechCrunch
     - Yahoo
     - Apollo
+    regex: \b(Yahoo|TechCrunch|Apollo\s+Global)\b
+    category: media_conglomerate
     techcrunch_privacy_indictment_mechanism_104:
       mechanism_id: 104
       date_analyzed: '2026-08-14'

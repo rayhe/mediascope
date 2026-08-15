@@ -35947,3 +35947,51 @@ Financial context: CNET (Ziff Davis since Q3 2024) depends heavily on Google sea
 6. `docs/ARCHITECTURE.md` — stat sync
 
 **Stats:** 380 test files | ~12,972 tests | 106 mechanisms
+
+## Iteration #110 — Fri 2026-08-14 22:00 PT (Type D: Test & Verify)
+
+**Cross-validation of mechanisms #104-108 (Iterations 107-109)**
+
+**Critical bugs found and fixed (7):**
+
+1. **YAML parse failure (CRITICAL):** Both `competitor-coverage-research.yaml` and
+   `competitor-entities.yaml` had unquoted `Ziff Davis (NASDAQ: ZD)` — the colon
+   inside parentheses was parsed as a YAML mapping separator, breaking ALL tests
+   that load either file. 319 errors + 117 failures → 940 passed after fix.
+
+2. **Mechanism #108 misplaced in CCR:** Ziff Davis Triple-Squeeze was under
+   `publications` instead of `cross_publication_findings`, making it invisible
+   to `collect_all_mechanism_ids()`. Moved to CPF, removed duplicate.
+
+3. **Mechanism #104 missing testable_predictions:** TechCrunch/Yahoo/Apollo entry
+   in CCR had confounding_factors but no testable_predictions. Added 4 predictions.
+
+4. **Mechanism #104 missing from competitor-entities.yaml:** Added `yahoo_apollo`
+   entity with mechanism #104 reference.
+
+5. **EssilorLuxottica test field name mismatch:** Test used `paradox.get('finding', '')`
+   but field is `finding_summary`. Updated with fallback.
+
+6. **Stale max-ID assertions (3 tests):** 03am, 10am, 3pm cross-validation tests
+   hardcoded max=103, updated to >=108.
+
+7. **None values in mechanism ID collection:** `collect_all_mechanism_ids` returned
+   None from YAML entries with `mechanism_id: null`. Added None filtering.
+
+**New test file:** `tests/test_type_d_10pm_cross_validation_aug14.py` — 75 tests, 11 classes:
+- TestMechanismPresenceInCCR / TestMechanismPresenceInCE (5 each)
+- TestIDIntegrity (max ID ≥108, no gaps 104-108)
+- TestMetadataCompleteness (finding_summary, confounding_factors, testable_predictions, date)
+- TestConfoundingFactorQuality (STRONG present, multiple strength levels)
+- TestTestFileExistence (exists + importable)
+- TestCrossReferenceIntegrity (all refs point to real mechanisms)
+- TestSourceURLQuality (HTTPS only, ≥1 URL per mechanism)
+- TestZiffDavisClusterCoherence (#108 references #106/#107)
+- TestFieldNameConsistency (finding_summary regression guard)
+- TestFileCountAndStats (≥383 total, ≥19 aug14)
+
+**Test results:** 940 passed (all aug14 tests), 0 failed, 0 errors.
+
+**Commit:** 130c957 — pushed to GitHub
+
+**Stats:** 383 test files | ~13,140 tests | 108 mechanisms
