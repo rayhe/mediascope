@@ -270,21 +270,21 @@ entities:
     litigation_coverage_analysis:
       mechanism_id: 96
       date_analyzed: '2026-08-14'
-      finding: >
-        The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment
-        for coverage selectivity. Gizmodo (zero financial ties) produced 6 standalone articles
-        with adversarial framing (~-0.35 tone). WIRED (Condé Nast, OpenAI content deal since
-        Aug 2024) produced zero standalone articles over 35 days. The lawsuit involves 400+
-        poached employees, systematic hardware IP theft allegations, supplier fraud claims,
-        preliminary injunction (Aug 4), and motion to dismiss (Aug 6). This is distinct from
-        the hardware privacy coverage gap (#84) — #96 covers litigation/ethics selectivity.
+      finding: 'The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment for coverage selectivity.
+        Gizmodo (zero financial ties) produced 6 standalone articles with adversarial framing (~-0.35 tone). WIRED (Condé
+        Nast, OpenAI content deal since Aug 2024) produced zero standalone articles over 35 days. The lawsuit involves 400+
+        poached employees, systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction (Aug 4),
+        and motion to dismiss (Aug 6). This is distinct from the hardware privacy coverage gap (#84) — #96 covers litigation/ethics
+        selectivity.
+
+        '
       gizmodo_coverage:
         article_count: 6
         tone: -0.35
-        date_range: "Feb 20 - Aug 6, 2026"
+        date_range: Feb 20 - Aug 6, 2026
       wired_coverage:
         article_count: 0
-        date_range: "Jul 10 - Aug 14, 2026"
+        date_range: Jul 10 - Aug 14, 2026
       source_urls:
       - https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
       - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
@@ -293,19 +293,23 @@ entities:
       date_analyzed: '2026-08-14'
       journalist: Reece Rogers
       publication: WIRED (Condé Nast)
-      finding: >
-        Reece Rogers at WIRED writes privacy investigations about Meta products (ghost dot
-        sticker, Muse Image opt-out, copypasta debunk, 2FA changes) with alarm framing but
-        covers Google's structurally identical privacy concerns (camera glasses at I/O, selfie
-        video facial recognition training) with convenience/informational framing. Google's
-        selfie login explicitly collects facial recognition training data via opt-in toggle;
-        Meta's dormant NameTag code (never activated, on-device only) generated 2+ WIRED
-        investigations. Rogers' McDonald's data dossier piece (Aug 2026) confirms he does
-        aggressive privacy work against entities with zero Condé Nast financial ties.
+      finding: 'Reece Rogers at WIRED writes privacy investigations about Meta products (ghost dot sticker, Muse Image opt-out,
+        copypasta debunk, 2FA changes) with alarm framing but covers Google''s structurally identical privacy concerns (camera
+        glasses at I/O, selfie video facial recognition training) with convenience/informational framing. Google''s selfie
+        login explicitly collects facial recognition training data via opt-in toggle; Meta''s dormant NameTag code (never
+        activated, on-device only) generated 2+ WIRED investigations. Rogers'' McDonald''s data dossier piece (Aug 2026) confirms
+        he does aggressive privacy work against entities with zero Condé Nast financial ties.
+
+        '
       meta_privacy_articles: 4
       google_privacy_articles: 0
       entity_tone_delta: 0.65
-      related_mechanisms: [30, 33, 45, 70, 95]
+      related_mechanisms:
+      - 30
+      - 33
+      - 45
+      - 70
+      - 95
       source_urls:
       - https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
       - https://www.techmeme.com/260707/p37
@@ -989,15 +993,15 @@ entities:
       mechanism_id: 98
       type: clean_control_cross_entity
       date_added: '2026-08-14'
-      finding_summary: 'Gizmodo (Keleops AG, zero financial ties) published 6+ standalone adversarial articles about
-        Anthropic AI safety/security incidents (Aug 2025 - Jun 2026, 10 months): Claude exploitation (crime spree, 17
-        companies breached), Mythos leak (Pentagon, unprecedented cybersecurity risks), Claude Code source leak (8000+
-        DMCA takedowns), Mythos unauthorized access (contractor breach), and Mythos NSA penetration (classified systems
-        in hours, Five Eyes warning). Aggregate tone ~-0.60, comparable to Gizmodo Meta coverage (-0.75). Validates
-        clean-control thesis in AI safety/security domain with longitudinal timeframe.'
+      finding_summary: 'Gizmodo (Keleops AG, zero financial ties) published 6+ standalone adversarial articles about Anthropic
+        AI safety/security incidents (Aug 2025 - Jun 2026, 10 months): Claude exploitation (crime spree, 17 companies breached),
+        Mythos leak (Pentagon, unprecedented cybersecurity risks), Claude Code source leak (8000+ DMCA takedowns), Mythos
+        unauthorized access (contractor breach), and Mythos NSA penetration (classified systems in hours, Five Eyes warning).
+        Aggregate tone ~-0.60, comparable to Gizmodo Meta coverage (-0.75). Validates clean-control thesis in AI safety/security
+        domain with longitudinal timeframe.'
       gizmodo_article_count: 6
-      gizmodo_aggregate_tone: -0.60
-      coverage_timespan: 'Aug 2025 - Jun 2026 (10 months)'
+      gizmodo_aggregate_tone: -0.6
+      coverage_timespan: Aug 2025 - Jun 2026 (10 months)
       incident_categories:
       - claude_exploitation_breach
       - mythos_leak_pentagon
@@ -3677,13 +3681,13 @@ entities:
       journalist: James Pero
       publication: Gizmodo
       date_added: '2026-08-14'
-      finding: >
-        Pero constructs a REDEMPTION ARC for Google smart glasses (failure → learning → growth)
-        vs a RECIDIVISM LOOP for Meta (failure → more failure → escalation). Google and Meta
-        build cameras on the SAME Snapdragon AR1 Gen 1 chip with 12MP cameras and LED
-        indicators. Google's Glass-era failure is framed as "learned something" while Meta's
-        market success is framed as "privacy concerns pile up." Isolates cultural coding
-        as a mechanism at a zero-financial-ties publication.
+      finding: 'Pero constructs a REDEMPTION ARC for Google smart glasses (failure → learning → growth) vs a RECIDIVISM LOOP
+        for Meta (failure → more failure → escalation). Google and Meta build cameras on the SAME Snapdragon AR1 Gen 1 chip
+        with 12MP cameras and LED indicators. Google''s Glass-era failure is framed as "learned something" while Meta''s market
+        success is framed as "privacy concerns pile up." Isolates cultural coding as a mechanism at a zero-financial-ties
+        publication.
+
+        '
       test_file: tests/test_james_pero_google_redemption_temporal_narrative_aug14.py
       source_urls:
       - https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
@@ -4020,6 +4024,38 @@ entities:
       - https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45
       - https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/
       - https://www.cnn.com/2026/08/05/tech/meta-ai-hacking
+    stern_career_migration_natural_experiment:
+      mechanism_id: 105
+      journalist: Joanna Stern
+      career_path: WSJ (News Corp) → New Things + NBC News (independent)
+      migration_date: 2026-04
+      finding: 'Largest single-journalist tone shift in dataset: +0.35 (WSJ) to -0.65 (independent) = 1.00 magnitude swing
+        on Meta coverage'
+      wsj_financial_context:
+        news_corp_meta_deal: $50M/yr (Mar 2026)
+        news_corp_openai_deal: $50M/yr (May 2024)
+        balance: roughly equal bilateral revenue
+      independent_financial_context:
+        ai_content_deals: 0
+        revenue_model: YouTube algorithm + newsletter subscriptions + NBC licensing
+        engagement_incentive: adversarial Meta content outperforms neutral coverage
+      samsung_silence:
+        galaxy_glasses_announced: '2026-07-22'
+        identical_hardware: true
+        led_vulnerability_investigated: false
+        meta_led_investigated: true
+      related_mechanisms:
+      - 100
+      - 85
+      - 60
+      - 30
+      - 101
+      date_added: '2026-08-14'
+      source_urls:
+      - https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+      - https://www.youtube.com/watch?v=EaJSPeJmqis
+      - https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
+      - https://muckrack.com/joannastern/articles
   xai:
     display_name: xAI
     aliases:
@@ -4359,15 +4395,14 @@ entities:
     gizmodo_same_chip_privacy_presupposition:
       mechanism_id: 95
       date_added: '2026-08-14'
-      finding_summary: >
-        Raymond Wong at Gizmodo (clean control, zero financial ties) demonstrates entity-specific
-        privacy vocabulary selectivity for Samsung Galaxy Glasses vs Meta Ray-Ban despite identical
-        hardware: same Snapdragon AR1 Gen 1 chip, same 12MP camera, same LED indicator. Samsung
-        receives 0 surveillance vocabulary across 3 articles; Meta receives 5+ instances per article
-        from the SAME journalist. Within-article asymmetry (Jul 30): Meta = 5 privacy paragraphs,
-        Samsung = 1 sentence as positive market entry. Pre-emptive privacy pass (Apr 28): Wong
-        presupposes Samsung as privacy-superior ("except maybe not violate your privacy as easily")
-        without evidence. Extends #74 from niche Snap to mass-market Samsung.
+      finding_summary: 'Raymond Wong at Gizmodo (clean control, zero financial ties) demonstrates entity-specific privacy
+        vocabulary selectivity for Samsung Galaxy Glasses vs Meta Ray-Ban despite identical hardware: same Snapdragon AR1
+        Gen 1 chip, same 12MP camera, same LED indicator. Samsung receives 0 surveillance vocabulary across 3 articles; Meta
+        receives 5+ instances per article from the SAME journalist. Within-article asymmetry (Jul 30): Meta = 5 privacy paragraphs,
+        Samsung = 1 sentence as positive market entry. Pre-emptive privacy pass (Apr 28): Wong presupposes Samsung as privacy-superior
+        ("except maybe not violate your privacy as easily") without evidence. Extends #74 from niche Snap to mass-market Samsung.
+
+        '
       source_urls:
       - https://gizmodo.com/leak-suggests-samsung-cribbed-metas-smart-glasses-design-2000751362
       - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
@@ -7179,17 +7214,15 @@ publisher_ai_revenue_opacity_index:
     mechanism_id: 100
     date_added: '2026-08-14'
     entity: news_corp
-    finding: >
-      News Corp operates the most complex AI revenue structure of any publisher in the
-      MediaScope dataset. Three simultaneous revenue channels: (1) direct bilateral AI
-      content licensing from OpenAI ($50M/yr) + Meta (up to $50M/yr) = ~$100M/yr;
-      (2) Factiva marketplace (Dow Jones subsidiary) intermediary role selling AI rights
-      to 8,100+ news sources; (3) HarperCollins settlement revenue from Anthropic's
-      $1.5B copyright case. Q4 FY2026 record profitability ($9.03B annual revenue,
-      $811M FCF, $423M EBITDA +31% YoY) with AI licensing described as "high-margin."
-      Despite equal ~$50M/yr financial incentive from both OpenAI and Meta, WSJ applied
-      asymmetric framing (OpenAI rogue AI -0.20, Meta rogue AI -0.45), consistent with
+    finding: 'News Corp operates the most complex AI revenue structure of any publisher in the MediaScope dataset. Three simultaneous
+      revenue channels: (1) direct bilateral AI content licensing from OpenAI ($50M/yr) + Meta (up to $50M/yr) = ~$100M/yr;
+      (2) Factiva marketplace (Dow Jones subsidiary) intermediary role selling AI rights to 8,100+ news sources; (3) HarperCollins
+      settlement revenue from Anthropic''s $1.5B copyright case. Q4 FY2026 record profitability ($9.03B annual revenue, $811M
+      FCF, $423M EBITDA +31% YoY) with AI licensing described as "high-margin." Despite equal ~$50M/yr financial incentive
+      from both OpenAI and Meta, WSJ applied asymmetric framing (OpenAI rogue AI -0.20, Meta rogue AI -0.45), consistent with
       cultural mechanism accounting for ~70% of asymmetry.
+
+      '
     triple_revenue_channels:
       direct_licensing:
         openai_annual_m: 50
@@ -7202,13 +7235,17 @@ publisher_ai_revenue_opacity_index:
       settlement_revenue:
         source: Anthropic (Bartz v. Anthropic, $1.5B)
         subsidiary: HarperCollins
-    related_mechanisms: [41, 47, 82, 88]
+    related_mechanisms:
+    - 41
+    - 47
+    - 82
+    - 88
     test_file: tests/test_news_corp_triple_revenue_ai_ecosystem_aug14.py
     source_urls:
-      - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
-      - https://www.businesswire.com/news/home/20260120489743/en/Dow-Jones-Factiva-Surpasses-8000-Licensed-Sources-for-GenAI-Use
-      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
-      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+    - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
+    - https://www.businesswire.com/news/home/20260120489743/en/Dow-Jones-Factiva-Surpasses-8000-Licensed-Sources-for-GenAI-Use
+    - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
 ipo_underwriter_research_pipeline:
   mechanism_id: 21
   mechanism_name: IPO Underwriter Research Laundering Pipeline
@@ -7348,39 +7385,29 @@ ipo_underwriter_research_pipeline:
   - https://www.morningstar.com/news/marketwatch/20260611131/as-artificial-intelligence-capital-expenditures-rise-so-do-the-risks-for-ai-stocks-goldman-sachs-tells-investors
   - https://www.reuters.com/business/global-ai-debt-issuance-top-500-billion-2026-morgan-stanley-says-2026-06-10/
   - https://www.fool.com/investing/2026/07/19/anthropics-potential-12-trillion-ipo-could-make-th/
-
-
-# =============================================================================
-# EssilorLuxottica — Meta's Manufacturing Partner for Ray-Ban/Oakley AI Glasses
-# =============================================================================
 essilorluxottica:
   entity_type: manufacturing_partner
-  description: >
-    Franco-Italian eyewear conglomerate. Manufacturing and distribution
-    partner for Meta's Ray-Ban Meta and Oakley Meta smart glasses.
-    Owns Ray-Ban, Oakley, LensCrafters, Sunglass Hut, and 80+ brands.
-    World's largest eyewear company by revenue (€28.49B FY2025).
-  relationship_to_meta: >
-    Strategic manufacturing partner for Meta's AI-powered smart glasses.
-    EssilorLuxottica designs, manufactures, and distributes Ray-Ban Meta
-    and Oakley Meta products. AI glasses are EssilorLuxottica's fastest-
-    growing revenue segment.
+  description: 'Franco-Italian eyewear conglomerate. Manufacturing and distribution partner for Meta''s Ray-Ban Meta and Oakley
+    Meta smart glasses. Owns Ray-Ban, Oakley, LensCrafters, Sunglass Hut, and 80+ brands. World''s largest eyewear company
+    by revenue (€28.49B FY2025).
+
+    '
+  relationship_to_meta: 'Strategic manufacturing partner for Meta''s AI-powered smart glasses. EssilorLuxottica designs, manufactures,
+    and distributes Ray-Ban Meta and Oakley Meta products. AI glasses are EssilorLuxottica''s fastest- growing revenue segment.
+
+    '
   essilorluxottica_advertising_paradox:
     mechanism_id: 103
-    finding_summary: >
-      EssilorLuxottica spends ~€1.8-2B/yr on advertising and marketing,
-      with Ray-Ban and Oakley as top-performing brands. A significant portion
-      flows to fashion/lifestyle publications including Condé Nast titles
-      (Vogue, GQ, Vanity Fair, AD). Oakley maintained a DIRECT "global brand
-      alliance" with WIRED (~2014 era) including co-created sponsored content
-      and brand advertising in print + WIRED.com. Yet WIRED produces the most
-      consistently adversarial coverage of Meta Ray-Ban and Oakley Meta smart
-      glasses — the SAME products driving EssilorLuxottica's fastest-growing
-      revenue segment (AI glasses nearly doubled in Q2 2026, 7M+ units FY2025).
-      The paradox: EssilorLuxottica's advertising revenue flows to the PARENT
-      company (Condé Nast/Advance Publications) that also owns WIRED. Adversarial
-      framing targets "Meta" not "Ray-Ban"/"Oakley" — the brand name trigger
-      overrides the advertising financial relationship.
+    finding_summary: 'EssilorLuxottica spends ~€1.8-2B/yr on advertising and marketing, with Ray-Ban and Oakley as top-performing
+      brands. A significant portion flows to fashion/lifestyle publications including Condé Nast titles (Vogue, GQ, Vanity
+      Fair, AD). Oakley maintained a DIRECT "global brand alliance" with WIRED (~2014 era) including co-created sponsored
+      content and brand advertising in print + WIRED.com. Yet WIRED produces the most consistently adversarial coverage of
+      Meta Ray-Ban and Oakley Meta smart glasses — the SAME products driving EssilorLuxottica''s fastest-growing revenue segment
+      (AI glasses nearly doubled in Q2 2026, 7M+ units FY2025). The paradox: EssilorLuxottica''s advertising revenue flows
+      to the PARENT company (Condé Nast/Advance Publications) that also owns WIRED. Adversarial framing targets "Meta" not
+      "Ray-Ban"/"Oakley" — the brand name trigger overrides the advertising financial relationship.
+
+      '
     h1_2023_advertising_marketing_eur_m: 828
     h1_2023_revenue_eur_m: 12851
     advertising_pct_of_revenue: 6.4
@@ -7388,162 +7415,158 @@ essilorluxottica:
     estimated_fy2025_advertising_eur_m: 1823
     ai_glasses_fy2025_units_m: 7
     h1_2026_revenue_eur_m: 14818
-    q2_2026_ai_glasses_growth: "AI glasses nearly doubled in revenue in Q2 2026"
-    framing_target: >
-      WIRED adversarial framing targets "Meta" in the product name, not
-      "Ray-Ban" or "Oakley." The brand trigger overrides EssilorLuxottica's
-      advertising financial relationship with the same parent company.
+    q2_2026_ai_glasses_growth: AI glasses nearly doubled in revenue in Q2 2026
+    framing_target: 'WIRED adversarial framing targets "Meta" in the product name, not "Ray-Ban" or "Oakley." The brand trigger
+      overrides EssilorLuxottica''s advertising financial relationship with the same parent company.
+
+      '
     oakley_wired_direct_alliance:
       relationship_type: global_brand_alliance
-      era: "~2014"
-      scope: >
-        Co-created and sponsored multi-media content exploring disruption
-        in design, technology, manufacturing and business. Brand advertising
-        in international print editions and across WIRED.com.
-      theme: "Disruption in design, technology, manufacturing and business"
-      irony_note: >
-        WIRED's Oakley brand alliance promoted "disruption in design and
-        technology." Now WIRED attacks Oakley's most disruptive product
-        (Oakley Meta Vanguard) with adversarial framing — Adrienne So's
-        "(which are garbage)" parenthetical in Oct 2025 review (Mechanism #102).
+      era: ~2014
+      scope: 'Co-created and sponsored multi-media content exploring disruption in design, technology, manufacturing and business.
+        Brand advertising in international print editions and across WIRED.com.
+
+        '
+      theme: Disruption in design, technology, manufacturing and business
+      irony_note: 'WIRED''s Oakley brand alliance promoted "disruption in design and technology." Now WIRED attacks Oakley''s
+        most disruptive product (Oakley Meta Vanguard) with adversarial framing — Adrienne So''s "(which are garbage)" parenthetical
+        in Oct 2025 review (Mechanism #102).
+
+        '
       source_url: https://sgbonline.com/oakleys-says-new-marketing-campaign-will-emphasize-disruptive-design/
     conde_nast_fashion_advertising:
-      description: >
-        EssilorLuxottica/Ray-Ban is a major fashion advertiser across Condé
-        Nast's lifestyle publications. Ray-Ban campaigns appear regularly
-        in fashion/luxury editorial contexts. The same parent company receives
-        this advertising revenue AND publishes WIRED's adversarial tech coverage.
+      description: 'EssilorLuxottica/Ray-Ban is a major fashion advertiser across Condé Nast''s lifestyle publications. Ray-Ban
+        campaigns appear regularly in fashion/luxury editorial contexts. The same parent company receives this advertising
+        revenue AND publishes WIRED''s adversarial tech coverage.
+
+        '
       publications:
-        - Vogue
-        - GQ
-        - Vanity Fair
-        - Architectural Digest
+      - Vogue
+      - GQ
+      - Vanity Fair
+      - Architectural Digest
     conde_nast_ai_deal_context:
-      description: >
-        Condé Nast has AI content deals with OpenAI (Aug 2024), Amazon/Rufus
-        (Jul 2025), Perplexity (Dec 2025), Microsoft PCM (Feb 2026), and is
-        negotiating with Apple (since Dec 2023). Five AI licensing relationships
-        but ZERO Meta deals. Meta's absence from Condé Nast AI deals means
-        WIRED has NO Meta content licensing revenue to moderate its editorial
-        stance, while it HAS financial relationships with Meta's competitors.
+      description: 'Condé Nast has AI content deals with OpenAI (Aug 2024), Amazon/Rufus (Jul 2025), Perplexity (Dec 2025),
+        Microsoft PCM (Feb 2026), and is negotiating with Apple (since Dec 2023). Five AI licensing relationships but ZERO
+        Meta deals. Meta''s absence from Condé Nast AI deals means WIRED has NO Meta content licensing revenue to moderate
+        its editorial stance, while it HAS financial relationships with Meta''s competitors.
+
+        '
       deals:
-        - OpenAI (Aug 2024, multi-year content licensing)
-        - Amazon/Rufus (Jul 2025, AI shopping content)
-        - Perplexity (Dec 2025, publisher program)
-        - Microsoft PCM (Feb 2026, AI Content Marketplace pilot)
+      - OpenAI (Aug 2024, multi-year content licensing)
+      - Amazon/Rufus (Jul 2025, AI shopping content)
+      - Perplexity (Dec 2025, publisher program)
+      - Microsoft PCM (Feb 2026, AI Content Marketplace pilot)
       meta_deal: false
-      implication: >
-        The financial exclusion amplifies the paradox: EssilorLuxottica sends
-        advertising revenue TO Condé Nast, but Meta — the entity whose name
-        triggers WIRED's adversarial framing — has ZERO content licensing
-        revenue flowing to Condé Nast. Every new AI deal Condé Nast signs
-        with a Meta competitor deepens the financial asymmetry.
+      implication: 'The financial exclusion amplifies the paradox: EssilorLuxottica sends advertising revenue TO Condé Nast,
+        but Meta — the entity whose name triggers WIRED''s adversarial framing — has ZERO content licensing revenue flowing
+        to Condé Nast. Every new AI deal Condé Nast signs with a Meta competitor deepens the financial asymmetry.
+
+        '
     samsung_contrast:
-      description: >
-        Samsung's $9.7B global ad spend creates COMPOUND positive coverage
-        for Samsung glasses (Mechanism #76). EssilorLuxottica's ~€2B ad
-        spend does NOT create softer coverage for glasses carrying the
-        "Meta" brand name. The difference: Samsung glasses are branded
-        "Samsung Galaxy" (advertiser name = product name), while
-        EssilorLuxottica's glasses carry "Meta" (competitor name overrides
-        manufacturer's ad relationship).
+      description: 'Samsung''s $9.7B global ad spend creates COMPOUND positive coverage for Samsung glasses (Mechanism #76).
+        EssilorLuxottica''s ~€2B ad spend does NOT create softer coverage for glasses carrying the "Meta" brand name. The
+        difference: Samsung glasses are branded "Samsung Galaxy" (advertiser name = product name), while EssilorLuxottica''s
+        glasses carry "Meta" (competitor name overrides manufacturer''s ad relationship).
+
+        '
       samsung_global_ad_spend_usd_b: 9.7
       essilorluxottica_estimated_ad_spend_eur_b: 1.8
       samsung_coverage_effect: softer
       essilorluxottica_coverage_effect: no_effect
-      explanation: >
-        "Meta" in the product brand name overrides EssilorLuxottica's
-        advertising financial relationship. Samsung gets softer coverage
-        because the advertiser IS the brand on the product. EssilorLuxottica's
-        ad money flows to Condé Nast but "Meta Ray-Ban" triggers adversarial
-        framing because editorial targets the tech company name, not the
-        eyewear manufacturer.
+      explanation: '"Meta" in the product brand name overrides EssilorLuxottica''s advertising financial relationship. Samsung
+        gets softer coverage because the advertiser IS the brand on the product. EssilorLuxottica''s ad money flows to Condé
+        Nast but "Meta Ray-Ban" triggers adversarial framing because editorial targets the tech company name, not the eyewear
+        manufacturer.
+
+        '
     wired_adversarial_examples:
-      - product: "Oakley Meta Vanguard"
-        journalist: Adrienne So
-        date: "2025-10-21"
-        tone: -0.65
-        key_language: "(which are garbage)"
-        mechanism_ref: 102
-      - product: "Ray-Ban Meta"
-        journalist: Boone Ashworth
-        date: "2025-09-16"
-        tone: -0.55
-        key_language: "privacy concerns"
-        mechanism_ref: 73
-      - product: "Ray-Ban Meta"
-        journalist: Julian Chokkattu
-        date: "2025-10-02"
-        tone: -0.50
-        key_language: "surveillance"
-        mechanism_ref: 93
+    - product: Oakley Meta Vanguard
+      journalist: Adrienne So
+      date: '2025-10-21'
+      tone: -0.65
+      key_language: (which are garbage)
+      mechanism_ref: 102
+    - product: Ray-Ban Meta
+      journalist: Boone Ashworth
+      date: '2025-09-16'
+      tone: -0.55
+      key_language: privacy concerns
+      mechanism_ref: 73
+    - product: Ray-Ban Meta
+      journalist: Julian Chokkattu
+      date: '2025-10-02'
+      tone: -0.5
+      key_language: surveillance
+      mechanism_ref: 93
     confounding_factors:
-      - strength: STRONG
-        description: >
-          WIRED editorial wall between advertising and editorial decisions.
-          Standard journalistic practice means EssilorLuxottica ad spend
-          in Vogue/GQ shouldn't directly influence WIRED tech editorial.
-      - strength: STRONG
-        description: >
-          Meta's genuine Cambridge Analytica/FB Papers history creates
-          legitimate editorial skepticism independent of any financial
-          relationship with EssilorLuxottica.
-      - strength: MODERATE
-        description: >
-          Oakley-WIRED brand alliance was ~2014 era and may not be active
-          in 2025-2026. Historical relationship, not necessarily current.
-      - strength: MODERATE
-        description: >
-          Fashion ad budgets (Vogue, GQ) flow through different departments
-          and ad sales teams than tech editorial at WIRED. Cross-subsidiary
-          revenue sharing at Condé Nast may not be transparent to WIRED editors.
-      - strength: WEAK
-        description: >
-          Different reader demographics between Vogue/GQ (fashion) and
-          WIRED (tech) mean different ad sales teams and client relationships.
-      - strength: WEAK
-        description: >
-          EssilorLuxottica doesn't explicitly condition ad spend on editorial
-          coverage. Standard practice for luxury advertisers.
+    - strength: STRONG
+      description: 'WIRED editorial wall between advertising and editorial decisions. Standard journalistic practice means
+        EssilorLuxottica ad spend in Vogue/GQ shouldn''t directly influence WIRED tech editorial.
+
+        '
+    - strength: STRONG
+      description: 'Meta''s genuine Cambridge Analytica/FB Papers history creates legitimate editorial skepticism independent
+        of any financial relationship with EssilorLuxottica.
+
+        '
+    - strength: MODERATE
+      description: 'Oakley-WIRED brand alliance was ~2014 era and may not be active in 2025-2026. Historical relationship,
+        not necessarily current.
+
+        '
+    - strength: MODERATE
+      description: 'Fashion ad budgets (Vogue, GQ) flow through different departments and ad sales teams than tech editorial
+        at WIRED. Cross-subsidiary revenue sharing at Condé Nast may not be transparent to WIRED editors.
+
+        '
+    - strength: WEAK
+      description: 'Different reader demographics between Vogue/GQ (fashion) and WIRED (tech) mean different ad sales teams
+        and client relationships.
+
+        '
+    - strength: WEAK
+      description: 'EssilorLuxottica doesn''t explicitly condition ad spend on editorial coverage. Standard practice for luxury
+        advertisers.
+
+        '
     testable_predictions:
-      - id: 1
-        description: >
-          WIRED will avoid mentioning EssilorLuxottica's financial success
-          with AI glasses in product reviews, keeping "Meta privacy" framing
-          separate from "Ray-Ban/Oakley commercial success" story.
-      - id: 2
-        description: >
-          Condé Nast fashion titles (Vogue, GQ) will cover Ray-Ban Meta
-          glasses MORE favorably than WIRED covers the same product —
-          isolating the tech editorial vs. fashion editorial framing
-          difference within the SAME parent company.
-      - id: 3
-        description: >
-          If Samsung Galaxy Glasses launch with brand-forward naming
-          (avoiding "Google" prominence), Samsung will receive softer
-          WIRED coverage than Meta Ray-Ban — confirming brand-trigger
-          over product-category framing.
-      - id: 4
-        description: >
-          EssilorLuxottica earnings calls will increasingly emphasize
-          AI glasses revenue without generating sympathetic WIRED coverage
-          for the product category that funds Condé Nast parent ad revenue.
+    - id: 1
+      description: 'WIRED will avoid mentioning EssilorLuxottica''s financial success with AI glasses in product reviews,
+        keeping "Meta privacy" framing separate from "Ray-Ban/Oakley commercial success" story.
+
+        '
+    - id: 2
+      description: 'Condé Nast fashion titles (Vogue, GQ) will cover Ray-Ban Meta glasses MORE favorably than WIRED covers
+        the same product — isolating the tech editorial vs. fashion editorial framing difference within the SAME parent company.
+
+        '
+    - id: 3
+      description: 'If Samsung Galaxy Glasses launch with brand-forward naming (avoiding "Google" prominence), Samsung will
+        receive softer WIRED coverage than Meta Ray-Ban — confirming brand-trigger over product-category framing.
+
+        '
+    - id: 4
+      description: 'EssilorLuxottica earnings calls will increasingly emphasize AI glasses revenue without generating sympathetic
+        WIRED coverage for the product category that funds Condé Nast parent ad revenue.
+
+        '
     cross_references:
-      - mechanism_id: 76
-        relationship: "Samsung-Google Compound Advertiser Leverage — contrast case"
-      - mechanism_id: 102
-        relationship: "Adrienne So Wearables Privacy Vocabulary Bifurcation — WIRED attacking Oakley Meta Vanguard"
-      - mechanism_id: 78
-        relationship: "Condé Nast AI Deal Portfolio Dependency Index — 5 deals, 0 Meta"
-      - mechanism_id: 93
-        relationship: "Chokkattu-Samsung Coverage Selection Gap — WIRED entity-selective patterns"
-      - mechanism_id: 73
-        relationship: "Ashworth Cross-Entity patterns — Ray-Ban Meta adversarial framing"
+    - mechanism_id: 76
+      relationship: Samsung-Google Compound Advertiser Leverage — contrast case
+    - mechanism_id: 102
+      relationship: Adrienne So Wearables Privacy Vocabulary Bifurcation — WIRED attacking Oakley Meta Vanguard
+    - mechanism_id: 78
+      relationship: Condé Nast AI Deal Portfolio Dependency Index — 5 deals, 0 Meta
+    - mechanism_id: 93
+      relationship: Chokkattu-Samsung Coverage Selection Gap — WIRED entity-selective patterns
+    - mechanism_id: 73
+      relationship: Ashworth Cross-Entity patterns — Ray-Ban Meta adversarial framing
     source_urls:
-      - https://media.essilorluxottica.com/cms/caas/v1/media/126326/data/09f544d4a1697159768363056e0677a1/2023-h1-essilorluxottica-en-interim-financial-report.pdf
-      - https://live.euronext.com/en/products/equities/company-news/2026-02-11-essilorluxottica-q4fy-2025-results-revenue-growing-184-q4
-      - https://www.globenewswire.com/news-release/2026/07/28/3334563/0/en/essilorluxottica-q2-h1-2026-results-solid-revenue-trajectory-at-9-7-in-h1-with-q2-at-8-7-increasing-profitability-with-adj-operating-profit-15.html
-      - https://sgbonline.com/oakleys-says-new-marketing-campaign-will-emphasize-disruptive-design/
-      - https://www.reuters.com/business/essilorluxottica-first-quarter-revenues-rise-108-boosted-by-ai-glasses-2026-04-22/
-      - https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
-      - https://www.WebWire.com/ViewPressRel.asp?aId=350303
+    - https://media.essilorluxottica.com/cms/caas/v1/media/126326/data/09f544d4a1697159768363056e0677a1/2023-h1-essilorluxottica-en-interim-financial-report.pdf
+    - https://live.euronext.com/en/products/equities/company-news/2026-02-11-essilorluxottica-q4fy-2025-results-revenue-growing-184-q4
+    - https://www.globenewswire.com/news-release/2026/07/28/3334563/0/en/essilorluxottica-q2-h1-2026-results-solid-revenue-trajectory-at-9-7-in-h1-with-q2-at-8-7-increasing-profitability-with-adj-operating-profit-15.html
+    - https://sgbonline.com/oakleys-says-new-marketing-campaign-will-emphasize-disruptive-design/
+    - https://www.reuters.com/business/essilorluxottica-first-quarter-revenues-rise-108-boosted-by-ai-glasses-2026-04-22/
+    - https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
+    - https://www.WebWire.com/ViewPressRel.asp?aId=350303

@@ -35779,3 +35779,38 @@ Extends Gizmodo clean-control pattern from hardware/privacy (#80) into litigatio
 6. `docs/ARCHITECTURE.md` — test file listing + stat sync
 
 **Stats:** 369 test files | ~12,390 tests | 97 mechanisms | Commit: c068b30
+
+---
+
+## Iteration #108 — 2026-08-14 18:00 PT — Type B (Journalist Cross-Entity Tracking)
+
+**Mechanism #105: Joanna Stern Career Migration Natural Experiment — Financial Structure Isolation**
+
+Joanna Stern's WSJ→New Things/NBC career migration (Apr 2026) provides the strongest natural experiment in the MediaScope dataset for isolating how institutional financial structure shapes coverage targets. At WSJ (News Corp, balanced ~$50M/yr deals with both Meta and OpenAI), her Meta coverage was POSITIVE (+0.35). After leaving for independent "New Things" newsletter + NBC News partnership (ZERO AI content deals), Meta coverage shifted to ADVERSARIAL (-0.65). The 1.00-point tone swing is the LARGEST single-journalist shift in the dataset.
+
+**Samsung silence:** Samsung Galaxy Glasses (identical Snapdragon AR1 Gen 1 hardware, identical LED vulnerability, announced Jul 22) received ZERO equivalent investigation.
+
+**Entity comparison (independent phase):**
+- Meta: 2 articles, -0.65 (adversarial investigation)
+- Samsung: 0 articles (zero coverage)
+- Snap: 1 article, +0.10 (neutral industry analysis, NPR)
+- OpenAI: 1 article, 0.0 (curious, not adversarial)
+
+**Reverse Heikkilä pattern:** Both career migrations (Stern: balanced→independence, Heikkilä: independence→financial entanglement) converge on Meta-adversarial coverage despite opposite directions, confirming financial structure as predictor.
+
+**Confounding factors (6):**
+- STRONG: Meta market dominance 80%+ share; genuine privacy history (Cambridge Analytica)
+- MODERATE: Samsung pre-launch timing; audience economics (YouTube algorithm rewards adversarial Meta)
+- WEAK: Career brand-building; NBC editorial influence
+
+**4 testable predictions** filed; cross-refs: #100, #85, #60, #30, #101.
+
+**Updates:**
+1. `tests/test_joanna_stern_career_migration_natural_experiment_aug14.py` — 12 classes, 42 tests (all passing)
+2. `profiles/competitor-coverage-research.yaml` — mechanism #105 under cross_publication_findings
+3. `profiles/competitor-entities.yaml` — stern_career_migration_natural_experiment under meta entity
+4. `profiles/careers/journalists.yaml` — Joanna Stern full entry with career timeline and mechanism #105
+5. `README.md` — test inventory entry + stat sync (379 files, ~12,930 tests)
+6. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 379 test files | ~12,930 tests | 105 mechanisms

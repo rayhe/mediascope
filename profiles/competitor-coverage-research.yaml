@@ -1535,7 +1535,7 @@ cross_publication_findings:
     ownership_chain:
       immediate_parent: Yahoo Inc.
       ultimate_owner: Apollo Global Management
-      acquisition_date: '2021-09'
+      acquisition_date: 2021-09
       acquisition_price_usd_billions: 5
       archetype: private_equity
     apollo_ai_financing:
@@ -1557,23 +1557,25 @@ cross_publication_findings:
       total_ai_financing_usd_billions: 38.4
     meta_glasses_article:
       url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
-      title: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+      title: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.
       publication_date: '2026-07-08'
       same_day_as_meta_v26_update: true
       improvement_reframed_as_cynicism: true
-      meta_tone: -0.60
+      meta_tone: -0.6
       rhetorical_devices:
       - device: cambridge_analytica_invocation
-        example: "Meta's reputation on privacy has been tainted for years after numerous leaks and lost lawsuits... the Cambridge Analytica data scandal"
+        example: Meta's reputation on privacy has been tainted for years after numerous leaks and lost lawsuits... the Cambridge
+          Analytica data scandal
         years_prior: 8
       - device: persistence_framing
-        example: "Still, the company plows forward with what many people would consider privacy-violating ideas"
+        example: Still, the company plows forward with what many people would consider privacy-violating ideas
       - device: historical_liability_anchor
-        example: "reputation on privacy has been tainted for years"
+        example: reputation on privacy has been tainted for years
       - device: improvement_dismissal
-        example: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise"
+        example: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise
       - device: juxtaposition_undercut
-        example: "On the same day it announced the Meta glasses' new safeguard, it shared that Meta AI can now use anyone's public Instagram photos"
+        example: On the same day it announced the Meta glasses' new safeguard, it shared that Meta AI can now use anyone's
+          public Instagram photos
     samsung_comparison:
       chip: Snapdragon AR1 Gen 1
       has_led_indicator: true
@@ -1583,22 +1585,19 @@ cross_publication_findings:
       cloud_ai_processing: Google Gemini
       launch_date: '2026-07-22'
       days_after_meta_article: 14
-    finding_summary: >
-      TechCrunch (Yahoo, majority-owned by Apollo Global Management since Sep 2021)
-      published adversarial privacy-improvement-as-indictment coverage of Meta Ray-Ban
-      glasses on Jul 8, 2026 — the same day Meta shipped its v26 LED anti-tamper update.
-      The article reframes the privacy improvement as cynical ("seem less creepy...says
-      otherwise"), invokes Cambridge Analytica (8 years prior), and frames Meta's ongoing
-      privacy efforts as fundamentally untrustworthy. Samsung Galaxy Glasses launched 14
-      days later (Jul 22) with identical hardware (same Snapdragon AR1 Gen 1, camera, LED)
-      and Google Gemini cloud processing, with no published data retention policy. Zero
-      TechCrunch adversarial privacy investigations of Samsung glasses exist.
-      Apollo Global Management co-financed the $35B AI XPV Platform (Jun 9, 2026) for
-      Anthropic and OpenAI compute expansion, and separately financed $3.4B for xAI chip
-      leasing (Feb 2026). This $38B+ total represents the largest documented financial
-      relationship between a publication's ownership chain and Meta's AI competitors.
-      CONFOUNDING: Yahoo CEO Jim Lanzone is vocally anti-AI-scraping; Yahoo editorial
-      may operate independently of Apollo investment decisions. Causation NOT established.
+    finding_summary: 'TechCrunch (Yahoo, majority-owned by Apollo Global Management since Sep 2021) published adversarial
+      privacy-improvement-as-indictment coverage of Meta Ray-Ban glasses on Jul 8, 2026 — the same day Meta shipped its v26
+      LED anti-tamper update. The article reframes the privacy improvement as cynical ("seem less creepy...says otherwise"),
+      invokes Cambridge Analytica (8 years prior), and frames Meta''s ongoing privacy efforts as fundamentally untrustworthy.
+      Samsung Galaxy Glasses launched 14 days later (Jul 22) with identical hardware (same Snapdragon AR1 Gen 1, camera, LED)
+      and Google Gemini cloud processing, with no published data retention policy. Zero TechCrunch adversarial privacy investigations
+      of Samsung glasses exist. Apollo Global Management co-financed the $35B AI XPV Platform (Jun 9, 2026) for Anthropic
+      and OpenAI compute expansion, and separately financed $3.4B for xAI chip leasing (Feb 2026). This $38B+ total represents
+      the largest documented financial relationship between a publication''s ownership chain and Meta''s AI competitors. CONFOUNDING:
+      Yahoo CEO Jim Lanzone is vocally anti-AI-scraping; Yahoo editorial may operate independently of Apollo investment decisions.
+      Causation NOT established.
+
+      '
     confounding_factors:
     - strength: STRONG
       factor: Yahoo editorial independence from Apollo investment decisions
@@ -1610,7 +1609,8 @@ cross_publication_findings:
       factor: Samsung is newer product with shorter track record (less to investigate)
     cross_references:
     - mechanism_id: 93
-      relationship: '#93 Samsung Privacy Feature Framing Inversion — #104 adds TechCrunch as new publication with unique ownership chain'
+      relationship: '#93 Samsung Privacy Feature Framing Inversion — #104 adds TechCrunch as new publication with unique ownership
+        chain'
     - mechanism_id: 89
       relationship: '#89 WIRED category headline — both show improvement-as-indictment pattern but different publications/owners'
     - mechanism_id: 95
@@ -1628,41 +1628,35 @@ cross_publication_findings:
     name: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox
     date_added: '2026-08-14'
     discovery_date: '2026-08-14'
-    finding_summary: >
-      EssilorLuxottica spends ~€1.8-2B/yr on advertising/marketing (H1 2023:
-      €828M = 6.4% of revenue). Ray-Ban and Oakley campaigns flow to Condé
-      Nast fashion titles (Vogue, GQ, Vanity Fair). Oakley maintained a DIRECT
-      "global brand alliance" with WIRED (~2014) — co-created sponsored content
-      + brand advertising in print and on WIRED.com. Yet WIRED produces the
-      most adversarial coverage of Meta Ray-Ban and Oakley Meta glasses, the
-      SAME products driving EssilorLuxottica's fastest-growing revenue (AI
-      glasses nearly doubled Q2 2026, 7M+ units FY2025). EssilorLuxottica's
-      ad revenue flows to the PARENT (Condé Nast/Advance) that also owns
-      WIRED, but adversarial framing targets "Meta" not "Ray-Ban"/"Oakley."
-      Samsung contrast: Samsung's $9.7B ad spend creates softer coverage (#76);
-      EssilorLuxottica's ~€2B does NOT — because "Meta" in the product name
-      overrides the manufacturing partner's advertising relationship.
+    finding_summary: 'EssilorLuxottica spends ~€1.8-2B/yr on advertising/marketing (H1 2023: €828M = 6.4% of revenue). Ray-Ban
+      and Oakley campaigns flow to Condé Nast fashion titles (Vogue, GQ, Vanity Fair). Oakley maintained a DIRECT "global
+      brand alliance" with WIRED (~2014) — co-created sponsored content + brand advertising in print and on WIRED.com. Yet
+      WIRED produces the most adversarial coverage of Meta Ray-Ban and Oakley Meta glasses, the SAME products driving EssilorLuxottica''s
+      fastest-growing revenue (AI glasses nearly doubled Q2 2026, 7M+ units FY2025). EssilorLuxottica''s ad revenue flows
+      to the PARENT (Condé Nast/Advance) that also owns WIRED, but adversarial framing targets "Meta" not "Ray-Ban"/"Oakley."
+      Samsung contrast: Samsung''s $9.7B ad spend creates softer coverage (#76); EssilorLuxottica''s ~€2B does NOT — because
+      "Meta" in the product name overrides the manufacturing partner''s advertising relationship.
+
+      '
     entities_involved:
-      - EssilorLuxottica (Meta manufacturing partner, ~€2B ad spend)
-      - Condé Nast (parent of WIRED + Vogue/GQ/VF, receives EL ad revenue)
-      - Advance Publications (ultimate parent of Condé Nast)
-      - Meta (brand trigger in "Meta Ray-Ban" / "Oakley Meta")
-      - Samsung (contrast case — $9.7B ad spend creates softer coverage)
-    significance: >
-      Demonstrates that even a direct historical advertising partnership
-      between an EssilorLuxottica brand (Oakley) and WIRED did not create
-      durable coverage softness. The "Meta" brand name in the product
-      overrides any advertising financial relationship, isolating brand-
-      triggered editorial framing as distinct from financial-incentive-driven
-      framing. Cross-validates with Samsung contrast (#76) and Gizmodo
-      clean-control (#98).
+    - EssilorLuxottica (Meta manufacturing partner, ~€2B ad spend)
+    - Condé Nast (parent of WIRED + Vogue/GQ/VF, receives EL ad revenue)
+    - Advance Publications (ultimate parent of Condé Nast)
+    - Meta (brand trigger in "Meta Ray-Ban" / "Oakley Meta")
+    - Samsung (contrast case — $9.7B ad spend creates softer coverage)
+    significance: 'Demonstrates that even a direct historical advertising partnership between an EssilorLuxottica brand (Oakley)
+      and WIRED did not create durable coverage softness. The "Meta" brand name in the product overrides any advertising financial
+      relationship, isolating brand- triggered editorial framing as distinct from financial-incentive-driven framing. Cross-validates
+      with Samsung contrast (#76) and Gizmodo clean-control (#98).
+
+      '
     cross_references:
-      - mechanism_id: 76
-        relationship: Samsung-Google Compound Advertiser Leverage contrast
-      - mechanism_id: 102
-        relationship: Adrienne So Wearables Privacy Vocabulary Bifurcation
-      - mechanism_id: 78
-        relationship: Condé Nast AI Deal Portfolio Dependency Index
+    - mechanism_id: 76
+      relationship: Samsung-Google Compound Advertiser Leverage contrast
+    - mechanism_id: 102
+      relationship: Adrienne So Wearables Privacy Vocabulary Bifurcation
+    - mechanism_id: 78
+      relationship: Condé Nast AI Deal Portfolio Dependency Index
   samsung_google_compound_advertiser_leverage:
     mechanism_id: 76
     name: Samsung-Google Compound Advertiser Leverage on Wearables Coverage
@@ -9013,13 +9007,14 @@ cross_publication_findings:
       hardware parity (Apr 28, 2026) but presupposes Samsung as privacy-superior ("except maybe not violate your privacy as
       easily") WITHOUT evidence. Within-article asymmetry (Jul 30, 2026): Meta gets 5 substantive privacy-scandal paragraphs;
       Samsung gets 1 sentence as positive market entry. Samsung coverage: 0 surveillance vocabulary across 3 articles. Meta
-      coverage: 5+ surveillance vocabulary instances per article, adversarial headlines ("You''re Being Watched, Too"),
-      surveillance/minefield/pile-up language. Since Gizmodo has ZERO financial ties to Samsung, Google, Meta, or any tech
-      company, this establishes that Samsung-favorable privacy framing operates at the CULTURAL level. Financial relationships
-      at WIRED (Conde Nast OpenAI deal), FT (Google/OpenAI deals), and NYT (Amazon deal) AMPLIFY this pre-existing cultural
-      coding but did not create it. Extends #74 (Snap Specs, niche $2,195) to Samsung (mass-market direct competitor,
-      $299-$499), establishing robustness across competitor price points.'
-    key_finding: 'Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition — Clean Control Entity-Specific Coverage Selectivity'
+      coverage: 5+ surveillance vocabulary instances per article, adversarial headlines ("You''re Being Watched, Too"), surveillance/minefield/pile-up
+      language. Since Gizmodo has ZERO financial ties to Samsung, Google, Meta, or any tech company, this establishes that
+      Samsung-favorable privacy framing operates at the CULTURAL level. Financial relationships at WIRED (Conde Nast OpenAI
+      deal), FT (Google/OpenAI deals), and NYT (Amazon deal) AMPLIFY this pre-existing cultural coding but did not create
+      it. Extends #74 (Snap Specs, niche $2,195) to Samsung (mass-market direct competitor, $299-$499), establishing robustness
+      across competitor price points.'
+    key_finding: Gizmodo Same-Journalist Same-Chip Samsung Privacy Presupposition — Clean Control Entity-Specific Coverage
+      Selectivity
     type: 'Type A: Competitor Coverage Deep Dive'
     publication: Gizmodo (Keleops AG)
     journalist: Raymond Wong
@@ -9032,30 +9027,35 @@ cross_publication_findings:
     - 80
     cross_references:
     - mechanism_id: 74
-      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #95 extends from niche Snap ($2,195) to mass-market Samsung ($299-$499)'
+      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #95 extends from niche Snap ($2,195)
+        to mass-market Samsung ($299-$499)'
     - mechanism_id: 31
-      relationship: '#31 — James Pero Editorial Direction Override. Different mechanism (genre oscillation) but same publication, complementary evidence'
+      relationship: '#31 — James Pero Editorial Direction Override. Different mechanism (genre oscillation) but same publication,
+        complementary evidence'
     - mechanism_id: 89
-      relationship: '#89 — WIRED Ashworth Samsung. Different publication (WIRED has financial ties; Gizmodo has zero). #95 shows the CONTROL also exhibits the pattern'
+      relationship: '#89 — WIRED Ashworth Samsung. Different publication (WIRED has financial ties; Gizmodo has zero). #95
+        shows the CONTROL also exhibits the pattern'
     - mechanism_id: 93
-      relationship: '#93 — Samsung Privacy Feature Framing Inversion. Cross-publication pattern; #95 establishes the clean control baseline'
+      relationship: '#93 — Samsung Privacy Feature Framing Inversion. Cross-publication pattern; #95 establishes the clean
+        control baseline'
     - mechanism_id: 80
-      relationship: '#80 — Gizmodo Samsung Unpacked 4-Entity Clean Control. #95 deepens the same-journalist same-chip analysis within the 4-entity framework'
+      relationship: '#80 — Gizmodo Samsung Unpacked 4-Entity Clean Control. #95 deepens the same-journalist same-chip analysis
+        within the 4-entity framework'
     confounding_factors:
-    - factor: 'Pre-launch product — Samsung glasses had not shipped during coverage period. Privacy violations require deployed
-        hardware with real users. Meta has 7M+ units in the wild.'
+    - factor: Pre-launch product — Samsung glasses had not shipped during coverage period. Privacy violations require deployed
+        hardware with real users. Meta has 7M+ units in the wild.
       strength: STRONG
-    - factor: 'Cambridge Analytica legacy — Meta has a documented history of privacy scandals that primes journalists for
-        adversarial framing regardless of hardware parity.'
+    - factor: Cambridge Analytica legacy — Meta has a documented history of privacy scandals that primes journalists for adversarial
+        framing regardless of hardware parity.
       strength: STRONG
-    - factor: 'Installed base asymmetry — Meta''s 7M+ units create more documented privacy incidents (extortion, cheating,
-        contractor footage). Samsung has zero user-generated incidents.'
+    - factor: Installed base asymmetry — Meta's 7M+ units create more documented privacy incidents (extortion, cheating, contractor
+        footage). Samsung has zero user-generated incidents.
       strength: MODERATE
-    - factor: 'Google partnership halo — Samsung''s Google/Gemini partnership may invoke Google''s "don''t be evil" brand
-        association, buffering privacy skepticism.'
+    - factor: Google partnership halo — Samsung's Google/Gemini partnership may invoke Google's "don't be evil" brand association,
+        buffering privacy skepticism.
       strength: MODERATE
-    - factor: 'Event access — Samsung Galaxy Unpacked provided hands-on access at a controlled demo, which naturally produces
-        product-focused coverage. Meta glasses are reviewed in uncontrolled environments.'
+    - factor: Event access — Samsung Galaxy Unpacked provided hands-on access at a controlled demo, which naturally produces
+        product-focused coverage. Meta glasses are reviewed in uncontrolled environments.
       strength: WEAK
     testable_predictions:
     - 'P95.1: When Samsung Galaxy Glasses ship (fall 2026), if identical privacy incidents occur (filming without consent,
@@ -9086,49 +9086,61 @@ cross_publication_findings:
     - samsung
     - google
     gizmodo_article_count: 6
-    finding_summary: 'Gizmodo (Keleops AG, Luxembourg, ZERO financial ties to any tech company) published 6+ standalone
-      adversarial articles about Anthropic''s AI safety and security incidents from Aug 2025 to Jun 2026, spanning 10 months.
-      These use adversarial vocabulary ("crime spree," "unprecedented cybersecurity risks," "can''t cover up," "hacked NSA
-      most sensitive systems in hours"), adversarial headlines, and skeptical editorial framing with aggregate tone ~-0.60,
-      comparable to Gizmodo''s Meta coverage (-0.75). The clean-control thesis is validated: a publication without financial
-      ties covers ALL AI labs with proportionate adversarial scrutiny when genuine safety incidents occur. Gizmodo''s framing
-      is incident-responsive and entity-neutral — Meta (-0.75), Anthropic (-0.60), and OpenAI (-0.35) all receive adversarial
-      coverage, while Samsung (+0.20) and Google (+0.40) receive neutral/positive coverage (no comparable incidents pre-launch).
-      WIRED (Condé Nast, OpenAI content deal) does not have a comparable longitudinal adversarial Anthropic coverage body
-      (mechanism #92 documents WIRED''s silence after the AISI report). First Gizmodo clean-control mechanism in the AI
-      safety/security domain with LONGITUDINAL timeframe (10 months, not single-event).'
-    key_finding: 'Gizmodo Clean Control — Anthropic AI Safety Adversarial Coverage Consistency'
+    finding_summary: 'Gizmodo (Keleops AG, Luxembourg, ZERO financial ties to any tech company) published 6+ standalone adversarial
+      articles about Anthropic''s AI safety and security incidents from Aug 2025 to Jun 2026, spanning 10 months. These use
+      adversarial vocabulary ("crime spree," "unprecedented cybersecurity risks," "can''t cover up," "hacked NSA most sensitive
+      systems in hours"), adversarial headlines, and skeptical editorial framing with aggregate tone ~-0.60, comparable to
+      Gizmodo''s Meta coverage (-0.75). The clean-control thesis is validated: a publication without financial ties covers
+      ALL AI labs with proportionate adversarial scrutiny when genuine safety incidents occur. Gizmodo''s framing is incident-responsive
+      and entity-neutral — Meta (-0.75), Anthropic (-0.60), and OpenAI (-0.35) all receive adversarial coverage, while Samsung
+      (+0.20) and Google (+0.40) receive neutral/positive coverage (no comparable incidents pre-launch). WIRED (Condé Nast,
+      OpenAI content deal) does not have a comparable longitudinal adversarial Anthropic coverage body (mechanism #92 documents
+      WIRED''s silence after the AISI report). First Gizmodo clean-control mechanism in the AI safety/security domain with
+      LONGITUDINAL timeframe (10 months, not single-event).'
+    key_finding: Gizmodo Clean Control — Anthropic AI Safety Adversarial Coverage Consistency
     type: 'Type A: Competitor Coverage Deep Dive'
     publication: Gizmodo (Keleops AG)
     test_file: tests/test_gizmodo_anthropic_ai_safety_clean_control_adversarial_coverage_aug14.py
     cross_entity_tones:
       meta: -0.75
-      anthropic: -0.60
+      anthropic: -0.6
       openai: -0.35
-      samsung: 0.20
-      google: 0.40
+      samsung: 0.2
+      google: 0.4
     financial_relationships:
-      gizmodo_financial_ties: "none — Keleops AG (Luxembourg) has zero financial ties to any tech company"
-      gizmodo_owner: "Keleops AG, Zug, Switzerland (Luxembourg operations)"
-      wired_contrast: "WIRED (Condé Nast) has OpenAI content deal since Aug 2024 — no comparable longitudinal adversarial Anthropic portfolio"
+      gizmodo_financial_ties: none — Keleops AG (Luxembourg) has zero financial ties to any tech company
+      gizmodo_owner: Keleops AG, Zug, Switzerland (Luxembourg operations)
+      wired_contrast: WIRED (Condé Nast) has OpenAI content deal since Aug 2024 — no comparable longitudinal adversarial Anthropic
+        portfolio
     confounding_factors:
     - strength: STRONG
-      factor: "Gizmodo's editorial identity is inherently skeptical/adversarial — site DNA favors 'here's what could go wrong' framing for ALL tech stories, not just AI safety"
+      factor: Gizmodo's editorial identity is inherently skeptical/adversarial — site DNA favors 'here's what could go wrong'
+        framing for ALL tech stories, not just AI safety
     - strength: STRONG
-      factor: "Anthropic genuinely had more/worse safety incidents than Samsung or Google — the adversarial coverage is proportionate to real events"
+      factor: Anthropic genuinely had more/worse safety incidents than Samsung or Google — the adversarial coverage is proportionate
+        to real events
     - strength: MODERATE
-      factor: "Different Gizmodo journalists cover different entities — Kyle Barr, Maxwell Zeff, Raymond Wong have different beat assignments; coverage tone may reflect individual style"
+      factor: Different Gizmodo journalists cover different entities — Kyle Barr, Maxwell Zeff, Raymond Wong have different
+        beat assignments; coverage tone may reflect individual style
     - strength: MODERATE
-      factor: "Anthropic's 'safety-first' branding creates a hypocrisy angle — adversarial coverage exploits gap between Anthropic's positioning and its incidents, creating higher editorial interest"
+      factor: Anthropic's 'safety-first' branding creates a hypocrisy angle — adversarial coverage exploits gap between Anthropic's
+        positioning and its incidents, creating higher editorial interest
     - strength: WEAK
-      factor: "Timing effects — some Anthropic incidents (Mythos leak, Claude Code leak) were clustered in Mar-Apr 2026, potentially reflecting news cycle concentration"
+      factor: Timing effects — some Anthropic incidents (Mythos leak, Claude Code leak) were clustered in Mar-Apr 2026, potentially
+        reflecting news cycle concentration
     - strength: WEAK
-      factor: "Genre selection — Gizmodo covers Anthropic security as 'news' articles while Samsung glasses as 'hands-on/review' articles; different formats naturally carry different tones"
+      factor: Genre selection — Gizmodo covers Anthropic security as 'news' articles while Samsung glasses as 'hands-on/review'
+        articles; different formats naturally carry different tones
     testable_predictions:
-    - prediction: "When Samsung/Google glasses ship (Fall 2026), if a privacy incident occurs, Gizmodo will cover it with adversarial framing comparable to its Meta and Anthropic coverage (the clean-control thesis predicts incident-responsive, entity-neutral adversarial framing)"
-    - prediction: "If Anthropic has FEWER safety incidents in H2 2026, Gizmodo's adversarial Anthropic article count will decrease proportionally — it covers events, not entity grudges"
-    - prediction: "Publications with Anthropic investor relationships (Amazon → NYT via advertising) will show softer Anthropic safety coverage than Gizmodo's baseline"
-    - prediction: "If Google Gemini has a security breach comparable to Claude's Jul 30 incident, Gizmodo will cover it with comparable adversarial framing despite currently positive Google glasses coverage"
+    - prediction: When Samsung/Google glasses ship (Fall 2026), if a privacy incident occurs, Gizmodo will cover it with adversarial
+        framing comparable to its Meta and Anthropic coverage (the clean-control thesis predicts incident-responsive, entity-neutral
+        adversarial framing)
+    - prediction: If Anthropic has FEWER safety incidents in H2 2026, Gizmodo's adversarial Anthropic article count will decrease
+        proportionally — it covers events, not entity grudges
+    - prediction: Publications with Anthropic investor relationships (Amazon → NYT via advertising) will show softer Anthropic
+        safety coverage than Gizmodo's baseline
+    - prediction: If Google Gemini has a security breach comparable to Claude's Jul 30 incident, Gizmodo will cover it with
+        comparable adversarial framing despite currently positive Google glasses coverage
     related_mechanisms:
     - 74
     - 80
@@ -9137,15 +9149,20 @@ cross_publication_findings:
     - 92
     cross_references:
     - mechanism_id: 74
-      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #98 extends clean-control from glasses domain to AI safety/security domain'
+      relationship: '#74 — Gizmodo Snap Specs Camera Privacy Vocabulary Suppression. #98 extends clean-control from glasses
+        domain to AI safety/security domain'
     - mechanism_id: 80
-      relationship: '#80 — Gizmodo Samsung 4-Entity Clean Control. #98 adds Anthropic as a NEW entity in a NEW domain (AI safety vs glasses privacy)'
+      relationship: '#80 — Gizmodo Samsung 4-Entity Clean Control. #98 adds Anthropic as a NEW entity in a NEW domain (AI
+        safety vs glasses privacy)'
     - mechanism_id: 95
-      relationship: '#95 — Gizmodo Samsung Same-Chip Privacy Presupposition. #98 targets a different entity (Anthropic) in a different domain (AI safety vs glasses privacy)'
+      relationship: '#95 — Gizmodo Samsung Same-Chip Privacy Presupposition. #98 targets a different entity (Anthropic) in
+        a different domain (AI safety vs glasses privacy)'
     - mechanism_id: 96
-      relationship: '#96 — Gizmodo OpenAI Litigation Clean Control. #98 covers a different entity (Anthropic) in a different domain (AI safety vs litigation/ethics)'
+      relationship: '#96 — Gizmodo OpenAI Litigation Clean Control. #98 covers a different entity (Anthropic) in a different
+        domain (AI safety vs litigation/ethics)'
     - mechanism_id: 92
-      relationship: '#92 — WIRED AISI Accountability Coverage Trajectory Break. #98 provides the Gizmodo comparison: longitudinal adversarial Anthropic coverage vs WIRED silence'
+      relationship: '#92 — WIRED AISI Accountability Coverage Trajectory Break. #98 provides the Gizmodo comparison: longitudinal
+        adversarial Anthropic coverage vs WIRED silence'
     source_urls:
     - https://gizmodo.com/claude-chatbot-crime-spree-2000649123
     - https://gizmodo.com/leaked-anthropic-model-presents-unprecedented-cybersecurity-risks-much-to-pentagons-pleasure-2000739088
@@ -9165,17 +9182,17 @@ cross_publication_findings:
     - apple
     gizmodo_article_count: 6
     wired_lawsuit_article_count: 0
-    finding_summary: 'Gizmodo (Keleops AG, zero financial ties to any tech company) produced 6 standalone articles covering
-      OpenAI''s hardware device and the Apple vs OpenAI trade-secret lawsuit (Feb 20 - Aug 6, 2026), applying consistent
-      skepticism and adversarial framing (~-0.35 aggregate tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024)
-      produced zero identifiable standalone wired.com articles covering the Apple vs OpenAI trade-secret lawsuit over 35 days
-      (Jul 10 - Aug 14, 2026), despite this being one of the biggest tech legal stories of 2026 (400+ poached employees,
-      systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction filed Aug 4). During the same
-      period, WIRED published Boone Ashworth''s adversarial Meta glasses piece "Is It Possible to Make Smart Glasses That
-      Aren''t Creepy?" (Aug 2). Extends the Gizmodo clean-control pattern from hardware/privacy (#80) into the litigation/ethics
-      domain. Gizmodo covers BOTH Meta (tone -0.75) AND OpenAI (tone -0.35) adversarially, confirming equitable editorial
-      standards. Financial relationship (Condé Nast-OpenAI deal) predicts coverage selectivity.'
-    key_finding: 'Gizmodo Equitable Adversarial OpenAI Hardware Litigation Coverage — Clean Control Cross-Entity Validation'
+    finding_summary: Gizmodo (Keleops AG, zero financial ties to any tech company) produced 6 standalone articles covering
+      OpenAI's hardware device and the Apple vs OpenAI trade-secret lawsuit (Feb 20 - Aug 6, 2026), applying consistent skepticism
+      and adversarial framing (~-0.35 aggregate tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024) produced zero
+      identifiable standalone wired.com articles covering the Apple vs OpenAI trade-secret lawsuit over 35 days (Jul 10 -
+      Aug 14, 2026), despite this being one of the biggest tech legal stories of 2026 (400+ poached employees, systematic
+      hardware IP theft allegations, supplier fraud claims, preliminary injunction filed Aug 4). During the same period, WIRED
+      published Boone Ashworth's adversarial Meta glasses piece "Is It Possible to Make Smart Glasses That Aren't Creepy?"
+      (Aug 2). Extends the Gizmodo clean-control pattern from hardware/privacy (#80) into the litigation/ethics domain. Gizmodo
+      covers BOTH Meta (tone -0.75) AND OpenAI (tone -0.35) adversarially, confirming equitable editorial standards. Financial
+      relationship (Condé Nast-OpenAI deal) predicts coverage selectivity.
+    key_finding: Gizmodo Equitable Adversarial OpenAI Hardware Litigation Coverage — Clean Control Cross-Entity Validation
     type: 'Type A: Competitor Coverage Deep Dive'
     publication: Gizmodo (Keleops AG)
     test_file: tests/test_gizmodo_openai_litigation_clean_control_coverage_validation_aug14.py
@@ -9189,10 +9206,12 @@ cross_publication_findings:
     - Ars Technica
     - 9to5Mac
     financial_relationships:
-      wired_openai_deal: "Condé Nast content deal with OpenAI since Aug 2024"
-      gizmodo_financial_ties: "none — Keleops AG has zero financial ties to any tech company"
-      gizmodo_owner: "Keleops AG, Zug, Switzerland"
-      coverage_prediction: "Publication with OpenAI deal (WIRED) produces zero articles on OpenAI legal scandal; publication with zero financial ties (Gizmodo) produces 6 articles with adversarial framing. Financial relationship predicts coverage selectivity."
+      wired_openai_deal: Condé Nast content deal with OpenAI since Aug 2024
+      gizmodo_financial_ties: none — Keleops AG has zero financial ties to any tech company
+      gizmodo_owner: Keleops AG, Zug, Switzerland
+      coverage_prediction: Publication with OpenAI deal (WIRED) produces zero articles on OpenAI legal scandal; publication
+        with zero financial ties (Gizmodo) produces 6 articles with adversarial framing. Financial relationship predicts coverage
+        selectivity.
     related_mechanisms:
     - 80
     - 84
@@ -9201,9 +9220,11 @@ cross_publication_findings:
     - 82
     cross_references:
     - mechanism_id: 80
-      relationship: '#80 — Gizmodo 4-Entity Clean Control. #96 extends from hardware/privacy vocabulary into litigation/ethics coverage'
+      relationship: '#80 — Gizmodo 4-Entity Clean Control. #96 extends from hardware/privacy vocabulary into litigation/ethics
+        coverage'
     - mechanism_id: 84
-      relationship: '#84 — WIRED OpenAI Hardware FR Investigation Gap. #96 covers lawsuit coverage gap (not privacy investigation gap)'
+      relationship: '#84 — WIRED OpenAI Hardware FR Investigation Gap. #96 covers lawsuit coverage gap (not privacy investigation
+        gap)'
     - mechanism_id: 48
       relationship: '#48 — WIRED OpenAI Ad Coverage Selection Gap. Same pattern (WIRED silence on OpenAI) in different domain'
     - mechanism_id: 58
@@ -9211,24 +9232,24 @@ cross_publication_findings:
     - mechanism_id: 82
       relationship: '#82 — Publisher Revenue Collapse Dependency Spiral. Broader financial dependency context'
     confounding_factors:
-    - factor: 'Beat assignment — WIRED may not have assigned a reporter to the Apple-OpenAI lawsuit because their OpenAI/hardware
-        reporters focus on different angles (privacy investigations, product reviews).'
+    - factor: Beat assignment — WIRED may not have assigned a reporter to the Apple-OpenAI lawsuit because their OpenAI/hardware
+        reporters focus on different angles (privacy investigations, product reviews).
       strength: STRONG
-    - factor: 'Apple-OpenAI lawsuit timing — The lawsuit landed Jul 10, 2026 during a busy news period with Samsung Unpacked
+    - factor: Apple-OpenAI lawsuit timing — The lawsuit landed Jul 10, 2026 during a busy news period with Samsung Unpacked
         (Jul 22), rogue AI incidents (Jul 21-28), and multiple competing stories. Editorial bandwidth constraints may have
-        deprioritized legal coverage.'
+        deprioritized legal coverage.
       strength: STRONG
-    - factor: 'Story prominence — The lawsuit was widely covered by tech press but is a legal/business story, not core WIRED
-        territory (which skews toward product reviews and privacy investigations).'
+    - factor: Story prominence — The lawsuit was widely covered by tech press but is a legal/business story, not core WIRED
+        territory (which skews toward product reviews and privacy investigations).
       strength: MODERATE
-    - factor: 'Wire service dependency — Many publications run Reuters/AP for lawsuit coverage rather than producing original
-        standalone articles.'
+    - factor: Wire service dependency — Many publications run Reuters/AP for lawsuit coverage rather than producing original
+        standalone articles.
       strength: MODERATE
-    - factor: 'Paresh Dave podcast appearance — WIRED''s reporter DID discuss the lawsuit publicly on Marketplace.org podcast
-        (Jul 17), demonstrating awareness without a WIRED.com article. This may indicate editorial choice rather than ignorance.'
+    - factor: Paresh Dave podcast appearance — WIRED's reporter DID discuss the lawsuit publicly on Marketplace.org podcast
+        (Jul 17), demonstrating awareness without a WIRED.com article. This may indicate editorial choice rather than ignorance.
       strength: WEAK
-    - factor: 'Apple partnership considerations — WIRED/Condé Nast may also be cautious about Apple coverage (Apple News Plus
-        via Condé Nast provides subscription revenue), creating dual hesitancy about covering Apple vs OpenAI.'
+    - factor: Apple partnership considerations — WIRED/Condé Nast may also be cautious about Apple coverage (Apple News Plus
+        via Condé Nast provides subscription revenue), creating dual hesitancy about covering Apple vs OpenAI.
       strength: WEAK
     testable_predictions:
     - 'P96.1: When OpenAI announces its hardware device (expected late 2026/early 2027), WIRED will cover the product but
@@ -9258,77 +9279,74 @@ cross_publication_findings:
     - anthropic
     journalist: Reece Rogers
     publication: WIRED (Condé Nast)
-    finding_summary: >
-      Reece Rogers at WIRED writes privacy investigations and alarm-framed pieces
-      about Meta's products (ghost dot sticker for Ray-Ban recording light Aug 2025,
-      Muse Image opt-out burden Jul 2026, 'Goodbye Meta AI' copypasta Sep 2024,
-      Meta 2FA changes) but applies convenience/informational framing when covering
-      structurally identical privacy concerns at Google and Condé Nast financial
-      partners. Rogers was 1 of 5 WIRED reporters on-site at Google I/O 2026 where
-      Google demonstrated camera glasses with identical capabilities to Meta Ray-Ban
-      and produced zero standalone privacy articles about Google's cameras. Rogers
-      covered Google's selfie video login — which explicitly includes a toggle for
-      Google to use facial data to 'develop and improve facial recognition across
-      Google services' — with convenience framing ('completed in less than five
-      minutes'), while Meta's dormant NameTag code (never activated, on-device only)
-      generated 2+ WIRED investigations with alarm language. Rogers covered Anthropic's
-      training data opt-in (same structural dynamic as Meta Muse Image) informationally
-      rather than with opt-out burden framing. Rogers' McDonald's data dossier piece
-      (Aug 2026) proves he does aggressive privacy investigations against entities
-      with zero Condé Nast financial ties. Financial relationships predict the
-      framing direction: Condé Nast has content deals with OpenAI, Microsoft,
-      Amazon, Perplexity; depends on Google advertising revenue; distributes via
-      Apple News+. Meta has zero content deal and is a direct advertising competitor.
-    key_finding: 'Reece Rogers Privacy Investigation Topic Routing Asymmetry'
+    finding_summary: 'Reece Rogers at WIRED writes privacy investigations and alarm-framed pieces about Meta''s products (ghost
+      dot sticker for Ray-Ban recording light Aug 2025, Muse Image opt-out burden Jul 2026, ''Goodbye Meta AI'' copypasta
+      Sep 2024, Meta 2FA changes) but applies convenience/informational framing when covering structurally identical privacy
+      concerns at Google and Condé Nast financial partners. Rogers was 1 of 5 WIRED reporters on-site at Google I/O 2026 where
+      Google demonstrated camera glasses with identical capabilities to Meta Ray-Ban and produced zero standalone privacy
+      articles about Google''s cameras. Rogers covered Google''s selfie video login — which explicitly includes a toggle for
+      Google to use facial data to ''develop and improve facial recognition across Google services'' — with convenience framing
+      (''completed in less than five minutes''), while Meta''s dormant NameTag code (never activated, on-device only) generated
+      2+ WIRED investigations with alarm language. Rogers covered Anthropic''s training data opt-in (same structural dynamic
+      as Meta Muse Image) informationally rather than with opt-out burden framing. Rogers'' McDonald''s data dossier piece
+      (Aug 2026) proves he does aggressive privacy investigations against entities with zero Condé Nast financial ties. Financial
+      relationships predict the framing direction: Condé Nast has content deals with OpenAI, Microsoft, Amazon, Perplexity;
+      depends on Google advertising revenue; distributes via Apple News+. Meta has zero content deal and is a direct advertising
+      competitor.
+
+      '
+    key_finding: Reece Rogers Privacy Investigation Topic Routing Asymmetry
     type: 'Type B: Journalist Cross-Entity Tracking'
     meta_privacy_article_count: 4
     google_privacy_article_count: 0
     mcdonalds_privacy_article_count: 1
     entity_tone_matrix:
       meta: -0.55
-      google: +0.10
+      google: 0.1
       anthropic: -0.05
-      mcdonalds: -0.70
+      mcdonalds: -0.7
     tone_delta_meta_vs_google: 0.65
     test_file: tests/test_reece_rogers_cross_entity.py
     confounding_factors:
-    - factor: >
-        STRONG: Meta has documented facial recognition history (DeepFace 2014) that
-        Google does not share at the same scale, creating a legitimate editorial rationale
-        for heightened Meta scrutiny on facial recognition topics.
+    - factor: 'STRONG: Meta has documented facial recognition history (DeepFace 2014) that Google does not share at the same
+        scale, creating a legitimate editorial rationale for heightened Meta scrutiny on facial recognition topics.
+
+        '
       strength: STRONG
-    - factor: >
-        STRONG: Rogers may be assigned Meta privacy stories by editors rather than
-        self-selecting them. The entity-specific routing may be a publication-level
-        editorial allocation pattern, not individual journalist preference.
+    - factor: 'STRONG: Rogers may be assigned Meta privacy stories by editors rather than self-selecting them. The entity-specific
+        routing may be a publication-level editorial allocation pattern, not individual journalist preference.
+
+        '
       strength: STRONG
-    - factor: >
-        MODERATE: Google I/O live blog is a collaborative multi-reporter product;
-        individual contributions are harder to isolate. Rogers' neutral Google framing
-        may reflect collaborative tone-setting rather than personal framing choice.
+    - factor: 'MODERATE: Google I/O live blog is a collaborative multi-reporter product; individual contributions are harder
+        to isolate. Rogers'' neutral Google framing may reflect collaborative tone-setting rather than personal framing choice.
+
+        '
       strength: MODERATE
-    - factor: >
-        MODERATE: The Meta ghost dot sticker piece was co-authored with Boone Ashworth;
-        Ashworth may have initiated the alarm framing angle, not Rogers independently.
+    - factor: 'MODERATE: The Meta ghost dot sticker piece was co-authored with Boone Ashworth; Ashworth may have initiated
+        the alarm framing angle, not Rogers independently.
+
+        '
       strength: MODERATE
-    - factor: >
-        WEAK: Product maturity difference — Meta glasses are shipping consumer products
-        while Google I/O glasses were demos — but privacy concerns should arguably be
-        HIGHER for always-on AI camera demos where bystanders cannot consent to recording
-        in a conference setting.
+    - factor: 'WEAK: Product maturity difference — Meta glasses are shipping consumer products while Google I/O glasses were
+        demos — but privacy concerns should arguably be HIGHER for always-on AI camera demos where bystanders cannot consent
+        to recording in a conference setting.
+
+        '
       strength: WEAK
     testable_predictions:
-    - >
-      P97.1: When Samsung/Google smart glasses ship (Fall 2026), Rogers will NOT write
-      a privacy investigation about Samsung/Google glasses' recording LED concealment
-      risk equivalent to the Meta ghost dot sticker piece.
-    - >
-      P97.2: If Google expands selfie video facial recognition data collection,
-      Rogers will cover it with informational framing, not alarm framing equivalent
-      to Meta Muse Image.
-    - >
-      P97.3: Rogers' next 5 privacy articles will include more Meta-entity alarm
-      pieces than Google-entity alarm pieces, maintaining the current 4:0 ratio.
+    - 'P97.1: When Samsung/Google smart glasses ship (Fall 2026), Rogers will NOT write a privacy investigation about Samsung/Google
+      glasses'' recording LED concealment risk equivalent to the Meta ghost dot sticker piece.
+
+      '
+    - 'P97.2: If Google expands selfie video facial recognition data collection, Rogers will cover it with informational framing,
+      not alarm framing equivalent to Meta Muse Image.
+
+      '
+    - 'P97.3: Rogers'' next 5 privacy articles will include more Meta-entity alarm pieces than Google-entity alarm pieces,
+      maintaining the current 4:0 ratio.
+
+      '
     source_urls:
     - https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
     - https://www.techmeme.com/260707/p37
@@ -9356,22 +9374,19 @@ cross_publication_findings:
     - meta
     journalist: James Pero
     publication: Gizmodo (Keleops AG)
-    finding_summary: >
-      James Pero, Gizmodo's self-described "resident smart glasses guy," constructs
-      DIFFERENT TEMPORAL NARRATIVES for Google vs Meta when covering identical smart
-      glasses hardware. Google gets a REDEMPTION ARC (failure → learning → growth):
-      "May Have Actually Learned Something From the Glasshole Days." Meta gets a
-      RECIDIVISM LOOP (failure → more failure → escalation): "Privacy Concerns Pile
-      Up," "Shamed Into Covering Their Cameras," "Thanks to Meta." Both companies
-      build camera-equipped smart glasses with the SAME Snapdragon AR1 Gen 1 chip,
-      12MP cameras, LED indicators, and AI visual processing. Google's PREVIOUS
-      failure (Google Glass 2013-2015) is framed as LEARNING; Meta's CONTINUED
-      market success (7M+ units) is framed as ESCALATING THREAT. The temporal coding
-      inverts: failure becomes virtue (Google), success becomes menace (Meta). Since
-      Gizmodo has ZERO financial ties to any tech company, this isolates CULTURAL
-      CODING as a mechanism distinct from financial incentives. Distinct from #31
-      (genre split), #80 (framing vocabulary), and #98 (Anthropic AI safety domain).
-    key_finding: 'Google Temporal Redemption Narrative vs Meta Recidivism Loop'
+    finding_summary: 'James Pero, Gizmodo''s self-described "resident smart glasses guy," constructs DIFFERENT TEMPORAL NARRATIVES
+      for Google vs Meta when covering identical smart glasses hardware. Google gets a REDEMPTION ARC (failure → learning
+      → growth): "May Have Actually Learned Something From the Glasshole Days." Meta gets a RECIDIVISM LOOP (failure → more
+      failure → escalation): "Privacy Concerns Pile Up," "Shamed Into Covering Their Cameras," "Thanks to Meta." Both companies
+      build camera-equipped smart glasses with the SAME Snapdragon AR1 Gen 1 chip, 12MP cameras, LED indicators, and AI visual
+      processing. Google''s PREVIOUS failure (Google Glass 2013-2015) is framed as LEARNING; Meta''s CONTINUED market success
+      (7M+ units) is framed as ESCALATING THREAT. The temporal coding inverts: failure becomes virtue (Google), success becomes
+      menace (Meta). Since Gizmodo has ZERO financial ties to any tech company, this isolates CULTURAL CODING as a mechanism
+      distinct from financial incentives. Distinct from #31 (genre split), #80 (framing vocabulary), and #98 (Anthropic AI
+      safety domain).
+
+      '
+    key_finding: Google Temporal Redemption Narrative vs Meta Recidivism Loop
     type: 'Type B: Journalist Cross-Entity Tracking'
     google_article_count: 3
     meta_article_count: 4
@@ -9381,53 +9396,53 @@ cross_publication_findings:
     tone_delta_google_vs_meta: 0.45
     test_file: tests/test_james_pero_google_redemption_temporal_narrative_aug14.py
     confounding_factors:
-    - factor: >
-        Google Glass failure IS a genuine narrative event — Google did publicly fail
-        and retreat from consumer smart glasses in 2015, making "learning from mistakes"
-        a defensible editorial frame.
+    - factor: 'Google Glass failure IS a genuine narrative event — Google did publicly fail and retreat from consumer smart
+        glasses in 2015, making "learning from mistakes" a defensible editorial frame.
+
+        '
       strength: STRONG
-    - factor: >
-        Meta has genuine privacy scandals (Cambridge Analytica 2018, Kenya contractor
-        video review 2026) that create a reasonable baseline for adversarial coverage
-        beyond what Google currently faces.
+    - factor: 'Meta has genuine privacy scandals (Cambridge Analytica 2018, Kenya contractor video review 2026) that create
+        a reasonable baseline for adversarial coverage beyond what Google currently faces.
+
+        '
       strength: STRONG
-    - factor: >
-        Pero's beat developed during Meta's market dominance (7M+ units) — Google
-        glasses are pre-launch, making adversarial privacy coverage premature since
-        there are no real-world incidents to cover.
+    - factor: 'Pero''s beat developed during Meta''s market dominance (7M+ units) — Google glasses are pre-launch, making
+        adversarial privacy coverage premature since there are no real-world incidents to cover.
+
+        '
       strength: MODERATE
-    - factor: >
-        Google's "intelligent eyewear" and "audio glasses" branding actively downplays
-        cameras — this corporate framing may reduce the editorial impulse to write
-        privacy-focused coverage.
+    - factor: 'Google''s "intelligent eyewear" and "audio glasses" branding actively downplays cameras — this corporate framing
+        may reduce the editorial impulse to write privacy-focused coverage.
+
+        '
       strength: MODERATE
-    - factor: >
-        Different article timing — Google articles are anticipatory/preview pieces
-        written before product launch, while Meta articles respond to actual incidents
-        and data. Preview pieces inherently have more positive framing.
+    - factor: 'Different article timing — Google articles are anticipatory/preview pieces written before product launch, while
+        Meta articles respond to actual incidents and data. Preview pieces inherently have more positive framing.
+
+        '
       strength: WEAK
-    - factor: >
-        Editor assignment — Pero may have been assigned Google coverage as product
-        preview and Meta coverage as privacy investigation, with the temporal narrative
-        being an artifact of assignment rather than personal framing choice.
+    - factor: 'Editor assignment — Pero may have been assigned Google coverage as product preview and Meta coverage as privacy
+        investigation, with the temporal narrative being an artifact of assignment rather than personal framing choice.
+
+        '
       strength: WEAK
     testable_predictions:
-    - >
-      P99.1: When Samsung/Google glasses ship Fall 2026 and generate real-world privacy
-      incidents, Pero will frame them as "growing pains" for the smart glasses category
-      rather than entity-specific recidivism.
-    - >
-      P99.2: If Google Gemini's visual identification capabilities on glasses are used
-      inappropriately, Pero will frame it as a Google AI or category problem rather
-      than a "surveillance glasses" problem.
-    - >
-      P99.3: Post-launch Samsung/Google privacy coverage from Pero will use softer
-      vocabulary (concern, question, challenge, growing pains) than Meta privacy
-      coverage (invasive, surveillance, encroaching, pile up, shamed).
-    - >
-      P99.4: Pero's year-end smart glasses retrospective (if written) will credit
-      Google/Samsung with "pushing the category forward" while Meta gets credit only
-      for market creation, not privacy improvement.
+    - 'P99.1: When Samsung/Google glasses ship Fall 2026 and generate real-world privacy incidents, Pero will frame them as
+      "growing pains" for the smart glasses category rather than entity-specific recidivism.
+
+      '
+    - 'P99.2: If Google Gemini''s visual identification capabilities on glasses are used inappropriately, Pero will frame
+      it as a Google AI or category problem rather than a "surveillance glasses" problem.
+
+      '
+    - 'P99.3: Post-launch Samsung/Google privacy coverage from Pero will use softer vocabulary (concern, question, challenge,
+      growing pains) than Meta privacy coverage (invasive, surveillance, encroaching, pile up, shamed).
+
+      '
+    - 'P99.4: Pero''s year-end smart glasses retrospective (if written) will credit Google/Samsung with "pushing the category
+      forward" while Meta gets credit only for market creation, not privacy improvement.
+
+      '
     source_urls:
     - https://gizmodo.com/googles-next-smart-glasses-may-have-actually-learned-something-from-the-glasshole-days-2000710198
     - https://gizmodo.com/google-seems-pretty-scared-of-the-words-smart-glasses-2000760916
@@ -9444,38 +9459,38 @@ cross_publication_findings:
     - 95
   news_corp_triple_revenue_ai_ecosystem:
     mechanism_id: 100
-    title: "News Corp Triple-Revenue AI Financial Ecosystem \u2014 Publisher, Marketplace Operator, and Litigant"
+    title: News Corp Triple-Revenue AI Financial Ecosystem — Publisher, Marketplace Operator, and Litigant
     type: financial_incentive_mapping
-    date_added: "2026-08-14"
+    date_added: '2026-08-14'
     publication: news_corp
-    finding_summary: >
-      News Corp operates the most complex AI revenue structure of any publisher: (1) direct content
-      licensing from OpenAI ($50M/yr) AND Meta (up to $50M/yr) = ~$100M/yr; (2) Factiva marketplace
-      (Dow Jones subsidiary) selling AI rights to 8,100+ news sources as intermediary; (3) HarperCollins
-      settlement revenue from Anthropic $1.5B copyright case. This triple role creates comprehensive
-      coverage incentive alignment because each position generates News Corp revenue. Q4 FY2026 record
-      profitability ($9.03B annual revenue, $811M FCF +42%, $423M EBITDA +31%) with AI licensing described
-      as "high-margin" revenue stream. Despite equal ~$50M/yr financial incentive from both OpenAI and
-      Meta, WSJ applied MORE adversarial framing to Meta rogue AI (tone -0.45) vs OpenAI (tone -0.20),
-      suggesting ~30% financial / ~70% cultural asymmetry (consistent with Gizmodo clean control).
+    finding_summary: 'News Corp operates the most complex AI revenue structure of any publisher: (1) direct content licensing
+      from OpenAI ($50M/yr) AND Meta (up to $50M/yr) = ~$100M/yr; (2) Factiva marketplace (Dow Jones subsidiary) selling AI
+      rights to 8,100+ news sources as intermediary; (3) HarperCollins settlement revenue from Anthropic $1.5B copyright case.
+      This triple role creates comprehensive coverage incentive alignment because each position generates News Corp revenue.
+      Q4 FY2026 record profitability ($9.03B annual revenue, $811M FCF +42%, $423M EBITDA +31%) with AI licensing described
+      as "high-margin" revenue stream. Despite equal ~$50M/yr financial incentive from both OpenAI and Meta, WSJ applied MORE
+      adversarial framing to Meta rogue AI (tone -0.45) vs OpenAI (tone -0.20), suggesting ~30% financial / ~70% cultural
+      asymmetry (consistent with Gizmodo clean control).
+
+      '
     confounding_factors:
     - strength: STRONG
-      factor: "WSJ editorial independence \u2014 robust disclosure practice, Barron's framed same Meta rogue AI positively"
+      factor: WSJ editorial independence — robust disclosure practice, Barron's framed same Meta rogue AI positively
     - strength: STRONG
-      factor: "Murdoch family dual-class ~40% voting control may influence editorial independently"
+      factor: Murdoch family dual-class ~40% voting control may influence editorial independently
     - strength: MODERATE
-      factor: "Factiva AI marketplace revenue not separately disclosed"
+      factor: Factiva AI marketplace revenue not separately disclosed
     - strength: MODERATE
-      factor: "HarperCollins Anthropic settlement share undisclosed"
+      factor: HarperCollins Anthropic settlement share undisclosed
     - strength: WEAK
-      factor: "Conservative editorial lean may independently affect framing"
+      factor: Conservative editorial lean may independently affect framing
     - strength: WEAK
-      factor: "WSJ disclosure practice partially offsets incentive structure"
+      factor: WSJ disclosure practice partially offsets incentive structure
     testable_predictions:
-    - "WSJ marketplace coverage more favorable than bypass-company coverage"
-    - "Woo-and-sue correlation: paying companies softer, non-paying harsher"
-    - "AI licensing EBITDA share growth correlates with incrementally favorable coverage"
-    - "WSJ self-investigation gap: Factiva marketplace role not covered as conflict"
+    - WSJ marketplace coverage more favorable than bypass-company coverage
+    - 'Woo-and-sue correlation: paying companies softer, non-paying harsher'
+    - AI licensing EBITDA share growth correlates with incrementally favorable coverage
+    - 'WSJ self-investigation gap: Factiva marketplace role not covered as conflict'
     test_file: tests/test_news_corp_triple_revenue_ai_ecosystem_aug14.py
     source_urls:
     - https://www.businesswire.com/news/home/20260805848469/en/News-Corporation-Reports-Fourth-Quarter-and-Full-Year-Results-for-Fiscal-2026
@@ -9492,192 +9507,199 @@ cross_publication_findings:
     - 88
   apple_n50_privacy_hero_cascade:
     mechanism_id: 101
-    title: "Apple N50 Pre-Launch Privacy-Hero Cascade \u2014 Cross-Publication Narrative Uniformity and Samsung Shipped-Product Invisibility"
+    title: Apple N50 Pre-Launch Privacy-Hero Cascade — Cross-Publication Narrative Uniformity and Samsung Shipped-Product
+      Invisibility
     type: competitor_coverage_deep_dive
-    date_added: "2026-08-14"
-    finding_summary: >
-      Bloomberg's Gurman reported (Jul 26, 2026) that Apple delayed N50 smart glasses to WWDC Jun
-      2027, citing privacy as "priority No. 1" and aiming to "distance the launch from criticism
-      faced by Meta's Ray-Ban glasses." Within 72 hours, 7+ publications produced standalone articles
-      framing Apple's ABSENCE of a product as moral superiority over Meta's EXISTING product. Samsung
-      Galaxy Glasses launched at Galaxy Unpacked on Jul 22 (4 days BEFORE the Gurman report) with
-      identical privacy-relevant hardware (AR1 Gen 1, 12MP camera, LED anti-tamper, physical toggle,
-      10% patents privacy-related) yet received ZERO "privacy hero" narrative framing. All 7+ cascade
-      articles derive from a single Bloomberg source with no Apple PR statements, no independent
-      verification, and no comparison to Samsung's shipped equivalent features. Narrative arc is
-      uniform across all publications: (1) smart glasses have a privacy problem (setup), (2) Meta
-      demonstrated this (foil), (3) Apple is taking privacy seriously (hero). Samsung is invisible
-      or relegated to a passing clause. Meta references outnumber Samsung references ~30:1.
+    date_added: '2026-08-14'
+    finding_summary: 'Bloomberg''s Gurman reported (Jul 26, 2026) that Apple delayed N50 smart glasses to WWDC Jun 2027, citing
+      privacy as "priority No. 1" and aiming to "distance the launch from criticism faced by Meta''s Ray-Ban glasses." Within
+      72 hours, 7+ publications produced standalone articles framing Apple''s ABSENCE of a product as moral superiority over
+      Meta''s EXISTING product. Samsung Galaxy Glasses launched at Galaxy Unpacked on Jul 22 (4 days BEFORE the Gurman report)
+      with identical privacy-relevant hardware (AR1 Gen 1, 12MP camera, LED anti-tamper, physical toggle, 10% patents privacy-related)
+      yet received ZERO "privacy hero" narrative framing. All 7+ cascade articles derive from a single Bloomberg source with
+      no Apple PR statements, no independent verification, and no comparison to Samsung''s shipped equivalent features. Narrative
+      arc is uniform across all publications: (1) smart glasses have a privacy problem (setup), (2) Meta demonstrated this
+      (foil), (3) Apple is taking privacy seriously (hero). Samsung is invisible or relegated to a passing clause. Meta references
+      outnumber Samsung references ~30:1.
+
+      '
     cascade_publications:
     - name: gHacks
-      headline: "Apple Delays First Smart Glasses to WWDC 2027 Over Privacy Concerns"
-      date: "2026-07-28"
+      headline: Apple Delays First Smart Glasses to WWDC 2027 Over Privacy Concerns
+      date: '2026-07-28'
       source_url: https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 3
       samsung_references: 0
       apple_tone: 0.45
     - name: Macworld
-      headline: "Apple eyes WWDC smart glasses launch with a focus on privacy"
-      date: "2026-07-27"
+      headline: Apple eyes WWDC smart glasses launch with a focus on privacy
+      date: '2026-07-27'
       source_url: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 5
       samsung_references: 1
-      apple_tone: 0.50
+      apple_tone: 0.5
     - name: BetaNews
-      headline: "Apple delays first smart glasses to WWDC 2027 for privacy"
-      date: "2026-07-27"
+      headline: Apple delays first smart glasses to WWDC 2027 for privacy
+      date: '2026-07-27'
       source_url: https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 4
       samsung_references: 0
-      apple_tone: 0.40
+      apple_tone: 0.4
     - name: TechCrunch
-      headline: "Can Apple make smart glasses that aren't a constant privacy threat?"
-      date: "2026-07-26"
+      headline: Can Apple make smart glasses that aren't a constant privacy threat?
+      date: '2026-07-26'
       source_url: https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 5
       samsung_references: 0
-      apple_tone: 0.30
+      apple_tone: 0.3
     - name: Computerworld
-      headline: "Apple's future success with smart glasses depends on privacy"
-      date: "2026-07-27"
+      headline: Apple's future success with smart glasses depends on privacy
+      date: '2026-07-27'
       source_url: https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 4
       samsung_references: 0
       apple_tone: 0.35
     - name: Road to VR
-      headline: "Apple's First Smart Glasses Reportedly Set to Unveil at WWDC 2027"
-      date: "2026-07-26"
+      headline: Apple's First Smart Glasses Reportedly Set to Unveil at WWDC 2027
+      date: '2026-07-26'
       source_url: https://roadtovr.com/apples-smart-glasses-unveil-wwdc-2027-release-date/
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 3
       samsung_references: 0
       apple_tone: 0.25
     - name: AppleInsider
-      headline: "Smart glasses distrust will be a challenge for Apple Glass"
-      date: "2026-07-26"
+      headline: Smart glasses distrust will be a challenge for Apple Glass
+      date: '2026-07-26'
       source_url: https://appleinsider.com/articles/26/07/26/public-distrust-in-smart-glasses-will-be-a-a-challenge-for-apple-glass
-      primary_source: "Gurman Bloomberg Power On"
+      primary_source: Gurman Bloomberg Power On
       meta_references: 5
       samsung_references: 0
-      apple_tone: 0.20
+      apple_tone: 0.2
     cascade_window_hours: 48
-    gurman_report_date: "2026-07-26"
-    samsung_unpacked_date: "2026-07-22"
-    apple_product_status: "Unshipped, pre-launch. No Apple PR. No official announcement. Earliest reveal WWDC Jun 2027."
-    apple_earliest_reveal: "WWDC June 2027"
+    gurman_report_date: '2026-07-26'
+    samsung_unpacked_date: '2026-07-22'
+    apple_product_status: Unshipped, pre-launch. No Apple PR. No official announcement. Earliest reveal WWDC Jun 2027.
+    apple_earliest_reveal: WWDC June 2027
     apple_official_statements: 0
     independent_verification_count: 0
     primary_source_report:
-      reporter: "Mark Gurman"
-      publication: "Bloomberg Power On newsletter"
-      date: "2026-07-26"
+      reporter: Mark Gurman
+      publication: Bloomberg Power On newsletter
+      date: '2026-07-26'
     samsung_shipped_privacy_features:
-    - "LED recording indicator with anti-tamper detection"
-    - "Physical privacy toggle on arm"
-    - "Camera auto-disable on LED tamper"
-    - "10% of smart glasses patents related to privacy/misuse prevention"
-    - "No user data used for AI training (Samsung executive statement)"
+    - LED recording indicator with anti-tamper detection
+    - Physical privacy toggle on arm
+    - Camera auto-disable on LED tamper
+    - 10% of smart glasses patents related to privacy/misuse prevention
+    - No user data used for AI training (Samsung executive statement)
     apple_promised_privacy_features:
-    - name: "LED recording indicator"
-      status: "Reported by Gurman, unconfirmed by Apple"
-    - name: "Camera disable on LED tamper"
-      status: "Reported as planned, unconfirmed"
-    - name: "Three camera configurations tested"
-      status: "Reported by Gurman, no Apple confirmation"
-    - name: "On-device processing"
-      status: "Reported as likely, unconfirmed"
-    - name: "No facial recognition"
-      status: "Reported by Gurman, promised by unnamed sources"
+    - name: LED recording indicator
+      status: Reported by Gurman, unconfirmed by Apple
+    - name: Camera disable on LED tamper
+      status: Reported as planned, unconfirmed
+    - name: Three camera configurations tested
+      status: Reported by Gurman, no Apple confirmation
+    - name: On-device processing
+      status: Reported as likely, unconfirmed
+    - name: No facial recognition
+      status: Reported by Gurman, promised by unnamed sources
     narrative_arc:
-      setup: "Smart glasses have a privacy problem (category framing)"
-      villain: "Meta's Ray-Ban glasses demonstrated this problem (Meta as cautionary tale)"
-      hero: "Apple is taking privacy seriously and delaying to get it right (Apple as protagonist)"
+      setup: Smart glasses have a privacy problem (category framing)
+      villain: Meta's Ray-Ban glasses demonstrated this problem (Meta as cautionary tale)
+      hero: Apple is taking privacy seriously and delaying to get it right (Apple as protagonist)
     samsung_framing_comparison:
-      framing_type: "Descriptive/technical"
+      framing_type: Descriptive/technical
       hero_narrative_articles: 0
       examples:
-      - "Samsung's smart glasses have this important privacy feature (GSMArena)"
-      - "Here's how Samsung's smart glasses will keep perverts away (Android Authority)"
-      - "Samsung's smart glasses take privacy seriously (SamMobile)"
-      tone_range: "+0.10 to +0.20"
+      - Samsung's smart glasses have this important privacy feature (GSMArena)
+      - Here's how Samsung's smart glasses will keep perverts away (Android Authority)
+      - Samsung's smart glasses take privacy seriously (SamMobile)
+      tone_range: +0.10 to +0.20
     apple_cascade_framing:
-      framing_type: "Narrative/aspirational"
+      framing_type: Narrative/aspirational
       hero_narrative_articles: 7
       examples:
-      - "Apple delays for privacy (heroic delay narrative)"
-      - "Can Apple make glasses that aren't a privacy threat? (Apple as solver)"
-      - "Apple's future success depends on privacy (brand = privacy)"
-      tone_range: "+0.20 to +0.50"
+      - Apple delays for privacy (heroic delay narrative)
+      - Can Apple make glasses that aren't a privacy threat? (Apple as solver)
+      - Apple's future success depends on privacy (brand = privacy)
+      tone_range: +0.20 to +0.50
     meta_proactive_measures:
-      date: "2026-07-07"
-      measure: "Camera auto-disable on LED tamper detection"
-      cascade_framing: "Reactive framing: described as 'responded after reports' and 'following months of public backlash' rather than industry-leading innovation"
+      date: '2026-07-07'
+      measure: Camera auto-disable on LED tamper detection
+      cascade_framing: 'Reactive framing: described as ''responded after reports'' and ''following months of public backlash''
+        rather than industry-leading innovation'
     confounding_factors:
     - strength: STRONG
-      factor: >
-        Apple genuinely has a stronger public privacy track record than Meta. ATT, on-device
-        processing, and 10 years of privacy marketing create legitimate editorial framing.
-        However, Samsung also has Knox, on-device processing, and a privacy-positive record
-        but receives zero narrative framing.
+      factor: 'Apple genuinely has a stronger public privacy track record than Meta. ATT, on-device processing, and 10 years
+        of privacy marketing create legitimate editorial framing. However, Samsung also has Knox, on-device processing, and
+        a privacy-positive record but receives zero narrative framing.
+
+        '
     - strength: STRONG
-      factor: >
-        Gurman is THE premium Apple source and his report was genuinely newsworthy. A shift
-        in Apple's product timeline IS news. However, coverage uniformity extends beyond
-        reporting the delay to constructing a privacy-hero narrative well beyond Gurman's claims.
+      factor: 'Gurman is THE premium Apple source and his report was genuinely newsworthy. A shift in Apple''s product timeline
+        IS news. However, coverage uniformity extends beyond reporting the delay to constructing a privacy-hero narrative
+        well beyond Gurman''s claims.
+
+        '
     - strength: MODERATE
-      factor: >
-        Samsung's Galaxy Glasses were pre-launch at announcement (shipping fall 2026) so
-        deep privacy analysis may be premature. However, Apple's N50 has ZERO concrete features
-        to analyze yet received more privacy coverage than Samsung's disclosed features.
+      factor: 'Samsung''s Galaxy Glasses were pre-launch at announcement (shipping fall 2026) so deep privacy analysis may
+        be premature. However, Apple''s N50 has ZERO concrete features to analyze yet received more privacy coverage than
+        Samsung''s disclosed features.
+
+        '
     - strength: MODERATE
-      factor: >
-        Cambridge Analytica creates genuine institutional privacy concern explaining
-        disproportionate Meta scrutiny. However, this should affect all publications equally;
-        the cascade's uniform narrative structure suggests editorial convention.
+      factor: 'Cambridge Analytica creates genuine institutional privacy concern explaining disproportionate Meta scrutiny.
+        However, this should affect all publications equally; the cascade''s uniform narrative structure suggests editorial
+        convention.
+
+        '
     - strength: WEAK
-      factor: >
-        Apple PR may have independently briefed journalists beyond Gurman, creating
-        parallel coverage tracks. No evidence exists; all articles cite Gurman/Bloomberg.
+      factor: 'Apple PR may have independently briefed journalists beyond Gurman, creating parallel coverage tracks. No evidence
+        exists; all articles cite Gurman/Bloomberg.
+
+        '
     - strength: WEAK
-      factor: >
-        Summer news cycle lull may amplify any substantive report into cascade. However,
-        Samsung Galaxy Unpacked (Jul 22) was also a summer event and did NOT generate
-        a comparable privacy cascade.
+      factor: 'Summer news cycle lull may amplify any substantive report into cascade. However, Samsung Galaxy Unpacked (Jul
+        22) was also a summer event and did NOT generate a comparable privacy cascade.
+
+        '
     testable_predictions:
-    - >
-      When Apple officially announces N50 (WWDC Jun 2027), cascade publications will use
-      softer privacy framing than they applied to Meta Ray-Ban launch or Samsung Galaxy
-      Glasses launch, even if N50's camera features are functionally identical.
-    - >
-      Samsung Galaxy Glasses privacy features will NOT generate a "privacy hero" narrative
-      cascade at launch, despite being identical to Apple's promises, because Samsung lacks
-      the institutional privacy brand narrative shortcut.
-    - >
-      If Apple removes the N50 camera entirely, publications will frame the removal as
-      "principled restraint" rather than "feature-cutting" or "competitive disadvantage."
-    - >
-      Future Meta privacy innovations will continue to receive reactive framing ("responded
-      to criticism") rather than proactive framing ("industry-leading"), regardless of
-      chronological order vs competitors.
-    - >
-      No cascade publication will publish a follow-up comparing Apple's promised privacy
-      features to Samsung's shipped privacy features.
+    - 'When Apple officially announces N50 (WWDC Jun 2027), cascade publications will use softer privacy framing than they
+      applied to Meta Ray-Ban launch or Samsung Galaxy Glasses launch, even if N50''s camera features are functionally identical.
+
+      '
+    - 'Samsung Galaxy Glasses privacy features will NOT generate a "privacy hero" narrative cascade at launch, despite being
+      identical to Apple''s promises, because Samsung lacks the institutional privacy brand narrative shortcut.
+
+      '
+    - 'If Apple removes the N50 camera entirely, publications will frame the removal as "principled restraint" rather than
+      "feature-cutting" or "competitive disadvantage."
+
+      '
+    - 'Future Meta privacy innovations will continue to receive reactive framing ("responded to criticism") rather than proactive
+      framing ("industry-leading"), regardless of chronological order vs competitors.
+
+      '
+    - 'No cascade publication will publish a follow-up comparing Apple''s promised privacy features to Samsung''s shipped
+      privacy features.
+
+      '
     cross_references:
     - mechanism_id: 49
-      relationship: "Bobrowsky entity targeting concentrates Meta scrutiny at WSJ; cascade extends this to 7+ publications"
+      relationship: Bobrowsky entity targeting concentrates Meta scrutiny at WSJ; cascade extends this to 7+ publications
     - mechanism_id: 61
-      relationship: "Apple News+ financial channel; cascade shows narrative uniformity beyond financial incentive"
+      relationship: Apple News+ financial channel; cascade shows narrative uniformity beyond financial incentive
     - mechanism_id: 80
-      relationship: "Gizmodo clean control confirms entity coding exists; cascade shows entity coding amplified cross-publication"
+      relationship: Gizmodo clean control confirms entity coding exists; cascade shows entity coding amplified cross-publication
     - mechanism_id: 89
-      relationship: "Ashworth category headline with entity-specific substance; cascade is the cross-publication version"
+      relationship: Ashworth category headline with entity-specific substance; cascade is the cross-publication version
     - mechanism_id: 95
-      relationship: "Samsung same-chip privacy presupposition; cascade adds Apple as third entity with narrative framing inversion"
+      relationship: Samsung same-chip privacy presupposition; cascade adds Apple as third entity with narrative framing inversion
     test_file: tests/test_apple_n50_privacy_hero_cascade_cross_publication_aug14.py
     source_urls:
     - https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
@@ -9692,129 +9714,222 @@ cross_publication_findings:
     - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
   adrienne_so_wearables_privacy_vocabulary_bifurcation:
     mechanism_id: 102
-    title: "Adrienne So (WIRED) — Wearables Privacy Vocabulary Bifurcation Across Entities"
+    title: Adrienne So (WIRED) — Wearables Privacy Vocabulary Bifurcation Across Entities
     type: journalist_cross_entity_tracking
-    date_added: "2026-08-14"
+    date_added: '2026-08-14'
     journalist: Adrienne So
     publication: WIRED (Condé Nast / Advance Publications)
     beat: wearables, fitness trackers, smartwatches, smart glasses
-    finding_summary: >
-      Adrienne So, WIRED's primary wearables/fitness reviewer, applies ENTITY-SELECTIVE privacy
-      vocabulary when reviewing structurally identical product categories. In her Oakley Meta
-      Vanguard review (Oct 21, 2025), she inserts an explicit parenthetical attack — "(which are
-      garbage)" — about Meta's AI and privacy policies within a PRODUCT REVIEW of fitness glasses.
-      When reviewing Google's Pixel Watch 4 (Oct 8, 2025), which collects far more sensitive
-      biometric health data (heart rate, blood oxygen, sleep stages, GPS, menstrual cycles fed
-      directly into Google's advertising ecosystem via Fitbit), she writes ZERO privacy caveats
-      and uses a promotional headline ("Surprisingly Close" to Apple Watch Ultra 3) that actively
-      elevates Google's competitive position. The Oakley Vanguard is a CAMERA product with NO
-      biometric health sensors — the privacy attack targets Meta's company reputation, not the
-      product's actual data collection. This extends the WIRED privacy vocabulary bifurcation
-      pattern (Chokkattu #93, Ashworth #73/#87, Rogers #97) to the fitness/wearables editorial
-      lane, establishing that the bifurcation is team-wide and institutional, not isolated to
-      individual beat reporters covering smart glasses.
-    data_sensitivity_inversion: >
-      Google's Pixel Watch collects heart rate, blood oxygen, sleep stages, GPS location,
-      menstrual cycles, and body composition — all fed into Google's advertising ecosystem
-      via Fitbit/Google Health Connect. Meta's Oakley Vanguard is a camera/speaker product
-      with no biometric health sensors. The privacy alarm is applied to the LESS data-sensitive
-      product (Meta camera glasses) while the MORE data-sensitive product (Google health watch)
-      receives frictionless praise.
-    google_health_data_history_gap: >
-      So's Google Pixel Watch reviews contain ZERO mention of Google's documented health data
-      controversies: Project Nightingale/Ascension (2019, secret collection of millions of
-      patients' health records) and the Fitbit acquisition FTC antitrust concerns (2021).
-      These are directly relevant to a health wearable review but are omitted, while Meta's
-      broader privacy reputation is volunteered in a camera product review.
-    editorial_team_scope: >
-      With Adrienne So covering the fitness/wearables lane, the privacy vocabulary bifurcation
-      now spans WIRED's entire wearables editorial team: Chokkattu (smart glasses/phones),
-      Ashworth (smart glasses/tech), Rogers (privacy investigations), and So (fitness/wearables).
-      Four independent journalists at one publication, all showing the same entity-selective
+    finding_summary: 'Adrienne So, WIRED''s primary wearables/fitness reviewer, applies ENTITY-SELECTIVE privacy vocabulary
+      when reviewing structurally identical product categories. In her Oakley Meta Vanguard review (Oct 21, 2025), she inserts
+      an explicit parenthetical attack — "(which are garbage)" — about Meta''s AI and privacy policies within a PRODUCT REVIEW
+      of fitness glasses. When reviewing Google''s Pixel Watch 4 (Oct 8, 2025), which collects far more sensitive biometric
+      health data (heart rate, blood oxygen, sleep stages, GPS, menstrual cycles fed directly into Google''s advertising ecosystem
+      via Fitbit), she writes ZERO privacy caveats and uses a promotional headline ("Surprisingly Close" to Apple Watch Ultra
+      3) that actively elevates Google''s competitive position. The Oakley Vanguard is a CAMERA product with NO biometric
+      health sensors — the privacy attack targets Meta''s company reputation, not the product''s actual data collection. This
+      extends the WIRED privacy vocabulary bifurcation pattern (Chokkattu #93, Ashworth #73/#87, Rogers #97) to the fitness/wearables
+      editorial lane, establishing that the bifurcation is team-wide and institutional, not isolated to individual beat reporters
+      covering smart glasses.
+
+      '
+    data_sensitivity_inversion: 'Google''s Pixel Watch collects heart rate, blood oxygen, sleep stages, GPS location, menstrual
+      cycles, and body composition — all fed into Google''s advertising ecosystem via Fitbit/Google Health Connect. Meta''s
+      Oakley Vanguard is a camera/speaker product with no biometric health sensors. The privacy alarm is applied to the LESS
+      data-sensitive product (Meta camera glasses) while the MORE data-sensitive product (Google health watch) receives frictionless
+      praise.
+
+      '
+    google_health_data_history_gap: 'So''s Google Pixel Watch reviews contain ZERO mention of Google''s documented health
+      data controversies: Project Nightingale/Ascension (2019, secret collection of millions of patients'' health records)
+      and the Fitbit acquisition FTC antitrust concerns (2021). These are directly relevant to a health wearable review but
+      are omitted, while Meta''s broader privacy reputation is volunteered in a camera product review.
+
+      '
+    editorial_team_scope: 'With Adrienne So covering the fitness/wearables lane, the privacy vocabulary bifurcation now spans
+      WIRED''s entire wearables editorial team: Chokkattu (smart glasses/phones), Ashworth (smart glasses/tech), Rogers (privacy
+      investigations), and So (fitness/wearables). Four independent journalists at one publication, all showing the same entity-selective
       pattern, establishes institutional rather than individual causation.
+
+      '
     meta_articles:
     - title: Oakley Meta Vanguard Review
       author: Adrienne So
-      date: "2025-10-21"
-      privacy_vocabulary: "Whatever you may think of Meta's AI and privacy policies (which are garbage)"
+      date: '2025-10-21'
+      privacy_vocabulary: Whatever you may think of Meta's AI and privacy policies (which are garbage)
       body_tone: positive
       headline_framing: limitation_first
       url: https://www.techmeme.com/251021/p19
     google_articles:
-    - title: "Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close"
+    - title: 'Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close'
       author: Adrienne So
-      date: "2025-10-08"
+      date: '2025-10-08'
       privacy_vocabulary: none
       body_tone: promotional
       headline_framing: elevating_competitive_position
     - title: Pixel Watch 3 running features
       author: Adrienne So (referenced by Julian Chokkattu)
-      date: "2024-08"
+      date: 2024-08
       privacy_vocabulary: none
       body_tone: critical_of_functionality
-      notes: "Running feature criticism framed as functionality, not privacy/data concern"
+      notes: Running feature criticism framed as functionality, not privacy/data concern
     financial_context:
       google_relationships:
-      - Google News Showcase payments to Condé Nast/Advance (mechanism #17)
-      - Google advertising revenue dependency for Condé Nast titles (mechanism #22)
+      - Google News Showcase payments to Condé Nast/Advance (mechanism
+      - Google advertising revenue dependency for Condé Nast titles (mechanism
       - Google News Initiative participation
-      meta_relationship: "No equivalent Meta → WIRED/Condé Nast/Advance financial deal exists"
+      meta_relationship: No equivalent Meta → WIRED/Condé Nast/Advance financial deal exists
     confounding_factors:
     - strength: strong
-      factor: "Meta has a genuinely worse privacy reputation from Cambridge Analytica,
-        Facebook Papers, and repeated FTC consent decrees — this prior justifies
-        SOME differential in privacy skepticism"
+      factor: Meta has a genuinely worse privacy reputation from Cambridge Analytica, Facebook Papers, and repeated FTC consent
+        decrees — this prior justifies SOME differential in privacy skepticism
     - strength: moderate
-      factor: "Oakley Vanguard has a camera (more visible privacy surface area than a watch),
-        though the parenthetical attacks Meta's 'AI and privacy policies' broadly,
-        not the camera specifically"
+      factor: Oakley Vanguard has a camera (more visible privacy surface area than a watch), though the parenthetical attacks
+        Meta's 'AI and privacy policies' broadly, not the camera specifically
     - strength: moderate
-      factor: "Google's Pixel Watch is primarily a health/fitness product where privacy
-        context may be less expected by readers than in a camera glasses review"
+      factor: Google's Pixel Watch is primarily a health/fitness product where privacy context may be less expected by readers
+        than in a camera glasses review
     - strength: weak
-      factor: "Different product categories may invite different editorial framings
-        independent of the company behind them"
+      factor: Different product categories may invite different editorial framings independent of the company behind them
     - strength: weak
-      factor: "Adrienne So may have personal Meta-specific negative experiences
-        that drive the vocabulary differential"
+      factor: Adrienne So may have personal Meta-specific negative experiences that drive the vocabulary differential
     testable_predictions:
-    - "If Adrienne So reviews Samsung/Google Android XR smart glasses (which have cameras
-      identical to Meta's), she will NOT insert equivalent privacy parentheticals or
-      '(which are garbage)' language about Samsung/Google's privacy policies"
-    - "If a Google wearable faces a data breach or privacy controversy, So's coverage
-      will use euphemistic/passive language compared to active/accusatory language
-      for equivalent Meta incidents"
-    - "Future WIRED wearable roundups by So will position Google products without
-      privacy caveats that accompany Meta products in the same list"
+    - If Adrienne So reviews Samsung/Google Android XR smart glasses (which have cameras identical to Meta's), she will NOT
+      insert equivalent privacy parentheticals or '(which are garbage)' language about Samsung/Google's privacy policies
+    - If a Google wearable faces a data breach or privacy controversy, So's coverage will use euphemistic/passive language
+      compared to active/accusatory language for equivalent Meta incidents
+    - Future WIRED wearable roundups by So will position Google products without privacy caveats that accompany Meta products
+      in the same list
     cross_references:
     - mechanism_id: 93
-      relationship: "Same publication, same privacy vocabulary bifurcation pattern
-        — Chokkattu on Samsung same-chip glasses"
+      relationship: Same publication, same privacy vocabulary bifurcation pattern — Chokkattu on Samsung same-chip glasses
     - mechanism_id: 73
-      relationship: "Ashworth category headline analysis — Meta substance
-        foregrounded, competitor substance omitted"
+      relationship: Ashworth category headline analysis — Meta substance foregrounded, competitor substance omitted
     - mechanism_id: 87
-      relationship: "Boone Ashworth cross-entity framing at WIRED"
+      relationship: Boone Ashworth cross-entity framing at WIRED
     - mechanism_id: 97
-      relationship: "Reece Rogers privacy investigation topic routing — same
-        entity-selective privacy alarm vocabulary at WIRED"
+      relationship: Reece Rogers privacy investigation topic routing — same entity-selective privacy alarm vocabulary at WIRED
     - mechanism_id: 75
-      relationship: "Victoria Song privacy vocabulary bifurcation — related
-        pattern at a different publication (The Verge)"
+      relationship: Victoria Song privacy vocabulary bifurcation — related pattern at a different publication (The Verge)
     - mechanism_id: 17
-      relationship: "Google News Showcase financial relationship with Condé Nast"
+      relationship: Google News Showcase financial relationship with Condé Nast
     - mechanism_id: 22
-      relationship: "Google advertising dependency for WIRED/Condé Nast"
+      relationship: Google advertising dependency for WIRED/Condé Nast
     sources:
     - url: https://www.techmeme.com/251021/p19
-      description: "Techmeme entry for Adrienne So's Oakley Meta Vanguard review with
-        limitation-first headline framing"
+      description: Techmeme entry for Adrienne So's Oakley Meta Vanguard review with limitation-first headline framing
     - url: https://web.archive.org/web/20260328113528/https://www.wired.com/story/best-garmin-watch/
-      description: "WIRED best Garmin watch guide with positive Vanguard-Garmin integration mention"
+      description: WIRED best Garmin watch guide with positive Vanguard-Garmin integration mention
     - url: https://www.wsj.com/articles/google-s-secret-project-nightingale-gathers-personal-health-data-on-millions-of-americans-11573496790
-      description: "WSJ investigation into Google Project Nightingale health data collection"
+      description: WSJ investigation into Google Project Nightingale health data collection
     - url: https://www.ftc.gov/legal-library/browse/cases-proceedings/public-statements/statement-chair-lina-khan-joined-commissioner-slaughter-regarding-googles-acquisition-fitbit
-      description: "FTC Chair Lina Khan statement on Google's Fitbit acquisition antitrust concerns"
+      description: FTC Chair Lina Khan statement on Google's Fitbit acquisition antitrust concerns
+  joanna_stern_career_migration_natural_experiment:
+    mechanism_id: 105
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: career_migration_natural_experiment
+    domain: wearables_privacy
+    journalist: Joanna Stern
+    publications:
+    - WSJ (News Corp) → New Things / NBC News
+    entities:
+    - meta
+    - samsung
+    - openai
+    - snap
+    - apple
+    - google
+    iteration: 108
+    test_file: test_joanna_stern_career_migration_natural_experiment_aug14.py
+    finding_summary: 'Joanna Stern''s WSJ→independence career migration (Apr 2026) provides the strongest natural experiment
+      in the MediaScope dataset for isolating how institutional financial structure shapes coverage targets. At WSJ (News
+      Corp, balanced ~$50M/yr deals with both Meta and OpenAI), her Meta Ray-Ban coverage was POSITIVE (+0.35, ''fun and reliable'').
+      After leaving for independent ''New Things'' newsletter + NBC News partnership (ZERO AI content deals), Meta coverage
+      shifted to ADVERSARIAL (-0.65, 30-state LED-modding investigation that drove a Meta firmware update). Samsung Galaxy
+      Glasses (identical hardware, identical LED vulnerability, announced Jul 22) received ZERO equivalent investigation.
+      Snap Specs covered neutrally on NPR. OpenAI''s camera gadget covered with collegial curiosity. The 1.00-point tone swing
+      is the LARGEST single-journalist shift in the dataset. This is the reverse of the Heikkilä pattern: both career migrations,
+      despite opposite directions, converge on Meta-adversarial coverage, confirming financial structure as a predictor.'
+    tone_shift:
+      wsj_meta_tone: 0.35
+      independent_meta_tone: -0.65
+      magnitude: 1.0
+      direction: positive_to_adversarial
+      dataset_rank: largest single-journalist shift
+    cross_entity_coverage_independent:
+      meta:
+        articles: 2
+        tone: -0.65
+        type: adversarial investigation
+      samsung:
+        articles: 0
+        tone: null
+        type: zero coverage
+      snap:
+        articles: 1
+        tone: 0.1
+        type: neutral industry analysis
+      openai:
+        articles: 1
+        tone: 0.0
+        type: curious, not adversarial
+      google:
+        articles: 0
+        tone: null
+        type: zero coverage
+      apple:
+        articles: 0
+        tone: null
+        type: zero coverage
+    audience_economics:
+      youtube_algorithm: adversarial Meta investigations outperform neutral coverage
+      newsletter_growth: high-profile investigations drive subscriptions
+      nbc_licensing: viral investigations generate media coverage
+      meta_brand_awareness: highest among smart glasses brands, maximizes engagement
+    reverse_heikkila_pattern:
+      heikkila_direction: independence → financial entanglement → Meta-adversarial
+      stern_direction: balanced employer → independence → Meta-adversarial
+      convergence: both converge on Meta-adversarial despite opposite directions
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta is market leader with 80%+ share and installed base — legitimate journalistic priority
+    - strength: STRONG
+      factor: Meta has genuine privacy history (Cambridge Analytica, FB Papers) providing rational basis for heightened scrutiny
+    - strength: MODERATE
+      factor: Samsung glasses pre-launch (Jul 22, shipping fall 2026) — but Stern investigated Meta NameTag which was also
+        pre-launch/never shipped
+    - strength: MODERATE
+      factor: Audience economics independently predict Meta focus — YouTube algorithm and newsletter growth reward adversarial
+        Meta content
+    - strength: WEAK
+      factor: Career transition coincides with brand-building investigations establishing independence from former employer
+    - strength: WEAK
+      factor: NBC News partnership may provide editorial direction shifting tone independently of financial structure
+    testable_predictions:
+    - Stern will NOT produce adversarial Samsung glasses camera investigation in 2026 despite identical hardware and LED vulnerability
+    - If/when Stern covers Apple N50 glasses (cameras + Apple branding), coverage will be more aspirational than adversarial
+    - Other WSJ→independent journalists will show similar Meta-adversarial tone shifts (structural, not individual)
+    - If Stern signs a content deal with any AI company, adversarial coverage of that company competitor will increase (following
+      Heikkilä FT pattern)
+    cross_references:
+    - 100
+    - 85
+    - 60
+    - 30
+    - 101
+    source_urls:
+    - https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+    - https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/
+    - https://www.livemint.com/technology/the-ai-gadget-that-can-make-your-life-better-and-two-that-definitely-wont-11714736399659.html
+    - https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/
+    - https://www.youtube.com/watch?v=TA4Wo08vGqk
+    - https://www.youtube.com/watch?v=EaJSPeJmqis
+    - https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
+    - https://muckrack.com/joannastern/articles
+    - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
+    - https://www.uploadvr.com/meta-improving-smart-glasses-privacy-led-tampering-detection/
+    - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

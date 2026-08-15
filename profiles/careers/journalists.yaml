@@ -17347,24 +17347,21 @@ journalists:
     meta_glasses:
       verge_era:
         adversarial_pieces: 0
-        note: 'Welch was product reviewer at Verge, NOT privacy investigator. Adversarial
-          Meta glasses coverage was done by Song, Cameron, Mehrotra. His product reviews
-          were neutral/positive.'
+        note: Welch was product reviewer at Verge, NOT privacy investigator. Adversarial Meta glasses coverage was done by
+          Song, Cameron, Mehrotra. His product reviews were neutral/positive.
       bloomberg_era:
         adversarial_pieces: 0
-        note: 'No adversarial Meta glasses coverage at Bloomberg yet. Coverage focus has
-          been Samsung and Sonos.'
+        note: No adversarial Meta glasses coverage at Bloomberg yet. Coverage focus has been Samsung and Sonos.
     samsung_glasses:
       bloomberg_era:
         articles: 1
         date: '2026-07-22'
-        event: 'Galaxy Unpacked, London'
+        event: Galaxy Unpacked, London
         framing: neutral_positive
         techmeme_status: lead_story
-        tone: 0.10
-    portability_finding: 'Mechanism #85 — adversarial framing is non-portable (institutional).
-      Welch maintained neutral product-reviewer framing across both publications. The Verge''s
-      adversarial smart glasses culture did not travel with him to Bloomberg.'
+        tone: 0.1
+    portability_finding: 'Mechanism #85 — adversarial framing is non-portable (institutional). Welch maintained neutral product-reviewer
+      framing across both publications. The Verge''s adversarial smart glasses culture did not travel with him to Bloomberg.'
   source_urls:
   - https://chris-welch.com
   - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
@@ -18600,7 +18597,6 @@ journalists:
         finding: Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning
         significance: 'First individual-level evidence testing Mechanism #65 ownership chain predictions'
         source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
-
 - name: Adrienne So
   publications:
   - name: WIRED
@@ -18621,52 +18617,49 @@ journalists:
   - title: Oakley Meta Vanguard Review
     date: 2025-10-21
     framing: qualification_first_with_explicit_privacy_attack
-    headline_framing: 'Limitation-first: Techmeme headline leads with "camera specs aren''t too impressive"
-      despite substantially positive body text ("sound amazing," "might just replace your action cam")'
-    privacy_parenthetical: '"Whatever you may think of Meta''s AI and privacy policies (which are garbage)"
-      — explicit parenthetical attack inserted into a PRODUCT REVIEW, not an editorial'
+    headline_framing: 'Limitation-first: Techmeme headline leads with "camera specs aren''t too impressive" despite substantially
+      positive body text ("sound amazing," "might just replace your action cam")'
+    privacy_parenthetical: '"Whatever you may think of Meta''s AI and privacy policies (which are garbage)" — explicit parenthetical
+      attack inserted into a PRODUCT REVIEW, not an editorial'
     body_tone: positive
     body_quotes:
     - sound amazing
     - might just replace your action cam
     - I can't wait to take the Vanguards out snowboarding this year
     techmeme_url: https://www.techmeme.com/251021/p19
-    notes: 'Oakley Vanguard is a CAMERA/fitness product with no biometric health sensors.
-      Privacy parenthetical targets Meta''s company reputation broadly, not the specific
-      product''s data collection. Camera product with lower data sensitivity than a health
-      watch, yet receives explicit privacy attack.'
+    notes: Oakley Vanguard is a CAMERA/fitness product with no biometric health sensors. Privacy parenthetical targets Meta's
+      company reputation broadly, not the specific product's data collection. Camera product with lower data sensitivity than
+      a health watch, yet receives explicit privacy attack.
   - title: Best Garmin Watch guide (Vanguard integration mention)
     date: 2026-03
     framing: positive_integration
     source_url: https://web.archive.org/web/20260328113528/https://www.wired.com/story/best-garmin-watch/
-    notes: 'Positive mention of Vanguard-Garmin integration for autocapture of running
-      clips. No privacy caveats in this context — product utility framing only.'
+    notes: Positive mention of Vanguard-Garmin integration for autocapture of running clips. No privacy caveats in this context
+      — product utility framing only.
   google_coverage:
   - title: 'Pixel Watch 4 vs Apple Watch Ultra 3: Surprisingly Close'
     date: 2025-10-08
     framing: promotional_elevating
-    headline_analysis: '"Surprisingly Close" actively elevates Google''s competitive
-      position to Apple''s premium tier — promotional framing'
+    headline_analysis: '"Surprisingly Close" actively elevates Google''s competitive position to Apple''s premium tier — promotional
+      framing'
     privacy_caveats: none
     privacy_parenthetical: none
-    notes: 'ZERO privacy caveats about Google Health Connect data collection (heart rate,
-      blood oxygen, sleep stages, GPS, menstrual cycles). ZERO mention of Google''s
-      advertising business model or health data controversies (Project Nightingale/Ascension
-      2019, Fitbit FTC concerns 2021). Google Watch collects MORE sensitive biometric data
-      than Meta camera glasses. Fitbit data feeds directly into Google''s advertising ecosystem.'
+    notes: ZERO privacy caveats about Google Health Connect data collection (heart rate, blood oxygen, sleep stages, GPS,
+      menstrual cycles). ZERO mention of Google's advertising business model or health data controversies (Project Nightingale/Ascension
+      2019, Fitbit FTC concerns 2021). Google Watch collects MORE sensitive biometric data than Meta camera glasses. Fitbit
+      data feeds directly into Google's advertising ecosystem.
   - title: Pixel Watch 3 running features assessment
     date: 2024-08
     framing: critical_of_functionality_not_privacy
-    notes: 'Running features assessment was negative ("which wasn''t great" per Chokkattu
-      reference) but framed as FUNCTIONALITY criticism, not privacy/data concern. The
-      running data is collected by Google/Fitbit — no concern expressed about who processes
-      this data.'
+    notes: Running features assessment was negative ("which wasn't great" per Chokkattu reference) but framed as FUNCTIONALITY
+      criticism, not privacy/data concern. The running data is collected by Google/Fitbit — no concern expressed about who
+      processes this data.
   - title: Pixel Watch 3 recommendation (spring sale)
     date: 2025-03
     framing: positive_recommendation
-    notes: '"one of the best-looking smartwatches and one of the best-looking fitness
-      trackers," "Fitbit is still one of the best fitness platforms available and Google''s
-      integration with it is virtually perfect" — frictionless praise, zero privacy caveats'
+    notes: '"one of the best-looking smartwatches and one of the best-looking fitness trackers," "Fitbit is still one of the
+      best fitness platforms available and Google''s integration with it is virtually perfect" — frictionless praise, zero
+      privacy caveats'
   apple_coverage:
   - title: Apple Watch Series 10
     date: 2024-2025
@@ -18675,12 +18668,62 @@ journalists:
   cross_entity_analysis:
     mechanism_id: 102
     pattern: wearables_privacy_vocabulary_bifurcation
-    description: 'Adrienne So applies ENTITY-SELECTIVE privacy vocabulary in wearables
-      reviews. Meta Oakley Vanguard (camera glasses, Oct 2025) receives explicit parenthetical
-      attack: "(which are garbage)" about Meta''s privacy policies, inserted into a product
-      review. Google Pixel Watch 4 (Oct 2025), which collects far more sensitive biometric
-      health data (heart rate, blood oxygen, sleep, GPS, menstrual cycles), receives ZERO
-      privacy caveats and promotional headline framing ("Surprisingly Close" to Apple Watch
-      Ultra). Extends the WIRED privacy vocabulary bifurcation pattern (Chokkattu #93,
-      Ashworth #73/#87, Rogers #97) to the fitness/wearables editorial lane, establishing
-      team-wide institutional scope.'
+    description: 'Adrienne So applies ENTITY-SELECTIVE privacy vocabulary in wearables reviews. Meta Oakley Vanguard (camera
+      glasses, Oct 2025) receives explicit parenthetical attack: "(which are garbage)" about Meta''s privacy policies, inserted
+      into a product review. Google Pixel Watch 4 (Oct 2025), which collects far more sensitive biometric health data (heart
+      rate, blood oxygen, sleep, GPS, menstrual cycles), receives ZERO privacy caveats and promotional headline framing ("Surprisingly
+      Close" to Apple Watch Ultra). Extends the WIRED privacy vocabulary bifurcation pattern (Chokkattu #93, Ashworth #73/#87,
+      Rogers #97) to the fitness/wearables editorial lane, establishing team-wide institutional scope.'
+- name: Joanna Stern
+  career:
+  - publication: abc-news
+    role: tech_correspondent
+    beat: consumer technology, gadgets
+    start: '2011'
+    end: '2013'
+    notes: Early career in tech journalism before WSJ. Digital correspondent covering consumer electronics.
+  - publication: wall-street-journal
+    role: senior_personal_tech_columnist
+    beat: personal technology, consumer gadgets, AI, wearables
+    start: '2013'
+    end: 2026-04
+    notes: Senior Personal Technology Columnist for 12+ years. Known for highly produced video reviews with signature humor.
+      Covered Apple, Meta, Samsung, Google consumer products. Under News Corp balanced umbrella ($50M/yr OpenAI deal + up
+      to $50M/yr Meta deal). Ray-Ban Meta coverage was POSITIVE (+0.35). Apple Vision Pro coverage was CRITICAL (-0.20). Coverage
+      was balanced across companies.
+  - publication: new-things
+    role: editor_in_chief
+    beat: technology, AI, wearables, consumer tech
+    start: 2026-05
+    end: present
+    event_type: founded
+    notes: 'Founded "New Things" independent newsletter + video platform. NBC News Chief Technology Analyst partnership. ZERO
+      AI content deals. Revenue model: YouTube algorithm + newsletter subscriptions + NBC licensing. Meta Ray-Ban coverage
+      shifted to ADVERSARIAL (-0.65): 30-state LED-modding investigation drove Meta firmware update. Samsung Galaxy Glasses
+      (identical hardware, Jul 22 launch): ZERO coverage. Snap Specs: neutral industry analysis. OpenAI gadget: curious, not
+      adversarial.'
+    source_url: https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+  multi_publication: true
+  notes: 'KEY MIGRATION: WSJ → New Things represents the largest single-journalist tone shift in the MediaScope dataset (1.00-point
+    swing on Meta coverage). 12-year WSJ tenure under News Corp balanced deals gave balanced coverage; independence with zero
+    deals produced adversarial Meta focus. Known for highly produced YouTube videos and viral investigations. Reverse of Heikkilä
+    pattern: both career migrations converge on Meta-adversarial. Career trajectory is the strongest natural experiment for
+    isolating financial structure from journalist identity/skill.'
+  source_urls:
+  - https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
+  - https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/
+  - https://muckrack.com/joannastern/articles
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 105
+      pattern: career_migration_financial_structure_isolation
+      description: 'Largest single-journalist tone shift: +0.35 (WSJ/News Corp balanced deals) to -0.65 (independent/zero
+        deals) = 1.00 magnitude swing. At WSJ: balanced coverage, positive Meta, critical Apple. As independent: adversarial
+        Meta (2 investigations), zero Samsung (identical hardware), neutral Snap, curious OpenAI. Financial structure change
+        is the ONLY variable; journalist identity, skill, reputation all constant.'
+      wsj_meta_tone: 0.35
+      independent_meta_tone: -0.65
+      tone_shift_magnitude: 1.0
+      samsung_coverage_independent: 0
+      snap_coverage_independent: neutral
+      openai_coverage_independent: curious

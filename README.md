@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 255 | Career data with source URLs |
 | Career-entry migrations | 971 | Across 442+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~12,890 | Across 378 test files |
+| Tests | ~12,930 | Across 379 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **12888 tests** across 378 test files, each covering a different analytical capability:
+MediaScope has **12930 tests** across 379 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -842,6 +842,7 @@ MediaScope has **12888 tests** across 378 test files, each covering a different 
 | `test_type_d_11pm_cross_validation_aug13.py` | 37 | Type D cross-validation (Aug 13, 23:00 PT): Validates mechanisms #89-#91 metadata completeness (date_added, test_file, finding_summary, confounding_factors, testable_predictions). Confounding factor quality (STRONG factors present, multi-level strength). ID contiguity max=91. Cross-reference coherence. Samsung cluster coherence (#76/#89/#90/#91). Source URL presence. Test file importability. Regression guards #84-#88. 13 classes, 37 tests |
 | `test_type_d_03am_cross_validation_aug14.py` | 23 | Type D cross-validation (Aug 14, 03:00 PT): Validates mechanisms #92-#94 metadata completeness, confounding factor quality, source URL presence, ID integrity (max=94), cross-reference coherence (expanded to aggregate_findings + cross_entity_leverage), finding distinctiveness (Jaccard <0.7), Samsung cluster coherence (#93), WIRED investigation cluster coherence (#92), entity targeting, regression guards #89-#91, CE consistency, test file importability. Data integrity fixes: #92 source_urls added, #93 test_file + source_urls added, #92/#93 added to competitor-entities.yaml. 12 classes, 53 tests |
 | `test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py` | 46 | Mechanism #104: TechCrunch (Yahoo/Apollo) Privacy-Improvement-As-Indictment Framing. TechCrunch published adversarial Meta glasses privacy coverage on Jul 8, 2026 (same day as v26 LED anti-tamper update), framing the improvement as cynical ("seem less creepy...says otherwise"), invoking Cambridge Analytica (8 years prior). Samsung Galaxy Glasses launched 14 days later with identical hardware (Snapdragon AR1 Gen 1, camera, LED) and Google Gemini cloud processing, no published data retention policy. Zero TechCrunch adversarial Samsung privacy investigations. NEW FINANCIAL ARCHETYPE: Apollo Global Management (Yahoo's majority owner) co-financed $35B AI XPV Platform for Anthropic/OpenAI and $3.4B for xAI — $38B+ total, largest documented ownership-chain-to-competitor financial link. Confounding: Yahoo editorial independence, CEO anti-AI-scraping stance, causation NOT established. Extends #93, #89, #95, #100. 6 classes, 46 tests |
+| `test_joanna_stern_career_migration_natural_experiment_aug14.py` | 42 | Mechanism #105: Joanna Stern Career Migration Natural Experiment — Financial Structure Isolation. WSJ→New Things/NBC career migration (Apr 2026) provides the strongest natural experiment for isolating financial structure from journalist identity. At WSJ (News Corp: ~$50M/yr OpenAI + up to $50M/yr Meta balanced deals), Meta coverage was POSITIVE (+0.35). As independent (ZERO AI content deals), Meta coverage shifted to ADVERSARIAL (-0.65). 1.00-point tone swing — largest single-journalist shift in dataset. Samsung Galaxy Glasses (identical Snapdragon AR1 Gen 1 hardware, identical LED vulnerability): ZERO coverage. Snap Specs: neutral industry analysis on NPR. OpenAI gadget: curious, not adversarial. Reverse of Heikkilä pattern: both career migrations (opposite directions) converge on Meta-adversarial, confirming financial structure as predictor. 6 confounding factors (2 STRONG: market dominance + genuine privacy history; 2 MODERATE: Samsung pre-launch timing + audience economics; 2 WEAK: career brand-building + NBC editorial influence). 4 testable predictions. Cross-refs #100, #85, #60, #30, #101. 12 classes, 42 tests |
 
 ```bash
 # Run all tests
