@@ -10494,6 +10494,11 @@ cross_publication_findings:
       relationship: cross_brand_replication
       connection: 'Mechanism #115 shows TechRadar (same Future plc owner) reproducing the SAME privacy vocabulary bifurcation
         as Tom''s Guide. Eliminates publication-specific editorial culture as explanation.'
+    - mechanism_id: 116
+      relationship: journalist_level_manifestation
+      connection: 'Mechanism #116 (Michael Hicks, Android Central) adds a THIRD Future plc brand with the same entity-selective
+        privacy vocabulary pattern. Chain now spans EIC (#110), Managing Editor (#115), and Senior Editor (#116) — the pattern
+        is structural at every editorial level.'
     testable_predictions:
     - Tom's Guide next Meta smart glasses review will include qualification hedges (but/however/where they need work) while
       next Google glasses coverage will use aspirational/combative framing with zero equivalent hedging
@@ -10938,6 +10943,11 @@ cross_publication_findings:
       relationship: editorial_effect_at_techradar
       connection: 'Mechanism #115 shows TechRadar (another Future plc brand) producing the same privacy vocabulary bifurcation
         as Tom''s Guide (#110). #114 is the financial CAUSE; #110 and #115 are editorial EFFECTS at two different brands.'
+    - mechanism_id: 116
+      relationship: editorial_effect_at_android_central
+      connection: 'Mechanism #116 (Michael Hicks, Android Central) is the THIRD editorial effect of #114''s financial cause.
+        Privacy vocabulary suppression under privileged access at the journalist level — career entirely within Future plc.
+        Chain: #114 (cause) → #110 (Tom''s Guide) + #115 (TechRadar) + #116 (Android Central).'
     source_urls:
     - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
     - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
@@ -14581,10 +14591,189 @@ publications:
       connection: 'Mechanism #33 (facial recognition parity) established that MORE capable competitor hardware gets LESS
         scrutiny. Samsung/Google prototype with camera + display + cloud AI gets zero privacy language; Meta with camera only
         gets alarm language.'
+    - mechanism_id: 116
+      relationship: cross_brand_sibling
+      connection: 'Mechanism #116 (Michael Hicks, Android Central) is a sibling mechanism — same privacy vocabulary
+        bifurcation at a THIRD Future plc brand. Combined with #110 (Tom''s Guide) and #115 (TechRadar), three brands produce
+        the same entity-selective pattern independently, spanning EIC, Managing Editor, and Senior Editor levels.'
     source_urls:
     - https://www.techradar.com/computing/virtual-reality-augmented-reality/samsungs-prototype-xr-glasses-hint-at-the-future-of-smart-frames-and-im-closer-to-all-in-than-ever-before
     - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-smart-glasses-are-majorly-popular-which-is-exciting-and-frightening-in-equal-measure
     - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-camera-glasses-feel-inevitable-but-im-worried-about-the-high-creep-factor
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
+  michael_hicks_android_central_privacy_vocabulary_suppression:
+    mechanism_id: 116
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: privacy_vocabulary_suppression
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: Future plc (LSE FUTR)
+    publications:
+    - Android Central
+    entities:
+    - google
+    - meta
+    journalist: Michael L. Hicks
+    journalist_role: Senior Editor, Wearables
+    iteration: 120
+    test_file: tests/test_michael_hicks_future_plc_privacy_vocabulary_suppression_aug15.py
+    test_count: 76
+    key_finding: Privacy Vocabulary Suppression Under Privileged Access
+    mechanism: privileged_access_reciprocity_suppression
+    finding_summary: 'Michael L. Hicks, Android Central (Future plc) Senior Editor for Wearables, applies BIFURCATED privacy
+      standards to camera-equipped smart glasses based on entity. His Meta Ray-Ban review (Oct 2023) includes a dedicated
+      "Privacy concerns" section with adversarial family-sourced quotes ("Ew, I don''t like that," "You look like you work
+      for the Agency," "Would you mind taking the glasses off while we talk") and "Glasshole" framing. Six adversarial privacy
+      terms: "creeped out," "privacy concerns," "Glasshole," "disturb," "intrusive permissions," "always-listening mic."
+      His Google Android XR glasses coverage (Dec 2025) — from a private hour-long demo — contains ZERO privacy vocabulary
+      despite identical camera hardware plus cloud-connected Gemini AI that Google describes as "see[ing] and hear[ing] what
+      you do" with voice data stored up to 12 months. Instead: "performance was seamless," "pleasurable to use," "exciting,"
+      "serious competitor to Ray-Ban Meta AI glasses." Camera framed as "image recognition and recipe advice" (feature only).
+      Privacy vocabulary delta: 6+ terms (Meta) vs 0 (Google). Tone delta: ~0.60. Hicks''s career is entirely within the
+      Future plc ecosystem (TechRadar freelance → Android Central Senior Editor), extending the cross-brand replication chain:
+      Tom''s Guide EIC (#110) + TechRadar Managing Editor (#115) + Android Central Senior Editor (#116), all underpinned by
+      Future plc triple-layer Google financial dependency (#114: 60%+ revenue, OpenAI deal, Future Optic).'
+    meta_review:
+      date: '2023-10'
+      headline: "Ray-Ban Meta smart glasses review"
+      url: https://www.androidcentral.com/gaming/virtual-reality/ray-ban-meta-smart-glasses-review
+      access_type: standard consumer review unit
+      review_period_weeks: multiple
+      privacy_vocabulary:
+      - creeped out
+      - privacy concerns
+      - Glasshole
+      - disturb
+      - intrusive permissions
+      - always-listening mic
+      privacy_vocabulary_count: 6
+      family_quotes:
+      - "Ew, I don't like that"
+      - "You look like you work for the Agency"
+      - "I'd become wary of people touching their glasses"
+      - "Would you mind taking the glasses off while we talk"
+      dedicated_privacy_section: true
+      con_listed: "Lingering privacy concerns and audio quirks"
+      camera_near_facebook_privacy_concerns: true
+      tone_score: -0.15
+    google_preview:
+      date: '2025-12'
+      headline: "I tried Google Samsung AI glasses prototypes before Android Show XR Edition"
+      url: https://www.androidcentral.com/wearables/i-tried-google-samsung-ai-glasses-prototypes-before-android-show-xr-edition-heres-what-i-learned
+      access_type: hour-long private demo
+      privacy_vocabulary_count: 0
+      family_quotes_count: 0
+      glasshole_or_equivalent: false
+      camera_framing: "image recognition and recipe advice via cameras"
+      aspirational_vocabulary:
+      - performance was seamless
+      - pleasurable to use
+      - exciting
+      - serious competitor to Ray-Ban Meta AI glasses
+      google_rep_claims_challenged: false
+      tone_score: 0.45
+    tone_scores:
+      meta_review: -0.15
+      google_preview: 0.45
+    privacy_vocabulary_counts:
+      meta_review: 6
+      google_preview: 0
+    tone_delta: 0.60
+    hardware_parity:
+      google_xr_features:
+      - cameras
+      - microphones
+      - Gemini AI (cloud — "sees and hears what you do")
+      - voice data stored up to 12 months
+      meta_gen2_features:
+      - 12MP camera
+      - 5 microphones
+      - Meta AI
+      - LED privacy indicator
+      - tamper detection
+      google_more_data_retention: true
+      meta_more_privacy_safeguards: true
+      privacy_scrutiny_inversely_proportional: true
+    privileged_access:
+      google_access: hour-long private demo before public event
+      meta_access: standard consumer review unit
+      reciprocity_effect: private demo creates structural reciprocity toward positive coverage
+    career_path:
+      freelance_period: '2015-2020'
+      freelance_outlets:
+      - TechRadar (Future plc)
+      - Wareable
+      - Digital Trends
+      - Windows Central
+      android_central_start: '2020'
+      android_central_role: Senior Editor, Wearables
+      entirely_within_future_plc: true
+      education:
+        degree: English
+        masters: MA Publishing & Writing
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta has 7M+ units sold vs zero Samsung/Google consumer glasses — scale creates more privacy incidents
+      counter: Scale creates incidents but does not explain zero vocabulary for identical hardware capabilities. The concern
+        is about the technology, not the install base
+    - strength: STRONG
+      factor: Meta has legacy privacy baggage (Cambridge Analytica)
+      counter: Google also has privacy legacy (Street View wiretapping, Location History lawsuits, $391.5M settlement). Zero
+        carryover to Google glasses coverage
+    - strength: STRONG
+      factor: Google article was pre-launch prototype vs Meta full consumer review — different editorial expectations
+      counter: Camera privacy concern exists at any stage. Hardware is demonstrated, not hypothetical. Hicks raises prospective
+        privacy concerns for Meta but not Google
+    - strength: MODERATE
+      factor: Google demo was controlled environment; Meta review was weeks of real-world use
+      counter: Controlled environment makes family reactions impossible, but Hicks could raise privacy questions prospectively
+        (as he does extensively for Meta)
+    - strength: MODERATE
+      factor: Ray-Ban Meta looks like normal glasses (covert recording concern); Google prototype was obviously tech
+      counter: Google XR is designed for consumer launch as fashion eyewear — the covert concern transfers. Samsung partnership
+        signals mainstream design intent
+    - strength: MODERATE
+      factor: Hicks asked family about Meta because he wore them daily — not possible with a demo-only Google prototype
+      counter: Family reactions are a CHOICE of editorial methodology applied selectively by entity. Hicks could ask family
+        about the concept of Google camera glasses
+    - strength: WEAK
+      factor: Different article genres — full review vs preview/hands-on
+      counter: Genre effect (mechanism #30) explains some tone difference but not zero privacy vocabulary for identical hardware.
+        TechRadar preview of Samsung (#115) also had zero privacy language
+    testable_predictions:
+    - Android Central will NOT apply adversarial privacy vocabulary to Google/Samsung Android XR glasses at consumer launch
+      despite identical camera + AI hardware to Meta glasses
+    - Hicks will continue applying "Glasshole," "creeped out," or equivalent alarm vocabulary to future Meta glasses articles
+    - If Future plc signs a Meta content deal, Hicks's Meta coverage tone will shift measurably positive within 6 months
+    - If Hicks moves to a non-Future-plc publication, his bifurcation pattern may reduce (testing portable vs institutional bias)
+    cross_references:
+    - mechanism_id: 110
+      relationship: cross_brand_replication_chain
+      connection: 'Mechanism #110 documented Tom''s Guide (Future plc) EIC-level competitive framing with Google-hero language.
+        Mechanism #116 adds Android Central as the THIRD Future plc brand with the same entity-selective pattern — now spanning
+        EIC (#110), Managing Editor (#115), and Senior Editor (#116) levels.'
+    - mechanism_id: 114
+      relationship: financial_cause
+      connection: 'Mechanism #114 documents Future plc''s triple-layer financial dependency (Google traffic 60%+, OpenAI
+        licensing, Future Optic). This is the structural CAUSE of mechanism #116''s editorial EFFECT: $0 Meta relationship
+        vs triple competitor dependency creates entity-selective editorial incentives at every level.'
+    - mechanism_id: 115
+      relationship: cross_brand_sibling
+      connection: 'Mechanism #115 (TechRadar) and #116 (Android Central) are sibling mechanisms — same privacy vocabulary
+        bifurcation at two different Future plc brands. Combined with #110 (Tom''s Guide), three brands produce the same
+        pattern independently.'
+    - mechanism_id: 74
+      relationship: clean_control_comparison
+      connection: 'Mechanism #74 (Gizmodo, Keleops AG — zero financial ties to any AI company) establishes the clean control
+        baseline for editorial asymmetry. #116 shows Future plc produces MORE asymmetry than the zero-financial-ties baseline.'
+    - mechanism_id: 75
+      relationship: bifurcation_pattern_comparison
+      connection: 'Mechanism #75 (Victoria Song at The Verge) documents a similar bifurcation by a single journalist.
+        #116 extends the pattern to a different publisher ecosystem (Future plc vs PMC).'
+    source_urls:
+    - https://www.androidcentral.com/gaming/virtual-reality/ray-ban-meta-smart-glasses-review
+    - https://www.androidcentral.com/wearables/i-tried-google-samsung-ai-glasses-prototypes-before-android-show-xr-edition-heres-what-i-learned
     - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
     - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
 

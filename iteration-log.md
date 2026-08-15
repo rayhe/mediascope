@@ -1,3 +1,94 @@
+## Iteration #120 — Sat 2026-08-15 09:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #116: Michael Hicks (Android Central / Future plc) — Privacy Vocabulary Suppression Under Privileged Access**
+
+Michael L. Hicks, Android Central (Future plc) Senior Editor for Wearables, applies bifurcated
+privacy standards to camera-equipped smart glasses based on entity. His Meta Ray-Ban review
+(Oct 2023) includes a dedicated "Privacy concerns" section with adversarial family-sourced quotes
+("Ew, I don't like that," "You look like you work for the Agency," "I'd become wary of people
+touching their glasses," "Would you mind taking the glasses off while we talk") and "Glasshole"
+framing. Six adversarial privacy terms appear: "creeped out," "privacy concerns," "Glasshole,"
+"disturb," "intrusive permissions," "always-listening mic." The article lists "Lingering privacy
+concerns and audio quirks" as a Con. Camera features are described in proximity to "Facebook
+privacy concerns" legacy framing.
+
+His Google Android XR glasses coverage (Dec 2025) — originating from a private hour-long demo
+before the public event — contains ZERO privacy vocabulary despite identical camera hardware plus
+cloud-connected Gemini AI that Google describes as "see[ing] and hear[ing] what you do" with voice
+data stored up to 12 months. Instead, the article uses aspirational language throughout: "performance
+was seamless," "pleasurable to use," "exciting," "serious competitor to Ray-Ban Meta AI glasses."
+The camera is framed purely as a feature — "image recognition and recipe advice via cameras" — with
+no privacy dimension raised. Google representative claims are accepted without journalistic challenge.
+Privacy vocabulary delta: 6+ terms (Meta) vs 0 (Google). Tone delta: ~0.60.
+
+The privileged access mechanism is novel: Hicks received an hour-long private demo from Google before
+the public Android XR event, creating structural reciprocity that predicts positive coverage. Meta's
+review unit was standard consumer access with no special treatment. Hicks's career is entirely within
+the Future plc ecosystem — he freelanced at TechRadar (Future plc) before becoming Android Central
+(Future plc) Senior Editor. This extends the cross-brand replication chain to three Future plc brands:
+Tom's Guide EIC-level competitive framing (#110), TechRadar Managing Editor privacy bifurcation (#115),
+and now Android Central Senior Editor privacy vocabulary suppression (#116). All three are editorial
+effects of Future plc's triple-layer Google financial dependency (#114: 60%+ revenue from Google,
+OpenAI content licensing deal, Future Optic AI visibility product). Seven confounding factors documented
+including three STRONG (scale differential, legacy baggage, prototype vs consumer review genre).
+
+**Files:**
+- tests/test_michael_hicks_future_plc_privacy_vocabulary_suppression_aug15.py (76 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #116 + backrefs to #110, #114, #115)
+- profiles/careers/journalists.yaml (Michael L. Hicks profile)
+- profiles/competitor-entities.yaml (Future plc mechanisms list updated)
+- README.md + docs/ARCHITECTURE.md (stats: 394 test files, ~13,640 tests, 116 mechanisms)
+
+**Stats:** 394 test files | ~13,640 tests | 116 mechanisms
+
+---
+
+## Iteration #119 — Sat 2026-08-15 08:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #115: TechRadar (Future plc) — Cross-Brand Privacy Vocabulary Bifurcation**
+
+TechRadar (Future plc) applies entity-selective privacy vocabulary identical to sister
+brand Tom's Guide (mechanism #110). Cross-brand replication within the same publisher
+eliminates "publication-specific editorial culture" as an alternative explanation.
+
+**Key comparison (same product category: smart glasses with cameras + AI):**
+- **Jacob Krol (US Managing Editor, News) — Samsung/Google Android XR prototype:**
+  Zero privacy vocabulary. Aspirational framing throughout: "closer to all-in than
+  ever before," Gemini "blew me away," "a heck of a lot more powerful." Camera framed
+  as feature only ("capture a photo"). No Google Glass comparison. No bystander privacy
+  concerns raised. Tone: +0.75.
+
+- **Hamish Hector (Senior Staff Writer) — Meta Ray-Ban sales success:**
+  Alarm vocabulary: "frightening" (×2), "worrying," "creepy," "concerned," "scary,"
+  "wearable recording devices." Every positive hedged: "exciting AND frightening,"
+  "awesome AND slightly frightening." Google Glass assault stories invoked. Tone: -0.25.
+
+- **Philip Berne — Meta Ray-Ban camera:**
+  Alarm vocabulary: "worried," "creep factor," "creepy," "scary" (×2), "fear," "terror,"
+  "predatory." School shooting parallel drawn. Live-streaming violence invoked. Samsung
+  mentioned as hypothetical future competitor — zero alarm vocabulary applied. Tone: -0.35.
+
+**Hardware parity:** Samsung prototype has camera + in-lens display + Gemini AI (cloud)
++ microphone = MORE surveillance capability than Meta Gen 1. No published data retention
+policy. More capability → less scrutiny.
+
+**Cross-brand replication significance:**
+- Tom's Guide (#110): EIC-level Google-hero framing
+- TechRadar (#115): Managing Editor aspirational Samsung framing
+- Same owner (Future plc), same bifurcation, different brand = structural, not accidental
+- Three different TechRadar writers independently produce the same entity-selective pattern
+
+**Files:**
+- tests/test_techradar_future_plc_privacy_vocabulary_bifurcation_aug15.py (49 tests, 14 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #115 + backrefs from #110, #114)
+- profiles/competitor-entities.yaml (Future plc mechanisms list updated)
+- profiles/careers/journalists.yaml (Jacob Krol, Hamish Hector, Philip Berne profiles)
+- README.md + docs/ARCHITECTURE.md (stats: 393 test files, ~13,590 tests, 115 mechanisms)
+
+**Stats:** 393 test files | ~13,590 tests | 115 mechanisms
+
+---
+
 ## Iteration #118 — Sat 2026-08-15 07:00 PT (Type D: Test & Verify)
 
 **Cross-Reference Bidirectionality Audit + Structural Integrity Verification**

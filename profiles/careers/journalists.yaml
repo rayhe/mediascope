@@ -18929,3 +18929,55 @@ philip_berne:
     samsung_tenure: until 2017
     former_apple_employee: true
     note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm
+- career:
+  - beat: wearables, VR, fitness, smart home
+    end: '2020'
+    publication: freelance
+    role: freelance_writer
+    start: '2015'
+    notes: 'Freelanced for multiple outlets including TechRadar (Future plc), Wareable, Digital Trends, Windows Central.
+      TechRadar freelance work places Hicks within Future plc ecosystem before Android Central hire.'
+  - beat: wearables, VR, fitness, smart home
+    end: present
+    publication: android-central
+    role: senior_editor_wearables
+    start: '2020'
+    notes: 'Senior Editor for Wearables at Android Central (Future plc). Covers smart glasses, fitness trackers, VR headsets.
+      Career entirely within Future plc ecosystem (TechRadar freelance → Android Central).'
+  multi_publication: false
+  name: Michael L. Hicks
+  notes: 'Senior Editor for Wearables at Android Central (Future plc). English degree, MA Publishing & Writing.
+    Career within Future plc ecosystem: freelanced at TechRadar before Android Central. Mechanism #116 documents
+    bifurcated privacy standards for camera-equipped smart glasses — dedicated adversarial "Privacy concerns" section
+    with family-sourced quotes for Meta Ray-Ban vs ZERO privacy vocabulary for Google Android XR from private demo.'
+  education:
+  - degree: BA
+    field: English
+    source_url: https://www.androidcentral.com/author/michael-hicks
+  - degree: MA
+    field: Publishing & Writing
+    source_url: https://www.androidcentral.com/author/michael-hicks
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 116
+      pattern: privileged_access_reciprocity_suppression
+      description: 'Applies BIFURCATED privacy standards to camera-equipped smart glasses based on entity. Meta Ray-Ban
+        review includes dedicated "Privacy concerns" section with 6 adversarial terms and 4 family-sourced quotes. Google
+        Android XR coverage from hour-long private demo contains ZERO privacy vocabulary despite identical camera + cloud
+        Gemini AI. Privacy vocabulary delta: 6 vs 0. Tone delta: 0.60. Career entirely within Future plc (TechRadar freelance
+        → Android Central Senior Editor). Extends cross-brand chain: Tom''s Guide EIC (#110) + TechRadar (#115) + Android
+        Central (#116), all underpinned by Future plc triple-layer Google financial dependency (#114).'
+      meta_coverage:
+        articles: 1
+        tone_score: -0.15
+        privacy_vocabulary_count: 6
+        dedicated_privacy_section: true
+        family_sourced_adversarial_quotes: 4
+        url: https://www.androidcentral.com/gaming/virtual-reality/ray-ban-meta-smart-glasses-review
+      google_coverage:
+        articles: 1
+        tone_score: 0.45
+        privacy_vocabulary_count: 0
+        access_type: hour-long private demo
+        aspirational_framing: true
+        url: https://www.androidcentral.com/wearables/i-tried-google-samsung-ai-glasses-prototypes-before-android-show-xr-edition-heres-what-i-learned
