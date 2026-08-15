@@ -18336,7 +18336,45 @@ journalists:
     impact of the "pervert glasses" backlash on actual users/creators. Interviewed 5 creators, photographers, and others who
     changed their usage habits. Article uses anecdotal evidence from enthusiastic early adopters to demonstrate chilling effect.
     Migration: Mashable → Engadget (Vox Media → Yahoo). CONTROL NOTE: Engadget (Yahoo) has no Condé Nast / Advance Publications
-    connection.'
+    connection. MECHANISM #113 (Aug 15, 2026): Bell applies fundamentally different INVESTIGATIVE METHODOLOGIES by entity.
+    Meta: ACTIVE ADVERSARIAL TESTING — purchased LED-blocking products ($2-$17), tested bypass on Ray-Ban Meta and Oakley
+    Vanguard, embedded YouTube demonstration videos, interviewed 5 creators about chilling effect, dedicated "The baggage"
+    section in review, 5+ adversarial privacy articles. Snap: PASSIVE CEO INTERVIEW at AWE 2026 — accepted Spiegel''s
+    "computer, not AI glasses" framing without challenge, zero privacy testing, zero LED bypass investigation, zero data
+    retention scrutiny. Even in the Snap article, Meta is the villain ("There''s the Meta of it all"). Xreal/Qualcomm:
+    neutral product news, zero privacy vocabulary. The methodology asymmetry is the key finding — same journalist, same beat,
+    different investigative standards depending on entity identity.'
+  mechanism_113_detail:
+    meta_adversarial_articles:
+    - title: 'A $2 sticker let me bypass the Meta Glasses'' anti-creep feature'
+      date: '2026-07-30'
+      type: active_adversarial_testing
+      url: https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/
+    - title: 'Meta Glasses review: A bit less polish, a lot more baggage'
+      date: '2026-07'
+      type: review_with_adversarial_section
+      url: https://www.engadget.com/2217722/meta-glasses-review/
+    - title: 'The Meta Glasses backlash is changing how (or if) people use them'
+      date: '2026-07'
+      type: backlash_amplification
+      url: https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/
+    - title: 'Are Ray-Ban Meta glasses a privacy risk? Here''s what you should know'
+      date: '2026-08'
+      type: dedicated_privacy_investigation
+    - title: 'Activist group takes over London bus stops with fake Meta Glasses ads'
+      date: '2026-07'
+      type: activist_amplification
+    snap_neutral_articles:
+    - title: 'Evan Spiegel doesn''t want you to call Snap Specs AI glasses'
+      date: '2026-06'
+      type: passive_ceo_interview
+      url: https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
+    xreal_neutral_articles:
+    - title: 'Xreal officially reveals its Android XR Aura glasses'
+      type: neutral_product_news
+    qualcomm_neutral_articles:
+    - title: 'Qualcomm unveils its Snapdragon Reality Elite chip'
+      type: neutral_tech_news
   source_urls:
   - https://muckrack.com/karissa-bell/articles
 - beats:

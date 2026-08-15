@@ -1,3 +1,31 @@
+## Iteration #116 — Sat 2026-08-15 05:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #113: Karissa Bell (Engadget/Yahoo/Apollo) — Beat Reporter Investigative Methodology Asymmetry**
+
+Karissa Bell applies fundamentally different investigative methodologies by entity.
+For Meta glasses: active adversarial testing (purchased LED-blocking products from
+TikTok Shop, tested bypass on Ray-Ban Meta and Oakley Vanguard, embedded YouTube
+demonstration videos, interviewed 5 creators about chilling effect, dedicated
+"The baggage" section in product review, 5+ adversarial privacy articles). For
+Snap Specs ($2,195, camera + AR display = MORE capable surveillance hardware):
+passive CEO interview at AWE 2026 where Spiegel reframes product as "a new type
+of computer" — accepted without challenge. Zero adversarial testing of Snap, Xreal,
+or Qualcomm glasses. Even in the Snap article, Meta is referenced as the privacy
+villain ("There's the Meta of it all, too").
+
+Extends mechanism #109 (Engadget publication-level Google privacy vocabulary zero-out)
+to the journalist level: Bell IS the specific reporter producing that pattern.
+Cross-references mechanisms #108 (Ziff Davis), #111 (Apollo Q2), #112 (Verge/PMC).
+
+**Files:**
+- tests/test_karissa_bell_investigative_methodology_asymmetry_aug15.py (50 tests, 11 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #113 under cross_publication_findings)
+- profiles/competitor-entities.yaml (yahoo_apollo section, mechanism #113 entry)
+- profiles/careers/journalists.yaml (Karissa Bell profile updated with mechanism #113 detail)
+- README.md + docs/ARCHITECTURE.md (stats: 390 test files, ~13,393 tests, 113 mechanisms)
+
+## Iteration #115 — Sat 2026-08-15 04:00 PT (Type A: Publication Financial-Incentive Mapping)
+
 ## Iteration #114 — Sat 2026-08-15 03:00 PT (Type D: Test & Verify)
 
 **Factual Correction: Apollo XPV Hardware — Broadcom XPUs, NOT Google TPUs**

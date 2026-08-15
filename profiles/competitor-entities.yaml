@@ -5074,6 +5074,27 @@ entities:
       - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
       - https://www.pymnts.com/news/artificial-intelligence/2026/apollo-global-management-targets-more-ai-infrastructure-deals/
       - https://www.privatemarketsinsights.com/post/apollo-s-record-origination-machine-hits-74-billion-as-private-credit-s-largest-platform-rewires-ma
+    karissa_bell_investigative_methodology_asymmetry_mechanism_113:
+      mechanism_id: 113
+      date_analyzed: '2026-08-15'
+      publication: Engadget
+      journalist: Karissa Bell
+      ownership_chain: 'Engadget → Yahoo → Apollo Global Management'
+      finding_summary: 'Karissa Bell applies active adversarial testing to Meta glasses
+        (purchasing LED-blocking products, demonstrating bypass on video, interviewing
+        chilling-effect creators, embedding "baggage" in review headlines) while
+        covering Snap Specs (identical camera + MORE capable AR display) through
+        passive CEO interview where Spiegel reframes product as "computer."
+        Extends mechanism #109 from publication-level to journalist-level: Bell IS
+        the specific reporter producing the entity-selective pattern. Zero privacy
+        investigation articles for Snap, Xreal, Qualcomm, Samsung, or Google glasses.'
+      meta_adversarial_articles: 5
+      competitor_adversarial_articles: 0
+      related_mechanisms:
+      - 109
+      - 108
+      - 111
+      - 112
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

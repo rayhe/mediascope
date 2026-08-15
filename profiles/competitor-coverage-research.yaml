@@ -10611,6 +10611,133 @@ cross_publication_findings:
     - https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/
     - https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/
     - https://10up.com/our-work/penske-media-ai-integration/
+  karissa_bell_engadget_investigative_methodology_asymmetry:
+    mechanism_id: 113
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: journalist_investigative_methodology_asymmetry
+    domain: cross_entity_journalist_tracking
+    publication_owner: Yahoo (Apollo Global Management)
+    publications:
+    - Engadget
+    journalist: Karissa Bell
+    entities:
+    - meta
+    - snap
+    - xreal
+    - qualcomm
+    iteration: 116
+    test_file: tests/test_karissa_bell_investigative_methodology_asymmetry_aug15.py
+    finding_summary: 'Karissa Bell applies fundamentally different INVESTIGATIVE METHODOLOGIES
+      by entity. For Meta glasses: active adversarial testing (purchases LED-blocking
+      products, tests bypass on video, documents "cat-and-mouse game," interviews
+      creators about chilling effect, embeds "baggage" in product review headline).
+      For Snap Specs ($2,195, camera + AR display = MORE capable surveillance hardware):
+      passive CEO interview where Spiegel reframes product as "a new type of computer"
+      — accepted without challenge. Zero adversarial testing of Snap, Xreal, or Qualcomm.
+      Even in the Snap article, Meta is referenced as the privacy villain ("There''s
+      the Meta of it all, too"). Extends mechanism #109 (Engadget publication-level
+      zero-out) to the journalist level: same reporter, same beat, different methods
+      depending on which company made the glasses.'
+    meta_coverage_methodology:
+      type: active_adversarial_testing
+      actions:
+      - Purchased LED-blocking sticker kit from TikTok Shop ($16.99)
+      - Purchased Oakley Vanguard LED clip cover ($15 for 10)
+      - Applied stickers to glasses and wore outside
+      - Recorded YouTube demonstration videos of bypass
+      - Contacted Meta for comment (no initial response)
+      - Interviewed 5 creators about usage chilling effect
+      - Dedicated privacy section titled "The baggage" in product review
+      adversarial_vocabulary:
+      - anti-creep
+      - covert recording
+      - cat-and-mouse game
+      - creepy
+      - perverts
+      - pervert glasses
+      - foiled
+      - bypass
+      - baggage
+      - backlash
+      - predator
+      - surveillance
+      - privacy risk
+      dedicated_articles: 5
+    snap_coverage_methodology:
+      type: passive_ceo_interview
+      actions:
+      - Attended AWE 2026 keynote
+      - Sat down with Spiegel post-keynote
+      - Observed Spiegel wearing Specs
+      - Noted rainbow reflections and dimming feature
+      ceo_framing_accepted:
+      - a new type of computer
+      - see-through computer
+      - more human computing
+      privacy_testing_performed: false
+      led_bypass_testing_performed: false
+      privacy_advocates_quoted: false
+      dedicated_privacy_articles: 0
+      meta_as_villain_in_article: true
+    hardware_parity:
+      snap_specs:
+        camera: true
+        microphones: true
+        ar_display: true
+        price_usd: 2195
+        lens_ecosystem: true
+        real_time_ar_overlays: true
+      meta_glasses:
+        camera: true
+        microphones: true
+        ar_display: false
+        price_usd: 299
+        led_indicator: true
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta has genuine privacy history (Cambridge Analytica, contractor reviews, NameTag) justifying SOME adversarial scrutiny
+      counter: Justifies asymmetric coverage volume, not asymmetric methodology — same testing standards should apply to all camera glasses
+    - strength: STRONG
+      factor: Snap Specs not yet shipping at interview time; adversarial testing may follow post-launch
+      counter: No equivalent pre-launch adversarial coverage exists for Snap, Samsung, Google, or Xreal — only Meta receives both pre-launch and post-launch adversarial testing
+    - strength: MODERATE
+      factor: Spiegel offered interview access; Meta may not offer equivalent CEO access
+      counter: Bell interviews Meta users/creators as alternative — CEO access not required for adversarial methodology
+    - strength: MODERATE
+      factor: Snap Specs $2,195 price limits consumer adoption and urgency
+      counter: Bell covers Specs aspirationally, not with price-limits-concern language
+    - strength: WEAK
+      factor: Genre differences (product review vs CEO interview)
+      counter: Bell CHOOSES the genre — the genre IS the methodological choice
+    - strength: WEAK
+      factor: Beat assignment may direct Bell to Meta coverage specifically
+      counter: Bell also covers Snap, Xreal, Qualcomm — entity-selective methodology is editorial, not beat restriction
+    testable_predictions:
+    - Bell will NOT publish active adversarial LED bypass test for Samsung/Google glasses at launch (fall 2026)
+    - Bell will NOT interview Samsung/Google glasses users about backlash or chilling effect comparable to her Meta pieces
+    - Bell's post-launch Snap Specs coverage will maintain 'computer' framing, not 'surveillance' framing
+    - Bell's non-Meta glasses coverage will continue using Meta as the privacy villain
+    cross_references:
+    - mechanism_id: 109
+      relationship: same_publication_journalist_level
+      connection: 'Mechanism #109 documented Engadget publication-level Google privacy vocabulary zero-out. Mechanism #113 extends this to the journalist level: Karissa Bell is the SPECIFIC reporter applying the entity-selective methodology that produces the publication-level pattern'
+    - mechanism_id: 108
+      relationship: cross_ownership_comparison
+      connection: 'Mechanism #108 documented Ziff Davis triple squeeze. Both Ziff Davis (Mashable/PCMag) and Yahoo (Engadget) are Apollo-proximate media groups producing asymmetric Meta coverage, suggesting an Apollo-level rather than publication-level pattern'
+    - mechanism_id: 111
+      relationship: financial_architecture
+      connection: 'Apollo Q2 2026 financial architecture. Apollo AI infrastructure financing is expanding ($40B+), increasing structural incentive for Yahoo publications to cover Meta adversarially and competitors softly'
+    - mechanism_id: 112
+      relationship: parallel_methodology_finding
+      connection: 'Mechanism #112 documented The Verge/PMC domain-specific litigation paradox. Both #112 and #113 find the SAME outcome (adversarial Meta wearables coverage + soft competitor coverage) from DIFFERENT financial architectures'
+    source_urls:
+    - https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/
+    - https://www.engadget.com/2217722/meta-glasses-review/
+    - https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/
+    - https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
+    - https://www.engadget.com/the-ray-ban-meta-smart-glasses-new-ai-powers-are-impressive-and-worrying-181036772.html
+    - https://www.engadget.com/author/karissa-bell/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
