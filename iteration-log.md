@@ -1,3 +1,50 @@
+## Iteration #118 — Sat 2026-08-15 07:00 PT (Type D: Test & Verify)
+
+**Cross-Reference Bidirectionality Audit + Structural Integrity Verification**
+
+Found and fixed 9 one-way cross-references between mechanisms #108-#114.
+Mechanisms #113 (Karissa Bell investigative methodology asymmetry, iteration #116)
+and #114 (Future plc triple AI dependency, iteration #117) referenced older mechanisms
+#108, #109, #110, #111, #112 but NONE of those older mechanisms referenced back.
+
+**Corrections applied:**
+1. **Mechanism #108** (Ziff Davis): Added backrefs to #113 (cross_ownership_comparison)
+   and #114 (cross_publisher_archetype)
+2. **Mechanism #109** (Engadget Google privacy vocabulary zero-out): Added backrefs to
+   #113 (journalist_level_extension) and #114 (cross_publisher_google_dependency)
+3. **Mechanism #110** (Future plc EIC competitive framing): Added backref to #114
+   (financial_cause — #114 documents the CAUSE of #110's editorial EFFECT)
+4. **Mechanism #111** (Apollo Q2 2026): Added backrefs to #113
+   (journalist_level_manifestation) and #114 (financial_architecture_comparison)
+5. **Mechanism #112** (Verge/PMC Google litigation): Added backref to #113
+   (parallel_methodology_finding)
+
+**Structural verification findings (all pass):**
+- Mechanism #113: all required fields present (journalist, publication_owner, entities,
+  finding_summary, source_urls ×6, testable_predictions ×4, confounding_factors ×6,
+  cross_references ×4, test_file exists, date_added, iteration)
+- Mechanism #113 methodology data: adversarial vocabulary (13 terms), hardware parity
+  documented, meta_as_villain_in_snap_article confirmed
+- Mechanism #114: all required fields present (source_urls ×6+, testable_predictions ×5,
+  confounding_factors ×6)
+- Mechanism #114 financial data: Layer 1 segmentation adds to 60%, market cap 93% decline
+  from peak, layer 2 signed date correct, layer 3 pipeline £10M
+- Source URLs spot-checked: 3/3 returning HTTP 200
+- Mechanism chain #108→#114 coherence verified: different publishers (#108 Ziff Davis,
+  #114 Future plc) with different ownership archetypes producing same pattern
+- Journalist-to-publication extension (#109 Engadget → #113 Bell) confirmed
+- Financial cause/effect (#114 cause → #110 effect) relationship validated
+
+**Files:**
+- tests/test_type_d_07am_cross_validation_aug15.py (70 tests, 8 classes)
+- profiles/competitor-coverage-research.yaml (9 backrefs added to 5 mechanisms)
+- README.md (new test entry, stats: 392 test files, ~13,540 tests)
+- docs/ARCHITECTURE.md (new test entry, stats synced)
+
+**Stats:** 392 test files | ~13,540 tests | 114 mechanisms
+
+---
+
 ## Iteration #117 — Sat 2026-08-15 06:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #114: Future plc Triple-Layer AI Competitor Financial Dependency Architecture**

@@ -10116,6 +10116,16 @@ cross_publication_findings:
     - 107
     - 76
     - 93
+    - mechanism_id: 113
+      relationship: cross_ownership_comparison
+      connection: 'Mechanism #113 (Karissa Bell investigative methodology asymmetry) extends the Ziff Davis archetype: both
+        Apollo-proximate media groups (Ziff Davis + Yahoo/Engadget) produce asymmetric Meta coverage, suggesting an Apollo-level
+        rather than publication-level pattern'
+    - mechanism_id: 114
+      relationship: cross_publisher_archetype
+      connection: 'Mechanism #114 (Future plc triple dependency) shows the SAME multi-layer financial dependency pattern in
+        a DIFFERENT ownership archetype: public company vs PE subsidiary, both producing reinforcing editorial incentives
+        favoring competitors over Meta'
     source_urls:
     - https://www.zdnet.com/article/ray-ban-meta-smart-glasses-review/
     - https://investors.ziffdavis.com/news-releases/news-release-details/ziff-davis-reports-second-quarter-2026-results
@@ -10139,9 +10149,8 @@ cross_publication_findings:
       Engadget) to AI competitor success has EXPANDED: AUM crossed $1T, Capital Solutions Fees hit record $277M (5th consecutive
       quarter >$200M), $74B originations EXCLUDING the $35B XPV deal, new dedicated AI chip leader Reed Rayman (Aug 5), 60+
       person digital infra team. Total AI infrastructure: $38.5B documented deals + $40B+ broader digital infra since 2022.
-      Apollo profits from Anthropic ($35B XPV), xAI ($3.5B), and OpenAI (future XPV customer)
-      succeeding. Broadcom supplies the XPU hardware in the XPV deal.
-      ONLY private equity firm financing AI competitors that also owns major tech publications.'
+      Apollo profits from Anthropic ($35B XPV), xAI ($3.5B), and OpenAI (future XPV customer) succeeding. Broadcom supplies
+      the XPU hardware in the XPV deal. ONLY private equity firm financing AI competitors that also owns major tech publications.'
     q2_2026_earnings:
       report_date: '2026-08-04'
       fee_related_earnings_m: 785
@@ -10164,7 +10173,8 @@ cross_publication_findings:
         - Blackstone
         - Broadcom
         hardware: Broadcom XPUs and networking solutions
-        structure: Apollo-led capital solution finances Broadcom XPU compute infrastructure for Anthropic's capacity expansion at Fluidstack sites
+        structure: Apollo-led capital solution finances Broadcom XPU compute infrastructure for Anthropic's capacity expansion
+          at Fluidstack sites
         initial_capacity_gw: 1
         platform_target_gw: 20
         platform_target_year: 2028
@@ -10264,6 +10274,16 @@ cross_publication_findings:
       connection: 'Mechanism #110 documented Future plc''s 60%+ Google revenue dependency with 67% profit decline. Apollo/Yahoo
         is a DIFFERENT ownership archetype — private equity infrastructure play vs. traffic-dependent publisher — but the
         same directional prediction: financial dependency predicts softer coverage'
+    - mechanism_id: 113
+      relationship: journalist_level_manifestation
+      connection: 'Mechanism #113 shows the journalist-level manifestation of Apollo financial incentives: Karissa Bell at
+        Engadget/Yahoo applies entity-selective methodology that mechanism #111 predicts based on expanding Apollo AI infrastructure
+        financing'
+    - mechanism_id: 114
+      relationship: financial_architecture_comparison
+      connection: 'Mechanism #114 (Future plc) documents a DIFFERENT financial architecture (public company, triple dependency)
+        producing the same outcome. Apollo (#111) and Future plc (#114) are independent ownership archetypes with converging
+        editorial effects'
     source_urls:
     - https://finance.biggo.com/news/US_APO_2026-08-04
     - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
@@ -10340,6 +10360,15 @@ cross_publication_findings:
     - 6
     - 30
     - 76
+    - mechanism_id: 113
+      relationship: journalist_level_extension
+      connection: 'Mechanism #113 extends publication-level finding to journalist level: Karissa Bell IS the specific Engadget
+        reporter applying entity-selective methodology — active adversarial testing for Meta glasses, passive CEO interview
+        for Snap Specs'
+    - mechanism_id: 114
+      relationship: cross_publisher_google_dependency
+      connection: 'Mechanism #114 (Future plc) shows a SECOND publisher with existential Google dependency producing the same
+        pattern: privacy vocabulary applied to Meta but not to Google or OpenAI products'
     testable_predictions:
     - Engadget's next review of a Google smart glasses product will continue to contain zero privacy/surveillance vocabulary
       while the next Meta glasses review will contain 10+ privacy terms
@@ -10456,6 +10485,11 @@ cross_publication_findings:
       relationship: same_archetype
     - mechanism_id: 109
       relationship: same_archetype
+    - mechanism_id: 114
+      relationship: financial_cause
+      connection: 'Mechanism #114 documents the FINANCIAL CAUSE of #110''s editorial EFFECT: triple-layer dependency (Google
+        traffic 60%+, OpenAI licensing, Future Optic commercial product) explains why Tom''s Guide editors use combative Google-as-hero
+        framing'
     testable_predictions:
     - Tom's Guide next Meta smart glasses review will include qualification hedges (but/however/where they need work) while
       next Google glasses coverage will use aspirational/combative framing with zero equivalent hedging
@@ -10477,29 +10511,28 @@ cross_publication_findings:
     - meta
     iteration: 115
     test_file: tests/test_verge_pmc_google_litigation_wearables_coverage_paradox_aug15.py
-    finding_summary: 'PMC (The Verge parent since June 2026) has TWO active lawsuits against Google
-      (AI Overviews copyright D.D.C. No. 1:25-cv-03192-APM, Sep 2025; and Ad Tech antitrust S.D.N.Y., Jan 2026).
-      Standard financial-incentive logic predicts adversarial Google coverage across all editorial domains.
-      Yet The Verge wearables reporter Victoria Song used ASPIRATIONAL framing for Google Android XR glasses
-      (J.A.R.V.I.S. comparison, Marvel superhero AI reference) while applying surveillance/privacy framing to
-      Meta glasses with functionally identical camera+microphone+AI capabilities (LED tamper investigations,
-      subscription controversy, activist backlash). FIRST MECHANISM documenting active litigation that does NOT
-      predict adversarial coverage for the same entity. Resolution: PMC interests are DOMAIN-SPECIFIC -- adversarial
-      to Google search/ads (where PMC is harmed), but favorable to Google wearables (which compete with Meta, a
-      zero-deal non-partner). PIF (via SRMG) sold ALL Meta shares Q2 2025.'
+    finding_summary: 'PMC (The Verge parent since June 2026) has TWO active lawsuits against Google (AI Overviews copyright
+      D.D.C. No. 1:25-cv-03192-APM, Sep 2025; and Ad Tech antitrust S.D.N.Y., Jan 2026). Standard financial-incentive logic
+      predicts adversarial Google coverage across all editorial domains. Yet The Verge wearables reporter Victoria Song used
+      ASPIRATIONAL framing for Google Android XR glasses (J.A.R.V.I.S. comparison, Marvel superhero AI reference) while applying
+      surveillance/privacy framing to Meta glasses with functionally identical camera+microphone+AI capabilities (LED tamper
+      investigations, subscription controversy, activist backlash). FIRST MECHANISM documenting active litigation that does
+      NOT predict adversarial coverage for the same entity. Resolution: PMC interests are DOMAIN-SPECIFIC -- adversarial to
+      Google search/ads (where PMC is harmed), but favorable to Google wearables (which compete with Meta, a zero-deal non-partner).
+      PIF (via SRMG) sold ALL Meta shares Q2 2025.'
     litigation_details:
       ai_overviews_case:
         court: D.D.C.
-        case_number: '1:25-cv-03192-APM'
+        case_number: 1:25-cv-03192-APM
         filed: '2025-09-13'
         plaintiff: PMC/Vox Media
         counsel_plaintiff: Susman Godfrey
         counsel_defendant: WilmerHale
         claim: Copyright infringement from AI Overviews reproducing publisher content
-        google_motion_to_dismiss: '2026-01'
+        google_motion_to_dismiss: 2026-01
       ad_tech_case:
         court: S.D.N.Y.
-        filed: '2026-01'
+        filed: 2026-01
         claim: Last Look and Minimum Bid to Win auction manipulation in ad tech
         builds_on: 2025 EDVA ruling finding Google ad tech monopolies
     financial_architecture:
@@ -10512,7 +10545,7 @@ cross_publication_findings:
         description: Azure OpenAI enterprise agreement for editorial AI tools
       meta_to_pmc:
         type: none
-        value: '$0'
+        value: $0
         description: Zero AI content licensing deal between Meta and PMC
       pif_meta_divestiture:
         description: PIF sold ALL Meta shares in Q2 2025 while retaining SRMG/PMC investment
@@ -10527,7 +10560,7 @@ cross_publication_findings:
       - reporter: Victoria Song
         framing: privacy_enforcement
         reference: LED tamper-proofing investigation
-        tone_score: -0.30
+        tone_score: -0.3
         citation_source: Gizmodo cross-reference
       - reporter: Joanna Stern
         framing: adversarial_investigative
@@ -10537,7 +10570,7 @@ cross_publication_findings:
       - reporter: Verge staff
         framing: consumer_exploitation
         reference: Conversation focus subscription controversy
-        tone_score: -0.40
+        tone_score: -0.4
         citation_source: Techdirt cross-reference
     domain_specific_resolution:
       google_search: adversarial (AI Overviews harm PMC traffic revenue)
@@ -10545,12 +10578,12 @@ cross_publication_findings:
       google_wearables: aligned (competes with Meta, a zero-deal non-partner)
       meta_wearables: zero_alignment (no AI content deal, no bilateral revenue)
       resolution_logic: PMC is adversarial to Google in domains where Google HARMS PMC but favorable in domains where Google
-        COMPETES WITH Meta. Adversarial Google search coverage + favorable Google wearables coverage + adversarial Meta
-        coverage = rational multi-domain financial optimization
+        COMPETES WITH Meta. Adversarial Google search coverage + favorable Google wearables coverage + adversarial Meta coverage
+        = rational multi-domain financial optimization
     confounding_factors:
     - strength: STRONG
-      factor: Victoria Song may genuinely find Android XR more impressive than Meta iterative updates -- the JARVIS
-        comparison could reflect honest product enthusiasm for a new platform
+      factor: Victoria Song may genuinely find Android XR more impressive than Meta iterative updates -- the JARVIS comparison
+        could reflect honest product enthusiasm for a new platform
       counter: Genuine enthusiasm is consistent with the paradox resolution -- financial incentives do not CAUSE the framing
         but create structural conditions where positive Google framing faces no institutional resistance
     - strength: STRONG
@@ -10565,8 +10598,8 @@ cross_publication_findings:
         or framing choices that may internalize institutional financial interests
     - strength: MODERATE
       factor: Google Glass era failure may generate comeback redemption narratives that are journalistically genuine
-      counter: Redemption narratives are not applied symmetrically -- Meta glasses are not framed as redemption despite
-        improving privacy features with each generation
+      counter: Redemption narratives are not applied symmetrically -- Meta glasses are not framed as redemption despite improving
+        privacy features with each generation
     - strength: WEAK
       factor: Samsung/Google glasses were pre-launch at announcement while Meta glasses are shipped products -- different
         review contexts
@@ -10574,8 +10607,8 @@ cross_publication_findings:
         the product lifecycle stage does not explain the asymmetry
     - strength: WEAK
       factor: The Verge disclosed the Google lawsuit on the Vergecast, suggesting editorial transparency about the conflict
-      counter: Disclosure of existence does not address whether the conflict materially affects coverage framing, beat
-        assignment, or source selection
+      counter: Disclosure of existence does not address whether the conflict materially affects coverage framing, beat assignment,
+        or source selection
     testable_predictions:
     - Post-launch Samsung/Google glasses privacy incidents will receive LESS adversarial Verge coverage per-incident than
       Meta received for equivalent events (same camera+AI capabilities)
@@ -10588,9 +10621,9 @@ cross_publication_findings:
     cross_references:
     - mechanism_id: 87
       relationship: same_publication_different_angle
-      connection: 'Mechanism #87 documented The Verge intra-publication beat segregation where wearables-beat (Song) vs
-        privacy-beat reporters apply different framing. Mechanism #112 adds the financial-incentive CONTEXT explaining
-        WHY that beat segregation consistently advantages Google and disadvantages Meta'
+      connection: 'Mechanism #87 documented The Verge intra-publication beat segregation where wearables-beat (Song) vs privacy-beat
+        reporters apply different framing. Mechanism #112 adds the financial-incentive CONTEXT explaining WHY that beat segregation
+        consistently advantages Google and disadvantages Meta'
     - mechanism_id: 109
       relationship: same_entity_different_publisher
       connection: 'Mechanism #109 documented Engadget Google privacy vocabulary zero-out. Both mechanisms find zero privacy
@@ -10598,9 +10631,14 @@ cross_publication_findings:
         The Verge from litigation domain-specificity'
     - mechanism_id: 110
       relationship: parallel_entity_alignment
-      connection: 'Mechanism #110 documented Future plc/Tom''s Guide Google revenue dependency (60%+ traffic). The Verge
-        has a DIFFERENT financial relationship (litigation adversary) yet reaches the SAME coverage outcome, suggesting
-        the pro-Google-wearables framing is overdetermined by multiple financial pathways'
+      connection: 'Mechanism #110 documented Future plc/Tom''s Guide Google revenue dependency (60%+ traffic). The Verge has
+        a DIFFERENT financial relationship (litigation adversary) yet reaches the SAME coverage outcome, suggesting the pro-Google-wearables
+        framing is overdetermined by multiple financial pathways'
+    - mechanism_id: 113
+      relationship: parallel_methodology_finding
+      connection: 'Mechanism #113 (Karissa Bell at Engadget) and #112 (Victoria Song at The Verge) find the SAME outcome (adversarial
+        Meta wearables + soft competitor coverage) from DIFFERENT financial architectures: PE infrastructure play vs active
+        litigation domain-specificity'
     source_urls:
     - https://en.wikipedia.org/wiki/Android_XR
     - https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
@@ -10628,17 +10666,13 @@ cross_publication_findings:
     - qualcomm
     iteration: 116
     test_file: tests/test_karissa_bell_investigative_methodology_asymmetry_aug15.py
-    finding_summary: 'Karissa Bell applies fundamentally different INVESTIGATIVE METHODOLOGIES
-      by entity. For Meta glasses: active adversarial testing (purchases LED-blocking
-      products, tests bypass on video, documents "cat-and-mouse game," interviews
-      creators about chilling effect, embeds "baggage" in product review headline).
-      For Snap Specs ($2,195, camera + AR display = MORE capable surveillance hardware):
-      passive CEO interview where Spiegel reframes product as "a new type of computer"
-      — accepted without challenge. Zero adversarial testing of Snap, Xreal, or Qualcomm.
-      Even in the Snap article, Meta is referenced as the privacy villain ("There''s
-      the Meta of it all, too"). Extends mechanism #109 (Engadget publication-level
-      zero-out) to the journalist level: same reporter, same beat, different methods
-      depending on which company made the glasses.'
+    finding_summary: 'Karissa Bell applies fundamentally different INVESTIGATIVE METHODOLOGIES by entity. For Meta glasses:
+      active adversarial testing (purchases LED-blocking products, tests bypass on video, documents "cat-and-mouse game,"
+      interviews creators about chilling effect, embeds "baggage" in product review headline). For Snap Specs ($2,195, camera
+      + AR display = MORE capable surveillance hardware): passive CEO interview where Spiegel reframes product as "a new type
+      of computer" — accepted without challenge. Zero adversarial testing of Snap, Xreal, or Qualcomm. Even in the Snap article,
+      Meta is referenced as the privacy villain ("There''s the Meta of it all, too"). Extends mechanism #109 (Engadget publication-level
+      zero-out) to the journalist level: same reporter, same beat, different methods depending on which company made the glasses.'
     meta_coverage_methodology:
       type: active_adversarial_testing
       actions:
@@ -10696,11 +10730,14 @@ cross_publication_findings:
         led_indicator: true
     confounding_factors:
     - strength: STRONG
-      factor: Meta has genuine privacy history (Cambridge Analytica, contractor reviews, NameTag) justifying SOME adversarial scrutiny
-      counter: Justifies asymmetric coverage volume, not asymmetric methodology — same testing standards should apply to all camera glasses
+      factor: Meta has genuine privacy history (Cambridge Analytica, contractor reviews, NameTag) justifying SOME adversarial
+        scrutiny
+      counter: Justifies asymmetric coverage volume, not asymmetric methodology — same testing standards should apply to all
+        camera glasses
     - strength: STRONG
       factor: Snap Specs not yet shipping at interview time; adversarial testing may follow post-launch
-      counter: No equivalent pre-launch adversarial coverage exists for Snap, Samsung, Google, or Xreal — only Meta receives both pre-launch and post-launch adversarial testing
+      counter: No equivalent pre-launch adversarial coverage exists for Snap, Samsung, Google, or Xreal — only Meta receives
+        both pre-launch and post-launch adversarial testing
     - strength: MODERATE
       factor: Spiegel offered interview access; Meta may not offer equivalent CEO access
       counter: Bell interviews Meta users/creators as alternative — CEO access not required for adversarial methodology
@@ -10721,16 +10758,22 @@ cross_publication_findings:
     cross_references:
     - mechanism_id: 109
       relationship: same_publication_journalist_level
-      connection: 'Mechanism #109 documented Engadget publication-level Google privacy vocabulary zero-out. Mechanism #113 extends this to the journalist level: Karissa Bell is the SPECIFIC reporter applying the entity-selective methodology that produces the publication-level pattern'
+      connection: 'Mechanism #109 documented Engadget publication-level Google privacy vocabulary zero-out. Mechanism #113
+        extends this to the journalist level: Karissa Bell is the SPECIFIC reporter applying the entity-selective methodology
+        that produces the publication-level pattern'
     - mechanism_id: 108
       relationship: cross_ownership_comparison
-      connection: 'Mechanism #108 documented Ziff Davis triple squeeze. Both Ziff Davis (Mashable/PCMag) and Yahoo (Engadget) are Apollo-proximate media groups producing asymmetric Meta coverage, suggesting an Apollo-level rather than publication-level pattern'
+      connection: 'Mechanism #108 documented Ziff Davis triple squeeze. Both Ziff Davis (Mashable/PCMag) and Yahoo (Engadget)
+        are Apollo-proximate media groups producing asymmetric Meta coverage, suggesting an Apollo-level rather than publication-level
+        pattern'
     - mechanism_id: 111
       relationship: financial_architecture
-      connection: 'Apollo Q2 2026 financial architecture. Apollo AI infrastructure financing is expanding ($40B+), increasing structural incentive for Yahoo publications to cover Meta adversarially and competitors softly'
+      connection: Apollo Q2 2026 financial architecture. Apollo AI infrastructure financing is expanding ($40B+), increasing
+        structural incentive for Yahoo publications to cover Meta adversarially and competitors softly
     - mechanism_id: 112
       relationship: parallel_methodology_finding
-      connection: 'Mechanism #112 documented The Verge/PMC domain-specific litigation paradox. Both #112 and #113 find the SAME outcome (adversarial Meta wearables coverage + soft competitor coverage) from DIFFERENT financial architectures'
+      connection: 'Mechanism #112 documented The Verge/PMC domain-specific litigation paradox. Both #112 and #113 find the
+        SAME outcome (adversarial Meta wearables coverage + soft competitor coverage) from DIFFERENT financial architectures'
     source_urls:
     - https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/
     - https://www.engadget.com/2217722/meta-glasses-review/
@@ -10746,9 +10789,9 @@ cross_publication_findings:
     domain: financial_incentive_mapping
     publication_owner: Future plc (LSE FUTR)
     publications:
-    - "Tom's Guide"
+    - Tom's Guide
     - TechRadar
-    - "Tom's Hardware"
+    - Tom's Hardware
     - PC Gamer
     entities:
     - google
@@ -10756,27 +10799,23 @@ cross_publication_findings:
     - meta
     iteration: 117
     test_file: tests/test_future_plc_triple_ai_dependency_financial_architecture_aug15.py
-    finding_summary: 'Future plc (LSE: FUTR, ~170 brands including Tom''s Guide, TechRadar,
-      Tom''s Hardware, PC Gamer) has THREE simultaneous financial dependencies on Meta''s
-      competitors, creating a compound incentive structure that mechanism #110 (editor-in-chief-level
-      framing asymmetry) documented the EFFECT of but not the full CAUSE. Layer 1: Google
-      Traffic Revenue Dependency (existential) — 60%+ of revenue Google-dependent, H1 2026
-      revenue £349.1M (-8%), PBT £18.4M (-67%), market cap ~£280M (crashed from ~£4B Dec 2022).
-      Layer 2: OpenAI Content Licensing Deal (strategic) — signed Dec 5 2024, 200+ brands
-      licensed to ChatGPT, OpenAI chatbots on Tom''s Hardware and Who What Wear. Layer 3:
-      Future Optic AI Visibility Product (commercial) — sells brands placement in ChatGPT AND
-      Gemini, £2M booked H1 2026, £10M full-year pipeline. Meta has $0 financial relationship
-      AND competes with Google for ad spend. The three layers REINFORCE: (1) can''t afford
-      negative Google coverage, (2) can''t afford negative OpenAI coverage, (3) commercially
-      invested in both platforms succeeding, (4) Meta coverage carries zero financial risk.
-      This explains mechanism #110''s finding: Tom''s Guide editors use combative Google-as-hero
-      language while hedging every Meta positive.'
+    finding_summary: 'Future plc (LSE: FUTR, ~170 brands including Tom''s Guide, TechRadar, Tom''s Hardware, PC Gamer) has
+      THREE simultaneous financial dependencies on Meta''s competitors, creating a compound incentive structure that mechanism
+      #110 (editor-in-chief-level framing asymmetry) documented the EFFECT of but not the full CAUSE. Layer 1: Google Traffic
+      Revenue Dependency (existential) — 60%+ of revenue Google-dependent, H1 2026 revenue £349.1M (-8%), PBT £18.4M (-67%),
+      market cap ~£280M (crashed from ~£4B Dec 2022). Layer 2: OpenAI Content Licensing Deal (strategic) — signed Dec 5 2024,
+      200+ brands licensed to ChatGPT, OpenAI chatbots on Tom''s Hardware and Who What Wear. Layer 3: Future Optic AI Visibility
+      Product (commercial) — sells brands placement in ChatGPT AND Gemini, £2M booked H1 2026, £10M full-year pipeline. Meta
+      has $0 financial relationship AND competes with Google for ad spend. The three layers REINFORCE: (1) can''t afford negative
+      Google coverage, (2) can''t afford negative OpenAI coverage, (3) commercially invested in both platforms succeeding,
+      (4) Meta coverage carries zero financial risk. This explains mechanism #110''s finding: Tom''s Guide editors use combative
+      Google-as-hero language while hedging every Meta positive.'
     layer_1_google_traffic_dependency:
       h1_2026_revenue_gbp_m: 349.1
       revenue_yoy_change_pct: -8
       h1_2026_pbt_gbp_m: 18.4
       pbt_yoy_change_pct: -67
-      google_dependent_revenue_share: 0.60
+      google_dependent_revenue_share: 0.6
       segmentation:
         brands_in_transition_pct: 45
         brands_in_transition_yoy_pct: -5
@@ -10795,19 +10834,20 @@ cross_publication_findings:
       brands_licensed_count: 200
       chatgpt_content_licensing: true
       openai_chatbots_deployed_on:
-      - "Tom's Hardware"
+      - Tom's Hardware
       - Who What Wear
       openai_tools_for_editorial: true
-      ceo_endorsement_quote: 'ChatGPT provides a whole new avenue for people to discover our incredible specialist content'
+      ceo_endorsement_quote: ChatGPT provides a whole new avenue for people to discover our incredible specialist content
       deal_type: strategic_content_licensing
     layer_3_future_optic:
-      product_description: 'AI visibility advertising product selling brands prominent placement in LLMs including ChatGPT and Gemini'
+      product_description: AI visibility advertising product selling brands prominent placement in LLMs including ChatGPT
+        and Gemini
       h1_2026_revenue_booked_gbp_m: 2
       full_year_pipeline_gbp_m: 10
       platforms:
       - ChatGPT
       - Gemini
-      h2_expected_sales_vs_h1: 'more than double H1 sales'
+      h2_expected_sales_vs_h1: more than double H1 sales
       commercially_invested_in_competitor_platforms: true
       negative_coverage_reduces_product_value: true
     meta_financial_relationship:
@@ -10818,55 +10858,78 @@ cross_publication_findings:
       total_financial_relationship_usd: 0
     compound_incentive_architecture:
       reinforcing_layers:
-      - 'Google dependency — can''t afford negative Google coverage (existential threat to 60%+ revenue)'
-      - 'OpenAI content deal — can''t afford negative OpenAI coverage (strategic partnership, 200+ brands)'
-      - 'Future Optic — commercially invested in BOTH Google and OpenAI platforms succeeding (£10M pipeline)'
+      - Google dependency — can't afford negative Google coverage (existential threat to 60%+ revenue)
+      - OpenAI content deal — can't afford negative OpenAI coverage (strategic partnership, 200+ brands)
+      - Future Optic — commercially invested in BOTH Google and OpenAI platforms succeeding (£10M pipeline)
       meta_safe_target: true
-      meta_coverage_financial_risk: 'zero — no financial relationship, attacking Meta doesn''t threaten any dependency'
-      google_coverage_financial_risk: 'existential — 60%+ of revenue is Google-dependent'
-      openai_coverage_financial_risk: 'strategic partnership risk — content deal + editorial tool adoption'
-      explains_mechanism_110_editorial_effect: 'Tom''s Guide editors use combative language positioning Google as hero ("blow away," "get smoked," "defeat") against Meta as villain, while hedging every Meta positive with "but" qualifiers. The compound financial architecture makes this editorial behavior structurally rational.'
+      meta_coverage_financial_risk: zero — no financial relationship, attacking Meta doesn't threaten any dependency
+      google_coverage_financial_risk: existential — 60%+ of revenue is Google-dependent
+      openai_coverage_financial_risk: strategic partnership risk — content deal + editorial tool adoption
+      explains_mechanism_110_editorial_effect: Tom's Guide editors use combative language positioning Google as hero ("blow
+        away," "get smoked," "defeat") against Meta as villain, while hedging every Meta positive with "but" qualifiers. The
+        compound financial architecture makes this editorial behavior structurally rational.
     confounding_factors:
     - strength: STRONG
-      factor: 'Future plc editorial operates independently from business partnerships; no evidence of direct editorial interference from OpenAI or Google'
-      counter: 'Structural incentives do not require direct interference — editorial teams absorb the institutional priorities of their employer through hiring, promotion, and story selection'
+      factor: Future plc editorial operates independently from business partnerships; no evidence of direct editorial interference
+        from OpenAI or Google
+      counter: Structural incentives do not require direct interference — editorial teams absorb the institutional priorities
+        of their employer through hiring, promotion, and story selection
     - strength: STRONG
-      factor: 'Google traffic decline is hurting Future — they could resent Google, not protect it'
-      counter: 'The decline makes Future MORE dependent, not less — a drowning company doesn''t criticize its rescuer. Future''s strategy pivot requires Google cooperation, not antagonism'
+      factor: Google traffic decline is hurting Future — they could resent Google, not protect it
+      counter: The decline makes Future MORE dependent, not less — a drowning company doesn't criticize its rescuer. Future's
+        strategy pivot requires Google cooperation, not antagonism
     - strength: MODERATE
-      factor: 'Meta''s genuine privacy controversies may justify harsher coverage independently of financial incentives'
-      counter: 'Samsung Intelligent Eyewear has identical privacy-relevant hardware but receives neutral/positive coverage from the same publications — the privacy concern is entity-selective, not category-level'
+      factor: Meta's genuine privacy controversies may justify harsher coverage independently of financial incentives
+      counter: Samsung Intelligent Eyewear has identical privacy-relevant hardware but receives neutral/positive coverage
+        from the same publications — the privacy concern is entity-selective, not category-level
     - strength: MODERATE
-      factor: 'CEO Kevin Li Ying''s strategy pivot away from Google dependency could reduce the incentive over time'
-      counter: 'The pivot is aspirational — 60%+ of revenue is still Google-dependent in H1 2026, and Future Optic ADDS a new dependency on Google Gemini rather than reducing exposure'
+      factor: CEO Kevin Li Ying's strategy pivot away from Google dependency could reduce the incentive over time
+      counter: The pivot is aspirational — 60%+ of revenue is still Google-dependent in H1 2026, and Future Optic ADDS a new
+        dependency on Google Gemini rather than reducing exposure
     - strength: WEAK
-      factor: 'Tom''s Guide editors may genuinely believe Google products are superior in head-to-head comparisons'
-      counter: 'Genuine product preference would produce balanced comparative coverage, not combative hero/villain framing with "blow away" and "get smoked" language'
+      factor: Tom's Guide editors may genuinely believe Google products are superior in head-to-head comparisons
+      counter: Genuine product preference would produce balanced comparative coverage, not combative hero/villain framing
+        with "blow away" and "get smoked" language
     - strength: WEAK
-      factor: 'Industry-wide Meta-skeptical framing could explain differential coverage without financial incentives'
-      counter: 'Industry-wide framing would predict UNIFORM skepticism across publications — it cannot explain why Future plc brands show STRONGER Google-hero framing than competitors with different financial architectures'
+      factor: Industry-wide Meta-skeptical framing could explain differential coverage without financial incentives
+      counter: Industry-wide framing would predict UNIFORM skepticism across publications — it cannot explain why Future plc
+        brands show STRONGER Google-hero framing than competitors with different financial architectures
     testable_predictions:
-    - 'Tom''s Guide and TechRadar will NOT apply adversarial "surveillance" or "privacy risk" vocabulary to Google Android XR glasses at launch (fall 2026) despite identical camera hardware to Meta glasses'
-    - 'Future Optic revenue growth will correlate with SOFTER coverage of ChatGPT and Gemini in Future publications over time'
-    - 'If Future plc signs a Meta AI content licensing deal, Tom''s Guide Meta coverage tone will shift measurably positive within 6 months'
-    - 'Future plc will NOT disclose the OpenAI content deal or Future Optic''s ChatGPT/Gemini dependency in articles comparing Meta AI to ChatGPT or Gemini'
-    - 'Tom''s Guide head-to-head comparison articles between Meta and Google products will continue using combative pro-Google language at rates significantly above other publications without the same compound dependency'
+    - Tom's Guide and TechRadar will NOT apply adversarial "surveillance" or "privacy risk" vocabulary to Google Android XR
+      glasses at launch (fall 2026) despite identical camera hardware to Meta glasses
+    - Future Optic revenue growth will correlate with SOFTER coverage of ChatGPT and Gemini in Future publications over time
+    - If Future plc signs a Meta AI content licensing deal, Tom's Guide Meta coverage tone will shift measurably positive
+      within 6 months
+    - Future plc will NOT disclose the OpenAI content deal or Future Optic's ChatGPT/Gemini dependency in articles comparing
+      Meta AI to ChatGPT or Gemini
+    - Tom's Guide head-to-head comparison articles between Meta and Google products will continue using combative pro-Google
+      language at rates significantly above other publications without the same compound dependency
     cross_references:
     - mechanism_id: 110
       relationship: cause_and_effect
-      connection: 'Mechanism #110 documented the EDITORIAL EFFECT (Tom''s Guide combative Google-hero framing). Mechanism #114 documents the FINANCIAL CAUSE (triple-layer dependency architecture). #114 is the structural explanation for #110''s observed coverage pattern'
+      connection: 'Mechanism #110 documented the EDITORIAL EFFECT (Tom''s Guide combative Google-hero framing). Mechanism
+        #114 documents the FINANCIAL CAUSE (triple-layer dependency architecture). #114 is the structural explanation for
+        #110''s observed coverage pattern'
     - mechanism_id: 108
       relationship: cross_publisher_archetype
-      connection: 'Ziff Davis Triple Squeeze (#108) and Future plc Triple Layer (#114) both show multi-layer financial dependency producing asymmetric Meta coverage. Different publishers, same structural pattern: compound financial interests in competitors produce reinforcing editorial incentives'
+      connection: 'Ziff Davis Triple Squeeze (#108) and Future plc Triple Layer (#114) both show multi-layer financial dependency
+        producing asymmetric Meta coverage. Different publishers, same structural pattern: compound financial interests in
+        competitors produce reinforcing editorial incentives'
     - mechanism_id: 109
       relationship: cross_publisher_google_dependency
-      connection: 'Engadget/Yahoo Google privacy vocabulary zero-out (#109). Both Future plc and Yahoo/Engadget have Google as an existential dependency. Both produce coverage that avoids applying privacy scrutiny language to Google while applying it heavily to Meta'
+      connection: Engadget/Yahoo Google privacy vocabulary zero-out (#109). Both Future plc and Yahoo/Engadget have Google
+        as an existential dependency. Both produce coverage that avoids applying privacy scrutiny language to Google while
+        applying it heavily to Meta
     - mechanism_id: 111
       relationship: financial_architecture_comparison
-      connection: 'Apollo Q2 2026 (#111) documents the PE-level financial architecture behind Yahoo publications. #114 documents the publisher-level financial architecture behind Future plc brands. Both show expanding AI competitor financial exposure predicting softer competitor coverage'
+      connection: 'Apollo Q2 2026 (#111) documents the PE-level financial architecture behind Yahoo publications. #114 documents
+        the publisher-level financial architecture behind Future plc brands. Both show expanding AI competitor financial exposure
+        predicting softer competitor coverage'
     - mechanism_id: 113
       relationship: parallel_outcome_different_architecture
-      connection: 'Karissa Bell methodology asymmetry (#113) shows the journalist-level manifestation at Engadget. #114 shows Future plc''s different ownership architecture producing the same outcome: adversarial Meta coverage + soft competitor coverage'
+      connection: 'Karissa Bell methodology asymmetry (#113) shows the journalist-level manifestation at Engadget. #114 shows
+        Future plc''s different ownership architecture producing the same outcome: adversarial Meta coverage + soft competitor
+        coverage'
     source_urls:
     - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
     - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/

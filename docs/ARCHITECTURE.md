@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~13470 tests across 391 test files (all from real articles)
+├── tests/                       # ~13540 tests across 392 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -715,6 +715,7 @@ mediascope/
 │   ├── test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py # Mechanism #110: Tom's Guide EIC-Level Google Dependency Shield. Future plc 60%+ Google revenue, profit -67%. Meta hedged, Google aspirational. 11 classes
 │   ├── test_apollo_q2_2026_ai_infrastructure_financial_architecture_aug15.py # Mechanism #111: Apollo Q2 2026 AI infrastructure at PE scale. $38.5B documented AI deals, AUM >$1T, record CSF $277M. ONLY PE firm financing AI competitors AND owning publications. 10 classes, 67 tests
 │   ├── test_type_d_03am_cross_validation_aug15.py # Type D cross-validation (Aug 15, 03:00 PT): Apollo XPV hardware factual correction (Broadcom XPUs not Google TPUs). Fixed mechanisms #109-111. 5 classes, 26 tests
+│   ├── test_type_d_07am_cross_validation_aug15.py # Type D cross-validation (Aug 15, 07:00 PT): Cross-reference bidirectionality audit — 9 one-way refs from #113/#114 to #108-#112 fixed with backrefs. Structural integrity + financial data consistency for mechanisms #113 (Karissa Bell) and #114 (Future plc). 8 classes, 70 tests
 │   ├── test_verge_pmc_google_litigation_wearables_coverage_paradox_aug15.py # Mechanism #112: The Verge (PMC) Google Litigation-vs-Wearables Coverage Paradox. PMC sues Google (2 lawsuits) yet Victoria Song uses JARVIS framing for Google glasses, surveillance framing for Meta. FIRST mechanism documenting litigation NOT predicting adversarial coverage. Domain-specific resolution. 12 classes, 34 tests
 │   ├── test_wired_aisi_accountability_coverage_trajectory_break_aug14.py # Mechanism #92: WIRED AISI Accountability Report Coverage Trajectory Break. WIRED published 3 rogue AI articles in 3 days then went silent after AISI definitive report (Aug 4, 89% Anthropic). 11 classes, 52 tests
 │   ├── test_samsung_privacy_feature_framing_inversion_aug14.py # Mechanism #93: Samsung Privacy Feature Framing Inversion. Same features, opposite vocabulary: Samsung POSITIVE, Meta NEGATIVE. 8 classes, 32 tests
