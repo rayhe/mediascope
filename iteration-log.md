@@ -1,3 +1,112 @@
+## Iteration #109 — Fri 2026-08-14 21:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #108: Ziff Davis (NASDAQ: ZD) Triple-Squeeze Financial Incentive Architecture**
+
+Mapped the CORPORATE-LEVEL financial architecture underlying the journalist-level patterns
+discovered in Mechanisms #106 (Scott Stein/CNET) and #107 (Kerry Wan/ZDNET). Ziff Davis
+(~$2B market cap, Q2 2026 revenue $286.7M) faces a "triple squeeze" of three simultaneous
+financial pressures that collectively predict entity-selective coverage across its four
+major tech publications (CNET, ZDNET, PCMag, Mashable):
+
+1. **GOOGLE EXISTENTIAL DEPENDENCY:** 40%+ of traffic from Google search. ZDNET lost 97%
+   organic traffic (Growtika/Ahrefs data). 57% of revenue from ads/performance marketing
+   dependent on Google search traffic. AI Overviews on 20%+ of queries. NO Google AI
+   content licensing deal. Affiliate revenue ($90M in 2025) collapsed $25M YoY specifically
+   from lost search traffic. CEO Shah: high-intent search traffic "really hard to replace"
+   in Tech & Shopping. Result: CANNOT afford adversarial Google coverage.
+
+2. **OPENAI ACTIVE LITIGATION:** Filed 62-page copyright infringement suit Apr 24, 2025 in
+   Delaware, seeking "hundreds of millions" (NYT sources). Chose litigation over licensing.
+   Zero AI content deals with OpenAI. Alleges GPTBot flouted robots.txt. Part of RSL
+   Collective (standardization) but no deal. Result: structurally antagonistic to OpenAI.
+
+3. **META ZERO-RELATIONSHIP:** No AI content licensing deal (Meta's Dec 2025 deals went to
+   CNN, Fox, People, USA Today — not Ziff Davis). No significant advertising dependency.
+   No litigation. Zero financial downside to adversarial Meta coverage. Result: Meta is
+   the lowest-cost editorial target.
+
+**COMPOUND SAMSUNG/GOOGLE CHAIN:** Samsung is a major advertiser across CNET/ZDNET/PCMag
+(product reviews, affiliate commissions). Samsung Galaxy Glasses use Google Gemini AI.
+Samsung's $9.7B global ad spend flows through tech review publications. Soft Samsung
+coverage protects ads; soft Google coverage protects traffic. Both reinforced by the fact
+that Samsung's glasses use Google's AI. Criticizing Meta has zero financial cost.
+
+**FINANCIAL DISTRESS CONTEXT (Q2 2026, Aug 6):**
+- Revenue: $286.7M (-2.7% YoY), operating LOSS $(44.7M) vs income $13.8M in Q2 2025
+- $54.8M goodwill impairment (first in recent history)
+- Ad/performance marketing revenue down 6% YoY
+- Sold Connectivity division for $1.2B, strategic review underway
+- Stock was down 40% from Apr 2024-2025 before partial recovery
+
+**ARCHETYPE:** First "Triple Squeeze" financial architecture in the dataset — a publisher
+simultaneously (a) existentially dependent on one entity that is destroying its business
+model, (b) actively litigating against another that scraped its content, and (c) with
+zero financial relationship to a third that becomes the default safe target.
+
+**All four testable predictions confirmed by Mechanisms #106 and #107:**
+(1) Privacy scrutiny applied to Meta but not Google/Samsung ✓
+(2) Aspirational framing for Google/Samsung, transactional for Meta ✓
+(3) Google data retention not investigated despite 2.3x Meta ad revenue ✓
+(4) Positive Meta hardware reviews with structural privacy warnings appended ✓
+
+Six confounding factors documented (2 strong: editorial independence; OpenAI genuinely
+scraped content. 2 moderate: journalist awareness; Meta genuine privacy history. 2 weak:
+product availability context; organic beat assignment).
+
+**Updates:**
+1. `tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py` — 65 tests, 11 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #108
+3. `profiles/competitor-entities.yaml` — Ziff Davis entity + mechanism #108 cross-ref
+4. `README.md` — stat sync (382 files, ~13,065 tests)
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Commit:** (pending) — pushed to GitHub
+
+**Stats:** 382 test files | ~13,065 tests | 108 mechanisms
+
+---
+
+## Iteration #108 — Fri 2026-08-14 20:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #107: Kerry Wan (ZDNET/Ziff Davis) — Cross-Entity Privacy Scrutiny Asymmetry**
+
+Kerry Wan, ZDNET's managing editor and primary smart glasses reviewer, demonstrates
+entity-selective privacy scrutiny across 4+ articles spanning 2024-2026. His Meta
+Ray-Ban reviews are genuinely positive — calling them "favorite tech purchase this year"
+(2024) and "most practical smart glasses on the market" (2025) — but ALWAYS include
+explicit privacy/data warnings in buying advice: "questionable AI and data policies"
+and recommending readers "consider other wearable options."
+
+His Google Android XR glasses previews contain ZERO equivalent privacy scrutiny, despite:
+- Identical camera/mic hardware (12MP camera, AI cloud processing)
+- Google's advertising revenue ($306B/yr) being 2.3x Meta's ($131B/yr)
+- Google having LESS published data retention policy for glasses than Meta AI
+- Headline framing is aspirational ("a future I'd actually want to live in")
+  vs transactional ("my verdict is two-fold") for Meta
+
+PUBLICATION-FAMILY PATTERN: Wan (#107, ZDNET) and Stein (#106, CNET) both work for
+Ziff Davis properties. Both show entity-selective privacy treatment favoring Google/Samsung
+over Meta. Ziff Davis depends on Google search traffic for ad/affiliate revenue; has ZERO
+documented financial relationship with Meta. This creates a two-journalist, two-publication,
+same-ownership-chain pattern.
+
+Five confounding factors documented (strongest: pre-release vs shipped product contexts;
+Meta's genuine privacy incidents). Wan IS genuinely positive about Meta hardware — the
+asymmetry is structural privacy scrutiny, not product enthusiasm.
+
+**Updates:**
+1. `tests/test_kerry_wan_zdnet_privacy_scrutiny_asymmetry_aug14.py` — 28 tests, 7 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #107
+3. `profiles/competitor-entities.yaml` — Kerry Wan / ZDNET entry
+4. `README.md` — stat sync (381 files, ~13,000 tests)
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Commit:** 1df6dde — pushed to GitHub
+
+**Stats:** 381 test files | ~13,000 tests | 107 mechanisms
+
+---
+
 ## Iteration #107 — Fri 2026-08-14 16:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Mechanism #104: TechCrunch (Yahoo/Apollo) Privacy-Improvement-As-Indictment Framing**

@@ -3759,6 +3759,54 @@ entities:
       - 106
       - 76
       - 89
+      - 108
+    ziff_davis_triple_squeeze_mechanism_108:
+      mechanism_id: 108
+      date_analyzed: '2026-08-14'
+      publication_owner: Ziff Davis (NASDAQ: ZD)
+      publications: [CNET, ZDNET, PCMag, Mashable]
+      finding_summary: 'Ziff Davis faces a "triple squeeze" of simultaneous financial pressures
+        predicting entity-selective coverage: (1) Google existential dependency — 40%+ traffic
+        from search, ZDNET 97% organic decline, 57% revenue from ads dependent on search, AI
+        Overviews on 20%+ queries, NO Google AI deal; (2) OpenAI active litigation — copyright
+        suit filed Apr 2025 seeking hundreds of millions, chose litigation over licensing;
+        (3) Meta zero-relationship — no AI deal, no ad dependency, no litigation, lowest-cost
+        editorial target. Samsung/Google advertiser compound chain amplifies: Samsung $9.7B
+        global ad spend flows through CNET/ZDNET/PCMag, Samsung glasses use Google Gemini,
+        soft Samsung protects ads + soft Google protects traffic. This corporate architecture
+        explains journalist patterns in #106 (Stein/CNET) and #107 (Wan/ZDNET). Q2 2026:
+        $286.7M revenue (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment,
+        strategic review of asset sales underway.'
+      financial_data:
+        ticker: ZD
+        market_cap_b: 1.988
+        q2_2026_revenue_m: 286.7
+        q2_2026_operating_loss_m: -44.7
+        goodwill_impairment_m: 54.8
+        ad_revenue_pct: 57
+        affiliate_revenue_2025_m: 90
+        search_traffic_pct: 40
+        zdnet_organic_decline_pct: 97
+        connectivity_sale_m: 1216.1
+      openai_lawsuit:
+        filed: '2025-04-24'
+        court: federal court, Delaware
+        complaint_pages: 62
+        damages_sought: hundreds of millions
+        allegations: copyright infringement, DMCA violations, unjust enrichment, trademark dilution
+      meta_relationship: zero (no deal, no ads, no litigation)
+      google_relationship: existential dependency (traffic + revenue source)
+      samsung_relationship: advertiser (product reviews + affiliate commissions)
+      test_file: tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py
+      source_urls:
+      - https://www.businesswire.com/news/home/20260806819569/en/Ziff-Davis-Reports-Second-Quarter-2026-Financial-Results
+      - https://www.amediaoperator.com/analysis/future-ziff-davis-to-struggle-most-from-traffic-drops/
+      - https://www.fastcompany.com/91326455/ziff-davis-openai-lawsuit-redraws-battle-lines-with-media
+      - https://www.marketbeat.com/instant-alerts/ziff-davis-q2-earnings-call-highlights-2026-08-07/
+      related_mechanisms:
+      - 106
+      - 107
+      - 76
   x_twitter:
     display_name: X / Twitter
     aliases:
