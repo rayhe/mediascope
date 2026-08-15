@@ -18805,3 +18805,127 @@ journalists:
       google_search_dependency: high
       samsung_advertising: $9.7B annual
       meta_relationship: none
+
+jacob_krol:
+  name: Jacob Krol
+  current_role: US Managing Editor, News
+  current_publication: TechRadar
+  publication_owner: Future plc
+  beat: Mobile, Smart Home, TVs, Wearables, Apple, Samsung, Google
+  career_history:
+  - employer: TechRadar
+    role: US Managing Editor, News
+    period: current
+  - employer: CNN Underscored
+    role: Writer
+    period: previous
+  - employer: TheStreet
+    role: Writer
+    period: previous
+  - employer: Parade
+    role: Writer
+    period: previous
+  - employer: Mashable
+    role: Writer
+    period: previous
+  - employer: CNET
+    role: Writer
+    period: previous
+  - employer: CNBC
+    role: Writer
+    period: previous
+  smart_glasses_coverage:
+    samsung_google_android_xr:
+      headline: "Samsung's prototype XR glasses hint at the future of smart frames, and I'm closer to all-in than ever before"
+      tone: aspirational
+      privacy_vocabulary_count: 0
+      mechanism_id: 115
+    meta_ray_ban_mentioned:
+      quote: "I've long worn Meta Ray-Bans and enjoy those for snapping unique shots"
+      framing: casual_positive
+      privacy_concern_raised: false
+    gemini_framing:
+    - very wise
+    - blew me away
+    - compelling
+    android_xr_framing:
+    - a heck of a lot more powerful
+    - genuinely helpful
+    - neat
+    - exciting
+  mechanism_ids: [115]
+
+hamish_hector:
+  name: Hamish Hector
+  current_role: Senior Staff Writer
+  current_publication: TechRadar
+  publication_owner: Future plc
+  beat: VR, AR, Wearables, Smart Glasses
+  smart_glasses_coverage:
+    meta_ray_ban_sales:
+      headline: "The Ray-Ban Meta smart glasses are majorly popular, which is exciting and frightening in equal measure"
+      tone: alarm_hedged
+      privacy_vocabulary:
+      - frightening
+      - worrying
+      - creepy
+      - concerned
+      - scary
+      - wearable recording devices
+      hedge_pattern: every positive paired with alarm counterpart
+      google_glass_assault_stories_invoked: true
+      mechanism_id: 115
+    samsung_google_coverage: none_found
+  mechanism_ids: [115]
+
+philip_berne:
+  name: Philip Berne
+  current_role: Editor
+  current_publication: TechRadar
+  publication_owner: Future plc
+  career_history:
+  - employer: TechRadar
+    role: Editor
+    period: current
+  - employer: Samsung Mobile
+    role: PR Team Lead, Reviews
+    period: until 2017
+  - employer: Apple Store (near Boston)
+    role: Staff
+    period: previous
+  - employer: Engadget
+    role: Writer
+    period: previous
+  - employer: The Verge
+    role: Writer
+    period: previous
+  - employer: PC Mag
+    role: Writer
+    period: previous
+  - employer: Digital Trends
+    role: Writer
+    period: previous
+  certifications:
+  - Google AI Essentials
+  smart_glasses_coverage:
+    meta_ray_ban_creep_factor:
+      headline: "The Ray-Ban Meta camera glasses feel inevitable but I'm worried about the high creep factor"
+      tone: alarm_dominant
+      privacy_vocabulary:
+      - worried
+      - creep factor
+      - creepy
+      - scary
+      - fear
+      - terror
+      - predatory
+      school_shooting_parallel: true
+      live_streaming_violence_invoked: true
+      samsung_mentioned_as_competitor: true
+      samsung_alarm_vocabulary_applied: false
+      mechanism_id: 115
+  financial_context:
+    former_samsung_employee: true
+    samsung_tenure: until 2017
+    former_apple_employee: true
+    note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm

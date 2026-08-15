@@ -10490,6 +10490,10 @@ cross_publication_findings:
       connection: 'Mechanism #114 documents the FINANCIAL CAUSE of #110''s editorial EFFECT: triple-layer dependency (Google
         traffic 60%+, OpenAI licensing, Future Optic commercial product) explains why Tom''s Guide editors use combative Google-as-hero
         framing'
+    - mechanism_id: 115
+      relationship: cross_brand_replication
+      connection: 'Mechanism #115 shows TechRadar (same Future plc owner) reproducing the SAME privacy vocabulary bifurcation
+        as Tom''s Guide. Eliminates publication-specific editorial culture as explanation.'
     testable_predictions:
     - Tom's Guide next Meta smart glasses review will include qualification hedges (but/however/where they need work) while
       next Google glasses coverage will use aspirational/combative framing with zero equivalent hedging
@@ -10930,6 +10934,10 @@ cross_publication_findings:
       connection: 'Karissa Bell methodology asymmetry (#113) shows the journalist-level manifestation at Engadget. #114 shows
         Future plc''s different ownership architecture producing the same outcome: adversarial Meta coverage + soft competitor
         coverage'
+    - mechanism_id: 115
+      relationship: editorial_effect_at_techradar
+      connection: 'Mechanism #115 shows TechRadar (another Future plc brand) producing the same privacy vocabulary bifurcation
+        as Tom''s Guide (#110). #114 is the financial CAUSE; #110 and #115 are editorial EFFECTS at two different brands.'
     source_urls:
     - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
     - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
@@ -14424,4 +14432,160 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  techradar_future_plc_privacy_vocabulary_bifurcation:
+    mechanism_id: 115
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: privacy_vocabulary_bifurcation
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: Future plc (LSE FUTR)
+    publications:
+    - TechRadar
+    entities:
+    - google
+    - samsung
+    - meta
+    iteration: 119
+    test_file: tests/test_techradar_future_plc_privacy_vocabulary_bifurcation_aug15.py
+    finding_summary: 'TechRadar (Future plc, LSE: FUTR) demonstrates the SAME entity-selective privacy vocabulary pattern
+      documented at sister brand Tom''s Guide (mechanism #110). Jacob Krol (US Managing Editor, News) covers Samsung/Google
+      Android XR prototype glasses — camera, Gemini AI, AR display — with ZERO privacy vocabulary and purely aspirational
+      framing ("closer to all-in than ever before," Gemini "blew me away"). Hamish Hector (Senior Staff Writer) covers Meta
+      Ray-Ban sales success with alarm vocabulary: "frightening" (×2), "worrying," "creepy," "concerned," "scary." Philip
+      Berne covers Meta glasses with: "worried," "creepy," "scary" (×2), "fear," "terror," "predatory," plus a school
+      shooting parallel. Samsung prototype has identical privacy-relevant hardware (camera + AI) PLUS in-lens display and
+      cloud Gemini processing with no published data retention policy — MORE surveillance capability → LESS scrutiny.
+      Cross-brand replication within Future plc (TechRadar + Tom''s Guide) eliminates "publication-specific editorial
+      culture" as an explanation. Three TechRadar writers produce the same entity-selective pattern independently.'
+    samsung_google_article:
+      journalist: Jacob Krol
+      role: US Managing Editor, News
+      date: '2025-05-21'
+      headline: "Samsung's prototype XR glasses hint at the future of smart frames, and I'm closer to all-in than ever before"
+      url: https://www.techradar.com/computing/virtual-reality-augmented-reality/samsungs-prototype-xr-glasses-hint-at-the-future-of-smart-frames-and-im-closer-to-all-in-than-ever-before
+      privacy_vocabulary_count: 0
+      aspirational_vocabulary:
+      - closer to all-in than ever before
+      - very wise
+      - blew me away
+      - really excited
+      - compelling
+      - a heck of a lot more powerful
+      - genuinely helpful
+      camera_framing: feature_positive
+      google_glass_comparison: false
+      tone_score: 0.75
+    meta_hector_article:
+      journalist: Hamish Hector
+      role: Senior Staff Writer
+      date: '2024-10-29'
+      headline: "The Ray-Ban Meta smart glasses are majorly popular, which is exciting and frightening in equal measure"
+      url: https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-smart-glasses-are-majorly-popular-which-is-exciting-and-frightening-in-equal-measure
+      privacy_vocabulary:
+      - frightening
+      - frightening
+      - worrying
+      - creepy
+      - concerned
+      - scary
+      - wearable recording devices
+      hedge_pattern: every positive hedged with alarm
+      google_glass_assault_stories: true
+      tone_score: -0.25
+    meta_berne_article:
+      journalist: Philip Berne
+      role: Editor
+      date: '2023-09-28'
+      headline: "The Ray-Ban Meta camera glasses feel inevitable but I'm worried about the high creep factor"
+      url: https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-camera-glasses-feel-inevitable-but-im-worried-about-the-high-creep-factor
+      privacy_vocabulary:
+      - worried
+      - creep factor
+      - creepy
+      - scary
+      - scary
+      - fear
+      - terror
+      - predatory
+      school_shooting_parallel: true
+      samsung_mentioned_as_future_competitor: true
+      samsung_alarm_vocabulary_applied: false
+      tone_score: -0.35
+    hardware_parity:
+      samsung_google_features:
+      - camera
+      - in-lens display
+      - Gemini AI (cloud)
+      - microphone
+      meta_features:
+      - camera
+      - microphone
+      - speakers
+      - Meta AI
+      samsung_more_capable: true
+      samsung_data_retention_policy_published: false
+    cross_brand_replication:
+      mechanism_110_publication: Tom's Guide
+      mechanism_115_publication: TechRadar
+      common_owner: Future plc
+      eliminates_confound: publication-specific editorial culture
+      editorial_leadership_participation:
+        mechanism_110: Mike Prospero (US EIC)
+        mechanism_115: Jacob Krol (US Managing Editor, News)
+    confounding_factors:
+    - strength: MODERATE
+      factor: Samsung prototype was a brief 5-minute demo vs Meta being a shipped product
+      counter: Camera was demonstrated and used; a shipped product would warrant MORE scrutiny, not different vocabulary
+    - strength: MODERATE
+      factor: Different journalists have different perspectives
+      counter: Three writers all apply the SAME entity-selective pattern — individual perspective does not explain uniformity
+    - strength: STRONG
+      factor: Meta has more legacy privacy controversies (Cambridge Analytica)
+      counter: Samsung/Google also has privacy controversies (Google Street View wiretapping, Samsung SmartTV recording). Zero
+        carryover for Samsung/Google
+    - strength: MODERATE
+      factor: Samsung article was hands-on impressions, not editorial analysis (genre effect, mechanism #30)
+      counter: Krol mentions wearing Meta Ray-Bans for recording — he knows the camera use case. Zero privacy vocabulary for
+        Samsung despite same use case
+    - strength: MODERATE
+      factor: Samsung glasses are not yet a consumer product
+      counter: OpenAI smart speaker was also not a product (mechanism #33) — zero privacy alarm from publications with OpenAI deals
+    - strength: STRONG
+      factor: TechRadar editorial independence from Future plc corporate
+      counter: Cannot rule out. However, cross-brand uniformity (TechRadar + Tom's Guide) suggests the pattern is structural
+    testable_predictions:
+    - TechRadar will NOT apply adversarial privacy vocabulary to Samsung/Google Android XR glasses at consumer launch (fall 2026)
+      despite identical camera + AI hardware to Meta glasses
+    - TechRadar will continue applying "frightening," "creepy," or "worrying" vocabulary to Meta glasses updates and new models
+    - If Future plc signs a Meta content deal, TechRadar Meta coverage tone will shift measurably positive within 6 months
+    - Jacob Krol's coverage of Samsung/Google glasses will continue using aspirational framing as the product transitions
+      from prototype to shipping hardware
+    cross_references:
+    - mechanism_id: 110
+      relationship: cross_brand_replication
+      connection: 'Mechanism #110 documented Tom''s Guide (Future plc) applying competitive framing asymmetry with Google-hero
+        language. Mechanism #115 shows TechRadar (same owner) applying the SAME entity-selective privacy vocabulary pattern.
+        Two brands, same owner, same bifurcation.'
+    - mechanism_id: 114
+      relationship: financial_cause
+      connection: 'Mechanism #114 documents Future plc''s triple-layer financial dependency (Google traffic, OpenAI deal, Future
+        Optic). This is the structural cause of mechanism #115''s editorial effect: $0 Meta relationship vs triple competitor
+        dependency creates entity-selective editorial incentives.'
+    - mechanism_id: 30
+      relationship: genre_effect_confound
+      connection: 'Mechanism #30 (Chokkattu genre-determined framing) shows genre matters. The Samsung article is hands-on
+        impressions (typically neutral), but Krol explicitly mentions camera use — the privacy-relevant function — with zero
+        privacy vocabulary.'
+    - mechanism_id: 33
+      relationship: hardware_capability_parity
+      connection: 'Mechanism #33 (facial recognition parity) established that MORE capable competitor hardware gets LESS
+        scrutiny. Samsung/Google prototype with camera + display + cloud AI gets zero privacy language; Meta with camera only
+        gets alarm language.'
+    source_urls:
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/samsungs-prototype-xr-glasses-hint-at-the-future-of-smart-frames-and-im-closer-to-all-in-than-ever-before
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-smart-glasses-are-majorly-popular-which-is-exciting-and-frightening-in-equal-measure
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/the-ray-ban-meta-camera-glasses-feel-inevitable-but-im-worried-about-the-high-creep-factor
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
+
 research_period: 2024-08-01 to 2026-08-15
