@@ -11668,6 +11668,93 @@ cross_publication_findings:
     test_count: 57
     test_classes: 11
 
+  mechanism_121_fastco_snap_meta_privacy_vocabulary_asymmetry:
+    mechanism_id: 121
+    date_analyzed: '2026-08-15'
+    rotation_type: A
+    domain: cross_entity_privacy_vocabulary_asymmetry
+    finding_type: same_publication_opposite_framing
+    scope: fast_company
+    entities: [snap, meta]
+    finding: >-
+      Fast Company published two articles on camera-equipped smart glasses 24 days
+      apart with opposite framing. The Snap Specs article (Jun 16, 2026, Harry
+      McCracken) is a 2,500-word aspirational CEO profile with Evan Spiegel given
+      uncritical platform: zero privacy vocabulary, zero advocacy groups cited,
+      zero alarm language. The Meta glasses article (Jul 10, 2026) titled "The many
+      controversies of Meta's AI glasses" is a controversy compilation with 5
+      distinct concern categories (covert recording, human review, facial recognition,
+      court bans, paywalling), 10+ privacy/alarm terms, EFF cited twice, and legal
+      consequences including criminal penalties and jail time.
+
+      HARDWARE PARITY: Snap Specs have MORE surveillance-capable hardware than Meta
+      glasses (4 cameras vs 1, dual Snapdragon processors, contextual AI). Despite
+      stronger hardware, Snap receives zero privacy scrutiny from the same publication.
+
+      NOVEL INSIGHT: Fast Company (Mansueto Ventures) has NO documented AI content
+      licensing deals. This is the first mechanism showing entity-selective framing
+      at a publication WITHOUT specific AI financial relationships. The structural
+      advertising competition mechanism alone (Meta's $131B ad revenue competes with
+      publisher ad revenue; Snap's $4.6B does not) produces measurable privacy
+      vocabulary suppression and framing inversion.
+    asymmetry_score: 0.90
+    significance: >-
+      Demonstrates that the "safe target" mechanism (#8) and structural advertising
+      competition (#11) operate INDEPENDENTLY of AI content licensing deals. The
+      entity-selective coverage pattern persists even at publications with no
+      documented financial relationship with any Meta competitor. This distinguishes
+      two classes of asymmetry drivers: deal-driven (mechanisms #84, #103, #108-120)
+      and structural advertising competition (this mechanism). Source access
+      reciprocity (Spiegel exclusive interview) is an additional amplifier.
+    snap_specs_article:
+      url: https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+      date: '2026-06-16'
+      author: Harry McCracken
+      format: CEO profile/exclusive interview
+      tone: aspirational
+      privacy_terms_count: 0
+      advocacy_groups_cited: 0
+      alarm_language: 0
+      key_framing: "make computing more human, engineering milestone, amazing creative experiences"
+      cameras_mentioned_as: technical feature for AR only
+    meta_glasses_article:
+      url: https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+      date: '2026-07-10'
+      format: controversy compilation
+      tone: adversarial
+      privacy_terms_count: 10+
+      advocacy_groups_cited: EFF (2x), privacy advocates
+      concern_categories: 5 (covert recording, human review, facial recognition, court bans, paywalling)
+      key_framing: "controversies, privacy invasive, embedded face-recognition, criminal penalties"
+    hardware_parity:
+      snap_cameras: 4 (2 full-color + 2 IR computer vision)
+      meta_cameras: 1 (12MP)
+      snap_ai: contextual AI assistant
+      meta_ai: Meta AI assistant
+      snap_price: 2195
+      meta_price: 299
+    financial_correlation:
+      fast_company_owner: Mansueto Ventures
+      ai_content_deals: none documented
+      meta_ad_revenue_b: 131
+      snap_revenue_b: 4.6
+      meta_is_structural_ad_competitor: true
+      snap_is_structural_ad_competitor: false
+    confounders:
+      - "STRONG: Meta has genuine privacy incidents (LED bypasses, human review, NameTag); Snap Specs haven't shipped yet"
+      - "STRONG: Source access reciprocity (Spiegel exclusive interview; Meta did not)"
+      - "MODERATE: Genre difference (CEO profile vs controversy roundup are different editorial genres)"
+      - "MODERATE: Timing (launch event coverage vs accumulated-controversies compilation)"
+      - "WEAK: Market cap sympathy (Snap stock -90% from peak; Meta $1.5T)"
+      - "WEAK: Different authors may have different editorial instincts"
+    cross_references:
+      - mechanism_8_safe_target
+      - mechanism_11_ad_competitor
+      - mechanism_103_fastco_meta_glasses
+    test_file: tests/test_fastco_snap_meta_privacy_vocabulary_asymmetry_aug15.py
+    test_count: 43
+    test_classes: 9
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

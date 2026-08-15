@@ -1600,3 +1600,40 @@ WIRED (Condé Nast) directs adversarial coverage at Meta — the ONLY major AI/t
 **Test file:** `test_parallel_publisher_copyright_litigation_financial_conflict_aug13.py` — 9 classes, 37 tests
 **Commit:** 141c316
 **C
+
+---
+
+## Iteration 127 — 2026-08-15 16:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #121: Fast Company Cross-Entity Privacy Vocabulary Asymmetry — Snap Specs vs Meta Glasses
+
+**Finding:** Fast Company published two articles on camera-equipped smart glasses 24 days apart with opposite framing:
+
+| Dimension | Snap Specs (Jun 16) | Meta Glasses (Jul 10) |
+|-----------|--------------------|-----------------------|
+| Author | Harry McCracken | Staff |
+| Format | CEO profile / exclusive interview | Controversy compilation |
+| Privacy vocabulary | 0 terms | 10+ terms |
+| Advocacy groups cited | 0 | EFF (2x), privacy advocates |
+| Concern categories | 0 | 5 (covert recording, human review, facial recognition, court bans, paywalling) |
+| Alarm language | 0 | Criminal penalties, jail time, lawsuit, ban |
+| Cameras | 4 (2 full-color + 2 IR) | 1 (12MP) |
+| Aspirational terms | 5+ (exciting, fun, milestone, amazing, ambitious) | 0 |
+| Title tone | Neutral/aspirational | Adversarial ("The many controversies") |
+
+**Novel insight:** This is the first mechanism showing entity-selective framing at a publication WITHOUT any documented AI content licensing deals. Fast Company (Mansueto Ventures) has no OpenAI, Google, or Anthropic content deals. The structural advertising competition mechanism alone — Meta's $131B ad revenue competes with publisher ad revenue while Snap's $4.6B does not — produces measurable privacy vocabulary suppression and framing inversion. This separates two classes of asymmetry drivers:
+1. **Deal-driven** (mechanisms #84, #103, #108-#120): Financial relationships with Meta's competitors
+2. **Structural ad competition** (this mechanism): Meta as publishers' advertising competitor, independent of specific deals
+
+**Hardware parity paradox:** Snap Specs have 4 cameras vs Meta's 1, dual Snapdragon processors, and contextual AI — MORE surveillance-capable hardware. Yet Fast Company applies ZERO pre-emptive privacy vocabulary to Snap versus 10+ alarm terms for Meta's less-capable hardware.
+
+**Source URLs:**
+- https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+- https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+
+**Confounders:** 6 total (2 STRONG: genuine Meta incidents + source access reciprocity; 2 MODERATE: genre difference + timing; 2 WEAK: market cap sympathy + author difference)
+
+**Cross-references:** mechanism #8 (safe target), #11 (ad competitor), #103 (Fast Company Meta glasses)
+
+**Test file:** `test_fastco_snap_meta_privacy_vocabulary_asymmetry_aug15.py` — 9 classes, 43 tests
+**Cumulative:** 121 mechanisms, 13,935 tests, 401 files
