@@ -1,3 +1,51 @@
+## Iteration #117 — Sat 2026-08-15 06:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #114: Future plc Triple-Layer AI Competitor Financial Dependency Architecture**
+
+Future plc (LSE: FUTR, ~170 brands including Tom's Guide, TechRadar, Tom's Hardware,
+PC Gamer) has THREE simultaneous financial dependencies on Meta's competitors, creating
+a compound incentive structure that mechanism #110 documented the EDITORIAL EFFECT of
+but not the full FINANCIAL CAUSE.
+
+**Layer 1 — Google Traffic Revenue Dependency (existential):**
+- H1 2026 (six months to Mar 31): revenue £349.1M (-8%), PBT £18.4M (-67%)
+- 60%+ of group revenue from Google-dependent brands (CEO Kevin Li Ying's segmentation)
+- "Brands in transition" (45%, -5% YoY) + "Non-diversified" (15%, -18% YoY) = 60%
+- Only 9% of revenue from "destination brands" (not Google-dependent)
+- Google Search AND Discover audiences both down ~20% YoY
+- Programmatic (80-90% margin): UK -19%, US -16%; eCommerce affiliates -24%
+- Market cap ~£280M (from ~£4B in Dec 2022)
+
+**Layer 2 — OpenAI Content Licensing Deal (strategic partnership):**
+- Signed December 5, 2024
+- All 200+ Future brands licensed to ChatGPT with attribution and links
+- OpenAI-based chatbots on Tom's Hardware and Who What Wear
+- Using OpenAI tools for sales, marketing, and editorial productivity
+
+**Layer 3 — Future Optic AI Visibility Product (commercial investment):**
+- Sells brands prominence in ChatGPT AND Gemini
+- £2M booked H1 2026, £10M full-year pipeline
+- Future commercially invested in BOTH Google and OpenAI platforms succeeding
+
+**Meta financial relationship: $0**
+No content deal, no ad dependency, no commercial products on Meta platforms.
+Meta competes with Google for ad spend — Meta gaining hurts Future's revenue.
+
+**Compound insight:** All three layers REINFORCE: can't afford negative Google
+coverage (existential), can't afford negative OpenAI coverage (partnership),
+commercially invested in both platforms succeeding (Future Optic), and Meta
+coverage carries zero financial risk. This explains mechanism #110's finding:
+Tom's Guide editors use combative Google-as-hero language while hedging every
+Meta positive with "but" qualifiers (75% rate).
+
+**Files:**
+- tests/test_future_plc_triple_ai_dependency_financial_architecture_aug15.py (77 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #114 under cross_publication_findings)
+- profiles/competitor-entities.yaml (future_plc expanded: OpenAI deal, Future Optic, H1 2026 financials)
+- README.md + docs/ARCHITECTURE.md (stats: 391 test files, ~13,470 tests, 114 mechanisms)
+
+---
+
 ## Iteration #116 — Sat 2026-08-15 05:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Mechanism #113: Karissa Bell (Engadget/Yahoo/Apollo) — Beat Reporter Investigative Methodology Asymmetry**
