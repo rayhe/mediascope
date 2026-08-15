@@ -10738,6 +10738,143 @@ cross_publication_findings:
     - https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
     - https://www.engadget.com/the-ray-ban-meta-smart-glasses-new-ai-powers-are-impressive-and-worrying-181036772.html
     - https://www.engadget.com/author/karissa-bell/
+  future_plc_triple_ai_dependency_financial_architecture:
+    mechanism_id: 114
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: compound_financial_dependency_architecture
+    domain: financial_incentive_mapping
+    publication_owner: Future plc (LSE FUTR)
+    publications:
+    - "Tom's Guide"
+    - TechRadar
+    - "Tom's Hardware"
+    - PC Gamer
+    entities:
+    - google
+    - openai
+    - meta
+    iteration: 117
+    test_file: tests/test_future_plc_triple_ai_dependency_financial_architecture_aug15.py
+    finding_summary: 'Future plc (LSE: FUTR, ~170 brands including Tom''s Guide, TechRadar,
+      Tom''s Hardware, PC Gamer) has THREE simultaneous financial dependencies on Meta''s
+      competitors, creating a compound incentive structure that mechanism #110 (editor-in-chief-level
+      framing asymmetry) documented the EFFECT of but not the full CAUSE. Layer 1: Google
+      Traffic Revenue Dependency (existential) — 60%+ of revenue Google-dependent, H1 2026
+      revenue £349.1M (-8%), PBT £18.4M (-67%), market cap ~£280M (crashed from ~£4B Dec 2022).
+      Layer 2: OpenAI Content Licensing Deal (strategic) — signed Dec 5 2024, 200+ brands
+      licensed to ChatGPT, OpenAI chatbots on Tom''s Hardware and Who What Wear. Layer 3:
+      Future Optic AI Visibility Product (commercial) — sells brands placement in ChatGPT AND
+      Gemini, £2M booked H1 2026, £10M full-year pipeline. Meta has $0 financial relationship
+      AND competes with Google for ad spend. The three layers REINFORCE: (1) can''t afford
+      negative Google coverage, (2) can''t afford negative OpenAI coverage, (3) commercially
+      invested in both platforms succeeding, (4) Meta coverage carries zero financial risk.
+      This explains mechanism #110''s finding: Tom''s Guide editors use combative Google-as-hero
+      language while hedging every Meta positive.'
+    layer_1_google_traffic_dependency:
+      h1_2026_revenue_gbp_m: 349.1
+      revenue_yoy_change_pct: -8
+      h1_2026_pbt_gbp_m: 18.4
+      pbt_yoy_change_pct: -67
+      google_dependent_revenue_share: 0.60
+      segmentation:
+        brands_in_transition_pct: 45
+        brands_in_transition_yoy_pct: -5
+        non_diversified_brands_pct: 15
+        non_diversified_brands_yoy_pct: -18
+        destination_brands_pct: 9
+      google_search_audience_yoy_decline_pct: -20
+      programmatic_uk_yoy_pct: -19
+      programmatic_us_yoy_pct: -16
+      ecommerce_affiliates_yoy_pct: -24
+      market_cap_gbp_m: 280
+      market_cap_peak_gbp_b: 4.0
+      dependency_severity: existential
+    layer_2_openai_content_deal:
+      signed_date: '2024-12-05'
+      brands_licensed_count: 200
+      chatgpt_content_licensing: true
+      openai_chatbots_deployed_on:
+      - "Tom's Hardware"
+      - Who What Wear
+      openai_tools_for_editorial: true
+      ceo_endorsement_quote: 'ChatGPT provides a whole new avenue for people to discover our incredible specialist content'
+      deal_type: strategic_content_licensing
+    layer_3_future_optic:
+      product_description: 'AI visibility advertising product selling brands prominent placement in LLMs including ChatGPT and Gemini'
+      h1_2026_revenue_booked_gbp_m: 2
+      full_year_pipeline_gbp_m: 10
+      platforms:
+      - ChatGPT
+      - Gemini
+      h2_expected_sales_vs_h1: 'more than double H1 sales'
+      commercially_invested_in_competitor_platforms: true
+      negative_coverage_reduces_product_value: true
+    meta_financial_relationship:
+      content_licensing_deal: false
+      advertising_dependency: false
+      commercial_products_dependent_on_meta: false
+      meta_competes_with_google_for_ad_spend: true
+      total_financial_relationship_usd: 0
+    compound_incentive_architecture:
+      reinforcing_layers:
+      - 'Google dependency — can''t afford negative Google coverage (existential threat to 60%+ revenue)'
+      - 'OpenAI content deal — can''t afford negative OpenAI coverage (strategic partnership, 200+ brands)'
+      - 'Future Optic — commercially invested in BOTH Google and OpenAI platforms succeeding (£10M pipeline)'
+      meta_safe_target: true
+      meta_coverage_financial_risk: 'zero — no financial relationship, attacking Meta doesn''t threaten any dependency'
+      google_coverage_financial_risk: 'existential — 60%+ of revenue is Google-dependent'
+      openai_coverage_financial_risk: 'strategic partnership risk — content deal + editorial tool adoption'
+      explains_mechanism_110_editorial_effect: 'Tom''s Guide editors use combative language positioning Google as hero ("blow away," "get smoked," "defeat") against Meta as villain, while hedging every Meta positive with "but" qualifiers. The compound financial architecture makes this editorial behavior structurally rational.'
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Future plc editorial operates independently from business partnerships; no evidence of direct editorial interference from OpenAI or Google'
+      counter: 'Structural incentives do not require direct interference — editorial teams absorb the institutional priorities of their employer through hiring, promotion, and story selection'
+    - strength: STRONG
+      factor: 'Google traffic decline is hurting Future — they could resent Google, not protect it'
+      counter: 'The decline makes Future MORE dependent, not less — a drowning company doesn''t criticize its rescuer. Future''s strategy pivot requires Google cooperation, not antagonism'
+    - strength: MODERATE
+      factor: 'Meta''s genuine privacy controversies may justify harsher coverage independently of financial incentives'
+      counter: 'Samsung Intelligent Eyewear has identical privacy-relevant hardware but receives neutral/positive coverage from the same publications — the privacy concern is entity-selective, not category-level'
+    - strength: MODERATE
+      factor: 'CEO Kevin Li Ying''s strategy pivot away from Google dependency could reduce the incentive over time'
+      counter: 'The pivot is aspirational — 60%+ of revenue is still Google-dependent in H1 2026, and Future Optic ADDS a new dependency on Google Gemini rather than reducing exposure'
+    - strength: WEAK
+      factor: 'Tom''s Guide editors may genuinely believe Google products are superior in head-to-head comparisons'
+      counter: 'Genuine product preference would produce balanced comparative coverage, not combative hero/villain framing with "blow away" and "get smoked" language'
+    - strength: WEAK
+      factor: 'Industry-wide Meta-skeptical framing could explain differential coverage without financial incentives'
+      counter: 'Industry-wide framing would predict UNIFORM skepticism across publications — it cannot explain why Future plc brands show STRONGER Google-hero framing than competitors with different financial architectures'
+    testable_predictions:
+    - 'Tom''s Guide and TechRadar will NOT apply adversarial "surveillance" or "privacy risk" vocabulary to Google Android XR glasses at launch (fall 2026) despite identical camera hardware to Meta glasses'
+    - 'Future Optic revenue growth will correlate with SOFTER coverage of ChatGPT and Gemini in Future publications over time'
+    - 'If Future plc signs a Meta AI content licensing deal, Tom''s Guide Meta coverage tone will shift measurably positive within 6 months'
+    - 'Future plc will NOT disclose the OpenAI content deal or Future Optic''s ChatGPT/Gemini dependency in articles comparing Meta AI to ChatGPT or Gemini'
+    - 'Tom''s Guide head-to-head comparison articles between Meta and Google products will continue using combative pro-Google language at rates significantly above other publications without the same compound dependency'
+    cross_references:
+    - mechanism_id: 110
+      relationship: cause_and_effect
+      connection: 'Mechanism #110 documented the EDITORIAL EFFECT (Tom''s Guide combative Google-hero framing). Mechanism #114 documents the FINANCIAL CAUSE (triple-layer dependency architecture). #114 is the structural explanation for #110''s observed coverage pattern'
+    - mechanism_id: 108
+      relationship: cross_publisher_archetype
+      connection: 'Ziff Davis Triple Squeeze (#108) and Future plc Triple Layer (#114) both show multi-layer financial dependency producing asymmetric Meta coverage. Different publishers, same structural pattern: compound financial interests in competitors produce reinforcing editorial incentives'
+    - mechanism_id: 109
+      relationship: cross_publisher_google_dependency
+      connection: 'Engadget/Yahoo Google privacy vocabulary zero-out (#109). Both Future plc and Yahoo/Engadget have Google as an existential dependency. Both produce coverage that avoids applying privacy scrutiny language to Google while applying it heavily to Meta'
+    - mechanism_id: 111
+      relationship: financial_architecture_comparison
+      connection: 'Apollo Q2 2026 (#111) documents the PE-level financial architecture behind Yahoo publications. #114 documents the publisher-level financial architecture behind Future plc brands. Both show expanding AI competitor financial exposure predicting softer competitor coverage'
+    - mechanism_id: 113
+      relationship: parallel_outcome_different_architecture
+      connection: 'Karissa Bell methodology asymmetry (#113) shows the journalist-level manifestation at Engadget. #114 shows Future plc''s different ownership architecture producing the same outcome: adversarial Meta coverage + soft competitor coverage'
+    source_urls:
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
+    - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
+    - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2026-Half-Year-Results/98522253
+    - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    - http://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
+    - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

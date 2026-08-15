@@ -36347,3 +36347,48 @@ wearables coverage + adversarial Meta coverage = maximum PMC financial interest.
 6. `docs/ARCHITECTURE.md` — stat sync, file tree entries for aug15 test files
 
 **Stats:** 389 test files | ~13,343 tests | 112 mechanisms
+
+---
+
+### Iteration #117 — Aug 15, 2026 06:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #114: Future plc Triple-Layer AI Competitor Financial Dependency Architecture**
+
+Future plc (LSE: FUTR, ~170 brands including Tom's Guide, TechRadar, Tom's Hardware, PC Gamer)
+has THREE simultaneous financial dependencies on Meta's competitors, creating a compound
+incentive structure that mechanism #110 documented the EFFECT of but not the full CAUSE.
+
+**Layer 1: Google Traffic Revenue Dependency (existential)**
+- H1 2026: Revenue £349.1M (-8%), PBT £18.4M (-67%), market cap ~£280M (from ~£4B Dec 2022)
+- 60%+ of revenue Google-dependent (CEO's own segmentation)
+- Programmatic ads: UK -19%, US -16%; eCommerce affiliates -24%
+
+**Layer 2: OpenAI Content Licensing Deal (strategic)**
+- Signed Dec 5, 2024; 200+ brands licensed to ChatGPT
+- OpenAI chatbots on Tom's Hardware and Who What Wear
+- CEO: "ChatGPT provides a whole new avenue for people to discover our incredible specialist content"
+
+**Layer 3: Future Optic — AI Visibility Product (commercial)**
+- Sells brands placement in ChatGPT AND Gemini
+- £2M booked H1 2026, £10M full-year pipeline
+- Future plc COMMERCIALLY INVESTED in both Google and OpenAI platforms succeeding
+
+**Meta: $0 financial relationship AND competes with Google for ad spend**
+
+**Compound structure:** All three layers reinforce — can't afford negative Google or OpenAI
+coverage, commercially invested in both platforms, Meta coverage carries zero financial risk.
+This EXPLAINS mechanism #110's finding: Tom's Guide editors use combative Google-as-hero
+language while hedging every Meta positive with "but" qualifiers.
+
+**6 confounding factors documented (2 STRONG, 2 MODERATE, 2 WEAK), 5 testable predictions.**
+**Cross-references:** #108 (Ziff Davis triple squeeze), #109 (Engadget Google privacy zero-out),
+#110 (Future plc editorial effect), #111 (Apollo Q2 2026), #113 (Karissa Bell methodology).
+
+**Updates:**
+1. `tests/test_future_plc_triple_ai_dependency_financial_architecture_aug15.py` — 77 tests, 10 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #114 added to cross_publication_findings
+3. `profiles/competitor-entities.yaml` — future_plc entity expanded with OpenAI deal, Future Optic, H1 2026 detailed financials, compound architecture
+4. `README.md` — stat sync (391 files, ~13,470 tests), test file entry added
+5. `docs/ARCHITECTURE.md` — stat sync
+
+**Stats:** 391 test files | ~13,470 tests | 114 mechanisms

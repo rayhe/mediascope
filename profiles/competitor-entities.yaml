@@ -7808,11 +7808,68 @@ essilorluxottica:
     h1_2026_profit_before_tax_yoy_change: -0.67
     meta_financial_relationship: none
     google_financial_relationship: existential_dependency
+    openai_content_deal:
+      signed_date: '2024-12-05'
+      brands_licensed_count: 200
+      chatgpt_content_licensing: true
+      openai_chatbots_deployed_on: ["Tom's Hardware", "Who What Wear"]
+      openai_tools_for_editorial: true
+      ceo_endorsement_quote: 'ChatGPT provides a whole new avenue for people to discover our incredible specialist content'
+      deal_type: strategic_content_licensing
+      source_urls:
+      - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+      - http://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
+      - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
+    future_optic:
+      product_description: 'AI visibility advertising product selling brands placement in LLMs (ChatGPT and Gemini)'
+      h1_2026_revenue_booked_gbp_m: 2
+      full_year_pipeline_gbp_m: 10
+      platforms: ['ChatGPT', 'Gemini']
+      h2_expected_sales_vs_h1: 'more than double'
+      commercially_invested_in_competitor_platforms: true
+      negative_coverage_reduces_product_value: true
+      external_recognition: ['SimilarWeb', 'Peec', 'Ahrefs', 'Promptwatch']
+    h1_2026_detailed_financials:
+      revenue_gbp_m: 349.1
+      revenue_yoy_change_pct: -8
+      pbt_gbp_m: 18.4
+      pbt_yoy_change_pct: -67
+      market_cap_gbp_m: 280
+      market_cap_peak_gbp_b: 4.0
+      market_cap_peak_date: '2022-12'
+      segmentation:
+        brands_in_transition_pct: 45
+        brands_in_transition_yoy_pct: -5
+        non_diversified_brands_pct: 15
+        non_diversified_brands_yoy_pct: -18
+        destination_brands_pct: 9
+      google_search_audience_yoy_decline_pct: -20
+      google_discover_audience_yoy_decline_pct: -20
+      programmatic_uk_yoy_pct: -19
+      programmatic_us_yoy_pct: -16
+      ecommerce_affiliates_yoy_pct: -24
+      source_urls:
+      - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+      - https://www.reuters.com/business/uk-publisher-futures-shares-plummet-changes-google-search-traffic-hit-margins-2026-03-31/
+      - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
+      - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2026-Half-Year-Results/98522253
+    compound_incentive_architecture:
+      layer_count: 3
+      layers:
+      - 'Google traffic dependency (existential — 60%+ revenue)'
+      - 'OpenAI content licensing (strategic partnership — 200+ brands)'
+      - 'Future Optic AI visibility product (commercial investment in ChatGPT + Gemini)'
+      meta_financial_relationship_usd: 0
+      meta_safe_target: true
     mechanisms:
     - mechanism_id: 110
       relationship: 'Editor-in-Chief-Level Google Dependency Shield'
+    - mechanism_id: 114
+      relationship: 'Triple-Layer AI Competitor Financial Dependency Architecture — compound cause for mechanism #110 editorial effect'
     cross_references:
     - mechanism_id: 108
       relationship: 'Ziff Davis Triple Squeeze — same Google dependency archetype, different publisher'
     - mechanism_id: 109
       relationship: 'Engadget Yahoo/Apollo — same Google partnership shield pattern'
+    - mechanism_id: 113
+      relationship: 'Karissa Bell methodology asymmetry — same pattern of asymmetric Meta coverage, different publisher/ownership'
