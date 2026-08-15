@@ -11589,6 +11589,84 @@ cross_publication_findings:
     test_count: 38
     test_classes: 9
 
+  mechanism_120_ai_traffic_cannibalization_publisher_financial_captivity:
+    mechanism_id: 120
+    date_analyzed: '2026-08-15'
+    rotation_type: C
+    domain: financial_incentive_amplification
+    finding_type: temporal_amplification_of_coverage_incentive
+    scope: cross_publication
+    entities: [meta, openai, google, microsoft, anthropic, perplexity]
+    finding: >-
+      Brookings/OMI (Jun 9 2026) documents that AI deal "click-through premium"
+      evaporated by Q4 2025 amid 6x CTR collapse from AI interfaces. TollBit
+      data shows industrial-scale extraction: OpenAI 179:1, Perplexity 369:1,
+      Anthropic 8,692:1 scrape-to-referral ratios (vs Google search ~10:1).
+      Organic US traffic declined 2.3B to <1.7B visits; top 500 publishers
+      -27% YoY (64M fewer visits/month). As traffic erodes, publisher AI deal
+      cash becomes a growing proportion of declining total revenue, AMPLIFYING
+      the coverage incentive effect of financial relationships. Meta, with zero
+      financial relationships with adversarial publications and absent from
+      all intermediary marketplace layers (Microsoft PCM, Snowflake Cortex,
+      Amazon, Factiva), faces coverage from publishers whose financial survival
+      increasingly depends on Meta's competitors. The "publisher double bind"
+      (Brookings) means the same companies eroding traffic (Google, Microsoft,
+      OpenAI) now control the licensing infrastructure publishers must use.
+    asymmetry_score: 0.91
+    significance: >-
+      This is the TEMPORAL mechanism that explains why coverage asymmetry
+      INCREASES over time even without new editorial directives. As deal
+      cash becomes more material relative to declining organic revenue,
+      the structural incentive to protect deal partner relationships grows.
+      This is the first mechanism grounded in longitudinal economic data
+      rather than individual article analysis.
+    key_data_points:
+      scrape_to_referral_ratios:
+        google_search: '~10:1'
+        openai: '179:1'
+        perplexity: '369:1'
+        anthropic: '8,692:1'
+        digital_trends_documented: '966:1 (4.1M scrapes/week → 4,200 referrals)'
+        source: TollBit Q1 2025 State of the Bots
+      ctr_collapse:
+        traditional_google: '8.6%'
+        ai_search_engine: '0.74%'
+        ai_chatbot: '0.33%'
+        ai_overviews_click_drop: '46.7% (15% → 8%)'
+        zero_click_surge: '56% → 69% (2024-2025)'
+        source: Stanford GSB / IAB Tech Lab
+      deal_premium_evaporation:
+        existed_initially: true
+        evaporated_by: Q4 2025
+        collapse_factor: '6x'
+        both_groups_lost: true
+        source: 'Brookings/OMI "Same Gatekeepers, New Tollbooths" (Jun 9 2026)'
+      organic_traffic_decline:
+        us_visits: '2.3B → <1.7B'
+        top_500_publishers_yoy: '-27%'
+        monthly_lost_visits: '64M fewer/month'
+        iab_search_traffic_decline: '20-60% less traffic from search'
+    confounders:
+      - 'MODERATE: Traffic decline affects all publishers regardless of deal status'
+      - 'STRONG: Editorial independence claims'
+      - 'MODERATE: Largest publishers maintain adversarial coverage even with deals'
+      - 'WEAK: Meta could sign more deals'
+      - 'MODERATE: Deal values small relative to total revenue (but growing as ratio)'
+    cross_references:
+      - mechanism_8_safe_target
+      - mechanism_11_ad_competitor
+      - mechanism_41_advance_reddit
+      - mechanism_117_news_corp_woo_sue
+      - emarketer_counter_forecast
+    source_urls:
+      - https://www.brookings.edu/articles/same-gatekeepers-new-tollbooths-in-the-ai-content-licensing-market/
+      - https://securityboulevard.com/2026/04/the-ai-content-crisis-how-llms-are-draining-media-revenue-and-the-technologies-fighting-back/
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+    test_file: tests/test_ai_traffic_cannibalization_publisher_financial_captivity_aug15.py
+    test_count: 57
+    test_classes: 11
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

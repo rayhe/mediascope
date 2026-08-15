@@ -7890,3 +7890,40 @@ essilorluxottica:
       relationship: 'Engadget Yahoo/Apollo — same Google partnership shield pattern'
     - mechanism_id: 113
       relationship: 'Karissa Bell methodology asymmetry — same pattern of asymmetric Meta coverage, different publisher/ownership'
+
+# Industry-wide AI content market economics (Mechanism #120)
+ai_content_market_economics:
+  mechanism_id: 120
+  date_added: '2026-08-15'
+  deal_premium_evaporation:
+    source: 'Brookings/OMI "Same Gatekeepers, New Tollbooths" (Jun 9 2026)'
+    finding: 'Publisher AI deal click-through premium evaporated by Q4 2025'
+    ctr_collapse_factor: '6x'
+    implication: 'Only remaining deal benefit is direct cash payment'
+  scrape_to_referral_ratios:
+    source: TollBit Q1 2025 State of the Bots
+    google_search: '~10:1'
+    openai: '179:1'
+    perplexity: '369:1'
+    anthropic: '8,692:1'
+  organic_traffic_decline:
+    us_visits: '2.3B → <1.7B'
+    top_500_publishers_yoy: '-27%'
+    monthly_lost_visits: '64M fewer/month'
+  publisher_double_bind:
+    source: Brookings (Jun 9 2026)
+    finding: 'Same Big Tech firms eroding traffic control the licensing infrastructure'
+    examples: [Google (AI Overviews + Showcase), Microsoft (Copilot + PCM)]
+  three_tier_market:
+    tier_1: 'Bilateral deals (large publishers, confidential)'
+    tier_2: 'Intermediaries (PCM, Snowflake Cortex, Factiva, TollBit, etc.)'
+    tier_3: 'Long tail (local/regional — structurally excluded)'
+  intermediary_expansion:
+    snowflake_cortex: {publishers: 17, notable: [WaPo, AP, People, USA Today]}
+    factiva: {ai_rights_sources: 8100, fraction_of_total: '>25%'}
+    microsoft_pcm: {investment: '>$10M', publishers: [Condé Nast, Hearst, AP, Vox Media]}
+  source_urls:
+    - https://www.brookings.edu/articles/same-gatekeepers-new-tollbooths-in-the-ai-content-licensing-market/
+    - https://securityboulevard.com/2026/04/the-ai-content-crisis-how-llms-are-draining-media-revenue-and-the-technologies-fighting-back/
+    - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+    - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
