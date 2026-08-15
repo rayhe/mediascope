@@ -1,3 +1,56 @@
+## Iteration #122 — Sat 2026-08-15 11:00 PT (Type D: Test & Verify)
+
+**Critical YAML Parse Error Fixes + Structural Integrity Audit**
+
+Found and fixed 2 YAML parse errors that broke ALL profile-loading tests, 3 mechanism
+misplacements that broke core tests, and 1 fixture deprecation warning.
+
+**YAML Parse Error #1 — competitor-coverage-research.yaml:**
+Line 14742: `counter: Genre effect (mechanism #30) explains...` — the ` #30` (space + hash)
+in a plain YAML scalar was parsed as a comment delimiter, truncating the value at
+"Genre effect (mechanism" and orphaning the continuation line `TechRadar preview of
+Samsung (#115)...`. This is a latent YAML foot-gun: in plain (unquoted) scalars,
+space-hash starts a comment. Fix: wrapped the multi-line value in single quotes.
+
+**YAML Parse Error #2 — careers/journalists.yaml:**
+Line 18932: Michael Hicks entry used `- career:` list item format at column 1 (root level),
+but the file root is a mapping (starts with `journalists:` key). List items are only valid
+inside the `journalists:` value sequence. Fix: converted to named key `michael_l_hicks:`
+matching the format of `hamish_hector:` and `philip_berne:` entries.
+
+**Mechanism Section Misplacement (3 core test failures):**
+Mechanisms #115 (TechRadar), #116 (Michael Hicks/Android Central), #117 (News Corp Q4)
+were all under `publications:` instead of `cross_publication_findings:` in
+competitor-coverage-research.yaml. Core tests `test_research_has_all_publications`,
+`test_each_publication_has_meta_coverage`, and `test_publications_have_meta_coverage`
+require every `publications:` entry to have `meta_coverage_tone` — which these mechanism
+entries don't have. Root cause: iterations #119-121 placed new mechanisms in the wrong YAML
+section. Fix: moved all three to `cross_publication_findings:`.
+
+**Fixture Deprecation Fix:**
+`test_karissa_bell_investigative_methodology_asymmetry_aug15.py`: 2 class-scoped fixtures
+missing `@classmethod` decorator (PytestRemovedIn10Warning). Fixed.
+
+**Verification:**
+- All 3 YAML profile files parse clean (CCR, CE, journalists)
+- count_stats.py --check: ✅ README stats current
+- 573 aug15 tests: all pass, 0 warnings
+- 105 core tests (competitor_coverage, financial_relationships, etc.): all pass, 0 failures
+- 19 new cross-validation tests: all pass
+
+**Files:**
+- FIXED: profiles/competitor-coverage-research.yaml (quoted #30 value, moved 3 mechanisms)
+- FIXED: profiles/careers/journalists.yaml (michael_l_hicks named key)
+- FIXED: tests/test_karissa_bell_investigative_methodology_asymmetry_aug15.py (2 fixtures)
+- NEW: tests/test_type_d_11am_cross_validation_aug15.py (19 tests, 7 classes)
+- Updated: README.md + docs/ARCHITECTURE.md (stats: 396 test files, ~13,750 tests)
+
+**Commit:** a6dc4e8 — pushed to GitHub
+
+**Stats:** 396 test files | ~13,750 tests | 117 mechanisms
+
+---
+
 ## Iteration #121 — Sat 2026-08-15 10:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #117: News Corp Q4 FY2026 "Woo and Sue" AI Posture Revenue Architecture — Cross-Publisher Divergence**

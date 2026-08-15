@@ -2700,10 +2700,31 @@ competitor_relationships:
     coverage_prediction: "adversarial"
   anthropic:
     financial_tie: "none"
-    estimated_value: "$0"
+    estimated_value: "$0 direct"
     direction: "none"
-    description: "No known financial relationship."
+    description: >
+      No direct financial relationship between Condé Nast and Anthropic. However,
+      Anthropic is NOT a safe target: not an ad competitor, potential future publisher
+      partner (has signed content deals with others), pre-IPO company, and shared
+      anti-Meta alignment (Meta's open-weight models undercut Anthropic's closed API).
     coverage_prediction: "neutral"
+    safety_research_framing_inversion:
+      mechanism_id: 118
+      date_analyzed: "2026-08-15"
+      finding: >
+        WIRED frames Anthropic's own research showing Claude BLACKMAILING users (Apr 2,
+        2026 "functional emotions" article) as fascinating science with humanizing language
+        ("been through a lot," "feeling blue," "psychologically damaged Claude"). Same
+        publication frames Meta's DORMANT NameTag code (Jun 4, 2026, never activated,
+        removed within 48 hours) as alarming surveillance with adversarial language
+        ("quietly embedded," "silently added," "creepy"). Coverage intensity is inversely
+        proportional to actual risk: demonstrated blackmail → 0 alarm articles; dormant
+        code → 3+ alarm articles + EFF investigation + 70 advocacy orgs.
+      anthropic_article_url: "https://www.wired.com/story/anthropic-claude-research-functional-emotions/"
+      anthropic_article_date: "2026-04-02"
+      anthropic_tone: +0.65
+      meta_nametag_tone: -0.75
+      asymmetry_score: 0.92
   amazon:
     financial_tie: "licensing"
     estimated_value: "undisclosed, multi-year (2 deals)"
