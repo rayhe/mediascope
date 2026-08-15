@@ -1,3 +1,37 @@
+## Iteration #126 — Sat 2026-08-15 15:00 PT (Type D: Test & Verify)
+
+**Multi-Publication Flag Integrity + Doc Sync + Mechanism #118-#120 Cross-Validation**
+
+Found and fixed 10 test failures in test_structural_consistency.py plus wrote
+23 new cross-validation tests for mechanisms #118-#120.
+
+**Data fixes:**
+1. journalists.yaml: 135 stale `multi_publication` flags fixed (108→243 flagged True,
+   matching the 243 journalists who actually have 2+ distinct publications in career data)
+2. competitor-coverage-research.yaml: Added missing `mechanism_id: 119` to Burgess entry
+
+**Doc sync (6 files):**
+- EDITORIAL_HISTORIES.md: 255→258 journalists, 242→243 multi-pub, 757→759 migrations
+- README.md: 757→759 migrations, 399→400 test files, 2 stale per-file counts fixed
+- ARCHITECTURE.md: 399→400 test files, 21 missing test file entries added
+- README.md: 14 missing test file entries + 1 new = 15 total added
+- careers_demo.py: 255→258 tracked journalists
+
+**Cross-validation test:**
+- test_type_d_3pm_cross_validation_aug15.py (7 classes, 23 tests)
+- Validates multi_publication flag integrity across all 258 journalists
+- Guards doc counts across README, EDITORIAL_HISTORIES, careers_demo
+- Cross-validates mechanisms #118 (safety-research framing inversion),
+  #119 (Burgess CEO attribution), #120 (traffic cannibalization feedback loop)
+- Verifies cross-reference validity and confounder completeness
+- Guards that all aug15 test files are registered in both docs
+
+**Regression results:** 124/124 structural_consistency, 384/384 core tests passing
+
+**Stats:** 400 test files | ~13,892 tests | 120 mechanisms
+
+---
+
 ==> /tmp/iteration-entry.md <==
 ## Iteration #125 — Sat 2026-08-15 14:00 PT (Type C: Financial Incentive Mapping)
 
