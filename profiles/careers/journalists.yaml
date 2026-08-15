@@ -137,6 +137,7 @@ journalists:
   - https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
   - https://talkingbiznews.com/they-talk-biz-news/ny-times-hires-metz-to-cover-emerging-tech/
   - https://en.wikipedia.org/wiki/Cade_Metz
+  multi_publication: true
 - career:
   - beat: technology, robotics, cybersecurity, space tech
     end: '2008'
@@ -1235,6 +1236,7 @@ journalists:
     field: Journalism
     institution: Northwestern University (Medill School of Journalism)
     source_url: https://muckrack.com/caseynewton
+  multi_publication: true
 - beats:
   - twitter_x
   - elon_musk
@@ -1292,6 +1294,7 @@ journalists:
     Both wrote definitive Musk/Twitter books from different institutional homes.'
   source_urls:
   - https://www.nytimes.com/by/kate-conger
+  multi_publication: true
 - career:
   - end: '2010'
     publication: macworld
@@ -1568,6 +1571,7 @@ journalists:
     field: Journalism
     institution: Columbia University Graduate School of Journalism
     source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+  multi_publication: true
 - awards:
   - category: Distinguished Business Reporting
     for: Uber coverage at NYT
@@ -1634,6 +1638,7 @@ journalists:
   source_urls:
   - https://en.wikipedia.org/wiki/Mike_Isaac
   - https://www.nytimes.com/by/mike-isaac
+  multi_publication: true
 - awards:
   - category: National Reporting
     for: Facebook investigation team at NYT
@@ -1721,6 +1726,7 @@ journalists:
   source_urls:
   - https://en.wikipedia.org/wiki/Sheera_Frenkel
   - https://www.nytimes.com/by/sheera-frenkel
+  multi_publication: true
 - career:
   - beat: legal news
     end: 2009-06
@@ -1791,6 +1797,7 @@ journalists:
   - https://nytco.com/press/kashmir-hill-bringing-her-distinct-voice-on-tech-to-the-times/
   - https://pen.org/people/kashmir-hill/
   - https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-desk-hires-kashmir-hill/
+  multi_publication: true
 - name: Kevin Roose
   career:
   - publication: nytimes
@@ -1950,6 +1957,7 @@ journalists:
     formation (Bloomberg → NYT) produces corporate-economic framing distinct from advocacy-journalism pipelines. Her AI spending
     coverage provides the financial context against which Meta capex narratives are read. Tests whether business-journalism
     institutional norms modulate tech framing differently than Condé Nast or Atlantic editorial cultures.'
+  multi_publication: true
 - career:
   - beat: sports business, culture
     end: 2006-01
@@ -2041,6 +2049,7 @@ journalists:
     field: Journalism
     institution: Columbia University Graduate School of Journalism
     source_url: https://muckrack.com/tripp-mickle
+  multi_publication: true
 - career:
   - beat: N/A (education)
     end: 2017-01
@@ -2106,6 +2115,7 @@ journalists:
     field: Journalism
     institution: City University of New York
     source_url: https://muckrack.com/nico-grant
+  multi_publication: true
 - beats:
   - meta
   - technology_society
@@ -2158,6 +2168,7 @@ journalists:
     as a coverage priority. Having two dedicated Meta reporters (Isaac since 2014, Tan since 2026) is unusual — comparable
     to having two dedicated Apple reporters. DiD analysis opportunity: compare his early Meta coverage tone against his CoinDesk/WaPo
     baseline to measure how quickly NYT''s institutional framing shapes a new reporter.'
+  multi_publication: true
 - analytical_notes: 'Korean American (child of Korean immigrants, grew up in Seattle where family ran a burger joint). Career:
     AP-Dow Jones Seoul → San Jose Mercury News → Seattle Post-Intelligencer → Washington Post (~9 years) → NYT (late 2015).
     Based in Bethesda, Maryland. Twitter: @ceciliakangf. Contact: via NYT.
@@ -2436,6 +2447,7 @@ journalists:
     field: Literature
     institution: Pennsylvania State University
     source_url: https://en.wikipedia.org/wiki/Steven_Levy
+  multi_publication: true
 - career:
   - beat: technology, engineering, science
     end: 2012-12
@@ -2637,6 +2649,7 @@ journalists:
   - https://muckrack.com/adrienne-lafrance
   - https://talkingbiznews.com/they-re-hiring/the-atlantic-announces-four-editorial-promotions/
   - https://www.wbur.org/onpoint/2018/05/24/gender-imbalance-in-media
+  multi_publication: true
 - beats:
   - artificial_intelligence
   - platform_regulation
@@ -2694,6 +2707,7 @@ journalists:
   - https://muckrack.com/alex-hern
   - https://talkingbiznews.com/they-talk-biz-news/guardian-tech-editor-hern-is-departing/
   - https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
+  multi_publication: true
 - beats:
   - ai_policy
   - platform_regulation
@@ -2856,6 +2870,7 @@ journalists:
   - https://talkingbiznews.com/media-news/wired-hires-dave-as-a-senior-writer-covering-big-tech/amp/
   - https://talkingbiznews.com/they-talk-biz-news/reuters-hires-dave-from-la-times-to-cover-google/amp/
   - https://muckrack.com/peard33
+  multi_publication: true
 - career:
   - beat: business
     end: 2010-12
@@ -2899,6 +2914,7 @@ journalists:
     Barrett''s return under Drummond is a structural signal — she recruited him because of his Gizmodo adversarial editorial
     DNA. His double tenure at Wired (pre-Drummond management + Drummond-era news leadership) makes him a natural experiment
     for detecting editorial tone shifts.'
+  multi_publication: true
 - career:
   - beat: software development
     end: 1999-12
@@ -2969,6 +2985,7 @@ journalists:
     field: Comparative Literature
     institution: University of California, Los Angeles
     source_url: https://en.wikipedia.org/wiki/Ian_Bogost
+  multi_publication: true
 - career:
   - beat: news broadcasting
     end: '2016'
@@ -3329,6 +3346,7 @@ journalists:
     field: Business and Economics Journalism
     institution: Columbia University
     source_url: https://muckrack.com/a-greenberg
+  multi_publication: true
 - beats:
   - tech_accountability
   - surveillance
@@ -3410,6 +3428,7 @@ journalists:
     investigation led to FTC $61.7M + DC AG $3.95M settlements. Cattle monitoring company ICE investigation exposed 75-year
     data retention. Podcast appearances: Muslim in Plain Sight, Muslims Doing Things, FannBoy Friday, Follow Friday. X: @JMBooyah.
     Phone: 4156303604. Contact: Johana.Bhuiyan@theguardian.com.'
+  multi_publication: true
 - beats:
   - technology
   - breaking_news
@@ -3472,6 +3491,7 @@ journalists:
     charges dropped). Graphic novel author. ANALYTICAL VALUE: As US tech editor, his editorial judgment shapes which stories
     get covered and how — a key editorial control point. His Gizmodo background (G/O Media, formerly Gawker Media) brings
     a specific editorial sensibility to the Guardian.'
+  multi_publication: true
 - career:
   - beat: politics, investigative
     end: 2014-01
@@ -3592,6 +3612,7 @@ journalists:
     tech accountability with labor/surveillance focus. Colorado native, Bay Area based. Three degrees (NYU, Columbia, Berkeley).
     ANALYTICAL VALUE: Fresh hire — her coverage patterns at Guardian vs NPR/Markup will be a clean natural experiment for
     institutional framing effects. Strong investigative background. Previously lived in Latin America.'
+  multi_publication: true
 - career:
   - beat: architecture, urban planning, RIBA, CABE
     end: 2001-06
@@ -3665,6 +3686,7 @@ journalists:
     at generalist outlets. The AJ→BD→Guardian pipeline also means his "housing and homelessness for over two decades" (Orwell
     Foundation) spans architecture trade press AND broadsheet — a longer and deeper engagement with the built environment
     than pure Guardian tenure suggests.'
+  multi_publication: true
 - additional_education:
     degree: MFA
     field: Writing
@@ -3719,6 +3741,7 @@ journalists:
     on CRT. Wikipedia page exists. ANALYTICAL VALUE: Internal beat migration (tech → non-tech at same publication) is unusual
     — most beat changes coincide with publication changes. Her harassment experience may be relevant to studying editorial
     risk calculus around adversarial tech coverage.'
+  multi_publication: true
 - additional_education:
   - degree: BA
     field: Journalism (exchange)
@@ -3779,6 +3802,7 @@ journalists:
     MarketWatch → Guardian pipeline. Covered Meta and Musk extensively. Work also appeared in WSJ, New York Magazine, Quartz,
     Elle, Cosmopolitan. ANALYTICAL VALUE: Departure reduces Guardian US tech reporting capacity — was half the team. Migration
     out of journalism entirely (not to another publication).'
+  multi_publication: true
 - career:
   - beat: general
     end: 2021-06
@@ -3808,6 +3832,7 @@ journalists:
   name: Hibaq Farah
   notes: 'Key migration: Guardian UK → NYT Opinion. Brief but notable tech beat tenure. Investigated TikTok moderation practices.
     Guardian''s Scott Trust Bursary recipient.'
+  multi_publication: true
 - career:
   - beat: research
     end: 2013-06
@@ -3888,6 +3913,7 @@ journalists:
     for MediaScope: his beat at the Guardian DIRECTLY overlaps with MediaScope''s mission — he covers how powerful institutions
     shape media, media regulation, ownership structures, and media lawsuits (including the Smartmatic v. Fox News case at
     WaPo). He is positioned to be the most analytically relevant Guardian journalist for our undisclosed-conflicts research.'
+  multi_publication: true
 - career:
   - beat: general, culture, diversity, university affairs
     end: 2022-05
@@ -3972,6 +3998,7 @@ journalists:
     institution: Harvard University
     year: '2022'
     source_url: https://muckrack.com/matteo-wong/articles
+  multi_publication: true
 - career:
   - beat: technology, AI, data investigations
     end: 2023-07
@@ -4050,6 +4077,7 @@ journalists:
     background makes him uniquely capable of building tools that other journalists cannot replicate. Atlantic has invested
     heavily in his infrastructure (four custom databases), suggesting long-term institutional commitment to this coverage
     line.'
+  multi_publication: true
 - career:
   - beat: literary nonfiction
     end: 2016-01
@@ -4144,6 +4172,7 @@ journalists:
     institution: Cornell University
     year: ~2015
     source_url: https://muckrack.com/kaitlyn-tiffany
+  multi_publication: true
 - career:
   - beat: N/A (education)
     end: 2014-05
@@ -4235,6 +4264,7 @@ journalists:
     overlaps with Meta platform accountability narratives. Mother Jones → Atlantic migration is a natural experiment for measuring
     how Emerson Collective ownership and Atlantic institutional norms modulate adversarial framing compared to advocacy-journalism
     outlets.'
+  multi_publication: true
 - career:
   - beat: general, culture
     end: 2014-12
@@ -4279,6 +4309,7 @@ journalists:
   name: Ellen Cushing
   notes: 'Former Atlantic tech desk leader, now staff writer covering food/culture. Key role: she built Atlantic''s SF tech
     bureau (2018) and shaped the tech desk that Tiffany, Wong, and others joined.'
+  multi_publication: true
 - birthplace: Calgary, Alberta, Canada
   born: 1985/1986
   career:
@@ -4576,6 +4607,7 @@ journalists:
     she import her own framing vocabulary? The DiD framework should compare her Wired bylines against her Vice bylines to
     test institutional vs individual framing origin. Her Bocconi lecture language (''digital coup d''état,'' ''too narcissistic
     to last'') suggests she brings her own adversarial frame rather than adopting Wired''s.'
+  multi_publication: true
 - analytical_notes: 'CRITICAL CROSS-PUBLICATION BRIDGE: The single most important editorial figure connecting two tracked
     publications. As Wired EIC (2017-2020), Thompson personally co-authored the two Facebook cover stories cited in congressional
     hearings — ''Inside the Two Years that Shook Facebook—and the World'' (Feb 2018, with Fred Vogelstein, 11,000 words, 50+
@@ -4801,6 +4833,7 @@ journalists:
   - https://nickthompson.com
   - https://talkingbiznews.com/they-talk-biz-news/wired-editor-thompson-named-ceo-of-the-atlantic/
   - https://weforum.org/people/nicholas-thompson/
+  multi_publication: true
 - career:
   - beat: technology
     end: 2015-12
@@ -4852,6 +4885,7 @@ journalists:
     field: Computer Science
     institution: Imperial College London
     source_url: https://muckrack.com/will-douglas-heaven
+  multi_publication: true
 - career:
   - beat: investigative
     end: 2021-06
@@ -4894,6 +4928,7 @@ journalists:
     (held concurrently with MIT TR role). National Magazine Award finalist 2026 for ''Power Hungry: AI and our energy future''
     investigation (with Casey Crownhart). Also a musician (guitar, bass, drums). Reachable via Signal at jamesodonnell.22.
     127+ articles.'
+  multi_publication: true
 - career:
   - beat: sustainable materials
     end: 2019-06
@@ -4931,6 +4966,7 @@ journalists:
     (NYU SHERP). Unusual STEM-to-journalism pipeline — worked as materials science researcher before journalism. National
     Magazine Award finalist 2026 (with James O'Donnell). Science Friday contributor. Co-led FT partnership 'The Energy Question'
     edition. From Birmingham, Alabama. Based in NYC. 300+ articles — MIT TR's most prolific climate reporter.
+  multi_publication: true
 - career:
   - beat: education
     end: 2012-05
@@ -5044,6 +5080,7 @@ journalists:
     investigation. China Initiative database informed DOJ policy review. NIST AI bias standards work. Certified wilderness
     first aid, hostile environment training. IRE and Frontline Freelance Register member. Rock climber. Signal: eileenguo.15.
     Bluesky: eileenguo.bsky.social.'
+  multi_publication: true
 - career:
   - beat: neuroscience, philosophy, computational models
     end: 2024-12
@@ -5106,6 +5143,7 @@ journalists:
     as epistemically inferior, which could produce systematic bias in coverage of companies whose value proposition is prediction
     at scale. (4) AAAS Wired fellowship → MIT TR migration tests whether Wired framing exposure during PhD influenced their
     subsequent MIT TR coverage.'
+  multi_publication: true
 - career:
   - beat: technology
     end: 2018-12
@@ -5140,6 +5178,7 @@ journalists:
   notes: 'News reporter at MIT Tech Review. UK-based. Writes The Download, MIT TR''s daily newsletter (941+ posts — the most
     prolific writer on staff). Oversees monthly AI Hype Index. Career: Telegraph → i newspaper (technology correspondent)
     → MIT TR. Shortlisted 2021 British Journalism Awards, 2025 Publisher Newsletter Awards. Regular BBC expert. Based in London.'
+  multi_publication: true
 - career:
   - beat: health, biomedicine
     end: 2022-03
@@ -5190,6 +5229,7 @@ journalists:
     Biomedical Sciences (UCL), MSc Science Communication (Imperial College London). Work featured in Washington Post, Slate,
     Ideas Illustrated, The Lancet. Based in London. 183+ articles. Covers biotechnology, longevity, reproductive medicine,
     gene therapy.'
+  multi_publication: true
 - career:
   - end: '2015'
     publication: ibt-media
@@ -5301,6 +5341,7 @@ journalists:
     ProPublica (Feb 2026) to cover FBI/DOJ — the first departure from Drummond''s politics team. His exit is analytically
     significant: he left the tech-politics intersection for pure federal law enforcement, suggesting the Wired politics beat
     may be narrowing toward pure politics/government as DOGE coverage matures.'
+  multi_publication: true
 - career:
   - beat: technology, consumer electronics
     end: 2012-06
@@ -5354,6 +5395,7 @@ journalists:
     election disinformation. Brings distinctly European/Irish perspective to American extremism — reports on US from outside
     US, similar to Guardian''s model. His coverage specialty (online extremism → real-world violence pipeline) is the most
     directly relevant to the Wired brand''s tech-coverage DNA.'
+  multi_publication: true
 - awards:
   - name: ASME NEXT Award for Journalists Under 30
     notes: Recognized for work at MIT Technology Review. The ASME NEXT Award honors outstanding achievement by magazine journalists
@@ -5593,6 +5635,7 @@ journalists:
     investigation (2022) demonstrates institutional capacity for long-form adversarial reporting on surveillance — cited by
     Congress (H. Rept. 119-72), OHCHR, Amnesty International, and academic law reviews. Academic publication in Global Policy
     on digital peacebuilding in Colombia shows active scholarly engagement rare among tech journalists.'
+  multi_publication: true
 - career:
   - beat: technology
     end: 2012-06
@@ -5663,6 +5706,7 @@ journalists:
     background connects MIT TR''s editorial culture to UK tech journalism traditions (more adversarial toward tech power than
     US norms). The Matter startup experience (Kickstarter + Medium acquisition) gives him direct exposure to both Silicon
     Valley business models and long-form investigative craft. Based in San Francisco. Twitter: @bobbie.'
+  multi_publication: true
 - career:
   - beat: culture, internet, technology
     end: 2023-04
@@ -5724,6 +5768,7 @@ journalists:
     KEY: Her Yann LeCun/AMI interview (Jan 2026) directly intersects with Meta coverage analysis — LeCun left Meta FAIR, his
     contrarian views on LLMs implicitly critique Meta''s own Llama/Muse Spark strategy. Her OpenClaw-in-China coverage shows
     MIT TR tracks open-source AI tools'' global adoption patterns, including in markets where Meta competes.'
+  multi_publication: true
 - career:
   - beat: general news
     end: 2013-12
@@ -5791,20 +5836,16 @@ journalists:
     ecosystems, border surveillance, and submarine internet cables. His Wired UK base means his editorial posture is shaped
     by both UK/EU regulatory context AND Condé Nast International editorial standards — a useful comparison point for US-based
     Wired security coverage. His FOI Directory background signals a transparency-activist orientation predating his journalism
-    career.
-    CROSS-ENTITY ANALYSIS (Mechanism #119, Aug 15 2026): Systematic three-dimensional
-    framing asymmetry across 9+ articles (2021-2026). (1) CEO Personal Attribution:
-    Meta articles use "Mark Zuckerberg''s Meta" in opening sentence; Google, Apple,
-    OpenAI articles never attribute to CEO by name. (2) Perpetrator vs Protector: Meta
-    positioned as facilitator of harm; Google positioned as security warner/fixer. (3)
-    Remediation Emphasis: Google/Apple get "fixed"/"now-fixed" in headlines; Meta
-    remediation buried after adversarial framing. Key comparison: Meta CSAM ads (Aug
-    5 2026, adversarial-scandal with CEO attribution + graphic detail + watchdog quotes)
-    vs Google Gemini Calendar hijack (Aug 6 2025, "Google fixed the flaws" headline)
-    vs Google VP DMA (Jun 29 2026, Google VP platformed uncritically as security expert).
-    Asymmetry score: 0.88. 10-year WIRED tenure means patterns reflect institutional
-    culture, not individual bias. Financial predictor: Google = WIRED ad revenue source,
-    Meta = WIRED ad competitor.'
+    career. CROSS-ENTITY ANALYSIS (Mechanism #119, Aug 15 2026): Systematic three-dimensional framing asymmetry across 9+
+    articles (2021-2026). (1) CEO Personal Attribution: Meta articles use "Mark Zuckerberg''s Meta" in opening sentence; Google,
+    Apple, OpenAI articles never attribute to CEO by name. (2) Perpetrator vs Protector: Meta positioned as facilitator of
+    harm; Google positioned as security warner/fixer. (3) Remediation Emphasis: Google/Apple get "fixed"/"now-fixed" in headlines;
+    Meta remediation buried after adversarial framing. Key comparison: Meta CSAM ads (Aug 5 2026, adversarial-scandal with
+    CEO attribution + graphic detail + watchdog quotes) vs Google Gemini Calendar hijack (Aug 6 2025, "Google fixed the flaws"
+    headline) vs Google VP DMA (Jun 29 2026, Google VP platformed uncritically as security expert). Asymmetry score: 0.88.
+    10-year WIRED tenure means patterns reflect institutional culture, not individual bias. Financial predictor: Google =
+    WIRED ad revenue source, Meta = WIRED ad competitor.'
+  multi_publication: true
 - career:
   - beat: N/A (education)
     end: 2012-06
@@ -5879,6 +5920,7 @@ journalists:
     moves. Her beat overlaps with Matt Burgess (Wired UK) but from US lens, enabling cross-continental editorial comparison
     within the same desk. Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor,
     Security & Investigations).'
+  multi_publication: true
 - awards:
   - category: Best Story - Digital
     for: Facebook corporate accountability reporting at BuzzFeed News
@@ -5963,6 +6005,7 @@ journalists:
     now carry more consistent Meta coverage volume at NYT. Co-authorship of "Character Limit" with Kate Conger (tracked) creates
     a paired-journalist control: same book, same reporting process, different career pipelines (Conger via Gizmodo → TechCrunch
     → NYT vs Mac via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked) at BuzzFeed SF bureau.'
+  multi_publication: true
 - career:
   - beat: English, comparative literature
     end: 2007-05
@@ -6307,6 +6350,7 @@ journalists:
     and me.sh bio aggregators (no direct Russian Vogue archives available). The Forward Moscow bureau confirmed via same secondary
     bio sources. Outside Magazine correspondent confirmed via first-person interview on outsideonline.com. Knight fellowship
     confirmed via TalkingBizNews announcement. Book details confirmed via Amazon listing and W.W. Norton catalog.'
+  multi_publication: true
 - name: Vittoria Elliott
   career:
   - publication: international-development
@@ -6466,6 +6510,7 @@ journalists:
   - https://www.wired.com/author/makena-kelly/
   - https://www.theverge.com/authors/makena-kelly
   - https://podchaser.com/creators/makena-kelly-107a91YLIq
+  multi_publication: true
 - career:
   - beat: politics
     end: 2016-06
@@ -6509,6 +6554,7 @@ journalists:
     to tech coverage. His reporting on lobbying (Tim Cook calls to Pelosi, Amazon antitrust) directly shapes public understanding
     of tech company political power. Key for Meta antitrust/FTC coverage. Before journalism: politics intern at HuffPost,
     radio intern.'
+  multi_publication: true
 - career:
   - beat: metro reporting
     end: 2006-08
@@ -6608,6 +6654,7 @@ journalists:
     reporters. Frequent co-authors: Sheera Frenkel, Stuart Thompson, Steven Lee Myers, Cade Metz, Cecilia Kang. PEN America
     speaker on information quality. Guest on Charlie Warzel''s Galaxy Brain (The Atlantic) on AI-generated influencers (Apr
     2026).'
+  multi_publication: true
 - career:
   - beat: digital journalism, data visualization, interactive news
     end: 2014-05
@@ -6702,6 +6749,7 @@ journalists:
     decisions. Co-authors: Tiffany Hsu (deepfakes/Sora), Charlie Warzel (Privacy Project), Steven Lee Myers (misinformation),
     Sheera Frenkel (civil war trends), Cade Metz + Cecilia Kang + Nico Grant (AI training data), Matina Stevis-Gridneff (Canada/Meta),
     Yaryna Serkez (climate/opinion).'
+  multi_publication: true
 - career:
   - beat: politics, border policy
     end: 2019-05
@@ -6746,6 +6794,7 @@ journalists:
     stablecoin regulation, and Trump-era tech policy. His investigative style (FTX collapse, Trump crypto deals) signals deep-dig
     reporter. Yale education (Yale Daily News). Bloomberg Businessweek magazine features experience gives longform investigative
     capability.'
+  multi_publication: true
 - career:
   - beat: tech PR, communications
     end: 2020-01
@@ -6817,6 +6866,7 @@ journalists:
   - https://techradar.com/author/joel-khalili
   - https://talkingbiznews.com/they-re-hiring/khalili-departs-techradar-pro-for-wired/
   - https://muckrack.com/joel-khalili
+  multi_publication: true
 - analytical_value: 'GAWKER DNA PIPELINE ARCHETYPE: Marchman''s career is the purest example of the adversarial-journalism
     pipeline thesis — every institution in his chain (Deadspin/Gawker → Gizmodo → Vice → Wired) has Gawker DNA. His appointment
     as Director of Science, Politics & Security (and subsequent promotion to Senior Director) under Drummond is the clearest
@@ -7015,6 +7065,7 @@ journalists:
   - https://citybiz.co/2026/05/wired-expands-editorial-team-with-hires-from-business-insider-and-bloomberg/
   - https://muckrack.com/sophie-kleeman/articles
   - https://www.weforum.org/stories/authors/sophie-kleeman/
+  multi_publication: true
 - career:
   - beat: climate, environment
     end: 2021-12
@@ -7068,6 +7119,7 @@ journalists:
   name: Brian Kahn
   notes: 'Recent hire (May 2025): Senior editor on Wired science desk. Climate/clean tech specialist. Career path Earther
     → Protocol → Bloomberg → Wired tracks through multiple climate-focused outlets.'
+  multi_publication: true
 - career:
   - beat: investigative journalism
     end: 2020-12
@@ -7118,6 +7170,7 @@ journalists:
   name: Molly Taft
   notes: 'Recent hire (Mar 2025): Senior writer on Wired science desk covering climate. Career path Earther → New Republic
     → Drilled → Wired. Won 2023 SEAL Environmental Award. Pronouns: they/them.'
+  multi_publication: true
 - career:
   - beat: internet culture
     end: 2016-12
@@ -7162,6 +7215,7 @@ journalists:
   notes: 'Recent hire (Feb 2026): Senior writer on Wired culture desk. Internet culture specialist — conspiracy theories,
     memes, fandoms, digital subcultures. Author of novels and story collections. Unusual non-traditional pipeline into Wired:
     no prior tech journalism background, coming from Rolling Stone culture beat and MEL Magazine.'
+  multi_publication: true
 - career:
   - beat: politics, policy
     end: 2019-11
@@ -7272,6 +7326,7 @@ journalists:
     covered Meta/Facebook (Marketplace scams, layoffs), TikTok Shop, social media platforms, AI workplace displacement. Promoted
     within Wired under Katie Drummond (Aug 2024). Cross-publication migration through Condé Nast orbit makes her a good DiD
     subject — did Wired''s institutional culture shape her coverage tone?'
+  multi_publication: true
 - career:
   - beat: congressional coverage
     end: 2007-06
@@ -7455,6 +7510,7 @@ journalists:
     overreach or anti-American protectionism. SF Bay Area native, UC Santa Cruz graduate, lives in south London with wife
     Nickie and two sons. Giants and 49ers fan. Had a personal internet privacy incident (filmed on London subway, video went
     viral on SubwayCreatures Instagram) that he turned into a Bloomberg Decrypted podcast episode about online privacy.'
+  multi_publication: true
 - career:
   - beat: corporate credit, stocks, insurance, retail
     end: 2013-06
@@ -7514,6 +7570,7 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/how-a-business-journalist-can-improve-in-social-media/
   - https://talkingbiznews.com/they-re-hiring/maheshwari-named-to-sabew-board/
   - https://salute.community/speakers/sapna-maheshwari
+  multi_publication: true
 - career:
   - beat: consumer advocacy, consumer rights
     end: 2015-12
@@ -7605,6 +7662,7 @@ journalists:
     at Harvard''s Applied Social Media Lab, Berkman Klein Center + ASML. Awards: Consumer Education Leadership Award (National
     Consumers League + United Church of Christ), 2015 Journalist of the Year (Consumer Federation of California). Bluesky:
     @meghann.bsky.social.'
+  multi_publication: true
 - career:
   - beat: general news
     end: 2010-11
@@ -7684,6 +7742,7 @@ journalists:
     — William Turton also started at the Daily Dot (2014-2016) when Couts was politics editor there (2014-2017). Couts may
     have been Turton''s editor, creating a mentorship lineage that feeds into the Drummond orbit. His investigations oversight
     means any cross-desk investigative story (including Meta coverage) passes through his editorial judgment.'
+  multi_publication: true
 - career:
   - beat: local news
     event_type: hired
@@ -7829,6 +7888,7 @@ journalists:
     (remote from Wired''s SF/NY offices). Approached by Sean Fennessy to join The Ringer (former Grantland people). Education:
     McGill University BA Honours (English major, Political Science minor) 2005-2009. Saint Ignatius College Prep 2001-2005
     (Chicago).'
+  multi_publication: true
 - career:
   - beat: private equity, leveraged finance
     end: 2011-12
@@ -7903,6 +7963,7 @@ journalists:
     2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with very different
     ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine, peHub) gives
     her a finance-native analytical lens distinct from most tech reporters.'
+  multi_publication: true
 - awards:
   - name: Sandy Hume Memorial Award for Excellence in Political Journalism
     notes: For series on Donald Trump's attempts to stop Biden certification at the Jan 6 joint session of Congress. Reporting
@@ -8052,6 +8113,7 @@ journalists:
   notes: 'GUARDIAN → WIRED MIGRATION (2026): 17-year Guardian veteran hired as Deputy Editor in London — a newly created role
     rebuilding Wired UK editorial after print cancellation and staff departures. Her appointment signals Wired UK reconstruction
     with Guardian-trained investigative leadership rather than tech-native journalists.'
+  multi_publication: true
 - career:
   - beat: general, investigative
     end: 2005-01
@@ -8278,6 +8340,7 @@ journalists:
     Foreign Policy, Daily Beast, Rolling Stone before returning to Wired as contributing editor (Mar 2024) under Katie Drummond.
     His return signals Drummond consolidating an adversarial-journalism alumni network. Georgetown BA. Born Sep 15, 1970.
     Grandfather: theater impresario Lee Guber; step-grandmother: Barbara Walters.'
+  multi_publication: true
 - career:
   - beat: government technology, computing
     end: '2015'
@@ -8319,6 +8382,7 @@ journalists:
   notes: MIT Technology Review news editor and author of The Download, MIT TR's flagship daily newsletter. Long UK tech journalism
     career. Founded Jeneo (tech diversity org). Based in London. UCL BA (Politics & East European Studies), City University
     London MA (Political Journalism).
+  multi_publication: true
 - name: Niall Firth
   multi_publication: true
   career:
@@ -8453,6 +8517,7 @@ journalists:
     from Wired (mid 2024) to Bloomberg represents brain drain from Condé Nast''s European coverage. She covered EU tech regulation
     (DSA, DMA), NATO tech, migration tech — topics where Wired''s framing of Big Tech intersects with European regulatory
     posture. Her replacement (if any) would indicate whether Wired is maintaining or deprioritizing EU regulatory coverage.'
+  multi_publication: true
 - career:
   - beat: internet culture, tech
     end: 2017-12
@@ -8510,6 +8575,7 @@ journalists:
     reporters leaving Condé Nast for specialized/subscriber-funded outlets. Her eventual landing at Consumer Reports (nonprofit)
     is a third distinct institutional frame — useful for comparing how the same reporter''s framing shifts across advertising-funded
     (Wired), subscriber-funded (The Information), and nonprofit (Consumer Reports) models.'
+  multi_publication: true
 - career:
   - beat: education
     event_type: hired
@@ -8556,6 +8622,7 @@ journalists:
     Beat spans genetics, biohacking, vaccine psychology, and reproductive health. Not Meta-specific but adds to multi-publication
     career dataset for DiD analysis. Gizmodo pipeline connection (same outlet that produced Katie Drummond, Dell Cameron,
     Dhruv Mehrotra). NYU BA (journalism, Middle Eastern studies, philosophy), Columbia journalism MA.
+  multi_publication: true
 - career:
   - beat: music
     event_type: hired
@@ -8593,6 +8660,7 @@ journalists:
     Daily newsletter team alongside David A. Graham. Covered crypto extensively — interviewed SBF weeks before arrest, catalogued
     his downfall. Not Meta-specific but covers tech broadly for the Daily. Tests how a crypto/music journalist adapts framing
     to Atlantic's institutional voice.
+  multi_publication: true
 - career:
   - beat: technology
     end: 2014-12
@@ -8652,6 +8720,7 @@ journalists:
     → Recode → Guardian (2015 West Coast bureau expansion trio) → Vice News → NYT → The Free Press (co-founder). Migration
     path shows Guardian → NYT pipeline. Politically shifted from progressive to ''anti-woke'' independent. Fulbright recipient.
     Born April 20, 1987, San Francisco. Education: Columbia University BA. Married Bari Weiss (2021), 2 children.'
+  multi_publication: true
 - career:
   - beat: state politics
     end: 2010-06
@@ -8705,6 +8774,7 @@ journalists:
     5 years) → Guardian (2015 West Coast bureau expansion trio) → Stanford Law → federal public defender. WSJ → Guardian pipeline.
     Short Guardian tenure (~1 year) but significant: covered Apple/FBI, first Tesla Autopilot death. Now assistant appellate
     federal defender in San Diego. Education: Northwestern (BS + MS Journalism), Stanford Law.'
+  multi_publication: true
 - career:
   - beat: lifestyle, DIY, homesteading
     end: 2019-06
@@ -8760,6 +8830,7 @@ journalists:
     editorial posture is uniform across all desks or concentrated in the investigative/news team. JournalistHunt total: 952+
     articles. Syndicated to Wired En Español, Ars Technica, WSJ, Business Insider, Wired Italia, Glamour, Flipboard, MSN,
     The Daily Beast.'
+  multi_publication: true
 - career:
   - beat: local news
     end: 1979-01
@@ -8843,6 +8914,7 @@ journalists:
     on the same subjects. If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta stories similarly; if
     beat-specific variation dominates, their framing should diverge significantly. This is a testable hypothesis for the DiD
     regression.'
+  multi_publication: true
 - career:
   - beat: general, business
     end: 2023-03
@@ -8950,6 +9022,7 @@ journalists:
         0 dedicated Meta AI business pieces. Third Gizmodo→WIRED migration under Barrett — adversarial instincts selectively
         channeled (applied to Meta, muted for OpenAI/Anthropic). CONTRAST with #60 (Hao target-shift) and #57 (Seetharaman
         frame-lock): Zeff shows FRAMING-shift — same companies, different treatment at different outlets.'
+  multi_publication: true
 - career:
   - beat: Apple, consumer technology
     end: 2009-01
@@ -9037,6 +9110,7 @@ journalists:
     Chen''s positions shifted in parallel, supporting the institutional-framing-dominance hypothesis. (5) COLUMN PIVOT: Tech
     Fix evolved from product troubleshooting (2015-2021) to societal critique (2022+), tracking the broader NYT editorial
     pivot toward adversarial tech coverage. Testable via pre/post tonal analysis anchored to the column''s stated reboot date.'
+  multi_publication: true
 - career:
   - beat: physics, quantum mechanics, condensed matter
     end: ~2022
@@ -9097,6 +9171,7 @@ journalists:
     Her physics background and quantum coverage create a testable specialization signal — does science expertise produce different
     framing than generalist tech reporting? (3) London rebuild context — she and Swash are the two editorial hires rebuilding
     Wired''s UK presence after the print edition cancellation and mass departures.'
+  multi_publication: true
 - career:
   - beat: English language teaching
     end: 2007-07
@@ -9200,6 +9275,7 @@ journalists:
     making her a useful baseline for measuring how other NYT reporters frame similar subjects. Key co-authorship: Adam Satariano
     (Brussels-based, EU tech regulation) — their joint bylines merge trade policy and regulatory coverage in a way that shapes
     how NYT frames US-EU tech tensions.'
+  multi_publication: true
 - career:
   - beat: general news, technology
     end: 2009-01
@@ -9343,6 +9419,7 @@ journalists:
     dynamics. KEY MEDIASCOPE VALUE: Mozur''s career arc — Hong Kong tabloid → Dow Jones Asia business press → WSJ → NYT —
     represents a migration through increasingly prestigious outlets, all Asia-focused, with growing institutional power behind
     his tech-geopolitics framing.'
+  multi_publication: true
 - career:
   - beat: technology, social media
     event_type: hired
@@ -9463,6 +9540,7 @@ journalists:
     Big Tech stories, including Meta; (3) China expertise provides non-Western analytical framework for US tech company coverage;
     (4) career arc through non-profit (Rest of World), broadcast (NBC), startup (Semafor), and legacy (Wired) outlets provides
     unusually broad institutional experience. Has appeared on NPR, CBS News, Good Morning America, BBC, CBC Radio, CNN.'
+  multi_publication: true
 - career:
   - beat: business, US affairs
     end: 2010-01
@@ -9508,6 +9586,7 @@ journalists:
     to Guardian (Scott Trust-owned) — diametrically opposite ownership models, enabling institutional culture analysis; (4)
     Pulitzer team membership (NSA surveillance reporting) establishes baseline adversarial-toward-government-surveillance
     posture that may transfer to Big Tech surveillance coverage.'
+  multi_publication: true
 - career:
   - beat: politics, economics
     end: '2012'
@@ -9714,6 +9793,7 @@ journalists:
     gave her government insider perspective before joining Wired. At Wired, already writing about Meta scam ad lawsuits —
     extending her original ProPublica Facebook beat. Multi-outlet career (ProPublica, The Markup, Wired) with FTC government
     detour creates a rich three-phase framing comparison. Paired with Dhruv Mehrotra at Wired for investigations.'
+  multi_publication: true
 - career:
   - beat: general business, women in business
     end: 2014-01
@@ -9802,6 +9882,7 @@ journalists:
     may modulate adversarial tone with financial literacy; (5) Business desk expansion under Schiffer now has Taylor (AI/work),
     Zeff (AI business), Matsakis + Kleeman (senior editors), Tiku (Big Tech), plus the unfilled chief business correspondent
     role.'
+  multi_publication: true
 - career:
   - beat: technology news
     end: 2014-06
@@ -9892,6 +9973,7 @@ journalists:
     studies). Regular on Wired Gadget Lab podcast and NPR. KEY for MediaScope: product review framing of Meta hardware — different
     analytical lens than investigative journalists but equally important for shaping consumer perception. Career almost entirely
     within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years at Digital Trends.'
+  multi_publication: true
 - beats:
   - ai_strategy
   - digital_product
@@ -9947,6 +10029,7 @@ journalists:
     analysis — he negotiates the deals that create (or don''t create) financial relationships between Guardian and AI companies.
     Guardian has set up an internal AI Council under his leadership. Former journalist turned executive — a "journalist-to-business"
     internal migration.'
+  multi_publication: true
 - career:
   - beat: education
     end: 1999-01
@@ -10037,6 +10120,7 @@ journalists:
     philosophy directly shapes what kind of AI journalism gets produced and how much of it — his content reduction project
     means fewer but more impactful stories, counteracting the volume incentive that degrades quality; (4) His WAN-IFRA and
     Reuters Institute speaking roles propagate Guardian''s AI editorial philosophy to other newsrooms globally.'
+  multi_publication: true
 - career:
   - beat: culture, media, digital life
     end: 2015-01
@@ -10125,6 +10209,7 @@ journalists:
     make her a potential amplifier of Drummond-era editorial posture through story selection and development rather than direct
     bylines. KEY for MediaScope: her editorial influence is indirect but structural — she does not write about Meta, but she
     shapes the features that do. Appeared on Tasteland podcast (YouTube) discussing her Wired role.'
+  multi_publication: true
 - career:
   - beat: books, publishing
     end: 2001-01
@@ -10170,6 +10255,7 @@ journalists:
     whether NYT''s institutional voice constrains or amplifies adversarial framing vs his prior outlets (WaPo, LA Times).
     His trial coverage is critical because MDL 3047 (2,527+ claims, 42 state AGs active) is the largest liability threat to
     Meta and overlaps heavily with our litigation funding research.'
+  multi_publication: true
 - career:
   - beat: general web reporting
     end: 2013-01
@@ -10251,6 +10337,7 @@ journalists:
     which angles reporters pursue, and how pieces are framed. His editorial choices — AI Watchdog, DOGE investigations, Microsoft
     fossil-fuel — reveal an institutional bias toward tech-accountability journalism. Understanding his editorial influence
     is critical for modeling Atlantic''s coverage patterns. NYU BA Journalism + Sociology.'
+  multi_publication: true
 - career:
   - beat: culture, music, humor
     end: 2012-01
@@ -10337,6 +10424,7 @@ journalists:
     writers who are not part of Drummond''s adversarial-journalism pipeline adopt the institutional adversarial posture in
     their coverage, or maintain a distinct voice. Her Rolling Stone/NYMag background means she brings magazine-feature editorial
     instincts rather than scoops-and-sources investigative DNA.'
+  multi_publication: true
 - career:
   - beat: technology, future
     end: 2018-09
@@ -10432,6 +10520,7 @@ journalists:
     ANALYSIS: Outline → Motherboard → BuzzFeed News → BI → Wired is a 5-outlet migration that consistently moves toward more
     institutional, higher-reach platforms while maintaining the same adversarial framing. At each outlet, she covered the
     same beat (surveillance/platforms/corporate power) with increasing institutional backing.'
+  multi_publication: true
 - career:
   - beat: general assignment, city reporting
     end: 2016-05
@@ -10535,6 +10624,7 @@ journalists:
     moderation stories.
 
     DATE CORRECTION: Start date corrected from 2026-03-24 to 2025-03-24 per TalkingBizNews and E&P source documents.'
+  multi_publication: true
 - career:
   - beat: music, culture
     end: 1996-01
@@ -10645,6 +10735,7 @@ journalists:
     Tests whether a single constructive voice can coexist with institutional adversarial culture, or whether the editorial
     environment modulates his framing over time. His WaPo AI column → Atlantic migration also provides a natural experiment
     for the DiD framework.'
+  multi_publication: true
 - career:
   - beat: political science, government
     end: 2015-05
@@ -10765,6 +10856,7 @@ journalists:
     expertise produces structurally different tech framing than traditional tech-beat reporters. NOTE: AI-generated "Consulting
     Times" article fabricates Harvard Law JD, Kavanaugh clerkship, Kirkland & Ellis tenure — all false. Real education: Wesleyan
     BA Political Science 2015.'
+  multi_publication: true
 - career:
   - beat: general
     end: 2008-06
@@ -10835,6 +10927,7 @@ journalists:
     Atlantic staff writer (Jun 2025). Covers politics, government, presidential power. Less directly relevant to tech/Meta
     coverage but tests whether WaPo→Atlantic migration produces framing shifts in political coverage of tech regulation and
     government oversight of Big Tech.'
+  multi_publication: true
 - career:
   - beat: general
     end: 2003-12
@@ -10921,6 +11014,7 @@ journalists:
     staff writer (Jul 2025) covering national security and Defense Department. Appeared on NPR Fresh Air (2026). Crosses 6
     publications — significant for DiD migration analysis, especially BuzzFeed News → WSJ → Atlantic path which spans digital-native,
     legacy business press, and essay-driven magazine cultures.'
+  multi_publication: true
 - career:
   - beat: humor, internet culture
     end: ~2019
@@ -11054,6 +11148,7 @@ journalists:
         when built by non-Meta companies (TranscribeGlass) but monetization-criticism framing when built by Meta (Conversation
         Focus), despite serving the same functional use case.'
       test_file: tests/test_boone_ashworth_cross_entity_aug12.py
+  multi_publication: true
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
   career:
@@ -11229,6 +11324,7 @@ journalists:
     tech accountability framing. (5) The firing and NLRB case provide a natural experiment: does Lahut coverage of Meta/tech
     at Wired differ from his post-firing freelance coverage of the same companies? If his framing was shaped by Wired institutional
     voice, it should change; if it was personal, it should persist.'
+  multi_publication: true
 - career:
   - beat: journalism
     end: '1997'
@@ -11304,6 +11400,7 @@ journalists:
   source_urls:
   - https://www.technologyreview.com/author/james-temple/
   - https://www.theverge.com/authors/james-temple
+  multi_publication: true
 - career:
   - beat: corporate law, California
     end: '2019'
@@ -11394,6 +11491,7 @@ journalists:
     represents downward positional mobility (editor → writer) but upward prestige mobility (TNR → Atlantic), which may affect
     framing dynamics; (4) Coverage of Elon Musk, NASA, and tech-politics intersection provides direct comparison material
     with Wired''s tech coverage.'
+  multi_publication: true
 - career:
   - beat: economics, business, culture
     end: 2025-06
@@ -11438,6 +11536,7 @@ journalists:
     vs. individual framing comparison; (3) *Abundance* co-authorship with Klein reveals a techno-optimist individual stance
     that may contrast with Atlantic''s institutional tech-skepticism; (4) Single-publication career (unlike most tracked journalists)
     means any framing changes post-departure can be attributed more cleanly to institutional effects.'
+  multi_publication: true
 - career:
   - beat: technology
     end: '2013'
@@ -11490,6 +11589,7 @@ journalists:
     departure represents the near-total dissolution of Wired UK''s autonomous editorial chain. Not currently at a tracked
     publication, but his decade at Wired makes him significant for institutional framing analysis during the Williams/pre-Drummond-centralization
     era vs. the current Barrett-led global structure.'
+  multi_publication: true
 - career:
   - beat: general news
     end: '1993'
@@ -11607,6 +11707,7 @@ journalists:
     at Atlantic shapes how AI/tech stories are framed when they touch national security (export controls, defense AI, surveillance).
     The WSJ → Atlantic pipeline (Beckett + Bobrow + Oremus-via-WaPo) is the single largest institutional talent flow into
     Atlantic''s current editorial structure.'
+  multi_publication: true
 - career:
   - beat: technology, consumer electronics, product reviews
     end: 2019-06
@@ -11711,6 +11812,7 @@ journalists:
   - https://gizmodo.com/author/victoria-song
   - https://www.pcmag.com/author/victoria-song
   - https://muckrack.com/victoria-song/articles
+  multi_publication: true
 - career:
   - beat: daily news
     end: 2015
@@ -11765,6 +11867,7 @@ journalists:
     — tests whether framing conventions differ in podcast vs. print contexts; (3) Editorial gate role (senior editor across
     shows) means her institutional framing preferences shape multiple Atlantic journalists'' output, not just her own; (4)
     Previous Radio Atlantic involvement (2022 relaunch) means she has prior Atlantic institutional exposure before full hire.'
+  multi_publication: true
 - career:
   - beat: campus, economics
     end: 2016
@@ -11833,6 +11936,7 @@ journalists:
     quantitative rigor that may resist institutional framing pressures; (3) Washington bureau chief → staff writer is a hierarchical
     step down in title but up in individual voice — tests whether moving from editorial-management to individual-contributor
     changes framing patterns; (4) His New Yorker freelance work provides a third institutional sample point.'
+  multi_publication: true
 - career:
   - beat: campus
     end: 2001
@@ -11900,6 +12004,7 @@ journalists:
     broadcast framing bleeds into print; (3) His AP training in neutral wire-service style provides a baseline for measuring
     institutional drift at each subsequent publication; (4) White House beat continuity across 3 publications (AP, Politico,
     Atlantic) isolates institutional effects from beat effects.'
+  multi_publication: true
 - career:
   - beat: general assignment
     end: 2008
@@ -11973,6 +12078,7 @@ journalists:
     change between first and second WSJ tenure? (2) Wire → business press → cable news → business press → essay magazine is
     the widest institutional range alongside Lemire; (3) National security beat is directly relevant to AI/military/surveillance
     coverage at the Atlantic; (4) International formation (Iraq, Egypt, Pakistan, UAE) provides non-Western framing baseline.'
+  multi_publication: true
 - career:
   - beat: culture, politics, policy
     end: 2018
@@ -12006,6 +12112,7 @@ journalists:
   notes: 'MIGRATION: Economist → WSJ → Atlantic (2025). Editor role — editorial gate function shapes framing across multiple
     writers'' output. ANALYTICAL VALUE: Like Kahloon, trained in Economist''s anonymous-byline culture. Editor role means
     institutional framing preferences propagate through her editing, not just her bylines.'
+  multi_publication: true
 - career:
   - beat: international affairs, national security, Russia/Ukraine
     end: 2025
@@ -12029,6 +12136,7 @@ journalists:
   notes: 'MIGRATION: Time → Atlantic (2025). Long-time Time staff and foreign correspondent. National security team hire alongside
     Paul Beckett and Vivian Salama. ANALYTICAL VALUE: Time → Atlantic migration tests institutional framing shift from news-magazine
     to essay-magazine culture.'
+  multi_publication: true
 - career:
   - beat: housing, infrastructure, urban life
     end: 2025
@@ -12054,6 +12162,7 @@ journalists:
   name: Henry Grabar
   notes: 'MIGRATION: Slate → Atlantic (Jan 2026). Policy/urban planning journalist. Author of "Paved Paradise: How Parking
     Explains the World" (2023).'
+  multi_publication: true
 - career:
   - beat: higher education, science, academia
     end: 2025
@@ -12079,6 +12188,7 @@ journalists:
   name: Tom Bartlett
   notes: 'MIGRATION: Chronicle of Higher Education → Atlantic (2025). 22-year single- publication career — the longest in
     the dataset alongside Derek Thompson (17yr).'
+  multi_publication: true
 - career:
   - beat: culture, humor, features
     end: 2015
@@ -12120,6 +12230,7 @@ journalists:
   name: Caity Weaver
   notes: 'MIGRATION: NYT Magazine → Atlantic (2025). Features/culture writer known for creative, humorous nonfiction. Her
     interests include "glitter and pennies" (Goldberg announcement).'
+  multi_publication: true
 - career:
   - beat: international, conflict, immigration
     end: 2026
@@ -12144,6 +12255,7 @@ journalists:
   name: Kevin Sieff
   notes: 'MIGRATION: Washington Post → Atlantic (spring 2026). 15-year WaPo veteran with overseas postings in Kabul, Nairobi,
     Mexico City, Barcelona.'
+  multi_publication: true
 - career:
   - beat: literary features
     end: 2016-12
@@ -12190,6 +12302,7 @@ journalists:
     the rare McSweeney''s/Believer → mainstream tech pipeline. Her Wired tenure produced NMA-finalist features. Departure
     from Wired under Drummond era is analytically significant — tests whether features talent is being pushed out in favor
     of news/adversarial coverage pivot.'
+  multi_publication: true
 - career:
   - beat: health, science, environment, climate, space, energy, robotics
     end: 2025-12
@@ -12253,6 +12366,7 @@ journalists:
     pub) but his exit is part of the systematic Wired UK dismantlement under Drummond''s global editorial structure. His science
     desk role was NOT directly replaced — Brian Kahn (Bloomberg, hired May 2026) is US-based senior editor on science desk
     reporting to Tim Marchman, not a UK replacement.'
+  multi_publication: true
 - career:
   - beat: social media, multiplatform strategy
     end: 2025-10-31
@@ -12297,6 +12411,7 @@ journalists:
     Her departure coincided with the broader Wired staff churn in late 2025 (7 London staff departed, UK print cancelled).
     She was a non-editorial leadership role but her social strategy shaped how Wired stories reached audiences and which journalists
     became "influencer" personalities for the brand.'
+  multi_publication: true
 - career:
   - beat: food studies, public health
     event_type: education
@@ -12377,6 +12492,7 @@ journalists:
     coverage. Her geopolitical-economic framing lens is distinct from both adversarial-editorial (Wired/Atlantic) and consumer-product
     (CNET/Verge) approaches. Covers the supply chain and trade dimensions of Big Tech that intersect with Meta''s hardware
     strategy but rarely appear in Meta''s US press coverage.'
+  multi_publication: true
 - analytical_value: 'WAPO META COVERAGE LOSS: Nix''s layoff represents the elimination of Washington Post''s dedicated Meta
     reporter during the February 2026 mass layoffs. The WaPo tech desk collapse (80 → 33 staff, 14 tech reporters cut, SF
     bureau gutted) is the most significant loss of tech journalism capacity at a major newspaper since the 2023 BuzzFeed News
@@ -12476,6 +12592,7 @@ journalists:
     WaPo was the strongest ownership-conflict-free comparison outlet for measuring Wired/Condé Nast coverage posture (Bezos-owned,
     no AI licensing conflicts, no Reddit/Advance stake). Contact: naomi.nix@washpost.com, Signal: naominixwrites.66, Bluesky:
     @naominix.bsky.social.'
+  multi_publication: true
 - career:
   - beat: Apple, consumer tech
     end: '2015'
@@ -12667,7 +12784,7 @@ journalists:
     source_url: https://voxmedia.com/2024/5/15/the-verge-notepad-newsletter-tom-warren
     start: 2012-01
   education: []
-  multi_publication: false
+  multi_publication: true
   name: Tom Warren
   source_urls:
   - https://voxmedia.com/2024/5/15/the-verge-notepad-newsletter-tom-warren
@@ -12994,6 +13111,7 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/cnbc-hires-field-to-cover-tech/
   - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
   - https://theorg.com/org/the-verge/org-chart/hayden-field
+  multi_publication: true
 - career:
   - beat: journalism, political science
     end: '2017'
@@ -13457,6 +13575,7 @@ journalists:
     third Tarbell fellow tracked (alongside Elissa Welle at The Verge and Michelle Kim at MIT Tech Review). Her non-tech-press
     background and Tarbell training make her a strong natural experiment for measuring whether Tarbell fellowship produces
     a consistent framing signature across different institutional contexts (Guardian vs Verge vs MIT TR).'
+  multi_publication: true
 - career:
   - beat: science, technology, politics
     end: '2003'
@@ -13793,7 +13912,7 @@ journalists:
     role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/reynolds-covers-food-biodiversity-climate-change-wired/
     start: 2021-11
-  multi_publication: false
+  multi_publication: true
   name: Matt Reynolds
   notes: 'Senior writer at Wired covering climate, food, and biodiversity. London-based. Long Wired tenure from intern through
     science editor to senior writer. Oxford graduate. Author of "The Future of Food" (2021). Beat is climate/food/energy —
@@ -14024,7 +14143,7 @@ journalists:
     role: director_consumer_tech_culture
     source_url: https://talkingbiznews.com/media-news/wired-names-barrett-its-executive-editor/
     start: 2024-01
-  multi_publication: false
+  multi_publication: true
   name: Michael Calore
   notes: 'Wired lifer — one of the longest-tenured editorial staff at the publication, spanning the Lycos/Wired News era (pre-2006),
     the Condé Nast reunification (2006), the Webmonkey revival (2008), and every EIC transition from Chris Anderson through
@@ -14972,6 +15091,7 @@ journalists:
   - https://talkingbiznews.com/media-news/the-verge-hires-heath-lawler-keck/
   - https://engadget.com/2011-08-31-growing-up-geek-richard-lawler.html
   - https://muckrack.com/richardlawler
+  multi_publication: true
 - career:
   - beat: research, fact-checking
     end: '2010'
@@ -15778,6 +15898,7 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/wsjs-facebook-reporter-moving-to-enterprise-beat/
   - https://muckrack.com/deepa-seetharaman
   - https://business.wisc.edu/news/wisconsin-school-of-business-hosts-award-winning-journalist-deepa-seetharaman/
+  multi_publication: true
 - awards:
   - for: As editor, oversaw Polk-winning investigative journalism at The Intercept
     name: George Polk Award
@@ -16588,6 +16709,7 @@ journalists:
   source_urls:
   - https://journalisthunt.com/wes-davis
   - https://muckrack.com/wes-davis-42/articles
+  multi_publication: true
 - career:
   - beat: audio, TV equipment, consumer electronics, smart home
     end: '2019'
@@ -16623,6 +16745,7 @@ journalists:
   source_urls:
   - https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
   - https://muckrack.com/jon-porter-1/articles
+  multi_publication: true
 - career:
   - beat: privacy, politics, surveillance, cybersecurity
     event_type: hired
@@ -17317,6 +17440,7 @@ journalists:
   - https://journalisthunt.com/journalists/umar-shakir
   - https://muckrack.com/umar-shakir/articles
   - https://buzzsumo.com/journalist/umar-shakir
+  multi_publication: true
 - career:
   - beat: consumer electronics, personal audio, home theater, smartphones
     end: '2025'
@@ -17740,6 +17864,7 @@ journalists:
   source_urls:
   - https://thenewjournalatyale.com/author/tina-li/
   - https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
+  multi_publication: true
 - name: Parmy Olson
   multi_publication: true
   beats:
@@ -18223,7 +18348,7 @@ journalists:
   - wearables
   - android_tv
   - chromecast
-  multi_publication: false
+  multi_publication: true
   name: Ben Schoon
   notes: 'Key career: independent blog → 9to5Google (10-year tenure). Self-taught tech journalist with 14,500+ articles. Based
     in Winston-Salem, NC. Most prolific smart glasses aggregator in the Android press ecosystem. His coverage is significant
@@ -18352,41 +18477,41 @@ journalists:
     connection. MECHANISM #113 (Aug 15, 2026): Bell applies fundamentally different INVESTIGATIVE METHODOLOGIES by entity.
     Meta: ACTIVE ADVERSARIAL TESTING — purchased LED-blocking products ($2-$17), tested bypass on Ray-Ban Meta and Oakley
     Vanguard, embedded YouTube demonstration videos, interviewed 5 creators about chilling effect, dedicated "The baggage"
-    section in review, 5+ adversarial privacy articles. Snap: PASSIVE CEO INTERVIEW at AWE 2026 — accepted Spiegel''s
-    "computer, not AI glasses" framing without challenge, zero privacy testing, zero LED bypass investigation, zero data
-    retention scrutiny. Even in the Snap article, Meta is the villain ("There''s the Meta of it all"). Xreal/Qualcomm:
-    neutral product news, zero privacy vocabulary. The methodology asymmetry is the key finding — same journalist, same beat,
-    different investigative standards depending on entity identity.'
+    section in review, 5+ adversarial privacy articles. Snap: PASSIVE CEO INTERVIEW at AWE 2026 — accepted Spiegel''s "computer,
+    not AI glasses" framing without challenge, zero privacy testing, zero LED bypass investigation, zero data retention scrutiny.
+    Even in the Snap article, Meta is the villain ("There''s the Meta of it all"). Xreal/Qualcomm: neutral product news, zero
+    privacy vocabulary. The methodology asymmetry is the key finding — same journalist, same beat, different investigative
+    standards depending on entity identity.'
   mechanism_113_detail:
     meta_adversarial_articles:
-    - title: 'A $2 sticker let me bypass the Meta Glasses'' anti-creep feature'
+    - title: A $2 sticker let me bypass the Meta Glasses' anti-creep feature
       date: '2026-07-30'
       type: active_adversarial_testing
       url: https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/
     - title: 'Meta Glasses review: A bit less polish, a lot more baggage'
-      date: '2026-07'
+      date: 2026-07
       type: review_with_adversarial_section
       url: https://www.engadget.com/2217722/meta-glasses-review/
-    - title: 'The Meta Glasses backlash is changing how (or if) people use them'
-      date: '2026-07'
+    - title: The Meta Glasses backlash is changing how (or if) people use them
+      date: 2026-07
       type: backlash_amplification
       url: https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/
-    - title: 'Are Ray-Ban Meta glasses a privacy risk? Here''s what you should know'
-      date: '2026-08'
+    - title: Are Ray-Ban Meta glasses a privacy risk? Here's what you should know
+      date: 2026-08
       type: dedicated_privacy_investigation
-    - title: 'Activist group takes over London bus stops with fake Meta Glasses ads'
-      date: '2026-07'
+    - title: Activist group takes over London bus stops with fake Meta Glasses ads
+      date: 2026-07
       type: activist_amplification
     snap_neutral_articles:
-    - title: 'Evan Spiegel doesn''t want you to call Snap Specs AI glasses'
-      date: '2026-06'
+    - title: Evan Spiegel doesn't want you to call Snap Specs AI glasses
+      date: 2026-06
       type: passive_ceo_interview
       url: https://www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
     xreal_neutral_articles:
-    - title: 'Xreal officially reveals its Android XR Aura glasses'
+    - title: Xreal officially reveals its Android XR Aura glasses
       type: neutral_product_news
     qualcomm_neutral_articles:
-    - title: 'Qualcomm unveils its Snapdragon Reality Elite chip'
+    - title: Qualcomm unveils its Snapdragon Reality Elite chip
       type: neutral_tech_news
   source_urls:
   - https://muckrack.com/karissa-bell/articles
@@ -18648,6 +18773,7 @@ journalists:
         finding: Claude positioned as most balanced chatbot -- 57% balanced responses, 0% exclusively right-leaning
         significance: 'First individual-level evidence testing Mechanism #65 ownership chain predictions'
         source: https://noah-news.com/washington-post-finds-ai-chatbots-still-struggle-with-political-neutrality-favou/
+  multi_publication: true
 - name: Adrienne So
   publications:
   - name: WIRED
@@ -18778,7 +18904,6 @@ journalists:
       samsung_coverage_independent: 0
       snap_coverage_independent: neutral
       openai_coverage_independent: curious
-
 - name: Scott Stein
   career:
   - beat: XR, VR, AR, wearables, smart glasses
@@ -18786,27 +18911,31 @@ journalists:
     publication: cnet
     role: senior_editor
     start: '2012'
-    notes: '15+ years covering XR, VR, AR at CNET. Editor-at-large / senior editor
-      for XR and wearable tech. One of the most prolific smart glasses reviewers in
-      tech journalism. CNET owned by Ziff Davis since Q3 2024 (previously Red Ventures
-      2020-2024, CBS Interactive before that).'
+    notes: 15+ years covering XR, VR, AR at CNET. Editor-at-large / senior editor for XR and wearable tech. One of the most
+      prolific smart glasses reviewers in tech journalism. CNET owned by Ziff Davis since Q3 2024 (previously Red Ventures
+      2020-2024, CBS Interactive before that).
   competitor_coverage:
     cross_entity_analysis:
       mechanism_id: 106
       pattern: enthusiasm_gradient_with_privacy_deferral
-      description: 'Applies entity-selective enthusiasm gradient. In same Google I/O
-        article (May 19, 2026): Google/Samsung glasses receive superlative promotional
-        language ("wowed," "best smart glasses," "redefine") while Meta gets single-sentence
-        privacy dismissal ("muddy lines"). Google gets executive quotes on privacy planning;
-        Meta gets no defense. CNET depends on Google for search traffic revenue.'
+      description: 'Applies entity-selective enthusiasm gradient. In same Google I/O article (May 19, 2026): Google/Samsung
+        glasses receive superlative promotional language ("wowed," "best smart glasses," "redefine") while Meta gets single-sentence
+        privacy dismissal ("muddy lines"). Google gets executive quotes on privacy planning; Meta gets no defense. CNET depends
+        on Google for search traffic revenue.'
       google_coverage:
         tone: 0.65
-        vocabulary: ['wowed', 'best smart glasses out there', 'redefine what smart glasses can be']
+        vocabulary:
+        - wowed
+        - best smart glasses out there
+        - redefine what smart glasses can be
         privacy_treatment: deferral_with_exec_quotes
         adversarial_investigation: false
       meta_coverage:
-        tone: -0.10
-        vocabulary: ['muddy lines', 'privacy problems', 'janky']
+        tone: -0.1
+        vocabulary:
+        - muddy lines
+        - privacy problems
+        - janky
         privacy_treatment: single_sentence_dismissal
         adversarial_investigation: false
       snap_coverage:
@@ -18818,7 +18947,6 @@ journalists:
       google_search_dependency: high
       samsung_advertising: $9.7B annual
       meta_relationship: none
-
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
@@ -18849,12 +18977,12 @@ jacob_krol:
     period: previous
   smart_glasses_coverage:
     samsung_google_android_xr:
-      headline: "Samsung's prototype XR glasses hint at the future of smart frames, and I'm closer to all-in than ever before"
+      headline: Samsung's prototype XR glasses hint at the future of smart frames, and I'm closer to all-in than ever before
       tone: aspirational
       privacy_vocabulary_count: 0
       mechanism_id: 115
     meta_ray_ban_mentioned:
-      quote: "I've long worn Meta Ray-Bans and enjoy those for snapping unique shots"
+      quote: I've long worn Meta Ray-Bans and enjoy those for snapping unique shots
       framing: casual_positive
       privacy_concern_raised: false
     gemini_framing:
@@ -18866,8 +18994,8 @@ jacob_krol:
     - genuinely helpful
     - neat
     - exciting
-  mechanism_ids: [115]
-
+  mechanism_ids:
+  - 115
 hamish_hector:
   name: Hamish Hector
   current_role: Senior Staff Writer
@@ -18876,7 +19004,7 @@ hamish_hector:
   beat: VR, AR, Wearables, Smart Glasses
   smart_glasses_coverage:
     meta_ray_ban_sales:
-      headline: "The Ray-Ban Meta smart glasses are majorly popular, which is exciting and frightening in equal measure"
+      headline: The Ray-Ban Meta smart glasses are majorly popular, which is exciting and frightening in equal measure
       tone: alarm_hedged
       privacy_vocabulary:
       - frightening
@@ -18889,8 +19017,8 @@ hamish_hector:
       google_glass_assault_stories_invoked: true
       mechanism_id: 115
     samsung_google_coverage: none_found
-  mechanism_ids: [115]
-
+  mechanism_ids:
+  - 115
 philip_berne:
   name: Philip Berne
   current_role: Editor
@@ -18922,7 +19050,7 @@ philip_berne:
   - Google AI Essentials
   smart_glasses_coverage:
     meta_ray_ban_creep_factor:
-      headline: "The Ray-Ban Meta camera glasses feel inevitable but I'm worried about the high creep factor"
+      headline: The Ray-Ban Meta camera glasses feel inevitable but I'm worried about the high creep factor
       tone: alarm_dominant
       privacy_vocabulary:
       - worried
@@ -18941,7 +19069,8 @@ philip_berne:
     former_samsung_employee: true
     samsung_tenure: until 2017
     former_apple_employee: true
-    note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero alarm
+    note: Former Samsung PR employee covers Meta with alarm vocabulary but mentions Samsung as future competitor with zero
+      alarm
 michael_l_hicks:
   career:
   - beat: wearables, VR, fitness, smart home
@@ -18949,21 +19078,21 @@ michael_l_hicks:
     publication: freelance
     role: freelance_writer
     start: '2015'
-    notes: 'Freelanced for multiple outlets including TechRadar (Future plc), Wareable, Digital Trends, Windows Central.
-      TechRadar freelance work places Hicks within Future plc ecosystem before Android Central hire.'
+    notes: Freelanced for multiple outlets including TechRadar (Future plc), Wareable, Digital Trends, Windows Central. TechRadar
+      freelance work places Hicks within Future plc ecosystem before Android Central hire.
   - beat: wearables, VR, fitness, smart home
     end: present
     publication: android-central
     role: senior_editor_wearables
     start: '2020'
-    notes: 'Senior Editor for Wearables at Android Central (Future plc). Covers smart glasses, fitness trackers, VR headsets.
-      Career entirely within Future plc ecosystem (TechRadar freelance → Android Central).'
+    notes: Senior Editor for Wearables at Android Central (Future plc). Covers smart glasses, fitness trackers, VR headsets.
+      Career entirely within Future plc ecosystem (TechRadar freelance → Android Central).
   multi_publication: false
   name: Michael L. Hicks
-  notes: 'Senior Editor for Wearables at Android Central (Future plc). English degree, MA Publishing & Writing.
-    Career within Future plc ecosystem: freelanced at TechRadar before Android Central. Mechanism #116 documents
-    bifurcated privacy standards for camera-equipped smart glasses — dedicated adversarial "Privacy concerns" section
-    with family-sourced quotes for Meta Ray-Ban vs ZERO privacy vocabulary for Google Android XR from private demo.'
+  notes: 'Senior Editor for Wearables at Android Central (Future plc). English degree, MA Publishing & Writing. Career within
+    Future plc ecosystem: freelanced at TechRadar before Android Central. Mechanism #116 documents bifurcated privacy standards
+    for camera-equipped smart glasses — dedicated adversarial "Privacy concerns" section with family-sourced quotes for Meta
+    Ray-Ban vs ZERO privacy vocabulary for Google Android XR from private demo.'
   education:
   - degree: BA
     field: English
@@ -18975,12 +19104,12 @@ michael_l_hicks:
     cross_entity_analysis:
       mechanism_id: 116
       pattern: privileged_access_reciprocity_suppression
-      description: 'Applies BIFURCATED privacy standards to camera-equipped smart glasses based on entity. Meta Ray-Ban
-        review includes dedicated "Privacy concerns" section with 6 adversarial terms and 4 family-sourced quotes. Google
-        Android XR coverage from hour-long private demo contains ZERO privacy vocabulary despite identical camera + cloud
-        Gemini AI. Privacy vocabulary delta: 6 vs 0. Tone delta: 0.60. Career entirely within Future plc (TechRadar freelance
-        → Android Central Senior Editor). Extends cross-brand chain: Tom''s Guide EIC (#110) + TechRadar (#115) + Android
-        Central (#116), all underpinned by Future plc triple-layer Google financial dependency (#114).'
+      description: 'Applies BIFURCATED privacy standards to camera-equipped smart glasses based on entity. Meta Ray-Ban review
+        includes dedicated "Privacy concerns" section with 6 adversarial terms and 4 family-sourced quotes. Google Android
+        XR coverage from hour-long private demo contains ZERO privacy vocabulary despite identical camera + cloud Gemini AI.
+        Privacy vocabulary delta: 6 vs 0. Tone delta: 0.60. Career entirely within Future plc (TechRadar freelance → Android
+        Central Senior Editor). Extends cross-brand chain: Tom''s Guide EIC (#110) + TechRadar (#115) + Android Central (#116),
+        all underpinned by Future plc triple-layer Google financial dependency (#114).'
       meta_coverage:
         articles: 1
         tone_score: -0.15

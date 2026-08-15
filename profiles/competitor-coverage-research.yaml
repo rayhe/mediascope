@@ -11534,6 +11534,7 @@ cross_publication_findings:
       - 'https://www.kaspersky.com/blog/meta-smart-glasses-nametag-privacy-concerns/56104/'
       - 'https://www.digit.in/features/general/claude-ai-has-functional-emotions-that-influence-behaviour-anthropic-study-finds.html'
   mechanism_119_matt_burgess_cross_entity_ceo_attribution_remediation:
+    mechanism_id: 119
     title: 'Matt Burgess (WIRED UK) Cross-Entity CEO Attribution and Remediation Framing Asymmetry'
     discovery_date: '2026-08-15'
     asymmetry_score: 0.88
