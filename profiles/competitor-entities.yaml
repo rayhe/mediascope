@@ -3763,7 +3763,7 @@ entities:
     ziff_davis_triple_squeeze_mechanism_108:
       mechanism_id: 108
       date_analyzed: '2026-08-14'
-      publication_owner: Ziff Davis (NASDAQ: ZD)
+      publication_owner: 'Ziff Davis (NASDAQ: ZD)'
       publications: [CNET, ZDNET, PCMag, Mashable]
       finding_summary: 'Ziff Davis faces a "triple squeeze" of simultaneous financial pressures
         predicting entity-selective coverage: (1) Google existential dependency — 40%+ traffic
@@ -4981,6 +4981,30 @@ entities:
     source_urls:
     - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
     - https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/
+  yahoo_apollo:
+    display_name: Yahoo (Apollo Global Management)
+    aliases:
+    - TechCrunch
+    - Yahoo
+    - Apollo
+    techcrunch_privacy_indictment_mechanism_104:
+      mechanism_id: 104
+      date_analyzed: '2026-08-14'
+      publication: TechCrunch
+      ownership_chain: 'TechCrunch → Yahoo → Verizon Media (sold 2021) → Apollo Global Management (majority owner since Sep 2021)'
+      finding_summary: 'TechCrunch published adversarial privacy-improvement-as-indictment
+        coverage of Meta glasses on Jul 8, 2026, the same day Meta shipped its v26 LED
+        anti-tamper update. Samsung Galaxy Glasses launched 14 days later with identical
+        hardware and zero adversarial coverage. Apollo Global Management co-financed
+        $35B AI XPV Platform for Anthropic/OpenAI and $3.4B for xAI chip leasing — $38B+
+        total, the largest documented financial link between a publication owner and
+        Meta AI competitors.'
+      apollo_ai_financing_total_b: 38.4
+      related_mechanisms:
+      - 93
+      - 89
+      - 95
+      - 100
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

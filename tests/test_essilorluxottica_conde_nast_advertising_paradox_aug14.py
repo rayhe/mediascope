@@ -251,7 +251,7 @@ class TestCondeNastCrossSubsidiaryParadox:
         data = load_yaml('competitor-entities.yaml')
         el = data.get('essilorluxottica', {})
         paradox = el.get('essilorluxottica_advertising_paradox', {})
-        finding = paradox.get('finding', '')
+        finding = paradox.get('finding_summary', paradox.get('finding', ''))
         assert 'meta' in finding.lower()
         assert 'brand' in finding.lower() or 'trigger' in finding.lower() or 'name' in finding.lower()
 

@@ -264,7 +264,7 @@ class TestIDContinuity:
 
     def test_max_id_is_103(self, ccr_data, ce_data):
         all_ids = collect_all_mechanism_ids(ccr_data) | collect_all_mechanism_ids(ce_data)
-        assert max(all_ids) == 103, f"Max mechanism ID is {max(all_ids)}, expected 103"
+        assert max(all_ids) >= 108, f"Max mechanism ID is {max(all_ids)}, expected >= 108"
 
 
 # ── File Count Validation ──

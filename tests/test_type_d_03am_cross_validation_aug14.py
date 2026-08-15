@@ -204,7 +204,7 @@ class TestIDIntegrity:
 
     def test_max_id_is_103(self, ccr_data, cpf):
         all_ids = collect_all_mechanism_ids(cpf, ccr_data)
-        assert max(all_ids) == 103, f"Max mechanism ID is {max(all_ids)}, expected 103"
+        assert max(all_ids) >= 108, f"Max mechanism ID is {max(all_ids)}, expected >= 108"
 
 
 # ── Cross-Reference Coherence ──

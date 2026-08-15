@@ -1617,6 +1617,19 @@ cross_publication_findings:
       relationship: '#95 Gizmodo same-chip — #104 extends same-chip observation to TechCrunch/Yahoo/Apollo'
     - mechanism_id: 100
       relationship: '#100 News Corp triple revenue — #104 adds private equity financing as new financial relationship archetype'
+    testable_predictions:
+    - id: tc_samsung_post_launch
+      prediction: TechCrunch will NOT publish adversarial privacy investigations of Samsung Galaxy Glasses
+        within 90 days of Samsung launch (Jul 22 2026), despite identical Snapdragon AR1 camera hardware
+    - id: apollo_portfolio_coverage_softness
+      prediction: TechCrunch coverage of Apollo portfolio AI companies (Anthropic compute, xAI chips)
+        will be neutral-to-positive, lacking the adversarial framing applied to Meta privacy improvements
+    - id: yahoo_improvement_dismissal_pattern
+      prediction: Future Meta privacy improvements (LED updates, camera restrictions, data retention
+        transparency) will be framed as cynical or insufficient rather than substantive
+    - id: pe_ownership_editorial_correlation
+      prediction: Other PE-owned tech publications whose parent funds AI competitors will show
+        similar coverage asymmetry toward Meta vs the funded competitors
     source_urls:
     - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
     - https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e
@@ -10054,6 +10067,56 @@ cross_publication_findings:
     - 76
     - 89
     - 91
+  ziff_davis_triple_squeeze_financial_architecture:
+    mechanism_id: 108
+    date_added: '2026-08-14'
+    discovery_date: '2026-08-14'
+    finding_type: corporate_financial_incentive_architecture
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: 'Ziff Davis (NASDAQ: ZD)'
+    publications: [CNET, ZDNET, PCMag, Mashable]
+    entities: [google, openai, meta, samsung]
+    iteration: 109
+    test_file: tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py
+    finding_summary: 'Ziff Davis (NASDAQ: ZD, ~$2B market cap) faces a "triple squeeze"
+      of simultaneous financial pressures predicting entity-selective coverage: (1) Google
+      existential dependency — 40%+ traffic from search, ZDNET lost 97% organic traffic,
+      57% ad revenue dependent on search; (2) OpenAI active litigation — copyright suit
+      filed Apr 2025 seeking hundreds of millions; (3) Meta zero-relationship — no AI deal,
+      no ad dependency, no litigation, lowest-cost editorial target. Samsung/Google advertiser
+      compound chain amplifies: Samsung $9.7B ad spend flows through CNET/ZDNET/PCMag,
+      Samsung glasses use Google Gemini. Q2 2026 financial distress: $286.7M revenue
+      (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment.'
+    confounding_factors:
+    - strength: STRONG
+      factor: Ziff Davis editorial teams may operate independently of corporate financial pressures
+    - strength: STRONG
+      factor: OpenAI genuinely scraped Ziff Davis content, providing legitimate editorial basis for hostility
+    - strength: MODERATE
+      factor: Journalist awareness of corporate dependencies varies by individual
+    - strength: MODERATE
+      factor: Meta has genuine privacy history providing independent editorial basis
+    - strength: WEAK
+      factor: Product availability timing differences
+    - strength: WEAK
+      factor: Organic beat assignment patterns
+    testable_predictions:
+    - id: zd_google_soft
+      prediction: CNET/ZDNET/PCMag will apply less adversarial privacy scrutiny to Google products
+        than to Meta products with equivalent data collection
+    - id: zd_openai_hard
+      prediction: CNET/ZDNET coverage of OpenAI will be more adversarial than Google coverage,
+        reflecting active litigation posture
+    - id: zd_meta_default_target
+      prediction: Meta will receive the highest volume of adversarial privacy coverage across
+        all four Ziff Davis publications proportional to financial zero-cost
+    - id: zd_samsung_soft
+      prediction: Samsung glasses will receive positive hardware reviews without structural
+        privacy warnings, unlike Meta glasses reviews
+    cross_references: [106, 107, 76, 93]
+    source_urls:
+    - https://www.zdnet.com/article/ray-ban-meta-smart-glasses-review/
+    - https://investors.ziffdavis.com/news-releases/news-release-details/ziff-davis-reports-second-quarter-2026-results
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -13540,134 +13603,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  ziff_davis_triple_squeeze_financial_architecture:
-    mechanism_id: 108
-    date_added: '2026-08-14'
-    discovery_date: '2026-08-14'
-    finding_type: corporate_financial_incentive_architecture
-    domain: cross_entity_coverage_asymmetry
-    publication_owner: Ziff Davis (NASDAQ: ZD)
-    publications:
-    - CNET
-    - ZDNET
-    - PCMag
-    - Mashable
-    entities:
-    - google
-    - openai
-    - meta
-    - samsung
-    iteration: 109
-    test_file: tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py
-    finding_summary: 'Ziff Davis (NASDAQ: ZD, ~$2B market cap) faces a "triple squeeze"
-      of simultaneous financial pressures that collectively predict entity-selective
-      coverage across its four major tech publications (CNET, ZDNET, PCMag, Mashable).
-
-      (1) GOOGLE EXISTENTIAL DEPENDENCY: 40%+ traffic from Google search, ZDNET lost
-      97% organic traffic. 57% of revenue from ads/performance marketing dependent on
-      search traffic. Google AI Overviews on 20%+ of queries. NO Google AI content deal.
-      Affiliate revenue ($90M/2025) collapsing from search loss. Cannot afford adversarial
-      Google coverage.
-
-      (2) OPENAI ACTIVE LITIGATION: Filed copyright suit Apr 24, 2025 seeking hundreds
-      of millions. Chose litigation over licensing. Zero AI content deals. Structurally
-      antagonistic.
-
-      (3) META ZERO-RELATIONSHIP: No AI deal (Meta Dec 2025 deals went to CNN, Fox,
-      People, USA Today). No advertising dependency. No litigation. Zero financial
-      downside to adversarial coverage. Meta is lowest-cost editorial target.
-
-      COMPOUND: Samsung is major advertiser across CNET/ZDNET/PCMag. Samsung Galaxy
-      Glasses use Google Gemini. Soft Samsung coverage protects ads; soft Google coverage
-      protects traffic. Criticizing Meta has zero financial cost.
-
-      This corporate architecture explains journalist-level patterns in #106 (Stein/CNET)
-      and #107 (Wan/ZDNET). First "Triple Squeeze" archetype in dataset.'
-    financial_data:
-      ticker: ZD
-      exchange: NASDAQ
-      market_cap_b: 1.988
-      q2_2026_revenue_m: 286.7
-      q2_2026_revenue_yoy_pct: -2.7
-      q2_2026_operating_loss_m: -44.7
-      q2_2025_operating_income_m: 13.8
-      goodwill_impairment_q2_2026_m: 54.8
-      ad_performance_marketing_revenue_decline_pct: -6.0
-      ad_revenue_pct_of_total: 57
-      tech_shopping_q2_2026_m: 76.7
-      tech_shopping_yoy_pct: -5.0
-      affiliate_revenue_2025_m: 90
-      affiliate_revenue_yoy_decline_m: 25
-      connectivity_sale_proceeds_m: 1216.1
-      strategic_review_underway: true
-    traffic_data:
-      search_traffic_pct: 40
-      zdnet_organic_decline_pct: 97
-      ai_overviews_on_queries_pct: 20
-      four_properties_in_top_10_impacted: true
-    financial_relationships:
-      google:
-        type: existential_dependency
-        direction: dependent
-        ai_content_deal: none
-        traffic_dependency: 40%+ of total traffic
-        revenue_at_risk: ad/performance marketing (57% of revenue)
-      openai:
-        type: active_litigation
-        direction: adversarial
-        lawsuit_filed: '2025-04-24'
-        damages_sought: hundreds of millions
-        ai_content_deal: none
-      meta:
-        type: zero_relationship
-        direction: none
-        ai_content_deal: none
-        advertising_dependency: none documented
-        litigation: none
-      samsung:
-        type: advertiser
-        direction: receiving
-        global_ad_spend_b: 9.7
-        compound_with_google: Samsung glasses use Google Gemini
-    confounding_factors:
-    - strength: STRONG
-      factor: 'Editorial independence — Ziff Davis maintains editorial walls between
-        advertising/business teams. Product reviewers may not know corporate financials.'
-    - strength: STRONG
-      factor: 'OpenAI genuinely scraped their content including flouting robots.txt
-        — the lawsuit has legitimate non-financial grounds.'
-    - strength: MODERATE
-      factor: 'Individual journalists like Stein and Wan may be unaware of corporate
-        financial architecture and act on genuine editorial instincts.'
-    - strength: MODERATE
-      factor: 'Meta has genuine historical privacy incidents (Cambridge Analytica, FB
-        Papers) that could independently justify heightened scrutiny.'
-    - strength: WEAK
-      factor: 'Samsung Galaxy Glasses are newer/pre-release vs Meta Ray-Ban shipped.
-        However, Google I/O 2026 glasses also pre-release, received zero scrutiny.'
-    - strength: WEAK
-      factor: 'Beat assignment may be organic. However, pattern spans two journalists
-        across two publications with same owner, reducing coincidence probability.'
-    testable_predictions:
-    - 'Ziff Davis publications will apply privacy scrutiny to Meta glasses but not
-      Google/Samsung equivalents (CONFIRMED: #106, #107)'
-    - 'Samsung Galaxy Glasses reviews will use aspirational framing; Meta Ray-Ban
-      will use transactional framing with privacy caveats (CONFIRMED: #107)'
-    - 'Google data retention policies for glasses will not be investigated despite
-      2.3x Meta advertising revenue (CONFIRMED: #107)'
-    - 'Financial distress (operating loss, goodwill impairment) will amplify rather
-      than reduce entity-selective coverage patterns'
-    cross_references:
-    - 76
-    - 106
-    - 107
-    source_urls:
-    - https://www.businesswire.com/news/home/20260806819569/en/Ziff-Davis-Reports-Second-Quarter-2026-Financial-Results
-    - https://www.amediaoperator.com/analysis/future-ziff-davis-to-struggle-most-from-traffic-drops/
-    - https://www.amediaoperator.com/news/ziff-davis-sees-big-hit-to-affiliate-revenue-in-q4/
-    - https://www.fastcompany.com/91326455/ziff-davis-openai-lawsuit-redraws-battle-lines-with-media
-    - https://digiday.com/media/one-year-in-seo-lessons-from-publishers-after-googles-ai-overviews/
-    - https://digiday.com/media/here-are-the-biggest-moments-in-ai-for-publishers-in-2025/
-    - https://www.marketbeat.com/instant-alerts/ziff-davis-q2-earnings-call-highlights-2026-08-07/
-    - https://www.eweek.com/news/ziff-davis-sues-openai/
 research_period: 2024-08-01 to 2026-08-14
