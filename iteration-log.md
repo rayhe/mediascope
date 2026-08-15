@@ -1,3 +1,43 @@
+## Iteration #121 — Sat 2026-08-15 10:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #117: News Corp Q4 FY2026 "Woo and Sue" AI Posture Revenue Architecture — Cross-Publisher Divergence**
+
+News Corp's Q4 FY2026 earnings call (Aug 5, 2026) introduced "woo and sue" as the first explicit
+corporate bifurcated AI posture on a public earnings call. CEO Robert Thomson called OpenAI and
+Meta "trusted content relationships" while labeling unlicensed scrapers "pilferers" and "crass
+kleptomaniacs." Record quarter: $2.34B revenue (+11%), $423M EBITDA (+31%). Dow Jones revenue
+$644M (+7%) with "higher content licensing revenue" explicitly cited as a growth driver. News Corp
+is the first publisher receiving revenue from THREE AI entities: OpenAI ($50M/yr licensing), Meta
+(licensing), and Anthropic ($1.5B settlement share via HarperCollins). Targets $1B Dow Jones
+EBITDA by FY2030, AI licensing integral.
+
+Cross-publisher contrast with Ziff Davis Q2 2026 (same reporting week, Aug 5-6): ZD revenue
+$286.7M (-2.7%), operating LOSS $(44.7M), $54.8M goodwill impairment. CEO Shah confirmed OpenAI
+litigation "continuing" and said ZD is "not inclined to enter RAG-focused agreements." Critical
+update: Google AI Overviews now at 50% of relevant ZD queries (up from 36%, up from 20%+), crossing
+the majority threshold. CNET/PCMag/IGN are "among most-cited" in Semrush AI Visibility Index —
+their content feeds the AI systems they refuse to license.
+
+Financial posture divergence predicts coverage direction: News Corp/WSJ frames Meta through
+human-interest/business-positive lens (blind users benefiting from smart glasses); Ziff Davis/CNET/ZDNET
+applies entity-selective privacy vocabulary (Mechanisms #106, #107). Google protection universal
+across BOTH publisher types. Meta is universal safe target (zero financial risk for either publisher).
+
+Also updated mechanism #108 (Ziff Davis) with corrected 50% AI Overviews figure, CEO quotes,
+and mechanism #117 cross-reference. Google Q2 2026 data: $81.6B ad revenue (+14%), AI Mode 1B MAU,
+AI Max adopted by 500K advertisers, "billions of new monetizable searches" via AI Max.
+
+**Files:**
+- tests/test_news_corp_q4_fy2026_woo_sue_ai_posture_revenue_architecture_aug15.py (64 tests, 13 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #117 with cross-refs)
+- profiles/competitor-entities.yaml (ZD entry updated: 50% overviews, CEO quotes, #117 backref)
+- tests/test_ziff_davis_triple_squeeze_financial_architecture_aug14.py (AI Overviews corrected 20%→50%)
+- README.md + docs/ARCHITECTURE.md (stats: 395 test files, ~13,700 tests, 117 mechanisms)
+
+**Stats:** 395 test files | ~13,700 tests | 117 mechanisms
+
+---
+
 ## Iteration #120 — Sat 2026-08-15 09:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Mechanism #116: Michael Hicks (Android Central / Future plc) — Privacy Vocabulary Suppression Under Privileged Access**
