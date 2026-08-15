@@ -113,7 +113,8 @@ class TestMechanism77InYAML:
     """Verify mechanism #77 is properly documented in competitor-coverage-research.yaml."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_mechanism_77_exists(self, research):
@@ -162,7 +163,8 @@ class TestNYTNameTagInvestigationDocumented:
     """NYT broke the NameTag exclusive — verify documentation."""
 
     @pytest.fixture(scope="class")
-    def nyt_profile(self):
+    @classmethod
+    def nyt_profile(cls):
         return load_yaml("nytimes.yaml")
 
     def test_nyt_has_meta_glasses_coverage(self, nyt_profile):
@@ -184,7 +186,8 @@ class TestSamsungHardwareParity:
     """Samsung glasses have identical privacy-relevant hardware to Meta."""
 
     @pytest.fixture(scope="class")
-    def entities(self):
+    @classmethod
+    def entities(cls):
         return load_yaml("competitor-entities.yaml")
 
     def test_samsung_entity_exists(self, entities):
@@ -223,7 +226,8 @@ class TestNYTGoogleFinancialRelationship:
     """NYT depends on Google for $100M+/yr in programmatic ads."""
 
     @pytest.fixture(scope="class")
-    def nyt_profile(self):
+    @classmethod
+    def nyt_profile(cls):
         return load_yaml("nytimes.yaml")
 
     def test_nyt_google_financial_relationship_exists(self, nyt_profile):
@@ -247,7 +251,8 @@ class TestMetaAdCompetitorRelationship:
     """Meta is NYT's ad competitor, not ad revenue source."""
 
     @pytest.fixture(scope="class")
-    def entities(self):
+    @classmethod
+    def entities(cls):
         return load_yaml("competitor-entities.yaml")
 
     def test_meta_ad_competitor_documented(self, entities):
@@ -268,7 +273,8 @@ class TestCoverageSelectionDifferential:
     """Verify the coverage gap is documented in research YAML."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_meta_nyt_privacy_investigation_count(self, research):
@@ -301,7 +307,8 @@ class TestConfoundingFactorsDocumented:
     """Mechanism must document confounding factors for intellectual honesty."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_confounding_factors_exist(self, research):
@@ -340,7 +347,8 @@ class TestTestablePredictions:
     """Mechanism must include testable predictions for falsifiability."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_predictions_exist(self, research):
@@ -370,7 +378,8 @@ class TestCrossReferences:
     """Mechanism should reference related mechanisms."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_references_samsung_equivalence_paradox(self, research):

@@ -63,7 +63,8 @@ class TestMechanism49InYAML:
     """Verify mechanism #49 is properly documented in competitor-coverage-research.yaml."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_mechanism_49_exists(self, research):
@@ -109,7 +110,8 @@ class TestBobrowskyMetaArticle:
     """Verify the Meta 'flooding the market' article is fully documented."""
 
     @pytest.fixture(scope="class")
-    def mechanism(self):
+    @classmethod
+    def mechanism(cls):
         data = load_yaml("competitor-coverage-research.yaml")
         return data["cross_publication_findings"]["bobrowsky_smart_glasses_privacy_entity_targeting"]
 
@@ -150,7 +152,8 @@ class TestMimsBalancedArticle:
     """Verify the Mims control article is documented with balanced framing."""
 
     @pytest.fixture(scope="class")
-    def mechanism(self):
+    @classmethod
+    def mechanism(cls):
         data = load_yaml("competitor-coverage-research.yaml")
         return data["cross_publication_findings"]["bobrowsky_smart_glasses_privacy_entity_targeting"]
 
@@ -194,7 +197,8 @@ class TestSamsungHardwareParity:
     """Verify Samsung Galaxy Glasses have identical privacy-relevant hardware."""
 
     @pytest.fixture(scope="class")
-    def mechanism(self):
+    @classmethod
+    def mechanism(cls):
         data = load_yaml("competitor-coverage-research.yaml")
         return data["cross_publication_findings"]["bobrowsky_smart_glasses_privacy_entity_targeting"]
 
@@ -238,7 +242,8 @@ class TestBeatAssignmentMechanism:
     """Verify the beat-assignment entity-targeting mechanism is documented."""
 
     @pytest.fixture(scope="class")
-    def mechanism(self):
+    @classmethod
+    def mechanism(cls):
         data = load_yaml("competitor-coverage-research.yaml")
         return data["cross_publication_findings"]["bobrowsky_smart_glasses_privacy_entity_targeting"]
 
@@ -271,7 +276,8 @@ class TestBobrowskyInNewsCorp:
     """Cross-reference with existing news-corp.yaml journalist profiles."""
 
     @pytest.fixture(scope="class")
-    def news_corp(self):
+    @classmethod
+    def news_corp(cls):
         return load_yaml("news-corp.yaml")
 
     def test_bobrowsky_profile_exists(self, news_corp):
@@ -301,7 +307,8 @@ class TestMimsInNewsCorp:
     """Cross-reference with existing news-corp.yaml Christopher Mims profile."""
 
     @pytest.fixture(scope="class")
-    def news_corp(self):
+    @classmethod
+    def news_corp(cls):
         return load_yaml("news-corp.yaml")
 
     def test_mims_profile_exists(self, news_corp):
@@ -319,7 +326,8 @@ class TestCrossValidation:
     """Verify mechanism #49 integrates with the broader mechanism taxonomy."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_mechanism_49_id_unique(self, research):
@@ -357,7 +365,8 @@ class TestRebuttalDocumented:
     """Verify that the rebuttal section addresses the confounding factors."""
 
     @pytest.fixture(scope="class")
-    def mechanism(self):
+    @classmethod
+    def mechanism(cls):
         data = load_yaml("competitor-coverage-research.yaml")
         return data["cross_publication_findings"]["bobrowsky_smart_glasses_privacy_entity_targeting"]
 

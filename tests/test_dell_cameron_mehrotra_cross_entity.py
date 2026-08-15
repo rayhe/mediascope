@@ -111,11 +111,13 @@ class TestMechanism66InYAML:
     """Verify mechanism #66 is properly documented in competitor-coverage-research.yaml."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cpf(self, research):
+    @classmethod
+    def cpf(cls, research):
         return research.get("cross_publication_findings", {})
 
     def test_mechanism_66_exists(self, cpf):
@@ -159,7 +161,8 @@ class TestCameronMehrotraMetaInvestigations:
     """Verify the Meta investigations are properly documented."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -220,7 +223,8 @@ class TestCompetitorInvestigationAbsence:
     """Verify that the absence of competitor investigations is documented."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -270,7 +274,8 @@ class TestLaneAssignmentMechanism:
     """Verify the editorial lane assignment analysis."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -317,7 +322,8 @@ class TestFinancialAlignment:
     """Verify financial incentive correlation is documented."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -357,7 +363,8 @@ class TestConfoundingFactors:
     """Confounding factors must be documented for intellectual honesty."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -406,7 +413,8 @@ class TestCrossReferences:
     """Verify cross-references to related mechanisms."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -445,7 +453,8 @@ class TestTestablePredictions:
     """Verify testable predictions are documented."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]
@@ -480,7 +489,8 @@ class TestWiredProfileIntegration:
     """Verify Dell Cameron and Dhruv Mehrotra are in WIRED's journalist section."""
 
     @pytest.fixture(scope="class")
-    def wired_profile(self):
+    @classmethod
+    def wired_profile(cls):
         return load_yaml("wired.yaml")
 
     def test_dell_cameron_in_wired_profile(self, wired_profile):
@@ -509,7 +519,8 @@ class TestCameraCountParadox:
     """The camera count paradox: more cameras = less investigation."""
 
     @pytest.fixture(scope="class")
-    def entry(self):
+    @classmethod
+    def entry(cls):
         research = load_yaml("competitor-coverage-research.yaml")
         cpf = research.get("cross_publication_findings", {})
         return cpf["cameron_mehrotra_investigative_resource_allocation"]

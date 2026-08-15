@@ -46,13 +46,15 @@ class TestStatConsistency:
     """Verify README and ARCHITECTURE stats match actual repo state."""
 
     @pytest.fixture(scope='class')
-    def actual_test_file_count(self):
+    @classmethod
+    def actual_test_file_count(cls):
         test_files = [f for f in os.listdir(os.path.join(REPO_ROOT, 'tests'))
                       if f.startswith('test_') and f.endswith('.py')]
         return len(test_files)
 
     @pytest.fixture(scope='class')
-    def count_stats(self):
+    @classmethod
+    def count_stats(cls):
         result = subprocess.run(
             ['python3', 'scripts/count_stats.py'],
             capture_output=True, text=True, cwd=REPO_ROOT, timeout=30
@@ -129,7 +131,8 @@ class TestMechanismCrossReferences:
     """Verify cross-references between mechanisms #65–#68."""
 
     @pytest.fixture(scope='class')
-    def cpf(self):
+    @classmethod
+    def cpf(cls):
         return load_yaml('profiles/competitor-coverage-research.yaml')
 
     def test_mechanism_65_exists(self, cpf):
@@ -188,7 +191,8 @@ class TestJournalistProfileCompleteness:
     """Verify newly added journalist profiles have required fields."""
 
     @pytest.fixture(scope='class')
-    def journalists(self):
+    @classmethod
+    def journalists(cls):
         data = load_yaml('profiles/careers/journalists.yaml')
         return data.get('journalists', [])
 
@@ -234,7 +238,8 @@ class TestEntityCompleteness:
     """Verify competitor entities referenced in recent mechanisms exist."""
 
     @pytest.fixture(scope='class')
-    def entities(self):
+    @classmethod
+    def entities(cls):
         data = load_yaml('profiles/competitor-entities.yaml')
         return data.get('entities', {})
 
@@ -274,7 +279,8 @@ class TestMechanismIDIntegrity:
     """Verify sequential mechanism IDs have no gaps in recent range."""
 
     @pytest.fixture(scope='class')
-    def all_mechanism_ids(self):
+    @classmethod
+    def all_mechanism_ids(cls):
         cpf = load_yaml('profiles/competitor-coverage-research.yaml')
         ids = set()
         for key, val in cpf.get('cross_publication_findings', {}).items():

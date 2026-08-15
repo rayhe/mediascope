@@ -198,7 +198,8 @@ class TestMechanism101InYAML:
     """Verify mechanism #101 is documented in competitor-coverage-research.yaml."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_mechanism_101_exists(self, research):
@@ -244,11 +245,13 @@ class TestCascadeArticleInventory:
     """Verify 7+ publications documented in cascade."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -296,11 +299,13 @@ class TestNarrativeStructureUniformity:
     """Test that all cascade articles follow the same narrative arc."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -338,11 +343,13 @@ class TestTemporalInversion:
     """Samsung shipped Jul 22, Gurman reported Jul 26. Apple hasn't shipped anything."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -385,11 +392,13 @@ class TestSourceMonoculture:
     """All cascade articles derive from a single Bloomberg source."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -420,11 +429,13 @@ class TestSamsungFramingComparison:
     """Samsung receives TECHNICAL framing, Apple receives NARRATIVE framing."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -462,11 +473,13 @@ class TestMetaProactiveMeasureFraming:
     """Meta's Jul 7 camera-disable gets reactive framing, not proactive."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -500,11 +513,13 @@ class TestConfoundingFactors:
     """Mechanism must document 6+ confounding factors with strength ratings."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -535,11 +550,13 @@ class TestTestablePredictions:
     """Mechanism must document 4+ testable predictions."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -565,11 +582,13 @@ class TestCrossReferences:
     """Mechanism must cross-reference related mechanisms."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     @pytest.fixture(scope="class")
-    def cascade(self, research):
+    @classmethod
+    def cascade(cls, research):
         cpf = research.get("cross_publication_findings", {})
         return cpf.get("apple_n50_privacy_hero_cascade", {})
 
@@ -604,7 +623,8 @@ class TestEntityProfileIntegration:
     """Apple entity in competitor-entities.yaml must reference this mechanism."""
 
     @pytest.fixture(scope="class")
-    def entities(self):
+    @classmethod
+    def entities(cls):
         return load_yaml("competitor-entities.yaml")
 
     def test_apple_entity_exists(self, entities):
@@ -636,7 +656,8 @@ class TestDistinctnessFromExistingMechanisms:
     """Mechanism #101 must be distinct from existing mechanisms."""
 
     @pytest.fixture(scope="class")
-    def research(self):
+    @classmethod
+    def research(cls):
         return load_yaml("competitor-coverage-research.yaml")
 
     def test_distinct_from_mechanism_49(self, research):
