@@ -36254,3 +36254,68 @@ coverage — but through search partnership rather than traffic dependency.
 5. `docs/ARCHITECTURE.md` — stat sync
 
 **Stats:** 385 test files | ~13,175 tests | 109 mechanisms
+
+---
+
+## Iteration #115
+**Time:** 2026-08-15 04:00 PT
+**Type:** A (Competitor Coverage Deep Dive)
+**Rotation:** A→B→C→D (last was #114 Type D at 03:00)
+
+### Mechanism #112: The Verge (PMC) — Google Litigation-vs-Wearables Coverage Paradox
+
+**Publication:** The Verge (PMC/PMX, Penske Media Corporation)
+**Competitor:** Google (Android XR smart glasses)
+**Core Finding:** PMC has TWO active lawsuits against Google — AI Overviews copyright
+(D.D.C. No. 1:25-cv-03192-APM, filed Sep 2025, counsel Susman Godfrey vs WilmerHale)
+and Ad Tech antitrust (S.D.N.Y., filed Jan 2026, alleging "Last Look" and "Minimum Bid
+to Win" auction manipulation). Standard financial-incentive logic predicts adversarial
+Google coverage across all editorial domains.
+
+Yet The Verge's wearables reporter Victoria Song used ASPIRATIONAL framing for Google
+Android XR glasses (J.A.R.V.I.S. comparison — Marvel superhero AI reference) while
+applying surveillance/privacy framing to Meta's functionally identical smart glasses
+(LED tamper investigations, subscription paywall controversy, activist backlash coverage).
+
+**ANALYTICAL BREAKTHROUGH:** This is the FIRST mechanism in the dataset documenting a case
+where active litigation does NOT predict adversarial product coverage for the same entity.
+
+**Domain-Specific Resolution:** PMC's financial interests are domain-specific, not
+entity-uniform:
+- Google SEARCH: adversarial (20% of PMC traffic shows AI Overviews, damaging revenue)
+- Google ADS: adversarial (auction manipulation harmed PMC/SheMedia ad revenue)
+- Google WEARABLES: aligned (competes with Meta, a zero-deal non-partner)
+- Meta WEARABLES: zero alignment (no AI content deal, no bilateral revenue)
+
+The rational multi-domain calculation: adversarial Google search coverage + favorable Google
+wearables coverage + adversarial Meta coverage = maximum PMC financial interest.
+
+**Coverage Evidence (cross-referenced from third-party citations):**
+1. Victoria Song, The Verge — Android XR glasses = J.A.R.V.I.S. (aspirational, +0.65)
+   Source: Wikipedia Android XR article citing The Verge
+2. Victoria Song, The Verge — Meta LED tamper-proofing investigation (privacy-enforcement, -0.30)
+   Source: Gizmodo cross-reference
+3. Joanna Stern, The Verge — LED removal services in 30 states (adversarial, -0.55)
+   Source: WebProNews/Pennsylvania bill article
+4. Meta "conversation focus" subscription controversy (consumer-exploitation, -0.40)
+   Source: Techdirt cross-reference
+
+**Financial Architecture:**
+- OpenAI → PMC: Content licensing (May 29, 2024)
+- PMC → Microsoft: Azure OpenAI enterprise agreement
+- Meta → PMC: $0 (zero AI content deal)
+- PIF → SRMG → PMC: $200M+ equity; PIF sold ALL Meta shares Q2 2025
+
+**6 confounding factors documented (2 STRONG, 2 MODERATE, 2 WEAK), 4 testable predictions.**
+**Cross-references:** #87 (Verge beat segregation), #109 (Engadget Google privacy zero-out),
+#110 (Future plc Google dependency shield).
+
+**Updates:**
+1. `tests/test_verge_pmc_google_litigation_wearables_coverage_paradox_aug15.py` — 34 tests, 12 classes
+2. `profiles/competitor-coverage-research.yaml` — mechanism #112 added to cross_publication_findings
+3. `profiles/competitor-entities.yaml` — Google entity updated with mechanism #112 reference
+4. `profiles/the-verge.yaml` — google_litigation_wearables_paradox section added
+5. `README.md` — stat sync (389 files, ~13,343 tests), test file entry added
+6. `docs/ARCHITECTURE.md` — stat sync, file tree entries for aug15 test files
+
+**Stats:** 389 test files | ~13,343 tests | 112 mechanisms

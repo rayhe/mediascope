@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~13309 tests across 388 test files (all from real articles)
+├── tests/                       # ~13343 tests across 389 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -711,6 +711,11 @@ mediascope/
 │   ├── test_type_d_09pm_cross_validation_aug13.py # Type D cross-validation (Aug 13, 21:00 PT): Mechanisms #89-#91 cross-validation. 13 classes, 43 tests
 │   ├── test_type_d_11pm_cross_validation_aug13.py # Type D cross-validation (Aug 13, 23:00 PT): Mechanisms #89-#91 metadata completeness, ID integrity, Samsung cluster coherence. 13 classes, 37 tests
 │   ├── test_type_d_03am_cross_validation_aug14.py # Type D cross-validation (Aug 14, 03:00 PT): Mechanisms #92-#94 metadata + data integrity fixes. 12 classes, 53 tests
+│   ├── test_engadget_yahoo_google_privacy_vocabulary_zero_aug15.py # Mechanism #109: Engadget (Yahoo/Apollo) gives Google Android XR glasses ZERO privacy vocabulary despite identical camera capabilities; Meta gets 25+ privacy terms. Yahoo Search powered by Google creates structural incentive. Beat assignment amplifies. 11 classes
+│   ├── test_mike_prospero_future_plc_competitive_framing_asymmetry_aug15.py # Mechanism #110: Tom's Guide EIC-Level Google Dependency Shield. Future plc 60%+ Google revenue, profit -67%. Meta hedged, Google aspirational. 11 classes
+│   ├── test_apollo_q2_2026_ai_infrastructure_financial_architecture_aug15.py # Mechanism #111: Apollo Q2 2026 AI infrastructure at PE scale. $38.5B documented AI deals, AUM >$1T, record CSF $277M. ONLY PE firm financing AI competitors AND owning publications. 10 classes, 67 tests
+│   ├── test_type_d_03am_cross_validation_aug15.py # Type D cross-validation (Aug 15, 03:00 PT): Apollo XPV hardware factual correction (Broadcom XPUs not Google TPUs). Fixed mechanisms #109-111. 5 classes, 26 tests
+│   ├── test_verge_pmc_google_litigation_wearables_coverage_paradox_aug15.py # Mechanism #112: The Verge (PMC) Google Litigation-vs-Wearables Coverage Paradox. PMC sues Google (2 lawsuits) yet Victoria Song uses JARVIS framing for Google glasses, surveillance framing for Meta. FIRST mechanism documenting litigation NOT predicting adversarial coverage. Domain-specific resolution. 12 classes, 34 tests
 │   ├── test_wired_aisi_accountability_coverage_trajectory_break_aug14.py # Mechanism #92: WIRED AISI Accountability Report Coverage Trajectory Break. WIRED published 3 rogue AI articles in 3 days then went silent after AISI definitive report (Aug 4, 89% Anthropic). 11 classes, 52 tests
 │   ├── test_samsung_privacy_feature_framing_inversion_aug14.py # Mechanism #93: Samsung Privacy Feature Framing Inversion. Same features, opposite vocabulary: Samsung POSITIVE, Meta NEGATIVE. 8 classes, 32 tests
 │   ├── test_apple_ad_revenue_opacity_coverage_accountability_asymmetry_aug14.py # Mechanism #94: Apple Advertising Revenue Structural Opacity. Apple ad business record Q3 FY2026, zero disclosure. Meta/Google disclose, enabling accountability analysis impossible for Apple. 9 classes, 37 tests

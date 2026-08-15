@@ -2869,4 +2869,52 @@ cross_entity_coverage_analysis:
       - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
       - "https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539"
 
-  last_updated: "2026-08-13"
+  # ===================================================================
+  # MECHANISM #112: GOOGLE LITIGATION-vs-WEARABLES COVERAGE PARADOX (Aug 15)
+  # ===================================================================
+  google_litigation_wearables_paradox:
+    date_analyzed: "2026-08-15"
+    rotation_type: "A"
+    mechanism_id: 112
+    publication: "The Verge"
+    competitor: "Google"
+    key_finding: >
+      PMC has TWO active lawsuits against Google (AI Overviews copyright, Ad Tech antitrust)
+      yet Victoria Song uses ASPIRATIONAL framing for Google Android XR glasses (J.A.R.V.I.S.
+      comparison) while applying surveillance/privacy framing to Meta glasses. This is the
+      FIRST mechanism documenting active litigation that does NOT predict adversarial product
+      coverage for the same entity.
+    paradox_resolution: >
+      PMC interests are DOMAIN-SPECIFIC: adversarial to Google search/ads (where PMC is
+      directly harmed by AI Overviews and ad auction manipulation), but favorable to Google
+      wearables (which compete with Meta, a zero-deal non-partner). PIF (via SRMG investment
+      in PMC) sold ALL Meta shares Q2 2025.
+    coverage_evidence:
+      google_android_xr:
+        reporter: Victoria Song
+        framing: aspirational
+        key_reference: "J.A.R.V.I.S. comparison (Marvel superhero AI)"
+        privacy_scrutiny_terms: 0
+        citation: "https://en.wikipedia.org/wiki/Android_XR"
+      meta_glasses:
+        reporters:
+        - Victoria Song (LED tamper investigations)
+        - Joanna Stern (LED removal services in 30 states)
+        - Sean Hollister (subscription paywall controversy)
+        privacy_scrutiny_terms: "5+ across multiple articles"
+        citations:
+        - "https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720"
+        - "https://www.webpronews.com/pennsylvania-bill-mandates-visible-recording-lights-on-smart-glasses-as-privacy-fears-mount/"
+        - "https://www.techdirt.com/tag/ray-ban-meta-creep/"
+    connects_to_mechanisms:
+    - 87
+    - 109
+    - 110
+    source_urls:
+    - "https://en.wikipedia.org/wiki/Android_XR"
+    - "https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720"
+    - "https://www.webpronews.com/pennsylvania-bill-mandates-visible-recording-lights-on-smart-glasses-as-privacy-fears-mount/"
+    - "https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
+    - "https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/"
+
+  last_updated: "2026-08-15"

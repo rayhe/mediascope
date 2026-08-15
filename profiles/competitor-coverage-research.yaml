@@ -10463,6 +10463,154 @@ cross_publication_findings:
       toward parity with Google/Samsung coverage tone
     - Tom's Guide EIC-level contributors (Spoonauer, Prospero) will continue to use combative language positioning Google
       as the hero entity in comparative smart glasses coverage
+  verge_pmc_google_litigation_wearables_coverage_paradox:
+    mechanism_id: 112
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: litigation_coverage_domain_paradox
+    domain: cross_entity_coverage_asymmetry
+    publication_owner: Penske Media Corporation (PMC/PMX)
+    publications:
+    - The Verge
+    entities:
+    - google
+    - meta
+    iteration: 115
+    test_file: tests/test_verge_pmc_google_litigation_wearables_coverage_paradox_aug15.py
+    finding_summary: 'PMC (The Verge parent since June 2026) has TWO active lawsuits against Google
+      (AI Overviews copyright D.D.C. No. 1:25-cv-03192-APM, Sep 2025; and Ad Tech antitrust S.D.N.Y., Jan 2026).
+      Standard financial-incentive logic predicts adversarial Google coverage across all editorial domains.
+      Yet The Verge wearables reporter Victoria Song used ASPIRATIONAL framing for Google Android XR glasses
+      (J.A.R.V.I.S. comparison, Marvel superhero AI reference) while applying surveillance/privacy framing to
+      Meta glasses with functionally identical camera+microphone+AI capabilities (LED tamper investigations,
+      subscription controversy, activist backlash). FIRST MECHANISM documenting active litigation that does NOT
+      predict adversarial coverage for the same entity. Resolution: PMC interests are DOMAIN-SPECIFIC -- adversarial
+      to Google search/ads (where PMC is harmed), but favorable to Google wearables (which compete with Meta, a
+      zero-deal non-partner). PIF (via SRMG) sold ALL Meta shares Q2 2025.'
+    litigation_details:
+      ai_overviews_case:
+        court: D.D.C.
+        case_number: '1:25-cv-03192-APM'
+        filed: '2025-09-13'
+        plaintiff: PMC/Vox Media
+        counsel_plaintiff: Susman Godfrey
+        counsel_defendant: WilmerHale
+        claim: Copyright infringement from AI Overviews reproducing publisher content
+        google_motion_to_dismiss: '2026-01'
+      ad_tech_case:
+        court: S.D.N.Y.
+        filed: '2026-01'
+        claim: Last Look and Minimum Bid to Win auction manipulation in ad tech
+        builds_on: 2025 EDVA ruling finding Google ad tech monopolies
+    financial_architecture:
+      openai_to_pmc:
+        type: content_licensing
+        date: '2024-05-29'
+        description: OpenAI licensed Vox Media archive access
+      pmc_to_microsoft:
+        type: enterprise_ai
+        description: Azure OpenAI enterprise agreement for editorial AI tools
+      meta_to_pmc:
+        type: none
+        value: '$0'
+        description: Zero AI content licensing deal between Meta and PMC
+      pif_meta_divestiture:
+        description: PIF sold ALL Meta shares in Q2 2025 while retaining SRMG/PMC investment
+    coverage_evidence:
+      google_android_xr:
+      - reporter: Victoria Song
+        framing: aspirational
+        reference: J.A.R.V.I.S. comparison (Marvel superhero AI)
+        tone_score: 0.65
+        citation_source: Wikipedia Android XR article citing The Verge
+      meta_glasses:
+      - reporter: Victoria Song
+        framing: privacy_enforcement
+        reference: LED tamper-proofing investigation
+        tone_score: -0.30
+        citation_source: Gizmodo cross-reference
+      - reporter: Joanna Stern
+        framing: adversarial_investigative
+        reference: LED removal services in 30 states investigation
+        tone_score: -0.55
+        citation_source: WebProNews/Pennsylvania bill article
+      - reporter: Verge staff
+        framing: consumer_exploitation
+        reference: Conversation focus subscription controversy
+        tone_score: -0.40
+        citation_source: Techdirt cross-reference
+    domain_specific_resolution:
+      google_search: adversarial (AI Overviews harm PMC traffic revenue)
+      google_ads: adversarial (auction manipulation harmed PMC/SheMedia ad revenue)
+      google_wearables: aligned (competes with Meta, a zero-deal non-partner)
+      meta_wearables: zero_alignment (no AI content deal, no bilateral revenue)
+      resolution_logic: PMC is adversarial to Google in domains where Google HARMS PMC but favorable in domains where Google
+        COMPETES WITH Meta. Adversarial Google search coverage + favorable Google wearables coverage + adversarial Meta
+        coverage = rational multi-domain financial optimization
+    confounding_factors:
+    - strength: STRONG
+      factor: Victoria Song may genuinely find Android XR more impressive than Meta iterative updates -- the JARVIS
+        comparison could reflect honest product enthusiasm for a new platform
+      counter: Genuine enthusiasm is consistent with the paradox resolution -- financial incentives do not CAUSE the framing
+        but create structural conditions where positive Google framing faces no institutional resistance
+    - strength: STRONG
+      factor: Meta has genuine privacy incidents (Cambridge Analytica legacy, Swedish contractor expose) that Google pre-launch
+        glasses have not had time to accumulate
+      counter: The mechanism predicts that POST-LAUNCH Google/Samsung privacy incidents will receive less adversarial Verge
+        coverage per-incident than Meta received for equivalent events
+    - strength: MODERATE
+      factor: The Verge editorial team (WGAE-represented) has CBA protections through June 2028 against editorial interference
+        -- coverage may reflect organic editorial judgment
+      counter: Union protections prevent DIRECT interference but do not address beat assignment decisions, source selection,
+        or framing choices that may internalize institutional financial interests
+    - strength: MODERATE
+      factor: Google Glass era failure may generate comeback redemption narratives that are journalistically genuine
+      counter: Redemption narratives are not applied symmetrically -- Meta glasses are not framed as redemption despite
+        improving privacy features with each generation
+    - strength: WEAK
+      factor: Samsung/Google glasses were pre-launch at announcement while Meta glasses are shipped products -- different
+        review contexts
+      counter: Pre-launch coverage of Meta products (Quest Pro, Orion concepts) also received adversarial framing, suggesting
+        the product lifecycle stage does not explain the asymmetry
+    - strength: WEAK
+      factor: The Verge disclosed the Google lawsuit on the Vergecast, suggesting editorial transparency about the conflict
+      counter: Disclosure of existence does not address whether the conflict materially affects coverage framing, beat
+        assignment, or source selection
+    testable_predictions:
+    - Post-launch Samsung/Google glasses privacy incidents will receive LESS adversarial Verge coverage per-incident than
+      Meta received for equivalent events (same camera+AI capabilities)
+    - The Verge coverage of Google search/AI Overviews will be MORE adversarial than its Google wearables coverage, reflecting
+      the domain-specific financial incentive split
+    - If Meta signs an AI content licensing deal with PMC, Meta wearables coverage tone will shift incrementally positive
+      within 2 quarters
+    - Samsung/Google glasses data retention policies once published will receive LESS investigative scrutiny from The Verge
+      than Meta equivalent policies
+    cross_references:
+    - mechanism_id: 87
+      relationship: same_publication_different_angle
+      connection: 'Mechanism #87 documented The Verge intra-publication beat segregation where wearables-beat (Song) vs
+        privacy-beat reporters apply different framing. Mechanism #112 adds the financial-incentive CONTEXT explaining
+        WHY that beat segregation consistently advantages Google and disadvantages Meta'
+    - mechanism_id: 109
+      relationship: same_entity_different_publisher
+      connection: 'Mechanism #109 documented Engadget Google privacy vocabulary zero-out. Both mechanisms find zero privacy
+        scrutiny for Google wearables but from DIFFERENT financial architectures -- Engadget from Yahoo search/ad dependency,
+        The Verge from litigation domain-specificity'
+    - mechanism_id: 110
+      relationship: parallel_entity_alignment
+      connection: 'Mechanism #110 documented Future plc/Tom''s Guide Google revenue dependency (60%+ traffic). The Verge
+        has a DIFFERENT financial relationship (litigation adversary) yet reaches the SAME coverage outcome, suggesting
+        the pro-Google-wearables framing is overdetermined by multiple financial pathways'
+    source_urls:
+    - https://en.wikipedia.org/wiki/Android_XR
+    - https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+    - https://www.webpronews.com/pennsylvania-bill-mandates-visible-recording-lights-on-smart-glasses-as-privacy-fears-mount/
+    - https://www.techdirt.com/tag/ray-ban-meta-creep/
+    - https://www.androidauthority.com/ray-ban-meta-ad-pervert-glasses-3689738/
+    - https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+    - https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/
+    - https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/
+    - https://10up.com/our-work/penske-media-ai-integration/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

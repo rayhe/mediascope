@@ -3807,6 +3807,24 @@ entities:
       - 106
       - 107
       - 76
+    verge_pmc_google_litigation_wearables_paradox_mechanism_112:
+      mechanism_id: 112
+      date_added: '2026-08-15'
+      publication: The Verge
+      ownership_chain: 'The Verge → Vox Media → PMC/PMX → Penske Media Corporation'
+      finding_summary: 'PMC sues Google in TWO active lawsuits (AI Overviews copyright, Ad Tech
+        antitrust) yet Victoria Song uses ASPIRATIONAL framing for Google Android XR glasses
+        (J.A.R.V.I.S. comparison) while applying surveillance/privacy framing to Meta glasses.
+        FIRST MECHANISM documenting active litigation that does NOT predict adversarial coverage.
+        Resolution: PMC interests are domain-specific -- adversarial to Google search/ads but
+        favorable to Google wearables (which compete with Meta, a zero-deal non-partner).'
+      paradox_type: litigation_domain_specificity
+      google_coverage_framing: aspirational (J.A.R.V.I.S. superhero AI)
+      meta_coverage_framing: adversarial (LED investigations, subscription controversy)
+      related_mechanisms:
+      - 87
+      - 109
+      - 110
   x_twitter:
     display_name: X / Twitter
     aliases:
