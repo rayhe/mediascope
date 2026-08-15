@@ -179,8 +179,8 @@ class TestMechanismIDContiguity:
         assert not missing, f"Missing mechanism IDs: {sorted(missing)}"
 
     def test_max_is_90(self, all_mechanisms):
-        # Note: mechanism #91 lives in competitor-entities.yaml, not research yaml
-        assert max(all_mechanisms.keys()) == 90
+        # Updated: was == 90 when written, now >= 90 since new mechanisms added
+        assert max(all_mechanisms.keys()) >= 90
 
     def test_min_is_17(self, all_mechanisms):
         assert min(all_mechanisms.keys()) == 17

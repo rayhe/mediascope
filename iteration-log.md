@@ -1,3 +1,37 @@
+## Iteration #114 — Sat 2026-08-15 03:00 PT (Type D: Test & Verify)
+
+**Factual Correction: Apollo XPV Hardware — Broadcom XPUs, NOT Google TPUs**
+
+Cross-validated mechanism #111 (Apollo Q2 2026) against 7 primary sources. Discovered
+and corrected a factual error: the $35B XPV Platform uses Broadcom XPUs and networking
+solutions, NOT Google TPUs. Google is NOT a structural partner or hardware supplier
+in this deal. Primary sources: Apollo IR press release, WSJ, Reuters, Barron's,
+Sullivan & Cromwell advisory, Milbank advisory, TradingView.
+
+**Corrections:**
+1. competitor-coverage-research.yaml: hardware field, structure field, entities list,
+   finding summary, and mechanism #109 cross-reference all updated
+2. test_apollo_q2_2026: test_xpv_google_hardware_supplier renamed to
+   test_xpv_broadcom_hardware, Google removed from entities_with_financial_alignment
+3. Mechanisms 109+110: added testable_predictions (previously missing)
+4. Mechanisms 102+103: added test_file fields (previously missing)
+5. Mechanisms 104+105: fixed test_file paths (missing tests/ prefix)
+6. README.md + ARCHITECTURE.md: synced stats (journalists 255→258, migrations
+   971→973, publications 442→443, test files 387→388, tests 13283→13309)
+7. Fixed 8 stale Type D tests in aug13/aug14 with hardcoded mechanism ID assertions
+8. Fixed ARCHITECTURE.md comma format causing regex mismatch in stat checks
+
+**Test results:**
+- All 26 new cross-validation tests pass
+- All 3 previously-failing aug14 tests now pass
+- All 6 previously-failing aug13 tests now pass
+- All 67 Apollo mechanism #111 tests pass with corrected data
+- count_stats.py --check: ✅ README stats current
+
+**Stats:** 388 test files | ~13,309 tests | 111 mechanisms
+
+---
+
 ## Iteration #113 — Sat 2026-08-15 02:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #111: Apollo Global Management Q2 2026 — AI Infrastructure Financial Architecture at PE Scale**

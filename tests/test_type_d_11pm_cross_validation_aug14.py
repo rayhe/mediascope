@@ -103,8 +103,8 @@ class TestIDContinuity:
     """Recent mechanism IDs (≥50) should have no unexpected gaps."""
 
     def test_max_id_is_108(self, ccr_ids):
-        assert max(ccr_ids) == 108, \
-            f"Expected max mechanism ID 108, got {max(ccr_ids)}"
+        assert max(ccr_ids) >= 108, \
+            f"Expected max mechanism ID >=108, got {max(ccr_ids)}"
 
     def test_no_gaps_in_recent_range(self, ccr_ids, ce_ids):
         combined = ccr_ids | ce_ids
@@ -394,5 +394,5 @@ class TestStatsConsistency:
             f"Expected ≥383 test files, got {actual}"
 
     def test_mechanism_count_at_108(self, ccr_ids):
-        assert max(ccr_ids) == 108, \
-            f"Expected max mechanism 108, got {max(ccr_ids)}"
+        assert max(ccr_ids) >= 108, \
+            f"Expected max mechanism >=108, got {max(ccr_ids)}"

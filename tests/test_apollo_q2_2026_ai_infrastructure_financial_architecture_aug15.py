@@ -21,14 +21,17 @@ EXPANDED significantly beyond the $38.4B previously documented:
 - STACK Infrastructure European colocation carve-out
 
 APOLLO'S AI COMPETITOR FINANCIAL EXPOSURE:
-1. Anthropic: $35B XPV Platform lead investor (Jun 9, 2026) — SPV buys Google TPUs,
-   leases to Anthropic for compute expansion. Apollo generates fees on origination,
-   structuring, and ongoing management. Google is HARDWARE SUPPLIER in this deal.
+1. Anthropic: $35B XPV Platform lead investor (Jun 9, 2026) — Apollo-led capital
+   solution finances Broadcom XPU compute infrastructure for Anthropic's capacity
+   expansion at Fluidstack sites. Apollo generates fees on origination, structuring,
+   and ongoing management. Broadcom supplies the XPUs and networking.
 2. xAI: $3.5B of $5.4B Valor Compute Infrastructure (Jan 7, 2026) — triple net
    lease for Nvidia GB200 GPUs to power Grok training.
 3. OpenAI: Named as FUTURE CUSTOMER of XPV Platform (20GW capacity through 2028)
-4. Google: STRUCTURAL PARTNER — Google TPUs are the hardware in the Anthropic XPV deal;
-   Broadcom's custom chips for Google are part of the platform design
+
+NOTE: Google is NOT a hardware supplier in the XPV deal. The hardware is Broadcom XPUs.
+Google's connection to Apollo/Yahoo is through the Yahoo Search Alliance and Google
+ad tech dependency, documented separately.
 
 TOTAL DOCUMENTED: $38.5B direct + $40B+ broader digital infrastructure since 2022
 REVENUE IMPACT: Capital Solutions Fees hit record $277M in Q2 2026 — AI infrastructure
@@ -244,11 +247,11 @@ class TestAIInfrastructureDealPortfolio:
         role = xpv.get('apollo_role', '')
         assert 'lead' in role.lower()
 
-    def test_xpv_google_hardware_supplier(self, mechanism_111):
+    def test_xpv_broadcom_hardware(self, mechanism_111):
         deals = mechanism_111.get('ai_infrastructure_deals', {})
         xpv = deals.get('anthropic_xpv_platform', {})
         hw = xpv.get('hardware', '')
-        assert 'google' in hw.lower() or 'tpu' in hw.lower()
+        assert 'broadcom' in hw.lower() or 'xpu' in hw.lower()
 
     def test_xpv_future_customers_include_openai(self, mechanism_111):
         deals = mechanism_111.get('ai_infrastructure_deals', {})
@@ -386,7 +389,6 @@ class TestFinancialIncentiveArchitecture:
         assert 'Anthropic' in entities
         assert 'xAI' in entities
         assert 'OpenAI' in entities
-        assert 'Google' in entities
 
     def test_meta_not_in_aligned_entities(self, mechanism_111):
         incentive = mechanism_111.get('financial_incentive_analysis', {})

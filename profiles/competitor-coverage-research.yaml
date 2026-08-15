@@ -1531,7 +1531,7 @@ cross_publication_findings:
     - openai
     - xai
     iteration: 107
-    test_file: test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py
+    test_file: tests/test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py
     ownership_chain:
       immediate_parent: Yahoo Inc.
       ultimate_owner: Apollo Global Management
@@ -1641,6 +1641,7 @@ cross_publication_findings:
     name: EssilorLuxottica-Condé Nast Cross-Subsidiary Advertising Paradox
     date_added: '2026-08-14'
     discovery_date: '2026-08-14'
+    test_file: tests/test_essilorluxottica_conde_nast_advertising_paradox_aug14.py
     finding_summary: 'EssilorLuxottica spends ~€1.8-2B/yr on advertising/marketing (H1 2023: €828M = 6.4% of revenue). Ray-Ban
       and Oakley campaigns flow to Condé Nast fashion titles (Vogue, GQ, Vanity Fair). Oakley maintained a DIRECT "global
       brand alliance" with WIRED (~2014) — co-created sponsored content + brand advertising in print and on WIRED.com. Yet
@@ -9730,6 +9731,7 @@ cross_publication_findings:
     title: Adrienne So (WIRED) — Wearables Privacy Vocabulary Bifurcation Across Entities
     type: journalist_cross_entity_tracking
     date_added: '2026-08-14'
+    test_file: tests/test_adrienne_so_wearables_privacy_vocabulary_bifurcation_aug14.py
     journalist: Adrienne So
     publication: WIRED (Condé Nast / Advance Publications)
     beat: wearables, fitness trackers, smartwatches, smart glasses
@@ -9854,7 +9856,7 @@ cross_publication_findings:
     - apple
     - google
     iteration: 108
-    test_file: test_joanna_stern_career_migration_natural_experiment_aug14.py
+    test_file: tests/test_joanna_stern_career_migration_natural_experiment_aug14.py
     finding_summary: 'Joanna Stern''s WSJ→independence career migration (Apr 2026) provides the strongest natural experiment
       in the MediaScope dataset for isolating how institutional financial structure shapes coverage targets. At WSJ (News
       Corp, balanced ~$50M/yr deals with both Meta and OpenAI), her Meta Ray-Ban coverage was POSITIVE (+0.35, ''fun and reliable'').
@@ -10131,15 +10133,15 @@ cross_publication_findings:
     - anthropic
     - openai
     - xai
-    - google
     iteration: 113
     test_file: tests/test_apollo_q2_2026_ai_infrastructure_financial_architecture_aug15.py
     finding_summary: 'Apollo Q2 2026 earnings (Aug 4) reveal the financial architecture connecting Yahoo publications (TechCrunch,
       Engadget) to AI competitor success has EXPANDED: AUM crossed $1T, Capital Solutions Fees hit record $277M (5th consecutive
       quarter >$200M), $74B originations EXCLUDING the $35B XPV deal, new dedicated AI chip leader Reed Rayman (Aug 5), 60+
       person digital infra team. Total AI infrastructure: $38.5B documented deals + $40B+ broader digital infra since 2022.
-      Apollo profits from Anthropic ($35B XPV), xAI ($3.5B), OpenAI (future XPV customer), and Google (hardware supplier)
-      succeeding. ONLY private equity firm financing AI competitors that also owns major tech publications.'
+      Apollo profits from Anthropic ($35B XPV), xAI ($3.5B), and OpenAI (future XPV customer)
+      succeeding. Broadcom supplies the XPU hardware in the XPV deal.
+      ONLY private equity firm financing AI competitors that also owns major tech publications.'
     q2_2026_earnings:
       report_date: '2026-08-04'
       fee_related_earnings_m: 785
@@ -10161,8 +10163,8 @@ cross_publication_findings:
         partners:
         - Blackstone
         - Broadcom
-        hardware: Google TPUs via Broadcom XPU platform
-        structure: SPV purchases Google TPUs, leases to Anthropic; off-balance-sheet for Anthropic pre-IPO
+        hardware: Broadcom XPUs and networking solutions
+        structure: Apollo-led capital solution finances Broadcom XPU compute infrastructure for Anthropic's capacity expansion at Fluidstack sites
         initial_capacity_gw: 1
         platform_target_gw: 20
         platform_target_year: 2028
@@ -10202,7 +10204,6 @@ cross_publication_findings:
       - Anthropic
       - xAI
       - OpenAI
-      - Google
       revenue_mechanism: Capital Solutions Fees ($277M record Q2 2026) — the specific fee income line where AI infrastructure
         deals generate revenue
       unique_position: Apollo is the ONLY private equity firm in the dataset that simultaneously finances AI competitors AND
@@ -10255,9 +10256,10 @@ cross_publication_findings:
       connection: 'Mechanism #104 documented TechCrunch privacy-improvement-as- indictment framing and the initial $38.4B
         Apollo AI financing total. Q2 2026 data expands the financial architecture and shows it is growing, not static'
     - mechanism_id: 109
-      connection: 'Mechanism #109 documented Engadget Google privacy vocabulary zero-out. The XPV deal makes Google a direct
-        financial partner of Apollo (Google TPUs are the hardware), strengthening the incentive for soft Google coverage at
-        Yahoo publications'
+      connection: 'Mechanism #109 documented Engadget Google privacy vocabulary zero-out. The XPV deal uses Broadcom XPUs
+        (not Google TPUs); Google''s connection to Apollo is through the Yahoo Search Alliance rather than hardware supply.
+        The Engadget-Google coverage softness is more attributable to Yahoo''s advertising and search dependency on Google
+        than the XPV deal specifically'
     - mechanism_id: 110
       connection: 'Mechanism #110 documented Future plc''s 60%+ Google revenue dependency with 67% profit decline. Apollo/Yahoo
         is a DIFFERENT ownership archetype — private equity infrastructure play vs. traffic-dependent publisher — but the
@@ -10338,6 +10340,13 @@ cross_publication_findings:
     - 6
     - 30
     - 76
+    testable_predictions:
+    - Engadget's next review of a Google smart glasses product will continue to contain zero privacy/surveillance vocabulary
+      while the next Meta glasses review will contain 10+ privacy terms
+    - If Yahoo's Google Search Alliance is weakened or terminated, Engadget's privacy vocabulary for Google products should
+      increase toward parity with Meta coverage
+    - Engadget will continue to assign Google hardware coverage to product-beat reporters and Meta hardware coverage to privacy-beat
+      reporters, maintaining the beat segregation pattern
   future_plc_eic_competitive_framing_asymmetry:
     mechanism_id: 110
     date_added: '2026-08-15'
@@ -10447,6 +10456,13 @@ cross_publication_findings:
       relationship: same_archetype
     - mechanism_id: 109
       relationship: same_archetype
+    testable_predictions:
+    - Tom's Guide next Meta smart glasses review will include qualification hedges (but/however/where they need work) while
+      next Google glasses coverage will use aspirational/combative framing with zero equivalent hedging
+    - If Future plc reduces Google revenue dependency below 40%, Meta coverage qualification rate should decrease from 75%
+      toward parity with Google/Samsung coverage tone
+    - Tom's Guide EIC-level contributors (Spoonauer, Prospero) will continue to use combative language positioning Google
+      as the hero entity in comparative smart glasses coverage
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
