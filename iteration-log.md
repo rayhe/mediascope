@@ -1,3 +1,21 @@
+## Iteration #142 — Sun 2026-08-16 13:00 PT (Type D: Test & Verify)
+
+**Focus: Cross-validation of mechanisms #134-136, backref integrity, doc sync**
+
+**Issues Found & Fixed:**
+
+1. **Mechanism #136 missing `discovery_date`** — added `2026-08-16`
+2. **5 missing backrefs to #136** — mechanisms #61 (Apple News pre-N50 alignment), #43 (dual-client litigation), #47 (Meta ad revenue antagonism), #101 (Apple N50 privacy-hero cascade), and #134 (WIRED remediation silence) all lacked backrefs to #136 despite #136 referencing them. All 5 added.
+3. **Backrefs to #135 confirmed intact** — #130, #131, #132, #134 all had correct backrefs from iteration #140.
+4. **README/ARCHITECTURE test count stale** — was 419 files, now 420 (new test file). Test count format had `~` prefix breaking regex in 01am cross-validation test. Fixed format and count.
+5. **Prior cross-validation test failure fixed** — `test_type_d_01am_cross_validation_aug16.py::TestDocSyncIntegrity::test_readme_test_file_count_matches_disk` was failing due to README count format. Now passes.
+
+**Deliverables:**
+- `tests/test_type_d_1pm_cross_validation_aug16.py` — 11 classes, 76 tests, all passing
+- `profiles/competitor-coverage-research.yaml` — 5 backrefs added, discovery_date fixed
+- README + ARCHITECTURE synced (420 files, ~14,708 tests, 136 mechanisms)
+- Prior 01am cross-validation failure resolved
+
 ## Iteration #141 — Sun 2026-08-16 12:00 PT (Type C: Financial Incentive Mapping)
 
 **Focus: Apple Siri AI Quad-Channel Publisher Financial Architecture Pre-N50 (Mechanism #136)**
