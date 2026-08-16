@@ -12459,6 +12459,85 @@ cross_publication_findings:
       - https://business-news-today.com/versant-media-nasdaq-vsnt-buys-stockstory-to-expand-cnbcs-ai-driven-investing-platform/
       - https://www.thewrap.com/industry-news/deals-ma/versant-comcast-spinoff-closes/
 
+  cnbc_versant_post_spinoff_smart_glasses_coverage_selection:
+    mechanism_id: 129
+    mechanism_name: 'CNBC (Versant) Post-Spinoff Smart Glasses Coverage Selection — Samsung/Google Product Preview vs Meta Privacy-Cost Framing'
+    finding_type: competitor_coverage_deep_dive
+    rotation_type: A
+    discovery_date: '2026-08-16'
+    test_file: tests/test_cnbc_versant_post_spinoff_smart_glasses_coverage_selection_aug16.py
+    domain: wearables_coverage_asymmetry
+    publications:
+      - CNBC (Versant Media Group)
+    parent_entity: 'Versant Media Group (NASDAQ: VSNT)'
+    competitor_pair: Samsung/Google vs Meta
+    finding_summary: >
+      First empirical test of mechanism #128 predictions. After Versant Media Group's
+      January 2026 spinoff from Comcast, CNBC's smart glasses coverage exhibits
+      entity-selective framing. Samsung/Google Galaxy Glasses (MWC March 2026,
+      Google I/O May 2026) receive aspirational product-feature language with extended
+      executive interview access (Jay Kim EVP, James Choi) and zero privacy vocabulary,
+      while Meta's smart glasses are persistently framed through RL losses ($80B+
+      cumulative, $4.03B Q1 2026) and privacy regulatory backlash. Samsung Galaxy
+      Glasses share identical privacy surface area to Meta Ray-Ban (camera, AI cloud
+      processing, LED indicator, microphones) and published NO data retention policy
+      as of I/O 2026 — yet CNBC asked zero data retention questions. Samsung is the
+      4th-largest global advertiser ($9.7B/yr); advertising matters ~33x more to Versant
+      post-spinoff. Meta IS also a CNBC advertiser but receives adversarial framing,
+      modulated by the safe target coefficient (#8): accumulated privacy precedent
+      makes adversarial Meta coverage editorially safe despite the advertising relationship.
+    samsung_google_framing:
+      vocabulary: aspirational/product-feature
+      privacy_vocabulary_count: 0
+      executive_interviews: true
+      executives_quoted:
+        - Jay Kim (EVP Mobile, Samsung)
+        - James Choi (exec, Samsung)
+      sample_terms:
+        - premium
+        - mass scale
+        - universal everyday appeal
+        - intelligent eyewear
+        - eye-level camera
+    meta_framing:
+      vocabulary: fiscal-alarm/privacy-adversarial
+      privacy_vocabulary_count: 8+
+      executive_interviews: false
+      sample_terms:
+        - money pit
+        - privacy lightning rod
+        - flooding the market
+        - up in arms
+        - class-action
+        - cumulative operating losses more than $80 billion
+    identical_privacy_surface_area:
+      - Both have cameras (Samsung 12MP IMX681 / Meta ultra-wide)
+      - Both have AI cloud processing (Gemini / Meta AI)
+      - Both have LED privacy indicators
+      - Both have microphones for ambient audio
+      - Samsung published NO data retention policy as of I/O 2026
+      - Meta has disclosed retention (voice stored up to 1 year)
+    related_mechanisms:
+      - 128
+      - 8
+      - 106
+    confounders:
+      - factor: Meta accumulated privacy precedent
+        strength: STRONG
+      - factor: Google Glass failure creates redemption narrative
+        strength: MODERATE
+      - factor: Samsung/Google pre-launch optimism bias
+        strength: MODERATE
+      - factor: Executive access reciprocity
+        strength: MODERATE
+      - factor: Market leader scrutiny premium
+        strength: WEAK
+    source_urls:
+      - https://www.eweek.com/news/samsung-galaxy-glasses-ai-smart-glasses-launch/
+      - https://www.eweek.com/news/samsung-google-first-android-xr-smart-glasses/
+      - https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+      - https://www.thestreet.com/technology/meta-smart-glasses-always-on-feature-privacy-concerns
+      - http://www.techtimes.com/articles/316697/20260515/google-brings-android-xr-glasses-i-o-2026-smart-glasses-face-privacy-reckoning.htm
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

@@ -5269,6 +5269,19 @@ entities:
     mechanism_type: corporate_restructuring_incentive_amplification
     related_mechanisms:
       - 128
+      - 129
+    smart_glasses_coverage_empirical_test:
+      mechanism_id: 129
+      finding: >
+        First empirical test of #128 predictions. CNBC smart glasses coverage shows
+        entity-selective framing: Samsung/Google Galaxy Glasses receive aspirational
+        product-feature language with zero privacy vocabulary, while Meta glasses receive
+        fiscal-alarm/privacy-adversarial framing. Samsung is 4th-largest global advertiser
+        ($9.7B/yr); advertising revenue matters ~33x more to Versant post-spinoff.
+      samsung_coverage_vocabulary: aspirational
+      samsung_privacy_terms: 0
+      meta_coverage_vocabulary: fiscal-alarm
+      meta_privacy_terms: 8+
     notes: >
       Novel mechanism: corporate spinoff transforms CNBC from insulated-inside-conglomerate
       to directly-exposed-inside-standalone-media-company. Advertising dependency amplified

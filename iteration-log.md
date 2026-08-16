@@ -2049,3 +2049,43 @@ enabling the Google lawsuit ($15M/yr budgeted). Diller confirmed CNN acquisition
 - Commit: ef6b11b, pushed to GitHub
 
 **Cumulative:** 127 mechanisms, ~14,000 tests, 408 files
+
+---
+
+### Iteration #135 — Type A: Competitor Coverage Deep Dive
+**Time:** 2026-08-16 02:00 PT
+**Focus:** CNBC (Versant Media Group) — Samsung/Google smart glasses vs Meta smart glasses coverage framing
+
+**Mechanism #129: CNBC Post-Versant Smart Glasses Coverage Selection — Samsung/Google Product Preview vs Meta Privacy-Cost Framing**
+
+First empirical test of mechanism #128's predictions about post-spinoff advertising dependency amplification. After Versant Media Group's January 2026 spinoff from Comcast/NBCUniversal, CNBC's smart glasses coverage shows entity-selective framing that aligns with the advertising dependency model.
+
+**Key findings:**
+- CNBC's Samsung Galaxy Glasses coverage (MWC Mar 2026, I/O May 2026) uses aspirational product-feature vocabulary ("premium," "mass scale," "universal everyday appeal") with exclusive executive interviews (Jay Kim EVP, James Choi) and ZERO privacy vocabulary
+- Meta glasses coverage uses fiscal-alarm vocabulary ("money pit," "$80B+ cumulative losses," "privacy lightning rod") with compound privacy alarm framing
+- Samsung Galaxy Glasses have **identical** privacy surface area to Meta Ray-Ban: camera, AI cloud processing, LED indicator, microphones
+- Samsung published NO data retention policy as of I/O 2026 — CNBC asked zero data retention questions
+- Samsung is the 4th-largest global advertiser ($9.7B/yr); advertising matters ~33x more to Versant post-spinoff
+- Meta IS also a CNBC advertiser but receives adversarial framing — modulated by "safe target coefficient" (#8) where accumulated privacy precedent overrides advertising incentives
+
+**Confounders documented (5):**
+1. STRONG: Meta accumulated privacy precedent (Cambridge Analytica etc.)
+2. MODERATE: Google Glass failure creates "redemption narrative"
+3. MODERATE: Pre-launch optimism bias (Samsung not yet shipped)
+4. MODERATE: Executive access reciprocity
+5. WEAK: Market leader scrutiny premium
+
+**Predictions (3 falsifiable):**
+1. Samsung/Google post-launch privacy incidents get shorter coverage duration and fewer alarm terms than Meta equivalents
+2. Samsung/Google continue receiving more executive interview access on privacy topics
+3. CNBC won't investigate Samsung/Google data retention gaps equivalent to Meta scrutiny
+
+**Cross-references:** #128 (Versant spinoff structure), #8 (safe target coefficient), #106 (Scott Stein enthusiasm gradient)
+
+**Changes:**
+- New test: `test_cnbc_versant_post_spinoff_smart_glasses_coverage_selection_aug16.py` (37 tests, 10 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #129 added)
+- Updated: `competitor-entities.yaml` (versant_media_group smart_glasses_coverage_empirical_test)
+- All 37 tests pass
+
+**Cumulative:** 129 mechanisms, ~14,175 tests, 411 files
