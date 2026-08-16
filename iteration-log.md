@@ -1,3 +1,63 @@
+## Iteration #128 — Sat 2026-08-15 18:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #123: Lisa Eadicicco CNN Cross-Entity Coverage Selection Asymmetry — Same Journalist, Same Week, Different Privacy Standards for Identical Products**
+
+CNN Business Tech Editor Lisa Eadicicco published two articles within 4 days that
+demonstrate coverage selection asymmetry for camera-equipped smart glasses:
+
+**SAMSUNG (Jul 22, 2026):** "Can Samsung outmaneuver Apple's cool factor? We may soon find out"
+- Covered Samsung's Galaxy Unpacked event
+- Samsung debuted Galaxy Glasses (camera, AI, Gemini) at this SAME event
+- Article covered ONLY foldable phones — Galaxy Glasses OMITTED entirely
+- Smart glasses mentioned: ZERO times
+- Privacy vocabulary: ZERO terms
+- Template: competitive product enthusiasm
+
+**META (Jul 26, 2026):** "AI devices that see, listen and record: Are we ready for the post-smartphone world?"
+- Multi-month hands-on review of Meta Ray-Ban glasses (+ Amazon Bee, Plaud)
+- 8+ privacy alarm terms: "consent is disintegrating," "privacy at risk,"
+  "misused in dangerous ways," "filming without consent," "harder to spot,"
+  Lorde's "F**k the glasses," "dressing room," "discretely worn"
+- 2 adversarial expert sources (EPIC's Calli Schroeder, Santa Clara's Irina Raicu)
+- Samsung mentioned ONCE in passing with ZERO privacy vocabulary
+- Template: comprehensive privacy indictment
+
+**THE ASYMMETRY:** Samsung announced camera-equipped smart glasses at the same
+Unpacked event Eadicicco covered on Jul 22. She chose to write about foldable
+phones, not glasses. Four days later, her privacy deep-dive applied comprehensive
+scrutiny to Meta's glasses while mentioning Samsung's identical product once with
+zero alarm terms. The choice of WHAT to cover from a multi-product event IS the
+coverage selection asymmetry.
+
+**CAREER TRAJECTORY:** 6-publication career (Tom's Guide → IBTimes → TIME →
+Business Insider → CNET → CNN Business). 2-year Apple beat at BI. At CNET,
+tried Google's Project Astra camera glasses positively (zero privacy concerns).
+Career affinity for Apple/Google ecosystems.
+
+**CNN FINANCIAL CONTEXT:** Samsung and Google are major CNN advertising/distribution
+partners. Meta's digital advertising competes with WBD for ad revenue. Structural
+incentive for differential treatment.
+
+**5 confounders documented** (2 STRONG, 2 MODERATE, 1 WEAK):
+1. Meta shipping, Samsung pre-launch (STRONG — rebutted: pre-launch is when scrutiny matters most)
+2. Hands-on vs announcement (STRONG — rebutted: valid for review, invalid for category-level privacy analysis)
+3. Meta has 7M+ users (MODERATE — rebutted: article mentions Samsung, implies they warrant scrutiny)
+4. Meta has existing backlash (MODERATE — rebutted: explains proportional, not zero, scrutiny)
+5. Different article focus (WEAK — rebutted: choosing foldables over glasses IS the selection bias)
+
+**Cross-references:** Extends #122 (TechCrunch same pattern), consistent with #33
+(competitor hardware zero scrutiny), adds career trajectory dimension not in prior
+mechanisms. CNN is the first mainstream news outlet in the wearables asymmetry corpus.
+
+**Files:**
+- tests/test_lisa_eadicicco_cross_entity_coverage_selection_asymmetry_aug15.py (37 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #123)
+- README.md + docs/ARCHITECTURE.md (stats: 403 test files, ~14,017 tests, 123 mechanisms)
+
+**Stats:** 403 test files | ~14,017 tests | 123 mechanisms
+
+---
+
 ## Iteration #127 — Sat 2026-08-15 17:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Mechanism #122: TechCrunch Camera-Equipped Glasses Privacy Vocabulary Zero — Snap SPECS vs Meta Ray-Ban Same-Publication Privacy Indictment Asymmetry**

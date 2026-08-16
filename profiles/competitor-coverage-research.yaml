@@ -15319,4 +15319,69 @@ publications:
       relationship: consistent
       note: Competitor hardware consistently receives zero privacy scrutiny
 
+  lisa_eadicicco_cnn_coverage_selection_asymmetry:
+    mechanism_id: 123
+    journalist: Lisa Eadicicco
+    publication: CNN Business
+    date: 2026-07-22 to 2026-07-26
+    mechanism_type: coverage_selection_and_privacy_vocabulary_bifurcation
+    finding_summary: >
+      CNN Tech Editor Lisa Eadicicco covered Samsung's Galaxy Unpacked (Jul 22, 2026)
+      writing ONLY about foldable phones, omitting Samsung's Galaxy Glasses debut from
+      the same event. Four days later (Jul 26), she published a comprehensive privacy
+      deep-dive about Meta's Ray-Ban glasses with 8+ privacy alarm terms, 2 adversarial
+      expert sources (EPIC, Santa Clara U), and Lorde's "F**k the glasses" condemnation.
+      Samsung was mentioned once in passing with zero privacy vocabulary applied.
+      Samsung's Galaxy Glasses have identical capabilities (camera, AI, recording, LED).
+    meta_coverage:
+      article: "AI devices that see, listen and record: Are we ready for the post-smartphone world?"
+      url: https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
+      date: 2026-07-26
+      privacy_alarm_terms: 8
+      expert_adversarial_sources: 2
+      pop_culture_condemnation: 1
+      template: comprehensive_privacy_indictment
+    samsung_coverage:
+      article: "Can Samsung outmaneuver Apple's cool factor? We may soon find out"
+      url: https://www.cnn.com/2026/07/22/tech/samsung-galaxy-z-fold-8-apple-foldable-iphone
+      date: 2026-07-22
+      privacy_alarm_terms: 0
+      smart_glasses_mentions: 0
+      template: competitive_product_enthusiasm
+    career_trajectory:
+      publications: ["Tom's Guide", "IBTimes", "TIME", "Business Insider", "CNET", "CNN Business"]
+      apple_beat: "Business Insider 2019-2021"
+      google_positive_demo: "CNET Project Astra glasses demo"
+      note: "Career affinity for Apple/Google ecosystems; defaults to privacy scrutiny for Meta"
+    financial_context:
+      samsung_cnn_relationship: major_advertising_client
+      google_cnn_relationship: advertising_and_distribution_partner
+      meta_cnn_relationship: competitive_antagonist_digital_ad_revenue
+    confounders:
+      - type: "Meta shipping, Samsung pre-launch"
+        strength: STRONG
+        rebuttal: "Pre-launch is when scrutiny matters most; article frames concern at category level"
+      - type: "Meta has 7M+ users"
+        strength: MODERATE
+        rebuttal: "Article mentions Samsung — acknowledging the product implies comparable scrutiny"
+      - type: "Hands-on vs announcement"
+        strength: STRONG
+        rebuttal: "Valid for product review; invalid for category-level privacy analysis"
+      - type: "Meta has existing backlash"
+        strength: MODERATE
+        rebuttal: "Explains proportional scrutiny for Meta, not zero scrutiny for Samsung"
+      - type: "Different article focus"
+        strength: WEAK
+        rebuttal: "Choosing foldables over glasses at a multi-product event IS coverage selection"
+    cross_references:
+      - mechanism_id: 122
+        relationship: extends
+        note: Same privacy vocabulary zero pattern, now at mainstream news outlet CNN
+      - mechanism_id: 33
+        relationship: consistent
+        note: Competitor hardware zero scrutiny pattern continues at CNN
+      - mechanism_id: 121
+        relationship: consistent
+        note: Same cross-entity pattern, adds career trajectory analysis dimension
+
 research_period: 2024-08-01 to 2026-08-15
