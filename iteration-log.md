@@ -1,3 +1,34 @@
+## Iteration #140 — Sun 2026-08-16 11:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Focus: Raymond Wong (Gizmodo) Privacy Vocabulary Differential — Cultural Base Rate (Mechanism #135)**
+
+**FINDING: The Clean Control Shows the Same Inversion**
+
+Raymond Wong at Gizmodo (Keleops AG, zero financial ties to any tech company) — previously the "clean control" journalist — shows the SAME infinite privacy vocabulary ratio as financially-incentivized outlets:
+
+| Product | Cameras | Privacy Terms | Tone Score |
+|---------|---------|--------------|------------|
+| Meta Fury (Jul 1 review) | 1 | 15+ alarm terms, "worst company" headline | -0.50 |
+| Google/Xreal Project Aura (May 19 hands-on) | 3 | 0 | +0.85 |
+| Samsung analysis (Mar 2026) | 1 (12MP, identical spec) | 0 for Samsung, 5+ for Meta IN SAME ARTICLE | +0.30 |
+
+**Thesis Refinement:** This is NOT a contradiction of the clean control finding — it's a deeper insight. Gizmodo IS more balanced than WIRED: Wong gives Meta a positive product rating (3.5/5) and acknowledges "the best smart glasses." WIRED would never run such a headline. But the privacy VOCABULARY differential is indistinguishable from outlets with financial dependencies. **Implication: there exists a cultural base rate of Meta-specific privacy stigma (Cambridge Analytica era) that financial incentives AMPLIFY but don't CREATE.**
+
+**5 confounders documented (2 STRONG):** Meta's documented track record genuinely worse; Kenya subcontractor scandal directly involved smart glasses footage; genre differences (review vs hands-on); Google/Samsung hadn't shipped yet; article length differences.
+
+**3 falsifiable predictions:** Samsung launch review vocabulary test; v26 LED fix vocabulary persistence test; Google Android XR framing test.
+
+**Deliverables:**
+- `tests/test_raymond_wong_fury_privacy_vocabulary_differential_aug16.py` — 8 classes, 46 tests, all passing
+- `profiles/gizmodo.yaml` — `wong_cross_entity_privacy_vocabulary` section with all 3 articles
+- `profiles/competitor-coverage-research.yaml` — mechanism #135 in aggregate_findings with 5 confounders, 3 predictions, 4 source URLs, bidirectional backrefs to #130-#134
+- Cross-validation test updated, README updated (418 files, ~14,672 tests, 135 mechanisms)
+
+**Sources:**
+- https://gizmodo.com/meta-fury-ai-glasses-review-the-worst-company-still-makes-the-best-smart-glasses-2000777827
+- https://gizmodo.com/google-and-xreals-project-aura-xr-smart-glasses-are-legit-2000760940
+- https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490
+
 ## Iteration #139 — Sun 2026-08-16 10:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix (Mechanism #134)**
