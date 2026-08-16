@@ -1,3 +1,34 @@
+## Iteration #141 — Sun 2026-08-16 12:00 PT (Type C: Financial Incentive Mapping)
+
+**Focus: Apple Siri AI Quad-Channel Publisher Financial Architecture Pre-N50 (Mechanism #136)**
+
+**DISCOVERY: Apple Building Fourth Publisher Financial Dependency Channel**
+
+WSJ reported (Aug 13, 2026) Apple is in talks with publishers to license content for Siri AI — nine-figure budget ($100M+), variable pay-per-use compensation, multiyear deals. This creates a FOURTH simultaneous publisher financial dependency channel:
+
+| Channel | Revenue/Structure | Publishers |
+|---------|-------------------|------------|
+| Apple News Plus | 50% of $12.99/mo | 400+ |
+| Apple Advertising | Record $30.7B Services Q3 FY2026 | Ad-supported publishers |
+| App Store Commission | 15-30% of subscriptions | All iOS publishers |
+| Siri AI Content Licensing | Nine-figure budget, per-use | Negotiating |
+
+**Competitive Channel Count:** Apple (4) vs Google (2), Microsoft (2), Amazon (2), OpenAI (1), Meta (0).
+
+**Timing:** All four converge BEFORE Apple N50 smart glasses launch (WWDC Jun 2027). Publishers signing Siri AI deals will have quad-channel Apple dependency exactly when Apple enters direct competition with Meta.
+
+**Condé Nast Compound Exposure:** 16 News Plus titles + in Siri AI pipeline + Microsoft PCM + OpenAI deal + Perplexity deal = quad-channel Apple dependency with zero Meta financial channels.
+
+**6 confounders (2 STRONG):** Deals not yet signed; Apple may offer genuinely better terms. 3 MODERATE: variable pay weaker than lump sums, editorial independence, modest per-publisher amounts. 1 WEAK: News Plus declining importance.
+
+**4 testable predictions.** Cross-refs #61, #43, #134, #47, #101.
+
+**Deliverables:**
+- `tests/test_apple_siri_ai_quad_channel_publisher_dependency_aug16.py` — 8 classes, 36 tests, all passing
+- `profiles/competitor-entities.yaml` — siri_ai_content_licensing + quad_channel_publisher_dependency sections, mechanism #61 backref
+- `profiles/competitor-coverage-research.yaml` — mechanism #136 in cross_publication_findings
+- README + ARCHITECTURE updated (419 files, ~14,727 tests, 136 mechanisms)
+
 ## Iteration #140 — Sun 2026-08-16 11:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Focus: Raymond Wong (Gizmodo) Privacy Vocabulary Differential — Cultural Base Rate (Mechanism #135)**
