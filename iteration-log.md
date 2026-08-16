@@ -1,3 +1,106 @@
+## Iteration #139 — Sun 2026-08-16 10:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Focus: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix (Mechanism #134)**
+
+**FINDING: Alarm Without Follow-Through**
+
+WIRED published "The Rise of the Ray-Ban Meta Creep" (March 2026) — a major adversarial
+feature documenting LED disabling services, pickup artist filming, and "glasshole" culture.
+WIRED then published a NameTag facial recognition investigation (June 4, 2026).
+
+On July 7, 2026, Meta shipped the v26 mandatory update:
+- Camera disabled if LED tampered/destroyed (industry first)
+- Marketplace listings for tampering services removed
+- Legal action against tampering businesses
+- Mandatory update across all models
+
+Meta: "No other kind of camera has done this, and we're proud to lead the industry forward."
+
+**WIRED published ZERO articles covering Meta's proactive fix.**
+
+7+ other publications covered it: The Verge (Alex Himel interview), 9to5Google,
+Digital Trends, Android Police, Road to VR, PetaPixel, Engadget.
+
+19 days later (July 26), Apple's N50 delay for "privacy" received coverage — no shipped
+product, no actual fix, just a promise. The contrast: Meta shipped an actual fix →
+zero WIRED coverage. Apple delayed with a promise → coverage.
+
+**Novel mechanism type: remediation_coverage_selection_silence** — publication raises alarm,
+company addresses exact issue, publication doesn't cover fix, ensuring original alarm
+narrative persists uncorrected.
+
+**Financial context:**
+- Condé Nast-OpenAI deal (Aug 2024), zero Meta content deals
+- Advance Publications → $10B+ Reddit stake → Google data deal
+- Meta is Condé Nast's single largest advertising competitor
+
+**Confounders documented (5):**
+1. STRONG: Fix may be considered insufficient (doesn't address "super sensing" plans)
+2. STRONG: Editorial judgment — incremental update not worthy of standalone article
+3. MODERATE: Subscription model prioritizes investigation over PR coverage
+4. MODERATE: Resource allocation — limited wearables beat bandwidth
+5. WEAK: Publishing lag — search indexes may miss articles
+
+**Cross-references:** #8, #30, #33, #101, #118, #130
+
+**Changes:**
+- New test: `test_wired_meta_remediation_coverage_selection_silence_aug16.py` (55 tests)
+- Updated: `profiles/wired.yaml` (mechanism #134)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #134)
+- Updated: README.md, ARCHITECTURE.md (417 files, ~14,626 tests)
+- All 55 tests pass
+
+**Stats:** 417 test files | ~14,626 tests | 134 mechanisms
+
+## Iteration #138 — Sun 2026-08-16 09:00 PT (Type D: Test & Verify)
+
+**Focus: Cross-validation of mechanisms #129-#133, bidirectional cross-reference repair, doc sync**
+
+**BUGS FOUND AND FIXED:**
+
+1. **Missing bidirectional cross-references (15 total):** Mechanisms #129-133 referenced
+   older mechanisms (#30, #106, #110, #114, #115, #116, #122, #126, #128, #130, #132)
+   but NONE of those older mechanisms referenced back. Added 15 backrefs:
+   - #128 → #129 (CNBC post-spinoff confirms prediction)
+   - #106 → #129 (enthusiasm gradient replicated at Versant)
+   - #110 → #131 (control calibration quantifies institutional amplification)
+   - #114 → #131 (triple dependency vs natural baseline)
+   - #115 → #131 (TechRadar bifurcation vs independent baseline)
+   - #116 → #131 (Hicks suppression vs independent baseline)
+   - #122 → #131, #132 (TechCrunch zero-scrutiny baseline + Boxall replication)
+   - #126 → #131, #132 (beat assignment independence + cross-publisher pattern)
+   - #130 → #131, #132, #133 (control, Boxall amplification, financial chain)
+   - #30 → #132 (genre-determined framing at different owner — Valnet)
+   - #132 → #133 (financial chain explains zero scrutiny)
+
+2. **Doc sync failures (3 fixes):**
+   - README.md test file count 415→416, total tests 14475→14571
+   - ARCHITECTURE.md test file count 415→416
+   - 2 test files missing from README + ARCHITECTURE tables
+     (`test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py`,
+      `test_type_d_09am_cross_validation_aug16.py`)
+
+3. **New cross-validation test:** `test_type_d_09am_cross_validation_aug16.py`
+   (96 tests, 14 classes) — all 96 passing:
+   - TestMechanismStructuralIntegrity: #129-133 have finding_summary, discovery_date, test_file, source_urls, confounders
+   - TestMechanismIDContiguity: no gaps, max=133, no duplicates
+   - TestCrossReferenceBidirectionality: all 15 backrefs verified
+   - TestConfounderQuality: STRONG factors present, strength ratings on all
+   - TestEntityCountConsistency: versant_media_group + snap entities, ≥15 total
+   - TestFileExistenceAndImportability: all 5 aug16 mechanism test files present + importable
+   - TestMechanism129Content: #128 prediction test, Samsung/Google vs Meta comparison
+   - TestMechanism130Content: hardware comparison (4 vs 1 cameras), Gizmodo clean control, amplification chain
+   - TestMechanism131Content: control calibration data, 9to5Google ~1.7:1 ratio, WIRED/Future plc infinite ratios
+   - TestMechanism132Content: 3 articles, privacy inversion (0 vs 7+ terms), same Snapdragon chip
+   - TestMechanism133Content: 3 financial connections, Meta zero connections, 3+ falsifiable predictions
+   - TestDocSyncIntegrity: README/ARCHITECTURE counts match disk, all aug16 files listed
+   - TestRegressionGuards: #125-128 intact
+   - TestFindingSummaryDistinctiveness: all pairwise Jaccard <0.7
+
+**Pushed to GitHub:** commit 9e02957
+
+**Stats:** 416 test files | ~14,571 tests | 133 mechanisms
+
 ## Iteration #137 — Sun 2026-08-16 08:00 PT (Type C: Financial Incentive Mapping)
 
 **Focus: Snap-Perplexity-Publisher Financial Chain (Mechanism #133)**

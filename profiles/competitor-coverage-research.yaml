@@ -16651,4 +16651,103 @@ publications:
       - mechanism_id: 132
         relationship: "Boxall privacy inversion — financial chain explains Snap zero-scrutiny pattern"
 
+  wired_remediation_coverage_selection_silence:
+    mechanism_id: 134
+    mechanism_name: >-
+      WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix
+      Not Covered Despite WIRED Raising the Original Alarm
+    finding_type: remediation_coverage_selection_silence
+    date_added: '2026-08-16'
+    entities_analyzed:
+    - Meta
+    - Apple
+    - Condé Nast
+    publications:
+    - WIRED
+    - The Verge
+    - 9to5Google
+    - Digital Trends
+    - Android Police
+    - Road to VR
+    - PetaPixel
+    - Engadget
+    finding_summary: >-
+      WIRED published "The Rise of the Ray-Ban Meta Creep" (March 2026) documenting
+      LED disabling services and "glasshole" culture, then a second adversarial
+      investigation (June 4, 2026) about dormant NameTag facial recognition code in
+      Meta's smart glasses app. On July 7, 2026, Meta shipped v26 mandatory update:
+      camera disabled if LED tampered/destroyed, marketplace listings removed, legal
+      action against tampering businesses. Meta VP Alex Himel told The Verge the
+      update was in development before complaints intensified. Meta: "No other kind
+      of camera has done this."
+
+      WIRED published ZERO articles covering Meta's v26 LED privacy fix. 7+ other
+      publications (The Verge, 9to5Google, Digital Trends, Android Police, Road to VR,
+      PetaPixel, Engadget) all covered the update. 19 days later (July 26), Apple's
+      N50 delay for "privacy" — no shipped product, no actual fix — received coverage
+      including from WIRED. The entity that shipped a real fix (Meta) got zero WIRED
+      coverage. The entity that delayed a product with a promise (Apple) got coverage.
+
+      Novel mechanism type: remediation_coverage_selection_silence — when a publication
+      that raised an alarm about a company doesn't cover that company's proactive fix,
+      ensuring the original alarm narrative persists uncorrected.
+
+      Financial predictor: Condé Nast has zero content licensing deals with Meta,
+      has an OpenAI deal (Aug 2024), and Advance Publications ($10B+ Reddit stake)
+      has indirect Google revenue flow. Meta is Condé Nast's largest advertising
+      competitor.
+    wired_original_alarm_articles:
+      - title: "The Rise of the Ray-Ban Meta Creep"
+        date: "2026-03"
+        url: "https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/"
+      - title: "Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones"
+        date: "2026-06-04"
+    meta_v26_fix_date: "2026-07-07"
+    wired_fix_coverage_count: 0
+    other_outlet_fix_coverage_count: 7
+    apple_n50_announcement_date: "2026-07-26"
+    gap_meta_fix_to_apple_announcement_days: 19
+    confounders:
+      - strength: STRONG
+        description: >-
+          WIRED may consider the fix insufficient — LED tamper detection doesn't
+          address always-on "super sensing" plans reported by FT July 9
+      - strength: STRONG
+        description: >-
+          Editorial judgment — v26 update is incremental, not a major feature story.
+          However, 7+ other outlets disagreed with that judgment
+      - strength: MODERATE
+        description: >-
+          WIRED's subscription model prioritizes investigation over PR coverage
+      - strength: MODERATE
+        description: >-
+          Resource allocation — limited wearables beat bandwidth, though WIRED
+          published other wearables articles in the same July window
+      - strength: WEAK
+        description: >-
+          Publishing lag — search indexes may not capture every WIRED article,
+          though the fix is 40+ days old
+    source_urls:
+    - "https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/"
+    - "https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/"
+    - "https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/"
+    - "https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/"
+    - "https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/"
+    - "https://petapixel.com/2026/07/08/if-users-conceal-the-recording-light-on-smart-glasses-meta-says-it-will-disable-the-camera/"
+    - "https://www.engadget.com/2210283/meta-disable-camera-glasses-tamper-with-recording-led/"
+    test_file: tests/test_wired_meta_remediation_coverage_selection_silence_aug16.py
+    related_mechanisms:
+      - mechanism_id: 8
+        relationship: "Emotional register / safe-target coefficient — Meta as safe target predicts coverage selection"
+      - mechanism_id: 30
+        relationship: "Chokkattu cross-entity framing — same wearables beat, same entity selectivity"
+      - mechanism_id: 33
+        relationship: "WIRED Meta-exclusive privacy vocabulary — original alarm used entity-selective language"
+      - mechanism_id: 101
+        relationship: "Privacy innovation attribution inversion — Meta's actual innovation uncredited"
+      - mechanism_id: 118
+        relationship: "Safety-research framing inversion — same WIRED differential editorial standard"
+      - mechanism_id: 130
+        relationship: "Snap competitive privacy positioning — Apple/Snap credited for promises, Meta uncredited for shipping"
+
 research_period: 2024-08-01 to 2026-08-16

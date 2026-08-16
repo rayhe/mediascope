@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,571 | Across 416 test files |
+| Tests | ~14,626 | Across 417 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14571 tests** across 416 test files, each covering a different analytical capability:
+MediaScope has **14626 tests** across 417 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -885,6 +885,7 @@ MediaScope has **14571 tests** across 416 test files, each covering a different 
 | `test_techcrunch_yahoo_apollo_privacy_indictment_framing_aug14.py` | 46 | Mechanism #104: TechCrunch (Yahoo/Apollo) Privacy-Improvement-As-Indictment Framing. TechCrunch published adversarial Meta glasses privacy coverage on Jul 8, 2026 (same day as v26 LED anti-tamper update), framing the improvement as cynical ("seem less creepy...says otherwise"), invoking Cambridge Analytica (8 years prior). Samsung Galaxy Glasses launched 14 days later with identical hardware (Snapdragon AR1 Gen 1, camera, LED) and Google Gemini cloud processing, no published data retention policy. Zero TechCrunch adversarial Samsung privacy investigations. NEW FINANCIAL ARCHETYPE: Apollo Global Management (Yahoo's majority owner) co-financed $35B AI XPV Platform for Anthropic/OpenAI and $3.4B for xAI — $38B+ total, largest documented ownership-chain-to-competitor financial link. Confounding: Yahoo editorial independence, CEO anti-AI-scraping stance, causation NOT established. Extends #93, #89, #95, #100. 6 classes, 46 tests |
 | `test_joanna_stern_career_migration_natural_experiment_aug14.py` | 42 | Mechanism #105: Joanna Stern Career Migration Natural Experiment — Financial Structure Isolation. WSJ→New Things/NBC career migration (Apr 2026) provides the strongest natural experiment for isolating financial structure from journalist identity. At WSJ (News Corp: ~$50M/yr OpenAI + up to $50M/yr Meta balanced deals), Meta coverage was POSITIVE (+0.35). As independent (ZERO AI content deals), Meta coverage shifted to ADVERSARIAL (-0.65). 1.00-point tone swing — largest single-journalist shift in dataset. Samsung Galaxy Glasses (identical Snapdragon AR1 Gen 1 hardware, identical LED vulnerability): ZERO coverage. Snap Specs: neutral industry analysis on NPR. OpenAI gadget: curious, not adversarial. Reverse of Heikkilä pattern: both career migrations (opposite directions) converge on Meta-adversarial, confirming financial structure as predictor. 6 confounding factors (2 STRONG: market dominance + genuine privacy history; 2 MODERATE: Samsung pre-launch timing + audience economics; 2 WEAK: career brand-building + NBC editorial influence). 4 testable predictions. Cross-refs #100, #85, #60, #30, #101. 12 classes, 42 tests |
 | `test_snap_perplexity_publisher_financial_chain_aug16.py` | 40 | Mechanism #133: Snap-Perplexity-Publisher Financial Chain. Snap Inc. has THREE documented financial connections to publishers covering its products: (1) Discover direct revenue-sharing with Condé Nast (confirmed 2018 PMP beta), (2) Perplexity indirect ($400M deal, Perplexity → $42.5M publisher pool → Condé Nast), (3) OpenAI API indirect (My AI chatbot → OpenAI → Condé Nast Aug 2024 deal). Meta has ZERO financial chains to Condé Nast. Snap has 4 cameras (Specs) vs Meta 1, yet receives zero privacy scrutiny terms. Q2 2026: $1.60B rev (+19% YoY), 493M DAU, NA DAU -7%. Perplexity $400M revenue NOT yet recognized. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions. Cross-refs #35, #58, #130, #132. 9 classes, 40 tests |
+| `test_wired_meta_remediation_coverage_selection_silence_aug16.py` | 55 | Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix. WIRED published "The Rise of the Ray-Ban Meta Creep" (Mar 2026) documenting LED disabling services + NameTag investigation (Jun 4). On Jul 7, Meta shipped v26 mandatory update: camera disabled if LED tampered/destroyed, listings removed, legal action. WIRED published ZERO articles on fix. 7+ other outlets (Verge, 9to5Google, Digital Trends, Android Police, Road to VR, PetaPixel, Engadget) covered it. 19 days later, Apple N50 delay for "privacy" (no shipped product) received coverage. Novel type: remediation_coverage_selection_silence. Financial: Condé Nast-OpenAI deal, zero Meta deals, Advance-Reddit $10B+. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). Cross-refs #8, #30, #33, #101, #118, #130. 55 tests |
 
 ```bash
 # Run all tests
