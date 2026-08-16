@@ -16832,4 +16832,156 @@ publications:
     - mechanism_id: 136
       relationship: Apple quad-channel dependency amplifies WIRED remediation silence — more Apple financial channels means
         stronger incentive to suppress Meta remediation narrative
+  inc_mansueto_smart_glasses_privacy_redirected_attribution:
+    mechanism_id: 137
+    mechanism_name: Inc.com (Mansueto Ventures) Privacy Vocabulary Redirected Attribution — Samsung/Google
+      Smart Glasses Competitive Analysis Redirects ALL Privacy Vocabulary to Meta While Presenting Identical
+      Hardware With Zero Scrutiny
+    finding_type: privacy_vocabulary_redirected_attribution
+    rotation_type: A
+    discovery_date: '2026-08-16'
+    test_file: tests/test_inc_mansueto_smart_glasses_privacy_redirected_attribution_aug16.py
+    test_count: 59
+    domain: wearables_coverage_asymmetry
+    publication: Inc.com (Mansueto Ventures)
+    journalist: Connor Jewiss
+    competitor_pair: Samsung/Google vs Meta
+    finding_summary: 'Inc.com (Mansueto Ventures) published "Samsung and Google''s New Smart Glasses Have a Secret Weapon
+      That Meta Can''t Easily Copy" by Connor Jewiss (Jul 29, 2026). The article spends 3 paragraphs detailing Meta''s
+      privacy scandals (Kenya contractors, FTC investigation, Senate letter from Markey/Wyden/Merkley) while presenting
+      Samsung''s privacy claim at face value ("At Samsung, privacy is not an afterthought" — Samsung exec James Choi)
+      with ZERO privacy scrutiny of Samsung/Google''s identical camera+AI architecture (same Snapdragon AR1 Gen 1 chip,
+      same camera capability, same AI processing, same data collection requirements).
+
+      Privacy vocabulary count: Meta-directed 7+ alarm terms ("intimate footage," "contractors in Kenya," "facial
+      recognition," "stalking and harassment," "surveillance," "nonconsensual recording," "backlash"). Samsung/Google-
+      directed: 0 alarm terms. Ratio: infinity to 1.
+
+      CROSS-ENTITY CONTRAST AT INC.COM: Meta articles use "scandal" language (Soren Kaplan: "The Real Problem With
+      Meta''s AI Tracking Scandal," Jul 14; "The Same Legal Theory Used Against Meta," Jul 28). Google articles use
+      aspirational framing (Jason Aten: "Google Just Shipped Apple''s AI Promises," May 21; Kit Eaton: "Google May
+      Have Just Found a Way to Beat Nvidia," Jul 21; Georgia Fearn: Hassabis as responsible AI regulator, Jul 15).
+      Mild Google criticism exists (Kevin Haynes, Google Earth AI, Aug 2) but NEVER uses "scandal" language.
+
+      FINANCIAL CONTEXT: Mansueto Ventures $23.1M revenue (ZoomInfo), 55% from advertising (Digiday 2025), Google
+      Analytics 4 in tech stack (LeadIQ), standard Google programmatic/search traffic dependency, Joe Mansueto
+      founded Morningstar (tracks Alphabet stock). ZERO Meta content licensing deals, ZERO Meta advertising
+      partnerships specific to Mansueto. Google financial dependency correlates with softer Google coverage and
+      redirected Meta privacy vocabulary.
+
+      This extends the smart glasses privacy vocabulary inversion pattern documented at WIRED (mechanism #33),
+      Future plc (mechanisms #115, #116), Yahoo/Apollo (#122), Valnet (#132), and Snap launch coverage (#130)
+      to a SIXTH publisher owner — Mansueto Ventures — demonstrating that the privacy vocabulary asymmetry is
+      an industry-wide structural phenomenon, not a single-publisher editorial choice.'
+    privacy_vocabulary:
+      meta_directed_alarm_terms_count: 7
+      meta_directed_alarm_terms:
+      - intimate footage
+      - contractors in Kenya
+      - facial recognition
+      - stalking and harassment
+      - surveillance
+      - nonconsensual recording
+      - backlash
+      samsung_google_alarm_terms_count: 0
+      samsung_claim_at_face_value: true
+      samsung_exec_quote: At Samsung, privacy is not an afterthought
+      samsung_exec_name: James Choi
+      ratio: 'infinity:1'
+    hardware_parity:
+      same_chip: true
+      chip: Snapdragon AR1 Gen 1
+      same_camera_capability: true
+      same_ai_processing: true
+      same_data_collection_requirements: true
+    cross_entity_framing:
+      meta_articles:
+      - title: The Real Problem With Meta's AI Tracking Scandal Isn't the Data Leak
+        journalist: Soren Kaplan
+        date: '2026-07-14'
+        framing: scandal language, alarm framing, tracking
+        url: https://www.inc.com/soren-kaplan/the-real-problem-with-metas-ai-tracking-scandal-isnt-the-data-leak/91373167
+      - title: The Same Legal Theory Used Against Meta Is Now Coming for AI
+        journalist: Soren Kaplan
+        date: '2026-07-28'
+        framing: legal threat framing, Meta as cautionary precedent
+        url: http://www.inc.com/soren-kaplan/the-same-legal-theory-used-against-meta-is-now-coming-for-ai/91380693
+      google_articles:
+      - title: At I/O, Google Just Shipped Apple's AI Promises
+        journalist: Jason Aten
+        date: '2026-05-21'
+        framing: aspirational, Google as deliverer of Apple promises, positive competitive
+        url: http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+      - title: Google May Have Just Found a Way to Beat Nvidia at Its Own AI Game
+        journalist: Kit Eaton
+        date: '2026-07-21'
+        framing: positive competitive, Google as innovator beating dominant player
+        url: https://www.inc.com/kit-eaton/google-may-have-just-found-a-way-to-beat-nvidia-at-its-own-ai-game/91377317
+      - title: Google DeepMind's Co-Founder Wants a Wall Street-Style Watchdog
+        journalist: Georgia Fearn
+        date: '2026-07-15'
+        framing: aspirational, Hassabis as responsible AI regulator and leader
+        url: https://www.inc.com/georgia-fearn/google-deepmind-founder-wall-street-style-watchdog-stop-dangerous-ai/91373798
+      - title: Google Earth's New AI Feature Could Create False Images of Real Places
+        journalist: Kevin Haynes
+        date: '2026-08-02'
+        framing: mild criticism, factual reporting, no alarm framing
+        url: http://www.inc.com/kevin-haynes/google-earths-new-ai-feature-could-create-false-images-of-real-places-it-lasted-1-day/91383508
+    confounders:
+    - factor: Meta genuinely has worse privacy track record
+      strength: STRONG
+      detail: Cambridge Analytica legacy, Kenya contractors confirmed by reporting. Meta's privacy controversies are factually
+        worse than Samsung or Google's in the smart glasses domain specifically.
+    - factor: Samsung/Google glasses hadn't shipped yet
+      strength: STRONG
+      detail: No real-world privacy incidents because the product wasn't in consumer hands. Post-launch coverage may differ.
+    - factor: Article genre is competitive analysis
+      strength: MODERATE
+      detail: Competitive analyses naturally position challenger vs incumbent, which structurally favors the newcomer. This
+        is standard editorial format, not necessarily bias.
+    - factor: Samsung/Google explicitly made privacy positioning part of launch strategy
+      strength: MODERATE
+      detail: Samsung and Google deliberately positioned privacy as a differentiator. Covering their claims is newsworthy,
+        though presenting them uncritically is an editorial choice.
+    - factor: Different ownership structures
+      strength: WEAK
+      detail: Meta owns social graphs; Samsung/Google own search/ecosystem data differently. But the camera hardware and AI
+        processing create identical privacy surfaces regardless of data ownership structure.
+    testable_predictions:
+    - prediction: When Samsung/Google glasses ship (Fall 2026), Inc.com will NOT apply the same scandal framing to any
+        Google data collection revelations comparable to Meta's Kenya contractor story
+      timeframe: Fall 2026
+      falsifiable: true
+    - prediction: Inc.com coverage of Google's Personal Intelligence feature (accessing Gmail, Calendar, etc.) will receive
+        softer privacy vocabulary than comparable Meta AI features accessing Instagram/WhatsApp data
+      timeframe: 2026-2027
+      falsifiable: true
+    - prediction: Inc.com will NOT run a headline like Samsung's Smart Glasses Tracking Scandal or equivalent loaded-language
+        headline when Samsung/Google camera privacy issues emerge post-launch
+      timeframe: 2026-2027
+      falsifiable: true
+    related_mechanisms:
+    - mechanism_id: 30
+      relationship: Genre-determined framing — competitive analysis format structurally favors challenger, but privacy
+        vocabulary asymmetry exceeds genre explanation
+    - mechanism_id: 33
+      relationship: Facial recognition parity — WIRED applied alarm language to Meta's dormant NameTag while ignoring
+        identical capabilities at competitors, same pattern as Inc.com
+    - mechanism_id: 130
+      relationship: Snap competitive privacy positioning amplification — CEO competitive narrative strategy amplified
+        uncritically, same mechanism at Inc.com with Samsung exec
+    - mechanism_id: 132
+      relationship: Andy Boxall cross-entity privacy vocabulary inversion — same journalist applying inverse privacy
+        vocabulary to different entities, Inc.com shows same pattern across multiple journalists
+    - mechanism_id: 134
+      relationship: WIRED remediation silence — publication-level coverage selection suppresses Meta positive developments,
+        Inc.com amplifies Meta negative while suppressing Samsung/Google scrutiny
+    source_urls:
+    - https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
+    - https://www.inc.com/soren-kaplan/the-real-problem-with-metas-ai-tracking-scandal-isnt-the-data-leak/91373167
+    - http://www.inc.com/soren-kaplan/the-same-legal-theory-used-against-meta-is-now-coming-for-ai/91380693
+    - http://www.inc.com/jason-aten/at-i-o-google-just-shipped-apples-ai-promises/91191832
+    - https://www.inc.com/kit-eaton/google-may-have-just-found-a-way-to-beat-nvidia-at-its-own-ai-game/91377317
+    - https://www.inc.com/georgia-fearn/google-deepmind-founder-wall-street-style-watchdog-stop-dangerous-ai/91373798
+    - http://www.inc.com/kevin-haynes/google-earths-new-ai-feature-could-create-false-images-of-real-places-it-lasted-1-day/91383508
 research_period: 2024-08-01 to 2026-08-16

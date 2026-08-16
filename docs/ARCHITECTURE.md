@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 14708 tests across 420 test files (all from real articles)
+├── tests/                       # 14767 tests across 421 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -756,6 +756,7 @@ mediascope/
 │   ├── test_wired_meta_remediation_coverage_selection_silence_aug16.py # Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED fix got zero WIRED coverage, 7+ other outlets covered it. 55 tests
 │   ├── test_raymond_wong_fury_privacy_vocabulary_differential_aug16.py # Mechanism #135: Raymond Wong (Gizmodo) cultural base rate of Meta privacy stigma at zero-financial-ties outlet. 8 classes, 46 tests
 │   ├── test_apple_siri_ai_quad_channel_publisher_dependency_aug16.py # Mechanism #136: Apple Siri AI Quad-Channel Publisher Financial Architecture Pre-N50 — Apple's Siri AI licensing adds 4th publisher financial channel alongside News+, Advertising, App Store. 9 classes, 55 tests
+│   ├── test_inc_mansueto_smart_glasses_privacy_redirected_attribution_aug16.py # Mechanism #137: Inc.com (Mansueto Ventures) Privacy Vocabulary Redirected Attribution — Samsung/Google smart glasses analysis redirects ALL privacy vocabulary to Meta (7+ alarm terms) while Samsung/Google identical hardware gets zero scrutiny. 8 classes, 59 tests
 │   ├── test_matt_burgess_cross_entity_ceo_attribution_remediation_framing_aug15.py # Mechanism #119: Matt Burgess (WIRED UK) CEO attribution and remediation framing asymmetry — "Zuckerberg's Meta" personal attribution vs corporate distance for Google/Apple/OpenAI. 9 classes, 38 tests
 │   ├── test_wired_anthropic_safety_research_framing_inversion_aug15.py # Mechanism #118: WIRED safety research framing inversion — Anthropic blackmail documented as "fascinating" vs Meta dormant NameTag code as "alarming surveillance." Risk inversion score 0.92. 10 classes, 26 tests
 │   ├── test_ai_traffic_cannibalization_publisher_financial_captivity_aug15.py # Mechanism #120: AI traffic cannibalization feedback loop — publisher financial captivity and coverage incentive amplification. First temporal mechanism explaining coverage asymmetry ACCELERATION. 11 classes, 53 tests

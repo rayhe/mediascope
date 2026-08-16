@@ -5369,6 +5369,45 @@ entities:
       - 108
       - 111
       - 112
+  mansueto_ventures:
+    display_name: Mansueto Ventures
+    aliases:
+    - Mansueto Ventures
+    - Inc.com
+    - Inc Magazine
+    - Fast Company
+    owner: Joe Mansueto (Morningstar founder)
+    category: media_publisher
+    publications:
+    - Inc.com
+    - Fast Company
+    revenue: $23.1M (ZoomInfo)
+    ad_revenue_share: 55% (Digiday 2025)
+    tech_stack:
+    - Google Analytics 4 (LeadIQ)
+    google_dependencies:
+    - programmatic_advertising
+    - search_traffic
+    - analytics_ga4
+    meta_financial_ties: none
+    meta_content_licensing_deals: none
+    meta_advertising_partnerships: none
+    morningstar_connection: Joe Mansueto founded Morningstar (investment research, tracks Alphabet/Google stock)
+    notes: 'Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue
+      primarily from advertising (55%). Standard Google programmatic/search traffic dependency
+      creates structural incentive alignment with Google ecosystem. Zero known Meta financial
+      relationships of any kind.'
+    inc_smart_glasses_privacy_redirected_attribution:
+      mechanism_id: 137
+      finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google
+        smart glasses competitive analysis while presenting Samsung''s identical camera+AI architecture
+        with ZERO scrutiny. Samsung exec claim "privacy is not an afterthought" taken at face value.
+        Cross-entity contrast: Meta articles use "scandal" language (Soren Kaplan), Google articles
+        use aspirational framing (Jason Aten, Kit Eaton, Georgia Fearn). Financial dependency on
+        Google (55% ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective
+        privacy vocabulary.'
+      source_url: https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
+      date: '2026-07-29'
   versant_media_group:
     display_name: Versant Media Group (CNBC, MS Now, E!, USA Network)
     aliases:
@@ -8253,6 +8292,7 @@ essilorluxottica:
       relationship: 'Engadget Yahoo/Apollo — same Google partnership shield pattern'
     - mechanism_id: 113
       relationship: 'Karissa Bell methodology asymmetry — same pattern of asymmetric Meta coverage, different publisher/ownership'
+
 
 # Industry-wide AI content market economics (Mechanism #120)
 ai_content_market_economics:
