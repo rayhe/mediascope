@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~14000 tests across 408 test files (all from real articles)
+├── tests/                       # ~14268 tests across 410 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -722,6 +722,9 @@ mediascope/
 │   ├── test_lisa_eadicicco_cross_entity_coverage_selection_asymmetry_aug15.py # Mechanism #123: Lisa Eadicicco CNN cross-entity coverage selection. Same journalist, same week, Samsung Unpacked omits glasses, Meta privacy deep-dive 8+ alarm terms. Career trajectory analysis (6 pubs, Apple beat). CNN ad client dynamics. 10 classes, 37 tests
 │   ├── test_wbd_quad_tech_financial_architecture_content_deal_paradox_aug15.py # Mechanism #124: WBD Quad-Tech Financial Architecture. CNN 4 tech relationships (Meta deal, Google Cloud, AWS, Samsung ads). Content deal paradox: Meta deal fails to soften coverage when ad/infrastructure dependencies oppose. 9 classes, 31 tests
 │   ├── test_type_d_3pm_cross_validation_aug15.py # Type D cross-validation (Aug 15, 15:00 PT): Multi-publication flag integrity (135 stale flags fixed), doc count sync (258 journalists/243 multi-pub/759 migrations), mechanism #118-#120 cross-validation, 21 missing test files added to ARCHITECTURE, 14 to README. 7 classes, 23 tests
+│   ├── test_type_d_8pm_cross_validation_aug15.py # Type D cross-validation (Aug 15, 20:00 PT): YAML structural integrity fix for mechanism #124, mechanisms #122-124 moved from publications to cross_publication_findings, entity count regression fix. 6 classes, 32 tests
+│   ├── test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py # Mechanism #125: WSJ Anthropic-Meta military-consumer severity inversion — alarm vocabulary inversely proportional to harm magnitude. 9 classes, 33 tests
+│   ├── test_type_d_01am_cross_validation_aug16.py # Type D cross-validation (Aug 16, 01:00 PT): Mechanisms #125-128 structural integrity, cross-reference bidirectionality, entity count fix, doc sync. 10 classes, 51 tests
 │   ├── test_type_d_10am_cross_validation_aug14.py # Type D cross-validation (Aug 14, 10:00 PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests
 │   ├── test_type_d_10pm_cross_validation_aug14.py # Type D cross-validation (Aug 14, 22:00 PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests
 │   ├── test_type_d_11pm_cross_validation_aug14.py # Type D cross-validation (Aug 14, 23:00 PT): Stats sync and cross-reference audit for aug14 mechanisms. 8 classes, 16 tests
