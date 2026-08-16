@@ -1,3 +1,26 @@
+## Iteration #143 — Sun 2026-08-16 14:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Focus: Inc.com (Mansueto Ventures) Samsung/Google vs Meta smart glasses coverage**
+
+**DISCOVERY: Privacy Vocabulary Redirected Attribution (Mechanism #137)**
+
+Inc.com (Mansueto Ventures) published "Samsung and Google's New Smart Glasses Have a Secret Weapon That Meta Can't Easily Copy" by Connor Jewiss (Jul 29, 2026). The article redirects ALL privacy vocabulary to Meta — 7+ alarm terms ("intimate footage," "contractors in Kenya," "facial recognition," "stalking and harassment," "surveillance," "nonconsensual recording," "backlash") across 3 paragraphs — while presenting Samsung's identical camera+AI architecture (same Snapdragon AR1 Gen 1 chip) with ZERO scrutiny. Samsung exec James Choi's claim "At Samsung, privacy is not an afterthought" taken at face value.
+
+**Cross-entity framing asymmetry at Inc.com:**
+- Meta: "scandal" language (Soren Kaplan, Jul 14/28)
+- Google: aspirational framing (Jason Aten "shipped Apple's promises," Kit Eaton "beat Nvidia," Georgia Fearn Hassabis as responsible regulator)
+- Mild Google criticism exists (Kevin Haynes, Google Earth AI, Aug 2) but NEVER uses "scandal" vocabulary
+
+**Financial context:** Mansueto Ventures $23.1M revenue, 55% from advertising (Digiday 2025), Google Analytics 4 in tech stack (LeadIQ), standard Google programmatic/search traffic dependency. ZERO Meta financial ties.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions for post-launch coverage.**
+
+**Deliverables:**
+- `tests/test_inc_mansueto_smart_glasses_privacy_redirected_attribution_aug16.py` — 8 classes, 59 tests, all passing
+- `profiles/competitor-coverage-research.yaml` — mechanism #137 added to cross_publication_findings
+- `profiles/competitor-entities.yaml` — `mansueto_ventures` entity added under `entities:`
+- README + ARCHITECTURE synced (421 files, ~14,767 tests, 137 mechanisms)
+
 ## Iteration #142 — Sun 2026-08-16 13:00 PT (Type D: Test & Verify)
 
 **Focus: Cross-validation of mechanisms #134-136, backref integrity, doc sync**
