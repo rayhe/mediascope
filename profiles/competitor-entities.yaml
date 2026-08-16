@@ -5006,12 +5006,91 @@ entities:
         - User control over data storage/sync/deletion
         privacy_scrutiny_received: zero
         surveillance_framing_count: 0
+    q2_2026_earnings:
+      reported_date: '2026-08-03'
+      total_revenue_b: 1.60
+      revenue_yoy_pct: 19
+      dau_m: 493
+      dau_yoy_pct: 5
+      north_america_dau_decline_pct: 7
+      europe_dau_decline_pct: 2
+      q3_guidance_revenue_b: 1.70-1.74
+      q3_guidance_ebitda_m: 300-350
+      source_urls:
+      - https://www.reuters.com/business/snap-beats-revenue-estimates-ad-boost-world-cup-2026-08-03/
+    q1_2026_earnings:
+      total_revenue_guidance_b: 1.50-1.53
+      mau_m: 956
+      dau_m: 483
+      dau_yoy_pct: 5
+      direct_revenue_arr_b: 1.0
+      snapchat_plus_subscribers_m: 25
+      source_urls:
+      - https://www.sec.gov/Archives/edgar/data/1564408/000156440826000024/snap-20260506xexx991pressr.htm
+      - https://www.reuters.com/business/media-telecom/snaps-direct-revenue-hits-1-billion-annualized-run-rate-subscribers-top-25-2026-02-18/
+    ai_partnerships:
+      openai:
+        type: api_customer
+        product: My AI chatbot (powered by OpenAI GPT)
+        launched: '2023-02-27'
+        availability: all Snapchat users (free, expanded Apr 2023)
+        messages_per_day_initial: 2M
+        integration_depth: deep (pinned in chat, group chats, Snap Map, Lens recommendations)
+        financial_direction: Snap pays OpenAI (API usage fees)
+        note: 'Snap is an OpenAI API CUSTOMER — revenue flows FROM Snap TO OpenAI.
+          OpenAI uses API revenue to fund publisher content licensing deals.
+          Snap''s My AI had child safety issues (Washington Post reported bot
+          advising 13-15 year olds about alcohol and sex) — received ~1 week
+          of coverage, no sustained campaign. Compare to Meta AI: sustained
+          multi-month adversarial coverage cycle for similar issues.'
+        source_urls:
+        - https://siliconangle.com/2023/02/27/snapchat-unveils-ai-chatbot-powered-openais-chatgpt/
+        - https://news.bloomberglaw.com/tech-and-telecom-law/snap-attracts-3-million-paying-users-to-ai-enhanced-service-2
+      perplexity:
+        type: platform_integration_deal
+        value_m: 400
+        structure: cash + equity
+        announced: Q3 2025
+        duration: 1 year
+        scope: Perplexity AI search engine integration into Snapchat app
+        financial_direction: Perplexity pays Snap
+        revenue_recognition_status: 'NOT yet recognized as of Q1 2026. Snap Q1 report:
+          "the companies have yet to mutually agree on a path to a broader roll out."
+          Revenue forecast explicitly EXCLUDES Perplexity contribution.'
+        perplexity_publisher_chain: 'Perplexity operates $42.5M revenue-sharing program
+          with publishers. Publishers receive 80% of Comet Plus subscription revenue.
+          Current participants include Fortune, Der Spiegel, Time, Gannett, The
+          Independent, Blavity. Condé Nast (WIRED parent) has a Perplexity deal
+          (confirmed in Lynch March 2026 memo). This creates a financial chain:
+          Snap → [$400M] → Perplexity → [revenue share] → Condé Nast.'
+        source_urls:
+        - https://bestmediainfo.com/mediainfo/mediainfo-marketing/snap-posts-stronger-quarter-as-perplexity-ai-inks-400-million-deal-10626382
+        - https://www.reuters.com/business/snap-forecasts-quarterly-revenue-below-estimates-ad-competition-hurts-2026-02-04/
     publisher_financial_relationships:
+      discover_platform:
+        type: revenue_sharing
+        description: 'Snap Discover platform shares ad revenue with publisher partners.
+          Condé Nast confirmed as Snap PMP (Private Marketplace) beta partner (2018).
+          Publisher Discover partners included BuzzFeed, Condé Nast, Hearst, NBCU,
+          Viacom, VICE. Publishers create daily content editions, Snap sells ads,
+          revenue is shared. Current status of Condé Nast Discover partnership unclear.'
+        conde_nast_confirmed: true
+        conde_nast_confirmed_date: '2018'
+        source_urls:
+        - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
       content_licensing_deals: []
       ad_revenue_significance: minimal
+      meta_contrast: 'Meta has ZERO platform revenue-sharing relationships with Condé Nast.
+        Meta does not operate a Discover-style publisher content monetization platform.
+        Snap has BOTH a direct publisher relationship (Discover) AND an indirect chain
+        (Perplexity → Condé Nast). The entity with MORE cameras (Snap, 4) and MORE
+        publisher financial ties gets LESS privacy scrutiny than the entity with FEWER
+        cameras (Meta, 1) and ZERO publisher financial ties.'
     source_urls:
     - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
     - https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/
+    - https://www.reuters.com/business/snap-beats-revenue-estimates-ad-boost-world-cup-2026-08-03/
+    - https://bestmediainfo.com/mediainfo/mediainfo-marketing/snap-posts-stronger-quarter-as-perplexity-ai-inks-400-million-deal-10626382
   wbd_cnn:
     display_name: Warner Bros. Discovery (CNN)
     aliases:

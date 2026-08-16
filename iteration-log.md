@@ -1,3 +1,58 @@
+## Iteration #137 — Sun 2026-08-16 08:00 PT (Type C: Financial Incentive Mapping)
+
+**Focus: Snap-Perplexity-Publisher Financial Chain (Mechanism #133)**
+
+**CORE FINDING:** Snap Inc. sits at the intersection of THREE financial flows connecting to publishers covering its products:
+
+1. **Discover direct:** Snap-Condé Nast revenue-sharing (confirmed 2018 PMP beta partner)
+2. **Perplexity indirect:** $400M Snap-Perplexity deal (Q3 2025) → Perplexity $42.5M publisher pool (80/20 split via Comet Plus) → Condé Nast (confirmed Lynch Mar 2026 memo)
+3. **OpenAI API indirect:** Snap is OpenAI customer (My AI chatbot, 956M MAU) → OpenAI → Condé Nast deal (Aug 2024)
+
+**Meta contrast:** ZERO financial chains to Condé Nast — no content deals, no revenue sharing, no intermediary flows.
+
+**Snap Q2 2026:** $1.60B rev (+19% YoY), 493M DAU (+5%), but NA DAU -7%, EU DAU -2%. Q3 guidance $1.70-1.74B. Perplexity $400M NOT yet recognized as revenue.
+
+**Key nuance:** Perplexity revenue NOT flowing yet — companies "have yet to mutually agree on a path to a broader roll out." Structural incentive exists regardless of revenue timing.
+
+**Data updates:**
+- Snap entity: Q2 2026 earnings, Q1 2026 data, OpenAI/Perplexity/Discover relationships, meta contrast
+- Mechanism #133 added under publications section with 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions, 7 source URLs
+- Backreferences added to mechanisms #35 and #58
+- Test file: 40 tests, 9 classes, all passing
+
+**Stats:** 415 test files, ~14,475 tests collected, 133 mechanisms.
+
+## Iteration #136 — Sun 2026-08-16 06:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Focus: Andy Boxall (Android Police / Valnet) Cross-Entity Privacy Vocabulary Inversion (Mechanism #132)**
+
+**CORE FINDING:** Same journalist covers 3 camera-equipped smart glasses within 36 days with privacy vocabulary that is INVERSELY proportional to camera count:
+
+| Product | Cameras | Privacy Terms | Tone | Date |
+|---------|---------|--------------|------|------|
+| Snap Specs | 4 (2 visible + 2 IR) | 0 | +0.90 enthusiastic | Jun 17 |
+| Meta Ray-Ban | 1 | 7+ alarm ("nightmarish") | -0.85 adversarial | Jul 9 |
+| Samsung Galaxy | 1 (same chip as Meta) | 0 for Samsung | +0.30 positive | Jul 23 |
+
+**Privacy vocabulary inversion:** The device with the MOST cameras (Snap Specs, 4) gets ZERO privacy scrutiny — cameras not even mentioned in a 114-line article. The device with the FEWEST cameras (Meta, 1) gets "nightmarish," "super invasive," "privacy red flag," "bad to worse," "covert camera recording," "serious concern," "bad idea." Samsung uses IDENTICAL Snapdragon AR1 Gen 1 chip as Meta but gets normalization ("similar protections"), not alarm.
+
+**Financial context:**
+- Android Police (Valnet Inc.) depends on Google ad revenue and Samsung advertising
+- Google paid Samsung $8B+ for Play Store/Search/Gemini defaults
+- Samsung + Google jointly developing glasses via Android XR
+- Meta has ZERO financial ties to Valnet
+- Pattern matches institutional amplification at Condé Nast (#33), Future plc (#115/#116), Yahoo/Apollo (#122) — now confirmed at a 4th publisher owner (Valnet)
+
+**Control comparison:** Ben Schoon at independent 9to5Google (mechanism #131) applies proportional privacy concern (~1.7:1 Meta-to-competitor). Boxall's infinite ratio matches institutional outlets, not the independent control.
+
+**5 confounders documented:** Super Sensing genuinely more invasive (STRONG), different article genres (MODERATE), audience alignment (MODERATE), Snap AR positioning (MODERATE), Samsung privacy section (WEAK).
+
+**New test file:** `test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py` (57 tests, 10 classes) — all passing.
+**Fixed:** `test_competitor_coverage.py` structural test (cross-publication entries in publications YAML section).
+**Pushed to GitHub:** commit 1a00f32
+
+**Stats:** 414 test files | 14,305 tests | 132 mechanisms
+
 ## Iteration #135 — Sun 2026-08-16 02:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: Snap CEO Competitive Privacy Positioning Amplification (Mechanism #130)**
