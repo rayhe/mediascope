@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,727 | Across 419 test files |
+| Tests | ~14,708 | Across 420 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~14,727 tests** across 419 test files, each covering a different analytical capability:
+MediaScope has **14708 tests** across 420 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -487,6 +487,7 @@ MediaScope has **~14,727 tests** across 419 test files, each covering a differen
 | `test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py` | 39 | Mechanism #131 — Ben Schoon (9to5Google) Cross-Entity Control Calibration: 9to5Google (925 LLC, Seth Weintraub sole owner, no Condé Nast/Advance/VC) applies privacy vocabulary to BOTH Meta AND Samsung/Google, establishing ~1.7:1 Meta-to-competitor ratio as natural editorial baseline. Contrasts with WIRED/Future plc/Yahoo-Apollo infinite ratios (10+ Meta terms, ZERO competitor terms). Quantifies institutional amplification factor. 5 confounders, cross-refs #33/#110/#114/#115/#116/#122/#126/#130. 10 classes, 39 tests |
 | `test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py` | 57 | Mechanism #132 — Andy Boxall (Android Police / Valnet) Cross-Entity Privacy Vocabulary Inversion: Same journalist covers 3 camera-equipped smart glasses within 36 days with privacy vocabulary INVERSELY proportional to camera count — Snap Specs (4 cameras) gets ZERO privacy terms, Meta Ray-Ban (1 camera) gets 7+ alarm terms ("nightmarish," "super invasive"), Samsung (same chip as Meta) gets normalization. Replicates institutional amplification at 4th publisher owner (Valnet). 9to5Google control (mechanism #131) shows ~1.7:1 proportional baseline vs Boxall's infinite ratio. 10 classes, 57 tests |
 | `test_type_d_09am_cross_validation_aug16.py` | 96 | Type D cross-validation (Aug 16, 9 AM PT): Mechanisms #129-133 structural integrity, cross-reference bidirectionality (15 backrefs added to mechanisms #30, #106, #110, #114, #115, #116, #122, #126, #128, #130, #132), confounder quality (STRONG factors present), entity count consistency (versant_media_group, snap entities), finding summary distinctiveness (Jaccard <0.7), content validation per mechanism, regression guards #125-#128, test file importability, doc sync. 14 classes, 96 tests |
+| `test_type_d_1pm_cross_validation_aug16.py` | 76 | Type D cross-validation (Aug 16, 1 PM PT): Mechanisms #134-136 structural integrity, cross-reference bidirectionality (5 backrefs added to mechanisms #61, #43, #47, #101, #134 pointing to #136), discovery_date fix (#136), doc sync (419→420 test files, ~14,708 tests), finding summary distinctiveness (Jaccard <0.7 all pairs), regression guards #129-#133, test file importability for all 10 Aug 16 test files. 11 classes, 76 tests |
 | `test_raymond_wong_fury_privacy_vocabulary_differential_aug16.py` | 46 | Raymond Wong (Gizmodo) privacy vocabulary differential across Meta Fury, Google/Xreal Project Aura, and Samsung Galaxy Glasses. Tests mechanism #135: cultural base rate of Meta privacy stigma at zero-financial-ties outlet. 8 classes, 46 tests |
 | `test_apple_siri_ai_quad_channel_publisher_dependency_aug16.py` | 55 | Mechanism #136: Apple Siri AI Quad-Channel Publisher Financial Architecture Pre-N50. Apple's newly reported Siri AI content licensing negotiations (WSJ, Aug 13, 2026) create a FOURTH publisher financial dependency channel alongside News+ (50% of $12.99/mo, 400+ titles), Apple Advertising (record $30.7B Services Q3 FY2026), and App Store Commission (15-30%). Nine-figure budget, variable pay-per-use, multiyear deals. Apple (4 channels) vs Google (2), OpenAI (1), Meta (0). All four converge BEFORE N50 smart glasses launch (WWDC Jun 2027). Condé Nast has 16 News+ titles + in Siri AI pipeline. 6 confounders (2 STRONG), 4 testable predictions, cross-refs #61, #43, #134, #47, #101. 9 classes, 55 tests |
 | `test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py` | 33 | WSJ Anthropic-Meta Military-Consumer Severity Inversion (Mechanism #125): WSJ applies MORE alarm language (10+ terms) to Meta's consumer camera glasses (zero deaths, unshipped features) than to Anthropic's Claude AI used in U.S. military operation that included bombing sites in Caracas (actual violence). Alarm vocabulary correlates with entity identity, not harm magnitude. News Corp has roughly balanced AI deals ($50M each Meta and OpenAI), so inversion is NOT financially predicted — editorial calibration failure independent of financial incentives. 5 confounders, cross-refs #49, #8. 9 classes, 33 tests |
