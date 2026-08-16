@@ -12085,6 +12085,82 @@ cross_publication_findings:
       description: "Safe target coefficient"
 
 
+  cross_publication_beat_assignment_replication:
+    mechanism_id: 126
+    finding_type: cross_publication_beat_assignment_replication
+    discovery_date: '2026-08-16'
+    test_file: tests/test_wong_barr_cross_publication_beat_assignment_replication_aug16.py
+    domain: wearables_privacy
+    publications:
+      - Wall Street Journal (News Corp)
+      - Gizmodo (Keleops AG)
+    finding_summary: >
+      The same intra-publication framing divergence at WSJ (Mims balanced
+      vs Bobrowsky adversarial) REPLICATES at Gizmodo (Wong balanced vs
+      Barr adversarial) on smart glasses privacy coverage. Gizmodo (Keleops
+      AG) has ZERO financial ties to any tech company while WSJ (News Corp)
+      has balanced ties ($50M each to Meta and OpenAI). This confirms beat
+      assignment creates framing divergence INDEPENDENT of financial incentives.
+      The financial environment MODERATES rather than DRIVES the asymmetry:
+      WSJ Bobrowsky (-0.45) is LESS adversarial than Gizmodo Barr (-0.65),
+      inverting the naive prediction that financial ties increase adversarial
+      coverage. Wong's Jun 2026 "Can Smart Glasses Ever Be Privacy-Friendly?"
+      applies privacy vocabulary to Meta AND Google ("doesn't have the best
+      track record for respecting user privacy") while Barr concentrates 90%+
+      on Meta with ZERO for Google/Samsung. Both generalists (Mims, Wong) stay
+      balanced; both beat reporters concentrate adversarial vocabulary on Meta.
+    entities_involved:
+      - Meta
+      - Google
+      - Samsung
+      - Apple
+      - Snap
+    related_mechanisms:
+      - mechanism_id: 49
+        relationship: WSJ Mims-Bobrowsky pair documented
+      - mechanism_id: 67
+        relationship: WSJ three-channel beat assignment
+      - mechanism_id: 14
+        relationship: Barr privacy gradient paradox
+      - mechanism_id: 8
+        relationship: safe target coefficient
+    source_urls:
+      - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+      - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+      - https://gizmodo.com/calls-to-regulate-smart-glasses-are-officially-deafening-2000741499
+      - https://gizmodo.com/concerns-over-metas-smart-glasses-have-reached-the-u-s-senate-2000735746
+      - https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443
+    confounding_factors:
+      - factor: Different article genres (industry survey vs news report)
+        strength: STRONG
+        rebuttal: >
+          Genre IS the mechanism — editors assign surveys to generalists
+          and entity-specific pieces to beat reporters, creating divergence.
+      - factor: Meta has larger installed base (7M+ units)
+        strength: STRONG
+        rebuttal: >
+          Valid for proportional scrutiny, not for ZERO scrutiny of identical
+          competitor hardware. Wong demonstrates balanced treatment is achievable.
+      - factor: Different internal beats (product reviewer vs policy)
+        strength: MODERATE
+        rebuttal: >
+          Both cover the same products and topic. The role difference is
+          the beat assignment mechanism itself.
+      - factor: Meta historical privacy record
+        strength: MODERATE
+        rebuttal: >
+          Google also has privacy history (Glass, Android tracking, Street
+          View WiFi). Wong acknowledges this; Barr does not.
+      - factor: Sample timing differences
+        strength: WEAK
+        rebuttal: Pattern holds across Barr's full article archive.
+      - factor: Individual journalist perspective
+        strength: WEAK
+        rebuttal: >
+          This IS the finding — beat assignment determines which journalist
+          covers which topic, determining the framing.
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -15571,4 +15647,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-15
+research_period: 2024-08-01 to 2026-08-16

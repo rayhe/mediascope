@@ -1,3 +1,18 @@
+## Iteration #132 — Sat 2026-08-16 (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #126: Cross-Publication Beat-Assignment Framing Replication — Gizmodo Wong-Barr Confirms WSJ Mims-Bobrowsky Pattern
+
+**Cross-Publication Pair:** Gizmodo (Keleops AG, $0 ties) replicates WSJ (News Corp, $50M balanced ties)
+
+**Finding:** The same intra-publication framing divergence at WSJ (Mims balanced vs Bobrowsky adversarial) replicates at Gizmodo (Wong balanced vs Barr adversarial) on smart glasses privacy coverage. Since Gizmodo has ZERO financial ties to any tech company while WSJ has balanced ties ($50M each to Meta and OpenAI), this confirms beat assignment creates framing divergence INDEPENDENT of financial incentives. The financial environment MODERATES rather than DRIVES the asymmetry: WSJ Bobrowsky (-0.45) is LESS adversarial than Gizmodo Barr (-0.65), inverting the naive prediction.
+
+**Key evidence:** Wong's Jun 2026 "Can Smart Glasses Ever Be Privacy-Friendly?" applies privacy vocabulary to Meta AND Google ("doesn't have the best track record for respecting user privacy") while Barr concentrates 90%+ on Meta with ZERO for Google/Samsung. Both generalists (Mims, Wong) stay within balanced range; both beat reporters concentrate adversarial vocabulary on Meta.
+
+**New test file:** `test_wong_barr_cross_publication_beat_assignment_replication_aug16.py` (35 tests, 8 classes)
+**Updated:** `competitor-coverage-research.yaml` (mechanism #126 under cross_publication_findings, research_period → 2026-08-16)
+
+**Stats after:** 126 mechanisms, 35 new tests
+
 ## Iteration #131 — Sat 2026-08-15 21:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #125: WSJ Anthropic-Meta Military-Consumer Severity Inversion — Alarm Language Scales Inversely with Actual Harm
