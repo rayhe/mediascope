@@ -12161,6 +12161,146 @@ cross_publication_findings:
           This IS the finding — beat assignment determines which journalist
           covers which topic, determining the framing.
 
+  people_inc_google_traffic_substitution_paradox:
+    mechanism_id: 127
+    mechanism_name: People Inc Q2 2026 Google Traffic Substitution Paradox — Successful Diversification Creates Broader AI Coverage Capture
+    finding_type: financial_incentive_mapping
+    rotation_type: C
+    discovery_date: '2026-08-16'
+    test_file: tests/test_people_inc_google_traffic_substitution_paradox_aug16.py
+    domain: publisher_financial_architecture
+    publications:
+      - People Inc (People, AllRecipes, Food Network, InStyle, Better Homes & Gardens, The Daily Beast)
+    parent_entity: 'People Inc (NASDAQ: PPLI, formerly IAC)'
+    finding_summary: >
+      People Inc Q2 2026 earnings (Aug 3, 2026) provide the first empirical proof that
+      a major publisher can successfully replace Google search traffic dependency with
+      alternative revenue — AND demonstrate that the replacement creates BROADER
+      financial capture by AI companies, not independence. Google search traffic fell
+      to 21% of People Inc's total (down from ~67% historically — a 69% reduction),
+      yet digital revenue grew 6% for the 11th consecutive quarter. EBITDA margins
+      expanded to 26% from 23%. The growth engine: non-session-based revenue grew 16%,
+      driven by AI licensing (OpenAI, Meta, Microsoft deals), Apple News, social programs,
+      events, and D/Cipher ad tech. Session-based revenue declined 1% despite 22% decline
+      in core sessions. Licensing revenue specifically grew 23%. This means People Inc's
+      ENTIRE growth trajectory depends on payments from AI companies. The publisher now
+      has financial dependencies on OpenAI (≥$16M/yr fixed + variable), Meta (Dec 2025
+      deal), Microsoft (PCM, Nov 2025), Apple (News+), AND Amazon (performance marketing).
+      Five of the six major tech companies pay People Inc. Google is the only one that
+      does NOT — and People Inc is suing Google. The coverage incentive is total:
+      adversarial coverage of ANY paying AI company threatens the revenue stream that
+      replaced Google. CEO Vogel's explicit framing: AI gains are 'freeing up people
+      and assets to focus on growth initiatives' and non-session revenue is 'the growth
+      dynamic for the foreseeable future.'
+    q2_2026_financial_data:
+      report_date: '2026-08-03'
+      total_revenue_m: 436.7
+      revenue_yoy_pct: -1
+      profit_m: 506.9
+      profit_driver: $721.7M unrealized gain on MGM stake
+      people_inc_publishing_digital_revenue_growth_pct: 6
+      consecutive_growth_quarters: 11
+      ebitda_growth_pct: 18
+      ebitda_margin_pct: 26
+      ebitda_margin_prior_year_pct: 23
+      non_session_revenue_growth_pct: 16
+      session_revenue_growth_pct: -1
+      core_sessions_decline_pct: -22
+      google_search_traffic_pct: 21
+      google_search_traffic_historical_pct: 67
+      google_traffic_reduction_pct: 69
+      licensing_revenue_growth_pct: 23
+      performance_marketing_growth_pct: 13
+      print_revenue_growth_pct: -18
+      mgm_stake_value_b: 3.0
+      mgm_unrealized_gain_q2_m: 721.7
+      mgm_acquisition_offer_b: 12.4
+      fy2026_ebitda_guidance_m: 310-340
+      fy2026_digital_growth_guidance: mid-to-high single-digits
+      google_litigation_expense_m: 15
+    ai_company_deal_portfolio:
+      - company: OpenAI
+        deal_type: content licensing
+        value: ≥$16M/yr fixed + variable
+        date: '2024'
+        includes_d_cipher: true
+      - company: Meta
+        deal_type: content licensing
+        value: undisclosed (multi-year)
+        date: '2025-12-05'
+      - company: Microsoft
+        deal_type: PCM marketplace
+        value: undisclosed
+        date: '2025-11-04'
+      - company: Apple
+        deal_type: Apple News+ syndication
+        value: engagement-based revenue share
+        date: ongoing
+      - company: Amazon
+        deal_type: performance marketing / affiliate
+        value: ongoing commission-based
+        date: ongoing
+    google_relationship:
+      status: adversarial
+      google_traffic_pct: 21
+      litigation: active (estimated $15M expense in FY2026 guidance)
+      ai_overviews_impact: CEO Vogel cited AI Overviews on 50-55% of searches where People content appears
+    coverage_capture_architecture: >
+      The paradox: People Inc SOLVED the Google dependency problem that mechanism #120
+      (AI Traffic Cannibalization) identifies as the driver of coverage capture. But the
+      solution — replacing Google traffic revenue with AI company payments — creates
+      BROADER capture. Under Google dependency, publishers had one major financial incentive
+      (don't anger Google). Under the People Inc model, publishers have FIVE simultaneous
+      financial incentives (don't anger OpenAI, Meta, Microsoft, Apple, or Amazon). The
+      'diversification' actually MULTIPLIED the coverage conflicts rather than eliminating
+      them. The only company People Inc can cover adversarially is Google — because
+      Google is the only major tech company NOT paying them.
+    mgm_financial_floor: >
+      Barry Diller's $3B MGM casino stake provides a financial floor that lets People Inc
+      be more aggressive on Google litigation than other publishers. The $721.7M unrealized
+      gain in Q2 alone dwarfs publishing revenue ($436.7M total). This MGM cross-subsidy
+      enables the Google lawsuit (budgeted at $15M/yr) while insulating the company from
+      the financial consequences of losing Google traffic. No other publisher has a
+      comparable non-media financial backstop — making People Inc an outlier case that
+      cannot be generalized to the broader publisher ecosystem.
+    diller_cnn_interest: >
+      Diller confirmed during Q2 call he has been interested in acquiring CNN 'for years.'
+      If People Inc acquired CNN (a WarnerBros Discovery asset), it would bring a MAJOR
+      news outlet into the same AI-deal-dependent financial architecture — potentially
+      extending the coverage capture model to hard news, not just lifestyle/entertainment.
+    testable_prediction: >
+      If the traffic substitution paradox is real, we should see: (1) People Inc
+      publications producing softer coverage of OpenAI and Meta relative to Google
+      coverage, (2) The Daily Beast — the most news-oriented People Inc property —
+      showing lower adversarial Meta/OpenAI coverage than independent outlets covering
+      the same stories, (3) Other publishers following People Inc's diversification
+      playbook also accumulating multi-company deal portfolios rather than achieving
+      independence.
+    strongest_counterargument: >
+      People Inc's publishing business is overwhelmingly lifestyle and entertainment
+      (People Magazine, AllRecipes, Food Network, Better Homes & Gardens). These
+      publications rarely cover AI companies with the adversarial framing that tech
+      publications produce. The coverage incentive may be real but practically
+      irrelevant because these brands don't produce tech journalism. Rebuttal: The
+      Daily Beast IS a news publication, and Diller's interest in CNN acquisition
+      suggests expansion into hard news is strategic. The mechanism also matters as
+      a TEMPLATE: other publishers pursuing the same diversification strategy will
+      face the same paradox with their tech journalism brands.
+    related_mechanisms:
+      - mechanism_id: 120
+        relationship: Traffic cannibalization creates the problem People Inc solved
+      - mechanism_id: 88
+        relationship: Dual-channel decoupling is the abstract framework
+      - mechanism_id: 108
+        relationship: Ziff Davis faces similar multi-company dependency
+    source_urls:
+      - https://www.marketbeat.com/earnings/reports/2026-8-3-iacinteractivecorp-stock/
+      - https://www.themarketsdaily.com/2026/08/04/people-incorporated-common-stock-q2-earnings-call-highlights.html
+      - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
+      - https://www.amediaoperator.com/news/people-inc-s-digital-revenue-rises-even-as-traffic-remains-weak/
+      - https://www.sec.gov/Archives/edgar/data/1800227/000162828026004988/ex_991q42025iac-pressrelea.htm
+
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

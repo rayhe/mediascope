@@ -7439,12 +7439,39 @@ publisher_ai_revenue_opacity_index:
       source_url: https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
       meta_coverage_adversariality: LOW-MODERATE
     - name: People Inc. (formerly IAC)
-      ownership: 'Public (NASDAQ: PPL, formerly IAC)'
+      ownership: 'Public (NASDAQ: PPLI, formerly IAC)'
       bundle_label: Licensing and other revenue
       q1_2026_bundle: $40.7M (+26% YoY)
+      q2_2026_data:
+        report_date: '2026-08-03'
+        total_revenue_m: 436.7
+        revenue_yoy_pct: -1
+        profit_m: 506.9
+        profit_driver: '$721.7M unrealized gain on MGM stake'
+        digital_revenue_growth_pct: 6
+        consecutive_digital_growth_quarters: 11
+        ebitda_growth_pct: 18
+        ebitda_margin_pct: 26
+        non_session_revenue_growth_pct: 16
+        session_revenue_growth_pct: -1
+        core_sessions_decline_pct: -22
+        google_search_traffic_pct: 21
+        google_search_historical_pct: 67
+        licensing_revenue_growth_pct: 23
+        performance_marketing_growth_pct: 13
+        print_revenue_growth_pct: -18
+        mgm_stake_value_b: 3.0
+        mgm_acquisition_offer_b: 12.4
+        fy2026_ebitda_guidance_m: '310-340'
+        google_litigation_expense_m: 15
+        diller_cnn_interest: confirmed during Q2 call
+        source_urls:
+          - https://www.marketbeat.com/earnings/reports/2026-8-3-iacinteractivecorp-stock/
+          - https://www.themarketsdaily.com/2026/08/04/people-incorporated-common-stock-q2-earnings-call-highlights.html
+          - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
       ai_attribution: Primarily driven by its Meta deal, and improved performance from Apple News+ and content syndication
         partners
-      google_traffic_loss: 65% of referral traffic lost (per Barry Diller, Q1 call)
+      google_traffic_loss: '69% reduction — Google search now 21% of traffic (Q2 2026), down from ~67% historically'
       source_url: https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
       meta_coverage_adversariality: LOW-MODERATE
     tier_summary: '3 publishers in Tier 2 report revenue but bundle AI licensing with 3-5 other income streams. AI-specific
