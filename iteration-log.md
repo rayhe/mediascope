@@ -1,3 +1,33 @@
+## Iteration #133 — Sun 2026-08-16 (Type C: Financial Incentive Mapping)
+
+### Mechanism #128: Versant Media Post-Spinoff CNBC Financial Incentive Restructuring — Corporate Spinoff Transforms Insulated Coverage Into Direct Financial Exposure
+
+**Entity:** Versant Media Group (NASDAQ: VSNT, formerly Comcast/NBCUniversal cable networks)
+
+**NOVEL MECHANISM TYPE — Corporate Restructuring Incentive Amplification:**
+This is the first MediaScope mechanism documenting how corporate RESTRUCTURING (rather than bilateral deals) shifts financial incentives for tech coverage. When Comcast spun off CNBC, MS Now, E!, and USA Network into Versant Media Group in January 2026, it transformed CNBC from a coverage outlet insulated by a $200B+ diversified conglomerate into one directly exposed inside a $6B standalone media company with declining revenue and a -25% stock crash at debut.
+
+**THREE simultaneous incentive channels activated:**
+1. ADVERTISING DEPENDENCY AMPLIFICATION (~33x): CNBC ad revenue losses matter ~33x more to Versant (23% of revenue) than they did to Comcast (~1.5% equivalent). All Big Five tech companies (Meta, Google, Apple, Microsoft, Amazon) buy CNBC advertising AND are coverage subjects.
+2. AI PRODUCT DEPENDENCY: Versant acquired StockStory (AI stock analysis) and signed a multi-year Kalshi deal, making it an AI COMPANY covering AI companies — structural editorial-product conflict that didn't exist inside Comcast.
+3. STOCK-COVERAGE FEEDBACK LOOP: As a standalone media stock (declining revenue, stock ~37% below 52-week high), Versant's valuation is directly sensitive to tech sector health CNBC covers.
+
+**Financial data (verified):**
+- Q1 2026: $1.69B revenue (-1.1% YoY), $286M net income (-22%), ad revenue $368M (-5.2%)
+- Q2 2026: $1.64B revenue (-3.8% YoY), $211M profit, raised outlook to $6.2-6.45B
+- Revenue mix: 62% linear distribution, 23% advertising, 13% digital platforms, 3% licensing
+- Stock: Crashed 25% in first 3 days, trading ~$37.24 (52-week high $59.00)
+- AI: StockStory acquisition, Kalshi partnership, planned AI-powered retail investor tools
+
+**Prediction:** (1) CNBC tech framing becomes MORE favorable post-spinoff, (2) adversarial coverage concentrates on non-advertiser companies (OpenAI, Anthropic), (3) CNBC avoids questioning AI viability (undermines StockStory strategy).
+
+**5 confounders documented:** editorial independence norms (STRONG), adversarial coverage drives ratings (MODERATE), insufficient post-spinoff time (MODERATE), Comcast retained stake (WEAK), macro ad decline (MODERATE).
+
+**New test file:** `test_versant_cnbc_spinoff_financial_incentive_restructuring_aug16.py` (52 tests, 10 classes)
+**Updated:** `competitor-coverage-research.yaml` (mechanism #128 under cross_publication_findings), `competitor-entities.yaml` (new versant_media_group entity)
+
+**Stats after:** 128 mechanisms, 52 new tests, 409 test files total
+
 ## Iteration #132 — Sat 2026-08-16 (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #126: Cross-Publication Beat-Assignment Framing Replication — Gizmodo Wong-Barr Confirms WSJ Mims-Bobrowsky Pattern
@@ -1951,3 +1981,26 @@ WIRED (Condé Nast) directs adversarial coverage at Meta — the ONLY major AI/t
 
 **Test file:** `test_fastco_snap_meta_privacy_vocabulary_asymmetry_aug15.py` — 9 classes, 43 tests
 **Cumulative:** 121 mechanisms, 13,935 tests, 401 files
+
+## Iteration #133 — Sat 2026-08-15 23:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #127: People Inc Q2 2026 Google Traffic Substitution Paradox — Successful
+Diversification Creates Broader AI Coverage Capture**
+
+People Inc Q2 2026 earnings (Aug 3, 2026) provide the first empirical proof that
+a major publisher can successfully replace Google search traffic dependency with
+alternative revenue — AND demonstrate that the replacement creates BROADER financial
+capture by AI companies, not independence. Google search traffic fell to 21% of
+total (from ~67% historically — 69% reduction). Digital revenue grew 6% for the 11th
+consecutive quarter. EBITDA margins expanded to 26% from 23%. Growth driver: non-session
+revenue +16%, driven by AI licensing (OpenAI ≥$16M/yr, Meta, Microsoft PCM),
+Apple News, social, D/Cipher. Licensing revenue +23%. People Inc now has financial
+dependencies on 5 of 6 major tech companies — Google is the only one NOT paying them
+(and being sued). Barry Diller's $3B MGM casino stake provides a financial floor
+enabling the Google lawsuit ($15M/yr budgeted). Diller confirmed CNN acquisition interest.
+
+- New test file: test_people_inc_google_traffic_substitution_paradox_aug16.py (17 tests)
+- Updated People Inc Q2 2026 financial data in competitor-entities.yaml
+- Commit: ef6b11b, pushed to GitHub
+
+**Cumulative:** 127 mechanisms, ~14,000 tests, 408 files

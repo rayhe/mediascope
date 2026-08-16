@@ -5212,6 +5212,68 @@ entities:
       - 108
       - 111
       - 112
+  versant_media_group:
+    display_name: Versant Media Group (CNBC, MS Now, E!, USA Network)
+    aliases:
+      - Versant Media
+      - Versant
+      - VSNT
+      - CNBC
+    regex: \b(Versant\s+Media|VSNT|CNBC)(?!\s+Africa)\b
+    category: media_conglomerate
+    ticker: VSNT
+    exchange: NASDAQ
+    former_parent: Comcast Corporation (CMCSA)
+    spinoff_date: '2026-01'
+    publications: [CNBC, MS Now, E!, USA Network]
+    primary_coverage_outlet: CNBC
+    fy2026_revenue_guidance_b: 6.2-6.45
+    revenue_mix:
+      linear_distribution_pct: 62
+      advertising_pct: 23
+      digital_platforms_pct: 13
+      content_licensing_pct: 3
+    stock_debut_crash_pct: -25
+    ai_product_investments:
+      - StockStory acquisition (AI stock analysis)
+      - Kalshi multi-year partnership (prediction market data)
+      - AI-powered quantitative analysis for retail investors
+      - CNBC Pro DTC expansion with AI features
+    ai_content_licensing_deals: 0
+    entity_coverage_profile:
+      meta:
+        relationship: advertising
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      google:
+        relationship: advertising
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      apple:
+        relationship: advertising
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      openai:
+        relationship: none
+        ad_buyer: false
+        coverage_intensity: medium
+        content_licensing_deal: false
+      anthropic:
+        relationship: none
+        ad_buyer: false
+        coverage_intensity: low-medium
+        content_licensing_deal: false
+    mechanism_type: corporate_restructuring_incentive_amplification
+    related_mechanisms:
+      - 128
+    notes: >
+      Novel mechanism: corporate spinoff transforms CNBC from insulated-inside-conglomerate
+      to directly-exposed-inside-standalone-media-company. Advertising dependency amplified
+      ~33x from Comcast to Versant. StockStory acquisition makes Versant an AI company
+      simultaneously covering AI companies — structural editorial-product conflict.
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

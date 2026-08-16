@@ -12300,6 +12300,147 @@ cross_publication_findings:
       - https://www.amediaoperator.com/news/people-inc-s-digital-revenue-rises-even-as-traffic-remains-weak/
       - https://www.sec.gov/Archives/edgar/data/1800227/000162828026004988/ex_991q42025iac-pressrelea.htm
 
+  versant_cnbc_spinoff_financial_incentive_restructuring:
+    mechanism_id: 128
+    mechanism_name: 'Versant Media Post-Spinoff CNBC Financial Incentive Restructuring — Corporate Spinoff Transforms Insulated Coverage Into Direct Financial Exposure'
+    finding_type: financial_incentive_mapping
+    rotation_type: C
+    discovery_date: '2026-08-16'
+    test_file: tests/test_versant_cnbc_spinoff_financial_incentive_restructuring_aug16.py
+    domain: corporate_restructuring_incentive_shift
+    publications:
+      - CNBC (Versant Media Group, formerly Comcast/NBCUniversal)
+      - MS Now (formerly MSNBC)
+    parent_entity: 'Versant Media Group (NASDAQ: VSNT)'
+    former_parent: 'Comcast Corporation (NASDAQ: CMCSA)'
+    finding_summary: >
+      Comcast spun off its NBCUniversal cable networks (CNBC, MS Now, E!, USA Network) into
+      Versant Media Group (NASDAQ: VSNT) in January 2026, creating a structural shift in
+      financial incentives for one of the most influential tech/business coverage outlets.
+      Inside Comcast ($200B+ diversified conglomerate), CNBC coverage was financially
+      insulated — no single tech advertiser could materially affect Comcast. Inside Versant
+      ($6B standalone, -25% stock crash at debut, declining revenue, 23% advertising-dependent),
+      CNBC coverage now has DIRECT financial sensitivity to tech company advertising spend.
+      THREE simultaneous incentive channels activated: (1) advertising dependency amplified
+      ~33x (CNBC ad losses matter far more to Versant than Comcast), (2) AI product
+      dependency (StockStory acquisition makes Versant an AI company, not just an AI observer),
+      (3) stock-coverage feedback loop (Versant stock is sensitive to tech sector health
+      it covers). This is a novel mechanism type: corporate restructuring that shifts
+      incentive WEIGHTS of existing relationships, distinct from bilateral deal mechanisms.
+    novel_mechanism_type: >
+      Corporate restructuring incentive amplification. Previous mechanisms focus on new
+      bilateral deals (publisher signs deal with AI company). This mechanism identifies
+      how changes in corporate OWNERSHIP alter the incentive weight of existing financial
+      relationships. No new deal was signed — the SAME advertising relationships now
+      matter ~33x more because CNBC moved from a diversified parent to a media-only parent.
+    versant_financials:
+      spinoff_date: '2026-01'
+      fy2026_revenue_guidance_b: 6.2-6.45
+      revenue_mix:
+        linear_distribution_pct: 62
+        advertising_pct: 23
+        digital_platforms_pct: 13
+        content_licensing_pct: 3
+      q1_2026:
+        revenue_m: 1690
+        revenue_yoy_pct: -1.1
+        net_income_m: 286
+        net_income_yoy_pct: -22
+        ad_revenue_m: 368
+        ad_revenue_yoy_pct: -5.2
+        linear_m: 1010
+        linear_yoy_pct: -7.3
+        platforms_m: 192
+        platforms_yoy_pct: 9.0
+      q2_2026:
+        revenue_m: 1640
+        revenue_yoy_pct: -3.8
+        net_income_m: 211
+        net_income_yoy_pct: -30.1
+        linear_m: 954
+        linear_yoy_pct: -6.3
+        platforms_yoy_pct: 9.3
+      stock:
+        debut_week_decline_pct: -25
+        approx_price_mid_2026: 37.24
+        high_52_week: 59.00
+        comcast_flat_same_period: true
+    ai_product_strategy:
+      - StockStory acquisition (AI stock analysis, integrated into CNBC digital)
+      - Kalshi multi-year partnership (real-time prediction market data)
+      - AI-powered quantitative analysis for retail investors (planned)
+      - AI company partnerships for cryptocurrency products (planned)
+      - CNBC Pro DTC expansion with AI features
+    cnbc_coverage_subjects_as_advertisers:
+      - entity: Meta
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      - entity: Google/Alphabet
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      - entity: Apple
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      - entity: Microsoft
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      - entity: Amazon
+        ad_buyer: true
+        coverage_intensity: high
+        content_licensing_deal: false
+      - entity: OpenAI
+        ad_buyer: false
+        coverage_intensity: medium
+        content_licensing_deal: false
+      - entity: Anthropic
+        ad_buyer: false
+        coverage_intensity: low-medium
+        content_licensing_deal: false
+    sensitivity_analysis:
+      comcast_cnbc_ad_as_pct_of_total: 1.5
+      versant_cnbc_ad_as_pct_of_total: 50
+      sensitivity_amplification_x: 33
+    testable_prediction: >
+      If this mechanism is real: (1) CNBC tech framing becomes MORE favorable
+      post-spinoff vs pre-spinoff baseline, (2) adversarial coverage concentrates on
+      non-advertiser tech companies (OpenAI, Anthropic), (3) CNBC avoids questioning
+      AI product viability (undermines StockStory strategy), (4) coverage intensity of
+      Meta/Google/Apple/Microsoft/Amazon correlates with ad spend on CNBC specifically.
+    confounders:
+      - factor: Editorial independence norms
+        strength: STRONG
+        detail: CNBC journalists may resist commercial pressure through institutional norms
+      - factor: Adversarial coverage drives ratings
+        strength: MODERATE
+        detail: Negative tech coverage can boost CNBC ratings, creating counter-incentive; highest-rated Q2 in 5+ years
+      - factor: Insufficient post-spinoff time
+        strength: MODERATE
+        detail: Only 7 months of data (Jan-Aug 2026); need 12+ for robust before/after comparison
+      - factor: Comcast retained stake
+        strength: WEAK
+        detail: 19.9% non-controlling stake for up to 12 months provides minimal editorial insulation
+      - factor: Macro ad market decline
+        strength: MODERATE
+        detail: Ad revenue decline (-5.2% Q1) may be industry-wide, not entity-specific
+    cross_references:
+      - mechanism_id: 120
+        relationship: Google traffic cannibalization created the macro trend Versant faces
+      - mechanism_id: 127
+        relationship: People Inc deal accumulation vs Versant structural amplification are complementary Type C findings
+      - mechanism_id: 88
+        relationship: Google Showcase coercive cycle parallels — dependency amplification through structural change
+    source_urls:
+      - https://www.morningstar.com/news/marketwatch/20260107238/cnbc-parents-stock-is-in-turmoil-versant-shares-pummeled-for-the-third-day-in-a-row-after-comcast-spinoff
+      - https://www.wsj.com/business/earnings/versant-vsnt-1q-earnings-report-2026-stock-9d6bd299
+      - https://www.wsj.com/business/earnings/versant-media-shares-jump-after-raising-outlook-on-strong-viewership-18f091a0
+      - https://www.reuters.com/business/versant-lifts-annual-revenue-forecast-digital-growth-offsets-pay-tv-weakness-2026-08-06/
+      - https://business-news-today.com/versant-media-nasdaq-vsnt-buys-stockstory-to-expand-cnbcs-ai-driven-investing-platform/
+      - https://www.thewrap.com/industry-news/deals-ma/versant-comcast-spinoff-closes/
+
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
