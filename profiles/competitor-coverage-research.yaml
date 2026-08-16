@@ -11755,6 +11755,232 @@ cross_publication_findings:
     test_count: 43
     test_classes: 9
 
+
+  techcrunch_snap_specs_camera_privacy_vocabulary_zero:
+    mechanism_id: 122
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: same_publication_privacy_vocabulary_asymmetry
+    domain: wearables_privacy
+    publication: TechCrunch (Yahoo / Apollo Global Management)
+    ownership_archetype: private_equity_ai_infrastructure_financing
+    entities:
+    - meta
+    - snap
+    iteration: 127
+    test_file: tests/test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py
+    articles:
+      meta:
+        url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+        title: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.
+        author: Sarah Perez
+        date: '2026-07-08'
+        privacy_alarm_terms: 12
+        adversarial_source_categories: 12
+        template: comprehensive_privacy_indictment
+        historical_baggage_years_back: 8
+      snap:
+        url: https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+        title: Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap
+        author: Lucas Ropek
+        date: '2026-06-16'
+        privacy_alarm_terms: 0
+        adversarial_source_categories: 0
+        template: product_business_viability
+        snap_ftc_history_referenced: false
+    camera_capability_parity:
+      snap_cameras: 4
+      meta_cameras: 1
+      both_record_pov: true
+      both_have_led: true
+      both_have_ai: true
+      snap_has_hand_tracking: true
+    asymmetry_score: 0.94
+    finding_summary: >
+      TechCrunch published two articles within 22 days about camera-equipped smart
+      glasses. Meta's LED safety improvement was reframed as a comprehensive privacy
+      indictment (12+ alarm terms, 12 adversarial source categories, Cambridge Analytica
+      invoked 8 years later). Snap's SPECS with 4 cameras (vs Meta's 1) received ZERO
+      privacy alarm language -- cameras described as "record point-of-view footage,"
+      LED credited as "privacy protections." The SAME feature (LED recording indicator)
+      was framed as evidence of surveillance culture at Meta and as a privacy credential
+      at Snap. Snap's own FTC settlement history (2014) was never referenced.
+    confounders:
+    - name: different_product_categories
+      strength: MODERATE
+      rebutted: true
+    - name: different_market_deployment
+      strength: MODERATE
+      rebutted: true
+    - name: different_individual_reporters
+      strength: WEAK
+      rebutted: true
+    - name: meta_has_more_privacy_history
+      strength: MODERATE
+      rebutted: true
+    - name: meta_broader_data_ecosystem
+      strength: STRONG
+      rebutted: true
+    cross_references:
+    - mechanism_id: 104
+      relationship: extends
+      note: Same publication/ownership, adds direct competitor comparison
+    - mechanism_id: 121
+      relationship: consistent
+      note: Same pattern (zero Snap vocabulary) replicated at different publication
+    - mechanism_id: 33
+      relationship: consistent
+      note: Competitor hardware consistently receives zero privacy scrutiny
+
+  lisa_eadicicco_cnn_coverage_selection_asymmetry:
+    mechanism_id: 123
+    journalist: Lisa Eadicicco
+    publication: CNN Business
+    date: 2026-07-22 to 2026-07-26
+    mechanism_type: coverage_selection_and_privacy_vocabulary_bifurcation
+    finding_summary: >
+      CNN Tech Editor Lisa Eadicicco covered Samsung's Galaxy Unpacked (Jul 22, 2026)
+      writing ONLY about foldable phones, omitting Samsung's Galaxy Glasses debut from
+      the same event. Four days later (Jul 26), she published a comprehensive privacy
+      deep-dive about Meta's Ray-Ban glasses with 8+ privacy alarm terms, 2 adversarial
+      expert sources (EPIC, Santa Clara U), and Lorde's "F**k the glasses" condemnation.
+      Samsung was mentioned once in passing with zero privacy vocabulary applied.
+      Samsung's Galaxy Glasses have identical capabilities (camera, AI, recording, LED).
+    meta_coverage:
+      article: "AI devices that see, listen and record: Are we ready for the post-smartphone world?"
+      url: https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
+      date: 2026-07-26
+      privacy_alarm_terms: 8
+      expert_adversarial_sources: 2
+      pop_culture_condemnation: 1
+      template: comprehensive_privacy_indictment
+    samsung_coverage:
+      article: "Can Samsung outmaneuver Apple's cool factor? We may soon find out"
+      url: https://www.cnn.com/2026/07/22/tech/samsung-galaxy-z-fold-8-apple-foldable-iphone
+      date: 2026-07-22
+      privacy_alarm_terms: 0
+      smart_glasses_mentions: 0
+      template: competitive_product_enthusiasm
+    career_trajectory:
+      publications: ["Tom's Guide", "IBTimes", "TIME", "Business Insider", "CNET", "CNN Business"]
+      apple_beat: "Business Insider 2019-2021"
+      google_positive_demo: "CNET Project Astra glasses demo"
+      note: "Career affinity for Apple/Google ecosystems; defaults to privacy scrutiny for Meta"
+    financial_context:
+      samsung_cnn_relationship: major_advertising_client
+      google_cnn_relationship: advertising_and_distribution_partner
+      meta_cnn_relationship: competitive_antagonist_digital_ad_revenue
+    confounders:
+      - type: "Meta shipping, Samsung pre-launch"
+        strength: STRONG
+        rebuttal: "Pre-launch is when scrutiny matters most; article frames concern at category level"
+      - type: "Meta has 7M+ users"
+        strength: MODERATE
+        rebuttal: "Article mentions Samsung — acknowledging the product implies comparable scrutiny"
+      - type: "Hands-on vs announcement"
+        strength: STRONG
+        rebuttal: "Valid for product review; invalid for category-level privacy analysis"
+      - type: "Meta has existing backlash"
+        strength: MODERATE
+        rebuttal: "Explains proportional scrutiny for Meta, not zero scrutiny for Samsung"
+      - type: "Different article focus"
+        strength: WEAK
+        rebuttal: "Choosing foldables over glasses at a multi-product event IS coverage selection"
+    cross_references:
+      - mechanism_id: 122
+        relationship: extends
+        note: Same privacy vocabulary zero pattern, now at mainstream news outlet CNN
+      - mechanism_id: 33
+        relationship: consistent
+        note: Competitor hardware zero scrutiny pattern continues at CNN
+      - mechanism_id: 121
+        relationship: consistent
+        note: Same cross-entity pattern, adds career trajectory analysis dimension
+  wbd_quad_tech_financial_architecture_content_deal_paradox:
+    mechanism_id: 124
+    name: WBD Quad-Tech Financial Architecture Content Deal Paradox
+    date_analyzed: '2026-08-15'
+    type: type_c_financial_incentive_mapping
+    publication: CNN
+    parent: Warner Bros. Discovery
+    entity_coverage:
+      meta:
+        relationship: content_licensing
+        deal_date: '2025-12-05'
+        estimated_value_m_yr: 5-10
+        predicted_tone: softer
+        actual_tone: adversarial
+        prediction_failure: true
+      google:
+        relationship: infrastructure_dependency
+        deal: Google Cloud Vertex AI captioning (CNN, Max, Discovery+)
+        incentive_direction: softer_google
+      amazon:
+        relationship: infrastructure_dependency
+        deal: AWS Preferred Cloud Provider (agentic AI ad tech)
+        announced: '2026-07'
+        incentive_direction: softer_amazon
+      samsung:
+        relationship: advertising_dependency
+        spend_profile: 4th largest global advertiser ($9.7B)
+        linear_tv_quote: We are a large spender in linear TV
+        incentive_direction: softer_samsung
+    key_finding: 'First documented case where a Meta content licensing deal FAILS to
+      produce softer coverage because competing advertising and infrastructure
+      dependencies overwhelm it. Financial Incentive Hierarchy: advertising (Samsung
+      $9.7B, 4th globally) > infrastructure (AWS preferred cloud, Google Cloud
+      captioning) > content licensing (Meta ~$5-10M/yr). Samsung ad spend at WBD
+      estimated 20-100x larger than Meta content deal.'
+    model_revision: 'The deal-only model must be upgraded to a weighted multi-factor
+      model. Content licensing predicts softer coverage ONLY when advertising and
+      infrastructure dependencies do not oppose it. WBD/CNN is a natural experiment
+      proving this: same publication, deals on BOTH sides, coverage follows advertising.'
+    wbd_q2_2026:
+      total_revenue_b: 8.7
+      revenue_yoy_pct: -11
+      ad_revenue_b: 1.72
+      ad_yoy_pct: -22
+      linear_ad_yoy_pct: -27
+      net_income_decline_pct: 91
+    paramount_merger:
+      status: pending_litigation
+      deal_value_b: 110
+      trial_date: March 2-19, 2027
+      implication: Combined entity even more Samsung/Google ad dependent
+    confounders:
+      - type: Meta deal value undisclosed; could be larger
+        strength: MODERATE
+        rebuttal: Even at 5x estimate, Samsung ad spend is still 4-10x larger
+      - type: CNN editorial independence from WBD commercial
+        strength: STRONG
+        rebuttal: Cannot invoke independence to explain paradox without invalidating deal model
+      - type: Lisa Eadicicco individual judgment
+        strength: MODERATE
+        rebuttal: Coverage selection bias is the finding; financial architecture is independent predictor
+      - type: Meta market leader warrants more scrutiny
+        strength: MODERATE
+        rebuttal: Explains proportional, not zero scrutiny for Samsung; contradicts own deal
+      - type: Samsung glasses pre-launch vs Meta deployed
+        strength: STRONG
+        rebuttal: Pre-launch is when privacy scrutiny matters most (mechanisms #33, #122)
+    cross_references:
+      - mechanism_id: 123
+        relationship: explains
+        note: Provides financial EXPLANATION for Eadicicco coverage selection asymmetry
+      - mechanism_id: 120
+        relationship: consistent
+        note: WBD -22% ad decline confirms traffic cannibalization feedback loop
+      - mechanism_id: 74
+        relationship: extends
+        note: Financial architecture explaining Samsung equivalence paradox
+    source_urls:
+      - https://www.emarketer.com/content/warner-bros--discovery-s-q2-declines-make-paramount-deal-look-vital
+      - https://www.thewrap.com/industry-news/business/warner-bros-discovery-earnings-q2-2026/
+      - https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider
+      - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+      - https://www.engadget.com/entertainment/warner-bros-discovery-teams-up-with-google-to-generate-captions-using-ai-161345238.html
+      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -15243,228 +15469,5 @@ publications:
     x_twitter_coverage_tone: adversarial
 
 
-  techcrunch_snap_specs_camera_privacy_vocabulary_zero:
-    mechanism_id: 122
-    date_added: '2026-08-15'
-    discovery_date: '2026-08-15'
-    finding_type: same_publication_privacy_vocabulary_asymmetry
-    domain: wearables_privacy
-    publication: TechCrunch (Yahoo / Apollo Global Management)
-    ownership_archetype: private_equity_ai_infrastructure_financing
-    entities:
-    - meta
-    - snap
-    iteration: 127
-    test_file: tests/test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py
-    articles:
-      meta:
-        url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
-        title: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.
-        author: Sarah Perez
-        date: '2026-07-08'
-        privacy_alarm_terms: 12
-        adversarial_source_categories: 12
-        template: comprehensive_privacy_indictment
-        historical_baggage_years_back: 8
-      snap:
-        url: https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
-        title: Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap
-        author: Lucas Ropek
-        date: '2026-06-16'
-        privacy_alarm_terms: 0
-        adversarial_source_categories: 0
-        template: product_business_viability
-        snap_ftc_history_referenced: false
-    camera_capability_parity:
-      snap_cameras: 4
-      meta_cameras: 1
-      both_record_pov: true
-      both_have_led: true
-      both_have_ai: true
-      snap_has_hand_tracking: true
-    asymmetry_score: 0.94
-    finding_summary: >
-      TechCrunch published two articles within 22 days about camera-equipped smart
-      glasses. Meta's LED safety improvement was reframed as a comprehensive privacy
-      indictment (12+ alarm terms, 12 adversarial source categories, Cambridge Analytica
-      invoked 8 years later). Snap's SPECS with 4 cameras (vs Meta's 1) received ZERO
-      privacy alarm language -- cameras described as "record point-of-view footage,"
-      LED credited as "privacy protections." The SAME feature (LED recording indicator)
-      was framed as evidence of surveillance culture at Meta and as a privacy credential
-      at Snap. Snap's own FTC settlement history (2014) was never referenced.
-    confounders:
-    - name: different_product_categories
-      strength: MODERATE
-      rebutted: true
-    - name: different_market_deployment
-      strength: MODERATE
-      rebutted: true
-    - name: different_individual_reporters
-      strength: WEAK
-      rebutted: true
-    - name: meta_has_more_privacy_history
-      strength: MODERATE
-      rebutted: true
-    - name: meta_broader_data_ecosystem
-      strength: STRONG
-      rebutted: true
-    cross_references:
-    - mechanism_id: 104
-      relationship: extends
-      note: Same publication/ownership, adds direct competitor comparison
-    - mechanism_id: 121
-      relationship: consistent
-      note: Same pattern (zero Snap vocabulary) replicated at different publication
-    - mechanism_id: 33
-      relationship: consistent
-      note: Competitor hardware consistently receives zero privacy scrutiny
-
-  lisa_eadicicco_cnn_coverage_selection_asymmetry:
-    mechanism_id: 123
-    journalist: Lisa Eadicicco
-    publication: CNN Business
-    date: 2026-07-22 to 2026-07-26
-    mechanism_type: coverage_selection_and_privacy_vocabulary_bifurcation
-    finding_summary: >
-      CNN Tech Editor Lisa Eadicicco covered Samsung's Galaxy Unpacked (Jul 22, 2026)
-      writing ONLY about foldable phones, omitting Samsung's Galaxy Glasses debut from
-      the same event. Four days later (Jul 26), she published a comprehensive privacy
-      deep-dive about Meta's Ray-Ban glasses with 8+ privacy alarm terms, 2 adversarial
-      expert sources (EPIC, Santa Clara U), and Lorde's "F**k the glasses" condemnation.
-      Samsung was mentioned once in passing with zero privacy vocabulary applied.
-      Samsung's Galaxy Glasses have identical capabilities (camera, AI, recording, LED).
-    meta_coverage:
-      article: "AI devices that see, listen and record: Are we ready for the post-smartphone world?"
-      url: https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
-      date: 2026-07-26
-      privacy_alarm_terms: 8
-      expert_adversarial_sources: 2
-      pop_culture_condemnation: 1
-      template: comprehensive_privacy_indictment
-    samsung_coverage:
-      article: "Can Samsung outmaneuver Apple's cool factor? We may soon find out"
-      url: https://www.cnn.com/2026/07/22/tech/samsung-galaxy-z-fold-8-apple-foldable-iphone
-      date: 2026-07-22
-      privacy_alarm_terms: 0
-      smart_glasses_mentions: 0
-      template: competitive_product_enthusiasm
-    career_trajectory:
-      publications: ["Tom's Guide", "IBTimes", "TIME", "Business Insider", "CNET", "CNN Business"]
-      apple_beat: "Business Insider 2019-2021"
-      google_positive_demo: "CNET Project Astra glasses demo"
-      note: "Career affinity for Apple/Google ecosystems; defaults to privacy scrutiny for Meta"
-    financial_context:
-      samsung_cnn_relationship: major_advertising_client
-      google_cnn_relationship: advertising_and_distribution_partner
-      meta_cnn_relationship: competitive_antagonist_digital_ad_revenue
-    confounders:
-      - type: "Meta shipping, Samsung pre-launch"
-        strength: STRONG
-        rebuttal: "Pre-launch is when scrutiny matters most; article frames concern at category level"
-      - type: "Meta has 7M+ users"
-        strength: MODERATE
-        rebuttal: "Article mentions Samsung — acknowledging the product implies comparable scrutiny"
-      - type: "Hands-on vs announcement"
-        strength: STRONG
-        rebuttal: "Valid for product review; invalid for category-level privacy analysis"
-      - type: "Meta has existing backlash"
-        strength: MODERATE
-        rebuttal: "Explains proportional scrutiny for Meta, not zero scrutiny for Samsung"
-      - type: "Different article focus"
-        strength: WEAK
-        rebuttal: "Choosing foldables over glasses at a multi-product event IS coverage selection"
-    cross_references:
-      - mechanism_id: 122
-        relationship: extends
-        note: Same privacy vocabulary zero pattern, now at mainstream news outlet CNN
-      - mechanism_id: 33
-        relationship: consistent
-        note: Competitor hardware zero scrutiny pattern continues at CNN
-      - mechanism_id: 121
-        relationship: consistent
-        note: Same cross-entity pattern, adds career trajectory analysis dimension
-  - mechanism_id: 124
-    name: WBD Quad-Tech Financial Architecture Content Deal Paradox
-    date_analyzed: '2026-08-15'
-    type: type_c_financial_incentive_mapping
-    publication: CNN
-    parent: Warner Bros. Discovery
-    entity_coverage:
-      meta:
-        relationship: content_licensing
-        deal_date: '2025-12-05'
-        estimated_value_m_yr: 5-10
-        predicted_tone: softer
-        actual_tone: adversarial
-        prediction_failure: true
-      google:
-        relationship: infrastructure_dependency
-        deal: Google Cloud Vertex AI captioning (CNN, Max, Discovery+)
-        incentive_direction: softer_google
-      amazon:
-        relationship: infrastructure_dependency
-        deal: AWS Preferred Cloud Provider (agentic AI ad tech)
-        announced: '2026-07'
-        incentive_direction: softer_amazon
-      samsung:
-        relationship: advertising_dependency
-        spend_profile: 4th largest global advertiser ($9.7B)
-        linear_tv_quote: We are a large spender in linear TV
-        incentive_direction: softer_samsung
-    key_finding: 'First documented case where a Meta content licensing deal FAILS to
-      produce softer coverage because competing advertising and infrastructure
-      dependencies overwhelm it. Financial Incentive Hierarchy: advertising (Samsung
-      $9.7B, 4th globally) > infrastructure (AWS preferred cloud, Google Cloud
-      captioning) > content licensing (Meta ~$5-10M/yr). Samsung ad spend at WBD
-      estimated 20-100x larger than Meta content deal.'
-    model_revision: 'The deal-only model must be upgraded to a weighted multi-factor
-      model. Content licensing predicts softer coverage ONLY when advertising and
-      infrastructure dependencies do not oppose it. WBD/CNN is a natural experiment
-      proving this: same publication, deals on BOTH sides, coverage follows advertising.'
-    wbd_q2_2026:
-      total_revenue_b: 8.7
-      revenue_yoy_pct: -11
-      ad_revenue_b: 1.72
-      ad_yoy_pct: -22
-      linear_ad_yoy_pct: -27
-      net_income_decline_pct: 91
-    paramount_merger:
-      status: pending_litigation
-      deal_value_b: 110
-      trial_date: March 2-19, 2027
-      implication: Combined entity even more Samsung/Google ad dependent
-    confounders:
-      - type: Meta deal value undisclosed; could be larger
-        strength: MODERATE
-        rebuttal: Even at 5x estimate, Samsung ad spend is still 4-10x larger
-      - type: CNN editorial independence from WBD commercial
-        strength: STRONG
-        rebuttal: Cannot invoke independence to explain paradox without invalidating deal model
-      - type: Lisa Eadicicco individual judgment
-        strength: MODERATE
-        rebuttal: Coverage selection bias is the finding; financial architecture is independent predictor
-      - type: Meta market leader warrants more scrutiny
-        strength: MODERATE
-        rebuttal: Explains proportional, not zero scrutiny for Samsung; contradicts own deal
-      - type: Samsung glasses pre-launch vs Meta deployed
-        strength: STRONG
-        rebuttal: Pre-launch is when privacy scrutiny matters most (mechanisms #33, #122)
-    cross_references:
-      - mechanism_id: 123
-        relationship: explains
-        note: Provides financial EXPLANATION for Eadicicco coverage selection asymmetry
-      - mechanism_id: 120
-        relationship: consistent
-        note: WBD -22% ad decline confirms traffic cannibalization feedback loop
-      - mechanism_id: 74
-        relationship: extends
-        note: Financial architecture explaining Samsung equivalence paradox
-    source_urls:
-      - https://www.emarketer.com/content/warner-bros--discovery-s-q2-declines-make-paramount-deal-look-vital
-      - https://www.thewrap.com/industry-news/business/warner-bros-discovery-earnings-q2-2026/
-      - https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider
-      - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
-      - https://www.engadget.com/entertainment/warner-bros-discovery-teams-up-with-google-to-generate-captions-using-ai-161345238.html
-      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
 
 research_period: 2024-08-01 to 2026-08-15

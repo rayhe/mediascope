@@ -1,3 +1,77 @@
+## Iteration #129 — Sat 2026-08-15 19:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #124: WBD Quad-Tech Financial Architecture — Content Deal Paradox Where
+Advertising and Infrastructure Dependencies Override Content Licensing Incentives**
+
+First documented case where a Meta content licensing deal FAILS to produce softer
+coverage because competing financial incentives overwhelm it. CNN (Warner Bros. Discovery)
+has FOUR simultaneous tech company financial relationships:
+
+1. **META:** AI content licensing deal (Dec 2025, multi-year, undisclosed ~$5-10M/yr)
+   → Should predict softer Meta coverage per mechanisms #1-#120
+
+2. **GOOGLE:** Cloud Vertex AI captioning infrastructure for CNN/Max/Discovery+
+   → 50% cost reduction, 80% time savings, technology lock-in
+
+3. **AMAZON:** AWS "Preferred Cloud Provider" for WBD's ENTIRE agentic AI advertising
+   technology stack (announced Jul 2026, Q3-Q4 2026 phased rollout)
+   → Mission-critical infrastructure dependency
+
+4. **SAMSUNG:** 4th largest global advertiser ($9.7B annually)
+   → Self-described "large spender in linear TV" (Publicis Media CIO Karyn Johnson)
+   → WBD linear networks (CNN, TNT) are major Samsung ad inventory
+
+**THE PARADOX:** CNN has a Meta AI content deal that should predict SOFTER Meta coverage.
+Instead, Lisa Eadicicco (CNN Business Tech Editor) produced the pattern documented
+in mechanism #123: Samsung Galaxy Glasses OMITTED entirely from Jul 22 Unpacked
+coverage, Meta glasses received comprehensive privacy indictment (8+ alarm terms,
+2 adversarial expert sources) in Jul 26 article.
+
+**THE EXPLANATION:** Financial Incentive Hierarchy:
+  advertising ($9.7B Samsung) > infrastructure (AWS + Google Cloud) > content licensing (~$5-10M Meta)
+Samsung's estimated WBD ad spend ($194-485M at 2-5% of $9.7B global) is 20-100x
+larger than Meta's content deal.
+
+**WBD Q2 2026 (reported Aug 5):**
+- Revenue: $8.7B (-11% YoY)
+- Ad revenue: $1.72B (-22% YoY)
+- Linear ad revenue: $1.4B (-27% YoY)
+- Net income: $149M (-91% YoY)
+- Streaming: $3.08B (+10% YoY), EBITDA $512M (+75%)
+→ Ad revenue collapse amplifies dependency on remaining large advertisers (mechanism #120)
+
+**MODEL REVISION:** The deal-only model must upgrade to a weighted multi-factor model.
+Content licensing predicts softer coverage ONLY when advertising and infrastructure
+dependencies do not oppose it. CNN is a natural experiment: same publication, deals
+on BOTH sides, coverage follows advertising.
+
+**Paramount merger (pending, $110B, trial Mar 2027):** Combined CNN+CBS News would have
+even MORE linear TV ad inventory and HIGHER Samsung/Google advertising dependency.
+
+**5 confounders documented** (2 STRONG, 3 MODERATE):
+1. Meta deal value undisclosed (MODERATE — even at 5x estimate, Samsung still 4-10x larger)
+2. CNN editorial independence (STRONG — cannot invoke without invalidating deal model)
+3. Eadicicco individual judgment (MODERATE — coverage selection IS the finding)
+4. Meta market leader scrutiny (MODERATE — explains proportional, not zero Samsung scrutiny)
+5. Samsung pre-launch (STRONG — pre-launch is when privacy scrutiny matters most)
+
+**Cross-references:** Explains #123 (Eadicicco coverage selection), consistent with #120
+(traffic cannibalization feedback loop, WBD -22% confirms), extends #74 (Samsung
+equivalence paradox with financial architecture).
+
+**New entity section:** `wbd_cnn` added to competitor-entities.yaml with full Q2 2026
+earnings, all four tech relationships, financial hierarchy, and Paramount merger data.
+
+**Files:**
+- tests/test_wbd_quad_tech_financial_architecture_content_deal_paradox_aug15.py (31 tests, 9 classes)
+- profiles/competitor-entities.yaml (wbd_cnn entity section + mechanism #124)
+- profiles/competitor-coverage-research.yaml (mechanism #124)
+- README.md + docs/ARCHITECTURE.md (stats: 404 test files, ~14,000 tests, 124 mechanisms)
+
+**Stats:** 404 test files | ~14,000 tests | 124 mechanisms
+
+---
+
 ## Iteration #128 — Sat 2026-08-15 18:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Mechanism #123: Lisa Eadicicco CNN Cross-Entity Coverage Selection Asymmetry — Same Journalist, Same Week, Different Privacy Standards for Identical Products**
