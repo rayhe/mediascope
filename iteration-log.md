@@ -2293,3 +2293,41 @@ First empirical test of mechanism #128's predictions about post-spinoff advertis
 - All 39 tests pass
 
 **Cumulative:** 131 mechanisms, ~14,248 tests, 413 files
+
+---
+
+### Aug 16, 2026 — 10:00 AM PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix**
+
+**Type:** remediation_coverage_selection_silence | **Publication:** WIRED | **Entity:** Meta
+
+**Key findings:**
+- WIRED published "The Rise of the Ray-Ban Meta Creep" (March 2026) documenting LED disabling services, pickup artist misuse, and "glasshole" culture
+- WIRED published a second adversarial investigation (June 4, 2026) about dormant NameTag facial recognition code in Meta's smart glasses app
+- On July 7, 2026, Meta shipped v26 mandatory update: camera disabled if LED tampered/destroyed, marketplace listings removed, legal action against tampering businesses
+- Meta VP Alex Himel told The Verge the update was in development before complaints intensified
+- Meta: "No other kind of camera has done this, and we're proud to lead the industry forward"
+- WIRED published ZERO articles covering Meta's v26 LED privacy fix
+- 7+ other publications (The Verge, 9to5Google, Digital Trends, Android Police, Road to VR, PetaPixel, Engadget) all covered the update
+- 19 days later (July 26), Apple's N50 delay for "privacy" (no shipped product, no actual fix) received coverage including from WIRED
+- Novel mechanism type: remediation_coverage_selection_silence — publication raises alarm, company addresses exact issue, publication doesn't cover fix, ensuring original alarm narrative persists uncorrected
+
+**Financial context:** Condé Nast has OpenAI deal (Aug 2024), zero Meta content deals. Advance Publications has $10B+ Reddit stake. Meta is Condé Nast's largest ad competitor.
+
+**Confounders documented (5):**
+1. STRONG: Fix may be considered insufficient (doesn't address "super sensing" plans)
+2. STRONG: Editorial judgment — incremental update, not major feature story
+3. MODERATE: Subscription model prioritizes investigation over PR coverage
+4. MODERATE: Resource allocation — limited wearables beat bandwidth
+5. WEAK: Publishing lag / search index incompleteness
+
+**Cross-references:** #8, #30, #33, #101, #118, #130
+
+**Changes:**
+- New test: `test_wired_meta_remediation_coverage_selection_silence_aug16.py` (55 tests, 10 classes)
+- Updated: `wired.yaml` (mechanism #134 added)
+- Updated: `competitor-coverage-research.yaml` (mechanism #134 added to cross_publication_findings)
+- All 55 tests pass
+
+**Cumulative:** 134 mechanisms, ~14,626 tests, 417 files
