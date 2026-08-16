@@ -15383,5 +15383,88 @@ publications:
       - mechanism_id: 121
         relationship: consistent
         note: Same cross-entity pattern, adds career trajectory analysis dimension
+  - mechanism_id: 124
+    name: WBD Quad-Tech Financial Architecture Content Deal Paradox
+    date_analyzed: '2026-08-15'
+    type: type_c_financial_incentive_mapping
+    publication: CNN
+    parent: Warner Bros. Discovery
+    entity_coverage:
+      meta:
+        relationship: content_licensing
+        deal_date: '2025-12-05'
+        estimated_value_m_yr: 5-10
+        predicted_tone: softer
+        actual_tone: adversarial
+        prediction_failure: true
+      google:
+        relationship: infrastructure_dependency
+        deal: Google Cloud Vertex AI captioning (CNN, Max, Discovery+)
+        incentive_direction: softer_google
+      amazon:
+        relationship: infrastructure_dependency
+        deal: AWS Preferred Cloud Provider (agentic AI ad tech)
+        announced: '2026-07'
+        incentive_direction: softer_amazon
+      samsung:
+        relationship: advertising_dependency
+        spend_profile: 4th largest global advertiser ($9.7B)
+        linear_tv_quote: We are a large spender in linear TV
+        incentive_direction: softer_samsung
+    key_finding: 'First documented case where a Meta content licensing deal FAILS to
+      produce softer coverage because competing advertising and infrastructure
+      dependencies overwhelm it. Financial Incentive Hierarchy: advertising (Samsung
+      $9.7B, 4th globally) > infrastructure (AWS preferred cloud, Google Cloud
+      captioning) > content licensing (Meta ~$5-10M/yr). Samsung ad spend at WBD
+      estimated 20-100x larger than Meta content deal.'
+    model_revision: 'The deal-only model must be upgraded to a weighted multi-factor
+      model. Content licensing predicts softer coverage ONLY when advertising and
+      infrastructure dependencies do not oppose it. WBD/CNN is a natural experiment
+      proving this: same publication, deals on BOTH sides, coverage follows advertising.'
+    wbd_q2_2026:
+      total_revenue_b: 8.7
+      revenue_yoy_pct: -11
+      ad_revenue_b: 1.72
+      ad_yoy_pct: -22
+      linear_ad_yoy_pct: -27
+      net_income_decline_pct: 91
+    paramount_merger:
+      status: pending_litigation
+      deal_value_b: 110
+      trial_date: March 2-19, 2027
+      implication: Combined entity even more Samsung/Google ad dependent
+    confounders:
+      - type: Meta deal value undisclosed; could be larger
+        strength: MODERATE
+        rebuttal: Even at 5x estimate, Samsung ad spend is still 4-10x larger
+      - type: CNN editorial independence from WBD commercial
+        strength: STRONG
+        rebuttal: Cannot invoke independence to explain paradox without invalidating deal model
+      - type: Lisa Eadicicco individual judgment
+        strength: MODERATE
+        rebuttal: Coverage selection bias is the finding; financial architecture is independent predictor
+      - type: Meta market leader warrants more scrutiny
+        strength: MODERATE
+        rebuttal: Explains proportional, not zero scrutiny for Samsung; contradicts own deal
+      - type: Samsung glasses pre-launch vs Meta deployed
+        strength: STRONG
+        rebuttal: Pre-launch is when privacy scrutiny matters most (mechanisms #33, #122)
+    cross_references:
+      - mechanism_id: 123
+        relationship: explains
+        note: Provides financial EXPLANATION for Eadicicco coverage selection asymmetry
+      - mechanism_id: 120
+        relationship: consistent
+        note: WBD -22% ad decline confirms traffic cannibalization feedback loop
+      - mechanism_id: 74
+        relationship: extends
+        note: Financial architecture explaining Samsung equivalence paradox
+    source_urls:
+      - https://www.emarketer.com/content/warner-bros--discovery-s-q2-declines-make-paramount-deal-look-vital
+      - https://www.thewrap.com/industry-news/business/warner-bros-discovery-earnings-q2-2026/
+      - https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider
+      - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+      - https://www.engadget.com/entertainment/warner-bros-discovery-teams-up-with-google-to-generate-captions-using-ai-161345238.html
+      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
 
 research_period: 2024-08-01 to 2026-08-15

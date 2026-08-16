@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,017 | Across 403 test files |
+| Tests | ~14,000 | Across 404 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14017 tests** across 403 test files, each covering a different analytical capability:
+MediaScope has **14000 tests** across 404 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -478,6 +478,7 @@ MediaScope has **14017 tests** across 403 test files, each covering a different 
 | `test_type_d_11am_cross_validation_aug15.py` | 19 | Type D cross-validation (Aug 15, 11 AM PT): Critical YAML parse error fixes and structural integrity audit. Fixed YAML comment-truncation bug in competitor-coverage-research.yaml (unquoted `(mechanism #30)` caused ` #` to be parsed as comment, breaking all tests). Fixed journalists.yaml root-level list item error (Michael Hicks entry used `- career:` format at root level instead of named key `michael_l_hicks:`). Moved mechanisms #115 (TechRadar), #116 (Michael Hicks/Android Central), and #117 (News Corp Q4) from `publications` section to `cross_publication_findings` (fixing 3 core test failures). Fixed Karissa Bell fixture deprecation warning (PytestRemovedIn10Warning). Regression guards: YAML parse integrity, mechanism placement validation, cross-reference bidirectionality, fixture deprecation, stats consistency. 7 classes, 19 tests |
 | `test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py` | 45 | Mechanism #122: TechCrunch same-publication camera-equipped glasses privacy vocabulary zero. Meta LED safety improvement → 12+ alarm terms, 12 adversarial sources, Cambridge Analytica invoked 8 years later. Snap SPECS (4 cameras vs Meta's 1) → ZERO privacy alarm terms, LED credited as privacy protection. Apollo/Yahoo ownership chain, $38.4B AI financing. Asymmetry 0.94. 10 classes, 45 tests |
 | `test_lisa_eadicicco_cross_entity_coverage_selection_asymmetry_aug15.py` | 37 | Mechanism #123: Lisa Eadicicco CNN cross-entity coverage selection asymmetry. Same journalist, same week, different privacy standards for identical products. Jul 22 Samsung Unpacked article covers ONLY foldable phones, omits Galaxy Glasses debut from same event. Jul 26 Meta privacy deep-dive applies 8+ alarm terms, 2 adversarial experts (EPIC, Santa Clara), Lorde condemnation. Samsung mentioned once with zero privacy vocabulary. Career trajectory: 6 publications, Apple beat at BI, positive Google Astra demo at CNET. CNN financial context: Samsung/Google are major ad clients, Meta is competitive antagonist. 5 confounders (2 STRONG, 3 MODERATE/WEAK). First mainstream news outlet (CNN) in wearables asymmetry corpus. 10 classes, 37 tests |
+| `test_wbd_quad_tech_financial_architecture_content_deal_paradox_aug15.py` | 31 | Mechanism #124: WBD Quad-Tech Financial Architecture Content Deal Paradox. CNN (WBD) has FOUR simultaneous tech company relationships: Meta AI content deal (Dec 2025), Google Cloud Vertex AI captioning infrastructure, AWS Preferred Cloud Provider (agentic AI ad tech, Jul 2026), Samsung (4th largest global advertiser, $9.7B). PARADOX: Meta deal should predict softer coverage, but Lisa Eadicicco produced adversarial Meta privacy indictment while omitting Samsung glasses. EXPLANATION: Advertising/infrastructure dependencies overwhelm content licensing 20-100x. WBD Q2 2026: revenue -11%, ad revenue -22% (-27% linear), profit -91%. Financial Incentive Hierarchy: advertising > infrastructure > content licensing. First documented case proving content deals FAIL when competing ad/infrastructure incentives oppose them. 5 confounders (2 STRONG, 3 MODERATE). Model revision: deal-only model must upgrade to weighted multi-factor. 9 classes, 31 tests |
 | `test_type_d_3pm_cross_validation_aug15.py` | 23 | Type D cross-validation (Aug 15, 3 PM PT): Multi-publication flag integrity audit (135 stale flags fixed, 108→243), doc count sync (258 journalists/243 multi-pub/759 migrations across README, EDITORIAL_HISTORIES, careers_demo), mechanism #118-#120 cross-validation (structural integrity, cross-reference validity, confounder completeness), mechanism #119 missing mechanism_id field fixed, 21 missing test files added to ARCHITECTURE.md, 14 to README.md, 2 stale per-file test counts corrected. 7 classes, 23 tests |
 | `test_type_d_10am_cross_validation_aug14.py` | 14 | Type D cross-validation (Aug 14, 10 AM PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests |
 | `test_type_d_10pm_cross_validation_aug14.py` | 19 | Type D cross-validation (Aug 14, 10 PM PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests |

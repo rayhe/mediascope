@@ -5012,6 +5012,110 @@ entities:
     source_urls:
     - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
     - https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/
+  wbd_cnn:
+    display_name: Warner Bros. Discovery (CNN)
+    aliases:
+    - WBD
+    - Warner Bros. Discovery
+    - CNN
+    - HBO Max
+    - TNT
+    - Discovery+
+    regex: \b(Warner\s+Bros|WBD|CNN(?!\s+Business)|HBO\s+Max|Discovery\+)\b
+    category: media_conglomerate
+    ceo: David Zaslav
+    stock_ticker: WBD
+    q2_2026_earnings:
+      reported_date: '2026-08-05'
+      total_revenue_b: 8.7
+      revenue_yoy_pct: -11
+      total_ad_revenue_b: 1.72
+      ad_revenue_yoy_pct: -22
+      linear_ad_revenue_b: 1.4
+      linear_ad_yoy_pct: -27
+      streaming_ad_revenue_m: 306
+      streaming_ad_yoy_pct: 9
+      net_income_m: 149
+      net_income_yoy_decline_pct: 91
+      streaming_revenue_b: 3.08
+      streaming_revenue_yoy_pct: 10
+      streaming_ebitda_m: 512
+      streaming_ebitda_yoy_pct: 75
+      source_urls:
+      - https://www.emarketer.com/content/warner-bros--discovery-s-q2-declines-make-paramount-deal-look-vital
+      - https://www.thewrap.com/industry-news/business/warner-bros-discovery-earnings-q2-2026/
+      - https://www.zacks.com/stock/news/2969757/warner-bros-discovery-wbd-q2-earnings-taking-a-look-at-key-metrics-versus-estimates
+    quad_tech_financial_architecture:
+      mechanism_id: 124
+      date_analyzed: '2026-08-15'
+      finding: 'WBD/CNN has FOUR simultaneous tech company financial relationships.
+        CNN has a Meta AI content licensing deal (Dec 2025) that should predict
+        softer Meta coverage. Instead, Lisa Eadicicco (CNN Business Tech Editor)
+        produced comprehensive privacy indictment of Meta glasses (8+ alarm terms,
+        2 adversarial sources) while omitting Samsung Galaxy Glasses from the same
+        event. The explanation: advertising (Samsung $9.7B global, 4th largest)
+        and infrastructure dependencies (Google Cloud, AWS) OVERWHELM the content
+        licensing deal. Financial Incentive Hierarchy: advertising > infrastructure
+        > content licensing. First documented case where a Meta content deal FAILS
+        to produce softer coverage because competing financial incentives override it.'
+      relationships:
+        meta_content_licensing:
+          type: content_licensing
+          date: '2025-12-05'
+          terms: multi-year, undisclosed
+          estimated_value_m_yr: 5-10
+          coverage_prediction: softer_meta
+          actual_coverage: adversarial_meta
+          prediction_failure: true
+        google_cloud_infrastructure:
+          type: technology_infrastructure
+          product: Caption AI (Vertex AI)
+          scope: CNN, Max, Discovery+ captioning
+          cost_savings_pct: 50
+          time_savings_pct: 80
+          source_urls:
+          - https://www.engadget.com/entertainment/warner-bros-discovery-teams-up-with-google-to-generate-captions-using-ai-161345238.html
+          - https://www.thewrap.com/warner-bros-discovery-google-cloud-team-ai-powered-captioning/
+        aws_preferred_cloud:
+          type: technology_infrastructure
+          designation: Preferred Cloud Provider
+          product: Agentic AI-powered advertising technology
+          announced: '2026-07'
+          rollout: Q3-Q4 2026 phased
+          features:
+          - agentic automation for direct response
+          - advanced audience forecasting
+          - unified media planning (Q3 2026)
+          - composable order management (Q4 2026)
+          source_urls:
+          - https://press.aboutamazon.com/aws/2026/7/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-on-aws-its-preferred-cloud-provider
+          - https://www.wbd.com/news/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-aws-its
+        samsung_advertising:
+          type: advertising_dependency
+          samsung_global_ad_ranking: 4
+          samsung_global_ad_spend_b: 9.7
+          samsung_self_described: large spender in linear TV
+          samsung_agency: Publicis Media
+          samsung_cio_quote: We are a large spender in linear TV
+          source_url: https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+      financial_hierarchy:
+        explanation: 'When content licensing and advertising/infrastructure incentives
+          point in OPPOSITE directions (Meta deal vs Samsung/Google/Amazon dependencies),
+          advertising and infrastructure win. The WBD case is the first documented
+          instance proving this hierarchy: advertising > infrastructure > content licensing.'
+        samsung_to_meta_ratio: 20-100x (Samsung WBD ad spend vs Meta content deal)
+      paramount_merger:
+        status: pending_litigation
+        deal_value_b: 110
+        acquirer: Paramount Skydance
+        trial_date: March 2-19, 2027
+        cnn_cbs_combination: true
+        implication: Combined entity would have MORE linear TV ad inventory and HIGHER
+          dependency on Samsung/Google advertising
+      related_mechanisms:
+      - 123
+      - 120
+      - 74
   yahoo_apollo:
     display_name: Yahoo (Apollo Global Management)
     aliases:

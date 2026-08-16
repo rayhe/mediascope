@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~14017 tests across 403 test files (all from real articles)
+├── tests/                       # ~14000 tests across 404 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -718,7 +718,9 @@ mediascope/
 │   ├── test_type_d_07am_cross_validation_aug15.py # Type D cross-validation (Aug 15, 07:00 PT): Cross-reference bidirectionality audit — 9 one-way refs from #113/#114 to #108-#112 fixed with backrefs. Structural integrity + financial data consistency for mechanisms #113 (Karissa Bell) and #114 (Future plc). 8 classes, 70 tests
 │   ├── test_type_d_11am_cross_validation_aug15.py # Type D cross-validation (Aug 15, 11:00 PT): Critical YAML parse error fixes and structural integrity audit. Fixed YAML comment-truncation, journalists.yaml root-level list error, mechanism placement for #115-#117, Karissa Bell fixture deprecation. 6 classes, 19 tests
 │   ├── test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py # Mechanism #122: TechCrunch same-publication Snap SPECS vs Meta glasses privacy vocabulary zero. 4 cameras zero scrutiny vs 1 camera 12+ alarm terms. Apollo/Yahoo. 10 classes, 45 tests
+│   ├── test_fastco_snap_meta_privacy_vocabulary_asymmetry_aug15.py # Mechanism #121: Fast Company cross-entity privacy vocabulary asymmetry. Snap SPECS aspirational CEO profile vs Meta controversy compilation. No AI deal, ad competition alone. 9 classes, 43 tests
 │   ├── test_lisa_eadicicco_cross_entity_coverage_selection_asymmetry_aug15.py # Mechanism #123: Lisa Eadicicco CNN cross-entity coverage selection. Same journalist, same week, Samsung Unpacked omits glasses, Meta privacy deep-dive 8+ alarm terms. Career trajectory analysis (6 pubs, Apple beat). CNN ad client dynamics. 10 classes, 37 tests
+│   ├── test_wbd_quad_tech_financial_architecture_content_deal_paradox_aug15.py # Mechanism #124: WBD Quad-Tech Financial Architecture. CNN 4 tech relationships (Meta deal, Google Cloud, AWS, Samsung ads). Content deal paradox: Meta deal fails to soften coverage when ad/infrastructure dependencies oppose. 9 classes, 31 tests
 │   ├── test_type_d_3pm_cross_validation_aug15.py # Type D cross-validation (Aug 15, 15:00 PT): Multi-publication flag integrity (135 stale flags fixed), doc count sync (258 journalists/243 multi-pub/759 migrations), mechanism #118-#120 cross-validation, 21 missing test files added to ARCHITECTURE, 14 to README. 7 classes, 23 tests
 │   ├── test_type_d_10am_cross_validation_aug14.py # Type D cross-validation (Aug 14, 10:00 PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests
 │   ├── test_type_d_10pm_cross_validation_aug14.py # Type D cross-validation (Aug 14, 22:00 PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests
