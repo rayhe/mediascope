@@ -100,6 +100,9 @@ aggregate_findings:
     - https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
     test_count: 30
     test_file: tests/test_chokkattu_temporal_framing_oscillation_aug10.py
+    cross_references:
+    - mechanism_id: 132
+      relationship: "Boxall shows same genre-determined framing at different owner (Valnet)"
     tone_scores:
       google_podcast: 0.05
       meta_editorial_analysis: -0.65
@@ -10024,6 +10027,7 @@ cross_publication_findings:
     - https://www.hechoencalifornia1010.com/awe-2026-live-smart-glasses-are-bringing-ai-to-our-faces/
     - https://twit.tv/posts/tech/scott-stein-explains-metas-ray-ban-display-breakthroughs
     cross_references:
+    - 129
     - 76
     - 89
     - 91
@@ -10503,6 +10507,8 @@ cross_publication_findings:
       more extreme Google dependency (60%+, profit -67%) than Ziff Davis (40%+, revenue -2.7%), making it the most Google-dependent
       publisher in the dataset.
     cross_references:
+    - mechanism_id: 131
+      relationship: "Control calibration quantifies institutional amplification vs natural baseline"
     - mechanism_id: 106
       relationship: same_pattern_different_publisher
     - mechanism_id: 107
@@ -10940,6 +10946,8 @@ cross_publication_findings:
     - Tom's Guide head-to-head comparison articles between Meta and Google products will continue using combative pro-Google
       language at rates significantly above other publications without the same compound dependency
     cross_references:
+    - mechanism_id: 131
+      relationship: "Control calibration confirms triple dependency produces amplification beyond baseline"
     - mechanism_id: 110
       relationship: cause_and_effect
       connection: 'Mechanism #110 documented the EDITORIAL EFFECT (Tom''s Guide combative Google-hero framing). Mechanism
@@ -11112,6 +11120,8 @@ cross_publication_findings:
     - Jacob Krol's coverage of Samsung/Google glasses will continue using aspirational framing as the product transitions
       from prototype to shipping hardware
     cross_references:
+    - mechanism_id: 131
+      relationship: "Control calibration quantifies TechRadar privacy bifurcation vs independent baseline"
     - mechanism_id: 110
       relationship: cross_brand_replication
       connection: 'Mechanism #110 documented Tom''s Guide (Future plc) applying competitive framing asymmetry with Google-hero
@@ -11289,6 +11299,8 @@ cross_publication_findings:
     - If Future plc signs a Meta content deal, Hicks's Meta coverage tone will shift measurably positive within 6 months
     - If Hicks moves to a non-Future-plc publication, his bifurcation pattern may reduce (testing portable vs institutional bias)
     cross_references:
+    - mechanism_id: 131
+      relationship: "Control calibration quantifies Hicks privacy suppression vs independent baseline"
     - mechanism_id: 110
       relationship: cross_brand_replication_chain
       connection: 'Mechanism #110 documented Tom''s Guide (Future plc) EIC-level competitive framing with Google-hero language.
@@ -11792,6 +11804,10 @@ cross_publication_findings:
     mechanism_id: 122
     related_mechanisms:
       - mechanism_id: 130
+      - mechanism_id: 131
+        relationship: "Control calibration quantifies TechCrunch zero-scrutiny vs independent baseline"
+      - mechanism_id: 132
+        relationship: "Boxall replicates TechCrunch zero-scrutiny at Valnet"
     date_added: '2026-08-15'
     discovery_date: '2026-08-15'
     finding_type: same_publication_privacy_vocabulary_asymmetry
@@ -12158,6 +12174,10 @@ cross_publication_findings:
         relationship: Barr privacy gradient paradox
       - mechanism_id: 8
         relationship: safe target coefficient
+      - mechanism_id: 131
+        relationship: "Control confirms beat assignment drives framing independent of financial incentives"
+      - mechanism_id: 132
+        relationship: "Boxall replicates beat-assignment pattern at Valnet"
     source_urls:
       - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
       - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
@@ -12467,6 +12487,8 @@ cross_publication_findings:
         relationship: People Inc deal accumulation vs Versant structural amplification are complementary Type C findings
       - mechanism_id: 88
         relationship: Google Showcase coercive cycle parallels — dependency amplification through structural change
+      - mechanism_id: 129
+        relationship: "CNBC post-spinoff coverage selection confirms prediction"
     source_urls:
       - https://www.morningstar.com/news/marketwatch/20260107238/cnbc-parents-stock-is-in-turmoil-versant-shares-pummeled-for-the-third-day-in-a-row-after-comcast-spinoff
       - https://www.wsj.com/business/earnings/versant-vsnt-1q-earnings-report-2026-stock-9d6bd299
@@ -16184,6 +16206,12 @@ publications:
         relationship: "Safe target coefficient"
       - mechanism_id: 45
         relationship: "Ashworth WWDC PCC privacy framing asymmetry"
+      - mechanism_id: 131
+        relationship: "Control: Schoon did NOT amplify Snap CEO positioning"
+      - mechanism_id: 132
+        relationship: "Boxall amplified Snap competitive positioning uncritically"
+      - mechanism_id: 133
+        relationship: "Snap-Perplexity financial chain explains publisher receptivity"
 
     source_urls:
       - "https://headlinesbriefing.com/mobi/engadget/snap-specs-ar-glasses-launch-as-see-through-computer-for-2195-9e83eb55"
@@ -16493,6 +16521,8 @@ publications:
         relationship: "Snap competitive privacy positioning — Boxall amplified uncritically"
       - mechanism_id: 131
         relationship: "Ben Schoon control calibration — Boxall's infinite ratio vs Schoon's 1.7:1"
+      - mechanism_id: 133
+        relationship: "Snap-Perplexity financial chain documents publisher financial ties to Snap"
 
   snap_perplexity_publisher_financial_chain:
     mechanism_id: 133

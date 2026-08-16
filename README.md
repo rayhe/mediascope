@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,475 | Across 415 test files |
+| Tests | ~14,571 | Across 416 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14475 tests** across 415 test files, each covering a different analytical capability:
+MediaScope has **14571 tests** across 416 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -485,6 +485,8 @@ MediaScope has **14475 tests** across 415 test files, each covering a different 
 | `test_snap_competitive_privacy_positioning_amplification_aug16.py` | 34 | Mechanism #130 — Snap CEO Competitive Privacy Positioning Amplification: cross-publication analysis of Spiegel anti-Meta privacy positioning during Snap Specs launch (Jun 16, 2026), amplified uncritically across Engadget, TechCrunch (Yahoo/Apollo), Telecoms.com with Gizmodo clean control. Hardware parity (4 cameras vs 1), CEO competitive positioning evidence, multi-publication amplification chain, financial relationships, Gizmodo LED sufficiency questioning, cross-references to #121/#122/#33/#8/#45. 9 classes, 34 tests |
 | `test_cnbc_versant_post_spinoff_smart_glasses_coverage_selection_aug16.py` | 37 | Mechanism #129 — CNBC/Versant Post-Spinoff Smart Glasses Coverage Selection: CNBC coverage of Samsung Galaxy Glasses uses aspirational product-feature vocabulary with exclusive executive access and zero privacy vocabulary, while Meta glasses receive fiscal-alarm framing. Samsung's identical privacy surface (camera, AI cloud, LED, microphones) receives zero privacy scrutiny. Post-Versant spinoff financial dependencies analyzed. 10 classes, 37 tests |
 | `test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py` | 39 | Mechanism #131 — Ben Schoon (9to5Google) Cross-Entity Control Calibration: 9to5Google (925 LLC, Seth Weintraub sole owner, no Condé Nast/Advance/VC) applies privacy vocabulary to BOTH Meta AND Samsung/Google, establishing ~1.7:1 Meta-to-competitor ratio as natural editorial baseline. Contrasts with WIRED/Future plc/Yahoo-Apollo infinite ratios (10+ Meta terms, ZERO competitor terms). Quantifies institutional amplification factor. 5 confounders, cross-refs #33/#110/#114/#115/#116/#122/#126/#130. 10 classes, 39 tests |
+| `test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py` | 57 | Mechanism #132 — Andy Boxall (Android Police / Valnet) Cross-Entity Privacy Vocabulary Inversion: Same journalist covers 3 camera-equipped smart glasses within 36 days with privacy vocabulary INVERSELY proportional to camera count — Snap Specs (4 cameras) gets ZERO privacy terms, Meta Ray-Ban (1 camera) gets 7+ alarm terms ("nightmarish," "super invasive"), Samsung (same chip as Meta) gets normalization. Replicates institutional amplification at 4th publisher owner (Valnet). 9to5Google control (mechanism #131) shows ~1.7:1 proportional baseline vs Boxall's infinite ratio. 10 classes, 57 tests |
+| `test_type_d_09am_cross_validation_aug16.py` | 96 | Type D cross-validation (Aug 16, 9 AM PT): Mechanisms #129-133 structural integrity, cross-reference bidirectionality (15 backrefs added to mechanisms #30, #106, #110, #114, #115, #116, #122, #126, #128, #130, #132), confounder quality (STRONG factors present), entity count consistency (versant_media_group, snap entities), finding summary distinctiveness (Jaccard <0.7), content validation per mechanism, regression guards #125-#128, test file importability, doc sync. 14 classes, 96 tests |
 | `test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py` | 33 | WSJ Anthropic-Meta Military-Consumer Severity Inversion (Mechanism #125): WSJ applies MORE alarm language (10+ terms) to Meta's consumer camera glasses (zero deaths, unshipped features) than to Anthropic's Claude AI used in U.S. military operation that included bombing sites in Caracas (actual violence). Alarm vocabulary correlates with entity identity, not harm magnitude. News Corp has roughly balanced AI deals ($50M each Meta and OpenAI), so inversion is NOT financially predicted — editorial calibration failure independent of financial incentives. 5 confounders, cross-refs #49, #8. 9 classes, 33 tests |
 | `test_type_d_10am_cross_validation_aug14.py` | 14 | Type D cross-validation (Aug 14, 10 AM PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests |
 | `test_type_d_10pm_cross_validation_aug14.py` | 19 | Type D cross-validation (Aug 14, 10 PM PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests |
