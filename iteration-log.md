@@ -1,3 +1,48 @@
+## Iteration #134 — Sun 2026-08-16 01:00 PT (Type D: Test & Verify)
+
+**Focus: Cross-validation of mechanisms #125-#128, bidirectional cross-reference repair, entity/doc sync**
+
+**BUGS FOUND AND FIXED:**
+
+1. **Missing bidirectional cross-references (9 total):** Mechanisms #125-128 referenced
+   older mechanisms (#49, #67, #88, #108, #120) but NONE of those older mechanisms
+   referenced back. Added 9 backrefs:
+   - #49 → #125 (severity inversion extends entity-targeting), #126 (beat-assignment replication)
+   - #67 → #126 (WSJ pattern replicates at Gizmodo)
+   - #88 → #127 (People Inc dual-channel implementation), #128 (Versant structural parallel)
+   - #108 → #127 (People Inc cross-company dependency comparison)
+   - #120 → #127 (People Inc traffic diversification), #128 (Versant revenue amplification)
+
+2. **Entity set regression:** `test_competitor_coverage.py` expected set missing
+   `versant_media_group` (added by iteration #133). Fixed: 15 entities now.
+
+3. **Doc sync failures (5 fixes):**
+   - README.md test file count 404→410, total tests 14000→14268
+   - ARCHITECTURE.md test file count 408→410
+   - 2 test files missing from README + ARCHITECTURE tables
+     (`test_type_d_8pm_cross_validation_aug15.py`, `test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py`)
+   - Per-file count stale: `test_people_inc_google_traffic_substitution_paradox_aug16.py`
+     (README claimed 30, actual 17)
+
+4. **New cross-validation test:** `test_type_d_01am_cross_validation_aug16.py`
+   (35 test functions, 51 collected with parametrize, 10 classes)
+   - TestMechanismStructuralIntegrity: #125-128 exist, have finding_summary/discovery_date, in correct YAML section
+   - TestMechanismIDContiguity: no gaps or duplicates #125-128
+   - TestSourceURLPresence: all mechanisms have source URLs (top-level or article-embedded)
+   - TestConfounderCompleteness: all have confounders or counterarguments
+   - TestCrossReferenceBidirectionality: all 9 backrefs verified
+   - TestEntityCountConsistency: versant_media_group present, ≥15 entities
+   - TestDocSyncIntegrity: README + ARCHITECTURE counts match disk, all aug16 files listed
+   - TestPerFileTestCounts: 3 aug16 files verified
+   - TestMechanism125SeverityInversion: alarm/sympathetic vocabulary + severity inversion data
+   - TestMechanism128VersantSpinoff: novel mechanism type + financials + test file reference
+
+**Verification:** All 410 test files pass, count_stats --check ✅, pushed to GitHub (c7118a3)
+
+**Stats:** 410 test files | ~14,268 tests | 128 mechanisms
+
+---
+
 ## Iteration #133 — Sun 2026-08-16 (Type C: Financial Incentive Mapping)
 
 ### Mechanism #128: Versant Media Post-Spinoff CNBC Financial Incentive Restructuring — Corporate Spinoff Transforms Insulated Coverage Into Direct Financial Exposure
