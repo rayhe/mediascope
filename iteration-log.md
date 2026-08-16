@@ -2102,3 +2102,36 @@ First empirical test of mechanism #128's predictions about post-spinoff advertis
 - All 37 tests pass
 
 **Cumulative:** 129 mechanisms, ~14,175 tests, 411 files
+
+## Iteration #136 — Sun 2026-08-16 05:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #131: Ben Schoon (9to5Google) Cross-Entity Control Calibration**
+
+**Type:** control_outlet_calibration | **Journalist:** Ben Schoon | **Publication:** 9to5Google (925 LLC)
+
+**Key findings:**
+- Ben Schoon at 9to5Google (independently owned by Seth Weintraub via 925 LLC, no VC, no Condé Nast, no Advance, no AI content deals) applies privacy vocabulary to BOTH Meta AND Samsung/Google camera glasses
+- Meta coverage: ~5 privacy terms (camera disable, privacy light, enforcement gap, "you cannot and should not be recording all the time") across Jul 7 and Jul 9, 2026 articles
+- Samsung/Google coverage: ~3 privacy terms (cultural quagmire, tampering/abuse, "subject to the same scrutiny") in Jul 23 Inbox Newsletter #4
+- This ~1.7:1 Meta-to-competitor ratio is the NATURAL EDITORIAL BASELINE absent institutional financial pressure
+- Contrast with institutional outlets: WIRED 10+:0, Future plc 6+:0, Yahoo/Apollo 12+:0 — ALL infinite ratios
+- The delta between proportional concern (control) and entity-selective weaponization (institutional) IS the institutional amplification factor
+- Establishes that the category concern is REAL (even control outlets acknowledge camera glasses raise privacy issues) but institutional outlets weaponize it entity-selectively
+
+**Confounders documented (5):**
+1. MODERATE: Google-centric site identity (name implies alignment)
+2. MODERATE: Affiliate revenue model (incentivizes positive coverage for all entities equally)
+3. STRONG: Aggregation vs original investigation (different depth)
+4. MODERATE: Different audience expectations (Android enthusiasts vs privacy advocates)
+5. WEAK: Scale of coverage (volume dilution)
+
+**Cross-references:** #33, #110, #114, #115, #116, #118, #122, #126, #130
+
+**Changes:**
+- New test: `test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py` (39 tests, 10 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #131 added to cross_publication_findings)
+- Updated: `careers/journalists.yaml` (Ben Schoon cross-entity analysis with control calibration data)
+- Updated: mechanism #33 related_mechanisms backref to #131
+- All 39 tests pass
+
+**Cumulative:** 131 mechanisms, ~14,248 tests, 413 files

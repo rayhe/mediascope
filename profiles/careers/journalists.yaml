@@ -18368,6 +18368,41 @@ journalists:
   - https://muckrack.com/ben-schoon
   - https://journalisthunt.com/journalists/ben-schoon
   - https://buzzsumo.com/journalist/ben-schoon-18344454
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 131
+      pattern: control_outlet_calibration
+      description: >-
+        CONTROL CALIBRATION (Mechanism #131): Ben Schoon at 9to5Google demonstrates the
+        natural editorial baseline for smart glasses privacy coverage absent institutional
+        financial pressure. His Meta coverage applies ~5 privacy terms (camera disable,
+        privacy light, enforcement gap, "you cannot and should not be recording all the time")
+        while his Samsung/Google coverage applies ~3 privacy terms (cultural quagmire,
+        tampering/abuse, "subject to the same scrutiny"). This ~1.7:1 ratio contrasts with
+        WIRED/Gizmodo/Future plc's infinite ratio (10+ Meta terms, ZERO competitor terms).
+        The delta quantifies institutional amplification: the category concern is real (even
+        control outlets acknowledge it), but institutional outlets weaponize it entity-selectively.
+      meta_coverage:
+        articles:
+          - title: "Meta Ray-Ban glasses now disable the camera if privacy light breaks"
+            date: '2026-07-07'
+            framing: privacy-skeptical aggregation
+          - title: "Meta developing always-on glasses with less-active privacy light"
+            date: '2026-07-09'
+            framing: privacy-critical editorial
+        privacy_vocabulary_count: 5
+        tone_score: -0.35
+      samsung_google_coverage:
+        articles:
+          - title: "9to5Google Inbox Newsletter #4 — Samsung Unpacked coverage"
+            date: '2026-07-23'
+            framing: balanced with privacy acknowledgment
+            key_quote: "by releasing these products they're subject to the same scrutiny"
+        privacy_vocabulary_count: 3
+        tone_score: -0.15
+      ratio: "~1.7:1 (proportional, natural baseline)"
+      analytical_value: "Establishes the baseline against which institutional outlet amplification
+        is measured. Confirms WIRED/Gizmodo/Future plc asymmetry is institutional, not natural."
 - career:
   - beat: business, tech companies
     notes: 'Covered fintech, Big Tech business, and Silicon Valley companies. Major scoops: Jack Dorsey''s Block cash-vs-stock

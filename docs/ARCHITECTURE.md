@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~14339 tests across 412 test files (all from real articles)
+├── tests/                       # ~14248 tests across 413 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -726,6 +726,8 @@ mediascope/
 │   ├── test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py # Mechanism #125: WSJ Anthropic-Meta military-consumer severity inversion — alarm vocabulary inversely proportional to harm magnitude. 9 classes, 33 tests
 │   ├── test_type_d_01am_cross_validation_aug16.py # Type D cross-validation (Aug 16, 01:00 PT): Mechanisms #125-128 structural integrity, cross-reference bidirectionality, entity count fix, doc sync. 10 classes, 51 tests
 │   ├── test_snap_competitive_privacy_positioning_amplification_aug16.py # Mechanism #130 — Snap CEO Competitive Privacy Positioning Amplification: cross-publication Spiegel anti-Meta privacy framing, Snap Specs launch Jun 16 2026, Gizmodo clean control. 9 classes, 34 tests
+│   ├── test_cnbc_versant_post_spinoff_smart_glasses_coverage_selection_aug16.py # Mechanism #129 — CNBC/Versant Post-Spinoff Smart Glasses Coverage Selection: Samsung Galaxy Glasses aspirational framing vs Meta fiscal-alarm framing, post-Versant spinoff financial dependencies. 10 classes, 37 tests
+│   ├── test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py # Mechanism #131 — Ben Schoon (9to5Google) Cross-Entity Control Calibration: independent outlet privacy vocabulary baseline (~1.7:1 ratio) vs institutional outlets (infinite ratio). 10 classes, 39 tests
 │   ├── test_type_d_10am_cross_validation_aug14.py # Type D cross-validation (Aug 14, 10:00 PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests
 │   ├── test_type_d_10pm_cross_validation_aug14.py # Type D cross-validation (Aug 14, 22:00 PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests
 │   ├── test_type_d_11pm_cross_validation_aug14.py # Type D cross-validation (Aug 14, 23:00 PT): Stats sync and cross-reference audit for aug14 mechanisms. 8 classes, 16 tests

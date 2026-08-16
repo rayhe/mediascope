@@ -2806,6 +2806,7 @@ cross_publication_findings:
     mechanism_id: 33
     related_mechanisms:
       - mechanism_id: 130
+      - mechanism_id: 131
     publications:
     - WIRED
     - The Verge
@@ -16184,5 +16185,179 @@ publications:
       - "https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470"
       - "https://gizmodo.com/metas-facial-recognition-plans-for-smart-glasses-are-worse-than-we-thought-2000768046"
       - "http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry"
+
+  ben_schoon_9to5google_control_calibration:
+    mechanism_id: 131
+    mechanism_name: >-
+      Ben Schoon (9to5Google) Cross-Entity Control Calibration — Independent Outlet Privacy
+      Vocabulary Distribution Quantifies Institutional Amplification at Condé Nast / Future plc /
+      Yahoo-Apollo Publications
+    finding_type: control_outlet_calibration
+    rotation_type: B
+    discovery_date: '2026-08-16'
+    test_file: tests/test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py
+    domain: wearables_coverage_asymmetry
+    journalist: Ben Schoon
+    publication: 9to5Google (925 LLC)
+    publication_owner: Seth Weintraub (sole proprietor, 925 LLC)
+    finding_summary: >-
+      Ben Schoon at 9to5Google (925 LLC, Seth Weintraub sole owner, no corporate media parent,
+      no VC backing, no AI content deals) applies privacy vocabulary to Meta AND Samsung/Google
+      camera glasses, creating a measurable baseline for "natural" editorial concern about the
+      smart glasses category. His Jul 7 and Jul 9, 2026 articles about Meta apply privacy
+      vocabulary (camera disable, privacy light, "you cannot and should not be recording all the
+      time") while his Jul 23 Samsung Unpacked coverage acknowledges Samsung/Google face "the same
+      scrutiny" and calls both companies' entry into camera glasses a "cultural quagmire."
+
+      This ~1.7:1 Meta-to-competitor privacy vocabulary ratio at an independent control outlet
+      contrasts starkly with the infinite ratio at institutional outlets: WIRED applies 10+ alarm
+      terms to Meta and ZERO to Samsung/Google (mechanism #33), Future plc applies 6+ alarm terms
+      to Meta and ZERO to Google (mechanisms #115, #116), Yahoo/Apollo applies 12+ alarm terms to
+      Meta and ZERO to Snap (mechanism #122). The delta between Schoon's proportional concern
+      and institutional outlets' entity-selective weaponization quantifies the institutional
+      amplification factor.
+
+      9to5Google has NO structural incentive to protect Google or attack Meta beyond the standard
+      affiliate revenue model. No Condé Nast connection. No Advance Publications connection.
+      No AI content licensing deals. No VC backing. This independence makes Schoon's balanced
+      framing the journalistic baseline — the editorial consensus absent institutional distortion.
+
+      The control confirms two things: (1) the category concern is real — even an independent
+      outlet acknowledges camera glasses raise privacy issues for ALL makers; (2) the entity-selective
+      concentration of that concern exclusively on Meta at institutional outlets is NOT the natural
+      editorial consensus but an amplification effect predictable from financial relationships.
+
+    control_calibration:
+      9to5google:
+        meta_privacy_terms: 5
+        meta_privacy_examples:
+          - "camera disable"
+          - "privacy light"
+          - "enforcement gap"
+          - "problems with that idea, including privacy"
+          - "you cannot and should not be recording all the time"
+        competitor_privacy_terms: 3
+        competitor_privacy_examples:
+          - "cultural quagmire"
+          - "tampering and abuse"
+          - "subject to the same scrutiny"
+        ratio: "~1.7:1 (proportional — Meta slightly more, consistent with market share)"
+        financial_ties: "NONE (affiliate revenue + display ads only)"
+      wired:
+        meta_privacy_terms: 10
+        meta_privacy_examples:
+          - "tool for mass surveillance"
+          - "creep/creepy"
+          - "alarming"
+          - "flooding the market"
+          - "up in arms"
+          - "privacy lightning rod"
+          - "drawn the ire"
+          - "Glasshole"
+          - "filming without knowledge"
+          - "ban smartglasses"
+        competitor_privacy_terms: 0
+        ratio: "∞ (division by zero — ZERO competitor scrutiny)"
+        financial_ties: "Condé Nast / Advance Publications ($100M+ Reddit stake, Google ad dependency)"
+      future_plc:
+        meta_privacy_terms: 6
+        meta_privacy_examples:
+          - "frightening"
+          - "worrying"
+          - "creepy"
+          - "scared"
+          - "terror"
+          - "predatory"
+        competitor_privacy_terms: 0
+        ratio: "∞ (ZERO competitor scrutiny — aspirational framing only)"
+        financial_ties: "60%+ Google traffic dependency, OpenAI content deal, Future Optic AI product"
+      yahoo_apollo:
+        meta_privacy_terms: 12
+        competitor_privacy_terms: 0
+        ratio: "∞ (TechCrunch: 12+ Meta alarm terms, ZERO Snap terms despite 4 cameras)"
+        financial_ties: "$38.4B AI financing (Anthropic/OpenAI SPV, xAI chip lease)"
+
+    key_articles:
+      meta_coverage:
+        - title: "Meta Ray-Ban glasses now disable the camera if privacy light breaks"
+          date: '2026-07-07'
+          journalist: Ben Schoon
+          publication: 9to5Google
+          framing: "Privacy-skeptical; aggregated Victoria Song (Verge); added Gen 1 vs Gen 2 analysis"
+        - title: "Meta developing always-on glasses with less-active privacy light"
+          date: '2026-07-09'
+          journalist: Ben Schoon
+          publication: 9to5Google
+          framing: "Privacy-critical editorial; aggregated FT/Hannah Murphy; original editorial"
+          key_quote: "Needless to say, there are a lot of problems with that idea, including privacy (you cannot and should not be recording all the time)"
+      competitor_coverage:
+        - title: "9to5Google Inbox Newsletter #4 — Samsung Unpacked coverage"
+          date: '2026-07-23'
+          journalist: 9to5Google editorial
+          publication: 9to5Google
+          framing: "Acknowledges privacy applies to Samsung/Google too — balanced"
+          key_quote: "Samsung and Google are diving head-first into this cultural quagmire, and while neither company has Meta's reputation for flamboyantly disregarding user privacy — and Samsung promises that it has accounted for tampering and abuse — by releasing these products they're subject to the same scrutiny."
+
+    confounding_factors:
+      - name: "Google-centric site identity"
+        strength: MODERATE
+        description: >-
+          9to5Google's name implies Google alignment, which could create cultural bias
+          toward Google products.
+        rebuttal: >-
+          Schoon actively criticizes Google products in reviews and applied privacy
+          vocabulary to Google's glasses. The site name creates identity alignment
+          but not editorial capture.
+      - name: "Affiliate revenue model"
+        strength: MODERATE
+        description: >-
+          9to5Google earns affiliate commissions from product links. This incentivizes
+          positive product coverage for ALL entities equally, not entity-selectively.
+        rebuttal: >-
+          The privacy vocabulary Schoon DOES use works against his affiliate incentive,
+          suggesting editorial conviction. The affiliate model creates a level playing field.
+      - name: "Aggregation vs original investigation"
+        strength: STRONG
+        description: >-
+          Schoon's Meta privacy articles aggregate original reporting from The Verge and FT.
+          His editorial additions are shorter and less detailed than WIRED features.
+        rebuttal: >-
+          This is exactly the point — the aggregation model shows how the same primary-source
+          facts get framed by different outlets. Schoon adds balanced editorial color; WIRED
+          adds 10+ alarm terms to the same underlying facts.
+      - name: "Different audience expectations"
+        strength: MODERATE
+        description: >-
+          9to5Google readers are Android enthusiasts who want product news rather than
+          privacy advocacy.
+        rebuttal: >-
+          Audience expectations shape emphasis but not factual framing. Schoon still noted
+          privacy concerns — he just applied them proportionally.
+      - name: "Scale of coverage"
+        strength: WEAK
+        description: >-
+          Schoon publishes 4-5 articles per day; each gets less depth than a WIRED feature.
+        rebuttal: >-
+          The mechanism measures vocabulary distribution (which entities receive alarm
+          language), not depth. A 500-word aggregation can still selectively omit or
+          include privacy terms.
+
+    cross_references:
+      - mechanism_id: 33
+        relationship: "Samsung equivalence paradox confirmed by control baseline"
+      - mechanism_id: 110
+        relationship: "Future plc EIC competitive framing — control shows it is NOT the natural baseline"
+      - mechanism_id: 114
+        relationship: "Future plc triple dependency — explains WHY Future plc diverges from control"
+      - mechanism_id: 115
+        relationship: "TechRadar privacy bifurcation — control confirms this is institutional, not natural"
+      - mechanism_id: 116
+        relationship: "Michael Hicks privacy suppression — control calibration quantifies the suppression"
+      - mechanism_id: 122
+        relationship: "TechCrunch Snap zero-scrutiny — control shows SOME Snap/Samsung scrutiny is natural"
+      - mechanism_id: 126
+        relationship: "Wong-Barr beat replication — control outlet confirms beat assignment is a driver"
+      - mechanism_id: 130
+        relationship: "Snap competitive positioning amplification — control outlet did NOT amplify CEO positioning"
 
 research_period: 2024-08-01 to 2026-08-16
