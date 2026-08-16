@@ -1,3 +1,50 @@
+## Iteration #130 — Sat 2026-08-15 20:00 PT (Type D: Test & Verify)
+
+**Focus: YAML structural integrity fix + cross-validation of mechanisms #122-124**
+
+**BUGS FOUND AND FIXED:**
+
+1. **YAML parse error in competitor-coverage-research.yaml:** Mechanism #124 was
+   inserted as a list item (`- mechanism_id: 124`) inside the `publications:`
+   mapping (which is a mapping, not a list). This caused a YAML parser error
+   that broke ALL tests loading this file. Fixed by converting to mapping key
+   format (`wbd_quad_tech_financial_architecture_content_deal_paradox:`).
+
+2. **Misplaced mechanism entries:** Mechanisms #122, #123, and #124 were all placed
+   under `publications:` but they are cross-publication findings, not publication
+   profiles. The existing 11am cross-validation test correctly caught this (entries
+   under `publications:` must have `meta_coverage_tone`). Moved all three to
+   `cross_publication_findings:` where they belong structurally.
+
+3. **Entity count regression:** `test_competitor_coverage.py` had a hardcoded expected
+   entity set that was missing `wbd_cnn` (added by iteration #129). Fixed.
+
+**NEW CROSS-VALIDATION TEST:** `test_type_d_8pm_cross_validation_aug15.py`
+- 32 tests across 6 classes
+- TestStructuralIntegrity: YAML parses cleanly, no mechanism-only entries in publications,
+  mechanisms #122-124 correctly located in cross_publication_findings
+- TestWBDQuadTechConsistency: mechanism #124 has 4 entity relationships, meta prediction
+  failure flagged, financial hierarchy + model revision documented
+- TestCrossReferenceCoherence: bidirectional references between #122↔#123↔#124, 5+
+  confounders for #124, 4+ source URLs
+- TestEntityCountConsistency: 14+ entities, wbd_cnn has proper display_name/aliases
+- TestMechanismIDIntegrity: no duplicate IDs, #122-124 all present
+- TestFinancialHierarchyModel: Samsung ad spend ($9.7B) vs Meta content deal ($5-10M),
+  WBD ad revenue decline confirmed, Paramount merger implications documented
+
+**CROSS-SECTION VERIFICATION:** Ran 164 tests across 4 critical test files
+(aug6 cross-validation, 11am cross-validation, competitor_coverage, new 8pm cross-validation).
+All 164 passed.
+
+**Files:**
+- profiles/competitor-coverage-research.yaml (YAML fix + mechanism relocation)
+- tests/test_competitor_coverage.py (entity set update)
+- tests/test_type_d_8pm_cross_validation_aug15.py (32 new tests)
+
+**Stats:** 405 test files | ~14,000 tests | 124 mechanisms
+
+---
+
 ## Iteration #129 — Sat 2026-08-15 19:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #124: WBD Quad-Tech Financial Architecture — Content Deal Paradox Where
