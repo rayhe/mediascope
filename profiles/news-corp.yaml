@@ -233,6 +233,27 @@ competitor_relationships:
         articles do NOT disclose News Corp's relationships with those companies.
       source_url: https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c
       notes: Anthropic covered here as co-subject with OpenAI under adventure framing, not as solo subject.
+    - title: "Pentagon Used Anthropic's Claude in Maduro Venezuela Raid"
+      publication: Wall Street Journal
+      date: '2026-02-14'
+      tone: 0.1
+      framing: >
+        Sympathetic safety-hero framing — Claude used in operation including bombing
+        several sites in Caracas, which violates Anthropic's own usage policies
+        prohibiting violence, weapons, and surveillance. WSJ frames Anthropic as
+        safety-focused company grappling with difficult questions, CEO breaking with
+        industry executives to call for regulation. Zero alarm language applied to
+        Anthropic despite AI involvement in actual military violence. Positions
+        Anthropic as principled resistor vs Pentagon aggression. Compare to Meta
+        glasses article same year (Bobrowsky, Jul 14): 10+ alarm terms for zero-harm
+        consumer product vs 0 alarm terms for AI-facilitated bombing (mechanism #125).
+      source_url: https://www.wsj.com/politics/national-security/pentagon-used-anthropics-claude-in-maduro-venezuela-raid-583aff17
+      notes: >
+        This is the most extreme severity inversion in the WSJ corpus. Meta glasses
+        cameras (zero deaths) get MORE alarm language than AI used in a bombing raid
+        (actual deaths). Extends the rogue AI severity inversion pattern to military
+        domain. The Pentagon article does NOT disclose News Corp's financial relationships
+        with OpenAI or Meta.
     rogue_ai_framing_tone: -0.15
     business_viability_framing:
       mechanism_id: 26

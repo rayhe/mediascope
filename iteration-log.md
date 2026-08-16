@@ -1,3 +1,65 @@
+## Iteration #131 — Sat 2026-08-15 21:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #125: WSJ Anthropic-Meta Military-Consumer Severity Inversion — Alarm Language Scales Inversely with Actual Harm
+
+**Publication+Competitor Pair:** Wall Street Journal (News Corp) covering Anthropic
+
+**KEY FINDING:** WSJ applies MORE alarm language (10+ terms) to Meta's consumer camera
+glasses (zero deaths, unshipped features) than to Anthropic's Claude AI being used
+in the U.S. military's operation to capture Maduro, which "included bombing several
+sites in Caracas" (actual violence, actual deaths). This is a SEVERITY INVERSION:
+editorial alarm intensity scales INVERSELY with actual harm magnitude.
+
+**META GLASSES** (Bobrowsky, Jul 14, 2026):
+- 10+ privacy alarm terms: "flooding the market," "up in arms," "privacy lightning rod,"
+  "drawn the ire," "filming without their knowledge," "ban smartglasses"
+- Dystopian patent examples: "User laughs with friend at dinner at 5:15 p.m."
+- 70+ organizations opposing, ACLU quote
+- Features alarmed about: NameTag (NOT SHIPPED), constant capture (IN DEVELOPMENT),
+  mood tracking (PATENT FILING ONLY)
+- Actual harm: ZERO deaths, ZERO incidents
+
+**ANTHROPIC PENTAGON** (Feb 14, 2026):
+- Claude used in operation that "included bombing several sites in Caracas"
+- Anthropic's own policies prohibit "violence, weapons, surveillance"
+- Sympathetic framing: "safety-focused company," CEO "grappling with power,"
+  "broken with industry executives" to call for regulation
+- Anthropic positioned as principled resistor vs Pentagon aggression
+- Actual harm: BOMBING RAID with casualties
+
+**THE INVERSION:** 10+ alarm terms for zero-harm consumer product vs 0 alarm terms
+for AI-facilitated bombing raid. Alarm vocabulary correlates with entity identity, not
+harm magnitude.
+
+**FINANCIAL CONTEXT:** News Corp has roughly balanced AI deals — OpenAI $50M/yr,
+Meta up to $50M/yr, Anthropic expected share of $1.5B copyright settlement. So the
+inversion is NOT financially predicted by the deal-driven model. This is an
+editorial calibration failure independent of financial incentives.
+
+**This extends:** mechanism #49 (Bobrowsky beat-assignment), WSJ rogue AI severity
+inversion (news-corp.yaml), and mechanism #8 (safe target coefficient).
+
+**5 confounders documented:** genre/section difference (STRONG), different reporters
+(MODERATE), consumer vs national security framing conventions (MODERATE), accumulated
+Meta privacy precedent (MODERATE), Anthropic underdog narrative (WEAK).
+
+**Anthropic usage policy contradiction:** WSJ notes Anthropic's stated prohibitions
+(violence, weapons, surveillance) vs actual Claude use in bombing raid, but frames
+the contradiction sympathetically rather than as a compliance failure.
+
+**Files:**
+- tests/test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py (33 tests, 9 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #125 in cross_publication_findings)
+- profiles/news-corp.yaml (Anthropic Pentagon/Maduro article added to competitor_relationships)
+- README.md (stats: 406 test files)
+
+**Cross-validation:** 169 tests across 4 related files (competitor_coverage, 8pm cross-validation,
+Bobrowsky entity-targeting, Bobrowsky cross-entity) — all pass.
+
+**Stats:** 406 test files | ~14,000 tests | 125 mechanisms
+
+---
+
 ## Iteration #130 — Sat 2026-08-15 20:00 PT (Type D: Test & Verify)
 
 **Focus: YAML structural integrity fix + cross-validation of mechanisms #122-124**

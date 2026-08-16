@@ -11981,6 +11981,110 @@ cross_publication_findings:
       - https://www.engadget.com/entertainment/warner-bros-discovery-teams-up-with-google-to-generate-captions-using-ai-161345238.html
       - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
 
+
+  wsj_anthropic_meta_military_consumer_severity_inversion:
+    mechanism_id: 125
+    publication: Wall Street Journal (News Corp)
+    finding_type: military_consumer_severity_inversion
+    discovery_date: '2026-08-15'
+    finding_summary: >
+      WSJ applies MORE alarm language (10+ terms) to Meta's consumer camera glasses
+      (zero deaths, unshipped features) than to Anthropic's Claude AI being used in
+      a U.S. military operation that included bombing several sites in Caracas.
+      This is a severity inversion where editorial alarm intensity scales INVERSELY
+      with actual harm magnitude. Meta's theoretical privacy risks from unshipped
+      consumer features generate flooding, up in arms, lightning rod, ire, and ban
+      language, while AI involvement in a bombing raid generates safety-focused,
+      grappling, and concerns. The same publication calibrates alarm vocabulary to
+      entity identity rather than harm magnitude.
+    articles:
+    - title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
+      publication: Wall Street Journal
+      reporter: Meghan Bobrowsky
+      date: '2026-07-14'
+      section: Tech / AI
+      tone: -0.7
+      source_url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      framing: >
+        Full alarm cascade with 10+ privacy alarm terms, dystopian patent examples,
+        ACLU quote, 70+ organizations opposing, regulatory bans. Features alarmed
+        about are NameTag (NOT shipped to consumers), constant capture (in development),
+        mood tracking (patent filing only). Zero actual incidents. Zero deaths.
+    - title: "Pentagon Used Anthropic's Claude in Maduro Venezuela Raid"
+      publication: Wall Street Journal
+      date: '2026-02-14'
+      section: Politics / National Security
+      tone: -0.15
+      source_url: https://www.wsj.com/politics/national-security/pentagon-used-anthropics-claude-in-maduro-venezuela-raid-583aff17
+      framing: >
+        Sympathetic safety-hero framing. Anthropic as safety-focused company with CEO
+        grappling with the power of their models who has broken with many other industry
+        executives in calling for greater regulation. Despite Claude being used in a
+        bombing raid that violates its own stated usage policies, the narrative positions
+        Anthropic as the principled resistor against Pentagon aggression, not as a company
+        whose product was used in violence. Zero alarm terms applied to Anthropic.
+    meta_alarm_vocabulary:
+      count: 10
+      terms:
+      - "flooding the market"
+      - "privacy advocates are up in arms"
+      - "privacy lightning rod"
+      - "drawn the ire of privacy advocates"
+      - "filming without their knowledge"
+      - "User laughs with friend at dinner at 5:15 p.m. Audio is recognized and logged by AI"
+      - "User sighs at 9:15 p.m. AI is listening from a smart home device and logs it"
+      - "Your glasses should not know my name"
+      - "starting to ban smartglasses"
+      - "disabling the white light that signals the glasses are recording"
+    anthropic_sympathetic_vocabulary:
+      count: 5
+      terms:
+      - "safety-focused company"
+      - "grappling with the power of their models"
+      - "broken with many other industry executives in calling for greater regulation"
+      - "Anthropic is committed to using frontier AI in support of US national security"
+      - "publicly expressed concern about AI's use in autonomous lethal operations"
+    severity_inversion:
+      meta_actual_harm: "Zero deaths, zero incidents. Features alarmed about are unshipped (NameTag), in development (constant capture), or patent filings only (mood tracking)."
+      anthropic_actual_harm: "AI used in military operation that included bombing several sites in Caracas during the capture of former Venezuelan President Maduro. Actual violence, actual deaths."
+      direction: "Inverse correlation between alarm language and harm magnitude. Higher alarm for zero-harm consumer product, lower alarm for AI-facilitated bombing."
+      meta_feature_status: "All alarmed-about features are unshipped, in development, or patent filings. NameTag not shipped to consumers, constant capture exploring, mood tracking patent only."
+      alarm_ratio: "10+ alarm terms for zero-harm vs 0 alarm terms for bombing raid"
+    anthropic_usage_policy_contradiction:
+      stated_prohibitions: "Anthropic usage guidelines prohibit Claude from being used to facilitate violence, develop weapons or conduct surveillance."
+      actual_use: "Claude was used in the U.S. military operation to capture Maduro, which included bombing several sites in Caracas."
+      wsj_framing_of_contradiction: "WSJ notes the contradiction factually but frames Anthropic sympathetically as a principled company grappling with difficult questions, not as a company whose product was used in violation of its own stated policies."
+    financial_context:
+      openai_deal: "$50M/yr ($250M/5yr) AI content licensing"
+      meta_deal: "Up to $50M/yr, 3-year AI content licensing"
+      anthropic_relationship: "Expected share of $1.5B copyright class-action settlement (adversarial origin)"
+      interpretation: "Balanced financial ties ($50M/yr Meta + $50M/yr OpenAI) mean the severity inversion is NOT financially predicted by the deal-driven model. This is an editorial calibration failure independent of financial incentives."
+      wsj_disclosure: "WSJ disclosed News Corp-OpenAI and News Corp-Google relationships in the Apr 28 2026 Google/Pentagon article, but does NOT disclose these in either the Meta glasses or Anthropic Pentagon article."
+    confounders:
+    - factor: "Article genre/section difference"
+      severity: STRONG
+      explanation: "Meta glasses article is Tech/AI product coverage. Anthropic Pentagon article is Politics/National Security investigative reporting. Different sections may have different editorial vocabularies."
+    - factor: "Different reporters"
+      severity: MODERATE
+      explanation: "Meghan Bobrowsky (dedicated Meta beat reporter) wrote the glasses article. The Pentagon article appears from national security reporters. Beat assignment concentrates alarm energy on assigned entity."
+    - factor: "Consumer vs national security framing convention"
+      severity: MODERATE
+      explanation: "Consumer product coverage traditionally uses consumer-protection alarm language. National security coverage traditionally defers to government/institutional framing."
+    - factor: "Meta has more accumulated privacy precedent"
+      severity: MODERATE
+      explanation: "Meta has years of accumulated privacy controversies (Cambridge Analytica, etc.) that create a context in which new privacy concerns trigger faster alarm. Anthropic is newer."
+    - factor: "Anthropic framing as underdog vs Pentagon"
+      severity: WEAK
+      explanation: "The David-vs-Goliath narrative (small AI lab vs Pentagon) may naturally generate sympathy. Meta as $1.5T company does not trigger the same protective instinct."
+    cross_references:
+    - mechanism_id: 49
+      description: "Bobrowsky beat-assignment entity-targeting concentration"
+    - mechanism_id: null
+      description: "WSJ severity_framing_inversion (rogue AI) from news-corp.yaml"
+    - mechanism_id: 8
+      description: "Safe target coefficient"
+
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -15467,7 +15571,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-
-
-
 research_period: 2024-08-01 to 2026-08-15
