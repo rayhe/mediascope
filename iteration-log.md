@@ -1,3 +1,16 @@
+## Iteration #135 — Sun 2026-08-16 02:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Focus: Snap CEO Competitive Privacy Positioning Amplification (Mechanism #130)**
+
+- **New mechanism #130:** Cross-publication analysis of how Snap CEO Evan Spiegel's anti-Meta privacy positioning during the Snap Specs launch (June 16, 2026) was amplified uncritically across Engadget, TechCrunch (both Yahoo/Apollo), and Telecoms.com. Gizmodo (zero financial ties) served as clean control — the only outlet that actually questioned camera privacy for Snap Specs.
+- **Key finding:** Snap Specs have MORE surveillance-capable hardware than Meta glasses (4 cameras vs 1, dual Snapdragon processors, computer vision processor, $2,195), yet publications amplified Spiegel's competitive positioning against Meta without applying equivalent privacy scrutiny to Snap's own hardware.
+- **Hardware parity documented:** Snap Specs (4 cameras, dual processors, LED indicator, on-device processing) vs Meta Ray-Ban (1 camera, single Snapdragon AR1, LED indicator, $299-$799).
+- **Financial relationships mapped:** Yahoo/Apollo owns Engadget + TechCrunch, receives Google Showcase payments, Apollo structured Anthropic's $35B SPV. Snap has OpenAI partnership. None of these publications have Meta content deals.
+- **Novel mechanism type:** competitive_privacy_positioning_amplification — distinct from single-publication mechanisms (#121, #122).
+- **New test file:** `test_snap_competitive_privacy_positioning_amplification_aug16.py` (9 classes, 34 tests) — all 34 passing.
+- **Cross-references:** Mechanisms #121, #122, #33, #8, #45.
+- **Stats:** 412 test files, ~14,209 tests, 130 mechanism IDs.
+
 ## Iteration #134 — Sun 2026-08-16 01:00 PT (Type D: Test & Verify)
 
 **Focus: Cross-validation of mechanisms #125-#128, bidirectional cross-reference repair, entity/doc sync**

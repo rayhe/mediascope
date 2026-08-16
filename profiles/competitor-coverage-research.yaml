@@ -2804,6 +2804,8 @@ cross_publication_findings:
       '
     finding_type: competitor_coverage_deep_dive
     mechanism_id: 33
+    related_mechanisms:
+      - mechanism_id: 130
     publications:
     - WIRED
     - The Verge
@@ -3978,6 +3980,8 @@ cross_publication_findings:
     date_added: '2026-08-11'
   ashworth_wwdc_pcc_privacy_framing_asymmetry:
     mechanism_id: 45
+    related_mechanisms:
+      - mechanism_id: 130
     mechanism_name: Ashworth WWDC PCC Privacy Framing Asymmetry
     finding_type: journalist_cross_entity_privacy_framing
     rotation_type: B
@@ -11688,6 +11692,8 @@ cross_publication_findings:
 
   mechanism_121_fastco_snap_meta_privacy_vocabulary_asymmetry:
     mechanism_id: 121
+    related_mechanisms:
+      - mechanism_id: 130
     date_analyzed: '2026-08-15'
     rotation_type: A
     domain: cross_entity_privacy_vocabulary_asymmetry
@@ -11776,6 +11782,8 @@ cross_publication_findings:
 
   techcrunch_snap_specs_camera_privacy_vocabulary_zero:
     mechanism_id: 122
+    related_mechanisms:
+      - mechanism_id: 130
     date_added: '2026-08-15'
     discovery_date: '2026-08-15'
     finding_type: same_publication_privacy_vocabulary_asymmetry
@@ -16025,4 +16033,156 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  snap_competitive_privacy_positioning_amplification:
+    mechanism_id: 130
+    mechanism_name: 'Snap CEO Competitive Privacy Positioning Amplification — Multi-Publication Chain Amplifies Anti-Meta Differentiation Without Scrutinizing Superior Snap Surveillance Hardware'
+    finding_type: competitive_privacy_positioning_amplification
+    rotation_type: A
+    discovery_date: '2026-08-16'
+    test_file: tests/test_snap_competitive_privacy_positioning_amplification_aug16.py
+    domain: wearables_coverage_asymmetry
+    publications:
+      - Engadget (Yahoo / Apollo Global Management)
+      - TechCrunch (Yahoo / Apollo Global Management)
+      - Telecoms.com
+    competitor_pair: Snap vs Meta
+    finding_summary: >-
+      During the Snap Specs launch (June 16, 2026), CEO Evan Spiegel explicitly positioned
+      Specs against Meta's NameTag facial recognition controversy, claiming Snap moderates
+      Lenses to prevent such features. This competitive positioning was amplified uncritically
+      across multiple publications — Engadget (Yahoo/Apollo) reported Spiegel "distanced Snap
+      from Meta's recent facial recognition controversy" with zero scrutiny of Snap's own
+      4-camera hardware, TechCrunch (Yahoo/Apollo) covered Snap privacy features as adequate
+      with zero alarm language, and Telecoms.com framed Snap as "trying to avoid being tarnished"
+      by Meta's privacy brush. All three amplified Spiegel's positioning as editorial content
+      rather than marketing.
+
+      STRUCTURAL IRONY: Snap Specs have MORE surveillance-capable hardware than Meta glasses
+      (4 cameras vs 1, dual Snapdragon processors, dedicated computer vision processor, contextual
+      AI). The hardware that publications praise as "privacy-respecting" is objectively more
+      capable of surveillance than the hardware that triggered 70+ advocacy group letters,
+      Senate scrutiny, and WIRED investigations.
+
+      CLEAN CONTROL: Gizmodo (Keleops AG, zero financial ties) covered the same Snap Specs launch
+      but actually questioned camera privacy — noting the LED indicator and asking "Whether that
+      is sufficient to warn people that they're being recorded is another question entirely."
+      This confirms the amplification pattern is entity-selective, not genre-determined.
+
+      This is the first MediaScope mechanism documenting CEO-level COMPETITIVE NARRATIVE STRATEGY
+      as a coverage amplification vector. Spiegel didn't just avoid privacy scrutiny — he
+      actively weaponized Meta's privacy controversies as a marketing differentiation point,
+      and the multi-publication amplification chain treated this marketing as editorial fact.
+
+    ceo_competitive_positioning:
+      distanced_from_meta_privacy: true
+      meta_as_negative_benchmark: true
+      claim: "Snap moderates Lenses to prevent facial recognition features"
+      official_privacy_marketing: "Uses its understanding of you and your world to help get things done on your behalf while protecting and respecting your privacy"
+      quote_source: "Engadget interview at AWE 2026, June 16, 2026"
+
+    hardware_comparison:
+      snap_specs:
+        cameras: 4
+        camera_detail: "2 full-color high-resolution + 2 infrared computer vision"
+        processors: 2
+        processor_detail: "Dual Snapdragon (one for Lenses, one for computer vision)"
+        contextual_ai: true
+        price: 2195
+        led_indicator: true
+        on_device_processing: true
+      meta_ray_ban:
+        cameras: 1
+        camera_detail: "1 camera (12MP)"
+        processors: 1
+        processor_detail: "Snapdragon AR1 Gen 1"
+        contextual_ai: true
+        price: 299
+        led_indicator: true
+        on_device_processing: false
+
+    amplification_chain:
+      - publication: "Engadget"
+        parent_company: "Yahoo / Apollo Global Management"
+        article_date: '2026-06-16'
+        article_title: "Evan Spiegel Doesn't Want You To Call Snap Specs AI Glasses"
+        framing: "Uncritical CEO interview platform; Spiegel 'distanced Snap from Meta's recent facial recognition controversy'"
+        snap_privacy_vocabulary_count: 0
+        meta_content_deal: false
+        google_showcase: true
+        source_url: "https://headlinesbriefing.com/mobi/engadget/snap-specs-ar-glasses-launch-as-see-through-computer-for-2195-9e83eb55"
+      - publication: "TechCrunch"
+        parent_company: "Yahoo / Apollo Global Management"
+        article_date: '2026-06-16'
+        article_title: "Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap"
+        framing: "Privacy features noted as adequate without scrutiny; LED indicator and data controls mentioned without alarm language"
+        snap_privacy_vocabulary_count: 0
+        meta_content_deal: false
+        google_showcase: true
+        source_url: "https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/"
+      - publication: "Telecoms.com"
+        parent_company: "Telecoms.com Ltd"
+        article_date: '2026-06-16'
+        article_title: "Snap unveils a pricey new pair of AR glasses"
+        framing: "Snap 'tried to avoid being tarnished' by Meta privacy brush; contrasted with 'pervert glasses' label applied to Meta; privacy features listed approvingly"
+        snap_privacy_vocabulary_count: 0
+        meta_content_deal: false
+        google_showcase: false
+        source_url: "https://www.telecoms.com/mobile-devices/snap-unveils-a-pricey-new-pair-of-ar-glasses"
+
+    clean_control_gizmodo:
+      publication: "Gizmodo (Keleops AG)"
+      financial_ties: "zero"
+      raised_camera_question: true
+      questioned_led_sufficiency: true
+      privacy_vocabulary_count: 1
+      key_quote: "Whether that is sufficient to warn people that they're being recorded is another question entirely, but it's at least the bare minimum at this stage for face-worn computers."
+      source_url: "https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470"
+
+    financial_relationships:
+      yahoo_apollo:
+        google_showcase: true
+        meta_content_deal: false
+        snap_openai_chain: "Snap → OpenAI partnership; OpenAI → Condé Nast deal (Condé Nast parent of Vogue, GQ, etc.)"
+      snap_relationships:
+        openai_partnership: true
+        meta_financial_tie: false
+        condé_nast_advertising: true
+
+    confounders:
+      - factor: "Meta's NameTag was genuinely problematic"
+        strength: STRONG
+        detail: "Facial recognition code on 50M+ phones, removed after WIRED exposure. Spiegel's contrast had a factual basis."
+      - factor: "Snap genuinely has better default privacy posture"
+        strength: MODERATE
+        detail: "On-device processing, LED indicator prominent, Lens moderation. Some privacy differentiation is real."
+      - factor: "Interview format gives CEO positioning space"
+        strength: MODERATE
+        detail: "Product launch interviews naturally give the CEO framing control. This is standard journalism."
+      - factor: "Snap Specs hadn't shipped yet"
+        strength: MODERATE
+        detail: "No real-world privacy incidents because the product wasn't in consumer hands. Post-launch coverage may differ."
+      - factor: "Different product category"
+        strength: WEAK
+        detail: "Full AR glasses vs camera-first smart glasses. But the CAMERA is the privacy-relevant component, and Snap has 4x more cameras."
+
+    related_mechanisms:
+      - mechanism_id: 121
+        relationship: "Fast Company same-pub opposite framing (single publication)"
+      - mechanism_id: 122
+        relationship: "TechCrunch single-pub privacy vocabulary zero"
+      - mechanism_id: 33
+        relationship: "OpenAI facial recognition privacy parity"
+      - mechanism_id: 8
+        relationship: "Safe target coefficient"
+      - mechanism_id: 45
+        relationship: "Ashworth WWDC PCC privacy framing asymmetry"
+
+    source_urls:
+      - "https://headlinesbriefing.com/mobi/engadget/snap-specs-ar-glasses-launch-as-see-through-computer-for-2195-9e83eb55"
+      - "https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/"
+      - "https://www.telecoms.com/mobile-devices/snap-unveils-a-pricey-new-pair-of-ar-glasses"
+      - "https://gizmodo.com/snaps-new-ar-glasses-are-trying-to-beat-meta-to-the-punch-2000772470"
+      - "https://gizmodo.com/metas-facial-recognition-plans-for-smart-glasses-are-worse-than-we-thought-2000768046"
+      - "http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry"
+
 research_period: 2024-08-01 to 2026-08-16

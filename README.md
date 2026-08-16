@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,268 | Across 410 test files |
+| Tests | ~14,339 | Across 412 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14268 tests** across 410 test files, each covering a different analytical capability:
+MediaScope has **14339 tests** across 412 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -482,6 +482,7 @@ MediaScope has **14268 tests** across 410 test files, each covering a different 
 | `test_type_d_3pm_cross_validation_aug15.py` | 23 | Type D cross-validation (Aug 15, 3 PM PT): Multi-publication flag integrity audit (135 stale flags fixed, 108→243), doc count sync (258 journalists/243 multi-pub/759 migrations across README, EDITORIAL_HISTORIES, careers_demo), mechanism #118-#120 cross-validation (structural integrity, cross-reference validity, confounder completeness), mechanism #119 missing mechanism_id field fixed, 21 missing test files added to ARCHITECTURE.md, 14 to README.md, 2 stale per-file test counts corrected. 7 classes, 23 tests |
 | `test_type_d_8pm_cross_validation_aug15.py` | 32 | Type D cross-validation (Aug 15, 8 PM PT): YAML structural integrity fix — mechanism #124 inserted as list item inside publications mapping, fixed to mapping key format. Mechanisms #122-124 misplaced under publications instead of cross_publication_findings, moved. Entity count regression (wbd_cnn missing from expected set) fixed. 164 cross-section tests verified. 6 classes, 32 tests |
 | `test_type_d_01am_cross_validation_aug16.py` | 35 | Type D cross-validation (Aug 16, 1 AM PT): Mechanisms #125-128 structural integrity, cross-reference bidirectionality (9 backrefs added to mechanisms #49, #67, #88, #108, #120), versant_media_group entity count fix, doc sync (409→410 test files), per-file test count correction (people_inc 30→17). 10 classes, 51 tests |
+| `test_snap_competitive_privacy_positioning_amplification_aug16.py` | 34 | Mechanism #130 — Snap CEO Competitive Privacy Positioning Amplification: cross-publication analysis of Spiegel anti-Meta privacy positioning during Snap Specs launch (Jun 16, 2026), amplified uncritically across Engadget, TechCrunch (Yahoo/Apollo), Telecoms.com with Gizmodo clean control. Hardware parity (4 cameras vs 1), CEO competitive positioning evidence, multi-publication amplification chain, financial relationships, Gizmodo LED sufficiency questioning, cross-references to #121/#122/#33/#8/#45. 9 classes, 34 tests |
 | `test_wsj_anthropic_meta_military_consumer_severity_inversion_aug15.py` | 33 | WSJ Anthropic-Meta Military-Consumer Severity Inversion (Mechanism #125): WSJ applies MORE alarm language (10+ terms) to Meta's consumer camera glasses (zero deaths, unshipped features) than to Anthropic's Claude AI used in U.S. military operation that included bombing sites in Caracas (actual violence). Alarm vocabulary correlates with entity identity, not harm magnitude. News Corp has roughly balanced AI deals ($50M each Meta and OpenAI), so inversion is NOT financially predicted — editorial calibration failure independent of financial incentives. 5 confounders, cross-refs #49, #8. 9 classes, 33 tests |
 | `test_type_d_10am_cross_validation_aug14.py` | 14 | Type D cross-validation (Aug 14, 10 AM PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests |
 | `test_type_d_10pm_cross_validation_aug14.py` | 19 | Type D cross-validation (Aug 14, 10 PM PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests |
