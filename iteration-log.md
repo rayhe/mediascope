@@ -1,3 +1,59 @@
+## Iteration #127 — Sat 2026-08-15 17:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #122: TechCrunch Camera-Equipped Glasses Privacy Vocabulary Zero — Snap SPECS vs Meta Ray-Ban Same-Publication Privacy Indictment Asymmetry**
+
+TechCrunch (Yahoo / Apollo Global Management) published two articles within 22 days
+about camera-equipped smart glasses from two different companies. Privacy vocabulary
+is inversely proportional to competitive threat to Meta's market leadership.
+
+**META (Jul 8, 2026, Sarah Perez):**
+"Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+- 12+ privacy/alarm terms: "creepy technology," "surveillance devices," "privacy
+  violations," "AI glasses creeps," "hidden agendas," etc.
+- 12 adversarial source categories (WIRED investigations, lawsuits, whistleblower
+  books, TikTok anger compilations, Cambridge Analytica 2018 — 8 years prior)
+- Meta's LED safety improvement REFRAMED as evidence of the problem
+- Template: comprehensive privacy indictment
+
+**SNAP (Jun 16, 2026, Lucas Ropek):**
+"Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap"
+- ZERO privacy alarm terms
+- ONE neutral privacy mention: "There are also privacy protections"
+- LED indicator CREDITED as "privacy protections"
+- Snap's FTC settlement history (2014): never referenced
+- Template: product/business viability
+
+**THE INVERSION:** Snap SPECS have 4 cameras (2 RGB + 2 IR for hand tracking) vs
+Meta's 1 camera. The product with MORE cameras receives LESS scrutiny (zero alarm terms).
+Scrutiny is inversely proportional to camera count. The SAME feature (LED recording
+indicator) is framed as evidence of a surveillance problem at Meta and as a privacy
+credential at Snap.
+
+**Financial predictor:** Apollo Global Management (Yahoo/TechCrunch owner) has $38.4B
+in AI financing ($35B AI-XPV platform for Anthropic/OpenAI, $3.4B xAI chip lease).
+Meta's market leadership (7M+ glasses sold 2025) threatens Apollo portfolio companies'
+smart glasses/hardware ambitions.
+
+**5 confounders documented** (1 STRONG, 3 MODERATE, 1 WEAK):
+1. Different product categories (rebutted: identical camera/recording/AI capabilities)
+2. Different market deployment (rebutted: pre-launch is when scrutiny matters most)
+3. Different individual reporters (rebutted: editorial templates are publication-level)
+4. Meta has more privacy history (rebutted: Snap FTC 2014 also relevant, also unmentioned)
+5. Meta broader data ecosystem (rebutted: explains proportional scrutiny, not ZERO scrutiny)
+
+**Cross-references:** Extends mechanism #104 (same publication, adds competitor pair),
+consistent with #121 (FastCo same pattern), consistent with #33 (competitor hardware
+consistently zero scrutiny).
+
+**Files:**
+- tests/test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py (45 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #122)
+- README.md + docs/ARCHITECTURE.md (stats: 402 test files, ~13,980 tests, 122 mechanisms)
+
+**Stats:** 402 test files | ~13,980 tests | 122 mechanisms
+
+---
+
 ## Iteration #126 — Sat 2026-08-15 15:00 PT (Type D: Test & Verify)
 
 **Multi-Publication Flag Integrity + Doc Sync + Mechanism #118-#120 Cross-Validation**

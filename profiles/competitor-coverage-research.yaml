@@ -15243,4 +15243,80 @@ publications:
     x_twitter_coverage_tone: adversarial
 
 
+  techcrunch_snap_specs_camera_privacy_vocabulary_zero:
+    mechanism_id: 122
+    date_added: '2026-08-15'
+    discovery_date: '2026-08-15'
+    finding_type: same_publication_privacy_vocabulary_asymmetry
+    domain: wearables_privacy
+    publication: TechCrunch (Yahoo / Apollo Global Management)
+    ownership_archetype: private_equity_ai_infrastructure_financing
+    entities:
+    - meta
+    - snap
+    iteration: 127
+    test_file: tests/test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py
+    articles:
+      meta:
+        url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+        title: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.
+        author: Sarah Perez
+        date: '2026-07-08'
+        privacy_alarm_terms: 12
+        adversarial_source_categories: 12
+        template: comprehensive_privacy_indictment
+        historical_baggage_years_back: 8
+      snap:
+        url: https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+        title: Snap finally debuts its long-awaited AR glasses, Specs, and, oof, they aren't cheap
+        author: Lucas Ropek
+        date: '2026-06-16'
+        privacy_alarm_terms: 0
+        adversarial_source_categories: 0
+        template: product_business_viability
+        snap_ftc_history_referenced: false
+    camera_capability_parity:
+      snap_cameras: 4
+      meta_cameras: 1
+      both_record_pov: true
+      both_have_led: true
+      both_have_ai: true
+      snap_has_hand_tracking: true
+    asymmetry_score: 0.94
+    finding_summary: >
+      TechCrunch published two articles within 22 days about camera-equipped smart
+      glasses. Meta's LED safety improvement was reframed as a comprehensive privacy
+      indictment (12+ alarm terms, 12 adversarial source categories, Cambridge Analytica
+      invoked 8 years later). Snap's SPECS with 4 cameras (vs Meta's 1) received ZERO
+      privacy alarm language -- cameras described as "record point-of-view footage,"
+      LED credited as "privacy protections." The SAME feature (LED recording indicator)
+      was framed as evidence of surveillance culture at Meta and as a privacy credential
+      at Snap. Snap's own FTC settlement history (2014) was never referenced.
+    confounders:
+    - name: different_product_categories
+      strength: MODERATE
+      rebutted: true
+    - name: different_market_deployment
+      strength: MODERATE
+      rebutted: true
+    - name: different_individual_reporters
+      strength: WEAK
+      rebutted: true
+    - name: meta_has_more_privacy_history
+      strength: MODERATE
+      rebutted: true
+    - name: meta_broader_data_ecosystem
+      strength: STRONG
+      rebutted: true
+    cross_references:
+    - mechanism_id: 104
+      relationship: extends
+      note: Same publication/ownership, adds direct competitor comparison
+    - mechanism_id: 121
+      relationship: consistent
+      note: Same pattern (zero Snap vocabulary) replicated at different publication
+    - mechanism_id: 33
+      relationship: consistent
+      note: Competitor hardware consistently receives zero privacy scrutiny
+
 research_period: 2024-08-01 to 2026-08-15

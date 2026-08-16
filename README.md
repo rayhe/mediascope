@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~13,935 | Across 401 test files |
+| Tests | ~13,980 | Across 402 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **13935 tests** across 401 test files, each covering a different analytical capability:
+MediaScope has **13980 tests** across 402 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -476,6 +476,7 @@ MediaScope has **13935 tests** across 401 test files, each covering a different 
 | `test_type_d_03am_cross_validation_aug15.py` | 26 | Type D cross-validation (Aug 15, 3 AM PT): Apollo XPV hardware factual correction — cross-validated against 7 primary sources (Apollo IR, WSJ, Reuters, Barron's, S&C, Milbank, TradingView), confirmed Broadcom XPUs not Google TPUs. Fixed mechanism #111 hardware/entities/summary/cross-references. Added testable_predictions to mechanisms #109 and #110. Fixed test_file references for #102-105. Synced README/ARCHITECTURE stats (journalists 255→258, migrations 971→973). Fixed 8 stale Type D hardcoded ID assertions in aug13/aug14 files. 5 classes, 26 tests |
 | `test_type_d_07am_cross_validation_aug15.py` | 70 | Type D cross-validation (Aug 15, 7 AM PT): Cross-reference bidirectionality audit for mechanisms #113 (Karissa Bell investigative methodology asymmetry) and #114 (Future plc triple AI dependency). Found 9 one-way cross-references from #113/#114 to #108, #109, #110, #111, #112 — all missing backrefs. Added bidirectional cross-references with relationship types and connection descriptions. Structural integrity verification: both mechanisms have complete required fields (testable_predictions, confounding_factors, source_urls, finding_summary, test_file). Source URLs spot-checked (200 OK). Financial data consistency verified (Future plc H1 2026 £349.1M/-8%, segmentation adds to 60%, market cap 93% decline). Mechanism chain coherence #108→#114 validated: different publishers/architectures converging on same editorial outcome. 8 classes, 70 tests |
 | `test_type_d_11am_cross_validation_aug15.py` | 19 | Type D cross-validation (Aug 15, 11 AM PT): Critical YAML parse error fixes and structural integrity audit. Fixed YAML comment-truncation bug in competitor-coverage-research.yaml (unquoted `(mechanism #30)` caused ` #` to be parsed as comment, breaking all tests). Fixed journalists.yaml root-level list item error (Michael Hicks entry used `- career:` format at root level instead of named key `michael_l_hicks:`). Moved mechanisms #115 (TechRadar), #116 (Michael Hicks/Android Central), and #117 (News Corp Q4) from `publications` section to `cross_publication_findings` (fixing 3 core test failures). Fixed Karissa Bell fixture deprecation warning (PytestRemovedIn10Warning). Regression guards: YAML parse integrity, mechanism placement validation, cross-reference bidirectionality, fixture deprecation, stats consistency. 7 classes, 19 tests |
+| `test_techcrunch_snap_specs_camera_privacy_vocabulary_zero_aug15.py` | 45 | Mechanism #122: TechCrunch same-publication camera-equipped glasses privacy vocabulary zero. Meta LED safety improvement → 12+ alarm terms, 12 adversarial sources, Cambridge Analytica invoked 8 years later. Snap SPECS (4 cameras vs Meta's 1) → ZERO privacy alarm terms, LED credited as privacy protection. Apollo/Yahoo ownership chain, $38.4B AI financing. Asymmetry 0.94. 10 classes, 45 tests |
 | `test_type_d_3pm_cross_validation_aug15.py` | 23 | Type D cross-validation (Aug 15, 3 PM PT): Multi-publication flag integrity audit (135 stale flags fixed, 108→243), doc count sync (258 journalists/243 multi-pub/759 migrations across README, EDITORIAL_HISTORIES, careers_demo), mechanism #118-#120 cross-validation (structural integrity, cross-reference validity, confounder completeness), mechanism #119 missing mechanism_id field fixed, 21 missing test files added to ARCHITECTURE.md, 14 to README.md, 2 stale per-file test counts corrected. 7 classes, 23 tests |
 | `test_type_d_10am_cross_validation_aug14.py` | 14 | Type D cross-validation (Aug 14, 10 AM PT): Cross-entity validation for mechanisms #92-#99. 6 classes, 14 tests |
 | `test_type_d_10pm_cross_validation_aug14.py` | 19 | Type D cross-validation (Aug 14, 10 PM PT): Full structural and financial data integrity audit across mechanisms #92-#105. 11 classes, 19 tests |
