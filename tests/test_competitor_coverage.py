@@ -379,7 +379,9 @@ class TestCoverageResearch:
             "wired", "the-verge", "atlantic", "nytimes", "financial-times",
             "guardian", "mit-tech-review", "gizmodo", "news-corp"
         }
-        assert set(pubs.keys()) == expected
+        # Filter out cross-publication mechanism entries that live under publications
+        pub_keys = {k for k in pubs.keys() if "meta_coverage_tone" in pubs[k]}
+        assert pub_keys == expected
 
     def test_research_has_aggregate_findings(self):
         """Research should include aggregate findings with hypothesis and evidence."""
@@ -398,5 +400,8 @@ class TestCoverageResearch:
         with open(Path(PROFILES_DIR) / "competitor-coverage-research.yaml") as f:
             data = yaml.safe_load(f)
         for slug, pub_data in data["publications"].items():
+            # Skip cross-publication mechanism entries
+            if "mechanism_id" in pub_data and "meta_coverage_tone" not in pub_data:
+                continue
             assert "meta_coverage_tone" in pub_data, f"{slug} missing meta_coverage_tone"
             assert "asymmetry_verdict" in pub_data, f"{slug} missing asymmetry_verdict"

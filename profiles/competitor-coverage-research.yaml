@@ -2807,6 +2807,7 @@ cross_publication_findings:
     related_mechanisms:
       - mechanism_id: 130
       - mechanism_id: 131
+      - mechanism_id: 132
     publications:
     - WIRED
     - The Verge
@@ -16359,5 +16360,132 @@ publications:
         relationship: "Wong-Barr beat replication — control outlet confirms beat assignment is a driver"
       - mechanism_id: 130
         relationship: "Snap competitive positioning amplification — control outlet did NOT amplify CEO positioning"
+      - mechanism_id: 132
+        relationship: "Boxall privacy inversion — Valnet outlet replicates institutional amplification pattern"
+
+  andy_boxall_privacy_vocabulary_inversion:
+    mechanism_id: 132
+    mechanism_name: >-
+      Andy Boxall (Android Police / Valnet) Cross-Entity Privacy Vocabulary Inversion —
+      Same Journalist Applies 7+ Alarm Terms to Meta (1 Camera) and Zero to Snap (4 Cameras)
+    finding_type: same_journalist_cross_entity_tracking
+    rotation_type: B
+    discovery_date: '2026-08-16'
+    test_file: tests/test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py
+    domain: wearables_coverage_asymmetry
+    journalist: Andy Boxall
+    publication: Android Police (Valnet Inc.)
+    publication_owner: Valnet Inc. (Canadian digital media company)
+    finding_summary: >-
+      Andy Boxall at Android Police (Valnet Inc.) covers three camera-equipped smart glasses
+      within a 36-day window (Jun 17 – Jul 23, 2026) with radically different privacy vocabulary:
+
+      - **Snap Specs (Jun 17):** 4 cameras (2 visible + 2 IR), dual Snapdragon processors, $2,195.
+        ZERO privacy terms. ZERO camera mentions. Article is 100% enthusiastic: "augmented reality
+        dream," "technically astonishing," "spectacular," "genre-creating." +0.90 tone.
+      - **Meta Ray-Ban (Jul 9):** 1 camera, Snapdragon AR1 Gen 1, $299. 7+ alarm terms:
+        "nightmarish," "super invasive," "privacy red flag," "bad to worse," "covert camera
+        recording," "serious concern," "bad idea." ZERO positive language. -0.85 tone.
+      - **Samsung Galaxy Glasses (Jul 23):** 1 camera, same Snapdragon AR1 Gen 1, ~$379-499.
+        ZERO alarm terms applied to Samsung. Privacy concerns ATTRIBUTED to Meta's "backlash."
+        Samsung cameras normalized as having "similar protections." +0.30 tone.
+
+      Privacy vocabulary is INVERSELY proportional to camera count: the device with 4 cameras
+      (Snap Specs) gets zero scrutiny; the device with 1 camera (Meta) gets "nightmarish." Samsung
+      uses the IDENTICAL chip and camera configuration as Meta but gets normalization, not alarm.
+
+      This replicates the institutional amplification pattern identified at Condé Nast/WIRED
+      (mechanism #33), Future plc (mechanisms #115, #116), and Yahoo/Apollo (mechanism #122) at
+      a NEW publication owner (Valnet Inc.), confirming the pattern is industry-wide rather than
+      confined to a few publishers. The control outlet (9to5Google, mechanism #131) shows that
+      proportional privacy concern (~1.7:1 Meta-to-competitor) is the journalistic baseline.
+      Boxall's infinite ratio matches institutional outlets, not the independent control.
+
+    financial_context:
+      owner: Valnet Inc.
+      primary_ad_platform: Google AdSense/AdManager
+      beat_dependency: Android/Google ecosystem
+      samsung_advertiser: true
+      google_samsung_glasses_partnership: >-
+        Samsung and Google jointly develop smart glasses via Android XR. Google paid Samsung
+        $8B+ over 4 years for Play Store/Search/Gemini defaults (DOJ antitrust testimony).
+        Samsung accounts for half or more of Google Play revenue.
+      meta_financial_ties: none
+      snap_financial_ties: none_direct
+      prediction: >-
+        Valnet depends on Google ad revenue and Samsung advertising spend. Meta is a structural
+        competitor to Google (ad market, Quest vs Android XR, Meta glasses vs Samsung/Google
+        glasses). Financial alignment predicts maximum editorial scrutiny for Meta and softer
+        coverage for Samsung/Google ecosystem partners.
+
+    articles:
+      snap_specs:
+        url: "https://www.androidpolice.com/snap-specs-are-the-augmented-reality-dream-weve-been-waiting-for/"
+        date: "2026-06-17"
+        headline: "Snap's $2,195 Specs aren't smartglasses, they're the augmented reality dream we've been waiting for"
+        privacy_terms: 0
+        camera_discussed: false
+        tone_score: 0.90
+        cameras_on_device: 4
+      meta_super_sensing:
+        url: "https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/"
+        date: "2026-07-09"
+        headline: "Ray-Ban Meta privacy problems go from bad to worse with nightmarish 'super sensing' feature"
+        privacy_terms: 7
+        alarm_words: ["nightmarish", "super invasive", "privacy red flag", "bad to worse", "covert camera recording", "serious concern", "bad idea"]
+        tone_score: -0.85
+        cameras_on_device: 1
+      samsung_glasses:
+        url: "https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/"
+        date: "2026-07-23"
+        headline: "We went hands-on with Samsung's smartglasses. Here's why Meta should be worried"
+        privacy_terms_samsung: 0
+        privacy_attribution_meta: true
+        camera_normalized: true
+        tone_score: 0.30
+        cameras_on_device: 1
+
+    confounders:
+      - name: Super Sensing genuinely more invasive
+        strength: STRONG
+        description: >-
+          Meta article covers 'super sensing,' a proposed always-on recording feature without
+          LED indicator. This IS genuinely more invasive than standard camera features. However,
+          the total ABSENCE of any privacy vocabulary for Snap Specs (4 cameras with confirmed
+          photo/video capability) is a coverage selection asymmetry independent of this confounder.
+      - name: Different article genres
+        strength: MODERATE
+        description: >-
+          Snap = launch announcement, Meta = privacy news, Samsung = hands-on. Genre differences
+          partially explain tone. However, Gizmodo's Snap Specs launch coverage questioned LED
+          indicator sufficiency, showing that launch coverage CAN include privacy discussion.
+      - name: Audience alignment
+        strength: MODERATE
+        description: >-
+          Android Police's audience is Android/Google users, so favorable coverage of Android XR
+          partners is audience alignment, not solely financial incentive. However, audience
+          alignment and financial incentive are correlated.
+      - name: Snap Specs positioned as AR display
+        strength: MODERATE
+        description: >-
+          Snap positions Specs as AR glasses, not camera glasses. However, device has 4 cameras
+          capable of photo/video capture (confirmed by Snap), and a privacy-aware journalist
+          should acknowledge camera implications.
+
+    related_mechanisms:
+      - mechanism_id: 30
+        relationship: "Chokkattu genre-determined framing — Boxall shows same pattern at different owner"
+      - mechanism_id: 33
+        relationship: "WIRED Meta-exclusive privacy vocabulary — replicated at Valnet"
+      - mechanism_id: 121
+        relationship: "Engadget Snap zero-scrutiny — Boxall replicates at Android Police"
+      - mechanism_id: 122
+        relationship: "TechCrunch Snap zero-scrutiny — Boxall replicates at Android Police"
+      - mechanism_id: 126
+        relationship: "Wong-Barr beat replication — confirms cross-publication pattern"
+      - mechanism_id: 130
+        relationship: "Snap competitive privacy positioning — Boxall amplified uncritically"
+      - mechanism_id: 131
+        relationship: "Ben Schoon control calibration — Boxall's infinite ratio vs Schoon's 1.7:1"
 
 research_period: 2024-08-01 to 2026-08-16
