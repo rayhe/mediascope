@@ -2096,6 +2096,9 @@ entities:
       - mechanism_id: 101
         name: Apple N50 pre-launch privacy-hero cascade
         connection: Cross-publication cascade from Gurman report; 7+ outlets, identical narrative arc, Samsung invisible
+      - mechanism_id: 136
+        name: Apple Siri AI quad-channel publisher dependency
+        connection: Siri AI licensing adds fourth financial channel pre-N50; compounds News+ dependency with AI content payments
       source_urls:
       - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
       - https://www.ghacks.net/2026/07/28/apple-delays-first-smart-glasses-to-wwdc-2027-over-privacy-concerns/
@@ -2267,6 +2270,81 @@ entities:
         Meta (most adversarial) despite having the FEWEST leverage mechanisms
 
         '
+    siri_ai_content_licensing:
+      date_added: 2026-08-16
+      status: in_negotiation
+      proposed_budget: 'Nine-figure ($100M+) total budget for publisher content payments'
+      compensation_model: 'Variable compensation — pay-per-use when publisher content is used by Siri AI, not lump sum'
+      deal_term: 'Multiyear deals proposed'
+      purpose: 'Power Siri AI voice assistant with current news and information content'
+      siri_ai_launch: 'WWDC26 (Jun 2026) introduced the all-new Siri AI; rolling out later 2026'
+      prior_deals: 'Apple previously paid publishers for content in earlier deals that included AI training rights'
+      negotiation_context: 'Apple reached out to publishers in recent months. Standard industry model is guaranteed fees with broad access. Apple proposing variable per-use model instead — a structural difference.'
+      n50_timing_relevance: 'Siri AI content deals are being negotiated BEFORE Apple N50 smart glasses launch (WWDC Jun 2027). Publishers who sign multiyear Siri deals will have new financial dependency on Apple exactly when Apple enters the smart glasses market in direct competition with Meta Ray-Ban.'
+      apple_q3_fy2026:
+        quarter_ending: 2026-06-27
+        revenue_b: 109.4
+        revenue_yoy_pct: 16.4
+        services_revenue_b: 30.7
+        services_yoy_pct: 12.1
+        services_gross_margin_pct: 75.6
+        services_pct_of_total: 28.1
+        services_pct_of_gross_margin: 42.4
+        paid_subscriptions_b: 1.5
+        installed_base_devices_b: 2.5
+        wearables_home_accessories_b: 7.9
+        wearables_yoy_pct: 6.5
+        net_income_b: 29.8
+        net_income_yoy_pct: 27.1
+        ceo_quote: 'At WWDC26, we were thrilled to introduce the all-new Siri AI, alongside all of Apple''s latest software innovations and important new child safety features.'
+      source_urls:
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
+      - https://www.macobserver.com/news/apple-q3-2026-earnings-results-revenue-hits-109-4-billion-up-16-eps-jumps-29/
+      - https://9to5mac.com/2026/07/30/apple-reports-q3-2026-earnings-109-4-billion-in-revenue-up-16/
+    quad_channel_publisher_dependency:
+      mechanism_id: 136
+      date_added: 2026-08-16
+      overview: 'Apple is building FOUR simultaneous publisher financial dependency
+        channels, making it the company with the most comprehensive publisher financial
+        architecture in tech. All four converge BEFORE Apple N50 smart glasses launch
+        (WWDC Jun 2027), creating compound financial incentives for favorable Apple
+        wearables coverage from the same publishers who cover Meta adversarially.
+        Meta has ZERO content channels with publishers and competes for ad revenue.'
+      channels:
+      - name: Apple News Plus
+        type: subscription_revenue_sharing
+        detail: '50% of $12.99/mo, engagement-weighted across 400+ publishers, 125M MAU. Apple controls discovery and curation via 100 editors. Growing 4x faster than publishers'' own subscription businesses.'
+      - name: Apple Advertising
+        type: advertising_revenue
+        detail: 'Record quarter embedded in $30.7B Services (Q3 FY2026). Apple sells ads directly in Apple News. Publisher titles benefit from Apple''s ad sales. Apple''s advertising business est. $7.3B+ annually.'
+      - name: App Store Commission
+        type: platform_tax
+        detail: '15-30% of publisher app subscriptions. News Partner Program: 15% from day one. Every iOS subscription runs through Apple''s payment system. NYT has 10.8M+ digital subscribers, many via iOS.'
+      - name: Siri AI Content Licensing
+        type: ai_content_licensing
+        detail: 'NEW (Aug 2026): Nine-figure budget, variable pay-per-use compensation, multiyear deals. Content to power Siri AI rolling out late 2026. This is the FOURTH channel — the only one paying publishers specifically for AI content use.'
+        status: in_negotiation
+      competitor_channel_comparison:
+        apple: 4
+        google: 2
+        openai: 1
+        microsoft: 2
+        amazon: 2
+        meta: 0
+      apple_meta_channel_delta: 4
+      meta_contrast:
+        publisher_financial_channels: 0
+        content_deals: 0
+        is_publisher_ad_competitor: true
+        detail: 'Meta has ZERO publisher financial channels (no content app, no subscription sharing, no commission, no AI licensing with most publishers) AND directly competes with publishers for digital advertising revenue. This 4-0 channel asymmetry predicts the coverage tone differential.'
+      coverage_incentive_implication: 'Publishers with quad-channel Apple dependency (News+ revenue, advertising, App Store commission, and now Siri AI licensing) have four simultaneous financial reasons to maintain favorable Apple coverage. Meta has zero channels, meaning adversarial Meta coverage is financially cost-free. The compound dependency grows as each new channel reinforces the others — a publisher that depends on Apple for 4 revenue streams is structurally inhibited from producing adversarial Apple coverage that could jeopardize ANY of those streams.'
+      source_urls:
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
+      - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+      - https://ppa.co.uk/guest-blog-8-facts-publishers-should-know-about-apple-news-plus
+      - https://www.macobserver.com/news/apple-q3-2026-earnings-results-revenue-hits-109-4-billion-up-16-eps-jumps-29/
     openai_litigation_publisher_cross_pressure:
       overview: 'The Apple-OpenAI litigation (Jul-Aug 2026) creates an unprecedented PUBLISHER CROSS-PRESSURE natural experiment.
         Almost every major publication with an OpenAI content licensing deal is ALSO financially dependent on Apple News+
