@@ -1,27 +1,30 @@
 ## Iteration #151 — Mon 2026-08-17 06:00 PT (Type B: Journalist Cross-Entity Tracking)
 
-**Focus: Cherlynn Low Engadget Cross-Entity Beat Assignment Privacy Vocabulary Control Case (Mechanism #150)**
+**Focus: Engadget/Yahoo Beat Assignment Privacy Routing — Cherlynn Low Control Case (Mechanism #150) + Sam Rutherford Null Differential (Mechanism #151)**
 
-**DISCOVERY: Same journalist's uniform zero-alarm coverage proves asymmetry operates through editorial beat assignment, not individual bias**
+**DISCOVERY: Two complementary journalist profiles prove Engadget's asymmetry operates entirely at the editorial assignment layer, not individual reporter bias**
 
-Cherlynn Low (Engadget Executive Editor) covers Meta Glasses (Jun 23, 2026) and Snap Specs at AWE (Jun 17, 2026) within a 6-day window with UNIFORMLY zero privacy alarm vocabulary for both entities. This establishes a journalist-level CONTROL CASE: the asymmetry is not in how individual journalists treat different companies, but in how the publication assigns its investigative beats.
+Two independent analyses of Engadget reporters covering BOTH Meta and competitor smart glasses reveal the same structural finding from different angles:
 
-**The beat assignment mechanism:**
+**Mechanism #150 — Cherlynn Low (Executive Editor) Control Case:**
+Covers Meta Glasses (Jun 23, 2026) and Snap Specs at AWE (Jun 17, 2026) within a 6-day window with UNIFORMLY zero privacy alarm vocabulary for both entities. CONTROL CASE proving asymmetry via editorial beat assignment. COMPETITIVE FRAMING AMPLIFICATION: amplifies Spiegel's anti-Meta "copycats up north" dig with editorial validation while reporting Snap's "privacy features" without scrutiny despite 4 cameras and dual Snapdragon processors.
+
+**Mechanism #151 — Sam Rutherford (Senior Reporter) Null Differential:**
+Covers Meta Ray-Ban (3 articles, 2023-2024) and Samsung Galaxy Glasses (1 article, Apr 2026) with ZERO privacy vocabulary for BOTH entities. NULL DIFFERENTIAL eliminates individual journalist bias. Privacy vocabulary routed through EDITORIAL ASSIGNMENT to Karissa Bell (3 standalone Meta-only privacy investigations Jul 11 - Aug 7, containing 33+ cumulative alarm terms). Financial: Yahoo/Apollo → Google Showcase + Apollo-Anthropic SPV shapes coverage through story commissioning. Asymmetry score: 0.72.
+
+**The beat assignment mechanism (confirmed across both journalists):**
 - Cherlynn Low (product hands-on): zero privacy alarm for ALL entities (Meta, Snap, Samsung)
-- Karissa Bell (privacy investigation): 3 standalone articles exclusively about Meta within 28 days (Jul 11 - Aug 7, 2026), containing 33+ cumulative privacy alarm terms
+- Sam Rutherford (product coverage): zero privacy alarm for ALL entities (Meta, Samsung)
+- Karissa Bell (privacy investigation): 3 standalone articles exclusively about Meta within 28 days
 - Publication achieves adversarial framing of Meta while each individual journalist's coverage appears editorially balanced
 
-**Competitive framing amplification finding:**
-In the Snap Specs liveblog, Cherlynn Low amplifies Snap CEO Spiegel's anti-Meta "copycats up north" dig with editorial validation ("an obvious reference to Meta") and reports Snap's self-described "privacy features" without independent scrutiny — despite Snap Specs having 4 cameras and dual Snapdragon processors (more surveillance-capable hardware than Meta's 1-camera glasses). In contrast, her Meta Glasses article contains zero competitive positioning and zero mention of Meta's privacy features.
-
-**4 confounders (1 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions.**
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK) per mechanism, 3 testable predictions each.**
 
 **Deliverables:**
 - `tests/test_cherlynn_low_engadget_cross_entity_beat_assignment_privacy_vocabulary_control_aug17.py` (10 classes, 56 tests, all passing)
-- competitor-coverage-research.yaml updated with mechanism #150
-- README + ARCHITECTURE synced (434 files, ~15,381 tests, 150 mechanisms)
-
-**Stats:** 434 test files, ~15,381 tests, 150 mechanisms
+- `tests/test_sam_rutherford_engadget_cross_entity_beat_assignment_privacy_routing_aug17.py` (12 classes, 74 tests, all passing)
+- competitor-coverage-research.yaml updated with mechanisms #150 and #151
+- README + ARCHITECTURE synced (435 files, ~15,455 tests, 151 mechanisms)
 
 ## Iteration #150 — Mon 2026-08-17 05:00 PT (Type A: Competitor Coverage Deep Dive)
 

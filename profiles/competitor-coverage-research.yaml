@@ -14789,6 +14789,74 @@ cross_publication_findings:
       - 'https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/'
       - 'https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/'
 
+  sam_rutherford_engadget_cross_entity_beat_assignment_null_differential:
+    mechanism_id: 151
+    discovery_date: '2026-08-17'
+    rotation_type: B
+    journalist: 'Sam Rutherford'
+    publication: 'Engadget (Yahoo/Apollo)'
+    competitor: 'Samsung'
+    finding: >
+      Sam Rutherford (Senior Reporter, Engadget) covers both Meta Ray-Ban smart
+      glasses (3 articles, 2023-2024) and Samsung Galaxy Glasses (1 article, Apr
+      2026) with ZERO privacy alarm vocabulary for BOTH entities. This NULL
+      DIFFERENTIAL result eliminates individual journalist bias as the driver of
+      Engadget's documented cross-entity asymmetry. Privacy vocabulary is instead
+      routed through EDITORIAL ASSIGNMENT: investigative privacy angles are
+      systematically assigned to Meta-specific coverage by Karissa Bell (3
+      standalone privacy investigations Jul 11 - Aug 7, 2026 with 33+ cumulative
+      privacy alarm terms), while Samsung and Google coverage stays with neutral
+      product reporters (Rutherford, Mat Smith, Amy Skorheim). The asymmetry
+      operates at the EDITORIAL DECISION layer (which stories get commissioned,
+      who gets assigned), not at the INDIVIDUAL JOURNALIST layer. Financial
+      incentive architecture: Yahoo/Apollo → Google Showcase program + Apollo
+      Global Management Anthropic SPV shapes coverage through story commissioning.
+    confounders:
+      - 'STRONG: Beat specialization — Rutherford covers mobile/wearable HARDWARE,
+        not privacy policy. Reporters naturally cover their beat. However, other
+        publications assign privacy context within hardware reviews (Karissa Bell
+        at the SAME publication does exactly this for Meta hardware).'
+      - 'STRONG: Market timing — Samsung glasses leaked-images article (Apr 2026)
+        predates product availability, limiting privacy discussion opportunity.
+        However, Rutherford''s Meta articles also cover pre-availability features
+        yet Meta gets dedicated privacy pieces from other Engadget reporters.'
+      - 'MODERATE: Sample size — only 1 Samsung article vs 3 Meta articles from
+        Rutherford. Broader pattern holds across Mat Smith (5 Meta articles, zero
+        privacy terms) and Amy Skorheim (Samsung coverage, zero privacy terms).'
+      - 'MODERATE: Article type variation — hands-on, feature announcement, and
+        leak coverage have different editorial requirements. However, the complete
+        ABSENCE of privacy vocabulary across ALL types for BOTH entities is the
+        significant finding.'
+      - 'WEAK: Reporter personality — some reporters may naturally avoid
+        adversarial framing regardless of assignment. However, Rutherford is not
+        writing soft pieces about Meta either; his coverage is genuinely neutral-
+        informative for all entities.'
+    testable_predictions:
+      - 'When Samsung Galaxy Glasses ship (late 2026), Engadget will assign a
+        privacy-specific investigation to a DIFFERENT reporter than whoever
+        writes the Samsung product review, mirroring the Bell/Rutherford split
+        for Meta — OR Samsung will receive no dedicated privacy investigation
+        at all.'
+      - 'Sam Rutherford will NOT be assigned an Engadget standalone privacy
+        investigation piece about Samsung or Meta wearable glasses in the next
+        12 months — his beat assignment will remain neutral product coverage.'
+      - 'When Meta ships its response to Samsung/Google competition (new Ray-Ban
+        model or Oakley launch), the Engadget privacy-investigation assignment
+        will go to Karissa Bell or a journalist other than Rutherford, maintaining
+        the beat-assignment routing pattern.'
+    connects_to:
+      - 122
+      - 130
+      - 142
+      - 146
+    test_file: 'tests/test_sam_rutherford_engadget_cross_entity_beat_assignment_privacy_routing_aug17.py'
+    test_count: 74
+    source_urls:
+      - 'https://www.engadget.com/ar-vr/images-of-samsungs-rumored-smart-glasses-have-leaked-184129483.html'
+      - 'https://www.engadget.com/ray-ban-meta-hands-on-techy-sunglasses-you-might-actually-want-to-wear-180852514.html'
+      - 'https://www.engadget.com/the-ray-ban-meta-smart-glasses-are-getting-ai-powered-visual-search-features-204556255.html'
+      - 'https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/'
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

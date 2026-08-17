@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~15,381 | Across 434 test files |
+| Tests | ~15,455 | Across 435 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **15381 tests** across 434 test files, each covering a different analytical capability:
+MediaScope has **15455 tests** across 435 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -902,6 +902,7 @@ MediaScope has **15381 tests** across 434 test files, each covering a different 
 | `test_vox_media_podcast_network_cross_medium_privacy_portability_aug17.py` | 44 | Mechanism #148: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability. Second Type E iteration expanding podcast corpus from 7 to 12+ episodes across 11 sources. Waveform (MKBHD/Vox Media) shares corporate owner with The Verge (documented print asymmetry #112). AmberMac Ep056 "Pervert" title mirrors Everyone Hates Elon activist vocabulary — trans-Atlantic lexicon cluster. Acquired AI "Luxury Surveillance Devices" framing 100% Meta-directed. Clorama XR (former Google/Meta PM) frames privacy as Meta problem while giving Google innovation lens. TechMagic counterexample (positive Meta framing). Entity scrutiny: Meta 92%, Samsung 0%, Google 0%, Apple 5%, Snap 0%. 8 classes, 44 tests |
 | `test_pmc_acquisition_google_double_incentive_samsung_glasses_coverage_calibration_aug17.py` | 26 | Mechanism #149: PMC Double Financial Incentive — Google Advertising Revenue + Google-Warby Parker $150M Equity = Compound Samsung/Google Glasses Coverage Calibration. PMC acquired The Verge June 18, 2026, intensifying Google ad dependency from single-pub to 25+-title portfolio level. Samsung Galaxy Glasses have MORE privacy features than Meta (inward indicator, wear-detection disable) yet receive ZERO privacy vocabulary. Control: Gizmodo (Keleops AG, zero financial ties) published standalone Samsung glasses hands-on at same event. Connects to #81 (beat assignment), #112 (Victoria Song bifurcation), #147 (Google-Warby Parker equity). 8 classes, 26 tests |
 | `test_cherlynn_low_engadget_cross_entity_beat_assignment_privacy_vocabulary_control_aug17.py` | 56 | Mechanism #150: Cherlynn Low Engadget Cross-Entity Beat Assignment Privacy Vocabulary Control Case. Cherlynn Low (Executive Editor) covers Meta Glasses (Jun 23) and Snap Specs (Jun 17) within 6 days with UNIFORMLY zero privacy alarm vocabulary for both — establishing a journalist-level CONTROL CASE proving Engadget's asymmetry operates through editorial beat assignment (Karissa Bell assigned 3 standalone Meta-only privacy investigations Jul 11 - Aug 7). COMPETITIVE FRAMING AMPLIFICATION: Low amplifies Spiegel's anti-Meta "copycats up north" dig with editorial validation ("an obvious reference to Meta") and reports Snap's privacy claims without scrutiny despite 4 cameras. Connects to #109, #113, #130. 10 classes, 56 tests |
+| `test_sam_rutherford_engadget_cross_entity_beat_assignment_privacy_routing_aug17.py` | 74 | Mechanism #151: Sam Rutherford (Engadget/Yahoo/Apollo) Beat Assignment Privacy Vocabulary Routing — NULL DIFFERENTIAL. Same reporter covers Meta Ray-Ban (3 articles, 2023-2024) and Samsung Galaxy Glasses (1 article, Apr 2026) with ZERO privacy vocabulary for BOTH entities. This null differential proves Engadget's asymmetry operates at the EDITORIAL ASSIGNMENT layer — privacy-investigative stories are routed to Meta-only coverage (Karissa Bell), while neutral product coverage is maintained by reporters like Rutherford, Mat Smith, Amy Skorheim. Financial: Yahoo/Apollo → Google Showcase + Apollo-Anthropic SPV shapes coverage through story commissioning. Asymmetry score: 0.72 (individual: 0.0, institutional: 0.72). Connects to #122, #130, #142, #146. 12 classes, 74 tests |
 | `test_wired_meta_remediation_coverage_selection_silence_aug16.py` | 55 | Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix. WIRED published "The Rise of the Ray-Ban Meta Creep" (Mar 2026) documenting LED disabling services + NameTag investigation (Jun 4). On Jul 7, Meta shipped v26 mandatory update: camera disabled if LED tampered/destroyed, listings removed, legal action. WIRED published ZERO articles on fix. 7+ other outlets (Verge, 9to5Google, Digital Trends, Android Police, Road to VR, PetaPixel, Engadget) covered it. 19 days later, Apple N50 delay for "privacy" (no shipped product) received coverage. Novel type: remediation_coverage_selection_silence. Financial: Condé Nast-OpenAI deal, zero Meta deals, Advance-Reddit $10B+. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). Cross-refs #8, #30, #33, #101, #118, #130. 55 tests |
 
 ```bash
