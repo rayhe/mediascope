@@ -12738,6 +12738,118 @@ cross_publication_findings:
       connection: 7+ outlets framed Apple N50 delay as virtuous while Samsung was invisible; quad-channel dependency may amplify
         this cascade
     test_file: tests/test_apple_siri_ai_quad_channel_publisher_dependency_aug16.py
+  axel_springer_kkr_openai_financial_architecture:
+    mechanism_id: 143
+    date_added: '2026-08-17'
+    finding_type: financial_incentive_architecture
+    domain: businessinsider.com
+    parent_company: Axel Springer (majority-owned by KKR)
+    test_file: test_axel_springer_kkr_openai_financial_architecture_aug17.py
+    openai_content_deal:
+      announcement_date: '2023-12-13'
+      duration: multi-year
+      annual_value_description: tens of millions of euros per year
+      publications_covered:
+      - Business Insider
+      - Politico
+      - Bild
+      - Welt
+      includes_training_data: true
+      chatgpt_summary_integration: true
+      meta_comparable_deal: false
+      openai_meta_competitor_relationship: direct competitor in AI models (GPT vs Llama)
+    kkr_ownership:
+      ownership_type: majority
+      acquisition_year: 2020
+      helix_digital_infrastructure:
+        committed_capital_b: 10
+        announcement_date: '2026-06-11'
+        ceo: Adam Selipsky (former AWS CEO)
+        partners:
+        - Nvidia
+        - Vistra
+        - Kuwait Investment Authority
+      total_digital_infrastructure_b: 34
+      ecp_ai_partnership:
+        total_b: 50
+        announcement_date: '2024-10-30'
+      hyperscaler_clients:
+      - Google
+      - Amazon
+      - Microsoft
+    coverage_asymmetry:
+      meta_coverage:
+        alarm_terms:
+        - creepy
+        - surreptitious surveillance
+        - privacy fears
+        - internal dissent
+        - pervert glasses
+        investigative_sourcing: internal documents viewed by Business Insider
+        articles_documented: 3
+      samsung_google_coverage:
+        standalone_privacy_articles: 0
+        alarm_terms: []
+      hardware_parity:
+        shared_chip: Qualcomm Snapdragon AR1 Gen 1
+        shared_camera_mp: 12
+        shared_led_indicator: true
+    incentive_layers:
+    - name: OpenAI content licensing deal
+      mechanism: Meta Llama threatens OpenAI business model; adversarial Meta coverage protects deal value
+    - name: KKR AI infrastructure ownership
+      mechanism: KKR infrastructure serves Google/Amazon/Microsoft (Meta competitors); their success = KKR returns
+    - name: Google search traffic dependency
+      mechanism: Google search referrals fund BI ad revenue; Google is Samsung glasses partner
+    confounders:
+    - strength: strong
+      description: KKR and Axel Springer editorial operate independently; no evidence KKR directs Business Insider coverage
+    - strength: strong
+      description: Business Insider journalists may have genuine editorial independence; coverage could reflect authentic
+        journalistic judgment
+    - strength: moderate
+      description: OpenAI content deal is non-exclusive; Axel Springer could sign similar deal with Meta but has not
+    - strength: moderate
+      description: Meta actual privacy incidents (Swedish investigation, harassment videos) provide legitimate news hooks
+        Samsung lacks pre-launch
+    - strength: weak
+      description: KKR AI infrastructure is diversified; not all facilities serve Meta competitors exclusively
+    falsifiable_predictions:
+    - prediction: If Samsung launches glasses with identical camera capabilities and users misuse them, Business Insider will
+        NOT produce comparable volume of privacy alarm coverage.
+      falsification_criteria: Count BI Samsung glasses privacy articles in first 6 months post-launch vs Meta equivalent period
+      falsifiable: true
+      testable_date: 2027-06
+    - prediction: If OpenAI signs a competing deal with Meta for Llama training data, BI adversarial Meta coverage intensity
+        will decrease.
+      falsification_criteria: Measure alarm term density in BI Meta articles before vs after hypothetical deal
+      falsifiable: true
+      testable_date: 2028-01
+    - prediction: If KKR divests from Axel Springer, BI Meta coverage will trend toward median of non-PE-owned tech publications.
+      falsification_criteria: Compare alarm term density before vs after hypothetical divestiture
+      falsifiable: true
+      testable_date: 2028-01
+    cross_references:
+    - mechanism_id: 111
+      relationship: parallel
+      note: Apollo/Yahoo and KKR/Axel Springer are parallel PE-media-AI financial architectures
+    - mechanism_id: 104
+      relationship: complements
+      note: TechCrunch privacy indictment framing shows same pattern under Apollo ownership
+    - mechanism_id: 122
+      relationship: extends
+      note: TechCrunch Snap vs Meta — BI adds another data point of asymmetric coverage from PE-owned publication
+    - mechanism_id: 128
+      relationship: consistent
+      note: Private equity AI infrastructure portfolio predicts direction of differential treatment
+    source_urls:
+    - https://techcrunch.com/2023/12/13/openai-inks-deal-with-axel-springer-on-licensing-news-for-model-training/
+    - https://www.reuters.com/business/media-telecom/global-news-publisher-axel-springer-partners-with-openai-landmark-deal-2023-12-13/
+    - https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content
+    - https://www.reuters.com/legal/transactional/kkr-launches-10-billion-ai-infrastructure-company-with-nvidia-vistra-2026-06-11/
+    - https://investor.wedbush.com/wedbush/article/bizwire-2024-10-30-kkr-and-energy-capital-partners-announce-50-billion-strategic-partnership-to-support-ai-growth-through-investments-in-data-centers-and-power-generation
+    - https://www.webpronews.com/through-the-looking-glass-internal-dissent-and-privacy-fears-haunt-metas-hardware-ambitions/
+    - https://petapixel.com/2026/07/27/instagram-is-banning-creepy-hidden-camera-videos-filmed-with-meta-smart-glasses/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -16834,9 +16946,8 @@ publications:
         stronger incentive to suppress Meta remediation narrative
   inc_mansueto_smart_glasses_privacy_redirected_attribution:
     mechanism_id: 137
-    mechanism_name: Inc.com (Mansueto Ventures) Privacy Vocabulary Redirected Attribution — Samsung/Google
-      Smart Glasses Competitive Analysis Redirects ALL Privacy Vocabulary to Meta While Presenting Identical
-      Hardware With Zero Scrutiny
+    mechanism_name: Inc.com (Mansueto Ventures) Privacy Vocabulary Redirected Attribution — Samsung/Google Smart Glasses Competitive
+      Analysis Redirects ALL Privacy Vocabulary to Meta While Presenting Identical Hardware With Zero Scrutiny
     finding_type: privacy_vocabulary_redirected_attribution
     rotation_type: A
     discovery_date: '2026-08-16'
@@ -16847,32 +16958,31 @@ publications:
     journalist: Connor Jewiss
     competitor_pair: Samsung/Google vs Meta
     finding_summary: 'Inc.com (Mansueto Ventures) published "Samsung and Google''s New Smart Glasses Have a Secret Weapon
-      That Meta Can''t Easily Copy" by Connor Jewiss (Jul 29, 2026). The article spends 3 paragraphs detailing Meta''s
-      privacy scandals (Kenya contractors, FTC investigation, Senate letter from Markey/Wyden/Merkley) while presenting
-      Samsung''s privacy claim at face value ("At Samsung, privacy is not an afterthought" — Samsung exec James Choi)
-      with ZERO privacy scrutiny of Samsung/Google''s identical camera+AI architecture (same Snapdragon AR1 Gen 1 chip,
-      same camera capability, same AI processing, same data collection requirements).
+      That Meta Can''t Easily Copy" by Connor Jewiss (Jul 29, 2026). The article spends 3 paragraphs detailing Meta''s privacy
+      scandals (Kenya contractors, FTC investigation, Senate letter from Markey/Wyden/Merkley) while presenting Samsung''s
+      privacy claim at face value ("At Samsung, privacy is not an afterthought" — Samsung exec James Choi) with ZERO privacy
+      scrutiny of Samsung/Google''s identical camera+AI architecture (same Snapdragon AR1 Gen 1 chip, same camera capability,
+      same AI processing, same data collection requirements).
 
-      Privacy vocabulary count: Meta-directed 7+ alarm terms ("intimate footage," "contractors in Kenya," "facial
-      recognition," "stalking and harassment," "surveillance," "nonconsensual recording," "backlash"). Samsung/Google-
-      directed: 0 alarm terms. Ratio: infinity to 1.
+      Privacy vocabulary count: Meta-directed 7+ alarm terms ("intimate footage," "contractors in Kenya," "facial recognition,"
+      "stalking and harassment," "surveillance," "nonconsensual recording," "backlash"). Samsung/Google- directed: 0 alarm
+      terms. Ratio: infinity to 1.
 
-      CROSS-ENTITY CONTRAST AT INC.COM: Meta articles use "scandal" language (Soren Kaplan: "The Real Problem With
-      Meta''s AI Tracking Scandal," Jul 14; "The Same Legal Theory Used Against Meta," Jul 28). Google articles use
-      aspirational framing (Jason Aten: "Google Just Shipped Apple''s AI Promises," May 21; Kit Eaton: "Google May
-      Have Just Found a Way to Beat Nvidia," Jul 21; Georgia Fearn: Hassabis as responsible AI regulator, Jul 15).
-      Mild Google criticism exists (Kevin Haynes, Google Earth AI, Aug 2) but NEVER uses "scandal" language.
+      CROSS-ENTITY CONTRAST AT INC.COM: Meta articles use "scandal" language (Soren Kaplan: "The Real Problem With Meta''s
+      AI Tracking Scandal," Jul 14; "The Same Legal Theory Used Against Meta," Jul 28). Google articles use aspirational framing
+      (Jason Aten: "Google Just Shipped Apple''s AI Promises," May 21; Kit Eaton: "Google May Have Just Found a Way to Beat
+      Nvidia," Jul 21; Georgia Fearn: Hassabis as responsible AI regulator, Jul 15). Mild Google criticism exists (Kevin Haynes,
+      Google Earth AI, Aug 2) but NEVER uses "scandal" language.
 
-      FINANCIAL CONTEXT: Mansueto Ventures $23.1M revenue (ZoomInfo), 55% from advertising (Digiday 2025), Google
-      Analytics 4 in tech stack (LeadIQ), standard Google programmatic/search traffic dependency, Joe Mansueto
-      founded Morningstar (tracks Alphabet stock). ZERO Meta content licensing deals, ZERO Meta advertising
-      partnerships specific to Mansueto. Google financial dependency correlates with softer Google coverage and
-      redirected Meta privacy vocabulary.
+      FINANCIAL CONTEXT: Mansueto Ventures $23.1M revenue (ZoomInfo), 55% from advertising (Digiday 2025), Google Analytics
+      4 in tech stack (LeadIQ), standard Google programmatic/search traffic dependency, Joe Mansueto founded Morningstar (tracks
+      Alphabet stock). ZERO Meta content licensing deals, ZERO Meta advertising partnerships specific to Mansueto. Google
+      financial dependency correlates with softer Google coverage and redirected Meta privacy vocabulary.
 
-      This extends the smart glasses privacy vocabulary inversion pattern documented at WIRED (mechanism #33),
-      Future plc (mechanisms #115, #116), Yahoo/Apollo (#122), Valnet (#132), and Snap launch coverage (#130)
-      to a SIXTH publisher owner — Mansueto Ventures — demonstrating that the privacy vocabulary asymmetry is
-      an industry-wide structural phenomenon, not a single-publisher editorial choice.'
+      This extends the smart glasses privacy vocabulary inversion pattern documented at WIRED (mechanism #33), Future plc
+      (mechanisms #115, #116), Yahoo/Apollo (#122), Valnet (#132), and Snap launch coverage (#130) to a SIXTH publisher owner
+      — Mansueto Ventures — demonstrating that the privacy vocabulary asymmetry is an industry-wide structural phenomenon,
+      not a single-publisher editorial choice.'
     privacy_vocabulary:
       meta_directed_alarm_terms_count: 7
       meta_directed_alarm_terms:
@@ -16887,7 +16997,7 @@ publications:
       samsung_claim_at_face_value: true
       samsung_exec_quote: At Samsung, privacy is not an afterthought
       samsung_exec_name: James Choi
-      ratio: 'infinity:1'
+      ratio: infinity:1
     hardware_parity:
       same_chip: true
       chip: Snapdragon AR1 Gen 1
@@ -16948,8 +17058,8 @@ publications:
       detail: Meta owns social graphs; Samsung/Google own search/ecosystem data differently. But the camera hardware and AI
         processing create identical privacy surfaces regardless of data ownership structure.
     testable_predictions:
-    - prediction: When Samsung/Google glasses ship (Fall 2026), Inc.com will NOT apply the same scandal framing to any
-        Google data collection revelations comparable to Meta's Kenya contractor story
+    - prediction: When Samsung/Google glasses ship (Fall 2026), Inc.com will NOT apply the same scandal framing to any Google
+        data collection revelations comparable to Meta's Kenya contractor story
       timeframe: Fall 2026
       falsifiable: true
     - prediction: Inc.com coverage of Google's Personal Intelligence feature (accessing Gmail, Calendar, etc.) will receive
@@ -16962,17 +17072,17 @@ publications:
       falsifiable: true
     related_mechanisms:
     - mechanism_id: 30
-      relationship: Genre-determined framing — competitive analysis format structurally favors challenger, but privacy
-        vocabulary asymmetry exceeds genre explanation
+      relationship: Genre-determined framing — competitive analysis format structurally favors challenger, but privacy vocabulary
+        asymmetry exceeds genre explanation
     - mechanism_id: 33
-      relationship: Facial recognition parity — WIRED applied alarm language to Meta's dormant NameTag while ignoring
-        identical capabilities at competitors, same pattern as Inc.com
+      relationship: Facial recognition parity — WIRED applied alarm language to Meta's dormant NameTag while ignoring identical
+        capabilities at competitors, same pattern as Inc.com
     - mechanism_id: 130
-      relationship: Snap competitive privacy positioning amplification — CEO competitive narrative strategy amplified
-        uncritically, same mechanism at Inc.com with Samsung exec
+      relationship: Snap competitive privacy positioning amplification — CEO competitive narrative strategy amplified uncritically,
+        same mechanism at Inc.com with Samsung exec
     - mechanism_id: 132
-      relationship: Andy Boxall cross-entity privacy vocabulary inversion — same journalist applying inverse privacy
-        vocabulary to different entities, Inc.com shows same pattern across multiple journalists
+      relationship: Andy Boxall cross-entity privacy vocabulary inversion — same journalist applying inverse privacy vocabulary
+        to different entities, Inc.com shows same pattern across multiple journalists
     - mechanism_id: 134
       relationship: WIRED remediation silence — publication-level coverage selection suppresses Meta positive developments,
         Inc.com amplifies Meta negative while suppressing Samsung/Google scrutiny
@@ -16986,8 +17096,8 @@ publications:
     - http://www.inc.com/kevin-haynes/google-earths-new-ai-feature-could-create-false-images-of-real-places-it-lasted-1-day/91383508
   spacex_ipo_passive_index_fund_xai_convergence:
     mechanism_id: 140
-    mechanism_name: SpaceX IPO Passive Index Fund Convergence — Institutional Ownership Creates Financial
-      Interest Alignment Between xAI and Media Companies Post-June 12, 2026
+    mechanism_name: SpaceX IPO Passive Index Fund Convergence — Institutional Ownership Creates Financial Interest Alignment
+      Between xAI and Media Companies Post-June 12, 2026
     finding_type: passive_institutional_convergence_natural_experiment
     rotation_type: C
     discovery_date: '2026-08-16'
@@ -16996,42 +17106,39 @@ publications:
     domain: financial_incentive_mapping
     entity: xAI / SpaceX (SPCX)
     related_entity: X / Twitter
-    finding_summary: 'SpaceX IPO (June 12, 2026, $1.75T valuation, $75B raised, SPCX) transformed
-      the financial relationship between xAI/X and media companies. Before the IPO, xAI/X had a PURELY
-      ANTAGONISTIC financial relationship with publishers (mechanism #68 — zero content deals, active
-      traffic destruction, hostile press relations). After June 12, the SAME institutional investors
-      that own major media companies were FORCED to buy SpaceX shares via index mandates.
+    finding_summary: 'SpaceX IPO (June 12, 2026, $1.75T valuation, $75B raised, SPCX) transformed the financial relationship
+      between xAI/X and media companies. Before the IPO, xAI/X had a PURELY ANTAGONISTIC financial relationship with publishers
+      (mechanism #68 — zero content deals, active traffic destruction, hostile press relations). After June 12, the SAME institutional
+      investors that own major media companies were FORCED to buy SpaceX shares via index mandates.
 
-      SpaceX was fast-tracked into Nasdaq-100 (15 trading days), Russell 1000 (5 trading days), MSCI
-      Global (10 trading days), and Vanguard Total Market (5 trading days). NOT added to S&P 500
-      (12-month seasoning + profitability requirement; SpaceX $4.94B net loss 2025).
+      SpaceX was fast-tracked into Nasdaq-100 (15 trading days), Russell 1000 (5 trading days), MSCI Global (10 trading days),
+      and Vanguard Total Market (5 trading days). NOT added to S&P 500 (12-month seasoning + profitability requirement; SpaceX
+      $4.94B net loss 2025).
 
-      The Big Three convergence vector:
-      - Vanguard: NYT ~9.7%, News Corp ~11%, NOW ALSO holds SpaceX via VTI/QQQ
-      - BlackRock: NYT ~9.76%, News Corp ~6.93%, NOW ALSO holds SpaceX via iShares/MSCI
-      - State Street: NYT ~3.12%, News Corp ~9.34%, NOW ALSO holds SpaceX via MSCI/Russell
+      The Big Three convergence vector: - Vanguard: NYT ~9.7%, News Corp ~11%, NOW ALSO holds SpaceX via VTI/QQQ - BlackRock:
+      NYT ~9.76%, News Corp ~6.93%, NOW ALSO holds SpaceX via iShares/MSCI - State Street: NYT ~3.12%, News Corp ~9.34%, NOW
+      ALSO holds SpaceX via MSCI/Russell
 
       Total Big Three overlap: NYT ~22.6%, News Corp ~27.3%.
 
-      xAI is a wholly owned subsidiary of SpaceX (triangular merger, Feb 2, 2026, xAI valued at $250B,
-      SpaceX at $1T). This means EVERY index fund that holds SpaceX implicitly holds xAI.
+      xAI is a wholly owned subsidiary of SpaceX (triangular merger, Feb 2, 2026, xAI valued at $250B, SpaceX at $1T). This
+      means EVERY index fund that holds SpaceX implicitly holds xAI.
 
-      CRITICAL LIMITATION: This mechanism operates at the INSTITUTIONAL level, not the editorial level.
-      No editor receives pressure from index fund holdings. The prediction is that passive convergence
-      has NO measurable effect on editorial coverage tone — the null hypothesis. However, the mechanism
-      establishes a structural economic reality that DID NOT EXIST before June 12, 2026, creating a
-      natural experiment.
+      CRITICAL LIMITATION: This mechanism operates at the INSTITUTIONAL level, not the editorial level. No editor receives
+      pressure from index fund holdings. The prediction is that passive convergence has NO measurable effect on editorial
+      coverage tone — the null hypothesis. However, the mechanism establishes a structural economic reality that DID NOT EXIST
+      before June 12, 2026, creating a natural experiment.
 
-      BEFORE June 12: Publisher shareholders had zero xAI exposure. xAI coverage was purely antagonistic.
-      AFTER June 12: Publisher shareholders hold xAI through SpaceX. Coverage remains antagonistic
-      (prediction), but the structural incentive shifted from purely destructive to ambiguous.
+      BEFORE June 12: Publisher shareholders had zero xAI exposure. xAI coverage was purely antagonistic. AFTER June 12: Publisher
+      shareholders hold xAI through SpaceX. Coverage remains antagonistic (prediction), but the structural incentive shifted
+      from purely destructive to ambiguous.
 
-      CONTROL GROUP: Private media companies (Conde Nast/Advance Publications, Emerson Collective/Atlantic)
-      have NO public shareholders. If passive convergence had any effect, it would appear ONLY in public
-      company publishers (NYT, News Corp) and NOT in private ones (WIRED, The Atlantic).
+      CONTROL GROUP: Private media companies (Conde Nast/Advance Publications, Emerson Collective/Atlantic) have NO public
+      shareholders. If passive convergence had any effect, it would appear ONLY in public company publishers (NYT, News Corp)
+      and NOT in private ones (WIRED, The Atlantic).
 
-      S&P 500 inclusion (earliest June 2027) would create a SECOND convergence event as $5.79T+ in
-      S&P tracking funds must buy. This provides a future replication opportunity.'
+      S&P 500 inclusion (earliest June 2027) would create a SECOND convergence event as $5.79T+ in S&P tracking funds must
+      buy. This provides a future replication opportunity.'
     spacex_ipo:
       date: '2026-06-12'
       ticker: SPCX
@@ -17075,54 +17182,49 @@ publications:
         big_three_total_pct: 27.3
         source: Simply Wall St, MarketBeat, Insider Monkey (Aug 2026)
       control_private_publishers:
-        - Conde Nast / Advance Publications (private)
-        - Emerson Collective / The Atlantic (private)
-        - Keleops AG / Gizmodo (private)
+      - Conde Nast / Advance Publications (private)
+      - Emerson Collective / The Atlantic (private)
+      - Keleops AG / Gizmodo (private)
     confounders:
     - strength: STRONG
-      description: Editorial independence from institutional shareholders is well-documented.
-        NYT and WaPo both maintain editorial independence clauses. No editor adjusts
-        coverage because Vanguard holds both stocks.
+      description: Editorial independence from institutional shareholders is well-documented. NYT and WaPo both maintain editorial
+        independence clauses. No editor adjusts coverage because Vanguard holds both stocks.
     - strength: STRONG
-      description: xAI/X Legacy Media Lies stance creates an antagonism-reinforcement
-        loop that no passive convergence can break. Musk personally attacks journalists.
+      description: xAI/X Legacy Media Lies stance creates an antagonism-reinforcement loop that no passive convergence can
+        break. Musk personally attacks journalists.
     - strength: MODERATE
-      description: SpaceX free float was only ~7% at IPO. Actual institutional purchases
-        may be small relative to total portfolio and create minimal financial exposure.
+      description: SpaceX free float was only ~7% at IPO. Actual institutional purchases may be small relative to total portfolio
+        and create minimal financial exposure.
     - strength: MODERATE
-      description: Index rebalancing is mechanical. Fund managers buying SpaceX have no
-        active opinion on xAI coverage or publisher editorial decisions.
+      description: Index rebalancing is mechanical. Fund managers buying SpaceX have no active opinion on xAI coverage or
+        publisher editorial decisions.
     - strength: WEAK
-      description: Musk public persona generates more editorial decisions than financial
-        modeling. Coverage is personality-driven, not balance-sheet driven.
+      description: Musk public persona generates more editorial decisions than financial modeling. Coverage is personality-driven,
+        not balance-sheet driven.
     predictions:
     - falsifiable: true
-      prediction: xAI/X coverage tone in publications owned by PUBLIC media companies
-        (NYT, News Corp/WSJ) will show NO measurable softening 6 months post-IPO.
-        The antagonism reinforcement loop overwhelms passive convergence. Testable
-        by comparing xAI alarm vocabulary pre/post June 12.
+      prediction: xAI/X coverage tone in publications owned by PUBLIC media companies (NYT, News Corp/WSJ) will show NO measurable
+        softening 6 months post-IPO. The antagonism reinforcement loop overwhelms passive convergence. Testable by comparing
+        xAI alarm vocabulary pre/post June 12.
     - falsifiable: true
-      prediction: Financial media (MarketWatch, Barrons, CNBC) WILL increase investment
-        opportunity framing of xAI capabilities because their readers are more likely
-        to be SpaceX shareholders through index funds.
+      prediction: Financial media (MarketWatch, Barrons, CNBC) WILL increase investment opportunity framing of xAI capabilities
+        because their readers are more likely to be SpaceX shareholders through index funds.
     - falsifiable: true
-      prediction: Publications owned by PRIVATE companies (Conde Nast/Advance, Emerson
-        Collective/Atlantic) will show NO convergence effect. They have no public
-        shareholders to create institutional overlap.
+      prediction: Publications owned by PRIVATE companies (Conde Nast/Advance, Emerson Collective/Atlantic) will show NO convergence
+        effect. They have no public shareholders to create institutional overlap.
     - falsifiable: true
-      prediction: SpaceX S&P 500 inclusion (earliest June 2027) will create a second
-        convergence event. Monitor for any tone shift in that window when $5.79T+
-        in S&P tracking funds must buy.
+      prediction: SpaceX S&P 500 inclusion (earliest June 2027) will create a second convergence event. Monitor for any tone
+        shift in that window when $5.79T+ in S&P tracking funds must buy.
     cross_references:
     - mechanism_id: 68
-      relationship: extends — adds temporal dimension and passive convergence layer to
-        xAI-X publisher financial destruction chain
+      relationship: extends — adds temporal dimension and passive convergence layer to xAI-X publisher financial destruction
+        chain
     - mechanism_id: 47
-      relationship: parallels — Meta ad revenue structural antagonism also has institutional
-        overlap (Meta is public), but Meta never destroyed publisher traffic the way X did
+      relationship: parallels — Meta ad revenue structural antagonism also has institutional overlap (Meta is public), but
+        Meta never destroyed publisher traffic the way X did
     - mechanism_id: 36
-      relationship: complements — Goldman Sachs and Morgan Stanley led SpaceX IPO,
-        same banks advise media M&A, fee-relationship overlap independent of index convergence
+      relationship: complements — Goldman Sachs and Morgan Stanley led SpaceX IPO, same banks advise media M&A, fee-relationship
+        overlap independent of index convergence
     source_urls:
     - https://www.reuters.com/business/media-telecom/msci-confirms-early-index-inclusion-rules-ahead-spacex-ipo-2026-06-08/
     - https://www.reuters.com/legal/transactional/spacex-acquires-xai-key-facts-about-musk-owned-startups-2026-02-03/
@@ -17136,9 +17238,8 @@ publications:
     - https://marketbeat.com/stocks/NASDAQ/NWSA/institutional-ownership/
   digital_trends_editorial_level_privacy_vocabulary_asymmetry:
     mechanism_id: 138
-    mechanism_name: Digital Trends (Designtechnica Corp) Editorial-Level Smart Glasses
-      Privacy Vocabulary Asymmetry — Managing Editor Sets Adversarial Meta Tone While
-      Staff Produces Positive Samsung/Google Coverage
+    mechanism_name: Digital Trends (Designtechnica Corp) Editorial-Level Smart Glasses Privacy Vocabulary Asymmetry — Managing
+      Editor Sets Adversarial Meta Tone While Staff Produces Positive Samsung/Google Coverage
     finding_type: editorial_gatekeeping_privacy_vocabulary_asymmetry
     rotation_type: B
     discovery_date: '2026-08-16'
@@ -17147,54 +17248,40 @@ publications:
     domain: journalist_cross_entity_tracking
     entity: Digital Trends (Designtechnica Corp)
     related_entity: Valnet Inc (advertising partner)
-    finding_summary: 'Digital Trends (Designtechnica Corp, Portland, OR) exhibits a
-      publication-wide privacy vocabulary asymmetry in smart glasses coverage. Managing
-      Editor Nadeem Sarwar personally writes Meta coverage with adversarial framing —
-      opening a story about Meta PROACTIVELY fixing an LED privacy issue with "they have
-      built a reputation as a creep''s weapon" and "the outrage is justified." The same
-      Managing Editor''s editorial standard extends across the entire staff: every Meta
-      smart glasses article uses adversarial privacy vocabulary ("creepy," "covert
-      recording," "social laundering," "secretly," "slap in the face of its customers''
-      privacy") while Samsung/Google coverage — for hardware with the SAME Snapdragon
-      AR1 Gen 1 chip, same 12MP camera, same AI processing — receives ZERO privacy
-      alarm terms.
+    finding_summary: 'Digital Trends (Designtechnica Corp, Portland, OR) exhibits a publication-wide privacy vocabulary asymmetry
+      in smart glasses coverage. Managing Editor Nadeem Sarwar personally writes Meta coverage with adversarial framing —
+      opening a story about Meta PROACTIVELY fixing an LED privacy issue with "they have built a reputation as a creep''s
+      weapon" and "the outrage is justified." The same Managing Editor''s editorial standard extends across the entire staff:
+      every Meta smart glasses article uses adversarial privacy vocabulary ("creepy," "covert recording," "social laundering,"
+      "secretly," "slap in the face of its customers'' privacy") while Samsung/Google coverage — for hardware with the SAME
+      Snapdragon AR1 Gen 1 chip, same 12MP camera, same AI processing — receives ZERO privacy alarm terms.
 
       Key evidence articles:
 
-      META (adversarial across multiple writers):
-      - Nadeem Sarwar (Managing Editor): "Meta will disable the camera on AI smart
-        glasses if you tamper or cover the indicator light" — opens with "creep''s weapon"
-        for a POSITIVE Meta privacy action
-      - Publication-wide: "Smart glasses were already creepy, now they''re helping
-        people cheat" — specifically names Meta Ray-Ban as privacy exemplar of the problem
-      - Rachit Shukla: "Meta is building face recognition into your glasses" — "I don''t
-        really have high hopes about privacy and security from a company like Meta" (editorial
-        voice openly anti-Meta)
-      - Andy Boxall: "slap in the face of its customers'' privacy," "vile behavior"
-        (face recognition article)
-      - Unnamed: Apple N50 positioned as solving privacy problems "Meta Ray-Bans" created,
-        despite Apple having NO shipping product to evaluate
+      META (adversarial across multiple writers): - Nadeem Sarwar (Managing Editor): "Meta will disable the camera on AI smart
+      glasses if you tamper or cover the indicator light" — opens with "creep''s weapon" for a POSITIVE Meta privacy action
+      - Publication-wide: "Smart glasses were already creepy, now they''re helping people cheat" — specifically names Meta
+      Ray-Ban as privacy exemplar of the problem - Rachit Shukla: "Meta is building face recognition into your glasses" —
+      "I don''t really have high hopes about privacy and security from a company like Meta" (editorial voice openly anti-Meta)
+      - Andy Boxall: "slap in the face of its customers'' privacy," "vile behavior" (face recognition article) - Unnamed:
+      Apple N50 positioned as solving privacy problems "Meta Ray-Bans" created, despite Apple having NO shipping product to
+      evaluate
 
-      SAMSUNG/GOOGLE (neutral/positive across multiple writers):
-      - Shikhar Mehrotra (with Nadeem Sarwar photo credit): Samsung Galaxy Glasses leak —
-        same Snapdragon AR1 chip, same 12MP camera architecture — ZERO privacy alarm terms,
-        Samsung positioned as having "an edge" over Meta via Google Gemini
-      - Nirave Gondhia: Galaxy XR hands-on — "convinced me where the Apple Vision Pro
-        didn''t," enthusiastic tone, ZERO privacy scrutiny for identical camera hardware
-      - Nirave Gondhia: Samsung AR glasses coming 2026 — aspirational, "immersive
-        multimodal AI experiences," ZERO privacy vocabulary
+      SAMSUNG/GOOGLE (neutral/positive across multiple writers): - Shikhar Mehrotra (with Nadeem Sarwar photo credit): Samsung
+      Galaxy Glasses leak — same Snapdragon AR1 chip, same 12MP camera architecture — ZERO privacy alarm terms, Samsung positioned
+      as having "an edge" over Meta via Google Gemini - Nirave Gondhia: Galaxy XR hands-on — "convinced me where the Apple
+      Vision Pro didn''t," enthusiastic tone, ZERO privacy scrutiny for identical camera hardware - Nirave Gondhia: Samsung
+      AR glasses coming 2026 — aspirational, "immersive multimodal AI experiences," ZERO privacy vocabulary
 
-      The asymmetry is EDITORIAL-LEVEL, not individual journalist bias. The Managing
-      Editor personally sets the adversarial Meta baseline, and every other writer follows
-      the same pattern regardless of their beat (wearables, emerging tech, mobile). Samsung
-      and Google receive exclusively product-focused coverage despite shipping/announcing
-      hardware with identical privacy-relevant capabilities.'
+      The asymmetry is EDITORIAL-LEVEL, not individual journalist bias. The Managing Editor personally sets the adversarial
+      Meta baseline, and every other writer follows the same pattern regardless of their beat (wearables, emerging tech, mobile).
+      Samsung and Google receive exclusively product-focused coverage despite shipping/announcing hardware with identical
+      privacy-relevant capabilities.'
     meta_articles:
-    - title: Meta will disable the camera on AI smart glasses if you tamper or cover the
-        indicator light
+    - title: Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light
       author: Nadeem Sarwar
       role: Managing Editor
-      date: '2026-07'
+      date: 2026-07
       url: https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
       privacy_alarm_terms:
       - creep's weapon
@@ -17202,22 +17289,19 @@ publications:
       - hot water
       - privacy invading
       - rogue individuals
-      note: Meta v26 LED anti-tamper fix — a POSITIVE privacy development — opened with
-        adversarial framing
+      note: Meta v26 LED anti-tamper fix — a POSITIVE privacy development — opened with adversarial framing
     - title: Smart glasses were already creepy, now they're helping people cheat
-      date: '2026-07'
+      date: 2026-07
       url: https://www.digitaltrends.com/cool-tech/smart-glasses-were-already-creepy-now-theyre-helping-people-cheat/
       privacy_alarm_terms:
       - creepy
       - covert recording
       - privacy concerns
       - sparked concerns
-      note: Generic smart glasses article that specifically names Meta Ray-Ban as the
-        privacy offender
-    - title: Meta is building face recognition into your glasses, and civil rights groups
-        are not happy about it
+      note: Generic smart glasses article that specifically names Meta Ray-Ban as the privacy offender
+    - title: Meta is building face recognition into your glasses, and civil rights groups are not happy about it
       author: Rachit Shukla
-      date: '2026-06'
+      date: 2026-06
       url: https://www.digitaltrends.com/wearables/meta-is-building-face-recognition-into-your-glasses-and-civil-rights-groups-are-not-happy-about-it/
       privacy_alarm_terms:
       - slap in the face
@@ -17225,22 +17309,19 @@ publications:
       - surveillance
       - I don't really have high hopes about privacy and security from a company like Meta
       note: Reporter's editorial voice openly anti-Meta in article body
-    - title: Apple smart glasses might avoid the creepy reputation of Meta Ray-Bans with
-        a light trick
+    - title: Apple smart glasses might avoid the creepy reputation of Meta Ray-Bans with a light trick
       date: '2026'
       url: https://www.digitaltrends.com/wearables/apple-smart-glasses-might-avoid-the-creepy-reputation-of-meta-ray-bans-with-a-light-trick/
       privacy_alarm_terms:
       - creepy reputation
-      note: Apple NOT-YET-EXISTING product framed as solving Meta's existing privacy
-        problem
+      note: Apple NOT-YET-EXISTING product framed as solving Meta's existing privacy problem
     - title: Smart glasses are back, and this time they're pretending to be normal
       date: '2026'
       url: https://www.digitaltrends.com/wearables/smart-glasses-are-back-and-this-time-theyre-pretending-to-be-normal/
       privacy_alarm_terms:
       - social laundering
       - pretending to be normal
-      note: Category-level opinion piece but Meta sales framed as normalization of
-        surveillance
+      note: Category-level opinion piece but Meta sales framed as normalization of surveillance
     samsung_google_articles:
     - title: Samsung's upcoming Galaxy Glasses have leaked, and the looks don't impress
       author: Shikhar Mehrotra
@@ -17248,84 +17329,70 @@ publications:
       url: https://www.digitaltrends.com/cool-tech/samsungs-upcoming-galaxy-glasses-have-leaked-and-the-looks-dont-impress/
       privacy_alarm_terms: []
       tone_score: 0.1
-      note: Same Snapdragon AR1 chip, same 12MP camera architecture as Meta — ZERO
-        privacy terms. Samsung positioned as having "an edge" over Meta.
+      note: Same Snapdragon AR1 chip, same 12MP camera architecture as Meta — ZERO privacy terms. Samsung positioned as having
+        "an edge" over Meta.
     - title: The Galaxy XR convinced me where the Apple Vision Pro didn't
       author: Nirave Gondhia
-      date: '2026-07'
+      date: 2026-07
       url: https://www.digitaltrends.com/wearables/samsung-galaxy-xr-hands-on-preview/
       privacy_alarm_terms: []
       tone_score: 0.7
-      note: Enthusiastic hands-on, "convinced me," "I want to buy" — ZERO privacy
-        scrutiny for identical camera hardware
-    - title: Samsung's first AR glasses are coming in 2026 with immersive multimodal
-        AI experiences
+      note: Enthusiastic hands-on, "convinced me," "I want to buy" — ZERO privacy scrutiny for identical camera hardware
+    - title: Samsung's first AR glasses are coming in 2026 with immersive multimodal AI experiences
       author: Nirave Gondhia
-      date: '2026-01'
+      date: 2026-01
       url: https://www.digitaltrends.com/wearables/samsungs-first-ar-glasses-are-coming-in-2026-with-immersive-multimodal-ai-experiences/
       privacy_alarm_terms: []
       tone_score: 0.6
-      note: Aspirational framing, "immersive multimodal AI experiences," ZERO privacy
-        vocabulary
+      note: Aspirational framing, "immersive multimodal AI experiences," ZERO privacy vocabulary
     financial_context:
       owner: Designtechnica Corporation
       headquarters: Portland, OR
       founded: 2006
       founders: Ian Bell, Dan Gaul
       investor: Startive Ventures (Series A)
-      valnet_partnership: Strategic advertising partnership with Valnet Inc combining
-        200M+ readers for advertising scale. Valnet owns Android Police, MakeUseOf,
-        Screen Rant.
-      google_dependency: Google Analytics 4 in tech stack, Google programmatic ads as
-        standard revenue source
-      samsung_advertising: Samsung is 4th largest global advertiser ($9.7B globally),
-        major digital advertising client for consumer electronics coverage sites
+      valnet_partnership: Strategic advertising partnership with Valnet Inc combining 200M+ readers for advertising scale.
+        Valnet owns Android Police, MakeUseOf, Screen Rant.
+      google_dependency: Google Analytics 4 in tech stack, Google programmatic ads as standard revenue source
+      samsung_advertising: Samsung is 4th largest global advertiser ($9.7B globally), major digital advertising client for
+        consumer electronics coverage sites
       meta_financial_ties: none
       meta_ad_competitor: true
-      note: As an independent ad-dependent publisher, Digital Trends competes with Meta
-        for digital advertising revenue. Google and Samsung are clients (advertisers),
-        Meta is a competitor (ad platform).
+      note: As an independent ad-dependent publisher, Digital Trends competes with Meta for digital advertising revenue. Google
+        and Samsung are clients (advertisers), Meta is a competitor (ad platform).
     confounders:
     - strength: STRONG
-      description: Meta's genuine privacy track record (Cambridge Analytica, FTC $5B
-        settlement, multiple data breaches) provides legitimate editorial basis for
-        heightened scrutiny. Adversarial framing may reflect earned reputation, not
-        manufactured bias.
+      description: Meta's genuine privacy track record (Cambridge Analytica, FTC $5B settlement, multiple data breaches) provides
+        legitimate editorial basis for heightened scrutiny. Adversarial framing may reflect earned reputation, not manufactured
+        bias.
     - strength: STRONG
-      description: Samsung smart glasses are pre-launch (not shipping at scale), while
-        Meta Ray-Ban has 7M+ units in market. Privacy scrutiny correlates with market
-        presence — products with no users generate no privacy incidents to cover.
+      description: Samsung smart glasses are pre-launch (not shipping at scale), while Meta Ray-Ban has 7M+ units in market.
+        Privacy scrutiny correlates with market presence — products with no users generate no privacy incidents to cover.
     - strength: MODERATE
-      description: Managing Editor's role includes headline/lede optimization for
-        engagement. Adversarial Meta headlines generate more clicks than Samsung leak
-        articles — the vocabulary difference may be commercial (engagement-driven)
-        rather than ideological.
+      description: Managing Editor's role includes headline/lede optimization for engagement. Adversarial Meta headlines generate
+        more clicks than Samsung leak articles — the vocabulary difference may be commercial (engagement-driven) rather than
+        ideological.
     - strength: MODERATE
-      description: 'Andy Boxall was already documented in mechanism #132 (Android Police/
-        Valnet). His Digital Trends cross-posting may represent Valnet editorial policy,
-        not independent Digital Trends editorial decision-making.'
+      description: 'Andy Boxall was already documented in mechanism #132 (Android Police/ Valnet). His Digital Trends cross-posting
+        may represent Valnet editorial policy, not independent Digital Trends editorial decision-making.'
     - strength: WEAK
-      description: Samsung's glasses have not been publicly released to consumers yet,
-        so there are fewer real-world privacy incidents to cover. The asymmetry may
-        narrow once Samsung ships and privacy incidents emerge.
+      description: Samsung's glasses have not been publicly released to consumers yet, so there are fewer real-world privacy
+        incidents to cover. The asymmetry may narrow once Samsung ships and privacy incidents emerge.
     falsifiable_predictions:
-    - prediction: When Samsung Galaxy Glasses ship in 2026, Digital Trends coverage will
-        use fewer than 50% of the privacy alarm terms per article compared to Meta
-        Ray-Ban coverage, despite identical camera hardware and similar market scale.
+    - prediction: When Samsung Galaxy Glasses ship in 2026, Digital Trends coverage will use fewer than 50% of the privacy
+        alarm terms per article compared to Meta Ray-Ban coverage, despite identical camera hardware and similar market scale.
       falsifiable: true
-      testable_date: '2026-12'
-    - prediction: Nadeem Sarwar (Managing Editor) will NOT personally author a Samsung
-        smart glasses article with adversarial privacy vocabulary. Samsung coverage
-        will remain in the hands of Nirave Gondhia and Shikhar Mehrotra, who maintain
+      testable_date: 2026-12
+    - prediction: Nadeem Sarwar (Managing Editor) will NOT personally author a Samsung smart glasses article with adversarial
+        privacy vocabulary. Samsung coverage will remain in the hands of Nirave Gondhia and Shikhar Mehrotra, who maintain
         positive/neutral tone.
       falsifiable: true
-      testable_date: '2027-03'
-    - prediction: If Google launches Gemini-powered glasses independently (not through
-        Samsung), Digital Trends will apply fewer privacy alarm terms to Google than to
-        Meta for identical AI processing capabilities, consistent with the Google-as-
+      testable_date: 2027-03
+    - prediction: If Google launches Gemini-powered glasses independently (not through Samsung), Digital Trends will apply
+        fewer privacy alarm terms to Google than to Meta for identical AI processing capabilities, consistent with the Google-as-
         aspirational vs Meta-as-surveillance editorial frame.
       falsifiable: true
-      testable_date: '2027-06'
+      testable_date: 2027-06
     cross_references:
     - 134
     - 8
@@ -17351,57 +17418,56 @@ publications:
     staff: ~50
     meta_financial_ties: ZERO
     google_financial_ties: 'Google #TeamPixel credential (Johanna Romero), standard Google search traffic dependency'
-    samsung_financial_ties: 'Samsung advertising client ($9.7B global ad spend)'
-    finding_summary: >
-      Google-credentialed reporter (Johanna Romero, #TeamPixel since 2022) covers
-      Samsung/Google glasses reveal with ZERO privacy vocabulary and aspirational framing.
-      Separate reporter (Ilia) covers Meta glasses with 7+ adversarial privacy alarm
-      terms AND explicitly dismisses identical concerns for Samsung/Google in the SAME
-      article: "Even Google fares much better" (no evidence cited), "Adding a new set of
-      data doesn't feel that concerning." First mechanism documenting beat-assignment
-      credentialing producing cross-entity framing asymmetry at an independent publication.
+    samsung_financial_ties: Samsung advertising client ($9.7B global ad spend)
+    finding_summary: 'Google-credentialed reporter (Johanna Romero, #TeamPixel since 2022) covers Samsung/Google glasses reveal
+      with ZERO privacy vocabulary and aspirational framing. Separate reporter (Ilia) covers Meta glasses with 7+ adversarial
+      privacy alarm terms AND explicitly dismisses identical concerns for Samsung/Google in the SAME article: "Even Google
+      fares much better" (no evidence cited), "Adding a new set of data doesn''t feel that concerning." First mechanism documenting
+      beat-assignment credentialing producing cross-entity framing asymmetry at an independent publication.
+
+      '
     key_journalists:
     - name: Johanna Romero
       role: Senior News Writer
-      credential: Official Google #TeamPixel member since 2022
+      credential: Official Google
       samsung_google_privacy_alarm_terms: 0
-      meta_privacy_alarm_terms: '0 (does not cover Meta adversarially)'
+      meta_privacy_alarm_terms: 0 (does not cover Meta adversarially)
       tone_in_glasses_coverage: aspirational
     - name: Ilia
       role: Tech Journalist
       background: Bulgarian, based in Lima Peru, experience at Forbes Bulgaria
-      meta_privacy_alarm_terms: '7+'
+      meta_privacy_alarm_terms: 7+
       google_samsung_privacy_alarm_terms_in_same_article: 0
-      explicit_google_dismissal: "Even Google fares much better in that regard"
-      samsung_rationalization: "Adding a new set of data doesn't feel that concerning"
+      explicit_google_dismissal: Even Google fares much better in that regard
+      samsung_rationalization: Adding a new set of data doesn't feel that concerning
     test_file: test_phonearena_cross_entity_beat_credentialing_asymmetry_aug16.py
     test_count: 51
     confounding_factors:
     - strength: STRONG
-      description: "Meta's Kenya/Sama scandal is genuinely worse than any documented Samsung/Google data handling incident. Meta has real privacy failures."
+      description: Meta's Kenya/Sama scandal is genuinely worse than any documented Samsung/Google data handling incident.
+        Meta has real privacy failures.
     - strength: STRONG
-      description: "Samsung/Google glasses had not launched at time of coverage. Pre-launch coverage naturally receives less privacy scrutiny."
+      description: Samsung/Google glasses had not launched at time of coverage. Pre-launch coverage naturally receives less
+        privacy scrutiny.
     - strength: MODERATE
-      description: "Google #TeamPixel credential disclosed in Romero's byline. Not hidden, readers can assess."
+      description: 'Google #TeamPixel credential disclosed in Romero''s byline. Not hidden, readers can assess.'
     - strength: MODERATE
-      description: "Genre difference: reveal/preview articles (Samsung/Google) vs scandal/investigation (Meta) naturally differ in tone."
+      description: 'Genre difference: reveal/preview articles (Samsung/Google) vs scandal/investigation (Meta) naturally differ
+        in tone.'
     - strength: WEAK
-      description: "PhoneArena may assign reporters by expertise/availability rather than strategic beat management."
+      description: PhoneArena may assign reporters by expertise/availability rather than strategic beat management.
     falsifiable_predictions:
-    - prediction: When Samsung/Google glasses launch and have their first privacy
-        incident, Johanna Romero will NOT apply equivalent alarm vocabulary as
-        PhoneArena applies to Meta incidents.
+    - prediction: When Samsung/Google glasses launch and have their first privacy incident, Johanna Romero will NOT apply
+        equivalent alarm vocabulary as PhoneArena applies to Meta incidents.
       falsifiable: true
-      testable_date: '2027-03'
-    - prediction: PhoneArena will NOT assign Ilia to cover Samsung/Google glasses
-        launch reviews — the #TeamPixel-credentialed reporter will maintain beat.
+      testable_date: 2027-03
+    - prediction: PhoneArena will NOT assign Ilia to cover Samsung/Google glasses launch reviews — the
       falsifiable: true
-      testable_date: '2026-12'
-    - prediction: If Samsung/Google glasses footage is reviewed by human contractors
-        (parallel to Meta Sama), PhoneArena will frame it as industry practice rather
-        than bombshell investigation.
+      testable_date: 2026-12
+    - prediction: If Samsung/Google glasses footage is reviewed by human contractors (parallel to Meta Sama), PhoneArena will
+        frame it as industry practice rather than bombshell investigation.
       falsifiable: true
-      testable_date: '2027-06'
+      testable_date: 2027-06
     cross_references:
     - 132
     - 131
@@ -17419,7 +17485,7 @@ publications:
     publication: TechCrunch (Yahoo / Apollo Global Management)
     journalist: Sarah Perez
     journalist_title: Consumer News Editor
-    journalist_tenure: 'TechCrunch since August 2011 (15 years)'
+    journalist_tenure: TechCrunch since August 2011 (15 years)
     journalist_contact: sarahp@techcrunch.com
     ownership_chain: TechCrunch -> Yahoo -> Apollo Global Management ($5B acquisition May 2021)
     date_added: '2026-08-17'
@@ -17434,7 +17500,7 @@ publications:
     articles:
       google:
         url: https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/
-        title: "We tried Google's AI glasses and they're almost there"
+        title: We tried Google's AI glasses and they're almost there
         author: Sarah Perez
         date: '2026-05-22'
         privacy_alarm_terms: 0
@@ -17449,16 +17515,27 @@ publications:
         template: aspirational_product_hands_on
       meta:
         url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
-        title: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+        title: Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.
         author: Sarah Perez
         date: '2026-07-08'
         privacy_alarm_terms: 25
         adversarial_source_links: 30
-        adversarial_source_categories: ['WIRED investigations', 'TikTok backlash', 'Financial Times', 'Texas AG', 'lawsuits', 'whistleblower books', 'Cambridge Analytica', 'Apple partnership refusal', 'BBC', 'child safety', 'privacy policy screenshot']
+        adversarial_source_categories:
+        - WIRED investigations
+        - TikTok backlash
+        - Financial Times
+        - Texas AG
+        - lawsuits
+        - whistleblower books
+        - Cambridge Analytica
+        - Apple partnership refusal
+        - BBC
+        - child safety
+        - privacy policy screenshot
         historical_baggage_years_back: 8
         led_safeguard_positive_framing: false
         apple_weaponized: true
-        tone_score: -0.80
+        tone_score: -0.8
         template: comprehensive_privacy_indictment
     publication_window_days: 47
     same_author: true
@@ -17478,66 +17555,71 @@ publications:
       meta_yahoo_ad_dependency: false
       framing_matches_financial_incentive: true
     asymmetry_score: 0.97
-    finding_summary: >
-      Sarah Perez (TechCrunch Consumer News Editor since Aug 2011) wrote hands-on
-      coverage of BOTH Google's and Meta's camera-equipped AI smart glasses within
-      47 days (May 22 - Jul 8, 2026). Google article: ZERO privacy vocabulary,
-      aspirational tone, photographed a person with the camera-glasses and raised
-      zero consent/privacy concern, noted camera auto-activates with Gemini as a
-      neutral config detail. Meta article: 25+ privacy alarm terms, 30+ adversarial
-      source links, LED safety improvement converted into comprehensive privacy
-      indictment, Cambridge Analytica invoked 8 years later, Apple weaponized.
-      This is the STRONGEST form of cross-entity evidence because it eliminates
-      the "different reporter, different beat" confounder that weakens publication-level
-      mechanisms like #122 (TechCrunch Snap vs Meta used different authors).
+    finding_summary: 'Sarah Perez (TechCrunch Consumer News Editor since Aug 2011) wrote hands-on coverage of BOTH Google''s
+      and Meta''s camera-equipped AI smart glasses within 47 days (May 22 - Jul 8, 2026). Google article: ZERO privacy vocabulary,
+      aspirational tone, photographed a person with the camera-glasses and raised zero consent/privacy concern, noted camera
+      auto-activates with Gemini as a neutral config detail. Meta article: 25+ privacy alarm terms, 30+ adversarial source
+      links, LED safety improvement converted into comprehensive privacy indictment, Cambridge Analytica invoked 8 years later,
+      Apple weaponized. This is the STRONGEST form of cross-entity evidence because it eliminates the "different reporter,
+      different beat" confounder that weakens publication-level mechanisms like #122 (TechCrunch Snap vs Meta used different
+      authors).
+
+      '
     eliminates_confounder_from: '#122 different_individual_reporters'
     confounders:
     - name: meta_more_privacy_controversies
       strength: STRONG
       rebutted: true
-      rebuttal: 'Google also has extensive privacy history (Google Glass backlash, location tracking lawsuits, FTC settlements, Street View wiretapping). Zero mentioned.'
+      rebuttal: Google also has extensive privacy history (Google Glass backlash, location tracking lawsuits, FTC settlements,
+        Street View wiretapping). Zero mentioned.
     - name: meta_class_action_elevated_concerns
       strength: STRONG
       rebutted: true
-      rebuttal: 'Category-wide elevation should appear in ALL camera glasses reviews. Perez tested Google glasses 2.5 months after the Meta lawsuit.'
+      rebuttal: Category-wide elevation should appear in ALL camera glasses reviews. Perez tested Google glasses 2.5 months
+        after the Meta lawsuit.
     - name: google_glasses_were_prototypes
       strength: MODERATE
       rebutted: true
-      rebuttal: 'Camera that photographs people and transmits to servers has same privacy surface area. Perez physically used the camera.'
+      rebuttal: Camera that photographs people and transmits to servers has same privacy surface area. Perez physically used
+        the camera.
     - name: controlled_demo_environment
       strength: MODERATE
       rebutted: true
-      rebuttal: 'Perez photographed a real person. Venue does not explain total absence of privacy language.'
+      rebuttal: Perez photographed a real person. Venue does not explain total absence of privacy language.
     - name: meta_article_pegged_to_news_event
       strength: WEAK
       rebutted: true
-      rebuttal: 'Perez chose to convert positive safety story into indictment. No cross-reference to Google needing similar protections.'
+      rebuttal: Perez chose to convert positive safety story into indictment. No cross-reference to Google needing similar
+        protections.
     falsifiable_predictions:
-    - prediction: If Perez writes a Samsung Galaxy Glasses hands-on, it will contain fewer privacy alarm terms than her Meta article.
+    - prediction: If Perez writes a Samsung Galaxy Glasses hands-on, it will contain fewer privacy alarm terms than her Meta
+        article.
       falsifiable: true
-      testable_date: '2027-06'
-    - prediction: If Google announces a privacy safeguard for Android XR glasses, Perez will NOT convert it into a comprehensive privacy indictment.
+      testable_date: 2027-06
+    - prediction: If Google announces a privacy safeguard for Android XR glasses, Perez will NOT convert it into a comprehensive
+        privacy indictment.
       falsifiable: true
-      testable_date: '2027-06'
-    - prediction: Perez will not independently investigate Google's data retention for photos transmitted to "Gemini and Nano Banana servers."
+      testable_date: 2027-06
+    - prediction: Perez will not independently investigate Google's data retention for photos transmitted to "Gemini and Nano
+        Banana servers."
       falsifiable: true
-      testable_date: '2027-06'
+      testable_date: 2027-06
     cross_references:
     - mechanism_id: 122
       relationship: extends
       note: 'Eliminates #122 different-reporter confounder — same author for both entities'
     - mechanism_id: 109
       relationship: complements
-      note: 'Same pattern at sister Yahoo property (Engadget Google Android XR zero privacy vocabulary)'
+      note: Same pattern at sister Yahoo property (Engadget Google Android XR zero privacy vocabulary)
     - mechanism_id: 113
       relationship: complements
-      note: 'Karissa Bell (Engadget/Yahoo) adversarial testing asymmetry — same parent company'
+      note: Karissa Bell (Engadget/Yahoo) adversarial testing asymmetry — same parent company
     - mechanism_id: 111
       relationship: consistent
-      note: 'Apollo financial architecture predicts direction of differential treatment'
+      note: Apollo financial architecture predicts direction of differential treatment
     - mechanism_id: 128
       relationship: consistent
-      note: 'Apollo AI financing portfolio predicts direction of differential treatment'
+      note: Apollo AI financing portfolio predicts direction of differential treatment
     source_urls:
     - https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/
     - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/

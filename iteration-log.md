@@ -2518,3 +2518,57 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: README.md (424 files, ~14,954 tests)
 
 **Cumulative:** 141 mechanisms, ~14,954 tests, 424 files
+
+---
+
+### Iteration #144 — Type B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-17
+**Mechanism:** #142 — Sarah Perez Same-Journalist Cross-Entity Privacy Vocabulary Inversion
+**Asymmetry score:** 0.97
+
+**Finding:** Sarah Perez (TechCrunch Consumer News Editor since Aug 2011) wrote hands-on coverage of BOTH Google's and Meta's camera-equipped AI smart glasses within 47 days (May 22 – Jul 8, 2026). Google article: ZERO privacy vocabulary, photographed a person without consent concern, camera auto-activates with Gemini noted as neutral config. Meta article: 25+ alarm terms, 30+ adversarial sources, LED safety improvement converted into comprehensive privacy indictment, Cambridge Analytica invoked 8 years later.
+
+**Novel element:** First same-journalist cross-entity mechanism. Eliminates the "different reporter, different beat" confounder from mechanism #122 (TechCrunch Snap vs Meta used different authors). The 47-day window with completely inverted framing — by the same person, at the same publication, for the same product category — is the strongest evidence of entity-specific editorial posture in the corpus.
+
+**Critical detail:** Perez physically used Google's camera glasses to photograph a person ("pressed the photo capture button to take a photo of a person") with zero privacy concern. She also noted Google's glasses auto-activate the camera when Gemini starts — a MORE aggressive privacy posture than Meta — without flagging it as a privacy issue.
+
+**Financial context:** TechCrunch → Yahoo → Apollo Global Management ($5B, 2021). Yahoo Search powered by Google (existential dependency). Apollo: $38.4B+ AI financing benefiting Meta competitors. Meta → Yahoo: zero financial relationship.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Cross-references:** #122 (extends — eliminates different-reporter confounder), #109 (complements — Engadget/Yahoo Google zero-privacy), #113 (complements — Karissa Bell Yahoo asymmetry), #111, #128 (Apollo financial architecture)
+
+**Changes:**
+- New test: `test_sarah_perez_cross_entity_privacy_vocabulary_inversion_aug17.py` (34 tests, 9 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #142 added)
+- Updated: `competitor-entities.yaml` (sarah_perez_cross_entity_mechanism_142 added)
+- Updated: README.md (425 files, ~14,988 tests)
+
+**Cumulative:** 142 mechanisms, ~14,988 tests, 425 files
+
+---
+
+### Iteration #145 — Type C (Financial Incentive Mapping)
+**Date:** 2026-08-17 (22:00 PT)
+**Mechanism:** #143 — Axel Springer / KKR / OpenAI Triple-Layer Financial Architecture
+**Asymmetry score:** 0.94
+
+**Core finding:** Business Insider (owned by Axel Springer, majority-owned by KKR) has a triple-layer financial architecture creating structural incentive for adversarial Meta smart glasses coverage: (1) OpenAI content licensing deal (Dec 2023, "tens of millions EUR/year") — OpenAI is Meta's direct AI model competitor, (2) KKR majority ownership with $34B+ AI infrastructure portfolio serving Google/Amazon/Microsoft (all Meta competitors), including $10B Helix Digital Infrastructure with Nvidia + former AWS CEO, and $50B ECP AI partnership, (3) Google search traffic dependency — Google is Samsung/Google glasses partner.
+
+**Novel element:** First mechanism documenting a TRIPLE-layer financial architecture at a single publication. Apollo/Yahoo (mechanism #111) has a dual relationship (PE ownership + AI infrastructure). Axel Springer adds a THIRD layer with the OpenAI content licensing deal — creating direct revenue dependency on Meta's primary AI competitor. No other documented PE-owned media company has this three-way alignment.
+
+**Coverage evidence:** Business Insider produces adversarial Meta glasses coverage ("creepy," "surreptitious surveillance," "internal dissent," "pervert glasses") with internal document sourcing, while publishing ZERO standalone Samsung/Google glasses privacy articles despite identical hardware (Snapdragon AR1 Gen 1, 12MP camera, LED indicator).
+
+**Financial context:** KKR launched $10B Helix Digital Infrastructure with Nvidia (Jun 2026). OpenAI deal gives Axel Springer "favorable position" in ChatGPT search results + content licensing revenue. Meta has ZERO comparable financial relationship with Axel Springer.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Cross-references:** #111 (parallel — Apollo/Yahoo dual PE-media-AI architecture), #104 (complements — TechCrunch privacy indictment under Apollo), #122 (extends — adds another PE-owned data point), #128 (consistent — PE AI infrastructure predicts differential treatment)
+
+**Changes:**
+- New test: `test_axel_springer_kkr_openai_financial_architecture_aug17.py` (55 tests, 9 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #143 added)
+- Updated: `competitor-entities.yaml` (axel_springer_business_insider entity + sarah_perez_cross_entity added)
+- Updated: README.md (426 files, ~15,043 tests)
+
+**Cumulative:** 143 mechanisms, ~15,043 tests, 426 files

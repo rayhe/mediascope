@@ -2273,14 +2273,17 @@ entities:
     siri_ai_content_licensing:
       date_added: 2026-08-16
       status: in_negotiation
-      proposed_budget: 'Nine-figure ($100M+) total budget for publisher content payments'
-      compensation_model: 'Variable compensation — pay-per-use when publisher content is used by Siri AI, not lump sum'
-      deal_term: 'Multiyear deals proposed'
-      purpose: 'Power Siri AI voice assistant with current news and information content'
-      siri_ai_launch: 'WWDC26 (Jun 2026) introduced the all-new Siri AI; rolling out later 2026'
-      prior_deals: 'Apple previously paid publishers for content in earlier deals that included AI training rights'
-      negotiation_context: 'Apple reached out to publishers in recent months. Standard industry model is guaranteed fees with broad access. Apple proposing variable per-use model instead — a structural difference.'
-      n50_timing_relevance: 'Siri AI content deals are being negotiated BEFORE Apple N50 smart glasses launch (WWDC Jun 2027). Publishers who sign multiyear Siri deals will have new financial dependency on Apple exactly when Apple enters the smart glasses market in direct competition with Meta Ray-Ban.'
+      proposed_budget: Nine-figure ($100M+) total budget for publisher content payments
+      compensation_model: Variable compensation — pay-per-use when publisher content is used by Siri AI, not lump sum
+      deal_term: Multiyear deals proposed
+      purpose: Power Siri AI voice assistant with current news and information content
+      siri_ai_launch: WWDC26 (Jun 2026) introduced the all-new Siri AI; rolling out later 2026
+      prior_deals: Apple previously paid publishers for content in earlier deals that included AI training rights
+      negotiation_context: Apple reached out to publishers in recent months. Standard industry model is guaranteed fees with
+        broad access. Apple proposing variable per-use model instead — a structural difference.
+      n50_timing_relevance: Siri AI content deals are being negotiated BEFORE Apple N50 smart glasses launch (WWDC Jun 2027).
+        Publishers who sign multiyear Siri deals will have new financial dependency on Apple exactly when Apple enters the
+        smart glasses market in direct competition with Meta Ray-Ban.
       apple_q3_fy2026:
         quarter_ending: 2026-06-27
         revenue_b: 109.4
@@ -2296,7 +2299,8 @@ entities:
         wearables_yoy_pct: 6.5
         net_income_b: 29.8
         net_income_yoy_pct: 27.1
-        ceo_quote: 'At WWDC26, we were thrilled to introduce the all-new Siri AI, alongside all of Apple''s latest software innovations and important new child safety features.'
+        ceo_quote: At WWDC26, we were thrilled to introduce the all-new Siri AI, alongside all of Apple's latest software
+          innovations and important new child safety features.
       source_urls:
       - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
       - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
@@ -2305,25 +2309,28 @@ entities:
     quad_channel_publisher_dependency:
       mechanism_id: 136
       date_added: 2026-08-16
-      overview: 'Apple is building FOUR simultaneous publisher financial dependency
-        channels, making it the company with the most comprehensive publisher financial
-        architecture in tech. All four converge BEFORE Apple N50 smart glasses launch
-        (WWDC Jun 2027), creating compound financial incentives for favorable Apple
-        wearables coverage from the same publishers who cover Meta adversarially.
-        Meta has ZERO content channels with publishers and competes for ad revenue.'
+      overview: Apple is building FOUR simultaneous publisher financial dependency channels, making it the company with the
+        most comprehensive publisher financial architecture in tech. All four converge BEFORE Apple N50 smart glasses launch
+        (WWDC Jun 2027), creating compound financial incentives for favorable Apple wearables coverage from the same publishers
+        who cover Meta adversarially. Meta has ZERO content channels with publishers and competes for ad revenue.
       channels:
       - name: Apple News Plus
         type: subscription_revenue_sharing
-        detail: '50% of $12.99/mo, engagement-weighted across 400+ publishers, 125M MAU. Apple controls discovery and curation via 100 editors. Growing 4x faster than publishers'' own subscription businesses.'
+        detail: 50% of $12.99/mo, engagement-weighted across 400+ publishers, 125M MAU. Apple controls discovery and curation
+          via 100 editors. Growing 4x faster than publishers' own subscription businesses.
       - name: Apple Advertising
         type: advertising_revenue
-        detail: 'Record quarter embedded in $30.7B Services (Q3 FY2026). Apple sells ads directly in Apple News. Publisher titles benefit from Apple''s ad sales. Apple''s advertising business est. $7.3B+ annually.'
+        detail: Record quarter embedded in $30.7B Services (Q3 FY2026). Apple sells ads directly in Apple News. Publisher
+          titles benefit from Apple's ad sales. Apple's advertising business est. $7.3B+ annually.
       - name: App Store Commission
         type: platform_tax
-        detail: '15-30% of publisher app subscriptions. News Partner Program: 15% from day one. Every iOS subscription runs through Apple''s payment system. NYT has 10.8M+ digital subscribers, many via iOS.'
+        detail: '15-30% of publisher app subscriptions. News Partner Program: 15% from day one. Every iOS subscription runs
+          through Apple''s payment system. NYT has 10.8M+ digital subscribers, many via iOS.'
       - name: Siri AI Content Licensing
         type: ai_content_licensing
-        detail: 'NEW (Aug 2026): Nine-figure budget, variable pay-per-use compensation, multiyear deals. Content to power Siri AI rolling out late 2026. This is the FOURTH channel — the only one paying publishers specifically for AI content use.'
+        detail: 'NEW (Aug 2026): Nine-figure budget, variable pay-per-use compensation, multiyear deals. Content to power
+          Siri AI rolling out late 2026. This is the FOURTH channel — the only one paying publishers specifically for AI content
+          use.'
         status: in_negotiation
       competitor_channel_comparison:
         apple: 4
@@ -2337,8 +2344,14 @@ entities:
         publisher_financial_channels: 0
         content_deals: 0
         is_publisher_ad_competitor: true
-        detail: 'Meta has ZERO publisher financial channels (no content app, no subscription sharing, no commission, no AI licensing with most publishers) AND directly competes with publishers for digital advertising revenue. This 4-0 channel asymmetry predicts the coverage tone differential.'
-      coverage_incentive_implication: 'Publishers with quad-channel Apple dependency (News+ revenue, advertising, App Store commission, and now Siri AI licensing) have four simultaneous financial reasons to maintain favorable Apple coverage. Meta has zero channels, meaning adversarial Meta coverage is financially cost-free. The compound dependency grows as each new channel reinforces the others — a publisher that depends on Apple for 4 revenue streams is structurally inhibited from producing adversarial Apple coverage that could jeopardize ANY of those streams.'
+        detail: Meta has ZERO publisher financial channels (no content app, no subscription sharing, no commission, no AI
+          licensing with most publishers) AND directly competes with publishers for digital advertising revenue. This 4-0
+          channel asymmetry predicts the coverage tone differential.
+      coverage_incentive_implication: Publishers with quad-channel Apple dependency (News+ revenue, advertising, App Store
+        commission, and now Siri AI licensing) have four simultaneous financial reasons to maintain favorable Apple coverage.
+        Meta has zero channels, meaning adversarial Meta coverage is financially cost-free. The compound dependency grows
+        as each new channel reinforces the others — a publisher that depends on Apple for 4 revenue streams is structurally
+        inhibited from producing adversarial Apple coverage that could jeopardize ANY of those streams.
       source_urls:
       - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
       - https://www.macstories.net/news/apple-reports-q3-2026-earnings/
@@ -3776,15 +3789,13 @@ entities:
       journalist: Scott Stein
       publication: CNET (Ziff Davis)
       date_added: '2026-08-14'
-      finding_summary: 'Stein applies entity-selective enthusiasm gradient with privacy deferral.
-        In the SAME Google I/O article (May 19, 2026), Google/Samsung glasses receive superlative
-        language ("I was wowed," "best smart glasses out there," "redefine what smart glasses can be")
-        while Meta receives single-sentence privacy dismissal ("muddy lines on its AI privacy policies").
-        Google executives quoted at length about privacy planning; Meta gets no defense. Samsung Galaxy
-        Glasses share identical Snapdragon AR1 Gen 1 hardware. CNET (Ziff Davis) depends heavily on
-        Google search traffic for ad/affiliate revenue (68% organic decline 2020-2024). Samsung is
-        4th-largest global advertiser ($9.7B). Snap covered Stein AWE 2026 travel costs (disclosed).
-        CNET has ZERO financial relationship with Meta.'
+      finding_summary: Stein applies entity-selective enthusiasm gradient with privacy deferral. In the SAME Google I/O article
+        (May 19, 2026), Google/Samsung glasses receive superlative language ("I was wowed," "best smart glasses out there,"
+        "redefine what smart glasses can be") while Meta receives single-sentence privacy dismissal ("muddy lines on its AI
+        privacy policies"). Google executives quoted at length about privacy planning; Meta gets no defense. Samsung Galaxy
+        Glasses share identical Snapdragon AR1 Gen 1 hardware. CNET (Ziff Davis) depends heavily on Google search traffic
+        for ad/affiliate revenue (68% organic decline 2020-2024). Samsung is 4th-largest global advertiser ($9.7B). Snap covered
+        Stein AWE 2026 travel costs (disclosed). CNET has ZERO financial relationship with Meta.
       test_file: tests/test_scott_stein_cross_entity_enthusiasm_gradient_aug14.py
       financial_context:
         cnet_owner: Ziff Davis (acquired Q3 2024 for $100M+ from Red Ventures)
@@ -3811,14 +3822,12 @@ entities:
       journalist: Kerry Wan
       publication: ZDNET (Ziff Davis)
       date_added: '2026-08-14'
-      finding_summary: 'Wan demonstrates entity-selective privacy scrutiny: Meta Ray-Ban reviews
-        always include explicit privacy/data warnings in buying advice ("questionable AI and data
-        policies," "consider other wearable options") while Google Android XR glasses previews
-        contain zero privacy scrutiny despite identical camera/mic hardware and Google $306B/yr
-        advertising revenue (2.3x Meta). Pattern spans 4+ articles over 2024-2026. ZDNET (Ziff
-        Davis) depends on Google search traffic for ad/affiliate revenue. Same Ziff Davis family
-        pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO documented financial relationship
-        with Meta.'
+      finding_summary: 'Wan demonstrates entity-selective privacy scrutiny: Meta Ray-Ban reviews always include explicit privacy/data
+        warnings in buying advice ("questionable AI and data policies," "consider other wearable options") while Google Android
+        XR glasses previews contain zero privacy scrutiny despite identical camera/mic hardware and Google $306B/yr advertising
+        revenue (2.3x Meta). Pattern spans 4+ articles over 2024-2026. ZDNET (Ziff Davis) depends on Google search traffic
+        for ad/affiliate revenue. Same Ziff Davis family pattern as Stein/CNET (Mechanism #106). ZDNET has ZERO documented
+        financial relationship with Meta.'
       test_file: tests/test_kerry_wan_zdnet_privacy_scrutiny_asymmetry_aug14.py
       financial_context:
         zdnet_owner: Ziff Davis (same parent as CNET)
@@ -3843,22 +3852,22 @@ entities:
       date_analyzed: '2026-08-14'
       date_updated: '2026-08-15'
       publication_owner: 'Ziff Davis (NASDAQ: ZD)'
-      publications: [CNET, ZDNET, PCMag, Mashable]
-      finding_summary: 'Ziff Davis faces a "triple squeeze" of simultaneous financial pressures
-        predicting entity-selective coverage: (1) Google existential dependency -- 40%+ traffic
-        from search, ZDNET 97% organic decline, 57% revenue from ads dependent on search, AI
-        Overviews NOW on 50% of relevant queries (up from 36%, CEO Shah Q2 2026 call), NO
-        Google AI deal; (2) OpenAI active litigation -- copyright suit filed Apr 2025 seeking
-        hundreds of millions, CEO Shah Q2 2026: "litigation continuing," "not inclined to enter
-        RAG-focused agreements"; (3) Meta zero-relationship -- no AI deal, no ad dependency,
-        no litigation, lowest-cost editorial target. Samsung/Google advertiser compound chain
-        amplifies: Samsung $9.7B global ad spend flows through CNET/ZDNET/PCMag, Samsung
-        glasses use Google Gemini, soft Samsung protects ads + soft Google protects traffic.
-        This corporate architecture explains journalist patterns in #106 (Stein/CNET) and
-        #107 (Wan/ZDNET). Cross-publisher divergence from News Corp (#117): NC has deals
-        with OpenAI and Meta, record profitability; ZD has lawsuit and no deals, operating
-        loss. Q2 2026: $286.7M revenue (-2.7%), operating LOSS $(44.7M), $54.8M goodwill
-        impairment, strategic review of asset sales underway.'
+      publications:
+      - CNET
+      - ZDNET
+      - PCMag
+      - Mashable
+      finding_summary: 'Ziff Davis faces a "triple squeeze" of simultaneous financial pressures predicting entity-selective
+        coverage: (1) Google existential dependency -- 40%+ traffic from search, ZDNET 97% organic decline, 57% revenue from
+        ads dependent on search, AI Overviews NOW on 50% of relevant queries (up from 36%, CEO Shah Q2 2026 call), NO Google
+        AI deal; (2) OpenAI active litigation -- copyright suit filed Apr 2025 seeking hundreds of millions, CEO Shah Q2 2026:
+        "litigation continuing," "not inclined to enter RAG-focused agreements"; (3) Meta zero-relationship -- no AI deal,
+        no ad dependency, no litigation, lowest-cost editorial target. Samsung/Google advertiser compound chain amplifies:
+        Samsung $9.7B global ad spend flows through CNET/ZDNET/PCMag, Samsung glasses use Google Gemini, soft Samsung protects
+        ads + soft Google protects traffic. This corporate architecture explains journalist patterns in #106 (Stein/CNET)
+        and #107 (Wan/ZDNET). Cross-publisher divergence from News Corp (#117): NC has deals with OpenAI and Meta, record
+        profitability; ZD has lawsuit and no deals, operating loss. Q2 2026: $286.7M revenue (-2.7%), operating LOSS $(44.7M),
+        $54.8M goodwill impairment, strategic review of asset sales underway.'
       financial_data:
         ticker: ZD
         market_cap_b: 1.988
@@ -3872,11 +3881,13 @@ entities:
         connectivity_sale_m: 1216.1
         google_ai_overviews_pct: 50
         google_ai_overviews_prior_pct: 36
-        ceo_anti_rag_quote: 'not inclined to enter agreements focused on retrieval-augmented
-          generation that could compromise its ability to seek compensation for foundational
-          model training'
-        ceo_litigation_quote: "the company's litigation with OpenAI is continuing"
-        semrush_most_cited: [CNET, PCMag, IGN]
+        ceo_anti_rag_quote: not inclined to enter agreements focused on retrieval-augmented generation that could compromise
+          its ability to seek compensation for foundational model training
+        ceo_litigation_quote: the company's litigation with OpenAI is continuing
+        semrush_most_cited:
+        - CNET
+        - PCMag
+        - IGN
       openai_lawsuit:
         filed: '2025-04-24'
         court: federal court, Delaware
@@ -3902,13 +3913,12 @@ entities:
       mechanism_id: 112
       date_added: '2026-08-15'
       publication: The Verge
-      ownership_chain: 'The Verge → Vox Media → PMC/PMX → Penske Media Corporation'
-      finding_summary: 'PMC sues Google in TWO active lawsuits (AI Overviews copyright, Ad Tech
-        antitrust) yet Victoria Song uses ASPIRATIONAL framing for Google Android XR glasses
-        (J.A.R.V.I.S. comparison) while applying surveillance/privacy framing to Meta glasses.
-        FIRST MECHANISM documenting active litigation that does NOT predict adversarial coverage.
-        Resolution: PMC interests are domain-specific -- adversarial to Google search/ads but
-        favorable to Google wearables (which compete with Meta, a zero-deal non-partner).'
+      ownership_chain: The Verge → Vox Media → PMC/PMX → Penske Media Corporation
+      finding_summary: 'PMC sues Google in TWO active lawsuits (AI Overviews copyright, Ad Tech antitrust) yet Victoria Song
+        uses ASPIRATIONAL framing for Google Android XR glasses (J.A.R.V.I.S. comparison) while applying surveillance/privacy
+        framing to Meta glasses. FIRST MECHANISM documenting active litigation that does NOT predict adversarial coverage.
+        Resolution: PMC interests are domain-specific -- adversarial to Google search/ads but favorable to Google wearables
+        (which compete with Meta, a zero-deal non-partner).'
       paradox_type: litigation_domain_specificity
       google_coverage_framing: aspirational (J.A.R.V.I.S. superhero AI)
       meta_coverage_framing: adversarial (LED investigations, subscription controversy)
@@ -4308,9 +4318,8 @@ entities:
         msci_global: '2026-06-27'
         vanguard_total_market: '2026-06-19'
         sp_500: not eligible (12-month seasoning + profitability)
-      institutional_convergence_note: 'SpaceX IPO created passive index fund convergence
-        with media company shareholders. Vanguard, BlackRock, State Street — which own
-        22.6% of NYT Co and 27.3% of News Corp — are now mandated to hold SpaceX/xAI
+      institutional_convergence_note: 'SpaceX IPO created passive index fund convergence with media company shareholders.
+        Vanguard, BlackRock, State Street — which own 22.6% of NYT Co and 27.3% of News Corp — are now mandated to hold SpaceX/xAI
         through index tracking. See mechanism #140.'
     publisher_deals_note: "ZERO publisher content licensing deals as of Aug 2026.\nxAI is the only major AI lab alongside\
       \ Anthropic with no publisher deals.\nInstead of licensing, xAI relies on:\n(a) X/Twitter public posts for training\
@@ -5110,7 +5119,7 @@ entities:
         surveillance_framing_count: 0
     q2_2026_earnings:
       reported_date: '2026-08-03'
-      total_revenue_b: 1.60
+      total_revenue_b: 1.6
       revenue_yoy_pct: 19
       dau_m: 493
       dau_yoy_pct: 5
@@ -5139,11 +5148,9 @@ entities:
         messages_per_day_initial: 2M
         integration_depth: deep (pinned in chat, group chats, Snap Map, Lens recommendations)
         financial_direction: Snap pays OpenAI (API usage fees)
-        note: 'Snap is an OpenAI API CUSTOMER — revenue flows FROM Snap TO OpenAI.
-          OpenAI uses API revenue to fund publisher content licensing deals.
-          Snap''s My AI had child safety issues (Washington Post reported bot
-          advising 13-15 year olds about alcohol and sex) — received ~1 week
-          of coverage, no sustained campaign. Compare to Meta AI: sustained
+        note: 'Snap is an OpenAI API CUSTOMER — revenue flows FROM Snap TO OpenAI. OpenAI uses API revenue to fund publisher
+          content licensing deals. Snap''s My AI had child safety issues (Washington Post reported bot advising 13-15 year
+          olds about alcohol and sex) — received ~1 week of coverage, no sustained campaign. Compare to Meta AI: sustained
           multi-month adversarial coverage cycle for similar issues.'
         source_urls:
         - https://siliconangle.com/2023/02/27/snapchat-unveils-ai-chatbot-powered-openais-chatgpt/
@@ -5156,38 +5163,32 @@ entities:
         duration: 1 year
         scope: Perplexity AI search engine integration into Snapchat app
         financial_direction: Perplexity pays Snap
-        revenue_recognition_status: 'NOT yet recognized as of Q1 2026. Snap Q1 report:
-          "the companies have yet to mutually agree on a path to a broader roll out."
-          Revenue forecast explicitly EXCLUDES Perplexity contribution.'
-        perplexity_publisher_chain: 'Perplexity operates $42.5M revenue-sharing program
-          with publishers. Publishers receive 80% of Comet Plus subscription revenue.
-          Current participants include Fortune, Der Spiegel, Time, Gannett, The
-          Independent, Blavity. Condé Nast (WIRED parent) has a Perplexity deal
-          (confirmed in Lynch March 2026 memo). This creates a financial chain:
-          Snap → [$400M] → Perplexity → [revenue share] → Condé Nast.'
+        revenue_recognition_status: 'NOT yet recognized as of Q1 2026. Snap Q1 report: "the companies have yet to mutually
+          agree on a path to a broader roll out." Revenue forecast explicitly EXCLUDES Perplexity contribution.'
+        perplexity_publisher_chain: 'Perplexity operates $42.5M revenue-sharing program with publishers. Publishers receive
+          80% of Comet Plus subscription revenue. Current participants include Fortune, Der Spiegel, Time, Gannett, The Independent,
+          Blavity. Condé Nast (WIRED parent) has a Perplexity deal (confirmed in Lynch March 2026 memo). This creates a financial
+          chain: Snap → [$400M] → Perplexity → [revenue share] → Condé Nast.'
         source_urls:
         - https://bestmediainfo.com/mediainfo/mediainfo-marketing/snap-posts-stronger-quarter-as-perplexity-ai-inks-400-million-deal-10626382
         - https://www.reuters.com/business/snap-forecasts-quarterly-revenue-below-estimates-ad-competition-hurts-2026-02-04/
     publisher_financial_relationships:
       discover_platform:
         type: revenue_sharing
-        description: 'Snap Discover platform shares ad revenue with publisher partners.
-          Condé Nast confirmed as Snap PMP (Private Marketplace) beta partner (2018).
-          Publisher Discover partners included BuzzFeed, Condé Nast, Hearst, NBCU,
-          Viacom, VICE. Publishers create daily content editions, Snap sells ads,
-          revenue is shared. Current status of Condé Nast Discover partnership unclear.'
+        description: Snap Discover platform shares ad revenue with publisher partners. Condé Nast confirmed as Snap PMP (Private
+          Marketplace) beta partner (2018). Publisher Discover partners included BuzzFeed, Condé Nast, Hearst, NBCU, Viacom,
+          VICE. Publishers create daily content editions, Snap sells ads, revenue is shared. Current status of Condé Nast
+          Discover partnership unclear.
         conde_nast_confirmed: true
         conde_nast_confirmed_date: '2018'
         source_urls:
         - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
       content_licensing_deals: []
       ad_revenue_significance: minimal
-      meta_contrast: 'Meta has ZERO platform revenue-sharing relationships with Condé Nast.
-        Meta does not operate a Discover-style publisher content monetization platform.
-        Snap has BOTH a direct publisher relationship (Discover) AND an indirect chain
-        (Perplexity → Condé Nast). The entity with MORE cameras (Snap, 4) and MORE
-        publisher financial ties gets LESS privacy scrutiny than the entity with FEWER
-        cameras (Meta, 1) and ZERO publisher financial ties.'
+      meta_contrast: Meta has ZERO platform revenue-sharing relationships with Condé Nast. Meta does not operate a Discover-style
+        publisher content monetization platform. Snap has BOTH a direct publisher relationship (Discover) AND an indirect
+        chain (Perplexity → Condé Nast). The entity with MORE cameras (Snap, 4) and MORE publisher financial ties gets LESS
+        privacy scrutiny than the entity with FEWER cameras (Meta, 1) and ZERO publisher financial ties.
     source_urls:
     - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
     - https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/
@@ -5229,16 +5230,13 @@ entities:
     quad_tech_financial_architecture:
       mechanism_id: 124
       date_analyzed: '2026-08-15'
-      finding: 'WBD/CNN has FOUR simultaneous tech company financial relationships.
-        CNN has a Meta AI content licensing deal (Dec 2025) that should predict
-        softer Meta coverage. Instead, Lisa Eadicicco (CNN Business Tech Editor)
-        produced comprehensive privacy indictment of Meta glasses (8+ alarm terms,
-        2 adversarial sources) while omitting Samsung Galaxy Glasses from the same
-        event. The explanation: advertising (Samsung $9.7B global, 4th largest)
-        and infrastructure dependencies (Google Cloud, AWS) OVERWHELM the content
-        licensing deal. Financial Incentive Hierarchy: advertising > infrastructure
-        > content licensing. First documented case where a Meta content deal FAILS
-        to produce softer coverage because competing financial incentives override it.'
+      finding: 'WBD/CNN has FOUR simultaneous tech company financial relationships. CNN has a Meta AI content licensing deal
+        (Dec 2025) that should predict softer Meta coverage. Instead, Lisa Eadicicco (CNN Business Tech Editor) produced comprehensive
+        privacy indictment of Meta glasses (8+ alarm terms, 2 adversarial sources) while omitting Samsung Galaxy Glasses from
+        the same event. The explanation: advertising (Samsung $9.7B global, 4th largest) and infrastructure dependencies (Google
+        Cloud, AWS) OVERWHELM the content licensing deal. Financial Incentive Hierarchy: advertising > infrastructure > content
+        licensing. First documented case where a Meta content deal FAILS to produce softer coverage because competing financial
+        incentives override it.'
       relationships:
         meta_content_licensing:
           type: content_licensing
@@ -5261,7 +5259,7 @@ entities:
           type: technology_infrastructure
           designation: Preferred Cloud Provider
           product: Agentic AI-powered advertising technology
-          announced: '2026-07'
+          announced: 2026-07
           rollout: Q3-Q4 2026 phased
           features:
           - agentic automation for direct response
@@ -5280,9 +5278,8 @@ entities:
           samsung_cio_quote: We are a large spender in linear TV
           source_url: https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
       financial_hierarchy:
-        explanation: 'When content licensing and advertising/infrastructure incentives
-          point in OPPOSITE directions (Meta deal vs Samsung/Google/Amazon dependencies),
-          advertising and infrastructure win. The WBD case is the first documented
+        explanation: 'When content licensing and advertising/infrastructure incentives point in OPPOSITE directions (Meta
+          deal vs Samsung/Google/Amazon dependencies), advertising and infrastructure win. The WBD case is the first documented
           instance proving this hierarchy: advertising > infrastructure > content licensing.'
         samsung_to_meta_ratio: 20-100x (Samsung WBD ad spend vs Meta content deal)
       paramount_merger:
@@ -5291,8 +5288,7 @@ entities:
         acquirer: Paramount Skydance
         trial_date: March 2-19, 2027
         cnn_cbs_combination: true
-        implication: Combined entity would have MORE linear TV ad inventory and HIGHER
-          dependency on Samsung/Google advertising
+        implication: Combined entity would have MORE linear TV ad inventory and HIGHER dependency on Samsung/Google advertising
       related_mechanisms:
       - 123
       - 120
@@ -5310,14 +5306,13 @@ entities:
       mechanism_id: 104
       date_analyzed: '2026-08-14'
       publication: TechCrunch
-      ownership_chain: 'TechCrunch → Yahoo → Verizon Media (sold 2021) → Apollo Global Management (majority owner since Sep 2021)'
-      finding_summary: 'TechCrunch published adversarial privacy-improvement-as-indictment
-        coverage of Meta glasses on Jul 8, 2026, the same day Meta shipped its v26 LED
-        anti-tamper update. Samsung Galaxy Glasses launched 14 days later with identical
-        hardware and zero adversarial coverage. Apollo Global Management co-financed
-        $35B AI XPV Platform for Anthropic/OpenAI and $3.4B for xAI chip leasing — $38B+
-        total, the largest documented financial link between a publication owner and
-        Meta AI competitors.'
+      ownership_chain: TechCrunch → Yahoo → Verizon Media (sold 2021) → Apollo Global Management (majority owner since Sep
+        2021)
+      finding_summary: TechCrunch published adversarial privacy-improvement-as-indictment coverage of Meta glasses on Jul
+        8, 2026, the same day Meta shipped its v26 LED anti-tamper update. Samsung Galaxy Glasses launched 14 days later with
+        identical hardware and zero adversarial coverage. Apollo Global Management co-financed $35B AI XPV Platform for Anthropic/OpenAI
+        and $3.4B for xAI chip leasing — $38B+ total, the largest documented financial link between a publication owner and
+        Meta AI competitors.
       apollo_ai_financing_total_b: 38.4
       related_mechanisms:
       - 93
@@ -5328,17 +5323,15 @@ entities:
       mechanism_id: 109
       date_analyzed: '2026-08-15'
       publication: Engadget
-      ownership_chain: 'Engadget → Yahoo → Apollo Global Management'
-      google_search_partnership: 'Yahoo Search powered by Google under renewed Search Alliance agreement'
-      google_ad_tech_dependency: 'Yahoo display advertising revenue depends on Google ad tech stack'
-      finding_summary: 'Engadget (Yahoo/Apollo) gives Google Android XR smart glasses ZERO
-        privacy vocabulary despite identical camera capabilities to Meta glasses, while
-        dedicating entire articles to Meta privacy risks. Yahoo-Google search partnership
-        creates structural incentive for soft Google coverage. Beat assignment channels
-        Meta to privacy-beat reporter (Karissa Bell), Google to product-beat reporter
-        (Bonifacic). Combined with TechCrunch mechanism #104, establishes a CORPORATE-LEVEL
-        pattern: both Yahoo publications (TechCrunch + Engadget) produce adversarial Meta
-        coverage and soft competitor coverage, consistent with Apollo financial alignment.'
+      ownership_chain: Engadget → Yahoo → Apollo Global Management
+      google_search_partnership: Yahoo Search powered by Google under renewed Search Alliance agreement
+      google_ad_tech_dependency: Yahoo display advertising revenue depends on Google ad tech stack
+      finding_summary: 'Engadget (Yahoo/Apollo) gives Google Android XR smart glasses ZERO privacy vocabulary despite identical
+        camera capabilities to Meta glasses, while dedicating entire articles to Meta privacy risks. Yahoo-Google search partnership
+        creates structural incentive for soft Google coverage. Beat assignment channels Meta to privacy-beat reporter (Karissa
+        Bell), Google to product-beat reporter (Bonifacic). Combined with TechCrunch mechanism #104, establishes a CORPORATE-LEVEL
+        pattern: both Yahoo publications (TechCrunch + Engadget) produce adversarial Meta coverage and soft competitor coverage,
+        consistent with Apollo financial alignment.'
       related_mechanisms:
       - 104
       - 108
@@ -5349,12 +5342,10 @@ entities:
       publication: TechCrunch
       journalist: Sarah Perez
       journalist_title: Consumer News Editor
-      finding_summary: 'Same journalist (Sarah Perez) wrote hands-on coverage of both Google
-        and Meta camera-equipped AI smart glasses within 47 days. Google article (May 22):
-        ZERO privacy vocabulary, aspirational tone, photographed a person without privacy
-        concern. Meta article (Jul 8): 25+ alarm terms, 30+ adversarial sources, LED safety
-        improvement converted into comprehensive privacy indictment. Eliminates the "different
-        reporter" confounder from mechanism #122.'
+      finding_summary: 'Same journalist (Sarah Perez) wrote hands-on coverage of both Google and Meta camera-equipped AI smart
+        glasses within 47 days. Google article (May 22): ZERO privacy vocabulary, aspirational tone, photographed a person
+        without privacy concern. Meta article (Jul 8): 25+ alarm terms, 30+ adversarial sources, LED safety improvement converted
+        into comprehensive privacy indictment. Eliminates the "different reporter" confounder from mechanism #122.'
       related_mechanisms:
       - 122
       - 109
@@ -5362,27 +5353,25 @@ entities:
     q2_2026_financial_update:
       mechanism_id: 111
       date_analyzed: '2026-08-15'
-      data_source: 'Apollo Q2 2026 earnings (reported Aug 4, 2026)'
+      data_source: Apollo Q2 2026 earnings (reported Aug 4, 2026)
       aum_exceeded_1t: true
       capital_solutions_fees_m: 277
-      capital_solutions_fees_note: 'Record; 5th consecutive quarter above $200M.
-        This is the specific fee income line where AI infrastructure deals
-        generate revenue for Apollo'
+      capital_solutions_fees_note: Record; 5th consecutive quarter above $200M. This is the specific fee income line where
+        AI infrastructure deals generate revenue for Apollo
       fee_related_earnings_m: 785
       fre_yoy_growth_pct: 25
       adjusted_net_income_b: 1.3
       originations_b: 74
-      originations_note: 'Excludes $35B XPV deal (recognized at close)'
+      originations_note: Excludes $35B XPV deal (recognized at close)
       total_digital_infrastructure_since_2022_b: 40
       digital_infrastructure_team_size: 60
-      ai_chip_leader: 'Reed Rayman (Partner, appointed Aug 5 2026; chip-focused deal origination)'
+      ai_chip_leader: Reed Rayman (Partner, appointed Aug 5 2026; chip-focused deal origination)
       stream_data_centers: majority stake acquired
       stack_infrastructure: European colocation carve-out
-      scaling_significance: 'Apollo AI infrastructure financing is its FASTEST-GROWING
-        business line. CEO Rowan on Q2 call: "Second quarter was really all about
-        momentum." The $35B XPV was excluded from the $74B origination figure —
-        $50B+ in signed deals will feed future quarters. Financial incentive for
-        Yahoo publications to cover AI competitors softly is EXPANDING, not static.'
+      scaling_significance: 'Apollo AI infrastructure financing is its FASTEST-GROWING business line. CEO Rowan on Q2 call:
+        "Second quarter was really all about momentum." The $35B XPV was excluded from the $74B origination figure — $50B+
+        in signed deals will feed future quarters. Financial incentive for Yahoo publications to cover AI competitors softly
+        is EXPANDING, not static.'
       source_urls:
       - https://finance.biggo.com/news/US_APO_2026-08-04
       - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
@@ -5393,15 +5382,13 @@ entities:
       date_analyzed: '2026-08-15'
       publication: Engadget
       journalist: Karissa Bell
-      ownership_chain: 'Engadget → Yahoo → Apollo Global Management'
-      finding_summary: 'Karissa Bell applies active adversarial testing to Meta glasses
-        (purchasing LED-blocking products, demonstrating bypass on video, interviewing
-        chilling-effect creators, embedding "baggage" in review headlines) while
-        covering Snap Specs (identical camera + MORE capable AR display) through
-        passive CEO interview where Spiegel reframes product as "computer."
-        Extends mechanism #109 from publication-level to journalist-level: Bell IS
-        the specific reporter producing the entity-selective pattern. Zero privacy
-        investigation articles for Snap, Xreal, Qualcomm, Samsung, or Google glasses.'
+      ownership_chain: Engadget → Yahoo → Apollo Global Management
+      finding_summary: 'Karissa Bell applies active adversarial testing to Meta glasses (purchasing LED-blocking products,
+        demonstrating bypass on video, interviewing chilling-effect creators, embedding "baggage" in review headlines) while
+        covering Snap Specs (identical camera + MORE capable AR display) through passive CEO interview where Spiegel reframes
+        product as "computer." Extends mechanism #109 from publication-level to journalist-level: Bell IS the specific reporter
+        producing the entity-selective pattern. Zero privacy investigation articles for Snap, Xreal, Qualcomm, Samsung, or
+        Google glasses.'
       meta_adversarial_articles: 5
       competitor_adversarial_articles: 0
       related_mechanisms:
@@ -5433,35 +5420,36 @@ entities:
     meta_content_licensing_deals: none
     meta_advertising_partnerships: none
     morningstar_connection: Joe Mansueto founded Morningstar (investment research, tracks Alphabet/Google stock)
-    notes: 'Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue
-      primarily from advertising (55%). Standard Google programmatic/search traffic dependency
-      creates structural incentive alignment with Google ecosystem. Zero known Meta financial
-      relationships of any kind.'
+    notes: Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
+      Standard Google programmatic/search traffic dependency creates structural incentive alignment with Google ecosystem.
+      Zero known Meta financial relationships of any kind.
     inc_smart_glasses_privacy_redirected_attribution:
       mechanism_id: 137
-      finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google
-        smart glasses competitive analysis while presenting Samsung''s identical camera+AI architecture
-        with ZERO scrutiny. Samsung exec claim "privacy is not an afterthought" taken at face value.
-        Cross-entity contrast: Meta articles use "scandal" language (Soren Kaplan), Google articles
-        use aspirational framing (Jason Aten, Kit Eaton, Georgia Fearn). Financial dependency on
-        Google (55% ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective
-        privacy vocabulary.'
+      finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google smart glasses competitive
+        analysis while presenting Samsung''s identical camera+AI architecture with ZERO scrutiny. Samsung exec claim "privacy
+        is not an afterthought" taken at face value. Cross-entity contrast: Meta articles use "scandal" language (Soren Kaplan),
+        Google articles use aspirational framing (Jason Aten, Kit Eaton, Georgia Fearn). Financial dependency on Google (55%
+        ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective privacy vocabulary.'
       source_url: https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
       date: '2026-07-29'
   versant_media_group:
     display_name: Versant Media Group (CNBC, MS Now, E!, USA Network)
     aliases:
-      - Versant Media
-      - Versant
-      - VSNT
-      - CNBC
+    - Versant Media
+    - Versant
+    - VSNT
+    - CNBC
     regex: \b(Versant\s+Media|VSNT|CNBC)(?!\s+Africa)\b
     category: media_conglomerate
     ticker: VSNT
     exchange: NASDAQ
     former_parent: Comcast Corporation (CMCSA)
-    spinoff_date: '2026-01'
-    publications: [CNBC, MS Now, E!, USA Network]
+    spinoff_date: 2026-01
+    publications:
+    - CNBC
+    - MS Now
+    - E!
+    - USA Network
     primary_coverage_outlet: CNBC
     fy2026_revenue_guidance_b: 6.2-6.45
     revenue_mix:
@@ -5471,10 +5459,10 @@ entities:
       content_licensing_pct: 3
     stock_debut_crash_pct: -25
     ai_product_investments:
-      - StockStory acquisition (AI stock analysis)
-      - Kalshi multi-year partnership (prediction market data)
-      - AI-powered quantitative analysis for retail investors
-      - CNBC Pro DTC expansion with AI features
+    - StockStory acquisition (AI stock analysis)
+    - Kalshi multi-year partnership (prediction market data)
+    - AI-powered quantitative analysis for retail investors
+    - CNBC Pro DTC expansion with AI features
     ai_content_licensing_deals: 0
     entity_coverage_profile:
       meta:
@@ -5504,25 +5492,67 @@ entities:
         content_licensing_deal: false
     mechanism_type: corporate_restructuring_incentive_amplification
     related_mechanisms:
-      - 128
-      - 129
+    - 128
+    - 129
     smart_glasses_coverage_empirical_test:
       mechanism_id: 129
-      finding: >
-        First empirical test of #128 predictions. CNBC smart glasses coverage shows
-        entity-selective framing: Samsung/Google Galaxy Glasses receive aspirational
-        product-feature language with zero privacy vocabulary, while Meta glasses receive
-        fiscal-alarm/privacy-adversarial framing. Samsung is 4th-largest global advertiser
-        ($9.7B/yr); advertising revenue matters ~33x more to Versant post-spinoff.
+      finding: 'First empirical test of #128 predictions. CNBC smart glasses coverage shows entity-selective framing: Samsung/Google
+        Galaxy Glasses receive aspirational product-feature language with zero privacy vocabulary, while Meta glasses receive
+        fiscal-alarm/privacy-adversarial framing. Samsung is 4th-largest global advertiser ($9.7B/yr); advertising revenue
+        matters ~33x more to Versant post-spinoff.
+
+        '
       samsung_coverage_vocabulary: aspirational
       samsung_privacy_terms: 0
       meta_coverage_vocabulary: fiscal-alarm
       meta_privacy_terms: 8+
-    notes: >
-      Novel mechanism: corporate spinoff transforms CNBC from insulated-inside-conglomerate
-      to directly-exposed-inside-standalone-media-company. Advertising dependency amplified
-      ~33x from Comcast to Versant. StockStory acquisition makes Versant an AI company
-      simultaneously covering AI companies — structural editorial-product conflict.
+    notes: 'Novel mechanism: corporate spinoff transforms CNBC from insulated-inside-conglomerate to directly-exposed-inside-standalone-media-company.
+      Advertising dependency amplified ~33x from Comcast to Versant. StockStory acquisition makes Versant an AI company simultaneously
+      covering AI companies — structural editorial-product conflict.
+
+      '
+  axel_springer_business_insider:
+    parent_company: Axel Springer SE (majority-owned by KKR)
+    ownership_chain: KKR → Axel Springer SE → Business Insider / Politico / Bild / Welt
+    headquarters: Berlin, Germany
+    meta_financial_relationship: none
+    openai_financial_relationship: content licensing deal (Dec 2023, tens of millions EUR/year)
+    google_financial_relationship: search traffic dependency
+    meta_as_ad_competitor: true
+    publications:
+    - Business Insider (businessinsider.com)
+    - Politico
+    - Bild
+    - Welt
+    content_licensing_deals:
+    - partner: OpenAI
+      date: '2023-12-13'
+      value_description: tens of millions of euros per year
+      scope: content licensing + model training data + ChatGPT integration
+    pe_owner:
+      name: KKR
+      ai_infrastructure_portfolio_b: 34
+      helix_digital_infrastructure_b: 10
+      ecp_partnership_b: 50
+    notes: Triple-layer financial architecture — OpenAI content deal, KKR PE ownership with $34B+ AI infrastructure serving
+      Meta competitors, Google search traffic dependency. Business Insider produces adversarial Meta glasses coverage with
+      alarm vocabulary while publishing zero comparable Samsung/Google glasses privacy articles despite identical hardware
+      (Snapdragon AR1, 12MP camera, LED indicator).
+    mechanisms:
+    - mechanism_id: 143
+      mechanism_name: Axel Springer KKR OpenAI Triple-Layer Financial Architecture
+  sarah_perez_cross_entity_mechanism_142:
+    parent_company: Yahoo (Apollo Global Management)
+    publication: TechCrunch
+    role: Consumer News Editor (since Aug 2011)
+    meta_financial_relationship: none (via Apollo/Yahoo)
+    google_financial_relationship: Yahoo Search Alliance powered by Google
+    notes: Same-journalist cross-entity mechanism. Perez wrote Google Android XR glasses hands-on (May 22, 2026) with ZERO
+      privacy vocabulary, then Meta glasses article (Jul 8, 2026) with 25+ alarm terms. 47-day window, inverted framing, same
+      product category. Strongest evidence of entity-specific editorial posture.
+    mechanisms:
+    - mechanism_id: 142
+      mechanism_name: Sarah Perez Same-Journalist Cross-Entity Privacy Vocabulary Inversion
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
@@ -7758,7 +7788,7 @@ publisher_ai_revenue_opacity_index:
         total_revenue_m: 436.7
         revenue_yoy_pct: -1
         profit_m: 506.9
-        profit_driver: '$721.7M unrealized gain on MGM stake'
+        profit_driver: $721.7M unrealized gain on MGM stake
         digital_revenue_growth_pct: 6
         consecutive_digital_growth_quarters: 11
         ebitda_growth_pct: 18
@@ -7773,16 +7803,16 @@ publisher_ai_revenue_opacity_index:
         print_revenue_growth_pct: -18
         mgm_stake_value_b: 3.0
         mgm_acquisition_offer_b: 12.4
-        fy2026_ebitda_guidance_m: '310-340'
+        fy2026_ebitda_guidance_m: 310-340
         google_litigation_expense_m: 15
         diller_cnn_interest: confirmed during Q2 call
         source_urls:
-          - https://www.marketbeat.com/earnings/reports/2026-8-3-iacinteractivecorp-stock/
-          - https://www.themarketsdaily.com/2026/08/04/people-incorporated-common-stock-q2-earnings-call-highlights.html
-          - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
+        - https://www.marketbeat.com/earnings/reports/2026-8-3-iacinteractivecorp-stock/
+        - https://www.themarketsdaily.com/2026/08/04/people-incorporated-common-stock-q2-earnings-call-highlights.html
+        - https://www.wsj.com/business/earnings/people-inc-profit-more-than-doubles-on-gains-from-mgm-investment-e2f534a6
       ai_attribution: Primarily driven by its Meta deal, and improved performance from Apple News+ and content syndication
         partners
-      google_traffic_loss: '69% reduction — Google search now 21% of traffic (Q2 2026), down from ~67% historically'
+      google_traffic_loss: 69% reduction — Google search now 21% of traffic (Q2 2026), down from ~67% historically
       source_url: https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
       meta_coverage_adversariality: LOW-MODERATE
     tier_summary: '3 publishers in Tier 2 report revenue but bundle AI licensing with 3-5 other income streams. AI-specific
@@ -8258,8 +8288,12 @@ essilorluxottica:
     ticker: FUTR.L
     exchange: LSE
     brands_count: 170
-    key_tech_brands: ["Tom's Guide", "TechRadar", "Tom's Hardware", "PC Gamer"]
-    google_dependent_revenue_share: 0.60
+    key_tech_brands:
+    - Tom's Guide
+    - TechRadar
+    - Tom's Hardware
+    - PC Gamer
+    google_dependent_revenue_share: 0.6
     h1_2026_profit_before_tax_yoy_change: -0.67
     meta_financial_relationship: none
     google_financial_relationship: existential_dependency
@@ -8267,23 +8301,31 @@ essilorluxottica:
       signed_date: '2024-12-05'
       brands_licensed_count: 200
       chatgpt_content_licensing: true
-      openai_chatbots_deployed_on: ["Tom's Hardware", "Who What Wear"]
+      openai_chatbots_deployed_on:
+      - Tom's Hardware
+      - Who What Wear
       openai_tools_for_editorial: true
-      ceo_endorsement_quote: 'ChatGPT provides a whole new avenue for people to discover our incredible specialist content'
+      ceo_endorsement_quote: ChatGPT provides a whole new avenue for people to discover our incredible specialist content
       deal_type: strategic_content_licensing
       source_urls:
       - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
       - http://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
       - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
     future_optic:
-      product_description: 'AI visibility advertising product selling brands placement in LLMs (ChatGPT and Gemini)'
+      product_description: AI visibility advertising product selling brands placement in LLMs (ChatGPT and Gemini)
       h1_2026_revenue_booked_gbp_m: 2
       full_year_pipeline_gbp_m: 10
-      platforms: ['ChatGPT', 'Gemini']
-      h2_expected_sales_vs_h1: 'more than double'
+      platforms:
+      - ChatGPT
+      - Gemini
+      h2_expected_sales_vs_h1: more than double
       commercially_invested_in_competitor_platforms: true
       negative_coverage_reduces_product_value: true
-      external_recognition: ['SimilarWeb', 'Peec', 'Ahrefs', 'Promptwatch']
+      external_recognition:
+      - SimilarWeb
+      - Peec
+      - Ahrefs
+      - Promptwatch
     h1_2026_detailed_financials:
       revenue_gbp_m: 349.1
       revenue_yoy_change_pct: -8
@@ -8291,7 +8333,7 @@ essilorluxottica:
       pbt_yoy_change_pct: -67
       market_cap_gbp_m: 280
       market_cap_peak_gbp_b: 4.0
-      market_cap_peak_date: '2022-12'
+      market_cap_peak_date: 2022-12
       segmentation:
         brands_in_transition_pct: 45
         brands_in_transition_yoy_pct: -5
@@ -8311,65 +8353,81 @@ essilorluxottica:
     compound_incentive_architecture:
       layer_count: 3
       layers:
-      - 'Google traffic dependency (existential — 60%+ revenue)'
-      - 'OpenAI content licensing (strategic partnership — 200+ brands)'
-      - 'Future Optic AI visibility product (commercial investment in ChatGPT + Gemini)'
+      - Google traffic dependency (existential — 60%+ revenue)
+      - OpenAI content licensing (strategic partnership — 200+ brands)
+      - Future Optic AI visibility product (commercial investment in ChatGPT + Gemini)
       meta_financial_relationship_usd: 0
       meta_safe_target: true
     mechanisms:
     - mechanism_id: 110
-      relationship: 'Editor-in-Chief-Level Google Dependency Shield'
+      relationship: Editor-in-Chief-Level Google Dependency Shield
     - mechanism_id: 114
-      relationship: 'Triple-Layer AI Competitor Financial Dependency Architecture — compound cause for mechanism #110 editorial effect'
+      relationship: 'Triple-Layer AI Competitor Financial Dependency Architecture — compound cause for mechanism #110 editorial
+        effect'
     - mechanism_id: 115
-      relationship: 'TechRadar Cross-Brand Privacy Vocabulary Bifurcation — same pattern as #110 at a DIFFERENT Future plc brand'
+      relationship: 'TechRadar Cross-Brand Privacy Vocabulary Bifurcation — same pattern as #110 at a DIFFERENT Future plc
+        brand'
     - mechanism_id: 116
-      relationship: 'Android Central Privacy Vocabulary Suppression Under Privileged Access — Michael Hicks journalist-level manifestation, THIRD Future plc brand in chain'
+      relationship: Android Central Privacy Vocabulary Suppression Under Privileged Access — Michael Hicks journalist-level
+        manifestation, THIRD Future plc brand in chain
     cross_references:
     - mechanism_id: 108
-      relationship: 'Ziff Davis Triple Squeeze — same Google dependency archetype, different publisher'
+      relationship: Ziff Davis Triple Squeeze — same Google dependency archetype, different publisher
     - mechanism_id: 109
-      relationship: 'Engadget Yahoo/Apollo — same Google partnership shield pattern'
+      relationship: Engadget Yahoo/Apollo — same Google partnership shield pattern
     - mechanism_id: 113
-      relationship: 'Karissa Bell methodology asymmetry — same pattern of asymmetric Meta coverage, different publisher/ownership'
-
-
-# Industry-wide AI content market economics (Mechanism #120)
+      relationship: Karissa Bell methodology asymmetry — same pattern of asymmetric Meta coverage, different publisher/ownership
 ai_content_market_economics:
   mechanism_id: 120
   date_added: '2026-08-15'
   deal_premium_evaporation:
-    source: 'Brookings/OMI "Same Gatekeepers, New Tollbooths" (Jun 9 2026)'
-    finding: 'Publisher AI deal click-through premium evaporated by Q4 2025'
-    ctr_collapse_factor: '6x'
-    implication: 'Only remaining deal benefit is direct cash payment'
+    source: Brookings/OMI "Same Gatekeepers, New Tollbooths" (Jun 9 2026)
+    finding: Publisher AI deal click-through premium evaporated by Q4 2025
+    ctr_collapse_factor: 6x
+    implication: Only remaining deal benefit is direct cash payment
   scrape_to_referral_ratios:
     source: TollBit Q1 2025 State of the Bots
-    google_search: '~10:1'
+    google_search: ~10:1
     openai: '179:1'
     perplexity: '369:1'
-    anthropic: '8,692:1'
+    anthropic: 8,692:1
   organic_traffic_decline:
-    us_visits: '2.3B → <1.7B'
-    top_500_publishers_yoy: '-27%'
-    monthly_lost_visits: '64M fewer/month'
+    us_visits: 2.3B → <1.7B
+    top_500_publishers_yoy: -27%
+    monthly_lost_visits: 64M fewer/month
   publisher_double_bind:
     source: Brookings (Jun 9 2026)
-    finding: 'Same Big Tech firms eroding traffic control the licensing infrastructure'
-    examples: [Google (AI Overviews + Showcase), Microsoft (Copilot + PCM)]
+    finding: Same Big Tech firms eroding traffic control the licensing infrastructure
+    examples:
+    - Google (AI Overviews + Showcase)
+    - Microsoft (Copilot + PCM)
   three_tier_market:
-    tier_1: 'Bilateral deals (large publishers, confidential)'
-    tier_2: 'Intermediaries (PCM, Snowflake Cortex, Factiva, TollBit, etc.)'
-    tier_3: 'Long tail (local/regional — structurally excluded)'
+    tier_1: Bilateral deals (large publishers, confidential)
+    tier_2: Intermediaries (PCM, Snowflake Cortex, Factiva, TollBit, etc.)
+    tier_3: Long tail (local/regional — structurally excluded)
   intermediary_expansion:
-    snowflake_cortex: {publishers: 17, notable: [WaPo, AP, People, USA Today]}
-    factiva: {ai_rights_sources: 8100, fraction_of_total: '>25%'}
-    microsoft_pcm: {investment: '>$10M', publishers: [Condé Nast, Hearst, AP, Vox Media]}
+    snowflake_cortex:
+      publishers: 17
+      notable:
+      - WaPo
+      - AP
+      - People
+      - USA Today
+    factiva:
+      ai_rights_sources: 8100
+      fraction_of_total: '>25%'
+    microsoft_pcm:
+      investment: '>$10M'
+      publishers:
+      - Condé Nast
+      - Hearst
+      - AP
+      - Vox Media
   source_urls:
-    - https://www.brookings.edu/articles/same-gatekeepers-new-tollbooths-in-the-ai-content-licensing-market/
-    - https://securityboulevard.com/2026/04/the-ai-content-crisis-how-llms-are-draining-media-revenue-and-the-technologies-fighting-back/
-    - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
-    - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+  - https://www.brookings.edu/articles/same-gatekeepers-new-tollbooths-in-the-ai-content-licensing-market/
+  - https://securityboulevard.com/2026/04/the-ai-content-crisis-how-llms-are-draining-media-revenue-and-the-technologies-fighting-back/
+  - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+  - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
   designtechnica_corp:
     display_name: Digital Trends (Designtechnica Corp)
     aliases:
@@ -8391,28 +8449,24 @@ ai_content_market_economics:
     strategic_partnerships:
     - entity: Valnet Inc
       type: advertising
-      details: Combined 200M+ readers for advertising scale. Valnet owns Android
-        Police, MakeUseOf, Screen Rant.
+      details: Combined 200M+ readers for advertising scale. Valnet owns Android Police, MakeUseOf, Screen Rant.
     google_dependencies:
     - programmatic_advertising
     - search_traffic
     - analytics
-    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B
-      globally), major advertising client for consumer electronics review sites
+    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B globally), major advertising client for
+      consumer electronics review sites
     meta_financial_ties: none
     meta_content_licensing_deals: none
     meta_advertising_partnerships: none
     meta_as_ad_competitor: true
-    notes: 'Independent ad-dependent publisher. Competes with Meta for digital advertising
-      revenue (Meta is an ad platform competitor). Google and Samsung are advertising
-      clients. No known Meta financial relationships. Valnet partnership creates
-      shared editorial infrastructure with Android Police (mechanism #132 documents
-      Andy Boxall cross-entity coverage on Android Police, same writer also
-      contributes to Digital Trends).'
+    notes: 'Independent ad-dependent publisher. Competes with Meta for digital advertising revenue (Meta is an ad platform
+      competitor). Google and Samsung are advertising clients. No known Meta financial relationships. Valnet partnership creates
+      shared editorial infrastructure with Android Police (mechanism #132 documents Andy Boxall cross-entity coverage on Android
+      Police, same writer also contributes to Digital Trends).'
     mechanisms:
     - mechanism_id: 138
-      mechanism_name: Digital Trends Editorial-Level Smart Glasses Privacy Vocabulary
-        Asymmetry
+      mechanism_name: Digital Trends Editorial-Level Smart Glasses Privacy Vocabulary Asymmetry
   phonearena:
     name: PhoneArena
     type: independent_publisher
@@ -8429,8 +8483,8 @@ ai_content_market_economics:
     - programmatic_advertising
     - search_traffic
     - google_team_pixel_credential (Johanna Romero, since 2022)
-    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B
-      globally), major client for consumer electronics review sites
+    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B globally), major client for consumer electronics
+      review sites
     meta_financial_ties: none
     meta_content_licensing_deals: none
     meta_advertising_partnerships: none
@@ -8440,17 +8494,16 @@ ai_content_market_economics:
     key_journalists:
     - name: Johanna Romero
       role: Senior News Writer
-      credential: Google #TeamPixel member since 2022
+      credential: Google
       beat: Samsung/Google ecosystem
     - name: Ilia
       role: Tech Journalist
       background: Bulgarian, based in Lima Peru, formerly Forbes Bulgaria
       beat: Meta/Apple comparative coverage
-    notes: 'Independent Bulgarian tech publisher with zero corporate parent. Google
-      #TeamPixel credential (Johanna Romero) creates structural access/relationship
-      dependency for Samsung/Google coverage. Beat assignment puts credentialed
-      reporter on Samsung/Google and separate reporter (Ilia) on Meta adversarial
-      coverage, producing cross-entity framing asymmetry within the same publication.'
+    notes: 'Independent Bulgarian tech publisher with zero corporate parent. Google #TeamPixel credential (Johanna Romero)
+      creates structural access/relationship dependency for Samsung/Google coverage. Beat assignment puts credentialed reporter
+      on Samsung/Google and separate reporter (Ilia) on Meta adversarial coverage, producing cross-entity framing asymmetry
+      within the same publication.'
     mechanisms:
     - mechanism_id: 141
       mechanism_name: PhoneArena Cross-Entity Beat-Assignment Credentialing Asymmetry
