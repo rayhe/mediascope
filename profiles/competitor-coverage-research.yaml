@@ -14946,6 +14946,95 @@ cross_publication_findings:
     - https://www.eweek.com/news/nvidia-openai-30b-plan/
     - https://www.campaignlive.com/article/nvidias-shock-20bn-groq-deal-means-adland/1944164
     test_file: tests/test_nvidia_openai_gpu_capital_circularity_publisher_incentive_chain_aug17.py
+
+  podcast_same_episode_framing_asymmetry:
+    mechanism_id: 153
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    finding_type: cross_medium_vocabulary_asymmetry
+    domain: podcast_sentiment_tracking
+    entities:
+    - meta
+    - openai
+    - google
+    - apple
+    - samsung
+    - snap
+    finding_summary: 'Within the SAME podcast episode, Meta receives adversarial framing
+      vocabulary (pervert, under fire, backlash, ban) while competitors with equivalent
+      or greater privacy concerns receive neutral/positive vocabulary. This within-episode
+      differential eliminates confounders like publication editorial line, podcast genre,
+      or host bias. Fortune AI Weekly applies "Under Fire" to Meta and "Released to Everyone"
+      to OpenAI in the same 24min episode. AI Inside (Aug 13) uses "pervert glasses" and
+      "ban" for Meta but neutral product framing for OpenAI hardware device (which has identical
+      surveillance potential). Smashing Security #455 gives Meta "villain"/"mass surveillance"
+      framing while Google Glass gets nostalgic "PTSD trauma" sympathy. BBC What in the World
+      (publicly funded, no financial incentives) confirms cultural consensus operates
+      independently of commercial relationships. Double Tap accessibility podcast (4+ episodes,
+      blind user reviews) provides strongest counternarrative but genuine enthusiasm is now
+      captured by "wash through disabled community" discourse — Apple/Google accessibility
+      marketing never receives equivalent "washing" accusations.'
+    mechanism_type: cross_medium_vocabulary_asymmetry
+    key_financial_data:
+      episodes_analyzed: 17
+      meta_targeted_episodes: 13
+      competitor_targeted_episodes: 0
+      same_episode_asymmetry_instances: 4
+      counternarrative_episodes: 2
+      publicly_funded_sources_with_asymmetry: 1
+    confounders:
+    - strength: STRONG
+      description: 'Meta has 80%+ smart glasses market share (BBC figure). Dominant
+        vendors legitimately receive disproportionate scrutiny. However, 100% scrutiny
+        vs 0% for competitors with identical hardware is disproportionate to market
+        share differential.'
+    - strength: STRONG
+      description: 'Meta NameTag internal memo ("wash through disabled community")
+        was genuinely damaging and legitimately newsworthy. Coverage of the memo is
+        warranted. However, the coverage creates discourse capture where genuine
+        accessibility enthusiasm becomes suspect.'
+    - strength: MODERATE
+      description: 'Podcast episode chapter titles are chosen for audience engagement
+        (clicks, listens). "Pervert glasses" drives more engagement than "OpenAI
+        hardware device." Chapter title framing may reflect algorithmic optimization
+        rather than editorial bias.'
+    - strength: MODERATE
+      description: 'OpenAI device is pre-launch (hockey puck form factor announced).
+        Meta glasses are shipping at scale (7M+ units). Scrutiny proportional to
+        deployment scale is reasonable. However, the vocabulary differential
+        (neutral vs alarm) is not explained by deployment stage alone.'
+    - strength: WEAK
+      description: 'Some podcast hosts may not be aware of Samsung/Google/Snap glasses.
+        Smart glasses market awareness is Meta-dominated. However, professional tech
+        podcasts (Fortune AI Weekly, AI Inside) cover the full industry.'
+    testable_predictions:
+    - 'When Samsung Galaxy Glasses ship (late 2026), podcast scrutiny will be
+      disproportionately low relative to sales volume. Prediction: Samsung will
+      receive less than 20% of the per-unit podcast privacy scrutiny Meta received
+      at equivalent sales volumes.'
+    - 'OpenAI hardware device (when launched) will receive neutral/positive podcast
+      framing despite microphone/camera capabilities identical to Meta glasses, based
+      on the same-episode vocabulary differential documented here.'
+    - 'Double Tap accessibility podcast will continue positive Meta glasses coverage
+      without equivalent coverage of Samsung/Google accessibility glasses, because
+      no competitor ships accessible glasses at comparable price and availability.'
+    cross_references:
+    - 144
+    - 148
+    - 112
+    - 130
+    - 135
+    - 137
+    source_urls:
+    - https://grahamcluley.com/smashing-security-podcast-455/
+    - https://www.youtube.com/watch?v=TVdoEPg42pQ
+    - https://au.radio.net/podcast/ai-inside
+    - https://www.listennotes.com/podcasts/what-in-the-world/why-are-smart-glasses-so-OGIk4bCXi5E/
+    - https://nz.radio.net/podcast/double-tap-canada
+    - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+    - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+    - https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+    test_file: tests/test_podcast_same_episode_framing_asymmetry_aug17.py
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

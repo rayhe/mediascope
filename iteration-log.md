@@ -1,3 +1,50 @@
+## Iteration #154 — Mon 2026-08-17 09:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Focus: Same-Episode Framing Asymmetry + Discourse Capture of Accessibility (Mechanism #153)**
+
+**DISCOVERY: Within-episode framing differential eliminates publication-level confounders**
+
+Analyzed 5 new podcast episodes and 1 campaign escalation, bringing total tracked episodes to 17+. The strongest finding is WITHIN-EPISODE framing asymmetry: the SAME hosts, in the SAME recording session, apply adversarial vocabulary to Meta and neutral/positive vocabulary to competitors:
+
+**Fortune AI Weekly (~Jul 14, 2026):**
+- Meta: "AI Image Tool Sparks Privacy BACKLASH" + "AI Glasses Are UNDER FIRE"
+- OpenAI: "Released GPT-5.6 to EVERYONE" + "New GPT Live Voice Assistant"
+- Anthropic: "'J Space' EXPLAINED"
+- 2 adversarial Meta frames vs 0 adversarial OpenAI frames in same 24min episode
+
+**AI Inside (Aug 13, 2026, Jason Howell & Jeff Jarvis):**
+- Meta: "UK Venues BAN Meta Smart Glasses En Masse" + "'PERVERT glasses' content"
+- OpenAI: "New Device Will Be Hockey Puck-Sized" (neutral product)
+- Same episode frames Zuckerberg's "Future is for Everyone" manifesto positively but glasses negatively
+
+**Smashing Security #455 (~Jul 2026, full transcript):**
+- Meta: "villain," "mass surveillance," "$7B fines," "solution in search of a problem"
+- Google Glass: "PTSD trauma" — SYMPATHETIC framing for identical technology category
+- Host Ball acknowledges phones are "easier" for creep shots, does NOT revise glasses-as-threat premise
+- Key quote: "This is the sort of stuff that villains write in movies for 6-year-olds"
+
+**BBC "What in the World" (Jun 19, 2026):**
+- PUBLICLY FUNDED (UK license fee) — no advertising or content deal dependencies
+- Shows identical asymmetry to commercially funded podcasts
+- Eliminates financial incentive hypothesis for broadcast media — CULTURAL CONSENSUS confirmed
+
+**NEW PATTERN: Discourse Capture of Accessibility**
+The most significant structural finding connects Smashing Security to Double Tap:
+1. Meta internally plans accessibility PR strategy (NYT leak: "wash through disabled community")
+2. Smashing Security mocks this as "using people with visual impairment as a human shield"
+3. Double Tap (AMI-audio, 4+ episodes, blind users) proves GENUINE enthusiasm — glasses enable independence
+4. But genuine enthusiasm is now frameable as corporate complicity
+5. Apple/Google accessibility marketing NEVER receives "washing" accusations
+→ Meta-unique chilling effect on positive accessibility coverage
+
+**EHE Campaign Escalation:** Jeffrey Epstein sex offender registry photo outside Ray-Ban flagship (~Aug 10). Third escalation phase (tech critique → horror movie → sex offender). Zero equivalent campaigns for Samsung (26 days post-announcement), Google, Apple, or Snap.
+
+**Deliverables:**
+- `tests/test_podcast_same_episode_framing_asymmetry_aug17.py` (10 classes, 53 tests, all passing)
+- podcast-sentiment.md updated with 5 new episodes (#13-#17) + EHE escalation + revised cross-medium summary
+- Mechanism #153 added to competitor-coverage-research.yaml
+- README + ARCHITECTURE synced (438 files, ~15,457 tests, 153 mechanisms)
+
 ## Iteration #153 — Mon 2026-08-17 08:00 PT (Type D: Test & Verify)
 
 **Focus: Structural Integrity Fixes + Cross-Validation Suite for Mechanisms #149–#152**

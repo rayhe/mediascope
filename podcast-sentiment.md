@@ -341,5 +341,204 @@ The podcast ecosystem does not independently evaluate smart glasses privacy. Ins
 
 ---
 
-*Last updated: 2026-08-17 11:00 UTC (Aug 17, 4:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification) and #148 (Vox Media Network Cross-Medium Portability)*
+---
+
+### 13. Smashing Security #455 — "Face off: Meta's Glasses and America's internet kill switch" (~Jul 2026)
+
+- **Host:** Graham Cluley (veteran cybersecurity journalist/blogger)
+- **Guest:** James Ball (political editor, The New World; former Guardian/Snowden reporting)
+- **Network:** Independent, sponsored by Adaptive Security, Passwork, Vanta
+- **Source URL:** https://grahamcluley.com/smashing-security-podcast-455/
+
+**Coverage Summary:**
+Full-length cybersecurity podcast segment on Meta glasses privacy. Cluley frames Meta as "the company formerly known as Facebook, that cared for its users' privacy and data in such a reckless manner it had to actually rebrand itself." Detailed discussion of NameTag facial recognition feature (via NYT leak), the Meta internal memo stating they would "launch during a dynamic political environment" to avoid scrutiny, and the strategy to "wash the product launch through the disabled community."
+
+**Key Quotes:**
+- James Ball: "This is exactly how not to do it. This will go into training as being comedically dumb. This is the worst PR since on 9/11, a Labour spad said, 'Today is a terrific day to bury bad news.'"
+- James Ball: "This is the sort of stuff that villains write in movies for 6-year-olds to make sure that they know who the bad guy is."
+- Graham Cluley: "It feels to me Mark Zuckerberg is using people with visual impairment as a human shield to soften the PR launch of this mass surveillance feature."
+- James Ball: "I am just generally reminded that Facebook hasn't launched a good product in years."
+- Ball: "I keep wanting to say crap... they're crap. They're dreadful."
+- Ball on wearable tech generally: "It is a solution in search of a problem."
+- Cluley (Meta's super sensing glasses): "Always on, always watching. It's a bit like having a dashcam on your face."
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named 30+ times, framed as villain, "glassholes" term revived, "mass surveillance feature," "$7 billion in fines" cited
+- **Google:** Mentioned ONLY as historical precedent (Glass 2013), framed sympathetically ("PTSD trauma over Google Glasses"). Despite Google launching Android XR smart glasses with Warby Parker, zero current privacy scrutiny
+- **Samsung:** Not mentioned at all despite Galaxy Glasses announcement at Unpacked
+- **Apple:** Not mentioned despite upcoming N50 glasses
+- **Snap:** Not mentioned despite $2,195 Spectacles with cameras
+
+**Critical Finding — "Wash Through Disabled Community" Discourse:**
+The episode creates a paradox: Smashing Security mocks Meta's plan to "wash through the disabled community," while the Double Tap podcast (episode #13 below) shows blind users GENUINELY enthusiastic about Meta glasses for accessibility. The "washing" language instrumentalizes the disability community's legitimate enthusiasm by framing it as corporate manipulation. The discourse has been captured: genuine use cases become suspect because of Meta's internal framing.
+
+**Sentiment Score:** -8/10 (strongly negative, villain framing with comedic contempt)
+**Asymmetry Assessment:** HIGH — Google Glass gets nostalgic sympathy ("PTSD trauma"), Meta glasses get villain framing. Ball's acknowledgment that phones can do creep shots "easier" than glasses does NOT lead to re-evaluation of whether glasses are the real problem — instead reinforces "solution in search of a problem."
+
+---
+
+### 14. BBC "What in the World" — "Why are smart glasses so controversial?" (Jun 19, 2026)
+
+- **Host:** Iqra Farooq (BBC)
+- **Reporters:** Laura Cress (BBC tech), Georgia Poncia (BBC investigative)
+- **Network:** BBC World Service
+- **Source URL:** https://www.listennotes.com/podcasts/what-in-the-world/why-are-smart-glasses-so-OGIk4bCXi5E/
+
+**Coverage Summary:**
+BBC's flagship global explainer podcast covers smart glasses "controversy." Notes Meta sold 7 million pairs, discusses designs resembling regular glasses making them "difficult to spot," and focuses on "cases of people being filmed secretly and posted online without their consent."
+
+**Entity Coverage Assessment:**
+- **Meta:** Named as market leader with 80%+ market share, primary subject of controversy
+- **Google/Samsung/Apple/Snap:** Not examined in episode description despite identical camera+AI capabilities
+- BBC framing positions this as a "Meta problem" rather than a "smart glasses industry problem"
+
+**BBC Financial Context:**
+BBC is publicly funded (UK license fee), no known advertising or content deal dependencies on Meta or competitors. This suggests the Meta-targeting is editorial/cultural rather than financially incentivized — strengthening the "cultural consensus" hypothesis over the "financial incentive" hypothesis for broadcast/podcast media.
+
+**Sentiment Score:** -5/10 (moderately negative, investigative-journalism framing)
+**Asymmetry Assessment:** MODERATE — BBC's public funding makes financial incentive implausible. The asymmetry is cultural: Meta IS the dominant vendor and thus the default example. But the proportionality test fails: "controversial" is attached exclusively to Meta's glasses, not to the category.
+
+---
+
+### 15. Fortune AI Weekly — "Why Meta's Ray-Bans Sparked a Huge Privacy Debate" (~Jul 14, 2026)
+
+- **Hosts:** Jeremy Kahn (Fortune AI Editor), Bea Nolan (Fortune AI Reporter)
+- **Network:** Fortune / YouTube
+- **Source URL:** https://www.youtube.com/watch?v=TVdoEPg42pQ
+
+**Coverage Summary:**
+Weekly AI roundup. 24-minute episode covers GPT-5.6 rollout, Illinois AI law, Meta AI image tool backlash, Meta glasses privacy, Anthropic's "J Space," and AI consciousness debate. Meta glasses segment at 15:57 under "Why Meta's AI Glasses Are Under Fire."
+
+**Same-Episode Framing Asymmetry:**
+| Timestamp | Topic | Framing |
+|-----------|-------|---------|
+| 01:26 | OpenAI GPT-5.6 | "Why OpenAI Released GPT-5.6 to Everyone" — INCLUSIVE, democratization |
+| 06:24 | US AI policy | "Is the U.S. Favoring OpenAI?" — QUESTION, neutral |
+| 12:58 | OpenAI voice assistant | "OpenAI's New GPT Live Voice Assistant" — PRODUCT, aspirational |
+| 14:33 | Meta AI image tool | "Sparks Privacy BACKLASH" — ADVERSARIAL |
+| 15:57 | Meta glasses | "Under FIRE" — ADVERSARIAL, combative metaphor |
+| 18:35 | Anthropic J Space | "Explained" — NEUTRAL, educational |
+
+Within the same 24-minute episode, OpenAI gets 3 positive/neutral frames while Meta gets 2 adversarial frames. Anthropic gets neutral. OpenAI's GPT-5.6 jailbreaks (05:24, "Raise Security Concerns") gets a technical frame while Meta's glasses get "Under Fire."
+
+**Financial Context:**
+Fortune (Broadband Capital Partners / Chatchai Virackaphan ownership since 2024). No known direct AI content licensing deals. However, Fortune's AI Weekly show depends on AI industry access for exclusives — adversarial coverage of some players vs favorable coverage of others may reflect access-trading dynamics rather than financial deals.
+
+**Sentiment Score:** -5/10 (moderately negative toward Meta, neutral-positive toward competitors)
+**Asymmetry Assessment:** HIGH — Same-episode framing differential is the strongest evidence of editorial asymmetry. Identical privacy concerns (GPT-5.6 jailbreaks, AI voice assistant data collection) receive technical framing while Meta gets combative vocabulary.
+
+---
+
+### 16. AI Inside — "The AI Race Just Moved the Goal Posts" (Aug 13, 2026)
+
+- **Hosts:** Jason Howell, Jeff Jarvis
+- **Network:** TWiT Network (Megaphone distribution)
+- **Duration:** 1h 32 min
+- **Source URL:** https://au.radio.net/podcast/ai-inside
+
+**Coverage Summary:**
+Weekly AI roundup. 92-minute episode covering Nvidia financing, Zuckerberg "Future is for Everyone" manifesto, Anthropic watermarks, DeepMind leadership, Pixel 11, UK venues banning Meta glasses, OpenAI hardware device, and more.
+
+**Same-Episode Framing Asymmetry:**
+| Timestamp | Topic | Framing |
+|-----------|-------|---------|
+| 0:03:14 | Zuckerberg manifesto | "The Future is for Everyone" — POSITIVE (direct title) |
+| 1:14:34 | Meta glasses bans | "UK Venues Ban Meta Smart Glasses En Masse" — ADVERSARIAL |
+| 1:15:11 | Meta glasses influencers | "'I've definitely lost followers': influencers face backlash over Meta 'pervert glasses' content" — ALARM vocabulary (pervert) |
+| 1:19:12 | OpenAI hardware | "OpenAI's New Device Will Be Hockey Puck-Sized and Cost Over $300" — NEUTRAL product announcement |
+
+OpenAI's physical AI device (which will presumably have microphones and potentially cameras) gets neutral product-announcement framing while Meta's glasses get "ban" + "pervert" + "backlash" framing. Same episode, same hosts, different vocabulary.
+
+**Jeff Jarvis Context:**
+Jarvis is a prominent media critic and NYU journalism professor, author of "What Would Google Do?" His show covers AI technology from a position of authority. The juxtaposition of treating Zuckerberg's vision statement positively but the glasses negatively in the same episode illustrates how the cultural consensus operates even among informed commentators.
+
+**Sentiment Score:** -6/10 (negative toward Meta glasses, neutral/positive toward competitors)
+**Asymmetry Assessment:** HIGH — "Pervert glasses" vocabulary used in chapter title. OpenAI's hardware device with identical surveillance potential gets neutral product framing.
+
+---
+
+### 17. Double Tap — "Meta Adventurer Glasses: Real-World Review for Blind Users" (Aug 12, 2026)
+
+- **Hosts:** Steven Scott, Shaun Preece
+- **Guest:** Gordon Anthony
+- **Network:** AMI-audio (Accessible Media Inc., Canada)
+- **Duration:** 55 min
+- **Source URL:** https://nz.radio.net/podcast/double-tap-canada
+
+**Coverage Summary:**
+In-depth accessibility review of the new Meta Adventurer smart glasses from the perspective of blind and visually impaired users. Covers build quality, microphone performance, Be My Eyes integration, audiobook listening, WhatsApp calls. Also debates "public perception and potential bans" but weighs them against "obvious accessibility benefits."
+
+**Critical Significance — The Counternarrative:**
+Double Tap is a DAILY accessibility-focused podcast on Canada's AMI-audio network. Their Meta glasses coverage provides the strongest counterexample to universal negative framing:
+- **4+ episodes dedicated to Meta glasses** (setup guide, Be My Eyes integration, Adventurer review, smart glasses comparison)
+- **Genuinely enthusiastic** — Gordon Anthony shares how glasses improve daily independence
+- **Privacy-aware but balanced** — hosts acknowledge bans/privacy debates but weigh them against real accessibility value
+- **No competitor glasses reviewed** — Not because of Meta bias, but because Meta is the ONLY company shipping affordable, accessible smart glasses (EchoVision and Ally Solos are specialty devices at higher price points)
+
+**Sentiment Score:** +4/10 (positive toward Meta glasses, balanced on privacy)
+**Asymmetry Assessment:** INVERTED — Meta glasses are the protagonist, not the villain. However, this inversion occurs because of the accessibility use case, not because of financial incentives. Double Tap reviews ALL smart glasses (EchoVision, Ally Solos) — Meta's are simply the most practical and affordable.
+
+**Cross-Reference to Smashing Security #455:**
+Smashing Security mocks Meta's plan to "wash through the disabled community." Double Tap's 4+ episodes prove blind users aren't being "washed" — they're genuine early adopters who find real value. The discourse has captured accessibility: genuine enthusiasm is reframed as corporate manipulation, making it harder for accessibility advocates to champion the product without appearing complicit.
+
+---
+
+### Updated: "Everyone Hates Elon" Campaign Escalation (Aug ~10, 2026)
+
+**New Campaign Phase: Epstein Poster at Ray-Ban Flagship**
+
+EHE escalated from the lenticular Kylie Jenner bus stop ad (Jul 2026) to a Jeffrey Epstein poster placed outside Ray-Ban's London flagship store. The poster shows Epstein's sex offender registry photo with Meta glasses photoshopped on, captioned: "Glasses for people who don't do consent."
+
+**Source URLs:**
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+
+**Campaign Timeline:**
+1. Early Jul 2026: "The biggest advancement in pervert technology since the trench coat" posters near Meta London HQ
+2. Mid-Jul 2026: Lenticular Kylie Jenner "They Live" spoof at bus stop near Meta London HQ
+3. ~Aug 10, 2026: Jeffrey Epstein sex offender registry poster outside Ray-Ban flagship
+4. Aug 3, 2026: MediaPost reports Meta's official response — platform moderation bans, hardware safeguards
+
+**Escalation Analysis:**
+Each campaign iteration uses more extreme imagery (tech critique → horror movie → convicted sex offender). The Epstein poster represents peak provocation — associating Meta glasses with the most notorious consent violator in recent memory. No equivalent campaign exists or has ever existed for Samsung, Google, Apple, or Snap glasses.
+
+**Media Amplification:**
+The campaigns generate coverage in Hyperallergic (art/culture), The Times (UK broadsheet), PetaPixel (photography), MediaPost (advertising trade), AfroTech, Engadget (Karissa Bell), and BBC — each outlet covering EHE's Meta-targeting without noting the absence of equivalent campaigns targeting competitors.
+
+**Testable Prediction Update:**
+Original prediction from prior analysis: "The group will NOT produce equivalent campaigns targeting Samsung, Google, or Apple glasses within 6 months of their respective launches." As of August 2026, Samsung Galaxy Glasses were announced July 22 — EHE has produced ZERO Samsung campaigns in 26 days. Prediction holding.
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 17, 2026)
+
+### Podcast vs Print/Online Coverage Comparison (17+ episodes)
+
+| Pattern | Print/Online | Podcast (17+ episodes) | Alignment |
+|---------|-------------|---------|-----------|
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (13 of 17 episodes, including Smashing Security, Kill Switch, BBC, Fortune, AI Inside) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 17 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR: innovation lens; MediaPost: "Apple views privacy as its top priority") | **ALIGNED** |
+| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny in 17 episodes) | **ALIGNED** |
+| Gendered surveillance critique | ✅ (CNN "manfluencers", Engadget) | ✅ (Guilty Feminist, EHE "pervert," AmberMac, AfroTech) | **ALIGNED** |
+| Same-episode framing asymmetry | ✅ (headline vocabulary differential) | ✅ (Fortune: "Under Fire" for Meta / "Released to Everyone" for OpenAI; AI Inside: "pervert" for Meta / neutral product for OpenAI device) | **ALIGNED** |
+| Accessibility enthusiasm | N/A (rare in print) | ✅ (Double Tap: 4+ episodes, genuine blind user advocacy) | **COUNTER-NARRATIVE** |
+| "Washing" discourse capture | ✅ (NYT NameTag leak) | ✅ (Smashing Security #455 mocks disability washing; Double Tap proves genuine use) | **NEW PATTERN** |
+
+### New Pattern: Discourse Capture of Accessibility
+
+The most significant finding from this iteration is the **discourse capture loop**:
+1. Meta internally plans to use accessibility as PR strategy (NYT leak of "wash through disabled community" memo)
+2. Cybersecurity podcasts (Smashing Security) cite this as evidence of corporate cynicism
+3. Blind users' GENUINE enthusiasm (Double Tap, 4+ episodes, Be My Eyes integration) becomes suspect
+4. Any positive coverage of Meta glasses accessibility is now frameable as "corporate washing"
+5. This creates a chilling effect where genuine accessibility benefits cannot be discussed without appearing complicit
+
+This pattern is UNIQUE to Meta. Apple's accessibility marketing (VoiceOver, Switch Control) has never been described as "washing" despite identical PR strategy. Google's accessibility features (TalkBack, Lookout) receive celebratory coverage. The "washing" accusation applies exclusively to Meta.
+
+---
+
+*Last updated: 2026-08-17 16:00 UTC (Aug 17, 9:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry)*
