@@ -2434,3 +2434,34 @@ First empirical test of mechanism #128's predictions about post-spinoff advertis
 - All 55 tests pass
 
 **Cumulative:** 134 mechanisms, ~14,626 tests, 417 files
+
+---
+
+### Iteration #144 — Mechanism #140: SpaceX IPO Passive Index Fund Convergence
+**Type:** C (Financial Incentive Mapping)
+**Date:** 2026-08-16 17:00 PT
+**Commit:** ec76ad5
+
+**Core finding:** SpaceX IPO (June 12, 2026, $1.75T, SPCX) created institutional investor overlap between xAI/X and media companies. Before the IPO, xAI/X had a purely antagonistic publisher relationship (mechanism #68 — zero content deals, active traffic destruction). After June 12, Vanguard, BlackRock, and State Street were mandated to buy SpaceX shares via Nasdaq-100, Russell 1000, MSCI Global, and Vanguard Total Market inclusion.
+
+Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, State Street 3.12%), News Corp ~27.3% (Vanguard 11%, State Street 9.34%, BlackRock 6.93%). xAI is wholly owned SpaceX subsidiary (triangular merger Feb 2, 2026).
+
+**Critical nuance:** Mechanism predicts the NULL HYPOTHESIS — passive convergence has NO measurable effect on editorial tone. The antagonism reinforcement loop (Musk's "Legacy Media Lies") overwhelms passive convergence. Value is documenting structural economic reality, not predicting tone shift. Private publishers (Condé Nast, Atlantic) serve as control group (no public shareholders). S&P 500 inclusion (earliest June 2027) provides future replication.
+
+**Confounders documented (5):**
+1. STRONG: Editorial independence from institutional shareholders well-documented
+2. STRONG: xAI/X Legacy Media Lies antagonism-reinforcement loop
+3. MODERATE: SpaceX free float ~7% at IPO — small relative to portfolio
+4. MODERATE: Index rebalancing is mechanical, no editorial opinion
+5. WEAK: Musk persona drives coverage more than financial modeling
+
+**Cross-references:** #68 (extends), #47 (parallels), #36 (complements)
+
+**Changes:**
+- New test: `test_spacex_ipo_passive_index_fund_xai_convergence_aug16.py` (23 tests, 8 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #140 added)
+- Updated: `competitor-entities.yaml` (xAI entity: SpaceX merger/IPO data, index inclusion timeline, institutional convergence note)
+- Updated: README.md + ARCHITECTURE.md (422 test files, 14,866 tests)
+- All 23 new + 8 structural consistency tests pass
+
+**Cumulative:** 140 mechanisms, ~14,866 tests, 422 files
