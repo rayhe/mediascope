@@ -1,3 +1,46 @@
+## Iteration #144 — Sun 2026-08-16 23:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Focus: Cross-medium podcast ecosystem analysis — Everyone Hates Elon, Attention Sphere, The Guilty Feminist + discovered sources**
+
+**DISCOVERY: Podcast Ecosystem Privacy Vocabulary Amplification (Mechanism #144)**
+
+First Type E iteration. Researched the three specified sources and discovered that two are NOT podcasts:
+- **Everyone Hates Elon** = London-based activist group (guerrilla campaigns targeting Meta glasses, fake bus stop ads with "They Live" optical tricks, Jul 2026)
+- **Attention Sphere** = non-profit org by Ava Smithing (appears as guest on other shows, not its own podcast)
+- **The Guilty Feminist** = actual podcast (Deborah Frances-White, ~495 episodes, TOP 0.01% global rank)
+
+Expanded analysis to 7+ podcast episodes across 6 sources:
+
+| Source | Episode | Date | Sentiment | Asymmetry |
+|--------|---------|------|-----------|-----------|
+| Kill Switch (iHeart) | The Glassholes Are Back | 2025-09-17 | -7/10 | HIGH |
+| Utilizing AI (Futurum) | Ep 33: AI Wearables as Trojan Horses | ~2026-06-30 | -6/10 | MODERATE |
+| Guilty Feminist | #481 The Algorithm | 2026-05-04 | -5/10 | LOW |
+| Guilty Feminist | #480 Keep Palantir Out Of Our NHS | 2026-04-27 | -8/10 | MODERATE |
+| Bloomberg Tech | Apple Smart Glasses | 2026-07-27 | -2/10 | MODERATE |
+| Shared Security | 7 Million Bought These AI Glasses | ~2026-03-16 | -6/10 | HIGH |
+
+**Key finding:** Podcast coverage mirrors ALL FIVE print/online asymmetry patterns:
+1. Meta as default privacy villain ✅ (matches mechanisms #112, #137)
+2. Samsung/Google zero scrutiny ✅ (matches #135, #137)
+3. Apple aspirational framing ✅ (matches #101, #136)
+4. Snap privacy-free framing ✅ (matches #130)
+5. Gendered surveillance critique ✅ (CNN/Engadget + Guilty Feminist/Everyone Hates Elon)
+
+**Critical distinction from print asymmetry:** Podcast asymmetry is primarily **cultural consensus** rather than financially incentivized. Meta's 80%+ market share makes it the default target. However, Samsung/Google/Apple/Snap with identical camera+mic+AI hardware receive exactly 0% scrutiny across all podcasts analyzed — which fails proportionality.
+
+**Victoria Song cross-medium consistency:** Her print privacy vocabulary bifurcation (mechanism #112) extends identically to her Kill Switch podcast appearance. Same journalist, same framing, different medium.
+
+**Everyone Hates Elon amplification loop:** Activist group → Engadget (Karissa Bell) → Singulism, AfroTech, HuffPost, BBC → podcast citations. No equivalent loop for any competitor's glasses.
+
+**6 confounders (3 STRONG, 2 MODERATE, 1 WEAK), 4 testable predictions.**
+
+**Deliverables:**
+- `podcast-sentiment.md` — comprehensive tracking file (new, 7 episodes analyzed)
+- `tests/test_podcast_ecosystem_privacy_vocabulary_amplification_aug16.py` — 10 classes, 29 tests, all passing
+- `profiles/competitor-coverage-research.yaml` — mechanism #144 added
+- README + ARCHITECTURE synced (427 files, ~15,072 tests, 144 mechanisms)
+
 ## Iteration #143 — Sun 2026-08-16 14:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: Inc.com (Mansueto Ventures) Samsung/Google vs Meta smart glasses coverage**

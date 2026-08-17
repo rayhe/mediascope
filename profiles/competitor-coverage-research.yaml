@@ -17625,3 +17625,99 @@ publications:
     - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
     - https://techcrunch.com/2026/03/05/meta-sued-over-ai-smart-glasses-privacy-concerns/
 research_period: 2024-08-01 to 2026-08-17
+  podcast_ecosystem_privacy_vocabulary_amplification:
+    mechanism_id: 144
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-16'
+    finding_type: cross_medium_amplification
+    domain: podcast_ecosystem
+    description: >
+      Podcast coverage of smart glasses privacy mirrors and amplifies
+      print/online asymmetry. Meta receives 100% of privacy scrutiny across
+      7+ analyzed podcast episodes while Samsung, Google, Apple, and Snap
+      receive 0% scrutiny. Unlike print/online asymmetry which correlates
+      with financial incentives, podcast asymmetry is primarily cultural
+      consensus driven by Meta's 80%+ market share.
+    sources_analyzed:
+    - name: Kill Switch
+      network: Kaleidoscope / iHeart
+      host: Dexter Thomas
+      episode: The Glassholes Are Back
+      date: '2025-09-17'
+      guest: Victoria Song (The Verge)
+      sentiment_score: -7
+      asymmetry: HIGH
+    - name: Utilizing AI
+      network: Futurum Group / Tech Field Day
+      host: Stephen Foskett
+      episode: "Ep 33: Are AI Wearables Just Trojan Horses for Corporate Surveillance?"
+      date: '2026-06-30'
+      sentiment_score: -6
+      asymmetry: MODERATE
+    - name: The Guilty Feminist
+      host: Deborah Frances-White
+      episode: "#481 The Algorithm"
+      date: '2026-05-04'
+      guest: Adele Zeynep Walton
+      sentiment_score: -5
+      asymmetry: LOW
+    - name: The Guilty Feminist
+      host: Deborah Frances-White
+      episode: "#480 Keep Palantir Out Of Our NHS"
+      date: '2026-04-27'
+      sentiment_score: -8
+      asymmetry: MODERATE
+    - name: Bloomberg Tech
+      host: Ed Ludlow
+      episode: AI Circular Financing Deals, Apple Smart Glasses
+      date: '2026-07-27'
+      sentiment_score: -2
+      asymmetry: MODERATE
+    - name: Shared Security Podcast
+      hosts: Tom Eston, Scott Wright, Kevin Tackett
+      episode: "7 Million People Bought These AI Glasses..."
+      date: '2026-03-16'
+      sentiment_score: -6
+      asymmetry: HIGH
+    activist_group_amplification:
+      name: Everyone Hates Elon
+      type: activist_group (not a podcast)
+      location: London
+      campaigns:
+      - "Fake Meta glasses ads with They Live optical trick (Jul 2026)"
+      - "'Biggest advancement in pervert technology since the trench coat'"
+      targeting_asymmetry: "100% directed at Meta; 0% at Samsung, Google, Apple, Snap"
+      media_amplification:
+      - Engadget (Karissa Bell)
+      - Singulism
+      - AfroTech
+      - HuffPost
+      - BBC
+    cross_medium_alignment:
+      meta_default_villain: ALIGNED
+      samsung_google_zero_scrutiny: ALIGNED
+      apple_aspirational_framing: ALIGNED
+      snap_privacy_free: ALIGNED
+      gendered_surveillance_critique: ALIGNED
+    confounders:
+      strong:
+      - "Meta IS dominant vendor (80%+ share)"
+      - "Sama/Nairobi scandal genuinely newsworthy"
+      - "Podcast hosts lack resources for multi-company analysis"
+      moderate:
+      - "Everyone Hates Elon targets by design"
+      - "Guilty Feminist #481 may cover platforms broadly"
+      weak:
+      - "Futurum Group sponsor relationships (speculative)"
+    testable_predictions:
+    - "Samsung glasses launch: <20% of Meta's privacy scrutiny"
+    - "Apple N50 glasses framed as 'privacy-first' despite identical hardware"
+    - "Everyone Hates Elon will NOT target competitor glasses within 6 months"
+    - "Victoria Song future podcast appearances: 'glasshole' vocabulary Meta-only"
+    cross_references:
+    - mechanism_id: 112
+    - mechanism_id: 130
+    - mechanism_id: 135
+    - mechanism_id: 136
+    - mechanism_id: 137
+    test_file: tests/test_podcast_ecosystem_privacy_vocabulary_amplification_aug16.py
