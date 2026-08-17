@@ -2465,3 +2465,25 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - All 23 new + 8 structural consistency tests pass
 
 **Cumulative:** 140 mechanisms, ~14,866 tests, 422 files
+
+---
+
+### Iteration #145 — Mechanism #138: Digital Trends (Designtechnica Corp) Editorial-Level Privacy Vocabulary Asymmetry
+**Type:** B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-16 18:00 PT
+
+**Core finding:** Digital Trends (Designtechnica Corp, Portland, OR) shows publication-wide privacy vocabulary asymmetry in smart glasses coverage. Managing Editor Nadeem Sarwar personally writes Meta coverage with adversarial framing — opening a story about Meta's PROACTIVE LED anti-tamper fix with "they have built a reputation as a creep's weapon." The editorial standard extends across all staff: every Meta article uses adversarial privacy vocabulary while Samsung/Google coverage (same Snapdragon AR1 chip, same 12MP camera) receives ZERO privacy alarm terms.
+
+**Novel element:** First mechanism documenting editorial GATEKEEPING — the Managing Editor personally sets the adversarial baseline. This is not one journalist's bias (like #131 Ben Schoon or #132 Andy Boxall) but an institutional editorial standard.
+
+**Key evidence:** 5 Meta articles (adversarial across 3+ writers), 3 Samsung/Google articles (neutral/positive across 2 writers). Nadeem Sarwar's LED fix article is especially revealing: Meta's POSITIVE privacy action framed as if the product itself is the problem.
+
+**Financial context:** Designtechnica is independent/ad-dependent. Valnet advertising partnership (shared infrastructure with Android Police where mechanism #132 also operates). Google/Samsung are advertising clients. Meta is a direct ad platform competitor. ZERO Meta financial ties.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Changes:**
+- New test: `test_digital_trends_editorial_level_privacy_vocabulary_asymmetry_aug16.py` (37 tests, 9 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #138 added)
+- Updated: `competitor-entities.yaml` (designtechnica_corp entity added)
+- Updated: README.md (423 files, ~14,903 tests)

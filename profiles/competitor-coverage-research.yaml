@@ -17134,4 +17134,210 @@ publications:
     - https://simplywall.st/stocks/de/media/fra-nc0b/news-shares/ownership
     - https://www.MarketBeat.com/stocks/NYSE/NYT/institutional-ownership/
     - https://marketbeat.com/stocks/NASDAQ/NWSA/institutional-ownership/
+  digital_trends_editorial_level_privacy_vocabulary_asymmetry:
+    mechanism_id: 138
+    mechanism_name: Digital Trends (Designtechnica Corp) Editorial-Level Smart Glasses
+      Privacy Vocabulary Asymmetry — Managing Editor Sets Adversarial Meta Tone While
+      Staff Produces Positive Samsung/Google Coverage
+    finding_type: editorial_gatekeeping_privacy_vocabulary_asymmetry
+    rotation_type: B
+    discovery_date: '2026-08-16'
+    test_file: tests/test_digital_trends_editorial_level_privacy_vocabulary_asymmetry_aug16.py
+    test_count: 32
+    domain: journalist_cross_entity_tracking
+    entity: Digital Trends (Designtechnica Corp)
+    related_entity: Valnet Inc (advertising partner)
+    finding_summary: 'Digital Trends (Designtechnica Corp, Portland, OR) exhibits a
+      publication-wide privacy vocabulary asymmetry in smart glasses coverage. Managing
+      Editor Nadeem Sarwar personally writes Meta coverage with adversarial framing —
+      opening a story about Meta PROACTIVELY fixing an LED privacy issue with "they have
+      built a reputation as a creep''s weapon" and "the outrage is justified." The same
+      Managing Editor''s editorial standard extends across the entire staff: every Meta
+      smart glasses article uses adversarial privacy vocabulary ("creepy," "covert
+      recording," "social laundering," "secretly," "slap in the face of its customers''
+      privacy") while Samsung/Google coverage — for hardware with the SAME Snapdragon
+      AR1 Gen 1 chip, same 12MP camera, same AI processing — receives ZERO privacy
+      alarm terms.
+
+      Key evidence articles:
+
+      META (adversarial across multiple writers):
+      - Nadeem Sarwar (Managing Editor): "Meta will disable the camera on AI smart
+        glasses if you tamper or cover the indicator light" — opens with "creep''s weapon"
+        for a POSITIVE Meta privacy action
+      - Publication-wide: "Smart glasses were already creepy, now they''re helping
+        people cheat" — specifically names Meta Ray-Ban as privacy exemplar of the problem
+      - Rachit Shukla: "Meta is building face recognition into your glasses" — "I don''t
+        really have high hopes about privacy and security from a company like Meta" (editorial
+        voice openly anti-Meta)
+      - Andy Boxall: "slap in the face of its customers'' privacy," "vile behavior"
+        (face recognition article)
+      - Unnamed: Apple N50 positioned as solving privacy problems "Meta Ray-Bans" created,
+        despite Apple having NO shipping product to evaluate
+
+      SAMSUNG/GOOGLE (neutral/positive across multiple writers):
+      - Shikhar Mehrotra (with Nadeem Sarwar photo credit): Samsung Galaxy Glasses leak —
+        same Snapdragon AR1 chip, same 12MP camera architecture — ZERO privacy alarm terms,
+        Samsung positioned as having "an edge" over Meta via Google Gemini
+      - Nirave Gondhia: Galaxy XR hands-on — "convinced me where the Apple Vision Pro
+        didn''t," enthusiastic tone, ZERO privacy scrutiny for identical camera hardware
+      - Nirave Gondhia: Samsung AR glasses coming 2026 — aspirational, "immersive
+        multimodal AI experiences," ZERO privacy vocabulary
+
+      The asymmetry is EDITORIAL-LEVEL, not individual journalist bias. The Managing
+      Editor personally sets the adversarial Meta baseline, and every other writer follows
+      the same pattern regardless of their beat (wearables, emerging tech, mobile). Samsung
+      and Google receive exclusively product-focused coverage despite shipping/announcing
+      hardware with identical privacy-relevant capabilities.'
+    meta_articles:
+    - title: Meta will disable the camera on AI smart glasses if you tamper or cover the
+        indicator light
+      author: Nadeem Sarwar
+      role: Managing Editor
+      date: '2026-07'
+      url: https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
+      privacy_alarm_terms:
+      - creep's weapon
+      - outrage is justified
+      - hot water
+      - privacy invading
+      - rogue individuals
+      note: Meta v26 LED anti-tamper fix — a POSITIVE privacy development — opened with
+        adversarial framing
+    - title: Smart glasses were already creepy, now they're helping people cheat
+      date: '2026-07'
+      url: https://www.digitaltrends.com/cool-tech/smart-glasses-were-already-creepy-now-theyre-helping-people-cheat/
+      privacy_alarm_terms:
+      - creepy
+      - covert recording
+      - privacy concerns
+      - sparked concerns
+      note: Generic smart glasses article that specifically names Meta Ray-Ban as the
+        privacy offender
+    - title: Meta is building face recognition into your glasses, and civil rights groups
+        are not happy about it
+      author: Rachit Shukla
+      date: '2026-06'
+      url: https://www.digitaltrends.com/wearables/meta-is-building-face-recognition-into-your-glasses-and-civil-rights-groups-are-not-happy-about-it/
+      privacy_alarm_terms:
+      - slap in the face
+      - vile behavior
+      - surveillance
+      - I don't really have high hopes about privacy and security from a company like Meta
+      note: Reporter's editorial voice openly anti-Meta in article body
+    - title: Apple smart glasses might avoid the creepy reputation of Meta Ray-Bans with
+        a light trick
+      date: '2026'
+      url: https://www.digitaltrends.com/wearables/apple-smart-glasses-might-avoid-the-creepy-reputation-of-meta-ray-bans-with-a-light-trick/
+      privacy_alarm_terms:
+      - creepy reputation
+      note: Apple NOT-YET-EXISTING product framed as solving Meta's existing privacy
+        problem
+    - title: Smart glasses are back, and this time they're pretending to be normal
+      date: '2026'
+      url: https://www.digitaltrends.com/wearables/smart-glasses-are-back-and-this-time-theyre-pretending-to-be-normal/
+      privacy_alarm_terms:
+      - social laundering
+      - pretending to be normal
+      note: Category-level opinion piece but Meta sales framed as normalization of
+        surveillance
+    samsung_google_articles:
+    - title: Samsung's upcoming Galaxy Glasses have leaked, and the looks don't impress
+      author: Shikhar Mehrotra
+      date: '2026'
+      url: https://www.digitaltrends.com/cool-tech/samsungs-upcoming-galaxy-glasses-have-leaked-and-the-looks-dont-impress/
+      privacy_alarm_terms: []
+      tone_score: 0.1
+      note: Same Snapdragon AR1 chip, same 12MP camera architecture as Meta — ZERO
+        privacy terms. Samsung positioned as having "an edge" over Meta.
+    - title: The Galaxy XR convinced me where the Apple Vision Pro didn't
+      author: Nirave Gondhia
+      date: '2026-07'
+      url: https://www.digitaltrends.com/wearables/samsung-galaxy-xr-hands-on-preview/
+      privacy_alarm_terms: []
+      tone_score: 0.7
+      note: Enthusiastic hands-on, "convinced me," "I want to buy" — ZERO privacy
+        scrutiny for identical camera hardware
+    - title: Samsung's first AR glasses are coming in 2026 with immersive multimodal
+        AI experiences
+      author: Nirave Gondhia
+      date: '2026-01'
+      url: https://www.digitaltrends.com/wearables/samsungs-first-ar-glasses-are-coming-in-2026-with-immersive-multimodal-ai-experiences/
+      privacy_alarm_terms: []
+      tone_score: 0.6
+      note: Aspirational framing, "immersive multimodal AI experiences," ZERO privacy
+        vocabulary
+    financial_context:
+      owner: Designtechnica Corporation
+      headquarters: Portland, OR
+      founded: 2006
+      founders: Ian Bell, Dan Gaul
+      investor: Startive Ventures (Series A)
+      valnet_partnership: Strategic advertising partnership with Valnet Inc combining
+        200M+ readers for advertising scale. Valnet owns Android Police, MakeUseOf,
+        Screen Rant.
+      google_dependency: Google Analytics 4 in tech stack, Google programmatic ads as
+        standard revenue source
+      samsung_advertising: Samsung is 4th largest global advertiser ($9.7B globally),
+        major digital advertising client for consumer electronics coverage sites
+      meta_financial_ties: none
+      meta_ad_competitor: true
+      note: As an independent ad-dependent publisher, Digital Trends competes with Meta
+        for digital advertising revenue. Google and Samsung are clients (advertisers),
+        Meta is a competitor (ad platform).
+    confounders:
+    - strength: STRONG
+      description: Meta's genuine privacy track record (Cambridge Analytica, FTC $5B
+        settlement, multiple data breaches) provides legitimate editorial basis for
+        heightened scrutiny. Adversarial framing may reflect earned reputation, not
+        manufactured bias.
+    - strength: STRONG
+      description: Samsung smart glasses are pre-launch (not shipping at scale), while
+        Meta Ray-Ban has 7M+ units in market. Privacy scrutiny correlates with market
+        presence — products with no users generate no privacy incidents to cover.
+    - strength: MODERATE
+      description: Managing Editor's role includes headline/lede optimization for
+        engagement. Adversarial Meta headlines generate more clicks than Samsung leak
+        articles — the vocabulary difference may be commercial (engagement-driven)
+        rather than ideological.
+    - strength: MODERATE
+      description: 'Andy Boxall was already documented in mechanism #132 (Android Police/
+        Valnet). His Digital Trends cross-posting may represent Valnet editorial policy,
+        not independent Digital Trends editorial decision-making.'
+    - strength: WEAK
+      description: Samsung's glasses have not been publicly released to consumers yet,
+        so there are fewer real-world privacy incidents to cover. The asymmetry may
+        narrow once Samsung ships and privacy incidents emerge.
+    falsifiable_predictions:
+    - prediction: When Samsung Galaxy Glasses ship in 2026, Digital Trends coverage will
+        use fewer than 50% of the privacy alarm terms per article compared to Meta
+        Ray-Ban coverage, despite identical camera hardware and similar market scale.
+      falsifiable: true
+      testable_date: '2026-12'
+    - prediction: Nadeem Sarwar (Managing Editor) will NOT personally author a Samsung
+        smart glasses article with adversarial privacy vocabulary. Samsung coverage
+        will remain in the hands of Nirave Gondhia and Shikhar Mehrotra, who maintain
+        positive/neutral tone.
+      falsifiable: true
+      testable_date: '2027-03'
+    - prediction: If Google launches Gemini-powered glasses independently (not through
+        Samsung), Digital Trends will apply fewer privacy alarm terms to Google than to
+        Meta for identical AI processing capabilities, consistent with the Google-as-
+        aspirational vs Meta-as-surveillance editorial frame.
+      falsifiable: true
+      testable_date: '2027-06'
+    cross_references:
+    - 134
+    - 8
+    - 132
+    - 135
+    source_urls:
+    - https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
+    - https://www.digitaltrends.com/cool-tech/smart-glasses-were-already-creepy-now-theyre-helping-people-cheat/
+    - https://www.digitaltrends.com/wearables/meta-is-building-face-recognition-into-your-glasses-and-civil-rights-groups-are-not-happy-about-it/
+    - https://www.digitaltrends.com/wearables/apple-smart-glasses-might-avoid-the-creepy-reputation-of-meta-ray-bans-with-a-light-trick/
+    - https://www.digitaltrends.com/wearables/smart-glasses-are-back-and-this-time-theyre-pretending-to-be-normal/
+    - https://www.digitaltrends.com/cool-tech/samsungs-upcoming-galaxy-glasses-have-leaked-and-the-looks-dont-impress/
+    - https://www.digitaltrends.com/wearables/samsung-galaxy-xr-hands-on-preview/
+    - https://www.digitaltrends.com/wearables/samsungs-first-ar-glasses-are-coming-in-2026-with-immersive-multimodal-ai-experiences/
 research_period: 2024-08-01 to 2026-08-16

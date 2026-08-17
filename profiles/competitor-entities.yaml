@@ -8354,3 +8354,46 @@ ai_content_market_economics:
     - https://securityboulevard.com/2026/04/the-ai-content-crisis-how-llms-are-draining-media-revenue-and-the-technologies-fighting-back/
     - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
     - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+  designtechnica_corp:
+    display_name: Digital Trends (Designtechnica Corp)
+    aliases:
+    - Digital Trends
+    - Designtechnica Corporation
+    - DTMG
+    - DT
+    owner: Designtechnica Corporation (private)
+    category: media_publisher
+    headquarters: Portland, OR
+    founded: 2006
+    founders:
+    - Ian Bell
+    - Dan Gaul
+    investor: Startive Ventures (Series A)
+    publications:
+    - Digital Trends (digitaltrends.com)
+    managing_editor: Nadeem Sarwar
+    strategic_partnerships:
+    - entity: Valnet Inc
+      type: advertising
+      details: Combined 200M+ readers for advertising scale. Valnet owns Android
+        Police, MakeUseOf, Screen Rant.
+    google_dependencies:
+    - programmatic_advertising
+    - search_traffic
+    - analytics
+    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B
+      globally), major advertising client for consumer electronics review sites
+    meta_financial_ties: none
+    meta_content_licensing_deals: none
+    meta_advertising_partnerships: none
+    meta_as_ad_competitor: true
+    notes: 'Independent ad-dependent publisher. Competes with Meta for digital advertising
+      revenue (Meta is an ad platform competitor). Google and Samsung are advertising
+      clients. No known Meta financial relationships. Valnet partnership creates
+      shared editorial infrastructure with Android Police (mechanism #132 documents
+      Andy Boxall cross-entity coverage on Android Police, same writer also
+      contributes to Digital Trends).'
+    mechanisms:
+    - mechanism_id: 138
+      mechanism_name: Digital Trends Editorial-Level Smart Glasses Privacy Vocabulary
+        Asymmetry

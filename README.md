@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,866 | Across 422 test files |
+| Tests | ~14,903 | Across 423 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14866 tests** across 422 test files, each covering a different analytical capability:
+MediaScope has **14903 tests** across 423 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
