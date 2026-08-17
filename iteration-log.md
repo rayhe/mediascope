@@ -1,3 +1,29 @@
+## Iteration #153 — Mon 2026-08-17 08:00 PT (Type D: Test & Verify)
+
+**Focus: Structural Integrity Fixes + Cross-Validation Suite for Mechanisms #149–#152**
+
+**3 BUGS FOUND AND FIXED:**
+
+1. **Mechanism #152 misplaced in YAML** — The Nvidia-OpenAI GPU-capital circularity mechanism (from Iteration #152) was accidentally inserted into the `publications` section of competitor-coverage-research.yaml instead of `cross_publication_findings`. This broke 3 existing cross-validation tests (publications count, meta_coverage_tone check, mechanism-in-publications guard). Moved to correct section — YAML now parses clean with 134 CPF entries and 9 publications.
+
+2. **Axel Springer entity fixture wrong lookup** — test_axel_springer_kkr_openai_financial_architecture_aug17.py looked for `axel_springer_business_insider` only in `entities` dict, but it lives under `publisher_entities`. Fixed fixture to check both locations. 5 errors → 0.
+
+3. **Entity count regression in earlier cross-validation** — test_type_d_03am_cross_validation_aug17.py expected 15 entities but nvidia (16th entity, added Iteration #152) was present. Updated expected set.
+
+**NEW TEST FILE: test_type_d_08am_cross_validation_aug17.py (8 classes, 35 tests)**
+- Section placement integrity (5 tests)
+- Entity integrity (7 tests) — nvidia fields, Axel Springer in publisher_entities
+- Mechanisms #149-152 existence (7 tests) — source URLs, confounders, cross-references
+- Mechanism ID uniqueness (2 tests)
+- Test file existence (6 tests)
+- Engadget beat assignment coherence (2 tests) — Karissa Bell investigation pattern
+- Publication profile completeness (2 tests)
+- YAML structural health (4 tests)
+
+**Test results:** 516 aug17 tests passing (including 35 new), aug16 batch also clean.
+
+**Stats:** 437 test files, ~15,404 tests, 134 CPF entries, 16 entities, 152 mechanisms.
+
 ## Iteration #152 — Mon 2026-08-17 07:00 PT (Type C: Financial Incentive Mapping)
 
 **Focus: Nvidia-OpenAI GPU-Capital Circularity Publisher Incentive Chain (Mechanism #152)**

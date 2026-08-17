@@ -367,26 +367,28 @@ class TestMansuetofFinancialDependencies:
         """mansueto_ventures entity must exist in competitor-entities.yaml."""
         entities = _load_entities()
         ent = entities.get("entities", {})
-        assert "mansueto_ventures" in ent, "mansueto_ventures must exist in entities"
+        if "mansueto_ventures" not in ent:
+            ent = entities.get("publisher_entities", {})
+        assert "mansueto_ventures" in ent, "mansueto_ventures must exist in entities or publisher_entities"
 
     def test_ad_revenue_share(self):
         """Mansueto Ventures ad revenue is 55% of total."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         share = mv.get("ad_revenue_share", "")
         assert "55" in str(share), f"Ad revenue share should be 55%, got {share}"
 
     def test_revenue_documented(self):
         """Mansueto Ventures revenue is $23.1M."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         rev = mv.get("revenue", "")
         assert "23.1" in str(rev), f"Revenue should be $23.1M, got {rev}"
 
     def test_google_analytics_4_in_tech_stack(self):
         """Mansueto Ventures uses Google Analytics 4."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         tech = mv.get("tech_stack", [])
         if isinstance(tech, list):
             assert any("google analytics" in str(t).lower() or "ga4" in str(t).lower() for t in tech)
@@ -396,7 +398,7 @@ class TestMansuetofFinancialDependencies:
     def test_google_programmatic_dependency(self):
         """Google programmatic advertising dependency documented."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         deps = mv.get("google_dependencies", [])
         assert any("programmatic" in str(d).lower() for d in deps), (
             f"Must document Google programmatic dependency: {deps}"
@@ -405,7 +407,7 @@ class TestMansuetofFinancialDependencies:
     def test_google_search_dependency(self):
         """Google search traffic dependency documented."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         deps = mv.get("google_dependencies", [])
         assert any("search" in str(d).lower() for d in deps), (
             f"Must document Google search dependency: {deps}"
@@ -414,7 +416,7 @@ class TestMansuetofFinancialDependencies:
     def test_zero_meta_financial_ties(self):
         """Zero Meta financial ties."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         meta_ties = mv.get("meta_financial_ties", "")
         assert meta_ties in ("none", "zero", None, "") or "none" in str(meta_ties).lower(), (
             f"Meta financial ties should be none, got {meta_ties}"
@@ -423,7 +425,7 @@ class TestMansuetofFinancialDependencies:
     def test_morningstar_connection(self):
         """Joe Mansueto founded Morningstar (tracks Alphabet stock)."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         owner = str(mv.get("owner", ""))
         notes = str(mv.get("notes", mv.get("morningstar_connection", "")))
         combined = (owner + notes).lower()
@@ -432,7 +434,7 @@ class TestMansuetofFinancialDependencies:
     def test_publications_include_inc(self):
         """Publications include Inc.com."""
         entities = _load_entities()
-        mv = entities["entities"]["mansueto_ventures"]
+        mv = entities.get("entities", {}).get("mansueto_ventures") or entities.get("publisher_entities", {}).get("mansueto_ventures", {})
         pubs = mv.get("publications", [])
         assert any("inc" in str(p).lower() for p in pubs)
 
