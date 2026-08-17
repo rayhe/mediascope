@@ -17827,3 +17827,113 @@ research_period: 2024-08-01 to 2026-08-17
     - https://www.businesswire.com/news/home/20210806005025/en/Acquisition-of-AndroidPolice.com-by-Valnet-inc.
     - https://www.editorandpublisher.com/stories/anger-over-pay-per-click-journalist-contracts,262351
     test_file: tests/test_android_police_valnet_per_click_smart_glasses_coverage_asymmetry_aug17.py
+
+  - mechanism_id: 146
+    name: "Jason England / Tom's Guide (Future plc) Cross-Entity Competitive Aspiration Inversion"
+    type: cross_entity_competitive_aspiration_inversion
+    publication: "Tom's Guide"
+    parent_company: "Future plc"
+    journalist: "Jason England"
+    role: "Managing Editor, Computing"
+    date_documented: "2026-08-17"
+    asymmetry_score: 0.78
+    description: >
+      Same journalist at Tom's Guide (Future plc, LSE: FUTR) covers smart glasses
+      from multiple manufacturers with radically different editorial framing.
+      Google Intelligent Eyewear (Snapdragon AR1 Gen 1, 12MP camera, LED indicator)
+      gets aspirational "defeat"/"beat" vocabulary with ZERO privacy scrutiny (+0.80 tone).
+      Samsung Android XR (same chip) gets aspirational "beat" vocabulary (+0.65 tone).
+      Meta Ray-Ban (same chip, same camera, same LED) gets contextual privacy alarm
+      vocabulary: "unauthorized filming," "privacy is becoming a service we have to
+      run on our phones" (-0.40 tone). Privacy alarm terms: 4+ for Meta-contextual, 0
+      for Google, 0 for Samsung. The "competitive aspiration inversion" is the novel
+      finding: the journalist uses ASPIRATIONAL combat vocabulary for unreleased
+      hardware-equivalent competitors while dedicating separate articles to privacy
+      alarm contextually targeting Meta.
+    google_articles:
+    - title: "I tested Google's 'Intelligent Eyewear,' and found the smart glasses that will defeat Ray-Ban Meta"
+      author: Jason England
+      date: '2026-05-20'
+      url: https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+      aspirational_terms: ["defeat", "beat", "ready to beat Meta", "huge lead"]
+      privacy_alarm_terms: 0
+    - title: "Does Google's Intelligent Eyewear have what it takes to beat Ray-Ban Meta smart glasses? Here's what we know"
+      author: Jason England, Lloyd Coombes
+      date: '2026-05-29'
+      url: https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+      aspirational_terms: ["beat"]
+      privacy_alarm_terms: 0
+    samsung_articles:
+    - title: "Samsung just confirmed its Android XR smart glasses will launch this year — here's how they can beat Ray-Ban Meta"
+      author: Jason England
+      date: '2026-01-29'
+      url: https://www.tomsguide.com/au/computing/vr-ar/smart-glasses/page/6
+      aspirational_terms: ["beat"]
+      privacy_alarm_terms: 0
+    meta_privacy_articles:
+    - title: "This app warns you if someone nearby is wearing smart glasses, and I hate that it makes sense"
+      author: Jason England
+      date: '2026-02-25'
+      url: https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/5
+      privacy_alarm_terms: ["unauthorized filming", "privacy is becoming a service we have to run on our phones", "warns you", "I hate that it makes sense"]
+      entity_focus: meta_implied
+    meta_comparison_articles:
+    - title: "I switched my Ray-Ban Metas for L'Atitude 52°N for a month, and while there's cool features for explorers, it's no contest"
+      author: Jason England
+      date: '2026-05-19'
+      url: https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+      framing: meta_as_reference_standard
+    hardware_equivalence:
+      meta_chip: Snapdragon AR1 Gen 1
+      google_chip: Snapdragon AR1 Gen 1
+      samsung_chip: Snapdragon AR1 Gen 1
+      meta_cameras: 1
+      google_cameras: 1
+      samsung_cameras: 1
+      meta_camera_mp: 12
+      google_camera_mp: 12
+      samsung_camera_mp: 12
+      meta_led_indicator: true
+      google_led_indicator: true
+      samsung_led_indicator: true
+    vocabulary_ratio: "infinity (4+:0 privacy alarm terms)"
+    future_plc_financial_architecture:
+      ticker: FUTR.L
+      exchange: LSE
+      brands_count: 170
+      google_dependent_revenue_share: 0.60
+      profit_before_tax_yoy_change_h1_2026: -0.67
+      website_sessions_yoy_change: -0.15
+      ecommerce_affiliates_yoy_change: -0.24
+      google_financial_relationship: existential_dependency
+      meta_financial_relationship: none
+      samsung_google_partnership: "Joint development via Android XR platform"
+    confounders:
+      strong:
+      - "Meta has 80%+ market share — market leaders naturally attract more scrutiny"
+      - "Meta has documented privacy incidents (Kenya, manfluencers, pick-up artists); Google/Samsung glasses haven't shipped yet"
+      moderate:
+      - "Pre-release event coverage (Google I/O) naturally emphasizes potential vs. editorial privacy investigation"
+      - "England may genuinely believe Google/Samsung glasses are better products"
+      weak:
+      - "Affiliate revenue currently favors Meta (only purchasable product) — runs counter to observed pattern"
+    testable_predictions:
+    - "When Google/Samsung glasses launch and privacy incidents occur, Tom's Guide will apply softer vocabulary than for Meta equivalents"
+    - "Jason England will not publish a standalone pre-launch Google glasses privacy article with equivalent alarm vocabulary"
+    - "If Future plc's Google dependency decreases, the aspiration/alarm vocabulary gap will narrow"
+    cross_references:
+    - mechanism_id: 110
+      relationship: "Same publication, different journalist — Mike Prospero applies identical qualified-praise/aspirational pattern"
+    - mechanism_id: 128
+      relationship: "Same parent company — TechRadar (Future plc) shows privacy vocabulary suppression for Google via Michael Hicks"
+    - mechanism_id: 132
+      relationship: "Same pattern different publisher — Andy Boxall at Android Police (Valnet) shows identical privacy vocabulary inversion"
+    - mechanism_id: 106
+      relationship: "Same archetype — Scott Stein (CNET/Ziff Davis) shows identical entity-selective privacy scrutiny"
+    source_urls:
+    - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/2
+    - https://www.tomsguide.com/au/computing/vr-ar/smart-glasses/page/6
+    - https://www.tomsguide.com/computing/vr-ar/smart-glasses/page/5
+    - https://ppc.land/future-plcs-google-problem-profit-falls-67-as-search-traffic-shrinks/
+    - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
+    test_file: tests/test_jason_england_future_plc_cross_entity_competitive_aspiration_inversion_aug17.py

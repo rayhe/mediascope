@@ -2659,3 +2659,31 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: README.md (426 files, ~15,043 tests)
 
 **Cumulative:** 143 mechanisms, ~15,043 tests, 426 files
+
+
+---
+
+### Iteration #146 — Type B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-17 (01:00 PT)
+**Mechanism:** #146 — Jason England / Tom's Guide (Future plc) Cross-Entity Competitive Aspiration Inversion
+**Asymmetry score:** 0.78
+
+**Core finding:** Same journalist (Jason England, Managing Editor Computing) at Tom's Guide (Future plc) covers smart glasses from 3 manufacturers with identical Snapdragon AR1 Gen 1 hardware using radically different editorial framing. Google Intelligent Eyewear gets aspirational "defeat"/"beat" vocabulary with ZERO privacy scrutiny (+0.80 tone). Samsung Android XR gets aspirational "beat" vocabulary (+0.65 tone). Meta Ray-Ban (same chip, same camera, same LED indicator) gets contextual privacy alarm: "unauthorized filming," "privacy is becoming a service we have to run on our phones" (-0.40 tone). Privacy alarm terms: 4+ for Meta, 0 for Google, 0 for Samsung.
+
+**Novel element:** "Competitive aspiration inversion" — aspirational combat metaphors ("defeat," "beat," "ready to beat") for unreleased hardware-equivalent competitors, while dedicating separate articles to privacy alarm contextually targeting Meta. The privacy concerns that apply to Meta's camera apply identically to Google/Samsung's same camera, yet coverage treats them as categorically different.
+
+**Institutional significance:** Jason England is the THIRD Tom's Guide journalist (after Mark Spoonauer and Mike Prospero) showing the identical pattern. On Google I/O day (May 20, 2026), both Prospero and England published Meta-adversarial articles simultaneously. 4 journalists across Global EIC → Managing Editor = institutional editorial direction.
+
+**Financial context:** Future plc derives 60%+ revenue from Google-dependent brands. H1 2026 profit fell 67%. AI Overviews on 50% of key terms. Samsung + Google jointly developing Android XR. Meta has ZERO financial relationship with Future plc.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Cross-references:** #110 (same publication — Prospero), #128 (same parent — TechRadar/Hicks), #132 (same pattern — Andy Boxall/Valnet), #106 (same archetype — Scott Stein/Ziff Davis)
+
+**Changes:**
+- New test: `test_jason_england_future_plc_cross_entity_competitive_aspiration_inversion_aug17.py` (59 tests, 12 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #146 added)
+- Updated: README.md (429 files, ~15,190 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added)
+
+**Cumulative:** 146 mechanisms, ~15,190 tests, 429 files
