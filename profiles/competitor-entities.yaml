@@ -2523,6 +2523,49 @@ entities:
         attention on Meta, and keeps settlement amounts low enough to avoid sustained stock price impact ($200M against $2.4T
         market cap = 0.008%). The strategy is structurally rational — NOT evidence of coordination — but its effect on media
         coverage is identical to what coordination would produce. '
+    warby_parker_equity_investment:
+      mechanism_id: 147
+      announcement_date: '2025-05-20'
+      announcement_event: Google I/O 2025
+      total_commitment_m: 150
+      development_funding_m: 75
+      equity_investment_max_m: 75
+      equity_contingent: true
+      equity_milestones: certain collaboration milestones (unspecified)
+      wrby_stock_rally_on_deal_pct: 16
+      wrby_stock_rally_on_2026_launch_pct: 14
+      wrby_q2_2026_revenue_m: 235.5
+      wrby_q2_2026_growth_yoy_pct: 9.8
+      wrby_market_cap_approx: '$1.2B'
+      launch_timeline: holiday 2026
+      frame_partners:
+        - Warby Parker
+        - Gentle Monster
+        - Kering Eyewear
+      kering_commitment_m: 75
+      smart_glasses_market_projection_2028_b: 4.2
+      smart_glasses_market_projection_source: Bank of America
+      platform: Android XR + Gemini AI
+      silicon: Snapdragon AR1 Gen 1 (Qualcomm)
+      meta_equivalent: 'Meta has NO equity stake in EssilorLuxottica. EssilorLuxottica (~EUR90B market cap, $28B+ annual revenue) has ZERO advertising relationships with tech publications. Meta holds a strategic partnership but no financial feedback loop through publisher revenue.'
+      essilorluxottica_meta_glasses_sold_2025_m: 7
+      publisher_coverage_feedback_loop: 'Google is simultaneously publishers primary revenue source (ad revenue, News Showcase, content deals) AND an equity investor in the frame maker competing with Metas frame partner. Favorable coverage of Google/Warby/Samsung glasses benefits Google through both platform adoption AND WRBY stock appreciation. No other smart glasses entity has this dual-role structure.'
+      cross_references:
+        - mechanism_id: 76
+          relationship: extends
+          description: 'Adds equity investment dimension to Samsung-Google compound advertiser leverage'
+        - mechanism_id: 91
+          relationship: extends
+          description: 'Fourth financial node (equity) layered on top of Qualcomm co-marketing supply chain'
+        - mechanism_id: 111
+          relationship: related
+          description: 'Apollo (Yahoo/Engadget parent) separately finances Google competitors — coverage incentive compounds when Apollo publications cover Google-aligned products'
+      source_urls:
+        - https://www.businesswire.com/news/home/20250520232084/en/Warby-Parker-Partners-with-Google-To-Develop-Intelligent-Eyewear
+        - https://techcrunch.com/2025/05/20/google-commits-150m-to-develop-ai-glasses-with-warby-parker/
+        - https://www.visionmonday.com/eyecare/article/warby-parker-q2-revenue-rises-as-launch-of-intelligent-eyewear-nears/
+        - https://www.visionmonday.com/business/article/google-warby-parker-confirm-plans-to-deliver-ai-glasses-in-2026
+        - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
     publisher_litigation_jul2026:
       event: Hachette/Cengage/Elsevier/Turow class-action copyright suit
       date: 2026-07-10
