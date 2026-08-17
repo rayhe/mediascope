@@ -168,6 +168,8 @@ def mechanism_143(research_data):
 @pytest.fixture(scope='module')
 def axel_springer_entity(entities_data):
     entity = entities_data.get('entities', {}).get('axel_springer_business_insider', {})
+    if not entity:
+        entity = entities_data.get('publisher_entities', {}).get('axel_springer_business_insider', {})
     assert entity, "Missing axel_springer_business_insider entity in competitor-entities.yaml"
     return entity
 

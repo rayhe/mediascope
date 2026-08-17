@@ -80,7 +80,7 @@ class TestEntitySectionHygiene:
         expected = {"openai", "anthropic", "amazon", "apple", "google",
                     "x_twitter", "meta", "xai", "samsung", "microsoft",
                     "snowflake", "snap", "yahoo_apollo", "wbd_cnn",
-                    "versant_media_group"}
+                    "versant_media_group", "nvidia"}
         actual = set(entities_data["entities"].keys())
         assert expected == actual, f"Mismatch: extra={actual - expected}, missing={expected - actual}"
 

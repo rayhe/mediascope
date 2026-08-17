@@ -14857,6 +14857,95 @@ cross_publication_findings:
       - 'https://www.engadget.com/the-ray-ban-meta-smart-glasses-are-getting-ai-powered-visual-search-features-204556255.html'
       - 'https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/'
 
+  nvidia_openai_gpu_capital_circularity_publisher_incentive_chain:
+    mechanism_id: 152
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    finding_type: hardware_investor_circular_incentive
+    domain: ai_infrastructure_financial_architecture
+    entities:
+    - nvidia
+    - openai
+    - meta
+    - microsoft
+    - amazon
+    - google
+    finding_summary: 'Nvidia $30B equity investment in OpenAI (Feb/Mar 2026, part of
+      $110B round) creates the first HARDWARE-LAYER circular financial incentive chain
+      affecting publisher coverage. Previous mechanisms mapped publisher deals, advertising,
+      marketplace operations, and investment fund chains. None mapped how the GPU
+      monopolist (Nvidia, $4.4T+ market cap, $46.7B Q2 FY26 revenue) investing in
+      the AI company with the MOST publisher content deals (OpenAI, 20+ deals,
+      $300-400M/yr) creates a circular incentive structure. The chain: hyperscalers
+      spend $650B+ on AI capex → Nvidia GPUs → Nvidia invests $30B in OpenAI → OpenAI
+      buys MORE Nvidia GPUs → OpenAI licenses publisher content → publishers cover
+      AI capex favorably → loop repeats. Wall Street has flagged this as circular
+      financing. Meta is one of Nvidia largest GPU customers ($130-145B capex) yet
+      Nvidia $30B aligns financially with OpenAI against Meta open-source Llama.'
+    mechanism_type: hardware_investor_circular_incentive
+    key_financial_data:
+      nvidia_q2_fy26_revenue_b: 46.7
+      nvidia_market_cap: $4.4T+
+      nvidia_openai_investment_b: 30
+      total_round_b: 110
+      openai_valuation_b: 730
+      openai_publisher_deals: 20+
+      openai_deal_value_annual_m: 300-400
+      hyperscaler_combined_capex_b: 650+
+      meta_capex_b: 130-145
+      nvidia_top_2_customer_concentration_pct: 39
+    confounders:
+    - strength: STRONG
+      description: 'Nvidia investment may be purely financial (opportunistic stake
+        in fastest-growing AI company) with no editorial influence intent. The
+        investment thesis is straightforward: Nvidia buys equity in its largest
+        customer class, ensuring demand for GPUs.'
+    - strength: STRONG
+      description: 'Nvidia has ZERO direct content deals or advertising relationships
+        with any tech publication. The entire publisher incentive chain is INDIRECT
+        (Nvidia → OpenAI → publisher deal). Indirect chains are structurally weaker
+        than bilateral financial relationships.'
+    - strength: MODERATE
+      description: 'GTC access and Jensen Huang embargoes may reflect standard media
+        relations (all companies manage press access) rather than financial leverage.
+        However, GTC at 300K+ attendees makes access functionally valuable enough
+        to create de facto incentive without explicit financial transactions.'
+    - strength: MODERATE
+      description: 'Meta $130-145B capex with Nvidia creates COUNTERVAILING incentive.
+        Nvidia benefits financially from positive Meta coverage too. However, Nvidia
+        equity position in OpenAI ($30B) is a much deeper financial alignment than
+        being a GPU supplier to Meta (no equity stake).'
+    - strength: WEAK
+      description: 'Nvidia investment may not affect OpenAI editorial relationships
+        with publishers. Nvidia is not on OpenAI board and has no operational control
+        over publisher deal terms or editorial cooperation.'
+    testable_predictions:
+    - 'Post-$30B-investment, publications with OpenAI content deals will frame AI
+      capex narrative more favorably than publications without deals, since negative
+      capex framing threatens both OpenAI deal sustainability AND Nvidia valuation.'
+    - 'Publications with OpenAI deals will cover Nvidia earnings more positively
+      (aspirational framing) than publications without deals (skeptical framing),
+      because Nvidia financial health directly supports OpenAI ability to sustain
+      publisher payments.'
+    - 'If Nvidia-OpenAI relationship publicly sours (chip disputes, competitive AI
+      models, investment writedowns), publications with OpenAI deals will follow
+      OpenAI framing rather than Nvidia framing, testing which node in the chain
+      has stronger publisher alignment.'
+    cross_references:
+    - 91
+    - 7
+    - 33
+    - 147
+    source_urls:
+    - https://www.reuters.com/business/nvidia-close-finalizing-30-billion-investment-openai-funding-round-ft-reports-2026-02-20/
+    - https://www.morningstar.com/news/marketwatch/20260227177/amazon-nvidia-and-softbank-pour-110-billion-into-openai-raising-the-stakes-for-ai-monetization
+    - https://gulfbusiness.com/en/2026/tech/openai-840-billion-funding-amazon-nvidia-softbank/
+    - https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/
+    - https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2026/default.aspx
+    - https://www.pymnts.com/artificial-intelligence-2/2026/nvidia-nears-30-billion-stake-in-record-breaking-openai-funding-round/
+    - https://www.eweek.com/news/nvidia-openai-30b-plan/
+    - https://www.campaignlive.com/article/nvidias-shock-20bn-groq-deal-means-adland/1944164
+    test_file: tests/test_nvidia_openai_gpu_capital_circularity_publisher_incentive_chain_aug17.py
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -18343,92 +18432,3 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  nvidia_openai_gpu_capital_circularity_publisher_incentive_chain:
-    mechanism_id: 152
-    date_added: '2026-08-17'
-    discovery_date: '2026-08-17'
-    finding_type: hardware_investor_circular_incentive
-    domain: ai_infrastructure_financial_architecture
-    entities:
-    - nvidia
-    - openai
-    - meta
-    - microsoft
-    - amazon
-    - google
-    finding_summary: 'Nvidia $30B equity investment in OpenAI (Feb/Mar 2026, part of
-      $110B round) creates the first HARDWARE-LAYER circular financial incentive chain
-      affecting publisher coverage. Previous mechanisms mapped publisher deals, advertising,
-      marketplace operations, and investment fund chains. None mapped how the GPU
-      monopolist (Nvidia, $4.4T+ market cap, $46.7B Q2 FY26 revenue) investing in
-      the AI company with the MOST publisher content deals (OpenAI, 20+ deals,
-      $300-400M/yr) creates a circular incentive structure. The chain: hyperscalers
-      spend $650B+ on AI capex → Nvidia GPUs → Nvidia invests $30B in OpenAI → OpenAI
-      buys MORE Nvidia GPUs → OpenAI licenses publisher content → publishers cover
-      AI capex favorably → loop repeats. Wall Street has flagged this as circular
-      financing. Meta is one of Nvidia largest GPU customers ($130-145B capex) yet
-      Nvidia $30B aligns financially with OpenAI against Meta open-source Llama.'
-    mechanism_type: hardware_investor_circular_incentive
-    key_financial_data:
-      nvidia_q2_fy26_revenue_b: 46.7
-      nvidia_market_cap: $4.4T+
-      nvidia_openai_investment_b: 30
-      total_round_b: 110
-      openai_valuation_b: 730
-      openai_publisher_deals: 20+
-      openai_deal_value_annual_m: 300-400
-      hyperscaler_combined_capex_b: 650+
-      meta_capex_b: 130-145
-      nvidia_top_2_customer_concentration_pct: 39
-    confounders:
-    - strength: STRONG
-      description: 'Nvidia investment may be purely financial (opportunistic stake
-        in fastest-growing AI company) with no editorial influence intent. The
-        investment thesis is straightforward: Nvidia buys equity in its largest
-        customer class, ensuring demand for GPUs.'
-    - strength: STRONG
-      description: 'Nvidia has ZERO direct content deals or advertising relationships
-        with any tech publication. The entire publisher incentive chain is INDIRECT
-        (Nvidia → OpenAI → publisher deal). Indirect chains are structurally weaker
-        than bilateral financial relationships.'
-    - strength: MODERATE
-      description: 'GTC access and Jensen Huang embargoes may reflect standard media
-        relations (all companies manage press access) rather than financial leverage.
-        However, GTC at 300K+ attendees makes access functionally valuable enough
-        to create de facto incentive without explicit financial transactions.'
-    - strength: MODERATE
-      description: 'Meta $130-145B capex with Nvidia creates COUNTERVAILING incentive.
-        Nvidia benefits financially from positive Meta coverage too. However, Nvidia
-        equity position in OpenAI ($30B) is a much deeper financial alignment than
-        being a GPU supplier to Meta (no equity stake).'
-    - strength: WEAK
-      description: 'Nvidia investment may not affect OpenAI editorial relationships
-        with publishers. Nvidia is not on OpenAI board and has no operational control
-        over publisher deal terms or editorial cooperation.'
-    testable_predictions:
-    - 'Post-$30B-investment, publications with OpenAI content deals will frame AI
-      capex narrative more favorably than publications without deals, since negative
-      capex framing threatens both OpenAI deal sustainability AND Nvidia valuation.'
-    - 'Publications with OpenAI deals will cover Nvidia earnings more positively
-      (aspirational framing) than publications without deals (skeptical framing),
-      because Nvidia financial health directly supports OpenAI ability to sustain
-      publisher payments.'
-    - 'If Nvidia-OpenAI relationship publicly sours (chip disputes, competitive AI
-      models, investment writedowns), publications with OpenAI deals will follow
-      OpenAI framing rather than Nvidia framing, testing which node in the chain
-      has stronger publisher alignment.'
-    cross_references:
-    - 91
-    - 7
-    - 33
-    - 147
-    source_urls:
-    - https://www.reuters.com/business/nvidia-close-finalizing-30-billion-investment-openai-funding-round-ft-reports-2026-02-20/
-    - https://www.morningstar.com/news/marketwatch/20260227177/amazon-nvidia-and-softbank-pour-110-billion-into-openai-raising-the-stakes-for-ai-monetization
-    - https://gulfbusiness.com/en/2026/tech/openai-840-billion-funding-amazon-nvidia-softbank/
-    - https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/
-    - https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2026/default.aspx
-    - https://www.pymnts.com/artificial-intelligence-2/2026/nvidia-nears-30-billion-stake-in-record-breaking-openai-funding-round/
-    - https://www.eweek.com/news/nvidia-openai-30b-plan/
-    - https://www.campaignlive.com/article/nvidias-shock-20bn-groq-deal-means-adland/1944164
-    test_file: tests/test_nvidia_openai_gpu_capital_circularity_publisher_incentive_chain_aug17.py
