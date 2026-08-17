@@ -17412,4 +17412,134 @@ publications:
     - https://www.phonearena.com/news/apple-doesnt-need-fashion-brands-to-beat-the-meta-ray-ban-in-its-own-game_id180781
     - https://www.phonearena.com/news/meta-ray-ban-smart-glasses-showing-intimate-moments-to-workers-in-kenya-investigation_id178789
     - https://www.phonearena.com/news/whistleblowers-who-exposed-meta-ray-ban-smart-glasses-fired_id180105
-research_period: 2024-08-01 to 2026-08-16
+  sarah_perez_cross_entity_privacy_vocabulary_inversion:
+    mechanism_id: 142
+    name: Sarah Perez Same-Journalist Cross-Entity Privacy Vocabulary Inversion
+    type: journalist_cross_entity
+    publication: TechCrunch (Yahoo / Apollo Global Management)
+    journalist: Sarah Perez
+    journalist_title: Consumer News Editor
+    journalist_tenure: 'TechCrunch since August 2011 (15 years)'
+    journalist_contact: sarahp@techcrunch.com
+    ownership_chain: TechCrunch -> Yahoo -> Apollo Global Management ($5B acquisition May 2021)
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    iteration: 144
+    finding_type: same_journalist_cross_entity_privacy_vocabulary_inversion
+    domain: wearables_privacy
+    entities:
+    - meta
+    - google
+    test_file: tests/test_sarah_perez_cross_entity_privacy_vocabulary_inversion_aug17.py
+    articles:
+      google:
+        url: https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/
+        title: "We tried Google's AI glasses and they're almost there"
+        author: Sarah Perez
+        date: '2026-05-22'
+        privacy_alarm_terms: 0
+        adversarial_source_links: 0
+        camera_framing: feature_neutral
+        google_glass_history_referenced: false
+        google_privacy_history_referenced: false
+        camera_auto_activation_flagged: false
+        bystander_consent_raised: false
+        photographed_person_without_consent_concern: true
+        tone_score: 0.75
+        template: aspirational_product_hands_on
+      meta:
+        url: https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+        title: "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+        author: Sarah Perez
+        date: '2026-07-08'
+        privacy_alarm_terms: 25
+        adversarial_source_links: 30
+        adversarial_source_categories: ['WIRED investigations', 'TikTok backlash', 'Financial Times', 'Texas AG', 'lawsuits', 'whistleblower books', 'Cambridge Analytica', 'Apple partnership refusal', 'BBC', 'child safety', 'privacy policy screenshot']
+        historical_baggage_years_back: 8
+        led_safeguard_positive_framing: false
+        apple_weaponized: true
+        tone_score: -0.80
+        template: comprehensive_privacy_indictment
+    publication_window_days: 47
+    same_author: true
+    same_publication: true
+    same_product_category: true
+    camera_capability_parity:
+      both_have_cameras: true
+      both_transmit_to_servers: true
+      both_photograph_people: true
+      both_have_ai_visual_processing: true
+      google_camera_auto_activates_with_ai: true
+      google_ai_photo_manipulation_of_strangers: true
+    financial_incentives:
+      yahoo_search_powered_by_google: true
+      apollo_ai_portfolio_billions: 38.4
+      meta_yahoo_content_deal: false
+      meta_yahoo_ad_dependency: false
+      framing_matches_financial_incentive: true
+    asymmetry_score: 0.97
+    finding_summary: >
+      Sarah Perez (TechCrunch Consumer News Editor since Aug 2011) wrote hands-on
+      coverage of BOTH Google's and Meta's camera-equipped AI smart glasses within
+      47 days (May 22 - Jul 8, 2026). Google article: ZERO privacy vocabulary,
+      aspirational tone, photographed a person with the camera-glasses and raised
+      zero consent/privacy concern, noted camera auto-activates with Gemini as a
+      neutral config detail. Meta article: 25+ privacy alarm terms, 30+ adversarial
+      source links, LED safety improvement converted into comprehensive privacy
+      indictment, Cambridge Analytica invoked 8 years later, Apple weaponized.
+      This is the STRONGEST form of cross-entity evidence because it eliminates
+      the "different reporter, different beat" confounder that weakens publication-level
+      mechanisms like #122 (TechCrunch Snap vs Meta used different authors).
+    eliminates_confounder_from: '#122 different_individual_reporters'
+    confounders:
+    - name: meta_more_privacy_controversies
+      strength: STRONG
+      rebutted: true
+      rebuttal: 'Google also has extensive privacy history (Google Glass backlash, location tracking lawsuits, FTC settlements, Street View wiretapping). Zero mentioned.'
+    - name: meta_class_action_elevated_concerns
+      strength: STRONG
+      rebutted: true
+      rebuttal: 'Category-wide elevation should appear in ALL camera glasses reviews. Perez tested Google glasses 2.5 months after the Meta lawsuit.'
+    - name: google_glasses_were_prototypes
+      strength: MODERATE
+      rebutted: true
+      rebuttal: 'Camera that photographs people and transmits to servers has same privacy surface area. Perez physically used the camera.'
+    - name: controlled_demo_environment
+      strength: MODERATE
+      rebutted: true
+      rebuttal: 'Perez photographed a real person. Venue does not explain total absence of privacy language.'
+    - name: meta_article_pegged_to_news_event
+      strength: WEAK
+      rebutted: true
+      rebuttal: 'Perez chose to convert positive safety story into indictment. No cross-reference to Google needing similar protections.'
+    falsifiable_predictions:
+    - prediction: If Perez writes a Samsung Galaxy Glasses hands-on, it will contain fewer privacy alarm terms than her Meta article.
+      falsifiable: true
+      testable_date: '2027-06'
+    - prediction: If Google announces a privacy safeguard for Android XR glasses, Perez will NOT convert it into a comprehensive privacy indictment.
+      falsifiable: true
+      testable_date: '2027-06'
+    - prediction: Perez will not independently investigate Google's data retention for photos transmitted to "Gemini and Nano Banana servers."
+      falsifiable: true
+      testable_date: '2027-06'
+    cross_references:
+    - mechanism_id: 122
+      relationship: extends
+      note: 'Eliminates #122 different-reporter confounder — same author for both entities'
+    - mechanism_id: 109
+      relationship: complements
+      note: 'Same pattern at sister Yahoo property (Engadget Google Android XR zero privacy vocabulary)'
+    - mechanism_id: 113
+      relationship: complements
+      note: 'Karissa Bell (Engadget/Yahoo) adversarial testing asymmetry — same parent company'
+    - mechanism_id: 111
+      relationship: consistent
+      note: 'Apollo financial architecture predicts direction of differential treatment'
+    - mechanism_id: 128
+      relationship: consistent
+      note: 'Apollo AI financing portfolio predicts direction of differential treatment'
+    source_urls:
+    - https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/
+    - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+    - https://techcrunch.com/2026/03/05/meta-sued-over-ai-smart-glasses-privacy-concerns/
+research_period: 2024-08-01 to 2026-08-17

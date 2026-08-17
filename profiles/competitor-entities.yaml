@@ -5343,6 +5343,22 @@ entities:
       - 104
       - 108
       - 6
+    sarah_perez_cross_entity_mechanism_142:
+      mechanism_id: 142
+      date_analyzed: '2026-08-17'
+      publication: TechCrunch
+      journalist: Sarah Perez
+      journalist_title: Consumer News Editor
+      finding_summary: 'Same journalist (Sarah Perez) wrote hands-on coverage of both Google
+        and Meta camera-equipped AI smart glasses within 47 days. Google article (May 22):
+        ZERO privacy vocabulary, aspirational tone, photographed a person without privacy
+        concern. Meta article (Jul 8): 25+ alarm terms, 30+ adversarial sources, LED safety
+        improvement converted into comprehensive privacy indictment. Eliminates the "different
+        reporter" confounder from mechanism #122.'
+      related_mechanisms:
+      - 122
+      - 109
+      - 113
     q2_2026_financial_update:
       mechanism_id: 111
       date_analyzed: '2026-08-15'
