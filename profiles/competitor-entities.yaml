@@ -4287,8 +4287,31 @@ entities:
     - Grokipedia
     regex: \b(xAI|Grok(?!\s+(?:monster|puppet)))\b
     category: ai_lab
-    market_cap_approx: $230B (private valuation, Nov 2025 WSJ; $20B Series E Jun 2026 PitchBook)
+    market_cap_approx: $250B (as xAI subsidiary of SpaceX; $230B private valuation Nov 2025, $250B at SpaceX merger Feb 2026)
     ceo: Elon Musk
+    spacex_merger:
+      date: '2026-02-02'
+      structure: triangular merger — xAI is wholly owned subsidiary of SpaceX
+      xai_valuation_b: 250
+      spacex_valuation_b: 1000
+      combined_valuation_b: 1250
+      spacex_ipo_date: '2026-06-12'
+      spacex_ipo_valuation_t: 1.75
+      spacex_ticker: SPCX
+      spacex_exchange: Nasdaq
+      spacex_ipo_raised_b: 75
+      free_float_pct: 7
+      net_loss_2025_b: 4.94
+      index_inclusion:
+        nasdaq_100: '2026-07-01'
+        russell_1000: '2026-06-19'
+        msci_global: '2026-06-27'
+        vanguard_total_market: '2026-06-19'
+        sp_500: not eligible (12-month seasoning + profitability)
+      institutional_convergence_note: 'SpaceX IPO created passive index fund convergence
+        with media company shareholders. Vanguard, BlackRock, State Street — which own
+        22.6% of NYT Co and 27.3% of News Corp — are now mandated to hold SpaceX/xAI
+        through index tracking. See mechanism #140.'
     publisher_deals_note: "ZERO publisher content licensing deals as of Aug 2026.\nxAI is the only major AI lab alongside\
       \ Anthropic with no publisher deals.\nInstead of licensing, xAI relies on:\n(a) X/Twitter public posts for training\
       \ data (platform owned by Musk)\n(b) Grokipedia — AI-generated encyclopedia, many articles near-verbatim\n    from Wikipedia\
@@ -4296,7 +4319,8 @@ entities:
       \  at scale (1B+ MAU) for refining AI models\n(d) Government contracts (GSA OneGov, Sep 2025) — $0.42/agency\nNo publisher\
       \ has sued xAI for copyright infringement either.\nThis makes xAI \"publisher-invisible\" — neither paying publishers\n\
       nor being sued by them. Publishers have no financial relationship\nwith xAI in either direction, which theoretically\
-      \ makes xAI\ncoverage editorially neutral (no incentive to be soft OR hard).\n"
+      \ makes xAI\ncoverage editorially neutral (no incentive to be soft OR hard).\nNOTE: Post-SpaceX IPO (Jun 12 2026), publisher\n\
+      shareholders now hold xAI through index fund mandates, creating\npassive convergence (mechanism #140).\n"
     press_response: Legacy Media Lies
     litigation:
     - type: csam_deepfake

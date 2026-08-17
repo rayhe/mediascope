@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 14767 tests across 421 test files (all from real articles)
+├── tests/                       # 14866 tests across 422 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -727,6 +727,7 @@ mediascope/
 │   ├── test_type_d_01am_cross_validation_aug16.py # Type D cross-validation (Aug 16, 01:00 PT): Mechanisms #125-128 structural integrity, cross-reference bidirectionality, entity count fix, doc sync. 10 classes, 51 tests
 │   ├── test_andy_boxall_cross_entity_privacy_vocabulary_inversion_aug16.py # Mechanism #132: Andy Boxall (Android Police / Valnet) privacy vocabulary inversely proportional to camera count. 10 classes, 57 tests
 │   ├── test_type_d_09am_cross_validation_aug16.py # Type D cross-validation (Aug 16, 09:00 PT): Mechanisms #129-133 structural integrity, 15 bidirectional cross-reference fixes, confounder quality, entity count, content validation, regression guards. 14 classes, 96 tests
+│   ├── test_type_d_1pm_cross_validation_aug16.py # Type D cross-validation (Aug 16, 1 PM PT): Mechanisms #134-136 structural integrity, cross-reference bidirectionality, doc sync. 11 classes, 45 tests
 │   ├── test_snap_competitive_privacy_positioning_amplification_aug16.py # Mechanism #130 — Snap CEO Competitive Privacy Positioning Amplification: cross-publication Spiegel anti-Meta privacy framing, Snap Specs launch Jun 16 2026, Gizmodo clean control. 9 classes, 34 tests
 │   ├── test_cnbc_versant_post_spinoff_smart_glasses_coverage_selection_aug16.py # Mechanism #129 — CNBC/Versant Post-Spinoff Smart Glasses Coverage Selection: Samsung Galaxy Glasses aspirational framing vs Meta fiscal-alarm framing, post-Versant spinoff financial dependencies. 10 classes, 37 tests
 │   ├── test_ben_schoon_9to5google_control_calibration_cross_entity_aug16.py # Mechanism #131 — Ben Schoon (9to5Google) Cross-Entity Control Calibration: independent outlet privacy vocabulary baseline (~1.7:1 ratio) vs institutional outlets (infinite ratio). 10 classes, 39 tests
@@ -753,6 +754,7 @@ mediascope/
 │   ├── test_people_inc_google_traffic_substitution_paradox_aug16.py # Mechanism #127: People Inc Q2 2026 Google Traffic Substitution Paradox — diversification from Google creates broader AI coverage capture. 7 classes, 30 tests
 │   ├── test_versant_cnbc_spinoff_financial_incentive_restructuring_aug16.py # Mechanism #128: Versant Media CNBC Post-Spinoff Financial Incentive Restructuring — corporate spinoff transforms insulated coverage into direct financial exposure. 10 classes, 52 tests
 │   ├── test_snap_perplexity_publisher_financial_chain_aug16.py # Mechanism #133: Snap-Perplexity-Publisher Financial Chain — three financial flows connecting Snap to Condé Nast via Discover, Perplexity, and OpenAI. 9 classes, 40 tests
+│   ├── test_spacex_ipo_passive_index_fund_xai_convergence_aug16.py # Mechanism #140: SpaceX IPO Passive Index Fund Convergence — institutional investor overlap between xAI/X and media companies post-Jun 12 2026. 8 classes, 23 tests
 │   ├── test_wired_meta_remediation_coverage_selection_silence_aug16.py # Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED fix got zero WIRED coverage, 7+ other outlets covered it. 55 tests
 │   ├── test_raymond_wong_fury_privacy_vocabulary_differential_aug16.py # Mechanism #135: Raymond Wong (Gizmodo) cultural base rate of Meta privacy stigma at zero-financial-ties outlet. 8 classes, 46 tests
 │   ├── test_apple_siri_ai_quad_channel_publisher_dependency_aug16.py # Mechanism #136: Apple Siri AI Quad-Channel Publisher Financial Architecture Pre-N50 — Apple's Siri AI licensing adds 4th publisher financial channel alongside News+, Advertising, App Store. 9 classes, 55 tests
