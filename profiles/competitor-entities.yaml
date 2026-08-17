@@ -2536,36 +2536,42 @@ entities:
       wrby_stock_rally_on_2026_launch_pct: 14
       wrby_q2_2026_revenue_m: 235.5
       wrby_q2_2026_growth_yoy_pct: 9.8
-      wrby_market_cap_approx: '$1.2B'
+      wrby_market_cap_approx: $1.2B
       launch_timeline: holiday 2026
       frame_partners:
-        - Warby Parker
-        - Gentle Monster
-        - Kering Eyewear
+      - Warby Parker
+      - Gentle Monster
+      - Kering Eyewear
       kering_commitment_m: 75
       smart_glasses_market_projection_2028_b: 4.2
       smart_glasses_market_projection_source: Bank of America
       platform: Android XR + Gemini AI
       silicon: Snapdragon AR1 Gen 1 (Qualcomm)
-      meta_equivalent: 'Meta has NO equity stake in EssilorLuxottica. EssilorLuxottica (~EUR90B market cap, $28B+ annual revenue) has ZERO advertising relationships with tech publications. Meta holds a strategic partnership but no financial feedback loop through publisher revenue.'
+      meta_equivalent: Meta has NO equity stake in EssilorLuxottica. EssilorLuxottica (~EUR90B market cap, $28B+ annual revenue)
+        has ZERO advertising relationships with tech publications. Meta holds a strategic partnership but no financial feedback
+        loop through publisher revenue.
       essilorluxottica_meta_glasses_sold_2025_m: 7
-      publisher_coverage_feedback_loop: 'Google is simultaneously publishers primary revenue source (ad revenue, News Showcase, content deals) AND an equity investor in the frame maker competing with Metas frame partner. Favorable coverage of Google/Warby/Samsung glasses benefits Google through both platform adoption AND WRBY stock appreciation. No other smart glasses entity has this dual-role structure.'
+      publisher_coverage_feedback_loop: Google is simultaneously publishers primary revenue source (ad revenue, News Showcase,
+        content deals) AND an equity investor in the frame maker competing with Metas frame partner. Favorable coverage of
+        Google/Warby/Samsung glasses benefits Google through both platform adoption AND WRBY stock appreciation. No other
+        smart glasses entity has this dual-role structure.
       cross_references:
-        - mechanism_id: 76
-          relationship: extends
-          description: 'Adds equity investment dimension to Samsung-Google compound advertiser leverage'
-        - mechanism_id: 91
-          relationship: extends
-          description: 'Fourth financial node (equity) layered on top of Qualcomm co-marketing supply chain'
-        - mechanism_id: 111
-          relationship: related
-          description: 'Apollo (Yahoo/Engadget parent) separately finances Google competitors — coverage incentive compounds when Apollo publications cover Google-aligned products'
+      - mechanism_id: 76
+        relationship: extends
+        description: Adds equity investment dimension to Samsung-Google compound advertiser leverage
+      - mechanism_id: 91
+        relationship: extends
+        description: Fourth financial node (equity) layered on top of Qualcomm co-marketing supply chain
+      - mechanism_id: 111
+        relationship: related
+        description: Apollo (Yahoo/Engadget parent) separately finances Google competitors — coverage incentive compounds
+          when Apollo publications cover Google-aligned products
       source_urls:
-        - https://www.businesswire.com/news/home/20250520232084/en/Warby-Parker-Partners-with-Google-To-Develop-Intelligent-Eyewear
-        - https://techcrunch.com/2025/05/20/google-commits-150m-to-develop-ai-glasses-with-warby-parker/
-        - https://www.visionmonday.com/eyecare/article/warby-parker-q2-revenue-rises-as-launch-of-intelligent-eyewear-nears/
-        - https://www.visionmonday.com/business/article/google-warby-parker-confirm-plans-to-deliver-ai-glasses-in-2026
-        - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
+      - https://www.businesswire.com/news/home/20250520232084/en/Warby-Parker-Partners-with-Google-To-Develop-Intelligent-Eyewear
+      - https://techcrunch.com/2025/05/20/google-commits-150m-to-develop-ai-glasses-with-warby-parker/
+      - https://www.visionmonday.com/eyecare/article/warby-parker-q2-revenue-rises-as-launch-of-intelligent-eyewear-nears/
+      - https://www.visionmonday.com/business/article/google-warby-parker-confirm-plans-to-deliver-ai-glasses-in-2026
+      - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
     publisher_litigation_jul2026:
       event: Hachette/Cengage/Elsevier/Turow class-action copyright suit
       date: 2026-07-10
@@ -5439,42 +5445,6 @@ entities:
       - 108
       - 111
       - 112
-  mansueto_ventures:
-    display_name: Mansueto Ventures
-    aliases:
-    - Mansueto Ventures
-    - Inc.com
-    - Inc Magazine
-    - Fast Company
-    owner: Joe Mansueto (Morningstar founder)
-    category: media_publisher
-    publications:
-    - Inc.com
-    - Fast Company
-    revenue: $23.1M (ZoomInfo)
-    ad_revenue_share: 55% (Digiday 2025)
-    tech_stack:
-    - Google Analytics 4 (LeadIQ)
-    google_dependencies:
-    - programmatic_advertising
-    - search_traffic
-    - analytics_ga4
-    meta_financial_ties: none
-    meta_content_licensing_deals: none
-    meta_advertising_partnerships: none
-    morningstar_connection: Joe Mansueto founded Morningstar (investment research, tracks Alphabet/Google stock)
-    notes: Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
-      Standard Google programmatic/search traffic dependency creates structural incentive alignment with Google ecosystem.
-      Zero known Meta financial relationships of any kind.
-    inc_smart_glasses_privacy_redirected_attribution:
-      mechanism_id: 137
-      finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google smart glasses competitive
-        analysis while presenting Samsung''s identical camera+AI architecture with ZERO scrutiny. Samsung exec claim "privacy
-        is not an afterthought" taken at face value. Cross-entity contrast: Meta articles use "scandal" language (Soren Kaplan),
-        Google articles use aspirational framing (Jason Aten, Kit Eaton, Georgia Fearn). Financial dependency on Google (55%
-        ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective privacy vocabulary.'
-      source_url: https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
-      date: '2026-07-29'
   versant_media_group:
     display_name: Versant Media Group (CNBC, MS Now, E!, USA Network)
     aliases:
@@ -5554,48 +5524,6 @@ entities:
       covering AI companies — structural editorial-product conflict.
 
       '
-  axel_springer_business_insider:
-    parent_company: Axel Springer SE (majority-owned by KKR)
-    ownership_chain: KKR → Axel Springer SE → Business Insider / Politico / Bild / Welt
-    headquarters: Berlin, Germany
-    meta_financial_relationship: none
-    openai_financial_relationship: content licensing deal (Dec 2023, tens of millions EUR/year)
-    google_financial_relationship: search traffic dependency
-    meta_as_ad_competitor: true
-    publications:
-    - Business Insider (businessinsider.com)
-    - Politico
-    - Bild
-    - Welt
-    content_licensing_deals:
-    - partner: OpenAI
-      date: '2023-12-13'
-      value_description: tens of millions of euros per year
-      scope: content licensing + model training data + ChatGPT integration
-    pe_owner:
-      name: KKR
-      ai_infrastructure_portfolio_b: 34
-      helix_digital_infrastructure_b: 10
-      ecp_partnership_b: 50
-    notes: Triple-layer financial architecture — OpenAI content deal, KKR PE ownership with $34B+ AI infrastructure serving
-      Meta competitors, Google search traffic dependency. Business Insider produces adversarial Meta glasses coverage with
-      alarm vocabulary while publishing zero comparable Samsung/Google glasses privacy articles despite identical hardware
-      (Snapdragon AR1, 12MP camera, LED indicator).
-    mechanisms:
-    - mechanism_id: 143
-      mechanism_name: Axel Springer KKR OpenAI Triple-Layer Financial Architecture
-  sarah_perez_cross_entity_mechanism_142:
-    parent_company: Yahoo (Apollo Global Management)
-    publication: TechCrunch
-    role: Consumer News Editor (since Aug 2011)
-    meta_financial_relationship: none (via Apollo/Yahoo)
-    google_financial_relationship: Yahoo Search Alliance powered by Google
-    notes: Same-journalist cross-entity mechanism. Perez wrote Google Android XR glasses hands-on (May 22, 2026) with ZERO
-      privacy vocabulary, then Meta glasses article (Jul 8, 2026) with 25+ alarm terms. 47-day window, inverted framing, same
-      product category. Strongest evidence of entity-specific editorial posture.
-    mechanisms:
-    - mechanism_id: 142
-      mechanism_name: Sarah Perez Same-Journalist Cross-Entity Privacy Vocabulary Inversion
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
@@ -8550,3 +8478,82 @@ ai_content_market_economics:
     mechanisms:
     - mechanism_id: 141
       mechanism_name: PhoneArena Cross-Entity Beat-Assignment Credentialing Asymmetry
+publisher_entities:
+  mansueto_ventures:
+    display_name: Mansueto Ventures
+    aliases:
+    - Mansueto Ventures
+    - Inc.com
+    - Inc Magazine
+    - Fast Company
+    owner: Joe Mansueto (Morningstar founder)
+    category: media_publisher
+    publications:
+    - Inc.com
+    - Fast Company
+    revenue: $23.1M (ZoomInfo)
+    ad_revenue_share: 55% (Digiday 2025)
+    tech_stack:
+    - Google Analytics 4 (LeadIQ)
+    google_dependencies:
+    - programmatic_advertising
+    - search_traffic
+    - analytics_ga4
+    meta_financial_ties: none
+    meta_content_licensing_deals: none
+    meta_advertising_partnerships: none
+    morningstar_connection: Joe Mansueto founded Morningstar (investment research, tracks Alphabet/Google stock)
+    notes: Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
+      Standard Google programmatic/search traffic dependency creates structural incentive alignment with Google ecosystem.
+      Zero known Meta financial relationships of any kind.
+    inc_smart_glasses_privacy_redirected_attribution:
+      mechanism_id: 137
+      finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google smart glasses competitive
+        analysis while presenting Samsung''s identical camera+AI architecture with ZERO scrutiny. Samsung exec claim "privacy
+        is not an afterthought" taken at face value. Cross-entity contrast: Meta articles use "scandal" language (Soren Kaplan),
+        Google articles use aspirational framing (Jason Aten, Kit Eaton, Georgia Fearn). Financial dependency on Google (55%
+        ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective privacy vocabulary.'
+      source_url: https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
+      date: '2026-07-29'
+  axel_springer_business_insider:
+    parent_company: Axel Springer SE (majority-owned by KKR)
+    ownership_chain: KKR → Axel Springer SE → Business Insider / Politico / Bild / Welt
+    headquarters: Berlin, Germany
+    meta_financial_relationship: none
+    openai_financial_relationship: content licensing deal (Dec 2023, tens of millions EUR/year)
+    google_financial_relationship: search traffic dependency
+    meta_as_ad_competitor: true
+    publications:
+    - Business Insider (businessinsider.com)
+    - Politico
+    - Bild
+    - Welt
+    content_licensing_deals:
+    - partner: OpenAI
+      date: '2023-12-13'
+      value_description: tens of millions of euros per year
+      scope: content licensing + model training data + ChatGPT integration
+    pe_owner:
+      name: KKR
+      ai_infrastructure_portfolio_b: 34
+      helix_digital_infrastructure_b: 10
+      ecp_partnership_b: 50
+    notes: Triple-layer financial architecture — OpenAI content deal, KKR PE ownership with $34B+ AI infrastructure serving
+      Meta competitors, Google search traffic dependency. Business Insider produces adversarial Meta glasses coverage with
+      alarm vocabulary while publishing zero comparable Samsung/Google glasses privacy articles despite identical hardware
+      (Snapdragon AR1, 12MP camera, LED indicator).
+    mechanisms:
+    - mechanism_id: 143
+      mechanism_name: Axel Springer KKR OpenAI Triple-Layer Financial Architecture
+  sarah_perez_cross_entity_mechanism_142:
+    parent_company: Yahoo (Apollo Global Management)
+    publication: TechCrunch
+    role: Consumer News Editor (since Aug 2011)
+    meta_financial_relationship: none (via Apollo/Yahoo)
+    google_financial_relationship: Yahoo Search Alliance powered by Google
+    notes: Same-journalist cross-entity mechanism. Perez wrote Google Android XR glasses hands-on (May 22, 2026) with ZERO
+      privacy vocabulary, then Meta glasses article (Jul 8, 2026) with 25+ alarm terms. 47-day window, inverted framing, same
+      product category. Strongest evidence of entity-specific editorial posture.
+    mechanisms:
+    - mechanism_id: 142
+      mechanism_name: Sarah Perez Same-Journalist Cross-Entity Privacy Vocabulary Inversion
