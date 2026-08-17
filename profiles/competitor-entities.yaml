@@ -5524,6 +5524,132 @@ entities:
       covering AI companies — structural editorial-product conflict.
 
       '
+  nvidia:
+    display_name: Nvidia
+    aliases:
+    - Nvidia
+    - NVIDIA
+    - Jensen Huang
+    - GeForce
+    - DGX
+    - Blackwell
+    - Vera Rubin
+    - GTC
+    regex: \b(NVIDIA|Nvidia|Jensen\s+Huang|GeForce|DGX|Blackwell|Vera\s+Rubin)\b
+    category: infrastructure_monopolist
+    market_cap_approx: $4.4T+ (world's largest publicly traded company, Aug 2025)
+    ceo: Jensen Huang
+    q2_fy2026_earnings:
+      quarter_ended: '2025-07-27'
+      report_date: '2025-08-27'
+      revenue_b: 46.7
+      revenue_yoy_pct: 56
+      revenue_qoq_pct: 6
+      gross_margin_pct: 72.4
+      operating_income_b: 28.4
+      net_income_b: 26.4
+      eps_gaap: 1.08
+      eps_nongaap: 1.05
+      data_center_revenue_b: 41.1
+      data_center_yoy_pct: 56
+      q3_guidance_b: 54
+      q3_guidance_note: Below some analyst expectations of $60B, shares dropped ~2-3% AH
+      source_urls:
+      - https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2026/default.aspx
+      - https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/
+    customer_concentration:
+      top_2_pct_q2_fy26: 39
+      customer_a_pct: 23
+      customer_b_pct: 16
+      additional_4_customers_pct: 46
+      note: All attributed to Compute & Networking segment. Customers unnamed in SEC
+        filing but almost certainly among Microsoft, Amazon, Google, Meta. Increase
+        from 25% (14% + 11%) in Q2 FY2025.
+      source_url: https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/
+    openai_investment:
+      amount_b: 30
+      round: Series F (Feb/Mar 2026)
+      total_round_b: 110
+      openai_valuation_b: 730
+      co_investors:
+      - SoftBank ($30B, total $64.6B, 13% ownership)
+      - Amazon ($50B)
+      replaced_prior_commitment: $100B framework (Sep 2025) replaced by $30B equity
+      capital_usage: Much of the fresh capital to purchase Nvidia chips (Reuters)
+      circular_financing_concern: 'Gulf Business (Feb 2026): "exacerbates Wall Street
+        concerns about circular financing agreements, where firms invest in and sign
+        supply deals with each other, inflating demand and revenue." Nvidia invests
+        in OpenAI, OpenAI uses the money to buy Nvidia GPUs, GPU purchases become
+        Nvidia revenue. Self-reinforcing loop.'
+      jensen_huang_quote: We will invest a great deal of money. I believe in OpenAI.
+        The work that they do is incredible. They are one of the most consequential
+        companies of our time.
+      source_urls:
+      - https://www.reuters.com/business/nvidia-close-finalizing-30-billion-investment-openai-funding-round-ft-reports-2026-02-20/
+      - https://gulfbusiness.com/en/2026/tech/openai-840-billion-funding-amazon-nvidia-softbank/
+      - https://www.morningstar.com/news/marketwatch/20260227177/amazon-nvidia-and-softbank-pour-110-billion-into-openai-raising-the-stakes-for-ai-monetization
+      - https://www.pymnts.com/artificial-intelligence-2/2026/nvidia-nears-30-billion-stake-in-record-breaking-openai-funding-round/
+      - https://www.eweek.com/news/nvidia-openai-30b-plan/
+    groq_acquisition:
+      deal_value_b: 20
+      structure: Reverse acqui-hire (non-exclusive IP license, key talent moves to Nvidia)
+      technology: LPU (Language Processing Unit) for high-speed AI inference
+      antitrust_note: Structured to minimize regulatory attention per analysts. CMA
+        has scrutinized similar tech sector deals. Nvidia-Trump administration relationship
+        described as among strongest of key US tech companies (Bernstein analyst).
+      groq_independence: Groq continues as independent company with Simon Edwards as CEO
+      source_url: https://www.campaignlive.com/article/nvidias-shock-20bn-groq-deal-means-adland/1944164
+    gpu_capital_circularity:
+      overview: 'Nvidia sits at the CENTER of a circular financial chain affecting
+        publisher coverage incentives. The chain: (1) Hyperscalers spend $650B+ on AI
+        capex → (2) Capex flows to Nvidia GPUs ($46.7B Q2 FY26) → (3) Nvidia invests
+        $30B in OpenAI → (4) OpenAI buys MORE Nvidia GPUs → (5) OpenAI licenses
+        publisher content ($300-400M/yr, 20+ deals) → (6) Publishers cover the AI
+        capex story favorably → (7) Positive capex narrative justifies more hyperscaler
+        spending → Loop repeats. No prior mechanism mapped how the GPU infrastructure
+        layer creates secondary publisher financial incentives.'
+      mechanism_type: hardware_investor_circular_incentive
+      publisher_incentive_chain:
+        layer_1: Nvidia GPU monopoly generates ~$180B+ annual revenue from AI infrastructure
+        layer_2: Nvidia invests $30B in OpenAI (its largest non-customer investment)
+        layer_3: OpenAI licenses publisher content at $300-400M/yr
+        layer_4: Publishers covering AI capex favorably sustains the spending that funds
+          ALL layers above
+        layer_5: Publications with OpenAI deals have dual incentive — protect OpenAI deal
+          revenue AND the AI capex narrative that sustains Nvidia valuation
+      hyperscaler_capex_2026:
+        meta_b: 130-145
+        microsoft_b: 105
+        alphabet_b: 185
+        amazon_b: 200
+        combined_b: 650+
+        note: All four are Nvidia's TOP customers. All four contribute to the $650B+
+          that flows primarily to Nvidia GPUs.
+    meta_contrast: 'Meta is one of Nvidia largest GPU customers ($130-145B capex 2026)
+      yet Nvidia $30B OpenAI investment financially aligns with Meta primary AI competitor.
+      OpenAI proprietary API model competes directly with Meta open-source Llama.
+      Meta supply chain for Ray-Ban glasses (EssilorLuxottica frame design, custom AI
+      silicon, Qualcomm Snapdragon AR1 Gen 1) has ZERO publisher advertising relationships
+      through the frame partner (EssilorLuxottica ~€90B market cap, zero tech publication
+      ads). Samsung Galaxy Glasses supply chain (Samsung + Google + Qualcomm) has TRIPLE
+      entity financial chains. Nvidia investment in OpenAI creates ADDITIONAL asymmetry:
+      publications with OpenAI content deals are financially connected to Nvidia through
+      OpenAI, but have no equivalent connection to Meta through EssilorLuxottica.'
+    publisher_financial_relationships:
+      direct_deals: 0
+      note: Nvidia has ZERO direct content licensing or advertising deals with any of
+        the tech publications in the MediaScope corpus. All publisher financial influence
+        is INDIRECT through the OpenAI investment chain and GTC media access control.
+    gtc_media_access:
+      overview: 'GTC (GPU Technology Conference) is the largest AI industry event,
+        attracting 300K+ attendees (Mar 2026). Press access, Jensen Huang interviews,
+        GPU launch embargoes, and exclusive briefings create de facto editorial incentive
+        alignment without explicit financial transactions. Publications that lose GTC
+        access lose coverage of the most important infrastructure company. This is a
+        SOFT financial incentive — access = content = traffic = revenue.'
+    mechanisms:
+    - mechanism_id: 152
+      mechanism_name: Nvidia-OpenAI GPU-Capital Circularity Publisher Incentive Chain
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
