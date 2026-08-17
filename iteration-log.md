@@ -1,3 +1,47 @@
+## Iteration #145 — Mon 2026-08-17 00:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Focus: Android Police (Valnet Inc.) — Per-Click Compensation Model Drives Smart Glasses Coverage Vocabulary Asymmetry (Mechanism #145)**
+
+**DISCOVERY: Per-Click Incentive Amplifies Smart Glasses Coverage Asymmetry**
+
+Android Police (Valnet Inc.) published 6+ Meta smart glasses articles with 30+ alarm terms across headlines and bodies:
+
+| Article | Author | Date | Headline Alarm Terms |
+|---------|--------|------|---------------------|
+| Super sensing feature | Andy Boxall | Jul 9, 2026 | "nightmarish," "privacy problems," "bad to worse" |
+| Name Tag facial recognition | Andy Boxall | Feb 17, 2026 | "privacy-invading," "doesn't care what you think" |
+| Class action lawsuit | — | Mar 5, 2026 | "debacle" |
+| v26 LED fix coverage | Chandra Steele | Jul 8, 2026 | "covert filming," "women's safety" |
+| I-XRAY spying | — | ~2024 | "spying potential" |
+| Creepy usage | — | Feb 10, 2026 | "creepy" |
+
+Samsung Galaxy Glasses hands-on (Andy Boxall, Jul 23, 2026) — IDENTICAL Snapdragon AR1 Gen 1 chip, same camera, same LED indicator:
+- ZERO alarm vocabulary for Samsung
+- 4-sentence privacy section explicitly dismissed: "Privacy issues aside, the designs look good"
+- Samsung exec claim "privacy is not an afterthought" taken at face value
+
+**Privacy vocabulary ratio: 30+:0 (infinite)**
+
+**Novel structural incentive — Per-Click Compensation:**
+Valnet Inc. moved to per-click freelancer contracts (Press Gazette / Editor & Publisher, Jun 2026). Writers paid based on article click volume. Meta alarm articles ("nightmarish," "privacy-invading") generate measurably higher engagement than neutral Samsung product previews, creating DIRECT financial incentive for alarmist Meta framing at the individual writer level.
+
+**Multi-journalist institutional pattern:** Both Andy Boxall AND Chandra Steele show the same vocabulary asymmetry — this is institutional, not individual. Boxall wrote "nightmarish" Meta (Jul 9) and aspirational Samsung (Jul 23) just 14 DAYS apart.
+
+**Cross-publication portability confirmed:** Boxall shows the same asymmetry at both Android Police (Valnet) and Digital Trends (Designtechnica Corp) — mechanism #132. The pattern follows the journalist across different publication owners.
+
+**Valnet financial architecture:**
+- ~4B sessions/year across 30+ sites, 100% programmatic ad revenue
+- Google is primary revenue source (AdSense/AdX + Discover/Search traffic)
+- Samsung-Google co-developed Android XR platform for Galaxy Glasses
+- Meta: zero financial relationships with Valnet
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Deliverables:**
+- `tests/test_android_police_valnet_per_click_smart_glasses_coverage_asymmetry_aug17.py` — 10 classes, 59 tests, all passing
+- `profiles/competitor-coverage-research.yaml` — mechanism #145 added
+- README + ARCHITECTURE synced (428 files, ~15,131 tests, 145 mechanisms)
+
 ## Iteration #144 — Sun 2026-08-16 23:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Focus: Cross-medium podcast ecosystem analysis — Everyone Hates Elon, Attention Sphere, The Guilty Feminist + discovered sources**

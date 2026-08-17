@@ -17721,3 +17721,109 @@ research_period: 2024-08-01 to 2026-08-17
     - mechanism_id: 136
     - mechanism_id: 137
     test_file: tests/test_podcast_ecosystem_privacy_vocabulary_amplification_aug16.py
+  android_police_valnet_per_click_smart_glasses_coverage_asymmetry:
+    mechanism_id: 145
+    type: publication_level_coverage_asymmetry
+    discovery_date: '2026-08-17'
+    publication: Android Police
+    owner: Valnet Inc. (Montreal, Canada)
+    journalists:
+    - Andy Boxall
+    - Chandra Steele
+    finding_summary: 'Android Police (Valnet Inc.) published 6+ Meta smart glasses articles
+      with 30+ alarm terms (nightmarish, privacy-invading, debacle, spying potential,
+      creepy, surveillance) and 1 Samsung article with ZERO alarm terms, despite identical
+      Snapdragon AR1 Gen 1 camera hardware. Two different journalists (Boxall, Steele)
+      show the same institutional pattern. Valnet moved to per-click freelancer compensation
+      (Press Gazette, Jun 2026), creating direct financial incentive for alarmist Meta
+      headlines that generate higher engagement. Andy Boxall wrote "nightmarish" Meta
+      (Jul 9) and aspirational Samsung hands-on (Jul 23) 14 days apart — same journalist,
+      same pattern documented at Digital Trends (mechanism #132), confirming journalist-portable
+      asymmetry across different publication owners.'
+    meta_articles:
+    - title: "Ray-Ban Meta privacy problems go from bad to worse with nightmarish 'super sensing' feature"
+      author: Andy Boxall
+      date: '2026-07-09'
+      url: https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
+      alarm_terms: 10+
+    - title: "Meta's privacy-invading feature for smartglasses confirms it doesn't care what you think"
+      author: Andy Boxall
+      date: '2026-02-17'
+      url: https://www.androidpolice.com/metas-privacy-invading-smartglasses-feature-confirms-it-doesnt-care-what-you-think/
+      alarm_terms: 8+
+    - title: "Meta hit with class action suit for its AI glasses privacy debacle"
+      date: '2026-03-05'
+      url: https://www.androidpolice.com/meta-ai-glasses-privacy-concern/
+      alarm_terms: 10+
+    - title: "Meta updates smart glasses to curb covert filming, but women's safety remains an issue"
+      author: Chandra Steele
+      date: '2026-07-08'
+      url: https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/
+      alarm_terms: 10+
+    - title: "Turns out Meta's smart glasses were actually holding back on their spying potential"
+      url: https://Www.androidpolice.com/meta-smart-glasses-spying-potential/
+      alarm_terms: 3+
+    - title: "Smartglasses are in danger of being ruined, again, if people can't stop being creepy"
+      date: '2026-02-10'
+      url: https://www.androidpolice.com/smartglasses-are-ruined-again-if-people-cant-stop-being-creepy/
+      alarm_terms: 5+
+    samsung_articles:
+    - title: "We went hands-on with Samsung's smartglasses. Here's why Meta should be worried"
+      author: Andy Boxall
+      date: '2026-07-23'
+      url: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+      alarm_terms: 0
+      privacy_section: 4 sentences, explicitly dismissed with "Privacy issues aside"
+    hardware_equivalence:
+      meta_chip: Snapdragon AR1 Gen 1
+      samsung_chip: Snapdragon AR1 Gen 1
+      meta_cameras: 1
+      samsung_cameras: 1
+      meta_led_indicator: true
+      samsung_led_indicator: true
+      meta_tamper_protection: true
+      samsung_tamper_protection: true
+    vocabulary_ratio: infinity (30+:0)
+    valnet_financial_architecture:
+      compensation_model: per-click freelancer contracts (Press Gazette, Jun 2026)
+      revenue_model: 100% programmatic advertising
+      sessions_per_year: 4 billion
+      sites_owned: 30+
+      primary_ad_revenue: Google AdSense/AdX
+      primary_traffic: Google Discover + Search
+      samsung_google_partnership: Android XR platform, Gemini AI
+      meta_financial_ties: zero known content licensing or financial relationships
+    confounders:
+      strong:
+      - "Meta genuinely has worse track record — Kenya scandal, pick-up artist abuse, super sensing"
+      - "Meta has 80%+ market share — market leader gets more scrutiny naturally"
+      moderate:
+      - "Genre difference — pre-launch hands-on vs post-incident editorial"
+      - "Boxall may genuinely believe Samsung handles privacy better"
+      weak:
+      - "Per-click contracts new (Jun 2026) — most alarm coverage predates them"
+    testable_predictions:
+    - "Samsung launch incidents will receive softer vocabulary than Meta equivalent"
+    - "No 'nightmarish' or equivalent extreme vocabulary for Samsung/Google glasses post-launch"
+    - "If per-click compensation reversed, alarm vocabulary differential narrows"
+    cross_references:
+    - mechanism_id: 132
+      relationship: Same journalist Andy Boxall shows same pattern at Digital Trends (Designtechnica Corp)
+    - mechanism_id: 134
+      relationship: Android Police covered v26 fix but framed as insufficient; WIRED had zero coverage
+    - mechanism_id: 135
+      relationship: Gizmodo clean control shows same ∞:0 ratio — confirms cultural base rate
+    - mechanism_id: 131
+      relationship: 9to5Google independent control shows ~1.7:1 ratio vs Android Police's ∞:0
+    - mechanism_id: 138
+      relationship: Digital Trends (Designtechnica) shows same editorial-level asymmetry
+    source_urls:
+    - https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
+    - https://www.androidpolice.com/metas-privacy-invading-smartglasses-feature-confirms-it-doesnt-care-what-you-think/
+    - https://www.androidpolice.com/meta-ai-glasses-privacy-concern/
+    - https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/
+    - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+    - https://www.androidpolice.com/smartglasses-are-ruined-again-if-people-cant-stop-being-creepy/
+    - https://www.businesswire.com/news/home/20210806005025/en/Acquisition-of-AndroidPolice.com-by-Valnet-inc.
+    - https://www.editorandpublisher.com/stories/anger-over-pay-per-click-journalist-contracts,262351
+    test_file: tests/test_android_police_valnet_per_click_smart_glasses_coverage_asymmetry_aug17.py
