@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 14257 tests across 431 test files (all from real articles)
+├── tests/                       # 14301 tests across 432 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -890,6 +890,7 @@ mediascope/
 │   ├── test_google_warby_parker_equity_publisher_feedback_loop_aug17.py # Mechanism #147: Google-Warby Parker Equity Investment Publisher Coverage Financial Feedback Loop — Google $150M commitment creates unique feedback loop: publishers' primary revenue source AND equity investor in Meta's frame-maker competitor. WRBY +16% on deal. 10 classes, 36 tests
 │   ├── test_sarah_perez_cross_entity_privacy_vocabulary_inversion_aug17.py # Mechanism #142: Sarah Perez (TechCrunch/Yahoo/Apollo) Same-Journalist Cross-Entity Privacy Vocabulary Inversion — Google article ZERO privacy vocabulary, Meta article 25+ alarm terms, 47-day window. Eliminates different-reporter confounder from #122. 9 classes, 34 tests
 │   ├── test_type_d_03am_cross_validation_aug17.py # Type D cross-validation (Aug 17, 3 AM PT): YAML section hygiene (3 entities moved to publisher_entities, 14 mechanisms moved from publications to cross_publication_findings), mechanisms #143-#147 structural integrity, doc sync (431 files), cross-reference bidirectionality, test file importability. 7 classes, 42 tests
+│   ├── test_vox_media_podcast_network_cross_medium_privacy_portability_aug17.py # Mechanism #148: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability. Podcast corpus expanded from 7 to 12+ episodes, 11 sources. Vox Media owns Waveform (MKBHD) + The Verge (print asymmetry #112). AmberMac pervert vocabulary cluster, Acquired AI luxury surveillance framing, Clorama XR insider perspective, TechMagic counterexample. 8 classes, 44 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~14,257 | Across 431 test files |
+| Tests | ~14,301 | Across 432 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **14257 tests** across 431 test files, each covering a different analytical capability:
+MediaScope has **14301 tests** across 432 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -899,6 +899,7 @@ MediaScope has **14257 tests** across 431 test files, each covering a different 
 | `test_axel_springer_kkr_openai_financial_architecture_aug17.py` | 55 | Mechanism #143: Axel Springer / KKR / OpenAI Triple-Layer Financial Architecture — Business Insider has three-layer financial structure creating structural incentive: (1) OpenAI content licensing deal (Dec 2023, tens of millions EUR/year), (2) KKR majority ownership ($34B+ AI infrastructure serving Google/Amazon/Microsoft), (3) Google search traffic dependency. Meta has ZERO comparable deals with Axel Springer. BI Meta coverage: "surreptitious surveillance," "creepy," internal document leaks. Samsung/Google coverage: zero standalone privacy articles. KKR Helix Digital Infrastructure: $10B with Nvidia + Adam Selipsky. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions. 10 classes, 55 tests |
 | `test_jason_england_future_plc_cross_entity_competitive_aspiration_inversion_aug17.py` | 59 | Mechanism #146: Jason England / Tom's Guide (Future plc) Cross-Entity Competitive Aspiration Inversion — Same managing editor covers Google, Samsung, and Meta smart glasses with radically different framing. Google gets aspirational "defeat"/"beat" vocabulary (+0.80 tone, ZERO privacy terms). Samsung gets "beat" vocabulary (+0.65, ZERO privacy). Meta gets contextual privacy alarm (-0.40 tone, 4+ alarm terms). All three use identical Snapdragon AR1 Gen 1 chip, 12MP camera, LED indicator. Future plc: 60%+ Google-dependent revenue, -67% profit collapse, -15% sessions. 4 journalists show same institutional pattern. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions. Cross-refs #125, #127, #135, #145. 12 classes, 59 tests |
 | `test_type_d_03am_cross_validation_aug17.py` | 42 | Type D cross-validation (Aug 17, 3 AM PT): YAML section hygiene — moved 3 misplaced entries from entities to publisher_entities (missing regex), moved 14 mechanism entries from publications to cross_publication_findings (missing meta_coverage_tone). Mechanisms #143-#147 structural integrity, mechanism_id uniqueness and contiguity, doc sync (431 test files), aug17 file listings in README + ARCHITECTURE, cross-reference bidirectionality (#147→#76/#91, #145→#132), all 5 aug17 test files importable. 7 classes, 42 tests |
+| `test_vox_media_podcast_network_cross_medium_privacy_portability_aug17.py` | 44 | Mechanism #148: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability. Second Type E iteration expanding podcast corpus from 7 to 12+ episodes across 11 sources. Waveform (MKBHD/Vox Media) shares corporate owner with The Verge (documented print asymmetry #112). AmberMac Ep056 "Pervert" title mirrors Everyone Hates Elon activist vocabulary — trans-Atlantic lexicon cluster. Acquired AI "Luxury Surveillance Devices" framing 100% Meta-directed. Clorama XR (former Google/Meta PM) frames privacy as Meta problem while giving Google innovation lens. TechMagic counterexample (positive Meta framing). Entity scrutiny: Meta 92%, Samsung 0%, Google 0%, Apple 5%, Snap 0%. 8 classes, 44 tests |
 | `test_wired_meta_remediation_coverage_selection_silence_aug16.py` | 55 | Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix. WIRED published "The Rise of the Ray-Ban Meta Creep" (Mar 2026) documenting LED disabling services + NameTag investigation (Jun 4). On Jul 7, Meta shipped v26 mandatory update: camera disabled if LED tampered/destroyed, listings removed, legal action. WIRED published ZERO articles on fix. 7+ other outlets (Verge, 9to5Google, Digital Trends, Android Police, Road to VR, PetaPixel, Engadget) covered it. 19 days later, Apple N50 delay for "privacy" (no shipped product) received coverage. Novel type: remediation_coverage_selection_silence. Financial: Condé Nast-OpenAI deal, zero Meta deals, Advance-Reddit $10B+. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). Cross-refs #8, #30, #33, #101, #118, #130. 55 tests |
 
 ```bash

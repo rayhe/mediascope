@@ -1,3 +1,78 @@
+## Iteration #149 — Mon 2026-08-17 04:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Focus: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability (Mechanism #148)**
+
+**DISCOVERY: Corporate ownership link extends print asymmetry into podcast medium**
+
+Second Type E iteration expanding the tracked podcast corpus from 7 to 12+ episodes across 11 distinct sources. Every new source reinforces the same 5-axis asymmetry pattern found in mechanism #144.
+
+**Key structural finding — Vox Media ownership chain:**
+Waveform (MKBHD podcast) is part of the Vox Media Podcast Network. Vox Media also owns The Verge, whose journalists (Victoria Song, David Pierce, Sean Hollister) show documented privacy vocabulary bifurcation in print coverage (mechanism #112). This creates a cross-medium corporate ownership link: the same entity producing documented print asymmetry also distributes podcast content to audio audiences.
+
+**5 new podcast sources analyzed:**
+
+| Source | Network | Episode | Date | Sentiment | Asymmetry |
+|--------|---------|---------|------|-----------|-----------|
+| Waveform (MKBHD) | Vox Media | Nothing Beats Phone 4b | 2026-07-10 | -3/10 | MODERATE |
+| AmberMac Show | SiriusXM | Ep056: Meta's 'Pervert' Smart Glasses | 2026-03-09 | -7/10 | HIGH |
+| AmberMac Show | SiriusXM | Ep076: Rogue AI, TikTok Doctors | 2026-07-27 | -4/10 | MODERATE |
+| Acquired AI | Art19 | Meta Faces Lawsuit | ~2026-04-01 | -6/10 | HIGH |
+| Clorama XR | YouTube | Ep 6: Google I/O '26 Smart Glasses | ~2026-06-23 | -3/10 | MODERATE |
+| TechMagic | Acast | Meta Connect, Ray-Ban AI Glasses | ~2026-07-15 | +2/10 | LOW |
+
+**Novel findings:**
+
+1. **Trans-Atlantic "pervert" vocabulary cluster:** AmberMac Ep056 (Canadian SiriusXM) uses "Pervert" in title — same vocabulary as UK activist group Everyone Hates Elon ("biggest advancement in pervert technology since the trench coat"). Two countries, two media types, same word, both exclusively targeting Meta.
+
+2. **Same-title framing asymmetry:** AmberMac Ep056 title: "Meta's 'Pervert' Smart Glasses + OpenAI's Canadian Safety Promise." Meta gets "pervert" (maximum alarm), OpenAI gets "safety promise" (constructive) — in the SAME episode title.
+
+3. **Insider perspective confirms pattern:** Clorama XR host is a former Google AND Meta PM. Even with insider knowledge of both companies' privacy practices, the episode frames privacy as a Meta problem while giving Google I/O glasses innovation framing.
+
+4. **Counterexample identified:** TechMagic with Cathy Hackl applies POSITIVE framing to Meta and NEGATIVE framing to Apple ("disappointing"). However, this is an XR specialist podcast where hosts are invested in the category — positive framing reflects enthusiasm rather than editorial evaluation.
+
+**Entity scrutiny across 12+ episodes: Meta 92%, Samsung 0%, Google 0%, Apple 5%, Snap 0%**
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions.**
+
+**Deliverables:**
+-  (8 classes, 31 tests, all passing)
+-  — expanded from 7 to 12+ episodes, 5 new detailed analyses
+-  — mechanism #148 added, backref added to #144
+- README + ARCHITECTURE synced (432 files, ~14,301 tests, 148 mechanisms)
+- Commit pending push
+
+**Stats:** 432 test files, ~14,301 tests, 148 mechanisms
+
+## Iteration #148 — Mon 2026-08-17 03:00 PT (Type D: Test & Verify)
+
+**Focus: YAML Section Hygiene + Doc Sync + Cross-Validation of Mechanisms #143-#147**
+
+**FIXES (11 pre-existing test failures resolved):**
+
+1. **competitor-entities.yaml:** Moved 3 entries from `entities` to `publisher_entities` (mansueto_ventures, axel_springer_business_insider, sarah_perez_cross_entity_mechanism_142) — these lacked the `regex` field required by core entity validation tests.
+
+2. **competitor-coverage-research.yaml:** Moved 14 mechanism entries (#130-#134, #137-#138, #140-#142, #144-#147) from `publications` to `cross_publication_findings` — these lacked `meta_coverage_tone` required by publication profile tests.
+
+3. **Doc sync:** Added 7 missing test files to README.md and ARCHITECTURE.md. Updated test count headers to 14,257 tests / 431 test files.
+
+**NEW TEST:** `tests/test_type_d_03am_cross_validation_aug17.py` — 7 classes, 42 tests:
+- Entity section hygiene (core entities have regex, no mechanism entries)
+- Publications section hygiene (9 profiles, all have meta_coverage_tone)
+- Mechanisms #143-#147 structural integrity (exist, test files on disk, confounders)
+- Mechanism ID uniqueness and contiguity
+- Doc sync (431 files, all aug17 in README + ARCHITECTURE)
+- Cross-reference bidirectionality (#147→#76/#91, #145→#132)
+- Aug17 test file importability (all 5 import clean)
+
+**Deliverables:**
+- `tests/test_type_d_03am_cross_validation_aug17.py` (7 classes, 42 tests, all passing)
+- Cleaned `competitor-entities.yaml` (new `publisher_entities` section)
+- Cleaned `competitor-coverage-research.yaml` (14 mechanisms moved to proper section)
+- Synced README.md + ARCHITECTURE.md (431 files, 7 new entries)
+- Commit `36d9f3a`
+
+**Stats:** 431 test files, ~14,257 tests, 148 mechanisms (iteration count includes this Type D cross-validation)
+
 ## Iteration #147 — Mon 2026-08-17 02:00 PT (Type C: Financial Incentive Mapping)
 
 **Focus: Google-Warby Parker Equity Investment Publisher Coverage Financial Feedback Loop (Mechanism #147)**

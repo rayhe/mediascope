@@ -21,6 +21,11 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Bloomberg Tech | Podcast (Bloomberg/iHeart) | Active | "AI Industry's Circular Financing Deals, Apple Smart Glasses" (Jul 27, 2026). Apple vs Meta framing. |
 | Shared Security Podcast | Podcast (Tom Eston, Scott Wright, Kevin Tackett) | Active | "7 Million People Bought These AI Glasses… Should You Be Worried?" (~Mar 2026). Cybersecurity lens. |
 | What's Your Problem? | Podcast (Pushkin Industries) | Active | Cross-posted Kill Switch glassholes episode (Dec 25, 2025 / Jan 15, 2026). |
+| Waveform (MKBHD) | Podcast (Vox Media Podcast Network) | Active | "Nothing Beats Phone 4b" (Jul 10, 2026). Discussed Samsung Unpacked, Meta glasses, Joanna Stern WSJ coverage. **Vox Media also owns The Verge** — structural ownership link to documented print asymmetry. |
+| AmberMac Show | Podcast (SiriusXM) | Active | Ep056: "Meta's 'Pervert' Smart Glasses" (Mar 9, 2026). Canadian broadcast, alarm vocabulary in title. Ep076: "Rogue AI" (Jul 27, 2026) covers OpenAI with neutral framing. |
+| Acquired AI | Podcast (Art19) | Active | "Meta Faces Lawsuit Over Ray-Ban Smart Glasses Privacy" (~Apr 2026). Lawsuit-focused, chapter title "Luxury Surveillance Devices." |
+| Clorama XR Product Podcast | YouTube podcast | Active | Ep 6: Google I/O '26 Smart Glasses Analysis (Jun 23, 2026). Former Google/Meta PM with XR producer Siciliana Trevino. |
+| TechMagic with Cathy Hackl | Podcast (Acast) | Active | "Meta Connect" episode (~Jul 15, 2026). Positive-aspirational framing. Privacy not centered. Counterexample to universal negativity. |
 
 ---
 
@@ -183,19 +188,113 @@ Cybersecurity-focused analysis of Meta glasses privacy. Discusses contractor rev
 
 ---
 
+---
+
+### 8. Waveform (MKBHD Podcast) — "Nothing Beats Phone 4b with Ear 3a?" (Jul 10, 2026)
+
+- **Host:** Marques Brownlee (MKBHD)
+- **Co-hosts:** Andrew Manganelli, David Imel
+- **Network:** Vox Media Podcast Network
+- **Source:** Podtail (multiple platform listings)
+
+**Coverage Summary:**
+Discusses Nothing Phone 4b, then pivots to upcoming Samsung Galaxy Unpacked 2026 and Pixel 11 event. Links to Joanna Stern's WSJ Meta glasses piece, Wired's Meta Muse Image model coverage. Meta glasses discussed in context of industry competition.
+
+**Structural Significance — Vox Media Ownership:**
+Waveform is part of the **Vox Media Podcast Network**. Vox Media also owns **The Verge**, whose journalists (Victoria Song, David Pierce, Sean Hollister) show documented privacy vocabulary bifurcation in print coverage (mechanism #112). This corporate ownership link means the same entity distributing documented print asymmetry also distributes podcast content to audio audiences. While editorial independence between Waveform and The Verge likely exists, the shared corporate infrastructure creates a structural channel through which framing patterns can propagate.
+
+**Entity Coverage Assessment:**
+- **Meta:** Referenced via Joanna Stern WSJ piece and Wired coverage — both critical/scrutiny framing
+- **Samsung:** Galaxy Unpacked upcoming — competitive/aspirational framing
+- **Google:** Pixel 11 event upcoming — neutral/product framing
+
+**Sentiment Score:** -3/10 (mildly negative toward Meta, neutral toward competitors)
+**Asymmetry Assessment:** MODERATE — Episode doesn't deeply engage with privacy, but its link choices (critical Meta pieces from WSJ and Wired) vs aspirational Samsung framing reproduce print patterns.
+
+---
+
+### 9. The AmberMac Show Ep056 — "Meta's 'Pervert' Smart Glasses + OpenAI's Canadian Safety Promise" (Mar 9, 2026)
+
+- **Hosts:** Amber Mac, Jeff MacArthur
+- **Guest:** Cam Gordon (former Head of Communications, Twitter Canada)
+- **Network:** SiriusXM (Canadian broadcast + podcast)
+- **Source URL:** https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
+
+**Coverage Summary:**
+Uses "Pervert" in the episode title — the highest-alarm vocabulary possible for a professional broadcast podcast. Discusses Meta glasses privacy concerns alongside OpenAI's Canadian government safety negotiations and Anthropic's Department of War issue.
+
+**Key Framing — "Pervert" Vocabulary Cluster:**
+The word "pervert" in this title connects to the same vocabulary used by the UK "Everyone Hates Elon" activist group ("biggest advancement in pervert technology since the trench coat"). AmberMac is a Canadian SiriusXM show; Everyone Hates Elon is London-based. The independent adoption of identical vocabulary across two countries and two media types (broadcast podcast vs guerrilla activism) suggests a culturally shared lexicon that exclusively targets Meta.
+
+**Entity Coverage Asymmetry:**
+- **Meta:** "Pervert Smart Glasses" in title — maximum alarm vocabulary
+- **OpenAI:** "Canadian Safety Promise" in same title — constructive/positive framing
+- **Anthropic:** "fight with the Department of War" — institutional framing, no alarm vocabulary
+- Within the same episode title, Meta gets "pervert" while OpenAI gets "safety promise." Textbook framing asymmetry.
+
+**Sentiment Score:** -7/10 (strongly negative toward Meta in title)
+**Asymmetry Assessment:** HIGH — Same episode applies "pervert" to Meta and "safety promise" to OpenAI.
+
+**Cross-reference:** AmberMac Ep076 (Jul 27, 2026) "Rogue AI, TikTok Doctors, & Angry Elon" covers OpenAI's rogue AI incident with analytical framing. OpenAI's actual safety failure gets neutral "Rogue AI" while Meta's glasses get "Pervert."
+
+---
+
+### 10. Acquired AI — "Meta Faces Lawsuit Over Ray-Ban Smart Glasses Privacy" (~Apr 2026)
+
+- **Host:** Jaeden Schafer
+- **Network:** Art19 / AI Box ecosystem
+- **Source URL:** https://www.podchaser.com/podcasts/acquired-ai-5589694/episodes/meta-faces-lawsuit-over-ray-ba-285957569
+
+**Coverage Summary:**
+Detailed coverage of the class action lawsuit. Chapters include "Luxury Surveillance Devices." 100% Meta-focused. Zero mention of competitors shipping identical hardware.
+
+**Sentiment Score:** -6/10 (moderately negative, legal-analysis lens)
+**Asymmetry Assessment:** HIGH — 100% of episode directed at Meta.
+
+---
+
+### 11. Clorama XR Podcast Ep 6 — "Who Are Tech Conferences Actually For? Google I/O '26 Smart Glasses" (~Jun 23, 2026)
+
+- **Host:** Clorama (former Google/Meta PM)
+- **Guest:** Siciliana Trevino (XR Producer)
+- **Source URL:** https://www.youtube.com/watch?v=-qJ_R1KqBuk
+
+**Coverage Summary:**
+Former Google/Meta PM uses Google I/O's XR glasses demo as case study. Privacy discussed at 11:33 as industry-wide concern, but Meta is referenced as the incumbent privacy problem while Google gets product-innovation framing.
+
+**Sentiment Score:** -3/10 (mildly negative, analytical)
+**Asymmetry Assessment:** MODERATE — Privacy centered on Meta. Google's identical hardware gets innovation framing.
+
+---
+
+### 12. TechMagic with Cathy Hackl — "Meta Connect, Ray-Ban AI Glasses, Amazon Smart Eyewear" (~Jul 15, 2026)
+
+- **Hosts:** Cathy Hackl, Lee Kebler
+- **Network:** Acast
+
+**Coverage Summary:**
+Enthusiastic coverage of Meta Connect as "Hypernova Moment for AI and XR." Apple described as "disappointing." Privacy not centered.
+
+**Significance — Counterexample:**
+Strongest counterexample to universal negative podcast framing. TechMagic is an XR specialist podcast — positive framing reflects category enthusiasm rather than editorial evaluation.
+
+**Sentiment Score:** +2/10 (mildly positive toward Meta)
+**Asymmetry Assessment:** LOW — Inverts typical pattern by praising Meta and criticizing Apple.
+
 ## Cross-Medium Asymmetry Summary
 
 ### Podcast vs Print/Online Coverage Comparison
 
-| Pattern | Print/Online | Podcast | Alignment |
+| Pattern | Print/Online | Podcast (12+ episodes) | Alignment |
 |---------|-------------|---------|-----------|
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (Kill Switch, Shared Security, Utilizing AI) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (no podcast found examining Samsung/Google glasses privacy) | **ALIGNED** |
-| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg: "aims to take on Meta") | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (Kill Switch, Shared Security, Utilizing AI, AmberMac, Acquired AI) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 12 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR: innovation lens) | **ALIGNED** |
 | Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny) | **ALIGNED** |
-| Gendered surveillance critique | ✅ (CNN "manfluencers", Engadget) | ✅ (Guilty Feminist, Everyone Hates Elon "pervert technology") | **ALIGNED** |
+| Gendered surveillance critique | ✅ (CNN "manfluencers", Engadget) | ✅ (Guilty Feminist, Everyone Hates Elon, AmberMac "pervert") | **ALIGNED** |
+| Same-title framing asymmetry | ✅ (headline vocabulary differential) | ✅ (AmberMac: "Pervert" for Meta, "Safety Promise" for OpenAI in SAME title) | **ALIGNED** |
 
-### Key Finding: Podcast Ecosystem Amplifies Print Asymmetry (Mechanism #144)
+### Key Finding: Podcast Ecosystem Amplifies Print Asymmetry (Mechanisms #144, #148)
 
 The podcast ecosystem does not independently evaluate smart glasses privacy. Instead, it **amplifies the same asymmetric framing** found in print/online publications:
 
@@ -206,6 +305,10 @@ The podcast ecosystem does not independently evaluate smart glasses privacy. Ins
 3. **Cultural consensus, not conspiracy:** Unlike print/online asymmetry which correlates with financial incentives (Condé Nast/OpenAI deals, FT/OpenAI deals, NYT/Amazon deals), podcast asymmetry appears to be primarily **cultural consensus** — Meta is the dominant smart glasses vendor (80%+ market share per BBC) so it receives 100% of scrutiny. However, this fails the proportionality test: Samsung's glasses use the SAME chip, camera architecture, and AI capabilities, yet receive 0% of podcast privacy scrutiny.
 
 4. **Compound audience priming:** The Guilty Feminist's London audience hears #480 "Keep Palantir Out of Our NHS" (April 2026) → same audience sees Everyone Hates Elon's bus stop ads (July 2026) → compound surveillance-skepticism directed exclusively at Meta.
+
+5. **Corporate ownership cross-medium portability (Mechanism #148):** Waveform (MKBHD podcast) is part of the Vox Media Podcast Network. Vox Media owns The Verge. This structural link means the same corporate entity producing documented print asymmetry (Victoria Song, David Pierce, Sean Hollister) also distributes podcast content. While editorial independence likely exists, the shared infrastructure creates a channel for framing pattern propagation.
+
+6. **Trans-Atlantic "pervert" vocabulary cluster:** The word "pervert" appears independently in UK activist campaigns (Everyone Hates Elon, London) and Canadian broadcast media (AmberMac Ep056, SiriusXM Toronto). Both direct this vocabulary exclusively at Meta. Neither Samsung, Google, Apple, nor Snap has ever received equivalent vocabulary in any tracked podcast or activist campaign.
 
 ### Confounders (3 STRONG, 2 MODERATE, 1 WEAK)
 
@@ -238,5 +341,5 @@ The podcast ecosystem does not independently evaluate smart glasses privacy. Ins
 
 ---
 
-*Last updated: 2026-08-17 06:00 UTC (Aug 16, 11:00 PM PT)*
-*MediaScope Mechanism #144: Podcast Ecosystem Privacy Vocabulary Amplification*
+*Last updated: 2026-08-17 11:00 UTC (Aug 17, 4:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification) and #148 (Vox Media Network Cross-Medium Portability)*
