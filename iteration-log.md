@@ -1,3 +1,28 @@
+## Iteration #151 — Mon 2026-08-17 06:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Focus: Cherlynn Low Engadget Cross-Entity Beat Assignment Privacy Vocabulary Control Case (Mechanism #150)**
+
+**DISCOVERY: Same journalist's uniform zero-alarm coverage proves asymmetry operates through editorial beat assignment, not individual bias**
+
+Cherlynn Low (Engadget Executive Editor) covers Meta Glasses (Jun 23, 2026) and Snap Specs at AWE (Jun 17, 2026) within a 6-day window with UNIFORMLY zero privacy alarm vocabulary for both entities. This establishes a journalist-level CONTROL CASE: the asymmetry is not in how individual journalists treat different companies, but in how the publication assigns its investigative beats.
+
+**The beat assignment mechanism:**
+- Cherlynn Low (product hands-on): zero privacy alarm for ALL entities (Meta, Snap, Samsung)
+- Karissa Bell (privacy investigation): 3 standalone articles exclusively about Meta within 28 days (Jul 11 - Aug 7, 2026), containing 33+ cumulative privacy alarm terms
+- Publication achieves adversarial framing of Meta while each individual journalist's coverage appears editorially balanced
+
+**Competitive framing amplification finding:**
+In the Snap Specs liveblog, Cherlynn Low amplifies Snap CEO Spiegel's anti-Meta "copycats up north" dig with editorial validation ("an obvious reference to Meta") and reports Snap's self-described "privacy features" without independent scrutiny — despite Snap Specs having 4 cameras and dual Snapdragon processors (more surveillance-capable hardware than Meta's 1-camera glasses). In contrast, her Meta Glasses article contains zero competitive positioning and zero mention of Meta's privacy features.
+
+**4 confounders (1 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions.**
+
+**Deliverables:**
+- `tests/test_cherlynn_low_engadget_cross_entity_beat_assignment_privacy_vocabulary_control_aug17.py` (10 classes, 56 tests, all passing)
+- competitor-coverage-research.yaml updated with mechanism #150
+- README + ARCHITECTURE synced (434 files, ~15,381 tests, 150 mechanisms)
+
+**Stats:** 434 test files, ~15,381 tests, 150 mechanisms
+
 ## Iteration #150 — Mon 2026-08-17 05:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: PMC Double Financial Incentive — Google Ad Revenue + Google-Warby Parker $150M Equity Creates Compound Samsung/Google Glasses Coverage Calibration (Mechanism #149)**

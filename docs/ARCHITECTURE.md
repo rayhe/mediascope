@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 15325 tests across 433 test files (all from real articles)
+├── tests/                       # 15381 tests across 434 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -892,6 +892,7 @@ mediascope/
 │   ├── test_type_d_03am_cross_validation_aug17.py # Type D cross-validation (Aug 17, 3 AM PT): YAML section hygiene (3 entities moved to publisher_entities, 14 mechanisms moved from publications to cross_publication_findings), mechanisms #143-#147 structural integrity, doc sync (431 files), cross-reference bidirectionality, test file importability. 7 classes, 42 tests
 │   ├── test_vox_media_podcast_network_cross_medium_privacy_portability_aug17.py # Mechanism #148: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability. Podcast corpus expanded from 7 to 12+ episodes, 11 sources. Vox Media owns Waveform (MKBHD) + The Verge (print asymmetry #112). AmberMac pervert vocabulary cluster, Acquired AI luxury surveillance framing, Clorama XR insider perspective, TechMagic counterexample. 8 classes, 44 tests
 │   ├── test_pmc_acquisition_google_double_incentive_samsung_glasses_coverage_calibration_aug17.py # Mechanism #149: PMC Double Financial Incentive — Google Ad Revenue + Google-Warby Parker $150M Equity = compound Samsung/Google glasses coverage calibration. PMC acquired Verge June 18 2026 intensifying Google dependency to 25+ title portfolio level. Samsung glasses have MORE privacy features yet ZERO privacy vocabulary. Gizmodo (zero ties) control published standalone hands-on. Connects #81 #112 #147. 8 classes, 26 tests
+│   ├── test_cherlynn_low_engadget_cross_entity_beat_assignment_privacy_vocabulary_control_aug17.py # Mechanism #150: Cherlynn Low Engadget Cross-Entity Beat Assignment Privacy Vocabulary Control Case. Exec Editor covers Meta Glasses (Jun 23) and Snap Specs (Jun 17) within 6 days with uniformly zero privacy alarm — CONTROL CASE proving asymmetry via editorial beat assignment (Karissa Bell assigned 3 Meta-only privacy investigations). Amplifies Spiegel's anti-Meta "copycats" dig with editorial validation. Connects #109 #113 #130. 10 classes, 56 tests
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

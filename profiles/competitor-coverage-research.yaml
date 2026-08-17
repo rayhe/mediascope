@@ -14731,6 +14731,64 @@ cross_publication_findings:
       - 'https://en.wikipedia.org/wiki/Gentle_Monster_Intelligent_Eyewear'
       - 'https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835'
 
+  cherlynn_low_engadget_cross_entity_beat_assignment_control:
+    mechanism_id: 150
+    discovery_date: '2026-08-17'
+    rotation_type: B
+    journalist: 'Cherlynn Low'
+    publication: 'Engadget (Yahoo/Apollo)'
+    competitor: 'Snap'
+    finding: >
+      Cherlynn Low (Engadget Executive Editor) covers Meta Glasses (Jun 23, 2026)
+      and Snap Specs (Jun 17, 2026) within 6 days with UNIFORMLY zero privacy
+      alarm vocabulary for both entities. This establishes a journalist-level
+      CONTROL CASE proving Engadget's privacy vocabulary asymmetry operates
+      through editorial beat assignment, not individual journalist bias. The same
+      publication assigns Karissa Bell to write 3 standalone privacy investigation
+      articles exclusively about Meta (Jul 11 - Aug 7, 2026) while Low's
+      consistent product-positive coverage provides structural cover.
+      COMPETITIVE FRAMING AMPLIFICATION: In the Snap liveblog, Low amplifies
+      Spiegel's anti-Meta "copycats up north" dig with editorial validation
+      ("an obvious reference to Meta") and reports Snap's self-described
+      "privacy features" without independent scrutiny despite Snap Specs having
+      4 cameras and dual Snapdragon processors (more surveillance-capable
+      hardware than Meta's single-camera glasses).
+    confounders:
+      - 'STRONG: Liveblog format naturally gives speaker positioning space — Spiegel said
+        "copycats" on stage, livebloggers report what speakers say. However, Low adds
+        editorial commentary beyond neutral reporting.'
+      - 'MODERATE: Different article types (hands-on vs liveblog). However, Karissa
+        Bell''s own Ray-Ban Meta 2nd gen review at the same publication includes a
+        dedicated privacy section — proving Engadget considers privacy relevant
+        to product coverage when the entity is Meta.'
+      - 'MODERATE: Low is genuinely consistent in zero-alarm coverage across ALL
+        entities. The asymmetry is in competitive narrative amplification, not
+        privacy vocabulary. This consistency itself is the mechanism.'
+      - 'WEAK: Executive editor may influence but not solely determine beat
+        assignments. However, her editorial commentary within articles reflects
+        her own framing choices.'
+    testable_predictions:
+      - 'When Snap Specs ship (fall 2026), Engadget will NOT publish a standalone
+        privacy investigation comparable to Bell''s Meta explainers, despite Snap
+        having 4 cameras.'
+      - 'Cherlynn Low''s Snap Specs review will contain fewer than 3 privacy alarm
+        terms, maintaining her uniform zero-alarm pattern.'
+      - 'When Samsung/Google eyewear launches, Low''s coverage will have zero privacy
+        alarm terms while a separate Engadget piece draws privacy comparisons
+        exclusively to Meta.'
+    connects_to:
+      - 109
+      - 113
+      - 130
+    test_file: 'tests/test_cherlynn_low_engadget_cross_entity_beat_assignment_privacy_vocabulary_control_aug17.py'
+    test_count: 56
+    source_urls:
+      - 'https://www.engadget.com/2199519/meta-ai-glasses-hands-on-kylie-jenner-edition/'
+      - 'https://www.engadget.com/2194982/awe-xr-2026-snap-live-blog/'
+      - 'https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/'
+      - 'https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/'
+      - 'https://www.engadget.com/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/'
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
