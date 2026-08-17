@@ -1,3 +1,22 @@
+## Iteration #147 — Mon 2026-08-17 02:00 PT (Type C: Financial Incentive Mapping)
+
+**Focus: Google-Warby Parker Equity Investment Publisher Coverage Financial Feedback Loop (Mechanism #147)**
+
+**Discovery:** Google's $150M commitment to Warby Parker ($75M development + up to $75M milestone-contingent equity, Google I/O May 2025) creates a unique financial feedback loop. Google is simultaneously publishers' primary revenue source AND an equity investor in the frame maker competing with Meta's EssilorLuxottica. No other smart glasses entity has this dual-role structure.
+
+**Key data:** WRBY +16% on deal, Q2 2026 $235.5M rev (+9.8% YoY), holiday 2026 launch. EssilorLuxottica ~€90B market cap, 7M+ Meta glasses sold 2025, ZERO tech pub advertising. Smart glasses market $4.2B by 2028 (BofA).
+
+**Also fixed:** Pre-existing YAML parse error (research_period at wrong indent since #144), converted #146 from list to named-key format.
+
+**Deliverables:**
+- `tests/test_google_warby_parker_equity_publisher_feedback_loop_aug17.py` (10 classes, 36 tests)
+- Entity profile: Warby Parker equity investment under Google
+- Research profile: Mechanism #147 with 6 confounders (2 STRONG), 4 testable predictions, 9 source URLs
+- Backrefs added to mechanisms #76 and #91
+- Commit `996dff4`
+
+**Stats:** 430 test files, ~14,215 tests, 147 mechanisms
+
 ## Iteration #145 — Mon 2026-08-17 00:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: Android Police (Valnet Inc.) — Per-Click Compensation Model Drives Smart Glasses Coverage Vocabulary Asymmetry (Mechanism #145)**
