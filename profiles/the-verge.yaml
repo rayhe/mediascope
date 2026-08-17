@@ -2917,4 +2917,105 @@ cross_entity_coverage_analysis:
     - "https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
     - "https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/"
 
-  last_updated: "2026-08-15"
+  last_updated: "2026-08-17"
+
+  # ===================================================================
+  # MECHANISM #149: PMC DOUBLE FINANCIAL INCENTIVE — GOOGLE AD REVENUE +
+  # GOOGLE-WARBY PARKER EQUITY = COMPOUND SAMSUNG/GOOGLE GLASSES COVERAGE
+  # CALIBRATION (Aug 17, 2026)
+  # ===================================================================
+  pmc_google_double_incentive_samsung_glasses:
+    date_analyzed: "2026-08-17"
+    rotation_type: "A"
+    mechanism_id: 149
+    publication: "The Verge (PMC/PMX)"
+    competitor: "Samsung/Google"
+    key_finding: >
+      PMC's acquisition of The Verge (June 18, 2026) structurally intensified
+      Google advertising dependency from single-publication to PORTFOLIO-LEVEL
+      (25+ titles). Combined with Google's $150M equity commitment in Warby Parker
+      (mechanism #147), this creates a DOUBLE financial incentive for soft
+      Samsung/Google glasses coverage. Samsung Galaxy Glasses have MORE privacy
+      features than Meta (inward-facing indicator, wear-detection recording disable)
+      yet receive ZERO privacy vocabulary from The Verge — while identical Meta
+      hardware receives 3+ standalone privacy alarm articles.
+    double_incentive_layers:
+      layer_1_advertising:
+        description: "PMC's 25+ titles depend on Google programmatic advertising"
+        risk: >
+          Negative Samsung/Google glasses coverage risks Google advertiser
+          relationship across ENTIRE PMC portfolio (Variety, Rolling Stone,
+          Billboard, The Hollywood Reporter, Deadline, etc.)
+        portfolio_titles: 25
+        ad_platforms: ["Concert", "Forte"]
+      layer_2_equity:
+        description: "Google $150M equity in Warby Parker (mechanism #147)"
+        commitment: "$75M development + up to $75M milestone-contingent equity"
+        risk: >
+          Negative coverage of Warby Parker glasses undermines Google's
+          strategic investment thesis
+        mechanism_ref: "#147"
+    timeline:
+      google_io_glasses_announcement: "2026-05-19"
+      pmc_acquisition_of_verge: "2026-06-18"
+      samsung_unpacked: "2026-07-22"
+      note: >
+        Google I/O coverage happened under Vox Media. Samsung Unpacked coverage
+        happened under PMC — 34 days post-acquisition. Beat assignment decisions
+        are made 1-2 weeks before events, squarely within PMC ownership period.
+    samsung_privacy_measures_exceed_meta:
+      samsung_features:
+        - "front LED anti-tamper (identical to Meta v26)"
+        - "inward-facing recording indicator (Meta LACKS)"
+        - "wear-detection recording disable (Meta LACKS)"
+      meta_features:
+        - "front LED anti-tamper (v26 update)"
+      note: >
+        Samsung has 3 privacy features vs Meta's 1, yet receives ZERO privacy
+        scrutiny from The Verge.
+    coverage_comparison:
+      meta_standalone_privacy_articles: 3
+      meta_reporters: ["Victoria Song", "Sean Hollister", "Alex Heath"]
+      samsung_standalone_privacy_articles: 0
+      samsung_standalone_articles_total: 0
+      vocabulary_gap: "binary — alarm vocabulary for Meta, zero for Samsung"
+    control_gizmodo:
+      standalone_samsung_articles: 1
+      reporter: "Raymond Wong"
+      financial_ties: 0
+      note: >
+        Gizmodo (Keleops AG, zero financial ties) published standalone Samsung
+        glasses hands-on at same event. Financial independence predicts coverage
+        consistency.
+    confounders:
+      strong:
+        - "Beat assignment partly reflects editorial judgment about reader interest"
+      moderate:
+        - "PMC acquisition was 34 days old at Unpacked"
+        - "Samsung didn't allow wearing glasses at Unpacked"
+      weak:
+        - "Product hasn't shipped yet (fall 2026)"
+    testable_predictions:
+      - >
+        When Samsung glasses ship (fall 2026), The Verge will publish a product
+        review but NOT a standalone privacy investigation
+      - >
+        Other PMC titles (Variety, THR, Billboard) will follow the same pattern:
+        Meta glasses = privacy concern, Samsung/Google = innovation
+      - >
+        Publications with higher Google ad revenue dependency will show softer
+        Samsung/Google glasses coverage across the board
+    connects_to_mechanisms:
+      - 81
+      - 112
+      - 147
+    test_file: "tests/test_pmc_acquisition_google_double_incentive_samsung_glasses_coverage_calibration_aug17.py"
+    test_count: 26
+    source_urls:
+      - "https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands"
+      - "https://hypebeast.com/2026/5/google-samsung-warby-parker-intelligent-eyewear-smart-glasses-announcement-info"
+      - "https://www.androidpolice.com/samsung-galaxy-unpacked-july-2026-live/"
+      - "https://en.wikipedia.org/wiki/Gentle_Monster_Intelligent_Eyewear"
+      - "https://en.sedaily.com/news/2026/07/02/gentle-monster-to-launch-ai-smart-glasses-with-google"
+      - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
+      - "https://www.youtube.com/watch?v=c-MWq-DFTwo"

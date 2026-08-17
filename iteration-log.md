@@ -1,3 +1,35 @@
+## Iteration #150 — Mon 2026-08-17 05:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Focus: PMC Double Financial Incentive — Google Ad Revenue + Google-Warby Parker $150M Equity Creates Compound Samsung/Google Glasses Coverage Calibration (Mechanism #149)**
+
+**DISCOVERY: Post-acquisition ownership intensifies coverage asymmetry from single-publication to portfolio-level**
+
+PMC acquired The Verge on June 18, 2026. Samsung Galaxy Unpacked was July 22 — 34 days post-acquisition. This means the ENTIRE Unpacked coverage selection silence (mechanism #81) happened under PMC ownership, not Vox Media. PMC's 25+ titles (Variety, Rolling Stone, Billboard, THR, Deadline, etc.) all depend on Google programmatic advertising, creating a PORTFOLIO-LEVEL dependency where negative Samsung/Google coverage risks ad revenue across the entire PMC media empire, not just The Verge.
+
+**Double financial incentive structure:**
+
+1. **Layer 1 — Google Advertising:** PMC's Concert ad marketplace + Forte data platform + 25+ titles create portfolio-wide Google ad dependency. Negative Samsung/Google glasses coverage → risks relationship across entire portfolio.
+
+2. **Layer 2 — Google-Warby Parker Equity (mechanism #147):** Google's $150M commitment ($75M development + $75M milestone) in Warby Parker. Negative coverage of the Warby Parker frame partnership → undermines Google's strategic investment thesis.
+
+**Critical hardware parity finding:** Samsung Galaxy Glasses have MORE privacy features than Meta:
+- Samsung: front LED anti-tamper + inward-facing indicator + wear-detection recording disable (3 features)
+- Meta: front LED anti-tamper only (1 feature, v26 update)
+- Yet Samsung gets ZERO privacy vocabulary from The Verge while Meta gets 3+ standalone alarm articles
+
+**Gizmodo control group:** At the same Samsung Unpacked event, Gizmodo (Keleops AG, zero financial ties) published standalone Samsung glasses hands-on (Raymond Wong). Financial independence predicts coverage consistency.
+
+**4 confounders (1 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions.**
+
+**Deliverables:**
+- `tests/test_pmc_acquisition_google_double_incentive_samsung_glasses_coverage_calibration_aug17.py` (8 classes, 26 tests, all passing)
+- The Verge profile updated with mechanism #149 (the-verge.yaml)
+- competitor-coverage-research.yaml updated with mechanism #149
+- README + ARCHITECTURE synced (433 files, ~15,325 tests, 149 mechanisms)
+- Commit pending push
+
+**Stats:** 433 test files, ~15,325 tests, 149 mechanisms
+
 ## Iteration #149 — Mon 2026-08-17 04:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Focus: Vox Media Podcast Network Cross-Medium Privacy Vocabulary Portability (Mechanism #148)**

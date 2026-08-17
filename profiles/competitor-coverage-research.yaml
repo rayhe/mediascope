@@ -14696,6 +14696,41 @@ cross_publication_findings:
     - https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
     - https://www.podchaser.com/podcasts/acquired-ai-5589694/episodes/meta-faces-lawsuit-over-ray-ba-285957569
     - https://www.youtube.com/watch?v=-qJ_R1KqBuk
+
+  pmc_google_double_incentive_samsung_glasses_coverage_calibration:
+    mechanism_id: 149
+    discovery_date: '2026-08-17'
+    rotation_type: A
+    publication: 'The Verge (PMC/PMX)'
+    competitor: 'Samsung/Google'
+    finding: >
+      PMC's acquisition of The Verge (June 18, 2026) intensified Google ad
+      dependency from single-publication to portfolio-level (25+ titles).
+      Combined with Google's $150M Warby Parker equity (mechanism #147),
+      creates DOUBLE financial incentive for soft Samsung/Google glasses
+      coverage. Samsung Galaxy Glasses have MORE privacy features than Meta
+      (inward-facing indicator, wear-detection recording disable) yet receive
+      ZERO privacy vocabulary — while identical Meta hardware gets 3+
+      standalone privacy alarm articles. Control: Gizmodo (zero financial ties)
+      published standalone Samsung glasses hands-on at same event.
+    confounders:
+      - 'STRONG: Beat assignment partly reflects editorial judgment about reader interest'
+      - 'MODERATE: PMC acquisition was 34 days old at Unpacked'
+      - 'MODERATE: Samsung did not allow wearing glasses at Unpacked'
+      - 'WEAK: Product has not shipped yet (fall 2026)'
+    connects_to:
+      - 81
+      - 112
+      - 147
+    test_file: 'tests/test_pmc_acquisition_google_double_incentive_samsung_glasses_coverage_calibration_aug17.py'
+    test_count: 26
+    source_urls:
+      - 'https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands'
+      - 'https://hypebeast.com/2026/5/google-samsung-warby-parker-intelligent-eyewear-smart-glasses-announcement-info'
+      - 'https://www.androidpolice.com/samsung-galaxy-unpacked-july-2026-live/'
+      - 'https://en.wikipedia.org/wiki/Gentle_Monster_Intelligent_Eyewear'
+      - 'https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835'
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
