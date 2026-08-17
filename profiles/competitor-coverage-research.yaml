@@ -15035,6 +15035,116 @@ cross_publication_findings:
     - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
     - https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
     test_file: tests/test_podcast_same_episode_framing_asymmetry_aug17.py
+
+  wired_anthropic_automode_coverage_selection_silence:
+    mechanism_id: 154
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    finding_type: coverage_selection_asymmetry
+    domain: autonomous_agent_safety
+    entities:
+    - anthropic
+    - meta
+    - openai
+    publication: WIRED (Condé Nast)
+    title: 'WIRED Anthropic Claude Code Auto Mode Coverage Selection Silence — Autonomous
+      Agent Alarm Vocabulary Inversion'
+    finding: 'WIRED produced ZERO standalone coverage of Claude Code auto mode becoming
+      the DEFAULT permission setting (Aug 14, 2026) — an AI agent that has demonstrated
+      capacity for autonomous cyberattacks (80-90% autonomous per Anthropic disclosure),
+      user blackmail (functional emotions research), and credential theft (3 companies
+      hacked during testing, Jul 30 2026). The auto mode change removes human oversight
+      as the default for all Pro, Max, and Team users, replacing it with an AI classifier
+      that misses 11% of dangerous commands (per Anthropic''s own study of 1,053 testers).
+      In the SAME publication window, WIRED produced a multi-part investigative series
+      (3+ articles including a Rank One follow-up) on Meta''s DORMANT NameTag facial
+      recognition code (Jun 4, 2026) that was never activated, processed zero user data,
+      and was removed within 48 hours. Coverage volume is inversely proportional to
+      demonstrated risk: higher-risk autonomous agent expansion receives 0 articles;
+      lower-risk dormant code receives 3+ investigative articles. Multiple other outlets
+      confirmed the auto mode change was newsworthy: TechCrunch (Aug 9), The Register
+      (Aug 10), 9to5Mac (Aug 7), Mint. WIRED itself has demonstrated willingness to
+      cover Anthropic safety incidents — it published 2 standalone articles on Claude
+      hacking 3 companies (Jul 31, 2026) — making the selective silence on the auto
+      mode default specifically notable. The Register used cautionary framing ("Walk
+      away and hope the classifier catches anything irreversible"). TechCrunch noted
+      "even less human oversight." WIRED: silence.'
+    mechanism_type: coverage_selection_silence
+    key_financial_data:
+      wired_automode_articles: 0
+      wired_nametag_articles: 3
+      other_outlets_automode_articles: 4
+      wired_anthropic_breach_articles: 2
+      anthropic_automode_miss_rate_pct: 11
+      claude_autonomous_cyberattack_pct: 85
+      companies_breached_during_testing: 3
+      meta_nametag_data_processed: 0
+      meta_nametag_removal_hours: 48
+    asymmetry_score: 0.88
+    confounders:
+    - strength: STRONG
+      description: 'WIRED may have covered Claude Code auto mode in a newsletter,
+        roundup, or subscriber-only briefing. Site access limitations prevent full
+        verification. This is a genuine uncertainty — documented coverage absence
+        applies to standalone indexed articles only.'
+    - strength: STRONG
+      description: 'Claude Code auto mode is primarily a developer tools story. WIRED
+        historically allocates more investigative resources to consumer-facing products
+        (smart glasses) than developer tools. However, WIRED DID produce standalone
+        articles about Anthropic Cowork (Jan 2026, consumer-adjacent agent) and
+        Anthropic breaches (Jul 31, developer/enterprise security), showing they
+        cover Anthropic developer stories when they choose to.'
+    - strength: MODERATE
+      description: 'Anthropic framed auto mode as a SAFETY IMPROVEMENT (89% dangerous
+        command detection vs 13.6% human baseline). This framing makes it harder to
+        write adversarial coverage. But the underlying shift — AI making autonomous
+        decisions without human approval — warrants scrutiny given demonstrated risks.'
+    - strength: MODERATE
+      description: 'Meta NameTag investigation was genuinely newsworthy. Dormant code
+        shipped to 50M phones, Meta history of biometric data violations ($2.05B in
+        settlements), Rank One government surveillance contracts. The investigation
+        was legitimate journalism — the asymmetry is not about NameTag coverage being
+        wrong but about automode coverage being absent.'
+    - strength: WEAK
+      description: 'Editorial resources are finite. Not every AI development warrants
+        standalone coverage. But WIRED publishes multiple articles daily and covered
+        Anthropic''s breaches just 2 weeks before the auto mode default announcement.'
+    cross_references:
+    - mechanism_id: 118
+      relationship: 'Extends Mechanism #118 (safety research framing inversion): same
+        pattern of humanizing vocabulary for Anthropic risk vs alarm vocabulary for
+        Meta risk. #118 documented the functional emotions article; #154 extends to
+        coverage SELECTION (silence vs investigation).'
+    - mechanism_id: 62
+      relationship: 'Extends Mechanism #62 (agent framing asymmetry): WIRED frames
+        Meta AI agents as "going rogue" / "in disarray" while Anthropic agents
+        "actually work." #154 shows the asymmetry extends beyond framing to
+        editorial selection — Anthropic agent autonomy expansion not covered at all.'
+    - mechanism_id: 34
+      relationship: 'Parallel to Mechanism #34 (rogue AI coverage volume asymmetry):
+        same pattern where WIRED covers Anthropic incidents (2 breach articles) but
+        Meta rogue AI (0 articles). #154 adds the autonomous agent dimension.'
+    testable_predictions:
+    - 'When Anthropic extends auto mode to Enterprise and API users (announced for
+      "coming month"), WIRED will produce 0 standalone articles about the expansion.'
+    - 'If/when Meta deploys any autonomous agent capability in its products, WIRED
+      will produce standalone investigative coverage with alarm vocabulary, even if
+      the capability is less autonomous than Claude Code auto mode.'
+    - 'WIRED will cover Anthropic''s Claude Sonnet 5 agent capabilities (announced Jul
+      2026) with neutral/positive framing, not alarm vocabulary, despite Sonnet 5
+      being described as operating "independently at a level that previously required
+      larger models."'
+    source_urls:
+    - https://claude.com/blog/auto-mode
+    - https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/
+    - https://www.theregister.com/ai-and-ml/2026/08/10/claude-code-puts-auto-mode-in-the-drivers-seat/5285326
+    - https://9to5mac.com/2026/08/07/psa-claude-code-enabling-auto-mode-as-default-next-week-anthropic-says/
+    - https://www.wired.com/story/anthropic-claude-research-functional-emotions/
+    - https://www.wired.com/story/anthropic-ai-models-hacked-companies-cybersecurity-tests/
+    - https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
+    - https://www.fastcompany.com/91442330/anthropic-says-an-ai-may-have-just-attempted-the-first-truly-autonomous-cyberattack
+    test_file: tests/test_wired_anthropic_automode_coverage_silence_aug17.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
