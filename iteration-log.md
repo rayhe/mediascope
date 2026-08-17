@@ -1,3 +1,43 @@
+## Iteration #152 — Mon 2026-08-17 07:00 PT (Type C: Financial Incentive Mapping)
+
+**Focus: Nvidia-OpenAI GPU-Capital Circularity Publisher Incentive Chain (Mechanism #152)**
+
+**DISCOVERY: First HARDWARE-LAYER financial incentive chain in the corpus**
+
+Nvidia's $30B equity investment in OpenAI (Feb/Mar 2026, part of $110B round with SoftBank $30B and Amazon $50B) creates a circular financial chain that propagates to publisher coverage through OpenAI's 20+ content licensing deals ($300-400M/yr estimated).
+
+**The Circularity Chain:**
+1. Hyperscalers spend $650B+ on AI capex (Meta $130-145B, Microsoft $105B, Alphabet $185B, Amazon $200B)
+2. Capex flows primarily to Nvidia GPUs ($46.7B Q2 FY26 revenue, +56% YoY)
+3. Nvidia invests $30B in OpenAI (replacing prior $100B framework)
+4. OpenAI uses capital to buy MORE Nvidia GPUs (Reuters confirmed)
+5. OpenAI licenses publisher content ($300-400M/yr, 20+ deals)
+6. Publishers cover AI capex story — positive narrative sustains the loop
+Wall Street flagged as "circular financing" (Gulf Business Feb 2026).
+
+**Novel Mechanism Type: hardware_investor_circular_incentive**
+No prior mechanism mapped how the GPU monopolist (Nvidia, $4.4T+ market cap, world's largest publicly traded company) investing in the AI company with the MOST publisher content deals creates a circular incentive structure affecting coverage. Previous mechanism types: bilateral deals, advertising, marketplace operations, investment fund chains.
+
+**New Entity: nvidia (16th entity)**
+- Q2 FY2026: $46.7B revenue (+56% YoY), $26.4B net income, 72.4% gross margin
+- Customer concentration: top 2 = 39% of Q2 revenue (unnamed, likely MSFT/AMZN/GOOG/META)
+- Q3 guidance: $54B (below some analyst $60B expectations)
+- Groq acquisition: $20B reverse acqui-hire for LPU inference technology
+- ZERO direct publisher content or advertising deals (all influence indirect)
+- GTC media access as de facto soft financial incentive (300K+ attendees)
+
+**Meta Paradox:**
+Meta is one of Nvidia's TOP GPU customers ($130-145B capex) yet Nvidia's $30B OpenAI investment financially aligns it with Meta's primary AI competitor. OpenAI's proprietary API model competes directly with Meta's open-source Llama. EssilorLuxottica (~€90B market cap) has ZERO tech publisher advertising — Meta's glasses supply chain carries no publisher financial incentive through its frame partner.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions, 8 source URLs.**
+**Cross-references: Mechanisms #7, #33, #91, #147**
+
+**Deliverables:**
+- `tests/test_nvidia_openai_gpu_capital_circularity_publisher_incentive_chain_aug17.py` (10 classes, 44 tests, all passing)
+- nvidia entity added to competitor-entities.yaml (16th entity)
+- Mechanism #152 added to competitor-coverage-research.yaml
+- README + ARCHITECTURE synced (436 files, ~15,369 tests, 152 mechanisms)
+
 ## Iteration #151 — Mon 2026-08-17 06:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Focus: Engadget/Yahoo Beat Assignment Privacy Routing — Cherlynn Low Control Case (Mechanism #150) + Sam Rutherford Null Differential (Mechanism #151)**
