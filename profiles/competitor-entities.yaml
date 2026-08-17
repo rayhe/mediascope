@@ -8397,3 +8397,44 @@ ai_content_market_economics:
     - mechanism_id: 138
       mechanism_name: Digital Trends Editorial-Level Smart Glasses Privacy Vocabulary
         Asymmetry
+  phonearena:
+    name: PhoneArena
+    type: independent_publisher
+    headquarters: Varna, Bulgaria
+    address: 256 Vladislav Varnenchik Blvd, Floor 6, 9000 Varna, Bulgaria
+    ceo: Pressian Karakostov
+    founded: 2001
+    staff: ~50
+    revenue: $7.2M annual
+    revenue_model: affiliate commissions + sponsored content
+    monthly_readers: 5M+
+    jurisdiction: Bulgaria (courts in Sofia per ToS)
+    google_dependencies:
+    - programmatic_advertising
+    - search_traffic
+    - google_team_pixel_credential (Johanna Romero, since 2022)
+    samsung_advertising_dependency: Samsung is 4th largest global advertiser ($9.7B
+      globally), major client for consumer electronics review sites
+    meta_financial_ties: none
+    meta_content_licensing_deals: none
+    meta_advertising_partnerships: none
+    meta_as_ad_competitor: true
+    publications:
+    - PhoneArena (phonearena.com)
+    key_journalists:
+    - name: Johanna Romero
+      role: Senior News Writer
+      credential: Google #TeamPixel member since 2022
+      beat: Samsung/Google ecosystem
+    - name: Ilia
+      role: Tech Journalist
+      background: Bulgarian, based in Lima Peru, formerly Forbes Bulgaria
+      beat: Meta/Apple comparative coverage
+    notes: 'Independent Bulgarian tech publisher with zero corporate parent. Google
+      #TeamPixel credential (Johanna Romero) creates structural access/relationship
+      dependency for Samsung/Google coverage. Beat assignment puts credentialed
+      reporter on Samsung/Google and separate reporter (Ilia) on Meta adversarial
+      coverage, producing cross-entity framing asymmetry within the same publication.'
+    mechanisms:
+    - mechanism_id: 141
+      mechanism_name: PhoneArena Cross-Entity Beat-Assignment Credentialing Asymmetry

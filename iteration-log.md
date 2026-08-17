@@ -2487,3 +2487,34 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: `competitor-coverage-research.yaml` (mechanism #138 added)
 - Updated: `competitor-entities.yaml` (designtechnica_corp entity added)
 - Updated: README.md (423 files, ~14,903 tests)
+
+**Cumulative:** 138 mechanisms, ~14,903 tests, 423 files
+
+---
+
+### Iteration #146 — Mechanism #141: PhoneArena Cross-Entity Beat-Assignment Credentialing Asymmetry
+**Type:** B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-16 20:00 PT
+
+**Core finding:** PhoneArena (independent, Varna Bulgaria, $7.2M revenue, ~50 staff, CEO Pressian Karakostov) exhibits cross-entity privacy vocabulary asymmetry through beat-assignment credentialing. Google #TeamPixel-credentialed reporter Johanna Romero covers Samsung/Google glasses reveal with ZERO privacy vocabulary and aspirational framing ("I'm excited"). Separate reporter Ilia covers Meta glasses with 7+ adversarial alarm terms AND explicitly dismisses identical concerns for Samsung/Google in the SAME article.
+
+**Novel element:** First mechanism documenting a Google-credentialed reporter (#TeamPixel since 2022) at an independent publication assigned to cover the product category where that credential creates structural access/relationship bias. The credentialing is disclosed but creates implicit dependency absent for Meta coverage.
+
+**Critical within-article double standard (Ilia, apple_vs_meta article):**
+- Meta: "very questionable reputation," "Cambridge Analytica scandal," "extremely private recordings," "disturbing," "invasion of everyone's privacy" (7+ alarm terms)
+- Google: "Even Google fares much better in that regard" (ZERO evidence cited)
+- Samsung: "Adding a new set of data doesn't feel that concerning" (dismissal of identical camera-to-cloud pipeline)
+
+**Financial context:** PhoneArena is independent with ZERO Meta financial ties. No corporate tech parent. Google dependency via #TeamPixel credential + search traffic. Samsung as major advertising client ($9.7B global ad spend).
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 falsifiable predictions.**
+
+**Cross-references:** #132 (extends — Andy Boxall/Android Police privacy inversion), #131 (complements — Ben Schoon/9to5Google calibration), #137 (parallels — Inc.com redirected attribution), #138 (complements — Digital Trends editorial-level asymmetry)
+
+**Changes:**
+- New test: `test_phonearena_cross_entity_beat_credentialing_asymmetry_aug16.py` (51 tests, 9 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #141 added)
+- Updated: `competitor-entities.yaml` (phonearena entity added)
+- Updated: README.md (424 files, ~14,954 tests)
+
+**Cumulative:** 141 mechanisms, ~14,954 tests, 424 files

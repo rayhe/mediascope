@@ -17340,4 +17340,76 @@ publications:
     - https://www.digitaltrends.com/cool-tech/samsungs-upcoming-galaxy-glasses-have-leaked-and-the-looks-dont-impress/
     - https://www.digitaltrends.com/wearables/samsung-galaxy-xr-hands-on-preview/
     - https://www.digitaltrends.com/wearables/samsungs-first-ar-glasses-are-coming-in-2026-with-immersive-multimodal-ai-experiences/
+  mechanism_141_phonearena_cross_entity_beat_credentialing_asymmetry:
+    mechanism_id: 141
+    name: PhoneArena Cross-Entity Beat-Assignment Credentialing Asymmetry
+    type: journalist_cross_entity
+    publication: PhoneArena
+    owner: Independent (Varna, Bulgaria, CEO Pressian Karakostov)
+    founded: 2001
+    revenue: $7.2M annual (affiliate + sponsored content)
+    staff: ~50
+    meta_financial_ties: ZERO
+    google_financial_ties: 'Google #TeamPixel credential (Johanna Romero), standard Google search traffic dependency'
+    samsung_financial_ties: 'Samsung advertising client ($9.7B global ad spend)'
+    finding_summary: >
+      Google-credentialed reporter (Johanna Romero, #TeamPixel since 2022) covers
+      Samsung/Google glasses reveal with ZERO privacy vocabulary and aspirational framing.
+      Separate reporter (Ilia) covers Meta glasses with 7+ adversarial privacy alarm
+      terms AND explicitly dismisses identical concerns for Samsung/Google in the SAME
+      article: "Even Google fares much better" (no evidence cited), "Adding a new set of
+      data doesn't feel that concerning." First mechanism documenting beat-assignment
+      credentialing producing cross-entity framing asymmetry at an independent publication.
+    key_journalists:
+    - name: Johanna Romero
+      role: Senior News Writer
+      credential: Official Google #TeamPixel member since 2022
+      samsung_google_privacy_alarm_terms: 0
+      meta_privacy_alarm_terms: '0 (does not cover Meta adversarially)'
+      tone_in_glasses_coverage: aspirational
+    - name: Ilia
+      role: Tech Journalist
+      background: Bulgarian, based in Lima Peru, experience at Forbes Bulgaria
+      meta_privacy_alarm_terms: '7+'
+      google_samsung_privacy_alarm_terms_in_same_article: 0
+      explicit_google_dismissal: "Even Google fares much better in that regard"
+      samsung_rationalization: "Adding a new set of data doesn't feel that concerning"
+    test_file: test_phonearena_cross_entity_beat_credentialing_asymmetry_aug16.py
+    test_count: 51
+    confounding_factors:
+    - strength: STRONG
+      description: "Meta's Kenya/Sama scandal is genuinely worse than any documented Samsung/Google data handling incident. Meta has real privacy failures."
+    - strength: STRONG
+      description: "Samsung/Google glasses had not launched at time of coverage. Pre-launch coverage naturally receives less privacy scrutiny."
+    - strength: MODERATE
+      description: "Google #TeamPixel credential disclosed in Romero's byline. Not hidden, readers can assess."
+    - strength: MODERATE
+      description: "Genre difference: reveal/preview articles (Samsung/Google) vs scandal/investigation (Meta) naturally differ in tone."
+    - strength: WEAK
+      description: "PhoneArena may assign reporters by expertise/availability rather than strategic beat management."
+    falsifiable_predictions:
+    - prediction: When Samsung/Google glasses launch and have their first privacy
+        incident, Johanna Romero will NOT apply equivalent alarm vocabulary as
+        PhoneArena applies to Meta incidents.
+      falsifiable: true
+      testable_date: '2027-03'
+    - prediction: PhoneArena will NOT assign Ilia to cover Samsung/Google glasses
+        launch reviews — the #TeamPixel-credentialed reporter will maintain beat.
+      falsifiable: true
+      testable_date: '2026-12'
+    - prediction: If Samsung/Google glasses footage is reviewed by human contractors
+        (parallel to Meta Sama), PhoneArena will frame it as industry practice rather
+        than bombshell investigation.
+      falsifiable: true
+      testable_date: '2027-06'
+    cross_references:
+    - 132
+    - 131
+    - 137
+    - 138
+    source_urls:
+    - https://www.phonearena.com/news/move-over-ray-ban-samsung-and-google-just-revealed-their-first-intelligent-eyewear_id180476
+    - https://www.phonearena.com/news/apple-doesnt-need-fashion-brands-to-beat-the-meta-ray-ban-in-its-own-game_id180781
+    - https://www.phonearena.com/news/meta-ray-ban-smart-glasses-showing-intimate-moments-to-workers-in-kenya-investigation_id178789
+    - https://www.phonearena.com/news/whistleblowers-who-exposed-meta-ray-ban-smart-glasses-fired_id180105
 research_period: 2024-08-01 to 2026-08-16
