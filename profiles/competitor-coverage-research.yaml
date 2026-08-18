@@ -15579,6 +15579,171 @@ cross_publication_findings:
       - https://www.youtube.com/watch?v=0NLaAQuaCJE
       - https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
     test_file: tests/test_global_institutional_podcast_meta_category_proxy_aug18.py
+  multi_vector_cultural_delegitimization_cascade:
+    mechanism_id: 158
+    mechanism_name: Multi-Vector Cultural Delegitimization Cascade
+    date_added: '2026-08-18'
+    discovery_date: '2026-08-18'
+    finding_type: multi_vector_cultural_cascade
+    domain: cross_medium_podcast_analysis
+    rotation_type: E
+    finding_summary: >
+      Between July 10 and August 18, 2026, independent actors across 7 vectors
+      simultaneously delegitimized Meta glasses: (1) CELEBRITY BACKLASH — Lorde at
+      Mad Cool Festival (Ray-Ban-sponsored event, before Ray-Ban ambassador Jennie):
+      "F**k the glasses. Not sexy." Tyler the Creator on Instagram (52M+ followers):
+      "Anyone who uses these glasses is a real weirdo" linking to WIRED surveillance article.
+      (2) SATIRICAL COMMERCE — DuckDuckGo "Normal F***ing Sunglasses" ($35, partnership
+      with Knockaround, SOLD OUT). Logo placed where cameras go. The Onion parody review:
+      "Useless for perverts." (3) SECURITY CONFERENCE BAN — DEF CON 34 banned "Meta-style
+      glasses with recording capabilities." EFF director Eva Galperin: "Love to see a 'no
+      pervert glasses' policy." (4) JUDICIAL/INSTITUTIONAL BANS — HMCTS (England/Wales
+      courts, confiscation), New York courts, UK Comic Cons (Monopoly Events), Wetherspoons,
+      ATG Theatres, Soho House, U.S. Air Force. ALL name Meta specifically. (5) REGULATORY
+      — Germany Cayla spy-device law criminal complaint (HateAid, Aug 12), France CNIL action
+      plan, EDPB drafting EU-wide report. (6) ACTIVIST ESCALATION — EHE Jeffrey Epstein
+      poster at Ray-Ban flagship (4th phase). (7) APPLE COUNTER-POSITIONING — Apple delays
+      N50 explicitly "for privacy" (Gurman Jul 26), framed as not wanting to "inherit Meta's
+      creepy reputation." Every vector targets Meta EXCLUSIVELY. Samsung (same Snapdragon
+      AR1, announced Jul 22) has received ZERO equivalent backlash in 27 days across any
+      vector. "Pervert" vocabulary propagates across all vectors: activists, broadcast,
+      security conferences, satirists, print/online. Samsung gets inverted semantic role
+      (protector vs Meta=perpetrator).
+    vectors:
+      celebrity_backlash:
+        lorde:
+          event: Mad Cool Festival, Madrid
+          date: '2026-07-10'
+          quote: "F**k the glasses. Don't get the glasses. Not sexy."
+          context: Ray-Ban-sponsored event; Jennie (Ray-Ban ambassador) performed immediately after
+          coverage: [TechCrunch, Gizmodo, Android Police, iTechPost, Android Headlines, CNN]
+        tyler_the_creator:
+          date: '2026-07'
+          quote: "Anyone who uses these glasses is a real weirdo"
+          platform: Instagram (52M+ followers)
+          linked_article: WIRED surveillance article
+          coverage: [Gizmodo, live-feeds.com]
+      satirical_commerce:
+        duckduckgo:
+          product: "Normal F***ing Sunglasses"
+          date: '2026-07-30'
+          price: $35
+          partner: Knockaround (Paso Robles frame)
+          features: "No camera, no AI, no battery, no electronics"
+          status: SOLD OUT within days
+          meta_specific_targeting: "Meta and other tech companies are turning sunglasses into surveillance devices"
+          the_onion_parody: "Useless for perverts"
+          coverage: [TechSpot, PetaPixel, 9to5Mac, Digital Trends, Notebookcheck, Dexerto]
+      security_conference:
+        defcon_34:
+          date: '2026-07-28'
+          ban_language: "Meta-style glasses with recording capabilities"
+          prescription_exception: false
+          eff_endorsement: "Love to see a 'no pervert glasses' policy at DEF CON"
+          eff_source: Eva Galperin (Director of Cybersecurity)
+          competitors_named: none
+      judicial_institutional:
+        hmcts_england_wales:
+          action: confiscation on entry
+          date: '2026-08'
+          source: Cybernews/The Guardian
+          meta_named: true
+        new_york_courts:
+          action: full ban
+          date: '2026-07-10'
+          source: TechTimes
+          meta_named: true
+        monopoly_events_uk_comic_cons:
+          action: all recording eyewear banned
+          date: '2026-08'
+          source: The Register
+        wetherspoons:
+          action: restrictions
+          date: '2026-08'
+          meta_named: true
+        us_air_force:
+          action: uniform ban
+          date: '2026'
+      regulatory_prosecutorial:
+        germany_cayla:
+          action: criminal complaint
+          date: '2026-08-12'
+          organization: HateAid
+          targets: [Meta, EssilorLuxottica, Fielmann, Apollo-Optik, Mister Spex, MediaMarkt]
+          competitors_not_targeted: [Samsung, Google, Apple, Snap]
+          prosecution_unit: ZIT Frankfurt
+        france_cnil:
+          action: action plan + public warning
+          date: '2026-05-11'
+          finding: '"significant risk" of "almost invisible and omnipresent" surveillance'
+          survey: 67% of 2128 adults cited privacy risk
+        edpb:
+          action: drafting smart glasses report
+          target_date: end of summer 2026
+      activist_escalation:
+        ehe_campaign:
+          phases: 4
+          latest: Jeffrey Epstein sex offender registry poster at Ray-Ban flagship (~Aug 10)
+          samsung_equivalent_campaigns: 0
+          days_since_samsung_announcement: 27
+      apple_counter_positioning:
+        n50_delay:
+          date: '2026-07-26'
+          source: Bloomberg/Gurman
+          framing: "privacy is priority No. 1"
+          coverage_framing: '"won''t inherit Meta''s creepy reputation" (Digital Trends)'
+          camera_options_tested: 3 (camera with privacy restrictions, camera for Siri only, no camera)
+          strategic_benefit: "Every headline about Meta bans makes Apple's privacy-first positioning more valuable"
+    confounders:
+      - strength: STRONG
+        factor: >
+          Meta IS the dominant vendor (80%+ share, 7M+ units 2025). Market leader
+          legitimately receives disproportionate scrutiny.
+      - strength: STRONG
+        factor: >
+          Meta's Kenya contractor scandal and NameTag leak are genuine privacy violations
+          with no Samsung/Google/Apple equivalents yet. Backlash is partly earned.
+      - strength: STRONG
+        factor: >
+          Samsung Galaxy Glasses hadn't shipped during most of the cascade (announced Jul 22,
+          not on sale yet). Bans and backlash may naturally expand once competitors ship.
+      - strength: MODERATE
+        factor: >
+          Celebrity backlash could be generational or personality-driven rather than
+          company-specific. Lorde has a history of anti-tech statements.
+      - strength: MODERATE
+        factor: >
+          Apple's delay may be genuine engineering caution, not strategic counter-positioning.
+      - strength: WEAK
+        factor: >
+          DuckDuckGo targets "big tech" generally — Meta is named but satire applies broadly.
+    testable_predictions:
+      - No celebrity will condemn Samsung glasses with comparable vocabulary post-launch
+      - Apple N50 will receive aspirational framing even with identical camera hardware
+      - DEF CON 35 will not use brand-specific ban language for Samsung/Google/Apple
+      - DuckDuckGo V2 satirical product will reference Meta, not Samsung/Google/Apple
+    cross_references:
+      - mechanism_id: 157
+        relationship: extends_institutional_convergence
+        note: Adds celebrity/commercial/regulatory vectors to institutional discourse convergence
+      - mechanism_id: 153
+        relationship: extends_same_episode_asymmetry
+        note: Celebrity backlash generates same-episode framing coverage (Meta=backlash, OpenAI=product)
+      - mechanism_id: 144
+        relationship: extends_podcast_amplification
+        note: Celebrity statements generate podcast coverage that amplifies Meta-specific framing
+    source_urls:
+      - https://techcrunch.com/2026/07/14/lorde-says-ai-glasses-are-not-sexy/
+      - https://gizmodo.com/smart-glasses-backlash-is-reaching-new-celebrity-heights-2000784767
+      - https://www.techspot.com/news/113357-duckduckgo-made-sunglasses-do-absolutely-nothing-they-sold.html
+      - https://petapixel.com/2026/08/05/duckduckgos-smart-glasses-have-no-camera-no-ai-and-no-electronics/
+      - http://www.theregister.com/security/2026/07/28/def-con-bans-meta-style-pervert-glasses/5279763
+      - https://cybernews.com/tech/smartglasses-england-courts/
+      - https://www.techtimes.com/articles/324064/20260812/germany-invokes-cayla-spy-device-law-against-meta-smart-glasses-owners-face-destruction-risk.htm
+      - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
+      - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud?cid=external-feeds_iluminar_meta
+      - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+    test_file: tests/test_multi_vector_cultural_delegitimization_cascade_aug18.py
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

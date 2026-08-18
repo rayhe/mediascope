@@ -1,3 +1,79 @@
+## Iteration #159 — Tue 2026-08-18 02:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Focus: Multi-Vector Cultural Delegitimization Cascade (Mechanism #158)**
+
+**DISCOVERY: 7 independent vectors simultaneously delegitimizing Meta glasses exclusively — zero equivalent backlash for Samsung/Google/Apple/Snap in 27+ days since Samsung Galaxy Glasses announcement**
+
+Between July 10 and August 18, 2026, independent actors across 7 distinct vectors are simultaneously delegitimizing Meta glasses while competitors with identical camera hardware receive zero equivalent backlash:
+
+**Vector 1: CELEBRITY BACKLASH**
+- Lorde at Mad Cool Festival (Jul 10, Ray-Ban-sponsored event, immediately before Ray-Ban ambassador Jennie): "F**k the glasses. Not sexy."
+- Tyler the Creator on Instagram (52M+ followers): "Anyone who uses these glasses is a real weirdo" linking to WIRED surveillance article.
+- Coverage: TechCrunch, Gizmodo, Android Police, iTechPost, Android Headlines, CNN.
+
+**Vector 2: SATIRICAL COMMERCE**
+- DuckDuckGo "Normal F***ing Sunglasses" ($35, partnership with Knockaround) — SOLD OUT within days.
+- Logo placed where cameras normally go. The Onion parody review: "Useless for perverts."
+- Coverage: TechSpot, PetaPixel, 9to5Mac, Digital Trends, Notebookcheck, Dexerto.
+
+**Vector 3: SECURITY CONFERENCE BAN**
+- DEF CON 34 (Jul 28) banned "Meta-style glasses with recording capabilities."
+- EFF director Eva Galperin: "Love to see a 'no pervert glasses' policy at DEF CON."
+- No Samsung/Google/Apple named.
+
+**Vector 4: JUDICIAL/INSTITUTIONAL BANS**
+- HMCTS (England/Wales courts, confiscation), New York courts, UK Comic Cons (Monopoly Events), Wetherspoons, ATG Theatres, Soho House, U.S. Air Force.
+- ALL name Meta specifically.
+
+**Vector 5: REGULATORY/PROSECUTORIAL**
+- Germany: HateAid criminal complaint under Cayla spy-device law (Aug 12), targeting Meta + EssilorLuxottica + 4 retailers. Samsung/Google/Apple/Snap NOT targeted.
+- France CNIL: action plan + public warning ("significant risk" of "almost invisible and omnipresent" surveillance).
+- EDPB: drafting EU-wide smart glasses report.
+
+**Vector 6: ACTIVIST ESCALATION**
+- EHE Jeffrey Epstein sex offender registry poster at Ray-Ban flagship (4th escalation phase, ~Aug 10).
+
+**Vector 7: APPLE COUNTER-POSITIONING**
+- Apple delays N50 to WWDC 2027 explicitly "for privacy" (Bloomberg/Gurman Jul 26).
+- Digital Trends framing: "won't inherit Meta's creepy reputation."
+- Apple tested 3 camera options including "no camera at all."
+
+**CROSS-VECTOR VOCABULARY CASCADE:** "Pervert" vocabulary propagates across all vectors — activists, broadcast, security conferences, satirists, print/online. Samsung gets inverted semantic role (protector vs Meta=perpetrator).
+
+**CONFOUNDERS (3 STRONG, 2 MODERATE, 1 WEAK):**
+- STRONG: Meta IS dominant vendor (80%+ share), scrutiny partly proportional
+- STRONG: Kenya contractor scandal and NameTag leak are genuine violations
+- STRONG: Samsung Galaxy Glasses hadn't shipped during most of cascade
+- MODERATE: Celebrity backlash could be personality-driven (Lorde has anti-tech history)
+- MODERATE: Apple's delay may be genuine engineering caution
+- WEAK: DuckDuckGo targets "big tech" generally, not Meta exclusively
+
+**BUGS FIXED:**
+1. YAML quoting error in competitor-coverage-research.yaml — `finding:` value with embedded double quotes needed single-quote wrapping. Same for `coverage_framing:` with embedded quotes and apostrophes.
+2. Test setUp pattern bug — `cross_publication_findings` is a dict (keyed by mechanism slug), not a list. All 7 setUp methods iterated it as a list. Extracted `find_mechanism()` helper that handles both dict and list structures.
+
+**NEW TEST FILE: test_multi_vector_cultural_delegitimization_cascade_aug18.py (9 classes, 34 tests, all passing)**
+- Mechanism #158 existence (7 tests: exists, name, finding_type, date, source_urls, test_file, confounders)
+- Celebrity backlash vector (4 tests: Lorde, Tyler, Meta targeting, Ray-Ban sponsorship context)
+- Satirical commerce vector (3 tests: DuckDuckGo, new vector type, Meta-specific targeting)
+- Institutional ban vector (4 tests: DEF CON, HMCTS, Germany regulatory, Meta-only targeting)
+- Apple counter-positioning (2 tests: delay documented, benefits from cascade)
+- Multi-vector convergence (3 tests: cross-references, minimum 5 vectors, rotation type E)
+- Podcast sentiment updates (5 tests: Lorde, Tyler, DuckDuckGo, DEF CON, mechanism reference)
+- Vocabulary cascade pattern (2 tests: pervert vocabulary tracking, Eva Galperin quote)
+- Doc sync integrity (4 tests: README count, ARCHITECTURE count, test file listings)
+
+**FILES MODIFIED:**
+- `profiles/competitor-coverage-research.yaml` — mechanism #158 added + YAML quoting fixes
+- `podcast-sentiment.md` — Multi-Vector Cultural Delegitimization Cascade section added
+- `README.md` — test count updated, new test file listed
+- `ARCHITECTURE.md` — test count updated, new test file listed
+- `tests/test_multi_vector_cultural_delegitimization_cascade_aug18.py` — NEW (34 tests)
+
+**Verification:** 34/34 tests passing after YAML fix and setUp pattern fix.
+
+**Stats:** 444 test files, ~14,750 tests, 158 mechanisms.
+
 ## Iteration #158 — Tue 2026-08-18 00:00 PT (Type D: Test & Verify)
 
 **Focus: Doc Sync Regression Fix + Mechanism #153-#156 Structural Validation**
