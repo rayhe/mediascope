@@ -3639,3 +3639,51 @@ Within the same publication, competitor coverage is exclusively assigned to prod
 - Updated: docs/ARCHITECTURE.md (test file entry added)
 
 **Cumulative:** 165 mechanisms, ~15,176 tests, 455 files
+
+---
+
+## Iteration #170 — Tue 2026-08-18 16:00 PDT
+**Type A: Competitor Coverage Deep Dive — Guardian × Samsung Galaxy Glasses**
+
+**Mechanism #169:** Guardian Samsung Galaxy Glasses London Geographic Proximity & Privacy Parity Natural Experiment
+
+Samsung Galaxy Glasses were announced at Galaxy Unpacked in London (Jul 22, 2026) — The Guardian's home city. 27 days later, The Guardian has published ZERO articles about Samsung Galaxy Glasses.
+
+This extends mechanism #83 (Guardian Samsung financial triangle) with two novel analytical variables:
+
+1. **London Geographic Proximity** — Samsung chose London specifically for Unpacked (first London Unpacked since Galaxy S3 in 2012, 14 years). A London-based quality broadsheet ignoring a major London tech launch with privacy-relevant hardware is testable independent of financial relationships.
+
+2. **Cross-Publication Privacy Vocabulary Inversion** — Samsung's LED tamper-detection auto-disable feature (confirmed Jul 28, 2026) is IDENTICAL to Meta's approach. Yet GSMArena frames it as "this important privacy feature," SamMobile writes "takes privacy pretty seriously," while Meta's identical feature receives "surveillance," "creepy," "pervert glasses" framing. Guardian's silence prevents any vocabulary comparison.
+
+**Hardware parity:** Same Snapdragon AR1 Gen 1 chip, same 12MP camera, same LED privacy indicator, same tamper-detection auto-disable, same phone-tethered companion architecture.
+
+**Financial context:** Guardian receives Google News AI pilot revenue (initial partner, Dec 2025). Samsung is Google's primary Android XR hardware partner. Matthew Brittin (Google EMEA 18 years → GMG Senior Independent Director → BBC Director-General) departed GMG board Mar 24, 2026, four months before Samsung launch.
+
+**Research path:**
+- Searched: `site:theguardian.com Samsung Galaxy Glasses` → 0 results
+- Searched: `site:theguardian.com Samsung smart glasses Android XR` → 0 results
+- Searched: `theguardian.com Samsung Galaxy Glasses Unpacked London 2026` → 0 Guardian results
+- Verified: 11+ other outlets covered Samsung Galaxy Glasses extensively (eWeek, Android Authority, ZDNET, wareable, gagadget, The Gadgeteer, TechTimes, ghacks, GSMArena, SamMobile, MakeUseOf)
+- Checked: Mechanism #83 already covers Guardian-Samsung financial triangle; #169 adds London proximity + vocabulary inversion (distinct analytical contribution)
+
+**Evidence sources:**
+- Samsung Galaxy Glasses Wikipedia: https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+- eWeek: https://www.eweek.com/news/samsung-google-first-android-xr-smart-glasses/
+- Android Authority: https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+- GSMArena: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+- SamMobile: https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+- gagadget: https://gagadget.com/en/710069-samsung-galaxy-glasses-are-coming-in-july-heres-what-we-know/
+- The Gadgeteer: https://the-gadgeteer.com/2026/04/29/samsung-galaxy-glasses/
+- wareable: https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+
+**Confounders:** 6 (2 STRONG, 2 MODERATE, 2 WEAK)
+**Cross-references:** #83, #163, #166, #167
+
+**Files changed:**
+- Added: `tests/test_guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity_aug18.py` (10 classes, 61 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #169)
+- Updated: `profiles/guardian.yaml` (added samsung competitor_relationships entry)
+- Updated: README.md (458 files, ~16,600 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added)
+
+**Cumulative:** 169 mechanisms, ~16,600 tests, 458 files

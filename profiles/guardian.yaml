@@ -1779,6 +1779,13 @@ competitor_relationships:
     direction: "receiving"
     description: "Google Digital News Initiative funding recipient. Google AI pilot program participant. Relationship is pragmatic — Guardian takes Google money but covers Google critically."
     coverage_prediction: "neutral"
+  samsung:
+    financial_tie: "indirect_via_google"
+    estimated_value: "undisclosed"
+    direction: "none_direct"
+    description: "No direct Guardian-Samsung financial relationship. However, Samsung Galaxy Glasses run Google's Android XR platform with Google Gemini as AI assistant — making Google the privacy-relevant data processing entity. Guardian is Google's News AI pilot initial partner (Dec 2025). This creates an indirect alignment: adversarial Samsung glasses coverage would implicate Google's AI data processing, potentially jeopardizing the Guardian-Google AI pilot revenue. Samsung Galaxy Glasses launched at Galaxy Unpacked in London (Jul 22, 2026) — Guardian's home city — with ZERO Guardian coverage as of Aug 18, 2026 (27 days post-launch). Samsung hardware is functionally identical to Meta Ray-Ban: same Snapdragon AR1 Gen 1 chip, same 12MP camera, same LED privacy indicator, same tamper-detection auto-disable."
+    coverage_prediction: "neutral_to_absent"
+    mechanisms: [83, 169]
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

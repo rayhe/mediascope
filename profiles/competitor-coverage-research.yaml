@@ -16256,16 +16256,16 @@ cross_publication_findings:
       which is MORE intimate than Meta NameTag (dormant, public-facing).
     cross_references:
     - mechanism_id: 33
-      relationship: 'OpenAI-Meta Facial Recognition Privacy Parity — Mechanism #33 documents zero privacy scrutiny for OpenAI planned facial recognition. This mechanism (#159)
-        extends the finding from coverage volume to vocabulary register — the same camera capabilities get different WORDS,
-        not just different amounts of coverage.'
+      relationship: 'OpenAI-Meta Facial Recognition Privacy Parity — Mechanism #33 documents zero privacy scrutiny for OpenAI
+        planned facial recognition. This mechanism (#159) extends the finding from coverage volume to vocabulary register
+        — the same camera capabilities get different WORDS, not just different amounts of coverage.'
     - mechanism_id: 158
-      relationship: 'Multi-Vector Cultural Delegitimization Cascade — Mechanism #158 documents 7 simultaneous vectors delegitimizing Meta glasses exclusively. This mechanism
-        shows the vocabulary cascade extends to coverage of competitor devices — OpenAI gets inverted vocabulary ("companion")
-        for identical capabilities.'
+      relationship: 'Multi-Vector Cultural Delegitimization Cascade — Mechanism #158 documents 7 simultaneous vectors delegitimizing
+        Meta glasses exclusively. This mechanism shows the vocabulary cascade extends to coverage of competitor devices —
+        OpenAI gets inverted vocabulary ("companion") for identical capabilities.'
     - mechanism_id: 145
-      relationship: 'Android Police Valnet Per-Click Smart Glasses Coverage Asymmetry — Mechanism #145 documents vocabulary asymmetry for Samsung vs Meta at one publication. This mechanism
-        extends to OpenAI vs Meta across 4+ publications.'
+      relationship: 'Android Police Valnet Per-Click Smart Glasses Coverage Asymmetry — Mechanism #145 documents vocabulary
+        asymmetry for Samsung vs Meta at one publication. This mechanism extends to OpenAI vs Meta across 4+ publications.'
     test_file: tests/test_openai_companion_meta_surveillance_vocabulary_bifurcation_aug18.py
     source_urls:
     - https://www.macrumors.com/2026/07/14/openai-ai-hardware-device-speaker/
@@ -20065,15 +20065,13 @@ publications:
     publication: Tom's Guide (Future plc)
     competitor: Snap (Spectacles/SPECS)
     asymmetry_score: 0.82
-    finding: 'Within the SAME publication (Tom''s Guide, Future plc), smart glasses coverage applies
-      opposite editorial registers based on entity identity, not camera capabilities. Snap Specs
-      (4 cameras, 6 microphones, $2,195, 226g) receive aspirational vocabulary — "game-changer,"
-      "mindblown," "mighty impressive" — with ZERO privacy terms. Meta Ray-Ban (1 camera, 5
-      microphones, $299, 49g) receives adversarial vocabulary — "alarm bells," "privacy concerns,"
-      "doomed," "banned," "desperate." Camera count paradox: MORE cameras (4) → ZERO alarm; FEWER
-      cameras (1) → HEAVY alarm. Beat assignment asymmetry: product editors (England, Murphy) cover
-      Snap; privacy/security writers (Krishi, Caswell) cover Meta. The editorial decision of WHO
-      covers WHICH entity predetermines the framing.'
+    finding: 'Within the SAME publication (Tom''s Guide, Future plc), smart glasses coverage applies opposite editorial registers
+      based on entity identity, not camera capabilities. Snap Specs (4 cameras, 6 microphones, $2,195, 226g) receive aspirational
+      vocabulary — "game-changer," "mindblown," "mighty impressive" — with ZERO privacy terms. Meta Ray-Ban (1 camera, 5 microphones,
+      $299, 49g) receives adversarial vocabulary — "alarm bells," "privacy concerns," "doomed," "banned," "desperate." Camera
+      count paradox: MORE cameras (4) → ZERO alarm; FEWER cameras (1) → HEAVY alarm. Beat assignment asymmetry: product editors
+      (England, Murphy) cover Snap; privacy/security writers (Krishi, Caswell) cover Meta. The editorial decision of WHO covers
+      WHICH entity predetermines the framing.'
     snap_coverage:
       journalists:
       - name: Jason England
@@ -20086,7 +20084,7 @@ publications:
         tone: 0.75
         aspirational_terms: 7
         privacy_alarm_terms: 0
-      camera_description: "four cameras... a pretty fully-loaded package"
+      camera_description: four cameras... a pretty fully-loaded package
     meta_coverage:
       journalists:
       - name: Amanda Caswell
@@ -20095,21 +20093,18 @@ publications:
         tone_avg: -0.575
         privacy_alarm_terms_total: 16
         mechanism_165_coverage_scope_asymmetry:
-          description: >-
-            Covers Meta smart glasses across BOTH registers (3 positive product
-            articles + 1 adversarial privacy investigation) but covers ZERO
-            competitor smart glasses (Samsung, Snap, Google). Novel mechanism
-            type: coverage_scope_asymmetry. The dual-register journalist covers
-            only Meta; product reviewers cover competitors without adversarial
-            register. Extends #164 at individual journalist level.
+          description: 'Covers Meta smart glasses across BOTH registers (3 positive product articles + 1 adversarial privacy
+            investigation) but covers ZERO competitor smart glasses (Samsung, Snap, Google). Novel mechanism type: coverage_scope_asymmetry.
+            The dual-register journalist covers only Meta; product reviewers cover competitors without adversarial register.
+            Extends #164 at individual journalist level.'
           positive_articles:
-            - "Super Bowl halftime (Feb 9, 2026)"
-            - "Teleprompter reading (Feb 13, 2026)"
-            - "Calorie counting (Apr 19, 2026)"
+          - Super Bowl halftime (Feb 9, 2026)
+          - Teleprompter reading (Feb 13, 2026)
+          - Calorie counting (Apr 19, 2026)
           adversarial_articles:
-            - "Privacy concerns over human review of video data"
+          - Privacy concerns over human review of video data
           competitor_smart_glasses_articles: 0
-          source: "https://www.tomsguide.com/uk/author/amanda-caswell/page/7"
+          source: https://www.tomsguide.com/uk/author/amanda-caswell/page/7
       - name: Krishi
         role: VPN/cybersecurity writer
         tone: -0.55
@@ -20133,19 +20128,19 @@ publications:
     confounders:
     - strength: STRONG
       factor: Article type difference (reviews vs news analysis)
-      response: "Genre selection IS the asymmetry — Tom's Guide CHOOSES to write reviews for Snap, alarm for Meta"
+      response: Genre selection IS the asymmetry — Tom's Guide CHOOSES to write reviews for Snap, alarm for Meta
     - strength: STRONG
       factor: Meta's longer privacy controversy history
-      response: "Privacy risk should track DEVICE CAPABILITY, not company reputation"
+      response: Privacy risk should track DEVICE CAPABILITY, not company reputation
     - strength: MODERATE
       factor: Snap Specs not yet consumer-shipped at time of reviews
-      response: "Meta received privacy alarm from announcement; Snap has $2,195 pricing and pre-orders live"
+      response: Meta received privacy alarm from announcement; Snap has $2,195 pricing and pre-orders live
     - strength: MODERATE
       factor: Scale difference (Meta millions sold vs Snap new product)
-      response: "Camera privacy concern doesn't depend on sales volume"
+      response: Camera privacy concern doesn't depend on sales volume
     - strength: WEAK
-      factor: "Two of Snap's 4 cameras are IR for hand tracking"
-      response: "Even 2 visible cameras > Meta's 1; IR cameras still capture environmental data"
+      factor: Two of Snap's 4 cameras are IR for hand tracking
+      response: Even 2 visible cameras > Meta's 1; IR cameras still capture environmental data
     cross_references:
     - mechanism_id: 146
       relationship: Same journalist (Jason England) now shows aspirational framing for BOTH Google AND Snap
@@ -20163,7 +20158,6 @@ publications:
     - https://www.tomsguide.com/computing/smart-glasses/this-major-cruise-line-just-banned-meta-ray-ban-and-other-smart-glasses-is-this-category-already-doomed
     test_file: tests/test_tomsguide_snap_specs_camera_count_paradox_privacy_vocabulary_inversion_aug18.py
     test_count: 62
-
   amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry:
     mechanism_id: 165
     finding_type: coverage_scope_asymmetry
@@ -20171,75 +20165,81 @@ publications:
     publication: Tom's Guide (Future plc)
     journalist: Amanda Caswell
     journalist_role: AI Editor
-    finding_summary: >-
-      Amanda Caswell, Tom's Guide AI Editor, covers Meta smart glasses across
-      BOTH editorial registers (3 positive product articles + 1 adversarial
-      privacy investigation) but covers ZERO competitor smart glasses (Samsung,
-      Snap, Google). Product review editors who cover competitors write ZERO
-      privacy articles. Result: adversarial smart glasses coverage exists
-      exclusively for Meta because the dual-register journalist covers only Meta.
+    finding_summary: 'Amanda Caswell, Tom''s Guide AI Editor, covers Meta smart glasses across BOTH editorial registers (3
+      positive product articles + 1 adversarial privacy investigation) but covers ZERO competitor smart glasses (Samsung,
+      Snap, Google). Product review editors who cover competitors write ZERO privacy articles. Result: adversarial smart glasses
+      coverage exists exclusively for Meta because the dual-register journalist covers only Meta.'
     asymmetry_score: 0.78
     novel_mechanism_type: coverage_scope_asymmetry
     caswell_meta_positive_articles:
-    - "Super Bowl halftime show (Feb 9, 2026)"
-    - "Teleprompter reading (Feb 13, 2026)"
-    - "Calorie counting with AI glasses (Apr 19, 2026)"
+    - Super Bowl halftime show (Feb 9, 2026)
+    - Teleprompter reading (Feb 13, 2026)
+    - Calorie counting with AI glasses (Apr 19, 2026)
     caswell_meta_adversarial_articles:
-    - "Privacy concerns over human review of video data"
+    - Privacy concerns over human review of video data
     caswell_competitor_articles: 0
     competitor_coverage_product_reviewers:
     - journalist: Jason England
       role: Managing Editor, Computing
-      entities: [google, rokid, viture, xreal, samsung]
+      entities:
+      - google
+      - rokid
+      - viture
+      - xreal
+      - samsung
       privacy_articles: 0
     - journalist: Mike Prospero
       role: Senior Editor
-      entities: [meta, google]
+      entities:
+      - meta
+      - google
       privacy_articles: 0
     - journalist: Tom Pritchard
       role: Staff writer
-      entities: [samsung]
+      entities:
+      - samsung
       privacy_articles: 0
     - journalist: Darragh Murphy
       role: Computing Editor
-      entities: [apple]
+      entities:
+      - apple
       privacy_articles: 0
     confounding_factors:
     - strength: STRONG
       factor: Meta is market leader with more coverage expected
-      response: "Market leadership explains MORE coverage, not EXCLUSIVE adversarial"
+      response: Market leadership explains MORE coverage, not EXCLUSIVE adversarial
     - strength: STRONG
       factor: AI Editor beat is AI broadly, not smart glasses specifically
-      response: "Samsung/Snap/Google glasses all use AI (Gemini, OpenAI) and fall within AI Editor beat"
+      response: Samsung/Snap/Google glasses all use AI (Gemini, OpenAI) and fall within AI Editor beat
     - strength: MODERATE
       factor: Samsung and Google consumer glasses are newer (2026)
-      response: "Snap Spectacles existed since 2016, Google Glass since 2013"
+      response: Snap Spectacles existed since 2016, Google Glass since 2013
     - strength: MODERATE
       factor: Standard editorial specialization (hardware vs AI beats)
-      response: "Explains positive AI articles but not privacy investigation, which is not typical AI Editor beat"
+      response: Explains positive AI articles but not privacy investigation, which is not typical AI Editor beat
     - strength: WEAK
       factor: Small sample size (4 articles)
-      response: "Absence of competitor coverage across 100+ articles is sustained pattern"
+      response: Absence of competitor coverage across 100+ articles is sustained pattern
     cross_references:
     - mechanism_id: 164
       relationship: Same publication institutional-level finding extended to individual journalist level
     - mechanism_id: 146
       relationship: Jason England covers competitors positively; Caswell provides adversarial complement for Meta only
     - mechanism_id: 132
-      relationship: "Different mechanism type: Boxall covers multiple entities with different vocabulary; Caswell covers one entity with both registers"
+      relationship: 'Different mechanism type: Boxall covers multiple entities with different vocabulary; Caswell covers one
+        entity with both registers'
     - mechanism_id: 151
-      relationship: "Similar editorial assignment layer finding; Caswell adds dual-register dimension"
+      relationship: Similar editorial assignment layer finding; Caswell adds dual-register dimension
     - mechanism_id: 107
-      relationship: "Different type: Kerry Wan covers multiple entities with vocabulary differential; Caswell is scope-exclusive"
+      relationship: 'Different type: Kerry Wan covers multiple entities with vocabulary differential; Caswell is scope-exclusive'
     source_urls:
     - https://www.tomsguide.com/uk/author/amanda-caswell/page/7
     testable_predictions:
-    - "When Samsung/Google glasses ship Fall 2026, Caswell will not write privacy investigation"
-    - "Any future Caswell competitor smart glasses articles will use positive register only"
-    - "If Snap releases consumer Spectacles, Caswell will not cover them adversarially"
+    - When Samsung/Google glasses ship Fall 2026, Caswell will not write privacy investigation
+    - Any future Caswell competitor smart glasses articles will use positive register only
+    - If Snap releases consumer Spectacles, Caswell will not cover them adversarially
     test_file: tests/test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py
     test_count: 47
-
   kali_hays_bbc_cross_entity_coverage_selection_natural_experiment:
     mechanism_id: 166
     finding_type: coverage_selection_natural_experiment
@@ -20252,29 +20252,21 @@ publications:
     journalist_role: Technology reporter
     journalist_career: Law360 > Prospect News > WWD > Business Insider > Fortune > BBC News
     domain: wearables_privacy
-    finding_summary: >-
-      Kali Hays (BBC Technology reporter) wrote the most globally-distributed
-      wearables privacy investigation (May 13 2026, syndicated via BBC News,
-      BBC Brasil, Yahoo, MSN, Flipboard). Article applies 12 adversarial
-      privacy alarm terms exclusively to Meta Ray-Ban (1 camera), while BBC
-      has produced ZERO comparable privacy investigation of Snap Specs
-      (4 cameras), Google Android XR glasses, OpenAI planned devices, or
-      Samsung Galaxy glasses. BBC is an independent public broadcaster with
-      $0 financial relationship with Advance/Condé Nast or any Meta competitor.
-      This WEAKENS the thesis that financial relationships alone explain
-      coverage asymmetry. It STRENGTHENS the thesis that entity-selective
-      cultural stigma activates privacy scrutiny based on brand identity
-      (Meta's corporate identity triggers heightened scrutiny that identical
-      or superior capabilities from Snap/Google/OpenAI do not trigger).
-      Cross-reference with DW News (#160): 2 of 3 global public broadcasters
-      (BBC UK, DW Germany) show Meta-specific targeting despite covering
-      generic smart glasses category, suggesting genuine cultural consensus
-      about Meta's BRAND, not about camera-glasses as a product category.
+    finding_summary: 'Kali Hays (BBC Technology reporter) wrote the most globally-distributed wearables privacy investigation
+      (May 13 2026, syndicated via BBC News, BBC Brasil, Yahoo, MSN, Flipboard). Article applies 12 adversarial privacy alarm
+      terms exclusively to Meta Ray-Ban (1 camera), while BBC has produced ZERO comparable privacy investigation of Snap Specs
+      (4 cameras), Google Android XR glasses, OpenAI planned devices, or Samsung Galaxy glasses. BBC is an independent public
+      broadcaster with $0 financial relationship with Advance/Condé Nast or any Meta competitor. This WEAKENS the thesis that
+      financial relationships alone explain coverage asymmetry. It STRENGTHENS the thesis that entity-selective cultural stigma
+      activates privacy scrutiny based on brand identity (Meta''s corporate identity triggers heightened scrutiny that identical
+      or superior capabilities from Snap/Google/OpenAI do not trigger). Cross-reference with DW News (#160): 2 of 3 global
+      public broadcasters (BBC UK, DW Germany) show Meta-specific targeting despite covering generic smart glasses category,
+      suggesting genuine cultural consensus about Meta''s BRAND, not about camera-glasses as a product category.'
     asymmetry_score: 0.72
     novel_mechanism_type: entity_selective_privacy_concern_independent_public_broadcaster
     thesis_impact:
-      weakens: "Financial relationships alone explain coverage asymmetry"
-      strengthens: "Entity-selective cultural stigma activates privacy scrutiny based on brand identity, not product capabilities"
+      weakens: Financial relationships alone explain coverage asymmetry
+      strengthens: Entity-selective cultural stigma activates privacy scrutiny based on brand identity, not product capabilities
     meta_alarm_terms_count: 12
     meta_surveillance_vocabulary_count: 7
     meta_tone_score: -0.75
@@ -20295,32 +20287,38 @@ publications:
     confounding_factors:
     - strength: STRONG
       factor: Meta market share (~80% of smart glasses)
-      response: "80% market share does not equal 100% investigation focus. Snap Specs with 4 cameras received 0% of BBC privacy investigation."
+      response: 80% market share does not equal 100% investigation focus. Snap Specs with 4 cameras received 0% of BBC privacy
+        investigation.
     - strength: STRONG
       factor: Temporal precedent (Meta shipping since 2021, Snap consumer 2026)
-      response: "Investigation lag expected but BBC could have prospectively investigated Snap 4-camera privacy implications."
+      response: Investigation lag expected but BBC could have prospectively investigated Snap 4-camera privacy implications.
     - strength: MODERATE
       factor: BBC editorial focus (engagement-driven coverage selection)
-      response: "Explains WHY entity-selective coverage occurs, does not rebut that it IS entity-selective."
+      response: Explains WHY entity-selective coverage occurs, does not rebut that it IS entity-selective.
     - strength: MODERATE
       factor: Incident-driven coverage (real misuse incidents with Meta glasses)
-      response: "Snap Specs not shipped widely enough to generate incidents. Question is whether BBC would investigate prospective risk."
+      response: Snap Specs not shipped widely enough to generate incidents. Question is whether BBC would investigate prospective
+        risk.
     - strength: WEAK
       factor: Journalist specialization (Hays covers Big Tech broadly)
-      response: "Hays covers multiple Big Tech entities but BBC wearables privacy investigation focuses exclusively on Meta."
+      response: Hays covers multiple Big Tech entities but BBC wearables privacy investigation focuses exclusively on Meta.
     cross_references:
     - mechanism_id: 132
-      relationship: "Different type: Boxall covers multiple entities with different vocabulary; Hays covers one entity exclusively at BBC"
+      relationship: 'Different type: Boxall covers multiple entities with different vocabulary; Hays covers one entity exclusively
+        at BBC'
     - mechanism_id: 159
-      relationship: "OpenAI companion vocabulary bifurcation: camera-equipped device gets 'companion' framing vs Meta 'surveillance' framing"
+      relationship: 'OpenAI companion vocabulary bifurcation: camera-equipped device gets ''companion'' framing vs Meta ''surveillance''
+        framing'
     - mechanism_id: 160
-      relationship: "DW News podcast: second public broadcaster showing Meta-specific targeting, strengthens cultural consensus pattern"
+      relationship: 'DW News podcast: second public broadcaster showing Meta-specific targeting, strengthens cultural consensus
+        pattern'
     - mechanism_id: 164
-      relationship: "Same camera-count paradox: Snap 4 cameras get zero scrutiny at Future plc AND BBC despite zero shared financial incentive"
+      relationship: 'Same camera-count paradox: Snap 4 cameras get zero scrutiny at Future plc AND BBC despite zero shared
+        financial incentive'
     testable_predictions:
-    - "If Snap Specs accumulate misuse incidents post-launch, BBC will not apply equivalent adversarial vocabulary"
-    - "BBC coverage of Google Android XR glasses will not include 'invasion of privacy' framing"
-    - "Kali Hays next wearables privacy article will target Meta, not Snap or Google"
+    - If Snap Specs accumulate misuse incidents post-launch, BBC will not apply equivalent adversarial vocabulary
+    - BBC coverage of Google Android XR glasses will not include 'invasion of privacy' framing
+    - Kali Hays next wearables privacy article will target Meta, not Snap or Google
     source_urls:
     - https://www.bbc.com/news/articles/cj37z8357e5o
     - https://web.archive.org/web/20260513180805/https://www.bbc.com/news/articles/cj37z8357e5o
@@ -20330,7 +20328,8 @@ publications:
     test_count: 81
   conde_nast_google_zero_distribution_dependency_compound_incentive:
     mechanism_id: 167
-    mechanism_name: 'Conde Nast "Google Zero" Distribution Dependency — AI Platform Content Surfacing Creates Compound Revenue + Distribution Incentive'
+    mechanism_name: Conde Nast "Google Zero" Distribution Dependency — AI Platform Content Surfacing Creates Compound Revenue
+      + Distribution Incentive
     finding_type: compound_distribution_incentive
     asymmetry_score: 0.89
     date_added: '2026-08-18'
@@ -20343,80 +20342,48 @@ publications:
     - Amazon
     - Meta
     - Advance Publications
-    finding_summary: >
-      Condé Nast CEO Roger Lynch publicly declared a "Google Zero" strategy (May 2026,
-      TBPN interview on OpenAI-owned media), instructing teams to "assume there's no search...
-      single-digit percentage of our traffic." Adweek (May 2026) confirmed Lynch "no longer
-      expects advertising to be a growth engine" and named "licensing deals with AI players
-      including OpenAI and Perplexity" as a replacement revenue pillar. Lynch's March 2026
-      annual memo confirmed deals with OpenAI, Perplexity, Microsoft, and Amazon — all four
-      are either Meta competitors or have invested in Meta competitors. Meta has $0 in deals
-      with Condé Nast across all channels.
-
-      This creates a THREE-DIMENSIONAL asymmetric incentive unique to WIRED's parent company:
-
-      DIMENSION 1 — REVENUE: AI content licensing deals ($14-45M/yr estimated, per mechanism
-      #58) replace declining search-driven advertising revenue. As Lynch stated: "Our partnership
-      with OpenAI begins to make up for some of that revenue." The April 2026 restructuring
-      (Self magazine shut down, Glamour Germany/Spain/Mexico winding down, Wired Italy closed,
-      16 employees laid off) confirms financial pressure making these deals strategically
-      critical, not supplementary.
-
-      DIMENSION 2 — DISTRIBUTION (NEW): As Google search traffic collapses toward zero,
-      AI platforms become Condé Nast's alternative content discovery channel. The OpenAI deal
-      explicitly provides for WIRED/CN content to surface in ChatGPT and SearchGPT with
-      attribution and direct links. Copilot Daily (Microsoft deal) surfaces CN content.
-      Perplexity surfaces CN content with revenue share. Meta AI does NOT surface WIRED
-      content — no deal exists. SimilarWeb data: zero-click news queries jumped from 56%
-      to approximately 70% after AI Overviews rollout. Digiday: "Google stopped being a
-      gateway to news sites and became the place people consume news directly." This means
-      adverse OpenAI/Microsoft/Perplexity coverage could risk both licensing revenue AND
-      the distribution channel that is replacing Google Search. Adverse Meta coverage has
-      zero distribution cost because Meta AI never surfaces WIRED content anyway.
-
-      DIMENSION 3 — EQUITY (mechanism #162): Advance Publications (Condé Nast's parent)
-      holds approximately $9.5B in Reddit equity with a $1.2B credit facility backed by
-      Reddit shares. Reddit's Q2 2026 ad revenue grew 64% YoY to $762M, directly competing
-      with Meta's advertising business. Adverse Meta coverage may shift incremental ad
-      dollars from Meta to Reddit, appreciating Advance's equity position.
-
-      COMPOUND ASYMMETRY MATRIX:
-      - Adverse META coverage: $0 revenue cost (no deal) + $0 distribution cost (no surfacing)
-        + potential equity benefit (Reddit ad share) = FREE in all 3 dimensions
-      - Adverse OPENAI coverage: risks $10-30M/yr revenue + risks SearchGPT distribution
-        reach + conflicts with CEO's "Google Zero" platform migration strategy = COSTS in
-        all 3 dimensions
-
-      VENUE CONFLICT AMPLIFICATION: Lynch announced the "Google Zero" strategy on TBPN,
-      a media property acquired by OpenAI (Apr 2, 2026) for low hundreds of millions.
-      Nilay Patel (The Verge/Vox Media, whose parent PMC has its own OpenAI deal) amplified
-      Lynch's narrative on the Decoder podcast, calling it "Google Zero." The CEO of WIRED's
-      parent company is conducting strategic communications on his largest AI deal partner's
-      owned media property, while a journalist whose publisher also has an OpenAI deal
-      popularizes the framing. This is not conspiracy — it is structural alignment of
-      financial interests creating a narrative feedback loop.
-
-      CONDÉ NAST FINANCIAL CONTEXT:
-      - Total revenue: approximately $2B (RocketReach estimate, 2026)
-      - Events revenue: +40% in 2025, projecting +22% in 2026
-      - Digital subscriptions: +29% in 2025
-      - Commerce: +13% in 2025
-      - Branded content: +9% in 2025
-      - Seven largest brands drive 85% of revenue (FT, Feb 2026)
-      - 70 AI pilots running internally (March 2026 memo)
-      - April 2026: Self shut down, Glamour intl winding down, Wired Italy closed
-      - Lynch: these closures represent "a little over 1% of overall revenue" but
-        "remain unprofitable, and continuing to operate them in their current form
-        limits our ability to invest in the ideas and areas that will drive future growth"
-
-      META CONTRAST: Meta has 13 AI content partners (including Reuters, AP) but NONE
-      of the 7 MediaScope-profiled publications that produce adversarial wearables coverage.
-      Meta does not operate a content surfacing platform comparable to SearchGPT — Meta AI
-      answers questions using its own models without licensing publisher content for display
-      with attribution. This means Meta's AI product creates zero distribution incentive
-      for publishers. The entity with ZERO publisher distribution benefit receives the MOST
-      adversarial coverage, while the entities providing BOTH revenue AND distribution
-      receive materially softer treatment.
+    finding_summary: "Condé Nast CEO Roger Lynch publicly declared a \"Google Zero\" strategy (May 2026, TBPN interview on\
+      \ OpenAI-owned media), instructing teams to \"assume there's no search... single-digit percentage of our traffic.\"\
+      \ Adweek (May 2026) confirmed Lynch \"no longer expects advertising to be a growth engine\" and named \"licensing deals\
+      \ with AI players including OpenAI and Perplexity\" as a replacement revenue pillar. Lynch's March 2026 annual memo\
+      \ confirmed deals with OpenAI, Perplexity, Microsoft, and Amazon — all four are either Meta competitors or have invested\
+      \ in Meta competitors. Meta has $0 in deals with Condé Nast across all channels.\nThis creates a THREE-DIMENSIONAL asymmetric\
+      \ incentive unique to WIRED's parent company:\nDIMENSION 1 — REVENUE: AI content licensing deals ($14-45M/yr estimated,\
+      \ per mechanism #58) replace declining search-driven advertising revenue. As Lynch stated: \"Our partnership with OpenAI\
+      \ begins to make up for some of that revenue.\" The April 2026 restructuring (Self magazine shut down, Glamour Germany/Spain/Mexico\
+      \ winding down, Wired Italy closed, 16 employees laid off) confirms financial pressure making these deals strategically\
+      \ critical, not supplementary.\nDIMENSION 2 — DISTRIBUTION (NEW): As Google search traffic collapses toward zero, AI\
+      \ platforms become Condé Nast's alternative content discovery channel. The OpenAI deal explicitly provides for WIRED/CN\
+      \ content to surface in ChatGPT and SearchGPT with attribution and direct links. Copilot Daily (Microsoft deal) surfaces\
+      \ CN content. Perplexity surfaces CN content with revenue share. Meta AI does NOT surface WIRED content — no deal exists.\
+      \ SimilarWeb data: zero-click news queries jumped from 56% to approximately 70% after AI Overviews rollout. Digiday:\
+      \ \"Google stopped being a gateway to news sites and became the place people consume news directly.\" This means adverse\
+      \ OpenAI/Microsoft/Perplexity coverage could risk both licensing revenue AND the distribution channel that is replacing\
+      \ Google Search. Adverse Meta coverage has zero distribution cost because Meta AI never surfaces WIRED content anyway.\n\
+      DIMENSION 3 — EQUITY (mechanism #162): Advance Publications (Condé Nast's parent) holds approximately $9.5B in Reddit\
+      \ equity with a $1.2B credit facility backed by Reddit shares. Reddit's Q2 2026 ad revenue grew 64% YoY to $762M, directly\
+      \ competing with Meta's advertising business. Adverse Meta coverage may shift incremental ad dollars from Meta to Reddit,\
+      \ appreciating Advance's equity position.\nCOMPOUND ASYMMETRY MATRIX: - Adverse META coverage: $0 revenue cost (no deal)\
+      \ + $0 distribution cost (no surfacing)\n  + potential equity benefit (Reddit ad share) = FREE in all 3 dimensions\n\
+      - Adverse OPENAI coverage: risks $10-30M/yr revenue + risks SearchGPT distribution\n  reach + conflicts with CEO's \"\
+      Google Zero\" platform migration strategy = COSTS in\n  all 3 dimensions\n\nVENUE CONFLICT AMPLIFICATION: Lynch announced\
+      \ the \"Google Zero\" strategy on TBPN, a media property acquired by OpenAI (Apr 2, 2026) for low hundreds of millions.\
+      \ Nilay Patel (The Verge/Vox Media, whose parent PMC has its own OpenAI deal) amplified Lynch's narrative on the Decoder\
+      \ podcast, calling it \"Google Zero.\" The CEO of WIRED's parent company is conducting strategic communications on his\
+      \ largest AI deal partner's owned media property, while a journalist whose publisher also has an OpenAI deal popularizes\
+      \ the framing. This is not conspiracy — it is structural alignment of financial interests creating a narrative feedback\
+      \ loop.\nCONDÉ NAST FINANCIAL CONTEXT: - Total revenue: approximately $2B (RocketReach estimate, 2026) - Events revenue:\
+      \ +40% in 2025, projecting +22% in 2026 - Digital subscriptions: +29% in 2025 - Commerce: +13% in 2025 - Branded content:\
+      \ +9% in 2025 - Seven largest brands drive 85% of revenue (FT, Feb 2026) - 70 AI pilots running internally (March 2026\
+      \ memo) - April 2026: Self shut down, Glamour intl winding down, Wired Italy closed - Lynch: these closures represent\
+      \ \"a little over 1% of overall revenue\" but\n  \"remain unprofitable, and continuing to operate them in their current\
+      \ form\n  limits our ability to invest in the ideas and areas that will drive future growth\"\n\nMETA CONTRAST: Meta\
+      \ has 13 AI content partners (including Reuters, AP) but NONE of the 7 MediaScope-profiled publications that produce\
+      \ adversarial wearables coverage. Meta does not operate a content surfacing platform comparable to SearchGPT — Meta\
+      \ AI answers questions using its own models without licensing publisher content for display with attribution. This means\
+      \ Meta's AI product creates zero distribution incentive for publishers. The entity with ZERO publisher distribution\
+      \ benefit receives the MOST adversarial coverage, while the entities providing BOTH revenue AND distribution receive\
+      \ materially softer treatment.\n"
     source_urls:
     - https://www.editorandpublisher.com/stories/approaching-google-zero-as-search-referrals-plunge-news-publishers-must-anticipate-theyll,262684
     - https://www.adweek.com/media/conde-nast-events-revenue-2026/
@@ -20429,132 +20396,345 @@ publications:
     - https://www.nprillinois.org/2025-07-31/online-news-publishers-face-extinction-level-event-from-googles-ai-powered-search
     confounding_factors:
     - strength: STRONG
-      factor: >
-        Google Zero strategy may be genuine business planning — Lynch's directive
-        to assume zero search traffic could be prudent risk management independent
-        of any editorial consideration. The strategy preceded AI deal signing.
+      factor: 'Google Zero strategy may be genuine business planning — Lynch''s directive to assume zero search traffic could
+        be prudent risk management independent of any editorial consideration. The strategy preceded AI deal signing.
+
+        '
     - strength: STRONG
-      factor: >
-        Condé Nast has editorial independence protections — no evidence that AI
-        licensing deals have influenced specific editorial decisions at WIRED.
-        Institutional separation between commercial and editorial functions is
-        standard at major publishers.
+      factor: 'Condé Nast has editorial independence protections — no evidence that AI licensing deals have influenced specific
+        editorial decisions at WIRED. Institutional separation between commercial and editorial functions is standard at major
+        publishers.
+
+        '
     - strength: MODERATE
-      factor: >
-        Distribution impact is theoretical — no evidence that AI platforms
-        deprioritize content from publishers that produce adversarial coverage
-        of their parent companies. OpenAI has stated editorial independence
-        is preserved in partner content surfacing.
+      factor: 'Distribution impact is theoretical — no evidence that AI platforms deprioritize content from publishers that
+        produce adversarial coverage of their parent companies. OpenAI has stated editorial independence is preserved in partner
+        content surfacing.
+
+        '
     - strength: MODERATE
-      factor: >
-        Other revenue streams (events +40%, subscriptions +29%, commerce +13%)
-        reduce dependency on AI licensing as a percentage of total revenue.
-        Condé Nast is diversifying, not concentrating in AI deals.
+      factor: 'Other revenue streams (events +40%, subscriptions +29%, commerce +13%) reduce dependency on AI licensing as
+        a percentage of total revenue. Condé Nast is diversifying, not concentrating in AI deals.
+
+        '
     - strength: WEAK
-      factor: >
-        Meta could sign a deal with Condé Nast — the absence of a financial
-        relationship is partly Meta's strategic choice to invest in open-source
-        AI (Llama) rather than content licensing. The asymmetry partially
-        reflects Meta's own business model decisions.
+      factor: 'Meta could sign a deal with Condé Nast — the absence of a financial relationship is partly Meta''s strategic
+        choice to invest in open-source AI (Llama) rather than content licensing. The asymmetry partially reflects Meta''s
+        own business model decisions.
+
+        '
     cross_references:
     - mechanism_id: 58
       relationship: 'Mechanism #58 quantified CN AI deal revenue at $14-45M/yr; #167 adds the distribution dimension'
     - mechanism_id: 162
       relationship: 'Mechanism #162 mapped Advance Reddit equity extraction; #167 integrates it as the third incentive dimension'
     - mechanism_id: 161
-      relationship: 'Mechanism #161 mapped Advance Reddit ad competition; #167 shows how adverse Meta coverage compounds across revenue, distribution, and equity'
+      relationship: 'Mechanism #161 mapped Advance Reddit ad competition; #167 shows how adverse Meta coverage compounds across
+        revenue, distribution, and equity'
     - mechanism_id: 35
-      relationship: 'Mechanism #35 identified original WIRED financial conflict; #167 shows how Google Zero accelerates the dependency'
+      relationship: 'Mechanism #35 identified original WIRED financial conflict; #167 shows how Google Zero accelerates the
+        dependency'
     testable_predictions:
-    - 'If Meta signs a content licensing deal with Condé Nast, WIRED coverage tone
-      toward Meta should measurably soften (testing the revenue dimension)'
-    - 'If Google search traffic to Condé Nast recovers (Google Zero thesis fails),
-      the distribution incentive weakens — AI platform dependency becomes supplementary
-      rather than replacement'
-    - 'If Advance sells its Reddit equity position, the equity dimension disappears —
-      isolating revenue and distribution as the remaining incentive drivers'
-    - 'If OpenAI deprioritizes Condé Nast content in SearchGPT results after adverse
-      coverage, it would confirm the distribution incentive is operational, not theoretical'
+    - If Meta signs a content licensing deal with Condé Nast, WIRED coverage tone toward Meta should measurably soften (testing
+      the revenue dimension)
+    - If Google search traffic to Condé Nast recovers (Google Zero thesis fails), the distribution incentive weakens — AI
+      platform dependency becomes supplementary rather than replacement
+    - If Advance sells its Reddit equity position, the equity dimension disappears — isolating revenue and distribution as
+      the remaining incentive drivers
+    - If OpenAI deprioritizes Condé Nast content in SearchGPT results after adverse coverage, it would confirm the distribution
+      incentive is operational, not theoretical
     test_file: tests/test_conde_nast_google_zero_distribution_dependency_compound_incentive_aug18.py
     test_count: 55
   twit_1058_victoria_song_cross_medium_privacy_vocabulary_portability:
     mechanism_id: 168
     asymmetry_score: 0.78
-    finding_summary: >
-      TWiT 1058 'Furry Little Potatoes' (Nov 16, 2025) provides full-transcript
-      evidence that Victoria Song's documented privacy vocabulary bifurcation
-      (mechanism #112) extends identically from The Verge print coverage to
-      appearances on TWiT, the premier general tech podcast. In 5,717 transcript
-      lines, Song and Christina Warren (Google DeepMind → GitHub career migration)
-      apply 12+ privacy-alarm terms exclusively to Meta glasses: 'insidious'
-      (Warren), 'freaky deaky... super spy stuff... James Bond level' (Song on
-      neural band silent recording), white LED 'just not gonna see it' in daylight
-      (Song), Bay Area university harassment case (Song). Warren simultaneously
-      calls Meta glasses 'insidious' AND says 'that's kind of why I like them' —
-      acknowledging the dual register of alarm vocabulary applied to a product she
-      personally enjoys. ZERO mentions of Samsung (0 occurrences in entire transcript),
-      Snap Spectacles (mentioned only as 2018 historical comparison despite shipping
-      with 4 cameras at $2,195), Google Android XR, or Apple N50 in any privacy
-      context. This is the THIRD podcast confirming Victoria Song's cross-medium
-      privacy vocabulary portability (after Kill Switch Sep 2025 and Vergecast),
-      establishing a pattern that exceeds individual-episode bias: the same journalist
-      consistently applies privacy scrutiny exclusively to Meta across print,
-      specialist podcasts, and the premier general tech podcast. Leo Laporte (host)
-      contributes Google Glass historical framing but does not apply equivalent
-      scrutiny to current competitors.
+    finding_summary: 'TWiT 1058 ''Furry Little Potatoes'' (Nov 16, 2025) provides full-transcript evidence that Victoria Song''s
+      documented privacy vocabulary bifurcation (mechanism #112) extends identically from The Verge print coverage to appearances
+      on TWiT, the premier general tech podcast. In 5,717 transcript lines, Song and Christina Warren (Google DeepMind → GitHub
+      career migration) apply 12+ privacy-alarm terms exclusively to Meta glasses: ''insidious'' (Warren), ''freaky deaky...
+      super spy stuff... James Bond level'' (Song on neural band silent recording), white LED ''just not gonna see it'' in
+      daylight (Song), Bay Area university harassment case (Song). Warren simultaneously calls Meta glasses ''insidious''
+      AND says ''that''s kind of why I like them'' — acknowledging the dual register of alarm vocabulary applied to a product
+      she personally enjoys. ZERO mentions of Samsung (0 occurrences in entire transcript), Snap Spectacles (mentioned only
+      as 2018 historical comparison despite shipping with 4 cameras at $2,195), Google Android XR, or Apple N50 in any privacy
+      context. This is the THIRD podcast confirming Victoria Song''s cross-medium privacy vocabulary portability (after Kill
+      Switch Sep 2025 and Vergecast), establishing a pattern that exceeds individual-episode bias: the same journalist consistently
+      applies privacy scrutiny exclusively to Meta across print, specialist podcasts, and the premier general tech podcast.
+      Leo Laporte (host) contributes Google Glass historical framing but does not apply equivalent scrutiny to current competitors.
+
+      '
     source_urls:
     - https://twit.tv/posts/transcripts/week-tech-episode-1058-transcript
     - https://twit.tv/shows/this-week-in-tech/episodes/1058
     - https://twit.tv/posts/tech/are-meta-ray-ban-display-glasses-ready-everyday-use
     confounding_factors:
     - strength: STRONG
-      factor: >
-        At recording date (Nov 16, 2025), Samsung Galaxy Glasses had not yet
-        been announced (Jul 22, 2026). Google Android XR glasses also unannounced.
-        The only shipping competitor was Snap Spectacles ($2,195, 4 cameras),
-        which still received zero privacy scrutiny despite having 4x more cameras.
+      factor: 'At recording date (Nov 16, 2025), Samsung Galaxy Glasses had not yet been announced (Jul 22, 2026). Google
+        Android XR glasses also unannounced. The only shipping competitor was Snap Spectacles ($2,195, 4 cameras), which still
+        received zero privacy scrutiny despite having 4x more cameras.
+
+        '
     - strength: STRONG
-      factor: >
-        Victoria Song is a wearables beat reporter whose job involves testing
-        Meta glasses extensively. Familiarity breeds detailed critique — she has
-        spent more hours with Meta glasses than with any competitor's product,
-        which naturally produces more granular privacy observations.
+      factor: 'Victoria Song is a wearables beat reporter whose job involves testing Meta glasses extensively. Familiarity
+        breeds detailed critique — she has spent more hours with Meta glasses than with any competitor''s product, which naturally
+        produces more granular privacy observations.
+
+        '
     - strength: MODERATE
-      factor: >
-        TWiT is a general tech podcast where hosts follow guest expertise. Leo
-        Laporte deferred to Song's experience, which naturally centered on Meta
-        glasses. The absence of competitor discussion may reflect conversational
-        flow rather than deliberate exclusion.
+      factor: 'TWiT is a general tech podcast where hosts follow guest expertise. Leo Laporte deferred to Song''s experience,
+        which naturally centered on Meta glasses. The absence of competitor discussion may reflect conversational flow rather
+        than deliberate exclusion.
+
+        '
     - strength: MODERATE
-      factor: >
-        Christina Warren's 'insidious' + 'I like them' duality may reflect
-        genuine consumer ambivalence rather than editorial bias — many tech
-        enthusiasts acknowledge privacy concerns about products they personally
-        enjoy using.
+      factor: 'Christina Warren''s ''insidious'' + ''I like them'' duality may reflect genuine consumer ambivalence rather
+        than editorial bias — many tech enthusiasts acknowledge privacy concerns about products they personally enjoy using.
+
+        '
     - strength: WEAK
-      factor: >
-        Snap Spectacles at $2,195 target developers, not consumers. Their
-        limited distribution reduces their salience as a privacy comparison,
-        though the hardware capabilities (4 cameras, 6 mics) are identical
-        or greater than Meta's.
+      factor: 'Snap Spectacles at $2,195 target developers, not consumers. Their limited distribution reduces their salience
+        as a privacy comparison, though the hardware capabilities (4 cameras, 6 mics) are identical or greater than Meta''s.
+
+        '
     cross_references:
     - mechanism_id: 112
-      relationship: 'Mechanism #112 documented Victoria Song print privacy vocabulary bifurcation; #168 confirms identical pattern on TWiT podcast'
+      relationship: 'Mechanism #112 documented Victoria Song print privacy vocabulary bifurcation; #168 confirms identical
+        pattern on TWiT podcast'
     - mechanism_id: 148
-      relationship: 'Mechanism #148 identified Vox Media Podcast Network cross-medium portability; #168 shows portability extends beyond Vox to independent podcasts (TWiT)'
+      relationship: 'Mechanism #148 identified Vox Media Podcast Network cross-medium portability; #168 shows portability
+        extends beyond Vox to independent podcasts (TWiT)'
     - mechanism_id: 144
-      relationship: 'Mechanism #144 identified podcast ecosystem amplification; #168 adds TWiT (premier general tech podcast) as amplification channel'
+      relationship: 'Mechanism #144 identified podcast ecosystem amplification; #168 adds TWiT (premier general tech podcast)
+        as amplification channel'
     - mechanism_id: 153
-      relationship: 'Mechanism #153 documented same-episode framing asymmetry; TWiT 1058 shows same pattern with extended privacy discussion exclusively about Meta'
+      relationship: 'Mechanism #153 documented same-episode framing asymmetry; TWiT 1058 shows same pattern with extended
+        privacy discussion exclusively about Meta'
     testable_predictions:
-    - 'If Victoria Song appears on a fourth podcast, she will apply privacy
-      vocabulary exclusively to Meta glasses — not to Samsung, Google, Apple,
-      or Snap — regardless of the podcast host or network affiliation'
-    - 'If Christina Warren reviews or discusses Samsung Galaxy Glasses on a
-      future TWiT or podcast appearance, she will NOT use the word "insidious"
-      despite identical Snapdragon AR1 Gen 1 chip and camera architecture'
-    - 'When Apple N50 glasses launch, Victoria Song podcast appearances will
-      frame Apple through an innovation lens rather than the privacy-alarm
-      vocabulary she applies to Meta — matching her print pattern'
+    - If Victoria Song appears on a fourth podcast, she will apply privacy vocabulary exclusively to Meta glasses — not to
+      Samsung, Google, Apple, or Snap — regardless of the podcast host or network affiliation
+    - If Christina Warren reviews or discusses Samsung Galaxy Glasses on a future TWiT or podcast appearance, she will NOT
+      use the word "insidious" despite identical Snapdragon AR1 Gen 1 chip and camera architecture
+    - When Apple N50 glasses launch, Victoria Song podcast appearances will frame Apple through an innovation lens rather
+      than the privacy-alarm vocabulary she applies to Meta — matching her print pattern
     test_file: tests/test_twit_1058_victoria_song_cross_medium_privacy_vocabulary_portability_aug18.py
     test_count: 48
+  guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity:
+    mechanism_id: 169
+    mechanism_name: Guardian Samsung Galaxy Glasses London Geographic Proximity & Privacy Parity Natural Experiment
+    finding_type: coverage_selection_geographic_proximity_privacy_parity
+    date_added: '2026-08-18'
+    discovery_date: '2026-08-18'
+    asymmetry_score: 0.72
+    finding_summary: 'Samsung Galaxy Glasses were announced on July 22, 2026 at Galaxy Unpacked in London, England — The Guardian''s
+      home city. The Guardian published ZERO articles about Samsung Galaxy Glasses despite 27 days elapsed, despite the event
+      being held in London, and despite Samsung Galaxy Glasses having IDENTICAL privacy-relevant hardware to Meta Ray-Ban
+      (same Snapdragon AR1 Gen 1 chip, same 12MP camera, same LED privacy indicator, same tamper-detection auto-disable).
+      Cross-publication vocabulary inversion documented: GSMArena and SamMobile frame Samsung''s privacy LED as ''takes privacy
+      seriously,'' while Meta''s identical feature receives ''surveillance,'' ''creepy,'' ''pervert glasses'' framing at other
+      outlets. Guardian''s silence prevents any vocabulary comparison for their own coverage. Extends mechanism #83 (Guardian
+      Samsung financial triangle) with two novel variables: (1) London geographic proximity — a London-based publication ignoring
+      a major London tech launch, and (2) cross-publication privacy vocabulary inversion on identical hardware features. Guardian
+      receives Google News AI pilot revenue; Samsung is Google''s primary Android XR hardware partner.'
+    samsung_galaxy_glasses_hardware:
+      camera_megapixels: 12
+      camera_sensor: Sony IMX681
+      chip: Qualcomm Snapdragon AR1 Gen 1
+      ai_assistant: Google Gemini
+      privacy_led: true
+      tamper_detection_auto_disable: true
+      phone_tethered: true
+      weight_grams: 50
+      price_min_usd: 379
+      price_max_usd: 499
+      launch_date: '2026-07-22'
+      launch_event: Samsung Galaxy Unpacked
+      launch_event_location: London, England
+      retail_availability: Fall 2026
+      design_partners:
+      - Warby Parker
+      - Gentle Monster
+    meta_rayban_hardware:
+      camera_megapixels: 12
+      chip: Qualcomm Snapdragon AR1 Gen 1
+      ai_assistant: Meta AI
+      privacy_led: true
+      tamper_detection_auto_disable: true
+      phone_tethered: true
+      price_min_usd: 299
+      price_max_usd: 799
+      market_share_percent: 69-82%
+      design_partner: EssilorLuxottica (Ray-Ban)
+    geographic_proximity:
+      guardian_headquarters: London, England (Kings Place, 90 York Way)
+      samsung_unpacked_location: London, England
+      same_city: true
+      days_since_event_at_discovery: 27
+      note: Samsung chose London specifically for Galaxy Unpacked July 2026 — the first London Unpacked since Galaxy S3 in
+        2012 (14 years). A London-based quality broadsheet ignoring a major London tech launch with privacy-relevant hardware
+        is testable independent of financial relationships.
+    cross_publication_vocabulary_inversion:
+      identical_feature_different_framing: true
+      feature_compared: LED privacy indicator with tamper-detection auto-disable
+      samsung_privacy_framings:
+      - outlet: GSMArena
+        headline: Samsung's smart glasses have this important privacy feature
+        tone: positive
+        date: '2026-07-28'
+        url: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+      - outlet: SamMobile
+        headline: Samsung's smart glasses take privacy pretty seriously
+        tone: aspirational
+        date: '2026-07-28'
+        url: https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+      - outlet: MakeUseOf
+        headline: Samsung's leaked smart glasses could finally beat Ray-Bans if they nail these 4 things
+        section: Enhanced Privacy Features
+        tone: positive — Samsung privacy as competitive advantage
+        date: 2026-04
+        url: https://www.makeuseof.com/samsungs-leaked-smart-glasses-could-finally-beat-ray-bans-if-they-nail-these-4-things/
+      meta_privacy_framings:
+      - outlet: BBC
+        vocabulary:
+        - invasion of privacy
+        - predatory behavior
+        - pervert glasses
+        - creepy
+        source: Kali Hays, BBC Technology Reporter
+      - outlet: Gizmodo
+        vocabulary:
+        - surveillance machine
+        - uncomfortable reality
+        - yuck
+      - outlet: PetaPixel
+        vocabulary:
+        - pervert glasses
+        - privacy nightmare
+        - predatory behavior
+        date: '2026-07-14'
+        url: https://petapixel.com/2026/07/14/meta-smart-glasses-owners-too-scared-to-wear-them-in-public/
+      - outlet: The Register
+        vocabulary:
+        - privacy probe
+        - extremely private moments
+        - intimate footage
+        url: https://www.theregister.com/security/2026/03/05/meta-smart-glasses-face-uk-privacy-probe/5165427
+    brittin_revolving_door:
+      name: Matthew Brittin
+      google_years: 18
+      google_role: President, Google EMEA (2014-2025)
+      gmg_role: Senior Independent Director
+      gmg_departure_date: '2026-03-24'
+      destination: BBC Director-General (started May 18, 2026)
+      note: Brittin departed GMG board March 24, 2026 — four months before Samsung Galaxy Glasses London launch. Direct governance
+        influence ended, but editorial culture and strategic relationships established during his tenure persist. His path
+        from Google EMEA to GMG SID to BBC DG represents the most direct tech-to-publisher-to-broadcaster revolving door in
+        UK media.
+    guardian_search_verification:
+      date: '2026-08-18'
+      days_post_unpacked: 27
+      searches_performed:
+      - query: site:theguardian.com Samsung Galaxy Glasses
+        results: 0
+      - query: site:theguardian.com Samsung smart glasses Android XR
+        results: 0
+      - query: theguardian.com Samsung Galaxy Glasses Unpacked London 2026
+        guardian_results: 0
+    coverage_at_other_outlets:
+    - outlet: eWeek
+      url: https://www.eweek.com/news/samsung-google-first-android-xr-smart-glasses/
+    - outlet: Android Authority
+      url: https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+    - outlet: ZDNET
+      url: https://www.zdnet.com/article/samsung-galaxy-glasses-powered-by-android-xr-are-reportedly-on-track-to-be-unveiled-this-month/
+    - outlet: wareable
+      url: https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+    - outlet: gagadget
+      url: https://gagadget.com/en/710069-samsung-galaxy-glasses-are-coming-in-july-heres-what-we-know/
+    - outlet: The Gadgeteer
+      url: https://the-gadgeteer.com/2026/04/29/samsung-galaxy-glasses/
+    - outlet: TechTimes
+      url: https://Www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm
+    - outlet: gHacks
+      url: https://www.ghacks.net/2026/07/20/samsung-sets-galaxy-unpacked-for-july-22-in-london-with-z-fold-8-ultra-z-fold-8-z-flip-8-and-galaxy-glasses-expected/
+    - outlet: GSMArena
+      url: https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+    - outlet: SamMobile
+      url: https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+    - outlet: MakeUseOf
+      url: https://www.makeuseof.com/samsungs-leaked-smart-glasses-could-finally-beat-ray-bans-if-they-nail-these-4-things/
+    confounding_factors:
+    - factor: The Guardian may not cover product launches or reviews generally. Its editorial model focuses on investigations,
+        analysis, and features rather than gadget reviews. A publication that does not cover product launches cannot be expected
+        to cover Samsung's product launch.
+      strength: STRONG
+      counter: The Guardian covers Samsung Galaxy Unpacked for other products (foldables, watches) and covered Apple product
+        events. The absence is specific to Samsung smart glasses, not to Samsung events or tech hardware generally.
+    - factor: Samsung Galaxy Glasses are not yet shipping (fall 2026 launch). The Guardian may cover them at retail availability
+        when privacy concerns become practical rather than theoretical.
+      strength: STRONG
+      counter: The Guardian covered Meta glasses privacy concerns pre-shipping (NameTag facial recognition code that was never
+        activated) and covered Apple N50 glasses (late 2027 launch) in the context of privacy framing. Pre-shipping coverage
+        is the norm for privacy-relevant hardware from Meta.
+    - factor: Meta has 69-82% of the smart glasses market. Larger targets naturally attract more coverage and scrutiny. Samsung
+        has zero market share (not yet shipping).
+      strength: MODERATE
+      counter: Market share explains coverage VOLUME but not coverage EXISTENCE. The finding is zero articles, not fewer articles.
+        A London tech launch with privacy-relevant hardware warrants at least one article regardless of market share.
+    - factor: Meta privacy concerns have been amplified by BBC investigation, ICO probe, Swedish media investigation, US Senate
+        letters, 60+ civil society organizations. Samsung has no comparable scandal because glasses are not yet shipping.
+      strength: MODERATE
+      counter: Samsung's privacy-relevant hardware (camera, AI processing) is identical. Pre-emptive privacy analysis of Samsung's
+        approach (which other outlets provided) is journalistically appropriate. The absence of Samsung-specific scandal does
+        not explain absence of analysis.
+    - factor: The Guardian's Google financial relationship is pragmatic — they take Google money but have covered Google critically
+        (e.g., Stargate UK FOI investigation targeting OpenAI, which has Google-funded Anthropic as competitor).
+      strength: WEAK
+      counter: Editorial independence from Google on antitrust/AI does not prove independence on wearables coverage selection.
+        The omission may not be an editorial decision but a beat assignment gap — no Guardian journalist has a Samsung smart
+        glasses beat because the institutional privacy investigation infrastructure is anchored to Meta through Cambridge
+        Analytica institutional memory.
+    - factor: Matthew Brittin left GMG board March 24, 2026, four months before Samsung Unpacked. Direct governance influence
+        over editorial coverage selection ended.
+      strength: WEAK
+      counter: Institutional relationships and editorial culture persist beyond individual board tenure. Brittin's 18-year
+        Google career, followed by appointment as GMG's most senior governance role, shaped strategic priorities that outlast
+        his departure.
+    cross_references:
+    - mechanism_id: 83
+      relationship: 'Mechanism #83 documents the Guardian-Samsung coverage silence through the Google financial triangle (Guardian
+        as Google News AI pilot partner, Samsung as Google Android XR hardware partner). #169 extends with two novel variables:
+        (1) London geographic proximity as independent testable variable, (2) cross-publication privacy vocabulary inversion
+        showing identical features framed positively for Samsung and adversarially for Meta.'
+    - mechanism_id: 163
+      relationship: 'Mechanism #163 documents WIRED Snap SPECS coverage selection silence — same mechanism class (publication
+        with competitor financial ties ignoring competitor product). Guardian-Samsung and WIRED-Snap are parallel instances
+        of the same structural dynamic.'
+    - mechanism_id: 166
+      relationship: 'Mechanism #166 documents Kali Hays BBC cross-entity coverage selection. BBC is also a London-based institution
+        showing selective coverage of Meta vs competitors. The BBC''s new Director-General is Matthew Brittin (ex-Google,
+        ex-GMG SID), creating a direct personnel link between Guardian and BBC coverage selection patterns.'
+    - mechanism_id: 167
+      relationship: 'Mechanism #167 documents Conde Nast Google Zero distribution dependency. Google financial influence on
+        editorial coverage selection is a cross-cutting theme: Conde Nast depends on Google for distribution, Guardian depends
+        on Google for AI pilot revenue, both show Samsung/Google competitor silence.'
+    testable_predictions:
+    - When Samsung Galaxy Glasses begin shipping in fall 2026, the Guardian will either (a) continue to publish zero articles
+      about Samsung glasses privacy concerns, or (b) publish a review/announcement article without the adversarial vocabulary
+      ('surveillance,' 'creepy,' 'nightmare') applied to Meta's identical hardware. If the Guardian applies equivalent adversarial
+      framing to Samsung, this mechanism is weakened.
+    - If a privacy incident occurs involving Samsung Galaxy Glasses (e.g., bystander recording, data processing complaint),
+      the Guardian's response will lag behind their response time for equivalent Meta incidents, and will include less adversarial
+      vocabulary than comparable Meta coverage.
+    - The Guardian will cover any future London-based Meta glasses event (product launch, privacy hearing, ICO action) with
+      adversarial framing, demonstrating that London geographic proximity drives coverage only when the subject is Meta.
+    source_urls:
+    - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+    - https://www.eweek.com/news/samsung-google-first-android-xr-smart-glasses/
+    - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+    - https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+    - https://www.sammobile.com/news/samsungs-smart-glasses-take-privacy-seriously/
+    - https://gagadget.com/en/710069-samsung-galaxy-glasses-are-coming-in-july-heres-what-we-know/
+    - https://the-gadgeteer.com/2026/04/29/samsung-galaxy-glasses/
+    - https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+    test_file: tests/test_guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity_aug18.py
+    test_count: 54
