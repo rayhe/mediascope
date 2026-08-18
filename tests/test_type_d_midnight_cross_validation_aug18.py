@@ -186,12 +186,12 @@ class TestMechanismIDContiguity:
         missing = expected - actual - KNOWN_GAPS
         assert not missing, f"NEW missing mechanism IDs: {sorted(missing)}"
 
-    def test_highest_mechanism_is_156(self, cpf):
+    def test_highest_mechanism_is_160(self, cpf):
         ids = [
             v["mechanism_id"] for v in cpf.values()
             if isinstance(v, dict) and "mechanism_id" in v
         ]
-        assert max(ids) == 156, f"Expected max mechanism_id 156, got {max(ids)}"
+        assert max(ids) == 160, f"Expected max mechanism_id 160, got {max(ids)}"
 
 
 # ── Class 4: YAML Parse Integrity ────────────────────────────────────
