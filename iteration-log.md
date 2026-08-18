@@ -1,3 +1,46 @@
+## Iteration #157 — Mon 2026-08-17 23:00 PT (Type C: Financial Incentive Mapping)
+
+**Focus: Apple Siri AI Triple-Layer Publisher Financial Architecture + Anthropic IPO Samsung Convergence (Mechanism #156)**
+
+**DISCOVERY: Apple is constructing a THREE-LAYER financial relationship with publishers — the strongest coverage incentive architecture in the MediaScope corpus**
+
+WSJ reported (Aug 12, 2026) that Apple is negotiating multiyear content licensing deals with publishers to power Siri AI, with a nine-figure budget ($100M+) and a variable pay-per-use compensation model. This creates a previously undocumented TRIPLE-LAYER financial architecture:
+
+**Layer 1: Apple News+ subscription revenue sharing (since 2019)**
+- 50% revenue share, 400+ titles, $12.99/mo subscription
+- 3+ MediaScope-profiled publications participate (Condé Nast/WIRED, The Atlantic, WSJ)
+- The Atlantic's CGO: "Apple is by far the most valuable syndication partner"
+
+**Layer 2: Apple Siri AI content licensing (NEW, Aug 2026)**
+- Nine-figure budget, pay-per-use variable compensation
+- Multiyear deals, launching with Siri AI (iOS 27, fall 2026)
+- Motivated by Apple's 2024 AI news summary hallucination embarrassment
+
+**Layer 3: App Store commission leverage**
+- 15-30% commission on publisher subscription revenue
+- 15% for News Partner Program participants
+
+**STRATEGIC REVERSAL documented:**
+- Dec 2023: Apple approached Condé Nast, NBC News, IAC with $50M offers → no deals closed
+- Jan 2026: Apple signed $1B/yr Google Gemini deal → bypassed publishers via Google's training
+- Aug 2026: Apple re-approached publishers with nine-figure Siri AI budget → reversal
+
+**Meta contrast:** Meta has 13 AI content partners but NONE of the 7 MediaScope-profiled publications. Meta has zero platform revenue-sharing equivalent to Apple News+. Apple has the MOST financial coverage leverage over profiled publications despite receiving the LEAST adversarial coverage.
+
+**Anthropic IPO Samsung convergence:** Updated Anthropic Series H investor data — Samsung, SK Hynix, and Micron are strategic infrastructure investors at $965B valuation. Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor). Goldman Sachs, JPMorgan, and Morgan Stanley are Anthropic IPO underwriters AND cover Meta as equity analysts. The Samsung-Anthropic financial alignment creates coverage incentive overlap between Anthropic and Samsung wearables.
+
+**Confounders:** 2 STRONG (Apple may not close deals; pay-per-use may produce negligible revenue), 2 MODERATE (budget spread across hundreds of pubs; may not influence unrelated product coverage), 1 WEAK (legitimate product motivation).
+
+**3 cross-references:** #35 (Apple News+ platform leverage), #50 (Apple N50 privacy hero cascade), #152 (Nvidia GPU-capital circularity).
+
+**NEW TEST FILE: test_apple_siri_ai_triple_layer_publisher_financial_architecture_aug17.py (10 classes, 35 tests, all passing)**
+
+**Profile updates:**
+- competitor-entities.yaml: Apple `siri_ai_publisher_deals` section added (deal details, reversal timeline, wearables prediction, mediascope relevance); Anthropic `series_h_strategic_infrastructure_investors` added (Samsung, SK Hynix, Micron + 9 others), `target_raise_b` and `target_valuation_range_t` added
+- competitor-coverage-research.yaml: mechanism #156 added to cross_publication_findings
+
+**Stats:** 441 test files, ~15,670 tests, 156 mechanisms.
+
 ## Iteration #155 — Mon 2026-08-17 11:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Focus: WIRED × Anthropic — Claude Code Auto Mode Coverage Selection Silence (Mechanism #154)**

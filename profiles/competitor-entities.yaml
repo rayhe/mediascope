@@ -479,6 +479,28 @@ entities:
       - Dragoneer
       - Greenoaks
       - Sequoia Capital
+      series_h_strategic_infrastructure_investors:
+      - Samsung
+      - SK Hynix
+      - Micron
+      - Capital Group
+      - Coatue
+      - D1 Capital Partners
+      - Baillie Gifford
+      - Blackstone
+      - Brookfield
+      - D.E. Shaw
+      - DST Global
+      - Fidelity
+      series_h_infrastructure_note: 'Samsung, SK Hynix, and Micron — chip supply chain
+        companies — invested in the Series H. This is significant for MediaScope:
+        Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor)
+        and investing in Anthropic. The Samsung-Anthropic financial alignment means
+        publications covering Samsung glasses favorably also align with Anthropic
+        investor interests. No equivalent financial alignment exists between Meta
+        and any chip supply chain investor.'
+      target_raise_b: 75
+      target_valuation_range_t: '1.75-1.8'
       strategic_investors:
       - Alphabet/Google ($2B+)
       - Amazon ($13B+)
@@ -1773,6 +1795,64 @@ entities:
       - https://goodereader.com/blog/digital-publishing/apple-news-is-expanding-into-more-countries-in-2025
       - https://www.webwire.com/ViewPressRel.asp?aId=349070
       - https://www.cultofmac.com/news/apple-news-program-takes-a-smaller-cut-of-publishers-revenue
+    siri_ai_publisher_deals:
+      report_date: '2026-08-12'
+      source: Wall Street Journal
+      budget_magnitude: nine_figure
+      budget_description: 'Apple has discussed a possible nine-figure budget for the payments'
+      compensation_model: variable_pay_per_use
+      deal_duration: multiyear
+      deal_type: content_licensing
+      overview: 'Apple is actively negotiating multiyear content licensing deals with
+        publishers to power Siri AI (launching fall 2026 with iOS 27). Unlike standard
+        AI licensing (flat guaranteed fees), Apple proposes VARIABLE pay-per-use
+        compensation: publishers get paid when their content is actually used by Siri
+        to answer a user query. Nine-figure budget ($100M+) discussed. This represents
+        a STRATEGIC REVERSAL from Apple''s 2024-2025 content bypass strategy (paying
+        Google $1B/yr for Gemini instead of paying publishers directly).'
+      hallucination_motivator: 'Apple''s late-2024 AI-generated news summary feature produced
+        erroneous headlines (e.g., falsely attributing statements to public figures),
+        causing publisher backlash and user confusion. Apple disabled the feature for
+        over a year. The Siri AI publisher deals aim to prevent a repeat by using
+        verified publisher content rather than AI-generated summaries. This is a
+        REPUTATION-DRIVEN motivation on top of product quality.'
+      reversal_timeline:
+        phase_1_approach:
+          date: '2023-12'
+          detail: 'Apple approached Condé Nast, NBC News, IAC with $50M multi-year
+            offers for AI training rights. No deals closed.'
+        phase_2_bypass:
+          date: '2026-01'
+          detail: 'Apple signed $1B/yr Google Gemini deal, accessing publisher content
+            through Google''s training pipeline without paying publishers directly.'
+        phase_3_return:
+          date: '2026-08'
+          detail: 'Apple re-approached publishers with nine-figure budget for Siri AI
+            content licensing. Pay-per-use model, multiyear terms.'
+      wearables_coverage_prediction: 'If Apple launches smart glasses (rumored 2027-2028),
+        publications with Apple Siri AI content deals + Apple News+ participation +
+        App Store revenue dependencies would have TRIPLE financial incentive to frame
+        Apple glasses favorably. Meta has ZERO equivalent financial layers with any
+        MediaScope-profiled publication. This creates a predictable coverage asymmetry
+        where identical glass-mounted camera technology receives adversarial framing
+        from Meta and aspirational framing from Apple.'
+      mediascope_relevance: 'Apple Siri AI deals create a SIXTH financial lever (extending
+        the five already documented: Gemini deal, publisher content bypass, App Store
+        tax, Apple One dilution, Apple News+ lifeline paradox). The key analytical
+        insight is the TRIPLE-LAYER ARCHITECTURE: publications negotiating Siri AI
+        deals now have three SEPARATE financial reasons to cover Apple favorably —
+        News+ revenue sharing, Siri AI content licensing, and App Store commission
+        dependency. No other entity (including Meta, OpenAI, Google, or Amazon) has
+        three simultaneous publisher financial relationship types with the same
+        publications. This makes Apple the entity with the MOST financial coverage
+        leverage over MediaScope-profiled publications, despite having the LEAST
+        adversarial coverage directed at it.'
+      mechanism_id: 156
+      source_urls:
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+      - https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/
+      - https://appleinsider.com/articles/26/08/13/siri-ai-could-get-a-boost-from-news-content-with-new-publisher-deal
     q3_fy26_earnings:
       report_date: '2026-07-30'
       quarter_ended: '2026-06-27'

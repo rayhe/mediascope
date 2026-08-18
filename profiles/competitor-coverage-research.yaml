@@ -15323,6 +15323,114 @@ cross_publication_findings:
         relationship: cultural_consensus
         note: BBC podcast same-episode asymmetry confirms cultural consensus beyond financial incentives
     test_file: tests/test_bobrowsky_cross_publication_brand_stigma_smart_glasses_vocabulary_aug17.py
+  apple_siri_ai_triple_layer_publisher_financial_architecture:
+    mechanism_id: 156
+    mechanism_name: Apple Siri AI Triple-Layer Publisher Financial Architecture
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    finding_type: financial_incentive_triple_layer
+    domain: publisher_financial_architecture
+    rotation_type: C
+    finding_summary: >
+      Apple is constructing a THREE-LAYER financial relationship with publishers
+      that creates the strongest financial coverage incentive of any entity in the
+      MediaScope corpus. Layer 1: Apple News+ subscription revenue sharing (since
+      2019, 50% split, 400+ titles). Layer 2: Apple Siri AI content licensing (NEW,
+      Aug 12 2026, WSJ report, nine-figure budget, pay-per-use, multiyear). Layer 3:
+      App Store commission power (15-30% on publisher subscription revenue). This
+      represents a STRATEGIC REVERSAL: Apple approached publishers in Dec 2023 ($50M
+      offers, no deals closed), bypassed publishers via $1B/yr Google Gemini deal
+      (Jan 2026), then returned to publishers (Aug 2026) after AI news summary
+      hallucination embarrassment. Meta has ZERO equivalent financial layers with
+      any of the 7 MediaScope-profiled publications. The Samsung-Anthropic Series H
+      investment (Samsung, SK Hynix, Micron as strategic investors at $965B) adds a
+      fourth entity financial chain for the Galaxy Glasses competitor.
+    apple_siri_ai_deal_details:
+      report_date: '2026-08-12'
+      source: Wall Street Journal
+      budget: nine-figure ($100M+)
+      compensation_model: variable pay-per-use
+      deal_duration: multiyear
+      motivation: Siri AI launch fall 2026 (iOS 27), hallucination prevention
+    triple_layer_architecture:
+      layer_1:
+        name: Apple News+ revenue sharing
+        since: 2019
+        type: subscription_revenue_share
+        apple_take_pct: 50
+        publisher_count: 400+
+        profiled_pubs_participating: 3+ (Condé Nast/WIRED, The Atlantic, WSJ)
+      layer_2:
+        name: Apple Siri AI content licensing
+        since: 2026-08
+        type: content_licensing
+        budget: nine-figure
+        model: pay-per-use
+      layer_3:
+        name: App Store commission leverage
+        type: commission_power
+        rate_y1_pct: 30
+        rate_y2_pct: 15
+        news_partner_pct: 15
+    meta_contrast: >
+      Meta has 13 AI content partners, but NONE of the 7 MediaScope-profiled
+      publications. Meta has no platform revenue-sharing equivalent to Apple
+      News+. Meta has no app commission leverage over publisher subscriptions.
+      Apple has the MOST financial coverage leverage over profiled publications
+      despite receiving the LEAST adversarial coverage. This is the strongest
+      evidence that financial relationships predict coverage tone.
+    anthropic_ipo_samsung_convergence:
+      series_h_valuation_b: 965
+      series_h_raised_b: 65
+      samsung_investment: true
+      samsung_glasses_competitor: true
+      ipo_banks: Goldman Sachs, JPMorgan, Morgan Stanley
+      convergence_note: >
+        Samsung invested in Anthropic while simultaneously building Galaxy Glasses
+        (direct Meta Ray-Ban competitor). Goldman Sachs, JPMorgan, and Morgan
+        Stanley are Anthropic IPO underwriters AND cover Meta as equity analysts.
+        The IPO creates a pre-listing quiet period incentive to present Anthropic
+        favorably, while the Samsung investment chain creates alignment between
+        Anthropic coverage and Samsung wearables coverage.
+    confounders:
+      - strength: STRONG
+        factor: >
+          Apple may not close any Siri AI deals. Apple approached publishers in
+          Dec 2023 and never closed deals. The nine-figure budget may remain
+          aspirational.
+      - strength: STRONG
+        factor: >
+          Variable pay-per-use compensation may produce negligible revenue for
+          most publishers, making the financial incentive theoretically weak.
+      - strength: MODERATE
+        factor: >
+          The nine-figure budget may be spread across hundreds of publishers,
+          making per-publisher payments immaterial to editorial decisions.
+      - strength: MODERATE
+        factor: >
+          Siri AI content deals may not influence editorial coverage of
+          unrelated Apple products like hypothetical smart glasses.
+      - strength: WEAK
+        factor: >
+          Apple has legitimate product motivation for these deals (fixing
+          Siri AI hallucinations) that is independent of coverage incentives.
+    cross_references:
+      - mechanism_id: 35
+        relationship: extends
+        note: Extends Apple News+ platform leverage to triple-layer architecture
+      - mechanism_id: 50
+        relationship: financial_foundation
+        note: Apple N50 privacy hero cascade now has financial architecture support
+      - mechanism_id: 152
+        relationship: parallel
+        note: Nvidia GPU-capital circularity creates similar multi-layer incentive
+    source_urls:
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+      - https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/
+      - https://appleinsider.com/articles/26/08/13/siri-ai-could-get-a-boost-from-news-content-with-new-publisher-deal
+      - https://medium.com/@computeleap/anthropics-s-1-what-a-965b-ipo-filing-changes-c13324eb7bbd
+    test_file: tests/test_apple_siri_ai_triple_layer_publisher_financial_architecture_aug17.py
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
