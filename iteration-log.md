@@ -3457,3 +3457,38 @@ creates structural incentive — Reddit competes with Meta for ad revenue; Snap 
 - Updated: docs/ARCHITECTURE.md (test file entry added, counts updated)
 
 **Cumulative:** 164 mechanisms, ~16,189 tests, 451 files
+
+
+## Iteration #166 — Tue Aug 18, 2026 11:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #165: Amanda Caswell — Tom's Guide (Future PLC) AI Editor Coverage Scope Asymmetry**
+
+Amanda Caswell, Tom's Guide's "AI Editor," covers Meta smart glasses across BOTH editorial registers — enthusiastic product experience (Super Bowl halftime Feb 9, teleprompter reading Feb 13, calorie counting Apr 19) AND adversarial privacy investigation ("Meta Ray-Ban smart glasses face new privacy concerns over human review of video data"). But she covers ZERO competitor smart glasses (Samsung, Snap, Google).
+
+Within the same publication, competitor coverage is exclusively assigned to product review editors (Jason England, Mike Prospero, Darragh Murphy, Tom Pritchard) who write ZERO privacy investigation articles about ANY entity.
+
+**Novel mechanism type:** `coverage_scope_asymmetry` — unlike vocabulary inversion (#132: same journalist, multiple entities, different words) or null differential (#151: same journalist, multiple entities, same words), coverage scope asymmetry means the dual-register journalist covers ONLY ONE ENTITY, making cross-entity comparison impossible at the individual level.
+
+**The structural result:** Adversarial smart glasses coverage exists exclusively for Meta — not because any individual journalist applies biased vocabulary, but because the journalist who CAN write adversarial articles is editorially scoped to Meta-only coverage.
+
+**Research path:**
+- Kerry Wan (ZDNET) — initial candidate, already profiled (#107), SKIPPED
+- Rael Hornby (Laptop Mag/Future PLC) — insufficient cross-entity coverage found
+- Andy Boxall (Android Police/Valnet) — already profiled (#132), SKIPPED
+- Amanda Caswell (Tom's Guide/Future PLC) — novel dual-register + scope-exclusive finding, SELECTED
+
+**Evidence sources:**
+- Tom's Guide author page: https://www.tomsguide.com/uk/author/amanda-caswell/page/7
+- Tom's Guide smart glasses hub pages 2-9 (competitor coverage by other writers)
+- Existing mechanism #164 (same publication institutional pattern)
+
+**Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+**Cross-references:** #107, #132, #146, #151, #164
+
+**Files changed:**
+- Added: `tests/test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py` (10 classes, 47 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #165, Caswell role correction AI/tech contributor → AI Editor)
+- Updated: README.md (455 files, ~15,176 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added)
+
+**Cumulative:** 165 mechanisms, ~15,176 tests, 455 files

@@ -20093,10 +20093,26 @@ publications:
     meta_coverage:
       journalists:
       - name: Amanda Caswell
-        role: AI/tech contributor
-        articles: 2
+        role: AI Editor
+        articles: 4
         tone_avg: -0.575
         privacy_alarm_terms_total: 16
+        mechanism_165_coverage_scope_asymmetry:
+          description: >-
+            Covers Meta smart glasses across BOTH registers (3 positive product
+            articles + 1 adversarial privacy investigation) but covers ZERO
+            competitor smart glasses (Samsung, Snap, Google). Novel mechanism
+            type: coverage_scope_asymmetry. The dual-register journalist covers
+            only Meta; product reviewers cover competitors without adversarial
+            register. Extends #164 at individual journalist level.
+          positive_articles:
+            - "Super Bowl halftime (Feb 9, 2026)"
+            - "Teleprompter reading (Feb 13, 2026)"
+            - "Calorie counting (Apr 19, 2026)"
+          adversarial_articles:
+            - "Privacy concerns over human review of video data"
+          competitor_smart_glasses_articles: 0
+          source: "https://www.tomsguide.com/uk/author/amanda-caswell/page/7"
       - name: Krishi
         role: VPN/cybersecurity writer
         tone: -0.55
@@ -20150,3 +20166,78 @@ publications:
     - https://www.tomsguide.com/computing/smart-glasses/this-major-cruise-line-just-banned-meta-ray-ban-and-other-smart-glasses-is-this-category-already-doomed
     test_file: tests/test_tomsguide_snap_specs_camera_count_paradox_privacy_vocabulary_inversion_aug18.py
     test_count: 62
+
+  - mechanism_id: 165
+    finding_type: coverage_scope_asymmetry
+    date: '2026-08-18'
+    publication: Tom's Guide (Future plc)
+    journalist: Amanda Caswell
+    journalist_role: AI Editor
+    finding_summary: >-
+      Amanda Caswell, Tom's Guide AI Editor, covers Meta smart glasses across
+      BOTH editorial registers (3 positive product articles + 1 adversarial
+      privacy investigation) but covers ZERO competitor smart glasses (Samsung,
+      Snap, Google). Product review editors who cover competitors write ZERO
+      privacy articles. Result: adversarial smart glasses coverage exists
+      exclusively for Meta because the dual-register journalist covers only Meta.
+    asymmetry_score: 0.78
+    novel_mechanism_type: coverage_scope_asymmetry
+    caswell_meta_positive_articles:
+    - "Super Bowl halftime show (Feb 9, 2026)"
+    - "Teleprompter reading (Feb 13, 2026)"
+    - "Calorie counting with AI glasses (Apr 19, 2026)"
+    caswell_meta_adversarial_articles:
+    - "Privacy concerns over human review of video data"
+    caswell_competitor_articles: 0
+    competitor_coverage_product_reviewers:
+    - journalist: Jason England
+      role: Managing Editor, Computing
+      entities: [google, rokid, viture, xreal, samsung]
+      privacy_articles: 0
+    - journalist: Mike Prospero
+      role: Senior Editor
+      entities: [meta, google]
+      privacy_articles: 0
+    - journalist: Tom Pritchard
+      role: Staff writer
+      entities: [samsung]
+      privacy_articles: 0
+    - journalist: Darragh Murphy
+      role: Computing Editor
+      entities: [apple]
+      privacy_articles: 0
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta is market leader with more coverage expected
+      response: "Market leadership explains MORE coverage, not EXCLUSIVE adversarial"
+    - strength: STRONG
+      factor: AI Editor beat is AI broadly, not smart glasses specifically
+      response: "Samsung/Snap/Google glasses all use AI (Gemini, OpenAI) and fall within AI Editor beat"
+    - strength: MODERATE
+      factor: Samsung and Google consumer glasses are newer (2026)
+      response: "Snap Spectacles existed since 2016, Google Glass since 2013"
+    - strength: MODERATE
+      factor: Standard editorial specialization (hardware vs AI beats)
+      response: "Explains positive AI articles but not privacy investigation, which is not typical AI Editor beat"
+    - strength: WEAK
+      factor: Small sample size (4 articles)
+      response: "Absence of competitor coverage across 100+ articles is sustained pattern"
+    cross_references:
+    - mechanism_id: 164
+      relationship: Same publication institutional-level finding extended to individual journalist level
+    - mechanism_id: 146
+      relationship: Jason England covers competitors positively; Caswell provides adversarial complement for Meta only
+    - mechanism_id: 132
+      relationship: "Different mechanism type: Boxall covers multiple entities with different vocabulary; Caswell covers one entity with both registers"
+    - mechanism_id: 151
+      relationship: "Similar editorial assignment layer finding; Caswell adds dual-register dimension"
+    - mechanism_id: 107
+      relationship: "Different type: Kerry Wan covers multiple entities with vocabulary differential; Caswell is scope-exclusive"
+    source_urls:
+    - https://www.tomsguide.com/uk/author/amanda-caswell/page/7
+    testable_predictions:
+    - "When Samsung/Google glasses ship Fall 2026, Caswell will not write privacy investigation"
+    - "Any future Caswell competitor smart glasses articles will use positive register only"
+    - "If Snap releases consumer Spectacles, Caswell will not cover them adversarially"
+    test_file: tests/test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py
+    test_count: 47
