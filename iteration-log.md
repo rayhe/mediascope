@@ -1,3 +1,31 @@
+## Iteration #158 — Tue 2026-08-18 00:00 PT (Type D: Test & Verify)
+
+**Focus: Doc Sync Regression Fix + Mechanism #153-#156 Structural Validation**
+
+**5 BUGS FOUND AND FIXED:**
+
+1. **README test file count wrong** — README claimed "15705 tests across 444 test files" but disk had 441 files. Three test files were missing from both README and ARCHITECTURE: `test_apple_siri_ai_triple_layer_publisher_financial_architecture_aug17.py`, `test_bobrowsky_cross_publication_brand_stigma_smart_glasses_vocabulary_aug17.py`, `test_type_d_08am_cross_validation_aug17.py`. All three added with full descriptions.
+
+2. **ARCHITECTURE test file count wrong** — ARCHITECTURE claimed "15630 tests across 439 test files." Same 3 files missing. Both docs now synced to actual: 15753 tests across 442 files.
+
+3. **Mechanism #153 broken cross-reference** — `podcast_same_episode_framing_asymmetry` referenced mechanism #135, which is a known historical gap (from renumbering/consolidation). Fixed to #136 (Apple Siri AI Quad-Channel).
+
+4. **README/ARCHITECTURE count divergence** — README and ARCHITECTURE had different test counts (15705 vs 15630). Now both read 15753 from the same source of truth.
+
+5. **test_type_d_03am_cross_validation_aug17 was catching these** — Its TestDocSyncIntegrity class had 5 failures (file count mismatch, test count disagreement, 2 missing file listings). All 5 now pass.
+
+**NEW TEST FILE: test_type_d_midnight_cross_validation_aug18.py (6 classes, 50 tests, all passing)**
+- Doc sync after fix (8 tests: file counts, test count agreement, specific missing files, aug18 listings)
+- Mechanism #153-#156 structural integrity (28 tests: existence, test_file, source_urls, findings, confounders, cross-references)
+- Mechanism ID contiguity with known historical gaps (3 tests: uniqueness, contiguity, max=156)
+- YAML parse integrity (5 tests: ccr, competitor-entities, wired profile, sections, pub count)
+- Aug17 test file importability (6 tests)
+- Cross-reference validity for #153-#156 (4 tests)
+
+**Verification:** Ran all aug17 cross-validation tests — 42 passed (test_type_d_03am), 35 passed (test_type_d_08am), 50 passed (new midnight aug18).
+
+**Stats:** 442 test files, ~15,753 tests, 156 mechanisms.
+
 ## Iteration #157 — Mon 2026-08-17 23:00 PT (Type C: Financial Incentive Mapping)
 
 **Focus: Apple Siri AI Triple-Layer Publisher Financial Architecture + Anthropic IPO Samsung Convergence (Mechanism #156)**
