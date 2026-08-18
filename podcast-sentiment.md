@@ -1040,22 +1040,23 @@ OpenAI's device has 5/6 capabilities vs Meta's 3/6, yet receives vocabulary seve
 
 ---
 
-## Updated Cross-Medium Asymmetry Summary (Aug 18, 2026, 15:00 UTC)
+## Updated Cross-Medium Asymmetry Summary (Aug 18, 2026, 16:00 UTC)
 
-### Podcast/Broadcast vs Print/Online Coverage Comparison (22+ episodes + 3 new patterns)
+### Podcast/Broadcast vs Print/Online Coverage Comparison (23+ episodes + 3 new patterns)
 
-| Pattern | Print/Online | Podcast/Broadcast (22+ episodes) | Alignment |
+| Pattern | Print/Online | Podcast/Broadcast (23+ episodes) | Alignment |
 |---------|-------------|---------|-----------|
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (20 of 22+ episodes) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 22+ episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (21 of 23+ episodes) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 23+ episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
 | Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
 | Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny) | **ALIGNED** |
 | Same-publisher dual framing | N/A (new) | ✅ (9to5Google: aspiration for Google, alarm for Meta) | **NEW PATTERN** |
 | Public broadcaster meta-targeting | N/A (new) | ✅ (BBC UK, DW Germany, NBC US — 2/3 publicly funded) | **NEW PATTERN** |
 | OpenAI vocabulary gradient | ✅ (mechanism #159) | ✅ (eWeek/DT/WPN: "companion/tradeoff" vs "pervert/surveillance") | **ALIGNED** |
 | Vocabulary semantic inversion | ✅ (mechanism #158) | ✅ (Samsung = "keep perverts away", Meta = "pervert glasses") | **ALIGNED** |
+| Cross-medium vocabulary portability | ✅ (mechanism #112, #148) | ✅ (Victoria Song: 3 podcasts with identical bifurcation — Kill Switch, Vergecast, TWiT 1058) | **ALIGNED** |
 
 ---
 
-*Last updated: 2026-08-18 15:00 UTC (Aug 18, 8:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox)*
+*Last updated: 2026-08-18 16:00 UTC (Aug 18, 9:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability)*

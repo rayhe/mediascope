@@ -20477,3 +20477,84 @@ publications:
       coverage, it would confirm the distribution incentive is operational, not theoretical'
     test_file: tests/test_conde_nast_google_zero_distribution_dependency_compound_incentive_aug18.py
     test_count: 55
+  twit_1058_victoria_song_cross_medium_privacy_vocabulary_portability:
+    mechanism_id: 168
+    asymmetry_score: 0.78
+    finding_summary: >
+      TWiT 1058 'Furry Little Potatoes' (Nov 16, 2025) provides full-transcript
+      evidence that Victoria Song's documented privacy vocabulary bifurcation
+      (mechanism #112) extends identically from The Verge print coverage to
+      appearances on TWiT, the premier general tech podcast. In 5,717 transcript
+      lines, Song and Christina Warren (Google DeepMind → GitHub career migration)
+      apply 12+ privacy-alarm terms exclusively to Meta glasses: 'insidious'
+      (Warren), 'freaky deaky... super spy stuff... James Bond level' (Song on
+      neural band silent recording), white LED 'just not gonna see it' in daylight
+      (Song), Bay Area university harassment case (Song). Warren simultaneously
+      calls Meta glasses 'insidious' AND says 'that's kind of why I like them' —
+      acknowledging the dual register of alarm vocabulary applied to a product she
+      personally enjoys. ZERO mentions of Samsung (0 occurrences in entire transcript),
+      Snap Spectacles (mentioned only as 2018 historical comparison despite shipping
+      with 4 cameras at $2,195), Google Android XR, or Apple N50 in any privacy
+      context. This is the THIRD podcast confirming Victoria Song's cross-medium
+      privacy vocabulary portability (after Kill Switch Sep 2025 and Vergecast),
+      establishing a pattern that exceeds individual-episode bias: the same journalist
+      consistently applies privacy scrutiny exclusively to Meta across print,
+      specialist podcasts, and the premier general tech podcast. Leo Laporte (host)
+      contributes Google Glass historical framing but does not apply equivalent
+      scrutiny to current competitors.
+    source_urls:
+    - https://twit.tv/posts/transcripts/week-tech-episode-1058-transcript
+    - https://twit.tv/shows/this-week-in-tech/episodes/1058
+    - https://twit.tv/posts/tech/are-meta-ray-ban-display-glasses-ready-everyday-use
+    confounding_factors:
+    - strength: STRONG
+      factor: >
+        At recording date (Nov 16, 2025), Samsung Galaxy Glasses had not yet
+        been announced (Jul 22, 2026). Google Android XR glasses also unannounced.
+        The only shipping competitor was Snap Spectacles ($2,195, 4 cameras),
+        which still received zero privacy scrutiny despite having 4x more cameras.
+    - strength: STRONG
+      factor: >
+        Victoria Song is a wearables beat reporter whose job involves testing
+        Meta glasses extensively. Familiarity breeds detailed critique — she has
+        spent more hours with Meta glasses than with any competitor's product,
+        which naturally produces more granular privacy observations.
+    - strength: MODERATE
+      factor: >
+        TWiT is a general tech podcast where hosts follow guest expertise. Leo
+        Laporte deferred to Song's experience, which naturally centered on Meta
+        glasses. The absence of competitor discussion may reflect conversational
+        flow rather than deliberate exclusion.
+    - strength: MODERATE
+      factor: >
+        Christina Warren's 'insidious' + 'I like them' duality may reflect
+        genuine consumer ambivalence rather than editorial bias — many tech
+        enthusiasts acknowledge privacy concerns about products they personally
+        enjoy using.
+    - strength: WEAK
+      factor: >
+        Snap Spectacles at $2,195 target developers, not consumers. Their
+        limited distribution reduces their salience as a privacy comparison,
+        though the hardware capabilities (4 cameras, 6 mics) are identical
+        or greater than Meta's.
+    cross_references:
+    - mechanism_id: 112
+      relationship: 'Mechanism #112 documented Victoria Song print privacy vocabulary bifurcation; #168 confirms identical pattern on TWiT podcast'
+    - mechanism_id: 148
+      relationship: 'Mechanism #148 identified Vox Media Podcast Network cross-medium portability; #168 shows portability extends beyond Vox to independent podcasts (TWiT)'
+    - mechanism_id: 144
+      relationship: 'Mechanism #144 identified podcast ecosystem amplification; #168 adds TWiT (premier general tech podcast) as amplification channel'
+    - mechanism_id: 153
+      relationship: 'Mechanism #153 documented same-episode framing asymmetry; TWiT 1058 shows same pattern with extended privacy discussion exclusively about Meta'
+    testable_predictions:
+    - 'If Victoria Song appears on a fourth podcast, she will apply privacy
+      vocabulary exclusively to Meta glasses — not to Samsung, Google, Apple,
+      or Snap — regardless of the podcast host or network affiliation'
+    - 'If Christina Warren reviews or discusses Samsung Galaxy Glasses on a
+      future TWiT or podcast appearance, she will NOT use the word "insidious"
+      despite identical Snapdragon AR1 Gen 1 chip and camera architecture'
+    - 'When Apple N50 glasses launch, Victoria Song podcast appearances will
+      frame Apple through an innovation lens rather than the privacy-alarm
+      vocabulary she applies to Meta — matching her print pattern'
+    test_file: tests/test_twit_1058_victoria_song_cross_medium_privacy_vocabulary_portability_aug18.py
+    test_count: 48
