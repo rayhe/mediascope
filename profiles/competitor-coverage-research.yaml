@@ -1232,6 +1232,234 @@ aggregate_findings:
     - https://gizmodo.com/google-and-xreals-project-aura-xr-smart-glasses-are-legit-2000760940
     - https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490
     - https://www.adweek.com/media/keleops-ag-acquires-gizmodo-from-go-media/
+  advance_reddit_meta_ad_competition_structural_incentive:
+    mechanism_id: 161
+    journalist: N/A (structural/institutional)
+    publication: WIRED (Condé Nast / Advance Publications)
+    key_finding: Advance Publications' controlled subsidiary Reddit directly competes with Meta for advertising revenue via Max Campaigns
+    mechanism: parent_company_competitive_revenue_incentive
+    finding_summary: >
+      Advance Publications — parent of Condé Nast (WIRED, Vogue, GQ, Vanity Fair,
+      The New Yorker) — holds 65.2% voting control and 83.5% of Class B stock in
+      Reddit (RDDT), which EXPLICITLY competes with Meta for advertising revenue.
+      Reddit launched Max Campaigns at CES 2026 (Jan 6) as a direct competitor to
+      Meta Advantage+ and Google Performance Max. Adweek called it "Reddit's most
+      direct push to compete with giants like Google and Meta for performance ad
+      dollars." Reuters reported Reddit is "ratcheting up competition with Meta."
+      Reddit Q1 2026 ad revenue grew 74% YoY with active advertiser count up 75% YoY.
+
+      Simultaneously, Meta launched Forum (May 21-22, 2026), a standalone
+      Reddit-rival app built from Facebook Groups, with anonymized usernames,
+      community-based discussions, and AI-powered Q&A — directly encroaching on
+      Reddit's community discussion market. This creates BIDIRECTIONAL competition:
+      Reddit attacks Meta's ad business, Meta attacks Reddit's community business.
+
+      Advance Publications benefits financially from Reddit's advertising success
+      through its ~$6-8B stake. Every negative WIRED story about Meta that causes
+      advertisers to question the platform potentially benefits Reddit's ad
+      business — and therefore Advance's financial interests. This is distinct from
+      the content-licensing incentive (mechanism #69) and the aggregate AI
+      dependency (#1): it operates through the ADVERTISING COMPETITION channel.
+
+      Meta has ZERO financial relationship with Advance Publications. No content
+      deal, no investment, no board seats, no licensing agreement. Meta is purely
+      a competitive target across multiple surfaces.
+    reddit_max_campaigns:
+      launch_date: '2026-01-06'
+      launch_venue: CES 2026
+      direct_competitors:
+        - Meta Advantage+
+        - Google Performance Max
+      alpha_advertisers: 600
+      alpha_results:
+        cpa_reduction_pct: 17
+        conversion_volume_increase_pct: 27
+      brooks_running_case:
+        cpc_reduction_pct: 37
+        click_increase_pct: 27
+        campaign_duration_days: 21
+      reuters_characterization: >
+        "Reddit is ratcheting up competition with Meta by rolling out
+        AI-powered Max campaigns in beta, which automate ad campaigns by
+        adjusting bids to hit target cost-per-result as well as dynamically
+        selecting headlines and creatives."
+      adweek_characterization: >
+        "Reddit's most direct push to compete with giants like Google and
+        Meta for performance ad dollars, bringing automation deeper into
+        its ad stack."
+      source_urls:
+        - https://adweek.com/media/reddit-max-campaign-media-buying-ces/
+        - https://www.reuters.com/business/media-telecom/reddit-forecasts-revenue-above-estimates-ai-fuels-ad-sales-2026-02-05/
+        - https://www.searchenginejournal.com/reddit-introduces-max-campaigns-its-new-automated-campaign-type/564361/
+        - https://adtechradar.com/2026/01/05/reddit-bets-on-community-data-with-new-max-performance-campaigns/
+    reddit_financials:
+      q1_2026_revenue_m: 663.4
+      q1_2026_revenue_growth_yoy_pct: 69.1
+      q1_2026_ad_revenue_growth_yoy_pct: 74
+      active_advertiser_growth_yoy_pct: 75
+      ad_revenue_share_pct: 94
+      q2_2026_guidance_m: '715-725'
+      ttm_ad_revenue_b: 2.6
+      meta_q1_2026_ad_revenue_b: 55.02
+      meta_q1_2026_ad_growth_yoy_pct: 33
+      revenue_scale_ratio: 'Meta ad revenue is ~83x Reddit ad revenue — but Reddit growth rate (74%) is 2.2x Meta growth rate (33%)'
+      source_urls:
+        - https://www.reuters.com/business/media-telecom/reddit-expects-revenue-above-estimates-ai-tools-fuel-ad-growth-2026-04-30/
+        - https://www.zacks.com/stock/news/2938157/rddt-vs-meta-which-digital-advertising-stock-has-an-edge-right-now
+    meta_forum:
+      launch_date: '2026-05-21'
+      positioned_as_reddit_rival: true
+      reddit_overlap_features:
+        - community-based discussions
+        - anonymized usernames
+        - topic-based content discovery
+        - AI-powered Q&A (Ask tab)
+        - dedicated space for deeper discussions
+      prior_attempt: 2014 Groups app (shuttered 2017)
+      broader_context: >
+        Forum is part of Zuckerberg's directive to ship more apps using
+        AI-driven development efficiencies. Also includes Instants
+        (disappearing photos for Instagram).
+      source_urls:
+        - https://techcrunch.com/2026/05/22/meta-quietly-launches-a-new-reddit-like-app-called-forum/
+        - https://www.techspot.com/news/112500-meta-quietly-launches-forum-reddit-like-app-built.html
+        - https://www.digitaltrends.com/computing/meta-built-a-reddit-rival-out-of-facebook-groups/
+    advance_ownership:
+      voting_control_pct: 65.2
+      class_b_ownership_pct: 83.5
+      total_shares: 42207274
+      stake_value_b: 6.7
+      stake_value_note: At ~$158.47/share (Aug 11, 2026 close)
+      governance_pipeline: >
+        Former Condé Nast CEO Robert Sauerberg is Reddit Board Vice Chairperson
+        (since Nov 2023) and sits on Audit + NCG committees. Steven O. Newhouse
+        (Advance co-president) chairs the NCG committee that controls board
+        nominations. Direct Condé Nast to Reddit governance pipeline.
+      concentration_mechanism: >
+        Voting power INCREASED from 62.0% (2025) to 65.2% (2026) without
+        Advance buying a single share — other insiders converted Class B
+        to Class A for sale, shrinking the Class B pool while Advance
+        retained all its Class B shares.
+    dual_surface_competition:
+      advertising:
+        aggressor: Reddit (via Max Campaigns)
+        defender: Meta (Advantage+)
+        financial_flow: Reddit ad revenue flows to Advance economic interest
+        mechanism: Direct ad dollar competition
+      community:
+        aggressor: Meta (via Forum app)
+        defender: Reddit (community discussion platform)
+        financial_flow: User engagement drives Reddit ad revenue flows to Advance
+        mechanism: User/engagement competition
+    mediascope_relevance: >
+      This mechanism adds a THIRD financial incentive channel for Advance
+      adversarial Meta coverage at WIRED, beyond content licensing (pushing
+      AI must pay strengthens Reddit $550M/yr negotiating position) and
+      aggregate AI dependency (Conde Nast direct OpenAI deal). The
+      advertising channel is structurally different — it does not require
+      WIRED to cover AI or content licensing at all. ANY adversarial Meta
+      coverage — privacy concerns, safety issues, moderation failures,
+      regulatory actions — potentially steers advertisers toward alternative
+      platforms including Reddit. Meta has zero financial relationship with
+      Advance. This makes Advance/WIRED adversarial Meta coverage
+      simultaneously serve THREE independent financial incentive channels.
+    testable_predictions:
+      - prediction: >
+          WIRED coverage of Meta Forum will be absent, minimal, or framed
+          as derivative/concerning rather than innovative.
+        test: Search for WIRED articles about Meta Forum (May-Aug 2026)
+        rationale: Forum threatens Reddit, which Advance controls
+      - prediction: >
+          WIRED coverage of Reddit Max Campaigns will be absent or neutral,
+          never critical of Reddit data practices or AI-powered ad targeting.
+        test: Search for WIRED articles about Reddit Max Campaigns or Reddit advertising
+        rationale: Max Campaigns benefit Advance Reddit stake
+      - prediction: >
+          WIRED will not disclose Advance Reddit stake in articles covering
+          Reddit-Meta competition or Reddit advertising business.
+        test: Review WIRED articles mentioning Reddit for conflict disclosure
+        rationale: Standard non-disclosure pattern
+      - prediction: >
+          When Reddit ad targeting uses the same AI/community data practices
+          WIRED critiques Meta for, WIRED will not apply adversarial vocabulary.
+        test: Compare WIRED framing of Meta ad targeting vs Reddit ad targeting
+        rationale: Entity-selective application of privacy concerns
+    confounding_factors:
+      - strength: STRONG
+        description: >
+          Editorial independence — WIRED journalists may operate independently
+          of Advance corporate interests. No documented editorial directive
+          linking Reddit advertising competition to WIRED coverage decisions.
+          The structural incentive exists but proving editorial direction
+          requires internal evidence (emails, memos) not available externally.
+      - strength: STRONG
+        description: >
+          Advertiser switching is complex — negative coverage of one platform
+          does not automatically redirect budgets to Reddit. Advertisers
+          evaluate platforms on ROI, reach, and targeting capabilities, not
+          press coverage alone. The causal chain from WIRED article to
+          advertiser behavior to Reddit revenue is indirect.
+      - strength: MODERATE
+        description: >
+          Revenue scale asymmetry — Meta ad revenue ($233B annualized) is
+          ~83x Reddit ($2.6B TTM). Reddit competitive impact on Meta is
+          marginal in absolute terms. However, at the margin (small/mid
+          advertisers considering platform diversification), coverage effects
+          may be disproportionate to Reddit size.
+      - strength: MODERATE
+        description: >
+          Temporal precedence — WIRED adversarial Meta coverage pattern
+          predates Reddit Max Campaigns (Jan 2026) and Meta Forum (May 2026).
+          The pattern is not CAUSED by these specific product launches.
+          However, the underlying structural competition between Advance
+          assets and Meta has existed since Reddit advertising business
+          launched (2018+).
+      - strength: WEAK
+        description: >
+          Other publications without Reddit ownership (Guardian, Gizmodo) also
+          cover Meta adversarially, suggesting industry-wide dynamics beyond
+          Advance-specific incentives. However, the CONCENTRATION of
+          adversarial mechanisms at WIRED/Conde Nast (content licensing +
+          AI dependency + ad competition) is unique to Advance.
+    cross_references:
+      - mechanism_id: 1
+        relationship: extends
+        description: >
+          Mechanism #1 documents Advance aggregate AI dependency including
+          Reddit. This mechanism isolates the specific ADVERTISING competition
+          channel, which operates independently of AI content licensing.
+      - mechanism_id: 11
+        relationship: specializes
+        description: >
+          Mechanism #11 documents ad competitor structural antagonism as a
+          general pattern. This mechanism documents the specific case where
+          a publication PARENT COMPANY owns the ad competitor, creating a
+          direct financial rather than structural incentive.
+      - mechanism_id: 69
+        relationship: complements
+        description: >
+          Mechanism #69 documents Reddit AI content licensing deal renewal
+          projections ($550M/yr). This mechanism covers a DIFFERENT revenue
+          stream (advertising, not licensing) creating a second competition
+          surface with Meta.
+      - mechanism_id: 159
+        relationship: context
+        description: >
+          Mechanism #159 documents OpenAI companion vs Meta surveillance
+          vocabulary bifurcation. The ad competition incentive provides
+          additional financial motivation for entity-selective vocabulary,
+          beyond the content licensing channel.
+    source_urls:
+      - https://adweek.com/media/reddit-max-campaign-media-buying-ces/
+      - https://www.reuters.com/business/media-telecom/reddit-forecasts-revenue-above-estimates-ai-fuels-ad-sales-2026-02-05/
+      - https://www.reuters.com/business/media-telecom/reddit-expects-revenue-above-estimates-ai-tools-fuel-ad-growth-2026-04-30/
+      - https://techcrunch.com/2026/05/22/meta-quietly-launches-a-new-reddit-like-app-called-forum/
+      - https://www.zacks.com/stock/news/2938157/rddt-vs-meta-which-digital-advertising-stock-has-an-edge-right-now
+      - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
+      - https://www.searchenginejournal.com/reddit-introduces-max-campaigns-its-new-automated-campaign-type/564361/
+    test_file: tests/test_advance_reddit_meta_ad_competition_structural_incentive_aug18.py
+    test_count: 55
+
 cross_entity_leverage:
   amazon_sextuple_leverage:
     amazon_publisher_deal_count:

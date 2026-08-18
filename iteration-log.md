@@ -3263,3 +3263,37 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: `iteration-log.md`
 
 **Cumulative:** 157 mechanisms, ~14,716 tests, 443 files
+
+## Iteration #162 — Tue 2026-08-18 05:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #161: Advance Publications Reddit-Meta Advertising Direct Competition Structural Incentive Chain**
+
+**DISCOVERY: Advance Publications (WIRED parent) controls Reddit, which EXPLICITLY competes with Meta for advertising revenue — creating a THIRD financial incentive channel for adversarial Meta coverage**
+
+Reddit launched Max Campaigns at CES 2026 (Jan 6) as a direct competitor to Meta Advantage+ and Google Performance Max. Adweek: "Reddit's most direct push to compete with giants like Google and Meta for performance ad dollars." Reuters: "Reddit is ratcheting up competition with Meta."
+
+Key financial data:
+- Reddit Q1 2026: ad revenue +74% YoY, active advertisers +75% YoY, total revenue $663.4M (+69.1% YoY)
+- 94% of Reddit revenue from advertising — direct Meta competitor
+- Advance Publications: 65.2% voting control, 83.5% Class B ownership, ~$6.7B stake value
+- Former Condé Nast CEO Robert Sauerberg is Reddit Board Vice Chairperson
+- Meta launched Forum (May 21-22, 2026) — standalone Reddit-rival app with anonymized usernames, community discussions, AI Q&A
+
+**Dual-surface competition framework:**
+- Surface 1 (Advertising): Reddit Max Campaigns vs Meta Advantage+ for ad dollars
+- Surface 2 (Community): Meta Forum vs Reddit for user engagement
+
+**Three independent financial incentive channels for Advance/WIRED adversarial Meta coverage:**
+1. Content licensing — pushing "AI must pay" strengthens Reddit's $550M/yr negotiating position
+2. AI dependency — Condé Nast has direct OpenAI content deal
+3. **NEW: Advertising competition** — Reddit vs Meta for ad dollars (operates through ANY negative Meta coverage, not just AI/content licensing stories)
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 4 cross-references (#1, #11, #69, #159), 4 testable predictions.**
+
+**Changes:**
+- New test: `test_advance_reddit_meta_ad_competition_structural_incentive_aug18.py` (43 tests, 10 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #161 added to aggregate_findings)
+- Updated: README.md (449 files, ~16,011 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added, counts updated)
+
+**Cumulative:** 161 mechanisms, ~16,011 tests, 449 files
