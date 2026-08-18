@@ -20061,3 +20061,92 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  tomsguide_snap_specs_camera_count_paradox:
+    mechanism_id: 164
+    finding_type: camera_count_privacy_vocabulary_inversion
+    date: '2026-08-18'
+    publication: Tom's Guide (Future plc)
+    competitor: Snap (Spectacles/SPECS)
+    asymmetry_score: 0.82
+    finding: 'Within the SAME publication (Tom''s Guide, Future plc), smart glasses coverage applies
+      opposite editorial registers based on entity identity, not camera capabilities. Snap Specs
+      (4 cameras, 6 microphones, $2,195, 226g) receive aspirational vocabulary — "game-changer,"
+      "mindblown," "mighty impressive" — with ZERO privacy terms. Meta Ray-Ban (1 camera, 5
+      microphones, $299, 49g) receives adversarial vocabulary — "alarm bells," "privacy concerns,"
+      "doomed," "banned," "desperate." Camera count paradox: MORE cameras (4) → ZERO alarm; FEWER
+      cameras (1) → HEAVY alarm. Beat assignment asymmetry: product editors (England, Murphy) cover
+      Snap; privacy/security writers (Krishi, Caswell) cover Meta. The editorial decision of WHO
+      covers WHICH entity predetermines the framing.'
+    snap_coverage:
+      journalists:
+      - name: Jason England
+        role: Managing Editor, Computing
+        tone: 0.85
+        aspirational_terms: 9
+        privacy_alarm_terms: 0
+      - name: Darragh Murphy
+        role: Computing Editor
+        tone: 0.75
+        aspirational_terms: 7
+        privacy_alarm_terms: 0
+      camera_description: "four cameras... a pretty fully-loaded package"
+    meta_coverage:
+      journalists:
+      - name: Amanda Caswell
+        role: AI/tech contributor
+        articles: 2
+        tone_avg: -0.575
+        privacy_alarm_terms_total: 16
+      - name: Krishi
+        role: VPN/cybersecurity writer
+        tone: -0.55
+        privacy_alarm_terms: 6
+    camera_count_paradox:
+      snap_cameras: 4
+      meta_cameras: 1
+      snap_privacy_terms: 0
+      meta_privacy_terms: 22
+      expected_relationship: more_cameras_more_scrutiny
+      actual_relationship: more_cameras_ZERO_scrutiny
+    beat_assignment_asymmetry:
+      snap_writers_type: product_enthusiast_editors
+      meta_writers_type: privacy_security_writers
+      editorial_manipulation: assignment_predetermines_vocabulary
+    financial_context:
+      google_revenue_dependency_pct: 60
+      h1_2026_profit_decline_pct: 67
+      snap_google_alliance: Android XR partner
+      meta_google_relationship: primary_ad_competitor
+    confounders:
+    - strength: STRONG
+      factor: Article type difference (reviews vs news analysis)
+      response: "Genre selection IS the asymmetry — Tom's Guide CHOOSES to write reviews for Snap, alarm for Meta"
+    - strength: STRONG
+      factor: Meta's longer privacy controversy history
+      response: "Privacy risk should track DEVICE CAPABILITY, not company reputation"
+    - strength: MODERATE
+      factor: Snap Specs not yet consumer-shipped at time of reviews
+      response: "Meta received privacy alarm from announcement; Snap has $2,195 pricing and pre-orders live"
+    - strength: MODERATE
+      factor: Scale difference (Meta millions sold vs Snap new product)
+      response: "Camera privacy concern doesn't depend on sales volume"
+    - strength: WEAK
+      factor: "Two of Snap's 4 cameras are IR for hand tracking"
+      response: "Even 2 visible cameras > Meta's 1; IR cameras still capture environmental data"
+    cross_references:
+    - mechanism_id: 146
+      relationship: Same journalist (Jason England) now shows aspirational framing for BOTH Google AND Snap
+    - mechanism_id: 110
+      relationship: Mike Prospero (U.S. Editor-in-Chief, same publication) identical pattern
+    - mechanism_id: 128
+      relationship: Michael Hicks at TechRadar (same parent Future plc) same vocabulary suppression
+    - mechanism_id: 163
+      relationship: WIRED/Condé Nast shows identical Snap Specs coverage selection silence — cross-publisher convergence
+    source_urls:
+    - https://www.tomsguide.com/computing/smart-glasses/snap-os-is-finally-ready-for-snap-specs-in-2026-i-just-tested-the-game-changing-update
+    - https://www.tomsguide.com/computing/smart-glasses/i-tried-snapchats-spectacles-ar-glasses-and-it-changed-the-way-i-look-at-smart-glasses-heres-why
+    - https://www.tomsguide.com/ai/meta-sued-over-smart-glasses-privacy-claims-6-changes-you-should-make-right-now
+    - https://www.tomsguide.com/news/metas-new-ai-enabled-ray-ban-raises-privacy-concerns
+    - https://www.tomsguide.com/computing/smart-glasses/this-major-cruise-line-just-banned-meta-ray-ban-and-other-smart-glasses-is-this-category-already-doomed
+    test_file: tests/test_tomsguide_snap_specs_camera_count_paradox_privacy_vocabulary_inversion_aug18.py
+    test_count: 62

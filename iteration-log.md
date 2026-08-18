@@ -1,3 +1,37 @@
+## Iteration #165 — Tue 2026-08-18 10:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #164 — Tom's Guide (Future PLC) Camera Count Paradox: Snap Specs 4-Camera Aspirational vs Meta 1-Camera Adversarial
+
+**Asymmetry score:** 0.82
+
+**Core finding:** Within Tom's Guide (Future plc, LSE: FUTR), smart glasses coverage applies completely opposite editorial registers based on entity identity, NOT camera capabilities:
+
+- **Snap Specs (4 cameras, 6 mics, $2,195, 226g):** aspirational vocabulary — "game-changer," "mindblown," "usher in that next generation," "seriously cool," "mighty impressive." Cameras described as positive: "four cameras... a pretty fully-loaded package." ZERO privacy terms.
+- **Meta Ray-Ban (1 camera, 5 mics, $299, 49g):** adversarial vocabulary — "alarm bells," "deeply private moments," "undressing," "doomed," "banned," "desperate," "tainted past." Camera is the central threat vector.
+
+**Camera Count Paradox:**
+MORE cameras (Snap: 4) → ZERO privacy vocabulary → positive framing
+FEWER cameras (Meta: 1) → HEAVY privacy vocabulary → adversarial framing
+This inverts the expected relationship between surveillance capability and editorial scrutiny.
+
+**Beat Assignment Asymmetry (novel element):**
+Tom's Guide assigns Snap Specs to product enthusiast editors: Jason England (Managing Editor, Computing) and Darragh Murphy (Computing Editor). Meta privacy articles go to VPN/security writers (Krishi) and general contributors (Amanda Caswell). The editorial decision of WHO covers WHICH entity predetermines the vocabulary register.
+
+**Multi-journalist institutional confirmation:** England (#146+#164), Prospero (#110), Hicks (#128), Murphy (#164) — four journalists at Future plc show identical entity-based vocabulary selection. Exceeds threshold for individual bias; confirms editorial-level direction.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 4 cross-references (#146, #110, #128, #163).**
+
+**Files created/updated:**
+- Created: `tests/test_tomsguide_snap_specs_camera_count_paradox_privacy_vocabulary_inversion_aug18.py` (62 tests, 11 classes)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #164 added)
+- Updated: `README.md` (test count 16,189→16,251, file count 451→452, new table entry)
+- Updated: `docs/ARCHITECTURE.md` (new test file listed, counts updated)
+- Updated: `iteration-log.md` (this entry)
+
+**Test results:** 62/62 passing
+
+**Cumulative:** 164 mechanisms, ~16,251 tests, 452 files
+
 ## Iteration #164 — Tue 2026-08-18 08:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### 9to5Google Dual-Framing Paradox, DW News Extension, OpenAI Vocabulary Gradient
@@ -3385,3 +3419,41 @@ Key financial data:
 - Updated: docs/ARCHITECTURE.md (test file entry added, counts updated)
 
 **Cumulative:** 161 mechanisms, ~16,011 tests, 449 files
+
+---
+
+### Iteration #165 — Type A: Competitor Coverage Deep Dive (WIRED × Snap)
+**Date:** 2026-08-18 09:00 PT
+**Mechanism:** #163 — WIRED Snap SPECS Consumer Launch Coverage Selection Silence
+
+**Research:**
+WIRED published ZERO standalone privacy investigations of Snap SPECS — the most camera-dense
+consumer smart glasses ever launched (4 cameras, dual Snapdragon, OpenAI + Google Gemini multimodal AI)
+— unveiled at AWE USA 2026 on June 16, 2026 for $2,195. 12-day temporal natural experiment:
+WIRED published NameTag exposé June 4-5 (Meta, 1 camera, dormant code never activated) → Snap SPECS
+unveiled June 16 (4 cameras, consumer launch) → zero WIRED privacy coverage. 6+ other outlets
+(FastCompany, Engadget, TechSpot, MacRumors, Road to VR, 9to5Google) covered Snap SPECS — none
+raised privacy alarm. Historical: Lauren Goode's 2018 Spectacles review used "face camera we've been
+waiting for" — zero privacy vocabulary for Snap across 8 years. Financial: Advance $9.5B Reddit stake
+creates structural incentive — Reddit competes with Meta for ad revenue; Snap is not an Advance competitor.
+
+**Evidence sources:**
+- FastCompany: https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+- MacRumors: https://www.macrumors.com/2026/06/16/snap-specs-ar-glasses/
+- TechSpot: https://www.techspot.com/news/112795-snap-2195-specs-ar-glasses-post-smartphone-era.html
+- Wikipedia Spectacles: https://en.wikipedia.org/wiki/Spectacles_(product)
+- Engadget AWE liveblog: https://www.engadget.com/2194982/awe-xr-2026-snap-live-blog/
+- EFF NameTag victory: http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+- Multiple site:wired.com searches returned zero Snap SPECS results
+
+**Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+**Cross-references:** #130, #154, #159, #162
+
+**Files changed:**
+- Added: `tests/test_wired_snap_specs_consumer_launch_coverage_selection_silence_aug18.py` (10 classes, 47 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #163 in cross_publication_findings)
+- Updated: `profiles/wired.yaml` (snap_specs_2026 section under cross_entity_wearables_framing)
+- Updated: README.md (451 files, ~16,189 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added, counts updated)
+
+**Cumulative:** 164 mechanisms, ~16,189 tests, 451 files
