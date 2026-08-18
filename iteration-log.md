@@ -1,3 +1,55 @@
+## Iteration #164 — Tue 2026-08-18 08:00 PT (Type E: Podcast Sentiment Tracking)
+
+### 9to5Google Dual-Framing Paradox, DW News Extension, OpenAI Vocabulary Gradient
+
+**New findings:**
+
+1. **9to5Google Dual-Framing Paradox:** Same publisher runs aspiration podcasts for Google/Samsung Android XR glasses ("surprisingly impressive," "nailing the basics") while its newsletter labels Meta the "perv glasses problem" to "avoid." Google Preferred Source badge creates structural access dependency. Within-publisher entity-specific vocabulary selection.
+
+2. **DW News Public Broadcaster Extension:** German state broadcaster uses generic "smart glasses" title but #meta #markzuckerberg hashtags. 3rd global broadcaster (after BBC UK, NBC US) targeting Meta specifically; 2 of 3 are publicly funded, weakening financial incentive and strengthening cultural consensus hypothesis.
+
+3. **OpenAI Companion Device Vocabulary Gradient:** Camera + mic + always-on + email access + in-home 24/7 device (GREATER capabilities than Meta glasses) receives "companion" and "tradeoff" framing vs Meta's "pervert" and "surveillance." Severity ratio ~4.5:1.
+
+**Files created/updated:**
+- Created: `tests/test_type_d_08am_cross_validation_aug18.py` (34 tests, 10 test classes)
+- Updated: `podcast-sentiment.md` (DW News entry #23, 9to5Google dual-framing pattern, OpenAI vocabulary gradient update, cross-medium summary table refreshed to 22+ episodes + 3 new patterns)
+- Updated: `iteration-log.md` (this entry)
+
+**Test results:** 34/34 passing
+
+**Cumulative:** 163 mechanisms, ~16,142 tests, 450 files
+
+## Iteration #163 — Tue 2026-08-18 07:00 PT (Type D: Test & Verify)
+
+### Cross-Validation & Doc Sync Fix
+
+**4 test failures identified and fixed:**
+
+1. **ARCHITECTURE file count drift:** Claimed 449 files, disk had 448 → fixed (now 449 with new test)
+2. **README/ARCHITECTURE test count mismatch:** README 15,030 vs ARCHITECTURE 16,011 → both synced to 16,108 (verified via `pytest --collect-only`)
+3. **Stale midnight assertion:** `test_highest_mechanism_is_156` → updated to 160 (mechanisms #157-#160 in cpf, #161-#162 in aggregate_findings)
+4. **Cascade doc sync check:** ARCHITECTURE string "448" → "449"
+
+**Root cause:** Each hourly iteration updates docs independently with snapshot counts; drift accumulates when one doc is updated and the other is missed, or when test counting methods differ (grep vs pytest collect).
+
+**New test:** `test_type_d_07am_cross_validation_aug18.py` (6 classes, 48 tests)
+- Doc sync consistency (file counts and test counts match between README, ARCHITECTURE, and disk)
+- Aug18 test file presence in both docs (all 8 files)
+- Mechanisms #157-#160 structural integrity in cross_publication_findings
+- Mechanisms #161-#162 structural integrity in aggregate_findings
+- Max mechanism ID sync (global 162, cpf 160)
+- Previous fix regression: no mechanism IDs in publications (except legacy #41), no duplicate cpf IDs
+
+**Changes:**
+- Fixed: `README.md` (test count 15,030→16,108, file count 448→449, table+body synced)
+- Fixed: `docs/ARCHITECTURE.md` (test count 16,011→16,108, file count 449→449)
+- Fixed: `tests/test_type_d_midnight_cross_validation_aug18.py` (assertion 156→160)
+- New: `tests/test_type_d_07am_cross_validation_aug18.py` (48 tests)
+
+**Verification:** 48/48 new tests passing, all 4 original failures passing. Pushed to GitHub.
+
+**Cumulative:** 163 iterations, ~16,108 tests, 449 files, 162 mechanisms
+
 ## Iteration #162 — Tue 2026-08-18 06:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #162 — Advance Publications Reddit Q2 2026 Equity-Backed Capital Extraction — Triple-Layer Financial Feedback Loop

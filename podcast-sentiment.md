@@ -940,5 +940,122 @@ Samsung gets "keep perverts away" (protector). Meta gets "pervert glasses" (perp
 
 ---
 
-*Last updated: 2026-08-18 09:00 UTC (Aug 18, 2:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade)*
+### 23. DW News — "How next-generation smart glasses are invading your privacy" (~Jun 22, 2026)
+
+- **Reporter:** Kleanthi Sardeli (data privacy expert, guest)
+- **Network:** DW (Deutsche Welle) — German state-funded international broadcaster
+- **Duration:** ~14 min
+- **Source URL:** https://www.youtube.com/watch?v=P2jlRzBfzq8
+
+**Coverage Summary:**
+German international broadcaster frames smart glasses as a privacy invasion. Expert Kleanthi Sardeli discusses EU privacy laws (GDPR), consent challenges, and global regulatory gaps. Title uses alarm vocabulary ("invading your privacy"). Hashtags explicitly name #meta #markzuckerberg despite generic "smart glasses" in title.
+
+**Key Chapters:**
+- 00:00 Privacy vs. Big Tech: The battle around smart glasses
+- 01:43 Are smart glasses becoming mainstream in 2026?
+- 02:28 Smart glasses' twin threats to privacy: Filming without consent & data harvesting
+- 03:00 EU privacy laws for smart glasses: GDPR, enforcement & consent
+- 04:45 Smart glasses and consent: Are you being filmed without permission?
+- 06:18 Smart glasses and privacy outside Europe: US and global rules
+- 08:27 Big Tech vs. Data protection: Can the law protect your privacy?
+- 10:40 Smart glasses privacy fight: A battle on many fronts
+- 13:23 The growing market for smart glasses
+
+**CRITICAL FINDING — Generic Title, Entity-Specific Hashtags:**
+Title says "smart glasses" generically, but the YouTube hashtags are: `#smartglasses #dwcurrentaffairs #meta #markzuckerberg`. Samsung, Google, Apple, Snap are absent from hashtags. This is the documentary equivalent of "category-to-brand substitution" (mechanism #157): the CATEGORY problem is discussed but the BRAND target is explicitly tagged.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named via hashtags (#meta, #markzuckerberg)
+- **Samsung:** Not tagged despite Galaxy Glasses announcement
+- **Google:** Not tagged despite Android XR glasses
+- **Apple:** Not tagged despite N50 development
+
+**Financial Context:**
+DW is funded by the German federal budget, not advertising. This is the SECOND publicly funded broadcaster (after BBC, UK) to specifically target Meta in smart glasses coverage. The absence of advertising/content deal incentives strengthens the cultural consensus hypothesis: Meta is the default villain because of cultural framing, not financial incentive.
+
+**Sentiment Score:** -5/10 (moderately negative, regulatory/privacy-expert lens)
+**Asymmetry Assessment:** MODERATE — Publicly funded, so no financial bias. But hashtag targeting reveals entity-specific framing beneath generic category coverage.
+
+---
+
+### NEW PATTERN: 9to5Google Dual-Framing Paradox
+
+**Publisher:** 9to5Google (parent: 9to5Mac Inc.)
+**Key episodes/content:**
+1. Pixelated #81 "Gemin-eyes" (~Jul 2026): Android XR glasses demo — "surprisingly impressive," "excited for the return of Google Glass-esque technology"
+2. The Sideload #37 "Specs for your Specs" (Jun 22, 2026): Google's entry — "nailing the basics," "what to expect from Google's entry"
+3. Inbox Newsletter (Jul 23, 2026): "Samsung and Google are betting they can avoid Meta's 'perv glasses' problem"
+
+**Source URLs:**
+- Pixelated #81: https://www.youtube.com/watch?v=EWOvH-BDWe8
+- The Sideload #37: http://9to5google.com/2026/06/22/the-sideload-037-specs-for-your-specs/
+- Inbox Newsletter: https://9to5google.com/2026/07/23/inbox-newsletter-4/
+
+**Core Finding:**
+The SAME publisher (9to5Google) produces aspirational podcast content for Google/Samsung Android XR glasses AND alarm-adjacent newsletter content about Meta glasses. Within a single media brand:
+
+| Content | Entity | Framing | Privacy Terms |
+|---------|--------|---------|---------------|
+| Pixelated #81 | Google | "surprisingly impressive," "excited" | ZERO |
+| Sideload #37 | Google/Samsung | "nailing the basics," "what to expect" | ZERO |
+| Inbox Newsletter | Meta | "perv glasses problem" to "avoid" | "perv glasses" |
+
+The podcasts covering Google's identical hardware (same Snapdragon AR1 Gen 1 chip, same camera, same microphones) contain ZERO privacy vocabulary. The newsletter covering Meta's hardware uses "perv glasses" in the headline.
+
+**Structural Access Dependency:**
+9to5Google displays a "Google Preferred Source" badge on its website — a formal Google endorsement that creates access dependency. This structural relationship aligns with the favorable Google podcast framing, though editorial independence between podcast and newsletter teams may exist.
+
+**Sentiment Score (weighted):**
+- Pixelated #81 (Google): +3/10
+- Sideload #37 (Google/Samsung): +2/10
+- Inbox Newsletter (Meta): -4/10
+
+**Asymmetry Assessment:** HIGH — Same publisher, same hardware category, opposite framing. Google Preferred Source badge creates documented structural incentive.
+
+---
+
+### NEW PATTERN: OpenAI Companion Device Vocabulary Gradient (updated)
+
+OpenAI's upcoming companion device ($200-$300, cameras, microphones, always-on, reads emails/messages, in-home 24/7, 200+ employees) has generated privacy concern coverage across multiple outlets — but the vocabulary used is systematically softer than Meta glasses vocabulary, despite OpenAI's device having GREATER surveillance capabilities:
+
+| Publication | OpenAI Framing | Meta Framing (same pub or equivalent) |
+|-------------|---------------|--------------------------------------|
+| eWeek | "A closer AI companion creates privacy tradeoffs" | "Privacy Advocates Are Up in Arms" (WSJ, same financial press tier) |
+| Digital Trends | "I don't need ChatGPT living beside my bed" (personal choice) | "keep perverts away" (Android Authority, same Designtechnica parent) |
+| WebProNews | "AI at the Bedside: Why a ChatGPT Speaker... Crosses the Line" (analytical) | "pervert glasses" (multiple outlets) |
+| AIstify | "The Privacy Problem" (analytical section header) | "surveillance" (category-wide label applied to Meta only) |
+
+**Capability Comparison:**
+| Capability | Meta Glasses | OpenAI Companion |
+|-----------|-------------|-----------------|
+| Camera | ✅ | ✅ |
+| Microphone | ✅ | ✅ |
+| Always-on | ❌ (button/voice activation) | ✅ (continuous ambient awareness) |
+| Reads emails/messages | ❌ | ✅ |
+| In-home 24/7 | ❌ (worn outside) | ✅ (fixed home device) |
+| Facial recognition | ✅ (NameTag, dormant) | ✅ (Face ID-like, planned) |
+| Privacy alarm vocabulary | "pervert," "surveillance," "invading," "ban" | "companion," "tradeoff," "crosses the line" |
+
+OpenAI's device has 5/6 capabilities vs Meta's 3/6, yet receives vocabulary severity ~2/10 vs Meta's ~9/10.
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 18, 2026, 15:00 UTC)
+
+### Podcast/Broadcast vs Print/Online Coverage Comparison (22+ episodes + 3 new patterns)
+
+| Pattern | Print/Online | Podcast/Broadcast (22+ episodes) | Alignment |
+|---------|-------------|---------|-----------|
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (20 of 22+ episodes) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 22+ episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
+| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny) | **ALIGNED** |
+| Same-publisher dual framing | N/A (new) | ✅ (9to5Google: aspiration for Google, alarm for Meta) | **NEW PATTERN** |
+| Public broadcaster meta-targeting | N/A (new) | ✅ (BBC UK, DW Germany, NBC US — 2/3 publicly funded) | **NEW PATTERN** |
+| OpenAI vocabulary gradient | ✅ (mechanism #159) | ✅ (eWeek/DT/WPN: "companion/tradeoff" vs "pervert/surveillance") | **ALIGNED** |
+| Vocabulary semantic inversion | ✅ (mechanism #158) | ✅ (Samsung = "keep perverts away", Meta = "pervert glasses") | **ALIGNED** |
+
+---
+
+*Last updated: 2026-08-18 15:00 UTC (Aug 18, 8:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox)*
