@@ -1,3 +1,39 @@
+## Iteration #162 — Tue 2026-08-18 06:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #162 — Advance Publications Reddit Q2 2026 Equity-Backed Capital Extraction — Triple-Layer Financial Feedback Loop
+
+**Asymmetry score:** 0.78
+
+**Core finding:** Advance Publications — parent of Condé Nast (WIRED, Vogue, GQ, Vanity Fair, The New Yorker) — has constructed a TRIPLE-LAYER financial feedback loop through Reddit that creates compounding structural incentives for adversarial Meta coverage. This is distinct from mechanism #161 (ad competition surface) — this mechanism maps the CAPITAL STRUCTURE through which Advance directly monetizes Reddit stock appreciation.
+
+**Layer 1 — Ad Revenue Competition (updated with Q2 2026 data):**
+Reddit Q2 2026 (Jul 30): $805M revenue (+61% YoY), $762M ad revenue (+64% YoY), $253M net income (+183% YoY). 8th consecutive quarter above 60% growth. TTM revenue $2.78B, TTM net income $871M, TTM FCF $1.02B. Reddit Max Campaigns revenue +150%. Annualized ad revenue run rate ~$3.05B.
+
+**Layer 2 — Equity-Backed Capital Extraction (NEW):**
+Bloomberg Law: Advance established $1.2B credit facility using 7.8M Reddit shares as collateral ($145-149/share), with derivative purchases to maintain upside exposure. Reddit market cap $31.65B (Aug 17, 2026). Advance ~30% economic stake = ~$9.5B. This means Advance is DIRECTLY CONVERTING Reddit stock appreciation into corporate capital through equity-backed borrowing.
+
+**Layer 3 — Board Governance Integration:**
+Former Condé Nast CEO Robert Sauerberg serves as Reddit Board Vice Chairperson. Advance controls 65.2% voting power (up from 62.0% in 2025, concentrated via insider sales). Direct governance link between publication parent and advertising competitor.
+
+**Compound feedback loop (structural, not conspiratorial):**
+1. WIRED publishes adversarial Meta coverage
+2. Advertiser perception of Meta may shift negatively
+3. Some incremental ad dollars flow from Meta to Reddit
+4. Reddit ad revenue grows → stock price increases
+5. Advance's ~$9.5B Reddit stake appreciates
+6. Advance's $1.2B credit facility can be expanded
+7. Advance capital funds Condé Nast operations (including WIRED)
+
+**6 confounders (3 STRONG, 2 MODERATE, 1 WEAK), 4 cross-references (#161, #1, #11, #69).**
+
+**Changes:**
+- New test: `test_advance_reddit_q2_2026_equity_capital_extraction_triple_feedback_aug18.py` (61 tests, 12 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #162 added with Reddit Q2 2026 financials, market data, equity credit facility, ownership structure, compound feedback loop)
+- Updated: README.md (test count corrected, new file listed)
+- Updated: docs/ARCHITECTURE.md (new file listed)
+
+**Cumulative:** 162 mechanisms, ~15,030 tests, 448 files
+
 ## Iteration #160 — Tue 2026-08-18 03:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ---
