@@ -3022,6 +3022,33 @@ cross_entity_wearables_framing:
       privacy_concerns_raised: false
       camera_surveillance_framing: false
       source_url: "https://www.youtube.com/watch?v=zHn_otv4qN8"
+    snap_specs_2026:
+      tone: "coverage selection silence"
+      article_count: 0
+      privacy_investigations: 0
+      product_details: >
+        Snap SPECS (6th gen) — first consumer AR glasses from Snap. Unveiled at AWE USA 2026
+        on June 16, 2026, by CEO Evan Spiegel. $2,195 with $200 refundable deposit. 4 cameras
+        (spatial understanding, ML, hand tracking), dual Qualcomm Snapdragon processors,
+        OpenAI + Google Gemini multimodal AI integrations, 51° FoV LCoS display, 4-hour
+        battery. Recording syncs to Snapchat. Consumer launch Fall 2026 (US, UK, France).
+      coverage_selection_silence: >
+        WIRED published zero standalone articles about Snap SPECS privacy implications
+        despite 4 cameras (4x Meta's 1 camera) and OpenAI+Gemini AI processing of visual
+        surroundings. Other outlets (FastCompany, Engadget, TechSpot, MacRumors, Road to VR)
+        covered the launch extensively. WIRED published its Meta NameTag exposé just 12 days
+        prior (June 4-5) — same editorial resources, same news cycle, radically different
+        coverage selection. Spiegel's explicit anti-Meta positioning ("copycats up north")
+        received no editorial scrutiny for competitive bias framing. Mechanism #163.
+      hardware_comparison: >
+        Snap SPECS: 4 cameras, OpenAI+Gemini AI, records to Snapchat, $2,195.
+        Meta Ray-Ban: 1 camera, Meta AI, privacy LED, $299-$539.
+        Snap has 4x the cameras and deeper AI integration yet receives zero privacy vocabulary.
+      mechanism_id: 163
+      source_urls:
+        - "https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel"
+        - "https://www.macrumors.com/2026/06/16/snap-specs-ar-glasses/"
+
     meta_glasses:
       reviewer: "Dell Cameron, Dhruv Mehrotra (investigative) — NOT Lauren Goode"
       tone: "institutional surveillance alarm"
