@@ -16256,18 +16256,15 @@ cross_publication_findings:
       which is MORE intimate than Meta NameTag (dormant, public-facing).
     cross_references:
     - mechanism_id: 33
-      mechanism_name: OpenAI-Meta Facial Recognition Privacy Parity
-      relationship: 'Mechanism #33 documents zero privacy scrutiny for OpenAI planned facial recognition. This mechanism (#159)
+      relationship: 'OpenAI-Meta Facial Recognition Privacy Parity — Mechanism #33 documents zero privacy scrutiny for OpenAI planned facial recognition. This mechanism (#159)
         extends the finding from coverage volume to vocabulary register — the same camera capabilities get different WORDS,
         not just different amounts of coverage.'
     - mechanism_id: 158
-      mechanism_name: Multi-Vector Cultural Delegitimization Cascade
-      relationship: 'Mechanism #158 documents 7 simultaneous vectors delegitimizing Meta glasses exclusively. This mechanism
+      relationship: 'Multi-Vector Cultural Delegitimization Cascade — Mechanism #158 documents 7 simultaneous vectors delegitimizing Meta glasses exclusively. This mechanism
         shows the vocabulary cascade extends to coverage of competitor devices — OpenAI gets inverted vocabulary ("companion")
         for identical capabilities.'
     - mechanism_id: 145
-      mechanism_name: Android Police Valnet Per-Click Smart Glasses Coverage Asymmetry
-      relationship: 'Mechanism #145 documents vocabulary asymmetry for Samsung vs Meta at one publication. This mechanism
+      relationship: 'Android Police Valnet Per-Click Smart Glasses Coverage Asymmetry — Mechanism #145 documents vocabulary asymmetry for Samsung vs Meta at one publication. This mechanism
         extends to OpenAI vs Meta across 4+ publications.'
     test_file: tests/test_openai_companion_meta_surveillance_vocabulary_bifurcation_aug18.py
     source_urls:
@@ -20167,7 +20164,8 @@ publications:
     test_file: tests/test_tomsguide_snap_specs_camera_count_paradox_privacy_vocabulary_inversion_aug18.py
     test_count: 62
 
-  - mechanism_id: 165
+  amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry:
+    mechanism_id: 165
     finding_type: coverage_scope_asymmetry
     date: '2026-08-18'
     publication: Tom's Guide (Future plc)
@@ -20334,6 +20332,7 @@ publications:
     mechanism_id: 167
     mechanism_name: 'Conde Nast "Google Zero" Distribution Dependency — AI Platform Content Surfacing Creates Compound Revenue + Distribution Incentive'
     finding_type: compound_distribution_incentive
+    asymmetry_score: 0.89
     date_added: '2026-08-18'
     discovery_date: '2026-08-18'
     publication: WIRED / Condé Nast

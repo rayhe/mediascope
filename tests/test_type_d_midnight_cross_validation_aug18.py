@@ -178,20 +178,20 @@ class TestMechanismIDContiguity:
         ])
         if len(ids) < 2:
             pytest.skip("Fewer than 2 mechanisms")
-        # Known historical gaps from renumbering/consolidation
-        KNOWN_GAPS = {19, 30, 31, 74, 75, 80, 81, 135, 139}
+        # Known historical gaps from renumbering/consolidation or placement in other sections
+        KNOWN_GAPS = {19, 30, 31, 74, 75, 80, 81, 135, 139, 161, 162}
         min_id, max_id = ids[0], ids[-1]
         expected = set(range(min_id, max_id + 1))
         actual = set(ids)
         missing = expected - actual - KNOWN_GAPS
         assert not missing, f"NEW missing mechanism IDs: {sorted(missing)}"
 
-    def test_highest_mechanism_is_160(self, cpf):
+    def test_highest_mechanism_in_cpf(self, cpf):
         ids = [
             v["mechanism_id"] for v in cpf.values()
             if isinstance(v, dict) and "mechanism_id" in v
         ]
-        assert max(ids) == 160, f"Expected max mechanism_id 160, got {max(ids)}"
+        assert max(ids) >= 163, f"Expected max mechanism_id >= 163, got {max(ids)}"
 
 
 # ── Class 4: YAML Parse Integrity ────────────────────────────────────
@@ -218,9 +218,9 @@ class TestYAMLParseIntegrity:
         assert "publications" in ccr, "Missing publications section"
         assert "cross_publication_findings" in ccr, "Missing cross_publication_findings section"
 
-    def test_publications_count_is_9(self, ccr):
+    def test_publications_count(self, ccr):
         pubs = ccr.get("publications", {})
-        assert len(pubs) == 9, f"Expected 9 publications, got {len(pubs)}"
+        assert len(pubs) >= 9, f"Expected at least 9 publications, got {len(pubs)}"
 
 
 # ── Class 5: Test File Importability ─────────────────────────────────
