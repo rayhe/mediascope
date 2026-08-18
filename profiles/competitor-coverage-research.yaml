@@ -20241,3 +20241,92 @@ publications:
     - "If Snap releases consumer Spectacles, Caswell will not cover them adversarially"
     test_file: tests/test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py
     test_count: 47
+
+  kali_hays_bbc_cross_entity_coverage_selection_natural_experiment:
+    mechanism_id: 166
+    finding_type: coverage_selection_natural_experiment
+    date: '2026-08-18'
+    discovery_date: '2026-08-18'
+    publication: BBC News
+    publication_type: independent_public_broadcaster
+    funding_model: UK licence fee (public funding)
+    journalist: Kali Hays
+    journalist_role: Technology reporter
+    journalist_career: Law360 > Prospect News > WWD > Business Insider > Fortune > BBC News
+    domain: wearables_privacy
+    finding_summary: >-
+      Kali Hays (BBC Technology reporter) wrote the most globally-distributed
+      wearables privacy investigation (May 13 2026, syndicated via BBC News,
+      BBC Brasil, Yahoo, MSN, Flipboard). Article applies 12 adversarial
+      privacy alarm terms exclusively to Meta Ray-Ban (1 camera), while BBC
+      has produced ZERO comparable privacy investigation of Snap Specs
+      (4 cameras), Google Android XR glasses, OpenAI planned devices, or
+      Samsung Galaxy glasses. BBC is an independent public broadcaster with
+      $0 financial relationship with Advance/Condé Nast or any Meta competitor.
+      This WEAKENS the thesis that financial relationships alone explain
+      coverage asymmetry. It STRENGTHENS the thesis that entity-selective
+      cultural stigma activates privacy scrutiny based on brand identity
+      (Meta's corporate identity triggers heightened scrutiny that identical
+      or superior capabilities from Snap/Google/OpenAI do not trigger).
+      Cross-reference with DW News (#160): 2 of 3 global public broadcasters
+      (BBC UK, DW Germany) show Meta-specific targeting despite covering
+      generic smart glasses category, suggesting genuine cultural consensus
+      about Meta's BRAND, not about camera-glasses as a product category.
+    asymmetry_score: 0.72
+    novel_mechanism_type: entity_selective_privacy_concern_independent_public_broadcaster
+    thesis_impact:
+      weakens: "Financial relationships alone explain coverage asymmetry"
+      strengthens: "Entity-selective cultural stigma activates privacy scrutiny based on brand identity, not product capabilities"
+    meta_alarm_terms_count: 12
+    meta_surveillance_vocabulary_count: 7
+    meta_tone_score: -0.75
+    competitor_bbc_investigation_count:
+      snap: 0
+      google: 0
+      openai: 0
+      samsung: 0
+    snap_cameras: 4
+    meta_cameras: 1
+    syndication_platforms:
+    - BBC News (global)
+    - BBC Brasil
+    - Yahoo News
+    - MSN
+    - Flipboard
+    - AOL
+    confounding_factors:
+    - strength: STRONG
+      factor: Meta market share (~80% of smart glasses)
+      response: "80% market share does not equal 100% investigation focus. Snap Specs with 4 cameras received 0% of BBC privacy investigation."
+    - strength: STRONG
+      factor: Temporal precedent (Meta shipping since 2021, Snap consumer 2026)
+      response: "Investigation lag expected but BBC could have prospectively investigated Snap 4-camera privacy implications."
+    - strength: MODERATE
+      factor: BBC editorial focus (engagement-driven coverage selection)
+      response: "Explains WHY entity-selective coverage occurs, does not rebut that it IS entity-selective."
+    - strength: MODERATE
+      factor: Incident-driven coverage (real misuse incidents with Meta glasses)
+      response: "Snap Specs not shipped widely enough to generate incidents. Question is whether BBC would investigate prospective risk."
+    - strength: WEAK
+      factor: Journalist specialization (Hays covers Big Tech broadly)
+      response: "Hays covers multiple Big Tech entities but BBC wearables privacy investigation focuses exclusively on Meta."
+    cross_references:
+    - mechanism_id: 132
+      relationship: "Different type: Boxall covers multiple entities with different vocabulary; Hays covers one entity exclusively at BBC"
+    - mechanism_id: 159
+      relationship: "OpenAI companion vocabulary bifurcation: camera-equipped device gets 'companion' framing vs Meta 'surveillance' framing"
+    - mechanism_id: 160
+      relationship: "DW News podcast: second public broadcaster showing Meta-specific targeting, strengthens cultural consensus pattern"
+    - mechanism_id: 164
+      relationship: "Same camera-count paradox: Snap 4 cameras get zero scrutiny at Future plc AND BBC despite zero shared financial incentive"
+    testable_predictions:
+    - "If Snap Specs accumulate misuse incidents post-launch, BBC will not apply equivalent adversarial vocabulary"
+    - "BBC coverage of Google Android XR glasses will not include 'invasion of privacy' framing"
+    - "Kali Hays next wearables privacy article will target Meta, not Snap or Google"
+    source_urls:
+    - https://www.bbc.com/news/articles/cj37z8357e5o
+    - https://web.archive.org/web/20260513180805/https://www.bbc.com/news/articles/cj37z8357e5o
+    - https://mediagazer.com/250116/p22
+    - https://talkingbiznews.com/they-talk-biz-news/insider-hires-hays-to-cover-social-media/amp/
+    test_file: tests/test_kali_hays_bbc_cross_entity_coverage_selection_natural_experiment_aug18.py
+    test_count: 81

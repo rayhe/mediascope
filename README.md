@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~16,251 | Across 452 test files |
+| Tests | ~16,332 | Across 454 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **16251 tests** across 452 test files, each covering a different analytical capability:
+MediaScope has **16332 tests** across 454 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -922,6 +922,7 @@ MediaScope has **16251 tests** across 452 test files, each covering a different 
 | `test_wired_snap_specs_consumer_launch_coverage_selection_silence_aug18.py` | 47 | Mechanism #163: WIRED × Snap SPECS Consumer AR Glasses Coverage Selection Silence. WIRED published ZERO standalone privacy investigations of Snap SPECS — the most camera-dense consumer smart glasses ever launched (4 cameras, dual Snapdragon, OpenAI + Google Gemini multimodal AI, $2,195) — at AWE USA 2026 (Jun 16). 12 days earlier, WIRED published NameTag exposé on Meta's DORMANT facial recognition code (1 camera, never activated). 6+ other outlets (FastCompany, Engadget, TechSpot, MacRumors, Road to VR, 9to5Google) covered Snap SPECS — zero raised privacy alarm. Historical pattern: Lauren Goode's 2018 Snap Spectacles review used "face camera we've been waiting for" framing — zero privacy vocabulary for Snap across 8 years. Financial: Advance (WIRED parent) has $9.5B Reddit stake; Reddit competes with Meta for ad revenue; Snap is not an Advance competitor. Cross-refs #130, #154, #159, #162. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions. 10 classes, 47 tests |
 | `test_wired_meta_remediation_coverage_selection_silence_aug16.py` | 55 | Mechanism #134: WIRED Remediation Coverage Selection Silence — Meta v26 LED Privacy Fix. WIRED published "The Rise of the Ray-Ban Meta Creep" (Mar 2026) documenting LED disabling services + NameTag investigation (Jun 4). On Jul 7, Meta shipped v26 mandatory update: camera disabled if LED tampered/destroyed, listings removed, legal action. WIRED published ZERO articles on fix. 7+ other outlets (Verge, 9to5Google, Digital Trends, Android Police, Road to VR, PetaPixel, Engadget) covered it. 19 days later, Apple N50 delay for "privacy" (no shipped product) received coverage. Novel type: remediation_coverage_selection_silence. Financial: Condé Nast-OpenAI deal, zero Meta deals, Advance-Reddit $10B+. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). Cross-refs #8, #30, #33, #101, #118, #130. 55 tests |
 | `test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py` | 47 | Mechanism #165: Amanda Caswell (Tom's Guide/Future PLC) AI Editor Coverage Scope Asymmetry. AI Editor covers Meta smart glasses across BOTH registers (3 positive: Super Bowl, teleprompter, calorie counting + 1 adversarial: privacy concerns over human review) but covers ZERO competitor smart glasses (Samsung, Snap, Google). Product review editors (England, Prospero, Murphy, Pritchard) cover competitors but write ZERO privacy articles. Result: adversarial smart glasses coverage exists exclusively for Meta because the dual-register journalist covers only Meta. Novel mechanism type: coverage_scope_asymmetry. Extends #164 (same publication camera count paradox) at individual journalist level. Financial: Future PLC (LSE: FUTR) — Samsung/Google are major advertisers. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions. Cross-refs: #107, #132, #146, #151, #164. 10 classes, 47 tests |
+| `test_kali_hays_bbc_cross_entity_coverage_selection_natural_experiment_aug18.py` | 81 | Mechanism #166: Kali Hays (BBC) Coverage Selection as Natural Experiment — Entity-Selective Privacy Concern at Independent Public Broadcaster. BBC Technology reporter wrote the most globally-distributed wearables privacy investigation (May 13 2026, syndicated via BBC News, BBC Brasil, Yahoo, MSN, Flipboard). Article applies 12 adversarial privacy alarm terms exclusively to Meta Ray-Ban (1 camera), while BBC has ZERO comparable investigation of Snap Specs (4 cameras), Google, OpenAI, or Samsung glasses. BBC is an independent public broadcaster with $0 financial relationship with any party. WEAKENS financial-incentive-only thesis; STRENGTHENS entity-selective cultural stigma / brand-tax thesis. Cross-ref with DW News (#160): 2 of 3 global public broadcasters show Meta-specific targeting. Career path (Law360 > WWD > Business Insider > Fortune > BBC) has zero Condé Nast/Advance/Vox stops. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 testable predictions, 4 cross-refs (#132, #159, #160, #164). 10 classes, 81 tests |
 
 ```bash
 # Run all tests
