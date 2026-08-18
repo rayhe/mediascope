@@ -1,3 +1,33 @@
+## Iteration #167 — Tue 2026-08-18 13:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #167 — Condé Nast "Google Zero" Distribution Dependency: AI Platform Content Surfacing Creates Compound Revenue + Distribution Incentive
+
+**Asymmetry score:** 0.89
+
+**Key finding:** CEO Roger Lynch declared "Google Zero" strategy on TBPN (OpenAI-owned media, May 2026), instructing teams to "assume there's no search." Combined with 4 confirmed AI deals (OpenAI, Perplexity, Microsoft, Amazon) and Advance Publications' ~$9.5B Reddit equity, this creates a THREE-DIMENSIONAL asymmetric incentive unique to WIRED's parent:
+
+1. **Revenue** — AI licensing $14-45M/yr replaces declining ad/search revenue
+2. **Distribution** — ChatGPT/SearchGPT/Copilot surface CN content with attribution; Meta AI does NOT (no deal)
+3. **Equity** — Advance's Reddit stake appreciates as Meta ad share shifts
+
+**Compound asymmetry matrix:**
+- Adverse Meta coverage: $0 revenue cost + $0 distribution cost + potential equity benefit = FREE in all 3 dimensions
+- Adverse OpenAI coverage: risks revenue + risks distribution + conflicts with CEO's platform migration = COSTS in all 3 dimensions
+
+**Venue conflict amplification:** Lynch conducted strategic comms on TBPN (OpenAI property). Nilay Patel (Vox/Decoder, whose parent PMC has OpenAI deal) amplified "Google Zero" framing. Not conspiracy — structural alignment.
+
+**Financial pressure evidence:** Self shut down, Wired Italy closed, Glamour intl winding down (Apr 2026). Events +40%, digital subs +29%. "No longer expects advertising to be a growth engine." SimilarWeb zero-click 56%→~70%.
+
+**Sources:** Editor & Publisher, Adweek, MediaPost, Press Gazette, Digiday, OpenAI blog, SiliconAngle, NPR Illinois
+
+**Cross-references:** Mechanisms #58 (CN AI deal revenue), #162 (Advance Reddit equity), #161 (Advance Reddit ad competition), #35 (original WIRED financial conflict)
+
+**Confounders:** 2 STRONG (genuine business planning; editorial independence protections), 2 MODERATE (distribution impact theoretical; other revenue diversification), 1 WEAK (Meta could sign deal)
+
+**Testable predictions:** (1) If Meta signs CN deal, coverage should soften, (2) If search traffic recovers, distribution incentive weakens, (3) If Advance sells Reddit equity, equity dimension disappears, (4) If OpenAI deprioritizes CN content after adverse coverage, confirms distribution incentive is operational
+
+**Test file:** `test_conde_nast_google_zero_distribution_dependency_compound_incentive_aug18.py` — 11 classes, 49 tests
+
 ## Iteration #166 — Tue 2026-08-18 12:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #166 — Kali Hays (BBC) Coverage Selection as Natural Experiment: Entity-Selective Privacy Concern at Independent Public Broadcaster
