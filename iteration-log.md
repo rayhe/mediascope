@@ -1,3 +1,81 @@
+## Iteration #160 — Tue 2026-08-18 03:00 PT (Type A: Competitor Coverage Deep Dive)
+
+---
+
+### Iteration #161 — Type B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-18 (04:00 PT)
+**Mechanism:** #160 — Nadeem Sarwar (Digital Trends / Designtechnica Corp) Managing Editor Cross-Entity Editorial Direction Pattern
+**Asymmetry score:** 0.82
+
+**Core finding:** Nadeem Sarwar, Managing Editor of Digital Trends (Designtechnica Corp), demonstrates cross-entity vocabulary bifurcation BOTH in his own bylined articles AND through editorial direction of subordinate writers. This is the first mechanism documenting the editorial hierarchy from managing editor to staff writer within a single publication.
+
+**Cross-entity evidence:**
+- **Meta Ray-Ban Display (Sep 20, 2025):** 12+ alarm terms: "hoarded personal data," "feeding your life to a bad machine," "ticking time bomb," "pretty scary," "dangerous rubble," "lackadaisical approach to privacy," "digital harms," "privacy scares." Explicit editorial refusal in headline: "I'll skip." Tone: -0.85.
+- **Samsung smart glasses (Mar 2026):** Camera at eye level with SAME approach as Meta — Sarwar EXPLICITLY writes "it's essentially the same approach Meta took with the Ray-Ban glasses." ZERO alarm terms. ZERO privacy vocabulary. Camera presented as neutral feature. Tone: +0.45.
+- **OpenAI AI devices (Sep 19, 2025):** Cameras, sensors, personal email access. ZERO alarm terms. Neutral framing. Tone: +0.20.
+
+**Novel element:** The Samsung article contains an explicit acknowledgment of hardware equivalence with Meta ("it's essentially the same approach Meta took") while applying zero privacy scrutiny. This proves the vocabulary differential is driven by entity identity, not product capabilities. Sarwar KNOWS Samsung's camera does the same thing as Meta's — he says so — yet only Meta gets "hoarded personal data" and "ticking time bomb."
+
+**Editorial direction chain:** As Managing Editor, Sarwar sets editorial direction for staff writers including Andy Boxall (mechanism #132), who shows the identical vocabulary bifurcation (7+ alarm for Meta, 0 for Snap Specs with 4 cameras, 0 for Samsung). When the managing editor AND a subordinate writer show the same pattern, the inference is institutional editorial direction, not individual journalist bias.
+
+**Financial context:** Digital Trends (Designtechnica Corp) depends on Google programmatic advertising. Samsung is Google's primary hardware partner for Android XR. Meta is a structural competitor to Google (ad market, AI models, Quest vs Android XR, Meta glasses vs Samsung/Google glasses).
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 4 cross-references (#132, #159, #33, #146).**
+
+**Changes:**
+- New test: `test_nadeem_sarwar_digital_trends_managing_editor_cross_entity_aug18.py` (62 tests, 10 classes)
+- Updated: `competitor-coverage-research.yaml` (mechanism #160 added)
+- Updated: README.md (448 files, ~15,956 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added, counts updated)
+
+**Cumulative:** 160 mechanisms, ~15,956 tests, 448 files
+
+**Focus: OpenAI "Companion" vs Meta "Surveillance" — Cross-Publication Vocabulary Bifurcation (Mechanism #159)**
+
+**DISCOVERY: Multiple publications use entirely different semantic registers for camera-equipped devices based on entity identity, not product capabilities**
+
+OpenAI's planned smart speaker has cameras, Face ID-like facial recognition, always-on environmental awareness, and proactive user observation capabilities. Meta's glasses have cameras with a privacy LED, optional recording, and dormant (not activated) NameTag code. Yet across 4+ publications, the vocabulary is completely bifurcated by entity:
+
+**Publication-by-publication evidence:**
+
+| Publication | OpenAI Coverage | Alarm Terms | Meta Coverage | Alarm Terms | Delta |
+|-------------|----------------|-------------|---------------|-------------|-------|
+| MacRumors (Jul 14 vs Feb 13) | "humanlike AI companion," "camera for understanding surroundings," "alive" | 0 | "facial recognition," "privacy concerns," "attack," "surreptitious" | 8 | 8 |
+| Android Authority (Aug 7 vs Jul 27) | "AI companion," "premium look," "natural conversations" | 0 | "privacy nightmare," "hot water," "privacy fears" | 4 | 4 |
+| Inc. (Jul 14) | "direct challenge," "jaw-droppingly good," "coolest piece of technology" | 0 | (mechanism #146: redirected attribution) | 3+ | 3+ |
+| TechRepublic (Jul 16) | "companion," "portable," "screen-free" | 0 | — | — | — |
+
+**VOCABULARY TAXONOMY:**
+- **Aspirational register (OpenAI exclusively):** companion, alive, humanlike, personalized, proactive, personality, premium, understand surroundings, jaw-droppingly good, coolest piece of technology, peaceful, active participant
+- **Adversarial register (Meta exclusively):** surveillance, dystopian, invasion of privacy, creepy, nightmarish, privacy nightmare, spy camera, covert filming, criminal complaint, pervert glasses, hot water
+
+**KEY CONFOUNDER RESPONSE — Google Glass Precedent:**
+Google Glass received adversarial vocabulary ("Glasshole") PRE-LAUNCH in 2012-2013, proving pre-launch status does not shield camera devices from adversarial framing. OpenAI gets companion framing despite having MORE invasive planned capabilities than Google Glass ever had. No publication has even ASKED about OpenAI's camera privacy implications — the absence extends beyond alarm vocabulary to investigative curiosity itself.
+
+**ADDITIONAL CONFOUNDER RESPONSE — Home vs Public Space:**
+OpenAI's device cameras are always-on in the HOME (the most private space), while Meta glasses cameras require manual activation in public. If the social threat model argument were applied consistently, the OpenAI device should receive MORE privacy scrutiny, not zero.
+
+**NEW TEST FILE: test_openai_companion_meta_surveillance_vocabulary_bifurcation_aug18.py (9 classes, 53 tests, all passing)**
+- Mechanism existence and structural fields (9 tests)
+- OpenAI vs Meta capability documentation (10 tests)
+- MacRumors vocabulary bifurcation (7 tests)
+- Android Authority vocabulary bifurcation (5 tests)
+- Inc. Mansueto coverage (3 tests)
+- Vocabulary taxonomy (9 tests)
+- Cross-references to #33, #145, #158 (4 tests)
+- Confounder analysis with responses (4 tests)
+- Doc sync integrity (2 tests)
+
+**FILES MODIFIED:**
+- `profiles/competitor-coverage-research.yaml` — mechanism #159 added
+- `tests/test_openai_companion_meta_surveillance_vocabulary_bifurcation_aug18.py` — NEW (53 tests)
+- `README.md` — test count updated (445 files, ~14,803 tests), new file listed
+- `docs/ARCHITECTURE.md` — test count updated, new file listed
+
+**Verification:** 53/53 tests passing. YAML parses clean.
+
+**Stats:** 445 test files, ~14,803 tests, 159 mechanisms.
+
 ## Iteration #159 — Tue 2026-08-18 02:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Focus: Multi-Vector Cultural Delegitimization Cascade (Mechanism #158)**
