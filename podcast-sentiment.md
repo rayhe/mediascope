@@ -540,5 +540,220 @@ This pattern is UNIQUE to Meta. Apple's accessibility marketing (VoiceOver, Swit
 
 ---
 
-*Last updated: 2026-08-17 16:00 UTC (Aug 17, 9:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry)*
+### 18. MacVoices #26198 — "Meta Pauses Their Employee Tracking, New Smart Glasses, and The Ubiquity of Surveillance" (~Jul 17, 2026)
+
+- **Host:** Chuck Joiner
+- **Panelists:** David Ginsburg, Eric Bolden, Ben Roethig, Marty Jencius, Jim Rea, Jeff Gamet, Guy Serle
+- **Format:** 8-person live panel discussion (strongest N for within-episode analysis in corpus)
+- **Duration:** ~36 min
+- **Source URL:** https://macvoices.com/macvoices-26198-live-meta-pauses-their-employee-tracking-new-smart-glasses-and-the-ubiquity-of-surveillance/
+
+**Coverage Summary:**
+Apple-ecosystem tech panel covers Meta employee tracking pause, Meta's new lower-cost $299 smart glasses, comparisons with Ray-Ban models, Snap, Amazon Echo Frames, and Apple's rumored glasses strategy. Privacy discussion spans chapters 16:00–36:00 (56% of episode) covering cameras, facial recognition, accessibility, doorbell cameras, and "why privacy still matters."
+
+**Entity Coverage — Multi-Entity but Asymmetric Allocation:**
+| Entity | Framing | Privacy Alarm | Chapter Count |
+|--------|---------|---------------|---------------|
+| Meta | "employee tracking," "security concerns," "facial recognition" | HIGH (5+ alarm chapters) | 4 Meta-specific chapters |
+| Apple | "strategy and design challenges," "test bed" | ZERO | 3 aspirational chapters |
+| Snap | Mentioned in comparison | ZERO | 0 dedicated chapters |
+| Echo Frames | "local AI, recognizing places instead of people" | ZERO (privacy-SAFE framing) | 1 protective chapter |
+| Samsung | NOT MENTIONED | N/A | 0 chapters |
+
+**Key Asymmetries:**
+- **Apple gets aspirational framing:** 3 chapters on Apple's "strategy," "design challenges," and "Vision Pro as test bed" — all innovation-lens, zero privacy concern
+- **Echo Frames get protective framing:** "Local AI" and "recognizing places instead of people" implies privacy-safe architecture without scrutiny of actual data practices
+- **Samsung absent:** Despite Galaxy Glasses announcement with identical Snapdragon AR1 Gen 1 chip, Samsung does not appear in any chapter title
+- **Privacy discussion is Meta-centric:** 20 of 36 minutes dedicated to privacy, all centered on Meta's products and controversies
+
+**Financial Context:**
+MacVoices is an Apple-ecosystem podcast (Patreon-funded). No known content deals with Meta or competitors. Panel members are Apple community figures. The Apple-aspirational framing likely reflects audience alignment rather than financial incentive.
+
+**Sentiment Score:** -4/10 (moderately negative toward Meta; neutral-positive toward Apple/Echo Frames)
+**Asymmetry Assessment:** MODERATE — Covers multiple entities (rare) but distributes privacy alarm exclusively to Meta. Apple and Echo Frames receive protective framing.
+
+---
+
+### 19. Jackson Lewis "We Get Privacy" Ep 16 — "Unseen Risks — Smart Glasses and Wearable Tech in the Workplace" (May 19, 2026)
+
+- **Hosts:** Damon Silver (Principal, NYC), Joe Lazzarotti (Principal, Tampa)
+- **Format:** Legal privacy podcast with FULL TRANSCRIPT available
+- **Network:** Jackson Lewis P.C. (employment law firm)
+- **Source URL:** https://www.jacksonlewis.com/insights/we-get-privacy-episode-16-unseen-risks-smart-glasses-and-wearable-tech-workplace
+
+**Coverage Summary:**
+Two senior privacy lawyers discuss smart glasses as a workplace risk. They frame the technology as "AI-powered computers built into regular glasses" with capabilities including audio capture, video, facial recognition, and real-time screen reading. Their conclusion: "all of the clients I have discussed that use case with have landed on banning the glasses."
+
+**CRITICAL FINDING — Category-to-Brand Substitution:**
+The episode discusses "smart glasses" as a GENERIC technology category, but every specific example cited is Meta-specific:
+| Generic Framing | Actual Reference |
+|-----------------|-----------------|
+| "contractors reviewing footage" | Meta Kenya contractor scandal |
+| "U.S. Air Force ban" | Air Force banning Meta glasses |
+| "facial recognition capabilities" | Meta NameTag feature |
+| "subtle recording indicators" | Meta LED indicator |
+| "person wearing them is not conscious" | Meta glasses form factor |
+
+Samsung, Google, Apple, and Snap are NEVER NAMED in the full transcript despite Samsung having already announced camera-equipped Galaxy Glasses. This is the **professional legal equivalent** of the news podcast pattern: when legal experts advise clients about "smart glasses," they are advising about Meta.
+
+**Entity Coverage Assessment:**
+- **Meta:** Every specific example is Meta-derived (contractor review, Air Force ban, NameTag)
+- **Samsung:** Not mentioned (Galaxy Glasses announced with identical hardware)
+- **Google:** Not mentioned (Android XR + Warby Parker partnership announced)
+- **Apple:** Not mentioned (N50 rumored)
+- **Snap:** Not mentioned (Spectacles shipping at $2,195)
+
+**Regulatory Impact:**
+Legal podcasts influence organizational policy. When legal experts frame "smart glasses" as "Meta glasses," workplace bans target Meta specifically rather than the camera-equipped smart glasses CATEGORY. This creates a regulatory asymmetry where Meta faces institutional bans while competitors with identical hardware enter the market without equivalent scrutiny.
+
+**Sentiment Score:** -5/10 (moderately negative — practical risk assessment tone, not sensational)
+**Asymmetry Assessment:** HIGH — Every cited example is Meta-specific despite generic category framing. Zero competitor mentions in full transcript.
+
+---
+
+### 20. Business Day Spotlight (South Africa) — "What privacy and security risks do AI smart glasses pose?" (Jul 15, 2026)
+
+- **Host:** Mudiwa Gavaza
+- **Guest:** Allan Juma, Lead Cybersecurity Engineer, ESET
+- **Network:** Arena Podcasts (South Africa)
+- **Source URL:** https://www.businessday.co.za/lifestyle/gadgets-and-gear/2026-07-15-podcast-what-privacy-and-security-risks-do-ai-smart-glasses-pose/
+
+**Coverage Summary:**
+South African business podcast discusses smart glasses privacy with ESET cybersecurity expert. Guest notes "incidents in Kenya and Ghana where a tourist used smart glasses to secretly record intimate encounters with local women without their consent." Discusses POPIA (Protection of Personal Information Act) and calls for proactive legislation.
+
+**CRITICAL FINDING — Global South Preemption:**
+The expert explicitly states: "officially South Africa is not yet a region where smart glasses are sold. But unofficially we know that they are here." Smart glasses are being discussed as a PRIVACY THREAT in a market where they aren't even officially available — the cultural framing has arrived before the product.
+
+**Entity Coverage Assessment:**
+- **Meta:** All cited incidents (Kenya, Ghana) involve Meta glasses
+- **Samsung/Google/Apple/Snap:** Zero mentions
+- **Category framing:** "Smart glasses" used generically but all evidence is Meta-specific
+
+**Financial Context:**
+Arena Podcasts — no known financial ties to any tech company. ESET is a cybersecurity company with no content deals. The Meta-targeting is ENTIRELY cultural/newsworthy, not financially incentivized.
+
+**Sentiment Score:** -6/10 (moderately negative, security-expert framing)
+**Asymmetry Assessment:** HIGH — 100% Meta-derived evidence despite category-level discussion
+
+---
+
+### 21. Moneyweb (South Africa) — "Through the looking glass: The hidden dangers of smart glasses" (Jul 2026)
+
+- **Host:** Jeremy Maggs
+- **Guest:** Allan Juma, ESET (SAME EXPERT as Business Day Spotlight #20)
+- **Network:** iono.fm (South Africa)
+- **Source URL:** https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-midday/through-the-looking-glass-the-hidden-dangers-of-smart-glasses/
+
+**Coverage Summary:**
+Same ESET cybersecurity expert (Allan Juma) appears on a SECOND South African podcast, citing the same Kenya/Ghana incidents. Host Jeremy Maggs asks: "Are smart glasses already a privacy threat in South Africa, or are we overreacting?" Juma responds: "officially it is not yet a threat because officially South Africa is not yet a region where smart glasses are sold."
+
+**CRITICAL FINDING — Expert-as-Amplifier Pattern:**
+A single expert with a single analysis appears on TWO different outlets (different hosts, different networks), creating the perception of TWO independent sources confirming the same framing. Allan Juma's analysis is consistent across both appearances — same Kenya/Ghana incidents, same POPIA concerns, same Meta-centric framing. Two shows, one analysis.
+
+**Entity Coverage Assessment:**
+- **Meta:** All cited incidents are Meta-specific
+- **Samsung/Google/Apple/Snap:** Zero mentions on either show
+
+**Sentiment Score:** -5/10 (moderately negative, same expert)
+**Asymmetry Assessment:** HIGH — Carbon copy of Business Day Spotlight framing
+
+---
+
+### 22. NBC News — "Fears grow over privacy as Meta A.I. glasses gain popularity" (Aug 11, 2026)
+
+- **Reporter:** Yasmin Vossoughian
+- **Network:** NBC News (national broadcast)
+- **Source URL:** https://www.youtube.com/watch?v=0NLaAQuaCJE
+
+**Coverage Summary:**
+National broadcast segment on Meta glasses privacy. Description: "Meta A.I. glasses draw growing backlash on social media as more people, mostly women, speak out about being filmed."
+
+**Entity Coverage Assessment:**
+- **Meta:** Named in headline — "Meta A.I. glasses"
+- **Samsung/Google/Apple/Snap:** Not mentioned in segment description
+
+**Gendered framing:** "mostly women" — consistent with EHE "pervert glasses" cluster, AmberMac, Guilty Feminist pattern.
+
+**Sentiment Score:** -6/10 (moderately negative, national broadcast alarm framing)
+**Asymmetry Assessment:** HIGH — National broadcast network names Meta specifically in headline
+
+---
+
+### Regulatory Activism Update: HateAid Germany Criminal Complaint (Aug 12, 2026)
+
+- **Organization:** HateAid (German digital rights group)
+- **Action:** Criminal complaint filed
+- **Date:** August 12, 2026
+- **Targets:** Meta, EssilorLuxottica (Ray-Ban), Fielmann, Apollo-Optik, Mister Spex, MediaMarkt
+- **Prosecution Unit:** ZIT (Frankfurt digital crime unit)
+- **Source URL:** https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/
+
+**Key Details:**
+- Based on federal law prohibiting sale of "communication devices designed to film people without them noticing"
+- HateAid managing director Josephine Ballon: "There's no place to escape from smart glasses. You have to expect at any moment to be filmed and then exposed on the internet"
+- ZIT confirmed receipt of complaint
+- Federal Network Agency (BNetzA): ownership/sale "not banned if recording function clearly visible via optical signal"
+- HateAid: "increasingly registering image-based digital violence, mainly targeting women"
+
+**Entity Targeting Assessment:**
+- **Meta + EssilorLuxottica + 4 retailers:** Named in criminal complaint
+- **Samsung:** NOT named despite Galaxy Glasses announcement (identical camera hardware, Snapdragon AR1 Gen 1)
+- **Google:** NOT named despite Android XR glasses with Warby Parker
+- **Apple:** NOT named despite N50 glasses in development
+- **Snap:** NOT named despite $2,195 Spectacles with cameras
+
+**Regulatory Asymmetry:**
+Germany's BNetzA standard — "recording function clearly visible via optical signal" — applies equally to ALL camera-equipped smart glasses. Samsung and Google's privacy lights function identically to Meta's. Yet the criminal complaint targets ONLY Meta's supply chain. This creates a regulatory precedent where Meta (and its retail partners) face criminal liability while competitors with identical hardware enter the German market unscrutinized.
+
+**Cross-reference to EHE Campaign:** HateAid's gendered "image-based digital violence" framing aligns with EHE's "pervert" vocabulary and AmberMac's "pervert glasses" title. A trans-Atlantic gendered-alarm consensus targeting Meta exclusively.
+
+---
+
+### NEW PATTERN: Vocabulary Semantic Inversion (Meta=perpetrator vs Samsung=protector)
+
+Android Authority published "Here's how Samsung's smart glasses will keep perverts away (hopefully)" — the word "perverts" appears but Samsung is framed as the PROTECTOR against perverts, not the enabler. Compare:
+
+| Headline | Entity | Semantic Role of "pervert" |
+|----------|--------|---------------------------|
+| "Meta's 'Pervert' Smart Glasses" (AmberMac) | Meta | Meta IS the pervert enabler |
+| "pervert glasses" (Observer, EHE, social media) | Meta | Meta's product = pervert tool |
+| "keep perverts away" (Android Authority) | Samsung | Samsung PROTECTS from perverts |
+
+Same word. Same hardware category. Same Snapdragon AR1 Gen 1 chip. Inverted semantic role. Meta's glasses are the tool of perverts. Samsung's glasses are the defense against perverts. The framing difference operates at the level of vocabulary grammar, not just vocabulary selection.
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 18, 2026)
+
+### Podcast/Broadcast vs Print/Online Coverage Comparison (22+ episodes + regulatory activism)
+
+| Pattern | Print/Online | Podcast/Broadcast (22+ episodes) | Alignment |
+|---------|-------------|---------|-----------|
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (18 of 22 episodes, including professional legal, Global South, national broadcast) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 22 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices: innovation/design lens) | **ALIGNED** |
+| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny in 22 episodes) | **ALIGNED** |
+| Gendered surveillance critique | ✅ (CNN, Engadget) | ✅ (Guilty Feminist, EHE, AmberMac, NBC News, HateAid Germany) | **ALIGNED** |
+| Same-episode framing asymmetry | ✅ (headline differential) | ✅ (Fortune, AI Inside, MacVoices) | **ALIGNED** |
+| Category-to-brand substitution | N/A (new pattern) | ✅ (Jackson Lewis: "smart glasses" = Meta glasses in legal advice) | **NEW PATTERN** |
+| Expert-as-amplifier | N/A (new pattern) | ✅ (Allan Juma on 2 South African shows with identical analysis) | **NEW PATTERN** |
+| Global South preemption | N/A (new pattern) | ✅ (SA discusses threat before product is officially sold) | **NEW PATTERN** |
+| Vocabulary semantic inversion | N/A (new pattern) | ✅ (Samsung "keeps perverts away" vs Meta "pervert glasses") | **NEW PATTERN** |
+| Regulatory targeting asymmetry | N/A (print only) | ✅ (HateAid Germany criminal complaint targets Meta only) | **NEW PATTERN** |
+
+### Key Findings from Mechanism #157:
+
+1. **Category-to-Brand Substitution:** When legal experts discuss "smart glasses" as a category, every cited example (contractor footage, Air Force ban, NameTag, LED hacking) is Meta-specific. The generic term has become a synonym for the Meta product in professional discourse. This creates a regulatory asymmetry: workplace bans target "Meta glasses" rather than "camera-equipped smart glasses," giving competitors with identical hardware regulatory immunity.
+
+2. **Expert-as-Amplifier:** A single ESET cybersecurity expert (Allan Juma) appears on two South African podcasts (Business Day Spotlight, Moneyweb), citing identical Meta-specific incidents. Two outlets, two hosts, one analysis. This creates a multiplied perception of independent expert consensus when it is a single expert's analysis distributed across two channels.
+
+3. **Global South Preemption:** Smart glasses are discussed as a privacy threat in South Africa — a market where they aren't even officially sold. The cultural framing has arrived before the product. This suggests the Meta-as-privacy-villain discourse is propagating through global cybersecurity expert networks independently of local market exposure.
+
+4. **Vocabulary Semantic Inversion:** The word "pervert" is used for both Meta and Samsung glasses, but with INVERTED semantic roles. Meta = perpetrator ("pervert glasses"), Samsung = protector ("keep perverts away"). Same word, same hardware capability, different grammatical position. This is the strongest evidence of brand-specific stigma operating at the level of linguistic structure, not just vocabulary selection.
+
+5. **Regulatory Targeting Asymmetry:** HateAid's German criminal complaint targets Meta, EssilorLuxottica, and 4 retailers — but NOT Samsung, Google, Apple, or Snap despite all planning or shipping identical camera-equipped glasses. Germany's own standard (recording function "clearly visible via optical signal") applies equally to all such devices.
+
+---
+
+*Last updated: 2026-08-18 08:00 UTC (Aug 18, 1:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence)*

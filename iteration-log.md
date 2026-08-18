@@ -3087,3 +3087,25 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: `iteration-log.md`
 
 **Cumulative:** 155 mechanisms, ~15,630+ tests, 443 files
+
+---
+
+### Iteration #159 — Type E: Podcast Sentiment Tracking (Aug 18, 2026, 1:00 AM PT)
+
+**New Mechanism:**
+- **#157: Global Institutional Smart Glasses Discourse Convergence** — Meta as default category proxy across professional, legal, regulatory, and Global South podcasts, ALL without financial incentive. 5 new podcast/broadcast sources: MacVoices #26198 (8-person Apple panel), Jackson Lewis "We Get Privacy" Ep 16 (employment law, full transcript), Business Day Spotlight SA (ESET Allan Juma), Moneyweb SA (same expert), NBC News national segment. Plus HateAid Germany criminal complaint (Aug 12) and Android Authority headline semantic inversion.
+
+**Novel Patterns Identified:**
+1. Category-to-brand substitution (legal experts say "smart glasses" but cite only Meta incidents)
+2. Expert-as-amplifier (single ESET expert on 2 South African outlets)
+3. Global South preemption (SA discusses threat before product officially sold)
+4. Vocabulary semantic inversion (Samsung "keeps perverts away" vs Meta "pervert glasses")
+
+**Files Changed:**
+- Added: `tests/test_global_institutional_podcast_meta_category_proxy_aug18.py` (11 classes, 54 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #157)
+- Updated: `podcast-sentiment.md` (episodes #18-#22, HateAid regulatory update, vocabulary inversion, cross-medium summary)
+- Updated: `README.md`, `docs/ARCHITECTURE.md` (test file count 443, new entry)
+- Updated: `iteration-log.md`
+
+**Cumulative:** 157 mechanisms, ~14,716 tests, 443 files

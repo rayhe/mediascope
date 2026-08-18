@@ -14236,6 +14236,7 @@ cross_publication_findings:
     - mechanism_id: 136
     - mechanism_id: 137
     - mechanism_id: 148
+    - mechanism_id: 157
     test_file: tests/test_podcast_ecosystem_privacy_vocabulary_amplification_aug16.py
   android_police_valnet_per_click_smart_glasses_coverage_asymmetry:
     mechanism_id: 145
@@ -15025,6 +15026,7 @@ cross_publication_findings:
     - 130
     - 136
     - 137
+    - 157
     source_urls:
     - https://grahamcluley.com/smashing-security-podcast-455/
     - https://www.youtube.com/watch?v=TVdoEPg42pQ
@@ -15431,6 +15433,152 @@ cross_publication_findings:
       - https://appleinsider.com/articles/26/08/13/siri-ai-could-get-a-boost-from-news-content-with-new-publisher-deal
       - https://medium.com/@computeleap/anthropics-s-1-what-a-965b-ipo-filing-changes-c13324eb7bbd
     test_file: tests/test_apple_siri_ai_triple_layer_publisher_financial_architecture_aug17.py
+  global_institutional_podcast_meta_category_proxy:
+    mechanism_id: 157
+    mechanism_name: Global Institutional Smart Glasses Discourse Convergence
+    date_added: '2026-08-18'
+    discovery_date: '2026-08-18'
+    finding_type: cultural_consensus_institutional_spread
+    domain: cross_medium_podcast_analysis
+    rotation_type: E
+    finding_summary: >
+      The Meta-as-default-privacy-villain pattern extends beyond entertainment/news
+      podcasts into professional legal, regulatory, and Global South business journalism
+      podcasts — ALL without financial incentive. When experts in law (Jackson Lewis
+      "We Get Privacy" Ep 16), cybersecurity (ESET Allan Juma on two South African
+      podcasts), Apple-ecosystem tech panels (MacVoices #26198, 8-person panel), and
+      regulatory activism (HateAid Germany criminal complaint Aug 12) discuss "smart
+      glasses privacy," they are discussing Meta. Samsung, Google, Apple, and Snap
+      are either never mentioned or receive protective/aspirational framing. Novel
+      findings: (1) CATEGORY-TO-BRAND SUBSTITUTION — legal experts say "smart glasses"
+      but cite only Meta-specific incidents (contractor footage, Air Force ban, NameTag).
+      (2) EXPERT-AS-AMPLIFIER — single ESET expert (Allan Juma) appears on two South
+      African outlets (Business Day Spotlight, Moneyweb), creating multiplied perception
+      of independent analysis. (3) GLOBAL SOUTH PREEMPTION — smart glasses discussed
+      as privacy threat in South Africa where they aren't officially sold yet. (4)
+      VOCABULARY SEMANTIC INVERSION — Android Authority headline "Samsung's smart glasses
+      will keep perverts away" vs "Meta's pervert glasses." Same word, inverted semantic
+      role (Samsung=protector, Meta=perpetrator). (5) MacVoices #26198 covers 4 entities
+      (Meta, Snap, Echo Frames, Apple) but allocates 20 of 36 minutes to privacy discussion
+      centered on Meta; Apple gets aspirational "strategy and design" framing; Echo Frames
+      get "local AI, recognizing places instead of people" (privacy-safe framing).
+    podcast_sources:
+      macvoices_26198:
+        episode: "MacVoices #26198: Live! - Meta Pauses Their Employee Tracking, New Smart Glasses, and The Ubiquity of Surveillance"
+        date: '2026-07-17'
+        panelists: 8
+        entities_covered: [Meta, Snap, Echo Frames, Apple]
+        privacy_discussion_pct: 56
+        samsung_mentioned: false
+        sentiment_score: -4
+        asymmetry: MODERATE
+      jackson_lewis_ep16:
+        episode: "We Get Privacy Ep 16: Unseen Risks — Smart Glasses and Wearable Tech in the Workplace"
+        date: '2026-05-19'
+        hosts: [Damon Silver, Joe Lazzarotti]
+        format: full_transcript_available
+        meta_specific_references: 5
+        competitor_mentions: 0
+        recommendation: ban
+        sentiment_score: -5
+        asymmetry: HIGH
+      business_day_spotlight_sa:
+        episode: "PODCAST | What privacy and security risks do AI smart glasses pose?"
+        date: '2026-07-15'
+        host: Mudiwa Gavaza
+        guest: Allan Juma (ESET)
+        network: Arena Podcasts
+        country: South Africa
+        meta_specific_incidents: [Kenya recording, Ghana recording]
+        competitor_mentions: 0
+        sentiment_score: -6
+        asymmetry: HIGH
+      moneyweb_sa:
+        episode: "Through the looking glass: The hidden dangers of smart glasses"
+        date: '2026-07'
+        host: Jeremy Maggs
+        guest: Allan Juma (ESET)
+        network: iono.fm
+        country: South Africa
+        same_expert_as: business_day_spotlight_sa
+        competitor_mentions: 0
+        sentiment_score: -5
+        asymmetry: HIGH
+      nbc_news_segment:
+        episode: "Fears grow over privacy as Meta A.I. glasses gain popularity"
+        date: '2026-08-11'
+        reporter: Yasmin Vossoughian
+        network: NBC News
+        meta_named_in_headline: true
+        gendered_framing: true
+        sentiment_score: -6
+        asymmetry: HIGH
+    regulatory_activism:
+      hateaid_germany:
+        date: '2026-08-12'
+        organization: HateAid
+        action: criminal complaint
+        targets: [Meta, EssilorLuxottica/Ray-Ban, Fielmann, Apollo-Optik, Mister Spex, MediaMarkt]
+        competitors_not_targeted: [Samsung, Google, Apple, Snap]
+        legal_basis: federal digital data protection law
+        prosecution_unit: ZIT (Frankfurt)
+        gendered_focus: image-based digital violence mainly targeting women
+    vocabulary_semantic_inversion:
+      meta_framing: perpetrator ("pervert glasses", "Ray-Ban Meta creep")
+      samsung_framing: protector ("keep perverts away")
+      same_word: perverts/pervert
+      inverted_semantic_role: true
+      identical_hardware: Snapdragon AR1 Gen 1
+    confounders:
+      - strength: STRONG
+        factor: >
+          Meta IS the dominant smart glasses vendor (80%+ market share, 7M+ units 2025).
+          Market dominance legitimately justifies disproportionate scrutiny coverage.
+      - strength: STRONG
+        factor: >
+          Meta's Kenya contractor scandal, NameTag leak, and pickup artist incidents are
+          genuinely newsworthy events with no Samsung/Google/Apple equivalents yet.
+      - strength: MODERATE
+        factor: >
+          Samsung Galaxy Glasses had not shipped at the time of most analyzed episodes.
+          Legal and cybersecurity experts may not discuss pre-launch products.
+      - strength: MODERATE
+        factor: >
+          Professional podcasts have narrower scope — discussing one company's product
+          issues is standard practice, not necessarily asymmetric.
+      - strength: WEAK
+        factor: >
+          Jackson Lewis full transcript may contain passing references to other companies
+          not captured in summary analysis.
+    testable_predictions:
+      - Samsung Galaxy Glasses will NOT face equivalent criminal complaints or organizational
+        bans within 6 months of launch despite identical camera hardware
+      - Legal/workplace podcasts discussing Samsung glasses post-launch will frame them
+        as "lessons learned from Meta" rather than applying equivalent alarm vocabulary
+      - Additional Global South markets (India, Brazil, Nigeria) discussing smart glasses
+        privacy will reference Meta incidents exclusively, even if Samsung/Google launch first
+    cross_references:
+      - mechanism_id: 135
+        relationship: extends_cultural_base_rate
+        note: Raymond Wong (Gizmodo) cultural base rate now confirmed at global institutional level
+      - mechanism_id: 144
+        relationship: extends_podcast_ecosystem
+        note: Podcast ecosystem amplification now includes professional/legal and Global South podcasts
+      - mechanism_id: 153
+        relationship: complements_same_episode
+        note: MacVoices #26198 shows within-episode framing differential with 8 panelists
+      - mechanism_id: 148
+        relationship: parallel_cross_medium
+        note: Expert-as-amplifier pattern parallels Vox Media cross-medium portability
+    source_urls:
+      - https://macvoices.com/macvoices-26198-live-meta-pauses-their-employee-tracking-new-smart-glasses-and-the-ubiquity-of-surveillance/
+      - https://www.jacksonlewis.com/insights/we-get-privacy-episode-16-unseen-risks-smart-glasses-and-wearable-tech-workplace
+      - https://www.businessday.co.za/lifestyle/gadgets-and-gear/2026-07-15-podcast-what-privacy-and-security-risks-do-ai-smart-glasses-pose/
+      - https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-midday/through-the-looking-glass-the-hidden-dangers-of-smart-glasses/
+      - https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/
+      - https://www.youtube.com/watch?v=0NLaAQuaCJE
+      - https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
+    test_file: tests/test_global_institutional_podcast_meta_category_proxy_aug18.py
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
