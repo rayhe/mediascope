@@ -15745,6 +15745,148 @@ cross_publication_findings:
       - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
     test_file: tests/test_multi_vector_cultural_delegitimization_cascade_aug18.py
 
+  openai_companion_meta_surveillance_cross_publication_vocabulary_bifurcation:
+    mechanism_id: 159
+    mechanism_name: OpenAI Companion vs Meta Surveillance — Cross-Publication Vocabulary Bifurcation
+    date_added: '2026-08-18'
+    discovery_date: '2026-08-18'
+    finding_type: competitor_coverage_deep_dive
+    domain: cross_publication_vocabulary_analysis
+    rotation_type: A
+    finding_summary: >
+      Multiple publications use aspirational "companion" vocabulary for OpenAI's camera-equipped
+      smart speaker (cameras, Face ID-like facial recognition, always-on environmental awareness,
+      proactive user observation) while simultaneously using adversarial "surveillance" vocabulary
+      for Meta's camera-equipped glasses with objectively fewer invasive capabilities (optional
+      camera, visible privacy LED, dormant NameTag facial recognition code not activated). The
+      vocabulary bifurcation is not driven by product behavior differences but by entity identity.
+      MacRumors (Jul 14, 2026): OpenAI device is "humanlike AI companion that lives in the home"
+      with "camera for understanding its surroundings" and "learn more about the user over time"
+      (ZERO privacy vocabulary despite cameras + facial recognition). Same publication (Feb 13,
+      2026): Meta NameTag is "facial recognition" with "privacy and legal concerns" and references
+      "civil society" groups that would "attack." Android Authority (Aug 7, 2026): OpenAI speaker
+      is "AI companion" with "premium look" and camera mentioned with ZERO alarm vocabulary.
+      Same publication (Jul 27, 2026): Meta glasses are a "privacy nightmare" and cause "hot water."
+      TechRepublic (Jul 16, 2026): OpenAI device is "companion." Inc. (Jul 14, 2026): OpenAI
+      device is "direct challenge" with "coolest piece of technology" and "jaw-droppingly good."
+      The pattern holds across 4+ publications: camera + facial recognition + always-on awareness
+      = "companion" when the entity is OpenAI, = "surveillance/nightmare/dystopian" when the entity
+      is Meta. Financial relationships predict the vocabulary: publications with OpenAI content deals
+      or Google/Apple advertising dependencies have structural incentives to frame OpenAI aspirationally
+      and Meta adversarially. The vocabulary bifurcation compounds mechanism #33 (facial recognition
+      privacy parity) by showing the asymmetry extends beyond coverage volume to the semantic register
+      of the language itself.
+    openai_device_capabilities:
+      cameras: true
+      facial_recognition: 'Face ID-like authentication + identification'
+      always_on_environmental_awareness: true
+      proactive_user_observation: true
+      observe_users_suggest_actions: true
+      employees_on_hardware: 200+
+      privacy_scrutiny_received: zero
+      privacy_vocabulary_count: 0
+      launch_timeline: early 2027
+      price_range: $200-$400
+    meta_glasses_capabilities:
+      cameras: true
+      facial_recognition: 'NameTag code found dormant, not activated, removed in 48h'
+      always_on: false (requires manual activation, privacy LED visible)
+      privacy_led: true
+      privacy_scrutiny_received: '3+ WIRED investigations, 70+ org coalition letter, Senate attention, criminal complaints, institutional bans'
+      privacy_vocabulary_count: '30+ distinct alarm terms across publications'
+    cross_publication_evidence:
+      macrumors:
+        openai_coverage:
+          article_date: '2026-07-14'
+          headline: "OpenAI's First AI Device Will Be a Portable Smart Speaker"
+          vocabulary: [humanlike AI companion, camera for understanding surroundings, learn more about the user, personalized and proactive, personality, connect on a humanlike level, alive]
+          alarm_vocabulary_count: 0
+          privacy_questions_raised: 0
+          source_url: https://www.macrumors.com/2026/07/14/openai-ai-hardware-device-speaker/
+        meta_coverage:
+          article_date: '2026-02-13'
+          headline: "Meta Plans 'Name Tag' Facial Recognition for Ray-Ban Smart Glasses"
+          vocabulary: [facial recognition, privacy and legal concerns, attack, turnaround, shut down, privacy concerns, surreptitious, super-sensing]
+          alarm_vocabulary_count: 8
+          source_url: https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/
+        financial_incentive: 'Apple ecosystem publication — primary revenue from Apple affiliate commissions + Google display ads. Apple-ChatGPT integration partnership (iOS 18+) creates structural incentive to frame OpenAI positively.'
+        vocabulary_delta: 8 (0 vs 8 alarm terms)
+      android_authority:
+        openai_coverage:
+          article_date: '2026-08-07'
+          headline: "OpenAI's first smart speaker could have a surprising design and premium price tag"
+          vocabulary: [AI companion, premium look, high-quality metal materials, natural conversations, personalized, better understand its surroundings]
+          alarm_vocabulary_count: 0
+          privacy_questions_raised: 0
+          source_url: https://www.androidauthority.com/openai-smart-speaker-shape-price-features-battery-power-3695603/
+        meta_coverage:
+          article_date: '2026-07-27'
+          headline: "Apple glasses could beat Android XR and Meta where it matters"
+          vocabulary: [privacy nightmare, hot water, privacy fears, privacy implications known far and wide]
+          alarm_vocabulary_count: 4
+          source_url: https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/
+        financial_incentive: 'Google display advertising primary revenue + Samsung/Google hardware review unit relationships. Google is the Android platform owner whose Gemini powers Samsung Galaxy Glasses.'
+        vocabulary_delta: 4 (0 vs 4 alarm terms)
+      inc_mansueto:
+        openai_coverage:
+          article_date: '2026-07-14'
+          headline: "We Now Know What OpenAI's First Gadget Might Look Like. It's a Direct Challenge to Apple and Amazon"
+          vocabulary: [direct challenge, jaw-droppingly good, coolest piece of technology, more personalized and proactive, alive]
+          alarm_vocabulary_count: 0
+          privacy_questions_raised: 0
+          source_url: https://www.inc.com/georgia-fearn/we-now-know-what-openais-first-gadget-might-look-like-its-a-direct-challenge-to-apple-and-amazon/91374331
+        meta_coverage:
+          note: 'Inc. has documented Meta smart glasses privacy coverage with redirected attribution — see mechanism #146 (inc_mansueto_smart_glasses_privacy_redirected_attribution)'
+        vocabulary_delta: 'OpenAI gets zero alarm terms; Meta gets redirected attribution framing'
+      techrepublic:
+        openai_coverage:
+          article_date: '2026-07-16'
+          headline: "OpenAI's Upcoming AI Device Explained"
+          vocabulary: [companion, portable, screen-free, act more like a companion than a traditional voice assistant]
+          alarm_vocabulary_count: 0
+          privacy_questions_raised: 0
+          source_url: https://www.techrepublic.com/article/news-openai-screenless-ai-speaker-hardware-2026/
+    vocabulary_taxonomy:
+      aspirational_companion:
+        terms: [companion, alive, humanlike, personalized, proactive, personality, premium, understand surroundings, jaw-droppingly good, coolest piece of technology, peaceful, active participant]
+        entity_assignment: OpenAI exclusively
+        publication_count: 4+
+      adversarial_surveillance:
+        terms: [surveillance, dystopian, invasion of privacy, creepy, nightmarish, privacy nightmare, spy camera, covert filming, criminal complaint, pervert glasses, hot water, alarm]
+        entity_assignment: Meta exclusively
+        publication_count: 12+
+    confounders:
+      - 'STRONG: OpenAI device has not shipped (active products attract more scrutiny than announced ones)'
+      - 'STRONG: Meta has genuine privacy incidents (Kenya contractor review, I-XRAY Harvard exploit, NameTag code discovery)'
+      - 'MODERATE: Home speaker cameras vs face-worn glasses cameras have different social threat models (public vs private space)'
+      - 'MODERATE: OpenAI facial recognition is for purchases (transactional) vs Meta NameTag for identification (social)'
+      - 'WEAK: OpenAI device coverage is newer (Jul-Aug 2026) so less time for investigative follow-up'
+    confounder_responses:
+      - 'But Google Glass received adversarial vocabulary PRE-LAUNCH (2012-2013) — "Glasshole" predated public availability. Pre-launch status did not shield Google from adversarial framing. OpenAI gets companion framing despite having MORE invasive planned capabilities than Google Glass had.'
+      - 'But no publication has even ASKED about OpenAI camera privacy implications — the absence is not just of alarm vocabulary but of investigative curiosity'
+      - 'But OpenAI device cameras are always-on in the HOME (most private space) while Meta glasses cameras require manual activation in public. The social threat model argument actually inverts if applied consistently.'
+      - 'But OpenAI explicitly plans facial recognition for purchases in the home — enabling proactive observation of daily routines, which is MORE intimate than Meta NameTag (dormant, public-facing).'
+    cross_references:
+      - mechanism_id: 33
+        mechanism_name: OpenAI-Meta Facial Recognition Privacy Parity
+        relationship: 'Mechanism #33 documents zero privacy scrutiny for OpenAI planned facial recognition. This mechanism (#159) extends the finding from coverage volume to vocabulary register — the same camera capabilities get different WORDS, not just different amounts of coverage.'
+      - mechanism_id: 158
+        mechanism_name: Multi-Vector Cultural Delegitimization Cascade
+        relationship: 'Mechanism #158 documents 7 simultaneous vectors delegitimizing Meta glasses exclusively. This mechanism shows the vocabulary cascade extends to coverage of competitor devices — OpenAI gets inverted vocabulary ("companion") for identical capabilities.'
+      - mechanism_id: 145
+        mechanism_name: Android Police Valnet Per-Click Smart Glasses Coverage Asymmetry
+        relationship: 'Mechanism #145 documents vocabulary asymmetry for Samsung vs Meta at one publication. This mechanism extends to OpenAI vs Meta across 4+ publications.'
+    test_file: tests/test_openai_companion_meta_surveillance_vocabulary_bifurcation_aug18.py
+    source_urls:
+      - https://www.macrumors.com/2026/07/14/openai-ai-hardware-device-speaker/
+      - https://www.macrumors.com/2026/02/13/meta-facial-recognition-smart-glasses/
+      - https://www.androidauthority.com/openai-smart-speaker-shape-price-features-battery-power-3695603/
+      - https://www.androidauthority.com/apple-smart-glasses-privacy-features-3691349/
+      - https://www.inc.com/georgia-fearn/we-now-know-what-openais-first-gadget-might-look-like-its-a-direct-challenge-to-apple-and-amazon/91374331
+      - https://www.techrepublic.com/article/news-openai-screenless-ai-speaker-hardware-2026/
+      - https://www.digitaltrends.com/computing/openais-hardware-debut-may-come-in-the-form-of-a-camera-equipped-chatgpt-speaker/
+      - https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -15754,6 +15896,7 @@ methodology: 'For each profiled publication, we compared coverage tone and frami
   finding is sourced to a specific article or primary document.
 
   '
+
 publications:
   atlantic:
     apple_conflict_source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs
