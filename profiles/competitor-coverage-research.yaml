@@ -15144,6 +15144,185 @@ cross_publication_findings:
     - https://www.wired.com/story/anthropic-ai-accidentally-breached-three-companies/
     - https://www.fastcompany.com/91442330/anthropic-says-an-ai-may-have-just-attempted-the-first-truly-autonomous-cyberattack
     test_file: tests/test_wired_anthropic_automode_coverage_silence_aug17.py
+  cross_publication_brand_stigma_vocabulary_entity_targeting:
+    mechanism_id: 155
+    date_added: '2026-08-17'
+    discovery_date: '2026-08-17'
+    finding_type: cross_publication_brand_stigma_vocabulary
+    domain: wearables_privacy_smart_glasses
+    rotation_type: B
+    finding_summary: >
+      Across 8+ publications, Meta smart glasses receive adversarial predatory
+      market vocabulary (flooding, pervert glasses, spy glasses, nightmarish,
+      douchebag, shady specs) while Samsung/Google IDENTICAL hardware receives
+      aspirational/competitive vocabulary (secret weapon, convinced me, privacy
+      not an afterthought). UK venue bans target Meta Glasses by brand name,
+      not smart glasses generically. All four companies build camera-equipped
+      glasses on the same Snapdragon AR1 Gen 1 platform with 12MP cameras and
+      LED indicators.
+    vocabulary_inventory:
+      meta:
+        - term: flooding the market
+          source: WSJ (Bobrowsky, Jul 14 2026)
+          category: predatory_economic_warfare
+        - term: pervert glasses
+          source: Engadget, 9to5Google (Jul-Aug 2026)
+          category: sexual_stigma
+        - term: spy glasses
+          source: Guardian (Aug 2026)
+          category: surveillance_espionage
+        - term: shady specs
+          source: Engadget (Aug 2026)
+          category: criminal_association
+        - term: nightmarish
+          source: Android Police (Jul 2026)
+          category: horror_apocalyptic
+        - term: douchebag with a camera on your face
+          source: PetaPixel/FT (Apr 2026)
+          category: social_stigma
+        - term: privacy nightmare
+          source: Gizmodo (Jul 2026)
+          category: horror_apocalyptic
+        - term: dangerous and reckless
+          source: tdefender (Mar 2026)
+          category: reckless_endangerment
+      samsung:
+        - term: why Meta should be worried
+          source: Android Police (Jul 22 2026)
+          category: competitive_threat_aspirational
+        - term: convinced me where Apple Vision Pro did not
+          source: Digital Trends (Oct 2025)
+          category: product_validation
+        - term: secret weapon
+          source: Inc (Jul 2026)
+          category: competitive_advantage
+        - term: might not have to do much thanks to Meta
+          source: Gizmodo (Mar 2026)
+          category: effortless_superiority
+        - term: privacy is not an afterthought
+          source: Samsung exec via Tom's Guide (Jul 2026)
+          category: trust_positioning
+      google:
+        - term: trusted testers
+          source: Google via PetaPixel (2022)
+          category: trust_authority
+        - term: taking it slow
+          source: Google via PetaPixel (2022)
+          category: deliberate_caution
+        - term: privacy-protective
+          source: TechTimes (May 2026)
+          category: protective_hero
+      apple:
+        - term: can't solve
+          source: Gizmodo (Jul 2026)
+          category: sympathetic_impossibility
+        - term: secret weapon
+          source: Tom's Guide (Feb 2026)
+          category: competitive_advantage
+    hardware_parity:
+      shared_chip: Snapdragon AR1 Gen 1 (Meta + Samsung confirmed)
+      camera_resolution: 12MP class (Meta confirmed, Samsung withheld but leaked)
+      led_indicator: present on all (Meta, Samsung, Google prototypes)
+      microphone: always-on on all
+      ai_visual_processing: Meta AI / Google Gemini / Apple Siri (planned)
+      tampering_vulnerability: LED can be physically covered on any glasses
+    venue_ban_entity_targeting:
+      entity_specificity: >
+        UK venue bans target Meta Glasses by brand name. Wetherspoons CEO Tim
+        Martin specifically named Meta. HMCTS courtrooms banned Meta Glasses.
+        No venue has preemptively banned Samsung or Google smart glasses despite
+        identical camera hardware launching fall 2026.
+      venues_banning:
+        - Wetherspoons (800+ UK pubs)
+        - Soho House (private members clubs)
+        - ATG Theatres (London, Bristol, Edinburgh)
+        - Jeremy King restaurants (Arlington, The Park, Simpsons in the Strand)
+        - Monopoly Events (UK Comic-Con)
+        - HMCTS courts (England and Wales)
+        - New York state court system
+      samsung_google_bans: 0
+    predatory_market_vocabulary_analysis:
+      flooding_metaphor: >
+        WSJ headline Meta Is Flooding the Market With Smartglasses uses economic
+        warfare vocabulary typically reserved for trade policy disputes (e.g. China
+        flooding markets with EVs). Meta sold 7 million pairs in 2025. Samsung
+        sells hundreds of millions of phones, watches, and earbuds annually without
+        being described as flooding any market. The vocabulary assigns predatory
+        intent to Meta growth while normalizing Samsung larger device volumes.
+      user_behavior_attribution: >
+        Pervert glasses and douchebag with a camera attribute individual user
+        behavior to the manufacturer. iPhones have identical recording capability
+        but nobody calls them stalker phones. The stigma attaches only to Meta.
+    cultural_consensus_indicators:
+      - entity: DuckDuckGo
+        action: Launched anti-smart-glasses parody sunglasses (Aug 5, 2026)
+        quote: What if we just did not do that? Guaranteed to never record nude videos
+        target: explicitly anti-Meta
+        significance: >
+          A privacy-branded company can build marketing campaigns around
+          anti-Meta brand stigma, indicating cultural consensus.
+      - entity: UK pub culture
+        action: pervert glasses adopted as colloquial term
+        significance: >
+          Brand stigma has entered colloquial vocabulary in UK, creating
+          social enforcement beyond any regulatory action.
+    publications_exhibiting_pattern:
+      - WSJ (News Corp)
+      - Engadget (Yahoo/Apollo)
+      - Gizmodo (Keleops AG)
+      - Android Police (Valnet)
+      - PetaPixel (independent)
+      - 9to5Google (9to5Mac Inc)
+      - Inc (Mansueto Ventures)
+      - Digital Trends (DT Media Group)
+      - Tom's Guide (Future PLC)
+      - Guardian (Scott Trust)
+    source_urls:
+      - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+      - https://www.engadget.com/2234606/england-and-wales-ban-meta-glasses-from-courtrooms/
+      - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
+      - https://petapixel.com/2026/04/08/a-douchebag-with-a-camera-on-your-face-should-smart-glasses-record-imagery/
+      - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+      - https://gizmodo.com/samsungs-smart-glasses-might-not-have-to-do-much-thanks-to-meta-2000734490
+      - https://9to5google.com/2026/07/23/inbox-newsletter-4/
+      - https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
+      - https://petapixel.com/2026/08/05/duckduckgos-smart-glasses-have-no-camera-no-ai-and-no-electronics/
+      - https://gizmodo.com/smart-glasses-are-the-one-privacy-nightmare-apple-cant-solve-2000791443
+      - https://muckrack.com/meghan-bobrowsky
+    confounding_factors:
+      - strength: STRONG
+        factor: >
+          Meta has 80%+ market share and 3 years head start. Scrutiny follows
+          market presence. Samsung/Google have not shipped yet so real-world
+          abuse examples are zero.
+      - strength: STRONG
+        factor: >
+          Meta has a documented privacy record (Cambridge Analytica, Kenyan
+          contractors, NameTag code) that colors editorial framing regardless
+          of financial incentives.
+      - strength: MODERATE
+        factor: >
+          UK venue bans may target the only glasses currently worn in venues.
+          Samsung/Google glasses not yet on sale, so no venue encounters exist.
+      - strength: MODERATE
+        factor: >
+          Samsung privacy is not an afterthought positioning may reflect
+          genuine differentiation, not just press framing.
+      - strength: WEAK
+        factor: >
+          Headline vocabulary is often written by editors, not the reporter,
+          so individual journalist analysis may overweight editorial desk choices.
+    cross_references:
+      - mechanism_id: 49
+        relationship: extends
+        note: Extends Bobrowsky beat assignment from single-publication to cross-publication
+      - mechanism_id: 34
+        relationship: vocabulary_parity
+        note: OpenAI facial recognition privacy parity - identical hardware differential scrutiny
+      - mechanism_id: 153
+        relationship: cultural_consensus
+        note: BBC podcast same-episode asymmetry confirms cultural consensus beyond financial incentives
+    test_file: tests/test_bobrowsky_cross_publication_brand_stigma_smart_glasses_vocabulary_aug17.py
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

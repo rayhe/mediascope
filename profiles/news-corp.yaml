@@ -1201,6 +1201,16 @@ journalist_profiles:
 
           '
         source_url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        mechanism_155_note: >
+          Headline uses predatory economic warfare vocabulary flooding the
+          market. Samsung sells 100x more devices without flooding label.
+          Cross-publication pattern: 8+ outlets use adversarial vocabulary
+          (pervert glasses, spy glasses, nightmarish) for Meta, aspirational
+          vocabulary (secret weapon, convinced me, privacy not an afterthought)
+          for Samsung/Google with identical hardware. UK venue bans target
+          Meta Glasses by brand name, not smart glasses generically.
+          Samsung/Google inherit zero pre-launch brand stigma.
+          See mechanism 155 in competitor-coverage-research.yaml.
       - title: Mark Zuckerberg Says U.S. Should Accelerate AI Development, Not Restrict It
         date: '2026-07-29'
         tone: 0.15

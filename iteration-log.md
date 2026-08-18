@@ -2990,3 +2990,29 @@ Big Three institutional overlap: NYT Co ~22.6% (BlackRock 9.76%, Vanguard 9.7%, 
 - Updated: docs/ARCHITECTURE.md (test file entry added)
 
 **Cumulative:** 146 mechanisms, ~15,190 tests, 429 files
+
+
+---
+
+### Iteration #156 — Type B (Journalist Cross-Entity Tracking)
+**Date:** 2026-08-17 (22:00 PT)
+**Mechanism:** #155 — Cross-Publication Brand Stigma Vocabulary Entity Targeting
+**Asymmetry score:** 0.85
+
+**Core finding:** Across 8+ publications, Meta smart glasses receive adversarial predatory market vocabulary ("flooding the market," "pervert glasses," "spy glasses," "nightmarish," "shady specs," "douchebag with a camera on your face") while Samsung/Google's IDENTICAL hardware (same Snapdragon AR1 Gen 1, same 12MP camera, same LED indicator) receives aspirational/competitive vocabulary ("secret weapon," "convinced me where Apple Vision Pro didn't," "privacy is not an afterthought," "might not have to do much, thanks to Meta"). UK venue bans (Wetherspoons, Soho House, ATG Theatres, HMCTS courts) specifically target "Meta Glasses" by brand name, not "smart glasses" generically — Samsung/Google inherit zero pre-launch venue ban stigma.
+
+**Novel element:** "Predatory market vocabulary" — WSJ's "flooding the market" headline uses economic warfare metaphor (typically reserved for trade policy disputes like China EVs). Meta sold ~7M pairs. Samsung sells hundreds of millions of phones/watches/earbuds annually without being described as "flooding" any market. The vocabulary assigns predatory intent to Meta's growth while normalizing Samsung's larger device volumes. "Pervert glasses" attributes user behavior to manufacturer — iPhones have identical recording capability but nobody calls them "stalker phones."
+
+**Extends mechanism #49:** Bobrowsky beat assignment entity targeting, from single-publication (WSJ) to cross-publication pattern across 10 outlets spanning News Corp, Apollo/Yahoo, Keleops AG, Valnet, 9to5Mac Inc, Mansueto Ventures, DT Media Group, Future PLC, Scott Trust, and independents.
+
+**Cultural consensus indicator:** DuckDuckGo launched anti-smart-glasses parody sunglasses (Aug 5, 2026) — "guaranteed to never record nude videos" — explicitly anti-Meta positioning. When a privacy-branded company can build marketing campaigns around anti-Meta brand stigma, the stigma has achieved cultural consensus status.
+
+**5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), 3 cross-references (#49, #34, #153).**
+
+**Changes:**
+- New test: `test_bobrowsky_cross_publication_brand_stigma_smart_glasses_vocabulary_aug17.py` (10 classes, ~42 tests)
+- Updated: `competitor-coverage-research.yaml` (mechanism #155 added)
+- Updated: `profiles/news-corp.yaml` (Bobrowsky flooding article cross-linked to mechanism #155)
+- Updated: `iteration-log.md`
+
+**Cumulative:** 155 mechanisms, ~15,630+ tests, 443 files
