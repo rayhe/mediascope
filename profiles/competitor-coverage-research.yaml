@@ -6087,6 +6087,200 @@ cross_publication_findings:
       day_20_register: adversarial
       day_20_topic: Apple avoiding "privacy storm" Meta created
       span_days: 20
+  hadlee_simons_android_authority_cross_entity_coverage_selection:
+    mechanism_id: 183
+    mechanism_name: "Hadlee Simons (Android Authority) Smart Glasses Cross-Entity Coverage Selection — Samsung Privacy Problem-Solving + Google Advocacy + Zero Meta Privacy Investigation"
+    mechanism_type: journalist_cross_entity_coverage_selection
+    discovery_date: '2026-08-19'
+    date_added: '2026-08-19'
+    rotation_type: B
+    domain: journalist_cross_entity_tracking
+    publication: Android Authority (Jeronimo Media Group BV)
+    asymmetry_score: 0.78
+    journalist:
+      name: Hadlee Simons
+      publication: Android Authority
+      role: Senior editor covering chipsets, cameras, and wearables
+      beat: smart glasses, AR/XR, Samsung, Google
+      tenure_years: 8
+      bio_note: "Technology journalist with ~15 years experience, joined Android Authority in 2018, based in Cape Town, South Africa. Areas of expertise include chipsets, cameras, and niche brands."
+    finding_summary: >
+      Hadlee Simons, a senior editor at Android Authority, has covered smart glasses across 6+ entities
+      (Samsung, Google, Snap, Halliday, HTC, TECNO) with neutral-to-aspirational framing while publishing
+      ZERO dedicated Meta Ray-Ban privacy investigation articles. His Samsung coverage (Jul 31, 2026) frames
+      Samsung as SOLVING the privacy problem with headline vocabulary "keep perverts away," presenting Samsung's
+      privacy features as solutions and contrasting them favorably against Meta. His Google coverage (Feb 2026)
+      is explicitly advocacy-positioned, with headline "I'd buy Google's AI glasses over Apple's AI pin any day"
+      and framing Google's mass data collection as a POSITIVE ("that data also translates into real-world
+      understanding") while never raising privacy concerns about Google glasses' identical camera capabilities.
+      Meanwhile, at the SAME publication, other journalists produce adversarial Meta coverage: Aamir Siddiqui
+      ("spy gear," "covert spy gear," "underground industry," "stealth mode"), Chethan Rao ("controversial,"
+      "pervert"). Android Authority's editorial remit is structurally tied to the Google/Android ecosystem;
+      Google is the direct partner for Samsung's Android XR glasses via Android XR platform.
+    finding_type: journalist_cross_entity_coverage_selection_asymmetry
+    novel_contribution: >
+      First documentation of a journalist at a Google-ecosystem publication showing systematic ZERO Meta
+      privacy coverage across 7+ smart glasses articles spanning 2024-2026 while applying solution-framing
+      to Samsung (Google's Android XR partner) and explicit advocacy framing to Google. Unlike individual
+      article comparisons, this mechanism tracks a PORTFOLIO-LEVEL coverage selection pattern over 2+ years:
+      the journalist's entire smart glasses body of work avoids Meta privacy investigation despite covering
+      the category's market leader. The Samsung "perverts" article is particularly revealing — the headline
+      frames Samsung as the privacy SOLUTION while the body attributes Meta's identical features as existing
+      but insufficient ("also found on Meta's smart glasses" + "Meta drew the ire of privacy advocates").
+      Extends the beat-reporter pattern from mechanism #179 (Matt Wille/Gizmodo) to show a different variant:
+      not ADVERSARIAL Meta coverage + zero Samsung coverage, but ZERO Meta coverage + ASPIRATIONAL competitor
+      coverage.
+    samsung_coverage:
+      articles:
+      - title: "Here's how Samsung's smart glasses will keep perverts away (hopefully)"
+        url: https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
+        date: '2026-07-31'
+        framing: solution_oriented
+        vocabulary:
+        - "keep perverts away"
+        - "combat creeps"
+        - "neat addition"
+        - "deeper hardware safeguards"
+        privacy_alarm_terms_about_samsung: 0
+        meta_mention_vocabulary: "also found on Meta's smart glasses"
+        meta_contrast: "Meta drew the ire of privacy advocates in 2024"
+      - title: "Samsung confirms 'next-gen AR glasses' are launching this year"
+        url: https://www.androidauthority.com/samsung-ar-glasses-launch-timeline-3636208/
+        date: '2026-02-01'
+        framing: neutral_positive
+        vocabulary:
+        - "rich, immersive multimodal AI experiences"
+        privacy_alarm_terms_about_samsung: 0
+      aggregate_framing: solution_oriented
+      privacy_investigations: 0
+      total_articles: 2
+    google_coverage:
+      articles:
+      - title: "I'd buy Google's AI glasses over Apple's AI pin any day"
+        url: https://www.androidauthority.com/google-smart-glasses-vs-apple-ai-pin-3636278/
+        date: '2026-02-01'
+        framing: explicit_advocacy
+        vocabulary:
+        - "I'd buy Google's AI glasses"
+        - "that data also translates into real-world understanding"
+        - "Google arguably understands our physical surroundings better than any other company"
+        - "Or it could simply borrow from Google's playbook"
+        privacy_alarm_terms_about_google: 0
+        data_collection_framing: positive
+        note: "Frames Google's data collection (Street View, Lens, etc.) as ADVANTAGE, not privacy risk"
+      - title: "Here's how long you'll have to wait to buy Google's new smart glasses"
+        url: https://www.androidauthority.com/samsung-ar-glasses-launch-timeline-3636208/
+        date: '2025-04-12'
+        framing: anticipatory_positive
+        privacy_alarm_terms_about_google: 0
+      aggregate_framing: advocacy
+      privacy_investigations: 0
+      total_articles: 2
+    snap_coverage:
+      articles:
+      - title: "New Snapchat AR spectacles are here, but not for you"
+        url: https://www.androidauthority.com/tag/snapchat/
+        date: '2024-09-18'
+        framing: neutral_product
+        privacy_alarm_terms_about_snap: 0
+      total_articles: 1
+    other_entity_coverage:
+      articles:
+      - title: "Halliday AI Glasses hands-on: Wearable tech that feels like a Pip-Boy for your eyes"
+        url: https://www.androidauthority.com/halliday-ai-glasses-hands-on-3513126/
+        date: '2025-01-01'
+        entity: Halliday (Gyges Labs)
+        framing: neutral_curiosity
+        privacy_alarm_terms: 0
+      - title: "MWC 2025 roundup — AI Glasses section"
+        url: https://www.androidauthority.com/cool-tech-mwc-2025-3532293/
+        date: '2025-03-01'
+        entity: multiple (Loomos, Emdoor, TECNO)
+        framing: enthusiastic_showcase
+        privacy_alarm_terms: 0
+      total_entities_covered: 5
+    meta_coverage:
+      solo_meta_privacy_articles: 0
+      meta_privacy_investigation_articles: 0
+      meta_mentions_in_samsung_articles: "Meta referenced only to contrast negatively — 'Meta drew the ire of privacy advocates' and 'also found on Meta's smart glasses' (acknowledging Meta's existing features but pivoting to Samsung additions)"
+      note: "Hadlee Simons has covered smart glasses from 6+ entities across 7+ articles spanning Sep 2024 - Jul 2026 but has ZERO dedicated Meta Ray-Ban articles of any type — not just zero privacy articles, zero articles period."
+    same_publication_meta_coverage:
+      note: "Other Android Authority journalists cover Meta with adversarial vocabulary in the same publication"
+      journalists:
+      - name: Aamir Siddiqui
+        article: "Modders are turning Ray-Ban Meta glasses into spy gear for as little as $50"
+        url: https://www.androidauthority.com/ray-ban-meta-stealth-mode-mod-3674350/
+        date: '2026-06-04'
+        vocabulary:
+        - "spy gear"
+        - "covert spy gear"
+        - "underground industry"
+        - "stealth mode"
+      - name: Chethan Rao
+        article: "Meta hits pause on controversial smart glasses subscription plans"
+        date: '2026-07-27'
+        vocabulary:
+        - "controversial"
+      - name: Chethan Rao
+        article: "Only Ray-Ban execs can see the humor in 'pervert' smart glasses ad"
+        date: '2026-07-21'
+        vocabulary:
+        - "pervert"
+    vocabulary_bifurcation:
+      samsung_register: solution_oriented
+      samsung_vocabulary_class: "Problem-solving framing — Samsung presented as the entity that will protect users from privacy violations ('keep perverts away,' 'combat creeps,' 'deeper hardware safeguards')"
+      google_register: advocacy
+      google_vocabulary_class: "Explicit purchase advocacy — Google's data collection reframed as competitive advantage ('I'd buy,' 'real-world understanding,' 'understands our physical surroundings better than any other company')"
+      meta_register: absent_from_portfolio
+      meta_vocabulary_class: "Coverage void — zero dedicated articles, despite Meta being the category market leader with 7M+ units sold. Meta mentioned only as contrast case in Samsung articles."
+      delta: "Hadlee Simons has 4+ Samsung/Google smart glasses articles with solution/advocacy framing, 0 Meta smart glasses articles. Same-publication colleagues produce 3+ Meta adversarial articles in the same Jul 2026 window."
+    financial_context:
+      android_authority_owner: Jeronimo Media Group BV (Netherlands)
+      google_relationship: "Android Authority's entire editorial remit is Google/Android ecosystem coverage. Revenue depends on Google Search traffic, Google News inclusion, Google Display ads. Google is the PLATFORM PARTNER for Samsung's Android XR glasses."
+      samsung_relationship: "Samsung is the dominant Android OEM and Android Authority's most-covered device manufacturer. Samsung Galaxy devices are the publication's primary review and coverage subject."
+      meta_financial_relationship: "$0 — Meta has no advertising, content licensing, or platform relationship with Android Authority. Meta's smart glasses compete with Google/Samsung's Android XR glasses."
+      google_android_xr_partnership: "Google co-developed Android XR with Samsung. Samsung's smart glasses run Google's Android XR platform with Gemini AI. The publication covering Google's platform has structural incentive to frame Google/Samsung partnership positively."
+      note: "Unlike mechanisms documenting cultural consensus (no financial capture), Android Authority has a direct structural financial dependency on Google and editorial dependency on Samsung. The Google-Samsung-Android XR triangle creates a triple alignment where soft coverage of both entities simultaneously serves the publication's commercial interests."
+    confounders:
+    - name: android_ecosystem_focus
+      description: "Android Authority's editorial mandate is covering the Android ecosystem, so covering Samsung and Google more than Meta is natural — Meta's glasses run Meta's own platform, not Android"
+      strength: STRONG
+      rebuttal: "Editorial mandate explains VOLUME difference but not VOCABULARY difference. The journalist could cover Meta glasses with the same neutral-product register used for Halliday or TECNO. Instead, Meta coverage is entirely absent from his portfolio while colleagues produce adversarial Meta articles. An Android-ecosystem publication covering 'smart glasses' as a category should still cover the market leader (7M+ units) if only for competitive comparison."
+    - name: meta_privacy_track_record
+      description: "Meta has a documented history of privacy controversies (Cambridge Analytica, Kenya contractors) that justifies more privacy scrutiny"
+      strength: STRONG
+      rebuttal: "Meta's track record explains why privacy SHOULD be covered, but not why it should be covered by DIFFERENT journalists at the same publication. If privacy is newsworthy for Meta glasses, the same journalist covering Samsung glasses' privacy features should also cover Meta's. The coverage void is a journalist-level selection pattern, not a publication-level editorial policy."
+    - name: google_data_collection_framing
+      description: "Google's data collection for AI is a well-known topic that some writers view as enabling better services rather than a privacy risk"
+      strength: MODERATE
+      rebuttal: "Framing Google data collection as purely positive ('translates into real-world understanding') in the context of camera-equipped AI glasses — while Samsung's similar article opens with 'perverts' language specifically about camera glasses — reveals a vocabulary selection asymmetry. The journalist applies privacy-concern framing to camera glasses generally (Samsung article) but exempts Google's camera glasses from that same lens."
+    - name: publication_beat_assignment
+      description: "Android Authority may editorially assign Meta coverage to specific journalists while others cover Samsung/Google, which is normal newsroom practice"
+      strength: MODERATE
+      rebuttal: "Beat assignment itself IS the mechanism. If the editorial decision is to assign Meta coverage exclusively to journalists who use adversarial framing while assigning Samsung/Google to journalists who use solution/advocacy framing, beat assignment becomes a structural vehicle for vocabulary bifurcation rather than an excuse for it."
+    - name: samsung_pre_launch_novelty
+      description: "Samsung's smart glasses are pre-launch, generating more positive anticipation coverage compared to Meta's shipping product which faces real-world scrutiny"
+      strength: WEAK
+      rebuttal: "Pre-launch status explains some positivity but not the specific framing choice of Samsung as privacy SOLVER in the 'perverts' headline. Pre-launch products can receive neutral or skeptical coverage ('will Samsung deliver?'). Instead, the headline assumes Samsung will fix privacy problems that Meta created — positioning Samsung as the antidote before the product ships."
+    cross_references:
+    - mechanism_id: 179
+      relationship: "Mechanism #179 (Matt Wille/Gizmodo) shows the INVERSE variant — 8+ adversarial Meta articles + zero Samsung coverage. Hadlee Simons shows the COMPLEMENTARY pattern: zero Meta articles + aspirational Samsung/Google coverage. Both achieve the same asymmetric output through different journalist-level selection patterns."
+    - mechanism_id: 109
+      relationship: "Mechanism #109 (Engadget/Yahoo) documents Google partnership financial dependency producing zero Google privacy vocabulary. Android Authority has an analogous Google ecosystem dependency that produces explicit Google advocacy in smart glasses coverage."
+    - mechanism_id: 76
+      relationship: "Mechanism #76 (Samsung-Google Compound Advertiser Leverage) documents how Samsung's advertising spend creates softer coverage. Android Authority's Samsung dependency operates through editorial-beat alignment rather than direct advertising, but produces the same vocabulary asymmetry."
+    - mechanism_id: 138
+      relationship: "Mechanism #138 (Digital Trends Samsung vs Meta) shows the same publication-level pattern — Samsung framed as privacy alternative while Meta framed as privacy threat. Hadlee Simons' portfolio is the journalist-level extension."
+    source_urls:
+    - https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
+    - https://www.androidauthority.com/samsung-ar-glasses-launch-timeline-3636208/
+    - https://www.androidauthority.com/google-smart-glasses-vs-apple-ai-pin-3636278/
+    - https://www.androidauthority.com/halliday-ai-glasses-hands-on-3513126/
+    - https://www.androidauthority.com/cool-tech-mwc-2025-3532293/
+    - https://www.androidauthority.com/ray-ban-meta-stealth-mode-mod-3674350/
+    - https://www.androidauthority.com/author/HadleeSimons/
+    test_file: tests/test_hadlee_simons_android_authority_cross_entity_coverage_selection_aug19.py
+    test_count: 64
   dual_client_litigation_entanglement:
     cross_references:
     - 'Mechanism #38: Cloud Deal Coverage Selection'
