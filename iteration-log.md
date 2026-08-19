@@ -1,3 +1,44 @@
+## Iteration #178 — Wed 2026-08-19 08:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #178: PetaPixel Camera Publication Coverage Selection — Samsung Galaxy Glasses Zero Articles vs Meta 5+ Privacy Alarm Articles (2026)
+
+**Type:** Coverage Selection — Camera-Specialist Publication Entity Asymmetry
+**Publication:** PetaPixel (photography/camera-focused)
+**Entities:** Meta, Samsung
+**Asymmetry Score:** 0.91
+
+**Core finding:** PetaPixel — a photography and camera-focused publication — published 5+ dedicated Meta smart glasses articles with privacy-alarm framing in 2026 while publishing ZERO articles about Samsung Galaxy Glasses, despite Samsung's glasses featuring identical 12MP camera hardware on the same Qualcomm Snapdragon AR1 chip. First documented case of a CAMERA-SPECIALIST publication reproducing the entity-identity coverage asymmetry.
+
+**PetaPixel Meta coverage (2026, privacy-alarm framing):**
+1. "Instagram Is Banning Creepy Hidden Camera Videos Filmed With Meta Smart Glasses" (Jul 27)
+2. "Meta Sued After Workers Watched Private Moments Recorded on AI Smart Glasses" (Mar 9)
+3. "Meta Smart Glasses Face Calls for Bans Across Europe Over Privacy Concerns" (Aug 4)
+4. "Smart Glasses in Pennsylvania May Soon Legally Require a Visible Recording Light" (Jun 10)
+5. "Apple Frets Over Smart Glasses' Bad Reputation as 2027 Launch Looms" (Jul 27) — references "pervert glasses"
+6. "These Smart Glasses Come With a Cover for the Camera" (Mar 24) — "unleash havoc on society"
+
+**PetaPixel Samsung Galaxy Glasses coverage (2026):** Zero articles. site:petapixel.com searches returned nothing.
+
+**Temporal proof:** Samsung launched Galaxy Glasses at Galaxy Unpacked London on July 22, 2026. PetaPixel published nothing. Five days later (July 27), PetaPixel published TWO MORE Meta glasses alarm articles. Editorial resources existed; they were allocated to Meta alarm, not Samsung product coverage.
+
+**Novel contribution:** First documentation of a camera-specialist publication reproducing the asymmetry. PetaPixel's editorial expertise in camera technology should make them MORE likely to recognize hardware equivalence between Meta and Samsung. The finding that even domain experts in camera technology reproduce Meta-specific alarm suggests the asymmetry operates deeper than technical ignorance.
+
+**Confounders:** 5 documented (1 STRONG: Meta's accumulated real incidents vs Samsung pre-launch; 3 MODERATE: company size, access, shipping status; 1 WEAK: audience interest)
+
+**Cross-references:** #144 (Samsung equivalence paradox), #169 (Guardian Samsung silence), #176 (Observer/Guardian stigmatization), #177 (Kodak Fiend precedent)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #178 added
+- `tests/test_petapixel_camera_publication_coverage_selection_samsung_zero_aug19.py` — new (10 classes, 51 tests)
+- `README.md` — test count 17048/468 → ~17099/469
+- `docs/ARCHITECTURE.md` — test/file counts synced
+
+### Stats After This Iteration
+- **Mechanisms:** 178
+- **Tests:** ~17,099 across 469 files
+
+---
+
 ## Iteration #177 — Wed 2026-08-19 06:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### New Podcast Entries

@@ -3565,6 +3565,153 @@ cross_publication_findings:
       counterexample_strength: HIGH
       why: "Strongest mainstream tech podcast defense of Meta glasses found in corpus. Hosts personally own the product, use it daily, and were publicly attacked for it (Trevor Long called 'creep' on Triple M Melbourne). The Kodak Fiend historical parallel provides a 138-year precedent for media-driven camera moral panic that legitimizes the existence of backlash but questions its proportionality"
       limitation: "Even defenders reproduce the asymmetry — Samsung/Apple mentioned without privacy scrutiny, suggesting the asymmetric framing is so deeply embedded it persists even among those explicitly challenging it"
+  petapixel_camera_publication_coverage_selection_samsung_zero:
+    mechanism_id: 178
+    mechanism_name: "PetaPixel Camera Publication Coverage Selection — Samsung Galaxy Glasses Zero Articles vs Meta 5+ Privacy Alarm Articles (2026)"
+    mechanism_type: coverage_selection_camera_publication_entity_asymmetry
+    discovery_date: '2026-08-19'
+    publication:
+      name: PetaPixel
+      type: Photography/camera-focused digital publication
+      beat: Camera technology, photography gear, imaging industry
+      ownership: Independently owned (no documented major tech parent company)
+      relevance: "As a camera-focused publication, PetaPixel''s beat naturally encompasses camera-equipped wearables. Smart glasses with 12MP cameras are fundamentally camera products. PetaPixel''s decision to cover one manufacturer''s camera glasses extensively while ignoring another''s identical camera glasses reveals entity-identity-driven coverage selection in a domain where hardware specifications should be the primary editorial filter."
+    hardware_parity:
+      meta_ray_ban:
+        camera: 12MP
+        chip: Qualcomm Snapdragon AR1 Gen 1
+        led_indicator: Yes (white LED)
+        weight: ~49g
+        ai_assistant: Meta AI (Llama)
+        form_factor: Smart glasses (Ray-Ban frames)
+        launch: September 2023 (Gen 2)
+      samsung_galaxy_glasses:
+        camera: 12MP (Sony sensor)
+        chip: Qualcomm Snapdragon AR1 Gen 1
+        led_indicator: Yes (dual LEDs)
+        weight: ~50g
+        ai_assistant: Google Gemini
+        form_factor: Smart glasses (Gentle Monster / Warby Parker frames)
+        launch: July 22, 2026 (Galaxy Unpacked London)
+      verdict: "Functionally identical camera hardware. Same chip, same resolution, same form factor. Samsung has MORE privacy hardware (dual LEDs vs single LED). A camera publication covering one as a privacy threat while ignoring the other cannot be explained by hardware differences."
+    meta_coverage_inventory:
+      total_dedicated_articles_2026: 5+
+      articles:
+      - title: "Instagram Is Banning Creepy Hidden Camera Videos Filmed With Meta Smart Glasses"
+        date: 2026-07-27
+        url: https://petapixel.com/2026/07/27/instagram-is-banning-creepy-hidden-camera-videos-filmed-with-meta-smart-glasses/
+        alarm_vocabulary:
+        - creepy
+        - hidden camera
+        - harass strangers
+        - clandestinely
+        - surreptitiously
+      - title: "Meta Sued After Workers Watched Private Moments Recorded on AI Smart Glasses"
+        date: 2026-03-09
+        url: https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/
+        alarm_vocabulary:
+        - surveillance conduit
+        - dignitary harm
+        - stalking
+        - extortion
+        - nudity
+        - sexual activity
+      - title: "Meta Smart Glasses Face Calls for Bans Across Europe Over Privacy Concerns"
+        date: 2026-08-04
+        url: https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
+        alarm_vocabulary:
+        - disguised cameras
+        - covert recording
+        - digital abuse
+        - surveillance
+        - omnipresent
+      - title: "Smart Glasses in Pennsylvania May Soon Legally Require a Visible Recording Light"
+        date: 2026-06-10
+        url: https://petapixel.com/2026/06/10/smart-glasses-in-pennsylvania-may-soon-legally-require-a-visible-recording-light/
+        alarm_vocabulary:
+        - clandestinely
+        - facial recognition
+      - title: "Apple Frets Over Smart Glasses'' Bad Reputation as 2027 Launch Looms"
+        date: 2026-07-27
+        url: https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+        alarm_vocabulary:
+        - pervert glasses
+        - intimate footage
+        - creepy weirdos
+        - clandestinely
+      - title: "These Smart Glasses Come With a Cover for the Camera"
+        date: 2026-03-24
+        url: https://petapixel.com/2026/03/24/these-smart-glasses-come-with-a-cover-for-the-camera-inmo-go-3/
+        alarm_vocabulary:
+        - unleash havoc on society
+        - clandestine cameras
+        - bad actors
+        - mischief
+    samsung_coverage_inventory:
+      total_dedicated_articles_2026: 0
+      search_methodology: "site:petapixel.com searches for ''Samsung Galaxy Glasses'', ''Galaxy Unpacked glasses camera'', ''Samsung smart eyewear 2026'' returned zero PetaPixel articles about Samsung Galaxy Glasses. The only Samsung result was about Galaxy phone cameras (S25 Ultra, Feb 2026), not glasses."
+      galaxy_unpacked_london_coverage: "Samsung announced Galaxy Glasses at Galaxy Unpacked London on July 22, 2026. PetaPixel published ZERO articles about the announcement. On July 27 — five days after Samsung''s glasses launch — PetaPixel published TWO Meta glasses alarm articles instead (Instagram ban + Apple ''pervert glasses'' reputation)."
+    coverage_selection_delta:
+      meta_articles: 5+
+      samsung_articles: 0
+      ratio: "infinity (division by zero)"
+      temporal_proof: "July 22 Samsung launches camera glasses → PetaPixel publishes nothing. July 27 (5 days later) → PetaPixel publishes 2 MORE Meta glasses alarm articles. The editorial resources existed; they were allocated to Meta alarm, not Samsung product coverage."
+    vocabulary_inventory:
+      meta_alarm_terms:
+      - creepy (headline)
+      - hidden camera (headline)
+      - pervert glasses
+      - clandestine / clandestinely (4 articles)
+      - harass strangers
+      - surveillance conduit
+      - unleash havoc on society
+      - bad actors
+      - mischief
+      - disguised cameras
+      - digital abuse
+      - omnipresent surveillance
+      - creepy weirdos
+      - intimate footage
+      samsung_alarm_terms: []
+      samsung_alarm_term_count: 0
+    confounders:
+    - description: "Meta glasses launched in 2023 and have accumulated real privacy incidents (Kenya contractor footage review, Potsdam pool recording complaints, pickup artist harassment videos). Samsung''s glasses are newer (July 2026) and have not yet generated comparable incidents."
+      strength: strong
+      rebuttal: "PetaPixel''s alarm articles are not limited to incident reporting — they include speculative concern pieces (Pennsylvania bill, European regulatory calls) and category-level alarm (''unleash havoc on society''). A camera publication could apply identical speculative concern to Samsung''s identical camera. The total absence of even a product-review article suggests editorial disinterest, not temporal lag."
+    - description: "Meta is a larger company with more public visibility; Samsung glasses may not meet PetaPixel''s editorial threshold for coverage."
+      strength: moderate
+      rebuttal: "PetaPixel regularly covers Samsung camera products (Galaxy S25 Ultra review, Galaxy Unpacked previews for phones). Samsung is well within their coverage universe. The specific exclusion of Samsung''s camera glasses — while covering Samsung''s phone cameras — suggests the editorial filter is entity+product-type specific, not entity-level."
+    - description: "PetaPixel may not have had access to Samsung Galaxy Glasses for hands-on review at launch."
+      strength: moderate
+      rebuttal: "Multiple PetaPixel Meta articles are not hands-on reviews — they are aggregated news coverage of regulatory actions, lawsuits, and policy bans. These require no product access. PetaPixel could have written ''Samsung Galaxy Glasses Launch With Same Camera Hardware as Meta Ray-Bans'' from press materials alone."
+    - description: "PetaPixel audience may be more interested in Meta glasses due to Ray-Ban brand recognition among photographers."
+      strength: weak
+      rebuttal: "Audience interest follows editorial coverage, not the reverse. A camera publication choosing not to cover a major 12MP camera product launch by Samsung — one of the world''s largest camera sensor manufacturers — cannot be explained by assumed audience disinterest."
+    - description: "Samsung Galaxy Glasses were previewed at Unpacked but may not ship until later in 2026, reducing urgency for coverage."
+      strength: moderate
+      rebuttal: "PetaPixel covered Samsung''s February 2026 Galaxy Unpacked (phone cameras) before those phones shipped. Pre-ship preview coverage is standard PetaPixel practice. The absence specifically for glasses suggests product-type filtering, not shipping-status filtering."
+    cross_references:
+    - mechanism_id: 144
+      relationship: "Samsung equivalence paradox — same hardware, different coverage"
+    - mechanism_id: 169
+      relationship: "Guardian Samsung coverage silence — same coverage selection pattern at a different publication"
+    - mechanism_id: 176
+      relationship: "Observer/Guardian stigmatization — regulatory alarm naming Meta not Samsung"
+    - mechanism_id: 177
+      relationship: "Kodak Fiend historical precedent — camera moral panic targeting one manufacturer"
+    significance:
+      novel_contribution: "First documentation of a CAMERA-SPECIALIST publication reproducing the entity-identity coverage asymmetry. PetaPixel''s beat is literally cameras — their editorial expertise should make them MORE likely to recognize hardware equivalence, not less. The finding that even domain experts in camera technology reproduce the Meta-specific alarm pattern suggests the asymmetry operates at a level deeper than technical ignorance."
+      asymmetry_score: 0.91
+      why_high: "Infinite coverage ratio (5+ vs 0) at a camera-specialist publication covering functionally identical camera hardware. The temporal proof (Samsung launches July 22 → PetaPixel publishes Meta alarm July 27) eliminates resource constraints as an explanation."
+    source_urls:
+    - https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
+    - https://petapixel.com/2026/07/27/instagram-is-banning-creepy-hidden-camera-videos-filmed-with-meta-smart-glasses/
+    - https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+    - https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/
+    - https://petapixel.com/2026/06/10/smart-glasses-in-pennsylvania-may-soon-legally-require-a-visible-recording-light/
+    - https://petapixel.com/2026/03/24/these-smart-glasses-come-with-a-cover-for-the-camera-inmo-go-3/
+    test_count: 45
+    test_file: tests/test_petapixel_camera_publication_coverage_selection_samsung_zero_aug19.py
   axel_springer_kkr_openai_financial_architecture:
     confounders:
     - description: KKR and Axel Springer editorial operate independently; no evidence KKR directs Business Insider coverage
