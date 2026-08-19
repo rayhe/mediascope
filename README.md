@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,355 | Across 475 test files |
+| Tests | ~17,427 | Across 476 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17355 tests** across 475 test files, each covering a different analytical capability:
+MediaScope has **17427 tests** across 476 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -989,3 +989,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_mass_market_vocabulary_propagation_cycle_aug19.py` | 42 | Mechanism #181: Mass-Market Vocabulary Propagation Cycle — "pervert glasses" propagation from niche UK activism to mass-market American syndication. Kim Komando Daily Tech Update (500+ stations, 6-8M weekly listeners) uses "Meta's smart glasses. AKA 'pervert glasses'" as episode title. ABC News Daily Australia (3rd publicly funded broadcaster after BBC UK, DW Germany). Sean Keach (The Sun/News Corp) alarm framing despite News Corp Meta content partnership. Zero equivalent stigmatizing vocabulary for Samsung, Snap, or Google/Samsung Android XR. 9 classes, 42 tests |
 | `test_digital_trends_openai_companion_aspirational_coverage_meta_adversarial_vocabulary_aug19.py` | 41 | Mechanism #182: Digital Trends OpenAI Companion Aspirational vs Meta Adversarial Vocabulary. Two aspirational articles about OpenAI's camera+FR+email+ambient-monitoring companion device (Jul 14 + Aug 6) with ZERO privacy alarm terms, while applying 12+ adversarial terms ("creep's weapon," "creepy," "pervert glasses") to Meta's camera-only glasses in the SAME 20-day editorial window. OpenAI device has 7 invasive capability dimensions vs Meta's 2. Apple N50 "privacy storm" article (Jul 27) references Meta but omits OpenAI despite 13-day-old announcement. No financial capture (independent owner). Extends #138 with OpenAI dimension. 5 confounders, cross-refs #138, #159, #170, #50. 10 classes, 41 tests |
 | `test_hadlee_simons_android_authority_cross_entity_coverage_selection_aug19.py` | 64 | Mechanism #183: Hadlee Simons (Android Authority) Smart Glasses Cross-Entity Coverage Selection. Senior editor covers smart glasses from 6+ entities (Samsung, Google, Snap, Halliday, HTC, TECNO) with neutral-to-aspirational framing but has ZERO dedicated Meta Ray-Ban articles. Samsung "perverts" article (Jul 31) frames Samsung as SOLVING privacy with "keep perverts away" headline while contrasting Meta as the problem ("drew the ire of privacy advocates"). Google article explicitly advocates ("I'd buy Google's AI glasses") and frames data collection as positive ("translates into real-world understanding"). Same publication, other journalists (Aamir Siddiqui: "spy gear," Chethan Rao: "controversial," "pervert") produce adversarial Meta coverage. Android Authority depends structurally on Google ecosystem; Google is Samsung's Android XR platform partner; Meta has $0 relationship. 5 confounders, cross-refs #179, #109, #76, #138. 10 classes, 64 tests |
+| `test_spacex_s1_cross_competitor_financial_architecture_aug19.py` | 72 | Mechanism #184: SpaceX S-1 SEC-Filed Cross-Competitor Financial Architecture. SpaceX S-1 IPO filing (Jun 2026) provides first SEC-verified primary-source evidence of cross-competitor financial flows: Anthropic pays xAI/SpaceX $1.25B/month ($15B/yr, $45B total through May 2029) for Colossus compute. X ad revenue $1.8B (2025), down 59% from $4.4B pre-Musk. Meta ad revenue is 135x larger at $243.46B. xAI has ZERO publisher deals but uses X user content (including publisher articles) as training data through perpetual ToS license (Jan 15, 2026). Financial chain: Anthropic success → xAI/SpaceX revenue → X platform viability → X competes with Meta for ad dollars. Musk contradiction: S-1 says "monthly fee through May 2029" but Musk on X called it "a 180 day lease." First mechanism documented entirely from SEC filings. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), cross-refs #47, #140, #174. 10 classes, 72 tests |

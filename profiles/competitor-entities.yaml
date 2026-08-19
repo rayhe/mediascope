@@ -4487,6 +4487,42 @@ entities:
       nor being sued by them. Publishers have no financial relationship\nwith xAI in either direction, which theoretically\
       \ makes xAI\ncoverage editorially neutral (no incentive to be soft OR hard).\nNOTE: Post-SpaceX IPO (Jun 12 2026), publisher\n\
       shareholders now hold xAI through index fund mandates, creating\npassive convergence (mechanism #140).\n"
+    spacex_s1_financials:
+      filing_date: '2026-06-12'
+      filing_type: S-1 (IPO registration)
+      x_ad_revenue_2025_b: 1.8
+      x_ad_revenue_2022_b: 4.4
+      x_ad_revenue_decline_pct: 59
+      x_daily_posts_m: 350
+      xai_segment_revenue_2025_b: 3.2
+      xai_segment_operating_loss_2025_b: 6.4
+      spacex_net_loss_2025_b: 4.94
+      spacex_ipo_raised_b: 75
+      spacex_valuation_t: 1.75
+      ai_term_frequency_pct: 47
+      ai_growth_strategies_of_12: 7
+      ai_tam_pct: 93
+      source_urls:
+      - https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
+      - https://www.socialmediatoday.com/news/spacex-filing-provides-insight-into-x-grok-and-xai/820945/
+      - https://global.morningstar.com/en-nd/stocks/deleted-disclosure-spacexs-ipo-filing-shows-its-ai-infrastructure-cash-cow
+    anthropic_colossus_compute_deal:
+      signed_date: '2026-05-03'
+      monthly_payment_b: 1.25
+      annual_payment_b: 15
+      total_potential_b: 45
+      term_end: '2029-05'
+      facilities: Colossus I + Colossus II (Memphis, Tennessee)
+      capacity_mw: 300
+      termination_notice_days: 90
+      construction_cost_per_mw_m: 2.7
+      industry_benchmark_per_mw_m: 10.8
+      payback_period_months: '<1'
+      musk_contradiction: 'S-1 says "monthly fee through May 2029" (pages 13, 146, F-62, F-96). Musk on X: "This is a 180 day lease with 90 day notice mutual cancellation thereafter."'
+      source_urls:
+      - https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
+      - https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/
+      - https://www.morningstar.com/news/marketwatch/20260528209/spacexs-major-ai-compute-deal-with-anthropic-could-end-a-lot-sooner-than-expected
     press_response: Legacy Media Lies
     litigation:
     - type: csam_deepfake
