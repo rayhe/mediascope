@@ -1143,5 +1143,158 @@ Vocabulary severity inversely correlates with financial relationship: the entity
 
 ---
 
-*Last updated: 2026-08-19 09:00 UTC (Aug 19, 2:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer)*
+### 28. The Observer — "Meta's 'pervert glasses' show why shame still matters" (Aug 12, 2026)
+
+- **Author:** Eva Wiseman (columnist)
+- **Publisher:** The Observer (Guardian Media Group)
+- **Source URL:** https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters
+
+**Coverage Summary:**
+Opinion column explicitly advocating social stigmatization of Meta glasses wearers. This represents the HIGHEST escalation level documented in the entire MediaScope corpus — a mainstream publication crossing from editorial framing asymmetry to active advocacy for organized social discrimination against users of one company's product.
+
+**Key Quotes (escalation gradient):**
+1. "The answer is to impose stigma. The answer, and I say this with love, is to judge."
+2. "Children should be taught to recognise what are now widely being called 'pervert glasses', and to walk away, or loudly tell a grown-up they think that guy over there is filming them."
+3. "There's no shame in shaming the wearers of smart glasses, not while women are using Disney songs like rape alarms."
+4. "How voyeurism is baked into the business model."
+
+**Meta-Specific Evidence Chain (7 incidents, 0 competitor incidents):**
+| Incident | Location | Date |
+|----------|----------|------|
+| Bikini wax filming | New York | 2026 |
+| Manosphere influencer filming | UK/US | Ongoing |
+| Filming sex without consent | Warrington, UK | Jan 2026 (£800 fine) |
+| LGBTQ event toilet filming | Naples Pridefest | May 2026 |
+| ICE surveillance of immigrants | US | 2026 |
+| Kenya contractor scandal | Kenya | Feb 2026 |
+| Pickup artist content creation | Global | Ongoing |
+
+**Counter-Surveillance Tools Amplified:**
+- **Nearby Glasses app:** Bluetooth-scanning tool to detect Meta glasses nearby
+- **Adversarial fashion:** Clothing patterns designed to exploit computer vision weaknesses (links to Guardian article)
+- **Disney songs defense:** Copyright detection algorithms weaponized against Meta glasses recordings
+
+**Entity Coverage Assessment:**
+- **Meta:** Named 10+ times, product framed as having "voyeurism baked into the business model," users deserving stigmatization
+- **Samsung:** Not mentioned (Galaxy Glasses announced with identical hardware)
+- **Google:** Not mentioned (Android XR glasses announced)
+- **Apple:** Not mentioned (N50 in development)
+- **Snap:** Not mentioned ($2,195 Spectacles shipping)
+
+**CRITICAL SIGNIFICANCE — Publication-as-Activist Crossover:**
+The Observer column functions as activism, not journalism. It advocates specific social actions (shaming, walking away, teaching children to fear, laughing at users) directed at ONE company's product. Previous MediaScope entries documented coverage asymmetry, adversarial framing, and satirical commerce. This is the first documented case of a mainstream publication explicitly calling for organized social stigmatization of product users.
+
+**Four-Level Escalation Taxonomy (updated):**
+| Level | Example | Target |
+|-------|---------|--------|
+| 1. Coverage selection | Most outlets ignore competitors | Meta by default |
+| 2. Adversarial vocabulary | AmberMac "pervert," Smashing Security "villain" | Meta explicitly |
+| 3. Counter-product satire | DuckDuckGo "Normal F***ing Sunglasses" | Meta explicitly |
+| **4. Stigmatization advocacy** | **Observer "no shame in shaming"** | **Meta exclusively** |
+
+**Sentiment Score:** -9/10 (maximally adversarial — active stigmatization advocacy)
+**Asymmetry Assessment:** EXTREME — First Level 4 escalation documented. No competitor has ever received equivalent stigmatization advocacy from any mainstream publication.
+**Mechanism:** #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover)
+**Cross-references:** #112, #130, #135, #137, #144, #157, #158
+
+---
+
+### 29. AAP (Australian Associated Press) — "Through the looking glass: smartglasses face scrutiny" (Jul 25, 2026)
+
+- **Reporter:** Jennifer Dudley-Nicholson
+- **Publisher:** AAP (Australian national wire service)
+- **Source URL:** https://aapnews.aap.com.au/news/through-the-looking-glass-smartglasses-face-scrutiny
+- **FINANCIAL DISCLOSURE: "The reporter travelled to London as a guest of Samsung."**
+
+**Coverage Summary:**
+Australian national wire service article covering smart glasses privacy, featuring industry analyst Carolina Milanesi (Creative Strategies) and Samsung/Google executives. The article applies "pervert glasses" vocabulary to Meta while giving Samsung and Google protective/aspirational framing — AND discloses that the reporter's trip was funded by Samsung.
+
+**Entity Coverage with Disclosed Financial Relationship:**
+| Entity | Framing | Financial Relationship |
+|--------|---------|----------------------|
+| Meta | "pervert glasses," "decimated its reputation," "rogue users" | None |
+| Samsung | "built-in privacy controls," "designed with Gentle Monster and Warby Parker" | **Samsung-funded press trip** |
+| Google | "easy access to Gemini," Rick Osterloh direct quote | None disclosed |
+
+**Samsung-Funded Press Trip → Protective Vocabulary Pipeline:**
+The reporter's Samsung-funded trip to London produced coverage that:
+1. Gives Samsung spokesperson Kylie Mason a direct aspirational quote
+2. Quotes Google SVP Rick Osterloh with product-feature framing
+3. Frames Samsung's privacy LED as "built-in privacy controls"
+4. Uses "pervert glasses" for Meta's identical privacy LED
+5. Does NOT question Samsung's or Google's privacy implications despite identical hardware
+
+**IDC Market Data Cited:**
+Q1 2026: 2.25M smart glasses sold (+167% YoY). Meta leads with "more than two-thirds." RayNeo and Xiaomi follow. This market share data contextualizes but does NOT proportionalize scrutiny — Samsung and Google get zero privacy scrutiny despite preparing to sell identical hardware.
+
+**Carolina Milanesi Quoted (Nuanced):**
+"There is a social aspect of it which is no different than at the beginning of mobile phone cameras, where people were going under skirts and taking pictures. But that doesn't mean there's no accountability that needs to come from the companies that are bringing these devices out."
+- Milanesi applies the category critique broadly ("companies") rather than Meta-specifically
+- Her mobile phone camera analogy normalizes the concern as technology-cycle behavior
+- But the article's structure channels her nuance into a Meta-specific narrative
+
+**Sentiment Score:** -4/10 (moderately negative toward Meta, neutral-positive toward Samsung/Google)
+**Asymmetry Assessment:** HIGH — Samsung-funded trip produces coverage with protective Samsung vocabulary and adversarial Meta vocabulary for identical hardware
+**Cross-references:** #135, #137, #175 (Australia Kmart Anko)
+
+---
+
+### 30. Times of India — "I spy with my smart glasses" (Aug 13, 2026)
+
+- **Reporter:** Mohua Das
+- **Publisher:** Times of India (India's largest English-language daily)
+- **Source URL:** https://timesofindia.indiatimes.com/toi-plus/technology/i-spy-with-my-smart-glasses/articleshow/133054023.cms
+
+**Coverage Summary:**
+India-specific coverage of smart glasses privacy. Documents THREE use cases unique to India not present in Western coverage:
+1. **Trans rights protest filming (Delhi, March 2026):** Smart glasses used to secretly film attendees, footage got "millions of views," exposed participants to online mockery
+2. **Police surveillance at student protests (Jantar Mantar, July 2026):** Senior police officer reportedly wearing smart glasses at protests
+3. **Temple violations:** People caught wearing smart glasses inside temples where photography is prohibited
+
+**CRITICAL FINDING — State Surveillance Dimension:**
+The Indian police use of smart glasses at student protests introduces a state surveillance dimension not present in Western coverage. In the UK/US/EU/AU discourse, smart glasses are framed as a consumer privacy problem (perverts filming strangers). In India, they're also a STATE surveillance tool — police monitoring protesters. This dual framing (consumer misuse + state surveillance) is unique to the Indian context and represents a more sophisticated threat model.
+
+**Vocabulary Propagation:**
+Opening line: "The internet already has a nickname for them: 'pervert glasses.'" The "pervert glasses" vocabulary has propagated from the UK/US media ecosystem to India's largest English-language daily. This confirms trans-continental vocabulary propagation via global digital media channels.
+
+**Global South Geography Count (updated):**
+| Geography | Outlets | Key Finding |
+|-----------|---------|------------|
+| South Africa | Business Day, Moneyweb | Product discussed as threat BEFORE it's officially sold |
+| Australia | 7NEWS, 7NEWS Sunrise, AAP | Kmart $89 glasses → government investigation |
+| **India** | **Times of India** | **State surveillance at protests + trans rights targeting** |
+
+**Entity Coverage Assessment:**
+- **Meta:** Implicit through "pervert glasses" vocabulary and UK/US incident references
+- **Samsung/Google/Apple/Snap:** Not mentioned
+
+**Sentiment Score:** -6/10 (moderately negative, investigation-journalism lens with India-specific use cases)
+**Asymmetry Assessment:** MODERATE — More focused on the technology category than brand-specific targeting, but all cited incidents involve Meta glasses
+**Cross-references:** #157 (Global South preemption), #175 (Australia Kmart Anko)
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 19, 2026, 12:00 UTC)
+
+### Podcast/Broadcast/Print vs Online Coverage Comparison (30 entries + 5 new patterns)
+
+| Pattern | Print/Online | Podcast/Broadcast/Multimedia (30 entries) | Alignment |
+|---------|-------------|---------|-----------|
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (25 of 30 entries) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 30 entries examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
+| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero scrutiny in 30 entries) | **ALIGNED** |
+| Stigmatization advocacy | N/A (new) | ✅ (Observer: explicit "shame the wearers" + teach children to fear) | **NEW PATTERN** |
+| Samsung-funded trip → protective vocabulary | N/A (new) | ✅ (AAP: "guest of Samsung" → "privacy controls" for Samsung, "pervert" for Meta) | **NEW PATTERN** |
+| State surveillance dimension | N/A (new) | ✅ (India: police wearing glasses at student protests) | **NEW PATTERN** |
+| Non-Meta brand partial scrutiny | ✅ (#175) | ✅ (Kmart Anko: gov investigation but 0% extreme vocabulary) | **ALIGNED** |
+| Same-publisher dual framing | ✅ (#163) | ✅ (9to5Google: aspiration for Google, alarm for Meta) | **ALIGNED** |
+| Network-level vocabulary gradient | ✅ (#173) | ✅ (9to5Mac Inc.: Even Realities=aspirational, Samsung/Google=positive, Meta=alarm) | **ALIGNED** |
+| OpenAI vocabulary gradient | ✅ (mechanism #159) | ✅ (eWeek/DT/WPN: "companion/tradeoff" vs "pervert/surveillance") | **ALIGNED** |
+| Vocabulary semantic inversion | ✅ (mechanism #158) | ✅ (Samsung = "keep perverts away", Meta = "pervert glasses") | **ALIGNED** |
+| Global South expansion | ✅ (#157) | ✅ (3 continents: South Africa, Australia, India — all Meta-targeting) | **ALIGNED** |
+
+---
+
+*Last updated: 2026-08-19 12:00 UTC (Aug 19, 5:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover)*

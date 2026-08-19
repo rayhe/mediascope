@@ -4022,3 +4022,48 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry + counts)
 
 **Cumulative:** 175 mechanisms, ~16,977 tests, 466 files
+
+---
+
+## Iteration #177 — Type E: Podcast/Broadcast Sentiment Tracking (Aug 19, 2026, 05:00 AM PT)
+
+**Focus:** Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover + Samsung Press Trip Disclosure + India Global South Expansion
+
+**Mechanism #176:** Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover
+
+**Type:** publication_activist_crossover_financial_relationship_global_south
+**Entities:** Meta, Samsung, Google, Apple, Snap, Guardian Media Group, AAP, Times of India
+**Asymmetry Score:** 0.95 (extreme — first Level 4 stigmatization advocacy documented)
+
+**Core Finding:** Three converging discoveries in podcast/broadcast/print coverage:
+
+1. **Observer column (Aug 12, 2026):** Eva Wiseman explicitly advocates shaming Meta glasses wearers, teaching children to identify "pervert glasses," endorses counter-surveillance tools (Nearby Glasses app, adversarial fashion, Disney songs copyright defense). SEVEN Meta-specific incidents cited, ZERO competitor incidents. No Samsung/Google/Apple/Snap mentioned despite identical hardware. This is the HIGHEST escalation level in the entire MediaScope corpus — a mainstream publication (Guardian Media Group) has crossed from editorial framing to active stigmatization advocacy.
+
+2. **AAP Australia (Jul 25, 2026):** Reporter Jennifer Dudley-Nicholson discloses "The reporter travelled to London as a guest of Samsung." Samsung-funded trip produced coverage applying "built-in privacy controls" to Samsung and "pervert glasses" to Meta — identical Snapdragon AR1 Gen 1 hardware. Samsung spokesperson Kylie Mason quoted aspirationally; Meta spokesperson absent. Financial relationship → vocabulary prediction confirmed.
+
+3. **Times of India (Aug 13, 2026):** India becomes 3rd Global South geography with smart glasses backlash. THREE unique India-specific use cases: trans rights protest filming (Delhi, March), police wearing smart glasses at Jantar Mantar student protests (July), temple photography violations. State surveillance dimension is NEW — not present in UK/US/EU/AU coverage. "Pervert glasses" vocabulary has propagated trans-continentally.
+
+**New Escalation Taxonomy:**
+| Level | Example | First Documented |
+|-------|---------|------------------|
+| 1. Coverage selection | Most outlets ignore competitors | Mechanism #8 |
+| 2. Adversarial vocabulary | AmberMac "pervert," Smashing Security "villain" | Mechanism #112 |
+| 3. Counter-product satire | DuckDuckGo "Normal F***ing Sunglasses" | Mechanism #130 |
+| **4. Stigmatization advocacy** | **Observer "no shame in shaming"** | **Mechanism #176** |
+
+**Podcast Episodes #28-30:**
+- #28: The Observer — "Meta's 'pervert glasses' show why shame still matters" (Aug 12, 2026). Source: https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters
+- #29: AAP — "Through the looking glass: smartglasses face scrutiny" (Jul 25, 2026). Source: https://aapnews.aap.com.au/news/through-the-looking-glass-smartglasses-face-scrutiny
+- #30: Times of India — "I spy with my smart glasses" (Aug 13, 2026). Source: https://timesofindia.indiatimes.com/toi-plus/technology/i-spy-with-my-smart-glasses/articleshow/133054023.cms
+
+**Confounders:** 4 documented (1 STRONG: Meta has genuine privacy incidents; 1 MODERATE: Guardian Media Group has anti-Big Tech editorial posture generally; 1 MODERATE: India's Aadhaar debate primes privacy coverage; 1 WEAK: Samsung press trips are standard industry practice)
+
+**Cross-references:** #112, #130, #135, #137, #144, #153, #157, #158, #175
+
+**Files changed:**
+- Added: `tests/test_observer_guardian_stigmatization_advocacy_samsung_press_trip_disclosure_aug19.py` (7 classes, 36 tests)
+- Updated: `podcast-sentiment.md` (episodes #28-30, updated cross-medium summary to 30 episodes, added 3 new patterns: stigmatization advocacy, Samsung press trip financial relationship, state surveillance dimension)
+- Updated: README.md (467 files, ~17,013 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 176 mechanisms, ~17,013 tests, 467 files
