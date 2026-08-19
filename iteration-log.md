@@ -1,3 +1,56 @@
+## Iteration #170 — Tue 2026-08-18 17:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #170: Gizmodo Intra-Publication Surveillance Vocabulary Inversion — OpenAI Companion vs Meta Glasses
+
+**Publication:** Gizmodo (Keleops AG)
+**Competitor:** OpenAI
+**Pair analyzed:** Gizmodo covering OpenAI's companion hardware device vs Gizmodo covering Meta glasses
+
+**Core Finding:**
+Gizmodo applies ZERO surveillance or privacy-alarm vocabulary to OpenAI's camera-equipped, facial-recognition-enabled companion device across two articles (Feb 2026 + Aug 2026), while applying 50+ surveillance/privacy-alarm terms across 8+ Meta glasses articles covering functionally equivalent or LESS invasive capabilities.
+
+**Smoking Gun — Feb 2026 Article:**
+Gizmodo explicitly quotes The Information: "The speaker will have a camera, enabling it to take in information about its users and their surroundings, such as items on a nearby table or conversations people are having in the vicinity... It will also allow people to buy things by identifying them with a facial recognition feature similar to Apple's Face ID."
+
+Author's response: "I'll concede that the first one is *almost* novel." Zero surveillance vocabulary. Zero privacy alarm. Zero regulatory calls.
+
+Meanwhile, Meta's dormant, unlaunched NameTag facial recognition code generates a Gizmodo headline: "Meta Is Testing Police Surveillance Tech for Its Smart Glasses."
+
+**OpenAI Coverage (2 articles, 0 alarm terms):**
+- "OpenAI Might Be Making a Smart Speaker That No One Asked for" (Feb 2026) — camera + facial recognition + ambient conversation monitoring → 0 surveillance terms
+- "OpenAI's Rumored Smart Speaker Sounds More Like a... Squirming AI Robot?" (Aug 6 2026) — cameras + sensors + email access + proactive observation → 0 surveillance terms
+
+**Meta Coverage (8 articles, 50+ alarm terms):**
+- "Surveillance Machine for AI" / "Record Everything, All the Time" / "Worst Company" / "Police Surveillance Tech" / "Glassholes" / "Creepiness" / "Catching on With U.S. Police" / "Calls to Regulate... Deafening"
+
+**Capability Comparison (OpenAI MORE invasive):**
+| Capability | OpenAI Device | Meta Glasses |
+|---|---|---|
+| Cameras | ✅ confirmed | ✅ confirmed |
+| Facial Recognition | ✅ Face ID-like (confirmed) | ⚠️ Dormant (not launched) |
+| Email Access | ✅ accesses user's digital life | ❌ none |
+| Proactive Observation | ✅ learns about owner over time | ❌ user-activated only |
+| Privacy LED | ❌ not documented | ✅ mandatory, tamper-enforced |
+
+**Why This Matters:**
+This is the strongest form of coverage asymmetry because it eliminates publication-level editorial policy as a variable — same publication, same capability class, radically different vocabulary. No financial incentives explain the gap: Gizmodo/Keleops has $0 relationship with both OpenAI and Meta. The vocabulary inversion maps purely to entity identity.
+
+**Asymmetry score:** 0.82 (largest intra-publication vocabulary delta in corpus)
+**Cross-references:** #159 (cross-pub companion-vs-surveillance), #31 (Pero genre framing), #30 (Chokkattu genre oscillation)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #170 added to cross_publication_findings
+- `tests/test_gizmodo_openai_companion_surveillance_vocabulary_inversion_aug18.py` — 10 classes, 64 tests (all passing)
+- `README.md` — test count 16,600→16,664, file count 458→459, mechanism #170 row added
+- `docs/ARCHITECTURE.md` — test/file counts synced, test file listing added
+
+### Stats After This Iteration
+- **Mechanisms:** 170
+- **Tests:** ~16,664 across 459 files
+- **Podcast episodes tracked:** 24
+
+**Pushed to GitHub: `158e5b0`**
+
 ## Iteration #169 — Tue 2026-08-18 16:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Mechanism #168: TWiT 1058 Cross-Medium Privacy Vocabulary Portability
