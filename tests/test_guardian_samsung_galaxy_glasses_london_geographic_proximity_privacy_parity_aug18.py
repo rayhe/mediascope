@@ -102,7 +102,7 @@ def load_yaml(filename):
         return yaml.safe_load(f)
 
 
-def find_mechanism_in_publications(data, slug_fragment):
+def find_mechanism_anywhere(data, slug_fragment):
     """Find a mechanism in the publications section by slug fragment."""
     pubs = data.get('publications', {})
     if isinstance(pubs, dict):
@@ -129,7 +129,7 @@ class TestMechanismExistence(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -190,7 +190,7 @@ class TestSamsungGlassesHardware(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -269,7 +269,7 @@ class TestLondonGeographicProximity(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -303,7 +303,7 @@ class TestCrossPublicationVocabularyInversion(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -350,7 +350,7 @@ class TestCoverageAtOtherOutlets(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -423,7 +423,7 @@ class TestBrittinRevolvingDoor(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -458,7 +458,7 @@ class TestConfounders(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -502,7 +502,7 @@ class TestCrossReferences(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
@@ -544,7 +544,7 @@ class TestTestablePredictions(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ccr = load_yaml('competitor-coverage-research.yaml')
-        cls.mechanism = find_mechanism_in_publications(
+        cls.mechanism = find_mechanism_anywhere(
             cls.ccr, 'guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity'
         )
 
