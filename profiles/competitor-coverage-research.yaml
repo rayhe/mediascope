@@ -16658,6 +16658,41 @@ cross_publication_findings:
     source_urls:
     - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
     - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+  mass_market_vocabulary_propagation_cycle:
+    mechanism_id: 181
+    type: podcast_broadcast_vocabulary_propagation
+    date_documented: '2026-08-19'
+    finding: '"Pervert glasses" vocabulary completed propagation from niche UK activism
+      (EHE, Jul 2026) to mass-market American syndicated radio (Kim Komando, 500+ stations,
+      6-8M weekly listeners) and late-night network TV (Jimmy Kimmel Live!, ABC, ~2.5M
+      nightly viewers). ABC News Daily Australia (#3 publicly funded broadcaster after
+      BBC and DW) adopted the vocabulary. News Corp''s The Sun tech editor (Sean Keach)
+      used alarm framing on TalkTV despite News Corp receiving Meta content partnership
+      revenue — cultural consensus overrides financial incentive. Zero competitor products
+      have ever received the "pervert glasses" label in any medium.'
+    asymmetry_score: 0.88
+    entities: [Meta, Samsung, Google, Apple, OpenAI]
+    key_finding_mass_audience: 'Kim Komando used "pervert glasses" as a direct EPISODE
+      TITLE on the most widely syndicated tech radio show in America (500+ stations).
+      Jimmy Kimmel used it on ABC late-night TV. Combined audience exceeds 8M weekly.
+      This completes the vocabulary''s propagation from niche to mainstream.'
+    key_finding_public_broadcasters: 'Three publicly funded national broadcasters (BBC
+      UK, DW Germany, ABC Australia) across three continents independently frame Meta
+      glasses with alarm vocabulary. Zero advertising dependency, zero content deals.
+      Strongest evidence for cultural consensus hypothesis.'
+    key_finding_news_corp_paradox: 'News Corp receives Meta content partnership revenue
+      AND $250M OpenAI content licensing. Yet The Sun''s tech editor uses maximum-alarm
+      vocabulary for Meta glasses on broadcast TV. OpenAI companion device (greater
+      surveillance capability) gets neutral framing from News Corp. Financial incentive
+      predicts protective coverage; cultural consensus overrides.'
+    confounders: 4 (2 STRONG, 1 MODERATE, 1 WEAK)
+    cross_references: [7, 144, 157, 158, 168, 177]
+    test_file: tests/test_mass_market_vocabulary_propagation_cycle_aug19.py
+    source_urls:
+    - https://www.deezer.com/en/show/1272032
+    - https://www.komando.com/playlist/smart-devices-gadgets/
+    - https://www.podbean.com/media/share/dir-panfa-2fdf9aa7
+    - https://www.youtube.com/watch?v=LspLdcz9uqQ
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

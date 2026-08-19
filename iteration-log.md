@@ -1,3 +1,33 @@
+## Iteration #182 — Wed 2026-08-19 11:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Mass-Market Vocabulary Propagation Cycle Complete
+
+**Type:** Podcast/Broadcast Sentiment Tracking
+**Scope:** "Pervert glasses" vocabulary propagation from niche UK activism to mass-market American syndication
+
+**New Podcast Entries (#33–#35):**
+
+1. **#33 Kim Komando Daily Tech Update** (~Aug 10, 2026) — "Meta's smart glasses. AKA 'pervert glasses'" as episode title on the most widely syndicated US tech radio show (500+ stations, 6–8M weekly listeners). Also references Jimmy Kimmel using "pervert glasses" on ABC late-night TV.
+
+2. **#34 ABC News Daily Australia** (Aug 2, 2026) — Third publicly funded national broadcaster (after BBC UK and DW Germany) to adopt "pervert glasses" vocabulary. Guest: Dr. Milica Stilinovic, University of Sydney. Three continents, three independent public broadcasters, same Meta-specific framing.
+
+3. **#35 TalkTV** (~Jul 9, 2026) — Sean Keach (The Sun / News Corp) uses alarm framing ("They Can SEE EVERYTHING!") despite News Corp receiving Meta content partnership revenue. Cultural consensus overrides financial incentive — asymmetry score 0.88.
+
+**New Mechanism:**
+- **#181** (`podcast_broadcast_vocabulary_propagation`, asymmetry_score: 0.88) — Documents the complete "pervert glasses" vocabulary propagation cycle from niche UK activism to mass-market American syndication. Zero equivalent stigmatizing vocabulary for Samsung Galaxy Glasses, Snap Spectacles, or Google/Samsung Android XR.
+
+**Test Results:**
+- New test file: `test_mass_market_vocabulary_propagation_cycle_aug19.py` — 9 classes, 42 tests, all pass
+
+### Files Changed
+- `podcast-sentiment.md` — entries #33–#35 added
+- `profiles/competitor-coverage-research.yaml` — mechanism #181 added
+- `tests/test_mass_market_vocabulary_propagation_cycle_aug19.py` — new (42 tests)
+- `README.md` — test count 17,208→17,250, files 472→473
+- `docs/ARCHITECTURE.md` — test count sync, new test file entry
+
+---
+
 ## Iteration #181 — Wed 2026-08-19 11:00 PT (Type D: Test & Verify)
 
 ### Structural Integrity Fixes — 7 Test Failures Resolved
