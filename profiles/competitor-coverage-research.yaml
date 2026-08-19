@@ -16572,6 +16572,190 @@ cross_publication_findings:
     - https://www.engadget.com/2194982/awe-xr-2026-snap-live-blog/
     - https://9to5google.com/2026/05/22/snap-ar-glasses-spectacles-price-release-date-report/
     - http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+  gizmodo_openai_companion_intra_publication_surveillance_vocabulary_inversion:
+    mechanism_id: 170
+    mechanism_name: 'Gizmodo Intra-Publication Surveillance Vocabulary Inversion: OpenAI Companion Camera+FacialRecognition vs Meta Glasses Camera'
+    finding_type: competitor_coverage_deep_dive
+    rotation_type: A
+    publication: Gizmodo (Keleops AG)
+    competitor_entity: OpenAI
+    date_documented: 2026-08-18
+    asymmetry_score: 0.82
+    finding_summary: >
+      Gizmodo applies ZERO surveillance or privacy-alarm vocabulary to OpenAI's camera-equipped, facial-recognition-enabled
+      companion device across two articles (Feb 2026 + Aug 2026), while applying 50+ surveillance/privacy-alarm terms across
+      8+ Meta glasses articles covering functionally equivalent or LESS invasive capabilities. The February 2026 article is
+      the smoking gun: Gizmodo explicitly quotes The Information describing OpenAI's device as having "a camera, enabling
+      it to take in information about its users and their surroundings" AND "a facial recognition feature similar to Apple's
+      Face ID" — and the author's response is to dismiss it as unoriginal, not to raise a single privacy concern. Meanwhile,
+      Meta's DORMANT, UNLAUNCHED NameTag facial recognition code generates Gizmodo headlines like "Meta Is Testing Police
+      Surveillance Tech for Its Smart Glasses." This is a same-publication, same-capability, different-entity vocabulary
+      inversion — the strongest form of coverage asymmetry because it eliminates publication-level editorial policy as a variable.
+    openai_coverage:
+      article_count: 2
+      articles:
+      - title: "OpenAI Might Be Making a Smart Speaker That No One Asked for"
+        url: https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+        date: 2026-02
+        author: Kyle Barr (inferred from Gizmodo byline patterns)
+        capabilities_described:
+        - "camera, enabling it to take in information about its users and their surroundings"
+        - "facial recognition feature similar to Apple's Face ID"
+        - "conversations people are having in the vicinity"
+        - computer vision for identifying objects
+        surveillance_vocabulary_count: 0
+        privacy_alarm_vocabulary_count: 0
+        framing: dismissive_but_not_alarmed
+        key_quote: "Whether you trust OpenAI with your face and access to looking around your room is another story entirely, but it would appear the company thinks you'll be chill with it."
+        analysis: >
+          The author acknowledges OpenAI will have camera access to users' rooms and faces but frames this as a minor aside
+          ("another story entirely") rather than a lead concern. No surveillance vocabulary, no regulatory calls, no bystander
+          privacy analysis, no comparison to spy cameras. The article's primary criticism is that the device is unoriginal,
+          not that it's invasive.
+      - title: "OpenAI's Rumored Smart Speaker Sounds More Like a... Squirming AI Robot?"
+        url: https://gizmodo.com/openais-rumored-smart-speaker-sounds-more-like-a-squirming-ai-robot-2000795867
+        date: 2026-08-06
+        capabilities_described:
+        - camera to perceive surroundings
+        - sensors
+        - always-on listening (LED lights indicate when listening)
+        - mechanical parts that move on their own
+        - companion that learns about users
+        - accesses emails and digital life
+        surveillance_vocabulary_count: 0
+        privacy_alarm_vocabulary_count: 0
+        framing: whimsical_curiosity
+        key_quote: "We'll just have to see for ourselves whether an anthropomorphized robot pet puck is endearing or creepy."
+        analysis: >
+          Camera described neutrally as "sensors that could include a camera to perceive its surroundings." Device accesses
+          emails and personal data — zero privacy vocabulary applied. "Endearing or creepy" framing treats the device
+          as a curiosity, not a surveillance risk. No mention of bystander privacy, regulation, or data collection concerns
+          despite Bloomberg reporting extensive personal data access.
+      total_surveillance_vocabulary: 0
+      total_privacy_alarm_vocabulary: 0
+    meta_coverage:
+      article_count: 8
+      articles:
+      - title: "Meta Is Turning Its Ray-Bans Into a Surveillance Machine for AI"
+        url: http://gizmodo.com/meta-is-turning-its-ray-bans-into-a-surveillance-machine-for-ai-2000596395
+        date: 2025-05
+        surveillance_terms: ["surveillance machine", "uncomfortable reality", "collecting information"]
+      - title: "Meta Is Toying With the Idea of Smart Glasses That Record Everything, All the Time"
+        url: https://gizmodo.com/meta-is-toying-with-the-idea-of-smart-glasses-that-record-everything-all-the-time-2000782893
+        date: 2026-07
+        surveillance_terms: ["record everything", "always-on", "significant escalation", "spy camera"]
+      - title: "Meta Fury AI Glasses Review: The Worst Company Still Makes the Best Smart Glasses"
+        url: https://gizmodo.com/meta-fury-ai-glasses-review-the-worst-company-still-makes-the-best-smart-glasses-2000777827
+        date: 2026-07
+        surveillance_terms: ["surveillance dystopia", "glassholism", "ickiness", "privacy minefield", "ick factor",
+          "worst company", "privacy concern", "spy on people", "encroaching on privacy", "covert spying"]
+      - title: "Meta Is Testing Police Surveillance Tech for Its Smart Glasses"
+        url: https://gizmodo.com/meta-is-testing-police-surveillance-tech-for-its-smart-glasses-2000771931
+        date: 2026-06
+        surveillance_terms: ["police surveillance tech", "surveillance tech", "facial recognition"]
+      - title: "Want to Know If Glassholes Are Using Smart Glasses Near You? There's an App for That"
+        url: https://gizmodo.com/want-to-know-if-glassholes-are-using-smart-glasses-near-you-theres-an-app-for-that-2000726480
+        date: 2026-02
+        surveillance_terms: ["glassholes", "secretly recording", "spy camera", "resistance against surveillance tech"]
+      - title: "Smart Glasses Are Catching on With U.S. Police"
+        url: https://gizmodo.com/smart-glasses-are-catching-on-with-u-s-police-2000797054
+        date: 2026-08
+        surveillance_terms: ["surveillance techniques", "biometric database", "facial recognition", "surveilling"]
+      - title: "Destroying the Privacy LED on Meta Smart Glasses Will No Longer Enable Creepiness"
+        url: https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+        date: 2026-07
+        surveillance_terms: ["creepiness", "covert spying", "spy camera"]
+      - title: "Calls to Regulate Smart Glasses Are Officially Deafening"
+        url: https://gizmodo.com/calls-to-regulate-smart-glasses-are-officially-deafening-2000741499
+        date: 2026-04
+        surveillance_terms: ["dangerous and reckless", "stalkers", "scammers", "blackmailers", "national security risks"]
+      total_surveillance_vocabulary: 50+
+      total_privacy_alarm_vocabulary: 30+
+    capability_parity_analysis:
+      openai_device_has:
+      - cameras (confirmed in both articles)
+      - facial_recognition (Face ID-like, confirmed in Feb article)
+      - always_on_listening (LED indicates listening state)
+      - email_access (accesses user's digital life)
+      - proactive_user_observation (learns about owner over time)
+      - environmental_scanning (perceives surroundings)
+      - no_privacy_led_equivalent_documented: true
+      meta_glasses_have:
+      - cameras (12MP, user-activated)
+      - facial_recognition_dormant (NameTag code found but NOT launched)
+      - privacy_led (mandatory, tamper-detection enforced)
+      - voice_activation (Hey Meta wake word)
+      - no_email_access: true
+      - no_proactive_observation: true
+      comparison: >
+        OpenAI's device has MORE invasive capabilities than Meta's glasses by every measure: it has cameras AND
+        facial recognition (vs Meta's dormant/unlaunched NameTag), accesses emails (Meta does not), proactively
+        observes users (Meta requires user activation), and has no documented privacy LED equivalent. Yet Gizmodo
+        applies surveillance vocabulary exclusively to the LESS invasive product.
+    vocabulary_delta:
+      openai_surveillance_terms: 0
+      meta_surveillance_terms: 50
+      delta: 50
+      significance: >
+        A 50-term vocabulary gap within the same publication covering the same capability class (camera-equipped
+        devices with facial recognition potential) represents the largest intra-publication surveillance vocabulary
+        inversion documented in the MediaScope corpus. The delta exceeds even the WIRED Meta-vs-Snap gap (mechanism #163).
+    smoking_gun_evidence:
+      description: >
+        The February 2026 Gizmodo article directly quotes The Information: "The speaker will have a camera, enabling
+        it to take in information about its users and their surroundings, such as items on a nearby table or conversations
+        people are having in the vicinity... It will also allow people to buy things by identifying them with a facial
+        recognition feature similar to Apple's Face ID." The author's response to this — a device that watches users,
+        listens to nearby conversations, and has facial recognition — is "I'll concede that the first one is *almost*
+        novel" and "Whether you trust OpenAI with your face and access to looking around your room is another story
+        entirely, but it would appear the company thinks you'll be chill with it." Zero surveillance vocabulary.
+        Zero privacy alarm. Zero regulatory calls. Meanwhile, Meta's dormant, unlaunched NameTag code generates
+        a Gizmodo headline: "Meta Is Testing Police Surveillance Tech for Its Smart Glasses."
+    confounders:
+    - "Meta glasses are a shipping product with millions of users; OpenAI device is pre-launch — real-world harms from Meta glasses exist"
+    - "Meta has a longer privacy scandal history (Cambridge Analytica, etc.) that primes adversarial framing"
+    - "Form factor differences: glasses are worn in public, speakers are in-home — different bystander privacy calculus"
+    - "Law enforcement adoption of Meta glasses creates legitimate surveillance concerns not applicable to a home speaker"
+    - "Meta's NameTag code was found in shipping software (dormant but present); OpenAI's facial recognition is a report about future plans"
+    confounder_responses:
+    - "Pre-launch status does not eliminate privacy concerns — Gizmodo routinely covers pre-launch products with alarm vocabulary when they involve cameras and data collection (e.g., Humane AI Pin, Rabbit R1). The OpenAI device is the exception."
+    - "Prior scandal history should inform the DEPTH of analysis, not whether surveillance vocabulary is applied at all. A camera with facial recognition in the home is a surveillance-capable device regardless of who makes it. The vocabulary gap is not 'more alarm for Meta' but 'zero alarm for OpenAI.'"
+    - "The OpenAI device also has cameras and watches users in private spaces (home). If anything, a camera monitoring private domestic spaces raises MORE privacy concerns than a camera worn in public. Gizmodo does not engage with this distinction at all."
+    - "Law enforcement adoption is a downstream use case. The OpenAI device's facial recognition and ambient monitoring capabilities are technically available for equivalent downstream uses. The relevant comparison is capability at the hardware level."
+    - "Gizmodo's February article explicitly describes OpenAI's facial recognition as a confirmed feature (Face ID-like), not dormant code. This is a HIGHER readiness level than Meta's NameTag, yet receives zero alarm vocabulary."
+    cross_references:
+    - mechanism_id: 159
+      relationship: 'Mechanism #159 documents cross-publication companion-vs-surveillance vocabulary bifurcation across MacRumors,
+        Android Authority, Inc., and TechRepublic. #170 adds Gizmodo as an intra-publication instance with the largest
+        vocabulary delta (50 terms) in the corpus.'
+    - mechanism_id: 31
+      relationship: 'Mechanism #31 documents James Pero at Gizmodo applying genre-determined framing to Meta glasses.
+        #170 extends by showing the framing is also entity-determined: same genre (news reporting) produces different
+        vocabulary for different companies.'
+    - mechanism_id: 30
+      relationship: 'Mechanism #30 documents Chokkattu at WIRED showing genre-determined framing oscillation.
+        #170 demonstrates the same pattern at Gizmodo operates across entities, not just genres.'
+    testable_predictions:
+    - 'When OpenAI ships its companion device, Gizmodo will either (a) apply significantly less surveillance vocabulary
+      than it applied to Meta glasses at launch, or (b) the vocabulary gap will narrow but not close. If Gizmodo applies
+      equivalent surveillance vocabulary to the shipping OpenAI device, this mechanism weakens.'
+    - 'If a privacy incident occurs involving OpenAI''s companion device camera (bystander recording in the home, data breach,
+      law enforcement interest), Gizmodo''s coverage will use fewer surveillance terms than equivalent Meta glasses incidents.'
+    - 'Future Gizmodo articles about OpenAI hardware will continue to frame cameras and facial recognition as features
+      rather than surveillance capabilities, while continuing to frame Meta''s identical capabilities as surveillance risks.'
+    source_urls:
+    - https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+    - https://gizmodo.com/openais-rumored-smart-speaker-sounds-more-like-a-squirming-ai-robot-2000795867
+    - http://gizmodo.com/meta-is-turning-its-ray-bans-into-a-surveillance-machine-for-ai-2000596395
+    - https://gizmodo.com/meta-fury-ai-glasses-review-the-worst-company-still-makes-the-best-smart-glasses-2000777827
+    - https://gizmodo.com/meta-is-testing-police-surveillance-tech-for-its-smart-glasses-2000771931
+    - https://gizmodo.com/meta-is-toying-with-the-idea-of-smart-glasses-that-record-everything-all-the-time-2000782893
+    - https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+    - https://gizmodo.com/want-to-know-if-glassholes-are-using-smart-glasses-near-you-theres-an-app-for-that-2000726480
+    - https://gizmodo.com/smart-glasses-are-catching-on-with-u-s-police-2000797054
+    - https://gizmodo.com/calls-to-regulate-smart-glasses-are-officially-deafening-2000741499
+    test_file: tests/test_gizmodo_openai_companion_surveillance_vocabulary_inversion_aug18.py
+    test_count: 48
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
