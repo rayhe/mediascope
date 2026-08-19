@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~16,922 | Across 465 test files |
+| Tests | ~16,977 | Across 466 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **16922 tests** across 465 test files, each covering a different analytical capability:
+MediaScope has **16977 tests** across 466 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -980,3 +980,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_9to5_network_cross_publication_privacy_vocabulary_gradient_aug19.py` | 49 | Mechanism #173: 9to5 Network Cross-Publication Smart Glasses Privacy Vocabulary Gradient. 9to5Mac Inc. network applies systematic THREE-TIER vocabulary gradient: Even Realities (no camera) = aspirational/zero alarm, Samsung/Google (camera, financial partner) = positive/zero alarm, Meta (camera, no financial tie) = "perv glasses"/distrust. 9to5Mac Overtime Ep077 with Even Realities CEO Will Wang — "Addressing the privacy problem" chapter (28:58). Financial: 9to5Google AdSense per-article (Digiday 2018), Google Preferred Source badge, Ad Exchange partner. Meta $0 relationship. Vocabulary severity inversely correlates with financial dependency. 5 confounders (2 STRONG: no camera, real controversies), cross-refs #131, #144, #148, #163, #171. 10 classes, 49 tests |
 | `test_openai_zero_ad_revenue_share_publisher_financial_captivity_aug19.py` | 35 | Mechanism #174: OpenAI Zero-Ad-Revenue-Share Publisher Financial Captivity Architecture. VP Media Partnerships Varun Shetty confirmed at WAN-IFRA World News Media Congress (Marseille, Jun 3 2026): "Not at this point" on sharing ad revenue with publishers. OpenAI keeps 100% of ChatGPT ad revenue ($2.5B projected 2026, $100B by 2030) while publishers get flat licensing fees ($300-400M/yr total, 20+ deals). Revenue share comparison: Google AdSense 68-80%, Perplexity initially shared then removed ads, Prorata AI 50%, OpenAI 0%. Shetty career: NYU Law → Skadden/Wilson Sonsini (antitrust) → NYT Strategy → Meta WhatsApp BD (6 yrs) → OpenAI VP. WAN-IFRA newsroom dependency programs: Catalyst ($1.5M/128 newsrooms), Prototype Fund ($1.5M), Academy for News. Creates three-lever captivity: flat fee + grants + traffic. Meta has ZERO deals with adversarial publications = $0 cost for adversarial coverage. NYT litigation vs deal-holders creates two-tier incentive. 5 confounders (2 STRONG: early-stage norms, eMarketer 90% miss), cross-refs #172, #162, #40. 10 classes, 35 tests |
 | `test_type_d_02am_cross_validation_aug19.py` | 27 | Type D cross-validation (Aug 19, 02:00 AM PT): Doc sync fix — README body stale at 16860/463 (table was 16895/464), now synced. Guardian Samsung mechanism #169 lookup bug fix (find_mechanism_in_publications → find_mechanism_anywhere after iteration #173 section-placement cleanup). Mechanism #174 structural integrity (9 field checks), section placement guard (0 mechanisms in publications), mechanism ID contiguity (known gaps only: 1-16, 139), asymmetry score distribution validation. 6 classes, 27 tests |
+| `test_australia_kmart_anko_price_democratization_backlash_transfer_aug19.py` | 55 | Mechanism #175: Australia Kmart Anko Price Democratization Backlash Transfer — first non-Meta brand receiving partial privacy scrutiny with gravitational Meta reframing. Kmart Australia's $89 Anko camera glasses (Aug 2026) triggered government investigation (Attorney-General → Privacy Commissioner), EFA ban call naming both Meta AND Kmart, 43,000+ petition signatures. KEY FINDING: Kmart receives moderate-alarm vocabulary ("privacy concerns," 5/10) while Meta retains extreme-alarm vocabulary ("pervert glasses," 9/10). Kmart does NOT receive: celebrity condemnation, satirical commerce, institutional bans, criminal complaints, activist campaigns. Privacy paradox: Kmart has WORSE privacy features (no documented LED, $89 price enabling mass adoption) but gets less scrutiny. Prediction update: non-Meta brand received ~40% scrutiny intensity but 0% extreme vocabulary. 5 confounders, cross-refs #137, #144, #157, #158, #173. 10 classes, 55 tests |

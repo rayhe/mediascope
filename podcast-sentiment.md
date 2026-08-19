@@ -1085,16 +1085,55 @@ Vocabulary severity inversely correlates with financial relationship: the entity
 
 ---
 
-## Updated Cross-Medium Asymmetry Summary (Aug 19, 2026, 07:00 UTC)
+### 26. 7NEWS Australia — "Smart glasses spark urgent privacy concerns" (Aug 7, 2026)
 
-### Podcast/Broadcast vs Print/Online Coverage Comparison (25 episodes + 3 new patterns)
+**Publisher:** 7NEWS (Channel 7, Australia)
+**Reporter/Network:** 7NEWS Australia broadcast
+**Source URL:** https://www.youtube.com/watch?v=4ZXgcpVVfjM
+
+**Key Finding:** Kmart's $89 Anko camera glasses sold out nationally, triggering Attorney-General investigation. Australian Greens pushing for import ban. First major broadcast segment naming a non-Meta brand alongside Meta in smart glasses privacy coverage. Kmart does NOT get "pervert" or "surveillance" vocabulary — receives "privacy concerns" and "privacy storm" instead.
+
+**Entity Coverage:**
+- **Kmart/Anko:** Named as the trigger for privacy backlash. Moderate-alarm vocabulary (5/10).
+- **Meta:** Referenced as the established player ("versions by companies including Meta selling for several hundred dollars"). Retains extreme-alarm vocabulary (9/10) from prior coverage.
+- **Samsung/Google/Apple:** Not mentioned.
+
+**Sentiment Score:** -5/10 (moderately negative toward category, not brand-specific)
+**Asymmetry Assessment:** MODERATE — Non-Meta brand receives substantial scrutiny (government investigation, petition, broadcast coverage) but extreme-alarm vocabulary ("pervert," "surveillance," celebrity condemnation, satirical commerce, institutional bans) applies exclusively to Meta.
+**Mechanism:** #175 (Australia Kmart Anko Price Democratization Backlash Transfer)
+**Cross-references:** #137 (Privacy Vocabulary Redirected Attribution), #144 (Podcast Ecosystem Amplification), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization)
+
+---
+
+### 27. 7NEWS Sunrise — "Budget smart glasses spark privacy concerns" (Aug 6, 2026)
+
+**Publisher:** 7NEWS Sunrise (Channel 7, Australia — breakfast TV)
+**Source URL:** https://www.youtube.com/watch?v=cYBEvIuIsN8
+
+**Key Finding:** Same Kmart Anko camera glasses story covered on breakfast TV. Privacy Commissioner investigation requested by government. Coverage driven by the $89 price point making camera glasses accessible to casual buyers. Meta still gravitational reference point — "81% cheaper than Meta Ray-Bans."
+
+**Entity Coverage:**
+- **Kmart/Anko:** Primary subject. Moderate-alarm vocabulary.
+- **Meta:** Reference point for price comparison and established product category.
+- **Samsung/Google/Apple:** Not mentioned.
+
+**Sentiment Score:** -5/10 (moderately negative toward category)
+**Asymmetry Assessment:** MODERATE — Validates pattern from Ep. 26. Kmart receives category-level scrutiny but no brand-specific extreme vocabulary.
+**Mechanism:** #175 (Australia Kmart Anko Price Democratization Backlash Transfer)
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 19, 2026, 09:00 UTC)
+
+### Podcast/Broadcast vs Print/Online Coverage Comparison (27 episodes + 4 new patterns)
 
 | Pattern | Print/Online | Podcast/Broadcast (25 episodes) | Alignment |
 |---------|-------------|---------|-----------|
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (22 of 25 episodes) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 25 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (24 of 27 episodes) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 27 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
 | Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
 | Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny) | **ALIGNED** |
+| Non-Meta brand partial scrutiny | N/A (new) | ✅ (Kmart Anko: gov investigation + petition, but 0% extreme vocabulary) | **NEW PATTERN** |
 | Same-publisher dual framing | N/A (new) | ✅ (9to5Google: aspiration for Google, alarm for Meta) | **NEW PATTERN** |
 | Network-level vocabulary gradient | N/A (new) | ✅ (9to5Mac Inc.: Even Realities=aspirational, Samsung/Google=positive, Meta=alarm) | **NEW PATTERN** |
 | Public broadcaster meta-targeting | N/A (new) | ✅ (BBC UK, DW Germany, NBC US — 2/3 publicly funded) | **NEW PATTERN** |
@@ -1104,5 +1143,5 @@ Vocabulary severity inversely correlates with financial relationship: the entity
 
 ---
 
-*Last updated: 2026-08-19 07:00 UTC (Aug 19, 12:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient)*
+*Last updated: 2026-08-19 09:00 UTC (Aug 19, 2:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer)*

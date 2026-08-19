@@ -1,3 +1,54 @@
+## Iteration #175 — Wed 2026-08-19 02:00 PT (Type D: Test & Verify)
+
+### Fixes Applied
+
+**Fix 1 — README body/table desync:**
+README body text was stale at "16860 tests across 463 test files" while the table row had been correctly updated to "~16,895 across 464" by iteration #174. ARCHITECTURE.md also had 16895/464. Root cause: iteration #174 updated table + ARCHITECTURE but missed the body text. Same bug class recurs every few iterations when multiple doc locations reference the same counts. Fixed: body now reads "16922 tests across 465 test files" (matching table and ARCHITECTURE after this iteration's additions).
+
+**Fix 2 — Guardian Samsung mechanism #169 lookup failure (57 tests):**
+`test_guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity_aug18.py` had 57 failures — every test class got `NoneType` because `find_mechanism_in_publications()` couldn't find mechanism #169. Iteration #173 correctly moved all mechanisms out of the publications section into `cross_publication_findings`, but this test file was written *before* that move and wasn't updated. Switched all 9 `setUpClass` calls from `find_mechanism_in_publications()` → `find_mechanism_anywhere()`. All 61 tests now pass. No other test files use this pattern (checked via grep).
+
+### Verification Results
+
+**Cross-validation tests (all passing):**
+- `test_type_d_11pm_cross_validation_aug18.py` — 48 tests ✓
+- `test_type_d_midnight_cross_validation_aug18.py` — 50 tests ✓  
+- `test_type_d_07am_cross_validation_aug18.py` — 40+ tests ✓
+- `test_type_d_08am_cross_validation_aug17.py` + 4 more Aug 16-17 files — 300 tests ✓
+- `test_guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity_aug18.py` — 61 tests ✓ (post-fix)
+- Aug 18 mechanism tests (#170-172, #174) — 168 tests ✓
+
+**Structural integrity checks:**
+- Publications section: 0 mechanisms (clean after iteration #173)
+- CPF section: 147 mechanisms, aggregate: 10 mechanisms = 157 total
+- Mechanism ID range: 17-174, known gaps only (1-16 pre-numbering, 139)
+- No duplicate IDs
+- All recent mechanisms (170+) have asymmetry scores in 0.5-1.0 range
+
+### New Test
+
+`test_type_d_02am_cross_validation_aug19.py` — 6 classes, 27 tests:
+1. `TestDocSyncAfterIteration174` — README table/body/ARCHITECTURE agreement (7 tests)
+2. `TestMechanism174Structure` — #174 field integrity: name, score, entities, sources, cross-refs, type, Shetty evidence, confounders (9 tests)
+3. `TestSectionPlacementGuard` — no mechanisms in publications, CPF 145+, aggregate IDs valid (3 tests)
+4. `TestMechanismIDContiguity` — contiguity, max >= 174, no duplicates (3 tests)
+5. `TestAug19TestFiles` — file existence, README + ARCHITECTURE registration (4 tests)
+6. `TestAsymmetryScoreDistribution` — recent scores present, corpus mean reasonable (2 tests minus 1 param = 2 tests)
+
+### Files Changed
+- `README.md` — body text 16860/463 → 16922/465, table ~16,895/464 → ~16,922/465, new test table row
+- `docs/ARCHITECTURE.md` — test/file counts 16895/464 → 16922/465, new test file entry
+- `tests/test_guardian_samsung_galaxy_glasses_london_geographic_proximity_privacy_parity_aug18.py` — 9× find_mechanism_in_publications → find_mechanism_anywhere
+- `tests/test_type_d_02am_cross_validation_aug19.py` — new (6 classes, 27 tests)
+
+### Stats After This Iteration
+- **Mechanisms:** 174
+- **Tests:** ~16,922 across 465 files
+
+**Pushed to GitHub: `61b6251`**
+
+---
+
 ## Iteration #174 — Wed 2026-08-19 01:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #174: OpenAI Zero-Ad-Revenue-Share Publisher Financial Captivity Architecture
@@ -3940,3 +3991,34 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry + counts)
 
 **Cumulative:** 173 mechanisms, ~16,860 tests, 463 files
+
+---
+
+## Iteration #176 — Type E: Podcast/Broadcast Sentiment Tracking (Aug 19, 2026, 04:05 AM PT)
+
+**Focus:** Australia Kmart Anko Price Democratization Backlash Transfer — first non-Meta brand receiving partial privacy scrutiny
+
+**Mechanism #175:** Australia Kmart Anko Price Democratization Backlash Transfer — Non-Meta Brand Receives Partial Scrutiny With Gravitational Meta Reframing
+
+**Type:** podcast_broadcast_sentiment_cross_entity_natural_experiment
+**Entities:** Meta, Kmart/Anko, Samsung, Google, Apple
+**Asymmetry Score:** 0.68 (moderate — non-Meta brand DOES receive scrutiny, but Meta remains gravitational center)
+
+**Core Finding:** In August 2026, Kmart Australia launched $89 Anko camera glasses that sold out nationally, triggering a significant privacy backlash. This is the FIRST documented natural experiment where a non-Meta brand receives substantial privacy scrutiny for camera-equipped smart glasses. Key finding — Gravitational Meta Reframing: even in Kmart coverage, Meta serves as the gravitational reference point. Vocabulary differential: Kmart receives moderate-alarm vocabulary ("privacy concerns," 5/10) while Meta retains extreme-alarm vocabulary ("pervert glasses," 9/10). Kmart does NOT receive: celebrity condemnation, satirical counter-products, "pervert" vocabulary, institutional bans, criminal complaints, activist campaigns. Privacy paradox: Kmart has WORSE privacy features (no documented LED, $89 vs $469+) but gets less extreme scrutiny.
+
+**Confounders:** 5 documented (2 STRONG: Meta has real incidents + global brand recognition; 2 MODERATE: Kmart sold out quickly + Australian regulation targets category; 1 WEAK: established category defense)
+
+**Cross-references:** #137, #144, #157, #158, #173
+
+**Podcast Episodes #26-27:**
+- #26: 7NEWS Australia — "Smart glasses spark urgent privacy concerns" (Aug 7, 2026). Source: https://www.youtube.com/watch?v=4ZXgcpVVfjM
+- #27: 7NEWS Sunrise — "Budget smart glasses spark privacy concerns" (Aug 6, 2026). Source: https://www.youtube.com/watch?v=cYBEvIuIsN8
+
+**Files changed:**
+- Added: `tests/test_australia_kmart_anko_price_democratization_backlash_transfer_aug19.py` (10 classes, 55 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #175)
+- Updated: `podcast-sentiment.md` (episodes #26-27, updated cross-medium summary to 27 episodes, added non-Meta brand partial scrutiny pattern)
+- Updated: README.md (466 files, ~16,977 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 175 mechanisms, ~16,977 tests, 466 files
