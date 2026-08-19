@@ -2,6 +2,29 @@
 
 ### Mechanism #183: Hadlee Simons (Android Authority) Smart Glasses Cross-Entity Coverage Selection — Samsung Privacy Problem-Solving + Google Advocacy + Zero Meta Privacy Investigation
 
+**Type:** Journalist Cross-Entity Tracking — Portfolio-Level Coverage Selection Asymmetry
+**Publication:** Android Authority (Jeronimo Media Group BV)
+**Journalist:** Hadlee Simons (senior editor, chipsets/cameras/wearables, ~15 years experience)
+**Asymmetry Score:** 0.78
+
+**Core Finding:**
+Hadlee Simons has covered smart glasses from 6+ entities (Samsung, Google, Snap, Halliday, HTC, TECNO) across 7+ articles spanning Sep 2024 - Jul 2026 with neutral-to-aspirational framing, while publishing ZERO dedicated Meta Ray-Ban articles of any type. His Samsung coverage (Jul 31, 2026) frames Samsung as SOLVING the privacy problem ("keep perverts away"), presenting Samsung's privacy features as solutions while contrasting them negatively against Meta ("also found on Meta's smart glasses" + "Meta drew the ire of privacy advocates"). His Google coverage (Feb 2026) is explicitly advocacy-positioned: "I'd buy Google's AI glasses over Apple's AI pin any day" with Google's mass data collection framed as POSITIVE ("that data also translates into real-world understanding"). Meanwhile, same-publication colleagues produce adversarial Meta coverage: C. Scott Brown ("spy gear," "covert spy gear"), Chethan Rao ("controversial," "pervert"), Jay Bonggolto ("predator's dream," "creepy").
+
+**Novel Contribution:**
+First documentation of a journalist at a Google-ecosystem publication showing PORTFOLIO-LEVEL zero Meta coverage while applying solution/advocacy framing to Samsung (Google's Android XR partner) and Google. Extends mechanism #179 (Matt Wille/Gizmodo: 8+ adversarial Meta + zero Samsung) to show COMPLEMENTARY variant: zero Meta + aspirational competitor coverage.
+
+**Financial Context:**
+Android Authority's editorial mandate covers Google/Android ecosystem. Revenue depends on Google Search traffic, Google News inclusion, Google Display ads. Samsung is the dominant Android OEM. Google is the PLATFORM PARTNER for Samsung's Android XR glasses. Meta has $0 financial relationship with Android Authority.
+
+**Stats:** 64 tests in `test_hadlee_simons_android_authority_cross_entity_coverage_selection_aug19.py`
+**Cumulative:** 184 mechanisms documented, ~17,355 tests across 475 files
+
+---
+
+## Iteration #184 — Wed 2026-08-19 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #183: Hadlee Simons (Android Authority) Smart Glasses Cross-Entity Coverage Selection — Samsung Privacy Problem-Solving + Google Advocacy + Zero Meta Privacy Investigation
+
 **Type:** Journalist Cross-Entity Tracking — First Android Authority mechanism in the suite
 **Journalist:** Hadlee Simons (Senior Editor, Android Authority, ~15yr experience, joined 2018)
 **Asymmetry Score:** 0.78
