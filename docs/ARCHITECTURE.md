@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 16596 tests across 460 test files (all from real articles)
+├── tests/                       # 16763 tests across 461 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -925,3 +925,4 @@ mediascope/
 ├── iteration-log.md
 └── LICENSE
 ```
+│   ├── test_openai_cpa_advertising_maturation_meta_displacement_publisher_compounding_aug18.py # Mechanism #172: OpenAI CPA Advertising Maturation → Meta Ad Displacement → Publisher Content Deal Compounding. CPM→CPC→CPA in 5 months (vs Meta 7yr). David Dugan (ex-Meta) building competing infra. Adobe/Criteo/Pacvue/Kargo vendor convergence. $50K minimum dropped for SMBs. Publisher cycle: content deals → ChatGPT engagement → ad inventory → Meta displacement. 10 classes, 59 tests

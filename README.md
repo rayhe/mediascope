@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~16,704 | Across 460 test files |
+| Tests | ~16,763 | Across 461 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -975,3 +975,4 @@ Users of this toolkit should:
 4. Distinguish between correlation and causation
 
 The existence of a financial conflict does not prove that coverage is biased because of that conflict. MediaScope identifies patterns that warrant disclosure and further investigation.
+| `test_openai_cpa_advertising_maturation_meta_displacement_publisher_compounding_aug18.py` | 59 | Mechanism #172: OpenAI CPA Advertising Maturation → Meta Direct Performance Ad Revenue Competition → Publisher Content Deal Compounding Cycle. OpenAI's ads matured CPM (Jan 2026) → CPC (May 5) → CPA (May 28) in 5 months — vs Meta's 7+ years. Ads head David Dugan (former Meta exec, hired Mar 2026) building competing performance ad infrastructure. OpenAI partnered with Adobe, Criteo, Pacvue, Kargo (same vendors publishers use). Dropped $50K minimum → SMBs (Meta's 10M+ core base). 600+ advertisers, $100M ARR in 6 weeks. Enders Analysis: CPA "aligns its product more closely with that of Meta and Google." Publisher compounding cycle: content deals power ChatGPT engagement → ad inventory → ad revenue displaces Meta → sustains deal payments. Adverse Meta coverage costs publishers $0 (no Meta deals) while benefiting OpenAI's competitive position. OpenAI building internal ad stack ($385K comp bands). 5 confounders (2 STRONG: eMarketer <$1B market, Meta $243B scale), 4 predictions, cross-refs #48, #53, #58, #167, #40. 10 classes, 59 tests |

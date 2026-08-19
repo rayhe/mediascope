@@ -138,9 +138,37 @@ entities:
         - https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/
         - https://www.fastcompany.com/91577174/openais-ad-strategy-faces-a-major-reality-check
         - https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/
+      cpa_maturation_timeline:
+        jan_2026: CPM-only ad testing begins in US (free and Go tiers)
+        mar_2026: David Dugan hired from Meta; international expansion (Canada, Australia, NZ); 600+ advertisers; $100M ARR in 6 weeks
+        apr_2026: Self-serve Ads Manager launched (beta)
+        may_2026_cpc: 'Cost-per-click (CPC) bidding introduced. $50K minimum spend dropped — SMBs/startups now eligible.
+          Ad-tech integrations: Adobe, Criteo, Pacvue, Kargo for creative, budgeting, campaign management.
+          Asad Awan (ads & monetization lead): "CPC is the way for us to make sure this is incentive compatible."'
+        may_2026_cpa: 'Cost-per-action (CPA) ads enabled for select advertisers. Advertisers pay only when user takes
+          specific action (click-through, sign-up, purchase). Conversion tracking pixel deployed. Claire Holubowskyj
+          (Enders Analysis): CPA "aligns its product more closely with that of Meta and Google, whom it must compete
+          effectively against to reach its own targets."'
+        may_2026_measurement: Third-party measurement announced as in-progress (no partners/timeline disclosed yet)
+        hiring: 'Building internal ad stack: monetization infrastructure engineer, engineering manager, product designer,
+          senior revenue accounting manager, trust & safety (ads) — all SF HQ, full-time. Compensation bands up to $385K.
+          Signal: building to OWN, not rent. Current vendor partnerships (Criteo, The Trade Desk) are bridge, not permanent.'
+        meta_competitive_positioning: 'CPA bidding directly competes with Meta Advantage+ and Google Performance Max for
+          performance marketing dollars. Same ad-tech vendors (Criteo, Adobe) serve all three platforms. David Dugan (former
+          Meta) is building the exact same performance ad infrastructure he left. SMB access (no minimum) targets Meta''s
+          core advertiser base of 10M+ small businesses.'
+        source_urls:
+        - https://digiday.com/marketing/openai-opens-up-chatgpt-ads-manager-to-the-u-s-while-promising-third-party-measurement-cpa-bidding/
+        - https://digiday.com/marketing/openai-turns-on-cost-per-action-ads-inside-chatgpt/
+        - https://www.inc.com/marty-swant/openai-expands-chatgpt-ads-beyond-pilot-giving-smbs-a-new-growth-channel/91340790
+        - https://digiday.com/media-buying/openai-is-b-building-the-ad-tech-stack-its-currently-borrowing/
+        - https://www.pymnts.com/artificial-intelligence-2/2026/openai-expands-chatgpt-advertising-to-more-markets-after-us-pilot/
       overview: 'OpenAI is building a $2.5B advertising business in 2026 that projects to $100B by 2030, creating a NEW financial
         dependency channel with publishers. ChatGPT ads pilot crossed $100M ARR within 6 weeks of January 2026 launch. Self-serve
-        Ads Manager launched April 2026. Hired David Dugan (former Meta ads executive) in March 2026.
+        Ads Manager launched April 2026. Hired David Dugan (former Meta ads executive) in March 2026. CPC bidding launched May 2026,
+        CPA (cost-per-action) bidding enabled late May 2026 — the same CPM→CPC→CPA maturation that took Meta and Google years,
+        compressed into 5 months. OpenAI is now building its own internal ad stack (not renting from vendors), with compensation
+        bands up to $385K for ads infrastructure roles.
 
         EMARKETER COUNTER-FORECAST (Jul 17, 2026): eMarketer projects the ENTIRE US standalone chatbot ad market (ChatGPT
         + Copilot + AI Mode + Alexa for Shopping) at <$1B in 2026 and $5.41B by 2030. OpenAI''s individual target of $100B

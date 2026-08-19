@@ -3788,3 +3788,28 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry added)
 
 **Cumulative:** 169 mechanisms, ~16,600 tests, 458 files
+
+---
+
+## Iteration #172 — 2026-08-18 19:00 PT
+
+**Type:** C (Financial Incentive Mapping)
+
+**Mechanism #172:** OpenAI CPA Advertising Maturation → Meta Direct Performance Ad Revenue Competition → Publisher Content Deal Compounding Cycle
+
+**Discovery:** OpenAI's advertising business matured from CPM-only (Jan 2026) through CPC (May 5, 2026) to CPA/cost-per-action (May 28, 2026) in just 5 months — a CPM→CPC→CPA evolution that took Meta 7+ years and Google 5+ years. Ads head David Dugan (former Meta exec, hired Mar 2026) is now building competing performance ad infrastructure. OpenAI partnered with Adobe, Criteo, Pacvue, Kargo — same vendors publishers use. CPC dropped the $50K minimum, opening to SMBs (Meta's core 10M+ advertiser base). 600+ advertisers, $100M ARR in 6 weeks. Enders Analysis: CPA "aligns its product more closely with that of Meta and Google." Publisher compounding cycle: licensed content → ChatGPT engagement → ad inventory → ad dollars displace Meta → sustains deal payments. Meta has ZERO publisher content deals — adverse Meta coverage costs $0. OpenAI building internal ad stack ($385K comp bands).
+
+**Entity profile updates:** Added `cpa_maturation_timeline` to OpenAI section in `competitor-entities.yaml` with Jan→May 2026 progression (CPM→CPC→CPA), CPA launch date (May 28), ad-tech partner list, hiring details, and Meta competitive positioning analysis. Updated `overview` to reflect CPA maturation.
+
+**Confounders:** 5 documented (2 STRONG: eMarketer <$1B market forecast, Meta's $243B scale; 2 MODERATE: standard maturation, editorial independence; 1 WEAK: budget expansion)
+
+**Cross-references:** #48 (WIRED coverage gap), #53 (OpenAI Triple Layer), #58 (CN AI Deal Portfolio), #167 (CN Google Zero), #40 (Advance Total AI Exposure)
+
+**Files changed:**
+- Added: `tests/test_openai_cpa_advertising_maturation_meta_displacement_publisher_compounding_aug18.py` (10 classes, 59 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #172)
+- Updated: `profiles/competitor-entities.yaml` (OpenAI advertising CPA maturation timeline)
+- Updated: README.md (461 files, ~16,763 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry added)
+
+**Cumulative:** 172 mechanisms, ~16,763 tests, 461 files
