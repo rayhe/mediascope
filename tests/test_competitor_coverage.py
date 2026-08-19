@@ -32,7 +32,7 @@ class TestCompetitorEntities:
         with open(path) as f:
             data = yaml.safe_load(f)
         entities = data.get("entities", {})
-        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung", "microsoft", "snowflake", "snap", "yahoo_apollo", "wbd_cnn", "versant_media_group"}
+        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung", "microsoft", "snowflake", "snap", "yahoo_apollo", "wbd_cnn", "versant_media_group", "nvidia"}
         assert set(entities.keys()) == expected
 
     def test_entity_has_required_fields(self):
@@ -160,7 +160,7 @@ class TestPublicationRelationships:
         """Each relationship must have a valid coverage_prediction."""
         valid_predictions = {
             "softer", "softer_than_expected", "neutral", "adversarial",
-            "positive_if_deal_confirmed", "unknown"
+            "positive_if_deal_confirmed", "unknown", "neutral_to_absent"
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]

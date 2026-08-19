@@ -3570,6 +3570,7 @@ cross_publication_findings:
     mechanism_name: "PetaPixel Camera Publication Coverage Selection — Samsung Galaxy Glasses Zero Articles vs Meta 5+ Privacy Alarm Articles (2026)"
     mechanism_type: coverage_selection_camera_publication_entity_asymmetry
     discovery_date: '2026-08-19'
+    asymmetry_score: 0.91
     publication:
       name: PetaPixel
       type: Photography/camera-focused digital publication
@@ -16640,6 +16641,23 @@ cross_publication_findings:
     - https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539
     test_count: 55
     test_file: tests/test_matt_wille_gizmodo_smart_glasses_beat_reporter_vocabulary_bifurcation_aug19.py
+  samsung_reddit_advance_advertising_feedback_loop:
+    mechanism_id: 180
+    type: financial_incentive_triple_channel
+    date_documented: '2026-08-19'
+    finding: 'Samsung $5.7M Reddit display ad spend (Adbeat 2023) creates triple-channel Advance
+      alignment: (1) direct ad revenue, (2) Meta ad competitor protection, (3) smart glasses
+      market competition. Unique to Advance: no other publication parent has Samsung ad revenue
+      + Meta ad competitor ownership + editorial platform simultaneously.'
+    asymmetry_score: 0.82
+    entities: [Samsung, Meta]
+    publication_parent: Advance Publications
+    confounders: 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+    cross_references: [91, 161, 178, 179]
+    test_file: tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py
+    source_urls:
+    - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
+    - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -16649,6 +16667,7 @@ methodology: 'For each profiled publication, we compared coverage tone and frami
   finding is sourced to a specific article or primary document.
 
   '
+
 publications:
   atlantic:
     apple_conflict_source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs
@@ -19968,21 +19987,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  samsung_reddit_advance_advertising_feedback_loop:
-    mechanism_id: 180
-    type: financial_incentive_triple_channel
-    date_documented: '2026-08-19'
-    finding: 'Samsung $5.7M Reddit display ad spend (Adbeat 2023) creates triple-channel Advance
-      alignment: (1) direct ad revenue, (2) Meta ad competitor protection, (3) smart glasses
-      market competition. Unique to Advance: no other publication parent has Samsung ad revenue
-      + Meta ad competitor ownership + editorial platform simultaneously.'
-    asymmetry_score: 0.82
-    entities: [Samsung, Meta]
-    publication_parent: Advance Publications
-    confounders: 5 (2 STRONG, 2 MODERATE, 1 WEAK)
-    cross_references: [91, 161, 178, 179]
-    test_file: tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py
-    source_urls:
-    - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
-    - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
 research_period: 2024-08-01 to 2026-08-19

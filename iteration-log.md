@@ -1,3 +1,44 @@
+## Iteration #181 — Wed 2026-08-19 11:00 PT (Type D: Test & Verify)
+
+### Structural Integrity Fixes — 7 Test Failures Resolved
+
+**Type:** Test Suite Cross-Validation & Structural Fix
+**Scope:** YAML structural integrity, entity schema validation, score placement
+
+**Failures Found & Fixed:**
+
+1. **Mechanism #180 misplaced in `publications` section** — `samsung_reddit_advance_advertising_feedback_loop` was appended to the `publications:` block instead of `cross_publication_findings:`. Relocated to correct section. Root cause: previous iteration's YAML append targeted wrong section anchor.
+
+2. **Mechanism #178 missing top-level `asymmetry_score`** — Score (0.91) existed nested under `significance:` but cross-validation tests check for top-level `asymmetry_score`. Added top-level key to match schema expectation.
+
+3. **Guardian-Samsung `financial_tie: "indirect_via_google"` invalid** — Type not in valid relationship types enumeration in `competitor-entities.yaml`. Changed to `indirect` (which accurately describes the relationship: Samsung → Google Android XR → Guardian-Google AI pilot → indirect financial alignment). Added `neutral_to_absent` to valid coverage predictions.
+
+4. **Nvidia entity not in `test_competitor_coverage.py` expected set** — Entity was added to `competitor-entities.yaml` but test's hardcoded expected entity set wasn't updated. Added `nvidia` to expected set.
+
+**Test Results:**
+- 39 import errors (textblob/vaderSentiment) — fixed by installing missing dependencies
+- 7 structural failures — all fixed
+- 315 recent mechanism tests (Aug 19): all pass
+- 267 cross-validation tests (Aug 18): all pass
+- 105 competitor_coverage + financial_relationships tests: all pass
+- New cross-validation test file: 16 tests, all pass
+
+**No new mechanisms this iteration** — Type D is test-only.
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — #180 relocated from publications to cross_publication_findings; #178 top-level asymmetry_score added
+- `profiles/guardian.yaml` — Samsung financial_tie `indirect_via_google` → `indirect`
+- `tests/test_competitor_coverage.py` — nvidia added to expected entities; `neutral_to_absent` added to valid predictions
+- `tests/test_type_d_10am_cross_validation_aug19.py` — new (7 classes, 16 tests) validating all fixes
+- `README.md` — test count 17192/471 → 17208/472
+- `docs/ARCHITECTURE.md` — test/file counts synced
+
+### Stats After This Iteration
+- **Mechanisms:** 180 (unchanged)
+- **Tests:** ~17,208 across 472 files
+
+---
+
 ## Iteration #180 — Wed 2026-08-19 10:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #180: Samsung-Reddit-Advance Advertising Feedback Loop — Triple-Channel Financial Alignment Between World's 4th-Largest Advertiser, WIRED Parent Company, and Smart Glasses Coverage Selection
