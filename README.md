@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,013 | Across 467 test files |
+| Tests | ~17,048 | Across 468 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17013 tests** across 467 test files, each covering a different analytical capability:
+MediaScope has **17048 tests** across 468 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -982,3 +982,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_02am_cross_validation_aug19.py` | 27 | Type D cross-validation (Aug 19, 02:00 AM PT): Doc sync fix — README body stale at 16860/463 (table was 16895/464), now synced. Guardian Samsung mechanism #169 lookup bug fix (find_mechanism_in_publications → find_mechanism_anywhere after iteration #173 section-placement cleanup). Mechanism #174 structural integrity (9 field checks), section placement guard (0 mechanisms in publications), mechanism ID contiguity (known gaps only: 1-16, 139), asymmetry score distribution validation. 6 classes, 27 tests |
 | `test_australia_kmart_anko_price_democratization_backlash_transfer_aug19.py` | 55 | Mechanism #175: Australia Kmart Anko Price Democratization Backlash Transfer — first non-Meta brand receiving partial privacy scrutiny with gravitational Meta reframing. Kmart Australia's $89 Anko camera glasses (Aug 2026) triggered government investigation (Attorney-General → Privacy Commissioner), EFA ban call naming both Meta AND Kmart, 43,000+ petition signatures. KEY FINDING: Kmart receives moderate-alarm vocabulary ("privacy concerns," 5/10) while Meta retains extreme-alarm vocabulary ("pervert glasses," 9/10). Kmart does NOT receive: celebrity condemnation, satirical commerce, institutional bans, criminal complaints, activist campaigns. Privacy paradox: Kmart has WORSE privacy features (no documented LED, $89 price enabling mass adoption) but gets less scrutiny. Prediction update: non-Meta brand received ~40% scrutiny intensity but 0% extreme vocabulary. 5 confounders, cross-refs #137, #144, #157, #158, #173. 10 classes, 55 tests |
 | `test_observer_guardian_stigmatization_advocacy_samsung_press_trip_disclosure_aug19.py` | 36 | Mechanism #176: Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover + Samsung Press Trip Disclosure. The Observer (Guardian Media Group, Aug 12 2026) crosses from editorial framing to active stigmatization advocacy: "The answer is to impose stigma," "no shame in shaming the wearers," children should be taught to fear "pervert glasses." 7 Meta-specific incidents cited (bikini wax NY, Warrington conviction, Naples Pridefest, ICE surveillance, Kenya contractors), 0 competitor incidents. NEW escalation taxonomy: Level 4 (stigmatization advocacy) beyond Level 3 (counter-product satire/DuckDuckGo) and Level 2 (adversarial vocabulary/AmberMac). AAP Australia discloses Samsung-funded press trip producing coverage with "privacy controls" for Samsung vs "pervert glasses" for Meta — identical Snapdragon AR1 Gen 1 hardware, financial relationship predicts vocabulary. Times of India (Aug 13) adds India as 3rd Global South geography with unique use cases: trans rights protest filming (Delhi), police surveillance at student protests (Jantar Mantar), temple violations. Cross-refs #112, #130, #135, #137, #144, #153, #157, #158, #175. 7 classes, 36 tests |
+| `test_two_blokes_kodak_fiend_media_moral_panic_historical_precedent_aug19.py` | 35 | Mechanism #177: Two Blokes Kodak Fiend Historical Precedent — Media-Driven Camera Moral Panic Cycle (1888-2026). Australian tech podcast Two Blokes Talking Tech #744 (Aug 6, 2026) provides strongest counterexample to universal negative podcast framing. Hosts personally own Meta glasses, defend the product, draw 138-year "Kodak Fiend" historical parallel. Even defenders reproduce asymmetry — Samsung/Apple/Kmart get ZERO privacy scrutiny. Entity treatment analysis, podcast metadata, key quotes preserved. Historical parallel structure (1888 Kodak Fiend → 2026 Meta Fiend). Mechanism #176 YAML insertion fix. Cross-refs #144, #157, #158, #175, #176. 9 classes, 35 tests |

@@ -3449,6 +3449,122 @@ cross_publication_findings:
     - 43,000+ petition signatures (GetUp, Gina Martin)
     - Broadcast media coverage (7NEWS, Sunrise)
     - Category-level regulatory reform proposals
+  observer_guardian_stigmatization_advocacy_samsung_press_trip_disclosure:
+    asymmetry_score: 0.92
+    confounders:
+    - description: Meta IS the dominant smart glasses vendor with 80%+ market share and real privacy incidents (contractor footage review, NameTag leak)
+      strength: strong
+    - description: Observer is an opinion/column section — editorials have traditionally advocated positions more strongly than news reporting
+      strength: strong
+    - description: Samsung Galaxy Glasses had not shipped at time of publication — no consumer misuse incidents to report yet
+      strength: moderate
+    - description: AAP reporter's Samsung trip disclosure shows transparency about the financial relationship
+      strength: moderate
+    - description: Stigmatization advocacy may reflect genuine public safety concern rather than commercial bias
+      strength: weak
+    cross_references:
+    - 112
+    - 130
+    - 135
+    - 137
+    - 144
+    - 157
+    - 158
+    - 175
+    entities:
+    - Meta
+    - Samsung
+    - EssilorLuxottica
+    - Guardian Media Group
+    - AAP
+    mechanism_id: 176
+    mechanism_name: "Observer/Guardian Stigmatization Advocacy + AAP Samsung Press Trip Disclosure — Publication-as-Activist Crossover and Financial Relationship Transparency"
+    mechanism_type: podcast_broadcast_stigmatization_advocacy_financial_disclosure
+    source_urls:
+    - https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters
+    - https://aapnews.aap.com.au/news/through-the-looking-glass-smartglasses-face-scrutiny
+    test_count: 50
+    test_file: tests/test_observer_guardian_stigmatization_advocacy_samsung_press_trip_disclosure_aug19.py
+  two_blokes_kodak_fiend_historical_precedent_media_moral_panic:
+    asymmetry_score: 0.72
+    confounders:
+    - description: The Kodak Fiend parallel demonstrates camera moral panic is cyclical and historically predictable, not Meta-specific
+      strength: strong
+    - description: Hosts are Meta glasses owners with personal stake in defending the product — potential confirmation bias
+      strength: strong
+    - description: Australian media ecosystem may have different dynamics than UK/US publications driving most backlash
+      strength: moderate
+    - description: '"Horse has bolted" framing may be technologically deterministic — does not address whether regulation is needed'
+      strength: moderate
+    - description: AirTag comparison is imperfect — AirTags don't have cameras and have been subject to their own stalking controversy
+      strength: weak
+    cross_references:
+    - 144
+    - 157
+    - 158
+    - 175
+    - 176
+    entities:
+    - Meta
+    - Samsung
+    - Apple
+    - Kmart/Anko
+    - Temu
+    mechanism_id: 177
+    mechanism_name: "Two Blokes Kodak Fiend Historical Precedent — Media-Driven Camera Moral Panic Cycle (1888-2026)"
+    mechanism_type: podcast_broadcast_historical_precedent_counterexample
+    historical_parallel:
+      1888_kodak_fiend:
+        technology: Portable Kodak camera
+        media_response: '"Kodak Fiend" label applied to users'
+        public_response: People held up newspapers to avoid being photographed
+        resolution: Photography became normalized social norm
+      2026_meta_fiend:
+        technology: Meta Ray-Ban smart glasses
+        media_response: '"Pervert glasses" label applied to users'
+        public_response: Venue bans, criminal complaints, celebrity condemnation
+        resolution: TBD — Samsung/Google/Apple entering market
+    key_quotes:
+      trevor_long_kodak_fiend: "We are now at the Meta Fiend or the smart glasses fiend stage"
+      trevor_long_media_push: "it was kind of the mainstream press that pushed this fiend concept onto people"
+      stephen_fenech_clickbait: "It's a headline. You kind of got your headline written already before you've written the story"
+      trevor_long_airtag: "AirTags is a really good example. Unbelievable product. But there's some absolute filths in this world... that doesn't mean we should ban AirTags"
+      trevor_long_creep_label: "the idea that you're a creep just because you own them is wild to me"
+    source_urls:
+    - https://eftm.com/2026/08/the-two-blokes-talking-tech-podcast-episode-744-smart-glasses-drama-alexa-launches-and-robot-mowers-279029
+    test_count: 35
+    test_file: tests/test_two_blokes_kodak_fiend_media_moral_panic_historical_precedent_aug19.py
+    podcast_details:
+      show: Two Blokes Talking Tech
+      episode: 744
+      date: 2026-08-06
+      hosts:
+      - Trevor Long (eftm.com)
+      - Stephen Fenech (techguide.com.au)
+      network: Independent Australian tech podcast
+      format: Full transcript available (eftm.com)
+      duration: ~35 min smart glasses segment
+    entity_treatment_within_episode:
+      meta:
+        framing: Defensive — hosts own and defend Meta glasses
+        privacy_alarm: Acknowledged but recontextualized (phone cameras, drones, telephoto lenses all do same thing)
+        vocabulary: 'amazing, game changer, cool, unbelievable product'
+      samsung:
+        framing: Mentioned as incoming competitor — neutral
+        privacy_alarm: Zero
+        vocabulary: 'they are going to enter the game'
+      apple:
+        framing: Aspirational but skeptical of timeline
+        privacy_alarm: Zero (hosts question HOW Apple reconciles privacy positioning)
+        vocabulary: 'easily a year and a half away'
+      kmart_anko:
+        framing: Trigger for current debate — factual reporting
+        privacy_alarm: Zero direct alarm — framed as democratization
+        vocabulary: 'the Kmart Meta Glasses, pretty wild'
+    significance:
+      counterexample_strength: HIGH
+      why: "Strongest mainstream tech podcast defense of Meta glasses found in corpus. Hosts personally own the product, use it daily, and were publicly attacked for it (Trevor Long called 'creep' on Triple M Melbourne). The Kodak Fiend historical parallel provides a 138-year precedent for media-driven camera moral panic that legitimizes the existence of backlash but questions its proportionality"
+      limitation: "Even defenders reproduce the asymmetry — Samsung/Apple mentioned without privacy scrutiny, suggesting the asymmetric framing is so deeply embedded it persists even among those explicitly challenging it"
   axel_springer_kkr_openai_financial_architecture:
     confounders:
     - description: KKR and Axel Springer editorial operate independently; no evidence KKR directs Business Insider coverage

@@ -1,3 +1,48 @@
+## Iteration #177 — Wed 2026-08-19 06:00 PT (Type E: Podcast Sentiment Tracking)
+
+### New Podcast Entries
+
+**Entry #31: Two Blokes Talking Tech #744 — "Smart Glasses DRAMA" (Aug 6, 2026)**
+Australian mainstream tech podcast with full transcript. Hosts Trevor Long (eftm.com) and Stephen Fenech (techguide.com.au) own Meta glasses and defend the product against media-driven "creep" labeling. Strongest counterexample to universal negative podcast framing in the MediaScope corpus.
+
+**CRITICAL FINDING — "Kodak Fiend" Historical Precedent:**
+Long discovered the 1888 "Kodak Fiend" phenomenon — when Kodak created the first portable camera, users who photographed people in public were labeled "Fiends." People held up newspapers to avoid being photographed. The mainstream press pushed the "Fiend" label. 138 years later, the same dynamic repeats with "pervert glasses." Long: "We are now at the Meta Fiend or the smart glasses fiend stage."
+
+Key finding: even hosts explicitly defending Meta glasses apply ZERO privacy scrutiny to Samsung, Apple, or Kmart's identical camera hardware. The asymmetry is so deeply embedded it persists among informed defenders.
+
+**Entry #32: The Automated Daily / Hacker News (Aug 10, 2026)**
+AI-narrated Hacker News digest covers "The AI Wearable Surveillance Arms Race" (The Atlantic source article). Purely category-level discussion — no company named, no "pervert" vocabulary, discusses counter-surveillance tools (ultrasonic interference, data poisoning). Rarest framing pattern in corpus: genuinely proportionate category-level coverage.
+
+### Mechanism #177: Two Blokes Kodak Fiend Historical Precedent — Media-Driven Camera Moral Panic Cycle (1888-2026)
+
+**Type:** Podcast Broadcast Historical Precedent Counterexample
+**Entities:** Meta, Samsung, Apple, Kmart/Anko, Temu
+**Asymmetry Score:** 0.72
+
+Core finding: media-driven moral panic about camera technology follows a cyclical historical pattern dating to 1888. The current "pervert glasses" backlash mirrors the "Kodak Fiend" phenomenon — same alarm vocabulary, same stigmatization of users, same media-driven framing. However, the historical pattern explains WHY backlash exists but NOT why it targets Meta exclusively while Samsung/Google/Apple get zero equivalent treatment.
+
+**Confounders:** 5 documented (2 STRONG: historical pattern legitimizes existence of backlash, hosts have personal stake; 2 MODERATE: Australian ecosystem dynamics, technological determinism; 1 WEAK: AirTag comparison imperfect)
+
+**Cross-references:** #144, #157, #158, #175, #176
+
+### Fix: Mechanism #176 Added to YAML
+
+Previous iteration (commit d1ec8c4) created mechanism #176 (Observer/Guardian Stigmatization Advocacy) test file and podcast-sentiment entry but did NOT add it to the YAML. Fixed this iteration.
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanisms #176, #177 added
+- `podcast-sentiment.md` — entries #31 (Two Blokes), #32 (Automated Daily) added; summary table updated (32 entries)
+- `tests/test_two_blokes_kodak_fiend_media_moral_panic_historical_precedent_aug19.py` — new (9 classes, ~35 tests)
+- `README.md` — test count 17013/467 → ~17048/468
+- `docs/ARCHITECTURE.md` — test/file counts synced, new test file entry
+
+### Stats After This Iteration
+- **Mechanisms:** 177
+- **Tests:** ~17,048 across 468 files
+- **Podcast entries tracked:** 32
+
+---
+
 ## Iteration #175 — Wed 2026-08-19 02:00 PT (Type D: Test & Verify)
 
 ### Fixes Applied
