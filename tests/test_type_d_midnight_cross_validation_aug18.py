@@ -191,7 +191,7 @@ class TestMechanismIDContiguity:
             v["mechanism_id"] for v in cpf.values()
             if isinstance(v, dict) and "mechanism_id" in v
         ]
-        assert max(ids) >= 163, f"Expected max mechanism_id >= 163, got {max(ids)}"
+        assert max(ids) >= 172, f"Expected max mechanism_id >= 172, got {max(ids)}"
 
 
 # ── Class 4: YAML Parse Integrity ────────────────────────────────────

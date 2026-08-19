@@ -89,8 +89,8 @@ class TestYAMLStructure:
     def test_publications_section_exists(self, ccr):
         assert "publications" in ccr
 
-    def test_publications_count_at_least_13(self, pubs):
-        assert len(pubs) >= 13, f"Expected >= 13 publications, got {len(pubs)}"
+    def test_publications_count_at_least_9(self, pubs):
+        assert len(pubs) >= 9, f"Expected >= 9 publications, got {len(pubs)}"
 
     def test_no_list_items_in_publications(self, pubs):
         """Publications section should be a mapping, not contain list items at top level."""
@@ -98,10 +98,10 @@ class TestYAMLStructure:
         for key in pubs:
             assert isinstance(key, str), f"Publication key should be string, got {type(key)}: {key}"
 
-    def test_mechanism_165_is_named_entry(self, pubs):
+    def test_mechanism_165_is_named_entry(self, cpf):
         """Regression: mechanism 165 was previously a list item (- mechanism_id: 165)
         instead of a named mapping entry. Verify it's properly keyed."""
-        assert "amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry" in pubs
+        assert "amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry" in cpf
 
 
 # ── Class 2: Mechanism Existence ─────────────────────────────────────
@@ -142,27 +142,27 @@ class TestMechanismExistence:
 class TestMechanism164CameraCountParadox:
     """Tom's Guide camera count paradox: 4 cameras → 0 alarm; 1 camera → alarm."""
 
-    def test_in_publications(self, pubs):
-        assert "tomsguide_snap_specs_camera_count_paradox" in pubs
+    def test_in_cpf(self, cpf):
+        assert "tomsguide_snap_specs_camera_count_paradox" in cpf
 
-    def test_finding_type(self, pubs):
-        m = pubs["tomsguide_snap_specs_camera_count_paradox"]
+    def test_finding_type(self, cpf):
+        m = cpf["tomsguide_snap_specs_camera_count_paradox"]
         assert m["finding_type"] == "camera_count_privacy_vocabulary_inversion"
 
-    def test_competitor_is_snap(self, pubs):
-        m = pubs["tomsguide_snap_specs_camera_count_paradox"]
+    def test_competitor_is_snap(self, cpf):
+        m = cpf["tomsguide_snap_specs_camera_count_paradox"]
         assert "Snap" in m.get("competitor", "")
 
-    def test_asymmetry_score(self, pubs):
-        m = pubs["tomsguide_snap_specs_camera_count_paradox"]
+    def test_asymmetry_score(self, cpf):
+        m = cpf["tomsguide_snap_specs_camera_count_paradox"]
         assert m["asymmetry_score"] == 0.82
 
-    def test_has_source_urls(self, pubs):
-        m = pubs["tomsguide_snap_specs_camera_count_paradox"]
+    def test_has_source_urls(self, cpf):
+        m = cpf["tomsguide_snap_specs_camera_count_paradox"]
         assert len(m.get("source_urls", [])) >= 3
 
-    def test_has_test_file(self, pubs):
-        m = pubs["tomsguide_snap_specs_camera_count_paradox"]
+    def test_has_test_file(self, cpf):
+        m = cpf["tomsguide_snap_specs_camera_count_paradox"]
         tf = m.get("test_file", "")
         assert tf
         assert os.path.exists(os.path.join(REPO_ROOT, tf)), f"Test file {tf} not found"
@@ -171,27 +171,27 @@ class TestMechanism164CameraCountParadox:
 class TestMechanism165CaswellCoverageScope:
     """Amanda Caswell dual-register coverage exclusively targets Meta."""
 
-    def test_in_publications(self, pubs):
-        assert "amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry" in pubs
+    def test_in_cpf(self, cpf):
+        assert "amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry" in cpf
 
-    def test_journalist(self, pubs):
-        m = pubs["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
+    def test_journalist(self, cpf):
+        m = cpf["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
         assert m.get("journalist") == "Amanda Caswell"
 
-    def test_journalist_role(self, pubs):
-        m = pubs["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
+    def test_journalist_role(self, cpf):
+        m = cpf["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
         assert m.get("journalist_role") == "AI Editor"
 
-    def test_asymmetry_score(self, pubs):
-        m = pubs["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
+    def test_asymmetry_score(self, cpf):
+        m = cpf["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
         assert m["asymmetry_score"] == 0.78
 
-    def test_competitor_articles_zero(self, pubs):
-        m = pubs["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
+    def test_competitor_articles_zero(self, cpf):
+        m = cpf["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
         assert m.get("caswell_competitor_articles") == 0
 
-    def test_cross_references_include_164(self, pubs):
-        m = pubs["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
+    def test_cross_references_include_164(self, cpf):
+        m = cpf["amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry"]
         ref_ids = [r["mechanism_id"] for r in m.get("cross_references", []) if isinstance(r, dict)]
         assert 164 in ref_ids
 
@@ -199,38 +199,38 @@ class TestMechanism165CaswellCoverageScope:
 class TestMechanism166KaliHaysBBC:
     """BBC natural experiment: public broadcaster with $0 financial ties."""
 
-    def test_in_publications(self, pubs):
-        assert "kali_hays_bbc_cross_entity_coverage_selection_natural_experiment" in pubs
+    def test_in_cpf(self, cpf):
+        assert "kali_hays_bbc_cross_entity_coverage_selection_natural_experiment" in cpf
 
-    def test_publication_type(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_publication_type(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         assert m.get("publication_type") == "independent_public_broadcaster"
 
-    def test_funding_model(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_funding_model(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         assert "licence fee" in m.get("funding_model", "").lower()
 
-    def test_thesis_impact_structure(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_thesis_impact_structure(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         ti = m.get("thesis_impact", {})
         assert "weakens" in ti
         assert "strengthens" in ti
 
-    def test_weakens_financial_thesis(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_weakens_financial_thesis(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         assert "financial" in m["thesis_impact"]["weakens"].lower()
 
-    def test_strengthens_cultural_thesis(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_strengthens_cultural_thesis(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         assert "brand" in m["thesis_impact"]["strengthens"].lower() or \
                "cultural" in m["thesis_impact"]["strengthens"].lower()
 
-    def test_camera_count_paradox(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_camera_count_paradox(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         assert m.get("snap_cameras", 0) > m.get("meta_cameras", 0)
 
-    def test_competitor_investigation_all_zero(self, pubs):
-        m = pubs["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
+    def test_competitor_investigation_all_zero(self, cpf):
+        m = cpf["kali_hays_bbc_cross_entity_coverage_selection_natural_experiment"]
         counts = m.get("competitor_bbc_investigation_count", {})
         for entity in ["snap", "google", "openai", "samsung"]:
             assert counts.get(entity, -1) == 0, f"BBC {entity} investigation count should be 0"
@@ -239,45 +239,45 @@ class TestMechanism166KaliHaysBBC:
 class TestMechanism167GoogleZero:
     """Condé Nast 3-dimension compound incentive."""
 
-    def test_in_publications(self, pubs):
-        assert "conde_nast_google_zero_distribution_dependency_compound_incentive" in pubs
+    def test_in_cpf(self, cpf):
+        assert "conde_nast_google_zero_distribution_dependency_compound_incentive" in cpf
 
-    def test_has_three_entities_plus(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_has_three_entities_plus(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         entities = m.get("entities", [])
         assert len(entities) >= 5, f"Expected >= 5 entities, got {len(entities)}"
 
-    def test_meta_in_entities(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_meta_in_entities(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         assert "Meta" in m.get("entities", [])
 
-    def test_openai_in_entities(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_openai_in_entities(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         assert "OpenAI" in m.get("entities", [])
 
-    def test_has_confounding_factors(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_has_confounding_factors(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         cf = m.get("confounding_factors", [])
         assert len(cf) >= 4, f"Expected >= 4 confounders, got {len(cf)}"
 
-    def test_has_strong_confounders(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_has_strong_confounders(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         strong = [c for c in m.get("confounding_factors", []) if c.get("strength") == "STRONG"]
         assert len(strong) >= 2
 
-    def test_has_source_urls(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_has_source_urls(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         urls = m.get("source_urls", [])
         assert len(urls) >= 5, f"Expected >= 5 source URLs, got {len(urls)}"
 
-    def test_has_testable_predictions(self, pubs):
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+    def test_has_testable_predictions(self, cpf):
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         tp = m.get("testable_predictions", [])
         assert len(tp) >= 3
 
-    def test_cross_references_include_58(self, pubs):
+    def test_cross_references_include_58(self, cpf):
         """Should reference mechanism #58 (original CN AI deal revenue)."""
-        m = pubs["conde_nast_google_zero_distribution_dependency_compound_incentive"]
+        m = cpf["conde_nast_google_zero_distribution_dependency_compound_incentive"]
         ref_ids = [r["mechanism_id"] for r in m.get("cross_references", []) if isinstance(r, dict)]
         assert 58 in ref_ids
 
