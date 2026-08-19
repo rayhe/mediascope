@@ -1,3 +1,41 @@
+## Iteration #187 — Wed 2026-08-19 16:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Two New Podcast/Newsletter Entries: Dispatch Markets Economic Pipeline + Meta's Own Counter-Narrative
+
+**Type:** Podcast/Broadcast Sentiment Tracking — New Sources Discovery
+
+**Core Finding:**
+Two significant new entries expanding the podcast-sentiment corpus from 35 to 37 entries:
+
+1. **The Dispatch — "Surveillance Is Trendy Now" + "The Hidden Privacy Cost of Wearable Tech" (#36):**
+   Kyla Scanlon (NYT contributing opinion writer) creates a THREE-PRICE ECONOMIC FRAMEWORK (sticker/privacy/social) that appears analytically sophisticated but channels ALL alarm vocabulary at Meta while mentioning Samsung/Google/Snap as neutral market entrants. She bought Meta glasses, put them in a sock drawer for 2 days out of fear, then wrote "I had just paid over $300 to build my own panopticon." Snap's MORE capable $2,195 Spectacles (dual processors, display, AR) get zero privacy alarm. Newsletter (Jul 16) → podcast (Jul 21) = dual-medium amplification pipeline.
+
+   **Significance:** FIRST documentation of a POLICY publication (center-right politics, not tech media) reproducing the smart glasses privacy asymmetry. The three-price framework provides intellectual scaffolding that makes the asymmetry appear analytical rather than editorial. Sponsored by U.S. Chamber of Commerce — no known Meta or competitor financial relationship.
+
+2. **Twilio "Good Data Better Marketing" — "Building a Category with AI Wearables" (#37):**
+   Chris Villarreal (Meta's Global Director of Marketing for Wearables) devotes ~90 seconds out of ~45 minutes to privacy (~5% of airtime). The ENTIRE external podcast corpus averages 60-80% privacy airtime for Meta coverage. This proportional emphasis INVERSION reveals the core asymmetry gap: Meta sees privacy as solved engineering (LED + tamper protection); the podcast ecosystem sees privacy as Meta's defining characteristic. Zero competitor mentions. Recorded pre-"pervert glasses" wave (Feb 2026).
+
+**New Mechanism:**
+- #185: Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline — Three-Price Analytical Framework Amplification
+
+**Podcast Episodes #36-37:**
+- #36: The Dispatch — "Surveillance Is Trendy Now" newsletter (Jul 16, 2026) + "The Hidden Privacy Cost of Wearable Tech" podcast (Jul 21, 2026). Source: https://thedispatch.com/newsletter/dispatch-markets/wearables-glasses-privacy-fashion-surveillance/
+- #37: Twilio — "Building a Category with AI Wearables" (~Feb 2026). Source: https://www.twilio.com/en-us/resource-center/podcasts/building-a-category-with-ai-wearables
+
+**Confounders:** 3 documented (1 STRONG: Meta has 82% market share; 1 MODERATE: Scanlon acknowledges genuinely liking the glasses; 1 WEAK: no known financial relationships)
+
+**Cross-references:** #144, #157, #158, #181
+
+**Files changed:**
+- Added: `tests/test_dispatch_twilio_podcast_newsletter_pipeline_meta_framing_aug19.py` (7 classes, ~40 tests)
+- Updated: `podcast-sentiment.md` (episodes #36-37, updated cross-medium summary to 37 episodes, mechanism #185)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #185)
+- Updated: README.md (test file entry + counts)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 185 mechanisms documented, ~17,499 tests across 478 files
+
+---
 ## Iteration #186 — Wed 2026-08-19 15:00 PT (Type D: Test & Verify)
 
 ### Structural Consistency Fix — Doc Sync for 2 Missing Test Files + 10 Stale Per-File Counts

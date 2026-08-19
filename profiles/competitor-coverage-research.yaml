@@ -17080,6 +17080,50 @@ cross_publication_findings:
     - https://global.morningstar.com/en-nd/stocks/deleted-disclosure-spacexs-ipo-filing-shows-its-ai-infrastructure-cash-cow
     - https://www.morningstar.com/news/marketwatch/20260528209/spacexs-major-ai-compute-deal-with-anthropic-could-end-a-lot-sooner-than-expected
     - https://www.cio.com/article/4176213/xai-anthropic-deal-signals-the-rise-of-ai-compute-as-a-standalone-business-2.html
+  dispatch_markets_newsletter_podcast_economic_framing_pipeline:
+    mechanism_id: 185
+    type: podcast_sentiment_newsletter_to_podcast_pipeline
+    date_added: '2026-08-19'
+    asymmetry_score: 0.68
+    entities:
+    - meta
+    - snap
+    - samsung
+    - google
+    finding_summary: 'Dispatch Markets newsletter "Surveillance Is Trendy Now" (Jul 16, 2026) + companion
+      podcast "The Hidden Privacy Cost of Wearable Tech" (Jul 21, 2026) by Kyla Scanlon (NYT contributing
+      opinion writer) creates a THREE-PRICE ECONOMIC FRAMEWORK (sticker/privacy/social) that appears
+      analytically sophisticated but channels ALL alarm vocabulary at Meta while mentioning Samsung/Google/Snap
+      as neutral market entrants. Snap Spectacles ($2,195, dual processors, display, AR) get zero privacy
+      alarm despite objectively MORE capable surveillance hardware. Newsletter-to-podcast pipeline provides
+      dual-medium amplification. FIRST documentation of a POLICY publication (center-right, not tech media)
+      reproducing the privacy asymmetry through analytical economic framework.'
+    journalist: Kyla Scanlon
+    publication: The Dispatch (Dispatch Markets)
+    confounding_factors:
+    - strength: STRONG
+      description: 'Meta has 82% smart glasses market share. Disproportionate scrutiny partly justified by market dominance.'
+    - strength: MODERATE
+      description: 'Scanlon acknowledges genuinely liking the glasses. Analytical tone, not sensationalist.'
+    - strength: WEAK
+      description: 'No known financial relationship with Meta or competitors. U.S. Chamber of Commerce sponsorship is pro-business but not tech-specific.'
+    cross_references:
+    - mechanism_id: 144
+      relationship: extends
+      description: 'Mechanism #144 documents podcast ecosystem amplification. This mechanism adds the newsletter-to-podcast pipeline as a dual-medium amplification channel at a POLICY publication.'
+    - mechanism_id: 157
+      relationship: extends
+      description: 'Mechanism #157 documents global institutional discourse convergence. This extends convergence into political/policy media (not just tech and public broadcasters).'
+    - mechanism_id: 158
+      relationship: extends
+      description: 'Mechanism #158 documents multi-vector cultural delegitimization. The Dispatch three-price framework adds an ECONOMIC analysis vector to the cultural cascade.'
+    - mechanism_id: 181
+      relationship: complements
+      description: 'Mechanism #181 documents mass-market vocabulary propagation. Dispatch newsletter propagates alarm vocabulary into policy-reading audience segment.'
+    source_urls:
+    - https://thedispatch.com/newsletter/dispatch-markets/wearables-glasses-privacy-fashion-surveillance/
+    - https://thedispatch.com/podcast/dispatch-podcast/the-hidden-privacy-cost-of-wearable-tech/
+    - https://www.tapesearch.com/podcast/the-dispatch-podcast/1493229344
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

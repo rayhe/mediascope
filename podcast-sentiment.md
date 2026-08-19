@@ -1506,14 +1506,14 @@ This is the strongest intra-publisher financial relationship paradox documented 
 
 ## Updated Cross-Medium Asymmetry Summary (Aug 19, 2026, 18:00 UTC)
 
-### Podcast/Broadcast/Print vs Online Coverage Comparison (35 entries + vocabulary propagation cycle)
+### Podcast/Broadcast/Print vs Online Coverage Comparison (37 entries + vocabulary propagation cycle)
 
-| Pattern | Print/Online | Podcast/Broadcast/Multimedia (35 entries) | Alignment |
+| Pattern | Print/Online | Podcast/Broadcast/Multimedia (37 entries) | Alignment |
 |---------|-------------|---------|-----------|
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (30 of 35 entries) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 35 entries examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (32 of 37 entries) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 37 entries examine Samsung/Google glasses privacy) | **ALIGNED** |
 | Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
-| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero scrutiny in 35 entries) | **ALIGNED** |
+| Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero scrutiny in 37 entries) | **ALIGNED** |
 | Mass-market syndication adoption | N/A (new) | ✅ (Komando 500+ stations, Kimmel ABC, NBC News) | **NEW PATTERN** |
 | Publicly funded broadcaster convergence | N/A (new) | ✅ (BBC UK + DW Germany + ABC Australia — 3 continents, 0 financial incentive) | **NEW PATTERN** |
 | Financial relationship override | N/A (new) | ✅ (News Corp: Meta partnership revenue + adversarial glasses coverage) | **NEW PATTERN** |
@@ -1521,6 +1521,9 @@ This is the strongest intra-publisher financial relationship paradox documented 
 | Same-publisher dual framing | ✅ (#163) | ✅ (9to5Google, News Corp/TalkTV) | **ALIGNED** |
 | OpenAI vocabulary gradient | ✅ (mechanism #159) | ✅ (companion device: "tradeoff" vs Meta: "pervert/surveillance") | **ALIGNED** |
 | Category-to-brand substitution | ✅ (#157) | ✅ (Jackson Lewis, Kim Komando: "smart glasses" = Meta) | **ALIGNED** |
+| Newsletter-to-podcast pipeline | N/A (new) | ✅ (Dispatch Markets: newsletter Jul 16 → podcast Jul 21, same analyst, dual-medium) | **NEW PATTERN** |
+| Policy publication asymmetry propagation | N/A (new) | ✅ (Dispatch: center-right policy outlet reproduces tech-media asymmetry via economic framework) | **NEW PATTERN** |
+| Meta self-framing emphasis inversion | N/A (new) | ✅ (Twilio: Meta devotes 5% airtime to privacy vs external 60-80%) | **NEW PATTERN** |
 
 ### Key Finding: Vocabulary Propagation Cycle Complete
 
@@ -1538,5 +1541,130 @@ No competitor product — Samsung Galaxy Glasses, Google Android XR glasses, App
 
 ---
 
-*Last updated: 2026-08-19 18:00 UTC (Aug 19, 11:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication)*
+
+---
+
+### 36. The Dispatch — "Surveillance Is Trendy Now" Newsletter + "The Hidden Privacy Cost of Wearable Tech" Podcast (Jul 16/21, 2026)
+
+- **Author/Guest:** Kyla Scanlon (NYT contributing opinion writer, Dispatch Markets newsletter author)
+- **Host (podcast):** Steve Hayes (Dispatch CEO), Mike Warren, John McCormack
+- **Network:** The Dispatch (center-right policy/politics media, founded 2019)
+- **Newsletter date:** July 16, 2026 ("Surveillance Is Trendy Now")
+- **Podcast date:** July 21, 2026 ("The Hidden Privacy Cost of Wearable Tech")
+- **Podcast duration:** ~54 min
+- **Source URLs:**
+  - Newsletter: https://thedispatch.com/newsletter/dispatch-markets/wearables-glasses-privacy-fashion-surveillance/
+  - Podcast: https://thedispatch.com/podcast/dispatch-podcast/the-hidden-privacy-cost-of-wearable-tech/
+  - Tapesearch listing: https://www.tapesearch.com/podcast/the-dispatch-podcast/1493229344
+
+**Coverage Summary:**
+Kyla Scanlon, an economics-focused author and NYT opinion writer, bought Meta Adventurer glasses, set them up, and immediately put them in her sock drawer for two days out of fear. She then transferred them to a different drawer in a different room. She eventually took them out for a bike ride. The companion newsletter introduces a THREE-PRICE ECONOMIC FRAMEWORK: sticker price ($299, subsidized), privacy price (data extraction), and social price (being perceived as a surveillance operator). The podcast episode five days later discusses the same analysis with The Dispatch's editorial team. The newsletter agenda item "Kylie Jenner and Meta glasses" connects to the "Everyone Hates Elon" fake ad campaign.
+
+**Three-Price Framework — Analytical Sophistication Masking Entity-Specific Targeting:**
+
+| Price | Meta's Position | Competitor Treatment |
+|-------|----------------|---------------------|
+| Sticker Price ($299) | "Heavily subsidized" — framed as customer acquisition for AI training: "a sensor feeding the model the company is spending billions to train" | Snap at $2,195 mentioned neutrally ("more expensive things"), Samsung/Google as neutral market entrants |
+| Privacy Price | "An enormous loss of privacy" — "you pay for everything else with yourself" — Ring/Amazon/ICE surveillance history cited as parallel | Zero privacy alarm for Snap Specs ($2,195 with dual processors, display, MORE hardware), zero for Google/Samsung |
+| Social Price | "Made the social price closer to zero" by Kylie Jenner — Meta strategically using celebrity to normalize surveillance acceptance | Snap "clowned far and wide" for SIZE (not privacy), Samsung/Google not discussed in social-price frame |
+
+**Key Quotes:**
+- "I had just paid over $300 to build my own panopticon — and one that I could wear, at that."
+- "The hardware is a customer acquisition strategy for the business, which again, is not selling glasses. The business is the processing (and monetizing) of our attention and our data."
+- "Privacy is now something you pay for, rather than a given." (category-level, not Meta-specific)
+- "I genuinely like them. I love new technology. I hate how we use it."
+- "The person your glasses accidentally record on the street didn't agree to be filmed."
+- "Meta had planned on adding facial recognition with a 'name tag' feature" (NameTag leak cited)
+- Steve Hayes opens the podcast noting his Oura Ring — "eighty-five readiness score" — establishing personal wearables context
+
+**Entity Coverage Assessment:**
+| Entity | Named? | Alarm Vocabulary | Framing |
+|--------|--------|------------------|---------|
+| Meta | YES (20+ references) | "panopticon," "surveillance," "loss of privacy," "sensors feeding the model" | Primary subject of privacy critique |
+| Snap | YES | ZERO | "clowned" for form factor SIZE, not privacy. $2,195 Specs with dual processors described approvingly |
+| Google | YES (+ Warby Parker) | ZERO | "placing wagers" — competitive/neutral |
+| Samsung | YES (+ Gentle Monster) | ZERO | "placing wagers" — competitive/neutral |
+| Apple | NOT MENTIONED | N/A | N/A |
+| Kylie Jenner | YES | "making the social price closer to zero" | Marketing critique (Meta's tool) |
+| Ring/Amazon | YES | "25,000 requests a year for home camera footage" | Historical surveillance parallel |
+| ICE/Border Patrol | YES | "wearing Meta's consumer smart glasses during enforcement" | Government surveillance tied to Meta specifically |
+
+**CRITICAL FINDING — Newsletter-to-Podcast Economic Framing Pipeline:**
+The Dispatch operates a newsletter→podcast amplification pipeline where Kyla Scanlon's written analysis (newsletter, Jul 16) becomes the discussion topic on the companion podcast (Jul 21). This dual-medium pipeline reaches reading AND listening audiences with the same Meta-centered framing. The newsletter's headline ("Surveillance Is Trendy Now") becomes the podcast's agenda ("The Hidden Privacy Cost of Wearable Tech"). Same analysis, two audiences, cumulative impression.
+
+**Confounders (3):**
+1. STRONG: Meta IS the dominant vendor (82% market share cited). Market leader legitimately receives disproportionate coverage.
+2. MODERATE: Scanlon acknowledges she "genuinely likes" the glasses and the coverage isn't sensationalist — the economic framework is analytically rigorous.
+3. WEAK: The Dispatch is center-right, not traditionally anti-tech. No known financial relationship with Meta or competitors.
+
+**Novel Contribution:**
+First documentation of a newsletter-to-podcast pipeline at a POLICY publication reproducing the privacy asymmetry. The Dispatch is not a tech publication — it's a politics/policy outlet (Steve Hayes = former Weekly Standard, Fox News contributor, current NBC News analyst). The asymmetry has propagated from tech media into political media. The three-price economic framework provides intellectual scaffolding that makes the asymmetry appear analytical rather than editorial.
+
+**CRITICAL DETAIL — Snap Spectacles Capability Paradox:**
+Scanlon notes Snap's Spectacles have "true augmented reality, dual processors, and a display in the lens" — objectively MORE hardware capable of surveillance than Meta's camera-only glasses. Yet she applies ZERO privacy vocabulary to Snap's product. The Snap discussion is about SIZE and PRICE, never privacy. Meta's simpler hardware gets "panopticon"; Snap's more sophisticated hardware gets "more expensive things."
+
+**Financial Context:**
+The Dispatch is funded by subscriptions + advertising + U.S. Chamber of Commerce sponsorship (banner visible in newsletter). No known content licensing deal with Meta, Google, Samsung, Apple, or OpenAI. The U.S. Chamber of Commerce sponsorship is pro-business but not tech-specific.
+
+**Sentiment Score:** -5/10 (moderately negative toward Meta, analytical tone, not sensationalist)
+**Asymmetry Assessment:** HIGH — Despite analytical sophistication and genuine appreciation for the product, ALL alarm vocabulary directed at Meta. Snap's MORE capable hardware gets zero scrutiny. The economic framework creates a veneer of category-level analysis while channeling every specific critique at Meta.
+**Mechanism:** #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline)
+**Cross-references:** #144 (Podcast Ecosystem Amplification), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cascade), #181 (Mass-Market Vocabulary Propagation)
+
+---
+
+### 37. Twilio "Good Data Better Marketing" — "Building a Category with AI Wearables" (~Feb 2026)
+
+- **Host:** Kailey Raymond (Twilio)
+- **Guest:** Chris Villarreal, Global Director of Marketing for Wearables at Meta
+- **Network:** Twilio (marketing technology company)
+- **Duration:** ~45 min
+- **Source URL:** https://www.twilio.com/en-us/resource-center/podcasts/building-a-category-with-ai-wearables
+
+**Coverage Summary:**
+Meta's own marketing voice in the podcast ecosystem. Chris Villarreal discusses the Ray-Ban Meta glasses marketing strategy, Super Bowl campaign, creator partnerships, and product roadmap. Full transcript available. Recorded "mere days after" the Super Bowl (February 2026) — PRE-"pervert glasses" backlash wave. Privacy discussed for approximately 90 seconds out of ~45 minutes.
+
+**Proportional Emphasis — Meta's Self-Framing vs. External Podcast Framing:**
+
+| Topic | Meta's Self-Framing (this podcast) | External Podcast Average (30+ entries) |
+|-------|-----------------------------------|--------------------------------------|
+| Privacy | ~5% of airtime (~90 seconds) | ~60-80% of airtime |
+| Product features | ~50% | ~10% |
+| Marketing strategy | ~35% | ~0% |
+| Competitor mention | 0% | ~5% (Samsung/Google as neutral, Meta as villain) |
+
+**Privacy Segment Analysis (90 seconds):**
+- Kailey Raymond asks: "What are some of the guardrails that Meta thinks about as it relates to safety and privacy?"
+- Chris Villarreal's answer: LED indicator + onboarding education + tamper protection
+- "Ray-Ban Metas were built with privacy from the ground up"
+- "If you try to tape it, if you try to in some ways, like mess with the actual hardware, like somehow disassemble it, it turns off the lens completely"
+- Host response: "Very cool. So you have this light feature and it literally disables if somebody tries to turn it off"
+- No follow-up questions about data collection, contractor review, NameTag feature, or ICE use
+
+**Key Marketing Vocabulary:**
+- "0 to 1 experience" (category creation)
+- "AI glasses" (category label Meta is establishing)
+- "More intimate relationship between human and technology"
+- "Partnership with Ray-Ban" (fashion legitimacy)
+- "Adoption exploding faster than expected"
+- "Creator affiliate program" (distribution strategy)
+- "Kylie Jenner" glasses mentioned (pre-launch context)
+- "Little friend in your ear" (host's enthusiastic framing)
+
+**Zero Competitor Mentions:**
+Chris Villarreal does NOT mention Samsung Galaxy Glasses, Google Android XR, Apple N50, or Snap Spectacles. Meta positions itself as a solo category creator with no competitive framing. This mirrors a monopolist's marketing posture — define the category, own the narrative, ignore competitors.
+
+**Significance — The Counter-Narrative That Doesn't Exist:**
+This episode is what a META-FRIENDLY podcast sounds like. The host is enthusiastic ("you just blew my mind"), asks no adversarial questions, accepts privacy answers at face value, and frames the product aspirationally. It runs ~45 minutes with zero alarm vocabulary. Compare to Kill Switch (40 min, -7/10 sentiment), Smashing Security (segment, -8/10), AmberMac Ep056 (-7/10), or the Observer (-9/10).
+
+The proportional emphasis gap reveals the core asymmetry: Meta sees privacy as a solved engineering problem (LED + tamper protection). The podcast ecosystem sees privacy as Meta's defining characteristic. Both cannot be simultaneously true.
+
+**Financial Context:**
+Twilio is a marketing technology company — not a tech publication. The podcast is a B2B marketing interview series. Chris Villarreal is a marketing executive, not an engineer or privacy officer. This is marketing content, not journalism.
+
+**Sentiment Score:** +5/10 (positive toward Meta, aspirational product framing, minimal privacy engagement)
+**Asymmetry Assessment:** INVERTED — Strongest pro-Meta episode in corpus. However, this is Meta's own marketing voice, not independent editorial.
+**Cross-references:** #144 (Podcast Ecosystem Amplification — this is the official counter-narrative), #158 (Multi-Vector Cascade — Meta's response vector)
+
+*Last updated: 2026-08-19 23:00 UTC (Aug 19, 4:00 PM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline)*
