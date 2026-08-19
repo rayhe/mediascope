@@ -1,3 +1,62 @@
+## Iteration #174 — Wed 2026-08-19 01:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #174: OpenAI Zero-Ad-Revenue-Share Publisher Financial Captivity Architecture
+
+**Type:** Financial Incentive Mapping (cross-platform revenue share comparison)
+**Entities:** OpenAI, Google, Perplexity, Prorata AI, Meta
+**Asymmetry Score:** 0.82
+
+**Core Finding:**
+OpenAI VP of Media Partnerships Varun Shetty confirmed at the WAN-IFRA World News Media Congress in Marseille (June 3, 2026) that OpenAI has "no plans" to share advertising revenue with publishers. His exact response: "Not at this point."
+
+This creates a one-directional financial captivity architecture:
+1. Publishers license content for flat fees ($300-400M/yr total, 20+ deals, 160+ outlets)
+2. OpenAI uses content in ChatGPT Search alongside ads
+3. OpenAI keeps 100% of ad revenue (projected $2.5B 2026, $100B 2030)
+4. Publishers get: flat fees + referral traffic + "higher quality visits" framing
+
+**Cross-Platform Revenue Share Comparison:**
+| Platform | Publisher Revenue Share |
+|---|---|
+| Google AdSense | 68-80% |
+| Prorata AI | 50% |
+| Perplexity | Initially offered share, removed ads |
+| Microsoft Copilot | Plans to pay announced |
+| **OpenAI** | **0%** (confirmed Jun 2026) |
+
+**Varun Shetty Career Trajectory (Cross-Institutional Capture):**
+- NYU Law (J.D.) → Skadden Arps (antitrust) → Wilson Sonsini (antitrust)
+- → Foursquare → Shyp → NYT Strategy & BD (managed Google/Snapchat partnerships)
+- → Meta (6+ yrs: Director Product Marketing for Media, Director BD for WhatsApp)
+- → OpenAI VP Media Partnerships (Jan 2024-present)
+- Former antitrust lawyer now running the zero-share program
+
+**WAN-IFRA Newsroom Dependency Programs:**
+- Newsroom AI Catalyst ($1.5M, 128 newsrooms)
+- Prototype Development Fund ($1.5M total)
+- OpenAI Academy for News (editorial workflow embedding)
+- Creates switching costs: newsrooms that build workflows around OpenAI tools face migration costs
+
+**Meta Contrast:**
+Meta has ZERO content licensing deals with adversarial publications (WIRED, Gizmodo, NYT, Verge), zero newsroom dependency programs, zero financial leverage. Cost of adversarial Meta coverage = $0. Financial relationships predict coverage tone.
+
+**NYT vs Deal-Holders Two-Tier System:**
+AG Sulzberger called AI content use "brazen theft" at the same WAN-IFRA Congress one day before Shetty spoke. Deal-holders (Condé Nast, FT, Guardian, News Corp, Vox, Atlantic, Hearst, WaPo) are financially captured; litigation holdouts face deal exclusion.
+
+**Confounders:** 5 (2 STRONG: early-stage norms, eMarketer 90% miss forecast; 2 MODERATE: private deal terms, industry-wide dependency pattern; 1 WEAK: engagement quality claims)
+
+**Cross-references:** #172 (OpenAI CPA ad maturation), #162 (Advance Reddit), #40 (FT-OpenAI deal)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #174 added
+- `tests/test_openai_zero_ad_revenue_share_publisher_financial_captivity_aug19.py` — 10 classes, 35 tests (all passing)
+- `README.md` — test count 16,860→16,895, file count 463→464, mechanism #174 row added
+- `docs/ARCHITECTURE.md` — test/file counts synced, test file listing added
+
+### Stats After This Iteration
+- **Mechanisms:** 174
+- **Tests:** ~16,895 across 464 files
+
 ## Iteration #171 — Tue 2026-08-18 18:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #171: Daniel Bader (9to5Google) Career-Ecosystem Capture + Explicit Trust Differential
