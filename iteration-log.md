@@ -1,3 +1,51 @@
+## Iteration #171 — Tue 2026-08-18 18:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #171: Daniel Bader (9to5Google) Career-Ecosystem Capture + Explicit Trust Differential
+
+**Publication:** 9to5Google (9to5Mac Inc.)
+**Journalist:** Daniel Bader
+**Type:** Career-ecosystem capture with explicit trust differential
+
+**Core Finding:**
+Daniel Bader's Inbox #4 newsletter (Jul 23, 2026) contains an explicit trust differential statement: "A core use case, and one that I trust Google with far more than Meta, is talking directly with an AI model." This appears in coverage of Samsung/Google smart glasses that are functionally identical to Meta Ray-Ban glasses — same Snapdragon AR1 Gen 1 chip, same camera, same privacy LED, same tamper-detection enforcement.
+
+**Career Trajectory — Complete Google/Android Ecosystem Capture:**
+- MobileSyrup (Canadian mobile tech) Managing Editor
+- Future (mobile tech vertical) Editor-in-Chief
+- Valnet Content Director + Android Police Editor-in-Chief
+- 9to5Google newsletter author (current)
+
+Every career stop has been within the Google/Android coverage ecosystem. Zero non-Google-adjacent career stops documented.
+
+**Financial Dependency:**
+- Digiday (2018) reported 9to5 writers paid via Google AdSense per-article programmatic revenue
+- 9to5Google Partner page still advertises Google Ad Exchange
+- Writer compensation structurally tied to Google advertising infrastructure
+
+**Stigmatizing Label Asymmetry:**
+- "Perv glasses" label applied exclusively to Meta Ray-Ban
+- Samsung/Google glasses with identical camera capabilities receive zero stigmatizing labels
+- Alarm vocabulary applied to Meta; approval vocabulary applied to Samsung/Google
+
+**Recontextualization of Mechanism #131 (Ben Schoon):**
+Mechanism #131 treated 9to5Google as an independent editorial control — Ben Schoon's relatively balanced coverage was evidence of independent judgment. This mechanism reveals the structural AdSense dependency that undermines the "independent" classification. Same newsletter, different analytical lens.
+
+**Confounding factors:** (1) Google has a real privacy track record advantage in some domains, (2) Meta has real privacy scandals (Cambridge Analytica), (3) newsletter opinion format permits personal views, (4) Samsung partnership = Google's direct financial interest, (5) Bader may have independent technical reasons for trust differential.
+
+**Asymmetry score:** 0.80
+**Cross-references:** #131 (Ben Schoon control), #1 (Olson identity capture), #170 (Gizmodo vocabulary inversion)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #171 added
+- `tests/test_daniel_bader_9to5google_career_ecosystem_capture_explicit_trust_differential_aug18.py` — 10 classes, 40 tests (all passing)
+- `README.md` — test count 16,664→16,704, file count 459→460, mechanism #171 row added
+- `docs/ARCHITECTURE.md` — test/file counts synced, test file listing added
+
+### Stats After This Iteration
+- **Mechanisms:** 171
+- **Tests:** ~16,704 across 460 files
+- **Podcast episodes tracked:** 24
+
 ## Iteration #170 — Tue 2026-08-18 17:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #170: Gizmodo Intra-Publication Surveillance Vocabulary Inversion — OpenAI Companion vs Meta Glasses
