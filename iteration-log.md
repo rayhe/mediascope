@@ -1,3 +1,40 @@
+## Iteration #184 — Wed 2026-08-19 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #183: Hadlee Simons (Android Authority) Smart Glasses Cross-Entity Coverage Selection — Samsung Privacy Problem-Solving + Google Advocacy + Zero Meta Privacy Investigation
+
+**Type:** Journalist Cross-Entity Tracking — First Android Authority mechanism in the suite
+**Journalist:** Hadlee Simons (Senior Editor, Android Authority, ~15yr experience, joined 2018)
+**Asymmetry Score:** 0.78
+
+**Core Finding:**
+Hadlee Simons has covered smart glasses across 6+ entities (Samsung, Google, Snap, Halliday, HTC, TECNO) with neutral-to-aspirational framing while publishing ZERO dedicated Meta Ray-Ban articles. His Samsung coverage (Jul 31, 2026) frames Samsung as SOLVING the privacy problem with headline "Here's how Samsung's smart glasses will keep perverts away (hopefully)" — presenting Samsung's privacy features as solutions while contrasting Meta negatively ("Meta drew the ire of privacy advocates"). His Google coverage (Feb 2026) is explicitly advocacy-positioned with headline "I'd buy Google's AI glasses over Apple's AI pin any day" — framing Google's mass data collection as a POSITIVE ("that data also translates into real-world understanding") with zero privacy concerns about Google glasses' identical camera capabilities.
+
+Meanwhile, at the SAME publication, other journalists produce adversarial Meta coverage:
+- Aamir Siddiqui: "Modders are turning Ray-Ban Meta glasses into spy gear" (vocabulary: "spy gear," "covert spy gear," "underground industry," "stealth mode")
+- Chethan Rao: "Meta hits pause on controversial smart glasses subscription plans," "Only Ray-Ban execs can see the humor in 'pervert' smart glasses ad"
+
+**Financial Context:**
+Android Authority (Jeronimo Media Group BV, Netherlands) depends structurally on Google Search traffic, Google News inclusion, Google Display ads. Google is the direct PLATFORM PARTNER for Samsung's Android XR glasses (same Qualcomm AR1 chipset). Meta has $0 financial relationship. The Google-Samsung-Android XR triangle creates triple alignment.
+
+**Novel Contribution:**
+First documentation of a journalist at a Google-ecosystem publication showing systematic ZERO Meta coverage across 7+ smart glasses articles spanning 2024-2026 while applying solution-framing to Samsung and explicit advocacy to Google. Complementary variant to mechanism #179 (Matt Wille/Gizmodo): not adversarial Meta + zero Samsung, but zero Meta + aspirational competitor coverage.
+
+**Confounders:** 5 (2 STRONG: Android ecosystem editorial mandate, Meta privacy track record; 2 MODERATE: Google data collection framing, publication beat assignment; 1 WEAK: Samsung pre-launch novelty)
+
+**Cross-references:** #179 (Matt Wille/Gizmodo beat reporter), #109 (Engadget/Yahoo Google financial dependency), #76 (Samsung-Google Compound Advertiser Leverage), #138 (Digital Trends Samsung vs Meta)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #183 added to cross_publication_findings
+- `tests/test_hadlee_simons_android_authority_cross_entity_coverage_selection_aug19.py` — new (10 classes, 64 tests)
+- `README.md` — test count 17,291→17,355, files 474→475, new table entry for #183
+- `docs/ARCHITECTURE.md` — test/file counts synced, new test file entry
+
+### Stats After This Iteration
+- **Mechanisms:** 183
+- **Tests:** ~17,355 across 475 files
+
+---
+
 ## Iteration #183 — Wed 2026-08-19 12:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #182: Digital Trends OpenAI Companion Aspirational vs Meta Adversarial Vocabulary — Camera+Email+FR Device Gets "Companion" While Camera-Only Glasses Get "Creepy"
