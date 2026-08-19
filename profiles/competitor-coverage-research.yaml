@@ -5945,6 +5945,148 @@ cross_publication_findings:
     - https://www.digitaltrends.com/wearables/samsungs-first-ar-glasses-are-coming-in-2026-with-immersive-multimodal-ai-experiences/
     test_count: 32
     test_file: tests/test_digital_trends_editorial_level_privacy_vocabulary_asymmetry_aug16.py
+  digital_trends_openai_companion_aspirational_meta_adversarial_vocabulary:
+    asymmetry_score: 0.87
+    articles:
+      openai_1:
+        title: "OpenAI's first hardware product sounds more like a companion than a speaker"
+        url: https://www.digitaltrends.com/cool-tech/openais-first-hardware-product-sounds-more-like-a-companion-than-a-speaker/
+        date: '2026-07-14'
+        privacy_alarm_terms: 0
+        aspirational_vocabulary:
+        - companion that quietly follows users through their day
+        - understands their surroundings
+        - feels less like a gadget and more like someone always ready to help
+        - something far more personal
+        camera_framing: enabling_feature
+      openai_2:
+        title: "OpenAI's first gadget sounds like a tiny expressive AI companion"
+        url: https://www.digitaltrends.com/home-theater/openais-first-gadget-sounds-like-a-tiny-robot-for-your-home/
+        date: '2026-08-06'
+        privacy_alarm_terms: 0
+        aspirational_vocabulary:
+        - tiny expressive AI companion
+        - carry it between rooms
+        - leave it nearby on whatever surface is convenient
+        - feel more alive
+        - more familiar with its owner over time
+        camera_framing: ambient_awareness_feature
+      meta_led_fix:
+        title: "Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light"
+        url: https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
+        date: '2026-07-07'
+        author: Nadeem Sarwar
+        role: Managing Editor
+        action_described: positive_privacy_improvement
+        opening_framing: "creep's weapon"
+        privacy_alarm_terms: 5
+      meta_creepy_cheat:
+        title: "Smart glasses were already creepy, now they're helping people cheat"
+        url: https://www.digitaltrends.com/cool-tech/smart-glasses-were-already-creepy-now-theyre-helping-people-cheat/
+        date: '2026-07'
+        privacy_alarm_terms: 4
+      apple_n50_privacy_storm:
+        title: "Apple's smart glasses are running late because they don't want to stir a privacy storm"
+        url: https://www.digitaltrends.com/wearables/apples-smart-glasses-are-running-late-because-they-dont-want-to-stir-a-privacy-storm/
+        date: '2026-07-27'
+        meta_references: true
+        openai_references: false
+        days_since_openai_announcement: 13
+        subtitle: "Meta has already shown Apple what can go wrong"
+    capability_comparison:
+      openai_companion:
+        camera: true
+        facial_recognition: true
+        facial_recognition_source: The Information
+        email_access: true
+        ambient_monitoring: true
+        proactive_surveillance: true
+        in_home_24_7: true
+        moving_parts: true
+        invasive_dimensions: 7
+      meta_ray_ban:
+        camera: true
+        facial_recognition: dormant_nametag
+        email_access: false
+        ambient_monitoring: false
+        proactive_surveillance: false
+        in_home_24_7: false
+        moving_parts: false
+        invasive_dimensions: 2
+    confounders:
+    - name: meta_track_record
+      strength: STRONG
+      description: Cambridge Analytica, FTC $5B, contractor footage review provide editorial basis for heightened Meta scrutiny
+    - name: openai_pre_launch
+      strength: STRONG
+      description: "OpenAI's companion device hasn't shipped, creating no real-world privacy incidents"
+      rebuttal: Google Glass received adversarial Glasshole vocabulary PRE-LAUNCH in 2012-2013, proving pre-launch status does not shield camera devices from adversarial framing
+    - name: form_factor_difference
+      strength: MODERATE
+      description: Glasses worn in public vs speaker in home create different privacy contexts
+      rebuttal: OpenAI device has MORE privacy-relevant capabilities (email, FR, proactive monitoring). Home context increases intimacy of surveillance
+    - name: engagement_optimization
+      strength: MODERATE
+      description: Meta adversarial headlines generate more clicks than OpenAI product announcements
+    - name: reader_familiarity
+      strength: WEAK
+      description: Readers know Meta's glasses; OpenAI device is novel, so privacy framing may follow familiarity
+    cross_references:
+    - 138
+    - 159
+    - 170
+    - 50
+    date_added: '2026-08-19'
+    discovery_date: '2026-08-19'
+    domain: competitor_coverage_deep_dive
+    entity: Digital Trends (Designtechnica Corp)
+    finding_summary: >
+      Digital Trends published TWO aspirational articles about OpenAI's camera-equipped companion device
+      (Jul 14 + Aug 6, 2026) with ZERO privacy alarm vocabulary while applying heavy adversarial vocabulary
+      to Meta's camera-only smart glasses in the SAME editorial window. OpenAI's device has MORE invasive
+      capabilities (camera + facial recognition + email access + ambient monitoring + proactive surveillance +
+      in-home 24/7) than Meta Ray-Ban (camera + audio, worn intermittently). Within a 20-day window (Jul 7-27),
+      Digital Trends published: (1) adversarial framing of Meta IMPROVING privacy (LED fix = "creep's weapon"),
+      (2) aspirational framing of OpenAI PLANNING camera + FR + email surveillance ("companion that quietly
+      follows"), (3) adversarial framing via Apple N50 delay ("privacy storm" Meta created). The Apple N50
+      article appeared 13 days after the OpenAI companion announcement but made ZERO mention of OpenAI's
+      identical capabilities. Financial context: Digital Trends has no content deals with either Meta or OpenAI,
+      suggesting cultural editorial consensus drives vocabulary bifurcation. Extends mechanism #138.
+    finding_type: intra_publication_openai_meta_vocabulary_inversion
+    mechanism_id: 182
+    mechanism_name: "Digital Trends OpenAI Companion Aspirational vs Meta Adversarial Vocabulary — Camera+Email+FR Device Gets 'Companion' While Camera-Only Glasses Get 'Creepy'"
+    novel_contribution: >
+      First documentation of a single publication applying opposite vocabulary registers to OpenAI's companion
+      device vs Meta's glasses within a 20-day window, with the MORE capable device receiving ZERO privacy
+      alarm terms while the LESS capable device receives 12+ alarm terms. The temporal proximity (Jul 7-27)
+      creates a near-natural experiment. Unlike mechanism #138 (Meta vs Samsung), this compares devices with
+      DIFFERENT and INVERSELY CORRELATED capability-to-scrutiny ratios. The Apple N50 article's omission of
+      OpenAI is the strongest evidence: the editorial frame treats Meta as the SOLE source of smart glasses
+      privacy risk, even when a MORE invasive device has been publicly announced 13 days earlier.
+    publication: Digital Trends (Designtechnica Corp)
+    rotation_type: A
+    source_urls:
+    - https://www.digitaltrends.com/cool-tech/openais-first-hardware-product-sounds-more-like-a-companion-than-a-speaker/
+    - https://www.digitaltrends.com/home-theater/openais-first-gadget-sounds-like-a-tiny-robot-for-your-home/
+    - https://www.digitaltrends.com/wearables/meta-will-disable-the-camera-on-ai-smart-glasses-if-you-tamper-or-cover-the-indicator-light/
+    - https://www.digitaltrends.com/cool-tech/smart-glasses-were-already-creepy-now-theyre-helping-people-cheat/
+    - https://www.digitaltrends.com/wearables/apples-smart-glasses-are-running-late-because-they-dont-want-to-stir-a-privacy-storm/
+    test_count: 45
+    test_file: tests/test_digital_trends_openai_companion_aspirational_coverage_meta_adversarial_vocabulary_aug19.py
+    temporal_natural_experiment:
+      day_1: '2026-07-07'
+      day_1_entity: Meta
+      day_1_register: adversarial
+      day_1_topic: Meta LED fix opened with "creep's weapon"
+      day_7: '2026-07-14'
+      day_7_entity: OpenAI
+      day_7_register: aspirational
+      day_7_topic: OpenAI camera+FR companion = "quietly follows users"
+      day_20: '2026-07-27'
+      day_20_entity: Meta (via Apple)
+      day_20_register: adversarial
+      day_20_topic: Apple avoiding "privacy storm" Meta created
+      span_days: 20
   dual_client_litigation_entanglement:
     cross_references:
     - 'Mechanism #38: Cloud Deal Coverage Selection'

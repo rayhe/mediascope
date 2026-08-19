@@ -1,3 +1,65 @@
+## Iteration #183 — Wed 2026-08-19 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #182: Digital Trends OpenAI Companion Aspirational vs Meta Adversarial Vocabulary — Camera+Email+FR Device Gets "Companion" While Camera-Only Glasses Get "Creepy"
+
+**Type:** Competitor Coverage Deep Dive — Intra-Publication OpenAI/Meta Vocabulary Inversion
+**Publication:** Digital Trends (Designtechnica Corp)
+**Competitor pair analyzed:** OpenAI companion device vs Meta Ray-Ban smart glasses
+**Asymmetry Score:** 0.87
+
+**Core Finding:**
+Digital Trends published TWO aspirational articles about OpenAI's camera-equipped companion device (Jul 14 + Aug 6, 2026) with ZERO privacy alarm vocabulary, while applying 12+ adversarial privacy terms to Meta's camera-only smart glasses in the SAME 20-day editorial window (Jul 7-27). OpenAI's device has MORE invasive capabilities than Meta's glasses, yet receives exclusively aspirational framing.
+
+**OpenAI Companion Device Coverage (0 privacy alarm terms):**
+1. "OpenAI's first hardware product sounds more like a companion than a speaker" (Jul 14, 2026) — vocabulary: "companion that quietly follows users through their day," "understands their surroundings," "feels less like a gadget and more like someone always ready to help," "something far more personal." Camera described as enabling ambient awareness. ZERO alarm terms.
+2. "OpenAI's first gadget sounds like a tiny expressive AI companion" (Aug 6, 2026) — vocabulary: "tiny expressive AI companion," "carry it between rooms," "leave it nearby on whatever surface is convenient," "feel more alive," "more familiar with its owner over time." Camera and environmental sensors described as features. ZERO alarm terms.
+
+**Meta Ray-Ban Coverage (12+ alarm terms, same editorial window):**
+- "Meta will disable the camera on AI smart glasses if you tamper or cover the indicator light" (Jul 7) — Managing Editor Nadeem Sarwar opens a POSITIVE privacy improvement with "creep's weapon," "outrage is justified"
+- "Smart glasses were already creepy, now they're helping people cheat" — specifically names Meta Ray-Ban as the privacy exemplar
+
+**Apple N50 Article Omission (Jul 27):**
+- "Apple's smart glasses are running late because they don't want to stir a privacy storm" — subtitle: "Meta has already shown Apple what can go wrong." Published 13 days AFTER the OpenAI companion device announcement. ZERO mention of OpenAI's identical (and MORE invasive) capabilities. Frames Meta as the SOLE source of camera-device privacy risk.
+
+**Capability Comparison (OpenAI MORE invasive):**
+| Capability | OpenAI Companion | Meta Ray-Ban |
+|---|---|---|
+| Camera | ✅ confirmed | ✅ confirmed |
+| Facial Recognition | ✅ Face ID-like (The Information) | ⚠️ Dormant NameTag |
+| Email Access | ✅ reads user emails | ❌ |
+| Ambient Monitoring | ✅ always-on | ❌ user-initiated |
+| Proactive Surveillance | ✅ "anticipates needs" | ❌ |
+| In-Home 24/7 | ✅ stationary, always-on | ❌ worn intermittently |
+| Data Collection Scope | Full digital life | Camera/audio when active |
+| Invasive Dimensions | 7 | 2 |
+
+**Temporal Natural Experiment (20-day window):**
+- Day 1 (Jul 7): ADVERSARIAL — Meta IMPROVING privacy → "creep's weapon"
+- Day 7 (Jul 14): ASPIRATIONAL — OpenAI PLANNING camera+FR+email surveillance → "companion that quietly follows"
+- Day 20 (Jul 27): ADVERSARIAL — Apple avoiding "privacy storm" Meta created → zero OpenAI mention
+
+**Novel Contribution:**
+First documentation of a single publication applying opposite vocabulary registers to OpenAI's companion device vs Meta's glasses within a 20-day window, with the MORE capable device receiving ZERO privacy alarm terms while the LESS capable device receives 12+ alarm terms. Unlike mechanism #138 (Meta vs Samsung), this compares devices with DIFFERENT and INVERSELY CORRELATED capability-to-scrutiny ratios. The Apple N50 article's omission of OpenAI 13 days post-announcement is the strongest evidence: the editorial frame treats Meta as the SOLE source of smart glasses privacy risk.
+
+**Financial Context:**
+Digital Trends (Designtechnica Corp, Portland, OR) has no content licensing deals with either Meta or OpenAI. Independent ownership. The vocabulary bifurcation reflects cultural/editorial consensus, not financial capture. Cross-references mechanism #138 (same finding for Samsung/Google) and #170 (Gizmodo OpenAI companion inversion).
+
+**Confounders:** 5 (2 STRONG: Meta's real privacy track record, OpenAI pre-launch status; 2 MODERATE: form factor difference, engagement optimization; 1 WEAK: reader familiarity)
+
+**Cross-references:** #138 (Digital Trends Meta vs Samsung), #159 (cross-publication OpenAI companion bifurcation), #170 (Gizmodo OpenAI companion inversion), #50 (Apple N50 privacy hero cascade)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #182 added to cross_publication_findings
+- `tests/test_digital_trends_openai_companion_aspirational_coverage_meta_adversarial_vocabulary_aug19.py` — new (10 classes, 41 tests)
+- `README.md` — test count 17,250→17,291, files 473→474, new table entries for #180, #181, #182
+- `docs/ARCHITECTURE.md` — test/file counts synced, new test file entry
+
+### Stats After This Iteration
+- **Mechanisms:** 182
+- **Tests:** ~17,291 across 474 files
+
+---
+
 ## Iteration #182 — Wed 2026-08-19 11:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Mass-Market Vocabulary Propagation Cycle Complete
