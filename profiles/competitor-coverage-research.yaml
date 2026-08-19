@@ -17760,6 +17760,102 @@ cross_publication_findings:
     - https://digiday.com/media/9to5-google-apple/
     test_file: tests/test_9to5_network_cross_publication_privacy_vocabulary_gradient_aug19.py
     test_count: 49
+  openai_zero_ad_revenue_share_publisher_captivity:
+    mechanism_id: 174
+    mechanism_name: OpenAI Zero-Ad-Revenue-Share Publisher Financial Captivity Architecture
+    mechanism_type: financial_incentive_captivity_architecture
+    discovery_date: '2026-08-19'
+    publications:
+    - All OpenAI content deal partners (20+ deals, 160+ outlets)
+    entities_involved:
+    - OpenAI
+    - Google
+    - Perplexity
+    - Prorata AI
+    - Meta
+    asymmetry_score: 0.82
+    finding: 'OpenAI VP of Media Partnerships Varun Shetty confirmed at WAN-IFRA World
+      News Media Congress in Marseille (June 3, 2026) that OpenAI has no plans to share
+      ad revenue with publishers whose content is surfaced alongside ChatGPT ads. His
+      exact response: Not at this point. This creates a one-directional financial captivity
+      architecture: publishers license content for flat fees ($300-400M/yr total, 20+ deals,
+      160+ outlets), OpenAI uses content in ChatGPT Search with ads, keeps 100% of ad revenue
+      (projected $2.5B 2026, $100B 2030). Revenue share comparison: Google AdSense 68-80%
+      to publishers, Perplexity initially offered per-citation share then removed ads, Prorata
+      AI offers 50%, Microsoft Copilot announced plans to pay, OpenAI: 0%. Shetty career:
+      NYU Law → Skadden/Wilson Sonsini (antitrust) → Foursquare → NYT Strategy & BD (managed
+      Google/Snapchat partnerships) → Meta 6+ years (WhatsApp BD) → OpenAI VP Media. Former
+      antitrust lawyer runs the zero-share program. Simultaneously, OpenAI co-funds WAN-IFRA
+      newsroom programs: Newsroom AI Catalyst ($1.5M, 128 newsrooms), Prototype Development
+      Fund ($1.5M), OpenAI Academy for News (workflow embedding). These create switching costs.
+      Financial captivity chain: deal → flat fee → content in ChatGPT with ads → OpenAI keeps
+      100% ad revenue → publisher gets grants/tools → editorial judgment conflicted → adversarial
+      coverage risks losing deal + grants + traffic. Meta has ZERO content deals with adversarial
+      publications (WIRED, Gizmodo, NYT, Verge), zero newsroom programs, zero financial leverage.
+      Cost of adversarial Meta coverage = $0. NYT suing vs deal-holders (Conde Nast, FT, Guardian,
+      News Corp, Vox, Atlantic, Hearst, WaPo) creates two-tier coverage incentive. AG Sulzberger
+      called it brazen theft at same WAN-IFRA Congress one day before Shetty spoke.'
+    primary_evidence:
+      shetty_confirmation:
+        speaker: Varun Shetty (VP Media Partnerships, OpenAI)
+        venue: WAN-IFRA World News Media Congress, Marseille
+        date: '2026-06-03'
+        response: Not at this point.
+        source_url: https://pressgazette.co.uk/platforms/openai-not-planning-to-share-advertising-revenue-with-publishers/
+      revenue_share_comparison:
+        google_adsense: 68-80% to publishers
+        perplexity: Initially offered share, removed ads
+        prorata_ai: 50% to publishers
+        microsoft_copilot: Plans to pay announced
+        openai: 0% confirmed June 2026
+      shetty_career:
+        trajectory: NYU Law → Skadden Arps → Wilson Sonsini → Foursquare → Shyp → NYT → Meta (6 yrs) → OpenAI
+        meta_role: Director BD & Product Partnerships, WhatsApp
+        nyt_role: Executive Director Strategy & BD
+        antitrust_background: true
+      newsroom_dependency_programs:
+        catalyst: $1.5M co-funded, 128 newsrooms
+        prototype_fund: $1.5M total
+        academy: OpenAI Academy for News (workflow tools)
+    confounding_factors:
+    - severity: STRONG
+      factor: Flat-fee model may be standard early-stage practice; Shetty said not at this
+        point implying possible future revenue sharing
+    - severity: STRONG
+      factor: eMarketer counter-forecast projects 90% miss on OpenAI ad revenue targets;
+        if ad revenue stays small, zero-share has less material impact
+    - severity: MODERATE
+      factor: Individual deal terms may include non-public revenue sharing provisions
+    - severity: MODERATE
+      factor: Google Showcase and News Initiative create similar dependency programs;
+        pattern is industry-wide not unique to OpenAI
+    - severity: WEAK
+      factor: Some publishers report genuinely higher engagement quality from ChatGPT
+        referral traffic
+    cross_references:
+    - mechanism_id: 172
+      name: OpenAI CPA Advertising Maturation
+      connection: CPA ad maturation + Meta displacement compounds with zero-share captivity
+    - mechanism_id: 162
+      name: Advance Reddit Q2 2026 Capital Extraction
+      connection: Extends publisher financial captivity model to OpenAI direct retention
+    - mechanism_id: 40
+      name: FT-OpenAI Deal Coverage Asymmetry
+      connection: Reveals 0% ad share makes flat-fee deal the ONLY publisher compensation
+    source_urls:
+    - https://pressgazette.co.uk/platforms/openai-not-planning-to-share-advertising-revenue-with-publishers/
+    - https://rightstech.com/2026/06/openai-not-planning-to-share-advertising-revenue-with-publishers/
+    - https://searchengineland.com/openai-searchgpt-chatgpt-integration-447379
+    - https://www.twipemobile.com/openai-shares-ai-strategies-for-publishers/
+    - https://support.google.com/adsense/answer/180195?hl=en
+    - https://wan-ifra.org/newsroom-ai-catalyst-prototype-development-fund/
+    - http://openai.com/index/newsroom-ai-catalyst-global-program-with-wan-ifra/
+    - https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/
+    - https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/
+    - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    - https://www.pulse.bot/entertainment/news/openai-not-planning-to-share-advertising-revenue-with-publishers-9d05c358-0f4b-465f-8ee5-b27c3bd3461c/
+    test_file: tests/test_openai_zero_ad_revenue_share_publisher_financial_captivity_aug19.py
+    test_count: 45
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
