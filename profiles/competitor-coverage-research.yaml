@@ -16458,6 +16458,188 @@ cross_publication_findings:
       prediction: Meta will receive the highest volume of adversarial privacy coverage across all four Ziff Davis publications proportional to financial zero-cost
     - id: zd_samsung_soft
       prediction: Samsung glasses will receive positive hardware reviews without structural privacy warnings, unlike Meta glasses reviews
+  matt_wille_gizmodo_smart_glasses_beat_reporter_vocabulary_bifurcation:
+    mechanism_id: 179
+    mechanism_name: "Matt Wille (Gizmodo) Smart Glasses Beat Reporter — 8+ Solo Meta Adversarial Articles vs Zero Solo Samsung Privacy Investigation"
+    mechanism_type: journalist_cross_entity_beat_assignment_vocabulary_bifurcation
+    discovery_date: '2026-08-19'
+    asymmetry_score: 0.85
+    journalist:
+      name: Matt Wille
+      publication: Gizmodo (Keleops AG, formerly G/O Media)
+      beat: Smart glasses / wearables
+      role: "Dedicated smart glasses beat reporter — prolific solo byline on smart glasses category with 10+ articles in 2025-2026"
+      career_trajectory: "Gizmodo staff writer specializing in wearables and smart glasses. Has established himself as Gizmodo's primary voice on the smart glasses category, covering product launches, privacy dynamics, regulatory developments, and cultural backlash."
+    meta_coverage:
+      article_count: 8+
+      framing: adversarial_privacy_alarm
+      articles:
+      - title: "Meta Has Smart Glasses Spiraling Towards Glasshole 2.0"
+        date: 2026-03-18
+        url: https://gizmodo.com/meta-has-smart-glasses-spiraling-towards-glasshole-2-0-2000733361
+        vocabulary:
+        - "Glasshole 2.0"
+        - "usurping user data"
+        - "disrespectful"
+        - "torpedoed"
+        - "autographed personally by Mark Zuckerberg"
+        - "fumbling the bag"
+        tone_score: -0.90
+      - title: "Meta Thinks Its Smart Glasses Could Stalk People in a 'Thoughtful' Way"
+        date: 2026-04-15
+        url: https://gizmodo.com/meta-thinks-its-smart-glasses-could-stalk-people-in-a-thoughtful-way-2000746222
+        vocabulary:
+        - "stalk people"
+        - "surveillance"
+        - "dynamic political environment"
+        - "serial misuse"
+        tone_score: -0.85
+      - title: "Did Meta Just Accidentally Prove Smart Glasses Are a Liability?"
+        date: 2026-02-11
+        url: https://gizmodo.com/did-meta-just-accidentally-prove-smart-glasses-are-a-liability-2000725585
+        vocabulary:
+        - liability
+        - "red flag"
+        - "Bad Things"
+        - "one giant red flag"
+        - "downright gross"
+        tone_score: -0.80
+      - title: "Buckle Up, the Smart Glasses Backlash Is Coming"
+        date: 2025-10-14
+        url: https://gizmodo.com/buckle-up-the-smart-glasses-backlash-is-coming-2000668213
+        vocabulary:
+        - backlash
+        - "douchebag's TikTok"
+        - "choppy"
+        - "record you with smart glasses without your knowledge"
+        tone_score: -0.65
+      - title: "We Need to Talk About Smart Glasses"
+        date: 2025-09-30
+        url: https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+        vocabulary:
+        - "Meta... I think it could do a lot better"
+        - "banned explicitly"
+        - "encroaching on people's privacy"
+        tone_score: -0.55
+      - title: "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So"
+        date: 2026-06-14
+        url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+        vocabulary:
+        - "the Meta of it all"
+        - "gun... you gave the gun to the public"
+        - "existential threat"
+        - "misuse"
+        - "sweary incursions"
+        framing_note: "Entire 2000+ word article frames Meta as the privacy-unfriendly baseline. 'Anti-Meta' framing for Even Realities and Brilliant Labs. Samsung/Google mentioned only in final 2 paragraphs as 'coming soon' with no privacy scrutiny applied."
+        tone_score: -0.50
+      - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+        date: 2026-07-31
+        url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+        vocabulary:
+        - "privacy concerns pile up"
+        - "well deserved"
+        - "prickly climate"
+        - extortion
+        - "using smart glasses in court"
+        - "encroach on people's privacy"
+        tone_score: -0.60
+      - title: "Meta's Ray-Bans Aren't the Only Smart Glasses With a 'Glasshole' Problem"
+        date: 2026-06-28
+        url: https://gizmodo.com/metas-ray-bans-arent-the-only-smart-glasses-with-a-glasshole-problem-2000770193
+        vocabulary:
+        - "Glasshole"
+        - "privacy liability"
+        - "surreptitiously recording"
+        - "encroaching on people's privacy"
+        framing_note: "Extends privacy criticism to Rokid (Chinese manufacturer). Still frames Meta as the reference point for the 'Glasshole problem'. ZERO mention of Samsung Galaxy Glasses despite Samsung having identical camera hardware."
+        tone_score: -0.70
+      aggregate_alarm_terms:
+      - "Glasshole 2.0"
+      - "Glasshole"
+      - "stalk"
+      - "surveillance"
+      - "liability"
+      - "usurping user data"
+      - "red flag"
+      - "Bad Things"
+      - "torpedoed"
+      - "fumbling the bag"
+      - "backlash"
+      - "douchebag"
+      - "encroaching on privacy"
+      - "privacy nightmare"
+      - "existential threat"
+      - "downright gross"
+      aggregate_alarm_term_count: 16+
+      average_tone_score: -0.69
+    samsung_coverage:
+      solo_article_count: 0
+      samsung_privacy_investigation: false
+      samsung_mentions_in_meta_articles: "Zero — Samsung Galaxy Glasses not mentioned in any of Wille's 8+ Meta adversarial articles, despite Samsung announcing identical camera glasses at Galaxy Unpacked London on July 22, 2026."
+      co_authored_coverage:
+        samsung_unpacked_live_updates:
+          date: 2026-07-22
+          url: https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539
+          co_authors: "Raymond Wong, Kyle Barr, Matt Wille"
+          wille_contribution: "Samsung could just corner the market on fashionable consumers who also love wearing AI on their faces."
+          tone: aspirational
+          privacy_alarm_terms: 0
+          framing_note: "Aspirational product framing. ZERO privacy vocabulary applied to Samsung's camera-equipped glasses. Compare to Wille's solo Meta articles: same hardware capability, opposite editorial register."
+      google_coverage:
+        solo_google_glasses_privacy_investigation: false
+        note: "Google Android XR glasses with identical camera mentioned in passing in 'Can Smart Glasses Ever Be Privacy-Friendly?' final paragraph as 'coming' without privacy scrutiny."
+    vocabulary_bifurcation:
+      meta_register: adversarial
+      meta_vocabulary_class: "alarm, stigmatization, moral condemnation: Glasshole, stalk, surveillance, liability, red flag, torpedoed, fumbling, encroaching, gross"
+      samsung_register: aspirational
+      samsung_vocabulary_class: "product aspiration, fashion: 'corner the market on fashionable consumers,' 'serious competition,' positive hardware framing"
+      delta: "8+ solo adversarial articles for Meta vs 0 solo articles for Samsung. When Samsung IS covered (co-authored Unpacked), Wille's contribution uses aspirational vocabulary. Same journalist, same hardware capabilities, opposite editorial registers."
+    beat_assignment_significance: "Matt Wille has self-selected as Gizmodo's smart glasses beat reporter. He has published more dedicated smart glasses opinion/analysis pieces than any other Gizmodo journalist. This makes his coverage selection — which topics he CHOOSES to investigate — editorially significant. He has chosen to investigate Meta's camera privacy 8+ times while choosing ZERO times to investigate Samsung or Google's identical camera privacy. The selection asymmetry is his editorial agenda."
+    rokid_extension_paradox: "Wille's 'Meta's Ray-Bans Aren't the Only Smart Glasses With a Glasshole Problem' (Jun 28) extends privacy criticism to Rokid — a small Chinese manufacturer with minimal US market presence. He does NOT extend it to Samsung or Google, despite Samsung having 100x Rokid's market presence and launching camera glasses 24 days earlier at Galaxy Unpacked. The editorial choice to extend criticism to a small Chinese brand while skipping Samsung/Google suggests the asymmetry extends beyond Meta-specific targeting to include selective criticism of non-advertising partners."
+    financial_context:
+      gizmodo_ownership: "Keleops AG (acquired from G/O Media, Oct 2024). No documented content licensing deal with OpenAI, Google, or Samsung."
+      gizmodo_ad_revenue: "Digital advertising dependent. Google programmatic advertising via DoubleClick/Ad Manager is primary revenue source for most digital media. Samsung is a major display advertising buyer across digital media."
+      meta_financial_relationship: "$0 — Meta has zero content licensing, advertising, or partnership deals with Gizmodo/Keleops."
+      note: "Unlike WIRED/Condé Nast (mechanisms #35, #58, #167), Gizmodo has no documented direct financial incentive for the coverage pattern. This suggests the vocabulary bifurcation reflects cultural/editorial consensus (entity-identity stigma) rather than financial capture. Cross-references mechanism #170 (Gizmodo OpenAI companion vocabulary inversion) which also found entity-specific framing without financial incentives."
+    confounders:
+    - description: "Meta has accumulated real privacy incidents (Kenya contractor footage, Svenska Dagbladet investigation, pickup artist harassment videos) that justify heightened editorial scrutiny. Samsung has no equivalent track record."
+      strength: STRONG
+      rebuttal: "Wille's articles include speculative/editorial pieces that go beyond incident reporting — 'Buckle Up, the Backlash Is Coming' (Oct 2025) PREDICTS future backlash before most incidents occurred. 'Can Smart Glasses Ever Be Privacy-Friendly?' is a category-level essay. A beat reporter could apply identical speculative analysis to Samsung's identical camera hardware — the CHOICE not to is the finding."
+    - description: "Meta is the category leader (~80% market share in smart glasses), justifying more coverage overall."
+      strength: STRONG
+      rebuttal: "Volume proportionality would explain more Meta articles but NOT the vocabulary differential. If Samsung warrants fewer articles, those fewer articles should still apply equivalent privacy vocabulary to equivalent hardware. The finding is not that Samsung gets less coverage — it's that Samsung gets ZERO privacy vocabulary while Meta gets 16+ alarm terms."
+    - description: "Samsung Galaxy Glasses announced July 22, 2026 — only 28 days before this analysis. Wille may write a Samsung privacy investigation in the future."
+      strength: MODERATE
+      rebuttal: "Wille published 'Buckle Up, the Smart Glasses Backlash Is Coming' about Meta in October 2025, before Ray-Ban Meta Gen 2 had accumulated its privacy incidents. He did not wait for incidents before applying privacy scrutiny to Meta. A beat reporter who applies preemptive privacy scrutiny to Meta but not to Samsung is making an entity-specific editorial choice."
+    - description: "Wille may have personal conviction that Meta specifically is a privacy risk based on Facebook/Cambridge Analytica history, which Samsung does not share."
+      strength: MODERATE
+      rebuttal: "Legitimate concern about Meta's corporate history does not explain the camera-hardware equivalence gap. Wille explicitly acknowledges in 'Meta's Ray-Bans Aren't the Only Smart Glasses With a Glasshole Problem' that camera privacy issues extend beyond Meta — yet he extends scrutiny to Rokid, not Samsung. The selection of which non-Meta companies receive scrutiny is entity-identity-driven."
+    - description: "Smart glasses opinion/editorial format allows personal views and is not expected to maintain systematic cross-entity balance."
+      strength: WEAK
+      rebuttal: "Personal editorial latitude explains individual article tone but not the systematic pattern across 10+ articles. A single journalist's entire beat output showing zero cross-entity privacy investigation over 11 months constitutes an editorial agenda, not isolated opinion."
+    cross_references:
+    - mechanism_id: 170
+      relationship: "Gizmodo intra-publication OpenAI companion vocabulary inversion — same publication, same entity-specific vocabulary selection, different journalist"
+    - mechanism_id: 160
+      relationship: "Nadeem Sarwar (Digital Trends) managing editor cross-entity pattern — editorial hierarchy replication at a different publication"
+    - mechanism_id: 131
+      relationship: "Ben Schoon (9to5Google) control calibration — structural dependency vs independent editorial choice"
+    - mechanism_id: 158
+      relationship: "Multi-vector cultural delegitimization cascade — Wille's output feeds into and draws from the broader entity-specific backlash ecosystem"
+    significance:
+      novel_contribution: "First documented case of a BEAT REPORTER — someone who has self-selected into the smart glasses category as their editorial specialty — showing systematic zero cross-entity privacy investigation over 11+ months and 8+ articles. Previous journalist cross-entity mechanisms documented individual articles or career-arc patterns. This mechanism documents a COMPLETE BEAT-LEVEL EDITORIAL AGENDA: the journalist who covers smart glasses privacy more than anyone else at Gizmodo has never once applied that coverage to Samsung, Google, or Apple smart glasses."
+    source_urls:
+    - https://gizmodo.com/meta-has-smart-glasses-spiraling-towards-glasshole-2-0-2000733361
+    - https://gizmodo.com/meta-thinks-its-smart-glasses-could-stalk-people-in-a-thoughtful-way-2000746222
+    - https://gizmodo.com/did-meta-just-accidentally-prove-smart-glasses-are-a-liability-2000725585
+    - https://gizmodo.com/buckle-up-the-smart-glasses-backlash-is-coming-2000668213
+    - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    - https://gizmodo.com/metas-ray-bans-arent-the-only-smart-glasses-with-a-glasshole-problem-2000770193
+    - https://gizmodo.com/live-updates-from-samsungs-july-2026-galaxy-unpacked-2000785539
+    test_count: 55
+    test_file: tests/test_matt_wille_gizmodo_smart_glasses_beat_reporter_vocabulary_bifurcation_aug19.py
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

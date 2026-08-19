@@ -1,3 +1,54 @@
+## Iteration #179 — Wed 2026-08-19 09:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #179: Matt Wille (Gizmodo) Smart Glasses Beat Reporter — 8+ Solo Meta Adversarial vs Zero Solo Samsung Privacy Investigation
+
+**Type:** Journalist Cross-Entity Beat Assignment Vocabulary Bifurcation
+**Publication:** Gizmodo (Keleops AG)
+**Journalist:** Matt Wille
+**Asymmetry Score:** 0.85
+
+**Core Finding:**
+Matt Wille, Gizmodo's dedicated smart glasses beat reporter, has published 8+ solo-bylined Meta smart glasses articles with heavy adversarial privacy vocabulary over 11+ months (Oct 2025 — Aug 2026) while publishing ZERO solo-bylined Samsung Galaxy Glasses privacy investigations. His only Samsung coverage is a co-authored Galaxy Unpacked live update where his contribution uses aspirational vocabulary ("Samsung could just corner the market on fashionable consumers").
+
+This is the first documented case of a BEAT REPORTER — someone who has self-selected into the smart glasses category as their editorial specialty — showing systematic zero cross-entity privacy investigation over 11+ months and 8+ articles.
+
+**Meta Coverage (8+ solo articles, adversarial vocabulary):**
+1. "Meta Has Smart Glasses Spiraling Towards Glasshole 2.0" (Mar 2026) — Glasshole 2.0, usurping user data, torpedoed, fumbling
+2. "Meta Thinks Its Smart Glasses Could Stalk People in a 'Thoughtful' Way" (Apr 2026) — stalk, surveillance
+3. "Did Meta Just Accidentally Prove Smart Glasses Are a Liability?" (Feb 2026) — liability, red flag, Bad Things, gross
+4. "Buckle Up, the Smart Glasses Backlash Is Coming" (Oct 2025) — backlash, douchebag's TikTok
+5. "We Need to Talk About Smart Glasses" (Sep 2025) — "Meta...I think it could do a lot better," banned explicitly
+6. "Can Smart Glasses Ever Be Privacy-Friendly?" (Jun 2026) — entire 2000+ word article frames Meta as privacy-unfriendly baseline
+7. "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (Jul 2026) — privacy concerns pile up, well deserved, extortion
+8. "Meta's Ray-Bans Aren't the Only Smart Glasses With a Glasshole Problem" (Jun 2026) — extends to Rokid but NOT Samsung
+
+**Samsung Coverage (0 solo articles):**
+- Samsung Galaxy Unpacked live update (Jul 22, 2026, co-authored) — Wille's contribution: aspirational product framing, zero privacy vocabulary
+- Zero solo-bylined Samsung Galaxy Glasses privacy investigation
+- Zero Samsung mentions in any of Wille's 8+ Meta adversarial articles
+
+**Rokid Extension Paradox:**
+Wille extends privacy criticism from Meta to Rokid — a small Chinese manufacturer with minimal US market presence. He does NOT extend it to Samsung or Google, despite Samsung having 100x Rokid's market presence. The editorial choice to extend criticism to a small Chinese brand while skipping Samsung/Google is entity-selective.
+
+**Financial Context:**
+Gizmodo/Keleops has $0 relationship with both Meta and Samsung. No content licensing deals with OpenAI/Google/Samsung. This suggests the vocabulary bifurcation reflects cultural/editorial consensus (entity-identity stigma) rather than financial capture — cross-referencing mechanism #170 (Gizmodo OpenAI companion vocabulary inversion with same finding).
+
+**Confounders:** 5 (2 STRONG: Meta's real privacy incidents; market leader proportionality. 2 MODERATE: Samsung recency; Wille's personal conviction. 1 WEAK: editorial format permits personal views)
+
+**Cross-references:** #170 (Gizmodo OpenAI companion inversion), #160 (Nadeem Sarwar editorial hierarchy), #131 (Ben Schoon control), #158 (multi-vector cultural cascade)
+
+### Files Changed
+- `profiles/competitor-coverage-research.yaml` — mechanism #179 added to cross_publication_findings
+- `tests/test_matt_wille_gizmodo_smart_glasses_beat_reporter_vocabulary_bifurcation_aug19.py` — new (10 classes, 53 tests)
+- `README.md` — test count 17099/469 → 17152/470, new table entries for #178 and #179
+- `docs/ARCHITECTURE.md` — test/file counts synced, new test file entries
+
+### Stats After This Iteration
+- **Mechanisms:** 179
+- **Tests:** ~17,152 across 470 files
+
+---
+
 ## Iteration #178 — Wed 2026-08-19 08:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #178: PetaPixel Camera Publication Coverage Selection — Samsung Galaxy Glasses Zero Articles vs Meta 5+ Privacy Alarm Articles (2026)
