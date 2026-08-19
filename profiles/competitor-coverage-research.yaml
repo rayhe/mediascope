@@ -17637,6 +17637,129 @@ cross_publication_findings:
     test_file: tests/test_openai_cpa_advertising_maturation_meta_displacement_publisher_compounding_aug18.py
     test_count: 59
     asymmetry_score: 0.85
+  nine_to_five_network_cross_publication_privacy_vocabulary_gradient:
+    mechanism_id: 173
+    mechanism_name: 9to5 Network Cross-Publication Smart Glasses Privacy Vocabulary Gradient
+    mechanism_type: cross_publication_network_vocabulary_gradient
+    discovery_date: '2026-08-19'
+    publications:
+    - 9to5Mac
+    - 9to5Google
+    entities_involved:
+    - Even Realities
+    - Samsung
+    - Google
+    - Meta
+    asymmetry_score: 0.77
+    finding_summary: 'The 9to5Mac Inc. network (parent of both 9to5Mac and 9to5Google)
+      applies a systematic THREE-TIER privacy vocabulary gradient across its podcast
+      and newsletter output that correlates with financial dependencies. Tier 1 — Even
+      Realities (no camera, no financial relationship): 9to5Mac Overtime Ep077 interviews
+      CEO Will Wang; chapter "Addressing the privacy problem" (28:58) frames privacy as
+      a solvable design challenge with aspirational framing and zero alarm vocabulary.
+      Tier 2 — Samsung/Google (camera, financial partner): 9to5Google Pixelated #81
+      calls Android XR glasses "surprisingly impressive," Sideload #37 says Google is
+      "nailing the basics," and a Jul 23 article praises identical privacy LED as Samsung
+      and Google "got it right out of the gate" — all with zero privacy vocabulary.
+      Tier 3 — Meta (camera, no financial relationship): 9to5Google Inbox Newsletter
+      uses "perv glasses" in the headline (Jul 23, same day as Samsung praise), Daniel
+      Bader states "I trust Google with far more than Meta," and 9to5Mac reports Meta
+      glasses send "sensitive videos to human data annotators." Financial architecture:
+      9to5Google writers paid via Google AdSense per-article (Digiday 2018), Google
+      Preferred Source badge, Google Ad Exchange partner. 9to5Mac has Apple affiliate
+      links. Neither publication has any financial relationship with Meta or Even
+      Realities. Vocabulary severity inversely correlates with financial relationship
+      strength across the network.'
+    primary_evidence:
+      tier_1_even_realities:
+        entity: Even Realities
+        publication: 9to5Mac
+        episode: Overtime Ep077
+        date: '2026-08-18'
+        guest: Will Wang (Even Realities CEO)
+        chapter: 'Addressing the privacy problem (28:58)'
+        framing: 'Aspirational — privacy as solvable design challenge, zero alarm vocabulary'
+        alarm_vocabulary_count: 0
+        key_quote: 'You just cannot have a camera; it is irresponsible.'
+        source_url: https://www.youtube.com/watch?v=mcz5ZnH_YPY
+      tier_2_samsung_google:
+        entity: Samsung/Google
+        publication: 9to5Google
+        episodes:
+        - name: Pixelated #81
+          date: '2026-07'
+          framing: 'surprisingly impressive, excited for the return of Google Glass-esque technology'
+        - name: Sideload #37
+          date: '2026-06-22'
+          framing: 'nailing the basics, what to expect from Google entry'
+        - name: Article (Jul 23)
+          date: '2026-07-23'
+          framing: 'Samsung and Google have got it right out of the gate'
+        framing: 'Positive/aspirational — zero alarm vocabulary across all coverage'
+        alarm_vocabulary_count: 0
+      tier_3_meta:
+        entity: Meta
+        publication: 9to5Google / 9to5Mac
+        evidence:
+        - source: 9to5Google Inbox Newsletter (Jul 23, 2026)
+          framing: '"perv glasses" in headline'
+        - source: Daniel Bader explicit trust differential
+          framing: '"I trust Google with far more than Meta"'
+        - source: 9to5Mac privacy archive
+          framing: '"Meta Ray-Ban smart glasses send sensitive videos to human data annotators"'
+        framing: 'Alarm/distrust — explicit surveillance vocabulary and named distrust'
+        alarm_terms:
+        - perv glasses
+        - sensitive videos
+        - human data annotators
+        alarm_vocabulary_count: 3
+    financial_architecture:
+      nine_to_five_google:
+        adsense_per_article: true
+        adsense_source: Digiday (2018)
+        google_preferred_source_badge: true
+        google_ad_exchange_partner: true
+      nine_to_five_mac:
+        apple_affiliate_links: true
+        amazon_associates: true
+      meta_relationship: '$0 — no financial relationship with either 9to5Mac or 9to5Google'
+      even_realities_relationship: '$0 — no financial relationship with either publication'
+    confounders:
+    - strength: STRONG
+      factor: Even Realities genuinely has no camera, so different privacy profile is
+        partly justified
+    - strength: STRONG
+      factor: Meta has real privacy controversies (contractor video review)
+    - strength: MODERATE
+      factor: Different publication teams may have editorial independence within 9to5Mac Inc.
+    - strength: MODERATE
+      factor: Samsung/Google glasses had not shipped yet, so no misuse incidents to report
+    - strength: WEAK
+      factor: Podcast guest determines framing direction
+    cross_references:
+    - mechanism_id: 131
+      name: Ben Schoon 9to5Google Control Calibration
+      connection: '#131 established 9to5Google baseline; #173 extends to cross-publication network-level pattern'
+    - mechanism_id: 163
+      name: 9to5Google Dual-Framing Paradox
+      connection: '#163 documented single-publication dual framing; #173 extends to three-tier gradient across parent network'
+    - mechanism_id: 171
+      name: Daniel Bader Career-Ecosystem Capture
+      connection: '#171 documented Bader explicit trust differential; #173 contextualizes it within network-wide vocabulary gradient'
+    - mechanism_id: 144
+      name: Podcast Ecosystem Privacy Vocabulary Amplification
+      connection: '#144 established podcast amplification pattern; #173 adds 9to5Mac Overtime as 25th tracked episode'
+    - mechanism_id: 148
+      name: Vox Media Cross-Medium Privacy Vocabulary Portability
+      connection: '#148 demonstrated cross-medium portability within Vox Media; #173 demonstrates it within 9to5Mac Inc. network'
+    source_urls:
+    - https://www.youtube.com/watch?v=mcz5ZnH_YPY
+    - https://www.youtube.com/watch?v=EWOvH-BDWe8
+    - http://9to5google.com/2026/06/22/the-sideload-037-specs-for-your-specs/
+    - https://9to5google.com/2026/07/23/inbox-newsletter-4/
+    - https://digiday.com/media/9to5-google-apple/
+    test_file: tests/test_9to5_network_cross_publication_privacy_vocabulary_gradient_aug19.py
+    test_count: 49
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

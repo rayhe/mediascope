@@ -3813,3 +3813,71 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry added)
 
 **Cumulative:** 172 mechanisms, ~16,763 tests, 461 files
+
+---
+
+## Iteration #173 — 2026-08-18 23:00 PT
+
+**Type:** D (Test & Verify)
+
+**Fix — Section placement bug:** 8 mechanisms (#164-169, #171, #172) were misplaced as top-level entries in the `publications` section instead of `cross_publication_findings` — same bug class as mechanism #152 in iteration #153. All 8 moved to `cross_publication_findings`. Publications section is now clean (0 mechanism entries; only publication profiles remain). CPF went from 137 → 145 mechanism entries.
+
+**Fix — Missing asymmetry_score:** Mechanism #172 was missing `asymmetry_score`; added 0.85.
+
+**Fix — README/ARCHITECTURE sync:** Body text was stale at 16763/461; updated to 16811/462 (matching table and disk).
+
+**Fix — Cross-validation test updates:**
+- `test_type_d_2pm_cross_validation_aug18.py`: All 4 mechanism-specific test classes (#164-167) updated from `pubs` to `cpf` fixture (71 tests). Publications count guard reduced from >= 13 to >= 9.
+- `test_type_d_midnight_cross_validation_aug18.py`: Updated max mechanism ID assertion to >= 172.
+
+**New test:** `test_type_d_11pm_cross_validation_aug18.py` — 6 classes, 48 tests:
+- Section placement guard (no mechanisms in publications)
+- CPF completeness (#163-172 all present)
+- Global mechanism ID integrity (155 unique, contiguous excl known gaps)
+- Doc sync (README table/body/ARCHITECTURE agreement)
+- Test file existence (#164-172)
+- Asymmetry score distribution
+
+**Verification:** 251 aug18 cross-validation tests passing, 306 mechanism tests passing. 0 failures.
+
+**Files changed:**
+- Added: `tests/test_type_d_11pm_cross_validation_aug18.py` (6 classes, 48 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (8 mechanisms moved, #172 asymmetry_score added)
+- Updated: `tests/test_type_d_2pm_cross_validation_aug18.py` (pubs → cpf fixtures)
+- Updated: `tests/test_type_d_midnight_cross_validation_aug18.py` (max ID assertion)
+- Updated: README.md (462 files, ~16,811 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 172 mechanisms, ~16,811 tests, 462 files
+
+---
+
+## Iteration #174 — 2026-08-19 00:00 PT
+
+**Type:** E (Podcast Sentiment Tracking)
+
+**New Mechanism #173:** 9to5 Network Cross-Publication Smart Glasses Privacy Vocabulary Gradient
+
+**Core Finding:** The 9to5Mac Inc. network (parent of 9to5Mac and 9to5Google) applies a systematic THREE-TIER privacy vocabulary gradient across its podcast/newsletter output correlating with financial dependencies:
+- Tier 1 — Even Realities (no camera, no financial tie): 9to5Mac Overtime Ep077, CEO Will Wang interview, "Addressing the privacy problem" chapter (28:58) — aspirational, zero alarm vocabulary
+- Tier 2 — Samsung/Google (camera, financial partner): 9to5Google Pixelated #81 "surprisingly impressive," Sideload #37 "nailing the basics," Jul 23 article "got it right out of the gate" — all zero alarm vocabulary
+- Tier 3 — Meta (camera, no financial tie): 9to5Google Inbox Newsletter "perv glasses" headline, Daniel Bader "I trust Google with far more than Meta"
+
+**Financial Architecture:** 9to5Google: AdSense per-article pay (Digiday 2018), Google Preferred Source badge, Google Ad Exchange partner. 9to5Mac: Apple affiliate links. Neither has Meta or Even Realities financial relationship. Vocabulary severity inversely correlates with financial dependency.
+
+**Asymmetry Score:** 0.77
+
+**Confounders:** 5 documented (2 STRONG: no camera, real Meta controversies; 2 MODERATE: editorial independence, pre-ship Samsung/Google; 1 WEAK: guest framing)
+
+**Cross-references:** #131, #144, #148, #163, #171
+
+**Podcast Episode #25:** 9to5Mac Overtime Ep077 — Even Realities CEO Will Wang (~Aug 18, 2026). Source: https://www.youtube.com/watch?v=mcz5ZnH_YPY
+
+**Files changed:**
+- Added: `tests/test_9to5_network_cross_publication_privacy_vocabulary_gradient_aug19.py` (10 classes, 49 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #173)
+- Updated: `podcast-sentiment.md` (episode #25, updated cross-medium summary to 25 episodes)
+- Updated: README.md (463 files, ~16,860 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 173 mechanisms, ~16,860 tests, 463 files

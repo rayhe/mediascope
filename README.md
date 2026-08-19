@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~16,811 | Across 462 test files |
+| Tests | ~16,860 | Across 463 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **16811 tests** across 462 test files, each covering a different analytical capability:
+MediaScope has **16860 tests** across 463 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -977,3 +977,4 @@ Users of this toolkit should:
 The existence of a financial conflict does not prove that coverage is biased because of that conflict. MediaScope identifies patterns that warrant disclosure and further investigation.
 | `test_openai_cpa_advertising_maturation_meta_displacement_publisher_compounding_aug18.py` | 59 | Mechanism #172: OpenAI CPA Advertising Maturation → Meta Direct Performance Ad Revenue Competition → Publisher Content Deal Compounding Cycle. OpenAI's ads matured CPM (Jan 2026) → CPC (May 5) → CPA (May 28) in 5 months — vs Meta's 7+ years. Ads head David Dugan (former Meta exec, hired Mar 2026) building competing performance ad infrastructure. OpenAI partnered with Adobe, Criteo, Pacvue, Kargo (same vendors publishers use). Dropped $50K minimum → SMBs (Meta's 10M+ core base). 600+ advertisers, $100M ARR in 6 weeks. Enders Analysis: CPA "aligns its product more closely with that of Meta and Google." Publisher compounding cycle: content deals power ChatGPT engagement → ad inventory → ad revenue displaces Meta → sustains deal payments. Adverse Meta coverage costs publishers $0 (no Meta deals) while benefiting OpenAI's competitive position. OpenAI building internal ad stack ($385K comp bands). 5 confounders (2 STRONG: eMarketer <$1B market, Meta $243B scale), 4 predictions, cross-refs #48, #53, #58, #167, #40. 10 classes, 59 tests |
 | `test_type_d_11pm_cross_validation_aug18.py` | 48 | Type D cross-validation (Aug 18, 11 PM PT): Validates section-placement fix — 8 mechanisms (#164-169, #171, #172) were misplaced in publications instead of cross_publication_findings (same bug as #152 in iteration #153). Section placement guard (no top-level mechanisms in publications), CPF completeness (all IDs >= 163), global mechanism ID integrity (155 unique, contiguous excl known gaps), doc sync verification (README table/body/ARCHITECTURE agreement), test file existence for #164-172, asymmetry score distribution. 6 classes, 48 tests |
+| `test_9to5_network_cross_publication_privacy_vocabulary_gradient_aug19.py` | 49 | Mechanism #173: 9to5 Network Cross-Publication Smart Glasses Privacy Vocabulary Gradient. 9to5Mac Inc. network applies systematic THREE-TIER vocabulary gradient: Even Realities (no camera) = aspirational/zero alarm, Samsung/Google (camera, financial partner) = positive/zero alarm, Meta (camera, no financial tie) = "perv glasses"/distrust. 9to5Mac Overtime Ep077 with Even Realities CEO Will Wang — "Addressing the privacy problem" chapter (28:58). Financial: 9to5Google AdSense per-article (Digiday 2018), Google Preferred Source badge, Ad Exchange partner. Meta $0 relationship. Vocabulary severity inversely correlates with financial dependency. 5 confounders (2 STRONG: no camera, real controversies), cross-refs #131, #144, #148, #163, #171. 10 classes, 49 tests |

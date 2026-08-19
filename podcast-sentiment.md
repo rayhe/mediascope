@@ -1040,17 +1040,63 @@ OpenAI's device has 5/6 capabilities vs Meta's 3/6, yet receives vocabulary seve
 
 ---
 
-## Updated Cross-Medium Asymmetry Summary (Aug 18, 2026, 16:00 UTC)
+### 25. 9to5Mac Overtime Ep077 — Even Realities CEO Will Wang: "Addressing the privacy problem" (~Aug 18, 2026)
 
-### Podcast/Broadcast vs Print/Online Coverage Comparison (23+ episodes + 3 new patterns)
+**Publisher:** 9to5Mac (parent: 9to5Mac Inc.)
+**Hosts:** Jeff Benjamin & Fernando Silva
+**Guest:** Will Wang (Even Realities CEO)
+**Duration:** ~48 min
+**Source URL:** https://www.youtube.com/watch?v=mcz5ZnH_YPY
+**Key Chapter:** 28:58 "Addressing the privacy problem"
 
-| Pattern | Print/Online | Podcast/Broadcast (23+ episodes) | Alignment |
+**Entity Coverage Assessment:**
+- **Even Realities:** Aspirational framing throughout. Privacy framed as a solvable design challenge, not an inherent threat. CEO quote: "You just cannot have a camera; it's irresponsible." Zero alarm vocabulary.
+- **Meta:** Implicit villain — the company whose glasses ARE the "privacy problem" Even Realities claims to solve. Not named directly in episode but referenced via "camera on glasses" concerns.
+- **Samsung/Google:** Not scrutinized despite identical camera hardware (same Snapdragon AR1 Gen 1, same 12MP camera, same privacy LED)
+- **Apple:** Not mentioned
+
+**CRITICAL FINDING — Three-Tier Network-Level Privacy Vocabulary Gradient:**
+This episode, combined with existing 9to5Google podcast/newsletter evidence, reveals a systematic three-tier gradient across the 9to5Mac Inc. parent network:
+
+| Tier | Entity | Publication | Content | Privacy Vocabulary |
+|------|--------|------------|---------|-------------------|
+| 1 | Even Realities | 9to5Mac | Overtime Ep077 | ZERO alarm — "addressing" the problem |
+| 2 | Samsung/Google | 9to5Google | Pixelated #81, Sideload #37 | ZERO alarm — "impressive," "nailing it" |
+| 3 | Meta | 9to5Google | Inbox Newsletter Jul 23 | ALARM — "perv glasses" |
+
+**Financial Architecture:**
+- 9to5Google: Digiday (2018) reported writers paid via Google AdSense per-article. Google Preferred Source badge. Google Ad Exchange partner.
+- 9to5Mac: Apple affiliate links (Amazon Associates + Apple partnerships).
+- Neither publication has any Meta or Even Realities financial relationship.
+
+Vocabulary severity inversely correlates with financial relationship: the entity with the deepest financial ties (Google/Samsung) gets zero alarm vocabulary. The entity with zero financial ties (Meta) gets "perv glasses."
+
+**Confounders (5):**
+1. STRONG: Even Realities genuinely has no camera — different privacy profile partly justified
+2. STRONG: Meta has real privacy controversies (contractor video review documented)
+3. MODERATE: Different teams may have editorial independence within 9to5Mac Inc.
+4. MODERATE: Samsung/Google glasses hadn't shipped yet — no misuse incidents to report
+5. WEAK: Podcast guest determines framing direction
+
+**Sentiment Score:** +2/10 (positive toward smart glasses as category, neutral-positive toward Even Realities)
+**Asymmetry Assessment:** HIGH — Meta is the negative referent even when the product discussed has no camera. Network-level vocabulary gradient correlates with financial dependency.
+**Mechanism:** #173 (9to5 Network Cross-Publication Smart Glasses Privacy Vocabulary Gradient)
+**Cross-references:** #131 (Ben Schoon control), #163 (9to5Google dual-framing paradox), #171 (Daniel Bader career-ecosystem capture), #144 (Podcast Ecosystem Amplification), #148 (Vox Media Cross-Medium Portability)
+
+---
+
+## Updated Cross-Medium Asymmetry Summary (Aug 19, 2026, 07:00 UTC)
+
+### Podcast/Broadcast vs Print/Online Coverage Comparison (25 episodes + 3 new patterns)
+
+| Pattern | Print/Online | Podcast/Broadcast (25 episodes) | Alignment |
 |---------|-------------|---------|-----------|
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (21 of 23+ episodes) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 23+ episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (22 of 25 episodes) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (0 of 25 episodes examine Samsung/Google glasses privacy) | **ALIGNED** |
 | Apple aspirational framing | ✅ (mechanism #101, #136) | ✅ (Bloomberg, Clorama XR, MacVoices) | **ALIGNED** |
 | Snap gets privacy-free framing | ✅ (mechanism #130) | ✅ ($2,195 Specs with camera — zero podcast scrutiny) | **ALIGNED** |
 | Same-publisher dual framing | N/A (new) | ✅ (9to5Google: aspiration for Google, alarm for Meta) | **NEW PATTERN** |
+| Network-level vocabulary gradient | N/A (new) | ✅ (9to5Mac Inc.: Even Realities=aspirational, Samsung/Google=positive, Meta=alarm) | **NEW PATTERN** |
 | Public broadcaster meta-targeting | N/A (new) | ✅ (BBC UK, DW Germany, NBC US — 2/3 publicly funded) | **NEW PATTERN** |
 | OpenAI vocabulary gradient | ✅ (mechanism #159) | ✅ (eWeek/DT/WPN: "companion/tradeoff" vs "pervert/surveillance") | **ALIGNED** |
 | Vocabulary semantic inversion | ✅ (mechanism #158) | ✅ (Samsung = "keep perverts away", Meta = "pervert glasses") | **ALIGNED** |
@@ -1058,5 +1104,5 @@ OpenAI's device has 5/6 capabilities vs Meta's 3/6, yet receives vocabulary seve
 
 ---
 
-*Last updated: 2026-08-18 16:00 UTC (Aug 18, 9:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability)*
+*Last updated: 2026-08-19 07:00 UTC (Aug 19, 12:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient)*
