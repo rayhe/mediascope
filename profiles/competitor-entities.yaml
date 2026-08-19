@@ -4783,6 +4783,46 @@ entities:
         Meta (a direct ad revenue competitor to publishers), while positive Samsung glasses coverage rewards Samsung ($9.7B
         advertiser), Google (ad/deal partner), and Qualcomm (co-marketing partner) — a triple financial alignment absent from
         any other smart glasses product on the market.'
+    reddit_advance_advertising_feedback_loop:
+      mechanism_id: 180
+      type: financial_incentive_triple_channel
+      date_added: '2026-08-19'
+      finding_summary: 'Samsung spends $5.7M/yr on Reddit display advertising (Adbeat 2023 US data), making
+        Reddit Samsung''s 2nd-largest display ad publisher. Reddit is controlled by Advance Publications
+        (65.2% voting, 83.5% Class B), which also owns Condé Nast (WIRED). This creates a triple-channel
+        financial alignment: (1) Samsung ad revenue flows through Reddit to Advance, (2) Meta competes
+        with Reddit for ad dollars, (3) Samsung Galaxy Glasses compete with Meta Ray-Ban. All three channels
+        incentivize adversarial Meta coverage and favorable Samsung coverage. No equivalent alignment exists
+        for Meta (zero Advance/Reddit ad relationship). The cost asymmetry is infinite: adversarial Samsung
+        coverage risks $5.7M; adversarial Meta coverage costs Advance $0.'
+      samsung_us_display_publisher_breakdown_2023:
+        youtube_google_m: 137.1
+        reddit_advance_m: 5.7
+        yahoo_m: 1.3
+        msn_microsoft_m: 1.0
+        billboard_m: 0.731
+        washington_post_6mo: in_top_5
+        total_us_display_m: 152.2
+      samsung_reddit_targeting:
+        subreddits: ["r/deadbydaylight ($70.5K, 9.9M impressions)", "r/NYYankees ($50.6K, 6.6M impressions)"]
+        category: gaming and sports, not tech/privacy
+        note: 'Revenue relationship is corporate-level (Advance/Reddit), not subreddit-level.
+          Samsung does not need to advertise on r/technology for the financial incentive to operate.'
+      triple_channel_details:
+        channel_1_direct_ad_revenue: Samsung → Reddit ads ($5.7M) → Advance economic interest
+        channel_2_ad_competitor_protection: Meta ($243B ad rev) competes with Reddit ($2.6B TTM)
+        channel_3_smart_glasses_market: Samsung Galaxy Glasses vs Meta Ray-Ban (identical 12MP/AR1 hardware)
+      confounding_factors:
+      - '[STRONG] Adbeat data is from 2023, pre-Galaxy Glasses. Samsung 2026 allocation may differ.'
+      - '[STRONG] No documented editorial directive linking Samsung ads to WIRED coverage decisions.'
+      - '[MODERATE] $5.7M is <0.1% of Samsung $9.7B global ad spend.'
+      - '[MODERATE] Gizmodo/Guardian show same Samsung silence without Samsung ad relationships.'
+      - '[WEAK] Samsung Reddit ads target gaming/sports, not tech/privacy audiences.'
+      cross_references: [91, 161, 178, 179]
+      test_file: tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py
+      source_urls:
+      - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
+      - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
     privacy_feature_framing_inversion:
       mechanism_id: 93
       type: framing_inversion

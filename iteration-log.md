@@ -1,3 +1,61 @@
+## Iteration #180 — Wed 2026-08-19 10:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #180: Samsung-Reddit-Advance Advertising Feedback Loop — Triple-Channel Financial Alignment Between World's 4th-Largest Advertiser, WIRED Parent Company, and Smart Glasses Coverage Selection
+
+**Type:** Financial Incentive — Triple-Channel Publication Parent Alignment
+**Entities:** Samsung, Meta, Advance Publications (Reddit, Condé Nast/WIRED)
+**Asymmetry Score:** 0.82
+
+**Core Finding:**
+Adbeat competitive intelligence data (US display, 2023) shows Samsung spent $5.7M on Reddit display advertising, making Reddit Samsung's 2nd-largest display ad publisher by spend (behind YouTube at $137.1M). Reddit is controlled by Advance Publications (65.2% voting control, 83.5% Class B stock), which also owns Condé Nast (WIRED, Vogue, GQ, Vanity Fair, The New Yorker, Ars Technica).
+
+This creates a triple-channel financial alignment unique to Advance:
+
+**Channel 1 — Direct Ad Revenue:** Samsung → Reddit ads ($5.7M/yr) → Advance economic interest. Adversarial Samsung coverage risks this advertising relationship.
+
+**Channel 2 — Ad Competitor Protection:** Meta ($243.46B projected 2026 ad revenue) directly competes with Reddit ($2.6B TTM) for digital advertising budgets. Adversarial Meta coverage weakens a direct competitor.
+
+**Channel 3 — Smart Glasses Market:** Samsung Galaxy Glasses (Jul 22, 2026) directly compete with Meta Ray-Ban glasses on identical 12MP/Snapdragon AR1 hardware. Favorable Samsung coverage supports a glasses competitor to Meta.
+
+**All three channels align:** adversarial Meta glasses coverage simultaneously (a) protects Reddit's Samsung advertising revenue, (b) weakens Reddit's ad competitor, and (c) favors Samsung's competing glasses product. No equivalent alignment exists for Meta (zero Advance/Reddit ad relationship).
+
+**Samsung US Display Publisher Breakdown (Adbeat 2023):**
+| Publisher | Spend |
+|-----------|-------|
+| YouTube (Google) | $137.1M |
+| Reddit (Advance) | $5.7M |
+| Yahoo | $1.3M |
+| MSN (Microsoft) | $1.0M |
+| Billboard | $731K |
+| Washington Post | In top 5 (6-month) |
+| **Total US display** | **$152.2M** |
+
+**Samsung Reddit targeting:** Gaming/sports subreddits (r/deadbydaylight $70.5K, r/NYYankees $50.6K) — not tech/privacy. Revenue relationship operates at corporate level, not subreddit level.
+
+**Unique position of Advance:** No other publication parent has all three simultaneously:
+- Owns Meta's ad competitor (Reddit)
+- Receives Samsung advertising revenue (via Reddit)
+- Publishes adversarial Meta glasses coverage (WIRED)
+
+**Novel contribution:** First documentation of Samsung's per-publisher advertising spend creating a measurable, verifiable financial dependency at the publication parent level — connecting Samsung's $9.7B global ad budget to the specific editorial platform (WIRED) most associated with adversarial Meta glasses coverage.
+
+**Confounders:** 5 (2 STRONG: Adbeat data is 2023, no editorial directive; 2 MODERATE: $5.7M is <0.1% of Samsung global, other pubs without Samsung ads show same silence; 1 WEAK: Samsung targets gaming/sports not tech/privacy)
+
+**Cross-references:** #91 (Qualcomm co-marketing), #161 (Advance-Reddit-Meta ad competition), #178 (PetaPixel zero Samsung), #179 (Matt Wille vocabulary bifurcation)
+
+### Files Changed
+- `profiles/competitor-entities.yaml` — Samsung section: mechanism #180 (reddit_advance_advertising_feedback_loop) with per-publisher spend breakdown
+- `profiles/competitor-coverage-research.yaml` — mechanism #180 added to cross_publication_findings, research_period updated to 2026-08-19
+- `tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py` — new (10 classes, 40 tests)
+- `README.md` — test count 17152/470 → 17192/471
+- `docs/ARCHITECTURE.md` — test/file counts synced, new test file entry
+
+### Stats After This Iteration
+- **Mechanisms:** 180
+- **Tests:** ~17,192 across 471 files
+
+---
+
 ## Iteration #179 — Wed 2026-08-19 09:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #179: Matt Wille (Gizmodo) Smart Glasses Beat Reporter — 8+ Solo Meta Adversarial vs Zero Solo Samsung Privacy Investigation

@@ -19968,4 +19968,21 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-17
+  samsung_reddit_advance_advertising_feedback_loop:
+    mechanism_id: 180
+    type: financial_incentive_triple_channel
+    date_documented: '2026-08-19'
+    finding: 'Samsung $5.7M Reddit display ad spend (Adbeat 2023) creates triple-channel Advance
+      alignment: (1) direct ad revenue, (2) Meta ad competitor protection, (3) smart glasses
+      market competition. Unique to Advance: no other publication parent has Samsung ad revenue
+      + Meta ad competitor ownership + editorial platform simultaneously.'
+    asymmetry_score: 0.82
+    entities: [Samsung, Meta]
+    publication_parent: Advance Publications
+    confounders: 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+    cross_references: [91, 161, 178, 179]
+    test_file: tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py
+    source_urls:
+    - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
+    - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+research_period: 2024-08-01 to 2026-08-19
