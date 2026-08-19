@@ -1,3 +1,46 @@
+## Iteration #186 — Wed 2026-08-19 15:00 PT (Type D: Test & Verify)
+
+### Structural Consistency Fix — Doc Sync for 2 Missing Test Files + 10 Stale Per-File Counts
+
+**Type:** Test & Verify — Structural Consistency Cross-Validation
+
+**Core Finding:**
+Full test suite run revealed 5 structural consistency failures:
+1. ARCHITECTURE.md missing 2 test files (test_spacex_s1..aug19, test_type_d_10am..aug19)
+2. README.md missing 1 test file (test_type_d_10am..aug19)
+3. Both docs had stale header count (17427 vs actual 17437)
+4. 10 per-file test counts in README.md table were stale (likely from test refactoring that changed def counts without updating docs)
+
+**Stale Counts Fixed (README.md table):**
+- advance_reddit_meta_ad_competition_structural_incentive_aug18: 55→43
+- petapixel_camera_publication_coverage_selection_samsung_zero_aug19: 45→51
+- two_blokes_kodak_fiend_media_moral_panic_historical_precedent_aug19: 35→45
+- type_d_02am_cross_validation_aug19: 27→26
+- type_d_03am_cross_validation_aug17: 42→23
+- type_d_07am_cross_validation_aug18: 48→16
+- type_d_11pm_cross_validation_aug18: 48→17
+- type_d_2pm_cross_validation_aug18: 71→47
+- type_d_midnight_cross_validation_aug18: 50→24
+- vox_media_podcast_network_cross_medium_privacy_portability_aug17: 44→31
+
+**Additional Validation:**
+- Mechanisms #183 (Hadlee Simons, 0.78) and #184 (SpaceX S-1, 0.72) structural integrity verified
+- Cross-reference integrity checked (#183→#179; #184→#47,#140,#174)
+- Mechanism ID contiguity above 180 confirmed (no gaps)
+- Score distribution diversity verified (not all identical)
+- Section placement guard: no mechanism_ids in publication sections
+
+**Files Changed:**
+- `README.md` — added test_type_d_10am listing, fixed 10 stale counts, updated header to 17459/477
+- `docs/ARCHITECTURE.md` — added test_spacex_s1 and test_type_d_10am listings, added test_type_d_3pm listing, updated header to 17459/477
+- `tests/test_type_d_3pm_cross_validation_aug19.py` — 22 tests across 8 classes
+
+**Stats:** 22 tests in `test_type_d_3pm_cross_validation_aug19.py`
+**Cumulative:** 186 mechanisms documented, ~17,459 tests across 477 files
+**Result:** All 124 structural consistency tests pass. Pushed to GitHub.
+
+---
+
 ## Iteration #185 — Wed 2026-08-19 14:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #184: SpaceX S-1 SEC-Filed Financial Architecture — X Ad Revenue ($1.8B) + Anthropic Colossus Compute ($45B) + Cross-Competitor Meta Adversarial Alignment
