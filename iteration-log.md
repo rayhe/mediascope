@@ -1,3 +1,43 @@
+## Iteration #190 — Wed 2026-08-19 19:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #188: Samsung-Mistral €1B Investment — Cross-Competitor AI Financial Architecture + Warby Parker Q2 2026 Pre-Launch Disclosure
+
+**Type:** Financial Incentive Mapping — Cross-Competitor AI Financial Architecture
+**Entities:** Samsung, Google, Meta, Mistral, Microsoft, Qualcomm
+**Asymmetry Score:** 0.82
+
+**Core Finding:**
+Samsung's reported €1B investment in Mistral AI (Financial Times, Jul 22, 2026) completes a 5-layer cross-competitor financial architecture where every layer of the Samsung Galaxy Glasses ecosystem is financially structured in opposition to Meta:
+
+1. **AI Models:** Samsung invests in Mistral (competes with Meta Llama in open-weight market) + uses Google Gemini (competes with Meta Llama for platform leadership). First direct foundation model investment outside Google for Samsung.
+2. **Platform:** Android XR (Google) vs Meta Horizon OS
+3. **Silicon:** Qualcomm AR1 in both but co-markets only with Samsung (50/50 split)
+4. **Frames:** Warby Parker ($150M Google equity) + Gentle Monster vs EssilorLuxottica ($0 tech publisher ads)
+5. **Enterprise:** Microsoft expanded Mistral partnership same week (multibillion-dollar compute deal)
+
+**Publisher Financial Incentive Asymmetry: 5:0 (effectively infinite)**
+- Samsung-aligned coverage serves 5 simultaneous financial upside channels for publishers
+- Meta Ray-Ban coverage serves 0 upside channels and 1 active downside channel (Meta is publishers' $243.5B ad revenue competitor)
+
+**Warby Parker Q2 2026 (Aug 6, BusinessWire):**
+- Revenue: $235.5M (+9.8% YoY)
+- Full-year guidance: $959-976M EXCLUDES Intelligent Eyewear revenue
+- Cash: $292.7M, Stores: 352, $11.8M tariff refund offsets pre-launch investments
+- Holiday 2026 launch imminent, pre-orders fall 2026
+
+**Samsung-Mistral Deal Details:**
+- Amount: ~€1B at ~€20B valuation (up from €11.7B in Sep 2025)
+- Status: In talks (not finalized)
+- Co-investor: EQT Scaleup Europe Fund (EU Commission-backed)
+- Samsung venture arm previously invested (2024 Series B)
+- Samsung created RX robotics division Jul 21 — investment may primarily serve robotics
+
+**Confounders:** 5 documented (2 STRONG: deal not finalized + Mistral competes broadly; 2 MODERATE: robotics primary driver + publisher awareness; 1 WEAK: Warby ad spend not yet quantified)
+**Cross-references:** Mechanisms #76, #91, #147, #180
+**Test file:** `test_samsung_mistral_cross_competitor_ai_financial_architecture_warby_q2_aug19.py` — 12 classes, 45 tests (all passing)
+
+---
+
 ## Iteration #189 — Wed 2026-08-19 18:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #187: Sumukh Rao (SlashGear / Static Media) Intra-Article Cross-Entity Privacy Vocabulary Bifurcation — Google/Samsung "Hopeful" vs Meta "Massive Breach"

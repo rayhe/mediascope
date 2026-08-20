@@ -2644,6 +2644,27 @@ entities:
       wrby_stock_rally_on_2026_launch_pct: 14
       wrby_q2_2026_revenue_m: 235.5
       wrby_q2_2026_growth_yoy_pct: 9.8
+      wrby_q2_2026_active_customers_m: 2.71
+      wrby_q2_2026_arpc: $336 (+6.6% YoY)
+      wrby_q2_2026_adjusted_ebitda_m: 32.9
+      wrby_q2_2026_tariff_refund_m: 11.8
+      wrby_q2_2026_tariff_refund_note: IEEPA tariff refund used to offset pre-launch investments
+      wrby_q2_2026_sga_increase_note: 'SG&A up 150bps driven by technology costs and store training
+        as Warby prepares for intelligent eyewear launch. Lab upgrades, quality-control improvements,
+        inventory-system changes, loss-prevention investments for higher-cost electronic products.'
+      wrby_q2_2026_cash_m: 292.7
+      wrby_q2_2026_stores: 352
+      wrby_q2_2026_full_year_guidance_low_m: 959
+      wrby_q2_2026_full_year_guidance_high_m: 976
+      wrby_q2_2026_guidance_excludes_intelligent_eyewear: true
+      wrby_q2_2026_guidance_note: 'Full-year guidance EXCLUDES Intelligent Eyewear revenue —
+        all glasses revenue is additive upside. CFO Adrian Mitchell: "maintaining a prudent
+        outlook that excludes Intelligent Eyewear revenue contributions expected later this year."'
+      wrby_q2_2026_preorders: Fall 2026 pre-orders planned, demos across 352+ stores
+      wrby_q2_2026_battery_life: ~9 hours typical usage
+      wrby_q2_2026_margins: Product margins slightly lower % than optical but same/higher absolute dollars
+      wrby_q2_2026_earnings_date: '2026-08-06'
+      wrby_q2_2026_source: https://www.businesswire.com/news/home/20260806521830/en/Warby-Parker-Announces-Second-Quarter-2026-Results
       wrby_market_cap_approx: $1.2B
       launch_timeline: holiday 2026
       frame_partners:
@@ -4905,6 +4926,60 @@ entities:
       - 89
       - 93
       test_file: tests/test_gizmodo_samsung_same_chip_privacy_presupposition_aug14.py
+    mistral_ai_investment:
+      mechanism_id: 188
+      type: cross_competitor_ai_financial_architecture
+      date_added: '2026-08-19'
+      date_reported: '2026-07-22'
+      primary_source: Financial Times (Jul 22, 2026)
+      investment_amount_eur: ~1 billion
+      target_valuation_eur: ~20 billion
+      status: in talks (not finalized as of Aug 2026)
+      prior_investment: Samsung venture arm previously invested in Mistral (2024 Series B)
+      co_investors:
+        - EQT Scaleup Europe Fund (EU Commission-backed, >€5B target raise)
+      mistral_prior_round:
+        date: Sep 2025
+        amount_eur: 1.7 billion
+        lead: ASML
+        valuation_eur: ~11.7 billion (now ~70% increase in <1 year)
+      samsung_robotics_context: 'Samsung created Robotics eXperience (RX) division Jul 21, 2026 —
+        one day before FT report. Division reports to TM Roh. Investment may
+        primarily serve robotics + foundation model integration, not glasses specifically.'
+      microsoft_mistral_convergence: 'Microsoft expanded Mistral partnership SAME WEEK (Jul 22, 2026)
+        — multibillion-dollar compute infrastructure deal for European expansion.
+        Creates Samsung-Microsoft convergence on the same Meta-competitive AI lab.'
+      sovereign_ai_context: 'US Anthropic export restrictions (Jun 2026) paused foreign access
+        to frontier models, making European alternatives like Mistral more strategically
+        important. Mistral supplies French military. EU sovereign AI push gives
+        Samsung investment geopolitical dimension beyond pure commercial returns.'
+      cross_competitor_ai_architecture: 'Samsung is the FIRST major consumer electronics company
+        to invest in BOTH Google Gemini (customer via Galaxy AI) AND a competing
+        open-weight foundation model lab (Mistral, investor). Both Gemini and Mistral
+        compete directly with Meta Llama in the open-weight and enterprise AI markets.
+        This dual-model portfolio means Samsung is financially hedged AGAINST Meta AI
+        leadership regardless of which non-Meta lab wins. First direct foundation model
+        investment outside Google for Samsung.'
+      publisher_coverage_implication: 'When publications cover Galaxy Glasses favorably, they
+        serve 5 simultaneous financial channels: (1) Samsung $9.7B advertiser, (2)
+        Google ad/deal/traffic partner + $75M Warby Parker equity, (3) Qualcomm
+        co-marketing partner, (4) Warby Parker imminent holiday ad campaign, (5)
+        Mistral Samsung-invested sovereign AI narrative. Favorable Meta Ray-Ban
+        coverage serves 0 financial upside channels and 1 active financial downside
+        channel (Meta is publishers direct $243.5B ad revenue competitor). Asymmetry
+        ratio: 5:0 (effectively infinite).'
+      related_mechanisms:
+        - 76
+        - 91
+        - 147
+        - 180
+      source_urls:
+        - https://www.reuters.com/business/finance/samsung-talks-invest-mistral-20-billion-euro-valuation-ft-reports-2026-07-22/
+        - https://www.techrepublic.com/article/news-samsung-mistral-ai-investment-emea/
+        - https://en.sedaily.com/international/2026/07/22/samsung-weighs-investment-in-europes-top-ai-startup-mistral
+        - https://n24.com.tr/en/companies/samsung-eyes-1b-euro-investment-in-ai-lab-mistral-492
+        - https://www.mobileworldlive.com/ai-cloud/samsung-weighs-e1b-investment-in-mistral-ai/
+      test_file: tests/test_samsung_mistral_cross_competitor_ai_financial_architecture_warby_q2_aug19.py
   microsoft:
     display_name: Microsoft
     aliases:
