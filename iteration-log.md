@@ -1,3 +1,34 @@
+## Iteration #193 — Wed 2026-08-19 23:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #190: The Verge (PMC/PMX) Apple Triple Camera Wearable Ecosystem — Privacy Vocabulary Zero vs Meta Vocabulary Saturation
+
+**Type:** Competitor Coverage Deep Dive — Publication × Entity pair: The Verge × Apple
+**Asymmetry Score:** 0.80
+**Entities:** Apple, Meta
+
+**Core Finding:**
+The Verge covered Apple's announcement of THREE camera-equipped wearables on Feb 17, 2026 (N50 glasses with dual cameras, AI pendant with always-on camera, camera AirPods with infrared sensor — total 4+ cameras) with zero privacy alarm vocabulary. Apple's AI pendant is described as "eyes and ears of the iPhone" — functionally identical to Meta's super-sensing features. Yet Meta Ray-Ban glasses (1 camera, LED privacy enforcement, proactive tamper detection) receive dedicated privacy/surveillance/creepy framing from the same publication and journalist (Victoria Song).
+
+Vocabulary inversion: Apple always-on cameras get aspirational framing ("eyes and ears," "AI companion," "visual context," "environmental awareness"). Meta cameras get alarm framing ("surveillance," "covert recording," "creepy," "nightmarish," "misuse," "tamper"). Same hardware capability, systematically different vocabulary.
+
+**PMC Financial Incentive Alignment:**
+- PMC (The Verge's parent since Jun 18, 2026 via PMX) inherited OpenAI content licensing deal from Vox Media (May 2024)
+- $0 Meta financial relationship
+- Apple News referral dependency creates implicit softer-coverage incentive
+- PMC suing Google (2 lawsuits), not suing Apple
+- Coverage direction matches financial prediction exactly
+
+**Victoria Song Editorial Mode Activation:**
+Song has written dedicated privacy pieces on Meta glasses (doxing investigation Oct 2024, LED tamper coverage Jul 2026, Live AI critique) but zero privacy follow-ups for Apple's three-camera wearable ecosystem. The investigative editorial mode activates selectively by entity.
+
+**Confounders:** 4 (2 STRONG: pre-launch timing + Apple privacy brand reputation; 1 MODERATE: Bloomberg corroboration original tone; 1 WEAK: editorial mode distinction)
+**Cross-references:** Mechanisms #75 (extends Song bifurcation), #101 (complements N50 cascade), #186 (parallels Engadget triple-device), #33 (context: planned surveillance zero-scrutiny pattern)
+**Source URLs:** The Verge, Bloomberg, Gizmodo, Road to VR, TechCrunch
+**Test file:** `test_verge_apple_triple_camera_wearable_privacy_vocabulary_zero_aug19.py` — 7 classes, 29 tests (all passing)
+**Doc counts:** 17,827 tests across 485 files
+
+---
+
 ## Iteration #192 — Wed 2026-08-19 22:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Mechanism #189 Extension: Zuckerberg AI Manifesto Podcast Response Cluster — Multi-Platform Vocabulary Asymmetry Natural Experiment (Aug 10-14, 2026)
