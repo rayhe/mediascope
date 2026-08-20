@@ -1,3 +1,40 @@
+## Iteration #196 — Thu 2026-08-20 01:00 PT (Type D: Test & Verify — Cross-Validation + Dependency Fix)
+
+### Cross-Validation Run
+
+**Scope:** Mechanisms #190-#192 (the three most recent) cross-validated against primary sources.
+
+**1. Mechanism #192 (Wareable Buying Guide) — CONFIRMED**
+- Primary source: [Wareable smart glasses buying guide](https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest), last updated ~6 days ago
+- Meta receives extensive privacy alarm vocabulary: "enable stalking and harassment," "covertly film in public," "courtroom banned," "70 civil rights organizations," plus Even Realities G2 elevated to #1 specifically to "sidestep the entire issue"
+- Samsung Galaxy Glasses (same camera capabilities, same Qualcomm chip): described as "formally reveal its first pair of smart glasses" — ZERO privacy vocabulary in same article
+- Wareable affiliate-link financial alignment confirmed: Samsung = high hardware purchase revenue potential, Google = primary traffic source, Meta = $0
+
+**2. Mechanism #191 (Kif Leswing/CNBC CEO-Attribution) — CONFIRMED**
+- eWeek explicitly states: "CNBC broke the specifications on March 6" — confirming preferential Samsung source access
+- Multiple secondary sources (Wareable, archyde.com, abit.ee, BigGo News) all cite the CNBC Jay Kim EVP interview as the exclusive
+- Kif Leswing's CEO-attribution framing ("Zuckerberg keeps pushing") is a distinct, documented soft-delegitimization mechanism
+
+**3. Mechanism #190 (Verge Apple Triple Camera) — cross-references intact**
+- Victoria Song's selective editorial mode activation confirmed in cross-reference chain
+
+### Dependency Fix: 39 Collection Errors Resolved
+
+- `textblob` and `vaderSentiment` were listed in `requirements.txt` but not installed in the runtime environment
+- This caused 39 test files to fail at collection (all importing `mediascope.analyze.sentiment`)
+- Fix: `pip install textblob vaderSentiment --break-system-packages`
+- Post-fix: all 39 previously-erroring files now collect and pass (131 passed, 14 xfailed in sample)
+
+### Test Results
+
+- **New test file:** `test_type_d_01am_cross_validation_aug20.py` — 7 classes, 28 tests (all passing)
+- **Formerly-erroring files:** 39 files, 145 tests sampled — 131 passed, 14 xfailed, 0 failures
+- **Latest aug20 mechanism tests:** 119 passed (wareable + kif_leswing files)
+- **Core module tests:** 179 passed (asymmetry, financial_relationships, competitor_coverage, entities, disclosure_audit)
+- **Doc counts:** 17,974 tests across 489 files
+
+---
+
 ## Iteration #195 — Thu 2026-08-20 01:00 PT (Type C: Financial Incentive Mapping / Cross-Entity Buying Guide Analysis)
 
 ### Mechanism #192: Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm
