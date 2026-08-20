@@ -5137,3 +5137,56 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry + counts)
 
 **Cumulative:** 189 mechanisms, ~17,739 tests, 483 files
+
+---
+
+## Iteration #202 — Type A: Competitor Coverage Deep Dive (Aug 20, 2026, 07:00 AM PT)
+
+**Focus: Digital Trends — Apple N50 Privacy-Hero Aspirational Framing vs Meta Ray-Ban Creepy Reputation Stigmatization**
+
+**Mechanism #196:** Digital Trends Apple N50 Privacy-Hero vs Meta Ray-Ban Creepy-Reputation Publication-Level Framing Asymmetry
+
+**Type:** publication_level_privacy_vocabulary_bifurcation
+**Publication:** Digital Trends (Designtechnica Corporation)
+**Entities:** Apple (N50, unshipped) vs Meta (Ray-Ban, shipping)
+**Asymmetry Score:** EXTREME — Apple 0 alarm terms / Meta 14+ alarm terms, tone gap >1.3
+
+**Core Finding:** Digital Trends applies aspirational "privacy hero" framing to Apple's unshipped N50 smart glasses while maintaining persistent "creepy reputation" stigma for Meta's shipping Ray-Ban glasses — despite both products featuring cameras and AI assistants with equivalent core functionality.
+
+**Apple N50 coverage (5 articles analyzed):**
+- "Apple smart glasses might **avoid the creepy reputation** of Meta Ray-Bans with a light trick" — Apple positioned as solving Meta's problem
+- "Apple's smart glasses are running late because they **don't want to stir a privacy storm**" — delay framed as responsible caution; subhead "Meta has already shown Apple what can go wrong"
+- "Apple's smart glasses aim to put Apple Intelligence on your face" — aspirational, zero alarm terms
+- Apple's delay (2027) framed positively as privacy prioritization
+- Rachit (writer): "A normal pair of glasses with photo-capturing abilities and a built-in smart assistant that is **also secure**? **Sign me up**" — Apple assumed secure without evidence
+
+**Meta Ray-Ban coverage (4+ articles analyzed):**
+- "Meta is building face recognition into your glasses, and civil rights groups are **not happy** about it" — "slap in the face of its customers' privacy"
+- "Meta's AI smart glasses have a **creepy reputation**, but they are finding a good purpose too" — grudging concession format
+- "Smart glasses were **already creepy**, now they're helping people cheat" — by managing editor Nadeem Sarwar
+- DuckDuckGo glasses article uses "**pervert glasses**", "**tiny surveillance cameras**", "**privacy nightmare**" all targeting Meta
+
+**Key Structural Asymmetries:**
+1. Apple N50 has cameras (potentially multiple + Visual Intelligence continuous scan) → 0 alarm terms
+2. Meta NameTag is rumored/dormant → treated as imminent existential threat
+3. Meta's actual privacy improvements (Jul 7 2026 LED tamper detection, account removals) → "reactive damage control"
+4. Apple's identical privacy feature → "responsible engineering"
+5. Managing editor authors stigmatized Meta coverage = editorial direction, not individual bias
+6. Andy Boxall writes both Apple (neutral/sympathetic) and Meta (adversarial) at same publication
+
+**Financial Context:**
+- Digital Trends publishes on Apple News (revenue share)
+- No Meta financial relationship
+- Meta is direct advertising competitor to Apple ecosystem
+- Samsung ($9.7B global advertiser) is major DT advertising client
+
+**Confounders:** 4 documented (1 STRONG: Meta has genuine privacy incidents; 2 MODERATE: Apple privacy reputation, N50 indicator light design; 1 WEAK: no shipping product = no misuse cases)
+
+**Cross-references:** #55 (Apple N50 Privacy Hero Cascade), #132 (Andy Boxall Android Police), #149 (Digital Trends editorial-level asymmetry)
+
+**Files changed:**
+- Added: `tests/test_digital_trends_apple_n50_privacy_hero_meta_creepy_reputation_framing_asymmetry_aug20.py` (11 classes, 40 tests)
+- Updated: README.md (494 files, ~17,004 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 196 mechanisms, ~17,004 tests, 494 files
