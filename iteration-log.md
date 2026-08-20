@@ -21,7 +21,7 @@ In a single article ("Google Just May One Up Meta With These 5 Smart Glasses Fea
 
 **Financial context:** Static Media depends on Google Search as primary audience acquisition channel. Google is direct platform partner for Samsung Galaxy Glasses via Android XR. Meta has $0 financial relationship with Static Media.
 
-**Test file:** `test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py` — 10 classes, 53 tests
+**Test file:** `test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py` — 12 classes, 62 tests
 **Sources:**
 - https://www.slashgear.com/2196157/google-smart-glasses-features-one-up-meta-ray-ban/
 - https://www.slashgear.com/1972038/ray-ban-meta-ai-glasses-display-look-great-smart-reason-not-buy/

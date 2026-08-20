@@ -17205,7 +17205,7 @@ cross_publication_findings:
     - google
     - samsung
     test_file: test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py
-    test_count: 53
+    test_count: 62
     finding_summary: 'In a single article ("Google Just May One Up Meta With These 5 Smart
       Glasses Features," Jun 2026), SlashGear freelancer Sumukh Rao applies sharply bifurcated
       privacy vocabulary. Meta receives alarm-register language: "massive breach of privacy,"
