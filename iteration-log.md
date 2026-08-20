@@ -1,3 +1,34 @@
+## Iteration #191 — Wed 2026-08-19 20:00 PT (Type D: Test & Verify)
+
+### Cross-Validation: Mechanisms #185-188 Structural Integrity + Dependency Fix + Doc Sync
+
+**Type:** Test & Verify — Cross-Validation
+**Test file:** `test_type_d_8pm_cross_validation_aug19.py` — 12 classes, 39 tests (all passing)
+
+**Work completed:**
+
+1. **Dependency fix:** Resolved 39 collection errors caused by missing `textblob` and `vaderSentiment` packages. All previously-erroring test files now collect and pass (179 passed, 11 xfailed in formerly-broken files).
+
+2. **New cross-validation test (39 tests):**
+   - Mechanisms #185-188 structural integrity: existence, asymmetry scores, cross-references
+   - #186 Engadget triple-device confirmed highest score (0.85) in today's batch
+   - #188 Samsung-Mistral confounders documented (>=3)
+   - All cross-references in #185-188 resolve to existing mechanisms
+   - Mechanism ID contiguity 180-188 (no gaps)
+   - Score distribution: spread 0.17 (0.68-0.85), mean ~0.785 — healthy variance
+   - Dependency imports verified (textblob, vaderSentiment, mediascope.analyze.sentiment, mediascope.analysis)
+   - All 19 aug19 test files confirmed registered in both README.md and ARCHITECTURE.md
+
+3. **Doc sync fixes:**
+   - README.md test count: 17,606 → 17,690 (+84 delta, was 45 behind before new test)
+   - README.md file count: 480 → 482
+   - ARCHITECTURE.md test count: 17,651 → 17,690
+   - ARCHITECTURE.md file count: 481 → 482
+
+**Suite stats:** 17,690 tests across 482 test files. 0 collection errors (was 39).
+
+---
+
 ## Iteration #190 — Wed 2026-08-19 19:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #188: Samsung-Mistral €1B Investment — Cross-Competitor AI Financial Architecture + Warby Parker Q2 2026 Pre-Launch Disclosure

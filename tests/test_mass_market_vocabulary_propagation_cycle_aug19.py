@@ -365,9 +365,9 @@ class TestUpdatedSummaryTable(unittest.TestCase):
     def setUp(self):
         self.content = load_podcast_sentiment()
 
-    def test_entry_count_updated_to_35(self):
-        """Summary should reference 35 entries."""
-        self.assertIn("35 entries", self.content)
+    def test_entry_count_updated_to_37(self):
+        """Summary should reference 37 entries (updated from 35)."""
+        self.assertIn("37 entries", self.content)
 
     def test_mass_market_pattern_in_summary(self):
         """Summary table should include mass-market syndication pattern."""
