@@ -17124,7 +17124,8 @@ cross_publication_findings:
     - https://thedispatch.com/newsletter/dispatch-markets/wearables-glasses-privacy-fashion-surveillance/
     - https://thedispatch.com/podcast/dispatch-podcast/the-hidden-privacy-cost-of-wearable-tech/
     - https://www.tapesearch.com/podcast/the-dispatch-podcast/1493229344
-  - mechanism_id: 186
+  engadget_triple_device_vocabulary_bifurcation:
+    mechanism_id: 186
     type: competitor_coverage_triple_device_vocabulary_bifurcation
     date_added: '2026-08-19'
     asymmetry_score: 0.85
@@ -17192,6 +17193,160 @@ cross_publication_findings:
     - https://www.engadget.com/social-media/meta-hit-with-a-class-action-lawsuit-over-smart-glasses-privacy-claims-182846817.html
     - https://www.engadget.com/ai/metas-ai-display-glasses-reportedly-share-intimate-videos-with-human-moderators-135939855.html
     - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
+
+  sumukh_rao_slashgear_vocabulary_bifurcation:
+    mechanism_id: 187
+    mechanism_name: 'Sumukh Rao (SlashGear / Static Media) Intra-Article Cross-Entity Privacy Vocabulary Bifurcation'
+    mechanism_type: journalist_cross_entity_intra_article_vocabulary_bifurcation
+    discovery_date: '2026-08-19'
+    asymmetry_score: 0.79
+    entities:
+    - meta
+    - google
+    - samsung
+    test_file: test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py
+    test_count: 53
+    finding_summary: 'In a single article ("Google Just May One Up Meta With These 5 Smart
+      Glasses Features," Jun 2026), SlashGear freelancer Sumukh Rao applies sharply bifurcated
+      privacy vocabulary. Meta receives alarm-register language: "massive breach of privacy,"
+      "huge red flag," "bad reputation when it comes to privacy," "good reason to not wear."
+      Google/Samsung receive aspirational-register language: "better reputation," "hopeful,"
+      "promising safety feature," "more secure privacy." Samsung identical 12MP camera on same
+      Qualcomm AR1 chip normalized as "expected to follow a similar approach" with ZERO alarm
+      terms. Pattern amplified at publication level: Nadeem Sarwar Meta article uses "demon of
+      privacy scares," "the future seems bleak"; Zohaib Ahmed Samsung article treats identical
+      camera capability as "bone of contention" immediately neutralized by LED compliance.'
+    journalist:
+      name: Sumukh Rao
+      publication: SlashGear (Static Media)
+      location: 'Bengaluru, India'
+      other_publications:
+      - BGR (Penske Media)
+      - XDA (Valnet)
+      - Guiding Tech Media (former Lead Editor)
+      bio_notes: 'B.Tech degree, freelance tech journalist since 2018. Former XDA senior writer,
+        Guiding Tech Lead Editor. Currently Editor at BGR. One of ten Indian journalists invited
+        to Qualcomm Snapdragon Summit in Hawaii (2023). Articles featured on Techmeme homepage.
+        Has used every version of Android since inception.'
+    meta_vocabulary:
+      source_article_url: https://www.slashgear.com/2196157/google-smart-glasses-features-one-up-meta-ray-ban/
+      source_article_title: 'Google Just May One Up Meta With These 5 Smart Glasses Features'
+      source_article_date: '2026-06-21'
+      source_article_author: Sumukh Rao
+      alarm_terms:
+      - massive breach of privacy
+      - huge red flag
+      - bad reputation when it comes to privacy
+      - good reason to not wear the Meta Ray-Ban glasses
+      - not that surprising either
+      total_alarm_terms: 5
+    google_samsung_vocabulary:
+      source_article_url: https://www.slashgear.com/2196157/google-smart-glasses-features-one-up-meta-ray-ban/
+      aspirational_terms:
+      - better reputation than Meta
+      - hopeful that Google handles user privacy in a better manner
+      - promising safety feature that would support more secure privacy
+      - fraud detection for AI
+      samsung_camera_normalization: 'Samsung camera described as "expected to follow a similar
+        approach" — identical capability normalized, zero alarm vocabulary applied'
+      alarm_terms_about_google: 0
+      alarm_terms_about_samsung: 0
+    capability_parity:
+      camera_resolution: '12MP for both Meta Ray-Ban Gen 2 and Samsung Galaxy Glasses'
+      processor: 'Both run Qualcomm Snapdragon AR1 Gen 1 chip'
+      led_indicator: 'Both Meta and Samsung have LED recording indicators; Samsung "expected to follow a similar approach"'
+      note: 'Identical camera capabilities (12MP, same chip) receive diametrically opposed
+        privacy vocabulary registers within the same article by the same journalist'
+    publication_level_pattern:
+      nadeem_sarwar:
+        title: "Meta's New AI Glasses Look Great, But There's A Smart Reason Not To Buy Them"
+        url: https://www.slashgear.com/1972038/ray-ban-meta-ai-glasses-display-look-great-smart-reason-not-buy/
+        date: '2025-10-01'
+        alarm_vocabulary:
+        - demon of privacy scares
+        - concerning privacy violations
+        - the future seems bleak
+        - a whole new world of risks and privacy compromises
+        - risky for more reasons than one
+        - a grim thought
+        - '$8 billion fine'
+      zohaib_ahmed:
+        title: "Samsung Says Its Smart Glasses Will One-Up Meta's On Battery Life"
+        url: https://www.slashgear.com/2229699/samsung-smart-glasses-vs-meta-ray-ban-battery-life/
+        date: '2026-08-08'
+        privacy_alarm_terms: 0
+        camera_framing: 'Camera described as "bone of contention" immediately neutralized by
+          noting LED compliance with proposed Pennsylvania law; zero alarm vocabulary about Samsung privacy'
+    financial_context:
+      slashgear_owner: 'Static Media (Fishers, IN)'
+      google_search_dependency: 'SlashGear depends on Google Search as primary audience acquisition
+        channel. Google Search traffic is the existential revenue driver for ad-supported tech
+        publications like SlashGear.'
+      google_android_xr_partnership: 'Google is the direct platform partner for Samsung Galaxy
+        Glasses via Android XR operating system'
+      meta_financial_relationship: '$0 — Meta has no licensing, advertising, or partnership
+        relationship with Static Media or SlashGear'
+      author_market_context: 'Sumukh Rao is based in Bengaluru, India, where Android (Google/Samsung)
+        holds ~97% mobile OS market share, creating an audience-awareness effect toward
+        Android-ecosystem products'
+    confounders:
+    - strength: STRONG
+      description: 'Meta has documented glasses-specific privacy incidents (Svenska Dagbladet/Sama
+        contractor review of intimate footage, class action lawsuit, I-XRAY doxing). Samsung/Google
+        glasses have no equivalent incidents yet because they have not shipped.'
+      rebuttal: 'The article acknowledges Google is "certainly no saint when it comes to data
+        harvesting" but still frames Google privacy as "better" — the vocabulary register shift
+        is editorial choice, not factual reporting. A neutral frame would acknowledge both
+        companies data track records rather than declaring one "hopeful."'
+    - strength: STRONG
+      description: 'Samsung/Google glasses are pre-launch products. Coverage of unreleased products
+        tends aspirational by default. No real-world incidents exist to report on.'
+      rebuttal: 'Meta facial recognition (also unreleased/dormant in 2024-25) generated extensive
+        alarm vocabulary at SlashGear and elsewhere. Alarm vocabulary is applied to Meta
+        capabilities that are FUTURE/HYPOTHETICAL while Samsung/Google future capabilities receive
+        aspirational vocabulary. The pre-launch defense is selectively applied.'
+    - strength: MODERATE
+      description: 'Google actual data collection track record is arguably worse than Meta
+        (Location History tracking, Chrome data, YouTube viewing history, Gmail content analysis)
+        but these are compartmentalized away from the glasses narrative.'
+      rebuttal: 'The author explicitly acknowledges Google "has the benefit of being in active
+        development for decades" of data collection infrastructure (Maps, Messages, Gmail) yet
+        frames this as a POSITIVE ("a lot more context") rather than a privacy risk — the same
+        data depth that would be "concerning" if Meta had it.'
+    - strength: MODERATE
+      description: 'Single article is a limited sample size. The strongest journalist-level evidence
+        is from one piece, not a pattern across multiple articles.'
+      rebuttal: 'The intra-article bifurcation is actually stronger evidence than cross-article
+        comparison because it eliminates temporal, editorial cycle, and news-peg confounders —
+        the same author chose different vocabulary registers for the same capability in the same
+        editorial context. Publication-level pattern from Nadeem Sarwar and Zohaib Ahmed articles
+        reinforces the direction.'
+    - strength: WEAK
+      description: 'Author is based in India where Android/Samsung market dominance (~97%) may
+        create unconscious audience-alignment effect favoring Android-ecosystem products.'
+      rebuttal: 'Market share awareness is a plausible cultural factor but does not explain why
+        privacy vocabulary specifically is bifurcated — a pro-Android bias would more likely
+        manifest as feature emphasis or ecosystem praise, not selective privacy alarm application.'
+    cross_references:
+    - mechanism_id: 186
+      relationship: 'Both document cross-entity privacy vocabulary bifurcation at the same
+        publication level. Mechanism #186 shows Engadget applying alarm vocabulary to Meta but
+        not Snap/OpenAI cameras; this mechanism shows SlashGear applying alarm vocabulary to Meta
+        but not Google/Samsung cameras — same pattern at a different publication.'
+    - mechanism_id: 183
+      relationship: 'Both are Type B journalist cross-entity patterns. Mechanism #183 documents
+        Hadlee Simons at Android Authority covering Samsung as solving privacy problems while
+        publishing zero Meta privacy investigations; this mechanism shows a single-article
+        vocabulary bifurcation at SlashGear.'
+    - mechanism_id: 76
+      relationship: 'Samsung-Google compound advertiser leverage. Google platform partnership
+        with Samsung for Android XR creates aligned incentive structure that matches the aligned
+        aspirational vocabulary in SlashGear coverage.'
+    source_urls:
+    - https://www.slashgear.com/2196157/google-smart-glasses-features-one-up-meta-ray-ban/
+    - https://www.slashgear.com/1972038/ray-ban-meta-ai-glasses-display-look-great-smart-reason-not-buy/
+    - https://www.slashgear.com/2229699/samsung-smart-glasses-vs-meta-ray-ban-battery-life/
+    - https://Www.Slashgear.com/author/sumukhrao/
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

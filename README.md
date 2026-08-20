@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,544 | Across 479 test files |
+| Tests | ~17,597 | Across 480 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17544 tests** across 479 test files, each covering a different analytical capability:
+MediaScope has **17597 tests** across 480 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -994,3 +994,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_spacex_s1_cross_competitor_financial_architecture_aug19.py` | 72 | Mechanism #184: SpaceX S-1 SEC-Filed Cross-Competitor Financial Architecture. SpaceX S-1 IPO filing (Jun 2026) provides first SEC-verified primary-source evidence of cross-competitor financial flows: Anthropic pays xAI/SpaceX $1.25B/month ($15B/yr, $45B total through May 2029) for Colossus compute. X ad revenue $1.8B (2025), down 59% from $4.4B pre-Musk. Meta ad revenue is 135x larger at $243.46B. xAI has ZERO publisher deals but uses X user content (including publisher articles) as training data through perpetual ToS license (Jan 15, 2026). Financial chain: Anthropic success → xAI/SpaceX revenue → X platform viability → X competes with Meta for ad dollars. Musk contradiction: S-1 says "monthly fee through May 2029" but Musk on X called it "a 180 day lease." First mechanism documented entirely from SEC filings. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), cross-refs #47, #140, #174. 10 classes, 72 tests |
 | `test_type_d_10am_cross_validation_aug19.py` | 16 | Type D cross-validation (Aug 19, 10:00 AM PT): Mechanism #180 placement verification (cross_publication_findings not publications), mechanism #178 asymmetry_score field check, Guardian-Samsung financial_tie type validation ('indirect' not 'indirect_via_google'), Nvidia entity presence in competitor-entities.yaml, YAML structural integrity after section relocation, section placement guard, score distribution for recent mechanisms 170+. 7 classes, 16 tests |
 | `test_type_d_3pm_cross_validation_aug19.py` | 22 | Type D cross-validation (Aug 19, 3:00 PM PT): Doc sync fix — README/ARCHITECTURE.md missing 2 new test files (SpaceX S-1, type_d_10am) + 10 stale per-file test counts corrected. Mechanisms #183 (Hadlee Simons, score 0.78) and #184 (SpaceX S-1, score 0.72) structural integrity — asymmetry scores, cross-references (#47, #140, #174 for #184; #179 for #183), section placement. Mechanism ID contiguity above 180. Score distribution diversity check. Section placement guard (no mechanism_ids in publications). 8 classes, 22 tests |
+| `test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py` | 53 | Mechanism #187: Sumukh Rao (SlashGear / Static Media) Intra-Article Cross-Entity Privacy Vocabulary Bifurcation. Single article ("Google Just May One Up Meta") applies bifurcated privacy vocabulary: Meta = "massive breach of privacy," "huge red flag," "bad reputation" vs Google/Samsung = "better reputation," "hopeful," "promising safety feature." Samsung identical 12MP camera on same Qualcomm AR1 chip normalized as "expected to follow a similar approach" with ZERO alarm terms. Publication-level pattern: Nadeem Sarwar Meta article uses "demon of privacy scares," "the future seems bleak"; Zohaib Ahmed Samsung article treats identical camera as "bone of contention" immediately neutralized. Static Media depends on Google Search traffic; Google is Samsung's Android XR platform partner; Meta has $0 relationship. Author based in Bengaluru (Android ~97% market share). 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), cross-refs #186, #183, #76. 10 classes, 53 tests |

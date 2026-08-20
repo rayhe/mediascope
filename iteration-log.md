@@ -1,3 +1,34 @@
+## Iteration #189 — Wed 2026-08-19 18:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #187: Sumukh Rao (SlashGear / Static Media) Intra-Article Cross-Entity Privacy Vocabulary Bifurcation — Google/Samsung "Hopeful" vs Meta "Massive Breach"
+
+**Type:** Journalist Cross-Entity Tracking — Intra-Article Vocabulary Bifurcation
+**Publication:** SlashGear (Static Media, Fishers, IN)
+**Journalist:** Sumukh Rao (also BGR / Penske Media; based in Bengaluru, India)
+**Competitor pairs analyzed:** Google/Samsung vs Meta
+**Asymmetry Score:** 0.79
+
+**Core Finding:**
+In a single article ("Google Just May One Up Meta With These 5 Smart Glasses Features," Jun 2026), Sumukh Rao applies sharply bifurcated privacy vocabulary within the SAME piece:
+
+- **Meta vocabulary (alarm register):** "massive breach of privacy," "huge red flag," "bad reputation when it comes to privacy," "good reason to not wear the Meta Ray-Ban glasses"
+- **Google/Samsung vocabulary (aspirational register):** "better reputation," "hopeful," "promising safety feature," "more secure privacy"
+- **Samsung camera normalization:** Samsung's identical 12MP camera on same Qualcomm AR1 chip described as "expected to follow a similar approach" — ZERO alarm terms
+
+**Publication-level amplification:**
+- Nadeem Sarwar (Oct 2025, Meta): "demon of privacy scares," "$8 billion fine," "the future seems bleak," "a whole new world of risks"
+- Zohaib Ahmed (Aug 2026, Samsung): Camera as "bone of contention" immediately neutralized by LED compliance framing; ZERO alarm terms
+
+**Financial context:** Static Media depends on Google Search as primary audience acquisition channel. Google is direct platform partner for Samsung Galaxy Glasses via Android XR. Meta has $0 financial relationship with Static Media.
+
+**Test file:** `test_sumukh_rao_slashgear_cross_entity_privacy_vocabulary_bifurcation_aug19.py` — 10 classes, 53 tests
+**Sources:**
+- https://www.slashgear.com/2196157/google-smart-glasses-features-one-up-meta-ray-ban/
+- https://www.slashgear.com/1972038/ray-ban-meta-ai-glasses-display-look-great-smart-reason-not-buy/
+- https://www.slashgear.com/2229699/samsung-smart-glasses-vs-meta-ray-ban-battery-life/
+
+---
+
 ## Iteration #188 — Wed 2026-08-19 17:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #186: Engadget (Yahoo/Apollo) Triple Camera Device Privacy Vocabulary Bifurcation — Snap Spectacles (0 alarm) + OpenAI Companion (0 alarm) vs Meta Ray-Ban (15+ alarm terms)
