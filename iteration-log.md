@@ -1,3 +1,50 @@
+---
+
+## Iteration #203 — Thu 2026-08-20 09:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Reuters × Snap Specs vs Meta Ray-Ban Camera Privacy Vocabulary Bifurcation
+
+**Type:** Competitor Coverage Deep Dive — Reuters Wire Service × Snap vs Meta
+**Mechanism #197:** Reuters Cross-Entity Camera-Equipped Smart Glasses Privacy Vocabulary Bifurcation
+**Asymmetry Score:** 0.82
+**Entities:** Snap, Meta
+
+**Core Discovery — Wire-Service Level Privacy Vocabulary Bifurcation**
+
+Reuters published three articles covering camera-equipped smart glasses. The asymmetry is stark:
+
+1. **Snap Specs (Jun 16, 2026):** 700-word aspirational launch article. Camera capability mentioned as "capturing video" in passing (paragraph 9). ZERO privacy vocabulary. ZERO mentions of surveillance, consent, bystanders, or recording concerns. No privacy advocate quoted. No regulatory body cited. OpenAI AI integration noted without any privacy context. CEO Spiegel given multiple direct quotes. Positive analyst quote ("big deal"). Stock up 3%.
+
+2. **Meta Ray-Ban (Dec 9, 2025):** Privacy-centered deep feature. "Privacy concerns" in headline. 15+ alarm vocabulary terms. NOYB lawyer directly quoted. EU regulatory scrutiny section (Ireland DPC, GDPR, AI Act, European Commission). "Bystanders have little control over being recorded." "Sparking concerns." Data handling explicitly questioned.
+
+3. **UK Cinema Ban (Aug 20, 2026, today):** Category-level restriction on "camera-enabled smart glasses" but Reuters headlines it as "Meta AI and other smart glasses." Only Meta named (3+ times). Snap (4 cameras, shipping UK fall 2026), Samsung, Google, Apple — all developing camera glasses — ZERO mentions. German criminal complaint cited targeting Meta specifically.
+
+**Hardware Parity:**
+- Snap Specs: 4 cameras (2 full-color + 2 IR), OpenAI-powered AI assistant, mic array
+- Meta Ray-Ban: 1 camera, AI assistant, mic array
+- Snap has 4× the camera hardware, receives 0× the privacy scrutiny
+
+**Novel Finding — Brand Substitution in Category-Level Restrictions:**
+Reuters converts category-level hardware restrictions into brand-specific narratives by naming the dominant/controversial entity in the headline. This pattern repeats from the 2014 Google Glass era — same UK cinema industry, same brand-attribution editorial mechanism. The headline is the primary information consumption layer; most readers see only the brand-specific framing, not the category-level scope.
+
+**Wire-Service Structural Significance:**
+Unlike single-publication findings (WIRED, Digital Trends), Reuters wire feeds are SYNDICATED globally. An asymmetric frame at the wire level propagates to hundreds of outlets that republish Reuters content, amplifying the stigma concentration effect far beyond any individual publication.
+
+**Confounders:** 5 documented (2 STRONG: genuine Meta incidents + 80% market share; 2 MODERATE: genre difference + timing/pre-launch vs shipping; 1 WEAK: wire services follow news hook)
+
+**Cross-references:** #8 (Safe Target), #121 (Fast Company same pattern), #33 (OpenAI facial recognition parity — OpenAI literally in Snap hardware, zero mention), #196 (UK Cinema Association piracy vector)
+
+**Sources:**
+- https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/
+- https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/
+- https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+
+### Stats
+- **New test file:** `test_reuters_snap_meta_camera_privacy_vocabulary_bifurcation_aug20.py` — 11 classes, 50 tests (all passing)
+- **Mechanism:** #197 documented
+- **Test corpus:** 18,133 tests across 496 files
+- **Pushed to GitHub:** ✓
+
 ## Iteration #202 — Thu 2026-08-20 08:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### UK Cinema Piracy Vector + CalChamber Employer Law + Scotland Courts Extension + Meta Patent Catalyst
@@ -5256,3 +5303,4 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry + counts)
 
 **Cumulative:** 196 mechanisms, ~17,004 tests, 494 files
+

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,004 | Across 494 test files |
+| Tests | ~18,133 | Across 496 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17004 tests** across 494 test files, each covering a different analytical capability:
+MediaScope has **18133 tests** across 496 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1007,3 +1007,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_apple_siri_ai_publisher_deal_variable_compensation_financial_architecture_aug20.py` | 46 | Mechanism #156 Extension: Apple Siri AI Variable-Compensation Publisher Financial Architecture. Apple's Siri AI deal uses VARIABLE PER-USE compensation — structurally distinct from all other AI-publisher deals (OpenAI $300-400M/yr, Google, Amazon, Microsoft all use FIXED-FEE models). Creates ONGOING publisher dependency: Apple controls ranking algorithm determining content surfacing, implicit retaliatory mechanism for adversarial coverage. Three N50 incentive channels: privacy narrative protection, competitive displacement, investigation suppression. Condé Nast would have deals with OpenAI+Google+Amazon+Microsoft+Apple — every major tech company EXCEPT Meta. Anthropic ARR $65B Jul 2026, pre-IPO credit >$10B. 11 classes, 46 tests |
 | `test_type_d_01am_cross_validation_aug20.py` | 30 | Type D cross-validation (Aug 20, 1 AM PT): Mechanisms #190-#192 cross-validated against primary sources — all CONFIRMED. Mechanism #192 Wareable buying guide bifurcation, #191 Kif Leswing CNBC CEO-attribution, #190 Verge Apple triple-camera all verified. Dependency fix: 39 collection errors resolved (textblob + vaderSentiment install). Cross-reference integrity, score distribution, Samsung entity coverage. 7 classes, 30 tests |
 | `test_type_d_06am_cross_validation_aug20.py` | 36 | Type D cross-validation (Aug 20, 6 AM PT): Mechanisms #193-#195 structural integrity (GadgetEvolution affiliate paradox, Gizmodo Apple N50 headline presupposition, Lance Ulanoff market-attribution displacement). Doc sync fix: ARCHITECTURE.md stale counts (17946→16964 tests, 488→493 files), 5 missing aug20 test files added to both docs. Cross-reference integrity, score distribution, dependency verification, heading pattern regex fix guard. 8 classes, 36 tests |
+| `test_reuters_snap_meta_camera_privacy_vocabulary_bifurcation_aug20.py` | 50 | Mechanism #197: Reuters Cross-Entity Camera-Equipped Smart Glasses Privacy Vocabulary Bifurcation. Reuters' Snap Specs article (Jun 16, 2026): ZERO privacy terms for 4-camera glasses with OpenAI AI assistant. Reuters' Meta Ray-Ban article (Dec 9, 2025): 15+ privacy/alarm terms, NOYB lawyer, EU regulators, GDPR/AI Act. Reuters UK Cinema Ban (Aug 20, 2026): "Meta AI and other smart glasses" headline for category-level restriction — only Meta named despite Samsung/Snap/Google all developing camera glasses. Historical precedent: same brand-substitution pattern in 2014 Google Glass cinema bans. Wire-service asymmetry propagates globally via syndication. 0.82 asymmetry score, 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), cross-refs #8, #121, #33, #196. 11 classes, 50 tests |
