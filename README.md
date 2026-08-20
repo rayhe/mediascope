@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,739 | Across 483 test files |
+| Tests | ~17,798 | Across 484 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17739 tests** across 483 test files, each covering a different analytical capability:
+MediaScope has **17798 tests** across 484 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -835,6 +835,7 @@ MediaScope has **17739 tests** across 483 test files, each covering a different 
 | `test_foxbusiness_meta_1_4t_penalty.py` | 14 | Fox Business Meta $1.4T penalty Jul 7: editorial_cross_promotion framing device (new — all-caps interstitial blocks with parametrized variants), reached_out_for_comment no_comment source pattern (new — with false positive suppression), valuation_comparison detection, litigation/child_safety topic assignment, structural consistency guard (82 pattern-matched device types) |
 | `test_foxbusiness_muse_image_shutdown.py` | 5 | Fox Business Muse Image shutdown Jul 11: editorial_cross_promotion regex fix (dollar signs/digits in all-caps callouts), policy_reversal controlled retreat patterns (new — "missed the mark"/"no longer available" corporate admission language), loaded_language "misuse" addition, dollar-sign regression guard |
 | `test_zuckerberg_ai_agents_same_event.py` | 37 | Reuters vs Barron's same-event comparison on Zuckerberg AI agent admission (Jul 2, 2026 town hall): emotion_attribution framing device (new — editorial attribution of emotional states never expressed by subject, with parametrized true/false-positive tests), competitive_deficit detection, confession_framing divergence, entity detection (Claude Code, Alexandr Wang, Muse/Spark), topic classification, source extraction (documentary "recording heard by Reuters"), same-event framing divergence analysis |
+| `test_zuckerberg_manifesto_podcast_cluster_vocabulary_asymmetry_aug19.py` | 59 | Zuckerberg "The Future is for Everyone" manifesto podcast response cluster (Aug 10-14, 2026) — natural experiment: 6 podcasts covering SAME source material within same week uniformly apply negative/dismissive vocabulary. Zero aspirational framings. Vocabulary: "deranged" (404 Media), "Anti-Doom Fantasy" (Hard Fork/NYT), "long-winded" (AmberMac/SiriusXM), "don't like AI" (TechCrunch), "court defendant's plea" (Social Media Today). Comparison: Amodei "Machines of Loving Grace" (Oct 2024) got respectful framing. Podcast Rex: 383 mentions/month (~12/day). 3 confounders (2 STRONG, 1 MODERATE). Financial context: NYT $100M Amazon + Google traffic, TechCrunch Yahoo/Apollo, 404 Media independent. Asymmetry score 0.78. Cross-refs: #144, #148, #153, #155, #185. 10 classes, 59 tests |
 | `test_reuters_rust_belt_jul9.py` | 33 | Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment |
 | `test_reuters_scam_ads_securities_jul13.py` | 17 | Reuters Meta scam ads securities defense Jul 13: power_asymmetry personal-loss savings narrative ("retirement savings"), loaded_language additions ("depressingly", "peculiar"), self_referential_investigation "my [Publication] colleagues" pattern (with source_publication wire-service filter), editorial_dramatization literary-aside undercut ("— while it lasted"), rhetorical_question "Should [entity]... hinge" pattern, entity extraction (Meta cluster with Facebook/Instagram/WhatsApp subsidiaries), sentiment negative lean |
 | `test_reuters_australia_esafety_child_safety_jul14.py` | 24 | Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing |

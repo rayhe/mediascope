@@ -1,3 +1,30 @@
+## Iteration #192 — Wed 2026-08-19 22:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Mechanism #189 Extension: Zuckerberg AI Manifesto Podcast Response Cluster — Multi-Platform Vocabulary Asymmetry Natural Experiment (Aug 10-14, 2026)
+
+**Type:** Podcast Sentiment Tracking — Natural Experiment (same source, multiple outlets)
+**Source Event:** Zuckerberg "The Future is for Everyone" manifesto, Aug 10, 2026
+**Podcasts Analyzed:** 6 (404 Media, Hard Fork/NYT, AmberMac/SiriusXM, AI Inside/TWiT, TechCrunch, Social Media Today)
+**Asymmetry Score:** 0.78
+
+**Core Finding:**
+Zuckerberg's Aug 10, 2026 manifesto provides a natural experiment: 6 podcasts covering the SAME source material within the same week uniformly apply negative/dismissive vocabulary. Zero podcasts frame it as primarily aspirational. Compare to Anthropic CEO Dario Amodei's Oct 2024 "Machines of Loving Grace" essay which received near-universal respectful framing across the same podcasts. Same genre (tech CEO manifesto), systematically different vocabulary.
+
+Key vocabulary cluster: "deranged" (404 Media), "Anti-Doom Fantasy" (Hard Fork), "long-winded" (AmberMac), "exactly why people don't like AI" (TechCrunch), "court defendant's plea" (Social Media Today)
+
+**New podcast entries added:** 3 (#41-#43)
+- 404 Media (Aug 12) — "Deranged" / "No One Wants" — same-episode Flock/Axon LPR neutral framing paradox
+- Hard Fork/NYT (Aug 14) — "Anti-Doom Fantasy" — Amodei manifesto got respectful framing
+- AmberMac Ep078 (Aug 10) — "Long-winded letter" — same show used "Pervert" in Ep056
+
+**Podcast Rex data:** Zuckerberg mentioned 383 times on podcasts in past month (~12/day)
+
+**Confounders:** 3 (2 STRONG: $567M child safety fine same week + low personal favorability; 1 MODERATE: manifesto seen as self-serving marketing)
+**Cross-references:** Mechanisms #144, #148, #153, #155, #185
+**Test file:** `test_zuckerberg_manifesto_podcast_cluster_vocabulary_asymmetry_aug19.py` — 10 classes, 59 tests (all passing)
+
+---
+
 ## Iteration #191 — Wed 2026-08-19 20:00 PT (Type D: Test & Verify)
 
 ### Cross-Validation: Mechanisms #185-188 Structural Integrity + Dependency Fix + Doc Sync
