@@ -4750,3 +4750,38 @@ This extends mechanism #83 (Guardian Samsung financial triangle) with two novel 
 - Updated: docs/ARCHITECTURE.md (test file entry + counts)
 
 **Cumulative:** 176 mechanisms, ~17,013 tests, 467 files
+
+---
+
+## Iteration #192 — Type E: Podcast/Broadcast Sentiment Tracking (Aug 19, 2026, 09:00 PM PT)
+
+**Focus:** Guardian TIF Podcast + Slow News Day Creator Economy + University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline
+
+**Mechanism #189:** University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline
+
+**Type:** academic_preprint_media_activism_pipeline
+**Entities:** Meta, University of Sydney, 404 Media, Mediaweek, Change.org, HMCTS
+**Asymmetry Score:** HIGH — academic study of Meta-only hardware, zero competitor analysis despite Samsung/Google identical features
+
+**Core Finding:** Three new podcast/multimedia entries (#38-40) documenting convergent academic-media-activism dynamics:
+
+1. **Guardian "Today in Focus" (#38, ~Aug 6, 2026):** Flagship daily podcast episode "Could Meta's 'pervert glasses' be banned across the UK?" Scott Trust funded (no advertising dependency). Fourth UK non-commercial entity adopting "pervert glasses" vocabulary. Identified Guardian Media Group three-medium pipeline: Observer print → online → podcast. Sentiment: -6/10, HIGH asymmetry.
+
+2. **Slow News Day / Tom Nicholas (#39, ~Aug 5, 2026):** YouTube/Nebula video essay "Mark Zuckerberg's Spectacular Problem." Creator economy adoption — political/cultural essayist, not tech reviewer. Pan-European regulatory scope (France, Germany in keywords). Sentiment: -7/10, HIGH asymmetry.
+
+3. **University of Sydney #RizzCam Study (#40):** Academic preprint "Harm Through the '#RizzCam'" analyzing 350 Instagram PUA videos. 60% showed potential harassment, 43% doxxing, 93.3% comments open. Documented full academic-to-media-to-activism pipeline: preprint → 404 Media → Mediaweek → Change.org petition → HMCTS court ban. Second expert-as-amplifier instance (Dr. Milica Stilinovic across 5+ channels). Vector 8 (Academic Research) added to Multi-Vector Cascade (#158). Sentiment: -7/10, HIGH asymmetry.
+
+**New Patterns Identified:**
+- Academic-to-activism pipeline (preprint → media → petition → court)
+- Intra-media-group cross-medium pipeline (Guardian Media Group: Observer print → online → podcast)
+- Creator economy adoption (political/cultural YouTube essayists, not tech reviewers)
+
+**Cross-references:** #130, #137, #144, #153, #157, #158, #176
+
+**Files changed:**
+- Added: `tests/test_rizzcam_academic_media_activism_pipeline_guardian_tif_slow_news_day_aug19.py` (10 classes, 49 tests)
+- Updated: `podcast-sentiment.md` (episodes #38-40, cross-medium summary updated to 40 entries)
+- Updated: README.md (483 files, ~17,739 tests)
+- Updated: docs/ARCHITECTURE.md (test file entry + counts)
+
+**Cumulative:** 189 mechanisms, ~17,739 tests, 483 files
