@@ -533,6 +533,20 @@ entities:
       - Alphabet/Google ($2B+)
       - Amazon ($13B+)
       target_listing: As early as October 2026
+      pre_ipo_credit_facility_b: 10
+      pre_ipo_credit_facility_note: 'Revolving credit facility expected to exceed $10B target (Bloomberg,
+        Aug 19 2026). Banks jockeying for larger commitments hoping to secure IPO roles.
+        Most active arranging banks committed ~$1.25B each; second tier ~$1B.
+        Anthropic could limit size to target or below.'
+      pre_ipo_credit_facility_source: https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+      decart_acquisition:
+        date_reported: '2026-08-13'
+        target: Decart AI (Nvidia-backed)
+        estimated_value_b: 6
+        purpose: 'AI infrastructure and optimization technology. Inference performance
+          improvements ahead of IPO. Lucy model (live video editing), Oasis model
+          (simulated environments for robotics/autonomous driving).'
+        source: https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/
       legal_counsel: Wilson Sonsini (handled Google 2004 IPO)
       ipo_banks_reported:
       - Goldman Sachs
@@ -540,8 +554,12 @@ entities:
       - JPMorgan Chase
       revenue_run_rate_at_filing_b: 47
       revenue_trajectory_note: '$1B (Dec 2024) → $4B (mid-2025) → $9B (Dec 2025) → $14B (Feb 2026) → $19B (Mar 2026) → $30B
-        (Apr 2026) → $47B (May 2026). Fastest revenue growth in enterprise software history. Claude Code alone reached $2.5B
-        ARR by Feb 2026. '
+        (Apr 2026) → $47B (May 2026) → $65B (Jul 2026, Reuters Aug 17). Fastest revenue growth in enterprise software
+        history. '
+      arr_jul_2026_b: 65
+      arr_jul_2026_source: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+      projected_revenue_2028_b: 190-200
+      projected_revenue_2028_source: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
       zero_publisher_deal_ipo_paradox: 'Anthropic is heading to IPO at ~$1T valuation with the fastest revenue growth in enterprise
         software history AND zero publisher content licensing deals. If Anthropic''s IPO succeeds, it VALIDATES the model
         of building a trillion-dollar AI company without paying publishers anything. This undermines the core narrative that
@@ -1876,11 +1894,93 @@ entities:
         leverage over MediaScope-profiled publications, despite having the LEAST
         adversarial coverage directed at it.'
       mechanism_id: 156
+      structural_distinction:
+        fixed_fee_comparison: 'OpenAI ($300-400M/yr total), Google (News AI pilot/Showcase), Amazon
+          (Rufus deals), and Microsoft (PCM deals) all use FIXED-FEE models — publishers
+          receive guaranteed annual payments regardless of content usage volume. Apple''s
+          Siri AI proposal uses VARIABLE PER-USE compensation: publishers get paid ONLY
+          when their content actually surfaces in Siri responses.'
+        ongoing_dependency: 'Variable per-use creates ONGOING dependency: content must remain
+          in Siri''s pipeline to generate revenue. Fixed-fee deals are ''fire and forget'' —
+          revenue flows regardless of editorial direction. Per-use ties publisher revenue
+          to Apple product success (more Siri users = more per-use payments), structurally
+          aligning publisher financial interest with Apple ecosystem growth.'
+        algorithm_control: 'Apple controls the ranking/selection algorithm that determines
+          which publisher content surfaces in Siri AI responses. This gives Apple an
+          implicit lever: if a publication produces adversarial Apple coverage, Apple
+          could theoretically reduce that publication''s content surfacing in Siri —
+          reducing their per-use revenue. No evidence this has occurred (deals not signed
+          yet), but the STRUCTURAL incentive exists by design.'
+      confounders:
+      - strength: STRONG
+        description: 'No deals have been SIGNED yet — Apple is still in negotiation phase
+          as of Aug 20, 2026. The entire mechanism is PREDICTIVE, not observed.'
+      - strength: STRONG
+        description: 'Variable compensation could result in lower total payments than
+          fixed-fee models, making the dependency weaker than OpenAI/Google deals.
+          Nine-figure budget ($100M+) split across many publishers may yield only
+          single-digit millions per publisher.'
+      - strength: MODERATE
+        description: 'Apple News+ already creates publisher dependency ($12.99/mo ×
+          125M MAU × 50% rev share). Siri AI deals may be incremental rather than
+          transformative to the overall Apple-publisher financial relationship.'
+      - strength: MODERATE
+        description: 'The notification summary debacle gives publishers leverage — Apple
+          NEEDS them for Siri AI credibility. This could empower publishers to negotiate
+          editorial independence protections, weakening the financial incentive effect.'
+      - strength: WEAK
+        description: 'Publisher editorial independence policies nominally insulate
+          newsrooms from business-side deals. No evidence of direct editorial influence
+          from any content licensing deal.'
+      conde_nast_implication:
+        simultaneous_deals: 'If Condé Nast signs Siri AI deal, they would have simultaneous
+          financial relationships with OpenAI (content deal, Aug 2024), Google (advertising +
+          News AI pilot), Amazon (Rufus deal, Jul 2025), Microsoft (PCM deal, Feb 2026),
+          AND Apple (Siri AI + News+). This makes Condé Nast/WIRED the publication group
+          with the MOST concurrent AI company financial relationships — and the only major
+          tech company WITHOUT a Condé Nast deal remains Meta.'
+        existing_relationship: 'Apple News+ launch partner since 2019. 16 Condé Nast titles
+          on News+ (WIRED, Vogue, GQ, Vanity Fair, The New Yorker, etc.). Also
+          participating in Apple News+ Food (2025).'
+      meta_contrast: 'Meta has ZERO content licensing deals with any MediaScope-profiled
+        adversarial publication, zero platform dependency mechanisms, zero per-use
+        compensation models. Apple''s variable-compensation model creates the most
+        structurally aligned publisher incentive in the MediaScope dataset — publishers''
+        revenue directly scales with Apple product adoption.'
+      n50_coverage_implication:
+        incentive_channels:
+        - channel: privacy_narrative_protection
+          description: 'Frame Apple N50 as privacy-safe (PCC narrative) → product success
+            → more Siri users → more per-use content payments'
+        - channel: competitive_displacement
+          description: 'Frame Meta Ray-Ban as privacy-threatening → drive users toward
+            Apple ecosystem → more Siri AI usage → more per-use payments'
+        - channel: investigation_suppression
+          description: 'NOT investigate Apple N50 camera privacy → protect Apple''s
+            "privacy hero" brand → protect Siri AI deal + News+ revenue'
+      cross_references:
+      - mechanism_id: 43
+        relationship: compounds
+        description: 'Dual-client litigation entanglement (Apple-OpenAI) now includes
+          additional Siri AI deal dimension'
+      - mechanism_id: 80
+        relationship: compounds
+        description: 'Apple News platform leverage compounds with Siri AI per-use dependency'
+      - mechanism_id: 117
+        relationship: extends
+        description: 'Apple N50 privacy hero cascade now has financial backing from
+          per-use publisher deals'
+      - mechanism_id: 194
+        relationship: related
+        description: 'Gizmodo Apple N50 headline presupposition may reflect anticipated
+          deal-driven coverage softening'
       source_urls:
       - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
       - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
       - https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/
       - https://appleinsider.com/articles/26/08/13/siri-ai-could-get-a-boost-from-news-content-with-new-publisher-deal
+      - https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
+      - https://www.editorandpublisher.com/stories/untitled,263027
     q3_fy26_earnings:
       report_date: '2026-07-30'
       quarter_ended: '2026-06-27'

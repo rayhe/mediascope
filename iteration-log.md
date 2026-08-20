@@ -1,3 +1,58 @@
+## Iteration #200 — Thu 2026-08-20 05:00 PT (Type C: Financial Incentive Mapping)
+
+### Apple Siri AI Variable-Compensation Publisher Financial Architecture (Extending Mechanism #156)
+
+**Type:** Financial Incentive Mapping — Apple × Publishers × Siri AI
+**Focus:** Structural analysis of variable per-use compensation model + Anthropic revenue update
+
+**Core Discovery — Variable-Compensation Creates ONGOING Publisher Dependency**
+
+Apple's Siri AI publisher deal proposal (WSJ, Aug 12, 2026) uses VARIABLE PER-USE compensation — structurally distinct from every other AI-publisher financial arrangement. All existing deals (OpenAI $300-400M/yr, Google News AI pilot/Showcase, Amazon Rufus, Microsoft PCM) use FIXED-FEE models where publishers receive guaranteed annual payments regardless of content usage volume.
+
+Apple's model ties publisher revenue DIRECTLY to Siri AI usage volume:
+- More Siri users → more content surfacing → more per-use payments
+- Apple controls the ranking/selection algorithm determining which publisher content surfaces
+- Creates implicit retaliatory mechanism: adversarial coverage could reduce content surfacing
+- Structurally aligns publisher financial interest with Apple ecosystem growth (including N50 smart glasses)
+
+**Three N50 Smart Glasses Incentive Channels:**
+1. **Privacy narrative protection** — Frame Apple N50 as privacy-safe (PCC narrative) → product success → more Siri users → more per-use payments
+2. **Competitive displacement** — Frame Meta Ray-Ban as privacy-threatening → drive users to Apple ecosystem → more Siri AI usage
+3. **Investigation suppression** — Don't investigate Apple N50 camera privacy → protect Apple "privacy hero" brand → protect Siri AI deal + News+ revenue
+
+**Condé Nast-Specific Implication:** If Condé Nast signs a Siri AI deal, they would have simultaneous financial relationships with OpenAI, Google, Amazon, Microsoft, AND Apple — making them the publication group with the MOST concurrent AI company financial relationships. The ONLY major tech company without a Condé Nast deal: Meta.
+
+**Bypass → Reversal Timeline:**
+- Dec 2023: Apple offers $50M fixed-fee archive deals → publishers lukewarm → no deals
+- Jan 2026: Apple signs $1B/yr Google Gemini deal, bypassing publishers entirely
+- Feb 2026: Condé Nast CEO says Google search "no longer meaningful" (25% traffic share)
+- Aug 2026: Apple RETURNS with nine-figure variable-compensation model for Siri AI
+
+**Confounders:** 5 (2 STRONG: no deals signed yet + variable comp may yield lower total; 2 MODERATE: News+ already creates dependency + debacle gives publishers leverage; 1 WEAK: editorial independence policies)
+
+**Companion Update — Anthropic Revenue Trajectory:**
+- ARR $65B (end of Jul 2026, Reuters Aug 17) — up from $47B in May, $9B at end of 2025
+- Projected 2028 revenue: $190-200B
+- Pre-IPO credit facility exceeding $10B target (Bloomberg, Aug 19)
+- Decart AI acquisition talks at ~$6B (Bloomberg, Aug 13)
+
+### Sources
+- https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/ (WSJ report summary)
+- https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
+- https://www.editorandpublisher.com/stories/untitled,263027
+- https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/
+- https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+- https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+- https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+- https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/
+
+### Test Results
+- **New test file:** `test_apple_siri_ai_publisher_deal_variable_compensation_financial_architecture_aug20.py` — 11 classes, 46 tests (all passing)
+- **Updated:** `profiles/competitor-entities.yaml` — Apple Siri AI deal structural analysis (confounders, Condé Nast implication, N50 coverage implications, cross-references, meta contrast) + Anthropic ARR $65B Jul 2026, projected $190-200B 2028, pre-IPO credit >$10B, Decart acquisition $6B
+- **Test corpus:** 492 files, ~16,928 tests
+
+---
+
 ## Iteration #199 — Thu 2026-08-20 04:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #195: Lance Ulanoff (TechRadar / Future plc) Editor-Level Market-Attribution Privacy Vocabulary Displacement
