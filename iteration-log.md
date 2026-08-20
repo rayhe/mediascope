@@ -1,3 +1,32 @@
+## Iteration #197 — Thu 2026-08-20 02:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Entry #44: GadgetEvolution YouTube — Affiliate-Privacy Revenue Paradox
+
+**Source:** GadgetEvolution "The End of Meta Ray-Bans? Samsung Galaxy Glasses First Look" (~Jul 26, 2026)
+**URL:** https://www.youtube.com/watch?v=aguCfKi9cgo
+**Format:** YouTube chaptered tech comparison (~7 min)
+
+**Core Discovery — Mechanism #193: YouTube Tech Review Affiliate-Privacy Revenue Paradox**
+
+YouTube tech review channel applies bifurcated privacy vocabulary within a Samsung vs Meta comparison video while simultaneously monetizing BOTH products through Amazon affiliate links. NordVPN (privacy brand) sponsors the video, creating a three-layer financial-editorial alignment:
+
+1. **NordVPN sponsor** — privacy brand's "Protect your privacy" CTA reinforces Meta-negative framing
+2. **Samsung affiliate** (amzn.to/44JUubI) — creator earns commission on the "privacy winner"
+3. **Meta affiliate** (amzn.to/3TjGfrC) — creator ALSO earns commission on the "privacy loser"
+
+The paradox: if Meta's "privacy gap" were genuinely disqualifying, the creator would remove the Meta affiliate link. The link stays — revealing the framing as editorial positioning, not a safety warning.
+
+**Natural experiment strength:** Video description explicitly states "The Samsung Galaxy Glasses run the same chip as the Meta Ray-Bans" (Snapdragon AR1 Gen 1). Creator KNOWS hardware is identical but applies bifurcated privacy vocabulary anyway.
+
+**Upstream catalyst noted:** Meta patent US 2026/0238876 A1 ("Smart Cameras Enabled by Assistant Systems") published Aug 13, 2026 — 18 days after this video — further widens the "privacy gap" that creators like GadgetEvolution already monetize. Biometric Update (Aug 17), Archyde, 404 Media all covered the patent with uniform alarm framing; zero Samsung patent scrutiny.
+
+### Test Results
+
+- **New test file:** `test_gadgetevolution_affiliate_privacy_paradox_aug20.py` — 7 classes, 18 tests (all passing)
+- **Test corpus:** 489 files
+
+---
+
 ## Iteration #196 — Thu 2026-08-20 01:00 PT (Type D: Test & Verify — Cross-Validation + Dependency Fix)
 
 ### Cross-Validation Run
