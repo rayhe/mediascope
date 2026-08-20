@@ -140,23 +140,24 @@ entities:
         - https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/
       cpa_maturation_timeline:
         jan_2026: CPM-only ad testing begins in US (free and Go tiers)
-        mar_2026: David Dugan hired from Meta; international expansion (Canada, Australia, NZ); 600+ advertisers; $100M ARR in 6 weeks
+        mar_2026: David Dugan hired from Meta; international expansion (Canada, Australia, NZ); 600+ advertisers; $100M ARR
+          in 6 weeks
         apr_2026: Self-serve Ads Manager launched (beta)
-        may_2026_cpc: 'Cost-per-click (CPC) bidding introduced. $50K minimum spend dropped — SMBs/startups now eligible.
-          Ad-tech integrations: Adobe, Criteo, Pacvue, Kargo for creative, budgeting, campaign management.
-          Asad Awan (ads & monetization lead): "CPC is the way for us to make sure this is incentive compatible."'
-        may_2026_cpa: 'Cost-per-action (CPA) ads enabled for select advertisers. Advertisers pay only when user takes
-          specific action (click-through, sign-up, purchase). Conversion tracking pixel deployed. Claire Holubowskyj
-          (Enders Analysis): CPA "aligns its product more closely with that of Meta and Google, whom it must compete
-          effectively against to reach its own targets."'
+        may_2026_cpc: 'Cost-per-click (CPC) bidding introduced. $50K minimum spend dropped — SMBs/startups now eligible. Ad-tech
+          integrations: Adobe, Criteo, Pacvue, Kargo for creative, budgeting, campaign management. Asad Awan (ads & monetization
+          lead): "CPC is the way for us to make sure this is incentive compatible."'
+        may_2026_cpa: 'Cost-per-action (CPA) ads enabled for select advertisers. Advertisers pay only when user takes specific
+          action (click-through, sign-up, purchase). Conversion tracking pixel deployed. Claire Holubowskyj (Enders Analysis):
+          CPA "aligns its product more closely with that of Meta and Google, whom it must compete effectively against to reach
+          its own targets."'
         may_2026_measurement: Third-party measurement announced as in-progress (no partners/timeline disclosed yet)
         hiring: 'Building internal ad stack: monetization infrastructure engineer, engineering manager, product designer,
           senior revenue accounting manager, trust & safety (ads) — all SF HQ, full-time. Compensation bands up to $385K.
           Signal: building to OWN, not rent. Current vendor partnerships (Criteo, The Trade Desk) are bridge, not permanent.'
-        meta_competitive_positioning: 'CPA bidding directly competes with Meta Advantage+ and Google Performance Max for
-          performance marketing dollars. Same ad-tech vendors (Criteo, Adobe) serve all three platforms. David Dugan (former
-          Meta) is building the exact same performance ad infrastructure he left. SMB access (no minimum) targets Meta''s
-          core advertiser base of 10M+ small businesses.'
+        meta_competitive_positioning: CPA bidding directly competes with Meta Advantage+ and Google Performance Max for performance
+          marketing dollars. Same ad-tech vendors (Criteo, Adobe) serve all three platforms. David Dugan (former Meta) is
+          building the exact same performance ad infrastructure he left. SMB access (no minimum) targets Meta's core advertiser
+          base of 10M+ small businesses.
         source_urls:
         - https://digiday.com/marketing/openai-opens-up-chatgpt-ads-manager-to-the-u-s-while-promising-third-party-measurement-cpa-bidding/
         - https://digiday.com/marketing/openai-turns-on-cost-per-action-ads-inside-chatgpt/
@@ -165,10 +166,10 @@ entities:
         - https://www.pymnts.com/artificial-intelligence-2/2026/openai-expands-chatgpt-advertising-to-more-markets-after-us-pilot/
       overview: 'OpenAI is building a $2.5B advertising business in 2026 that projects to $100B by 2030, creating a NEW financial
         dependency channel with publishers. ChatGPT ads pilot crossed $100M ARR within 6 weeks of January 2026 launch. Self-serve
-        Ads Manager launched April 2026. Hired David Dugan (former Meta ads executive) in March 2026. CPC bidding launched May 2026,
-        CPA (cost-per-action) bidding enabled late May 2026 — the same CPM→CPC→CPA maturation that took Meta and Google years,
-        compressed into 5 months. OpenAI is now building its own internal ad stack (not renting from vendors), with compensation
-        bands up to $385K for ads infrastructure roles.
+        Ads Manager launched April 2026. Hired David Dugan (former Meta ads executive) in March 2026. CPC bidding launched
+        May 2026, CPA (cost-per-action) bidding enabled late May 2026 — the same CPM→CPC→CPA maturation that took Meta and
+        Google years, compressed into 5 months. OpenAI is now building its own internal ad stack (not renting from vendors),
+        with compensation bands up to $385K for ads infrastructure roles.
 
         EMARKETER COUNTER-FORECAST (Jul 17, 2026): eMarketer projects the ENTIRE US standalone chatbot ad market (ChatGPT
         + Copilot + AI Mode + Alexa for Shopping) at <$1B in 2026 and $5.41B by 2030. OpenAI''s individual target of $100B
@@ -520,32 +521,28 @@ entities:
       - D.E. Shaw
       - DST Global
       - Fidelity
-      series_h_infrastructure_note: 'Samsung, SK Hynix, and Micron — chip supply chain
-        companies — invested in the Series H. This is significant for MediaScope:
-        Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor)
-        and investing in Anthropic. The Samsung-Anthropic financial alignment means
-        publications covering Samsung glasses favorably also align with Anthropic
-        investor interests. No equivalent financial alignment exists between Meta
-        and any chip supply chain investor.'
+      series_h_infrastructure_note: 'Samsung, SK Hynix, and Micron — chip supply chain companies — invested in the Series
+        H. This is significant for MediaScope: Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor)
+        and investing in Anthropic. The Samsung-Anthropic financial alignment means publications covering Samsung glasses
+        favorably also align with Anthropic investor interests. No equivalent financial alignment exists between Meta and
+        any chip supply chain investor.'
       target_raise_b: 75
-      target_valuation_range_t: '1.75-1.8'
+      target_valuation_range_t: 1.75-1.8
       strategic_investors:
       - Alphabet/Google ($2B+)
       - Amazon ($13B+)
       target_listing: As early as October 2026
       pre_ipo_credit_facility_b: 10
-      pre_ipo_credit_facility_note: 'Revolving credit facility expected to exceed $10B target (Bloomberg,
-        Aug 19 2026). Banks jockeying for larger commitments hoping to secure IPO roles.
-        Most active arranging banks committed ~$1.25B each; second tier ~$1B.
-        Anthropic could limit size to target or below.'
+      pre_ipo_credit_facility_note: Revolving credit facility expected to exceed $10B target (Bloomberg, Aug 19 2026). Banks
+        jockeying for larger commitments hoping to secure IPO roles. Most active arranging banks committed ~$1.25B each; second
+        tier ~$1B. Anthropic could limit size to target or below.
       pre_ipo_credit_facility_source: https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
       decart_acquisition:
         date_reported: '2026-08-13'
         target: Decart AI (Nvidia-backed)
         estimated_value_b: 6
-        purpose: 'AI infrastructure and optimization technology. Inference performance
-          improvements ahead of IPO. Lucy model (live video editing), Oasis model
-          (simulated environments for robotics/autonomous driving).'
+        purpose: AI infrastructure and optimization technology. Inference performance improvements ahead of IPO. Lucy model
+          (live video editing), Oasis model (simulated environments for robotics/autonomous driving).
         source: https://www.reuters.com/technology/anthropic-talks-buy-decart-ai-source-says-2026-08-13/
       legal_counsel: Wilson Sonsini (handled Google 2004 IPO)
       ipo_banks_reported:
@@ -554,8 +551,7 @@ entities:
       - JPMorgan Chase
       revenue_run_rate_at_filing_b: 47
       revenue_trajectory_note: '$1B (Dec 2024) → $4B (mid-2025) → $9B (Dec 2025) → $14B (Feb 2026) → $19B (Mar 2026) → $30B
-        (Apr 2026) → $47B (May 2026) → $65B (Jul 2026, Reuters Aug 17). Fastest revenue growth in enterprise software
-        history. '
+        (Apr 2026) → $47B (May 2026) → $65B (Jul 2026, Reuters Aug 17). Fastest revenue growth in enterprise software history. '
       arr_jul_2026_b: 65
       arr_jul_2026_source: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
       projected_revenue_2028_b: 190-200
@@ -589,31 +585,48 @@ entities:
 
       US history, ~$3,000 per work to 500,000 authors)
 
-      (b) $183B valuation (Apr 2026)
+      (b) $183B valuation (Apr 2026), heading toward ~$1T IPO
 
-      (c) Revenue growing from $9B to $19B projected annual run rate
+      (c) Revenue ARR $65B (Jul 2026), projected $190-200B by 2028
+
+      (d) Pre-IPO credit facility exceeding $10B (Bloomberg, Aug 18 2026)
 
       This absence means NO MediaScope-profiled publication has a DIRECT
 
-      Anthropic revenue relationship. However, Anthropic is NOT financially
+      Anthropic revenue relationship. Yet Anthropic consistently receives the
 
-      neutral to publishers — see investor_advertiser_publisher_triangle
+      SOFTEST coverage of any AI lab — no alarm vocabulary, no surveillance
 
-      below for the INDIRECT financial incentive structure created by
+      framing, no CEO personalization attacks.
 
-      Amazon and Google holding both Anthropic equity and publisher
 
-      advertising/cloud relationships.
+      PRESS GAZETTE CONFIRMATION (Aug 2026): "While OpenAI typically signs
 
-      NOTE: The FinancialContent/TokenRing report of an "Anthropic-NYT
+      one AI licensing deal with a major publisher in each country, Anthropic
 
-      settlement" (Dec 2025) appears to be fabricated marketing content
+      has not signed any licensing deals." — Press Gazette, reporting on
 
-      with no corroboration from any reputable source. NYT never sued
+      Google AI deals. This confirms the zero-deal status from an industry
 
-      Anthropic. Do not include as verified.
+      trade publication with direct publisher access.
 
-      '
+
+      PARADOX: The company that SCRAPED all publisher content without permission
+
+      (leading to the $1.5B settlement) AND has zero current licensing deals
+
+      receives softer coverage than the company (Meta) that voluntarily signed
+
+      13 licensing deals worth $50M/yr. Financial relationships are a necessary
+
+      but not sufficient predictor — Anthropic''s coverage softness appears
+
+      driven by its "safety" brand positioning rather than direct financial
+
+      incentives.
+
+
+      Source: https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/'
     author_settlement_source: https://www.pymnts.com/legal/2026/anthropic-historic-1-billion-dollar-copyright-settlement-gets-judge-ok/
     author_settlement_detail:
       amount_b: 1.5
@@ -1845,135 +1858,110 @@ entities:
       report_date: '2026-08-12'
       source: Wall Street Journal
       budget_magnitude: nine_figure
-      budget_description: 'Apple has discussed a possible nine-figure budget for the payments'
+      budget_description: Apple has discussed a possible nine-figure budget for the payments
       compensation_model: variable_pay_per_use
       deal_duration: multiyear
       deal_type: content_licensing
-      overview: 'Apple is actively negotiating multiyear content licensing deals with
-        publishers to power Siri AI (launching fall 2026 with iOS 27). Unlike standard
-        AI licensing (flat guaranteed fees), Apple proposes VARIABLE pay-per-use
-        compensation: publishers get paid when their content is actually used by Siri
-        to answer a user query. Nine-figure budget ($100M+) discussed. This represents
-        a STRATEGIC REVERSAL from Apple''s 2024-2025 content bypass strategy (paying
-        Google $1B/yr for Gemini instead of paying publishers directly).'
-      hallucination_motivator: 'Apple''s late-2024 AI-generated news summary feature produced
-        erroneous headlines (e.g., falsely attributing statements to public figures),
-        causing publisher backlash and user confusion. Apple disabled the feature for
-        over a year. The Siri AI publisher deals aim to prevent a repeat by using
-        verified publisher content rather than AI-generated summaries. This is a
-        REPUTATION-DRIVEN motivation on top of product quality.'
+      overview: 'Apple is actively negotiating multiyear content licensing deals with publishers to power Siri AI (launching
+        fall 2026 with iOS 27). Unlike standard AI licensing (flat guaranteed fees), Apple proposes VARIABLE pay-per-use compensation:
+        publishers get paid when their content is actually used by Siri to answer a user query. Nine-figure budget ($100M+)
+        discussed. This represents a STRATEGIC REVERSAL from Apple''s 2024-2025 content bypass strategy (paying Google $1B/yr
+        for Gemini instead of paying publishers directly).'
+      hallucination_motivator: Apple's late-2024 AI-generated news summary feature produced erroneous headlines (e.g., falsely
+        attributing statements to public figures), causing publisher backlash and user confusion. Apple disabled the feature
+        for over a year. The Siri AI publisher deals aim to prevent a repeat by using verified publisher content rather than
+        AI-generated summaries. This is a REPUTATION-DRIVEN motivation on top of product quality.
       reversal_timeline:
         phase_1_approach:
-          date: '2023-12'
-          detail: 'Apple approached Condé Nast, NBC News, IAC with $50M multi-year
-            offers for AI training rights. No deals closed.'
+          date: 2023-12
+          detail: Apple approached Condé Nast, NBC News, IAC with $50M multi-year offers for AI training rights. No deals
+            closed.
         phase_2_bypass:
-          date: '2026-01'
-          detail: 'Apple signed $1B/yr Google Gemini deal, accessing publisher content
-            through Google''s training pipeline without paying publishers directly.'
+          date: 2026-01
+          detail: Apple signed $1B/yr Google Gemini deal, accessing publisher content through Google's training pipeline without
+            paying publishers directly.
         phase_3_return:
-          date: '2026-08'
-          detail: 'Apple re-approached publishers with nine-figure budget for Siri AI
-            content licensing. Pay-per-use model, multiyear terms.'
-      wearables_coverage_prediction: 'If Apple launches smart glasses (rumored 2027-2028),
-        publications with Apple Siri AI content deals + Apple News+ participation +
-        App Store revenue dependencies would have TRIPLE financial incentive to frame
-        Apple glasses favorably. Meta has ZERO equivalent financial layers with any
-        MediaScope-profiled publication. This creates a predictable coverage asymmetry
-        where identical glass-mounted camera technology receives adversarial framing
-        from Meta and aspirational framing from Apple.'
-      mediascope_relevance: 'Apple Siri AI deals create a SIXTH financial lever (extending
-        the five already documented: Gemini deal, publisher content bypass, App Store
-        tax, Apple One dilution, Apple News+ lifeline paradox). The key analytical
-        insight is the TRIPLE-LAYER ARCHITECTURE: publications negotiating Siri AI
-        deals now have three SEPARATE financial reasons to cover Apple favorably —
-        News+ revenue sharing, Siri AI content licensing, and App Store commission
-        dependency. No other entity (including Meta, OpenAI, Google, or Amazon) has
-        three simultaneous publisher financial relationship types with the same
-        publications. This makes Apple the entity with the MOST financial coverage
-        leverage over MediaScope-profiled publications, despite having the LEAST
-        adversarial coverage directed at it.'
+          date: 2026-08
+          detail: Apple re-approached publishers with nine-figure budget for Siri AI content licensing. Pay-per-use model,
+            multiyear terms.
+      wearables_coverage_prediction: If Apple launches smart glasses (rumored 2027-2028), publications with Apple Siri AI
+        content deals + Apple News+ participation + App Store revenue dependencies would have TRIPLE financial incentive to
+        frame Apple glasses favorably. Meta has ZERO equivalent financial layers with any MediaScope-profiled publication.
+        This creates a predictable coverage asymmetry where identical glass-mounted camera technology receives adversarial
+        framing from Meta and aspirational framing from Apple.
+      mediascope_relevance: 'Apple Siri AI deals create a SIXTH financial lever (extending the five already documented: Gemini
+        deal, publisher content bypass, App Store tax, Apple One dilution, Apple News+ lifeline paradox). The key analytical
+        insight is the TRIPLE-LAYER ARCHITECTURE: publications negotiating Siri AI deals now have three SEPARATE financial
+        reasons to cover Apple favorably — News+ revenue sharing, Siri AI content licensing, and App Store commission dependency.
+        No other entity (including Meta, OpenAI, Google, or Amazon) has three simultaneous publisher financial relationship
+        types with the same publications. This makes Apple the entity with the MOST financial coverage leverage over MediaScope-profiled
+        publications, despite having the LEAST adversarial coverage directed at it.'
       mechanism_id: 156
       structural_distinction:
-        fixed_fee_comparison: 'OpenAI ($300-400M/yr total), Google (News AI pilot/Showcase), Amazon
-          (Rufus deals), and Microsoft (PCM deals) all use FIXED-FEE models — publishers
-          receive guaranteed annual payments regardless of content usage volume. Apple''s
-          Siri AI proposal uses VARIABLE PER-USE compensation: publishers get paid ONLY
-          when their content actually surfaces in Siri responses.'
-        ongoing_dependency: 'Variable per-use creates ONGOING dependency: content must remain
-          in Siri''s pipeline to generate revenue. Fixed-fee deals are ''fire and forget'' —
-          revenue flows regardless of editorial direction. Per-use ties publisher revenue
-          to Apple product success (more Siri users = more per-use payments), structurally
-          aligning publisher financial interest with Apple ecosystem growth.'
-        algorithm_control: 'Apple controls the ranking/selection algorithm that determines
-          which publisher content surfaces in Siri AI responses. This gives Apple an
-          implicit lever: if a publication produces adversarial Apple coverage, Apple
-          could theoretically reduce that publication''s content surfacing in Siri —
-          reducing their per-use revenue. No evidence this has occurred (deals not signed
-          yet), but the STRUCTURAL incentive exists by design.'
+        fixed_fee_comparison: 'OpenAI ($300-400M/yr total), Google (News AI pilot/Showcase), Amazon (Rufus deals), and Microsoft
+          (PCM deals) all use FIXED-FEE models — publishers receive guaranteed annual payments regardless of content usage
+          volume. Apple''s Siri AI proposal uses VARIABLE PER-USE compensation: publishers get paid ONLY when their content
+          actually surfaces in Siri responses.'
+        ongoing_dependency: 'Variable per-use creates ONGOING dependency: content must remain in Siri''s pipeline to generate
+          revenue. Fixed-fee deals are ''fire and forget'' — revenue flows regardless of editorial direction. Per-use ties
+          publisher revenue to Apple product success (more Siri users = more per-use payments), structurally aligning publisher
+          financial interest with Apple ecosystem growth.'
+        algorithm_control: 'Apple controls the ranking/selection algorithm that determines which publisher content surfaces
+          in Siri AI responses. This gives Apple an implicit lever: if a publication produces adversarial Apple coverage,
+          Apple could theoretically reduce that publication''s content surfacing in Siri — reducing their per-use revenue.
+          No evidence this has occurred (deals not signed yet), but the STRUCTURAL incentive exists by design.'
       confounders:
       - strength: STRONG
-        description: 'No deals have been SIGNED yet — Apple is still in negotiation phase
-          as of Aug 20, 2026. The entire mechanism is PREDICTIVE, not observed.'
+        description: No deals have been SIGNED yet — Apple is still in negotiation phase as of Aug 20, 2026. The entire mechanism
+          is PREDICTIVE, not observed.
       - strength: STRONG
-        description: 'Variable compensation could result in lower total payments than
-          fixed-fee models, making the dependency weaker than OpenAI/Google deals.
-          Nine-figure budget ($100M+) split across many publishers may yield only
-          single-digit millions per publisher.'
+        description: Variable compensation could result in lower total payments than fixed-fee models, making the dependency
+          weaker than OpenAI/Google deals. Nine-figure budget ($100M+) split across many publishers may yield only single-digit
+          millions per publisher.
       - strength: MODERATE
-        description: 'Apple News+ already creates publisher dependency ($12.99/mo ×
-          125M MAU × 50% rev share). Siri AI deals may be incremental rather than
-          transformative to the overall Apple-publisher financial relationship.'
+        description: Apple News+ already creates publisher dependency ($12.99/mo × 125M MAU × 50% rev share). Siri AI deals
+          may be incremental rather than transformative to the overall Apple-publisher financial relationship.
       - strength: MODERATE
-        description: 'The notification summary debacle gives publishers leverage — Apple
-          NEEDS them for Siri AI credibility. This could empower publishers to negotiate
-          editorial independence protections, weakening the financial incentive effect.'
+        description: The notification summary debacle gives publishers leverage — Apple NEEDS them for Siri AI credibility.
+          This could empower publishers to negotiate editorial independence protections, weakening the financial incentive
+          effect.
       - strength: WEAK
-        description: 'Publisher editorial independence policies nominally insulate
-          newsrooms from business-side deals. No evidence of direct editorial influence
-          from any content licensing deal.'
+        description: Publisher editorial independence policies nominally insulate newsrooms from business-side deals. No evidence
+          of direct editorial influence from any content licensing deal.
       conde_nast_implication:
-        simultaneous_deals: 'If Condé Nast signs Siri AI deal, they would have simultaneous
-          financial relationships with OpenAI (content deal, Aug 2024), Google (advertising +
-          News AI pilot), Amazon (Rufus deal, Jul 2025), Microsoft (PCM deal, Feb 2026),
-          AND Apple (Siri AI + News+). This makes Condé Nast/WIRED the publication group
-          with the MOST concurrent AI company financial relationships — and the only major
-          tech company WITHOUT a Condé Nast deal remains Meta.'
-        existing_relationship: 'Apple News+ launch partner since 2019. 16 Condé Nast titles
-          on News+ (WIRED, Vogue, GQ, Vanity Fair, The New Yorker, etc.). Also
-          participating in Apple News+ Food (2025).'
-      meta_contrast: 'Meta has ZERO content licensing deals with any MediaScope-profiled
-        adversarial publication, zero platform dependency mechanisms, zero per-use
-        compensation models. Apple''s variable-compensation model creates the most
-        structurally aligned publisher incentive in the MediaScope dataset — publishers''
-        revenue directly scales with Apple product adoption.'
+        simultaneous_deals: If Condé Nast signs Siri AI deal, they would have simultaneous financial relationships with OpenAI
+          (content deal, Aug 2024), Google (advertising + News AI pilot), Amazon (Rufus deal, Jul 2025), Microsoft (PCM deal,
+          Feb 2026), AND Apple (Siri AI + News+). This makes Condé Nast/WIRED the publication group with the MOST concurrent
+          AI company financial relationships — and the only major tech company WITHOUT a Condé Nast deal remains Meta.
+        existing_relationship: Apple News+ launch partner since 2019. 16 Condé Nast titles on News+ (WIRED, Vogue, GQ, Vanity
+          Fair, The New Yorker, etc.). Also participating in Apple News+ Food (2025).
+      meta_contrast: Meta has ZERO content licensing deals with any MediaScope-profiled adversarial publication, zero platform
+        dependency mechanisms, zero per-use compensation models. Apple's variable-compensation model creates the most structurally
+        aligned publisher incentive in the MediaScope dataset — publishers' revenue directly scales with Apple product adoption.
       n50_coverage_implication:
         incentive_channels:
         - channel: privacy_narrative_protection
-          description: 'Frame Apple N50 as privacy-safe (PCC narrative) → product success
-            → more Siri users → more per-use content payments'
+          description: Frame Apple N50 as privacy-safe (PCC narrative) → product success → more Siri users → more per-use
+            content payments
         - channel: competitive_displacement
-          description: 'Frame Meta Ray-Ban as privacy-threatening → drive users toward
-            Apple ecosystem → more Siri AI usage → more per-use payments'
+          description: Frame Meta Ray-Ban as privacy-threatening → drive users toward Apple ecosystem → more Siri AI usage
+            → more per-use payments
         - channel: investigation_suppression
-          description: 'NOT investigate Apple N50 camera privacy → protect Apple''s
-            "privacy hero" brand → protect Siri AI deal + News+ revenue'
+          description: NOT investigate Apple N50 camera privacy → protect Apple's "privacy hero" brand → protect Siri AI deal
+            + News+ revenue
       cross_references:
       - mechanism_id: 43
         relationship: compounds
-        description: 'Dual-client litigation entanglement (Apple-OpenAI) now includes
-          additional Siri AI deal dimension'
+        description: Dual-client litigation entanglement (Apple-OpenAI) now includes additional Siri AI deal dimension
       - mechanism_id: 80
         relationship: compounds
-        description: 'Apple News platform leverage compounds with Siri AI per-use dependency'
+        description: Apple News platform leverage compounds with Siri AI per-use dependency
       - mechanism_id: 117
         relationship: extends
-        description: 'Apple N50 privacy hero cascade now has financial backing from
-          per-use publisher deals'
+        description: Apple N50 privacy hero cascade now has financial backing from per-use publisher deals
       - mechanism_id: 194
         relationship: related
-        description: 'Gizmodo Apple N50 headline presupposition may reflect anticipated
-          deal-driven coverage softening'
+        description: Gizmodo Apple N50 headline presupposition may reflect anticipated deal-driven coverage softening
       source_urls:
       - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
       - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
@@ -2749,17 +2737,17 @@ entities:
       wrby_q2_2026_adjusted_ebitda_m: 32.9
       wrby_q2_2026_tariff_refund_m: 11.8
       wrby_q2_2026_tariff_refund_note: IEEPA tariff refund used to offset pre-launch investments
-      wrby_q2_2026_sga_increase_note: 'SG&A up 150bps driven by technology costs and store training
-        as Warby prepares for intelligent eyewear launch. Lab upgrades, quality-control improvements,
-        inventory-system changes, loss-prevention investments for higher-cost electronic products.'
+      wrby_q2_2026_sga_increase_note: SG&A up 150bps driven by technology costs and store training as Warby prepares for intelligent
+        eyewear launch. Lab upgrades, quality-control improvements, inventory-system changes, loss-prevention investments
+        for higher-cost electronic products.
       wrby_q2_2026_cash_m: 292.7
       wrby_q2_2026_stores: 352
       wrby_q2_2026_full_year_guidance_low_m: 959
       wrby_q2_2026_full_year_guidance_high_m: 976
       wrby_q2_2026_guidance_excludes_intelligent_eyewear: true
-      wrby_q2_2026_guidance_note: 'Full-year guidance EXCLUDES Intelligent Eyewear revenue —
-        all glasses revenue is additive upside. CFO Adrian Mitchell: "maintaining a prudent
-        outlook that excludes Intelligent Eyewear revenue contributions expected later this year."'
+      wrby_q2_2026_guidance_note: 'Full-year guidance EXCLUDES Intelligent Eyewear revenue — all glasses revenue is additive
+        upside. CFO Adrian Mitchell: "maintaining a prudent outlook that excludes Intelligent Eyewear revenue contributions
+        expected later this year."'
       wrby_q2_2026_preorders: Fall 2026 pre-orders planned, demos across 352+ stores
       wrby_q2_2026_battery_life: ~9 hours typical usage
       wrby_q2_2026_margins: Product margins slightly lower % than optical but same/higher absolute dollars
@@ -4204,6 +4192,39 @@ entities:
       - 87
       - 109
       - 110
+    french_apig_ai_overviews_complaint_aug2026:
+      date_reported: '2026-08-14'
+      complainant: Alliance of General Information Press (APIG)
+      target: Autorité de la concurrence (French competition authority)
+      complaint: APIG asked France's competition regulator to intervene over Google's AI-generated news summaries (AI Overviews
+        and AI Mode). APIG argues Google uses publishers' content without separate permission or payment, violating the EU's
+        neighbouring rights framework. Arcom (French communications regulator) estimates 33-38% traffic decline to publishers
+        from these features.
+      meta_contrast: 'CRITICAL ASYMMETRY: In July 2026, the SAME French competition authority ordered META to submit a payment
+        proposal and restart talks with French media groups, saying Meta "likely abused its dominant position." Now APIG wants
+        the same treatment for Google. But Google''s AI Overviews are ALREADY generating AI summaries from publisher content
+        at scale (billions of queries/day), while Meta''s content usage is for AI training (not direct content substitution).
+        Google''s AI Overviews are structurally MORE substitutional — they replace the click-through to publishers entirely
+        — yet Meta received the first enforcement action.'
+      regulatory_sequence:
+        google_2021: Fined €500M for failing to negotiate with publishers in good faith
+        google_2022: Dropped appeal, accepted commitments to negotiate with publishers
+        meta_jul_2026: Ordered to submit payment proposal and restart talks — "likely abused dominant position"
+        google_aug_2026: APIG complaint filed — wants same treatment as Meta received
+        asymmetry: Meta received enforcement action FIRST despite Google being fined €500M earlier and Google's AI Overviews
+          causing 33-38% traffic decline vs Meta's content usage for AI training. This regulatory sequence suggests Meta is
+          the easier enforcement target, not the more harmful actor.
+      australia_contrast: Australia proposed a 2.25% revenue charge on large platforms (Apr 2026) after Meta stopped renewing
+        publisher deals. Australia's framework does NOT directly cover LLM-powered services. France is the first jurisdiction
+        to bring AI-generated search summaries into the neighbouring rights enforcement framework.
+      mediascope_significance: 'The French APIG complaint strengthens MediaScope''s thesis: Google''s AI Overviews are the
+        PRIMARY mechanism destroying publisher traffic (33-38% decline confirmed by French regulator), yet Google receives
+        LESS adversarial coverage than Meta from publishers who are simultaneously losing traffic to Google AND signing NDA/no-sue
+        AI deals with Google. The regulatory sequence (Meta enforced first, Google complaint later) mirrors the coverage asymmetry
+        pattern.'
+      source_urls:
+      - https://www.medianama.com/2026/08/223-french-publishers-google-pay-ai-summaries/
+      - https://www.reuters.com/business/media-telecom/french-press-group-asks-competition-authority-intervene-googles-ai-practices-2026-08-14/
   x_twitter:
     display_name: X / Twitter
     aliases:
@@ -4632,14 +4653,15 @@ entities:
       monthly_payment_b: 1.25
       annual_payment_b: 15
       total_potential_b: 45
-      term_end: '2029-05'
+      term_end: 2029-05
       facilities: Colossus I + Colossus II (Memphis, Tennessee)
       capacity_mw: 300
       termination_notice_days: 90
       construction_cost_per_mw_m: 2.7
       industry_benchmark_per_mw_m: 10.8
-      payback_period_months: '<1'
-      musk_contradiction: 'S-1 says "monthly fee through May 2029" (pages 13, 146, F-62, F-96). Musk on X: "This is a 180 day lease with 90 day notice mutual cancellation thereafter."'
+      payback_period_months: <1
+      musk_contradiction: 'S-1 says "monthly fee through May 2029" (pages 13, 146, F-62, F-96). Musk on X: "This is a 180
+        day lease with 90 day notice mutual cancellation thereafter."'
       source_urls:
       - https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
       - https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/
@@ -4944,14 +4966,13 @@ entities:
       mechanism_id: 180
       type: financial_incentive_triple_channel
       date_added: '2026-08-19'
-      finding_summary: 'Samsung spends $5.7M/yr on Reddit display advertising (Adbeat 2023 US data), making
-        Reddit Samsung''s 2nd-largest display ad publisher. Reddit is controlled by Advance Publications
-        (65.2% voting, 83.5% Class B), which also owns Condé Nast (WIRED). This creates a triple-channel
-        financial alignment: (1) Samsung ad revenue flows through Reddit to Advance, (2) Meta competes
-        with Reddit for ad dollars, (3) Samsung Galaxy Glasses compete with Meta Ray-Ban. All three channels
-        incentivize adversarial Meta coverage and favorable Samsung coverage. No equivalent alignment exists
-        for Meta (zero Advance/Reddit ad relationship). The cost asymmetry is infinite: adversarial Samsung
-        coverage risks $5.7M; adversarial Meta coverage costs Advance $0.'
+      finding_summary: 'Samsung spends $5.7M/yr on Reddit display advertising (Adbeat 2023 US data), making Reddit Samsung''s
+        2nd-largest display ad publisher. Reddit is controlled by Advance Publications (65.2% voting, 83.5% Class B), which
+        also owns Condé Nast (WIRED). This creates a triple-channel financial alignment: (1) Samsung ad revenue flows through
+        Reddit to Advance, (2) Meta competes with Reddit for ad dollars, (3) Samsung Galaxy Glasses compete with Meta Ray-Ban.
+        All three channels incentivize adversarial Meta coverage and favorable Samsung coverage. No equivalent alignment exists
+        for Meta (zero Advance/Reddit ad relationship). The cost asymmetry is infinite: adversarial Samsung coverage risks
+        $5.7M; adversarial Meta coverage costs Advance $0.'
       samsung_us_display_publisher_breakdown_2023:
         youtube_google_m: 137.1
         reddit_advance_m: 5.7
@@ -4961,10 +4982,12 @@ entities:
         washington_post_6mo: in_top_5
         total_us_display_m: 152.2
       samsung_reddit_targeting:
-        subreddits: ["r/deadbydaylight ($70.5K, 9.9M impressions)", "r/NYYankees ($50.6K, 6.6M impressions)"]
+        subreddits:
+        - r/deadbydaylight ($70.5K, 9.9M impressions)
+        - r/NYYankees ($50.6K, 6.6M impressions)
         category: gaming and sports, not tech/privacy
-        note: 'Revenue relationship is corporate-level (Advance/Reddit), not subreddit-level.
-          Samsung does not need to advertise on r/technology for the financial incentive to operate.'
+        note: Revenue relationship is corporate-level (Advance/Reddit), not subreddit-level. Samsung does not need to advertise
+          on r/technology for the financial incentive to operate.
       triple_channel_details:
         channel_1_direct_ad_revenue: Samsung → Reddit ads ($5.7M) → Advance economic interest
         channel_2_ad_competitor_protection: Meta ($243B ad rev) competes with Reddit ($2.6B TTM)
@@ -4975,7 +4998,11 @@ entities:
       - '[MODERATE] $5.7M is <0.1% of Samsung $9.7B global ad spend.'
       - '[MODERATE] Gizmodo/Guardian show same Samsung silence without Samsung ad relationships.'
       - '[WEAK] Samsung Reddit ads target gaming/sports, not tech/privacy audiences.'
-      cross_references: [91, 161, 178, 179]
+      cross_references:
+      - 91
+      - 161
+      - 178
+      - 179
       test_file: tests/test_samsung_reddit_advance_advertising_feedback_loop_triple_channel_aug19.py
       source_urls:
       - https://blog.adbeat.com/inside-samsungs-150m-display-ad-strategy-can-it-overtake-apple/
@@ -5037,48 +5064,41 @@ entities:
       status: in talks (not finalized as of Aug 2026)
       prior_investment: Samsung venture arm previously invested in Mistral (2024 Series B)
       co_investors:
-        - EQT Scaleup Europe Fund (EU Commission-backed, >€5B target raise)
+      - EQT Scaleup Europe Fund (EU Commission-backed, >€5B target raise)
       mistral_prior_round:
         date: Sep 2025
         amount_eur: 1.7 billion
         lead: ASML
         valuation_eur: ~11.7 billion (now ~70% increase in <1 year)
-      samsung_robotics_context: 'Samsung created Robotics eXperience (RX) division Jul 21, 2026 —
-        one day before FT report. Division reports to TM Roh. Investment may
-        primarily serve robotics + foundation model integration, not glasses specifically.'
-      microsoft_mistral_convergence: 'Microsoft expanded Mistral partnership SAME WEEK (Jul 22, 2026)
-        — multibillion-dollar compute infrastructure deal for European expansion.
-        Creates Samsung-Microsoft convergence on the same Meta-competitive AI lab.'
-      sovereign_ai_context: 'US Anthropic export restrictions (Jun 2026) paused foreign access
-        to frontier models, making European alternatives like Mistral more strategically
-        important. Mistral supplies French military. EU sovereign AI push gives
-        Samsung investment geopolitical dimension beyond pure commercial returns.'
-      cross_competitor_ai_architecture: 'Samsung is the FIRST major consumer electronics company
-        to invest in BOTH Google Gemini (customer via Galaxy AI) AND a competing
-        open-weight foundation model lab (Mistral, investor). Both Gemini and Mistral
-        compete directly with Meta Llama in the open-weight and enterprise AI markets.
-        This dual-model portfolio means Samsung is financially hedged AGAINST Meta AI
-        leadership regardless of which non-Meta lab wins. First direct foundation model
-        investment outside Google for Samsung.'
-      publisher_coverage_implication: 'When publications cover Galaxy Glasses favorably, they
-        serve 5 simultaneous financial channels: (1) Samsung $9.7B advertiser, (2)
-        Google ad/deal/traffic partner + $75M Warby Parker equity, (3) Qualcomm
-        co-marketing partner, (4) Warby Parker imminent holiday ad campaign, (5)
-        Mistral Samsung-invested sovereign AI narrative. Favorable Meta Ray-Ban
-        coverage serves 0 financial upside channels and 1 active financial downside
-        channel (Meta is publishers direct $243.5B ad revenue competitor). Asymmetry
-        ratio: 5:0 (effectively infinite).'
+      samsung_robotics_context: Samsung created Robotics eXperience (RX) division Jul 21, 2026 — one day before FT report.
+        Division reports to TM Roh. Investment may primarily serve robotics + foundation model integration, not glasses specifically.
+      microsoft_mistral_convergence: Microsoft expanded Mistral partnership SAME WEEK (Jul 22, 2026) — multibillion-dollar
+        compute infrastructure deal for European expansion. Creates Samsung-Microsoft convergence on the same Meta-competitive
+        AI lab.
+      sovereign_ai_context: US Anthropic export restrictions (Jun 2026) paused foreign access to frontier models, making European
+        alternatives like Mistral more strategically important. Mistral supplies French military. EU sovereign AI push gives
+        Samsung investment geopolitical dimension beyond pure commercial returns.
+      cross_competitor_ai_architecture: Samsung is the FIRST major consumer electronics company to invest in BOTH Google Gemini
+        (customer via Galaxy AI) AND a competing open-weight foundation model lab (Mistral, investor). Both Gemini and Mistral
+        compete directly with Meta Llama in the open-weight and enterprise AI markets. This dual-model portfolio means Samsung
+        is financially hedged AGAINST Meta AI leadership regardless of which non-Meta lab wins. First direct foundation model
+        investment outside Google for Samsung.
+      publisher_coverage_implication: 'When publications cover Galaxy Glasses favorably, they serve 5 simultaneous financial
+        channels: (1) Samsung $9.7B advertiser, (2) Google ad/deal/traffic partner + $75M Warby Parker equity, (3) Qualcomm
+        co-marketing partner, (4) Warby Parker imminent holiday ad campaign, (5) Mistral Samsung-invested sovereign AI narrative.
+        Favorable Meta Ray-Ban coverage serves 0 financial upside channels and 1 active financial downside channel (Meta is
+        publishers direct $243.5B ad revenue competitor). Asymmetry ratio: 5:0 (effectively infinite).'
       related_mechanisms:
-        - 76
-        - 91
-        - 147
-        - 180
+      - 76
+      - 91
+      - 147
+      - 180
       source_urls:
-        - https://www.reuters.com/business/finance/samsung-talks-invest-mistral-20-billion-euro-valuation-ft-reports-2026-07-22/
-        - https://www.techrepublic.com/article/news-samsung-mistral-ai-investment-emea/
-        - https://en.sedaily.com/international/2026/07/22/samsung-weighs-investment-in-europes-top-ai-startup-mistral
-        - https://n24.com.tr/en/companies/samsung-eyes-1b-euro-investment-in-ai-lab-mistral-492
-        - https://www.mobileworldlive.com/ai-cloud/samsung-weighs-e1b-investment-in-mistral-ai/
+      - https://www.reuters.com/business/finance/samsung-talks-invest-mistral-20-billion-euro-valuation-ft-reports-2026-07-22/
+      - https://www.techrepublic.com/article/news-samsung-mistral-ai-investment-emea/
+      - https://en.sedaily.com/international/2026/07/22/samsung-weighs-investment-in-europes-top-ai-startup-mistral
+      - https://n24.com.tr/en/companies/samsung-eyes-1b-euro-investment-in-ai-lab-mistral-492
+      - https://www.mobileworldlive.com/ai-cloud/samsung-weighs-e1b-investment-in-mistral-ai/
       test_file: tests/test_samsung_mistral_cross_competitor_ai_financial_architecture_warby_q2_aug19.py
   microsoft:
     display_name: Microsoft
@@ -5921,9 +5941,8 @@ entities:
       customer_a_pct: 23
       customer_b_pct: 16
       additional_4_customers_pct: 46
-      note: All attributed to Compute & Networking segment. Customers unnamed in SEC
-        filing but almost certainly among Microsoft, Amazon, Google, Meta. Increase
-        from 25% (14% + 11%) in Q2 FY2025.
+      note: All attributed to Compute & Networking segment. Customers unnamed in SEC filing but almost certainly among Microsoft,
+        Amazon, Google, Meta. Increase from 25% (14% + 11%) in Q2 FY2025.
       source_url: https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/
     openai_investment:
       amount_b: 30
@@ -5935,14 +5954,11 @@ entities:
       - Amazon ($50B)
       replaced_prior_commitment: $100B framework (Sep 2025) replaced by $30B equity
       capital_usage: Much of the fresh capital to purchase Nvidia chips (Reuters)
-      circular_financing_concern: 'Gulf Business (Feb 2026): "exacerbates Wall Street
-        concerns about circular financing agreements, where firms invest in and sign
-        supply deals with each other, inflating demand and revenue." Nvidia invests
-        in OpenAI, OpenAI uses the money to buy Nvidia GPUs, GPU purchases become
-        Nvidia revenue. Self-reinforcing loop.'
-      jensen_huang_quote: We will invest a great deal of money. I believe in OpenAI.
-        The work that they do is incredible. They are one of the most consequential
-        companies of our time.
+      circular_financing_concern: 'Gulf Business (Feb 2026): "exacerbates Wall Street concerns about circular financing agreements,
+        where firms invest in and sign supply deals with each other, inflating demand and revenue." Nvidia invests in OpenAI,
+        OpenAI uses the money to buy Nvidia GPUs, GPU purchases become Nvidia revenue. Self-reinforcing loop.'
+      jensen_huang_quote: We will invest a great deal of money. I believe in OpenAI. The work that they do is incredible.
+        They are one of the most consequential companies of our time.
       source_urls:
       - https://www.reuters.com/business/nvidia-close-finalizing-30-billion-investment-openai-funding-round-ft-reports-2026-02-20/
       - https://gulfbusiness.com/en/2026/tech/openai-840-billion-funding-amazon-nvidia-softbank/
@@ -5953,59 +5969,47 @@ entities:
       deal_value_b: 20
       structure: Reverse acqui-hire (non-exclusive IP license, key talent moves to Nvidia)
       technology: LPU (Language Processing Unit) for high-speed AI inference
-      antitrust_note: Structured to minimize regulatory attention per analysts. CMA
-        has scrutinized similar tech sector deals. Nvidia-Trump administration relationship
-        described as among strongest of key US tech companies (Bernstein analyst).
+      antitrust_note: Structured to minimize regulatory attention per analysts. CMA has scrutinized similar tech sector deals.
+        Nvidia-Trump administration relationship described as among strongest of key US tech companies (Bernstein analyst).
       groq_independence: Groq continues as independent company with Simon Edwards as CEO
       source_url: https://www.campaignlive.com/article/nvidias-shock-20bn-groq-deal-means-adland/1944164
     gpu_capital_circularity:
-      overview: 'Nvidia sits at the CENTER of a circular financial chain affecting
-        publisher coverage incentives. The chain: (1) Hyperscalers spend $650B+ on AI
-        capex → (2) Capex flows to Nvidia GPUs ($46.7B Q2 FY26) → (3) Nvidia invests
-        $30B in OpenAI → (4) OpenAI buys MORE Nvidia GPUs → (5) OpenAI licenses
-        publisher content ($300-400M/yr, 20+ deals) → (6) Publishers cover the AI
-        capex story favorably → (7) Positive capex narrative justifies more hyperscaler
-        spending → Loop repeats. No prior mechanism mapped how the GPU infrastructure
-        layer creates secondary publisher financial incentives.'
+      overview: 'Nvidia sits at the CENTER of a circular financial chain affecting publisher coverage incentives. The chain:
+        (1) Hyperscalers spend $650B+ on AI capex → (2) Capex flows to Nvidia GPUs ($46.7B Q2 FY26) → (3) Nvidia invests $30B
+        in OpenAI → (4) OpenAI buys MORE Nvidia GPUs → (5) OpenAI licenses publisher content ($300-400M/yr, 20+ deals) → (6)
+        Publishers cover the AI capex story favorably → (7) Positive capex narrative justifies more hyperscaler spending →
+        Loop repeats. No prior mechanism mapped how the GPU infrastructure layer creates secondary publisher financial incentives.'
       mechanism_type: hardware_investor_circular_incentive
       publisher_incentive_chain:
         layer_1: Nvidia GPU monopoly generates ~$180B+ annual revenue from AI infrastructure
         layer_2: Nvidia invests $30B in OpenAI (its largest non-customer investment)
         layer_3: OpenAI licenses publisher content at $300-400M/yr
-        layer_4: Publishers covering AI capex favorably sustains the spending that funds
-          ALL layers above
-        layer_5: Publications with OpenAI deals have dual incentive — protect OpenAI deal
-          revenue AND the AI capex narrative that sustains Nvidia valuation
+        layer_4: Publishers covering AI capex favorably sustains the spending that funds ALL layers above
+        layer_5: Publications with OpenAI deals have dual incentive — protect OpenAI deal revenue AND the AI capex narrative
+          that sustains Nvidia valuation
       hyperscaler_capex_2026:
         meta_b: 130-145
         microsoft_b: 105
         alphabet_b: 185
         amazon_b: 200
         combined_b: 650+
-        note: All four are Nvidia's TOP customers. All four contribute to the $650B+
-          that flows primarily to Nvidia GPUs.
-    meta_contrast: 'Meta is one of Nvidia largest GPU customers ($130-145B capex 2026)
-      yet Nvidia $30B OpenAI investment financially aligns with Meta primary AI competitor.
-      OpenAI proprietary API model competes directly with Meta open-source Llama.
-      Meta supply chain for Ray-Ban glasses (EssilorLuxottica frame design, custom AI
-      silicon, Qualcomm Snapdragon AR1 Gen 1) has ZERO publisher advertising relationships
-      through the frame partner (EssilorLuxottica ~€90B market cap, zero tech publication
-      ads). Samsung Galaxy Glasses supply chain (Samsung + Google + Qualcomm) has TRIPLE
-      entity financial chains. Nvidia investment in OpenAI creates ADDITIONAL asymmetry:
-      publications with OpenAI content deals are financially connected to Nvidia through
-      OpenAI, but have no equivalent connection to Meta through EssilorLuxottica.'
+        note: All four are Nvidia's TOP customers. All four contribute to the $650B+ that flows primarily to Nvidia GPUs.
+    meta_contrast: 'Meta is one of Nvidia largest GPU customers ($130-145B capex 2026) yet Nvidia $30B OpenAI investment financially
+      aligns with Meta primary AI competitor. OpenAI proprietary API model competes directly with Meta open-source Llama.
+      Meta supply chain for Ray-Ban glasses (EssilorLuxottica frame design, custom AI silicon, Qualcomm Snapdragon AR1 Gen
+      1) has ZERO publisher advertising relationships through the frame partner (EssilorLuxottica ~€90B market cap, zero tech
+      publication ads). Samsung Galaxy Glasses supply chain (Samsung + Google + Qualcomm) has TRIPLE entity financial chains.
+      Nvidia investment in OpenAI creates ADDITIONAL asymmetry: publications with OpenAI content deals are financially connected
+      to Nvidia through OpenAI, but have no equivalent connection to Meta through EssilorLuxottica.'
     publisher_financial_relationships:
       direct_deals: 0
-      note: Nvidia has ZERO direct content licensing or advertising deals with any of
-        the tech publications in the MediaScope corpus. All publisher financial influence
-        is INDIRECT through the OpenAI investment chain and GTC media access control.
+      note: Nvidia has ZERO direct content licensing or advertising deals with any of the tech publications in the MediaScope
+        corpus. All publisher financial influence is INDIRECT through the OpenAI investment chain and GTC media access control.
     gtc_media_access:
-      overview: 'GTC (GPU Technology Conference) is the largest AI industry event,
-        attracting 300K+ attendees (Mar 2026). Press access, Jensen Huang interviews,
-        GPU launch embargoes, and exclusive briefings create de facto editorial incentive
-        alignment without explicit financial transactions. Publications that lose GTC
-        access lose coverage of the most important infrastructure company. This is a
-        SOFT financial incentive — access = content = traffic = revenue.'
+      overview: GTC (GPU Technology Conference) is the largest AI industry event, attracting 300K+ attendees (Mar 2026). Press
+        access, Jensen Huang interviews, GPU launch embargoes, and exclusive briefings create de facto editorial incentive
+        alignment without explicit financial transactions. Publications that lose GTC access lose coverage of the most important
+        infrastructure company. This is a SOFT financial incentive — access = content = traffic = revenue.
     mechanisms:
     - mechanism_id: 152
       mechanism_name: Nvidia-OpenAI GPU-Capital Circularity Publisher Incentive Chain
