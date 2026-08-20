@@ -17588,6 +17588,223 @@ cross_publication_findings:
           get alarm framing.
     test_file: 'tests/test_verge_apple_triple_camera_wearable_privacy_vocabulary_zero_aug19.py'
 
+  kif_leswing_cnbc_cross_entity_ceo_attribution_vocabulary_asymmetry:
+    mechanism_id: 191
+    mechanism_name: 'Kif Leswing (CNBC / NBCUniversal / Comcast) Cross-Entity CEO-Attribution vs Product-Capability Vocabulary Asymmetry'
+    mechanism_type: journalist_cross_entity_ceo_attribution_vocabulary_asymmetry
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.72
+    publication: 'CNBC (NBCUniversal / Comcast)'
+    journalist:
+      name: 'Kif Leswing'
+      publication: 'CNBC'
+      role: 'Senior Technology Correspondent'
+      beat: 'Silicon Valley tech companies — Apple, Nvidia, chipmakers, Meta, AI'
+      parent_company: 'NBCUniversal (Comcast Corporation)'
+      samsung_source_access: >
+        CNBC broke Samsung Galaxy Glasses specifications at MWC 2026 on March 6
+        with exclusive Jay Kim (Executive VP of Mobile at Samsung) interview.
+        Samsung exec James Choi provided exclusive pricing positioning quotes
+        at Galaxy Unpacked (Jul 22, 2026). Exclusive executive access signals
+        preferential source relationship that correlates with aspirational framing.
+    entities:
+    - samsung
+    - google
+    - meta
+    key_finding: >
+      Kif Leswing frames Meta smart glasses through CEO-attribution vocabulary
+      that personalizes product strategy as Zuckerberg stubbornness, while
+      Samsung/Google coverage uses product-capability framing with zero CEO
+      personalization and zero privacy alarm. CNBC broke Samsung specs at MWC
+      with exclusive EVP access, signaling preferential source relationship.
+    finding_summary: >
+      CNBC senior technology correspondent Kif Leswing wrote "Meta announces
+      new smart glasses starting at $299, as Zuckerberg keeps pushing wearables"
+      — a headline that personalizes Meta entire product category to CEO
+      persistence. The article frames Meta through CEO attribution: "as CEO
+      Mark Zuckerberg continues his push into wearables." Samsung/Google coverage
+      at CNBC uses product-capability vocabulary: Jay Kim EVP interview focuses
+      on "AI-powered" features, "eye-level camera," "tethered architecture."
+      Samsung exec James Choi quoted on pricing: "We want to make it reasonable...
+      premium. It doesn't mean that it's crazy expensive." Zero CEO personalization
+      for Samsung (no JH Lee/Roh attribution). Zero privacy alarm vocabulary
+      for Samsung despite identical camera hardware (12MP, Qualcomm AR1/Snapdragon).
+      CNBC cited IDC data framing Meta as dominant incumbent ("controlled 69.2%
+      of the smart-glasses market") rather than innovator. The CEO-attribution
+      pattern is a softer variant of adversarial framing — it does not use alarm
+      vocabulary but systematically reduces Meta product strategy to one person
+      stubbornness while Samsung product strategy is framed as institutional
+      innovation. Financial incentive: Google and Samsung are among CNBC largest
+      advertisers. Google provides the Android XR platform for Samsung glasses.
+      Comcast/NBCUniversal Peacock streaming competes with Meta video ambitions.
+      Meta has $0 parent-company financial relationship with Comcast.
+    meta_vocabulary:
+      ceo_attribution_terms:
+        - 'Zuckerberg keeps pushing wearables'
+        - 'CEO Mark Zuckerberg continues his push into wearables'
+        - 'Zuckerberg (headline personalization)'
+      ceo_personalization: >
+        Zuckerberg named in headline and lede. Product strategy attributed to CEO
+        personal push rather than company institutional strategy or market response.
+      headline: 'Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables'
+      price_framing: '$299 smart glasses, at least $80 less than entry-level second-generation'
+      market_dominance_framing: >
+        CNBC cited IDC: "Meta controlled 69.2% of the smart-glasses market during
+        the first quarter of 2026." Frames Meta as dominant incumbent to be
+        challenged rather than innovator to be praised.
+      source_article_url: 'https://www.cnbc.com/2025/09/17/meta-announces-new-smart-glasses-starting-at-299.html'
+      alarm_terms_count: 0
+      tone: 'CEO-attributed persistence (-0.10 to -0.20 implicit)'
+    samsung_google_vocabulary:
+      aspirational_terms:
+        - 'premium product'
+        - 'reasonable pricing'
+        - 'AI-powered glasses'
+        - 'Gemini-powered features'
+        - 'eye-level camera'
+        - 'tethered architecture'
+        - 'rich immersive multimodal AI experiences'
+      ceo_personalization_count: 0
+      privacy_alarm_terms: 0
+      exclusive_exec_access:
+        jay_kim: 'Executive VP of Mobile at Samsung — CNBC exclusive MWC interview'
+        james_choi: 'Samsung executive — exclusive Galaxy Unpacked pricing quotes'
+      pricing_frame: >
+        Samsung exec James Choi: "We want to make it reasonable, but...
+        the quality of the product itself, we want to position as premium.
+        It doesn't mean that it's crazy expensive." Aspirational pricing
+        with executive credibility framing.
+      tone: 'aspirational (+0.30 to +0.45)'
+    ceo_attribution_differential:
+      meta_ceo_mentions: 3
+      samsung_ceo_mentions: 0
+      meta_strategy_personalized: true
+      samsung_strategy_institutional: true
+      framing_effect: >
+        CEO personalization converts company product strategy into personal
+        stubbornness narrative. "Zuckerberg keeps pushing" implies persistence
+        despite market doubt. Samsung institutional framing ("Samsung plans,"
+        "the company confirmed") normalizes identical product strategy as
+        routine corporate innovation.
+    capability_parity:
+      samsung_camera: '12MP eye-level camera with LED indicator and privacy-mode toggle'
+      meta_camera: '12MP ultra-wide camera with LED privacy indicator and v26 tamper enforcement'
+      processor_comparison: 'Samsung: Qualcomm Snapdragon AR1 Gen1. Meta: Qualcomm platform.'
+      samsung_privacy_led: 'LED indicator light confirmed by official images and 9to5Google'
+      meta_privacy_enforcement: 'LED tamper detection + camera disable (v26 mandatory update Jul 7 2026)'
+      samsung_privacy_alarm_count: 0
+    financial_context:
+      cnbc_owner: 'NBCUniversal (wholly owned by Comcast Corporation)'
+      google_advertising_relationship: >
+        Google is among CNBC largest advertisers across digital and television.
+        Google/YouTube ad buys on CNBC business programming are substantial.
+      samsung_advertising_relationship: >
+        Samsung is the 4th-largest advertiser globally ($9.7B annual ad spend).
+        Samsung is a significant CNBC advertiser across consumer electronics
+        and mobile product launches.
+      google_android_xr_partnership: >
+        Google provides Android XR operating system and Gemini AI for Samsung
+        Galaxy Glasses. Google is the direct PLATFORM PARTNER. Coverage that
+        frames Samsung glasses positively implicitly validates Google platform.
+      meta_financial_relationship: '$0 parent-company financial relationship with Comcast/NBCUniversal'
+      peacock_meta_competition: >
+        Comcast NBCUniversal Peacock streaming service competes with Meta video
+        distribution ambitions. Comcast has structural incentive for Meta not
+        to succeed in content/video distribution.
+    confounders:
+      - description: >
+          Meta 69.2% market share makes CEO framing journalistically defensible.
+          When one company dominates a category, CEO profiles and personalized
+          strategy framing are standard business journalism practice. Samsung
+          as challenger gets product-capability frame naturally.
+        strength: STRONG
+        rebuttal: >
+          CEO personalization in HEADLINES is an editorial choice, not a
+          journalistic requirement. Plenty of market-dominant companies get
+          product-led headlines (Apple iPhone announcements are rarely framed
+          as "Cook keeps pushing phones"). The choice to put "Zuckerberg keeps
+          pushing" in the headline while Samsung gets product-capability framing
+          is a vocabulary selection, not a market-share mandate.
+      - description: >
+          Kif Leswing primary beat is chips/semiconductors and Apple, not wearables.
+          The Meta smart glasses article may be a one-off rather than sustained
+          coverage pattern. Beat specialization limits the cross-entity comparison.
+        strength: MODERATE
+        rebuttal: >
+          The publication-level pattern is more relevant than individual journalist
+          beat. CNBC as institution broke Samsung specs with exclusive executive
+          access (Jay Kim, James Choi), signaling editorial prioritization.
+          The framing asymmetry exists at the publication level regardless of
+          which individual reporter writes each piece.
+      - description: >
+          CNBC is financial/business journalism. CEO-attribution framing is a
+          standard business press convention — investors care about CEO vision
+          and commitment. This is genre, not bias.
+        strength: MODERATE
+        rebuttal: >
+          If CEO-attribution is a business journalism genre convention, it should
+          apply equally to Samsung coverage. Samsung CEO JH Lee and MX head
+          Roh Tae-moon are never named in Samsung glasses headlines. The
+          convention activates selectively by entity, suggesting editorial choice
+          rather than genre requirement.
+      - description: >
+          Samsung glasses had not shipped yet during CNBC MWC coverage, so
+          the framing naturally focuses on product capabilities and launch
+          plans rather than CEO strategy.
+        strength: MODERATE
+        rebuttal: >
+          Meta $299 glasses article was ALSO a product announcement. Both were
+          new-product-announcement articles. The genre match is precise. Yet
+          Meta gets CEO-personalized headline, Samsung gets product-capability
+          headline. The pre-launch framing argument does not explain the CEO
+          attribution differential.
+      - description: >
+          CNBC did not use any explicit alarm vocabulary for Meta either.
+          The asymmetry is in CEO personalization, not alarm vs aspirational.
+          This is a milder form of framing differential than publications
+          using "surveillance" or "creepy."
+        strength: WEAK
+        rebuttal: >
+          CEO-attribution asymmetry is a NOVEL framing mechanism distinct from
+          alarm vocabulary. It functions as what could be called "soft
+          delegitimization" — reducing corporate strategy to personal
+          stubbornness without using explicit negative terms. The absence of
+          alarm vocabulary makes this a subtler but still systematic framing
+          choice that should be documented alongside harder vocabulary
+          bifurcation patterns.
+    cross_references:
+      - mechanism_id: 187
+        relationship: >
+          Mechanism 187 documents Sumukh Rao SlashGear intra-article vocabulary
+          bifurcation with explicit alarm terms. This mechanism documents a
+          softer variant — CEO-attribution framing without alarm vocabulary
+          at CNBC, expanding the taxonomy of entity-based framing asymmetry.
+      - mechanism_id: 183
+        relationship: >
+          Mechanism 183 documents Hadlee Simons Android Authority cross-entity
+          coverage selection. This mechanism adds CNBC as another publication
+          where Samsung/Google receive systematically different framing than Meta,
+          extending the cross-publication pattern to business journalism.
+      - mechanism_id: 160
+        relationship: >
+          Mechanism 160 documents Nadeem Sarwar Digital Trends Managing Editor
+          cross-entity editorial direction. This mechanism adds Kif Leswing
+          at CNBC as another named journalist with entity-specific vocabulary
+          selection, complementing the journalist-level evidence base.
+      - mechanism_id: 188
+        relationship: >
+          Mechanism 188 documents Samsung financial architecture including
+          advertising spend and Mistral investment. CNBC Samsung advertising
+          dependency is one instance of Samsung global $9.7B ad spend creating
+          coverage incentive alignment across publications.
+    source_urls:
+      - 'https://muckrack.com/kif-leswing/articles'
+      - 'https://www.eweek.com/news/samsung-google-first-android-xr-smart-glasses/'
+      - 'https://www.eweek.com/news/samsung-galaxy-glasses-ai-smart-glasses-launch/'
+      - 'https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation'
+    test_file: 'tests/test_kif_leswing_cnbc_cross_entity_ceo_attribution_vocabulary_asymmetry_aug20.py'
+    test_count: 65
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -20917,4 +21134,70 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-research_period: 2024-08-01 to 2026-08-19
+  wareable_buying_guide_cross_entity_samsung_meta_privacy_bifurcation:
+    mechanism_id: 191
+    mechanism_name: 'Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm'
+    mechanism_type: publication_editorial_cross_entity_buying_guide_privacy_bifurcation
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.82
+    entities:
+    - meta
+    - samsung
+    - google
+    test_file: test_wareable_buying_guide_cross_entity_samsung_meta_privacy_vocabulary_bifurcation_aug20.py
+    test_count: 42
+    finding_summary: >
+      In Wareable's definitive smart glasses buying guide (Aug 2026), the editorial team
+      applies bifurcated privacy vocabulary within the SAME comparative article. Meta receives
+      extensive alarm vocabulary: "enable stalking and harassment," "covertly film in public,"
+      "courtroom banned," "70 civil rights organizations," "pushed privacy from a footnote
+      into a genuine buying consideration." Samsung Android XR glasses — same camera capabilities,
+      same Qualcomm chip — receive ZERO privacy vocabulary. Samsung described neutrally as
+      "formally reveal its first pair of smart glasses." Even Realities G2 (no camera) recommended
+      as #1 pick to "sidestep the entire issue" — but Samsung's camera glasses receive no such
+      warning despite being recommended for upcoming purchase. Financial alignment: Wareable uses
+      affiliate links (Samsung high revenue potential), Google is primary traffic source, Meta has
+      $0 relationship.
+    confounders:
+    - name: Market position timing
+      strength: STRONG
+      description: >
+        Meta glasses shipping with documented incidents; Samsung pre-launch with no misuse.
+        But guide recommends Samsung for purchase, so privacy should apply equally.
+    - name: Meta-specific incidents
+      strength: STRONG
+      description: >
+        Meta has facial recognition code, human review, LED tampering incidents. Samsung has none.
+        But guide frames camera-and-AI approach generically as problematic, then only applies
+        scrutiny to Meta products.
+    - name: Brand reputation differential
+      strength: MODERATE
+      description: >
+        Meta/Facebook has long privacy history. But Google also has major privacy controversies
+        and Google Glass was origin of Glasshole backlash. Zero privacy vocabulary for Google.
+    - name: Editorial format
+      strength: WEAK
+      description: >
+        Buying guides prioritize purchase advice. But guide changed #1 pick for privacy reasons,
+        so privacy is clearly a decisive editorial factor that should apply to all camera products.
+    cross_references:
+    - mechanism_id: 187
+      relationship: parallels
+      description: >
+        SlashGear intra-article bifurcation same pattern within comparative article.
+    - mechanism_id: 70
+      relationship: extends
+      description: >
+        Boone Ashworth WIRED cross-entity pattern at buying guide editorial level.
+    - mechanism_id: 190
+      relationship: complements
+      description: >
+        Verge Apple triple-camera privacy vocabulary zero parallels Samsung zero.
+    - mechanism_id: 33
+      relationship: supports
+      description: >
+        Planned surveillance zero-scrutiny pattern: Samsung/Google camera AI agent
+        capabilities receive zero surveillance framing.
+    source_urls:
+    - https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest
+research_period: 2024-08-01 to 2026-08-20

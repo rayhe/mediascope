@@ -1,3 +1,26 @@
+## Iteration #194 — Thu 2026-08-20 00:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #191: Kif Leswing (CNBC / NBCUniversal / Comcast) Cross-Entity CEO-Attribution vs Product-Capability Vocabulary Asymmetry
+
+**Type:** Journalist Cross-Entity Tracking — CNBC × Samsung/Google × Meta
+**Asymmetry Score:** 0.72
+**Entities:** Samsung, Google, Meta
+
+**Core Finding:**
+CNBC senior technology correspondent Kif Leswing frames Meta smart glasses through CEO-attribution vocabulary ("Zuckerberg keeps pushing wearables," "continues his push") that personalizes product strategy as executive stubbornness, while Samsung/Google smart glasses coverage uses product-capability vocabulary ("premium," "reasonable," "AI-powered") with zero CEO personalization and zero privacy vocabulary. CNBC broke Samsung Galaxy Glasses specifications at MWC 2026 (March 6) with exclusive executive access (Jay Kim EVP interview, James Choi pricing quotes), signaling preferential Samsung source access that parallels aspirational framing.
+
+Novel contribution: CEO-attribution is a distinct framing mechanism from alarm vocabulary. It functions as "soft delegitimization" — reducing corporate strategy to personal stubbornness without explicit negative terms. This expands the taxonomy of entity-based framing asymmetry beyond alarm/aspirational dichotomy.
+
+Financial context: CNBC (NBCUniversal/Comcast). Google and Samsung are among CNBC's largest advertisers. Google provides Android XR platform for Samsung glasses. Comcast/NBCUniversal's Peacock competes with Meta's video ambitions. Meta has $0 parent-company financial relationship with Comcast.
+
+**Confounders:** 5 (1 STRONG: Meta market dominance makes CEO framing defensible; 3 MODERATE: beat specialization + financial journalism genre + pre-launch timing; 1 WEAK: absence of explicit alarm vocabulary)
+**Cross-references:** Mechanisms #187 (parallels Sumukh Rao alarm bifurcation), #183 (extends Hadlee Simons coverage selection to business journalism), #160 (complements Nadeem Sarwar journalist-level evidence), #188 (Samsung $9.7B ad spend context)
+**Source URLs:** Muck Rack, eWeek (CNBC citations), Wareable (CNBC Jay Kim interview)
+**Test file:** `test_kif_leswing_cnbc_cross_entity_ceo_attribution_vocabulary_asymmetry_aug20.py` — 10 classes, 65 tests (all passing)
+**Doc counts:** 17,892 tests across 486 files
+
+---
+
 ## Iteration #193 — Wed 2026-08-19 23:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #190: The Verge (PMC/PMX) Apple Triple Camera Wearable Ecosystem — Privacy Vocabulary Zero vs Meta Vocabulary Saturation
