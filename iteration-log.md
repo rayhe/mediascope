@@ -1,3 +1,76 @@
+## Iteration #188 — Wed 2026-08-19 17:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #186: Engadget (Yahoo/Apollo) Triple Camera Device Privacy Vocabulary Bifurcation — Snap Spectacles (0 alarm) + OpenAI Companion (0 alarm) vs Meta Ray-Ban (15+ alarm terms)
+
+**Type:** Competitor Coverage Deep Dive — Intra-Publication Triple Device Vocabulary Inversion
+**Publication:** Engadget (Yahoo / Apollo Global Management)
+**Competitor pairs analyzed:** Snap Spectacles AND OpenAI companion device vs Meta Ray-Ban
+**Asymmetry Score:** 0.85
+
+**Core Finding:**
+Engadget covers three camera-equipped devices within a ~2-month editorial window (Jun–Aug 2026) with wildly divergent privacy vocabulary:
+
+1. **Snap Spectacles (Jun 16, 2026) — 0 alarm terms:**
+   - Headline: "Evan Spiegel Doesn't Want You To Call Snap Specs AI Glasses"
+   - Lets CEO redefine product as "a new type of computer, a see-through computer"
+   - Privacy concerns EXPLICITLY displaced to Meta: "There's the Meta of it all"
+   - Recording capability called "almost tangential use case" — unchallenged
+   - ZERO questions about data handling, contractor review, retention policies
+   - Interviewer: Karissa Bell
+   - Source: https://Www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
+
+2. **OpenAI Companion Device (Jul 15, 2026) — 0 alarm terms:**
+   - Headline: "OpenAI's First Device Will Reportedly Be A 'Humanlike' Rechargeable Speaker"
+   - Camera described as enabling "context about surroundings for personalized responses"
+   - Email access + continuous learning + mechanical movement = "humanlike companion"
+   - ZERO investigative questions about camera data handling
+   - Author: Mariella Moon
+   - Source: https://www.engadget.com/2215417/openai-first-device-humanlike-rechargeable-speaker/
+
+3. **Meta Ray-Ban (6+ articles, Mar–Aug 2026) — 15+ alarm terms:**
+   - "creep on women" (Jul 7)
+   - "Glassholes," "criminal complaint," "criminal offense" (Aug 12)
+   - "surveillance conduit," "stalking, extortion, identity theft" (Mar)
+   - "intimate video," "nudity," "sexual activity" (Mar)
+   - Standalone article: "Are Ray-Ban Meta Glasses A Privacy Risk?" (Aug 7)
+   - 5 articles dedicated to Meta camera privacy. 0 for Snap cameras. 0 for OpenAI cameras.
+
+**Capability Comparison (the inversion):**
+| Capability | Meta Ray-Ban | Snap Spectacles | OpenAI Companion |
+|---|---|---|---|
+| Camera | ✓ | ✓ | ✓ |
+| Always-on sensors | ✗ | ✓ | ✓ |
+| Reads emails | ✗ | ✗ | ✓ |
+| Facial recognition | ✗ (dormant, removed) | ✗ | ✓ (planned Face ID-like) |
+| AR display | ✗ | ✓ | ✗ |
+| Continuous learning | ✗ | ✓ | ✓ |
+| **Alarm terms** | **15+** | **0** | **0** |
+
+Meta has the FEWEST invasive capabilities but receives ALL the alarm vocabulary.
+
+**Novel Contribution:**
+FIRST triple-device comparison at a single publication documenting that privacy vocabulary is inversely correlated with device capability count. Two zero-alarm comparators (not just one) make the pattern harder to dismiss as a single-article anomaly. Same-publication comparison controls for house style variation.
+
+**Financial Context:**
+- Engadget owned by Yahoo (Apollo Global Management, $5B acquisition from Verizon, 2021)
+- Yahoo revenue depends on Google Search syndication + Google Display ads
+- No documented content licensing deal between Yahoo/Engadget and Meta
+- No documented financial relationship with Snap or OpenAI
+- Meta competes with Yahoo for digital advertising revenue
+
+**Confounders:** 5 (2 STRONG: Meta privacy track record, Meta 82% market share; 2 MODERATE: Snap not shipped yet, different journalists; 1 WEAK: OpenAI device unreleased)
+**Cross-references:** #109 (Engadget/Yahoo Google dependency), #159 (OpenAI companion vocabulary bifurcation), #98 (TechCrunch/Yahoo Snap zero vocabulary), #182 (Digital Trends OpenAI aspirational vs Meta adversarial)
+
+**Files Changed:**
+- Added: `tests/test_engadget_snap_openai_triple_camera_device_privacy_vocabulary_bifurcation_aug19.py` (10 classes, 46 tests)
+- Updated: `profiles/competitor-coverage-research.yaml` (mechanism #186)
+- Updated: `README.md` (test count 17,498→17,544, files 478→479, new table entry)
+- Updated: `docs/ARCHITECTURE.md` (test/file counts synced, new test file entry)
+
+**Stats:** 46 tests in `test_engadget_snap_openai_triple_camera_device_privacy_vocabulary_bifurcation_aug19.py`
+**Cumulative:** 186 mechanisms documented, ~17,544 tests across 479 files
+
+---
 ## Iteration #187 — Wed 2026-08-19 16:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Two New Podcast/Newsletter Entries: Dispatch Markets Economic Pipeline + Meta's Own Counter-Narrative

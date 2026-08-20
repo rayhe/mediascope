@@ -17124,6 +17124,75 @@ cross_publication_findings:
     - https://thedispatch.com/newsletter/dispatch-markets/wearables-glasses-privacy-fashion-surveillance/
     - https://thedispatch.com/podcast/dispatch-podcast/the-hidden-privacy-cost-of-wearable-tech/
     - https://www.tapesearch.com/podcast/the-dispatch-podcast/1493229344
+  - mechanism_id: 186
+    type: competitor_coverage_triple_device_vocabulary_bifurcation
+    date_added: '2026-08-19'
+    asymmetry_score: 0.85
+    entities:
+    - meta
+    - snap
+    - openai
+    finding_summary: 'Engadget (Yahoo/Apollo) covers three camera-equipped devices within a
+      ~2-month editorial window with wildly divergent privacy vocabulary: Snap Spectacles
+      (Jun 16, ZERO alarm terms, Spiegel interview lets CEO redefine product as "computer"
+      and attribute privacy blame to Meta), OpenAI companion device (Jul 15, ZERO alarm terms,
+      camera+email-reading+always-on framed as "humanlike companion"), and Meta Ray-Ban (6+
+      articles Mar-Aug, 15+ alarm terms: "creep on women," "Glassholes," "criminal offense,"
+      "surveillance conduit," "stalking, extortion, identity theft"). The capability comparison
+      makes the vocabulary gap stark: Meta has FEWER invasive capabilities (camera only, LED
+      indicator, photos on device) than both Snap (camera+AR+AI+dual chips) and OpenAI
+      (camera+email access+continuous learning+Face ID-like authentication). FIRST triple-device
+      comparison at a single publication documenting privacy vocabulary inversely correlated
+      with device capability count.'
+    journalist: Multiple (Karissa Bell - Snap, Mariella Moon - OpenAI, multiple - Meta)
+    publication: Engadget (Yahoo / Apollo Global Management)
+    confounding_factors:
+    - strength: STRONG
+      description: 'Meta has documented privacy incidents (Cambridge Analytica, FTC $5B, Svenska Dagbladet
+        contractor review). Snap and OpenAI do not (yet). However, absence of incidents does not mean
+        absence of capability risk — Snap Spectacles have cameras, OpenAI reads emails.'
+    - strength: STRONG
+      description: 'Meta has 82% smart glasses market share; disproportionate scrutiny partly justified by
+        dominance. However, scrutiny should scale ARTICLE VOLUME, not VOCABULARY SELECTION. More articles
+        is proportional; alarm vocabulary vs aspirational vocabulary is editorial choice.'
+    - strength: MODERATE
+      description: 'Snap Spectacles not yet shipped (Fall 2026 target). Pre-ship coverage tends aspirational.
+        However, Engadget interview explicitly raises smart glasses privacy concerns then attributes them
+        ONLY to Meta, not to Snap — actively displacing concern rather than deferring it.'
+    - strength: MODERATE
+      description: 'Different journalists wrote each piece (Karissa Bell for Snap, Mariella Moon for OpenAI,
+        multiple for Meta). However, headline framing and editorial voice are publication-level decisions,
+        not individual writer choices.'
+    - strength: WEAK
+      description: 'OpenAI device is unreleased and coverage is about reports not product. However, Meta
+        facial recognition (also unreleased/dormant) generated alarm vocabulary, showing alarm is applied
+        to unreleased Meta capabilities too.'
+    cross_references:
+    - mechanism_id: 109
+      relationship: extends
+      description: 'Engadget/Yahoo/Google revenue dependency. This mechanism extends to show same publication
+        applies different vocabulary to Meta (adversarial) vs Snap and OpenAI (aspirational).'
+    - mechanism_id: 159
+      relationship: extends
+      description: 'OpenAI companion vs Meta surveillance vocabulary bifurcation at Digital Trends. This
+        mechanism extends the same pattern to Engadget and adds Snap for triple comparison.'
+    - mechanism_id: 98
+      relationship: complements
+      description: 'TechCrunch (also Yahoo/Apollo) Snap Specs zero privacy vocabulary. Same pattern at
+        another Yahoo/Apollo property strengthens ownership-level editorial pattern hypothesis.'
+    - mechanism_id: 182
+      relationship: complements
+      description: 'Digital Trends OpenAI companion aspirational vs Meta adversarial. Same OpenAI-vs-Meta
+        vocabulary bifurcation at Engadget confirms cross-publication consistency.'
+    source_urls:
+    - https://Www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
+    - https://www.engadget.com/2215417/openai-first-device-humanlike-rechargeable-speaker/
+    - https://www.engadget.com/2235857/german-nonprofit-files-criminal-complaint-over-meta-smart-glasses-privacy/
+    - https://www.engadget.com/2210283/meta-disable-camera-glasses-tamper-with-recording-led/
+    - https://www.engadget.com/social-media/meta-hit-with-a-class-action-lawsuit-over-smart-glasses-privacy-claims-182846817.html
+    - https://www.engadget.com/ai/metas-ai-display-glasses-reportedly-share-intimate-videos-with-human-moderators-135939855.html
+    - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
