@@ -1,3 +1,37 @@
+## Iteration #198 — Thu 2026-08-20 03:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #194: Gizmodo Apple N50 Intra-Article Headline Presupposition Asymmetry
+
+**Publication:** Gizmodo (Keleops AG)
+**Competitor entity:** Apple (N50 smart glasses)
+**Asymmetry Score:** 0.85
+
+**Core Discovery — Headline Presupposition Asymmetry**
+
+Within a SINGLE Gizmodo article about Apple's upcoming N50 smart glasses (by James Pero, ~Jun 2026), the HEADLINE brands Meta as "privacy-invading" while the article body describes Apple's IDENTICAL hardware (cameras + microphones for photos/video, AI assistant, $200-$500 price range) with neutral product-specification language. This is a distinct mechanism from journalist-level bifurcation (#31) because it operates at the HEADLINE level — the most widely distributed, shared, and indexed text unit.
+
+**Three-journalist convergence (same publication, same pattern, $0 financial ties to both):**
+
+1. **James Pero** — "Apple Is Coming for Meta's Privacy-Invading Lunch" — 11 Meta adversarial terms (walking panopticons, surveillance state, breach of social contract, creeps, extorted) vs 0 Apple privacy terms
+2. **Raymond Wong** — "Apple's Smart Glasses Are Stepping Into a Privacy Minefield" — Apple framed as "company built around privacy" navigating a problem Meta created; Meta as "built around collecting data for financial gain"
+3. **Matt Wille** — "The Latest Apple Smart Glasses Rumor Sounds Like a Long Shot" — Apple cameras mentioned as "Cameras? Most likely" with ZERO privacy vocabulary
+
+**Natural experiment strength:** Gizmodo has $0 financial relationship with BOTH Apple and Meta (documented in profile). This rules out direct financial incentive as the driver. The asymmetry documents NARRATIVE CONTAGION — the inherited "Meta = privacy threat" frame propagating through editorial culture regardless of financial relationships.
+
+**Subtle financial alignment noted:** Gizmodo under Keleops operates a "lead-generation-based business model + affiliate revenue." Apple ecosystem products generate higher affiliate revenue per review than Meta's standalone glasses. The $200-$500 Apple glasses within the iPhone/AirPods/Watch ecosystem represent significantly higher affiliate potential.
+
+### Sources
+- https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491
+- https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+- https://gizmodo.com/the-latest-apple-smart-glasses-rumor-sounds-like-a-long-shot-2000753219
+
+### Test Results
+- **New test file:** `test_gizmodo_apple_n50_headline_presupposition_meta_privacy_invading_aug20.py` — 7 classes, 26 tests (all passing)
+- **Updated:** `profiles/gizmodo.yaml` — added 3 Apple N50 coverage examples + mechanism #194 documentation
+- **Test corpus:** 490 files
+
+---
+
 ## Iteration #197 — Thu 2026-08-20 02:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Entry #44: GadgetEvolution YouTube — Affiliate-Privacy Revenue Paradox

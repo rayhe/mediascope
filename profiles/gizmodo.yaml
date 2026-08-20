@@ -356,6 +356,75 @@ cross_entity_coverage:
       tone: positive
       date: 2026-06-09
       notes: Nuanced Apple coverage — not uniformly positive, finds value in details
+    - title: "Apple Is Coming for Meta's Privacy-Invading Lunch With Its Own Smart Glasses in Late 2027, Report Says"
+      tone: meta_adversarial_apple_neutral
+      date: 2026-06
+      author: James Pero
+      url: https://gizmodo.com/apple-is-officially-coming-for-metas-privacy-invading-lunch-with-its-own-smart-glasses-in-late-2027-2000765491
+      notes: >
+        HEADLINE brands Meta as "privacy-invading" while describing Apple's identical
+        camera+mic hardware with neutral product-spec language. 11 adversarial Meta
+        vocabulary terms (walking panopticons, surveillance state, breach of social
+        contract) vs 0 Apple privacy terms. Apple's cameras framed as market specs,
+        Meta's cameras framed as privacy threat. Mechanism #194.
+    - title: "Apple's Smart Glasses Are Stepping Into a Privacy Minefield"
+      tone: sympathetic_protagonist
+      date: 2026-04
+      author: Raymond Wong
+      url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+      notes: >
+        Apple framed as "company built around privacy" navigating Meta's mess.
+        Meta described as "built around collecting data for financial gain."
+        Same camera hardware gets opposite causal attribution: Apple = solution,
+        Meta = problem.
+    - title: "The Latest Apple Smart Glasses Rumor Sounds Like a Long Shot"
+      tone: neutral_tech_rumor
+      date: 2026-05
+      author: Matt Wille
+      url: https://gizmodo.com/the-latest-apple-smart-glasses-rumor-sounds-like-a-long-shot-2000753219
+      notes: >
+        Apple's cameras mentioned as "Cameras? Most likely." — zero privacy
+        vocabulary. Purely technical rumor coverage. Demonstrates that privacy
+        alarm language is optional and only activated by brand.
+    apple_n50_headline_presupposition_asymmetry:
+      mechanism_id: 194
+      date_analyzed: '2026-08-20'
+      finding: >
+        Headline Presupposition Asymmetry: Meta defined as "privacy-invading" in
+        the HEADLINE of an Apple product article. Three Gizmodo journalists (Pero,
+        Wong, Wille) all apply bifurcated framing to Apple vs Meta camera glasses
+        despite $0 financial relationship with either. Apple cameras described with
+        neutral specs or zero privacy language; Meta cameras trigger extensive
+        adversarial vocabulary (11+ terms including "walking panopticons,"
+        "surveillance state," "breach of social contract"). Since Gizmodo has no
+        financial ties to either company, this documents narrative contagion —
+        the inherited "Meta = privacy threat" frame propagating through editorial
+        culture regardless of financial incentives.
+      confounding_factors:
+      - "Gizmodo under Keleops operates an affiliate-commerce model; Apple ecosystem
+        products generate higher affiliate revenue per review than Meta's standalone
+        glasses, creating a subtle coverage incentive."
+      - "Meta has documented real privacy incidents (contractor footage review, LED
+        tampering) that Apple has not yet had — but Apple's glasses are unreleased,
+        so the comparison is between Meta's current product and Apple's planned
+        identical product."
+      cross_references:
+      - mechanism_id: 31
+        relationship: extends
+        description: "James Pero #31 documented review-vs-editorial split. This
+          mechanism documents headline-level presupposition as a distinct
+          amplification vector — the adversarial framing is baked into the
+          article's most-distributed text unit."
+      - mechanism_id: 179
+        relationship: converges
+        description: "Matt Wille #179 documented beat-reporter vocabulary
+          bifurcation for Meta vs Samsung. This mechanism shows Wille applies
+          the same zero-privacy-vocabulary treatment to Apple cameras."
+      - mechanism_id: 74
+        relationship: pattern_match
+        description: "Snap Specs #74 documented camera privacy vocabulary
+          suppression at Gizmodo. Apple N50 gets the same suppression
+          treatment — consistent brand-selective activation."
   google:
     tone: mixed
     examples:
