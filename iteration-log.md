@@ -1,3 +1,26 @@
+## Iteration #195 — Thu 2026-08-20 01:00 PT (Type C: Financial Incentive Mapping / Cross-Entity Buying Guide Analysis)
+
+### Mechanism #192: Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm
+
+**Type:** Cross-Entity Buying Guide Privacy Vocabulary Bifurcation — Wareable × Samsung × Google × Meta
+**Asymmetry Score:** 0.82
+**Entities:** Meta, Samsung, Google
+
+**Core Finding:**
+Wareable's definitive smart glasses buying guide (Aug 2026) applies bifurcated privacy vocabulary within a SINGLE comparative article. Meta receives extensive alarm vocabulary: "enable stalking and harassment," "covertly film in public," "courtroom banned," "70 civil rights organizations," "pushed privacy from a footnote into a genuine buying consideration." Samsung Android XR glasses — same camera capabilities, same Qualcomm AR1 chip — receive ZERO privacy vocabulary. Samsung described neutrally as "formally reveal its first pair of smart glasses."
+
+Key natural experiment strength: Even Realities G2 (no camera) was elevated to #1 pick specifically to "sidestep the entire issue" of camera privacy, yet Samsung's camera glasses get zero such warning despite being recommended for purchase. The editorial team treats camera privacy as a decisive buying factor but applies it selectively by brand.
+
+Financial alignment: Wareable uses affiliate links (Samsung = high revenue potential for hardware purchases), Google is primary traffic source (search dependency), Meta has $0 financial relationship with Wareable. Coverage direction matches financial prediction exactly.
+
+**Confounders:** 4 (2 STRONG: market position timing + Meta-specific incidents; 1 MODERATE: brand reputation differential; 1 WEAK: editorial format)
+**Cross-references:** Mechanisms #187 (parallels SlashGear intra-article bifurcation), #70 (extends WIRED cross-entity at buying guide level), #190 (complements Verge Apple triple-camera privacy vocabulary zero), #33 (supports planned surveillance zero-scrutiny pattern)
+**Source URLs:** wareable.com buying guide
+**Test file:** `test_wareable_buying_guide_cross_entity_samsung_meta_privacy_vocabulary_bifurcation_aug20.py` — 8 classes, 54 tests (all passing)
+**Doc counts:** 17,946 tests across 488 files
+
+---
+
 ## Iteration #194 — Thu 2026-08-20 00:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #191: Kif Leswing (CNBC / NBCUniversal / Comcast) Cross-Entity CEO-Attribution vs Product-Capability Vocabulary Asymmetry

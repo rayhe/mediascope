@@ -17804,6 +17804,72 @@ cross_publication_findings:
       - 'https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation'
     test_file: 'tests/test_kif_leswing_cnbc_cross_entity_ceo_attribution_vocabulary_asymmetry_aug20.py'
     test_count: 65
+  wareable_buying_guide_cross_entity_samsung_meta_privacy_bifurcation:
+    mechanism_id: 192
+    mechanism_name: 'Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm'
+    mechanism_type: publication_editorial_cross_entity_buying_guide_privacy_bifurcation
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.82
+    entities:
+    - meta
+    - samsung
+    - google
+    test_file: test_wareable_buying_guide_cross_entity_samsung_meta_privacy_vocabulary_bifurcation_aug20.py
+    test_count: 54
+    finding_summary: >
+      In Wareable's definitive smart glasses buying guide (Aug 2026), the editorial team
+      applies bifurcated privacy vocabulary within the SAME comparative article. Meta receives
+      extensive alarm vocabulary: "enable stalking and harassment," "covertly film in public,"
+      "courtroom banned," "70 civil rights organizations," "pushed privacy from a footnote
+      into a genuine buying consideration." Samsung Android XR glasses — same camera capabilities,
+      same Qualcomm chip — receive ZERO privacy vocabulary. Samsung described neutrally as
+      "formally reveal its first pair of smart glasses." Even Realities G2 (no camera) recommended
+      as #1 pick to "sidestep the entire issue" — but Samsung's camera glasses receive no such
+      warning despite being recommended for upcoming purchase. Financial alignment: Wareable uses
+      affiliate links (Samsung high revenue potential), Google is primary traffic source, Meta has
+      $0 relationship.
+    confounders:
+    - name: Market position timing
+      strength: STRONG
+      description: >
+        Meta glasses shipping with documented incidents; Samsung pre-launch with no misuse.
+        But guide recommends Samsung for purchase, so privacy should apply equally.
+    - name: Meta-specific incidents
+      strength: STRONG
+      description: >
+        Meta has facial recognition code, human review, LED tampering incidents. Samsung has none.
+        But guide frames camera-and-AI approach generically as problematic, then only applies
+        scrutiny to Meta products.
+    - name: Brand reputation differential
+      strength: MODERATE
+      description: >
+        Meta/Facebook has long privacy history. But Google also has major privacy controversies
+        and Google Glass was origin of Glasshole backlash. Zero privacy vocabulary for Google.
+    - name: Editorial format
+      strength: WEAK
+      description: >
+        Buying guides prioritize purchase advice. But guide changed #1 pick for privacy reasons,
+        so privacy is clearly a decisive editorial factor that should apply to all camera products.
+    cross_references:
+    - mechanism_id: 187
+      relationship: parallels
+      description: >
+        SlashGear intra-article bifurcation same pattern within comparative article.
+    - mechanism_id: 70
+      relationship: extends
+      description: >
+        Boone Ashworth WIRED cross-entity pattern at buying guide editorial level.
+    - mechanism_id: 190
+      relationship: complements
+      description: >
+        Verge Apple triple-camera privacy vocabulary zero parallels Samsung zero.
+    - mechanism_id: 33
+      relationship: supports
+      description: >
+        Planned surveillance zero-scrutiny pattern: Samsung/Google camera AI agent
+        capabilities receive zero surveillance framing.
+    source_urls:
+    - https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
@@ -21134,70 +21200,4 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
-  wareable_buying_guide_cross_entity_samsung_meta_privacy_bifurcation:
-    mechanism_id: 191
-    mechanism_name: 'Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm'
-    mechanism_type: publication_editorial_cross_entity_buying_guide_privacy_bifurcation
-    discovery_date: '2026-08-20'
-    asymmetry_score: 0.82
-    entities:
-    - meta
-    - samsung
-    - google
-    test_file: test_wareable_buying_guide_cross_entity_samsung_meta_privacy_vocabulary_bifurcation_aug20.py
-    test_count: 42
-    finding_summary: >
-      In Wareable's definitive smart glasses buying guide (Aug 2026), the editorial team
-      applies bifurcated privacy vocabulary within the SAME comparative article. Meta receives
-      extensive alarm vocabulary: "enable stalking and harassment," "covertly film in public,"
-      "courtroom banned," "70 civil rights organizations," "pushed privacy from a footnote
-      into a genuine buying consideration." Samsung Android XR glasses — same camera capabilities,
-      same Qualcomm chip — receive ZERO privacy vocabulary. Samsung described neutrally as
-      "formally reveal its first pair of smart glasses." Even Realities G2 (no camera) recommended
-      as #1 pick to "sidestep the entire issue" — but Samsung's camera glasses receive no such
-      warning despite being recommended for upcoming purchase. Financial alignment: Wareable uses
-      affiliate links (Samsung high revenue potential), Google is primary traffic source, Meta has
-      $0 relationship.
-    confounders:
-    - name: Market position timing
-      strength: STRONG
-      description: >
-        Meta glasses shipping with documented incidents; Samsung pre-launch with no misuse.
-        But guide recommends Samsung for purchase, so privacy should apply equally.
-    - name: Meta-specific incidents
-      strength: STRONG
-      description: >
-        Meta has facial recognition code, human review, LED tampering incidents. Samsung has none.
-        But guide frames camera-and-AI approach generically as problematic, then only applies
-        scrutiny to Meta products.
-    - name: Brand reputation differential
-      strength: MODERATE
-      description: >
-        Meta/Facebook has long privacy history. But Google also has major privacy controversies
-        and Google Glass was origin of Glasshole backlash. Zero privacy vocabulary for Google.
-    - name: Editorial format
-      strength: WEAK
-      description: >
-        Buying guides prioritize purchase advice. But guide changed #1 pick for privacy reasons,
-        so privacy is clearly a decisive editorial factor that should apply to all camera products.
-    cross_references:
-    - mechanism_id: 187
-      relationship: parallels
-      description: >
-        SlashGear intra-article bifurcation same pattern within comparative article.
-    - mechanism_id: 70
-      relationship: extends
-      description: >
-        Boone Ashworth WIRED cross-entity pattern at buying guide editorial level.
-    - mechanism_id: 190
-      relationship: complements
-      description: >
-        Verge Apple triple-camera privacy vocabulary zero parallels Samsung zero.
-    - mechanism_id: 33
-      relationship: supports
-      description: >
-        Planned surveillance zero-scrutiny pattern: Samsung/Google camera AI agent
-        capabilities receive zero surveillance framing.
-    source_urls:
-    - https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest
 research_period: 2024-08-01 to 2026-08-20

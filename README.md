@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,892 | Across 486 test files |
+| Tests | ~17,946 | Across 488 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17892 tests** across 486 test files, each covering a different analytical capability:
+MediaScope has **17946 tests** across 488 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1000,3 +1000,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_samsung_mistral_cross_competitor_ai_financial_architecture_warby_q2_aug19.py` | 45 | Mechanism #188: Samsung-Mistral €1B Investment — Cross-Competitor AI Financial Architecture. Samsung's reported €1B Mistral AI investment (FT Jul 22, 2026) completes 5-layer anti-Meta financial architecture: (1) AI Models — Mistral (Meta Llama competitor) + Google Gemini, (2) Platform — Android XR, (3) Silicon — Qualcomm co-marketing 50/50, (4) Frames — Warby Parker ($150M Google equity, Q2 2026 $235.5M revenue, guidance $959-976M EXCLUDES Intelligent Eyewear), (5) Enterprise — Microsoft expanded Mistral deal same week. Creates 5:0 publisher financial incentive asymmetry. Samsung $9.7B 4th-largest advertiser. Warby Parker $292.7M cash, 352 stores, holiday launch imminent. Samsung RX robotics division created Jul 21 — may be primary driver. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK), cross-refs #76, #91, #147, #180. 12 classes, 45 tests |
 | `test_verge_apple_triple_camera_wearable_privacy_vocabulary_zero_aug19.py` | 29 | Mechanism #190: The Verge (PMC/PMX) Apple Triple Camera Wearable Ecosystem — Privacy Vocabulary Zero vs Meta Vocabulary Saturation. Apple THREE camera-equipped wearables (N50 glasses, AI pendant, camera AirPods — total 4+ cameras) with ZERO privacy alarm vocabulary. Apple pendant described as "eyes and ears of iPhone" — functionally identical to Meta super sensing. Victoria Song wrote privacy/surveillance pieces about Meta (doxing, LED tamper, Live AI) but zero privacy coverage of Apple cameras. PMC inherited OpenAI deal, $0 Meta deal, Apple News referral dependency. 4 confounders (2 STRONG, 1 MODERATE, 1 WEAK), cross-refs #75, #101, #186, #33. 7 classes, 29 tests |
 | `test_kif_leswing_cnbc_cross_entity_ceo_attribution_vocabulary_asymmetry_aug20.py` | 65 | Mechanism #191: Kif Leswing (CNBC / NBCUniversal / Comcast) Cross-Entity CEO-Attribution vs Product-Capability Vocabulary Asymmetry. Meta headline "Zuckerberg keeps pushing wearables" personalizes product strategy as CEO stubbornness. Samsung/Google coverage uses product-capability vocabulary ("premium," "reasonable," "AI-powered") with zero CEO personalization and zero privacy terms. CNBC broke Samsung specs at MWC with exclusive Jay Kim EVP interview. Samsung exec Choi "reasonable" and "premium" pricing framing. CNBC (NBCUniversal/Comcast): Google and Samsung major advertisers, Google is Android XR platform partner, Meta $0 parent-company relationship. CEO-attribution as novel soft-delegitimization mechanism. 5 confounders (1 STRONG, 3 MODERATE, 1 WEAK), cross-refs #187, #183, #160, #188. 10 classes, 65 tests |
+| `test_wareable_buying_guide_cross_entity_samsung_meta_privacy_vocabulary_bifurcation_aug20.py` | 54 | Mechanism #192: Wareable Editorial Buying Guide — Samsung/Google Camera Glasses Privacy Vocabulary Zero vs Meta Camera Maximum Privacy Alarm. Wareable's definitive smart glasses buying guide applies bifurcated privacy vocabulary within a SINGLE comparative article: Meta "enable stalking and harassment," "covertly film in public," "courtroom banned," "70 civil rights organizations" — Samsung Android XR glasses (same camera, same Qualcomm chip) receive ZERO privacy vocabulary. Even Realities G2 (no camera) elevated to #1 pick to "sidestep the entire issue" but Samsung camera glasses get zero warning. Wareable affiliate links (Samsung high revenue), Google primary traffic source, Meta $0 relationship. 4 confounders (2 STRONG, 1 MODERATE, 1 WEAK), cross-refs #187, #70, #190, #33. 8 classes, 54 tests |
