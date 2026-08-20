@@ -239,7 +239,8 @@ class TestCrossReferenceIntegrity190to192:
 
     def test_mechanism_191_references_related(self, iteration_log):
         """#191 (Kif Leswing) should reference related journalist cross-entity mechanisms."""
-        m191_match = re.search(r"Mechanism #191(.*?)(?=## Iteration|$)", iteration_log, re.DOTALL)
+        # Use heading pattern to find the ORIGINAL definition, not cross-validation mentions
+        m191_match = re.search(r"### Mechanism #191[:\s](.*?)(?=## Iteration|$)", iteration_log, re.DOTALL)
         if m191_match:
             section = m191_match.group(1)
             has_crossref = any(f"#{n}" in section for n in [183, 187, 160, 188])
