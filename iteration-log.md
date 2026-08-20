@@ -1,3 +1,52 @@
+## Iteration #199 — Thu 2026-08-20 04:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #195: Lance Ulanoff (TechRadar / Future plc) Editor-Level Market-Attribution Privacy Vocabulary Displacement
+
+**Type:** Journalist Cross-Entity Tracking — TechRadar × Samsung × Meta
+**Asymmetry Score:** 0.78
+**Entities:** Samsung, Meta
+
+**Core Discovery — Market-Attribution Privacy Displacement**
+
+Lance Ulanoff — 38-year industry veteran, former EIC of PCMag.com, Mashable, and Lifewire, and former SVP Content at Ziff Davis — demonstrates a DISTINCT cross-entity framing mechanism at TechRadar (Future plc). Unlike the direct alarm vocabulary bifurcation documented in mechanism #115 (where different TechRadar journalists applied different vocabulary to different brands), Ulanoff applies different NARRATIVE FRAMES to equivalent hardware as a SINGLE journalist.
+
+**Three articles, one journalist, two entities:**
+
+1. **Meta Ray-Ban Display Glasses** (Oct 2025): "I wore Meta Ray-Ban Display Glasses — they succeed in almost every way Google Glass failed and I can't wait to wear them again" — 100% product enthusiasm, "Oh, wow moments," ZERO privacy vocabulary, first-person endorsement (+0.85 tone)
+
+2. **Samsung Intelligent Eyewear** (Galaxy Unpacked, Aug 2026): "'If, because of that, we stop innovation, we don't go anywhere': we got a first look at Samsung Intelligent Eyewear, the smart glasses entering a fraught market worried about privacy" — Samsung executive positioned as INNOVATION DEFENDER against market-level privacy anxiety. ZERO direct privacy vocabulary applied to Samsung's cameras. Privacy attributed to "market conditions" that META implicitly created (+0.45 tone)
+
+3. **Samsung XR headset** (Oct 2025): "Samsung's XR headset has arrived, but its smart glasses won't arrive until 2026" — Exclusive VP sit-down interview, aspirational framing ("nearing the execution phase"), ZERO privacy vocabulary (+0.55 tone)
+
+**Novel mechanism taxonomy:**
+
+Market-attribution displacement is DISTINCT from:
+- **Direct alarm vocabulary** (#115): Hector/Berne apply "frightening," "creepy" to Meta → absent for Samsung
+- **Coverage selection silence** (#33): Simply not covering competitor cameras at all
+- **CEO-attribution delegitimization** (#191): Personalizing corporate strategy as executive stubbornness
+
+Market-attribution displacement ACKNOWLEDGES privacy concerns but ATTRIBUTES them to the "market" rather than the specific product, positioning the Samsung executive as heroically defending innovation. Meta is the IMPLIED source of market contamination without receiving direct alarm vocabulary in its OWN review.
+
+**Compound asymmetry:** The same journalist simultaneously celebrates Meta's product (highest tone score in the dataset, +0.85) AND implies Meta is responsible for making the market "fraught" for Samsung. This compound frame means Meta's product gets praised while Meta's category presence gets blamed.
+
+**Career seniority significance:** This is not a junior reporter following beat assignment — it's the former EIC of three publications making deliberate editorial framing choices that set TechRadar's institutional tone. Aligns with #115's finding that editorial leadership (US Managing Editor Krol) was Samsung's aspirational champion.
+
+**Financial alignment:** Future plc has Samsung advertising dependency ($9.7B Samsung global ad spend), Google existential traffic dependency, exclusive Galaxy Unpacked press trip access, and $0 Meta financial relationship. Coverage direction matches financial prediction exactly.
+
+**Confounders:** 5 (2 STRONG: 10-month temporal gap between articles + product lifecycle stage difference; 2 MODERATE: Google Glass redemption narrative + Samsung 'Intelligent Eyewear' rebranding; 1 WEAK: technology difference)
+
+### Sources
+- https://www.techradar.com/computing/virtual-reality-augmented-reality/i-wore-meta-ray-ban-display-glasses-they-succeed-in-almost-every-way-google-glass-failed-and-i-cant-wait-to-wear-them-again
+- https://muckrack.com/LanceUlanoff/articles (Samsung Intelligent Eyewear headline + excerpt)
+- https://www.techradar.com/computing/virtual-reality-augmented-reality/samsung-exec-xr-glasses-are-nearing-the-execution-phase-but-wont-arrive-until-next-year
+
+### Test Results
+- **New test file:** `test_lance_ulanoff_techradar_cross_entity_market_attribution_privacy_displacement_aug20.py` — 10 classes, 38 tests (all passing)
+- **Updated:** Added Lance Ulanoff as new journalist cross-entity subject
+- **Test corpus:** 491 files
+
+---
+
 ## Iteration #198 — Thu 2026-08-20 03:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #194: Gizmodo Apple N50 Intra-Article Headline Presupposition Asymmetry
