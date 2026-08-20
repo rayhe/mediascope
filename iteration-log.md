@@ -1,5 +1,68 @@
 ---
 
+## Iteration #204 — Thu 2026-08-20 15:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #198: Lawrence Bonk (Engadget / Yahoo) — Generalist Beat Assignment as Stigma Concentration
+
+**Type:** Journalist Cross-Entity Tracking — Engadget × Meta × Snap/Samsung
+**Mechanism #198:** Editorial Routing of Category-Level Camera-Glasses Restrictions Through Non-Beat Reporters
+**Asymmetry Score:** 0.79
+**Entities:** Meta, Snap, Samsung, Google, Apple
+
+**Core Discovery — Beat Assignment as Stigma Concentration Mechanism**
+
+When Engadget covers category-level restrictions on camera-equipped smart glasses, it assigns the story to a GENERALIST reporter rather than its dedicated smart glasses/AR beat reporters. Lawrence Bonk — whose documented expertise is "Gaming consoles, Music tech, Smart home devices" (NOT smart glasses/AR/wearables) — wrote Engadget's heavily editorialized UK courtroom ban article (Aug 11), while Karissa Bell (dedicated AR/smart glasses beat) covered Snap Specs aspirationally with exclusive CEO access.
+
+**Three articles, two reporters, compounding asymmetry:**
+
+1. **Lawrence Bonk — Meta court ban (Aug 11):** "England And Wales Ban Meta Glasses From Courtrooms." 8+ alarm vocabulary terms: "shady specs," "pervert glasses" (linked), "secretly film," "surreptitiously," "harrowing for women," "harassment," "doxxed." CEO personalization: "Mark Zuckerberg and his team don't seem terribly concerned." Zero competitor context — Samsung (identical 12MP camera, UK fall 2026), Snap (4 cameras, UK fall 2026), Google, Apple all absent despite the ban covering ALL camera-enabled smart glasses.
+
+2. **Karissa Bell — Snap Specs launch (Jun 16):** "Snap's Slimmed Down AR Specs Go On Sale Later This Year For $2,195." Zero privacy vocabulary despite 4 cameras + OpenAI integration. Cameras mentioned as feature, never as concern. Aspirational tone throughout.
+
+3. **Karissa Bell — Spiegel interview (Jun 16):** "Evan Spiegel Doesn't Want You To Call Snap Specs AI Glasses." Exclusive CEO sit-down. Privacy concerns channeled to "the Meta of it all." Spiegel given platform: "not surreptitiously recording videos." Meta's facial recognition cited as the SOURCE of privacy anxiety while Snap's 4 cameras + OpenAI receive zero scrutiny.
+
+**Novel mechanism taxonomy:**
+
+Beat-assignment stigma concentration is DISTINCT from:
+- **Direct vocabulary bifurcation** (#115): Same journalist, different words — this is different journalists, different entities
+- **Coverage selection silence** (#33): Not covering competitors — here the story IS covered, but through a generalist who lacks cross-entity context
+- **CEO-attribution delegitimization** (#191): Personalizing strategy as stubbornness — here the routing decision ENABLES the personalization
+
+The mechanism operates at the EDITORIAL level — the decision of WHO covers WHICH story concentrates privacy stigma through structural routing rather than individual journalist bias. The generalist has zero prior smart glasses articles, no obligation to mention competitors, and no context for hardware parity.
+
+**Three compounding effects:**
+1. **Vocabulary escalation:** Without beat context, generalist applies maximum editorial force
+2. **Cross-entity omission:** No competitor devices mentioned (4+ brands making camera glasses for UK)
+3. **Structural contrast:** Beat reporters simultaneously cover competitors aspirationally
+
+**Engadget August 2026 Meta glasses coverage pattern:**
+- Karissa Bell: "ICE agents can't wear Meta glasses" (alarm)
+- Karissa Bell: "Are Ray-Ban Meta glasses a privacy risk?" (privacy guide)
+- Will Shanklin: "German nonprofit files criminal complaint over Meta smart glasses" — subtitle: "Worrying about Google Glassholes almost feels quaint in comparison"
+- Lawrence Bonk: "England and Wales ban Meta Glasses from courtrooms" (alarm/editorial)
+- Snap Specs privacy alarm articles in August: ZERO
+- Samsung glasses privacy alarm articles in August: ZERO
+
+**Historical precedent:** UK Cinema Exhibitors' Association banned Google Glass in 2014 with identical pattern — category-level restriction on "wearable technology capable of recording images" covered as Google-specific. Same UK body, same editorial mechanism, different dominant brand (2014: Google, 2026: Meta).
+
+**Confounders:** 5 documented (2 STRONG: Meta 80%+ market share + staffing availability; 2 MODERATE: news vs review genre + product lifecycle stage; 1 WEAK: word count constraints)
+
+**Cross-references:** #8 (Safe Target), #33 (coverage selection), #115 (WIRED vocabulary bifurcation), #160 (Nadeem Sarwar editorial routing), #191 (CEO-attribution), #197 (Reuters wire-level bifurcation)
+
+### Sources
+- https://www.engadget.com/2234606/england-and-wales-ban-meta-glasses-from-courtrooms/
+- https://www.engadget.com/2195207/snap-ar-specs-launch-price/
+- https://Www.engadget.com/2195862/snap-specs-ceo-evan-spiegel-interview-at-awe-2026/
+- https://WWW.ENGADGET.COM/author/lawrence-bonk/
+- https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+
+### Stats
+- **New test file:** `test_lawrence_bonk_engadget_generalist_beat_assignment_stigma_concentration_aug20.py` — 10 classes, 42 tests (all passing)
+- **Mechanism:** #198 documented (beat-assignment stigma concentration)
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #203 — Thu 2026-08-20 09:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Reuters × Snap Specs vs Meta Ray-Ban Camera Privacy Vocabulary Bifurcation
