@@ -1,5 +1,59 @@
 ---
 
+## Iteration #214 — Fri 2026-08-21 03:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #207: WIRED Wearables Desk Triple-Reporter Apple Camera AirPods Leak Coverage Selection Silence
+
+**Type:** Journalist Cross-Entity Tracking — Beat Assignment Silence Natural Experiment
+**Mechanism #207:** WIRED Triple-Reporter Coverage Selection Silence on Apple Camera AirPods Leak
+**Asymmetry Score:** 0.82
+**Entities:** Apple, Meta (comparative)
+**Publication:** WIRED (Condé Nast / Advance Publications)
+**Reporters:** Boone Ashworth, Julian Chokkattu, Adrienne So
+
+**Core Discovery — Team-Wide Beat Assignment Silence (Aug 18-21, 2026):**
+
+WIRED's three primary wearables/gear reporters collectively published ZERO coverage of the Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 18, 2026) across 3+ days. The leak had 4.6M views on X and was covered by 9+ outlets within 48 hours (MacRumors ×2, Hypebeast, iClarified, Cult of Mac ×2, Softonic, NY Post, 9to5Mac, The Apple Post, Lowyat.NET).
+
+All three reporters have extensively documented Meta glasses privacy coverage:
+- **Boone Ashworth:** Business Wars podcast "mass surveillance" (Jun 2026), Conversation Focus subscription critique (Jul 2026), TranscribeGlass accessibility inversion (#70), WWDC PCC framing (#45) — 4+ mechanisms
+- **Julian Chokkattu:** Primary Meta hardware reviewer (7+ years), Samsung same-chip presupposition (#93), coverage selection gap (#91), temporal oscillation (#72), compound silence (#47) — 4+ mechanisms  
+- **Adrienne So:** Oakley Vanguard "(which are garbage)" parenthetical (#102), Google Pixel Watch zero privacy caveats — 1+ mechanism
+
+Combined: 9+ documented Meta adversarial mechanisms, ZERO Apple camera AirPods leak articles.
+
+**Abstract→Concrete Coverage Gap:**
+WIRED published "Why Apple Might Put Cameras Into Its Next AirPods" (Jun 5, 2026) — categorized under the AI vertical, not Gear. That article DID raise privacy concerns, including a WIRED-exclusive anonymous source: "Apple executives are also worried that the company is introducing a significant privacy risk." But when the CONCRETE demo video leaked (Aug 18), WIRED went silent. Pattern: cover Apple camera wearables in the abstract/rumor phase, go silent when evidence appears and the privacy comparison to Meta becomes obvious.
+
+**Beat Assignment Routing:**
+The Jun 5 article was routed to WIRED's AI vertical, not the Gear desk (Chokkattu). This means Apple camera wearables coverage was structurally separated from the wearables beat that produces Meta adversarial coverage. The wearables desk's editorial energy is channeled toward Meta; Apple camera wearables are handled (if at all) by a different editorial lane.
+
+**Cross-publication comparison (same story, same 3-day window):**
+| Publication | Articles | Privacy framing |
+|-------------|----------|-----------------|
+| WIRED | 0 | N/A (silence) |
+| MacRumors | 2 | Neutral/technical |
+| NY Post (News Corp) | 1 | User backlash quotes |
+| Hypebeast | 1 | LED privacy analysis |
+| 9to5Mac | 1 | Neutral/technical |
+| Engadget | 1 (earlier, May) | "Dreading" — critical of Apple |
+
+**Confounders:**
+1. STRONG: WIRED may publish delayed analysis (3-day window possibly too short)
+2. MODERATE: Meta has shipped product (7M+ units) with abuse cases; Apple is unreleased
+3. MODERATE: macOS code discovery may fall below WIRED's editorial threshold
+4. WEAK: Chokkattu's Senior Editor role means he assigns — but assigns Meta coverage to himself
+
+### Stats
+- **New test file:** `test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py` — 9 classes, 40 tests (all passing)
+- **Profiles updated:** wired.yaml (apple competitor_relationships → camera_airpods_leak_silence #207), journalists.yaml (Ashworth, Chokkattu, So → mechanism_207 entries)
+- **New mechanism:** #207 (WIRED Triple-Reporter Apple Camera AirPods Leak Coverage Selection Silence)
+- **Cross-references:** Mechanisms #45, #47, #70, #72, #73, #87, #91, #93, #102, #205, #206
+- **Test corpus:** ~18,639 tests across 509 files
+- **Pushed to GitHub:** (pending)
+
+---
+
 ## Iteration #213 — Fri 2026-08-21 02:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #206: WSJ (News Corp) Apple Camera AirPods Leak Coverage Selection Silence

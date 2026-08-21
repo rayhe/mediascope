@@ -9973,6 +9973,12 @@ journalists:
     studies). Regular on Wired Gadget Lab podcast and NPR. KEY for MediaScope: product review framing of Meta hardware — different
     analytical lens than investigative journalists but equally important for shaping consumer perception. Career almost entirely
     within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years at Digital Trends.'
+  mechanism_207_apple_camera_airpods_leak_silence:
+    discovery_date: '2026-08-21'
+    pattern: 'Senior Editor for Gear published zero coverage of Apple camera AirPods macOS Tahoe
+      leak (Aug 18-21). Editorial authority to assign coverage. 4+ documented Meta mechanisms
+      (#47, #72, #91, #93). AirPods fall squarely in Gear vertical.'
+    test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
   multi_publication: true
 - beats:
   - ai_strategy
@@ -11148,6 +11154,12 @@ journalists:
         when built by non-Meta companies (TranscribeGlass) but monetization-criticism framing when built by Meta (Conversation
         Focus), despite serving the same functional use case.'
       test_file: tests/test_boone_ashworth_cross_entity_aug12.py
+    mechanism_207_apple_camera_airpods_leak_silence:
+      discovery_date: '2026-08-21'
+      pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite
+        consumer tech/gadgets beat. 9+ outlets covered the story. Ashworth has 4+ documented
+        Meta mechanisms (#45, #70, #73, #87) but zero Apple camera wearable leak coverage.'
+      test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
   multi_publication: true
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
@@ -18886,6 +18898,12 @@ journalists:
       rate, blood oxygen, sleep, GPS, menstrual cycles), receives ZERO privacy caveats and promotional headline framing ("Surprisingly
       Close" to Apple Watch Ultra). Extends the WIRED privacy vocabulary bifurcation pattern (Chokkattu #93, Ashworth #73/#87,
       Rogers #97) to the fitness/wearables editorial lane, establishing team-wide institutional scope.'
+  mechanism_207_apple_camera_airpods_leak_silence:
+    discovery_date: '2026-08-21'
+    pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite
+      fitness/wearables beat. Camera AirPods fall squarely in her lane. Mechanism #102
+      (privacy vocabulary bifurcation) + #207 (leak silence) = complete team-wide pattern.'
+    test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
 - name: Joanna Stern
   career:
   - publication: abc-news

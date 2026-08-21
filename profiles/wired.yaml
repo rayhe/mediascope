@@ -2408,6 +2408,28 @@ competitor_relationships:
     description: Apple opened negotiations with Condé Nast for AI content licensing, Dec 2023. Status unclear as of mid-2026.
     source_url: https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
     coverage_prediction: softer
+    camera_airpods_leak_silence:
+      finding_date: '2026-08-21'
+      mechanism: 207
+      event: Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 18, 2026)
+      event_reach: 4.6M views on X, 9+ outlets covering within 48 hours
+      wired_articles_published: 0
+      days_of_silence: 3+
+      reporters_silent:
+      - Boone Ashworth (consumer tech/gadgets)
+      - Julian Chokkattu (Senior Editor for Gear)
+      - Adrienne So (fitness/wearables)
+      prior_coverage: 'WIRED published "Why Apple Might Put Cameras Into Its Next AirPods" (Jun 5,
+        2026) under AI vertical — raised privacy concerns. But zero coverage when the actual
+        demo video leaked Aug 18. Pattern: cover Apple camera wearables in abstract/rumor
+        phase, go silent in concrete/evidence phase.'
+      cross_pub_comparison:
+        ny_post: 1 article with user privacy backlash quotes
+        macrumors: 2 articles (discovery + Gurman followup)
+        hypebeast: 1 article with LED privacy analysis
+        '9to5mac': 1 article
+        cult_of_mac: 2 articles
+      cross_refs: [205, 206]
   google:
     financial_tie: adversarial_litigation
     estimated_value: $0 (seeking unspecified damages)
