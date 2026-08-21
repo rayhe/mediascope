@@ -1,6 +1,49 @@
 ---
 
-## Iteration #207 — Thu 2026-08-20 18:00 PT (Type E: Podcast/Broadcast Sentiment Tracking)
+## Iteration #209 — Thu 2026-08-20 20:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #201: Harry McCracken (Fast Company) Cross-Entity CEO Attribution Humanization Differential
+
+**Type:** Journalist Cross-Entity Tracking
+**Mechanism #201:** Same Journalist, Different Entity, Different CEO Attribution Vocabulary
+**Asymmetry Score:** 0.72
+**Entities:** Meta (Zuckerberg), Snap (Spiegel)
+**Journalist:** Harry McCracken, Fast Company Global Technology Editor (prev. Time, Technologizer, PC World)
+
+**Core Discovery — Within-Journalist CEO Attribution Differential:**
+
+Harry McCracken has covered BOTH Meta/Zuckerberg and Snap/Spiegel on camera-equipped smart glasses across multiple articles (2021-2026). Despite covering the same product category, his CEO framing shows a measurable differential:
+
+**Spiegel (Snap):** Humanized, personal origin story, family man, persistent visionary.
+- "As a Stanford student, he told me this week" (personal backstory)
+- "The father of four sons" (family man framing)
+- "laser focused on trying to make computing more human" (mission-driven)
+- Redemption arc: stock down 90%, turbulent years, enduring interest
+- Zero privacy vocabulary in 2,500-word camera-glasses article
+
+**Zuckerberg (Meta):** Corporate/strategic, ego-driven, competitive positioning.
+- "Zuck's ego is intertwined with [the glasses]" (anonymous former employee)
+- "fixated on creating AR's 'iPhone moment'" (obsession framing)
+- "one of his biggest disappointments was missing out on owning a smartphone OS" (strategic failure)
+- Privacy vocabulary applied even in balanced pieces ("privacy-violating," "creepy")
+
+**KEY NUANCE:** McCracken is MORE balanced than Fast Company editorial staff. His 2021 Meta piece used "Dystopia averted" as a section heading and praised privacy safeguards. The publication-level asymmetry (Mechanism #121, score 0.90) is LARGER than McCracken's journalist-level asymmetry (0.72). This demonstrates editorial assignment/genre selection drives more framing asymmetry than individual journalist bias.
+
+**Beat assignment amplifier:** McCracken (senior editor) gets CEO interview pieces for BOTH entities. The adversarial "many controversies of Meta's AI glasses" compilation goes to different editorial staff. This creates publication-level asymmetry: the most authoritative voice normalizes competitor cameras, while the adversarial voice is applied only to Meta.
+
+**Confounders:** 5 documented (2 STRONG: Meta has genuine privacy incidents; CEO access asymmetry. 2 MODERATE: temporal gap 2021 vs 2026; product category/pricing. 1 WEAK: authentic technical admiration).
+
+**Tests:** 32 passing (7 classes: CEO attribution vocabulary, privacy vocabulary delta, CEO accessibility/source type, narrative arc, hardware parity, mechanism metadata, beat assignment pattern).
+
+**Source articles:**
+- https://www.fastcompany.com/90673958/facebook-smart-glasses-ray-ban-stories-luxottica
+- https://www.fastcompany.com/90741172/mark-zuckerberg-meta-ar-glasses-nazere-hypernova
+- https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+- https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+
+**Files changed:** 3 (new test file, competitor-coverage-research.yaml mechanism #201, README.md counts+listing)
+
+---
 
 ### Mechanism #200: Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban
 

@@ -21375,4 +21375,53 @@ publications:
 
       '
     x_twitter_coverage_tone: adversarial
+  harry_mccracken_fastco_cross_entity_ceo_attribution_differential:
+    mechanism_id: 201
+    date_added: '2026-08-20'
+    type: B  # Journalist Cross-Entity Tracking
+    journalist:
+      name: Harry McCracken
+      publication: Fast Company
+      title: Global Technology Editor
+      prior_roles:
+      - Editor at Large, Time
+      - Founder/Editor, Technologizer
+      - Editor, PC World
+    overview: 'Harry McCracken (Fast Company global technology editor) covers both Meta/Zuckerberg
+      and Snap/Spiegel on camera-equipped smart glasses with measurably different CEO attribution
+      vocabulary. Spiegel gets humanization (Stanford student, father of four, mission-driven),
+      while Zuckerberg gets strategic/ego framing (fixated, ego intertwined, biggest disappointments).
+      McCracken IS more balanced than Fast Company editorial staff (#121), making this a SMALLER
+      but STILL measurable within-journalist cross-entity effect. The beat assignment pattern
+      amplifies: McCracken gets aspirational CEO interviews while editorial gets adversarial
+      compilations for Meta.'
+    asymmetry_score: 0.72
+    key_articles:
+    - url: https://www.fastcompany.com/90673958/facebook-smart-glasses-ray-ban-stories-luxottica
+      title: 'Facebook gets in your Ray-Bans: A first look at its new smart glasses'
+      date: '2021-09-09'
+      entity: Meta
+      tone: balanced — notes privacy safeguards positively, uses 'Dystopia averted' heading
+    - url: https://www.fastcompany.com/90741172/mark-zuckerberg-meta-ar-glasses-nazere-hypernova
+      title: "Why Mark Zuckerberg is fixated on creating AR's 'iPhone moment'"
+      date: '2022'
+      entity: Meta
+      tone: strategic/analytical — ego and ambition framing, anonymous critics
+    - url: https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+      title: "Evan Spiegel says Snap can't fulfill its mission without its new AR glasses"
+      date: '2026-06-16'
+      entity: Snap
+      tone: aspirational — zero privacy vocabulary despite 4-camera glasses
+    confounders:
+    - 'STRONG: Meta has genuine documented privacy incidents; Snap Specs had not shipped yet'
+    - 'STRONG: CEO access asymmetry — exclusive Spiegel interview vs public/anonymous sources for Meta'
+    - 'MODERATE: Temporal gap — 2021 vs 2026 media environment'
+    - 'MODERATE: Product category/pricing difference ($2,195 developer vs $299 consumer)'
+    - 'WEAK: Authentic technical admiration for Snap engineering'
+    cross_references:
+    - 121  # Fast Company publication-level asymmetry (same publication, different angle)
+    - 8    # Safe target coefficient
+    - 33   # CEO attribution pattern
+    - 43   # Humanization differential
+    test_file: tests/test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py
 research_period: 2024-08-01 to 2026-08-20
