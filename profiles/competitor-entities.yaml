@@ -5620,16 +5620,68 @@ entities:
         mass_market_target: end of the decade
     q2_2026_earnings:
       reported_date: '2026-08-03'
+      total_revenue_m: 1599
       total_revenue_b: 1.6
       revenue_yoy_pct: 19
+      h1_2026_revenue_m: 3128
+      h1_2026_revenue_yoy_pct: 15
+      advertising_revenue_m: 1283
+      advertising_revenue_yoy_pct: 9
+      other_revenue_m: 316
+      other_revenue_yoy_pct: 85
+      other_revenue_drivers: Snapchat+, Memories Storage, Lens+ subscriptions
+      subscribers_pct_of_mau: '<3%'
+      adjusted_ebitda_m: 249.6
+      adjusted_ebitda_prior_year_m: 41.3
+      adjusted_ebitda_yoy_pct: 505
+      h1_adjusted_ebitda_m: 483
+      h1_adjusted_ebitda_yoy_pct: 223
+      operating_loss_m: -170.7
+      operating_loss_prior_year_m: -259.7
+      net_loss_m: -164
+      net_loss_prior_year_m: -262.6
+      operating_cash_flow_m: 176.2
+      free_cash_flow_m: 120.5
+      free_cash_flow_prior_year_m: 24
+      gross_margin_pct: 58
+      adjusted_cost_growth_pct: 4
+      restructuring_charges_m: 128.5
+      restructuring_note: 'April 2026 restructuring eliminated ~1,000 jobs.
+        TechTimes: "most painful quarter into its strongest profitability metric
+        in years."'
       dau_m: 493
       dau_yoy_pct: 5
+      mau_m: 971
       north_america_dau_decline_pct: 7
       europe_dau_decline_pct: 2
+      shares_outstanding_m: 1682
       q3_guidance_revenue_b: 1.70-1.74
       q3_guidance_ebitda_m: 300-350
+      full_year_infra_cost_guidance_b: 1.65-1.70
+      full_year_infra_cost_note: Increased from $1.60-1.65B, indicating additional
+        AI and ML capacity investment
+      full_year_adj_opex_b: ~2.75
+      full_year_sbc_b: ~1.05
+      spectacles_launch_confirmed: 'September 16, 2026, Los Angeles. $2,195.
+        Confirmed on Q2 earnings call. CEO Spiegel: "We remain focused on
+        serving our 971 million monthly active users."'
+      financial_inflection_analysis: 'Snap Q2 2026 marks a financial inflection:
+        EBITDA grew 505% YoY while costs grew 4%, validating the restructuring
+        thesis. Free cash flow turned decisively positive ($121M vs $24M).
+        This financial foundation makes the Spectacles $2,195 consumer launch
+        credible as a funded hardware bet, not a vanity project. The improving
+        financial trajectory creates positive publisher sentiment toward Snap
+        as an advertising platform — publishers with Snap ad relationships
+        benefit from Snap''s success. Compare to Meta Q2 2026: Meta generated
+        $60.8B revenue but received adversarial coverage; Snap generated $1.6B
+        revenue and receives aspirational coverage. The 38:1 revenue ratio
+        inverts the coverage ratio.'
       source_urls:
-      - https://www.reuters.com/business/snap-beats-revenue-estimates-ad-boost-world-cup-2026-08-03/
+      - https://investor.snap.com/news/news-details/2026/Snap-Inc--Announces-Second-Quarter-2026-Financial-Results/default.aspx
+      - https://www.marketbeat.com/instant-alerts/snap-q2-earnings-call-highlights-2026-08-03/
+      - https://www.techtimes.com/articles/322885/20260803/snap-q2-2026-earnings-prove-restructuring-worked-stock-jumps-ebitda-surge.htm
+      - https://www.zacks.com/stock/news/2967567/snap-q2-earnings-call-highlights-ad-gains-and-cash-discipline
+      - https://www.tradingview.com/news/tradingview:87a35dee58c43:0-snap-reports-q2-2026-revenue-1-599b-adjusted-ebitda-250m-and-positive-free-cash-flow/
     q1_2026_earnings:
       total_revenue_guidance_b: 1.50-1.53
       mau_m: 956

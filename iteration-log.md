@@ -1,5 +1,31 @@
 ---
 
+## Iteration #225 — Fri 2026-08-21 14:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #216: Condé Nast Meta-Origin CBO France Reverse Personnel Flow**
+
+Violaine Gressier, formerly Meta's Global Head of Luxury, joined Condé Nast France as Chief Business Officer effective June 22, 2026, reporting to CRO Elizabeth Herbst-Brady (ex-Snap). This is the FIRST documented reverse personnel flow from Meta to Condé Nast, updating the "zero Meta personnel ties" claim in mechanism #208. The net incentive effect is scored 0.45 (ambiguous): Gressier may bring personal goodwill toward Meta (softening coverage) OR may leverage insider knowledge to compete more effectively for luxury ad budgets (sharpening anti-Meta competitive incentive).
+
+**Snap Q2 2026 Comprehensive Financial Data Update:**
+
+Expanded Snap Q2 2026 from 8 fields to 40+ fields in competitor-entities.yaml:
+- Total revenue: $1,599M (+19% YoY), Advertising: $1,283M (+9%), Other: $316M (+85%)
+- Adjusted EBITDA: $249.6M (505% YoY from $41.3M) — financial inflection point
+- Free cash flow: $120.5M (vs $24M prior year)
+- Restructuring: $128.5M charges from April 2026 ~1,000 layoffs
+- MAU 971M, DAU 493M, Gross margin 58%
+- Spectacles September 16 launch confirmed on earnings call
+- 38:1 revenue ratio with Meta documented — inverts coverage ratio
+
+**Files changed:**
+- `profiles/competitor-entities.yaml` — Snap Q2 2026 expanded to 40+ fields
+- `profiles/wired.yaml` — Added mechanism #216 (Condé Nast Meta reverse personnel flow)
+- `tests/test_conde_nast_meta_reverse_personnel_cbo_france_financial_architecture_aug21.py` — 34 tests, 4 test classes
+
+**Test count:** 520 test files, ~4,143 total tests
+
+---
+
 ## Iteration #224 — Fri 2026-08-21 13:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #215: Mia Sato (The Verge / PMX / PMC) Same-Journalist Camera-Product Vocabulary Bifurcation
