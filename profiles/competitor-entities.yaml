@@ -5559,6 +5559,9 @@ entities:
         - User control over data storage/sync/deletion
         privacy_scrutiny_received: zero
         surveillance_framing_count: 0
+        consumer_launch_event_date: '2026-09-16'
+        consumer_launch_location: Los Angeles
+        mass_market_target: end of the decade
     q2_2026_earnings:
       reported_date: '2026-08-03'
       total_revenue_b: 1.6

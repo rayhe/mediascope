@@ -175,9 +175,18 @@ ownership_chain:
     \ BREAKDOWN (Adweek, May 2026): Subscription revenue +10% YoY, commerce +13% YoY, events +40% YoY. Events \"in the center\"\
     \ of the business per CRO Herbst-Brady. No further paring of portfolio planned per Herbst-Brady: \"We have no plans. It's\
     \ all about focus and building opportunity where we see the largest potential.\" CRO Herbst-Brady (Thread Podcast, 2026):\
-    \ \"AI didn't kill premium media — it made it more valuable.\" Herbst-Brady career: Yahoo → Snap → Viacom → Condé Nast\
-    \ (joined Aug 2024).\n"
+    \ \"AI didn't kill premium media — it made it more valuable.\" Herbst-Brady career: MAGNA Global → 20th Television → Starcom\
+    \ Worldwide → Universal Television → Fox → Verizon → Snap Inc. (Head of Global Strategic Partnerships,\
+    \ Head of East Coast Ad Sales) → Viacom (EVP of Ad Sales Strategy) → Yahoo! (CRO + GM, Yahoo DSP) →\
+    \ Condé Nast (CRO, joined end of Sep 2024). YouTube/Strike Social interview (Jul 2026): described\
+    \ \"Purposeful Large Language Model Licensing\" as a deliberate commercial strategy.\n"
   source_urls:
+  - https://www.buzzsprout.com/1976572/episodes/18632585-ai-didn-t-kill-premium-media-it-made-it-more-valuable-elizabeth-herbst-brady-cro-of-conde-nast
+  - https://www.youtube.com/watch?v=PMxv1g-wKKE
+  - https://www.adweek.com/morning-media-newsfeed/conde-nast-names-elizabeth-herbst-brady-chief-revenue-officer/
+  - http://archive.advertisingweek.com/events/ny/2023/speakers/?id=20599
+  - https://mediabrief.com/conde-nast-names-elizabeth-herbst-brady-as-cro/
+  - https://www.gilderlehrman.org/about/elizabeth-herbst-brady
   - https://www.adweek.com/how-conde-nast-grew-events-revenue/
   - https://www.thewrap.com/conde-nast-shuts-down-self-magazine/
   - https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
@@ -5030,4 +5039,104 @@ phil_clapp_natural_experiment_2014_2026:
   - 158 # Multi-Vector Cultural Delegitimization Cascade
   - 177 # Two Blokes Kodak Fiend Historical Precedent
   - 196 # UK Cinema Piracy Vector
+
+cro_career_migration_snap_link:
+  mechanism_id: 208
+  date_added: '2026-08-21'
+  overview: 'Elizabeth Herbst-Brady, Condé Nast CRO since end of Sep 2024, previously held two senior roles
+    at Snap Inc.: Head of Global Strategic Partnerships and Head of East Coast Ad Sales. Full career path:
+    MAGNA Global → 20th Television → Starcom Worldwide → Universal Television → Fox → Verizon → Snap Inc.
+    (Head of Global Strategic Partnerships, Head of East Coast Ad Sales) → Viacom (EVP of Ad Sales Strategy)
+    → Yahoo! (CRO + GM, Yahoo DSP) → Condé Nast (CRO, Sep 2024). As CRO she controls ALL revenue
+    diversification: advertising, events (+40% in 2025), subscriptions (+10%), commerce (+13%), and AI
+    licensing deals (OpenAI, Perplexity, Amazon, Apple Siri AI, Microsoft Copilot). Reports directly to CEO
+    Roger Lynch. This creates a personnel-level career migration incentive: the executive controlling WIRED
+    parent revenue strategy has deep Snap career history, while Meta has ZERO personnel or financial ties to
+    Condé Nast. Thread Podcast (2026): "AI didn''t kill premium media — it made it more valuable." YouTube/
+    Strike Social interview (Jul 2026): described "Purposeful Large Language Model Licensing" as a deliberate
+    commercial strategy, reinforcing the financial architecture that creates editorial conflicts.'
+  career_path:
+    - employer: MAGNA Global
+      role: unknown
+    - employer: 20th Television
+      role: unknown
+    - employer: Starcom Worldwide
+      role: unknown
+    - employer: Universal Television
+      role: unknown
+    - employer: Fox
+      role: unknown
+    - employer: Verizon
+      role: unknown
+    - employer: Snap Inc.
+      roles:
+        - Head of Global Strategic Partnerships
+        - Head of East Coast Ad Sales
+    - employer: Viacom
+      role: EVP of Ad Sales Strategy
+    - employer: Yahoo!
+      roles:
+        - Chief Revenue Officer
+        - GM, Yahoo DSP
+    - employer: Condé Nast
+      role: Chief Revenue Officer
+      start_date: '2024-09'
+  snap_natural_experiment:
+    event: Snap Specs consumer launch
+    date: '2026-09-16'
+    location: Los Angeles
+    price_usd: 2195
+    prediction: 'When Snap launches consumer Spectacles (Sep 16, 2026, $2,195), the CRO with deep Snap career
+      history is making revenue decisions for the publication that could apply adversarial privacy coverage to
+      Meta glasses but not Snap Specs. This constitutes a natural experiment: will WIRED apply equivalent
+      privacy scrutiny to Snap Specs (4 cameras) as it does to Meta glasses (1 camera)?'
+    mass_market_target: end of the decade
+  ai_deal_evangelist_statements:
+    - source: Thread Podcast (2026)
+      quote: "AI didn't kill premium media — it made it more valuable."
+      url: https://www.buzzsprout.com/1976572/episodes/18632585-ai-didn-t-kill-premium-media-it-made-it-more-valuable-elizabeth-herbst-brady-cro-of-conde-nast
+    - source: YouTube / Strike Social / Dylan Conroy interview (Jul 2026)
+      description: Described "Purposeful Large Language Model Licensing" as a deliberate commercial strategy
+      url: https://www.youtube.com/watch?v=PMxv1g-wKKE
+  meta_contrast: 'Meta has ZERO personnel career-migration links to Condé Nast. No current or former Meta
+    executive holds a revenue-controlling position at any Condé Nast entity. No financial partnership exists
+    between Meta and Condé Nast. The entity with ZERO personnel or financial ties receives the most adversarial
+    coverage from Condé Nast publications (WIRED, Ars Technica, Pitchfork, Vanity Fair, etc.).'
+  confounding_factors:
+    - 'STRONG: Herbst-Brady has a large career portfolio (8+ employers) — Snap is one of many, not the sole
+      career influence'
+    - 'STRONG: CRO role focuses on revenue not editorial — editorial decisions nominally independent of
+      revenue operations'
+    - 'MODERATE: Meta''s $131B ad revenue makes it a structural advertising competitor to ANY publisher regardless
+      of personnel ties'
+    - 'MODERATE: Snap Specs have not yet shipped in consumer form — coverage asymmetry may change after Sep 16'
+    - 'WEAK: Herbst-Brady joined Condé Nast (Sep 2024) BEFORE most of the recent coverage cycle — temporal
+      overlap not causation'
+  testable_predictions:
+    - 'If WIRED publishes Snap Specs consumer launch coverage (Sep 16+) with privacy vocabulary matching
+      Meta glasses coverage intensity, the personnel-incentive hypothesis weakens'
+    - 'If Herbst-Brady references her Snap career history publicly in a Condé Nast context, the personnel
+      channel becomes more explicit'
+    - 'If Condé Nast signs additional Snap financial deals (advertising, partnerships), the personnel +
+      financial incentive channels converge'
+  asymmetry_score: 0.72
+  finding_summary: 'Personnel-level career migration from Snap to Condé Nast CRO creates an asymmetric
+    incentive channel: the executive controlling all revenue diversification for WIRED''s parent has deep
+    Snap career history. Combined with existing financial ties (Perplexity chain, Discover platform) and zero
+    Meta ties, this adds a personnel dimension to the financial incentive architecture.'
+  source_urls:
+    - https://www.adweek.com/morning-media-newsfeed/conde-nast-names-elizabeth-herbst-brady-chief-revenue-officer/
+    - http://archive.advertisingweek.com/events/ny/2023/speakers/?id=20599
+    - https://www.buzzsprout.com/1976572/episodes/18632585-ai-didn-t-kill-premium-media-it-made-it-more-valuable-elizabeth-herbst-brady-cro-of-conde-nast
+    - https://www.youtube.com/watch?v=PMxv1g-wKKE
+    - https://www.adweek.com/media/conde-nast-events-revenue-2026/
+    - https://mediabrief.com/conde-nast-names-elizabeth-herbst-brady-as-cro/
+    - https://www.gilderlehrman.org/about/elizabeth-herbst-brady
+  test_file: test_conde_nast_cro_career_migration_snap_personnel_financial_architecture_aug21.py
+  discovery_date: '2026-08-21'
+  cross_references:
+    - 8   # Safe Target Coefficient
+    - 43  # OpenAI content deal
+    - 133 # Snap-Perplexity publisher financial chain
+    - 199 # Condé Nast deal inventory coverage correlation
 

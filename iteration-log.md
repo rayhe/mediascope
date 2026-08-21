@@ -1,5 +1,49 @@
 ---
 
+## Iteration #215 — Fri 2026-08-21 04:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #208: Condé Nast CRO Career Migration → Snap Personnel Financial Incentive Architecture
+
+**Type:** Financial Incentive Mapping — Personnel-Level Career Migration
+**Mechanism #208:** Condé Nast CRO Elizabeth Herbst-Brady Snap Career → Personnel Financial Incentive Channel
+**Asymmetry Score:** 0.72
+**Entities:** Snap, Meta (comparative), Condé Nast
+**Publication:** WIRED (Condé Nast / Advance Publications)
+
+**Core Discovery — Personnel-Level Career Migration Incentive:**
+
+Elizabeth Herbst-Brady, Condé Nast's Chief Revenue Officer since end of Sep 2024, previously held two senior roles at Snap Inc.: Head of Global Strategic Partnerships and Head of East Coast Ad Sales. Full career path: MAGNA Global → 20th Television → Starcom Worldwide → Universal Television → Fox → Verizon → Snap Inc. → Viacom (EVP of Ad Sales Strategy) → Yahoo! (CRO + GM, Yahoo DSP) → Condé Nast (CRO).
+
+As CRO she controls ALL revenue diversification for WIRED's parent company: advertising, events (+40% in 2025), subscriptions (+10%), commerce (+13%), and AI licensing deals (OpenAI, Perplexity, Amazon, Apple Siri AI, Microsoft Copilot). Reports directly to CEO Roger Lynch.
+
+**Personnel-Level Asymmetry:**
+- Snap: CRO has deep career history (2 senior roles) → financial partnership (Perplexity chain, Discover platform) → zero privacy scrutiny on Specs (4 cameras)
+- Meta: ZERO personnel career-migration links → ZERO financial partnership → most adversarial coverage
+
+**AI Deal Evangelist Role:**
+- Thread Podcast (2026): "AI didn't kill premium media — it made it more valuable."
+- YouTube/Strike Social interview (Jul 2026): Described "Purposeful Large Language Model Licensing" as a deliberate commercial strategy
+
+**Snap Specs Natural Experiment (Sep 16, 2026):**
+When Snap launches consumer Spectacles ($2,195, Los Angeles), the CRO with deep Snap career history is making revenue decisions for the publication that applies adversarial privacy coverage to Meta glasses (1 camera) but not Snap Specs (4 cameras).
+
+**Confounders:**
+1. STRONG: Herbst-Brady has 8+ employers — Snap is one of many
+2. STRONG: CRO role focuses on revenue not editorial — nominally independent
+3. MODERATE: Meta's $131B ad revenue makes it a structural competitor regardless
+4. MODERATE: Snap Specs haven't shipped in consumer form yet
+5. WEAK: Herbst-Brady joined (Sep 2024) BEFORE recent coverage cycle
+
+### Stats
+- **New test file:** `test_conde_nast_cro_career_migration_snap_personnel_financial_architecture_aug21.py` — 6 classes, 33 tests (all passing)
+- **Profiles updated:** wired.yaml (Herbst-Brady career expanded, mechanism #208 added), competitor-entities.yaml (Snap Specs consumer launch event fields)
+- **New mechanism:** #208 (Condé Nast CRO Career Migration → Snap Personnel Financial Incentive Architecture)
+- **Cross-references:** Mechanisms #8, #43, #133, #199
+- **Test corpus:** ~18,776 tests across 512 files
+- **Pushed to GitHub:** Yes
+
+---
+
 ## Iteration #214 — Fri 2026-08-21 03:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #207: WIRED Wearables Desk Triple-Reporter Apple Camera AirPods Leak Coverage Selection Silence
