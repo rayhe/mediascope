@@ -1,5 +1,38 @@
 ---
 
+## Iteration #226 — Fri 2026-08-21 15:00 PT (Type D: Test & Verify)
+
+**Cross-validation and structural integrity fixes:**
+
+1. **confounders→confounding_factors rename (#214, #215):** Mechanisms #214 (News Corp cross-publication) and #215 (Mia Sato vocabulary bifurcation) used `confounders` field name instead of `confounding_factors`. All other mechanisms use `confounding_factors`. Fixed in competitor-coverage-research.yaml.
+
+2. **Dict→string format conversion (#214, #215):** Same mechanisms had confounding_factors as dicts (`{description:, strength:}`) instead of strings with `[SEVERITY]` prefix. Converted to match the `[STRONG] ...` / `[MODERATE] ...` / `[WEAK] ...` convention.
+
+3. **Severity prefix format fix (#216):** Mechanism #216 (Condé Nast Meta reverse personnel flow) used `STRONG: ...` format instead of `[STRONG] ...`. Fixed in both wired.yaml and competitor-coverage-research.yaml.
+
+4. **Mechanism #216 registered in competitor-coverage-research.yaml:** Was only in wired.yaml — cross-validation fixtures need it in the central research file. Added with all required fields (mechanism_id, name, type C, asymmetry_score 0.45, confounding_factors, source_urls, test_file, finding_summary).
+
+5. **Stale test fix (test_type_d_10am):** `test_highest_mechanism_is_212` updated to expect #216. Added type rotation mapping for #213-#216 (E, A, B, C).
+
+6. **Doc count sync:** ARCHITECTURE.md 516→521, README.md 518→521 (both table and body). Actual test file count verified at 521.
+
+7. **7 missing test file entries added** to both ARCHITECTURE.md and README.md (from iterations #222-#225).
+
+8. **news-corp.yaml consistency fix:** `confounders` → `confounding_factors` in the WSJ Apple AirPods silence section.
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — Field renames, format fixes, #216 added
+- `profiles/wired.yaml` — Severity prefix format fix for #216
+- `profiles/news-corp.yaml` — Field rename for consistency
+- `docs/ARCHITECTURE.md` — Count 516→521, 8 missing test file entries added
+- `README.md` — Count 518→521, 8 missing test file entries added
+- `tests/test_type_d_10am_cross_validation_aug21.py` — Highest mechanism #212→#216, rotation guard
+- `tests/test_type_d_3pm_cross_validation_aug21.py` — NEW: 5 classes, 16 tests
+
+**Test results:** 88 tests across 3 Type D files all passing. 521 total test files.
+
+---
+
 ## Iteration #225 — Fri 2026-08-21 14:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #216: Condé Nast Meta-Origin CBO France Reverse Personnel Flow**
