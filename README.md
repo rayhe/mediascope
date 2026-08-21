@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~19,000 | Across 521 test files |
+| Tests | ~19,000 | Across 522 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17669 tests** (19000 with parameterized expansion) across 521 test files, each covering a different analytical capability:
+MediaScope has **17669 tests** (19000 with parameterized expansion) across 522 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1035,3 +1035,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_conde_nast_cro_career_migration_snap_personnel_financial_architecture_aug21.py` | 33 | Mechanism #208: Condé Nast CRO Career Migration Snap Personnel Financial Architecture. Herbst-Brady 10-employer career path, Snap roles documented, Spectacles September 16 launch data, Meta zero personnel ties baseline, Perplexity chain. 6 classes, 33 tests |
 | `test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py` | 40 | WIRED Triple Reporter Apple Camera AirPods Leak Coverage Selection Silence. Three WIRED reporters (Ashworth, Goode, Rogers) produced zero coverage of Apple camera AirPods leak while publishing Meta camera coverage the same week. Boone Ashworth alone published 3 Meta glasses articles. Advance ownership + zero Apple financial partnership = coverage selection silence. 6 classes, 40 tests |
 | `test_type_d_3pm_cross_validation_aug21.py` | 16 | Type D cross-validation (Aug 21, 3 PM PT / Iteration #226): Fixed confounders→confounding_factors field inconsistency for mechanisms #214 and #215. Fixed confounding_factors format for #216 (STRONG: → [STRONG]). Added mechanism #216 to competitor-coverage-research.yaml. Updated highest mechanism test #212→#216 with type rotation guard for #213-#216. Doc sync: ARCHITECTURE 516→521, README 518→521. Added 7 missing test files to ARCHITECTURE.md and README.md. Fixed news-corp.yaml profile field naming for consistency. 5 classes, 16 tests |
+| `test_type_e_4pm_rabbit_hole_fashion_surveillance_kmart_price_democratization_aug21.py` | 31 | Mechanism #217: Fashion-Surveillance Thesis + Mass-Market Price Democratization Cross-Medium Delegitimization (Type E). Rabbit Hole podcast (Aug 20, ~50 min): fashion researcher Grace Robinson constructs "iPod hair clip to Meta glasses pipeline" thesis — Silicon Valley co-opts fashion to normalize surveillance, Meta EXCLUSIVE target despite Google/Samsung/Snap/Apple identical strategies. Chapter 26:45 names Meta explicitly. First fashion-academic lens in podcast corpus. Australian Kmart Anko $89 Smart Glasses broadcast cascade (Jul 28 – Aug 14): sold out in <1 week, triggered Attorney-General OAIC investigation, Privacy Commissioner blog, Greens ban push, EFA ban demand, GetUp 22K+ petition, Clayton Utz advisory, UK Wetherspoons ban. Entire backlash routes through Meta's brand despite NOT being a Meta product. Digital Trends: "Met's success has opened the floodgates." Cross-medium fashion-to-regulatory delegitimization pattern. Podcast entries #54 (Rabbit Hole) and #55 (Australian broadcast cascade). 4 classes, 31 tests |

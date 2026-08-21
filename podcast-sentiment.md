@@ -2630,12 +2630,103 @@ Engadget's "I'm Already Dreading Apple's Camera-Equipped AirPods" is one of the 
 
 ---
 
-### Podcast/Broadcast/Print/Academic/Policy vs Online Coverage Comparison (55 entries including Vergecast cascade)
+### 54. Rabbit Hole — "The iPod hair clip to Meta glasses pipeline" (Aug 20, 2026)
+
+- **Host:** Rosie Okotchi-Ormond
+- **Guest:** Grace Robinson (fashion and technology researcher/commentator)
+- **Format:** Fashion-history deep dive podcast, ~50 min
+- **Source URL:** https://www.youtube.com/watch?v=HwzD7EWak5I
+
+**Coverage Summary:**
+Fashion-academic analysis of how Silicon Valley co-opts fashion to normalize surveillance technology. The episode constructs a historical argument from iPod accessories through to Meta glasses, positioning the EssilorLuxottica partnership as the culmination of tech companies transforming surveillance into aspirational consumer products. Grace Robinson examines why "surveillance becomes something we willingly wear" and whether fashion can make "invasive technology feel normal."
+
+**Chapter Structure — Meta as Exclusive Subject:**
+
+| Timestamp | Chapter | Entity Referenced |
+|-----------|---------|-------------------|
+| 0:00 | When surveillance becomes fashionable | Meta (implied) |
+| 02:05 | Meet Grace Robinson | N/A |
+| 05:30 | What is fashion technology? | Generic |
+| 10:15 | When did technology become fashionable? | Historical |
+| 15:40 | The relationship between Silicon Valley and fashion | Meta/generic |
+| 21:10 | Why are we suddenly romanticising old technology? | Cultural |
+| 26:45 | Meta glasses and wearable surveillance | **Meta (named)** |
+| 33:20 | Can fashion make surveillance feel normal? | Meta (implied) |
+| 39:15 | The politics of being watched | Meta (implied) |
+| 44:00 | Who benefits from fashion tech? | Meta (implied) |
+| 47:00 | What does the future of wearable technology look like? | Generic |
+| 48:15 | Rabbit Hole questions | N/A |
+
+**Key Framing — Fashion as Surveillance Laundering:**
+The episode's thesis is that fashion partnerships serve as a "laundering" mechanism: Meta's glasses are not just technology but a cultural object whose desirability masks surveillance capability. The Ray-Ban brand lends cultural legitimacy that makes cameras-on-face socially acceptable, creating what Robinson frames as a consent erosion pathway.
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named in chapter 26:45, entire 50-minute argument built around Meta as the exemplar of fashion-surveillance convergence
+- **Google:** NOT mentioned despite Android XR × Warby Parker partnership (Warby Parker IS a fashion brand — identical fashion-laundering dynamic)
+- **Samsung:** NOT mentioned despite Galaxy Glasses announcement (Jul 22, 2026) with identical Snapdragon AR1 Gen 1 camera hardware
+- **Apple:** NOT mentioned despite N50 smart glasses with designer frame partnerships in development
+- **Snap:** NOT mentioned despite Spectacles with cameras ($2,195) and prior Vogue/fashion magazine collaborations
+
+**Analytical Significance — New Delegitimization Vector:**
+This is the FIRST fashion-history / fashion-academic approach in the podcast corpus. Previous episodes used cybersecurity (Shared Security, Smashing Security), legal (Jackson Lewis), broadcast news (BBC, NBC, 7NEWS), activist (EHE), accessibility (Double Tap), or tech-analyst (Fortune, AI Inside, Waveform) lenses. The fashion-academic lens represents a NEW disciplinary vector that reaches a different audience: fashion-conscious consumers who may not follow tech news but consume culture criticism.
+
+**Sentiment Score:** -6/10 (moderately negative — scholarly but frames Meta as primary vehicle for surveillance normalization)
+**Asymmetry Assessment:** HIGH — The fashion-surveillance critique applies equally to Google (Warby Parker partnership), Samsung (fashion eyewear design), and Apple (designer frame development), but is applied exclusively to Meta. The episode's title "The iPod hair clip to Meta glasses pipeline" establishes a historical lineage that could only lead to Meta, not to any competitor.
+
+---
+
+### 55. Australian Broadcast Cascade — Kmart Anko Smart Glasses + Meta Privacy Panic (Jul 28 – Aug 14, 2026)
+
+- **Networks:** 7NEWS Australia (broadcast), AAP (wire service), various
+- **Key Broadcasts:**
+  - 7NEWS: "Smart glasses spark urgent privacy concerns" (~Aug 7, 2026) — Source: https://www.youtube.com/watch?v=4ZXgcpVVfjM
+  - 7NEWS: "Meta's smart glasses spark privacy concerns" (~Jul 2026) — Source: https://www.youtube.com/watch?v=M6e26ybtJqk
+  - AAP: "Cut-price smart glasses trigger privacy investigation" (Aug 7, 2026)
+
+**Coverage Summary:**
+Kmart Australia released $89 Anko Smart Glasses on July 28, 2026 — black-rimmed clear-lens glasses with 8MP camera, 1080p video, no visible recording indicator, paired via HeyCyan app. Sold out nationwide in under one week. The product triggered an unprecedented regulatory cascade:
+
+1. **Attorney-General Michelle Rowland** formally requested OAIC investigation, citing risks to women and children
+2. **Privacy Commissioner Carly Kind** issued formal blog post on OAIC website about monitoring the category
+3. **The Greens** pushed for a ban on wearable recording technology + import restrictions
+4. **GetUp petition:** 22,000+ signatures urging Kmart to remove the glasses
+5. **Electronic Frontiers Australia:** called for immediate ban on BOTH Kmart Anko AND Meta glasses
+6. **Clayton Utz** (major law firm): published formal advisory for workplaces on smart glasses policies
+7. **Wetherspoons (UK):** Banned smart glasses with cameras in all venues
+
+**CRITICAL FINDING — Backlash Transfer (Mechanism #217):**
+Kmart's Anko glasses are NOT a Meta product. They are manufactured by Kmart's private-label Anko brand, priced 81% cheaper than Meta's Ray-Bans ($89 vs $469+). Yet the entire regulatory and media response routes the privacy panic THROUGH Meta's brand:
+
+- Digital Trends headline (Aug 2026): "Australia just set a horrific example for creep behavior with low-cost smartglasses" — article states "Met's [sic] success has opened the floodgates," directly blaming Meta for Kmart's product
+- EFA explicitly names Meta alongside Kmart in its ban demand — Meta is held responsible for products OTHER companies sell
+- 7NEWS runs separate segments for Kmart and Meta but the Kmart segment references Meta as the category originator
+- Clayton Utz advisory: "The Anko Smart Glasses represent a step change in consumer surveillance technology" but connects the risk to Meta's broader market category
+- AAP wire service: "While smart glasses have been around for several years, with versions by companies including Meta selling for several hundred dollars, the Kmart model has raised concerns about the wider spread"
+
+**Price Democratization Paradox:**
+The $89 price point created what the discourse treats as a new category of threat: "impulse-buy surveillance." Digital Rights Watch called the glasses a "privacy nightmare" specifically because the "low cost means covert recording equipment now sits within impulse-buy range." Yet the privacy concern (camera-on-face without obvious indicator) is IDENTICAL whether the device costs $89 or $469 or $2,195 (Snap Spectacles). The discourse treats price itself as the danger variable, not camera capability.
+
+**Entity Coverage Assessment:**
+| Entity | Named in regulatory response? | Named in broadcast? | Named in petition? |
+|--------|-------------------------------|---------------------|--------------------|
+| Kmart/Anko | YES | YES | YES |
+| Meta | YES (as category originator) | YES | NO (separate segment) |
+| Samsung | NO | NO | NO |
+| Google | NO | NO | NO |
+| Apple | NO | NO | NO |
+| Snap | NO | NO | NO |
+
+**Sentiment Score:** -7/10 (strongly negative — regulatory alarm + consumer backlash)
+**Asymmetry Assessment:** HIGH — The backlash targets Kmart AND Meta but routes through Meta's brand. Samsung, Google, Apple, and Snap are absent from all Australian regulatory actions, broadcasts, and petitions despite identical or superior camera capabilities.
+
+---
+
+### Podcast/Broadcast/Print/Academic/Policy vs Online Coverage Comparison (57 entries including Vergecast cascade)
 
 | Pattern | Print/Online | Podcast/Broadcast/Multimedia (55 entries) | Alignment |
 |---------|-------------|---------|-----------|\
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (46 of 55 entries) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (1 of 55 entries contextualizes competitors) | **ALIGNED** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (48 of 57 entries) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (1 of 57 entries contextualizes competitors) | **ALIGNED** |
 | Apple aspirational framing for identical hardware | ✅ (mechanism #101, #136) | ✅ (DTNS #5334 + 9to5Mac HH #604 + Vergecast) | **REINFORCED** |
 | Same-episode entity framing asymmetry | ✅ (#153) | ✅ (DTNS #5334, Vergecast two-episode cascade) | **EXTENDED** |
 | Apple-ecosystem podcast vocabulary suppression | ✅ (#173) | ✅ (9to5Mac HH #604: zero alarm words for Apple camera) | **ALIGNED** |
@@ -2646,5 +2737,5 @@ Engadget's "I'm Already Dreading Apple's Camera-Equipped AirPods" is one of the 
 ---
 
 *Last updated: 2026-08-21 18:00 UTC (Aug 21, 11:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban), #205 (Apple Camera Wearable LED Indicator Double Standard — Same Safeguard, Different Entity, Different Editorial Evaluation), #209 (9to5Mac Happy Hour #604 Apple-Ecosystem Podcast Camera AirPods Excitement Framing — Same-Week Meta Ban Cascade Contrast), #213 (Vergecast Two-Episode Camera-Device Vocabulary Cascade — Five Camera Products, Only Meta Gets "Menace," Meta Advertiser Gets Worst Treatment)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban), #205 (Apple Camera Wearable LED Indicator Double Standard — Same Safeguard, Different Entity, Different Editorial Evaluation), #209 (9to5Mac Happy Hour #604 Apple-Ecosystem Podcast Camera AirPods Excitement Framing — Same-Week Meta Ban Cascade Contrast), #213 (Vergecast Two-Episode Camera-Device Vocabulary Cascade — Five Camera Products, Only Meta Gets "Menace," Meta Advertiser Gets Worst Treatment), #217 (Fashion-Surveillance Thesis + Mass-Market Price Democratization — Twin Cross-Medium Delegitimization)*
 

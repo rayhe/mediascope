@@ -24219,4 +24219,60 @@ publications:
       mechanism #208. Reports to Herbst-Brady (ex-Snap CRO). Net incentive ambiguous: personal goodwill (softening) vs competitive
       intelligence (sharpening). Scored 0.45.'
     test_count: 34
+  mechanism_217_fashion_surveillance_kmart_price_democratization:
+    mechanism_id: 217
+    name: Fashion-Surveillance Thesis + Mass-Market Price Democratization — Twin Cross-Medium Delegitimization
+    type: E
+    discovery_date: '2026-08-21'
+    iteration: 227
+    overview: 'Two independent Aug 2026 discoveries reveal new delegitimization vectors routing all smart-glasses criticism
+      exclusively through Meta''s brand. VECTOR A: Rabbit Hole podcast episode "The iPod hair clip to Meta glasses pipeline"
+      (Aug 20, 2026, host Rosie Okotchi-Ormond, guest Grace Robinson) constructs a fashion-history argument that Silicon Valley
+      co-opts fashion partnerships (Ray-Ban, Oakley, EssilorLuxottica) to launder surveillance technology into desirable products.
+      Meta is the EXCLUSIVE example across 9 chapter headings; Google × Warby Parker, Samsung Galaxy Glasses, Snap Spectacles
+      ($2,195 with cameras), and Apple designer frames — all with identical fashion-tech strategies — are absent. VECTOR B:
+      Australian Kmart/Anko broadcast cascade (Jul 28 – Aug 14, 2026). Kmart released $89 AUD Anko Smart Glasses, sold out
+      nationally in under one week. The regulatory and media response — Attorney-General Michelle Rowland requesting OAIC
+      investigation, The Greens pushing for ban + import restrictions, GetUp petition with 22,000+ signatures, Electronic
+      Frontiers Australia calling for ban on BOTH Kmart Anko AND Meta glasses, Clayton Utz formal workplace advisory, 7NEWS
+      running two segments, Digital Trends writing "Met''s success has opened the floodgates" — routes the entire privacy panic
+      THROUGH Meta''s brand despite Kmart Anko being an independent Australian private-label product. This is backlash transfer:
+      Meta is blamed for another company''s cheaper, more accessible product. No Samsung, Google, Apple, or Snap are named in
+      any Australian regulatory action, broadcast, or petition. The demand contradiction (sold out in <1 week) undercuts the
+      universal-rejection narrative.'
+    publication: Cross-publication (Rabbit Hole podcast, 7NEWS Australia, Digital Trends, Clayton Utz, EFA, GetUp)
+    entity: Meta (adversarial), Kmart/Anko (collateral via Meta brand transfer), Google/Samsung/Apple/Snap (zero scrutiny)
+    asymmetry_score: 0.82
+    confounding_factors:
+    - '[STRONG] Meta IS the dominant smart glasses vendor (~80%+ market share, BBC) — fashion-surveillance thesis naturally
+      centers the market leader'
+    - '[STRONG] Meta''s EssilorLuxottica partnership IS the most prominent fashion-tech alliance — it is a legitimate focal
+      point for fashion-surveillance analysis'
+    - '[MODERATE] Kmart Anko glasses are cheaper ($89 AUD) and lack LED indicators — may genuinely pose greater privacy risks
+      than Meta''s (which has LED + software safeguards)'
+    - '[MODERATE] Google/Samsung/Apple/Snap haven''t reached equivalent market penetration — coverage proportionality partially
+      explains the gap'
+    - '[WEAK] Rabbit Hole is a small/indie podcast — limited editorial influence compared to major networks'
+    cross_references:
+    - connection: Backlash transfer is a form of category-to-brand substitution where Meta IS the category
+      mechanism_id: 137
+      name: Category-to-Brand Substitution (Privacy Vocabulary Redirected Attribution)
+    - connection: Fashion-academic + regulatory-institutional + broadcast forms multi-vector delegitimization
+      mechanism_id: 158
+      name: Multi-Vector Cultural Delegitimization
+    - connection: Same week Vergecast vocabulary cascade — cross-medium compound effect
+      mechanism_id: 213
+      name: Vergecast Two-Episode Camera-Vocabulary Cascade
+    source_urls:
+    - https://www.youtube.com/watch?v=HwzD7EWak5I
+    - https://www.youtube.com/watch?v=4ZXgcpVVfjM
+    - https://www.youtube.com/watch?v=M6e26ybtJqk
+    test_file: tests/test_type_e_4pm_rabbit_hole_fashion_surveillance_kmart_price_democratization_aug21.py
+    finding_summary: 'Rabbit Hole podcast (Aug 20, 2026) constructs a fashion-history thesis framing Meta as the sole example
+      of fashion-laundered surveillance — no competitors mentioned despite identical strategies. Simultaneously, Australian
+      Kmart/Anko $89 smart glasses (sold out <1 week) triggered a regulatory cascade (Attorney-General, OAIC, EFA, GetUp 22K+
+      signatures, Clayton Utz, The Greens) that routes all blame through Meta''s brand via backlash transfer — Digital Trends:
+      "Met''s success has opened the floodgates." No Samsung/Google/Apple/Snap named in any regulatory action. Two independent
+      vectors (UK fashion-academic, Australian regulatory-institutional) reach the same Meta-exclusive conclusion. Scored 0.82.'
+    test_count: 30
 research_period: 2024-08-01 to 2026-08-21

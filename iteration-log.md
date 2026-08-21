@@ -1,5 +1,47 @@
 ---
 
+## Iteration #227 — Fri 2026-08-21 16:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Mechanism #217: Fashion-Surveillance Thesis + Mass-Market Price Democratization — Twin Cross-Medium Delegitimization**
+
+Two new cross-medium delegitimization vectors discovered and documented:
+
+### Vector A: Rabbit Hole Podcast — Fashion-Academic Delegitimization (Aug 20, 2026)
+
+"The iPod hair clip to Meta glasses pipeline" — fashion researcher Grace Robinson constructs a 50-minute fashion-history thesis that Silicon Valley co-opts fashion to normalize surveillance. Meta glasses are the EXCLUSIVE subject despite identical fashion-tech strategies by:
+- Google × Warby Parker (Android XR glasses)
+- Samsung Galaxy Glasses (identical Snapdragon AR1 Gen 1)
+- Snap × fashion collabs ($2,195 Spectacles)
+- Apple × designer frames (N50)
+
+**First fashion-academic lens in the podcast corpus** — reaches fashion-conscious audiences outside the tech news ecosystem. All prior podcast coverage used cybersecurity, legal, broadcast news, activist, accessibility, or tech-analyst lenses.
+
+### Vector B: Australian Kmart/Anko Broadcast Cascade (Jul 28 – Aug 14, 2026)
+
+Kmart's $89 Anko Smart Glasses (NOT a Meta product) sold out nationwide in under one week, triggering:
+- Attorney-General formal OAIC investigation request
+- Privacy Commissioner formal blog post on monitoring
+- The Greens pushing for ban + import restrictions
+- GetUp petition: 22,000+ signatures
+- Electronic Frontiers Australia: ban demand for BOTH Kmart AND Meta
+- Clayton Utz formal workplace advisory
+- UK Wetherspoons venue ban
+
+**Backlash Transfer pattern:** Digital Trends: "Met's success has opened the floodgates" — Meta blamed for Kmart's product. The entire regulatory response routes through Meta's brand even though the triggering product is not Meta's.
+
+No Samsung, Google, Apple, or Snap named in ANY Australian regulatory action, broadcast, or petition.
+
+**Files changed:**
+- `podcast-sentiment.md` — Added entries #54 (Rabbit Hole) and #55 (Australian broadcast cascade)
+- `profiles/competitor-coverage-research.yaml` — Added mechanism #217
+- `tests/test_type_e_4pm_rabbit_hole_fashion_surveillance_kmart_price_democratization_aug21.py` — NEW: ~30 tests, 4 test classes
+- `docs/ARCHITECTURE.md` — Count 521→522, test file entry added
+- `README.md` — Count 521→522, test file entry added
+
+**Test count:** 522 test files
+
+---
+
 ## Iteration #226 — Fri 2026-08-21 15:00 PT (Type D: Test & Verify)
 
 **Cross-validation and structural integrity fixes:**
