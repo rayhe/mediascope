@@ -1,6 +1,42 @@
 ---
 
-## Iteration #206 — Thu 2026-08-20 17:00 PT (Type D: Test & Verify)
+## Iteration #207 — Thu 2026-08-20 18:00 PT (Type E: Podcast/Broadcast Sentiment Tracking)
+
+### Mechanism #200: Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban
+
+**Type:** Podcast/Broadcast Sentiment Tracking — Cross-Temporal Natural Experiment
+**Mechanism #200:** Same Institution, Same Executive, Different Brand, Different Cultural Response
+**Asymmetry Score:** 0.88
+**Entities:** Meta, Google (historical), Samsung, Snap, Apple (absent from 2026 coverage)
+
+**Core Discovery — Phil Clapp/CEA→UKCA Natural Experiment:**
+
+The UK cinema trade body executive Phil Clapp announced smart glasses restrictions on TWO different brands of camera-equipped glasses, 12 years apart:
+- **2014:** Cinema Exhibitors' Association (CEA) — "Customers will be requested not to wear [Google Glass] into cinema auditoriums" (piracy concern)
+- **2026:** UK Cinema Association (UKCA, same body rebranded) — "policies to prohibit and/or restrict the wearing of camera-enabled smart glasses" (piracy + privacy)
+
+Same institution, same executive, same primary concern, different brand — dramatically different vocabulary/cultural response.
+
+**Key vocabulary escalation:**
+- 2014: "Glasshole" (social critique), "fairly lousy device for recording" (device defense QUOTED), device limitations acknowledged (45 min battery, tiny sensor, visible screen)
+- 2026: "pervert glasses," "spyware," "spy glasses" (criminal accusation), device defense (LED + tamper detection) QUOTED BUT UNDERMINED, device limitations NEVER mentioned, gendered framing pervasive
+
+**Critical paradox:** Phil Clapp's own language is MORE measured in 2026 (noting accessibility benefits, "relevant and proportionate") than in 2014 (flat ban). The trade body softened while the surrounding cultural/media ecosystem escalated dramatically.
+
+**New podcast entry #47: Clyde 1 / HelloRayo (Scottish commercial radio)**
+First documented instance of UK smart glasses ban cascade reaching REGIONAL COMMERCIAL RADIO. Binary framing: "Accessibility tool or harassment risk?" Duncan McCann quoted on gendered risk; Visibility Scotland quoted for accessibility counterweight; Meta spokesperson quoted for device safeguards. Samsung/Google/Apple/Snap all absent.
+
+**Confounders:** 5 documented (3 STRONG: volume difference, Sama/Kenya scandal, 12-year privacy expectation shift; 2 MODERATE: form factor normalization, activist-coined vocabulary)
+
+### Stats
+- **New test file:** `test_type_e_6pm_podcast_broadcast_uk_cinema_2014_2026_natural_experiment_aug20.py` — 8 classes, 35 tests (all passing)
+- **Profile updated:** wired.yaml mechanism #200 (Phil Clapp natural experiment)
+- **Podcast entry:** #47 added (Clyde 1 / HelloRayo)
+- **Natural experiment section:** Added to podcast-sentiment.md
+- **Mechanism:** #200 documented (first mechanism to use cross-temporal natural experiment design)
+- **Pushed to GitHub:** ✓ (pending commit below)
+
+---
 
 ### Cross-Validation: Mechanisms #196-#199 Structural Integrity + Doc Sync Fix + Mechanism #199 Metadata
 

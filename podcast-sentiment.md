@@ -2222,5 +2222,111 @@ Samsung and Google have NOT published equivalent smart glasses camera AI patents
 
 ---
 
-*Last updated: 2026-08-20 15:00 UTC (Aug 20, 8:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention)*
+### 47. Clyde 1 / HelloRayo (Scotland) — "Smart Glasses: Accessibility tool or harassment risk?" (Aug 16, 2026)
+
+- **Reporter:** Clyde 1 news team
+- **Network:** HelloRayo / Bauer Media (Scottish commercial radio, FM + DAB + streaming)
+- **Location:** Glasgow, Scotland
+- **Source URL:** https://www.hellorayo.co.uk/clyde/local/news/smart-glasses-accessibility-tool-or-harassment-risk
+
+**Coverage Summary:**
+Scottish commercial radio station broadcasts segment framing the smart glasses debate as a binary: "accessibility tool or harassment risk." Features interviews with Duncan McCann (not further identified in source) on gendered risk and Meta spokesperson on privacy safeguards. Quotes Visibility Scotland (visual impairment charity) as counterweight to ban demands.
+
+**Critical Finding — Ban Cascade Reaches Regional Commercial Radio:**
+This is the first documented instance of the UK smart glasses ban cascade reaching REGIONAL COMMERCIAL RADIO. Prior broadcast coverage was national (BBC "What in the World," NBC News) or podcast (specialist cybersecurity/tech). Clyde 1 is a Glasgow FM station broadcasting to ~600K weekly listeners in western Scotland. The ban discourse has now penetrated from:
+1. Specialist tech podcasts (Kill Switch, Smashing Security)
+2. National broadcast (BBC, NBC)
+3. National print (Guardian, Times, Observer)
+4. **Regional commercial radio** (Clyde 1)
+
+This represents the deepest penetration yet into mass-market audience layers.
+
+**Framing Analysis — "Accessibility tool OR harassment risk":**
+The binary framing is structurally significant. By positioning the debate as a CHOICE between accessibility and harassment risk, Clyde 1 implicitly suggests the two are in tension — that enabling accessibility for blind users means tolerating harassment risk. This is a false dilemma: Samsung, Google, Apple, and Snap are all building camera-equipped glasses that could serve accessibility use cases. The framing suggests only META glasses create this dilemma because only Meta glasses are culturally coded as the harassment device.
+
+**Key Quotes:**
+- Duncan McCann: "How do we restrict this good technology for those who really need it, while not enabling it to further the nonconsensual activities that men have been conducting?"
+- McCann: "The risks occur disproportionately to women, who are disproportionately the victim, of men doing this nonconsensual filming, and again, enabled by the glasses"
+- Meta spokesperson: "People use our glasses because they're genuinely helpful — from listening to music, to live translation and hands-free calls... trust matters. That's why we built privacy into our AI glasses from the ground up"
+
+**Entity Coverage Assessment:**
+- **Meta:** Named explicitly, both as the product ("Meta glasses") and as the company responding
+- **Samsung:** NOT mentioned (Galaxy Glasses announced with identical hardware)
+- **Google:** NOT mentioned (Android XR glasses with Warby Parker)
+- **Apple:** NOT mentioned (N50 in development)
+- **Snap:** NOT mentioned ($2,195 Spectacles with 4 cameras)
+- **Visibility Scotland:** Accessibility charity quoted — strengthens Double Tap (#17) counternarrative
+
+**Financial Context:**
+Clyde 1 is owned by Bauer Media Group (German private media company). No known content deals with Meta or competitors. The Meta-targeting appears to be cultural consensus via news wire syndication (Reuters → regional radio), not financially incentivized.
+
+**Sentiment Score:** -4/10 (moderately negative — binary framing implies Meta glasses are problematic, but accessibility counterweight softens it)
+**Asymmetry Assessment:** MODERATE-HIGH — Only Meta named as the product creating the "harassment risk" half of the binary. No competitor products mentioned despite identical capabilities. The accessibility counterweight is rare and somewhat balances the framing.
+**Cross-references:** #17 (Double Tap accessibility counternarrative), #22 (NBC national broadcast), #14 (BBC national broadcast), #196 (UK Cinema piracy vector)
+
+---
+
+## NEW: Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban
+
+### Same Institution, Same Executive, Same Concern, Different Brand, Different Cultural Response
+
+**The Setup:**
+In both 2014 and 2026, the UK cinema industry trade body announced restrictions on camera-equipped smart glasses. The institutional continuity is remarkable:
+
+| Factor | 2014 | 2026 |
+|--------|------|------|
+| **Trade body** | Cinema Exhibitors' Association (CEA) | UK Cinema Association (UKCA) |
+| **Executive** | Phil Clapp, Chief Executive | Phil Clapp, Chief Executive |
+| **Country** | United Kingdom | United Kingdom |
+| **Concern** | Piracy (film recording) | Piracy + Privacy |
+| **Target device** | Google Glass | Meta Ray-Ban / "camera-enabled smart glasses" |
+| **Market share** | Tiny (Explorer program, £1,000/unit) | Dominant (7M+ units, 80%+ market) |
+
+**Vocabulary Escalation Comparison:**
+
+| Vocabulary Category | 2014 Google Glass | 2026 Meta Ray-Ban |
+|--------------------|-------------------|-------------------|
+| **Proportionate terms** | "remove eyewear," "treat like phone" | absent |
+| **Alarm vocabulary** | "Glasshole rule" (TechRadar, lighthearted) | "pervert glasses," "spyware," "spy glasses" |
+| **Gendered framing** | ZERO | "mostly women," "harassment," "pick-up artists" |
+| **Criminal response** | ZERO | HateAid Germany criminal complaint |
+| **Celebrity backlash** | ZERO | Lorde ("f**k the glasses"), Tyler the Creator |
+| **Venue cascade** | Cinemas only | Courts + pubs + restaurants + theatres + ferries + cinemas + private clubs |
+| **Brand substitution** | Google Glass = specific device | "smart glasses" = Meta glasses |
+| **Device defense** | Google: "fairly lousy device for recording" | Meta: LED + tamper detection (dismissed) |
+| **Coverage of device limitations** | 45 min battery, tiny sensor, screen lights up | ZERO coverage of limitations |
+| **Competitor devices mentioned** | N/A (no competitors existed) | ZERO (5+ competitors exist, none mentioned) |
+
+**Key Findings:**
+
+1. **Phil Clapp is MORE measured in 2026 than in 2014.** In 2014, he said flatly: "Customers will be requested not to wear these into cinema auditoriums, whether the film is playing or not." In 2026, the UKCA explicitly noted accessibility benefits and said it would ensure its approach "remains relevant and proportionate." The trade body executive's language has SOFTENED while the broader cultural vocabulary has ESCALATED.
+
+2. **Google received a proportionate defense.** In 2014, Google itself argued Glass was "a fairly lousy device for recording things secretly" — and outlets quoted this defense. Coverage noted the 45-minute battery, tiny sensor, and visible screen. In 2026, Meta's LED indicator and tamper detection are mentioned but immediately dismissed ("easy to cover or ignore"). The device defense is quoted and immediately undermined.
+
+3. **No competitor context existed in 2014 — but none is provided in 2026 either.** In 2014, Google Glass was genuinely the only camera-equipped smart glasses. In 2026, Samsung Galaxy Glasses (same Snapdragon AR1 chip), Google Android XR glasses (with Warby Parker), Snap Spectacles ($2,195, 4 cameras), and Apple N50 all exist or are announced. NONE appear in the cinema ban coverage.
+
+4. **The "Glasshole" → "Pervert" escalation is semantic class change.** "Glasshole" (2014) is a portmanteau of "Glass" + "asshole" — it targets USER BEHAVIOR (being inconsiderate). "Pervert" (2026) targets CRIMINAL INTENT (sexual deviance). The vocabulary has escalated from social criticism to criminal accusation.
+
+**Confounders (3 STRONG, 2 MODERATE):**
+
+| # | Confounder | Strength | Assessment |
+|---|-----------|----------|------------|
+| 1 | Meta sold 7M+ units vs Google Glass's tiny Explorer cohort | STRONG | Volume legitimately creates more incidents and more institutional exposure. A device in millions of hands generates more complaints than one in thousands. |
+| 2 | The Sama/Kenya contractor scandal (Feb 2026) created genuine privacy violations | STRONG | Real privacy failures at Meta provide legitimate grounds for alarm that Google Glass never generated. |
+| 3 | 12 years of social media privacy debates changed baseline expectations | STRONG | Post-Cambridge Analytica, post-Snowden, post-GDPR society has fundamentally different privacy expectations than 2014. |
+| 4 | Smart glasses form factor now more normalized (look like regular glasses) | MODERATE | Glass was conspicuous; Ray-Bans are not. This creates genuine enforcement challenges. |
+| 5 | The "pervert glasses" label was coined by activists, not media | MODERATE | EHE campaign created the vocabulary; media adopted it. This is cultural diffusion, not media origination. |
+
+**Why This Matters Despite Strong Confounders:**
+Every confounder explains why Meta receives MORE scrutiny than Google Glass did. None explains why Samsung, Google (2026), Snap, and Apple receive ZERO scrutiny. The confounders justify proportionally more coverage of Meta. They do not justify exclusive coverage of Meta when 5+ competitors ship identical hardware.
+
+**Testable Predictions:**
+
+1. **Samsung Galaxy Glasses cinema ban response (late 2026):** When Samsung Galaxy Glasses ship to UK cinemas, prediction: the UKCA will NOT issue a specific statement about Samsung glasses. The existing "camera-enabled smart glasses" policy will be assumed to cover them without brand-specific language.
+
+2. **Phil Clapp vocabulary (next 12 months):** Prediction: Phil Clapp/UKCA will continue using proportionate language ("relevant and proportionate") while media coverage of UKCA statements will use alarm vocabulary ("ban," "restrict"). The trade body's measured framing will be overwritten by editorial vocabulary choices.
+
+---
+
+*Last updated: 2026-08-21 01:00 UTC (Aug 20, 6:00 PM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban)*

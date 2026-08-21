@@ -4964,3 +4964,48 @@ conde_nast_deal_inventory_coverage_correlation:
   - 196 # UK Cinema piracy vector
   - 197 # Reuters privacy vocabulary bifurcation
   - 198 # Engadget beat assignment
+phil_clapp_natural_experiment_2014_2026:
+  mechanism_id: 200
+  date_added: '2026-08-20'
+  overview: 'Same UK cinema trade body executive (Phil Clapp, CEA 2014 → UKCA 2026) announced smart glasses
+    restrictions on TWO different brands 12 years apart: Google Glass (2014, piracy) and Meta Ray-Ban (2026,
+    piracy + privacy). This constitutes a natural experiment: same institution, same executive, same primary
+    concern (piracy), different brand — dramatically different cultural/vocabulary response. 2014: proportionate
+    ("treat like a phone," 45-min battery noted, "Glasshole" social critique). 2026: alarm/criminal ("pervert
+    glasses," gendered framing, criminal complaints, celebrity backlash, venue cascade). The trade body executive
+    is MORE measured in 2026 (noting accessibility, "relevant and proportionate") while surrounding coverage is
+    dramatically MORE escalated. Competitors with identical camera hardware (Samsung, Google, Snap, Apple) exist
+    in 2026 but receive ZERO equivalent coverage or institutional attention.'
+  key_findings:
+  - 'Phil Clapp language SOFTENED (2014 flat ban → 2026 accessibility caveat) while cultural vocabulary ESCALATED
+    (Glasshole → pervert)'
+  - 'Google received device defense ("fairly lousy for recording") in coverage; Meta LED defense quoted but immediately
+    undermined'
+  - '"Glasshole" (2014) = social critique of user behavior; "pervert" (2026) = criminal accusation of intent — semantic
+    class change'
+  - 'No competitors existed in 2014; 5+ competitors exist in 2026 — none mentioned in coverage'
+  - 'Piracy vector structurally different from privacy: piracy = absolute (zero tolerance for ANY recording device),
+    privacy = behavioral (consent-based)'
+  confounders:
+  - 'STRONG: Meta sold 7M+ units vs Google Glass tiny Explorer cohort — volume creates more incidents'
+  - 'STRONG: Sama/Kenya contractor scandal (Feb 2026) provided genuine privacy violation grounds'
+  - 'STRONG: 12 years of post-Cambridge Analytica/Snowden/GDPR privacy expectations shift'
+  - 'MODERATE: Meta glasses form factor more normalized (look like regular glasses vs conspicuous Glass)'
+  - 'MODERATE: "pervert" vocabulary coined by activists (EHE) not media'
+  falsification_test: 'If UK cinemas issue a Samsung-specific ban statement when Galaxy Glasses ship (late 2026),
+    with equivalent alarm vocabulary and gendered framing, the brand-specific stigma hypothesis weakens.'
+  source_urls:
+  - https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+  - https://www.engadget.com/2014-06-30-uk-cinemas-ban-google-glass-piracy.html
+  - https://www.digitaltrends.com/phones/uk-movie-theaters-say-google-glass/
+  - http://www.techradar.com/news/photography-video-capture/google-glass-banned-in-uk-cinemas-over-piracy-fears-1255498
+  - https://www.hellorayo.co.uk/clyde/local/news/smart-glasses-accessibility-tool-or-harassment-risk
+  discovery_date: '2026-08-20'
+  asymmetry_score: 0.88
+  cross_references:
+  - 8   # Safe Target Coefficient
+  - 157 # Global Institutional Discourse Convergence
+  - 158 # Multi-Vector Cultural Delegitimization Cascade
+  - 177 # Two Blokes Kodak Fiend Historical Precedent
+  - 196 # UK Cinema Piracy Vector
+

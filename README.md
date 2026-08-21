@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~18,393 | Across 499 test files |
+| Tests | ~18,433 | Across 500 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **18393 tests** across 499 test files, each covering a different analytical capability:
+MediaScope has **18433 tests** across 500 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1014,3 +1014,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_conde_nast_deal_inventory_coverage_correlation_aug20.py` | 49 | Mechanism #199: Condé Nast Deal Inventory Coverage Correlation. Condé Nast (WIRED's parent) has financial relationships with 5 of 7 major AI platform companies: OpenAI (active), Amazon/Rufus (active), Microsoft/PCM (active), Perplexity (post-C&D, active), Apple (negotiating Siri AI variable-compensation). ZERO deals with Meta, ADVERSARIAL posture toward Google (CEO Lynch: "death blow," "pernicious"). Coverage adversarialism inversely correlates with deal status: Meta (0 deals) = most adversarial, OpenAI (active deal) = soft. French APIG complaint (Aug 14): competition authority enforced Meta FIRST despite Google causing 33-38% traffic decline via AI Overviews. Anthropic zero-deal confirmation: $65B ARR + zero deals = softest coverage. Cross-refs #8, #33, #43, #136, #156, #196, #197, #198. 9 classes, 49 tests |
 | `test_digital_trends_apple_n50_privacy_hero_meta_creepy_reputation_framing_asymmetry_aug20.py` | 40 | Mechanism #196: Digital Trends Apple N50 Privacy-Hero vs Meta Ray-Ban Creepy-Reputation Publication-Level Framing Asymmetry. 5 Apple N50 articles (aspirational: "avoid the creepy reputation", "privacy-first", "sign me up") vs 4+ Meta articles ("creepy", "nightmarish", "pervert glasses", "surveillance cameras"). Apple N50 has cameras + Visual Intelligence continuous scan, zero alarm terms. Meta NameTag (rumored/dormant) treated as imminent threat. Managing editor (Nadeem Sarwar) + Andy Boxall + Rachit all apply same bifurcation = editorial direction. Apple News revenue / no Meta financial ties. 11 classes, 40 tests |
 | `test_type_d_5pm_cross_validation_aug20.py` | 40 | Type D cross-validation (Aug 20, 5 PM PT): Mechanisms #196-#199 structural integrity, #199 metadata fix (added discovery_date, asymmetry_score 0.86, 8 cross_references, 2 source URLs), doc sync fix (3 missing test files in README/ARCHITECTURE, counts 18133→18264→18344), confounder robustness (reverse causality, editorial independence), falsification test guard, competitor-entities consistency. 8 classes, 40 tests |
+| `test_type_e_6pm_podcast_broadcast_uk_cinema_2014_2026_natural_experiment_aug20.py` | 35 | Type E podcast/broadcast (Aug 20, 6 PM PT): Mechanism #200 Phil Clapp Natural Experiment — same UK cinema trade body executive (CEA 2014 → UKCA 2026) issued smart glasses restrictions for Google Glass and Meta Ray-Ban 12 years apart. Vocabulary escalation: "Glasshole" social critique (2014) → "pervert" criminal accusation (2026). Clyde 1/HelloRayo Scottish regional commercial radio entry #47. Ban cascade reaches regional broadcast. 8 classes, 35 tests |
