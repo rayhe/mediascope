@@ -1,5 +1,30 @@
 ---
 
+## Iteration #211 — Fri 2026-08-21 00:00 PT (Type D: Test & Verify)
+
+### Fix: 39 Test Collection Errors from Missing Dependencies
+
+**Type:** Test & Verify — Dependency and Doc Count Sync
+**Impact:** 942 tests were silently uncollectable due to missing `textblob` and `vaderSentiment` Python packages
+
+**Root cause:** `mediascope/analyze/sentiment.py` imports `textblob` and `vaderSentiment` at module level. Both are listed in `requirements.txt` but were not installed on the VM. Any test file importing from `mediascope.analyze.sentiment` (68 files, 39 of which were the sole importers) failed during pytest collection with `ModuleNotFoundError`. The remaining 466 test files collected fine, masking the breakage.
+
+**Fix:** `pip install textblob vaderSentiment --break-system-packages`
+
+**Verification:**
+- Before fix: 17,691 tests collected, 39 errors during collection
+- After fix: 18,683 tests collected, 0 errors during collection
+- All 39 previously-broken files: 919 tests passed, 23 xfailed, 0 failures
+- Doc counts synced: README (17,475 test functions / ~18,683 pytest-collected / 506 files), ARCHITECTURE (506 files)
+
+### Stats
+- **New test file:** `test_type_d_midnight_cross_validation_aug21.py` — 4 classes, 50 tests (all passing)
+- **Test corpus:** 18,683 tests across 506 files
+- **Fixes:** 2 missing Python deps installed, README + ARCHITECTURE doc counts updated
+- **Pushed to GitHub:** (pending)
+
+---
+
 ## Iteration #210 — Thu 2026-08-20 22:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #203: Google-Anthropic Circular Capital Architecture as Publisher Content Subsidy
