@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,595 | Across 503 test files |
+| Tests | ~17,644 | Across 504 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17595 tests** across 503 test files, each covering a different analytical capability:
+MediaScope has **17644 tests** across 504 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1018,3 +1018,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_7pm_cross_validation_aug20.py` | 28 | Type D cross-validation (Aug 20, 7 PM PT): Fixed 4 test failures (README/ARCHITECTURE count drift, mechanism #200 guard, podcast timestamp). Added 5 missing mechanism profile entries (#193, #195, #196, #197, #198) to competitor-coverage-research.yaml. Verified all mechanisms #191-#200 have profile YAML entries with required metadata. ID contiguity, doc sync, score distribution. 7 classes, 28 tests |
 | `test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py` | 32 | Mechanism #201: Harry McCracken (Fast Company Global Technology Editor) Cross-Entity CEO Attribution Humanization Differential (Type B). Same journalist covers Meta/Zuckerberg and Snap/Spiegel on camera-equipped smart glasses with measurably different CEO attribution vocabulary. Spiegel: humanized (Stanford student, father of four, mission-driven, redemption arc). Zuckerberg: strategic/ego framing (fixated, ego intertwined, anonymous critics). McCracken MORE balanced than editorial staff (#121), making this a within-journalist effect (asymmetry 0.72 vs #121 pub-level 0.90). Beat assignment amplifier: senior editor gets aspirational CEO interviews, editorial staff gets adversarial compilations for Meta only. 7 classes, 32 tests |
 | `test_fall_2026_smart_glasses_financial_incentive_convergence_index_aug20.py` | 44 | Mechanism #202: Fall 2026 Smart Glasses Financial Incentive Convergence Index (Type C). First cross-entity compound financial leverage model across FOUR competing smart glasses launching within 90 days: Meta Ray-Ban (incumbent, score -3), Samsung Galaxy Glasses (score +5, triple-entity Samsung+Google+Qualcomm), Snap Spectacles (score +3, Perplexity→Condé Nast + OpenAI chains), Apple N50 (score +4, Siri AI nine-figure budget + News+ + Gemini chain). Entity with LOWEST financial leverage (Meta) receives MOST adversarial coverage; entity with HIGHEST compound score (Samsung) receives SOFTEST — despite identical 12MP/Snapdragon AR1 Gen 1 hardware. Condé Nast ad-to-AI-licensing pivot (Lynch "Google Zero" May 2026) accelerates differential. 6 STRONG confounders documented (market share, incumbency, genuine privacy incidents). 11 classes, 44 tests |
+| `test_google_anthropic_circular_capital_publisher_content_subsidy_aug20.py` | 49 | Mechanism #203: Google-Anthropic Circular Capital Architecture as Publisher Content Subsidy (Type C). Google's $40B Anthropic investment (April 2026) creates circular capital flow: Google invests $10B cash → Anthropic commits to 3.5-5 GW Google/Broadcom TPU capacity ($122.5-250B per Broadcom SEC filing + FT reporting) → majority returns to Google as cloud revenue → Anthropic allocates ~$300-400M/yr to publisher content licensing from $30B+ ARR. Publisher deals are 0.8-1.63% of TPU commitment — the entire coverage asymmetry across 20+ publications is a rounding error. Google's direct cost for coverage asymmetry mechanism: $0 (Anthropic pays from own revenue). Google 14% stake ($53.2B at $380B) → potential $140B at $1T IPO. Meta receives ZERO benefit from circular subsidy. Key insight: Google indirectly funds publisher deals that soften coverage of both Anthropic AND Google at zero incremental cost. 5 confounders (2 STRONG: editorial independence, Anthropic safety brand; 2 MODERATE: Broadcom share, Meta privacy history; 1 WEAK: common investment pattern), cross-refs #58, #47, #53, #174, #184, #199. 8 classes, 49 tests |

@@ -766,6 +766,18 @@ entities:
         max_stake_pct: 15
         stake_value_estimated_b: 135
         cloud_commitment_from_anthropic_b: 200
+        circular_capital_architecture:
+          mechanism_id: 203
+          tpu_capacity_gw: 3.5-5.0
+          tpu_commitment_range_b: 122.5-250
+          ft_description: 'hundreds of billions'
+          broadcom_sec_filing_gw: 3.5
+          publisher_deals_as_pct_of_tpu: 0.8-1.63
+          google_direct_cost_for_coverage_asymmetry: 0
+          note: 'Google invests $10B → gets back $122.5-250B cloud revenue + $127B+ equity
+            gain. Publisher content deals ($300-400M/yr) are paid by Anthropic from its own
+            $65B ARR, NOT by Google. The entire coverage asymmetry across 20+ publications
+            is a rounding error in the circular capital architecture — FREE to Google.'
         publisher_ad_revenue_annual_b: 81.6
         publisher_mechanism: 'Google controls the dominant digital advertising infrastructure for publishers: Google Ad Manager
           (formerly DFP/AdX), Google AdSense, Google Showcase ($1B+, 700 publications), Google News Initiative. Google''s
