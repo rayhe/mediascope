@@ -21826,7 +21826,8 @@ publications:
       direct competitor (Meta=adversarial). Strongest same-journalist cross-entity natural
       experiment in corpus.'
     test_count: 35
-  - mechanism_id: 211
+  james_pero_three_entity_apple_reputational_credit_privacy_gradient:
+    mechanism_id: 211
     name: James Pero (Gizmodo) Three-Entity Camera Wearable Privacy Vocabulary Gradient — Apple Reputational Credit vs Google Redemption vs Meta Recidivism
     type: B
     discovery_date: '2026-08-21'
@@ -21872,5 +21873,59 @@ publications:
       (zero relationship). Extends #31 (genre split) and #99 (temporal narrative)
       with three-entity comparison.'
     test_count: 37
+  apple_q3_2026_advertising_siri_ai_compound_publisher_financial_capture_timing:
+    mechanism_id: 212
+    name: Apple Q3 2026 Advertising-Siri AI Compound Publisher Financial Capture Timing
+    type: C
+    discovery_date: '2026-08-21'
+    iteration: 220
+    publication: Cross-publication (Apple financial architecture with Condé Nast, News Corp, Vox Media, The Atlantic)
+    entity: Apple (advertising + Siri AI + News+) vs Meta (zero financial channels)
+    asymmetry_score: 0.82
+    confounding_factors:
+    - '[STRONG] Apple does not disclose advertising revenue separately — $8.5B is
+      an eMarketer estimate, not SEC-filed data. Competitive relationship is inferred,
+      not measured from primary disclosure.'
+    - '[STRONG] Publisher editorial independence policies nominally insulate newsrooms
+      from business-side deal negotiations. No evidence that Siri AI deal negotiations
+      directly influenced any journalist camera AirPods coverage.'
+    - '[MODERATE] Meta has 7M+ Ray-Ban Meta units shipped with abuse cases; Apple
+      camera AirPods pre-release with no abuse cases. Different risk profiles may
+      justify different editorial standards independent of financial incentives.'
+    - '[MODERATE] Apple quarterly earnings filings follow fixed schedule. Convergence
+      of 10-Q filing + Siri AI deals + AirPods leak may be coincidental timing.'
+    - '[WEAK] Siri AI deals not yet signed as of Aug 21, 2026. The financial channel
+      is ANTICIPATED not active. Counter: anticipation creates incentive to frame
+      coverage favorably to protect deal prospects.'
+    cross_references:
+    - 80   # Apple News platform leverage (compounds with ad dimension)
+    - 117  # Apple N50 privacy hero cascade (financial backing)
+    - 156  # Siri AI publisher deals (extends with Q3 timing)
+    - 205  # Camera AirPods LED double standard (financial explanation)
+    - 210  # TechCrunch reputation shield (Yahoo is Apple News+ partner)
+    - 211  # Pero reputational credit (Gizmodo carries Apple ads)
+    source_urls:
+    - https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm
+    - https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm
+    - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+    - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+    - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
+    - https://www.marketingdive.com/news/meta-to-surpass-google-in-digital-ad-revenue-for-first-time-emarketer/817384/
+    - https://www.reuters.com/business/media-telecom/meta-poised-surpass-google-digital-ad-revenue-first-time-report-says-2026-04-13/
+    test_file: tests/test_apple_q3_2026_advertising_siri_ai_compound_publisher_financial_capture_timing_aug21.py
+    finding_summary: 'Apple three-channel publisher financial architecture (advertising +
+      Siri AI content deals + News+) converged within 18 days before the camera AirPods
+      privacy coverage test. Jul 30: Q3 10-Q filed — advertising named as PRIMARY
+      Services growth driver (10-Q language: "primarily due to higher net sales from
+      advertising and cloud services"). Aug 12: WSJ reports Apple approaching publishers
+      for nine-figure Siri AI deals with pay-per-use model. Aug 18: Camera AirPods leak.
+      Apple has 3 simultaneous financial channels with publications; Meta has 0. Q2→Q3
+      10-Q driver narrowing (App Store dropped from growth driver list) signals
+      advertising''s rising materiality. Meta ($243B) surpassed Google as #1 global
+      ad platform, making it Apple''s ($8.5B) PRIMARY advertising competitor. Privacy
+      narrative favoring Apple products directly serves Apple''s ad competitive position.
+      Two STRONG confounders (advertising opacity, editorial independence) moderate
+      causal claims to structural incentive rather than proven influence.'
+    test_count: 48
 research_period: 2024-08-01 to 2026-08-21
 

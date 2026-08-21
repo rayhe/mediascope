@@ -1,5 +1,60 @@
 ---
 
+## Iteration #220 — Fri 2026-08-21 09:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #212: Apple Q3 2026 Advertising-Siri AI Compound Publisher Financial Capture Timing
+
+**Type:** Financial Incentive Mapping — Apple Three-Channel Publisher Financial Architecture
+**Mechanism #212:** Compound Financial Capture — SEC Primary Source + Siri AI + Advertising Convergence
+**Asymmetry Score:** 0.82
+**Entities:** Apple (advertising + Siri AI + News+) vs Meta (zero financial channels)
+**Primary Sources:** SEC EDGAR Q3 FY2026 10-Q (aapl-20260627.htm), SEC Q2 FY2026 10-Q (aapl-20260328.htm), WSJ (Aug 12, 2026)
+
+**Core Discovery — Three-Channel 18-Day Convergence:**
+
+Apple maintains three simultaneous publisher financial channels, all of which converged within an 18-day window immediately preceding the camera AirPods privacy coverage test:
+
+1. **Jul 30 — Q3 10-Q filed (SEC EDGAR):** Services revenue $30.739B (+12.1% YoY), 75.6% gross margin. 10-Q language: "primarily due to higher net sales from **advertising and cloud services**" — the App Store DROPPED from the growth driver list vs Q2's "advertising, the App Store and cloud services." Advertising's materiality is rising.
+
+2. **Aug 12 — WSJ reports Siri AI publisher deals:** Apple negotiating nine-figure ($100M+) content licensing budget with publishers for Siri AI. Variable pay-per-use compensation creates structural dependency — publisher revenue tied to Apple product adoption success.
+
+3. **Aug 18 — Camera AirPods leak:** macOS Tahoe 26.7 RC reveals camera-equipped AirPods Pro 3 demo. Publications with Apple financial relationships produce asymmetric framing (soft on Apple, adversarial on Meta's equivalent hardware).
+
+**Financial Channel Asymmetry:**
+
+| Channel | Apple | Meta |
+|---------|-------|------|
+| News+ revenue sharing | Active (50/50, 125M MAU) | None |
+| AI content licensing | Negotiating ($100M+ budget) | None |
+| Advertising platform | Active (~$8.5B est. 2026) | None |
+| **Total channels** | **3** | **0** |
+
+**Competitive Advertising Alignment:** Meta ($243.46B) surpassed Google ($239.54B) as #1 global digital ad platform in 2026 (eMarketer, Apr 2026). Apple's growing $8.5B ad business directly competes with Meta for advertiser dollars. Privacy narrative favoring Apple products and disfavoring Meta products serves Apple's advertising competitive position.
+
+**Q3 10-Q Language Progression (SEC Primary Source):**
+- Q2 (filed May 1): "primarily due to higher net sales from **advertising, the App Store and cloud services**" (3 drivers)
+- Q3 (filed Jul 31): "primarily due to higher net sales from **advertising and cloud services**" (2 drivers)
+- Significance: App Store dropped → advertising is rising within Services segment
+
+**Condé Nast Compound Exposure Case Study:** Condé Nast (WIRED, Vanity Fair, Vogue, GQ) is exposed across ALL THREE channels — Apple News+ launch partner, Siri AI deal target, and platform advertising dependent. Their camera AirPods/glasses coverage is structurally compromised by triple financial exposure, yet no disclosure accompanies any coverage.
+
+**Confounders:**
+- [STRONG] Apple does not disclose advertising revenue separately — $8.5B is eMarketer estimate, not SEC-filed
+- [STRONG] Editorial independence policies nominally insulate newsrooms from business-side deals
+- [MODERATE] Meta has 7M+ shipped units with abuse cases; Apple has zero shipping history
+- [MODERATE] Q3 10-Q filing follows fixed schedule — convergence may be coincidental
+- [WEAK] Siri AI deals not yet signed (anticipated, not active)
+
+**Cross-References:** #80 (News platform leverage), #117 (N50 privacy hero cascade), #156 (Siri AI deals), #205 (AirPods LED double standard), #210 (TechCrunch reputation shield), #211 (Pero reputational credit)
+
+**Test File:** `tests/test_apple_q3_2026_advertising_siri_ai_compound_publisher_financial_capture_timing_aug21.py`
+**Tests:** 48 (8 classes)
+**Corpus:** 19,000 tests across 515 files
+
+**Also fixed:** Pre-existing YAML parse error in `profiles/competitor-coverage-research.yaml` — mechanisms #210/#211 used list syntax (`- mechanism_id:`) inside the `publications:` mapping section. Converted to mapping entries. Unblocked 2 cross-validation test files (144 additional tests now collecting).
+
+---
+
 ## Iteration #218 — Fri 2026-08-21 07:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #210: TechCrunch (Yahoo/Apollo) Sarah Perez Three-Entity Camera Wearable Pre-emptive Reputation Shield

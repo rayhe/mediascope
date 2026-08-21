@@ -2127,6 +2127,56 @@ entities:
       - https://www.livemint.com/us/business/apples-next-revenue-push-reports-suggest-ads-are-coming-to-maps-as-part-of-its-100-billion-services-strategy-11761495201330.html
       - https://fool.com/earnings/call-transcripts/2025/10/31/apple-q4-2025-earnings-call-transcript/
       - https://seekingalpha.com/article/4928290-apple-inc-aapl-q3-2026-earnings-call-transcript
+    advertising_siri_ai_compound_capture:
+      mechanism_id: 212
+      title: Apple Q3 2026 Advertising-Siri AI Compound Publisher Financial Capture Timing
+      discovery_date: '2026-08-21'
+      overview: 'Apple three-channel publisher financial architecture (advertising + Siri AI
+        content deals + News+) converged within 18 days before the camera AirPods privacy
+        coverage test. The Q3 FY2026 10-Q (filed Jul 31, 2026) names advertising as
+        PRIMARY Services growth driver with language "primarily due to higher net sales
+        from advertising and cloud services" — the App Store DROPPED from the growth
+        driver list vs Q2 (which listed "advertising, the App Store and cloud services").
+        Six days after WSJ reported Apple negotiating nine-figure Siri AI deals with
+        publishers (Aug 12), camera AirPods leaked (Aug 18).'
+      convergence_timeline:
+        day_0: '2026-07-31: Apple Q3 10-Q filed — advertising set June quarter record'
+        day_12: '2026-08-12: WSJ reports Apple Siri AI publisher deals (nine-figure budget)'
+        day_18: '2026-08-18: Camera AirPods leak surfaces in macOS Tahoe 26.7 RC'
+      three_channels:
+        channel_1:
+          name: Apple News+ revenue sharing
+          status: active since 2019
+          financial_mechanism: 50/50 subscription revenue split, 125M MAU
+        channel_2:
+          name: Siri AI content licensing
+          status: negotiating (Aug 2026)
+          financial_mechanism: Variable pay-per-use, nine-figure budget ($100M+)
+        channel_3:
+          name: Advertising platform dependency
+          status: active and growing
+          financial_mechanism: Record ad revenue (~$8.5B est 2026), publishers carry Apple ads on News platform
+      meta_comparison:
+        meta_channels: 0
+        apple_channels: 3
+        meta_ad_revenue_2026_b: 243.46
+        apple_ad_revenue_2026_b: 8.5
+        meta_global_ad_rank: 1
+        note: 'Meta surpassed Google as #1 global digital ad platform in 2026 (eMarketer).
+          Apple''s growing $8.5B ad business DIRECTLY competes with Meta for advertiser
+          dollars. Privacy narrative favoring Apple products and disfavoring Meta products
+          serves Apple''s advertising competitive position.'
+      q3_10q_language_progression:
+        q2_drivers: 'advertising, the App Store and cloud services'
+        q3_drivers: 'advertising and cloud services'
+        significance: 'App Store dropped from growth driver list in Q3 — advertising''s
+          materiality is RISING within the Services segment ($30.7B total, 75.6% gross margin).'
+      source_urls:
+      - https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm
+      - https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
+      - https://www.marketingdive.com/news/meta-to-surpass-google-in-digital-ad-revenue-for-first-time-emarketer/817384/
     apple_news_glasses_prelaunch_alignment:
       mechanism_id: 61
       overview: 'Apple News+ creates a financial dependency between Apple and 400+
