@@ -21826,5 +21826,51 @@ publications:
       direct competitor (Meta=adversarial). Strongest same-journalist cross-entity natural
       experiment in corpus.'
     test_count: 35
+  - mechanism_id: 211
+    name: James Pero (Gizmodo) Three-Entity Camera Wearable Privacy Vocabulary Gradient — Apple Reputational Credit vs Google Redemption vs Meta Recidivism
+    type: B
+    discovery_date: '2026-08-21'
+    iteration: 219
+    publication: Gizmodo (Keleops AG)
+    entity: Apple (AirPods camera), Google (AI glasses), Meta (Ray-Ban glasses)
+    journalist: James Pero
+    asymmetry_score: 1.0
+    confounding_factors:
+    - '[STRONG] Apple camera AirPods use low-resolution CV sensors, not 12MP photo/video
+      cameras like Meta. Hardware IS less intrusive. Counter: Apple smart glasses
+      (also in article) WILL have photo/video, and Pero credits intent not design.'
+    - '[STRONG] Meta has genuine privacy history (Cambridge Analytica, contractor
+      reviews, Swedish investigation). Counter: magnitude of differential (0 vs 25+
+      alarm terms) exceeds what history alone explains.'
+    - '[MODERATE] Apple has not shipped; Meta has 7M+ units with abuse cases. Counter:
+      Pero is aspirational/optimistic about Apple pre-launch but was skeptical about
+      Meta pre-launch.'
+    - '[MODERATE] Google Glass era failure provides genuine learning narrative. Counter:
+      Meta ALSO iterated on privacy (LED → tamper detection → bans → camera disable),
+      but those improvements are framed as insufficient rather than learning.'
+    - '[WEAK] Different article timing (May vs Jan vs Jul 2026). Counter: pattern is
+      consistent across 7+ months of sustained coverage.'
+    cross_references:
+    - 31   # James Pero Editorial Direction Override (review vs editorial genre split)
+    - 99   # James Pero Google Temporal Redemption vs Meta Recidivism
+    - 210  # TechCrunch Sarah Perez three-entity (parallel finding at different outlet)
+    source_urls:
+    - https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    - https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    - https://gizmodo.com/we-need-to-talk-about-smart-glasses-2000661487
+    - https://gizmodo.com/the-viral-smart-glasses-sniffing-app-is-informative-but-anticlimactic-2000794504
+    test_file: tests/test_james_pero_three_entity_apple_reputational_credit_privacy_gradient_aug21.py
+    finding_summary: 'James Pero, Gizmodo self-described "resident smart glasses guy,"
+      applies three distinct editorial frames to three entities building camera-equipped
+      AI wearables: Apple gets REPUTATIONAL CREDIT SHIELD (zero alarm terms, reputation
+      accepted as evidence, "far less intrusive"), Google gets REDEMPTION ARC (past
+      failure as growth evidence, aspirational framing), Meta gets RECIDIVISM LOOP
+      (25+ alarm terms, success as escalating menace, "pile up"). Full-spectrum 1.0
+      sentiment gradient from same journalist on same topic. Financial incentives
+      predict direction: Apple (affiliate revenue) > Google (ad partner) > Meta
+      (zero relationship). Extends #31 (genre split) and #99 (temporal narrative)
+      with three-entity comparison.'
+    test_count: 37
 research_period: 2024-08-01 to 2026-08-21
 

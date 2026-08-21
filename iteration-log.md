@@ -6162,3 +6162,51 @@ Apple could do" vs Meta's identical LED dismissed as "easy to cover."
 - **Confounders:** 5 (1 STRONG, 2 MODERATE, 2 WEAK)
 - **Test corpus:** ~17,669 tests across 512 files
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #219 — Fri 2026-08-21 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Research Direction
+James Pero (Gizmodo/Keleops AG) three-entity camera wearable privacy vocabulary
+gradient, building on mechanisms #31 (Editorial Direction Override) and #99 (Google
+Temporal Redemption Narrative vs Meta Recidivism Loop) by adding an Apple data point
+from the May 8 2026 "AirPods With Cameras Won't Let You Be a Total Creep" article.
+
+### Key Finding
+Pero, Gizmodo's self-described "resident smart glasses guy," applies THREE distinct
+editorial frames to three entities building identical camera-equipped AI wearables:
+- **Apple:** REPUTATIONAL CREDIT SHIELD — zero alarm terms, "longstanding reputation"
+  accepted as evidence, "far less intrusive," affiliate link in article body
+- **Google:** REDEMPTION ARC — past failure framed as growth ("learned"), aspirational
+  language ("revolutionize"), playful mockery at worst
+- **Meta:** RECIDIVISM LOOP — 25+ alarm terms across corpus, success framed as menace
+  ("pile up"), explicitly blamed for category problems ("Thanks to Meta")
+
+Full-spectrum 1.0 sentiment gradient across same journalist, same publication,
+same topic domain, sustained over 7+ months (Jan–Aug 2026).
+
+### Deliverables
+1. **Test file:** `tests/test_james_pero_three_entity_apple_reputational_credit_privacy_gradient_aug21.py`
+   - 7 classes, 37 tests, all passing
+   - Classes: AppleReputationalCreditShield, GoogleRedemptionArc, MetaRecidivismLoop,
+     ThreeEntityPrivacyVocabularyGradient, ReputationalCreditAsInvestigationSubstitute,
+     CrossReferenceValidation, ConfounderStrengthAssessment
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #211, asymmetry_score 1.0,
+     4 cross-references (#31, #99, #210), 5 confounding factors
+
+3. **Doc sync:**
+   - README: Updated test count (~18,808 across 514 files)
+   - ARCHITECTURE: Updated test count, added test file listing for #210 and #211
+
+### Stats
+- **New test file:** 1 (37 tests, all passing)
+- **Mechanism ID:** #211
+- **Asymmetry score:** 1.0
+- **Cross-references:** 3 (#31, #99, #210)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** ~18,808 tests across 514 files
+- **Pushed to GitHub:** ✓
