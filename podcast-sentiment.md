@@ -2328,5 +2328,217 @@ Every confounder explains why Meta receives MORE scrutiny than Google Glass did.
 
 ---
 
-*Last updated: 2026-08-21 01:00 UTC (Aug 20, 6:00 PM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban)*
+### 48. DTNS #5334 — "Camera-Equipped AirPods Are Definitely Coming For Your Ears" (Aug 18, 2026)
+
+- **Hosts:** Jason Howell, Tom Merritt
+- **Network:** Acast (independent, Patreon-supported)
+- **Duration:** ~32 min
+- **Source URL:** https://shows.acast.com/dtns/episodes/camera-equipped-airpods-are-definitely-coming-for-your-ears
+
+**Coverage Summary:**
+Episode covers three stories: (1) Apple's camera-equipped AirPods advancing through development, (2) YouTube's view-count methodology change, (3) opening statements in a major child safety case examining how Meta designed Facebook and Instagram. The title is given to the Apple camera story.
+
+**Critical Finding — Same-Episode Framing Natural Experiment:**
+Within a single ~32-minute episode, DTNS covers Apple adding cameras to wearable devices AND Meta facing a child safety case. The editorial framing choices are:
+
+| Element | Apple Camera AirPods | Meta Child Safety Case |
+|---------|---------------------|----------------------|
+| **Title treatment** | Episode title: "Camera-Equipped AirPods Are Definitely Coming For Your Ears" | Mentioned only in episode description, not title |
+| **Title vocabulary** | "Definitely Coming" — aspirational, confirmatory | "major child safety case... how Meta designed" — adversarial, scrutiny framing |
+| **Camera privacy framing** | Camera on wearable = exciting feature arrival | N/A (privacy concern is about platform design, not hardware) |
+| **Implicit audience instruction** | Anticipate this product | Scrutinize this company |
+
+**Why This Matters — The Vocabulary Gap:**
+Apple is placing cameras in AirPods — wearable devices worn by hundreds of millions of people. When Meta put cameras in glasses, the discourse generated "pervert glasses," "spyware," "spy glasses," criminal complaints in Germany, bans in courts/cinemas/pubs/schools, and an academic-to-activism pipeline (#40, #RizzCam). When Apple puts cameras in earbuds, DTNS frames it as an exciting tech development in the episode title itself.
+
+The episode aired 3 days AFTER the UK Cinema Association announced smart glasses restrictions (Aug 20 Reuters article covers the previous day's announcement), and 6 days after HateAid's German criminal complaint (Aug 12). The ban cascade was at peak velocity while Apple's camera wearable was being titled as exciting news.
+
+**Key context — Apple's accidental video leak:**
+On Aug 19, 9to5Mac reported Apple accidentally included a camera AirPods demo video in the macOS 26.7 Release Candidate. Mark Gurman reported the device "remains on track for 2027." Engadget's Billy Steele wrote the most measured coverage: "I'm Already Dreading Apple's Camera-Equipped AirPods" — notably using "dreading" vocabulary, with the subhead "they sound like Meta's Ray-Ban smart glasses." But Engadget's piece is the exception. TechRepublic: "Why this could change the AirPods business" (aspirational). Hypebeast: "rumored for next month launch" (product anticipation). Consequence.net: "designed to act as eyes for Siri" (benign framing).
+
+**Confounders (2 MODERATE, 1 WEAK):**
+
+| # | Confounder | Strength | Assessment |
+|---|-----------|----------|------------|
+| 1 | AirPods cameras are "low-resolution sensors" not for photos/video | MODERATE | Meta's cameras are also low-resolution and technically for AI assistance, yet they're "pervert glasses." The sensor resolution is irrelevant to the privacy concern — both devices capture visual data of bystanders without consent. |
+| 2 | AirPods haven't shipped yet, Meta glasses have | MODERATE | This is a temporal defense, not a structural one. Pre-ship coverage establishes the framing that will apply when they launch. Meta glasses received "pervert" framing before the Sama/Kenya scandal provided empirical grounds. |
+| 3 | AirPods cameras point sideways from ears, not forward from eyes | WEAK | Forward-facing or ear-mounted, the device captures the bystander's environment. The camera angle doesn't change the privacy concern for the person being recorded. |
+
+**Sentiment Score (by entity):**
+- Apple camera AirPods: +3/10 (positive anticipation, exciting tech)
+- Meta: -5/10 (child safety case, adversarial framing in description)
+**Asymmetry Assessment:** HIGH — Same episode, same hosts, diametrically opposite framing for camera-equipped wearables from different companies.
+
+**Financial Context:**
+DTNS is Patreon-supported, no known financial relationships with Apple or Meta. This suggests the framing asymmetry is cultural consensus, not financially incentivized — which makes it MORE significant for MediaScope's thesis that financial incentives amplify existing cultural patterns.
+
+**Cross-references:** #9 (AmberMac "Pervert" Meta / "Safety Promise" OpenAI same-title asymmetry), #153 (same-episode framing mechanism), #205 (new mechanism below)
+
+---
+
+### Mechanism #205: Apple Camera Wearable Aspirational Framing Natural Experiment
+
+**Pattern:** When Apple introduces camera-equipped wearable devices (AirPods, N50 glasses), coverage defaults to aspirational/product framing ("coming for your ears," "exciting," "could change the business"). When Meta introduces functionally identical hardware (Ray-Ban cameras), coverage defaults to threat/surveillance framing ("pervert glasses," "spy glasses," "should you be worried").
+
+**Evidence from this iteration:**
+- DTNS #5334: Apple camera AirPods = episode title (aspirational) + Meta child safety = episode description (adversarial)
+- Engadget (Billy Steele): "I'm Already Dreading Apple's Camera-Equipped AirPods" — RARE exception applying "dread" to Apple camera wearable
+- TechRepublic: "Why this could change the AirPods business" — product opportunity framing
+- Hypebeast: "rumored for next month launch" — product anticipation framing
+- 9to5Mac: "reportedly won't launch in 2026, despite demo video leak" — timeline disappointment, not privacy alarm
+
+**Key comparison: LED indicator treatment**
+- Meta glasses LED: "easy to cover or ignore" (dismissed by media)
+- Apple AirPods LED: "the least Apple could do" (Engadget), "prevents covert recording and signals to bystanders" (Hypebeast)
+
+Same hardware safeguard (LED indicator), opposite editorial assessment. Meta's LED is dismissed as insufficient; Apple's identical LED is credited as a privacy measure.
+
+---
+
+### 49. DTNS #5317 — "Bans on Smart Glasses Mean Smart Glasses are HERE TO STAY" (Jul 24, 2026)
+
+- **Hosts:** Tom Merritt, Huyen Tue Dao
+- **Network:** Acast (independent, Patreon-supported)
+- **Source URL:** https://shows.acast.com/dtns/episodes/bans-on-smart-glasses-mean-smart-glasses-are-here-to-stay-dt
+- **Also discussed:** Open letter supporting open weight models (signed by everyone except OpenAI and Anthropic)
+
+**Coverage Summary:**
+Thesis: when a technology generates venue-specific bans (ComicCon, cinemas, courts, pubs), that's evidence of mainstream adoption, not failure. "When you have to have a ComicCon policy for something, it's mainstream." The episode reframes the ban cascade as validation of smart glasses' market arrival.
+
+**Significance — Rare Contrarian Take:**
+This is the second DTNS episode to offer a non-negative framing of smart glasses (after DTNS #5295 covering Meta's Kylie Jenner collab, Jun 23). Merritt's thesis inverts the dominant narrative: bans aren't evidence the product is dangerous — they're evidence it's ubiquitous. This is the same analytical framework applied to smartphones in cinemas 15 years ago.
+
+**Entity Coverage Assessment:**
+- **Meta:** Primary referent for "smart glasses" bans (Monopoly Events Comic-Con bans specifically triggered by Meta glasses complaints)
+- **Google/Samsung:** Not discussed despite both announcing smart glasses
+- **Apple:** Not discussed
+- **Open weight models:** OpenAI and Anthropic singled out as the only companies NOT signing the open weight letter — negative framing for both
+
+**Sentiment Score:** +1/10 (mildly positive — reframes ban cascade as mainstream arrival, but doesn't celebrate Meta specifically)
+**Asymmetry Assessment:** LOW-MODERATE — Contrarian take that benefits Meta by reframing bans, but doesn't address competitor parity.
+
+---
+
+### 50. Atlantic Council — "Smart glasses are the blind spot in US privacy law" (Aug 10, 2026)
+
+- **Authors:** Atlantic Council Dispatches (think tank policy brief)
+- **Source URL:** https://www.atlanticcouncil.org/dispatches/smart-glasses-are-the-blind-spot-in-us-privacy-law/
+- **Type:** Policy brief (not a podcast, but an upstream catalyst that will shape podcast discourse)
+
+**Coverage Summary:**
+Detailed analysis of US privacy law gaps around smart glasses. Argues existing law (HIPAA, CCPA, state biometric statutes, Wiretap Act) fails bystanders. Proposes federal legislation covering: (1) video/image capture, (2) bystanders as data subjects, (3) national right to erasure. Key phrase: "Privacy, in this telling, becomes a luxury good."
+
+**Entity Coverage Assessment:**
+- **Meta:** Named explicitly in the opening paragraph: "Meta is heavily advertising its smart glasses collaboration with Ray-Ban and Oakley"
+- **Apple:** Mentioned vaguely: "reportedly unveiling its wearable offering next June"
+- **Google:** Historical reference: "over a decade ago 'made face computers extremely uncool'"
+- **Samsung/Snap:** NOT MENTIONED despite both shipping or announcing camera-equipped glasses
+
+**Framing Analysis:**
+The Atlantic Council is a major US foreign policy think tank. Its smart glasses analysis follows the same pattern as every other institutional analysis: Meta named, Apple vaguely acknowledged, Samsung/Google/Snap absent. The policy recommendations are category-level (all smart glasses), but the cultural conditioning means "smart glasses" = Meta glasses in practice.
+
+**Structurally important — Upstream catalyst:**
+Think tank policy briefs are cited by Congressional staffers, testifying experts, and podcasters. This piece will be quoted in future podcast episodes about smart glasses regulation. When it is quoted, Meta's name will be the one associated with the privacy problem, even though the recommendations are hardware-agnostic.
+
+**Key passage — On-device AI gap:**
+"If digital faceprints never leave a device — and are processed on the device even when it is offline — does any existing biometric privacy law even apply, since most were written assuming centralized databases?" This question applies to Meta, Samsung, Google, Apple, and Snap equally. It is asked in an article that names only Meta.
+
+**Sentiment Score:** -5/10 (negative toward the smart glasses category, with Meta as the named representative)
+**Asymmetry Assessment:** MODERATE-HIGH — Category-level policy recommendations, but Meta is the only company named in the first paragraph. A reader who skims the opening walks away with "Meta → privacy problem."
+
+---
+
+### 51. DefCon 34 — Smart Glasses Ban (Jul/Aug 2026)
+
+- **Source:** Computerworld/CSO (via DefCon Bluesky announcement)
+- **Source URL:** http://computerworld.com/article/4203983/defcon-security-conference-bans-smart-glasses-with-recording-capabilities-2.html
+- **Type:** Security conference policy (influences cybersecurity podcast ecosystem)
+
+**Coverage Summary:**
+DefCon added smart glasses to its list of banned recording devices. Organizers cited "no consistent way to understand whether smart glasses are recording or not" and said the devices "erode trust and invade people's privacy." Prescription lens exceptions denied: visitors must bring non-smart glasses.
+
+**Critical Finding — Category-Level Ban with Category-Level Reporting:**
+DefCon's ban is notably CATEGORY-LEVEL, not brand-specific. The Computerworld article mentions Google, Samsung, and Apple by name alongside the ban announcement. This is the FIRST institutional ban where the reporting actually contextualizes the ban across multiple companies rather than treating it as a Meta-specific issue.
+
+**Why DefCon Matters:**
+DefCon is the world's largest hacker/security conference (~30,000 attendees). Its attendees are the cybersecurity professionals who appear on cybersecurity podcasts (Shared Security, Smashing Security, Darknet Diaries, etc.). A DefCon ban legitimizes smart glasses privacy concerns within the EXPERT community. When these attendees appear on podcasts post-DefCon, they carry the authority of "I was at DefCon, and even DefCon banned them."
+
+**Podcast amplification prediction:**
+Prediction: 3-5 cybersecurity podcast episodes in Aug-Sep 2026 will reference the DefCon ban. When they do, prediction: they will say "smart glasses" but illustrate the concern with Meta examples, because Meta is the cultural default.
+
+**Entity Coverage Assessment:**
+- **Meta:** NOT named by DefCon itself (category ban), but will be the assumed referent
+- **Google:** Named in Computerworld's contextual paragraph
+- **Samsung:** Named in Computerworld's contextual paragraph
+- **Apple:** Named in Computerworld's contextual paragraph (rare — Apple cited as delaying its glasses "citing privacy concerns as the reason for the delay")
+- Note: Apple DELAYING its glasses for privacy reasons gets positive framing. Meta SELLING its glasses despite privacy concerns gets negative framing. Same concern, opposite narrative reward.
+
+**Sentiment Score:** -4/10 (moderately negative toward the category, unusually balanced entity-wise)
+**Asymmetry Assessment:** LOW — DefCon's ban is genuinely category-level. Computerworld's reporting is the most entity-balanced smart glasses coverage in the entire MediaScope corpus.
+
+---
+
+### 52. Florida School District Ban Cascade — Polk, Hillsborough, Pinellas Counties (Aug 2026)
+
+- **Source:** Fox 13 Tampa Bay (Polk County, Aug 15, 2026)
+- **Source URL:** https://fox13news.com/news/polk-county-public-schools-joins-other-districts-banning-smart-glasses
+- **Type:** Local broadcast news + institutional policy
+
+**Coverage Summary:**
+Three Tampa Bay-area school districts banned smart glasses in sequence during August 2026: Hillsborough County, Pinellas County, then Polk County. Districts cited recording without consent, cheating, and cyberbullying concerns. Cybersecurity expert Erich Kron (KnowBe4) quoted on both privacy risks and the counterargument that recordings could prove bullying.
+
+**Critical Finding — Ban Cascade Reaches K-12 Education:**
+This is the FIRST documented school district ban cascade in the MediaScope corpus. The ban vector has now penetrated:
+1. Courts (UK HMCTS, Scotland SCTS, New York)
+2. Cinemas (UK Cinema Association)
+3. Restaurants/pubs (Wetherspoons, Jeremy King restaurants, Soho House)
+4. Theatres (ATG Theatres)
+5. Ferries (CalMac)
+6. Events (Monopoly Events Comic-Con, DefCon)
+7. **K-12 schools** (Florida, multiple districts)
+
+The school vector is structurally different from all previous ban vectors: schools involve CHILDREN. When the discourse shifts to "protecting children from smart glasses recording," it activates the most powerful moral frame in US politics — child protection. This is the same frame that has driven social media regulation for a decade.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named explicitly: "Ray-Ban Meta glasses and similar wearable smart technology"
+- **Samsung/Google/Apple/Snap:** NOT mentioned
+- **"Similar wearable smart technology":** Generic catch-all that in practice means Meta, since no other brand is contextually available
+
+**Key Quote:**
+Erich Kron (KnowBe4): "If you have somebody walking around recording things, you don't know it. Maybe you're talking to somebody in confidence and they're nearby." — Applies equally to ALL camera-equipped glasses, attributed specifically to Meta's product.
+
+**Sentiment Score:** -5/10 (moderately negative, child safety framing)
+**Asymmetry Assessment:** HIGH — Only Meta named, despite Samsung Galaxy Glasses using the same Snapdragon AR1 Gen 1 chip and targeting the same consumer market.
+
+---
+
+### Podcast/Broadcast/Print/Academic/Policy vs Online Coverage Comparison (52 entries + AirPods natural experiment + DefCon + schools + policy think tank)
+
+| Pattern | Print/Online | Podcast/Broadcast/Multimedia (52 entries) | Alignment |
+|---------|-------------|---------|-----------|
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (43 of 52 entries) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (1 of 52 entries contextualizes competitors — DefCon) | **ALIGNED** |
+| Apple aspirational framing for identical hardware | ✅ (mechanism #101, #136) | ✅ (DTNS #5334: camera AirPods = exciting; Meta glasses = pervert) | **REINFORCED** |
+| Same-episode entity framing asymmetry | ✅ (#153) | ✅ (DTNS #5334: Apple camera + Meta child safety) | **EXTENDED** |
+| K-12 school ban vector | N/A (new) | ✅ (3 Florida districts, sequential, Aug 2026) | **NEW PATTERN** |
+| Security community convergence | N/A (new) | ✅ (DefCon category ban + CISO concern) | **NEW PATTERN** |
+| Policy think tank upstream catalyst | N/A (new) | ✅ (Atlantic Council, Meta named, competitors absent) | **NEW PATTERN** |
+| LED indicator double standard | ✅ (#204) | ✅ (Meta LED "easy to cover" vs Apple LED "prevents covert recording") | **NEW PATTERN** |
+| Ban cascade = mainstream adoption (contrarian) | N/A (new) | ✅ (DTNS #5317: bans validate category) | **NEW PATTERN** |
+
+### Key Finding: Mechanism #205 — LED Indicator Double Standard
+
+When Meta and Apple implement the same privacy safeguard (LED indicator on camera-equipped wearable), media coverage evaluates them with opposite vocabularies:
+
+| Safeguard | Meta Ray-Ban Glasses | Apple Camera AirPods |
+|-----------|---------------------|---------------------|
+| **LED indicator** | "easy to cover or ignore" (AmberMac), "there is no proof it always works" (Guardian), "LED hack tutorials exist" (Atlantic Council) | "prevents covert recording and signals to bystanders" (Hypebeast), "the least Apple could do" (Engadget — negative, but still credits the effort) |
+| **Low-resolution sensors** | "can be used to secretly record women" (AfroTech) | "designed not to take photos or videos, but rather to scan the surrounding environment" (9to5Mac via Gurman) |
+| **AI processing claim** | Dismissed as cover for surveillance | Accepted as product purpose |
+
+Same hardware safeguard, opposite editorial treatment. This is the clearest single-variable natural experiment in the MediaScope corpus: identical feature, different brand, different evaluation.
+
+---
+
+*Last updated: 2026-08-21 08:00 UTC (Aug 21, 1:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban), #205 (Apple Camera Wearable LED Indicator Double Standard — Same Safeguard, Different Entity, Different Editorial Evaluation)*

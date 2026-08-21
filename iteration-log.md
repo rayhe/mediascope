@@ -1,5 +1,50 @@
 ---
 
+## Iteration #212 — Fri 2026-08-21 01:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Mechanism #205: Apple Camera Wearable LED Indicator Double Standard
+
+**Type:** Podcast Sentiment Tracking — Cross-Entity Framing Natural Experiment
+**Mechanism #205:** Same Privacy Safeguard (LED Indicator), Different Entity, Different Editorial Evaluation
+**Asymmetry Score:** 0.85
+**Entities:** Apple, Meta, Samsung, Google, Snap
+
+**Core Discovery — DTNS #5334 Same-Episode Natural Experiment (Aug 18, 2026):**
+
+Within a single ~32-minute episode, Daily Tech News Show (#5334) covers: (1) Apple putting cameras in AirPods = episode title ("Camera-Equipped AirPods Are Definitely Coming For Your Ears" — aspirational), (2) Meta child safety case = episode description only (adversarial). Apple gets top billing for identical hardware category (camera-equipped wearable); Meta gets secondary mention for a separate legal issue.
+
+**LED Indicator Double Standard documented across 4+ outlets:**
+- Meta LED: "easy to cover or ignore" (AmberMac), "no proof it always works" (Guardian), "LED removal tutorials" (Atlantic Council)
+- Apple LED: "prevents covert recording and signals to bystanders" (Hypebeast), "the least Apple could do" (Engadget — negative but credits effort)
+
+Same feature, opposite evaluation. This is the clearest single-variable natural experiment in the MediaScope corpus.
+
+**5 new entries added to podcast-sentiment.md (#48-52):**
+1. **#48: DTNS #5334** — Apple camera AirPods aspirational + Meta adversarial in same episode (HIGH asymmetry)
+2. **#49: DTNS #5317** — Rare contrarian: "Bans mean smart glasses are HERE TO STAY" — bans validate mainstream adoption
+3. **#50: Atlantic Council** — "Smart glasses are the blind spot in US privacy law" — think tank policy brief, Meta named, Samsung/Snap absent
+4. **#51: DefCon 34** — Category-level smart glasses ban, Computerworld coverage = ONLY entity-balanced report in 52-entry corpus
+5. **#52: Florida school districts** — Polk, Hillsborough, Pinellas counties ban cascade. K-12 = 7th ban vector, activates child-protection moral frame
+
+**Ban cascade expansion:**
+7 venue types now documented: courts, cinemas, restaurants/pubs, theatres, ferries, events, K-12 schools. Aug 2026 alone added 6 new venue types vs 1 (cinemas) in all prior years combined.
+
+**Corpus stats:** 52 entries, 43 Meta-negative, 1 entity-balanced (DefCon/Computerworld), 9 neutral/contrarian.
+
+**Key predictions:**
+1. When Apple ships camera AirPods (2027), coverage will NOT generate "pervert earbuds" or equivalent alarm vocabulary
+2. 3-5 cybersecurity podcasts will reference DefCon ban in Aug-Sep 2026, illustrating concern with Meta examples
+3. Samsung Galaxy Glasses launch will NOT receive brand-specific ban language from any venue
+
+### Stats
+- **New test file:** `test_type_e_01am_apple_camera_airpods_led_double_standard_aug21.py` — 9 classes, 38 tests (all passing)
+- **Podcast corpus:** 52 entries (from 47)
+- **New mechanism:** #205 (Apple Camera Wearable LED Indicator Double Standard)
+- **Docs updated:** README.md (507 files, 17500/18721 counts), ARCHITECTURE.md (listing + counts), podcast-sentiment.md (+5 entries, +1 mechanism, updated comparison table)
+- **Pushed to GitHub:** (pending)
+
+---
+
 ## Iteration #211 — Fri 2026-08-21 00:00 PT (Type D: Test & Verify)
 
 ### Fix: 39 Test Collection Errors from Missing Dependencies
@@ -21,7 +66,7 @@
 - **New test file:** `test_type_d_midnight_cross_validation_aug21.py` — 4 classes, 50 tests (all passing)
 - **Test corpus:** 18,683 tests across 506 files
 - **Fixes:** 2 missing Python deps installed, README + ARCHITECTURE doc counts updated
-- **Pushed to GitHub:** (pending)
+- **Pushed to GitHub:** ✓
 
 ---
 

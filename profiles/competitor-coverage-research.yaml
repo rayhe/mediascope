@@ -21677,4 +21677,69 @@ publications:
       privacy patent investment (Samsung, 10% of portfolio) receives zero coverage from the
       publication most qualified to evaluate biometric privacy engineering.'
     test_count: 51
-research_period: 2024-08-01 to 2026-08-20
+  - mechanism_id: 205
+    date_added: '2026-08-21'
+    discovery_date: '2026-08-21'
+    type: E  # Podcast Sentiment Tracking
+    mechanism: apple_camera_wearable_led_indicator_double_standard
+    overview: 'Apple Camera Wearable LED Indicator Double Standard — Same Privacy Safeguard,
+      Different Entity, Different Editorial Evaluation. DTNS #5334 (Aug 18, 2026) provides
+      a same-episode natural experiment: Apple camera AirPods titled "Definitely Coming For
+      Your Ears" (aspirational), Meta child safety case in description only (adversarial).
+
+      LED indicator double standard documented across 4+ outlets: Meta LED "easy to cover or
+      ignore" (AmberMac), "no proof it always works" (Guardian), "LED removal tutorials" (Atlantic
+      Council); Apple LED "prevents covert recording and signals to bystanders" (Hypebeast),
+      "the least Apple could do" (Engadget). Identical feature, opposite evaluation.
+
+      Low-resolution sensor framing also bifurcated: Meta cameras "can be used to secretly
+      record women" (AfroTech); Apple cameras "designed not to take photos or videos, but to
+      scan the surrounding environment" (9to5Mac/Gurman). Same capability, opposite assumed intent.
+
+      Corpus expanded to 52 entries: 43 Meta-negative, 1 entity-balanced (DefCon/Computerworld),
+      9 neutral/contrarian. Ban cascade now spans 7 venue types (courts, cinemas, pubs/restaurants,
+      theatres, ferries, events, K-12 schools). Atlantic Council policy brief names Meta in opening,
+      Samsung/Snap absent. Florida school districts add child-protection moral frame vector.'
+    asymmetry_score: 0.85
+    entities:
+    - apple
+    - meta
+    - samsung
+    - google
+    - snap
+    publication: DTNS (Daily Tech News Show)
+    publication_type: independent_tech_podcast
+    confounding_factors:
+    - '[MODERATE] AirPods cameras are described as low-resolution sensors not for photos/video,
+      while Meta cameras produce higher-resolution output. However: Meta cameras are also
+      marketed for AI assistance (Meta AI), not photography — same purpose, different framing.'
+    - '[MODERATE] AirPods have not shipped yet, so no real-world privacy incidents exist.
+      However: Meta glasses received alarm vocabulary before the Sama/Kenya scandal — the
+      vocabulary precedes the empirical basis.'
+    - '[WEAK] AirPods cameras point sideways from ears, not forward from eyes. However:
+      forward-facing or ear-mounted, the device captures the bystander environment. Camera
+      angle does not change the privacy concern for the person being recorded.'
+    cross_references:
+    - 9    # AmberMac "Pervert" Meta / "Safety Promise" OpenAI same-title asymmetry
+    - 101  # Apple N50 privacy-hero cascade
+    - 153  # Podcast same-episode framing mechanism
+    - 196  # UK Cinema Association piracy vector
+    - 200  # Phil Clapp natural experiment 2014 vs 2026
+    - 204  # Biometric Update entity selection asymmetry
+    source_urls:
+    - https://shows.acast.com/dtns/episodes/camera-equipped-airpods-are-definitely-coming-for-your-ears
+    - https://shows.acast.com/dtns/episodes/bans-on-smart-glasses-mean-smart-glasses-are-here-to-stay-dt
+    - https://www.atlanticcouncil.org/dispatches/smart-glasses-are-the-blind-spot-in-us-privacy-law/
+    - http://computerworld.com/article/4203983/defcon-security-conference-bans-smart-glasses-with-recording-capabilities-2.html
+    - https://fox13news.com/news/polk-county-public-schools-joins-other-districts-banning-smart-glasses
+    - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+    - https://9to5mac.com/2026/08/19/camera-equipped-airpods-reportedly-wont-launch-in-2026-despite-demo-video-leak/
+    - https://hypebeast.com/2026/8/apple-airpods-with-cameras-may-debut-next-month
+    test_file: tests/test_type_e_01am_apple_camera_airpods_led_double_standard_aug21.py
+    finding_summary: 'Same privacy safeguard (LED indicator) on Meta glasses and Apple AirPods
+      receives opposite editorial evaluations. Meta LED dismissed as insufficient; Apple identical
+      LED credited as meaningful privacy measure. DTNS #5334 same-episode natural experiment
+      confirms pattern: Apple camera wearable = aspirational title, Meta = adversarial description.
+      Clearest single-variable natural experiment in MediaScope corpus.'
+    test_count: 38
+research_period: 2024-08-01 to 2026-08-21
