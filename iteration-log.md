@@ -1,5 +1,79 @@
 ---
 
+## Iteration #218 — Fri 2026-08-21 07:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #210: TechCrunch (Yahoo/Apollo) Sarah Perez Three-Entity Camera Wearable Pre-emptive Reputation Shield
+
+**Type:** Competitor Coverage Deep Dive — TechCrunch × Apple Camera AirPods vs Google/Meta
+**Mechanism #210:** Same-Journalist Three-Entity Cross-Entity Natural Experiment — Pre-emptive Reputation Shield
+**Asymmetry Score:** 0.88
+**Entities:** Apple (camera AirPods), Google (AI glasses), Meta (Ray-Ban glasses)
+**Publication:** TechCrunch (Yahoo / Apollo Global Management)
+**Reporter:** Sarah Perez (Consumer News Editor)
+
+**Core Discovery — Three-Entity Framing Gradient (88-day window):**
+
+Sarah Perez produced coverage of THREE camera-equipped AI wearable products within 88 days:
+
+1. **Google AI glasses (May 22)** — "We tried Google's AI glasses and they're almost there"
+   - Sentiment: +0.75 (aspirational)
+   - Privacy alarm terms: ZERO
+   - Camera auto-activation with Gemini noted as configuration detail, not privacy risk
+   - Google Glass history ("Glassholes"): ZERO references
+
+2. **Meta AI glasses (Jul 8)** — "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise."
+   - Sentiment: -0.80 (adversarial)
+   - Privacy alarm terms: 25+ ("creepy," "surveillance devices," "tainted," etc.)
+   - Apple weaponized as moral authority against Meta
+   - 8+ years of historical privacy indictment
+
+3. **Apple camera AirPods (Aug 18)** — "Why Apple's camera-equipped AirPods may not be the 'pervert pods' consumers fear"
+   - Sentiment: +0.60 (defensive/protective)
+   - Privacy alarm terms: ZERO (concerns acknowledged then dismissed)
+   - Same-day publication as leak — reactive defense
+   - "Apple appears to have thought this through"
+   - "the goal isn't to turn... into a surveillance device"
+   - Meta named as villain in paragraph 1
+
+**Why This Extends Mechanism #142:**
+Mechanism #142 documented Sarah Perez's Google-vs-Meta two-entity comparison. The Apple "pervert pods" article adds a THIRD data point that reveals a new editorial pattern: **pre-emptive reputation shielding**. Unlike Google (which got neutral silence on privacy), Apple got ACTIVE DEFENSE — the journalist introduces the negative label ("pervert pods"), then systematically dismisses it. This goes beyond asymmetry into editorial advocacy.
+
+**Label-Then-Dismiss Pattern:**
+1. Name the criticism: "pervert pods"
+2. Put it in scare quotes (distancing)
+3. Immediately neutralize: "may not be as creepy as they first sound"
+4. Credit Apple's intent: "Apple appears to have thought this through"
+5. Blame Meta: "Devices like Meta's Ray-Bans raise concerns"
+
+**Financial Gradient Matches Framing Gradient:**
+| Entity | Financial relationship to Yahoo/Apollo | Framing |
+|--------|---------------------------------------|---------|
+| Google | Ad revenue partner | Neutral |
+| Apple  | Platform partner (News+, non-competitive) | Defensive |
+| Meta   | Direct advertising competitor ($131B) | Adversarial |
+
+**YAML Fix (bonus):**
+Fixed mechanism #209 YAML format error introduced in iteration #217 — was list syntax (`- mechanism_id: 209`) instead of mapping syntax, breaking competitor-coverage-research.yaml parse and blocking 2 test file collections.
+
+**Confounders:**
+1. STRONG: Meta shipped 7M+ units with abuse cases; Apple/Google pre-release
+2. STRONG: Apple cameras are low-res AI sensors, not photo/video
+3. MODERATE: Different editorial modes (investigative vs reactive)
+4. MODERATE: Same journalist may follow editorial direction
+5. WEAK: Different form factors (glasses vs earbuds)
+
+### Stats
+- **New test file:** `test_techcrunch_sarah_perez_three_entity_camera_wearable_reputation_shield_aug21.py` — 8 classes, 38 tests (all passing)
+- **Profiles updated:** competitor-coverage-research.yaml (mechanism #210 added, mechanism #209 YAML format fixed)
+- **Docs updated:** README.md, ARCHITECTURE.md (513 files / ~18,915 tests)
+- **New mechanism:** #210 (TechCrunch Three-Entity Camera Wearable Reputation Shield)
+- **Cross-references:** Mechanisms #122, #142, #205, #209
+- **YAML fix:** Mechanism #209 format error resolved (unblocked 2 test file collections)
+- **Test corpus:** ~18,915 tests across 513 files
+- **Pushed to GitHub:** Yes
+
+---
+
 ## Iteration #216 — Fri 2026-08-21 05:00 PT (Type D: Test & Verify)
 
 ### Fixes Applied

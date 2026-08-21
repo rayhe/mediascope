@@ -21743,7 +21743,8 @@ publications:
       confirms pattern: Apple camera wearable = aspirational title, Meta = adversarial description.
       Clearest single-variable natural experiment in MediaScope corpus.'
     test_count: 38
-  - mechanism_id: 209
+  9to5mac_happy_hour_604_camera_airpods_excitement_framing:
+    mechanism_id: 209
     name: 9to5Mac Happy Hour 604 Apple Camera AirPods Excitement Framing
     type: E
     discovery_date: '2026-08-21'
@@ -21785,5 +21786,45 @@ publications:
       with preemptive "not pervert pods" defensive article. NY Post proves alarm framing
       IS available for Apple but selectively suppressed by Apple-ecosystem outlets.'
     test_count: 44
+  sarah_perez_three_entity_camera_wearable_reputation_shield:
+    mechanism_id: 210
+    name: TechCrunch Sarah Perez Three-Entity Camera Wearable Pre-emptive Reputation Shield
+    type: A
+    discovery_date: '2026-08-21'
+    iteration: 218
+    publication: TechCrunch (Yahoo / Apollo Global Management)
+    entity: Apple (AirPods camera), Google (AI glasses), Meta (Ray-Ban glasses)
+    asymmetry_score: 0.88
+    confounding_factors:
+    - '[STRONG] Meta shipped 7M+ units with documented real-world abuse (Kenya/Sama),
+      while Apple and Google products are pre-release/limited. Counter: Meta received
+      adversarial framing BEFORE the Sama scandal.'
+    - '[STRONG] Apple cameras described as low-resolution sensors for AI context, not
+      photo/video. Counter: privacy concern is about being observed, not photo quality.'
+    - '[MODERATE] Different editorial calendar positions — Meta article is investigative
+      deep dive, Apple article is same-day reactive. Counter: the choice to investigate
+      one and defend the other IS the finding.'
+    - '[MODERATE] Perez may follow editorial direction rather than personal bias.
+      Counter: test measures publication-level asymmetry using same-journalist as control.'
+    - '[WEAK] Different form factors (glasses vs earbuds). Counter: camera + AI on body
+      is the relevant privacy surface area.'
+    cross_references:
+    - 142  # Sarah Perez Google vs Meta two-entity (extended here to three)
+    - 122  # TechCrunch Snap Specs privacy vocabulary zero
+    - 205  # Apple camera LED double standard
+    - 209  # 9to5Mac Happy Hour 604 excitement framing
+    source_urls:
+    - https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
+    - https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/
+    - https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/
+    test_file: tests/test_techcrunch_sarah_perez_three_entity_camera_wearable_reputation_shield_aug21.py
+    finding_summary: 'Sarah Perez produced coverage of three camera-equipped AI wearables
+      in 88 days: Google (neutral, zero privacy vocab), Meta (adversarial, 25+ alarm terms),
+      Apple (defensive, pre-emptive reputation shield — "may not be pervert pods"). Same
+      journalist, same hardware category, three opposite framings. Financial relationships
+      predict direction: ad partner (Google=neutral), platform partner (Apple=defensive),
+      direct competitor (Meta=adversarial). Strongest same-journalist cross-entity natural
+      experiment in corpus.'
+    test_count: 35
 research_period: 2024-08-01 to 2026-08-21
 
