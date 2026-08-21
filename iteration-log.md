@@ -1,5 +1,50 @@
 ---
 
+## Iteration #210 — Thu 2026-08-20 22:00 PT (Type C: Financial Incentive Mapping)
+
+### Mechanism #203: Google-Anthropic Circular Capital Architecture as Publisher Content Subsidy
+
+**Type:** Financial Incentive Mapping — Circular Capital Flow Analysis
+**Mechanism #203:** Google-Anthropic Circular Capital Architecture as Publisher Content Subsidy
+**Asymmetry Score:** 0.82
+**Entities:** Google (Alphabet), Anthropic, Meta
+
+**Core Discovery — Circular Capital Flow Makes Coverage Asymmetry FREE to Google:**
+
+Google's $40B Anthropic investment (April 2026) creates a circular capital flow where the vast majority of invested capital returns to Google through cloud revenue, while a small fraction (~$300-400M/yr) leaks to publisher content licensing deals that produce measurable coverage asymmetry. The coverage asymmetry is an incidental byproduct of a cloud computing arrangement — it costs Google nothing.
+
+**The circular flow:**
+1. Google invests $10B cash (+$30B conditional) into Anthropic
+2. Anthropic commits to 3.5-5 GW Google/Broadcom TPU capacity ($122.5-250B per Broadcom SEC filing + FT "hundreds of billions")
+3. Majority of capital returns to Google as cloud revenue
+4. Anthropic allocates ~$300-400M/yr to publisher content licensing from its own $30B+ ARR
+5. Publisher coverage of Anthropic (and indirectly Google) softens
+6. Anthropic valuation rises → Google's 14% equity stake appreciates
+7. Cycle repeats
+
+**Key calculations:**
+- Publisher deals ($400M/yr × 5yr = $2B) = 0.8-1.63% of TPU commitment ($122.5-250B)
+- Google's direct cost for publisher coverage asymmetry: $0 (Anthropic pays from own revenue)
+- Google's return: $122.5-250B cloud revenue + $127B+ equity gain on $13B total invested
+- Coverage asymmetry ROI: undefined (division by zero — the asymmetry is free)
+
+**Meta contrast:** Meta receives ZERO benefit from the circular capital architecture. Not an investor in Anthropic/OpenAI, no cloud computing arrangement, no content deals with adversarial publications. The publications most adversarial to Meta (WIRED/Condé Nast, The Verge/Vox, The Guardian, The Atlantic) all have OpenAI/Anthropic deals funded through this circular flow.
+
+**Confounders:** 5 documented (2 STRONG: editorial independence, Anthropic safety brand; 2 MODERATE: Broadcom revenue share, Meta privacy history; 1 WEAK: common investment pattern)
+
+**4 falsifiable predictions** documented — verifiable during Anthropic IPO window.
+
+**Sources:** Engadget, TechCrunch (×2), Mezha/FT, HPCWire, 9to5Google, Broadcom SEC filing
+
+### Stats
+- **New test file:** `test_google_anthropic_circular_capital_publisher_content_subsidy_aug20.py` — 8 classes, 49 tests (all passing)
+- **Profile updated:** competitor-coverage-research.yaml mechanism #203 with full metadata
+- **Entity updated:** competitor-entities.yaml — circular_capital_architecture section in Anthropic google_leg
+- **Docs updated:** README.md (table + counts 503→504, 17595→17644), ARCHITECTURE.md (listing + counts)
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #209 — Thu 2026-08-20 20:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Mechanism #201: Harry McCracken (Fast Company) Cross-Entity CEO Attribution Humanization Differential
