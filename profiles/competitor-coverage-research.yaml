@@ -17870,6 +17870,181 @@ cross_publication_findings:
         capabilities receive zero surveillance framing.
     source_urls:
     - https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest
+  gadgetevolution_affiliate_privacy_paradox:
+    mechanism_id: 193
+    mechanism_name: 'YouTube Tech Review Affiliate-Privacy Revenue Paradox — GadgetEvolution'
+    mechanism_type: cross_platform_affiliate_revenue_privacy_paradox
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.75
+    entities:
+    - meta
+    - samsung
+    test_file: test_gadgetevolution_affiliate_privacy_paradox_aug20.py
+    test_count: 18
+    finding_summary: >
+      YouTube tech review channel applies bifurcated privacy vocabulary within a Samsung vs Meta
+      comparison video while simultaneously monetizing BOTH products through Amazon affiliate links.
+      NordVPN (privacy brand) sponsors the video, reinforcing Meta-negative framing. Creator
+      explicitly acknowledges same Snapdragon AR1 Gen 1 chip yet applies bifurcated privacy
+      vocabulary anyway. The paradox: if Meta's privacy gap were genuinely disqualifying, the
+      creator would remove the Meta affiliate link. The link stays — revealing the framing as
+      editorial positioning, not a safety warning.
+    confounders:
+    - name: Genuine privacy differential
+      strength: MODERATE
+      description: Meta has documented privacy incidents that Samsung does not.
+    - name: Sponsor alignment
+      strength: MODERATE
+      description: NordVPN sponsor creates financial incentive for privacy-alarm framing.
+    cross_references:
+    - mechanism_id: 115
+      relationship: extends
+      description: Extends TechRadar vocabulary bifurcation to YouTube creator ecosystem.
+    source_urls:
+    - https://www.youtube.com/watch?v=gadgetevolution-samsung-meta-comparison
+  lance_ulanoff_techradar_market_attribution_privacy_displacement:
+    mechanism_id: 195
+    mechanism_name: 'Lance Ulanoff (TechRadar / Future plc) Editor-Level Market-Attribution Privacy Vocabulary Displacement'
+    mechanism_type: journalist_cross_entity_market_attribution_privacy_displacement
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.78
+    entities:
+    - meta
+    - samsung
+    test_file: test_lance_ulanoff_techradar_cross_entity_market_attribution_privacy_displacement_aug20.py
+    test_count: 38
+    finding_summary: >
+      Lance Ulanoff — 38-year industry veteran, former EIC of PCMag.com, Mashable, and
+      Lifewire — demonstrates a distinct cross-entity framing mechanism at TechRadar (Future plc).
+      Meta Ray-Ban Display Glasses (Oct 2025): 100% enthusiasm, ZERO privacy vocabulary (+0.85 tone).
+      Samsung Intelligent Eyewear (Aug 2026): privacy concerns ATTRIBUTED TO THE MARKET that Meta
+      implicitly created, Samsung executive positioned as innovation defender (+0.45 tone). Compound
+      asymmetry: same journalist celebrates Meta product while implying Meta contaminated the market
+      for Samsung. Financial alignment: Future plc Samsung ad dependency ($9.7B Samsung global ad
+      spend), Google traffic dependency, $0 Meta relationship.
+    confounders:
+    - name: Temporal gap
+      strength: STRONG
+      description: 10-month gap between articles and different product lifecycle stages.
+    - name: Google Glass redemption narrative
+      strength: MODERATE
+      description: Google Glass history provides natural redemption arc for Samsung glasses.
+    cross_references:
+    - mechanism_id: 115
+      relationship: extends
+      description: TechRadar vocabulary bifurcation at editor level vs junior reporter level.
+    source_urls:
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/i-wore-meta-ray-ban-display-glasses-they-succeed-in-almost-every-way-google-glass-failed-and-i-cant-wait-to-wear-them-again
+  digital_trends_apple_n50_privacy_hero_meta_creepy_reputation:
+    mechanism_id: 196
+    mechanism_name: 'Digital Trends Apple N50 Privacy-Hero vs Meta Ray-Ban Creepy-Reputation Publication-Level Framing Asymmetry'
+    mechanism_type: publication_level_privacy_vocabulary_bifurcation
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.87
+    entities:
+    - apple
+    - meta
+    test_file: test_digital_trends_apple_n50_privacy_hero_meta_creepy_reputation_framing_asymmetry_aug20.py
+    test_count: 40
+    finding_summary: >
+      Digital Trends applies aspirational "privacy hero" framing to Apple's unshipped N50
+      smart glasses while maintaining persistent "creepy reputation" stigma for Meta's shipping
+      Ray-Ban glasses — despite both products featuring cameras and AI assistants with equivalent
+      core functionality. Apple N50 (5 articles): 0 alarm terms, "avoid the creepy reputation,"
+      "sign me up." Meta Ray-Ban (4+ articles): "creepy," "nightmarish," "pervert glasses,"
+      "surveillance cameras." Apple N50 has cameras + Visual Intelligence continuous scan but
+      receives zero alarm terms. Managing editor Nadeem Sarwar + Andy Boxall + Rachit all apply
+      same bifurcation = editorial direction. Financial: Apple News revenue, no Meta financial ties.
+    confounders:
+    - name: Meta genuine privacy incidents
+      strength: STRONG
+      description: Meta has documented privacy incidents that Apple does not.
+    - name: Apple privacy reputation
+      strength: MODERATE
+      description: Apple has cultivated a strong privacy brand, though product parity exists.
+    cross_references:
+    - mechanism_id: 55
+      relationship: extends
+      description: Apple N50 Privacy Hero Cascade at Digital Trends publication level.
+    - mechanism_id: 149
+      relationship: extends
+      description: Digital Trends editorial-level asymmetry now with Apple entity comparison.
+    source_urls:
+    - https://www.digitaltrends.com/computing/apple-smart-glasses-privacy-storm/
+  reuters_snap_meta_camera_privacy_vocabulary_bifurcation:
+    mechanism_id: 197
+    mechanism_name: 'Reuters Wire-Service Cross-Entity Camera Privacy Vocabulary Bifurcation'
+    mechanism_type: wire_service_cross_entity_privacy_vocabulary_bifurcation
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.82
+    entities:
+    - meta
+    - snap
+    test_file: test_reuters_snap_meta_camera_privacy_vocabulary_bifurcation_aug20.py
+    test_count: 50
+    finding_summary: >
+      Reuters applies bifurcated privacy vocabulary across its smart glasses coverage.
+      Snap Specs (4 cameras): 0 privacy alarm terms. Meta Ray-Ban (1 camera): 15+ privacy
+      alarm terms. UK Cinema ban coverage: category-level policy headlined as Meta-specific.
+      Wire-service asymmetry is structurally significant because Reuters syndication propagates
+      framing to hundreds of downstream publications globally, amplifying entity-selective
+      vocabulary at scale.
+    confounders:
+    - name: Meta market dominance
+      strength: STRONG
+      description: Meta 80%+ smart glasses market share makes it the natural lead entity.
+    - name: Snap developer-only status
+      strength: MODERATE
+      description: Snap Specs initially developer-only, though consumer launch announced.
+    cross_references:
+    - mechanism_id: 8
+      relationship: extends
+      description: Safe Target coefficient at wire-service level with global syndication.
+    - mechanism_id: 33
+      relationship: supports
+      description: Coverage selection silence for Snap's 4-camera product.
+    source_urls:
+    - https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+  lawrence_bonk_engadget_beat_assignment_stigma_concentration:
+    mechanism_id: 198
+    mechanism_name: 'Lawrence Bonk (Engadget / Yahoo) Generalist Beat Assignment as Stigma Concentration'
+    mechanism_type: journalist_cross_entity_beat_assignment_stigma_concentration
+    discovery_date: '2026-08-20'
+    asymmetry_score: 0.79
+    entities:
+    - meta
+    - snap
+    - samsung
+    test_file: test_lawrence_bonk_engadget_generalist_beat_assignment_stigma_concentration_aug20.py
+    test_count: 42
+    finding_summary: >
+      Engadget assigns category-level smart glasses restriction stories to a generalist reporter
+      (Lawrence Bonk — gaming/music expertise) rather than dedicated AR beat reporters. Bonk
+      produces 8+ alarm vocabulary terms, CEO personalization, zero competitor context. Meanwhile
+      Karissa Bell (dedicated AR/smart glasses beat) simultaneously covers Snap Specs aspirationally
+      with exclusive CEO access. Beat-assignment stigma concentration operates at the EDITORIAL
+      level — the decision of WHO covers WHICH story concentrates privacy stigma through structural
+      routing rather than individual journalist bias. Financial: Yahoo/Apollo Google Showcase
+      + Apollo-Anthropic SPV, Meta $0.
+    confounders:
+    - name: Meta market share
+      strength: STRONG
+      description: Meta 80%+ market share makes it the natural lead for restriction stories.
+    - name: Staffing availability
+      strength: STRONG
+      description: Beat reporters may have been unavailable; routing may be logistical.
+    cross_references:
+    - mechanism_id: 8
+      relationship: extends
+      description: Safe Target at editorial routing level.
+    - mechanism_id: 33
+      relationship: extends
+      description: Coverage selection through reporter assignment rather than story suppression.
+    - mechanism_id: 160
+      relationship: extends
+      description: Nadeem Sarwar editorial routing pattern replicated at different publication.
+    source_urls:
+    - https://www.engadget.com/2234606/england-and-wales-ban-meta-glasses-from-courtrooms/
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

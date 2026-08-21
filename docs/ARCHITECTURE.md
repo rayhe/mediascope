@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 18433 tests across 500 test files (all from real articles)
+├── tests/                       # 17289 tests across 501 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -965,3 +965,4 @@ mediascope/
 │   ├── test_conde_nast_deal_inventory_coverage_correlation_aug20.py # Mechanism #199: Condé Nast Deal Inventory Coverage Correlation. WIRED's parent has deals with 5/7 major AI companies (OpenAI, Amazon, Microsoft, Perplexity, Apple negotiating). ZERO deals with Meta, adversarial to Google. Coverage adversarialism inversely correlates with deal status. French APIG complaint: Meta enforced first despite Google causing 33-38% traffic decline. 9 classes, 49 tests
 │   ├── test_type_d_5pm_cross_validation_aug20.py # Type D cross-validation (Aug 20, 5 PM PT): Mechanisms #196-#199 structural integrity, #199 metadata fix (discovery_date, asymmetry_score, cross_references), doc sync (3+2 missing test files, counts →18344/500), confounder robustness, competitor-entities consistency. 8 classes, 40 tests
 │   ├── test_type_e_6pm_podcast_broadcast_uk_cinema_2014_2026_natural_experiment_aug20.py # Type E podcast/broadcast (Aug 20, 6 PM PT): Mechanism #200 Phil Clapp Natural Experiment — CEA 2014 → UKCA 2026, same executive, Google Glass → Meta Ray-Ban. Vocabulary escalation: Glasshole → pervert. Clyde 1 regional radio entry #47. 8 classes, 35 tests
+│   ├── test_type_d_7pm_cross_validation_aug20.py # Type D cross-validation (Aug 20, 7 PM PT): Fixed 4 test failures (README count, ARCHITECTURE count, mechanism #200 guard, podcast timestamp). Added 5 missing mechanism profile entries (#193, #195, #196, #197, #198) to competitor-coverage-research.yaml. Verified mechanisms #191-#200 all have profile YAML entries. ID contiguity, doc sync, metadata completeness. 7 classes, 28 tests

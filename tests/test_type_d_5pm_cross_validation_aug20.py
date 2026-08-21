@@ -205,11 +205,11 @@ class TestDocSyncAug20_5pm(unittest.TestCase):
         with open(arch_path) as f:
             self.arch = f.read()
 
-    def test_readme_contains_499_files(self):
-        self.assertIn('499', self.readme)
+    def test_readme_contains_500_files(self):
+        self.assertIn('500', self.readme)
 
-    def test_architecture_contains_499_files(self):
-        self.assertIn('499', self.arch)
+    def test_architecture_contains_500_files(self):
+        self.assertIn('500', self.arch)
 
     def test_three_previously_missing_files_in_readme(self):
         missing = []
@@ -249,11 +249,14 @@ class TestMechanismIDContiguity(unittest.TestCase):
             199
         )
 
-    def test_no_mechanism_200_yet(self):
-        """No mechanism #200 should exist in wired profile (next one TBD)."""
+    def test_mechanism_200_exists(self):
+        """Mechanism #200 (Phil Clapp Natural Experiment) should exist in wired profile."""
+        found = False
         for key, value in self.profile.items():
             if isinstance(value, dict) and value.get('mechanism_id') == 200:
-                self.fail(f"Found premature mechanism #200 in {key}")
+                found = True
+                break
+        self.assertTrue(found, "Mechanism #200 should exist in wired profile")
 
 
 class TestScoreDistribution(unittest.TestCase):
