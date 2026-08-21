@@ -5631,3 +5631,50 @@ Condé Nast (WIRED's parent) has financial relationships with 5 of 7 major AI pl
 - **Test corpus:** ~17,289 tests across 501 files
 - **Mechanisms with profile entries:** 200/200 (was 195/200)
 - **Pushed to GitHub:** ✓ (pending commit below)
+
+---
+
+## Iteration #210 — Thu Aug 20, 2026 21:00 PT
+**Type:** C (Financial Incentive Mapping)
+**Mechanism:** #202 — Fall 2026 Smart Glasses Financial Incentive Convergence Index
+
+### Discovery
+First cross-entity compound financial leverage model across FOUR competing smart glasses
+products launching within a 90-day window (Fall 2026). Calculates a Financial Incentive
+Convergence Index per entity from Condé Nast/WIRED's perspective:
+
+| Entity | Score | Key Components |
+|--------|-------|---------------|
+| Meta Ray-Ban | -3 | ZERO CN deals + $243B direct ad competitor |
+| Samsung Galaxy | +5 | $9.7B ad spend + Google compound + Qualcomm co-marketing |
+| Snap Spectacles | +3 | Perplexity→CN chain + OpenAI→CN chain |
+| Apple N50 | +4 | Siri AI nine-figure budget + News+ + Gemini chain |
+
+Entity with LOWEST score (Meta) receives MOST adversarial coverage; entity with HIGHEST
+compound score (Samsung) receives SOFTEST — despite identical 12MP/Snapdragon AR1 Gen 1
+hardware. Condé Nast's advertising-to-AI-licensing revenue pivot (Lynch "Google Zero"
+May 2026) accelerates the differential across all four entities simultaneously.
+
+### Changes
+1. **New test file:** `test_fall_2026_smart_glasses_financial_incentive_convergence_index_aug20.py`
+   - 11 classes, 44 tests (all passing)
+   - Covers: launch window verification, Meta negative leverage, Samsung triple-entity,
+     Snap dual-chain, Apple multi-channel, predictive coverage asymmetry, 6 confounders
+     (3 STRONG), mechanism metadata, source documentation, convergence completeness
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #202 with full financial leverage
+     score breakdown, asymmetry_score 0.85, 10 cross-references, 6 confounding factors
+   - `competitor-entities.yaml`: Added market share confounder (>80%, 10M+ units) to Samsung
+     qualcomm_comarketing confounding_factors
+
+3. **README:** Updated test count (17,595 across 503 files), added test file listing
+
+### Stats
+- **New test file:** 1 (44 tests, all passing)
+- **Mechanism ID:** #202
+- **Asymmetry score:** 0.85
+- **Cross-references:** 10 (#8, #33, #35, #43, #55, #76, #91, #156, #196, #199)
+- **Confounders:** 6 (3 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** ~17,595 tests across 503 files
+- **Pushed to GitHub:** ✓

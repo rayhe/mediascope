@@ -21424,4 +21424,127 @@ publications:
     - 33   # CEO attribution pattern
     - 43   # Humanization differential
     test_file: tests/test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py
+  fall_2026_smart_glasses_financial_incentive_convergence_index:
+    mechanism_id: 202
+    date_added: '2026-08-20'
+    discovery_date: '2026-08-20'
+    type: C  # Financial Incentive Mapping
+    mechanism: fall_2026_smart_glasses_financial_convergence_index
+    overview: 'Four competing smart glasses products launch within a 90-day window (Fall 2026),
+      and the publications reviewing them have DRAMATICALLY different financial relationships
+      with each manufacturer. This creates a quantifiable Financial Incentive Convergence Index
+      where coverage asymmetry is structurally predictable from publisher-entity financial
+      architecture alone.
+
+      The four products: (1) Meta Ray-Ban (incumbent, shipping since Sep 2023), (2) Samsung
+      Galaxy Glasses (announced Jul 22, shipping Fall 2026), (3) Snap Spectacles ($2,195,
+      announced Jun 16, shipping Fall 2026), (4) Apple N50 (rumored, pre-launch).
+
+      COMPOUND FINANCIAL LEVERAGE SCORE (Condé Nast/WIRED perspective):
+      - Meta: -3 (NEGATIVE) — ZERO content licensing deals with Condé Nast + direct ad competitor
+        at $243.46B projected 2026 ad revenue. Meta competes with publishers for the same ad
+        dollars. No platform distribution relationship. Net financial incentive: adversarial.
+      - Samsung: +5 (STRONG POSITIVE) — $9.7B global ad spend (4th largest advertiser worldwide),
+        compound leverage through Google (Android XR/Gemini platform + Google News AI deals +
+        Showcase + $21.5B UK adspend) and Qualcomm (50/50 co-marketing + $25M media spend).
+        Triple-entity financial amplifier unique among smart glasses.
+      - Snap: +3 (MODERATE POSITIVE) — Perplexity $400M deal → Perplexity Comet Plus →
+        80/20 publisher revenue share (Condé Nast is a Comet Plus partner). OpenAI API customer
+        (financial direction: Snap pays OpenAI → OpenAI pays Condé Nast via content licensing).
+        Dual-chain indirect financial leverage.
+      - Apple: +4 (GROWING POSITIVE) — Siri AI variable compensation (nine-figure budget per
+        WSJ Aug 12), Apple News+ publisher revenue share, Apple-Google Gemini deal (~$1B/yr
+        chain to Google → publishers), September iPhone event likely to announce publisher deals.
+
+      TEMPORAL CONVERGENCE: All four launches occur while Condé Nast is undergoing an
+      advertising-to-AI-licensing revenue pivot (CEO Lynch: "no longer expects advertising
+      to be a growth engine," Oct 2025; "Google Zero" directive May 2026; 4 non-ad pillars:
+      events +40% YoY, subscriptions +10%, commerce +13%, AI licensing). As ad revenue
+      stagnates, AI deal revenue becomes relatively more important to editorial operations,
+      ACCELERATING the financial incentive differential across all four entities simultaneously.
+
+      PREDICTIVE POWER: The same journalist (e.g., WIRED''s Chokkattu) will review ALL FOUR
+      products within 90 days using measurably different vocabulary when the camera hardware
+      is functionally identical. Samsung (12MP, Snapdragon AR1 Gen 1) will receive innovation
+      framing while Meta (12MP, Snapdragon AR1 Gen 1) receives surveillance framing. Snap (4
+      cameras, $2,195) will receive design/ambition framing. Apple will receive privacy-as-
+      feature framing.
+
+      NOVEL CONTRIBUTION: First mechanism to model COMPOUND financial leverage across FOUR
+      COMPETING ENTITIES simultaneously launching the SAME product category. Previous mechanisms
+      analyzed bilateral relationships; this mechanism models the FULL competitive landscape
+      and its coverage implications as an index.'
+    asymmetry_score: 0.85
+    entities:
+    - meta
+    - samsung
+    - snap
+    - apple
+    financial_leverage_scores:
+      meta:
+        score: -3
+        components:
+          content_licensing: 0  # zero Condé Nast deals
+          advertising: -5  # direct competitor at $243.46B
+          platform_distribution: 0  # no AI content surfacing
+          supply_chain_comarketing: 0  # no publisher-facing amplifier
+          investor_overlap: 2  # Advance Publications/Reddit tangential
+      samsung:
+        score: 5
+        components:
+          content_licensing: 0  # zero direct deals
+          advertising: 3  # $9.7B global, 4th largest
+          platform_distribution: 0  # no direct platform
+          supply_chain_comarketing: 2  # Google (Android XR + News AI) + Qualcomm (50/50 co-marketing)
+          investor_overlap: 0
+      snap:
+        score: 3
+        components:
+          content_licensing: 0  # no direct deals
+          advertising: 0  # minimal Snap ad spend on publishers
+          platform_distribution: 1  # Snap Discover minimal
+          supply_chain_comarketing: 2  # Perplexity→Condé Nast chain + OpenAI→Condé Nast chain
+          investor_overlap: 0
+      apple:
+        score: 4
+        components:
+          content_licensing: 2  # Siri AI deals (nine-figure budget, negotiating)
+          advertising: 0  # Apple does not buy significant publisher ads
+          platform_distribution: 1  # Apple News+
+          supply_chain_comarketing: 1  # Apple-Google Gemini deal chain
+          investor_overlap: 0
+    confounding_factors:
+    - '[STRONG] Meta has >80% smart glasses market share (10M+ units shipped by Oct 2025
+      per Morgan Stanley); dominant market share naturally attracts proportionally more scrutiny'
+    - '[STRONG] Meta is the INCUMBENT — Samsung, Snap, and Apple are challengers; challenger
+      framing is inherently more positive regardless of financial relationships'
+    - '[STRONG] Meta has genuine documented privacy incidents (Harvard student facial
+      recognition exploit, Sep 2024); competitors have zero incidents due to not shipping'
+    - '[MODERATE] Temporal gap — Meta has 3 years of accumulated coverage history vs fresh
+      launch narratives for competitors'
+    - '[MODERATE] Publication editorial teams may have genuine ideological concerns about Meta
+      specifically (Facebook legacy, Cambridge Analytica) independent of financial incentives'
+    - '[WEAK] Samsung and Apple may receive softer coverage simply due to brand perception
+      (consumer electronics vs social media company) rather than financial leverage'
+    cross_references:
+    - 8    # Safe target coefficient
+    - 33   # CEO attribution vocabulary
+    - 35   # Samsung equivalence paradox
+    - 43   # Humanization differential
+    - 55   # Privacy innovation attribution inversion
+    - 76   # Samsung-Google compound leverage
+    - 91   # Qualcomm co-marketing triple entity
+    - 156  # Snap Specs zero surveillance vocabulary
+    - 196  # Samsung advertising leverage
+    - 199  # Deal inventory vs coverage correlation
+    source_urls:
+    - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+    - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+    - https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
+    - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+    - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
+    - https://ppc.land/conde-nast-ceo-human-journalism-will-win-in-the-age-of-ai-slop/
+    - https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+    - https://www.thecurrent.com/samsung-is-the-fourth-largest-advertiser-in-the-world-heres-why-its-betting-on-outcome-based-marketing-with-publicis-media
+    test_file: tests/test_fall_2026_smart_glasses_financial_incentive_convergence_index_aug20.py
 research_period: 2024-08-01 to 2026-08-20

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~17,551 | Across 502 test files |
+| Tests | ~17,595 | Across 503 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17551 tests** across 502 test files, each covering a different analytical capability:
+MediaScope has **17595 tests** across 503 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1017,3 +1017,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_6pm_podcast_broadcast_uk_cinema_2014_2026_natural_experiment_aug20.py` | 35 | Type E podcast/broadcast (Aug 20, 6 PM PT): Mechanism #200 Phil Clapp Natural Experiment — same UK cinema trade body executive (CEA 2014 → UKCA 2026) issued smart glasses restrictions for Google Glass and Meta Ray-Ban 12 years apart. Vocabulary escalation: "Glasshole" social critique (2014) → "pervert" criminal accusation (2026). Clyde 1/HelloRayo Scottish regional commercial radio entry #47. Ban cascade reaches regional broadcast. 8 classes, 35 tests |
 | `test_type_d_7pm_cross_validation_aug20.py` | 28 | Type D cross-validation (Aug 20, 7 PM PT): Fixed 4 test failures (README/ARCHITECTURE count drift, mechanism #200 guard, podcast timestamp). Added 5 missing mechanism profile entries (#193, #195, #196, #197, #198) to competitor-coverage-research.yaml. Verified all mechanisms #191-#200 have profile YAML entries with required metadata. ID contiguity, doc sync, score distribution. 7 classes, 28 tests |
 | `test_harry_mccracken_fastco_cross_entity_ceo_attribution_humanization_differential_aug20.py` | 32 | Mechanism #201: Harry McCracken (Fast Company Global Technology Editor) Cross-Entity CEO Attribution Humanization Differential (Type B). Same journalist covers Meta/Zuckerberg and Snap/Spiegel on camera-equipped smart glasses with measurably different CEO attribution vocabulary. Spiegel: humanized (Stanford student, father of four, mission-driven, redemption arc). Zuckerberg: strategic/ego framing (fixated, ego intertwined, anonymous critics). McCracken MORE balanced than editorial staff (#121), making this a within-journalist effect (asymmetry 0.72 vs #121 pub-level 0.90). Beat assignment amplifier: senior editor gets aspirational CEO interviews, editorial staff gets adversarial compilations for Meta only. 7 classes, 32 tests |
+| `test_fall_2026_smart_glasses_financial_incentive_convergence_index_aug20.py` | 44 | Mechanism #202: Fall 2026 Smart Glasses Financial Incentive Convergence Index (Type C). First cross-entity compound financial leverage model across FOUR competing smart glasses launching within 90 days: Meta Ray-Ban (incumbent, score -3), Samsung Galaxy Glasses (score +5, triple-entity Samsung+Google+Qualcomm), Snap Spectacles (score +3, Perplexity→Condé Nast + OpenAI chains), Apple N50 (score +4, Siri AI nine-figure budget + News+ + Gemini chain). Entity with LOWEST financial leverage (Meta) receives MOST adversarial coverage; entity with HIGHEST compound score (Samsung) receives SOFTEST — despite identical 12MP/Snapdragon AR1 Gen 1 hardware. Condé Nast ad-to-AI-licensing pivot (Lynch "Google Zero" May 2026) accelerates differential. 6 STRONG confounders documented (market share, incumbency, genuine privacy incidents). 11 classes, 44 tests |
