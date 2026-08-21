@@ -4951,3 +4951,16 @@ conde_nast_deal_inventory_coverage_correlation:
   - https://www.condenast.com/news/conde-nast-and-openai-announce-partnership
   - https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
   - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+  - https://www.medianama.com/2026/08/223-french-publishers-google-pay-ai-summaries/
+  - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+  discovery_date: '2026-08-20'
+  asymmetry_score: 0.86
+  cross_references:
+  - 8   # Safe Target Coefficient
+  - 33  # OpenAI facial recognition parity
+  - 43  # FT-OpenAI dual standard
+  - 136 # Snap Perplexity publisher chain
+  - 156 # Apple Siri AI architecture
+  - 196 # UK Cinema piracy vector
+  - 197 # Reuters privacy vocabulary bifurcation
+  - 198 # Engadget beat assignment
