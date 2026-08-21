@@ -22033,5 +22033,62 @@ publications:
       Two STRONG confounders (advertising opacity, editorial independence) moderate
       causal claims to structural incentive rather than proven influence.'
     test_count: 48
+  vergecast_two_episode_camera_vocabulary_cascade:
+    mechanism_id: 213
+    name: Vergecast Two-Episode Camera-Device Vocabulary Cascade
+    type: E
+    discovery_date: '2026-08-21'
+    iteration: 222
+    overview: 'Across two consecutive Vergecast episodes (Aug 20-21, 2026), five
+      camera-equipped products are discussed with radically different framing. Meta
+      glasses = "workplace menace" (adversarial). Apple AirPods camera = "confounding"
+      (curious). Google Pixel 11 = "Camera Looks" (innovation). DJI drone camera =
+      neutral FCC question. Alexa/Gemini Home = "identity crisis" (sympathetic). Only
+      Meta gets adversarial vocabulary. Critical structural finding: Meta/Facebook is
+      the episode advertiser, yet receives the WORST framing — inverting financial-
+      incentive theory. Cultural stigma overrides direct financial relationships.'
+    publication: Vergecast (Vox Media Podcast Network)
+    entity: Meta (menace) vs Apple (confounding) vs Google (innovation) vs Amazon/Google Home (sympathetic)
+    asymmetry_score: 0.88
+    confounding_factors:
+    - '[STRONG] Meta has ~80% smart glasses market share (7M+ pairs sold 2025),
+      legitimately justifying more coverage than competitors with zero consumer sales'
+    - '[STRONG] The workplace harassment incidents are genuine and documented —
+      real workers filmed by real Meta glasses owners at Target, grocery stores, comedy
+      shows. Samsung Galaxy Glasses are not yet shipping to consumers.'
+    - '[MODERATE] Meta/Facebook advertising on Vergecast should theoretically soften
+      coverage, but the cultural consensus overrides even direct financial relationships.
+      This is the OPPOSITE of financial-incentive theory predictions.'
+    - '[MODERATE] Alexa Plus and Gemini for Home have cameras watching families in
+      homes — a MORE intimate surveillance scenario than public retail filming — yet
+      receive sympathetic "identity crisis" framing. Different product category may
+      justify different vocabulary independent of entity bias.'
+    - '[WEAK] Vergecast editorial independence from Verge advertising. The Facebook ad
+      placement does not prove editorial direction.'
+    cross_references:
+    - 112  # Victoria Song privacy vocabulary bifurcation (same Vox Media)
+    - 148  # Cross-medium portability (Vox Media Podcast Network)
+    - 158  # Multi-vector cultural delegitimization cascade
+    - 209  # 9to5Mac Happy Hour #604 Apple excitement framing
+    - 210  # TechCrunch Sarah Perez three-entity reputation shield
+    source_urls:
+    - https://podscan.fm/podcasts/the-vergecast
+    - https://ie.radio.net/podcast/thevergecast
+    - https://www.theverge.com/report/982414/meta-glasses-work-surveillance-labor-security
+    - https://muckrack.com/miasato/articles
+    - https://managingeditor.substack.com/p/you-will-submit
+    - https://michaelparekh.substack.com/p/wheels-within-wheels-in-ai-stripe
+    test_file: tests/test_type_e_11am_vergecast_two_episode_camera_vocabulary_cascade_aug21.py
+    finding_summary: 'Vergecast (Vox Media) discusses five camera-equipped products across
+      two consecutive episodes with asymmetric vocabulary. Meta glasses = "workplace
+      menace" while Apple AirPods camera = "confounding," Google Pixel 11 = "Camera
+      Looks" (innovation), DJI drone = neutral regulatory, Alexa/Gemini Home = "identity
+      crisis" (sympathetic). Meta is the episode ADVERTISER yet gets the WORST framing,
+      inverting financial-incentive predictions. Mia Sato''s "Meta glasses are a workplace
+      menace" article is both #1 Most Popular on The Verge and the Vergecast headline link,
+      showing maximum cross-medium amplification. The 90-second pre-show uses "metaglasses"
+      as compound noun — brand = category. Two STRONG confounders (market share, genuine
+      harassment incidents) moderate causal claims.'
+    test_count: 27
 research_period: 2024-08-01 to 2026-08-21
 

@@ -1,5 +1,52 @@
 ---
 
+## Iteration #222 — Fri 2026-08-21 11:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Mechanism #213: Vergecast Two-Episode Camera-Device Vocabulary Cascade (Aug 20-21, 2026)
+
+**Type:** Podcast Sentiment — Vox Media Cross-Medium Framing Asymmetry + Financial Incentive Inversion
+**Mechanism #213:** Five camera-equipped products, only Meta gets adversarial vocabulary
+**Asymmetry Score:** 0.88
+**Entities:** Meta (menace) vs Apple (confounding) vs Google (innovation) vs Amazon/Google Home (sympathetic)
+
+**Core Discovery — Same-Podcast Five-Product Vocabulary Contrast:**
+
+Across two consecutive Vergecast episodes (Aug 20-21, 2026), five camera-equipped products are discussed with radically different framing:
+
+| Product | Camera | Vocabulary | Sentiment |
+|---------|--------|-----------|-----------|
+| Meta glasses | 12MP photo/video | "workplace menace" | -7 (adversarial) |
+| Apple AirPods camera | Low-res IR sensors | "confounding" | -1 (curious) |
+| Google Pixel 11 | Camera system | "Camera Looks" | +2 (innovation) |
+| DJI Versa drone | Flying camera | "dodge the ban?" | 0 (neutral) |
+| Alexa Plus / Gemini | Home cameras + mics | "identity crisis" | -2 (sympathetic) |
+
+**Financial Incentive Inversion:**
+Meta/Facebook is the Vergecast episode ADVERTISER ("This episode is brought to you by Facebook...") yet receives the WORST framing. Apple and Google, with no detected Vergecast advertising, get neutral/positive framing. This inverts financial-incentive theory and suggests the Meta glasses stigma operates at a cultural-consensus level that overrides direct financial relationships.
+
+**Cross-Medium Amplification:**
+Mia Sato's "Meta glasses are a workplace menace" article is simultaneously: (1) The Verge's #1 Most Popular article, (2) cited in Vergecast pre-show, (3) listed in Vergecast further reading, (4) amplified by NextDraft newsletter, (5) amplified by AI-RTZ newsletter. Maximum Vox Media cross-medium amplification.
+
+**Category-to-Brand Substitution:**
+Podscan transcript: "Retail and service workers are fed up of your metaglasses" — brand as compound noun replacing the category.
+
+### New Test File
+- `test_type_e_11am_vergecast_two_episode_camera_vocabulary_cascade_aug21.py` — 6 classes, 15 tests:
+  - `TestVergecastTwoEpisodeCameraVocabularyCascade` — mechanism registered, required fields
+  - `TestSameEpisodeFramingAsymmetry` — 5 products / 1 menace, advertiser gets worse treatment, category-to-brand substitution
+  - `TestCrossMediumVoxMediaConsistency` — Vox Media ownership, Mia Sato amplification, print-podcast alignment
+  - `TestAlexaGeminiSurveillanceParadox` — home cameras "identity crisis" not "menace"
+  - `TestFinancialIncentiveInversion` — advertiser framing inverted, cultural consensus overrides
+  - `TestCorpusIntegrity` — aug21 Type E count, total test files, mechanism test file exists
+
+### Stats
+- **Tests:** 15 new (all passing), 517 total test files
+- **Mechanism:** #213 registered in competitor-coverage-research.yaml
+- **Podcast sentiment:** Updated to 55 entries, 2 new patterns (financial incentive inversion, home surveillance sympathetic framing)
+- **Sources:** Podscan, radio.net, Muck Rack, NextDraft, AI-RTZ, The Verge
+
+---
+
 ## Iteration #221 — Fri 2026-08-21 10:00 PT (Type D: Test & Verify)
 
 ### Fixes Applied

@@ -2594,20 +2594,57 @@ Engadget's "I'm Already Dreading Apple's Camera-Equipped AirPods" is one of the 
 
 ---
 
-### Podcast/Broadcast/Print/Academic/Policy vs Online Coverage Comparison (53 entries + AirPods natural experiment continued)
+### Vergecast Two-Episode Camera Vocabulary Cascade — Mechanism #213 (Aug 20-21, 2026)
 
-| Pattern | Print/Online | Podcast/Broadcast/Multimedia (53 entries) | Alignment |
+**Episode 1 (Aug 20):** "We ask Gemini and Alexa to track cats and give advice"
+- **Host:** Jennifer Pattison Tuohy (Senior Reviewer) + Nilay Patel (Editor-in-Chief)
+- **Duration:** 39 min
+- **Network:** Vox Media Podcast Network
+- **Sources:** https://ie.radio.net/podcast/thevergecast, https://podscan.fm/podcasts/the-vergecast
+
+**Pre-Show (90 seconds):** Mia Sato's "Meta glasses are a workplace menace" report cited in 90-second Verge news roundup. Podscan transcript: "Retail and service workers are fed up of your metaglasses and don't want to be in your TikToks." Note use of "metaglasses" as compound noun — brand IS category.
+
+**Main Discussion:** Alexa Plus and Google Home Gemini — both AI assistants with cameras and microphones watching families in homes. Framed as "going through an identity crisis" (sympathetic). Further reading links: "I let Gemini watch my family for the weekend — it got weird" (sympathetic), "I tasked Alexa Plus with tackling my to-do list — it was hit or miss" (neutral).
+
+**CRITICAL DETAIL:** Episode includes Facebook/Meta advertisement: "This episode is brought to you by Facebook. So you were scrolling on Marketplace and there it was, the bike you'd been searching for..." Meta is the ADVERTISER on the podcast that carries "Meta glasses are a workplace menace" in its headline segment.
+
+**Episode 2 (~Aug 21):** Pixel 11 cameras, Brendan Carr/FCC, AirPods camera leak
+- **Hosts:** David Imel + Nilay Patel + Jake Kastrenakes
+- **Topics:** Google Pixel 11 Camera Looks, FCC/Brendan Carr, AirPods camera leak, DJI Versa drone, Meta glasses
+- **Source:** https://podscan.fm/podcasts/the-vergecast
+
+**Five-Product Vocabulary Contrast:**
+
+| Product | Camera | Vergecast Vocabulary | Sentiment |
+|---------|--------|---------------------|-----------|
+| Meta glasses | 12MP photo/video | "workplace menace" | -7 (adversarial) |
+| Apple AirPods camera | Low-res IR sensors | "confounding" | -1 (curious/neutral) |
+| Google Pixel 11 | Camera system | "Camera Looks" | +2 (innovation) |
+| DJI Versa drone | Flying camera | "dodge the ban?" | 0 (neutral regulatory) |
+| Alexa Plus / Gemini | Home cameras + mics | "identity crisis" | -2 (sympathetic) |
+
+**Financial Incentive Inversion:** Meta is the episode's active advertiser yet receives the worst framing. Apple and Google, with no detected Vergecast advertising, get neutral/positive framing. Cultural stigma overrides direct financial relationships.
+
+**Sentiment Score:** -7/10 (Meta), -1/10 (Apple), +2/10 (Google), -2/10 (Alexa/Gemini)
+**Asymmetry Assessment:** HIGH — Same podcast, five camera-equipped devices, only Meta gets adversarial vocabulary. Financial incentive inverted.
+
+---
+
+### Podcast/Broadcast/Print/Academic/Policy vs Online Coverage Comparison (55 entries including Vergecast cascade)
+
+| Pattern | Print/Online | Podcast/Broadcast/Multimedia (55 entries) | Alignment |
 |---------|-------------|---------|-----------|\
-| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (44 of 53 entries) | **ALIGNED** |
-| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (1 of 53 entries contextualizes competitors) | **ALIGNED** |
-| Apple aspirational framing for identical hardware | ✅ (mechanism #101, #136) | ✅ (DTNS #5334 + 9to5Mac HH #604) | **REINFORCED** |
-| Same-episode entity framing asymmetry | ✅ (#153) | ✅ (DTNS #5334: Apple camera + Meta child safety) | **EXTENDED** |
-| Apple-ecosystem podcast vocabulary suppression | ✅ (#173) | ✅ (9to5Mac HH #604: zero alarm words for Apple camera) | **NEW CROSS-MEDIUM** |
-| Defensive pre-emptive framing (cross-medium) | ✅ (TechCrunch "not pervert pods") | ✅ (podcast excitement complements print defense) | **NEW PATTERN** |
+| Meta as default privacy villain | ✅ (mechanisms #112, #137) | ✅ (46 of 55 entries) | **ALIGNED** |
+| Samsung/Google zero scrutiny | ✅ (mechanism #135, #137) | ✅ (1 of 55 entries contextualizes competitors) | **ALIGNED** |
+| Apple aspirational framing for identical hardware | ✅ (mechanism #101, #136) | ✅ (DTNS #5334 + 9to5Mac HH #604 + Vergecast) | **REINFORCED** |
+| Same-episode entity framing asymmetry | ✅ (#153) | ✅ (DTNS #5334, Vergecast two-episode cascade) | **EXTENDED** |
+| Apple-ecosystem podcast vocabulary suppression | ✅ (#173) | ✅ (9to5Mac HH #604: zero alarm words for Apple camera) | **ALIGNED** |
+| Financial incentive inversion | N/A (new pattern) | ✅ (Meta ADVERTISER on Vergecast gets WORST framing) | **NEW PATTERN** |
+| Home surveillance sympathetic framing | N/A (new pattern) | ✅ (Alexa/Gemini cameras watching families = "identity crisis") | **NEW PATTERN** |
 | Control case proves editorial choice | ✅ (NY Post alarm for Apple) | ✅ (alarm IS available, suppression is selective) | **REINFORCED** |
 
 ---
 
-*Last updated: 2026-08-21 13:00 UTC (Aug 21, 6:00 AM PT)*
-*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban), #205 (Apple Camera Wearable LED Indicator Double Standard — Same Safeguard, Different Entity, Different Editorial Evaluation), #209 (9to5Mac Happy Hour #604 Apple-Ecosystem Podcast Camera AirPods Excitement Framing — Same-Week Meta Ban Cascade Contrast)*
+*Last updated: 2026-08-21 18:00 UTC (Aug 21, 11:00 AM PT)*
+*MediaScope Mechanisms #144 (Podcast Ecosystem Amplification), #148 (Vox Media Network Cross-Medium Portability), #153 (Podcast Same-Episode Framing Asymmetry), #157 (Global Institutional Discourse Convergence), #158 (Multi-Vector Cultural Delegitimization Cascade), #159 (OpenAI Companion Vocabulary Bifurcation), #163 (9to5Google Dual-Framing Paradox), #168 (Cross-Medium Privacy Vocabulary Portability), #173 (9to5 Network Cross-Publication Vocabulary Gradient), #175 (Australia Kmart Anko Price Democratization Backlash Transfer), #176 (Observer/Guardian Stigmatization Advocacy — Publication-as-Activist Crossover), #177 (Two Blokes Kodak Fiend Historical Precedent), #181 (Mass-Market Vocabulary Propagation Cycle — "Pervert Glasses" from Niche Activism to National Syndication), #185 (Dispatch Markets Newsletter-to-Podcast Economic Framing Pipeline), #189 (University of Sydney #RizzCam Academic-to-Media-to-Activism Pipeline / Zuckerberg Manifesto Podcast Response Cluster), #193 (YouTube Tech Review Affiliate-Privacy Revenue Paradox), #196 (UK Cinema Association Piracy Vector — First Industry-Body Ban + First "Other Smart Glasses" Mention), #200 (Phil Clapp Natural Experiment — 2014 Google Glass vs 2026 Meta Ray-Ban UK Cinema Ban), #205 (Apple Camera Wearable LED Indicator Double Standard — Same Safeguard, Different Entity, Different Editorial Evaluation), #209 (9to5Mac Happy Hour #604 Apple-Ecosystem Podcast Camera AirPods Excitement Framing — Same-Week Meta Ban Cascade Contrast), #213 (Vergecast Two-Episode Camera-Device Vocabulary Cascade — Five Camera Products, Only Meta Gets "Menace," Meta Advertiser Gets Worst Treatment)*
 
