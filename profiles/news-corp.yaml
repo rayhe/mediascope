@@ -321,6 +321,35 @@ competitor_relationships:
     direction: receiving
     description: WSJ available on Apple News+. Revenue sharing arrangement.
     coverage_prediction: neutral
+    camera_wearables_coverage_selection_silence:
+      mechanism_id: 206
+      mechanism_name: WSJ Apple Camera AirPods Leak Coverage Selection Silence
+      date_analyzed: '2026-08-21'
+      asymmetry_score: 0.78
+      finding: >
+        Apple leaked a demo video of camera-equipped AirPods in macOS Tahoe 26.7 RC
+        on Aug 18, 2026 (4.6M views on X, 9+ publications covered). WSJ published
+        ZERO coverage in 3+ days. WSJ/Bobrowsky published a 2,500+ word privacy
+        investigation of Meta's equivalent camera glasses just 5 weeks earlier
+        ("Meta Is Flooding the Market," Jul 14, 2026). NY Post (same News Corp parent)
+        DID cover the Apple leak with "spawning privacy concerns" framing (Aug 19).
+        The silence is WSJ-specific and tied to beat assignment: Bobrowsky covers Meta,
+        not Apple camera wearables. Apple News+ distribution dependency creates
+        additional soft incentive against Apple privacy investigation.
+      confounders:
+        - "Meta shipped 7M+ units with documented abuse; Apple AirPods are unreleased (STRONG)"
+        - "3-day window may be too short; WSJ may publish later (MODERATE)"
+        - "WSJ columnist Mims applied balanced entity framing to all companies (WEAK control)"
+      source_urls:
+        - "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
+        - "https://nypost.com/2026/08/19/tech/apple-leak-of-ai-airpods-with-camera-sparks-privacy-concerns/"
+      cross_references:
+        - "Mechanism #49 (Bobrowsky entity targeting concentration)"
+        - "Mechanism #155 (cross-publication brand stigma)"
+        - "Mechanism #190 (Verge Apple triple camera vocabulary zero)"
+        - "Mechanism #205 (Apple camera wearable LED double standard)"
+      test_file: test_wsj_apple_camera_airpods_leak_coverage_selection_silence_aug21.py
+      test_count: 22
   google:
     financial_tie: mixed
     estimated_value: undisclosed

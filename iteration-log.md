@@ -1,5 +1,58 @@
 ---
 
+## Iteration #213 — Fri 2026-08-21 02:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #206: WSJ (News Corp) Apple Camera AirPods Leak Coverage Selection Silence
+
+**Type:** Competitor Coverage Deep Dive — WSJ × Apple Camera Wearables
+**Mechanism #206:** WSJ Apple Camera AirPods Leak Coverage Selection Silence — Bobrowsky Meta Beat Assignment Entity Shielding
+**Asymmetry Score:** 0.78
+**Entities:** Apple, Meta (comparative)
+**Publication:** Wall Street Journal (News Corp)
+**Reporter:** Meghan Bobrowsky (Meta beat)
+
+**Core Discovery — Temporal Natural Experiment (Jul-Aug 2026):**
+
+Apple leaked a demo video of camera-equipped AirPods in macOS Tahoe 26.7 RC on Aug 18, 2026. The clip showed AirPods cameras identifying a book title via Visual Intelligence ("your world becomes savable"). It amassed 4.6M views on X and 9+ publications covered it (MacRumors, 9to5Mac, NY Post, Engadget, iClarified, etc.).
+
+WSJ published **ZERO coverage** of the Apple camera AirPods leak in 3+ days (Aug 18-21).
+
+Compare to WSJ's Meta coverage:
+- **Jul 7:** Meta announces LED tamper-proofing update
+- **Jul 14 (7 days later):** Bobrowsky publishes "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms" — 2,500+ word deep privacy investigation with alarm vocabulary: "flooding the market," "privacy lightning rod," "constantly capture audio and visuals," ACLU coalition letter, mood-tracking patent analysis, "surreptitiously record"
+
+The Apple camera AirPods are functionally equivalent to Meta's glasses for privacy:
+- Both have cameras on the user's body capturing visual surroundings
+- Both feed data to an AI assistant (Siri / Meta AI)
+- Both have an LED indicator when cameras are active
+- Apple's demo emphasizes "your world becomes savable" — continuous environmental capture, identical to Meta's "super sensing"
+
+**News Corp editorial ecosystem divergence:**
+NY Post (also News Corp) DID cover the Apple leak on Aug 19: "'Someone is getting fired': Apple leaks clip of camera-equipped AI AirPods — spawning privacy concerns." User backlash quotes: "Are they trying to beat Flock for most hated mass surveillance cameras?" and "What is your people's problem with adding a camera to f–king everything?" This proves the News Corp parent is NOT uniformly silent — the coverage selection silence is WSJ-specific.
+
+**Beat assignment mechanism:** Bobrowsky is assigned to the Meta beat. Her investigative energy is structurally channeled toward Meta. WSJ has no dedicated "Apple privacy" beat reporter applying equivalent methodology. WSJ columnist Mims DID apply entity-balanced framing to all companies ("Smartglasses Are Inevitable," Jun 26), proving WSJ CAN produce balanced coverage — the Bobrowsky beat is what concentrates adversarial energy on Meta.
+
+**Vocabulary comparison (same feature, different entity):**
+| Feature | Meta (WSJ) | Apple (cross-pub) |
+|---------|-----------|-------------------|
+| Continuous capture | "constantly capture audio and visuals" | "your world becomes savable" |
+| Camera on body | "camera-equipped, audio- and video-recording devices" | "cameras act as eyes for Siri" |
+| AI processing | "User laughs... AI is listening... logs it" | "Visual Intelligence" |
+
+**Confounders:**
+1. STRONG: Meta shipped 7M+ units with documented abuse cases; Apple AirPods are unreleased
+2. MODERATE: 3-day window may be too short; WSJ may still publish
+3. WEAK: Mims column shows WSJ can be balanced; it's the beat assignment structure
+
+### Stats
+- **New test file:** `test_wsj_apple_camera_airpods_leak_coverage_selection_silence_aug21.py` — 6 classes, 22 tests (all passing)
+- **Profile updated:** news-corp.yaml (apple competitor_relationships → coverage_selection_silence mechanism #206)
+- **New mechanism:** #206 (WSJ Apple Camera AirPods Leak Coverage Selection Silence)
+- **Cross-references:** Mechanisms #49, #155, #190, #205
+- **Pushed to GitHub:** (pending)
+
+---
+
 ## Iteration #212 — Fri 2026-08-21 01:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Mechanism #205: Apple Camera Wearable LED Indicator Double Standard
