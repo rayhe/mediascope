@@ -138,6 +138,45 @@ competitor_relationships:
       notes: Barron's (financial analysis) vs WSJ (news) frame the SAME Meta incident completely differently. Proves WSJ anti-Meta
         framing is editorial choice, not Murdoch-level directive.
     rogue_ai_framing_tone: -0.45
+    camera_wearable_cross_publication_framing:
+      mechanism_id: 214
+      finding_type: cross_publication_vocabulary_asymmetry
+      articles:
+      - title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
+        publication: Wall Street Journal
+        date: '2026-07-14'
+        reporter: Meghan Bobrowsky
+        tone: -0.75
+        source_url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        loaded_language:
+        - "flooding the market"
+        - "up in arms"
+        - "privacy lightning rod"
+        - "ire of privacy advocates"
+        - "capturing everything you see and hear"
+        - "constantly capture audio and visuals without notifying"
+        - "record a user throughout the day to assess their mood"
+        framing: 'Investigative adversarial — 7 distinct editorial-voice privacy alarm
+          terms, 78 lines. Institutional sources (ACLU attorney, 70+ orgs, patent filings).
+          Patent quoted to maximum alarm effect (mood surveillance imagery). Meta framed
+          as systematic privacy threat.'
+      - title: "'Someone is getting fired': Apple leaks clip of camera-equipped AI AirPods — spawning privacy concerns"
+        publication: New York Post
+        date: '2026-08-19'
+        reporter: unnamed
+        tone: -0.25
+        source_url: https://nypost.com/2026/08/19/tech/apple-leak-of-ai-airpods-with-camera-sparks-privacy-concerns/
+        loaded_language:
+        - "spawning privacy concerns"
+        - "surveillance shades"
+        framing: 'Tabloid entertainment — 2 editorial-voice privacy terms (37 lines).
+          Vox pop sources (X commenters). Lead is humor ("eye-pods"). Privacy concerns
+          presented as crowd noise, not institutional alarm. "Surveillance shades" in final
+          line applies to Apple N50 via Meta stigma import.'
+      asymmetry: 'WSJ gives Meta camera wearables 78-line investigative adversarial treatment
+        with 7 editorial alarm terms and institutional authority sourcing. NYPost gives Apple
+        camera wearables 37-line tabloid entertainment with 2 alarm terms and vox pop sourcing.
+        Same parent company (News Corp), same device category, same privacy concerns.'
     business_viability_framing:
       mechanism_id: 26
       finding_type: business_deficit_framing

@@ -1,5 +1,48 @@
 ---
 
+## Iteration #223 — Fri 2026-08-21 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Mechanism #214: News Corp Cross-Publication Camera Wearable Vocabulary Asymmetry
+
+**Type:** Competitor Coverage Deep Dive — News Corp (WSJ + NY Post)
+**Mechanism #214:** Same parent company, different camera wearable framing
+**Asymmetry Score:** 0.72
+**Entities:** Meta (adversarial investigative @ WSJ) vs Apple (entertained tabloid @ NY Post)
+
+**Core Discovery — Cross-Publication Vocabulary Gradient:**
+
+Two News Corp publications covered camera-equipped wearables within 36 days with radically different framing:
+
+| Dimension | WSJ (Jul 14, Meta glasses) | NY Post (Aug 19, Apple camera AirPods) |
+|-----------|---------------------------|--------------------------------------|
+| Headline frame | "Flooding the Market... Up in Arms" | "'Someone is getting fired'... spawning" |
+| Article depth | 78 lines, investigative | 37 lines, tabloid quick-hit |
+| Editorial alarm terms | 7 (flooding, lightning rod, ire, etc.) | 2 (spawning concerns, surveillance shades) |
+| Source authority | ACLU attorney, 70+ orgs, patent filings | X commenters (vox pop) |
+| Privacy verdict | Systematic threat | Crowd noise |
+| Lead frame | Adversarial ("AI-enabled smartglasses capable of capturing everything") | Entertainment ("They're both earpods and eye-pods") |
+
+**Key vocabulary differential:** WSJ editorial voice uses 3.5x more privacy alarm terms than NYPost editorial voice for the same device category.
+
+**Interesting nuance:** NYPost applies "surveillance shades" to Apple's FUTURE N50 glasses in final line — but via Meta stigma import ("will compete with the recording specs released by Mark Zuckerberg-led Meta"), not independent accusation.
+
+**Financial context:** News Corp has balanced AI licensing (Meta $50M/yr + OpenAI $50M/yr), Apple News+ revenue sharing, and Anthropic settlement revenue. Balanced financial relationships do not produce balanced editorial framing.
+
+**Confounders:**
+- **STRONG:** WSJ is broadsheet investigative; NYPost is tabloid — format explains depth but not vocabulary choice
+- **STRONG:** Meta has 7M+ shipped units with documented abuse; Apple AirPods haven't shipped
+- **MODERATE:** Different reporters/beats (Bobrowsky tech-privacy vs unnamed NYPost tech)
+- **MODERATE:** Different news pegs (product push vs accidental leak)
+- **WEAK:** 36-day temporal gap, intervening events
+
+**Sources:**
+- WSJ: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+- NY Post: https://nypost.com/2026/08/19/tech/apple-leak-of-ai-airpods-with-camera-sparks-privacy-concerns/
+
+**Test File:** tests/test_news_corp_cross_publication_camera_wearable_vocabulary_asymmetry_aug21.py (19 tests, 9 classes)
+
+---
+
 ## Iteration #222 — Fri 2026-08-21 11:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Mechanism #213: Vergecast Two-Episode Camera-Device Vocabulary Cascade (Aug 20-21, 2026)
