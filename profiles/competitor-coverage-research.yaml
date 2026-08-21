@@ -21743,4 +21743,47 @@ publications:
       confirms pattern: Apple camera wearable = aspirational title, Meta = adversarial description.
       Clearest single-variable natural experiment in MediaScope corpus.'
     test_count: 38
+  - mechanism_id: 209
+    name: 9to5Mac Happy Hour 604 Apple Camera AirPods Excitement Framing
+    type: E
+    discovery_date: '2026-08-21'
+    iteration: 217
+    publication: 9to5Mac (9to5 Network / 925 LLC)
+    entity: Apple (AirPods camera wearable)
+    asymmetry_score: 0.76
+    confounding_factors:
+    - '[STRONG] Apple cameras are low-resolution sensors for AI context, not 12MP
+      photo/video. Counter: privacy concern is about being OBSERVED, not photo quality.
+      AirPods cameras are LESS visible than glasses cameras.'
+    - '[MODERATE] Apple AirPods with camera not yet released (leak only). Counter:
+      Meta glasses received adversarial framing BEFORE 2023 launch.'
+    - '[MODERATE] 9to5Mac is explicitly Apple-ecosystem publication — bias expected.
+      Counter: this is precisely the point — financial relationships predict vocabulary.'
+    - '[WEAK] AirPods and glasses are different form factors. Counter: camera on body
+      + AI processing privacy concern is identical regardless of form factor.'
+    - '[WEAK] Apple privacy brand reputation gives them editorial benefit of doubt.
+      Counter: brand reputation should not determine journalism standards for identical
+      hardware capabilities.'
+    cross_references:
+    - 144  # Podcast Ecosystem Amplification
+    - 153  # Podcast Same-Episode Framing Asymmetry
+    - 173  # 9to5 Network Vocabulary Gradient
+    - 196  # UK Cinema Association piracy vector
+    - 200  # Phil Clapp natural experiment
+    - 205  # Apple Camera LED Double Standard
+    - 207  # WIRED triple-reporter silence
+    source_urls:
+    - https://9to5mac.com/2026/08/20/happy-hour-604/
+    - https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
+    - https://nypost.com/2026/08/19/tech/apple-leak-of-ai-airpods-with-camera-sparks-privacy-concerns/
+    - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+    - https://9to5mac.com/2026/08/19/camera-equipped-airpods-reportedly-wont-launch-in-2026-despite-demo-video-leak/
+    test_file: tests/test_type_e_06am_9to5mac_happy_hour_604_camera_airpods_excitement_framing_aug21.py
+    finding_summary: '9to5Mac Happy Hour #604 (Aug 20, 2026) covers Apple camera AirPods
+      leak with pure excitement framing ("crazy leak") during the same week Meta glasses
+      face UK cinema bans and school bans. TechCrunch provides cross-medium reinforcement
+      with preemptive "not pervert pods" defensive article. NY Post proves alarm framing
+      IS available for Apple but selectively suppressed by Apple-ecosystem outlets.'
+    test_count: 44
 research_period: 2024-08-01 to 2026-08-21
+
