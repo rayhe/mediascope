@@ -6030,3 +6030,61 @@ engineering receives ZERO words from the publication MOST qualified to evaluate 
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** ~17,461 tests across 505 files
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #217 — Fri 2026-08-21 06:00 PT (Type E: Podcast Sentiment Tracking)
+**Type:** E (Podcast Sentiment Tracking)
+**Mechanism:** #209 — 9to5Mac Happy Hour #604 Apple-Ecosystem Podcast Camera AirPods Excitement Framing
+
+### Discovery
+9to5Mac Happy Hour #604 (Aug 20, 2026) covers the Apple camera AirPods macOS Tahoe 26.7 RC
+leak with pure excitement framing ("crazy leak"), zero privacy alarm vocabulary, during the
+SAME WEEK Meta glasses face UK cinema bans (Aug 20) and Florida school district bans (Aug 15).
+
+Cross-medium reinforcement: TechCrunch Sarah Perez published same-day (Aug 18) defensive
+article "Why Apple's camera-equipped AirPods may not be the 'pervert pods' consumers fear"
+— preemptively distancing Apple from the label applied to Meta's functionally equivalent
+camera wearable.
+
+Control case: NY Post proves alarm framing IS available for Apple camera wearables
+("spawning privacy concerns," user quotes about "mass surveillance cameras"), but
+Apple-ecosystem outlets selectively suppress this vocabulary.
+
+Rare exception: Engadget Billy Steele ("I'm Already Dreading...") uses personal
+apprehension but softer vocabulary than Meta coverage. Credits Apple LED as "the least
+Apple could do" vs Meta's identical LED dismissed as "easy to cover."
+
+| Source | Entity | Vocabulary | Sentiment |
+|--------|--------|-----------|-----------|
+| 9to5Mac HH #604 | Apple AirPods | "crazy leak," "video demo" | Excitement |
+| TechCrunch (Perez) | Apple AirPods | "may not be pervert pods" | Defensive |
+| Engadget (Steele) | Apple AirPods | "already dreading" | Skeptical (rare) |
+| NY Post | Apple AirPods | "spawning privacy concerns" | Alarm |
+| UK Cinema Assoc | Meta glasses | "restricting," "piracy concerns" | Ban |
+| Fox 13 Tampa Bay | Meta glasses | "banning smart glasses" | Ban |
+
+### Changes
+1. **New test file:** `test_type_e_06am_9to5mac_happy_hour_604_camera_airpods_excitement_framing_aug21.py`
+   - 9 classes, 44 tests (all passing)
+   - Covers: episode metadata, excitement framing, TechCrunch defensive cross-medium,
+     same-week ban cascade contrast, Engadget rare skepticism, cross-medium vocabulary
+     suppression, NY Post control case, 5 confounders, mechanism metadata
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #209, asymmetry_score 0.76,
+     7 cross-references, 5 confounding factors
+   - `podcast-sentiment.md`: Entry #53 with full analysis, updated summary table
+
+3. **Doc sync:**
+   - README: Updated test count (17,669 across 512 files), added test file listing
+   - ARCHITECTURE: Added test file listing
+
+### Stats
+- **New test file:** 1 (44 tests, all passing)
+- **Mechanism ID:** #209
+- **Asymmetry score:** 0.76
+- **Cross-references:** 7 (#144, #153, #173, #196, #200, #205, #207)
+- **Confounders:** 5 (1 STRONG, 2 MODERATE, 2 WEAK)
+- **Test corpus:** ~17,669 tests across 512 files
+- **Pushed to GitHub:** ✓
