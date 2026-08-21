@@ -375,7 +375,7 @@ competitor_relationships:
         The silence is WSJ-specific and tied to beat assignment: Bobrowsky covers Meta,
         not Apple camera wearables. Apple News+ distribution dependency creates
         additional soft incentive against Apple privacy investigation.
-      confounders:
+      confounding_factors:
         - "Meta shipped 7M+ units with documented abuse; Apple AirPods are unreleased (STRONG)"
         - "3-day window may be too short; WSJ may publish later (MODERATE)"
         - "WSJ columnist Mims applied balanced entity framing to all companies (WEAK control)"

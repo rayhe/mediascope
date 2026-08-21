@@ -5195,15 +5195,15 @@ conde_nast_meta_reverse_personnel_flow:
     bring personal goodwill toward Meta OR may leverage Meta insider knowledge to compete more
     effectively for luxury ad budgets.'
   confounding_factors:
-    - 'STRONG: Individual career moves do not prove institutional editorial direction — Gressier
+    - '[STRONG] Individual career moves do not prove institutional editorial direction — Gressier
       controls revenue, not editorial, in France'
-    - 'STRONG: French luxury advertising is a distinct market from US tech coverage — Vogue France
+    - '[STRONG] French luxury advertising is a distinct market from US tech coverage — Vogue France
       editorial is about fashion, not technology'
-    - 'MODERATE: Gressier may maintain positive professional relationships with former Meta
+    - '[MODERATE] Gressier may maintain positive professional relationships with former Meta
       colleagues, creating a personal counter-incentive to adversarial coverage'
-    - 'MODERATE: The hire could reflect Condé Nast recruiting the best available luxury executive
+    - '[MODERATE] The hire could reflect Condé Nast recruiting the best available luxury executive
       regardless of Meta origin'
-    - 'WEAK: WIRED''s tech coverage is primarily US editorial — French CBO appointment may have
+    - '[WEAK] WIRED''s tech coverage is primarily US editorial — French CBO appointment may have
       limited influence on US tech journalism'
   asymmetry_score: 0.45
   finding_summary: 'First documented reverse personnel flow from Meta to Condé Nast. The hire of a
