@@ -21612,4 +21612,69 @@ publications:
     - https://www.hpcwire.com/off-the-wire/anthropic-signs-google-broadcom-deal-to-add-multi-gigawatt-tpu-capacity/
     - https://9to5google.com/2026/04/06/anthropic-inks-deal-with-google-to-power-claude-with-next-gen-tpus/
     test_file: tests/test_google_anthropic_circular_capital_publisher_content_subsidy_aug20.py
+  biometric_update_specialist_entity_selection_asymmetry:
+    mechanism_id: 204
+    date_added: '2026-08-20'
+    discovery_date: '2026-08-20'
+    type: A  # Competitor Coverage Deep Dive
+    mechanism: biometric_update_meta_patent_vs_apple_samsung_coverage_gap
+    overview: 'Biometric Update (biometricupdate.com), a SPECIALIST biometric/privacy trade publication,
+      applies dramatically asymmetric investigation intensity across smart glasses manufacturers.
+      Meta patent article (Aug 16): ~1,000 words, 7+ sections, investigative framing, references
+      patent US 2026/0238876 A1, NameTag, ROC biometrics licensing, $1.4B Texas BIPA settlement.
+      Apple article (Jul 26): ~200 words, 1 section, uncritical Bloomberg relay framing Apple as
+      "betting on privacy to distinguish from Meta." Samsung Galaxy Glasses: ZERO coverage despite
+      Samsung announcing ~10% of smart glasses patents relate to privacy/misuse prevention.
+
+      NOVEL CONTRIBUTION: First mechanism analyzing a SPECIALIST biometric trade publication
+      rather than general tech media. Shows Meta-as-privacy-threat framing has permeated even
+      publications whose entire editorial mission is biometric technology tracking. The Samsung
+      absence is particularly significant: a company that dedicated 10% of its patent portfolio
+      to privacy features receives zero coverage from the publication most qualified to evaluate
+      those features.
+
+      INVESTIGATION INTENSITY RATIO: Meta 1,000+ words : Apple 200 words : Samsung 0 words.
+      Vocabulary: Meta gets "reignites," "debate," "settlement," "litigation," "dormant."
+      Apple gets "bets on privacy," "distinguish," "safeguards." Samsung gets nothing.'
+    asymmetry_score: 0.79
+    entities:
+    - meta
+    - apple
+    - samsung
+    publication: biometricupdate.com
+    publication_type: specialist_biometric_trade
+    confounding_factors:
+    - '[STRONG] Meta patent describes OFFENSIVE biometric capability (facial recognition of
+      bystanders); Samsung patents describe DEFENSIVE features (anti-tampering). Offensive
+      capabilities inherently more alarming. However: Apple article also covers DEFENSIVE
+      measures — if defensive features are newsworthy for Apple, they should be for Samsung.'
+    - '[STRONG] Apple brand recognition and $3.5T market cap makes any product entry more
+      newsworthy than Samsung. Publication selection may reflect audience interest rather than
+      entity-specific bias.'
+    - '[MODERATE] Samsung Galaxy Glasses not yet shipped at time of Meta article (Aug 16).
+      Coverage may follow launch. However: Apple N50 is further from shipping (2027) and
+      still received coverage.'
+    - '[MODERATE] Apple article is Bloomberg relay (news brief), not original investigation.
+      May be routine aggregation rather than deliberate editorial choice.'
+    - '[WEAK] BiometricUpdate may have limited staff and simply has not covered Samsung smart
+      glasses privacy features yet. Resource constraints rather than editorial selection.'
+    cross_references:
+    - 39   # Samsung Galaxy Glasses coverage selection gap
+    - 42   # WIRED compound competitor silence
+    - 101  # Apple N50 privacy-hero cascade
+    - 136  # Gizmodo Apple N50 headline presupposition
+    - 196  # Digital Trends Apple N50 privacy-hero framing
+    - 199  # Condé Nast deal inventory coverage correlation
+    - 202  # Fall 2026 smart glasses financial incentive convergence index
+    source_urls:
+    - https://www.biometricupdate.com/202608/meta-smart-glasses-patent-reignites-facial-recognition-debate
+    - https://www.biometricupdate.com/202607/apple-bets-on-privacy-to-distinguish-smart-glasses-from-meta-report
+    - https://www.androidauthority.com/samsung-smart-glasses-privacy-durability-3691448/
+    - https://www.gsmarena.com/samsungs_smart_glasses_have_this_important_privacy_feature-news-73909.php
+    test_file: tests/test_biometric_update_meta_patent_entity_selection_asymmetry_aug20.py
+    finding_summary: 'Specialist biometric trade publication applies 5:1:0 investigation intensity
+      ratio (Meta:Apple:Samsung) to smart glasses privacy. The entity with the most documented
+      privacy patent investment (Samsung, 10% of portfolio) receives zero coverage from the
+      publication most qualified to evaluate biometric privacy engineering.'
+    test_count: 51
 research_period: 2024-08-01 to 2026-08-20

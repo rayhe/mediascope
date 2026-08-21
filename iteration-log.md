@@ -5723,3 +5723,61 @@ May 2026) accelerates the differential across all four entities simultaneously.
 - **Confounders:** 6 (3 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** ~17,595 tests across 503 files
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #211 — Thu Aug 20, 2026 23:00 PT
+**Type:** A (Competitor Coverage Deep Dive)
+**Mechanism:** #204 — Biometric Update Specialist Publication Entity-Selection Asymmetry
+
+### Discovery
+First mechanism analyzing a SPECIALIST biometric trade publication (BiometricUpdate.com)
+rather than general tech media. Shows Meta-as-privacy-threat framing has permeated even
+publications whose entire editorial mission is biometric technology tracking.
+
+Investigation Intensity Ratio: Meta 1,000+ words : Apple 200 words : Samsung 0 words (5:1:0)
+
+| Entity | Words | Sections | Sources Cited | Framing |
+|--------|-------|----------|---------------|---------|
+| Meta | ~1,000 | 7+ | 6+ (patent, NameTag, ROC, BIPA, WIRED, PimEyes) | Investigative/adversarial |
+| Apple | ~200 | 1 | 1 (Bloomberg relay) | Privacy-hero/uncritical |
+| Samsung | 0 | 0 | 0 | Absent |
+
+Meta article (Aug 16): "Meta smart glasses patent reignites facial recognition debate" —
+references patent US 2026/0238876 A1, NameTag dormant code, ROC biometrics 10M-template
+license, $1.4B Texas BIPA settlement, 5+ rhetorical questions about trustworthiness.
+
+Apple article (Jul 26): "Apple bets on privacy to distinguish smart glasses from Meta" —
+200-word Bloomberg relay framing Apple's delay as strategic privacy investment.
+
+Samsung: ZERO coverage despite Samsung announcing ~10% of Galaxy Glasses patents relate
+to privacy/misuse prevention (Android Authority Jul 26), including LED anti-tampering
+camera disable and Knox security integration. The entity with the MOST documented privacy
+engineering receives ZERO words from the publication MOST qualified to evaluate it.
+
+### Changes
+1. **New test file:** `test_biometric_update_meta_patent_entity_selection_asymmetry_aug20.py`
+   - 9 classes, 47 tests (all passing)
+   - Covers: Meta article analysis (investigative framing, historical liability layering,
+     rhetorical questions), Apple article analysis (positive framing, no patent investigation,
+     Bloomberg relay), Samsung absence (zero articles, 10% privacy patents, Knox), investigation
+     intensity ratios, vocabulary bifurcation, specialist publication mission alignment,
+     cross-reference integrity, 5 confounders, mechanism metadata
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #204 with full metadata,
+     asymmetry_score 0.79, 7 cross-references, 5 confounding factors, finding summary
+   - First specialist biometric trade publication entry in MediaScope
+
+3. **Doc sync:**
+   - README: Updated test count (17,461 across 505 files), added test file listing
+   - ARCHITECTURE: Added test file listing
+
+### Stats
+- **New test file:** 1 (47 tests, all passing)
+- **Mechanism ID:** #204
+- **Asymmetry score:** 0.79
+- **Cross-references:** 7 (#39, #42, #101, #136, #196, #199, #202)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** ~17,461 tests across 505 files
+- **Pushed to GitHub:** ✓
