@@ -1,5 +1,111 @@
 ---
 
+## Iteration #224 — Fri 2026-08-21 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #215: Mia Sato (The Verge / PMX / PMC) Same-Journalist Camera-Product Vocabulary Bifurcation
+
+**Type:** Journalist Cross-Entity Tracking — Same-Journalist Three-Entity Vocabulary Natural Experiment
+**Mechanism #215:** Camera-Product Vocabulary Bifurcation — Meta adversarial, Google aspirational, OpenAI adversarial
+**Asymmetry Score:** 0.78
+**Entities:** Meta (adversarial), Google (aspirational), OpenAI (adversarial)
+**Publication:** The Verge (PMX / PMC)
+**Reporter:** Mia Sato (Feature Writer, platforms/communities beat)
+
+**Core Discovery — Same-Journalist Camera-Product Vocabulary Gradient (9-day window, Aug 2026):**
+
+Mia Sato produced coverage of three tech companies' camera/AI products within a 9-day window with radically different editorial vocabulary:
+
+| Article | Entity | Headline | Tone | Privacy Terms | Date |
+|---------|--------|----------|------|---------------|------|
+| Meta glasses | Meta | "Meta glasses are a workplace menace" | -8 (adversarial) | 7+ | ~Aug 14, 2026 |
+| Pixel 11 Creator Suite | Google | "Google aims for influencers with the Pixel 11 Creator Suite" | +3 (aspirational) | 0 | Aug 12, 2026 |
+| OpenAI influencer trip | OpenAI | "How an OpenAI influencer trip backfired" | -5 (adversarial) | 0 | Aug 4, 2026 |
+
+**KEY ANALYTICAL INSIGHT — Personal Editorial Voice Signal:**
+
+The Verge's annual summer "in and out" list includes each reporter's PERSONAL picks (not editor-assigned). Mia Sato's selections:
+
+| IN | OUT |
+|----|-----|
+| Motion sickness glasses | AI "pervert" glasses |
+| Fiber | Protein |
+| Bootleg sports merch | Official tech company merch |
+| Floating in water | Touching grass |
+
+The OUT column entry "AI 'pervert' glasses" is significant for three reasons:
+1. **Personal voice, not assignment:** Unlike articles which could be editor-assigned, the in/out list is personal editorial stance
+2. **Generic "AI" modifier:** Uses "AI" not "Meta" — broadening stigma from brand-specific to category-level
+3. **"Pervert glasses" vocabulary:** Adopts and normalizes the most adversarial possible framing as default category term
+
+**Camera-Product Privacy Double Standard:**
+
+Both Meta glasses and Google Pixel 11 Creator Suite record people and environments:
+
+| Feature | Meta Ray-Ban | Pixel 11 Creator Suite |
+|---------|-------------|----------------------|
+| Records people | Yes (12MP camera) | Yes (teleprompter, social media frame guides) |
+| Records environments | Yes (video/photo) | Yes (Camera Looks, AI processing) |
+| Designed for sharing | Yes (Instagram/Facebook) | Yes (social media frame guides) |
+| Privacy vocabulary applied | 7+ terms | 0 terms |
+| Headline framing | "workplace menace" | "aims for influencers" |
+
+**Vocabulary Propagation — Downstream Media Adoption:**
+
+Sato's framing was adopted as authoritative by downstream outlets:
+- fiercebymitu.com: "Can You Actually Protect Yourself from the 'Pervert Glasses'?" — directly quotes Sato's reporting, adopts her vocabulary
+- mlq.ai: Cites The Verge (Sato) as authority on Instagram glasses harassment enforcement
+- Apple reportedly delaying smart glasses partly to avoid "pervert glasses" label — Sato's vocabulary is shaping competitor product strategy
+
+**Cross-Medium Amplification Asymmetry:**
+
+The Meta "menace" article received maximum PMX/Vox Media cross-medium amplification:
+- #1 Most Popular on The Verge
+- Cited in Vergecast pre-show (Aug 20-21)
+- Listed in Vergecast "further reading"
+- Amplified by NextDraft newsletter
+- Amplified by AI-RTZ newsletter
+- "metaglasses" used as compound noun (brand = category)
+
+The Google "Creator Suite" article received standard single-platform publication with no comparable amplification.
+
+**Financial Incentive Context:**
+
+Google is The Verge's primary:
+- Traffic distribution source (Google Search, Google News, Google Discover)
+- Programmatic ad revenue source (AdSense, Ad Manager, AdX)
+- Platform dependency (Android app distribution)
+
+Meta/Facebook ($243.46B ad revenue 2026, eMarketer) surpassed Google ($239.54B) as #1 global digital ad platform. Adversarial Meta camera coverage + aspirational Google camera coverage both serve Google's competitive advertising interest — which is also The Verge's financial interest.
+
+**Confounders:**
+- **STRONG:** Meta has 7M+ shipped face-worn camera glasses with documented filming abuse; Google Pixel 11 is a phone, not face-worn camera
+- **STRONG:** Glasses vs phone are fundamentally different form factors with genuinely different privacy dynamics
+- **MODERATE:** Sato's platforms beat naturally covers Meta/Instagram governance; Pixel 11 is product feature coverage (different genre, but genre is a CHOICE)
+- **MODERATE:** Meta glasses have multiple documented harassment cases; no comparable Pixel 11 Creator Suite abuse documented
+- **WEAK:** Different article genres partially explain tone, but genre assignment is itself an editorial choice
+
+**Cross-References:** Mechanisms #158, #190, #213, #214
+
+### New Test File
+- `test_mia_sato_cross_entity_camera_product_vocabulary_bifurcation_aug21.py` — 9 classes, 37 tests:
+  - `TestMiaSatoCrossEntityMechanismRegistration` — mechanism registered, required fields, score range
+  - `TestSameJournalistThreeEntityFraming` — 3 entities, vocabulary gradient, temporal proximity
+  - `TestCameraProductPrivacyVocabularyAsymmetry` — Meta privacy terms vs Google zero, both record people
+  - `TestSummerInOutListSignal` — personal editorial voice, "AI pervert glasses" in OUT, generic AI modifier
+  - `TestVocabularyPropagation` — downstream adoption, category stigma, Google escapes
+  - `TestCrossMediumAmplification` — #1 Most Popular, Vergecast, newsletters, asymmetric amplification
+  - `TestFinancialIncentiveContext` — Google traffic/ad dependency, Meta as Google competitor
+  - `TestConfounders` — 2 STRONG, 2 MODERATE, 1 WEAK
+  - `TestCorpusIntegrity` — aug21 count, total files, mechanism uniqueness
+
+### Stats
+- **Tests:** 37 new (all passing), 519 total test files
+- **Mechanism:** #215 registered in competitor-coverage-research.yaml
+- **Profiles updated:** competitor-coverage-research.yaml (mechanism #215), journalists.yaml (Mia Sato competitor_coverage section)
+- **Sources:** Muck Rack, InfoReader, Arc Codex, fiercebymitu.com, Vergecast analysis (mechanism #213)
+
+---
+
 ## Iteration #223 — Fri 2026-08-21 12:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Mechanism #214: News Corp Cross-Publication Camera Wearable Vocabulary Asymmetry

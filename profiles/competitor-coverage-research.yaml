@@ -22160,5 +22160,82 @@ publications:
       treatment across publications. Two STRONG confounders (format difference, shipped
       vs unreleased product).'
     test_count: 19
+  mia_sato_cross_entity_camera_product_vocabulary_bifurcation:
+    mechanism_id: 215
+    name: Mia Sato Same-Journalist Camera-Product Vocabulary Bifurcation
+    type: B
+    discovery_date: '2026-08-21'
+    iteration: 224
+    overview: 'Within a 9-day window (Aug 4-13+, 2026), Mia Sato produced coverage
+      of three tech companies with radically different editorial vocabulary. Meta Ray-Ban
+      glasses (12MP camera, 7M+ shipped) get "workplace menace" headline, adversarial
+      framing with service worker testimonials, and "pervert glasses" in her personal
+      summer in/out list. Google Pixel 11 Creator Suite (camera system explicitly designed
+      for recording people) gets "Google aims for influencers" headline, aspirational
+      framing, zero privacy vocabulary. OpenAI influencer trip gets "backfired" adversarial
+      framing. The camera-product asymmetry is the core finding: both Meta glasses and
+      Google Pixel 11 record people and environments, but only Meta receives privacy
+      stigma. Google, as the primary ad revenue and traffic distribution source for
+      publishers including The Verge (PMX/PMC), benefits from this asymmetry. Sato''s
+      summer in/out list (personal editorial voice, not editor-assigned) encodes Meta
+      glasses as "AI pervert glasses" in the OUT column, using generic "AI" to broaden
+      stigma to the category while the vocabulary originates exclusively with Meta
+      products. Downstream media (fiercebymitu.com, mlq.ai) adopt Sato''s vocabulary
+      as authoritative, creating industry-wide terminology propagation. Cross-medium
+      amplification: the "menace" article became The Verge #1 Most Popular, cited in
+      Vergecast preshow, amplified by NextDraft and AI-RTZ newsletters. Two STRONG
+      confounders (form factor difference — face-worn vs handheld, Meta''s documented
+      abuse cases vs no Pixel 11 Creator Suite abuse) moderate causal claims.'
+    publication: The Verge (PMX / PMC)
+    entity: Meta (adversarial) vs Google (aspirational) vs OpenAI (adversarial)
+    asymmetry_score: 0.78
+    confounders:
+    - description: 'Meta has 7M+ shipped face-worn camera glasses with documented
+        filming abuse (pickup artists, workplace pranks). Google Pixel 11 is a phone,
+        not face-worn camera. Genuinely different privacy dynamics — always-visible
+        face-worn camera vs handheld device user chooses to point.'
+      strength: STRONG
+    - description: 'Glasses vs phone are fundamentally different form factors.
+        Face-worn camera creates ambient surveillance concern that a handheld phone
+        camera does not. This is a legitimate editorial distinction.'
+      strength: STRONG
+    - description: 'Sato is a platforms/communities reporter whose beat naturally
+        covers Meta/Instagram governance issues. The Pixel 11 Creator Suite article
+        is product feature coverage — different genre. But genre is a CHOICE:
+        the journalist/editor chose adversarial genre for Meta, aspirational genre
+        for Google.'
+      strength: MODERATE
+    - description: 'Meta glasses have multiple documented harassment cases from
+        service workers, women in public spaces, and viral prank videos. No comparable
+        Pixel 11 Creator Suite abuse cases documented.'
+      strength: MODERATE
+    - description: 'Different article genres (investigative feature vs product
+        announcement) partially explain tone differences. But genre assignment is
+        itself an editorial choice that concentrates adversarial framing on specific
+        entities.'
+      strength: WEAK
+    cross_references:
+    - 158  # Multi-vector cultural delegitimization cascade
+    - 190  # Vox Media podcast network cross-medium privacy portability
+    - 213  # Vergecast two-episode camera vocabulary cascade
+    - 214  # News Corp cross-publication camera wearable vocabulary asymmetry
+    source_urls:
+    - https://muckrack.com/miasato/articles
+    - https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC
+    - https://arc-codex.com/article/4f9d85a7173e165b47b494bb453e99d3
+    - https://www.fiercebymitu.com/p/can-you-actually-protect-yourself
+    test_file: tests/test_mia_sato_cross_entity_camera_product_vocabulary_bifurcation_aug21.py
+    finding_summary: 'Mia Sato (The Verge) produces adversarial "workplace menace"
+      framing for Meta camera glasses and aspirational "Creator Suite" framing for
+      Google Pixel 11 cameras within a 9-day window. Same journalist, same month,
+      radically different vocabulary for camera products. Her personal summer in/out
+      list encodes Meta glasses as "AI pervert glasses" (OUT column). Google escapes
+      the privacy stigma entirely despite Pixel 11 Creator Suite features (teleprompter,
+      social media frame guides) being explicitly designed for recording people.
+      Downstream media adopt Sato''s "pervert glasses" vocabulary as industry terminology.
+      Google is The Verge''s primary ad revenue and traffic distribution source; Meta
+      is Google''s primary advertising competitor. Two STRONG confounders (form factor
+      difference, documented Meta abuse cases).'
+    test_count: 38
 research_period: 2024-08-01 to 2026-08-21
 

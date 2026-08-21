@@ -13244,6 +13244,43 @@ journalists:
   - https://talkingbiznews.com/media-news/stat-news-sato-of-the-verge-recognized-by-asme/
   - https://asme.memberclicks.net/asme-presents-60th-annual-national-magazine-awards
   - https://journalism.wisc.edu/three-questions-for-mia-sato-17/
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 215
+      pattern: camera_product_vocabulary_bifurcation
+      description: 'Within a 9-day window (Aug 4-13+, 2026), produced adversarial "workplace
+        menace" framing for Meta camera glasses and aspirational "Creator Suite" framing for
+        Google Pixel 11 cameras. Same journalist, same month, radically different vocabulary
+        for camera products. Her personal summer in/out list encodes Meta glasses as "AI pervert
+        glasses" (OUT column), while Google camera products receive zero privacy vocabulary.
+        Also covered OpenAI adversarially ("How an OpenAI influencer trip backfired," Aug 4).
+        KEY ANALYTICAL NUANCE: Unlike beat-assignment mechanisms (#198), Sato''s vocabulary
+        bifurcation exists at the personal editorial level — her summer in/out list is personal
+        voice, not editor-assigned. She self-selects to apply adversarial vocabulary to Meta and
+        aspirational vocabulary to Google. This makes the finding stronger than editorial-routing
+        mechanisms: the vocabulary differential reflects the journalist''s own editorial stance,
+        not just assignment patterns. Downstream media (fiercebymitu.com, mlq.ai) adopt her
+        framing as authoritative, creating vocabulary propagation.'
+      meta_coverage:
+        title: "Meta glasses are a workplace menace"
+        date: '2026-08-14'
+        publication: the-verge
+        tone: -8
+        privacy_terms: 7
+        amplification: '#1 Most Popular on The Verge, Vergecast, NextDraft, AI-RTZ'
+      google_coverage:
+        title: "Google aims for influencers with the Pixel 11 Creator Suite"
+        date: '2026-08-12'
+        publication: the-verge
+        tone: +3
+        privacy_terms: 0
+        amplification: 'Standard publication'
+      openai_coverage:
+        title: "How an OpenAI influencer trip backfired"
+        date: '2026-08-04'
+        publication: the-verge
+        tone: -5
+        amplification: 'Standard publication'
 - career:
   - beat: biomedical engineering, brain-computer interfaces
     end: '2021'
