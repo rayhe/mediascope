@@ -1,5 +1,33 @@
 ---
 
+## Iteration #216 — Fri 2026-08-21 05:00 PT (Type D: Test & Verify)
+
+### Fixes Applied
+
+**Fix 1: YAML Parse Error in competitor-coverage-research.yaml**
+- **Root cause:** Mechanism #205 (apple_camera_wearable_led_indicator_double_standard) was formatted as a YAML list item (`- mechanism_id: 205`) within the `publications:` mapping. The `publications:` key is a mapping (dict), not a sequence (list), so the list syntax caused a `yaml.parser.ParserError` that blocked the entire test suite.
+- **Fix:** Converted to mapping entry using the mechanism name as key (`apple_camera_wearable_led_indicator_double_standard:`), matching the format of mechanisms #201-204 which were also placed in the publications section during prior iterations.
+- **Impact:** Unblocked all ~18,833 tests. The YAML error was introduced in iteration #213 (Type E, 01:00 AM).
+
+**Fix 2: Anthropic publisher_deals_note Missing Indirect Reference**
+- **Root cause:** The Anthropic `publisher_deals_note` in competitor-entities.yaml stated coverage softness appeared driven by "safety brand positioning rather than direct financial incentives" but never mentioned *indirect* financial paths. Test `test_anthropic_ipo_investor_publisher_triangle_aug9.py::TestCorrectedNeutralityClaim::test_new_claim_references_triangle` requires either 'investor_advertiser_publisher_triangle' or 'indirect' in the note.
+- **Fix:** Added reference to indirect financial paths via Google's $40B Anthropic investment and the investor_advertiser_publisher_triangle mechanism (circular capital flows where publisher content subsidies are an incidental byproduct of cloud computing arrangements).
+- **Impact:** 1 test fixed (40/40 passing in that file).
+
+**Fix 3: Doc Count Sync (ARCHITECTURE.md + README.md)**
+- **Root cause:** Both docs stated 512 test files / 18,776 tests, but actual count was 510 (now 511 with new cross-validation file). Two test files were apparently removed in prior iterations without doc updates.
+- **Fix:** Updated to 511 files / 18,833 tests.
+- **Impact:** 2 tests fixed in test_type_d_midnight_cross_validation_aug21.py.
+
+### Stats
+- **New test file:** `test_type_d_05am_cross_validation_aug21.py` — 4 classes, 17 tests (all passing)
+- **Files modified:** 5 (competitor-coverage-research.yaml, competitor-entities.yaml, ARCHITECTURE.md, README.md, new test)
+- **Tests fixed:** 3 failures → 0 failures
+- **Test corpus:** ~18,833 tests across 511 files
+- **Pushed to GitHub:** Yes
+
+---
+
 ## Iteration #215 — Fri 2026-08-21 04:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #208: Condé Nast CRO Career Migration → Snap Personnel Financial Incentive Architecture
