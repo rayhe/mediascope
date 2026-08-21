@@ -21677,7 +21677,8 @@ publications:
       privacy patent investment (Samsung, 10% of portfolio) receives zero coverage from the
       publication most qualified to evaluate biometric privacy engineering.'
     test_count: 51
-  - mechanism_id: 205
+  apple_camera_wearable_led_indicator_double_standard:
+    mechanism_id: 205
     date_added: '2026-08-21'
     discovery_date: '2026-08-21'
     type: E  # Podcast Sentiment Tracking
