@@ -1,5 +1,42 @@
 ---
 
+## Iteration #221 — Fri 2026-08-21 10:00 PT (Type D: Test & Verify)
+
+### Fixes Applied
+
+**1. Missing `overview` field on mechanisms #209-#212:**
+Mechanisms added in iterations #217-#220 (today) were all missing the required `overview` field in `competitor-coverage-research.yaml`. The cross-validation test from iteration #216 caught this: `TestMechanismContinuity.test_recent_mechanisms_have_required_fields` asserts `overview` on all mechanisms >= 201. Added concise overviews to all four:
+- **#209** (9to5Mac Happy Hour 604 excitement framing)
+- **#210** (TechCrunch Sarah Perez three-entity reputation shield)
+- **#211** (James Pero Gizmodo three-entity privacy vocabulary gradient)
+- **#212** (Apple Q3 2026 advertising-Siri AI compound financial capture)
+
+**2. Missing `name` field on mechanism #205:**
+Mechanism #205 (Apple Camera LED Double Standard) had a `mechanism` key but no `name` field, failing `test_all_recent_have_required_fields`. Added `name: Apple Camera Wearable LED Indicator Double Standard`.
+
+**3. Mechanism ID gap #206-#208 in central registry:**
+Mechanisms #206 (WSJ Apple camera silence), #207 (WIRED triple-reporter silence), and #208 (Condé Nast CRO career migration) existed in publication-specific profiles (`news-corp.yaml`, `wired.yaml`) but were NOT registered in `competitor-coverage-research.yaml` — creating a gap (205→209) in the mechanism ID sequence. Added all three to the central `publications` section with full structure (overview, asymmetry_score, confounders, cross-references, test_file, test_count).
+
+**4. advocacy-coalitions.yaml YAML parse error:**
+`shared_signatories` list had an indented `notes:` key at the same level as list items, causing a YAML parse error (`expected <block end>, but found '?'`). Renamed to `shared_signatories_notes` at the mapping level.
+
+### New Test File
+- `test_type_d_10am_cross_validation_aug21.py` — 6 classes, 22 tests:
+  - `TestOverviewFieldFix` — validates #209-#212 have non-trivial overviews distinct from finding_summary
+  - `TestRecentMechanismStructure` — all mechanisms >= 205 have required fields, valid score range, 2026 dates, severity-labeled confounders
+  - `TestMechanismContinuity` — no ID gaps from 200+, highest is #212, types match A/B/C/D/E rotation
+  - `TestThreeEntityCameraPattern` — #210/#211 three-entity entries have all entities, scores >= 0.85, 3+ cross-refs
+  - `TestCorpusIntegrity` — >= 10 aug21 files exist, all referenced test_files exist, >= 516 total test files
+  - `TestYAMLIntegrity` — all profile YAML files parse cleanly
+
+### Stats
+- **Tests:** 22 new (all passing), 367 aug21 tests passing, 19,000+ corpus
+- **Files:** 516 test files (updated from 515)
+- **Fixes:** 4 structural issues (overview fields, name field, ID gap, YAML parse)
+- **Profiles fixed:** competitor-coverage-research.yaml, advocacy-coalitions.yaml
+
+---
+
 ## Iteration #220 — Fri 2026-08-21 09:00 PT (Type C: Financial Incentive Mapping)
 
 ### Mechanism #212: Apple Q3 2026 Advertising-Siri AI Compound Publisher Financial Capture Timing

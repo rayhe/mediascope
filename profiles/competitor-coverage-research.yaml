@@ -21682,6 +21682,7 @@ publications:
     date_added: '2026-08-21'
     discovery_date: '2026-08-21'
     type: E  # Podcast Sentiment Tracking
+    name: Apple Camera Wearable LED Indicator Double Standard
     mechanism: apple_camera_wearable_led_indicator_double_standard
     overview: 'Apple Camera Wearable LED Indicator Double Standard — Same Privacy Safeguard,
       Different Entity, Different Editorial Evaluation. DTNS #5334 (Aug 18, 2026) provides
@@ -21743,12 +21744,98 @@ publications:
       confirms pattern: Apple camera wearable = aspirational title, Meta = adversarial description.
       Clearest single-variable natural experiment in MediaScope corpus.'
     test_count: 38
+  wsj_apple_camera_airpods_leak_coverage_selection_silence:
+    mechanism_id: 206
+    name: WSJ Apple Camera AirPods Leak Coverage Selection Silence
+    type: A
+    discovery_date: '2026-08-21'
+    iteration: 218
+    overview: 'Apple leaked a camera AirPods demo video in macOS Tahoe 26.7 RC on Aug 18,
+      2026 (4.6M views on X, 9+ publications covered). WSJ published ZERO coverage in 3+
+      days, despite Bobrowsky publishing a 2,500+ word privacy investigation of Meta
+      equivalent glasses just 5 weeks earlier. NY Post (same News Corp parent) DID cover
+      the Apple leak. WSJ silence is beat-assignment specific and aligned with Apple News+
+      distribution dependency.'
+    publication: Wall Street Journal (News Corp)
+    entity: Apple (AirPods camera), Meta (Ray-Ban glasses)
+    asymmetry_score: 0.78
+    confounding_factors:
+    - '[STRONG] Meta shipped 7M+ units with documented abuse; Apple AirPods are unreleased'
+    - '[MODERATE] 3-day window may be too short; WSJ may publish later'
+    - '[WEAK] WSJ columnist Mims applied balanced entity framing to all companies'
+    cross_references:
+    - 49  # Bobrowsky entity targeting
+    - 155  # Cross-publication brand stigma
+    - 190  # Verge Apple triple camera vocabulary zero
+    - 205  # Apple camera wearable LED double standard
+    source_urls:
+    - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+    - https://nypost.com/2026/08/19/tech/apple-leak-of-ai-airpods-with-camera-sparks-privacy-concerns/
+    test_file: tests/test_wsj_apple_camera_airpods_leak_coverage_selection_silence_aug21.py
+    test_count: 22
+  wired_triple_reporter_apple_camera_airpods_leak_coverage_silence:
+    mechanism_id: 207
+    name: WIRED Wearables Desk Triple-Reporter Apple Camera AirPods Leak Coverage Selection Silence
+    type: A
+    discovery_date: '2026-08-21'
+    iteration: 218
+    overview: 'Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 18, 2026) received zero
+      WIRED coverage in 3+ days. Three WIRED wearables reporters — Boone Ashworth, Julian
+      Chokkattu, Adrienne So — all silent, despite WIRED publishing "Why Apple Might Put
+      Cameras Into Its Next AirPods" in June under AI vertical. Pattern: cover Apple camera
+      wearables in abstract/rumor phase, go silent in concrete/evidence phase. 9+ non-WIRED
+      outlets covered the leak.'
+    publication: WIRED (Condé Nast / Advance Publications)
+    entity: Apple (AirPods camera)
+    asymmetry_score: 0.82
+    confounding_factors:
+    - '[STRONG] AirPods cameras are low-resolution CV sensors, not 12MP photo/video'
+    - '[MODERATE] WIRED may be preparing a longer investigative piece'
+    - '[WEAK] August editorial calendar may be lighter than normal'
+    cross_references:
+    - 205  # Apple camera LED double standard
+    - 206  # WSJ Apple camera silence
+    source_urls:
+    - https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/
+    test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
+    test_count: 40
+  conde_nast_cro_career_migration_snap_personnel_financial_architecture:
+    mechanism_id: 208
+    name: Condé Nast CRO Career Migration — Snap Personnel Financial Incentive Architecture
+    type: B
+    discovery_date: '2026-08-21'
+    iteration: 218
+    overview: 'Elizabeth Herbst-Brady, Condé Nast CRO since Sep 2024, previously held two
+      senior roles at Snap Inc. (Head of Global Strategic Partnerships, Head of East Coast
+      Ad Sales). As CRO she controls ALL revenue diversification: advertising, events,
+      subscriptions, commerce, and AI licensing deals. Creates a personnel-level career
+      migration incentive: the executive controlling WIRED parent revenue strategy has deep
+      Snap career history, while Meta has ZERO personnel or financial ties to Condé Nast.
+      Snap consumer Spectacles launch Sep 16, 2026 provides natural experiment.'
+    publication: WIRED (Condé Nast / Advance Publications)
+    entity: Snap (Spectacles), Meta (Ray-Ban glasses)
+    asymmetry_score: 0.72
+    confounding_factors:
+    - '[STRONG] Editorial independence policies nominally insulate newsroom from CRO decisions'
+    - '[MODERATE] Career migration is indirect — Herbst-Brady left Snap years ago'
+    - '[WEAK] CRO role is revenue, not editorial direction'
+    cross_references:
+    - 207  # WIRED triple-reporter silence
+    - 205  # Apple camera LED double standard
+    test_file: tests/test_conde_nast_cro_career_migration_snap_personnel_financial_architecture_aug21.py
+    test_count: 14
   9to5mac_happy_hour_604_camera_airpods_excitement_framing:
     mechanism_id: 209
     name: 9to5Mac Happy Hour 604 Apple Camera AirPods Excitement Framing
     type: E
     discovery_date: '2026-08-21'
     iteration: 217
+    overview: '9to5Mac Happy Hour #604 (Aug 20, 2026) covers Apple camera AirPods leak
+      with pure excitement framing ("crazy leak") during the same week Meta glasses face
+      UK cinema bans and school bans. NY Post proves alarm framing IS available for Apple
+      hardware but is selectively suppressed by Apple-ecosystem outlets. Cross-medium
+      reinforcement via TechCrunch "not pervert pods" defensive article. Same camera
+      capability, opposite editorial evaluation based on entity.'
     publication: 9to5Mac (9to5 Network / 925 LLC)
     entity: Apple (AirPods camera wearable)
     asymmetry_score: 0.76
@@ -21792,6 +21879,12 @@ publications:
     type: A
     discovery_date: '2026-08-21'
     iteration: 218
+    overview: 'Sarah Perez produced coverage of three camera-equipped AI wearables within
+      88 days: Google AI glasses (May 22, neutral +0.75, zero privacy alarm terms), Meta
+      AI glasses (Jul 8, adversarial -0.80, 25+ alarm terms), Apple camera AirPods (Aug 18,
+      defensive +0.60, "may not be pervert pods"). Same journalist, same hardware category,
+      three opposite framings aligned to TechCrunch/Yahoo/Apollo financial relationships.
+      Strongest same-journalist cross-entity natural experiment in corpus.'
     publication: TechCrunch (Yahoo / Apollo Global Management)
     entity: Apple (AirPods camera), Google (AI glasses), Meta (Ray-Ban glasses)
     asymmetry_score: 0.88
@@ -21832,6 +21925,13 @@ publications:
     type: B
     discovery_date: '2026-08-21'
     iteration: 219
+    overview: 'James Pero (Gizmodo) covers three camera-equipped AI wearables with maximally
+      asymmetric framing: Apple AirPods (May 2026, zero privacy alarm terms, "exciting,"
+      aspirational), Google AI glasses (Jan 2026, redemption narrative, "learned from Glass"),
+      Meta Ray-Ban glasses (Jul 2026, 25+ alarm terms, recidivism framing, embedded in
+      permanent privacy transgression). Score 1.0 — perfect asymmetry from a single journalist.
+      Financial gradient matches: Gizmodo parent Keleops AG has zero Meta financial
+      relationships.'
     publication: Gizmodo (Keleops AG)
     entity: Apple (AirPods camera), Google (AI glasses), Meta (Ray-Ban glasses)
     journalist: James Pero
@@ -21879,6 +21979,12 @@ publications:
     type: C
     discovery_date: '2026-08-21'
     iteration: 220
+    overview: 'Apple maintains three simultaneous publisher financial channels — News+
+      revenue sharing, Siri AI content licensing ($100M+ budget), and advertising platform
+      (~$8.5B est. 2026) — all converging within an 18-day window preceding the camera
+      AirPods coverage test. SEC Q3 10-Q shows advertising rising in Services growth drivers.
+      Meta has zero publisher financial channels. Condé Nast is exposed across all three
+      Apple channels yet discloses none when covering camera wearables.'
     publication: Cross-publication (Apple financial architecture with Condé Nast, News Corp, Vox Media, The Atlantic)
     entity: Apple (advertising + Siri AI + News+) vs Meta (zero financial channels)
     asymmetry_score: 0.82

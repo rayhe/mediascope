@@ -84,10 +84,10 @@ shared_signatories:
   - "EPIC"
   - "Fight for the Future"
   - "Access Now"  # Probable — confirmed in ACLU, listed in coverage as anti-Meta
-  notes: >
-    Significant overlap between the two coalition letters indicates shared advocacy
-    infrastructure. EPIC, Fight for the Future, and Access Now appear on both letters,
-    suggesting they function as "hub nodes" connecting different coalition-building efforts.
+shared_signatories_notes: >
+  Significant overlap between the two coalition letters indicates shared advocacy
+  infrastructure. EPIC, Fight for the Future, and Access Now appear on both letters,
+  suggesting they function as "hub nodes" connecting different coalition-building efforts.
 
 # ----- KEY INDIVIDUALS -----
 
