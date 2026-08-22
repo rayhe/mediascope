@@ -1,5 +1,53 @@
 ---
 
+## Iteration #230 — Fri 2026-08-21 19:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #220: Yahoo (Apollo) Apple Siri AI Camera AirPods Revenue Pipeline — Compound Coverage Incentive Architecture**
+
+Four-layer financial incentive chain connecting Yahoo/Apollo ownership to Engadget's measured coverage asymmetry on Apple vs Meta camera wearables:
+
+### Financial Architecture
+
+**Layer 1 — Existing Apple iOS Content Partnership (13+ years):**
+Yahoo has provided weather, stocks, and sports data to Apple's iOS/Siri since at least 2013 (WSJ "deeper iOS integration" talks). Ongoing revenue relationship.
+
+**Layer 2 — Apple Siri AI Content Deals (WSJ, Aug 12, 2026):**
+Apple is negotiating nine-figure multiyear content deals with publishers using VARIABLE per-use compensation — publishers get paid when Siri AI draws on their content. Unlike OpenAI/Google/Amazon fixed-fee models, this ties publisher revenue DIRECTLY to Siri AI usage volume.
+
+**Layer 3 — Camera AirPods as Siri AI Visual Query Multiplier:**
+Apple's camera-equipped AirPods Pro 4 (confirmed via macOS 26.7 RC leak, Aug 18) feed visual data to Siri AI "Visual Intelligence." Each visual query = potential publisher payment event. Camera AirPods are the primary consumer device driving Siri AI visual query volume.
+
+**Layer 4 — Apollo Apple Equity Holdings:**
+Apollo-affiliated entities (Apollon Wealth Management) held $231M in Apple stock as of Q4 2024 — Apple was their 2nd-largest holding at 3.8% of portfolio.
+
+### Coverage Evidence
+
+**Engadget Apple AirPods Camera (Billy Steele, May 2026):**
+- Headline: "I'm Already Dreading" — personal apprehension, not institutional alarm
+- Body: "Intriguingly, they may also be able to remind you of objects" — aspirational
+- Privacy concern ROUTED THROUGH META: "privacy-focused users who've already written off Meta's smart glasses"
+- LED indicator positioned as adequate: "which is the least Apple could do"
+- ZERO alarm terms: no "creep," "predator," "pervert," "surveillance conduit," "stalking"
+
+**Engadget Meta Glasses (multiple journalists, 2026, 6+ articles):**
+- "Anti-Creep Feature" (headline), "creepy content" (headline)
+- "pervert glasses," "predator glasses"
+- "surveillance conduit," "stalking, extortion, identity theft"
+- "criminal complaint," "surreptitiously recording"
+- Active adversarial product testing (Karissa Bell $2 sticker bypass)
+
+**Coverage Selection Silence:**
+Aug 18 macOS 26.7 RC leak confirmed camera AirPods Pro 4 with Visual Intelligence and "Hair Detected" camera error. TechCrunch, NY Post, Gizmodo, Hypebeast published articles. Engadget published ZERO articles about the leak despite publishing 4+ Meta investigations Jul–Aug 2026.
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — Added mechanism #220
+- `profiles/competitor-entities.yaml` — Added apple_siri_camera_airpods_compound_incentive_mechanism_220 to yahoo_apollo section
+- `tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py` — NEW: ~30 tests, 5 test classes
+
+**Test count:** 525 test files
+
+---
+
 ## Iteration #227 — Fri 2026-08-21 16:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Mechanism #217: Fashion-Surveillance Thesis + Mass-Market Price Democratization — Twin Cross-Medium Delegitimization**

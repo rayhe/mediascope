@@ -5930,6 +5930,32 @@ entities:
       - https://www.gurufocus.com/news/9002954/apollo-global-management-inc-apo-q2-2026-earnings-call-highlights-record-fre-and-sre-drive-strong-quarter
       - https://www.pymnts.com/news/artificial-intelligence/2026/apollo-global-management-targets-more-ai-infrastructure-deals/
       - https://www.privatemarketsinsights.com/post/apollo-s-record-origination-machine-hits-74-billion-as-private-credit-s-largest-platform-rewires-ma
+    apple_siri_camera_airpods_compound_incentive_mechanism_220:
+      mechanism_id: 220
+      date_analyzed: '2026-08-21'
+      publication: Engadget
+      ownership_chain: Engadget → Yahoo → Apollo Global Management
+      apple_ios_content_partnership_years: 13+
+      apple_siri_ai_deal_status: in_negotiation
+      apple_siri_ai_budget: nine_figure
+      apple_siri_ai_compensation_model: variable_per_use
+      camera_airpods_launch: September 2026 (expected)
+      apollo_apple_equity_holdings_m: 231
+      apollo_apple_portfolio_pct: 3.8
+      engadget_apple_airpods_alarm_terms: 0
+      engadget_meta_glasses_alarm_articles_2026: 6+
+      coverage_selection_silence: Aug 18 macOS 26.7 camera AirPods leak — Engadget published ZERO articles vs TechCrunch, Gizmodo, NY Post, Hypebeast
+      finding_summary: 'Four-layer compound financial incentive architecture (Apple iOS partnership, Siri AI variable-compensation
+        deal, camera AirPods as Siri usage multiplier, Apollo Apple equity) predicts and explains Engadget coverage asymmetry:
+        Apple camera wearables get aspirational framing with zero alarm vocabulary; Meta camera wearables get 6+ investigative
+        articles with creep/predator/pervert/surveillance vocabulary. Extends #186 to quad-device, connects #196 to specific
+        publisher.'
+      related_mechanisms:
+      - 186
+      - 196
+      - 109
+      - 113
+      - 156
     karissa_bell_investigative_methodology_asymmetry_mechanism_113:
       mechanism_id: 113
       date_analyzed: '2026-08-15'

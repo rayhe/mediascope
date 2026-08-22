@@ -24359,4 +24359,40 @@ publications:
     test_file: tests/test_james_pero_gizmodo_apple_airpods_temporal_intensification_reputational_credit_aug21.py
     finding_summary: "James Pero (Gizmodo \"resident smart glasses guy\") Apple AirPods camera coverage INTENSIFIES protection across 3 articles over 3.5 months despite increasing hardware evidence: May 8 (rumor, proactive defense, zero alarm), Aug 17 (leaked video, neutral curiosity, scare quotes), Aug 21 (technical specs revealed including always-on 320x320 passive mode, ACTIVE defense contrasting Apple good intent vs Meta \"icky consequences\" in same paragraph). Same journalist same week: Meta gets \"pile up\" recidivism, Apple gets \"can't imagine they would.\" Temporal pattern: reputation shields don't weaken as evidence accumulates \u2014 they strengthen. Extends #211 three-entity gradient with temporal dimension."
     test_count: 30
+  yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive:
+    mechanism_id: 220
+    name: "Yahoo (Apollo) Apple Siri AI Camera AirPods Revenue Pipeline — Compound Coverage Incentive Architecture"
+    type: C
+    discovery_date: '2026-08-21'
+    iteration: 230
+    overview: "Yahoo (Apollo Global Management, $5B acquisition from Verizon 2021) has a FOUR-LAYER compound financial incentive architecture creating asymmetric Engadget coverage of Apple camera wearables vs Meta camera wearables. Layer 1: existing Apple iOS content partnership (weather, stocks, sports data for Siri since 2013+). Layer 2: Apple Siri AI nine-figure variable-compensation content deals (WSJ Aug 12, 2026) — per-use payments directly tied to Siri AI usage volume. Layer 3: Camera AirPods as Siri AI visual query multiplier — each AirPods camera query generates a potential publisher payment event. Layer 4: Apollo-affiliated entities hold $231M in Apple stock (Apollon Wealth Mgmt Q4 2024, Apple is 2nd-largest holding at 3.8%). Coverage evidence: Engadget Apple AirPods camera coverage uses personal apprehension vocabulary ('dreading'), aspirational feature framing ('Intriguingly'), privacy concerns routed THROUGH Meta ('already written off Meta glasses'), ZERO alarm terms. Engadget Meta glasses coverage (6+ articles 2026): 'creep,' 'predator glasses,' 'pervert glasses,' 'surveillance conduit,' 'stalking, extortion, identity theft,' 'criminal complaint.' COVERAGE SELECTION SILENCE: Aug 18 macOS 26.7 leak confirmed camera AirPods Pro 4 — TechCrunch, NY Post, Gizmodo, Hypebeast covered it; Engadget did NOT, despite publishing 4+ Meta glasses investigations Jul-Aug 2026."
+    publication: Engadget (Yahoo / Apollo Global Management)
+    entity: "Apple (AirPods camera, Siri AI), Meta (Ray-Ban AI glasses)"
+    asymmetry_score: 0.89
+    confounding_factors:
+    - "[STRONG] Meta has more documented privacy incidents (contractor footage review, LED bypass, Instagram harassment) giving editors more news hooks. Counter: Engadget also covers non-incident Apple rumors (e.g., 'dreading' article was about DVT-stage rumors with zero real-world incidents)."
+    - "[STRONG] Engadget editorial staff may operate independently from Yahoo/Apollo corporate. Counter: mechanism #109 and #113 already documented publication-level and journalist-level entity-selective patterns; corporate independence does not explain why Karissa Bell applies adversarial testing to Meta but not Snap."
+    - "[MODERATE] Apple AirPods cameras are lower resolution than Meta glasses cameras. Counter: lower resolution does not eliminate surveillance potential — Engadget's own article says they are 'technically yet another surveillance device.' Resolution downgrade does not eliminate privacy investigation obligation."
+    - "[WEAK] Camera AirPods are not yet shipping (pre-launch product). Counter: Engadget covered Meta's super-sensing feature adversarially when it was also pre-launch/rumored."
+    cross_references:
+    - 186
+    - 196
+    - 109
+    - 113
+    - 156
+    source_urls:
+    - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+    - https://WWW.ENGADGET.COM/2227710/a-dollar2-sticker-let-me-bypass-the-meta-glasses-anti-creep-feature/
+    - https://www.engadget.com/2222008/instagram-is-now-banning-users-who-make-creepy-content-with-meta-glasses/
+    - https://www.engadget.com/2232153/are-ray-ban-meta-glasses-a-privacy-risk-here-s-what-you-should-know/
+    - https://www.engadget.com/2212604/the-meta-glasses-backlash-is-changing-how-or-if-people-use-them/
+    - https://www.engadget.com/2210283/meta-disable-camera-glasses-tamper-with-recording-led/
+    - https://www.engadget.com/social-media/meta-hit-with-a-class-action-lawsuit-over-smart-glasses-privacy-claims-182846817.html
+    - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+    - https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
+    - https://www.digitaltrends.com/mobile/yahoo-and-apple-in-talks-over-deeper-ios-integration-report-says/
+    - https://www.cfo.com/news/verizon-sells-yahoo-aol-to-apollo-for-5b/655655/
+    test_file: tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py
+    finding_summary: "Yahoo (Apollo) has a four-layer compound financial incentive architecture (existing Apple iOS partnership, Siri AI variable-compensation deal negotiations, camera AirPods as Siri usage multiplier, Apollo Apple equity holdings) that predicts and explains Engadget's measured coverage asymmetry: Apple camera wearables get aspirational/personal vocabulary with zero alarm terms and privacy concerns routed through Meta; Meta camera wearables get 6+ investigative articles with alarm vocabulary (creep/predator/pervert/surveillance conduit). Aug 18 macOS camera AirPods leak received coverage silence from Engadget despite concurrent Meta investigation output. Extends #186 (triple-device) to quad-device and connects #196 (Apple Siri AI variable compensation) to specific Yahoo/Engadget coverage measurement."
+    test_count: 30
 research_period: 2024-08-01 to 2026-08-21
