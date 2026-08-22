@@ -24418,8 +24418,8 @@ publications:
     - https://petapixel.com/2026/08/18/meta-cant-stop-the-avalanche-of-content-filmed-on-pervert-glasses/
     - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
     test_file: tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py
-research_period: 2024-08-01 to 2026-08-22
-  - mechanism_id: 222
+  james_pero_gizmodo_competitor_ceo_source_amplification_google_gucci_mechanism_222:
+    mechanism_id: 222
     mechanism: "James Pero (Gizmodo/Keleops AG) Competitor CEO Source Amplification — Spiegel Anti-Meta
       Commercial Rhetoric Laundered as Editorial Authority in Google-Gucci Fashion Partnership Coverage"
     type: "Competitor Coverage Deep Dive (Type A)"
@@ -24458,3 +24458,66 @@ research_period: 2024-08-01 to 2026-08-22
     - https://www.androidpolice.com/snap-ceo-hypes-up-its-mystery-smartglasses-and-slams-rivals/
     - https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/
     test_file: tests/test_james_pero_gizmodo_competitor_ceo_source_amplification_google_gucci_aug22.py
+  ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_mechanism_223:
+    mechanism_id: 223
+    mechanism: "Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion — Same Journalist
+      Frames Meta Camera as Scandal, Apple Camera as Core Functionality Requirement"
+    type: "Journalist Cross-Entity Tracking (Type B)"
+    discovery_date: "2026-08-22"
+    iteration: 234
+    detail: >
+      Ben Lovejoy, a senior 9to5Mac journalist and self-identified Meta Ray-Ban glasses owner, demonstrates
+      a CAMERA FEATURE ADVOCACY INVERSION across three articles in 2026. Article 1 (Mar 3): Covers the
+      Meta contractor scandal ('sensitive videos,' 'sex,' 'intimate moments,' 'lack of transparency,'
+      'exceedingly vague') and concludes 'use any AI service with caution — or any Meta product.' Article 2
+      (Jul 27): Frames Meta's accessibility paywall as 'good news for Apple Glasses,' calling Apple 'a more
+      reputable company.' Article 3 (Jul 27, SAME DAY): Advocates for Apple to include the IDENTICAL camera
+      feature, calling a cameraless product 'dead on arrival' and framing privacy concerns as a solvable
+      design challenge ('The standard Apple needs to hit isn't perfection'). The NOVEL PATTERN is that the
+      journalist who covered Meta camera scandals (contractor review of intimate footage) does not generate
+      equivalent skepticism about Apple adding identical capabilities. Instead, the same camera feature that
+      defines Meta's negative coverage becomes Apple's essential product requirement. Privacy is a
+      fundamental flaw for Meta but a design challenge for Apple. Articles 2 and 3 published on the SAME DAY
+      amplifies the contrast: Meta failure → Apple opportunity → Apple must have the same feature.
+      Extends Mechanism #173 (9to5 Network three-tier gradient) by documenting the INDIVIDUAL JOURNALIST
+      layer within that network pattern, and #221 (9to5Mac Security Bite pre-framing) by showing that
+      9to5Mac's Apple advocacy operates not just through security-branded columns but through senior
+      editorial opinion pieces that explicitly advocate for Apple adopting Meta's most controversial feature.
+    asymmetry_score: 0.79
+    confounding_factors:
+    - "[STRONG] Meta glasses are a shipping product with documented privacy incidents (contractor review,
+      YouTuber harassment). Apple Glasses are pre-launch. Coverage disparity may reflect the difference
+      between reviewing a real product versus speculating about a future one."
+    - "[MODERATE] Lovejoy is a Meta glasses owner/user. His camera advocacy comes from genuine product
+      experience, not pure Apple bias. However, his user experience does not explain why Meta privacy
+      concerns extend to 'any Meta product' while Apple privacy concerns are treated as solvable."
+    - "[MODERATE] 9to5Mac is structurally an Apple-centric publication. Aspirational Apple framing is
+      expected by readers and may reflect editorial mission rather than financial capture."
+    - "[MODERATE] Meta has a well-documented historical privacy record (Cambridge Analytica, FTC consent
+      decree). Greater skepticism may be proportionate to historical evidence."
+    - "[WEAK] Apple camera AirPods use low-res IR sensors for contextual AI, not high-res photo/video.
+      But Lovejoy specifically advocates for Apple Glasses to include FULL photo and video recording —
+      the identical feature generating Meta privacy scandals. This confounder does not apply to his
+      specific advocacy."
+    cross_references:
+    - mechanism_id: 173
+      relationship: extends
+      description: "Network-level 9to5 three-tier gradient; this mechanism documents the individual
+        journalist layer within it."
+    - mechanism_id: 221
+      relationship: extends
+      description: "9to5Mac Security Bite Apple pre-framing; shows 9to5Mac advocacy operates through
+        senior editorial opinion pieces, not just security-branded columns."
+    - mechanism_id: 218
+      relationship: parallel
+      description: "PetaPixel Apple AirPods camera vocabulary zero; same pattern of Apple camera
+        products receiving zero privacy scrutiny vocabulary."
+    - mechanism_id: 171
+      relationship: parallel
+      description: "Daniel Bader career-ecosystem capture; another 9to5 network journalist with
+        explicit trust differential between Google/Apple and Meta."
+    source_urls:
+    - https://9to5mac.com/2026/03/03/meta-ray-ban-smart-glasses-send-sensitive-videos-to-human-data-annotators/
+    - https://9to5mac.com/2026/07/27/an-accessibility-paywall-on-meta-glasses-could-be-good-news-for-apple-glasses/
+    - https://9to5mac.com/2026/07/27/apple-glasses-just-wont-be-useful-without-video-recording/
+    test_file: tests/test_ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_aug22.py
