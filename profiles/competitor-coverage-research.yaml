@@ -24914,3 +24914,66 @@ publications:
     - https://finnoexpert.com/metas-new-ai-glasses-impressed-investors-but-3-things-stop-them-from-going-mainstream/
     - https://www.morningstar.com/news/marketwatch/20250920168/people-are-complaining-that-apples-new-iphone-17-scratches-easily-but-these-wall-street-analysts-say-it-wont-hurt-sales
     test_file: tests/test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py
+
+  matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_mechanism_230:
+    mechanism_id: 230
+    name: "Matt Growcoot (PetaPixel) Cross-Entity Camera Privacy Vocabulary Inversion — 10:2 Meta-Adversarial vs Apple-Aspirational Smart Glasses Coverage with Investigative Gap"
+    type: "Journalist Cross-Entity Tracking (Type B)"
+    discovery_date: "2026-08-22"
+    iteration: 239
+    finding_summary: >
+      Matt Growcoot, PetaPixel's most prolific writer (former Guardian/Daily Mail news
+      photographer), has written 10+ Meta smart glasses privacy articles and 2 Apple smart
+      glasses articles from January to August 2026. Every Meta article uses adversarial/threat
+      vocabulary: "disturbing" (headline, Mar 5), "douchebag with a camera on your face"
+      (headline, Apr 8), "creeps clandestinely filming," "irresponsible" (Apr 8), "pervert
+      glasses," "predatory behavior," "backlash" (Jul 14), "glassholes," "creepy,"
+      "exploitative behavior," "predatory mindset" (Jan 29), "disguised cameras,"
+      "surveillance," "almost invisible and omnipresent" (Aug 4), "surreptitious surveillance,"
+      "invasion of guest privacy" (Aug 10), "red line society must not cross," "massive invasion
+      of privacy" (Apr 15), "misled consumers," "surveillance conduit" (Mar 9). Both Apple
+      articles use aspirational/innovation vocabulary: "eye-catching features," "departure
+      from Meta's products," "ring light" (beauty influencer analogy), "desirable," "advantage,"
+      "ultimately dominant" (Apr 13), "privacy one of its defining principles," "aggressively
+      marketed itself as a company that protects people's privacy," "eschew controversial
+      features" (Jul 27). NOVEL PATTERN — Investigative Gap: None of the Apple articles
+      investigate whether Apple's planned camera will enable the SAME abuse scenarios
+      (clandestine filming, glasshole behavior, harassment content creation) documented in
+      10 Meta articles. The ring light article (Apr 13) speculates Apple's design will PREVENT
+      the problem without evidence. Apple's camera is a solvable design challenge; Meta's
+      identical camera is a fundamental privacy violation. PetaPixel earns affiliate revenue
+      through Amazon Associates links; Apple products (iPhones, Macs, AirPods) are a major
+      affiliate category for a photography publication whose audience is core Apple users.
+      Meta has $0 financial relationship with PetaPixel.
+    asymmetry_score: 0.76
+    confounding_factors:
+    - "[STRONG] Meta has actual incidents, Apple is hypothetical — Meta's glasses have real privacy scandals (contractor footage review, harassment videos). Apple's glasses don't exist yet. Growcoot is covering what HAS happened vs what MIGHT happen."
+    - "[STRONG] Journalistic news judgment — Negative events (lawsuits, bans, scandals) are inherently more newsworthy than product speculation. The 10:2 volume ratio partly reflects news flow."
+    - "[MODERATE] Apple's stated privacy commitment — Apple markets itself on privacy and has a track record (on-device processing, App Tracking Transparency). Treating Apple differently based on track record is editorially defensible."
+    - "[MODERATE] Photography publication angle — PetaPixel covers camera technology. Camera privacy scandals are directly on-beat. Apple design speculation is less on-beat, explaining volume asymmetry."
+    - "[WEAK] Ring light as genuine innovation — Apple's surrounding lights around the camera ARE a meaningfully different design choice from Meta's blinking LED. Treating this as notable is legitimate."
+    cross_references:
+    - mechanism_id: 218
+      relationship: "extends"
+      description: "PetaPixel Apple AirPods camera privacy vocabulary zero — extends publication-level pattern to journalist level"
+    - mechanism_id: 173
+      relationship: "parallel"
+      description: "9to5 Network three-tier gradient — parallel: beat publication with Apple financial relationship shows vocabulary differential"
+    - mechanism_id: 223
+      relationship: "parallel"
+      description: "Ben Lovejoy camera feature advocacy inversion — parallel: same-journalist Meta-critical/Apple-positive camera coverage at a different publication"
+    - mechanism_id: 228
+      relationship: "parallel"
+      description: "Gizmodo category identity inversion — parallel: same-feature opposite framing by entity at a third publication"
+    source_urls:
+    - https://petapixel.com/2026/01/29/mark-zuckerberg-says-smart-glasses-are-the-future-now-despite-the-creeps/
+    - https://petapixel.com/2026/03/05/disturbing-report-says-workers-are-watching-private-footage-taken-on-meta-smart-glasses/
+    - https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/
+    - https://petapixel.com/2026/04/08/a-douchebag-with-a-camera-on-your-face-should-smart-glasses-record-imagery/
+    - https://petapixel.com/2026/04/13/will-apples-smart-glasses-come-with-a-ring-light-around-the-camera/
+    - https://petapixel.com/2026/04/15/meta-urged-to-abandon-facial-recognition-plans-for-ray-ban-glasses/
+    - https://petapixel.com/2026/07/14/meta-smart-glasses-owners-too-scared-to-wear-them-in-public/
+    - https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+    - https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
+    - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
+    test_file: tests/test_matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_aug22.py
