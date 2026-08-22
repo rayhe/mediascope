@@ -1,6 +1,52 @@
 ---
 ---
 
+## Iteration #238 — Sat 2026-08-22 07:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #229: MarketWatch (News Corp/Dow Jones) Headline Template Inversion — Meta Success Dismissal vs Apple Problem Insulation**
+
+- **Type:** Competitor Coverage Deep Dive (Type A)
+- **Test file:** `tests/test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py`
+- **Tests:** 9 classes, 31 tests
+- **Asymmetry score:** 0.72
+
+**Core finding:** MarketWatch applies an identical "X — but Y" headline template in OPPOSITE editorial directions within 24 hours (Sep 19-20, 2025):
+
+- **Meta (Sep 19):** "Meta's new AI glasses impressed investors — but 3 things stop them from going mainstream" → positive signal → negative qualifier (SUCCESS UNDERMINED)
+- **Apple (Sep 20):** "People are complaining that Apple's new iPhone 17 scratches easily — but these Wall Street analysts say it won't hurt sales" → negative signal → positive qualifier (PROBLEM INSULATED)
+
+**NOVEL PATTERN — Data Contradiction Asymmetry (Jun 27, 2026):**
+Ten months later, MarketWatch's "Big Tech is obsessed with smart glasses" article simultaneously presents:
+1. "Meta has emerged as the front-runner" + 84% market share (Counterpoint) + 7M+ units shipped (2025)
+2. Analyst Max Weinbach (Creative Strategies): "No one really wants Meta glasses"
+
+These are mutually contradictory claims IN THE SAME ARTICLE. 84% market share of a 167%-YoY-growing category vs "no one really wants" them. Neither Apple N50 (zero units shipped, late 2027 launch) nor Google Intelligent Eyewear (zero units shipped) receives equivalent dismissal. Apple gets aspirational vocabulary ("hardware empire," "releasing its own competitor"); Google gets neutral comeback framing ("trying its hand again").
+
+**Analyst quote selection asymmetry:**
+- Meta: 1 analyst (Weinbach) providing dismissal → "No one really wants"
+- Apple: 2 analysts (Ives, Luria) providing reassurance → "way overhyped," "phenomenal," "could always correct course"
+
+**Financial architecture timeline:**
+- At Sep 2025 (headline inversion pair): OpenAI $50M/yr active, Apple News+ active, Meta $0 (deal not yet signed)
+- At Jun 2026 (data contradiction article): All three active — OpenAI $50M/yr, Meta up to $50M/yr (signed Mar 2026, newest at 4 months), Apple News+ (longstanding)
+- OpenAI building camera-equipped smart speaker (2027) and smart glasses (2028+) — directly competitive with Meta glasses
+- Despite balanced financial relationships by mid-2026, editorial framing remains asymmetric — editorial culture lag hypothesis
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — Mechanism #229 added with 5 confounding factors, 4 source URLs, cross-references to #214 and #26
+- `profiles/news-corp.yaml` — MarketWatch market-positioning framing entry added to Meta competitor relationship section
+- `tests/test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py` — NEW: 9 classes, 31 tests
+- `docs/ARCHITECTURE.md` — Count 535→536, new test file entry
+- `README.md` — Count 535→536
+
+**Sources:**
+- MarketWatch (Jun 27, 2026): https://www.marketwatch.com/story/big-tech-is-obsessed-with-smart-glasses-now-it-has-to-convince-people-to-wear-them-0d5ebd43
+- MarketWatch (Jun 17, 2026): https://www.marketwatch.com/story/snap-breaks-from-the-pack-with-heavy-2-195-smart-glasses-wall-street-is-panning-the-move-99e77ae6
+- MarketWatch (Sep 19, 2025) — syndicated: https://finnoexpert.com/metas-new-ai-glasses-impressed-investors-but-3-things-stop-them-from-going-mainstream/
+- MarketWatch (Sep 20, 2025) — syndicated: https://www.morningstar.com/news/marketwatch/20250920168/people-are-complaining-that-apples-new-iphone-17-scratches-easily-but-these-wall-street-analysts-say-it-wont-hurt-sales
+
+**Cumulative:** 536 test files | 229 mechanisms
+
 ## Iteration #237 — Sat 2026-08-22 06:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Mechanism #228: Gizmodo Camera Earbud Category Identity Inversion — Resolution Rationalization**
