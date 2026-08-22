@@ -69,8 +69,10 @@ class TestRecentMechanismStructure:
 
     REQUIRED_FIELDS = [
         'mechanism_id', 'name', 'type', 'discovery_date',
-        'asymmetry_score', 'confounding_factors', 'overview'
+        'asymmetry_score', 'confounding_factors'
     ]
+    # overview OR finding_summary must be present
+    SUMMARY_FIELDS = ['overview', 'finding_summary']
 
     def test_all_recent_have_required_fields(self, competitor_research):
         pubs = competitor_research['publications']
@@ -79,6 +81,9 @@ class TestRecentMechanismStructure:
                 for field in self.REQUIRED_FIELDS:
                     assert field in val, \
                         f"Mechanism #{val.get('mechanism_id', '?')} ({key}) missing '{field}'"
+                # Must have at least one summary field
+                assert any(f in val for f in self.SUMMARY_FIELDS), \
+                    f"Mechanism #{val.get('mechanism_id', '?')} ({key}) missing overview or finding_summary"
 
     def test_asymmetry_scores_valid_range(self, competitor_research):
         """All asymmetry scores should be 0.0-1.0."""
@@ -126,14 +131,14 @@ class TestMechanismContinuity:
                 assert ids[i] == ids[i - 1] + 1, \
                     f"Gap in mechanism IDs between #{ids[i - 1]} and #{ids[i]}"
 
-    def test_highest_mechanism_is_220(self, competitor_research):
+    def test_highest_mechanism_is_224(self, competitor_research):
         pubs = competitor_research['publications']
         max_id = max(
             val.get('mechanism_id', 0)
             for val in pubs.values()
             if isinstance(val, dict)
         )
-        assert max_id == 220, f"Expected highest mechanism #220, got #{max_id}"
+        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
 
     def test_mechanism_types_match_rotation(self, competitor_research):
         """Recent mechanisms should match the A/B/C/D/E rotation."""

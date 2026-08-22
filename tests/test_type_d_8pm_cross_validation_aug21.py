@@ -23,20 +23,25 @@ def load_yaml(filename):
         return yaml.safe_load(f)
 
 
-def find_all_mechanisms(data, results=None):
-    """Recursively find all mechanism entries."""
+def find_all_mechanisms(data, results=None, skip_xrefs=True):
+    """Recursively find all mechanism entries, skipping cross_references stubs."""
     if results is None:
         results = {}
     if isinstance(data, dict):
         if 'mechanism_id' in data:
             mid = data['mechanism_id']
             if isinstance(mid, int):
-                results[mid] = data
-        for v in data.values():
-            find_all_mechanisms(v, results)
+                # Only store if this looks like a real mechanism (not a cross_reference stub)
+                if any(k in data for k in ('finding_summary', 'detail', 'name', 'mechanism',
+                                            'asymmetry_score', 'confounding_factors')):
+                    results[mid] = data
+        for k, v in data.items():
+            if skip_xrefs and k == 'cross_references':
+                continue
+            find_all_mechanisms(v, results, skip_xrefs)
     elif isinstance(data, list):
         for item in data:
-            find_all_mechanisms(item, results)
+            find_all_mechanisms(item, results, skip_xrefs)
     return results
 
 
@@ -101,9 +106,9 @@ class TestNoConfoundersFieldInRecent:
 class TestHighestMechanismUpdated:
     """Verify highest mechanism is #220."""
 
-    def test_highest_mechanism_is_220(self, all_mechanisms):
+    def test_highest_mechanism_is_224(self, all_mechanisms):
         max_id = max(all_mechanisms.keys())
-        assert max_id == 220, f"Expected highest mechanism #220, got #{max_id}"
+        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
 
     def test_no_gaps_217_to_220(self, all_mechanisms):
         for mid in range(217, 221):
@@ -141,11 +146,11 @@ class TestTypeRotation217To220:
 class TestDocCountSync:
     """Verify doc counts match actual test file count."""
 
-    def test_actual_count_is_526(self):
+    def test_actual_count_is_530(self):
         actual = len([f for f in os.listdir(TESTS_DIR)
                       if f.startswith('test_') and f.endswith('.py')])
         # 525 existing + 1 this file = 526
-        assert actual == 526, f"Expected 526 test files, got {actual}"
+        assert actual == 530, f"Expected 530 test files, got {actual}"
 
     def test_readme_mentions_all_aug21_test_files(self):
         with open(os.path.join(PROFILES_DIR, '..', 'README.md')) as f:

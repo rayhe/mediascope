@@ -24387,6 +24387,8 @@ publications:
     mechanism_id: 221
     name: "9to5Mac Security Bite Apple-Ecosystem Pre-Framing + Celebrity-Institutional Privacy Cascade"
     type: "E"
+    discovery_date: "2026-08-21"
+    iteration: 232
     finding_summary: >
       9to5Mac Security Bite (Arin Waichulis, Aug 18, 2026) pre-frames unreleased Apple camera AirPods
       as making Meta glasses "look reckless" — using security-column branding to lend adversarial
@@ -24418,13 +24420,43 @@ publications:
     - https://petapixel.com/2026/08/18/meta-cant-stop-the-avalanche-of-content-filmed-on-pervert-glasses/
     - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
     test_file: tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py
+    cross_references:
+    - mechanism_id: 173
+      relationship: extends
+      description: "9to5 Network three-tier gradient; celebrity/institutional cascade is the
+        broader cultural layer that reinforces the publication-level framing."
+    - mechanism_id: 218
+      relationship: parallel
+      description: "PetaPixel Apple AirPods camera vocabulary zero; Security Bite pre-framing
+        operates through the same entity-selective privacy vocabulary mechanism."
   james_pero_gizmodo_competitor_ceo_source_amplification_google_gucci_mechanism_222:
     mechanism_id: 222
+    name: "James Pero (Gizmodo/Keleops AG) Competitor CEO Source Amplification — Spiegel Anti-Meta
+      Commercial Rhetoric Laundered as Editorial Authority in Google-Gucci Fashion Partnership Coverage"
     mechanism: "James Pero (Gizmodo/Keleops AG) Competitor CEO Source Amplification — Spiegel Anti-Meta
       Commercial Rhetoric Laundered as Editorial Authority in Google-Gucci Fashion Partnership Coverage"
     type: "Competitor Coverage Deep Dive (Type A)"
     discovery_date: "2026-08-22"
     iteration: 233
+    finding_summary: >
+      James Pero's Gizmodo article 'Google Wants to Put Gucci Smart Glasses on Your Face' (Apr 16, 2026)
+      demonstrates a SOURCE AMPLIFICATION technique: citing Snap CEO Evan Spiegel's competitive rhetoric
+      against Meta using authority verb 'noted' (not 'claimed' or 'alleged'), then extending claims into
+      stronger editorial assertions. Three entities pursuing identical fashion partnership strategies receive
+      asymmetric framing: Google-Gucci = aspirational, Apple-Hermès = precedent, Meta-Prada = reputation too
+      damaged. Spiegel's competitive incentive (promoting rival Snap Specs) is not disclosed.
+      EssilorLuxottica shares gained 28% in 2025; Barclays shows 60% market share — contradicting the
+      amplified brand-toxicity narrative. Extends #211 (Pero three-entity gradient) and #201 (McCracken CEO
+      attribution).
+    cross_references:
+    - mechanism_id: 211
+      relationship: extends
+      description: "Pero three-entity privacy gradient; this mechanism reveals the specific source
+        amplification technique enabling that gradient."
+    - mechanism_id: 201
+      relationship: extends
+      description: "McCracken CEO attribution humanization differential; documents how competitor CEOs
+        are used as editorial ammunition rather than how journalists frame CEOs differently."
     detail: >
       James Pero's Gizmodo article 'Google Wants to Put Gucci Smart Glasses on Your Face' (Apr 16, 2026)
       demonstrates a novel SOURCE AMPLIFICATION technique: citing Snap CEO Evan Spiegel's competitive
@@ -24460,11 +24492,21 @@ publications:
     test_file: tests/test_james_pero_gizmodo_competitor_ceo_source_amplification_google_gucci_aug22.py
   ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_mechanism_223:
     mechanism_id: 223
+    name: "Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion — Same Journalist
+      Frames Meta Camera as Scandal, Apple Camera as Core Functionality Requirement"
     mechanism: "Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion — Same Journalist
       Frames Meta Camera as Scandal, Apple Camera as Core Functionality Requirement"
     type: "Journalist Cross-Entity Tracking (Type B)"
     discovery_date: "2026-08-22"
     iteration: 234
+    finding_summary: >
+      Ben Lovejoy (9to5Mac) demonstrates CAMERA FEATURE ADVOCACY INVERSION across three 2026 articles.
+      Article 1 (Mar 3): Meta contractor scandal with escalating privacy vocabulary, concluding 'use
+      any AI service with caution — or any Meta product.' Article 2 (Jul 27): Meta accessibility paywall
+      is 'good news for Apple Glasses.' Article 3 (SAME DAY): Apple must include the IDENTICAL camera
+      feature, cameraless = 'dead on arrival,' privacy is 'solvable.' The journalist who covered Meta
+      camera scandals generates zero skepticism about Apple adding the same capabilities. Financial
+      architecture: 9to5Mac earns Apple affiliate revenue, News+ licensing; $0 Meta relationship.
     detail: >
       Ben Lovejoy, a senior 9to5Mac journalist and self-identified Meta Ray-Ban glasses owner, demonstrates
       a CAMERA FEATURE ADVOCACY INVERSION across three articles in 2026. Article 1 (Mar 3): Covers the
@@ -24523,11 +24565,31 @@ publications:
     test_file: tests/test_ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_aug22.py
   snap_specs_dual_ai_partner_publisher_financial_convergence_mechanism_224:
     mechanism_id: 224
+    name: "Snap Spectacles Dual-AI Partner Publisher Financial Convergence — OpenAI + Google
+      Partnerships Create Triple Alignment for September 16 Consumer Launch"
     mechanism: "Snap Spectacles Dual-AI Partner Publisher Financial Convergence — OpenAI + Google
       Partnerships Create Triple Alignment for September 16 Consumer Launch"
     type: "Financial Incentive Mapping (Type C)"
     discovery_date: "2026-08-22"
     iteration: 235
+    finding_summary: >
+      Snap Specs (consumer launch Sep 16, 2026, $2,195) ships with AI partnerships from BOTH OpenAI
+      and Google, creating TRIPLE PUBLISHER FINANCIAL ALIGNMENT unprecedented for a single smart glasses
+      product. Axis 1: Snap ($1.6B quarterly, competes with Meta for ad budgets). Axis 2: OpenAI
+      (powers Specs AI, maintains 20+ publisher content deals worth $300-400M/yr). Axis 3: Google
+      (powers Specs AI, dominant publisher advertising + Showcase + AI pilot deals). Covering Specs
+      favorably serves publishers on 3 financial axes simultaneously. Meta Ray-Ban coverage serves zero:
+      Meta AI only, zero publisher deals, $60.8B quarterly ad competition. Snap-Perplexity $400M deal
+      was TERMINATED Q1 2026 (zero revenue recognized) but dual-AI partners create stronger alignment.
+    cross_references:
+    - mechanism_id: 130
+      relationship: extends
+      description: "Snap-Perplexity publisher chain; this mechanism documents the REPLACEMENT financial
+        architecture after the Perplexity deal termination."
+    - mechanism_id: 222
+      relationship: parallel
+      description: "Pero source amplification of Snap CEO Spiegel's anti-Meta rhetoric; Specs launch
+        concentrates the same competitive dynamics at a single event."
     detail: >
       Snap Specs (consumer launch September 16, 2026, Los Angeles, $2,195) ships with AI partnerships
       from BOTH OpenAI and Google — confirmed by Engadget, PhoneArena, Dataconomy, and Android Authority

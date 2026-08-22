@@ -118,14 +118,14 @@ class TestMechanism216InResearch:
                 score = val.get('asymmetry_score', 0)
                 assert 0.3 <= score <= 0.6, f"#216 ambiguous score expected 0.3-0.6, got {score}"
 
-    def test_highest_mechanism_is_220(self, competitor_research):
+    def test_highest_mechanism_is_224(self, competitor_research):
         pubs = competitor_research['publications']
         max_id = max(
             val.get('mechanism_id', 0)
             for val in pubs.values()
             if isinstance(val, dict)
         )
-        assert max_id == 220, f"Expected highest mechanism #220, got #{max_id}"
+        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
 
 
 # ============================================================
