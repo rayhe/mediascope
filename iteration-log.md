@@ -1,5 +1,44 @@
 ---
 
+## Iteration #232 — Fri 2026-08-21 21:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Mechanism #221: 9to5Mac Security Bite Apple-Ecosystem Pre-Framing + Celebrity-Institutional Privacy Cascade**
+
+Three new vectors documented — 9to5Mac security column pre-framing, celebrity-institutional cascade, and Global South discourse extension:
+
+### Vector A: 9to5Mac Security Bite — Apple Pre-Framing via Security Column Brand (Aug 18, 2026)
+
+Arin Waichulis (9to5Mac Security Editor) publishes "Apple's camera AirPods are going to make Meta glasses look reckless" — a security-branded column that pre-advocates for an UNRELEASED Apple product while indicting Meta's shipping product. Same day as macOS 27 RC leak revealing camera AirPods.
+
+**NOVEL PATTERN — Security Column as Pre-Framing Pipeline:**
+First instance in corpus where a security-branded column (supposedly adversarial/skeptical) is used to pre-frame an unreleased product as the privacy-safe alternative. Column expresses "I have no doubt" about unannounced product's privacy implementation, routes unrelated Flock Safety ALPR controversy through Meta, uses "reckless" for Meta vs "only it can do" for Apple. Financial architecture: Apple News+ licensing, affiliate links, event credentials, Mosyle (Apple enterprise) sponsor. Meta: $0 financial relationship.
+
+### Vector B: Celebrity-Institutional Privacy Cascade (Jul–Aug 2026)
+
+7 celebrity/institutional actions — ALL exclusively targeting Meta:
+1. Lorde concert: "F*** the glasses" / "not sexy"
+2. Jimmy Kimmel: mocked as "pervert glasses"
+3. DEF CON 2026: banned Meta-style recording glasses
+4. EFF (Eva Galperin): "Love to see no pervert glasses policy"
+5. UK Comic Cons (Monopoly Events): extended recording glasses ban
+6. Seattle diner: "Leave your Meta-SpyBan Display at home"
+7. Guardian: influencers lose followers, catch dirty looks for wearing Meta frames
+
+Zero of 7 actions mention Apple (camera AirPods confirmed Aug 18), Samsung (Galaxy Glasses Jul 22), Google (Android XR), or Snap (Spectacles $2,195 with 4 cameras).
+
+### Vector C: Business Day Spotlight — Global South Extension (South Africa, Jul 15, 2026)
+
+First Sub-Saharan African podcast in corpus. ESET cybersecurity engineer Allan Juma highlights Kenya/Ghana incidents: tourists using smart glasses to secretly record intimate encounters with local women. Extends discourse beyond US/EU/Australia to post-colonial tech surveillance dimension. Relatively financially neutral analysis (no Apple/Meta dependencies).
+
+**Files changed:**
+- `podcast-sentiment.md` — Added entries #56 (9to5Mac Security Bite), #57 (Business Day Spotlight), Cultural-Institutional Cascade
+- `profiles/competitor-coverage-research.yaml` — Added mechanism #221
+- `tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py` — NEW: 7 classes, 19 tests
+- `docs/ARCHITECTURE.md` — Count 526→527, test file entry added
+- `README.md` — Count 526→527, test file entry added
+
+**Test count:** 527 test files
+
 ## Iteration #231 — Fri 2026-08-21 20:00 PT (Type D: Test & Verify)
 
 **Cross-validation and structural integrity fixes:**
