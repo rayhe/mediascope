@@ -24418,4 +24418,43 @@ publications:
     - https://petapixel.com/2026/08/18/meta-cant-stop-the-avalanche-of-content-filmed-on-pervert-glasses/
     - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
     test_file: tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py
-research_period: 2024-08-01 to 2026-08-21
+research_period: 2024-08-01 to 2026-08-22
+  - mechanism_id: 222
+    mechanism: "James Pero (Gizmodo/Keleops AG) Competitor CEO Source Amplification — Spiegel Anti-Meta
+      Commercial Rhetoric Laundered as Editorial Authority in Google-Gucci Fashion Partnership Coverage"
+    type: "Competitor Coverage Deep Dive (Type A)"
+    discovery_date: "2026-08-22"
+    iteration: 233
+    detail: >
+      James Pero's Gizmodo article 'Google Wants to Put Gucci Smart Glasses on Your Face' (Apr 16, 2026)
+      demonstrates a novel SOURCE AMPLIFICATION technique: citing Snap CEO Evan Spiegel's competitive
+      commercial rhetoric against Meta, then extending Spiegel's claims into stronger editorial assertions
+      that become indistinguishable from Pero's own analysis. Spiegel said 'camouflage their brand' —
+      Pero extended to 'synonymous with poor privacy practices.' Spiegel said 'destroyed the margin' —
+      Pero extended to 'gutted margins on non-smart Ray-Bans.' The article applies this amplified rhetoric
+      asymmetrically: Google-Gucci = 'level up cachet' (aspirational), Apple-Hermès = successful precedent,
+      Meta-Prada = 'maybe they never will' (reputation too damaged). All three pursue IDENTICAL strategy:
+      luxury fashion brand partnerships for camera-equipped smart glasses. Spiegel's competitive incentive
+      (promoting rival Snap Specs launching 2026) is not disclosed. Other outlets (Times of India: 'warns';
+      Android Police: 'slams rivals') identified the quotes as competitive rhetoric, but Pero used authority
+      verb 'noted.' EssilorLuxottica shares gained 28% in 2025 and hit records; Barclays shows 60% smart
+      glasses market share — contradicting the 'gutted margins' and 'brand toxicity' narrative Pero amplified
+      from Spiegel. Extends Mechanism #211 (Pero three-entity gradient) by revealing a specific SOURCE
+      TECHNIQUE enabling that gradient, and #201 (McCracken CEO attribution) by documenting how competitor
+      CEOs are used as editorial ammunition rather than how journalists frame CEOs differently.
+    asymmetry_score: 0.82
+    confounding_factors:
+    - "[MODERATE] Meta's genuine privacy incidents (Kenya human review, LED bypass) mean Spiegel's
+      underlying claim about reputation damage has some factual basis, even if his competitive incentive
+      makes him an unreliable narrator."
+    - "[MODERATE] Google-Gucci partnership is newer and untested, giving less editorial history to draw
+      from compared to Meta-EssilorLuxottica's multi-year track record."
+    - "[WEAK] Pero includes brief skeptical note about Google ('history of hoovering up user data,'
+      'Glasshole') but this is past-tense historical framing vs Meta's present-tense active-threat framing."
+    - "[WEAK] Article predates some of the most intense Meta privacy coverage (Jul-Aug 2026), but
+      Spiegel's quotes themselves referenced existing Meta controversies."
+    source_urls:
+    - https://gizmodo.com/google-wants-to-put-gucci-smart-glasses-on-your-face-2000747582
+    - https://www.androidpolice.com/snap-ceo-hypes-up-its-mystery-smartglasses-and-slams-rivals/
+    - https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/
+    test_file: tests/test_james_pero_gizmodo_competitor_ceo_source_amplification_google_gucci_aug22.py
