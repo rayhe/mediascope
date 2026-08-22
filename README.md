@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~19,000 | Across 531 test files |
+| Tests | ~19,000 | Across 532 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17669 tests** (19000 with parameterized expansion) across 531 test files, each covering a different analytical capability:
+MediaScope has **17669 tests** (19000 with parameterized expansion) across 532 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1046,3 +1046,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_aug22.py` | 30 | Mechanism #223: Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion (Type B). Same journalist frames Meta camera as scandal ("sensitive videos," "any Meta product") and Apple camera as core functionality ("dead on arrival" without it, privacy is "solvable design challenge"). Three articles: Mar 3 Meta contractor scandal, Jul 27 Meta failure as Apple opportunity, Jul 27 same day Apple must have cameras. Financial architecture: Apple affiliate revenue + Apple News+ licensing, $0 Meta. 1 STRONG, 3 MODERATE, 1 WEAK confounders. 7 classes, 30 tests |
 | `test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py` | 43 | Mechanism #224: Snap Spectacles Dual-AI Partner Publisher Financial Convergence (Type C). Snap Specs (Sep 16 consumer launch, $2,195) ships with AI from BOTH OpenAI (20+ publisher deals, $300-400M/yr) and Google (ad revenue + Showcase + AI pilots) — creating TRIPLE publisher financial alignment. Covering Specs favorably simultaneously serves Snap (Meta ad competitor), OpenAI (powers Specs AI, pays publishers), and Google (powers Specs AI, pays publishers) interests. Meta Ray-Ban glasses: powered by Meta AI only, zero publisher deals, competes with publishers for ad revenue. Incentive vectors perfectly INVERTED. Also documents: Snap-Perplexity $400M deal TERMINATED Q1 2026, zero revenue recognized, indirect publisher chain BROKEN. 8 classes, 43 tests |
 | `test_type_d_02am_cross_validation_aug22.py` | 27 | Type D cross-validation (Aug 22, 2 AM PT): Critical find_all_mechanisms bug fix (cross_reference stubs overwriting real mechanism entries), mechanism #221 missing discovery_date, mechanisms #222-224 field normalization (name+finding_summary added), mechanisms #221/#222/#224 missing cross_references, stale highest_mechanism #220→#224 in 3 Type D files, doc count 526→531, REQUIRED_FIELDS updated to accept overview OR finding_summary. 8 classes, 27 tests |
+| `test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py` | 28 | Mechanism #225: Vergecast Three-Episode Camera-Device Vocabulary Convergence (Type E). Three consecutive Vergecast episodes (Aug 19-21, 2026) cover five camera products with dramatically asymmetric vocabulary: Meta glasses = "workplace menace" (alarm), Apple AirPods camera = "confounding" (curiosity), Google Pixel 11 = "digicam trend" (enthusiasm), Alexa Plus = "identity crisis" (sympathy), Gemini for Home = "got weird" (amusement). Only Meta gets alarm vocabulary. 90 Seconds on The Verge is SPONSORED BY FACEBOOK/META — financial incentive inversion confirmed. Mia Sato's "Meta glasses are a workplace menace" article cited in BOTH Aug 20 and Aug 21 show notes. 7 classes, 28 tests |

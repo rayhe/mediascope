@@ -2858,5 +2858,87 @@ The celebrity-institutional cascade creates a reinforcing loop: celebrity condem
 - Fashion influence (Guardian influencer backlash)
 - AND the Global South (Business Day Spotlight, Kenya/Ghana incidents)
 
-*Last updated: 2026-08-22 04:00 UTC (Aug 21, 9:00 PM PT)*
+*Last updated: 2026-08-22 10:00 UTC (Aug 22, 3:00 AM PT)*
 *New mechanisms: #221 (9to5Mac Security Bite Apple-Ecosystem Pre-Framing + Cultural-Institutional Cascade)*
+
+### 58. Vergecast Three-Episode Camera-Device Vocabulary Convergence (Aug 19-21, 2026)
+
+**Mechanism #225 — Three consecutive episodes, five camera products, only Meta gets alarm vocabulary**
+
+#### Episode 1058 — "Pixel 11 gets in on the digicam trend" (Aug 21, 2026, 1h 17m)
+
+- **Hosts:** Nilay Patel, Jake Kastrenakes
+- **Guest:** David Imel
+- **Network:** Vox Media Podcast Network
+- **Source:** https://ie.radio.net/podcast/thevergecast, https://podscan.fm/podcasts/the-vergecast
+
+**Coverage Summary:**
+Primarily discusses Google Pixel 11's new "Camera Looks" feature (retro digicam processing). In the "lightning round" segment, covers two camera-adjacent topics:
+1. **Apple camera AirPods leak** — described as "confounding" in the episode description
+2. **Meta glasses are a workplace menace** — cited from Mia Sato's The Verge article (Aug 20)
+
+**Same-Episode Vocabulary Differential:**
+| Entity | Product | Vocabulary | Sentiment Class |
+|--------|---------|-----------|----------------|
+| Apple | AirPods with cameras (unreleased) | "confounding" | Intellectual curiosity |
+| Meta | Ray-Ban glasses (shipping) | "workplace menace" | Alarm/threat |
+| Google | Pixel 11 Camera Looks | "digicam trend" | Enthusiasm |
+
+Within one 77-minute episode, three camera products receive three entirely different vocabulary registers. Only Meta's gets alarm framing.
+
+#### Episode 1057 — "We ask Gemini and Alexa to track cats and give advice" (Aug 20, 2026, 39m)
+
+- **Hosts:** Jennifer Pattison Tuohy, Nilay Patel
+- **Source:** https://ie.radio.net/podcast/thevergecast
+
+**Coverage Summary:**
+Tests home surveillance cameras — Alexa Plus and Gemini for Home watching families, pets, and daily life. Show notes include:
+- "I let Gemini watch my family for the weekend — it got weird"
+- "Google built a great smart speaker, but Gemini isn't ready for it"
+- "Meta glasses are a workplace menace" (in further reading)
+
+**Home Camera vs Smart Glasses Vocabulary:**
+| Entity | Product | Vocabulary | Context |
+|--------|---------|-----------|---------|
+| Amazon | Alexa Plus home camera | "identity crisis," "hit or miss" | Watching your family |
+| Google | Gemini for Home camera | "got weird" | Watching your family |
+| Meta | Ray-Ban glasses | "workplace menace" | In show notes |
+
+Home cameras watching your family = sympathetic/amusing. Smart glasses recording strangers = menace. The consent framework difference is real, but the vocabulary differential is extreme.
+
+#### 90 Seconds on The Verge (Aug 20, 2026)
+
+- **Source:** Podscan.fm transcript
+
+**Critical Finding — Facebook/Meta Sponsor Read:**
+The daily clip opens with: "This episode is brought to you by Facebook. So you were scrolling on Marketplace and there it was, the bike you'd been searching for..."
+
+Then, in the news segment: "Retail and service workers are fed up of your metaglasses and don't want to be in your TikToks. The Verge's Mia Sutter [sic] reports how public-facing workers are being filmed, harassed and creeped out by AI-powered glasses."
+
+**FINANCIAL INCENTIVE INVERSION — CONFIRMED:**
+Facebook/Meta is literally PAYING for the daily show that calls Meta's product the thing workers are "fed up" with and "creeped out" by. This is the opposite of the standard advertiser treatment pattern. The same sponsor whose product is called a menace funds the podcast calling it that. This extends mechanism #213's finding that Meta — as Vox Media advertiser — gets the WORST treatment among camera product makers.
+
+#### Mia Sato — "Meta glasses are a workplace menace" (The Verge, Aug 20, 2026)
+
+- **Author:** Mia Sato (The Verge)
+- **Published:** August 20, 2026
+- **Source:** https://muckrack.com/miasato/articles
+
+**Article Summary:**
+Reports on retail workers (Target, etc.) being pranked and harassed by Meta glasses wearers filming TikTok content. Leads with Toru Hinkle, a Target worker who was repeatedly asked the same question while being filmed. Hinkle was deliberately misgendered by the pranksters.
+
+**Entity Scope:** 100% Meta. The article is about "Meta glasses" as a category. Samsung, Google, Snap, and other camera glasses are not mentioned despite identical recording capabilities. The article is cited in BOTH Aug 20 and Aug 21 Vergecast show notes, amplifying the Meta-specific "menace" framing across multiple podcast episodes.
+
+**Sentiment Score:** -7/10 (Meta), +1/10 (Apple, "confounding" = neutral curiosity), 0/10 (Google Pixel, positive but not privacy-related)
+**Asymmetry Assessment:** HIGH — Five camera products in three episodes; only Meta receives alarm vocabulary. Meta is the sponsor. Financial incentive inversion confirmed.
+
+**Cross-References:**
+- Mechanism #213: Extends Vergecast two-episode cascade to three episodes
+- Mechanism #148: Vox Media Network cross-medium portability
+- Mechanism #205: Apple camera LED double standard
+- Mechanism #221: Mia Sato cross-entity vocabulary bifurcation
+
+---
+
+*Last updated: 2026-08-22 10:00 UTC (Aug 22, 3:00 AM PT)*
+*New mechanism: #225 (Vergecast Three-Episode Camera-Device Vocabulary Convergence — Financial Incentive Inversion Extended)*

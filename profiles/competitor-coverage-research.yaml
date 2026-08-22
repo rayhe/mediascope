@@ -24666,3 +24666,61 @@ publications:
     - https://sherwood.news/markets/snap-ends-perplexity-deal-says-advertising-business-took-a-hit-from-geopolitical-headwinds/
     - https://glassalmanac.com/they-want-to-try-specs-ignites-debate-as-snap-posts-19-revenue-lift-in-2026/
     test_file: tests/test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py
+
+  vergecast_three_episode_camera_vocabulary_convergence_mechanism_225:
+    mechanism_id: 225
+    name: "Vergecast Three-Episode Camera-Device Vocabulary Convergence — Same Podcast,
+      Same Week, Menace for Meta vs Confounding for Apple vs Identity Crisis for Home Cameras"
+    mechanism: "Vergecast Three-Episode Camera-Device Vocabulary Convergence — Same Podcast,
+      Same Week, Menace for Meta vs Confounding for Apple vs Identity Crisis for Home Cameras"
+    type: "Podcast Sentiment Tracking (Type E)"
+    discovery_date: "2026-08-22"
+    iteration: 237
+    finding_summary: >
+      Three consecutive Vergecast episodes (Aug 19-21, 2026) cover five camera-equipped products
+      with dramatically asymmetric vocabulary: Meta glasses = 'workplace menace' (alarm), Apple
+      AirPods camera = 'confounding' (curiosity), Google Pixel 11 = 'digicam trend' (enthusiasm),
+      Alexa Plus home camera = 'identity crisis' (sympathy), Gemini for Home camera = 'got weird'
+      (amusement). Only Meta's product receives alarm vocabulary. The Aug 20 daily clip '90 Seconds
+      on The Verge' is SPONSORED BY FACEBOOK/META — the entity whose product is called a 'menace'
+      is paying for the show. This inverts the expected financial incentive pattern where advertisers
+      receive softer treatment. Extends mechanism #213 Vergecast two-episode cascade with a third
+      consecutive episode and a fifth camera product. Mia Sato's 'Meta glasses are a workplace
+      menace' article (Aug 20) focuses exclusively on Meta; Samsung/Google/Snap glasses with identical
+      camera hardware receive no equivalent coverage. The same article is cited in show notes of
+      BOTH Aug 20 and Aug 21 Vergecast episodes, ensuring the 'menace' framing propagates across
+      multiple audio touchpoints.
+    asymmetry_score: 0.88
+    confounding_factors:
+    - "[STRONG] Meta Ray-Ban glasses have documented use in workplace pranking incidents (Target,
+      retail workers). Samsung/Google/Snap glasses are not yet widely available to consumers, so
+      equivalent workplace incidents cannot occur yet. The asymmetry may reflect market timing."
+    - "[MODERATE] Meta glasses have 7+ million units sold — they ARE the product category for most
+      consumers. Naming Meta specifically may reflect genuine market dominance, not entity bias."
+    - "[MODERATE] Apple AirPods cameras are unreleased and leaked, not shipping. Describing an
+      unreleased product as 'confounding' vs a shipping product as 'menace' may reflect different
+      editorial postures toward rumors vs products in market."
+    - "[MODERATE] Home cameras (Alexa, Gemini) are in private spaces with owner consent. Smart glasses
+      are in public spaces recording non-consenting strangers. Different consent frameworks may
+      justify different vocabulary."
+    - "[WEAK] The Vergecast editorial team may not coordinate vocabulary across Mon-Thu and Friday
+      episodes. The pattern may be emergent rather than deliberate."
+    cross_references:
+    - mechanism_id: 213
+      relationship: extends
+      description: "Extends Vergecast two-episode camera vocabulary cascade to three episodes and five products"
+    - mechanism_id: 148
+      relationship: extends
+      description: "Extends Vox Media Network cross-medium portability with new same-week evidence"
+    - mechanism_id: 205
+      relationship: parallel
+      description: "Apple camera LED double standard — same entity-differentiated vocabulary for identical tech"
+    - mechanism_id: 221
+      relationship: parallel
+      description: "Mia Sato cross-entity camera vocabulary bifurcation in print extends to podcast show notes"
+    source_urls:
+    - https://ie.radio.net/podcast/thevergecast
+    - https://podscan.fm/podcasts/the-vergecast
+    - https://muckrack.com/miasato/articles
+    - https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC
+    test_file: tests/test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py

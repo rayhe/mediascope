@@ -6911,3 +6911,35 @@ James Pero's Apple camera AirPods coverage across 3 articles (May 8, Aug 17, Aug
 - **Test corpus:** 526 test files
 - **Pushed to GitHub:** ✓
 Iteration #234 - Type B: Wesley Hilliard cross-entity tracking completed. Mechanism #223 added.
+
+## Iteration #237 — Type E: Podcast Sentiment Tracking
+**Timestamp:** 2026-08-22 10:00 UTC (Sat Aug 22, 3:00 AM PT)
+**Cron:** mediascope-daily-iteration (hourly)
+
+### Changes
+1. **New mechanism #225:** Vergecast Three-Episode Camera-Device Vocabulary Convergence (Aug 19-21, 2026)
+   - Five camera-equipped products across three consecutive episodes
+   - Only Meta's product receives alarm vocabulary ("workplace menace")
+   - Apple AirPods camera = "confounding" (curiosity), Pixel 11 = "digicam trend" (enthusiasm), Alexa Plus = "identity crisis" (sympathy), Gemini for Home = "got weird" (amusement)
+   - 90 Seconds on The Verge SPONSORED BY FACEBOOK/META — financial incentive inversion confirmed
+   - Mia Sato "Meta glasses are a workplace menace" article cited in show notes of BOTH Aug 20 + Aug 21 episodes
+   - Extends mechanism #213 (Vergecast two-episode cascade → three episodes, five products)
+   - Cross-references: #148 (Vox Media cross-medium), #205 (Apple camera LED double standard), #221 (Mia Sato vocabulary bifurcation)
+   - Asymmetry score: 0.88
+
+2. **New test file:** `test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py` (28 tests, 7 classes)
+   - TestVergecastThreeEpisodeCameraVocabularyConvergence (7 tests)
+   - TestVergecastEpisodeShowNotes (3 tests)
+   - TestNinetySecondsOnTheVerge (2 tests)
+   - TestFiveCameraProductVocabulary (4 tests)
+   - TestFinancialIncentiveInversion (4 tests)
+   - TestMiaSatoArticleEntityScope (3 tests)
+   - TestCrossReferenceIntegrity (5 tests)
+
+3. **Updated podcast-sentiment.md:** Entry #58 — Vergecast Aug 19-21 three-episode cluster with same-episode vocabulary differential analysis, financial incentive inversion documentation, and five-product sentiment comparison
+
+### Stats
+- Mechanisms: 225
+- Test files: 532
+- Tests in new file: 28 (all passing)
+- Podcast sentiment entries: 58
