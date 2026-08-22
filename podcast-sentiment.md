@@ -3033,3 +3033,50 @@ NBC News owned by Comcast/NBCUniversal. Comcast spinoff of NBCU announced Jun 29
 
 *Last updated: 2026-08-22 18:05 UTC (Aug 22, 11:05 AM PT)*
 *New mechanism: #232 (NBC News Broadcast Gender-Framed Camera Wearable Entity Selection — Cross-Medium Alarm Vocabulary Portability)*
+
+---
+
+### 60. ICE/DHS Institutional Ban Cascade — Cross-Sovereign Meta-Exclusive Stigma (Aug 19-22, 2026)
+
+**Type:** Cross-sovereign institutional ban analysis
+**Date Range:** Aug 19-22, 2026
+**Mechanism:** #236
+**Sources:** The Register, Gizmodo, TechRepublic, SC Media, PhoneArena, Reuters, Glasgow Times
+
+**Coverage Summary:**
+The ICE internal memo (Aug 19) banning "Meta Glasses or similar devices" triggered 6+ articles in 48 hours. ALL outlets led headlines with Meta specifically despite the memo covering all camera-enabled wearables.
+
+**THE DHS PARADOX:**
+ICE (part of DHS) bans consumer Meta glasses while DHS simultaneously seeks $7.5M to develop biometric-enabled smart glasses with facial recognition for field agents. No outlet frames this contradiction as evidence that the institutional concern is about CONTROL of surveillance capability, not about camera-on-face technology per se.
+
+**Headline Analysis:**
+| Outlet | Headline | Meta Named | Competitor Named |
+|--------|----------|------------|------------------|
+| The Register | "ICE boss to agents: Leave the Meta spy glasses at home" | YES (+ "pervert glasses" in subhead) | NONE |
+| Gizmodo | "Even ICE Thinks Smart Glasses Are a Privacy Liability" | YES (body) | NONE |
+| TechRepublic | "ICE Warns Employees Against Meta Smart Glasses" | YES | NONE |
+| SC Media | "ICE reminds employees to leave Meta smart glasses at home" | YES | NONE |
+| PhoneArena | "ICE agents are wearing Meta glasses on duty" | YES | NONE |
+| Reuters | "UK cinemas restricting Meta AI and other smart glasses" | YES | NONE |
+
+**DUAL-LABELING FIRST:**
+The Register uses BOTH "spy glasses" (headline) AND "pervert glasses" (subhead/body) in the same article. First documented case of a single outlet applying two distinct stigma labels to Meta in one piece.
+
+**INSTITUTIONAL AUTHORITY AMPLIFICATION:**
+Gizmodo's "Even ICE" prefix weaponizes government institutional authority to amplify consumer stigma. The "Even" implies: if the surveillance agency thinks it's too much surveillance, ordinary consumers should be alarmed.
+
+**COMPETITOR POSITIONING SHIFT:**
+RayNeo iO Smart Glasses (Aug 21) actively markets camera absence as advantage. Stuff.tv headline: "With no onboard cameras, these smart glasses won't earn you any nasty nicknames." The smart glasses market is bifurcating into "camera glasses" (Meta = stigma) vs. "display glasses" (RayNeo/XREAL = aspirational).
+
+**Entity Coverage Assessment:**
+| Entity | Named in ANY institutional ban (10+) | Named in ICE coverage |
+|--------|--------------------------------------|----------------------|
+| Meta | YES (all) | YES (all 6+ articles) |
+| Samsung | NO | NO |
+| Google | NO | NO |
+| Apple | NO | NO |
+| Snap | NO | NO |
+
+**Sentiment Score:** -8/10 (strongly negative — government ban + cross-sovereign cascade)
+**Asymmetry Assessment:** HIGH (0.85) — 10+ institutional bans across 4 countries ALL name Meta exclusively. DHS paradox unremarked. Dual-labeling and authority amplification techniques documented.
+**Cross-references:** #157 (Global Institutional Discourse), #168 (Victoria Song Portability), #225 (Vergecast), #228 (Gizmodo), #232 (NBC News)

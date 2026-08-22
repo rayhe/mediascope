@@ -1,6 +1,50 @@
 ---
 ---
 
+## Iteration #246 — Sat 2026-08-22 15:00 PT (Type D: Test & Verify)
+
+**Focus: YAML parse fix, doc sync, mechanism profile integrity**
+
+- **Type:** Test & Verify (Type D)
+- **Test file:** `tests/test_type_d_3pm_cross_validation_aug22.py`
+- **Tests:** 6 classes, 20 tests (all passing)
+
+**BUGS FOUND AND FIXED:**
+
+1. **YAML Parse Error (P0):** `competitor-coverage-research.yaml` had 2 test
+   collection errors. Mechanism #232 was appended as a list item (`- mechanism_id: 232`)
+   at column 3 inside the `publications:` mapping block. Converted to mapping key
+   format consistent with mechanisms #193-#230. This fixed `test_type_d_09am_cross_validation_aug16`
+   and `test_type_d_aug6_cross_validation` (144 tests recovered).
+
+2. **Missing mechanism profiles (P1):** 4 mechanisms referenced in test files
+   had no YAML profile entries in `competitor-coverage-research.yaml`:
+   - #231: Snap Specs CLAD Quad-AI Developer Ecosystem (score 0.68)
+   - #233: eWeek TechnologyAdvice Entity-Selective Privacy Docs (score 0.74)
+   - #234: Malcolm Owen AppleInsider Aspirational-Cautionary Dyad (score 0.81)
+   - #235: Specs Inc. Irenic Activist Pre-Launch Incentive (score 0.72)
+
+3. **Doc sync drift (P2):** README.md and ARCHITECTURE.md were stale:
+   - Test file count: 540 → 544
+   - Pytest-collected count: ~19,000 → ~19,795
+   - 9 aug22 test files missing from README, 8 from ARCHITECTURE
+   - README body text stat line inconsistent with header table
+
+**REGRESSION VERIFICATION:**
+- Previously-failing tests: 144/144 pass
+- New Type D tests: 20/20 pass
+- Total verified: 164 tests across 3 files
+
+### Stats
+- **New test file:** 1 (20 tests, all passing)
+- **YAML parse errors fixed:** 1 (2 test files unblocked, 144 tests recovered)
+- **Mechanism profiles added:** 4 (#231, #233, #234, #235)
+- **Doc entries added:** 9 to README, 9 to ARCHITECTURE
+- **Test corpus:** 544 files (~19,795 tests)
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #245 — Sat 2026-08-22 14:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #235: Specs Inc. Activist-Investor Pre-Launch Coverage Incentive Architecture**
@@ -7599,3 +7643,55 @@ relationship with PetaPixel.
 - Mechanisms: 230
 - Test files: 537
 - Tests in new file: 38 (all passing)
+
+---
+
+## Iteration #247 — Sat Aug 22, 2026 16:00 PT
+
+**Type:** E (Podcast Sentiment Tracking)
+**Mechanism:** #236 — ICE/DHS Institutional Ban Paradox: Meta-Exclusive Stigma Propagation Through Cross-Sovereign Ban Cascade
+
+**Finding:**
+The ICE internal memo (Aug 19, 2026) banning "Meta Glasses or similar devices" triggered 6+
+articles in 48 hours, ALL naming Meta exclusively in headlines. The DHS paradox: ICE bans
+consumer Meta glasses while DHS simultaneously seeks $7.5M to develop biometric-enabled smart
+glasses with facial recognition for field agents. Government restricts CONSUMER surveillance
+while expanding GOVERNMENT surveillance using identical form factor.
+
+Across 10+ institutions in 4+ countries (US, UK, Scotland, Germany), ONLY Meta is named.
+Zero institutions have banned Samsung, Google, Apple, or Snap devices. The Register uses
+both "spy glasses" AND "pervert glasses" in a single article (first documented dual-labeling).
+Gizmodo's "Even ICE" headline weaponizes institutional authority for consumer stigma amplification.
+
+**Novel contributions:**
+1. **DHS paradox:** Government banning Meta's consumer camera glasses while developing its own
+   government surveillance glasses with facial recognition ($7.5M budget, TechRepublic)
+2. **Dual-stigma labeling:** The Register's article is the first documented case of a single
+   outlet applying two distinct stigma labels ("spy" + "pervert") in one article
+3. **Institutional authority amplification:** Gizmodo's "Even" prefix as a rhetoric technique
+   that weaponizes government credibility to amplify consumer product stigma
+4. **Competitor anti-positioning:** RayNeo/Stuff.tv "no cameras = no nasty nicknames" shows
+   the category bifurcating into camera (Meta = stigma) vs. display (aspirational)
+5. **Ban cascade propagation cycle:** Institution -> print (48h) -> podcast (1-2 weeks) ->
+   next institution. ICE ban is in Stage 2 (print coverage complete, podcast pending)
+
+**Confounding factors:** 2 STRONG (Meta market dominance, real incidents), 2 MODERATE
+(memo covers "similar devices," competitors pre-launch), 1 WEAK (Snap negligible presence)
+
+**Asymmetry score:** 0.85
+
+### Sources
+- https://www.theregister.com/security/2026/08/19/ice-boss-to-agents-leave-the-meta-spy-glasses-at-home/5289826
+- https://gizmodo.com/even-ice-thinks-smart-glasses-are-a-privacy-liability-2000800271
+- https://www.techrepublic.com/article/news-ice-warns-employees-meta-smart-glasses/
+- https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+- https://www.glasgowtimes.co.uk/news/26464305.meta-glasses-banned-scottish-courts-filming-fears/
+- https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
+- https://www.stuff.tv/hot-stuff/with-no-onboard-cameras-these-smart-glasses-wont-earn-you-any-nasty-nicknames/
+- https://www.ecpat.org.nz/blog/sceptics-call-them-pervert-glasses/
+
+### Stats
+- Mechanisms: 236
+- Test files: 545
+- Tests in new file: 36 (all passing)
+- Podcast sentiment entries: 60
