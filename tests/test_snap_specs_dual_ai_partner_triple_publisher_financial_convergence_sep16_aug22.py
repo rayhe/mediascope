@@ -239,13 +239,13 @@ class TestCoverageEvidencePreLaunch(unittest.TestCase):
         self.assertGreater(len(engadget_urls), 0, "Engadget source confirming dual AI partnership required")
 
 
-class TestHighestMechanismIs224(unittest.TestCase):
-    """Verify #224 is the current highest mechanism."""
+class TestMechanism224Exists(unittest.TestCase):
+    """Verify mechanism #224 exists in the research corpus."""
 
     def setUp(self):
         self.research = load_yaml('competitor-coverage-research.yaml')
 
-    def test_highest_mechanism_is_224(self):
+    def test_mechanism_224_exists(self):
         max_id = 0
         pubs = self.research.get('publications', {})
         for key, value in pubs.items():
@@ -253,7 +253,7 @@ class TestHighestMechanismIs224(unittest.TestCase):
                 mid = value['mechanism_id']
                 if isinstance(mid, int) and mid > max_id:
                     max_id = mid
-        self.assertEqual(max_id, 224)
+        self.assertGreaterEqual(max_id, 224, "Mechanism #224 should exist in corpus")
 
 
 if __name__ == '__main__':

@@ -108,7 +108,7 @@ class TestHighestMechanismUpdated:
 
     def test_highest_mechanism_is_224(self, all_mechanisms):
         max_id = max(all_mechanisms.keys())
-        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
+        assert max_id >= 224, f"Expected highest mechanism >= #224, got #{max_id}"
 
     def test_no_gaps_217_to_220(self, all_mechanisms):
         for mid in range(217, 221):

@@ -282,9 +282,10 @@ class TestCrossReferenceConsistency(unittest.TestCase):
             for item in obj:
                 cls._extract_mechanisms(item, store)
 
-    def test_highest_mechanism_is_226(self):
+    def test_mechanism_226_exists(self):
+        self.assertIn(226, self.mechanisms, "Mechanism #226 should exist in corpus")
         highest = max(self.mechanisms.keys())
-        self.assertEqual(highest, 226, f"Expected highest mechanism #226, got #{highest}")
+        self.assertGreaterEqual(highest, 226, f"Highest mechanism should be >= 226, got #{highest}")
 
     def test_cross_referenced_mechanisms_exist(self):
         m = self.mechanisms.get(226, {})

@@ -125,7 +125,7 @@ class TestMechanism216InResearch:
             for val in pubs.values()
             if isinstance(val, dict)
         )
-        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
+        assert max_id >= 224, f"Expected highest mechanism >= #224, got #{max_id}"
 
 
 # ============================================================

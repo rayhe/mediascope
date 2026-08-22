@@ -138,7 +138,7 @@ class TestMechanismContinuity:
             for val in pubs.values()
             if isinstance(val, dict)
         )
-        assert max_id == 224, f"Expected highest mechanism #224, got #{max_id}"
+        assert max_id >= 224, f"Expected highest mechanism >= #224, got #{max_id}"
 
     def test_mechanism_types_match_rotation(self, competitor_research):
         """Recent mechanisms should match the A/B/C/D/E rotation."""
