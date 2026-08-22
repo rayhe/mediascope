@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~19,000 | Across 529 test files |
+| Tests | ~19,000 | Across 530 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17669 tests** (19000 with parameterized expansion) across 529 test files, each covering a different analytical capability:
+MediaScope has **17669 tests** (19000 with parameterized expansion) across 530 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1043,3 +1043,5 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_petapixel_apple_airpods_camera_privacy_vocabulary_zero_meta_pervert_natural_experiment_aug21.py` | 36 | Mechanism #218: PetaPixel Apple AirPods Camera Privacy Vocabulary Zero vs Meta "Pervert Glasses" Natural Experiment. Same-week same-publication same-camera-wearable-topic natural experiment: Apple AirPods camera articles (Aug 4, May 7, Jun 5) with ZERO privacy vocabulary, then "Meta Can't Stop the Avalanche of Content Filmed on Pervert Glasses" (Aug 18) 14 days later. ZERO 2026 Snap Specs coverage despite 4-camera $2195 launch. Three-tier hierarchy: Meta adversarial, Apple neutral-with-differentiation, Snap invisible. 5 classes, 36 tests |
 | `test_james_pero_gizmodo_apple_airpods_temporal_intensification_reputational_credit_aug21.py` | 37 | Mechanism #219: James Pero (Gizmodo) Apple AirPods Camera Temporal Intensification — Reputational Credit Shield Strengthening. 3 articles May–Aug 2026 show vocabulary protection INTENSIFYING despite increasing hardware evidence: May 8 (rumor, proactive defense, zero alarm), Aug 17 (leaked video, neutral curiosity), Aug 21 (technical specs + 320×320 passive always-on mode, ACTIVE defense contrasting Apple good intent vs Meta "icky consequences" in same paragraph). Extends #211 three-entity gradient with temporal dimension. Scored 0.92. 5 classes, 37 tests |
 | `test_type_d_8pm_cross_validation_aug21.py` | 18 | Type D cross-validation (Aug 21, 8 PM PT / Iteration #231): Fixed mechanism #218 confounders→confounding_factors field rename (dict→string format). Updated stale highest-mechanism assertions #216→#220 in two prior Type D files. Fixed PetaPixel #218 test confounder accessor from dict to string format. Doc sync: 2 missing test files added to ARCHITECTURE.md, 1 to README.md, counts 525→526. Type rotation guard extended to #217-#220 (E, A, B, C). 6 classes, 18 tests |
+| `test_ben_lovejoy_9to5mac_cross_entity_camera_feature_advocacy_inversion_aug22.py` | 30 | Mechanism #223: Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion (Type B). Same journalist frames Meta camera as scandal ("sensitive videos," "any Meta product") and Apple camera as core functionality ("dead on arrival" without it, privacy is "solvable design challenge"). Three articles: Mar 3 Meta contractor scandal, Jul 27 Meta failure as Apple opportunity, Jul 27 same day Apple must have cameras. Financial architecture: Apple affiliate revenue + Apple News+ licensing, $0 Meta. 1 STRONG, 3 MODERATE, 1 WEAK confounders. 7 classes, 30 tests |
+| `test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py` | 43 | Mechanism #224: Snap Spectacles Dual-AI Partner Publisher Financial Convergence (Type C). Snap Specs (Sep 16 consumer launch, $2,195) ships with AI from BOTH OpenAI (20+ publisher deals, $300-400M/yr) and Google (ad revenue + Showcase + AI pilots) — creating TRIPLE publisher financial alignment. Covering Specs favorably simultaneously serves Snap (Meta ad competitor), OpenAI (powers Specs AI, pays publishers), and Google (powers Specs AI, pays publishers) interests. Meta Ray-Ban glasses: powered by Meta AI only, zero publisher deals, competes with publishers for ad revenue. Incentive vectors perfectly INVERTED. Also documents: Snap-Perplexity $400M deal TERMINATED Q1 2026, zero revenue recognized, indirect publisher chain BROKEN. 8 classes, 43 tests |

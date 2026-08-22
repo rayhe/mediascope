@@ -5618,6 +5618,31 @@ entities:
         consumer_launch_event_date: '2026-09-16'
         consumer_launch_location: Los Angeles
         mass_market_target: end of the decade
+        dual_ai_partnership:
+          openai:
+            role: AI assistance in Specs
+            product: My AI integration + Specs AI features
+            financial_direction: Snap pays OpenAI (API customer)
+          google:
+            role: AI assistance in Specs
+            product: Google AI integration in Specs
+            financial_direction: likely mutual (Google provides AI, Snap provides distribution)
+          source_urls:
+          - https://www.engadget.com/2227433/snap-ar-specs-launch-date-september-event/
+          - https://www.phonearena.com/news/snaps-ar-glasses-consumer-focused-unveilng_id182255
+          publisher_financial_convergence:
+            mechanism_id: 224
+            finding: 'Snap Specs ships with AI from BOTH OpenAI (20+ publisher content deals, $300-400M/yr)
+              and Google (dominant publisher ad revenue + Showcase + AI content pilots). When a publication
+              covers Snap Specs favorably, it simultaneously serves: (1) Snap commercial interests (Snap
+              as advertising competitor to Meta), (2) OpenAI commercial interests (OpenAI powers Specs AI,
+              OpenAI pays publishers for content), (3) Google commercial interests (Google powers Specs AI,
+              Google pays publishers via advertising + Showcase). This creates a TRIPLE PUBLISHER FINANCIAL
+              ALIGNMENT concentrated in a single product. For Meta Ray-Ban glasses (powered by Meta AI only):
+              Meta has zero publisher content deals, Meta competes with publishers for advertising revenue.
+              Covering Meta glasses critically serves publishers financial interests. The incentive vectors
+              are perfectly INVERTED: positive Specs coverage aligns with publisher financial interests on
+              3 axes; positive Meta glasses coverage aligns with zero.'
     q2_2026_earnings:
       reported_date: '2026-08-03'
       total_revenue_m: 1599
@@ -5712,19 +5737,31 @@ entities:
         type: platform_integration_deal
         value_m: 400
         structure: cash + equity
-        announced: Q3 2025
-        duration: 1 year
+        announced: Q3 2025 (Nov 5, 2025)
+        duration: 1 year (never completed)
         scope: Perplexity AI search engine integration into Snapchat app
         financial_direction: Perplexity pays Snap
-        revenue_recognition_status: 'NOT yet recognized as of Q1 2026. Snap Q1 report: "the companies have yet to mutually
-          agree on a path to a broader roll out." Revenue forecast explicitly EXCLUDES Perplexity contribution.'
-        perplexity_publisher_chain: 'Perplexity operates $42.5M revenue-sharing program with publishers. Publishers receive
-          80% of Comet Plus subscription revenue. Current participants include Fortune, Der Spiegel, Time, Gannett, The Independent,
-          Blavity. Condé Nast (WIRED parent) has a Perplexity deal (confirmed in Lynch March 2026 memo). This creates a financial
-          chain: Snap → [$400M] → Perplexity → [revenue share] → Condé Nast.'
+        deal_status: TERMINATED
+        termination_date: Q1 2026
+        termination_type: amicable
+        revenue_recognized: $0
+        revenue_recognition_detail: 'Deal ended Q1 2026 before any revenue was recognized. Snap Q1 2026 shareholder letter:
+          "assumes no contribution from Perplexity as we amicably ended the relationship in Q1." Q2 2026 also carried zero
+          Perplexity contribution. MoneyCheck: "The Snapchat parent confirmed it dissolved its $400 million collaboration
+          with Perplexity AI during the first quarter." Wolfe Research noted Snap "remains open to exploring distribution
+          partnerships with alternative AI models or intelligent agents."'
+        perplexity_publisher_chain_status: 'BROKEN. The Snap → Perplexity → Condé Nast financial chain documented in earlier
+          analysis is now dissolved. Perplexity still has publisher deals (Fortune, Der Spiegel, Time, Gannett, etc.) but
+          there is no longer any financial flow from Snap through Perplexity to publishers. The indirect chain that would
+          have connected Snap Spectacles coverage to publisher incentives via Perplexity no longer exists.'
+        market_reaction: 'Snap shares fell ~10% on Q1 2026 earnings report disclosing Perplexity deal end (MoneyCheck).
+          Stock initially jumped 15-16% when deal was announced Nov 2025.'
         source_urls:
         - https://bestmediainfo.com/mediainfo/mediainfo-marketing/snap-posts-stronger-quarter-as-perplexity-ai-inks-400-million-deal-10626382
         - https://www.reuters.com/business/snap-forecasts-quarterly-revenue-below-estimates-ad-competition-hurts-2026-02-04/
+        - https://moneycheck.com/snap-snap-stock-plunges-10-after-perplexity-partnership-ends-and-q2-forecast-falls-short/
+        - https://sherwood.news/markets/snap-ends-perplexity-deal-says-advertising-business-took-a-hit-from-geopolitical-headwinds/
+        - https://www.zacks.com/stock/news/2963510/snap-gears-up-to-report-q2-earnings-whats-in-store-for-the-stock
     publisher_financial_relationships:
       discover_platform:
         type: revenue_sharing
@@ -5738,10 +5775,13 @@ entities:
         - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
       content_licensing_deals: []
       ad_revenue_significance: minimal
-      meta_contrast: Meta has ZERO platform revenue-sharing relationships with Condé Nast. Meta does not operate a Discover-style
-        publisher content monetization platform. Snap has BOTH a direct publisher relationship (Discover) AND an indirect
-        chain (Perplexity → Condé Nast). The entity with MORE cameras (Snap, 4) and MORE publisher financial ties gets LESS
-        privacy scrutiny than the entity with FEWER cameras (Meta, 1) and ZERO publisher financial ties.
+      meta_contrast: 'Meta has ZERO platform revenue-sharing relationships with Condé Nast. Meta does not operate a Discover-style
+        publisher content monetization platform. The Snap → Perplexity → Condé Nast indirect financial chain (previously
+        documented) was DISSOLVED when Snap amicably terminated its $400M Perplexity deal in Q1 2026, zero revenue ever
+        recognized. However, Snap Specs still has AI partnerships with BOTH OpenAI and Google — creating a dual-AI-partner
+        publisher financial alignment. The entity with MORE cameras (Snap, 4) and active AI deals with publishers''
+        financial partners (OpenAI, Google) gets LESS privacy scrutiny than the entity with FEWER cameras (Meta, 1) and
+        ZERO publisher financial ties.'
     source_urls:
     - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
     - https://www.reuters.com/technology/snap-bets-life-beyond-smartphones-with-2195-specs-augmented-reality-glasses-2026-06-16/

@@ -1,6 +1,47 @@
 ---
 ---
 
+## Iteration #235 — Sat 2026-08-22 01:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #224: Snap Spectacles Dual-AI Partner Publisher Financial Convergence — OpenAI + Google Partnerships Create Triple Alignment for September 16 Consumer Launch**
+
+- **Type:** Financial Incentive Mapping (Type C)
+- **Test file:** `tests/test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py`
+- **Tests:** 8 classes, 43 tests
+- **Asymmetry score:** 0.85
+
+**Core finding:** Snap Specs ($2,195, consumer launch September 16, 2026, Los Angeles) ships with AI partnerships from BOTH OpenAI and Google (confirmed by Engadget, PhoneArena, Dataconomy, Android Authority). This creates a TRIPLE PUBLISHER FINANCIAL ALIGNMENT unprecedented for any single smart glasses product:
+
+**Axis 1 — Snap:** $1.6B quarterly revenue (Q2 2026, +19% YoY), competes directly with Meta for advertising budgets. Publications benefit from a healthy Snap advertising ecosystem as an alternative to Meta dominance.
+
+**Axis 2 — OpenAI:** Powers Specs AI assistance. Simultaneously maintains 20+ publisher content licensing deals worth $300-400M/yr (Condé Nast, Vox Media, The Atlantic, WaPo, Guardian, etc.). Covering an OpenAI-powered product favorably aligns with publisher financial relationships.
+
+**Axis 3 — Google:** Powers Specs AI assistance. Simultaneously maintains dominant publisher financial relationships: advertising revenue, Google News Showcase ($1B commitment), AI content pilot deals (Der Spiegel, Guardian, WaPo). Covering a Google-powered product favorably aligns with publishers' most important financial relationship.
+
+**Inversion for Meta Ray-Ban glasses:** Meta AI only. Zero publisher content deals. Competes with publishers for advertising ($60.8B quarterly, 38x Snap). Meta withdrew from all journalism funding since 2022. Covering Meta glasses critically aligns with publisher financial interests on all axes.
+
+**STALE DATA CORRECTION — Snap-Perplexity $400M Deal TERMINATED:**
+The previously documented Snap → Perplexity → Condé Nast indirect financial chain was DISSOLVED when Snap amicably terminated its $400M Perplexity deal in Q1 2026. Zero revenue was ever recognized. Snap shares fell ~10% on Q1 earnings disclosing termination (originally jumped 15-16% on announcement). MoneyCheck and Sherwood News confirmed dissolution. Updated `competitor-entities.yaml` Perplexity section from "NOT yet recognized" to "TERMINATED" with full source chain.
+
+**Files changed:**
+- `profiles/competitor-entities.yaml` — Snap Perplexity deal status corrected (active→TERMINATED), dual-AI partnership section added to Specs, publisher_financial_relationships meta_contrast updated, mechanism #224 financial convergence added
+- `profiles/competitor-coverage-research.yaml` — Mechanism #224 added with 5 confounding factors and 8 source URLs
+- `tests/test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py` — NEW: 8 classes, 43 tests
+- `docs/ARCHITECTURE.md` — Count 529→530, new test file entry added
+- `README.md` — Count 529→530, 2 new test file entries added (#223 + #224)
+
+**Sources:**
+- Engadget: https://www.engadget.com/2227433/snap-ar-specs-launch-date-september-event/
+- PhoneArena: https://www.phonearena.com/news/snaps-ar-glasses-consumer-focused-unveilng_id182255
+- Android Authority: https://www.androidauthority.com/snap-specs-ar-glasses-september-event-3692940/
+- Dataconomy: https://dataconomy.com/2026/07/31/snap-to-reveal-more-about-ar-specs-on-september-16/
+- MarketBeat Q2 earnings: https://www.marketbeat.com/instant-alerts/snap-q2-earnings-call-highlights-2026-08-03/
+- MoneyCheck (Perplexity termination): https://moneycheck.com/snap-snap-stock-plunges-10-after-perplexity-partnership-ends-and-q2-forecast-falls-short/
+- Sherwood News (Perplexity termination): https://sherwood.news/markets/snap-ends-perplexity-deal-says-advertising-business-took-a-hit-from-geopolitical-headwinds/
+- Glass Almanac: https://glassalmanac.com/they-want-to-try-specs-ignites-debate-as-snap-posts-19-revenue-lift-in-2026/
+
+**Cumulative:** 530 test files | 224 mechanisms | 670 mechanism_id entries in YAML
+
 ## Iteration #234 — Sat 2026-08-22 00:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Mechanism #223: Ben Lovejoy (9to5Mac) Cross-Entity Camera Feature Advocacy Inversion — Same Journalist Frames Meta Camera as Scandal, Apple Camera as Core Functionality Requirement**
