@@ -1,6 +1,29 @@
 ---
 ---
 
+## Iteration #237 — Sat 2026-08-22 06:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Mechanism #228: Gizmodo Camera Earbud Category Identity Inversion — Resolution Rationalization**
+
+1. **Core finding:** Three Gizmodo (Keleops AG) articles by Adriano Contreras spanning May–Aug 2026 demonstrate a CATEGORY IDENTITY INVERSION for camera-equipped earbuds. Sony/UW researcher earbuds = "Basically Smart Glasses" (category equivalence with Meta). Apple AirPods = "Aren't Smart Glasses for Your Ears" (active distancing). Both products serve the same purpose: camera → AI environmental context parsing.
+
+2. **Resolution rationalization pattern:** Apple's 1MP cameras framed as "not so good that they represent a huge privacy liability" — treating resolution as a privacy FEATURE. Sony VueBuds used the SAME low-res cameras but were framed as a technical limitation, NOT a privacy protection. Privacy concern with camera wearables is PRESENCE (camera exists), not RESOLUTION.
+
+3. **Vocabulary asymmetry:** Meta gets "icky consequences," "no issue collating user data." Apple gets "Won't Let You Be a Total Creep," "stakes its reputation on being a cut above," "far less intrusive." Reputation treated as evidence of actual privacy practices.
+
+4. **Cross-medium podcast connection:** Vergecast #1058 (same day, Aug 21) mirrors the Gizmodo distancing with "confounding" for AirPods vs "menace" for Meta glasses. 9to5Mac Security Bite (Aug 18) uses same resolution-rationalization argument.
+
+5. **Test file:** 32 tests across 8 test classes (category inversion, resolution rationalization, vocabulary asymmetry, reputation-as-evidence, cross-medium podcast connection, confounders, cross-references, source URLs). All passing.
+
+6. **Asymmetry score: 0.81** | 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+Sources:
+- https://gizmodo.com/someone-shoved-cameras-into-sony-earbuds-and-now-theyre-basically-smart-glasses-2000759999
+- https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194
+- https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+
+---
+
 ## Iteration #236 — Sat 2026-08-22 02:00 PT (Type D: Test & Verify)
 
 **Cross-validation and structural integrity fixes:**
