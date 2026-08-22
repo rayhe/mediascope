@@ -1,6 +1,62 @@
 ---
 ---
 
+## Iteration #239 — Sat 2026-08-22 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #230: Matt Growcoot (PetaPixel) Cross-Entity Camera Privacy Vocabulary Inversion — 10:2 Meta-Adversarial vs Apple-Aspirational Smart Glasses Coverage with Investigative Gap**
+
+- **Type:** Journalist Cross-Entity Tracking (Type B)
+- **Test file:** `tests/test_matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_aug22.py`
+- **Tests:** 7 classes, 38 tests (all passing)
+- **Asymmetry score:** 0.76
+
+**Core finding:** Matt Growcoot, PetaPixel's most prolific writer (former Guardian/Daily Mail
+news photographer, 10 years), wrote 10 Meta smart glasses privacy articles and 2 Apple smart
+glasses articles from Jan-Aug 2026. Every Meta article uses adversarial vocabulary ("disturbing,"
+"douchebag with a camera on your face," "pervert glasses," "glassholes," "creeps clandestinely
+filming," "surreptitious surveillance," "invasion of privacy," "predatory behavior," "surveillance
+conduit"). Every Apple article uses aspirational vocabulary ("eye-catching features," "departure
+from Meta's products," "ring light," "desirable," "advantage," "ultimately dominant," "privacy
+one of its defining principles").
+
+Both companies are building the SAME product feature: camera-equipped smart glasses.
+
+**NOVEL PATTERN — Investigative Gap:** None of the 2 Apple articles investigates whether Apple's
+planned camera will enable the SAME abuse scenarios (clandestine filming, glasshole behavior,
+harassment content creation) that Growcoot documented across 10 Meta articles. The ring light
+article (Apr 13) speculates Apple's design will PREVENT the problem without evidence. Apple's
+camera is a solvable design challenge; Meta's identical camera is a fundamental privacy violation.
+
+**Financial architecture:** PetaPixel earns affiliate revenue through Amazon Associates links
+(visible on every article). Apple products are a major affiliate category for a photography
+publication. Apple News+ distribution likely. Meta has $0 financial relationship with PetaPixel.
+
+**Confounding factors:** 2 STRONG (Meta has actual incidents vs Apple hypothetical; journalistic
+news judgment favors negative events), 2 MODERATE (Apple's documented privacy commitment;
+photography publication camera focus), 1 WEAK (ring light as genuine innovation)
+
+**Cross-references:** extends #218 (PetaPixel AirPods), parallels #223 (Lovejoy camera advocacy
+inversion), #173 (9to5 Network gradient), #228 (Gizmodo category identity inversion)
+
+### Sources
+- https://petapixel.com/2026/01/29/mark-zuckerberg-says-smart-glasses-are-the-future-now-despite-the-creeps/
+- https://petapixel.com/2026/03/05/disturbing-report-says-workers-are-watching-private-footage-taken-on-meta-smart-glasses/
+- https://petapixel.com/2026/03/09/meta-sued-after-workers-watched-private-moments-recorded-on-ai-smart-glasses/
+- https://petapixel.com/2026/04/08/a-douchebag-with-a-camera-on-your-face-should-smart-glasses-record-imagery/
+- https://petapixel.com/2026/04/13/will-apples-smart-glasses-come-with-a-ring-light-around-the-camera/
+- https://petapixel.com/2026/04/15/meta-urged-to-abandon-facial-recognition-plans-for-ray-ban-glasses/
+- https://petapixel.com/2026/07/14/meta-smart-glasses-owners-too-scared-to-wear-them-in-public/
+- https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+- https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
+- https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
+
+### Stats
+- Mechanisms: 230
+- Test files: 537
+- Tests in new file: 38 (all passing)
+
+---
+
 ## Iteration #238 — Sat 2026-08-22 07:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Mechanism #229: MarketWatch (News Corp/Dow Jones) Headline Template Inversion — Meta Success Dismissal vs Apple Problem Insulation**
@@ -7100,3 +7156,39 @@ while fashion partner (EssilorLuxottica/Ray-Ban) is buffered.
 - Test files: 534
 - Tests in new file: 21 (all passing)
 - Podcast sentiment entries: 59
+
+---
+
+## Iteration #239 — Sat Aug 22, 2026 08:00 PT
+
+**Type:** B (Journalist Cross-Entity Tracking)
+**Mechanism:** #230 — Matt Growcoot (PetaPixel) Cross-Entity Camera Privacy Vocabulary Inversion
+
+**Finding:** Matt Growcoot, PetaPixel's most prolific writer (former Guardian/Daily Mail news
+photographer), demonstrates a 10:2 volume ratio of Meta-critical to Apple-positive smart glasses
+coverage from Jan-Aug 2026. Every Meta article uses adversarial/threat vocabulary (disturbing,
+douchebag, pervert glasses, glassholes, predatory, surveillance, invasion of privacy). Both Apple
+articles use aspirational/innovation vocabulary (eye-catching, departure from Meta, ring light,
+desirable, ultimately dominant, privacy as defining principle).
+
+**Novel pattern — Investigative Gap:** None of the Apple articles investigate whether Apple's planned
+camera will enable the SAME abuse scenarios documented in 10 Meta articles. The ring light article
+speculates Apple's design will PREVENT the problem without evidence. Apple's camera is a solvable
+design challenge; Meta's identical camera is a fundamental privacy violation.
+
+**Financial architecture:** PetaPixel earns Apple affiliate revenue through Amazon Associates; Apple
+products are a major affiliate category for a photography publication. Meta has $0 financial
+relationship with PetaPixel.
+
+**Asymmetry score:** 0.76 (5 confounders: 2 STRONG, 2 MODERATE, 1 WEAK)
+
+**Cross-references:** extends #218 (PetaPixel AirPods), parallels #223 (Lovejoy), #173 (9to5 gradient),
+#228 (Gizmodo)
+
+### Sources
+- 10 PetaPixel Meta articles + 2 Apple articles (URLs in YAML profile)
+
+### Stats
+- Mechanisms: 230
+- Test files: 537
+- Tests in new file: 38 (all passing)
