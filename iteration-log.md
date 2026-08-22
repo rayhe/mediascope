@@ -1,5 +1,34 @@
 ---
 
+## Iteration #231 — Fri 2026-08-21 20:00 PT (Type D: Test & Verify)
+
+**Cross-validation and structural integrity fixes:**
+
+1. **Mechanism #218 confounders→confounding_factors:** Same recurring issue from iterations #226 (fixed #214/#215). Mechanism #218 (PetaPixel Apple AirPods camera) was created with `confounders` field using dict format (`{strength:, description:}`) instead of `confounding_factors` with string format (`[SEVERITY] text`). Renamed field and converted all 6 entries to string format.
+
+2. **Stale highest-mechanism assertions:** Two prior Type D test files (`test_type_d_3pm_cross_validation_aug21.py` and `test_type_d_10am_cross_validation_aug21.py`) hardcoded `test_highest_mechanism_is_216` but 4 mechanisms (#217-#220) were added in iterations #227-#230. Updated both to expect #220.
+
+3. **PetaPixel test confounder accessor:** `TestConfounderDocumentation` in `test_petapixel_apple_airpods_camera_privacy_vocabulary_zero_meta_pervert_natural_experiment_aug21.py` was reading `mechanism.get('confounders', [])` and parsing dicts with `c.get('strength')`. Updated to read `confounding_factors` and parse strings with `[SEVERITY]` prefix.
+
+4. **Missing doc entries:** 2 test files missing from ARCHITECTURE.md (`test_type_d_05am_cross_validation_aug21.py`, `test_apple_q3_2026_advertising_siri_ai_compound_publisher_financial_capture_timing_aug21.py`) and 1 from README.md (`test_type_d_05am_cross_validation_aug21.py`). Added all.
+
+5. **Doc count sync:** README.md and ARCHITECTURE.md updated from 525 to 526 test files.
+
+6. **Type rotation verification:** Mechanisms #217-#220 confirmed as E, A, B, C rotation (correct continuation from prior cycle).
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — #218 confounders→confounding_factors, dict→string
+- `tests/test_type_d_3pm_cross_validation_aug21.py` — Highest mechanism #216→#220
+- `tests/test_type_d_10am_cross_validation_aug21.py` — Highest mechanism #216→#220
+- `tests/test_petapixel_apple_airpods_camera_privacy_vocabulary_zero_meta_pervert_natural_experiment_aug21.py` — Confounder accessor fix
+- `docs/ARCHITECTURE.md` — 3 missing entries added, count 525→526
+- `README.md` — 2 missing entries added, count 525→526
+- `tests/test_type_d_8pm_cross_validation_aug21.py` — NEW: 6 classes, 18 tests
+
+**Test results:** 59 tests across 4 affected files all passing (was 7 failures before fix). 526 total test files.
+
+---
+
 ## Iteration #230 — Fri 2026-08-21 19:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #220: Yahoo (Apollo) Apple Siri AI Camera AirPods Revenue Pipeline — Compound Coverage Incentive Architecture**
