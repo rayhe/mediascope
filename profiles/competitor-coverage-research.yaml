@@ -24275,4 +24275,59 @@ publications:
       "Met''s success has opened the floodgates." No Samsung/Google/Apple/Snap named in any regulatory action. Two independent
       vectors (UK fashion-academic, Australian regulatory-institutional) reach the same Meta-exclusive conclusion. Scored 0.82.'
     test_count: 30
+  mechanism_218_petapixel_apple_airpods_camera_privacy_vocabulary_zero:
+    mechanism_id: 218
+    name: PetaPixel Camera-Specialist Same-Month Apple AirPods Privacy Vocabulary Zero vs Meta "Pervert Glasses"
+    type: A
+    discovery_date: '2026-08-21'
+    iteration: 228
+    overview: 'PetaPixel, a camera/photography specialist publication, published "AirPods With Cameras Could Be Released
+      This Year" (Aug 4, 2026) with ZERO privacy vocabulary, then "Meta Can''t Stop the Avalanche of Content Filmed on
+      Pervert Glasses" (Aug 18, 2026) with maximum adversarial framing — 14 days apart. A THREE-TIER coverage hierarchy
+      emerges: TIER 1 Meta (adversarial, 5+ articles, "pervert"/"creeps"/"surveillance" labels), TIER 2 Apple (neutral,
+      3+ articles, zero privacy terms, active differentiation FROM Meta via "Unlike... Meta''s smart glasses" clause),
+      TIER 3 Snap (ZERO articles about 2026 consumer Specs despite 4-camera $2,195 device). The May 7 Apple article adopts
+      manufacturer framing: "not designed at all for actually capturing photos or videos" — a camera-specialist publication
+      deferring to the manufacturer''s stated intent rather than independently evaluating camera hardware. Apple AirPods
+      cameras are LESS visible (inside ear canal) with NO bystander-visible LED, making them arguably a GREATER covert
+      surveillance risk than Meta''s visible glasses cameras with LED indicators. Extends #178 (PetaPixel Samsung Zero)
+      from two tiers to three tiers.'
+    publication: PetaPixel
+    competitor_entities: Apple (camera AirPods), Snap (Specs 2026)
+    asymmetry_score: 0.88
+    confounders:
+    - strength: STRONG
+      description: 'Meta has genuine documented misuse incidents (massage parlor recordings, Kenya content review,
+        NameTag); Apple AirPods cameras have not shipped — no misuse data exists'
+    - strength: STRONG
+      description: 'Different product stages — Meta glasses are deployed (7M+ units); Apple AirPods cameras are
+        pre-launch rumors. Privacy concerns scale with deployment.'
+    - strength: MODERATE
+      description: 'Meta cameras capture photos AND feed AI; Apple reportedly AI-only. But a camera specialist should
+        evaluate hardware capabilities, not manufacturer stated intent.'
+    - strength: MODERATE
+      description: 'PetaPixel audience cares about photography — Meta photo-capable camera is more editorially relevant
+        than Apple AI-only camera.'
+    - strength: WEAK
+      description: 'Different form factors create different social expectations — glasses are coded as "looking at"
+        while earbuds are coded as "listening to."'
+    - strength: WEAK
+      description: 'Article genre — Apple articles sourced from Bloomberg reporting (tech news aggregation); Meta
+        articles are editorial/investigative.'
+    cross_references:
+    - 178
+    - 194
+    source_urls:
+    - https://petapixel.com/2026/08/04/airpods-with-cameras-could-be-released-this-year/
+    - https://petapixel.com/2026/05/07/apple-is-reportedly-testing-airpods-with-built-in-cameras/
+    - https://petapixel.com/2026/08/18/meta-cant-stop-the-avalanche-of-content-filmed-on-pervert-glasses/
+    - https://petapixel.com/2026/01/29/mark-zuckerberg-says-smart-glasses-are-the-future-now-despite-the-creeps/
+    - https://petapixel.com/2026/03/24/these-smart-glasses-come-with-a-cover-for-the-camera-inmo-go-3/
+    test_file: tests/test_petapixel_apple_airpods_camera_privacy_vocabulary_zero_meta_pervert_natural_experiment_aug21.py
+    finding_summary: 'PetaPixel published Apple AirPods camera articles (Aug 4, May 7, Jun 5) with ZERO privacy vocabulary
+      and active manufacturer-framing adoption ("Unlike... Meta''s smart glasses"), then "Meta Can''t Stop the Avalanche of
+      Content Filmed on Pervert Glasses" (Aug 18) — 14 days later. ZERO 2026 Snap Specs articles despite 4-camera $2,195
+      launch. Three-tier hierarchy: Meta adversarial, Apple neutral-with-differentiation, Snap invisible. Camera specialist
+      defers to manufacturer intent rather than independently evaluating camera hardware privacy risk. Scored 0.88.'
+    test_count: 36
 research_period: 2024-08-01 to 2026-08-21

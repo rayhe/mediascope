@@ -6599,3 +6599,54 @@ same topic domain, sustained over 7+ months (Jan–Aug 2026).
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** ~18,808 tests across 514 files
 - **Pushed to GitHub:** ✓
+
+## Iteration #228 — Fri 2026-08-21 17:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Discovery: Mechanism #218 — PetaPixel Camera-Specialist Same-Month Apple AirPods Privacy Vocabulary Zero vs Meta "Pervert Glasses"
+
+**Publication:** PetaPixel (camera/photography specialist)
+**Competitor entities:** Apple (camera AirPods), Snap (Specs 2026)
+**Asymmetry score:** 0.88
+
+### Core Finding
+
+PetaPixel published "AirPods With Cameras Could Be Released This Year" (Aug 4) with
+ZERO privacy vocabulary, then "Meta Can't Stop the Avalanche of Content Filmed on
+Pervert Glasses" (Aug 18) — 14 days apart. Three-tier coverage hierarchy emerges:
+
+- **TIER 1 — Meta (adversarial):** 5+ articles with "pervert," "creeps," "surveillance,"
+  "clandestine," "havoc," "bad actors," "privacy-violating" vocabulary
+- **TIER 2 — Apple (neutral with active differentiation):** 3+ articles with ZERO privacy
+  terms; May 7 article adopts manufacturer framing: "Unlike wearable, camera-equipped
+  devices like Meta's smart glasses, [AirPods cameras are] not designed at all for
+  actually capturing photos or videos"
+- **TIER 3 — Snap (zero coverage):** ZERO 2026 Snap Specs articles despite 4-camera
+  $2,195 device launch at AWE on Jun 16
+
+**Key insight — Manufacturer-framing adoption:** A camera-specialist publication defers
+to Apple's stated intent ("not for capturing photos") rather than independently evaluating
+camera hardware. Apple's AirPods cameras are LESS visible (inside ear canal) with NO
+bystander-visible LED, making them arguably a GREATER covert surveillance risk than Meta's
+visible glasses cameras with LED indicators. Extends #178 (PetaPixel Samsung Zero) from
+two tiers to three.
+
+### Artifacts
+
+1. **New test file:** `test_petapixel_apple_airpods_camera_privacy_vocabulary_zero_meta_pervert_natural_experiment_aug21.py`
+   - 33 tests across 8 test classes, all passing
+   - Classes: MechanismYAML, ApplePrivacyVocabularyZero, MetaPervertVocabularyPresent,
+     SameWeekNaturalExperiment, SnapSpecsZeroCoverage2026, ManufacturerFramingAdoption,
+     ThreeTierCoverageHierarchy, ConfounderDocumentation, CrossReferences
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #218, asymmetry_score 0.88,
+     cross-references #178 and #194, 6 confounding factors (2 STRONG, 2 MODERATE, 2 WEAK)
+
+### Stats
+- **New test file:** 1 (33 tests, all passing)
+- **Mechanism ID:** #218
+- **Asymmetry score:** 0.88
+- **Cross-references:** 2 (#178, #194)
+- **Confounders:** 6 (2 STRONG, 2 MODERATE, 2 WEAK)
+- **Test corpus:** 525 test files
+- **Pushed to GitHub:** ✓
