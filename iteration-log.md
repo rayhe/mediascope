@@ -1,6 +1,77 @@
 ---
 ---
 
+## Iteration #243 — Sat 2026-08-22 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #233: eWeek (TechnologyAdvice) "Smart Glasses Cheat Sheet" Entity-Selective
+Privacy Incident Documentation**
+
+- **Type:** Competitor Coverage Deep Dive (Type A)
+- **Publication:** eWeek (owned by TechnologyAdvice, Nashville TN; acquired from QuinStreet May 2020)
+- **Competitor entities:** Meta vs Snap, Google, Apple (multi-entity comparison)
+- **Test file:** `tests/test_eweek_technologyadvice_cheat_sheet_entity_selective_privacy_incident_documentation_aug22.py`
+- **Tests:** 10 classes, 32 tests (all passing)
+
+**Core finding:** eWeek's "Smart Glasses Cheat Sheet" (Jul 1, 2026) — a comprehensive
+multi-entity reference guide covering 8+ smart glasses companies — contains a dedicated
+"Privacy, legal, and social-acceptance issues in 2026" section with 7 items. Of these:
+
+- 4 items: General regulatory frameworks (BIPA, SB 1130, EU AI Act, federal law)
+- 3 items: Entity-specific privacy incidents — ALL THREE exclusively about Meta:
+  (1) Name Tag backlash (70+ orgs, Senate letters)
+  (2) Third-party facial recognition (Harvard students + Ray-Ban Meta)
+  (3) Voice data by default (Meta AI wake word recordings)
+- 0 items: Entity-specific privacy incidents for Snap, Google, Apple, Samsung
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **REFERENCE ANCHORING EFFECT:** "Cheat sheet" articles are designed to be definitive,
+   re-consulted guides. When such a reference systematically documents privacy incidents
+   for one company while omitting comparable concerns for competitors, it creates a
+   durable anchoring effect more impactful than individual news articles.
+
+2. **BUYER'S GUIDE "SAFE" LABEL:** The article explicitly recommends "Waiting for the
+   'safe' mainstream option" for Apple (late 2027) and Google/Samsung (fall 2026) — companies
+   with ZERO shipped camera-equipped smart glasses. This implicitly positions Meta
+   (84% market share, 7M+ units shipped) as the UNSAFE option.
+
+3. **CREEPY ATTRIBUTION SHIELDING:** Even Realities section attributes "creepy glasses
+   backlash" to "Meta and Google Glass before it" — tagging Meta and historical Google
+   Glass while shielding current competitors (Snap's 4 cameras, Google's 2026 Android XR)
+   from the same label.
+
+4. **AFFILIATE REVENUE PARADOX:** eWeek recommends Meta Ray-Ban Gen 2 as "best all-around
+   everyday AI glasses" in its buyer's guide (earning affiliate revenue from purchases)
+   while documenting 3 Meta-specific privacy incidents (discouraging purchases). The
+   article simultaneously monetizes and stigmatizes the same product.
+
+**Counterbalancing fairness:** Article credits Meta's LED indicator as superior to
+Even Realities' Conversate feature ("unlike Meta's LED" — acknowledging Meta's approach
+is BETTER for bystander privacy).
+
+**Privacy item distribution across entities:**
+| Entity | Camera Hardware | Entity-Specific Privacy Items | Framing |
+|--------|---------------|------|---------|
+| Meta | 1× 12MP camera | 3 (Name Tag, facial recognition, voice data) | Market leader + privacy-problematic |
+| Snap | 4 cameras (2 RGB + 2 IR) | 0 | "genuine third-party app/agent platform" |
+| Google | 1× 12MP camera | 0 | "co-designed with fashion partners" |
+| Apple | Camera planned | 0 | "safe mainstream option" |
+
+**Confounders:** 2 STRONG (Meta has real shipped-product incidents; market dominance makes
+incidents more newsworthy), 2 MODERATE (Google Glass backlash IS mentioned historically;
+article credits Meta's LED), 1 WEAK (space constraints don't explain 3/3 selectivity)
+
+### Stats
+- **New test file:** 1 (32 tests, all passing)
+- **Mechanism ID:** #233
+- **Asymmetry score:** 0.62
+- **Cross-references:** 5 (#33, #122, #183, #221, #229)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** ~541 files
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #242 — Sat 2026-08-22 11:00 PT (Type E: Podcast/Broadcast Sentiment Tracking)
 
 **Mechanism #232: NBC News Broadcast Gender-Framed Camera Wearable Entity Selection — Cross-Medium Alarm Vocabulary Portability**
