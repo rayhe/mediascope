@@ -24383,4 +24383,39 @@ publications:
     test_file: tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py
     finding_summary: "Yahoo (Apollo) has a four-layer compound financial incentive architecture (existing Apple iOS partnership, Siri AI variable-compensation deal negotiations, camera AirPods as Siri usage multiplier, Apollo Apple equity holdings) that predicts and explains Engadget's measured coverage asymmetry: Apple camera wearables get aspirational/personal vocabulary with zero alarm terms and privacy concerns routed through Meta; Meta camera wearables get 6+ investigative articles with alarm vocabulary (creep/predator/pervert/surveillance conduit). Aug 18 macOS camera AirPods leak received coverage silence from Engadget despite concurrent Meta investigation output. Extends #186 (triple-device) to quad-device and connects #196 (Apple Siri AI variable compensation) to specific Yahoo/Engadget coverage measurement."
     test_count: 30
+  9to5mac_security_bite_apple_preframing_celebrity_institutional_cascade_mechanism_221:
+    mechanism_id: 221
+    name: "9to5Mac Security Bite Apple-Ecosystem Pre-Framing + Celebrity-Institutional Privacy Cascade"
+    type: "E"
+    finding_summary: >
+      9to5Mac Security Bite (Arin Waichulis, Aug 18, 2026) pre-frames unreleased Apple camera AirPods
+      as making Meta glasses "look reckless" — using security-column branding to lend adversarial
+      authority to what is product advocacy. The column expresses zero doubt about an unannounced
+      product's privacy implementation while indicting Meta's shipping product. Published same day as
+      macOS 27 RC leak. Coincides with celebrity-institutional cascade: Lorde concert condemnation,
+      Jimmy Kimmel late-night mockery, DEF CON recording glasses ban, EFF approval, UK Comic Con bans,
+      Seattle diner policy, Guardian influencer backlash report. All 7 celebrity/institutional actions
+      target Meta exclusively. Business Day Spotlight (South Africa, Jul 15) extends discourse to
+      Global South with Kenya/Ghana tourist recording incidents.
+    asymmetry_score: 0.85
+    confounding_factors:
+    - "[MODERATE] Meta 69% smart glasses market share (IDC Q1 2026) means smart glasses as category
+      genuinely IS Meta product for most consumers. Entity-selectivity may partially reflect market
+      dominance rather than purely asymmetric framing."
+    - "[MODERATE] 9to5Mac Security Bite is explicitly an Apple-ecosystem column so readers expect
+      Apple-favorable coverage. However Security Bite brand implies adversarial security analysis,
+      creating credibility asymmetry between brand positioning and actual content posture."
+    - "[WEAK] Lorde, Kimmel, and DEF CON may have arrived at positions independently through genuine
+      privacy concern. However exclusive targeting of Meta not competitors with identical hardware
+      demonstrates cultural narrative entity-selectivity regardless of individual motivation."
+    - "[STRONG] Apple camera AirPods have NOT shipped. Pre-framing is based on leaked information and
+      speculation about Apple privacy implementation. Evaluating unreleased product privacy against
+      shipping product is inherently asymmetric methodology."
+    source_urls:
+    - https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+    - https://www.businessday.co.za/lifestyle/gadgets-and-gear/2026-07-15-podcast-what-privacy-and-security-risks-do-ai-smart-glasses-pose/
+    - https://www.webpronews.com/metas-pervert-glasses-spark-growing-backlash-as-privacy-fears-hit-smart-eyewear-sales/
+    - https://petapixel.com/2026/08/18/meta-cant-stop-the-avalanche-of-content-filmed-on-pervert-glasses/
+    - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
+    test_file: tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py
 research_period: 2024-08-01 to 2026-08-21
