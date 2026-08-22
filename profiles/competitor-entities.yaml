@@ -5586,6 +5586,82 @@ entities:
     ceo: Evan Spiegel
     market_cap_approx: ~$14B (Aug 2026)
     stock_ticker: SNAP
+    specs_inc_subsidiary:
+      mechanism_id: 235
+      date_established: '2026-01-28'
+      type: wholly-owned subsidiary
+      parent: Snap Inc.
+      purpose:
+      - greater operational focus and alignment
+      - new partnerships and capital flexibility
+      - potential for minority investment
+      - distinct brand identity
+      - clearer valuation of the business
+      hiring_at_announcement: ~100 global positions
+      minority_investment_path: open (no investors disclosed as of Aug 2026)
+      cumulative_ar_investment_b: 3.5
+      cumulative_ar_investment_years: 11
+      annual_burn_estimate_m: 500
+      annual_burn_source: Irenic Capital Management
+      source_urls:
+      - https://www.reuters.com/business/snap-seeks-investments-new-smart-glasses-unit-takes-meta-2026-01-28/
+      - https://www.neowin.net/news/snap-spins-off-smart-glasses-team-into-separate-company/
+    irenic_capital_activist_pressure:
+      mechanism_id: 235
+      date: '2026-03-31'
+      firm: Irenic Capital Management
+      portfolio_manager: Adam Katz
+      stake_pct_class_a: 2.5
+      campaign_name: 'Snap Back to Reality: Save Snap Now'
+      campaign_website: SaveSnapNow.com
+      snap_market_cap_at_letter_b: 7.2
+      target_market_cap_b: 35
+      target_price_per_share: 26.37
+      key_demands:
+      - Spin off or shut down Specs ($500M/yr burn)
+      - Cut ~1,000 employees (21% headcount reduction)
+      - Monetize AI opportunity
+      - Increase share repurchases
+      - Shift to performance-based equity compensation
+      specs_characterization: strategic liability
+      market_reaction: 13% stock jump on letter, suggesting institutional support for Irenic thesis
+      spiegel_defense_date: '2026-06-16'
+      spiegel_defense_venue: Reuters interview at AWE / Specs consumer launch
+      spiegel_key_quote: 'While investors may want more short-term profitability, our job at Snap
+        is to drive long-term profitability and the long-term success of the company.'
+      spiegel_partnership_hint: 'Spiegel expects to share more later this year re partnerships over
+        a longer period of time.'
+      coverage_incentive_analysis: 'Irenic activism creates a BINARY COVERAGE INCENTIVE for the
+        25-day window before Sep 16 consumer launch: (1) Positive coverage → Specs survives →
+        Snap ad platform strengthened → publishers benefit from competitive ad market. (2) Negative
+        coverage → validates Irenic kill thesis → Specs killed/spun off → Meta monopoly in smart
+        glasses strengthened → Meta ad dominance further concentrated → publishers lose competitive
+        leverage vs Meta ad platform ($243B). The market has already endorsed the kill thesis (13%
+        stock jump on Irenic letter), making positive Specs coverage contrarian but financially
+        aligned with publisher interests.'
+      dual_class_mitigation: 'Spiegel controls Snap through Class C shares (10 votes each). Irenic
+        2.5% Class A stake gives limited governance power. Activist CAN influence narrative and
+        stock price but CANNOT force Specs shutdown through voting. Weakens the corporate survival
+        binary — but does not eliminate it.'
+      restructuring_partial_capitulation: 'Snap April 2026 restructuring eliminated ~1,000 jobs,
+        roughly matching Irenic demand. Snap gave Irenic cost cuts but NOT the Specs shutdown.
+        Q2 restructuring charges $128.5M.'
+      perplexity_cancellation_amplifier: 'The $400M/yr Perplexity deal (terminated Q1 2026, $0 revenue)
+        would have almost fully offset Specs $500M/yr burn. Its cancellation amplifies the importance
+        of minority investment and positive coverage for Specs survival.'
+      confounding_factors:
+      - 'STRONG: Market share — Meta has 84% of smart glasses market (7M+ units). Higher scrutiny
+        for dominant market leaders is legitimate.'
+      - 'STRONG: Incident history — Meta has documented privacy incidents. Specs has none (unshipped).'
+      - 'MODERATE: Activist legitimacy — Irenic concerns about Specs financial viability may be
+        accurate. Coverage reflecting this is journalism, not bias.'
+      - 'MODERATE: Price niche — $2,195 targets early adopters, limiting mass privacy risk.'
+      - 'WEAK: Dual-class stock — Spiegel can sustain Specs despite activist pressure.'
+      source_urls:
+      - https://www.morningstar.com/news/business-wire/20260331059373/irenic-sends-letter-to-snap-inc-co-founder-and-ceo-evan-spiegel-and-issues-presentation-outlining-actionable-steps-to-unlock-value
+      - https://www.barrons.com/articles/snap-stock-surges-activist-investor-stake-6ed7192f
+      - https://www.reuters.com/business/finance/snap-ceo-spiegel-defends-specs-long-term-bet-pushes-back-against-activist-2026-06-16/
+      - https://www.thewrap.com/industry-news/business/snap-stake-activist-investor-irenic-capital-management-stock-reaction/
     hardware_devices:
       specs_consumer:
         name: Snap Specs (6th gen, consumer)
