@@ -1,7 +1,94 @@
 ---
 ---
 
+## Iteration #244 — Sat 2026-08-22 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #234: Malcolm Owen (AppleInsider) — Aspirational-Cautionary Dyad with
+Entity-Selective Privacy Vocabulary in Smart Glasses Coverage**
+
+- **Type:** Journalist Cross-Entity Tracking (Type B)
+- **Journalist:** Malcolm Owen, Senior Writer / Product Comparison Expert
+- **Publication:** AppleInsider (Apple-ecosystem focused, founded 1997)
+- **Competitor entities:** Meta vs Apple, Snap, Samsung, Google (5-entity comparison)
+- **Test file:** `tests/test_malcolm_owen_appleinsider_cross_entity_aspirational_cautionary_dyad_privacy_vocabulary_aug22.py`
+- **Tests:** 10 classes, 29 tests (all passing)
+
+**Core finding:** Malcolm Owen, AppleInsider's primary smart glasses writer, applies
+a systematic aspirational-cautionary vocabulary dyad across 6+ articles (Sep 2025–Jul 2026):
+
+- **Apple:** Aspirational vocabulary — "challenge the entire industry," "take over,"
+  "design pedigree," "strong brand," "The Apple Way," "maintains its image of
+  maintaining privacy," "reputation for privacy to uphold"
+- **Meta:** Cautionary vocabulary — "reputation for failing," "anchor around its neck,"
+  "poisoning the well," "distrust," "jaded"
+- **Snap/Samsung/Google:** Competitively neutral, zero privacy-alarm vocabulary
+  despite shipping/announcing identical 12MP camera hardware
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **JOURNALIST-LEVEL APPLE-ECOSYSTEM CROSS-ENTITY:** First journalist-specific
+   (not just publication-level) cross-entity analysis of an Apple-ecosystem writer.
+   Prior mechanisms #183 (Cult of Mac) and #221 (9to5Mac) documented publication-level
+   patterns. Owen is the specific journalist whose 6+ articles define the pattern at
+   AppleInsider, adding editorial metaphors ("anchor around its neck," "poisoning the
+   well") beyond his Bloomberg/Gurman source material.
+
+2. **HEADLINE TEMPLATE INVERSION:** Same publication, same topic, opposite polarity —
+   "Meta Ray-Ban Display won't challenge Apple's eventual smart glasses" (Hilliard)
+   vs "Like Apple Watch at start, Apple's smart glasses plan will challenge the entire
+   industry" (Owen). The verb "challenge" is used with negative polarity for Meta's
+   real product and positive polarity for Apple's unshipped concept.
+
+3. **PRIVACY DISASTER → CHALLENGE VOCABULARY DOWNGRADE:** AppleInsider labels the
+   camera-glasses category a "privacy disaster" (Amber Neely, Dec 2025) when only
+   Meta ships camera glasses. When Apple enters the same category, the vocabulary
+   shifts to "challenge" (Owen, Jul 2026). Same issue, different entity, different
+   alarm level.
+
+4. **UNSHIPPED PRODUCT PRIVACY-HERO STATUS:** Apple Glass (no product, no users,
+   no incidents) receives privacy-hero framing. Meta (7M+ units, LED indicator,
+   tamper detection, camera-disable features) receives privacy-villain framing.
+   The entity with zero real-world privacy track record gets hero status.
+
+5. **SNAP 4-CAMERA PRIVACY OMISSION:** Snap Specs ship with 4 cameras (2 RGB + 2 IR)
+   but AppleInsider frames them as lacking "a convincing reason to wear them" (product
+   utility criticism), not as a privacy concern. Meta's 1 camera = "privacy disaster";
+   Snap's 4 cameras = "unconvincing."
+
+**Financial architecture:**
+| Revenue Stream | Incentive Direction |
+|---------------|-------------------|
+| Apple affiliate links | Positive Apple coverage → higher click-through → revenue |
+| Apple ecosystem ads | Apple-favorable editorial → audience trust → ad value |
+| No Meta advertising | No countervailing incentive to frame Meta positively |
+
+**Privacy vocabulary distribution across entities:**
+| Entity | Camera Hardware | Privacy-Alarm Vocabulary | Framing |
+|--------|---------------|-------------------------|---------|
+| Meta | 1× 12MP (shipping) | "disaster," "failing," "anchor," "poison" | Cautionary |
+| Apple | Planned (unshipped) | "challenge," "protections," "The Apple Way" | Aspirational |
+| Snap | 4 cameras (2 RGB + 2 IR) | Zero | Product utility criticism |
+| Samsung | 1× 12MP (same chip as Meta) | Zero | Neutral |
+| Google | 1× 12MP | Zero | Neutral |
+
+**Confounders:** 2 STRONG (Apple-focused publication by design; Meta has real incidents
+while Apple Glass doesn't exist), 2 MODERATE (Gurman-derivative analysis; Meta 84%
+market share), 1 WEAK (word count constraints)
+
+### Stats
+- **New test file:** 1 (29 tests, all passing)
+- **Mechanism ID:** #234
+- **Asymmetry score:** 0.48 (lower due to strong confounders — entity selectivity
+  is expected from Apple-ecosystem publications)
+- **Cross-references:** 4 (#33, #122, #183, #221, #229)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** ~542 files
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #243 — Sat 2026-08-22 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
 
 **Mechanism #233: eWeek (TechnologyAdvice) "Smart Glasses Cheat Sheet" Entity-Selective
 Privacy Incident Documentation**
