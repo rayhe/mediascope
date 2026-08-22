@@ -24977,3 +24977,33 @@ publications:
     - https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
     - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
     test_file: tests/test_matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_aug22.py
+  - mechanism_id: 232
+    name: "NBC News Broadcast Gender-Framed Camera Wearable Entity Selection"
+    subtitle: "Cross-Medium Alarm Vocabulary Portability"
+    type: E
+    date: "2026-08-22"
+    publication: "NBC News (Comcast/NBCUniversal)"
+    entities: ["Meta", "Apple"]
+    finding: |
+      NBC News broadcast segment (Yasmin Vossoughian, ~Aug 11, 2026) covers Meta AI glasses
+      privacy with gender-specific alarm framing ("mostly women, speak out about being filmed...
+      without their consent"), targeting Meta exclusively. Zero mention of Apple camera AirPods,
+      Snap Specs, Samsung/Google glasses. Simultaneous print coverage (Inc.com, Gizmodo) defends
+      Apple camera AirPods via resolution-rationalization ("potato quality," "designed to inform AI").
+      NOVEL: Gender-specific framing amplifies the Meta story into a women's safety narrative
+      that no competitor camera wearable has received. Cross-medium chain now extends from
+      print → podcast → broadcast TV.
+    asymmetry_score: 0.72
+    confounders: 5
+    confounders_detail:
+      - "STRONG: Meta has real documented incidents vs Apple unreleased rumors"
+      - "STRONG: Broadcast TV segments simplify by design (2-4 min format)"
+      - "MODERATE: Camera AirPods hadn't shipped at time of broadcast"
+      - "MODERATE: NBC News prioritizes consumer harm stories over industry analysis"
+      - "WEAK: Short segment format limits multi-company comparison capacity"
+    cross_references: [144, 173, 205, 209, 221, 225, 227]
+    sources:
+      - https://www.youtube.com/watch?v=0NLaAQuaCJE
+      - https://www.inc.com/kit-eaton/why-apples-controversial-new-airpods-could-get-banned-in-offices-and-gyms/91394097
+      - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+    test_file: tests/test_type_e_11am_nbc_news_broadcast_gender_framed_camera_wearable_entity_selection_aug22.py

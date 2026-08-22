@@ -2993,7 +2993,43 @@ Taylor Lorenz is independently funded (Substack subscribers) with no known finan
 - Parallels mechanism #224 (Snap dual-AI partnership gets business framing)
 - Parallels mechanism #226 (Cult of Mac aspirational-cautionary dyad)
 
+
+### 60. NBC News — "Fears grow over privacy as Meta A.I. glasses gain popularity" (~Aug 11, 2026)
+
+- **Reporter:** Yasmin Vossoughian (NBC News national reporter)
+- **Medium:** Broadcast television (NBC News NOW / Hallie Jackson NOW)
+- **Source URL:** https://www.youtube.com/watch?v=0NLaAQuaCJE
+
+**Coverage Summary:**
+NBC News broadcast segment covers growing backlash against Meta AI glasses, framing it as a women's safety issue. "More people, mostly women, speak out about being filmed, with the videos being posted online without their consent." Reports on the collision of privacy laws and technology.
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Exclusive target. Named in title and description. "Meta A.I. glasses" = synonym for the privacy problem.
+- **Apple:** Not mentioned despite camera AirPods leaked the same period (0.4-1MP camera, passive/active modes).
+- **Snap:** Not mentioned despite Specs shipping with dual cameras + 4 IR sensors at $2,195.
+- **Google:** Not mentioned despite Intelligent Eyewear partnership with Warby Parker.
+- **Samsung:** Not mentioned despite Galaxy Glasses with Snapdragon AR1 Gen 1.
+
+**Gender-Specific Framing (NOVEL):**
+The segment centers "mostly women" as the affected population, transforming a tech-privacy story into a women's safety story. This escalates the emotional valence and creates a narrative frame that no competitor has been subjected to, despite functionally identical camera capabilities in their devices.
+
+**Cross-Medium Context (Same Week):**
+- Inc.com (Aug 21, Kit Eaton): Apple camera AirPods → "relatively low resolution... won't capture photos or videos... Apple's long-held position on user privacy"
+- Gizmodo (Aug 21, James Pero): Apple camera AirPods → "potato quality... designed to inform AI"
+- Both use Meta as the NEGATIVE comparison point ("pervert smart glasses"), reinforcing broadcast alarm vocabulary
+
+**Financial Context:**
+NBC News owned by Comcast/NBCUniversal. Comcast spinoff of NBCU announced Jun 29, 2026. Universal Ads platform directly competes with Meta in ad sales. Apple discussed as potential NBCU acquirer by analysts (TheWrap, Jun 2026). Meta has $0 content or advertising partnership with NBC News.
+
+**Sentiment Score:** -7/10 (strongly negative toward Meta/wearables privacy)
+**Asymmetry Assessment:** MODERATE-HIGH (0.72) — The entity selection is complete (Meta only), but strong confounders include: (1) Meta has documented real incidents vs Apple unreleased rumors, (2) broadcast segments simplify by design, (3) camera AirPods hadn't shipped yet. Despite confounders, a single sentence noting competitors also have cameras would have added proportionality.
+
+**MediaScope Cross-Reference:**
+- Extends the cross-medium vocabulary portability chain: print (#173, #205, #221) → podcast (#144, #209, #225, #227) → broadcast TV (#232)
+- Gender-specific framing is novel to broadcast; not centered in tech print/podcast coverage
+- NBC News' Comcast/NBCU financial architecture has not been previously documented in MediaScope
+
 ---
 
-*Last updated: 2026-08-22 12:00 UTC (Aug 22, 5:00 AM PT)*
-*New mechanism: #227 (Taylor Lorenz Back Row Fashion-Tech Podcast — Camera Wearable Surveillance Vocabulary Bifurcation)*
+*Last updated: 2026-08-22 18:05 UTC (Aug 22, 11:05 AM PT)*
+*New mechanism: #232 (NBC News Broadcast Gender-Framed Camera Wearable Entity Selection — Cross-Medium Alarm Vocabulary Portability)*
