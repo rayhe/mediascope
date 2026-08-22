@@ -24724,3 +24724,62 @@ publications:
     - https://muckrack.com/miasato/articles
     - https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC
     test_file: tests/test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py
+
+  cult_of_mac_apple_ecosystem_aspirational_cautionary_dyad_mechanism_226:
+    mechanism_id: 226
+    name: "Cult of Mac Apple-Ecosystem Aspirational-Cautionary Dyad — Same Camera Feature
+      is What I Want Most from Apple but the Privacy Problem Making Meta the Cautionary Tale"
+    mechanism: "Cult of Mac Apple-Ecosystem Aspirational-Cautionary Dyad — Same Camera Feature
+      is What I Want Most from Apple but the Privacy Problem Making Meta the Cautionary Tale"
+    type: "Competitor Coverage Deep Dive (Type A)"
+    discovery_date: "2026-08-22"
+    iteration: 238
+    finding_summary: >
+      Cult of Mac, an independent Apple-ecosystem publication (not part of 9to5 Network), demonstrates
+      a novel ASPIRATIONAL-CAUTIONARY DYAD across two articles (Jul 28 and Aug 20, 2026). Ed Hardy
+      (Jul 28) explicitly DESIRES facial recognition from Apple smart glasses — 'I want facial
+      recognition... So I can walk down the street and bump into my neighbor' — the exact feature
+      that is the #1 privacy concern in Meta's NameTag discourse. He frames Apple's privacy challenges
+      as solvable: 'Apple can't ignore the product category. It'll simply have to work through the
+      privacy problems. I'm confident it will.' Meanwhile, Meta appears solely as cautionary tale:
+      'the latest smart glasses have also drawn criticism from privacy advocates.' Anurag Chawake
+      (Aug 20) covers Apple's camera AirPods leak with reassurance: 'Apple's already deep into
+      making sure the ones that do ship don't spook you.' Zero alarm vocabulary. As an Apple-only
+      publication, Cult of Mac never gives Meta its own coverage — Meta exists only as negative
+      contrast in Apple product stories. Revenue structure (Apple affiliate, Apple News+, zero Meta
+      revenue) creates STRUCTURAL ALIGNMENT where both favorable Apple coverage and unfavorable
+      Meta-as-foil framing serve economic interests.
+    asymmetry_score: 0.81
+    confounding_factors:
+    - "[STRONG] Cult of Mac is an Apple-focused publication — its editorial scope excludes Meta
+      coverage by design. The absence of positive Meta coverage reflects editorial mandate, not
+      deliberate bias. Apple-only scope is disclosed and understood by the audience."
+    - "[STRONG] Apple has a documented stronger privacy track record than Meta. Trusting Apple
+      to 'work through' privacy problems while doubting Meta may reflect rational assessment
+      based on company histories, not irrational favoritism."
+    - "[MODERATE] Ed Hardy wants facial recognition for a specific benign use case (remembering
+      neighbors' names) while Meta's NameTag discourse involves identifying strangers in public.
+      The use case framing may justify different vocabulary even for the same underlying technology."
+    - "[MODERATE] AirPods cameras are unreleased rumors while Meta glasses are shipping products
+      with documented incidents. Different coverage postures toward hypothetical vs real products
+      may be editorially appropriate."
+    - "[WEAK] Cult of Mac has limited editorial staff and may not have capacity for multi-entity
+      comparative analysis even if its scope permitted it."
+    cross_references:
+    - mechanism_id: 173
+      relationship: extends
+      description: "Extends 9to5 Network privacy gradient to non-9to5 Apple ecosystem publication"
+    - mechanism_id: 223
+      relationship: parallel
+      description: "Same desire/alarm pattern as Ben Lovejoy advocacy inversion — journalist wants Apple camera, condemns Meta camera"
+    - mechanism_id: 205
+      relationship: parallel
+      description: "Apple camera LED double standard — identical privacy tech framed differently by entity"
+    - mechanism_id: 221
+      relationship: parallel
+      description: "Published same week as Waichulis pre-framing — Apple ecosystem builds coordinated positive pre-narrative"
+    source_urls:
+    - https://www.cultofmac.com/news/apple-smart-glasses-privacy-concerns
+    - https://www.cultofmac.com/news/camera-airpods-release-date-2027-leak
+    - https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+    test_file: tests/test_cult_of_mac_apple_ecosystem_aspirational_cautionary_dyad_meta_foil_aug22.py
