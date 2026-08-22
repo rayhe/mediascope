@@ -24977,7 +24977,8 @@ publications:
     - https://petapixel.com/2026/08/04/meta-smart-glasses-face-calls-for-bans-across-europe-over-privacy-concerns/
     - https://petapixel.com/2026/08/10/uk-venues-ban-meta-smart-glasses-en-masse/
     test_file: tests/test_matt_growcoot_petapixel_cross_entity_camera_privacy_vocabulary_inversion_aug22.py
-  - mechanism_id: 232
+  nbc_news_broadcast_gender_framed_camera_wearable_entity_selection_mechanism_232:
+    mechanism_id: 232
     name: "NBC News Broadcast Gender-Framed Camera Wearable Entity Selection"
     subtitle: "Cross-Medium Alarm Vocabulary Portability"
     type: E
@@ -25007,3 +25008,104 @@ publications:
       - https://www.inc.com/kit-eaton/why-apples-controversial-new-airpods-could-get-banned-in-offices-and-gyms/91394097
       - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
     test_file: tests/test_type_e_11am_nbc_news_broadcast_gender_framed_camera_wearable_entity_selection_aug22.py
+  eweek_technologyadvice_cheat_sheet_entity_selective_privacy_incident_documentation_mechanism_233:
+    mechanism_id: 233
+    name: "eWeek (TechnologyAdvice) Smart Glasses Cheat Sheet Entity-Selective Privacy Incident Documentation"
+    type: A
+    date: "2026-08-22"
+    discovery_date: "2026-08-22"
+    publication: "eWeek (TechnologyAdvice)"
+    entities: ["Meta", "Snap", "Google", "Apple", "Samsung", "Even Realities"]
+    asymmetry_score: 0.74
+    finding_summary: >
+      eWeek cheat sheet documents 3 entity-specific privacy incidents, all exclusively Meta,
+      while covering 8+ smart glasses companies. Zero incidents for Snap (4 cameras), Google
+      (documented privacy history), or Even Realities (transcribes conversations without
+      visible indicator). Buyer's guide calls Apple/Google the 'safe option' despite zero
+      shipped camera glasses.
+    confounding_factors:
+      - "STRONG: Meta has genuinely more documented privacy incidents than competitors in this category"
+      - "STRONG: Meta has much larger market share (84%), generating more news-worthy incidents"
+      - "MODERATE: Some competitors haven't shipped camera glasses yet (Apple, Samsung)"
+      - "MODERATE: Cheat sheet format selects for most notable incidents, which skews toward market leader"
+      - "WEAK: TechnologyAdvice B2B advertising revenue model creates implicit incentive structure"
+    cross_references: [230, 218, 173]
+    source_urls:
+      - https://www.eweek.com/artificial-intelligence/smart-glasses-cheat-sheet/
+    test_file: tests/test_eweek_technologyadvice_cheat_sheet_entity_selective_privacy_incident_documentation_aug22.py
+  snap_specs_clad_quad_ai_developer_ecosystem_publisher_financial_architecture_mechanism_231:
+    mechanism_id: 231
+    name: "Snap Specs CLAD Quad-AI Developer Ecosystem Publisher Financial Architecture"
+    type: C
+    date: "2026-08-22"
+    discovery_date: "2026-08-22"
+    publication: "Cross-publication"
+    entities: ["Snap", "OpenAI", "Google", "Anthropic", "Anysphere"]
+    asymmetry_score: 0.68
+    finding_summary: >
+      Snap Specs developer toolchain officially integrates Claude Code (Anthropic), Codex
+      (OpenAI), and Cursor (Anysphere) via CLAD framework, plus runtime AI partnerships
+      (OpenAI GPT + Google Gemini). Creates quad-AI-company financial architecture unique
+      to Snap Specs. Meta Ray-Ban uses Meta AI only with zero third-party AI revenue flows.
+    confounding_factors:
+      - "STRONG: Developer tool partnerships are standard industry practice, not coverage-influencing"
+      - "MODERATE: CLAD is a developer-facing tool, coverage impact on consumer articles limited"
+      - "MODERATE: Financial chain from dev tools to publisher editorial is highly indirect"
+      - "WEAK: Anthropic and Anysphere have minimal direct publisher financial relationships"
+    cross_references: [224, 235]
+    source_urls:
+      - https://newsroom.snap.com/snap-launches-new-tools-for-specs-developers
+    test_file: tests/test_snap_specs_clad_quad_ai_developer_ecosystem_publisher_financial_architecture_aug22.py
+  malcolm_owen_appleinsider_cross_entity_aspirational_cautionary_dyad_mechanism_234:
+    mechanism_id: 234
+    name: "Malcolm Owen (AppleInsider) Aspirational-Cautionary Dyad with Entity-Selective Privacy Vocabulary"
+    type: B
+    date: "2026-08-22"
+    discovery_date: "2026-08-22"
+    publication: "AppleInsider"
+    entities: ["Apple", "Meta", "Snap", "Samsung", "Google"]
+    asymmetry_score: 0.81
+    finding_summary: >
+      Malcolm Owen applies systematic aspirational-cautionary vocabulary dyad across 6+
+      articles Sep 2025-Jul 2026. Apple = aspirational ('challenge the entire industry,'
+      'take over'), Meta = cautionary ('reputation for failing,' 'anchor around its neck,'
+      'poisoning the well'). Snap/Samsung/Google = neutral, zero privacy-alarm.
+      Financial: Apple affiliate revenue + Apple News+ licensing.
+    confounding_factors:
+      - "STRONG: AppleInsider is an Apple-focused publication — positive Apple framing is expected editorial positioning"
+      - "STRONG: Meta has genuine privacy incidents that justify some cautionary framing"
+      - "MODERATE: Apple's privacy marketing creates a defensible editorial differentiation"
+      - "MODERATE: Owen may reflect genuine editorial conviction, not financial influence"
+      - "WEAK: Snap/Samsung/Google neutral framing may reflect less familiarity rather than intentional differential"
+    cross_references: [226, 223, 230, 173]
+    source_urls:
+      - https://appleinsider.com/articles/25/09/22/why-apple-glasses-will-challenge-the-entire-industry
+      - https://appleinsider.com/articles/26/03/10/meta-keeps-poisoning-the-well-for-apples-smart-glasses
+      - https://appleinsider.com/articles/26/07/21/why-apple-glasses-will-succeed-where-meta-failed
+    test_file: tests/test_malcolm_owen_appleinsider_cross_entity_aspirational_cautionary_dyad_privacy_vocabulary_aug22.py
+  specs_inc_irenic_activist_pre_launch_coverage_incentive_architecture_mechanism_235:
+    mechanism_id: 235
+    name: "Specs Inc. Activist-Investor Pre-Launch Coverage Incentive Architecture"
+    type: C
+    date: "2026-08-22"
+    discovery_date: "2026-08-22"
+    publication: "Cross-publication"
+    entities: ["Snap", "Irenic Capital", "Specs Inc.", "Meta", "Condé Nast"]
+    asymmetry_score: 0.72
+    finding_summary: >
+      Irenic Capital activist pressure (2.5% stake, $3.5B cumulative Specs investment,
+      $500M/yr burn) creates binary coverage incentive: positive coverage helps Specs Inc.
+      attract minority investment, negative validates kill thesis. Sep 16 consumer launch
+      at $2,195. Herbst-Brady temporal convergence (ex-Snap CRO now Condé Nast CRO).
+      Perplexity $400M deal cancellation amplifies survival stakes.
+    confounding_factors:
+      - "STRONG: Meta has larger market share and more documented incidents, legitimately attracting more scrutiny"
+      - "STRONG: Activist investor campaigns are routine corporate events, not inherently coverage-influencing"
+      - "MODERATE: $2,195 price point is a genuine editorial angle (niche vs mainstream)"
+      - "MODERATE: Irenic's kill thesis has market endorsement (+13% stock jump) — coverage reflecting it may be accurate"
+      - "WEAK: Dual-class stock structure limits Irenic's actual corporate influence"
+    cross_references: [224, 231, 233]
+    source_urls:
+      - https://www.reuters.com/technology/snap-creates-specs-inc-subsidiary-for-ar-glasses-2026-01-28/
+      - https://www.barrons.com/articles/snap-irenic-activist-save-snap-now-specs-2026-03-31
+    test_file: tests/test_specs_inc_irenic_activist_pre_launch_coverage_incentive_architecture_aug22.py
