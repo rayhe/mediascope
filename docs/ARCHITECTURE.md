@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 19000 tests across 535 test files (all from real articles)
+├── tests/                       # 19000 tests across 536 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -998,3 +998,4 @@ mediascope/
 │   ├── test_type_d_8pm_cross_validation_aug21.py # Type D cross-validation (Aug 21, 8 PM PT / Iteration #231): Fixed mechanism #218 confounders→confounding_factors (dict→string). Updated stale highest-mechanism #216→#220. Fixed PetaPixel test confounder accessor. Doc sync 525→526. Type rotation guard #217-#220. 6 classes, 18 tests
 │   ├── test_cult_of_mac_apple_ecosystem_aspirational_cautionary_dyad_meta_foil_aug22.py # Mechanism #226: Cult of Mac Aspirational-Cautionary Dyad (Type A). Apple-only publication where Meta exists solely as cautionary tale. Ed Hardy desires facial recognition from Apple, frames as solvable design challenge. 5 classes, 20 tests
 │   ├── test_taylor_lorenz_back_row_fashion_tech_podcast_camera_surveillance_vocabulary_bifurcation_aug22.py # Mechanism #227: Taylor Lorenz Back Row Fashion-Tech Podcast (Type E/B). 43-min episode with Amy Odell, Meta = 'Hot Surveillance Summer' (12+ chapters, alarm vocab), Apple camera AirPods = neutral listing, Snap = aesthetic/price. Cultural propagation without financial incentive. 7 classes, 21 tests
+│   ├── test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py # Mechanism #229: MarketWatch (News Corp/Dow Jones) Headline Template Inversion (Type A). Same 'X — but Y' headline template applied in opposite directions within 24 hours: Meta success undermined, Apple problem insulated. Jun 2026 article contains internal data contradiction: 84% market share + 'No one really wants Meta glasses'. 9 classes, 31 tests

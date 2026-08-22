@@ -221,6 +221,41 @@ competitor_relationships:
           structurally positioned to undercut the essay''s arguments before
           readers absorb the substance. The follower framing is editorial
           insertion, not a Zuckerberg quote or Meta statement.'
+    marketwatch_market_positioning_framing:
+      mechanism_id: 229
+      finding_type: headline_template_inversion
+      articles:
+      - title: "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them."
+        publication: MarketWatch
+        date: '2026-06-27'
+        tone: -0.55
+        source_url: https://www.marketwatch.com/story/big-tech-is-obsessed-with-smart-glasses-now-it-has-to-convince-people-to-wear-them-0d5ebd43
+        loaded_language:
+        - "No one really wants Meta glasses"
+        - "convince them that this is cool"
+        - "still a rare sight on the faces of regular people"
+        framing: 'Data contradiction asymmetry — same article acknowledges
+          Meta has 84% market share (Counterpoint), 7M+ units shipped in 2025,
+          and "emerged as the front-runner," then features analyst saying
+          "No one really wants Meta glasses." Apple described aspirationally
+          ("hardware empire," "releasing its own competitor") and Google
+          neutrally ("trying its hand again") despite neither having shipped
+          a single smart glasses unit.'
+      - title: "Meta's new AI glasses impressed investors — but 3 things stop them from going mainstream"
+        publication: MarketWatch
+        date: '2025-09-19'
+        tone: -0.35
+        source_url: https://finnoexpert.com/metas-new-ai-glasses-impressed-investors-but-3-things-stop-them-from-going-mainstream/
+        framing: 'Headline template inversion — positive signal undermined by
+          negative qualifier. Published 1 day before equivalent Apple template
+          (iPhone 17 scratches) where direction is inverted: Apple problem
+          insulated by positive qualifier.'
+      asymmetry: 'MarketWatch uses identical headline template in opposite
+        editorial directions within 24 hours: Meta success → undermined;
+        Apple problem → insulated. Financial timeline: at Sep 2025, OpenAI
+        $50M/yr and Apple News+ active, Meta deal NOT yet signed ($0).
+        By Jun 2026, Meta deal active but newest (4 months). Persistent
+        Meta dismissal despite market data contradicting it.'
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)

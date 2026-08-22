@@ -24869,3 +24869,48 @@ publications:
     - https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194
     - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
     test_file: tests/test_type_e_06am_gizmodo_camera_earbud_category_identity_inversion_resolution_rationalization_aug22.py
+
+
+  marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_mechanism_229:
+    mechanism_id: 229
+    name: "MarketWatch (News Corp/Dow Jones) Headline Template Inversion — Meta Success Dismissal via 'Impressed — but 3 Things Stop Mainstream' vs Apple Problem Insulation via 'Scratches — but Won't Hurt Sales' Published One Day Apart"
+    type: "Competitor Coverage Deep Dive (Type A)"
+    discovery_date: "2026-08-22"
+    iteration: 238
+    finding_summary: >
+      MarketWatch applies an identical 'X — but Y' headline template to Meta and Apple products
+      published ONE DAY APART (Sep 19-20, 2025), but inverts the editorial direction: Meta (Sep 19)
+      gets 'impressed investors — but 3 things stop them from going mainstream' (success undermined),
+      while Apple (Sep 20) gets 'scratches easily — but Wall Street analysts say it won't hurt sales'
+      (problem insulated). Ten months later (Jun 27, 2026), the same publication features analyst
+      Max Weinbach (Creative Strategies) saying 'No one really wants Meta glasses' DESPITE the same
+      article acknowledging Meta has 84% market share (Counterpoint Research) and shipped 7M+ units
+      in 2025. Neither Apple N50 nor Google Intelligent Eyewear — neither of which had shipped a
+      single unit — receive equivalent dismissal language. Apple is described aspirationally
+      ('hardware empire,' 'releasing its own competitor'); Google gets neutral comeback framing
+      ('trying its hand again'). The data contradiction is INTERNAL to a single article: 84% market
+      share coexists with 'no one really wants' — mutually contradictory claims. At time of Sep 2025
+      articles, News Corp had active deals with OpenAI ($50M/yr) and Apple (News+) but NO Meta deal
+      ($0). By Jun 2026 all three deals were active (Meta up to $50M/yr signed Mar 2026), but the
+      Meta deal was newest (4 months vs 26+ months for OpenAI). Editorial culture lag hypothesis:
+      years of adversarial Meta framing persist despite balanced financial relationships.
+    asymmetry_score: 0.72
+    confounding_factors:
+    - "[STRONG] Meta has real privacy controversies (NameTag, 70+ org coalition, Congressional attention, mood surveillance patent). Apple and Google have not shipped camera glasses yet and thus have no equivalent controversy track record. 'No one wants' may reflect real privacy-driven consumer resistance."
+    - "[STRONG] Sep 2025 headline pair compares different product categories — iPhone 17 (established smartphone, proven demand, cosmetic issue) vs Meta Ray-Ban Display (new category, unproven mainstream demand). Editorial direction may reflect genuine market uncertainty."
+    - "[MODERATE] 84% of a SMALL category (2.25M units/quarter) differs from proving mainstream demand. The category itself may be niche even if Meta dominates it. Weinbach's quote may accurately reflect the gap."
+    - "[MODERATE] MarketWatch is a financial publication — coverage naturally emphasizes investor/analyst sentiment. Framing may reflect genuine Wall Street skepticism about smart glasses as an investment thesis."
+    - "[WEAK] News Corp signed a Meta AI deal (up to $50M/yr) in March 2026, creating balanced financial relationship. Persistent asymmetry despite balanced finances suggests editorial culture lag rather than financial capture."
+    cross_references:
+    - mechanism_id: 214
+      relationship: "extends"
+      description: "News Corp WSJ/NYPost camera wearable privacy vocabulary asymmetry — this mechanism adds MarketWatch market-positioning vocabulary asymmetry as a third News Corp publication vector"
+    - mechanism_id: 26
+      relationship: "parallel"
+      description: "WSJ rogue AI severity-framing inversion — same editorial direction (Meta gets worse treatment) despite equal financial incentives (~$50M/yr each)"
+    source_urls:
+    - https://www.marketwatch.com/story/big-tech-is-obsessed-with-smart-glasses-now-it-has-to-convince-people-to-wear-them-0d5ebd43
+    - https://www.marketwatch.com/story/snap-breaks-from-the-pack-with-heavy-2-195-smart-glasses-wall-street-is-panning-the-move-99e77ae6
+    - https://finnoexpert.com/metas-new-ai-glasses-impressed-investors-but-3-things-stop-them-from-going-mainstream/
+    - https://www.morningstar.com/news/marketwatch/20250920168/people-are-complaining-that-apples-new-iphone-17-scratches-easily-but-these-wall-street-analysts-say-it-wont-hurt-sales
+    test_file: tests/test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py
