@@ -1,6 +1,35 @@
 ---
 ---
 
+## Iteration #236 — Sat 2026-08-22 02:00 PT (Type D: Test & Verify)
+
+**Cross-validation and structural integrity fixes:**
+
+1. **CRITICAL BUG: find_all_mechanisms cross_reference overwrite:** The `find_all_mechanisms` helper in `test_type_d_8pm_cross_validation_aug21.py` recursively traversed ALL dicts with `mechanism_id`, including cross_reference stubs (`{mechanism_id: 218, relationship: ..., description: ...}`). When mechanism #223 added a cross_reference to #218, the stub overwrote the real #218 entry, causing its 6 confounding_factors to appear empty. Fixed by (a) skipping `cross_references` key during recursion and (b) requiring at least one real data field (`name`, `finding_summary`, `asymmetry_score`, etc.) before storing.
+
+2. **Mechanism #221 missing discovery_date:** Added `discovery_date: 2026-08-21` and `iteration: 232`. Also added `cross_references` (→#173 extends, →#218 parallel).
+
+3. **Mechanisms #222-224 field normalization:** These used `mechanism`+`detail` instead of the canonical `name`+`finding_summary` field names (17 mechanisms use `name` vs 7 `mechanism`; 15 use `finding_summary` vs 3 `detail`). Added both canonical fields while preserving originals.
+
+4. **Mechanisms #222 and #224 missing cross_references:** #222 now references #211 (Pero three-entity gradient, extends) and #201 (McCracken CEO attribution, extends). #224 now references #130 (Snap-Perplexity chain, extends) and #222 (Pero source amplification, parallel).
+
+5. **Stale highest_mechanism assertions:** Three Aug 21 Type D test files (`10am`, `3pm`, `8pm`) hardcoded `test_highest_mechanism_is_220` but 4 mechanisms (#221-224) were added since. Updated all to expect #224.
+
+6. **Stale doc count:** `test_type_d_8pm_cross_validation_aug21.py` asserted 526 test files, actual is 530 (now 531). Updated.
+
+7. **REQUIRED_FIELDS schema flexibility:** `test_type_d_10am_cross_validation_aug21.py` required `overview` field, but #221-224 use `finding_summary`. Updated to accept either `overview` or `finding_summary`.
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` — #221 discovery_date+iteration+cross_references, #222-224 name+finding_summary, #222+#224 cross_references
+- `tests/test_type_d_8pm_cross_validation_aug21.py` — find_all_mechanisms bug fix, highest mechanism #220→#224, doc count 526→530
+- `tests/test_type_d_10am_cross_validation_aug21.py` — REQUIRED_FIELDS schema, highest mechanism #220→#224
+- `tests/test_type_d_3pm_cross_validation_aug21.py` — highest mechanism #220→#224
+- `tests/test_type_d_02am_cross_validation_aug22.py` — NEW: 8 classes, 27 tests
+- `docs/ARCHITECTURE.md` — Count 530→531, new test file entry
+- `README.md` — Count 530→531, new test file entry
+
+**Cumulative:** 531 test files | 224 mechanisms | 670+ mechanism_id entries in YAML
+
 ## Iteration #235 — Sat 2026-08-22 01:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #224: Snap Spectacles Dual-AI Partner Publisher Financial Convergence — OpenAI + Google Partnerships Create Triple Alignment for September 16 Consumer Launch**
