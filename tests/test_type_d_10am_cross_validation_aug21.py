@@ -126,14 +126,14 @@ class TestMechanismContinuity:
                 assert ids[i] == ids[i - 1] + 1, \
                     f"Gap in mechanism IDs between #{ids[i - 1]} and #{ids[i]}"
 
-    def test_highest_mechanism_is_216(self, competitor_research):
+    def test_highest_mechanism_is_220(self, competitor_research):
         pubs = competitor_research['publications']
         max_id = max(
             val.get('mechanism_id', 0)
             for val in pubs.values()
             if isinstance(val, dict)
         )
-        assert max_id == 216, f"Expected highest mechanism #216, got #{max_id}"
+        assert max_id == 220, f"Expected highest mechanism #220, got #{max_id}"
 
     def test_mechanism_types_match_rotation(self, competitor_research):
         """Recent mechanisms should match the A/B/C/D/E rotation."""

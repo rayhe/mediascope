@@ -450,19 +450,19 @@ class TestThreeTierCoverageHierarchy(unittest.TestCase):
 
 
 class TestConfounderDocumentation(unittest.TestCase):
-    """Test that confounders are properly documented."""
+    """Test that confounding_factors are properly documented."""
 
     def test_has_at_least_5_confounders(self):
         mechanism = find_mechanism_anywhere(218)
         self.assertIsNotNone(mechanism)
-        confounders = mechanism.get('confounders', [])
+        confounders = mechanism.get('confounding_factors', [])
         self.assertGreaterEqual(len(confounders), 5)
 
     def test_has_strong_confounders(self):
         mechanism = find_mechanism_anywhere(218)
         self.assertIsNotNone(mechanism)
-        confounders = mechanism.get('confounders', [])
-        strong = [c for c in confounders if isinstance(c, dict) and c.get('strength') == 'STRONG']
+        confounders = mechanism.get('confounding_factors', [])
+        strong = [c for c in confounders if isinstance(c, str) and c.startswith('[STRONG]')]
         self.assertGreaterEqual(len(strong), 2,
                                 "Must document at least 2 STRONG confounders")
 
@@ -470,10 +470,10 @@ class TestConfounderDocumentation(unittest.TestCase):
         """The strongest confounder is that Meta has real documented misuse, Apple doesn't."""
         mechanism = find_mechanism_anywhere(218)
         self.assertIsNotNone(mechanism)
-        confounders = mechanism.get('confounders', [])
+        confounders = mechanism.get('confounding_factors', [])
         strong_descriptions = [
-            c.get('description', '') for c in confounders
-            if isinstance(c, dict) and c.get('strength') == 'STRONG'
+            c for c in confounders
+            if isinstance(c, str) and c.startswith('[STRONG]')
         ]
         misuse_confounder = any('misuse' in d.lower() or 'incident' in d.lower()
                                 for d in strong_descriptions)

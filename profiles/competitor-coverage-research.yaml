@@ -24295,25 +24295,13 @@ publications:
     publication: PetaPixel
     competitor_entities: Apple (camera AirPods), Snap (Specs 2026)
     asymmetry_score: 0.88
-    confounders:
-    - strength: STRONG
-      description: 'Meta has genuine documented misuse incidents (massage parlor recordings, Kenya content review,
-        NameTag); Apple AirPods cameras have not shipped — no misuse data exists'
-    - strength: STRONG
-      description: 'Different product stages — Meta glasses are deployed (7M+ units); Apple AirPods cameras are
-        pre-launch rumors. Privacy concerns scale with deployment.'
-    - strength: MODERATE
-      description: 'Meta cameras capture photos AND feed AI; Apple reportedly AI-only. But a camera specialist should
-        evaluate hardware capabilities, not manufacturer stated intent.'
-    - strength: MODERATE
-      description: 'PetaPixel audience cares about photography — Meta photo-capable camera is more editorially relevant
-        than Apple AI-only camera.'
-    - strength: WEAK
-      description: 'Different form factors create different social expectations — glasses are coded as "looking at"
-        while earbuds are coded as "listening to."'
-    - strength: WEAK
-      description: 'Article genre — Apple articles sourced from Bloomberg reporting (tech news aggregation); Meta
-        articles are editorial/investigative.'
+    confounding_factors:
+    - "[STRONG] Meta has genuine documented misuse incidents (massage parlor recordings, Kenya content review, NameTag); Apple AirPods cameras have not shipped — no misuse data exists"
+    - "[STRONG] Different product stages — Meta glasses are deployed (7M+ units); Apple AirPods cameras are pre-launch rumors. Privacy concerns scale with deployment."
+    - "[MODERATE] Meta cameras capture photos AND feed AI; Apple reportedly AI-only. But a camera specialist should evaluate hardware capabilities, not manufacturer stated intent."
+    - "[MODERATE] PetaPixel audience cares about photography — Meta photo-capable camera is more editorially relevant than Apple AI-only camera."
+    - "[WEAK] Different form factors create different social expectations — glasses are coded as 'looking at' while earbuds are coded as 'listening to.'"
+    - "[WEAK] Article genre — Apple articles sourced from Bloomberg reporting (tech news aggregation); Meta articles are editorial/investigative."
     cross_references:
     - 178
     - 194
