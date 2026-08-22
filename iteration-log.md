@@ -6821,3 +6821,4 @@ James Pero's Apple camera AirPods coverage across 3 articles (May 8, Aug 17, Aug
 - **Confounders:** 4 (2 STRONG, 1 MODERATE, 1 WEAK)
 - **Test corpus:** 526 test files
 - **Pushed to GitHub:** ✓
+Iteration #234 - Type B: Wesley Hilliard cross-entity tracking completed. Mechanism #223 added.
