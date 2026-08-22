@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~19,000 | Across 532 test files |
+| Tests | ~19,000 | Across 534 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **17669 tests** (19000 with parameterized expansion) across 532 test files, each covering a different analytical capability:
+MediaScope has **17669 tests** (19000 with parameterized expansion) across 534 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1047,3 +1047,5 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_snap_specs_dual_ai_partner_triple_publisher_financial_convergence_sep16_aug22.py` | 43 | Mechanism #224: Snap Spectacles Dual-AI Partner Publisher Financial Convergence (Type C). Snap Specs (Sep 16 consumer launch, $2,195) ships with AI from BOTH OpenAI (20+ publisher deals, $300-400M/yr) and Google (ad revenue + Showcase + AI pilots) — creating TRIPLE publisher financial alignment. Covering Specs favorably simultaneously serves Snap (Meta ad competitor), OpenAI (powers Specs AI, pays publishers), and Google (powers Specs AI, pays publishers) interests. Meta Ray-Ban glasses: powered by Meta AI only, zero publisher deals, competes with publishers for ad revenue. Incentive vectors perfectly INVERTED. Also documents: Snap-Perplexity $400M deal TERMINATED Q1 2026, zero revenue recognized, indirect publisher chain BROKEN. 8 classes, 43 tests |
 | `test_type_d_02am_cross_validation_aug22.py` | 27 | Type D cross-validation (Aug 22, 2 AM PT): Critical find_all_mechanisms bug fix (cross_reference stubs overwriting real mechanism entries), mechanism #221 missing discovery_date, mechanisms #222-224 field normalization (name+finding_summary added), mechanisms #221/#222/#224 missing cross_references, stale highest_mechanism #220→#224 in 3 Type D files, doc count 526→531, REQUIRED_FIELDS updated to accept overview OR finding_summary. 8 classes, 27 tests |
 | `test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py` | 28 | Mechanism #225: Vergecast Three-Episode Camera-Device Vocabulary Convergence (Type E). Three consecutive Vergecast episodes (Aug 19-21, 2026) cover five camera products with dramatically asymmetric vocabulary: Meta glasses = "workplace menace" (alarm), Apple AirPods camera = "confounding" (curiosity), Google Pixel 11 = "digicam trend" (enthusiasm), Alexa Plus = "identity crisis" (sympathy), Gemini for Home = "got weird" (amusement). Only Meta gets alarm vocabulary. 90 Seconds on The Verge is SPONSORED BY FACEBOOK/META — financial incentive inversion confirmed. Mia Sato's "Meta glasses are a workplace menace" article cited in BOTH Aug 20 and Aug 21 show notes. 7 classes, 28 tests |
+| `test_cult_of_mac_apple_ecosystem_aspirational_cautionary_dyad_meta_foil_aug22.py` | 20 | Mechanism #226: Cult of Mac Apple-Ecosystem Aspirational-Cautionary Dyad (Type A). Ed Hardy (Jul 28) DESIRES facial recognition from Apple smart glasses — exact feature that is #1 Meta NameTag concern — and frames privacy as "solvable design challenge." Meta appears solely as cautionary tale. Anurag Chawake (Aug 20) covers Apple camera AirPods leak with zero alarm vocabulary. Apple-only publication where Meta exists only as negative contrast. Revenue: Apple affiliate + Apple News+ licensing, $0 Meta. Extends #173 (9to5 Network gradient) to non-9to5 Apple ecosystem. 5 classes, 20 tests |
+| `test_taylor_lorenz_back_row_fashion_tech_podcast_camera_surveillance_vocabulary_bifurcation_aug22.py` | 21 | Mechanism #227: Taylor Lorenz (User Mag / ex-WaPo) Back Row Fashion-Tech Podcast — Camera Wearable Surveillance Vocabulary Bifurcation (Type E/B Hybrid). 43-minute "How Meta Turned Smart Glasses Into 'Hot Surveillance Summer'" episode (Jul 30, 2026) with Amy Odell. Meta gets 12+ chapters with alarm vocabulary (surveillance, creep, scary, odious). Apple camera AirPods get 1 neutral mention at 32:14 alongside "pins, pendants." Snap Spectacles get aesthetic/business vocabulary only ($2,000 flop, ugly tech dies) — zero privacy despite 4 cameras. Episode title uses "Meta" not "Ray-Ban" — tech company absorbs stigma while fashion partner buffered. Taylor Lorenz is subscriber-funded with $0 from any tech company — CULTURAL PROPAGATION vector where asymmetry self-reproduces without financial incentive. 7 classes, 21 tests |

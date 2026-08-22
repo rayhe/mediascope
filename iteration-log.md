@@ -6991,3 +6991,43 @@ stronger privacy track record and Cult of Mac's Apple-only editorial scope being
 - Test files: 533
 - Tests in new file: 20 (all passing)
 - Podcast sentiment entries: 58
+
+---
+
+## Iteration #239 — Type E/B Hybrid (Podcast Sentiment + Journalist Cross-Entity Tracking)
+**Date:** 2026-08-22 05:00 PT
+**Rotation:** E/B hybrid (follows #238 Type A)
+
+### Finding
+**Mechanism #227:** Taylor Lorenz (User Mag / ex-WaPo) Back Row Fashion-Tech Podcast — Camera Wearable Surveillance Vocabulary Bifurcation
+
+**Source:** "Back Row with Amy Odell" podcast (Jul 30, 2026, ~43 min) — Taylor Lorenz collaboration
+with Power User podcast. Episode: "How Meta Turned Smart Glasses Into 'Hot Surveillance Summer'"
+
+**Core pattern:** Same episode gives Meta 12+ chapters with surveillance/alarm vocabulary (surveillance,
+creep, scary, odious, copy machine), Apple camera AirPods get 1 neutral mention at chapter 32:14,
+Snap Spectacles get aesthetic/business vocabulary only ($130 flop, $2,000 flop, ugly tech dies).
+
+**Novel contribution — CULTURAL PROPAGATION:** Taylor Lorenz is subscriber-funded with $0 from any
+tech company. The vocabulary asymmetry self-reproduces without financial incentive, proving the
+framing has become ambient cultural consensus rather than editorially incentivized output.
+
+**Brand stigma routing:** Episode title uses "Meta" not "Ray-Ban" — tech company absorbs stigma
+while fashion partner (EssilorLuxottica/Ray-Ban) is buffered.
+
+**Confounding factors:** 2 STRONG (Meta has real incidents vs Apple rumors; Lorenz independently funded),
+2 MODERATE (fashion audience scope; camera AirPods IR-only spec), 1 WEAK (Snap price/form factor)
+
+**Cross-references:** extends #225 (Vergecast convergence), parallels #221 (9to5Mac pre-framing),
+#224 (Snap dual-AI), #226 (Cult of Mac dyad)
+
+**Asymmetry score:** 0.83
+
+### Sources
+- http://au.radio.net/podcast/back-row-with-amy-odell (episode listing page)
+
+### Stats
+- Mechanisms: 227
+- Test files: 534
+- Tests in new file: 21 (all passing)
+- Podcast sentiment entries: 59

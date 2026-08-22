@@ -2940,5 +2940,60 @@ Reports on retail workers (Target, etc.) being pranked and harassed by Meta glas
 
 ---
 
-*Last updated: 2026-08-22 10:00 UTC (Aug 22, 3:00 AM PT)*
-*New mechanism: #225 (Vergecast Three-Episode Camera-Device Vocabulary Convergence — Financial Incentive Inversion Extended)*
+### 59. Back Row with Amy Odell × Power User — "How Meta Turned Smart Glasses Into 'Hot Surveillance Summer'" (Jul 30, 2026)
+
+- **Host:** Amy Odell (former Cosmopolitan.com editor-in-chief, fashion journalist)
+- **Guest:** Taylor Lorenz (User Mag / Substack, formerly WaPo/NYT/Atlantic)
+- **Duration:** ~43 min
+- **Collaboration:** Cross-posted with Taylor Lorenz's Power User podcast
+- **Source URL:** http://au.radio.net/podcast/back-row-with-amy-odell
+
+**Coverage Summary:**
+Fashion-tech crossover episode tracing wearable camera history from Google Glass to Meta Ray-Bans. Frames Meta's 2026 smart glasses rollout as "hot surveillance summer," analyzing the Kylie Jenner influencer campaign, fashion industry dynamics, and privacy implications. Characterizes Meta glasses as "odious" while acknowledging they "may end up being a smash hit."
+
+**Chapter Structure Entity-Vocabulary Analysis:**
+
+| Entity | Chapters | Vocabulary | Privacy Scrutiny |
+|--------|----------|------------|------------------|
+| Meta | 12+ | "surveillance," "creep," "scary," "copy machine," "odious" | YES — central thesis |
+| Apple | 1 (32:14) | "camera AirPods" (neutral listing alongside "pins, pendants") | NO |
+| Snap | 2 | "$130 flop," "$2,000 flop," "ugly tech dies" | NO — price/aesthetics only |
+| Google | 1 (02:45) | "original abomination" (historical, 2013) | NO — not current |
+| GoPro | 1 (06:48) | "normalized filming" (positive acceptance) | NO |
+
+**Key Chapter Timestamps:**
+- 01:55 — "the 'hot surveillance summer' question" (Meta)
+- 08:55 — "Ray-Ban Stories (2021) and the 'creep' problem" (Meta)
+- 24:56 — "Fashion, plausible deniability, and getting women on board" (Meta)
+- 32:14 — "Beyond glasses: pins, pendants, and camera AirPods" (Apple — NEUTRAL)
+- 35:29 — "Who owns the data? Facial recognition and the scary part" (Meta)
+- 39:59 — "Snap's $2,000 flop and why ugly tech dies" (Snap — aesthetic only)
+
+**Critical Same-Episode Natural Experiment:**
+Apple's camera AirPods (same core capability: visual sensors for AI) appear at 32:14 in a neutral listing alongside pins and pendants — zero surveillance/creep/scary vocabulary. The SAME episode that spends 30+ minutes framing Meta cameras as surveillance mentions Apple cameras as a neutral feature in a single passing reference. Snap Spectacles ($2,195, 4 cameras) get aesthetic/business criticism only, never privacy vocabulary despite having MORE cameras.
+
+**NOVEL FINDING — Brand Stigma Routing:**
+Episode title uses "Meta" not "Ray-Ban" — the tech company absorbs surveillance stigma while fashion partner (EssilorLuxottica/Ray-Ban) is treated more neutrally. This preserves fashion media's relationship with the luxury brand while enabling adversarial coverage of the tech partner.
+
+**NOVEL FINDING — Cultural Propagation Without Financial Incentive:**
+Taylor Lorenz is independently funded (Substack subscribers) with no known financial ties to Meta, Apple, or Snap. The vocabulary bifurcation represents INTERNALIZED cultural consensus — the asymmetry self-reproduces without requiring financial architecture. This is more significant than financially-incentivized patterns because it shows the framing has become ambient cultural norm.
+
+**Sentiment Score:** -7.5/10 (strongly negative toward Meta; neutral toward Apple/Snap)
+**Asymmetry Assessment:** HIGH — Single-episode controlled comparison. Same journalist applies surveillance vocabulary exclusively to Meta while giving Apple and Snap completely different vocabularies for identical (Apple) or greater (Snap, 4 cameras) camera capabilities.
+
+**Financial Context:**
+- Taylor Lorenz / User Mag: Substack-funded. $0 from Meta, Apple, or Snap.
+- Amy Odell / Back Row: Fashion podcast (Megaphone/Spotify distribution). Fashion media historically relies on luxury brand advertising (EssilorLuxottica/Ray-Ban is major luxury advertiser).
+- STRUCTURAL NOTE: Fashion media's luxury brand dependency would predict SOFTER coverage of Ray-Ban products. The override (treating Meta glasses as surveillance despite Ray-Ban partnership) suggests the Meta surveillance narrative is strong enough to override normal advertising incentives in fashion media.
+
+**MediaScope Cross-Reference:**
+- Mechanism #227: Taylor Lorenz Back Row Fashion-Tech Podcast Camera Surveillance Vocabulary Bifurcation
+- Extends mechanism #225 (Vergecast three-episode convergence) to fashion podcast domain
+- Parallels mechanism #221 (9to5Mac Security Bite pre-framing)
+- Parallels mechanism #224 (Snap dual-AI partnership gets business framing)
+- Parallels mechanism #226 (Cult of Mac aspirational-cautionary dyad)
+
+---
+
+*Last updated: 2026-08-22 12:00 UTC (Aug 22, 5:00 AM PT)*
+*New mechanism: #227 (Taylor Lorenz Back Row Fashion-Tech Podcast — Camera Wearable Surveillance Vocabulary Bifurcation)*
