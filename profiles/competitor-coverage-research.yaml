@@ -24330,4 +24330,33 @@ publications:
       launch. Three-tier hierarchy: Meta adversarial, Apple neutral-with-differentiation, Snap invisible. Camera specialist
       defers to manufacturer intent rather than independently evaluating camera hardware privacy risk. Scored 0.88.'
     test_count: 36
+  james_pero_apple_airpods_temporal_intensification_reputational_credit_strengthening:
+    mechanism_id: 219
+    name: "James Pero (Gizmodo) Apple AirPods Camera Temporal Intensification \u2014 Reputational Credit Shield Strengthening Despite Hardware Confirmation (May\u2013Aug 2026)"
+    type: B
+    discovery_date: '2026-08-21'
+    iteration: 229
+    overview: "James Pero's Apple camera AirPods coverage INTENSIFIED from proactive defense (May 8) to active Apple-vs-Meta contrast (Aug 21) across three articles, despite each successive article revealing MORE evidence of surveillance capability. May 8: rumor-stage defense (\"Won't Let You Be a Total Creep\"). Aug 17: leaked video confirmation, neutral curiosity (\"Can See\"). Aug 21: technical specs revealed (640x640 active + 320x320 PASSIVE mode, always-on component), yet coverage becomes MORE protective \u2014 explicitly distinguishes Apple from Meta, credits Apple privacy intent on speculation, applies \"icky consequences\" to Meta and \"can't imagine Apple would\" in the SAME PARAGRAPH. Extends mechanism #211 with temporal dimension: reputation shields STRENGTHEN over time regardless of product capability evidence."
+    publication: Gizmodo (Keleops AG)
+    entity: "Apple (AirPods camera), Meta (Ray-Ban AI glasses)"
+    journalist: James Pero
+    asymmetry_score: 0.92
+    confounding_factors:
+    - "[STRONG] Apple AirPods camera IS technically lower resolution (1MP, 640x640 active, 320x320 passive) than Meta glasses (12MP photo/video). Counter: article acknowledges 320x320 passive mode (\"should have your alarm bells sounding\") then immediately redirects to Apple on-device processing as mitigation."
+    - "[STRONG] Meta has documented contractor footage review (SVD Swedish investigation). Counter: article treats Apple privacy intent as self-evident (\"I can't imagine Apple would\") without requiring any evidence, while treating Meta privacy as self-evidently malicious (\"has no issue collating\") despite Meta's own privacy safeguards."
+    - "[MODERATE] Different product maturity: Meta has 7M+ shipping units with abuse cases; Apple is pre-launch. Counter: Pero was ALSO pre-launch defensive about Apple in May, and the Aug 21 article's passive always-on mode is functionally identical to Meta's \"super sensing\" which Pero covered adversarially."
+    - "[WEAK] AirPods are less visible than glasses. Counter: less visibility = HARDER to detect recording, which is a GREATER privacy risk, not lesser. Pero does not apply this logic."
+    cross_references:
+    - 211
+    - 31
+    - 99
+    - 179
+    source_urls:
+    - https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194
+    - https://gizmodo.com/unearthed-video-seems-to-reveal-apple-airpods-that-can-see-2000799688
+    - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+    - https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    test_file: tests/test_james_pero_gizmodo_apple_airpods_temporal_intensification_reputational_credit_aug21.py
+    finding_summary: "James Pero (Gizmodo \"resident smart glasses guy\") Apple AirPods camera coverage INTENSIFIES protection across 3 articles over 3.5 months despite increasing hardware evidence: May 8 (rumor, proactive defense, zero alarm), Aug 17 (leaked video, neutral curiosity, scare quotes), Aug 21 (technical specs revealed including always-on 320x320 passive mode, ACTIVE defense contrasting Apple good intent vs Meta \"icky consequences\" in same paragraph). Same journalist same week: Meta gets \"pile up\" recidivism, Apple gets \"can't imagine they would.\" Temporal pattern: reputation shields don't weaken as evidence accumulates \u2014 they strengthen. Extends #211 three-entity gradient with temporal dimension."
+    test_count: 30
 research_period: 2024-08-01 to 2026-08-21

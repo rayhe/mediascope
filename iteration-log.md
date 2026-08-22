@@ -6650,3 +6650,38 @@ two tiers to three.
 - **Confounders:** 6 (2 STRONG, 2 MODERATE, 2 WEAK)
 - **Test corpus:** 525 test files
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #229 — Type B: Journalist Cross-Entity Tracking
+**Date:** 2026-08-21 (18:00 PT)
+**Mechanism:** #219 — James Pero (Gizmodo) Apple AirPods Camera Temporal Intensification — Reputational Credit Shield Strengthening Despite Hardware Confirmation (May–Aug 2026)
+
+### Discovery
+James Pero's Apple camera AirPods coverage across 3 articles (May 8, Aug 17, Aug 21) shows temporal INTENSIFICATION of protection despite increasing hardware evidence. The Aug 21 "No, AirPods With Cameras Aren't Smart Glasses for Your Ears" article reveals 320×320 passive always-on mode yet becomes MORE protective — explicitly contrasting Apple ("can't imagine they would") vs Meta ("icky consequences") in the same paragraph. Extends mechanism #211's three-entity gradient with a temporal dimension: reputation shields strengthen as evidence accumulates.
+
+### Key evidence
+1. **May 8 (rumor stage):** "Won't Let You Be a Total Creep" — zero alarm terms, proactive defense
+2. **Aug 17 (leaked video):** "Can 'See'" — neutral curiosity, no alarm language
+3. **Aug 21 (technical specs + passive mode):** "Aren't Smart Glasses" — ACTIVE defense, direct Apple vs Meta contrast, "icky consequences" applied to Meta in same paragraph that credits Apple intent
+4. **Same week Meta coverage:** "Pile up" recidivism (Jul 30), police surveillance (Aug 11)
+
+### Work
+1. **Test file:** `test_james_pero_gizmodo_apple_airpods_temporal_intensification_reputational_credit_aug21.py`
+   - 5 classes: TestMechanism219Exists (18), TestTemporalIntensificationPattern (6),
+     TestGizmodoProfileUpdated (4), TestVocabularyBifurcationEvidence (4),
+     TestCrossReferenceIntegrity (5)
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #219, asymmetry_score 0.92,
+     cross-references #211, #31, #99, #179, 4 confounding factors (2 STRONG, 1 MODERATE, 1 WEAK)
+   - `gizmodo.yaml`: Added Aug 17 and Aug 21 articles to apple cross-entity examples
+
+### Stats
+- **New test file:** 1 (37 tests, all passing)
+- **Mechanism ID:** #219
+- **Asymmetry score:** 0.92
+- **Cross-references:** 4 (#211, #31, #99, #179)
+- **Confounders:** 4 (2 STRONG, 1 MODERATE, 1 WEAK)
+- **Test corpus:** 526 test files
+- **Pushed to GitHub:** ✓

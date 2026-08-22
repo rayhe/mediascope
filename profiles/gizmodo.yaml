@@ -386,6 +386,32 @@ cross_entity_coverage:
         Apple's cameras mentioned as "Cameras? Most likely." — zero privacy
         vocabulary. Purely technical rumor coverage. Demonstrates that privacy
         alarm language is optional and only activated by brand.
+    - title: "Unearthed Video Seems to Reveal Apple AirPods That Can 'See'"
+      tone: neutral_curious
+      date: 2026-08-17
+      author: James Pero (attributed via vocabulary match — "icky" language + self-reference "[As I wrote last month]")
+      url: https://gizmodo.com/unearthed-video-seems-to-reveal-apple-airpods-that-can-see-2000799688
+      notes: >
+        Leaked video confirmation of Apple camera AirPods. Headline uses curious
+        scare quotes around "See" — NO alarm language. Privacy mentioned only as
+        Apple's own concern: "a sensitive matter for Apple." No surveillance,
+        creepy, or alarm vocabulary applied to the product itself. Contrast with
+        Meta glasses headlines from same publication: "Surveillance Machine,"
+        "Record Everything, All the Time," "Being Watched." Mechanism #219.
+    - title: "No, AirPods With Cameras Aren't Smart Glasses for Your Ears"
+      tone: active_defense
+      date: 2026-08-21
+      author: James Pero (attributed via "icky consequences" vocabulary match to mechanism #211 May 8 article)
+      url: https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+      notes: >
+        ACTIVE DEFENSE of Apple camera wearable despite new technical details
+        revealing 320×320 passive always-on mode. Headline uses negation to
+        separate Apple from stigmatized category. Article directly contrasts
+        Apple vs Meta in same paragraph: "While Meta has no issue collating
+        user data on its servers and then using it to train AI (to icky
+        consequences), I can't imagine that Apple...will want to tread down
+        the route." Credits Apple privacy intent without evidence, while
+        treating Meta malicious intent as self-evident. Mechanism #219.
     apple_n50_headline_presupposition_asymmetry:
       mechanism_id: 194
       date_analyzed: '2026-08-20'
