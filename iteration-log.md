@@ -1,6 +1,91 @@
 ---
 ---
 
+## Iteration #245 — Sat 2026-08-22 14:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #235: Specs Inc. Activist-Investor Pre-Launch Coverage Incentive Architecture**
+
+- **Type:** Financial Incentive Mapping (Type C)
+- **Entity:** Snap Inc. / Specs Inc. subsidiary
+- **Competitor entities:** Snap vs Meta (smart glasses coverage incentive divergence)
+- **Test file:** `tests/test_specs_inc_irenic_activist_pre_launch_coverage_incentive_architecture_aug22.py`
+- **Tests:** 10 classes, 29 tests (all passing)
+
+**Core finding:** Snap's creation of Specs Inc. as a wholly-owned subsidiary (Jan 28, 2026)
+with explicit minority investment path, combined with Irenic Capital Management's activist
+pressure (2.5% Class A stake, $3.5B cumulative burn, ~$500M/yr, "Save Snap Now" campaign
+Mar 31), creates a BINARY COVERAGE INCENTIVE in the 25-day window before the September 16
+consumer launch at $2,195:
+
+- **Positive coverage** → Specs Inc. attracts minority investment → survives activist
+  challenge → Snap ad platform strengthened → publishers benefit from competitive ad market
+- **Negative coverage** → validates Irenic's kill thesis → Specs killed/spun off → Meta
+  monopoly in smart glasses → Meta ad dominance ($243B) further concentrated → publishers
+  lose competitive leverage
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **ACTIVIST-INVESTOR PRESSURE AS COVERAGE INCENTIVE AMPLIFIER:** First mechanism
+   documenting how activist-investor campaigns (Irenic's $500M/yr burn characterization,
+   demand to kill Specs) create binary corporate survival stakes that amplify the financial
+   consequences of pre-launch coverage tone. Unlike most product launches where coverage
+   affects SALES, Specs coverage affects the EXISTENCE of the entire hardware subsidiary.
+
+2. **SPECS INC. SUBSIDIARY AS FINANCIAL SHIELD:** The corporate restructuring into a
+   wholly-owned subsidiary with minority investment path means Specs' survival depends on
+   attracting outside capital. Pre-launch coverage directly affects investor sentiment and
+   Specs Inc. valuation — publications covering Specs favorably help the unit attract
+   investment and survive.
+
+3. **PERPLEXITY CANCELLATION AMPLIFIER:** The $400M/yr Perplexity deal (terminated Q1 2026,
+   $0 revenue recognized) would have almost fully offset Specs' estimated $500M/yr burn.
+   Its cancellation removes the financial cushion, amplifying the importance of minority
+   investment and positive coverage.
+
+4. **QUANTIFIED SURVIVAL THRESHOLD:** Irenic's $500M/yr burn estimate creates a specific
+   financial bar. The market endorsed the kill thesis with a 13% stock jump on Irenic's
+   letter. Positive Specs coverage is CONTRARIAN to market consensus but financially
+   aligned with publisher interests.
+
+5. **HERBST-BRADY TEMPORAL CONVERGENCE:** Condé Nast CRO Elizabeth Herbst-Brady (ex-Snap
+   executive) controls the revenue context for WIRED (the most adversarial Meta glasses
+   publication) during the precise window when her former employer launches its competing
+   product. No evidence of editorial direction — but the commercial environment she shapes
+   determines which advertisers are prioritized.
+
+**ENTITY PROFILE UPDATES:**
+- Added `specs_inc_subsidiary` section to Snap entity: establishment date, minority
+  investment path, cumulative investment ($3.5B/11yr), annual burn ($500M), hiring (~100)
+- Added `irenic_capital_activist_pressure` section: stake (2.5%), demands (kill Specs,
+  cut ~1,000 jobs), market reaction (+13%), Spiegel defense, dual-class mitigation,
+  Perplexity cancellation amplifier, 5 confounders
+
+**Key data points:**
+| Metric | Value | Source |
+|--------|-------|--------|
+| Specs Inc. established | Jan 28, 2026 | Reuters |
+| Irenic stake (Class A) | 2.5% | Irenic press release |
+| Irenic target market cap | $35B vs $7.2B current | Irenic letter |
+| Specs cumulative investment | $3.5B over 11 years | Irenic / Spiegel confirmed |
+| Specs annual burn estimate | ~$500M/yr | Irenic presentation |
+| Perplexity deal (canceled) | $400M ($0 recognized) | TechCrunch, WSJ |
+| Snap Q2 2026 EBITDA | $250M (+505% YoY) | Snap SEC filing |
+| April restructuring | ~1,000 jobs cut | Snap, multiple outlets |
+| Consumer launch date | Sep 16, 2026 | PhoneArena |
+| Snap stock jump on Irenic | +13% | Barron's |
+
+**Confounders:** 2 STRONG (meta market share, incident history), 2 MODERATE (activist
+legitimacy, price niche), 1 WEAK (dual-class stock)
+
+### Stats
+- **New test file:** 1 (29 tests, all passing)
+- **Mechanism ID:** #235
+- **Entity profile sections added:** 2 (specs_inc_subsidiary, irenic_capital_activist_pressure)
+- **Test corpus:** ~543 files
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #244 — Sat 2026-08-22 13:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Mechanism #234: Malcolm Owen (AppleInsider) — Aspirational-Cautionary Dyad with
