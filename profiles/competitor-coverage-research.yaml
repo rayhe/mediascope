@@ -25883,3 +25883,152 @@ publications:
     - mechanism_id: 245
       relationship: parallel_pattern
       description: Pervertpods cross-publication stigma label resolution-rationalization
+  apple_camera_airpods_leak_vocabulary_gradient_financial_correlation:
+    mechanism_id: 247
+    discovery_date: '2026-08-23'
+    iteration: 255
+    type: C - Cross-Publication Comparative Analysis
+    asymmetry_score: 0.84
+    event: Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 17-18, 2026)
+    finding_summary: >
+      Five-tier vocabulary gradient for the SAME product (Apple camera AirPods)
+      correlates with publication financial relationship to Apple. Ranges from
+      defensive negation (Gizmodo/Keleops) through resolution rationalization
+      (Digital Trends/Designtechnica) to symmetric alarm (OSnews/volunteer-run).
+    publications_analyzed:
+    - gizmodo
+    - digital_trends
+    - engadget
+    - petapixel
+    - osnews
+    vocabulary_gradient_tiers:
+      tier_1_defensive_negation:
+        publications:
+        - gizmodo
+        strategy: Headline negation + resolution dismissal
+        apple_financial_relationship: Keleops AG affiliate revenue
+      tier_2_resolution_rationalization:
+        publications:
+        - digital_trends
+        strategy: Redefine cameras as sensors
+        apple_financial_relationship: Designtechnica Corp programmatic ad revenue
+      tier_3_headline_alarm_body_mitigation:
+        publications:
+        - engadget
+        strategy: Headline alarm undermined by body mitigation
+        apple_financial_relationship: Yahoo/Apollo Global ad marketplace
+      tier_4_sympathetic_concern:
+        publications:
+        - petapixel
+        strategy: Apple framed as worried protagonist
+        apple_financial_relationship: Photography audience + Apple News+ distribution
+      tier_5_symmetric_alarm:
+        publications:
+        - osnews
+        strategy: Identical alarm vocabulary to Meta
+        apple_financial_relationship: none
+    publication_evidence:
+      gizmodo:
+        aug21_headline: "No, AirPods With Cameras Aren't Smart Glasses for Your Ears"
+        apple_alarm_term_count: 0
+        resolution_defense_phrases:
+        - potato quality
+        - not exactly high-res
+        meta_alarm_in_apple_article: true
+        meta_alarm_terms:
+        - Privacy-Invading Lunch
+        - privacy minefield
+        - creepiest
+        - icky consequences
+      digital_trends:
+        rationalization_phrases:
+        - "not really 'camera' cameras"
+        - low-resolution sensors designed to scan
+        - smart companions that react automatically
+        - clear signal when data is being sent
+        apple_alarm_term_count: 0
+        meta_alarm_terms:
+        - horrific example for creep behavior
+        - creepiest lawsuit
+        - creepy reputation
+        apple_writer: Varun
+        meta_writers:
+        - Shimul
+        - Pranob
+        passive_mode_alarm_flag: false
+      engadget:
+        headline: "I'm Already Dreading Apple's Camera-Equipped AirPods"
+      petapixel:
+        headline: "Apple Frets Over Smart Glasses' Bad Reputation"
+      osnews:
+        headline: PervertPods
+        alarm_terms:
+        - PervertPods
+        - "pervert's wet dream"
+        - abusers are going to love this
+        resolution_defense_count: 0
+        apple_financial_relationship: volunteer-run
+        reputation_credit_shield: false
+    passive_mode_comparison:
+      apple_passive_mode_exists: true
+      meta_super_sensing_exists: true
+      apple_passive_mode_type: continuous_environmental_capture
+      meta_super_sensing_type: continuous_environmental_capture
+      apple_passive_alarm_count: 0
+      meta_sensing_alarm_count: 12
+    financial_architecture:
+      gizmodo:
+        parent: Keleops AG
+        apple_relationship: keleops affiliate revenue
+      digital_trends:
+        parent: Designtechnica Corporation
+        apple_relationship: designtechnica programmatic ad revenue
+      engadget:
+        parent: Yahoo (Apollo Global Management)
+        apple_relationship: yahoo/apollo ad revenue
+      petapixel:
+        parent: PetaPixel Media Inc
+        apple_relationship: photography audience affiliate revenue
+      osnews:
+        parent: volunteer-run
+        apple_relationship: volunteer-run zero revenue
+    confounders:
+    - name: Resolution hardware difference
+      strength: STRONG
+      description: Apple 1MP vs Meta 12MP resolution provides legitimate basis for different framing
+    - name: Apple privacy reputation
+      strength: STRONG
+      description: Apple stronger privacy reputation may independently justify different editorial tone
+    - name: Product stage difference
+      strength: MODERATE
+      description: Apple AirPods were unreleased/leaked vs Meta glasses being a shipping product
+    - name: Independent editorial assessment
+      strength: MODERATE
+      description: Publications may independently assess lower risk for 1MP sensors
+    - name: Temporal calibration
+      strength: WEAK
+      description: Later-covering publications had more time to assess technical analysis
+    sources:
+    - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+    - https://gizmodo.com/airpods-with-cameras-wont-let-you-be-a-total-creep-2000756194
+    - https://www.digitaltrends.com/home-theater/apple-camera-airpods-2027-leak-visual-intelligence/
+    - https://www.digitaltrends.com/home-theater/airpods-ir-cameras-sensors-upgrade/
+    - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+    - https://petapixel.com/2026/07/27/apple-frets-over-smart-glasses-bad-reputation-as-2027-launch-looms/
+    test_file: tests/test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py
+    cross_references:
+    - mechanism_id: 219
+      relationship: extends
+      description: James Pero temporal intensification
+    - mechanism_id: 230
+      relationship: extends
+      description: Matt Growcoot vocabulary inversion
+    - mechanism_id: 245
+      relationship: extends
+      description: Pervertpods stigma label
+    - mechanism_id: 246
+      relationship: extends
+      description: Billy Steele beat routing
+    - mechanism_id: 194
+      relationship: extends
+      description: Gizmodo privacy-invading lunch

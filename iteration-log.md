@@ -8248,3 +8248,62 @@ Meta headline alarm ("baggage," "ban," "criminal complaint") is reinforced by bo
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** 556 test files
 - **Pushed to GitHub:** ✓
+
+## Iteration #255 — Sun 2026-08-23 04:00 PT (Type C: Cross-Publication Comparative Analysis)
+
+### Research Direction
+Cross-publication vocabulary gradient analysis for Apple camera AirPods
+macOS Tahoe 26.7 RC leak (Aug 17-18, 2026) — how 5 publications with
+different financial architectures framed the SAME product differently.
+
+### Key Finding
+Five-tier vocabulary gradient for the same product correlates with each
+publication's financial relationship to Apple:
+
+1. **Tier 1 — Defensive Negation (Gizmodo/Keleops AG):** "No, AirPods With
+   Cameras Aren't Smart Glasses" — headline negation, "potato quality," 0
+   alarm terms. Same article uses "icky consequences" for Meta.
+2. **Tier 2 — Resolution Rationalization (Digital Trends/Designtechnica):**
+   Varun writes "not really 'camera' cameras," "low-resolution sensors," 0
+   alarm. Same publication: "horrific example for creep behavior" (Shimul,
+   Meta). Different writer covers each entity.
+3. **Tier 3 — Headline-Alarm-Body-Mitigation (Engadget/Yahoo/Apollo):**
+   Billy Steele "I'm Already Dreading" headline alarm undermined by body
+   mitigation ("just without ability to take clear photos").
+4. **Tier 4 — Sympathetic Concern (PetaPixel):** "Apple Frets Over Bad
+   Reputation" — Apple as worried protagonist, Meta as cautionary tale.
+5. **Tier 5 — Symmetric Alarm (OSnews/volunteer-run):** "PervertPods" in
+   headline, identical alarm vocabulary to Meta, zero resolution defense,
+   zero reputational credit shield.
+
+**Control case:** OSnews (volunteer-run, zero advertising, zero affiliate
+revenue) is the ONLY publication applying symmetric alarm to Apple and
+Meta — establishing financial-relationship-zero baseline.
+
+**Passive mode double standard:** Apple's 320×320 always-on passive mode
+(continuous environmental capture) is functionally equivalent to Meta's
+Super Sensing. Publications in Tiers 1-4 apply 0 alarm terms to Apple
+passive mode, 12+ to Meta equivalent.
+
+### Deliverables
+1. **Test file:** `tests/test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py`
+   - 10 classes, 49 tests, all passing
+   - Classes: TestMechanism247Exists (7), TestVocabularyGradientTiers (7),
+     TestGizmodoDefensiveNegation (5), TestDigitalTrendsResolutionRationalization (5),
+     TestOSnewsSymmetricAlarmControl (5), TestPassiveModeDoubleStandard (4),
+     TestFinancialArchitectureCorrelation (5), TestConfounderDocumentation (4),
+     TestCrossReferenceIntegrity (5), TestDocSync (2)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #247, asymmetry_score 0.84,
+     5 cross-references (#219, #230, #245, #246, #194), 5 confounding factors
+
+### Stats
+- **New test file:** 1 (49 tests, all passing)
+- **Mechanism ID:** #247
+- **Asymmetry score:** 0.84
+- **Cross-references:** 5 (#219, #230, #245, #246, #194)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 557 test files
+- **Pushed to GitHub:** ✓

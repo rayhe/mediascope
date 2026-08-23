@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,018 | Across 555 test files |
+| Tests | ~20,064 | Across 557 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20018 tests (with parameterized expansion) across 555 test files, each covering a different analytical capability:
+MediaScope has **~20064 tests (with parameterized expansion) across 557 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1066,3 +1066,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_conde_nast_snap_discover_quintuple_financial_alignment_specs_coverage_aug22.py` | 39 | Mechanism #239: Condé Nast Snapchat Discover Revenue — Quintuple Publisher Financial Alignment for Snap Specs Coverage (Type C). WIRED had a dedicated Snapchat Discover channel. $58M verified publisher payments, 28 Discover shows across 9+ Condé Nast brands. 5th financial axis extends quad-AI analysis. 8 classes, 39 tests |
 | `test_type_e_4pm_ice_dhs_ban_paradox_institutional_cascade_meta_exclusive_stigma_aug22.py` | 36 | Mechanism #236: ICE/DHS Institutional Ban Paradox — Meta-Exclusive Stigma Propagation Through Cross-Sovereign Ban Cascade (Type E). ICE bans Meta glasses specifically while no institution bans Samsung, Google, Apple, or Snap devices. Cross-sovereign ban cascade propagation. RayNeo markets against Meta stigma. 8 classes, 36 tests |
 | `test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py` | 31 | Mechanism #229: MarketWatch (News Corp/Dow Jones) Headline Template Inversion — Meta Success Dismissal / Apple Problem Insulation (Type A). Same 'X — but Y' headline template applied in opposite directions within 24 hours: Meta success undermined, Apple problem insulated. Jun 2026 article contains internal data contradiction: 84% market share + 'No one really wants Meta glasses.' News Corp triple-revenue financial relationship. 9 classes, 31 tests |
+| `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` | 46 | Mechanism #247: Cross-Publication Apple Camera AirPods macOS Tahoe Leak Response — Vocabulary Gradient Financial Architecture Correlation (Type C). Five-tier vocabulary gradient for the SAME product (Apple camera AirPods, macOS Tahoe 26.7 RC leak Aug 17-18, 4.6M X views) correlates with financial relationship to Apple. Tier 1 Defensive Negation (Gizmodo/Keleops AG: "Aren't Smart Glasses," "potato quality," 0 alarm terms), Tier 2 Resolution Rationalization (Digital Trends/Designtechnica: "not really 'camera' cameras," "low-resolution sensors," 0 alarm), Tier 3 Headline-Alarm-Body-Mitigation (Engadget/Yahoo/Apollo: "Dreading" headline undermined by body), Tier 4 Sympathetic Concern (PetaPixel: "Apple Frets" protagonist framing), Tier 5 Symmetric Alarm (OSnews/volunteer-run: "PervertPods" in headline, identical to Meta vocabulary). OSnews as financial-relationship-zero control case: only publication applying symmetric alarm to Apple and Meta. Passive 320×320 always-on mode functionally equivalent to Meta Super Sensing, zero alarm in Tiers 1-4. Extends #219 (Pero temporal), #230 (Growcoot), #245 (PervertPods), #246 (Steele beat routing). 2 STRONG, 2 MODERATE, 1 WEAK confounders. 10 classes, 46 tests |
