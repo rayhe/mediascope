@@ -1,4 +1,59 @@
 
+## Iteration #260 — Sun 2026-08-23 11:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Google "Preferred Sources" Publisher Embed Button — Sixth Dependency Layer + Reddit Q2 2026 Financial Update
+
+**Mechanism #253:** Google "Preferred Sources" Publisher Embed — Sixth Dependency Layer in Google's Publisher Captivity Architecture
+
+**Core Finding:** On August 20, 2026, Google launched an embeddable "Preferred Sources" button that publishers can add to their own websites with two lines of code (one script tag, one div element). When readers click it, the publisher gets elevated visibility across Google Search, Discover, AI Overviews, and AI Mode — with a 2x click-through multiplier. By August 2026, 600,000+ unique sources had been selected (up from 345,000 in May 2026).
+
+**Why Layer 6 is qualitatively different:** Previous Google dependency layers (ad revenue, Showcase, AI licensing, traffic, equity/co-marketing) operate through Google's own platforms. Layer 6 embeds Google infrastructure IN publisher properties. The publisher's own website becomes a Google engagement surface, training readers to use Google's preference system. This deepens lock-in to a level where publisher identity is partially constructed through Google's mechanism.
+
+**Six-Layer Publisher Captivity Architecture:**
+
+| Layer | Mechanism | Value | Dependency Type |
+|-------|-----------|-------|----------------|
+| 1 | Ad Revenue (AdX/AdSense) | ~$20-30B/yr to publishers | Revenue critical |
+| 2 | News Showcase | ~$1B+/yr, 3,000+ pubs | Direct payment |
+| 3 | AI Content Licensing | News AI pilot, "share or lose" | Coercive bundling |
+| 4 | Traffic Dependency | AI Overviews: 33-38% traffic decline | Structural |
+| 5 | Equity/Co-Marketing | Warby Parker $150M, Qualcomm | Feedback loop |
+| 6 | Preferred Sources Embed | 600K sources, 2x click-through | Publisher-site embed |
+
+**Coercive bundling (Layer 3 + Layer 6):** Publishers who embed the button AND accept AI training terms get maximum visibility. Non-participation risks compound revenue loss across multiple layers simultaneously. Meta has ZERO analogous publisher dependency mechanisms.
+
+**Reddit Q2 2026 Financial Data Integration (from Jul 30 earnings call):**
+- Total revenue: $805M (+61% YoY), 8th consecutive 60%+ growth quarter
+- Ad revenue: $762M (+64% YoY) — explicitly competing with Meta Advantage+
+- Other revenue (incl. data licensing): $43M (+24% YoY)
+- Net income: $253M ($1.25/diluted share)
+- DAUq: 130.3M (+18%), WAUq: 514.6M (+24%)
+- Operating cash flow: $262M ($1B+ TTM milestone)
+- Active advertisers: +70% YoY; Reddit Max AI revenues +150% QoQ
+- Q3 2026 guidance: $860-870M revenue (+47-49% YoY)
+- Advance stake: 42.2M shares × $153.29 = ~$6.47B (65.2% voting control)
+- **Data licensing renewal uncertainty:** CEO Huffman non-committal on Google/OpenAI renewals: "the range of outcomes is wide." Data valued for training, post-training, grounding, and search index — "expanding marketplace with lots of different opportunities."
+
+**Google entity updates:**
+- Updated `google_coercive_mechanisms` from 5 to 6
+- Added `preferred_sources_embed_button` section with full technical specs, adoption data, coercive bundling analysis
+
+1. **New test file:** `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` — 10 classes, 55 tests, all passing.
+2. **Profile updates:**
+   - `competitor-entities.yaml`: Google entity — added `preferred_sources_embed_button` section, updated coercive mechanism count to 6
+   - `competitor-coverage-research.yaml`: Added mechanism #253 full entry
+3. **Sources:** TechCrunch (Aug 20, 2026), WebProNews (Aug 22, 2026), PYMNTS (Jun 25, 2026), Motley Fool Reddit Q2 earnings transcript (Jul 30, 2026)
+
+### Stats
+- **New test file:** 1 (55 tests, all passing)
+- **Mechanism ID:** #253
+- **Asymmetry score:** 0.80
+- **Cross-references:** 6 (#23, #40, #53, #84, #147, #202)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 564 test files, ~19,293 tests
+- **Pushed to GitHub:** ✓
+
+---
 ## Iteration #259 — Sun 2026-08-23 10:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Chokkattu Dual-Role Apple Camera AirPods Contribution — Temporal Adjacency Vocabulary Bifurcation

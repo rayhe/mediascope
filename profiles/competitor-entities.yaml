@@ -4096,7 +4096,7 @@ entities:
       meta_contrast:
         nosue_clauses: false
         coercive_mechanisms: 0
-        google_coercive_mechanisms: 5
+        google_coercive_mechanisms: 6
         deal_model: voluntary
       source_urls:
       - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
@@ -4116,6 +4116,36 @@ entities:
         publisher coverage incentives. 700+ Showcase publishers have indirect structural incentive to avoid Anthropic coverage
         that would impair Google''s $170B+ combined exposure. '
       source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
+    preferred_sources_embed_button:
+      mechanism_id: 253
+      launch_date: '2026-08-20'
+      overview: 'Google launched an embeddable "Preferred Sources" button that publishers can add to their
+        own websites with two lines of code. When readers click it, that publisher gets elevated visibility
+        across Google Search, Discover, AI Overviews, and AI Mode. By August 2026, 600,000+ unique sources
+        had been selected (up from 345,000 in May 2026). This is Google''s SIXTH publisher dependency layer
+        — and qualitatively different from the other five because it embeds Google infrastructure IN publisher
+        properties. Previous layers operated through Google''s platforms; this one makes the publisher''s own
+        website a Google engagement surface, deepening lock-in to a level where publisher identity becomes
+        partially constructed through Google''s preference system.'
+      implementation:
+        code_lines: 2
+        components: ['script tag loads Google library', 'div element renders button']
+        features: ['auto-localization', 'light/dark theme support', 'JavaScript fallback deeplink']
+      adoption:
+        may_2026_sources: 345000
+        august_2026_sources: 600000
+        growth_may_to_aug_pct: 73.9
+      click_through_multiplier: 2.0
+      surfaces: ['Google Search', 'Discover', 'AI Overviews', 'AI Mode']
+      coercive_bundling_with_ai_pilot: 'Combined with Layer 3 (share content for AI or lose fees),
+        publishers face dual incentive: embed the button to boost visibility AND accept AI training
+        terms to keep Showcase payments. Non-participation in either risks compound revenue loss.'
+      meta_contrast:
+        meta_analogous_mechanisms: 0
+        google_dependency_layers: 6
+      source_urls:
+      - https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/
+      - https://www.webpronews.com/google-hands-publishers-a-button-to-reclaim-readers-from-ai-summaries/
     publisher_ai_deal_revolt:
       overview: 'As of July 2026, at least 6 major publishers/platforms are publicly considering limiting
 

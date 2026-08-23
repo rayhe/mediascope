@@ -23842,3 +23842,60 @@ publications:
     test_file: tests/test_chokkattu_dual_role_apple_camera_airpods_contribution_temporal_adjacency_aug23.py
     type: B
     meta_coverage_tone: adversarial
+  google_preferred_sources_embed_sixth_dependency_layer:
+    mechanism_id: 253
+    mechanism_name: "Google Preferred Sources Publisher Embed — Sixth Dependency Layer"
+    mechanism_type: "financial_incentive_mapping"
+    discovery_date: "2026-08-23"
+    asymmetry_score: 0.80
+    entities: ["Google", "Meta"]
+    test_file: tests/test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py
+    test_count: 55
+    finding_summary: >
+      On August 20, 2026, Google launched an embeddable "Preferred Sources" button for publishers
+      to add to their websites with two lines of code. When readers click it, the publisher gets
+      elevated visibility across Google Search, Discover, AI Overviews, and AI Mode (2x click-through).
+      By August 2026, 600,000+ unique sources had been selected. This completes Google's SIXTH publisher
+      dependency layer — qualitatively different from the other five because it embeds Google infrastructure
+      IN publisher properties, making the publisher's own website a Google engagement surface. Combined
+      with the "share content for AI or lose fees" coercion from Layer 3, publishers face a compound
+      incentive to both embed Google's code AND accept AI training terms. Meta has zero analogous
+      publisher dependency mechanisms. Also integrates Reddit Q2 2026 earnings data ($805M revenue, $762M
+      ad revenue, Advance 65.2% voting control) and CEO Huffman's non-committal stance on Google/OpenAI
+      data licensing renewals ("the range of outcomes is wide").
+    confounders:
+    - strength: STRONG
+      description: "Button is opt-in — no publisher is forced to embed it. No coercion at Layer 6 specifically."
+    - strength: STRONG
+      description: "2x click-through is genuine publisher benefit. Not purely extractive."
+    - strength: MODERATE
+      description: "600K sources dilutes per-publisher competitive advantage. If everyone is preferred, advantage may be minimal."
+    - strength: MODERATE
+      description: "Embedding button may not change editorial decisions. Technical adoption ≠ editorial capture."
+    - strength: WEAK
+      description: "Google could revoke preferred status for adversarial publishers — speculative, no evidence."
+    cross_references:
+    - mechanism_id: 23
+      relationship: extends
+      description: "Google Showcase coercive cycle — Layer 6 builds on existing Showcase dependency."
+    - mechanism_id: 40
+      relationship: extends
+      description: "Google ad dependency paradox — ad revenue is the deepest layer, Layer 6 compounds it."
+    - mechanism_id: 53
+      relationship: complements
+      description: "Display deprecation erodes ad floor; Preferred Sources offers partial remedy at cost of deeper dependency."
+    - mechanism_id: 84
+      relationship: specializes
+      description: "Google News AI prisoner dilemma — Layer 6 adds another cooperation incentive to the dilemma."
+    - mechanism_id: 147
+      relationship: context
+      description: "Google-Warby Parker equity — smart glasses coverage feedback loop, Layer 5 in the six-layer model."
+    - mechanism_id: 202
+      relationship: extends
+      description: "Fall 2026 convergence index — Google's Preferred Sources deepens its convergence score."
+    source_urls:
+    - https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/
+    - https://www.webpronews.com/google-hands-publishers-a-button-to-reclaim-readers-from-ai-summaries/
+    - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+    - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
+    type: C
