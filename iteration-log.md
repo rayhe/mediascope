@@ -1,7 +1,74 @@
 ---
 ---
 
-## Iteration #249 — Sat 2026-08-22 19:00 PT (Type B: Journalist Cross-Entity Tracking)
+## Iteration #250 — Sat 2026-08-22 20:00 PT (Type C: Financial Incentive Mapping)
+
+**Mechanism #239: Condé Nast Snapchat Discover Revenue Relationship Creates Quintuple
+Publisher Financial Alignment for Snap Specs Coverage**
+
+- **Type:** Financial Incentive Mapping (Type C)
+- **Test file:** `tests/test_conde_nast_snap_discover_quintuple_financial_alignment_specs_coverage_aug22.py`
+- **Tests:** 8 classes, 39 tests (all passing)
+- **Asymmetry score:** 5:0 (publisher financial alignment axes Snap vs Meta)
+- **Confounders:** 6 (2 STRONG, 2 MODERATE, 2 WEAK)
+- **Cross-references:** #231 (CLAD quad-AI), #224 (Snap dual-AI), #235 (Specs Inc/Irenic),
+  #232 (Snap dual AI Sep 16), #176 (Condé Nast deal inventory)
+- **Sources:** 4 Digiday articles, 1 Subscription Insider, 1 MarTech, Snap IPO paperwork,
+  Snap Q2 2026 earnings (BusinessWire, Zacks, Reuters, TechTimes)
+
+**Core finding:** Condé Nast has a DIRECT revenue relationship with Snap Inc. through the
+Snapchat Discover platform that was not previously mapped in the coverage asymmetry analysis.
+Multiple Condé Nast properties — including WIRED (1 series), GQ (4 series), Vanity Fair (4),
+Glamour (4), Teen Vogue (publisher edition), SELF (publisher edition), W (2), Bon Appétit (2),
+and The New Yorker (1) — have operated 28 Snapchat Discover shows with either revenue-sharing
+or licensing-fee arrangements.
+
+This establishes a FIFTH publisher financial alignment axis for Snap Specs coverage, extending
+the quad-AI-company analysis from Mechanism #231 (CLAD developer ecosystem):
+
+| Axis | Entity | Relationship Type | Financial Flow |
+|------|--------|-------------------|----------------|
+| 1 | OpenAI | Powers Specs AI + Condé Nast content deal | OpenAI → Condé Nast |
+| 2 | Google | Powers Specs AI + publisher ads/Showcase | Google → Condé Nast |
+| 3 | Anthropic | Claude Code in CLAD | Indirect via Google/Amazon |
+| 4 | Anysphere | Cursor IDE in CLAD | Indirect via OpenAI backing |
+| **5** | **Snap (direct)** | **Discover licensing/revenue-share** | **Snap → Condé Nast** |
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **WIRED HAD A DEDICATED SNAPCHAT DISCOVER CHANNEL** — The same publication producing the
+   most adversarial Meta glasses coverage has a direct revenue relationship with Meta's
+   competitor in the smart glasses market. Subscription Insider confirmed GQ, WIRED, and
+   SELF all launched Snapchat Discover channels.
+
+2. **$58M IN VERIFIED PUBLISHER PAYMENTS** — Snap IPO paperwork disclosed $58M in
+   revenue-sharing payments to Discover publishers in 2016 alone. By 2017, individual
+   publishers were earning $2-4M/yr from flat licensing fees. With 28 shows across 9+ brands,
+   Condé Nast was among the largest Discover partners.
+
+3. **QUINTUPLE ALIGNMENT EXTENDS QUAD ANALYSIS** — The publisher financial alignment
+   count for Snap Specs coverage increases from 4 (AI-company axes) to 5 (adding direct
+   Snap platform revenue). Meta's count remains at 0.
+
+4. **25-DAY PRE-LAUNCH WINDOW CONVERGENCE** — All 5 financial axes are active during the
+   Aug 22 → Sep 16 pre-launch coverage window for Specs consumer event. Peak financial
+   convergence coincides with peak media coverage intensity.
+
+**Updates to competitor-entities.yaml:**
+- Updated `publisher_financial_alignment_axes_snap` from 4 to 5
+- Added `fifth_axis_snap_direct_discover` with mechanism_id, brand list, source URLs
+- Expanded `publisher_financial_relationships.discover_platform` with Condé Nast brand
+  details, show count (28), payment data ($58M/yr to publishers, $2-4M/yr licensing),
+  Snap PMP beta confirmation, and current status assessment
+
+### Stats
+- **New test file:** 1 (39 tests, all passing)
+- **Mechanism ID:** #239
+- **Test corpus:** 549 files
+- **YAML updates:** competitor-entities.yaml (Snap quintuple alignment, Discover details)
+- **Pushed to GitHub:** ✓
+
+---
 
 **Mechanism #238: Stuff (Kelsey Media) Cross-Entity Camera Wearable Vocabulary
 Bifurcation — "Pervert Glasses" for Meta, "Designed to Better Humanity" for Apple**

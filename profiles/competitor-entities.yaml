@@ -5775,8 +5775,36 @@ entities:
             pre-launch coverage for Snap Specs. Publications with OpenAI, Google, and Anthropic
             financial relationships have four-axis incentive to produce favorable coverage.
             Publications covering Meta glasses have zero-axis publisher financial alignment.'
-          publisher_financial_alignment_axes_snap: 4
+          publisher_financial_alignment_axes_snap: 5
           publisher_financial_alignment_axes_meta: 0
+          fifth_axis_snap_direct_discover:
+            mechanism_id: 239
+            relationship: Condé Nast Snapchat Discover platform revenue (licensing/revenue-share)
+            conde_nast_shows_on_snapchat: 28
+            conde_nast_brands_with_discover:
+            - WIRED (1 series)
+            - GQ (4 series — Actually Me, Tattoo Tours, On The Rocks, Iconic Characters)
+            - Vanity Fair (4 series)
+            - Glamour (4 series)
+            - Teen Vogue (publisher edition, 2x/week)
+            - SELF (publisher edition)
+            - W (2 series)
+            - Bon Appétit (2 series)
+            - The New Yorker (1 series)
+            snap_discover_publisher_payments_2016_m: 58
+            licensing_fee_range_m_yr: 2-4
+            snap_pmp_beta_partner: true
+            snap_pmp_beta_date: '2018'
+            novel_contribution: 'Extends quad-AI analysis (#231) to quintuple alignment.
+              WIRED had a dedicated Snapchat Discover channel — direct revenue relationship
+              with the company whose AR glasses WIRED covers aspirationally, while Meta
+              (no such relationship) receives adversarial coverage for functionally
+              comparable hardware.'
+            source_urls:
+            - http://digiday.com/media/conde-nast-snapchat-shows-plans/
+            - https://www.subscriptioninsider.com/type-of-subscription-business/magazines/conde-nasts-gq-wired-and-self-to-launch-snapchat-discover-channels
+            - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
+            - https://digiday.com/media/it-hasnt-killed-us-snapchat-discover-publishers-face-tough-challenge-as-platform-chases-tv/
           confounding_factors:
           - name: market_share_differential
             strength: STRONG
@@ -5950,15 +5978,29 @@ entities:
         - https://www.zacks.com/stock/news/2963510/snap-gears-up-to-report-q2-earnings-whats-in-store-for-the-stock
     publisher_financial_relationships:
       discover_platform:
-        type: revenue_sharing
-        description: Snap Discover platform shares ad revenue with publisher partners. Condé Nast confirmed as Snap PMP (Private
-          Marketplace) beta partner (2018). Publisher Discover partners included BuzzFeed, Condé Nast, Hearst, NBCU, Viacom,
-          VICE. Publishers create daily content editions, Snap sells ads, revenue is shared. Current status of Condé Nast
-          Discover partnership unclear.
+        type: revenue_sharing_and_licensing
+        mechanism_id: 239
+        description: 'Snap Discover platform shares ad revenue or pays licensing fees to publisher
+          partners. Condé Nast confirmed as Snap PMP (Private Marketplace) beta partner (2018).
+          Condé Nast operated 28 shows across 9+ brands on Snapchat Discover, including dedicated
+          channels for WIRED, GQ, and SELF. Snap paid $58M in revenue-sharing to Discover publishers
+          in 2016 (IPO paperwork). By 2017, Snap shifted to flat licensing fees ($2-4M/yr per channel)
+          for some partners, while larger publishers (Hearst, ESPN, Vice) retained revenue-share deals.
+          This is a DIRECT financial relationship between Snap and Condé Nast — the same parent company
+          whose WIRED produces the most adversarial Meta glasses coverage.'
         conde_nast_confirmed: true
-        conde_nast_confirmed_date: '2018'
+        conde_nast_pmp_beta_date: '2018'
+        conde_nast_show_count: 28
+        conde_nast_brands: ['WIRED', 'GQ', 'Vanity Fair', 'Glamour', 'Teen Vogue', 'SELF', 'W', 'Bon Appétit', 'The New Yorker']
+        snap_discover_publisher_payments_2016_m: 58
+        licensing_fee_range_m_yr: '2-4'
+        current_status: 'Active but evolved. Condé Nast Discover presence likely transitioned from
+          dedicated publisher channels to branded shows/series model. Financial relationship ongoing.'
         source_urls:
+        - http://digiday.com/media/conde-nast-snapchat-shows-plans/
+        - https://www.subscriptioninsider.com/type-of-subscription-business/magazines/conde-nasts-gq-wired-and-self-to-launch-snapchat-discover-channels
         - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
+        - https://digiday.com/media/it-hasnt-killed-us-snapchat-discover-publishers-face-tough-challenge-as-platform-chases-tv/
       content_licensing_deals: []
       ad_revenue_significance: minimal
       meta_contrast: 'Meta has ZERO platform revenue-sharing relationships with Condé Nast. Meta does not operate a Discover-style
