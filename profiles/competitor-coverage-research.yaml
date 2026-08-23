@@ -25281,3 +25281,66 @@ publications:
     test_count: 30
     test_file: tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py
     type: C
+  macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_mechanism_236:
+    asymmetry_score: 0.83
+    confounding_factors:
+    - '[STRONG] Apple AirPods cameras are lower resolution (0.4-1MP vs Meta 12MP). However,
+      privacy concern with camera wearables is presence of camera, not resolution. 1MP can
+      still observe surroundings, parse text, identify objects — exactly what the leaked demo
+      shows AirPods doing.'
+    - '[STRONG] AirPods cameras stated purpose is AI environmental scanning, not photo/video
+      capture. But functionally identical to Meta glasses Look and Ask — both feed camera
+      input to AI for context parsing. The distinction is marketing, not technical.'
+    - '[STRONG] Meta has actual privacy incidents (contractor review, LED hack) vs Apple
+      rumors. But podcasts apply ZERO scrutiny to Apple, not proportional scrutiny. Complete
+      absence is omission, not proportionality.'
+    - '[MODERATE] Apple AirPods cameras are unshipped (delayed to 2027). However, MacRumors
+      episode covers a leaked WORKING DEMO — product exists, works, was accidentally included
+      in a shipping OS update.'
+    - '[MODERATE] MacRumors is an Apple-ecosystem publication with natural audience alignment.
+      But this IS the mechanism: audience-publication alignment creates systemic incentive to
+      frame Apple camera wearables positively, absent for Meta.'
+    cross_references:
+    - description: Extends 9to5Mac Happy Hour 604 camera AirPods excitement framing — now
+        replicated across MacRumors Show
+      mechanism_id: 221
+      relationship: extends
+    - description: Extends Gizmodo category identity inversion — print pattern now confirmed
+        in podcast medium via MacRumors
+      mechanism_id: 228
+      relationship: extends
+    - description: Extends podcast ecosystem amplifies print asymmetry — now with Apple
+        camera wearable as counter-case
+      mechanism_id: 144
+      relationship: extends
+    - description: NBC News broadcast alarm framing for Meta contrasts with MacRumors zero
+        alarm for Apple
+      mechanism_id: 232
+      relationship: parallel
+    - description: Camera earbud privacy vocabulary zero — Vergecast confounding for AirPods
+        vs menace for Meta
+      mechanism_id: 209
+      relationship: parallel
+    discovery_date: '2026-08-22'
+    finding_summary: MacRumors Show (Dan Barbera, Aug 20-21 2026) covers Apple leaked camera-equipped
+      AirPods with entirely aspirational/anticipatory framing. Title 'Camera AirPods Are Coming,
+      Just Not This Year...' uses anticipatory vocabulary, zero privacy alarm. 9to5Mac Daily
+      (Aug 21) titles its episode 'AirPods with cameras, more' — entirely neutral. When the
+      entity making camera wearables is Apple, the podcast ecosystem treats cameras as a FEATURE.
+      When the entity is Meta, cameras are a THREAT. Three Apple camera wearable podcast titles
+      have zero alarm/privacy words combined; four Meta camera wearable podcast titles average
+      -6.5/10 sentiment.
+    iteration: 247
+    mechanism_id: 236
+    name: MacRumors Show Apple Camera AirPods Aspirational Framing — Cross-Medium Privacy
+      Vocabulary Zero
+    publication: MacRumors (Apple-ecosystem podcast)
+    source_urls:
+    - https://www.youtube.com/watch?v=H2_EVCRNfds
+    - https://9to5mac.com/2026/08/21/daily-august-21-2026/
+    - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+    - https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
+    - https://www.youtube.com/watch?v=gxZj-XGIQ3Y
+    test_count: 45
+    test_file: tests/test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py
+    type: E

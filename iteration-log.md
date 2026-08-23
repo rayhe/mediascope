@@ -1,6 +1,75 @@
 ---
 ---
 
+## Iteration #247 — Sat 2026-08-22 17:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Mechanism #236: MacRumors Show Apple Camera AirPods Aspirational Framing —
+Cross-Medium Privacy Vocabulary Zero**
+
+- **Type:** Podcast Sentiment Tracking (Type E)
+- **Test file:** `tests/test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py`
+- **Tests:** 9 classes, 45 tests (all passing)
+
+**Core finding:** MacRumors Show (Dan Barbera, Aug 20-21 2026) covers Apple's leaked
+camera-equipped AirPods with entirely aspirational/anticipatory framing. Title: "Camera
+AirPods Are Coming, Just Not This Year..." — uses anticipatory vocabulary ("coming"),
+temporal disappointment ("not this year"), ZERO privacy alarm language. The video
+description discusses camera hardware, AI Visual Intelligence, stem thickness, B790/B798
+codenames, and Gurman's delay timeline — all through a product-excitement lens. Privacy
+does not enter the discussion AT ALL.
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **CROSS-MEDIUM TITLE VOCABULARY NATURAL EXPERIMENT:** Three Apple camera wearable
+   podcast titles (MacRumors Show, 9to5Mac Daily, 9to5Mac Happy Hour 604) contain ZERO
+   alarm/privacy words combined. Four Meta camera wearable podcast titles (Kill Switch,
+   AmberMac, Shared Security, Acquired AI) average -6.5/10 sentiment with alarm words
+   "glassholes," "pervert," "worried," and "lawsuit." Same functional capability (camera
+   → AI context parsing), opposite vocabulary, divergent solely on entity.
+
+2. **PODCAST EXCEEDS PRINT IN VOCABULARY SUPPRESSION:** Same-week print outlets (Gizmodo,
+   Inc.com) applied resolution-rationalization defense to Apple AirPods cameras ("potato
+   quality," "won't capture"). MacRumors Show podcast doesn't even need resolution-
+   rationalization — privacy simply doesn't enter the framing. The podcast is LESS
+   defensive than print because it doesn't acknowledge anything to defend against.
+
+3. **FIRST MACRUMORS SHOW PODCAST ANALYSIS IN CORPUS:** Adds MacRumors to the podcast
+   tracking sources alongside Vergecast, 9to5Mac, Bloomberg Tech, Kill Switch, AmberMac,
+   Waveform. MacRumors is one of the largest Apple-ecosystem publications, making its
+   podcast framing particularly significant for audience reach.
+
+4. **COMPANION PODCAST CONFIRMATION:** 9to5Mac Daily (Aug 21) independently titles its
+   episode "AirPods with cameras, more" — entirely neutral/informational. Two independent
+   Apple-ecosystem podcasts covering the SAME camera wearable leak produce ZERO privacy
+   vocabulary, confirming this is systematic, not individual editorial choice.
+
+**Podcast title vocabulary comparison:**
+| Podcast | Camera Wearable | Title | Alarm Words |
+|---------|----------------|-------|-------------|
+| MacRumors Show | Apple AirPods (camera) | "Camera AirPods Are Coming, Just Not This Year..." | 0 |
+| 9to5Mac Daily | Apple AirPods (camera) | "August 21, 2026 – AirPods with cameras, more" | 0 |
+| 9to5Mac Happy Hour 604 | Apple AirPods (camera) | "AirPods with camera leak, iOS 27 beta 6..." | 0 |
+| Kill Switch | Meta glasses (camera) | "The Glassholes Are Back" | 1 |
+| AmberMac Ep056 | Meta glasses (camera) | "Meta's 'Pervert' Smart Glasses" | 1 |
+| Shared Security | Meta glasses (camera) | "7 Million...Should You Be Worried?" | 1 |
+| Acquired AI | Meta glasses (camera) | "Meta Faces Lawsuit Over...Privacy" | 1 |
+
+**Confounders:** 3 STRONG (resolution, unshipped, incident history), 2 MODERATE
+(audience alignment, demo vs product)
+
+### Stats
+- **New test file:** 1 (45 tests, all passing)
+- **Mechanism ID:** #236
+- **Asymmetry score:** 0.83
+- **New podcast sources added:** 2 (MacRumors Show, 9to5Mac Daily)
+- **Cross-references:** 5 (#221, #228, #144, #232, #209)
+- **Confounders:** 5 (3 STRONG, 2 MODERATE)
+- **Podcast/broadcast sentiment entries:** 62
+- **Test corpus:** ~545 files
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #246 — Sat 2026-08-22 15:00 PT (Type D: Test & Verify)
 
 **Focus: YAML parse fix, doc sync, mechanism profile integrity**

@@ -3080,3 +3080,74 @@ RayNeo iO Smart Glasses (Aug 21) actively markets camera absence as advantage. S
 **Sentiment Score:** -8/10 (strongly negative — government ban + cross-sovereign cascade)
 **Asymmetry Assessment:** HIGH (0.85) — 10+ institutional bans across 4 countries ALL name Meta exclusively. DHS paradox unremarked. Dual-labeling and authority amplification techniques documented.
 **Cross-references:** #157 (Global Institutional Discourse), #168 (Victoria Song Portability), #225 (Vergecast), #228 (Gizmodo), #232 (NBC News)
+
+
+---
+
+### 62. MacRumors Show — "Camera AirPods Are Coming, Just Not This Year..." (Aug 20-21, 2026)
+
+- **Host:** Dan Barbera
+- **Publication:** MacRumors (Apple-ecosystem)
+- **Format:** YouTube video (The MacRumors Show)
+- **Source URL:** https://www.youtube.com/watch?v=H2_EVCRNfds
+
+**Coverage Summary:**
+Full-length episode covering Apple's leaked camera-equipped AirPods demo video found in macOS Tahoe 26.7 RC. Discusses Visual Intelligence (AI environmental scanning via camera), stem thickness, B790 and B798 codenames, Mark Gurman's timeline reporting (delayed from 2026 to 2027). Entirely product-focused, hardware-excited framing.
+
+**Title Vocabulary Analysis:**
+- "Coming" — anticipatory/positive expectation
+- "Just Not This Year" — temporal disappointment (wanting the camera wearable sooner)
+- ZERO alarm words (no "privacy," "surveillance," "pervert," "spy," "creep," "worried")
+
+**Privacy Vocabulary Count:** 0
+**Surveillance Vocabulary Count:** 0
+**Alarm Vocabulary Count:** 0
+
+**Description Topics Present:**
+- Leaked demo video mechanics
+- Visual Intelligence recognizing objects via camera
+- Saving information through Siri
+- Stem hardware design changes
+- B790 vs B798 codename distinction
+- Mark Gurman delay timeline
+- 2027 push
+
+**Description Topics ABSENT:**
+- Privacy, surveillance, consent, recording without knowledge, bystander awareness, pervert, creep, spy, glasshole
+
+**Entity Coverage Asymmetry (CRITICAL):**
+The MacRumors Show discusses a camera wearable that:
+- Has cameras pointing outward from the wearer's body
+- Uses AI to process what the cameras see (Visual Intelligence)
+- Can identify objects, read text, and parse environmental context
+- Is functionally identical to Meta glasses' "Look and Ask" feature
+
+Yet NONE of the vocabulary applied to Meta camera wearables in podcasts appears:
+
+| Apple Camera Wearable Podcasts (Aug 2026) | Meta Camera Wearable Podcasts | Vocabulary |
+|-------------------------------------------|-------------------------------|------------|
+| MacRumors Show: "Camera AirPods Are Coming, Just Not This Year..." | Kill Switch: "The Glassholes Are Back" | Zero alarm vs "glassholes" |
+| 9to5Mac Daily: "AirPods with cameras, more" | AmberMac: "Meta's 'Pervert' Smart Glasses" | Neutral vs "pervert" |
+| 9to5Mac Happy Hour 604: "AirPods with camera leak..." | Shared Security: "Should You Be Worried?" | Product-excitement vs alarm |
+
+**Companion: 9to5Mac Daily (Aug 21, 2026)**
+- Title: "August 21, 2026 – AirPods with cameras, more"
+- Privacy vocabulary: 0
+- Title framing: neutral/informational — camera treated as routine product feature
+
+**Sentiment Score:** 0/10 (neutral/product-excited — no positive or negative valence toward privacy)
+**Asymmetry Assessment:** HIGH (0.83) — Same functional capability (camera → AI context) receives zero privacy framing when entity is Apple. The camera wearable category concern EVAPORATES. Not reduced, not proportional — entirely absent.
+
+**Cross-Medium Print Alignment:**
+Same week, print outlets applied resolution-rationalization to Apple camera AirPods:
+- Gizmodo: "potato quality," "designed to inform AI," "won't let you be a total creep"
+- Inc.com: "relatively low resolution," "won't capture photos or videos"
+
+MacRumors Show podcast doesn't even need resolution-rationalization — privacy simply does not enter the framing. The podcast is LESS defensive than the print coverage because it doesn't acknowledge there's anything to defend against.
+
+**Financial Context:**
+MacRumors generates revenue through Apple-affiliate links, Apple-ecosystem advertising, and Apple-focused readership. No Meta advertising relationship. Structural incentive to frame Apple products positively.
+
+**Cross-references:** #221 (9to5Mac Happy Hour 604), #228 (Gizmodo Category Identity Inversion), #144 (Podcast Ecosystem Amplification), #232 (NBC News Broadcast Meta Alarm), #209 (Camera Earbud Privacy Vocabulary Zero)
+
+**Confounders:** 3 STRONG (resolution difference, Apple unshipped, Meta incident history), 2 MODERATE (audience alignment, demo vs product)
