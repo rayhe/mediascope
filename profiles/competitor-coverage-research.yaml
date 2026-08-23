@@ -25411,3 +25411,76 @@ publications:
     test_count: 48
     test_file: tests/test_techrepublic_technologyadvice_triple_entity_camera_device_privacy_vocabulary_gradient_aug22.py
     type: A
+  mechanism_238:
+    mechanism_id: 238
+    name: Stuff (Kelsey Media) Cross-Entity Camera Wearable Vocabulary Bifurcation
+    type: B
+    publication: Stuff (Kelsey Media)
+    entity_targeted: Meta
+    entities_compared:
+    - Meta
+    - Apple
+    discovery_date: '2026-08-22'
+    iteration: 249
+    asymmetry_score: 0.82
+    test_file: tests/test_stuff_kelsey_media_cross_entity_pervert_glasses_aspirational_apple_camera_vocabulary_bifurcation_aug22.py
+    test_count: 48
+    finding_summary: 'Stuff (Kelsey Media, UK) published three feature articles about
+      camera-equipped wearables in June-August 2026 covering Meta and Apple with completely
+      bifurcated vocabulary registers. Meta glasses: "pervert glasses" (headline pejorative),
+      "horror show," "sex pests," "creeps and weirdos," "doxxing machine," "surveillance,"
+      "Glass holes," FaceMash corporate-DNA attack. Apple AirPods with cameras: "fantastic,"
+      "magic," "respectful of privacy," "designed to better humanity," "meaningful," "mindful."
+      Apple cameras receive ZERO independent privacy scrutiny -- discussed ONLY as opportunity
+      to be "not Meta." Stuff''s entire thesis: Apple''s cameras will be safe because Apple is
+      not Meta, treating entity identity as the privacy credential. Apple News distribution
+      partnership visible on all article pages; no comparable Meta financial relationship.
+      Pattern sustained across 6+ articles spanning 57 days, in both Features and News
+      categories, indicating editorial culture not individual journalist quirk.'
+    source_urls:
+    - https://www.stuff.tv/features/airpods-pro-are-getting-cameras-heres-how-apple-can-avoid-the-meta-pervert-glasses-trap/
+    - https://www.stuff.tv/features/heres-everything-wrong-with-metas-pervert-glasses-and-some-things-they-do-right/
+    - https://www.stuff.tv/features/i-dont-want-metas-new-299-smart-glasses-i-want-apple-airpods-pro-for-my-eyes/
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Incident history: Meta glasses have documented misuse incidents (Kenya
+        contractors, nonconsensual filming). Apple AirPods cameras have no incidents
+        because the product has not shipped.'
+    - strength: STRONG
+      factor: 'Apple has a genuine track record of privacy-first design that justifies
+        some editorial differentiation in coverage tone.'
+    - strength: STRONG
+      factor: 'Different form factors: glasses-on-face is a different social privacy
+        vector than earbuds-in-ears. Visibility and bystander-awareness dynamics differ.'
+    - strength: MODERATE
+      factor: 'UK market context: Meta glasses face stronger backlash in the UK due
+        to pub and cinema bans and European regulatory scrutiny, which concentrates
+        negative framing.'
+    - strength: MODERATE
+      factor: 'Apple News distribution creates platform dependency that may subconsciously
+        shape editorial framing toward Apple-favorable coverage.'
+    - strength: WEAK
+      factor: 'Temporal: AirPods cameras have not shipped, so wait-and-see framing is
+        partially reasonable. But Stuff does not frame it as wait-and-see -- it frames
+        it as Apple will get this right.'
+    cross_references:
+    - mechanism_id: 226
+      relationship: extends
+      description: Cult of Mac aspirational-cautionary dyad -- same hero/villain framing
+        for Apple vs Meta camera wearables from another Apple-ecosystem publication
+    - mechanism_id: 223
+      relationship: parallel
+      description: Ben Lovejoy 9to5Mac advocacy inversion -- same pattern of desiring
+        features from Apple while condemning them from Meta
+    - mechanism_id: 205
+      relationship: extends
+      description: Apple camera LED double standard -- Apple remediation measures framed
+        as proactive privacy, Meta identical measures framed as damage limitation
+    - mechanism_id: 236
+      relationship: extends
+      description: MacRumors Show podcast aspirational framing -- Apple camera AirPods
+        podcasts use zero alarm vocabulary, same pattern in print at Stuff
+    - mechanism_id: 237
+      relationship: parallel
+      description: TechRepublic triple-entity camera vocabulary gradient -- another
+        publication showing entity-assigned vocabulary for identical capabilities

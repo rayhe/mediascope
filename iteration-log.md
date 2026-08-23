@@ -1,6 +1,77 @@
 ---
 ---
 
+## Iteration #249 — Sat 2026-08-22 19:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Mechanism #238: Stuff (Kelsey Media) Cross-Entity Camera Wearable Vocabulary
+Bifurcation — "Pervert Glasses" for Meta, "Designed to Better Humanity" for Apple**
+
+- **Type:** Journalist Cross-Entity Tracking (Type B)
+- **Test file:** `tests/test_stuff_kelsey_media_cross_entity_pervert_glasses_aspirational_apple_camera_vocabulary_bifurcation_aug22.py`
+- **Tests:** 10 classes, 30 tests (all passing)
+- **Asymmetry score:** 0.82
+- **Confounders:** 6 (3 STRONG, 2 MODERATE, 1 WEAK)
+- **Cross-references:** #226 (Cult of Mac dyad), #223 (Ben Lovejoy advocacy inversion),
+  #205 (Apple camera LED double standard), #236 (MacRumors Show podcast), #237 (TechRepublic)
+- **Sources:** 3 Stuff feature articles + 3 Stuff news articles
+
+**Core finding:** Stuff (Kelsey Media, UK) published three feature articles about
+camera-equipped wearables in June-August 2026 covering Meta and Apple with completely
+bifurcated vocabulary registers that correlate with entity identity, not functional
+capability:
+
+| Entity | Date | Headline | Vocabulary Register | Alarm Terms |
+|--------|------|----------|--------------------|-----------| 
+| Apple | Aug 22 | "How Apple can avoid Meta's 'pervert glasses' trap" | Hero/solution ("respectful," "better humanity") | 0 |
+| Meta | Aug 10 | "Everything wrong with Meta's 'pervert glasses'" | Alarm/threat ("horror show," "sex pests," "doxxing") | 12+ |
+| Apple vs Meta | Jun 27 | "I don't want Meta... I want Apple" | Apple=aspirational, Meta=villain ("surveillance," "creeps") | 10+ (Meta only) |
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **SAME-MONTH HERO/VILLAIN DYAD IN ONE PUBLICATION** — Three articles in 57 days
+   from the same publication about the same functional category (camera wearables)
+   using opposite vocabulary registers. Meta = "pervert glasses" "horror show" "sex
+   pests" "creeps." Apple = "fantastic" "magic" "respectful of privacy" "designed to
+   better humanity." The vocabulary is entity-assigned, not capability-assigned.
+
+2. **APPLE CAMERA WEARABLES RECEIVE ZERO INDEPENDENT PRIVACY SCRUTINY** — AirPods with
+   cameras will include IR sensors and environmental awareness features. Stuff does NOT
+   ask whether Apple's camera wearables raise their own privacy concerns. Instead, they
+   are ONLY discussed as Apple's opportunity to be "not Meta." The privacy question for
+   Apple cameras is framed as "how to avoid Meta's trap," not "do camera AirPods raise
+   privacy concerns?"
+
+3. **FACEMASH CORPORATE DNA FRAMING** — The Aug 22 article opens by invoking Mark
+   Zuckerberg creating FaceMash in 2003 to frame Meta glasses as genetically predatory.
+   This origin-story technique is NEVER applied to Apple (no articles begin with Apple's
+   supply chain controversies). The corporate DNA framing predetermines the conclusion
+   before any evidence about the current product is examined.
+
+4. **KELSEY MEDIA APPLE NEWS DISTRIBUTION DEPENDENCY** — Stuff distributes through
+   Apple News (visible integration on all article pages). This creates a financial
+   incentive alignment: favorable Apple coverage serves the distribution relationship;
+   critical Apple coverage risks platform friction. No comparable Meta relationship.
+
+5. **"NOT META" AS APPLE'S PRIVACY CREDENTIAL** — Stuff's entire thesis is that Apple's
+   cameras will be safe because Apple is "not Meta." Entity identity = privacy credential.
+   Apple has not shipped camera AirPods; no privacy audits, no data handling policies, no
+   user behavior studies. Yet Stuff presumes Apple cameras will be "respectful" while
+   Meta cameras are "perverted" — based solely on brand identity.
+
+**Vocabulary quantification:**
+- Meta alarm words per article: avg 10.0 (30 total across 3 articles)
+- Apple alarm words per article: avg 0.0 (0 total across 3 articles)
+- Vocabulary asymmetry ratio: infinite (30:0)
+
+### Stats
+- **New test file:** 1 (30 tests, all passing)
+- **Mechanism ID:** #238
+- **New publication in corpus:** Stuff (Kelsey Media)
+- **Test corpus:** 548 files
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #248 — Sat 2026-08-22 18:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Mechanism #237: TechRepublic (TechnologyAdvice) Triple-Entity Camera Device Privacy
