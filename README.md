@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,200+ | Across 562 test files |
+| Tests | ~20,240+ | Across 567 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20,200+ tests (with parameterized expansion) across 562 test files, each covering a different analytical capability:
+MediaScope has **~20,240+ tests (with parameterized expansion) across 567 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1081,3 +1081,13 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_gizmodo_airpods_camera_potato_quality_resolution_rationalization_within_article_reputation_trust_aug23.py` | 39 | Mechanism #251: Gizmodo AirPods Camera Potato Quality Resolution-Rationalization — within-article reputation trust inversion where "potato quality" language is used to dismiss Apple camera privacy concerns while Meta camera gets adversarial framing. Type A |
 | `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` | 55 | Mechanism #253: Google Preferred Sources Publisher Embed — sixth dependency layer in Google's publisher captivity architecture. 600K+ sources, 2x click-through multiplier, embeds Google infrastructure IN publisher properties. Reddit Q2 2026 data integration. Type C |
 | `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` | 28 | 9to5Mac Three-Channel Podcast Pipeline PervertPods Cross-Medium Propagation — "PervertPods" stigma label propagation from print to podcast across 9to5Mac podcast ecosystem. Type E |
+| `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | - | AI citation amplification licensing deal bias pattern. Type C |
+| `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | - | Arin Waichulis 9to5Mac Security Bite sponsor-aligned cross-entity coverage scope restriction. Type B |
+| `test_billy_steele_engadget_apple_airpods_vocabulary_mitigation_beat_routing_aug23.py` | - | Billy Steele Engadget Apple AirPods vocabulary mitigation beat routing. Type B |
+| `test_c_scott_brown_android_authority_cross_entity_led_privacy_vocabulary_bifurcation_aug23.py` | - | C. Scott Brown Android Authority cross-entity LED privacy vocabulary bifurcation. Type B |
+| `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` | - | Cross-publication Apple camera AirPods leak vocabulary gradient financial correlation. Type A |
+| `test_type_d_07am_cross_validation_aug23.py` | - | Type D cross-validation (Aug 23, 7 AM PT). Type D |
+| `test_type_d_12pm_cross_validation_aug23.py` | 16 | Type D cross-validation (Aug 23, 12 PM PT): Billy Steele extractor overwrite bug fix, mechanism ID gaps 249/250, file count sync, doc sync for 4 aug23 files, meta_coverage_tone completeness. 6 classes, 16 tests. Type D |
+| `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | - | AI Inside cross-episode temporal adjacency vocabulary bifurcation. Type E |
+| `test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py` | 21 | TWiT Tech News Weekly #451 cross-network framing amplification — Verge "workplace menace" cascade through TWiT editorial independence. Type E |
+| `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | 43 | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source code leak (March 31, 2026) — triple privacy incident (frustration tracking, Undercover Mode, 512K-line data exposure) received zero WIRED/Verge articles while Gizmodo covered adversarially. Severity inversion vs Meta NameTag investigative cascade. 10 classes, 43 tests. Type A |

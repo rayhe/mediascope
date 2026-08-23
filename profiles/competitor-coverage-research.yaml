@@ -23901,3 +23901,104 @@ publications:
     - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
     type: C
     meta_coverage_tone: adversarial
+  wired_verge_claude_code_leak_coverage_selection_silence:
+    mechanism_id: 254
+    type: A
+    title: WIRED + The Verge Coverage Selection Silence on Claude Code Source Code Leak — Triple Privacy Incident vs Meta NameTag Investigative Cascade
+    finding_summary: >
+      On March 31, 2026, Anthropic accidentally leaked ~512,000 lines of Claude Code source code
+      via npm package v2.1.88. The leak revealed three distinct privacy/deception concerns:
+      (1) frustration tracking — regex scanning prompts for profanity and negative sentiment,
+      (2) Undercover Mode — system prompt instructing Claude to hide its AI identity in public
+      code repositories ("Do not blow your cover"), and (3) massive proprietary code exposure
+      (API structures, telemetry, encryption). Gizmodo published 2+ adversarial articles; WSJ,
+      VentureBeat, TechSpot, Scientific American, and others all covered it. WIRED and The Verge
+      produced ZERO standalone articles. Compare: Meta NameTag (dormant, never activated, zero
+      user impact) generated a multi-article WIRED investigative cascade. Higher-harm Anthropic
+      incident → zero coverage; lower-harm Meta incident → maximum coverage. Financial predictor:
+      Condé Nast (WIRED parent) has OpenAI deal but zero Anthropic tie; Vox Media (Verge parent)
+      has Google deal; Meta has zero deals with either. Coverage selection silence correlates with
+      absence of competitive financial motivation.
+    publications:
+    - wired
+    - the_verge
+    entities:
+    - anthropic
+    - meta
+    journalist: N/A (institutional coverage selection pattern)
+    asymmetry_score: 0.95
+    date: '2026-03-31'
+    meta_coverage_tone: adversarial
+    confounders:
+    - description: >
+        WIRED may have covered the Claude Code leak in a subscriber-only newsletter, roundup,
+        or briefing not indexed by web search. Coverage absence verified only for standalone
+        indexed articles.
+      strength: STRONG
+    - description: >
+        The leak involved developer tooling harness, not consumer product or AI model weights.
+        WIRED might editorially classify this as developer-tools news rather than consumer privacy.
+        However, WIRED DID produce standalone articles about Anthropic Cowork (consumer-adjacent)
+        and Anthropic breaches (developer/enterprise security), showing they cover Anthropic
+        developer stories when they choose to.
+      strength: STRONG
+    - description: >
+        The Verge's editorial bandwidth may have prevented coverage. However, The Verge routinely
+        covers AI security stories about Meta, suggesting entity-selective prioritization.
+      strength: MODERATE
+    - description: >
+        Frustration tracking uses regex, technically simpler than ML-based surveillance. However,
+        CDT's Miranda Bogen (Scientific American): privacy impact is about how data is used,
+        not how it's collected. "Even if it's a very legible and very simple prediction pattern,
+        how you use that information is a separate governance question."
+      strength: MODERATE
+    - description: >
+        March 31 proximity to April Fools' Day created uncertainty about some findings (Tamagotchi
+        pet). However, the source code leak, frustration tracking, and Undercover Mode were all
+        confirmed as real by Anthropic and security researchers.
+      strength: WEAK
+    cross_references:
+    - mechanism_id: 62
+      relationship: >
+        Extends mechanism #62 (WIRED Anthropic Agent Framing Asymmetry). #62 documents WIRED's
+        softer editorial standards for Anthropic products; #254 documents a complete coverage
+        selection void on a triple-privacy-incident involving the SAME Anthropic product (Claude Code).
+    - mechanism_id: 92
+      relationship: >
+        Parallels mechanism #92 (WIRED AISI accountability coverage trajectory break). Both show
+        WIRED declining to cover Anthropic incidents that would normally warrant coverage if the
+        entity were Meta.
+    - mechanism_id: 98
+      relationship: >
+        Gizmodo Clean Control (#98) provides the baseline: Gizmodo (zero financial ties) covered
+        the Claude Code leak adversarially. #254 contrasts this with WIRED/Verge silence, reinforcing
+        that financial relationships predict coverage selection.
+    - mechanism_id: 154
+      relationship: >
+        Compounds mechanism #154 (WIRED Anthropic automode coverage selection silence). Two
+        different Claude Code privacy stories — automode autonomous decisions (#154) and source
+        code leak with frustration tracking and Undercover Mode (#254) — both received zero
+        WIRED coverage.
+    - mechanism_id: 51
+      relationship: >
+        Parallels mechanism #51 (WIRED Copyright Piracy Framing Parity). Both show entity-selective
+        coverage patterns; #51 covers framing asymmetry, #254 covers coverage selection silence.
+    testable_predictions:
+    - >
+      P254.1: If another Anthropic source code or data leak occurs, WIRED will produce zero
+      standalone articles while Gizmodo will cover it adversarially.
+    - >
+      P254.2: If Meta experienced a comparable 512K-line source code leak revealing user
+      behavioral tracking and AI deception features, WIRED would produce multi-article
+      investigative coverage within 48 hours.
+    - >
+      P254.3: If Meta were discovered using AI that actively pretends to be human in public
+      code repositories, WIRED would frame it with alarm vocabulary and produce investigative
+      coverage. Anthropic's identical behavior got zero coverage.
+    source_urls:
+    - https://www.scientificamerican.com/article/anthropic-leak-reveals-claude-code-tracking-user-frustration-and-raises-new/
+    - https://gizmodo.com/source-code-for-anthropics-claude-code-leaks-at-the-exact-wrong-time-2000740379
+    - https://gizmodo.com/anthropic-cant-cover-up-its-claude-code-leak-fast-enough-2000740972
+    - https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know
+    - https://www.techspot.com/news/111907-anthropic-accidentally-exposed-claude-code-source-raising-security.html
+    test_file: tests/test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py

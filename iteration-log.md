@@ -1,3 +1,65 @@
+## Iteration #263 — Sun 2026-08-23 14:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WIRED + The Verge Coverage Selection Silence on Claude Code Source Code Leak
+
+**Mechanism #254:** WIRED + The Verge Coverage Selection Silence on Claude Code Source
+Code Leak — Triple Privacy Incident (Frustration Tracking, Undercover Mode, 512K-Line
+Data Exposure) vs Meta NameTag Investigative Cascade
+
+**Core Finding:** On March 31, 2026, Anthropic accidentally leaked ~512,000 lines of
+Claude Code proprietary source code. The leak revealed THREE distinct privacy/deception
+concerns: (1) frustration tracking — regex scanning user prompts for profanity and
+negative sentiment, (2) Undercover Mode — system prompt instructing Claude to hide its
+AI identity in public code repos ("Do not blow your cover"), and (3) massive proprietary
+code exposure (API structures, telemetry, encryption mechanisms, 100,000+ GitHub forks,
+8,000+ DMCA takedown requests narrowed to 96).
+
+**Coverage Selection Gap:**
+- Gizmodo: 2+ articles, adversarial framing ("leaks at the exact wrong time," "can't
+  cover up fast enough")
+- WSJ, VentureBeat, TechSpot, Scientific American, PYMNTS, AI Magazine: All covered
+- WIRED: ZERO standalone articles (verified via web search + site-specific search)
+- The Verge: ZERO articles (verified via web search + site-specific search)
+
+**Severity Inversion:** Anthropic incident was MORE severe than Meta NameTag on every axis:
+- Active code (vs dormant), affecting live users (vs zero user impact)
+- Active deception framework (Undercover Mode vs never-activated NameTag)
+- Behavioral data collection (frustration tracking vs no data collection)
+- Massive exposure (512K lines, 100K+ forks vs no code exposure)
+
+Yet WIRED produced a multi-article investigative cascade about Meta NameTag and ZERO
+articles about the Anthropic Claude Code leak.
+
+**Financial Predictor:** Condé Nast (WIRED) has OpenAI content licensing deal but zero
+Anthropic tie — covering Anthropic negatively offers no competitive benefit. Meta has
+zero deals with Condé Nast. Gizmodo (zero financial ties to any tech company) covered
+adversarially — clean control validated.
+
+### Deliverables
+1. **Test file:** `tests/test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py`
+   - 10 classes, 43 tests, all passing
+   - Classes: TestClaudeCodeLeakEvent (7), TestFrustrationTrackingPrivacy (3),
+     TestUndercoverModeDeception (3), TestSeverityInversion (3),
+     TestCoverageSelectionAsymmetry (7), TestFinancialPredictorCorrelation (5),
+     TestMechanismRegistration (3), TestConfounders (5), TestTestablePredicitions (3),
+     TestProfileIntegration (4)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `profiles/competitor-coverage-research.yaml` — mechanism #254 entry with full
+     finding, confounders, cross-references, testable predictions, source URLs
+   - `README.md` — test count updated (567 files, ~20,240+ tests), new test file listed
+   - `docs/ARCHITECTURE.md` — test count updated, new test file listed
+
+### Stats
+- **New test file:** 1 (43 tests, all passing)
+- **Mechanism ID:** #254
+- **Asymmetry score:** 0.95
+- **Cross-references:** 5 (#62, #92, #98, #154, #51)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 567 test files
+- **Pushed to GitHub:** ✓
+
 
 ## Iteration #262 — Sun 2026-08-23 13:00 PT (Type E: Podcast Sentiment Tracking)
 
