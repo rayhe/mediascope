@@ -8066,3 +8066,75 @@ aspirational framing or complete absence. Camera count paradox: Snap Specs have
 - **YAML updates:** competitor-coverage-research.yaml (mechanism #242 full entry)
 - **Doc updates:** README.md and ARCHITECTURE.md test file count → 552
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #254 — Sun 2026-08-23 00:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Mechanism:** #243 — C. Scott Brown (Android Authority) Cross-Entity LED Privacy
+Vocabulary Bifurcation
+
+### Discovery
+C. Scott Brown, Android Authority staff writer and Authority Insights podcast co-host,
+covers smart glasses for Meta, Google/Samsung, and Snap. His coverage exhibits a
+measurable LED privacy vocabulary inversion:
+
+**Meta LED coverage** → Adversarial/surveillance vocabulary:
+- "spy gear" (headline), "covert spy gear," "stealth mode," "illusion of privacy
+  remains entirely broken," "malevolent mechanoid" (facial recognition article),
+  "underground industry," "cat-and-mouse game," "permanently destroy the LED"
+- LED framed through FAILURE narrative: modders bypass it for $50-$100
+
+**Snap Specs LED coverage** → Positive/protective vocabulary:
+- "privacy-oriented features," "LED indicator that lights up when recording,"
+  "prioritize on-device data processing," "clearly ask users before accessing
+  sensitive information"
+- LED framed as a working SAFEGUARD with zero alarm vocabulary
+- Snap has FOUR cameras (vs Meta's one) — zero privacy scrutiny of camera count
+
+**Google/Samsung coverage** → Aspirational first-person framing:
+- "the future is bright," "I can't wait to see," "this is the way" (podcast),
+  "especially exciting"
+- Privacy mentioned ONCE as personal reflection, not alarm
+
+### Nuance
+Brown writes POSITIVELY about Meta products (deal articles: "great mix of style and
+functionality," "exciting features"; Apple delay article: "Meta has already turned
+its Ray-Ban smart glasses into one of the most convincing examples"). The asymmetry
+is TOPIC-SPECIFIC: Meta PRIVACY articles get alarm vocabulary; Meta PRODUCT articles
+get positive vocabulary; competitor PRIVACY and PRODUCT articles both get positive
+vocabulary.
+
+### Confounders (7: 3 STRONG, 2 MODERATE, 2 WEAK)
+1. **[STRONG] News hook asymmetry** — Meta spy-gear article reports actual modding
+   (WSJ/Joanna Stern investigation); Snap article covers product launch
+2. **[STRONG] Platform affinity** — Android Authority is Android-first; Google/Samsung
+   Android XR is their home platform
+3. **[STRONG] Market position** — Meta ~82% market share, 9M+ units; incumbents
+   get more scrutiny than new entrants
+4. **[MODERATE] Documented harm** — Meta has real incidents (I-XRAY, USF, Swedish
+   contractors); Snap Specs have none (not yet shipped at scale)
+5. **[MODERATE] Editorial format** — Google article is first-person opinion; Meta
+   articles are news reports on external investigations
+6. **[WEAK] Topic specificity** — Brown positive on Meta products undermines entity-
+   global bias theory
+7. **[WEAK] Price barrier** — Snap $2,195 vs Meta $299 limits deployment concern
+
+### Key URLs
+- Meta spy gear: https://www.androidauthority.com/ray-ban-meta-stealth-mode-mod-3674350/
+- Meta facial recognition: https://www.androidauthority.com/meta-smart-glasses-facial-recognition-name-tag-3640904/
+- Meta stealth stickers: https://www.androidauthority.com/ray-ban-meta-hide-recording-light-3584167/
+- Meta deal (positive): https://www.androidauthority.com/ray-ban-meta-smart-glasses-deal-3671271/
+- Meta conversation focus (positive): https://www.androidauthority.com/ray-ban-meta-conversation-focus-3631424/
+- Snap Specs: https://www.androidauthority.com/snap-specs-ar-glasses-3677759/
+- Google critical moment: https://www.androidauthority.com/critical-moment-google-android-xr-glasses-io-2026-3667684/
+- Apple delay (Meta positive): https://www.androidauthority.com/apple-smart-glasses-delayed-again-3673233/
+- Podcast (Meta vs Google): https://www.androidauthority.com/authority-insights-podcast-016-3624658/
+
+### Stats
+- **New test file:** 1 (44 tests, all passing)
+- **Mechanism ID:** #243
+- **Test corpus:** 553 files
+- **YAML updates:** competitor-coverage-research.yaml (mechanism #243 full entry)
+- **Doc updates:** README.md test file count → 553
+- **Pushed to GitHub:** ✓

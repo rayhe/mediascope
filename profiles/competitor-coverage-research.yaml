@@ -25662,3 +25662,90 @@ publications:
       relationship: extends
       description: Condé Nast deal inventory -- Discover revenue adds to the total
         deal count and financial exposure
+
+  c_scott_brown_aa_led_privacy_vocabulary_bifurcation:
+    mechanism_id: 243
+    mechanism_name: 'C. Scott Brown (Android Authority) Cross-Entity LED Privacy Vocabulary
+      Bifurcation — Same LED Indicator Gets Inadequacy Framing for Meta, Adequacy Framing
+      for Snap, Aspirational Framing for Google/Samsung'
+    mechanism_type: journalist_cross_entity_tracking
+    discovery_date: '2026-08-23'
+    iteration: 254
+    journalist: C. Scott Brown
+    publication: Android Authority
+    publication_owner: Jeevam Media
+    entity_targeted: Meta
+    entities_compared:
+    - Meta
+    - Snap
+    - Google/Samsung
+    asymmetry_score: 0.68
+    test_file: tests/test_c_scott_brown_android_authority_cross_entity_led_privacy_vocabulary_bifurcation_aug23.py
+    test_count: 44
+    finding_summary: 'C. Scott Brown covers smart glasses across Meta, Google/Samsung,
+      and Snap at Android Authority. When covering Meta LED recording indicator and
+      camera, uses adversarial/surveillance vocabulary: spy gear (headline), covert spy
+      gear, stealth mode, illusion of privacy remains entirely broken, malevolent mechanoid.
+      When covering Snap Specs with same LED indicator and four cameras, uses positive
+      vocabulary: privacy-oriented features, LED indicator that lights up when recording,
+      prioritize on-device data processing. When covering Google/Samsung Android XR
+      glasses, uses aspirational first-person framing: the future is bright, I cant wait,
+      this is the way. Same hardware feature (LED recording indicator) receives inverted
+      vocabulary: inadequacy for Meta, adequacy for Snap. Browns Meta PRODUCT coverage
+      (deals, features) is positive, making this topic-specific not entity-global.'
+    confounding_factors:
+    - strength: STRONG
+      type: news_hook_asymmetry
+      description: 'Meta spy-gear article reports actual modding behavior documented
+        by Joanna Stern (WSJ). Snap article covers product launch announcement. Different
+        news hooks justify different coverage angles.'
+    - strength: STRONG
+      type: platform_affinity
+      description: 'Android Authority is Android-first publication. Google/Samsung
+        Android XR is their home platform, creating structural incentive for favorable
+        coverage.'
+    - strength: STRONG
+      type: market_position
+      description: 'Meta has ~82% smart glasses market share and 9M+ units sold.
+        Incumbents naturally receive more scrutiny than new entrants.'
+    - strength: MODERATE
+      type: documented_harm
+      description: 'Meta has documented real-world privacy incidents (I-XRAY doxing,
+        USF stalking, Swedish contractor scandal). Snap Specs have none (not yet
+        shipped to consumers at scale).'
+    - strength: MODERATE
+      type: editorial_format
+      description: 'Google critical-moment article is first-person opinion piece.
+        Meta articles are news reports based on external investigations. Different
+        editorial formats justify different tone.'
+    - strength: WEAK
+      type: topic_specificity
+      description: 'Brown writes positively about Meta products (deal articles, feature
+        announcements), suggesting topic-specific not entity-global framing.'
+    - strength: WEAK
+      type: price_barrier
+      description: 'Snap Specs at $2,195 vs Meta at $299. Higher price limits deployment
+        but not capability concern.'
+    source_urls:
+    - https://www.androidauthority.com/ray-ban-meta-stealth-mode-mod-3674350/
+    - https://www.androidauthority.com/meta-smart-glasses-facial-recognition-name-tag-3640904/
+    - https://www.androidauthority.com/ray-ban-meta-hide-recording-light-3584167/
+    - https://www.androidauthority.com/ray-ban-meta-smart-glasses-deal-3671271/
+    - https://www.androidauthority.com/ray-ban-meta-conversation-focus-3631424/
+    - https://www.androidauthority.com/snap-specs-ar-glasses-3677759/
+    - https://www.androidauthority.com/critical-moment-google-android-xr-glasses-io-2026-3667684/
+    - https://www.androidauthority.com/apple-smart-glasses-delayed-again-3673233/
+    - https://www.androidauthority.com/authority-insights-podcast-016-3624658/
+    cross_references:
+    - mechanism_id: 232
+      relationship: same_publication
+      description: Hadlee Simons (Android Authority) coverage selection asymmetry
+    - mechanism_id: 242
+      relationship: extends
+      description: Fast Company UK cinema ban entity-neutral to Meta-exclusive conversion
+    - mechanism_id: 230
+      relationship: parallel_pattern
+      description: Matt Growcoot (PetaPixel) LED vocabulary inversion Meta vs Apple
+    - mechanism_id: 228
+      relationship: parallel_pattern
+      description: Gizmodo privacy vocabulary patterns on smart glasses
