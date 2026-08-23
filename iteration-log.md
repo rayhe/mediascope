@@ -8191,3 +8191,60 @@ vocabulary.
 - **YAML updates:** competitor-coverage-research.yaml (mechanism #243 full entry)
 - **Doc updates:** README.md test file count → 553
 - **Pushed to GitHub:** ✓
+
+## Iteration #254 — Sun 2026-08-23 03:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Research Direction
+Billy Steele (Engadget / Yahoo / Apollo) — Apple AirPods camera vocabulary mitigation
+through "technically" qualifier deployment and beat assignment routing analysis.
+
+### Key Finding
+Billy Steele's "I'm Already Dreading Apple's Camera-Equipped AirPods" (May 2026,
+https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/)
+deploys four vocabulary mitigation strategies that systematically undermine the
+headline's apparent alarm:
+
+1. **Resolution Rationalization:** "just without the ability to take clear photos and videos"
+   — "just" minimizes the Apple-Meta hardware difference
+2. **"Technically" Qualifier:** "they'll still technically be yet another surveillance device"
+   — transforms factual alarm into reluctant concession
+3. **Conditional Alarm:** "that alone may turn off privacy-focused users"
+   — "may" renders privacy concern speculative vs established fact
+4. **Aspirational Utility First:** 3 paragraphs of use cases + personal Apple Maps endorsement
+   BEFORE the single privacy paragraph — structural ordering reduces rhetorical weight
+
+**Beat Assignment Routing (extends #113, #150, #151, #198):**
+Engadget assigns Apple's camera wearable story to a non-wearables-specialist (Steele:
+audio, streaming, music tech) who applies mitigated vocabulary, while Meta's camera
+wearable coverage goes to:
+- Karissa Bell (dedicated smart glasses beat): adversarial investigative methodology
+- Will Shanklin (tech policy): escalated alarm ("Glassholes quaint in comparison")
+- Lawrence Bonk (generalist): stigma concentration
+
+**Headline-Body Divergence:** Apple headline alarm ("Dreading") is undermined by body;
+Meta headline alarm ("baggage," "ban," "criminal complaint") is reinforced by body.
+
+**Engadget Aug 2026 coverage volume:** 11 Meta articles, 0 Apple camera AirPods articles
+(source: Engadget Aug 2026 archive).
+
+### Deliverables
+1. **Test file:** `tests/test_billy_steele_engadget_apple_airpods_vocabulary_mitigation_beat_routing_aug23.py`
+   - 7 classes, 35 tests, all passing
+   - Classes: TestMechanism246Exists (7), TestBillySteeleVocabularyMitigation (6),
+     TestEngadgetMetaVocabularyComparison (5), TestBeatAssignmentRouting (5),
+     TestHeadlineBodyDivergence (3), TestConfounderDocumentation (4),
+     TestCrossReferenceIntegrity (5)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `competitor-coverage-research.yaml`: Added mechanism #246, asymmetry_score 0.82,
+     5 cross-references (#113, #150, #151, #198, #245), 5 confounding factors
+
+### Stats
+- **New test file:** 1 (35 tests, all passing)
+- **Mechanism ID:** #246
+- **Asymmetry score:** 0.82
+- **Cross-references:** 5 (#113, #150, #151, #198, #245)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 556 test files
+- **Pushed to GitHub:** ✓

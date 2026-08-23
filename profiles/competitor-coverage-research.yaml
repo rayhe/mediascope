@@ -25824,3 +25824,62 @@ publications:
     - mechanism_id: 138
       relationship: specializes
       description: 1MP resolution rationalization pattern
+
+  billy_steele_engadget_apple_airpods_vocabulary_mitigation:
+    mechanism_id: 246
+    name: 'Billy Steele Engadget Apple AirPods Camera Vocabulary Mitigation and Beat Assignment Routing'
+    type: journalist_cross_entity_tracking
+    journalist: Billy Steele
+    publication: Engadget (Yahoo Inc. / Apollo Global Management)
+    discovery_date: '2026-08-23'
+    entities: Apple, Meta
+    asymmetry_score: 0.82
+    description: >
+      Billy Steele's Apple AirPods camera article (May 2026) deploys four vocabulary
+      mitigation strategies: resolution rationalization ("just without the ability"),
+      "technically" qualifier on surveillance classification, conditional alarm ("may
+      turn off"), and aspirational utility framing before privacy paragraph. Headline
+      "Dreading" appears negative but body text systematically undermines headline
+      alarm. Beat assignment routing ensures Apple camera story goes to non-specialist
+      (audio/streaming writer) while Meta camera privacy goes to dedicated beat
+      reporter (Bell) using adversarial methodology.
+    confounding_factors:
+    - strength: STRONG
+      type: product_difference
+      description: 'Apple AirPods cameras genuinely lower resolution, designed for AI
+        input not photo/video capture. Legitimate editorial basis for different framing.'
+    - strength: STRONG
+      type: product_lifecycle
+      description: 'Apple pre-release rumors vs Meta shipping product with documented
+        misuse. Product maturity difference justifies some vocabulary difference.'
+    - strength: MODERATE
+      type: journalist_voice
+      description: 'Steele may apply same mitigated vocabulary to any pre-release product.
+        Cannot rule out manufacturer-agnostic patterns without more Steele corpus.'
+    - strength: MODERATE
+      type: editorial_process
+      description: 'Headline may be editorial decision, not Steele choice. Dreading
+        may not reflect intended framing.'
+    - strength: WEAK
+      type: writing_style
+      description: 'Individual style may favor qualifiers (technically, may) regardless
+        of topic. Broader corpus analysis needed to rule out.'
+    source_urls:
+    - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+    - https://WWW.ENGADGET.COM/sitemap/2026/08/
+    cross_references:
+    - mechanism_id: 113
+      relationship: extends
+      description: Karissa Bell investigative methodology asymmetry (Engadget)
+    - mechanism_id: 150
+      relationship: extends
+      description: Cherlynn Low beat assignment privacy vocabulary control (Engadget)
+    - mechanism_id: 151
+      relationship: extends
+      description: Sam Rutherford beat assignment privacy routing (Engadget)
+    - mechanism_id: 198
+      relationship: extends
+      description: Lawrence Bonk generalist stigma concentration (Engadget)
+    - mechanism_id: 245
+      relationship: parallel_pattern
+      description: Pervertpods cross-publication stigma label resolution-rationalization
