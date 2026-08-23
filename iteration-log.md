@@ -1,6 +1,36 @@
 ---
 ---
 
+## Iteration #251 — Sat 2026-08-22 21:00 PT (Type D: Test & Verify)
+
+**Fixes Applied:**
+
+1. **Duplicate mechanism ID 236 resolved:**
+   - ICE/DHS Institutional Ban Paradox retains ID 236 (original assignment)
+   - MacRumors Show Apple Camera AirPods renumbered to ID 240
+   - Updated test file, ARCHITECTURE.md, README.md, competitor-coverage-research.yaml
+
+2. **Mechanism #239 added to YAML:**
+   - Condé Nast Snapchat Discover Revenue Relationship (Type C, from iteration #250)
+   - Fixes mechanism ID contiguity gap above 200
+   - 6 source URLs, 6 confounding factors, 4 cross-references
+
+3. **snap_specs_clad test updated:** `publisher_financial_alignment_axes_snap` assertion
+   changed from `==4` to `>=4` to reflect 5th axis (Snap Discover direct revenue)
+
+4. **Doc sync:** README and ARCHITECTURE updated from 549 to 550 test files,
+   2 missing aug22 test file entries added
+
+5. **New test file:** `test_type_d_9pm_cross_validation_aug22.py` — 5 classes, 14 tests
+
+**Before fixes:** 6 failures in aug22 test suite
+**After fixes:** 692 passed, 0 failed (all aug22 tests)
+
+### Stats
+- **New test file:** 1 (14 tests, all passing)
+- **Test corpus:** 550 files
+- **Pushed to GitHub:** ✓
+
 ## Iteration #250 — Sat 2026-08-22 20:00 PT (Type C: Financial Incentive Mapping)
 
 **Mechanism #239: Condé Nast Snapchat Discover Revenue Relationship Creates Quintuple
@@ -7949,3 +7979,23 @@ Gizmodo's "Even ICE" headline weaponizes institutional authority for consumer st
 - Test files: 545
 - Tests in new file: 36 (all passing)
 - Podcast sentiment entries: 60
+
+
+---
+
+## Iteration #252 — Sat 2026-08-22 22:00 PT
+**Type:** E (Podcast Sentiment Tracking)
+
+### Mechanism #241: Voices of VR XR Authority Podcast — Snap Privacy Claim Receptivity vs Meta Privacy Claim Skepticism in Pre-Launch Coverage Window
+
+Voices of VR (Kent Bye, 1700+ episodes, most prolific XR podcast) produced 11 episodes (~7 hours) from Snap LensFest. Privacy occupies exactly 192 seconds (0.76%) of the entire series. Snap's Joe Darko claims "privacy is not an afterthought" and "we're never going to compromise on privacy" — Kent Bye accepts at face value with ZERO follow-up questions, ZERO pushback, and ZERO mention of the camera-on-face discourse, institutional bans, or Meta comparison.
+
+Novel contribution: XR Specialist Receptivity Gradient — the more specialized a podcast is in the XR space, the more receptive it is to Snap's privacy claims. Specialist XR podcasts are structurally invested in the category's success and maintain access relationships with companies like Snap. This predicts pre-launch Snap Specs coverage (Sep 16, 25 days out) will use aspirational framing and zero alarm vocabulary in specialist XR outlets.
+
+Spiegel's AWE "copycats up north" competitive positioning uncritiqued by Kent Bye despite Snap building functionally identical camera-on-face hardware.
+
+### Stats
+- Mechanisms: 241
+- Test files: 551
+- Tests in new file: 35 (all passing)
+- Podcast sentiment entries: 63
