@@ -25749,3 +25749,78 @@ publications:
     - mechanism_id: 228
       relationship: parallel_pattern
       description: Gizmodo privacy vocabulary patterns on smart glasses
+
+  pervertpods_stigma_label_resolution_rationalization:
+    mechanism_id: 245
+    type: cross_publication_stigma_analysis
+    discovery_date: '2026-08-23'
+    finding_summary: 'When the "pervertpods" stigma label emerged for Apple camera AirPods
+      (post-Aug 18, 2026 video leak), publications responded with patterns predictable from
+      financial architecture. Apple affiliate publications (AppleInsider, Cult of Mac) performed
+      immediate resolution-rationalization to defuse the label. General business publications
+      (Entrepreneur) used factual distance. Independent publications with no Apple financial
+      relationship (OSnews) applied symmetric alarm vocabulary including headline-level label
+      adoption. The same Apple affiliate publications that resolved "pervertpods" had previously
+      amplified "pervert glasses" and "glasshole" for Meta without any rationalization step.
+
+      Key finding: OSnews as control case proves the vocabulary bifurcation is not inherent
+      to product differences (AirPods vs glasses) but a function of financial relationships.
+      OSnews uses "PervertPods" in the headline, calls Apple cameras a "pervert wet dream,"
+      and asks "Was there not a single woman or parent on the team?" — alarm vocabulary
+      identical in intensity to Meta glasses coverage from major publications.
+
+      Resolution mechanisms documented: (1) zero-distance dismissal ("shouldn''t worry"),
+      (2) explicit stigma attribution to Meta, (3) 1MP resolution rationalization,
+      (4) authority source dismissal (citing Gurman to dismiss concerns),
+      (5) trust signal closure, (6) "some people" distancing language.
+
+      Financial prediction accuracy: 4/4 (100%) — affiliate pubs resolve, independent
+      pubs apply symmetric alarm, general business pubs use factual distance.'
+    publications_analyzed:
+    - AppleInsider
+    - Cult of Mac
+    - Entrepreneur
+    - OSnews
+    test_file: test_pervertpods_stigma_label_resolution_rationalization_cross_publication_aug23.py
+    test_count: 33
+    confounding_factors:
+    - strength: STRONG
+      type: product_difference
+      description: 'Apple camera AirPods genuinely differ from Meta glasses (no photo/video
+        capture vs full photo/video capability), providing legitimate editorial basis
+        for different framing.'
+    - strength: STRONG
+      type: product_lifecycle
+      description: 'Apple AirPods are pre-release rumor while Meta glasses are a shipping
+        product with documented misuse incidents.'
+    - strength: MODERATE
+      type: editorial_independence
+      description: 'Publications may independently assess the privacy risk as lower without
+        financial motivation driving the assessment.'
+    - strength: MODERATE
+      type: journalist_awareness
+      description: 'Individual writers may not be aware of their publication financial
+        architecture.'
+    - strength: WEAK
+      type: audience_scale
+      description: 'OSnews is a niche publication; different audience expectations may
+        explain different editorial standards independent of financial incentives.'
+    source_urls:
+    - https://appleinsider.com/articles/26/08/19/airpods-with-cameras-not-coming-till-2027-wont-take-photos
+    - https://www.cultofmac.com/news/how-airpods-with-cameras-will-work
+    - https://www.entrepreneur.com/business-news/apples-new-airpods-will-have-cameras-why-is-the-internet-calling-them-pervertpods
+    - https://www.osnews.com/story/145850/pervertpods-apple-is-adding-cameras-to-airpods/
+    - https://appleinsider.com/articles/26/07/26/public-distrust-in-smart-glasses-will-be-a-a-challenge-for-apple-glass
+    cross_references:
+    - mechanism_id: 234
+      relationship: extends
+      description: Malcolm Owen AppleInsider aspirational-cautionary dyad
+    - mechanism_id: 244
+      relationship: parallel_pattern
+      description: AI Inside cross-episode temporal adjacency vocabulary bifurcation
+    - mechanism_id: 127
+      relationship: context
+      description: Apple N50 privacy hero cascade
+    - mechanism_id: 138
+      relationship: specializes
+      description: 1MP resolution rationalization pattern

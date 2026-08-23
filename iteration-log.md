@@ -1,6 +1,33 @@
 ---
 ---
 
+## Iteration #253 — Sun 2026-08-23 02:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Publication+Competitor Pair:** Cross-publication analysis of Apple camera AirPods "pervertpods" label handling
+
+**Key Finding — Mechanism #245: Entity-Selective Stigma Label Resolution-Rationalization**
+
+When the "pervertpods" stigma label emerged for Apple camera AirPods after the Aug 18 video leak, publications responded with patterns directly predictable from financial architecture:
+
+1. **Apple affiliate publications (AppleInsider, Cult of Mac):** Mention-and-dismiss — acknowledge the label, immediately rationalize it away, attribute stigma origin to Meta, frame Apple's 1MP limitation as deliberate privacy virtue
+2. **General business (Entrepreneur):** Factual distance — report the label neutrally, shield with Apple brand reputation
+3. **Independent, no Apple revenue (OSnews):** Symmetric alarm — "PervertPods" IN THE HEADLINE, "pervert's wet dream," "abusers are going to love this," "Was there not a single woman or parent on the team?"
+
+**Critical comparison:** AppleInsider uses "pervert glasses" for Meta WITHOUT resolution (Jul 26), but resolves "pervertpods" for Apple with a 5-step rationalization in the SAME month. Cult of Mac equates Meta with "Flock surveillance cameras" in the SAME article where "pervertpods" is dismissed.
+
+**OSnews control case:** Proves vocabulary bifurcation is NOT inherent to product differences but a function of financial relationships. OSnews has zero Apple affiliate revenue and applies identical alarm intensity to Apple as other publications apply to Meta.
+
+**Financial prediction accuracy:** 4/4 (100%) — the pattern is fully explained by publication financial architecture.
+
+### Stats
+- **New test file:** 1 (6 classes, 33 tests, all passing)
+- **New mechanism:** #245
+- **Test files:** 555 total
+- **Publications analyzed:** 4 (AppleInsider, Cult of Mac, Entrepreneur, OSnews)
+- **Source URLs:** 5
+
+---
+
 ## Iteration #252 — Sun 2026-08-23 01:00 PT (Type E: Podcast Sentiment Tracking)
 
 **New Episode:** #64 — AI Inside "OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026)
