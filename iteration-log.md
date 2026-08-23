@@ -1,3 +1,73 @@
+## Iteration #264 — Sun 2026-08-23 16:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Tim Hardwick (MacRumors) — Same-Journalist Passive Capture Vocabulary Bifurcation
+
+**Mechanism #256:** Tim Hardwick at MacRumors covers functionally equivalent
+always-on/passive camera capture features at two companies — Meta and Apple —
+with dramatically different vocabulary and framing, 43 days apart.
+
+**The Natural Experiment:**
+
+Article 1 — Meta Super Sensing (Jul 9, 2026):
+- Headline: "Meta's 'Super Sensing' Prototype Glasses Quietly Record Everything"
+- Alarm vocabulary: "quietly record everything," "every moment," "civil liberty
+  and privacy risks," "wiretapping laws," "biometric data laws"
+- Expert warnings and legal analysis included
+- LED framing: concealment ("executives don't want to activate the LED")
+- Source: Financial Times report
+
+Article 2 — Apple AirPods Passive Mode (Aug 21, 2026):
+- Headline: "Camera AirPods Code Reveals Image Capture Resolution, Status Light,
+  Person Detection, and More"
+- Zero alarm words in headline or body
+- Passive mode described as "background environmental awareness"
+- No expert warnings, no legal analysis, no wiretapping law mentions
+- LED framing: transparency ("let other people know")
+- Critical finding OMITTED: person detection doesn't suppress capture
+  (Cult of Mac reported: "person not detected, sent the image anyways")
+
+**Why this matters:** Both features involve continuous/passive camera capture
+triggered by environmental conditions. Apple's passive mode has MORE specified
+triggers (5: speech, audio changes, posture, head rotation, spatial movement)
+than Meta's continuous approach. AirPods are physically LESS visible than glasses,
+arguably MORE concerning for bystander privacy. Yet the coverage vocabulary tracks
+entity, not severity.
+
+**Cross-Publication Corroboration:**
+- Gizmodo (Aug 21): "No, AirPods With Cameras Aren't Smart Glasses for Your Ears"
+  — DEFENSIVE Apple headline, resolution rationalization, Meta as privacy foil,
+  extends speculative trust based on Apple brand reputation
+- Android Police (Jul 9): "nightmarish 'super sensing' feature" for Meta's
+  equivalent capability
+- Cult of Mac (Aug 21): Includes person-detection non-suppression finding that
+  MacRumors omits — even the Apple-focused outlet notes this
+
+### Deliverables
+1. **Test file:** `tests/test_tim_hardwick_macrumors_same_journalist_passive_capture_vocabulary_bifurcation_aug23.py`
+   - 10 classes, 43 tests, all passing
+   - Classes: TestTimHardwickMetaSuperSensing (6), TestTimHardwickApplePassiveMode (6),
+     TestCrossEntityVocabularyBifurcation (6), TestFunctionalEquivalenceVerification (5),
+     TestCrossPublicationCorroboration (6), TestConfounders (5),
+     TestMechanismRegistration (2), TestTestablePredicitions (3),
+     TestProfileIntegration (4)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `profiles/competitor-coverage-research.yaml` — mechanism #256 entry with full
+     finding, confounders, cross-references, corroborating URLs, testable predictions
+   - `README.md` — test count updated (569 files, ~20,340+ tests), new test file listed
+   - `docs/ARCHITECTURE.md` — test count updated, new test file listed
+
+### Stats
+- **New test file:** 1 (43 tests, all passing)
+- **Mechanism ID:** #256
+- **Asymmetry score:** 0.90
+- **Cross-references:** 5 (#251, #148, #62, #92, #223)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 569 test files
+- **Pushed to GitHub:** ✓
+
+
 ## Iteration #263 — Sun 2026-08-23 14:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WIRED + The Verge Coverage Selection Silence on Claude Code Source Code Leak
