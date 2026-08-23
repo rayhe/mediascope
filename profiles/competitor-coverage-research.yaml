@@ -13226,6 +13226,7 @@ cross_publication_findings:
     - Samsung Galaxy Glasses reviews will mention Snapdragon processor positively without disclosing Qualcomm co-marketing relationship
     title: Qualcomm Co-Marketing Supply Chain Financial Multiplier
     type: C
+    meta_coverage_tone: adversarial
   reece_rogers_privacy_investigation_topic_routing_asymmetry:
     confounding_factors:
     - factor: 'STRONG: Meta has documented facial recognition history (DeepFace 2014) that Google does not share at the same scale, creating a legitimate editorial rationale for heightened Meta scrutiny
@@ -23899,3 +23900,4 @@ publications:
     - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
     - https://www.fool.com/earnings/call-transcripts/2026/07/30/reddit-rddt-q2-2026-earnings-call-transcript/
     type: C
+    meta_coverage_tone: adversarial

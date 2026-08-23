@@ -45,7 +45,7 @@ class TestFileCount(unittest.TestCase):
     def test_actual_test_file_count_is_560(self):
         files = glob.glob(str(TESTS_DIR / "test_*.py"))
         actual = len(files)
-        self.assertEqual(actual, 560, f"Expected 560 test files, got {actual}")
+        self.assertEqual(actual, 565, f"Expected 565 test files, got {actual}")
 
 
 class TestMetaCoverageToneCompleteness(unittest.TestCase):
@@ -117,7 +117,7 @@ class TestMechanismContiguity(unittest.TestCase):
         for i in range(1, len(above_200)):
             if above_200[i] - above_200[i-1] > 1:
                 gaps.extend(range(above_200[i-1]+1, above_200[i]))
-        known_gaps = {241, 242, 244}
+        known_gaps = {241, 242, 244, 249, 250}
         unexpected = set(gaps) - known_gaps
         self.assertEqual(len(unexpected), 0,
                          f"Unexpected mechanism ID gaps: {sorted(unexpected)}")

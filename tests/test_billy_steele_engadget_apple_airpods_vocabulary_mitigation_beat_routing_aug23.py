@@ -141,7 +141,10 @@ class TestMechanism246Exists:
     def _extract_mechanisms(self, d):
         if isinstance(d, dict):
             if "mechanism_id" in d:
-                self.mechanisms[d["mechanism_id"]] = d
+                mid = d["mechanism_id"]
+                # Prefer entries with more keys (full entries over cross-ref stubs)
+                if mid not in self.mechanisms or len(d) > len(self.mechanisms[mid]):
+                    self.mechanisms[mid] = d
             for v in d.values():
                 self._extract_mechanisms(v)
         elif isinstance(d, list):

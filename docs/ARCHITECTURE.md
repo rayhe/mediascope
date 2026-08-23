@@ -1027,3 +1027,7 @@ mediascope/
 | `test_c_scott_brown_android_authority_cross_entity_led_privacy_vocabulary_bifurcation_aug23.py` | C. Scott Brown Android Authority LED vocabulary bifurcation |
 | `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` | Cross-publication AirPods vocabulary gradient — financial correlation |
 | `test_pervertpods_stigma_label_resolution_rationalization_cross_publication_aug23.py` | PervertPods stigma label resolution rationalization |
+| `test_chokkattu_dual_role_apple_camera_airpods_contribution_temporal_adjacency_aug23.py` | Chokkattu dual-role Apple AirPods camera contribution — 5-day temporal adjacency vocabulary bifurcation |
+| `test_gizmodo_airpods_camera_potato_quality_resolution_rationalization_within_article_reputation_trust_aug23.py` | Gizmodo AirPods camera potato quality resolution-rationalization — within-article reputation trust |
+| `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` | Google Preferred Sources embed — sixth publisher dependency layer |
+| `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` | 9to5Mac three-channel podcast pipeline PervertPods cross-medium propagation |
