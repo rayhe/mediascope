@@ -8729,3 +8729,17 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** 557 test files
 - **Pushed to GitHub:** ✓
+
+## Iteration #264 — Sun 2026-08-23 15:00 PT
+
+- **Type:** B — Journalist Cross-Entity Tracking
+- **Journalist:** Abrar Al-Heeti (CNET Senior Technology Reporter / TWiT guest co-host)
+- **Mechanism #255:** Cross-Entity Cross-Medium Camera Wearable Privacy Vocabulary Bifurcation
+- **Finding:** Abrar Al-Heeti applies alarm vocabulary to Meta camera glasses across multiple TWiT podcast appearances (TWiT #356 Oct 2024: I-XRAY facial recognition "privacy concerns"; TWiT #451 Aug 20, 2026: workplace "menace"/"scary") while making ZERO mention of Apple's camera-equipped AirPods leak (Aug 18, 2026) in TWiT #451 — despite the Apple story being 2 days old, "pervertpods" trending, and it being the biggest camera wearable privacy story of the week. Same episode uses THREE distinct vocabulary registers: ENTHUSIASM (Google Pixel 11), ALARM (Meta glasses), ADVENTURE (Amazon book scanning). No CNET/Abrar articles found covering Apple AirPods camera privacy with comparable alarm vocabulary. Cross-medium propagation: CNET editorial framing propagates via Abrar to TWiT Network podcast audience (~500K+ weekly listeners). CNET parent Ziff Davis has HIGH Apple affiliate revenue dependency and LOW Meta affiliate dependency.
+- **Test file:** test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py
+- **Tests added:** 55 (12 classes)
+- **Asymmetry score:** 0.92
+- **Cross-references:** 3 (TWiT #451 podcast, Mia Sato cross-entity, Ziff Davis financial)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 568 test files
+- **Pushed to GitHub:** ✓

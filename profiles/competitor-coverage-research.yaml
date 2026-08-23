@@ -24002,3 +24002,104 @@ publications:
     - https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know
     - https://www.techspot.com/news/111907-anthropic-accidentally-exposed-claude-code-source-raising-security.html
     test_file: tests/test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py
+
+  abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation:
+    mechanism_id: 255
+    type: journalist_cross_entity_cross_medium
+    journalist: Abrar Al-Heeti
+    publication: CNET
+    parent_company: Ziff Davis
+    cross_medium_channel: TWiT Network (Tech News Weekly)
+    finding: >
+      Abrar Al-Heeti (CNET Senior Technology Reporter) applies alarm vocabulary to
+      Meta camera glasses across multiple TWiT podcast appearances (TWiT #356 Oct 2024:
+      I-XRAY facial recognition; TWiT #451 Aug 20, 2026: workplace menace framing
+      amplifying The Verge's Mia Sato) while making ZERO mention of Apple's camera-equipped
+      AirPods leak (Aug 18, 2026) in TWiT #451 — despite the Apple story being 2 days old
+      and the biggest camera wearable privacy story of the week. Same episode uses three
+      vocabulary registers: ENTHUSIASM (Google Pixel 11), ALARM (Meta glasses), ADVENTURE
+      (Amazon book scanning). No CNET/Abrar articles found covering Apple AirPods camera
+      with comparable alarm vocabulary (verified Aug 23, 2026).
+    asymmetry_score: 0.92
+    entities_compared:
+      - Meta (alarm vocabulary, 13+ min airtime)
+      - Apple (zero mention, zero airtime in same episode)
+      - Google (enthusiasm vocabulary)
+      - Amazon (adventure vocabulary)
+    evidence:
+      twit_356:
+        date: "2024-10-03"
+        topic: "Harvard I-XRAY facial recognition on Meta Ray-Ban glasses"
+        vocabulary: alarm
+        url: https://twit.tv/shows/tech-news-weekly/episodes/356
+      twit_451:
+        date: "2026-08-20"
+        topic: "Meta glasses workplace menace"
+        vocabulary: alarm
+        duration_minutes: 13
+        url: https://www.youtube.com/watch?v=z1X3URWpk04
+      apple_airpods_leak:
+        date: "2026-08-18"
+        days_before_twit_451: 2
+        mentions_in_episode: 0
+        trending_label: "pervertpods"
+      kpix_cbs_segment:
+        topic: "Kylie Jenner Meta smart glasses"
+        url: https://www.youtube.com/watch?v=JPf4E9Z0vmw
+    financial_architecture:
+      cnet_owner: Ziff Davis
+      acquisition_date: "2024-10-01"
+      apple_affiliate_dependency: HIGH
+      meta_affiliate_dependency: LOW
+      ziff_davis_openai_lawsuit: true
+      meta_content_deal: false
+    confounders:
+      - description: >
+          Abrar's CNET beat (phones, streaming, internet culture) may not formally
+          include Apple wearables, explaining coverage gap for AirPods cameras.
+          However, she actively covers Meta glasses privacy on multiple podcast
+          appearances, showing wearable privacy IS within her scope when entity is Meta.
+        strength: MODERATE
+      - description: >
+          Apple AirPods camera story may not have made TWiT #451 production cutoff.
+          Rebuttal: Leak was Aug 18 (Mon), episode aired Aug 20 (Wed). Multiple outlets
+          published within hours. Pervertpods already trending.
+        strength: WEAK
+      - description: >
+          CNET journalists may operate independently of Ziff Davis financial interests.
+          Cannot prove editorial direction from financial relationships without internal
+          documentation.
+        strength: STRONG
+      - description: >
+          Meta glasses are shipping with real-world incidents; Apple AirPods cameras
+          are pre-launch. Valid for investigative depth, but complete absence of mention
+          (not reduced coverage, zero) of the week's biggest story is notable.
+        strength: STRONG
+      - description: >
+          TWiT topic selection may be producer-driven, not host/guest-driven. Abrar is
+          listed as co-host suggesting editorial influence, but institutional output
+          still demonstrates entity-selective coverage.
+        strength: MODERATE
+    cross_references:
+      - mechanism_id: TWiT_451_podcast
+        relationship: extends
+        description: "Podcast analysis identified three-segment vocabulary gradient; this isolates Abrar's role"
+      - mechanism_id: mia_sato_cross_entity
+        relationship: amplifies
+        description: "Abrar amplifies Mia Sato's Verge framing to TWiT podcast audience"
+      - mechanism_id: ziff_davis_financial
+        relationship: extends
+        description: "Ziff Davis financial architecture predicts CNET coverage patterns"
+    testable_predictions:
+      - "When Apple ships camera AirPods (2027), CNET/Abrar vocabulary should differ from Meta glasses coverage"
+      - "Future TWiT episodes: Apple camera wearable stories get less airtime/alarm than Meta equivalents"
+      - "CNET review of Apple camera AirPods will use utility vocabulary, not surveillance vocabulary"
+    test_file: test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py
+    test_count: 55
+    source_urls:
+      - https://twit.tv/shows/tech-news-weekly/episodes/356
+      - https://www.youtube.com/watch?v=z1X3URWpk04
+      - http://abraralheeti.com/
+      - https://en.wikipedia.org/wiki/CNET
+      - https://www.engadget.com/2238891/apple-appears-to-have-leaked-its-camera-equipped-airpods/
+      - https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
