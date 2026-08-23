@@ -1,6 +1,53 @@
 ---
 ---
 
+## Iteration #254 — Sun 2026-08-23 05:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Journalist:** Arin Waichulis, 9to5Mac
+**Role:** Security Bite columnist + Director of Social Media for 9to5 family (9to5Mac, 9to5Google, Electrek, DroneDJ, Space Explored, 9to5Toys)
+
+**Key Finding — Mechanism #248: Security Beat Reporter Sponsor-Aligned Cross-Entity Coverage Scope Restriction**
+
+Arin Waichulis's "Security Bite" column at 9to5Mac is exclusively sponsored by Mosyle, an Apple-only enterprise MDM platform. The column demonstrates a five-dimensional asymmetry pattern:
+
+1. **Vocabulary Bifurcation (SAME article, Aug 18):**
+   - Apple camera AirPods: "only it can," "I have no doubt," "flawlessly," "extreme focus on privacy"
+   - Meta camera glasses: "reckless," "look even more reckless," "surveillance device," "camera-first product"
+   - Sentiment delta: 11 points (+4 Apple, -7 Meta)
+
+2. **Coverage Scope Restriction:**
+   - Meta camera wearable Security Bite coverage: 2+ articles
+   - Apple camera wearable Security Bite coverage: 1 article (aspirational)
+   - Samsung camera wearable Security Bite coverage: **0**
+   - Google Android XR camera Security Bite coverage: **0**
+   - Snap Spectacles camera Security Bite coverage: **0**
+
+3. **Sponsor Alignment Channel:**
+   - Mosyle sells EXCLUSIVELY to Apple device fleets
+   - Mosyle's TAM grows with Apple hardware adoption
+   - Security Bite frames Apple as privacy-superior → drives Apple adoption → benefits sponsor
+   - Sponsorship is FTC-disclosed; editorial alignment is NOT disclosed
+
+4. **Affiliate Revenue Paradox:**
+   - Mar 3 "Meta Ray-Bans send sensitive videos" article opens with Amazon affiliate link to BUY Meta Ray-Bans
+   - Publication earns commission from product it editorially attacks
+   - Alarm framing → traffic → affiliate clicks → revenue
+
+5. **Cross-Property Social Media Influence:**
+   - Waichulis controls social media strategy for 9to5Google
+   - 9to5Google used as control case (mechanism #131, ~1.7:1 proportional ratio)
+   - Same person who frames Meta as "reckless" determines social distribution for the Google-focused property
+
+**Unreleased-vs-Shipping Confidence Inversion:** Waichulis OWNS Meta Ray-Bans ("I use the glasses myself," Mar 3) yet expresses MORE confidence about UNRELEASED Apple AirPods ("I have no doubt"). A security analyst should show HIGHER uncertainty about products with zero track record.
+
+### Stats
+- **New test file:** 1 (8 classes, 33 tests, all passing)
+- **New mechanism:** #248
+- **Test files:** 558 total
+- **Source URLs:** 5
+
+---
+
 ## Iteration #253 — Sun 2026-08-23 02:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Publication+Competitor Pair:** Cross-publication analysis of Apple camera AirPods "pervertpods" label handling

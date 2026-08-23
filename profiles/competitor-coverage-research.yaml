@@ -26032,3 +26032,155 @@ publications:
     - mechanism_id: 194
       relationship: extends
       description: Gizmodo privacy-invading lunch
+  arin_waichulis_9to5mac_security_bite_sponsor_aligned_coverage_scope_restriction:
+    mechanism_id: 248
+    discovery_date: '2026-08-23'
+    iteration: 254
+    type: B
+    asymmetry_score: 1.0
+    journalist: Arin Waichulis
+    journalist_role: Security writer + Director of Social Media, 9to5 family of sites
+    publication: 9to5Mac
+    publication_parent: 925 LLC (Seth Weintraub, sole owner)
+    column: Security Bite
+    column_sponsor: Mosyle (Apple-exclusive enterprise MDM platform)
+    finding_summary: >
+      Arin Waichulis's Security Bite column at 9to5Mac — exclusively sponsored by
+      Mosyle (Apple-only MDM) — demonstrates sponsor-aligned cross-entity coverage
+      scope restriction. In the SAME article (Aug 18, 2026), Waichulis applies
+      aspirational vocabulary to Apple's unreleased camera AirPods ("only it can,"
+      "I have no doubt," "flawlessly") while applying alarm vocabulary to Meta's
+      shipping camera glasses ("reckless," "surveillance device"). The column has
+      ZERO coverage of Samsung, Google, or Snap camera wearable privacy despite
+      all three having cameras with identical implications. Waichulis simultaneously
+      serves as Director of Social Media for all 9to5 properties (including
+      9to5Google), creating a structural channel for Apple-aligned framing influence
+      across the network. The 9to5Mac article covering Meta Ray-Bans' Kenya data
+      annotator scandal opens with an Amazon affiliate link to BUY the glasses —
+      earning commission on the product it editorially attacks. The 9to5Google
+      control case (Ben Schoon, mechanism #131) shows ~1.7:1 proportional privacy
+      concern, proving the extreme bifurcation is specific to 9to5Mac/Waichulis,
+      not inherent to the 9to5 network.
+    novel_contributions:
+    - name: Sponsor-Editorial Alignment Channel
+      description: >
+        First documentation of a column sponsor (Mosyle, Apple-exclusive MDM) whose
+        commercial interests directly align with the column's editorial output (Apple
+        as privacy-superior). Sponsorship is FTC-disclosed; the editorial alignment is not.
+    - name: Coverage Scope Restriction as Mechanism
+      description: >
+        Security Bite covers camera wearable privacy for exactly two entities: Meta (alarm)
+        and Apple (advocacy). Samsung, Google, and Snap camera wearables receive zero
+        security analysis despite functionally identical privacy implications. The scope
+        restriction is the asymmetry — silence on competitors is the signal.
+    - name: Affiliate Revenue Paradox
+      description: >
+        9to5Mac earns Amazon affiliate commissions from the SAME Meta Ray-Ban glasses
+        it frames as privacy threats. The alarm framing drives traffic, traffic drives
+        clicks, clicks on affiliate links drive revenue. The publication simultaneously
+        profits from and attacks the same product.
+    - name: Cross-Property Social Media Director Influence
+      description: >
+        Waichulis controls social media strategy for 9to5Google — the same property
+        used as a control case for proportional privacy coverage. The analyst who
+        frames Meta as "reckless" on 9to5Mac also determines what gets promoted
+        on social channels for 9to5Google.
+    - name: Unreleased-vs-Shipping Confidence Inversion
+      description: >
+        Waichulis expresses MORE confidence in Apple's unreleased AirPods privacy
+        execution ("I have no doubt") than in Meta's shipping product (which he owns
+        and uses — "I use the glasses myself"). A security analyst should show MORE
+        uncertainty about unreleased products, not less.
+    vocabulary_analysis:
+      apple_aspirational_phrases:
+      - only it can
+      - I have no doubt
+      - flawlessly
+      - extreme focus on privacy
+      - whole different approach
+      - do something only it can
+      meta_alarm_phrases:
+      - reckless
+      - look even more reckless
+      - surveillance device
+      - camera-first product
+      sentiment_delta: 11
+      apple_sentiment: +4
+      meta_sentiment: -7
+    coverage_scope:
+      meta_security_bite_articles: 2
+      apple_security_bite_articles: 1
+      samsung_security_bite_articles: 0
+      google_security_bite_articles: 0
+      snap_security_bite_articles: 0
+      coverage_ratio: infinity_to_zero
+    financial_architecture:
+      mosyle_sponsorship:
+        type: exclusive_column_sponsor
+        mosyle_platform: Apple-only
+        mosyle_benefit: Apple device fleet growth
+        editorial_alignment: Apple framed as privacy-superior
+      affiliate_revenue:
+        meta_rayban_affiliate_link: true
+        affiliate_in_alarm_article: true
+        amazon_associate_program: true
+      publication_owner: 925 LLC
+      owner_sole_proprietor: Seth Weintraub
+      apple_news_distribution: true
+    cross_property_analysis:
+      waichulis_social_media_properties:
+      - 9to5Mac
+      - 9to5Google
+      - Electrek
+      - DroneDJ
+      - Space Explored
+      - 9to5Toys
+      9to5google_control_ratio: 1.7
+      9to5mac_security_bite_ratio: infinity
+    confounding_factors:
+    - name: Apple-focused publication scope
+      strength: STRONG
+      description: >
+        9to5Mac covers Apple — naturally more Apple coverage. But Security Bite's
+        stated scope is "threats, privacy concerns, vulnerabilities" across "an
+        ecosystem of over 2 billion devices." Camera wearable privacy from any
+        manufacturer is within that scope.
+    - name: Meta incident history
+      strength: MODERATE
+      description: >
+        Meta Ray-Bans have documented privacy incidents (Kenya data annotators,
+        viral harassment). Samsung/Google/Snap glasses are newer with fewer incidents.
+        Rebuttal: Waichulis expresses "no doubt" about UNRELEASED Apple AirPods
+        with ZERO incident history. Security analysis should show MORE uncertainty
+        about products with no track record.
+    - name: Audience expectation
+      strength: MODERATE
+      description: >
+        9to5Mac readers expect Apple-positive content. But Security Bite is branded
+        as a security column, not advocacy — its brand promise implies objectivity.
+    - name: Personal belief
+      strength: WEAK
+      description: >
+        Waichulis may genuinely believe Apple handles privacy better. But he OWNS
+        and USES Meta Ray-Bans ("I use the glasses myself" Mar 3). Expressing
+        "no doubt" about an unreleased competitor is prediction without evidence.
+    source_urls:
+    - https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+    - https://9to5mac.com/2026/03/03/meta-ray-ban-smart-glasses-send-sensitive-videos-to-human-data-annotators/
+    - https://9to5mac.com/2026/07/31/antizuck-ios-app-that-claims-to-detect-nearby-smart-glasses-tops-app-store-chart/
+    - https://9to5mac.com/author/arinwaichulis/
+    - https://mosyle.com/
+    test_file: tests/test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py
+    cross_references:
+    - mechanism_id: 131
+      relationship: control_case
+      description: Ben Schoon 9to5Google proportional privacy coverage — same 9to5 network, ~1.7:1 ratio
+    - mechanism_id: 221
+      relationship: extends
+      description: Security Bite pre-framing + celebrity cascade analysis
+    - mechanism_id: 247
+      relationship: parallel_pattern
+      description: Cross-publication Apple camera AirPods vocabulary gradient
+    - mechanism_id: 245
+      relationship: parallel_pattern
+      description: Pervertpods stigma label resolution-rationalization
