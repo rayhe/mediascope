@@ -1,6 +1,53 @@
 ---
 ---
 
+## Iteration #248 — Sat 2026-08-22 18:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #237: TechRepublic (TechnologyAdvice) Triple-Entity Camera Device Privacy
+Vocabulary Gradient**
+
+- **Type:** Competitor Coverage Deep Dive (Type A)
+- **Test file:** `tests/test_techrepublic_technologyadvice_triple_entity_camera_device_privacy_vocabulary_gradient_aug22.py`
+- **Tests:** 9 classes, 48 tests (all passing)
+- **Asymmetry score:** 0.76
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Cross-references:** #233 (eWeek TechnologyAdvice), #159 (OpenAI companion vocabulary), #33 (OpenAI facial recognition parity), #122 (TechCrunch Snap Specs zero)
+- **Sources:** 3 TechRepublic articles + eWeek cheat sheet
+
+**Core finding:** TechRepublic (TechnologyAdvice) published three articles about three
+camera-equipped devices within 5 weeks using three completely different vocabulary
+registers that correlate with entity identity, not functional capability:
+
+| Entity | Date | Headline Verb | Vocabulary Register | Alarm Terms | Privacy Questions |
+|--------|------|--------------|--------------------|-----------|--------------------|
+| OpenAI | Jul 16 | "Explained" | Aspirational ("companion," "alive") | 0 | 0 |
+| Apple | Aug 4 | "Could Launch" | Neutral-technical ("visual sensors") | 0 | 1 (generic) |
+| Meta | Aug 20 | "Warns Against" | Alarm-threat ("surveillance," "security risk") | 6+ | Multiple |
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **TRIPLE-ENTITY SAME-PUBLICATION VOCABULARY GRADIENT** — Three camera devices, three
+   registers, one publication, 5 weeks. Gradient follows entity, not capability.
+
+2. **TECHNOLOGYADVICE CROSS-PORTFOLIO EDITORIAL PATTERN** — Sibling eWeek (#233) shows
+   identical asymmetric pattern (3/3 Meta-exclusive privacy incidents). Two separately-
+   branded publications under same corporate parent = systematic editorial culture.
+
+3. **OPENAI MAXIMUM CAPABILITY, ZERO SCRUTINY** — OpenAI speaker accesses email +
+   messages + proactive learning (MORE invasive than Meta glasses), yet ZERO alarm
+   vocabulary. Meta glasses don't access email/messages but get 6+ alarm terms.
+
+4. **HEADLINE FRAMING ASYMMETRY** — "Explained" → "Could Launch" → "Warns Against"
+   signals editorial stance before a single word of body copy.
+
+5. **GENERIC PRIVACY DEFLECTION TECHNIQUE** — Apple article's one privacy mention uses
+   "across the industry" to deflect away from Apple specifically. OpenAI gets not even
+   this generic mention despite MORE invasive capabilities.
+
+- **Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #247 — Sat 2026-08-22 17:00 PT (Type E: Podcast Sentiment Tracking)
 
 **Mechanism #236: MacRumors Show Apple Camera AirPods Aspirational Framing —

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~19,896 | Across 546 test files |
+| Tests | ~19,944 | Across 547 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **19851 tests (with parameterized expansion) across 545 test files, each covering a different analytical capability:
+MediaScope has **19899 tests (with parameterized expansion) across 546 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1060,4 +1060,5 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_11am_nbc_news_broadcast_gender_framed_camera_wearable_entity_selection_aug22.py` | 29 | Mechanism #232: NBC News Broadcast Gender-Framed Camera Wearable Entity Selection (Type E). Broadcast segment (Yasmin Vossoughian) uses gender-specific alarm framing for Meta AI glasses ("mostly women, speak out about being filmed without consent"), zero mention of Apple camera AirPods, Snap Specs, Samsung/Google glasses. Cross-medium alarm chain now extends from print → podcast → broadcast TV. 7 classes, 29 tests |
 | `test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py` | 45 | Mechanism #236: MacRumors Show Apple Camera AirPods Aspirational Framing (Type E). MacRumors Show (Dan Barbera, Aug 20-21 2026) covers Apple's leaked camera AirPods with entirely aspirational framing — title "Camera AirPods Are Coming, Just Not This Year..." uses zero alarm vocabulary. Same functional capability as Meta glasses (camera → AI context) gets zero privacy framing. 3 Apple podcast titles = 0 alarm words; 4 Meta podcast titles avg -6.5 sentiment. 9 classes, 45 tests |
 | `test_type_d_3pm_cross_validation_aug22.py` | 20 | Type D cross-validation (Aug 22, 3 PM PT): YAML parse fix (mechanism #232 list→mapping key in publications), doc sync (540→544 test files, ~19000→~19795 tests), 8 missing aug22 test files added to README/ARCHITECTURE, 4 missing mechanism profile entries (#231, #233, #234, #235) added to competitor-coverage-research.yaml. Prior fix regression guards (#218 confounding_factors, no list items in publications). 6 classes, 20 tests |
+| `test_techrepublic_technologyadvice_triple_entity_camera_device_privacy_vocabulary_gradient_aug22.py` | 48 | Mechanism #237: TechRepublic (TechnologyAdvice) Triple-Entity Camera Device Privacy Vocabulary Gradient (Type A). Same publication covers OpenAI speaker (aspirational: "companion," "alive"), Apple AirPods (neutral: "visual sensors"), Meta glasses (alarm: "security risk," "surveillance") within 5 weeks. Cross-portfolio: sibling eWeek (#233) shows identical pattern under same TechnologyAdvice parent. 9 classes, 48 tests |
 | `test_marketwatch_news_corp_headline_template_inversion_meta_success_dismissal_apple_problem_insulation_aug22.py` | 31 | Mechanism #229: MarketWatch (News Corp/Dow Jones) Headline Template Inversion — Meta Success Dismissal / Apple Problem Insulation (Type A). Same 'X — but Y' headline template applied in opposite directions within 24 hours: Meta success undermined, Apple problem insulated. Jun 2026 article contains internal data contradiction: 84% market share + 'No one really wants Meta glasses.' News Corp triple-revenue financial relationship. 9 classes, 31 tests |

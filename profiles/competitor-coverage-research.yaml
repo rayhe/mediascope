@@ -25344,3 +25344,70 @@ publications:
     test_count: 45
     test_file: tests/test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py
     type: E
+  techrepublic_technologyadvice_triple_entity_camera_device_privacy_vocabulary_gradient_mechanism_237:
+    asymmetry_score: 0.76
+    confounding_factors:
+    - '[STRONG] Meta has real shipped-product incidents — Swedish contractor exposure, modder
+      LED bypasses, and active lawsuits give TechRepublic legitimate editorial justification
+      for alarm vocabulary on Meta coverage. OpenAI and Apple devices are pre-launch.'
+    - '[STRONG] ICE memo is inherently alarm-worthy — the article is ABOUT a government ban,
+      which naturally uses institutional alarm vocabulary. Product-preview (Apple) and explainer
+      (OpenAI) articles have different editorial registers by nature.'
+    - '[MODERATE] OpenAI speaker is home-only — different bystander privacy implications than
+      glasses worn in public. However, cameras + emails + messages + proactive learning are MORE
+      invasive for the USER''s privacy.'
+    - '[MODERATE] Apple AirPods are pre-announced — less concrete to criticize. However,
+      TechRepublic treated it as a credible upcoming product (full explainer), so rumor status
+      does not explain zero alarm vocabulary.'
+    - '[WEAK] Beat assignment — different authors may cover different entities. However,
+      editorial standards and vocabulary norms are set at the publication level.'
+    cross_references:
+    - description: eWeek (same TechnologyAdvice parent) cheat sheet with 3/3 Meta-specific
+        privacy incidents, zero for competitors — identical asymmetric pattern from sibling
+        publication
+      mechanism_id: 233
+      relationship: cross_portfolio_replication
+    - description: OpenAI companion vs Meta surveillance vocabulary bifurcation — TechRepublic
+        independently reproduces the same vocabulary gradient documented across 4+ publications
+      mechanism_id: 159
+      relationship: extends
+    - description: OpenAI-Meta facial recognition privacy parity — TechRepublic zero scrutiny
+        for OpenAI despite MORE invasive capabilities
+      mechanism_id: 33
+      relationship: extends
+    - description: TechCrunch Snap Specs camera privacy vocabulary zero — same camera capability
+        zero-scrutiny pattern now seen at TechnologyAdvice publications
+      mechanism_id: 122
+      relationship: parallel
+    discovery_date: '2026-08-22'
+    entities_compared:
+    - OpenAI
+    - Apple
+    - Meta
+    entity_targeted: Meta
+    finding_summary: 'TechRepublic (TechnologyAdvice) published three articles about three
+      camera-equipped devices within 5 weeks using three completely different vocabulary
+      registers. OpenAI speaker (Jul 16): aspirational — "companion," "personality," "alive,"
+      zero alarm terms, zero privacy questions despite cameras + email access + proactive
+      learning. Apple AirPods (Aug 4): neutral-technical — "visual sensors," "awareness,"
+      zero alarm terms, one generic "across the industry" privacy deflection not naming Apple.
+      Meta glasses (Aug 20): alarm-threat — "security risk," "surveillance," "compromising,"
+      6+ alarm terms, multiple privacy questions. The vocabulary gradient correlates with
+      entity identity, not functional capability — OpenAI''s device is MORE invasive (accesses
+      email, messages, proactive learning) yet receives ZERO scrutiny. Cross-portfolio
+      validation: sibling publication eWeek (#233) under same TechnologyAdvice parent shows
+      identical asymmetric pattern (3/3 Meta-exclusive privacy incidents). Headline framing
+      mirrors body gradient: "Explained" (OpenAI) vs "Could Launch" (Apple) vs "Warns Against"
+      (Meta).'
+    iteration: 248
+    mechanism_id: 237
+    name: TechRepublic (TechnologyAdvice) Triple-Entity Camera Device Privacy Vocabulary Gradient
+    publication: TechRepublic (TechnologyAdvice)
+    source_urls:
+    - https://www.techrepublic.com/article/news-openai-screenless-ai-speaker-hardware-2026/
+    - https://www.techrepublic.com/article/news-apple-camera-airpods-2026/
+    - https://www.techrepublic.com/article/news-ice-warns-employees-meta-smart-glasses/
+    - https://www.eweek.com/news/smart-glasses-cheat-sheet/
+    test_count: 48
+    test_file: tests/test_techrepublic_technologyadvice_triple_entity_camera_device_privacy_vocabulary_gradient_aug22.py
+    type: A
