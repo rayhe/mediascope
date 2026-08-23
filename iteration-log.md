@@ -7999,3 +7999,70 @@ Spiegel's AWE "copycats up north" competitive positioning uncritiqued by Kent By
 - Test files: 551
 - Tests in new file: 35 (all passing)
 - Podcast sentiment entries: 63
+
+
+## Iteration #253 — Sat 2026-08-22 23:00 PT (Type A: Competitor Coverage Deep Dive)
+
+**Mechanism #242: Fast Company (Mansueto Ventures) UK Cinema Ban Institutional Entity
+Selection — Category-Neutral Ban Headlined as Meta-Exclusive + Snap Specs Sep 16
+Launch Omission**
+
+- **Type:** Competitor Coverage Deep Dive (Type A)
+- **Publication:** Fast Company (Mansueto Ventures)
+- **Test file:** `tests/test_fastco_uk_cinema_ban_institutional_entity_selection_meta_exclusive_snap_omission_aug22.py`
+- **Tests:** 9 classes, 35 tests (all passing)
+- **Asymmetry score:** 0.88
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Cross-references:** #121 (Fast Company Snap/Meta vocabulary asymmetry),
+  #236 (ICE/DHS institutional ban cascade), #8 (safe target coefficient),
+  #239 (Condé Nast Snap Discover quintuple alignment)
+- **Sources:** 3 Fast Company articles + 1 Reuters (UKCA statement)
+
+**Core finding:** Fast Company published "Meta glasses in movie theaters? Some cinema
+owners ban them" on Aug 20, 2026, covering the UKCA's restriction of "camera-enabled
+smart glasses." The UKCA statement is ENTITY-NEUTRAL — it says "camera-enabled smart
+glasses," not "Meta glasses." But Fast Company:
+
+1. Headlines Meta exclusively — no competitor named
+2. Names Meta 7+ times in 47 lines
+3. Lists 6 institutional bans (UKCA, HMCTS, Soho House, Wetherspoon, NY courts, ICE)
+   — ALL naming Meta specifically
+4. Never mentions Snap Specs (4 cameras, Sep 16 consumer launch — 27 days away)
+5. Never asks whether Snap Specs would face the same ban
+6. Never mentions Apple, Samsung, or Google camera wearables
+
+**THREE-ARTICLE LONGITUDINAL PATTERN (extends mechanism #121):**
+
+| Article | Date | Entity | Framing | Privacy Terms |
+|---------|------|--------|---------|---------------|
+| Snap Specs AWE profile | Jun 16 | Snap | Aspirational CEO profile | 0 |
+| Meta controversies | Jul 10 | Meta | Controversy compilation | 10+ |
+| UK cinema ban | Aug 20 | Meta (exclusive) | Institutional ban cascade | 8+ |
+
+3 articles, 65 days. Meta ALWAYS receives alarm framing. Snap ALWAYS receives
+aspirational framing or complete absence. Camera count paradox: Snap Specs have
+4 cameras to Meta's 1, yet receive ZERO privacy scrutiny from Fast Company.
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **HEADLINE ENTITY SELECTION FROM ENTITY-NEUTRAL SOURCE** — The UKCA said
+   "camera-enabled smart glasses." Fast Company converted this to "Meta glasses."
+   This transforms a CATEGORY policy into a BRAND stigma event.
+
+2. **SNAP SPECS LAUNCH OMISSION** — Snap Specs consumer launch is 27 days away
+   from article publication. They have 4 cameras. Would they be banned from UK
+   cinemas? Fast Company never asks. The publication that gave Evan Spiegel a
+   2,500-word aspirational profile 65 days earlier does not connect the two events.
+
+3. **INSTITUTIONAL BAN CASCADE AS STIGMA MULTIPLIER** — By listing 6 institutional
+   bans, the article creates a "cascade effect" — Meta is THE device being banned
+   everywhere, despite the underlying policies being entity-neutral. Each ban
+   reinforces the next.
+
+### Stats
+- **New test file:** 1 (35 tests, all passing)
+- **Mechanism ID:** #242
+- **Test corpus:** 552 files
+- **YAML updates:** competitor-coverage-research.yaml (mechanism #242 full entry)
+- **Doc updates:** README.md and ARCHITECTURE.md test file count → 552
+- **Pushed to GitHub:** ✓

@@ -19942,6 +19942,113 @@ cross_publication_findings:
     - id: zd_samsung_soft
       prediction: Samsung glasses will receive positive hardware reviews without structural privacy warnings, unlike Meta
         glasses reviews
+  fastco_uk_cinema_ban_institutional_entity_selection:
+    mechanism_id: 242
+    mechanism_name: 'Fast Company UK Cinema Ban Institutional Entity Selection — Category-Neutral
+      Ban Headlined as Meta-Exclusive + Snap Specs Sep 16 Launch Omission'
+    mechanism_type: competitor_coverage_deep_dive
+    discovery_date: '2026-08-22'
+    publication: Fast Company
+    publication_owner: Mansueto Ventures
+    asymmetry_score: 0.88
+    entities:
+      alarm_target: Meta
+      absent_competitors:
+      - Snap (4 cameras, Sep 16 consumer launch — 27 days after article)
+      - Apple (camera AirPods, 2027)
+      - Samsung (Galaxy Glasses, launched Jul 22)
+      - Google (Android XR glasses, in development)
+    finding_summary: 'Fast Company published "Meta glasses in movie theaters? Some cinema
+      owners ban them" on Aug 20, covering the UKCA restricting "camera-enabled smart glasses."
+      The UKCA statement is entity-neutral but Fast Company headlines Meta exclusively, names
+      Meta 10+ times in 47 lines, lists 6 institutional bans all naming Meta, and never mentions
+      that Snap Specs (4 cameras, Sep 16 consumer launch — 27 days away) would face the same
+      ban. This is the THIRD Fast Company article (after #121 Snap AWE profile Jun 16 and Meta
+      controversies Jul 10) showing consistent entity-alarm assignment: Meta always alarm, Snap
+      always aspirational or absent. Camera count paradox: Snap has 4 cameras to Meta s 1, yet
+      receives zero privacy scrutiny from Fast Company.'
+    three_article_pattern:
+      article_1:
+        title: 'Evan Spiegel says Snap can t fulfill its mission without its new AR glasses'
+        date: '2026-06-16'
+        entity: Snap
+        framing: aspirational CEO profile
+        privacy_alarm_terms: 0
+        url: https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+      article_2:
+        title: 'The many controversies of Meta s AI glasses'
+        date: '2026-07-10'
+        entity: Meta
+        framing: controversy compilation
+        privacy_alarm_terms: 10
+        url: https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+      article_3:
+        title: 'Meta glasses in movie theaters? Some cinema owners ban them'
+        date: '2026-08-20'
+        entity: Meta (exclusive despite category-neutral source)
+        framing: institutional ban cascade
+        privacy_alarm_terms: 8
+        url: https://www.fastcompany.com/91593349/meta-glasses-in-movie-theaters-some-cinema-owners-ban-them
+    institutional_bans_listed:
+    - UKCA — UK cinemas (Aug 20)
+    - HMCTS — England and Wales courts (Aug 14)
+    - Soho House private members club
+    - Wetherspoon — 800+ pubs
+    - New York state courts (Jul)
+    - ICE / DHS — federal workplace (Aug 19)
+    headline_entity_selection:
+      source_statement: 'camera-enabled smart glasses'
+      headline_entity: Meta
+      entity_neutral_in_source: true
+      competitors_in_headline: 0
+      competitors_in_body: 0
+    snap_specs_launch_proximity:
+      article_date: '2026-08-20'
+      snap_specs_launch: '2026-09-16'
+      days_until_launch: 27
+      ban_applicability_question_asked: false
+    test_file: tests/test_fastco_uk_cinema_ban_institutional_entity_selection_meta_exclusive_snap_omission_aug22.py
+    test_count: 32
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Meta holds ~76% market share for smart glasses. "Meta glasses" is common
+        synecdoche for the category, similar to how "Googling" means web search.'
+    - strength: STRONG
+      factor: 'Meta has genuine, documented privacy incidents (LED bypasses, human review
+        of intimate footage, NameTag dormant code). Snap Specs have not yet shipped to
+        consumers and have no comparable incident history.'
+    - strength: MODERATE
+      factor: 'The HMCTS quote specifically names "Meta glasses," giving publications a
+        named-entity peg even though the UKCA statement itself is entity-neutral.'
+    - strength: MODERATE
+      factor: 'Different article genres: institutional ban news (short, event-driven) vs
+        CEO profile feature (long, access-driven). Genre conventions shape entity emphasis.'
+    - strength: WEAK
+      factor: 'Snap Specs at $2,195 are developer-priced, not yet mass consumer. However,
+        Sep 16 consumer launch was 27 days away, and the UKCA ban covers the technology
+        category, not the price point.'
+    cross_references:
+    - mechanism_id: 121
+      relationship: extends
+      description: 'Fast Company Snap/Meta privacy vocabulary asymmetry (Jun-Jul 2026) —
+        this adds a third article to the longitudinal pattern'
+    - mechanism_id: 236
+      relationship: parallel
+      description: 'ICE/DHS institutional ban paradox — Meta-exclusive stigma cascade
+        across publications for category-neutral bans'
+    - mechanism_id: 8
+      relationship: context
+      description: 'Safe target coefficient — Meta as structurally safe target for
+        adversarial privacy coverage'
+    - mechanism_id: 239
+      relationship: context
+      description: 'Conde Nast Snap Discover quintuple financial alignment — financial
+        relationships predict coverage framing'
+    source_urls:
+    - https://www.fastcompany.com/91593349/meta-glasses-in-movie-theaters-some-cinema-owners-ban-them
+    - https://www.fastcompany.com/91559773/snap-specs-2026-ar-glasses-evan-spiegel
+    - https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+    - https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
