@@ -1,6 +1,44 @@
 ---
 ---
 
+## Iteration #255 — Sun 2026-08-23 06:00 PT (Type C: Financial Incentive Mapping)
+
+**Finding — Mechanism #249: AI Citation Amplification Bias — Licensing Deals Predict AI Search Visibility**
+
+Press Ranger / OtterlyAI study (published Aug 20, 2026) examined 129.3 million citations across 7 AI search platforms in June 2026, matched against 91 confirmed licensing agreements covering 314 publisher domains. First quantitative study proving financial relationships predict AI search visibility.
+
+**Key Data Points:**
+- OpenAI-licensed publishers: **+48% citations per page on ChatGPT** (10.2 vs 6.9)
+- All 7 platforms combined: **+46%** (10.7 vs 7.3)
+- OpenAI-only publishers (no other deals): **+112% on ChatGPT**
+- OpenAI-licensed publishers get **57.9%** of AI citation volume from ChatGPT alone
+- OpenAI is the **ONLY** licensor with a home-platform citation advantage
+- Google-licensed publishers: **slightly LOWER** on Google AI Overviews
+- Perplexity-licensed publishers: **PARITY** on Perplexity
+
+**Top 5 Citation Beneficiaries (69% of all licensed citations):**
+1. Future plc, 2. Forbes, 3. People Inc., 4. **Condé Nast**, 5. Hearst
+
+**MediaScope Implications:**
+- **Financial incentive loop quantified:** Deal → +48% ChatGPT citations → more traffic → more revenue → softer coverage → deal renewed
+- **Meta zero-deal asymmetry:** Meta has zero publisher deals → zero citation premium → zero financial incentive for favorable coverage. Asymmetry is now QUANTIFIED at 48 percentage points.
+- **Condé Nast specific:** 4th largest citation beneficiary. OpenAI deal generates measurable citation premium for WIRED/Vogue/GQ/New Yorker — quantifiable financial disincentive against critical OpenAI coverage.
+- **Google paradox:** Google deals operate through coercive financial dependency (NDAs + no-sue + Showcase sunset), NOT citation amplification. Different mechanism, same outcome.
+- **Apple Siri AI variable-pay amplifier:** If Apple's algorithm favors deal-partner content, variable pay-per-use compounds citation premium.
+
+**Confounding factors documented:** Correlation ≠ causation (STRONG), publisher size bias (STRONG), commercial content bias (MODERATE), study sponsor incentive (MODERATE), single-month sample (WEAK).
+
+**Changes:**
+- New test: `test_ai_citation_amplification_licensing_deal_bias_aug23.py` (27 tests, 8 classes)
+- Updated `competitor-entities.yaml`: Added `citation_amplification_study` section under OpenAI with full study data, platform comparison, top beneficiaries, and MediaScope implications
+- Source: https://lifestyle.houstonnewstoday.com/story/833738/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt/
+- Dashboard: https://ai-search-news-licensing-deals-study.netlify.app/
+
+**Test count:** 559 files
+
+---
+---
+
 ## Iteration #254 — Sun 2026-08-23 05:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 **Journalist:** Arin Waichulis, 9to5Mac

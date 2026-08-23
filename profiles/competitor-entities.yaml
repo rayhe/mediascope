@@ -271,6 +271,91 @@ entities:
       - https://llmpulse.ai/blog/openai-publisher-deals/
       - https://everything-pr.com/ai-licensing-tracker
       - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    citation_amplification_study:
+      mechanism_id: 249
+      study_name: 'Press Ranger / OtterlyAI AI Citation Licensing Study'
+      study_date: 2026-08-20
+      dataset_citations_millions: 129.3
+      dataset_platforms: 7
+      platforms_list: ['ChatGPT', 'Google AI Overviews', 'Google AI Mode', 'Perplexity',
+        'Microsoft Copilot', 'Gemini', 'Claude']
+      dataset_period: 'June 2026'
+      deal_database_confirmed_agreements: 91
+      deal_database_publisher_domains: 314
+      deal_data_cutoff: '2026-07-28'
+      key_finding: 'Publishers with OpenAI licensing deals earn 48% more citations
+        per page on ChatGPT than publishers without deals. This is the FIRST quantitative
+        study proving financial relationships predict AI search visibility. It extends
+        MediaScope from coverage tone prediction to AI search amplification prediction.'
+      chatgpt_premium:
+        licensed_citations_per_page: 10.2
+        unlicensed_citations_per_page: 6.9
+        premium_pct: 48
+      all_platforms_premium:
+        licensed_citations_per_page: 10.7
+        unlicensed_citations_per_page: 7.3
+        premium_pct: 46
+      openai_only_publishers:
+        chatgpt_premium_pct: 112
+        note: 'Publishers with OpenAI-only deals (no other AI deals) earn 112% more
+          ChatGPT citations than unlicensed publishers. Strongest evidence of deal-driven
+          citation amplification.'
+      chatgpt_citation_concentration:
+        openai_licensed_chatgpt_share_pct: 57.9
+        note: 'OpenAI-licensed publishers get 57.9% of their AI citation volume from
+          ChatGPT alone. Unlicensed publishers have a more balanced mix across platforms.'
+      platform_comparison:
+        openai: 'ONLY licensor with clear home-platform citation advantage (+48% on ChatGPT)'
+        google: 'Google-licensed publishers cited at SLIGHTLY LOWER rate on Google AI Overviews
+          than unlicensed. Google deals operate through financial coercion (NDAs, no-sue,
+          Showcase sunset threat), not citation amplification.'
+        perplexity: 'Perplexity-licensed publishers at PARITY with unlicensed on Perplexity.
+          No home-platform advantage.'
+      top_5_citation_beneficiaries:
+        total_share_pct: 69
+        note: 'These 5 media groups capture 69% of all citations to licensed publishers.'
+        ranked_list:
+          1: 'Future plc'
+          2: 'Forbes'
+          3: 'People Inc.'
+          4: 'Condé Nast'
+          5: 'Hearst'
+      news_share_of_total_ai_citations_pct: 7.2
+      commercial_content_share_of_licensed_citations_pct: 46.9
+      commercial_content_types: ['best-of lists', 'buying guides', 'product reviews']
+      mediascope_implications:
+        meta_zero_deals: 'Meta has zero publisher deals → zero citation premium → zero
+          financial incentive for favorable coverage. The asymmetry is now QUANTIFIED:
+          publishers with OpenAI deals get +48% ChatGPT citations; publishers covering
+          Meta get +0%.'
+        conde_nast_incentive: 'Condé Nast is the 4th largest citation beneficiary among
+          licensed publishers. Their OpenAI deal (Aug 2024) generates measurably more
+          ChatGPT citations for WIRED, Vogue, GQ, The New Yorker, etc. Adversarial
+          OpenAI coverage could jeopardize the deal and its citation premium — a
+          quantifiable financial disincentive against critical OpenAI coverage.'
+        financial_incentive_loop: 'Deal → +48% ChatGPT citations → more traffic → more
+          ad/subscription revenue → incentive to maintain deal → softer coverage →
+          deal renewed. The study proves the first link: deals produce measurably more
+          AI visibility.'
+        apple_variable_pay_amplifier: 'Apple Siri AI variable pay-per-use deals (nine-figure
+          budget, Aug 2026) would compound this effect: more AI citations → more
+          per-use payments → stronger financial incentive → deeper editorial capture.'
+      confounding_factors:
+        strong:
+          - 'Correlation ≠ causation — deal publishers may independently produce
+            higher-quality content'
+          - 'Publisher size — top 5 beneficiaries are major conglomerates with large
+            content libraries'
+        moderate:
+          - 'Commercial content bias — 46.9% of citations go to buying guides/reviews,
+            inherently high-citation formats'
+          - 'Study sponsors (Press Ranger, OtterlyAI) sell AI search optimization,
+            commercial incentive to demonstrate correlation'
+        weak:
+          - 'Single month sample (June 2026) may not be representative'
+      source_urls:
+        - 'https://lifestyle.houstonnewstoday.com/story/833738/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt/'
+        - 'https://ai-search-news-licensing-deals-study.netlify.app/'
     apple_partnership_collapse:
       overview: 'OpenAI''s Apple partnership (Jun 2024) has collapsed into mutual
 
