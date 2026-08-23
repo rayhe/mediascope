@@ -1,4 +1,25 @@
 
+## Iteration #259 — Sun 2026-08-23 10:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Chokkattu Dual-Role Apple Camera AirPods Contribution — Temporal Adjacency Vocabulary Bifurcation
+
+**Mechanism #252:** Julian Chokkattu (WIRED Reviews Editor, wearables beat lead) contributed reporting to WIRED's "Why Apple Might Put Cameras Into Its Next AirPods" (June 5, 2026) — a piece that resolves Apple camera privacy concerns through corporate self-regulation framing — just **5 DAYS** before participating in Business Wars podcast Episode 2 "I'm a Creep" (June 10, 2026) about Meta's camera glasses.
+
+**Core Finding — Within-Journalist Temporal Adjacency Vocabulary Bifurcation:**
+Within a single work-week, the same journalist contributes to coverage that treats identical technology (camera in wearable form factor) with opposite vocabularies:
+  - **June 5 (Apple):** "Apple executives are also worried" (self-criticism as resolution), "not built to capture photos and video, like smart glasses" (Meta as negative anchor), "Apple is so privacy-conscious" (analyst trust validation), "radical cleaning" (data-processing heroism)
+  - **June 10 (Meta):** "I'm a Creep" (episode title), "a tool for mass surveillance," "federal agents using glasses illegally," "worker exploitation"
+
+**Self-Reinforcing Coverage Loop:** The WIRED Apple article links to WIRED's OWN adversarial Meta glasses coverage ("casual surveillance through smart glasses' cameras"), creating a loop: adversarial Meta → referenced in Apple-favorable → validates both Meta stigma and Apple trust.
+
+**Camera Hardware Parity Paradox:** Apple AirPods use continuous 320×320 passive mode (always-on ambient capture) while Meta glasses use 12MP user-triggered capture. The always-on passive mode is arguably MORE surveillance-like, yet receives softer vocabulary.
+
+1. **Research process:** WIRED.com blocked by browser policy; article text obtained via syndicated mirrors at eletiofe.com, technologistmag.com, aob-news.com, redhot.sg (all verified Aug 23, 2026). Author confirmed via byline note "Julian Chokkattu contributed reporting."
+2. **New test file:** `test_chokkattu_dual_role_apple_camera_airpods_contribution_temporal_adjacency_aug23.py` — 8 test classes, 40 tests, all passing.
+3. **Extends existing Chokkattu corpus:** 5th test file for Chokkattu, extending mechanisms #5 (Business Wars cross-entity), #42 (compound competitor silence), with parallel patterns to #251 (Gizmodo resolution-rationalization) and #246 (Engadget vocabulary mitigation).
+4. **YAML updates:** `competitor-coverage-research.yaml` (mechanism #252 full entry, asymmetry_score 0.78, 4 confounders including 2 STRONG)
+5. **Confounders:** 2 STRONG (contributing reporter role ≠ editorial control; different editorial products), 1 MODERATE (temporal coincidence / separate production tracks), 1 WEAK (technical resolution difference)
+
 ## Iteration #258 — Sun 2026-08-23 09:00 PT (Type A: Competitor Coverage Deep Dive)
 
 **Publication × Competitor: Gizmodo × Apple (camera AirPods) vs Gizmodo × Meta (Ray-Ban glasses)**

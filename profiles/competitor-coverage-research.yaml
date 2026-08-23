@@ -23803,3 +23803,42 @@ publications:
     test_file: tests/test_type_e_9pm_9to5mac_security_bite_celebrity_institutional_cascade_aug21.py
     type: E
     meta_coverage_tone: adversarial
+  chokkattu_dual_role_apple_camera_airpods_temporal_adjacency_mechanism_252:
+    asymmetry_score: 0.78
+    confounding_factors:
+    - '[STRONG] Contributing reporter vs primary author: Chokkattu''s "contributed reporting" role may mean limited editorial control over the Apple article''s framing. The primary author shaped the narrative
+      arc; Chokkattu may have provided only factual reporting or quotes.'
+    - '[STRONG] Different editorial products: long-form analysis article vs podcast series have different editorial standards. Podcast episodes conventionally use more dramatic language.'
+    - '[MODERATE] Temporal coincidence: the 5-day gap is notable but the Apple article and Business Wars podcast were likely separate editorial tracks with independent production timelines.'
+    - '[WEAK] Technical difference is real: Apple cameras ARE lower resolution and NOT designed for photo/video capture. However, the core privacy concern (continuous bystander capture without consent) is
+      resolution-independent.'
+    cross_references:
+    - description: Extends Chokkattu/Ashworth Business Wars podcast cross-entity analysis with Apple article contribution angle.
+      mechanism_id: 5
+      relationship: extends
+    - description: Extends compound competitor silence with active Apple coverage participation.
+      mechanism_id: 42
+      relationship: extends
+    - description: Parallels Gizmodo potato quality within-article resolution-rationalization.
+      mechanism_id: 251
+      relationship: parallels
+    - description: Parallels Billy Steele Engadget vocabulary mitigation pattern.
+      mechanism_id: 246
+      relationship: parallels
+    discovery_date: '2026-08-23'
+    finding_summary: 'Julian Chokkattu (WIRED Reviews Editor) contributed reporting to WIRED''s "Why Apple Might Put Cameras Into Its Next AirPods" (June 5, 2026) — an article resolving Apple camera privacy
+      concerns through corporate self-regulation framing ("Apple executives are also worried"), analyst trust validation ("Apple is so privacy-conscious"), and Meta-as-negative-anchor ("not built to capture
+      photos and video, like smart glasses"). Just 5 DAYS LATER (June 10), the same journalist participated in Business Wars podcast Episode 2 "I''m a Creep" labeling Meta camera glasses wearers. The article
+      links to WIRED''s own adversarial Meta coverage creating a self-reinforcing loop: adversarial Meta coverage referenced in Apple-favorable piece reinforces both Meta stigma and Apple trust. Camera hardware
+      parity: Apple AirPods use continuous 320x320 passive mode (always-on ambient capture) while Meta glasses use 12MP user-triggered capture — the always-on lower-res capture is arguably MORE surveillance-like
+      yet receives softer vocabulary.'
+    iteration: 259
+    mechanism_id: 252
+    name: Chokkattu Dual-Role Apple Camera AirPods Contribution — Within-Journalist Temporal Adjacency Vocabulary Bifurcation
+    source_urls:
+    - https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/
+    - https://eletiofe.com/why-apple-might-put-cameras-into-its-next-airpods/
+    - https://technologistmag.com/why-apple-might-put-cameras-into-its-next-airpods/
+    test_file: tests/test_chokkattu_dual_role_apple_camera_airpods_contribution_temporal_adjacency_aug23.py
+    type: B
+    meta_coverage_tone: adversarial
