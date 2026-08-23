@@ -1,4 +1,63 @@
 
+## Iteration #262 — Sun 2026-08-23 13:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: TWiT Tech News Weekly #451 — Cross-Network Framing Amplification
+
+Full transcript analysis of Tech News Weekly #451 (TWiT Network, Aug 20, 2026).
+Host Mikah Sargent and guest Abrar Al-Heeti (CNET) dedicate ~13 minutes to
+The Verge's Mia Sato "Meta glasses are a workplace menace" article. Key findings:
+
+**Three-Segment Vocabulary Gradient:** Within a single episode:
+- Segment 1 (Google Pixel 11): "fantastic," "really nice" → ENTHUSIASM
+- Segment 2 (Meta glasses): "menace," "struggles," "scary" → ALARM
+- Segment 3 (Amazon book scanning): "wild idea," "exciting," "mystery solved" → ADVENTURE
+
+Amazon's mass acquisition and physical destruction of rare books for AI training
+gets adventure vocabulary. Meta's glasses get alarm. Vocabulary tracks entity, not
+severity.
+
+**Phone-Camera Self-Correction Pattern (NEW):** Mikah Sargent explicitly raises
+the phone recording parallel ("phones and recording that way") and suggests phones
+should have "a blinking light" — inadvertently admitting Meta's LED indicator
+provides MORE transparency than phones. But the comparison does NOT soften the
+Meta framing; the host immediately retreats to Meta-specific alarm. Pattern:
+RAISE comparison → RECOGNIZE parity → RETREAT to entity-specific alarm.
+
+**Zero Competitor Mentions:** No Samsung Galaxy Glasses, Google Android XR, Apple
+camera AirPods (leaked 2 days prior), or Apple N50 in the Meta segment. Full
+category-to-brand substitution.
+
+**Cross-Network Cascade:** Verge (print) → TWiT (podcast, same day) → Vergecast
+(show notes, same day + next day). Three outlets, two networks, 48 hours. TWiT
+is editorially independent — framing adopted via cultural consensus, not editorial
+coordination.
+
+**TWiT Dual-Show Pattern:** AI Inside (Aug 19) + TNW #451 (Aug 20) both apply
+alarm vocabulary to Meta within one week. Two different shows on the same network
+independently reproduce asymmetric framing.
+
+### Deliverables
+1. **Test file:** `tests/test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py`
+   - 8 classes, 21 tests, all passing
+   - Classes: TestTNW451EpisodeStructure (4), TestPhoneCameraSelfCorrectionPattern (4),
+     TestAmazonContrastVocabulary (3), TestCrossNetworkAmplificationCascade (3),
+     TestTWiTNetworkDualShowPattern (1), TestMechanismRegistration (1),
+     TestConfounders (3), TestGizmodoPotatoQualityCorroboration (2)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Podcast sentiment update:** `podcast-sentiment.md` — Episode 23 entry
+   (TWiT Tech News Weekly #451), 113 lines added (3,439 → 3,552 lines)
+
+### Stats
+- **New test file:** 1 (21 tests, all passing)
+- **Mechanism ID:** #261
+- **Sentiment:** Meta -6 / Apple n/a / Amazon 0
+- **Asymmetry:** HIGH
+- **Cross-references:** 7 (#225, #244, #221, #148, #157, #158, #245)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 566 test files
+- **Pushed to GitHub:** ✓
+
 ## Iteration #261 — Sun 2026-08-23 12:00 PT (Type D: Test & Verify)
 
 ### Focus: Cross-validation — fix 11 test failures across aug23 test suite
