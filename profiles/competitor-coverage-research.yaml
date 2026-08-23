@@ -25331,7 +25331,7 @@ publications:
       have zero alarm/privacy words combined; four Meta camera wearable podcast titles average
       -6.5/10 sentiment.
     iteration: 247
-    mechanism_id: 236
+    mechanism_id: 240
     name: MacRumors Show Apple Camera AirPods Aspirational Framing — Cross-Medium Privacy
       Vocabulary Zero
     publication: MacRumors (Apple-ecosystem podcast)
@@ -25476,7 +25476,7 @@ publications:
       relationship: extends
       description: Apple camera LED double standard -- Apple remediation measures framed
         as proactive privacy, Meta identical measures framed as damage limitation
-    - mechanism_id: 236
+    - mechanism_id: 240
       relationship: extends
       description: MacRumors Show podcast aspirational framing -- Apple camera AirPods
         podcasts use zero alarm vocabulary, same pattern in print at Stuff
@@ -25484,3 +25484,74 @@ publications:
       relationship: parallel
       description: TechRepublic triple-entity camera vocabulary gradient -- another
         publication showing entity-assigned vocabulary for identical capabilities
+  mechanism_239:
+    mechanism_id: 239
+    name: Condé Nast Snapchat Discover Revenue Relationship Creates Quintuple Publisher
+      Financial Alignment for Snap Specs Coverage
+    type: C
+    publication: Condé Nast (cross-brand)
+    entity_targeted: Meta (indirect via Snap competitive alignment)
+    entities_compared:
+    - Snap
+    - Meta
+    discovery_date: '2026-08-22'
+    iteration: 250
+    asymmetry_score: 1.0
+    test_file: tests/test_conde_nast_snap_discover_quintuple_financial_alignment_specs_coverage_aug22.py
+    test_count: 39
+    finding_summary: 'Condé Nast has a DIRECT revenue relationship with Snap Inc. through
+      the Snapchat Discover platform. Multiple Condé Nast properties -- including WIRED
+      (1 series), GQ (4 series), Vanity Fair (4), Glamour (4), Teen Vogue, SELF, W (2),
+      Bon Appétit (2), and The New Yorker (1) -- have operated 28 Snapchat Discover shows
+      with revenue-sharing or licensing-fee arrangements. This establishes a FIFTH publisher
+      financial alignment axis for Snap Specs coverage, extending the quad-AI analysis
+      from Mechanism #231. Snap IPO paperwork disclosed $58M in revenue-sharing payments
+      to Discover publishers in 2016 alone. By 2017, individual publishers earned $2-4M/yr
+      from flat licensing fees. The same publication (WIRED) producing the most adversarial
+      Meta glasses coverage has a direct revenue relationship with Meta''s primary smart
+      glasses competitor.'
+    source_urls:
+    - https://digiday.com/media/snapchat-discover-publisher-ads/
+    - https://digiday.com/media/it-hasnt-killed-us-snapchat-discover-publishers-face-tough-challenge-as-platform-chases-tv/
+    - https://digiday.com/media/snap-discover-publishers-money-2017/
+    - https://digiday.com/media/inside-snapchat-discover-publishers-getting-paid/
+    - https://www.subscriptioninsider.com/type-of-subscription-business/magazines/conde-nasts-gq-wired-and-self-to-launch-snapchat-discover-channels
+    - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
+    confounding_factors:
+    - strength: STRONG
+      factor: 'Discover revenue may have declined or ended by 2026 -- Snap restructured
+        Discover multiple times (2018-2023). Current revenue flow from Snap to Condé
+        Nast may be minimal or zero.'
+    - strength: STRONG
+      factor: 'Discover relationships were industry-standard for major publishers --
+        NYT, WaPo, CNN, and others also participated. This is not unique to Condé Nast.'
+    - strength: MODERATE
+      factor: 'Revenue-share payments to publishers were modest ($2-4M/yr per publisher)
+        relative to Condé Nast total revenue (~$2B). Unlikely to drive editorial decisions
+        alone.'
+    - strength: MODERATE
+      factor: 'Snap Specs are a genuinely different product with different privacy tradeoffs
+        than Meta glasses -- different camera specs, limited distribution, developer-first
+        focus.'
+    - strength: WEAK
+      factor: 'Publisher editorial teams are typically firewalled from business development
+        teams making platform deals.'
+    - strength: WEAK
+      factor: 'The Discover relationship predates the current smart glasses competition
+        by several years.'
+    cross_references:
+    - mechanism_id: 231
+      relationship: extends
+      description: CLAD quad-AI developer ecosystem -- this adds a 5th axis (direct
+        Snap revenue) to the 4 AI-company publisher alignment axes
+    - mechanism_id: 224
+      relationship: extends
+      description: Snap dual-AI partner triple publisher financial convergence --
+        Discover adds a revenue layer beyond the AI-company axes
+    - mechanism_id: 235
+      relationship: parallel
+      description: Specs Inc/Irenic activist pre-launch coverage incentive architecture
+    - mechanism_id: 176
+      relationship: extends
+      description: Condé Nast deal inventory -- Discover revenue adds to the total
+        deal count and financial exposure

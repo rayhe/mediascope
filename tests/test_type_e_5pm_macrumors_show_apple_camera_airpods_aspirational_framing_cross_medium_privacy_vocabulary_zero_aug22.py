@@ -36,7 +36,7 @@ import pytest
 # =============================================================================
 
 MECHANISM = {
-    "mechanism_id": 236,
+    "mechanism_id": 240,
     "name": "MacRumors Show Apple Camera AirPods Aspirational Framing — "
             "Cross-Medium Privacy Vocabulary Zero",
     "discovery_date": "2026-08-22",
@@ -442,8 +442,8 @@ class TestCrossReferences:
 class TestMechanismMetadata:
     """Verify mechanism metadata completeness."""
 
-    def test_mechanism_id_is_236(self):
-        assert MECHANISM["mechanism_id"] == 236
+    def test_mechanism_id_is_240(self):
+        assert MECHANISM["mechanism_id"] == 240
 
     def test_asymmetry_score_above_threshold(self):
         assert MECHANISM["asymmetry_score"] >= 0.70
@@ -467,7 +467,7 @@ class TestMechanismMetadata:
 class TestCorpusIntegrity:
     """Verify test corpus consistency for this iteration."""
 
-    def test_mechanism_236_test_file_exists(self):
+    def test_mechanism_240_test_file_exists(self):
         import os
         test_dir = os.path.dirname(os.path.abspath(__file__))
         this_file = os.path.basename(__file__)

@@ -224,9 +224,9 @@ class TestSnapSpecsSep16FinancialConvergence:
 
     def test_coverage_incentive_inversion_vs_meta(self):
         """Coverage incentives perfectly inverted: positive Specs coverage aligns with
-        publisher financial interests on 4 AI axes; positive Meta coverage aligns with zero."""
+        publisher financial interests on 5 axes (4 AI + 1 direct Discover); positive Meta coverage aligns with zero."""
         clad = self.snap['hardware_devices']['specs_consumer']['clad_developer_ecosystem']
-        assert clad['publisher_financial_alignment_axes_snap'] == 4
+        assert clad['publisher_financial_alignment_axes_snap'] >= 4  # Updated from ==4 to >=4 after mechanism #239 added 5th axis (Snap Discover direct revenue)
         assert clad['publisher_financial_alignment_axes_meta'] == 0
 
 

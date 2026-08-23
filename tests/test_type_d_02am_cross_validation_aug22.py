@@ -16,7 +16,7 @@ Fixes applied this iteration:
 7. test_type_d_10am_cross_validation_aug21.py: REQUIRED_FIELDS updated to accept
    either overview or finding_summary (both are valid summary field names)
 
-Test count: 531 (this file is #531)
+Test count: 550 (updated from 531)
 """
 
 import os
@@ -187,9 +187,9 @@ class TestFindAllMechanismsBugFix:
 class TestDocCountSync:
     """Doc counts should match actual test file count."""
 
-    def test_actual_test_file_count_is_531(self):
+    def test_actual_test_file_count_is_550(self):
         actual = len(glob.glob(os.path.join(TESTS_DIR, 'test_*.py')))
-        assert actual == 531, f"Expected 531 test files, got {actual}"
+        assert actual == 550, f"Expected 550 test files, got {actual}"
 
 
 class TestMechanismIdContiguity:
