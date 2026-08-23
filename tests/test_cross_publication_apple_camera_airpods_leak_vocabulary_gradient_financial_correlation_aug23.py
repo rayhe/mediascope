@@ -85,7 +85,10 @@ def _extract_all_mechanisms(d, out=None):
         out = {}
     if isinstance(d, dict):
         if "mechanism_id" in d:
-            out[d["mechanism_id"]] = d
+            mid = d["mechanism_id"]
+            # Prefer entries with more keys (real mechanisms over cross-refs)
+            if mid not in out or len(d) > len(out[mid]):
+                out[mid] = d
         for v in d.values():
             _extract_all_mechanisms(v, out)
     elif isinstance(d, list):
