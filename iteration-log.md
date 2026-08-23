@@ -1,6 +1,32 @@
 ---
 ---
 
+## Iteration #252 — Sun 2026-08-23 01:00 PT (Type E: Podcast Sentiment Tracking)
+
+**New Episode:** #64 — AI Inside "OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026)
+
+**Key Finding — Mechanism #244: Cross-Episode Temporal Adjacency Privacy Vocabulary Bifurcation**
+
+Same hosts (Jason Howell, Jeff Jarvis), same show, one week apart:
+- **Aug 13:** Meta glasses — "UK Venues Ban Meta Smart Glasses En Masse" / "'pervert glasses' content" (ALARM vocabulary, 4+ alarm words)
+- **Aug 19:** Apple camera AirPods — "Apple's Camera-Equipped AirPods Confirmed" (NEUTRAL vocabulary, 0 alarm words)
+
+9-point sentiment delta (-7 Meta, +2 Apple) across functionally equivalent camera wearable coverage. Tightest controlled comparison in the corpus — identical hosts, production pipeline, audience, and weekly cadence. Only variable: company of origin.
+
+**Jarvis "Words Matter" Irony:** At 0:31:31, Jarvis reflects on language choices in a segment literally titled "Words Matter. Damnit." — immediately after demonstrating the vocabulary bifurcation. Self-awareness about framing coexists with asymmetric application. This is the signature of emergent cultural consensus: the bifurcation reproduces even when hosts are actively thinking about word choice.
+
+**Cross-Medium Corroboration:** Inc.com (Kit Eaton, Aug 21) independently produces the same 5-step resolution-rationalization structure for Apple camera AirPods: hypothetical headline → immediate rationalization → 1MP technical excuse → explicit Meta contrast → learning narrative.
+
+**1MP Resolution Rationalization:** The "potato quality" dismissal frames 1MP as surveillance-incapable. Original iPhone (2007) shipped 2MP; first Ring Doorbell (2013) used 0.9MP (720p). Both surveillance-capable. No outlet has suggested Meta glasses would become acceptable at 1MP.
+
+### Stats
+- **New test file:** 1 (5 classes, 23 tests, all passing)
+- **New mechanism:** #244
+- **Test files:** 556 total
+- **Podcast episodes tracked:** 64
+
+---
+
 ## Iteration #251 — Sat 2026-08-22 21:00 PT (Type D: Test & Verify)
 
 **Fixes Applied:**

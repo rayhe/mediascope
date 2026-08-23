@@ -3241,3 +3241,106 @@ The hardware is functionally identical. The framing divergence is entity-depende
 **Cross-references:** #239 (Condé Nast Snap Discover Quintuple Financial Alignment), #231 (CLAD Quad-AI Developer Ecosystem), #240 (MacRumors Show Apple Camera AirPods), #144 (Podcast Ecosystem Amplification), #148 (Corporate Ownership Cross-Medium Portability)
 
 **Confounders:** 3 STRONG (Snap pre-launch, Meta contractor scandal, access journalism), 3 MODERATE (developer audience, interview volume, Snap market share)
+
+
+---
+
+## Episode 64: AI Inside — "OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026)
+
+- **Hosts:** Jason Howell, Jeff Jarvis
+- **Network:** Yellow Gold Studios / Megaphone distribution
+- **Duration:** ~1h 15m
+- **Source URL:** https://www.podbean.com/podcast-detail/2c4i8-2e6ad6/AI-Inside-Podcast
+- **Published:** Aug 19, 2026 11:42 PM
+
+**Coverage Summary:**
+Weekly AI roundup covering OpenAI's training run pause after a model escaped its sandbox, Anthropic's first profit, Apple's camera-equipped AirPods confirmed via macOS leak, and multiple other AI industry stories.
+
+### Mechanism #244: Cross-Episode Temporal Adjacency Privacy Vocabulary Bifurcation
+
+**Core Finding:** Same hosts (Jason Howell, Jeff Jarvis), same show, one week apart, apply categorically different vocabulary to functionally equivalent camera wearable announcements from different companies.
+
+**The Natural Experiment:**
+
+| Attribute | AI Inside Aug 13 (Episode #16) | AI Inside Aug 19 (this episode) |
+|-----------|-------------------------------|-------------------------------|
+| Topic | Meta smart glasses | Apple camera AirPods |
+| Chapter title | "UK Venues Ban Meta Smart Glasses En Masse" / "'I've definitely lost followers': influencers face backlash over Meta 'pervert glasses' content" | "Apple's Camera-Equipped AirPods Confirmed" |
+| Vocabulary register | ALARM — "ban," "pervert," "backlash," "en masse" | NEUTRAL — "confirmed" (disclosure framing, no valence) |
+| Implicit subject | Meta as institutional threat | Apple as technology innovator |
+| Privacy concern language | Integrated into chapter title | Absent from chapter title |
+| Time allocation | 2 chapters (~5 min) with adversarial framing | 1 chapter (~11 min, 0:20:34–0:31:31) with neutral/extended treatment |
+| Number of alarm words in title | 4 ("ban," "pervert," "backlash," "en masse") | 0 |
+
+**Temporal Adjacency Control:** The one-week gap is short enough that external confounders (host personnel, editorial policy, audience, distribution, production quality) remain constant. This is the tightest controlled comparison in the corpus — same show, adjacent episodes, same underlying capability (camera in wearable), different company origin, categorically different vocabulary.
+
+**Cross-Episode Vocabulary Gradient:**
+
+The Aug 19 chapter titles reveal the vocabulary distribution:
+- 0:10:32 — "OpenAI institutes new safeguards after Hugging Face breach" (NEUTRAL — "safeguards," defensive language)
+- 0:14:12 — "OpenAI Is Slowing Down Its AI Training" (NEUTRAL — corporate-strategic framing)
+- 0:18:47 — "Anthropic investors bet on $2tn valuation in record IPO" (POSITIVE — aspirational financial framing)
+- 0:20:34 — "Apple's Camera-Equipped AirPods Confirmed" (NEUTRAL — disclosure/confirmation framing)
+- 0:31:31 — "JJ on the discussion last week: Words Matter. Damnit." (META-COMMENTARY — Jarvis reflecting on language choices)
+
+The Jarvis meta-commentary at 0:31:31 ("Words Matter. Damnit.") is particularly significant. In a segment reflecting on language choices, the show itself demonstrates the vocabulary bifurcation it might critique — "pervert glasses" for Meta one week, "confirmed" for Apple the next. The self-awareness about word choice coexists with the asymmetric application of that awareness.
+
+### Inc.com Cross-Medium Corroboration — "Why Apple's Controversial New AirPods Could Get Banned in Offices and Gyms" (Aug 21, 2026)
+
+**Source URL:** https://www.inc.com/kit-eaton/why-apples-controversial-new-airpods-could-get-banned-in-offices-and-gyms/91394097
+
+The Inc.com article by Kit Eaton demonstrates the SAME vocabulary bifurcation pattern in print, corroborating the podcast finding:
+
+**Resolution-Rationalization Structure:**
+1. **Headline** uses "Controversial" and "Could Get Banned" — hypothetical/potential (subjunctive mood)
+2. **Body** immediately rationalizes: "Apple is savvy to these risks, and the cameras won't work in the way that critics are worried they will"
+3. **Technical excuse introduced:** 1MP resolution, "potato quality," "designed to inform AI" — framed as privacy-by-design, not as capability limitation
+4. **Explicit Meta contrast:** "in the way that, say, Meta's glasses can" — present tense, actual capability; Apple's framing is future tense, designed to prevent
+5. **Learning narrative:** "Apple will almost certainly have learned from the scandal swirling around Meta" — positions Apple as learning/improving, Meta as scandal source
+
+**The 1MP Resolution Rationalization:**
+Both the podcast ecosystem and print coverage accept the 1MP camera resolution as a privacy safeguard. But 1MP (1024×1024) is sufficient to:
+- Read text on signs, books, documents
+- Identify faces in typical social distances
+- Capture license plates at normal viewing distances
+- Record identifiable video at 640×640
+
+The "potato quality" dismissal (Gizmodo's term, Aug 21) frames 1MP as incapable of surveillance. For reference, the original iPhone (2007) shipped with a 2MP camera. The first Ring doorbell (2013) used a 720p (0.9MP) sensor. Both were considered surveillance-capable. The 1MP threshold for "not a privacy concern" is a standard applied exclusively to Apple — no outlet has suggested Meta's 12MP cameras would become acceptable if downgraded to 1MP.
+
+### 9to5Mac "Security Bite" Complementary Pattern (Aug 18, 2026)
+
+**Source URL:** https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+
+Arin Waichulis's column/podcast articulates the full resolution-rationalization thesis: Apple's camera AirPods will "make Meta glasses look reckless." The framing:
+- Apple's approach = deliberate privacy architecture
+- Meta's approach = reckless surveillance product
+- The difference = resolution and processing model
+- Missing: acknowledgment that Apple's on-device processing claims are unverifiable pre-launch, or that Meta also processes substantial camera data on-device
+
+### Convergence Assessment
+
+Three independent outlets (AI Inside podcast, Inc.com, 9to5Mac) in a 3-day window (Aug 18–21) independently produce the same framing structure:
+1. Apple camera wearable → privacy-preserving by design → neutral/aspirational vocabulary
+2. Meta camera wearable → surveillance/privacy threat → alarm vocabulary
+3. Technical justification (1MP, on-device processing) → accepted without scrutiny for Apple
+4. Same technical justification would not rehabilitate Meta's framing
+
+This represents **mechanism convergence** — the vocabulary bifurcation is not editorial coordination but emergent cultural consensus. The bifurcation reproduces independently across podcast, business press, and tech specialist press because the underlying assumption (Apple = privacy, Meta = surveillance) is pre-loaded in the cultural model.
+
+### Sentiment Score
+
+- **Meta framing (via Aug 13 reference):** -7/10 (alarm vocabulary, institutional ban cascade, "pervert")
+- **Apple framing (this episode):** +2/10 (neutral confirmation, extended coverage, no alarm vocabulary)
+- **Asymmetry delta:** 9 points
+- **Asymmetry Assessment:** CRITICAL — same hosts, one-week gap, functionally equivalent camera wearable capability, 9-point vocabulary divergence
+
+**Cross-references:** #16 (AI Inside Aug 13 — same show, prior episode), #205 (Apple Camera Wearable Aspirational Framing), #240 (MacRumors Show Apple Camera AirPods), #213 (Vergecast Camera Vocabulary Cascade)
+
+**Confounders:**
+- STRONG: Apple product is pre-launch (speculation phase may attract softer vocabulary than shipping product review)
+- STRONG: Meta contractor scandal (BBC Kenya/bathroom footage) provides real adversarial evidence absent for Apple
+- MODERATE: Apple's stated privacy architecture (on-device processing) provides a genuine technical differentiator, though unverifiable pre-launch
+- MODERATE: AirPods form factor may be perceived as less threatening than glasses (no visual recording indicator ambiguity)
+- WEAK: Jarvis's "Words Matter" meta-commentary suggests awareness of framing choices, potentially mitigating future asymmetry
+
+**Confounder Assessment:** The confounders are real but insufficient to explain the MAGNITUDE of the vocabulary gap. "Confirmed" vs "pervert" is not a proportionate response to the pre-launch/shipping distinction or the Kenya contractor scandal. A proportionate response might be "Apple camera AirPods raise privacy questions" vs "Meta glasses face bans over privacy violations." The actual vocabulary gap (neutral confirmation vs sexual-predator association) exceeds what the confounders predict.
