@@ -1,4 +1,43 @@
 
+## Iteration #261 — Sun 2026-08-23 12:00 PT (Type D: Test & Verify)
+
+### Focus: Cross-validation — fix 11 test failures across aug23 test suite
+
+**Failures diagnosed and fixed:**
+
+1. **Billy Steele mechanism extractor overwrite bug (6 failures):** `test_billy_steele_engadget_apple_airpods_vocabulary_mitigation_beat_routing_aug23.py` — recursive `_extract_mechanisms` unconditionally overwrites mechanism entries. Full mechanism #246 entry (15+ keys with journalist, publication, asymmetry_score, confounders) was found first, then a 3-key cross-reference stub (`{mechanism_id: 246, relationship: parallels, description: ...}`) in Chokkattu's cross_references section overwrote it. **Fix:** prefer entries with more keys: `if mid not in self.mechanisms or len(d) > len(self.mechanisms[mid])`.
+
+2. **File count drift (1 failure):** `test_type_d_07am_cross_validation_aug23.py` expected 560 files but iterations #258-260 added 4 new test files → 564, plus this iteration's validator → 565. Updated to 565.
+
+3. **Mechanism ID gaps 249, 250 (1 failure):** Mechanisms #249 and #250 are non-sequential creation artifacts (likely from out-of-order iteration commits). Added to `known_gaps` set alongside existing {241, 242, 244}.
+
+4. **Missing meta_coverage_tone (1 failure):** `google_preferred_sources_embed_sixth_dependency_layer` publication entry (created iteration #260) lacked `meta_coverage_tone`. Added `adversarial` — Google's 6-layer publisher captivity architecture creates structural incentive for softer Meta coverage from captive publishers.
+
+5. **Doc sync — 4 missing aug23 files (2 failures):** README.md and docs/ARCHITECTURE.md missing entries for:
+   - `test_chokkattu_dual_role_apple_camera_airpods_contribution_temporal_adjacency_aug23.py` (mechanism #252, 40 tests)
+   - `test_gizmodo_airpods_camera_potato_quality_resolution_rationalization_within_article_reputation_trust_aug23.py` (mechanism #251, 39 tests)
+   - `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` (mechanism #253, 55 tests)
+   - `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` (28 tests)
+
+**Also discovered:** `textblob` and `vaderSentiment` pip packages missing from environment, causing 39 collection errors across legacy sentiment analysis tests. Installed both. These are dependencies of `mediascope.analyze.sentiment` used by 39 test files.
+
+### New test file
+`test_type_d_12pm_cross_validation_aug23.py` — 6 classes, 16 tests:
+- `TestFileCount`: file count = 565
+- `TestBillySteeleExtractorFix`: mechanism #246 resolves to full entry (4 assertions)
+- `TestMechanismIdGaps`: known gaps {241, 242, 244, 249, 250}
+- `TestMetaCoverageToneCompleteness`: all publications have meta_coverage_tone
+- `TestDocSync`: all aug23 files in README and ARCHITECTURE (4 assertions)
+- `TestPriorFixRegression`: mechanisms 248, 252, 253 exist; highest ID >= 253
+
+### Stats
+- **Failures fixed:** 11 (6 extractor, 1 file count, 1 gaps, 1 meta_coverage_tone, 2 doc sync)
+- **New test file:** 1 (16 tests, all passing)
+- **Aug23 test suite:** 430 tests, 0 failures
+- **Test corpus:** 565 files
+- **Pushed to GitHub:** ✓
+
+---
 ## Iteration #260 — Sun 2026-08-23 11:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Google "Preferred Sources" Publisher Embed Button — Sixth Dependency Layer + Reddit Q2 2026 Financial Update
