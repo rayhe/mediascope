@@ -1,3 +1,67 @@
+
+## Iteration #257 — Sun 2026-08-23 08:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Finding — Mechanism #250: 9to5Mac Three-Channel Podcast Pipeline — Print-to-Podcast "Pervertpods" Cross-Medium Resolution-Rationalization**
+
+The Apple camera AirPods leak (Aug 18) created a natural experiment for cross-medium stigma label propagation. The 9to5Mac network covered the story across THREE channels within 72 hours:
+
+1. **Print anchor (Aug 18):** Security Bite (Arin Waichulis) — "Apple's camera AirPods are going to make Meta glasses look reckless." Deflects stigma onto Meta.
+2. **Weekly podcast (Aug 20):** Happy Hour #604 (Benjamin Mayo + Chance Miller) — "the crazy leak by Apple." Excitement vocabulary, zero alarm words.
+3. **Daily podcast (Aug 21):** 9to5Mac Daily (Chance Miller) — "Camera-equipped AirPods reportedly won't launch in 2026." Release-timeline framing, not privacy framing.
+
+**Structural finding:** Waichulis (Security Bite author) is Director of Social Media for ALL SIX 9to5 properties (9to5Mac, 9to5Google, Electrek, DroneDJ, Space Explored, 9to5Toys). One person anchors the print framing AND controls social distribution for podcast content.
+
+**Cross-medium stigma label propagation asymmetry:**
+- "Pervert glasses" (Meta) → adopted in 3+ podcast episode titles/chapters (AmberMac, AI Inside, Smashing Security)
+- "Pervertpods" (Apple) → adopted in 0 podcast episode titles/chapters
+- The podcast layer functions as a reputation firewall: Meta stigma labels propagate print→podcast; Apple stigma labels are contained in print where they can be rationalized
+
+**Vocabulary gradient by Apple financial dependency:**
+| Dependency | Publication | Resolution Strength |
+|-----------|------------|-------------------|
+| HIGH | AppleInsider, Cult of Mac, 9to5Mac | MAXIMUM (zero-distance dismiss, headline dismiss, deflect to Meta) |
+| MODERATE | TechCrunch (Yahoo/Apollo) | MODERATE (headline resolution-rationalization) |
+| LOW | Inc, Entrepreneur | LOW-MODERATE (speculative trust, factual distance) |
+| ZERO | OSnews | ZERO (uses "PervertPods" IN HEADLINE, symmetric alarm) |
+
+OSnews (zero Apple dependency) is the control case proving the vocabulary bifurcation is financial, not product-inherent.
+
+**Fortune AI Weekly expansion:** Same-episode compound adversarial framing — Meta gets "Under Fire" + "Sparks Privacy Backlash" while OpenAI gets "Rollout" + "Released to Everyone" + "New Voice Assistant" and Anthropic gets "Explained." GPT-5.6 jailbreaks get "Raise Security Concerns" (technical) while Meta glasses get "Under Fire" (combative).
+
+**Changes:**
+- New test: `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` (8 classes, 28 tests, all passing)
+- Updated `podcast-sentiment.md`: Added entries #20 (Happy Hour #604), #21 (Daily Aug 21), Cross-Medium Resolution Summary
+- New mechanism: #250
+
+**Sources:** 7 (9to5Mac×3, TechCrunch, Inc, Fortune AI Weekly YouTube, Entrepreneur)
+**Test count:** 561 files
+
+---
+---
+
+## Iteration #256 — Sun 2026-08-23 07:00 PT (Type D: Test & Verify)
+
+**Critical Fix: Cross-Reference Extraction Collision**
+
+The recursive `_extract_all_mechanisms()` function used by test files to find mechanisms in `competitor-coverage-research.yaml` had a collision bug: cross-reference dicts (with `mechanism_id` + 2 other keys) were overwriting real mechanism entries (with `mechanism_id` + 10+ other keys) because the function used `out[mechanism_id] = d` without checking if a more complete entry already existed. This affected 25 mechanism IDs where both a top-level entry and a nested cross-reference shared the same ID.
+
+**Fix:** Modified extraction to prefer entries with more keys: `if mid not in out or len(d) > len(out[mid]): out[mid] = d`. Applied to `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` and the new Type D validator.
+
+**Other Fixes:**
+1. Added `meta_coverage_tone` to 45 publication entries missing it (all newer mechanism findings). Fixed `test_financial_relationships::test_publications_have_meta_coverage`.
+2. Added full mechanism #247 data structure: 5-tier vocabulary gradient, publication evidence for Gizmodo/Digital Trends/OSnews, passive mode comparison, financial architecture documentation, 5 confounders, 4 cross-references.
+3. Updated README.md and docs/ARCHITECTURE.md with 9 files (2 missing aug22 + 7 aug23 files).
+4. Installed missing pip dependencies (textblob, vaderSentiment) — 39 collection errors resolved.
+
+**New test:** `test_type_d_07am_cross_validation_aug23.py` (8 tests: file count 560, meta_coverage_tone completeness, extraction collision fix, mechanism contiguity, aug23 doc coverage)
+
+**Results:**
+- Test files: 559 → 560
+- Collection errors: 39 → 0
+- Core test failures: 1 → 0 (test_financial_relationships)
+- Mechanism #247 tests: 49 fail → 0 fail (extraction fix + data population)
+
+**Test count:** 560 files
 ---
 ---
 

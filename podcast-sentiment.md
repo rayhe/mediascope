@@ -3344,3 +3344,96 @@ This represents **mechanism convergence** — the vocabulary bifurcation is not 
 - WEAK: Jarvis's "Words Matter" meta-commentary suggests awareness of framing choices, potentially mitigating future asymmetry
 
 **Confounder Assessment:** The confounders are real but insufficient to explain the MAGNITUDE of the vocabulary gap. "Confirmed" vs "pervert" is not a proportionate response to the pre-launch/shipping distinction or the Kenya contractor scandal. A proportionate response might be "Apple camera AirPods raise privacy questions" vs "Meta glasses face bans over privacy violations." The actual vocabulary gap (neutral confirmation vs sexual-predator association) exceeds what the confounders predict.
+
+
+---
+
+### 20. 9to5Mac Happy Hour #604 — "AirPods with camera leak, iOS 27 beta 6, iPhone 18 Pro cases" (Aug 20, 2026)
+
+- **Hosts:** Benjamin Mayo, Chance Miller
+- **Network:** 9to5Mac Podcast Network
+- **Duration:** ~60+ min (estimated)
+- **Source URL:** https://9to5mac.com/2026/08/20/happy-hour-604/
+- **Audio:** https://dts.podtrac.com/redirect.mp3/pfx.vpixl.com/sla7w/pscrb.fm/rss/p/9to5mac.com/wp-content/uploads/sites/6/2026/08/HH-604.mp3
+- **Sponsors:** Bitwarden, Keeper, Copilot Money, Framer (all Apple-ecosystem-adjacent)
+
+**Coverage Summary:**
+Weekly flagship podcast discusses "the crazy leak by Apple depicting the new AirPods with cameras in a video demo." Also covers iOS 27 beta 6, Siri AI experiences, iPhone 18 Pro case compatibility, Apple vs EU App Store.
+
+**Framing Analysis:**
+- "Crazy leak" — excitement vocabulary, not alarm vocabulary
+- Camera AirPods framed as a PRODUCT story, not a PRIVACY story
+- The word "privacy" does not appear in the episode description
+- The word "surveillance" does not appear in the episode description
+- The word "pervertpods" does not appear in the episode description
+
+**Three-Channel Pipeline Context (Mechanism #250):**
+This episode is one of THREE 9to5Mac channels that covered the AirPods camera leak within 72 hours:
+1. **Print anchor (Aug 18):** Security Bite — "Apple's camera AirPods are going to make Meta glasses look reckless" (Arin Waichulis)
+2. **Weekly podcast (Aug 20):** Happy Hour #604 — "the crazy leak" (Benjamin Mayo + Chance Miller)
+3. **Daily podcast (Aug 21):** 9to5Mac Daily — "Camera-equipped AirPods reportedly won't launch in 2026" (Chance Miller)
+
+The print anchor (Security Bite) performs the adversarial deflection onto Meta. The podcast channels maintain clean aspirational/product framing without contamination from the "pervertpods" label. The division of labor: print handles stigma resolution, podcast preserves brand-friendly framing.
+
+**Critical Structural Element:**
+Arin Waichulis (Security Bite author) is Director of Social Media for ALL SIX 9to5 network properties (9to5Mac, 9to5Google, Electrek, DroneDJ, Space Explored, 9to5Toys). One person who produces the print anchor framing also controls social media amplification for the podcast content.
+
+**Entity Coverage Asymmetry:**
+- **Apple:** "crazy leak" → excitement. Camera AirPods = product category.
+- **Meta:** Referenced in Security Bite as "reckless," "camera-first product." Same network, same week, different vocabulary register.
+- No Samsung, Google, or Snap smart glasses mentioned in any of the three channels.
+
+**Sentiment Score:** +3/10 (mildly positive, product-excitement framing)
+**Asymmetry Assessment:** HIGH — Same network applies excitement vocabulary to Apple camera wearable and alarm vocabulary to Meta camera wearable within the same week. Podcast layer stays clean while print layer handles the adversarial framing.
+
+---
+
+### 21. 9to5Mac Daily — "August 21, 2026: AirPods with cameras, more" (Aug 21, 2026)
+
+- **Host:** Chance Miller
+- **Network:** 9to5Mac Podcast Network
+- **Source URL:** https://9to5mac.com/2026/08/21/daily-august-21-2026/
+- **Audio:** https://9to5mac.com/wp-content/uploads/sites/6/2026/08/MacDaily_8-21-26.mp3
+- **Sponsor:** Backblaze
+
+**Coverage Summary:**
+Daily podcast recap covering: HomePad code, Apple Watch Series 12 design leak, camera-equipped AirPods delayed to 2027.
+
+**Framing Analysis:**
+The AirPods camera story is framed as "Camera-equipped AirPods reportedly won't launch in 2026, despite demo video leak" — a RELEASE TIMELINE story, not a privacy story. The word "privacy" is absent. The word "camera" appears as a product feature descriptor, not a surveillance descriptor.
+
+**Contrast with Meta glasses podcast coverage:**
+When Kill Switch (Sep 17, 2025) covered Meta glasses, the episode title was "The Glassholes Are Back." When AmberMac covered Meta glasses (Mar 9, 2026), the episode title was "Meta's 'Pervert' Smart Glasses." When 9to5Mac Daily covers Apple camera wearables, the episode title is "AirPods with cameras, more."
+
+**Sentiment Score:** +1/10 (neutral-positive, informational)
+**Asymmetry Assessment:** MODERATE — The framing choice itself (delay story vs privacy story) demonstrates category routing. A Meta camera wearable delay story would likely be framed as "Meta delays controversial glasses amid privacy backlash." An Apple camera wearable delay is framed as a product timeline update.
+
+---
+
+### Cross-Medium "Pervertpods" Resolution-Rationalization Summary (Aug 18–23, 2026)
+
+**The Natural Experiment:**
+Apple's camera AirPods leak (Aug 18) created a natural experiment: How do publications and podcasts handle the "pervertpods" stigma label compared to "pervert glasses" applied to Meta?
+
+**Print Resolution-Rationalization (strongest to weakest):**
+| Publication | Apple Dependency | Resolution Pattern | Key Quote |
+|------------|-----------------|-------------------|-----------|
+| AppleInsider | HIGH (affiliate) | Zero-distance dismiss | "shouldn't worry about 'pervertpods'" |
+| Cult of Mac | HIGH (affiliate) | Headline dismiss | "Why 'pervertpods' isn't really the point" |
+| 9to5Mac/Security Bite | HIGH (affiliate) | Deflect to Meta | "make Zuckerberg look reckless" |
+| TechCrunch | MODERATE (Yahoo/Apollo) | Headline resolution | "may not be the 'pervert pods'" |
+| Inc | LOW (Mansueto) | Speculative trust | "of course they won't invade privacy" |
+| Entrepreneur | LOW | Factual distance | Reports label without adopting |
+| OSnews | ZERO | Symmetric alarm | Headline: "PervertPods" + alarm vocabulary |
+
+**Podcast Propagation Asymmetry:**
+| Label | Target | Podcast Adoptions | Examples |
+|-------|--------|-------------------|---------|
+| "Pervert glasses" | Meta | 3+ episodes | AmberMac, AI Inside, Smashing Security |
+| "Glassholes" | Meta | 2+ episodes | Kill Switch, AI Inside |
+| "Pervertpods" | Apple | 0 episodes | No podcast adoption in any tracked channel |
+
+**Key Finding:** Stigma labels for Meta propagate from print to podcast; stigma labels for Apple are contained in print (where they can be rationalized) and do not propagate to podcast (where they would reach audio audiences without resolution context). The podcast layer functions as a reputation firewall for Apple.
+
+**Cross-References:** #245 (print resolution patterns), #248 (Waichulis sponsor alignment), #244 (AI Inside vocabulary bifurcation), #148 (Vox Media cross-medium portability), #127 (Apple N50 privacy hero cascade), #250 (9to5Mac three-channel pipeline)
+
