@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,295+ | Across 568 test files |
+| Tests | ~20,340+ | Across 569 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20,240+ tests (with parameterized expansion) across 567 test files, each covering a different analytical capability:
+MediaScope has **~20,340+ tests (with parameterized expansion) across 569 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1091,3 +1091,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | - | AI Inside cross-episode temporal adjacency vocabulary bifurcation. Type E |
 | `test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py` | 21 | TWiT Tech News Weekly #451 cross-network framing amplification — Verge "workplace menace" cascade through TWiT editorial independence. Type E |
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | 43 | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source code leak (March 31, 2026) — triple privacy incident (frustration tracking, Undercover Mode, 512K-line data exposure) received zero WIRED/Verge articles while Gizmodo covered adversarially. Severity inversion vs Meta NameTag investigative cascade. 10 classes, 43 tests. Type A |
+| `test_tim_hardwick_macrumors_same_journalist_passive_capture_vocabulary_bifurcation_aug23.py` | 43 | Mechanism #256: Tim Hardwick (MacRumors) Same-Journalist Passive Capture Vocabulary Bifurcation — same journalist covers Meta Super Sensing (Jul 9) with alarm vocabulary ("Quietly Record Everything," wiretapping laws, civil liberty risks) and Apple AirPods passive mode (Aug 21) with neutral technical vocabulary ("background environmental awareness," image capture resolution). Critical person-detection non-suppression finding omitted for Apple. Cross-publication corroboration: Gizmodo defensive Apple framing, Android Police "nightmarish" Meta framing. 5 confounders (2 STRONG), cross-refs #251/#148/#62/#92/#223. 10 classes, 43 tests. Type B |
