@@ -27350,3 +27350,58 @@ publications:
     test_file: tests/test_lucas_ropek_techcrunch_cross_entity_camera_glasses_privacy_vocabulary_omission_aug24.py
     test_count: 54
     meta_coverage_tone: neutral (covered by colleagues Perez/Ha as adversarial)
+  cross_publication_apple_airpods_pervertpods_label_containment:
+    mechanism_id: 270
+    type: B
+    date: "2026-08-24"
+    title: "Multi-Publication Simultaneous Apple Camera Wearable Reputation Shield"
+    description: >
+      Within 72 hours of the Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 18, 2026),
+      5 publications independently published reputation-shield articles separating Apple's
+      camera wearable from Meta's "pervert glasses" stigma. Strategies: TechCrunch (stigma
+      inoculation), Gizmodo (category separation), Engadget (entity separation), 9to5Mac
+      (advocacy journalism), Trusted Reviews (functional separation). Zero publications
+      applied Meta-equivalent scrutiny. Apple's passive always-on capture (320x320 without
+      user trigger) is objectively more privacy-invasive than Meta's user-triggered 12MP
+      but received zero surveillance vocabulary.
+    entities:
+      - Apple
+      - Meta
+    publications:
+      - TechCrunch
+      - Gizmodo
+      - Engadget
+      - 9to5Mac
+      - Trusted Reviews
+    cross_references:
+      - mechanism_id: 207
+        relationship: extends
+        description: "WIRED triple-reporter silence on the same Aug 18 leak event"
+      - mechanism_id: 128
+        relationship: extends
+        description: "Apple N50 Privacy Hero Cascade"
+      - mechanism_id: 102
+        relationship: extends
+        description: "Adrienne So privacy vocabulary bifurcation"
+      - mechanism_id: 245
+        relationship: extends
+        description: "Cross-publication AirPods vocabulary gradient"
+    confounders:
+      - description: >
+          Apple's AirPods are not yet shipped — coverage of unreleased products may
+          naturally receive less scrutiny. BUT Meta's unshipped facial recognition
+          features received extensive pre-emptive alarm coverage.
+        strength: MODERATE
+      - description: >
+          Resolution difference is real (1MP vs 12MP) and functionally limits photo/video
+          capture. BUT 1MP is sufficient for facial recognition and AI profiling.
+        strength: MODERATE
+      - description: >
+          Apple's privacy track record may justify benefit-of-the-doubt. BUT ATT was
+          specifically designed to disadvantage Meta's ad business.
+        strength: WEAK
+      - description: >
+          Publications may have independently reached similar conclusions. BUT the speed
+          (72h) and unanimity (5/5 shield, 0/5 scrutiny) suggest structural bias.
+        strength: WEAK
+    test_file: "tests/test_cross_publication_apple_camera_airpods_pervertpods_label_containment_aug24.py"

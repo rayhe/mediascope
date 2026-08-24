@@ -9308,3 +9308,29 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 5 (2 STRONG, 3 MODERATE)
 - **Test corpus:** 581 test files
 - **Pushed to GitHub:** ✓
+
+## Iteration #275 — Mon 2026-08-24 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Analysis:** Cross-Publication Apple Camera AirPods "Pervertpods" Label Containment Event
+**Mechanism:** #270 — Multi-Publication Simultaneous Apple Camera Wearable Reputation Shield
+
+**Finding:** Within 72 hours of the Apple camera AirPods macOS Tahoe 26.7 RC leak (Aug 18, 2026), at least 5 publications with different ownership structures independently published articles that actively separated Apple's camera wearable from Meta's "pervert glasses" stigma. Each used a distinct but structurally aligned reputation-protection strategy: TechCrunch (stigma inoculation — names label only to argue Apple is exempt), Gizmodo (category separation — removes Apple from "smart glasses"), Engadget (entity separation — "these are not Meta Glasses"), 9to5Mac (advocacy journalism — Apple will make Meta "look reckless"), Trusted Reviews (functional separation — "very different purpose").
+
+**Novel contribution:** First documented MULTI-PUBLICATION SIMULTANEOUS REPUTATION SHIELD event — 5 independent publications producing 5 coordinated but distinct Apple-protective framing strategies in 72 hours, with ZERO publications applying Meta-equivalent scrutiny. This extends beyond individual journalist vocabulary asymmetry to document a systemic cross-publication coordination pattern. The test catalogs 7 distinct shield strategies and documents the vocabulary inversion where Apple's MORE privacy-invasive features (passive always-on 320x320 capture without user trigger) receive LESS alarm vocabulary than Meta's user-triggered capture.
+
+**Key asymmetry:** Apple AirPods have passive always-on capture mode (320x320 without user trigger) — objectively more privacy-invasive than Meta's user-triggered 12MP capture. Yet 0/5 publications applied surveillance vocabulary to Apple's passive mode. WIRED's entire 3-person wearables desk produced zero coverage of the same event (mechanism #207).
+
+**Sources:**
+- https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/
+- https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
+- https://www.engadget.com/2241639/more-details-on-apple-camera-equipped-airpods/
+- https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+- https://www.trustedreviews.com/news/apples-airpods-with-cameras-wont-arrive-until-2027
+
+**Deliverables:**
+- **Test file:** `tests/test_cross_publication_apple_camera_airpods_pervertpods_label_containment_aug24.py` — 10 classes, 43 tests (all passing)
+- **YAML:** Mechanism #270 added to `profiles/competitor-coverage-research.yaml`
+- **Cross-references:** #207 (WIRED triple-reporter silence), #128 (Apple N50 Privacy Hero Cascade), #102 (Adrienne So privacy vocabulary bifurcation), #245 (Cross-publication AirPods vocabulary gradient), #213 (PetaPixel camera entity selection)
+- **Confounders:** 4 (2 MODERATE, 2 WEAK)
+- **Test corpus:** 580 test files, ~227,915 lines
+- **Pushed to GitHub:** ✓
