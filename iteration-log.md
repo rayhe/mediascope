@@ -9283,3 +9283,28 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** 576 test files
 - **Pushed to GitHub:** ✓
+
+## Iteration #274 — Mon 2026-08-24 07:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Journalist:** Lucas Ropek (TechCrunch, formerly Gizmodo)
+**Mechanism:** #269 — Cross-Entity Camera Glasses Privacy Vocabulary Omission via Editorial Division of Labor
+
+**Finding:** Lucas Ropek at TechCrunch writes primary smart glasses coverage for Snap Specs ($2,195 with cameras, contextual AI, recording) and Google IO 2026 smart glasses with neutral/product-focused framing. Snap gets ONE neutral privacy sentence ("follows Meta's lead with a built-in LED light"); Google gets ZERO privacy vocabulary for the new product. In the same publication and time period, colleagues Sarah Perez applies "luxury surveillance tech" to Meta, and Anthony Ha labels Meta glasses "pervert glasses" while positioning Apple as privacy hero.
+
+**Novel contribution:** First documented case of EDITORIAL ROUTING AS VOCABULARY LAUNDERING at the PUBLICATION level — three different journalists at the same publication covering the same product category receive entity-selective beat assignments that create systematic vocabulary asymmetry without any single journalist appearing biased. The product-positive journalist (Ropek) covers competitors, the privacy-alarm journalists (Perez, Ha) cover Meta.
+
+**Key asymmetry:** Snap Specs has cameras + contextual AI + recording + LED indicator — functionally equivalent privacy profile to Meta Ray-Ban glasses — at 7x the price ($2,195 vs $299). Yet Ropek's coverage applies ZERO alarm vocabulary terms vs 10+ in Perez/Ha's Meta coverage at the same publication.
+
+**Sources:**
+- https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+- https://techcrunch.com/2026/05/19/google-takes-a-page-out-of-metas-book-announces-new-audio-powered-smart-glasses/
+- https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/
+- https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+
+**Deliverables:**
+- **Test file:** `tests/test_lucas_ropek_techcrunch_cross_entity_camera_glasses_privacy_vocabulary_omission_aug24.py` — 12 classes, 54 tests (all passing)
+- **YAML:** Mechanism #269 added to `profiles/competitor-coverage-research.yaml`
+- **Cross-references:** #179 (Matt Wille Gizmodo beat reporter zero Samsung investigation), #33 (TechCrunch cross-entity privacy vocabulary baseline)
+- **Confounders:** 5 (2 STRONG, 3 MODERATE)
+- **Test corpus:** 581 test files
+- **Pushed to GitHub:** ✓

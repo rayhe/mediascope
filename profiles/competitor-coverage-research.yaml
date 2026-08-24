@@ -27263,3 +27263,90 @@ publications:
     test_file: tests/test_gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry_aug24.py
     test_count: 37
     meta_coverage_tone: adversarial
+  lucas_ropek_techcrunch_cross_entity_camera_glasses_privacy_vocabulary_omission:
+    mechanism_id: 269
+    journalist: Lucas Ropek
+    publication: TechCrunch
+    type: journalist_cross_entity
+    category: editorial_routing_vocabulary_laundering
+    date_identified: '2026-08-24'
+    iteration: 274
+    description: >
+      Lucas Ropek at TechCrunch writes primary smart glasses coverage for Snap Specs
+      ($2,195, cameras, contextual AI, recording) and Google IO 2026 smart glasses
+      (AI-powered, Gemini, Warby Parker/Gentle Monster) with neutral/product-focused
+      framing. Snap gets ONE neutral privacy sentence ("follows Meta's lead with a
+      built-in LED light"); Google gets ZERO privacy vocabulary for the new product.
+      In the same publication and time period, colleagues Sarah Perez applies "luxury
+      surveillance tech" and "nudity, sex, and other footage" to Meta, and Anthony Ha
+      frames Meta as "pervert glasses" while positioning Apple as privacy hero. This
+      creates editorial routing as vocabulary laundering — product journalist covers
+      competitors, privacy-alarm journalists cover Meta — so no single journalist
+      appears biased while the publication maintains asymmetric vocabulary registers.
+    entities_covered:
+    - name: Snap
+      product: Specs AR glasses
+      features: cameras, contextual AI, recording, LED indicator
+      price: $2,195
+      vocabulary_register: product-enthusiastic
+      privacy_treatment: one neutral sentence
+    - name: Google
+      product: IO 2026 audio smart glasses
+      features: AI-powered, Gemini, camera partnership
+      vocabulary_register: neutral product coverage
+      privacy_treatment: zero mentions for new product
+    - name: Meta
+      product: Ray-Ban Meta AI glasses
+      features: cameras, contextual AI, recording, LED indicator
+      price: $299
+      vocabulary_register: adversarial (via Perez/Ha)
+      privacy_treatment: luxury surveillance, pervert glasses, nudity, class action
+    - name: Apple
+      product: upcoming smart glasses
+      vocabulary_register: privacy hero (via Ha)
+      privacy_treatment: "emphasize privacy-friendly features"
+    career_migration:
+      from_publication: Gizmodo
+      to_publication: TechCrunch
+      former_beat: cybersecurity, AI
+      current_beat: AI, consumer tech, startups
+    confounders:
+    - strength: STRONG
+      description: >
+        Snap Specs launched as developer/enthusiast product at $2,195 — smaller
+        affected population may justify less privacy alarm.
+    - strength: STRONG
+      description: >
+        Meta has actual class action lawsuit providing news hook. Snap and Google
+        do not face similar legal action. However, the camera hardware creates the
+        same privacy risk regardless of legal proceedings.
+    - strength: MODERATE
+      description: >
+        Google branded its glasses as "audio glasses" — may reduce camera anxiety.
+    - strength: MODERATE
+      description: >
+        Articles span Mar-Jul 2026. Privacy climate may have shifted, though it
+        arguably intensified, making neutral Snap coverage more notable.
+    - strength: MODERATE
+      description: >
+        Meta's contractor footage review is specific to Meta. Snap and Google
+        haven't been caught doing the same. However, the camera hardware creates
+        the theoretical risk that Ropek doesn't raise for Snap or Google.
+    cross_references:
+    - mechanism_id: 179
+      relationship: extends
+      description: 'Matt Wille Gizmodo beat reporter — zero Samsung privacy
+        investigation. Both mechanisms show smart glasses beat reporters applying
+        differential privacy vocabulary per entity.'
+    - mechanism_id: 33
+      relationship: extends
+      description: 'TechCrunch cross-entity privacy vocabulary baseline — same
+        publication applying different privacy registers per entity.'
+    source_urls:
+    - https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+    - https://techcrunch.com/2026/05/19/google-takes-a-page-out-of-metas-book-announces-new-audio-powered-smart-glasses/
+    - https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/
+    - https://techcrunch.com/2026/07/26/can-apple-make-smart-glasses-that-arent-a-constant-privacy-threat/
+    test_file: tests/test_lucas_ropek_techcrunch_cross_entity_camera_glasses_privacy_vocabulary_omission_aug24.py
+    test_count: 54
+    meta_coverage_tone: neutral (covered by colleagues Perez/Ha as adversarial)
