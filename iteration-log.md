@@ -1,3 +1,64 @@
+## Iteration #275 — Mon 2026-08-24 12:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Anthropic $1.5B Piracy Settlement + IPO Pre-Roadshow Underwriter-Publisher-Coverage Financial Architecture
+
+**Financial Architecture Mapped:**
+- Anthropic CONVICTED of piracy (7M books from LibGen/PiLiMi, Judge Alsup June 2025)
+- $1.5B settlement final approval: July 20, 2026
+- CFO Krishna Rao investor education meetings: mid-August 2026
+- IPO target: October 2026, ~$1-2T valuation
+- Underwriters: Goldman Sachs, Morgan Stanley, JPMorgan (same three banks for both Anthropic AND OpenAI IPOs)
+- Same banks' equity research departments cover META stock
+
+**Core Finding — Coverage Severity Inversion:**
+Anthropic (CONVICTED, 7M pirated books, $1.5B settlement) receives systematically
+SOFTER coverage vocabulary than Meta (ACCUSED only, no ruling, lawsuit filed May 2026).
+The convicted pirate gets gentler treatment than the merely accused.
+
+**Evidence:**
+1. **Headline vocabulary:** Anthropic = 0 piracy/theft terms in any major headline.
+   Meta = "personally authorized," "massive infringement," "break things" in headlines.
+2. **CEO naming:** Zuckerberg named personally in Meta headlines; Dario Amodei never
+   named in Anthropic piracy headlines.
+3. **WIRED + The Verge silence:** Both publications (parents have OpenAI deals)
+   produced ZERO articles on the $1.5B largest-ever US copyright settlement.
+4. **Gizmodo framing:** Anthropic settlement → systemic headline ("AI Copyright
+   Lawsuits Have Finally Produced an Actual Payout"), not entity-specific scandal.
+   Zero editorial injection. Contrast: Gizmodo ICE ban Meta article uses 8+ alarm
+   terms, "gobble up," "dubious policies."
+5. **IPO narrative alignment:** Settlement framing as "resolving narrow legacy claims"
+   (Anthropic's own language adopted by publications) serves IPO clean-up narrative.
+   Settlement ($1.5B) = 0.16% of $965B valuation — proportionally trivial.
+
+**Confounders:** 4 documented (1 STRONG: different litigation stage; 2 MODERATE: CEO
+allegations differ, temporal distance; 1 WEAK: editorial standards)
+
+**Files changed:**
+- `tests/test_anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture_aug24.py` (NEW — 30 tests, 10 classes)
+- `profiles/competitor-entities.yaml` (Anthropic settlement mediascope_note expanded with IPO timing architecture)
+- `profiles/competitor-coverage-research.yaml` (mechanism #269 extension appended)
+- `README.md` (test count 583→584, tests 21,049→21,079)
+- `docs/ARCHITECTURE.md` (test count 583→584, tests 21,049→21,079)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 30 (10 classes)
+- TestHeadlineVocabularyConvictedVsAccused (3 tests)
+- TestGizmodoFramingRegisterDifferential (4 tests)
+- TestCoverageSelectionSilenceWiredVerge (3 tests)
+- TestIPOTimingSettlementNarrativeCleanUp (3 tests)
+- TestUnderwriterTripleBankConvergence (3 tests)
+- TestSettlementMagnitudeVsValuationRatio (2 tests)
+- TestCrossEntityFramingPrediction (2 tests)
+- TestNYTDualPositionConflict (3 tests)
+- TestConfounders (4 tests)
+- TestMechanismInYAML (2 tests) + TestSourceURLValidity (1 test)
+
+**Asymmetry score:** 0.82
+**Cross-references:** #269 (Gizmodo ICE ban entity selection), #33 (facial recognition parity), #53 (triple-layer journalism funding), #249 (citation amplification)
+**Test corpus:** 584 test files
+
+---
+
 ## Iteration #274 — Mon 2026-08-24 11:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Steve Dent (Engadget) Camera Wearable Privacy Vocabulary Gradient

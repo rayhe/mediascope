@@ -27571,3 +27571,61 @@ publications:
           privacy concerns, which apply equally to Samsung/Google hardware.
         strength: MODERATE
     test_file: "tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py"
+
+  - id: 269_extension
+    date: 2026-08-24
+    type: financial_incentive_mapping
+    title: >
+      Anthropic $1.5B Piracy Settlement + IPO Pre-Roadshow Underwriter-Publisher-Coverage
+      Financial Architecture — Convicted Pirate Gets Softer Coverage Than Merely Accused
+    publications:
+      - Gizmodo
+      - TechCrunch
+      - Fast Company
+      - Engadget
+      - Marketplace
+      - eWeek
+      - WIRED (coverage silence)
+      - The Verge (coverage silence)
+    entities:
+      target: Anthropic
+      comparison: Meta
+    summary: >
+      Anthropic was CONVICTED of piracy (court found 7M pirated books from LibGen/PiLiMi,
+      Judge Alsup June 2025 ruling) and settled for $1.5B (final approval July 20, 2026).
+      Meta was ACCUSED in a May 5, 2026 publisher lawsuit (no ruling, no conviction).
+      Coverage inverts offense severity: the convicted entity receives softer vocabulary
+      ('landmark settlement,' 'mixed result,' zero piracy terms in headlines, CEO never
+      named) while the merely accused entity receives harsher vocabulary ('personally
+      authorized,' 'massive infringement,' CEO named in headlines, 'break things' framing).
+      WIRED (Condé Nast, OpenAI deal) and The Verge (Vox Media, OpenAI deal) produced
+      ZERO coverage of the largest copyright settlement in US history. Financial
+      architecture: Goldman Sachs, Morgan Stanley, JPMorgan underwrite Anthropic's
+      ~$1-2T IPO (Oct 2026 target); same banks cover META equity; settlement approved
+      4 weeks before CFO Krishna Rao begins investor education meetings. Settlement
+      framing as 'resolving legacy claims' serves IPO clean-up narrative.
+    key_evidence:
+      - "Anthropic CONVICTED: 0 piracy/theft terms in any major headline"
+      - "Meta ACCUSED: 'personally authorized,' 'massive,' 'break things' in headlines"
+      - "CEO naming asymmetry: Zuckerberg named in Meta headlines; Amodei never named in Anthropic headlines"
+      - "WIRED + The Verge: 0 articles on $1.5B largest-ever US copyright settlement"
+      - "Settlement ($1.5B) is 0.16% of Anthropic's $965B valuation — proportionally trivial"
+      - "Settlement approved July 20 → CFO investor meetings mid-August → roadshow September → IPO October"
+      - "Goldman Sachs, Morgan Stanley, JPMorgan underwrite both Anthropic AND OpenAI IPOs"
+    counterarguments:
+      - description: >
+          Different litigation stages (settled vs. accused) may legitimately produce
+          different tone. Settlement coverage is inherently resolution-oriented;
+          lawsuit filing coverage is inherently accusation-oriented.
+        strength: STRONG
+      - description: >
+          Meta complaint specifically alleges Zuckerberg 'personally authorized and
+          actively encouraged the infringement.' Anthropic complaint did not make
+          equivalent CEO allegations. This legitimately produces different headline
+          framing.
+        strength: MODERATE
+      - description: >
+          Temporal distance — settlement articles (Jul 2026) vs lawsuit articles
+          (May 2026) are ~2 months apart.
+        strength: MODERATE
+    test_file: "tests/test_anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture_aug24.py"

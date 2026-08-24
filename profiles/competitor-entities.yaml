@@ -785,10 +785,22 @@ entities:
       fair_use_ruling: Jun 2025 — Judge Alsup ruled AI training on copyrighted books is fair use (transformative), but accessing
         books from pirate sources is NOT protected. Trial on damages was scheduled Dec 2025 before settlement.
       max_statutory_damages: $1.05 trillion (7M works × $150,000 willful infringement)
-      mediascope_note: The settlement is with BOOK authors/publishers — NOT news publishers. It does not create financial
-        incentives for news coverage. However, Gizmodo (no AI deals, clean control) covered the final approval with neutral-positive
-        framing, and Fast Company covered it as a milestone. Neither framed it adversarially, despite Anthropic having pirated
-        7 million works. Compare to Meta coverage for far smaller transgressions.
+      mediascope_note: 'The settlement is with BOOK authors/publishers — NOT news publishers. It does not create direct
+        financial incentives for news coverage. However, Gizmodo (no AI deals, clean control) covered the final approval
+        with neutral-positive framing ("The AI Copyright Lawsuits Have Finally Produced an Actual Payout" — systemic, not
+        entity-specific), and Fast Company covered it as a milestone. Neither framed it adversarially, despite Anthropic
+        having pirated 7 million works. Compare to Meta coverage for far smaller transgressions.
+
+        IPO TIMING FINANCIAL ARCHITECTURE (Aug 24, 2026 analysis): Settlement approved July 20, 2026 — exactly 4 weeks
+        before CFO Krishna Rao begins pre-IPO investor education meetings (mid-August). Coverage framing as "resolving
+        legacy claims" serves IPO clean-up narrative. Publications adopted resolution frame ("landmark settlement,"
+        "mixed result") rather than scandal frame ("convicted pirate pays $1.5B"). WIRED (Condé Nast, OpenAI deal) and
+        The Verge (Vox Media, OpenAI deal) produced ZERO coverage of the largest copyright settlement in US history.
+        CEO naming asymmetry: Zuckerberg named personally in Meta lawsuit headlines; Dario Amodei never named in Anthropic
+        piracy settlement headlines. Coverage severity is INVERSELY correlated with offense severity: Anthropic (convicted,
+        7M pirated books) gets softer vocabulary than Meta (accused only, no ruling). Financial relationships predict this
+        inversion — Anthropic shares IPO underwriters (GS, MS, JPM) with the same banks covering META equity.
+        See mechanism #269 extension in competitor-coverage-research.yaml.'
       source_urls:
       - https://openclassactions.com/settlements/anthropic-ai-books-copyright-settlement.php
       - https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/98544-anthropic-agrees-to-pay-1-5-billion-to-settle-copyright-lawsuit.html
