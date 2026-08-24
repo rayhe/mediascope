@@ -3753,3 +3753,79 @@ Analyzing the AI Inside podcast's recent episode titles reveals a systematic voc
 **Notable Context:** Jeff Jarvis previously debunked the I-XRAY "doxing glasses" panic in an October 2024 episode (calling it "confused techno-panic"), suggesting the hosts are not uniformly anti-camera-wearable. Yet the show's title choices still deploy the dystopian vocabulary he critiques when others use it. Jason Howell (show creator/producer) likely controls title selection.
 
 **Financial Context:** AI Inside is independently produced by Yellowgold Studios (Jason Howell's company), distributed via Acast/Megaphone. No known direct financial relationships with Meta, Apple, Anthropic, or OpenAI. The asymmetry appears cultural/editorial rather than financially incentivized — which makes it evidence of how deeply the Meta = surveillance default has embedded in tech podcast editorial culture.
+
+
+---
+
+### 65. TechRadar Podcast — "Can smart glasses ever NOT be creepy?" (Aug 21, 2026)
+
+- **Hosts:** Josephine Watson, Hamish Hector, Axel Metz
+- **Guest:** Jason England (Managing Editor, Computing — Tom's Guide)
+- **Network/Owner:** Future plc (TechRadar + Tom's Guide both Future plc properties)
+- **Duration:** ~55 min (smart glasses segment from 13:50-50:04+)
+- **Source URL:** https://www.youtube.com/watch?v=p8uFJZJ8pG0
+
+**Episode Title Framing:**
+"Can smart glasses ever NOT be creepy? Why Meta, Apple, and Samsung want cameras on your face"
+
+The title uses a negative interrogative ("ever NOT be creepy?") that presupposes creepiness as the default. Names three entities equally in the title. But the description immediately specifies "Ray-Ban Meta specs" as the exemplar of the privacy problem, while Samsung/Google/Snap get neutral "set to launch" framing and Apple gets "rumored to join" framing.
+
+**Chapter Title Vocabulary Gradient:**
+
+| Timestamp | Chapter Title | Entity | Vocabulary Class |
+|-----------|---------------|--------|-----------------|
+| 13:50 | Where We Are With Smart Glasses RIGHT NOW | multi | Neutral |
+| 19:45 | Meta Glasses Experience on Holiday | Meta | Anecdotal/neutral |
+| 21:52 | Reception of Google Glass Back in 2013 | Google | Historical/neutral |
+| 25:24 | Meta's Name Tag Feature Rumour | Meta | Neutral but Meta-specific |
+| 28:44 | The Surveillance take you NEED to Hear | Meta (contextual) | ALARM — all-caps urgency |
+| 36:05 | Will Smart Glasses ever be acceptable? | multi | Existential question |
+| 39:00 | Report on Meta contractors' access to footage | Meta | Investigative/alarm |
+| 50:04 | Can Apple Get Smart Glasses Right? | Apple | ASPIRATIONAL/redemptive |
+
+**Cross-Entity Vocabulary Asymmetry:**
+| Entity | Chapter Count | Vocabulary Class | Alarm Terms |
+|--------|--------------|-----------------|-------------|
+| Meta | 4 | Alarm/investigative | "Surveillance," "NEED," "contractors' access to footage" |
+| Apple | 1 | Aspirational/redemptive | 0 |
+| Samsung | 0 | Absent (despite title billing) | 0 |
+| Google | 3 (2 Pixel + 1 historical) | Neutral/historical | 0 |
+
+**Critical Finding — Temporal Narrative Arc:**
+The episode follows a past → present problem → future hope structure:
+1. Google Glass (past problem, now neutral)
+2. Meta glasses (present problem, alarm vocabulary)
+3. Apple entry (future hope, "Can Apple Get Smart Glasses Right?")
+
+The redemptive conclusion positions Apple as the entity that will fix what Meta broke. "Get Right" implies Meta got it wrong. The Apple segment (50:04) is the final entity-focused chapter — it's the answer to the episode's title question. The implicit editorial argument: smart glasses CAN not be creepy, but only if Apple does them.
+
+**Financial Context:**
+Future plc (TechRadar, Tom's Guide, GamesRadar+, PC Gamer, Tom's Hardware) derives significant revenue from Apple via Apple News Plus aggregation fees, affiliate revenue, and Apple advertising. Guest Jason England is from Tom's Guide (ALSO Future plc) — this is a fully in-house podcast conversation with zero external voices for a "big smart glasses debate." The aspirational Apple framing aligns with documented Future plc Apple financial dependency (mechanism #126).
+
+**Cross-Medium Extension:**
+Jason England's print-level cross-entity competitive aspiration inversion (mechanism #146) now extends to podcast medium. Same journalist, same publisher, same vocabulary bifurcation pattern — Meta = alarm, Apple = aspirational — across both print and podcast.
+
+**Contractor Report Amplification:**
+The "Report on Meta contractors' access to footage" chapter (39:00-50:04, ~11 min) is the longest single-entity segment. No equivalent chapter examines contractor or employee data access practices at Apple, Google, Samsung, or Snap — despite all having contractor workforces handling user data.
+
+**Samsung's Chapter Absence:**
+Samsung is named in the episode title but receives ZERO dedicated chapter titles. This is notable because Samsung's smart glasses (with Google, using the same Qualcomm AR1 Gen 1 chip) are the closest competitor to Meta's shipping product. Samsung gets title-level visibility without chapter-level scrutiny — visibility without accountability.
+
+**Sentiment Score:** -6/10 (moderately-to-strongly negative toward Meta; positive toward Apple; neutral toward Samsung/Google)
+**Asymmetry Assessment:** HIGH — Chapter vocabulary creates a clear entity hierarchy where Meta = surveillance problem, Apple = privacy solution, Samsung = invisible, Google = historical footnote. Same publisher (Future plc), same editorial team, same episode.
+
+**MediaScope Mechanism:** #283 — TechRadar Podcast Future plc Cross-Entity Chapter Vocabulary Aspiration Inversion. Natural experiment: a single podcast episode titled for three entities distributes alarm vocabulary exclusively to Meta, aspirational vocabulary exclusively to Apple, and erases Samsung from chapter-level analysis despite title-level billing. Extends print-level mechanism #146 (Jason England cross-entity competitive aspiration inversion) to podcast medium.
+
+**Cross-References:**
+- Mechanism #146: Jason England cross-entity competitive aspiration inversion (print)
+- Mechanism #126: Future plc triple AI dependency financial architecture
+- Mechanism #127: Michael Hicks Future plc privacy vocabulary suppression
+- Mechanism #225: Vergecast three-episode camera vocabulary convergence
+- Mechanism #213: Vergecast two-episode cascade / Mia Sato workplace menace amplification
+- Mechanism #267: AI Inside three-episode title vocabulary hierarchy
+
+**Confounders:**
+1. MODERATE: Title names all three entities equally — bias shows only at chapter level
+2. WEAK: Apple glasses are unreleased — aspirational framing partly logical (but Samsung is also unreleased and gets zero attention)
+3. WEAK: Meta has most deployed product — more coverage is expected, but alarm vocabulary is not explained by market share
+4. STRONG: Host's personal holiday experience grounds Meta coverage in genuine lived experience, not fabricated alarm

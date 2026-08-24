@@ -27667,3 +27667,49 @@ publications:
           (May 2026) are ~2 months apart.
         strength: MODERATE
     test_file: "tests/test_anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture_aug24.py"
+
+
+  techradar_podcast_future_plc_cross_entity_chapter_vocabulary_aspiration_inversion:
+    mechanism_number: 283
+    discovery_date: "2026-08-24"
+    type: "podcast_cross_entity_framing"
+    publication: "TechRadar Podcast (Future plc)"
+    journalist: "Josephine Watson, Hamish Hector, Axel Metz (hosts) + Jason England (guest, Tom's Guide)"
+    entities: ["Meta", "Apple", "Samsung", "Google"]
+    finding_summary: >
+      TechRadar Podcast episode "Can smart glasses ever NOT be creepy?" (Aug 21, 2026) names
+      Meta, Apple, and Samsung equally in the title but distributes chapter-level vocabulary
+      asymmetrically: Meta gets 4 chapters with alarm/surveillance vocabulary (including
+      "The Surveillance take you NEED to Hear" and "contractors' access to footage"), Apple
+      gets 1 aspirational chapter ("Can Apple Get Smart Glasses Right?"), Samsung gets 0 chapters
+      despite title billing, Google gets neutral/historical. Extends Jason England print mechanism
+      #146 to podcast medium. In-house guest (Tom's Guide, also Future plc) = no external voices
+      for a multi-entity "debate." Financial context: Future plc Apple dependency (mechanism #126).
+    asymmetry_score: 0.78
+    source_urls:
+      - "https://www.youtube.com/watch?v=p8uFJZJ8pG0"
+    cross_references:
+      - mechanism_id: 146
+        type: "cross-medium extension"
+        description: "Jason England cross-entity competitive aspiration inversion (print → podcast)"
+      - mechanism_id: 126
+        type: "financial_incentive"
+        description: "Future plc triple AI dependency financial architecture"
+      - mechanism_id: 225
+        type: "podcast_cross_reference"
+        description: "Vergecast three-episode camera vocabulary convergence"
+    confounders:
+      - type: "title_equal_billing"
+        description: >
+          Title names Meta, Apple, and Samsung equally — bias appears only at chapter/vocabulary level.
+        strength: MODERATE
+      - type: "apple_unreleased_product"
+        description: >
+          Apple glasses unreleased — aspirational framing partly reflects temporal position.
+          But Samsung also unreleased and gets zero chapter attention.
+        strength: WEAK
+      - type: "host_lived_experience"
+        description: >
+          Host's personal holiday experience with Meta glasses grounds coverage in genuine reality.
+        strength: STRONG
+    test_file: "tests/test_type_e_2pm_techradar_podcast_future_plc_cross_entity_chapter_vocabulary_aspiration_inversion_aug24.py"

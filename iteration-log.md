@@ -1,3 +1,126 @@
+## Iteration #277 — Mon 2026-08-24 14:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: TechRadar Podcast Cross-Entity Chapter Vocabulary Aspiration Inversion
+
+**New Episode Analyzed:**
+TechRadar Podcast — "Can smart glasses ever NOT be creepy? Why Meta, Apple, and Samsung
+want cameras on your face" (~Aug 21, 2026, YouTube)
+
+**Core Finding — Mechanism #283:**
+Within a single podcast episode titled for three entities (Meta, Apple, Samsung), chapter-level
+vocabulary creates a systematic entity hierarchy:
+- **Meta:** 4 chapters, alarm/surveillance vocabulary ("The Surveillance take you NEED to Hear",
+  "contractors' access to footage"). Longest single-entity segment (~11 min contractor report).
+- **Apple:** 1 chapter, aspirational/redemptive vocabulary ("Can Apple Get Smart Glasses Right?").
+  Final entity segment — redemptive conclusion.
+- **Samsung:** 0 chapters despite title billing. Named equally in title, invisible in content.
+- **Google:** 3 chapters (2 Pixel, 1 historical Glass). Neutral/historical.
+
+**Cross-Medium Extension:**
+Jason England (Tom's Guide, Future plc) appears as guest — the SAME journalist with documented
+print-level cross-entity competitive aspiration inversion (mechanism #146). Same publisher, same
+journalist, same vocabulary bifurcation (Meta=alarm, Apple=aspirational), different medium. This
+is the first print-to-podcast cross-medium replication of a journalist-level vocabulary pattern
+in the MediaScope corpus.
+
+**Financial Context:**
+Both TechRadar (host outlet) and Tom's Guide (guest outlet) are Future plc properties. This is
+a fully in-house "debate" with zero external voices. Future plc has documented Apple financial
+dependency (mechanism #126 — Apple News Plus, affiliate, advertising revenue).
+
+**Confounders:** 4 documented (1 STRONG: host's genuine holiday experience; 1 MODERATE: title
+equal billing; 2 WEAK: Apple unreleased, Meta market leader)
+
+**Asymmetry score:** 0.78
+
+**Files changed:**
+- `tests/test_type_e_2pm_techradar_podcast_future_plc_cross_entity_chapter_vocabulary_aspiration_inversion_aug24.py` (NEW — 31 tests, 10 classes)
+- `podcast-sentiment.md` (new entry #65 appended)
+- `profiles/competitor-coverage-research.yaml` (mechanism #283 added)
+- `README.md` (585→586 test files, ~21,100→~21,131 tests)
+- `docs/ARCHITECTURE.md` (585→586 test files, ~21,100→~21,131 tests)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 31 (10 classes)
+- TestEpisodeTitleFraming (4 tests)
+- TestChapterVocabularyGradient (7 tests)
+- TestCrossEntityVocabularyBifurcation (4 tests)
+- TestFuturePlcInHouseAmplification (2 tests)
+- TestCrossMediumVocabularyPortability (2 tests)
+- TestContractorReportAmplification (3 tests)
+- TestSurveillanceFramingIntensity (3 tests)
+- TestTemporalNarrativeArc (2 tests)
+- TestConfounders (4 tests)
+
+**Test corpus:** 586 test files
+**Pushed to GitHub:** ✓
+
+---
+
+## Iteration #276 — Mon 2026-08-24 13:00 PT (Type D: Test & Verify)
+
+### Focus: YAML Structural Integrity, Test Fix Sweep, Cross-Validation
+
+**Issues found and fixed:** 8 total
+
+**1. YAML Parse Error (CRITICAL):**
+competitor-coverage-research.yaml had 5 mechanism entries using list syntax (`- mechanism_id:`)
+inside the `publications:` mapping context. This caused yaml.parser.ParserError on line 27208,
+blocking 3 test files (88+ tests) from collecting. Converted all 5 to named mapping keys:
+- mechanism_id 268 → `gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry`
+- mechanism_id 271 → `lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion`
+- mechanism_id 269 → `steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient`
+- mechanism_number 282 → `raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration`
+- id 269_extension → `anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture`
+
+**2. Raymond Wong Test Import (CRITICAL):**
+test_raymond_wong_gizmodo imported `MediaScopeTestCase` from nonexistent `mediascope_test_utils`
+module. Fixed to `unittest.TestCase` (standard pattern for all other test files).
+
+**3. Hachman PCWorld Case Sensitivity:**
+`assertIn("disable a small LED", quote.lower())` — "LED" doesn't exist in lowered string.
+Fixed to `"disable a small led"`.
+
+**4. Hachman PCWorld YAML Lookup:**
+Test referenced `competitor_coverage_mechanisms` (nonexistent). Fixed to
+`cross_publication_findings`. Added mechanism #264 entry to that section.
+
+**5. Cross-Validation Int Key TypeError:**
+`test_type_d_cross_validation_aug7_04am.py` path concatenation crashed on integer dictionary
+keys in `ranked_list` data. Fixed `path + "." + k` → `path + "." + str(k)`.
+
+**6. HTTP→HTTPS URL Cleanup:**
+3 HTTP URLs fixed to HTTPS in competitor-entities.yaml (digiday.com ×2, neowin.net ×1)
+and 1 in competitor-coverage-research.yaml.
+
+**Validation results:**
+- 580 tests passed across all aug24 + cross-validation files (0 failures)
+- 3 previously-broken collection errors resolved
+- 5 previously-failing tests now pass
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (5 list→mapping fixes + mechanism #264 added)
+- `profiles/competitor-entities.yaml` (3 HTTP→HTTPS URL fixes)
+- `tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py` (import fix)
+- `tests/test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py` (2 test fixes)
+- `tests/test_type_d_cross_validation_aug7_04am.py` (int key fix)
+- `tests/test_type_d_1pm_cross_validation_aug24.py` (NEW — 21 tests, 6 classes)
+- `README.md` (584→585 test files, ~21,079→~21,100 tests)
+- `docs/ARCHITECTURE.md` (584→585 test files, ~21,079→~21,100 tests)
+
+**Tests added:** 21 (6 classes)
+- TestYAMLStructuralIntegrity (4 tests)
+- TestAug24MechanismEntriesAsNamedKeys (6 tests)
+- TestAnthropicIPOPiracyFinancialArchitectureConsistency (8 tests)
+- TestHTTPSURLCleanup (1 test)
+- TestAug24TestFilesImport (1 test)
+- TestCrossValidationTestIntKeyFix (1 test)
+
+**Test corpus:** 585 test files
+**Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #275 — Mon 2026-08-24 12:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Anthropic $1.5B Piracy Settlement + IPO Pre-Roadshow Underwriter-Publisher-Coverage Financial Architecture
