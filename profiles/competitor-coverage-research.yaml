@@ -26934,3 +26934,78 @@ publications:
     - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
     test_file: tests/test_fastco_anthropic_triple_aspirational_meta_controversy_framing_aug23.py
     test_count: 30
+  mechanism_265_krol_techradar_editorial_enthusiasm_gradient:
+    mechanism_id: 265
+    journalist: Jacob Krol
+    publication: TechRadar
+    publication_owner: Future PLC
+    role: US Managing Editor, News
+    pattern: editorial_enthusiasm_gradient
+    description: >
+      US Managing Editor of News at TechRadar applies systematic enthusiasm
+      gradient: Samsung/Google Android XR gets 15+ aspirational terms ("blew
+      me away", "very wise", "compelling", "genuinely helpful", "a heck of a
+      lot more powerful") with ZERO privacy vocabulary, while Meta Ray-Ban
+      in the SAME article gets casual dismissal ("enjoy those for snapping
+      unique shots") and competitive diminishment ("shorter list of functions").
+      The camera on Samsung/Google glasses gets neutral technical description;
+      no privacy discussion despite identical functionality. Editorial hierarchy
+      significance: as US Managing Editor, Krol shapes coverage direction for
+      entire US TechRadar operation, while subordinate staff writers (Berne,
+      Hector) apply alarm vocabulary specifically to Meta.
+    samsung_google_coverage:
+      tone: aspirational
+      aspirational_terms:
+      - blew me away
+      - very wise
+      - compelling
+      - genuinely helpful
+      - neat
+      - excited
+      - a heck of a lot more powerful
+      - closer to all-in than ever before
+      - impressive
+      - really excited
+      privacy_vocabulary_count: 0
+      camera_framing: neutral_technical
+    meta_coverage:
+      tone: casual_dismissal
+      aspirational_terms: []
+      framing: competitive_diminishment
+      key_quote: "Both only had a shorter...list of functions, but Android XR as a platform feels a heck of a lot more powerful"
+    asymmetry_score: 0.68
+    confounders:
+    - type: STRONG
+      description: Krol is casually positive about Meta, not negative. Pattern is enthusiasm gradient, not alarm vocabulary bifurcation.
+    - type: MODERATE
+      description: Samsung/Google prototype had a display, Meta did not at time of writing, legitimately differentiating products.
+    - type: WEAK
+      description: First hands-on at trade show naturally produces enthusiasm; Meta had been on market longer.
+    - type: WEAK
+      description: Managing editors may express personal enthusiasm without shaping staff direction.
+    career_history:
+    - CNN Underscored
+    - TheStreet
+    - Mashable
+    - CNET
+    - CNBC
+    - TechRadar
+    career_google_ad_dependency: all publications Google ad-dependent
+    cross_references:
+    - mechanism_id: 115
+      relationship: extends
+      description: 'TechRadar staff writers Berne/Hector apply alarm vocabulary to Meta while Krol sets aspirational tone for Samsung/Google'
+    - mechanism_id: 116
+      relationship: extends
+      description: 'Android Central (Future PLC) Michael Hicks applies dedicated Privacy concerns section to Meta, zero to Google'
+    - mechanism_id: 114
+      relationship: underpins
+      description: 'Future PLC triple-layer Google financial dependency (Ads, Shopping affiliate, News Showcase)'
+    - mechanism_id: 264
+      relationship: parallels
+      description: 'PCWorld Mark Hachman within-article cross-entity camera privacy scrutiny differential (same pattern, different publication)'
+    source_urls:
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/samsungs-prototype-xr-glasses-hint-at-the-future-of-smart-frames-and-im-closer-to-all-in-than-ever-before
+    - https://www.techradar.com/computing/virtual-reality-augmented-reality/apple-will-reportedly-take-on-ray-ban-meta-glasses-in-2027
+    test_file: tests/test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py
+    test_count: 36

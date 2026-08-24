@@ -9071,3 +9071,23 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** 568 test files
 - **Pushed to GitHub:** ✓
+
+## Iteration #269 — Type B: Journalist Cross-Entity Tracking
+**Date:** Mon 2026-08-24 02:00 PT
+**Focus:** Jacob Krol (TechRadar / Future PLC)
+
+### Findings
+- **Mechanism #265:** Jacob Krol (US Managing Editor, News at TechRadar) applies systematic editorial enthusiasm gradient. Samsung/Google Android XR receives 15+ aspirational terms ("blew me away", "very wise", "compelling", "genuinely helpful") with zero privacy vocabulary. Meta Ray-Ban in the SAME article gets casual dismissal ("enjoy those") and competitive diminishment ("shorter list of functions, but Android XR...a heck of a lot more powerful").
+- **Camera privacy differential:** Samsung/Google camera described neutrally ("pressed the button on the right stem to capture a photo...neat way of seeing what you just captured"). No privacy discussion despite identical camera functionality to Meta Ray-Ban.
+- **Editorial hierarchy significance:** As US Managing Editor, Krol's enthusiasm gradient sets the editorial direction. Same publication's staff writers (Berne mechanism #115, Hector #115) apply alarm vocabulary ("creepy", "scary", "terrifying", "predatory") specifically to Meta, never to Samsung/Google.
+- **Career context:** Entire career (CNN Underscored, TheStreet, Mashable, CNET, CNBC, TechRadar) at Google ad-dependent publications.
+- **Asymmetry score:** 0.68 (lower due to STRONG confounder: Krol is casually positive about Meta, not negative)
+- **Source URL:** https://www.techradar.com/computing/virtual-reality-augmented-reality/samsungs-prototype-xr-glasses-hint-at-the-future-of-smart-frames-and-im-closer-to-all-in-than-ever-before
+
+### Artifacts
+- **Test file:** `tests/test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py` (10 classes, 31 tests)
+- **YAML:** Mechanism #265 added to `profiles/competitor-coverage-research.yaml`
+- **Cross-references:** #114 (Future PLC Google dependency), #115 (TechRadar Berne/Hector alarm), #116 (Android Central Hicks), #264 (PCWorld Hachman parallel)
+- **Confounders:** 4 (1 STRONG, 1 MODERATE, 2 WEAK)
+- **Test corpus:** 575 test files
+- **Pushed to GitHub:** ✓
