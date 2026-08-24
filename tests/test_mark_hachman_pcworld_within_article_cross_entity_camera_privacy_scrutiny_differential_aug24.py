@@ -154,7 +154,7 @@ class TestHachmanMetaFramingWithinArticle(unittest.TestCase):
         )
         # LED tampering presented as a specific Meta problem
         self.assertIn("modifying the eyewear", quote.lower())
-        self.assertIn("disable a small LED", quote.lower())
+        self.assertIn("disable a small led", quote.lower())
 
     def test_meta_colleague_unnerving(self):
         """Meta glasses described as 'unnerving' even on trusted colleague."""
@@ -372,8 +372,8 @@ class TestMechanismInYAML(unittest.TestCase):
         if os.path.exists(yaml_path):
             with open(yaml_path) as f:
                 data = yaml.safe_load(f)
-            mechanisms = data.get("competitor_coverage_mechanisms", {})
-            key = "mechanism_264_hachman_pcworld_within_article_cross_entity"
+            mechanisms = data.get("cross_publication_findings", {})
+            key = "mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential"
             self.assertIn(key, mechanisms,
                           "Mechanism #264 should be in YAML")
 
@@ -386,8 +386,8 @@ class TestMechanismInYAML(unittest.TestCase):
         if os.path.exists(yaml_path):
             with open(yaml_path) as f:
                 data = yaml.safe_load(f)
-            mechanisms = data.get("competitor_coverage_mechanisms", {})
-            key = "mechanism_264_hachman_pcworld_within_article_cross_entity"
+            mechanisms = data.get("cross_publication_findings", {})
+            key = "mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential"
             if key in mechanisms:
                 mechanism = mechanisms[key]
                 required = [

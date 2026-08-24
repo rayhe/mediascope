@@ -5974,7 +5974,7 @@ entities:
               (no such relationship) receives adversarial coverage for functionally
               comparable hardware.'
             source_urls:
-            - http://digiday.com/media/conde-nast-snapchat-shows-plans/
+            - https://digiday.com/media/conde-nast-snapchat-shows-plans/
             - https://www.subscriptioninsider.com/type-of-subscription-business/magazines/conde-nasts-gq-wired-and-self-to-launch-snapchat-discover-channels
             - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
             - https://digiday.com/media/it-hasnt-killed-us-snapchat-discover-publishers-face-tough-challenge-as-platform-chases-tv/
@@ -6170,7 +6170,7 @@ entities:
         current_status: 'Active but evolved. Condé Nast Discover presence likely transitioned from
           dedicated publisher channels to branded shows/series model. Financial relationship ongoing.'
         source_urls:
-        - http://digiday.com/media/conde-nast-snapchat-shows-plans/
+        - https://digiday.com/media/conde-nast-snapchat-shows-plans/
         - https://www.subscriptioninsider.com/type-of-subscription-business/magazines/conde-nasts-gq-wired-and-self-to-launch-snapchat-discover-channels
         - https://martech.org/snapchat-launches-ad-marketplace-for-discover-partners-brings-commercials-to-ads-manager/
         - https://digiday.com/media/it-hasnt-killed-us-snapchat-discover-publishers-face-tough-challenge-as-platform-chases-tv/
@@ -9361,7 +9361,7 @@ essilorluxottica:
       deal_type: strategic_content_licensing
       source_urls:
       - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
-      - http://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
+      - https://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
       - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
     future_optic:
       product_description: AI visibility advertising product selling brands placement in LLMs (ChatGPT and Gemini)

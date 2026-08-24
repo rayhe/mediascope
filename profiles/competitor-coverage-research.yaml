@@ -1956,6 +1956,39 @@ cross_entity_leverage:
     - https://www.pymnts.com/artificial-intelligence-2/2026/microsoft-spending-on-anthropic-approaches-500-million-a-year/
     - https://readwrite.com/microsofts-copilot-to-partner-with-news-publishers/
 cross_publication_findings:
+  mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential:
+    mechanism_id: 264
+    type: journalist_cross_entity
+    journalist: Mark Hachman
+    publication: PCWorld
+    date_identified: '2026-08-24'
+    finding: >
+      Mark Hachman at PCWorld covers Google AI glasses with enthusiastic product-focused
+      framing ("what Google Glass always wanted to be") while covering Meta glasses within
+      the same article with alarm-laden privacy framing ("modifying the eyewear to disable
+      a small LED", "anecdotal reports of users still taking pictures"). Within a single
+      article, Google's functionally equivalent camera glasses receive aspirational
+      vocabulary while Meta's receive modification-alarm vocabulary.
+    source_urls:
+    - https://www.pcworld.com/article/3144719/i-tried-googles-ai-glasses-theyre-what-google-glass-always-wanted-to-be.html
+    asymmetry_score: 0.68
+    confounding_factors:
+    - factor: Google IO hands-on context may produce more enthusiastic tone than general-purpose article
+      strength: moderate
+    - factor: Meta has documented misuse incidents, Google does not
+      strength: moderate
+    - factor: Google Glass historical failure creates a redemption narrative arc
+      strength: weak
+    - factor: Prototype vs shipping product editorial standards may differ
+      strength: weak
+    cross_references:
+    - mechanism_id: 114
+      relationship: underpins
+      description: 'Digital Trends editorial-level privacy vocabulary asymmetry'
+    - mechanism_id: 116
+      relationship: extends
+      description: 'Michael Hicks Future PLC cross-entity camera privacy vocabulary bifurcation'
+    test_file: tests/test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py
   adrienne_so_wearables_privacy_vocabulary_bifurcation:
     beat: wearables, fitness trackers, smartwatches, smart glasses
     confounding_factors:
@@ -7352,7 +7385,7 @@ cross_publication_findings:
     - https://www.tradingpedia.com/2026/03/31/future-plc-cuts-2026-outlook-amid-google-traffic-shift/
     - https://uk.advfn.com/stock-market/london/future-FUTR/share-news/Future-PLC-2026-Half-Year-Results/98522253
     - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
-    - http://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
+    - https://www.neowin.net/news/openai-partners-with-future-on-specialist-content/
     - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
     test_file: tests/test_future_plc_triple_ai_dependency_financial_architecture_aug15.py
     testable_predictions:
@@ -27205,7 +27238,8 @@ publications:
     test_file: tests/test_type_e_5am_ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy_aug24.py
     test_count: 42
     meta_coverage_tone: adversarial
-  - mechanism_id: 268
+  gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry:
+    mechanism_id: 268
     name: >
       Gizmodo ICE Ban Meta Entity Selection vs OpenAI Camera Device
       Bore Framing Asymmetry
@@ -27406,7 +27440,8 @@ publications:
         strength: WEAK
     test_file: "tests/test_cross_publication_apple_camera_airpods_pervertpods_label_containment_aug24.py"
 
-  - mechanism_id: 271
+  lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion:
+    mechanism_id: 271
     title: "Lawrence Bonk (Engadget) — Cross-Entity Camera Wearable Vocabulary Inversion"
     type: "Journalist Cross-Entity Tracking (Type B)"
     discovery_date: "2026-08-24"
@@ -27483,7 +27518,8 @@ publications:
         strength: WEAK
     test_file: "tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py"
 
-  - mechanism_id: 269
+  steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient:
+    mechanism_id: 269
     title: "Steve Dent Engadget Cross-Entity Camera Wearable Privacy Vocabulary Gradient"
     type: journalist_cross_entity
     journalist: "Steve Dent"
@@ -27535,7 +27571,8 @@ publications:
       - "If Meta remediates contractor review and implements on-device processing, Steve Dent's vocabulary will not proportionally soften"
     test_file: "tests/test_steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient_aug24.py"
 
-  - mechanism_number: 282
+  raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration:
+    mechanism_number: 282
     mechanism_name: "Raymond Wong Cross-Entity Camera Privacy Vocabulary Concentration"
     journalist: "Raymond Wong"
     publication: "Gizmodo (Keleops AG)"
@@ -27572,7 +27609,8 @@ publications:
         strength: MODERATE
     test_file: "tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py"
 
-  - id: 269_extension
+  anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture:
+    id: 269_extension
     date: 2026-08-24
     type: financial_incentive_mapping
     title: >

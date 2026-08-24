@@ -427,12 +427,12 @@ class TestSourceURLFormats:
             for k, v in data.items():
                 if k in ("source_url", "source_urls"):
                     if isinstance(v, str):
-                        urls.append((path + "." + k, v))
+                        urls.append((path + "." + str(k), v))
                     elif isinstance(v, list):
                         for u in v:
-                            urls.append((path + "." + k, str(u)))
+                            urls.append((path + "." + str(k), str(u)))
                 else:
-                    urls.extend(self._collect_all_urls(v, path + "." + k))
+                    urls.extend(self._collect_all_urls(v, path + "." + str(k)))
         elif isinstance(data, list):
             for i, item in enumerate(data):
                 urls.extend(self._collect_all_urls(item, f"{path}[{i}]"))
@@ -470,9 +470,9 @@ class TestSourceURLFormats:
                 for k, v in data.items():
                     if k == "source_urls" and isinstance(v, list):
                         if len(v) != len(set(v)):
-                            dupes.append(path + "." + k)
+                            dupes.append(path + "." + str(k))
                     else:
-                        check(v, path + "." + k)
+                        check(v, path + "." + str(k))
             elif isinstance(data, list):
                 for i, item in enumerate(data):
                     check(item, f"{path}[{i}]")

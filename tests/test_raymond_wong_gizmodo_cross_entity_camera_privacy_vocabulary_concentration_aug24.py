@@ -229,10 +229,9 @@ METHODOLOGICAL NOTE:
 """
 
 import unittest
-from mediascope_test_utils import MediaScopeTestCase
 
 
-class TestRaymondWongGizmodoCrossEntityCameraPrivacyVocabularyConcentration(MediaScopeTestCase):
+class TestRaymondWongGizmodoCrossEntityCameraPrivacyVocabularyConcentration(unittest.TestCase):
     """
     Verify that Raymond Wong at Gizmodo applies alarm privacy vocabulary exclusively
     to Meta's camera glasses while covering Samsung/Google camera glasses with
