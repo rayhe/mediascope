@@ -27205,3 +27205,61 @@ publications:
     test_file: tests/test_type_e_5am_ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy_aug24.py
     test_count: 42
     meta_coverage_tone: adversarial
+  - mechanism_id: 268
+    name: >
+      Gizmodo ICE Ban Meta Entity Selection vs OpenAI Camera Device
+      Bore Framing Asymmetry
+    date_identified: '2026-08-24'
+    publication: Gizmodo (G/O Media)
+    type: cross_entity_institutional_validation
+    finding: >
+      Gizmodo applies dramatically different framing to camera devices from Meta vs
+      OpenAI. When ICE bans "Meta Glasses or similar devices" (a generic smart glasses
+      ban), Gizmodo makes it Meta-specific: sarcastic "Even ICE Thinks..." headline,
+      Meta named 5x, whistleblower exploitation chained, 8+ alarm terms. When OpenAI
+      announces a smart speaker with camera AND facial recognition (objectively more
+      privacy-invasive: always-on home camera + biometric ID + ambient audio capture),
+      Gizmodo frames it as boring ("No One Asked For"), 0 alarm terms, 1 throwaway
+      privacy sentence, no advocacy groups cited. ICE memo explicitly says "or similar
+      devices" but the article never explores implications for OpenAI, Apple, or other
+      camera device makers. Privacy invasiveness inversely correlates with editorial alarm.
+    asymmetry_score: 0.85
+    confounders:
+    - strength: MODERATE
+      description: >
+        Articles are ~6 months apart (Feb vs Aug 2026). Privacy discourse intensified
+        after whistleblower scandal (Mar) and NameTag investigation (Jun). However,
+        OpenAI's camera + facial recognition features are unchanged; the feature set
+        didn't get less invasive, only Meta's coverage got more alarmed.
+    - strength: MODERATE
+      description: >
+        Meta glasses are a shipping product; OpenAI speaker is planned for 2027.
+        However, Gizmodo applies heavy alarm to Meta's DORMANT features (NameTag)
+        while giving OpenAI's PLANNED camera + facial recognition bore treatment.
+    - strength: WEAK
+      description: >
+        Different Gizmodo authors may have different styles. Finding is about
+        publication-level editorial framing, not individual journalist style.
+    cross_references:
+    - mechanism_id: 33
+      relationship: extends
+      description: 'OpenAI Facial Recognition Privacy Parity — same OpenAI device
+        features, zero privacy scrutiny vs Meta dormant NameTag'
+    - mechanism_id: 171
+      relationship: extends
+      description: 'Gizmodo AirPods Camera Potato Quality Resolution Rationalization —
+        same publication applying privacy defense to Apple camera device'
+    - mechanism_id: 257
+      relationship: extends
+      description: 'Gizmodo Apple N50 Headline Presupposition Meta Privacy-Invading —
+        same publication entity-selective headline framing pattern'
+    - mechanism_id: 140
+      relationship: extends
+      description: 'Gizmodo Samsung Unpacked 4-Entity Clean Control — Gizmodo
+        applying different privacy registers per entity'
+    source_urls:
+    - https://gizmodo.com/even-ice-thinks-smart-glasses-are-a-privacy-liability-2000800271
+    - https://gizmodo.com/openai-might-be-making-a-smart-speaker-that-no-one-asked-for-2000724650
+    test_file: tests/test_gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry_aug24.py
+    test_count: 37
+    meta_coverage_tone: adversarial

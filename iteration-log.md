@@ -1,4 +1,79 @@
-## Iteration #271 — Mon 2026-08-24 04:00 PT (Type D: Test & Verify)
+## Iteration #273 — Mon 2026-08-24 06:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Gizmodo ICE Ban Meta Entity Selection vs OpenAI Camera Device Bore Framing
+
+**Publication:** Gizmodo (G/O Media)
+**Competitor:** OpenAI
+**New Mechanism:** #268 — Gizmodo ICE Ban Meta Entity Selection vs OpenAI Camera Device Bore Framing Asymmetry
+
+**Finding:** Gizmodo applies dramatically different framing to camera devices from
+Meta vs OpenAI. When ICE bans "Meta Glasses or similar devices" (a generic smart
+glasses ban), Gizmodo makes it entity-specific with sarcastic institutional validation
+headline. When OpenAI announces a smart speaker with camera AND facial recognition
+(objectively more privacy-invasive: always-on home surveillance + biometric ID +
+ambient audio capture), Gizmodo frames it as boring/unoriginal.
+
+**Article 1 — ICE Ban (Aug 19, 2026):**
+- Headline: "Even ICE Thinks Smart Glasses Are a Privacy Liability"
+- Entity routing: Meta named 5 times; zero mentions of OpenAI, Apple, Snap, Google
+- Narrative chaining: whistleblower footage scandal connected
+- Editorial injection: "gobble up," "dubious policies"
+- Alarm vocabulary: 8+ terms (privacy liability, surveillance, intimate footage, etc.)
+- ICE memo says "or similar devices" — Gizmodo never explores what this means for
+  other camera device makers
+
+**Article 2 — OpenAI Speaker (Feb 21, 2026):**
+- Headline: "OpenAI Might Be Making a Smart Speaker That No One Asked for"
+- Framing register: product tedium/boredom, not privacy alarm
+- Features described: camera + facial recognition + ambient audio — MORE invasive
+  than Meta glasses (always-on home device, biometric ID, conversation capture)
+- Alarm vocabulary: ZERO
+- Privacy treatment: 1 throwaway sentence ("whether you trust OpenAI...")
+- No advocacy groups quoted, no whistleblower connections, no scandal chaining
+- Narrative chaining: Amazon Echo Show (product comparison, not privacy crisis)
+
+**Key insight — Institutional Validation Entity Selection:** ICE's memo bans ALL
+smart glasses ("or similar devices") but Gizmodo routes the institutional validation
+exclusively to Meta. The ban's logic applies equally to any camera wearable/device
+— including OpenAI's planned speaker with camera and facial recognition — but the
+article never makes this connection. Meanwhile, the buried detail that DHS is itself
+developing smart glasses with facial recognition undermines the "even ICE thinks..."
+premise.
+
+**Privacy Invasiveness Inversion:**
+- OpenAI speaker: camera ✓, facial recognition ✓, ambient audio ✓, always-on ✓,
+  home interior ✓ → 5/5 invasiveness features
+- Meta glasses: camera ✓, facial recognition ✗ (dormant), ambient audio ✗ (on-demand),
+  always-on ✗ (worn intermittently), home interior ✗ → 1/5 invasiveness features
+- Scrutiny: Meta 8+ alarm terms, OpenAI 0 alarm terms
+
+**Files changed:**
+- `tests/test_gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry_aug24.py` (NEW — 37 tests, 10 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #268 appended)
+- `README.md` (test count 577→578)
+- `docs/ARCHITECTURE.md` (test count 577→578)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 37 (10 classes)
+- TestICEBanHeadlineEntitySelection (5 tests)
+- TestOpenAISpeakerHeadlineBoreFraming (4 tests)
+- TestAlarmVocabularyAsymmetry (4 tests)
+- TestWhistleblowerExploitationNarrativeChaining (4 tests)
+- TestPrivacyFeatureParity (5 tests)
+- TestInstitutionalValidationEntityRouting (3 tests)
+- TestCrossArticleFramingRegisterInversion (3 tests)
+- TestConfounders (3 tests)
+- TestMechanismInYAML (3 tests)
+- TestSourceURLValidity (3 tests)
+
+**Asymmetry score:** 0.85
+**Cross-references:** 4 (#33, #171, #257, #140)
+**Confounders:** 3 (2 MODERATE, 1 WEAK)
+**Test corpus:** 578 test files
+**Pushed to GitHub:** (pending)
+
+---
+
 ## Iteration #272 — Mon 2026-08-24 05:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: AI Inside Three-Episode Cross-Entity Title Vocabulary Hierarchy
