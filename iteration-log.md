@@ -1,3 +1,75 @@
+## Iteration #265 — Sun 2026-08-23 18:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Anthropic $2T IPO Target — Publisher Financial Captivity Acceleration
+
+**Mechanism #257:** Anthropic's IPO trajectory has accelerated dramatically between
+May and August 2026, creating exponentially deeper publisher financial captivity
+through the Google/Amazon investor-advertiser triangle.
+
+**Updated Financial Data (all primary-sourced):**
+
+Anthropic:
+- Valuation: $965B Series H (May) → $2T IPO target (FT, 6 investors, Aug 13)
+- Q2 2026 revenue: >$11.5B (14x YoY from $787M, PYMNTS Aug 20)
+- ARR: $9B (Dec 2025) → $65B (Jul 2026) → $100-120B projected EOY
+- Public filing: as soon as end of August 2026, targeting October listing
+- Would surpass SpaceX record (~$1.8T, $75-86.2B raised)
+
+OpenAI:
+- $7B employee tender at flat $852B (Aug 10, self-funded, TechCrunch)
+- IPO delay to 2027 for $1T target (TheStreet)
+- Altman rejected sub-$1T as "nonstarter"
+- PitchBook: 4.8/10 AIBQ, $177.5B per point, "valuation decoupled from fundamentals"
+
+**Publisher Financial Exposure at $2T (vs $965B Series H):**
+
+| Investor | Stake | At $965B | At $2T | Change |
+|----------|-------|----------|--------|--------|
+| Google (14%) | ~14% | ~$135B | ~$280B | +107% |
+| Amazon (15-20%) | 15-20% | ~$145-193B | ~$300-400B | +107% |
+| **Combined** | — | ~$280-328B | ~$580-680B | ~**Doubled** |
+
+Key evidence: Google Q1 2026 reported $28.7B investment gains (mostly Anthropic).
+Amazon Q2 2026 reported $53.4B paper gain (exceeded $27.5B operating income).
+At $2T, these mark-to-market gains grow proportionally.
+
+**Meta contrast:** Zero equivalent IPO exposure. Meta's stock price does not depend
+on any pre-IPO AI company's success. The coverage incentive is structurally asymmetric.
+
+**IPO Race Dynamics:** Same three banks (Goldman Sachs, Morgan Stanley, JPMorgan)
+underwriting both Anthropic AND OpenAI. Anthropic IPOs with ZERO publisher deals
+at $2T; OpenAI has 20+ deals at $852B. Anthropic leapfrogged on valuation ($965B >
+$852B), revenue velocity ($65B vs ~$25-30B ARR), AND IPO timeline.
+
+### Deliverables
+1. **Test file:** `tests/test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py`
+   - 11 classes, 45 tests, all passing
+   - Classes: TestAnthropicIPOAcceleration (7), TestOpenAIIPODelayAndTender (6),
+     TestGoogleAnthropicStakeAtTwoTrillion (5), TestAmazonAnthropicStakeAtTwoTrillion (4),
+     TestCombinedPublisherFinancialExposure (4), TestAnthropicOpenAIIPORaceDynamics (5),
+     TestRevenueAccelerationIPOImplications (3), TestMechanismRegistration (3),
+     TestConfounders (5), TestTestablePredictions (3)
+   - 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK)
+
+2. **Profile updates:**
+   - `profiles/competitor-entities.yaml` — Anthropic $2T target, Q2 revenue $11.5B,
+     EOY ARR projection $100-120B, public filing timeline; OpenAI $7B tender at
+     flat $852B, IPO race dynamics, potential 2027 delay
+   - `profiles/competitor-coverage-research.yaml` — mechanism #257 entry with full
+     finding, confounders, cross-references, source URLs
+   - `README.md` — test count updated (570 files, ~20,380+ tests), new test file listed
+   - `docs/ARCHITECTURE.md` — test count updated, new test file listed
+
+### Stats
+- **New test file:** 1 (45 tests, all passing)
+- **Mechanism ID:** #257
+- **Asymmetry score:** 0.88
+- **Cross-references:** 5 (#203, #36, #28, #58, #38)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 570 test files
+- **Pushed to GitHub:** ✓
+
+
 ## Iteration #264 — Sun 2026-08-23 16:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Tim Hardwick (MacRumors) — Same-Journalist Passive Capture Vocabulary Bifurcation
