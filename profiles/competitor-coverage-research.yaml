@@ -26758,3 +26758,90 @@ publications:
     - https://www.fool.com/investing/2026/06/26/if-anthropic-goes-public-at-1-trillion-or-more-thi/
     test_file: tests/test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py
     test_count: 43
+
+  twit_1096_within_episode_surveillance_technology_vocabulary_gradient:
+    mechanism_id: 262
+    name: within_episode_surveillance_technology_vocabulary_gradient
+    finding: >
+      TWiT 1096 "Fluff for Armor" (Aug 9, 2026) covers THREE surveillance technologies in
+      a single 2h48m episode, creating a natural within-episode vocabulary experiment. Smart
+      glasses get pure alarm framing ("privacy backlash"), ALPR/Flock cameras get alarm plus
+      constructive framing ("backlash and privacy activism"), and UK government surveillance
+      positions Apple as privacy hero ("Apple fights in secret court"). Alarm vocabulary
+      inversely correlates with actual invasiveness — Meta glasses (LED indicator, user-initiated,
+      single device) get most alarm while Flock ALPR (120,000+ cameras, 24/7 automated, every
+      vehicle, 30+ day retention, police sharing, no consent) gets mixed framing. DuckDuckGo's
+      "tongue-in-cheek sunglasses" marketing mockery amplified as legitimate privacy commentary
+      despite DDG being a Google competitor attacking a non-competitor (Meta) for brand positioning.
+    asymmetry_score: 0.73
+    discovery_date: '2026-08-23'
+    episode:
+      number: 1096
+      title: 'Fluff for Armor - Flock Cameras, ALPR Abuse, & DNA Collecting'
+      date: '2026-08-09'
+      duration_minutes: 168
+      host: Leo Laporte
+      guests:
+      - Iain Thomson (The Register)
+      - Nicholas De Leon (Consumer Reports)
+      network: TWiT (This Week in Tech)
+    surveillance_segments:
+      smart_glasses:
+        show_note: 'Smart glasses privacy backlash and DuckDuckGo''s tongue-in-cheek sunglasses'
+        entity: Meta (sole named smart glasses maker)
+        vocabulary: alarm
+        alarm_words: ['backlash']
+        constructive_words: []
+        paired_with: DuckDuckGo competitive mockery amplification
+      alpr_flock:
+        show_note: 'License plate readers spark local backlash and privacy activism'
+        entity: Flock Safety (implicit — title names Flock Cameras)
+        vocabulary: mixed (alarm + constructive)
+        alarm_words: ['backlash']
+        constructive_words: ['activism']
+        invasiveness: 'More invasive — 120k+ cameras, 24/7, every vehicle, 30+ day retention, police sharing'
+      uk_government:
+        show_note: 'UK revives Snooper''s Charter for backdoors, Apple fights in secret court'
+        entity_antagonist: UK Government
+        entity_hero: Apple
+        vocabulary: hero/resistance
+        alarm_words: ['backdoors', 'Snooper''s Charter']
+        constructive_words: ['fights']
+    duckduckgo_mockery:
+      product: 'tongue-in-cheek sunglasses (no cameras, pure marketing mockery)'
+      ddg_actual_competitor: Google Search
+      ddg_marketing_target: Meta glasses
+      pattern: 'Privacy company attacks non-competitor for brand positioning; podcast amplifies as legitimate commentary'
+    meta_fine_stacking:
+      note: 'Same episode also covers Meta $942M New Mexico youth harms fine — dual negative Meta framing in one episode'
+      show_note: 'Meta fined $942 million by New Mexico court for youth harms'
+    confounding_factors:
+    - description: 'Meta has more documented privacy incidents than Flock Safety in mainstream media'
+      strength: MODERATE
+    - description: 'Smart glasses are consumer-facing while ALPR is infrastructure — different salience'
+      strength: MODERATE
+    - description: 'Iain Thomson (The Register) is generally skeptical of all big tech, not just Meta'
+      strength: MODERATE
+    - description: 'DuckDuckGo sunglasses may be genuinely funny/newsworthy independent of competitive motive'
+      strength: WEAK
+    - description: 'ALPR backlash is local/grassroots while glasses backlash is culture-war — different story types'
+      strength: MODERATE
+    cross_references:
+    - mechanism_id: 225
+      relationship: extends
+      description: 'Vergecast three-episode camera vocabulary convergence — TWiT 1096 adds within-episode gradient'
+    - mechanism_id: 261
+      relationship: extends
+      description: 'TNW 451 cross-network framing amplification — same TWiT network, different episode'
+    - mechanism_id: 217
+      relationship: connects
+      description: 'Kmart price democratization backlash transfer — consumer surveillance alarm channeled to Meta'
+    - mechanism_id: 158
+      relationship: connects
+      description: 'Multi-vector cultural delegitimization cascade — DuckDuckGo mockery as cultural vector'
+    source_urls:
+    - https://twit.tv/shows/this-week-in-tech/episodes/1096
+    - https://toppodcast.com/podcast_feeds/all-twit-tv-shows-audio/
+    - https://za.radio.net/podcast/this-week-in-tech2
+    test_file: tests/test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py
+    test_count: 32

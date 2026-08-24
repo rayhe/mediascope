@@ -1,3 +1,55 @@
+## Iteration #267 — Sun 2026-08-23 21:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: TWiT 1096 Within-Episode Surveillance Technology Vocabulary Gradient
+
+**Episode:** TWiT 1096 — "Fluff for Armor: Flock Cameras, ALPR Abuse, & DNA Collecting"
+**Date:** August 9, 2026
+**Duration:** 2h 48m (168 min)
+**Host:** Leo Laporte
+**Guests:** Iain Thomson (The Register), Nicholas De Leon (Consumer Reports)
+
+**New Mechanism:** #262 — Within-Episode Surveillance Technology Vocabulary Gradient
+
+**Finding:** TWiT 1096 covers THREE surveillance technologies in a single episode,
+creating a natural within-episode vocabulary experiment with the same hosts and
+editorial environment:
+
+1. **Smart glasses** → Meta (sole entity) → "privacy backlash" (pure alarm)
+   + DuckDuckGo competitive mockery amplified as legitimate commentary
+2. **ALPR/Flock cameras** → Flock Safety → "backlash and privacy activism" (alarm + constructive)
+   Despite being objectively more invasive (24/7, 120K+ cameras, every vehicle, police sharing)
+3. **UK Snooper's Charter** → Apple = hero ("fights in secret court")
+   Most invasive surveillance, Apple gets best framing
+
+**Key insight:** Alarm vocabulary inversely correlates with actual invasiveness.
+Meta glasses (LED indicator, user-initiated, single device) get most alarm.
+Flock ALPR (24/7, no consent, police database) gets constructive framing.
+DuckDuckGo mockery = Google competitor attacking non-competitor Meta for brand positioning.
+
+**Files changed:**
+- `tests/test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py` (NEW — 32 tests, 9 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #262 appended)
+- `podcast-sentiment.md` (Episode 23 analysis appended)
+- `iteration-log.md` (this entry)
+- `README.md` (test count 571→572)
+- `ARCHITECTURE.md` (test count 571→572)
+
+**Tests added:** 32 (9 classes)
+- TestTWiT1096EpisodeDetails (6 tests)
+- TestWithinEpisodeSurveillanceTechnologyComparison (5 tests)
+- TestVocabularyGradient (5 tests)
+- TestInvasivenessParadox (2 tests)
+- TestDuckDuckGoCompetitiveMockery (3 tests)
+- TestMechanismInYAML (5 tests)
+- TestCrossReferences (4 tests)
+- TestSourceURLs (2 tests)
+
+**Asymmetry score:** 0.73
+**Cross-references:** 4 (#225, #261, #217, #158)
+**Confounders:** 5 (3 MODERATE, 1 WEAK, 1 MODERATE)
+**Test corpus:** 572 test files
+**Pushed to GitHub:** ✓
+
 ## Iteration #266 — Sun 2026-08-23 20:00 PT (Type D: Test & Verify)
 
 ### Focus: YAML Parse Fix, String Mechanism IDs, Test Suite Integrity
