@@ -27483,6 +27483,58 @@ publications:
         strength: WEAK
     test_file: "tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py"
 
+  - mechanism_id: 269
+    title: "Steve Dent Engadget Cross-Entity Camera Wearable Privacy Vocabulary Gradient"
+    type: journalist_cross_entity
+    journalist: "Steve Dent"
+    publication: "Engadget"
+    entities: ["Meta", "Apple"]
+    discovery_date: "2026-08-24"
+    asymmetry_score: 0.72
+    finding: >
+      Same Engadget contributing writer covers Meta glasses with alarm/investigative
+      privacy framing (Mar 2026) and Apple camera AirPods with neutral product
+      framing (Aug 2026). Alarm vocabulary differential 8:1. Apple passive mode
+      (320x320 always-on capture) receives zero scrutiny; contractor review
+      implications for Apple not explored.
+    confounders:
+      count: 4
+      breakdown: "1 STRONG, 2 MODERATE, 1 WEAK"
+      details:
+        - description: >
+            Different news events — Meta article covers a specific contractor abuse
+            scandal (Svenska Dagbladet investigation), while Apple article covers a
+            product leak (code discovery). Different journalistic beats.
+          strength: STRONG
+        - description: >
+            Temporal distance — 5.5 months apart; editorial priorities may shift.
+          strength: MODERATE
+        - description: >
+            Source material — Meta article based on investigative report, Apple
+            article based on product leak.
+          strength: MODERATE
+        - description: >
+            Form factor difference — glasses vs earbuds — but both are
+            camera-equipped wearables.
+          strength: WEAK
+    article_urls:
+      meta: "https://www.engadget.com/wearables/metas-ai-display-glasses-reportedly-share-intimate-videos-with-human-moderators-135939560.html"
+      apple: "https://www.engadget.com/2238891/apple-appears-to-have-leaked-its-camera-equipped-airpods/"
+    cross_references:
+      - mechanism_id: 256
+        relationship: extends
+        description: "Tim Hardwick MacRumors same-journalist passive capture vocabulary bifurcation"
+      - mechanism_id: 252
+        relationship: extends
+        description: "Chokkattu temporal adjacency framing oscillation"
+      - mechanism_id: 246
+        relationship: extends
+        description: "Engadget vocabulary mitigation pattern"
+    testable_predictions:
+      - "If Apple launches camera AirPods and contractor review issues emerge, Steve Dent will apply alarm vocabulary similar to Meta coverage"
+      - "If Meta remediates contractor review and implements on-device processing, Steve Dent's vocabulary will not proportionally soften"
+    test_file: "tests/test_steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient_aug24.py"
+
   - mechanism_number: 282
     mechanism_name: "Raymond Wong Cross-Entity Camera Privacy Vocabulary Concentration"
     journalist: "Raymond Wong"

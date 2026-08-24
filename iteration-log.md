@@ -1,3 +1,22 @@
+## Iteration #274 — Mon 2026-08-24 11:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Steve Dent (Engadget) Camera Wearable Privacy Vocabulary Gradient
+
+**Journalist:** Steve Dent (contributing writer, Engadget, based in Paris)
+**Entities:** Meta, Apple
+
+**Article pair:**
+1. "Meta's AI display glasses reportedly share intimate videos with human moderators" (Mar 3, 2026) — alarm framing, 8+ alarm terms (unknowingly, intimate, sensitive, moderators, underpaid, nude, sexual activity, credit card numbers)
+2. "Apple appears to have leaked its camera-equipped AirPods" (Aug 18, 2026) — neutral product framing, 1 hedged alarm sentence ("technically a surveillance device")
+
+**Finding:** Same journalist covers functionally equivalent camera wearables with 8:1 alarm vocabulary differential. Meta article leads with privacy invasion narrative (Swedish investigation, Kenyan contractors, explicit content descriptions). Apple article leads with product features, mentions privacy in one paragraph with diminishing hedges ("some concerns," "technically," "may turn off"). Apple's 320×320 passive always-on capture mode receives zero scrutiny despite being objectively more invasive than Meta's user-triggered 12MP capture. Apple's Visual Intelligence processing pipeline — which would likely involve similar contractor review — not questioned.
+
+**Confounders:** 4 documented (1 STRONG: different news events/source material; 2 MODERATE: temporal distance, form factor; 1 WEAK: article purpose)
+**Asymmetry score:** 0.72
+**Cross-references:** #256 (Tim Hardwick same-journalist), #252 (temporal adjacency), #246 (Engadget vocabulary mitigation)
+**Mechanism:** #269
+**Test file:** `tests/test_steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient_aug24.py` (34 tests, 10 classes)
+
 ## Iteration #273 — Mon 2026-08-24 06:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: Gizmodo ICE Ban Meta Entity Selection vs OpenAI Camera Device Bore Framing
