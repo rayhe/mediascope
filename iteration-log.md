@@ -9363,3 +9363,15 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
 - **Test corpus:** 581 test files, ~228,534 lines
 - **Pushed to GitHub:** ✓
+
+## Iteration #274 — Mon 2026-08-24 10:00 PT
+- **Type:** B (Journalist Cross-Entity Tracking)
+- **Target:** Raymond Wong, Senior Editor Consumer Tech, Gizmodo (Keleops AG)
+- **Mechanism #282:** Cross-Entity Camera Privacy Vocabulary Concentration
+- **Finding:** Raymond Wong applies alarm vocabulary (glasshole, privacy nightmare, nude videos, extortion, creepy, backlash, spiraling) exclusively to Meta's camera glasses across 7+ articles while covering Samsung Galaxy Glasses (identical 12MP camera) and Google Android XR glasses (cameras confirmed) with neutral-to-enthusiastic vocabulary and zero alarm terms. The privacy surface area is functionally identical across all three products. Wong explicitly acknowledges Google's poor privacy track record in one article, proving awareness of the cross-entity parallel — the asymmetry is in vocabulary deployment, not ignorance. Samsung is entirely absent from Wong's privacy analysis despite having identical 12MP camera hardware launching in the same timeframe.
+- **Key articles analyzed:**
+  - Meta alarm: "Meta Has Smart Glasses Spiraling Towards Glasshole 2.0" (~Mar 2026), "Can Smart Glasses Ever Be Privacy-Friendly?" (~Jun 2026), "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (~Aug 2026), "Buckle Up, the Smart Glasses Backlash Is Coming" (~Oct 2025)
+  - Samsung/Google neutral: "2026 Is About to Be a Blockbuster Year for Smart Glasses" (~Feb 2026), "Samsung's Galaxy XR Is the Future of Wearables" (~Jun 2026), "I Waited One Hour to Try Google's Android XR Smart Glasses" (~May 2025)
+- **Test file:** `tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py`
+- **Updated:** `profiles/competitor-coverage-research.yaml` with mechanism #282
+- **Test count:** 582

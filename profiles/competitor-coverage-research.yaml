@@ -27482,3 +27482,40 @@ publications:
           are news articles about camera wearables.
         strength: WEAK
     test_file: "tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py"
+
+  - mechanism_number: 282
+    mechanism_name: "Raymond Wong Cross-Entity Camera Privacy Vocabulary Concentration"
+    journalist: "Raymond Wong"
+    publication: "Gizmodo (Keleops AG)"
+    discovery_date: "2026-08-24"
+    type: "B"
+    summary: >
+      Raymond Wong, Gizmodo's primary smart glasses correspondent, applies alarm
+      vocabulary (glasshole, privacy nightmare, nude videos, extortion, creepy,
+      backlash, spiraling) exclusively to Meta's camera glasses across 7+ articles
+      while covering Samsung Galaxy Glasses (identical 12MP camera) and Google
+      Android XR glasses (cameras confirmed) with neutral-to-enthusiastic vocabulary
+      and zero alarm terms. The privacy surface area is functionally identical
+      across all three products. Wong explicitly acknowledges Google's poor privacy
+      track record in one article, proving awareness of the cross-entity parallel
+      — the asymmetry is in vocabulary deployment, not ignorance.
+    key_evidence:
+      - "Meta articles: 30+ alarm terms across 4 articles (glasshole, spiraling, extortion)"
+      - "Samsung Galaxy Glasses (12MP camera): ZERO privacy analysis in any article"
+      - "Google Android XR (cameras confirmed): 2 hedged sentences, zero alarm terms"
+      - "'The anti-Meta plan' section header localizes category-level concern to one entity"
+      - "Feb 2026 'Blockbuster Year' article: ZERO privacy mentions for Samsung/Google cameras"
+    counterarguments:
+      - description: >
+          Meta has shipping product with documented misuse incidents; Samsung/Google
+          are pre-launch. BUT Wong's privacy concern is about the hardware form
+          factor (camera on face), which is identical across entities, and he
+          himself wrote "wearing a discreet camera on your face was an incursion
+          on everyone's privacy" — describing the CATEGORY, not Meta specifically.
+        strength: MODERATE
+      - description: >
+          Meta's contractor review scandal is unique. BUT Wong's alarm vocabulary
+          extends far beyond the contractor scandal to include all camera-on-face
+          privacy concerns, which apply equally to Samsung/Google hardware.
+        strength: MODERATE
+    test_file: "tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py"
