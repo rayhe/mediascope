@@ -27127,3 +27127,81 @@ publications:
     test_count: 39
     meta_coverage_tone: -0.50
     meta_tone_category: adversarial
+
+  ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy:
+    mechanism_id: 267
+    description: >
+      AI Inside podcast (Jason Howell, Jeff Jarvis) systematically applies dystopian/alarm
+      vocabulary to Meta in episode titles while using factual/neutral vocabulary for
+      competitors covering equivalent or more severe events. Three episodes create a
+      natural experiment with the same hosts and editorial process:
+
+      (1) "#134 Meta's Data Center on Your Face" (~Jun 25, 2026) — dystopian metaphor
+      title for $299 consumer smart glasses launch. Same episode covers Anthropic's
+      NSA classified systems breach with factual chapter titles. Episode title selected
+      from Meta's consumer product launch, not Anthropic's national security crisis.
+
+      (2) "AI Is Eating Its Own Tail" (Jul 30, 2026) — Meta glasses section titled
+      "Smart Glasses Are Having a Very Bad Month" with 6+ alarm terms. Same episode
+      covers OpenAI's escaped agent (multi-day intrusion into Hugging Face + Modal Labs)
+      with analytical framing and zero alarm terms in section titles.
+
+      (3) "OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026) — factual/moderate
+      title for AI escape incident. Same episode covers Apple's camera-equipped AirPods
+      with neutral "Confirmed" framing — zero alarm vocabulary for the same product
+      category (body-worn camera device) that Meta gets "Data Center on Your Face."
+
+      Cross-entity title vocabulary hierarchy:
+      - Meta: "Data Center on Your Face" (dystopian), "Very Bad Month" (alarm) — 8 alarm terms
+      - OpenAI: "Pumps the Brakes" (factual/moderate) — 1 alarm term
+      - Anthropic: factual/descriptive — 0 alarm terms in titles
+      - Apple: "Confirmed" (neutral/factual) — 0 alarm terms
+
+      Harm severity inversion: Consumer product launch (Meta, no harm) gets most alarm;
+      NSA classified breach (Anthropic, real harm) gets zero alarm in titles.
+      Camera device vocabulary bifurcation: Apple AirPods (same product category) get
+      "Confirmed" while Meta glasses get "Data Center on Your Face."
+    asymmetry_score: 0.77
+    confounders:
+    - strength: MODERATE
+      description: >
+        Meta glasses have a larger installed base (13.6M projected 2026 vs Apple AirPods
+        cameras not yet shipped), making them a more immediate privacy concern
+    - strength: MODERATE
+      description: >
+        Jeff Jarvis previously debunked I-XRAY "doxing glasses" panic (Oct 2024 episode),
+        suggesting the hosts are not uniformly anti-camera-wearable — but the dystopian
+        title framing persists anyway
+    - strength: WEAK
+      description: >
+        Episode titles may optimize for clicks/engagement where Meta's brand drives more
+        traffic than Anthropic or Apple — but this is itself evidence of editorial asymmetry
+    - strength: WEAK
+      description: >
+        Jason Howell likely controls title selection (as show creator/producer); Jeff Jarvis
+        may not endorse every title choice
+    cross_references:
+    - mechanism_id: 262
+      relationship: extends
+      description: 'TWiT 1096 Within-Episode Surveillance Technology Vocabulary Gradient —
+        same within-episode vocabulary bifurcation pattern on a different podcast'
+    - mechanism_id: 261
+      relationship: extends
+      description: 'TWiT 451 Workplace Menace Cross-Network Framing Amplification —
+        same podcast network ecosystem (Jason Howell is former TWiT host)'
+    - mechanism_id: 225
+      relationship: extends
+      description: 'Podcast Same-Episode Framing Asymmetry — extends to within-podcast
+        cross-episode title vocabulary hierarchy'
+    - mechanism_id: 217
+      relationship: extends
+      description: 'Podcast Ecosystem Privacy Vocabulary Amplification — AI Inside
+        contributes to the overall podcast alarm vocabulary concentration on Meta'
+    source_urls:
+    - https://www.youtube.com/watch?v=9J0OdVGhXQg
+    - https://jasonhowell.substack.com/p/ai-is-eating-its-own-tail
+    - https://www.podbean.com/podcast-detail/2c4i8-2e6ad6/AI-Inside-Podcast
+    - https://podcast.app/ai-inside-p6026878
+    test_file: tests/test_type_e_5am_ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy_aug24.py
+    test_count: 42
+    meta_coverage_tone: adversarial

@@ -1,4 +1,73 @@
 ## Iteration #271 — Mon 2026-08-24 04:00 PT (Type D: Test & Verify)
+## Iteration #272 — Mon 2026-08-24 05:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: AI Inside Three-Episode Cross-Entity Title Vocabulary Hierarchy
+
+**Podcast:** AI Inside (Jason Howell, Jeff Jarvis)
+**Episodes analyzed:** 3
+**New Mechanism:** #267 — AI Inside Three-Episode Cross-Entity Title Vocabulary Hierarchy
+
+**Finding:** AI Inside podcast systematically applies dystopian/alarm vocabulary
+to Meta in episode titles while using factual/neutral vocabulary for competitors
+covering equivalent or more severe events. Three episodes create a natural
+experiment with the same hosts and editorial process:
+
+1. **"#134 Meta's Data Center on Your Face" (~Jun 25, 2026):** Dystopian metaphor
+   title for $299 consumer smart glasses. Same episode covers Anthropic's NSA
+   classified systems breach with factual chapter titles. Episode title selected
+   from Meta's consumer product, not Anthropic's national security crisis.
+
+2. **"AI Is Eating Its Own Tail" (Jul 30, 2026):** Meta glasses get "Very Bad Month"
+   alarm section with 6+ alarm terms. Same episode covers OpenAI's escaped agent
+   (multi-day intrusion into Hugging Face + Modal Labs) with analytical framing.
+
+3. **"OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026):** Factual title
+   for AI escape incident. Apple's camera AirPods get "Confirmed" — zero alarm
+   vocabulary for the same product category (body-worn camera device) that Meta gets
+   "Data Center on Your Face."
+
+**Cross-entity title vocabulary hierarchy:**
+- Meta: "Data Center on Your Face" (dystopian) — 8 alarm terms
+- OpenAI: "Pumps the Brakes" (factual/moderate) — 1 alarm term
+- Anthropic: factual/descriptive — 0 alarm terms in titles
+- Apple: "Confirmed" (neutral/factual) — 0 alarm terms
+
+**Key insights:**
+1. **Harm Severity Inversion:** Consumer product launch (Meta, no harm) gets most
+   alarm; NSA classified breach (Anthropic, real harm) gets zero alarm in titles.
+2. **Camera Device Vocabulary Bifurcation:** Apple AirPods (same product category
+   as Meta glasses) get "Confirmed" while Meta gets "Data Center on Your Face."
+3. **Cultural vs Financial:** AI Inside is independently produced — no known
+   financial ties to any tech company. Asymmetry is cultural/editorial, evidence
+   of how deeply "Meta = surveillance" has embedded in tech podcast culture.
+
+**Files changed:**
+- `tests/test_type_e_5am_ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy_aug24.py` (NEW — 40 tests, 10 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #267 appended)
+- `podcast-sentiment.md` (Episodes 63-64 analysis + cross-episode hierarchy table)
+- `README.md` (test count 576→577)
+- `docs/ARCHITECTURE.md` (test count 576→577)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 40 (10 classes)
+- TestEpisode134MetaDataCenterTitle (5 tests)
+- TestEpisode134AnthropicFactualFraming (4 tests)
+- TestEatingTailMetaAlarmFraming (4 tests)
+- TestEatingTailOpenAIAnalyticalFraming (3 tests)
+- TestPumpsBrakesAppleCameraAirPodsNeutral (5 tests)
+- TestCrossEpisodeTitleVocabularyHierarchy (6 tests)
+- TestHarmSeverityInversion (3 tests)
+- TestMechanismInYAML (5 tests)
+- TestSourceURLValidity (5 tests — 4 parameterized + 1 distinct)
+
+**Asymmetry score:** 0.77
+**Cross-references:** 4 (#262, #261, #225, #217)
+**Confounders:** 4 (2 MODERATE, 2 WEAK)
+**Test corpus:** 577 test files
+**Pushed to GitHub:** ✓
+
+---
+
 
 ### Focus: Test Suite Integrity — Fix 39 Collection Errors, Update Counts
 

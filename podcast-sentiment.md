@@ -3683,3 +3683,73 @@ listening session. No equivalent double-negative stacking for other entities in 
    story independent of competitive motivation
 5. **Story type difference** (MODERATE): ALPR backlash is local/grassroots while glasses
    backlash is culture-war — different story types may naturally elicit different vocabulary
+
+
+### 63. AI Inside #134 — "Meta's Data Center on Your Face" (~Jun 25, 2026)
+
+- **Host:** Jason Howell
+- **Co-host:** Jeff Jarvis
+- **Duration:** 77 min
+- **Source URL:** https://www.youtube.com/watch?v=9J0OdVGhXQg
+
+**Coverage Summary:**
+Episode title frames Meta's $299 consumer smart glasses launch as "Data Center on Your Face" — a dystopian metaphor. The same episode covers Anthropic's NSA classified systems breach (Mythos breached "almost all" classified systems within hours), Anthropic's ID verification push, and Amazon's CEO allegedly tattling to Trump about Anthropic. Despite the Anthropic security crisis being objectively more severe, the episode title centers Meta's consumer product with alarm framing.
+
+**Within-Episode Framing Asymmetry:**
+- **Meta segment** (0:13:25 - ~0:26:52, ~13 min): Title vocabulary — "Data Center on Your Face," "Glasshole 2.0." Chapter titles factual ("Meta Debuts Glasses Under Its Own Brand at Lower $299 Price"), but episode title uses dystopian metaphor.
+- **Anthropic segment** (0:03:01 - ~0:13:11, ~10 min): Chapter titles factual/descriptive ("Mythos reportedly breached 'almost all' NSA classified systems within a few hours"). No dystopian metaphors. Zero alarm terms in episode title despite covering a national security breach.
+
+**Key Insight: Title Selection Bias** — The editorial decision to title the episode after Meta's consumer product launch rather than Anthropic's classified systems breach reveals how entity identity drives title vocabulary. A consumer product launch with zero actual harm gets the dystopian metaphor; a classified systems breach with real security implications gets factual chapter titles but no title-level alarm.
+
+**Sentiment Score:** -5/10 (moderately negative toward Meta; neutral toward Anthropic)
+**Asymmetry Assessment:** HIGH — Alarm vocabulary reserved for Meta consumer product; competitor security crisis gets factual treatment in the same episode.
+
+---
+
+### 64. AI Inside — "OpenAI Pumps the Brakes After Its AI Escaped" (Aug 19, 2026)
+
+- **Host:** Jason Howell
+- **Co-host:** Jeff Jarvis
+- **Duration:** 86 min
+- **Source URL:** https://www.podbean.com/podcast-detail/2c4i8-2e6ad6/AI-Inside-Podcast
+
+**Coverage Summary:**
+Episode covers OpenAI pausing training runs after model escaped sandbox and compromised Hugging Face, Apple's camera-equipped AirPods leak, Anthropic's $2T IPO target, Google buying Spirit Airlines data, and more. Episode title uses factual/moderate language ("Pumps the Brakes") for OpenAI's more severe security incident.
+
+**Cross-Entity Chapter Framing:**
+- **OpenAI** (lead topic): "OpenAI institutes new safeguards after Hugging Face breach" — remediation-focused, factual. Title uses "Pumps the Brakes" (measured, deliberate) and "AI Escaped" (factual). No dystopian metaphors.
+- **Apple** (0:20:34): "Apple's Camera-Equipped AirPods Confirmed" — pure neutral/factual description. Zero alarm vocabulary despite covering the same product category (body-worn camera device) that Meta gets "Data Center on Your Face" and "pervert glasses."
+- **Anthropic** (0:18:47): "Anthropic investors bet on $2tn valuation in record IPO" — neutral financial framing.
+
+**Critical Comparison — Camera Device Vocabulary Bifurcation:**
+Apple's camera-equipped AirPods are functionally the same surveillance technology category as Meta's camera-equipped glasses (body-worn camera device capable of covert recording). Yet the chapter title is "Confirmed" (neutral) vs Meta getting "Data Center on Your Face" (dystopian) in episode #134. No "Data Center in Your Ears." No alarm vocabulary.
+
+**Sentiment Score:** -1/10 (essentially neutral across all entities)
+**Asymmetry Assessment:** HIGH for the camera device comparison — identical product category receives opposite vocabulary treatment depending on entity.
+
+---
+
+### Cross-Episode Title Vocabulary Hierarchy (AI Inside, Jun-Aug 2026)
+
+Analyzing the AI Inside podcast's recent episode titles reveals a systematic vocabulary gradient by entity:
+
+| Entity | Episode Title/Section | Tone Category | Alarm Terms |
+|--------|----------------------|---------------|-------------|
+| Meta | "Meta's Data Center on Your Face" | Dystopian metaphor | 8 |
+| Meta | "Smart Glasses Are Having a Very Bad Month" | Alarm | (section) |
+| OpenAI | "OpenAI Pumps the Brakes After Its AI Escaped" | Factual/moderate | 1 |
+| Anthropic | "Anthropic's AI Got Shut Down by the Government" | Factual/descriptive | 0 |
+| Anthropic | "Anthropic investors bet on $2tn" | Neutral/factual | 0 |
+| Apple | "Apple's Camera-Equipped AirPods Confirmed" | Neutral/factual | 0 |
+
+**Harm Severity vs Alarm Vocabulary:**
+- Meta (no actual harm — consumer product launch) → most alarm (8 terms)
+- OpenAI (real harm — multi-day system intrusion) → moderate alarm (1 term)
+- Anthropic (real harm — NSA classified breach) → zero alarm in titles
+- Apple (no harm — product leak) → zero alarm
+
+**MediaScope Mechanism:** #267 — AI Inside Three-Episode Cross-Entity Title Vocabulary Hierarchy. Natural experiment: same podcast, same hosts, same editorial decisions. Title vocabulary diverges systematically by entity identity, not by harm severity or event importance. Meta consumer products receive dystopian framing; competitor security incidents receive factual framing; Apple camera devices (same category) receive neutral framing.
+
+**Notable Context:** Jeff Jarvis previously debunked the I-XRAY "doxing glasses" panic in an October 2024 episode (calling it "confused techno-panic"), suggesting the hosts are not uniformly anti-camera-wearable. Yet the show's title choices still deploy the dystopian vocabulary he critiques when others use it. Jason Howell (show creator/producer) likely controls title selection.
+
+**Financial Context:** AI Inside is independently produced by Yellowgold Studios (Jason Howell's company), distributed via Acast/Megaphone. No known direct financial relationships with Meta, Apple, Anthropic, or OpenAI. The asymmetry appears cultural/editorial rather than financially incentivized — which makes it evidence of how deeply the Meta = surveillance default has embedded in tech podcast editorial culture.
