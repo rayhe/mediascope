@@ -26845,3 +26845,92 @@ publications:
     - https://za.radio.net/podcast/this-week-in-tech2
     test_file: tests/test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py
     test_count: 32
+  fastco_anthropic_triple_aspirational_meta_controversy_framing:
+    mechanism_id: 263
+    mechanism_name: fast_company_anthropic_triple_aspirational_meta_controversy_framing
+    publication: Fast Company
+    entities_compared:
+    - anthropic
+    - meta
+    - google
+    finding: >-
+      Fast Company applies systematically different framing to Anthropic vs Meta across three
+      article categories. Anthropic's product used in actual cyberattacks on government agencies
+      and banks gets fascinated/historic framing ("watershed moment," "first documented case").
+      Anthropic's safety overblocking gets sympathetic framing ("plays it too safe"). Anthropic's
+      office culture gets aspirational puff-piece treatment ("surprisingly AI-first," "Claude
+      Effect"). Meanwhile, Meta's glasses camera gets alarm/controversy framing ("many
+      controversies," "monumentally bad idea," "should be abandoned"). Google/Warby Parker's
+      identical product (smart glasses with cameras) gets aspirational market framing ("could
+      change the wearables market"). Real-world harm severity is inversely correlated with
+      coverage alarm: Claude attacked actual government systems; Meta's facial recognition
+      feature is dormant. Yet Claude coverage is aspirational and Meta coverage is adversarial.
+    anthropic_articles:
+    - headline: "Anthropic says an AI may have just attempted the first truly autonomous cyberattack"
+      url: https://www.fastcompany.com/91442330/anthropic-says-an-ai-may-have-just-attempted-the-first-truly-autonomous-cyberattack
+      framing: fascinated_historic
+      privacy_vocabulary_count: 0
+      advocacy_groups_quoted: 0
+    - headline: "Anthropic's Claude Fable 5 plays it too safe on safety, developers say"
+      url: https://www.fastcompany.com/91558105/anthropic-claude-fable-5-too-touchy-developers-say
+      framing: sympathetic_overcaution
+      privacy_vocabulary_count: 0
+      advocacy_groups_quoted: 0
+    - headline: "Anthropic's office is surprisingly AI-first, even for an AI company"
+      url: https://www.fastcompany.com/91524493/anthropic-claude-ai-workplace
+      framing: aspirational_puff_piece
+      anthropic_employees_quoted: 4
+      third_party_experts_quoted: 4
+      privacy_vocabulary_count: 0
+    meta_articles:
+    - headline: "The many controversies of Meta's AI glasses"
+      url: https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+      framing: alarm_controversy
+      privacy_vocabulary_count: 6
+      advocacy_groups_quoted: 1
+    competitor_glasses_articles:
+    - headline: "Warby Parker and Google take on Meta with new AI smart glasses"
+      url: https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
+      entity: google_warby_parker
+      framing: aspirational_market
+      privacy_vocabulary_count: 1
+      privacy_sentence_position: buried_paragraph_7
+    meta_coverage_tone: adversarial
+    asymmetry_score: 0.81
+    confounding_factors:
+    - description: 'Meta has a longer track record of documented privacy incidents than Anthropic,
+        which legitimately invites more scrutiny'
+      strength: STRONG
+    - description: 'Anthropic self-disclosed the cyberattack — transparency may genuinely
+        merit different editorial treatment than external investigation'
+      strength: MODERATE
+    - description: 'Fable 5 article was about developer inconvenience, a legitimately
+        different editorial beat than privacy/surveillance'
+      strength: MODERATE
+    - description: 'Different Fast Company reporters wrote the articles — beat assignment
+        may explain some framing differences'
+      strength: WEAK
+    - description: 'Google/Warby Parker glasses had not shipped yet — no real-world misuse
+        data existed, though Anthropic Claude WAS actively being misused'
+      strength: WEAK
+    cross_references:
+    - mechanism_id: 201
+      relationship: extends
+      description: 'Harry McCracken (Fast Company) CEO attribution humanization differential
+        — same publication, same product category, entity-dependent vocabulary'
+    - mechanism_id: 121
+      relationship: extends
+      description: 'Fast Company Snap/Meta privacy vocabulary bifurcation — same publication
+        applying different vocabulary to same product type across entities'
+    - mechanism_id: 33
+      relationship: connects
+      description: 'OpenAI facial recognition privacy parity — same pattern of dormant Meta
+        feature getting alarm while competitor active features get silence'
+    source_urls:
+    - https://www.fastcompany.com/91442330/anthropic-says-an-ai-may-have-just-attempted-the-first-truly-autonomous-cyberattack
+    - https://www.fastcompany.com/91558105/anthropic-claude-fable-5-too-touchy-developers-say
+    - https://www.fastcompany.com/91524493/anthropic-claude-ai-workplace
+    - https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+    - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
+    test_file: tests/test_fastco_anthropic_triple_aspirational_meta_controversy_framing_aug23.py
+    test_count: 30

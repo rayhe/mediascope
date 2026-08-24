@@ -1,3 +1,72 @@
+## Iteration #268 — Sun 2026-08-23 22:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Fast Company Anthropic Triple-Aspirational vs Meta Controversy Framing
+
+**Publication:** Fast Company (Mansueto Ventures)
+**Competitor:** Anthropic (+ Google/Warby Parker for glasses comparison)
+**Mechanism #263:** Fast Company Anthropic Triple-Article Aspirational Framing vs
+Meta Adversarial Controversy Framing
+
+**Finding:** Fast Company applies systematically different framing to Anthropic vs
+Meta across five articles. Three Anthropic articles all receive positive/sympathetic
+framing, while Meta gets alarm/controversy framing for equivalent or lesser issues:
+
+1. **Anthropic cyberattack article** — Claude used in actual attacks on government
+   agencies, banks, and chemical companies. Headline: "first truly autonomous
+   cyberattack" (fascinated/historic). Anthropic framed as transparent reporter, not
+   negligent product owner. Zero privacy advocacy groups quoted. Zero alarm vocabulary.
+
+2. **Anthropic Fable 5 article** — Safety overblocking presented as "plays it too safe"
+   (sympathetic). Anthropic given apology space. Jailbreak claims dismissed via
+   Anthropic's own framing ("much ado about not much").
+
+3. **Anthropic office article** — 127-line aspirational puff piece. Four named employees
+   quoted with photos. "Claude Effect" and 200% productivity claims amplified uncritically.
+
+4. **Meta glasses article** — "The many controversies of Meta's AI glasses." EFF quoted:
+   "monumentally bad idea that should be abandoned."
+
+5. **Warby Parker/Google glasses** — Same product category (smart glasses with cameras).
+   "Could change the wearables market." Privacy in one buried sentence.
+
+**Key insight: Harm Severity Inversion** — Anthropic's Claude was ACTUALLY USED in
+cyberattacks on government systems, causing real-world data exfiltration. Meta's facial
+recognition feature is DORMANT. Yet the actual-harm product gets aspirational framing
+while the dormant-feature product gets maximum alarm vocabulary. The relationship
+between real-world harm severity and editorial alarm vocabulary is inverted.
+
+**Vocabulary bifurcation:**
+- Meta coverage: 6+ alarm terms (controversies, without permission, monumentally bad,
+  abandoned, surveillance implications)
+- Anthropic coverage: 0 alarm terms across ALL THREE articles
+- Warby Parker: 2 alarm terms, both in buried generic context
+- Anthropic coverage: 3+ sympathetic terms (too safe, apologize, wrong tradeoff)
+- Meta coverage: 0 sympathetic terms
+
+**Files changed:**
+- `tests/test_fastco_anthropic_triple_aspirational_meta_controversy_framing_aug23.py` (NEW — 35 tests, 10 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #263 appended)
+- `README.md` (test count 572→573)
+- `docs/ARCHITECTURE.md` (test count 571→573)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 35 (10 classes)
+- TestAnthropicCyberattackFraming (5 tests)
+- TestAnthropicFable5SympathyFraming (4 tests)
+- TestAnthropicOfficeAspirationalFraming (3 tests)
+- TestMetaControversiesAlarmFraming (3 tests)
+- TestWarbyParkerAspirationFraming (4 tests)
+- TestCrossEntityVocabularyBifurcation (3 tests)
+- TestHarmSeverityInversion (2 tests)
+- TestMechanismInYAML (5 tests)
+- TestSourceURLValidity (6 tests — 5 parameterized + 1 distinct check)
+
+**Asymmetry score:** 0.81
+**Cross-references:** 3 (#201, #121, #33)
+**Confounders:** 5 (1 STRONG, 2 MODERATE, 2 WEAK)
+**Test corpus:** 573 test files
+**Pushed to GitHub:** ✓
+
 ## Iteration #267 — Sun 2026-08-23 21:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: TWiT 1096 Within-Episode Surveillance Technology Vocabulary Gradient
