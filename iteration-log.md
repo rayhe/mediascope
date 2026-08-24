@@ -9578,3 +9578,100 @@ passive mode, 12+ to Meta equivalent.
 - **Test file:** `tests/test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py`
 - **Updated:** `profiles/competitor-coverage-research.yaml` with mechanism #282
 - **Test count:** 582
+
+## Iteration #278 — Mon 2026-08-24 15:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: TechCrunch (Yahoo/Apollo) Data Practice Vocabulary Bifurcation — Anthropic vs Meta
+
+**Publication:** TechCrunch (Yahoo, Apollo Global Management)
+**Competitor entity:** Anthropic
+**Comparison entity:** Meta
+**Novel pattern:** DATA PRACTICE VOCABULARY BIFURCATION — SAME DATA TYPE, OPPOSITE FRAMING
+
+### Key Finding — Mechanism #284
+
+Within a 22-day window (Jul 27 – Aug 19, 2026), TechCrunch published articles covering
+both Anthropic and Meta data practices with measurably different vocabulary. BOTH entities
+exposed children's personal data, yet received opposite editorial treatment:
+
+**Anthropic (Jul 27):** Claude shared chats indexed by Google contained "names and phone
+numbers of primary school-aged children" — TechCrunch headline: "PSA: Your Claude shared
+chats and Artifacts may have ended up on Google" (advisory/helpful framing, passive voice).
+
+**Meta (Aug 7):** "New Mexico court orders Meta to pay additional $567M in child safety
+case" (punitive framing, active voice, AG quotes amplified).
+
+**THREE-ARTICLE ANTHROPIC COMPARISON:**
+
+| Article | Date | Journalist | Framing | Alarm Terms |
+|---------|------|-----------|---------|-------------|
+| Claude shared chats on Google | Jul 27 | Franceschi-Bicchierai | PSA (advisory) | 0 |
+| Data retention "one-up" | Aug 19 | Lucas Ropek | Competitive landscape | 0 |
+| Claude ID/biometric collection | Jun 22 | Zack Whittaker | Playful/casual | 0 |
+
+**SIX-ARTICLE META COMPARISON:**
+
+| Article | Date | Framing | Key Vocabulary |
+|---------|------|---------|----------------|
+| NM $567M child safety | Aug 7 | Punitive | harms, exploitation, nuisance |
+| NM first courtroom defeat | Mar 24 | Adversarial | defeat, held accountable |
+| Limit evidence | Jan 22 | Suspicion | limit, block, keep out |
+| Parental supervision futile | Feb 17 | Systemic indictment | addictive, compulsive |
+| Suppressed research | Sep 2025 | Cover-up | suppressed, deleted, unlawfully |
+| Blind eye to kids | Nov 2023 | Accusatory | blind eye, unlawfully, COPPA |
+
+**NOVEL CONTRIBUTIONS:**
+
+1. **SAME DATA TYPE, BIFURCATED VOCABULARY** — Children's personal information from
+   two entities gets PSA-advisory treatment (Anthropic) vs punitive-accusation treatment
+   (Meta) in the same publication within 22 days. First documented case in MediaScope
+   corpus of identical data type receiving vocabulary inversion.
+
+2. **BIOMETRIC COLLECTION VOCABULARY ZERO** — Anthropic collecting government IDs and
+   biometric face geometry templates (legally protected in Illinois under BIPA) gets
+   "Claude may want to see your ID" — playful, anthropomorphized. Meta's dormant
+   NameTag code generates "facial recognition," "surveillance" across publications.
+
+3. **LUCAS ROPEK MIGRATION EXPERIMENT** — Ropek moved from Gizmodo (adversarial tone)
+   to TechCrunch (product-oriented). Same journalist produces different vocabulary at
+   different institutional homes, supporting institutional voice > individual journalist
+   thesis.
+
+4. **FOLLOW-UP CASCADE ASYMMETRY** — Meta child safety: 6+ articles building narrative.
+   Anthropic children's data exposure: 1 article, no follow-up.
+
+**Financial Context:**
+- Yahoo's ad network competes with Meta's $60B ad platform
+- Apollo Global Management AI infrastructure investments create deal-flow adjacency
+  with Anthropic's $2T pre-IPO trajectory
+- Financial architecture predicts: softer Anthropic coverage, harder Meta coverage
+
+**Confounders:** 6 documented (2 STRONG: severity/intentionality difference, litigation
+context; 2 MODERATE: beat assignment, data vector difference; 2 WEAK: accumulated
+reputation, article type)
+
+**Asymmetry score:** 0.72 (tempered by strong confounders)
+
+**Files changed:**
+- `tests/test_techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation_aug24.py` (NEW — 35 tests, 10 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #284 added)
+- `README.md` (586→587 test files, ~21,131→~21,166 tests)
+- `docs/ARCHITECTURE.md` (586→587 test files, ~21,131→~21,166 tests)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 35 (10 classes)
+- TestHeadlineFramingBifurcation (5 tests)
+- TestSameDataTypeDifferentVocabulary (4 tests)
+- TestCompanyResponseFraming (3 tests)
+- TestDataRetentionCompetitiveFarming (3 tests)
+- TestBiometricCollectionVocabularyAsymmetry (3 tests)
+- TestFollowUpCascadeAsymmetry (3 tests)
+- TestFinancialIncentiveArchitecture (3 tests)
+- TestLucasRopekCrossEntityVocabulary (3 tests)
+- TestConfounders (6 tests)
+- TestAsymmetryScore (2 tests)
+
+**Test corpus:** 587 test files
+**Pushed to GitHub:** (pending)
+
+---

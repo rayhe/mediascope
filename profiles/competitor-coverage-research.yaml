@@ -27713,3 +27713,81 @@ publications:
           Host's personal holiday experience with Meta glasses grounds coverage in genuine reality.
         strength: STRONG
     test_file: "tests/test_type_e_2pm_techradar_podcast_future_plc_cross_entity_chapter_vocabulary_aspiration_inversion_aug24.py"
+
+  techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation:
+    mechanism_id: 284
+    type: competitor_coverage_deep_dive
+    publication: TechCrunch
+    publication_owner: Yahoo (Apollo Global Management)
+    competitor_entity: Anthropic
+    comparison_entity: Meta
+    pattern: data_practice_vocabulary_bifurcation
+    finding: >
+      Within a 22-day window (Jul 27 - Aug 19, 2026), TechCrunch published articles
+      covering both Anthropic and Meta data practices with measurably different vocabulary.
+      Both entities exposed children's personal data, yet TechCrunch applied ADVISORY
+      framing to Anthropic (PSA headline, passive voice, remediation narrative) and
+      PUNITIVE framing to Meta (orders/pay headlines, active accusatory voice, 6-article
+      cascade). Anthropic's Claude shared chats exposed "names and phone numbers of
+      primary school-aged children" — headline: "PSA: Your Claude shared chats may have
+      ended up on Google." Meta's data collection generated "New Mexico court orders Meta
+      to pay additional $567M in child safety case." Same data type, opposite vocabulary.
+      Anthropic's 30-day mandatory enterprise data retention framed as competitive
+      landscape ("OpenAI seeks to one-up Anthropic"), not privacy violation. Anthropic's
+      biometric face geometry collection headline: playful ("Claude may want to see your
+      ID"). Lucas Ropek (Gizmodo->TechCrunch migration) exemplifies institutional voice
+      shift — same journalist, different vocabulary at different publication homes.
+    financial_context: >
+      Yahoo (Apollo Global Management $50B+ AUM) competes with Meta's $60B ad platform.
+      Apollo AI infrastructure investments create deal-flow adjacency with Anthropic's
+      $2T pre-IPO trajectory. Financial competition with Meta predicts adversarial
+      vocabulary; financial adjacency with Anthropic predicts neutral vocabulary.
+    asymmetry_score: 0.72
+    confounders:
+      - strength: STRONG
+        description: Meta's issues involve years of deliberate platform design; Anthropic's was a feature-level incident
+      - strength: STRONG
+        description: Meta subject to 29-state litigation with massive discovery; litigation drives adversarial framing
+      - strength: MODERATE
+        description: Different journalists cover different beats with different orientations
+      - strength: MODERATE
+        description: Meta issues involve minors as users; Anthropic involves minors' data in adult shared chats
+      - strength: WEAK
+        description: Meta has accumulated privacy reputation (Cambridge Analytica); Anthropic is newer
+      - strength: WEAK
+        description: Article types differ - court coverage inherently punitive vs product coverage inherently neutral
+    sources:
+      - url: https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/
+        date: 2026-07-27
+        journalist: Lorenzo Franceschi-Bicchierai
+        headline: "PSA: Your Claude shared chats and Artifacts may have ended up on Google"
+      - url: https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
+        date: 2026-08-19
+        journalist: Lucas Ropek
+        headline: "OpenAI seeks to one-up Anthropic with new customer privacy protections"
+      - url: https://techcrunch.com/2026/06/22/anthropic-says-claude-may-want-to-see-your-id/
+        date: 2026-06-22
+        journalist: Zack Whittaker
+        headline: "Anthropic says Claude may want to see your ID"
+      - url: https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/
+        date: 2026-08-07
+        journalist: Ivan Mehta
+        headline: "New Mexico court orders Meta to pay additional $567M in child safety case"
+      - url: https://techcrunch.com/2026/03/24/new-mexico-just-handed-meta-its-first-courtroom-defeat-over-child-safety-and-the-rest-of-the-country-is-watching/
+        date: 2026-03-24
+        headline: "New Mexico just handed Meta its first courtroom defeat over child safety"
+      - url: https://techcrunch.com/2025/09/08/meta-suppressed-childrens-safety-research-four-whistleblowers-claim/
+        date: 2025-09-08
+        headline: "Meta suppressed children's safety research, 4 whistleblowers claim"
+    cross_references:
+      - mechanism_id: 121
+        description: Fast Company Snap/Meta vocabulary asymmetry
+      - mechanism_id: 114
+        description: TechCrunch Yahoo Apollo privacy indictment framing
+      - mechanism_id: 98
+        description: Gizmodo clean control Anthropic adversarial consistency
+      - mechanism_id: 62
+        description: WIRED Anthropic agent framing asymmetry
+    test_file: tests/test_techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation_aug24.py
+    tests_count: 35
+    test_classes: 10
