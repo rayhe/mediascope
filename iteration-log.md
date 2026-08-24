@@ -9334,3 +9334,32 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 4 (2 MODERATE, 2 WEAK)
 - **Test corpus:** 580 test files, ~227,915 lines
 - **Pushed to GitHub:** ✓
+
+---
+
+## Iteration #274 — Mon 2026-08-24 09:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Rotation:** A(#273)-E(#272)-A(#271)-E(#270)-D(#269)-C(#268)-B(#267)→**B(#274)**
+
+**Finding:** Lawrence Bonk (Engadget/Yahoo) covers Apple's camera-equipped AirPods with CURIOUS/PLAYFUL vocabulary ("pretty dang weird," functional description, zero privacy sentences) and Meta's camera-equipped glasses with ALARM/STIGMA vocabulary ("creeps," "pervert glasses," "predator glasses," "harassment," 14 alarm terms, 36% privacy density). Both are camera wearables covered by the same journalist within 30 days. Apple's passive always-on 320x320 capture is objectively more privacy-invasive than Meta's user-triggered 12MP capture, yet receives zero alarm vocabulary — a measurable severity inversion at the individual journalist level.
+
+**Novel contribution:** First same-journalist Apple-vs-Meta camera wearable vocabulary inversion at Engadget, extending #198 (Bonk beat-assignment routing) by eliminating the beat-assignment confound — Bonk covers BOTH entities himself with different vocabulary. Second Engadget journalist (after Billy Steele, #267) exhibiting the same AirPods vocabulary mitigation pattern, strengthening the publication-level finding. Also documents policy impact context: WIRED's Miles Klee "Rise of the Ray-Ban Meta Creep" (Mar 23, 2026) was cited in California SB 1130, while Apple camera wearables have generated zero comparable legislative scrutiny. Additionally documents WIRED coverage selection silence on Anthropic Claude autonomous cyberattacks (3 organizations breached, self-replicating malware, ~9,000 targets scanned) vs extensive Meta glasses privacy coverage.
+
+**Key asymmetry:** Bonk Meta article: 14 alarm terms, 2 stigmatizing labels, 1 entity-personalization blame sentence, 8 privacy sentences (36% density). Bonk Apple article: 0 alarm terms, 0 stigmatizing labels, 0 entity-personalization, 0 privacy sentences (0% density). Same journalist, same publication, same product category, <30 days apart.
+
+**Sources:**
+- https://www.engadget.com/2222008/instagram-is-now-banning-users-who-make-creepy-content-with-meta-glasses/
+- https://WWW.ENGADGET.COM/author/lawrence-bonk/
+- https://www.engadget.com/2238891/apple-appears-to-have-leaked-its-camera-equipped-airpods/
+- https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+- California SB 1130 (cites Miles Klee/WIRED article)
+- https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20/
+- https://venturebeat.com/security/three-claude-agents-given-conflicting-orders-sabotaged-each-other-on-a-shared-server-then-didnt-tell-users-what-theyd-done
+
+**Deliverables:**
+- **Test file:** `tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py` — 10 classes, 46 tests (all passing)
+- **YAML:** Mechanism #271 added to `profiles/competitor-coverage-research.yaml`
+- **Cross-references:** #198 (Bonk beat-assignment stigma concentration), #245 (cross-publication AirPods vocabulary gradient), #270 (cross-publication AirPods label containment), #267 (Billy Steele AirPods vocabulary mitigation), #207 (WIRED triple-reporter AirPods silence)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 581 test files, ~228,534 lines
+- **Pushed to GitHub:** ✓

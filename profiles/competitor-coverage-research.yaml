@@ -27405,3 +27405,80 @@ publications:
           (72h) and unanimity (5/5 shield, 0/5 scrutiny) suggest structural bias.
         strength: WEAK
     test_file: "tests/test_cross_publication_apple_camera_airpods_pervertpods_label_containment_aug24.py"
+
+  - mechanism_id: 271
+    title: "Lawrence Bonk (Engadget) — Cross-Entity Camera Wearable Vocabulary Inversion"
+    type: "Journalist Cross-Entity Tracking (Type B)"
+    discovery_date: "2026-08-24"
+    journalist: "Lawrence Bonk"
+    publication: "Engadget (Yahoo Inc.)"
+    entities: ["Apple", "Meta"]
+    asymmetry_score: 0.82
+    description: >
+      Same Engadget journalist covers Apple's camera AirPods with CURIOUS/PLAYFUL
+      vocabulary ("pretty dang weird") and Meta's camera glasses with ALARM/STIGMA
+      vocabulary ("creeps," "pervert glasses," "predator glasses," "harassment").
+      Both products are camera wearables. Apple's passive always-on 320x320 capture
+      is objectively more privacy-invasive than Meta's user-triggered 12MP capture,
+      yet receives zero alarm vocabulary. Privacy density: Meta 36%, Apple 0%.
+      Extends #198 (Bonk beat-assignment routing) by showing Bonk covers BOTH
+      entities himself with different vocabulary, eliminating the beat-assignment
+      confound. Also documents WIRED coverage selection silence on Anthropic Claude
+      autonomous cyberattacks (3 organizations breached, self-replicating malware)
+      vs extensive Meta glasses privacy coverage, and notes Miles Klee's "Rise of
+      the Ray-Ban Meta Creep" was cited in California SB 1130.
+    articles:
+      - title: "We have more details on Apple's camera-equipped AirPods and they are pretty dang weird"
+        journalist: "Lawrence Bonk"
+        publication: "Engadget"
+        date: "2026-08-21"
+        entity: "Apple"
+        alarm_vocabulary_count: 0
+        privacy_density: 0.0
+      - title: "Instagram Is Now Banning Users Who Make Creepy Content With Meta Glasses"
+        journalist: "Lawrence Bonk"
+        publication: "Engadget"
+        date: "2026-07-24"
+        entity: "Meta"
+        url: "https://www.engadget.com/2222008/instagram-is-now-banning-users-who-make-creepy-content-with-meta-glasses/"
+        alarm_vocabulary_count: 14
+        privacy_density: 0.36
+    cross_references:
+      - mechanism_id: 198
+        relationship: extends
+        description: "Bonk beat-assignment stigma concentration — now with same-journalist cross-entity coverage"
+      - mechanism_id: 245
+        relationship: extends
+        description: "Cross-publication AirPods vocabulary gradient — isolated to single journalist"
+      - mechanism_id: 270
+        relationship: extends
+        description: "Cross-publication AirPods label containment — individual journalist level"
+      - mechanism_id: 267
+        relationship: extends
+        description: "Billy Steele AirPods vocabulary mitigation — second Engadget journalist with same pattern"
+      - mechanism_id: 207
+        relationship: extends
+        description: "WIRED triple-reporter AirPods silence"
+    confounders:
+      - description: >
+          Apple AirPods are not yet shipped — pre-release products may naturally
+          receive less alarm coverage. BUT Meta's NameTag (also pre-release)
+          received extensive alarm coverage from the same publication.
+        strength: STRONG
+      - description: >
+          Meta glasses have documented misuse incidents; Apple AirPods have none.
+          BUT vocabulary difference reflects product framing, not incidents.
+        strength: STRONG
+      - description: >
+          Resolution difference (1MP vs 12MP) limits Apple's privacy risk. BUT
+          Apple's passive always-on mode captures without user trigger.
+        strength: MODERATE
+      - description: >
+          Market share (Meta 80%+) may justify proportionate coverage. BUT this
+          mechanism measures vocabulary choice, not coverage volume.
+        strength: MODERATE
+      - description: >
+          Different article purposes may explain vocabulary difference. BUT both
+          are news articles about camera wearables.
+        strength: WEAK
+    test_file: "tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py"
