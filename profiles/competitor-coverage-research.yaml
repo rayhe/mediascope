@@ -26845,6 +26845,8 @@ publications:
     - https://za.radio.net/podcast/this-week-in-tech2
     test_file: tests/test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py
     test_count: 32
+    meta_coverage_tone: -0.65
+    meta_tone_category: adversarial
   fastco_anthropic_triple_aspirational_meta_controversy_framing:
     mechanism_id: 263
     mechanism_name: fast_company_anthropic_triple_aspirational_meta_controversy_framing
@@ -27009,6 +27011,8 @@ publications:
     - https://www.techradar.com/computing/virtual-reality-augmented-reality/apple-will-reportedly-take-on-ray-ban-meta-glasses-in-2027
     test_file: tests/test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py
     test_count: 36
+    meta_coverage_tone: -0.55
+    meta_tone_category: adversarial
   mechanism_266_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly:
     mechanism_id: 266
     name: 'Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly'
@@ -27121,3 +27125,5 @@ publications:
     - https://www.efinancialcareers.com/news/goldman-sachs-morgan-stanley-openai-anthropic
     test_file: tests/test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py
     test_count: 39
+    meta_coverage_tone: -0.50
+    meta_tone_category: adversarial

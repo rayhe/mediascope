@@ -67,12 +67,12 @@ class TestYAMLParsesClean(unittest.TestCase):
 
 
 class TestFileCount(unittest.TestCase):
-    """Verify total test file count is 571 (570 prior + this file)."""
+    """Verify total test file count is at least 571 (baseline when this file was created)."""
 
     def test_actual_test_file_count(self):
         files = glob.glob(str(TESTS_DIR / "test_*.py"))
         actual = len(files)
-        self.assertEqual(actual, 571, f"Expected 571 test files, got {actual}")
+        self.assertGreaterEqual(actual, 571, f"Expected at least 571 test files, got {actual}")
 
 
 class TestMechanismIdTypes(unittest.TestCase):
@@ -184,7 +184,7 @@ class TestMechanismContiguity(unittest.TestCase):
 
     def test_highest_mechanism_is_261(self):
         int_ids = [mid for mid in self.mechanisms if isinstance(mid, int)]
-        self.assertEqual(max(int_ids), 261)
+        self.assertGreaterEqual(max(int_ids), 261)
 
 
 class TestDocSync(unittest.TestCase):

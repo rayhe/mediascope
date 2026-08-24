@@ -163,7 +163,7 @@ class TestDocCountSyncAug21:
                           if ":" in line)
         m = re.search(r"\*\*(\d+)\s*tests\*\*", readme)
         if not m:
-            m = re.search(r"~([\d,]+)\s*\|", readme)
+            m = re.search(r"~([\d,]+)\+?\s*\|", readme)
         assert m, "README should state test count"
         readme_count = int(m.group(1).replace(",", ""))
         delta_pct = abs(readme_count - actual_total) / actual_total * 100

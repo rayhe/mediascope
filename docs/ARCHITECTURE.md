@@ -1046,3 +1046,8 @@ mediascope/
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source leak — triple privacy incident vs Meta NameTag |
 | `test_tim_hardwick_macrumors_same_journalist_passive_capture_vocabulary_bifurcation_aug23.py` | Mechanism #256: Tim Hardwick MacRumors same-journalist passive capture vocabulary bifurcation — Meta alarm vs Apple neutral |
 | `test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py` | Mechanism #257: Anthropic $2T IPO — publisher financial captivity acceleration via Google/Amazon investor triangle |
+| `test_fastco_anthropic_triple_aspirational_meta_controversy_framing_aug23.py` | Mechanism #263: Fast Company Anthropic triple-aspirational vs Meta controversy framing — harm severity inversion |
+| `test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py` | Mechanism #262: TWiT 1096 within-episode surveillance technology vocabulary gradient |
+| `test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py` | Mechanism #265: Jacob Krol TechRadar cross-entity editorial enthusiasm gradient |
+| `test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py` | Mark Hachman PCWorld within-article cross-entity camera privacy scrutiny differential |
+| `test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py` | Mechanism #266: Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly |
