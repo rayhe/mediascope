@@ -20239,13 +20239,13 @@ publications:
     cross_medium_channel: TWiT Network (Tech News Weekly)
     cross_references:
     - description: Podcast analysis identified three-segment vocabulary gradient; this isolates Abrar's role
-      mechanism_id: TWiT_451_podcast
+      mechanism_id: 261
       relationship: extends
     - description: Abrar amplifies Mia Sato's Verge framing to TWiT podcast audience
-      mechanism_id: mia_sato_cross_entity
+      mechanism_id: 215
       relationship: amplifies
-    - description: Ziff Davis financial architecture predicts CNET coverage patterns
-      mechanism_id: ziff_davis_financial
+    - description: Ziff Davis financial architecture predicts CNET coverage patterns via triple squeeze
+      mechanism_id: 108
       relationship: extends
     entities_compared:
     - Meta (alarm vocabulary, 13+ min airtime)
@@ -20290,6 +20290,7 @@ publications:
       '
     journalist: Abrar Al-Heeti
     mechanism_id: 255
+    meta_coverage_tone: adversarial
     parent_company: Ziff Davis
     publication: CNET
     source_urls:
@@ -26696,7 +26697,8 @@ publications:
     test_count: 30
     test_file: tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py
     type: C
-  - mechanism_id: 257
+  anthropic_2t_ipo_publisher_financial_captivity_acceleration:
+    mechanism_id: 257
     type: C
     name: Anthropic $2T IPO Target — Publisher Financial Captivity Acceleration via Google/Amazon Investor Triangle
     finding: 'Anthropic IPO trajectory accelerated dramatically between May-Aug 2026: $965B Series H
@@ -26711,6 +26713,7 @@ publications:
       Anthropic achieves $2T with ZERO publisher deals vs OpenAI 20+ deals at $852B.'
     publication: Cross-publication (financial incentive mapping)
     entity: anthropic
+    meta_coverage_tone: neutral
     cross_references:
     - mechanism_id: 203
       description: Google-Anthropic circular capital publisher content subsidy

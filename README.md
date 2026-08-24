@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,380+ | Across 570 test files |
+| Tests | ~20,751+ | Across 571 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20,380+ tests (with parameterized expansion) across 570 test files, each covering a different analytical capability:
+MediaScope has **~20,751+ tests (with parameterized expansion) across 571 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1070,6 +1070,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | 33 | Mechanism #248: Security Bite Sponsor-Aligned Cross-Entity Coverage Scope Restriction (Type B). Arin Waichulis 9to5Mac Security Bite — Mosyle (Apple-exclusive MDM) sponsored column — aspirational for Apple ("only it can," "no doubt," "flawlessly") and alarm for Meta ("reckless," "surveillance device") in SAME article (Aug 18). ZERO Security Bite coverage of Samsung/Google/Snap camera wearables. Director of Social Media for all 9to5 properties including 9to5Google. Affiliate revenue paradox: Amazon affiliate links in articles attacking Meta Ray-Bans. Control comparison: 9to5Google (mechanism #131) ~1.7:1 vs Security Bite infinity:0. Extends #221 (pre-framing), #247 (vocabulary gradient). 1 STRONG, 2 MODERATE, 1 WEAK confounders. 8 classes, 33 tests |
 | `test_type_e_10pm_voices_of_vr_snap_privacy_receptivity_differential_meta_skepticism_aug22.py` | 28 | Voices of VR podcast Snap Spectacles privacy receptivity differential vs Meta skepticism — same host, opposite framing for identical camera wearable capabilities. Type E podcast sentiment |
 | `test_fastco_uk_cinema_ban_institutional_entity_selection_meta_exclusive_snap_omission_aug22.py` | 31 | Fast Company UK cinema ban institutional entity selection — Meta-exclusive stigma in cinema ban reporting, Snap Spectacles camera omission from same ban discourse. Type A coverage selection |
+| `test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py` | 55 | Mechanism #255: Abrar Al-Heeti CNET cross-entity cross-medium camera wearable privacy vocabulary bifurcation — alarm for Meta, zero for Apple, across print and TWiT podcast. Type B |
 | `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | 27 | Mechanism #249: AI Citation Amplification — OpenAI-licensed publishers get +48% ChatGPT citations, quantifying the financial incentive loop (deal → citations → traffic → softer coverage). Type C |
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | 24 | AI Inside podcast cross-episode temporal adjacency vocabulary bifurcation — opposite framing for Meta vs competitors in adjacent episodes. Type E |
 | `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | 42 | Mechanism #248: Arin Waichulis Security Bite — Mosyle sponsor-aligned cross-entity coverage scope restriction, 5-dimensional asymmetry. Type B |
@@ -1082,12 +1083,14 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` | 55 | Mechanism #253: Google Preferred Sources Publisher Embed — sixth dependency layer in Google's publisher captivity architecture. 600K+ sources, 2x click-through multiplier, embeds Google infrastructure IN publisher properties. Reddit Q2 2026 data integration. Type C |
 | `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` | 28 | 9to5Mac Three-Channel Podcast Pipeline PervertPods Cross-Medium Propagation — "PervertPods" stigma label propagation from print to podcast across 9to5Mac podcast ecosystem. Type E |
 | `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | - | AI citation amplification licensing deal bias pattern. Type C |
+| `test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py` | - | Abrar Al-Heeti CNET cross-entity cross-medium camera wearable privacy vocabulary bifurcation. Type B |
 | `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | - | Arin Waichulis 9to5Mac Security Bite sponsor-aligned cross-entity coverage scope restriction. Type B |
 | `test_billy_steele_engadget_apple_airpods_vocabulary_mitigation_beat_routing_aug23.py` | - | Billy Steele Engadget Apple AirPods vocabulary mitigation beat routing. Type B |
 | `test_c_scott_brown_android_authority_cross_entity_led_privacy_vocabulary_bifurcation_aug23.py` | - | C. Scott Brown Android Authority cross-entity LED privacy vocabulary bifurcation. Type B |
 | `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` | - | Cross-publication Apple camera AirPods leak vocabulary gradient financial correlation. Type A |
 | `test_type_d_07am_cross_validation_aug23.py` | - | Type D cross-validation (Aug 23, 7 AM PT). Type D |
 | `test_type_d_12pm_cross_validation_aug23.py` | 16 | Type D cross-validation (Aug 23, 12 PM PT): Billy Steele extractor overwrite bug fix, mechanism ID gaps 249/250, file count sync, doc sync for 4 aug23 files, meta_coverage_tone completeness. 6 classes, 16 tests. Type D |
+| `test_type_d_8pm_cross_validation_aug23.py` | 17 | Type D cross-validation (Aug 23, 8 PM PT): YAML parse fix (mechanism #257 list→mapping key), string mechanism_ids→integers (#261, #215, #108), meta_coverage_tone completeness, textblob dependency, doc sync, prior fix regressions. 9 classes, 17 tests. Type D |
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | - | AI Inside cross-episode temporal adjacency vocabulary bifurcation. Type E |
 | `test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py` | 21 | TWiT Tech News Weekly #451 cross-network framing amplification — Verge "workplace menace" cascade through TWiT editorial independence. Type E |
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | 43 | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source code leak (March 31, 2026) — triple privacy incident (frustration tracking, Undercover Mode, 512K-line data exposure) received zero WIRED/Verge articles while Gizmodo covered adversarially. Severity inversion vs Meta NameTag investigative cascade. 10 classes, 43 tests. Type A |

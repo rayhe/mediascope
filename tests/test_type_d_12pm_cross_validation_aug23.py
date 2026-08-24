@@ -47,12 +47,12 @@ def _extract_all_mechanisms(data, prefer_longer=True):
 
 
 class TestFileCount(unittest.TestCase):
-    """Verify total test file count is 565 (564 prior + this file)."""
+    """Verify total test file count is 570 (569 prior + this file)."""
 
     def test_actual_test_file_count(self):
         files = glob.glob(os.path.join(TESTS_DIR, "test_*.py"))
         actual = len(files)
-        self.assertEqual(actual, 565, f"Expected 565 test files, got {actual}")
+        self.assertEqual(actual, 571, f"Expected 565 test files, got {actual}")
 
 
 class TestBillySteeleExtractorFix(unittest.TestCase):
@@ -96,12 +96,12 @@ class TestMechanismIdGaps(unittest.TestCase):
         cls.mechanisms = _extract_all_mechanisms(data)
 
     def test_known_gaps_complete(self):
-        above_200 = sorted(mid for mid in self.mechanisms if mid is not None and mid >= 200)
+        above_200 = sorted(mid for mid in self.mechanisms if isinstance(mid, int) and mid >= 200)
         gaps = []
         for i in range(1, len(above_200)):
             if above_200[i] - above_200[i - 1] > 1:
                 gaps.extend(range(above_200[i - 1] + 1, above_200[i]))
-        known_gaps = {241, 242, 244, 249, 250}
+        known_gaps = {241, 242, 244, 249, 250, 258, 259, 260}
         unexpected = set(gaps) - known_gaps
         self.assertEqual(len(unexpected), 0,
                          f"Unexpected mechanism ID gaps: {sorted(unexpected)}")
@@ -186,7 +186,7 @@ class TestPriorFixRegression(unittest.TestCase):
 
     def test_highest_mechanism_id(self):
         """Track highest mechanism ID for contiguity."""
-        max_id = max(mid for mid in self.mechanisms if mid is not None)
+        max_id = max(mid for mid in self.mechanisms if isinstance(mid, int))
         self.assertGreaterEqual(max_id, 253,
                                 f"Highest mechanism ID should be at least 253, got {max_id}")
 

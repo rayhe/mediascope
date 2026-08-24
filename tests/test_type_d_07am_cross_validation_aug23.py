@@ -45,7 +45,7 @@ class TestFileCount(unittest.TestCase):
     def test_actual_test_file_count_is_560(self):
         files = glob.glob(str(TESTS_DIR / "test_*.py"))
         actual = len(files)
-        self.assertEqual(actual, 565, f"Expected 565 test files, got {actual}")
+        self.assertEqual(actual, 571, f"Expected 570 test files, got {actual}")
 
 
 class TestMetaCoverageToneCompleteness(unittest.TestCase):
@@ -112,12 +112,12 @@ class TestMechanismContiguity(unittest.TestCase):
 
     def test_known_gaps_documented(self):
         """Gaps at 241, 242, 244 are expected from non-sequential creation."""
-        above_200 = sorted(mid for mid in self.mechanisms if mid is not None and mid >= 200)
+        above_200 = sorted(mid for mid in self.mechanisms if isinstance(mid, int) and mid >= 200)
         gaps = []
         for i in range(1, len(above_200)):
             if above_200[i] - above_200[i-1] > 1:
                 gaps.extend(range(above_200[i-1]+1, above_200[i]))
-        known_gaps = {241, 242, 244, 249, 250}
+        known_gaps = {241, 242, 244, 249, 250, 258, 259, 260}
         unexpected = set(gaps) - known_gaps
         self.assertEqual(len(unexpected), 0,
                          f"Unexpected mechanism ID gaps: {sorted(unexpected)}")

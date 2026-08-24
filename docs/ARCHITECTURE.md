@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~20,380+ tests across 570 test files (all from real articles)
+├── tests/                       # ~20,751+ tests across 571 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1020,6 +1020,7 @@ mediascope/
 │   ├── test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py # Mechanism #248: Security Bite Sponsor-Aligned Cross-Entity Coverage Scope Restriction (Type B). Arin Waichulis 9to5Mac Security Bite column — Mosyle (Apple-exclusive MDM) sponsored — applies aspirational vocabulary to Apple camera AirPods ("only it can," "no doubt," "flawlessly") and alarm to Meta ("reckless," "surveillance device") in SAME article (Aug 18). ZERO Security Bite coverage of Samsung/Google/Snap camera wearables. Waichulis is Director of Social Media for all 9to5 properties including 9to5Google. Affiliate revenue paradox: Amazon affiliate links to buy Meta Ray-Bans in articles attacking them. 9to5Google control (mechanism #131) shows ~1.7:1 proportional ratio vs infinity:0. 8 classes, 33 tests
 | `test_type_e_10pm_voices_of_vr_snap_privacy_receptivity_differential_meta_skepticism_aug22.py` | Voices of VR podcast Snap privacy receptivity differential |
 | `test_fastco_uk_cinema_ban_institutional_entity_selection_meta_exclusive_snap_omission_aug22.py` | Fast Company UK cinema ban Meta-exclusive entity selection |
+| `test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py` | Abrar Al-Heeti CNET cross-entity cross-medium vocabulary bifurcation |
 | `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | AI citation amplification licensing deal bias |
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | AI Inside podcast vocabulary bifurcation |
 | `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | Arin Waichulis 9to5Mac sponsor-aligned scope restriction |
@@ -1031,6 +1032,7 @@ mediascope/
 | `test_gizmodo_airpods_camera_potato_quality_resolution_rationalization_within_article_reputation_trust_aug23.py` | Gizmodo AirPods camera potato quality resolution-rationalization — within-article reputation trust |
 | `test_google_preferred_sources_embed_sixth_dependency_layer_aug23.py` | Google Preferred Sources embed — sixth publisher dependency layer |
 | `test_type_e_08am_9to5mac_three_channel_podcast_pipeline_pervertpods_cross_medium_propagation_aug23.py` | 9to5Mac three-channel podcast pipeline PervertPods cross-medium propagation |
+| `test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py` | Abrar Al-Heeti CNET cross-entity cross-medium vocabulary bifurcation |
 | `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | AI citation amplification licensing deal bias |
 | `test_arin_waichulis_9to5mac_security_bite_sponsor_aligned_cross_entity_coverage_scope_restriction_aug23.py` | Arin Waichulis 9to5Mac Security Bite sponsor-aligned cross-entity coverage scope restriction |
 | `test_billy_steele_engadget_apple_airpods_vocabulary_mitigation_beat_routing_aug23.py` | Billy Steele Engadget Apple AirPods vocabulary mitigation beat routing |
@@ -1038,6 +1040,7 @@ mediascope/
 | `test_cross_publication_apple_camera_airpods_leak_vocabulary_gradient_financial_correlation_aug23.py` | Cross-publication Apple camera AirPods leak vocabulary gradient financial correlation |
 | `test_type_d_07am_cross_validation_aug23.py` | Type D cross-validation (Aug 23, 7 AM PT) |
 | `test_type_d_12pm_cross_validation_aug23.py` | Type D cross-validation (Aug 23, 12 PM PT): Billy Steele extractor fix, mechanism gaps, doc sync |
+| `test_type_d_8pm_cross_validation_aug23.py` | Type D cross-validation (Aug 23, 8 PM PT): YAML parse fix, string mechanism_ids, textblob dependency |
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | AI Inside cross-episode temporal adjacency vocabulary bifurcation |
 | `test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py` | TWiT Tech News Weekly #451 cross-network framing amplification |
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source leak — triple privacy incident vs Meta NameTag |
