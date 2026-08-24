@@ -27009,3 +27009,115 @@ publications:
     - https://www.techradar.com/computing/virtual-reality-augmented-reality/apple-will-reportedly-take-on-ray-ban-meta-glasses-in-2027
     test_file: tests/test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py
     test_count: 36
+  mechanism_266_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly:
+    mechanism_id: 266
+    name: 'Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly'
+    type: financial_incentive_mapping
+    discovery_date: '2026-08-24'
+    iteration: 270
+    finding: >
+      During Anthropic's SEC quiet period (June 1, 2026 confidential S-1 through
+      public filing), the company cannot publicly discuss specific financials and
+      lead underwriters (Goldman Sachs, Morgan Stanley, JPMorgan) cannot publish
+      equity research. Publications become the SOLE public narrative shapers for
+      the $2T IPO valuation story. Those same publications have compound financial
+      incentives to frame the narrative positively: FT has OpenAI content deal and
+      is the primary $2T narrative source (citing 6 investors); WSJ's parent News
+      Corp has $250M/5yr OpenAI deal; CNBC's parent Comcast has Google ad dependency
+      (Google holds 14% Anthropic stake worth $280B at $2T). The credit facility
+      (exceeding $10B, Reuters Aug 18) expands the bank constituency with skin in
+      the IPO, as banks jockey for larger commitments to secure IPO co-manager slots.
+      SpaceX IPO fee data ($100M each for GS/MS, $500M total across 23 banks) reveals
+      the magnitude of financial incentive for dual AI IPO participation. Meta has
+      no equivalent quiet period protection, no bank fee constituency, and no
+      underwriter equity research restriction — analysts freely publish Meta research,
+      ensuring Meta faces continuous public scrutiny with no structural narrative gap
+      during which only financial-interest-aligned publications shape the story.
+    asymmetry_score: 0.72
+    confounders:
+    - type: STRONG
+      description: >
+        SEC quiet period restrictions are LEGAL REQUIREMENTS, not publisher strategy.
+        Anthropic cannot discuss financials regardless of coverage incentives. The narrative
+        gap exists because of securities regulation, not because publications engineered it.
+    - type: STRONG
+      description: >
+        FT/WSJ/Bloomberg are the publications that SHOULD cover IPOs — it is their core
+        editorial beat. Their coverage may reflect genuine analytical assessment of strong
+        fundamentals ($65B ARR, 14x YoY growth) rather than financial interest.
+    - type: MODERATE
+      description: >
+        Investor leaks to financial press are the primary source for pre-IPO valuation
+        estimates. This is standard financial journalism practice, not a sign of publisher
+        bias. The $2T figure comes from investors' own models, not publication editorializing.
+    - type: MODERATE
+      description: >
+        Google and Amazon's Anthropic investments are public knowledge. No hidden conflict
+        exists — the advertiser-investor relationship is transparent and disclosable.
+    - type: WEAK
+      description: >
+        Positive Anthropic coverage may reflect genuine consensus that the company has
+        strong fundamentals and a credible path to the largest IPO in history.
+    bank_fee_data:
+      spacex_gs_fee_m: 100
+      spacex_ms_fee_m: 100
+      spacex_total_fee_m: 500
+      spacex_bank_count: 23
+      source: 'WSJ Jun 18, 2026: Bank fees for the biggest IPOs are significant — Morgan
+        Stanley and Goldman pulled in fees of around $100 million apiece for SpaceX.
+        The remaining banks split the rest of the roughly $500 million fee.'
+    narrative_shaping_publications:
+      financial_times:
+        has_openai_deal: true
+        financial_interest: 'OpenAI content deal + Google Showcase deal. FT is primary source
+          for $2T valuation narrative (Aug 13, citing 6 investors). Higher Anthropic IPO
+          validates OpenAI sector valuation, supporting FT content deal value.'
+        narrative_role: 'Broke $2T valuation story sourced from 6 Anthropic investors'
+      wall_street_journal:
+        parent_openai_deal: true
+        financial_interest: 'News Corp $250M/5yr OpenAI deal. WSJ reported dual-IPO bank
+          dynamics (Jun 18). News Corp AI deal value increases if AI IPO sector succeeds.'
+        narrative_role: 'Reported bank team splitting dynamics and SpaceX fee data'
+      bloomberg:
+        financial_interest: 'Bloomberg LP has Microsoft content deal. Microsoft owns 49%
+          of OpenAI. Anthropic IPO success validates AI sector, supporting Microsoft/OpenAI
+          ecosystem Bloomberg covers and partners with.'
+        narrative_role: 'Reported bank selection and credit facility details'
+      cnbc:
+        financial_interest: 'Comcast parent has Google ad dependency. Google holds 14%
+          Anthropic stake. Google gains at $2T IPO ($280B) support Google financial health,
+          which supports Google ad spending at Comcast/NBC properties.'
+        narrative_role: 'Confirmed investor meeting details and bank lineup'
+    meta_contrast: >
+      Meta is publicly traded — executives discuss financials freely on quarterly earnings
+      calls, in press interviews, and at investor days. Meta coverage is NOT monopolized
+      by publications during any quiet period. GS/MS equity research analysts freely publish
+      Meta reports (no quiet period applies). Meta has no IPO bank fee incentive creating
+      a bank constituency. Meta has no credit facility creating bank advocacy. The structural
+      asymmetry: Anthropic narrative shaped by financially-interested publications
+      during a period of company silence; Meta narrative faces no such structural protection.
+    cross_references:
+    - mechanism_id: 21
+      relationship: extends
+      description: 'IPO Underwriter Research Laundering — this mechanism documents the
+        QUIET PERIOD phase where bank research is blocked and publications fill the gap'
+    - mechanism_id: 25
+      relationship: extends
+      description: 'Amazon-Bezos Dual-Lab Non-Disclosure Triangle — WaPo/Bezos financial
+        interest during the same quiet period'
+    - mechanism_id: 257
+      relationship: extends
+      description: 'Anthropic $2T IPO Publisher Financial Captivity Acceleration — this
+        mechanism shows HOW that captivity manifests during the roadshow period'
+    source_urls:
+    - https://cryptobriefing.com/anthropic-ipo-meetings-ai-models-not-financials/
+    - https://www.tradingview.com/news/dpa_afx:0a1c26cd40287:0-anthropic-holds-early-investor-meetings-ahead-of-potential-ipo/
+    - https://www.investopedia.com/anthropic-could-go-public-soon-some-investors-are-eyeing-a-valuation-that-would-top-spacex-spcx-12058975
+    - https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
+    - https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+    - https://www.pymnts.com/news/investment-tracker/ipo/2026/anthropic-begin-investor-meetings-potential-october-ipo/
+    - https://www.pymnts.com/news/investment-tracker/ipo/2026/morgan-stanley-and-goldman-sachs-land-anthropic-ipo/
+    - https://www.thestreet.com/technology/anthropic-ipo-prospectus-registration-filing-changes-ai-investing
+    - https://www.efinancialcareers.com/news/goldman-sachs-morgan-stanley-openai-anthropic
+    test_file: tests/test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py
+    test_count: 39

@@ -9091,3 +9091,14 @@ passive mode, 12+ to Meta equivalent.
 - **Confounders:** 4 (1 STRONG, 1 MODERATE, 2 WEAK)
 - **Test corpus:** 575 test files
 - **Pushed to GitHub:** ✓
+
+### Iteration #270 — 2026-08-24 (Mon, Type C: Financial Incentive Mapping)
+- **Focus:** Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly
+- **Mechanism:** #266 — SEC quiet period creates structural gap where financially-interested publications become sole public narrative shapers for Anthropic's $2T IPO. During the confidential S-1 period, the company cannot publicly discuss financials and lead underwriters (GS/MS/JPM) cannot publish equity research. Publications with compound financial interests (FT: OpenAI deal + broke $2T story; WSJ/News Corp: $250M OpenAI deal; CNBC/Comcast: Google ad dependency, Google 14% Anthropic stake) fill the narrative vacuum. $10B+ credit facility (Reuters Aug 18) expands bank constituency jockeying for IPO co-manager slots. SpaceX fee data ($100M each GS/MS, $500M total across 23 banks) reveals dual AI IPO incentive magnitude. Meta has no equivalent quiet period protection, no bank fee constituency, no underwriter equity research restriction.
+- **Asymmetry score:** 0.72
+- **Test file:** `tests/test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py` (9 classes, 40 tests)
+- **YAML:** Mechanism #266 added to `profiles/competitor-coverage-research.yaml`; Anthropic pre-IPO investor meetings added to `profiles/competitor-entities.yaml`
+- **Cross-references:** #21 (IPO Underwriter Research Laundering), #25 (Amazon-Bezos Dual-Lab Non-Disclosure Triangle), #257 (Anthropic $2T IPO Publisher Financial Captivity Acceleration)
+- **Confounders:** 5 (2 STRONG, 2 MODERATE, 1 WEAK)
+- **Test corpus:** 576 test files
+- **Pushed to GitHub:** ✓

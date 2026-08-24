@@ -655,6 +655,19 @@ entities:
         jockeying for larger commitments hoping to secure IPO roles. Most active arranging banks committed ~$1.25B each; second
         tier ~$1B. Anthropic could limit size to target or below.
       pre_ipo_credit_facility_source: https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+      pre_ipo_investor_meetings:
+        led_by: CFO Krishna Rao
+        start_date: mid-August 2026
+        focus: Claude AI models, Claude Code coding assistant, enterprise business, management team, product development record
+        valuation_discussed: false
+        valuation_note: 'Company has NOT discussed specific valuation in meetings. $2T figure comes from investor estimates
+          (FT Aug 13, 6 investors), not company guidance. CNBC confirms Rao has not talked valuation.'
+        narrative_gap: 'During quiet period, meetings focus on models not financials. Bank equity research cannot publish.
+          Publications become the SOLE public financial narrative shapers for the $2T IPO story.'
+        source_urls:
+        - https://cryptobriefing.com/anthropic-ipo-meetings-ai-models-not-financials/
+        - https://www.tradingview.com/news/dpa_afx:0a1c26cd40287:0-anthropic-holds-early-investor-meetings-ahead-of-potential-ipo/
+        - https://www.investopedia.com/anthropic-could-go-public-soon-some-investors-are-eyeing-a-valuation-that-would-top-spacex-spcx-12058975
       decart_acquisition:
         date_reported: '2026-08-13'
         target: Decart AI (Nvidia-backed)

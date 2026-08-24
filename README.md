@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,751+ | Across 575 test files |
+| Tests | ~20,751+ | Across 576 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20,751+ tests (with parameterized expansion) across 575 test files, each covering a different analytical capability:
+MediaScope has **~20,751+ tests (with parameterized expansion) across 576 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1096,3 +1096,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | 43 | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source code leak (March 31, 2026) — triple privacy incident (frustration tracking, Undercover Mode, 512K-line data exposure) received zero WIRED/Verge articles while Gizmodo covered adversarially. Severity inversion vs Meta NameTag investigative cascade. 10 classes, 43 tests. Type A |
 | `test_tim_hardwick_macrumors_same_journalist_passive_capture_vocabulary_bifurcation_aug23.py` | 43 | Mechanism #256: Tim Hardwick (MacRumors) Same-Journalist Passive Capture Vocabulary Bifurcation — same journalist covers Meta Super Sensing (Jul 9) with alarm vocabulary ("Quietly Record Everything," wiretapping laws, civil liberty risks) and Apple AirPods passive mode (Aug 21) with neutral technical vocabulary ("background environmental awareness," image capture resolution). Critical person-detection non-suppression finding omitted for Apple. Cross-publication corroboration: Gizmodo defensive Apple framing, Android Police "nightmarish" Meta framing. 5 confounders (2 STRONG), cross-refs #251/#148/#62/#92/#223. 10 classes, 43 tests. Type B |
 | `test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py` | 45 | Mechanism #257: Anthropic $2T IPO Target — Publisher Financial Captivity Acceleration. Anthropic IPO trajectory: $965B (May) → $2T target (FT, 6 investors, Aug). Q2 revenue $11.5B (14x YoY from $787M). ARR $65B (Jul) → $100-120B projected EOY. At $2T: Google 14% stake = ~$280B (vs ~$135B at $965B), Amazon 15-20% = $300-400B. Combined publisher financial exposure through Google+Amazon DOUBLES to ~$580-680B. OpenAI flat at $852B ($7B employee tender Aug 10), potentially delaying to 2027. Same three banks underwriting both. Anthropic zero publisher deals at $2T vs OpenAI 20+ deals at $852B. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). 11 classes, 45 tests. Type C |
+| `test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py` | 40 | Mechanism #266: Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly. SEC quiet period creates structural gap where financially-interested publications become sole public narrative shapers for $2T IPO. Company cannot discuss financials; lead underwriters (GS/MS/JPM) cannot publish equity research. FT (OpenAI deal, broke $2T story citing 6 investors), WSJ/News Corp ($250M OpenAI deal), CNBC/Comcast (Google ad dependency, Google 14% stake worth $280B at $2T) fill the narrative vacuum. $10B+ credit facility expands bank constituency. SpaceX fee data ($100M each GS/MS, $500M across 23 banks) reveals dual AI IPO incentive magnitude. Meta has no quiet period protection, no bank fee constituency. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). 9 classes, 40 tests. Type C |
