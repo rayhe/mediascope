@@ -9675,3 +9675,22 @@ reputation, article type)
 **Pushed to GitHub:** (pending)
 
 ---
+
+## Iteration #278 — Mon 2026-08-24 16:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Amber Neely, Reviews Editor at AppleInsider (Future plc)
+**Mechanism:** #285 — Cross-Entity Surveillance Vocabulary Asymmetry
+**Finding:** Neely applies 7+ adversarial terms to Meta glasses ("violate privacy," "stealthy," "surveillance tech," "harassing," "nightmare," "eyesore," "nefarious") and 0 adversarial + 3+ aspirational terms to Apple ("privacy-first," "safety-forward," "ethical move") — within the same 1,200-word article (Feb 24, 2026). In a separate article (Mar 3, 2026), Apple's own Siri privacy scandal receives exculpatory framing ("Apple is very insistent that it is handling such data sensitively") while Meta receives "privacy nightmare" and "privacy disaster" in the headline. In Jun 2026, Snap Specs dismissed as "functionally, a toy" while Apple Vision Pro specs are inserted as aspirational benchmark. Forum comments reveal personal anti-camera-glasses conviction ("bridge too far," "insane amount of future dread") applied asymmetrically by company. Career: MacNN → Electronista → AppleInsider (decade+ in Apple-ecosystem publications). Parent company Future plc (mechanism #126) also owns iMore, where colleague Oliver Haslam wrote "just wait for Apple Glass instead."
+**Test file:** `tests/test_amber_neely_appleinsider_reviews_editor_cross_entity_surveillance_vocabulary_asymmetry_aug24.py`
+**Tests:** 43 tests across 8 classes
+**Sources:**
+- https://appleinsider.com/articles/26/02/24/this-meta-smartglasses-detecting-app-is-a-great-model-for-apple-glass-developers-to-follow
+- https://appleinsider.com/articles/26/03/03/what-privacy-as-expected-meta-ray-bans-are-a-privacy-disaster
+- https://appleinsider.com/articles/26/06/16/snap-built-standalone-ar-glasses-without-a-convincing-reason-to-wear-them
+- https://appleinsider.com/editor/Amber+Neely
+- https://forums.appleinsider.com/profile/reactions/240005/amberneely/1/p2/
+
+**Test corpus:** 588 test files
+**Pushed to GitHub:** (pending)
+
+---

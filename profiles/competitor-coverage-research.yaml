@@ -27791,3 +27791,82 @@ publications:
     test_file: tests/test_techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation_aug24.py
     tests_count: 35
     test_classes: 10
+
+  amber_neely_appleinsider_reviews_editor_cross_entity_surveillance_vocabulary_asymmetry:
+    mechanism_id: 285
+    type: B
+    publication: AppleInsider
+    publication_owner: 'Future plc (LSE: FUTR)'
+    journalist: Amber Neely
+    journalist_role: Reviews Editor
+    competitor_entity: Apple
+    comparison_entity: Meta
+    pattern: cross_entity_surveillance_vocabulary_asymmetry
+    finding: >
+      Amber Neely, Reviews Editor at AppleInsider (Future plc), applies measurably
+      asymmetric vocabulary when covering identical technology (camera-equipped smart
+      glasses) by different companies. In the Feb 24, 2026 article about a smartglasses-
+      detecting app, Neely describes Meta glasses with 7+ adversarial terms ("violate
+      other people's privacy," "stealthy," "surveillance tech," "harassing," "nightmare,"
+      "eyesore," "nefarious actors") while Apple receives 0 adversarial terms and 3+
+      aspirational terms ("privacy-first," "safety-forward," "ethical move") — within
+      the same 1,200-word article. In the Mar 3, 2026 article headlined "What privacy?
+      Meta's smart glasses are filming unwitting naked people," Neely covers Apple's own
+      2019 Siri privacy scandal but applies exculpatory language: "At the very least,
+      Apple is very insistent that it is handling such data sensitively" — while Meta
+      receives "privacy nightmare" and "privacy disaster." In the Jun 16, 2026 Snap Specs
+      article, she dismisses the competitor as "functionally, a toy" while unpromptedly
+      benchmarking Apple Vision Pro specs favorably. Forum comments reveal personal
+      conviction ("cameras on glasses are a bridge too far," "insane amount of future
+      dread") applied asymmetrically — Meta triggers alarm, Apple's theoretical cameras
+      trigger "privacy-first, safety-forward" aspirational framing.
+    financial_context: >
+      AppleInsider is owned by Future plc (LSE: FUTR), a publicly traded UK media company
+      earning significant revenue from Apple product reviews, affiliate links, and
+      advertising. Future plc also owns iMore (where Oliver Haslam wrote "just wait for
+      Apple Glass instead" headline), TechRadar, and Tom's Guide. The parent company's
+      Apple revenue dependency (mechanism #126) creates structural incentives aligned with
+      Neely's editorial output. Neely's career trajectory (MacNN → Electronista →
+      AppleInsider) represents over a decade within Apple-focused publications.
+    source_urls:
+      - https://appleinsider.com/articles/26/02/24/this-meta-smartglasses-detecting-app-is-a-great-model-for-apple-glass-developers-to-follow
+      - https://appleinsider.com/articles/26/03/03/what-privacy-as-expected-meta-ray-bans-are-a-privacy-disaster
+      - https://appleinsider.com/articles/26/06/16/snap-built-standalone-ar-glasses-without-a-convincing-reason-to-wear-them
+      - https://appleinsider.com/editor/Amber+Neely
+      - https://appleinsider.com/articles/24/12/28/how-we-work-ambers-reporting-and-high-tech-crafting-setup
+      - https://forums.appleinsider.com/profile/reactions/240005/amberneely/1/p2/
+      - https://appleinsider.com/articles/22/12/26/2022-in-review-appleinsiders-favorite-articles-of-the-year
+    asymmetry_score: 0.89
+    confounding_factors:
+      - strength: MODERATE
+        description: >
+          AppleInsider is an Apple-focused publication by definition — adversarial Meta
+          coverage may reflect editorial mission rather than individual journalist bias.
+      - strength: MODERATE
+        description: >
+          Neely self-identifies as "the most tech-critical member" — skepticism toward
+          Meta/Snap may reflect genuine tech criticism, though asymmetric application to
+          Apple vs competitors weakens this explanation.
+      - strength: WEAK
+        description: >
+          Feb 24 article acknowledges Apple may need cameras for market success — some
+          editorial nuance exists, though framing treats Apple cameras as reluctant market
+          concession vs Meta cameras as predatory.
+      - strength: WEAK
+        description: >
+          Smart glasses privacy IS a legitimate concern — the criticism of Meta is not
+          fabricated. The question is whether identical technology gets identical scrutiny
+          regardless of manufacturer.
+      - strength: WEAK
+        description: >
+          Neely's environmental sustainability degree may drive surveillance skepticism
+          from values rather than financial incentives, though Apple's own environmental
+          impact receives no equivalent scrutiny in her coverage.
+    cross_references:
+      - mechanism_id: 126
+        description: Future plc Apple revenue dependency (parent company)
+      - mechanism_id: 244
+        description: Malcolm Owen AppleInsider Apple Glass privacy vocabulary asymmetry (same publication colleague)
+    test_file: tests/test_amber_neely_appleinsider_reviews_editor_cross_entity_surveillance_vocabulary_asymmetry_aug24.py
+    tests_count: 43
+    test_classes: 8
