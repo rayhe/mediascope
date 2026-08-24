@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~20,295+ tests across 569 test files (all from real articles)
+├── tests/                       # ~20,380+ tests across 570 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1042,3 +1042,4 @@ mediascope/
 | `test_type_e_1pm_twit_tnw451_workplace_menace_cross_network_framing_amplification_aug23.py` | TWiT Tech News Weekly #451 cross-network framing amplification |
 | `test_wired_verge_claude_code_leak_coverage_selection_silence_triple_privacy_incident_aug23.py` | Mechanism #254: WIRED + The Verge coverage selection silence on Claude Code source leak — triple privacy incident vs Meta NameTag |
 | `test_tim_hardwick_macrumors_same_journalist_passive_capture_vocabulary_bifurcation_aug23.py` | Mechanism #256: Tim Hardwick MacRumors same-journalist passive capture vocabulary bifurcation — Meta alarm vs Apple neutral |
+| `test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py` | Mechanism #257: Anthropic $2T IPO — publisher financial captivity acceleration via Google/Amazon investor triangle |

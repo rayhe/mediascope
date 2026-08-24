@@ -26696,3 +26696,62 @@ publications:
     test_count: 30
     test_file: tests/test_yahoo_apollo_apple_siri_camera_airpods_compound_coverage_incentive_aug21.py
     type: C
+  - mechanism_id: 257
+    type: C
+    name: Anthropic $2T IPO Target — Publisher Financial Captivity Acceleration via Google/Amazon Investor Triangle
+    finding: 'Anthropic IPO trajectory accelerated dramatically between May-Aug 2026: $965B Series H
+      → $2T IPO target (FT, 6 investors). Q2 revenue $11.5B (14x YoY). ARR: $65B (Jul) → projected
+      $100-120B by end 2026. At $2T: Google 14% stake = ~$280B (vs ~$135B at $965B), Amazon 15-20%
+      = $300-400B (vs ~$145-193B). Combined publisher financial exposure through Google+Amazon
+      DOUBLES from ~$280-328B to ~$580-680B. Meanwhile OpenAI held flat at $852B ($7B employee
+      tender Aug 10), potentially delaying to 2027 for $1T. Anthropic leapfrogged on valuation,
+      revenue velocity ($65B vs ~$25-30B ARR), AND IPO timeline. Meta has ZERO equivalent IPO
+      exposure. Same three banks (Goldman, Morgan Stanley, JPMorgan) underwriting both IPOs.
+      PitchBook: OpenAI 4.8/10 AIBQ, $177.5B per point — "valuation decoupled from fundamentals."
+      Anthropic achieves $2T with ZERO publisher deals vs OpenAI 20+ deals at $852B.'
+    publication: Cross-publication (financial incentive mapping)
+    entity: anthropic
+    cross_references:
+    - mechanism_id: 203
+      description: Google-Anthropic circular capital publisher content subsidy
+    - mechanism_id: 36
+      description: Pre-IPO owner investor publisher convergence
+    - mechanism_id: 28
+      description: Google SPV guarantee Anthropic Showcase chain
+    - mechanism_id: 58
+      description: Condé Nast AI deal portfolio dependency index
+    - mechanism_id: 38
+      description: Anthropic Meta cloud deal coverage selection
+    overview: 'At $2T IPO, the indirect publisher financial captivity through Google/Amazon advertising
+      dependencies approximately DOUBLES from the $965B Series H baseline. Google Q1 2026: $28.7B
+      investment gains (mostly Anthropic mark-up). Amazon Q2 2026: $53.4B paper gain (exceeded
+      operating income). At $2T these gains grow proportionally. Publications dependent on Google
+      advertising ($81.6B/yr) and Amazon advertising ($76B TTM) have structural incentive to cover
+      Anthropic IPO favorably. No equivalent mechanism for Meta.'
+    asymmetry_score: 0.88
+    confounders:
+    - strength: STRONG
+      description: 'Anthropic safety-first brand earns legitimately softer coverage independent
+        of financial incentives.'
+    - strength: STRONG
+      description: 'Anthropic has no consumer hardware, so no bystander privacy concerns
+        (unlike Meta glasses).'
+    - strength: MODERATE
+      description: 'Pre-IPO companies routinely get favorable press during filing windows
+        (IPO halo effect).'
+    - strength: MODERATE
+      description: 'Zero publisher deals may position Anthropic as editorially independent
+        in journalists perception.'
+    - strength: WEAK
+      description: 'Claude Code quality merits positive coverage, but quality should not predict
+        ABSENCE of scrutiny on governance issues.'
+    source_urls:
+    - https://www.investopedia.com/anthropic-could-go-public-soon-some-investors-are-eyeing-a-valuation-that-would-top-spacex-spcx-12058975
+    - https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-aims-for-largest-ever-ipo/
+    - https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+    - https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/
+    - https://www.thestreet.com/investing/openai-ipo-delay-2027-altman-1-trillion-valuation
+    - https://pitchbook.com/news/reports/q2-2026-an-eye-on-openai
+    - https://www.fool.com/investing/2026/06/26/if-anthropic-goes-public-at-1-trillion-or-more-thi/
+    test_file: tests/test_anthropic_2t_ipo_publisher_financial_captivity_acceleration_aug23.py
+    test_count: 43

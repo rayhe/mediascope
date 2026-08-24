@@ -66,7 +66,27 @@ entities:
       - NVIDIA ($30B)
       - Amazon ($50B)
       potential_delay: 'NYT reported (late Jun 2026) OpenAI considering delay to 2027 for higher valuation, citing SpaceX
-        post-IPO stock decline as cautionary. '
+        post-IPO stock decline as cautionary. TheStreet (Jul 2026): Altman rejected sub-$1T valuation as "nonstarter,"
+        leaving IPO anchored 17% above $852B March round. Bridgewater CIO Greg Jensen: "implied valuation multiple is
+        priced for a monopoly outcome that does not yet exist."'
+      employee_tender_aug_2026:
+        date: '2026-08-10'
+        amount_b: 7
+        valuation_b: 852
+        valuation_change: flat (same as March 2026 round)
+        funding_source: OpenAI's own balance sheet (NOT outside investors)
+        significance: 'First flat valuation print after $157B → $300B → $500B → $852B run.
+          Self-funded buyback (no outside price-setting) suggests IPO not imminent. Tender
+          provides employee liquidity without producing a fresh external mark that a
+          roadshow would need to defend.'
+        source: https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/
+      ipo_race_dynamics: 'Anthropic targeting $2T (October 2026) vs OpenAI holding at $852B
+        (possibly 2027 for $1T). Anthropic has LEAPFROGGED OpenAI on valuation ($965B vs $852B),
+        revenue velocity ($65B ARR vs ~$25-30B ARR), and IPO timeline (end-Aug filing vs
+        potential delay). Same three banks (Goldman, Morgan Stanley, JPMorgan) underwriting
+        both. PitchBook: "OpenAI carries the highest price per unit of business quality among
+        the Frontier Five at $177.5B per AIBQ point. Its valuation has been decoupled from
+        fundamentals prior to its IPO."'
       ipo_banks_reported:
       - Goldman Sachs
       - Morgan Stanley
@@ -611,12 +631,25 @@ entities:
         and investing in Anthropic. The Samsung-Anthropic financial alignment means publications covering Samsung glasses
         favorably also align with Anthropic investor interests. No equivalent financial alignment exists between Meta and
         any chip supply chain investor.'
-      target_raise_b: 75
-      target_valuation_range_t: 1.75-1.8
+      target_raise_b: 75-86.2
+      target_valuation_range_t: 2.0
+      target_valuation_range_note: 'FT (Aug 13, 2026) citing 6 Anthropic investors: $2T valuation expected,
+        surpassing SpaceX record (~$1.8T). Up from earlier $1.75-1.8T range. PYMNTS (Aug 20):
+        Anthropic "expects its IPO to reach a record high, equaling or surpassing SpaceX."
+        SpaceX raised $75B initially, $86.2B with overallotment.'
       strategic_investors:
-      - Alphabet/Google ($2B+)
-      - Amazon ($13B+)
+      - Alphabet/Google ($2B+, ~14% stake → $280B at $2T)
+      - Amazon ($13B+, 15-20% stake → $300-400B at $2T)
       target_listing: As early as October 2026
+      public_filing_timeline: 'As soon as end of August 2026 (PYMNTS Aug 20). Discussions ongoing,
+        size and details could change.'
+      q2_2026_quarterly_revenue_b: 11.5
+      q2_2026_revenue_yoy_multiple: 14x
+      q2_2026_revenue_prior_year_m: 787
+      q2_2026_revenue_source: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-aims-for-largest-ever-ipo/
+      arr_projection_eoy_2026_b: 100-120
+      arr_projection_eoy_2026_source: 'FT (Aug 13, 2026) citing 6 Anthropic investors. More than 10x
+        where it was at the start of the year (~$9B).'
       pre_ipo_credit_facility_b: 10
       pre_ipo_credit_facility_note: Revolving credit facility expected to exceed $10B target (Bloomberg, Aug 19 2026). Banks
         jockeying for larger commitments hoping to secure IPO roles. Most active arranging banks committed ~$1.25B each; second
