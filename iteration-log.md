@@ -1,3 +1,40 @@
+## Iteration #271 — Mon 2026-08-24 04:00 PT (Type D: Test & Verify)
+
+### Focus: Test Suite Integrity — Fix 39 Collection Errors, Update Counts
+
+**Problem:** 39 test files were failing to collect due to missing `textblob` and
+`vaderSentiment` packages. Both are listed in `requirements.txt` and `pyproject.toml`
+but were not installed in the runtime environment.
+
+**Root cause:** Runtime dependency drift — NLP packages (`textblob>=0.18`,
+`vaderSentiment>=3.3`) are declared in project metadata but the environment had
+stale installs missing them.
+
+**Fix:** Installed both packages. All 39 previously-erroring files now collect and
+pass cleanly:
+- 888 tests across the 39 files (23 xfailed as expected)
+- Recent additions from iterations #268–#270 also verified: 106 tests, all passing
+- Full suite collection: 20,918 tests, 576 test files, 0 errors
+
+**Spot-check results (no failures):**
+- Type D cross-validation files (8 sampled): all pass
+- Type E podcast sentiment files (3 sampled): 81 passed
+- Core sentiment/source analysis: 244 passed, 11 xfailed
+- Recent Type A/B/C additions: 106 passed
+
+**Count updates:**
+- README.md: ~20,751+ → ~20,918+ (576 test files)
+- docs/ARCHITECTURE.md: same update
+
+**Files changed:**
+- `README.md` (test count update)
+- `docs/ARCHITECTURE.md` (test count update)
+- `iteration-log.md` (this entry)
+
+**Pushed to GitHub:** ✓
+
+---
+
 ## Iteration #268 — Sun 2026-08-23 22:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: Fast Company Anthropic Triple-Aspirational vs Meta Controversy Framing
