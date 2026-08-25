@@ -9694,3 +9694,22 @@ reputation, article type)
 **Pushed to GitHub:** (pending)
 
 ---
+
+## Iteration #279 — Mon 2026-08-24 17:00 PT
+**Type:** C (Financial Incentive Mapping)
+**Mechanism:** #286 — OpenAI ChatGPT Ads Meta Feature Parity: Automatic Advanced Matching Default, Product Feed oCPC, Measurement Vendor Convergence
+**Finding:** OpenAI's ChatGPT Ads reached functional Meta Ads feature parity in August 2026 through nine product changes (week of Aug 3): automatic advanced matching as DEFAULT (Aug 17 opt-out deadline already passed), conversion-optimised oCPC for product feed campaigns (≡ Meta Advantage+ Shopping), multi-product carousel (≡ Meta carousel ads), Triple Whale integration (THE Meta DTC attribution platform), Hightouch CAPI (≡ Meta CAPI), Sonar Optimize, dynamic URL macros, expanded pixel diagnostics, and Brazil/Mexico market expansion (9 countries total). The automatic advanced matching default is the sharpest coverage selection asymmetry example: when Meta auto-enrolled users in data matching, it triggered GDPR fines, FTC scrutiny, and adversarial coverage in WIRED, The Verge, NYT, Guardian. When OpenAI auto-enrolled advertisers in the SAME data matching practice, coverage was limited to trade press — zero adversarial pieces from the same publications. Combined with mechanism #249 (OtterlyAI: +48% ChatGPT citations for deal publishers), this creates a compound financial incentive loop: publisher signs deal → amplified citations → OpenAI monetizes with Meta-equivalent ads → advertiser dollars move from Meta → publisher coverage incentive reinforced.
+**Test file:** `tests/test_openai_chatgpt_ads_meta_feature_parity_advanced_matching_default_aug24.py`
+**Tests:** 32 tests across 12 classes
+**Cross-references:** #172 (OpenAI CPA Meta displacement), #196 (Apple Siri variable compensation), #202 (Fall 2026 convergence), #249 (OtterlyAI citation amplification)
+**Sources:**
+- https://ppc.land/chatgpt-advertisers-face-10-days-to-opt-out-of-automatic-advanced-matching/
+- https://digiday.com/marketing/openai-turns-on-cost-per-action-ads-inside-chatgpt/
+- https://digiday.com/marketing/openai-opens-up-chatgpt-ads-manager-to-the-u-s-while-promising-third-party-measurement-cpa-bidding/
+- https://lifestyle.houstonnewstoday.com/story/833738/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt/
+- https://rightstech.com/2026/06/openai-not-planning-to-share-advertising-revenue-with-publishers/
+
+**Test corpus:** 589 test files
+**Pushed to GitHub:** (pending)
+
+---

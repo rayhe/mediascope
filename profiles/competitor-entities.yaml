@@ -174,16 +174,56 @@ entities:
         hiring: 'Building internal ad stack: monetization infrastructure engineer, engineering manager, product designer,
           senior revenue accounting manager, trust & safety (ads) — all SF HQ, full-time. Compensation bands up to $385K.
           Signal: building to OWN, not rent. Current vendor partnerships (Criteo, The Trade Desk) are bridge, not permanent.'
-        meta_competitive_positioning: CPA bidding directly competes with Meta Advantage+ and Google Performance Max for performance
+        aug_2026_feature_parity:
+          mechanism_id: 286
+          date: '2026-08-03'
+          description: 'Nine product changes bring ChatGPT Ads to functional Meta feature parity. Week of Aug 3 2026
+            email to beta advertisers, reported PPC Land Aug 7.'
+          automatic_advanced_matching:
+            description: 'Automatic advanced matching enabled as DEFAULT for all existing web pixels. Advertisers had
+              10 days (until Aug 17) to opt out. This mirrors Meta Advanced Matching, which has been subject to extensive
+              privacy scrutiny and regulatory action. OpenAI received zero adversarial coverage from the same publications.'
+            opt_out_deadline: '2026-08-17'
+            default_state: enabled
+            privacy_asymmetry_note: 'When Meta auto-enrolled users in data matching, it triggered GDPR fines, FTC
+              scrutiny, and adversarial coverage in WIRED, The Verge, NYT, Guardian. When OpenAI auto-enrolled advertisers
+              in the SAME data matching practice, coverage was limited to trade press (PPC Land, Digiday).'
+          product_feed_ocpc:
+            description: 'Conversion-optimised cost-per-click (oCPC) for product feed campaigns — functionally identical
+              to Meta Advantage+ Shopping campaigns. Multi-product carousel format matches Meta carousel ad unit.'
+            campaign_tools: Campaign cloning and bulk oCPC creation tools match Meta Ads Manager workflow
+          measurement_vendor_convergence:
+            triple_whale: 'DTC attribution platform — THE measurement vendor Meta Advantage+ advertisers use'
+            hightouch_capi: 'Conversion API support — mirrors Meta CAPI (server-side tracking)'
+            sonar_optimize: Additional measurement optimization layer
+            dynamic_url_macros: 'Campaign/ad group/ad/account ID tracking macros — standard Meta Ads practice'
+            pixel_validation: 'Expanded pixel validation diagnostics — mirrors Meta pixel diagnostics tool'
+          market_expansion:
+            current_markets:
+            - US
+            - Canada
+            - Australia
+            - New Zealand
+            - UK
+            - Japan
+            - South Korea
+            expanding_to: Brazil, Mexico (week of Aug 10, 2026)
+          source_urls:
+          - https://ppc.land/chatgpt-advertisers-face-10-days-to-opt-out-of-automatic-advanced-matching/
+          - https://www.adweek.com/media/openai-performance-marketing-expansion/
+        meta_competitive_positioning: 'CPA bidding directly competes with Meta Advantage+ and Google Performance Max for performance
           marketing dollars. Same ad-tech vendors (Criteo, Adobe) serve all three platforms. David Dugan (former Meta) is
-          building the exact same performance ad infrastructure he left. SMB access (no minimum) targets Meta's core advertiser
-          base of 10M+ small businesses.
+          building the exact same performance ad infrastructure he left. SMB access (no minimum) targets Meta''s core advertiser
+          base of 10M+ small businesses. As of Aug 2026, ChatGPT Ads has reached functional Meta feature parity: automatic
+          advanced matching, product feed oCPC, multi-product carousel, Triple Whale/Hightouch CAPI measurement, and 9-market
+          global expansion. Advertiser switching costs between Meta and ChatGPT are decreasing.'
         source_urls:
         - https://digiday.com/marketing/openai-opens-up-chatgpt-ads-manager-to-the-u-s-while-promising-third-party-measurement-cpa-bidding/
         - https://digiday.com/marketing/openai-turns-on-cost-per-action-ads-inside-chatgpt/
         - https://www.inc.com/marty-swant/openai-expands-chatgpt-ads-beyond-pilot-giving-smbs-a-new-growth-channel/91340790
         - https://digiday.com/media-buying/openai-is-b-building-the-ad-tech-stack-its-currently-borrowing/
         - https://www.pymnts.com/artificial-intelligence-2/2026/openai-expands-chatgpt-advertising-to-more-markets-after-us-pilot/
+        - https://ppc.land/chatgpt-advertisers-face-10-days-to-opt-out-of-automatic-advanced-matching/
       overview: 'OpenAI is building a $2.5B advertising business in 2026 that projects to $100B by 2030, creating a NEW financial
         dependency channel with publishers. ChatGPT ads pilot crossed $100M ARR within 6 weeks of January 2026 launch. Self-serve
         Ads Manager launched April 2026. Hired David Dugan (former Meta ads executive) in March 2026. CPC bidding launched

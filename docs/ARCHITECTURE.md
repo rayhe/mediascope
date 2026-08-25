@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~21,166+ tests across 588 test files (all from real articles)
+├── tests/                       # ~20,177+ tests across 589 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1051,3 +1051,6 @@ mediascope/
 | `test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py` | Mechanism #265: Jacob Krol TechRadar cross-entity editorial enthusiasm gradient |
 | `test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py` | Mark Hachman PCWorld within-article cross-entity camera privacy scrutiny differential |
 | `test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py` | Mechanism #266: Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly |
+| `test_techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation_aug24.py` | Mechanism #284: TechCrunch Yahoo Apollo Anthropic Meta data practice vocabulary bifurcation |
+| `test_amber_neely_appleinsider_reviews_editor_cross_entity_surveillance_vocabulary_asymmetry_aug24.py` | Mechanism #285: Amber Neely AppleInsider reviews editor cross-entity surveillance vocabulary asymmetry |
+| `test_openai_chatgpt_ads_meta_feature_parity_advanced_matching_default_aug24.py` | Mechanism #286: OpenAI ChatGPT Ads Meta feature parity — automatic advanced matching default, product feed oCPC, measurement vendor convergence |
