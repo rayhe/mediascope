@@ -1,3 +1,55 @@
+## Iteration #281 — Tue 2026-08-25 04:00 PT (Type D: Test & Verify)
+
+### Focus: YAML Structure Fix, Duplicate Mechanism ID Resolution, Test Fixture Repair, Stale Assertion Cleanup
+
+**Issues discovered:** 9 failing tests across 5 test files from recent iterations' structural drift.
+
+**YAML structure fix:**
+3 mechanism entries (288, 292, 293) were added as list items (`- mechanism_id: N`)
+inside the `publications:` mapping, causing `yaml.parser.ParserError` that broke 2 test
+files on collection. Converted all 3 to proper named mapping keys:
+- 288 → `wsj_amrith_ramkumar_data_retention_vocabulary_bifurcation`
+- 292 → `chandra_steele_android_police_cross_entity_camera_privacy_displacement`
+- 293→295 → `daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion`
+
+**Duplicate mechanism_id fix:**
+Daniel Cooper and Jonny Evans both had mechanism_id 293. Renumbered Cooper to 295.
+
+**Test fixture fix:**
+`test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py`
+was missing imports (os, yaml), PROFILES_DIR, `competitor_research` fixture, and
+`publications` path wrapper. All 34 tests were erroring; now all pass.
+
+**Stale assertion fixes:**
+- Steve Dent mechanism_id: 269→272 in test
+- Anthropic IPO banks: 3→4 (Citigroup added in #280)
+- Doc count strings in aug24 6pm test
+- README/ARCHITECTURE file counts synced to 600
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (3 list→mapping fixes, mech 295 renumber)
+- `tests/test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py` (fixture + path fix)
+- `tests/test_daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion_aug25.py` (docstring)
+- `tests/test_type_d_1pm_cross_validation_aug24.py` (Steve Dent + Anthropic banks)
+- `tests/test_type_d_6pm_cross_validation_aug24.py` (doc count strings)
+- `tests/test_type_d_04am_cross_validation_aug25.py` (NEW — 6 classes, 14 tests)
+- `README.md` (file count 600)
+- `docs/ARCHITECTURE.md` (file count 600)
+
+**Tests added:** 14 (6 classes)
+- TestYAMLStructuralIntegrity (7 tests)
+- TestNoDuplicateMechanismIds (1 test)
+- TestDocCountSync (3 tests)
+- TestCondeNastAug25FixtureAvailability (1 test)
+- TestAnthropicIPOBanksUpdated (1 test)
+- TestMaxMechanismId (1 test)
+
+**Tests fixed:** 9 (across 5 existing files)
+**Test corpus:** 600 test files
+**Max mechanism_id:** 295
+
+---
+
 ## Iteration #280 — Tue 2026-08-25 03:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Condé Nast Post-Search Revenue Architecture — OpenAI Citation Premium as Core Financial Dependency Channel
