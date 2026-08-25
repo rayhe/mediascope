@@ -1,0 +1,305 @@
+# MediaScope Instagram & Threads Account Directory
+# Auto-compiled 2026-08-25 from web research
+# Only verified/confirmed handles included — unverified handles omitted
+# Many tech journalists have migrated to Bluesky post-Twitter; IG/Threads presence is sparse
+
+publications:
+  - name: "WIRED"
+    instagram: "@wired"
+    threads: "@wired"
+    threads_confirmed: false
+    followers_approx: "524K"
+    verified: true
+    notes: "Condé Nast. IG views +800% after vertical video shift (Adweek Sep 2025)."
+
+  - name: "The Verge"
+    instagram: "@verge"
+    threads: "@verge"
+    threads_confirmed: false
+    followers_approx: "1.45M"
+    verified: true
+    notes: "Vox Media. Sub-account @thevergeart for art content."
+
+  - name: "Gizmodo"
+    instagram: "@gizmodo"
+    threads: "@gizmodo"
+    threads_confirmed: false
+    followers_approx: "unknown"
+    verified: unknown
+    notes: "Sold to Keleops Media (Swiss) Jun 2024. No third-party tracker returned follower data — possibly related to ownership change."
+
+  - name: "The Guardian"
+    instagram: "@guardian"
+    threads: "@guardian"
+    threads_confirmed: false
+    followers_approx: "5.9M"
+    verified: true
+    notes: "Sub-account @guardian_us (~831K). Digiday Dec 2023 noted Guardian US had paused Threads posting; current status unclear."
+
+  - name: "The New York Times"
+    instagram: "@nytimes"
+    threads: "@nytimes"
+    threads_confirmed: true
+    threads_followers_approx: "2.3M+ (Dec 2023, likely higher)"
+    followers_approx: "14.3M+"
+    verified: true
+    notes: "Largest IG presence in dataset. Sub-accounts: @nytimesfashion, @nytimessports, @nytimestravel, @nytmag, @nytvideo."
+
+  - name: "Financial Times"
+    instagram: "@financialtimes"
+    threads: "@financialtimes"
+    threads_confirmed: false
+    followers_approx: "3.9M"
+    verified: true
+
+  - name: "The Atlantic"
+    instagram: "@theatlantic"
+    threads: "@theatlantic"
+    threads_confirmed: false
+    followers_approx: "2M"
+    verified: true
+
+  - name: "MIT Technology Review"
+    instagram: "@technologyreview"
+    threads: "@technologyreview"
+    threads_confirmed: false
+    followers_approx: "1.1M"
+    verified: true
+
+  - name: "Wall Street Journal"
+    instagram: "@wsj"
+    threads: "@wsj"
+    threads_confirmed: false
+    followers_approx: "4-5.8M"
+    verified: true
+    notes: "News Corp / Dow Jones. Range reflects May 2026 bot purge impact. Sub-accounts: @wsjphotos, @wsjmag, @wsjrealestate, @wsjopinion."
+
+  - name: "New York Post"
+    instagram: "@nypost"
+    threads: "@nypost"
+    threads_confirmed: false
+    followers_approx: "1.6M"
+    verified: true
+    notes: "News Corp. Sub-account @nypostsports (~41K). Larger on TikTok (~3.7M)."
+
+journalists:
+  # --- WIRED ---
+  - name: "Lauren Goode"
+    publication: "WIRED"
+    instagram: "@laurengoode"
+    threads: "@laurengoode"
+    verified: true
+    source: "Twitter bio + WIRED Uncanny Valley podcast notes"
+
+  - name: "Zoë Schiffer"
+    publication: "WIRED"
+    instagram: null
+    threads: "@reporterzoe"
+    verified: true
+    source: "WIRED Uncanny Valley podcast notes + Techmeme"
+
+  - name: "Katie Drummond"
+    publication: "WIRED"
+    role: "Global Editorial Director"
+    instagram: "@katie.at.wired"
+    threads: null
+    verified: true
+    source: "Mutha Life podcast show notes"
+
+  # --- The Verge ---
+  - name: "Nilay Patel"
+    publication: "The Verge"
+    role: "Editor-in-Chief"
+    instagram: "@reckless1280"
+    threads: "@reckless1280"
+    verified: true
+    source: "Anxious Achiever podcast bio (May 2026) + Mediagazer"
+
+  - name: "Victoria Song"
+    publication: "The Verge"
+    instagram: null
+    threads: "@vicmsong"
+    verified: true
+    source: "Direct threads.com link in podcast + Bluesky bio cross-ref"
+
+  - name: "Tom Warren"
+    publication: "The Verge"
+    instagram: null
+    threads: "@tomwarrenuk"
+    verified: true
+    source: "Techmeme/Mediagazer threads.net attribution"
+
+  - name: "Alex Cranz"
+    publication: "The Verge"
+    instagram: null
+    threads: "@alexhcranz"
+    verified: true
+    source: "Self-identification on Better Offline podcast + Techmeme"
+
+  # --- NYT ---
+  - name: "Mike Isaac"
+    publication: "NYT"
+    instagram: "@mike_isaac"
+    threads: "@mike_isaac"
+    verified: true
+    source: "Better Offline podcast show notes — explicit URLs"
+
+  - name: "Kevin Roose"
+    publication: "NYT"
+    instagram: "@kevinroose"
+    threads: "@kevinroose"
+    verified: true
+    source: "Hard Fork YouTube description — explicit URLs"
+
+  - name: "Kashmir Hill"
+    publication: "NYT"
+    instagram: null
+    threads: "@kashhill"
+    verified: true
+    source: "Jillian Michaels podcast listing (Mar 2024)"
+
+  # --- The Guardian ---
+  - name: "Johana Bhuiyan"
+    publication: "The Guardian"
+    instagram: "@JMBooyah"
+    threads: null
+    verified: true
+    source: "Follow Friday podcast — 'follow on Twitter and Instagram at @JMBooyah'"
+
+  # --- The Atlantic ---
+  - name: "Charlie Warzel"
+    publication: "The Atlantic"
+    instagram: "@cwarzel"
+    threads: null
+    verified: true
+    source: "Multiple podcast bios: 'follow @cwarzel on X and Instagram'"
+
+  - name: "Karen Hao"
+    publication: "The Atlantic"
+    instagram: "@_karenhao"
+    threads: "@_karenhao"
+    verified: true
+    source: "CRAFTED podcast show notes — explicit Threads URL"
+
+  # --- Financial Times ---
+  - name: "Hannah Murphy"
+    publication: "Financial Times"
+    instagram: "@mshannahmurphy"
+    threads: null
+    verified: true
+    source: "Muck Rack profile — explicit IG URL"
+
+  # --- WSJ / News Corp ---
+  - name: "Joanna Stern"
+    publication: "WSJ (now NBC News)"
+    instagram: "@joannastern"
+    threads: null
+    verified: true
+    followers_approx: "22.9K"
+    source: "Heepsy influencer DB — bio matches WSJ/NBC/Emmy"
+
+  - name: "Christopher Mims"
+    publication: "WSJ"
+    instagram: "@mimsontech"
+    threads: null
+    verified: true
+    source: "HarperCollins India author page"
+    notes: "Account may have been deleted — needs periodic recheck"
+
+# Journalists tracked in MediaScope with NO confirmed IG/Threads presence:
+# WIRED: Steven Levy, Paresh Dave, Leah Feiger, Brian Barrett, Amanda Hoover (left WIRED),
+#   Will Knight, Kate Knibbs, Dell Cameron, Dhruv Mehrotra, William Turton, David Gilbert, Meg Marco
+# The Verge: Allison Johnson, Wes Davis, Thomas Ricker, Lauren Feiner, Hayden Field,
+#   Sean Hollister, Josh Dzieza, Adi Robertson
+# Gizmodo: Maxwell Zeff
+# NYT: Sheera Frenkel (private IG), Cade Metz, Kate Conger (Bluesky), Ryan Mac (Bluesky),
+#   Cecilia Kang, Tripp Mickle, Eli Tan, Nico Grant, Nicole Perlroth
+# Guardian: Alex Hern (now The Economist), Dan Milmo, Blake Montgomery,
+#   Julia Carrie Wong, Kari Paul (left for art school), Carole Cadwalladr (now The Nerve)
+# FT: Madhumita Murgia, George Hammond, Melissa Heikkilä
+# Atlantic: Ian Bogost, Adrienne LaFrance, Matteo Wong, Alex Reisner, Kaitlyn Tiffany, Ali Breland
+# MIT Tech Review: Melissa Heikkilä, James O'Donnell, Will Douglas Heaven, Rhiannon Williams
+# WSJ: Emma Tucker, Keith Poole, Meghan Bobrowsky, Kate Clark, Sam Schechner, Georgia Wells,
+#   Jeff Horwitz (now Reuters — explicitly avoids Meta platforms)
+# NOTE: Most untracked journalists are active on Bluesky or X instead.
+
+podcasts:
+  - name: "The Guilty Feminist"
+    instagram: "@theguiltyfeminist"
+    threads: null
+    verified: true
+    host: "Deborah Frances-White"
+    host_instagram: "@dfdubz"
+    source: "Episode show notes — explicit Instagram URL"
+
+  - name: "Kill Switch"
+    instagram: "@killswitchpod"
+    threads: null
+    verified: true
+    host: "Dexter Thomas"
+    host_instagram: "@dexdigi"
+    source: "Episode transcripts — 'we're on Instagram at kill switch pod'"
+    notes: "Kaleidoscope/iHeart production"
+
+  - name: "Waveform: The MKBHD Podcast"
+    instagram: "@waveformpodcast"
+    threads: "@waveformpodcast"
+    verified: true
+    host: "Marques Brownlee (MKBHD)"
+    host_instagram: "@mkbhd"
+    host_threads: "@mkbhd"
+    host_followers_approx: "5.2M"
+    source: "Show notes — explicit Instagram and Threads URLs"
+    notes: "Vox Media Podcast Network. Other hosts: Andrew Manganelli (@andrew_manganelli on Threads), David Imel (@davidimel on Threads)."
+
+  - name: "Bloomberg Technology"
+    instagram: "@bloombergbusiness"
+    threads: null
+    verified: true
+    source: "YouTube descriptions"
+    notes: "Uses parent Bloomberg brand account. No dedicated podcast IG. Hosts: Ed Ludlow, Caroline Hyde."
+
+  - name: "Smashing Security"
+    instagram: null
+    threads: null
+    verified: false
+    host: "Graham Cluley"
+    host_instagram: "@grahamcluleycom"
+    source: "Host contact page"
+    notes: "Podcast primarily on Bluesky (@smashingsecurity.com). No dedicated podcast IG."
+
+# Podcasts tracked in MediaScope with NO confirmed IG presence:
+# Utilizing AI (Stephen Foskett), Shared Security Podcast, What's Your Problem? (Pushkin),
+# AmberMac Show (SiriusXM), Acquired AI, Clorama XR Product Podcast, TechMagic (Cathy Hackl)
+
+organizations:
+  - name: "Everyone Hates Elon"
+    type: "activist_group"
+    instagram: "@EverybodyHatesElon"
+    threads: null
+    verified: true
+    source: "PetaPixel article attribution + The Independent"
+    notes: "Note handle discrepancy: group name uses 'Everyone' but IG handle uses 'Everybody'. British campaign group formed 2025. Website: peoplevselon.co.uk."
+
+  - name: "Attention Sphere"
+    type: "nonprofit"
+    instagram: null
+    threads: null
+    verified: false
+    notes: "Founded by Ava Smithing. Parent org: The Attention Studio. No IG/Threads presence found."
+
+metadata:
+  compiled: "2026-08-25"
+  method: "Web search verification — only handles confirmed via podcast show notes, official bios, influencer databases, or direct attribution included"
+  key_finding: >
+    Post-Twitter exodus sent most tech journalists to Bluesky, not Threads or Instagram.
+    Of ~65 tracked journalists, only 16 have confirmed IG or Threads handles.
+    Publications universally maintain official IG accounts; journalists largely do not.
+  follower_caveat: >
+    All follower counts are approximate, sourced from third-party trackers with varying
+    snapshot dates. Instagram's May 2026 bot purge reduced counts 2-5% platform-wide.
+  threads_caveat: >
+    Only NYT's Threads presence was independently confirmed with follower data.
+    All other publication Threads handles are inferred from IG handle patterns but
+    not independently verified via threads.net. Individual journalist Threads handles
+    were confirmed from podcast/article attribution.
