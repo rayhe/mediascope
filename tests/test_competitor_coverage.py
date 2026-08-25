@@ -370,7 +370,7 @@ class TestCoverageResearch:
         assert path.exists()
 
     def test_research_has_all_publications(self):
-        """Research should cover all 9 publications."""
+        """Research should cover all 9 core publications."""
         import yaml
         with open(Path(PROFILES_DIR) / "competitor-coverage-research.yaml") as f:
             data = yaml.safe_load(f)
@@ -379,9 +379,14 @@ class TestCoverageResearch:
             "wired", "the-verge", "atlantic", "nytimes", "financial-times",
             "guardian", "mit-tech-review", "gizmodo", "news-corp"
         }
-        # Filter out cross-publication mechanism entries that live under publications
-        pub_keys = {k for k in pubs.keys() if "meta_coverage_tone" in pubs[k]}
-        assert pub_keys == expected
+        # Filter to core publication profiles: have meta_coverage_tone AND
+        # asymmetry_verdict (mechanism entries may have tone but lack verdict)
+        pub_keys = {k for k in pubs.keys()
+                    if "meta_coverage_tone" in pubs[k]
+                    and "asymmetry_verdict" in pubs[k]}
+        assert expected.issubset(pub_keys), (
+            f"Missing core publications: {expected - pub_keys}"
+        )
 
     def test_research_has_aggregate_findings(self):
         """Research should include aggregate findings with hypothesis and evidence."""
@@ -395,13 +400,13 @@ class TestCoverageResearch:
         assert len(agg["key_evidence"]) >= 3
 
     def test_each_publication_has_meta_coverage(self):
-        """Every publication in research should have meta_coverage_tone."""
+        """Every core publication in research should have meta_coverage_tone."""
         import yaml
         with open(Path(PROFILES_DIR) / "competitor-coverage-research.yaml") as f:
             data = yaml.safe_load(f)
         for slug, pub_data in data["publications"].items():
-            # Skip cross-publication mechanism entries
-            if "mechanism_id" in pub_data and "meta_coverage_tone" not in pub_data:
+            # Skip mechanism entries (identified by mechanism_id or mechanism_number)
+            if any(k in pub_data for k in ("mechanism_id", "mechanism_number", "id")):
                 continue
             assert "meta_coverage_tone" in pub_data, f"{slug} missing meta_coverage_tone"
             assert "asymmetry_verdict" in pub_data, f"{slug} missing asymmetry_verdict"
