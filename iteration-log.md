@@ -1,3 +1,58 @@
+## Iteration #283 — Tue 2026-08-25 06:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Gizmodo × OpenAI Ad Infrastructure Maturation Coverage Selection Silence
+
+**Publication+Competitor Pair:** Gizmodo covering OpenAI's ChatGPT advertising infrastructure vs Meta's ad targeting
+
+**New Mechanism #299:** Gizmodo OpenAI Ad Infrastructure Maturation Coverage Selection Silence — AAM Default, Conversion Pixel, 35-Country Expansion
+
+Between January and August 2026, OpenAI built out a complete advertising
+infrastructure replicating Meta's ad-tech stack:
+  - **Conversion tracking pixel** (functionally identical to Meta Pixel, Apr 2026)
+  - **Conversions API** (same as Meta CAPI)
+  - **Automatic Advanced Matching (AAM)** enabled by DEFAULT on all existing
+    web pixels (Aug 17, 2026) — uses hashed customer PII from website forms
+  - **Geographic expansion** to 35 countries (31 European markets, Aug 24, 2026)
+  - **$100M+ annualized ad revenue** within 6 weeks of launch (Reuters)
+
+Gizmodo published **ZERO articles** on any of these developments. Their total
+ChatGPT ads coverage remains ONE sympathetic article from Jan 17, 2026.
+
+Meanwhile, Gizmodo continued publishing Meta ad targeting articles with alarm
+vocabulary ("surveillance-driven," "behavior-changing marketing," 36 privacy
+groups demanding FTC investigation).
+
+**Key natural experiment:** OpenAI's AAM default (Aug 17) uses the same
+technique as Meta's Advanced Matching — both hash customer PII from website
+forms for ad attribution. Both are opt-out. Gizmodo investigated Meta Pixel
+data sharing critically (Big Tax Prep article) but has zero coverage of
+OpenAI Pixel or AAM.
+
+**Extends Mechanism #291** (initial vocabulary bifurcation) by documenting
+the escalation: seven months of OpenAI ad infra maturation with zero
+additional coverage while Meta's identical practices drew continued alarm.
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (new mechanism #299)
+- `tests/test_gizmodo_openai_ad_infra_maturation_coverage_selection_silence_aug25.py` (NEW — 8 classes, 45 tests)
+- `README.md` (file count 602)
+- `docs/ARCHITECTURE.md` (file count 602)
+
+**Tests added:** 45 (8 classes)
+- TestMechanismStructure (9 tests)
+- TestOpenAIAAMDefault (7 tests)
+- TestOpenAIConversionPixel (5 tests)
+- TestEuropeanExpansion (4 tests)
+- TestVocabularyAnalysis (11 tests)
+- TestConfounders (4 tests)
+- TestCrossReferences (2 tests)
+- TestMetaAlarmCoverageInWindow (3 tests)
+
+**Test corpus:** 602 test files
+**Max mechanism_id:** 299
+
+---
+
 ## Iteration #282 — Tue 2026-08-25 05:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Cross-Domain Narrative Propagation — Fashion, Mainstream Journalism, and Reading List Curation
