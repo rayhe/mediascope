@@ -1,3 +1,82 @@
+## Iteration #287 — Tue 2026-08-25 11:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: AI Edge Podcast Expert Authority Publisher-AI Financial Captivity Cross-Entity Coverage Incentive Architecture
+
+**New podcast entry #71:** AI Edge Podcast Ep 32 with Brian Wieser, CEO of Madison
+and Wall (~Aug 20, 2026). Wieser is the most-cited independent advertising industry
+analyst, examining how publishers try to monetize AI crawlers, whether ChatGPT agent
+ads displace Meta/Google, and how AI investment shapes advertising market dynamics.
+
+**New Mechanism #303:** AI Edge Podcast Expert Authority Publisher-AI Financial
+Captivity Cross-Entity Coverage Incentive Architecture
+
+**Core finding — expert-as-structural-incentive-validator:**
+Brian Wieser's analysis on the AI Edge Podcast creates a natural experiment for
+MediaScope's coverage incentive thesis. Key observation: when the podcast discusses
+OpenAI entering advertising, the framing is "experimentation" and "innovation";
+when discussing Meta/Google advertising (their core business for 20+ years), the
+framing is "mature incumbents" facing disruption. Same activity — placing ads near
+AI-generated content using behavioral data — receives opposite editorial vocabulary
+depending on the entity.
+
+**Publisher-AI financial captivity validation (segment 01:45-04:16):**
+Wieser discusses publishers trying to "monetize AI crawlers" — directly validating
+MediaScope mechanisms #8, #9 documenting publisher financial dependency on AI
+company licensing deals. Publishers now navigate a triple financial architecture:
+(1) Meta/Google advertising dollars, (2) OpenAI/Anthropic content licensing deals,
+(3) editorial independence reputation. Coverage that positions AI companies as
+innovative disruptors (vs Meta/Google as surveillance-era incumbents) serves all
+three interests simultaneously.
+
+**Agent ads cross-entity vocabulary differential (segment 19:21):**
+ChatGPT "experiments with agent ads" = innovation framing
+Meta runs ads = surveillance + data harvesting framing
+Same product function, opposite vocabulary — identical to the print-level pattern
+documented across 302 prior mechanisms.
+
+**Investor devaluation coverage selection pressure (segment 32:30-43:46):**
+Wieser's segment on whether investors are devaluing advertising revenue reveals
+structural incentive: publications with OpenAI content deals benefit when investor
+narrative positions ad-dependent companies (Meta, Google) as less valuable business
+models vs pre-IPO AI companies (OpenAI, Anthropic).
+
+**Entity coverage assessment:**
+- Meta/Google: "Whether they still care about advertising" — defensive, declining framing
+- OpenAI: "Experiments with agent ads" — innovation, emerging framing
+- Anthropic: "Watermarking" — responsible, technical framing
+
+**Sentiment Score:** Meta -3/10 (moderate negative), OpenAI +2/10 (neutral-positive)
+**Asymmetry Assessment:** MODERATE-HIGH
+
+**Financial context — structural incentive alignment (NOT corruption):**
+Madison and Wall's advisory clients are ad agencies allocating budget between
+Meta/Google/OpenAI. Analysis positioning AI companies as disruptors serves client
+interest in diversification justification. Independent ≠ disinterested.
+
+**Extends mechanisms:** #8 (publisher AI revenue matrix), #24 (OpenAI ChatGPT ads
+feature parity), #35 (pre-IPO underwriter convergence), #296-298 (three-layer
+propagation cascade — this adds expert-authority podcast layer as fourth layer)
+
+**Files changed:**
+- `podcast-sentiment.md` (1 new entry: #71)
+- `profiles/competitor-coverage-research.yaml` (mechanism #303 added)
+- `tests/test_type_e_11am_ai_edge_podcast_expert_authority_publisher_financial_captivity_aug25.py`
+  (NEW — 5 classes, ~30 tests)
+- `README.md` (file count 606→607)
+- `docs/ARCHITECTURE.md` (file count 606→607)
+
+**Tests added:** ~30 (5 classes)
+- TestMechanismStructure
+- TestExpertAuthorityPublisherFinancialCaptivity
+- TestCrossEntityAdvertisingVocabularyAsymmetry
+- TestInvestorDevaluationAdRevenueNarrative
+- TestPodcastSentimentDocHasEntry71
+
+**Test corpus:** 607 test files
+**Max mechanism_id:** 303
+
+---
+
 ## Iteration #285 — Tue 2026-08-25 09:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Anthropic $10B+ Pre-IPO Credit Facility — Bank Multiplication Coverage Incentive Amplification

@@ -30484,3 +30484,138 @@ publications:
     - 'Meta Ray-Ban: existing LED recording indicator, tamper detection, white
       pulsing light since 2023 launch'
     test_file: tests/test_moinak_pal_digital_trends_cross_entity_camera_wearable_reputation_transfer_framing_aug25.py
+  ai_edge_podcast_expert_authority_publisher_ai_financial_captivity_coverage_incentive:
+    mechanism_id: 303
+    type: cross_entity_coverage_incentive
+    publication: AI Edge Podcast
+    expert: Brian Wieser, CEO of Madison and Wall
+    description: >
+      AI Edge Podcast Expert Authority Publisher-AI Financial Captivity Cross-Entity
+      Coverage Incentive Architecture (Mechanism #303). Brian Wieser's expert analysis
+      on AI Edge Podcast Ep 32 (~Aug 20, 2026) creates a natural experiment for
+      MediaScope's publisher financial captivity thesis. The episode examines the exact
+      financial dynamics that predict coverage tone.
+
+      (1) Publisher-AI Financial Captivity Validation: Wieser discusses how publishers
+      are trying to "monetize AI crawlers" — acknowledging that publishers now depend on
+      AI company licensing deals for revenue replacement as traditional ad revenue erodes.
+      This validates mechanisms #8, #9, #35 that document publisher financial dependency.
+
+      (2) Agent Ads Cross-Entity Coverage Incentive: When OpenAI experiments with "agent
+      ads" in ChatGPT, the framing is "experimentation" and "innovation." When Meta runs
+      advertising (its core business for 20+ years), the framing is "surveillance" and
+      "data harvesting." Same activity — placing ads near AI-generated content using user
+      behavior data — receives opposite editorial vocabulary depending on the entity.
+
+      (3) Investor Devaluation of Ad Revenue Creates Coverage Selection Pressure: Wieser's
+      segment on whether investors are devaluing advertising revenue reveals a structural
+      incentive: if ad-dependent companies (Meta, Google) are perceived as having less
+      valuable business models, pre-IPO AI companies (OpenAI, Anthropic) benefit from the
+      contrast. Publications with OpenAI content deals have financial incentive to amplify
+      this narrative.
+
+      (4) Zuckerberg Manifesto Coverage Asymmetry: The podcast discusses Zuckerberg's AI
+      manifesto in the "quick hits" segment (26:44) — brief, positioned after the main
+      discussion. Compare to how OpenAI announcements get dedicated interview segments
+      (the Fidji Simo episode on Access was 90+ minutes). Meta leadership vision receives
+      compressed podcast treatment vs expansive OpenAI coverage.
+
+      Entity Coverage: Meta/Google framed as incumbent ad companies facing disruption
+      ("whether they still care about advertising"). OpenAI framed as experimenter entering
+      advertising ("experiments," "agent ads"). Anthropic mentioned for watermarking
+      (technical/responsible framing). Publishers framed as victims trying to survive
+      ("publishers trying to monetize AI crawlers" — sympathetic framing that obscures their
+      own editorial incentives).
+
+      Expert authority from the most-cited independent ad industry analyst amplifies the
+      asymmetric framing with academic credibility. Type E podcast sentiment cascade —
+      expert-authority layer in 3-layer propagation model from mechanisms #296-298.
+    date_added: '2026-08-25'
+    date_range: August 2026
+    asymmetry_score: 0.68
+    entity_coverage:
+      meta:
+        sentiment_score: -3
+        framing: Incumbent ad company facing disruption, defensive posture
+        vocabulary:
+        - established ad platform
+        - whether they still care about advertising
+        - mature business model
+        segment_treatment: Compressed quick-hits (26:44, ~5 min)
+      openai:
+        sentiment_score: 2
+        framing: Experimenter entering advertising, innovation narrative
+        vocabulary:
+        - experiments
+        - agent ads
+        - innovation
+        segment_treatment: Dedicated segment (19:21, ~7 min)
+      anthropic:
+        sentiment_score: 0
+        framing: Technical/responsible, watermarking mention
+        vocabulary:
+        - watermarking
+        segment_treatment: Brief mention
+      publishers:
+        sentiment_score: 0
+        framing: Sympathetic victims trying to survive
+        vocabulary:
+        - publishers trying to monetize AI crawlers
+        - revenue replacement
+        segment_treatment: Extended discussion (01:45-10:23)
+    financial_incentive_chain:
+    - step: 1
+      description: Madison and Wall clients are advertising agencies allocating budgets
+        between Meta/Google/OpenAI
+    - step: 2
+      description: Expert analysis positioning AI companies as disruptors serves agency
+        clients who want justification for diversifying ad spend away from Meta/Google
+    - step: 3
+      description: Expert authority amplifies framing with academic credibility, giving
+        the vocabulary differential a pseudo-authoritative foundation
+    - step: 4
+      description: Publications with OpenAI content deals have separate financial incentive
+        to amplify the investor devaluation of ad revenue narrative
+    confounders:
+    - strength: STRONG
+      description: Wieser is a genuine independent expert — Madison and Wall has no known
+        AI company investment or content licensing deal. This is structural incentive
+        alignment, not corruption.
+    - strength: MODERATE
+      description: Meta's ad business IS mature (20+ years) — "incumbent" framing is
+        factually accurate even if the vocabulary differential is asymmetric
+    - strength: MODERATE
+      description: OpenAI's ad experiments ARE genuinely early-stage — "experimenting"
+        is technically accurate vocabulary
+    - strength: WEAK
+      description: Podcast format compresses topics — Zuckerberg manifesto quick-hit
+        treatment could reflect time constraints rather than editorial hierarchy
+    cross_references:
+    - mechanism_id: 24
+      relationship: complements
+      description: Complements OpenAI ChatGPT ads mechanism — Wieser's expert framing of
+        OpenAI ad experiments as innovation validates the vocabulary differential documented
+        in mechanism #24
+    - mechanism_id: 8
+      relationship: validates
+      description: Validates publisher AI revenue matrix — Wieser explicitly discusses
+        publisher financial dependency on AI company licensing deals
+    - mechanism_id: 35
+      relationship: validates
+      description: Validates pre-IPO underwriter convergence — investor devaluation of ad
+        revenue narrative benefits pre-IPO AI companies (OpenAI, Anthropic)
+    - mechanism_id: 302
+      relationship: complements
+      description: Complements Anthropic credit facility bank multiplication — investor
+        devaluation of ad revenue creates parallel coverage incentive from financial
+        analyst ecosystem
+    - mechanism_id: 296
+      relationship: extends
+      description: Extends three-layer propagation model — expert authority podcast adds
+        a credentialed analytical layer atop fashion/cultural and mainstream journalism
+        propagation
+    sources:
+    - 'AI Edge Podcast Ep 32, Brian Wieser (~Aug 20, 2026): https://www.youtube.com/watch?v=1IR_LtHZ6NU'
+    - 'Madison and Wall: independent advertising industry advisory firm, CEO Brian Wieser
+      is the most-cited independent ad industry analyst'
+    test_file: tests/test_type_e_11am_ai_edge_podcast_expert_authority_publisher_financial_captivity_aug25.py
