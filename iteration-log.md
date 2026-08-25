@@ -9713,3 +9713,61 @@ reputation, article type)
 **Pushed to GitHub:** (pending)
 
 ---
+
+## Iteration #280 — Mon 2026-08-24 18:00 PT (Type D: Test & Verify)
+
+### Focus: Duplicate Mechanism ID Fix, Doc Count Sync, Collection Error Resolution
+
+**Issues found and fixed:** 5 total
+
+**1. Duplicate mechanism_id 269 (CRITICAL):**
+Two mechanisms shared mechanism_id 269:
+- Lucas Ropek TechCrunch (original, retained as #269)
+- Steve Dent Engadget (reassigned to #272 — first available gap)
+Updated YAML profile + Steve Dent test file (all #269 references → #272).
+Fixed 2 cross-validation test failures.
+
+**2. Doc count sync (STALE):**
+README and ARCHITECTURE showed "~20,177+ tests across 589 test files" but actual
+`pytest --co` reports 21,370 tests across 590 files. Updated both docs.
+
+**3. Mechanism contiguity gaps 273-283 (STALE GUARD):**
+IDs 273-283 were skipped during iteration sprint from mechanism #271 to #284.
+Added to `known_gaps` set in test_type_d_9pm_cross_validation_aug22.py.
+Fixed 1 cross-validation test failure.
+
+**4. Collection errors — missing packages:**
+39 legacy test files failed collection due to missing `textblob` and `vaderSentiment`
+packages (listed in requirements.txt but not installed). Installed both. All 21,370
+tests now collect cleanly.
+
+**5. Aug24 test sweep:**
+552 aug24 tests: all passed (0 failures).
+Cross-validation tests: 3 previously-failing tests now pass.
+
+**Validation results:**
+- 3 previously-failing tests now pass (0 failures in aug24 + cross-validation sweep)
+- 21,370 tests collected with 0 collection errors
+- All 9 YAML profile files parse cleanly
+- New cross-validation test file: 16 tests, 6 classes — all pass
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (Steve Dent mechanism_id 269→272)
+- `tests/test_steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient_aug24.py` (all #269 refs → #272)
+- `tests/test_type_d_9pm_cross_validation_aug22.py` (known_gaps += 273-283)
+- `tests/test_type_d_6pm_cross_validation_aug24.py` (NEW — 16 tests, 6 classes)
+- `README.md` (test counts: ~20,177+→~21,370+, 589→590 files)
+- `docs/ARCHITECTURE.md` (test counts: ~20,177+→~21,370+, 589→590 files)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 16 (6 classes)
+- TestDuplicateMechanismIdResolution (4 tests)
+- TestDocTestCountSync (4 tests)
+- TestMechanismContiguityGuard (1 test)
+- TestCollectionIntegrity (3 tests)
+- TestMechanismIdRangeValid (4 tests)
+
+**Test corpus:** 590 test files
+**Pushed to GitHub:** ✓
+
+---
