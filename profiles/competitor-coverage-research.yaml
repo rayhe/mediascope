@@ -30322,3 +30322,79 @@ publications:
     - 'Google I/O 2025 + Samsung partnership: Android XR camera glasses fall 2026 launch'
     - 'Snap (2025): Spectacles 5th generation, $2,195, dual cameras'
     test_file: tests/test_fast_company_dan_clay_panopticon_infrastructure_meta_exclusive_surveillance_narrative_aug25.py
+  moinak_pal_digital_trends_cross_entity_reputation_transfer_framing:
+    mechanism_id: 301
+    type: journalist_cross_entity
+    publication: Digital Trends
+    journalist: Moinak Pal
+    description: >
+      Moinak Pal covers camera-equipped smart glasses for Digital Trends across
+      Meta, Apple, Samsung, and Google. The cross-entity vocabulary pattern reveals
+      a reputation transfer mechanism where Apple's identical recording indicator
+      LED is framed as the solution to Meta's problem, creating a hero/villain
+      dyad from identical hardware features.
+
+      Core natural experiment — LED recording indicator: Both Meta and Apple
+      use or will use an LED recording indicator on camera-equipped glasses.
+      Meta's existing implementation is framed as inadequate and bypassable
+      (headline: "creepy reputation"), while Apple's planned implementation of
+      the same feature is framed as innovative trust-building ("solve trust
+      through design"). Same feature, opposite framing.
+
+      Meta vocabulary inventory: "creepy reputation" (headline + body), "banned"
+      (UK courts headline entity-specific despite category-wide policy), "stalkers
+      and surveillance" (civil rights article), "dystopian" + "out of words"
+      (employee monitoring), "covert or deceptive," "misused," "ghost dots,"
+      "privacy debacle."
+
+      Apple vocabulary inventory: "avoid the creepy reputation" (headline hero
+      framing), "solve trust through design" (section heading), "refining user
+      experience," "addressing key pain points," "privacy approach."
+
+      Samsung vocabulary: "AI glasses race," "Intelligent Eyewear," "hands-free
+      translation" — ZERO privacy terms despite camera-equipped glasses.
+
+      Headline entity selection asymmetry: UK HMCTS court ban applies to ALL
+      camera-equipped smart glasses. The ICE memo says "Meta Glasses or similar
+      devices." But the headline reads "If you own Meta smart glasses then you
+      may be banned from courts soon" — entity-specific framing of a
+      category-wide restriction. Samsung and Google camera glasses, launching
+      fall 2026, receive zero mention in the ban context.
+    date_range: April 2026 - August 2026
+    asymmetry_score: 0.71
+    confounders:
+    - strength: MODERATE
+      description: Meta is the market leader with 82% share and 9M+ units sold —
+        higher scrutiny proportional to market presence is expected
+    - strength: MODERATE
+      description: Apple glasses have not shipped yet — impossible to have real-world
+        privacy incidents on unreleased hardware
+    - strength: WEAK
+      description: Meta has had actual privacy incidents (contractor video review
+        scandal) while Apple has not — but the LED framing predates incident reporting
+    - strength: WEAK
+      description: Samsung and Google camera glasses are pre-launch — absence of
+        privacy vocabulary could reflect lack of shipping product
+    cross_references:
+    - mechanism_id: 176
+      relationship: complements
+      description: Complements Digital Trends editorial-level privacy vocabulary
+        asymmetry — Pal's individual pattern matches the publication-wide trend
+    - mechanism_id: 186
+      relationship: extends
+      description: Extends Apple N50 privacy hero cascade — Pal's framing adds a
+        same-feature opposite-verdict natural experiment to the hero positioning
+    sources:
+    - 'Moinak Pal, Digital Trends (Apr 12, 2026): Apple smart glasses might avoid
+      the creepy reputation of Meta Ray-Bans with a light trick — https://www.digitaltrends.com/wearables/apple-smart-glasses-might-avoid-the-creepy-reputation-of-meta-ray-bans-with-a-light-trick/'
+    - 'Moinak Pal, Digital Trends (~Aug 21, 2026): If you own Meta smart glasses
+      then you may be banned from courts soon — https://www.digitaltrends.com/wearables/if-you-own-meta-smart-glasses-then-you-may-be-banned-from-courts-soon/'
+    - 'Moinak Pal, Digital Trends (Apr 14, 2026): Meta is building face recognition
+      into your glasses, and civil rights groups are not happy about it'
+    - "Moinak Pal, Digital Trends (Apr 22, 2026): Meta's latest surveillance plans
+      are so dystopian that I am out of words"
+    - 'Digital Trends wearables (Jul 22, 2026): Samsung enters the AI glasses race
+      with Gemini-powered Intelligent Eyewear — zero privacy vocabulary'
+    - 'Meta Ray-Ban: existing LED recording indicator, tamper detection, white
+      pulsing light since 2023 launch'
+    test_file: tests/test_moinak_pal_digital_trends_cross_entity_camera_wearable_reputation_transfer_framing_aug25.py

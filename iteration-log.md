@@ -1,3 +1,60 @@
+## Iteration #284 — Tue 2026-08-25 08:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Moinak Pal (Digital Trends) Cross-Entity Camera Wearable Reputation Transfer Framing
+
+**Journalist+Publication:** Moinak Pal covering smart glasses at Digital Trends
+
+**New Mechanism #301:** Moinak Pal Digital Trends Cross-Entity Camera Wearable Reputation Transfer Framing — LED Recording Indicator Natural Experiment
+
+Moinak Pal covers camera-equipped smart glasses across Meta, Apple, Samsung,
+and Google for Digital Trends. The cross-entity pattern reveals a reputation
+transfer mechanism: Apple's identical recording indicator LED is framed as
+the *solution* to Meta's *problem*, creating a hero/villain dyad from the
+same hardware feature.
+
+**Core natural experiment — LED recording indicator:**
+- Meta's existing LED (white pulsing, tamper detection): "creepy reputation"
+- Apple's planned LED (same function): "solve trust through design"
+- Same feature, opposite editorial framing
+
+**Vocabulary inventory across entities:**
+- **Meta (12+ alarm terms):** "creepy reputation," "banned," "stalkers and
+  surveillance," "dystopian," "out of words," "covert or deceptive,"
+  "misused," "ghost dots," "privacy debacle"
+- **Apple (5+ hero terms):** "avoid the creepy reputation," "solve trust
+  through design," "refining user experience," "addressing key pain points"
+- **Samsung (0 privacy terms):** "AI glasses race," "Intelligent Eyewear,"
+  "hands-free translation"
+- **Google:** minimal coverage, no privacy vocabulary
+
+**Headline entity selection:**
+UK HMCTS court ban + ICE memo both apply to ALL camera-equipped smart
+glasses. Headlines: "If you own **Meta** smart glasses..." (entity-specific
+framing of category-wide restrictions).
+
+**Extends existing analysis:** Mechanism #176 (DT editorial-level asymmetry)
+and #186 (Apple N50 privacy hero cascade). Pal's individual pattern adds a
+same-feature opposite-verdict natural experiment.
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (new mechanism #301)
+- `tests/test_moinak_pal_digital_trends_cross_entity_camera_wearable_reputation_transfer_framing_aug25.py` (NEW — 6 classes, 22 tests)
+- `README.md` (file count 603→604)
+- `docs/ARCHITECTURE.md` (file count 603→604)
+
+**Tests added:** 22 (6 classes)
+- TestMechanismStructure (7 tests)
+- TestReputationTransferFraming (4 tests)
+- TestHeadlineEntitySelection (3 tests)
+- TestVocabularyInventory (3 tests)
+- TestConfounders (2 tests)
+- TestCrossReferences (1 test)
+
+**Test corpus:** 604 test files
+**Max mechanism_id:** 301
+
+---
+
 ## Iteration #283 — Tue 2026-08-25 06:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: Gizmodo × OpenAI Ad Infrastructure Maturation Coverage Selection Silence
