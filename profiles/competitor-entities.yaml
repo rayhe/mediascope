@@ -720,6 +720,14 @@ entities:
       - Goldman Sachs
       - Morgan Stanley
       - JPMorgan Chase
+      - Citigroup
+      ipo_banks_note: 'Citigroup added to top-tier IPO banks alongside Goldman Sachs, Morgan Stanley,
+        and JPMorgan Chase (Bloomberg, Aug 20 2026). Four of Wall Street''s largest banks now
+        on the deal — the maximum concentration of underwriter capital for any AI IPO.
+        Same three lead banks (GS, MS, JPM) underwriting both Anthropic and OpenAI IPOs,
+        creating cross-IPO financial incentive for positive AI lab coverage by publications
+        those banks'' equity research arms cover.'
+      ipo_banks_citi_source: https://news.bgov.com/antitrust/anthropic-set-to-add-citigroup-to-top-ipo-banks-on-mega-listing
       revenue_run_rate_at_filing_b: 47
       revenue_trajectory_note: '$1B (Dec 2024) → $4B (mid-2025) → $9B (Dec 2025) → $14B (Feb 2026) → $19B (Mar 2026) → $30B
         (Apr 2026) → $47B (May 2026) → $65B (Jul 2026, Reuters Aug 17). Fastest revenue growth in enterprise software history. '

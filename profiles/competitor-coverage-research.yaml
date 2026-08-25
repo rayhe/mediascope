@@ -28316,3 +28316,102 @@ publications:
       - "Karissa Bell, Engadget (Oct 2023): https://www.engadget.com/ray-ban-meta-smart-glasses-review-instagram-worthy-shades-070010365.html"
       - "Karissa Bell, Engadget (Oct 2025): https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html"
     test_file: "tests/test_daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion_aug25.py"
+
+
+  conde_nast_post_search_openai_citation_dependency_financial_architecture:
+    mechanism_id: 294
+    finding: >
+      Condé Nast CEO Roger Lynch's "Plan As If Search Is Zero" directive (Mar 2026) has
+      restructured the company's revenue architecture away from Google search traffic toward
+      four pillars: events (+40% in 2025), subscriptions (+29% digital), commerce, and AI
+      licensing deals (OpenAI Aug 2024, Amazon 2025, Perplexity). Combined with the
+      Press Ranger/OtterlyAI finding (Aug 20, 2026) that Condé Nast is one of the top 5
+      citation beneficiaries earning a 48% citation premium on ChatGPT, this creates a
+      three-way financial architecture: (1) Google search collapse pushes Condé Nast away
+      from search-dependent revenue, (2) Google coercion ("share for AI or lose fees")
+      accelerates migration, (3) OpenAI citation premium pulls Condé Nast toward deepening
+      OpenAI financial dependency. As OpenAI citation revenue grows relative to declining
+      search revenue, the financial incentive to maintain favorable OpenAI coverage intensifies.
+      Meta has zero publisher licensing deals, creating a perfectly inverted incentive
+      structure: favorable OpenAI coverage protects a growing revenue stream; favorable
+      Meta coverage produces zero revenue benefit.
+    google_search_collapse:
+      organic_decline_pct: 33
+      us_specific_decline_pct: 38
+      projected_decline_2029_pct: 43
+      ceo_characterization: "Lynch described Google generative search as a 'death blow' to historic referral pipelines"
+      source: "Chartbeat Nov 2024-Nov 2025 data; FT Lynch interview Mar 2026"
+    strategic_directive: "Plan As If Search Is Zero"
+    advertising_growth_engine: false
+    google_deal_status: "none"
+    google_coercion:
+      mechanism: "share_for_ai_or_lose_fees"
+      date_reported: "2026-06-25"
+      push_effect: "deepens_openai_dependency"
+      source: "The Information via PYMNTS, Jun 25, 2026"
+    citation_premium:
+      top_5_beneficiaries:
+        - Future plc
+        - Forbes
+        - People Inc.
+        - Condé Nast
+        - Hearst
+      top_5_share_pct: 69
+      chatgpt_premium_pct: 48
+      chatgpt_citations_licensed: 10.2
+      chatgpt_citations_unlicensed: 6.9
+      exclusive_premium_pct: 112
+      all_platform_premium_pct: 46
+      licensed_chatgpt_concentration_pct: 57.9
+      dataset_size: "129.3M citations, 7 platforms, Jun 2026"
+      deal_database: "91 agreements, 314 domains (through Jul 28, 2026)"
+      source: "Press Ranger/OtterlyAI joint study, Aug 20, 2026"
+    revenue_pivot:
+      events_growth_2025_pct: 40
+      events_projected_2026_pct: 22
+      digital_subs_growth_pct: 29
+      ai_licensing_partners:
+        - OpenAI
+        - Amazon
+        - Perplexity
+      strategic_pillars:
+        - events
+        - subscriptions
+        - commerce
+        - licensing
+    coverage_incentive:
+      openai_favorable_coverage_benefit: "revenue_protection"
+      meta_favorable_coverage_benefit: "zero"
+      differential: "Favorable OpenAI coverage protects licensing deal + 48% citation premium. Favorable Meta coverage = zero revenue benefit. Perfectly inverted incentive structure."
+      relative_importance_trend: "increasing"
+    confounders:
+      - description: "Editorial independence — WIRED journalists may operate independently of Condé Nast's corporate financial strategy"
+        strength: STRONG
+      - description: "Correlation vs causation — citation premium may reflect content quality differences, not deal-driven amplification"
+        strength: STRONG
+      - description: "Revenue materiality — AI licensing revenue is growing but still a minority of Condé Nast total revenue"
+        strength: MODERATE
+      - description: "Deal terms undisclosed — actual dollar value of Condé Nast-OpenAI deal unknown"
+        strength: MODERATE
+      - description: "Industry-wide dynamics — multiple publications without OpenAI deals also cover Meta adversarially"
+        strength: WEAK
+    cross_references:
+      - mechanism_id: 249
+        relationship: specializes
+        description: "#294 isolates the Condé Nast-specific implications of the general 48% citation premium finding in #249"
+      - mechanism_id: 1
+        relationship: extends
+        description: "Extends Advance aggregate AI dependency with specific citation premium quantification"
+      - mechanism_id: 69
+        relationship: complements
+        description: "Complements Condé Nast deal inventory mechanism with post-search revenue architecture context"
+    asymmetry_score: 0.72
+    source_urls:
+      - "https://ai-search-news-licensing-deals-study.netlify.app/"
+      - "https://lifestyle.houstonnewstoday.com/story/833738/"
+      - "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+      - "https://opentools.ai/news/conde-nast-ceo-search-zero-ai-discovery-shift"
+      - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+      - "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
+      - "https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/"
+    test_file: "tests/test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py"

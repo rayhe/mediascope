@@ -1,3 +1,67 @@
+## Iteration #280 — Tue 2026-08-25 03:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Condé Nast Post-Search Revenue Architecture — OpenAI Citation Premium as Core Financial Dependency Channel
+
+**New Mechanism #294:** Condé Nast's "Plan As If Search Is Zero" revenue restructuring
+creates a three-way financial architecture deepening OpenAI dependency:
+
+1. **Google Search Collapse (Push):** 33% organic traffic decline (Chartbeat), 38% US-specific.
+   Lynch called Google AI search a "death blow" to referral pipelines (FT, Mar 2026).
+   Condé Nast notably has NOT signed a Google AI licensing deal.
+
+2. **Google Coercion (Accelerator):** Google told publishers to share content for AI training
+   or lose annual fees (The Information via PYMNTS, Jun 25, 2026). Condé Nast, without a
+   Google deal, faces a financial squeeze: losing traffic AND fees. Pushes toward deeper
+   OpenAI dependency.
+
+3. **OpenAI Citation Premium (Pull):** Press Ranger/OtterlyAI study (Aug 20, 2026) found
+   OpenAI-licensed publishers earn 48% more ChatGPT citations per page (10.2 vs 6.9).
+   Condé Nast is one of the **top 5 citation beneficiaries** (with Future plc, Forbes,
+   People Inc., Hearst), capturing 69% of all licensed-publisher citations. OpenAI-exclusive
+   publishers earn 112% more.
+
+**Revenue pivot data:**
+- Events: +40% in 2025, projecting +22% in 2026 (Adweek, Herbst-Brady)
+- Digital subscriptions: +29%, double-digit continuing
+- AI licensing partners: OpenAI (Aug 2024), Amazon (2025), Perplexity — NOT Google
+- Lynch (Oct 2025): advertising "no longer a growth engine"
+
+**Coverage incentive prediction:** As OpenAI citation revenue grows relative to declining
+search revenue, the financial incentive to maintain favorable OpenAI coverage intensifies.
+Meta has ZERO publisher licensing deals → zero financial benefit from favorable coverage.
+Perfectly inverted incentive structure.
+
+**Also updated:** Anthropic IPO data in competitor-entities.yaml:
+- Citigroup added to underwriter banks (4 banks total: Goldman, Morgan Stanley, JPMorgan, Citi)
+- Source: Bloomberg Aug 20, 2026
+
+**Confounders:** 5 documented (2 STRONG: editorial independence + correlation/causation;
+2 MODERATE: revenue materiality + undisclosed deal terms; 1 WEAK: industry-wide dynamics)
+
+**Asymmetry score:** 0.72
+
+**Files changed:**
+- `tests/test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py` (NEW — 30 tests, 8 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #294 added)
+- `profiles/competitor-entities.yaml` (Anthropic IPO banks updated: +Citigroup)
+- `README.md` (test file count updated to 601)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 34 (9 classes)
+- TestCondeNastPostSearchRevenueArchitecture (3 tests)
+- TestGoogleCoercionPushEffect (3 tests)
+- TestOpenAICitationPremiumCondéNastSpecific (3 tests)
+- TestRevenuePivotDependencyDeepening (4 tests)
+- TestCoverageIncentivePrediction (4 tests)
+- TestThreeWayFinancialArchitecture (3 tests)
+- TestConfounders (5 tests)
+- TestCrossReferences (3 tests)
+- TestSourceVerification (5 tests)
+
+**Test corpus:** 601 test files
+
+---
+
 ## Iteration #279 — Tue 2026-08-25 02:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Daniel Cooper (Engadget/Yahoo) Within-Review Cross-Entity Privacy Benchmark Inversion
