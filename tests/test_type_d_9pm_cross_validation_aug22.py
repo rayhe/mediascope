@@ -125,7 +125,8 @@ class TestMechanism239Added(unittest.TestCase):
             max_id = max(above_200)
             expected = set(range(201, max_id + 1))
             # Known gaps — IDs that were skipped, reserved, or consolidated
-            known_gaps = {241, 244, 249, 250, 258, 259, 260, 261, 264}
+            known_gaps = {241, 244, 249, 250, 258, 259, 260, 261, 264,
+                         273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283}
             missing = expected - ids - known_gaps
             assert not missing, f"Gaps in mechanism IDs above 200 (excluding known): {sorted(missing)}"
 

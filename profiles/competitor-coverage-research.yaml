@@ -27519,7 +27519,7 @@ publications:
     test_file: "tests/test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py"
 
   steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient:
-    mechanism_id: 269
+    mechanism_id: 272
     title: "Steve Dent Engadget Cross-Entity Camera Wearable Privacy Vocabulary Gradient"
     type: journalist_cross_entity
     journalist: "Steve Dent"

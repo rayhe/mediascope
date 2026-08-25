@@ -1,7 +1,7 @@
 """
 Steve Dent (Engadget) — Cross-Entity Camera Wearable Privacy Vocabulary Gradient
 
-Mechanism #269: Same Engadget contributing writer covers Meta glasses privacy
+Mechanism #272: Same Engadget contributing writer covers Meta glasses privacy
 AND Apple camera AirPods with dramatically different framing:
 
 Article 1 — Meta (Mar 3, 2026):
@@ -376,7 +376,7 @@ class TestConfounders(unittest.TestCase):
 
 
 class TestMechanismInYAML(unittest.TestCase):
-    """Verify mechanism #269 is registered in competitor-coverage-research.yaml."""
+    """Verify mechanism #272 is registered in competitor-coverage-research.yaml."""
 
     @classmethod
     def setUpClass(cls):
@@ -395,7 +395,7 @@ class TestMechanismInYAML(unittest.TestCase):
         self.assertIsNotNone(self.yaml_text)
         self.assertGreater(len(self.yaml_text), 0)
 
-    def test_mechanism_269_exists_with_steve_dent(self):
+    def test_mechanism_272_exists_with_steve_dent(self):
         """A mechanism for Steve Dent Engadget cross-entity exists in YAML."""
         self.assertIn("Steve Dent", self.yaml_text)
         self.assertIn("Steve Dent Engadget Cross-Entity Camera Wearable Privacy Vocabulary Gradient",
