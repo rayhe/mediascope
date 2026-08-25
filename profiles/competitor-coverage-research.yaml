@@ -28008,3 +28008,55 @@ publications:
     related_mechanisms:
       - mechanism_id: 22
         description: WSJ OpenAI ad cannibalization self-demonetization paradox
+
+  - mechanism_id: 288
+    mechanism_number: 288
+    title: "WSJ Data Practice Vocabulary Gradient — OpenAI Aspirational, Anthropic Mild, Meta Alarm"
+    publication: Wall Street Journal
+    journalist: Amrith Ramkumar
+    date: 2026-08-19
+    competitor_entities:
+      - OpenAI
+      - Anthropic
+    topic: data_retention_privacy
+    mechanism_type: within_publication_cross_entity_vocabulary_bifurcation
+    description: >
+      Within 24 hours (Aug 18-19), WSJ covers three entities' data practices with vocabulary
+      intensity inversely proportional to financial alignment with parent company News Corp.
+      OpenAI (disclosed $250M partner): "promise," "pledge," "bid" (aspirational).
+      Anthropic (no deal): "backlash," "criticism" (mild). Meta (ad competitor): "accused,"
+      "crisis," "$1.4T damages" (alarm). All three collect user data. The gradient maps
+      to News Corp's financial relationship. WSJ does disclose the partnership at article end.
+    source_urls:
+      - https://www.wsj.com/tech/ai/openais-latest-bid-to-fight-anthropic-a-promise-not-to-keep-customer-data-d51a9b65
+      - https://www.wsj.com/tech/personal-tech/openai-chatgpt-for-teens-bc0e9d39
+    vocabulary_analysis:
+      openai_register: aspirational
+      anthropic_register: mild_criticism
+      meta_register: alarm
+      three_entity_gradient: true
+    financial_context:
+      news_corp_openai_deal: $250M/5yr
+      news_corp_meta_deal: none
+      news_corp_anthropic_deal: none
+      meta_openai_ad_competition: true
+    disclosure:
+      news_corp_openai_deal_disclosed: true
+      disclosure_position: article_end
+    confounding_factors:
+      - factor: WSJ does disclose News Corp-OpenAI deal at article end
+        strength: MODERATE
+      - factor: OpenAI data non-retention is genuine product news
+        strength: WEAK
+      - factor: Meta $1.4T lawsuit is factual
+        strength: MODERATE
+      - factor: Anthropic retention policy is genuinely controversial in enterprise
+        strength: WEAK
+    asymmetry_score: 0.72
+    test_count: 21
+    test_file: tests/test_wsj_amrith_ramkumar_openai_anthropic_data_retention_meta_cautionary_foil_vocabulary_bifurcation_aug24.py
+    related_mechanisms:
+      - mechanism_id: 287
+        description: WSJ Julie Jargon ChatGPT teens within-article cross-entity vocabulary bifurcation
+      - mechanism_id: 22
+        description: WSJ OpenAI ad cannibalization self-demonetization paradox

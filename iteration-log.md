@@ -9848,4 +9848,57 @@ This pattern matches broader WSJ OpenAI coverage:
 - TestMetaPriorArtDiminishment (3 tests)
 
 **Test corpus:** 591 test files
-**Pushed to GitHub:** pending
+**Pushed to GitHub:** ✓
+
+---
+
+### Iteration #278 — Type A: Competitor Coverage Deep Dive
+**Date:** 2026-08-24
+**Focus:** WSJ Data Practice Vocabulary Gradient — OpenAI/Anthropic/Meta three-entity framing
+**Mechanism:** #288
+
+**Discovery:**
+Within a 24-hour window (Aug 18-19, 2026), WSJ published two articles that cover three
+entities' data practices with vocabulary intensity inversely proportional to financial
+alignment with parent company News Corp ($250M/5yr content licensing deal with OpenAI):
+
+- **OpenAI** (disclosed partner): "promise," "pledge," "bid" — aspirational/proactive
+- **Anthropic** (no deal): "backlash," "criticism" — mild/neutral
+- **Meta** (ad competitor, no deal): "accused," "crisis," "$1.4T damages" — alarm/adversarial
+
+All three entities collect and process user data. OpenAI enabled default marketing
+cookies for free ChatGPT users (May 2026) sharing cookie IDs and device IDs with
+advertisers. This received minimal WSJ coverage compared to Meta's data practices.
+
+**Source articles:**
+1. Amrith Ramkumar (Aug 19): "OpenAI's Latest Bid to Fight Anthropic: A Promise Not to
+   Keep Customer Data" — frames data non-retention as competitive "bid" and "pledge."
+   Discloses News Corp-OpenAI deal at article end.
+2. Julie Jargon (Aug 18): "What Parents Need to Know About OpenAI's New ChatGPT for
+   Teens" — uses Meta as cautionary contrast entity ("accused in court of contributing
+   to the youth mental health crisis") in article about OpenAI's product.
+
+**Notable:** WSJ does disclose the News Corp-OpenAI financial relationship at the bottom
+of the Ramkumar article. This is more transparent than most publications. However,
+disclosure placement after all framing has been absorbed does not neutralize the
+vocabulary differential.
+
+**Asymmetry score:** 0.72
+
+**Files changed:**
+- `tests/test_wsj_amrith_ramkumar_openai_anthropic_data_retention_meta_cautionary_foil_vocabulary_bifurcation_aug24.py` (NEW — 21 tests, 7 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #288 added)
+- `README.md` (591→592 test files, ~21,407→~21,428 tests)
+- `docs/ARCHITECTURE.md` (591→592 test files, ~21,407→~21,428 tests)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 21 (7 classes)
+- TestWSJDataPracticeVocabularyGradient (4 tests)
+- TestWSJOpenAIDataRetentionFraming (4 tests)
+- TestWSJMetaAsCautionaryContrastEntity (4 tests)
+- TestWSJNewsCorpFinancialArchitecture (3 tests)
+- TestCrossEntityDataPracticeParity (2 tests)
+- TestConfounders (4 tests)
+
+**Test corpus:** 592 test files
+**Pushed to GitHub:** ✓
