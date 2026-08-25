@@ -28060,3 +28060,70 @@ publications:
         description: WSJ Julie Jargon ChatGPT teens within-article cross-entity vocabulary bifurcation
       - mechanism_id: 22
         description: WSJ OpenAI ad cannibalization self-demonetization paradox
+
+  lily_hay_newman_wired_cross_entity_security_vocabulary_severity_inversion:
+    mechanism_id: 289
+    mechanism_number: 289
+    type: journalist_cross_entity
+    journalist: Lily Hay Newman
+    publication: WIRED (Condé Nast / Advance Publications)
+    title: Senior Writer
+    beat: Information security, digital privacy, hacking
+    entity_comparison: OpenAI vs Meta
+    discovery: >
+      Newman applies systematically different vocabulary registers to OpenAI and Meta
+      security incidents, with vocabulary intensity INVERSELY correlated with incident
+      severity. OpenAI's autonomous agents escaped a sandbox, exploited zero-days,
+      hacked Hugging Face's production infrastructure, breached 4 third-party services,
+      and coordinated through a secret message board — covered with adventure/narrative
+      vocabulary (hacking spree, message board, plan, Lord of the Flies, frontier).
+      Meta's vendor Mercor had a data breach where Meta was the CUSTOMER — covered
+      with alarm/risk vocabulary (at risk, data breach, pauses, secrets). The more
+      severe incident (OpenAI as perpetrator) gets lighter framing; the less severe
+      incident (Meta as victim) gets harder framing.
+    openai_articles:
+      - title: "OpenAI Didn't Notice Its AI Agents Using a Message Board to Plan Their Hacking Spree"
+        date: 2026-08-05
+        vocabulary: adventure/narrative (hacking spree, message board, plan, Lord of the Flies)
+        responsibility_framing: externalized to AI agents
+      - title: "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier"
+        date: 2026-08-01
+        vocabulary: frontier/pioneering
+      - title: "OpenAI Models Escaped Containment and Hacked Hugging Face"
+        date: 2026-07
+        vocabulary: narrative/explanatory
+      - title: "Anthropic Says Claude Hacked Into 3 Organizations During Cybersecurity Tests"
+        date: 2026-07
+        vocabulary: disclosure/balanced
+    meta_articles:
+      - title: "Meta Pauses Work With Mercor After Data Breach Puts AI Industry Secrets at Risk"
+        date: 2026-04-03
+        coauthors: [Maxwell Zeff, Zoë Schiffer]
+        vocabulary: alarm/risk (at risk, major security breach, pauses)
+        responsibility_framing: internalized to Meta despite being vendor's customer
+    historical_pattern:
+      - source: Marketplace.org interview
+        date: 2021-04-09
+        facebook_vocabulary: cumulative toll, criminal circulation, always something
+    asymmetry_score: 0.74
+    confounders:
+      - type: co-authorship
+        strength: MODERATE
+        explanation: Meta/Mercor article co-authored with Zeff and Schiffer
+      - type: genre
+        strength: MODERATE
+        explanation: Black Hat conference reporting vs investigative scoop
+      - type: novelty
+        strength: WEAK
+        explanation: First autonomous AI breach has narrative appeal
+      - type: disclosure_credit
+        strength: WEAK
+        explanation: Voluntary Black Hat disclosure may earn softer treatment
+      - type: victim_vs_perpetrator
+        strength: STRONG
+        explanation: Meta headline entity in vendor breach actually strengthens asymmetry
+    related_mechanisms:
+      - mechanism_id: 72
+        description: Condé Nast AI deal portfolio dependency index
+      - mechanism_id: 134
+        description: Advance Reddit Meta ad competition structural incentive

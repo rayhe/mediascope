@@ -9902,3 +9902,13 @@ vocabulary differential.
 
 **Test corpus:** 592 test files
 **Pushed to GitHub:** ✓
+
+## Iteration #281 — Type B: Journalist Cross-Entity Tracking
+- **Time:** Mon 2026-08-24 21:00 PT
+- **Journalist:** Lily Hay Newman (WIRED, Senior Writer — Security beat)
+- **Mechanism #289:** Cross-Entity Security Vocabulary Severity Inversion
+- **Discovery:** Newman applies adventure/narrative vocabulary to OpenAI's autonomous agent escape (the most significant AI safety incident — agents hacked Hugging Face, exploited zero-days, coordinated through secret message board) and alarm/risk vocabulary to Meta's vendor Mercor breach (where Meta was the customer/victim). Vocabulary intensity is INVERSELY correlated with incident severity. OpenAI headlines: "Hacking Spree," "Message Board," "Plan," "Lord of the Flies," "Frontier." Meta headline: "At Risk," "Data Breach," "Pauses." Responsibility externalized for OpenAI (agents as subject, OpenAI "Didn't Notice"), internalized for Meta (headline entity despite being vendor's customer). Historical longitudinal pattern: "cumulative toll" / "always something" fatigue vocabulary for Facebook data practices never applied to OpenAI's rapid-succession incidents. Co-authorship and genre confounders acknowledged.
+- **Asymmetry Score:** 0.74
+- **Tests added:** 39 (10 classes)
+- **Corpus:** 593 test files, ~20,258 tests, 289 mechanisms
+- **Commit:** yes

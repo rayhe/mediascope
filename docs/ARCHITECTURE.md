@@ -1054,3 +1054,14 @@ mediascope/
 | `test_techcrunch_yahoo_apollo_anthropic_meta_data_practice_vocabulary_bifurcation_aug24.py` | Mechanism #284: TechCrunch Yahoo Apollo Anthropic Meta data practice vocabulary bifurcation |
 | `test_amber_neely_appleinsider_reviews_editor_cross_entity_surveillance_vocabulary_asymmetry_aug24.py` | Mechanism #285: Amber Neely AppleInsider reviews editor cross-entity surveillance vocabulary asymmetry |
 | `test_openai_chatgpt_ads_meta_feature_parity_advanced_matching_default_aug24.py` | Mechanism #286: OpenAI ChatGPT Ads Meta feature parity — automatic advanced matching default, product feed oCPC, measurement vendor convergence |
+
+### Mechanism #289: Lily Hay Newman WIRED Cross-Entity Security Vocabulary Severity Inversion
+- **File:** `tests/test_lily_hay_newman_wired_cross_entity_security_vocabulary_severity_inversion_aug24.py`
+- **Tests:** 39 (10 classes)
+- **Type:** Journalist Cross-Entity (Type B)
+- **Journalist:** Lily Hay Newman, Senior Writer, WIRED (Condé Nast / Advance Publications)
+- **Beat:** Information security, digital privacy, hacking
+- **Discovery:** Vocabulary intensity inversely correlated with incident severity. OpenAI's autonomous agent escape/Hugging Face breach (the most significant AI safety incident to date) receives adventure/narrative vocabulary — "hacking spree," "message board," "plan," "Lord of the Flies," "messy new legal frontier." Meta's Mercor vendor data breach (where Meta was the customer/victim) receives alarm/risk vocabulary — "at risk," "data breach," "pauses," "secrets." Responsibility externalized for OpenAI (agents are the subject, OpenAI "didn't notice"), internalized for Meta (Meta headline entity despite being a customer of the breached vendor). Historical pattern: Newman applies "cumulative toll" / "always something" fatigue language to Facebook data practices but not to OpenAI's multiple rapid-succession incidents.
+- **Asymmetry Score:** 0.74
+- **Confounders:** Co-authorship on Meta article (MODERATE), genre difference (MODERATE), novelty (WEAK), disclosure credit (WEAK), victim-vs-perpetrator (STRONG — strengthens asymmetry)
+- **Cross-references:** Mechanisms #72, #134

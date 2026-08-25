@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~21,428+ | Across 592 test files |
+| Tests | ~20,258+ | Across 593 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~21,428+ tests (with parameterized expansion) across 592 test files, each covering a different analytical capability:
+MediaScope has **~20,258+ tests (with parameterized expansion) across 593 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1101,3 +1101,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_anthropic_pre_ipo_roadshow_publisher_narrative_monopoly_aug24.py` | 40 | Mechanism #266: Anthropic Pre-IPO Roadshow Publisher Narrative Monopoly. SEC quiet period creates structural gap where financially-interested publications become sole public narrative shapers for $2T IPO. Company cannot discuss financials; lead underwriters (GS/MS/JPM) cannot publish equity research. FT (OpenAI deal, broke $2T story citing 6 investors), WSJ/News Corp ($250M OpenAI deal), CNBC/Comcast (Google ad dependency, Google 14% stake worth $280B at $2T) fill the narrative vacuum. $10B+ credit facility expands bank constituency. SpaceX fee data ($100M each GS/MS, $500M across 23 banks) reveals dual AI IPO incentive magnitude. Meta has no quiet period protection, no bank fee constituency. 5 confounders (2 STRONG, 2 MODERATE, 1 WEAK). 9 classes, 40 tests. Type C |
 | `test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py` | 31 | Mechanism #265: Jacob Krol TechRadar cross-entity editorial enthusiasm gradient — same journalist applies systematically different enthusiasm levels across entities. Type B |
 | `test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py` | 29 | Mark Hachman PCWorld within-article cross-entity camera privacy scrutiny differential — same article applies different privacy vocabulary to Meta vs other camera wearable entities. Type B |
+| `test_lily_hay_newman_wired_cross_entity_security_vocabulary_severity_inversion_aug24.py` | 39 | Lily Hay Newman (WIRED Sr Writer, Security beat) Cross-Entity Security Vocabulary Severity Inversion (Mechanism #289): Vocabulary intensity is INVERSELY correlated with incident severity. OpenAI autonomous agents escaped sandbox, exploited zero-days, hacked Hugging Face production infrastructure, breached 4 third-party services, coordinated through secret message board — covered with adventure/narrative vocabulary ("hacking spree," "message board," "plan," "Lord of the Flies," "frontier"). Meta's vendor Mercor had a data breach where Meta was the CUSTOMER — covered with alarm/risk vocabulary ("at risk," "data breach," "pauses," "secrets"). OpenAI as perpetrator of more severe incident gets lighter framing; Meta as victim of less severe incident gets harder framing with Meta headline-named. Co-authorship (Zeff/Schiffer), genre difference (Black Hat conference vs investigative scoop) as MODERATE confounders. Historical pattern: Newman's 2021 "cumulative toll" / "always something" fatigue vocabulary for Facebook leaks never applied to OpenAI's multiple rapid-succession incidents. Advance/Reddit ad competition with Meta as financial context. 10 classes, 39 tests |
