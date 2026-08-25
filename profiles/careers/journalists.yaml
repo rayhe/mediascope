@@ -9975,9 +9975,8 @@ journalists:
     within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years at Digital Trends.'
   mechanism_207_apple_camera_airpods_leak_silence:
     discovery_date: '2026-08-21'
-    pattern: 'Senior Editor for Gear published zero coverage of Apple camera AirPods macOS Tahoe
-      leak (Aug 18-21). Editorial authority to assign coverage. 4+ documented Meta mechanisms
-      (#47, #72, #91, #93). AirPods fall squarely in Gear vertical.'
+    pattern: 'Senior Editor for Gear published zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21). Editorial
+      authority to assign coverage. 4+ documented Meta mechanisms (#47, #72, #91, #93). AirPods fall squarely in Gear vertical.'
     test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
   multi_publication: true
 - beats:
@@ -11156,9 +11155,9 @@ journalists:
       test_file: tests/test_boone_ashworth_cross_entity_aug12.py
     mechanism_207_apple_camera_airpods_leak_silence:
       discovery_date: '2026-08-21'
-      pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite
-        consumer tech/gadgets beat. 9+ outlets covered the story. Ashworth has 4+ documented
-        Meta mechanisms (#45, #70, #73, #87) but zero Apple camera wearable leak coverage.'
+      pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite consumer tech/gadgets beat. 9+
+        outlets covered the story. Ashworth has 4+ documented Meta mechanisms (#45, #70, #73, #87) but zero Apple camera wearable
+        leak coverage.'
       test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
   multi_publication: true
 - auto_detected_migrations: 5
@@ -13248,39 +13247,36 @@ journalists:
     cross_entity_analysis:
       mechanism_id: 215
       pattern: camera_product_vocabulary_bifurcation
-      description: 'Within a 9-day window (Aug 4-13+, 2026), produced adversarial "workplace
-        menace" framing for Meta camera glasses and aspirational "Creator Suite" framing for
-        Google Pixel 11 cameras. Same journalist, same month, radically different vocabulary
-        for camera products. Her personal summer in/out list encodes Meta glasses as "AI pervert
-        glasses" (OUT column), while Google camera products receive zero privacy vocabulary.
-        Also covered OpenAI adversarially ("How an OpenAI influencer trip backfired," Aug 4).
-        KEY ANALYTICAL NUANCE: Unlike beat-assignment mechanisms (#198), Sato''s vocabulary
-        bifurcation exists at the personal editorial level — her summer in/out list is personal
-        voice, not editor-assigned. She self-selects to apply adversarial vocabulary to Meta and
-        aspirational vocabulary to Google. This makes the finding stronger than editorial-routing
-        mechanisms: the vocabulary differential reflects the journalist''s own editorial stance,
-        not just assignment patterns. Downstream media (fiercebymitu.com, mlq.ai) adopt her
-        framing as authoritative, creating vocabulary propagation.'
+      description: 'Within a 9-day window (Aug 4-13+, 2026), produced adversarial "workplace menace" framing for Meta camera
+        glasses and aspirational "Creator Suite" framing for Google Pixel 11 cameras. Same journalist, same month, radically
+        different vocabulary for camera products. Her personal summer in/out list encodes Meta glasses as "AI pervert glasses"
+        (OUT column), while Google camera products receive zero privacy vocabulary. Also covered OpenAI adversarially ("How
+        an OpenAI influencer trip backfired," Aug 4). KEY ANALYTICAL NUANCE: Unlike beat-assignment mechanisms (#198), Sato''s
+        vocabulary bifurcation exists at the personal editorial level — her summer in/out list is personal voice, not editor-assigned.
+        She self-selects to apply adversarial vocabulary to Meta and aspirational vocabulary to Google. This makes the finding
+        stronger than editorial-routing mechanisms: the vocabulary differential reflects the journalist''s own editorial stance,
+        not just assignment patterns. Downstream media (fiercebymitu.com, mlq.ai) adopt her framing as authoritative, creating
+        vocabulary propagation.'
       meta_coverage:
-        title: "Meta glasses are a workplace menace"
+        title: Meta glasses are a workplace menace
         date: '2026-08-14'
         publication: the-verge
         tone: -8
         privacy_terms: 7
         amplification: '#1 Most Popular on The Verge, Vergecast, NextDraft, AI-RTZ'
       google_coverage:
-        title: "Google aims for influencers with the Pixel 11 Creator Suite"
+        title: Google aims for influencers with the Pixel 11 Creator Suite
         date: '2026-08-12'
         publication: the-verge
-        tone: +3
+        tone: 3
         privacy_terms: 0
-        amplification: 'Standard publication'
+        amplification: Standard publication
       openai_coverage:
-        title: "How an OpenAI influencer trip backfired"
+        title: How an OpenAI influencer trip backfired
         date: '2026-08-04'
         publication: the-verge
         tone: -5
-        amplification: 'Standard publication'
+        amplification: Standard publication
 - career:
   - beat: biomedical engineering, brain-computer interfaces
     end: '2021'
@@ -18421,37 +18417,34 @@ journalists:
     cross_entity_analysis:
       mechanism_id: 131
       pattern: control_outlet_calibration
-      description: >-
-        CONTROL CALIBRATION (Mechanism #131): Ben Schoon at 9to5Google demonstrates the
-        natural editorial baseline for smart glasses privacy coverage absent institutional
-        financial pressure. His Meta coverage applies ~5 privacy terms (camera disable,
-        privacy light, enforcement gap, "you cannot and should not be recording all the time")
-        while his Samsung/Google coverage applies ~3 privacy terms (cultural quagmire,
-        tampering/abuse, "subject to the same scrutiny"). This ~1.7:1 ratio contrasts with
-        WIRED/Gizmodo/Future plc's infinite ratio (10+ Meta terms, ZERO competitor terms).
-        The delta quantifies institutional amplification: the category concern is real (even
-        control outlets acknowledge it), but institutional outlets weaponize it entity-selectively.
+      description: 'CONTROL CALIBRATION (Mechanism #131): Ben Schoon at 9to5Google demonstrates the natural editorial baseline
+        for smart glasses privacy coverage absent institutional financial pressure. His Meta coverage applies ~5 privacy terms
+        (camera disable, privacy light, enforcement gap, "you cannot and should not be recording all the time") while his
+        Samsung/Google coverage applies ~3 privacy terms (cultural quagmire, tampering/abuse, "subject to the same scrutiny").
+        This ~1.7:1 ratio contrasts with WIRED/Gizmodo/Future plc''s infinite ratio (10+ Meta terms, ZERO competitor terms).
+        The delta quantifies institutional amplification: the category concern is real (even control outlets acknowledge it),
+        but institutional outlets weaponize it entity-selectively.'
       meta_coverage:
         articles:
-          - title: "Meta Ray-Ban glasses now disable the camera if privacy light breaks"
-            date: '2026-07-07'
-            framing: privacy-skeptical aggregation
-          - title: "Meta developing always-on glasses with less-active privacy light"
-            date: '2026-07-09'
-            framing: privacy-critical editorial
+        - title: Meta Ray-Ban glasses now disable the camera if privacy light breaks
+          date: '2026-07-07'
+          framing: privacy-skeptical aggregation
+        - title: Meta developing always-on glasses with less-active privacy light
+          date: '2026-07-09'
+          framing: privacy-critical editorial
         privacy_vocabulary_count: 5
         tone_score: -0.35
       samsung_google_coverage:
         articles:
-          - title: "9to5Google Inbox Newsletter #4 — Samsung Unpacked coverage"
-            date: '2026-07-23'
-            framing: balanced with privacy acknowledgment
-            key_quote: "by releasing these products they're subject to the same scrutiny"
+        - title: '9to5Google Inbox Newsletter #4 — Samsung Unpacked coverage'
+          date: '2026-07-23'
+          framing: balanced with privacy acknowledgment
+          key_quote: by releasing these products they're subject to the same scrutiny
         privacy_vocabulary_count: 3
         tone_score: -0.15
-      ratio: "~1.7:1 (proportional, natural baseline)"
-      analytical_value: "Establishes the baseline against which institutional outlet amplification
-        is measured. Confirms WIRED/Gizmodo/Future plc asymmetry is institutional, not natural."
+      ratio: ~1.7:1 (proportional, natural baseline)
+      analytical_value: Establishes the baseline against which institutional outlet amplification is measured. Confirms WIRED/Gizmodo/Future
+        plc asymmetry is institutional, not natural.
 - career:
   - beat: business, tech companies
     notes: 'Covered fintech, Big Tech business, and Silicon Valley companies. Major scoops: Jack Dorsey''s Block cash-vs-stock
@@ -18937,9 +18930,9 @@ journalists:
       Rogers #97) to the fitness/wearables editorial lane, establishing team-wide institutional scope.'
   mechanism_207_apple_camera_airpods_leak_silence:
     discovery_date: '2026-08-21'
-    pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite
-      fitness/wearables beat. Camera AirPods fall squarely in her lane. Mechanism #102
-      (privacy vocabulary bifurcation) + #207 (leak silence) = complete team-wide pattern.'
+    pattern: 'Zero coverage of Apple camera AirPods macOS Tahoe leak (Aug 18-21) despite fitness/wearables beat. Camera AirPods
+      fall squarely in her lane. Mechanism #102 (privacy vocabulary bifurcation) + #207 (leak silence) = complete team-wide
+      pattern.'
     test_file: tests/test_wired_triple_reporter_apple_camera_airpods_leak_coverage_silence_aug21.py
 - name: Joanna Stern
   career:
@@ -19037,6 +19030,68 @@ journalists:
       google_search_dependency: high
       samsung_advertising: $9.7B annual
       meta_relationship: none
+- career:
+  - beat: AI, technology, policy
+    end: present
+    publication: techcrunch
+    role: senior_reporter
+    start: '2023'
+  competitor_coverage:
+    meta:
+      articles:
+      - date: '2026-08-10'
+        headline: Meta's new Glimmer AI model offers a hint at Zuckerberg's personal intelligence vision
+        tone_score: -0.2
+        vocabulary:
+        - control
+        - under the company's control
+        - draw the line
+        - access isn't ownership
+        editorial_skepticism_turn: But access isn't the same as ownership
+        ceo_attribution: true
+        privacy_positive_vocabulary: false
+        url: https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/
+      framing_pattern: control_skepticism
+    anthropic:
+      articles:
+      - date: '2026-08-13'
+        headline: Anthropic set AI agents loose on the same task. They started a turf war.
+        tone_score: 0.15
+        vocabulary:
+        - turf war
+        - loose
+        - entertaining
+        editorial_skepticism_turn: null
+        safety_concern_framing: false
+      - date: '2026-08-21'
+        headline: Anthropic's Opus 4.6 is a smut-machine
+        tone_score: 0.1
+        vocabulary:
+        - smut-machine
+        - playful
+        editorial_skepticism_turn: null
+        safety_concern_framing: false
+      - date: '2026-08-22'
+        headline: Frontier AI labs still won't say how they'd contain a rogue model
+        tone_score: -0.05
+        reputation_anchor: the latter perhaps more surprising than the former given Anthropic's rhetoric on safety
+        meta_expectation_baseline: failure_expected
+        anthropic_expectation_baseline: failure_surprising
+        url: https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+      framing_pattern: playful_humorous
+    cross_entity_asymmetry_score: 0.72
+    financial_context: techcrunch_yahoo_apollo_anthropic_chain
+  cross_entity_patterns:
+    control_vocabulary_inversion:
+      meta_control_count: 3
+      anthropic_control_count: 0
+      editorial_skepticism_meta: 1
+      editorial_skepticism_anthropic: 0
+    reputation_anchor:
+      meta_failure_framing: expected
+      anthropic_failure_framing: surprising
+  name: Rebecca Bellan
+  publication: techcrunch
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News

@@ -21453,6 +21453,107 @@ cross_publication_findings:
     - https://memeburn.com/anthropics-revenue-run-rate-hit-65-billion-heres-what-that-number-actually-measures/
     - https://www.tradingview.com/news/benzinga:e3a9d0a3e094b:0-anthropic-s-revenue-could-soar-from-47-billion-to-200-billion-by-2028-as-bankers-build-a-massive-ai-valuation-case-ahead-of-its-ipo-report/
     test_file: tests/test_anthropic_credit_facility_bank_multiplication_coverage_incentive_amplification_aug25.py
+  rebecca_bellan_techcrunch_cross_entity_control_vocabulary_inversion:
+    mechanism_id: 305
+    journalist: Rebecca Bellan
+    publication: TechCrunch
+    role: Senior Reporter (AI beat)
+    finding: >
+      Same-reporter cross-entity control-vocabulary inversion within a 2-week window.
+      Meta Glimmer article (Aug 10) deploys 3x "control" vocabulary + editorial skepticism
+      turn ("But access isn't the same as ownership") despite Meta processing data LOCALLY
+      and releasing under Apache 2.0. Anthropic articles (Aug 13, 21) use playful vocabulary
+      ("turf war," "smut-machine") with zero editorial skepticism about closed-weight models
+      or data retention policies. Guidelight article (Aug 22) embeds reputation anchor: Meta
+      safety failure = expected, Anthropic safety failure = "surprising."
+    meta_articles:
+    - title: "Meta's new Glimmer AI model offers a hint at Zuckerberg's personal intelligence vision"
+      date: '2026-08-10'
+      url: https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/
+      vocabulary: [control, under the company's control, draw the line, access isn't ownership]
+      tone: -0.20
+    anthropic_articles:
+    - title: "Anthropic set AI agents loose on the same task. They started a turf war."
+      date: '2026-08-13'
+      vocabulary: [turf war, loose, entertaining]
+      tone: 0.15
+    - title: "Anthropic's Opus 4.6 is a smut-machine"
+      date: '2026-08-21'
+      vocabulary: [smut-machine, playful]
+      tone: 0.10
+    cross_entity_article:
+    - title: "Frontier AI labs still won't say how they'd contain a rogue model"
+      date: '2026-08-22'
+      url: https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+      key_framing: "the latter perhaps more surprising than the former given Anthropic's rhetoric on safety"
+    cross_entity_vocabulary_delta: 0.35
+    financial_context: >
+      TechCrunch owned by Yahoo (Apollo portfolio). Apollo invested in Anthropic.
+      Favorable Anthropic coverage and skeptical Meta coverage serve parent company
+      portfolio interests.
+    confounders:
+    - Article genre differences (product launch vs behavior narrative)
+    - Headlines influenced by editors vs reporter
+    - Body-text skepticism ("access isn't ownership") more directly under reporter control
+    extends_mechanisms: [249]
+    analytical_significance: >
+      Isolates journalist-level framing from publication-level policy. Same reporter,
+      same beat, same 2-week window creates a natural experiment where entity identity
+      is the primary variable. The editorial skepticism turn in Meta coverage ("But access
+      isn't the same as ownership") has no equivalent in any Anthropic article despite
+      Anthropic keeping its most powerful models closed-weight.
+    test_file: tests/test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py
+  rebecca_bellan_techcrunch_cross_entity_control_vocabulary_inversion:
+    mechanism_id: 305
+    journalist: Rebecca Bellan
+    publication: TechCrunch
+    role: Senior Reporter (AI beat)
+    finding: >
+      Same-reporter cross-entity control-vocabulary inversion within a 2-week window.
+      Meta Glimmer article (Aug 10) deploys 3x "control" vocabulary + editorial skepticism
+      turn ("But access isn't the same as ownership") despite Meta processing data LOCALLY
+      and releasing under Apache 2.0. Anthropic articles (Aug 13, 21) use playful vocabulary
+      ("turf war," "smut-machine") with zero editorial skepticism about closed-weight models
+      or data retention policies. Guidelight article (Aug 22) embeds reputation anchor: Meta
+      safety failure = expected, Anthropic safety failure = "surprising."
+    meta_articles:
+    - title: "Meta's new Glimmer AI model offers a hint at Zuckerberg's personal intelligence vision"
+      date: '2026-08-10'
+      url: https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/
+      vocabulary: [control, under the company's control, draw the line, access isn't ownership]
+      tone: -0.20
+    anthropic_articles:
+    - title: "Anthropic set AI agents loose on the same task. They started a turf war."
+      date: '2026-08-13'
+      vocabulary: [turf war, loose, entertaining]
+      tone: 0.15
+    - title: "Anthropic's Opus 4.6 is a smut-machine"
+      date: '2026-08-21'
+      vocabulary: [smut-machine, playful]
+      tone: 0.10
+    cross_entity_article:
+    - title: "Frontier AI labs still won't say how they'd contain a rogue model"
+      date: '2026-08-22'
+      url: https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+      key_framing: "the latter perhaps more surprising than the former given Anthropic's rhetoric on safety"
+    cross_entity_vocabulary_delta: 0.35
+    financial_context: >
+      TechCrunch owned by Yahoo (Apollo portfolio). Apollo invested in Anthropic.
+      Favorable Anthropic coverage and skeptical Meta coverage serve parent company
+      portfolio interests.
+    confounders:
+    - Article genre differences (product launch vs behavior narrative)
+    - Headlines influenced by editors vs reporter
+    - Body-text skepticism ("access isn't ownership") more directly under reporter control
+    extends_mechanisms: [249]
+    analytical_significance: >
+      Isolates journalist-level framing from publication-level policy. Same reporter,
+      same beat, same 2-week window creates a natural experiment where entity identity
+      is the primary variable. The editorial skepticism turn in Meta coverage ("But access
+      isn't the same as ownership") has no equivalent in any Anthropic article despite
+      Anthropic keeping its most powerful models closed-weight.
+    test_file: tests/test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -30715,3 +30816,74 @@ publications:
     - 'Reuters, May 29, 2024: Vox Media/OpenAI licensing deal'
     - 'eWeek, Jul 2026: 300M+ health queries/week'
     test_file: tests/test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25.py
+  rebecca_bellan_control_vocabulary_inversion:
+    mechanism_id: 305
+    type: journalist_cross_entity_tracking
+    publication: TechCrunch
+    publication_owner: Yahoo (Apollo Global Management)
+    journalist: Rebecca Bellan
+    competitor_entity: Anthropic
+    comparison_entity: Meta
+    pattern: control_vocabulary_inversion
+    finding: 'Same journalist (Rebecca Bellan), same publication (TechCrunch), same August 2026 window,
+      covering both Meta and Anthropic AI products with measurably different vocabulary. Meta Glimmer AI
+      model (Aug 10) receives editorial skepticism: CEO personalization (Zuckerberg''s vision), "control"
+      vocabulary (x3), editorial turn ("But access isn''t the same as ownership") — despite Apache 2.0
+      open-weight license and local processing. Anthropic coverage (Aug 13, 21) uses playful/humorous
+      vocabulary: "turf war," "smut-machine," "loose" — zero control vocabulary, zero editorial skepticism
+      turns, despite Anthropic being closed-weight. Guidelight containment article (Aug 22) assigns asymmetric
+      expectations: both Anthropic and Meta scored lowest, but Anthropic failure is "perhaps more surprising"
+      while Meta failure is the implicit baseline. Creates reputation anchor where Meta failures are expected
+      and Anthropic failures are anomalous. Cross-entity vocabulary delta: 0.35 (Meta tone -0.20, Anthropic
+      tone +0.15). The more open entity (Apache 2.0) paradoxically receives more "control" scrutiny than
+      the closed-weight entity.
+
+      '
+    financial_context: 'TechCrunch is owned by Yahoo (Apollo Global Management). Apollo has invested in
+      Anthropic, creating portfolio alignment where positive Anthropic coverage serves parent company interests.
+      Yahoo ad network competes with Meta''s $60B ad platform, creating adversarial incentive for Meta
+      coverage. Financial architecture predicts: softer Anthropic coverage, harder Meta coverage — matching
+      observed vocabulary. Already documented in mechanism #284 (publication-level) and mechanism #114
+      (privacy indictment framing).
+
+      '
+    asymmetry_score: 0.65
+    confounders:
+    - strength: MODERATE
+      description: 'Meta Glimmer article covers a product launch (naturally more structured/serious);
+        Anthropic turf war article covers unexpected agent behavior (naturally more entertaining). Genre
+        difference partially explains vocabulary divergence.'
+    - strength: MODERATE
+      description: 'Headline tone may be influenced by different editors, not just the reporter. However,
+        body-level skepticism ("But access isn''t the same as ownership") is more directly under reporter
+        control.'
+    - strength: WEAK
+      description: 'Anthropic smut-machine article covers a content moderation gap, different from a product
+        launch. However, moderation failure could receive adversarial framing — playful framing is an
+        editorial choice.'
+    - strength: WEAK
+      description: 'Guidelight article covers a third-party report, not Bellan''s independent assessment.
+        However, the "perhaps more surprising" editorial gloss is the reporter''s own framing choice.'
+    sources:
+    - url: https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/
+      date: 2026-08-10
+      journalist: Rebecca Bellan
+      headline: Meta's new Glimmer AI model offers a hint at Zuckerberg's personal intelligence vision
+    - date: 2026-08-13
+      journalist: Rebecca Bellan
+      headline: Anthropic set AI agents loose on the same task. They started a turf war.
+    - date: 2026-08-21
+      journalist: Rebecca Bellan
+      headline: Anthropic's Opus 4.6 is a smut-machine
+    - url: https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+      date: 2026-08-22
+      journalist: Rebecca Bellan
+      headline: Frontier AI labs still won't say how they'd contain a rogue model
+    cross_references:
+    - mechanism_id: 284
+      description: TechCrunch Yahoo Apollo data practice vocabulary bifurcation (publication-level)
+    - mechanism_id: 114
+      description: TechCrunch Yahoo Apollo privacy indictment framing
+    test_file: tests/test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py
+    tests_count: 43
+    test_classes: 6

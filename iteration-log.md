@@ -1,3 +1,45 @@
+## Iteration #289 — Tue 2026-08-25 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Rebecca Bellan (TechCrunch) Cross-Entity AI Lab Control-Vocabulary Inversion
+
+**New mechanism #305:** Rebecca Bellan cross-entity AI lab control-vocabulary inversion — TechCrunch's senior AI reporter covers both Meta and Anthropic within the same August 2026 window, deploying measurably different editorial vocabulary depending on entity identity.
+
+**Meta coverage (Aug 10): "Meta's new Glimmer AI model offers a hint at Zuckerberg's personal intelligence vision"**
+- CEO-attribution headline: product → Zuckerberg's personal ambition (not company achievement)
+- Editorial skepticism turn: "But access isn't the same as ownership" — undermines the open-weight angle
+- Control vocabulary: "under the company's control" (×2), "the company's control," "Meta may draw the line"
+- Despite Meta LOCALLY processing data (privacy-preserving architecture) and Apache 2.0 open-weight licensing (genuine openness), zero privacy-positive vocabulary
+- Tone: -0.20 (skeptical/cautionary)
+
+**Anthropic coverage (Aug 13): "Anthropic set AI agents loose on the same task. They started a turf war."**
+- Playful/entertaining: autonomous AI agents conflicting = fun narrative, not safety concern
+- "Turf war" = anthropomorphized humor
+- Zero editorial skepticism about Anthropic's control structure or closed-weight models
+- Tone: +0.15 (entertaining/positive)
+
+**Anthropic coverage (Aug 21): "Anthropic's Opus 4.6 is a smut-machine"**
+- Humorous/sensational headline: "smut-machine" is playful, not adversarial
+- Content moderation gap NOT framed as safety failure
+- Tone: +0.10 (playful)
+
+**Guidelight safety report (Aug 22): "Frontier AI labs still won't say how they'd contain a rogue model"**
+- Key framing: "Anthropic and Meta scored lowest" on containment
+- Reputation anchor: "the latter [Anthropic] perhaps more surprising than the former [Meta] given Anthropic's rhetoric on safety"
+- Assigns HIGHER expectations to Anthropic (failure = surprising anomaly) vs Meta (failure = expected baseline)
+- Embeds assumption that Meta's safety failures are normal, Anthropic's are exceptional
+
+**Cross-entity vocabulary delta:** 0.35 (Meta -0.20, Anthropic +0.15)
+- Same journalist, same beat, same 2-week window
+- Operates within TechCrunch/Yahoo/Apollo financial architecture (Apollo invested in Anthropic)
+
+**Confounders documented:** (1) Article genre differences — product launch (Meta) vs behavior narrative (Anthropic) naturally invite different tones. (2) Headlines influenced by editors, not just reporter. (3) The "access isn't the same as ownership" skepticism is in body text, more directly under reporter control, weakening the editor-attribution confounder.
+
+**Extends:** Mechanism #249 (TechCrunch Yahoo Apollo Anthropic Meta data practice vocabulary bifurcation). Introduces new analytical dimension: same-reporter control-vocabulary inversion within the AI lab beat, isolating journalist-level framing from publication-level policy.
+
+**Sources verified:**
+- https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision/
+- https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/
+
 ## Iteration #288 — Tue 2026-08-25 12:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: The Verge (PMC/PMX) Health Data Collection Privacy Vocabulary Inversion — OpenAI ChatGPT Health vs Meta Smart Glasses
