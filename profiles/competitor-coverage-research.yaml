@@ -30156,7 +30156,7 @@ publications:
     meta_alarm_terms: 3
     competitor_alarm_terms: 0
     financial_incentive: none_detected
-    asymmetry_score: 8.5
+    asymmetry_score: 0.85
     confidence: 0.85
     confounders:
     - strength: MODERATE
@@ -30195,7 +30195,7 @@ publications:
     - term: pervert glasses
       origin: Bloomberg
     financial_incentive: indirect_google_ad_revenue
-    asymmetry_score: 9.0
+    asymmetry_score: 0.9
     confidence: 0.8
     confounders:
     - strength: STRONG
@@ -30237,7 +30237,7 @@ publications:
     meta_alarm_terms: 2
     competitor_alarm_terms: 0
     financial_incentive: vox_media_apple_advertising_relationship
-    asymmetry_score: 7.5
+    asymmetry_score: 0.75
     confidence: 0.75
     confounders:
     - strength: MODERATE

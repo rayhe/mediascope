@@ -64,7 +64,7 @@ class TestRabbitHoleFashionSurveillanceCrossDomainPropagation(unittest.TestCase)
         self.assertEqual(self.mechanism.get('financial_incentive'), 'none_detected')
 
     def test_asymmetry_score_above_threshold(self):
-        self.assertGreaterEqual(self.mechanism.get('asymmetry_score', 0), 7.0)
+        self.assertGreaterEqual(self.mechanism.get('asymmetry_score', 0), 0.7)
 
     def test_has_confounders(self):
         confounders = self.mechanism.get('confounders', [])
@@ -111,7 +111,7 @@ class TestKatieCouricExpertAuthorityMetaExclusiveFraming(unittest.TestCase):
         self.assertTrue(any(l.get('origin') == 'Bloomberg' for l in labels))
 
     def test_asymmetry_score_very_high(self):
-        self.assertGreaterEqual(self.mechanism.get('asymmetry_score', 0), 8.5)
+        self.assertGreaterEqual(self.mechanism.get('asymmetry_score', 0), 0.85)
 
     def test_source_url(self):
         sources = self.mechanism.get('sources', [])

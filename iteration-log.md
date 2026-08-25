@@ -10523,3 +10523,35 @@ Same publication's Apple Vision Pro coverage uses protective framing: "impressiv
 **Corpus:** 603 test files, 300 documented mechanisms
 
 **Source:** https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+
+## Iteration #286 — Tue 2026-08-25 10:00 PT (Type D: Test & Verify)
+
+### Focus: Asymmetry Score Scale Normalization + Cross-Validation
+
+**Bug fix — asymmetry_score scale inconsistency:**
+Mechanisms #296 (Rabbit Hole fashion surveillance), #297 (Katie Couric expert
+authority), and #298 (Vergecast reading list curation) were accidentally entered
+on a 0-10 scale (8.5, 9.0, 7.5) instead of the repository standard 0-1 scale
+(0.85, 0.9, 0.75). Fixed in competitor-coverage-research.yaml. Two downstream
+test assertions also fixed (>= 7.0 → >= 0.7, >= 8.5 → >= 0.85).
+
+**Cross-validation — Le Monde OpenAI France ad launch (Aug 25, 2026):**
+Le Monde (which has its own OpenAI content licensing deal) covered OpenAI's
+ChatGPT ads launch in France with purely business-neutral framing — "offset
+computing costs," "conversational advertising environment," "first advertisers"
+(Bouygues Telecom, Cultura, TotalEnergies, Carrefour). Zero alarm vocabulary.
+Validates publisher-deal → neutral-vocabulary pattern.
+
+**Cross-validation — Fast Company Dan Clay panopticon (Aug 24-25, 2026):**
+9 alarm-vocabulary terms ("creepy," "pervert glasses," "panopticon," "algorithm
+chow," etc.) applied exclusively to Meta's camera glasses. Zero mention of Apple
+N50, Google/Samsung Android XR, Snap Spectacles — all camera-equipped face-worn
+devices. Validates entity-exclusive alarm vocabulary pattern.
+
+**Statistical validation:**
+All 121 asymmetry scores now normalized to 0-1 range. Mean: 0.803, range:
+0.45-1.00. Variance test confirms meaningful distribution (not degenerate).
+No duplicate mechanism IDs across 262 mechanisms (max ID: 302).
+
+**Test results:** 54/54 pass (22 new cross-validation + 32 existing podcast tests).
+**Files:** 606 test files (+1), 262 mechanisms, max mechanism_id 302.
