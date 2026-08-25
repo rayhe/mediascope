@@ -1,3 +1,42 @@
+## Iteration #288 — Tue 2026-08-25 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: The Verge (PMC/PMX) Health Data Collection Privacy Vocabulary Inversion — OpenAI ChatGPT Health vs Meta Smart Glasses
+
+**New mechanism #304:** Data sensitivity inversion — The Verge covers OpenAI ChatGPT
+Health (medical records, lab results, medications, biometrics — 300M+ health queries/week,
+explicitly NOT HIPAA compliant as consumer product) with aspirational product framing and
+zero surveillance vocabulary, while covering Meta glasses opt-in photo/video with "creepy,"
+"surveillance," "dox" vocabulary across 4+ dedicated privacy-adversarial pieces by
+Victoria Song. The MOST sensitive data category (HIPAA-category medical records) receives
+neutral-positive framing (tone +0.15); the LESS sensitive data (user-initiated photos with
+LED indicator) receives adversarial surveillance framing (tone -0.55). Delta: 0.70.
+
+**Financial context:** PMC has dual OpenAI financial relationships (Vox Media/OpenAI
+content licensing + Azure OpenAI enterprise agreement) and zero Meta AI content licensing
+deal. PMC Concert ad platform competes with Meta ads. SRMG/PIF divested all Meta shares
+Q2 2025 while retaining PMC equity.
+
+**Key evidence:** (1) The Verge Jan 7 2026 ChatGPT Health launch article used "encouraging
+users to connect their medical records" product-feature framing. (2) OpenAI head of health
+Nate Gross told The Verge that HIPAA doesn't apply to ChatGPT Health as consumer product —
+reported without alarm. (3) Victoria Song wrote 4+ dedicated privacy-adversarial pieces
+about Meta glasses (doxing, LED tamper, bedroom Vergecast, kill switch podcast). (4) ChatGPT
+Health launched Jul 23, one day after Florida pastor lawsuit alleging dangerous medical
+advice. The Verge did not produce a standalone investigation into the non-HIPAA status.
+
+**Extends:** Mechanism #75 (Song Privacy Vocabulary Bifurcation), #33 (OpenAI Facial
+Recognition Privacy Parity), #6 (Barr Privacy Gradient). Introduces new analytical
+dimension: data sensitivity inversion.
+
+**Strong confounders documented:** Bystander impact (glasses affect non-consenting third
+parties; health data is self-only), genre difference (physical hardware vs software opt-in).
+
+**Verge profile updated:** health_data_privacy_vocabulary_inversion section,
+cross_entity_asymmetry_score 0.68 → 0.72.
+
+- Tests: 41 new (608 total)
+- Mechanism ID: 304 (max)
+
 ## Iteration #287 — Tue 2026-08-25 11:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: AI Edge Podcast Expert Authority Publisher-AI Financial Captivity Cross-Entity Coverage Incentive Architecture

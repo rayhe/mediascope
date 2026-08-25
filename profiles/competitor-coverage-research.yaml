@@ -30619,3 +30619,99 @@ publications:
     - 'Madison and Wall: independent advertising industry advisory firm, CEO Brian Wieser
       is the most-cited independent ad industry analyst'
     test_file: tests/test_type_e_11am_ai_edge_podcast_expert_authority_publisher_financial_captivity_aug25.py
+  verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance:
+    mechanism_id: 304
+    type: cross_entity_data_sensitivity_inversion
+    publication: The Verge
+    entities_compared:
+    - OpenAI (ChatGPT Health)
+    - Meta (smart glasses)
+    description: >
+      The Verge (PMC/PMX) Health Data Collection Privacy Vocabulary Inversion (Mechanism #304).
+      The Verge covers OpenAI ChatGPT Health (medical records, lab results, medications,
+      biometrics — 300M+ health queries/week, explicitly NOT HIPAA compliant) with
+      aspirational product framing and zero surveillance vocabulary, while covering Meta
+      glasses opt-in photo/video with "creepy," "surveillance," "dox" vocabulary across
+      4+ dedicated privacy-adversarial pieces. Data sensitivity inversion: HIPAA-category
+      medical records get neutral-positive framing (tone +0.15); user-initiated photos
+      with LED indicator get adversarial surveillance framing (tone -0.55). Delta: 0.70.
+    data_sensitivity_inversion:
+      openai_health_data_types:
+      - medical records via b.well (2.2M providers)
+      - lab results
+      - visit summaries and clinical history
+      - medications
+      - Apple Health biometrics (heart rate, sleep, activity)
+      - dietary restrictions
+      - MyFitnessPal nutrition data
+      openai_hipaa_compliant: false
+      openai_hipaa_quote: "in the case of consumer products, HIPAA doesn't apply in this setting"
+      openai_hipaa_source: Nate Gross (OpenAI head of health) to The Verge, Jan 2026
+      openai_weekly_health_queries_millions: 300
+      meta_data_types:
+      - photos (user-initiated with LED indicator)
+      - videos (user-initiated with LED indicator)
+      - audio transcripts (when using Meta AI)
+    framing_delta:
+      openai_health_vocabulary:
+      - encouraging users to connect
+      - more personalized, grounded responses
+      - personalized guidance
+      - securely brings your health information
+      openai_surveillance_terms: 0
+      openai_dedicated_privacy_investigations: 0
+      openai_tone: 0.15
+      meta_vocabulary:
+      - creepy
+      - surveillance
+      - dox
+      - erosion of privacy
+      - pervert glasses
+      meta_surveillance_terms: 6
+      meta_dedicated_privacy_investigations: 4
+      meta_tone: -0.55
+      tone_delta: 0.70
+    financial_context:
+      openai_deal: Vox Media/OpenAI licensing (May 2024) + Azure OpenAI enterprise
+      meta_deal: NONE
+      dual_openai_financial_relationship: true
+      concert_competes_with_meta_ads: true
+    confounding_factors:
+    - '[STRONG] Bystander impact — glasses affect non-consenting third parties; health data is
+      self-only'
+    - '[STRONG] Genre difference — physical hardware in public vs software opt-in feature'
+    - '[MODERATE] Market scale — 7M+ glasses in wild vs software with no physical bystander
+      footprint'
+    - '[MODERATE] Regulatory context — medical data already has HIPAA framework (even though
+      ChatGPT is exempt as consumer product)'
+    - '[WEAK] News peg difference — Meta had Kenya/doxing/LED pegs; OpenAI had Florida lawsuit
+      + WashPost grade expose'
+    - '[WEAK] Editorial assignment — different reporters, but Victoria Song covers both health
+      wearables and Meta glasses'
+    testable_predictions:
+    - When OpenAI smart speaker (facial recognition, always-on cameras) launches, The Verge
+      will not produce proportionate investigation to Meta glasses coverage
+    - If ChatGPT Health has a major medical data breach, The Verge will use mistake/flaw
+      vocabulary, not surveillance/data harvesting
+    - The Verge will not write standalone investigation into ChatGPT Health non-HIPAA status
+      equivalent to Meta glasses LED tampering standalone pieces
+    extends_mechanisms:
+    - mechanism_id: 75
+      relationship: extends
+      description: Extends Song Privacy Vocabulary Bifurcation — adds medical data dimension
+    - mechanism_id: 33
+      relationship: extends
+      description: Extends OpenAI Facial Recognition Privacy Parity — from planned to ACTIVE
+        deployment
+    - mechanism_id: 6
+      relationship: extends
+      description: Extends Barr Privacy Gradient — now covers data sensitivity inversion
+    sources:
+    - 'The Verge, Jan 7, 2026: OpenAI launches ChatGPT Health (via Slashdot: https://science.slashdot.org/story/26/01/07/2151205/)'
+    - 'Medical Economics, Jan 2026: Verge reported Nate Gross HIPAA quote'
+    - 'TechCrunch, Jul 23, 2026: launched one day after Florida pastor lawsuit (https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/)'
+    - 'Victoria Song: doxing (Oct 2024), LED tamper (Jul 2026), Vergecast bedroom, kill switch
+      podcast'
+    - 'Reuters, May 29, 2024: Vox Media/OpenAI licensing deal'
+    - 'eWeek, Jul 2026: 300M+ health queries/week'
+    test_file: tests/test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25.py

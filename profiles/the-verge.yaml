@@ -2791,7 +2791,7 @@ cross_entity_coverage_analysis:
       - "https://www.techmeme.com/260707/p41"
       - "https://petapixel.com/2026/07/27/instagram-is-banning-creepy-hidden-camera-videos-filmed-with-meta-smart-glasses/"
 
-  cross_entity_asymmetry_score: 0.68
+  cross_entity_asymmetry_score: 0.72
 
   samsung_unpacked_beat_assignment_paradox:
     mechanism_ref: "#81"
@@ -3019,3 +3019,45 @@ cross_entity_coverage_analysis:
       - "https://en.sedaily.com/news/2026/07/02/gentle-monster-to-launch-ai-smart-glasses-with-google"
       - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
       - "https://www.youtube.com/watch?v=c-MWq-DFTwo"
+
+  health_data_privacy_vocabulary_inversion:
+    mechanism_ref: "#304"
+    date: "2026-08-25"
+    finding: >
+      The Verge covers OpenAI ChatGPT Health (medical records, lab results, medications,
+      biometrics — 300M+ queries/week, NOT HIPAA compliant) with aspirational product
+      framing and zero surveillance vocabulary, while covering Meta glasses opt-in
+      photo/video with "creepy," "surveillance," "dox" vocabulary across 4+ dedicated
+      privacy-adversarial pieces by Victoria Song.
+    data_sensitivity_comparison:
+      openai_health_data:
+        categories: ["medical records", "lab results", "medications", "clinical history",
+                      "Apple Health biometrics", "dietary restrictions", "visit summaries"]
+        hipaa_compliant: false
+        weekly_queries_millions: 300
+        bystander_impact: false
+        data_sensitivity_level: "highest (HIPAA-category when handled by clinical providers)"
+      meta_glasses_data:
+        categories: ["photos (opt-in)", "videos (opt-in)", "audio transcripts (with Meta AI)"]
+        led_indicator: true
+        user_initiated: true
+        bystander_impact: true
+        data_sensitivity_level: "moderate (no specific federal protection category)"
+    verge_framing:
+      openai_health:
+        vocabulary: ["encouraging users to connect", "more personalized, grounded responses",
+                     "personalized guidance", "securely brings your health information"]
+        surveillance_terms_used: 0
+        dedicated_privacy_investigations: 0
+        tone: 0.15
+      meta_glasses:
+        vocabulary: ["creepy", "surveillance", "dox", "erosion of privacy",
+                     "pervert glasses", "spy camera"]
+        surveillance_terms_used: 6
+        dedicated_privacy_investigations: 4
+        tone: -0.55
+    financial_context:
+      openai_deal: "Vox Media/OpenAI licensing (May 2024) + Azure OpenAI enterprise"
+      meta_deal: "NONE"
+    cross_entity_asymmetry_score_contribution: "+0.04 (0.68 → 0.72)"
+    test_file: "tests/test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25.py"
