@@ -28127,3 +28127,42 @@ publications:
         description: Condé Nast AI deal portfolio dependency index
       - mechanism_id: 134
         description: Advance Reddit Meta ad competition structural incentive
+
+  wired_openai_meta_ai_chat_ad_targeting_privacy_policy_natural_experiment:
+    mechanism_id: 290
+    type: cross_entity_privacy_policy_natural_experiment
+    publication: WIRED (Conde Nast)
+    entities: [OpenAI, Meta]
+    topic: AI chat ad targeting privacy policy updates
+    date_range: "2025-10 to 2026-05"
+    description: >
+      Natural experiment comparing structurally equivalent privacy policy updates:
+      Meta (Oct 1 2025, effective Dec 16) and OpenAI (April 30 2026), both enabling
+      AI chatbot interaction data for advertising. WIRED covered OpenAI's update with
+      factual/descriptive framing (Reece Rogers, May 1 2026) while no standalone WIRED
+      article found covering Meta's equivalent announcement that 20+ outlets covered.
+      Cross-publication vocabulary comparison shows alarm framing (scraping, snooping,
+      surveillance, hyper-targeted) concentrated on Meta; neutral framing (enables,
+      updates, marketing cookies) concentrated on OpenAI. OpenAI's practice is arguably
+      MORE invasive: reversed explicit prior pledge, shares data with third-party
+      advertisers (Meta kept in-house), default-on without consent. Financial context:
+      Conde Nast-OpenAI content deal since Aug 2024; Meta is ad competitor.
+    asymmetry_score: 0.74
+    confounders:
+      - strength: STRONG
+        factor: "Meta offered no opt-out; OpenAI allows opt-out (though buried in settings)"
+      - strength: MODERATE
+        factor: "Meta has 1B+ MAU vs OpenAI 400M+ WAU — larger impact"
+      - strength: MODERATE
+        factor: "Meta's prior privacy controversy history (Cambridge Analytica, FTC)"
+      - strength: MODERATE
+        factor: "Search-based finding — WIRED Meta coverage may exist but not indexed"
+      - strength: WEAK
+        factor: "OpenAI ad business is newer, potentially less coverage-worthy"
+    extends_mechanisms: [48, 97]
+    sources:
+      - "WIRED OpenAI: Reece Rogers & Maddy Varner, May 1, 2026"
+      - "Meta Newsroom: Oct 1, 2025"
+      - "Adweek: OpenAI data sharing analysis"
+      - "OpenTools.ai: policy language comparison"
+    test_file: "tests/test_wired_openai_meta_ai_chat_ad_targeting_privacy_policy_natural_experiment_aug24.py"

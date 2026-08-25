@@ -9912,3 +9912,81 @@ vocabulary differential.
 - **Tests added:** 39 (10 classes)
 - **Corpus:** 593 test files, ~20,258 tests, 289 mechanisms
 - **Commit:** yes
+
+## Iteration #282 — Mon 2026-08-24 22:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WIRED (Conde Nast) AI Chat Ad Targeting Privacy Policy Natural Experiment — OpenAI vs Meta
+
+**Publication + Competitor Pair:** WIRED (Conde Nast) covering OpenAI vs Meta
+
+**Core Finding — Mechanism #290:**
+Natural experiment comparing two structurally equivalent privacy policy updates:
+
+1. **Meta (Oct 1, 2025, effective Dec 16):** Updated policy to use AI chatbot
+   conversations for ad targeting across Facebook/Instagram. No opt-out.
+   Covered by 20+ outlets: TechCrunch, Engadget, Gizmodo, MacRumors, 9to5Mac,
+   Tom's Guide, The Register, PCWorld, Reuters, etc.
+   
+2. **OpenAI (April 30, 2026):** Updated policy to enable marketing cookies by
+   default for free ChatGPT users. Reversed explicit prior pledge not to engage
+   in targeted advertising. Shares cookie IDs, device IDs, hashed emails with
+   third-party advertising platforms.
+
+**WIRED Coverage Differential:**
+- **OpenAI:** Published standalone article (Reece Rogers & Maddy Varner, May 1, 2026).
+  Headline: "OpenAI Enables Marketing Cookies by Default for Free ChatGPT Users."
+  Framing: factual/descriptive, practical how-to opt-out, no alarm vocabulary.
+- **Meta:** No standalone WIRED article found covering Meta's Oct 2025 AI chat
+  ad targeting announcement, despite extensive coverage by 20+ other outlets.
+  (Caveat: search-based finding, not comprehensive audit.)
+
+**Cross-Publication Vocabulary Bifurcation:**
+- **Meta alarm vocabulary:** "snooping" (PCWorld), "scraping conversations"
+  (Engadget), "because of course it will" (Engadget), "hyper-targeted" (9to5Mac),
+  "surveillance-driven" (Gizmodo), "listen into" (The Register), "not your friends"
+  (Engadget), "Warning!" (PCWorld)
+- **OpenAI neutral vocabulary:** "enables marketing cookies" (WIRED), "updates
+  privacy policy" (Search Engine Land), "user privacy is a top priority" (SEL)
+
+**Key Invasiveness Inversions:**
+OpenAI's practice is arguably MORE invasive than Meta's on several axes:
+1. Reversed explicit prior pledge (Meta never had such a pledge)
+2. Shares data with THIRD-PARTY ad platforms (Meta kept in-house)
+3. Default-on without affirmative consent
+4. CEO Sam Altman said in 2024 he "hates" ads and found AI+ads "uniquely unsettling"
+
+**Financial Context:**
+- Conde Nast has OpenAI content licensing deal (since Aug 2024)
+- Meta is direct advertising competitor to Conde Nast
+- Financial prediction: content deal partner → factual coverage; ad competitor → alarm/silence
+
+**Confounders:** 5 documented (1 STRONG: Meta's no-opt-out; 2 MODERATE: user base size,
+Meta's prior privacy history; 1 MODERATE: search limitation caveat; 1 WEAK: newer ad business)
+
+**Prior Mechanism Extensions:** Extends mechanisms #48 (WIRED OpenAI ad coverage selection
+gap) and #97 (Reece Rogers entity-selective privacy investigation routing)
+
+**Asymmetry score:** 0.74
+
+**Files changed:**
+- `tests/test_wired_openai_meta_ai_chat_ad_targeting_privacy_policy_natural_experiment_aug24.py` (NEW — 43 tests, 11 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #290 added)
+- `README.md` (593→594 test files, ~20,258→~20,301 tests)
+- `docs/ARCHITECTURE.md` (593→594 test files)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 43 (11 classes)
+- TestPrivacyPolicyStructuralParity (4 tests)
+- TestOpenAIMoreInvasiveDimensions (6 tests)
+- TestWIREDCoverageSelectionAsymmetry (3 tests)
+- TestWIREDOpenAIVocabulary (4 tests)
+- TestCrossPublicationMetaVocabulary (6 tests)
+- TestCrossPublicationOpenAIVocabulary (3 tests)
+- TestVocabularyBifurcationIndex (3 tests)
+- TestFinancialArchitecture (4 tests)
+- TestConfounders (5 tests)
+- TestPriorMechanismExtension (2 tests)
+- TestCrossPublicationPatternReplication (3 tests)
+
+**Test corpus:** 594 test files
+**Pushed to GitHub:** (pending)
