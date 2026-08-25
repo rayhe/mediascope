@@ -9771,3 +9771,81 @@ Cross-validation tests: 3 previously-failing tests now pass.
 **Pushed to GitHub:** ✓
 
 ---
+
+---
+
+## Iteration #278 — Mon 2026-08-24 19:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WSJ Within-Article Cross-Entity Teen Safety Vocabulary Bifurcation
+
+**Publication + Competitor Pair:** Wall Street Journal (News Corp) covering OpenAI vs Meta
+
+**Article Analyzed:**
+"What Parents Need to Know About OpenAI's New ChatGPT for Teens" — Julie Jargon, WSJ
+URL: https://www.wsj.com/tech/personal-tech/openai-chatgpt-for-teens-bc0e9d39
+Date: ~Aug 18, 2026
+
+**Core Finding — Mechanism #287:**
+Within a SINGLE consumer-guidance article about teen digital safety, the WSJ applies
+systematically different vocabulary registers to OpenAI (aspirational) vs Meta (alarm):
+
+- **OpenAI vocabulary:** "welcome news for parents," "best part," "help students think
+  through problems," "stronger safety settings by default," "responsible homework reminders"
+- **Meta vocabulary (same article):** "accused in court of contributing to the youth mental
+  health crisis," "$1.4 trillion in damages," "lawmakers and lawyers began complaining,"
+  "contributed to mental-health issues including eating disorders and self harm"
+
+**Prior Art Inversion:**
+Meta introduced teen accounts with restrictive default settings in 2024, TWO YEARS before
+OpenAI's ChatGPT for Teens. The article acknowledges this ("appear to be borrowed from
+Meta's playbook") but frames Meta's innovation as reactive remediation ("since lawmakers
+and lawyers began complaining") while framing OpenAI's later implementation as proactive
+innovation ("welcome news for parents").
+
+**Critical Omissions:**
+The consumer-guidance article does NOT mention:
+1. ChatGPT serves ads to Free tier users — teens likely on free tier
+2. OpenAI's April 30 privacy policy update sharing data with "marketing partners"
+3. 132% YoY increase in ChatGPT uninstalls post-ad launch (Adweek)
+4. OpenAI's planned always-on camera device with facial recognition
+5. Whether ChatGPT for Teens shows ads
+6. Senator Markey's Jan 2026 formal probe of ChatGPT advertising and teen protection
+
+**Disclosure Asymmetry:**
+Article discloses News Corp-OpenAI content licensing deal but NOT the parallel News Corp-
+Meta deal (both ~$50M/yr). Selective disclosure creates false transparency.
+
+**Confounders:** 4 documented (1 STRONG: Meta trial is genuine news; 1 MODERATE: product
+launch genre; 2 WEAK: consumer guidance genre, separate article coverage)
+
+**Cross-Article WSJ Pattern Confirmation:**
+This pattern matches broader WSJ OpenAI coverage:
+- "OpenAI's Latest Bid to Fight Anthropic: A Promise Not to Keep Customer Data" —
+  privacy as competitive strategy (aspirational)
+- "OpenAI Hit the Brakes on AI Training After Models Went Rogue" — self-regulation
+  as responsibility (not alarm about models escaping sandboxes)
+- Contrast: Meta trial coverage uses "accused," "drug pushers," "$1.4 trillion"
+
+**Asymmetry score:** 0.72
+
+**Files changed:**
+- `tests/test_wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation_aug24.py` (NEW — 37 tests, 11 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #287 added)
+- `README.md` (590→591 test files, ~21,370→~21,407 tests)
+- `docs/ARCHITECTURE.md` (590→591 test files, ~21,370→~21,407 tests)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 37 (11 classes)
+- TestArticleStructure (3 tests)
+- TestOpenAIVocabulary (4 tests)
+- TestMetaVocabulary (4 tests)
+- TestVocabularyBifurcation (3 tests)
+- TestCriticalOmissions (6 tests)
+- TestFinancialContext (3 tests)
+- TestDisclosureAsymmetry (3 tests)
+- TestConfounders (4 tests)
+- TestCrossArticleWSJPattern (4 tests)
+- TestMetaPriorArtDiminishment (3 tests)
+
+**Test corpus:** 591 test files
+**Pushed to GitHub:** pending

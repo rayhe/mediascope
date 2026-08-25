@@ -27959,3 +27959,52 @@ publications:
     test_file: tests/test_openai_chatgpt_ads_meta_feature_parity_advanced_matching_default_aug24.py
     tests_count: 32
     test_classes: 12
+  wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation:
+    date_added: 2026-08-24
+    finding_summary: 'Within-Article Cross-Entity Teen Safety Vocabulary Bifurcation (Mechanism #287):
+      WSJ Julie Jargon consumer-guidance article "What Parents Need to Know About OpenAI''s New ChatGPT
+      for Teens" applies aspirational vocabulary to OpenAI (welcome news, best part, stronger safety)
+      and alarm vocabulary to Meta (accused, $1.4T damages, youth mental health crisis, complaining)
+      within the SAME article about teen digital safety. Critical omissions: does not mention ChatGPT
+      advertising to free-tier users, OpenAI April 2026 privacy policy sharing data with advertisers,
+      132% uninstall spike, or whether teens see ads. Meta''s 2024 teen account innovation (2 years
+      earlier) is reframed as reactive ("since lawmakers began complaining") while OpenAI''s 2026
+      implementation is framed as proactive ("welcome news"). Selective disclosure: discloses News
+      Corp-OpenAI deal but NOT the parallel News Corp-Meta deal. Both deals are ~$50M/yr.'
+    finding_type: competitor_coverage_deep_dive
+    mechanism_id: 287
+    publication: wall_street_journal
+    journalist: Julie Jargon
+    journalist_beat: family_tech
+    article_url: https://www.wsj.com/tech/personal-tech/openai-chatgpt-for-teens-bc0e9d39
+    article_date: 2026-08-18
+    openai_vocabulary_register: aspirational
+    meta_vocabulary_register: alarm
+    article_genre: consumer_guidance
+    financial_context:
+      news_corp_openai_deal: $50M/yr
+      news_corp_meta_deal: up to $50M/yr
+      deals_balanced: true
+    critical_omissions:
+      - chatgpt_advertising_to_free_users
+      - openai_april_2026_privacy_policy_advertiser_data_sharing
+      - chatgpt_132_pct_uninstall_spike
+      - openai_device_facial_recognition_plans
+      - whether_teens_see_ads
+      - senator_markey_chatgpt_ad_probe
+    disclosure_asymmetry:
+      openai_deal_disclosed: true
+      meta_deal_disclosed: false
+    confounding_factors:
+      - factor: Meta trial is genuine current news ($1.4T)
+        strength: STRONG
+      - factor: Product launch genre tilts positive for launched product
+        strength: MODERATE
+      - factor: Consumer guidance genre prioritizes helpful framing
+        strength: WEAK
+    asymmetry_score: 0.72
+    test_count: 37
+    test_file: tests/test_wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation_aug24.py
+    related_mechanisms:
+      - mechanism_id: 22
+        description: WSJ OpenAI ad cannibalization self-demonetization paradox
