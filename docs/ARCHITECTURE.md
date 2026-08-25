@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~21,428+ tests across 595 test files (all from real articles)
+├── tests/                       # ~21,454+ tests across 597 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1065,3 +1065,14 @@ mediascope/
 - **Asymmetry Score:** 0.74
 - **Confounders:** Co-authorship on Meta article (MODERATE), genre difference (MODERATE), novelty (WEAK), disclosure credit (WEAK), victim-vs-perpetrator (STRONG — strengthens asymmetry)
 - **Cross-references:** Mechanisms #72, #134
+
+### Mechanism #293: Jonny Evans Computerworld AppleHolic Cross-Entity Privacy Champion Vocabulary Bifurcation
+- **File:** `tests/test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py`
+- **Tests:** 26 (8 classes)
+- **Type:** Journalist Cross-Entity (Type B)
+- **Journalist:** Jonny Evans, Columnist, Computerworld (IDG/Foundry)
+- **Column:** "AppleHolic" — self-branded Apple-dedicated column, 27-year tenure
+- **Discovery:** Near-total vocabulary bifurcation on identical topics (camera glasses, AI privacy, DMA regulation). Apple receives exclusively champion vocabulary ("fought hardest to protect user privacy," "sensible move," "fundamental human right"). Meta receives exclusively surveillance vocabulary ("always eager to dance at the intersection of privacy, convenience, and surveillance," "privacy pariah," "mass surveillance"). Evans treats Apple press releases as objective facts rather than corporate advocacy ("As Apple says (and I agree)"). Apple's delay shipping camera glasses is framed as virtue ("sensible move," "good business") rather than competitive weakness. Meta's standard DMA compliance requests framed as aggressive surveillance attempts. IDG/Foundry Apple ecosystem portfolio (Computerworld, Macworld, PCWorld) creates readership-audience-advertising incentive loop.
+- **Asymmetry Score:** 0.68
+- **Confounders:** 2 STRONG (AppleHolic branding — readers know the angle; Apple's stronger empirical privacy track record), 2 MODERATE (column format vs neutral reporting; Apple glasses unreleased — no scandals possible), 1 WEAK (PR-as-fact endorsement)
+- **Cross-references:** Mechanisms #251, #148, #62, #92 (Apple privacy N+50 cascade)

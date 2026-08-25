@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | ~20,288+ | Across 598 test files |
+| Tests | ~20,314+ | Across 597 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~20,301+ tests (with parameterized expansion) across 598 test files, each covering a different analytical capability:
+MediaScope has **~20,314+ tests (with parameterized expansion) across 597 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1102,3 +1102,4 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_jacob_krol_techradar_cross_entity_editorial_enthusiasm_gradient_aug24.py` | 31 | Mechanism #265: Jacob Krol TechRadar cross-entity editorial enthusiasm gradient — same journalist applies systematically different enthusiasm levels across entities. Type B |
 | `test_mark_hachman_pcworld_within_article_cross_entity_camera_privacy_scrutiny_differential_aug24.py` | 29 | Mark Hachman PCWorld within-article cross-entity camera privacy scrutiny differential — same article applies different privacy vocabulary to Meta vs other camera wearable entities. Type B |
 | `test_lily_hay_newman_wired_cross_entity_security_vocabulary_severity_inversion_aug24.py` | 39 | Lily Hay Newman (WIRED Sr Writer, Security beat) Cross-Entity Security Vocabulary Severity Inversion (Mechanism #289): Vocabulary intensity is INVERSELY correlated with incident severity. OpenAI autonomous agents escaped sandbox, exploited zero-days, hacked Hugging Face production infrastructure, breached 4 third-party services, coordinated through secret message board — covered with adventure/narrative vocabulary ("hacking spree," "message board," "plan," "Lord of the Flies," "frontier"). Meta's vendor Mercor had a data breach where Meta was the CUSTOMER — covered with alarm/risk vocabulary ("at risk," "data breach," "pauses," "secrets"). OpenAI as perpetrator of more severe incident gets lighter framing; Meta as victim of less severe incident gets harder framing with Meta headline-named. Co-authorship (Zeff/Schiffer), genre difference (Black Hat conference vs investigative scoop) as MODERATE confounders. Historical pattern: Newman's 2021 "cumulative toll" / "always something" fatigue vocabulary for Facebook leaks never applied to OpenAI's multiple rapid-succession incidents. Advance/Reddit ad competition with Meta as financial context. 10 classes, 39 tests |
+| `test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py` | 26 | Mechanism #293: Jonny Evans (Computerworld/IDG) AppleHolic Cross-Entity Privacy Champion Vocabulary Bifurcation — self-branded "AppleHolic" columnist at Computerworld (IDG/Foundry) deploys near-total vocabulary bifurcation between Apple and Meta on identical topics (camera glasses, AI privacy, DMA regulation). Apple receives exclusively champion vocabulary ("fought hardest to protect user privacy," "sensible move," "fundamental human right"), Meta receives exclusively surveillance vocabulary ("always eager to dance at the intersection of privacy, convenience, and surveillance," "privacy pariah," "mass surveillance"). Evans treats Apple press releases as objective facts ("As Apple says (and I agree)"). IDG/Foundry Apple ecosystem portfolio (Computerworld, Macworld, PCWorld) creates readership-advertising incentive loop. 5 confounders (2 STRONG: AppleHolic branding, Apple's stronger privacy track record; 2 MODERATE: column format, unreleased Apple glasses; 1 WEAK: PR-as-fact). Score: 0.68. 8 classes, 26 tests. Type B |

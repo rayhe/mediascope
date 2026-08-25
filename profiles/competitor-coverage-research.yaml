@@ -28246,3 +28246,37 @@ publications:
       - "Chandra Steele, Android Police (May 19, 2026): https://www.androidpolice.com/google-shows-off-intelligent-eyewear-with-partners-gentle-monster-and-warby-parker/"
       - "Chandra Steele, Android Police (Sep 17, 2025): https://www.androidpolice.com/metas-latest-ray-bans-bomb-their-live-demo-but-hold-promise/"
     test_file: "tests/test_chandra_steele_android_police_cross_entity_camera_wearable_privacy_responsibility_displacement_aug25.py"
+
+  jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation:
+    mechanism_id: 293
+    type: journalist_cross_entity
+    journalist: Jonny Evans
+    publication: Computerworld (IDG/Foundry)
+    column: "AppleHolic"
+    finding: >
+      Evans is an explicitly Apple-focused columnist ('AppleHolic') at Computerworld (IDG/Foundry)
+      who systematically deploys bifurcated vocabulary when covering Meta vs Apple in smart glasses
+      and AI privacy. Apple receives exclusively positive privacy vocabulary ('fought hardest to
+      protect user privacy,' 'sensible move,' 'fundamental human right'). Meta receives exclusively
+      negative surveillance vocabulary ('always eager to dance at the intersection of privacy,
+      convenience, and surveillance,' 'privacy pariah,' 'mass surveillance'). The vocabulary gradient
+      is near-total: Apple receives zero surveillance vocabulary, Meta receives zero positive privacy
+      vocabulary -- even when covering functionally identical hardware (camera-equipped smart glasses).
+      Evans treats Apple press releases as objective facts ('As Apple says (and I agree)') and frames
+      Meta's standard DMA compliance requests as aggressive surveillance attempts.
+    financial_context: >
+      IDG/Foundry owns Computerworld, Macworld, PCWorld -- heavy Apple ecosystem coverage portfolio.
+      Evans' entire column is dedicated to Apple, creating readership-audience-advertising alignment
+      where favorable Apple coverage attracts Apple enterprise readership attracts Apple ecosystem
+      advertising revenue. Structural incentive, not conspiratorial.
+    confounders:
+      - "STRONG: 'AppleHolic' brand -- column is openly Apple-centric, readers know the angle"
+      - "STRONG: Apple has stronger empirical privacy track record than Meta"
+      - "MODERATE: Column format vs neutral reporting -- opinion columns expected to have perspectives"
+      - "MODERATE: Apple hasn't shipped camera glasses yet -- no scandals possible on unreleased product"
+      - "WEAK: Evans treats Apple press releases as objective facts rather than corporate advocacy"
+    asymmetry_score: 0.68
+    sources:
+      - "Jonny Evans, Computerworld (Jul 27, 2026): https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html"
+      - "Jonny Evans, Computerworld (Dec 19, 2024): https://www.computerworld.com/article/3628652/if-meta-prevails-against-apple-in-europe-ai-surveillance-will-be-a-feature-not-a-bug.html"
+    test_file: "tests/test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py"

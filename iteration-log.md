@@ -10071,3 +10071,15 @@ gap) and #97 (Reece Rogers entity-selective privacy investigation routing)
 **Corpus:** 597 → 598 test files, ~292 documented mechanisms
 
 **Pushed to GitHub:** (pending)
+
+## Iteration #279 — Tue 2026-08-25 01:00 PT
+- **Type:** B (Journalist Cross-Entity Tracking)
+- **Target:** Jonny Evans, Computerworld (IDG/Foundry)
+- **Mechanism:** #293 — AppleHolic Cross-Entity Privacy Champion Vocabulary Bifurcation
+- **Finding:** Self-branded "AppleHolic" columnist deploys near-total vocabulary bifurcation between Apple and Meta on identical topics (camera glasses, AI privacy, DMA regulation). Apple receives exclusively champion vocabulary; Meta receives exclusively surveillance vocabulary. Evans treats Apple press releases as objective facts ("As Apple says (and I agree)"). IDG/Foundry Apple ecosystem portfolio creates readership-advertising incentive loop. Score: 0.68 (high bifurcation partially offset by strong confounders: open AppleHolic branding + Apple's genuinely stronger privacy track record).
+- **Test file:** `tests/test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py`
+- **Tests added:** 26 (8 classes)
+- **Sources:**
+  - Jonny Evans, Computerworld (Jul 27, 2026): https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html
+  - Jonny Evans, Computerworld (Dec 19, 2024): https://www.computerworld.com/article/3628652/if-meta-prevails-against-apple-in-europe-ai-surveillance-will-be-a-feature-not-a-bug.html
+- **Corpus:** 597 test files, ~20,314+ tests
