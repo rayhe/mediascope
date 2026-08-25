@@ -21453,6 +21453,82 @@ cross_publication_findings:
     - https://memeburn.com/anthropics-revenue-run-rate-hit-65-billion-heres-what-that-number-actually-measures/
     - https://www.tradingview.com/news/benzinga:e3a9d0a3e094b:0-anthropic-s-revenue-could-soar-from-47-billion-to-200-billion-by-2028-as-bankers-build-a-massive-ai-valuation-case-ahead-of-its-ipo-report/
     test_file: tests/test_anthropic_credit_facility_bank_multiplication_coverage_incentive_amplification_aug25.py
+  broadcom_xpv_100b_escalation_private_credit_publisher_compound_incentive:
+    date_added: '2026-08-25'
+    mechanism_id: 306
+    finding_type: financial_incentive_mapping
+    finding_summary: 'Broadcom XPV $100B Escalation — Apollo Private Credit-Publisher Compound Incentive
+      (Mechanism #306). Broadcom AI XPV Platform financing ESCALATED from $35B (Jun 2026) to potentially
+      $100B (Aug 20, 2026). Reuters/Bloomberg reported on Aug 20, 2026 that Broadcom is seeking $60B+
+      in new AI debt financing, with Apollo Global Management and Blackstone participating. Total could
+      reach $100B with junior debt tranches.
+      COMPOUND PUBLISHER INCENTIVE: Apollo simultaneously participates in Anthropic infrastructure
+      financing ($35B→$100B XPV) AND owns Yahoo publications (TechCrunch, Engadget). Mechanism #305
+      documented Rebecca Bellan''s same-journalist vocabulary inversion: Meta -0.20 (skeptical/cautionary),
+      Anthropic +0.15 (playful/entertaining) within the same 2-week August 2026 window. This is the
+      DIRECT financial chain: Apollo finances Anthropic → Apollo owns TechCrunch/Engadget → those
+      publications produce demonstrably softer Anthropic coverage vs Meta.
+      CUMULATIVE ANTHROPIC FINANCIAL WEB exceeds $300B across all instruments:
+      (1) XPV Platform original: $35B (Apollo/Blackstone/Broadcom, Jun 2026)
+      (2) XPV debt expansion: $60-100B (Broadcom, Aug 20, 2026)
+      (3) Pre-IPO credit facility: $10B+ (Aug 18, 2026)
+      (4) Nexus data center: $15B (Google-guaranteed, Jul 30, 2026)
+      (5) Google chip deal backstop: $35B
+      (6) Total equity raised: $65B
+      IPO UNDERWRITER-CREDIT FACILITY CONVERGENCE: Morgan Stanley leads BOTH the $10B+ pre-IPO
+      revolving credit facility AND the IPO underwriting. Credit facility banks are explicitly
+      "jockeying" for IPO roles (Reuters). Goldman Sachs co-leads IPO. WSJ reports "IPO onslaught
+      is forcing bankers to pick teams" — credit facility participation is the audition for IPO
+      allocation. IPO target: October 2026, valuation $965B→$2T.
+      META ASYMMETRY: Meta has ZERO Apollo infrastructure financing, ZERO pending IPO, ZERO credit
+      facility revenue for banks. Every dollar of the $300B+ Anthropic financial web creates
+      structural incentive for favorable coverage that has no Meta equivalent.'
+    asymmetry_score: 0.88
+    publication: cross_publication
+    confounders:
+    - strength: STRONG
+      description: 'Editorial independence — Apollo does not issue editorial directives to Yahoo/TechCrunch/
+        Engadget newsrooms. PE ownership structures typically maintain editorial firewalls. No documented
+        case of Apollo directing specific article framing. The compound incentive operates through
+        structural gradient (hiring, resource allocation, editorial culture) not direct intervention.'
+    - strength: MODERATE
+      description: 'Multi-hop indirectness — the chain from PE infrastructure financing to editorial
+        output requires multiple hops: Apollo finances XPV → XPV serves Anthropic → Apollo owns Yahoo →
+        Yahoo owns TechCrunch → TechCrunch reporter writes article. Each hop attenuates the causal
+        signal, though the OWNERSHIP hop (Apollo→Yahoo→TechCrunch) is direct and well-documented.'
+    - strength: MODERATE
+      description: 'Competing incentives — Apollo has diversified investments across AI ecosystem
+        including xAI ($3.5B Valor Compute). TechCrunch/Engadget coverage could theoretically also
+        soften on xAI. However, Anthropic is the LARGEST AI financing commitment ($35-100B XPV)
+        and the one approaching a $2T IPO, creating disproportionate incentive concentration.'
+    - strength: WEAK
+      description: 'Temporal confound — adversarial Meta coverage predates XPV escalation. The escalation
+        AMPLIFIES existing patterns rather than creating them. However, the 3x financing expansion
+        ($35B→$100B) represents a qualitative shift in financial entanglement magnitude.'
+    cross_references:
+    - mechanism_id: 111
+      relationship: 'EXTENDS — mechanism #111 documented Apollo Q2 2026 financial architecture ($74B
+        originations, $35B XPV). This mechanism documents the 3x escalation to $100B.'
+    - mechanism_id: 302
+      relationship: 'COMPOUNDS — mechanism #302 documented credit facility bank multiplication (12-19
+        banks). The XPV escalation adds Apollo/Blackstone PE financing as a PARALLEL incentive channel
+        alongside bank credit facility incentives.'
+    - mechanism_id: 305
+      relationship: 'EVIDENCES — mechanism #305 documented Rebecca Bellan vocabulary inversion at
+        TechCrunch (Apollo-owned via Yahoo). This mechanism documents the FINANCIAL architecture
+        that predicts exactly this pattern.'
+    source_urls:
+    - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
+    - https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+    - https://www.tradingview.com/news/gurufocus:d138ecf70094b:0-broadcom-eyes-up-to-100-billion-ai-financing-deal/
+    - https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/
+    - https://www.barchart.com/story/news/3975609/broadcoms-secret-weapon-against-nvidia-isnt-chips-its-a-massive-off-balance-sheet-financing-machine
+    - https://www.reuters.com/legal/litigation/banks-talks-lend-15-billion-anthropic-data-center-backed-by-google-wsj-reports-2026-07-30/
+    - https://www.thehindubusinessline.com/info-tech/googles-backstops-underpin-35-billion-chip-deal-for-anthropic/article71083802.ece
+    - https://www.thestreet.com/investing/stocks/wall-streets-biggest-banks-just-landed-the-al-ipo-of-the-year
+    - https://www.pymnts.com/news/investment-tracker/ipo/2026/morgan-stanley-and-goldman-sachs-land-anthropic-ipo/
+    - https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
+    test_file: tests/test_broadcom_xpv_100b_escalation_private_credit_publisher_compound_incentive_aug25.py
   rebecca_bellan_techcrunch_cross_entity_control_vocabulary_inversion:
     mechanism_id: 305
     journalist: Rebecca Bellan

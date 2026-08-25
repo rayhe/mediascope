@@ -1,3 +1,30 @@
+## Iteration #290 — Tue 2026-08-25 14:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Broadcom XPV $100B Escalation — Apollo Private Credit-Publisher Compound Incentive
+
+**New mechanism #306:** Broadcom AI XPV Platform financing escalation from $35B (Jun 2026) to $100B (Aug 20, 2026). Apollo Global Management simultaneously participates in Anthropic infrastructure financing AND owns Yahoo publications (TechCrunch, Engadget) that produce demonstrably softer Anthropic coverage vs Meta.
+
+**Key financial findings:**
+- **$60B+ new debt sought** (Reuters/Bloomberg Aug 20, 2026): Broadcom seeking massive AI debt expansion
+- **Total could reach $100B** with junior debt tranches — 3x escalation in 2 months
+- **Apollo compound incentive:** finances Anthropic XPV ($35-100B) + owns TechCrunch/Engadget. Mechanism #305 showed Rebecca Bellan vocabulary inversion: Meta -0.20, Anthropic +0.15, same 2-week window
+- **Cumulative Anthropic financial web: $325B+** across XPV ($35B+$60-100B), credit facility ($10B+), Nexus data center ($15B), Google chip backstop ($35B), equity ($65B)
+- **Morgan Stanley dual role:** leads BOTH $10B+ credit facility AND IPO underwriting; banks "jockeying" for IPO roles (Reuters)
+- **IPO target:** October 2026, $965B→$2T valuation
+
+**Files changed:**
+- `tests/test_broadcom_xpv_100b_escalation_private_credit_publisher_compound_incentive_aug25.py` (NEW — 48 tests, 6 classes)
+- `profiles/competitor-coverage-research.yaml` — mechanism #306 added to cross_publication_findings
+- `profiles/competitor-entities.yaml` — XPV debt expansion, Nexus data center, cumulative financial web added to Anthropic spv_infrastructure_financing
+- `README.md` — test file count 608→610
+- `docs/ARCHITECTURE.md` — test file count 608→610
+
+**Cross-references:** #111 (Apollo Q2), #302 (credit facility bank multiplication), #305 (Rebecca Bellan vocabulary inversion)
+
+**Sources:** 10 primary sources (Reuters ×3, TradingView, SiliconANGLE, Barchart, The Hindu Business Line, TheStreet, PYMNTS, WSJ)
+
+---
+
 ## Iteration #289 — Tue 2026-08-25 13:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Rebecca Bellan (TechCrunch) Cross-Entity AI Lab Control-Vocabulary Inversion

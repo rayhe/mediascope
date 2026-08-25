@@ -922,6 +922,48 @@ entities:
         the ONLY major AI lab (among OpenAI, Google, Meta, Microsoft, Amazon) without any publicly announced publisher content
         deal. '
       source_url: https://www.linkedin.com/pulse/anthropics-35b-infrastructure-bet-inside-deal-reshaping-collin-gnajc
+      xpv_debt_expansion_aug_2026:
+        date_reported: '2026-08-20'
+        additional_debt_sought_b: 60
+        total_potential_with_junior_debt_b: 100
+        participants:
+        - Apollo Global Management
+        - Blackstone
+        - Broadcom (XPU hardware supplier, residual value guarantor)
+        financing_structure: 'Broadcom seeking $60B+ in new AI debt financing on top of the original
+          $35B XPV Platform. With junior debt tranches, total could reach $100B. This represents
+          a 3x escalation in Anthropic infrastructure financing within 2 months (Jun→Aug 2026).'
+        apollo_compound_publisher_incentive: 'Apollo Global Management simultaneously: (1) participates
+          in $35B→$100B Anthropic infrastructure financing as XPV co-structurer, (2) owns Yahoo
+          (acquired via $11.2B Yahoo acquisition) which owns TechCrunch and Engadget, (3) finances
+          xAI $3.5B Valor Compute deal. Mechanism #305 documents Rebecca Bellan (TechCrunch)
+          vocabulary inversion: Meta -0.20, Anthropic +0.15 in same 2-week August 2026 window.
+          DIRECT financial chain: Apollo→Anthropic financing / Apollo→Yahoo→TechCrunch→softer coverage.'
+        source_urls:
+        - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
+        - https://www.tradingview.com/news/gurufocus:d138ecf70094b:0-broadcom-eyes-up-to-100-billion-ai-financing-deal/
+        - https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/
+        - https://www.barchart.com/story/news/3975609/broadcoms-secret-weapon-against-nvidia-isnt-chips-its-a-massive-off-balance-sheet-financing-machine
+      nexus_data_center:
+        date_reported: '2026-07-30'
+        total_b: 15
+        google_guaranteed: true
+        description: '$15B Nexus data center financing deal backed by Google guarantees. Banks in
+          talks to lend to Anthropic data center project. Google provides credit backstop.'
+        source_url: https://www.reuters.com/legal/litigation/banks-talks-lend-15-billion-anthropic-data-center-backed-by-google-wsj-reports-2026-07-30/
+      cumulative_financial_web_b: 325
+      cumulative_financial_web_breakdown:
+        xpv_original_b: 35
+        xpv_expansion_b: 60-100
+        pre_ipo_credit_facility_b: 10
+        nexus_data_center_b: 15
+        google_chip_deal_backstop_b: 35
+        total_equity_raised_b: 65
+        note: 'As of Aug 25, 2026: $35B (XPV original) + $60-100B (XPV expansion) + $10B+ (credit
+          facility) + $15B (Nexus) + $35B (Google chip backstop) + $65B (equity) = $220-260B+
+          in direct financial instruments. Including Google equity/cloud commitments ($40B+),
+          Amazon investment ($13B+), and secondary market equity gains, total financial web
+          exceeds $325B. IPO target Oct 2026 at $965B-$2T valuation.'
     meta_cloud_compute_deal:
       mechanism_id: 38
       date_reported: '2026-07-17'
