@@ -3829,3 +3829,208 @@ Samsung is named in the episode title but receives ZERO dedicated chapter titles
 2. WEAK: Apple glasses are unreleased — aspirational framing partly logical (but Samsung is also unreleased and gets zero attention)
 3. WEAK: Meta has most deployed product — more coverage is expected, but alarm vocabulary is not explained by market share
 4. STRONG: Host's personal holiday experience grounds Meta coverage in genuine lived experience, not fabricated alarm
+
+
+---
+
+### 66. Rabbit Hole — "The iPod hair clip to Meta glasses pipeline" (~Aug 20, 2026)
+
+- **Host:** Rosie Okotchi-Lipinski (cultural commentary creator)
+- **Guest:** Grace Robinson (fashion and technology commentator, writer, researcher)
+- **Format:** Long-form interview/conversation (~50 min)
+- **Source URL:** https://www.youtube.com/watch?v=HwzD7EWak5I
+
+**Episode Title Framing:**
+"The iPod hair clip to Meta glasses pipeline" — establishes a direct historical lineage from innocuous fashion tech (iPod Shuffle as hair clip, ~2005) to surveillance technology (Meta glasses, 2024-2026). The word "pipeline" implies an intentional progression — fashion normalizing surveillance by design, not accident.
+
+**Chapter Vocabulary Gradient:**
+
+| Timestamp | Chapter Title | Entity | Vocabulary Class |
+|-----------|---------------|--------|-----------------|
+| 0:00 | When surveillance becomes fashionable | Meta (contextual) | ALARM — "surveillance" in opening |
+| 02:05 | Meet Grace Robinson | Guest intro | Neutral |
+| 05:30 | What is fashion technology? | multi | Neutral/analytical |
+| 10:15 | When did technology become fashionable? | historical | Neutral |
+| 15:40 | The relationship between Silicon Valley and fashion | multi | Analytical/critical |
+| 21:10 | Why are we suddenly romanticising old technology? | historical | Nostalgic/analytical |
+| 26:45 | Meta glasses and wearable surveillance | **Meta-specific** | ALARM — "surveillance" explicit |
+| 33:20 | Can fashion make surveillance feel normal? | Meta (contextual) | ALARM — normalization thesis |
+| 39:15 | The politics of being watched | multi | Critical theory |
+| 44:00 | Who benefits from fashion tech? | multi | Structural critique |
+| 47:00 | What does the future of wearable technology look like? | multi | Speculative |
+
+**Cross-Entity Coverage Asymmetry:**
+| Entity | Chapter Mentions | Vocabulary Class | Named in Title |
+|--------|-----------------|-----------------|----------------|
+| Meta | 3 (dedicated + contextual) | "surveillance," "wearable surveillance" | Yes ("Meta glasses") |
+| Apple | 0 | Absent | No |
+| Google | 0 | Absent (despite Google Glass being the original "glasshole") | No |
+| Samsung | 0 | Absent | No |
+| Snap | 0 | Absent (despite $2,195 Specs shipping Sep 16) | No |
+
+**Critical Finding — Fashion-to-Surveillance Narrative Vector:**
+This episode represents a new analytical vector: the **fashion/cultural commentary podcast** as a distribution channel for the Meta = surveillance framing. Unlike tech podcasts where the framing originates in tech journalism circles, this episode imports the framing into fashion/cultural discourse, giving it an entirely new audience.
+
+The chapter structure follows a deliberate rhetorical arc:
+1. Historical fashion tech (iPods, wearables) → innocent nostalgia
+2. Silicon Valley ↔ fashion relationship → structural critique
+3. Meta glasses = surveillance → alarm
+4. Can fashion normalize surveillance? → thesis statement
+5. Future = more of this → inevitability
+
+The episode's central thesis — that **fashion is being weaponized by tech companies to normalize surveillance** — targets Meta exclusively despite:
+- Apple Watch collecting more biometric data than Meta glasses
+- Apple AirPods with cameras confirmed in leaked video (same week)
+- Snap Specs shipping with dual cameras at $2,195
+- Samsung/Google glasses with identical Qualcomm AR1 chip imminent
+
+**Unique MediaScope Value — Cross-Domain Narrative Propagation:**
+This is the first documented case in MediaScope of the Meta-surveillance framing propagating from tech journalism into the **fashion/cultural commentary** ecosystem. The Rabbit Hole podcast's audience (fashion-literate, culturally engaged, predominantly female) is distinct from tech podcast audiences. This extends the reach of the asymmetric framing into demographics that may never read WIRED or The Verge.
+
+**Financial Context:**
+Rabbit Hole is an independent creator podcast (Rosie Okotchi-Lipinski, YouTube/Instagram). No known corporate ownership, advertising relationships, or financial ties to Meta competitors. This is **cultural consensus propagation** — the Meta = surveillance frame has become so embedded in discourse that independent creators reproduce it without financial incentive. This makes it harder to attribute to financial relationships but demonstrates the downstream effect of financially-motivated coverage from larger outlets.
+
+**Confounders:**
+1. MODERATE: Episode discusses broader tech/fashion relationship, not exclusively Meta
+2. WEAK: Meta is the market-leading camera glasses brand — concentration of critique partly justified
+3. STRONG: Independent creator with no apparent financial conflict — this is genuine cultural critique, not financially motivated coverage
+4. MODERATE: Historical iPod-to-glasses framing provides analytical depth beyond simple Meta bashing
+
+**Sentiment Score:** -7/10 (strongly negative toward Meta/wearable surveillance; Meta is the sole named target)
+**Asymmetry Assessment:** HIGH — Only Meta is named as the surveillance threat despite Apple, Snap, Samsung, and Google all shipping or planning camera-equipped wearables. The fashion lens uniquely positions Meta as the entity weaponizing fashion for surveillance.
+
+**MediaScope Mechanism:** #296 — Rabbit Hole Fashion-to-Surveillance Narrative Cross-Domain Propagation. Natural experiment: a fashion/cultural commentary podcast reproduces the Meta = surveillance framing without financial incentive, demonstrating downstream cultural consensus effects from financially-motivated tech press coverage. No competitor receives equivalent scrutiny despite identical hardware capabilities. First documented case of the asymmetric framing propagating from tech journalism into fashion/cultural commentary.
+
+**Cross-References:**
+- Mechanism #54: Rabbit Hole fashion surveillance Kmart price democratization (prior episode)
+- Mechanism #225: Vergecast three-episode camera vocabulary convergence
+- Mechanism #152: Mass-market vocabulary propagation cycle
+- Mechanism #283: TechRadar podcast chapter vocabulary aspiration inversion
+
+---
+
+### 67. Katie Couric Media — "Meta Glasses Privacy Concerns Raise Real Issues" (~Aug 20, 2026)
+
+- **Author/Platform:** Katie Couric (journalist, katiecouric.com)
+- **Expert Source:** Woodrow Hartzog (law professor, Boston University; privacy/technology expert)
+- **Format:** Long-form Q&A interview (text, with editorial framing)
+- **Source URL:** https://katiecouric.com/news/tech/meta-glasses-privacy-concerns/
+
+**Title Framing:**
+"Meta Glasses Privacy Concerns Raise Real Issues" — names Meta exclusively. No other camera wearable company mentioned in the headline. The "Real Issues" qualifier implies previous concerns were potentially dismissed as unreal — this is the authoritative confirmation.
+
+**Entity Coverage Asymmetry:**
+
+| Entity | Named/Discussed | Framing | Privacy Vocabulary |
+|--------|----------------|---------|-------------------|
+| Meta | Primary target throughout | "pervert glasses" (Bloomberg nickname cited), "surveillance," "harassment tool" | 15+ alarm terms |
+| Apple | Not mentioned | — | 0 |
+| Google | Not mentioned (despite Google Glass history) | — | 0 |
+| Samsung | Not mentioned | — | 0 |
+| Snap | Not mentioned | — | 0 |
+
+**Expert Source Analysis — Woodrow Hartzog:**
+Hartzog is a legitimate privacy law expert (BU professor, published extensively on facial recognition). His arguments are substantive and well-reasoned. However, the interview format directs all of his expertise exclusively at Meta glasses. Key claims:
+
+1. **"Most misguided argument"** — phone ≠ glasses distinction (valid, but applies equally to all camera glasses)
+2. **"Trivially easy to disable [the recording LED]"** — specific to Meta design, but LED workarounds exist for any camera device
+3. **Facial recognition = "most dangerous surveillance technology ever created"** — applied only to Meta's planned feature, despite Clearview AI, Ring doorbell partnerships, and Apple's on-device face recognition all existing
+4. **"We need significant new bright-line rules NOW"** — regulatory call directed at Meta, not the category
+
+**Critical Finding — Mainstream Media Entity Selection:**
+Katie Couric's platform represents **mainstream/celebrity journalism** — a tier above tech press, reaching general-interest audiences. The entity selection is pure: no competitor is mentioned, examined, or compared. The interview constructs Meta glasses as a sui generis threat, as if no other company makes or plans camera wearables.
+
+This is particularly notable in the context of the **Apple AirPods camera leak** (same week, Aug 18-21, 2026), which received zero mention despite:
+- Confirmed camera in AirPods (leaked video)
+- Apple's existing Face ID biometric infrastructure
+- AirPods' always-in-ear form factor (harder to remove than glasses)
+
+The Bloomberg "pervert glasses" nickname is cited in paragraph 2, importing stigma vocabulary from financial press into mainstream journalism. No equivalent stigma label exists for Apple AirPods with cameras, Google smart glasses, or Snap Spectacles.
+
+**Cross-Medium Framing Extension:**
+Hartzog's arguments about facial recognition, consent, and design regulation are academically valid but selectively applied. His statement "I've publicly advocated for an outright ban on [facial recognition]" positions him as anti-FR broadly — but the interview structure directs this position exclusively at Meta. No question asks about Apple, Google, Ring, or Clearview AI facial recognition capabilities.
+
+**Financial Context:**
+Katie Couric Media is an independent digital media company. No known direct financial relationships with Meta competitors. However, katiecouric.com runs programmatic advertising (Google Ad Manager visible in source). Google is simultaneously: (a) an advertising revenue source for katiecouric.com, and (b) a competitor to Meta in camera wearables (Google/Samsung smart glasses partnership). The financial relationship is indirect but structurally present.
+
+**Confounders:**
+1. STRONG: Hartzog is a genuine expert making substantive arguments — not a shill
+2. MODERATE: Meta IS the market leader in camera glasses — some concentration of critique is expected
+3. MODERATE: Interview format limits scope — the journalist asked about Meta, not "camera wearables" generically
+4. WEAK: Katie Couric may not be aware of competitor camera wearable products
+5. STRONG: The "pervert glasses" nickname imports pre-existing stigma — but Bloomberg coined it, not Couric
+
+**Sentiment Score:** -8/10 (strongly negative; Meta is the sole target of expert privacy analysis)
+**Asymmetry Assessment:** VERY HIGH — Zero competitor examination despite identical privacy implications across Apple, Google, Samsung, and Snap camera wearables. Expert authority directed exclusively at Meta creates a pseudo-authoritative framing: "the privacy expert says Meta glasses are dangerous" without noting the expert's views apply equally to the entire product category.
+
+**MediaScope Mechanism:** #297 — Katie Couric Mainstream Journalism Single-Entity Expert Authority Direction. A mainstream media platform directs a legitimate privacy expert's category-wide concerns exclusively at Meta glasses, creating pseudo-authoritative single-entity framing. No competitor camera wearable receives expert examination despite identical privacy implications. "Pervert glasses" stigma label imported from financial press (Bloomberg) into mainstream journalism layer.
+
+**Cross-References:**
+- Mechanism #296: Rabbit Hole fashion-to-surveillance cross-domain propagation
+- Mechanism #152: Mass-market vocabulary propagation cycle
+- Mechanism #283: TechRadar podcast chapter vocabulary aspiration inversion
+- Mechanism #267: AI Inside three-episode title vocabulary hierarchy
+- Tests: test_pervertpods_stigma_label_resolution_rationalization_cross_publication_aug23.py
+
+---
+
+### 68. Vergecast — "Pixel 11 gets in on the digicam trend" (Aug 21, 2026) + "Snap's Specs look good on nobody" (~Aug 22, 2026)
+
+- **Host(s):** Nilay Patel, David Pierce, Jake Kastrenakes, David Imel (guests)
+- **Network/Owner:** Vox Media Podcast Network (Vox Media also owns The Verge)
+- **Source URL (radio.net listing):** https://ie.radio.net/podcast/thevergecast
+- **Source URL (Snap episode, ivy.fm):** https://ivy.fm/podcast/the-vergecast-617111
+
+**Two-Episode Cluster (Aug 21-22, 2026):**
+
+**Episode A: "Pixel 11 gets in on the digicam trend" (Aug 21, 1h 17 min)**
+Further reading list includes both:
+- "Apple's camera-equipped AirPods appear in leaked video" — NEUTRAL framing
+- "Meta glasses are a workplace menace" — ALARM framing (Mia Sato article)
+
+These two linked articles in the same episode's further reading create a natural experiment: the same podcast episode references two camera wearable products in the same week. The vocabulary gradient:
+
+| Product | Article Linked | Vocabulary Class | Source |
+|---------|---------------|-----------------|--------|
+| Apple AirPods (camera) | "appear in leaked video" | Neutral/factual | Apple leak reporting |
+| Meta glasses | "are a workplace menace" | ALARM — "menace" | Mia Sato / The Verge |
+
+"Appear in leaked video" = neutral discovery language. "Are a workplace menace" = stigma/alarm language. Same week, same episode reading list, same podcast.
+
+**Episode B: "Snap's Specs look good on nobody" (~Aug 22)**
+The Snap Specs episode discusses the $2,195 AR glasses with vocabulary focused on:
+- Physical discomfort ("ear-smashing," "enormous and heavy stems")
+- Practicality concerns ("does any of the tech really matter if no one's going to want these glasses on their face?")
+- Battery as possible feature (4 hours)
+
+Notably ABSENT from the Snap discussion: surveillance, privacy, "creepy," recording consent, "pervert." The Snap Specs have **dual cameras** and are priced at $2,195 — a camera-equipped face-worn device that receives zero privacy vocabulary.
+
+**Cross-Episode Entity Vocabulary:**
+
+| Entity | Product | Episode | Privacy/Alarm Terms | Vocabulary Class |
+|--------|---------|---------|--------------------|-----------------| 
+| Meta | Ray-Ban glasses | Pixel 11 ep (reading list) | "menace" | ALARM |
+| Apple | AirPods w/ camera | Pixel 11 ep (reading list) | 0 | Neutral/factual |
+| Snap | Specs ($2,195) | Snap Specs ep | 0 | Comfort/practical |
+| Google | Pixel 11 | Pixel 11 ep (main topic) | 0 | Neutral/positive |
+
+**Reading List as Editorial Signal:**
+The Vergecast's "further reading" links aren't random — they're editorially curated to represent the week's tech stories. Including "Meta glasses are a workplace menace" (Mia Sato's Verge article) alongside "Apple's camera-equipped AirPods appear in leaked video" in the same episode is an editorial choice that places Meta in alarm vocabulary and Apple in neutral discovery vocabulary for the same product category (camera wearables).
+
+The Vergecast Aug 20 episode ("We ask Gemini and Alexa to track cats") also includes "Meta glasses are a workplace menace" in its reading list — repeating the alarm link across consecutive episodes.
+
+**Financial Context:**
+Vox Media (Vergecast, The Verge) — Apple advertising revenue, Apple News partnership, Apple keynote access/relationships. Snap Spectacles developer edition at $2,195 is a developer product; retail is not imminent. Meta glasses are a mass-market consumer product. Coverage intensity scaling with market reach is expected, but vocabulary class (alarm vs neutral) is not explained by market reach alone.
+
+**Sentiment Score:** -5/10 Meta, +1/10 Snap, 0/10 Apple (net negative for Meta through editorial link curation)
+**Asymmetry Assessment:** MODERATE-HIGH — Same-week two-episode cluster treats Meta camera wearable with alarm vocabulary and Apple/Snap camera wearables with neutral/practical vocabulary. The asymmetry is expressed through editorial link curation rather than explicit podcast discussion.
+
+**MediaScope Mechanism:** #298 — Vergecast Two-Episode Reading List Cross-Entity Camera Wearable Vocabulary Curation. The same podcast's Aug 20-21 episodes include Mia Sato's "Meta glasses are a workplace menace" in further reading alongside Apple AirPods camera "appear in leaked video" — alarm vs neutral vocabulary for the same product category. Snap Specs episode dedicates full discussion to comfort/practicality with zero privacy vocabulary despite dual cameras. Cross-medium amplification: The Verge's print-level vocabulary bifurcation (Mia Sato mechanism #213) propagates to podcast layer via reading list curation.
+
+**Cross-References:**
+- Mechanism #213: Vergecast two-episode cascade / Mia Sato workplace menace amplification
+- Mechanism #225: Vergecast three-episode camera vocabulary convergence
+- Mechanism #267: AI Inside three-episode title vocabulary hierarchy
+- Mechanism #296: Rabbit Hole fashion-to-surveillance cross-domain propagation
+- Mechanism #297: Katie Couric mainstream journalism single-entity expert authority direction
+

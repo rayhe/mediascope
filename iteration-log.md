@@ -1,3 +1,66 @@
+## Iteration #282 — Tue 2026-08-25 05:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Cross-Domain Narrative Propagation — Fashion, Mainstream Journalism, and Reading List Curation
+
+**Three new podcast/media entries (entries #66-68) analyzing how the Meta = surveillance
+framing propagates across distinct media domains:**
+
+**New Mechanism #296:** Rabbit Hole Fashion-to-Surveillance Cross-Domain Propagation
+- Podcast: "The iPod hair clip to Meta glasses pipeline" (~Aug 20, 2026)
+- Host: Rosie Okotchi-Lipinski with fashion/tech commentator Grace Robinson
+- First documented case of Meta-surveillance framing propagating from tech journalism
+  into fashion/cultural commentary ecosystem
+- Meta is the sole named entity across 10 chapter titles; 3 chapters use explicit
+  "surveillance" vocabulary; Apple/Google/Samsung/Snap receive zero scrutiny
+- Independent creator with NO financial incentive — cultural consensus propagation,
+  demonstrating downstream effects of financially-motivated tech press coverage
+- Source: https://www.youtube.com/watch?v=HwzD7EWak5I
+
+**New Mechanism #297:** Katie Couric Mainstream Journalism Single-Entity Expert Authority Direction
+- Article: "Meta Glasses Privacy Concerns Raise Real Issues" (~Aug 20, 2026)
+- Expert: Woodrow Hartzog (BU law professor, privacy/technology specialist)
+- Mainstream celebrity journalism directs legitimate expert's category-wide privacy
+  concerns exclusively at Meta glasses — zero competitor examination
+- Bloomberg "pervert glasses" stigma label imported into mainstream journalism layer
+- Apple AirPods camera leak (same week) receives zero mention
+- 15+ alarm terms for Meta, 0 for competitors
+- Source: https://katiecouric.com/news/tech/meta-glasses-privacy-concerns/
+
+**New Mechanism #298:** Vergecast Two-Episode Reading List Camera Wearable Vocabulary Curation
+- Episodes: "Pixel 11 gets in on the digicam trend" (Aug 21) + "We ask Gemini and
+  Alexa to track cats" (Aug 20) + "Snap's Specs look good on nobody" (~Aug 22)
+- Same-week reading lists include both "Meta glasses are a workplace menace" (alarm)
+  and "Apple's camera-equipped AirPods appear in leaked video" (neutral) — vocabulary
+  gradient in editorial curation for the same product category
+- Snap Specs episode: zero privacy vocabulary despite $2,195 dual-camera wearable
+- Cross-medium amplification: Mia Sato's print-level vocabulary bifurcation (#213)
+  propagates to podcast reading list layer
+
+**Key analytical insight:** The three mechanisms together document a **three-layer
+propagation cascade**: (1) tech journalism creates asymmetric framing (mechanisms
+#1-295), (2) mainstream journalism amplifies it with expert authority (#297), (3)
+independent cultural creators reproduce it without financial incentive (#296). The
+Vergecast reading list (#298) serves as the connective tissue linking print asymmetry
+to podcast amplification.
+
+**Files changed:**
+- `podcast-sentiment.md` (3 new entries: #66-68)
+- `profiles/competitor-coverage-research.yaml` (3 new mechanisms: #296-298)
+- `tests/test_type_e_05am_rabbit_hole_fashion_surveillance_cross_domain_propagation_aug25.py` (NEW — 4 classes, 32 tests)
+- `README.md` (file count 601)
+- `docs/ARCHITECTURE.md` (file count 601)
+
+**Tests added:** 32 (4 classes)
+- TestRabbitHoleFashionSurveillanceCrossDomainPropagation (10 tests)
+- TestKatieCouricExpertAuthorityMetaExclusiveFraming (8 tests)
+- TestVergecastReadingListCameraWearableVocabularyCuration (8 tests)
+- TestPodcastSentimentDocHasNewEntries (6 tests)
+
+**Test corpus:** 601 test files
+**Max mechanism_id:** 298
+
+---
+
 ## Iteration #281 — Tue 2026-08-25 04:00 PT (Type D: Test & Verify)
 
 ### Focus: YAML Structure Fix, Duplicate Mechanism ID Resolution, Test Fixture Repair, Stale Assertion Cleanup

@@ -28418,3 +28418,121 @@ publications:
       - "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
       - "https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/"
     test_file: "tests/test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py"
+  rabbit_hole_fashion_surveillance_cross_domain_propagation:
+    mechanism_id: 296
+    description: >
+      Rabbit Hole podcast (Rosie Okotchi-Lipinski with Grace Robinson) episode
+      "The iPod hair clip to Meta glasses pipeline" (~Aug 20, 2026) propagates the
+      Meta = surveillance framing from tech journalism into fashion/cultural commentary.
+      Meta is the sole named camera wearable entity across 10 chapter titles, with 3
+      chapters using explicit "surveillance" vocabulary. Apple, Google, Samsung, and Snap
+      receive zero scrutiny despite shipping or planning identical camera-equipped
+      wearables. First documented cross-domain propagation from tech press to fashion
+      commentary ecosystem — independent creator with no financial incentive reproducing
+      financially-motivated asymmetric framing.
+    entities_involved:
+      - meta
+      - apple
+      - google
+      - samsung
+      - snap
+    mechanism_type: cross_domain_narrative_propagation
+    podcast_source: "Rabbit Hole (Rosie Okotchi-Lipinski)"
+    episode_title: "The iPod hair clip to Meta glasses pipeline"
+    episode_date: "2026-08-20"
+    guest: "Grace Robinson (fashion/technology commentator)"
+    meta_alarm_terms: 3
+    competitor_alarm_terms: 0
+    financial_incentive: none_detected
+    asymmetry_score: 8.5
+    confidence: 0.85
+    confounders:
+      - strength: MODERATE
+        description: "Episode discusses broader tech/fashion relationship, not exclusively Meta"
+      - strength: STRONG
+        description: "Independent creator with no apparent financial conflict — genuine cultural critique"
+      - strength: MODERATE
+        description: "Meta is market-leading camera glasses brand — some concentration expected"
+    sources:
+      - "https://www.youtube.com/watch?v=HwzD7EWak5I"
+    test_file: "tests/test_type_e_05am_rabbit_hole_fashion_surveillance_cross_domain_propagation_aug25.py"
+  katie_couric_mainstream_single_entity_expert_authority_direction:
+    mechanism_id: 297
+    description: >
+      Katie Couric Media interview with Woodrow Hartzog (BU law professor) (~Aug 20, 2026)
+      directs category-wide camera wearable privacy concerns exclusively at Meta glasses.
+      Zero competitor examination despite Apple AirPods camera leak (same week), Snap Specs
+      shipping Sep 16, Samsung/Google smart glasses imminent. Bloomberg "pervert glasses"
+      stigma label imported into mainstream journalism layer. Expert authority creates
+      pseudo-authoritative single-entity framing — legitimate privacy concerns presented
+      as Meta-specific rather than category-wide.
+    entities_involved:
+      - meta
+      - apple
+      - snap
+      - google
+      - samsung
+    mechanism_type: expert_authority_entity_selection
+    publication: "Katie Couric Media (katiecouric.com)"
+    expert_source: "Woodrow Hartzog (Boston University, privacy/technology law)"
+    article_title: "Meta Glasses Privacy Concerns Raise Real Issues"
+    article_date: "2026-08-20"
+    meta_alarm_terms: 15
+    competitor_alarm_terms: 0
+    stigma_labels_imported:
+      - term: "pervert glasses"
+        origin: Bloomberg
+    financial_incentive: indirect_google_ad_revenue
+    asymmetry_score: 9.0
+    confidence: 0.80
+    confounders:
+      - strength: STRONG
+        description: "Hartzog is a genuine expert making substantive arguments"
+      - strength: MODERATE
+        description: "Meta IS the market leader — some concentration expected"
+      - strength: MODERATE
+        description: "Interview format limits scope to journalist's questions"
+    sources:
+      - "https://katiecouric.com/news/tech/meta-glasses-privacy-concerns/"
+    test_file: "tests/test_type_e_05am_katie_couric_expert_authority_meta_exclusive_privacy_framing_aug25.py"
+  vergecast_two_episode_reading_list_camera_wearable_vocabulary_curation:
+    mechanism_id: 298
+    description: >
+      Vergecast Aug 20-21, 2026 episodes include Mia Sato's "Meta glasses are a workplace
+      menace" in further reading alongside Apple AirPods camera "appear in leaked video" —
+      alarm vs neutral vocabulary for the same product category (camera wearables). Snap
+      Specs episode (~Aug 22) dedicates full discussion to comfort/practicality with zero
+      privacy vocabulary despite dual cameras. Cross-medium amplification: The Verge's
+      print-level vocabulary bifurcation (Mia Sato mechanism #213) propagates to podcast
+      reading list curation layer.
+    entities_involved:
+      - meta
+      - apple
+      - snap
+    mechanism_type: cross_medium_reading_list_curation
+    podcast_source: "The Vergecast (Vox Media Podcast Network)"
+    episodes:
+      - title: "Pixel 11 gets in on the digicam trend"
+        date: "2026-08-21"
+        meta_article: "Meta glasses are a workplace menace"
+        apple_article: "Apple's camera-equipped AirPods appear in leaked video"
+      - title: "We ask Gemini and Alexa to track cats"
+        date: "2026-08-20"
+        meta_article: "Meta glasses are a workplace menace"
+      - title: "Snap's Specs look good on nobody"
+        date: "2026-08-22"
+        privacy_terms: 0
+    meta_alarm_terms: 2
+    competitor_alarm_terms: 0
+    financial_incentive: vox_media_apple_advertising_relationship
+    asymmetry_score: 7.5
+    confidence: 0.75
+    confounders:
+      - strength: MODERATE
+        description: "Reading list links reflect published Verge articles, not podcast editorial creation"
+      - strength: WEAK
+        description: "Snap Specs are a developer product — lower scrutiny partly expected"
+    sources:
+      - "https://ie.radio.net/podcast/thevergecast"
+      - "https://ivy.fm/podcast/the-vergecast-617111"
+    test_file: "tests/test_type_e_05am_vergecast_reading_list_camera_wearable_vocabulary_curation_aug25.py"
