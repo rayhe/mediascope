@@ -1,3 +1,62 @@
+## Iteration #278 — Mon 2026-08-24 23:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Gizmodo Cross-Entity AI Chat Ad Targeting Vocabulary Bifurcation
+
+**Publication+Competitor Pair:** Gizmodo covering OpenAI ChatGPT ads vs Meta AI chat ad targeting
+
+**Core Finding — Mechanism #291:**
+Within a one-month window (Dec 2025 – Jan 2026), Gizmodo published coverage of both OpenAI
+and Meta implementing functionally identical practices: using AI chatbot conversation context
+to personalize targeted advertisements. The vocabulary treatment is systematically bifurcated:
+
+- **OpenAI (Jan 17, 2026):** Business-sympathy framing
+  - Title: "Starts Testing Ads Because It's Time to Pay the Piper"
+  - Vocabulary: "can't afford to slow-roll," "deeply underwater," "turn a profit"
+  - Zero alarm vocabulary, zero external critics cited, zero FTC references
+  - One mild skepticism line: "probably worth bookmarking that one to revisit"
+
+- **Meta (Jan 6, 2026 + Oct 1, 2025):** Surveillance-alarm framing
+  - Title: "Meta's New Privacy Policy Opens Up AI Chats for Targeted Ads"
+  - Vocabulary: "backlash," "surveillance-driven marketing," "aggressive expansion"
+  - 36-group coalition demanding FTC investigation cited at length
+  - FTC 2019 consent decree and Section 5 invoked
+  - "probe the program," "suspend the advertising practice"
+
+**The practice is identical:** Both companies use AI chat context for ad personalization.
+Both exclude sensitive topics. Both target free-tier users. Yet OpenAI gets financial-
+sympathy vocabulary and Meta gets surveillance-alarm vocabulary.
+
+**Cross-publication replication:** Same bifurcation found at Engadget — Meta coverage uses
+"scraping conversations," "AI chatbots are not your friends"; OpenAI coverage uses neutral
+framing.
+
+**Confounders:** 4 documented (1 STRONG: Meta's longer privacy controversy history;
+2 MODERATE: no full opt-out, cross-platform scope; 1 WEAK: OpenAI ads newer)
+
+**Asymmetry score:** 0.72
+
+**Files changed:**
+- `tests/test_gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation_aug24.py` (NEW — 30 tests, 10 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #291 added)
+- `README.md` (594→595 test files, ~20,258→~20,288 tests)
+- `docs/ARCHITECTURE.md` (test file count updated)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 30 (10 classes)
+- TestCorePracticeEquivalence (4 tests)
+- TestHeadlineVocabularyBifurcation (4 tests)
+- TestBodyVocabularyGradient (4 tests)
+- TestExternalVoiceCitationAsymmetry (4 tests)
+- TestSkepticismCalibration (3 tests)
+- TestCrossPublicationReplication (2 tests)
+- TestOptOutFramingAsymmetry (3 tests)
+- TestConfounders (4 tests)
+- TestAsymmetryScoring (2 tests)
+
+**Test corpus:** 595 test files
+
+---
+
 ## Iteration #277 — Mon 2026-08-24 14:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: TechRadar Podcast Cross-Entity Chapter Vocabulary Aspiration Inversion

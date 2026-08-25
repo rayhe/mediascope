@@ -28166,3 +28166,43 @@ publications:
       - "Adweek: OpenAI data sharing analysis"
       - "OpenTools.ai: policy language comparison"
     test_file: "tests/test_wired_openai_meta_ai_chat_ad_targeting_privacy_policy_natural_experiment_aug24.py"
+  gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation:
+    mechanism_id: 291
+    mechanism_number: 291
+    title: "Gizmodo AI Chat Ad Targeting Vocabulary Gradient — OpenAI Business-Sympathy vs Meta Surveillance-Alarm"
+    publication: gizmodo
+    type: cross_entity_vocabulary_bifurcation
+    date_range: "2025-10 to 2026-01"
+    entities: [openai, meta]
+    description: >
+      Within a one-month window (Dec 2025 – Jan 2026), Gizmodo published coverage
+      of both OpenAI and Meta implementing functionally identical practices: using
+      AI chatbot conversation context to personalize targeted advertisements.
+      OpenAI gets business-sympathy framing ("Time to Pay the Piper," financial
+      necessity vocabulary, zero alarm terms, zero external critics cited). Meta
+      gets surveillance-alarm framing ("Opens Up AI Chats for Targeted Ads,"
+      "surveillance-driven marketing," 36-group coalition + FTC consent decree
+      cited). Same practice, same publication, different entity, different vocabulary
+      class. Replicates across Engadget ("scraping conversations," "AI chatbots
+      are not your friends" for Meta; neutral for OpenAI).
+    financial_context: >
+      Gizmodo (G/O Media) has no disclosed content-licensing deal with either
+      entity. Meta is a direct advertising competitor. Pattern may reflect
+      publication-level entity reputation anchoring rather than financial alignment.
+    asymmetry_score: 0.72
+    confounders:
+      - strength: STRONG
+        factor: "Meta has longer history of privacy controversies (Cambridge Analytica, FTC)"
+      - strength: MODERATE
+        factor: "Meta's AI chat ad data use has no full opt-out; OpenAI allows toggle"
+      - strength: MODERATE
+        factor: "Meta applies across WhatsApp/IG/FB; OpenAI is ChatGPT only"
+      - strength: WEAK
+        factor: "OpenAI ads newer/smaller scale at time of coverage"
+    extends_mechanisms: [72, 134]
+    sources:
+      - "Gizmodo OpenAI: Jan 17, 2026 — https://gizmodo.com/openai-launches-cheaper-subscriptions-starts-testing-ads-because-its-time-to-pay-the-piper-2000711284"
+      - "Gizmodo Meta (Jan 2026): https://gizmodo.com/metas-new-privacy-policy-opens-up-ai-chats-for-targeted-ads-2000704852"
+      - "Gizmodo Meta (Oct 2025): https://gizmodo.com/meta-instagram-facebook-whatsapp-ai-chat-history-targeted-ads-2000666133"
+      - "Engadget Meta (Oct 2025): https://www.engadget.com/ai/meta-will-soon-use-ai-chats-for-ad-targeting-because-of-course-it-will-153319626.html"
+    test_file: "tests/test_gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation_aug24.py"
