@@ -85,10 +85,10 @@ class TestAug24MechanismEntriesAsNamedKeys(unittest.TestCase):
         self.assertEqual(self.pubs[key]["mechanism_id"], 268)
 
     def test_mechanism_269_steve_dent_is_named_key(self):
-        """Mechanism #269 (Steve Dent) exists as a named mapping key."""
+        """Mechanism #272 (Steve Dent) exists as a named mapping key."""
         key = "steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient"
         self.assertIn(key, self.pubs)
-        self.assertEqual(self.pubs[key]["mechanism_id"], 269)
+        self.assertEqual(self.pubs[key]["mechanism_id"], 272)
 
     def test_mechanism_270_pervertpods_is_named_key(self):
         """Mechanism #270 (Pervertpods label containment) exists as a named mapping key."""
@@ -128,9 +128,9 @@ class TestAnthropicIPOPiracyFinancialArchitectureConsistency(unittest.TestCase):
         self.research = research
 
     def test_anthropic_ipo_banks_match_underwriter_triangle(self):
-        """IPO underwriters in entities match the triple-bank convergence documented in research."""
+        """IPO underwriters in entities match the quad-bank convergence documented in research."""
         ipo_banks = set(self.anthropic["ipo_filing"]["ipo_banks_reported"])
-        expected = {"Goldman Sachs", "Morgan Stanley", "JPMorgan Chase"}
+        expected = {"Goldman Sachs", "Morgan Stanley", "JPMorgan Chase", "Citigroup"}
         self.assertEqual(ipo_banks, expected)
 
     def test_settlement_amount_consistent(self):

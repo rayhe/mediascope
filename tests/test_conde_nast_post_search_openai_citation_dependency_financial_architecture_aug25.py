@@ -111,7 +111,17 @@ SOURCES:
   (Computing UK, Aug 2024)
 """
 
+import os
 import pytest
+import yaml
+
+PROFILES_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'profiles')
+
+
+@pytest.fixture
+def competitor_research():
+    with open(os.path.join(PROFILES_DIR, 'competitor-coverage-research.yaml')) as f:
+        return yaml.safe_load(f)
 
 
 class TestCondeNastPostSearchRevenueArchitecture:
@@ -119,7 +129,7 @@ class TestCondeNastPostSearchRevenueArchitecture:
 
     def test_search_traffic_collapse_documented(self, competitor_research):
         """Verify that Google search traffic decline data is documented with sources."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         search_collapse = findings.get("google_search_collapse", {})
 
         assert search_collapse.get("organic_decline_pct") == 33, \
@@ -133,13 +143,13 @@ class TestCondeNastPostSearchRevenueArchitecture:
 
     def test_search_zero_directive(self, competitor_research):
         """Verify Lynch's 'Plan As If Search Is Zero' directive is documented."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         assert "search is zero" in findings.get("strategic_directive", "").lower(), \
             "Lynch's directive: Plan As If Search Is Zero"
 
     def test_advertising_no_longer_growth_engine(self, competitor_research):
         """Verify Lynch explicitly stated advertising is no longer a growth engine."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         assert findings.get("advertising_growth_engine") is False, \
             "Lynch (Oct 2025): advertising no longer expected to be 'a growth engine'"
 
@@ -149,7 +159,7 @@ class TestGoogleCoercionPushEffect:
 
     def test_google_coercion_documented(self, competitor_research):
         """Verify Google's 'share content for AI or lose fees' ultimatum is documented."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         coercion = findings.get("google_coercion", {})
 
         assert coercion.get("mechanism") == "share_for_ai_or_lose_fees", \
@@ -159,13 +169,13 @@ class TestGoogleCoercionPushEffect:
 
     def test_conde_nast_no_google_deal(self, competitor_research):
         """Verify Condé Nast has NOT signed a Google AI licensing deal."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         assert findings.get("google_deal_status") == "none", \
             "Condé Nast has not reached a licensing deal with Google (per Lynch)"
 
     def test_push_toward_openai_dependency(self, competitor_research):
         """Verify the Google coercion push effect creates OpenAI migration incentive."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         coercion = findings.get("google_coercion", {})
 
         assert coercion.get("push_effect") == "deepens_openai_dependency", \
@@ -177,7 +187,7 @@ class TestOpenAICitationPremiumCondéNastSpecific:
 
     def test_conde_nast_top_5_citation_beneficiary(self, competitor_research):
         """Verify Condé Nast is one of the top 5 citation beneficiaries."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         citation = findings.get("citation_premium", {})
 
         top_5 = citation.get("top_5_beneficiaries", [])
@@ -186,7 +196,7 @@ class TestOpenAICitationPremiumCondéNastSpecific:
 
     def test_top_5_capture_69_pct(self, competitor_research):
         """Verify top 5 capture 69% of all citations to licensed publishers."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         citation = findings.get("citation_premium", {})
 
         assert citation.get("top_5_share_pct") == 69, \
@@ -194,7 +204,7 @@ class TestOpenAICitationPremiumCondéNastSpecific:
 
     def test_citation_premium_48_pct(self, competitor_research):
         """Verify the 48% citation premium for OpenAI-licensed publishers on ChatGPT."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         citation = findings.get("citation_premium", {})
 
         assert citation.get("chatgpt_premium_pct") == 48, \
@@ -202,7 +212,7 @@ class TestOpenAICitationPremiumCondéNastSpecific:
 
     def test_openai_exclusive_premium_112_pct(self, competitor_research):
         """Verify OpenAI-exclusive publishers earn 112% more ChatGPT citations."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         citation = findings.get("citation_premium", {})
 
         assert citation.get("exclusive_premium_pct") == 112, \
@@ -214,7 +224,7 @@ class TestRevenuePivotDependencyDeepening:
 
     def test_events_revenue_growth(self, competitor_research):
         """Verify events revenue growth data."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         revenue = findings.get("revenue_pivot", {})
 
         assert revenue.get("events_growth_2025_pct") == 40, \
@@ -224,7 +234,7 @@ class TestRevenuePivotDependencyDeepening:
 
     def test_subscriptions_growth(self, competitor_research):
         """Verify digital subscription growth data."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         revenue = findings.get("revenue_pivot", {})
 
         assert revenue.get("digital_subs_growth_pct") == 29, \
@@ -232,7 +242,7 @@ class TestRevenuePivotDependencyDeepening:
 
     def test_licensing_deal_portfolio(self, competitor_research):
         """Verify Condé Nast's AI licensing portfolio: OpenAI, Amazon, Perplexity."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         revenue = findings.get("revenue_pivot", {})
         licensing = revenue.get("ai_licensing_partners", [])
 
@@ -243,7 +253,7 @@ class TestRevenuePivotDependencyDeepening:
 
     def test_four_pillar_structure(self, competitor_research):
         """Verify the four-pillar revenue structure is documented."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         revenue = findings.get("revenue_pivot", {})
         pillars = revenue.get("strategic_pillars", [])
 
@@ -258,7 +268,7 @@ class TestCoverageIncentivePrediction:
 
     def test_openai_favorable_coverage_financial_benefit(self, competitor_research):
         """Verify that favorable OpenAI coverage has quantifiable financial benefit."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         incentive = findings.get("coverage_incentive", {})
 
         assert incentive.get("openai_favorable_coverage_benefit") == "revenue_protection", \
@@ -266,7 +276,7 @@ class TestCoverageIncentivePrediction:
 
     def test_meta_favorable_coverage_zero_benefit(self, competitor_research):
         """Verify that favorable Meta coverage produces zero financial benefit."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         incentive = findings.get("coverage_incentive", {})
 
         assert incentive.get("meta_favorable_coverage_benefit") == "zero", \
@@ -274,7 +284,7 @@ class TestCoverageIncentivePrediction:
 
     def test_incentive_differential_documented(self, competitor_research):
         """Verify the financial incentive differential between OpenAI and Meta coverage."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         incentive = findings.get("coverage_incentive", {})
 
         differential = incentive.get("differential")
@@ -285,7 +295,7 @@ class TestCoverageIncentivePrediction:
 
     def test_growing_relative_importance(self, competitor_research):
         """Verify that OpenAI citation revenue grows relative to declining search revenue."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         incentive = findings.get("coverage_incentive", {})
 
         assert incentive.get("relative_importance_trend") == "increasing", \
@@ -297,7 +307,7 @@ class TestThreeWayFinancialArchitecture:
 
     def test_three_way_architecture_documented(self, competitor_research):
         """Verify the three-way financial architecture is explicitly documented."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
 
         assert "google_search_collapse" in findings, "Google push factor documented"
         assert "citation_premium" in findings, "OpenAI pull factor documented"
@@ -305,12 +315,12 @@ class TestThreeWayFinancialArchitecture:
 
     def test_mechanism_id(self, competitor_research):
         """Verify mechanism ID assignment."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         assert findings.get("mechanism_id") == 294
 
     def test_asymmetry_score(self, competitor_research):
         """Verify asymmetry score is computed and reasonable."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         score = findings.get("asymmetry_score", 0)
         assert 0.5 <= score <= 1.0, f"Score {score} should reflect strong structural incentive"
 
@@ -320,7 +330,7 @@ class TestConfounders:
 
     def test_editorial_independence_confounder(self, competitor_research):
         """Verify editorial independence is documented as a STRONG confounder."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         confounders = findings.get("confounders", [])
 
         editorial = next((c for c in confounders if "editorial" in c.get("description", "").lower()), None)
@@ -329,7 +339,7 @@ class TestConfounders:
 
     def test_correlation_causation_confounder(self, competitor_research):
         """Verify correlation vs causation is documented as STRONG confounder."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         confounders = findings.get("confounders", [])
 
         corr = next((c for c in confounders if "correlation" in c.get("description", "").lower()), None)
@@ -338,7 +348,7 @@ class TestConfounders:
 
     def test_revenue_materiality_confounder(self, competitor_research):
         """Verify revenue materiality is documented as MODERATE confounder."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         confounders = findings.get("confounders", [])
 
         materiality = next((c for c in confounders if "materiality" in c.get("description", "").lower()), None)
@@ -347,7 +357,7 @@ class TestConfounders:
 
     def test_deal_terms_undisclosed_confounder(self, competitor_research):
         """Verify undisclosed deal terms is documented as MODERATE confounder."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         confounders = findings.get("confounders", [])
 
         undisclosed = next((c for c in confounders if "undisclosed" in c.get("description", "").lower()), None)
@@ -356,7 +366,7 @@ class TestConfounders:
 
     def test_minimum_confounder_count(self, competitor_research):
         """Verify at least 4 confounders are documented."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         confounders = findings.get("confounders", [])
         assert len(confounders) >= 4, f"Need 4+ confounders, found {len(confounders)}"
 
@@ -366,7 +376,7 @@ class TestCrossReferences:
 
     def test_cross_ref_mechanism_249(self, competitor_research):
         """Verify cross-reference to mechanism #249 (AI Citation Amplification)."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         cross_refs = findings.get("cross_references", [])
 
         ref_249 = next((r for r in cross_refs if r.get("mechanism_id") == 249), None)
@@ -376,7 +386,7 @@ class TestCrossReferences:
 
     def test_cross_ref_mechanism_1(self, competitor_research):
         """Verify cross-reference to mechanism #1 (Advance AI dependency)."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         cross_refs = findings.get("cross_references", [])
 
         ref_1 = next((r for r in cross_refs if r.get("mechanism_id") == 1), None)
@@ -384,7 +394,7 @@ class TestCrossReferences:
 
     def test_cross_ref_conde_nast_deal_inventory(self, competitor_research):
         """Verify cross-reference to Condé Nast deal inventory mechanism."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         cross_refs = findings.get("cross_references", [])
 
         # Should reference Condé Nast deal inventory or Google zero-distribution dependency
@@ -401,7 +411,7 @@ class TestSourceVerification:
 
     def test_press_ranger_study_source(self, competitor_research):
         """Verify Press Ranger/OtterlyAI study is cited with URL."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         sources = findings.get("source_urls", [])
 
         has_study = any("netlify" in s or "otterly" in s or "pressranger" in s for s in sources)
@@ -409,7 +419,7 @@ class TestSourceVerification:
 
     def test_lynch_interview_source(self, competitor_research):
         """Verify Lynch interview is cited with URL."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         sources = findings.get("source_urls", [])
 
         has_lynch = any("ppc.land" in s or "opentools" in s for s in sources)
@@ -417,7 +427,7 @@ class TestSourceVerification:
 
     def test_adweek_events_source(self, competitor_research):
         """Verify Adweek events revenue article is cited."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         sources = findings.get("source_urls", [])
 
         has_adweek = any("adweek" in s for s in sources)
@@ -425,7 +435,7 @@ class TestSourceVerification:
 
     def test_google_coercion_source(self, competitor_research):
         """Verify Google coercion reporting is cited."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         sources = findings.get("source_urls", [])
 
         has_coercion = any("pymnts" in s or "information" in s for s in sources)
@@ -433,6 +443,6 @@ class TestSourceVerification:
 
     def test_minimum_source_count(self, competitor_research):
         """Verify at least 5 source URLs are provided."""
-        findings = competitor_research.get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
+        findings = competitor_research.get("publications", {}).get("conde_nast_post_search_openai_citation_dependency_financial_architecture", {})
         sources = findings.get("source_urls", [])
         assert len(sources) >= 5, f"Need 5+ sources, found {len(sources)}"

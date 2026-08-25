@@ -1,7 +1,7 @@
 """
 Daniel Cooper (Engadget/Yahoo) Within-Review Cross-Entity Privacy Benchmark Inversion
 
-MECHANISM #293: Within-review comparative framing creates a systematic privacy
+MECHANISM #295: Within-review comparative framing creates a systematic privacy
 hierarchy where Meta's camera-equipped smart glasses serve as the negative
 baseline, while a competitor device with arguably MORE invasive always-on
 ambient audio recording receives product-defect framing rather than

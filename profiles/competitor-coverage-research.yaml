@@ -28009,7 +28009,8 @@ publications:
       - mechanism_id: 22
         description: WSJ OpenAI ad cannibalization self-demonetization paradox
 
-  - mechanism_id: 288
+  wsj_amrith_ramkumar_data_retention_vocabulary_bifurcation:
+    mechanism_id: 288
     mechanism_number: 288
     title: "WSJ Data Practice Vocabulary Gradient — OpenAI Aspirational, Anthropic Mild, Meta Alarm"
     publication: Wall Street Journal
@@ -28206,7 +28207,8 @@ publications:
       - "Gizmodo Meta (Oct 2025): https://gizmodo.com/meta-instagram-facebook-whatsapp-ai-chat-history-targeted-ads-2000666133"
       - "Engadget Meta (Oct 2025): https://www.engadget.com/ai/meta-will-soon-use-ai-chats-for-ad-targeting-because-of-course-it-will-153319626.html"
     test_file: "tests/test_gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation_aug24.py"
-  - mechanism_id: 292
+  chandra_steele_android_police_cross_entity_camera_privacy_displacement:
+    mechanism_id: 292
     name: "Chandra Steele cross-entity camera wearable privacy responsibility displacement"
     type: "journalist_cross_entity_tracking"
     journalist: "Chandra Steele"
@@ -28281,7 +28283,8 @@ publications:
       - "Jonny Evans, Computerworld (Dec 19, 2024): https://www.computerworld.com/article/3628652/if-meta-prevails-against-apple-in-europe-ai-surveillance-will-be-a-feature-not-a-bug.html"
     test_file: "tests/test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py"
 
-  - mechanism_id: 293
+  daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion:
+    mechanism_id: 295
     name: "Daniel Cooper Engadget Within-Review Cross-Entity Privacy Benchmark Inversion"
     type: "journalist_cross_entity"
     journalist: "Daniel Cooper"
