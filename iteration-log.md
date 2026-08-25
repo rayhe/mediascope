@@ -273,7 +273,7 @@ premise.
 **Cross-references:** 4 (#33, #171, #257, #140)
 **Confounders:** 3 (2 MODERATE, 1 WEAK)
 **Test corpus:** 578 test files
-**Pushed to GitHub:** (pending)
+**Pushed to GitHub:** ✓
 
 ---
 
