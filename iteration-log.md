@@ -1,3 +1,65 @@
+## Iteration #285 — Tue 2026-08-25 09:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Anthropic $10B+ Pre-IPO Credit Facility — Bank Multiplication Coverage Incentive Amplification
+
+**New Mechanism #302:** Anthropic's $10B+ pre-IPO revolving credit facility
+(Bloomberg/Reuters, Aug 18-19 2026) functions as a bank audition for IPO underwriting
+roles, multiplying the number of financial institutions with structural incentive
+for favorable Anthropic coverage from 4 lead underwriters to an estimated 12-19 banks.
+
+**Core finding — credit facility as IPO audition:**
+Banks commit $1.25B (top tier), $1B (mid tier), or $750M (lower tier) to the
+revolving credit facility explicitly to strengthen their case for IPO underwriting
+roles. Lending revenue (~$7M/yr per bank) is a 7:1 loss leader vs. IPO fee
+allocation (~$50M+ per bank). Journal of Finance study: companies with pre-IPO
+banking relationships experienced ~17% less IPO underpricing.
+
+**New financial data captured in competitor-entities.yaml:**
+- Credit facility tier structure (3 tiers with commitment amounts)
+- Implied bank count: 8-15+ institutions (up from 4 lead underwriters)
+- H1 2026 booked revenue: $16.2B (Q1 $4.73B + Q2 >$11.5B)
+- First quarterly operating profit: $559M estimated in Q2 2026
+- 2028 revenue projection: $190-200B (Reuters, Aug 15)
+- IPO filing timeline: end of August at $2T valuation
+- Revenue growth: $9B (end 2025) → $65B ARR (Jul 2026) — 7x in 7 months
+
+**Coverage incentive chain:**
+Credit facility banks → want IPO roles → need Anthropic IPO to succeed →
+need positive AI lab narrative → bank equity research shapes financial
+publication coverage → tech publications frame Anthropic vs Meta.
+
+**Meta asymmetry:** Meta generates ZERO current IPO fees, ZERO credit facility
+revenue, ZERO underwriter relationship premium for any bank. Every major bank
+has financial interest in Anthropic success; none in favorable Meta coverage.
+
+**Extends mechanisms:** #35 (pre-IPO underwriter convergence, 4 banks → 12-19),
+#21 (research laundering pipeline amplified), #294 (compounds CN post-search
+OpenAI dependency with parallel banking channel).
+
+**Files changed:**
+- `profiles/competitor-coverage-research.yaml` (mechanism #302 added to cross_publication_findings)
+- `profiles/competitor-entities.yaml` (Anthropic credit facility tier structure, H1 revenue,
+  Q2 operating profit, 2028 revenue projection, IPO filing timeline update)
+- `tests/test_anthropic_credit_facility_bank_multiplication_coverage_incentive_amplification_aug25.py`
+  (NEW — 8 classes, 42 tests)
+- `README.md` (file count 604→605)
+- `docs/ARCHITECTURE.md` (file count 604→605)
+
+**Tests added:** 42 (8 classes)
+- TestMechanismStructure (7 tests)
+- TestCreditFacilityFinancialArchitecture (7 tests)
+- TestRevenueTrajectoryValidation (5 tests)
+- TestBankMultiplicationCoverageIncentive (5 tests)
+- TestIPOFilingTimeline (4 tests)
+- TestConfounders (5 tests)
+- TestCrossReferences (4 tests)
+- TestSourceVerification (5 tests)
+
+**Test corpus:** 605 test files
+**Max mechanism_id:** 302
+
+---
+
 ## Iteration #284 — Tue 2026-08-25 08:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Moinak Pal (Digital Trends) Cross-Entity Camera Wearable Reputation Transfer Framing

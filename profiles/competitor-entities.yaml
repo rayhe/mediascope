@@ -692,9 +692,47 @@ entities:
         where it was at the start of the year (~$9B).'
       pre_ipo_credit_facility_b: 10
       pre_ipo_credit_facility_note: Revolving credit facility expected to exceed $10B target (Bloomberg, Aug 19 2026). Banks
-        jockeying for larger commitments hoping to secure IPO roles. Most active arranging banks committed ~$1.25B each; second
-        tier ~$1B. Anthropic could limit size to target or below.
+        jockeying for larger commitments hoping to secure IPO roles. Expanded from original $2.5B target.
       pre_ipo_credit_facility_source: https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+      pre_ipo_credit_facility_tier_structure:
+        tier_1_commitment_b: 1.25
+        tier_1_description: Most active arranging banks
+        tier_2_commitment_b: 1.0
+        tier_2_description: Active lenders (second tier)
+        tier_3_commitment_b_max: 0.75
+        tier_3_description: Less active roles
+        implied_bank_count_range: 8-15+
+        implied_bank_count_note: 'At $10B+ facility with $750M-$1.25B per bank, minimum 8 banks
+          (all tier 1) to maximum 15+ banks (mixed tiers). Each bank is financially incentivized
+          to support Anthropic IPO success. Lex Substack analysis: Journal of Finance study found
+          companies with pre-IPO banking relationships experienced ~17% less IPO underpricing.
+          Credit facility annual revenue per bank ~$7M vs IPO fee allocation ~$50M — lending is
+          a 7:1 loss leader for IPO access.'
+        source_urls:
+        - https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+        - https://lex.substack.com/p/ai-wall-street-is-lending-10b-to
+        - https://financefeeds.com/anthropic-could-file-for-ipo-by-end-of-august-aiming-to-match-or-exceed-spacexs-record/
+      h1_2026_booked_revenue_b: 16.2
+      h1_2026_booked_revenue_note: 'Q1 $4.73B + Q2 >$11.5B (Bloomberg company documents). Both figures
+        preliminary and subject to revision. Booked revenue (actual) vs ARR (projected) distinction critical.'
+      h1_2026_booked_revenue_source: https://memeburn.com/anthropics-revenue-run-rate-hit-65-billion-heres-what-that-number-actually-measures/
+      q2_2026_estimated_operating_profit_m: 559
+      q2_2026_operating_profit_note: First quarterly operating profit in company history. Revenue more
+        than doubled QoQ. Signals path to profitability ahead of IPO.
+      q2_2026_operating_profit_source: https://www.tradingview.com/news/benzinga:e3a9d0a3e094b:0-anthropic-s-revenue-could-soar-from-47-billion-to-200-billion-by-2028-as-bankers-build-a-massive-ai-valuation-case-ahead-of-its-ipo-report/
+      revenue_2028_projection_b: 190-200
+      revenue_2028_projection_note: 'Bankers using enterprise value-to-revenue multiples based on 2028
+        forecasts (Reuters, Aug 15). Looking two years ahead is "less typical" but reflects speed of
+        expansion. Comp multiples: Palantir 53x 2026 rev, Cloudflare 41.6x, SpaceX 41.6x.'
+      revenue_2028_projection_source: https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
+      ipo_filing_timeline_update:
+        public_filing_target: end of August 2026
+        public_filing_source: https://en.sedaily.com/international/2026/08/21/anthropic-to-file-for-ipo-this-month-at-2-trillion-value
+        valuation_target_t: 2
+        valuation_range_note: 'Investor estimates range $965B (Series H mark) to $2T (FT, 6 investors).
+          End-of-August filing would put public S-1 in market weeks before target October listing.
+          S-1 will be FIRST public disclosure of publisher content licensing deal financials for
+          any frontier AI company.'
       pre_ipo_investor_meetings:
         led_by: CFO Krishna Rao
         start_date: mid-August 2026
