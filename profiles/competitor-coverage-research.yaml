@@ -30162,3 +30162,163 @@ publications:
     - https://ie.radio.net/podcast/thevergecast
     - https://ivy.fm/podcast/the-vergecast-617111
     test_file: tests/test_type_e_05am_vergecast_reading_list_camera_wearable_vocabulary_curation_aug25.py
+  fast_company_dan_clay_panopticon_infrastructure_meta_exclusive_surveillance_narrative:
+    mechanism_id: 300
+    name: Fast Company Dan Clay Panopticon Infrastructure Framing Meta-Exclusive Surveillance Narrative
+      Apple Camera Wearable Omission
+    type: journalist_cross_entity
+    journalist: Dan Clay
+    publication: Fast Company (Mansueto Ventures)
+    date_documented: '2026-08-25'
+    article_title: Meta's creepy smart glasses are part of a much bigger plan
+    article_date: '2026-08-24'
+    article_url: https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+    description: 'Dan Clay published a ~1,500-word piece framing Meta''s entire ecosystem as a surveillance
+      infrastructure with smart glasses as the latest tool. The article deploys panopticon metaphor (comparing
+      Zuckerberg''s Irish castle to a panopticon), imports the Guardian ''pervert glasses'' stigma label,
+      and uses exclusively alarm vocabulary (''creepy'', ''algorithm chow'', ''forfeiture of privacy'',
+      ''captive to Meta''s digital infrastructure'', ''nonconsensual content'', ''ubiquitous, networked
+      cameras''). Zero positive use cases mentioned (no accessibility, translation, navigation). The surveillance
+      infrastructure analysis should logically apply to any company building camera wearables with AI
+      data processing, but applies exclusively to Meta. Apple''s camera-equipped AirPods (leaked macOS
+      code confirmed Aug 18, 2026, with always-on passive camera mode), Apple smart glasses (N50, confirmed
+      Bloomberg), Google/Samsung Android XR camera glasses (fall 2026), and Snap Spectacles (5th gen,
+      dual cameras, $2,195) receive zero mention. The same publication published protective framing for
+      Apple Vision Pro cameras: ''impressive privacy protections worth calling out,'' ''you don''t have
+      to worry.'' Mansueto Ventures (Fast Company parent, founded by Joe Mansueto of Morningstar) relies
+      heavily on Apple advertising and Apple News distribution.
+
+      '
+    meta_alarm_vocabulary:
+    - term: creepy
+      location: headline + body
+      count: 2
+    - term: pervert glasses
+      location: body
+      origin: Guardian stigma label import
+      count: 1
+    - term: panopticon
+      location: body
+      context: Zuckerberg Irish castle compared to panopticon; ordinary people surrendering privacy
+      count: 1
+    - term: algorithm chow
+      location: body
+      context: frames users as livestock for AI models
+      count: 1
+    - term: forfeiture of privacy
+      location: body
+      context: Meta hardware ownership = privacy surrender
+      count: 1
+    - term: captive to Meta's digital infrastructure
+      location: body
+      count: 1
+    - term: nonconsensual content
+      location: body
+      context: bystanders captured without consent
+      count: 1
+    - term: ubiquitous, networked cameras
+      location: body
+      context: surveillance infrastructure framing
+      count: 1
+    meta_alarm_term_count: 9
+    meta_positive_use_cases: 0
+    positive_use_cases_omitted:
+    - accessibility
+    - translation
+    - navigation
+    - hands-free communication
+    - live captioning
+    entities_compared:
+    - entity: Meta
+      product: Ray-Ban Meta smart glasses
+      alarm_terms: 9
+      positive_framing: 0
+      external_critics_cited: true
+      framing: surveillance_infrastructure
+    - entity: Apple
+      product: Camera-equipped AirPods (leaked Aug 18 2026) + N50 smart glasses (Bloomberg confirmed)
+      alarm_terms: 0
+      mentioned: false
+      note: Apple building always-on passive camera mode AirPods and camera smart glasses — functionally
+        identical to Meta egocentric data use case
+    - entity: Google/Samsung
+      product: Android XR camera glasses (fall 2026 launch)
+      alarm_terms: 0
+      mentioned: false
+    - entity: Snap
+      product: Spectacles 5th gen ($2,195, dual cameras)
+      alarm_terms: 0
+      mentioned: false
+    cross_publication_apple_coverage:
+      article_title: Can Apple see what you're doing when you wear your Vision Pro?
+      article_date: '2024-06-01'
+      publication: Fast Company
+      framing: protective
+      key_phrases:
+      - impressive privacy protections worth calling out
+      - you don't have to worry
+      context: Same publication, same product category (camera-equipped face-worn computer), opposite
+        framing direction
+    mansueto_ventures_financial_context:
+      parent_company: Mansueto Ventures
+      founder: Joe Mansueto (Morningstar founder)
+      apple_advertising_dependency: significant
+      apple_news_distribution: significant
+      google_advertising_dependency: significant
+      meta_advertising_dependency: minimal
+    panopticon_analysis:
+      metaphor_applied_to: Meta exclusively
+      logical_scope: any company deploying camera wearables with AI processing
+      entities_that_should_qualify:
+      - Meta (shipping camera glasses)
+      - Apple (building camera AirPods with always-on mode + N50 camera glasses)
+      - Google/Samsung (Android XR camera glasses fall 2026)
+      - Snap (Spectacles 5th gen with dual cameras)
+      asymmetry: panopticon metaphor directed solely at one of four+ companies building camera wearables
+    egocentric_data_equivalence:
+      meta_term: egocentric data / contextualized AI
+      article_framing: sinister
+      apple_equivalent: camera AirPods passive mode + on-device AI processing
+      google_equivalent: Android XR glasses AI features
+      functional_difference: none — all use first-person camera data for AI context
+    confounders:
+    - strength: STRONG
+      description: Meta is currently the only company SHIPPING camera glasses at scale — others are
+        pre-launch or limited availability
+    - strength: STRONG
+      description: Meta has a documented history of privacy controversies (Cambridge Analytica, FTC
+        consent decree) that legitimately warrants elevated scrutiny
+    - strength: MODERATE
+      description: Apple AirPods cameras are low-resolution AI context sensors, not 12MP photo/video
+        — though privacy concern is about observation, not image quality
+    - strength: MODERATE
+      description: Article may be responding to specific recent Meta glasses incidents (workplace
+        surveillance reports) rather than conducting category-wide analysis
+    - strength: WEAK
+      description: Competitor products are pre-launch — no scandals possible on unreleased products
+    - strength: WEAK
+      description: Fast Company may lack the technical staff to evaluate unreleased Apple/Google hardware
+    asymmetry_score: 0.73
+    cross_references:
+    - mechanism_id: 213
+      relationship: complements
+      description: Complements Mia Sato Verge vocabulary bifurcation — both apply surveillance infrastructure
+        framing exclusively to Meta while omitting identical competitor products
+    - mechanism_id: 297
+      relationship: complements
+      description: Complements Katie Couric mainstream expert authority mechanism — both direct category-wide
+        camera wearable privacy concerns exclusively at Meta
+    - mechanism_id: 295
+      relationship: extends
+      description: Extends Cooper Engadget cross-entity pattern — within-article Meta-exclusive negative
+        benchmarking while competitor camera wearables receive zero scrutiny
+    sources:
+    - 'Dan Clay, Fast Company (Aug 24, 2026): https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan'
+    - 'Fast Company (Jun 2024): Can Apple see what you''re doing when you wear your Vision Pro? — protective
+      framing for Apple camera wearable'
+    - 'Mark Gurman, Bloomberg (2026): Apple N50 smart glasses confirmation'
+    - '9to5Mac / leaked macOS code (Aug 18, 2026): Apple camera-equipped AirPods with always-on passive
+      camera mode'
+    - 'Google I/O 2025 + Samsung partnership: Android XR camera glasses fall 2026 launch'
+    - 'Snap (2025): Spectacles 5th generation, $2,195, dual cameras'
+    test_file: tests/test_fast_company_dan_clay_panopticon_infrastructure_meta_exclusive_surveillance_narrative_aug25.py

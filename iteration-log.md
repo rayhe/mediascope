@@ -10380,3 +10380,27 @@ gap) and #97 (Reece Rogers entity-selective privacy investigation routing)
   - Jonny Evans, Computerworld (Jul 27, 2026): https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html
   - Jonny Evans, Computerworld (Dec 19, 2024): https://www.computerworld.com/article/3628652/if-meta-prevails-against-apple-in-europe-ai-surveillance-will-be-a-feature-not-a-bug.html
 - **Corpus:** 597 test files, ~20,314+ tests
+
+## Iteration #284 — Tue 2026-08-25 07:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Fast Company Dan Clay — Panopticon Infrastructure Meta-Exclusive Surveillance Narrative
+
+**Journalist:** Dan Clay (Fast Company)
+
+**Finding — Mechanism #300:** Dan Clay published "Meta's creepy smart glasses are part of a much bigger plan" (Aug 24, 2026) — a ~1,500-word surveillance-infrastructure analysis deploying 9 alarm-vocabulary terms (creepy, pervert glasses, panopticon, algorithm chow, forfeiture of privacy, captive to Meta's digital infrastructure, nonconsensual content, ubiquitous networked cameras) with zero positive use cases mentioned.
+
+Key asymmetry: The article's "egocentric data" and "contextualized AI" framing — presented as sinister — describes the exact stated goals of:
+- Apple's camera-equipped AirPods (leaked Aug 18, always-on passive camera mode) and N50 smart glasses: NOT MENTIONED
+- Google/Samsung Android XR camera glasses (fall 2026): NOT MENTIONED
+- Snap Spectacles 5th gen (dual cameras, $2,195): NOT MENTIONED
+
+Same publication's Apple Vision Pro coverage uses protective framing: "impressive privacy protections worth calling out," "you don't have to worry." Mansueto Ventures (Fast Company parent) relies heavily on Apple advertising and Apple News distribution.
+
+**Asymmetry score:** 0.73
+**Confounders:** 2 STRONG (Meta is only company shipping camera glasses at scale; Meta has documented privacy controversy history), 2 MODERATE, 2 WEAK
+**Cross-references:** #213 (Mia Sato Verge vocabulary bifurcation), #297 (Katie Couric expert authority), #295 (Cooper Engadget cross-entity)
+
+**New test file:** `test_fast_company_dan_clay_panopticon_infrastructure_meta_exclusive_surveillance_narrative_aug25.py` (48 tests, 7 classes)
+**Corpus:** 603 test files, 300 documented mechanisms
+
+**Source:** https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
