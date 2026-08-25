@@ -1,3 +1,66 @@
+## Iteration #279 — Tue 2026-08-25 02:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Daniel Cooper (Engadget/Yahoo) Within-Review Cross-Entity Privacy Benchmark Inversion
+
+**Journalist:** Daniel Cooper, Engadget senior editor
+**Publication:** Engadget (Yahoo subsidiary)
+
+**Core Finding — Mechanism #293:**
+Daniel Cooper at Engadget reviews exclusively non-Meta smart glasses (Even Realities G1,
+Halliday, XGIMI MemoMind One) while Karissa Bell handles all Meta smart glasses reviews
+(Gen 1, Gen 2, Display). Within his competitor reviews, Cooper invokes Meta as a negative
+privacy benchmark, creating a systematic vocabulary hierarchy:
+
+- **XGIMI MemoMind One (Jun 2026, 7.4/10):** Always-on microphone recording everything
+  continuously. Cooper calls the Moments feature "so self-evidently creepy, I can't believe
+  anyone at the company thought it was wise to include" and describes it as "dystopian." But:
+  - Zero external privacy authorities cited (no EFF, no senators, no FTC, no wiretapping laws)
+  - Score: 7.4/10 despite "dystopian" label
+  - Framing: product defect in an otherwise good product
+  - Aspirational close: "the company that perfects this form factor and makes it broadly
+    affordable is going to dominate the smart glasses world far more than Meta ever will"
+
+- **Meta (comparative references within same review):**
+  - "I object to the concept of walking around with a camera attached to my face"
+  - Meta positioned as entity to be surpassed, not emulated
+  - No acknowledgment of Meta's privacy remediation (LED tamper detection, v26 update)
+
+**The practice inversion:** XGIMI's always-on ambient audio recording is arguably MORE
+invasive than Meta's user-activated camera with LED indicator — it records continuously,
+captures bystander conversations, and TechTimes reported it creates wiretapping problems
+in 12 states. Yet Cooper's framing treats XGIMI's surveillance as a fixable product
+defect and Meta's camera as an inherent problem.
+
+**Beat assignment structure:** Engadget's editorial division prevents any single reviewer
+from applying consistent privacy standards across Meta and non-Meta products. Cooper never
+writes Meta reviews; Bell never writes competitor reviews. Readers cannot compare one
+reviewer's standards across entities.
+
+**Confounders:** 4 documented (1 STRONG: visual vs. audio perception difference;
+2 MODERATE: Meta's scale + privacy history; 1 WEAK: newcomer leniency)
+
+**Asymmetry score:** 0.67
+
+**Files changed:**
+- `tests/test_daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion_aug25.py` (NEW — 27 tests, 9 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #293 added)
+- `README.md` (test file count updated)
+- `iteration-log.md` (this entry)
+
+**Tests added:** 27 (9 classes)
+- TestCorePracticeComparison (5 tests)
+- TestWithinReviewMetaBenchmarkInversion (4 tests)
+- TestPrivacyVocabularyGradient (3 tests)
+- TestExternalAuthorityAsymmetry (3 tests)
+- TestBeatAssignmentStructure (3 tests)
+- TestAspirationInversionPattern (3 tests)
+- TestConfounders (4 tests)
+- TestAsymmetryScoring (2 tests)
+
+**Test corpus:** 600 test files
+
+---
+
 ## Iteration #278 — Mon 2026-08-24 23:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: Gizmodo Cross-Entity AI Chat Ad Targeting Vocabulary Bifurcation

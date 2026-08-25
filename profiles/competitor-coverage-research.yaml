@@ -28280,3 +28280,39 @@ publications:
       - "Jonny Evans, Computerworld (Jul 27, 2026): https://www.computerworld.com/article/4201828/the-best-thing-about-apples-smart-glasses-what-cupertino-rejects.html"
       - "Jonny Evans, Computerworld (Dec 19, 2024): https://www.computerworld.com/article/3628652/if-meta-prevails-against-apple-in-europe-ai-surveillance-will-be-a-feature-not-a-bug.html"
     test_file: "tests/test_jonny_evans_computerworld_appleholic_cross_entity_privacy_champion_vocabulary_bifurcation_aug25.py"
+
+  - mechanism_id: 293
+    name: "Daniel Cooper Engadget Within-Review Cross-Entity Privacy Benchmark Inversion"
+    type: "journalist_cross_entity"
+    journalist: "Daniel Cooper"
+    publication: "Engadget (Yahoo)"
+    date_documented: "2026-08-25"
+    description: >
+      Cooper reviews exclusively non-Meta smart glasses at Engadget while invoking Meta as
+      a negative privacy benchmark within those reviews. In his XGIMI MemoMind One review,
+      he calls always-on ambient audio recording 'self-evidently creepy' and 'dystopian' but
+      gives it 7.4/10 with zero external privacy authority citations. Meanwhile, Meta's
+      user-activated camera with LED indicator is framed as inherently objectionable ('I object
+      to the concept of walking around with a camera attached to my face'). The close positions
+      non-Meta as the future ('going to dominate...far more than Meta ever will'). Beat
+      assignment structure: Cooper handles all non-Meta glasses, Karissa Bell handles all Meta
+      glasses -- no single reviewer applies consistent standards across entities.
+    entities_compared:
+      - "XGIMI (MemoMind One)"
+      - "Meta (Ray-Ban smart glasses)"
+    beat_assignment_context: >
+      Engadget editorial division: Cooper = non-Meta smart glasses (Even Realities G1, Halliday,
+      XGIMI MemoMind One); Karissa Bell = Meta smart glasses (Gen 1, Gen 2, Display). Structural
+      separation prevents same-reviewer cross-entity comparison.
+    confounders:
+      - "STRONG: Visual capture of identifiable faces may feel inherently more invasive than audio"
+      - "MODERATE: Meta's larger user base magnifies societal impact of camera misuse"
+      - "MODERATE: Meta has longer privacy controversy history (Cambridge Analytica, FTC consent decree)"
+      - "WEAK: XGIMI newcomer status may receive more lenient scrutiny"
+    asymmetry_score: 0.67
+    sources:
+      - "Daniel Cooper, Engadget (Jun 2026): https://www.engadget.com/2196666/xgimi-memomind-one-review/"
+      - "TechTimes (Jun 29, 2026): http://www.techtimes.com/articles/319319/20260629/xgimi-memomind-one-camera-free-smart-glasses-create-wiretapping-problem-twelve-states.htm"
+      - "Karissa Bell, Engadget (Oct 2023): https://www.engadget.com/ray-ban-meta-smart-glasses-review-instagram-worthy-shades-070010365.html"
+      - "Karissa Bell, Engadget (Oct 2025): https://www.engadget.com/wearables/meta-ray-ban-display-review-chunky-frames-with-impressive-abilities-193127070.html"
+    test_file: "tests/test_daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion_aug25.py"
