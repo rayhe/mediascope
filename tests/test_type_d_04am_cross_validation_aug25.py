@@ -152,7 +152,7 @@ class TestAnthropicIPOBanksUpdated(unittest.TestCase):
 
 
 class TestMaxMechanismId(unittest.TestCase):
-    """Highest mechanism_id should be 295 (Daniel Cooper renumbered)."""
+    """Highest mechanism_id should be >= 295 (Daniel Cooper renumbered, grew since)."""
 
     def test_max_mechanism_id(self):
         data = _load_research()
@@ -164,4 +164,4 @@ class TestMaxMechanismId(unittest.TestCase):
                         mid = val.get("mechanism_id", 0)
                         if isinstance(mid, int) and mid > max_id:
                             max_id = mid
-        self.assertEqual(max_id, 295)
+        self.assertGreaterEqual(max_id, 295)

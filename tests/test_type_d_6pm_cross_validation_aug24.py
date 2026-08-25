@@ -82,16 +82,16 @@ class TestDocTestCountSync(unittest.TestCase):
     """Verify README and ARCHITECTURE reflect current test counts."""
 
     def test_readme_test_count_updated(self):
-        """README should reflect ~20,477+ tests."""
+        """README should reflect ~20,521+ tests."""
         with open(os.path.join(BASE_DIR, "README.md")) as f:
             content = f.read()
-        assert "20,477" in content, "README test count should reference 20,477"
+        assert "20,521" in content, "README test count should reference 20,521"
 
     def test_architecture_test_count_updated(self):
-        """ARCHITECTURE.md should reflect ~21,454+ tests."""
+        """ARCHITECTURE.md should reflect ~21,476+ tests."""
         with open(os.path.join(BASE_DIR, "docs", "ARCHITECTURE.md")) as f:
             content = f.read()
-        assert "21,454" in content, "ARCHITECTURE test count should reference 21,454"
+        assert "21,476" in content, "ARCHITECTURE test count should reference 21,476"
 
     def test_file_count_is_590(self):
         """Should have at least 590 test files (589 existing + this one)."""
