@@ -10049,3 +10049,25 @@ gap) and #97 (Reece Rogers entity-selective privacy investigation routing)
 
 **Test corpus:** 594 test files
 **Pushed to GitHub:** (pending)
+
+---
+
+### Iteration #283 — Tue 2026-08-25 22:00 PT
+**Type:** B — Journalist Cross-Entity Tracking
+
+**Journalist:** Chandra Steele (Android Police / Valnet)
+
+**Finding — Mechanism #292:** Privacy Responsibility Displacement. Same journalist covers structurally identical camera-on-face smart glasses (12MP camera, microphones, AI assistant) with radically different vocabulary depending on manufacturer identity.
+
+- **Meta (Jul 8, 2026):** "covert filming," "women's safety remains an issue," "surveillance," "unsettling," "harass women," "ploy that has largely backfired." Meta's motivations explicitly questioned.
+- **Google/Samsung (May 19, 2026):** "Intelligent Eyewear" (Google's marketing term adopted verbatim), "absolutely dominates," "creative class," "everything that's expected." Privacy section displaces ALL responsibility to Meta: "Because the glasses, like the Meta Ray-Bans before them, look so much like regular eyewear, they pose the same privacy issues."
+- **Meta Connect (Sep 17, 2025):** Even positive coverage leads with failure verb "bomb."
+
+**Cross-entity score:** 0.78
+**Confounders:** MODERATE (Meta had prior incidents; different news pegs) + WEAK (time gap; Android-ecosystem alignment)
+**Extends:** mechanisms #119 (Android Police per-click coverage selection), #140 (Andy Boxall cross-entity vocabulary inversion)
+
+**New test file:** `test_chandra_steele_android_police_cross_entity_camera_wearable_privacy_responsibility_displacement_aug25.py` (39 assertions)
+**Corpus:** 597 → 598 test files, ~292 documented mechanisms
+
+**Pushed to GitHub:** (pending)

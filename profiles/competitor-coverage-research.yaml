@@ -28206,3 +28206,43 @@ publications:
       - "Gizmodo Meta (Oct 2025): https://gizmodo.com/meta-instagram-facebook-whatsapp-ai-chat-history-targeted-ads-2000666133"
       - "Engadget Meta (Oct 2025): https://www.engadget.com/ai/meta-will-soon-use-ai-chats-for-ad-targeting-because-of-course-it-will-153319626.html"
     test_file: "tests/test_gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation_aug24.py"
+  - mechanism_id: 292
+    name: "Chandra Steele cross-entity camera wearable privacy responsibility displacement"
+    type: "journalist_cross_entity_tracking"
+    journalist: "Chandra Steele"
+    publication: "Android Police (Valnet)"
+    entity_a: "Meta"
+    entity_b: "Google/Samsung"
+    entity_a_article:
+      title: "Meta updates smart glasses to curb covert filming, but women's safety remains an issue"
+      date: "2026-07-08"
+      url: "https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/"
+    entity_b_article:
+      title: "Google shows off Intelligent Eyewear with partners Gentle Monster and Warby Parker"
+      date: "2026-05-19"
+      url: "https://www.androidpolice.com/google-shows-off-intelligent-eyewear-with-partners-gentle-monster-and-warby-parker/"
+    cross_entity_score: 0.78
+    mechanism_description: >
+      Privacy Responsibility Displacement: When covering a competitor's structurally
+      identical camera-on-face product, the journalist attributes ALL privacy concerns
+      to Meta's product rather than independently assessing the competitor's identical
+      capability. Google/Samsung's 12MP camera is 'everything that's expected' while
+      Meta's 12MP camera enables 'covert filming' and 'surveillance.'
+    vocabulary_comparison:
+      meta: ["covert filming", "women's safety", "surveillance", "unsettling", "backlash", "harass women", "ploy", "backfired"]
+      google_samsung: ["Intelligent Eyewear", "absolutely dominates", "creative class", "affordable", "everything that's expected"]
+    confounders:
+      - strength: MODERATE
+        factor: "Meta had documented privacy incidents before Google launch; Google/Samsung had zero"
+      - strength: MODERATE
+        factor: "Different news pegs: Google I/O announcement vs Meta privacy-responsive update"
+      - strength: WEAK
+        factor: "7-week time gap between articles"
+      - strength: WEAK
+        factor: "Android Police platform alignment with Google/Android ecosystem"
+    extends_mechanisms: [119, 140]
+    sources:
+      - "Chandra Steele, Android Police (Jul 8, 2026): https://www.androidpolice.com/meta-updates-smart-glasses-to-curb-covert-filming-but-womens-safety-remains-an-issue/"
+      - "Chandra Steele, Android Police (May 19, 2026): https://www.androidpolice.com/google-shows-off-intelligent-eyewear-with-partners-gentle-monster-and-warby-parker/"
+      - "Chandra Steele, Android Police (Sep 17, 2025): https://www.androidpolice.com/metas-latest-ray-bans-bomb-their-live-demo-but-hold-promise/"
+    test_file: "tests/test_chandra_steele_android_police_cross_entity_camera_wearable_privacy_responsibility_displacement_aug25.py"
