@@ -111,6 +111,17 @@ entities:
     advertising_business:
       launched: 2026-01
       ads_manager_launched: 2026-04
+      european_expansion_31_countries: 2026-08-24
+      european_expansion_countries_include: 'Germany, France, Spain, Italy, Sweden, Norway, Denmark,
+        Netherlands, Ireland, Belgium, Austria, Poland, Czech Republic, Portugal + 17 more EEA + Switzerland'
+      total_global_markets: 35
+      eea_legal_basis_contextual: 'legitimate interest (GDPR Art 6(1)(f))'
+      eea_legal_basis_personalized: 'explicit consent (opt-in)'
+      eea_personalization_at_launch: false
+      contextual_targeting_signals: 'conversation topic, approximate city-level location, device type,
+        time of day, language'
+      personalized_targeting_signals: 'ad interaction history, inferred interests, advertiser conversion data'
+      enterprise_cmo: Colin Fleming (ex-ServiceNow, ~80 days in role as of Aug 19)
       pilot_100m_arr_weeks: 6
       advertisers_at_launch: 600
       projected_ad_revenue_2026_b: 2.5
