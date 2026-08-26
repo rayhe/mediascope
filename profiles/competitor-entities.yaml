@@ -9749,11 +9749,12 @@ publisher_entities:
       family_combined_pct: 47
       joe_shares: 14909759
       source: 13G/A Feb 12, 2026
-    notes: Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
+    notes: >-
+      Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
       Standard Google programmatic/search traffic dependency creates structural incentive alignment with Google ecosystem.
       Zero known Meta financial relationships of any kind. Morningstar (Mansueto-controlled) is a Google Cloud Gemini Enterprise
       launch partner (Aug 25, 2026) — revenue-generating commercial partnership with Google, ZERO equivalent Meta partnership.
-      Same-day convergence (Aug 25): Morningstar announces Google partnership; Fast Company publishes adversarial Meta article.
+      Same-day convergence (Aug 25) — Morningstar announces Google partnership; Fast Company publishes adversarial Meta article.
     inc_smart_glasses_privacy_redirected_attribution:
       mechanism_id: 137
       finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google smart glasses competitive

@@ -70,8 +70,10 @@ class TestEditorialCommissioningBifurcation:
         found_type = None
         def search_dict(d):
             nonlocal found_type
+            if found_type:
+                return
             if isinstance(d, dict):
-                if d.get('mechanism_id') == 309:
+                if d.get('mechanism_id') == 309 and 'type' in d:
                     found_type = d.get('type', '')
                     return
                 for v in d.values():
@@ -80,7 +82,7 @@ class TestEditorialCommissioningBifurcation:
                 for item in d:
                     search_dict(item)
         search_dict(data)
-        assert found_type is not None
+        assert found_type is not None, "Mechanism #309 primary definition with 'type' field not found"
         assert 'commissioning' in found_type or 'journalist' in found_type or 'editorial' in found_type
 
 
