@@ -11050,3 +11050,21 @@ This is DISTINCT from Mechanism #211 (Three-Entity Privacy Gradient):
 - 6 James Pero test files (was 5)
 - Mechanism #313 added
 - New test file: test_james_pero_gizmodo_apple_glasses_privacy_minefield_externalization_meta_routing_aug25.py
+
+### Iteration #300 — Wed 2026-08-26 00:00 PT
+
+**Type:** B — Journalist Cross-Entity Tracking
+**Journalist:** David Price, UK Editor, Macworld (Foundry/Regent LP)
+**Mechanism:** #314 — Editorial framing injection with AI summary amplification
+
+**Finding:** Macworld article "Apple eyes WWDC smart glasses launch with a focus on privacy" (Jul 27, 2026) applies the pejorative "controversial" exclusively to Meta despite quoting Gurman (Bloomberg) attributing camera-wearable privacy concerns to Meta, Samsung, AND Google. Samsung and Google receive zero independent adversarial vocabulary. The page's AI-generated summary (explicitly labeled "created by Smart Answers AI") further amplifies the entity-selective framing with "Meta's controversial approach."
+
+**Corrections from draft:** Reframed from "source-material vocabulary injection" to "editorial framing with AI summary amplification." Bloomberg/Gurman primary source was not independently fetched — claims scoped to what the article itself quotes. Removed unsupported assertions about affiliate links being "primary" revenue, Apple advertising funding, and Apple News Plus distribution. Added 6 cited sources.
+
+**Financial architecture:** Macworld covers exclusively Apple products. Revenue includes Apple affiliate commissions. Meta has zero financial relationship. Parent company Foundry (formerly IDG, rebranded Feb 2022) acquired by Regent LP March 2025 (also owns TechCrunch).
+
+### Stats After
+- 1 David Price test file (new)
+- Mechanism #314 added with 6 sources
+- Test: test_david_price_macworld_foundry_apple_ecosystem_advocacy_editorial_framing_injection_aug26.py — 46 tests, all passing
+- Asymmetry score: 0.72

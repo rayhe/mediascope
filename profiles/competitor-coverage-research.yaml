@@ -31644,3 +31644,175 @@ publications:
     test_file: tests/test_james_pero_gizmodo_apple_glasses_privacy_minefield_externalization_meta_routing_aug25.py
     tests_count: 12
     test_classes: 2
+
+  david_price_macworld_foundry_apple_ecosystem_advocacy_editorial_framing_injection:
+    mechanism_id: 314
+    type: journalist_cross_entity_tracking
+    domain: smart_glasses_camera_wearables
+    finding_type: editorial_framing_injection_ai_summary_amplification_cross_entity_polarity
+    publication: Macworld
+    parent_company: Foundry (formerly IDG Communications)
+    parent_owner: Regent LP (private equity, acquired March 2025)
+    journalist: David Price
+    role: UK Editor, Macworld
+    self_description: >-
+      "enthusiastic Apple Watch evangelist" who "got on board the Apple hype
+      train when covering the original iPhone launch in 2007"
+    article_analyzed:
+      title: Apple eyes WWDC smart glasses launch with a focus on privacy
+      url: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+      date: '2026-07-27'
+      source_material: Bloomberg Power On newsletter by Mark Gurman
+    vocabulary_analysis:
+      meta_vocabulary:
+      - controversial (EDITORIAL ADDITION — not in Gurman source)
+      - surveillance
+      - intrusive non-consensual video recording
+      - stealth video recording
+      - controversial approach
+      apple_vocabulary:
+      - pro-privacy reputation
+      - a decade in the making
+      - safeguard
+      - privacy-friendly
+      - drastic measures (framed as Apple taking heroic precautions)
+      samsung_google_vocabulary: []
+      vocabulary_note: >-
+        Samsung and Google mentioned only as having "also" caused wariness,
+        receive zero independent adversarial vocabulary. Only Meta gets the
+        pejorative label. Both Meta and Apple receive five documented vocabulary
+        entries, but the polarity diverges: Meta's are adversarial (surveillance,
+        controversial) while Apple's are aspirational (pro-privacy, safeguard).
+    editorial_framing_injection:
+      gurman_original_framing: >-
+        Descriptive — as quoted in the Macworld article body, products in
+        this field made by "Meta and (to a lesser extent) Samsung and Google
+        have become associated with surveillance." The quoted material uses
+        no pejorative value-judgment label. (Note: Gurman's Bloomberg
+        newsletter was not independently fetched; this assessment is based
+        on the article's own quotation of his language.)
+      price_editorial_addition: >-
+        "The company aims to differentiate from Meta's controversial approach"
+        — the pejorative label appears in the AI-generated summary AND the
+        article body, both authored by Macworld editorial, applied exclusively
+        to Meta.
+      ai_summary_amplification: >-
+        The page explicitly labels its opening summary as "created by Smart
+        Answers AI." That summary uses "Meta's controversial approach" — a
+        sharper editorial label than even the article body's already entity-
+        selective framing. The AI summary distills the article's cross-entity
+        polarity into a condensed frame visible before readers reach the body.
+      amplification_pattern: >-
+        Within the same article, category-wide camera-wearable privacy concerns
+        (which the Gurman quotation attributes to Meta, Samsung, and Google)
+        are editorially narrowed so that only Meta receives the pejorative
+        "controversial" label. Samsung and Google, explicitly named in the
+        quoted source material, are invisible in Price's editorial framing.
+        The AI-generated summary further amplifies this narrowing.
+    cross_entity_headline_comparison:
+      meta_adjacent_headlines:
+      - title: Apple reportedly scraps lighter Vision Pro to focus on Meta glasses killer
+        framing: Meta positioned as target to be killed
+      - title: Apple wrestles with privacy concerns ahead of smart glasses launch
+        framing: Apple wrestles heroically with privacy
+      apple_advocacy_headlines:
+      - title: Apple is right and Samsung was wrong (again)
+        framing: Competitive advocacy with value judgment
+      - title: Apple Watch SE 3 review - Brilliance on a budget
+        framing: Aspirational product language
+      meta_product_when_serving_apple:
+      - title: WhatsApp for iPad no longer requires an iPhone for setup
+        framing: >-
+          Completely neutral — Meta products covered without adversarial
+          vocabulary when they serve Apple ecosystem users
+    financial_architecture:
+      affiliate_revenue: >-
+        Every Macworld article discloses "When you purchase through links in our
+        articles, we may earn a small commission." Apple product affiliate links
+        are a documented revenue stream, though the relative contribution to
+        total revenue is not publicly broken out.
+      publication_scope: >-
+        Macworld covers EXCLUSIVELY Apple products. Its About page lists only
+        Apple product categories (iPhone, iPad, Mac, Apple Watch, Apple TV,
+        HomePod, iOS, macOS)
+      parent_ownership: >-
+        Foundry (formerly IDG Communications, rebranded Feb 2022) was acquired
+        by Regent LP in March 2025. Regent LP also owns TechCrunch under the
+        same portfolio.
+      meta_financial_relationship: none documented
+      google_financial_relationship: >-
+        Google programmatic advertising (standard), but no documented content
+        licensing, AI partnership, or special financial arrangement
+    asymmetry_mechanism: >-
+      Apple-ecosystem publication whose revenue streams (affiliate commissions,
+      advertising) are structurally tied to Apple product coverage. Editor who
+      self-describes as Apple advocate applies pejorative vocabulary ("controversial")
+      exclusively to Meta when covering competitive smart glasses products, while
+      covering Apple aspirationally. The AI-generated summary (explicitly labeled
+      "created by Smart Answers AI") further amplifies this entity-selective framing.
+      Samsung and Google, named alongside Meta in the quoted source material, receive
+      zero independent adversarial vocabulary. This is structural revenue dependency
+      creating permanent editorial alignment, not a documented content deal.
+    confounding_factors:
+    - factor: >-
+        Macworld is an Apple-focused publication; readers expect pro-Apple framing.
+        Editorial advocacy is implicit in the publication's purpose.
+      strength: MODERATE
+    - factor: >-
+        Price may genuinely believe Meta's approach is controversial — the label
+        reflects real-world criticism documented by multiple sources.
+      strength: MODERATE
+    - factor: >-
+        The article does accurately summarize Gurman's key points; the editorial
+        additions are supplementary framing, not factual distortion.
+      strength: MODERATE
+    - factor: >-
+        Price covers Meta products neutrally when they serve Apple users (WhatsApp
+        for iPad) — the adversarial vocabulary is selectively applied to
+        COMPETITIVE products only, suggesting strategic rather than blanket
+        anti-Meta bias.
+      strength: STRONG_AGAINST_CONFOUNDING
+    - factor: >-
+        Gurman explicitly named Samsung and Google alongside Meta as causing
+        camera-wearable wariness, but Price's editorial framing applies
+        "controversial" only to Meta. This selective application rules out
+        the explanation that Price was simply reflecting source material.
+      strength: STRONG_AGAINST_CONFOUNDING
+    asymmetry_score: 0.72
+    sources:
+    - url: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+      description: >-
+        Primary article analyzed. David Price, Macworld, Jul 27 2026. Fetched
+        in full; AI summary at lines 12-21, article body at lines 28-43.
+    - url: https://www.macworld.com/author/David.Price
+      description: >-
+        David Price author page — self-described "enthusiastic Apple Watch
+        evangelist" and Apple "hype train" member.
+    - url: https://www.macworld.com/about
+      description: >-
+        Macworld About page — confirms Foundry ownership and Apple-exclusive
+        product coverage scope.
+    - url: https://martech.org/idg-communications-rebrands-as-foundry-positions-itself-as-a-martech-company/
+      description: >-
+        Foundry rebrand from IDG Communications, martech positioning.
+    - url: https://www.globenewswire.com/news-release/2022/2/17/2387488/0/en/After-Nearly-60-Years-IDG-Communications-Becomes-Foundry.html
+      description: >-
+        Foundry corporate announcement of rebrand from IDG, Feb 2022.
+    - url: https://www.amediaoperator.com/analysis/foundrys-techtarget-like-transformation-ends-in-sale/
+      description: >-
+        Analysis of Regent LP acquisition of Foundry, including TechCrunch
+        portfolio context.
+    cross_references:
+    - mechanism_id: 309
+      description: >-
+        Fast Company editorial commissioning bifurcation — same pattern of
+        editorial process predetermining entity-selective vocabulary
+    - mechanism_id: 289
+      description: >-
+        Cross-publication Apple privacy hero cascade — Apple ecosystem
+        publications amplifying Apple-as-privacy-champion narrative
+    - mechanism_id: 15
+      description: >-
+        Publication-level vocabulary bifurcation — entity-selective vocabulary
+        applied at editorial level
+
