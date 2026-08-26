@@ -32413,3 +32413,89 @@ publications:
       description: UK Cinema Piracy Institutional Cascade
     - mechanism_id: 174
       description: Fast Company UK Cinema Ban Meta-Exclusive Framing
+  wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny:
+    mechanism_id: 321
+    finding_summary: >
+      WSJ (Aug 22, 2026) profiles Anthropic's $1.5B Ode joint venture with Blackstone,
+      Hellman & Friedman, Apollo, General Atlantic, and Goldman Sachs deploying AI
+      engineers into portfolio companies. Case study: Chamberlain Group adding 3M
+      AI-powered cameras to homes (up from 1.7M), with Anthropic Claude providing
+      facial recognition ("recognizing designated people"), behavioral routine learning
+      ("learn a family's routines"), and anomaly detection ("flag deviations"). Projected
+      $500M/yr revenue by 2030. Article contains ZERO privacy vocabulary — no instances
+      of "privacy," "surveillance," "tracking," "monitoring," "creepy," "invasive,"
+      "concern," "risk," "data handling," or "consent" despite describing residential
+      surveillance infrastructure at scale. Same publication applies extensive alarm
+      vocabulary ("surveillance," "privacy invasion," "stumbles," "harm") to Meta's
+      structurally equivalent camera capabilities (glasses with user-activated cameras,
+      on-device processing). Financial architecture: News Corp (WSJ parent) has $250M/5yr
+      OpenAI deal; Anthropic IPO ($2T target) validates AI lab ecosystem supporting
+      News Corp deal renewal terms. Ode backers (Goldman Sachs, Apollo, Blackstone)
+      have overlapping roles as Anthropic IPO underwriters and AI infrastructure
+      financiers.
+    publication: Wall Street Journal
+    parent_company: News Corp
+    entity_pair: Anthropic/Ode vs Meta
+    type: ai_surveillance_vocabulary_bifurcation
+    articles:
+    - title: "Private Equity Is Deploying an Army of AI Wonks to Embed in the Firms They Back"
+      date: "2026-08-22"
+      author: Mark Maurer
+      url: https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+      entity: Anthropic
+      vocabulary_register: ASPIRATIONAL
+      key_terms: ["digital doorman", "smart-access products", "advanced AI features",
+                  "senior engineering team", "immense and growing", "revenue"]
+      privacy_terms_count: 0
+    - title: "Meta Stumbles as Tech Investors Demand Better Answers on AI Spending"
+      date: "2026-07-30"
+      author: Meghan Bobrowsky
+      url: https://www.wsj.com/tech/ai/meta-stumbles-as-tech-investors-demand-better-answers-on-ai-spending-fc731909
+      entity: Meta
+      vocabulary_register: SCRUTINY
+      key_terms: ["stumbles", "demand better answers", "waited in vain", "erasing $140B"]
+    - title: "Big Tech Has Suddenly Flipped on the AI Jobs Wipeout Scenario"
+      date: "2026-07-06"
+      url: https://www.wsj.com/tech/ai/ai-workers-tech-ceos-job-losses-afc71e15
+      entity: Meta (among others)
+      vocabulary_register: SKEPTICAL
+      key_terms: ["wipeout", "flipped", "bad business to say", "in theory"]
+    surveillance_capability_parity:
+      anthropic_ode_cameras:
+        annual_deployment: 3000000
+        facial_recognition: true
+        behavioral_learning: true
+        deviation_alerting: true
+        consent_model: "opt-in homeowner; household members and visitors not consulted"
+      meta_glasses_cameras:
+        cumulative_sales: 7000000
+        facial_recognition: "dormant NameTag code, not activated"
+        always_on: false
+        led_indicator: true
+        consent_model: "user-activated with visible LED"
+    financial_architecture:
+      news_corp_openai_deal: "$250M/5yr (May 2024)"
+      news_corp_meta_deal: "up to $50M/yr (Mar 2026)"
+      news_corp_anthropic_settlement: "share of $1.5B (Jun 2026)"
+      ode_backers_ipo_overlap:
+        goldman_sachs: "Ode backer + Anthropic IPO underwriter + OpenAI IPO underwriter"
+        apollo: "Ode backer + Yahoo/TechCrunch parent"
+        blackstone: "Ode backer + Broadcom $100B AI chip financing"
+    confounders:
+    - "[STRONG] Chamberlain cameras are opt-in; Meta glasses worn in public. However,
+       cameras monitor household visitors and family members who did not consent to AI
+       behavioral monitoring."
+    - "[MODERATE] Meta has longer privacy incident history. However, zero scrutiny for
+       structurally identical capabilities reveals entity-selective analysis."
+    - "[MODERATE] Business/PE article vs consumer tech review. However, 3M cameras at
+       residential scale warrants privacy scrutiny regardless of section."
+    - "[WEAK] Chamberlain/Ode less known. However, WSJ chose to profile extensively;
+       omission of privacy vocabulary was active editorial decision."
+    test_file: tests/test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py
+    cross_references:
+    - mechanism_id: 317
+      description: WSJ Anthropic Pre-IPO Aspirational vs Meta Investment Scrutiny
+    - mechanism_id: 33
+      description: OpenAI Facial Recognition Privacy Parity
+    - mechanism_id: 290
+      description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment

@@ -1,3 +1,88 @@
+## Iteration #309 — Wed 2026-08-26 09:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WSJ Anthropic Ode AI Surveillance Infrastructure Aspirational Framing vs Meta Camera Scrutiny
+
+**Type:** Competitor Coverage Deep Dive
+**Publication + Competitor Pair:** Wall Street Journal (News Corp) × Anthropic/Ode vs Meta
+**Mechanism:** #321 — wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny
+
+**Discovery:** WSJ (Aug 22, 2026, by Mark Maurer) profiled Anthropic's $1.5B Ode joint
+venture with Blackstone, Hellman & Friedman, Apollo, General Atlantic, and Goldman Sachs.
+The article's case study — Chamberlain Group (LiftMaster) — reveals residential AI
+surveillance infrastructure deployed at massive scale with ZERO privacy vocabulary in the
+entire article.
+
+### Chamberlain/Ode/Anthropic Surveillance Capabilities:
+
+| Capability | Description | Meta Equivalent | Meta Coverage Vocabulary |
+|-----------|-------------|----------------|------------------------|
+| Facial recognition | "recognizing designated people" | NameTag (dormant, on-device) | "privacy invasion," "creepy" |
+| Behavioral learning | "learn a family's routines" | Activity tracking | "surveillance," "tracking" |
+| Anomaly detection | "flag deviations to the homeowner" | N/A | N/A |
+| Camera scale | 3M new cameras in 2026 | 7M cumulative glasses | "always-on surveillance" |
+| Revenue model | "$500M/yr by 2030" | Ad-supported | "data harvesting" |
+
+### Vocabulary Bifurcation (same publication):
+
+**Anthropic/Ode (0 privacy terms in article):**
+- "digital doorman," "smart-access products," "advanced AI features"
+- "senior engineering team," "immense and growing," "revenue"
+- "new product lines to drive up revenue"
+- **ZERO instances:** privacy, surveillance, tracking, monitoring, creepy, invasive,
+  concern, risk, data handling, consent
+
+**Meta (extensive alarm vocabulary in same WSJ):**
+- "stumbles," "demand better answers," "waited in vain," "erasing $140B"
+- "wipeout," "flipped," "bad business to say"
+- "surveillance," "privacy," "harm"
+
+### Non-Consenting Surveillance Finding:
+
+The Chamberlain cameras deploy AI behavioral monitoring that learns household routines
+and flags deviations — monitoring not just the homeowner who opted in, but family
+members, visitors, and delivery personnel who did not consent. This is structurally
+analogous to bystander concerns raised about Meta glasses, yet WSJ raises zero concerns.
+
+### Financial Architecture:
+
+News Corp (WSJ parent) benefits from Anthropic IPO success:
+- $250M/5yr OpenAI content deal renewal pricing anchored by AI lab valuations
+- Anthropic $1.5B copyright settlement revenue share
+- Same banks (Goldman, Morgan Stanley, JPMorgan) underwriting both IPOs
+
+Ode backers create coverage incentive web:
+- Goldman Sachs: Ode backer + Anthropic IPO underwriter + OpenAI IPO underwriter
+- Apollo: Ode backer + Yahoo/TechCrunch parent
+- Blackstone: Ode backer + Broadcom $100B AI chip financing for Anthropic
+
+### Context — Same-Day Coverage (Aug 26, 2026):
+
+WSJ published simultaneously today:
+- "Anthropic Contemplates the Ultimate Total Addressable Market" ($30T TAM) — aspirational
+- "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims" — liability
+- "Meta Stock Rises on Child-Safety Suit Settlement" — positive framing through lens of
+  removing legal "overhang" (negative framing even in positive story)
+
+### Confounders:
+
+1. **[STRONG]** Opt-in cameras vs public glasses (rebutted: non-consenting household members)
+2. **[MODERATE]** Meta's longer privacy history (rebutted: entity selection, not capability analysis)
+3. **[MODERATE]** Business section vs consumer tech (rebutted: scale warrants scrutiny regardless)
+4. **[WEAK]** Brand awareness (rebutted: active editorial omission decision)
+
+**Test file:** `test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py`
+— 39 tests (10 classes: mechanism existence, surveillance capabilities, capability parity,
+vocabulary bifurcation, WSJ coverage comparison, financial architecture, confounders,
+cross-references, source URL integrity). All 39 pass (0.27s).
+
+**Cross-references:** Extends #317 (WSJ Anthropic pre-IPO aspirational vs Meta scrutiny),
+#33 (OpenAI facial recognition privacy parity), #290 (WIRED OpenAI Meta privacy natural experiment).
+
+**Files changed:**
+- tests/test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py (NEW, 39 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #321 added)
+- iteration-log.md (this entry)
+
 ## Iteration #308 — Wed 2026-08-26 08:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Gadget Detective (Fevzi Turkalp) — UK Broadcast Cross-Episode Entity-Selective Vocabulary (LBC + BBC Radio Scotland, Aug 7–21, 2026)
