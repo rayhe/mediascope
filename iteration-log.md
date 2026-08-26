@@ -1,5 +1,31 @@
 ## Iteration #292 — Tue 2026-08-25 16:00 PT (Type E: Podcast Sentiment Tracking)
 
+## Iteration #293 — Tue 2026-08-25 17:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Fast Company — Google/Warby Parker vs Meta Camera-Equipped Smart Glasses Vocabulary Bifurcation
+
+**New Mechanism #308:** Fast Company Cross-Entity Camera-Equipped Smart Glasses Vocabulary Bifurcation. Same publication, same product category (camera-equipped smart glasses), same year (2026). Natural experiment with entity identity as the only variable:
+
+**Google/Warby Parker article** (May 2026, Hunter Schwarz): "Warby Parker and Google take on Meta with new AI smart glasses" — aspirational vocabulary ("could change the wearables market," "fundamentally new category," "Intelligent Eyewear"). Camera mentioned once in features list, ZERO privacy analysis of Google's cameras. Single generic sentence about "wider backlash to AI" not attributed to Google. Google VP quoted aspirationally: "XR is going to be the next frontier."
+
+**Meta article** (Aug 25, 2026, Dan Clay): "Meta's creepy smart glasses are part of a much bigger plan" — 10 distinct alarm/surveillance/disgust terms: "creepy" (headline), "pervert glasses" (first sentence), "panopticon," "algorithm chow," "forfeiture of privacy," "nonconsensual content," "captive to Meta's digital infrastructure," "ordinary people surrendering," "ubiquitous networked cameras," "weirding people out." 6+ paragraphs of camera-as-surveillance analysis. Google glasses not mentioned despite identical camera capabilities.
+
+**Key asymmetry:** Both products have identical camera capabilities (photo/video capture + AI visual processing). Only Meta receives surveillance vocabulary. Google's financial relationship with Fast Company (programmatic ads, search traffic, Discover referrals) is undisclosed. Vocabulary delta: 10 alarm terms for Meta, 0 for Google.
+
+**Sources:**
+- Hunter Schwarz (May 2026): https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
+- Dan Clay (Aug 25): https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+
+**Files updated:**
+- `profiles/competitor-coverage-research.yaml` — mechanism #308 added to cross_publication_findings
+- `tests/test_fast_company_google_warby_parker_camera_glasses_vocabulary_parity_meta_exclusive_stigma_aug25.py` — 24 tests (5 classes), all passing
+- `README.md`, `docs/ARCHITECTURE.md` — test count 612→613
+
+**Cross-references:** #292 (Dan Clay panopticon infrastructure), #15 (Fast Company Snap vs Meta), #289 (Fast Company Anthropic aspirational vs Meta controversy)
+
+---
+
+
 ### Focus: ChatGPT Ads European Expansion Podcast Cross-Entity Ad Monetization Vocabulary Differential
 
 **New Mechanism #307:** ChatGPT Ads European Expansion Podcast Cross-Entity Ad Monetization Vocabulary Differential. Same-week natural experiment (Aug 20-25, 2026): OpenAI expands ChatGPT Ads to 31 European countries (monetizing conversation context, location, device type for ad targeting) with "trust risk" vocabulary in podcast and neutral framing in print. Meta glasses receive "panopticon," "pervert glasses," "creepy," "algorithm chow" vocabulary for cameras with LED indicators and anti-tampering. Both monetize user data. Vocabulary bifurcation consistent across podcast + print + broadcast.

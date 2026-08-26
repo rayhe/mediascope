@@ -21695,6 +21695,94 @@ cross_publication_findings:
       Anthropic keeping its most powerful models closed-weight.
     test_file: tests/test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py
 
+  fast_company_google_warby_parker_camera_glasses_vocabulary_parity_meta_exclusive_stigma:
+    mechanism_number: 308
+    type: cross_entity_vocabulary_bifurcation
+    publication: Fast Company
+    discovery_date: 2026-08-25
+    entities_compared:
+    - Google/Warby Parker/Samsung (camera smart glasses)
+    - Meta/Ray-Ban/EssilorLuxottica (camera smart glasses)
+    description: >
+      Same publication (Fast Company), same product category (camera-equipped smart glasses),
+      same year (2026). Google/Warby Parker glasses article (May 2026, Hunter Schwarz) uses
+      aspirational vocabulary ("could change the wearables market," "fundamentally new category,"
+      "Intelligent Eyewear") with cameras mentioned once and ZERO privacy analysis. Meta glasses
+      article (Aug 25, 2026, Dan Clay) uses alarm/surveillance/disgust vocabulary in headline
+      and throughout ("creepy," "pervert glasses," "panopticon," "algorithm chow," "forfeiture
+      of privacy," "nonconsensual content," "captive to Meta's digital infrastructure"). Both
+      products have identical camera capabilities (photo/video capture + AI visual processing).
+      Only Meta receives surveillance framing. Google's camera functionality receives zero
+      privacy scrutiny despite Google's data collection business model and advertising revenue
+      dependency. Fast Company's financial dependency on Google (programmatic ads, search
+      traffic, Discover referrals) is undisclosed in either article.
+    meta_coverage_tone: -0.85
+    google_coverage_tone: 0.70
+    vocabulary_delta: 10
+    vocabulary_meta_alarm:
+    - creepy (headline)
+    - pervert glasses (first sentence, Guardian amplification)
+    - weirding people out
+    - panopticon (Irish castle metaphor)
+    - algorithm chow (dehumanizing user data contribution)
+    - forfeiture of privacy
+    - nonconsensual content
+    - captive to Meta's digital infrastructure
+    - ordinary people surrendering ever more privacy
+    - ubiquitous networked cameras
+    vocabulary_google_alarm: []
+    vocabulary_google_aspirational:
+    - could change the wearables market
+    - serious competition
+    - fundamentally new category of products
+    - the future of wearables
+    - Intelligent Eyewear (brand adoption)
+    - original wearable technology
+    camera_capability_parity: true
+    google_privacy_analysis_paragraphs: 0
+    meta_privacy_analysis_paragraphs: 6
+    financial_incentive: >
+      Google is the world's largest digital advertising platform. Fast Company relies on
+      Google Ads for programmatic revenue, Google Search for organic traffic, and Google
+      Discover for content distribution. Meta is a direct competitor to Google in digital
+      advertising. This revenue dependency is undisclosed.
+    evidence_strength: strong
+    confounders:
+    - strength: MODERATE
+      description: >
+        Different authors (Schwarz vs Clay) with different beats. However, editorial
+        oversight at publication level determines headline vocabulary and which
+        stories get published.
+    - strength: MODERATE
+      description: >
+        Articles are 3 months apart (May vs Aug 2026). Privacy discourse may have
+        intensified. However, Google/Samsung glasses were also known to have cameras
+        at launch, and the generic privacy mention in the Google article shows awareness.
+    - strength: WEAK
+      description: >
+        Meta has a longer history of privacy controversies (Cambridge Analytica, 2021
+        facial recognition shutdown). However, applying alarm vocabulary exclusively
+        to the entity with a history while giving the entity with an advertising data
+        model zero scrutiny is itself asymmetric.
+    sources:
+    - url: https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
+      date: 2026-05-20
+      journalist: Hunter Schwarz
+      headline: Warby Parker and Google take on Meta with new AI smart glasses
+    - url: https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+      date: 2026-08-25
+      journalist: Dan Clay
+      headline: "Meta's creepy smart glasses are part of a much bigger plan"
+    cross_references:
+    - mechanism_id: 292
+      description: Dan Clay panopticon infrastructure article (same-day analysis)
+    - mechanism_id: 15
+      description: Fast Company Snap vs Meta privacy vocabulary asymmetry
+    - mechanism_id: 289
+      description: Fast Company Anthropic triple aspirational vs Meta controversy framing
+    test_file: tests/test_fast_company_google_warby_parker_camera_glasses_vocabulary_parity_meta_exclusive_stigma_aug25.py
+    tests_count: 25
+    test_classes: 5
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
