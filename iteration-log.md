@@ -1,3 +1,59 @@
+## Iteration #311 — Wed 2026-08-26 11:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Goldman Sachs Dual PE Joint Venture Cross-Investment Compound Financial Architecture
+
+**Mechanism #323:** Goldman Sachs occupies a QUINTUPLE financial role in the AI-publisher
+incentive architecture, unprecedented in technology-media financial entanglement:
+
+1. **Anthropic Ode JV founding investor** — ~$150M (alongside Blackstone $300M, H&F $300M)
+2. **OpenAI Deployment Company additional backer** — undisclosed (total raise $4B, $10B valuation)
+3. **Anthropic IPO lead underwriter** — projected fees ~$300-500M (Oct 2026 target)
+4. **OpenAI IPO lead underwriter** — projected fees ~$300-500M (Sep 2026/2027 target)
+5. **SpaceX IPO lead underwriter** — ~$100M direct fees + trading multiples (completed Jun 2026)
+
+**Key discovery:** PitchBook (May 12, 2026) documents Goldman Sachs as "additional backer"
+of OpenAI's Deployment Company, while TechCrunch/Reuters/WSJ confirm Goldman as founding
+investor in Anthropic's Ode at ~$150M. Goldman is the ONLY institution invested in BOTH AI
+PE joint ventures while simultaneously underwriting BOTH their IPOs.
+
+**Goldman Q2 2026 record quarter:** $20.34B revenue, $20.98 EPS, IB fees $3.40B (+55% YoY),
+equity underwriting +130% YoY — driven by AI IPO pipeline. Barron's (Jun 11) explicitly
+framed Goldman and Morgan Stanley as the "picks and shovels" of the AI IPO boom.
+
+**Sixth-order compound incentive chain:**
+  Goldman invests in Ode + Deployment Co → profits from AI surveillance/enterprise deployment
+  → underwrites both IPOs ($600M-1B projected fees) → publishes equity research on media
+  companies → media companies cover AI companies → coverage tone affects AI valuations →
+  affects Goldman fee revenue + JV returns → equity research on media companies affected.
+
+**Meta comparison:** Goldman has ZERO investment in any Meta AI deployment vehicle, ZERO
+Meta IPO fee revenue, ZERO ongoing deal-linked revenue. Structurally asymmetric.
+
+**GRAS context:** SEC terminated the Global Research Analyst Settlement in Dec 2025,
+removing the mandated structural separation between research and investment banking since 2003.
+
+**Confounders:** 2 STRONG (Chinese wall requirements, institutional investor sophistication),
+2 MODERATE (Goldman advertising, Meta banking relationships), 1 WEAK (editorial independence).
+Asymmetry score: 0.62 (high confounder load including 2 STRONG).
+
+**Cross-references:** #21 (IPO Underwriter Research Laundering), #46 (Pre-IPO Convergence),
+#321 (WSJ Anthropic Ode surveillance vocabulary), #249 (Citation Amplification Bias)
+
+**Files changed:**
+- `tests/test_goldman_sachs_dual_pe_jv_cross_investment_compound_financial_architecture_aug26.py` (NEW — 29 tests, 7 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #323 added to cross_publication_findings)
+- `README.md` (test counts: 21,426+/631)
+- `docs/ARCHITECTURE.md` (test counts: 21,426+/631)
+
+**Sources:**
+- https://pitchbook.com/news/articles/openai-unveils-pe-backed-joint-venture-to-accelerate-ai-adoption
+- https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/
+- https://www.reuters.com/legal/transactional/anthropic-nears-15-billion-ai-joint-venture-with-wall-street-firms-wsj-reports-2026-05-04/
+- https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
+- https://www.barrons.com/articles/goldman-sachs-morgan-stanley-ai-ipo-boom-dc7f9523
+- https://www.techtimes.com/articles/320542/20260715/morgan-stanley-q2-arrives-goldman-record-ibm-crash-raise-stakes-wealth-giant.htm
+- https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+
 ## Iteration #310 — Wed 2026-08-26 10:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Le Monde Institutional Editorial Register Bifurcation -- Meta Tobacco Framing vs OpenAI Business-Neutral Framing
