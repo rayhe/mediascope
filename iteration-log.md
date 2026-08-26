@@ -1,3 +1,52 @@
+## Iteration #302 — Wed 2026-08-26 02:00 PT (Type D: Test & Verify)
+
+### Focus: Regent LP Ownership Correction Cross-Validation
+
+**Validation Target:** Mechanism #315 (Regent LP PE Media Empire Ownership Correction)
+
+### What Was Tested
+
+Wrote a 26-test cross-validation suite (`test_type_d_02am_cross_validation_aug26.py`) verifying the TechCrunch ownership correction from Yahoo/Apollo to Regent LP propagates correctly across the entire MediaScope data model. Three verification layers:
+
+**Layer 1 — Entity Data Integrity (10 tests):**
+- Regent LP entity has TechCrunch in aliases and regex ✅
+- TechCrunch acquisition history documents March 2025 sale ✅
+- Yahoo/Apollo entity no longer lists TechCrunch in aliases or regex ✅
+- Engadget correctly remains under Yahoo/Apollo ✅
+- Yahoo entity documents the ownership correction ✅
+
+**Layer 2 — Mechanism Consistency (5 tests):**
+- Mechanism #315 exists, typed as `financial_architecture_correction` ✅
+- References affected mechanisms #104 and #142 ✅
+- Correctly identifies Regent LP as owner ✅
+- Dated to Aug 26, 2026 ✅
+
+**Layer 3 — Cross-Entity Framing Reattribution (9 tests):**
+- Regent LP three-layer financial architecture validated ✅
+- Lovable Series C disclosure asymmetry documented ✅
+- Editorial inertia discussed as alternative explanation ✅
+- Meta zero financial relationship to Regent noted ✅
+- Mechanism #104 still valid (framing patterns exist regardless of ownership) ✅
+- Max mechanism ID ≥ 315 ✅
+
+### Initial Test Failures (Fixed)
+
+First run had 7 failures — test code assumed a flat `mechanisms` key in the YAML. Competitor-coverage-research.yaml actually stores mechanisms across four sections: `publications`, `cross_publication_findings`, `aggregate_findings`, `cross_entity_leverage`. Added `find_mechanism()` and `all_mechanisms()` helpers that search across all sections. All 26 tests pass after fix.
+
+### Additional Verification
+
+- Ran Regent LP test file (35/35 pass) and David Price/Macworld test file (46/46 pass) — both from iteration #301
+- Ran existing Yahoo/Apollo TechCrunch tests (#104, Aug 24 bifurcation) — 81/81 pass, confirming the ownership correction doesn't break legacy tests
+- Full suite (622 files) running in background — partial output shows consistent pass rate
+
+### Stats After
+- 622 test files (was 621)
+- 26 new tests added
+- All targeted test runs passing (188 tests across 4 files)
+- Pushed to GitHub: 70ea17d → 4bbdc98
+
+---
+
 ## Iteration #301 — Wed 2026-08-26 01:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Regent LP — PE Media Empire Ownership Correction & Financial Architecture
