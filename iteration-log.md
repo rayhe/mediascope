@@ -1,3 +1,26 @@
+## Iteration #294 — Tue 2026-08-25 18:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Fast Company Editorial Commissioning Bifurcation — Schwarz vs Clay Contributor Assignment Predetermination
+
+**Discovery:** Fast Company doesn't just use different vocabulary for Meta vs Google — it assigns different TYPES of contributors to predetermine the framing. Same publication, same product category (camera-equipped smart glasses), same 2026 window.
+
+**Cross-entity pattern:**
+- **Google/Warby Parker (May 2026):** Assigned to **Hunter Schwarz**, a design contributor (ex-BuzzFeed News, Washington Post, CNN). Aspirational product journalism: CEO quotes, design details, market growth. Camera mentioned once in features list. ONE generic privacy sentence. ZERO alarm terms.
+- **Meta smart glasses (Aug 25, 2026):** Assigned to **Dan Clay**, identified on Fast Company's author page as "an associate in brand strategy based in Lippincott's New York office." Branding consultant and novelist, NOT a tech or privacy journalist. Literary essay with 10 alarm/surveillance terms: "creepy," "pervert glasses," "panopticon," "algorithm chow," "forfeiture of privacy," "nonconsensual content," etc.
+- **Schwarz on Anthropic/Claude Design:** Aspirational — "gives vibe coders more control"
+- **Schwarz on Meta/Alan Dye hire:** Neutral/positive — "serious about designing hardware"
+
+**Key insight:** The editorial commissioning pattern (who gets assigned what story) predetermines the vocabulary outcome before a single word is written. Design contributors get aspirational angles; external literary essayists get adversarial angles. The assignment IS the framing.
+
+**Financial context:** Google is Fast Company's (Mansueto Ventures) advertising partner via programmatic ads, search traffic referrals, and Google Discover. Meta is a direct ad competitor. Commissioning pattern aligns with financial architecture.
+
+**Deepens mechanism #308** (publication-level vocabulary bifurcation) by identifying the PROCESS that produces it.
+
+**New mechanism:** #309 (editorial_commissioning_cross_entity_tracking)
+**New test file:** `test_fast_company_editorial_commissioning_bifurcation_schwarz_clay_cross_entity_predetermination_aug25.py` (5 classes, 10 tests)
+**Cross-references:** #308 (deepens), #15 (extends), #289 (extends)
+**Profiles:** 969 mechanisms, 614 test files
+
 ## Iteration #292 — Tue 2026-08-25 16:00 PT (Type E: Podcast Sentiment Tracking)
 
 ## Iteration #293 — Tue 2026-08-25 17:00 PT (Type A: Competitor Coverage Deep Dive)

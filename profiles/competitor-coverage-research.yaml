@@ -31116,3 +31116,93 @@ publications:
     test_file: tests/test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py
     tests_count: 43
     test_classes: 6
+  schwarz_clay_editorial_commissioning_bifurcation:
+    mechanism_id: 309
+    type: editorial_commissioning_cross_entity_tracking
+    publication: Fast Company
+    publication_owner: Mansueto Ventures
+    journalists:
+    - name: Hunter Schwarz
+      role: Fast Company contributor (design/advertising beat)
+      background: ex-BuzzFeed News, Washington Post, CNN; author of Yello newsletter on political persuasion
+      entity_coverage:
+        google_warby_parker: aspirational product journalism, zero alarm terms, camera mentioned once in features list
+        meta_alan_dye: neutral/positive, serious about designing hardware
+        anthropic_claude: aspirational, gives vibe coders more control
+    - name: Dan Clay
+      role: Lippincott branding consultant, novelist (Becoming a Queen)
+      background: "associate in brand strategy based in Lippincott's New York office, MBA Wharton, NOT a tech or privacy journalist"
+      entity_coverage:
+        meta_glasses: literary adversarial essay, 10 distinct alarm/surveillance terms, panopticon metaphor
+    competitor_entity: Google (Warby Parker partnership)
+    comparison_entity: Meta
+    pattern: editorial_commissioning_bifurcation
+    finding: >
+      Fast Company assigns different TYPES of contributors to predetermine coverage framing for
+      different tech entities. Same publication, same product category (camera-equipped smart glasses),
+      same 2026 window. Google/Warby Parker (May 2026): assigned to Hunter Schwarz, a design
+      contributor who writes aspirational product journalism. Camera mentioned once in features list.
+      ONE generic privacy sentence ("wider backlash to AI and privacy concerns around facial recognition
+      and what the glasses can secretly record") not attributed to Google. Zero alarm terms. CEO Dave
+      Gilboa quoted aspirationally: "fundamentally new category." Meta (Aug 25, 2026): assigned to
+      Dan Clay, identified on Fast Company author page as "an associate in brand strategy based in
+      Lippincott's New York office" — a branding consultant and novelist, NOT a tech or privacy
+      journalist. Writes literary essay with 10 distinct alarm/surveillance terms: "creepy" (headline),
+      "pervert glasses" (first sentence), "panopticon," "algorithm chow," "forfeiture of privacy,"
+      "nonconsensual content," "captive to Meta's digital infrastructure," "ordinary people surrendering,"
+      "ubiquitous networked cameras," "weirding people out." Includes Irish castle prison panopticon
+      metaphor. The editorial commissioning pattern predetermines the vocabulary outcome: design
+      contributors get aspirational angles, external literary essayists get adversarial angles. The
+      assignment IS the framing. Schwarz also covers Anthropic's Claude Design aspirationally on
+      Fast Company Middle East ("gives vibe coders more control") and Meta's Alan Dye hire
+      neutrally/positively ("serious about designing hardware"), showing entity-specific vocabulary
+      modulation even within the same contributor's portfolio.
+    financial_context: >
+      Google is Fast Company's (Mansueto Ventures) primary advertising partner via programmatic ads,
+      Google search traffic referrals, and Google Discover content recommendations. Meta is a direct
+      advertising competitor whose $60B+ ad platform competes for the same digital ad spend that funds
+      publisher operations. Financial architecture predicts: aspirational Google coverage (revenue partner),
+      adversarial Meta coverage (ad revenue competitor). The editorial commissioning bifurcation aligns
+      with this financial incentive structure — the assignment of contributor type to entity predetermines
+      the vocabulary outcome before a single word is written. Already documented at publication level in
+      mechanism #308 (vocabulary bifurcation); this mechanism identifies the PROCESS by which that
+      bifurcation is produced.
+    vocabulary_delta:
+      google_warby_parker_alarm_terms: 0
+      meta_alarm_terms: 10
+      delta: 10
+      terms_list:
+      - creepy (headline)
+      - pervert glasses (first sentence)
+      - panopticon
+      - algorithm chow
+      - forfeiture of privacy
+      - nonconsensual content
+      - captive to Meta's digital infrastructure
+      - ordinary people surrendering
+      - ubiquitous networked cameras
+      - weirding people out
+    sources:
+    - 'Hunter Schwarz (May 2026): https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear'
+    - 'Dan Clay (Aug 25, 2026): https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan'
+    - 'Schwarz author page: https://www.fastcompany.com/user/hschwarz'
+    - 'Dan Clay author page: https://www.fastcompany.com/user/dan-clay'
+    - 'Schwarz on Anthropic (Fast Company ME): https://fastcompanyme.com/author/hunter-schwarz/'
+    - 'Schwarz on Meta/Alan Dye: https://www.devicedaily.com/pin/meta-hires-away-apples-top-design-exec/'
+    extends_mechanisms:
+    - mechanism_id: 308
+      relationship: deepens
+      description: Explains the PROCESS behind #308 vocabulary bifurcation — editorial commissioning determines vocabulary before writing begins
+    - mechanism_id: 15
+      relationship: extends
+      description: Extends Fast Company Snap vs Meta entity selection asymmetry to editorial commissioning level
+    - mechanism_id: 289
+      relationship: extends
+      description: Extends Fast Company Anthropic aspirational vs Meta controversy framing to contributor assignment pattern
+    testable_predictions:
+    - When Apple launches camera-equipped smart glasses, Fast Company will assign a design contributor (not a literary essayist) to cover the launch
+    - If Google/Warby Parker glasses face a privacy scandal, Fast Company will assign a tech news reporter (not a literary essayist) to cover it with corrective/mistake vocabulary, not alarm/surveillance vocabulary
+    - Dan Clay will not be commissioned to write an equivalent literary essay about Google, Snap, or Apple camera products
+    test_file: tests/test_fast_company_editorial_commissioning_bifurcation_schwarz_clay_cross_entity_predetermination_aug25.py
+    tests_count: 13
+    test_classes: 5
