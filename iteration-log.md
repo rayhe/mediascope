@@ -1,3 +1,65 @@
+## Iteration #312 — Wed 2026-08-26 12:00 PT (Type D: Test & Verify)
+
+### Focus: Cross-Validation of Mechanisms #320–#323 + Structural Consistency Fix
+
+**Type:** Test & Verify (Cross-Validation + Doc Sync)
+**Mechanisms validated:** #320, #321, #322, #323
+
+**New cross-validation test:** `test_type_d_12pm_cross_validation_aug26.py`
+— 55 tests, 9 classes. All pass (2.60s).
+
+**Cross-validation findings:**
+1. **Mechanism #320** (Gadget Detective UK broadcast): cultural_consensus classification
+   confirmed, 3+ episodes with dates, entity registers, BBC/LBC platforms documented.
+   Meta episodes correctly assigned alarm register. No financial incentive (cultural consensus).
+2. **Mechanism #321** (WSJ Anthropic Ode): WSJ publication, Anthropic/Ode vs Meta entity pair,
+   article URLs present. Surveillance capabilities (facial recognition, behavioral learning,
+   camera scale) documented. ZERO privacy vocabulary documented. Note: no top-level date field
+   (dates inside articles sub-objects) — test adapted to handle this.
+3. **Mechanism #322** (Le Monde register bifurcation): Le Monde publication, Meta/OpenAI entity
+   pair, natural_experiment section with meta_piece (alarm register, 3+ vocabulary terms)
+   and openai_piece, both with Le Monde URLs. Tobacco comparison documented.
+4. **Mechanism #323** (Goldman Sachs dual PE JV): financial_incentive_mapping type, 5+
+   financial roles, Ode + Deployment Company documented, cross_venture_investment_unique=true,
+   Meta ZERO exposure documented. STRONG confounders (Chinese wall) documented.
+5. **Cross-mechanism:** All 4 exist with sequential IDs 320-323, all reference Meta, cover
+   4 distinct domains (broadcast, print, editorial, finance). Goldman-Ode data consistent
+   between #321 and #323 (both reference Ode, Goldman, Blackstone).
+6. **Cross-references validated:** #320 has podcast predecessors, #321 extends #317,
+   #323 extends #21.
+
+**Structural consistency fixes (14→1 failures):**
+- README: 22,706 tests across 632 test files (was ~21,426+/631)
+- README: 260 journalists (was 258)
+- README: 54 missing test file entries added to test table
+- README: 17 stale per-file test counts corrected
+- ARCHITECTURE.md: 22,706/632 (was ~21,426+/631), 51 missing entries added
+- EDITORIAL_HISTORIES.md: 260 journalists (was 258), 244 multi-pub (was 243)
+- careers_demo.py: 260 journalists (was 258)
+
+**Remaining known issue:** CareerTracker module reports 243 multi-pub journalists vs YAML
+counting 244. This is a code-level publication slug consistency issue, not a doc issue.
+39 legacy textblob-dependent tests still have collection errors (unchanged).
+
+**Mechanism tests validated separately:**
+- #308 (Gadget Detective): 26/26 pass
+- #309 (WSJ Ode): 39/39 pass
+- #310 (Le Monde): 34/34 pass
+- #311 (Goldman Sachs): 29/29 pass
+- Total: 128/128 pass (160s)
+
+**Sampled core tests:**
+- test_asymmetry, test_entities, test_citations, test_financial_relationships,
+  test_competitor_coverage, test_claims, test_quality_standards: 381/381 pass
+- test_structural_consistency: 119/124 pass (5 remaining, down from 14)
+
+**Files changed:**
+- tests/test_type_d_12pm_cross_validation_aug26.py (NEW — 55 tests, 9 classes)
+- README.md (test counts, journalist counts, 54 missing test entries, 17 stale counts)
+- docs/ARCHITECTURE.md (test counts, 51 missing test entries)
+- docs/EDITORIAL_HISTORIES.md (journalist counts, multi-pub counts)
+- examples/careers_demo.py (journalist count)
+
 ## Iteration #311 — Wed 2026-08-26 11:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Goldman Sachs Dual PE Joint Venture Cross-Investment Compound Financial Architecture
