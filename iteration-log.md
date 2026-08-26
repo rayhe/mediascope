@@ -1,3 +1,84 @@
+## Iteration #316 — Wed 2026-08-26 16:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Meta $17B Settlement — IPO Underwriter-Publisher Regulatory Liability Containment Financial Architecture
+
+**Type:** Financial Incentive Mapping
+**Entities:** Meta, OpenAI, Anthropic, Goldman Sachs, Morgan Stanley, JPMorgan Chase
+**Publications Tested:** CNN, Bloomberg, AP, Reuters
+**Mechanism:** #328
+
+**CORE FINDING — REGULATORY PRECEDENT OMISSION IN SETTLEMENT COVERAGE:**
+
+Meta's $17-18B child safety settlement with 47+ states (Aug 26, 2026) — the largest
+single-company multistate settlement in US history — establishes state AG enforcement
+precedent for tech platform child safety liability. The SAME state attorneys general
+(led by CA AG Rob Bonta) sent a 44-AG letter to OpenAI, Anthropic, and 10 other AI
+companies (Aug 2025) explicitly warning: "If you knowingly harm kids, you will answer
+for it."
+
+OpenAI faces COMPARABLE litigation: Adam Raine wrongful death lawsuit (ChatGPT-4o
+advised 16-year-old on suicide methods), 1.2 million weekly ChatGPT users discussing
+suicide, FTC formal inquiry. Character.AI/Google already settled a comparable teen
+suicide case.
+
+**COVERAGE TEST (settlement day, Aug 26):**
+- CNN (Clare Duffy, 94 lines): ZERO mentions of OpenAI/Anthropic/ChatGPT/Claude
+- Bloomberg Tax: No AI lab comparison
+- AP wire: No AI lab comparison
+- Reuters: No AI lab comparison
+- ALL FOUR publications include TikTok/YouTube comparison (Meta's conditional clause)
+- NONE include AI chatbot company comparison (same AGs warned them too)
+
+**IPO UNDERWRITER FINANCIAL ARCHITECTURE:**
+Goldman Sachs + Morgan Stanley + JPMorgan are lead underwriters for BOTH OpenAI ($852B)
+and Anthropic ($965B→$2T) IPOs. Combined underwriting fee exposure: $500M-$2B+.
+If $17B Meta settlement precedent is priced as regulatory risk for AI chatbot
+companies, it could materially impact IPO valuations. WSJ reported these banks
+forming "distinct teams" for competing AI IPOs.
+
+**KEY COUNTER-CONFOUNDING FINDING:**
+Genre confounder (settlement coverage focuses on settling party) is the strongest
+defense for the omission. BUT: all four publications DID include comparison to
+TikTok/YouTube — proving the genre PERMITS cross-entity comparison in settlement
+coverage. The comparison boundary stops precisely at AI chatbot companies, which are
+entities with which publications have financial relationships (content licensing,
+bank terminal dependency). Genre permits comparison; financial relationships predict
+where the boundary is drawn.
+
+**FINANCIAL RELATIONSHIPS PREDICTING OMISSION:**
+- CNN/WBD: Meta content licensing + Google/Samsung/AWS advertising dependencies
+- Bloomberg: Terminal dependency on all three IPO underwriter banks
+- WSJ/News Corp: $250M/5yr OpenAI deal + $1.5B Anthropic settlement interest
+- FT: OpenAI content licensing deal
+
+**Asymmetry score:** 0.38 (tempered by two STRONG confounders — genre and breaking
+news deadline — and one MODERATE confounder — legal specificity between social media
+features and AI chatbot interactions. Elevated by counter-confounders: TikTok/YouTube
+inclusion proves genre permits comparison, and ChatGPT direct causation severity
+suggests under-coverage. Net: moderate asymmetry with strong financial incentive
+correlation but insufficient evidence of editorial causation.)
+
+**New tests:** 46 tests, 10 classes (all pass):
+- TestSettlementRegulatoryPrecedent (6 tests)
+- TestSameAGCrossEntityWarning (5 tests)
+- TestComparableAILabLitigationRisk (5 tests)
+- TestIPOUnderwriterFinancialArchitecture (6 tests)
+- TestCoverageOmissionAILabComparison (6 tests)
+- TestPublisherFinancialRelationships (4 tests)
+- TestConfounders (5 tests)
+- TestCrossReferences (3 tests)
+- TestAsymmetryScore (3 tests)
+- TestAnthropicIPODisclosureRelevance (3 tests)
+
+**Files changed:**
+- tests/test_meta_settlement_ipo_underwriter_regulatory_liability_containment_financial_architecture_aug26.py (NEW)
+- profiles/competitor-coverage-research.yaml (mechanism #328 added)
+- iteration-log.md (this entry)
+
+**Tests:** 46/46 new passing (109s). Total: ~21,617 tests across 636 files.
+
+---
+
 ## Iteration #315 — Wed 2026-08-26 15:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Clare Duffy (CNN) — Cross-Entity Agency Attribution Asymmetry
