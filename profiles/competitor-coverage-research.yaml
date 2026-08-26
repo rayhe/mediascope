@@ -31439,3 +31439,173 @@ publications:
     test_file: tests/test_type_e_9pm_icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus_aug25.py
     tests_count: 18
     test_classes: 5
+
+  wired_anthropic_enterprise_data_retention_coverage_selection_silence:
+    mechanism_id: 312
+    mechanism_number: 312
+    title: >-
+      WIRED Coverage Selection Silence — Anthropic Mandatory 30-Day Enterprise Data
+      Retention Override
+    publication: WIRED
+    parent_company: Condé Nast / Advance Publications
+    date_analyzed: '2026-08-25'
+    competitor_entities:
+    - Anthropic
+    - OpenAI
+    topic: enterprise_data_retention_privacy
+    mechanism_type: coverage_selection_silence
+    finding_type: coverage_selection_gap
+    description: >-
+      WIRED (Condé Nast, OpenAI content deal since Aug 2024) published ZERO standalone
+      articles covering Anthropic's mandatory 30-day enterprise data retention policy
+      override (announced Jun 9, 2026 with Fable 5 / Mythos 5 launch), despite the story
+      being covered by 15+ other outlets including WSJ, TechCrunch, Reuters, Bloomberg,
+      The Register, PYMNTS, Fast Company, and SDxCentral. The policy unilaterally overrode
+      existing zero-retention agreements with enterprise customers, drew public criticism
+      from Microsoft CEO Satya Nadella, White House AI adviser David Sacks, and Palantir
+      CEO Alex Karp, forced Microsoft to restrict employee access to Claude Fable 5, and
+      ultimately compelled Anthropic to backtrack (Aug 20 Reuters/Bloomberg — allowing
+      enterprises to retain on their own infrastructure). When OpenAI countered with
+      "Private Safety Processing" (Aug 19), WSJ and TechCrunch both covered the competitive
+      dynamic. WIRED covered neither. This is a PRIVACY story — the exact domain where
+      WIRED produces its most adversarial Meta coverage (surveillance, tracking, behavioral
+      targeting). The coverage gap is particularly notable because WIRED DID cover
+      Anthropic's cybersecurity breaches (2 articles, Jul 31) — demonstrating selective
+      coverage of Anthropic safety incidents while avoiding Anthropic's enterprise
+      privacy controversy.
+    wired_articles_on_topic: 0
+    other_outlet_coverage:
+    - outlet: WSJ
+      article: "OpenAI's Latest Bid to Fight Anthropic: A Promise Not to Keep Customer Data"
+      date: '2026-08-19'
+      url: https://www.wsj.com/tech/ai/openais-latest-bid-to-fight-anthropic-a-promise-not-to-keep-customer-data-d51a9b65
+    - outlet: TechCrunch
+      article: "OpenAI seeks to one-up Anthropic with new customer privacy protections"
+      date: '2026-08-19'
+      url: https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
+    - outlet: Reuters
+      article: "Anthropic plans to change enterprise data retention policy, source says"
+      date: '2026-08-20'
+      url: https://www.reuters.com/business/anthropic-plans-change-enterprise-data-retention-policy-source-says-2026-08-20/
+    - outlet: The Register
+      article: "Anthropic spins a Fable of a tamer, safer Mythos"
+      date: '2026-06-09'
+      url: https://www.theregister.com/ai-and-ml/2026/06/09/anthropic-spins-a-fable-of-a-tamer-safer-mythos/5253106
+    - outlet: PYMNTS
+      article: "Anthropic's Data Policy Exposes Enterprise AI Governance Gaps"
+      date: '2026-06-11'
+      url: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-30-day-data-policy-exposes-enterprise-ai-governance-gaps/
+    - outlet: SDxCentral
+      article: "Mythos, meet Fable: The Anthropic AI that scared an industry"
+      date: '2026-06-09'
+      url: https://www.sdxcentral.com/news/mythos-meet-fable-the-anthropic-ai-that-scared-an-industry-is-getting-an-upgrade/
+    - outlet: Bloomberg
+      article: Anthropic plans to change enterprise data retention policy (via Hindu Business Line)
+      date: '2026-08-20'
+      url: https://www.thehindubusinessline.com/info-tech/anthropic-plans-to-changedata-retention-policy-for-advanced-ai/article71372103.ece
+    - outlet: Channel Insider
+      article: "OpenAI Challenges Anthropic's 30-Day Data Retention"
+      date: '2026-08-19'
+      url: https://www.channelinsider.com/ai/news-openai-anthropic-data-retention-private-safety-processing/
+    - outlet: Fast Company
+      article: "Anthropic's Claude Fable 5 plays it too safe on safety, developers say"
+      date: '2026-06-12'
+      url: https://www.fastcompany.com/91558105/anthropic-claude-fable-5-too-touchy-developers-say
+    - outlet: MediANama
+      article: "Anthropic opens Mythos-class AI to the public with data retention"
+      date: '2026-06-10'
+      url: https://www.medianama.com/2026/06/223-anthropic-mythos-class-ai-public-data-retention/
+    - outlet: Digit
+      article: "Anthropic's controversial data retention for Fable 5 and Mythos 5"
+      date: '2026-07-01'
+      url: https://www.digit.in/features/general/anthropics-controversial-data-retention-for-fable-5-and-mythos-5.html
+    - outlet: beri.net
+      article: "Fable 5 Needs Retention On. ZDR Was Never Zero."
+      date: '2026-08-19'
+      url: https://www.beri.net/article/anthropic-covered-models-zdr-override-openai-private-safety-processing
+    anthropic_data_retention_policy:
+      announced: '2026-06-09'
+      policy: >-
+        Mandatory 30-day retention for ALL enterprise customer traffic on Fable 5 and
+        Mythos 5 (Covered Models), overriding existing zero-retention agreements.
+        Applies across Claude API, AWS Bedrock, Google Cloud Agent Platform, Microsoft
+        Foundry.
+      backlash_figures:
+      - Satya Nadella (Microsoft CEO)
+      - David Sacks (White House AI adviser)
+      - Alex Karp (Palantir CEO)
+      microsoft_action: Restricted employee access to Claude Fable 5 pending legal review
+      anthropic_backtrack: '2026-08-20 — Bloomberg/Reuters: allowing enterprises to retain on own cloud infrastructure'
+      anthropic_own_admission: >-
+        In risk report, Anthropic acknowledged the policy would "be unpopular with
+        customers who have come to expect zero retention, and pose real risks to our
+        business success (especially if competitors do not follow)"
+    openai_counter:
+      announcement: '2026-08-19'
+      product: Private Safety Processing
+      approach: >-
+        Detects multi-session abuse patterns without retaining customer data;
+        customers including Databricks and Microsoft testing
+    wired_meta_data_coverage_contrast:
+      wired_meta_data_articles_adversarial: true
+      meta_vocabulary: surveillance capitalism, tracking, behavioral targeting
+      meta_nametag_investigation: 3+ articles (Jun 4-8, 2026)
+      wired_anthropic_breach_articles: 2
+      wired_anthropic_breach_date: '2026-07-31'
+      wired_anthropic_data_retention_articles: 0
+    financial_context:
+      conde_nast_openai_deal: Aug 2024 content licensing
+      conde_nast_anthropic_deal: none documented
+      conde_nast_meta_deal: none documented
+      prediction: >-
+        Condé Nast/OpenAI deal creates dual incentive for silence: (1) covering
+        Anthropic's data retention controversy would normalize data retention as
+        industry-wide issue, potentially drawing scrutiny to OpenAI's own practices;
+        (2) covering the OpenAI vs Anthropic competitive dynamic on privacy would
+        require WIRED to investigate OpenAI's data practices with same rigor, which
+        the financial relationship discourages.
+    confounding_factors:
+    - factor: >-
+        WIRED may have covered the topic in newsletter-only, podcast, or paywall-restricted
+        format not indexed by search engines
+      strength: MODERATE
+    - factor: >-
+        Enterprise data retention policies may be outside WIRED's primary consumer-tech
+        editorial focus
+      strength: MODERATE
+    - factor: >-
+        WIRED did cover the Fable 5 / Mythos 5 launch in other contexts (benchmarks,
+        cybersecurity capabilities) — may not have deemed data retention separately newsworthy
+      strength: WEAK
+    - factor: >-
+        Story duration (Jun 9 to Aug 20) means WIRED had 72 days of opportunity to cover
+        the controversy, especially after Microsoft/Sacks/Karp backlash escalated it
+      strength: WEAK_AGAINST_CONFOUNDING
+    - factor: >-
+        WIRED covered Anthropic's cybersecurity breaches (Jul 31, 2 articles) during
+        the same period — demonstrating editorial interest in Anthropic safety coverage
+        that makes the data retention silence a selective choice, not blanket non-coverage
+      strength: STRONG_AGAINST_CONFOUNDING
+    asymmetry_score: 0.85
+    cross_references:
+    - mechanism_id: 154
+      description: WIRED Anthropic automode coverage selection silence — same pattern of selective Anthropic coverage
+    - mechanism_id: 48
+      description: WIRED OpenAI ad business coverage selection gap — parallel Condé Nast-incentivized silence
+    - mechanism_id: 84
+      description: WIRED OpenAI hardware FR privacy investigation gap — selective privacy investigation
+    - mechanism_id: 288
+      description: WSJ data retention vocabulary bifurcation — same story, different mechanism (WSJ covers but with vocabulary gradient)
+    testable_predictions:
+    - >-
+      When Anthropic or any AI lab implements new enterprise data retention policies, WIRED will not
+      produce adversarial investigation comparable to Meta data practice coverage
+    - >-
+      If OpenAI implements a data retention change, WIRED coverage will frame it more
+      favorably than equivalent Anthropic or Meta policy changes
+    - >-
+      WIRED's future coverage of AI data practices will continue to disproportionately
+      target Meta while treating Anthropic and OpenAI data practices as neutral product features
+    test_file: tests/test_wired_anthropic_enterprise_data_retention_coverage_selection_silence_aug25.py
+    tests_count: 30
+    test_classes: 7

@@ -1,3 +1,56 @@
+## Iteration #298 — Tue 2026-08-25 22:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WIRED + Anthropic — Enterprise Data Retention Coverage Selection Silence
+
+**Publication:** WIRED (Condé Nast, OpenAI content deal since Aug 2024)
+**Competitor:** Anthropic
+
+**Discovery:** WIRED published ZERO standalone articles covering Anthropic's mandatory 30-day enterprise data retention policy override — one of the biggest AI enterprise privacy stories of summer 2026. The story ran from Jun 9 (Fable 5 / Mythos 5 launch) through Aug 20 (Anthropic backtrack), a 72-day window.
+
+**What happened:**
+1. Jun 9, 2026: Anthropic announced Fable 5 / Mythos 5 with mandatory 30-day data retention for ALL enterprise customer traffic, unilaterally overriding existing zero-retention agreements
+2. Jun-Jul: Microsoft restricted employee access to Claude Fable 5 pending legal review. Backlash from Microsoft CEO Satya Nadella, White House AI adviser David Sacks, Palantir CEO Alex Karp
+3. Anthropic's own risk report admitted the policy would "be unpopular with customers who have come to expect zero retention, and pose real risks to our business success"
+4. Aug 19: OpenAI launched "Private Safety Processing" specifically to exploit the competitive wedge — detecting multi-session abuse patterns without retaining data
+5. Aug 20: Reuters/Bloomberg reported Anthropic was backing down — allowing enterprises to retain on their own cloud infrastructure
+
+**Who covered it (15+ outlets):**
+WSJ, TechCrunch, Reuters, Bloomberg, The Register, PYMNTS, SDxCentral, Channel Insider, Fast Company, MediANama, Digit, beri.net, and more. WSJ and TechCrunch both covered the OpenAI competitive counter.
+
+**WIRED's silence:** Zero articles in any search index across multiple search engines. This is a PRIVACY story — the exact domain where WIRED produces its most adversarial Meta coverage (surveillance, tracking, behavioral targeting, NameTag 3+ investigation articles).
+
+**Selective coverage proof:** WIRED DID cover Anthropic's cybersecurity breaches (2 articles, Jul 31) during the same period — so they actively cover Anthropic safety incidents. The data retention controversy was selectively excluded.
+
+**Financial prediction:** Condé Nast/OpenAI deal creates dual incentive for silence:
+1. Covering Anthropic's data retention controversy would normalize data retention as industry-wide issue, potentially drawing scrutiny to OpenAI's own practices
+2. Covering the OpenAI vs Anthropic competitive dynamic on privacy would require investigating OpenAI's data practices with same rigor
+
+**Confounding factors:** 5 documented (2 MODERATE, 1 WEAK, 2 counter-confounding including STRONG)
+
+**New mechanism:** #312 (wired_anthropic_enterprise_data_retention_coverage_selection_silence)
+**New test file:** `test_wired_anthropic_enterprise_data_retention_coverage_selection_silence_aug25.py` (7 classes, 31 tests)
+- TestMechanism312Exists (4 tests): mechanism exists with correct type/finding_type/publication
+- TestAnthropicDataRetentionPolicy (6 tests): policy date, ZDR override, backlash figures, Microsoft action, backtrack, own admission
+- TestOpenAICounterResponse (3 tests): counter date, product name, ZDR preservation
+- TestWIREDCoverageGap (6 tests): zero WIRED articles, 10+ other outlets documented, WSJ/TechCrunch/Reuters/Bloomberg all covered
+- TestMetaCoverageContrast (3 tests): WIRED Meta adversarial, NameTag investigation 3+, breach-but-not-retention selective coverage
+- TestFinancialContextAndPrediction (4 tests): Condé Nast/OpenAI deal, no Meta deal, dual incentive prediction, asymmetry score
+- TestCrossReferences (5 tests): refs #154/#48/#288, 3+ confounding factors, STRONG counter-confounding documented
+
+**Cross-references:** #154 (WIRED automode silence), #48 (WIRED OpenAI ad gap), #84 (WIRED OpenAI hardware FR gap), #288 (WSJ data retention vocabulary bifurcation)
+
+**Profiles updated:** competitor-coverage-research.yaml (mechanism #312), wired.yaml (enterprise_data_retention_coverage_selection_silence section)
+**Profiles:** 978 mechanisms, 620 test files
+
+**Sources:**
+- https://www.wsj.com/tech/ai/openais-latest-bid-to-fight-anthropic-a-promise-not-to-keep-customer-data-d51a9b65
+- https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
+- https://www.reuters.com/business/anthropic-plans-change-enterprise-data-retention-policy-source-says-2026-08-20/
+- https://www.theregister.com/ai-and-ml/2026/06/09/anthropic-spins-a-fable-of-a-tamer-safer-mythos/5253106
+- https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-30-day-data-policy-exposes-enterprise-ai-governance-gaps/
+
+---
+
 ## Iteration #296 — Tue 2026-08-25 20:00 PT (Type D: Test & Verify)
 ## Iteration #297 — Tue 2026-08-25 21:00 PT (Type E: Podcast Sentiment Tracking)
 
