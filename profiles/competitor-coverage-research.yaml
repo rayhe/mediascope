@@ -31609,3 +31609,38 @@ publications:
     test_file: tests/test_wired_anthropic_enterprise_data_retention_coverage_selection_silence_aug25.py
     tests_count: 30
     test_classes: 7
+
+  james_pero_apple_glasses_privacy_minefield_externalization_aug25:
+    mechanism_id: 313
+    type: B
+    date_added: '2026-08-25'
+    iteration: 299
+    finding_summary: >-
+      James Pero (Gizmodo) Competitor Privacy Minefield Externalization: In 'Apple's Smart
+      Glasses Are Stepping Into a Privacy Minefield' (Apr 15, 2026), an article nominally
+      about Apple entering the smart glasses category routes ALL privacy criticism through
+      Meta. The 'minefield' is defined entirely by Meta's violations. Apple receives preemptive
+      reputational credit ('built around privacy', 'doesn't share that problem') while Meta
+      receives concrete indictments ('harvesting', 'privacy nightmare', 'a mess'). No adversarial
+      vocabulary (creepy, pervert, surveillance, icky) is directed at Apple despite planning
+      identical camera hardware. Extends Mechanism #211 (Three-Entity Gradient) with a distinct
+      ROUTING mechanism: within-article category criticism is systematically attributed to
+      Meta and deflected from Apple.
+    journalist: James Pero
+    publication: Gizmodo
+    publication_owner: Keleops AG (Belgium)
+    entities_compared: [Apple, Meta]
+    articles:
+      - title: "Apple's Smart Glasses Are Stepping Into a Privacy Minefield"
+        url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+        date: '2026-04-15'
+        entity: Apple (nominal), Meta (actual target)
+    asymmetry_score: 0.78
+    confounders:
+      - Apple has not yet shipped smart glasses — unreleased products receive more charitable framing
+      - Apple privacy reputation is earned to some degree
+      - Keleops AG has no known financial relationship with Apple
+    cross_references: ['#31', '#99', '#211', '#222']
+    test_file: tests/test_james_pero_gizmodo_apple_glasses_privacy_minefield_externalization_meta_routing_aug25.py
+    tests_count: 12
+    test_classes: 2

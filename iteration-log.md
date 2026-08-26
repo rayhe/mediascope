@@ -11008,3 +11008,45 @@ No duplicate mechanism IDs across 262 mechanisms (max ID: 302).
 
 **Test results:** 54/54 pass (22 new cross-validation + 32 existing podcast tests).
 **Files:** 606 test files (+1), 262 mechanisms, max mechanism_id 302.
+
+## Iteration #299 — Tue 2026-08-25 23:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: James Pero (Gizmodo) Competitor Privacy Minefield Externalization — Apple Camera Glasses Coverage Routes Category Criticism Through Meta
+
+**Journalist:** James Pero (Gizmodo / Keleops AG)
+**Entities compared:** Apple, Meta
+**Mechanism #313:** Competitor Privacy Minefield Externalization
+
+### Discovery
+
+In "Apple's Smart Glasses Are Stepping Into a Privacy Minefield" (Apr 15, 2026), James Pero writes an article nominally about Apple's planned entry into the smart glasses category. Despite the headline suggesting Apple faces privacy risks, the article systematically:
+
+1. **Defines the "minefield" through Meta's violations** — "harvesting Ray-Ban user videos," "privacy nightmare," "a mess," "scandals"
+2. **Applies preemptive reputational credit to Apple** — "a company that's built around privacy," "Apple doesn't share that problem," "built on its reputation for not doing that"
+3. **Routes all privacy criticism through Meta** — Apple is a visitor to Meta's contaminated space; Meta is the polluter
+4. **Offers solutions to Apple, indictments to Meta** — "ways Apple could make the form factor more privacy-friendly" vs "the entire company is built around collecting data and then using that data for financial gain"
+5. **Excludes adversarial vocabulary from Apple** — zero instances of "creepy," "pervert," "surveillance nightmare," or "icky" directed at Apple despite planning identical camera hardware
+
+This is DISTINCT from Mechanism #211 (Three-Entity Privacy Gradient):
+- #211 shows DIFFERENT LEVELS of criticism across entities (inter-article gradient)
+- #313 shows ROUTING: within a SINGLE article nominally about Apple, all category-level criticism is attributed to Meta while Apple benefits from contrast framing
+
+### Confounders
+1. Apple has not shipped smart glasses — unreleased products receive more charitable coverage
+2. Apple's privacy reputation is earned to some degree
+3. Keleops AG has no known financial relationship with Apple
+4. Pero may view the article as balanced (noting risks Apple faces)
+
+### Sources
+- https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+
+### Test Results
+- 12 tests, all passing
+- 2 test classes: TestJamesPeroCategoryMineFieldExternalization (10 tests), TestPeroCrossEntityTemporalCorpus (2 tests)
+
+### Asymmetry Score: 0.78
+
+### Stats After
+- 6 James Pero test files (was 5)
+- Mechanism #313 added
+- New test file: test_james_pero_gizmodo_apple_glasses_privacy_minefield_externalization_meta_routing_aug25.py
