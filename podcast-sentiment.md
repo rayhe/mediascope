@@ -4223,3 +4223,129 @@ The gendered frame makes the asymmetry harder to detect because it feels like ad
 
 **MediaScope Mechanism:** #311 (icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus)
 **Cross-references:** #35, #225, #227, #296
+
+
+### 74. 9to5Mac Overtime Ep078 — "AirPods with cameras, a pretty big deal" (Aug 21, 2026)
+
+**Publisher:** 9to5Mac (parent: 9to5Mac Inc.)
+**Hosts:** Jeff Benjamin (Head of Video, 9to5Mac) & Fernando Silva
+**Duration:** ~35 min (estimated)
+**Source URL:** https://9to5mac.com/2026/08/21/9to5mac-overtime-078-airpods-with-cameras-a-pretty-big-deal/
+
+**Episode Summary:**
+Jeff and Fernando discuss Apple's leaked AirPods with integrated cameras. The episode description explicitly frames the product as "Apple's more privacy-centric alternative to the often-criticized and controversial Ray-Ban Meta Smart Glasses."
+
+**Entity Coverage Assessment:**
+- **Apple:** Aspirational vocabulary throughout. "Pretty big deal" (title), "privacy-centric" (description), positioned as the better approach to camera wearables. Zero alarm vocabulary.
+- **Meta:** Adversarial vocabulary. "Often-criticized and controversial" (description). Used as the negative referent against which Apple's approach is measured. Ray-Ban Meta = the privacy problem that Apple's AirPods solve.
+- **Samsung/Google/Snap:** Not mentioned despite all shipping or developing camera-equipped smart glasses.
+
+**Vocabulary Analysis:**
+| Term | Entity | Register |
+|------|--------|----------|
+| "pretty big deal" | Apple | Positive-aspirational |
+| "privacy-centric" | Apple | Trust-conferring |
+| "alternative" | Apple | Solution-framing |
+| "often-criticized" | Meta | Delegitimizing |
+| "controversial" | Meta | Stigmatizing |
+
+**Cross-Medium Extension:**
+This is the FOURTH 9to5Mac channel to cover the AirPods camera leak in 72 hours, extending mechanism #250:
+1. Security Bite print column (Aug 18, Arin Waichulis)
+2. Happy Hour #604 podcast (Aug 20, Benjamin Mayo + Chance Miller)
+3. 9to5Mac Daily podcast (Aug 21, Chance Miller)
+4. **Overtime #078 podcast (Aug 21, Jeff Benjamin + Fernando Silva)** ← NEW
+
+All four channels maintain identical entity-selective vocabulary: Apple = aspirational/privacy-centric, Meta = reckless/controversial. Different hosts, different shows, same editorial direction.
+
+**Financial Architecture:**
+- 9to5Mac derives 100% of revenue from Apple ecosystem coverage
+- Explicit affiliate disclosure: "FTC: We use income earning auto affiliate links" (Apple product links)
+- Google Preferred Source badge (additional revenue channel)
+- ZERO Meta financial relationship
+- Revenue dependency creates structural incentive to frame Apple's camera wearable as superior to Meta's
+
+**Confounders (4):**
+1. STRONG: AirPods cameras are described as non-recording (1MP, AI-only) vs Meta glasses full photo/video capability
+2. STRONG: AirPods are pre-release (not shipping) — less editorial urgency for alarm vocabulary
+3. MODERATE: 9to5Mac is an Apple-focused publication — audience expects Apple-positive framing
+4. MODERATE: Different form factor (earbuds vs glasses) may justify different privacy calculus
+
+**Sentiment Score:** +6/10 (strongly positive toward Apple AirPods, strongly negative toward Meta)
+**Asymmetry Assessment:** HIGH — Identical technology (cameras on face-worn wearable) receives opposite vocabulary treatment based exclusively on entity. Title alone encodes the bifurcation: "a pretty big deal" (Apple) vs "often-criticized and controversial" (Meta).
+**Mechanism:** #316 (Cross-Publication Podcast AirPods Camera Privacy Vocabulary Inversion — 9to5Mac Overtime + AppleInsider)
+**Cross-references:** #250 (9to5Mac three-channel pipeline), #173 (9to5 network privacy vocabulary gradient), #131 (Ben Schoon control), #242 (pervertpods label containment)
+
+---
+
+### 75. AppleInsider Podcast — "AirPods with cameras leak, Apple Maps ads, & Siri AI" (Aug 21, 2026)
+
+**Publisher:** AppleInsider
+**Hosts:** Wesley Hilliard & William Gallagher
+**Duration:** ~45 min (estimated)
+**Source URL:** https://appleinsider.com/articles/26/08/21/airpods-with-cameras-leak-apple-maps-ads-siri-ai-on-the-appleinsider-podcast
+
+**Episode Summary:**
+Covers AirPods camera leak alongside Apple Maps ads and Siri AI news. Acknowledges the potential for "creepy" comparisons to Meta glasses but immediately redirects with reassurance: "However, rumors suggest these AirPods with cameras won't take photos at all."
+
+**Entity Coverage Assessment:**
+- **Apple:** Reassurance-first framing. The "however" pivot is the story — concerns are raised only to be immediately dismissed. Links include "There is a good reason to praise AirPods with cameras, and not fear them." Zero sustained alarm vocabulary.
+- **Meta:** Named as the negative exemplar. "Creepy actions like those perpetrated while wearing Meta smart glasses" — the verb "perpetrated" (crime vocabulary) applied to normal product use. Meta glasses = crimes; Apple AirPods = innovation.
+- **Samsung/Google/Snap:** Not mentioned despite identical camera capabilities.
+
+**Critical Vocabulary Analysis:**
+The phrase "creepy actions like those perpetrated while wearing Meta smart glasses" contains three layers of entity-selective framing:
+1. **"creepy actions"** — alarm vocabulary applied to a product category, but ONLY when Meta is the entity
+2. **"perpetrated"** — criminal-legal register. You don't "perpetrate" with a camera — you "perpetrate" crimes. This implicitly criminalizes Meta glasses use.
+3. **"However, rumors suggest these AirPods with cameras won't take photos at all"** — the "however" pivot functions as immediate reassurance for Apple, a privilege Meta never receives in comparable coverage.
+
+**Show notes link analysis:**
+- "There is a good reason to praise AirPods with cameras, and not fear them" — headline preemptively converts the framing from alarm to praise
+- "Watch how AirPods with cameras will work, according to macOS Tahoe" — capability demonstration (positive framing)
+- No equivalent Meta links (e.g., "how Meta glasses privacy actually works")
+
+**Financial Architecture:**
+- AppleInsider derives 100% of revenue from Apple ecosystem coverage
+- Patreon ($5/month) and Apple Podcasts+ ($4.99/month) subscription model
+- Apple affiliate links throughout
+- ZERO Meta financial relationship
+- The podcast is DISTRIBUTED through Apple Podcasts, creating platform dependency on Apple
+
+**Cross-Publication Pattern with 9to5Mac:**
+Same date (Aug 21), same topic (AirPods camera leak), same vocabulary bifurcation:
+| Publication | Apple Vocabulary | Meta Vocabulary |
+|------------|------------------|-----------------|
+| 9to5Mac Overtime 078 | "privacy-centric," "pretty big deal" | "often-criticized," "controversial" |
+| AppleInsider Podcast | "praise," "won't take photos" | "creepy," "perpetrated" |
+
+Two independent publications, zero editorial coordination, identical entity-selective framing. The vocabulary bifurcation is structural: it follows the financial dependency, not the editorial judgment.
+
+**Confounders (4):**
+1. STRONG: AirPods cameras genuinely described as non-recording (1MP, AI-only) — different capability profile
+2. STRONG: Meta glasses have documented misuse incidents (covert recording); AirPods have none (not yet released)
+3. MODERATE: AppleInsider is an Apple-focused publication by design
+4. MODERATE: "However" pivot could be legitimate counterpoint journalism
+
+**Sentiment Score:** +4/10 (positive toward Apple, negative toward Meta)
+**Asymmetry Assessment:** HIGH — "Perpetrated" is the strongest criminal-vocabulary term applied to normal camera product use in the entire podcast corpus. The immediate "however" reassurance for Apple with no equivalent for Meta constitutes a structural vocabulary asymmetry.
+**Mechanism:** #316 (same as Ep074 — cross-publication comparison)
+**Cross-references:** #250 (9to5Mac three-channel pipeline), #173 (9to5 network gradient), #242 (pervertpods label containment), #200 (Amber Neely AppleInsider print coverage)
+
+---
+
+### Cross-Publication Podcast Comparison: AirPods Camera Leak Week (Aug 18-21, 2026)
+
+**Natural Experiment:** The same technological event (cameras in a face-worn wearable) covered by the same media ecosystem (Apple-dependent publications) in the same week, with the variable being ENTITY (Apple vs Meta).
+
+| Source | Date | Type | Entity | Vocabulary Register | Financial Dependency |
+|--------|------|------|--------|-------------------| -------------------|
+| 9to5Mac Security Bite (Waichulis) | Aug 18 | Print/Podcast | Apple+ / Meta- | "make Meta look reckless" | Apple affiliate 100% |
+| 9to5Mac Happy Hour #604 | Aug 20 | Podcast | Apple+ | "crazy leak" (excitement) | Apple affiliate 100% |
+| 9to5Mac Daily | Aug 21 | Podcast | Apple neutral | Release timeline story | Apple affiliate 100% |
+| 9to5Mac Overtime #078 | Aug 21 | Podcast | Apple+ / Meta- | "privacy-centric" vs "controversial" | Apple affiliate 100% |
+| AppleInsider Podcast | Aug 21 | Podcast | Apple+ / Meta- | "praise" vs "perpetrated" | Apple affiliate 100% |
+| Gizmodo (Pero, print) | Aug 21 | Article | Apple+ / Meta- | "potato quality" (resolution rationalization) | Ziff Davis / Google ads |
+| TechCrunch (Perez, print) | Aug 18 | Article | Apple+ / Meta- | "may not be the 'pervert pods'" | Regent LP (no Meta relationship) |
+
+**Aggregate Finding:** Seven sources across two media types, zero with Meta financial relationships, all producing identical entity-selective privacy vocabulary. The camera-in-wearable alarm vocabulary activates ONLY for Meta. When Apple deploys the same technology, alarm vocabulary is raised only to be immediately dismissed ("however," "won't take photos," "potato quality," "may not be").
+

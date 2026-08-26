@@ -1,3 +1,77 @@
+## Iteration #303 — Wed 2026-08-26 03:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Cross-Publication Podcast AirPods Camera Privacy Vocabulary Inversion — 9to5Mac Overtime 078 + AppleInsider Podcast (Aug 21, 2026)
+
+**Discovery:** Two independent Apple-ecosystem podcasts on the same day (Aug 21, 2026) cover the AirPods camera leak with identical entity-selective vocabulary bifurcation, creating a natural experiment in cross-medium camera-wearable privacy framing.
+
+### Podcast Episodes Analyzed
+
+**9to5Mac Overtime Ep078** (Aug 21, 2026):
+- Hosts: Jeff Benjamin & Fernando Silva
+- Title: "AirPods with cameras, a pretty big deal"
+- Description frames AirPods as "Apple's more privacy-centric alternative to the often-criticized and controversial Ray-Ban Meta Smart Glasses"
+- Apple vocabulary: "pretty big deal," "privacy-centric," "alternative"
+- Meta vocabulary: "often-criticized," "controversial"
+- Source: https://9to5mac.com/2026/08/21/9to5mac-overtime-078-airpods-with-cameras-a-pretty-big-deal/
+
+**AppleInsider Podcast** (Aug 21, 2026):
+- Hosts: Wesley Hilliard & William Gallagher
+- Frames Meta glasses usage with criminal-legal register: "creepy actions like those perpetrated while wearing Meta smart glasses"
+- Immediately pivots to Apple reassurance: "However, rumors suggest these AirPods with cameras won't take photos at all"
+- Show notes include: "There is a good reason to praise AirPods with cameras, and not fear them"
+- Source: https://appleinsider.com/articles/26/08/21/airpods-with-cameras-leak-apple-maps-ads-siri-ai-on-the-appleinsider-podcast
+
+### Key Finding: "Perpetrated" as Criminal-Legal Register
+
+AppleInsider's use of "perpetrated" is the strongest criminal-vocabulary term applied to normal camera product use in the entire MediaScope podcast corpus. You "perpetrate" crimes; you don't "perpetrate" with a camera. This implicitly criminalizes Meta glasses use while Apple's identical technology (cameras on a face-worn wearable) receives reassurance framing.
+
+### Cross-Medium Pipeline Extension
+
+This extends mechanism #250 (9to5Mac three-channel pipeline) to a FOUR-channel pipeline:
+1. Security Bite print (Aug 18, Waichulis) — "make Meta look reckless"
+2. Happy Hour #604 podcast (Aug 20) — "crazy leak" (excitement framing)
+3. 9to5Mac Daily podcast (Aug 21) — release timeline story
+4. **Overtime #078 podcast (Aug 21) — "privacy-centric" vs "controversial"** ← NEW
+
+Plus AppleInsider as a cross-publication comparison point (same day, same topic, same vocabulary bifurcation).
+
+### Financial Architecture
+
+Both publications derive 100% of revenue from Apple ecosystem coverage (affiliate links, Apple News, Apple Podcasts+). Neither has any Meta financial relationship. Revenue dependency predicts vocabulary polarity with perfect correlation.
+
+### New Mechanism
+
+**#316** — Cross-Publication Podcast AirPods Camera Privacy Vocabulary Inversion
+- Type: `cross_medium_privacy_vocabulary_inversion`
+- Domain: `podcast_sentiment`
+- Finding type: `cross_publication_podcast_natural_experiment`
+- Extends mechanisms: #250, #173, #242
+
+### New Test File
+
+`test_type_e_03am_cross_publication_podcast_airpods_camera_privacy_vocabulary_inversion_aug26.py`
+- 9 classes, 33 tests
+- TestMechanism316Exists (4 tests)
+- TestPodcastEpisodeProfiles (4 tests)
+- TestEntityVocabularyBifurcation (4 tests)
+- TestFinancialArchitecture (4 tests)
+- TestVocabularyLists (4 tests)
+- TestCrossReferences (3 tests)
+- TestConfounders (3 tests)
+- TestPodcastSentimentMd (4 tests)
+- TestSourceURLIntegrity (3 tests)
+
+All 33 tests pass. Regent LP tests (35/35) also pass — no regressions.
+
+### Stats After
+- 625 test files (was 624)
+- 33 new tests added
+- 316 mechanisms (was 315)
+- 75 podcast episodes tracked (was 73)
+- Pushed to GitHub
+
+---
+
 ## Iteration #302 — Wed 2026-08-26 02:00 PT (Type D: Test & Verify)
 
 ### Focus: Regent LP Ownership Correction Cross-Validation

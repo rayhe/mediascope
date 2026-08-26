@@ -31875,3 +31875,102 @@ publications:
       note: Wikipedia entry for Regent LP
     - url: https://www.sahmcapital.com/news/content/scoop-blackstones-idg-nears-deal-to-sell-foundry-to-regent-axios-2025-01-24
       note: Axios scoop on Blackstone/IDG selling Foundry to Regent
+
+  cross_publication_podcast_airpods_camera_privacy_vocabulary_inversion:
+    mechanism_id: 316
+    date_analyzed: '2026-08-26'
+    type: cross_medium_privacy_vocabulary_inversion
+    domain: podcast_sentiment
+    finding_type: cross_publication_podcast_natural_experiment
+    title: >-
+      Cross-Publication Podcast AirPods Camera Privacy Vocabulary Inversion:
+      9to5Mac Overtime 078 + AppleInsider Podcast Same-Day Entity-Selective
+      Framing (Aug 21, 2026)
+    finding: >-
+      Two independent Apple-ecosystem podcast shows on the same day (Aug 21, 2026)
+      cover the AirPods camera leak with identical entity-selective vocabulary
+      bifurcation. 9to5Mac Overtime 078 frames AirPods as a privacy-centric
+      alternative to the often-criticized and controversial Meta glasses. AppleInsider
+      Podcast uses perpetrated (criminal-legal register) for normal Meta glasses use
+      while pivoting to praise and reassurance for identical Apple technology. Five
+      podcast/print channels across two publications in 72 hours, zero with Meta
+      financial relationships, all producing identical vocabulary bifurcation. The
+      camera-in-wearable alarm vocabulary activates ONLY for Meta; when Apple deploys
+      the same technology, alarm is raised only to be immediately dismissed.
+    podcast_episodes:
+    - show: 9to5Mac Overtime
+      episode: "078"
+      title: "AirPods with cameras, a pretty big deal"
+      date: '2026-08-21'
+      hosts: Jeff Benjamin, Fernando Silva
+      url: https://9to5mac.com/2026/08/21/9to5mac-overtime-078-airpods-with-cameras-a-pretty-big-deal/
+      apple_vocabulary:
+      - "pretty big deal"
+      - "privacy-centric"
+      - "alternative"
+      meta_vocabulary:
+      - "often-criticized"
+      - "controversial"
+    - show: AppleInsider Podcast
+      episode: "Aug 21, 2026"
+      title: "AirPods with cameras leak, Apple Maps ads, & Siri AI"
+      date: '2026-08-21'
+      hosts: Wesley Hilliard, William Gallagher
+      url: https://appleinsider.com/articles/26/08/21/airpods-with-cameras-leak-apple-maps-ads-siri-ai-on-the-appleinsider-podcast
+      apple_vocabulary:
+      - "praise"
+      - "won't take photos at all"
+      - "not fear them"
+      meta_vocabulary:
+      - "creepy actions"
+      - "perpetrated"
+    financial_architecture:
+    - entity: 9to5Mac
+      parent: 9to5Mac Inc.
+      apple_dependency: "100%"
+      revenue_model: Apple affiliate links, Apple News, Google Preferred Source
+      meta_relationship: none
+    - entity: AppleInsider
+      parent: AppleInsider
+      apple_dependency: "100%"
+      revenue_model: Apple affiliate links, Patreon, Apple Podcasts+
+      meta_relationship: none
+    vocabulary_meta_alarm:
+    - "often-criticized"
+    - "controversial"
+    - "creepy actions"
+    - "perpetrated"
+    - "reckless"
+    vocabulary_apple_aspirational:
+    - "pretty big deal"
+    - "privacy-centric"
+    - "alternative"
+    - "praise"
+    - "won't take photos"
+    - "not fear them"
+    extends_mechanisms:
+    - 250
+    - 173
+    - 242
+    cross_references:
+    - 200
+    - 131
+    confounders:
+    - strength: STRONG
+      description: >-
+        AirPods cameras described as non-recording (1MP AI-only) vs Meta glasses
+        full photo/video capability
+    - strength: STRONG
+      description: >-
+        AirPods are pre-release (not shipping) with no documented misuse incidents
+    - strength: MODERATE
+      description: Both publications are Apple-focused by design
+    - strength: MODERATE
+      description: Different form factor (earbuds vs glasses) may justify different privacy calculus
+    sources:
+    - url: https://9to5mac.com/2026/08/21/9to5mac-overtime-078-airpods-with-cameras-a-pretty-big-deal/
+      note: 9to5Mac Overtime 078 episode page with description framing
+    - url: https://appleinsider.com/articles/26/08/21/airpods-with-cameras-leak-apple-maps-ads-siri-ai-on-the-appleinsider-podcast
+      note: AppleInsider Podcast Aug 21 with perpetrated vocabulary for Meta
+    - url: https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
+      note: 9to5Mac Security Bite Aug 18 print anchor for cross-medium pipeline
