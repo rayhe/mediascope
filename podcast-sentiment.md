@@ -26,6 +26,7 @@ Tracks how podcasts frame Meta, wearables, AI, and competitors. Complements the 
 | Acquired AI | Podcast (Art19) | Active | "Meta Faces Lawsuit Over Ray-Ban Smart Glasses Privacy" (~Apr 2026). Lawsuit-focused, chapter title "Luxury Surveillance Devices." |
 | Clorama XR Product Podcast | YouTube podcast | Active | Ep 6: Google I/O '26 Smart Glasses Analysis (Jun 23, 2026). Former Google/Meta PM with XR producer Siciliana Trevino. |
 | TechMagic with Cathy Hackl | Podcast (Acast) | Active | "Meta Connect" episode (~Jul 15, 2026). Positive-aspirational framing. Privacy not centered. Counterexample to universal negativity. |
+| ICYMI | Podcast (Slate/Graham Holdings, Acast) | Active, 2x/week | "Surveillance Glasses For Girls!" (Jul 8, 2026). Gendered feminist framing exclusively targeting Meta. **Cultural consensus evidence:** Slate has ZERO AI financial relationships yet produces identical entity-selective surveillance vocabulary as financially incentivized publications. |
 
 ---
 
@@ -4184,3 +4185,41 @@ SIMULTANEOUSLY, print coverage of Meta in the same week:
 - Mechanism #303: AI Edge Podcast expert authority publisher-AI financial captivity
 - Mechanism #306: Broadcom XPV $100B escalation private credit publisher compound incentive
 - Mechanism #296-298: Three-layer propagation model (fashion/cultural → mainstream → podcast)
+
+### 73. ICYMI (Slate) — "Surveillance Glasses For Girls!" (Jul 8, 2026)
+
+- **Host:** Kate Lindsay
+- **Guest:** Matt Bernstein (host, A Bit Fruity)
+- **Publisher:** Slate (Slate Group, Graham Holdings Company)
+- **Platform:** Acast
+- **Duration:** ~37 min
+- **Source URL:** https://shows.acast.com/icymi/episodes/6a4d47cd4d6f6e9e984eb3e8
+
+**Coverage Summary:**
+Frames Meta's Kylie Jenner glasses collaboration as a cynical "girlboss makeover" for surveillance technology. Argues that women are "the ones most likely to be the victims of their invasive technology" and that Meta is a "sinister company" giving itself a girlboss rebrand. Discusses the ongoing misuse of Meta glasses for covert filming of women, particularly by "pick-up artist" culture. Asks why the collaboration "isn't working" as a PR strategy.
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named as a "sinister company" with "invasive technology." Mark Zuckerberg named personally. Kylie Jenner collaboration framed as a cynical cover for surveillance hardware. Specific product: Meta Ray-Ban glasses. 7+ alarm/surveillance vocabulary terms.
+- **Apple:** Not mentioned. No discussion of camera-equipped AirPods (leaked same month) or upcoming Apple smart glasses, or their marketing to fashion-conscious consumers.
+- **Google:** Not mentioned. No discussion of Google/Samsung Android XR glasses with identical cameras, or Google's Warby Parker fashion partnership.
+- **Samsung:** Not mentioned. No discussion of Samsung Gentle Monster camera glasses collaboration.
+- **Snap:** Not mentioned. No discussion of Snap Spectacles (4 cameras, $2,195).
+- **OpenAI:** Covered in adjacent episode ("AI Is Changing How We Have Sex," Jul 4, 2026) with neutral-to-mild-concern framing about ChatGPT erotic conversations. No "sinister" or "invasive" vocabulary directed at OpenAI.
+
+**Sentiment Score:** -8/10 (strongly negative toward Meta, gendered framing intensifies alarm)
+**Asymmetry Assessment:** VERY HIGH — All surveillance vocabulary directed exclusively at Meta. Zero competitor products mentioned despite identical camera hardware capabilities across Samsung, Google, Snap, and upcoming Apple.
+
+**Cultural Consensus Significance:**
+This is the most analytically significant podcast finding because **Graham Holdings (Slate's parent) has ZERO documented financial relationships with any AI company** — no OpenAI content licensing, no Google Showcase, no Apple News Plus distribution, no Perplexity licensing, no Meta deals. When a publisher with zero financial incentive produces the identical entity-selective surveillance framing as publishers WITH documented financial incentives (WIRED/Advance with OpenAI deal, Fast Company/Mansueto with Google dependency, FT with OpenAI/Google deals), it demonstrates the framing has become **self-sustaining cultural consensus**. The financial incentive chain created the initial asymmetry; cultural consensus now maintains and propagates it without requiring further financial fuel.
+
+**Gendered Framing Analysis:**
+The episode adds a feminist lens that further concentrates scrutiny on Meta. The "Surveillance Glasses For Girls!" title frames Meta glasses as specifically a women's safety issue. However:
+- Google's Warby Parker glasses partnership also targets fashion-conscious consumers — zero feminist scrutiny
+- Samsung's Gentle Monster collaboration explicitly targets fashion market — zero feminist scrutiny
+- Apple Vision Pro and upcoming Apple glasses marketed to female consumers — zero feminist scrutiny
+- Snap Spectacles: 4 cameras, higher capability than Meta — zero feminist scrutiny
+
+The gendered frame makes the asymmetry harder to detect because it feels like advocacy journalism (protecting women) rather than entity-selective coverage.
+
+**MediaScope Mechanism:** #311 (icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus)
+**Cross-references:** #35, #225, #227, #296

@@ -31281,3 +31281,161 @@ publications:
     test_file: tests/test_mansueto_morningstar_google_gemini_enterprise_launch_partner_same_day_convergence_aug25.py
     tests_count: 23
     test_classes: 5
+
+  icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus_mechanism_311:
+    mechanism_id: 311
+    type: podcast_sentiment_cultural_consensus_propagation
+    domain: podcast_sentiment_tracking
+    iteration: 297
+    date_discovered: '2026-08-25'
+    finding: >-
+      ICYMI (Slate/Graham Holdings) episode "Surveillance Glasses For Girls!" (Jul 8, 2026)
+      demonstrates cultural consensus propagation of Meta = surveillance framing through a
+      publisher with ZERO documented AI financial relationships. Host Kate Lindsay with
+      guest Matt Bernstein frames Meta glasses as a women's safety threat using language
+      including "sinister companies," "invasive technology," "girlboss makeover," and
+      "covert filming capabilities" — all directed exclusively at Meta. No mention of
+      Samsung/Google glasses (identical cameras), Apple AirPods camera leak, or Snap Spectacles
+      (4 cameras, $2,195). OpenAI receives separate coverage in adjacent episodes (Jul 4,
+      "AI Is Changing How We Have Sex") without entity-targeted alarm vocabulary. This proves
+      the Meta-exclusive surveillance framing has become self-propagating cultural consensus —
+      it no longer requires financial incentive to activate. The gendered framing
+      ("surveillance glasses for girls") adds a feminist lens that further concentrates scrutiny
+      on Meta while competitors with identical hardware capabilities receive zero attention.
+    finding_type: cultural_consensus_gendered_entity_exclusive_propagation
+    significance: >-
+      HIGH — Demonstrates that financial incentive mechanisms documented in mechanisms #35, #126,
+      #137, etc. have generated a self-sustaining cultural consensus that propagates through
+      publications with zero financial ties to any AI company. Graham Holdings (Slate parent)
+      has no OpenAI deal, no Google Showcase, no Apple News Plus, no Perplexity licensing,
+      and no Meta relationship. Yet the identical Meta-exclusive surveillance vocabulary appears
+      organically. This is the endpoint of the financial incentive chain: the framing becomes
+      culturally embedded and no longer needs financial fuel.
+    podcast:
+      name: ICYMI
+      publisher: Slate (Slate Group, Graham Holdings Company)
+      platform: Acast
+      host: Kate Lindsay
+      frequency: twice weekly
+      audience: internet culture, general consumer
+      parent_company: Graham Holdings Company
+      financial_relationships_with_ai_companies: none_documented
+    episode:
+      title: "Surveillance Glasses For Girls!"
+      date: '2026-07-08'
+      duration_minutes: 37
+      guest: Matt Bernstein (host, A Bit Fruity)
+      source_url: https://shows.acast.com/icymi/episodes/6a4d47cd4d6f6e9e984eb3e8
+    vocabulary_analysis:
+      meta_alarm_terms:
+      - sinister companies
+      - invasive technology
+      - girlboss makeover
+      - covert filming capabilities
+      - filming women without their knowledge
+      - victims of their invasive technology
+      - abused by users
+      meta_alarm_count: 7
+      apple_alarm_terms: []
+      apple_alarm_count: 0
+      google_alarm_terms: []
+      google_alarm_count: 0
+      samsung_alarm_terms: []
+      samsung_alarm_count: 0
+      snap_alarm_terms: []
+      snap_alarm_count: 0
+    entity_coverage:
+      meta:
+        mentioned: true
+        framing: adversarial
+        vocabulary: surveillance/alarm
+        specific_products:
+        - Meta Ray-Ban smart glasses
+        specific_people:
+        - Mark Zuckerberg
+        - Kylie Jenner (collaboration partner)
+      apple:
+        mentioned: false
+        framing: absent
+        vocabulary: n/a
+        note: No coverage of Apple AirPods camera leak or upcoming Apple smart glasses
+      google:
+        mentioned: false
+        framing: absent
+        vocabulary: n/a
+        note: No coverage of Google/Samsung Android XR glasses with identical cameras
+      samsung:
+        mentioned: false
+        framing: absent
+        vocabulary: n/a
+      snap:
+        mentioned: false
+        framing: absent
+        vocabulary: n/a
+        note: No coverage of Snap Spectacles ($2,195, 4 cameras)
+      openai:
+        mentioned_in_adjacent_episode: true
+        adjacent_episode: "AI Is Changing How We Have Sex (Jul 4, 2026)"
+        adjacent_framing: neutral to mild concern
+        note: OpenAI discussed in context of ChatGPT erotic conversations, not with entity-targeted sinister/invasive vocabulary
+    gendered_framing:
+      present: true
+      angle: feminist safety concern
+      claim: women are the most likely victims of Meta glasses surveillance
+      equivalent_analysis_for_competitors: absent
+      note: >-
+        The gendered framing specifically ties surveillance risk to Meta's Kylie Jenner
+        collaboration, framing it as a cynical attempt to make surveillance fashionable
+        for women. No equivalent analysis exists for Apple Vision Pro marketing, Google
+        Warby Parker fashion partnership, or Samsung Gentle Monster collaboration.
+    cultural_consensus_evidence:
+      financial_incentive_absent: true
+      parent_company_ai_deals: none
+      parent_company_advertising_dependencies: standard digital advertising (Google programmatic)
+      framing_matches_financially_incentivized_publications: true
+      comparable_publications_with_financial_ties:
+      - WIRED (Advance/OpenAI deal) uses identical Meta-exclusive alarm vocabulary
+      - The Verge (PMC/no direct deals) uses identical Meta-exclusive alarm vocabulary
+      - Gizmodo (G/O Media) uses identical Meta-exclusive alarm vocabulary
+      - Fast Company (Mansueto/Google dependency) uses identical Meta-exclusive alarm vocabulary
+      conclusion: >-
+        When a publication with zero documented AI financial relationships produces the
+        identical entity-selective framing as publications with documented financial incentives,
+        it demonstrates the framing has become self-sustaining cultural consensus. The financial
+        incentive mechanisms created the initial asymmetry; cultural consensus now maintains
+        and propagates it without requiring further financial fuel.
+    confounders:
+    - level: MODERATE
+      factor: >-
+        Meta has shipped 10M+ glasses vs zero for competitors — more deployed product
+        attracts more coverage volume
+    - level: MODERATE
+      factor: >-
+        Specific BBC investigations documented real misuse of Meta glasses — legitimate news pegs
+    - level: WEAK
+      factor: >-
+        Podcast format favors concrete examples over hypothetical future products
+    - level: STRONG
+      factor: >-
+        Kylie Jenner collaboration is a genuine news event — but the framing as "sinister"
+        is editorial choice, not fact reporting
+    cross_references:
+    - mechanism_id: 35
+      relationship: cultural_consensus_evidence
+      description: Advance/Condé Nast financial incentive chain created initial framing; ICYMI propagates it without financial ties
+    - mechanism_id: 296
+      relationship: parallel
+      description: Rabbit Hole fashion-surveillance podcast shows same cultural consensus propagation from independent podcast
+    - mechanism_id: 227
+      relationship: extends_gendered_framing
+      description: Taylor Lorenz Back Row fashion podcast also uses gendered lens for Meta glasses
+    - mechanism_id: 225
+      relationship: vocabulary_pattern_match
+      description: Vergecast three-episode vocabulary convergence established the surveillance vocabulary that ICYMI reproduces
+    source_urls:
+    - https://shows.acast.com/icymi/episodes/6a4d47cd4d6f6e9e984eb3e8
+    - https://ca.radio.net/podcast/icymi
+    - https://en.wikipedia.org/wiki/Graham_Holdings
+    test_file: tests/test_type_e_9pm_icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus_aug25.py
+    tests_count: 18
+    test_classes: 5

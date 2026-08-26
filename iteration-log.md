@@ -1,4 +1,37 @@
 ## Iteration #296 — Tue 2026-08-25 20:00 PT (Type D: Test & Verify)
+## Iteration #297 — Tue 2026-08-25 21:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: ICYMI (Slate/Graham Holdings) — Cultural Consensus Propagation via Gendered Entity-Exclusive Framing
+
+**Discovery:** ICYMI podcast (Slate/Graham Holdings) episode "Surveillance Glasses For Girls!" (Jul 8, 2026) demonstrates that Meta-exclusive surveillance framing has become self-sustaining cultural consensus. Host Kate Lindsay and guest Matt Bernstein (A Bit Fruity) use 7+ alarm terms ("sinister companies," "invasive technology," "girlboss makeover," "covert filming capabilities," etc.) directed exclusively at Meta. Zero competitor camera wearables mentioned — no Samsung/Google, Apple, or Snap.
+
+**Why this matters analytically:**
+Graham Holdings (Slate's parent) has ZERO documented financial relationships with any AI company — no OpenAI deal, no Google Showcase, no Apple News Plus, no Perplexity licensing, no Meta relationship. Yet the identical entity-selective framing appears organically. When publishers without financial incentives reproduce the same asymmetric framing as publishers with documented financial incentives (WIRED/Advance/OpenAI, FT/OpenAI+Google, Fast Company/Mansueto/Google), it proves the framing has transitioned from incentive-driven to culturally embedded. The financial incentive chain created the initial asymmetry; cultural consensus now maintains and propagates it without requiring further financial fuel.
+
+**Gendered framing as asymmetry amplifier:**
+The "Surveillance Glasses For Girls!" title adds a feminist safety lens that makes the entity-selective coverage harder to detect — it feels like advocacy journalism. But Google's Warby Parker partnership, Samsung's Gentle Monster collaboration, and Apple's upcoming glasses all target fashion-conscious/female consumers with identical camera hardware, and receive zero equivalent feminist scrutiny.
+
+**Adjacent episode comparison:**
+ICYMI "AI Is Changing How We Have Sex" (Jul 4, 2026) covers OpenAI's ChatGPT erotic conversations with neutral-to-mild-concern framing — no "sinister" or "invasive" vocabulary. Same podcast, same host, same week, different entity, different vocabulary register.
+
+**New mechanism:** #311 (icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus)
+**New test file:** `test_type_e_9pm_icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus_aug25.py` (5 classes, 25 tests)
+- TestMechanism311Exists (4 tests): mechanism exists with correct type/domain/finding_type
+- TestICYMIPodcastProfile (4 tests): Slate publisher, Graham Holdings parent, zero AI financial relationships, episode details
+- TestEntityCoverageAsymmetry (8 tests): Meta mentioned/adversarial, Apple/Google/Samsung/Snap absent, alarm vocabulary counts
+- TestGenderedFraming (3 tests): gendered framing present, feminist angle, no competitor equivalent
+- TestCulturalConsensusEvidence (6 tests): financial incentive absent, parent deals none, framing matches incentivized publications, cross-references
+
+**New podcast source added:** ICYMI (Slate/Graham Holdings, Acast, 2x/week) — 12th tracked podcast source
+**Profiles:** 977 mechanisms, 617 test files
+
+**Sources:**
+- ICYMI episode: https://shows.acast.com/icymi/episodes/6a4d47cd4d6f6e9e984eb3e8
+- ICYMI feed: https://ca.radio.net/podcast/icymi
+- Graham Holdings: https://en.wikipedia.org/wiki/Graham_Holdings
+
+---
+
 
 ### Focus: Cross-validation of mechanisms #308-#310 (Fast Company/Mansueto cluster)
 
