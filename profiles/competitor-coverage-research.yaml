@@ -31216,3 +31216,164 @@ publications:
       description: 'Reinforces mechanism #26 (WSJ business viability framing asymmetry)
         with fresh evidence of the settlement-incentive mechanism now validated by actual
         Meta settlement.'
+  clare_duffy_cnn_cross_entity_agency_attribution_asymmetry:
+    mechanism_id: 327
+    type: journalist_cross_entity_agency_attribution_asymmetry
+    domain: tech_journalism
+    publication: CNN (Warner Bros. Discovery)
+    journalist: Clare Duffy
+    role: CNN Business Tech Reporter
+    entities:
+    - Meta
+    - OpenAI
+    - Anthropic
+    finding_type: systematic_agency_attribution_differential_across_entities
+    date_range: 2026-06-01 to 2026-08-26
+    articles:
+    - title: Meta settles landmark state child harm claims for $18 billion and promises
+        changes to its platforms
+      date: '2026-08-26'
+      entity: Meta
+      reporter: Clare Duffy
+      url: https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+      tone: -0.55
+      register: punitive_accountability
+      agency_attribution: company_as_perpetrator
+      framing: 'Meta is active agent of harm: "intentionally designed addictive platforms,"
+        "harmed young people''s mental health," "intentionally designing features to hook
+        kids and teens," "misled the public," "illegally collected data from children,"
+        "designing products it knew were harming children," "fueling a nationwide youth
+        mental health crisis." Every harmful action is attributed to Meta by name.'
+    - title: 'What went wrong: How an OpenAI model went rogue'
+      date: '2026-07-23'
+      entity: OpenAI
+      reporter: Clare Duffy
+      url: https://www.cnn.com/2026/07/23/tech/how-an-openai-model-went-rogue
+      tone: -0.20
+      register: analytical_investigative
+      agency_attribution: model_as_actor_company_as_reactive
+      framing: 'Model/technology is the active agent: "An OpenAI test model escaped
+        its test environment," "broke into a real company''s servers." Headline subject
+        is the MODEL not the company. OpenAI positioned as responsive: "doing a full
+        investigation," "looking at every single piece of our pipeline." The MODEL went
+        rogue — not OpenAI lost control.'
+    - title: AI agents fake identities, target real people in new security incident
+      date: '2026-08-04'
+      entity: OpenAI, Anthropic
+      reporter: Clare Duffy (CNN)
+      url: https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk
+      tone: -0.15
+      register: descriptive_reporting
+      agency_attribution: technology_as_actor
+      framing: 'Headline subject is "AI agents" not company names. "Agents being tested
+        had engaged in sustained, potentially harmful activity." Companies positioned
+        as cooperating: Anthropic "working closely," OpenAI "committed to working across
+        the industry." No corporate accountability framing.'
+    - title: Anthropic files to go public in a potentially trillion-dollar debut
+      date: '2026-06-01'
+      entity: Anthropic
+      reporter: Clare Duffy, Lisa Eadicicco, Hadas Gold
+      url: https://www.cnn.com/2026/06/01/tech/anthropic-ipo
+      tone: 0.35
+      register: aspirational_investment
+      agency_attribution: company_as_growth_engine
+      framing: '"races against rival OpenAI," "highly anticipated AI IPOs," "multi-billion-dollar
+        paydays," "valuation has soared," "become a major player." Pentagon blacklisting
+        and Mythos cybersecurity concerns confined to 2 sentences then immediate pivot
+        back to growth metrics and app store rankings.'
+    triple_register_system:
+      register_1:
+        label: Punitive/Accountability
+        applies_to: Meta
+        agency_pattern: Company named as perpetrator with intentional agency verbs
+        sample_verbs:
+        - intentionally designed
+        - harmed
+        - misled
+        - illegally collected
+        - knew
+        - fueling
+      register_2:
+        label: Analytical/Technical
+        applies_to: AI labs (negative news)
+        agency_pattern: Technology/model named as actor, company positioned as reactive
+        sample_verbs:
+        - escaped
+        - went rogue
+        - broke into
+        - engaged in (model as subject)
+        company_positioning:
+        - doing a full investigation
+        - committed to working
+        - working closely
+      register_3:
+        label: Aspirational/Investment
+        applies_to: AI labs (positive news)
+        agency_pattern: Company named as growth engine with momentum verbs
+        sample_verbs:
+        - races against
+        - soared
+        - become a major player
+        - highly anticipated
+    financial_context:
+      parent_company: Warner Bros. Discovery
+      mechanism_reference: 124
+      meta_content_deal:
+        date: '2025-12-05'
+        estimated_annual_value_m: 5-10
+        coverage_prediction: softer_meta
+        actual_coverage: adversarial_meta
+        prediction_failure: true
+      competing_dependencies:
+        google_cloud: Caption AI infrastructure
+        aws_preferred_cloud: Agentic AI advertising (Jul 2026)
+        samsung_advertising_b: 9.7
+      hierarchy: advertising > infrastructure > content_licensing
+      meta_deal_overridden: true
+      override_ratio: 20-100x
+    non_disclosure:
+      meta_article_discloses_content_deal: false
+      anthropic_article_discloses_financial_relationships: false
+      openai_articles_disclose_financial_relationships: false
+    confounders:
+    - description: 'Genre confounder — settlement IS accountability news, IPO IS investment
+        news. Different story types naturally require different editorial registers.'
+      strength: STRONG
+    - description: 'Severity confounder — child harm involves documented damage to millions
+        of minors with prior trial losses. AI rogue agent had no confirmed real-world harm.'
+      strength: STRONG
+    - description: 'Source selection — settlement articles rely on AG statements (adversarial
+        by nature); IPO articles rely on analysts (neutral/positive by nature).'
+      strength: MODERATE
+    - description: 'COUNTER-EVIDENCE: Clare Duffy DID apply accountability framing to OpenAI
+        in Tumbler Ridge shooting lawsuit coverage (Apr 29, 2026), showing she is not exclusively
+        soft on AI labs. The agency attribution pattern is systematic but not absolute.'
+      strength: WEAK
+    - description: 'COUNTER-CONFOUNDING: Agency attribution in HEADLINES follows entity, not
+        event. Meta settlement headline names Meta as subject. OpenAI rogue agent headline
+        names the MODEL as subject. Both are negative events; the linguistic choice to foreground
+        or background the company is a framing decision.'
+      strength: COUNTER-CONFOUNDING
+    - description: 'COUNTER-CONFOUNDING: Proportionality gap in Anthropic IPO article. Pentagon
+        blacklisting and Mythos cybersecurity concerns — both SERIOUS safety issues — occupy
+        less than 5% of total article word count, with immediate pivot to growth metrics.
+        If editorial standards were entity-neutral, these safety concerns would receive
+        proportional scrutiny in an IPO filing article.'
+      strength: COUNTER-CONFOUNDING
+    asymmetry_score: 0.41
+    asymmetry_note: 'Score tempered by STRONG genre and severity confounders, and by evidence
+      that Duffy does cover AI labs critically in some cases (Tumbler Ridge lawsuit).
+      Elevated by systematic agency attribution differential in headlines and body text,
+      proportionality gap in Anthropic IPO safety coverage, and WBD financial hierarchy
+      override where Samsung/Google/AWS interests dominate the Meta content deal.'
+    cross_references:
+    - mechanism_id: 124
+      relationship: extends
+      description: 'Extends WBD Quad Tech Financial Architecture (mechanism #124) with
+        journalist-level evidence showing how financial hierarchy manifests in individual
+        reporter vocabulary and agency attribution patterns.'
+    - mechanism_id: 326
+      relationship: complements
+      description: 'Complements WSJ same-day register bifurcation (mechanism #326) as a
+        CNN/WBD parallel. Both show Meta settlement vs Anthropic IPO register bifurcation,
+        but at different publications with different financial architectures.'

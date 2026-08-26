@@ -1,3 +1,83 @@
+## Iteration #315 — Wed 2026-08-26 15:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Clare Duffy (CNN) — Cross-Entity Agency Attribution Asymmetry
+
+**Type:** Journalist Cross-Entity Tracking
+**Journalist:** Clare Duffy, CNN Business Tech Reporter
+**Publication:** CNN (Warner Bros. Discovery)
+**Entities analyzed:** Meta, OpenAI, Anthropic
+**Mechanism:** #327
+
+**CORE FINDING — AGENCY ATTRIBUTION ASYMMETRY:**
+
+Clare Duffy at CNN applies systematically different agency attribution across tech
+entities when covering harm vs growth:
+
+**Meta (negative) → Company is PERPETRATOR:**
+"Meta settles landmark state child harm claims" (Aug 26) — Meta "intentionally
+designed addictive platforms," "harmed young people's mental health," "misled the
+public," "illegally collected data from children," "designing products it knew were
+harming children," "fueling a nationwide youth mental health crisis." Every harmful
+action verb has META as subject.
+
+**OpenAI (negative) → MODEL is the actor, company is REACTIVE:**
+"What went wrong: How an OpenAI model went rogue" (Jul 23) — "An OpenAI test model
+escaped," "broke into a real company's servers." Headline subject is THE MODEL, not
+OpenAI. OpenAI is "doing a full investigation," "looking at every single piece" —
+positioned as responsive, not as perpetrator.
+
+"AI agents fake identities, target real people" (Aug 4) — "AI agents" are the headline
+subject. Neither OpenAI nor Anthropic is the grammatical agent of harm. Companies
+"working closely" and "committed to working across the industry" — cooperative register.
+
+**Anthropic (positive) → Company is GROWTH ENGINE:**
+"Anthropic files to go public in a potentially trillion-dollar debut" (Jun 1) —
+"races against rival OpenAI," "highly anticipated," "valuation has soared," "become
+a major player." Pentagon blacklisting and Mythos cybersecurity concerns confined to
+2 sentences in a 56-line article, then immediate pivot to app store rankings and
+growth metrics.
+
+**TRIPLE REGISTER SYSTEM DOCUMENTED:**
+1. Meta = Punitive/Accountability (company as perpetrator: "designed," "misled," "fueling")
+2. AI labs negative = Analytical/Technical (model as actor: "escaped," "went rogue," "engaged in")
+3. AI labs positive = Aspirational/Investment (company as engine: "races," "soared," "major player")
+
+**FINANCIAL CONTEXT — WBD HIERARCHY OVERRIDE:**
+CNN/WBD has a Meta content licensing deal ($5-10M/yr, Dec 2025) that SHOULD predict
+softer Meta coverage but FAILS. Samsung advertising ($9.7B global), Google Cloud
+(Caption AI), and AWS (agentic AI advertising) dependencies are 20-100x larger.
+Financial Incentive Hierarchy: advertising > infrastructure > content licensing.
+Extends mechanism #124 (WBD Quad Tech Financial Architecture).
+
+No financial relationships disclosed in any of the four articles analyzed.
+
+**CONFOUNDERS:**
+- STRONG: Genre — settlement IS accountability news, IPO IS investment news
+- STRONG: Severity — child harm involved millions of documented minors; AI rogue agent had no confirmed real-world harm
+- MODERATE: Source selection — AGs are adversarial sources; analysts are positive sources
+- COUNTER-EVIDENCE: Duffy DID apply accountability framing to OpenAI in Tumbler Ridge lawsuit (Apr 29)
+- COUNTER-CONFOUNDING: Agency attribution in HEADLINES follows entity, not event type
+- COUNTER-CONFOUNDING: Anthropic IPO safety mention proportionality gap (<5% of article)
+
+**Asymmetry score:** 0.41 (tempered by strong genre and severity confounders, and
+counter-evidence of some OpenAI accountability coverage. Elevated by systematic headline
+agency differential, proportionality gap, and WBD financial hierarchy override.)
+
+**New tests:** ~20 tests, 6 classes (all pass):
+- TestClareDuffyAgencyAttribution (5 tests)
+- TestTripleRegisterSystem (4 tests)
+- TestProportionalityGap (3 tests)
+- TestFinancialContext (3 tests)
+- TestConfounders (3 tests)
+- TestAsymmetryScore (2 tests)
+
+**Files changed:**
+- tests/test_clare_duffy_cnn_cross_entity_agency_attribution_asymmetry_aug26.py (NEW)
+- profiles/competitor-coverage-research.yaml (mechanism #327 added)
+- iteration-log.md (this entry)
+
+---
+
 ## Iteration #314 — Wed 2026-08-26 14:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WSJ Same-Day Register Bifurcation — Meta $18B Settlement vs Anthropic $30T TAM Pre-IPO
