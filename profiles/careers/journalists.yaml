@@ -19030,6 +19030,50 @@ journalists:
       google_search_dependency: high
       samsung_advertising: $9.7B annual
       meta_relationship: none
+- name: Wesley Hilliard
+  publication: appleinsider
+  notes: 'Rumor Expert at AppleInsider and AppleInsider Podcast co-host. 10-year US Navy veteran (nuclear-trained electrician) who became captivated by Apple privacy and device security. Applies resolution-conditional privacy vocabulary inversion to camera wearable coverage.'
+  career:
+  - role: nuclear_trained_electrician
+    employer: US Navy
+    years: 10 years
+  - role: rumor_expert_podcast_host
+    publication: appleinsider
+    start: '2019'
+    end: present
+  source_urls:
+  - https://appleinsider.com/editor/wesley+hilliard
+  - https://appleinsider.com/articles/26/08/19/airpods-with-cameras-not-coming-till-2027-wont-take-photos
+  competitor_coverage:
+    meta:
+      articles:
+      - date: '2025-09-18'
+        headline: Meta Ray-Ban Display are not competing with Apple Vision
+        tone_score: -0.55
+        vocabulary:
+        - privacy-invading face cameras
+        - invasive and ugly
+        url: https://appleinsider.com/articles/25/09/18/meta-ray-ban-display-wont-challenge-apples-eventual-smart-glasses
+      - date: '2026-08-19'
+        headline: AirPods with cameras not coming till 2027
+        tone_score: -0.50
+        vocabulary:
+        - abuses committed by people wearing Meta smart glasses
+        - pervert glasses
+        url: https://appleinsider.com/articles/26/08/19/airpods-with-cameras-not-coming-till-2027-wont-take-photos
+      framing_pattern: surveillance_harm_vocabulary
+    apple:
+      articles:
+      - date: '2026-08-19'
+        headline: AirPods with cameras not coming till 2027
+        tone_score: 0.70
+        vocabulary:
+        - should not worry
+        - potential solution
+        - life-changing
+        - real safeguards
+        url: https://appleinsider.com/articles/26/08/19/airpods-with-cameras-not-coming-till-2027-wont-take-photos
+      framing_pattern: utility_safeguard_vocabulary
 - career:
   - beat: AI, technology, policy
     end: present

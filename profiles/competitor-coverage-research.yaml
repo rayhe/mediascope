@@ -32111,3 +32111,62 @@ publications:
       note: Meta stumbles article (Jul 30, 2026)
     - url: https://www.wsj.com/tech/ai/the-ai-backlash-is-starting-to-sting-129a708d
       note: AI backlash sting article (Jul 22, 2026)
+  wesley_hilliard_appleinsider_resolution_conditional_privacy_vocabulary_inversion:
+    mechanism_id: 318
+    type: B
+    name: Wesley Hilliard (AppleInsider) Resolution-Conditional Privacy Vocabulary Inversion
+    journalist: Wesley Hilliard
+    publication: AppleInsider
+    iteration: 305
+    date_added: '2026-08-26'
+    finding_summary: >-
+      Wesley Hilliard, Rumor Expert at AppleInsider and weekly podcast co-host, applies
+      resolution-conditional privacy vocabulary inversion to camera wearable coverage.
+      Meta 12MP cameras receive surveillance/harm vocabulary across 2 articles and 1 podcast
+      (12+ adversarial terms, 0 protective terms). Apple planned 1MP AirPods cameras receive
+      utility/safeguard vocabulary (7+ protective terms, 0 adversarial terms). Both products
+      serve the same core function: feeding camera data to AI for contextual awareness.
+    primary_articles:
+    - url: https://appleinsider.com/articles/26/08/19/airpods-with-cameras-not-coming-till-2027-wont-take-photos
+      date: '2026-08-19'
+      title: "AirPods with cameras not coming till 2027, won't take photos"
+    - url: https://appleinsider.com/articles/25/09/18/meta-ray-ban-display-wont-challenge-apples-eventual-smart-glasses
+      date: '2025-09-18'
+      title: "Meta Ray-Ban Display aren't competing with Apple's Vision"
+    podcast_evidence:
+    - url: https://appleinsider.com/articles/26/08/21/airpods-with-cameras-leak-apple-maps-ads-siri-ai-on-the-appleinsider-podcast
+      date: '2026-08-21'
+      title: "AirPods with cameras leak, Apple Maps ads, & Siri AI"
+      hosts: Wesley Hilliard, William Gallagher
+    confounding_factors:
+    - strength: STRONG
+      description: >-
+        AppleInsider is an Apple-focused publication by design. Aspirational Apple
+        coverage and adversarial competitor coverage is definitional, not anomalous.
+    - strength: STRONG
+      description: >-
+        Meta glasses HAVE documented misuse incidents. Apple camera AirPods do not
+        exist yet and cannot have incidents.
+    - strength: STRONG
+      description: >-
+        Camera capabilities genuinely differ. Meta 12MP can take photos/videos,
+        Apple planned 1MP reportedly cannot. Resolution is a real privacy differentiator.
+    - strength: MODERATE
+      description: >-
+        Hilliard Navy background and self-described Apple conversion narrative suggest
+        genuine personal conviction not purely financial positioning.
+    - strength: MODERATE
+      description: >-
+        Meta tone-deaf spokesperson response to harassment reports provided legitimate
+        editorial ammunition.
+    - strength: WEAK
+      description: >-
+        Other Apple-focused publications show similar patterns, suggesting market-segment
+        norm rather than individual anomaly.
+    cross_references:
+    - mechanism_id: 234
+      description: Malcolm Owen AppleInsider aspirational-cautionary dyad
+    - mechanism_id: 285
+      description: Amber Neely AppleInsider surveillance vocabulary asymmetry
+    - mechanism_id: 303
+      description: Cross-publication podcast AirPods vocabulary inversion

@@ -1,3 +1,45 @@
+## Iteration #305 — Wed 2026-08-26 05:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Wesley Hilliard (AppleInsider) Resolution-Conditional Privacy Vocabulary Inversion
+
+**Journalist:** Wesley Hilliard (Rumor Expert, AppleInsider Podcast co-host)
+**Publication:** AppleInsider (Apple-focused, 100% Apple-dependent revenue)
+**Entities compared:** Apple AirPods cameras vs Meta Ray-Ban glasses cameras
+**Mechanism:** #318 — resolution_conditional_privacy_vocabulary_inversion
+
+**Discovery:** Wesley Hilliard applies systematically inverted privacy vocabulary to
+camera wearable coverage based on entity identity. Across 2 articles (Aug 2026, Sep 2025)
+and 1 podcast (Aug 2026), Meta's 12MP cameras receive 12+ alarm terms ("privacy-invading
+face cameras," "invasive and ugly," "eyesore," "pervert glasses," "abuses committed,"
+"men abusing women," "damage") while Apple's planned 1MP AirPods cameras receive 7+
+protective terms ("shouldn't worry," "potential solution," "life-changing," "real
+safeguards," "private, secure, and actually useful").
+
+**Core asymmetry:** Both products feed camera data to AI assistants for contextual
+awareness — the same core function. Resolution is genuinely different (12MP vs 1MP),
+but vocabulary differential exceeds what resolution explains. "Invasive and ugly" vs
+"life-changing" are entity-conditional value judgments about the COMPANY, not the
+RESOLUTION. Personal conviction markers reinforce: "I'm okay with Apple shipping
+glasses without that capability" vs "I'll ask you not to wear them around me."
+
+**Significance:** This is the THIRD AppleInsider writer documented with the same
+vocabulary pattern (after Amber Neely #285 and Malcolm Owen #234), establishing
+a publication-level rather than individual-level pattern. Wesley's self-described
+biographical arc — Navy veteran who became "captivated by the ideas Apple presented"
+regarding privacy — suggests the pattern reflects both genuine conviction and
+structural incentive.
+
+**Counter-confounders:** (1) AppleInsider IS an Apple-focused publication — this is
+expected editorial alignment, not hidden bias. (2) Meta HAS documented misuse incidents;
+Apple's product doesn't exist yet. (3) Resolution difference is genuine. (4) Hilliard's
+Navy background suggests authentic privacy conviction, not cynical positioning.
+
+**Files changed:**
+- tests/test_wesley_hilliard_appleinsider_resolution_conditional_privacy_vocabulary_inversion_aug26.py (new)
+- profiles/careers/journalists.yaml (Wesley Hilliard profile added)
+- profiles/competitor-coverage-research.yaml (mechanism #318 added)
+- iteration-log.md (this entry)
+
 ## Iteration #304 — Wed 2026-08-26 04:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WSJ Anthropic Pre-IPO Aspirational Narrative vs Meta AI Investment Scrutiny Bifurcation
