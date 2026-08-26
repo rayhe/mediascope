@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # ~21,426+ tests across 631 test files (all from real articles)
+├── tests/                       # 22706 tests across 632 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1076,3 +1076,54 @@ mediascope/
 - **Asymmetry Score:** 0.68
 - **Confounders:** 2 STRONG (AppleHolic branding — readers know the angle; Apple's stronger empirical privacy track record), 2 MODERATE (column format vs neutral reporting; Apple glasses unreleased — no scandals possible), 1 WEAK (PR-as-fact endorsement)
 - **Cross-references:** Mechanisms #251, #148, #62, #92 (Apple privacy N+50 cascade)
+│   ├── test_anthropic_credit_facility_bank_multiplication_coverage_incentive_amplification_aug25.py # anthropic credit facility bank multiplication coverage incentive amplification aug25
+│   ├── test_anthropic_piracy_settlement_ipo_underwriter_publisher_financial_architecture_aug24.py # anthropic piracy settlement ipo underwriter publisher financial architecture aug24
+│   ├── test_broadcom_xpv_100b_escalation_private_credit_publisher_compound_incentive_aug25.py # broadcom xpv 100b escalation private credit publisher compound incentive aug25
+│   ├── test_chandra_steele_android_police_cross_entity_camera_wearable_privacy_responsibility_displacement_aug25.py # chandra steele android police cross entity camera wearable privacy responsibility displacement aug25
+│   ├── test_conde_nast_post_search_openai_citation_dependency_financial_architecture_aug25.py # conde nast post search openai citation dependency financial architecture aug25
+│   ├── test_cross_publication_apple_camera_airpods_pervertpods_label_containment_aug24.py # cross publication apple camera airpods pervertpods label containment aug24
+│   ├── test_daniel_cooper_engadget_within_review_cross_entity_privacy_benchmark_inversion_aug25.py # daniel cooper engadget within review cross entity privacy benchmark inversion aug25
+│   ├── test_david_price_macworld_foundry_apple_ecosystem_advocacy_editorial_framing_injection_aug26.py # david price macworld foundry apple ecosystem advocacy editorial framing injection aug26
+│   ├── test_fast_company_dan_clay_panopticon_infrastructure_meta_exclusive_surveillance_narrative_aug25.py # fast company dan clay panopticon infrastructure meta exclusive surveillance narrative aug25
+│   ├── test_fast_company_editorial_commissioning_bifurcation_schwarz_clay_cross_entity_predetermination_aug25.py # fast company editorial commissioning bifurcation schwarz clay cross entity predetermination aug25
+│   ├── test_fast_company_google_warby_parker_camera_glasses_vocabulary_parity_meta_exclusive_stigma_aug25.py # fast company google warby parker camera glasses vocabulary parity meta exclusive stigma aug25
+│   ├── test_gizmodo_cross_entity_ai_chat_ad_targeting_vocabulary_bifurcation_aug24.py # gizmodo cross entity ai chat ad targeting vocabulary bifurcation aug24
+│   ├── test_gizmodo_ice_ban_entity_selection_openai_camera_device_bore_framing_asymmetry_aug24.py # gizmodo ice ban entity selection openai camera device bore framing asymmetry aug24
+│   ├── test_gizmodo_openai_ad_infra_maturation_coverage_selection_silence_aug25.py # gizmodo openai ad infra maturation coverage selection silence aug25
+│   ├── test_goldman_sachs_dual_pe_jv_cross_investment_compound_financial_architecture_aug26.py # goldman sachs dual pe jv cross investment compound financial architecture aug26
+│   ├── test_james_pero_gizmodo_apple_glasses_privacy_minefield_externalization_meta_routing_aug25.py # james pero gizmodo apple glasses privacy minefield externalization meta routing aug25
+│   ├── test_lawrence_bonk_engadget_cross_entity_camera_wearable_vocabulary_inversion_apple_meta_aug24.py # lawrence bonk engadget cross entity camera wearable vocabulary inversion apple meta aug24
+│   ├── test_le_monde_institutional_editorial_register_bifurcation_meta_openai_aug26.py # le monde institutional editorial register bifurcation meta openai aug26
+│   ├── test_lucas_ropek_techcrunch_cross_entity_camera_glasses_privacy_vocabulary_omission_aug24.py # lucas ropek techcrunch cross entity camera glasses privacy vocabulary omission aug24
+│   ├── test_mansueto_morningstar_google_gemini_enterprise_launch_partner_same_day_convergence_aug25.py # mansueto morningstar google gemini enterprise launch partner same day convergence aug25
+│   ├── test_moinak_pal_digital_trends_cross_entity_camera_wearable_reputation_transfer_framing_aug25.py # moinak pal digital trends cross entity camera wearable reputation transfer framing aug25
+│   ├── test_openai_chatgpt_ads_europe_le_monde_content_ad_cannibalization_financial_architecture_aug26.py # openai chatgpt ads europe le monde content ad cannibalization financial architecture aug26
+│   ├── test_raymond_wong_gizmodo_cross_entity_camera_privacy_vocabulary_concentration_aug24.py # raymond wong gizmodo cross entity camera privacy vocabulary concentration aug24
+│   ├── test_rebecca_bellan_techcrunch_cross_entity_ai_lab_control_vocabulary_inversion_aug25.py # rebecca bellan techcrunch cross entity ai lab control vocabulary inversion aug25
+│   ├── test_regent_lp_pe_media_empire_ownership_correction_financial_architecture_aug26.py # regent lp pe media empire ownership correction financial architecture aug26
+│   ├── test_steve_dent_engadget_cross_entity_camera_wearable_privacy_vocabulary_gradient_aug24.py # steve dent engadget cross entity camera wearable privacy vocabulary gradient aug24
+│   ├── test_type_d_02am_cross_validation_aug26.py # type d 02am cross validation aug26
+│   ├── test_type_d_04am_cross_validation_aug25.py # type d 04am cross validation aug25
+│   ├── test_type_d_07am_cross_validation_aug26.py # type d 07am cross validation aug26
+│   ├── test_type_d_10am_cross_validation_aug25.py # type d 10am cross validation aug25
+│   ├── test_type_d_12pm_cross_validation_aug26.py # type d 12pm cross validation aug26
+│   ├── test_type_d_1pm_cross_validation_aug24.py # type d 1pm cross validation aug24
+│   ├── test_type_d_3pm_cross_validation_aug25.py # type d 3pm cross validation aug25
+│   ├── test_type_d_6pm_cross_validation_aug24.py # type d 6pm cross validation aug24
+│   ├── test_type_d_8pm_cross_validation_aug25.py # type d 8pm cross validation aug25
+│   ├── test_type_e_03am_cross_publication_podcast_airpods_camera_privacy_vocabulary_inversion_aug26.py # type e 03am cross publication podcast airpods camera privacy vocabulary inversion aug26
+│   ├── test_type_e_05am_rabbit_hole_fashion_surveillance_cross_domain_propagation_aug25.py # type e 05am rabbit hole fashion surveillance cross domain propagation aug25
+│   ├── test_type_e_08am_gadget_detective_lbc_bbc_uk_broadcast_cross_episode_entity_selective_vocabulary_aug26.py # type e 08am gadget detective lbc bbc uk broadcast cross episode entity selective vocabulary aug26
+│   ├── test_type_e_11am_ai_edge_podcast_expert_authority_publisher_financial_captivity_aug25.py # type e 11am ai edge podcast expert authority publisher financial captivity aug25
+│   ├── test_type_e_2pm_techradar_podcast_future_plc_cross_entity_chapter_vocabulary_aspiration_inversion_aug24.py # type e 2pm techradar podcast future plc cross entity chapter vocabulary aspiration inversion aug24
+│   ├── test_type_e_4pm_chatgpt_ads_europe_podcast_cross_entity_ad_monetization_vocabulary_differential_aug25.py # type e 4pm chatgpt ads europe podcast cross entity ad monetization vocabulary differential aug25
+│   ├── test_type_e_5am_ai_inside_three_episode_cross_entity_title_vocabulary_hierarchy_aug24.py # type e 5am ai inside three episode cross entity title vocabulary hierarchy aug24
+│   ├── test_type_e_9pm_icymi_slate_surveillance_glasses_gendered_entity_exclusive_cultural_consensus_aug25.py # type e 9pm icymi slate surveillance glasses gendered entity exclusive cultural consensus aug25
+│   ├── test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25.py # verge pmc openai health data sensitivity inversion meta glasses surveillance vocabulary aug25
+│   ├── test_wesley_hilliard_appleinsider_resolution_conditional_privacy_vocabulary_inversion_aug26.py # wesley hilliard appleinsider resolution conditional privacy vocabulary inversion aug26
+│   ├── test_wired_anthropic_enterprise_data_retention_coverage_selection_silence_aug25.py # wired anthropic enterprise data retention coverage selection silence aug25
+│   ├── test_wired_openai_meta_ai_chat_ad_targeting_privacy_policy_natural_experiment_aug24.py # wired openai meta ai chat ad targeting privacy policy natural experiment aug24
+│   ├── test_wsj_amrith_ramkumar_openai_anthropic_data_retention_meta_cautionary_foil_vocabulary_bifurcation_aug24.py # wsj amrith ramkumar openai anthropic data retention meta cautionary foil vocabulary bifurcation aug24
+│   ├── test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py # wsj anthropic ode ai surveillance infrastructure aspirational meta camera scrutiny aug26
+│   ├── test_wsj_anthropic_pre_ipo_aspirational_narrative_meta_investment_scrutiny_bifurcation_aug26.py # wsj anthropic pre ipo aspirational narrative meta investment scrutiny bifurcation aug26
+│   ├── test_wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation_aug24.py # wsj julie jargon chatgpt teens within article cross entity teen safety vocabulary bifurcation aug24
