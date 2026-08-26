@@ -31974,3 +31974,140 @@ publications:
       note: AppleInsider Podcast Aug 21 with perpetrated vocabulary for Meta
     - url: https://9to5mac.com/2026/08/18/security-bite-apples-camera-airpods-are-going-to-make-meta-glasses-look-reckless/
       note: 9to5Mac Security Bite Aug 18 print anchor for cross-medium pipeline
+  wsj_anthropic_pre_ipo_aspirational_narrative_meta_investment_scrutiny_bifurcation:
+    mechanism_id: 317
+    type: pre_ipo_aspirational_narrative_investment_scrutiny_bifurcation
+    domain: financial_journalism
+    publication: Wall Street Journal (News Corp)
+    entities:
+    - Anthropic
+    - Meta
+    finding_type: same_publication_investment_narrative_credibility_scrutiny_asymmetry
+    date_range: 2026-07-22 to 2026-08-26
+    articles:
+    - title: "Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue"
+      date: '2026-08-25'
+      entity: Anthropic
+      reporter: Corrie Driebusch
+      url: https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
+      tone: 0.35
+      framing: Aspirational investment opportunity. $30T TAM exceeding US GDP presented with minimal scrutiny. One skeptical
+        quote (Damodaran) immediately offset by revenue doubling data. Access journalism for IPO deal flow.
+    - title: "Anthropic Tries to Shore Up Investor Confidence Ahead of Blockbuster IPO"
+      date: '2026-08-11'
+      entity: Anthropic
+      reporter: Berber Jin, Corrie Driebusch, Kate Clark
+      url: https://www.wsj.com/tech/ai/anthropic-tries-to-shore-up-investor-confidence-ahead-of-blockbuster-ipo-0ff736ad
+      tone: 0.25
+      framing: '"Blockbuster IPO" headline. Aspirational magnitude. "Cutting-edge models," "took off," "robust demand."'
+    - title: "Meta Stumbles as Tech Investors Demand Better Answers on AI Spending"
+      date: '2026-07-30'
+      entity: Meta
+      reporter: Meghan Bobrowsky
+      url: https://www.wsj.com/tech/ai/meta-stumbles-as-tech-investors-demand-better-answers-on-ai-spending-fc731909
+      tone: -0.45
+      framing: 'Failure headline. "Waited in vain," "erasing $140B," "eke out $784M - precipitous drop," "ominous,"
+        "just trust us." Every spending figure interrogated.'
+    - title: "The AI Backlash Is Starting to Sting"
+      date: '2026-07-22'
+      entity: Meta
+      reporter: WSJ AI and Business newsletter
+      url: https://www.wsj.com/tech/ai/the-ai-backlash-is-starting-to-sting-129a708d
+      tone: -0.35
+      framing: 'Meta singled out: "provides perhaps the largest and most acute example." "AI skepticism is a bigger
+        problem for Meta than for most of its rivals."'
+    anthropic_vocabulary:
+    - blockbuster IPO
+    - "$30 trillion in potential revenue"
+    - cutting-edge AI models
+    - more than doubled its revenue
+    - could aim to raise as much as $100 billion
+    - likely to top SpaceX
+    - robust demand
+    - $2 trillion valuation
+    meta_vocabulary:
+    - stumbles
+    - waited in vain
+    - erasing more than $140 billion in market value
+    - eke out $784 million - a precipitous drop
+    - ominous noises
+    - just trust us
+    - AI skepticism is a bigger problem for Meta
+    - mountain of lawsuits
+    tone_delta: 0.75
+    credibility_scrutiny_asymmetry:
+      anthropic_tam:
+        value_t: 30
+        exceeds_us_gdp: true
+        scrutiny_level: minimal
+        skeptical_quotes: 1
+        offset_by_growth_data: true
+      anthropic_quarterly_revenue_b: 11.6
+      anthropic_projected_2028_revenue_b: 195
+      anthropic_projected_growth_multiple: 17
+      anthropic_profitability: unprofitable
+      meta_quarterly_revenue_b: 60.8
+      meta_fcf_b: 0.784
+      meta_capex_range_b: 130-145
+      meta_mau_b: 3.27
+      meta_scrutiny_level: intensive
+      meta_skeptical_quotes: 5
+    financial_architecture:
+      openai_deal:
+        annual_value_m: 50
+        total_value_m: 250
+        signed: '2024-05'
+      meta_deal:
+        annual_value_m: 50
+        signed: '2026-03'
+      anthropic_settlement:
+        total_value_b: 1.5
+        type: settlement_revenue
+        approved: '2026-06'
+      ipo_validation_incentives:
+      - Anthropic IPO at $2T validates AI lab valuations broadly, supporting OpenAI pre-IPO narrative and News Corp $250M deal terms
+      - Successful Anthropic makes $1.5B settlement payment more secure for News Corp
+      - WSJ financial journalism desk maintains IPO deal-flow access through favorable pre-IPO coverage
+      - News Corp ad revenue benefits from Meta being framed as struggling (ad budget redirects)
+    confounders:
+    - description: 'Different reporters with different beat assignments. Corrie Driebusch covers IPO/deals (structural incentive
+        to maintain deal-flow access with favorable coverage). Meghan Bobrowsky covers tech/Meta (adversarial beat assignment
+        pattern). Beat assignment itself may be the mechanism rather than direct financial influence.'
+      strength: MODERATE
+    - description: "Meta's Q2 2026 earnings were genuinely mixed (FCF near zero at $784M, first EPS miss in 13 quarters,
+        capex raised). Cautious coverage of mixed results can be editorially justified."
+      strength: MODERATE
+    - description: "Anthropic's revenue actually did double to $11.6B quarterly. Real growth can justify aspirational framing.
+        However, the 17x projected growth to $190-200B by 2028 went unquestioned."
+      strength: WEAK
+    - description: "COUNTER-CONFOUNDING: The ratio of scrutiny to projection magnitude is INVERTED. The more speculative claim
+        ($30T TAM exceeding US GDP) receives LESS scrutiny. The more concrete spending ($130-145B backed by $60.8B revenue and
+        positive FCF) receives MORE scrutiny. If editorial standards were entity-neutral, the unprecedented TAM claim would
+        receive the greater interrogation."
+      strength: COUNTER-CONFOUNDING
+    - description: "COUNTER-CONFOUNDING: WSJ discloses News Corp-OpenAI deal in some articles but does NOT disclose the Anthropic
+        settlement revenue relationship in IPO coverage. The Anthropic articles contain zero financial disclosure."
+      strength: COUNTER-CONFOUNDING
+    cross_references:
+    - mechanism_id: 288
+      relationship: extends
+      description: 'Mechanism #288 documents WSJ data practice vocabulary bifurcation. This mechanism extends to financial
+        journalism investment narrative construction — a different dimension (credibility scrutiny of spending projections
+        rather than data practice vocabulary).'
+    - mechanism_id: 72
+      relationship: complements
+      description: 'Mechanism #72 documents WSJ Anthropic deception framing triangle. This mechanism covers the inverse —
+        aspirational framing of Anthropic financial projections.'
+    - mechanism_id: 73
+      relationship: extends
+      description: 'Mechanism #73 documents WSJ Anthropic-Meta business viability framing. This mechanism extends with 4
+        additional articles from Jul-Aug 2026 and quantifies the credibility scrutiny asymmetry.'
+    source_urls:
+    - url: https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
+      note: Anthropic $30T TAM article (Aug 25, 2026)
+    - url: https://www.wsj.com/tech/ai/anthropic-tries-to-shore-up-investor-confidence-ahead-of-blockbuster-ipo-0ff736ad
+      note: Anthropic blockbuster IPO article (Aug 11, 2026)
+    - url: https://www.wsj.com/tech/ai/meta-stumbles-as-tech-investors-demand-better-answers-on-ai-spending-fc731909
+      note: Meta stumbles article (Jul 30, 2026)
+    - url: https://www.wsj.com/tech/ai/the-ai-backlash-is-starting-to-sting-129a708d
+      note: AI backlash sting article (Jul 22, 2026)

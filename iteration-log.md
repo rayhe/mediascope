@@ -1,3 +1,44 @@
+## Iteration #304 — Wed 2026-08-26 04:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WSJ Anthropic Pre-IPO Aspirational Narrative vs Meta AI Investment Scrutiny Bifurcation
+
+**Publication:** Wall Street Journal (News Corp)
+**Competitor:** Anthropic
+**Comparison entity:** Meta
+**Mechanism:** #317 — pre_ipo_aspirational_narrative_investment_scrutiny_bifurcation
+
+**Discovery:** During the same two-week window (Jul 22 – Aug 25, 2026), WSJ applies dramatically
+different editorial standards to AI investment credibility:
+
+- **Anthropic (Aug 11/25):** "blockbuster IPO," "$30 trillion in potential revenue" (exceeds US GDP),
+  "cutting-edge AI models," "more than doubled its revenue," "could top SpaceX." TAM exceeding GDP
+  receives 1 skeptical quote immediately offset by growth data. Reporter: Corrie Driebusch (IPO/deals beat).
+
+- **Meta (Jul 22/30):** "stumbles," "waited in vain," "erasing more than $140 billion," "eke out
+  $784 million — a precipitous drop," "just trust us." Every spending figure interrogated despite
+  $60.8B quarterly revenue (5.2x Anthropic's). Reporter: Meghan Bobrowsky (tech/Meta beat).
+
+**Core asymmetry:** The ratio of scrutiny to projection magnitude is inverted. Anthropic's unprecedented
+$30T TAM claim and 17x growth projection receives minimal scrutiny. Meta's $130-145B capex backed by
+$60.8B revenue and positive FCF receives intensive scrutiny. Beat assignment (deals desk vs tech desk)
+may be the mechanism rather than direct financial influence.
+
+**Financial architecture:** News Corp receives ~$50M/yr from both OpenAI and Meta licensing, plus
+a share of Anthropic's $1.5B copyright settlement. A successful Anthropic IPO at $2T validates AI
+lab valuations broadly, supporting OpenAI pre-IPO narrative and News Corp deal terms.
+
+**Counter-confounders:** Anthropic articles contain zero financial disclosure of News Corp's
+settlement-revenue relationship, despite disclosing News Corp-OpenAI deals in some contexts.
+
+**Confounders retained:** Meta's Q2 2026 results were genuinely mixed (first EPS miss in 13
+quarters, FCF near zero). Anthropic's revenue actually doubled. Beat assignment may explain some
+of the framing difference.
+
+**Test file:** `test_wsj_anthropic_pre_ipo_aspirational_narrative_meta_investment_scrutiny_bifurcation_aug26.py` — 37 tests (8 classes: mechanism existence, articles, vocabulary, scrutiny asymmetry, financial architecture, confounders, cross-references, URL integrity). All pass (0.24s). Grep-based validation avoids YAML parse overhead.
+
+**Cross-references:** Extends mechanisms #73 (WSJ Anthropic-Meta business viability framing),
+#288 (WSJ data practice vocabulary bifurcation). Complements #72 (WSJ Anthropic deception framing triangle).
+
 ## Iteration #303 — Wed 2026-08-26 03:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Cross-Publication Podcast AirPods Camera Privacy Vocabulary Inversion — 9to5Mac Overtime 078 + AppleInsider Podcast (Aug 21, 2026)
