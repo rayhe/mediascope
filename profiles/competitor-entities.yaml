@@ -6429,12 +6429,24 @@ entities:
   yahoo_apollo:
     display_name: Yahoo (Apollo Global Management)
     aliases:
-    - TechCrunch
     - Yahoo
     - Apollo
     - Engadget
-    regex: \b(Yahoo|TechCrunch|Engadget|Apollo\s+Global)\b
+    regex: \b(Yahoo|Engadget|Apollo\s+Global)\b
     category: media_conglomerate
+    ownership_correction_aug26:
+      note: |
+        CORRECTION (Aug 26, 2026): TechCrunch was sold by Yahoo to Regent LP in March 2025.
+        TechCrunch is NO LONGER under Yahoo/Apollo ownership. Engadget remains under Yahoo/Apollo.
+        All TechCrunch articles analyzed in MediaScope (published 2026) were written under
+        Regent LP ownership. Mechanisms #104 and #142 below were documented when TechCrunch
+        was believed to still be under Yahoo/Apollo. The Apollo financial incentive chain
+        (Apollo→$38B AI financing→softer competitor coverage) still applies to Engadget but
+        should be reattributed for TechCrunch. See regent_lp entity for updated architecture.
+      date_corrected: '2026-08-26'
+      techcrunch_sold_to: Regent LP
+      techcrunch_sale_date: '2025-03'
+      affected_mechanisms: [104, 142]
     techcrunch_privacy_indictment_mechanism_104:
       mechanism_id: 104
       date_analyzed: '2026-08-14'
@@ -6744,6 +6756,168 @@ entities:
     mechanisms:
     - mechanism_id: 152
       mechanism_name: Nvidia-OpenAI GPU-Capital Circularity Publisher Incentive Chain
+
+  regent_lp:
+    display_name: Regent LP (Michael Reinstein)
+    aliases:
+    - Regent
+    - Foundry
+    - Macworld
+    - PCWorld
+    - InfoWorld
+    - Computerworld
+    - CIO
+    - TechAdvisor
+    - TechHive
+    - CSO
+    - NetworkWorld
+    - TechCrunch
+    - Sightline Media Group
+    - Defense News
+    - Military Times
+    - CheddarTV
+    regex: \b(Regent(\s+LP)?|Foundry|Macworld|PCWorld|InfoWorld|Computerworld|TechCrunch|CheddarTV|Sightline\s+Media)\b
+    category: media_conglomerate_pe
+    headquarters: Beverly Hills, California
+    founded: 2013
+    founder: Michael Reinstein
+    description: |
+      Private equity firm that consolidated a major tech media empire in March 2025 through
+      back-to-back acquisitions of Foundry (from Blackstone/IDG) and TechCrunch (from Yahoo/Apollo).
+      The resulting portfolio spans Apple-ecosystem-dependent publications (Macworld, PCWorld),
+      general tech news (TechCrunch), enterprise IT (Computerworld, CIO, InfoWorld), military
+      media (Sightline: Defense News, Military Times), and streaming (CheddarTV).
+    ownership_chain: Regent LP (PE) → Foundry (formerly IDG Communications, rebranded Feb 2022) + TechCrunch (acquired from Yahoo Mar 2025)
+    acquisition_history:
+      - entity: Sightline Media Group
+        source: Tegna
+        year: 2016
+        publications:
+        - Defense News
+        - Military Times
+        - Federal Times
+      - entity: CheddarTV
+        source: Altice USA
+        year: 2023
+      - entity: Foundry (IDG Communications)
+        source: Blackstone/IDG
+        year: 2025
+        month: March
+        publications:
+        - Macworld
+        - PCWorld
+        - InfoWorld
+        - Computerworld
+        - CIO
+        - TechAdvisor
+        - TechHive
+        - CSO
+        - NetworkWorld
+      - entity: TechCrunch
+        source: Yahoo (Apollo Global Management)
+        year: 2025
+        month: March
+        note: Deal announced Mar 21, 2025, expected to close within weeks. Yahoo retained small interest.
+    non_media_portfolio:
+      brands:
+      - Club Monaco (from Ralph Lauren)
+      - Escada
+      - Bally
+      - DIM
+      - La Senza
+      - Sassoon
+      - DryBar
+      - Lillian Vernon
+      - DiamondBack
+      - Redline
+    ai_investments:
+      lovable:
+        date: '2026-08-12'
+        round: Series C
+        round_size_m: 400
+        valuation_b: 13.3
+        description: |
+          Regent invested in Lovable's $400M Series C at $13.3B valuation (Aug 12, 2026).
+          Lovable is a Swedish AI vibe-coding platform. Regent deployed Lovable across its
+          portfolio before investing. Michael Reinstein: "We were customers before we were
+          investors." Regent's own corporate website was built on Lovable.
+        lead_investors:
+        - Menlo Ventures
+        - Scaleup Europe Fund (EQT)
+        co_investors:
+        - Balderton Capital
+        - Tencent
+        - Regent
+        - Accel
+        - CapitalG
+        - DST Global
+        - HubSpot Ventures
+        - Salesforce Ventures
+        sources:
+        - url: https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/
+          note: TechCrunch disclosed conflict with footnote - "One of Lovable's new Series C investors is Regent, the investment firm that also owns TechCrunch."
+        - url: https://www.computerworld.com/article/4208770/lovable-bolsters-its-ai-software-creation-capacity-touts-400m-funding-round.html
+          note: Computerworld (Foundry/Regent) disclosed Regent as "parent company of Foundry" but did NOT mention TechCrunch co-ownership.
+        - url: https://www.reuters.com/business/media-telecom/vibe-coding-startup-lovable-raises-400-million-133-billion-valuation-2026-08-12/
+          note: Reuters coverage, no Regent media ownership disclosure needed (not Regent-owned).
+        - url: https://www.militarytimes.com/press-release/2026/08/12/regent-invests-in-lovables-400-million-series-c/
+          note: Regent press release published via Military Times (Sightline/Regent) — conflict disclosure absent.
+    financial_incentive_architecture:
+      cross_publication_alignment:
+        description: |
+          Regent's consolidated ownership creates a three-layer financial architecture:
+          1. APPLE-ECOSYSTEM DEPENDENCY: Foundry publications (Macworld, PCWorld) derive revenue
+             from Apple affiliate commissions and Apple-adjacent advertising. Their editorial
+             existence depends on positive Apple coverage. Meta has ZERO financial relationship.
+          2. CROSS-PUBLICATION EDITORIAL PRESSURE: Under single PE ownership, Foundry's
+             Apple-ecosystem dependency can influence editorial direction at TechCrunch, which
+             covers all major tech companies including Meta. PE firms optimize for portfolio
+             returns, not editorial firewalls.
+          3. AI INVESTMENT CONFLICT: Regent's Lovable investment creates a direct financial
+             interest in the AI startup ecosystem. TechCrunch's startup/VC coverage is its
+             core editorial product. Regent investing in Lovable while TechCrunch covers
+             Lovable creates a documentable conflict (which TC disclosed in Aug 2026).
+      disclosure_asymmetry:
+        description: |
+          TechCrunch disclosed Regent's Lovable investment with an explicit footnote: "One of
+          Lovable's new Series C investors is Regent, the investment firm that also owns TechCrunch."
+          Computerworld disclosed Regent as "parent company of Foundry" without mentioning
+          TechCrunch co-ownership. Military Times published Regent's press release without
+          any conflict disclosure. Three publications, same parent, three different disclosure
+          levels.
+      techcrunch_ownership_correction:
+        description: |
+          CORRECTION (Aug 26, 2026): MediaScope mechanisms #104, #142, and related entries
+          attribute TechCrunch's editorial patterns to Yahoo/Apollo financial incentives.
+          TechCrunch was sold by Yahoo to Regent LP in March 2025. All TechCrunch articles
+          analyzed in MediaScope (published 2026) were written under Regent ownership, not
+          Apollo. Engadget remains under Yahoo/Apollo. The Apollo→AI financing→softer coverage
+          chain documented in mechanism #104 applies to Engadget but NOT to TechCrunch's
+          2026 output. TechCrunch's adversarial Meta coverage under Regent ownership may
+          instead be explained by (a) Foundry Apple-ecosystem dependency, (b) editorial
+          inertia from Yahoo-era positioning, or (c) independent editorial judgment.
+        affected_mechanisms:
+        - 104
+        - 142
+        stale_ownership_chain: TechCrunch → Yahoo → Apollo Global Management
+        correct_ownership_chain: TechCrunch → Regent LP (since Mar 2025; Yahoo retained small interest)
+    sources:
+    - url: https://en.wikipedia.org/wiki/Regent_LP
+      note: Wikipedia entry for Regent LP, confirming Beverly Hills HQ, founded 2013, Michael Reinstein.
+    - url: https://siliconcanals.com/regent-acquires-techcrunch/
+      note: Silicon Canals reporting on TechCrunch acquisition from Yahoo, March 2025.
+    - url: https://www.thewrap.com/yahoo-sells-techcrunch-regent/
+      note: The Wrap reporting on TechCrunch sale, noting deal expected to close "in coming weeks."
+    - url: https://techcrunch.com/2025/03/21/techcrunch-has-personal-news/
+      note: TechCrunch's own announcement of Regent acquisition. Editor Connie Loizos states Yahoo retained small interest.
+    - url: https://www.sahmcapital.com/news/content/scoop-blackstones-idg-nears-deal-to-sell-foundry-to-regent-axios-2025-01-24
+      note: Axios scoop on Blackstone/IDG selling Foundry to Regent, January 2025.
+    - url: https://www.amediaoperator.com/analysis/foundrys-techtarget-like-transformation-ends-in-sale/
+      note: Analysis of Foundry's transformation from publisher to martech company before Regent acquisition.
+    - url: https://www.militarytimes.com/press-release/2026/08/12/regent-invests-in-lovables-400-million-series-c/
+      note: Regent's Lovable investment press release published via its own Military Times property.
+    - url: https://mergr.com/investor/regent
+      note: Mergr profile showing 28 transactions, 26 portfolio companies.
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent

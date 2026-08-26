@@ -1,3 +1,69 @@
+## Iteration #301 — Wed 2026-08-26 01:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Regent LP — PE Media Empire Ownership Correction & Financial Architecture
+
+**Entity:** Regent LP (Michael Reinstein, Beverly Hills, CA, founded 2013)
+**Mechanism:** #315 — Ownership Correction + Financial Architecture Mapping
+
+### CORRECTION: TechCrunch Ownership Attribution Error
+
+MediaScope mechanisms #104 and #142 attributed TechCrunch's 2026 adversarial Meta coverage to Yahoo/Apollo financial incentives (Apollo→$38B AI financing→softer competitor coverage). **This attribution is WRONG.** TechCrunch was sold by Yahoo to Regent LP in March 2025. All 2026 TechCrunch articles analyzed in MediaScope were published under Regent ownership, not Apollo.
+
+The Yahoo/Apollo financial incentive chain still applies to **Engadget** (which remains under Yahoo), but must be reattributed for TechCrunch.
+
+### Discovery: Regent LP Media Empire
+
+Back-to-back acquisitions in March 2025 created a PE-consolidated tech media empire:
+
+1. **Foundry (from Blackstone/IDG, Mar 20, 2025):** Macworld, PCWorld, InfoWorld, Computerworld, CIO, TechAdvisor, TechHive, CSO, NetworkWorld
+2. **TechCrunch (from Yahoo, Mar 21, 2025):** deal expected to close within weeks, Yahoo retained small interest
+3. **Pre-existing:** Sightline Media Group (Defense News, Military Times, 2016), CheddarTV (2023)
+4. **Non-media:** Club Monaco, Escada, Bally, DIM, La Senza, Sassoon, DryBar, Lillian Vernon, DiamondBack, Redline
+
+**AI Investment:** Regent invested in Lovable's $400M Series C at $13.3B valuation (Aug 12, 2026). Lovable is a Swedish AI vibe-coding platform ($500M ARR, 60M projects, 900M monthly visits). Regent deployed Lovable across its portfolio before investing.
+
+### Three-Layer Financial Incentive Architecture
+
+1. **Apple-Ecosystem Dependency:** Foundry publications (Macworld, PCWorld) derive revenue from Apple affiliate commissions. Their editorial existence depends on Apple-positive coverage. Meta has ZERO financial relationship.
+2. **Cross-Publication PE Alignment:** Under single PE ownership, Foundry's Apple dependency can influence editorial at TechCrunch, which covers all major tech companies.
+3. **AI Investment Conflict:** Regent's Lovable investment creates direct financial interest in a company TechCrunch covers.
+
+### Disclosure Asymmetry (Aug 12, 2026 — Lovable $400M Series C coverage)
+
+Three Regent-owned publications, same story, three different disclosure levels:
+- **TechCrunch:** FULL — explicit footnote: "One of Lovable's new Series C investors is Regent, the investment firm that also owns TechCrunch."
+- **Computerworld (Foundry):** PARTIAL — disclosed Regent as "parent company of Foundry" but omitted TechCrunch co-ownership
+- **Military Times (Sightline):** NONE — published Regent's press release with zero conflict disclosure
+
+### Confounders
+1. MODERATE: TechCrunch may have editorial independence despite PE ownership
+2. MODERATE: Editorial inertia from Yahoo era may explain patterns
+3. WEAK: Yahoo retained small interest → residual Apollo connection
+4. STRONG (counter-confounding): TechCrunch's explicit Lovable disclosure demonstrates editorial transparency capacity
+
+### Updates
+- **competitor-entities.yaml:** Added `regent_lp` entity with full portfolio, acquisition timeline, Lovable AI investment, three-layer incentive architecture, disclosure asymmetry documentation, and ownership correction notes. Corrected `yahoo_apollo` entry: removed TechCrunch from aliases/regex, added ownership_correction_aug26 section noting mechanisms #104 and #142 are affected.
+- **competitor-coverage-research.yaml:** Added mechanism #315
+- **New test file:** `test_regent_lp_pe_media_empire_ownership_correction_financial_architecture_aug26.py` — 8 classes, 35 tests, all passing
+
+### Stats After
+- Mechanism #315 added
+- 986 mechanisms, 621 test files
+- Asymmetry score: 0.65
+
+### Sources
+- https://techcrunch.com/2025/03/21/techcrunch-has-personal-news/
+- https://siliconcanals.com/regent-acquires-techcrunch/
+- https://www.thewrap.com/yahoo-sells-techcrunch-regent/
+- https://www.sahmcapital.com/news/content/scoop-blackstones-idg-nears-deal-to-sell-foundry-to-regent-axios-2025-01-24
+- https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/
+- https://www.computerworld.com/article/4208770/lovable-bolsters-its-ai-software-creation-capacity-touts-400m-funding-round.html
+- https://www.militarytimes.com/press-release/2026/08/12/regent-invests-in-lovables-400-million-series-c/
+- https://en.wikipedia.org/wiki/Regent_LP
+- https://mergr.com/investor/regent
+
+---
+
 ## Iteration #298 — Tue 2026-08-25 22:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WIRED + Anthropic — Enterprise Data Retention Coverage Selection Silence

@@ -31816,3 +31816,62 @@ publications:
         Publication-level vocabulary bifurcation — entity-selective vocabulary
         applied at editorial level
 
+
+  regent_lp_pe_media_empire_ownership_correction_financial_architecture:
+    mechanism_id: 315
+    date_analyzed: '2026-08-26'
+    type: financial_architecture_correction
+    domain: media_ownership
+    finding_type: ownership_correction_and_financial_mapping
+    publication_group: Regent LP portfolio (TechCrunch, Macworld, PCWorld, Computerworld, etc.)
+    parent_company: Regent LP (Michael Reinstein, Beverly Hills, CA)
+    finding: |
+      OWNERSHIP CORRECTION: MediaScope attributed TechCrunch's 2026 editorial patterns
+      to Yahoo/Apollo financial incentives (mechanisms #104, #142). TechCrunch was SOLD
+      by Yahoo to Regent LP in March 2025. All 2026 TechCrunch articles in MediaScope
+      were published under Regent ownership, not Apollo.
+
+      NEW FINANCIAL ARCHITECTURE: Regent consolidated Foundry (from Blackstone/IDG,
+      Mar 20, 2025) and TechCrunch (from Yahoo, Mar 21, 2025) into a single PE-owned
+      tech media empire. Three-layer incentive structure: (1) Foundry publications
+      (Macworld, PCWorld) have Apple-ecosystem revenue dependency, (2) cross-publication
+      PE alignment pressure, (3) Regent invested in Lovable ($400M Series C, $13.3B
+      valuation, Aug 12, 2026) — an AI company TechCrunch covers.
+
+      DISCLOSURE ASYMMETRY (Aug 12, 2026 — Lovable coverage):
+      - TechCrunch: FULL disclosure — explicit footnote identifying Regent as owner
+      - Computerworld: PARTIAL — disclosed Regent as Foundry parent, omitted TC co-ownership
+      - Military Times: NONE — published Regent press release with zero disclosure
+
+      Engadget remains under Yahoo/Apollo. Apollo financial chain still applies to Engadget.
+    confounders:
+    - strength: MODERATE
+      description: TechCrunch may have editorial independence despite PE ownership
+    - strength: MODERATE
+      description: Editorial inertia from Yahoo era may explain patterns independent of Regent incentives
+    - strength: WEAK
+      description: Yahoo retained small interest in TechCrunch, creating residual Apollo connection
+    - strength: STRONG (counter-confounding)
+      description: Regent disclosed the Lovable conflict in TechCrunch — better disclosure than many publications
+    asymmetry_score: 0.65
+    cross_references:
+    - 104
+    - 142
+    - 314
+    sources:
+    - url: https://techcrunch.com/2025/03/21/techcrunch-has-personal-news/
+      note: TechCrunch announcement of Regent acquisition, editor Connie Loizos, Yahoo retained small interest
+    - url: https://siliconcanals.com/regent-acquires-techcrunch/
+      note: Silicon Canals reporting on Regent acquiring TechCrunch from Yahoo
+    - url: https://www.thewrap.com/yahoo-sells-techcrunch-regent/
+      note: The Wrap reporting on TechCrunch sale to Regent
+    - url: https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/
+      note: TechCrunch Lovable coverage with explicit Regent disclosure footnote
+    - url: https://www.computerworld.com/article/4208770/lovable-bolsters-its-ai-software-creation-capacity-touts-400m-funding-round.html
+      note: Computerworld Lovable coverage with partial disclosure (Foundry parent only)
+    - url: https://www.militarytimes.com/press-release/2026/08/12/regent-invests-in-lovables-400-million-series-c/
+      note: Military Times published Regent press release with zero conflict disclosure
+    - url: https://en.wikipedia.org/wiki/Regent_LP
+      note: Wikipedia entry for Regent LP
+    - url: https://www.sahmcapital.com/news/content/scoop-blackstones-idg-nears-deal-to-sell-foundry-to-regent-axios-2025-01-24
+      note: Axios scoop on Blackstone/IDG selling Foundry to Regent
