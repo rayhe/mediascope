@@ -124,6 +124,22 @@ entities:
       enterprise_cmo: Colin Fleming (ex-ServiceNow, ~80 days in role as of Aug 19)
       pilot_100m_arr_weeks: 6
       advertisers_at_launch: 600
+      ad_revenue_run_rate_aug_2026: 'Approaching $1B annual (per CFO Friar, Adweek Aug 19)'
+      ad_revenue_growth_aug_2026: '25%+ since start of August (per CMO Fleming)'
+      france_launch_advertisers: 'Bouygues Telecom, Cultura, TotalEnergies, Carrefour (via Cosmo5 agency)'
+      france_agencies: 'Publicis, Dentsu, Havas (same agencies serving French publishers)'
+      cpm_trend_aug_2026: 'Down ~20% over past 6 weeks, still higher than social media platforms'
+      self_service_france_eta: '3 months from launch (late Nov 2026)'
+      content_ad_cannibalization:
+        finding: >-
+          OpenAI simultaneously licenses publisher content (Le Monde, Prisa Media, News Corp, etc.)
+          AND places ads beneath AI responses powered by that content. Publishers subsidize the answers
+          that OpenAI monetizes through advertising. Le Monde is the most transparent case: CEO Dreyfus
+          disclosed 20x Facebook / 50x Google Discover subscription conversion rates from ChatGPT,
+          making Le Monde financially dependent on the same platform that cannibalizes its ad market.
+          25% of AI licensing revenue shared as journalist bonus creates individual-level incentive.
+        source: Press Gazette Apr 2026, EuropeSays Aug 20 2026
+
       projected_ad_revenue_2026_b: 2.5
       projected_ad_revenue_2027_b: 11
       projected_ad_revenue_2028_b: 25

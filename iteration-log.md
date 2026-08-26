@@ -11340,3 +11340,59 @@ This is DISTINCT from Mechanism #211 (Three-Entity Privacy Gradient):
 - Mechanism #314 added with 6 sources
 - Test: test_david_price_macworld_foundry_apple_ecosystem_advocacy_editorial_framing_injection_aug26.py — 46 tests, all passing
 - Asymmetry score: 0.72
+
+## Iteration #306 — Wed 2026-08-26 06:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: ChatGPT Ads European Expansion — Le Monde Triple-Deal Content-to-Ad Cannibalization Financial Architecture
+
+**Type:** Financial Incentive Mapping
+**Publication:** Le Monde
+**Entities:** OpenAI, Meta, Perplexity
+**Mechanism:** #319 — chatgpt_ads_europe_content_ad_cannibalization_financial_architecture
+
+**Discovery:** OpenAI's ChatGPT Ads expansion to 31 European markets (Aug 24, 2026)
+creates a compounding five-layer financial architecture where publishers who license
+content to OpenAI simultaneously have their ad revenue cannibalized by ads placed
+beneath responses powered by their own licensed content.
+
+Le Monde is the best-documented case because CEO Louis Dreyfus publicly disclosed:
+1. Three AI deals (OpenAI Mar 2024, Perplexity May 2025, Meta Dec 2025)
+2. 25% of ALL AI licensing revenue shared with 570 staff journalists as yearly bonus
+3. ChatGPT converts to Le Monde paid subscriptions 20x more than Facebook, 50x
+   more than Google Discover
+4. AI licensing named as strategic revenue pillar
+
+**Five compounding layers:**
+- **Layer 1 (Content Subsidy):** Le Monde licenses content → powers ChatGPT French responses
+- **Layer 2 (Ad Cannibalization):** OpenAI places ads beneath those responses → competes with
+  Le Monde for French advertisers using SAME agencies (Publicis, Dentsu, Havas)
+- **Layer 3 (Conversion Dependency):** Le Monde depends on ChatGPT for subscription conversions
+  (20x Facebook) → incentive to maintain favorable OpenAI relationship
+- **Layer 4 (Revenue Replacement Spiral):** As OpenAI cannibalizes French ad market, AI licensing
+  revenue becomes larger % of Le Monde income → increasing captivity
+- **Layer 5 (Individual Journalist Incentive):** 25% of AI licensing revenue paid as journalist
+  yearly bonus → individual-level financial incentive tied to deal partnerships
+
+**Coverage test:** Le Monde reported on OpenAI's French ad launch (Aug 25, 2026) WITHOUT
+disclosing its own financial relationship with OpenAI. EuropeSays (Aug 20) explicitly
+identified the "Publisher Revenue Gap" which Le Monde's coverage omits.
+
+**Key financial data (new):**
+- OpenAI ad revenue approaching $1B annual run rate (CFO Friar, Adweek Aug 19)
+- OpenAI ad revenue grew 25%+ since start of Aug (CMO Fleming)
+- French advertisers: Bouygues Telecom, Cultura, TotalEnergies, Carrefour
+- OpenAI CPM prices dropping ~20% over 6 weeks, converging toward publisher rates
+- Le Monde Group revenue: €310M (2024), Le Monde entity ~€150M+
+- 680K subscribers (580K digital), digital subscriber revenue €72M (2025)
+
+**Counter-confounders:** 7 documented. Le Monde has a deal with Meta too (NOT Meta-exclusion
+bias). Article is factual reporting. OpenAI ads genuinely nascent. Le Monde CEO transparent
+in trade press (editorial gap, not institutional). AI licensing still ~2-7% of revenue.
+
+**Files changed:**
+- tests/test_openai_chatgpt_ads_europe_le_monde_content_ad_cannibalization_financial_architecture_aug26.py (NEW, 33 tests, 10 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #319 added)
+- profiles/competitor-entities.yaml (OpenAI advertising_business updated with $1B run rate, France launch details, content-ad cannibalization finding)
+- iteration-log.md (this entry)
+
+**Tests:** 33/33 new passing (0.56s). Total: 21,541+ tests across 626 files.
