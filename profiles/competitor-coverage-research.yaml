@@ -31206,3 +31206,78 @@ publications:
     test_file: tests/test_fast_company_editorial_commissioning_bifurcation_schwarz_clay_cross_entity_predetermination_aug25.py
     tests_count: 13
     test_classes: 5
+  mansueto_morningstar_google_gemini_enterprise_same_day_convergence:
+    mechanism_id: 310
+    type: financial_incentive_mapping
+    entity_pair: Mansueto Ventures + Morningstar ↔ Google
+    date_identified: '2026-08-25'
+    finding: 'Quintuple financial incentive architecture between Joe Mansueto''s entities and Google, with
+      same-day convergence on August 25, 2026. Five layers: (1) Fast Company/Inc. 55% ad revenue from
+      Google programmatic, (2) Inc. CEO stated "very dependent" on Google Discover traffic, (3) GA4
+      analytics infrastructure, (4) Morningstar LAUNCH PARTNER for Google Cloud Gemini Enterprise for
+      Financial Services (MCP integration, announced Aug 25, 2026), (5) Morningstar investment research
+      covers Alphabet stock (Wide Moat, FV $433). Joe Mansueto family controls 47% of Morningstar and
+      100% of Mansueto Ventures. ZERO Meta commercial partnerships across either entity. Same-day
+      convergence: on Aug 25, Morningstar announces Google Cloud partnership via BusinessWire; on Aug 25,
+      Fast Company publishes Dan Clay "creepy smart glasses" article with 10 alarm terms targeting Meta.
+      This is the first documented case where the same family controls both a media publisher producing
+      entity-selective adversarial coverage AND a financial services firm with a direct commercial
+      technology partnership with the entity receiving favorable coverage.'
+    corporate_structure:
+      joe_mansueto_morningstar_pct: 37.5
+      daniel_mansueto_morningstar_pct: 9.5
+      family_combined_pct: 47
+      morningstar_market_cap_b: 7.4
+      morningstar_auma_b: 375
+      mansueto_ventures_revenue_m: 23.1
+      mansueto_ventures_ad_pct: 55
+    financial_layers:
+    - layer: advertising_revenue
+      entity: Fast Company/Inc.
+      partner: Google
+      mechanism: programmatic ads
+      materiality: 55% of $23.1M revenue
+    - layer: traffic_dependency
+      entity: Inc.
+      partner: Google Discover
+      mechanism: search/discovery referral traffic
+      source: Stephanie Mehta, CEO (Digiday, Mar 2025)
+    - layer: analytics_infrastructure
+      entity: Fast Company
+      partner: Google Analytics 4
+      mechanism: audience data pipeline
+    - layer: ai_platform_partnership
+      entity: Morningstar + PitchBook
+      partner: Google Cloud
+      mechanism: Gemini Enterprise for Financial Services launch partner, MCP integration
+      announced: '2026-08-25'
+      source: https://www.businesswire.com/news/home/20260825674797/en/
+    - layer: investment_research_revenue
+      entity: Morningstar
+      partner: Alphabet (as coverage subject)
+      mechanism: stock ratings, fair value estimates, fund analysis
+      alphabet_rating: Wide Moat, FV $433
+      meta_rating: Wide Moat, FV $850
+    meta_financial_layers: 0
+    sources:
+    - 'Morningstar-Google Gemini Enterprise announcement: https://www.businesswire.com/news/home/20260825674797/en/'
+    - 'Mansueto 13G/A Feb 2026: 14.9M shares (37.5%), Daniel 9.5% = 47% family control'
+    - 'Mansueto Ventures revenue: $23.1M, 55% ads (Digiday Mar 2025, Wikipedia Fast Company)'
+    - 'Inc. Google Discover dependency: Mehta, Digiday Publishing Summit Mar 2025'
+    - 'Fast Company Dan Clay: https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan'
+    - 'Fast Company Schwarz: https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear'
+    - 'Morningstar Alphabet: Wide Moat, FV $433 (Q1 2026 earnings update)'
+    - 'Morningstar Meta: Wide Moat, FV $850 (Feb 24, 2026 AMD deal coverage)'
+    extends_mechanisms:
+    - mechanism_id: 308
+      relationship: deepens
+      description: Adds quintuple financial architecture to the Fast Company vocabulary bifurcation
+    - mechanism_id: 309
+      relationship: deepens
+      description: Explains WHY different writers are commissioned — financial incentive alignment
+    - mechanism_id: 137
+      relationship: extends
+      description: Connects Inc.'s Google dependency to parent Mansueto corporate structure
+    test_file: tests/test_mansueto_morningstar_google_gemini_enterprise_launch_partner_same_day_convergence_aug25.py
+    tests_count: 23
+    test_classes: 5

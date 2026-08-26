@@ -9723,9 +9723,37 @@ publisher_entities:
     meta_content_licensing_deals: none
     meta_advertising_partnerships: none
     morningstar_connection: Joe Mansueto founded Morningstar (investment research, tracks Alphabet/Google stock)
+    morningstar_google_gemini_partnership:
+      announced: '2026-08-25'
+      role: launch partner
+      product: Gemini Enterprise for Financial Services
+      integration_type: MCP (Model Context Protocol)
+      data_flow: Morningstar + PitchBook investment intelligence → Gemini Enterprise
+      google_cloud_vp: Satish Thomas
+      morningstar_ai_head: Seth Sprinkle
+      pitchbook_evp: Tom Van Buskirk
+      morningstar_auma_b: 375
+      source: https://www.businesswire.com/news/home/20260825674797/en/
+    morningstar_stock_coverage:
+      alphabet:
+        moat: Wide
+        fair_value_usd: 433
+        relationship_type: commercial_partner + coverage_subject
+      meta:
+        moat: Wide
+        fair_value_usd: 850
+        relationship_type: coverage_subject_only
+    mansueto_family_morningstar_control:
+      joe_mansueto_pct: 37.5
+      daniel_mansueto_pct: 9.5
+      family_combined_pct: 47
+      joe_shares: 14909759
+      source: 13G/A Feb 12, 2026
     notes: Mansueto Ventures acquired Inc and Fast Company from Bonnier Corp in 2019. Revenue primarily from advertising (55%).
       Standard Google programmatic/search traffic dependency creates structural incentive alignment with Google ecosystem.
-      Zero known Meta financial relationships of any kind.
+      Zero known Meta financial relationships of any kind. Morningstar (Mansueto-controlled) is a Google Cloud Gemini Enterprise
+      launch partner (Aug 25, 2026) — revenue-generating commercial partnership with Google, ZERO equivalent Meta partnership.
+      Same-day convergence (Aug 25): Morningstar announces Google partnership; Fast Company publishes adversarial Meta article.
     inc_smart_glasses_privacy_redirected_attribution:
       mechanism_id: 137
       finding: 'Inc.com redirected ALL privacy vocabulary (7+ alarm terms) to Meta in a Samsung/Google smart glasses competitive
@@ -9735,6 +9763,19 @@ publisher_entities:
         ad revenue, GA4 in tech stack, search traffic) correlates with entity-selective privacy vocabulary.'
       source_url: https://www.inc.com/connor-jewiss/samsung-and-googles-new-smart-glasses-have-a-secret-weapon-that-meta-cant-easily-copy/91380954
       date: '2026-07-29'
+    mansueto_morningstar_google_gemini_enterprise_convergence:
+      mechanism_id: 310
+      finding: 'Quintuple financial incentive architecture. Same-day convergence Aug 25, 2026: Morningstar
+        (47% Mansueto family) announces Google Cloud Gemini Enterprise launch partnership; Fast Company (100%
+        Mansueto) publishes adversarial Meta "creepy smart glasses" article. Five financial layers with
+        Google: (1) 55% ad revenue from Google programmatic, (2) Inc. CEO "very dependent" on Google
+        Discover, (3) GA4 infrastructure, (4) Morningstar Gemini Enterprise launch partner, (5) Morningstar
+        Alphabet stock coverage revenue. Zero Meta commercial partnerships. First documented case where
+        same family controls both adversarial media publisher and commercial tech partner of favored entity.'
+      source_urls:
+      - https://www.businesswire.com/news/home/20260825674797/en/
+      - https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+      date: '2026-08-25'
   axel_springer_business_insider:
     parent_company: Axel Springer SE (majority-owned by KKR)
     ownership_chain: KKR → Axel Springer SE → Business Insider / Politico / Bild / Welt
