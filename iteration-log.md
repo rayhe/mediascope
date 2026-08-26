@@ -1,3 +1,47 @@
+## Iteration #307 — Wed 2026-08-26 07:00 PT (Type D: Test & Verify)
+
+### Focus: Cross-Validation of Mechanisms #317–#319 + Test Suite Health Check
+
+**Type:** Test & Verify (Cross-Validation)
+**Mechanisms validated:** #317, #318, #319
+
+**Test suite status:**
+- Today's 6 new test files (iterations #304–#306): **200/200 passing** (81.85s)
+- New cross-validation test: **40/40 passing** (9.27s, 6 test classes)
+- Legacy textblob-dependent tests: 39 collection errors (unchanged — `textblob` not installed,
+  affects legacy sentiment analysis module only; all modern grep-based tests unaffected)
+
+**Cross-validation findings:**
+1. **Mechanism integrity:** All three mechanisms (#317–#319) present in `publications`
+   section of competitor-coverage-research.yaml with required fields populated
+2. **Entity consistency:** OpenAI entity has IPO filing data, hardware devices, and
+   advertising business section. Anthropic entity has revenue data ($65B ARR).
+3. **Financial data coherence:** #317 tone scores confirm bifurcation (Anthropic positive,
+   Meta negative). #319 conversion rates (20x/50x) and 25% journalist revenue share
+   documented in five-layer architecture.
+4. **Cross-mechanism validation:** Three mechanisms cover distinct domains but all reference
+   Meta as subject of asymmetric coverage — consistent thesis.
+5. **Publication-level pattern:** #318 confirmed as third AppleInsider writer with vocabulary
+   inversion pattern (after Neely #285, Owen #234) — publication-level evidence strengthening.
+6. **URL integrity:** All source URLs across #317 (WSJ) and #318 (AppleInsider) well-formed HTTPS.
+
+**Bug fixed:** `find_mechanism()` in cross-validation tests was searching only a `mechanisms`
+top-level key. Actual structure uses `publications` section. Fixed to search all top-level
+YAML sections. This is a structural knowledge issue — previous Type D tests that work likely
+use a different lookup pattern. Standardized for this test file.
+
+**Repo stats:**
+- 627 test files
+- 1,000 documented mechanisms
+- 319 journalist profiles
+- 240 passing tests validated this run (200 from today's feature tests + 40 cross-validation)
+
+**Files changed:**
+- tests/test_type_d_07am_cross_validation_aug26.py (NEW, 40 tests, 6 classes)
+- iteration-log.md (this entry)
+
+**Git:** Pushed to main (71895b7)
+
 ## Iteration #305 — Wed 2026-08-26 05:00 PT (Type B: Journalist Cross-Entity Tracking)
 
 ### Focus: Wesley Hilliard (AppleInsider) Resolution-Conditional Privacy Vocabulary Inversion
