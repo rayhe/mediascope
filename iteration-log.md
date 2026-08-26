@@ -1,3 +1,85 @@
+## Iteration #314 — Wed 2026-08-26 14:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WSJ Same-Day Register Bifurcation — Meta $18B Settlement vs Anthropic $30T TAM Pre-IPO
+
+**Type:** Competitor Coverage Deep Dive
+**Publication:** Wall Street Journal (News Corp)
+**Competitor entity:** Anthropic
+**Comparison entity:** Meta
+**Mechanism:** #326
+
+**SAME-DAY NATURAL EXPERIMENT (Aug 25-26, 2026):**
+
+Within 24 hours, WSJ published two articles with opposite editorial registers:
+
+1. **Meta (Bobrowsky, Aug 26):** "Meta Reaches $18 Billion Settlement With 48 States Over
+   Child-Safety Claims" — accountability/punitive register. Self-references WSJ's own
+   Facebook Files as having precipitated the litigation.
+
+2. **Anthropic (Driebusch, Aug 25):** "Anthropic Expected to Tell Investors It Sees Over
+   $30 Trillion in Potential Revenue" — aspirational investment register. $30T TAM (12.5x
+   all S&P 1500 tech revenue, exceeds US GDP) with minimal scrutiny. Damodaran skepticism
+   quote misdirected at SpaceX's smaller $28.5T figure.
+
+3. **CEO Brief (Rosenbush, Aug 26):** "Anthropic Contemplates the Ultimate Total Addressable
+   Market" — editorial amplification of $30T TAM on same day as Meta settlement.
+
+**NOVEL CONTRIBUTION — SELF-REFERENCING ACCOUNTABILITY LOOP:**
+WSJ's settlement article explicitly cites its own Facebook Files: "The settlement comes a
+few years after The Wall Street Journal reported on the company's own internal research
+showing its products were harming users in an award-winning series called The Facebook Files."
+
+This creates a chain: Investigation → Litigation catalyst → Settlement → Self-validation.
+WSJ is both investigator and narrator of Meta's accountability. The franchise is validated
+by the very settlement it precipitated, creating institutional incentive to maintain
+adversarial Meta posture.
+
+**DUAL-ROLE FINANCIAL ARCHITECTURE:**
+News Corp profits from BOTH directions simultaneously:
+- Meta accountability: Facebook Files franchise (Pulitzer finalist, George Polk Award)
+  → subscriber engagement → institutional reputation → validated by $18B settlement
+- Anthropic IPO success: $1.5B copyright settlement recovery depends on Anthropic solvency/
+  IPO at $2T valuation (settlement = 0.075% of valuation, trivially affordable if IPO succeeds)
+
+These are complementary, not competing. Harder Meta coverage and softer Anthropic coverage
+both serve News Corp's financial position.
+
+**SCRUTINY-MAGNITUDE INVERSION:**
+- Anthropic $30T TAM (0.04% capture rate, revenue $11.6B/qtr) → minimal scrutiny, 1 skeptical
+  quote misdirected to SpaceX
+- Meta $130-145B capex (backed by $60.8B quarterly revenue, positive FCF) → intensive scrutiny,
+  5+ skeptical quotes, "stumbles," "weak hand," "just trust us"
+
+The more speculative claim gets LESS scrutiny. The more concrete spending gets MORE.
+
+**NON-DISCLOSURE:** Neither article discloses News Corp's financial relationships (Meta $50M/yr
+licensing, Anthropic $1.5B settlement interest). Bidirectional non-disclosure.
+
+**Asymmetry score:** 0.62 (tempered by STRONG severity confounder — Meta settlement IS bad
+news — and MODERATE genre confounder. Elevated by three counter-confounders: scrutiny
+magnitude inversion, bidirectional non-disclosure, self-referencing franchise loop.)
+
+**New tests:** 37 tests, 11 classes (all pass):
+- TestSameDayRegisterBifurcation (4 tests)
+- TestSelfReferencingAccountabilityLoop (4 tests)
+- TestDualRoleFinancialArchitecture (5 tests)
+- TestVocabularyRegisterAnalysis (3 tests)
+- TestScrutinyMagnitudeInversion (5 tests)
+- TestNonDisclosureAsymmetry (3 tests)
+- TestSettlementAmountComparison (4 tests)
+- TestConfounders (4 tests)
+- TestAsymmetryScore (3 tests)
+- TestCEOBriefAmplification (2 tests)
+
+**Files changed:**
+- tests/test_wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation_aug26.py (NEW — 37 tests, 11 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #326 added)
+- iteration-log.md (this entry)
+
+**Test corpus:** 634 test files, ~21,551 tests
+
+---
+
 ## Iteration #313 — Wed 2026-08-26 13:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Fortune AI Weekly Multi-Episode Cross-Entity Vocabulary Gradient + NDTV World International Broadcast Entity-Selective Banning
