@@ -1,3 +1,36 @@
+## Iteration #296 — Tue 2026-08-25 20:00 PT (Type D: Test & Verify)
+
+### Focus: Cross-validation of mechanisms #308-#310 (Fast Company/Mansueto cluster)
+
+**Three bugs found and fixed:**
+
+1. **Test bug — mechanism_id search shadowing (test_fast_company_editorial_commissioning_bifurcation):**
+   Recursive `mechanism_id` search hit cross-reference entry (from #310's `extends_mechanisms` list) before #309's primary definition. Cross-ref entries lack `type` field → `found_type` was `''` → assertion failure. Fix: added `'type' in d` guard + early-return.
+
+2. **YAML syntax error — competitor-entities.yaml line 9756:**
+   Iteration #295 added Mansueto notes with bare colons in text (`Same-day convergence (Aug 25): Morningstar...`). YAML parser interpreted `: ` as key-value separator. Fix: changed to `>-` folded block scalar. Impact: 23 tests broken (8 failures + 15 errors across test_competitor_coverage + test_financial_relationships).
+
+3. **Schema inconsistency discovered:**
+   Mechanism #308 uses `mechanism_number` key (not `mechanism_id`) and lives in `cross_publication_findings` section. #309/#310 use `mechanism_id` and live under `publications`. #308 uses `vocabulary_meta_alarm` as a list of terms; #310 uses `finding` as a string. Cross-references stored as `extends_mechanisms` (not `cross_references`). Cross-validation tests now handle both patterns.
+
+**Source verification:**
+- Morningstar-Google Gemini Enterprise press release confirmed via BusinessWire + Morningstar newsroom
+- $375B AUMA, MCP integrations, launch partner status verified
+- Quotes: Seth Sprinkle (Morningstar AI platforms), Tom Van Buskirk (PitchBook EVP), Satish Thomas (Google Cloud VP)
+
+**New test file:** `test_type_d_8pm_cross_validation_aug25.py` (7 classes, 16 tests)
+- TestMechanismClusterIntegrity (6 tests): all 3 mechanisms exist + cross-reference correctly
+- TestMansuetoCorporateStructureVerification (2 tests): 47% family stake, market cap
+- TestVocabularyCountConsistency (2 tests): Meta alarm list non-empty, Google alarm empty
+- TestSourceURLIntegrity (2 tests): Fast Company + BusinessWire URLs documented
+- TestMechanismSearchBugFix (2 tests): regression — cross-refs don't shadow primaries
+- TestYAMLSyntaxIntegrity (2 tests): both YAML files parse clean
+**Core suite re-run:** 105 passed (test_competitor_coverage + test_financial_relationships) — all green after YAML fix
+
+**Profiles:** 970 mechanisms, 616 test files
+
+---
+
 ## Iteration #295 — Tue 2026-08-25 19:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Mansueto-Morningstar-Google Gemini Enterprise Launch Partner Same-Day Convergence
