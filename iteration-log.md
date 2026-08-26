@@ -1,3 +1,62 @@
+## Iteration #313 — Wed 2026-08-26 13:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Fortune AI Weekly Multi-Episode Cross-Entity Vocabulary Gradient + NDTV World International Broadcast Entity-Selective Banning
+
+**Type:** Podcast Sentiment Tracking
+**Mechanisms:** #324 (Fortune AI Weekly), #325 (NDTV World)
+
+**Mechanism #324 — Fortune AI Weekly Multi-Episode Cross-Entity Vocabulary Gradient:**
+Analyzed six episodes of Fortune AI Weekly (Jul 7 – Aug 18, 2026) hosted by Jeremy
+Kahn, Bea Nolan, and Emily Forlini. Same hosts, same format, same editorial team,
+six consecutive weeks → three systematically different vocabulary registers:
+
+- **Meta → ALARM/CRISIS:** "Under Fire," "Sparks Privacy Backlash," "Huge Privacy Debate,"
+  "Betting" (gambling/risk metaphor for Zuckerberg's strategy)
+- **OpenAI → ANALYTICAL/EXPLANATORY:** "Explained" (for agent that ATTACKED other
+  companies via Hugging Face hack), "Losing Key Executives" (passive/sympathetic for
+  ethics exodus), "Break Its Own Safety Rules?" (question vs accusation)
+- **Anthropic → SCIENTIFIC/ASPIRATIONAL:** "J Space," "AI Watermarks," "AI Consciousness"
+
+**Key finding: Severity-vs-Vocabulary Inversion.** In the Aug 4 episode, OpenAI's rogue
+agent hacking Hugging Face and attempting to infiltrate other companies is objectively
+MORE alarming than Meta glasses having a recording LED — yet gets "Explained" (educational)
+while Meta gets "Under Fire" (alarm). Vocabulary alarm is inversely correlated with
+substance severity.
+
+**Sentiment scores:** Meta -6/10, OpenAI -1/10, Anthropic +2/10. Delta: 5 (Meta vs
+OpenAI), 8 (Meta vs Anthropic).
+
+**Financial context:** Fortune (owned by Chatchaval Jiaravanon) has NO known AI lab
+financial relationships. **Cultural consensus evidence** — the vocabulary gradient has
+propagated into mainstream business journalism independently of financial incentives.
+
+**Mechanism #325 — NDTV World International Broadcast Entity-Selective Banning Narrative:**
+NDTV World India Global segment (Aug 10, 2026): "The Death Of Privacy? Why Countries
+Are Rapidly Banning Meta's Ray-Ban AI Glasses!" — entire segment frames country-level
+bans EXCLUSIVELY around Meta despite bans covering ALL camera-enabled smart glasses.
+Samsung, Google, Snap, Apple: ZERO mentions. Gendered safety framing ("women and children
+especially at risk") applied exclusively to Meta. 14 hashtags — all Meta-specific or
+contextually bound to Meta.
+
+**Global propagation path documented:** US tech press → European regulators → UK broadcast
+(Mechanism #320) → International broadcast (NDTV, this mechanism). Entity-selective
+vocabulary is now **global cultural infrastructure**, not confined to financially
+incentivized Western tech publications.
+
+**NDTV ownership:** Adani Group (Gautam Adani). No known AI lab financial relationships.
+Cultural consensus evidence from a completely independent media ecosystem (Indian broadcast).
+
+**New tests:** 33 tests, 13 classes (all pass, 0.33s):
+- `test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py`
+
+**Files changed:**
+- tests/test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py (NEW — 33 tests, 13 classes)
+- podcast-sentiment.md (2 new episode analyses: Fortune AI Weekly multi-episode + NDTV World)
+- profiles/competitor-coverage-research.yaml (mechanisms #324, #325)
+- iteration-log.md (this entry)
+
+---
+
 ## Iteration #312 — Wed 2026-08-26 12:00 PT (Type D: Test & Verify)
 
 ### Focus: Cross-Validation of Mechanisms #320–#323 + Structural Consistency Fix

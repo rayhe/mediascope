@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 258 | Career data with source URLs |
 | Career-entry migrations | 973 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 22,706 | Across 632 test files |
+| Tests | 22,739 | Across 633 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **22706 tests** across 632 test files, each covering a different analytical capability:
+MediaScope has **22739 tests** across 633 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1072,6 +1072,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_fastco_uk_cinema_ban_institutional_entity_selection_meta_exclusive_snap_omission_aug22.py` | 35 | Fast Company UK cinema ban institutional entity selection — Meta-exclusive stigma in cinema ban reporting, Snap Spectacles camera omission from same ban discourse. Type A coverage selection |
 | `test_fastco_anthropic_triple_aspirational_meta_controversy_framing_aug23.py` | 31 | Mechanism #263: Fast Company Anthropic triple-aspirational vs Meta controversy framing — harm severity inversion (Anthropic cyberattack = actual harm, aspirational framing; Meta glasses = dormant feature, alarm framing). Vocabulary bifurcation: 0 alarm terms across 3 Anthropic articles vs 6+ for Meta. Type A |
 | `test_type_e_9pm_twit_1096_within_episode_surveillance_technology_vocabulary_gradient_aug23.py` | 32 | Mechanism #262: TWiT 1096 within-episode surveillance technology vocabulary gradient — three surveillance techs in one episode show inversely correlated alarm vs invasiveness (Meta glasses least invasive = most alarm, Flock ALPR most invasive = mixed). Type E |
+| `test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py` | 33 | Mechanisms #324 + #325: Fortune AI Weekly multi-episode (Jul 7 – Aug 18, 2026) cross-entity vocabulary gradient — same hosts apply alarm vocabulary to Meta ("Under Fire," "Backlash," "Betting"), analytical vocabulary to OpenAI ("Explained" for rogue AI hack), aspirational vocabulary to Anthropic ("J Space"). Severity-vs-vocabulary inversion: OpenAI's agent attacking Hugging Face gets softer vocabulary than Meta's glasses LED. Also covers NDTV World India Global (Aug 10) entity-selective international broadcast banning narrative. Both are cultural consensus evidence (no financial incentives). Type E |
 | `test_abrar_al_heeti_cnet_cross_entity_cross_medium_camera_wearable_privacy_vocabulary_bifurcation_aug23.py` | 55 | Mechanism #255: Abrar Al-Heeti CNET cross-entity cross-medium camera wearable privacy vocabulary bifurcation — alarm for Meta, zero for Apple, across print and TWiT podcast. Type B |
 | `test_ai_citation_amplification_licensing_deal_bias_aug23.py` | 27 | Mechanism #249: AI Citation Amplification — OpenAI-licensed publishers get +48% ChatGPT citations, quantifying the financial incentive loop (deal → citations → traffic → softer coverage). Type C |
 | `test_type_e_1am_ai_inside_cross_episode_temporal_adjacency_vocabulary_bifurcation_aug23.py` | 23 | AI Inside podcast cross-episode temporal adjacency vocabulary bifurcation — opposite framing for Meta vs competitors in adjacent episodes. Type E |

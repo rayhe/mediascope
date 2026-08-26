@@ -30929,3 +30929,96 @@ publications:
       description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment
     - mechanism_id: 100
       description: OpenAI Publisher Financial Dependencies
+
+
+  fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
+    mechanism_id: 324
+    type: podcast_sentiment_tracking
+    publication: Fortune AI Weekly (YouTube vodcast)
+    entities: [Meta, OpenAI, Anthropic]
+    date_range: 2026-07-07 to 2026-08-18
+    description: >
+      Fortune AI Weekly applies systematically different vocabulary registers to Meta,
+      OpenAI, and Anthropic across six episodes from the same hosts (Jeremy Kahn, Bea
+      Nolan, Emily Forlini). Meta segments use alarm/crisis vocabulary ("Under Fire,"
+      "Backlash," "Betting"), OpenAI segments use analytical/explanatory vocabulary
+      ("Explained," "Losing Key Executives") even when substance is MORE alarming (rogue
+      AI attacking other companies), and Anthropic segments use scientific/aspirational
+      vocabulary ("J Space," "AI Watermarks"). Severity-vs-vocabulary inversion documented:
+      vocabulary alarm is inversely correlated with substance severity. Cultural consensus
+      evidence — Fortune has NO known AI lab financial relationships.
+    vocabulary_registers:
+      meta:
+        register: alarm_crisis
+        terms: ["Under Fire", "Backlash", "Betting", "Huge Privacy Debate", "Sparked"]
+        sentiment: -6
+      openai:
+        register: analytical_explanatory
+        terms: ["Explained", "Losing Key Executives", "Break Its Own Safety Rules?"]
+        sentiment: -1
+      anthropic:
+        register: scientific_aspirational
+        terms: ["J Space", "AI Watermarks", "AI Consciousness", "Troubling"]
+        sentiment: 2
+    asymmetry_delta:
+      meta_vs_openai: 5
+      meta_vs_anthropic: 8
+    financial_context:
+      fortune_owner: Chatchaval Jiaravanon (Fortune Media Group Holdings)
+      ai_lab_deals: none
+      classification: cultural_consensus
+    sources:
+      - url: https://www.youtube.com/watch?v=TVdoEPg42pQ
+        description: Jul 14 Meta glasses episode
+      - url: https://www.youtube.com/watch?v=1ukpGQ-25Go
+        description: Aug 4 rogue AI + Microsoft vs Meta Earnings
+      - url: https://www.youtube.com/watch?v=-E88RyyfK0w
+        description: Aug 18 Zuckerberg manifesto
+    test_file: tests/test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py
+    cross_references:
+    - mechanism_id: 320
+      description: Gadget Detective UK broadcast cross-episode entity-selective vocabulary
+    - mechanism_id: 307
+      description: ChatGPT ads Europe podcast cross-entity ad monetization vocabulary
+
+  ndtv_world_international_broadcast_entity_selective_banning_narrative:
+    mechanism_id: 325
+    type: podcast_sentiment_tracking
+    publication: NDTV World (India Global)
+    entities: [Meta]
+    date: 2026-08-10
+    description: >
+      NDTV World India Global dedicates entire segment to "The Death Of Privacy? Why
+      Countries Are Rapidly Banning Meta's Ray-Ban AI Glasses!" — framing country-level
+      bans EXCLUSIVELY around Meta despite bans covering ALL camera-enabled smart glasses.
+      Zero mentions of Samsung, Google, Snap, or Apple. Gendered safety framing ("women
+      and children especially at risk") applied exclusively to Meta devices. Demonstrates
+      entity-selective vocabulary has propagated to international broadcast (Indian media),
+      confirming it is now global cultural infrastructure independent of Western tech
+      publication financial incentives.
+    entity_selection:
+      meta: exclusive target (title, description, 14 hashtags)
+      samsung: zero mention
+      google: zero mention
+      snap: zero mention
+      apple: zero mention
+    gendered_safety_framing: true
+    global_propagation_path:
+      - US tech press
+      - European regulators (France CNIL, Germany Hamburg DPA)
+      - UK broadcast (Gadget Detective, mechanisms #320)
+      - International broadcast (NDTV World, this mechanism)
+    sentiment: -8
+    financial_context:
+      ndtv_owner: Adani Group (Gautam Adani)
+      ai_lab_deals: none
+      classification: cultural_consensus
+    source:
+      url: https://www.youtube.com/watch?v=SvCQigAOoFA
+      description: Aug 10, 2026 India Global segment
+    test_file: tests/test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py
+    cross_references:
+    - mechanism_id: 320
+      description: Gadget Detective UK broadcast (same institutional cascade)
+    - mechanism_id: 245
+      description: UK cinema piracy institutional entity selection

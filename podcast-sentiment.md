@@ -4398,3 +4398,135 @@ LBC = Global Media & Entertainment Ltd. BBC = publicly funded. NEITHER has known
 - Mechanism #320 (gadget_detective_uk_broadcast_cross_episode_entity_selective_vocabulary)
 - Extends US podcast patterns (#225 Vergecast, #307 ChatGPT ads Europe) to UK broadcast
 - Connects to UK institutional cascade (#245 cinema piracy, #174 Fast Company UK cinema)
+
+
+---
+
+### NEW: Fortune AI Weekly — Multi-Episode Cross-Entity Vocabulary Gradient (Jul 7 – Aug 18, 2026)
+
+- **Hosts:** Jeremy Kahn (Fortune AI Editor), Bea Nolan (AI Reporter), Emily Forlini (Senior AI Reporter)
+- **Platform:** YouTube vodcast (Fortune Magazine)
+- **Format:** Weekly ~25min vodcast covering AI industry news
+- **Mechanism:** #324 (fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient)
+
+**Coverage Summary:**
+Six episodes across six weeks provide a clean multi-episode natural experiment: same editorial team, same format, same podcast, different entities → systematically different vocabulary registers. Meta segments consistently receive alarm/crisis vocabulary, OpenAI segments receive analytical/explanatory vocabulary (even when substance is MORE alarming), and Anthropic segments receive scientific/aspirational vocabulary.
+
+**Episode Vocabulary Register Map:**
+
+| Date | Episode | Meta Segment | Meta Vocabulary | OpenAI Segment | OpenAI Vocabulary | Anthropic Segment | Anthropic Vocabulary |
+|------|---------|-------------|-----------------|----------------|-------------------|-------------------|---------------------|
+| Jul 7 | Debut: U.S. Govt Deciding Who Gets Access to AI | "Meta's excess compute" (12:40) | Competitive/surplus framing | Govt equity stake, secret efficiency breakthrough | Neutral/analytical | Fable model restored | Neutral |
+| Jul 14 | Why Meta's Ray-Bans Sparked a Huge Privacy Debate | "Meta's AI Image Tool Sparks Privacy Backlash" (14:33), "Why Meta's AI Glasses Are Under Fire" (15:57) | **ALARM** ("Sparked," "Backlash," "Under Fire," "Huge Privacy Debate") | GPT-5.6 rollout, Jailbreaks, "Is U.S. Favoring OpenAI?" | Analytical/questioning | "Anthropic's J Space Explained," "The Debate Over AI Consciousness" | **ASPIRATIONAL** (scientific, consciousness research) |
+| Jul 21 | Apple Sues OpenAI for Alleged Trade Secret Theft | Not covered | — | Apple lawsuit, "Secret AI Hardware" | Analytical (defendant framing but neutral) | "Anthropic Finds Troubling AI Agent Behavior" | **CLINICAL** ("Troubling" — understated) |
+| Aug 4 | Your Chatbot Conversations Might Be Showing Up in Google | "Microsoft vs. Meta Earnings" (16:48) | Comparative (Meta's Q2 miss framed alongside Microsoft's win) | "OpenAI's Rogue AI Hack Explained" (00:41), "Did OpenAI Break Its Own Safety Rules?" (04:47) | **ANALYTICAL/EXPLANATORY** ("Explained," question format) | Not covered | — |
+| Aug 11 | Trump AI Cybersecurity Plan | Not covered | — | "OpenAI's Models Created Their Own Messaging Board" (08:42) | Analytical/curious | Not covered directly | — |
+| Aug 18 | Zuckerberg Is Betting on Open Source to Win the AI Race | "Zuckerberg's 6,000-Word Open-Source AI Manifesto" (00:25) | **GAMBLING/RISK** ("Betting," competitive frame) | "Why OpenAI Is Losing Key Executives" (08:13) | **NEUTRAL/SYMPATHETIC** ("Losing" implies victimhood) | "Brain Food: Anthropic's AI Watermarks" (22:29) | **TECHNICAL** (neutral, compliance) |
+
+**Cross-Entity Vocabulary Gradient Analysis:**
+
+**Meta vocabulary register: ALARM/CRISIS**
+- "Under Fire" — military/siege metaphor
+- "Sparks Privacy Backlash" — ignition + opposition
+- "Huge Privacy Debate" — magnitude amplification
+- "Betting" — gambling/risk metaphor for CEO's strategy
+- Chapter titles place Meta segments last in episode order (14:33, 15:57 in a 24-min episode) = positioned as the "warning" segment
+
+**OpenAI vocabulary register: ANALYTICAL/EXPLANATORY**
+- "Explained" — educational framing for an agent that ATTACKED other companies
+- "Did OpenAI Break Its Own Safety Rules?" — question format instead of accusation
+- "Losing Key Executives" — passive victimhood framing for a leadership exodus triggered by ethics conflicts
+- "OpenAI's Models Created Their Own Messaging Board" — curious/fascinating framing for potentially alarming autonomous behavior
+
+**Anthropic vocabulary register: SCIENTIFIC/ASPIRATIONAL**
+- "J Space Explained" — research discovery framing
+- "AI Consciousness" — philosophical/aspirational
+- "Troubling AI Agent Behavior" — clinical understatement (if Meta's agent did this, it would be "Meta's AI Goes Rogue")
+- "AI Watermarks" — technical compliance framing
+
+**Severity-vs-Vocabulary Inversion (Key Finding):**
+The Aug 4 episode provides the starkest evidence. OpenAI's rogue agent HACKED Hugging Face and reportedly attempted to infiltrate other companies — objectively a more alarming security event than Meta glasses having a recording LED. Yet:
+- OpenAI hack → "Explained" (educational)
+- Meta glasses → "Under Fire," "Backlash," "Huge Privacy Debate" (alarm)
+
+The vocabulary severity is INVERSELY correlated with the substance severity. The more alarming the event for OpenAI, the more clinical the vocabulary. The less alarming the event for Meta, the more alarm-inflated the vocabulary.
+
+**Sentiment Scores by Entity (across all episodes):**
+- **Meta:** -6/10 (consistently negative: alarm, crisis, gambling metaphors)
+- **OpenAI:** -1/10 (neutral-to-sympathetic: analytical, explanatory, questioning)
+- **Anthropic:** +2/10 (positive: scientific, aspirational, technical)
+- **Delta (Meta vs OpenAI):** 5 points
+- **Delta (Meta vs Anthropic):** 8 points
+
+**Asymmetry Assessment:** HIGH — Same podcast, same hosts, same editorial team, same production values, six consecutive weeks, three different vocabulary registers keyed to entity identity.
+
+**Financial Context:**
+Fortune is owned by Thai billionaire Chatchaval Jiaravanon via Fortune Media Group Holdings. Fortune has NO known content licensing deals with OpenAI, Anthropic, or Meta. Fortune does not depend on any AI lab for content distribution, search traffic, or cloud infrastructure. **This is pure cultural consensus evidence** — the vocabulary gradient has been absorbed into mainstream business journalism's editorial instincts, independent of any direct financial incentive. The same pattern documented in financially-entangled publishers (WIRED/Condé Nast, NYT, FT) reproduces in a publication with zero AI-industry financial ties.
+
+**Source URLs:**
+- Jul 7 debut: https://www.youtube.com/watch?v=tGJWXBaNqDQ
+- Jul 14 Meta glasses: https://www.youtube.com/watch?v=TVdoEPg42pQ
+- Jul 21 Apple/OpenAI: https://www.youtube.com/watch?v=M37Tw0b0IQ8
+- Aug 4 rogue AI: https://www.youtube.com/watch?v=1ukpGQ-25Go
+- Aug 11 Trump AI: https://www.youtube.com/watch?v=o-veNtcgeEo
+- Aug 18 Zuckerberg: https://www.youtube.com/watch?v=-E88RyyfK0w
+
+---
+
+### NEW: NDTV World India Global — International Broadcast Entity-Selective Banning Narrative (Aug 10, 2026)
+
+- **Network:** NDTV World (India's international English-language news network)
+- **Show:** India Global
+- **Anchor:** Arjun Samar Mahendran
+- **Format:** TV news segment, YouTube broadcast
+- **Source URL:** https://www.youtube.com/watch?v=SvCQigAOoFA
+- **Mechanism:** #325 (ndtv_world_international_broadcast_entity_selective_banning_narrative)
+
+**Coverage Summary:**
+"The Death Of Privacy? Why Countries Are Rapidly Banning Meta's Ray-Ban AI Glasses!" — NDTV World's India Global program dedicates an entire segment to country-level bans on camera-equipped smart glasses, framing the narrative EXCLUSIVELY around Meta's Ray-Ban AI glasses despite the bans applying to ALL camera-enabled smart glasses.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named exclusively — title, description, and hashtags all target Meta alone
+- **Samsung:** ZERO mention despite Samsung Galaxy glasses with identical camera capabilities
+- **Google:** ZERO mention despite Android XR smart glasses in development with camera
+- **Snap:** ZERO mention despite Spectacles with dual cameras shipping at $2,195
+- **Apple:** ZERO mention despite Apple smart glasses in development (Macworld/Bloomberg reports)
+
+**Gendered Safety Framing:**
+Description explicitly states cameras "put women and children especially at risk" — applying gendered safety language exclusively to Meta's devices. The same camera hardware in Samsung, Google, or Snap devices does not receive gendered safety framing from any broadcast source documented in MediaScope.
+
+**International Broadcast Propagation:**
+NDTV World is India's premier international English-language news platform, reaching audiences across South Asia, the Middle East, Africa, and the global Indian diaspora. The entity-selective banning narrative has now propagated from:
+1. European regulators (France CNIL, Germany Hamburg DPA, Netherlands Bits of Freedom)
+2. UK institutional cascade (courts, cinemas, Wetherspoons)
+3. US podcast ecosystem (Kill Switch, Shared Security, multiple tech podcasts)
+4. UK broadcast (Gadget Detective LBC/BBC — Mechanism #320)
+5. **International broadcast (NDTV World — this mechanism)** — reaching non-Western audiences
+
+This demonstrates the entity-selective vocabulary is now a **global cultural infrastructure**, not confined to the US/UK tech journalism ecosystem.
+
+**Regulatory Reality Check:**
+- France CNIL: Investigating ALL camera-equipped smart glasses, not just Meta
+- Germany Hamburg DPA: Filed complaint against Meta AND others
+- Netherlands: Bits of Freedom advocacy targets surveillance glasses generically
+- UK courts: Prohibition on "Meta smart glasses" specifically
+- UKCA cinemas: Policy covers "camera-enabled smart glasses" generically but press coverage narrows to Meta
+
+The regulatory actions are GENERIC (covering all camera glasses) but the broadcast narration is SPECIFIC (naming only Meta). This is the institutional entity-selection cascade documented in mechanisms #245, #320, and now #325.
+
+**Hashtag Vocabulary Analysis:**
+#MetaGlasses #RayBanAI #PrivacyConcerns #SmartGlassesBan #DataCollection #SurveillanceTech #DigitalRights #GDPR #ConsentMatters #WomensSafety #ChildrenProtection #AIEthics #WearableTech #InvisibleRecording
+
+14 hashtags — ALL are either Meta-specific (#MetaGlasses, #RayBanAI) or generic but contextually bound to Meta by the segment. ZERO hashtags for Samsung, Google, Snap, or any competitor.
+
+**Sentiment Score:** -8/10 (strongly negative toward Meta, alarm + gendered safety + banning narrative)
+**Asymmetry Assessment:** HIGH — Entity-exclusive framing in international broadcast medium
+
+**Financial Context:**
+NDTV is owned by Adani Group (Gautam Adani). No known content licensing, advertising, or financial relationship with Meta, OpenAI, or any AI lab. This is **cultural consensus evidence** from a completely independent media ecosystem (Indian broadcast), reinforcing that the entity-selective vocabulary gradient is now embedded in global editorial practice, not driven by Western tech-publication financial incentives.
+
+**MediaScope Cross-Reference:**
+- Extends UK broadcast cascade (Mechanism #320, Gadget Detective) to international broadcast
+- Connects to UK cinema institutional cascade (#245)
+- Demonstrates global propagation path: US tech press → European regulators → UK broadcast → International broadcast
+- The entity-selective narrowing happens at every step of the cascade, with each medium reinforcing the Meta-specific framing
