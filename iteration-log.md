@@ -1,3 +1,70 @@
+## Iteration #308 — Wed 2026-08-26 08:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Gadget Detective (Fevzi Turkalp) — UK Broadcast Cross-Episode Entity-Selective Vocabulary (LBC + BBC Radio Scotland, Aug 7–21, 2026)
+
+**Type:** Podcast Sentiment Tracking
+**Mechanism:** #320 — gadget_detective_uk_broadcast_cross_episode_entity_selective_vocabulary
+**Classification:** Cultural consensus (no financial incentive)
+
+**Discovery:** Four consecutive Gadget Detective episodes across UK broadcast radio
+(LBC Radio + BBC Radio Scotland) demonstrate entity-selective vocabulary that maps
+the same framing asymmetry documented in US tech podcasts and print media, extending
+the pattern to UK mainstream broadcast.
+
+### Cross-Entity Vocabulary Gradient (same host, 2-week window):
+
+| Date | Platform | Entity | Vocabulary Register | Key Terms |
+|------|----------|--------|-------------------|-----------|
+| Aug 21 | LBC | Meta | ALARM | "ban," "piracy," "bootleg," "privacy" |
+| Aug 18 | BBC Scotland | Meta | ALARM | "addictive," "harvested data," "billions in penalties" |
+| Aug 14 | LBC | Anthropic | NEUTRAL | "EU regulations," "watermark" |
+| Aug 7 | LBC | Apple | HERO | "challenge," "privacy," government overreach |
+
+### UK Cinema Ban — Institutional Cascade Entity Selection:
+
+The UKCA statement says "camera-enabled smart glasses" generically. At every
+institutional layer, coverage narrows to Meta-specific:
+1. UKCA → "camera-enabled smart glasses" (generic)
+2. Reuters → "Meta AI and other smart glasses" (Meta named, "other" unnamed)
+3. UK tabloids (The Sun) → "Meta glasses" (only Meta named)
+4. Wetherspoons (800+ pubs) → "Meta glasses" (ban specific to Meta)
+5. German advocacy group → "Meta and others" (Meta named)
+6. Gadget Detective podcast → "smart glasses, such as Meta's Ray-Bans"
+7. UK courts → "Meta smart glasses" (Meta-specific prohibition)
+
+No competitor camera wearable (Snap Spectacles, Google Android XR, Apple AirPods
+cameras, Samsung) is named at any institutional layer.
+
+### Significance:
+
+This is a **cultural consensus** finding. LBC is owned by Global Media & Entertainment.
+BBC is publicly funded. Neither has AI content licensing deals with any AI lab. The
+entity-selective vocabulary pattern has propagated into UK mainstream broadcast radio
+independent of publisher-AI financial relationships, suggesting it is cultural
+infrastructure rather than isolated financial incentive. This strengthens the overall
+MediaScope thesis: financial relationships AMPLIFY asymmetry, but the baseline
+asymmetry exists as cultural consensus.
+
+**Confounders retained:** (1) Meta is the dominant smart glasses brand (7M units 2025) —
+visibility explains some entity selection. (2) Meta has genuine privacy incidents
+(contractor footage review, LED tamper mods). (3) California addiction trial is
+genuinely Meta-specific. (4) Apple IS fighting a real UK government backdoor demand.
+
+**Test file:** `test_type_e_08am_gadget_detective_lbc_bbc_uk_broadcast_cross_episode_entity_selective_vocabulary_aug26.py`
+— 26 tests (8 classes: mechanism existence, episode documentation, entity vocabulary,
+entity selection, cultural consensus classification, institutional cascade, cross-references,
+source URL integrity, podcast sentiment). All 26 pass (88.55s).
+
+**Cross-references:** Extends #225 (Vergecast three-episode convergence), #307 (ChatGPT
+ads Europe podcast), #245 (UK cinema piracy cascade), #174 (Fast Company UK cinema
+meta-exclusive framing).
+
+**Files changed:**
+- tests/test_type_e_08am_gadget_detective_lbc_bbc_uk_broadcast_cross_episode_entity_selective_vocabulary_aug26.py (NEW, 26 tests, 8 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #320 added)
+- podcast-sentiment.md (Gadget Detective entry added)
+- iteration-log.md (this entry)
+
 ## Iteration #307 — Wed 2026-08-26 07:00 PT (Type D: Test & Verify)
 
 ### Focus: Cross-Validation of Mechanisms #317–#319 + Test Suite Health Check

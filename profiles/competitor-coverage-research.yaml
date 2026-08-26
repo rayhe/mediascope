@@ -32289,3 +32289,127 @@ publications:
       description: OpenAI CPA Advertising Maturation Meta Displacement
     - mechanism_id: 142
       description: OpenAI Zero Ad Revenue Share Publisher Financial Captivity
+  gadget_detective_uk_broadcast_cross_episode_entity_selective_vocabulary:
+    mechanism_id: 320
+    asymmetry_score: 0.72
+    discovery_date: '2026-08-26'
+    medium: podcast_broadcast_radio
+    classification: cultural_consensus
+    host: Fevzi Turkalp (Gadget Detective)
+    platforms:
+    - LBC Radio (Global Media & Entertainment)
+    - BBC Radio Scotland (BBC, publicly funded)
+    - BBC Radio London (BBC, publicly funded)
+    description: >
+      Four consecutive Gadget Detective episodes across UK broadcast radio
+      (LBC + BBC Radio Scotland) demonstrate entity-selective vocabulary
+      that maps the same framing asymmetry documented in US tech podcasts
+      and print media, extending the pattern to UK mainstream broadcast.
+      In a 2-week window (Aug 7-21, 2026): Apple receives hero vocabulary
+      (challenging government on privacy), Anthropic receives compliance
+      vocabulary (EU watermark), and Meta receives alarm vocabulary twice
+      (cinema ban + California addiction trial). The UK cinema ban applies
+      to ALL camera-enabled smart glasses, but only Meta's Ray-Bans are
+      named in the podcast. No financial incentive ties LBC or BBC to any
+      AI lab — this is cultural consensus evidence.
+    episodes:
+    - date: '2026-08-21'
+      platform: LBC
+      title: UK Cinemas Could Ban Smart Glasses
+      entity: Meta
+      vocabulary_register: alarm
+      key_terms:
+      - ban
+      - piracy
+      - bootleg
+      - privacy
+      - record
+      entity_selection_note: >
+        UKCA statement covers ALL camera-enabled smart glasses. Podcast
+        names only Meta Ray-Bans. Snap Spectacles, Google Android XR,
+        Apple AirPods cameras, Samsung smart glasses all absent.
+    - date: '2026-08-18'
+      platform: BBC Radio Scotland
+      title: Discussing the Meta Court Case in California
+      entity: Meta
+      vocabulary_register: alarm
+      key_terms:
+      - addictive
+      - harvested data of minors
+      - penalties in the hundreds of billions
+      - prosecution
+      - whistleblower
+      - fine
+    - date: '2026-08-14'
+      platform: LBC
+      title: AI News and a Tech Reviews
+      entity: Anthropic
+      vocabulary_register: neutral_compliance
+      key_terms:
+      - EU regulations
+      - watermark
+      - AI creates
+      note: No alarm vocabulary applied to Anthropic watermark compliance
+    - date: '2026-08-07'
+      platform: LBC
+      title: Weekly Tech News and Reviews
+      entity: Apple
+      vocabulary_register: hero
+      key_terms:
+      - challenge
+      - privacy
+      - warranted
+      note: >
+        Apple positioned as privacy champion fighting UK government
+        backdoor demand. Presented as Apple challenging overreach.
+    institutional_cascade:
+      description: >
+        UK cinema ban coverage shows narrowing from generic to
+        Meta-specific across institutional layers.
+      layers:
+      - institution: UKCA
+        language: camera-enabled smart glasses (generic)
+      - institution: Reuters headline
+        language: Meta AI and other smart glasses (Meta named first)
+      - institution: UK tabloids (The Sun)
+        language: Meta glasses (only Meta named)
+      - institution: Wetherspoons (800+ pubs)
+        language: Meta glasses (ban specific to Meta)
+      - institution: German advocacy group
+        language: Meta and others (Meta named)
+      - institution: Gadget Detective podcast
+        language: smart glasses such as Meta Ray-Bans (Meta exemplar)
+      - institution: UK courts
+        language: Meta smart glasses (Meta-specific prohibition)
+    financial_context:
+      lbc_owner: Global Media & Entertainment Ltd
+      lbc_ai_deals: none known
+      bbc_funding: publicly funded
+      bbc_ai_deals: none known
+      classification: >
+        Cultural consensus — entity-selective vocabulary has propagated
+        into UK mainstream broadcast radio independent of publisher-AI
+        financial relationships.
+    confounding_factors:
+    - '[MODERATE] Meta is the dominant smart glasses brand (7M units in 2025).
+      Higher visibility explains some entity selection.'
+    - '[MODERATE] Meta has genuine privacy incidents (contractor footage review,
+      LED tamper mods) providing legitimate editorial basis.'
+    - '[WEAK] Gadget Detective is a generalist tech show, not entity-aligned.
+      Counter: generalist framing should be entity-neutral.'
+    - '[STRONG] The California addiction trial is a genuine legal proceeding
+      specific to Meta. No confound there.'
+    source_urls:
+    - https://uk.radio.net/podcast/gadget-detective-a-selection-of-free-tech-advice-and-tech-news-broadcasts-by-fevzi-turkalp-on-the-bb
+    - https://www.reuters.com/business/media-telecom/uk-cinemas-restricting-meta-ai-other-smart-glasses-over-piracy-concerns-2026-08-20/
+    - https://www.thesun.co.uk/money/40126465/new-cinema-ban-after-wetherspoons-crackdown/
+    test_file: tests/test_type_e_08am_gadget_detective_lbc_bbc_uk_broadcast_cross_episode_entity_selective_vocabulary_aug26.py
+    cross_references:
+    - mechanism_id: 225
+      description: Vergecast Three-Episode Camera Vocabulary Convergence
+    - mechanism_id: 307
+      description: ChatGPT Ads Europe Podcast Cross-Entity Vocabulary Differential
+    - mechanism_id: 245
+      description: UK Cinema Piracy Institutional Cascade
+    - mechanism_id: 174
+      description: Fast Company UK Cinema Ban Meta-Exclusive Framing

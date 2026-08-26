@@ -4349,3 +4349,52 @@ Two independent publications, zero editorial coordination, identical entity-sele
 
 **Aggregate Finding:** Seven sources across two media types, zero with Meta financial relationships, all producing identical entity-selective privacy vocabulary. The camera-in-wearable alarm vocabulary activates ONLY for Meta. When Apple deploys the same technology, alarm vocabulary is raised only to be immediately dismissed ("however," "won't take photos," "potato quality," "may not be").
 
+
+---
+
+### NEW: Gadget Detective (Fevzi Turkalp) — UK Broadcast Cross-Episode Entity-Selective Vocabulary (Aug 7–21, 2026)
+
+- **Host:** Fevzi Turkalp (tech journalist, "Gadget Detective")
+- **Platforms:** LBC Radio (Global Media & Entertainment), BBC Radio Scotland, BBC Radio London
+- **Format:** Weekly broadcast tech news segments, 9-18 min each
+- **Source URL:** https://uk.radio.net/podcast/gadget-detective-a-selection-of-free-tech-advice-and-tech-news-broadcasts-by-fevzi-turkalp-on-the-bb
+
+**Coverage Summary:**
+Four consecutive episodes across UK broadcast radio demonstrate entity-selective vocabulary mapping the same framing asymmetry documented in US tech podcasts and print media. Within a two-week window, the same host applies hero vocabulary to Apple, compliance vocabulary to Anthropic, and alarm vocabulary (twice) to Meta.
+
+**Episode Breakdown:**
+
+| Date | Platform | Topic | Entity | Vocabulary Register |
+|------|----------|-------|--------|-------------------|
+| Aug 21 | LBC | UK Cinemas Could Ban Smart Glasses | Meta | ALARM ("ban," "piracy," "bootleg," "privacy") |
+| Aug 18 | BBC Scotland | Meta Court Case in California | Meta | ALARM ("addictive," "harvested data," "billions in penalties") |
+| Aug 14 | LBC | AI News / Anthropic Watermark | Anthropic | NEUTRAL ("EU regulations," "watermark") |
+| Aug 7 | LBC | Apple vs UK Govt on Privacy | Apple | HERO ("challenge," "privacy," warranted) |
+
+**Entity Coverage Asymmetry:**
+- **Meta (2 episodes):** Named in both as the specific target. Cinema ban episode names only "Meta's Ray-Bans" despite UKCA ban covering ALL camera-enabled smart glasses. Addiction trial coverage uses legal-alarm register.
+- **Anthropic (1 episode):** EU watermark compliance framed as responsible regulation adherence. Zero alarm vocabulary.
+- **Apple (1 episode):** Positioned as privacy champion challenging UK government backdoor demand. Hero framing.
+- **Google/Samsung/Snap:** Zero mentions in any of the four episodes, despite Google Android XR glasses, Samsung smart glasses, and Snap Spectacles all being camera-equipped wearables available or planned for UK market.
+
+**UK Cinema Ban — Institutional Cascade Entity Selection:**
+UKCA statement says "camera-enabled smart glasses" generically. At every institutional layer, the generic narrows to Meta-specific:
+1. UKCA → "camera-enabled smart glasses" (generic)
+2. Reuters → "Meta AI and other smart glasses" (Meta named, "other" unnamed)
+3. The Sun → "Meta glasses" (only Meta)
+4. Wetherspoons → "Meta glasses" (ban specific to Meta)
+5. German advocacy → "Meta and others" (Meta named)
+6. Gadget Detective → "smart glasses, such as Meta's Ray-Bans" (Meta exemplar)
+7. UK courts → "Meta smart glasses" (Meta-specific prohibition)
+
+**Sentiment Score:** -6/10 for Meta coverage (alarm/ban/prosecution), +3/10 for Apple (privacy champion), 0/10 for Anthropic (neutral compliance)
+
+**Asymmetry Assessment:** HIGH — Same host, same show, same two-week window produces three different vocabulary registers keyed to entity identity.
+
+**Financial Context:**
+LBC = Global Media & Entertainment Ltd. BBC = publicly funded. NEITHER has known AI content licensing deals with any AI lab. This is **cultural consensus evidence** — the entity-selective vocabulary pattern has propagated into UK mainstream broadcast radio independent of publisher-AI financial relationships, suggesting it is cultural infrastructure rather than isolated financial incentive.
+
+**MediaScope Cross-Reference:**
+- Mechanism #320 (gadget_detective_uk_broadcast_cross_episode_entity_selective_vocabulary)
+- Extends US podcast patterns (#225 Vergecast, #307 ChatGPT ads Europe) to UK broadcast
+- Connects to UK institutional cascade (#245 cinema piracy, #174 Fast Company UK cinema)
