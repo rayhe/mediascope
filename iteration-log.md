@@ -1,3 +1,48 @@
+## Iteration #310 — Wed 2026-08-26 10:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Le Monde Institutional Editorial Register Bifurcation -- Meta Tobacco Framing vs OpenAI Business-Neutral Framing
+
+**Mechanism #322:** Le Monde deploys radically different editorial registers for Meta
+versus OpenAI coverage within the same editorial week (Aug 20-24, 2026), despite
+holding multi-year financial relationships with BOTH companies.
+
+**Natural experiment:**
+- **Meta** (Aug 20): Unsigned institutional editorial in /idees/ (opinions section).
+  Headline: "Proces de Meta : la societe contre l'avidite des plateformes" (Society
+  Against the Greed of Platforms). Vocabulary: "avidite" (greed), "addiction,"
+  "dissimuler la nocivite" (conceal harmfulness), "cigarettiers" (tobacco companies),
+  "accablants" (damning), "fardeau societal" (societal burden).
+  Source: https://www.lemonde.fr/idees/article/2026/08/20/proces-de-meta-la-societe-contre-l-avidite-des-plateformes_6750822_3232.html
+
+- **OpenAI** (Aug 24): Business news reporting in /economie/. Headline: "Intelligence
+  artificielle : les publicites arrivent sur ChatGPT en France" (AI: Ads Arrive on
+  ChatGPT in France). Vocabulary: "enjeu crucial" (crucial challenge), "confiance"
+  (trust), "objectifs ambitieux" (ambitious targets). ZERO alarm-register terms.
+  Four OpenAI PR claims relayed without editorial challenge.
+  Source: https://www.lemonde.fr/economie/article/2026/08/24/intelligence-artificielle-les-publicites-arrivent-sur-chatgpt-en-france_6755543_3234.html
+
+**Critical within-document finding:** The Meta editorial's final paragraph mentions
+ChatGPT's teen version with "a voir" (wait and see) versus "accablants" (damning)
+for Meta's identical teen exposure -- register inversion within a single document.
+
+**Financial context:**
+- Le Monde has deals with BOTH OpenAI (Mar 2024) and Meta (Dec 2025)
+- CEO Dreyfus disclosed: ChatGPT converts 20x more Le Monde subscriptions than Facebook
+- 25% of ALL AI licensing revenue shared with staff journalists as yearly bonus
+- Source: https://pressgazette.co.uk/publishers/le-monde-ceo-urges-publishers-to-sign-ai-partnerships-to-stay-competitive/
+
+**Confounders:** 4 STRONG (dual financial ties, trial vs product launch, genre convention,
+confirmed Meta liability), 3 MODERATE (evidence asymmetry, French media consortium
+grievance, editorial independence tradition).
+
+- Asymmetry score: 0.71 (high confounder load including 4 STRONG)
+- Test: test_le_monde_institutional_editorial_register_bifurcation_meta_openai_aug26.py -- 34 tests, all passing
+- Cross-references: #319 (Le Monde content-ad cannibalization), #290 (WIRED OpenAI Meta ad privacy)
+
+**Files changed:**
+- `tests/test_le_monde_institutional_editorial_register_bifurcation_meta_openai_aug26.py` (NEW -- 34 tests, 7 classes)
+- `profiles/competitor-coverage-research.yaml` (mechanism #322 added)
+
 ## Iteration #309 — Wed 2026-08-26 09:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WSJ Anthropic Ode AI Surveillance Infrastructure Aspirational Framing vs Meta Camera Scrutiny

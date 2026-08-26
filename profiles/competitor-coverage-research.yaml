@@ -32499,3 +32499,73 @@ publications:
       description: OpenAI Facial Recognition Privacy Parity
     - mechanism_id: 290
       description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment
+  le_monde_institutional_editorial_register_bifurcation_meta_openai:
+    mechanism_id: 322
+    type: B
+    subtype: institutional_cross_entity_editorial_register
+    date: '2026-08-26'
+    publication: Le Monde
+    entity_pair: [Meta, OpenAI]
+    title: "Le Monde Institutional Editorial Register Bifurcation: Meta Tobacco Framing vs OpenAI Business-Neutral Framing"
+    description: >
+      Le Monde's institutional editorial voice deploys radically different registers
+      for Meta versus OpenAI coverage within the same editorial week (Aug 20-24, 2026),
+      despite holding multi-year financial relationships with BOTH companies. Meta gets
+      tobacco-comparison alarm vocabulary in an unsigned institutional editorial; OpenAI
+      gets neutral business-news framing with uncritical PR language relay. The
+      commissioning decision itself -- which entity warrants an editorial and which gets
+      news reporting -- predetermines the register.
+    natural_experiment:
+      meta_piece:
+        title_fr: "Proces de Meta : la societe contre l'avidite des plateformes"
+        date: '2026-08-20'
+        section: /idees/ (institutional editorial)
+        url: https://www.lemonde.fr/idees/article/2026/08/20/proces-de-meta-la-societe-contre-l-avidite-des-plateformes_6750822_3232.html
+        register: alarm
+        key_vocabulary: [avidite, addiction, dissimuler la nocivite, cigarettiers, accablants, fardeau societal]
+      openai_piece:
+        title_fr: "Intelligence artificielle : les publicites arrivent sur ChatGPT en France"
+        date: '2026-08-24'
+        section: /economie/ (business news)
+        url: https://www.lemonde.fr/economie/article/2026/08/24/intelligence-artificielle-les-publicites-arrivent-sur-chatgpt-en-france_6755543_3234.html
+        register: neutral
+        key_vocabulary: [enjeu crucial, confiance, sensible, objectifs ambitieux]
+    financial_relationships:
+      openai_deal:
+        date: 2024-03
+        scope: training + ChatGPT integration
+        note: First French publisher to sign with OpenAI
+        source: https://techcrunch.com/2024/03/13/are-openais-deals-with-publishers-edging-out-the-competition/
+      meta_deal:
+        date: 2025-12
+        scope: French-language news for Meta AI
+        source: https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+      perplexity_deal:
+        date: 2025-05
+        scope: content integration, no training
+      conversion_premium: "ChatGPT converts 20x more Le Monde subscriptions than Facebook (CEO Dreyfus, Press Gazette Apr 2026)"
+      journalist_bonus: "25% of ALL AI licensing revenue shared with staff journalists"
+      source: https://pressgazette.co.uk/publishers/le-monde-ceo-urges-publishers-to-sign-ai-partnerships-to-stay-competitive/
+    confounders:
+    - "[STRONG] Dual financial ties -- Le Monde has deals with BOTH Meta and OpenAI.
+       Simple financial-capture model would predict favorable coverage of both partners."
+    - "[STRONG] Meta piece covers a 29-state $200B trial; OpenAI piece covers a product
+       launch. Event magnitude may explain register difference independently of entity bias."
+    - "[STRONG] Genre convention -- editorials (/idees/) inherently use stronger evaluative
+       language than news reporting (/economie/). BUT commissioning decision which entity gets
+       an editorial is itself an editorial register choice."
+    - "[STRONG] Confirmed liability -- Meta's $18B settlement (Aug 26) confirms actual
+       wrongdoing. OpenAI has no comparable confirmed liability."
+    - "[MODERATE] Evidence asymmetry -- Meta has 15+ years of documented harm data vs
+       OpenAI's 6-month-old ad platform."
+    - "[MODERATE] French media consortium (200+ companies) sued Meta in Apr 2025 for unfair
+       ad practices. Le Monde may align with industry consensus."
+    - "[MODERATE] French press editorial independence tradition (societe des redacteurs)."
+    test_file: tests/test_le_monde_institutional_editorial_register_bifurcation_meta_openai_aug26.py
+    cross_references:
+    - mechanism_id: 319
+      description: Le Monde content-ad cannibalization financial architecture (same publication)
+    - mechanism_id: 290
+      description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment
+    - mechanism_id: 100
+      description: OpenAI Publisher Financial Dependencies
