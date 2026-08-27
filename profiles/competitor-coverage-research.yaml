@@ -20720,6 +20720,7 @@ cross_publication_findings:
     - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
   meta_insurance_denial_asymmetric_financial_materiality_ai_lab_precedent_gap:
     mechanism_id: 338
+    test_file: tests/test_meta_insurance_denial_asymmetric_financial_materiality_ai_lab_precedent_gap_aug27.py
     type: financial_incentive_mapping
     date: '2026-08-27'
     title: Insurance Denial Precedent — Asymmetric Financial Materiality Architecture
@@ -29767,7 +29768,7 @@ publications:
     - 'eWeek, Jul 2026: 300M+ health queries/week'
     test_file: tests/test_verge_pmc_openai_health_data_sensitivity_inversion_meta_glasses_surveillance_vocabulary_aug25.py
   rebecca_bellan_control_vocabulary_inversion:
-    mechanism_id: 305
+    mechanism_id: 345
     type: journalist_cross_entity_tracking
     publication: TechCrunch
     publication_owner: Yahoo (Apollo Global Management)
@@ -32684,6 +32685,7 @@ publications:
 
   subscription_only_cultural_consensus_settlement_compartmentalization:
     mechanism_id: 339
+    test_file: tests/test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py
     type: podcast_sentiment_tracking
     date: '2026-08-27'
     title: Subscription-Only Publication Same-Episode Settlement-AI Compartmentalization — Cultural
@@ -32804,6 +32806,7 @@ publications:
     - https://www.youtube.com/watch?v=5xniF9sqVpo
   cross_publication_going_rogue_agency_deflection_vocabulary_convergence:
     mechanism_id: 341
+    test_file: tests/test_cross_publication_going_rogue_agency_deflection_vocabulary_convergence_aug27.py
     type: cross_publication_vocabulary_convergence
     date: '2026-08-27'
     title: Cross-Publication 'Going Rogue' Agency-Deflection Vocabulary Convergence vs
@@ -32899,6 +32902,7 @@ publications:
     - https://scoopfeeds.com/article/ffa45713-fc48-5e18-b185-d489bdccfda0
   wsj_youtube_child_safety_entity_accountability_deflection:
     mechanism_id: 342
+    test_file: tests/test_wsj_news_corp_google_youtube_child_safety_settlement_coverage_accountability_asymmetry_aug27.py
     type: competitor_coverage_deep_dive
     publication: Wall Street Journal (News Corp)
     competitor: Google/YouTube
@@ -33011,6 +33015,7 @@ publications:
     - https://www.reuters.com/business/us-teen-drops-lawsuit-against-meta-google-snap-ahead-trial-2026-08-21/
   ap_wire_service_cross_entity_accountability_vocabulary_bifurcation:
     mechanism_id: 343
+    test_file: tests/test_barbara_ortutay_ap_cross_entity_settlement_week_accountability_vocabulary_bifurcation_aug27.py
     type: journalist_cross_entity_tracking
     journalist: Barbara Ortutay
     outlet: Associated Press (AP)
@@ -33086,6 +33091,7 @@ publications:
 
   meta_settlement_conditional_clause_chatgpt_ads_regulatory_boundary_financial_architecture_aug27:
     mechanism_id: 344
+    test_file: tests/test_meta_settlement_conditional_clause_chatgpt_ads_regulatory_boundary_financial_architecture_aug27.py
     type: financial_incentive_mapping
     date_documented: '2026-08-27'
     title: Meta Settlement Conditional Clause + ChatGPT Ads Europe Regulatory Boundary Financial Architecture
@@ -33169,7 +33175,7 @@ publications:
           identical to Meta's approach of restricting detected minors.
         meta_approach: Behavioral signals + self-reported age
         chatgpt_approach: Behavioral signals + account-level signals + stated age
-        meta_framing: "Designed to fail," inadequate, willful negligence
+        meta_framing: '"Designed to fail," inadequate, willful negligence'
         chatgpt_framing: Innovation, responsible, proactive protection
         source_chatgpt: https://techcrunch.com/2026/01/20/in-an-effort-to-protect-young-users-chatgpt-will-now-predict-how-old-you-are/
     confounders:
