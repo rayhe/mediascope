@@ -24694,6 +24694,13 @@ publications:
         framing: balanced profile, internal tensions without adversarial editorializing
         title: The Man Unleashing AI at Meta (Bosworth profile)
         tone: 0.05
+      - date: '2026-08-26'
+        framing: 'accountability vocabulary: "profit-driven addictive features," "knowingly
+          addictive," Facebook Files self-reference. Includes Meta legal chief quote.
+          Same-week Anthropic coverage uses aspirational register. Mechanism #337.'
+        title: Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims
+        tone: -0.25
+        source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
       meta_tone_value: -0.15
       role: WSJ Meta Beat Reporter (assigned ~2023, WSJ since 2021)
       source_urls:
@@ -24715,6 +24722,95 @@ publications:
       - beat: Tech columnist (cross-entity)
         financial_tie: null
         reporter: Christopher Mims
+    bobrowsky_settlement_week_vocabulary_bifurcation:
+      mechanism_id: 337
+      pattern: WSJ Same-Publication Settlement-Week Vocabulary Bifurcation
+      description: >
+        On Aug 26, 2026, Meghan Bobrowsky (WSJ Meta beat reporter) published the Meta
+        $18B child safety settlement article with full accountability vocabulary:
+        "profit-driven addictive features" (Florida AG quote amplified), "knowingly
+        making its platforms addictive," self-referencing WSJ's Facebook Files. In the
+        SAME 48-hour window (Aug 25-26), WSJ published Corrie Driebusch's Anthropic
+        $30T TAM / $2T valuation IPO story and Amrith Ramkumar's OpenAI data retention
+        pledge story, both using aspirational vocabulary. Anthropic's OWN $1.5B copyright
+        piracy settlement (Library Genesis, 7M pirated books) receives no comparable
+        standalone WSJ accountability article — mentioned only in passing within a
+        rare-books feature (Aug 22). The vocabulary register differential within a
+        single publication in a 48-hour window is the cleanest natural experiment: same
+        editorial standards, same newsroom, different desk assignments produce radically
+        different vocabulary registers.
+      discovery_date: '2026-08-27'
+      journalist: Meghan Bobrowsky (Meta); Corrie Driebusch (Anthropic TAM); Amrith Ramkumar (OpenAI data)
+      publication: Wall Street Journal (News Corp)
+      financial_context: >
+        News Corp balanced $50M/$50M deals with OpenAI and Meta. Anthropic has no
+        disclosed News Corp content deal.
+      evidence:
+        meta_settlement:
+          title: "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims"
+          date: '2026-08-26'
+          author: Meghan Bobrowsky
+          source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+          vocabulary_register: accountability
+          key_phrases:
+            - "profit-driven addictive features"
+            - "knowingly making its platforms addictive"
+            - "award-winning series called The Facebook Files"
+        anthropic_tam:
+          title: "Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue"
+          date: '2026-08-26'
+          author: Corrie Driebusch
+          source_url: https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
+          vocabulary_register: aspirational
+          key_phrases:
+            - "$30 trillion in potential revenue opportunities"
+            - "$2 trillion valuation"
+            - "raise as much as $100 billion"
+        anthropic_piracy_settlement_treatment:
+          title: "Rare-Book Sales Are Booming. They're Getting Sliced Up and Fed to AI."
+          date: '2026-08-22'
+          source_url: https://www.wsj.com/articles/ais-need-for-content-has-put-rare-book-dealers-in-a-bind-1ac5a053
+          note: >
+            Anthropic $1.5B piracy settlement mentioned in passing within a feature.
+            No standalone WSJ accountability article.
+      confounders:
+      - id: C1
+        strength: STRONG
+        description: >
+          Beat assignment explains the vocabulary gap: Bobrowsky is Meta beat, Driebusch
+          is IPO/deals. Different genres produce different templates structurally.
+        adjustment: -0.15
+      - id: C2
+        strength: STRONG
+        description: >
+          News value asymmetry: Meta $18B settlement resolving claims of harming children
+          carries inherently more adversarial moral weight than a copyright settlement.
+        adjustment: -0.12
+      - id: C3
+        strength: MODERATE
+        description: >
+          Pre-IPO aspirational coverage is an industry norm in financial journalism.
+        adjustment: -0.05
+      - id: C4
+        strength: MODERATE
+        description: >
+          Facebook Files self-reference is standard WSJ institutional practice.
+        adjustment: -0.03
+      - id: C5
+        strength: WEAK
+        description: >
+          Anthropic piracy settlement was covered with more accountability framing by
+          other outlets (TechCrunch, Washington Post).
+        adjustment: -0.02
+      raw_score: 0.65
+      adjusted_score: 0.28
+      cross_references:
+      - mechanism_id: 27
+        relationship: "extends — Mechanism #27 documents WSJ startup-desk vs corporate-desk tone gap"
+      - mechanism_id: 22
+        relationship: "parallel — WSJ aspirational Anthropic framing pattern"
+      - mechanism_id: 284
+        relationship: "cross-publication — TechCrunch vocabulary bifurcation"
     disclosure_analysis: 'CRITICAL FINDING — WSJ IS THE ONLY PUBLICATION IN THE DATASET
 
       THAT CONSISTENTLY DISCLOSES ITS FINANCIAL RELATIONSHIPS.

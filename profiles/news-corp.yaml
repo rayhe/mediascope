@@ -1338,6 +1338,31 @@ journalist_profiles:
 
           '
         source_url: https://www.wsj.com/tech/meta-ordered-to-pay-942-million-to-address-harm-to-kids-from-social-media-8ba5aab7
+      - title: Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims
+        date: '2026-08-26'
+        tone: -0.25
+        framing_notes: >
+          Full accountability vocabulary: "profit-driven addictive features" (Florida AG
+          quote amplified), "knowingly making its platforms addictive," trial/litigation
+          framing. Self-references WSJ's own "Facebook Files" investigation as institutional
+          credential: "comes a few years after The Wall Street Journal reported ... in an
+          award-winning series called The Facebook Files." Includes Meta's legal chief C.J.
+          Mahoney quote giving Meta's perspective. Florida AG Uthmeier "peanuts" quote
+          escalates adversarial framing. The article is professionally balanced but the
+          vocabulary register leans accountability: "addictive," "harmed," "sued,"
+          "alleged," "ordered to pay." Same-week WSJ Anthropic coverage (Driebusch,
+          Ramkumar) uses aspirational vocabulary: "$30 trillion," "$2 trillion valuation,"
+          "vaulted ahead," "front-runner." See Mechanism #337.
+        source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+        mechanism_337_note: >
+          Settlement-week vocabulary bifurcation: In the same 48-hour window (Aug 25-26),
+          WSJ publishes Bobrowsky's Meta settlement with accountability vocabulary AND
+          Driebusch's Anthropic $30T TAM / $2T valuation IPO story with aspirational
+          vocabulary. Anthropic's OWN $1.5B piracy settlement (Library Genesis, 7M books)
+          receives no comparable standalone WSJ accountability article — mentioned only in
+          passing within a rare-books feature. The vocabulary differential is real but
+          largely structural: Bobrowsky is the Meta beat reporter, Driebusch is the IPO
+          reporter, different genres produce different templates. Adjusted score 0.28.
       - title: The Man Unleashing AI at Meta (Bosworth profile)
         date: '2026-05-26'
         tone: 0.05

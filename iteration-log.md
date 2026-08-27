@@ -1,3 +1,66 @@
+## Iteration #325 — Thu 2026-08-27 05:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Meghan Bobrowsky (WSJ) — Settlement-Week Cross-Entity Vocabulary Bifurcation
+
+**Type:** Journalist Cross-Entity Tracking
+**Publication:** Wall Street Journal (News Corp)
+**Journalist:** Meghan Bobrowsky (Meta beat); Corrie Driebusch (Anthropic IPO); Amrith Ramkumar (OpenAI)
+**New mechanism:** #337 — WSJ Same-Publication Settlement-Week Vocabulary Bifurcation
+**Cross-validates:** Mechanisms #27 (WSJ desk-level tone gap), #22 (WSJ aspirational Anthropic framing), #284 (TechCrunch vocabulary bifurcation)
+
+**CORE FINDING:**
+
+On Aug 26, 2026, Meghan Bobrowsky published the Meta $18B child safety settlement
+article with accountability vocabulary: "profit-driven addictive features" (Florida
+AG quote amplified), "knowingly making its platforms addictive," self-referencing
+WSJ's own "Facebook Files" investigation as institutional credential, "going after
+young users," "alleged that Meta violated."
+
+In the SAME 48-hour window (Aug 25-26), WSJ published:
+- Corrie Driebusch: Anthropic "$30 trillion in potential revenue" / $2T valuation
+  IPO story — aspirational vocabulary throughout
+- Amrith Ramkumar: OpenAI's data retention pledge — competitive/aspirational framing
+- WSJ editors: "Number of the Week: $30 Trillion+" — amplifying Anthropic TAM
+
+Anthropic's OWN $1.5B copyright piracy settlement (Library Genesis, 7M pirated
+books — "stripped them from their bindings to scan the contents, then destroyed
+the physical copies") receives NO comparable standalone WSJ accountability article.
+It is mentioned only in passing within a rare-books feature (Aug 22, 2026).
+
+**VOCABULARY REGISTER DIFFERENTIAL (same publication, same week):**
+- Meta: "addictive," "harmed," "ordered to pay," "sued," "alleged," "violated"
+- Anthropic: "$30 trillion," "$2 trillion valuation," "vaulted ahead," "front-runner," "$100 billion"
+
+**CONFOUNDERS (heavy load → modest adjusted score):**
+- STRONG: Beat assignment structural — Bobrowsky covers Meta (her job), Driebusch covers IPO/deals (her job). Genre difference, not individual bias.
+- STRONG: News value asymmetry — $18B child safety settlement carries more moral weight than a copyright settlement or IPO TAM claim.
+- MODERATE: Pre-IPO aspirational coverage is industry norm in financial journalism.
+- MODERATE: Facebook Files self-reference is standard WSJ institutional practice.
+- WEAK: Anthropic piracy settlement got accountability framing at other outlets (TechCrunch, WaPo).
+
+**Adjusted asymmetry score: 0.28** (modest — real vocabulary differential largely explained by structural factors)
+
+**FINANCIAL ARCHITECTURE:**
+- News Corp: balanced $50M/$50M deals with both OpenAI and Meta
+- Anthropic: no disclosed News Corp content deal
+- WSJ remains the balanced-control publication in the dataset
+- WSJ's disclosure practice continues: includes "News Corp, owner of the Journal,
+  has a content-licensing partnership with OpenAI" in Ramkumar's OpenAI article
+
+**SOURCE URLS:**
+- https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+- https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
+- https://www.wsj.com/tech/ai/openais-latest-bid-to-fight-anthropic-a-promise-not-to-keep-customer-data-d51a9b65
+- https://www.wsj.com/articles/ais-need-for-content-has-put-rare-book-dealers-in-a-bind-1ac5a053
+
+**New:** tests/test_meghan_bobrowsky_wsj_settlement_week_cross_entity_vocabulary_bifurcation_aug27.py (20 tests, 8 classes)
+**Modified:** profiles/news-corp.yaml (Bobrowsky settlement article, Mechanism #337 note)
+**Modified:** profiles/competitor-coverage-research.yaml (Mechanism #337 entry under news-corp)
+**Updated:** iteration-log.md
+All 20/20 new tests passing. 125/126 existing structural consistency tests passing (1 pre-existing failure in kate_clark beat structure test).
+
+---
+
 ## Iteration #324 — Thu 2026-08-27 04:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: TechCrunch (Yahoo/Apollo) — OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence
