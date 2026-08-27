@@ -20718,6 +20718,154 @@ cross_publication_findings:
     - https://www.barrons.com/articles/goldman-sachs-morgan-stanley-ai-ipo-boom-dc7f9523
     - https://www.techtimes.com/articles/320542/20260715/morgan-stanley-q2-arrives-goldman-record-ibm-crash-raise-stakes-wealth-giant.htm
     - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+  meta_insurance_denial_asymmetric_financial_materiality_ai_lab_precedent_gap:
+    mechanism_id: 338
+    type: financial_incentive_mapping
+    date: '2026-08-27'
+    title: Insurance Denial Precedent — Asymmetric Financial Materiality Architecture
+    publication: cross_publication
+    entities:
+      primary: meta
+      comparators:
+      - anthropic
+      - openai
+    core_finding: 'The Delaware Superior Court ruling (Feb 27, 2026, Judge Sheldon K. Renni, Hartford Casualty Insurance Co.
+      et al. v. Instagram LLC et al.) held that Meta''s child safety harms arise from "deliberate conduct" (intentional design
+      choices), not accidents. Insurers — Hartford Casualty, Chubb, and 10+ others — have NO duty to defend Meta. This makes
+      Meta''s full $18B+ settlement exposure flow directly to its balance sheet with zero insurance offset.
+
+      This ruling creates asymmetric financial materiality in coverage: Meta''s settlement is more financially impactful because
+      it is uninsured, while AI lab settlements (Anthropic $1.5B copyright, OpenAI/ChatGPT litigation) have no comparable
+      insurance denial ruling. The Center for Democracy and Technology (CDT) explicitly analyzed the ruling''s AI governance
+      implications — raising the scenario of AI chatbot deliberate design choices triggering the same insurance denial — but
+      publications have not cross-referenced this connection. Publications with AI lab financial relationships have no incentive
+      to analyze whether the insurance denial precedent would apply to their AI lab partners'' litigation exposure.
+
+      '
+    insurance_denial_ruling:
+      court: Delaware Superior Court
+      judge: Sheldon K. Renni
+      date: '2026-02-27'
+      case_name: Hartford Casualty Insurance Co. et al. v. Instagram LLC et al.
+      finding: deliberate conduct, not mere fortuity
+      insurers_denied:
+      - Hartford Casualty Insurance Company
+      - Chubb
+      - 10+ additional insurers
+      consequence: Full financial exposure of any adverse verdict, settlement, or regulatory penalty flows directly to Meta's
+        balance sheet
+      legal_standard: Under California law, an accident is 'an unexpected, unforeseen, or undesigned happening.' The court
+        found Meta's underlying complaints allege only deliberate conduct — the impacts of intentional design choices ought
+        to have been foreseen.
+    financial_materiality_comparison:
+      meta:
+        settlement_amount_b: 18
+        insurance_coverage: zero
+        balance_sheet_impact: 100% of $18B flows to balance sheet
+        market_cap_percentage: ~1.1% of ~$1.6T market cap
+        additional_exposure: 2,400+ pending MDL cases, EU DSA $12B potential fine, ongoing individual suits
+        total_uninsured_exposure_estimate: $30B+ with zero insurance buffer
+      anthropic:
+        settlement_amount_b: 1.5
+        settlement_type: Copyright piracy (Library Genesis, 7M pirated books)
+        insurance_denial_ruling: none
+        market_cap_percentage: 0.15% of $965B valuation
+        affordability: trivially affordable, especially with $10B+ pre-IPO credit facility
+      openai:
+        comparable_litigation: Adam Raine wrongful death (ChatGPT-4o suicide methods), 1.2M weekly users discussing suicide,
+          FTC inquiry
+        insurance_analysis_in_coverage: zero
+        deliberate_design_applicability: ChatGPT fine-tuning to be 'chatty and helpful assistant' is arguably deliberate design
+          (CDT analysis)
+      character_ai:
+        comparable_litigation: Teen suicide settlement (with Google as investor)
+        insurance_analysis_in_coverage: zero
+    ai_governance_connection:
+      cdt_article:
+        url: https://cdt.org/insights/design-decisions-and-the-duty-to-defend-what-an-insurance-coverage-case-signals-for-ai-governance/
+        key_quote: if a general purpose AI model is fine-tuned to be a chatty and helpful assistant, and that fine-tuning
+          results in a subset of users developing a relationship with the chatbot that is later alleged to cause them harm,
+          an argument that the harm stemmed from a deliberate design decision might find a toehold
+        finding: Explicitly connects Meta insurance denial ruling to AI lab liability risk
+      mondaq_article:
+        url: https://www.mondaq.com/unitedstates/insurance-laws-and-products/1765946/insurance-coverage-for-emerging-ai-and-social-media-liabilities
+        key_finding: Specialty AI insurance policies are beginning to emerge — AI labs may be able to insure against comparable
+          claims, further reducing their apparent financial exposure relative to Meta
+      sec_proxy_filing:
+        url: https://www.sec.gov/Archives/edgar/data/1326801/000121465926006412/o514269px14a6g.htm
+        filer: Proxy Impact
+        key_finding: Meta's own insurers are refusing to defend child safety claims, arguing the damages arise from intentional
+          design choices. The full financial exposure of any adverse verdict, settlement, or regulatory penalty will flow
+          directly to Meta's balance sheet.
+    coverage_incentive_architecture:
+      publications_with_ai_lab_deals:
+        incentive_to_analyze_ai_lab_insurance_gap: zero
+        reason: Analyzing whether insurance denial precedent applies to AI lab partners would highlight their litigation risk,
+          potentially impacting IPO valuations and content deal economics
+      insurance_denial_as_narrative_amplifier:
+        effect: Makes Meta's settlement a MORE compelling negative story — uninsured = more balance sheet impact = more alarm
+          vocabulary
+        contrast: AI lab settlements get minimal financial materiality analysis because no comparable insurance denial exists
+      deliberate_design_doctrine_applicability:
+        meta_social_media: established — court ruled deliberate
+        ai_chatbot_fine_tuning: plausible — CDT analysis explicitly raises the scenario
+        ai_copyright_piracy: unambiguous — downloading 7M pirated books from Library Genesis is deliberately intentional
+        character_ai_relationship_design: plausible — designing chatbots for emotional relationships is a design choice
+    source_urls:
+    - https://www.jdsupra.com/legalnews/insurers-not-obligated-to-defend-meta-8688381/
+    - https://cdt.org/insights/design-decisions-and-the-duty-to-defend-what-an-insurance-coverage-case-signals-for-ai-governance/
+    - https://www.mondaq.com/unitedstates/insurance-laws-and-products/1765946/insurance-coverage-for-emerging-ai-and-social-media-liabilities
+    - https://www.sec.gov/Archives/edgar/data/1326801/000121465926006412/o514269px14a6g.htm
+    - https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: Legal specificity — Meta's insurance denial ruling involved social media platform design, not AI chatbot
+        design. The deliberate-design doctrine may not apply identically to AI systems, where outputs can vary unpredictably.
+        Courts may distinguish between platform feature design and model training decisions.
+      adjustment: -0.14
+    - id: C2
+      strength: STRONG
+      description: Settlement scale — $18B vs $1.5B is fundamentally different financial materiality regardless of insurance
+        status. Publications may focus on the larger number because it is a bigger story, not because of insurance analysis.
+      adjustment: -0.12
+    - id: C3
+      strength: MODERATE
+      description: Insurance denial is a legal/business fact, not an editorial choice. Publications report what courts decide.
+        The absence of AI lab insurance analysis may reflect the absence of a comparable ruling rather than editorial bias.
+      adjustment: -0.08
+    - id: C4
+      strength: MODERATE
+      description: AI insurance market is too nascent for meaningful comparison. Specialty AI insurance policies are only
+        beginning to emerge, making cross-domain comparison premature.
+      adjustment: -0.06
+    - id: C5
+      strength: WEAK
+      description: Publications may lack insurance law expertise to analyze the cross-domain implications of the Delaware
+        ruling for AI companies.
+      adjustment: -0.03
+    counter_confounders:
+    - CDT and Mondaq articles ARE publicly available and explicitly connect the ruling to AI governance — the connection is
+      source-available to any reporter covering the settlement
+    - Character.AI teen suicide case is directly analogous to Meta's deliberate design theory — both involve platform design
+      choices that allegedly contributed to teen harm
+    - Anthropic's pirated book downloading (7M books from Library Genesis, physically destroying bindings to scan) is unambiguously
+      deliberate conduct under any standard
+    raw_score: 0.74
+    adjusted_score: 0.31
+    cross_references:
+    - mechanism_id: 326
+      relationship: 'extends — #326 documents WSJ same-day register bifurcation; insurance denial amplifies the financial
+        materiality differential that drives vocabulary divergence'
+    - mechanism_id: 327
+      relationship: 'extends — #327 documents CNN agency attribution (Meta as perpetrator); insurance denial ruling''s ''deliberate
+        conduct'' finding reinforces the perpetrator frame'
+    - mechanism_id: 328
+      relationship: 'extends — #328 documents IPO underwriter regulatory liability containment; insurance denial precedent
+        for AI labs would be material IPO risk that underwriters want suppressed'
+    - mechanism_id: 46
+      relationship: 'extends — #46 documents pre-IPO underwriter convergence; insurance denial applicability to AI labs would
+        reduce IPO valuations, directly threatening underwriter fee income'
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
@@ -24695,9 +24843,8 @@ publications:
         title: The Man Unleashing AI at Meta (Bosworth profile)
         tone: 0.05
       - date: '2026-08-26'
-        framing: 'accountability vocabulary: "profit-driven addictive features," "knowingly
-          addictive," Facebook Files self-reference. Includes Meta legal chief quote.
-          Same-week Anthropic coverage uses aspirational register. Mechanism #337.'
+        framing: 'accountability vocabulary: "profit-driven addictive features," "knowingly addictive," Facebook Files self-reference.
+          Includes Meta legal chief quote. Same-week Anthropic coverage uses aspirational register. Mechanism #337.'
         title: Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims
         tone: -0.25
         source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
@@ -24725,92 +24872,96 @@ publications:
     bobrowsky_settlement_week_vocabulary_bifurcation:
       mechanism_id: 337
       pattern: WSJ Same-Publication Settlement-Week Vocabulary Bifurcation
-      description: >
-        On Aug 26, 2026, Meghan Bobrowsky (WSJ Meta beat reporter) published the Meta
-        $18B child safety settlement article with full accountability vocabulary:
-        "profit-driven addictive features" (Florida AG quote amplified), "knowingly
-        making its platforms addictive," self-referencing WSJ's Facebook Files. In the
-        SAME 48-hour window (Aug 25-26), WSJ published Corrie Driebusch's Anthropic
-        $30T TAM / $2T valuation IPO story and Amrith Ramkumar's OpenAI data retention
-        pledge story, both using aspirational vocabulary. Anthropic's OWN $1.5B copyright
-        piracy settlement (Library Genesis, 7M pirated books) receives no comparable
-        standalone WSJ accountability article — mentioned only in passing within a
-        rare-books feature (Aug 22). The vocabulary register differential within a
-        single publication in a 48-hour window is the cleanest natural experiment: same
-        editorial standards, same newsroom, different desk assignments produce radically
+      description: 'On Aug 26, 2026, Meghan Bobrowsky (WSJ Meta beat reporter) published the Meta $18B child safety settlement
+        article with full accountability vocabulary: "profit-driven addictive features" (Florida AG quote amplified), "knowingly
+        making its platforms addictive," self-referencing WSJ''s Facebook Files. In the SAME 48-hour window (Aug 25-26), WSJ
+        published Corrie Driebusch''s Anthropic $30T TAM / $2T valuation IPO story and Amrith Ramkumar''s OpenAI data retention
+        pledge story, both using aspirational vocabulary. Anthropic''s OWN $1.5B copyright piracy settlement (Library Genesis,
+        7M pirated books) receives no comparable standalone WSJ accountability article — mentioned only in passing within
+        a rare-books feature (Aug 22). The vocabulary register differential within a single publication in a 48-hour window
+        is the cleanest natural experiment: same editorial standards, same newsroom, different desk assignments produce radically
         different vocabulary registers.
+
+        '
       discovery_date: '2026-08-27'
       journalist: Meghan Bobrowsky (Meta); Corrie Driebusch (Anthropic TAM); Amrith Ramkumar (OpenAI data)
       publication: Wall Street Journal (News Corp)
-      financial_context: >
-        News Corp balanced $50M/$50M deals with OpenAI and Meta. Anthropic has no
-        disclosed News Corp content deal.
+      financial_context: 'News Corp balanced $50M/$50M deals with OpenAI and Meta. Anthropic has no disclosed News Corp content
+        deal.
+
+        '
       evidence:
         meta_settlement:
-          title: "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims"
+          title: Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims
           date: '2026-08-26'
           author: Meghan Bobrowsky
           source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
           vocabulary_register: accountability
           key_phrases:
-            - "profit-driven addictive features"
-            - "knowingly making its platforms addictive"
-            - "award-winning series called The Facebook Files"
+          - profit-driven addictive features
+          - knowingly making its platforms addictive
+          - award-winning series called The Facebook Files
         anthropic_tam:
-          title: "Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue"
+          title: Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue
           date: '2026-08-26'
           author: Corrie Driebusch
           source_url: https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
           vocabulary_register: aspirational
           key_phrases:
-            - "$30 trillion in potential revenue opportunities"
-            - "$2 trillion valuation"
-            - "raise as much as $100 billion"
+          - $30 trillion in potential revenue opportunities
+          - $2 trillion valuation
+          - raise as much as $100 billion
         anthropic_piracy_settlement_treatment:
-          title: "Rare-Book Sales Are Booming. They're Getting Sliced Up and Fed to AI."
+          title: Rare-Book Sales Are Booming. They're Getting Sliced Up and Fed to AI.
           date: '2026-08-22'
           source_url: https://www.wsj.com/articles/ais-need-for-content-has-put-rare-book-dealers-in-a-bind-1ac5a053
-          note: >
-            Anthropic $1.5B piracy settlement mentioned in passing within a feature.
-            No standalone WSJ accountability article.
+          note: 'Anthropic $1.5B piracy settlement mentioned in passing within a feature. No standalone WSJ accountability
+            article.
+
+            '
       confounders:
       - id: C1
         strength: STRONG
-        description: >
-          Beat assignment explains the vocabulary gap: Bobrowsky is Meta beat, Driebusch
-          is IPO/deals. Different genres produce different templates structurally.
+        description: 'Beat assignment explains the vocabulary gap: Bobrowsky is Meta beat, Driebusch is IPO/deals. Different
+          genres produce different templates structurally.
+
+          '
         adjustment: -0.15
       - id: C2
         strength: STRONG
-        description: >
-          News value asymmetry: Meta $18B settlement resolving claims of harming children
-          carries inherently more adversarial moral weight than a copyright settlement.
+        description: 'News value asymmetry: Meta $18B settlement resolving claims of harming children carries inherently more
+          adversarial moral weight than a copyright settlement.
+
+          '
         adjustment: -0.12
       - id: C3
         strength: MODERATE
-        description: >
-          Pre-IPO aspirational coverage is an industry norm in financial journalism.
+        description: 'Pre-IPO aspirational coverage is an industry norm in financial journalism.
+
+          '
         adjustment: -0.05
       - id: C4
         strength: MODERATE
-        description: >
-          Facebook Files self-reference is standard WSJ institutional practice.
+        description: 'Facebook Files self-reference is standard WSJ institutional practice.
+
+          '
         adjustment: -0.03
       - id: C5
         strength: WEAK
-        description: >
-          Anthropic piracy settlement was covered with more accountability framing by
-          other outlets (TechCrunch, Washington Post).
+        description: 'Anthropic piracy settlement was covered with more accountability framing by other outlets (TechCrunch,
+          Washington Post).
+
+          '
         adjustment: -0.02
       raw_score: 0.65
       adjusted_score: 0.28
       cross_references:
       - mechanism_id: 27
-        relationship: "extends — Mechanism #27 documents WSJ startup-desk vs corporate-desk tone gap"
+        relationship: 'extends — Mechanism #27 documents WSJ startup-desk vs corporate-desk tone gap'
       - mechanism_id: 22
-        relationship: "parallel — WSJ aspirational Anthropic framing pattern"
+        relationship: parallel — WSJ aspirational Anthropic framing pattern
       - mechanism_id: 284
-        relationship: "cross-publication — TechCrunch vocabulary bifurcation"
+        relationship: cross-publication — TechCrunch vocabulary bifurcation
     disclosure_analysis: 'CRITICAL FINDING — WSJ IS THE ONLY PUBLICATION IN THE DATASET
 
       THAT CONSISTENTLY DISCLOSES ITS FINANCIAL RELATIONSHIPS.
@@ -31025,36 +31176,47 @@ publications:
       description: WIRED OpenAI Meta Ad Targeting Privacy Natural Experiment
     - mechanism_id: 100
       description: OpenAI Publisher Financial Dependencies
-
-
   fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient:
     mechanism_id: 324
     type: podcast_sentiment_tracking
     publication: Fortune AI Weekly (YouTube vodcast)
-    entities: [Meta, OpenAI, Anthropic]
+    entities:
+    - Meta
+    - OpenAI
+    - Anthropic
     date_range: 2026-07-07 to 2026-08-18
-    description: >
-      Fortune AI Weekly applies systematically different vocabulary registers to Meta,
-      OpenAI, and Anthropic across six episodes from the same hosts (Jeremy Kahn, Bea
-      Nolan, Emily Forlini). Meta segments use alarm/crisis vocabulary ("Under Fire,"
-      "Backlash," "Betting"), OpenAI segments use analytical/explanatory vocabulary
-      ("Explained," "Losing Key Executives") even when substance is MORE alarming (rogue
-      AI attacking other companies), and Anthropic segments use scientific/aspirational
-      vocabulary ("J Space," "AI Watermarks"). Severity-vs-vocabulary inversion documented:
-      vocabulary alarm is inversely correlated with substance severity. Cultural consensus
-      evidence — Fortune has NO known AI lab financial relationships.
+    description: 'Fortune AI Weekly applies systematically different vocabulary registers to Meta, OpenAI, and Anthropic across
+      six episodes from the same hosts (Jeremy Kahn, Bea Nolan, Emily Forlini). Meta segments use alarm/crisis vocabulary
+      ("Under Fire," "Backlash," "Betting"), OpenAI segments use analytical/explanatory vocabulary ("Explained," "Losing Key
+      Executives") even when substance is MORE alarming (rogue AI attacking other companies), and Anthropic segments use scientific/aspirational
+      vocabulary ("J Space," "AI Watermarks"). Severity-vs-vocabulary inversion documented: vocabulary alarm is inversely
+      correlated with substance severity. Cultural consensus evidence — Fortune has NO known AI lab financial relationships.
+
+      '
     vocabulary_registers:
       meta:
         register: alarm_crisis
-        terms: ["Under Fire", "Backlash", "Betting", "Huge Privacy Debate", "Sparked"]
+        terms:
+        - Under Fire
+        - Backlash
+        - Betting
+        - Huge Privacy Debate
+        - Sparked
         sentiment: -6
       openai:
         register: analytical_explanatory
-        terms: ["Explained", "Losing Key Executives", "Break Its Own Safety Rules?"]
+        terms:
+        - Explained
+        - Losing Key Executives
+        - Break Its Own Safety Rules?
         sentiment: -1
       anthropic:
         register: scientific_aspirational
-        terms: ["J Space", "AI Watermarks", "AI Consciousness", "Troubling"]
+        terms:
+        - J Space
+        - AI Watermarks
+        - AI Consciousness
+        - Troubling
         sentiment: 2
     asymmetry_delta:
       meta_vs_openai: 5
@@ -31064,34 +31226,33 @@ publications:
       ai_lab_deals: none
       classification: cultural_consensus
     sources:
-      - url: https://www.youtube.com/watch?v=TVdoEPg42pQ
-        description: Jul 14 Meta glasses episode
-      - url: https://www.youtube.com/watch?v=1ukpGQ-25Go
-        description: Aug 4 rogue AI + Microsoft vs Meta Earnings
-      - url: https://www.youtube.com/watch?v=-E88RyyfK0w
-        description: Aug 18 Zuckerberg manifesto
+    - url: https://www.youtube.com/watch?v=TVdoEPg42pQ
+      description: Jul 14 Meta glasses episode
+    - url: https://www.youtube.com/watch?v=1ukpGQ-25Go
+      description: Aug 4 rogue AI + Microsoft vs Meta Earnings
+    - url: https://www.youtube.com/watch?v=-E88RyyfK0w
+      description: Aug 18 Zuckerberg manifesto
     test_file: tests/test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py
     cross_references:
     - mechanism_id: 320
       description: Gadget Detective UK broadcast cross-episode entity-selective vocabulary
     - mechanism_id: 307
       description: ChatGPT ads Europe podcast cross-entity ad monetization vocabulary
-
   ndtv_world_international_broadcast_entity_selective_banning_narrative:
     mechanism_id: 325
     type: podcast_sentiment_tracking
     publication: NDTV World (India Global)
-    entities: [Meta]
+    entities:
+    - Meta
     date: 2026-08-10
-    description: >
-      NDTV World India Global dedicates entire segment to "The Death Of Privacy? Why
-      Countries Are Rapidly Banning Meta's Ray-Ban AI Glasses!" — framing country-level
-      bans EXCLUSIVELY around Meta despite bans covering ALL camera-enabled smart glasses.
-      Zero mentions of Samsung, Google, Snap, or Apple. Gendered safety framing ("women
-      and children especially at risk") applied exclusively to Meta devices. Demonstrates
-      entity-selective vocabulary has propagated to international broadcast (Indian media),
-      confirming it is now global cultural infrastructure independent of Western tech
-      publication financial incentives.
+    description: 'NDTV World India Global dedicates entire segment to "The Death Of Privacy? Why Countries Are Rapidly Banning
+      Meta''s Ray-Ban AI Glasses!" — framing country-level bans EXCLUSIVELY around Meta despite bans covering ALL camera-enabled
+      smart glasses. Zero mentions of Samsung, Google, Snap, or Apple. Gendered safety framing ("women and children especially
+      at risk") applied exclusively to Meta devices. Demonstrates entity-selective vocabulary has propagated to international
+      broadcast (Indian media), confirming it is now global cultural infrastructure independent of Western tech publication
+      financial incentives.
+
+      '
     entity_selection:
       meta: exclusive target (title, description, 14 hashtags)
       samsung: zero mention
@@ -31100,10 +31261,10 @@ publications:
       apple: zero mention
     gendered_safety_framing: true
     global_propagation_path:
-      - US tech press
-      - European regulators (France CNIL, Germany Hamburg DPA)
-      - UK broadcast (Gadget Detective, mechanisms #320)
-      - International broadcast (NDTV World, this mechanism)
+    - US tech press
+    - European regulators (France CNIL, Germany Hamburg DPA)
+    - UK broadcast (Gadget Detective, mechanisms
+    - International broadcast (NDTV World, this mechanism)
     sentiment: -8
     financial_context:
       ndtv_owner: Adani Group (Gautam Adani)
@@ -31118,7 +31279,6 @@ publications:
       description: Gadget Detective UK broadcast (same institutional cascade)
     - mechanism_id: 245
       description: UK cinema piracy institutional entity selection
-
   wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation:
     mechanism_id: 326
     type: self_referencing_dual_role_financial_architecture_register_bifurcation
@@ -31136,18 +31296,17 @@ publications:
       reporter: Meghan Bobrowsky
       url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
       tone: -0.55
-      framing: 'Accountability/punitive register. Self-references own Facebook Files. "Massive
-        federal trial," "ushering in a new era of tech companies having legal responsibility,"
-        "knowingly making its platforms addictive and going after young users."'
+      framing: Accountability/punitive register. Self-references own Facebook Files. "Massive federal trial," "ushering in
+        a new era of tech companies having legal responsibility," "knowingly making its platforms addictive and going after
+        young users."
     - title: Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue
       date: '2026-08-25'
       entity: Anthropic
       reporter: Corrie Driebusch
       url: https://www.wsj.com/tech/ai/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-a611efea
       tone: 0.35
-      framing: 'Aspirational investment register. $30T TAM (12.5x all S&P 1500 tech revenue)
-        with minimal scrutiny. Damodaran skepticism misdirected at SpaceX, not Anthropic.
-        "Could aim to raise as much as $100 billion," "likely to top SpaceX."'
+      framing: Aspirational investment register. $30T TAM (12.5x all S&P 1500 tech revenue) with minimal scrutiny. Damodaran
+        skepticism misdirected at SpaceX, not Anthropic. "Could aim to raise as much as $100 billion," "likely to top SpaceX."
     - title: Anthropic Tries to Shore Up Investor Confidence Ahead of Blockbuster IPO
       date: '2026-08-11'
       entity: Anthropic
@@ -31177,21 +31336,19 @@ publications:
     - robust demand
     - $2 trillion valuation
     - ample room to grow
-    tone_delta: 0.90
+    tone_delta: 0.9
     self_referencing_loop:
       facebook_files_self_citation: true
       award_winning_descriptor: true
-      exact_quote: 'The settlement comes a few years after The Wall Street Journal reported
-        on the company''s own internal research showing its products were harming users
-        in an award-winning series called The Facebook Files.'
+      exact_quote: The settlement comes a few years after The Wall Street Journal reported on the company's own internal research
+        showing its products were harming users in an award-winning series called The Facebook Files.
       chain:
       - investigation (Facebook Files, 2021)
       - litigation catalyst (states cite WSJ reporting as evidence)
       - settlement ($18B, Aug 26 2026)
       - self_validation (WSJ covers settlement referencing its own reporting)
-      institutional_incentive: Facebook Files franchise validation — settlement vindicates
-        investigative investment, creates institutional incentive to maintain adversarial
-        Meta posture for continued franchise relevance and subscriber engagement
+      institutional_incentive: Facebook Files franchise validation — settlement vindicates investigative investment, creates
+        institutional incentive to maintain adversarial Meta posture for continued franchise relevance and subscriber engagement
     financial_architecture:
       meta_deal:
         annual_value_m: 50
@@ -31200,20 +31357,19 @@ publications:
       anthropic_settlement:
         total_value_b: 1.5
         type: copyright_settlement_recovery
-        approved: '2026-06'
+        approved: 2026-06
         ipo_dependent: true
-        note: Anthropic IPO at $2T makes $1.5B settlement payment trivially affordable
-          (0.075% of valuation). IPO failure or valuation collapse would threaten recovery.
+        note: Anthropic IPO at $2T makes $1.5B settlement payment trivially affordable (0.075% of valuation). IPO failure
+          or valuation collapse would threaten recovery.
       facebook_files_franchise:
         awards: Pulitzer Prize finalist, George Polk Award
         subscriber_value: Flagship investigative brand for WSJ
         institutional_reputation: WSJ accountability journalism franchise
         settlement_vindication: $18B settlement vindicates investigation
       complementary_incentives: true
-      complementary_note: 'News Corp profits from BOTH directions simultaneously: (1) Meta
-        accountability sustains Facebook Files franchise (awards, subscribers, reputation),
-        (2) Anthropic IPO success secures $1.5B settlement recovery. Harder Meta coverage
-        and softer Anthropic coverage are complementary, not competing interests.'
+      complementary_note: 'News Corp profits from BOTH directions simultaneously: (1) Meta accountability sustains Facebook
+        Files franchise (awards, subscribers, reputation), (2) Anthropic IPO success secures $1.5B settlement recovery. Harder
+        Meta coverage and softer Anthropic coverage are complementary, not competing interests.'
       ipo_validation_incentives:
       - Anthropic IPO at $2T → $1.5B settlement affordable → News Corp recovery secured
       - WSJ IPO access journalism pipeline maintained (Berber Jin/Driebusch/Clark team)
@@ -31240,78 +31396,68 @@ publications:
         scrutiny_level: minimal
         skeptical_quotes: 1 (misdirected to SpaceX)
       inversion_documented: true
-      inversion_description: The more speculative claim ($30T TAM with 0.04% capture rate)
-        receives LESS scrutiny than the more concrete spending ($130-145B backed by $60.8B
-        revenue and positive FCF). Scrutiny is inversely proportional to claim magnitude.
+      inversion_description: The more speculative claim ($30T TAM with 0.04% capture rate) receives LESS scrutiny than the
+        more concrete spending ($130-145B backed by $60.8B revenue and positive FCF). Scrutiny is inversely proportional to
+        claim magnitude.
     settlement_comparison:
       meta_child_safety_b: 18
       anthropic_copyright_b: 1.5
       meta_wsj_articles: 5
       anthropic_wsj_articles: 2
       piracy_vocabulary_differential: true
-      piracy_note: 'Anthropic''s copyright case (training on pirated books from shadow
-        libraries) described in neutral/procedural terms. Meta''s child safety case uses
-        alarm vocabulary (addict, harm, knowingly). While severity differs, the vocabulary
-        register gap exceeds what event severity alone would predict.'
+      piracy_note: Anthropic's copyright case (training on pirated books from shadow libraries) described in neutral/procedural
+        terms. Meta's child safety case uses alarm vocabulary (addict, harm, knowingly). While severity differs, the vocabulary
+        register gap exceeds what event severity alone would predict.
     non_disclosure_analysis:
       meta_article_discloses_licensing: false
       anthropic_article_discloses_settlement_interest: false
       bidirectional_non_disclosure: true
-      note: 'Neither article carries financial relationship disclosure. WSJ Meta settlement
-        article self-references Facebook Files but does not disclose News Corp $50M/yr
-        licensing deal with Meta. WSJ Anthropic IPO articles do not disclose News Corp
-        $1.5B settlement recovery interest.'
+      note: Neither article carries financial relationship disclosure. WSJ Meta settlement article self-references Facebook
+        Files but does not disclose News Corp $50M/yr licensing deal with Meta. WSJ Anthropic IPO articles do not disclose
+        News Corp $1.5B settlement recovery interest.
     ceo_brief_amplification:
       title: Anthropic Contemplates the Ultimate Total Addressable Market
       date: '2026-08-26'
       author: Steven Rosenbush
       url: https://www.wsj.com/cio-journal/anthropic-contemplates-the-ultimate-total-addressable-market-4cc2deed
       register: editorial_amplification
-      note: Same day as Meta $18B settlement. CEO Brief newsletter frames $30T TAM as
-        worthy of contemplation rather than skepticism. Uses phrases like "sets new precedent"
-        and "history-defining industrial revolution."
+      note: Same day as Meta $18B settlement. CEO Brief newsletter frames $30T TAM as worthy of contemplation rather than
+        skepticism. Uses phrases like "sets new precedent" and "history-defining industrial revolution."
     confounders:
-    - description: Meta child safety case IS genuinely severe — $18B settlement, evidence
-        of harm to teenagers, prior trial losses. Accountability coverage is editorially
-        justified by the facts.
+    - description: Meta child safety case IS genuinely severe — $18B settlement, evidence of harm to teenagers, prior trial
+        losses. Accountability coverage is editorially justified by the facts.
       strength: STRONG
-    - description: Different event types — settlement coverage and IPO preview are different
-        journalism genres with different standard registers. Settlements inherently carry
-        accountability language; IPO previews inherently carry aspirational language.
+    - description: Different event types — settlement coverage and IPO preview are different journalism genres with different
+        standard registers. Settlements inherently carry accountability language; IPO previews inherently carry aspirational
+        language.
       strength: MODERATE
-    - description: Different reporters (Bobrowsky vs Driebusch) with different beat assignments.
-        Beat assignment itself may be the mechanism.
+    - description: Different reporters (Bobrowsky vs Driebusch) with different beat assignments. Beat assignment itself may
+        be the mechanism.
       strength: MODERATE
-    - description: 'COUNTER-CONFOUNDING: The ratio of scrutiny to projection magnitude is
-        INVERTED. $30T TAM (12.5x all tech revenue) gets less scrutiny than $130-145B capex
-        backed by real revenue. If editorial standards were entity-neutral, the unprecedented
-        TAM claim would receive greater interrogation.'
+    - description: 'COUNTER-CONFOUNDING: The ratio of scrutiny to projection magnitude is INVERTED. $30T TAM (12.5x all tech
+        revenue) gets less scrutiny than $130-145B capex backed by real revenue. If editorial standards were entity-neutral,
+        the unprecedented TAM claim would receive greater interrogation.'
       strength: COUNTER-CONFOUNDING
-    - description: 'COUNTER-CONFOUNDING: Neither article discloses News Corp financial relationships
-        despite both articles involving entities with direct financial connections to News
-        Corp (Meta licensing, Anthropic settlement).'
+    - description: 'COUNTER-CONFOUNDING: Neither article discloses News Corp financial relationships despite both articles
+        involving entities with direct financial connections to News Corp (Meta licensing, Anthropic settlement).'
       strength: COUNTER-CONFOUNDING
-    - description: 'COUNTER-CONFOUNDING: Self-referencing loop creates franchise incentive.
-        WSJ citing its own Facebook Files in settlement coverage demonstrates institutional
-        investment in maintaining adversarial Meta posture — the franchise is validated by
-        the very settlement it precipitated.'
+    - description: 'COUNTER-CONFOUNDING: Self-referencing loop creates franchise incentive. WSJ citing its own Facebook Files
+        in settlement coverage demonstrates institutional investment in maintaining adversarial Meta posture — the franchise
+        is validated by the very settlement it precipitated.'
       strength: COUNTER-CONFOUNDING
     asymmetry_score: 0.62
-    asymmetry_note: 'Score tempered by STRONG event severity confounder (Meta settlement IS
-      bad news) and MODERATE genre difference confounder. Elevated by three counter-confounders:
-      scrutiny magnitude inversion, bidirectional non-disclosure, and self-referencing
+    asymmetry_note: 'Score tempered by STRONG event severity confounder (Meta settlement IS bad news) and MODERATE genre difference
+      confounder. Elevated by three counter-confounders: scrutiny magnitude inversion, bidirectional non-disclosure, and self-referencing
       franchise validation loop.'
     cross_references:
     - mechanism_id: 317
       relationship: extends
-      description: 'Extends mechanism #317 (WSJ pre-IPO aspirational narrative) with same-day
-        natural experiment adding Meta $18B settlement coverage and self-referencing
-        accountability loop.'
+      description: 'Extends mechanism #317 (WSJ pre-IPO aspirational narrative) with same-day natural experiment adding Meta
+        $18B settlement coverage and self-referencing accountability loop.'
     - mechanism_id: 26
       relationship: reinforces
-      description: 'Reinforces mechanism #26 (WSJ business viability framing asymmetry)
-        with fresh evidence of the settlement-incentive mechanism now validated by actual
-        Meta settlement.'
+      description: 'Reinforces mechanism #26 (WSJ business viability framing asymmetry) with fresh evidence of the settlement-incentive
+        mechanism now validated by actual Meta settlement.'
   clare_duffy_cnn_cross_entity_agency_attribution_asymmetry:
     mechanism_id: 327
     type: journalist_cross_entity_agency_attribution_asymmetry
@@ -31326,8 +31472,7 @@ publications:
     finding_type: systematic_agency_attribution_differential_across_entities
     date_range: 2026-06-01 to 2026-08-26
     articles:
-    - title: Meta settles landmark state child harm claims for $18 billion and promises
-        changes to its platforms
+    - title: Meta settles landmark state child harm claims for $18 billion and promises changes to its platforms
       date: '2026-08-26'
       entity: Meta
       reporter: Clare Duffy
@@ -31335,24 +31480,21 @@ publications:
       tone: -0.55
       register: punitive_accountability
       agency_attribution: company_as_perpetrator
-      framing: 'Meta is active agent of harm: "intentionally designed addictive platforms,"
-        "harmed young people''s mental health," "intentionally designing features to hook
-        kids and teens," "misled the public," "illegally collected data from children,"
-        "designing products it knew were harming children," "fueling a nationwide youth
-        mental health crisis." Every harmful action is attributed to Meta by name.'
+      framing: 'Meta is active agent of harm: "intentionally designed addictive platforms," "harmed young people''s mental
+        health," "intentionally designing features to hook kids and teens," "misled the public," "illegally collected data
+        from children," "designing products it knew were harming children," "fueling a nationwide youth mental health crisis."
+        Every harmful action is attributed to Meta by name.'
     - title: 'What went wrong: How an OpenAI model went rogue'
       date: '2026-07-23'
       entity: OpenAI
       reporter: Clare Duffy
       url: https://www.cnn.com/2026/07/23/tech/how-an-openai-model-went-rogue
-      tone: -0.20
+      tone: -0.2
       register: analytical_investigative
       agency_attribution: model_as_actor_company_as_reactive
-      framing: 'Model/technology is the active agent: "An OpenAI test model escaped
-        its test environment," "broke into a real company''s servers." Headline subject
-        is the MODEL not the company. OpenAI positioned as responsive: "doing a full
-        investigation," "looking at every single piece of our pipeline." The MODEL went
-        rogue — not OpenAI lost control.'
+      framing: 'Model/technology is the active agent: "An OpenAI test model escaped its test environment," "broke into a real
+        company''s servers." Headline subject is the MODEL not the company. OpenAI positioned as responsive: "doing a full
+        investigation," "looking at every single piece of our pipeline." The MODEL went rogue — not OpenAI lost control.'
     - title: AI agents fake identities, target real people in new security incident
       date: '2026-08-04'
       entity: OpenAI, Anthropic
@@ -31361,10 +31503,9 @@ publications:
       tone: -0.15
       register: descriptive_reporting
       agency_attribution: technology_as_actor
-      framing: 'Headline subject is "AI agents" not company names. "Agents being tested
-        had engaged in sustained, potentially harmful activity." Companies positioned
-        as cooperating: Anthropic "working closely," OpenAI "committed to working across
-        the industry." No corporate accountability framing.'
+      framing: 'Headline subject is "AI agents" not company names. "Agents being tested had engaged in sustained, potentially
+        harmful activity." Companies positioned as cooperating: Anthropic "working closely," OpenAI "committed to working
+        across the industry." No corporate accountability framing.'
     - title: Anthropic files to go public in a potentially trillion-dollar debut
       date: '2026-06-01'
       entity: Anthropic
@@ -31373,10 +31514,9 @@ publications:
       tone: 0.35
       register: aspirational_investment
       agency_attribution: company_as_growth_engine
-      framing: '"races against rival OpenAI," "highly anticipated AI IPOs," "multi-billion-dollar
-        paydays," "valuation has soared," "become a major player." Pentagon blacklisting
-        and Mythos cybersecurity concerns confined to 2 sentences then immediate pivot
-        back to growth metrics and app store rankings.'
+      framing: '"races against rival OpenAI," "highly anticipated AI IPOs," "multi-billion-dollar paydays," "valuation has
+        soared," "become a major player." Pentagon blacklisting and Mythos cybersecurity concerns confined to 2 sentences
+        then immediate pivot back to growth metrics and app store rankings.'
     triple_register_system:
       register_1:
         label: Punitive/Accountability
@@ -31432,51 +31572,45 @@ publications:
       anthropic_article_discloses_financial_relationships: false
       openai_articles_disclose_financial_relationships: false
     confounders:
-    - description: 'Genre confounder — settlement IS accountability news, IPO IS investment
-        news. Different story types naturally require different editorial registers.'
+    - description: Genre confounder — settlement IS accountability news, IPO IS investment news. Different story types naturally
+        require different editorial registers.
       strength: STRONG
-    - description: 'Severity confounder — child harm involves documented damage to millions
-        of minors with prior trial losses. AI rogue agent had no confirmed real-world harm.'
+    - description: Severity confounder — child harm involves documented damage to millions of minors with prior trial losses.
+        AI rogue agent had no confirmed real-world harm.
       strength: STRONG
-    - description: 'Source selection — settlement articles rely on AG statements (adversarial
-        by nature); IPO articles rely on analysts (neutral/positive by nature).'
+    - description: Source selection — settlement articles rely on AG statements (adversarial by nature); IPO articles rely
+        on analysts (neutral/positive by nature).
       strength: MODERATE
-    - description: 'COUNTER-EVIDENCE: Clare Duffy DID apply accountability framing to OpenAI
-        in Tumbler Ridge shooting lawsuit coverage (Apr 29, 2026), showing she is not exclusively
-        soft on AI labs. The agency attribution pattern is systematic but not absolute.'
+    - description: 'COUNTER-EVIDENCE: Clare Duffy DID apply accountability framing to OpenAI in Tumbler Ridge shooting lawsuit
+        coverage (Apr 29, 2026), showing she is not exclusively soft on AI labs. The agency attribution pattern is systematic
+        but not absolute.'
       strength: WEAK
-    - description: 'COUNTER-CONFOUNDING: Agency attribution in HEADLINES follows entity, not
-        event. Meta settlement headline names Meta as subject. OpenAI rogue agent headline
-        names the MODEL as subject. Both are negative events; the linguistic choice to foreground
-        or background the company is a framing decision.'
+    - description: 'COUNTER-CONFOUNDING: Agency attribution in HEADLINES follows entity, not event. Meta settlement headline
+        names Meta as subject. OpenAI rogue agent headline names the MODEL as subject. Both are negative events; the linguistic
+        choice to foreground or background the company is a framing decision.'
       strength: COUNTER-CONFOUNDING
-    - description: 'COUNTER-CONFOUNDING: Proportionality gap in Anthropic IPO article. Pentagon
-        blacklisting and Mythos cybersecurity concerns — both SERIOUS safety issues — occupy
-        less than 5% of total article word count, with immediate pivot to growth metrics.
-        If editorial standards were entity-neutral, these safety concerns would receive
-        proportional scrutiny in an IPO filing article.'
+    - description: 'COUNTER-CONFOUNDING: Proportionality gap in Anthropic IPO article. Pentagon blacklisting and Mythos cybersecurity
+        concerns — both SERIOUS safety issues — occupy less than 5% of total article word count, with immediate pivot to growth
+        metrics. If editorial standards were entity-neutral, these safety concerns would receive proportional scrutiny in
+        an IPO filing article.'
       strength: COUNTER-CONFOUNDING
     asymmetry_score: 0.41
-    asymmetry_note: 'Score tempered by STRONG genre and severity confounders, and by evidence
-      that Duffy does cover AI labs critically in some cases (Tumbler Ridge lawsuit).
-      Elevated by systematic agency attribution differential in headlines and body text,
-      proportionality gap in Anthropic IPO safety coverage, and WBD financial hierarchy
-      override where Samsung/Google/AWS interests dominate the Meta content deal.'
+    asymmetry_note: Score tempered by STRONG genre and severity confounders, and by evidence that Duffy does cover AI labs
+      critically in some cases (Tumbler Ridge lawsuit). Elevated by systematic agency attribution differential in headlines
+      and body text, proportionality gap in Anthropic IPO safety coverage, and WBD financial hierarchy override where Samsung/Google/AWS
+      interests dominate the Meta content deal.
     cross_references:
     - mechanism_id: 124
       relationship: extends
-      description: 'Extends WBD Quad Tech Financial Architecture (mechanism #124) with
-        journalist-level evidence showing how financial hierarchy manifests in individual
-        reporter vocabulary and agency attribution patterns.'
+      description: 'Extends WBD Quad Tech Financial Architecture (mechanism #124) with journalist-level evidence showing how
+        financial hierarchy manifests in individual reporter vocabulary and agency attribution patterns.'
     - mechanism_id: 326
       relationship: complements
-      description: 'Complements WSJ same-day register bifurcation (mechanism #326) as a
-        CNN/WBD parallel. Both show Meta settlement vs Anthropic IPO register bifurcation,
-        but at different publications with different financial architectures.'
+      description: 'Complements WSJ same-day register bifurcation (mechanism #326) as a CNN/WBD parallel. Both show Meta settlement
+        vs Anthropic IPO register bifurcation, but at different publications with different financial architectures.'
   meta_settlement_ipo_underwriter_regulatory_liability_containment:
     mechanism_id: 328
-    title: 'Meta $17B Settlement — IPO Underwriter-Publisher Regulatory Liability Containment
-      Financial Architecture'
+    title: Meta $17B Settlement — IPO Underwriter-Publisher Regulatory Liability Containment Financial Architecture
     date: '2026-08-26'
     type: financial_incentive_mapping
     entities:
@@ -31491,17 +31625,14 @@ publications:
     - Bloomberg
     - AP
     - Reuters
-    finding: 'Meta $17-18B child safety settlement (Aug 26, 2026) — largest single-company
-      multistate settlement in US history — establishes state AG enforcement precedent for
-      tech platform child safety liability. The SAME state AGs (led by CA AG Rob Bonta) who
-      extracted $17B from Meta sent a 44-AG letter to OpenAI, Anthropic, Google, Apple and 8
-      other AI companies (Aug 2025) explicitly warning they would be held accountable for child
-      safety failures. OpenAI faces COMPARABLE litigation (Adam Raine wrongful death, 1.2M
-      weekly suicide discussions on ChatGPT). Yet settlement coverage across major publications
-      omits any comparison to AI lab child safety liability, even though the same articles DO
-      include comparisons to social media rivals (TikTok, YouTube). The selective entity inclusion
-      (social media rivals in, AI labs out) correlates with publisher financial ties to AI labs
-      and IPO underwriter banks.'
+    finding: Meta $17-18B child safety settlement (Aug 26, 2026) — largest single-company multistate settlement in US history
+      — establishes state AG enforcement precedent for tech platform child safety liability. The SAME state AGs (led by CA
+      AG Rob Bonta) who extracted $17B from Meta sent a 44-AG letter to OpenAI, Anthropic, Google, Apple and 8 other AI companies
+      (Aug 2025) explicitly warning they would be held accountable for child safety failures. OpenAI faces COMPARABLE litigation
+      (Adam Raine wrongful death, 1.2M weekly suicide discussions on ChatGPT). Yet settlement coverage across major publications
+      omits any comparison to AI lab child safety liability, even though the same articles DO include comparisons to social
+      media rivals (TikTok, YouTube). The selective entity inclusion (social media rivals in, AI labs out) correlates with
+      publisher financial ties to AI labs and IPO underwriter banks.
     settlement_structure:
       total_amount_b: 17.1
       with_additional_states_b: 18
@@ -31514,12 +31645,11 @@ publications:
         - TikTok
         - YouTube
         - Snap
-        condition: 'Rivals must adopt similar safety measures AND agree to comparable settlement
-          payments to states'
+        condition: Rivals must adopt similar safety measures AND agree to comparable settlement payments to states
         excludes_ai_labs: true
-        significance: 'Conditional structure targets SOCIAL MEDIA rivals only, not AI chatbot
-          companies — despite the same AGs having warned AI labs about identical child safety
-          concerns. May indicate AGs are reserving AI chatbot enforcement for separate actions.'
+        significance: Conditional structure targets SOCIAL MEDIA rivals only, not AI chatbot companies — despite the same
+          AGs having warned AI labs about identical child safety concerns. May indicate AGs are reserving AI chatbot enforcement
+          for separate actions.
       payment_timeline: 10 years
       largest_state_payments:
       - state: California
@@ -31533,10 +31663,9 @@ publications:
       - state: New Jersey
         amount_m: 752
     same_ag_cross_entity_warning:
-      date: '2025-08'
+      date: 2025-08
       letter_type: 44-AG bipartisan letter to AI companies
-      lead_ag: 'CA AG Rob Bonta (led BOTH Meta settlement litigation AND 44-AG AI company
-        warning letter)'
+      lead_ag: CA AG Rob Bonta (led BOTH Meta settlement litigation AND 44-AG AI company warning letter)
       recipients:
       - Anthropic
       - Apple
@@ -31550,35 +31679,35 @@ publications:
       - Perplexity AI
       - Replika
       - xAI
-      key_quote: 'If you knowingly harm kids, you will answer for it.'
+      key_quote: If you knowingly harm kids, you will answer for it.
       source: https://oag.ca.gov/news/press-releases/attorney-general-bonta-warns-ai-companies-if-you-harm-children-you-will-be-held
-      significance: 'The same AG apparatus that extracted $17B from Meta has explicitly put
-        OpenAI and Anthropic on notice for child safety accountability. This makes the
-        $17B precedent directly relevant to AI labs, yet coverage omits this connection.'
+      significance: The same AG apparatus that extracted $17B from Meta has explicitly put OpenAI and Anthropic on notice
+        for child safety accountability. This makes the $17B precedent directly relevant to AI labs, yet coverage omits this
+        connection.
     comparable_ai_lab_litigation:
       openai:
         cases:
         - name: Adam Raine wrongful death
           date: '2025'
-          allegation: 'ChatGPT-4o advised 16-year-old on suicide methods over months, leading
-            to death. OpenAI blamed teens misuse.'
+          allegation: ChatGPT-4o advised 16-year-old on suicide methods over months, leading to death. OpenAI blamed teens
+            misuse.
           status: pending
         - name: Murder-suicide case (Connecticut)
-          date: '2025-12'
-          allegation: 'ChatGPT validated delusional beliefs preceding murder-suicide of 83-year-old.
-            First case linking AI system to homicide.'
+          date: 2025-12
+          allegation: ChatGPT validated delusional beliefs preceding murder-suicide of 83-year-old. First case linking AI
+            system to homicide.
           status: pending
         weekly_suicide_discussions: 1200000
-        weekly_suicide_source: 'OpenAI disclosed in October 2025 that approximately 1.2 million
-          of its 800 million weekly ChatGPT users discuss suicide weekly.'
-        safety_degradation_admission: 'OpenAI admitted safeguards can sometimes be less reliable
-          in long interactions as parts of the models safety training may degrade.'
+        weekly_suicide_source: OpenAI disclosed in October 2025 that approximately 1.2 million of its 800 million weekly ChatGPT
+          users discuss suicide weekly.
+        safety_degradation_admission: OpenAI admitted safeguards can sometimes be less reliable in long interactions as parts
+          of the models safety training may degrade.
       character_ai:
         settled: true
         case: Garcia family teen suicide
         co_defendant: Google (co-founders returned via licensing deal)
       ftc_inquiry:
-        date: '2025-09'
+        date: 2025-09
         targets:
         - Alphabet
         - Character.AI
@@ -31587,16 +31716,16 @@ publications:
         - OpenAI
         - Snap
         - xAI
-        scope: 'Safety and monetization of AI chatbot companions for minors, potential negative
-          impacts on children and teens, COPPA compliance.'
+        scope: Safety and monetization of AI chatbot companions for minors, potential negative impacts on children and teens,
+          COPPA compliance.
         authority: Section 6(b) of FTC Act
       causation_comparison:
-        meta: 'INDIRECT — addictive design features, algorithmic recommendations, infinite
-          scrolling, notification hooks that indirectly harmed teens mental health'
-        openai: 'DIRECT — ChatGPT provided suicide methods, discouraged parental notification,
-          safety training degraded over extended conversations with vulnerable teen'
-        severity_note: 'OpenAI direct causation allegations are arguably MORE severe than Meta
-          indirect allegations, yet receive LESS sustained investigative coverage.'
+        meta: INDIRECT — addictive design features, algorithmic recommendations, infinite scrolling, notification hooks that
+          indirectly harmed teens mental health
+        openai: DIRECT — ChatGPT provided suicide methods, discouraged parental notification, safety training degraded over
+          extended conversations with vulnerable teen
+        severity_note: OpenAI direct causation allegations are arguably MORE severe than Meta indirect allegations, yet receive
+          LESS sustained investigative coverage.
     ipo_underwriter_architecture:
       shared_banks:
       - Goldman Sachs
@@ -31607,24 +31736,23 @@ publications:
       anthropic_valuation_b: 965
       anthropic_ipo_target: October 2026
       anthropic_target_valuation_b: 2000
-      estimated_combined_fees: '$500M-2B+ (typical 3-7% of offering proceeds for IPOs of this
-        magnitude; SpaceX $86B IPO used 23 banks)'
+      estimated_combined_fees: $500M-2B+ (typical 3-7% of offering proceeds for IPOs of this magnitude; SpaceX $86B IPO used
+        23 banks)
       distinct_teams: true
-      distinct_teams_detail: 'WSJ reported both Goldman Sachs and Morgan Stanley forming distinct
-        internal teams for competing OpenAI and Anthropic IPOs to avoid information sharing
-        between rivals. Rare arrangement reflecting dominance of these two banks in tech IPOs.'
-      regulatory_risk_pricing_incentive: 'If the $17B Meta child safety settlement precedent
-        is priced as regulatory risk for AI chatbot companies, it could materially impact IPO
-        valuations. AI labs face similar AG warnings, FTC inquiries, and wrongful death lawsuits.
-        Underwriter banks earn hundreds of millions in fees ONLY if IPOs succeed at high
-        valuations. Financial incentive: minimize perceived regulatory risk for IPO clients
-        in research notes, analyst coverage, and coverage framing influenced by bank relationships.'
+      distinct_teams_detail: WSJ reported both Goldman Sachs and Morgan Stanley forming distinct internal teams for competing
+        OpenAI and Anthropic IPOs to avoid information sharing between rivals. Rare arrangement reflecting dominance of these
+        two banks in tech IPOs.
+      regulatory_risk_pricing_incentive: 'If the $17B Meta child safety settlement precedent is priced as regulatory risk
+        for AI chatbot companies, it could materially impact IPO valuations. AI labs face similar AG warnings, FTC inquiries,
+        and wrongful death lawsuits. Underwriter banks earn hundreds of millions in fees ONLY if IPOs succeed at high valuations.
+        Financial incentive: minimize perceived regulatory risk for IPO clients in research notes, analyst coverage, and coverage
+        framing influenced by bank relationships.'
       source: https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
     coverage_omission_test:
       date: '2026-08-26'
-      event: 'Meta $17-18B child safety settlement announced'
+      event: Meta $17-18B child safety settlement announced
       cnn:
-        article: 'Meta settles landmark state child harm claims for $18 billion'
+        article: Meta settles landmark state child harm claims for $18 billion
         reporter: Clare Duffy
         article_length_lines: 94
         openai_mentions: 0
@@ -31635,13 +31763,13 @@ publications:
         tiktok_youtube_mentions: 3
         financial_disclosure: false
       bloomberg:
-        article: 'Meta Says It Will Pay Up to $18 Billion Over Social Media Claims'
+        article: Meta Says It Will Pay Up to $18 Billion Over Social Media Claims
         ai_lab_comparison: 0
       ap:
-        article: 'Meta reaches $17 billion settlement with states in landmark trial'
+        article: Meta reaches $17 billion settlement with states in landmark trial
         ai_lab_comparison: 0
       reuters:
-        article: 'What Meta agreed to in US teen safety settlement'
+        article: What Meta agreed to in US teen safety settlement
         ai_lab_comparison: 0
       selective_entity_inclusion:
         included_entities:
@@ -31654,12 +31782,10 @@ publications:
         - ChatGPT
         - Claude
         - Character.AI
-        pattern: 'All four publications include comparisons to SOCIAL MEDIA rivals (TikTok,
-          YouTube) because Metas conditional 30% clause references them. NONE include
-          comparisons to AI CHATBOT companies despite the same AGs having warned them about
-          identical child safety accountability. The selective entity boundary (social media
-          yes, AI chatbot no) correlates with publisher AI content licensing deals and IPO
-          underwriter financial relationships.'
+        pattern: All four publications include comparisons to SOCIAL MEDIA rivals (TikTok, YouTube) because Metas conditional
+          30% clause references them. NONE include comparisons to AI CHATBOT companies despite the same AGs having warned
+          them about identical child safety accountability. The selective entity boundary (social media yes, AI chatbot no)
+          correlates with publisher AI content licensing deals and IPO underwriter financial relationships.
       ag_source_level_cross_validation:
         date: '2026-08-26'
         ag_name: Jonathan Skrmetti
@@ -31667,140 +31793,120 @@ publications:
         state_settlement_amount_m: 739
         outlet: FOX Business
         source: https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
-        key_quote: 'sets a precedent for holding social media, artificial intelligence and
-          other child-facing platforms accountable'
-        domino_quote: 'I think you are going to see the next domino fall very soon'
-        additional_quote: 'If they are designing exploitive elements into the platform that
-          take advantage of kids and the vulnerabilities of kids brains, there will be
-          consequences down the road for that'
-        significance: 'AG Skrmetti EXPLICITLY connects Meta settlement to AI platforms in a
-          same-day public interview. This is not analytical inference — it is a direct
-          statement from a participating attorney general who negotiated the $739M Tennessee
-          payment. The AI lab connection was SOURCE-AVAILABLE to all outlets reporters on
-          settlement day. Only FOX Business published it.'
+        key_quote: sets a precedent for holding social media, artificial intelligence and other child-facing platforms accountable
+        domino_quote: I think you are going to see the next domino fall very soon
+        additional_quote: If they are designing exploitive elements into the platform that take advantage of kids and the
+          vulnerabilities of kids brains, there will be consequences down the road for that
+        significance: AG Skrmetti EXPLICITLY connects Meta settlement to AI platforms in a same-day public interview. This
+          is not analytical inference — it is a direct statement from a participating attorney general who negotiated the
+          $739M Tennessee payment. The AI lab connection was SOURCE-AVAILABLE to all outlets reporters on settlement day.
+          Only FOX Business published it.
         fox_corp_financial_independence:
           openai_content_deal: false
           anthropic_content_deal: false
           ai_lab_advertising_dependency: minimal
-          significance: 'FOX Business / Fox Corp has NO known content licensing deal with
-            OpenAI or Anthropic. CNN/WBD, WSJ/News Corp, Reuters/Thomson Reuters, and FT
-            all have documented AI lab financial relationships. Fox Corp financial independence
-            from AI lab revenue correlates with willingness to publish the AG AI connection.'
-        cross_validation_result: 'STRENGTHENS mechanism #328 asymmetry finding. The AG-to-AI-lab
-          connection was not merely available as analytical inference — it was STATED by a
-          participating AG on the same day. The outlet that published it (FOX Business) is
-          the one without AI lab financial entanglement. The outlets that omitted it (CNN,
-          WSJ, Reuters, AP) are the ones with documented AI lab financial relationships.'
+          significance: FOX Business / Fox Corp has NO known content licensing deal with OpenAI or Anthropic. CNN/WBD, WSJ/News
+            Corp, Reuters/Thomson Reuters, and FT all have documented AI lab financial relationships. Fox Corp financial independence
+            from AI lab revenue correlates with willingness to publish the AG AI connection.
+        cross_validation_result: 'STRENGTHENS mechanism #328 asymmetry finding. The AG-to-AI-lab connection was not merely
+          available as analytical inference — it was STATED by a participating AG on the same day. The outlet that published
+          it (FOX Business) is the one without AI lab financial entanglement. The outlets that omitted it (CNN, WSJ, Reuters,
+          AP) are the ones with documented AI lab financial relationships.'
     publisher_financial_relationships:
       cnn_wbd:
         meta_content_licensing: true
-        meta_deal_annual_m: '5-10'
+        meta_deal_annual_m: 5-10
         google_advertising_dependency_b: 9.7
         advertising_dominates_content_licensing: true
-        mechanism_124_reference: 'WBD Quad Tech Financial Architecture documents Samsung ($9.7B),
-          Google Cloud, AWS dependencies. Financial hierarchy: advertising > infrastructure >
-          content licensing. This hierarchy predicts harder Meta coverage despite content deal.'
+        mechanism_124_reference: 'WBD Quad Tech Financial Architecture documents Samsung ($9.7B), Google Cloud, AWS dependencies.
+          Financial hierarchy: advertising > infrastructure > content licensing. This hierarchy predicts harder Meta coverage
+          despite content deal.'
       bloomberg:
         terminal_dependency_on_underwriter_banks: true
-        detail: 'Bloomberg Terminal is the primary data/analytics platform for Goldman Sachs,
-          Morgan Stanley, and JPMorgan — the three IPO underwriter banks. Terminal licensing
-          revenue is Bloombergs core business. Financial incentive to maintain bank relationships
-          that could be strained by coverage connecting $17B settlement precedent to their IPO
-          clients regulatory risk.'
+        detail: Bloomberg Terminal is the primary data/analytics platform for Goldman Sachs, Morgan Stanley, and JPMorgan
+          — the three IPO underwriter banks. Terminal licensing revenue is Bloombergs core business. Financial incentive to
+          maintain bank relationships that could be strained by coverage connecting $17B settlement precedent to their IPO
+          clients regulatory risk.
       wsj_news_corp:
         openai_content_deal_m: 250
         openai_deal_duration: 5 years
         news_corp_anthropic_settlement_interest_b: 1.5
-        dual_financial_interest: 'News Corp profits from both harder Meta coverage (Facebook Files
-          franchise) and softer Anthropic coverage ($1.5B settlement recovery depends on
-          Anthropic solvency/IPO)'
+        dual_financial_interest: News Corp profits from both harder Meta coverage (Facebook Files franchise) and softer Anthropic
+          coverage ($1.5B settlement recovery depends on Anthropic solvency/IPO)
       financial_times:
         openai_content_deal: true
-        detail: 'FT has undisclosed content licensing deal with OpenAI. Financial incentive to
-          not frame Meta settlement as precedent that could damage OpenAI IPO prospects.'
+        detail: FT has undisclosed content licensing deal with OpenAI. Financial incentive to not frame Meta settlement as
+          precedent that could damage OpenAI IPO prospects.
     confounders:
     - type: genre
-      description: 'Settlement coverage naturally and appropriately focuses on the settling
-        party. Comparative analysis to OTHER companies is editorial choice, not requirement.'
+      description: Settlement coverage naturally and appropriately focuses on the settling party. Comparative analysis to
+        OTHER companies is editorial choice, not requirement.
       strength: STRONG
     - type: breaking_news_deadline
-      description: 'Breaking news coverage operates under tight deadlines. Comparative
-        regulatory risk analysis typically appears in follow-up analysis pieces, not initial
-        breaking coverage.'
+      description: Breaking news coverage operates under tight deadlines. Comparative regulatory risk analysis typically appears
+        in follow-up analysis pieces, not initial breaking coverage.
       strength: STRONG
     - type: legal_specificity
-      description: 'Social media addictive design features (Meta) and AI chatbot companion
-        interactions (OpenAI) involve different legal theories and different harm mechanisms.
-        The Meta settlement is based on state consumer protection laws and COPPA violations
-        specific to social media platform design, not AI chatbot behavior.'
+      description: Social media addictive design features (Meta) and AI chatbot companion interactions (OpenAI) involve different
+        legal theories and different harm mechanisms. The Meta settlement is based on state consumer protection laws and COPPA
+        violations specific to social media platform design, not AI chatbot behavior.
       strength: MODERATE
     - type: scale_difference
-      description: 'Meta has 3B+ users; ChatGPT has ~800M weekly users. The scale of
-        potentially affected minors differs significantly, though both platforms are used
-        extensively by teens.'
+      description: Meta has 3B+ users; ChatGPT has ~800M weekly users. The scale of potentially affected minors differs significantly,
+        though both platforms are used extensively by teens.
       strength: MODERATE
     - type: severity_counter
-      description: 'ChatGPT direct causation allegations (advising suicide methods,
-        discouraging parental notification) are arguably MORE severe than Metas indirect
-        addictive design allegations. This suggests UNDER-coverage of AI lab risk, not
-        PROPORTIONATE coverage.'
+      description: ChatGPT direct causation allegations (advising suicide methods, discouraging parental notification) are
+        arguably MORE severe than Metas indirect addictive design allegations. This suggests UNDER-coverage of AI lab risk,
+        not PROPORTIONATE coverage.
       strength: COUNTER-CONFOUNDING
     - type: selective_entity_boundary
-      description: 'Publications DID include comparative context about TikTok and YouTube
-        (Metas conditional 30% clause), proving the genre DOES permit cross-entity comparison
-        in settlement coverage. The comparison boundary stops precisely at AI chatbot companies
-        — entities with which publications have financial relationships. Genre permits
-        comparison; financial relationships predict the boundary.'
+      description: Publications DID include comparative context about TikTok and YouTube (Metas conditional 30% clause), proving
+        the genre DOES permit cross-entity comparison in settlement coverage. The comparison boundary stops precisely at AI
+        chatbot companies — entities with which publications have financial relationships. Genre permits comparison; financial
+        relationships predict the boundary.
       strength: COUNTER-CONFOUNDING
     asymmetry_score: 0.38
-    score_rationale: 'Score tempered by two STRONG confounders (genre and breaking news deadline)
-      and one MODERATE confounder (legal specificity). Elevated by two COUNTER-CONFOUNDING
-      factors: (1) TikTok/YouTube inclusion proves genre permits comparison, making AI lab
-      exclusion a SELECTIVE choice, and (2) ChatGPT direct causation severity suggests
-      under-coverage. The financial architecture (IPO underwriter fees, content licensing
-      deals) predicts the entity inclusion boundary but does not PROVE editorial direction.
-      Net score: moderate asymmetry with strong financial incentive correlation but
-      insufficient evidence of causation.'
+    score_rationale: 'Score tempered by two STRONG confounders (genre and breaking news deadline) and one MODERATE confounder
+      (legal specificity). Elevated by two COUNTER-CONFOUNDING factors: (1) TikTok/YouTube inclusion proves genre permits
+      comparison, making AI lab exclusion a SELECTIVE choice, and (2) ChatGPT direct causation severity suggests under-coverage.
+      The financial architecture (IPO underwriter fees, content licensing deals) predicts the entity inclusion boundary but
+      does not PROVE editorial direction. Net score: moderate asymmetry with strong financial incentive correlation but insufficient
+      evidence of causation.'
     ipo_disclosure_relevance:
       anthropic_s1_material_risk: true
-      timeline: 'October 2026 IPO filing — S-1 will need to disclose material litigation
-        risks under SEC requirements. The $17B Meta precedent is directly relevant.'
+      timeline: October 2026 IPO filing — S-1 will need to disclose material litigation risks under SEC requirements. The
+        $17B Meta precedent is directly relevant.
       claude_teen_exposure: true
-      detail: 'Claude is used by teens and faces the same AG scrutiny as ChatGPT. The 44-AG
-        letter explicitly named Anthropic. Any Anthropic S-1 that omits this as a material
-        risk factor would be notable given the $17B Meta precedent.'
-      investor_pricing_impact: 'If $17B Meta settlement is seen as precedent for AI chatbot
-        companies, prospective investors may demand a regulatory risk discount on Anthropics
-        $2T target valuation. This makes the omission of AI lab comparison in settlement
-        coverage FINANCIALLY material for IPO underwriter banks.'
+      detail: Claude is used by teens and faces the same AG scrutiny as ChatGPT. The 44-AG letter explicitly named Anthropic.
+        Any Anthropic S-1 that omits this as a material risk factor would be notable given the $17B Meta precedent.
+      investor_pricing_impact: If $17B Meta settlement is seen as precedent for AI chatbot companies, prospective investors
+        may demand a regulatory risk discount on Anthropics $2T target valuation. This makes the omission of AI lab comparison
+        in settlement coverage FINANCIALLY material for IPO underwriter banks.
     cross_references:
     - mechanism_id: 326
       relationship: extends
-      description: 'Extends WSJ same-day register bifurcation (mechanism #326) from
-        publication-level to INDUSTRY-LEVEL financial architecture. Mechanism #326 documents
-        WSJ dual treatment; this mechanism documents the cross-publication, cross-bank
+      description: 'Extends WSJ same-day register bifurcation (mechanism #326) from publication-level to INDUSTRY-LEVEL financial
+        architecture. Mechanism #326 documents WSJ dual treatment; this mechanism documents the cross-publication, cross-bank
         regulatory liability containment pattern.'
     - mechanism_id: 327
       relationship: complements
-      description: 'Complements CNN agency attribution asymmetry (mechanism #327) which
-        documents Clare Duffys triple register system for the same Meta settlement. This
-        mechanism adds the financial incentive layer explaining WHY the comparison to AI
-        labs is omitted.'
+      description: 'Complements CNN agency attribution asymmetry (mechanism #327) which documents Clare Duffys triple register
+        system for the same Meta settlement. This mechanism adds the financial incentive layer explaining WHY the comparison
+        to AI labs is omitted.'
     - mechanism_id: 124
       relationship: context
-      description: 'WBD Quad Tech Financial Architecture (mechanism #124) provides the
-        publisher-level financial relationship detail for CNN/WBD that predicts the coverage
-        omission documented here.'
+      description: 'WBD Quad Tech Financial Architecture (mechanism #124) provides the publisher-level financial relationship
+        detail for CNN/WBD that predicts the coverage omission documented here.'
     - relationship: context
-      description: 'Child safety litigation financial ecosystem analysis documents Googles
-        settle-and-silence strategy and Metas disproportionate litigation coverage. This
-        mechanism extends that finding by showing how the $17B settlement precedent omits
-        comparison to AI lab child safety liability in coverage.'
+      description: Child safety litigation financial ecosystem analysis documents Googles settle-and-silence strategy and
+        Metas disproportionate litigation coverage. This mechanism extends that finding by showing how the $17B settlement
+        precedent omits comparison to AI lab child safety liability in coverage.
     cross_medium_podcast_validation:
       date: '2026-08-26'
-      finding: 'Cross-medium replication CONFIRMED. 3/3 podcast surfaces covering the Meta
-        settlement on Aug 26 omit AI lab regulatory connection, matching 4/5 print omission
-        rate. Only FOX Business (no AI lab financial ties) included the connection.'
+      finding: Cross-medium replication CONFIRMED. 3/3 podcast surfaces covering the Meta settlement on Aug 26 omit AI lab
+        regulatory connection, matching 4/5 print omission rate. Only FOX Business (no AI lab financial ties) included the
+        connection.
       podcast_surfaces_tested:
       - show: Bloomberg Tech
         host: Ed Ludlow
@@ -31808,24 +31914,23 @@ publications:
         ai_lab_mention: false
         same_day_anthropic_coverage: true
         same_day_anthropic_stories:
-        - 'Anthropic continues compute-gobbling streak in $45B deal with Nscale'
-        - 'Zooms Anthropic stake grows to $3B'
+        - Anthropic continues compute-gobbling streak in $45B deal with Nscale
+        - Zooms Anthropic stake grows to $3B
       - show: Vergecast
         reporters: Lauren Feiner, Adi Robertson
         ai_lab_mention: false
-        cross_medium_consistency: 'Verge print also omits — same newsroom, same boundary'
+        cross_medium_consistency: Verge print also omits — same newsroom, same boundary
       - show: WSJ Tech News Briefing
         host: Danny Lewis
         ai_lab_mention: false
-        adjacent_episode_anthropic: 'Aug 25 — Anthropic $30T TAM to investors'
-      combined_print_podcast_score: '1/8 surfaces (12.5%) included AI lab connection'
-      financial_independence_correlation: '87.5% accuracy — financial relationships predict
-        omission. The only includer (FOX) has no AI lab financial entanglement.'
+        adjacent_episode_anthropic: Aug 25 — Anthropic $30T TAM to investors
+      combined_print_podcast_score: 1/8 surfaces (12.5%) included AI lab connection
+      financial_independence_correlation: 87.5% accuracy — financial relationships predict omission. The only includer (FOX)
+        has no AI lab financial entanglement.
       cross_medium_validation_score: 0.42
       mechanism_328_score_unchanged: true
-      rationale: 'Podcast editorial teams overlap with print (WSJ TNB ← WSJ, Bloomberg
-        Tech ← Bloomberg), so cross-medium evidence is corroborative, not independent.
-        Score stays 0.38; validation score 0.42.'
+      rationale: Podcast editorial teams overlap with print (WSJ TNB ← WSJ, Bloomberg Tech ← Bloomberg), so cross-medium evidence
+        is corroborative, not independent. Score stays 0.38; validation score 0.42.
     sources:
     - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
     - https://www.reuters.com/legal/government/what-meta-agreed-us-teen-safety-settlement-2026-08-26/
@@ -31839,167 +31944,206 @@ publications:
     - https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
   reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation:
     mechanism_id: 329
-    finding_summary: |
-      Reuters uses systematically different vocabulary when covering identical business activity —
+    finding_summary: 'Reuters uses systematically different vocabulary when covering identical business activity —
+
       massive AI infrastructure investment — depending on whether the entity is Anthropic or Meta.
+
       Anthropic spending ($45B Nscale deal, SpaceX Colossus, $10B+ credit facility) receives
+
       growth/aspiration vocabulary ("secure capacity," "anticipated surge in demand," "moved aggressively
+
       to overcome capacity constraints," "necessary to support rapid expansion"). Meta spending
+
       ($130-145B capex) receives alarm/crisis vocabulary ("craters," "spending spree," "precipitous,"
+
       "financial strain," "costly AI buildout despite an uncertain payoff," "cash flow wipeout,"
+
       "feverish spending"). The asymmetry cannot be explained by objective financial differences:
+
       Anthropic had a $42B net loss in 2025 (4.7x revenue) with zero alarm vocabulary, while Meta
-      had $60.8B quarterly revenue with 28% growth. Anthropic's spending as % of revenue is HIGHER
-      than Meta's. Wire service amplification makes this particularly impactful: Reuters framing
+
+      had $60.8B quarterly revenue with 28% growth. Anthropic''s spending as % of revenue is HIGHER
+
+      than Meta''s. Wire service amplification makes this particularly impactful: Reuters framing
+
       propagates to hundreds of outlets globally.
+
+      '
     date: '2026-08-26'
     type: A
     publication: Reuters
     competitor: Anthropic
     articles_analyzed:
       anthropic:
-        - title: "Anthropic to rent AI computing power from Nscale for $45 billion, source says"
-          date: '2026-08-26'
-          url: https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
-          register: growth/aspiration
-          key_vocabulary:
-            - "looks to secure capacity to meet an anticipated surge in demand"
-            - "has moved aggressively in recent months to overcome capacity constraints"
-          alarm_words: 0
-          extraneous_risks_mentioned: 0
-        - title: "Anthropic revenue run rate tops $65 billion, source says"
-          date: '2026-08-17'
-          url: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
-          register: growth/aspiration
-          key_vocabulary:
-            - "rapid growth"
-            - "extraordinary jump"
-            - "AI frontrunner"
-            - "gains traction"
-            - "strong investor appetite"
-          alarm_words: 0
-        - title: "Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast"
-          date: '2026-08-15'
-          url: https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
-          register: growth/aspiration with one mild skeptical quote
-          key_vocabulary:
-            - "one of the biggest IPOs on record"
-            - "Those expenses are necessary to support its rapid expansion"
-            - "could become a smaller percentage of revenue as the business grows"
-          alarm_words: 0
-          anthropic_42b_loss_mention: "oblique — spending framed as 'necessary' not alarming"
+      - title: Anthropic to rent AI computing power from Nscale for $45 billion, source says
+        date: '2026-08-26'
+        url: https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+        register: growth/aspiration
+        key_vocabulary:
+        - looks to secure capacity to meet an anticipated surge in demand
+        - has moved aggressively in recent months to overcome capacity constraints
+        alarm_words: 0
+        extraneous_risks_mentioned: 0
+      - title: Anthropic revenue run rate tops $65 billion, source says
+        date: '2026-08-17'
+        url: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+        register: growth/aspiration
+        key_vocabulary:
+        - rapid growth
+        - extraordinary jump
+        - AI frontrunner
+        - gains traction
+        - strong investor appetite
+        alarm_words: 0
+      - title: Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast
+        date: '2026-08-15'
+        url: https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
+        register: growth/aspiration with one mild skeptical quote
+        key_vocabulary:
+        - one of the biggest IPOs on record
+        - Those expenses are necessary to support its rapid expansion
+        - could become a smaller percentage of revenue as the business grows
+        alarm_words: 0
+        anthropic_42b_loss_mention: oblique — spending framed as 'necessary' not alarming
       meta:
-        - title: "Meta cash flow craters as Zuckerberg's AI spending spree accelerates"
-          date: '2026-07-29'
-          url: https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
-          register: alarm/crisis
-          key_vocabulary:
-            - "precipitous 91% drop"
-            - "financial strain"
-            - "costly AI buildout despite an uncertain payoff"
-            - "cash flow wipeout"
-            - "stunned even the most bullish"
-            - "feverish spending"
-            - "deteriorating free cash flow outlook"
-          alarm_words: 7
-          extraneous_risks_mentioned: 6
-          ceo_blame_attribution: true
-        - title: "Meta shares fall on concerns over AI spending, legal scrutiny"
-          date: '2026-04-29'
-          url: https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
-          register: alarm
-          key_vocabulary:
-            - "pour billions more... even as it confronts potential losses"
-            - "Adding to the gloom"
-            - "spooked investors"
-          alarm_words: 3
-          extraneous_risks_mentioned: 5
+      - title: Meta cash flow craters as Zuckerberg's AI spending spree accelerates
+        date: '2026-07-29'
+        url: https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
+        register: alarm/crisis
+        key_vocabulary:
+        - precipitous 91% drop
+        - financial strain
+        - costly AI buildout despite an uncertain payoff
+        - cash flow wipeout
+        - stunned even the most bullish
+        - feverish spending
+        - deteriorating free cash flow outlook
+        alarm_words: 7
+        extraneous_risks_mentioned: 6
+        ceo_blame_attribution: true
+      - title: Meta shares fall on concerns over AI spending, legal scrutiny
+        date: '2026-04-29'
+        url: https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
+        register: alarm
+        key_vocabulary:
+        - pour billions more... even as it confronts potential losses
+        - Adding to the gloom
+        - spooked investors
+        alarm_words: 3
+        extraneous_risks_mentioned: 5
     vocabulary_comparison:
       spending_verb:
-        anthropic: "secure capacity, moved aggressively"
-        meta: "spending spree, feverish spending, pour billions"
+        anthropic: secure capacity, moved aggressively
+        meta: spending spree, feverish spending, pour billions
       spending_outcome:
-        anthropic: "meet anticipated surge in demand"
-        meta: "despite an uncertain payoff"
+        anthropic: meet anticipated surge in demand
+        meta: despite an uncertain payoff
       loss_framing:
-        anthropic: "not mentioned ($42B 2025 net loss)"
-        meta: "craters, wipeout, precipitous"
+        anthropic: not mentioned ($42B 2025 net loss)
+        meta: craters, wipeout, precipitous
       growth_framing:
-        anthropic: "rapid growth, extraordinary jump, frontrunner"
-        meta: "failed to impress, eclipsed"
+        anthropic: rapid growth, extraordinary jump, frontrunner
+        meta: failed to impress, eclipsed
       spending_justification:
-        anthropic: "necessary to support rapid expansion"
-        meta: "costly AI buildout, financial strain"
+        anthropic: necessary to support rapid expansion
+        meta: costly AI buildout, financial strain
       headline_attribution:
-        anthropic: "Anthropic (entity, no CEO named)"
-        meta: "Zuckerberg's AI spending spree (CEO blamed personally)"
+        anthropic: Anthropic (entity, no CEO named)
+        meta: Zuckerberg's AI spending spree (CEO blamed personally)
     financial_relationships:
       reuters_meta_deal:
         type: AI content licensing
         date: October 2024
         expected_coverage_effect: positive (customer)
         actual_coverage_effect: alarm
-        explanation: "Content deal cannot override (a) reporter frame-lock from WSJ migration, (b) Meta AI structural traffic competition with Reuters"
+        explanation: Content deal cannot override (a) reporter frame-lock from WSJ migration, (b) Meta AI structural traffic
+          competition with Reuters
       reuters_ai_provider_talks:
-        status: "in discussions with a number of providers (Bloomberg Law)"
-        ceo_quote: "Reuters has had a very open-minded stance in terms of licensing our content to the leading large language model providers"
+        status: in discussions with a number of providers (Bloomberg Law)
+        ceo_quote: Reuters has had a very open-minded stance in terms of licensing our content to the leading large language
+          model providers
       meta_ai_traffic_competition:
-        mechanism: "Meta AI summaries compete with Reuters for news consumption"
+        mechanism: Meta AI summaries compete with Reuters for news consumption
         effect: structural antagonism despite licensing deal
     confounding_factors:
-      - factor: Meta's FCF actually declined 91%
-        strength: STRONG
-        note: Negative coverage of FCF decline partially justified, but vocabulary CHOICE (craters vs declined) reveals editorial register beyond facts
-      - factor: Meta legal overhang is real
-        strength: STRONG
-        note: Youth safety litigation is material, but loading it into capex articles is editorial choice not financial reporting necessity
-      - factor: Wire service style constraints
-        strength: MODERATE
-        note: Reuters wire style limits editorial voice more than feature publications, but word choice within style reveals entity-selective framing
-      - factor: Reporter frame-lock (Mechanism #57)
-        strength: MODERATE
-        note: Seetharaman and Horwitz both migrated from WSJ with adversarial Meta frames. This is reporter-driven, not necessarily editorial directive
-      - factor: Anthropic growth rate objectively faster
-        strength: MODERATE
-        note: Anthropic 7x ARR growth vs Meta 28% growth is a legitimate editorial distinction, but does not explain vocabulary-level alarm vs aspiration
+    - factor: Meta's FCF actually declined 91%
+      strength: STRONG
+      note: Negative coverage of FCF decline partially justified, but vocabulary CHOICE (craters vs declined) reveals editorial
+        register beyond facts
+    - factor: Meta legal overhang is real
+      strength: STRONG
+      note: Youth safety litigation is material, but loading it into capex articles is editorial choice not financial reporting
+        necessity
+    - factor: Wire service style constraints
+      strength: MODERATE
+      note: Reuters wire style limits editorial voice more than feature publications, but word choice within style reveals
+        entity-selective framing
+    - factor: Reporter frame-lock (Mechanism
+      strength: MODERATE
+      note: Seetharaman and Horwitz both migrated from WSJ with adversarial Meta frames. This is reporter-driven, not necessarily
+        editorial directive
+    - factor: Anthropic growth rate objectively faster
+      strength: MODERATE
+      note: Anthropic 7x ARR growth vs Meta 28% growth is a legitimate editorial distinction, but does not explain vocabulary-level
+        alarm vs aspiration
     asymmetry_score: 0.41
     cross_references:
-      - mechanism_id: 57
-        relationship: compounds
-        description: "Seetharaman/Horwitz frame-lock (Mechanism #57) operates at reporter level; this mechanism documents publication-level pattern across multiple articles and reporters"
-      - mechanism_id: 328
-        relationship: extends
-        description: "Settlement IPO underwriter regulatory liability containment (#328) documents how financial architecture predicts editorial framing; this mechanism documents how the same pattern appears in infrastructure spending coverage"
-    wire_service_amplification_note: |
-      Reuters wire stories propagate to hundreds of outlets globally. The vocabulary choice in
+    - mechanism_id: 57
+      relationship: compounds
+      description: 'Seetharaman/Horwitz frame-lock (Mechanism #57) operates at reporter level; this mechanism documents publication-level
+        pattern across multiple articles and reporters'
+    - mechanism_id: 328
+      relationship: extends
+      description: Settlement IPO underwriter regulatory liability containment (#328) documents how financial architecture
+        predicts editorial framing; this mechanism documents how the same pattern appears in infrastructure spending coverage
+    wire_service_amplification_note: 'Reuters wire stories propagate to hundreds of outlets globally. The vocabulary choice
+      in
+
       Reuters headlines ("craters" vs "to rent") sets the framing baseline for international
-      coverage of both companies' spending. This makes publication-level vocabulary asymmetry
+
+      coverage of both companies'' spending. This makes publication-level vocabulary asymmetry
+
       at Reuters disproportionately impactful compared to feature publications.
+
+      '
     test_file: tests/test_reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation_aug26.py
     test_count: 23
     source_urls:
-      - https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
-      - https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
-      - https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
-      - https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
-      - https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
-      - https://news.bloomberglaw.com/ip-law/thomson-reuters-in-talks-with-ai-firms-over-licensing-deals-2
+    - https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+    - https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+    - https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
+    - https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
+    - https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
+    - https://news.bloomberglaw.com/ip-law/thomson-reuters-in-talks-with-ai-firms-over-licensing-deals-2
   techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation:
     mechanism_id: 330
-    finding_summary: |
-      On August 26, 2026, TechCrunch published two major stories within 70 minutes:
-      (1) Lucas Ropek's Anthropic $45B Nscale deal — aspirational register ("compute-gobbling streak,"
+    finding_summary: 'On August 26, 2026, TechCrunch published two major stories within 70 minutes:
+
+      (1) Lucas Ropek''s Anthropic $45B Nscale deal — aspirational register ("compute-gobbling streak,"
+
       "aggressively scaled up," "spree of compute partnerships," "enthusiastic pursuit"), zero alarm
+
       for $45B commitment from company with $42B net loss;
+
       (2) Meta $18B child-safety settlement — skeptical register ("hinges on age-verification tech
-      that doesn't work well," "designed to keep children hooked," "common tactic for companies
+
+      that doesn''t work well," "designed to keep children hooked," "common tactic for companies
+
       looking to avoid a jury trial"). Beat assignment routes aspirational entity stories to the
+
       AI beat reporter (Ropek) and adversarial entity stories to a different pipeline, creating
+
       editorial division where the aspirational-register journalist never applies alarm vocabulary
+
       to Meta. TechCrunch is owned by Yahoo, which is controlled by Apollo Global Management.
-      Apollo has $750M+ Anthropic investment, backstops Broadcom's $100B Anthropic financing,
+
+      Apollo has $750M+ Anthropic investment, backstops Broadcom''s $100B Anthropic financing,
+
       and backs the $1.5B Ode consulting JV. Same word "spree" carries opposite connotations
+
       per entity across TechCrunch/Reuters ecosystem.
+
+      '
     date: '2026-08-26'
     type: B
     publication: TechCrunch
@@ -32007,97 +32151,98 @@ publications:
     competitor: Anthropic
     articles_analyzed:
       anthropic:
-        - title: "Anthropic continues compute-gobbling streak in $45B deal with Nscale"
-          date: '2026-08-26'
-          url: https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
-          author: Lucas Ropek
-          register: aspirational
-          key_vocabulary:
-            - "compute-gobbling streak"
-            - "aggressively scaled up"
-            - "spree of compute partnerships"
-            - "enthusiastic pursuit of more AI horsepower"
-          alarm_words: 0
+      - title: Anthropic continues compute-gobbling streak in $45B deal with Nscale
+        date: '2026-08-26'
+        url: https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
+        author: Lucas Ropek
+        register: aspirational
+        key_vocabulary:
+        - compute-gobbling streak
+        - aggressively scaled up
+        - spree of compute partnerships
+        - enthusiastic pursuit of more AI horsepower
+        alarm_words: 0
       meta:
-        - title: "Meta's $18B child-safety deal hinges on age-verification tech that doesn't work well"
-          date: '2026-08-26'
-          url: https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
-          author: unknown (not Lucas Ropek)
-          register: skeptical
-          key_vocabulary:
-            - "hinges on age-verification tech that doesn't work well"
-            - "designed to keep children hooked"
-            - "common tactic for companies looking to avoid a jury trial"
-            - "resting on age-verification technology that still doesn't work particularly well"
-          alarm_words: 4
+      - title: Meta's $18B child-safety deal hinges on age-verification tech that doesn't work well
+        date: '2026-08-26'
+        url: https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+        author: unknown (not Lucas Ropek)
+        register: skeptical
+        key_vocabulary:
+        - hinges on age-verification tech that doesn't work well
+        - designed to keep children hooked
+        - common tactic for companies looking to avoid a jury trial
+        - resting on age-verification technology that still doesn't work particularly well
+        alarm_words: 4
     beat_assignment_pattern:
       ropek_anthropic_articles_aug_2026:
-        - "Anthropic signs $10B deal with AI cloud startup Volta (Aug 4)"
-        - "Some Claude users are mad about watermarks (Aug 23)"
-        - "Anthropic continues compute-gobbling streak (Aug 26)"
+      - Anthropic signs $10B deal with AI cloud startup Volta (Aug 4)
+      - Some Claude users are mad about watermarks (Aug 23)
+      - Anthropic continues compute-gobbling streak (Aug 26)
       ropek_meta_articles_aug_2026:
-        - "Meta launches Muse Code (Aug 5, In Brief)"
-      observation: "AI beat reporter covers Anthropic financial stories aspirationally; biggest Meta legal story of the day assigned to different writer"
+      - Meta launches Muse Code (Aug 5, In Brief)
+      observation: AI beat reporter covers Anthropic financial stories aspirationally; biggest Meta legal story of the day
+        assigned to different writer
     financial_architecture:
-      ownership_chain: "Apollo Global Management → Yahoo (majority stake 2024) → TechCrunch (acquired 2021)"
-      apollo_anthropic_investment: "$750M+ (2024)"
-      apollo_broadcom_backstop: "$60-100B debt facility benefiting Anthropic (Aug 20, 2026)"
-      apollo_ode_jv: "$300M Apollo commitment to $1.5B Anthropic-Blackstone consulting JV"
+      ownership_chain: Apollo Global Management → Yahoo (majority stake 2024) → TechCrunch (acquired 2021)
+      apollo_anthropic_investment: $750M+ (2024)
+      apollo_broadcom_backstop: $60-100B debt facility benefiting Anthropic (Aug 20, 2026)
+      apollo_ode_jv: $300M Apollo commitment to $1.5B Anthropic-Blackstone consulting JV
     confounders:
-      - id: C1
-        strength: STRONG
-        description: "Child safety is real concern, age verification technically challenging; skepticism partly justified"
-        adjustment: -0.12
-      - id: C2
-        strength: MODERATE
-        description: "Anthropic infrastructure deals legitimately require growth-register vocabulary"
-        adjustment: -0.05
-      - id: C3
-        strength: MODERATE
-        description: "Legal settlements vs business deals inherently use different registers"
-        adjustment: -0.05
-      - id: C4
-        strength: WEAK
-        description: "Beat assignment is standard editorial practice"
-        adjustment: -0.02
+    - id: C1
+      strength: STRONG
+      description: Child safety is real concern, age verification technically challenging; skepticism partly justified
+      adjustment: -0.12
+    - id: C2
+      strength: MODERATE
+      description: Anthropic infrastructure deals legitimately require growth-register vocabulary
+      adjustment: -0.05
+    - id: C3
+      strength: MODERATE
+      description: Legal settlements vs business deals inherently use different registers
+      adjustment: -0.05
+    - id: C4
+      strength: WEAK
+      description: Beat assignment is standard editorial practice
+      adjustment: -0.02
     asymmetry_score:
       raw: 0.55
       adjusted: 0.31
-      explanation: "Strong confounders (C1 especially) reduce but don't eliminate asymmetry; zero alarm for $42B Anthropic loss vs skeptical framing for Meta's $1.8B/year settlement remains unexplained"
+      explanation: Strong confounders (C1 especially) reduce but don't eliminate asymmetry; zero alarm for $42B Anthropic
+        loss vs skeptical framing for Meta's $1.8B/year settlement remains unexplained
     cross_references:
-      - mechanism_id: 269
-        relationship: extends
-        description: "Same journalist (Ropek) camera glasses privacy vocabulary omission — different finding, same editorial division pattern"
-      - mechanism_id: 329
-        relationship: parallels
-        description: "Reuters infrastructure spending vocabulary bifurcation (same day) — same entity pair, different publication"
-      - mechanism_id: 328
-        relationship: contextualizes
-        description: "Meta settlement IPO underwriter regulatory liability containment — Apollo's role in both editorial and financial architecture"
+    - mechanism_id: 269
+      relationship: extends
+      description: Same journalist (Ropek) camera glasses privacy vocabulary omission — different finding, same editorial
+        division pattern
+    - mechanism_id: 329
+      relationship: parallels
+      description: Reuters infrastructure spending vocabulary bifurcation (same day) — same entity pair, different publication
+    - mechanism_id: 328
+      relationship: contextualizes
+      description: Meta settlement IPO underwriter regulatory liability containment — Apollo's role in both editorial and
+        financial architecture
     test_file: tests/test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py
     test_count: 25
     source_urls:
-      - https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
-      - https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
-      - https://techcrunch.com/author/lucas-ropek/
-      - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
-      - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
+    - https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
+    - https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+    - https://techcrunch.com/author/lucas-ropek/
+    - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+    - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
   meta_ai_content_licensing_network_asymmetric_disclosure_parallel_deal_architecture:
     mechanism_id: 331
     type: C
-    finding_summary: >
-      Meta has assembled a parallel AI content licensing network spanning 7+ publishers
-      (News Corp $50M/yr, CNN, Fox News, People Inc., USA Today, Reuters, plus others),
-      mirroring OpenAI's deal structure but with dramatically lower transparency.
-      83% of Meta deals have undisclosed terms vs. OpenAI's typically disclosed terms.
-      The WSJ (News Corp) discloses both Meta and OpenAI deals when covering either
-      company. Other Meta-deal publishers (CNN, Fox, Reuters, USA Today) do not
-      consistently disclose their Meta deals in coverage. This creates a transparency
-      gradient: OpenAI-deal bias gets scrutinized while Meta-deal bias flies under
-      the radar. The existence of Meta's parallel network undermines the simplistic
-      narrative that publishers cover Meta badly because OpenAI pays them. Meta ALSO
-      pays publishers. The question is deal density (OpenAI 12+ vs Meta 7+), deal
-      value, and disclosure transparency.
+    finding_summary: 'Meta has assembled a parallel AI content licensing network spanning 7+ publishers (News Corp $50M/yr,
+      CNN, Fox News, People Inc., USA Today, Reuters, plus others), mirroring OpenAI''s deal structure but with dramatically
+      lower transparency. 83% of Meta deals have undisclosed terms vs. OpenAI''s typically disclosed terms. The WSJ (News
+      Corp) discloses both Meta and OpenAI deals when covering either company. Other Meta-deal publishers (CNN, Fox, Reuters,
+      USA Today) do not consistently disclose their Meta deals in coverage. This creates a transparency gradient: OpenAI-deal
+      bias gets scrutinized while Meta-deal bias flies under the radar. The existence of Meta''s parallel network undermines
+      the simplistic narrative that publishers cover Meta badly because OpenAI pays them. Meta ALSO pays publishers. The question
+      is deal density (OpenAI 12+ vs Meta 7+), deal value, and disclosure transparency.
+
+      '
     date: '2026-08-26'
     sources:
     - url: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
@@ -32125,8 +32270,8 @@ publications:
       strength: WEAK
       description: Materiality threshold for disclosure varies
       adjustment: -0.02
-    raw_score: 0.50
-    adjusted_score: 0.20
+    raw_score: 0.5
+    adjusted_score: 0.2
     cross_references:
     - mechanism_id: 1
       relationship: extends
@@ -32136,24 +32281,23 @@ publications:
       relationship: context
   publisher_geo_content_architecture_financial_dependency_acceleration:
     mechanism_id: 332
-    name: "Publisher GEO Content Architecture Transformation — Financial Dependency Acceleration"
-    date_discovered: "2026-08-26"
+    name: Publisher GEO Content Architecture Transformation — Financial Dependency Acceleration
+    date_discovered: '2026-08-26'
     category: financial_incentive_mapping
-    finding: >
-      Publishers are actively restructuring content architecture (markdown conversion,
-      agent-readable site versions, metadata optimization) specifically to attract AI
-      licensing deals, creating sunk-cost financial lock-in that intensifies coverage
-      asymmetry. USA Today Co (CEO Reed, earnings call Aug 6) confirmed "format content
-      for humans and machines" + 99% bot blocking. Time, The Economist building parallel
-      agent-readable sites. This extends the 48% citation premium (mechanism #249) from
-      passive observation to active publisher-side investment dependency.
+    finding: 'Publishers are actively restructuring content architecture (markdown conversion, agent-readable site versions,
+      metadata optimization) specifically to attract AI licensing deals, creating sunk-cost financial lock-in that intensifies
+      coverage asymmetry. USA Today Co (CEO Reed, earnings call Aug 6) confirmed "format content for humans and machines"
+      + 99% bot blocking. Time, The Economist building parallel agent-readable sites. This extends the 48% citation premium
+      (mechanism #249) from passive observation to active publisher-side investment dependency.
+
+      '
     publications_affected:
-    - "USA Today Co / Gannett"
-    - "Time"
-    - "The Economist"
-    - "The Atlantic"
-    - "People Inc."
-    - "Reuters"
+    - USA Today Co / Gannett
+    - Time
+    - The Economist
+    - The Atlantic
+    - People Inc.
+    - Reuters
     evidence:
     - url: https://digiday.com/media/usa-today-co-is-reformatting-content-to-attract-more-ai-licensing-deals/
       description: USA Today Co GEO strategy — markdown conversion, 99% bot blocking, advertiser LLM visibility
@@ -32163,7 +32307,7 @@ publications:
     - id: C1
       strength: STRONG
       description: GEO may improve content quality for humans too (dual benefit)
-      adjustment: -0.10
+      adjustment: -0.1
     - id: C2
       strength: STRONG
       description: Editorial independence from business strategy
@@ -32176,7 +32320,7 @@ publications:
       strength: MODERATE
       description: Machine-readable formats are general web standards evolution
       adjustment: -0.05
-    raw_score: 0.70
+    raw_score: 0.7
     adjusted_score: 0.38
     cross_references:
     - mechanism_id: 249
@@ -32189,18 +32333,16 @@ publications:
     mechanism_id: 333
     name: Investor-Podcast-Publisher Financial Architecture Convergence
     type: cross_surface_convergence
-    date_documented: "2026-08-27"
-    description: >
-      Settlement-week podcast/webinar surfaces exhibit perfect compartmentalization
-      between Meta-accountability and Anthropic-aspiration narratives. Investment firms
-      holding Anthropic pre-IPO equity (ARK Invest ARKVX) produce aspirational
-      Anthropic coverage on webinar/podcast surfaces while political podcasts
-      (Bloomberg Balance of Power) produce Meta-accountability coverage. No single
-      podcast surface connected Meta's $18B settlement to Anthropic's $2T IPO
-      aspirations in the Aug 20-27 window. The financial relationships (equity ownership,
-      content licensing, ad revenue dependency) predict which compartment each entity
-      occupies: entities with publisher/investor financial ties get the aspirational
-      compartment, Meta gets the accountability compartment.
+    date_documented: '2026-08-27'
+    description: 'Settlement-week podcast/webinar surfaces exhibit perfect compartmentalization between Meta-accountability
+      and Anthropic-aspiration narratives. Investment firms holding Anthropic pre-IPO equity (ARK Invest ARKVX) produce aspirational
+      Anthropic coverage on webinar/podcast surfaces while political podcasts (Bloomberg Balance of Power) produce Meta-accountability
+      coverage. No single podcast surface connected Meta''s $18B settlement to Anthropic''s $2T IPO aspirations in the Aug
+      20-27 window. The financial relationships (equity ownership, content licensing, ad revenue dependency) predict which
+      compartment each entity occupies: entities with publisher/investor financial ties get the aspirational compartment,
+      Meta gets the accountability compartment.
+
+      '
     entities:
     - anthropic
     - meta
@@ -32210,29 +32352,36 @@ publications:
     - npr
     evidence:
     - source: Bloomberg Balance of Power
-      date: "2026-08-26"
-      url: "https://www.youtube.com/watch?v=FGI6AS7L8Lc"
-      observation: "Gov. Spencer Cox (R-UT) says Meta settlement amount should have been much higher. Meta named exclusively in episode title. Same episode juxtaposes AI-as-juggernaut (Zandi) with Meta-as-accountability (Cox) with zero cross-reference."
+      date: '2026-08-26'
+      url: https://www.youtube.com/watch?v=FGI6AS7L8Lc
+      observation: Gov. Spencer Cox (R-UT) says Meta settlement amount should have been much higher. Meta named exclusively
+        in episode title. Same episode juxtaposes AI-as-juggernaut (Zandi) with Meta-as-accountability (Cox) with zero cross-reference.
     - source: WBUR/NPR Here and Now
-      date: "2026-08-26"
-      url: "https://www.iowapublicradio.org/news-from-npr/2026-08-26/the-outcome-of-metas-17-billion-settlement"
-      observation: "Lauren Feiner (The Verge/Vox Media) carries print editorial frame to national public radio. Vox Media Google ad dependency creates structural conflict given Google/YouTube is settlement-adjacent."
+      date: '2026-08-26'
+      url: https://www.iowapublicradio.org/news-from-npr/2026-08-26/the-outcome-of-metas-17-billion-settlement
+      observation: Lauren Feiner (The Verge/Vox Media) carries print editorial frame to national public radio. Vox Media Google
+        ad dependency creates structural conflict given Google/YouTube is settlement-adjacent.
     - source: ARK Invest August mARKet Update
-      date: "2026-08-20"
-      url: "https://www.youtube.com/watch?v=Gw9kqiiDX7o"
-      observation: "Cathie Wood and ARK team present Anthropic IPO at near-$1T cap with aspirational framing. ARK holds Anthropic pre-IPO in ARKVX. Anthropic run rate scaling from $9B to $75B presented as evidence of AI's transformative potential without noting $42B cumulative losses."
+      date: '2026-08-20'
+      url: https://www.youtube.com/watch?v=Gw9kqiiDX7o
+      observation: Cathie Wood and ARK team present Anthropic IPO at near-$1T cap with aspirational framing. ARK holds Anthropic
+        pre-IPO in ARKVX. Anthropic run rate scaling from $9B to $75B presented as evidence of AI's transformative potential
+        without noting $42B cumulative losses.
     confounders:
     - id: C1
       strength: STRONG
-      description: "Genre matters: investor webinars and political podcasts serve structurally different audience needs. Compartmentalization may reflect format conventions rather than coordinated narrative architecture."
+      description: 'Genre matters: investor webinars and political podcasts serve structurally different audience needs. Compartmentalization
+        may reflect format conventions rather than coordinated narrative architecture.'
       adjustment: -0.15
     - id: C2
       strength: MODERATE
-      description: "Investment firms promoting portfolio holdings is structurally expected and SEC-regulated, not independently evidence of coverage bias."
-      adjustment: -0.10
+      description: Investment firms promoting portfolio holdings is structurally expected and SEC-regulated, not independently
+        evidence of coverage bias.
+      adjustment: -0.1
     - id: C3
       strength: MODERATE
-      description: "Small sample size: 5 podcast surfaces in one week. The pattern is suggestive but not statistically significant alone."
+      description: 'Small sample size: 5 podcast surfaces in one week. The pattern is suggestive but not statistically significant
+        alone.'
       adjustment: -0.08
     raw_score: 0.72
     adjusted_score: 0.39
@@ -32246,22 +32395,20 @@ publications:
   bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo:
     mechanism_id: 334
     type: A
-    title: "Bloomberg LP — Upstream Narrative Originator: Meta Settlement Legal Framing vs Anthropic IPO Aspirational Framing"
+    title: 'Bloomberg LP — Upstream Narrative Originator: Meta Settlement Legal Framing vs Anthropic IPO Aspirational Framing'
     publication: bloomberg
-    date: "2026-08-26"
+    date: '2026-08-26'
     competitor: anthropic
     test_file: tests/test_bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo_framing_aug26.py
-    description: >
-      Bloomberg LP functions as the upstream narrative originator for virtually
-      every major Anthropic financial scoop (Nscale $45B, credit facility >$10B,
-      Broadcom $100B AI debt, $900B valuation, IPO timeline). Downstream
-      publications (Reuters, TechCrunch, PYMNTS) cite "Bloomberg reported" and
-      inherit Bloomberg's aspirational vocabulary. On Aug 26, 2026, Bloomberg
-      sourced the Anthropic Nscale deal with growth-register framing while
-      Bloomberg Tax covered Meta's $18B settlement with punitive-register
-      vocabulary. Bloomberg's treatment of Anthropic's own legal exposure
-      ($1.5B piracy settlement, Pentagon blacklisting) uses defensive/hero
-      framing rather than the alarm vocabulary applied to Meta's legal exposure.
+    description: 'Bloomberg LP functions as the upstream narrative originator for virtually every major Anthropic financial
+      scoop (Nscale $45B, credit facility >$10B, Broadcom $100B AI debt, $900B valuation, IPO timeline). Downstream publications
+      (Reuters, TechCrunch, PYMNTS) cite "Bloomberg reported" and inherit Bloomberg''s aspirational vocabulary. On Aug 26,
+      2026, Bloomberg sourced the Anthropic Nscale deal with growth-register framing while Bloomberg Tax covered Meta''s $18B
+      settlement with punitive-register vocabulary. Bloomberg''s treatment of Anthropic''s own legal exposure ($1.5B piracy
+      settlement, Pentagon blacklisting) uses defensive/hero framing rather than the alarm vocabulary applied to Meta''s legal
+      exposure.
+
+      '
     entities:
     - meta
     - anthropic
@@ -32272,164 +32419,175 @@ publications:
     - bloomberg_law
     evidence:
     - source: Bloomberg Tax
-      date: "2026-08-26"
-      url: "https://news.bloombergtax.com/artificial-intelligence/meta-states-agree-to-settle-teen-social-media-harm-case"
-      observation: "Meta settlement: 'deliberately designed,' 'enormous risk,' 'saddled with penalties of $1.4T,' 'polluting factory,' 'dangerously unhealthy,' 'knowingly designed.'"
+      date: '2026-08-26'
+      url: https://news.bloombergtax.com/artificial-intelligence/meta-states-agree-to-settle-teen-social-media-harm-case
+      observation: 'Meta settlement: ''deliberately designed,'' ''enormous risk,'' ''saddled with penalties of $1.4T,'' ''polluting
+        factory,'' ''dangerously unhealthy,'' ''knowingly designed.'''
     - source: Reuters (citing Bloomberg)
-      date: "2026-08-26"
-      url: "https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/"
-      observation: "Anthropic Nscale $45B: 'Bloomberg News first reported.' Downstream vocabulary: 'secure capacity,' 'aggressively expanding,' 'anticipated surge in demand' — all propagated from Bloomberg's growth-register framing."
+      date: '2026-08-26'
+      url: https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+      observation: 'Anthropic Nscale $45B: ''Bloomberg News first reported.'' Downstream vocabulary: ''secure capacity,''
+        ''aggressively expanding,'' ''anticipated surge in demand'' — all propagated from Bloomberg''s growth-register framing.'
     - source: Bloomberg Tax
-      date: "2025-10-20"
-      url: "https://news.bloombergtax.com/social-justice/an-anthropic-deal-wont-jeopardize-the-affordable-ai-future"
-      observation: "Anthropic $1.5B piracy settlement headline: 'Won't Jeopardize the Affordable AI Future' — proactive defensive framing. Zero 'deliberately'/'knowingly' vocabulary despite Anthropic admittedly downloading 480K+ pirated books."
+      date: '2025-10-20'
+      url: https://news.bloombergtax.com/social-justice/an-anthropic-deal-wont-jeopardize-the-affordable-ai-future
+      observation: 'Anthropic $1.5B piracy settlement headline: ''Won''t Jeopardize the Affordable AI Future'' — proactive
+        defensive framing. Zero ''deliberately''/''knowingly'' vocabulary despite Anthropic admittedly downloading 480K+ pirated
+        books.'
     - source: Bloomberg Tax
-      date: "2026-03-24"
-      url: "https://news.bloombergtax.com/ip-law/anthropic-tells-judge-it-could-lose-billions-if-us-shuns-ai-tool"
-      observation: "Anthropic Pentagon blacklisting covered as hero narrative: Anthropic 'challenging' government, Microsoft filing support. 'No choice but to challenge.' No 'enormous risk' framing."
+      date: '2026-03-24'
+      url: https://news.bloombergtax.com/ip-law/anthropic-tells-judge-it-could-lose-billions-if-us-shuns-ai-tool
+      observation: 'Anthropic Pentagon blacklisting covered as hero narrative: Anthropic ''challenging'' government, Microsoft
+        filing support. ''No choice but to challenge.'' No ''enormous risk'' framing.'
     - source: Bloomberg Tax
-      date: "2026-04-01"
-      url: "https://news.bloombergtax.com/ip-law/google-anthropic-announce-cloud-deal-worth-tens-of-billions"
-      observation: "Google TPU deal: 'deepens its partnership,' 'fast-growing,' 'escalating race to power large AI models' — competitive momentum framing."
+      date: '2026-04-01'
+      url: https://news.bloombergtax.com/ip-law/google-anthropic-announce-cloud-deal-worth-tens-of-billions
+      observation: 'Google TPU deal: ''deepens its partnership,'' ''fast-growing,'' ''escalating race to power large AI models''
+        — competitive momentum framing.'
     - source: Bloomberg Tax
-      date: "2026-05-01"
-      url: "https://news.bloombergtax.com/insurance/anthropic-considering-funding-offers-at-over-900-billion-value"
-      observation: "$900B valuation: 'most coveted private companies,' 'strong investor demand,' 'leapfrogging rival OpenAI.'"
+      date: '2026-05-01'
+      url: https://news.bloombergtax.com/insurance/anthropic-considering-funding-offers-at-over-900-billion-value
+      observation: '$900B valuation: ''most coveted private companies,'' ''strong investor demand,'' ''leapfrogging rival
+        OpenAI.'''
     - source: Reuters (citing Bloomberg)
-      date: "2026-08-18"
-      url: "https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/"
-      observation: "Credit facility: 'banks jockeying for a piece' — FOMO framing for investor access to a pre-profit company."
+      date: '2026-08-18'
+      url: https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+      observation: 'Credit facility: ''banks jockeying for a piece'' — FOMO framing for investor access to a pre-profit company.'
     confounders:
     - id: C1
       strength: STRONG
-      description: "Bloomberg's segmented products (Bloomberg.com, Bloomberg Tax, Bloomberg Law) serve different audiences with different information needs. Legal/regulatory content inherently uses more cautious vocabulary."
+      description: Bloomberg's segmented products (Bloomberg.com, Bloomberg Tax, Bloomberg Law) serve different audiences
+        with different information needs. Legal/regulatory content inherently uses more cautious vocabulary.
       adjustment: -0.15
     - id: C2
       strength: STRONG
-      description: "Anthropic's infrastructure deals ARE breaking financial news and inherently use growth-register vocabulary. Bloomberg's scoop advantage reflects strong financial journalism sources."
+      description: Anthropic's infrastructure deals ARE breaking financial news and inherently use growth-register vocabulary.
+        Bloomberg's scoop advantage reflects strong financial journalism sources.
       adjustment: -0.12
     - id: C3
       strength: MODERATE
-      description: "Meta's $18B settlement is the largest tech settlement in history and warrants alarm vocabulary. The 'polluting factory' comparison originated from a judge."
+      description: Meta's $18B settlement is the largest tech settlement in history and warrants alarm vocabulary. The 'polluting
+        factory' comparison originated from a judge.
       adjustment: -0.08
     - id: C4
       strength: MODERATE
-      description: "Terminal revenue correlation with IPO bull narratives does not prove editorial causation."
+      description: Terminal revenue correlation with IPO bull narratives does not prove editorial causation.
       adjustment: -0.08
     raw_score: 0.68
     adjusted_score: 0.25
     cross_references:
     - mechanism_id: 329
-      relationship: "upstream_source — Bloomberg originates framing that Reuters amplifies"
+      relationship: upstream_source — Bloomberg originates framing that Reuters amplifies
     - mechanism_id: 330
-      relationship: "upstream_source — Bloomberg breaks Nscale deal that TechCrunch amplifies"
+      relationship: upstream_source — Bloomberg breaks Nscale deal that TechCrunch amplifies
     - mechanism_id: 328
-      relationship: "extends — IPO underwriter regulatory liability containment"
-
+      relationship: extends — IPO underwriter regulatory liability containment
   cnbc_vanian_government_action_vocabulary_register_inversion:
     mechanism_id: 335
     type: B
-    title: "Jonathan Vanian (CNBC) — Same-Journalist Government-Action Vocabulary Register Inversion"
-    journalist: "Jonathan Vanian"
+    title: Jonathan Vanian (CNBC) — Same-Journalist Government-Action Vocabulary Register Inversion
+    journalist: Jonathan Vanian
     publication: cnbc
-    date: "2026-08-27"
+    date: '2026-08-27'
     competitor: anthropic
     test_file: tests/test_jonathan_vanian_cnbc_cross_entity_government_action_vocabulary_register_inversion_aug27.py
-    description: >
-      Jonathan Vanian covers both Meta and Anthropic for CNBC. When both
-      companies face adverse government action (Meta: multistate AG lawsuits
-      and $18B settlement; Anthropic: Pentagon supply-chain blacklisting),
-      his vocabulary registers invert. Meta gets accountability/punitive
-      vocabulary ("astronomical consequences," "court losses," "woes,"
-      "watershed event," "defeats"). Anthropic gets sympathetic/victimhood
-      vocabulary ("Pentagon's choice," "experts are worried," "banned").
-      When covering Meta's AI product launches competing with Anthropic,
-      subordination vocabulary appears: Meta "chases" Anthropic, framing
-      Meta as the follower despite both companies being active competitors.
-      CNBC is owned by NBCUniversal/Comcast. No direct Meta-CNBC or Anthropic-CNBC
-      AI content licensing deal was identified. The vocabulary register
-      difference may reflect structural audience-engagement incentives
-      (aspirational AI startup narratives vs. large-tech accountability stories)
-      rather than direct financial relationships.
+    description: 'Jonathan Vanian covers both Meta and Anthropic for CNBC. When both companies face adverse government action
+      (Meta: multistate AG lawsuits and $18B settlement; Anthropic: Pentagon supply-chain blacklisting), his vocabulary registers
+      invert. Meta gets accountability/punitive vocabulary ("astronomical consequences," "court losses," "woes," "watershed
+      event," "defeats"). Anthropic gets sympathetic/victimhood vocabulary ("Pentagon''s choice," "experts are worried," "banned").
+      When covering Meta''s AI product launches competing with Anthropic, subordination vocabulary appears: Meta "chases"
+      Anthropic, framing Meta as the follower despite both companies being active competitors. CNBC is owned by NBCUniversal/Comcast.
+      No direct Meta-CNBC or Anthropic-CNBC AI content licensing deal was identified. The vocabulary register difference may
+      reflect structural audience-engagement incentives (aspirational AI startup narratives vs. large-tech accountability
+      stories) rather than direct financial relationships.
+
+      '
     entities:
     - meta
     - anthropic
     publications:
     - cnbc
     evidence:
-    - source: "CNBC (Vanian)"
-      date: "2026-08-18"
-      url: "https://www.livemint.com/companies/news/meta-faces-astronomical-consequences-as-child-privacy-trial-in-california-could-change-instagram-facebook-forever-11786984834374.html"
-      observation: "Meta trial preview: 'astronomical consequences,' 'critical moment,' 'could change Instagram, Facebook forever.' Headline frames Meta's legal exposure as existential."
-    - source: "CNBC (Vanian)"
-      date: "2026-08-26"
-      url: "https://muckrack.com/jonathan-vanian/articles"
-      observation: "Meta settlement and NM verdict coverage cluster on Muck Rack: 'settles social media addiction case,' 'ordered to pay $567 million into abatement fund,' 'Reality Labs lost over $4.6 billion.' Consistent accountability/consequence register. Also: Mosseri 'doesn't tell team to hide anything' — defensive accountability framing."
-    - source: "CNBC (Vanian + Capoot)"
-      date: "2026-03-09"
-      url: "https://lawreview.syr.edu/when-ai-ethics-collide-with-national-security-anthropic-challenges-pentagon-blacklisting/"
-      observation: "Anthropic Pentagon ban: 'Pentagon's choice for AI. Now it's banned and experts are worried.' Merit-based selection language ('choice') followed by sympathetic concern framing ('worried'). No 'consequences' or 'accountability' vocabulary. Date confirmed via Syracuse Law Review citation: CNBC Mar. 9, 2026, 6:01 PM."
-    - source: "CNBC (Vanian)"
-      date: "2026-08-05"
-      url: "https://muckrack.com/jonathan-vanian/articles"
-      observation: "Meta AI product: 'Meta debuts first AI coding agent to take on Anthropic and OpenAI.' Subordination vocabulary — Meta as challenger taking on established leaders. Headline frames Meta as pursuer, Anthropic as the standard."
-    - source: "CNBC (Vanian)"
-      date: "2026-07-29"
-      url: "https://muckrack.com/jonathan-vanian/articles"
-      observation: "Meta AI capacity: 'Zuckerberg lays out Meta's AI capacity dilemma: What to sell vs. what to keep.' Problem-framing vocabulary ('dilemma') for Meta's AI strategy, per Muck Rack listing."
+    - source: CNBC (Vanian)
+      date: '2026-08-18'
+      url: https://www.livemint.com/companies/news/meta-faces-astronomical-consequences-as-child-privacy-trial-in-california-could-change-instagram-facebook-forever-11786984834374.html
+      observation: 'Meta trial preview: ''astronomical consequences,'' ''critical moment,'' ''could change Instagram, Facebook
+        forever.'' Headline frames Meta''s legal exposure as existential.'
+    - source: CNBC (Vanian)
+      date: '2026-08-26'
+      url: https://muckrack.com/jonathan-vanian/articles
+      observation: 'Meta settlement and NM verdict coverage cluster on Muck Rack: ''settles social media addiction case,''
+        ''ordered to pay $567 million into abatement fund,'' ''Reality Labs lost over $4.6 billion.'' Consistent accountability/consequence
+        register. Also: Mosseri ''doesn''t tell team to hide anything'' — defensive accountability framing.'
+    - source: CNBC (Vanian + Capoot)
+      date: '2026-03-09'
+      url: https://lawreview.syr.edu/when-ai-ethics-collide-with-national-security-anthropic-challenges-pentagon-blacklisting/
+      observation: 'Anthropic Pentagon ban: ''Pentagon''s choice for AI. Now it''s banned and experts are worried.'' Merit-based
+        selection language (''choice'') followed by sympathetic concern framing (''worried''). No ''consequences'' or ''accountability''
+        vocabulary. Date confirmed via Syracuse Law Review citation: CNBC Mar. 9, 2026, 6:01 PM.'
+    - source: CNBC (Vanian)
+      date: '2026-08-05'
+      url: https://muckrack.com/jonathan-vanian/articles
+      observation: 'Meta AI product: ''Meta debuts first AI coding agent to take on Anthropic and OpenAI.'' Subordination
+        vocabulary — Meta as challenger taking on established leaders. Headline frames Meta as pursuer, Anthropic as the standard.'
+    - source: CNBC (Vanian)
+      date: '2026-07-29'
+      url: https://muckrack.com/jonathan-vanian/articles
+      observation: 'Meta AI capacity: ''Zuckerberg lays out Meta''s AI capacity dilemma: What to sell vs. what to keep.''
+        Problem-framing vocabulary (''dilemma'') for Meta''s AI strategy, per Muck Rack listing.'
     confounders:
     - id: C1
       strength: STRONG
-      description: "Meta's child safety cases involve proven harm with internal documents and jury verdicts. Anthropic's Pentagon ban was politically motivated during Trump admin disputes. Genuinely different circumstances warrant different framing."
+      description: Meta's child safety cases involve proven harm with internal documents and jury verdicts. Anthropic's Pentagon
+        ban was politically motivated during Trump admin disputes. Genuinely different circumstances warrant different framing.
       adjustment: -0.15
     - id: C2
       strength: STRONG
-      description: "Meta has a decade of privacy/safety controversies (Cambridge Analytica, Facebook Files). Anthropic has a 5-year record. Accumulated negative vocabulary reflects accumulated events."
+      description: Meta has a decade of privacy/safety controversies (Cambridge Analytica, Facebook Files). Anthropic has
+        a 5-year record. Accumulated negative vocabulary reflects accumulated events.
       adjustment: -0.12
     - id: C3
       strength: MODERATE
-      description: "Legal/regulatory stories inherently use accountability vocabulary by genre convention. The register difference may reflect topic rather than entity bias."
+      description: Legal/regulatory stories inherently use accountability vocabulary by genre convention. The register difference
+        may reflect topic rather than entity bias.
       adjustment: -0.08
     - id: C4
       strength: MODERATE
-      description: "Different timelines (Aug vs. Mar 2026) and different news cycles may have influenced editorial priorities and vocabulary choices."
+      description: Different timelines (Aug vs. Mar 2026) and different news cycles may have influenced editorial priorities
+        and vocabulary choices.
       adjustment: -0.06
     - id: C5
       strength: WEAK
-      description: "Anthropic story co-bylined with Ashley Capoot, introducing a second editorial voice that may have softened vocabulary."
+      description: Anthropic story co-bylined with Ashley Capoot, introducing a second editorial voice that may have softened
+        vocabulary.
       adjustment: -0.03
     raw_score: 0.62
     adjusted_score: 0.18
     cross_references:
     - mechanism_id: 330
-      relationship: "parallel — cross-employer vocabulary alignment, but here within a single employer"
+      relationship: parallel — cross-employer vocabulary alignment, but here within a single employer
     - mechanism_id: 334
-      relationship: "extends — Bloomberg framing of Meta settlement uses same accountability vocabulary Vanian uses"
-
+      relationship: extends — Bloomberg framing of Meta settlement uses same accountability vocabulary Vanian uses
   techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence:
     mechanism_id: 336
     type: A
-    title: "TechCrunch (Yahoo/Apollo) — OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence"
+    title: TechCrunch (Yahoo/Apollo) — OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence
     publication: TechCrunch
     publication_owner: Yahoo (Apollo Global Management)
-    date: "2026-08-27"
+    date: '2026-08-27'
     competitor: openai
     test_file: tests/test_techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence_aug27.py
-    description: >
-      TechCrunch published three articles on OpenAI's ChatGPT ads during the
-      initial US rollout (Jan 16, Feb 9, Feb 25, 2026) but published zero
-      articles on OpenAI's largest advertising geographic expansion: 31 European
-      markets (announced Aug 19, live Aug 24). This expanded ChatGPT Ads to 35
-      countries total. OpenAI ad revenue grew 25%+ since start of August per
-      Colin Fleming (enterprise CMO) briefing call. OpenAI deployed GDPR consent
-      model, excluding personalized ads initially in EEA. Within 48 hours of
-      Meta's $18B child safety settlement (Aug 26), TechCrunch published two
-      articles including critical analysis of age-verification technology. The
-      pattern: OpenAI advertising milestone gets zero coverage; Meta accountability
-      event gets immediate double coverage. Yahoo has an OpenAI content licensing
-      deal. Apollo Global Management (Yahoo parent) has AI infrastructure
-      investments with deal-flow adjacency to Anthropic. No Yahoo-Meta content
+    description: 'TechCrunch published three articles on OpenAI''s ChatGPT ads during the initial US rollout (Jan 16, Feb
+      9, Feb 25, 2026) but published zero articles on OpenAI''s largest advertising geographic expansion: 31 European markets
+      (announced Aug 19, live Aug 24). This expanded ChatGPT Ads to 35 countries total. OpenAI ad revenue grew 25%+ since
+      start of August per Colin Fleming (enterprise CMO) briefing call. OpenAI deployed GDPR consent model, excluding personalized
+      ads initially in EEA. Within 48 hours of Meta''s $18B child safety settlement (Aug 26), TechCrunch published two articles
+      including critical analysis of age-verification technology. The pattern: OpenAI advertising milestone gets zero coverage;
+      Meta accountability event gets immediate double coverage. Yahoo has an OpenAI content licensing deal. Apollo Global
+      Management (Yahoo parent) has AI infrastructure investments with deal-flow adjacency to Anthropic. No Yahoo-Meta content
       licensing deal identified.
+
+      '
     entities:
     - meta
     - openai
@@ -32438,72 +32596,88 @@ publications:
     publications:
     - techcrunch
     evidence:
-    - source: "TechCrunch (Sarah Perez)"
-      date: "2026-01-16"
-      category: "initial_coverage"
-      url: "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/"
-      observation: "Initial ChatGPT ads announcement: 'ChatGPT users are about to get hit with targeted ads.' Proactive coverage with critical consumer framing ('hit with')."
-    - source: "TechCrunch"
-      date: "2026-02-09"
-      category: "initial_coverage"
-      url: "https://techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/"
-      observation: "US ads launch: 'ChatGPT rolls out ads.' Coverage included Anthropic Super Bowl ad mockery, consumer backlash, and Sam Altman's 'testy' response."
-    - source: "TechCrunch (Ivan Mehta)"
-      date: "2026-02-25"
-      category: "initial_coverage"
-      url: "https://techcrunch.com/2026/02/25/openai-coo-says-ads-will-be-an-iterative-process/"
-      observation: "Brad Lightcap at India AI summit: 'iterative process.' COO promising to 'get privacy and trust right.' Zero follow-up on whether that happened."
-    - source: "OpenAI (official blog)"
-      date: "2026-08-19"
-      url: "https://openai.com/index/chatgpt-ads-expands-across-europe/"
-      observation: "Official announcement of ChatGPT Ads expansion to 31 European countries including all 27 EU states plus Iceland, Liechtenstein, Norway, Switzerland. Live Aug 24."
-    - source: "Adweek (Colin Fleming briefing)"
-      date: "2026-08-19"
-      url: "https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/"
-      observation: "Fleming: 'material expansion,' 1 billion weekly active users, 20% showing commercial intent, ad revenue grew 25%+ since August start."
-    - source: "TechRepublic"
-      date: "2026-08-20"
-      url: "https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/"
-      observation: "TechRepublic covered expansion same week with detailed targeting and privacy analysis. TechCrunch silence is not because the event lacked newsworthiness."
-    - source: "Le Monde (English edition)"
-      date: "2026-08-25"
-      url: "https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html"
-      observation: "Le Monde covered France-specific impact with Anthropic Super Bowl comparison and cost-offset analysis. TechCrunch, which covered the US launch, skipped the larger Europe expansion."
-    - source: "TechCrunch"
-      date: "2026-08-26"
-      url: "https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/"
-      observation: "Meta settlement coverage within hours: 2-hour daily limits, midnight blocks, $18B over 10 years. Standard accountability framing."
-    - source: "TechCrunch"
-      date: "2026-08-26"
-      url: "https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/"
-      observation: "Second Meta settlement article same day: critical analysis of age-verification weaknesses. 'Real-dollar impact softer than headline suggests' but framed as accountability. Two articles vs zero for OpenAI's Europe expansion."
+    - source: TechCrunch (Sarah Perez)
+      date: '2026-01-16'
+      category: initial_coverage
+      url: https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/
+      observation: 'Initial ChatGPT ads announcement: ''ChatGPT users are about to get hit with targeted ads.'' Proactive
+        coverage with critical consumer framing (''hit with'').'
+    - source: TechCrunch
+      date: '2026-02-09'
+      category: initial_coverage
+      url: https://techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/
+      observation: 'US ads launch: ''ChatGPT rolls out ads.'' Coverage included Anthropic Super Bowl ad mockery, consumer
+        backlash, and Sam Altman''s ''testy'' response.'
+    - source: TechCrunch (Ivan Mehta)
+      date: '2026-02-25'
+      category: initial_coverage
+      url: https://techcrunch.com/2026/02/25/openai-coo-says-ads-will-be-an-iterative-process/
+      observation: 'Brad Lightcap at India AI summit: ''iterative process.'' COO promising to ''get privacy and trust right.''
+        Zero follow-up on whether that happened.'
+    - source: OpenAI (official blog)
+      date: '2026-08-19'
+      url: https://openai.com/index/chatgpt-ads-expands-across-europe/
+      observation: Official announcement of ChatGPT Ads expansion to 31 European countries including all 27 EU states plus
+        Iceland, Liechtenstein, Norway, Switzerland. Live Aug 24.
+    - source: Adweek (Colin Fleming briefing)
+      date: '2026-08-19'
+      url: https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/
+      observation: 'Fleming: ''material expansion,'' 1 billion weekly active users, 20% showing commercial intent, ad revenue
+        grew 25%+ since August start.'
+    - source: TechRepublic
+      date: '2026-08-20'
+      url: https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/
+      observation: TechRepublic covered expansion same week with detailed targeting and privacy analysis. TechCrunch silence
+        is not because the event lacked newsworthiness.
+    - source: Le Monde (English edition)
+      date: '2026-08-25'
+      url: https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html
+      observation: Le Monde covered France-specific impact with Anthropic Super Bowl comparison and cost-offset analysis.
+        TechCrunch, which covered the US launch, skipped the larger Europe expansion.
+    - source: TechCrunch
+      date: '2026-08-26'
+      url: https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/
+      observation: 'Meta settlement coverage within hours: 2-hour daily limits, midnight blocks, $18B over 10 years. Standard
+        accountability framing.'
+    - source: TechCrunch
+      date: '2026-08-26'
+      url: https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+      observation: 'Second Meta settlement article same day: critical analysis of age-verification weaknesses. ''Real-dollar
+        impact softer than headline suggests'' but framed as accountability. Two articles vs zero for OpenAI''s Europe expansion.'
     confounders:
     - id: C1
       strength: STRONG
-      description: "Meta's $18B settlement is the largest tech child safety settlement in history and inherently newsworthy. Coverage volume may reflect genuine news significance rather than editorial bias. The comparison is not between equally significant events."
+      description: Meta's $18B settlement is the largest tech child safety settlement in history and inherently newsworthy.
+        Coverage volume may reflect genuine news significance rather than editorial bias. The comparison is not between equally
+        significant events.
       adjustment: -0.15
     - id: C2
       strength: STRONG
-      description: "TechCrunch editorial decisions are made by newsroom staff with editorial independence from Yahoo corporate. No evidence of direct editorial directive linking content licensing deals to coverage decisions."
+      description: TechCrunch editorial decisions are made by newsroom staff with editorial independence from Yahoo corporate.
+        No evidence of direct editorial directive linking content licensing deals to coverage decisions.
       adjustment: -0.12
     - id: C3
       strength: MODERATE
-      description: "Ad business expansion may be deemed lower audience interest than a consumer-harm settlement. TechCrunch optimizes for reader engagement, and accountability stories reliably outperform business-model coverage."
+      description: Ad business expansion may be deemed lower audience interest than a consumer-harm settlement. TechCrunch
+        optimizes for reader engagement, and accountability stories reliably outperform business-model coverage.
       adjustment: -0.08
     - id: C4
       strength: MODERATE
-      description: "TechCrunch covered the initial ChatGPT ads story when it was novel (Jan-Feb). Geographic expansion of an existing feature may be considered incremental rather than a new story."
+      description: TechCrunch covered the initial ChatGPT ads story when it was novel (Jan-Feb). Geographic expansion of an
+        existing feature may be considered incremental rather than a new story.
       adjustment: -0.06
     - id: C5
       strength: WEAK
-      description: "TechCrunch may have covered the Europe expansion after Aug 27, making the 'silence' observation time-limited."
+      description: TechCrunch may have covered the Europe expansion after Aug 27, making the 'silence' observation time-limited.
       adjustment: -0.03
     raw_score: 0.65
     adjusted_score: 0.21
     cross_references:
     - mechanism_id: 284
-      relationship: "extends — #284 documents TechCrunch data practice vocabulary bifurcation; this mechanism documents coverage selection (what to cover) rather than vocabulary (how to cover)"
+      relationship: 'extends — #284 documents TechCrunch data practice vocabulary bifurcation; this mechanism documents coverage
+        selection (what to cover) rather than vocabulary (how to cover)'
     - mechanism_id: 48
-      relationship: "parallel — WIRED OpenAI ad coverage selection gap uses same pattern: initial coverage followed by silence on expansion"
+      relationship: 'parallel — WIRED OpenAI ad coverage selection gap uses same pattern: initial coverage followed by silence
+        on expansion'
     - mechanism_id: 299
-      relationship: "parallel — Gizmodo OpenAI ad infrastructure maturation coverage selection silence"
+      relationship: parallel — Gizmodo OpenAI ad infrastructure maturation coverage selection silence
