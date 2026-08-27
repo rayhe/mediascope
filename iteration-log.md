@@ -1,3 +1,96 @@
+## Iteration #328 — Thu 2026-08-27 10:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Settlement-Week Public Broadcasting + Political Podcast Entity Framing Bifurcation
+
+**Type:** Podcast Sentiment Tracking
+**New Mechanism:** #340 — Public Broadcasting + Political Podcast Settlement-Week Entity Framing Bifurcation
+**New Podcast Surfaces:** NPR Consider This, NPR All Things Considered, Bloomberg Balance of Power
+
+**CORE FINDING — SAME-EPISODE ENTITY FRAMING BIFURCATION ON BLOOMBERG BALANCE OF POWER:**
+
+Bloomberg's "Balance of Power: Late Edition" (Aug 26, 2026) covers Meta's $18B child
+safety settlement and AI/Nvidia growth economics IN THE SAME EPISODE with diametrically
+opposed framing:
+
+| Timestamp | Topic | Guest | Framing Register |
+|-----------|-------|-------|------------------|
+| 00:01:10 | Nvidia Earnings | Ed Ludlow | Aspirational growth |
+| 00:08:48 | AI Economic Impact | Mark Zandi (Moody's) | Aspirational ("juggernaut") |
+| 00:24:43 | Meta Settlement | Gov. Spencer Cox (R-UT) | Punitive ("should have been much higher") |
+| 00:30:29 | Data Centers | Gov. Spencer Cox (R-UT) | Economic opportunity |
+
+Gov. Cox appears in TWO adjacent segments with opposite framing: Meta should pay MORE
+(punitive), but data centers (which Meta builds) are economic opportunity. Same company,
+different editorial identity, different vocabulary register.
+
+**NPR PUBLIC BROADCASTING NATURAL EXPERIMENT:**
+
+NPR (Consider This + All Things Considered) covers the settlement with AG Weiser using
+full accountability vocabulary: "knowingly designed," "addictive to children," "hiding the
+harms they cause." NPR has:
+- NO advertising dependency on tech companies
+- NO AI content licensing deals
+- NO IPO underwriter relationships
+- Public interest mandate
+
+NPR replicates the compartmentalization pattern (no connection to AI lab risk) WITHOUT
+any financial incentive. This joins The Information (iteration #328) as the second
+non-financially-incentivized surface confirming cultural consensus as the primary driver.
+
+**UPDATED CROSS-MEDIUM SETTLEMENT-WEEK SUMMARY:**
+
+| Surface | Financial Model | AI Lab Connection |
+|---------|----------------|-------------------|
+| FOX Business | None with AI labs | YES |
+| NPR Consider This | Public funding | NO |
+| NPR ATC | Public funding | NO |
+| Bloomberg BoP | Terminal/IPO | NO |
+| Bloomberg Tech | Terminal/IPO | NO |
+| Vergecast | Advertising | NO |
+| TITV | Subscription only | NO |
+| WSJ TNB | Advertising/sub | NO |
+| CNBC | Comcast/NBCU ads | NO |
+| CNN Video | Meta + Google/AWS | NO |
+
+Score: 1/10 surfaces (10%) connected settlement to AI lab risk.
+Financial entanglement predicts omission: 8/8 (100%).
+Absence of entanglement does NOT predict inclusion: 1/3 (33%).
+Cultural consensus / genre structure is the primary driver.
+
+**Mechanism #340 Asymmetry Score: 0.31**
+
+Confounders (STRONG): Genre/beat separation is structural in political broadcasting.
+Settlement's magnitude ($18B) justifies proportionate accountability vocabulary.
+Counter-confounders: Bloomberg's within-episode bifurcation IS notable. CDT analysis
+explicitly connects Delaware ruling to AI chatbot liability but no podcast surface
+raises it. Gov. Cox's identity split demonstrates the entity framing bifurcation.
+
+**Vergecast Settlement Episode Analysis:**
+Full 17-minute dedicated episode (Aug 26) — most extensive single-topic podcast coverage.
+Lauren Feiner + Adi Robertson. Entity-exclusive Meta coverage. Does NOT connect to
+glasses privacy debate (despite 3-episode cascade mechanism #213/#225) or AI lab risk.
+
+**Test file:** `tests/test_type_e_10am_settlement_week_public_broadcasting_political_podcast_entity_framing_bifurcation_aug27.py` (27 tests, 5 classes)
+
+**All 27/27 new tests passing.**
+
+**Files changed:**
+- tests/test_type_e_10am_...aug27.py (NEW — 27 tests, 5 classes)
+- podcast-sentiment.md (NPR Consider This, NPR ATC, Bloomberg BoP, Vergecast settlement episode entries + cross-genre summary table)
+- iteration-log.md (this entry)
+
+**Sources:**
+- NPR Consider This (Aug 26): https://podscan.fm/podcasts/consider-this-from-npr
+- NPR ATC / WETS affiliate (Aug 26): https://www.wets.org/all-things-considered/2026-08-26/colorado-ag-calls-notification-limits-most-important-part-of-meta-settlement
+- NPR ATC / KVNF affiliate (Aug 26): https://www.kvnf.org/2026-08-26/colorado-ag-calls-notification-limits-most-important-part-of-meta-settlement
+- Bloomberg Balance of Power (Aug 26): https://www.youtube.com/watch?v=FGI6AS7L8Lc
+- Vergecast listing (Aug 26): https://ie.radio.net/podcast/thevergecast
+- Vergecast YouTube Short (Aug 26): https://www.youtube.com/shorts/a2noaIoh6mo
+- Reuters settlement details: https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+- Reuters "money machine unscathed" analysis (Aug 27): https://www.reuters.com/world/asia-pacific/metas-social-media-settlement-leaves-its-money-machine-unscathed-2026-08-27/
+
+---
+
 ## Iteration #327 — Thu 2026-08-27 08:00 PT (Type D: Test & Verify)
 
 ### Focus: ChatGPT Ads Europe Coverage Selection Silence Post-Launch Validation + Settlement-Week Score Statistical Analysis

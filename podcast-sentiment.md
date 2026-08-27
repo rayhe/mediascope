@@ -4859,3 +4859,145 @@ CNBC is owned by Comcast/NBCUniversal. It has tech advertising relationships (Me
 
 **Updated statistics:** 1/11 surfaces (9.1%) included AI lab connection. Financial tie predicts omission (9/9 = 100%). Absence of financial tie does NOT predict inclusion (1/2 = 50%). CULTURAL CONSENSUS CONFOUNDER VALIDATED.
 
+
+
+---
+
+### NPR "Consider This" — "Can a landmark settlement protect children from social media?" (Aug 26, 2026)
+
+- **Host:** Adrian Florido
+- **Guest:** Phil Weiser (Colorado Attorney General)
+- **Producers:** Kai McNamee, Marc Rivers, Karen Zamora
+- **Source URL:** https://podscan.fm/podcasts/consider-this-from-npr
+- **Affiliate stations:** WETS, KVNF, North Country Public Radio
+- **Network:** NPR
+
+**Coverage Summary:**
+Full episode dedicated to Meta's $18B child safety settlement. AG Weiser argues Meta "knowingly designed its platforms to be addictive to children while hiding the harms they cause." Episode focuses on notification restrictions during school hours and overnight as the most critical changes. Discusses enforcement challenges (age verification, kids posing as adults).
+
+**Entity Coverage Assessment:**
+- **Meta:** Sole target. Accountability vocabulary throughout: "knowingly designed," "addictive to children," "hiding the harms," "social media has been a big problem."
+- **AI labs (Anthropic/OpenAI):** ZERO mention. Despite CDT analysis (mechanism #338) connecting the Delaware insurance ruling to AI chatbot liability, NPR does not raise the settlement's regulatory precedent for AI-powered companion products.
+- **TikTok/YouTube/Snap:** Not mentioned in settlement context despite facing similar lawsuits.
+
+**Sentiment Score:** -7/10 (strongly negative accountability framing toward Meta)
+**Asymmetry Assessment:** LOW for financial incentive hypothesis — NPR has NO advertising dependency on tech companies, NO AI content licensing deals, NO IPO underwriter relationships. The compartmentalization (Meta settlement without AI lab connection) replicates at NPR identically to financially incentivized publications, STRENGTHENING the cultural consensus confounder for mechanism #328.
+
+**Financial Context:**
+NPR operates on public funding and listener subscriptions. Advertising dependency is minimal. No known AI content licensing deals. This makes NPR a critical natural experiment: the compartmentalization pattern appears WITHOUT financial incentives.
+
+**MediaScope Cross-Reference:**
+- Mechanism #339 (cultural consensus replication without financial incentive) — NPR joins The Information as a second non-financially-incentivized surface that replicates the compartmentalization pattern
+- Mechanism #340 (public broadcasting + political podcast entity framing bifurcation)
+
+---
+
+### NPR "All Things Considered" — "Colorado AG calls notification limits most important part of Meta settlement" (Aug 26, 2026)
+
+- **Host:** Adrian Florido
+- **Guest:** Phil Weiser (Colorado Attorney General)
+- **Source URL:** https://www.wets.org/all-things-considered/2026-08-26/colorado-ag-calls-notification-limits-most-important-part-of-meta-settlement
+- **Network:** NPR
+
+**Coverage Summary:**
+Segment from All Things Considered featuring AG Weiser discussing notification limits, overnight restrictions, and school-day protections. Same accountability framing as Consider This episode.
+
+**Key Quotes:**
+- AG Weiser: "The pain that I have felt hearing about kids and families where they weren't sleeping at night because they got notifications and alerts all through the night."
+- AG Weiser: "Social media has been a big problem on both of those fronts, and that's going to change."
+
+**Sentiment Score:** -7/10
+**AI Lab Connection:** ZERO
+
+---
+
+### Bloomberg "Balance of Power: Late Edition" — Meta Settles Landmark Teen Social Media Case (Aug 26, 2026)
+
+- **Format:** Political broadcast / podcast (YouTube)
+- **Source URL:** https://www.youtube.com/watch?v=FGI6AS7L8Lc
+- **Network:** Bloomberg
+
+**Segment Analysis — SAME-EPISODE ENTITY FRAMING BIFURCATION:**
+
+| Timestamp | Topic | Guest | Entity | Framing Register |
+|-----------|-------|-------|--------|-----------------|
+| 00:01:10 | Nvidia Earnings / AI Spending | Ed Ludlow, Romaine Bostick | Nvidia/AI | Aspirational growth |
+| 00:08:48 | AI's Economic Impact | Mark Zandi (Moody's Analytics) | AI ecosystem | Aspirational growth |
+| 00:24:43 | Meta Settlement + Child Safety | Gov. Spencer Cox (R-UT) | Meta | Punitive accountability |
+| 00:30:29 | Data Centers | Gov. Spencer Cox (R-UT) | AI infrastructure | Economic opportunity |
+
+**Key Finding — Governor Identity Split:**
+The SAME guest (Gov. Cox) appears in TWO adjacent segments with OPPOSITE framing:
+1. Meta segment: "settlement amount should have been much higher" — punitive accountability
+2. Data center segment: economic opportunity framing — Meta IS one of the largest data center builders in Utah
+
+**Key Quotes:**
+- Gov. Cox on Meta: "amount should have been much higher" — demands more consequential equitable relief
+- Mark Zandi on AI: "AI accounts for at least a quarter of economic growth" — "juggernaut"
+
+**Sentiment Score:** -6/10 for Meta segment, +4/10 for AI/Nvidia segments
+**Asymmetry Assessment:** HIGH for within-episode bifurcation — same broadcast, opposite registers
+**AI Lab Connection:** ZERO (Meta settlement NOT connected to AI lab regulatory risk)
+
+**Financial Context:**
+Bloomberg's terminal subscription business creates structural adjacency with IPO underwriters. The aspirational framing of AI/Anthropic IPO serves Bloomberg's terminal subscriber base (institutional investors). The punitive framing of Meta serves the political audience of Balance of Power.
+
+**MediaScope Cross-Reference:**
+- Mechanism #340 (public broadcasting + political podcast entity framing bifurcation)
+- Mechanism #328 (settlement/IPO editorial compartmentalization)
+- Gov. Cox's identity split mirrors the institutional framing: same company (Meta) can be the villain (social media) and the hero (AI infrastructure) depending on which editorial segment you're in
+
+---
+
+### Vergecast — "Meta will cut teens off of Instagram after two hours" (Aug 26, 2026)
+
+- **Hosts:** Lauren Feiner (Senior Policy Reporter), Adi Robertson (Senior Tech & Policy Editor)
+- **Duration:** 17 minutes
+- **Source URL:** https://ie.radio.net/podcast/thevergecast
+- **Network:** Vox Media Podcast Network
+
+**Coverage Summary:**
+Full 17-minute dedicated episode on the Meta $18B settlement — the most extensive single-topic podcast coverage of any outlet. Breaks down the settlement details: $17.1B payout, two-hour usage limits, age verification, overnight blocks, school-day notification restrictions. Discusses how we got here, why Meta settled, and implications for the teen mental health conversation.
+
+**Entity Coverage Assessment:**
+- **Meta:** 100% of episode content. Entity-exclusive coverage.
+- **AI labs:** ZERO mention despite the settlement's regulatory precedent for AI companion products.
+- **Competitors (TikTok, YouTube, Snap):** Likely mentioned in context of whether they'll adopt similar measures (conditional $5B payment), but NOT as comparable defendants.
+- **Glasses/wearables:** NOT connected to the settlement despite the Vergecast's extensive prior coverage of Meta glasses privacy (three-episode cascade, mechanism #213/#225).
+
+**Sentiment Score:** -5/10 (moderately negative — focuses on restrictions/accountability but professional analysis)
+**Asymmetry Assessment:** MODERATE — Dedicated full-episode coverage of Meta's largest liability event is proportionate to its newsworthiness. The entity exclusivity mirrors the legal reality (this IS a Meta-specific case). But the editorial choice to not connect to broader AI regulatory risk is consistent with the compartmentalization pattern documented across all podcast surfaces.
+
+**Financial Context:**
+Vox Media Podcast Network carries advertising. Meta IS a detected advertiser on Vergecast episodes (mechanism #213 documented financial incentive inversion — Meta advertiser gets worst framing). Google/Vox media advertising relationship present.
+
+**MediaScope Cross-Reference:**
+- Mechanism #213 (Vergecast two-episode camera vocabulary cascade)
+- Mechanism #225 (Vergecast three-episode camera vocabulary convergence)
+- Mechanism #340 (settlement-week entity framing bifurcation)
+- The Vergecast's settlement episode is compartmentalized from its glasses coverage: child safety and privacy are treated as separate editorial domains despite both involving Meta's data practices
+
+---
+
+### Settlement-Week Podcast Vocabulary Spectrum — Cross-Genre Summary (Aug 26-27, 2026)
+
+**Total surfaces tested for AI lab connection to Meta settlement (iterations #318 + #328 + #329):**
+
+| Surface | Genre | Financial Model | Meta Framing | AI Lab Connection |
+|---------|-------|----------------|--------------|-------------------|
+| NPR Consider This | Public radio | Public funding | Accountability | NO |
+| NPR ATC | Public radio | Public funding | Accountability | NO |
+| Bloomberg Balance of Power | Political broadcast | Terminal/IPO | Punitive (too low) | NO |
+| Bloomberg Tech | Tech broadcast | Terminal/IPO | Legal | NO |
+| Vergecast | Tech podcast | Advertising | Restrictions | NO |
+| TITV (The Information) | Subscription tech | Subscription only | Analysis | NO |
+| WSJ Tech News Briefing | News briefing | Advertising/subscription | Brief | NO |
+| CNBC (Vanian) | Print/broadcast | Comcast/NBCU ads | Legal | NO |
+| CNN Video | Broadcast | Meta + Google/AWS | Legal | NO |
+| FOX Business | TV/Print | None with AI labs | **YES** | **YES** |
+
+**Score: 1/10 surfaces (10%) connected Meta's settlement to AI lab regulatory risk.**
+
+The ONLY surface that made the connection (FOX Business, AG Skrmetti citing "artificial intelligence" platforms) has NO known AI lab financial entanglement. Every surface WITH financial entanglement omitted the connection. But so did the two surfaces WITHOUT financial entanglement (NPR, The Information). This pattern STRONGLY favors cultural consensus / genre structure as the primary driver of compartmentalization, with financial incentives as a possible amplifier but not the primary cause.
+
+**Mechanism #340 Asymmetry Score: 0.31**
