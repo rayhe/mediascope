@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 22706 tests across 632 test files (all from real articles)
+├── tests/                       # 23041 tests across 644 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1127,3 +1127,14 @@ mediascope/
 │   ├── test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py # wsj anthropic ode ai surveillance infrastructure aspirational meta camera scrutiny aug26
 │   ├── test_wsj_anthropic_pre_ipo_aspirational_narrative_meta_investment_scrutiny_bifurcation_aug26.py # wsj anthropic pre ipo aspirational narrative meta investment scrutiny bifurcation aug26
 │   ├── test_wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation_aug24.py # wsj julie jargon chatgpt teens within article cross entity teen safety vocabulary bifurcation aug24
+│   ├── test_clare_duffy_cnn_cross_entity_agency_attribution_asymmetry_aug26.py # clare duffy cnn cross entity agency attribution asymmetry aug26
+│   ├── test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py # lucas ropek techcrunch same day settlement infrastructure vocabulary bifurcation aug26
+│   ├── test_meta_ai_content_licensing_network_asymmetric_disclosure_parallel_deal_architecture_aug26.py # meta ai content licensing network asymmetric disclosure parallel deal architecture aug26
+│   ├── test_meta_settlement_ipo_underwriter_regulatory_liability_containment_financial_architecture_aug26.py # meta settlement ipo underwriter regulatory liability containment financial architecture aug26
+│   ├── test_publisher_geo_content_architecture_financial_dependency_acceleration_aug26.py # publisher geo content architecture financial dependency acceleration aug26
+│   ├── test_reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation_aug26.py # reuters anthropic meta infrastructure spending vocabulary bifurcation aug26
+│   ├── test_shirin_ghaffary_cross_employer_beat_migration_vocabulary_register_shift_aug26.py # shirin ghaffary cross employer beat migration vocabulary register shift aug26
+│   ├── test_type_d_5pm_cross_validation_aug26.py # type d 5pm cross validation aug26
+│   ├── test_type_e_6pm_podcast_settlement_ipo_cross_medium_editorial_compartmentalization_aug26.py # type e 6pm podcast settlement ipo cross medium editorial compartmentalization aug26
+│   ├── test_wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation_aug26.py # wsj same day meta settlement anthropic ipo self referencing register bifurcation aug26
+│   ├── test_type_d_midnight_cross_validation_aug27.py # type d midnight cross validation aug27

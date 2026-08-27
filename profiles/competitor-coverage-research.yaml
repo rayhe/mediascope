@@ -31820,20 +31820,20 @@ publications:
           extraneous_risks_mentioned: 5
     vocabulary_comparison:
       spending_verb:
-        anthropic: "secure capacity," "moved aggressively"
-        meta: "spending spree," "feverish spending," "pour billions"
+        anthropic: "secure capacity, moved aggressively"
+        meta: "spending spree, feverish spending, pour billions"
       spending_outcome:
         anthropic: "meet anticipated surge in demand"
         meta: "despite an uncertain payoff"
       loss_framing:
         anthropic: "not mentioned ($42B 2025 net loss)"
-        meta: "craters," "wipeout," "precipitous"
+        meta: "craters, wipeout, precipitous"
       growth_framing:
-        anthropic: "rapid growth," "extraordinary jump," "frontrunner"
-        meta: "failed to impress," "eclipsed"
+        anthropic: "rapid growth, extraordinary jump, frontrunner"
+        meta: "failed to impress, eclipsed"
       spending_justification:
         anthropic: "necessary to support rapid expansion"
-        meta: "costly AI buildout," "financial strain"
+        meta: "costly AI buildout, financial strain"
       headline_attribution:
         anthropic: "Anthropic (entity, no CEO named)"
         meta: "Zuckerberg's AI spending spree (CEO blamed personally)"
@@ -32038,7 +32038,8 @@ publications:
       relationship: complements
     - mechanism_id: 330
       relationship: context
-  - mechanism_id: 332
+  publisher_geo_content_architecture_financial_dependency_acceleration:
+    mechanism_id: 332
     name: "Publisher GEO Content Architecture Transformation — Financial Dependency Acceleration"
     date_discovered: "2026-08-26"
     category: financial_incentive_mapping

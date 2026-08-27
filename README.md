@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **22739 tests** across 633 test files, each covering a different analytical capability:
+MediaScope has **23041 tests** across 644 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1159,3 +1159,14 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_wsj_anthropic_ode_ai_surveillance_infrastructure_aspirational_meta_camera_scrutiny_aug26.py` | 39 | wsj anthropic ode ai surveillance infrastructure aspirational meta camera scrutiny Aug 26 — Type A/B |
 | `test_wsj_anthropic_pre_ipo_aspirational_narrative_meta_investment_scrutiny_bifurcation_aug26.py` | 37 | wsj anthropic pre ipo aspirational narrative meta investment scrutiny bifurcation Aug 26 — Type A/B |
 | `test_wsj_julie_jargon_chatgpt_teens_within_article_cross_entity_teen_safety_vocabulary_bifurcation_aug24.py` | 37 | wsj julie jargon chatgpt teens within article cross entity teen safety vocabulary bifurcation Aug 24 — Type B |
+| `test_clare_duffy_cnn_cross_entity_agency_attribution_asymmetry_aug26.py` | 20 | Clare Duffy (CNN) cross-entity agency attribution asymmetry — triple register system: Meta=perpetrator, AI labs negative=analytical/technical, AI labs positive=aspirational. WBD financial hierarchy override. Aug 26 — Type B |
+| `test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py` | 28 | Lucas Ropek (TechCrunch) same-day settlement infrastructure vocabulary bifurcation — Yahoo/Apollo financial architecture. Aug 26 — Type B |
+| `test_meta_ai_content_licensing_network_asymmetric_disclosure_parallel_deal_architecture_aug26.py` | 33 | Meta AI content licensing network — asymmetric disclosure parallel deal architecture, 83% undisclosed terms. Aug 26 — Type C |
+| `test_meta_settlement_ipo_underwriter_regulatory_liability_containment_financial_architecture_aug26.py` | 46 | Meta $17-18B settlement — IPO underwriter regulatory liability containment, AI lab comparison omission across 5 outlets. Aug 26 — Type C |
+| `test_publisher_geo_content_architecture_financial_dependency_acceleration_aug26.py` | 23 | Publisher GEO content architecture transformation — sunk-cost financial dependency acceleration, USA Today Co markdown conversion. Aug 26 — Type C |
+| `test_reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation_aug26.py` | 23 | Reuters infrastructure spending vocabulary bifurcation — Anthropic growth register vs Meta alarm register on identical activity. Aug 26 — Type A |
+| `test_shirin_ghaffary_cross_employer_beat_migration_vocabulary_register_shift_aug26.py` | 20 | Shirin Ghaffary cross-employer beat migration — Recode/Vox→Bloomberg vocabulary register shift natural experiment. Aug 26 — Type B |
+| `test_type_d_5pm_cross_validation_aug26.py` | 18 | AG source-level AI lab regulatory precedent cross-validation — AG Skrmetti FOX Business natural experiment. Aug 26 — Type D |
+| `test_type_e_6pm_podcast_settlement_ipo_cross_medium_editorial_compartmentalization_aug26.py` | 22 | Settlement-day podcast cross-medium editorial compartmentalization — 3/3 podcasts omit AI lab connection, 87.5% financial correlation. Aug 26 — Type E |
+| `test_wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation_aug26.py` | 37 | WSJ same-day register bifurcation — Meta $18B settlement vs Anthropic $30T TAM, self-referencing Facebook Files accountability loop. Aug 26 — Type A |
+| `test_type_d_midnight_cross_validation_aug27.py` | 32 | Cross-validation of mechanisms #326-#332 from Aug 26 sprint — existence, confounders, asymmetry scores, source URLs, cross-references, inter-mechanism consistency, settlement cross-validation. Aug 27 — Type D |
