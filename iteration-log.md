@@ -12654,3 +12654,77 @@ the first comprehensive mapping of Meta's parallel deal network).
 - iteration-log.md (this entry)
 
 **Tests:** 33/33 new passing.
+
+---
+
+### Iteration #324 — Type A: Competitor Coverage Deep Dive
+**Time:** Thu Aug 27, 2026 02:00 PDT
+**Focus:** Bloomberg LP as Upstream Narrative Originator — Anthropic × Meta framing asymmetry
+
+**Mechanism #334:** Bloomberg LP functions as the root node in the narrative propagation
+tree for Anthropic financial coverage. Bloomberg breaks virtually every major Anthropic
+financial scoop (Nscale $45B, credit facility >$10B, Broadcom $100B AI debt, $900B
+valuation, IPO timeline, Akamai $1.8B) and downstream outlets (Reuters, TechCrunch,
+PYMNTS) cite "Bloomberg reported" and inherit Bloomberg's aspirational vocabulary.
+
+**Key vocabulary asymmetry (same-week, same source):**
+
+Bloomberg → Anthropic (aspirational register):
+- "banks jockeying for a piece" (credit facility)
+- "most coveted private companies" (valuation)
+- "leapfrogging its longtime rival" ($900B)
+- "surging demand" (Akamai deal)
+- "lucrative stints as private companies" (IPO explainer)
+- "deepens its partnership" + "fast-growing" (Google TPU deal)
+- Downstream propagation: "secure capacity," "aggressively expanding," "anticipated surge"
+
+Bloomberg → Meta (punitive register):
+- "deliberately designed to encourage compulsive use" (settlement)
+- "posed enormous risk for Meta" (settlement)
+- "saddled it with penalties of as much as $1.4 trillion" (settlement)
+- "likened Meta to a polluting factory" (NM verdict)
+- "dangerously unhealthy" (industry framing)
+- "knowingly designed features" (settlement)
+
+**Critical test: Anthropic's own legal exposure.**
+Anthropic's $1.5B piracy settlement (largest copyright class action in US history):
+Bloomberg headline: "Won't Jeopardize the Affordable AI Future" — proactive defensive framing.
+Zero "deliberately"/"knowingly" vocabulary despite Anthropic admittedly downloading 480K+ pirated
+books from shadow libraries. Compare Meta: "deliberately designed," "knowingly designed."
+
+**Financial architecture:** Bloomberg Terminal revenue is directly tied to capital markets
+activity. AI IPOs (Anthropic targeting $75-100B raise) drive Terminal subscriptions, data
+product sales, and trading activity. Bloomberg's scoop pipeline creates editorial dependency
+on Anthropic sources, incentivizing aspirational framing to preserve access.
+
+**Confounders (5):** C1 (STRONG): Bloomberg product segmentation serves different audiences, -0.15.
+C2 (STRONG): Anthropic infrastructure deals ARE legitimate financial news, -0.12.
+C3 (MODERATE): Meta settlement warrants alarm vocabulary as largest tech settlement, -0.08.
+C4 (MODERATE): Terminal revenue correlation ≠ editorial causation, -0.08.
+
+**Asymmetry score:** Raw 0.68 → Adjusted 0.25 (conservative — strong confounders from
+legitimate product segmentation and financial journalism conventions, but the legal-exposure
+vocabulary inversion remains unexplained by confounders).
+
+**Cross-references:** #329 (Reuters vocabulary propagation — Bloomberg is upstream source),
+#330 (TechCrunch Nscale — Bloomberg breaks story TechCrunch amplifies), #328 (IPO underwriter
+regulatory liability containment).
+
+**Sources:**
+- https://news.bloombergtax.com/artificial-intelligence/meta-states-agree-to-settle-teen-social-media-harm-case
+- https://news.bloombergtax.com/social-justice/an-anthropic-deal-wont-jeopardize-the-affordable-ai-future
+- https://news.bloombergtax.com/ip-law/anthropic-tells-judge-it-could-lose-billions-if-us-shuns-ai-tool
+- https://news.bloombergtax.com/ip-law/google-anthropic-announce-cloud-deal-worth-tens-of-billions
+- https://news.bloombergtax.com/artificial-intelligence/anthropic-inks-1-8-billion-computing-deal-with-akamai-1
+- https://news.bloombergtax.com/insurance/anthropic-considering-funding-offers-at-over-900-billion-value
+- https://news.bloombergtax.com/ip-law/can-openai-and-anthropic-deliver-on-ipo-hype-explainer
+- https://news.bloombergtax.com/social-justice/anthropic-authors-1-5-billion-deal-receives-final-approval
+- https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+- https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/
+
+**Files changed:**
+- tests/test_bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo_framing_aug26.py (NEW, 23 tests)
+- profiles/competitor-coverage-research.yaml (mechanism #334 added)
+- iteration-log.md (this entry)
+
+**Tests:** 23/23 new passing.

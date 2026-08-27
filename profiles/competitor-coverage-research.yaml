@@ -32147,3 +32147,84 @@ publications:
       relationship: complements
     - mechanism_id: 330
       relationship: complements
+  - mechanism_id: 334
+    type: A
+    title: "Bloomberg LP — Upstream Narrative Originator: Meta Settlement Legal Framing vs Anthropic IPO Aspirational Framing"
+    publication: bloomberg
+    date: "2026-08-26"
+    competitor: anthropic
+    test_file: tests/test_bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo_framing_aug26.py
+    description: >
+      Bloomberg LP functions as the upstream narrative originator for virtually
+      every major Anthropic financial scoop (Nscale $45B, credit facility >$10B,
+      Broadcom $100B AI debt, $900B valuation, IPO timeline). Downstream
+      publications (Reuters, TechCrunch, PYMNTS) cite "Bloomberg reported" and
+      inherit Bloomberg's aspirational vocabulary. On Aug 26, 2026, Bloomberg
+      sourced the Anthropic Nscale deal with growth-register framing while
+      Bloomberg Tax covered Meta's $18B settlement with punitive-register
+      vocabulary. Bloomberg's treatment of Anthropic's own legal exposure
+      ($1.5B piracy settlement, Pentagon blacklisting) uses defensive/hero
+      framing rather than the alarm vocabulary applied to Meta's legal exposure.
+    entities:
+    - meta
+    - anthropic
+    - bloomberg_lp
+    publications:
+    - bloomberg
+    - bloomberg_tax
+    - bloomberg_law
+    evidence:
+    - source: Bloomberg Tax
+      date: "2026-08-26"
+      url: "https://news.bloombergtax.com/artificial-intelligence/meta-states-agree-to-settle-teen-social-media-harm-case"
+      observation: "Meta settlement: 'deliberately designed,' 'enormous risk,' 'saddled with penalties of $1.4T,' 'polluting factory,' 'dangerously unhealthy,' 'knowingly designed.'"
+    - source: Reuters (citing Bloomberg)
+      date: "2026-08-26"
+      url: "https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/"
+      observation: "Anthropic Nscale $45B: 'Bloomberg News first reported.' Downstream vocabulary: 'secure capacity,' 'aggressively expanding,' 'anticipated surge in demand' — all propagated from Bloomberg's growth-register framing."
+    - source: Bloomberg Tax
+      date: "2025-10-20"
+      url: "https://news.bloombergtax.com/social-justice/an-anthropic-deal-wont-jeopardize-the-affordable-ai-future"
+      observation: "Anthropic $1.5B piracy settlement headline: 'Won't Jeopardize the Affordable AI Future' — proactive defensive framing. Zero 'deliberately'/'knowingly' vocabulary despite Anthropic admittedly downloading 480K+ pirated books."
+    - source: Bloomberg Tax
+      date: "2026-03-24"
+      url: "https://news.bloombergtax.com/ip-law/anthropic-tells-judge-it-could-lose-billions-if-us-shuns-ai-tool"
+      observation: "Anthropic Pentagon blacklisting covered as hero narrative: Anthropic 'challenging' government, Microsoft filing support. 'No choice but to challenge.' No 'enormous risk' framing."
+    - source: Bloomberg Tax
+      date: "2026-04-01"
+      url: "https://news.bloombergtax.com/ip-law/google-anthropic-announce-cloud-deal-worth-tens-of-billions"
+      observation: "Google TPU deal: 'deepens its partnership,' 'fast-growing,' 'escalating race to power large AI models' — competitive momentum framing."
+    - source: Bloomberg Tax
+      date: "2026-05-01"
+      url: "https://news.bloombergtax.com/insurance/anthropic-considering-funding-offers-at-over-900-billion-value"
+      observation: "$900B valuation: 'most coveted private companies,' 'strong investor demand,' 'leapfrogging rival OpenAI.'"
+    - source: Reuters (citing Bloomberg)
+      date: "2026-08-18"
+      url: "https://www.reuters.com/legal/transactional/anthropics-pre-ipo-credit-facility-set-exceed-10-billion-bloomberg-news-reports-2026-08-18/"
+      observation: "Credit facility: 'banks jockeying for a piece' — FOMO framing for investor access to a pre-profit company."
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: "Bloomberg's segmented products (Bloomberg.com, Bloomberg Tax, Bloomberg Law) serve different audiences with different information needs. Legal/regulatory content inherently uses more cautious vocabulary."
+      adjustment: -0.15
+    - id: C2
+      strength: STRONG
+      description: "Anthropic's infrastructure deals ARE breaking financial news and inherently use growth-register vocabulary. Bloomberg's scoop advantage reflects strong financial journalism sources."
+      adjustment: -0.12
+    - id: C3
+      strength: MODERATE
+      description: "Meta's $18B settlement is the largest tech settlement in history and warrants alarm vocabulary. The 'polluting factory' comparison originated from a judge."
+      adjustment: -0.08
+    - id: C4
+      strength: MODERATE
+      description: "Terminal revenue correlation with IPO bull narratives does not prove editorial causation."
+      adjustment: -0.08
+    raw_score: 0.68
+    adjusted_score: 0.25
+    cross_references:
+    - mechanism_id: 329
+      relationship: "upstream_source — Bloomberg originates framing that Reuters amplifies"
+    - mechanism_id: 330
+      relationship: "upstream_source — Bloomberg breaks Nscale deal that TechCrunch amplifies"
+    - mechanism_id: 328
+      relationship: "extends — IPO underwriter regulatory liability containment"
