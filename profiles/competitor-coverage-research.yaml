@@ -33009,3 +33009,77 @@ publications:
     - https://gizmodo.com/google-settles-lawsuit-with-teen-as-social-media-addiction-lawsuits-gain-steam-2000777137
     - https://www.techrepublic.com/article/news-google-youtube-addiction-lawsuit-settlement/
     - https://www.reuters.com/business/us-teen-drops-lawsuit-against-meta-google-snap-ahead-trial-2026-08-21/
+  ap_wire_service_cross_entity_accountability_vocabulary_bifurcation:
+    mechanism_id: 343
+    type: journalist_cross_entity_tracking
+    journalist: Barbara Ortutay
+    outlet: Associated Press (AP)
+    outlet_type: wire_service
+    date_range: Aug 18 - Aug 27, 2026
+    finding_summary: >
+      AP Technology Writer Barbara Ortutay applies full accountability vocabulary to Meta
+      (deliberately designed, knowingly, addict children, hook/hold/harvest/hide) during
+      settlement-week trial coverage while using neutral business vocabulary for OpenAI
+      (high-stakes showdown) and aspirational vocabulary for Anthropic (barreling toward
+      huge Wall Street debuts, eye-popping valuations). Crucially, even in an AI toy safety
+      article (a child safety context), she names ChatGPT as the underlying harmful technology
+      but directs accountability to downstream toy companies, not OpenAI, using passive
+      construction (shown to harm) vs active (deliberately designed to addict) for Meta.
+    vocabulary_registers:
+      meta:
+        register: accusation
+        terms: [deliberately designed, knowingly, addict children, hook, hold, harvest, hide, harmed]
+        grammatical_voice: active
+      openai:
+        register: neutral_business
+        terms: [high-stakes showdown, no one has more to lose, shown to harm]
+        grammatical_voice: passive_for_harm
+      anthropic:
+        register: aspirational
+        terms: [barreling toward, eye-popping, race to shape, huge Wall Street debuts]
+        grammatical_voice: active_positive
+    wire_service_significance: >
+      AP wire stories are syndicated to thousands of outlets globally (observed: businessmirror.com.ph,
+      nationalcybersecurity.com, accessnorthga.com, jcpost.com, law.com, hutchpost.com),
+      making vocabulary choices especially consequential. AP self-presents as neutral per
+      AP Stylebook. Entity-selective accountability vocabulary within wire coverage amplifies
+      framing asymmetry across the entire media ecosystem.
+    confounders:
+    - strength: STRONG
+      description: >
+        Context difference: Meta coverage is a child safety TRIAL where adversarial language
+        reflects allegations in court. OpenAI coverage is a contractual/organizational dispute.
+        Anthropic is IPO news. Different story contexts naturally produce different vocabulary.
+      counter: >
+        AI toy safety article (also child safety context) still does NOT apply deliberately
+        designed or knowingly vocabulary to OpenAI. Bifurcation persists when topic is constant,
+        only entity changes.
+    - strength: STRONG
+      description: >
+        Beat assignment: Meta trial is the biggest tech story of Aug 2026. More coverage volume
+        naturally produces more detailed/adversarial language.
+      counter: >
+        Volume asymmetry expected. The vocabulary REGISTER shift (deliberately designed to addict
+        vs shown to harm passive) when entity changes is the finding, not volume.
+    - strength: MODERATE
+      description: >
+        Evidence maturity: Meta child safety scrutiny since 2021 Haugen. OpenAI since late 2025.
+        More accumulated evidence naturally produces stronger language.
+      counter: >
+        By Aug 2026, FTC issued formal investigation orders to OpenAI. Multiple child harm
+        lawsuits pending. Evidentiary record substantial if reporter chooses to include it.
+    asymmetry_score: 0.30
+    sources:
+    - https://businessmirror.com.ph/2026/08/22/former-meta-engineer-says-instagram-took-a-dont-ask-dont-tell-approach-on-kids-under-13/
+    - https://nationalcybersecurity.com/opening-statements-to-begin-in-metas-federal-trial-over-child-safety-childsafety-kids-chldern-parents-schoolsafey/
+    - https://www.law.com/author/profile/barbara-ortutay/
+    - https://accessnorthga.com/ap_article/ai-companies-are-barreling-toward-huge-wall-street-debuts-a-look-at-the-biggest-players
+    - https://jcpost.com/posts/4112023c-5258-404a-a398-c0b13d639ffa
+    cross_references:
+    - mechanism_id: 342
+      relationship: temporal_parallel
+      description: >
+        Mechanism #342 documents WSJ/News Corp entity accountability deflection for YouTube
+        in the same settlement week. This mechanism extends the pattern to wire service coverage,
+        showing entity-selective accountability vocabulary is not publication-specific but
+        pervasive across media types.

@@ -1,3 +1,72 @@
+## Iteration #330 — Thu 2026-08-27 14:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Barbara Ortutay (AP) Settlement-Week Cross-Entity Accountability Vocabulary Bifurcation
+
+**Type:** Journalist Cross-Entity Tracking
+**New Mechanism:** #343 — AP Wire Service Cross-Entity Accountability Vocabulary Bifurcation
+**Asymmetry Score:** 0.30 (moderate, heavy confounder load)
+
+**CORE FINDING — AP WIRE SERVICE ACTIVE/PASSIVE VOICE BIFURCATION ACROSS ENTITIES:**
+
+Barbara Ortutay, AP's Technology Writer and lead reporter on the Meta child safety trial
+(Aug 18-27, 2026), applies three distinct vocabulary registers to three entities:
+
+  **Meta (accusation register, active voice):**
+  - "deliberately designing features that addict children"
+  - "knowingly and deliberately"
+  - "hook the users, hold them, harvest their data, hide the truth"
+  - "addictive platforms that harmed young people's mental health"
+
+  **OpenAI (neutral business register, passive voice for harm):**
+  - "high-stakes showdown" (competitive, not safety framing)
+  - "No One Has More to Lose than Altman" (business stakes, not harm)
+  - AI toy article: "shown to harm" (passive) vs Meta's "deliberately designed to addict" (active)
+  - Accountability directed at downstream toy companies (Curio, Keyi Technologies), NOT OpenAI
+
+  **Anthropic (aspirational register, active positive voice):**
+  - "barreling toward huge Wall Street debuts"
+  - "eye-popping valuations"
+  - "race to shape the technology's future"
+  - Omits $1.5B piracy settlement, data practices, child safety concerns
+
+**KEY INSIGHT — CHILD SAFETY TOPIC HELD CONSTANT:**
+
+The strongest evidence comes from Ortutay's AI toy safety article (Dec 2025), which IS a
+child safety context. She names "OpenAI's ChatGPT" as the underlying technology powering
+harmful toys but directs accountability to toy companies, NOT OpenAI. Uses passive voice
+("shown to harm") rather than the active accusation ("deliberately designed to addict") she
+applies to Meta in the same topic domain.
+
+**WIRE SERVICE SIGNIFICANCE:**
+
+AP wire stories syndicate to thousands of outlets globally (observed in Philippines, US
+regional, US legal professional, US security vertical). Entity-selective vocabulary in AP
+copy amplifies framing asymmetry across the entire media ecosystem. AP self-presents as
+neutral per AP Stylebook, making the bifurcation especially notable.
+
+**CONFOUNDERS (HEAVY):**
+  - STRONG: Context difference — Meta coverage is a trial (adversarial language reflects
+    allegations). OpenAI coverage is contractual dispute. Anthropic is IPO news.
+    COUNTER: AI toy article IS child safety context but still doesn't apply Meta-grade
+    vocabulary to OpenAI.
+  - STRONG: Beat assignment — Meta trial is the biggest tech story of Aug 2026; more
+    volume naturally produces more detailed language.
+    COUNTER: Vocabulary register shift (not volume) is the finding.
+  - MODERATE: Evidence maturity — Meta scrutiny since 2021 Haugen vs OpenAI since late 2025.
+    COUNTER: FTC has already issued formal investigation orders to OpenAI over AI companion
+    child safety by Aug 2026.
+
+**FILES CHANGED:**
+  - profiles/competitor-coverage-research.yaml: Added mechanism #343
+  - tests/test_barbara_ortutay_ap_cross_entity_settlement_week_accountability_vocabulary_bifurcation_aug27.py: 16 tests (all pass)
+
+**SOURCES:**
+  - https://businessmirror.com.ph/2026/08/22/former-meta-engineer-says-instagram-took-a-dont-ask-dont-tell-approach-on-kids-under-13/
+  - https://nationalcybersecurity.com/opening-statements-to-begin-in-metas-federal-trial-over-child-safety-childsafety-kids-chldern-parents-schoolsafey/
+  - https://www.law.com/author/profile/barbara-ortutay/
+  - https://accessnorthga.com/ap_article/ai-companies-are-barreling-toward-huge-wall-street-debuts-a-look-at-the-biggest-players
+  - https://jcpost.com/posts/4112023c-5258-404a-a398-c0b13d639ffa
+
 ## Iteration #329 — Thu 2026-08-27 12:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: WSJ/News Corp Google/YouTube Child Safety Settlement Coverage Accountability Asymmetry
