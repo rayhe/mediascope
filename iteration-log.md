@@ -13393,3 +13393,51 @@ it is press-originated vocabulary that serves the companies' commercial interest
 - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
 - https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
 - https://www.lemonde.fr/en/economy/article/2026/08/27/meta-settles-landmark-social-media-addiction-case-avoiding-jury_6756899_19.html
+
+---
+
+### Iteration #330 — Thu 2026-08-27 13:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+**Target:** William Gavin, Tech Reporter at MarketWatch (Dow Jones / News Corp)
+**Mechanism #343:** Same-Journalist Settlement-Week Public Health Stigma vs Aspirational Investor Framing
+
+**Finding:** William Gavin applies "Big Tobacco" public health stigma vocabulary to Meta's
+$18B child safety settlement (Aug 26) — "dodges," "nightmare," "entice/engage/ensnare" —
+while applying aspirational investor-opportunity vocabulary to Anthropic/OpenAI across
+4 articles in 2026: "blockbuster IPO," "set the stage," "following Palantir's playbook."
+Zero child safety vocabulary appears in any Gavin Anthropic/OpenAI coverage.
+
+**Same-week coverage selection gap:** OpenAI ChatGPT Ads launched in 31 European markets
+on Aug 24 (2 days before Meta settlement). Gavin wrote no article scrutinizing OpenAI's
+age verification claims for ad targeting — despite the Meta settlement hinging on the
+exact same technically-impossible age verification technology.
+
+**Financial incentive:** News Corp receives $50M/yr from OpenAI (content licensing) and
+expects revenue share from the $1.5B Bartz v. Anthropic publisher settlement. Meta deal
+is roughly equal (~$50M/yr), so the financial relationship is approximately symmetric —
+the editorial register is not.
+
+**Confounders (heavy):**
+- STRONG: $18B settlement is objectively a larger accountability story than an IPO filing.
+  Different story types naturally carry different registers.
+- MODERATE: MarketWatch is investor-facing; investor framing is default register. The
+  question is why stigma vocabulary appears for Meta but not competitors.
+- MODERATE: Beat assignment vs self-selection — Gavin may be assigned Meta accountability
+  but choose Anthropic aspirational stories. Structural, not individual.
+- COUNTER: Same-week OpenAI ads silence and zero cross-entity age verification scrutiny
+  suggest selective coverage scope, not just story-type variation.
+
+**Asymmetry score:** 0.31 (moderate, heavy confounder load)
+
+**Profile update:** William Gavin added to profiles/careers/journalists.yaml with full
+career history (Quartz, The Messenger/OpenSecrets → MarketWatch) and cross-entity analysis.
+
+**New tests:** 17 (all pass)
+
+**Sources:**
+- https://www.morningstar.com/news/marketwatch/20260826179/meta-dodges-big-tobacco-nightmare-with-18-billion-settlement-in-child-safety-lawsuit
+- https://www.morningstar.com/news/marketwatch/2026060185/anthropic-just-set-the-stage-for-a-blockbuster-ipo-beating-openai-to-the-punch
+- https://www.morningstar.com/news/marketwatch/2026050479/anthropic-and-openai-are-following-palantirs-playbook-as-they-seek-to-grow-ai-usage
+- https://www.morningstar.com/news/marketwatch/20260228157/trump-blacklists-anthropic-and-openai-swoops-in
+- https://talkingbiznews.com/media-news/marketwatch-com-hires-gavin-to-cover-tech/
+- https://muckrack.com/william-gavin

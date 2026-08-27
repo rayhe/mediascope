@@ -19324,3 +19324,63 @@ michael_l_hicks:
         access_type: hour-long private demo
         aspirational_framing: true
         url: https://www.androidcentral.com/wearables/i-tried-google-samsung-ai-glasses-prototypes-before-android-show-xr-edition-heres-what-i-learned
+
+- name: William Gavin
+  slug: william_gavin
+  publication: MarketWatch
+  publisher: Dow Jones & Company (News Corp)
+  title: Tech Reporter
+  location: New York
+  beat: AI companies, IPOs, tech sector
+  education:
+  - degree: BA
+    field: Journalism
+    institution: Quinnipiac University
+  - degree: MA
+    field: Journalism
+    institution: Quinnipiac University
+  prior_employers:
+  - Quartz (staff writer)
+  - The Messenger (business breaking news, transportation/automotive/labor)
+  - OpenSecrets (federal/state lobbying and campaign finance)
+  source_urls:
+  - https://talkingbiznews.com/media-news/marketwatch-com-hires-gavin-to-cover-tech/
+  - https://muckrack.com/william-gavin
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 343
+      pattern: settlement_week_editorial_register_bifurcation
+      description: >
+        Applies "Big Tobacco" public health stigma framing to Meta's $18B child safety
+        settlement (Aug 26, 2026) while applying aspirational investor-opportunity framing
+        to Anthropic/OpenAI business milestones throughout 2026. Same journalist, same
+        News Corp publication. Meta vocabulary: "dodges," "Big Tobacco," "nightmare,"
+        "entice/engage/ensnare," "child safety." Anthropic vocabulary: "blockbuster IPO,"
+        "set the stage," "playbook," "exciting opportunity." Zero child safety vocabulary
+        in any Anthropic coverage. OpenAI ChatGPT Ads Europe expansion (Aug 24, same week)
+        received no accountability coverage from Gavin despite identical age verification
+        and teen data monetization concerns. Asymmetry score 0.31 with heavy confounders
+        (story type, publication default register, beat assignment structure).
+      meta_coverage:
+        articles: 1
+        headline: "Meta dodges 'Big Tobacco' nightmare with $18 billion settlement in child-safety lawsuit"
+        register: public_health_stigma_plus_investor_relief
+        accountability_vocabulary_count: 6
+        url: https://www.morningstar.com/news/marketwatch/20260826179/meta-dodges-big-tobacco-nightmare-with-18-billion-settlement-in-child-safety-lawsuit
+      anthropic_coverage:
+        articles: 4
+        headlines:
+        - "Anthropic just set the stage for a blockbuster IPO"
+        - "Anthropic and OpenAI are following Palantir's playbook"
+        - "Trump blacklists Anthropic - and OpenAI swoops in"
+        - "SpaceX, Anthropic and 4 more companies that could make an IPO splash"
+        register: aspirational_investor_opportunity
+        accountability_vocabulary_count: 0
+        urls:
+        - https://www.morningstar.com/news/marketwatch/2026060185/anthropic-just-set-the-stage-for-a-blockbuster-ipo-beating-openai-to-the-punch
+        - https://www.morningstar.com/news/marketwatch/2026050479/anthropic-and-openai-are-following-palantirs-playbook-as-they-seek-to-grow-ai-usage
+        - https://www.morningstar.com/news/marketwatch/20260228157/trump-blacklists-anthropic-and-openai-swoops-in
+      openai_coverage_gap:
+        event: ChatGPT Ads launched in 31 European markets Aug 24
+        gavin_coverage: none
+        teen_data_concerns_parallel: true
