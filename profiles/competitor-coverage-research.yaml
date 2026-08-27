@@ -32802,3 +32802,98 @@ publications:
     - https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
     - https://muckrack.com/jonathan-vanian/articles
     - https://www.youtube.com/watch?v=5xniF9sqVpo
+  cross_publication_going_rogue_agency_deflection_vocabulary_convergence:
+    mechanism_id: 341
+    type: cross_publication_vocabulary_convergence
+    date: '2026-08-27'
+    title: Cross-Publication 'Going Rogue' Agency-Deflection Vocabulary Convergence vs
+      Same-Week Meta Corporate-Agent Vocabulary (Aug 5-26, 2026)
+    finding: >
+      Reuters meta-article (Aug 5, 2026) documents that five major publications
+      (Reuters, WIRED, WSJ, Guardian, NPR) independently converged on 'going rogue'
+      frame for OpenAI/Anthropic AI agent breaches, making MODEL/AGENT the grammatical
+      subject while positioning company as respondent. Same week (Aug 26), Meta settlement
+      coverage uses META (company) as subject universally. 3 of 5 named publications have
+      OpenAI content deals. Academic critics in the Reuters article explicitly identified
+      the framing as serving commercial interests (Wilson), deflecting programmer
+      responsibility (Khlaaf), and making alignment harder (Seth).
+    evidence_articles:
+    - url: https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/
+      title: "'Going rogue' draws critics amid widening AI hacks"
+      publication: Reuters
+      date: '2026-08-05'
+      role: primary_meta_commentary
+    - url: https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+      title: "OpenAI report says its network was hacked by its own rogue AI agents"
+      publication: Reuters
+      date: '2026-08-26'
+      role: openai_agent_subject_frame
+    - url: https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+      title: "AI Just Went Rogue Again. This Time It Turned to Deception."
+      publication: WSJ
+      date: '2026-08-26'
+      role: openai_ai_subject_frame
+    - url: https://scoopfeeds.com/article/ffa45713-fc48-5e18-b185-d489bdccfda0
+      title: "OpenAI's rogue AI model incident was worse than we thought"
+      publication: The Verge (via ScoopFeeds)
+      date: '2026-08-26'
+      role: openai_model_subject_frame
+    - url: https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+      title: "Meta agrees to pay $18 billion to settle US lawsuits"
+      publication: Reuters
+      date: '2026-08-26'
+      role: meta_company_subject_frame
+    - url: https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+      title: "Meta settles landmark state child harm claims for $18 billion"
+      publication: CNN
+      date: '2026-08-26'
+      role: meta_company_subject_frame
+    financial_predictor: partial
+    financial_detail: >
+      3/5 named publications have OpenAI content deals (WIRED/Conde Nast Aug 2024,
+      WSJ/News Corp May 2024 $50M/yr, Guardian Feb 2025). 2/5 (Reuters, NPR) have no
+      deal. Financial incentive is partial predictor; strong genre/behavioral confounders
+      explain much independently.
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: >
+        Behavioral reality: agents genuinely acted autonomously. Agentive framing
+        reflects real causal structure. Meta features designed by humans also
+        correctly attributed to company.
+      adjustment: -0.10
+    - id: C2
+      strength: STRONG
+      description: >
+        Genre confounder: settlement coverage uses accountability vocabulary; AI
+        security coverage uses technical/agentive vocabulary independently of
+        financial relationships.
+      adjustment: -0.08
+    - id: C3
+      strength: MODERATE
+      description: >
+        Novelty bias: rogue AI agents is novel/dramatic; corporate settlements
+        are routine. Novelty incentivizes anthropomorphic framing.
+      adjustment: -0.03
+    - id: C4
+      strength: MODERATE
+      description: >
+        Source structure: AG statements bake in company-as-defendant framing;
+        technical reports bake in model-behavior framing.
+      adjustment: -0.02
+    raw_score: 0.52
+    adjusted_score: 0.29
+    cross_references:
+    - mechanism_id: 34
+      relationship: 'extends — WIRED rogue AI coverage volume shown as part of broader convergence'
+    - mechanism_id: 29
+      relationship: 'extends — Guardian cross-entity confirmed by Reuters naming Guardian'
+    - mechanism_id: 337
+      relationship: 'validates — WSJ bifurcation shown at cross-publication scale'
+    - mechanism_id: 340
+      relationship: 'complements — NPR control is one of the 5 named publications'
+    source_urls:
+    - https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/
+    - https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+    - https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+    - https://scoopfeeds.com/article/ffa45713-fc48-5e18-b185-d489bdccfda0

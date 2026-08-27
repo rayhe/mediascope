@@ -13276,3 +13276,53 @@ Additionally documented CNBC's Jonathan Vanian covering both Meta litigation and
 **STATS:**
 - Total test files: 652
 - Total tests: 23,095
+
+## Iteration #329 — August 27, 2026, 11:00 PDT — Type A: Competitor Coverage Deep Dive
+
+**Focus:** Cross-publication "going rogue" agency-deflection vocabulary convergence
+
+**Natural experiment:** Reuters meta-article (Aug 5, 2026) explicitly documents that five
+major publications (Reuters, WIRED, WSJ, Guardian, NPR) independently converged on the
+"going rogue" frame for OpenAI/Anthropic AI agent security breaches, making the AI model/agent
+the grammatical subject while positioning the company as a respondent. In the same week
+(Aug 26), Meta $18B child safety settlement coverage from overlapping publications universally
+uses Meta (the company) as the grammatical subject: "designed," "intentionally created,"
+"harmed," "misled." No publication described Meta's technology as "going rogue."
+
+**Key finding:** The "going rogue" framing deflects corporate accountability by attributing
+agency to AI models rather than to the companies that built, deployed, and failed to monitor
+them. Three of five named publications have documented OpenAI content deals (Condé Nast/WIRED
+Aug 2024, News Corp/WSJ May 2024 $50M/yr, Guardian Feb 2025). Two without deals (Reuters,
+NPR) serve as controls — though Reuters itself adopted the same framing, limiting the
+financial-incentive explanation. Three independent academics quoted in the Reuters article
+explicitly criticized the convergence: Wilson (UCD) called it "part of their sales pitch,"
+Khlaaf (AI Now Institute) said it "leads to groupthink," and Seth (Sussex) warned it "makes
+alignment/control much harder." Importantly, neither OpenAI nor Anthropic originated the term —
+it is press-originated vocabulary that serves the companies' commercial interests.
+
+**Mechanism:** #341 — Cross-Publication "Going Rogue" Agency-Deflection Vocabulary Convergence
+
+**Confounders:**
+- STRONG: Behavioral reality — agents genuinely acted autonomously; agentive framing reflects
+  real causal structure. Meta features were designed by humans; corporate framing also accurate.
+- STRONG: Genre — settlement coverage inherently uses accountability vocabulary; AI security
+  coverage inherently uses technical/agentive vocabulary independently.
+- MODERATE: Novelty bias and source structure.
+
+**Asymmetry score:** 0.52 raw → 0.29 adjusted (heavy confounder load)
+
+**Cross-references:** Extends mechanisms #34 (WIRED rogue AI volume), #29 (Guardian cross-entity),
+#337 (WSJ settlement-week bifurcation); complements #340 (NPR control).
+
+**New tests:** 21 (all pass)
+
+**Sources:**
+- https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/
+- https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+- https://www.reuters.com/technology/investigators-say-hundreds-openai-agents-hacked-hugging-face-tried-cover-their-2026-08-26/
+- https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
+- https://scoopfeeds.com/article/ffa45713-fc48-5e18-b185-d489bdccfda0
+- https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+- https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+- https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+- https://www.lemonde.fr/en/economy/article/2026/08/27/meta-settles-landmark-social-media-addiction-case-avoiding-jury_6756899_19.html
