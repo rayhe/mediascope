@@ -1,3 +1,63 @@
+## Iteration #322 — Thu 2026-08-27 00:00 PT (Type D: Test & Verify)
+
+### Focus: YAML Syntax Fixes + Cross-Validation of Aug 26 Mechanisms #326–#332
+
+**Type:** Test & Verify (Cross-Validation + Infrastructure Fixes)
+**Mechanisms cross-validated:** #326, #327, #328, #329, #330, #331, #332
+
+**INFRASTRUCTURE FIXES:**
+
+1. **YAML parse error in competitor-coverage-research.yaml:**
+   - Mechanism #332 was formatted as a list item (`- mechanism_id: 332`) instead of
+     a named dictionary key. The `cross_publication_findings` section uses named keys.
+     This caused the entire YAML file to fail to parse, breaking all 25 tests in
+     `test_financial_relationships.py` (collection errors).
+   - Fix: Converted to `publisher_geo_content_architecture_financial_dependency_acceleration:`
+
+2. **4 multi-quoted-string YAML syntax errors in mechanism #329:**
+   - Lines like `anthropic: "secure capacity," "moved aggressively"` are invalid YAML
+     (two quoted scalars with no wrapper). Consolidated to single quoted strings.
+
+3. **Entity set drift in test_competitor_coverage.py:**
+   - `regent_lp` was added to `competitor-entities.yaml` but not to the expected set
+     in the test. Fixed: now 17 entities expected.
+
+**RESULT:** Core test suite restored — 271/271 pass (was 242 passed + 4 failed + 25 errors).
+CLI help test now passes (installed missing `click` and `rich` dependencies).
+
+**CROSS-VALIDATION TEST:**
+
+New test: `test_type_d_midnight_cross_validation_aug27.py` — 32 tests, 9 classes:
+- **TestMechanismExistence** (8 tests): All 7 mechanisms #326–#332 exist with sequential IDs
+- **TestConfounderDocumentation** (4 tests): STRONG confounders documented for #328, #332
+- **TestAsymmetryScores** (4 tests): Scores within valid ranges, bounded by confounder load
+- **TestSourceURLIntegrity** (3 tests): URLs present across evidence/sources/source_urls formats
+- **TestCrossReferenceIntegrity** (4 tests): All refs point to existing mechanisms;
+  #328 has 1 cross-ref without mechanism_id (tolerated, documented)
+- **TestInterMechanismConsistency** (4 tests): Settlement mechanisms reference each other,
+  Reuters vs WSJ cover different publications, Meta deal exclusion consistent
+- **TestCorrespondingTestFiles** (2 tests): All 7 mechanism test files exist and are non-empty
+- **TestSettlementCrossValidation** (3 tests): AG Skrmetti AI lab connection documented,
+  FOX Business financial independence documented, podcast cross-medium validation present
+
+All 32 tests pass.
+
+**DOC SYNC:**
+- README.md: 23,041 tests across 644 files (+11 test entries added)
+- ARCHITECTURE.md: 23,041 tests across 644 files (+11 test entries added)
+
+**KNOWN REMAINING ISSUES:**
+- 6 textblob-dependent tests: collection errors (pre-existing, textblob import issue)
+- CareerTracker 243 vs YAML 244 multi-pub journalists: code-level slug consistency issue
+- #328 has 1 cross-reference entry without mechanism_id
+
+**Commit:** `3f7c636` — pushed to GitHub
+
+**Tests:** 32/32 new passing. Core suite: 271/271 passing (fully restored).
+Total: ~23,041 tests across 644 files.
+
+---
+
 ## Iteration #321 — Wed 2026-08-26 23:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Publisher GEO Content Architecture Transformation — Sunk-Cost Financial Dependency Acceleration
