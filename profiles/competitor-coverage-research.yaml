@@ -32897,3 +32897,115 @@ publications:
     - https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
     - https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09
     - https://scoopfeeds.com/article/ffa45713-fc48-5e18-b185-d489bdccfda0
+  wsj_youtube_child_safety_entity_accountability_deflection:
+    mechanism_id: 342
+    type: competitor_coverage_deep_dive
+    publication: Wall Street Journal (News Corp)
+    competitor: Google/YouTube
+    context: Meta $18B child safety settlement (Aug 26, 2026)
+    finding: >
+      WSJ's flagship Meta settlement article (Meghan Bobrowsky, Aug 26) applies full
+      accountability vocabulary to Meta (addictive, knowingly, harmed, violated COPPA)
+      while framing YouTube in three subordinate roles: passive non-commenter, secondary
+      verdict co-defendant, and future conditional adopter. The article omits YouTube's
+      own extensive COPPA enforcement history: $170M FTC fine (2019), $30M class action
+      settlement (2025-2026), Senate investigation demand (2023), confidential R.K.C.
+      bellwether settlement (Jun 24, 2026), and 30% K.G.M. liability finding. Fox Business
+      (also News Corp) published YouTube's R.K.C. settlement as a standalone story;
+      WSJ did not. YouTube settled BEFORE trial to avoid a jury — the same behavior Meta
+      exhibited — yet WSJ does not connect the pattern. The $5B settlement contingency
+      (28% of total) makes YouTube central to the story, but WSJ notes YouTube "didn't
+      provide a comment" without investigating YouTube's intent to comply or its
+      compliance track record.
+    meta_vocabulary:
+      - "addictive (multiple uses)"
+      - "knowingly making its platforms addictive"
+      - "going after young users"
+      - "harmed users"
+      - "profit-driven addictive features (AG quote amplified)"
+      - "violated consumer-protection laws"
+      - "violated COPPA"
+    youtube_framing:
+      - "YouTube didn't provide a comment (passive non-response)"
+      - "Meta and Google's YouTube were jointly ordered to pay (secondary entity)"
+      - "if rivals...YouTube adopt similar measures (future conditional)" 
+    youtube_settlement_history:
+      coppa_fine_2019:
+        amount: $170M
+        agency: FTC + New York AG
+        finding: illegally collected children's data, targeted ads without parental consent
+      class_action_2025:
+        amount: $30M
+        finding: collecting young viewers' data without consent
+      senate_investigation_2023:
+        senators: Markey, Blackburn
+        finding: suspected repeat COPPA violations per NYT/Adalytics reporting
+      rkc_bellwether_2026:
+        date: 2026-06-24
+        terms: confidential
+        plaintiff_quote: "YouTube's decision to resolve this case before having to face a jury speaks for itself"
+        google_quote: "amicably resolved"
+      kgm_verdict_2026:
+        date: 2026-03-25
+        youtube_liability: 30%
+        damages: $1.8M of $6M total
+    wsj_youtube_rkc_standalone_coverage: none
+    cross_news_corp_natural_experiment:
+      fox_business_coverage: standalone article (Jun 24, 2026)
+      fox_business_framing: adversarial (amplified plaintiff lawyers' quote)
+      wsj_coverage: zero standalone, mentioned only in K.G.M. context
+      finding: >
+        Same parent company (News Corp) applies different coverage levels to same
+        entity (YouTube/Google) across publications. Fox Business covered YouTube's
+        child safety settlement as standalone news; WSJ flagship did not.
+    asymmetry_score: 0.34
+    confounding_factors:
+    - strength: STRONG
+      description: >
+        The Meta settlement ($18B, 48 states) is objectively a larger news story
+        than YouTube's individual R.K.C. settlement (confidential terms, single
+        plaintiff). Different coverage volume is proportionate.
+    - strength: STRONG
+      description: >
+        Meghan Bobrowsky is WSJ's dedicated Meta beat reporter. Covering the
+        settlement is her job. Google/YouTube coverage is handled by different
+        reporters. Beat assignment naturally concentrates entity-specific
+        accountability vocabulary.
+    - strength: MODERATE
+      description: >
+        YouTube's R.K.C. settlement terms were confidential, limiting reportable
+        detail. Meta's $18B figure was publicly disclosed, enabling headline-worthy
+        coverage.
+    - strength: MODERATE
+      description: >
+        The settlement structure itself frames YouTube as a future conditional
+        adopter, not a current offender. WSJ's framing follows the source
+        document's structure.
+    - strength: WEAK
+      description: >
+        Fox Business operates as a separate editorial unit from WSJ with different
+        editorial standards and audience expectations.
+    counter_confounders:
+    - description: >
+        YouTube has a LONGER and MORE EXTENSIVE COPPA violation history than Meta
+        ($170M fine, Senate investigation, $30M class action, K.G.M. verdict, R.K.C.
+        settlement). Proportional accountability would acknowledge this pattern.
+    - description: >
+        $5B (28% of total settlement) is contingent on YouTube adopting similar
+        measures, making YouTube's compliance history and intent material to the
+        story's completeness.
+    cross_references:
+    - mechanism_id: 337
+      relationship: extends — same WSJ settlement article analyzed for Anthropic vocabulary bifurcation
+    - mechanism_id: 27
+      relationship: validates — WSJ desk-level tone gap confirmed at entity level
+    - mechanism_id: 22
+      relationship: complements — WSJ aspirational framing for non-Meta entities extends to Google/YouTube
+    source_urls:
+    - https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+    - https://foxbusiness.com/technology/googles-youtube-reaches-settlement-lawsuit-alleging-child-social-media-addiction
+    - https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law
+    - https://www.markey.senate.gov/news/press-releases/senators-markey-blackburn-demand-ftc-investigate-youtube-google-for-suspected-violations-of-childrens-privacy
+    - https://gizmodo.com/google-settles-lawsuit-with-teen-as-social-media-addiction-lawsuits-gain-steam-2000777137
+    - https://www.techrepublic.com/article/news-google-youtube-addiction-lawsuit-settlement/
+    - https://www.reuters.com/business/us-teen-drops-lawsuit-against-meta-google-snap-ahead-trial-2026-08-21/

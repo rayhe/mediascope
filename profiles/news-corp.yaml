@@ -426,11 +426,52 @@ competitor_relationships:
       test_count: 22
   google:
     financial_tie: mixed
-    estimated_value: undisclosed
+    estimated_value: undisclosed (advertising + Google Showcase payments)
     direction: mutual
-    description: News Corp has historically adversarial relationship with Google (sued in Australia over news snippets). Also
-      has ad revenue relationship.
-    coverage_prediction: neutral
+    description: >
+      Complex relationship. News Corp has historically adversarial relationship with Google
+      (sued in Australia over news snippets), but also depends on Google for advertising
+      revenue and distribution (Google Showcase payments). This dual dependency creates
+      coverage incentives that differ from the pure adversarial (Meta) or pure licensing
+      (OpenAI) relationships.
+    coverage_prediction: mixed
+    child_safety_coverage:
+      mechanism_id: 342
+      finding: >
+        WSJ's flagship Meta settlement article (Aug 26, 2026) applies full accountability
+        vocabulary to Meta while framing YouTube/Google in subordinate roles. YouTube's
+        own extensive COPPA enforcement history ($170M FTC fine, $30M class action, Senate
+        investigation, confidential R.K.C. bellwether settlement) is not connected in the
+        article. Fox Business (also News Corp) published YouTube's R.K.C. settlement as
+        standalone news; WSJ did not.
+      coverage_examples:
+      - title: "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims"
+        publication: Wall Street Journal
+        date: '2026-08-26'
+        reporter: Meghan Bobrowsky
+        youtube_framing: subordinate (non-commenter, secondary verdict defendant, future conditional)
+        meta_framing: full accountability vocabulary (addictive, knowingly, harmed, violated COPPA)
+        source_url: https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+      - title: "Google's YouTube reaches settlement in lawsuit alleging child social media addiction"
+        publication: Fox Business (News Corp sibling)
+        date: '2026-06-24'
+        youtube_framing: standalone adversarial (plaintiff lawyers' quote amplified)
+        source_url: https://foxbusiness.com/technology/googles-youtube-reaches-settlement-lawsuit-alleging-child-social-media-addiction
+        notes: >
+          Fox Business (News Corp) gave YouTube's R.K.C. settlement standalone coverage
+          that WSJ did not replicate. Same parent company, different coverage decisions.
+      youtube_coppa_enforcement_history:
+        ftc_fine_2019: "$170M — largest COPPA fine at time, illegally collecting children's data"
+        class_action_2025: "$30M — collecting young viewers' data without consent"
+        senate_investigation_2023: "Markey/Blackburn demanded FTC investigate YouTube for suspected repeat COPPA violations"
+        rkc_settlement_2026: "Confidential terms, Jun 24 — settled before trial, 'speaks for itself' (plaintiff lawyers)"
+        kgm_verdict_2026: "30% liability, $1.8M of $6M — found liable for addictive design features (autoplay, recommendation algorithms)"
+      asymmetry_score: 0.34
+      confounders_note: >
+        Strong confounders: story magnitude ($18B vs confidential terms), beat assignment
+        (Bobrowsky covers Meta, not Google). Moderate: confidential terms limit reporting.
+        Counter-confounders: YouTube's LONGER COPPA violation history not acknowledged,
+        $5B contingency makes YouTube material to story.
   x_twitter:
     financial_tie: none
     estimated_value: $0

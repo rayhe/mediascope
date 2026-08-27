@@ -3079,6 +3079,38 @@ entities:
         narrative_effect: 'YouTube''s post-verdict settlement removed it from ongoing coverage. All subsequent reporting (NM
           $942M ruling, Oakland $1.4T trial) references the LA verdict as a Meta story, with YouTube mentioned only in passing
           or not at all. '
+      rkc_bellwether_2026:
+        terms: confidential
+        date_settled: '2026-06-24'
+        type: individual_bellwether_settlement
+        plaintiff: R.K.C. (15-year-old Florida boy)
+        detail: >
+          Second bellwether case settled BEFORE trial. YouTube/Google resolved addiction
+          case with R.K.C. confidentially. Plaintiff's lawyers: "YouTube's decision to
+          resolve this case before having to face a jury speaks for itself." Google
+          spokesperson: "amicably resolved." This mirrors Meta's subsequent $18B
+          settlement strategy — settling before jury exposure — yet press coverage does
+          not connect the pattern.
+        wsj_coverage: none (standalone)
+        fox_business_coverage: standalone article
+        coverage_asymmetry_note: >
+          Fox Business (News Corp) gave this settlement standalone coverage. WSJ (News Corp
+          flagship) did not. TechRepublic, Gizmodo, ConsumerAffairs, and legal trade press
+          covered it. WSJ's Aug 26 Meta settlement article mentions K.G.M. verdict but
+          does not reference R.K.C. settlement.
+        source_urls:
+        - https://gizmodo.com/google-settles-lawsuit-with-teen-as-social-media-addiction-lawsuits-gain-steam-2000777137
+        - https://www.techrepublic.com/article/news-google-youtube-addiction-lawsuit-settlement/
+        - https://foxbusiness.com/technology/googles-youtube-reaches-settlement-lawsuit-alleging-child-social-media-addiction
+      senate_coppa_investigation_2023:
+        date: '2023-08'
+        type: congressional_demand
+        senators: Markey (D-MA), Blackburn (R-TN)
+        detail: >
+          Bipartisan demand for FTC to investigate YouTube for suspected repeat COPPA
+          violations after NYT/Adalytics reporting showed continued targeted advertising
+          on child-directed content despite 2019 consent decree.
+        source_url: https://www.markey.senate.gov/news/press-releases/senators-markey-blackburn-demand-ftc-investigate-youtube-google-for-suspected-violations-of-childrens-privacy
       total_known_settlements_m: 200
       settle_and_silence_strategy: 'Google''s legal team systematically settles children''s safety cases before they generate
         sustained media coverage. Each settlement removes YouTube from the active litigation narrative, concentrating media

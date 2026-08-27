@@ -1,3 +1,70 @@
+## Iteration #329 — Thu 2026-08-27 12:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: WSJ/News Corp Google/YouTube Child Safety Settlement Coverage Accountability Asymmetry
+
+**Type:** Competitor Coverage Deep Dive
+**New Mechanism:** #342 — WSJ Settlement-Week YouTube Entity Accountability Deflection
+**Asymmetry Score:** 0.34 (moderate, heavy confounder load)
+
+**CORE FINDING — WSJ ENTITY ACCOUNTABILITY VOCABULARY BIFURCATION IN SAME ARTICLE:**
+
+WSJ's flagship Meta settlement article (Meghan Bobrowsky, Aug 26, 2026) applies full
+accountability vocabulary to Meta ("addictive," "knowingly making its platforms addictive,"
+"going after young users," "harmed users," "violated COPPA") while framing Google/YouTube
+in three subordinate roles:
+  1. Passive non-commenter: "YouTube didn't provide a comment"
+  2. Secondary verdict entity: "Meta and Google's YouTube were jointly ordered to pay"
+  3. Future conditional: "if rivals...YouTube adopt similar measures"
+
+WSJ OMITS YouTube's extensive COPPA enforcement history from the settlement article:
+  - $170M FTC COPPA fine (2019, largest at time)
+  - $30M class action settlement (2025-2026)
+  - Senators Markey/Blackburn FTC investigation demand (2023)
+  - Confidential R.K.C. bellwether settlement (Jun 24, 2026)
+  - 30% K.G.M. liability (same addictive design features as Meta)
+
+**CROSS-NEWS CORP NATURAL EXPERIMENT:**
+
+Fox Business (also News Corp) published YouTube's R.K.C. settlement as a standalone story
+on Jun 24, 2026, with adversarial framing (amplified plaintiff lawyers' "speaks for itself"
+quote). WSJ flagship did NOT give YouTube's R.K.C. settlement standalone coverage. Same
+parent company, different entity coverage decisions for the same child safety story.
+
+**KEY PATTERN — SETTLE-AND-SILENCE:**
+
+YouTube settled R.K.C. BEFORE trial to avoid jury exposure — the exact strategy Meta
+subsequently used with the $18B settlement. WSJ does not connect this pattern. The $5B
+contingency (28% of total $18B) makes YouTube central to the settlement's success, yet
+WSJ notes YouTube "didn't provide a comment" without investigating compliance intent or
+YouTube's track record.
+
+**CONFOUNDERS (HEAVY):**
+  - STRONG: Meta settlement ($18B, 48 states) is objectively larger story than YouTube's
+    single-plaintiff confidential settlement. Different coverage volume is proportionate.
+  - STRONG: Beat assignment — Bobrowsky is the dedicated Meta reporter. Google/YouTube
+    coverage handled by different reporters. Structural, not individual bias.
+  - MODERATE: Confidential settlement terms limit reportable detail.
+  - COUNTER: YouTube has LONGER COPPA violation history than Meta (5 enforcement actions
+    vs Meta's first major child safety settlement). Proportional accountability would
+    acknowledge this pattern.
+  - COUNTER: $5B contingency makes YouTube compliance materially relevant to story
+    completeness.
+
+**FILES CHANGED:**
+  - profiles/competitor-coverage-research.yaml: Added mechanism #342
+  - profiles/news-corp.yaml: Updated Google competitor relationship with child safety findings
+  - profiles/competitor-entities.yaml: Added R.K.C. settlement and Senate investigation to Google
+  - tests/test_wsj_news_corp_*.py: 15 tests (13 pass, 2 skip-flagging gaps)
+
+**SOURCES:**
+  - https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b
+  - https://foxbusiness.com/technology/googles-youtube-reaches-settlement-lawsuit-alleging-child-social-media-addiction
+  - https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law
+  - https://gizmodo.com/google-settles-lawsuit-with-teen-as-social-media-addiction-lawsuits-gain-steam-2000777137
+  - https://www.techrepublic.com/article/news-google-youtube-addiction-lawsuit-settlement/
+  - https://www.reuters.com/business/us-teen-drops-lawsuit-against-meta-google-snap-ahead-trial-2026-08-21/
+  - https://www.markey.senate.gov/news/press-releases/senators-markey-blackburn-demand-ftc-investigate-youtube-google-for-suspected-violations-of-childrens-privacy
+
 ## Iteration #328 — Thu 2026-08-27 10:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Settlement-Week Public Broadcasting + Political Podcast Entity Framing Bifurcation
