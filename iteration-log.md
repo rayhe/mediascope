@@ -1,3 +1,53 @@
+## Iteration #324 — Thu 2026-08-27 04:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: TechCrunch (Yahoo/Apollo) — OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence
+
+**Type:** Competitor Coverage Deep Dive
+**Publication:** TechCrunch (Yahoo/Apollo Global Management)
+**Competitor:** OpenAI
+**New mechanism:** #336 — Coverage Selection Silence on OpenAI's Largest Ad Geographic Expansion
+**Cross-validates:** Mechanisms #48 (WIRED OpenAI ad gap), #299 (Gizmodo OpenAI ad silence), #284 (TechCrunch Yahoo data practice bifurcation)
+
+**CORE FINDING:**
+
+TechCrunch published three articles on OpenAI's ChatGPT ads during the initial US
+rollout (Jan 16, Feb 9, Feb 25, 2026) but published ZERO articles on OpenAI's
+largest advertising geographic expansion: 31 European markets (announced Aug 19,
+live Aug 24, 2026). This expanded ChatGPT Ads to 35 countries total. OpenAI's
+enterprise CMO Colin Fleming confirmed ad revenue grew 25%+ since August start,
+with 1 billion weekly active users and 20% showing commercial intent.
+
+Within 48 hours of Meta's $18B child safety settlement (Aug 26), TechCrunch
+published TWO articles, including critical analysis of age-verification technology.
+
+Eight other outlets covered the Europe expansion within the same week:
+TechRepublic, Neowin, Notebookcheck, Adweek, Digiday, Le Monde, TechXplore/AFP,
+EU Perspectives.
+
+**FINANCIAL ARCHITECTURE:**
+- Yahoo has an OpenAI content licensing deal
+- Apollo Global Management (Yahoo parent) has AI infrastructure investments
+  with deal-flow adjacency to Anthropic
+- Yahoo/Meta compete directly for digital advertising revenue
+- No Yahoo-Meta content licensing deal identified
+
+**CROSS-PUBLICATION PATTERN:**
+This is the THIRD major publication documented with ChatGPT Ads coverage selection
+silence. WIRED (#48), Gizmodo (#299), and now TechCrunch (#336) all covered the
+initial announcement but skipped the Europe expansion — the publications that most
+aggressively cover Meta's advertising practices are the same publications that
+skip OpenAI's advertising expansion.
+
+**Confounders documented:** News value differential (STRONG), editorial independence
+(STRONG), audience interest (MODERATE), incrementality perception (MODERATE),
+temporal limitation (WEAK). Adjusted score: 0.21 (conservative after heavy
+confounder load).
+
+**Tests:** 25/25 passing.
+**Commit:** (pending)
+
+---
+
 ## Iteration #323 — Thu 2026-08-27 01:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Post-Settlement Political-Investor Podcast Cross-Surface Financial Architecture Convergence

@@ -32309,3 +32309,105 @@ publications:
       relationship: "parallel — cross-employer vocabulary alignment, but here within a single employer"
     - mechanism_id: 334
       relationship: "extends — Bloomberg framing of Meta settlement uses same accountability vocabulary Vanian uses"
+
+  techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence:
+    mechanism_id: 336
+    type: A
+    title: "TechCrunch (Yahoo/Apollo) — OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence"
+    publication: TechCrunch
+    publication_owner: Yahoo (Apollo Global Management)
+    date: "2026-08-27"
+    competitor: openai
+    test_file: tests/test_techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence_aug27.py
+    description: >
+      TechCrunch published three articles on OpenAI's ChatGPT ads during the
+      initial US rollout (Jan 16, Feb 9, Feb 25, 2026) but published zero
+      articles on OpenAI's largest advertising geographic expansion: 31 European
+      markets (announced Aug 19, live Aug 24). This expanded ChatGPT Ads to 35
+      countries total. OpenAI ad revenue grew 25%+ since start of August per
+      Colin Fleming (enterprise CMO) briefing call. OpenAI deployed GDPR consent
+      model, excluding personalized ads initially in EEA. Within 48 hours of
+      Meta's $18B child safety settlement (Aug 26), TechCrunch published two
+      articles including critical analysis of age-verification technology. The
+      pattern: OpenAI advertising milestone gets zero coverage; Meta accountability
+      event gets immediate double coverage. Yahoo has an OpenAI content licensing
+      deal. Apollo Global Management (Yahoo parent) has AI infrastructure
+      investments with deal-flow adjacency to Anthropic. No Yahoo-Meta content
+      licensing deal identified.
+    entities:
+    - meta
+    - openai
+    - yahoo
+    - apollo
+    publications:
+    - techcrunch
+    evidence:
+    - source: "TechCrunch (Sarah Perez)"
+      date: "2026-01-16"
+      category: "initial_coverage"
+      url: "https://techcrunch.com/2026/01/16/chatgpt-users-are-about-to-get-hit-with-targeted-ads/"
+      observation: "Initial ChatGPT ads announcement: 'ChatGPT users are about to get hit with targeted ads.' Proactive coverage with critical consumer framing ('hit with')."
+    - source: "TechCrunch"
+      date: "2026-02-09"
+      category: "initial_coverage"
+      url: "https://techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/"
+      observation: "US ads launch: 'ChatGPT rolls out ads.' Coverage included Anthropic Super Bowl ad mockery, consumer backlash, and Sam Altman's 'testy' response."
+    - source: "TechCrunch (Ivan Mehta)"
+      date: "2026-02-25"
+      category: "initial_coverage"
+      url: "https://techcrunch.com/2026/02/25/openai-coo-says-ads-will-be-an-iterative-process/"
+      observation: "Brad Lightcap at India AI summit: 'iterative process.' COO promising to 'get privacy and trust right.' Zero follow-up on whether that happened."
+    - source: "OpenAI (official blog)"
+      date: "2026-08-19"
+      url: "https://openai.com/index/chatgpt-ads-expands-across-europe/"
+      observation: "Official announcement of ChatGPT Ads expansion to 31 European countries including all 27 EU states plus Iceland, Liechtenstein, Norway, Switzerland. Live Aug 24."
+    - source: "Adweek (Colin Fleming briefing)"
+      date: "2026-08-19"
+      url: "https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/"
+      observation: "Fleming: 'material expansion,' 1 billion weekly active users, 20% showing commercial intent, ad revenue grew 25%+ since August start."
+    - source: "TechRepublic"
+      date: "2026-08-20"
+      url: "https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/"
+      observation: "TechRepublic covered expansion same week with detailed targeting and privacy analysis. TechCrunch silence is not because the event lacked newsworthiness."
+    - source: "Le Monde (English edition)"
+      date: "2026-08-25"
+      url: "https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html"
+      observation: "Le Monde covered France-specific impact with Anthropic Super Bowl comparison and cost-offset analysis. TechCrunch, which covered the US launch, skipped the larger Europe expansion."
+    - source: "TechCrunch"
+      date: "2026-08-26"
+      url: "https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/"
+      observation: "Meta settlement coverage within hours: 2-hour daily limits, midnight blocks, $18B over 10 years. Standard accountability framing."
+    - source: "TechCrunch"
+      date: "2026-08-26"
+      url: "https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/"
+      observation: "Second Meta settlement article same day: critical analysis of age-verification weaknesses. 'Real-dollar impact softer than headline suggests' but framed as accountability. Two articles vs zero for OpenAI's Europe expansion."
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: "Meta's $18B settlement is the largest tech child safety settlement in history and inherently newsworthy. Coverage volume may reflect genuine news significance rather than editorial bias. The comparison is not between equally significant events."
+      adjustment: -0.15
+    - id: C2
+      strength: STRONG
+      description: "TechCrunch editorial decisions are made by newsroom staff with editorial independence from Yahoo corporate. No evidence of direct editorial directive linking content licensing deals to coverage decisions."
+      adjustment: -0.12
+    - id: C3
+      strength: MODERATE
+      description: "Ad business expansion may be deemed lower audience interest than a consumer-harm settlement. TechCrunch optimizes for reader engagement, and accountability stories reliably outperform business-model coverage."
+      adjustment: -0.08
+    - id: C4
+      strength: MODERATE
+      description: "TechCrunch covered the initial ChatGPT ads story when it was novel (Jan-Feb). Geographic expansion of an existing feature may be considered incremental rather than a new story."
+      adjustment: -0.06
+    - id: C5
+      strength: WEAK
+      description: "TechCrunch may have covered the Europe expansion after Aug 27, making the 'silence' observation time-limited."
+      adjustment: -0.03
+    raw_score: 0.65
+    adjusted_score: 0.21
+    cross_references:
+    - mechanism_id: 284
+      relationship: "extends — #284 documents TechCrunch data practice vocabulary bifurcation; this mechanism documents coverage selection (what to cover) rather than vocabulary (how to cover)"
+    - mechanism_id: 48
+      relationship: "parallel — WIRED OpenAI ad coverage selection gap uses same pattern: initial coverage followed by silence on expansion"
+    - mechanism_id: 299
+      relationship: "parallel — Gizmodo OpenAI ad infrastructure maturation coverage selection silence"
