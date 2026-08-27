@@ -13144,3 +13144,42 @@ tech publication tracked in the dataset, though search indexes may lag.
 - Total test files: 651
 - Total tests: 23,070
 - Previously-blocked tests: 39 files (~900 tests) now passing
+
+---
+
+## Iteration #328 — Thu 2026-08-27 09:00 PT
+
+**Type:** E — Podcast Sentiment Tracking
+**Focus:** Subscription-Only Publication Same-Episode Settlement-AI Compartmentalization + Cultural Consensus Confounder Validation
+
+**Summary:**
+Analyzed The Information's TITV video podcast (Aug 27, 2026) as a natural experiment for financial incentive vs. genre convention hypotheses. TITV covers Meta's $18B settlement AND OpenAI departures AND Bill Gates' AI warning in the same 41-minute episode with zero cross-reference between settlement regulatory precedent and AI lab risk. The Information is subscription-only ($449/year), has no advertising, no AI content licensing deals, and no IPO underwriter dependency. This REPLICATES the compartmentalization pattern seen at financially incentivized outlets, STRENGTHENING the genre/cultural consensus confounder for mechanism #328 and WEAKENING the financial causation argument.
+
+Additionally documented CNBC's Jonathan Vanian covering both Meta litigation and AI labs in adjacent articles without connecting settlement precedent to AI chatbot companies, and confirmed CNN video broadcast replicates print omission pattern.
+
+**Key Evidence:**
+- The Information TITV (https://www.theinformation.com/titv/jo9tx): 7-chapter episode, 4 AI topics, Meta settlement isolated in Chapter 1
+- FOX Business (https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says): AG Skrmetti AI connection publicly available before TITV taping
+- CNBC/Vanian (https://muckrack.com/jonathan-vanian/articles): Cross-beat separation documented
+- CNN Video (https://www.youtube.com/watch?v=5xniF9sqVpo): 3-chapter broadcast, zero AI lab mention
+
+**Updated Cross-Medium Score:**
+- 11 surfaces tested; 1/11 (9.1%) included AI lab connection
+- Financial tie predicts omission (9/9 = 100%)
+- Absence of financial tie does NOT predict inclusion (1/2 = 50%)
+- CULTURAL CONSENSUS CONFOUNDER VALIDATED
+
+**New Mechanism:** #339 — Subscription-Only Publication Same-Episode Settlement-AI Compartmentalization
+**Asymmetry Score:** 0.22 (LOW — finding weakens financial causation argument)
+**Hypothesis Impact:** weakens_financial_causation
+
+**Files Modified:**
+- `tests/test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` (new, 25 tests, all pass)
+- `profiles/competitor-coverage-research.yaml` (mechanism #339 appended)
+- `podcast-sentiment.md` (entries #82-83 + updated cross-surface table)
+
+**Test Results:** 25/25 pass (0.25s)
+
+**STATS:**
+- Total test files: 652
+- Total tests: 23,095

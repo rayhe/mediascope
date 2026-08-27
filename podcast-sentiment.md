@@ -4772,3 +4772,90 @@ This is mechanism #333: **Investor-Podcast-Publisher Financial Architecture Conv
 
 **Key observation:** In the same 7-day window, no single podcast/webinar surface connected Meta's $18B settlement to Anthropic's $2T IPO aspirations. The two narratives exist in perfect compartmentalization across the audio ecosystem, just as they do in print. The financial relationships predict the compartment each entity occupies: entities with publisher/investor financial ties (Anthropic, OpenAI) get the aspirational compartment; Meta gets the accountability compartment.
 
+
+### 82. The Information TITV — "Meta's $18B Social Media Settlement, Nvidia's Upcoming Results, Bill Gates' Stark Warning About AI" (Aug 27, 2026)
+
+- **Show:** TITV (The Information, daily video podcast)
+- **Host:** Akash Pasricha with Jason Dean (SF Bureau Chief)
+- **Duration:** ~41 minutes (7 chapters)
+- **Source URL:** https://www.theinformation.com/titv/jo9tx
+- **Published:** August 27, 2026
+
+**Chapter Structure:**
+- 00:01 — Meta Settles Landmark Social Media Case
+- 00:11 — Nvidia Earnings Preview & The Inference Shift
+- 00:21 — Emerald AI Hits Unicorn Status Amid Grid Backlash
+- 00:29 — Bill Gates AI Warning & Palo Alto Networks M&A
+- 00:39 — Big Tech's New AI M&A Premium
+- 00:41 — OpenAI Exits to Salesforce & Hugging Face's $13B Talks
+
+**Coverage Summary:**
+Same episode covers Meta's $18B settlement (Chapter 1) AND OpenAI executive departures / Hugging Face acquisition talks (Chapter 7) AND Bill Gates' AI warning (Chapter 4) AND AI M&A premiums (Chapter 6). Four of seven chapters address AI-related topics. The episode description frames Meta through the "social media addiction lawsuit" and treats OpenAI personnel/deals as a separate business story. No chapter connects the settlement's regulatory precedent to AI lab risk — despite AG Skrmetti's explicit AI statement being publicly available on FOX Business before the TITV taping.
+
+**Entity Coverage Assessment:**
+- **Meta:** Accountability frame throughout Chapter 1 — "social media case," "addiction," settlement terms.
+- **OpenAI:** Business/personnel frame in Chapter 7 — executive departures, Salesforce destination, Hugging Face M&A.
+- **Anthropic:** Not mentioned in accessible episode description.
+- **Bill Gates:** AI warning treated as industry commentary (Chapter 4), not connected to regulatory enforcement.
+
+**Financial Context — CRITICAL FOR CONFOUNDER VALIDATION:**
+The Information is a SUBSCRIPTION-ONLY publication:
+- Revenue: $449/year individual subscriptions
+- Advertising: NONE
+- AI content licensing deals: NONE (no OpenAI, Google, Anthropic deals identified)
+- IPO underwriter dependency: NONE
+- Parent company: Independent (founded by Jessica Lessin)
+
+This makes TITV a NATURAL EXPERIMENT for mechanism #328: if financial incentives were the primary driver of settlement-AI compartmentalization, a financially independent outlet should NOT replicate the pattern. The Information DOES replicate it — same-episode compartmentalization of Meta settlement and AI lab coverage — STRENGTHENING the genre/cultural consensus confounder for #328 and WEAKENING the financial causation argument.
+
+**Sentiment Score (re: settlement regulatory precedent):** -5/10 (Meta-negative, AI labs absent)
+**Asymmetry Assessment:** LOW (0.22) — The finding is HONEST: it weakens the financial incentive hypothesis rather than confirming it. The compartmentalization appears to be a genre convention that operates independently of financial relationships.
+
+**Confounders:**
+- STRONG: The Information is subscription-only with no AI lab financial ties, yet replicates the compartmentalization pattern. This is the single strongest piece of confounder evidence in the settlement-week dataset.
+- MODERATE: Beat structure — TITV uses segment-based production where different producers prepare different chapters. Editorial compartmentalization may reflect production workflow, not editorial policy.
+- MODERATE: The Information may not have covered the FOX Business/Skrmetti interview before taping. However, 24 hours elapsed between the settlement and the TITV episode.
+
+---
+
+### 83. CNBC Jonathan Vanian — Meta Settlement + AI Lab Cross-Beat Separation (Aug 26-27, 2026)
+
+- **Publication:** CNBC (Comcast/NBCUniversal)
+- **Reporter:** Jonathan Vanian
+- **Source URL:** https://muckrack.com/jonathan-vanian/articles
+- **Portfolio dates:** August 11-27, 2026
+
+**Coverage Summary:**
+Vanian published multiple Meta settlement articles ("Meta settles social media addiction case with California, other states for $16.7 billion"; "After Meta's landmark settlement with state AGs, legal headaches remain") alongside AI lab coverage ("How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta"; "Meta debuts first AI coding agent to take on Anthropic and OpenAI"). The same reporter covers BOTH Meta child safety litigation AND AI labs in adjacent articles — but never connects settlement regulatory precedent to AI chatbot companies in the settlement pieces.
+
+**Entity Coverage Assessment:**
+- Settlement articles: Meta accountability, AG enforcement, TikTok/YouTube comparison — standard industry frame.
+- AI lab articles: Security/competition frame — OpenAI, Anthropic as technology players, not regulatory targets.
+- Cross-reference: ZERO. The settlement regulatory precedent (AG Skrmetti: "artificial intelligence and other child-facing platforms") does not appear in settlement articles despite Vanian's demonstrated familiarity with OpenAI/Anthropic.
+
+**Financial Context:**
+CNBC is owned by Comcast/NBCUniversal. It has tech advertising relationships (Meta, Google, Apple, Samsung, Amazon) and general ad revenue dependency, but no specific AI content licensing deals. The compartmentalization here likely reflects beat conventions and editorial workflow rather than financial incentive — strengthening the cultural consensus finding from TITV (#82).
+
+**Sentiment Score:** -5/10 (Meta settlement coverage: accountability frame; AI lab coverage: neutral/aspirational)
+**Asymmetry Assessment:** MODERATE — Vanian's demonstrated ability to cover both Meta litigation and AI labs, without connecting them in the settlement context, is evidence of beat-structure compartmentalization.
+
+---
+
+### Cross-Surface Pattern Summary Updated: Settlement Week (Aug 20-27, 2026) — 11 Surfaces
+
+| Surface | Medium | AI Lab? | Financial Tie | Date |
+|---------|--------|---------|---------------|------|
+| FOX Business (Skrmetti) | TV/Print | **YES** | None with AI labs | Aug 26 |
+| CNN (Duffy) | Print | NO | Meta + Google/AWS | Aug 26 |
+| Reuters | Print | NO | AI lab content | Aug 26 |
+| AP | Print | NO | AI lab content | Aug 26 |
+| WSJ (Bobrowsky) | Print | NO | $250M OpenAI + Anthropic | Aug 26 |
+| Bloomberg Tech | Podcast | NO | Terminal/IPO underwriters | Aug 26 |
+| Vergecast | Podcast | NO | Vox/Google ad revenue | Aug 26 |
+| WSJ Tech News Briefing | Podcast | NO | $250M OpenAI + Anthropic | Aug 26 |
+| **TITV (The Information)** | **Podcast** | **NO** | **Subscription only** | **Aug 27** |
+| **CNBC (Vanian)** | **Print** | **NO** | **Comcast/NBCU ads** | **Aug 26-27** |
+| **CNN Video** | **Broadcast** | **NO** | **Meta + Google/AWS** | **Aug 26** |
+
+**Updated statistics:** 1/11 surfaces (9.1%) included AI lab connection. Financial tie predicts omission (9/9 = 100%). Absence of financial tie does NOT predict inclusion (1/2 = 50%). CULTURAL CONSENSUS CONFOUNDER VALIDATED.
+

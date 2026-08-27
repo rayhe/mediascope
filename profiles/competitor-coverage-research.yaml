@@ -32681,3 +32681,124 @@ publications:
         on expansion'
     - mechanism_id: 299
       relationship: parallel — Gizmodo OpenAI ad infrastructure maturation coverage selection silence
+
+  subscription_only_cultural_consensus_settlement_compartmentalization:
+    mechanism_id: 339
+    type: podcast_sentiment_tracking
+    date: '2026-08-27'
+    title: Subscription-Only Publication Same-Episode Settlement-AI Compartmentalization — Cultural
+      Consensus Confounder Validation
+    publication: cross_publication
+    entities:
+      primary: meta
+      comparators:
+      - openai
+      - anthropic
+    core_finding: 'The Information TITV video podcast (Aug 27, 2026) covers Meta $18B child safety
+      settlement AND OpenAI executive departures AND AI M&A AND Bill Gates AI warning in the same
+      41-minute episode with zero cross-reference between settlement regulatory precedent and AI
+      lab risk. The Information is subscription-only ($449/year), has no advertising revenue, no
+      AI content licensing deals, and no IPO underwriter terminal dependency. This makes it a
+      critical natural experiment for mechanism #328. The Information REPLICATING the compartmentalization
+      pattern WITHOUT financial incentives STRENGTHENS the genre/cultural consensus confounder and
+      WEAKENS the financial causation argument. Additionally, CNBC Jonathan Vanian covers both Meta
+      child safety litigation (4+ articles Aug 11-27) and AI lab stories but never cross-references
+      settlement precedent with AI chatbot companies. CNN video broadcast replicates print omission.
+      Updated cross-medium score: 1/11 surfaces (9.1%) included AI lab connection; the ONLY surface
+      to include it (FOX Business) has no AI lab financial ties, but The Information (also no ties)
+      omitted it, meaning absence of financial entanglement does NOT predict inclusion. Financial
+      entanglement predicts omission (10/10) but genre structure explains it at least as well.'
+    hypothesis_impact: weakens_financial_causation
+    surfaces_tested:
+    - surface: FOX Business
+      medium: TV/Print
+      included_ai_lab: true
+      financial_relationship: none_with_ai_labs
+    - surface: CNN (Clare Duffy)
+      medium: print
+      included_ai_lab: false
+      financial_relationship: meta_google_aws
+    - surface: Reuters
+      medium: print
+      included_ai_lab: false
+      financial_relationship: ai_lab_content
+    - surface: AP
+      medium: print
+      included_ai_lab: false
+      financial_relationship: ai_lab_content
+    - surface: WSJ (Bobrowsky)
+      medium: print
+      included_ai_lab: false
+      financial_relationship: openai_250m_anthropic
+    - surface: Bloomberg Tech
+      medium: podcast
+      included_ai_lab: false
+      financial_relationship: terminal_ipo_underwriters
+    - surface: Vergecast
+      medium: podcast
+      included_ai_lab: false
+      financial_relationship: vox_google_ad_revenue
+    - surface: WSJ Tech News Briefing
+      medium: podcast
+      included_ai_lab: false
+      financial_relationship: openai_250m_anthropic
+    - surface: TITV (The Information)
+      medium: podcast
+      included_ai_lab: false
+      financial_relationship: subscription_only_no_deals
+    - surface: CNBC (Vanian)
+      medium: print
+      included_ai_lab: false
+      financial_relationship: comcast_nbcu_ad_revenue
+    - surface: CNN Video
+      medium: broadcast
+      included_ai_lab: false
+      financial_relationship: meta_google_aws
+    statistics:
+      total_surfaces: 11
+      surfaces_including_ai_lab: 1
+      inclusion_rate: 0.091
+      financially_tied_omission_rate: 1.0
+      financially_independent_inclusion_rate: 0.5
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: 'Genre structure: tech news inherently compartmentalizes by company and topic.
+        Settlement reporting and AI lab business reporting are structurally separate story types
+        regardless of financial incentives.'
+      adjustment: -0.15
+    - id: C2
+      strength: STRONG
+      description: 'Beat assignment: settlement reporters are typically not AI lab reporters. Jonathan
+        Vanian covers both at CNBC but in separate articles. TITV uses different segment producers.'
+      adjustment: -0.12
+    - id: C3
+      strength: STRONG
+      description: 'The Information replicates pattern without financial incentive. This is the
+        strongest confounder evidence in the entire settlement-week dataset — if a financially
+        independent outlet produces the same editorial structure, financial incentives are
+        insufficient to explain the pattern alone.'
+      adjustment: -0.15
+    - id: C4
+      strength: MODERATE
+      description: 'News cycle speed: connecting Meta settlement regulatory precedent to AI chatbot
+        risk requires analytical synthesis that breaking-news coverage does not typically perform.
+        TITV airs daily and could have connected them but editorial convention does not require it.'
+      adjustment: -0.06
+    raw_score: 0.70
+    adjusted_score: 0.22
+    cross_references:
+    - mechanism_id: 328
+      relationship: 'validates confounder — TITV finding strengthens the genre confounder for
+        mechanism #328 by demonstrating subscription-only publication replicates compartmentalization'
+    - mechanism_id: 333
+      relationship: 'extends — adds subscription-only publication to the podcast settlement-week
+        cross-surface dataset'
+    - mechanism_id: 326
+      relationship: 'parallel — TITV same-episode compartmentalization mirrors WSJ same-day
+        register bifurcation'
+    source_urls:
+    - https://www.theinformation.com/titv/jo9tx
+    - https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
+    - https://muckrack.com/jonathan-vanian/articles
+    - https://www.youtube.com/watch?v=5xniF9sqVpo
