@@ -12998,3 +12998,66 @@ to match the `cross_publication_findings`/`publications` section convention).
 - iteration-log.md (this entry)
 
 **Tests:** 12/12 new passing. 40/40 financial_relationships passing (regression check).
+
+---
+
+## Iteration #327 — Thu 2026-08-27 07:00 PT (Type D: Test & Verify)
+
+### Focus: Settlement-Week Cross-Validation + Dependency Fix
+
+**Type:** Test & Verify
+**Test file:** `tests/test_type_d_07am_cross_validation_aug27.py`
+
+**INFRASTRUCTURE FIX:**
+
+Resolved 39 test collection errors affecting all legacy `mediascope.analysis` 
+tests. Root cause: `textblob` and `vaderSentiment` packages were listed in 
+`requirements.txt` but not installed on the runtime. The packages are imported 
+by `mediascope.analyze.sentiment` — every test importing that module (39 files, 
+~900 tests) failed at collection with `ModuleNotFoundError`.
+
+Fix: `pip install textblob vaderSentiment --break-system-packages`
+
+Verified all 39 previously-failing test files now pass:
+- Batch 1 (3 files): 80 passed
+- Batch 2 (18 files): 358 passed, 19 xfailed  
+- Batch 3 (18 files): 481 passed, 4 xfailed
+
+**CROSS-VALIDATION RESULTS:**
+
+New test file validates mechanisms #333–#338 (settlement-week cluster):
+
+1. **Mechanism Existence (7 tests):** All 6 mechanisms (333–338) exist in 
+   `competitor-coverage-research.yaml` with correct semantic content
+2. **Confounder Quality (3 tests):** 
+   - #333 (podcast convergence) has confounders documented
+   - #337 (WSJ bifurcation) correctly identifies beat assignment as confounder
+   - #338 (insurance denial) has STRONG confounders for legal specificity
+3. **Cross-References (1 test):** #338 references other settlement-week mechanisms
+4. **Entity Consistency (2 tests):** #338 has Meta as primary entity with 
+   Anthropic/OpenAI comparators
+5. **Asymmetry Score Validation (2 tests):**
+   - #338 score in valid [0, 1] range
+   - #337 adjusted score < 0.5 (confirms strong confounders reduce score)
+6. **Dependency Chain (4 tests):** textblob, vaderSentiment, yaml, and 
+   mediascope.analyze.sentiment all import successfully
+7. **Natural Experiment Validation (2 tests):**
+   - >= 6 mechanisms reference settlement/IPO content
+   - Settlement-week spans >= 3 publications
+
+**All 21 tests PASS.**
+
+**SETTLEMENT-WEEK SEARCH VERIFICATION:**
+
+Searched for WIRED coverage of both the Meta $18B settlement and Anthropic 
+$30T TAM/$2T IPO stories (Aug 25–27, 2026). WIRED does NOT appear in search 
+results for either event. CNN (2 articles), Reuters (3 articles), TechCrunch 
+(2 articles), AP, Amnesty International, WSJ, MarketWatch, CoinDesk, 
+VentureBeat, Gizmodo, and Gadget Review all published coverage. WIRED's 
+absence on the settlement is notable given it is the primary Condé Nast 
+tech publication tracked in the dataset, though search indexes may lag.
+
+**STATS:**
+- Total test files: 651
+- Total tests: 23,070
+- Previously-blocked tests: 39 files (~900 tests) now passing
