@@ -1,3 +1,57 @@
+## Iteration #332 — Thu 2026-08-27 16:00 PT (Type D: Test & Verify)
+
+### Focus: Settlement-Week Cross-Validation — YAML Fix, Test File Integrity, Duplicate Mechanism Dedup
+
+**Type:** Test & Verify
+**Tests:** 101 passed, 2 skipped (new test file: test_type_d_4pm_cross_validation_aug27.py)
+
+**FIXES APPLIED:**
+
+1. **YAML Parse Error Fix (Critical):**
+   - `profiles/competitor-coverage-research.yaml` had a YAML syntax error at line 33172
+   - `meta_framing: "Designed to fail," inadequate, willful negligence` — embedded double quotes
+     broke `yaml.safe_load`
+   - Fix: Single-quote wrapped the value: `'"Designed to fail," inadequate, willful negligence'`
+   - This was blocking `test_type_d_aug6_cross_validation.py` and `test_type_d_09am_cross_validation_aug16.py`
+
+2. **Missing test_file Fields (6 mechanisms):**
+   - #338 (meta_insurance_denial): → test_meta_insurance_denial_asymmetric_financial_materiality_ai_lab_precedent_gap_aug27.py
+   - #339 (subscription_cultural_consensus): → test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py
+   - #341 (going_rogue_vocabulary_convergence): → test_cross_publication_going_rogue_agency_deflection_vocabulary_convergence_aug27.py
+   - #342 (wsj_youtube_child_safety): → test_wsj_news_corp_google_youtube_child_safety_settlement_coverage_accountability_asymmetry_aug27.py
+   - #343 (ap_wire_service_vocabulary): → test_barbara_ortutay_ap_cross_entity_settlement_week_accountability_vocabulary_bifurcation_aug27.py
+   - #344 (settlement_conditional_clause): → test_meta_settlement_conditional_clause_chatgpt_ads_regulatory_boundary_financial_architecture_aug27.py
+
+3. **Duplicate Mechanism ID Fix:**
+   - `publications.rebecca_bellan_control_vocabulary_inversion` and
+     `cross_publication_findings.rebecca_bellan_techcrunch_cross_entity_control_vocabulary_inversion`
+     both had mechanism_id: 305
+   - Renumbered the publications entry to 345
+
+4. **README Doc Sync:**
+   - Updated test file count: 652 → 660
+   - Updated total test count: ~22,061 → ~23,386
+
+5. **textblob Dependency:**
+   - Installed missing `textblob` package that was causing 38 test collection errors
+   - All previously-errored tests now pass (verified in 4 batches: 332+181+362+332 passed)
+
+**TEST COVERAGE OF NEW FILE (101 tests, 8 classes):**
+  - TestYAMLIntegrity: YAML parse validation, meta_framing quoting, top-level keys
+  - TestSettlementWeekMechanismStructure: existence, type, test_file, title for #335-#344
+  - TestSettlementWeekConfounderQuality: #344 confounder presence, STRONG confounders with counters
+  - TestAug27TestFileImportability: 15 aug27 test files exist with valid Python syntax
+  - TestDocSync: README file/test counts match disk
+  - TestCrossReferenceIntegrity: #344 cross-refs point to valid mechanisms
+  - TestSettlementWeekCoveragePattern: concurrent events documented, financial architecture present
+  - TestRegressionGuards: mechanism ID contiguity, prior mechanisms intact
+
+**STATS UPDATE:**
+  - 302 mechanisms (highest: #345)
+  - 660 test files
+  - ~23,386 tests
+  - 0 duplicate mechanism IDs
+
 ## Iteration #331 — Thu 2026-08-27 15:00 PT (Type C: Financial Incentive Mapping)
 
 ### Focus: Meta Settlement Conditional Clause + ChatGPT Ads Europe Regulatory Boundary Financial Architecture
