@@ -12278,3 +12278,57 @@ in trade press (editorial gap, not institutional). AI licensing still ~2-7% of r
 - iteration-log.md (this entry)
 
 **Tests:** 33/33 new passing (0.56s). Total: 21,541+ tests across 626 files.
+
+---
+
+## Iteration #320
+**Date:** August 26, 2026, 20:00 PT
+**Type:** B (Journalist Cross-Entity Tracking)
+**Mechanism:** #330
+
+### Finding: Lucas Ropek / TechCrunch — Same-Day Aug 26 Settlement vs Infrastructure Vocabulary Bifurcation
+
+On August 26, 2026, TechCrunch published two major stories within 70 minutes:
+1. Lucas Ropek's Anthropic $45B Nscale deal — aspirational register ("compute-gobbling streak,"
+   "aggressively scaled up," "spree of compute partnerships," "enthusiastic pursuit"), zero alarm
+   for $45B commitment from company with $42B net loss
+2. Meta $18B child-safety settlement — skeptical register ("hinges on age-verification tech that
+   doesn't work well," "designed to keep children hooked," "common tactic for companies looking
+   to avoid a jury trial")
+
+**Key asymmetry:** The word "spree" appears aspirationally for Anthropic ("spree of compute
+partnerships") while Reuters uses "spending spree" as alarm vocabulary for identical Meta activity
+(mechanism #329). Same word, opposite register, keyed to entity.
+
+**Beat assignment pattern:** Ropek (AI beat) covers all Anthropic financial stories aspirationally
+(Volta $10B Aug 4, Nscale $45B Aug 26, watermarks Aug 23) and one minimal Meta product brief
+(Muse Code Aug 5). The biggest Meta legal story — $18B settlement — was routed to a different
+writer, ensuring the aspirational-register journalist never applies alarm vocabulary to Meta.
+
+**Financial architecture:** TechCrunch owned by Yahoo, controlled by Apollo Global Management.
+Apollo has $750M+ Anthropic investment, backstops Broadcom's $100B Anthropic financing
+(Aug 20), and backs the $1.5B Ode Anthropic-Blackstone consulting JV (WSJ Aug 21).
+
+**Confounders (4):** C1 (STRONG): child safety legitimate concern, -0.12. C2 (MODERATE): infrastructure
+deals legitimately require growth vocabulary, -0.05. C3 (MODERATE): different story types use
+different registers, -0.05. C4 (WEAK): beat assignment is standard practice, -0.02.
+
+**Asymmetry score:** Raw 0.55 → Adjusted 0.31 (modest after confounders, but zero alarm for
+$42B Anthropic loss vs skeptical framing for Meta's $1.8B/year settlement remains unexplained).
+
+**Cross-references:** #269 (Ropek camera vocabulary), #329 (Reuters infrastructure vocabulary),
+#328 (settlement IPO containment).
+
+**Sources:**
+- https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
+- https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+- https://techcrunch.com/author/lucas-ropek/
+- https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+- https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
+
+**Files changed:**
+- tests/test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py (NEW, 28 tests, 9 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #330 added)
+- iteration-log.md (this entry)
+
+**Tests:** 28/28 new passing. Total: ~21,569+ tests across 640 files.

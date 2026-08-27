@@ -31888,3 +31888,101 @@ publications:
       - https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
       - https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
       - https://news.bloomberglaw.com/ip-law/thomson-reuters-in-talks-with-ai-firms-over-licensing-deals-2
+  techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation:
+    mechanism_id: 330
+    finding_summary: |
+      On August 26, 2026, TechCrunch published two major stories within 70 minutes:
+      (1) Lucas Ropek's Anthropic $45B Nscale deal — aspirational register ("compute-gobbling streak,"
+      "aggressively scaled up," "spree of compute partnerships," "enthusiastic pursuit"), zero alarm
+      for $45B commitment from company with $42B net loss;
+      (2) Meta $18B child-safety settlement — skeptical register ("hinges on age-verification tech
+      that doesn't work well," "designed to keep children hooked," "common tactic for companies
+      looking to avoid a jury trial"). Beat assignment routes aspirational entity stories to the
+      AI beat reporter (Ropek) and adversarial entity stories to a different pipeline, creating
+      editorial division where the aspirational-register journalist never applies alarm vocabulary
+      to Meta. TechCrunch is owned by Yahoo, which is controlled by Apollo Global Management.
+      Apollo has $750M+ Anthropic investment, backstops Broadcom's $100B Anthropic financing,
+      and backs the $1.5B Ode consulting JV. Same word "spree" carries opposite connotations
+      per entity across TechCrunch/Reuters ecosystem.
+    date: '2026-08-26'
+    type: B
+    publication: TechCrunch
+    journalist: Lucas Ropek
+    competitor: Anthropic
+    articles_analyzed:
+      anthropic:
+        - title: "Anthropic continues compute-gobbling streak in $45B deal with Nscale"
+          date: '2026-08-26'
+          url: https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
+          author: Lucas Ropek
+          register: aspirational
+          key_vocabulary:
+            - "compute-gobbling streak"
+            - "aggressively scaled up"
+            - "spree of compute partnerships"
+            - "enthusiastic pursuit of more AI horsepower"
+          alarm_words: 0
+      meta:
+        - title: "Meta's $18B child-safety deal hinges on age-verification tech that doesn't work well"
+          date: '2026-08-26'
+          url: https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+          author: unknown (not Lucas Ropek)
+          register: skeptical
+          key_vocabulary:
+            - "hinges on age-verification tech that doesn't work well"
+            - "designed to keep children hooked"
+            - "common tactic for companies looking to avoid a jury trial"
+            - "resting on age-verification technology that still doesn't work particularly well"
+          alarm_words: 4
+    beat_assignment_pattern:
+      ropek_anthropic_articles_aug_2026:
+        - "Anthropic signs $10B deal with AI cloud startup Volta (Aug 4)"
+        - "Some Claude users are mad about watermarks (Aug 23)"
+        - "Anthropic continues compute-gobbling streak (Aug 26)"
+      ropek_meta_articles_aug_2026:
+        - "Meta launches Muse Code (Aug 5, In Brief)"
+      observation: "AI beat reporter covers Anthropic financial stories aspirationally; biggest Meta legal story of the day assigned to different writer"
+    financial_architecture:
+      ownership_chain: "Apollo Global Management → Yahoo (majority stake 2024) → TechCrunch (acquired 2021)"
+      apollo_anthropic_investment: "$750M+ (2024)"
+      apollo_broadcom_backstop: "$60-100B debt facility benefiting Anthropic (Aug 20, 2026)"
+      apollo_ode_jv: "$300M Apollo commitment to $1.5B Anthropic-Blackstone consulting JV"
+    confounders:
+      - id: C1
+        strength: STRONG
+        description: "Child safety is real concern, age verification technically challenging; skepticism partly justified"
+        adjustment: -0.12
+      - id: C2
+        strength: MODERATE
+        description: "Anthropic infrastructure deals legitimately require growth-register vocabulary"
+        adjustment: -0.05
+      - id: C3
+        strength: MODERATE
+        description: "Legal settlements vs business deals inherently use different registers"
+        adjustment: -0.05
+      - id: C4
+        strength: WEAK
+        description: "Beat assignment is standard editorial practice"
+        adjustment: -0.02
+    asymmetry_score:
+      raw: 0.55
+      adjusted: 0.31
+      explanation: "Strong confounders (C1 especially) reduce but don't eliminate asymmetry; zero alarm for $42B Anthropic loss vs skeptical framing for Meta's $1.8B/year settlement remains unexplained"
+    cross_references:
+      - mechanism_id: 269
+        relationship: extends
+        description: "Same journalist (Ropek) camera glasses privacy vocabulary omission — different finding, same editorial division pattern"
+      - mechanism_id: 329
+        relationship: parallels
+        description: "Reuters infrastructure spending vocabulary bifurcation (same day) — same entity pair, different publication"
+      - mechanism_id: 328
+        relationship: contextualizes
+        description: "Meta settlement IPO underwriter regulatory liability containment — Apollo's role in both editorial and financial architecture"
+    test_file: tests/test_lucas_ropek_techcrunch_same_day_settlement_infrastructure_vocabulary_bifurcation_aug26.py
+    test_count: 25
+    source_urls:
+      - https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/
+      - https://techcrunch.com/2026/08/26/metas-18b-child-safety-deal-hinges-on-age-verification-tech-that-doesnt-work-well/
+      - https://techcrunch.com/author/lucas-ropek/
+      - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
+      - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
