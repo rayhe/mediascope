@@ -32038,3 +32038,53 @@ publications:
       relationship: complements
     - mechanism_id: 330
       relationship: context
+  - mechanism_id: 332
+    name: "Publisher GEO Content Architecture Transformation — Financial Dependency Acceleration"
+    date_discovered: "2026-08-26"
+    category: financial_incentive_mapping
+    finding: >
+      Publishers are actively restructuring content architecture (markdown conversion,
+      agent-readable site versions, metadata optimization) specifically to attract AI
+      licensing deals, creating sunk-cost financial lock-in that intensifies coverage
+      asymmetry. USA Today Co (CEO Reed, earnings call Aug 6) confirmed "format content
+      for humans and machines" + 99% bot blocking. Time, The Economist building parallel
+      agent-readable sites. This extends the 48% citation premium (mechanism #249) from
+      passive observation to active publisher-side investment dependency.
+    publications_affected:
+    - "USA Today Co / Gannett"
+    - "Time"
+    - "The Economist"
+    - "The Atlantic"
+    - "People Inc."
+    - "Reuters"
+    evidence:
+    - url: https://digiday.com/media/usa-today-co-is-reformatting-content-to-attract-more-ai-licensing-deals/
+      description: USA Today Co GEO strategy — markdown conversion, 99% bot blocking, advertiser LLM visibility
+    - url: https://lifestyle.houstonnewstoday.com/story/833738/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt/
+      description: Press Ranger/OtterlyAI 48% citation premium quantification
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: GEO may improve content quality for humans too (dual benefit)
+      adjustment: -0.10
+    - id: C2
+      strength: STRONG
+      description: Editorial independence from business strategy
+      adjustment: -0.12
+    - id: C3
+      strength: MODERATE
+      description: Bot blocking is defensive copyright protection, not just deal leverage
+      adjustment: -0.05
+    - id: C4
+      strength: MODERATE
+      description: Machine-readable formats are general web standards evolution
+      adjustment: -0.05
+    raw_score: 0.70
+    adjusted_score: 0.38
+    cross_references:
+    - mechanism_id: 249
+      relationship: extends
+    - mechanism_id: 294
+      relationship: extends
+    - mechanism_id: 331
+      relationship: complements

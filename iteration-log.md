@@ -1,3 +1,140 @@
+## Iteration #321 — Wed 2026-08-26 23:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Publisher GEO Content Architecture Transformation — Sunk-Cost Financial Dependency Acceleration
+
+**Type:** Financial Incentive Mapping
+**Mechanism:** #332 — Publisher GEO Content Architecture Transformation
+**Primary Source:** Digiday (Sara Guaglione, Aug 26, 2026)
+**Supporting Sources:** Press Ranger/OtterlyAI (Aug 20), WSJ Apple Siri (Aug 12), Press Gazette Google deals (Aug 2026)
+
+**CORE FINDING:**
+
+Publishers are actively restructuring their content architecture — converting webpages
+to markdown, creating parallel agent-readable site versions, building machine-optimized
+metadata — specifically to attract and maximize AI content licensing deals. This transforms
+publishers from passive content sellers into active participants in AI financial dependency,
+creating sunk-cost lock-in that intensifies coverage incentive asymmetry against Meta.
+
+**KEY DATA POINTS:**
+
+- USA Today Co CEO Mike Reed (earnings call Aug 6, 2026): "create and format content for
+  humans and for machines"
+- SVP Product Kara Chiles: testing markdown conversion, structured content modules,
+  metadata optimization for GEO/AEO
+- 99% of self-identified AI bots blocked; only paid partners whitelisted
+- Planning "branded/sponsored content visible to LLMs as an advertiser value"
+  (new third revenue channel beyond licensing + citations)
+- Time, The Economist: parallel agent-readable site versions
+- The Atlantic, People Inc., Reuters, Time: default bot blocking + whitelisting
+
+**FINANCIAL DEPENDENCY ARCHITECTURE:**
+
+Four-layer sunk-cost model:
+1. Layer 1 — Licensing payment: annual fee from AI company
+2. Layer 2 — Citation premium: 48% more ChatGPT citations (Press Ranger/OtterlyAI data)
+3. Layer 3 — GEO infrastructure: engineering investment in markdown, whitelisting, metadata
+4. Layer 4 — Advertiser GEO: branded content visible to LLMs as new ad product
+
+**META ASYMMETRY:**
+Meta has ZERO publisher content licensing deals. Publishers investing in GEO are investing
+in relationships with OpenAI, Google, Apple, Anthropic, Perplexity — every major AI
+competitor except Meta. The GEO investment creates structural financial incentive to
+maintain favorable coverage of deal partners, and zero incentive for favorable Meta coverage.
+
+**CONFOUNDERS (5 total, 2 STRONG):**
+1. STRONG: GEO may improve content quality for humans too (dual benefit)
+2. STRONG: Editorial independence from business strategy
+3. MODERATE: Bot blocking is defensive, not just deal leverage
+4. MODERATE: Machine-readable formats are general web evolution
+5. WEAK: Small publishers cannot afford GEO investment
+
+**ASYMMETRY SCORE:** 0.38 (elevated for sunk-cost lock-in, moderated by 2 STRONG confounders)
+
+**Test file:** `tests/test_publisher_geo_content_architecture_financial_dependency_acceleration_aug26.py` (23 tests, 8 classes)
+
+**Commits:**
+- tests/test_publisher_geo_content_architecture_financial_dependency_acceleration_aug26.py (NEW)
+- profiles/competitor-coverage-research.yaml (mechanism #332 added)
+
+**Sources:**
+- Digiday: "USA Today Co is reformatting content to attract AI licensing deals" (Aug 26, 2026)
+  https://digiday.com/media/usa-today-co-is-reformatting-content-to-attract-more-ai-licensing-deals/
+- Press Ranger/OtterlyAI: "Publishers With OpenAI Deals Earn 48% More AI Citations" (Aug 20, 2026)
+  https://lifestyle.houstonnewstoday.com/story/833738/press-ranger-and-otterlyai-release-study-showing-publishers-with-openai-deals-earn-48-more-ai-citations-on-chatgpt/
+- WSJ: "Apple in Talks to Pay Publishers to Improve AI-Powered Siri" (Aug 12, 2026)
+  https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+- Press Gazette: "Google AI deals offer publishers short-term gain but long-term woe" (Aug 2026)
+  https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+- Engadget: "Perplexity Comet Plus publisher revenue sharing" (2026)
+  https://www.engadget.com/ai/perplexity-has-cooked-up-a-new-way-to-pay-publishers-for-their-content-204255019.html
+
+---
+
+## Iteration #320 — Wed 2026-08-26 22:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Shirin Ghaffary Cross-Employer Beat Migration — Vocabulary Register Shift Natural Experiment
+
+**Type:** Journalist Cross-Entity Tracking
+**Journalist:** Shirin Ghaffary
+**Publications:** Recode/Vox (2017-2023) → Bloomberg News/Bloomberg Law (2023-present)
+**Mechanism:** #330 — Cross-Employer Beat Migration Vocabulary Register Alignment
+
+**CORE FINDING:**
+
+Ghaffary's career trajectory creates a natural experiment: the SAME journalist covers
+DIFFERENT entities at publications with DIFFERENT financial incentive structures, and
+produces measurably different vocabulary registers.
+
+**Phase 1 — Meta at Recode/Vox (PMC, Google ad dependent):**
+- Senior correspondent, social media policy and politics
+- Co-hosted "Land of the Giants" podcast (Facebook/Meta season with Alex Heath)
+- Vocabulary: "mixed legacy," "unprecedented transition," "biggest critics," "internal turmoil"
+- Register: accountability/adversarial
+
+**Phase 2 — Anthropic at Bloomberg (terminal/IPO ecosystem revenue):**
+- Reporter covering AI companies, primarily Anthropic
+- By-lined: Anthropic $1.5B copyright settlement, $965B valuation, mega-IPO (matching SpaceX)
+- Vocabulary: "$965 billion juggernaut," "fastest-growing startups of all time," "monumental
+  achievement," "aggressive growth trajectory," "overwhelming demand from investors"
+- Register: aspirational/market-growth
+- Anthropic's $1.5B settlement for downloading 7M pirated books: neutral "Author Copyright Deal"
+  headline, no alarm vocabulary despite substantive misconduct
+
+**FINANCIAL INCENTIVE ALIGNMENT:**
+- Vox Media/PMC: Google programmatic ad revenue → structural incentive against Google competitor Meta
+- Bloomberg LP: Terminal subscriptions from financial services → IPO underwriter clients benefit
+  from aspirational Anthropic narrative that drives trading/research activity
+
+**CONFOUNDERS (5 total, 2 STRONG):**
+1. STRONG: Entity situation genuinely differs (Meta 2020-23 controversies vs Anthropic growth)
+2. STRONG: Career maturation to prestige outlet naturally shifts register
+3. MODERATE: Bloomberg vs Vox editorial culture produces different vocabulary regardless
+4. MODERATE: AI beat newer and less adversarial industry-wide than social media accountability beat
+5. WEAK: Beat assignment itself may reflect publication financial incentives
+
+**ASYMMETRY SCORE:** 0.29 (heavily moderated by 2 STRONG confounders)
+
+**KEY DISTINCTION:** Finding is STRUCTURAL, not about individual compromise. Beat reporters
+naturally absorb their publication's institutional vocabulary. The same reporter produces
+different registers because the institutional incentive structure changes the editorial environment.
+
+**Test file:** `tests/test_shirin_ghaffary_cross_employer_beat_migration_vocabulary_register_shift_aug26.py` (23 tests)
+
+**Sources:**
+- Vox Media: "Land of the Giants: Facebook/Meta Disruption" (Jul 13, 2022)
+  https://www.voxmedia.com/2022/7/13/23206829/vox-medias-land-of-the-giants-podcast-launches-its-latest-season-about-facebooks-pivot-to-meta/
+- Bloomberg Law: "Anthropic to Pay $1.5B Author Copyright Deal"
+  https://news.bloomberglaw.com/california-brief/anthropic-to-pay-1-5b-author-copyright-deal
+- Bloomberg: "Anthropic Expects to Match or Top SpaceX's Record IPO Size" (Aug 20, 2026)
+- Bloomberg: "Global capitalism bets it all on AI" (Jul 12, 2026)
+- Bloomberg: "Anthropic Valuation Surges to $965B" (Ghaffary on Bloomberg Technology)
+- Talking Biz News: Ghaffary career history
+  https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
+- Muck Rack: Shirin Ghaffary article archive
+  https://muckrack.com/shiringhaffary/articles
+
+---
+
 ## Iteration #319 — Wed 2026-08-26 19:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: Reuters Infrastructure Spending Vocabulary Bifurcation — Anthropic vs Meta

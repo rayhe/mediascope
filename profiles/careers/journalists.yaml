@@ -15857,7 +15857,7 @@ journalists:
   name: Shirin Ghaffary
   notes: 'Career: BuzzFeed News → Elementum (tech industry) → Recode/Vox → Bloomberg. UC Berkeley BA. Bay Area native, raised
     in Silicon Valley next to Apple HQ. Executive news editor of Daily Californian. Interned at WSJ and TechCrunch. Co-hosted
-    Google season of "Land of the Giants" podcast. Publicly disclosed ethics statement (no individual stock ownership, no
+    "Land of the Giants" podcast. Publicly disclosed ethics statement (no individual stock ownership, no
     paid speaking from sources). KEY for MediaScope: (1) Recode/Vox → Bloomberg migration tests how Vox Media''s advocacy-journalism
     framing (Recode was founded by Kara Swisher, one of tech journalism''s most adversarial voices) adapts to Bloomberg''s
     financial-wire editorial norms; (2) her AI ethics/policy beat at Bloomberg is precisely where framing matters most — how
@@ -15865,7 +15865,18 @@ journalists:
     network (Mac, Tiku, Montgomery, Ghaffary) has now dispersed across NYT, WaPo, Guardian, and Bloomberg — testing whether
     shared editorial origins produce detectable framing similarities across institutions; (4) her Silicon Valley upbringing
     and tech industry experience (Elementum) give her insider perspective that may moderate or amplify adversarial framing
-    depending on institutional context.'
+    depending on institutional context.
+
+    (Updated Aug 26, 2026 — Iteration #320, Mechanism #330) CROSS-EMPLOYER VOCABULARY REGISTER SHIFT: Bloomberg-era coverage
+    now extensively documents Anthropic in aspirational register: "$965 billion juggernaut," "fastest-growing startups of all
+    time," "monumental achievement," "overwhelming demand from investors" (valuation, IPO projection articles Aug 2026).
+    Meanwhile $1.5B Anthropic copyright settlement (pirating 7M books) received neutral "Author Copyright Deal" headline with
+    no alarm vocabulary. Contrast with Recode-era Meta coverage that used accountability/crisis vocabulary: "mixed legacy,"
+    "unprecedented transition," "biggest critics," "internal turmoil." Asymmetry score 0.29 after heavy moderation by 2 STRONG
+    confounders: (a) entity situation genuinely differs (Meta 2020-23 controversies vs Anthropic 2024-26 growth), (b) career
+    maturation to prestige outlet naturally shifts register. Finding is STRUCTURAL, not about individual compromise — beat
+    reporters absorb publication institutional vocabulary, and that vocabulary aligns with each publication''s financial incentive
+    structure (Vox/PMC Google ad dependency vs Bloomberg terminal/IPO ecosystem revenue).'
   source_urls:
   - https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
   - https://non-stop.kr/recode/authors/shirin-ghaffary
