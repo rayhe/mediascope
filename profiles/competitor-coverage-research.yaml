@@ -32147,7 +32147,8 @@ publications:
       relationship: complements
     - mechanism_id: 330
       relationship: complements
-  - mechanism_id: 334
+  bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo:
+    mechanism_id: 334
     type: A
     title: "Bloomberg LP — Upstream Narrative Originator: Meta Settlement Legal Framing vs Anthropic IPO Aspirational Framing"
     publication: bloomberg
@@ -32228,3 +32229,83 @@ publications:
       relationship: "upstream_source — Bloomberg breaks Nscale deal that TechCrunch amplifies"
     - mechanism_id: 328
       relationship: "extends — IPO underwriter regulatory liability containment"
+
+  cnbc_vanian_government_action_vocabulary_register_inversion:
+    mechanism_id: 335
+    type: B
+    title: "Jonathan Vanian (CNBC) — Same-Journalist Government-Action Vocabulary Register Inversion"
+    journalist: "Jonathan Vanian"
+    publication: cnbc
+    date: "2026-08-27"
+    competitor: anthropic
+    test_file: tests/test_jonathan_vanian_cnbc_cross_entity_government_action_vocabulary_register_inversion_aug27.py
+    description: >
+      Jonathan Vanian covers both Meta and Anthropic for CNBC. When both
+      companies face adverse government action (Meta: multistate AG lawsuits
+      and $18B settlement; Anthropic: Pentagon supply-chain blacklisting),
+      his vocabulary registers invert. Meta gets accountability/punitive
+      vocabulary ("astronomical consequences," "court losses," "woes,"
+      "watershed event," "defeats"). Anthropic gets sympathetic/victimhood
+      vocabulary ("Pentagon's choice," "experts are worried," "banned").
+      When covering Meta's AI product launches competing with Anthropic,
+      subordination vocabulary appears: Meta "chases" Anthropic, framing
+      Meta as the follower despite both companies being active competitors.
+      CNBC is owned by NBCUniversal/Comcast. No direct Meta-CNBC or Anthropic-CNBC
+      AI content licensing deal was identified. The vocabulary register
+      difference may reflect structural audience-engagement incentives
+      (aspirational AI startup narratives vs. large-tech accountability stories)
+      rather than direct financial relationships.
+    entities:
+    - meta
+    - anthropic
+    publications:
+    - cnbc
+    evidence:
+    - source: "CNBC (Vanian)"
+      date: "2026-08-18"
+      url: "https://www.livemint.com/companies/news/meta-faces-astronomical-consequences-as-child-privacy-trial-in-california-could-change-instagram-facebook-forever-11786984834374.html"
+      observation: "Meta trial preview: 'astronomical consequences,' 'critical moment,' 'could change Instagram, Facebook forever.' Headline frames Meta's legal exposure as existential."
+    - source: "CNBC (Vanian)"
+      date: "2026-08-26"
+      url: "https://muckrack.com/jonathan-vanian/articles"
+      observation: "Meta settlement and NM verdict coverage cluster on Muck Rack: 'settles social media addiction case,' 'ordered to pay $567 million into abatement fund,' 'Reality Labs lost over $4.6 billion.' Consistent accountability/consequence register. Also: Mosseri 'doesn't tell team to hide anything' — defensive accountability framing."
+    - source: "CNBC (Vanian + Capoot)"
+      date: "2026-03-09"
+      url: "https://lawreview.syr.edu/when-ai-ethics-collide-with-national-security-anthropic-challenges-pentagon-blacklisting/"
+      observation: "Anthropic Pentagon ban: 'Pentagon's choice for AI. Now it's banned and experts are worried.' Merit-based selection language ('choice') followed by sympathetic concern framing ('worried'). No 'consequences' or 'accountability' vocabulary. Date confirmed via Syracuse Law Review citation: CNBC Mar. 9, 2026, 6:01 PM."
+    - source: "CNBC (Vanian)"
+      date: "2026-08-05"
+      url: "https://muckrack.com/jonathan-vanian/articles"
+      observation: "Meta AI product: 'Meta debuts first AI coding agent to take on Anthropic and OpenAI.' Subordination vocabulary — Meta as challenger taking on established leaders. Headline frames Meta as pursuer, Anthropic as the standard."
+    - source: "CNBC (Vanian)"
+      date: "2026-07-29"
+      url: "https://muckrack.com/jonathan-vanian/articles"
+      observation: "Meta AI capacity: 'Zuckerberg lays out Meta's AI capacity dilemma: What to sell vs. what to keep.' Problem-framing vocabulary ('dilemma') for Meta's AI strategy, per Muck Rack listing."
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: "Meta's child safety cases involve proven harm with internal documents and jury verdicts. Anthropic's Pentagon ban was politically motivated during Trump admin disputes. Genuinely different circumstances warrant different framing."
+      adjustment: -0.15
+    - id: C2
+      strength: STRONG
+      description: "Meta has a decade of privacy/safety controversies (Cambridge Analytica, Facebook Files). Anthropic has a 5-year record. Accumulated negative vocabulary reflects accumulated events."
+      adjustment: -0.12
+    - id: C3
+      strength: MODERATE
+      description: "Legal/regulatory stories inherently use accountability vocabulary by genre convention. The register difference may reflect topic rather than entity bias."
+      adjustment: -0.08
+    - id: C4
+      strength: MODERATE
+      description: "Different timelines (Aug vs. Mar 2026) and different news cycles may have influenced editorial priorities and vocabulary choices."
+      adjustment: -0.06
+    - id: C5
+      strength: WEAK
+      description: "Anthropic story co-bylined with Ashley Capoot, introducing a second editorial voice that may have softened vocabulary."
+      adjustment: -0.03
+    raw_score: 0.62
+    adjusted_score: 0.18
+    cross_references:
+    - mechanism_id: 330
+      relationship: "parallel — cross-employer vocabulary alignment, but here within a single employer"
+    - mechanism_id: 334
+      relationship: "extends — Bloomberg framing of Meta settlement uses same accountability vocabulary Vanian uses"

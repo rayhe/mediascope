@@ -12728,3 +12728,67 @@ regulatory liability containment).
 - iteration-log.md (this entry)
 
 **Tests:** 23/23 new passing.
+
+---
+
+## Iteration #325 — Type B: Journalist Cross-Entity Tracking
+**Date:** 2026-08-27 03:00 PDT
+**Journalist:** Jonathan Vanian (CNBC)
+**Mechanism:** #335 — Same-Journalist Government-Action Vocabulary Register Inversion
+
+**Finding:**
+Jonathan Vanian covers both Meta and Anthropic for CNBC. When both companies face
+adverse government action, his vocabulary registers invert:
+
+- META government action → accountability register: "astronomical consequences,"
+  "critical moment," "could change Instagram, Facebook forever," "ordered to pay
+  $567 million," "settles social media addiction case"
+- ANTHROPIC government action → sympathetic register: "Pentagon's choice for AI"
+  (merit language before ban), "experts are worried" (third-party concern),
+  "banned" (passive victim framing)
+- META AI product coverage → subordination register: "take on Anthropic and OpenAI"
+  (Meta as challenger), "first AI coding agent" (catching up)
+
+**Articles verified:**
+1. "Meta faces 'astronomical' consequences as legal fight reaches critical moment in
+   California" — Vanian, CNBC, ~Aug 17-18, 2026
+   Verified via LiveMint republication: https://www.livemint.com/companies/news/meta-faces-astronomical-consequences-as-child-privacy-trial-in-california-could-change-instagram-facebook-forever-11786984834374.html
+2. "Meta settles social media addiction case with California, other states for $16.7
+   billion" — Vanian, CNBC, Aug 26, 2026
+   Verified via Muck Rack: https://muckrack.com/jonathan-vanian/articles
+3. "Meta ordered to pay $567 million into abatement fund" — Vanian, CNBC, Aug 2026
+   Verified via Muck Rack
+4. "Anthropic was the Pentagon's choice for AI. Now it's banned and experts are worried"
+   — Vanian + Capoot, CNBC, Mar 9, 2026, 6:01 PM
+   Date confirmed via Syracuse Law Review citation: https://lawreview.syr.edu/when-ai-ethics-collide-with-national-security-anthropic-challenges-pentagon-blacklisting/
+5. "Meta debuts first AI coding agent to take on Anthropic and OpenAI" — Vanian, CNBC,
+   Aug 5, 2026. Date confirmed via Reuters, eWeek, Seoul Economic Daily.
+
+**Financial relationship:** No direct Meta-CNBC or Anthropic-CNBC AI content licensing
+deal identified. CNBC is NBCUniversal/Comcast. The vocabulary register difference may
+reflect structural audience-engagement incentives rather than direct financial relationships.
+
+**Confounders (5):**
+C1 (STRONG): Meta's child safety cases have internal docs + jury verdicts; Anthropic's
+   Pentagon ban was politically motivated. Genuinely different circumstances. -0.15
+C2 (STRONG): Meta has decade of controversies vs. Anthropic's 5-year track record. -0.12
+C3 (MODERATE): Legal/regulatory genre conventions inherently use accountability vocabulary. -0.08
+C4 (MODERATE): Different timelines (Aug vs. Mar 2026) may influence vocabulary choices. -0.06
+C5 (WEAK): Anthropic story co-bylined with Ashley Capoot. -0.03
+
+**Asymmetry score:** Raw 0.62 → Adjusted 0.18 (very conservative — total confounder
+deduction 0.44; the register inversion pattern is observable but heavily confounded).
+
+**Cross-references:** #330 (cross-employer vocabulary alignment), #334 (Bloomberg
+Meta settlement uses same accountability vocabulary Vanian uses).
+
+**Also fixed:** Mechanism #334's YAML formatting (was list item `- mechanism_id: 334`,
+converted to named dict key `bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo`
+to match the `cross_publication_findings`/`publications` section convention).
+
+**Files changed:**
+- tests/test_jonathan_vanian_cnbc_cross_entity_government_action_vocabulary_register_inversion_aug27.py (NEW, 12 tests)
+- profiles/competitor-coverage-research.yaml (mechanism #335 added, #334 format fix)
+- iteration-log.md (this entry)
+
+**Tests:** 12/12 new passing. 40/40 financial_relationships passing (regression check).
