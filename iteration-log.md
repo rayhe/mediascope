@@ -1,3 +1,59 @@
+## Iteration #323 — Thu 2026-08-27 01:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Post-Settlement Political-Investor Podcast Cross-Surface Financial Architecture Convergence
+
+**Type:** Podcast Sentiment Tracking
+**New mechanism:** #333 — Investor-Podcast-Publisher Financial Architecture Convergence
+**Cross-validates:** Iterations #318 (settlement-day compartmentalization), mechanisms #328, #329, #330
+**New podcast entries:** #79, #80, #81
+
+**CORE FINDING:**
+
+Settlement-week podcast/webinar surfaces (Aug 20-27) exhibit perfect compartmentalization
+between Meta-accountability and Anthropic-aspiration narratives. In a 7-day window:
+- Political podcasts (Bloomberg Balance of Power) frame Meta exclusively as the
+  settlement target with Gov. Spencer Cox (R-UT) saying "amount should have been much higher"
+- Investor webinars (ARK Invest mARKet Update) frame Anthropic's IPO aspirationally,
+  with run rate scaling from $9B to $75B and near-$1T cap
+- Public radio (WBUR/NPR) brings a Verge journalist's print frame into broadcast
+  without disclosing the financial dependencies
+
+Zero podcast surfaces connected Meta's $18B settlement to Anthropic's $2T IPO aspirations.
+
+**KEY DATA POINTS:**
+
+1. Bloomberg Balance of Power (Aug 26): Same-episode compartmentalization — AI-as-juggernaut
+   (Mark Zandi) and Meta-as-accountability (Gov. Cox) coexist without cross-reference.
+2. WBUR/NPR (Aug 26): Lauren Feiner (The Verge/Vox Media) carries print editorial frame
+   to national radio. Vox Media's Google ad dependency is a structural conflict given
+   Google/YouTube is settlement-adjacent — zero disclosure on either surface.
+3. ARK Invest (Aug 20): Cathie Wood's webinar presents Anthropic's IPO with aspirational
+   framing. ARK holds Anthropic pre-IPO in ARKVX — direct equity interest in maximizing
+   IPO valuation. The aspirational narrative parallels publications with Anthropic content
+   licensing deals.
+
+**MECHANISM #333 — Investor-Podcast-Publisher Financial Architecture Convergence:**
+Capital-narrative feedback loop:
+1. ARK invests in Anthropic pre-IPO → incentivized to promote IPO narrative
+2. Anthropic signs publisher content deals (WSJ $1.5B, others) → publishers incentivized
+   for aspirational coverage
+3. Publishers with Anthropic deals produce negative Meta coverage → asymmetry compounds
+4. ARK webinar amplifies aspirational narrative to retail investors → drives IPO demand
+5. Same week: publications cover Meta settlement negatively and Anthropic IPO aspirationally
+
+**Confounders documented:** Genre (STRONG), investment promotion structurally expected (MODERATE),
+small sample size (MODERATE). Adjusted score: 0.39 (modest after confounder load).
+
+**Cross-Surface Pattern Summary (Aug 20-27):**
+5 podcast/webinar surfaces analyzed. Financial relationships predict compartment assignment
+with 100% accuracy in this sample: entities with publisher/investor financial ties get
+aspirational framing, Meta gets accountability framing.
+
+**Tests:** 31/31 passing.
+**Commit:** (pending)
+
+---
+
 ## Iteration #322 — Thu 2026-08-27 00:00 PT (Type D: Test & Verify)
 
 ### Focus: YAML Syntax Fixes + Cross-Validation of Aug 26 Mechanisms #326–#332

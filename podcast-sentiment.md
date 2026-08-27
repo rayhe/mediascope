@@ -4644,3 +4644,131 @@ The settlement episode and Anthropic revenue/IPO episodes are separated by ~24 h
 **The ONLY surface to include it (FOX Business) has NO known AI lab financial entanglement.**
 
 **Correlation strength:** Notable. The presence/absence of AI lab financial relationships predicts whether a surface draws the settlement-to-AI-lab regulatory connection with 87.5% accuracy in this sample (7/8 correct: all 7 financially entangled omit, 1 financially independent includes). Causation is NOT established — genre, deadline, and beat-assignment confounders remain strong.
+
+---
+
+### NEW: Post-Settlement Political-Investor Podcast Cross-Surface Financial Architecture (Aug 26-27, 2026)
+
+**Iteration:** #323, Type E
+**Date range:** Aug 20-27, 2026
+**Cross-validates:** Mechanisms #328, #329, #330
+
+The 48 hours following the Aug 26 Meta settlement produced a distinctive podcast coverage pattern: political podcasts centered Meta exclusively as the child-safety villain while simultaneously, investor/financial podcasts created aspirational narratives around Anthropic's IPO — with ZERO cross-referencing between the two. This compartmentalization extends the settlement-day editorial compartmentalization documented in iteration #318.
+
+---
+
+### 79. Bloomberg Balance of Power — "Meta Settles Landmark Teen Social Media Case" (Aug 26, 2026)
+
+- **Show:** Balance of Power: Late Edition (Bloomberg Television/Podcast)
+- **Hosts:** Joe Mathieu, Kailey Leinz
+- **Featured Guest:** Governor Spencer Cox (R-UT) on Meta Settlement and Child Safety
+- **Additional segments:** Ed Ludlow + Romaine Bostick on Nvidia Earnings, Mark Zandi on AI Economic Impact
+- **Source URL:** https://www.youtube.com/watch?v=FGI6AS7L8Lc
+- **Published:** August 26, 2026
+
+**Coverage Summary:**
+Governor Spencer Cox (R-UT) states Meta's settlement amount "should have been much higher" while acknowledging the more consequential result is the equitable relief (child accounts, age-gating, parental controls, algorithm changes, overnight restrictions, healthy pauses). The show frames Meta as the exclusive settlement target.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named in the episode title. Gov. Cox's segment exclusively discusses Meta's obligations.
+- **TikTok/YouTube/Snap:** The settlement itself includes a $5B contingent payment clause tied to whether TikTok/YouTube/Snap adopt similar measures — this structural detail is unlikely to receive equal emphasis in the segment title or framing.
+- **Anthropic/OpenAI:** NOT mentioned in the settlement discussion segments, despite AG Skrmetti's documented connections to AI lab interests (mechanism #328).
+
+**Cross-Segment Compartmentalization:**
+The SAME episode juxtaposes:
+- 00:24:43 — Governor Cox on META settlement (negative/accountability framing)
+- 00:08:48 — Mark Zandi on AI's economic impact as a "juggernaut" (positive/growth framing)
+- 00:30:29 — Governor Cox on data centers (infrastructure/neutral framing)
+
+The AI-as-juggernaut segment and the Meta-settlement segment exist in the same ~45-minute episode but are editorially compartmentalized. The connection between Meta's AI capex (which drives the juggernaut narrative) and Meta's child safety settlement is not drawn.
+
+**Sentiment Score:** -6/10 (moderately negative, political accountability framing)
+**Asymmetry Assessment:** MODERATE-HIGH — Meta is the exclusive named settlement target in the episode title and chapter markers. The contingent $5B TikTok/YouTube clause is structural context, not headline framing. The same-episode AI-positive/Meta-negative compartmentalization mirrors print patterns.
+
+**Financial Context:**
+Bloomberg has no known content licensing deal with Meta. Bloomberg's terminal business depends on financial services clients who are Anthropic/OpenAI IPO underwriters (Goldman Sachs, Morgan Stanley, JPMorgan — all documented in mechanism #329). Bloomberg's coverage of Anthropic's IPO is materially positive in the same week it covers Meta's settlement negatively.
+
+---
+
+### 80. WBUR/NPR "Here & Now" — "The outcome of Meta's $17-billion settlement" (Aug 26, 2026)
+
+- **Show:** Here & Now (WBUR/NPR)
+- **Guest:** Lauren Feiner, Senior Policy Reporter, The Verge
+- **Source URL:** https://www.iowapublicradio.org/news-from-npr/2026-08-26/the-outcome-of-metas-17-billion-settlement
+- **Published:** August 26, 2026, 11:01 AM CDT
+
+**Coverage Summary:**
+Lauren Feiner of The Verge joins NPR to discuss the Meta settlement. The Verge's senior policy reporter provides analysis of the $17 billion settlement and the new platform guardrails.
+
+**Cross-Medium Portability:**
+This is a direct cross-medium extension: a journalist from a publication with documented cross-entity framing patterns (The Verge, owned by Vox Media) carries her editorial frame from print to national public radio broadcast. MediaScope has documented The Verge's privacy vocabulary bifurcation in print (mechanism #112, #137), and Feiner's radio appearance is the SAME journalist applying the SAME frame to the SAME story across a different medium.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named in headline, exclusive focus
+- **The Verge:** Provides the expert voice — Vox Media's publication is positioned as the authoritative explainer
+- **Other platforms:** The settlement's $5B TikTok/YouTube contingent clause may be discussed as context but is not headline material
+
+**Vox Media Financial Context:**
+Vox Media (The Verge's parent) has documented Google advertising revenue dependency and partnership relationships. Google/YouTube is one of the companies facing identical lawsuits and included in the settlement's contingent payment clause. A Verge journalist explaining the settlement on national radio while Vox Media has financial dependencies on one of the other settlement-adjacent companies (Google/YouTube) is a structural conflict of interest that receives zero disclosure on either surface (print or radio).
+
+**Sentiment Score:** -5/10 (explanatory but names Meta exclusively)
+**Asymmetry Assessment:** MODERATE — The structural issue is cross-medium portability: editorial framing developed in a financially conflicted publication ecosystem carries into public radio without the financial context traveling with it.
+
+---
+
+### 81. ARK Invest August mARKet Update — "Anthropic's Potential IPO" (~Aug 20, 2026)
+
+- **Show:** ARK Invest Fund mARKet Update (monthly webinar/podcast, YouTube)
+- **Hosts:** Cathie Wood (CEO/CIO), ARK team
+- **Duration:** ~47 minutes
+- **Source URL:** https://www.youtube.com/watch?v=Gw9kqiiDX7o
+- **Published:** ~August 20, 2026
+
+**Coverage Summary:**
+Cathie Wood and the ARK team discuss Anthropic's IPO at a potential near-$1T cap, alongside SpaceX's path to $1T revenue, Cloudflare's initiation into ARKK, and the broader AI spending thesis. The key segment (00:24:55) asks: "When a name like Anthropic crosses from private to public at a near-trillion-dollar cap, how does that change its role in the ARK Venture Fund and ARK ETFs portfolios?"
+
+**Entity Coverage Assessment:**
+- **Anthropic:** Aspirational framing throughout. "Run rate scaling from $9 billion to a rumored $75 billion in under a year" — presented as evidence of AI's transformative potential, not as a company that's accumulated $42 billion in cumulative losses.
+- **Meta:** Referenced within "Mag Six" dispersion discussion but not featured as a comparable AI company despite Meta's open-weight Llama ecosystem, $145B capex commitment, and 3.4B monthly active users on AI features.
+- **OpenAI:** Implied competitor in the IPO race, neutral framing.
+
+**Financial Context — CRITICAL:**
+ARK Invest holds Anthropic pre-IPO in its Venture Fund (ARKVX). This is a direct financial interest: ARK profits when Anthropic's IPO valuation is maximized. The monthly webinar serves a dual function:
+1. Investor communication (SEC-regulated)
+2. De facto market narrative construction (unregulated)
+
+The aspirational Anthropic framing in this webinar is structurally identical to the aspirational coverage from publications with Anthropic content licensing deals — but the mechanism is equity ownership rather than content revenue.
+
+**Investor-Publisher-Podcast Financial Architecture:**
+This webinar demonstrates a complete capital-narrative feedback loop:
+1. ARK invests in Anthropic pre-IPO → financially incentivized to promote Anthropic's IPO narrative
+2. Anthropic signs publisher content licensing deals (documented: WSJ $1.5B, others) → publishers financially incentivized to provide aspirational Anthropic coverage
+3. Publications with Anthropic deals produce negative Meta coverage (Meta has no comparable publisher deals) → Meta's coverage asymmetry compounds
+4. ARK's webinar amplifies the aspirational Anthropic narrative to retail investors → drives IPO demand → increases ARK's ARKVX returns
+5. The SAME week (Aug 20-26), publications cover Meta's settlement negatively and Anthropic's IPO aspirationally — with zero cross-reference between the two
+
+This is mechanism #333: **Investor-Podcast-Publisher Financial Architecture Convergence**. The investment ecosystem and the publishing ecosystem create parallel, non-overlapping narratives (Anthropic=aspirational, Meta=adversarial) that serve the same financial interests — and podcasts/webinars are the medium through which these narratives reach audiences without print-era editorial standards or disclosure requirements.
+
+**Sentiment Score (re: Anthropic):** +8/10 (strongly positive/aspirational)
+**Asymmetry Assessment:** HIGH — The same week's podcast surfaces present Anthropic's $42B-loss IPO as aspirational while presenting Meta's $18B settlement as accountability. The delta in the financial relationship is the strongest predictor of the framing delta.
+
+**Confounders:**
+- ARK is an investment firm; bullish coverage of portfolio holdings is structurally expected (not independently evidence of bias)
+- The webinar is explicitly investor-facing, not editorial journalism
+- However: the webinar's Anthropic narrative is amplified by YouTube distribution to general audiences who may not distinguish between investment promotion and independent analysis
+- STRONG CONFOUNDER: Genre matters — investor webinars and political podcasts serve different audience needs. The compartmentalization may reflect format conventions rather than coordinated narrative architecture.
+
+---
+
+### Cross-Surface Pattern Summary: Settlement Week Podcast/Webinar vs. Print (Aug 20-27, 2026)
+
+| Surface | Medium | Date | Entity Focus | Financial Relationship | Framing |
+|---------|--------|------|-------------|----------------------|---------|
+| Bloomberg Balance of Power | Political podcast | Aug 26 | Meta settlement (exclusive) | No Meta content deal; terminal dep. on IPO underwriters | Accountability (-6) |
+| WBUR/NPR Here & Now | Public radio | Aug 26 | Meta settlement (exclusive) | None (NPR); Vox Media/Google dep. (Feiner's employer) | Explanatory (-5) |
+| Bloomberg News Now | News brief | Aug 26 | Meta settlement + Nvidia earnings | No Meta content deal | Accountability (-4) |
+| ARK Invest mARKet Update | Investor webinar | Aug 20 | Anthropic IPO (aspirational) | ARK holds Anthropic pre-IPO equity | Aspirational (+8) |
+| Bloomberg Opening Trade | Financial podcast | Aug 21 | Anthropic IPO size | No Meta content deal; terminal dep. on underwriters | Aspirational (+6) |
+
+**Key observation:** In the same 7-day window, no single podcast/webinar surface connected Meta's $18B settlement to Anthropic's $2T IPO aspirations. The two narratives exist in perfect compartmentalization across the audio ecosystem, just as they do in print. The financial relationships predict the compartment each entity occupies: entities with publisher/investor financial ties (Anthropic, OpenAI) get the aspirational compartment; Meta gets the accountability compartment.
+

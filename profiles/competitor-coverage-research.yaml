@@ -32089,3 +32089,61 @@ publications:
       relationship: extends
     - mechanism_id: 331
       relationship: complements
+  investor_podcast_publisher_financial_architecture_convergence:
+    mechanism_id: 333
+    name: Investor-Podcast-Publisher Financial Architecture Convergence
+    type: cross_surface_convergence
+    date_documented: "2026-08-27"
+    description: >
+      Settlement-week podcast/webinar surfaces exhibit perfect compartmentalization
+      between Meta-accountability and Anthropic-aspiration narratives. Investment firms
+      holding Anthropic pre-IPO equity (ARK Invest ARKVX) produce aspirational
+      Anthropic coverage on webinar/podcast surfaces while political podcasts
+      (Bloomberg Balance of Power) produce Meta-accountability coverage. No single
+      podcast surface connected Meta's $18B settlement to Anthropic's $2T IPO
+      aspirations in the Aug 20-27 window. The financial relationships (equity ownership,
+      content licensing, ad revenue dependency) predict which compartment each entity
+      occupies: entities with publisher/investor financial ties get the aspirational
+      compartment, Meta gets the accountability compartment.
+    entities:
+    - anthropic
+    - meta
+    - ark_invest
+    publications:
+    - bloomberg
+    - npr
+    evidence:
+    - source: Bloomberg Balance of Power
+      date: "2026-08-26"
+      url: "https://www.youtube.com/watch?v=FGI6AS7L8Lc"
+      observation: "Gov. Spencer Cox (R-UT) says Meta settlement amount should have been much higher. Meta named exclusively in episode title. Same episode juxtaposes AI-as-juggernaut (Zandi) with Meta-as-accountability (Cox) with zero cross-reference."
+    - source: WBUR/NPR Here and Now
+      date: "2026-08-26"
+      url: "https://www.iowapublicradio.org/news-from-npr/2026-08-26/the-outcome-of-metas-17-billion-settlement"
+      observation: "Lauren Feiner (The Verge/Vox Media) carries print editorial frame to national public radio. Vox Media Google ad dependency creates structural conflict given Google/YouTube is settlement-adjacent."
+    - source: ARK Invest August mARKet Update
+      date: "2026-08-20"
+      url: "https://www.youtube.com/watch?v=Gw9kqiiDX7o"
+      observation: "Cathie Wood and ARK team present Anthropic IPO at near-$1T cap with aspirational framing. ARK holds Anthropic pre-IPO in ARKVX. Anthropic run rate scaling from $9B to $75B presented as evidence of AI's transformative potential without noting $42B cumulative losses."
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: "Genre matters: investor webinars and political podcasts serve structurally different audience needs. Compartmentalization may reflect format conventions rather than coordinated narrative architecture."
+      adjustment: -0.15
+    - id: C2
+      strength: MODERATE
+      description: "Investment firms promoting portfolio holdings is structurally expected and SEC-regulated, not independently evidence of coverage bias."
+      adjustment: -0.10
+    - id: C3
+      strength: MODERATE
+      description: "Small sample size: 5 podcast surfaces in one week. The pattern is suggestive but not statistically significant alone."
+      adjustment: -0.08
+    raw_score: 0.72
+    adjusted_score: 0.39
+    cross_references:
+    - mechanism_id: 328
+      relationship: extends
+    - mechanism_id: 329
+      relationship: complements
+    - mechanism_id: 330
+      relationship: complements
