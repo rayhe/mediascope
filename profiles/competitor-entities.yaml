@@ -5016,6 +5016,41 @@ entities:
       - https://www.youtube.com/watch?v=EaJSPeJmqis
       - https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
       - https://muckrack.com/joannastern/articles
+    child_safety_settlement_aug_2026:
+      settlement_date: "2026-08-26"
+      total_amount_b: 16.68
+      guaranteed_amount_b: 12.7
+      conditional_amount_b: 5.3
+      payment_schedule: 10 annual installments
+      states_participating: 47 US states + DC + Puerto Rico + American Samoa + Northern Mariana Islands
+      trial_court: US District Court, Oakland CA, Judge Yvonne Gonzalez Rogers
+      trial_started: "2026-08-18"
+      claims_resolved: 29 states COPPA claims + CA/CO/KY/NJ consumer protection + Cambridge Analytica ($459M)
+      max_penalty_avoided_t: 1.4
+      conditional_clause:
+        description: >
+          $5.3B payable only if Snap (Snapchat), ByteDance (TikTok), and Alphabet (YouTube)
+          adopt comparable child safety protections AND make matching payments. Creates
+          industry-wide regulatory pressure through financial incentive structure.
+        named_entities: [Snapchat/Snap, TikTok/ByteDance, YouTube/Alphabet]
+        excluded_entities: [ChatGPT/OpenAI, Character.AI/a16z, xAI/Grok, Claude/Anthropic]
+        excluded_entities_note: >
+          ChatGPT launched ads in 35 countries (Aug 24, 48 hours before settlement).
+          ChatGPT uses behavioral age prediction, not hard verification.
+          FTC investigating ChatGPT companion child safety.
+          Multiple teen suicide lawsuits pending against OpenAI.
+          NOT named in conditional clause despite comparable ad-monetized user base.
+      safety_changes_required:
+        - Default 2-hour daily screen time limit (1-hour if competitors adopt)
+        - Midnight-6AM overnight lockout (10PM-7AM if competitors adopt)
+        - Enhanced age verification
+        - Disable cosmetic surgery and extreme makeup filters for teens
+        - Restrict algorithmic feed manipulation for under-18
+        - Independent auditor for 10 years (Meta-funded)
+      sources:
+      - https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+      - https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
+      - https://www.marketwatch.com/story/metas-stock-rises-as-the-company-settles-in-social-media-addiction-trial-78abdfbf
   xai:
     display_name: xAI
     aliases:
