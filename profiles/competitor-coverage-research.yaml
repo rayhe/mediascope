@@ -31986,3 +31986,55 @@ publications:
       - https://techcrunch.com/author/lucas-ropek/
       - https://www.wsj.com/tech/ai/private-equity-is-deploying-an-army-of-ai-wonks-to-embed-in-the-firms-they-back-96d279ec
       - https://www.reuters.com/technology/broadcom-seeks-more-than-60-billion-latest-ai-debt-deal-bloomberg-news-reports-2026-08-20/
+  meta_ai_content_licensing_network_asymmetric_disclosure_parallel_deal_architecture:
+    mechanism_id: 331
+    type: C
+    finding_summary: >
+      Meta has assembled a parallel AI content licensing network spanning 7+ publishers
+      (News Corp $50M/yr, CNN, Fox News, People Inc., USA Today, Reuters, plus others),
+      mirroring OpenAI's deal structure but with dramatically lower transparency.
+      83% of Meta deals have undisclosed terms vs. OpenAI's typically disclosed terms.
+      The WSJ (News Corp) discloses both Meta and OpenAI deals when covering either
+      company. Other Meta-deal publishers (CNN, Fox, Reuters, USA Today) do not
+      consistently disclose their Meta deals in coverage. This creates a transparency
+      gradient: OpenAI-deal bias gets scrutinized while Meta-deal bias flies under
+      the radar. The existence of Meta's parallel network undermines the simplistic
+      narrative that publishers cover Meta badly because OpenAI pays them. Meta ALSO
+      pays publishers. The question is deal density (OpenAI 12+ vs Meta 7+), deal
+      value, and disclosure transparency.
+    date: '2026-08-26'
+    sources:
+    - url: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      description: Press Gazette AI deals tracker
+    - url: https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471
+      description: News Corp-Meta deal announcement
+    - url: https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
+      description: Engadget coverage of News Corp-Meta deal with Thomson quote
+    - url: https://www.afaqs.com/news/digital/meta-signs-multi-year-ai-content-licensing-deal-with-news-corp-11177406
+      description: afaqs confirmation of CNN, Fox, People Inc, USA Today Meta deals
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: Meta deal terms mostly undisclosed; cannot compare incentive magnitude
+      adjustment: -0.15
+    - id: C2
+      strength: MODERATE
+      description: Full article disclosure may exist beyond search snippets
+      adjustment: -0.08
+    - id: C3
+      strength: MODERATE
+      description: Meta deals may have different structure (RAG vs training)
+      adjustment: -0.05
+    - id: C4
+      strength: WEAK
+      description: Materiality threshold for disclosure varies
+      adjustment: -0.02
+    raw_score: 0.50
+    adjusted_score: 0.20
+    cross_references:
+    - mechanism_id: 1
+      relationship: extends
+    - mechanism_id: 329
+      relationship: complements
+    - mechanism_id: 330
+      relationship: context

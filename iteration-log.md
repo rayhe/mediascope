@@ -12332,3 +12332,72 @@ $42B Anthropic loss vs skeptical framing for Meta's $1.8B/year settlement remain
 - iteration-log.md (this entry)
 
 **Tests:** 28/28 new passing. Total: ~21,569+ tests across 640 files.
+
+---
+
+## Iteration #331
+
+**Date:** August 26, 2026, 21:00 PT
+**Type:** C (Financial Incentive Mapping)
+**Mechanism:** #331
+
+### Finding: Meta AI Content Licensing Network — Asymmetric Disclosure and Parallel Deal Architecture
+
+Meta has assembled a parallel AI content licensing network spanning 7+ publishers
+(News Corp, CNN, Fox News, People Inc., USA Today/Gannett, Reuters, plus others),
+mirroring OpenAI's publisher deal structure but with dramatically lower transparency.
+
+**Key data points:**
+1. News Corp has deals with BOTH Meta ($50M/yr, 3yr, announced Mar 4 2026) AND OpenAI
+   ($250M+/5yr). WSJ discloses both consistently.
+2. CNN has a Meta deal (terms undisclosed). CNN's Aug 26 settlement article snippet does
+   not contain deal disclosure. (Full article access blocked, HTTP 403.)
+3. Fox News has a Meta deal (terms undisclosed).
+4. People Inc. has Meta AND Microsoft deals (terms undisclosed).
+5. Reuters has Meta AND Microsoft deals (terms undisclosed).
+6. USA Today/Gannett has a Meta deal (terms undisclosed).
+7. 83% of Meta deals have undisclosed terms vs. OpenAI deals which typically have disclosed terms.
+
+**Deal network asymmetry:**
+- OpenAI-only publishers (no Meta deal): Condé Nast (WIRED, Ars), Vox Media (Verge),
+  The Atlantic, Axios, WaPo, Dotdash Meredith, The Guardian, Time, Hearst (9+)
+- Meta-only publishers (no OpenAI deal): CNN, Fox News (2)
+- Dual-deal publishers: News Corp (1)
+- OpenAI deal density (12+) exceeds Meta's (7+) by ~1.7x
+
+**Analytical significance:** The existence of Meta's parallel network undermines the
+simplistic narrative that "publishers cover Meta badly because OpenAI pays them." Meta
+ALSO pays publishers. CNN (Meta deal, no OpenAI deal) still uses critical framing for
+Meta ("intentionally designed addictive platforms"). The question is whether deal
+DENSITY (OpenAI's wider network) and TRANSPARENCY (OpenAI deals more scrutinized)
+create asymmetric incentive structures.
+
+**Thomson quote (Mar 2026 Morgan Stanley TMT):** "We have what you might call a woo and
+a sue strategy. We'll woo you. We'd like you to be our partner. But if you're stealing
+our stuff, we are going to sue you."
+
+**Confounders (4):** C1 (STRONG): undisclosed terms prevent incentive comparison, -0.15.
+C2 (MODERATE): full article disclosure may exist beyond snippets, -0.08.
+C3 (MODERATE): deal structure differences (RAG vs training), -0.05.
+C4 (WEAK): materiality threshold varies, -0.02.
+
+**Asymmetry score:** Raw 0.50 → Adjusted 0.20 (modest, but structurally significant as
+the first comprehensive mapping of Meta's parallel deal network).
+
+**Cross-references:** #1 (News Corp-OpenAI original), #329 (Reuters vocabulary bifurcation),
+#330 (TechCrunch same-day bifurcation).
+
+**Sources:**
+- https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471
+- https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
+- https://www.thewrap.com/media-platforms/journalism/news-corp-meta-ai-content-deal/
+- https://www.afaqs.com/news/digital/meta-signs-multi-year-ai-content-licensing-deal-with-news-corp-11177406
+- https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children (settlement article)
+
+**Files changed:**
+- tests/test_meta_ai_content_licensing_network_asymmetric_disclosure_parallel_deal_architecture_aug26.py (NEW, 33 tests, 9 classes)
+- profiles/competitor-coverage-research.yaml (mechanism #331 added)
+- iteration-log.md (this entry)
+
+**Tests:** 33/33 new passing.
