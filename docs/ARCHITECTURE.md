@@ -1138,3 +1138,4 @@ mediascope/
 │   ├── test_type_e_6pm_podcast_settlement_ipo_cross_medium_editorial_compartmentalization_aug26.py # type e 6pm podcast settlement ipo cross medium editorial compartmentalization aug26
 │   ├── test_wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation_aug26.py # wsj same day meta settlement anthropic ipo self referencing register bifurcation aug26
 │   ├── test_type_d_midnight_cross_validation_aug27.py # type d midnight cross validation aug27
+│   ├── test_type_e_1pm_fortune_ai_weekly_multi_episode_cross_entity_vocabulary_gradient_aug26.py # type e 1pm fortune ai weekly multi episode cross entity vocabulary gradient aug26
