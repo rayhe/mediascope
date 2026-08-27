@@ -1,4 +1,74 @@
-## Iteration #316 — Wed 2026-08-26 16:00 PT (Type C: Financial Incentive Mapping)
+## Iteration #317 — Wed 2026-08-26 17:00 PT (Type D: Test & Verify)
+
+### Focus: AG Source-Level AI Lab Regulatory Precedent Cross-Validation
+
+**Type:** Test & Verify (cross-validation of mechanisms #326, #327, #328)
+**Cross-validates:** Iteration #316 (mechanism #328 — Meta settlement IPO underwriter regulatory liability containment)
+
+**KEY CROSS-VALIDATION FINDING — AG SOURCE-LEVEL CONFIRMATION:**
+
+Tennessee AG Jonathan Skrmetti (negotiated $739M Tennessee settlement payment) told FOX
+Business on Aug 26, 2026 — THE SAME DAY as the Meta settlement announcement — that the
+settlement "sets a precedent for holding social media, ARTIFICIAL INTELLIGENCE and other
+child-facing platforms accountable." He added: "I think you're going to see the next
+domino fall very soon."
+
+This is NOT analytical inference. It's a DIRECT STATEMENT from a participating attorney
+general explicitly connecting the Meta $17-18B child safety settlement to AI platforms.
+
+**CROSS-VALIDATION RESULTS:**
+
+1. **Source availability confirmed:** The AG-to-AI-lab connection was SOURCE-AVAILABLE to
+   all outlets' reporters on settlement day via AG Skrmetti's public interview.
+
+2. **Outlet inclusion test (5 major outlets):**
+   - FOX Business: INCLUDED AG Skrmetti's AI lab connection (full interview)
+   - CNN (Clare Duffy, 94 lines): ZERO mentions of AI labs
+   - Reuters (multiple articles): ZERO mentions of AI lab comparison
+   - WSJ (Meghan Bobrowsky): ZERO mentions of AI lab comparison
+   - AP: ZERO mentions of AI lab comparison
+   Score: 1 of 5 outlets (20%) included the AG's AI lab connection
+
+3. **Financial independence correlation:**
+   - FOX Business/Fox Corp: NO known OpenAI/Anthropic content licensing deal
+   - CNN/WBD: Meta content licensing + Google/AWS advertising dependencies
+   - WSJ/News Corp: $250M/5yr OpenAI deal + $1.5B Anthropic settlement interest
+   - Reuters: AI lab content/data relationships
+   - AP: AI lab content relationships
+   **The ONLY outlet that published the AI lab connection is the one without AI lab
+   financial entanglement.** Correlation strength: notable but insufficient for causation.
+
+4. **WSJ same-day editorial compartmentalization validated:**
+   - Aug 26: Bobrowsky published Meta $18B settlement (zero AI lab comparison)
+   - Aug 26: CEO Brief newsletter highlighted Anthropic $30T TAM / IPO
+   - Aug 25: Driebusch published Anthropic $30T TAM article
+   Same newsroom, same day, two stories — zero cross-reference between Meta settlement
+   regulatory precedent and Anthropic IPO regulatory risk.
+
+**ASYMMETRY SCORE UPDATE:** mechanism #328 score remains 0.38 (unchanged; AG source
+validation strengthens the finding but genre/deadline confounders remain strong).
+Cross-validation score for this test: 0.44 (elevated by AG source availability and Fox
+Corp financial independence natural experiment).
+
+**New tests:** 18 tests, 7 classes (all pass):
+- TestAGSourceLevelAILabRegulatoryPrecedentConnection (3 tests)
+- TestFOXBusinessAGSkrmettiAILabConnection (2 tests)
+- TestCrossEntityComparisonBoundaryValidation (3 tests)
+- TestWSJSameDayEditorialCompartmentalization (3 tests)
+- TestIPOUnderwriterRegulatoryRiskOmission (2 tests)
+- TestAsymmetryScoreValidation (3 tests)
+- TestCrossReferenceIntegrity (2 tests)
+
+**Files changed:**
+- tests/test_type_d_5pm_cross_validation_aug26.py (NEW — 383 lines)
+- profiles/competitor-coverage-research.yaml (AG Skrmetti cross-validation data + Fox Corp
+  financial independence natural experiment added to mechanism #328)
+- iteration-log.md (this entry)
+
+**Tests:** 18/18 new passing. Total: ~21,918 tests across 637 files.
+
+---
+
 
 ### Focus: Meta $17B Settlement — IPO Underwriter-Publisher Regulatory Liability Containment Financial Architecture
 

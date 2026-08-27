@@ -31564,6 +31564,37 @@ publications:
           identical child safety accountability. The selective entity boundary (social media
           yes, AI chatbot no) correlates with publisher AI content licensing deals and IPO
           underwriter financial relationships.'
+      ag_source_level_cross_validation:
+        date: '2026-08-26'
+        ag_name: Jonathan Skrmetti
+        ag_state: Tennessee
+        state_settlement_amount_m: 739
+        outlet: FOX Business
+        source: https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
+        key_quote: 'sets a precedent for holding social media, artificial intelligence and
+          other child-facing platforms accountable'
+        domino_quote: 'I think you are going to see the next domino fall very soon'
+        additional_quote: 'If they are designing exploitive elements into the platform that
+          take advantage of kids and the vulnerabilities of kids brains, there will be
+          consequences down the road for that'
+        significance: 'AG Skrmetti EXPLICITLY connects Meta settlement to AI platforms in a
+          same-day public interview. This is not analytical inference — it is a direct
+          statement from a participating attorney general who negotiated the $739M Tennessee
+          payment. The AI lab connection was SOURCE-AVAILABLE to all outlets reporters on
+          settlement day. Only FOX Business published it.'
+        fox_corp_financial_independence:
+          openai_content_deal: false
+          anthropic_content_deal: false
+          ai_lab_advertising_dependency: minimal
+          significance: 'FOX Business / Fox Corp has NO known content licensing deal with
+            OpenAI or Anthropic. CNN/WBD, WSJ/News Corp, Reuters/Thomson Reuters, and FT
+            all have documented AI lab financial relationships. Fox Corp financial independence
+            from AI lab revenue correlates with willingness to publish the AG AI connection.'
+        cross_validation_result: 'STRENGTHENS mechanism #328 asymmetry finding. The AG-to-AI-lab
+          connection was not merely available as analytical inference — it was STATED by a
+          participating AG on the same day. The outlet that published it (FOX Business) is
+          the one without AI lab financial entanglement. The outlets that omitted it (CNN,
+          WSJ, Reuters, AP) are the ones with documented AI lab financial relationships.'
     publisher_financial_relationships:
       cnn_wbd:
         meta_content_licensing: true
