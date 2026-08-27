@@ -31741,3 +31741,150 @@ publications:
     - https://decrypt.co/353927/google-character-ai-settle-us-lawsuit-teens-suicide
     - https://www.pymnts.com/news/investment-tracker/ipo/2026/morgan-stanley-and-goldman-sachs-land-anthropic-ipo/
     - https://www.wsj.com/finance/banking/the-ipo-onslaught-is-forcing-bankers-to-pick-teams-50fab052
+  reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation:
+    mechanism_id: 329
+    finding_summary: |
+      Reuters uses systematically different vocabulary when covering identical business activity —
+      massive AI infrastructure investment — depending on whether the entity is Anthropic or Meta.
+      Anthropic spending ($45B Nscale deal, SpaceX Colossus, $10B+ credit facility) receives
+      growth/aspiration vocabulary ("secure capacity," "anticipated surge in demand," "moved aggressively
+      to overcome capacity constraints," "necessary to support rapid expansion"). Meta spending
+      ($130-145B capex) receives alarm/crisis vocabulary ("craters," "spending spree," "precipitous,"
+      "financial strain," "costly AI buildout despite an uncertain payoff," "cash flow wipeout,"
+      "feverish spending"). The asymmetry cannot be explained by objective financial differences:
+      Anthropic had a $42B net loss in 2025 (4.7x revenue) with zero alarm vocabulary, while Meta
+      had $60.8B quarterly revenue with 28% growth. Anthropic's spending as % of revenue is HIGHER
+      than Meta's. Wire service amplification makes this particularly impactful: Reuters framing
+      propagates to hundreds of outlets globally.
+    date: '2026-08-26'
+    type: A
+    publication: Reuters
+    competitor: Anthropic
+    articles_analyzed:
+      anthropic:
+        - title: "Anthropic to rent AI computing power from Nscale for $45 billion, source says"
+          date: '2026-08-26'
+          url: https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+          register: growth/aspiration
+          key_vocabulary:
+            - "looks to secure capacity to meet an anticipated surge in demand"
+            - "has moved aggressively in recent months to overcome capacity constraints"
+          alarm_words: 0
+          extraneous_risks_mentioned: 0
+        - title: "Anthropic revenue run rate tops $65 billion, source says"
+          date: '2026-08-17'
+          url: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+          register: growth/aspiration
+          key_vocabulary:
+            - "rapid growth"
+            - "extraordinary jump"
+            - "AI frontrunner"
+            - "gains traction"
+            - "strong investor appetite"
+          alarm_words: 0
+        - title: "Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast"
+          date: '2026-08-15'
+          url: https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
+          register: growth/aspiration with one mild skeptical quote
+          key_vocabulary:
+            - "one of the biggest IPOs on record"
+            - "Those expenses are necessary to support its rapid expansion"
+            - "could become a smaller percentage of revenue as the business grows"
+          alarm_words: 0
+          anthropic_42b_loss_mention: "oblique — spending framed as 'necessary' not alarming"
+      meta:
+        - title: "Meta cash flow craters as Zuckerberg's AI spending spree accelerates"
+          date: '2026-07-29'
+          url: https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
+          register: alarm/crisis
+          key_vocabulary:
+            - "precipitous 91% drop"
+            - "financial strain"
+            - "costly AI buildout despite an uncertain payoff"
+            - "cash flow wipeout"
+            - "stunned even the most bullish"
+            - "feverish spending"
+            - "deteriorating free cash flow outlook"
+          alarm_words: 7
+          extraneous_risks_mentioned: 6
+          ceo_blame_attribution: true
+        - title: "Meta shares fall on concerns over AI spending, legal scrutiny"
+          date: '2026-04-29'
+          url: https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
+          register: alarm
+          key_vocabulary:
+            - "pour billions more... even as it confronts potential losses"
+            - "Adding to the gloom"
+            - "spooked investors"
+          alarm_words: 3
+          extraneous_risks_mentioned: 5
+    vocabulary_comparison:
+      spending_verb:
+        anthropic: "secure capacity," "moved aggressively"
+        meta: "spending spree," "feverish spending," "pour billions"
+      spending_outcome:
+        anthropic: "meet anticipated surge in demand"
+        meta: "despite an uncertain payoff"
+      loss_framing:
+        anthropic: "not mentioned ($42B 2025 net loss)"
+        meta: "craters," "wipeout," "precipitous"
+      growth_framing:
+        anthropic: "rapid growth," "extraordinary jump," "frontrunner"
+        meta: "failed to impress," "eclipsed"
+      spending_justification:
+        anthropic: "necessary to support rapid expansion"
+        meta: "costly AI buildout," "financial strain"
+      headline_attribution:
+        anthropic: "Anthropic (entity, no CEO named)"
+        meta: "Zuckerberg's AI spending spree (CEO blamed personally)"
+    financial_relationships:
+      reuters_meta_deal:
+        type: AI content licensing
+        date: October 2024
+        expected_coverage_effect: positive (customer)
+        actual_coverage_effect: alarm
+        explanation: "Content deal cannot override (a) reporter frame-lock from WSJ migration, (b) Meta AI structural traffic competition with Reuters"
+      reuters_ai_provider_talks:
+        status: "in discussions with a number of providers (Bloomberg Law)"
+        ceo_quote: "Reuters has had a very open-minded stance in terms of licensing our content to the leading large language model providers"
+      meta_ai_traffic_competition:
+        mechanism: "Meta AI summaries compete with Reuters for news consumption"
+        effect: structural antagonism despite licensing deal
+    confounding_factors:
+      - factor: Meta's FCF actually declined 91%
+        strength: STRONG
+        note: Negative coverage of FCF decline partially justified, but vocabulary CHOICE (craters vs declined) reveals editorial register beyond facts
+      - factor: Meta legal overhang is real
+        strength: STRONG
+        note: Youth safety litigation is material, but loading it into capex articles is editorial choice not financial reporting necessity
+      - factor: Wire service style constraints
+        strength: MODERATE
+        note: Reuters wire style limits editorial voice more than feature publications, but word choice within style reveals entity-selective framing
+      - factor: Reporter frame-lock (Mechanism #57)
+        strength: MODERATE
+        note: Seetharaman and Horwitz both migrated from WSJ with adversarial Meta frames. This is reporter-driven, not necessarily editorial directive
+      - factor: Anthropic growth rate objectively faster
+        strength: MODERATE
+        note: Anthropic 7x ARR growth vs Meta 28% growth is a legitimate editorial distinction, but does not explain vocabulary-level alarm vs aspiration
+    asymmetry_score: 0.41
+    cross_references:
+      - mechanism_id: 57
+        relationship: compounds
+        description: "Seetharaman/Horwitz frame-lock (Mechanism #57) operates at reporter level; this mechanism documents publication-level pattern across multiple articles and reporters"
+      - mechanism_id: 328
+        relationship: extends
+        description: "Settlement IPO underwriter regulatory liability containment (#328) documents how financial architecture predicts editorial framing; this mechanism documents how the same pattern appears in infrastructure spending coverage"
+    wire_service_amplification_note: |
+      Reuters wire stories propagate to hundreds of outlets globally. The vocabulary choice in
+      Reuters headlines ("craters" vs "to rent") sets the framing baseline for international
+      coverage of both companies' spending. This makes publication-level vocabulary asymmetry
+      at Reuters disproportionately impactful compared to feature publications.
+    test_file: tests/test_reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation_aug26.py
+    test_count: 23
+    source_urls:
+      - https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+      - https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
+      - https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15/
+      - https://www.reuters.com/business/meta-narrows-annual-capex-forecast-ai-buildout-grows-2026-07-29/
+      - https://www.reuters.com/business/meta-lifts-capital-expenditure-forecast-doubling-down-ai-push-2026-04-29/
+      - https://news.bloomberglaw.com/ip-law/thomson-reuters-in-talks-with-ai-firms-over-licensing-deals-2

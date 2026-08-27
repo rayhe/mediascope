@@ -1,3 +1,84 @@
+## Iteration #319 — Wed 2026-08-26 19:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: Reuters Infrastructure Spending Vocabulary Bifurcation — Anthropic vs Meta
+
+**Type:** Competitor Coverage Deep Dive
+**Publication:** Reuters
+**Competitor:** Anthropic
+**Mechanism:** #329 — Same-Activity Infrastructure Spending Vocabulary Bifurcation
+
+**CORE FINDING — SYSTEMATIC VOCABULARY ASYMMETRY ON IDENTICAL BUSINESS ACTIVITY:**
+
+Reuters uses dramatically different vocabulary when covering the same business activity
+(massive AI infrastructure spending) depending on whether the entity is Anthropic or Meta.
+
+**Anthropic Infrastructure Spending — Growth/Aspiration Register:**
+- "Anthropic to rent AI computing power from Nscale for $45 billion" (Aug 26)
+  - "looks to secure capacity to meet an anticipated surge in demand"
+  - "has moved aggressively in recent months to overcome capacity constraints"
+- "Anthropic revenue run rate tops $65 billion" (Aug 17)
+  - "rapid growth," "extraordinary jump," "AI frontrunner"
+- "Anthropic IPO valuation hinges on $190-200 billion 2028 revenue forecast" (Aug 15)
+  - "Those expenses are necessary to support its rapid expansion"
+  - Anthropic's $42B 2025 net loss: zero alarm vocabulary
+
+**Meta Infrastructure Spending — Alarm/Crisis Register:**
+- "Meta cash flow craters as Zuckerberg's AI spending spree accelerates" (Jul 29)
+  - "precipitous 91% drop," "financial strain," "costly AI buildout despite an uncertain payoff"
+  - "cash flow wipeout," "feverish spending," "stunned even the most bullish"
+  - CEO blame attribution: "Zuckerberg's AI spending spree"
+  - 6 extraneous risks loaded (youth safety, layoffs, tracking software, DAP decline)
+- "Meta shares fall on concerns over AI spending, legal scrutiny" (Apr 29)
+  - "pour billions more... even as it confronts potential losses"
+  - "Adding to the gloom," "spooked investors"
+
+**VOCABULARY COMPARISON TABLE:**
+
+| Dimension | Reuters on Anthropic | Reuters on Meta |
+|-----------|---------------------|----------------|
+| Spending verb | "secure capacity," "moved aggressively" | "spending spree," "feverish spending" |
+| Spending outcome | "meet anticipated surge in demand" | "despite an uncertain payoff" |
+| Loss framing | Not mentioned ($42B net loss, 4.7x revenue) | "craters," "wipeout," "precipitous" |
+| Growth framing | "rapid growth," "frontrunner" | "failed to impress," "eclipsed" |
+| Headline attribution | "Anthropic" (neutral entity) | "Zuckerberg's" (CEO blamed personally) |
+| Extraneous risks | 0 per article | 5-6 per article |
+
+**WHY OBJECTIVE DIFFERENCES DON'T EXPLAIN IT:**
+- Meta generates ~3.7x Anthropic's revenue ($243B annualized vs $65B ARR)
+- Anthropic lost 4.7x its annual revenue in 2025 ($42B loss / $9B revenue) — zero alarm
+- Anthropic's spending as % of revenue (69%+ just Nscale) > Meta's (53-60% capex)
+- The vocabulary CHOICE (craters vs declined, spree vs program) reveals editorial register
+
+**FINANCIAL RELATIONSHIP CONTEXT:**
+- Thomson Reuters has Meta AI content licensing deal (Oct 2024) — should predict positive framing
+- Thomson Reuters in licensing talks with AI providers (Bloomberg Law)
+- Meta AI summaries structurally compete with Reuters for news traffic
+- 2 former WSJ Meta beat reporters (Seetharaman, Horwitz) at Reuters carry adversarial frames
+
+**ASYMMETRY SCORE:** 0.41 (moderated by 5 confounders, 2 STRONG)
+
+**WIRE SERVICE AMPLIFICATION:** Reuters wire stories set framing baseline for hundreds of outlets globally.
+"Meta cash flow craters" propagates the alarm frame internationally. "Anthropic to rent" propagates
+the growth frame. Same business activity, opposite editorial register, global distribution.
+
+**New tests:** 23 tests, 7 classes (all pass):
+- TestReutersHeadlineVocabularyBifurcation (4 tests)
+- TestReutersBodyTextVocabularyBifurcation (4 tests)
+- TestReutersEditorialAdditionalRisksLoading (3 tests)
+- TestReutersSpendingScaleComparison (3 tests)
+- TestReutersFinancialRelationshipContext (4 tests)
+- TestReutersWireServiceAmplificationEffect (2 tests)
+- TestReutersAsymmetryScore (3 tests)
+
+**Files changed:**
+- tests/test_reuters_anthropic_meta_infrastructure_spending_vocabulary_bifurcation_aug26.py (NEW — 23 tests)
+- profiles/competitor-coverage-research.yaml (mechanism #329 added)
+- iteration-log.md (this entry)
+
+**Tests:** 23/23 new passing. Total: ~21,680 tests across 639 files.
+
+---
+
 ## Iteration #318 — Wed 2026-08-26 18:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Settlement-Day Podcast Cross-Medium Editorial Compartmentalization
