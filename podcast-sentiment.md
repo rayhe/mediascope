@@ -4530,3 +4530,117 @@ NDTV is owned by Adani Group (Gautam Adani). No known content licensing, adverti
 - Connects to UK cinema institutional cascade (#245)
 - Demonstrates global propagation path: US tech press → European regulators → UK broadcast → International broadcast
 - The entity-selective narrowing happens at every step of the cascade, with each medium reinforcing the Meta-specific framing
+
+
+---
+
+### NEW: Settlement-Day Podcast Cross-Medium Editorial Compartmentalization (Aug 26, 2026)
+
+**Context:** On Aug 26, 2026, Meta settled its $17-18B child safety lawsuit, the largest single-company multistate settlement in US history. Three major podcast/broadcast surfaces covered the settlement the same day. This analysis tests whether podcasts replicate the editorial compartmentalization pattern found in print coverage (iterations #316-317, mechanism #328): complete omission of AI lab (OpenAI/Anthropic) regulatory precedent connections.
+
+**AG Source Availability:** Tennessee AG Jonathan Skrmetti stated on FOX Business (same day) that the settlement "sets a precedent for holding social media, ARTIFICIAL INTELLIGENCE and other child-facing platforms accountable." This source was publicly available to all reporters.
+
+---
+
+### 76. Bloomberg Tech — "Meta Settles Federal Social Media Addiction Trial" (Aug 26, 2026)
+
+- **Host:** Ed Ludlow
+- **Guests:** Ian King (Bloomberg News), Jordan Klein (Mizuho Securities), JB McCuskey (West Virginia Attorney General), Chris Womack (Southern Company), Ann Miura-Ko (Floodgate), Alexandra Levine (Bloomberg News), Kunjan Sobhani (Bloomberg Intelligence)
+- **Duration:** ~45 min (7 guest segments)
+- **Source URL:** https://www.youtube.com/watch?v=7KEQfJcebnw
+- **Network:** Bloomberg/iHeart
+
+**Coverage Summary:**
+Full-length Bloomberg Tech episode dedicated to the Meta $18B settlement. Features WV AG JB McCuskey as guest, plus Mizuho Securities analyst, Floodgate VC, and Bloomberg Intelligence coverage. Despite having a sitting attorney general as a guest and 45 minutes of airtime, the episode makes ZERO connection to AI lab regulatory risk.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named extensively, full settlement details, WV AG interview
+- **TikTok/YouTube/Snap:** Referenced as companies that should implement similar protections (per Meta's settlement conditional clause)
+- **OpenAI:** ZERO mentions
+- **Anthropic:** ZERO mentions
+- **ChatGPT/Claude:** ZERO mentions
+
+**Same-Day Compartmentalization:**
+On the SAME broadcast day (Aug 26), Bloomberg Technology also covered:
+- "Anthropic continues compute-gobbling streak in $45 billion deal with Nscale" (Brody Ford)
+- "Zoom's Anthropic stake grows to $3 billion in value after gains" (Brody Ford)
+Both Anthropic stories are aspirational/financial, with ZERO cross-reference to the settlement's regulatory precedent for AI platforms. Same newsroom, same day, two editorial spheres.
+
+**Sentiment Score:** -4/10 (moderately negative, analytical rather than alarm-oriented)
+**Asymmetry Assessment:** MODERATE-HIGH for cross-entity compartmentalization. The editorial boundary between "Meta settlement = social media accountability" and "Anthropic growth = investment opportunity" holds even when a sitting AG is on air.
+
+**Financial Context:**
+Bloomberg's terminal business depends on Goldman Sachs, Morgan Stanley, and JPMorgan Chase, the same banks underwriting OpenAI ($852B) and Anthropic ($965B-$2T) IPOs. Combined underwriting fee exposure: $500M-$2B+. Connecting Meta's settlement regulatory precedent to AI lab IPO risk could materially impact valuations and thus terminal-adjacent business relationships.
+
+---
+
+### 77. Vergecast — "Meta settles kid safety trial" (Aug 26, 2026)
+
+- **Reporters:** Lauren Feiner, Adi Robertson (The Verge)
+- **Source URL:** https://www.youtube.com/shorts/a2noaIoh6mo (short clip)
+- **Full Podcast:** https://pod.link/430333725
+- **Network:** Vox Media Podcast Network
+
+**Coverage Summary:**
+Vergecast covers the Meta settlement with reporters Lauren Feiner and Adi Robertson, focusing on age verification, two-hour usage limits, and the $17.1 billion payout.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named extensively, settlement details
+- **OpenAI:** ZERO mentions
+- **Anthropic:** ZERO mentions
+- **AI lab regulatory precedent:** ZERO mentions
+
+**Cross-Medium Consistency:**
+The Verge's print coverage of the settlement (documented in mechanism #328 cross-validation) similarly omits AI lab comparison. The podcast replicates the same editorial boundary: same newsroom, different medium, identical entity-selection pattern.
+
+**Sentiment Score:** -5/10 (negative, accountability framing)
+**Asymmetry Assessment:** MODERATE. The Verge/Vox Media has documented financial relationships with Google (ad revenue, platform distribution), and Vox Media Podcast Network distributes through platforms with AI lab financial ties.
+
+---
+
+### 78. WSJ Tech News Briefing — "TNB Tech Minute: Meta Agrees to $18 Billion Settlement Over Child-Safety Claims" (Aug 26, 2026)
+
+- **Host:** Danny Lewis
+- **Duration:** 1:46
+- **Source URL:** https://ivy.fm/podcast/wsj-tech-news-briefing-617108
+- **Network:** Dow Jones / News Corp
+
+**Coverage Summary:**
+Brief tech minute covering the Meta $18B settlement. Also includes: Bill Gates calls for more regulation of AI; XPeng mass-producing humanoid robots.
+
+**Entity Coverage Assessment:**
+- **Meta:** Named in headline, settlement details
+- **OpenAI:** ZERO mentions
+- **Anthropic:** ZERO mentions
+- **AI lab regulatory precedent:** ZERO mentions
+
+**Same-Day/Adjacent-Day Compartmentalization:**
+WSJ TNB episode schedule reveals editorial compartmentalization:
+- **Aug 26:** "Meta Agrees to $18 Billion Settlement Over Child-Safety Claims"
+- **Aug 25:** Episode noting "Anthropic tells investors its potential revenue may surpass $30 trillion"
+- **Aug 21:** "Private Equity Firms Team Up With Anthropic on AI Venture Ode"
+
+The settlement episode and Anthropic revenue/IPO episodes are separated by ~24 hours with ZERO cross-reference. This is the podcast equivalent of the WSJ print compartmentalization documented in iteration #316: Bobrowsky published Meta settlement (zero AI lab comparison) on Aug 26 while CEO Brief newsletter highlighted Anthropic $30T TAM / IPO the same day.
+
+**Sentiment Score:** -3/10 (neutral-negative, brief/factual)
+**Asymmetry Assessment:** HIGH for editorial compartmentalization. News Corp has $250M/5yr OpenAI deal and $1.5B Anthropic settlement interest. The financial incentive to keep settlement regulatory precedent separate from AI lab IPO coverage is directly quantifiable.
+
+---
+
+### Cross-Medium Pattern Summary: Settlement-Day Podcast vs. Print
+
+| Surface | Medium | Date | AI Lab Connection? | Financial Relationship |
+|---------|--------|------|-------------------|----------------------|
+| FOX Business | TV | Aug 26 | YES (AG Skrmetti) | None known with AI labs |
+| CNN (Duffy) | Print | Aug 26 | NO | Meta content licensing + Google/AWS |
+| Reuters | Print | Aug 26 | NO | AI lab content relationships |
+| AP | Print | Aug 26 | NO | AI lab content relationships |
+| WSJ (Bobrowsky) | Print | Aug 26 | NO | $250M OpenAI + $1.5B Anthropic |
+| Bloomberg Tech | Podcast | Aug 26 | NO | Terminal dependency on IPO underwriters |
+| Vergecast | Podcast | Aug 26 | NO | Vox Media/Google ad revenue |
+| WSJ TNB | Podcast | Aug 26 | NO | $250M OpenAI + $1.5B Anthropic |
+
+**Score: 1/8 surfaces (12.5%) included the AI lab connection.**
+**The ONLY surface to include it (FOX Business) has NO known AI lab financial entanglement.**
+
+**Correlation strength:** Notable. The presence/absence of AI lab financial relationships predicts whether a surface draws the settlement-to-AI-lab regulatory connection with 87.5% accuracy in this sample (7/8 correct: all 7 financially entangled omit, 1 financially independent includes). Causation is NOT established — genre, deadline, and beat-assignment confounders remain strong.

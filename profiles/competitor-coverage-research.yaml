@@ -31700,6 +31700,36 @@ publications:
         settle-and-silence strategy and Metas disproportionate litigation coverage. This
         mechanism extends that finding by showing how the $17B settlement precedent omits
         comparison to AI lab child safety liability in coverage.'
+    cross_medium_podcast_validation:
+      date: '2026-08-26'
+      finding: 'Cross-medium replication CONFIRMED. 3/3 podcast surfaces covering the Meta
+        settlement on Aug 26 omit AI lab regulatory connection, matching 4/5 print omission
+        rate. Only FOX Business (no AI lab financial ties) included the connection.'
+      podcast_surfaces_tested:
+      - show: Bloomberg Tech
+        host: Ed Ludlow
+        guest_ag: JB McCuskey (WV)
+        ai_lab_mention: false
+        same_day_anthropic_coverage: true
+        same_day_anthropic_stories:
+        - 'Anthropic continues compute-gobbling streak in $45B deal with Nscale'
+        - 'Zooms Anthropic stake grows to $3B'
+      - show: Vergecast
+        reporters: Lauren Feiner, Adi Robertson
+        ai_lab_mention: false
+        cross_medium_consistency: 'Verge print also omits — same newsroom, same boundary'
+      - show: WSJ Tech News Briefing
+        host: Danny Lewis
+        ai_lab_mention: false
+        adjacent_episode_anthropic: 'Aug 25 — Anthropic $30T TAM to investors'
+      combined_print_podcast_score: '1/8 surfaces (12.5%) included AI lab connection'
+      financial_independence_correlation: '87.5% accuracy — financial relationships predict
+        omission. The only includer (FOX) has no AI lab financial entanglement.'
+      cross_medium_validation_score: 0.42
+      mechanism_328_score_unchanged: true
+      rationale: 'Podcast editorial teams overlap with print (WSJ TNB ← WSJ, Bloomberg
+        Tech ← Bloomberg), so cross-medium evidence is corroborative, not independent.
+        Score stays 0.38; validation score 0.42.'
     sources:
     - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
     - https://www.reuters.com/legal/government/what-meta-agreed-us-teen-safety-settlement-2026-08-26/
