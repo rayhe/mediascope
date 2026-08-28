@@ -1,3 +1,48 @@
+## Iteration #333 — Thu 2026-08-27 17:00 PT (Type E: Podcast Sentiment Tracking)
+
+### Focus: Wire Service to Local Broadcast Podcast Cross-Medium Settlement-Week Vocabulary Propagation
+
+**Type:** Podcast Sentiment Tracking
+**New Mechanism:** #346 — Wire Service to Local Broadcast Podcast Cross-Medium Settlement-Week Vocabulary Propagation
+**New Test File:** test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py
+**Tests:** 38 passed (8 test classes)
+**Asymmetry Score:** 0.29 (moderate, heavy confounder load)
+
+**CORE FINDING — REUTERS WIRE CROSS-MEDIUM PROPAGATION + FOX BUSINESS "DOMINO" ENTITY SELECTION:**
+
+Two settlement-week cross-medium propagation mechanisms documented:
+
+**Track 1: Reuters Wire → Local Radio Podcast Feeds:**
+- Reuters (Jeff Horwitz) distributes Arturo Bejar "safety theater" criticism (Aug 27)
+- Active accusation vocabulary for Meta: "knowingly underreported," "pushed them toward content," "safety theater"
+- OpenAI/ChatGPT COMPLETELY ABSENT despite: FTC child safety investigation, 31-market European ads launch 48h before settlement, behavioral age prediction, teen suicide lawsuits
+- Wire copy carried verbatim by 4+ local radio stations with podcast feeds: 94.7 The Beast, 101 WIXX, Duke FM, Livemint
+- KMJ Fresno (Philip Teresi Show) aired dedicated settlement episode on Apple Podcasts/Spotify
+- Zero editorial adaptation at any propagation layer — entity-selective vocabulary flows unchanged from print to podcast
+
+**Track 2: Fox Business Broadcast — AG Skrmetti "Domino" Entity Selection:**
+- AG Skrmetti: "I think you're going to see the next domino fall very soon"
+- References "social media, artificial intelligence, and other child-facing platforms"
+- No specific AI company named despite FTC's active ChatGPT investigation
+- Fox Corporation is News Corp-adjacent ($250M/5yr OpenAI content deal)
+
+**THREE-LAYER PROPAGATION ARCHITECTURE:**
+```
+Layer 1: Reuters Wire (OpenAI content deal) → entity-selective vocabulary
+Layer 2: Local Radio Stations → zero editorial adaptation
+Layer 3: Podcast Feeds (Apple/Spotify) → print vocabulary reaches audio audiences unchanged
+```
+
+**Cross-validates:** Mechanisms #343 (AP wire vocabulary bifurcation), #344 (conditional clause entity selection)
+**Extends:** Mechanism #340 (settlement-week broadcasting bifurcation)
+
+**STATS UPDATE:**
+  - 303 mechanisms (highest: #346)
+  - 661 test files
+  - ~23,424 tests
+
+---
+
 ## Iteration #332 — Thu 2026-08-27 16:00 PT (Type D: Test & Verify)
 
 ### Focus: Settlement-Week Cross-Validation — YAML Fix, Test File Integrity, Duplicate Mechanism Dedup

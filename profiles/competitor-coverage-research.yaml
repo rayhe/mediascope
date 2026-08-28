@@ -33233,3 +33233,57 @@ publications:
         Mechanism #343 documented AP wire vocabulary bifurcation (active for Meta, passive
         for OpenAI). This mechanism maps the FINANCIAL relationships that predict that
         bifurcation: AP has an OpenAI content licensing deal.
+
+
+  wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27:
+    mechanism_id: 346
+    type: cross_medium_propagation
+    date_documented: '2026-08-27'
+    test_file: tests/test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py
+    primary_entity: OpenAI
+    secondary_entities: [Meta, Reuters, Fox Corporation, News Corp]
+    asymmetry_score: 0.29
+    finding_summary: >
+      Reuters wire copy (Jeff Horwitz, Aug 27 2026) distributing Arturo Bejar
+      "safety theater" criticism of Meta settlement uses active accusation
+      vocabulary for Meta while completely omitting OpenAI/ChatGPT despite
+      its concurrent child safety exposure (FTC investigation, teen suicide
+      lawsuits, behavioral age prediction, 31-market European ads launch
+      48 hours before settlement). This wire copy is carried verbatim by local
+      radio stations (94.7 The Beast, 101 WIXX, Duke FM, Livemint, KMJ Fresno)
+      with podcast feeds, creating a three-layer cross-medium propagation
+      pipeline where print vocabulary bifurcation flows unchanged into podcast
+      ecosystems. Fox Business broadcast with AG Skrmetti uses "first domino"
+      language for "social media, AI, and child-facing platforms" without naming
+      any specific AI company despite FTC ChatGPT investigation. Fox Corporation
+      is News Corp-adjacent ($250M/5yr OpenAI deal).
+    meta_framing: '"knowingly underreported," "pushed them toward content," "safety theater" — active accusation register'
+    competitor_framing: 'OpenAI/ChatGPT COMPLETELY ABSENT despite concurrent FTC child safety investigation and 31-market European ads launch 48h before settlement'
+    confounding_factors:
+    - '[STRONG] Wire services report on the news — Meta settlement IS the news; OpenAI ChatGPT ads launch is a separate story. Counter: Reuters has documented content licensing deal with OpenAI, creating structural financial incentive alignment.'
+    - '[STRONG] Local radio stations have always syndicated wire copy verbatim — standard journalism practice. Counter: Standard practice creates zero-intervention pipeline where print entity selection propagates to podcast audiences without editorial correction.'
+    - '[STRONG] Bejar safety theater quote is from a primary source with direct testimony experience. Counter: ChatGPT behavioral age prediction and FTC investigation are directly comparable child safety shortcomings — their absence from the story is the asymmetry.'
+    - '[MODERATE] Fox Business interview reflects AG Skrmetti emphasis, not outlet editorial. Counter: Fox Business editorial choice not to ask which specific AI companies when AG says AI platforms is an omission; News Corp $250M OpenAI deal creates structural alignment.'
+    source_urls:
+    - https://www.reuters.com/legal/litigation/meta-settlement-falls-short-teen-mental-health-protections-whistleblower-says-2026-08-27/
+    - https://947thebeast.com/2026/08/27/meta-settlement-falls-short-on-teen-mental-health-protections-whistleblower-says/
+    - https://wixx.com/2026/08/27/meta-settlement-falls-short-on-teen-mental-health-protections-whistleblower-says/
+    - https://dukecountry.fm/2026/08/27/meta-settlement-falls-short-on-teen-mental-health-protections-whistleblower-says/
+    - https://www.livemint.com/technology/meta-settlement-falls-short-on-teen-mental-health-protections-whistleblower-says-11787857832431.html
+    - https://toppodcast.com/podcast_feeds/philip-teresi-2/
+    - https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
+    cross_references:
+    - mechanism_id: 343
+      relationship: cross_medium_extension
+      description: >
+        Mechanism #343 documented Ortutay/AP wire vocabulary bifurcation in
+        print. This mechanism extends the same pattern to Reuters wire and
+        documents how it propagates into podcast ecosystems through local
+        radio station syndication.
+    - mechanism_id: 344
+      relationship: entity_selection_parallel
+      description: >
+        Mechanism #344 documented conditional clause entity selection
+        (Snap/TikTok/YouTube named, OpenAI omitted). This mechanism shows how
+        that entity selection pattern is replicated in wire-to-podcast
+        propagation and broadcast domino framing.

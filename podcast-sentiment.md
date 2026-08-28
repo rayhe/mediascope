@@ -5001,3 +5001,67 @@ Vox Media Podcast Network carries advertising. Meta IS a detected advertiser on 
 The ONLY surface that made the connection (FOX Business, AG Skrmetti citing "artificial intelligence" platforms) has NO known AI lab financial entanglement. Every surface WITH financial entanglement omitted the connection. But so did the two surfaces WITHOUT financial entanglement (NPR, The Information). This pattern STRONGLY favors cultural consensus / genre structure as the primary driver of compartmentalization, with financial incentives as a possible amplifier but not the primary cause.
 
 **Mechanism #340 Asymmetry Score: 0.31**
+
+---
+
+### Settlement-Week Wire-to-Podcast Cross-Medium Propagation (Aug 27, 2026)
+
+**FINDING: Wire Service Vocabulary Propagation into Local Broadcast Podcast Feeds**
+
+Reuters wire copy (Jeff Horwitz, Bhanvi Satija, Aug 27, 2026) distributes former Meta safety engineer Arturo Bejar's "safety theater" criticism of the Meta settlement. Bejar: "This agreement could simply codify much of the 'safety theater' that Meta has been doing in recent years. Instagram will be used a little less, but it will not be any safer."
+
+**Wire Copy Entity-Selective Vocabulary:**
+- **Meta:** "knowingly underreported," "pushed them toward content that made them feel bad about themselves," "failed to correctly adjudicate reports of child predation," "safety theater" — ACTIVE ACCUSATION register
+- **OpenAI/ChatGPT:** ZERO mentions — despite FTC child safety investigation, teen suicide lawsuits, behavioral age prediction (no hard ID verification), 900M+ weekly users, and European ads launch in 31 markets just 48 hours before the settlement
+- **Snap/TikTok/YouTube:** Named in conditional clause paragraph — PASSIVE, buried
+
+**Local Radio Stations Carrying Verbatim Wire Copy (with podcast feeds):**
+
+| Station | URL | Wire Source | Editorial Adaptation |
+|---------|-----|-------------|---------------------|
+| 94.7 The Beast | 947thebeast.com | Reuters | None — verbatim |
+| 101 WIXX | wixx.com | Reuters | None — verbatim |
+| Duke FM 102.5/96.1 | dukecountry.fm | Reuters | None — verbatim |
+| Livemint | livemint.com | Reuters | None — verbatim |
+
+**KMJ Fresno — Dedicated Settlement Episode:**
+- **Show:** The Philip Teresi Show (News/Talk 580 & 105.9 KMJ)
+- **Episode:** "META SETTLEMENT: $18 Billion + Child Safety Restrictions" (Aug 27, 2026)
+- **Podcast platforms:** Apple Podcasts, Spotify, YouTube, Amazon Music
+- **Competitor comparison:** None — Meta-exclusive framing
+- **OpenAI/ChatGPT mention:** None
+
+**Propagation Architecture:**
+
+```
+Layer 1: Reuters Wire (OpenAI content deal partner)
+    ↓ Entity-selective vocabulary (active accusation for Meta, OpenAI absent)
+Layer 2: Local Radio Stations (94.7, WIXX, Duke FM, KMJ)
+    ↓ Zero editorial adaptation — verbatim copy
+Layer 3: Podcast Feeds (Apple Podcasts, Spotify, etc.)
+    ↓ Print vocabulary reaches podcast audiences unchanged
+```
+
+**Sentiment Score:** -7/10 (strongly negative toward Meta via "safety theater" vocabulary)
+**Asymmetry Assessment:** MODERATE (0.29) — wire syndication is standard practice, but the pipeline creates zero-intervention propagation of entity-selective vocabulary from print into podcast ecosystems.
+
+---
+
+### Fox Business — AG Skrmetti "First Domino" Broadcast Entity Selection (Aug 27, 2026)
+
+- **Outlet:** Fox Business (Fox Corporation, News Corp-adjacent)
+- **Guest:** Tennessee AG Jonathan Skrmetti
+- **Quote:** "I think you're going to see the next domino fall very soon"
+- **Scope:** "social media, artificial intelligence, and other child-facing platforms"
+- **Source:** https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
+
+**Entity Selection:**
+- **Meta:** Named, sole defendant, full accountability vocabulary
+- **"AI":** Abstract category reference — no specific company named
+- **OpenAI/ChatGPT:** NOT NAMED despite being under FTC investigation for chatbot child safety harms
+- **Financial context:** Fox Corporation is News Corp-adjacent; News Corp has $250M/5yr OpenAI content deal
+
+**Sentiment Score:** -6/10 (negative toward Meta, abstract toward AI)
+**Asymmetry Assessment:** MODERATE — The AG's framing emphasizes social media over AI chatbots. Fox Business doesn't press for AI company specifics despite the AG opening that door. News Corp's $250M OpenAI deal creates structural alignment with not naming OpenAI.
+
+**Cross-references:** Mechanism #343 (AP wire vocabulary bifurcation), #344 (conditional clause entity selection), #346 (wire-to-podcast propagation)
