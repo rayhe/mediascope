@@ -4096,7 +4096,7 @@ entities:
           - experimental AI features (AI Overviews, AI Mode, grounding)
           - broad rights for AI training, grounding, and AI Mode (Information/PYMNTS/NY Post Jun 2026, Press Gazette Aug 2026)
           confidentiality: &id002
-          - Non-disclosure agreements (Press Gazette, Aug 2026)
+          - Non-disclosure agreements (NDA) (Press Gazette, Aug 2026)
           - No-sue clauses described as no-sue deals and renting peace (source with close knowledge of Google, Press Gazette Aug 2026)
           - Take-it-or-leave-it terms (Press Gazette Aug 2026)
           - Secret deals confidential deals that include allowing access to content for AI training, grounding and AI Mode
@@ -4146,7 +4146,7 @@ entities:
           concerns:
           - Implementation too slow to end ongoing damage
           - Further action needed for effective scrutiny
-          - Measures allow Google to mark own homework rather than rigorous independent audit
+          - Measures allow Google to mark its own homework rather than rigorous independent audit
           - Timeframe too generous - 9 months no reason, Google aware for years
           - CMA must watch Google like hawk for compliance and new AI features/agents harm
       prisoner_dilemma_collective_action:
