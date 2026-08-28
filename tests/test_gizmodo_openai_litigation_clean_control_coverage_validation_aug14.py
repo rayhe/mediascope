@@ -229,14 +229,14 @@ class TestGizmodoEquitableCoverage:
 
 
 class TestWIREDLawsuitCoverageGap:
-    """Verify WIRED produced zero standalone wired.com articles on Apple vs OpenAI lawsuit."""
+    """Verify WIRED produced 1 standalone wired.com article on Apple vs OpenAI lawsuit — CORRECTED Aug 28 2026 (was 0, now 1 direct WIRED article verified)."""
 
     def test_wired_gap_section_exists(self, wired_lawsuit_gap):
         assert wired_lawsuit_gap is not None
 
-    def test_wired_standalone_article_count_zero(self, wired_lawsuit_gap):
+    def test_wired_standalone_article_count_one_corrected(self, wired_lawsuit_gap):
         count = wired_lawsuit_gap.get('standalone_wired_articles', -1)
-        assert count == 0, f"Expected 0 standalone WIRED articles, got {count}"
+        assert count == 1, f"Expected 1 standalone WIRED article (CORRECTED Aug 28), got {count} — see https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/ Jul 10 Maxwell Zeff"
 
     def test_wired_gap_date_range(self, wired_lawsuit_gap):
         start = wired_lawsuit_gap.get('observation_start', '')
@@ -267,15 +267,15 @@ class TestWIREDLawsuitCoverageGap:
 
 
 class TestWIREDGizmodoCoverageGap:
-    """Quantify the coverage gap between WIRED (0 articles) and Gizmodo (5+ articles)."""
+    """Quantify the coverage gap between WIRED (1 article CORRECTED Aug 28, was 0) and Gizmodo (5+ articles)."""
 
     def test_gizmodo_count_at_least_5(self, mechanism_96):
         giz = mechanism_96.get('gizmodo_article_count', 0)
         assert giz >= 5, f"Gizmodo count {giz} < 5"
 
-    def test_wired_count_zero(self, mechanism_96):
+    def test_wired_count_one_corrected(self, mechanism_96):
         wired = mechanism_96.get('wired_lawsuit_article_count', 0)
-        assert wired == 0, f"WIRED count {wired} should be 0"
+        assert wired == 1, f"WIRED count {wired} should be 1 (CORRECTED Aug 28 — was 0, now 1 direct article https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/)"
 
     def test_coverage_gap_documented(self, mechanism_96):
         gap = mechanism_96.get('coverage_gap', '')
