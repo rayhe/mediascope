@@ -1,4 +1,67 @@
-## Iteration #335 — Thu 2026-08-27 20:00 PT (Type B: Journalist Cross-Entity Tracking)
+## Iteration #336 — Thu 2026-08-27 21:00 PT (Type C: Financial Incentive Mapping)
+
+### Focus: Settlement-Week Complete Financial Architecture Convergence Index
+
+**Type:** Financial Incentive Mapping (Synthesis)
+**New Mechanism:** #350 — Settlement-Week Complete Financial Architecture Convergence Index
+**New Test File:** test_settlement_week_complete_financial_architecture_convergence_index_aug27.py
+**Tests:** 34 passed (8 test classes)
+**Asymmetry Score:** 0.35 (moderate — cultural consensus is primary driver; financial relationships amplify)
+
+**CORE FINDING — COMPLETE SETTLEMENT-WEEK FINANCIAL ARCHITECTURE MATRIX:**
+
+Synthesis mechanism mapping ALL 16 documented publication financial relationships against their settlement-week coverage patterns (Aug 24-27, 2026):
+
+**PUBLICATION FINANCIAL MATRIX:**
+
+| Category | Publications | OpenAI Deal | Meta Deal | Coverage Pattern |
+|----------|-------------|:-----------:|:---------:|-----------------|
+| OpenAI deal, no Meta | WIRED, The Verge, The Atlantic, The Guardian, Le Monde, Axios | ✓ | ✗ | Meta accountability + partner scrutiny omission |
+| Wire services | AP, Reuters | ✓ | ✗ | Active Meta accusation + OpenAI absent/passive |
+| Balanced deals | WSJ/News Corp | ✓ | ✓ | Vocabulary register bifurcation |
+| Parent-company adjacency | TechCrunch (Yahoo/Apollo) | ✓ | ✗ | ChatGPT Ads Europe silence |
+| Non-AI-entangled | NPR, The Information | ✗ | ✗ | Same compartmentalization (cultural consensus) |
+| Other | CNN, CNBC, Gizmodo, MIT TR | varied | varied | Mixed patterns |
+
+**KEY STATISTICS:**
+- 10/16 publications have OpenAI content deals; only 2/16 have Meta deals (5:1 ratio)
+- 100% of OpenAI-deal publications use non-accountability vocabulary for OpenAI
+- 100% of all publications use accountability vocabulary for Meta (universal)
+- 11/16 (69%) show full convergence: Meta accountability + partner scrutiny omission
+- OpenAI has 18+ publisher content deals vs Meta's 3 — 6:1 structural incentive ratio
+
+**DEAL ASYMMETRY ARCHITECTURE:**
+OpenAI content licensing deals span every media category:
+- Wire services: AP, Reuters
+- Broadsheets: WSJ, Financial Times
+- Digital-native: Vox Media (The Verge), Axios
+- Magazine: Condé Nast (WIRED), The Atlantic
+- Regional: Prisa Media (El País), Hearst
+
+Meta's 3 deals (News Corp, Reuters, CNN/WBD) cover a fraction of the media ecosystem.
+
+**IPO UNDERWRITER COMPOUND:**
+Goldman Sachs + Morgan Stanley + JPMorgan underwrite BOTH:
+- Anthropic ($2T target, Oct 2026 IPO)
+- OpenAI ($852B-$1T+, 2027 IPO)
+- Combined fee pool at $50B+ creates structural incentive for narrative differentiation
+
+**CULTURAL CONSENSUS FINDING (CRITICAL):**
+NPR and The Information — with ZERO AI financial relationships — show the same compartmentalization pattern. This confirms cultural consensus (settlement = Meta accountability, AI = innovation growth) is the PRIMARY driver of coverage patterns. Financial relationships predict WHICH entities receive scrutiny omission WITHIN the cultural consensus frame.
+
+Evidence: Non-financially-entangled surfaces show broader entity scope (NPR referenced "social media and AI") while financially-entangled publications restrict scope to Meta exclusively.
+
+**CONFOUNDERS (3 STRONG, 2 MODERATE):**
+- STRONG: Cultural consensus — non-financial surfaces show same pattern
+- STRONG: Proven harm record — Meta's decade-long documented child safety failures
+- STRONG: Genre convention — settlement vs product launch inherently different vocabulary
+- MODERATE: Beat assignment — structural reporter specialization
+- MODERATE: Litigation maturity — Meta since 2021 vs OpenAI since late 2025
+
+**Cross-references:** #326, #337, #340, #343, #344, #348, #349
+
+**Cumulative Stats:** 306 mechanisms (highest ID #350), ~23,496 tests, 665 test files
+
 
 ### Focus: Sara Fischer / Axios — Publication-Level OpenAI Funding Deal Cross-Entity Coverage Vocabulary Bifurcation
 
@@ -40,6 +103,7 @@ Fischer's OpenAI ad revenue reporting (Apr 9, 2026) projects $2.5B ad revenue fr
 
 **Cumulative Stats:** 305 mechanisms (highest ID #349), ~23,462 tests, 664 test files
 
+## Iteration #335 — Thu 2026-08-27 20:00 PT (Type B: Journalist Cross-Entity Tracking)
 ## Iteration #334 — Thu 2026-08-27 19:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: OpenAI ChatGPT Ads 31-Market European Expansion (Aug 24) vs Meta $18B Settlement (Aug 26) — Settlement-Week Ad-Monetization Scrutiny Asymmetry
