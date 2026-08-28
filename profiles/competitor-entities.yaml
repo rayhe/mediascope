@@ -57,22 +57,28 @@ entities:
 
           '
       hardware_delay_framing_asymmetry_aug28:
-        mechanism_id: 356
+        mechanism_id: 359
         date_analyzed: '2026-08-28'
-        type: Type A — WIRED × OpenAI Hardware vs Meta Glasses
+        date_corrected: '2026-08-28'
+        type: Type A — WIRED × OpenAI Hardware vs Meta Glasses — CORRECTED mechanism numbering (was #356 collision, now #359)
         finding: 'WIRED covers OpenAI Jony Ive device (camera+FR+always-on+environmental awareness+observes users, $6.5B acquisition,
           200+ employees, "coolest piece of technology that the world will have ever seen", "third core device", "friend who is a computer",
           "invisible ambient computing") with neutral/constructive business framing (trademark delay, packaging, naming strategy).
           Zero surveillance language despite hardware having MORE surveillance capability than Meta single-camera glasses.
           Same publication covers Meta single-camera glasses with alarm language (pervert glasses, creepy, nightmarish super sensing,
           privacy loophole, camera-killing update). Financial predictor: Condé Nast OpenAI licensing $1-5M/yr predicts softer hardware coverage.
-          Mechanism extends #33 (facial recognition parity) with temporal delay evidence (Feb 10 2026 WIRED via MacRumors) and capability inversion scoring.'
+          Mechanism extends #33 (facial recognition parity) with temporal delay evidence (Feb 10 2026 WIRED via MacRumors) and capability inversion scoring.
+          PRIMARY SOURCE UPDATE Aug 28: 6 direct WIRED articles verified (wired.com/story) — 3 OpenAI aspirational, 3 Meta alarm — plus correction: WIRED DID publish 1 Apple v OpenAI lawsuit article (Jul 10, Maxwell Zeff), disproving prior ZERO-coverage claim in mechanism #96.'
         wired_openai_articles_count: 3
         wired_meta_articles_count: 3
-        asymmetry_score: -0.786
-        p_value: 0.00007
-        cohens_d: -3.76
-        ci: [-0.92, -0.65]
+        wired_direct_primary_sources: 6
+        wired_apple_openai_lawsuit_articles: 1
+        asymmetry_score: -0.786  # illustrative synthetic — not observed article-level
+        p_value: 0.00007  # illustrative only — synthetic arrays (n=5+5), DO NOT claim empirical significance
+        cohens_d: -3.76  # illustrative — synthetic arrays inflate d, requires observed WIRED corpus for validation
+        ci: [-0.92, -0.65]  # illustrative synthetic
+        methodology_note: 'Synthetic controlled tone arrays — illustrative only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real WIRED corpus needed for empirical validation. Prior ZERO-coverage claim for Apple v OpenAI corrected — WIRED has 1 article.'
+        illustrative_warning: 'DO NOT claim empirical significance from synthetic scores alone — project standing rule Aug 28'
         source_urls:
         - https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
         - https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/

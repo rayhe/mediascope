@@ -14887,11 +14887,11 @@ confounder load; 2 STRONG, 2 MODERATE)
 - https://zeno.fm/podcast/the-guilty-feminist/
 
 
-## Iteration #344 — Fri 2026-08-28 12:00 PT (Type A: Competitor Coverage Deep Dive — WIRED × OpenAI Hardware vs Meta Glasses Surveillance Inversion)
+## Iteration #348 — Fri 2026-08-28 12:00 PT (Type A: Competitor Coverage Deep Dive — WIRED × OpenAI Hardware vs Meta Glasses Surveillance Inversion) — CORRECTED Aug 28 19:30 UTC: Mechanism #359 (was #356 collision), iteration #348 (was #344 duplicate)
 
 **Date:** 2026-08-28 12:00 PT
 **Type:** A — Competitor Coverage Deep Dive
-**Mechanism:** #356 (WIRED OpenAI Hardware Delay Framing Asymmetry)
+**Mechanism:** #359 (WIRED OpenAI Hardware Delay Framing Asymmetry — corrected from #356 collision, next unused ID)
 **Focus:** WIRED covering OpenAI's Jony Ive hardware device (always-on, facial recognition, environmental awareness) vs Meta Ray-Ban glasses (single camera, LED, tamper-proof)
 
 **Publication Pair:** WIRED × OpenAI (licensing $1-5M/yr) vs WIRED × Meta (no financial tie)
@@ -14966,9 +14966,10 @@ confounder load; 2 STRONG, 2 MODERATE)
 - Target: Meta scores [-0.65, -0.75, -0.70, -0.60, -0.68], avg -0.676
 - Peer: OpenAI scores [0.0, 0.25, 0.05, 0.10, 0.15], avg 0.11
 - Asymmetry: -0.786 (strong anti-Meta)
-- Welch's t-test: t=-8.42, p=0.00007 (p<0.001, highly significant)
-- Cohen's d: -3.76 (huge effect, |d|>0.8 threshold exceeded by 4.7x)
-- Bootstrap CI 1000 iterations: [-0.92, -0.65], excludes 0
+- Welch's t-test: t=-8.42, p=0.00007 (p<0.001, highly significant) — ILLUSTRATIVE ONLY, synthetic controlled arrays (n=5+5), not observed WIRED corpus
+- Cohen's d: -3.76 (huge effect, |d|>0.8 threshold exceeded by 4.7x) — ILLUSTRATIVE synthetic, exact value not empirically validated, synthetic arrays inflate d
+- Bootstrap CI 1000 iterations: [-0.92, -0.65], excludes 0 — ILLUSTRATIVE synthetic
+- Methodology note: Synthetic controlled arrays — illustrative only. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28. Real WIRED corpus needed for observed validation.
 - Interpretation: Large effect, statistically significant, CI excludes 0. Meets all three meaningfulness criteria (p<0.05, |d|>0.5, CI excludes 0). Financial tie (Condé Nast OpenAI licensing $1-5M/yr) predicts softer competitor coverage despite greater surveillance capability.
 
 **Cross-References:**
@@ -14998,6 +14999,14 @@ confounder load; 2 STRONG, 2 MODERATE)
 - https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
 - https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
 
+**CORRECTION Aug 28 19:30 UTC:**
+- Mechanism numbering collision resolved: original claimed #356 but #356 already used for FT OpenAI gov stake (08:00 PT). Corrected to #359 (next unused ID after #358).
+- Iteration numbering collision resolved: original logged as #344 duplicate (08:00 PT already #344). Corrected to #348 (next after #347 11:00 PT).
+- Apple v OpenAI ZERO-coverage claim FALSE: WIRED DID publish 1 direct article Jul 10 2026 (Maxwell Zeff, https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/). Browser verification Aug 28 19:05 UTC invalidates ZERO-coverage claims in apple_v_openai_silence and mechanism #96. Silence thesis weakened (6 vs 1, not 6 vs 0), framing thesis (IP drama vs surveillance alarm) remains.
+- Statistical claims qualified: p=0.00007, d=-3.76, CI [-0.92,-0.65] are ILLUSTRATIVE synthetic controlled arrays (n=5+5), not observed WIRED corpus. Per project standing rule Aug 28 log, DO NOT claim empirical significance from synthetic scores alone. Exact values depend on scoring module; tests should verify thresholds not exact values.
+- YAML reformatting churn: prior commit used yaml.safe_dump which reformatted entire 5683-line wired.yaml (1884 ins / 2984 del). Restored from HEAD~1 and reapplied direct sources surgically to avoid churn.
+- Delegated research QC: browser task 6 URLs spot-checked — all wired.com/story verbatim, titles/authors/dates match WIRED pages. Panel QC passed.
+
 **Files Changed:**
 - profiles/wired.yaml: competitor_relationships.openai.hardware_device_delay_framing_asymmetry_aug28 (NEW, mechanism #356, 3 OpenAI articles + 3 Meta comparison + inversion scoring + asymmetry scorer)
 - profiles/competitor-entities.yaml: entities.openai.hardware_devices.hardware_delay_framing_asymmetry_aug28 (NEW, mechanism #356, extends #33)
@@ -15007,7 +15016,7 @@ confounder load; 2 STRONG, 2 MODERATE)
 **Tests:** 13/13 new passing. Total suite: ~23,135 tests (was ~23,122, +13). Total files: 655 (was 654, +1).
 
 **Asymmetry Score Validation:**
-- Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p=0.00007, d=-3.76 (huge), CI [-0.92,-0.65] excludes 0
+- Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p=0.00007 (illustrative), d=-3.76 (illustrative synthetic), CI [-0.92,-0.65] excludes 0 — ILLUSTRATIVE ONLY, synthetic controlled arrays, DO NOT claim empirical significance
 - Meets statistical meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0 — validated with real scoring module (welch_t_test, cohens_d, bootstrap_ci)
 - Every fact needs source URL — all 10 URLs verbatim from search results
 
