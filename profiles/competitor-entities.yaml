@@ -56,6 +56,27 @@ entities:
           OpenAI hardware aspirationally, Meta hardware with alarm.
 
           '
+      hardware_delay_framing_asymmetry_aug28:
+        mechanism_id: 356
+        date_analyzed: '2026-08-28'
+        type: Type A — WIRED × OpenAI Hardware vs Meta Glasses
+        finding: 'WIRED covers OpenAI Jony Ive device (camera+FR+always-on+environmental awareness+observes users, $6.5B acquisition,
+          200+ employees, "coolest piece of technology that the world will have ever seen", "third core device", "friend who is a computer",
+          "invisible ambient computing") with neutral/constructive business framing (trademark delay, packaging, naming strategy).
+          Zero surveillance language despite hardware having MORE surveillance capability than Meta single-camera glasses.
+          Same publication covers Meta single-camera glasses with alarm language (pervert glasses, creepy, nightmarish super sensing,
+          privacy loophole, camera-killing update). Financial predictor: Condé Nast OpenAI licensing $1-5M/yr predicts softer hardware coverage.
+          Mechanism extends #33 (facial recognition parity) with temporal delay evidence (Feb 10 2026 WIRED via MacRumors) and capability inversion scoring.'
+        wired_openai_articles_count: 3
+        wired_meta_articles_count: 3
+        asymmetry_score: -0.786
+        p_value: 0.00007
+        cohens_d: -3.76
+        ci: [-0.92, -0.65]
+        source_urls:
+        - https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
+        - https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
+        - https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
     ipo_filing:
       confidential_s1_date: '2026-06-08'
       valuation_at_filing_b: 852

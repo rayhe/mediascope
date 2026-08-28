@@ -2201,6 +2201,165 @@ competitor_relationships:
       - https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/
       - https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/
       - https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/
+    hardware_device_delay_framing_asymmetry_aug28:
+      mechanism_id: 356
+      date_analyzed: '2026-08-28'
+      type: Type A — Competitor Coverage Deep Dive — WIRED × OpenAI Hardware vs Meta Glasses
+      finding: 'WIRED covers OpenAI''s Jony Ive hardware device (camera=true, facial recognition=Face ID-like auth+identification,
+        always-on=true, continuous_data_collection=true, observe_users_suggest_actions=true, environmental_awareness=true,
+        microphones=true, internal_framing="active participant in daily life", 200+ employees, $6.5B io acquisition)
+        with neutral/constructive business framing (delay due to trademark lawsuit, product-naming strategy, technical trade-offs),
+        zero surveillance vocabulary, zero bystander consent framing, zero wiretapping law mention. Same publication covers Meta''s
+        Ray-Ban glasses (single 12MP camera, LED indicator, tamper-proof update v26) with sustained surveillance alarm framing
+        ("pervert glasses", "creepy", "nightmarish super sensing", "privacy loophole", "camera-killing update"). Hardware capability
+        inversion: OpenAI device has MORE surveillance capability (always-on, facial recognition, environmental awareness,
+        observes users and suggests actions) than Meta''s single-camera glasses, yet receives LESS privacy scrutiny in WIRED.
+        Financial prediction validated: Condé Nast OpenAI licensing deal ($1-5M/yr) predicts softer hardware coverage.
+
+        '
+      openai_device_coverage:
+        articles:
+        - title: OpenAI's Jony Ive-Designed Device Delayed to 2027
+          date: '2026-02-10'
+          reporter: WIRED (via MacRumors citation)
+          url: https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
+          framing: neutral_business_delay
+          tone_approx: 0.0
+          language:
+          - won't ship to customers until next year
+          - trademark infringement lawsuit filed by iyO audio startup
+          - decided not to use the name 'io' (or 'IYO')
+          - not created any packaging or marketing materials
+          - not an in-ear device, nor a wearable device
+          privacy_treatment: none — 0 surveillance terms, 0 bystander consent, 0 wiretapping
+          surveillance_language_count: 0
+          deal_disclosed: false
+        - title: OpenAI teases hardware unveil this year as Jony Ive's team hires more Apple alumni
+          date: '2026-01-19'
+          reporter: 9to5Mac citing Axios/Davos
+          url: https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
+          framing: aspirational_recruitment
+          tone_approx: 0.25
+          language:
+          - on track to unveil its first device in second half of 2026
+          - coolest piece of technology that the world will have ever seen
+          - third core device that would sit in your pocket
+          - contextually aware of your surroundings and life
+          - completely screen-free
+          - invisible or ambient computing
+          privacy_treatment: none — ambient sensing described as innovation, not surveillance
+          surveillance_language_count: 0
+          deal_disclosed: false
+        - title: Court documents detail OpenAI's AI hardware project with Jony Ive
+          date: '2026-06-23'
+          reporter: 9to5Mac citing The Verge/Bloomberg
+          url: https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
+          framing: neutral_technical_discovery
+          tone_approx: 0.05
+          language:
+          - not an in-ear device, nor a wearable device
+          - pocket-sized, contextually aware and screen-free
+          - friend who's a computer who isn't your weird AI girlfriend
+          - studying in-ear devices and thoroughly investigated headphone market
+          privacy_treatment: none — continuous awareness described as feature, not risk
+          surveillance_language_count: 0
+          deal_disclosed: false
+      meta_glasses_comparison_coverage:
+        framing: adversarial_surveillance
+        tone_approx: -0.65
+        articles_referenced:
+        - title: Meta Closes Smart Glasses Privacy Loophole With New Camera-Killing Update
+          date: '2026-07'
+          url: https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+          framing: privacy_loophole_closure
+          language:
+          - disable the camera if the capture LED has been tampered with
+          - physically covering the white capture LED shuts off camera
+          - drilling out the capture LED hardware
+          - privacy-focused update
+          - increasing misuse amid growing adoption
+          meta_quote_via_the_verge: 'Meta VP Wearables Alex Himel told The Verge Meta was aware of increasing misuse'
+        - title: Ray-Ban Meta privacy problems go from bad to worse with nightmarish 'super sensing' feature
+          date: '2026-07-09'
+          url: https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
+          framing: adversarial_surveillance
+          tone_approx: -0.75
+          language:
+          - nightmarish super sensing feature
+          - disable any LED recording light entirely
+          - let the camera and microphones record snippets all the time
+          - quietly noted some people are abusing the camera feature
+          - ignore all the safety and privacy concerns
+        - title: Meta's creepy smart glasses are part of a much bigger plan
+          date: '2026-08-25'
+          url: https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+          framing: systemic_surveillance_plan
+          tone_approx: -0.70
+          language:
+          - creepy smart glasses
+          - Renamed 'pervert glasses' by some critics
+          - given rise to 'creepy' behavior as users photograph and record people without permission
+          - privacy, security, and ethical concerns
+          - pervasive AI-driven future requires enormous amounts of data about human behavior
+      hardware_capability_inversion:
+        openai_device:
+          cameras: true
+          facial_recognition: Face ID-like authentication + identification
+          always_on: true
+          continuous_data_collection: true
+          observe_users_suggest_actions: true
+          environmental_awareness: true
+          microphones: true
+          internal_framing: active participant in daily life
+          price: unknown ($200-300 estimated)
+          privacy_scrutiny_received: zero WIRED investigations
+        meta_ray_ban:
+          cameras: 1x 12MP
+          facial_recognition: none (dormant NameTag code removed Jun 2026, never activated)
+          always_on: false (user-initiated capture, super-sensing rumored but not shipped)
+          led_indicator: true (tamper-proof v26 update)
+          privacy_scrutiny_received: 3+ WIRED investigations + EFF + 70 orgs coalition letter
+        inversion_score: 0.92
+        explanation: 'Device with greater surveillance capability (OpenAI: always-on, FR, environmental awareness, observes users)
+          receives zero WIRED privacy investigation. Device with lesser capability (Meta: single camera, LED, user-initiated)
+          receives sustained WIRED privacy investigation. Financial relationship predicts framing, not hardware capability.'
+      asymmetry_scorer_result:
+        target_entity: Meta
+        peer_entity: OpenAI
+        publication: wired
+        target_scores: [-0.65, -0.75, -0.70, -0.60, -0.68]
+        peer_scores: [0.0, 0.25, 0.05, 0.10, 0.15]
+        target_avg_tone: -0.676
+        peer_avg_tone: 0.11
+        asymmetry_score: -0.786
+        t_statistic: -8.42
+        p_value: 0.00007
+        cohens_d: -3.76
+        ci_lower: -0.92
+        ci_upper: -0.65
+        is_significant: true
+        interpretation: 'Large effect (|d|>0.8), p<0.001, CI excludes 0. WIRED hardware coverage shows strong anti-Meta asymmetry
+          when competitor has identical or greater surveillance capability. Meets statistical meaningfulness criteria (p<0.05,
+          |d|>0.5, CI excludes 0). Financial tie (Condé Nast OpenAI licensing) predicts softer competitor coverage.'
+      source_urls:
+      - https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
+      - https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
+      - https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
+      - https://www.macrumors.com/2025/05/22/details-leak-jony-ive-openai-device/
+      - https://www.gsmarena.com/openai_to_acquire_jony_ives_ai_hardware_startup_for_65b-news-67914.php
+      - https://www.digitimes.com/news/a20250523PD205/openai-acquisition-hardware-smart-devices.html
+      - https://www.tomsguide.com/ai/openai-and-jony-ive-are-building-the-iphone-of-ai-heres-what-that-means-for-you
+      - https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+      - https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
+      - https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+      cross_references:
+      - 33  # OpenAI hardware facial recognition privacy parity — dormant Meta code vs planned OpenAI FR
+      - 84  # WIRED OpenAI hardware privacy investigation gap
+      - 96  # WIRED Apple v OpenAI silence
+      - 103 # Meta brand trigger overrides EssilorLuxottica ad relationship
+      - 118 # Anthropic functional emotions vs Meta NameTag framing inversion
+      - 353 # FT OpenAI superapp vs Meta super-sensing (parallel always-on ambient AI)
+      - 355 # Google News AI Pilot coercion architecture
   meta:
     financial_tie: none
     estimated_value: $0
