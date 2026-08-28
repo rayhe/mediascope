@@ -18168,6 +18168,42 @@ journalists:
   - https://rio.websummit.com/speakers/hannah-murphy
   - https://blog.onepitch.co/coffee-with-a-journalist-hannah-murphy-financial-times
   - https://talkingbiznews.com/they-talk-biz-news/fts-facebook-reporter-switches-to-biotech-pharma-beat/
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 354
+      mechanism_name: FT Dual-Lens Beat Assignment Murphy vs Murgia Settlement-Week
+      pattern: beat_assignment_dual_lens
+      description: 'FT assigns always-on ambient AI by desk: AI Editor Madhumita Murgia covers OpenAI superapp (900M users, 6 partner services, Codex/Atlas bundling, Chat is dead) with constructive enterprise-growth framing (0 surveillance terms, 0 privacy alarm, deal undisclosed 13 months), while Tech Correspondent Hannah Murphy covers Meta super-sensing glasses (audio every few seconds + photos) with adversarial surveillance framing (8 alarm terms: continuously collect audio, wiretapping laws, biometric laws, LED deactivation as deception). Settlement-week extension: platform desk covers Meta $18B settlement with public health stigma register (Big Tobacco, nightmare, entice/engage/ensnare), AI desk produces zero accountability coverage of OpenAI ChatGPT Ads EU launch Aug 24 (31 markets, identical teen data monetization concerns). Identical capability class (always-on ambient AI), opposite frame. Variable is manufacturer identity + $5-10M/yr FT-OpenAI licensing vs $0 Meta. Beat assignment encodes financial incentive (AI desk covers paying partners, platform desk covers non-paying Meta). Institutional bias via desk assignment, not portable individual bias. Confounder-adjusted asymmetry 0.47 moderate, raw 0.80, scorer synthetic -0.779 p<0.001 d=-12.1.'
+      meta_coverage:
+        title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+        date: '2026-07-08'
+        framing: adversarial_surveillance
+        surveillance_terms: 8
+        tone: -0.62
+        url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      openai_coverage:
+        title: OpenAI plans ChatGPT superapp overhaul ahead of listing
+        date: '2026-06-07'
+        framing: constructive_enterprise_growth
+        surveillance_terms: 0
+        tone: 0.18
+        url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      settlement_week_gap:
+        meta_18b_date: '2026-08-26'
+        meta_framing: public_health_stigma_plus_investor_relief
+        openai_ads_date: '2026-08-24'
+        openai_ads_markets: 31
+        openai_accountability_coverage: 0
+        teen_data_parallel: true
+      asymmetry_score: 0.47
+      raw_score: 0.80
+      confounders: 3
+      source_urls:
+      - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      - https://en.wikipedia.org/wiki/Madhumita_Murgia
+      - https://me.sh/profile/hannahmurphyftcom
   education:
   - degree: BA Hons
     institution: University of Oxford
