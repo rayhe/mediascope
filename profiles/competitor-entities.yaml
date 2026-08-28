@@ -6509,6 +6509,26 @@ entities:
       - 123
       - 120
       - 74
+      - 347
+    settlement_week_ag_contextualization_gap:
+      mechanism_id: 347
+      date_analyzed: '2026-08-27'
+      finding: >
+        CNN's Meta settlement coverage (Clare Duffy, Aug 26-27) quotes Florida
+        AG Uthmeier as lone holdout, calling payouts "peanuts." CNN does NOT
+        cross-reference Uthmeier's concurrent OpenAI lawsuit (Jun 1, 2026) or
+        criminal investigation (Apr 2026), despite CNN's own Aug 24 article
+        mentioning the Florida OpenAI lawsuit. Uthmeier uses identical
+        "profit over safety" rhetoric for both companies. This FURTHER CONFIRMS
+        mechanism #124's hierarchy: the Meta content deal still fails to
+        produce softer coverage in the highest-stakes context ($18B settlement).
+        The AG cross-entity contextualization gap is a natural experiment
+        confirming entity-selective framing.
+      source_urls:
+      - https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
+      - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+      - https://www.cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman
+      - https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama
   yahoo_apollo:
     display_name: Yahoo (Apollo Global Management)
     aliases:

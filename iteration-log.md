@@ -13691,3 +13691,64 @@ career history (Quartz, The Messenger/OpenSecrets → MarketWatch) and cross-ent
 - https://www.morningstar.com/news/marketwatch/20260228157/trump-blacklists-anthropic-and-openai-swoops-in
 - https://talkingbiznews.com/media-news/marketwatch-com-hires-gavin-to-cover-tech/
 - https://muckrack.com/william-gavin
+
+---
+
+### Iteration #334 — Type A: Competitor Coverage Deep Dive
+**Date:** 2026-08-27 18:00 PT
+**Publication:** CNN (Warner Bros. Discovery)
+**Competitor:** OpenAI
+**Mechanism:** #347 — CNN Settlement-Week AG Uthmeier Cross-Entity Contextualization Gap
+
+CNN's settlement coverage (Clare Duffy, Aug 26-27) quotes Florida AG James Uthmeier
+as the lone holdout who refused to join the Meta settlement, calling payouts "peanuts
+compared to the profound harms Meta's profit-driven addictive features inflicted on kids."
+
+**Natural experiment:** CNN NEVER cross-references that Uthmeier is simultaneously:
+1. The first AG to sue OpenAI over child safety (CNN's own Jun 1, 2026 article)
+2. The AG who launched the first-ever criminal investigation into OpenAI (Apr 2026)
+3. Using IDENTICAL rhetoric: "chosen profit over public safety" (OpenAI) vs "profit-driven
+   addictive features" (Meta)
+
+**Institutional awareness proof:** CNN's Aug 24, 2026 article (OpenAI subpoenaed by
+Alabama AG) explicitly mentions Uthmeier's Florida OpenAI lawsuit — published just 2 days
+before the Meta settlement. The newsroom demonstrably knew about both enforcement fronts.
+
+**Additional findings:**
+- CNN Aug 27 analysis frames Meta's AI pivot as business recovery ("investors will place
+  a greater focus on the company's fundamentals") — not as additional liability surface
+- CNN May 5 frames OpenAI/Anthropic as aspirational funders of child safety "crash testing"
+  lab — positive association in the same topic domain where Meta receives accountability
+- 2 CNN settlement articles vs 0 OpenAI child safety articles in settlement week
+
+**Financial architecture (extends mechanism #124):** CNN/WBD has a Meta content licensing
+deal (Dec 2025) that SHOULD predict softer Meta coverage but DOES NOT. The settlement is
+the highest-stakes test: even $18B stakes don't produce softer framing. Further confirms
+mechanism #124's hierarchy: advertising > infrastructure > content licensing.
+
+**Confounders (heavy):**
+- STRONG: Beat assignment compartmentalization — settlement reporters focus on the
+  settlement. No single journalist expected to cross-reference across beats.
+- STRONG: News value proportionality — $18B settlement is massive. Cross-referencing
+  smaller OpenAI enforcement could dilute the narrative.
+- MODERATE: Different harm categories — social media addiction vs ChatGPT conversations/
+  mass shootings. Different risk profiles.
+- MODERATE: Partisan AG framing — Uthmeier's holdout is inherently newsworthy regardless
+  of his OpenAI stance.
+
+**Asymmetry score:** 0.30 (moderate — high natural experiment quality degraded by heavy
+confounder load; 2 STRONG, 2 MODERATE)
+
+**Profile updates:**
+- competitor-entities.yaml: Added mechanism #347 to WBD/CNN entity
+  (settlement_week_ag_contextualization_gap)
+- competitor-coverage-research.yaml: Added mechanism #347 under publications
+
+**New tests:** 27 (all pass)
+
+**Sources:**
+- https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
+- https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+- https://www.cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman
+- https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama
+- https://www.cnn.com/2026/05/05/tech/ai-youth-safety-independent-testing-lab

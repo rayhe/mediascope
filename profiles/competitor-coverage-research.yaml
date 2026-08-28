@@ -33287,3 +33287,117 @@ publications:
         (Snap/TikTok/YouTube named, OpenAI omitted). This mechanism shows how
         that entity selection pattern is replicated in wire-to-podcast
         propagation and broadcast domino framing.
+
+  cnn_wbd_settlement_week_ag_uthmeier_cross_entity_contextualization_gap_aug27:
+    mechanism_id: 347
+    type: cross_entity_contextualization_gap
+    date_documented: '2026-08-27'
+    test_file: tests/test_cnn_wbd_settlement_week_ag_uthmeier_cross_entity_contextualization_gap_aug27.py
+    title: CNN Settlement-Week AG Uthmeier Cross-Entity Contextualization Gap
+    primary_entity: OpenAI
+    secondary_entities: [Meta, Warner Bros. Discovery, CNN]
+    asymmetry_score: 0.30
+    finding: >
+      CNN's Meta settlement coverage (Clare Duffy, Aug 26-27, 2026) quotes
+      Florida AG James Uthmeier as the lone holdout AG who refused to join
+      the settlement, calling payouts "peanuts compared to the profound harms
+      Meta's profit-driven addictive features inflicted on kids." CNN NEVER
+      cross-references that Uthmeier is simultaneously the first AG to sue
+      OpenAI over child safety (CNN's own Jun 1, 2026 article: "Sam Altman
+      and ChatGPT have chosen the AI race over the safety and security of
+      our kids. They have chosen profit over public safety") and the AG
+      who launched the first-ever criminal investigation into OpenAI (Apr
+      2026, Florida State University mass shooting ChatGPT conversations).
+      CNN's Aug 24 article (OpenAI subpoenaed by Alabama AG) explicitly
+      mentions Uthmeier's Florida OpenAI lawsuit just 2 days before
+      settlement, proving institutional awareness. The AG uses IDENTICAL
+      rhetoric structure for both companies ("profit-driven" / "profit over
+      public safety") but CNN presents him as a single-entity critic of Meta.
+      The Aug 27 analysis article frames Meta's AI pivot as business recovery
+      ("investors will place a greater focus on the company's fundamentals")
+      rather than noting that AI platforms face parallel child safety
+      scrutiny. CNN's May 5, 2026 article on the child safety "crash
+      testing" lab frames OpenAI and Anthropic as aspirational funders of
+      safety research, creating a positive association in the same topic
+      domain where Meta receives accountability framing. Two CNN settlement
+      articles vs zero OpenAI child safety articles in settlement week
+      confirms entity-selective coverage volume.
+    evidence: >
+      CNN Aug 27 (Duffy): Uthmeier "payouts are peanuts" — Meta accountability.
+      CNN Jun 1 (Duffy): Uthmeier suing OpenAI — "profit over public safety."
+      CNN Aug 24: OpenAI subpoenaed, mentions Florida OpenAI lawsuit by name.
+      CNN May 5: OpenAI/Anthropic as aspirational child safety funders.
+      CNN Aug 27 analysis: "Meta pivots more to artificial intelligence,
+      investors will likely now place a greater focus on the company's
+      fundamentals" — business recovery frame, not AI liability surface.
+    meta_framing: '"intentionally designed addictive platforms," "hook kids and teens," "holding the tech giant accountable," "peanuts compared to the profound harms" — full accountability register, 2 articles'
+    competitor_framing: 'OpenAI completely absent from settlement-week coverage despite concurrent Florida criminal investigation, civil lawsuit, and FTC probe. Uthmeier presented as single-entity Meta critic, not dual-front tech accountability enforcer.'
+    confounders:
+    - severity: STRONG
+      name: Beat assignment compartmentalization
+      description: >
+        Settlement reporters focus on the settlement story. CNN's OpenAI
+        coverage is by different reporters on different beats. No single
+        journalist is expected to cross-reference across beat boundaries.
+        Counter: CNN's Aug 24 article (2 days before settlement) proves
+        institutional awareness of Uthmeier's OpenAI enforcement across
+        the newsroom.
+    - severity: STRONG
+      name: News value proportionality
+      description: >
+        The $18B Meta settlement is the largest tech child safety action
+        in history. Cross-referencing smaller enforcement actions against
+        OpenAI could dilute the core narrative and is not standard
+        journalistic practice for breaking news. Counter: CNN's Aug 27
+        analysis article has the space and mandate for broader context.
+        It discusses the broader industry implications, specifically
+        noting Meta's AI pivot, but does not note that AI platforms
+        face parallel child safety scrutiny.
+    - severity: MODERATE
+      name: Different harm categories
+      description: >
+        Meta settlement concerns social media addiction and mental health.
+        OpenAI enforcement concerns chatbot conversations, mass shootings,
+        and lack of age verification. Different risk profiles that may
+        not warrant cross-reference. Counter: Uthmeier uses identical
+        "profit over safety" rhetoric for both, and the fundamental
+        issue is the same — tech platforms exposing minors to harm.
+    - severity: MODERATE
+      name: Partisan AG framing
+      description: >
+        Uthmeier is a Republican AG. His holdout position against Meta
+        settlement may reflect political dynamics (not wanting to appear
+        soft on tech, DeSantis successor positioning) rather than
+        substantive objection. This makes his Meta framing inherently
+        newsworthy regardless of his OpenAI stance. Counter: His OpenAI
+        lawsuit is equally politically motivated and equally newsworthy.
+    source_urls:
+    - https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
+    - https://www.cnn.com/2026/08/26/tech/meta-states-settle-trial-children
+    - https://www.cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman
+    - https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama
+    - https://www.cnn.com/2026/05/05/tech/ai-youth-safety-independent-testing-lab
+    cross_references:
+    - mechanism_id: 124
+      relationship: financial_architecture_extension
+      description: >
+        Mechanism #124 documented WBD/CNN's quad financial architecture
+        (Meta content deal, Google Cloud, AWS, Samsung advertising) and
+        proved advertising > content licensing hierarchy. This mechanism
+        adds a settlement-week data point: CNN's Meta content deal
+        STILL fails to produce softer coverage even in the highest-stakes
+        context ($18B settlement), further confirming the hierarchy.
+    - mechanism_id: 343
+      relationship: entity_selection_parallel
+      description: >
+        Mechanism #343 documented AP wire vocabulary bifurcation. This
+        mechanism shows the same entity selection pattern at CNN level:
+        full accountability vocabulary for Meta, complete omission of
+        OpenAI child safety enforcement from settlement context.
+    - mechanism_id: 344
+      relationship: ag_cross_entity_parallel
+      description: >
+        Mechanism #344 documented conditional clause entity selection
+        (social media platforms named, AI labs omitted). This mechanism
+        documents the same pattern at the AG-quote level: Uthmeier's
+        dual-front enforcement contextualized as single-entity.
