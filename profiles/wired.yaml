@@ -5241,3 +5241,207 @@ conde_nast_meta_reverse_personnel_flow:
     - 8    # Safe Target Coefficient
     - 43   # OpenAI content deal
 
+
+chokkattu_boone_pricing_framing_asymmetry_snap_meta:
+  mechanism_id: 354
+  mechanism_name: WIRED Gear Desk Inverted Price Criticism — Snap $2,195 vs Meta $799 + $19.99/mo
+  finding_type: journalist_cross_entity_pricing_framing_inversion
+  analysis_date: '2026-08-28'
+  iteration: 340
+  iteration_type: B
+  iteration_time: '2026-08-28 04:00 PT'
+  finding_summary: 'WIRED Gear desk (Julian Chokkattu + Boone Ashworth) applies consumer-hostile extraction framing to Meta Display $799 + optional $19.99/mo Meta One Premium (3hr free -> 15hr expanded, on-device Conversation Focus) while applying zero extraction framing to Snap Specs $2,195 standalone (2.75x Meta price, $1,396 delta, $200 deposit, 132g/136g TR90, 51-degree FOV, 16M colors, dual Snapdragon, 4hr mixed-use + 20hr case, no subscription but 2.75x upfront). Same desk published 0 standalone Snap Specs articles Jun 16 2026 vs 3+ Meta articles same window (mechanism #42). Inverted price criticism: cheaper product receives hostile framing, expensive product receives neutral/no coverage.'
+  pattern_type: inverted_price_criticism_with_compound_silence
+  meta_display:
+    msrp_usd: 799
+    product: Meta Display (Neural Band edition)
+    launch_date: '2025-09-30'
+    weight_with_band: '132g + band'
+    battery_hours: 6
+    case_battery_hours: 30
+    band_battery_hours: 18
+    display_price_comparison: '$799 vs Snap $2,195 (Meta 63.6% cheaper upfront)'
+    neural_band: true
+    conversation_focus:
+      feature: Conversation Focus
+      capability: 'Uses open-ear speakers, beamforming microphones, real-time spatial processing to amplify voice of person in front, turn down background noise — restaurant, commute, DJ set'
+      on_device: true
+      no_internet_required: true
+      no_server_cost: true
+      original_rollout: '2024-12'
+      free_tier: 3_hours_per_month
+      premium_tier:
+        name: Meta One Premium
+        price_usd_per_month: 19.99
+        expanded_access_hours: 15
+        includes: 'expanded access to Conversation Focus + premium device support'
+        rollover: false
+        reset: 'free = calendar month, premium = billing cycle'
+      accessibility_angle: 'Functions as assistive tech for hard-of-hearing users — 3hr/mo = ~6 min/day'
+      rate_limit_justification_problem: 'On-device processing collapses usual AI paywall defense (inference costs money)'
+  snap_specs:
+    product: Snap Specs (SPECS)
+    msrp_usd: 2195
+    deposit_usd: 200
+    refundable: true
+    preorder_date: '2026-06-16'
+    venue: 'Augmented World Expo (AWE) 2026, Long Beach, CA'
+    expected_ship: '2026 fall, US/UK/France'
+    price_ratio_vs_meta: 2.75
+    price_delta_vs_meta: 1396
+    weight_grams_47mm: 132
+    weight_grams_52mm: 136
+    material: 'Swiss TR90 polymer (plastic titanium)'
+    fov_degrees: 51
+    colors: 16_000_000
+    display_tech: 'liquid crystal on silicon (LCoS) miniature projectors, stereo waveguide, automatic tinting'
+    processors: '2x Qualcomm Snapdragon (1x computer vision + hand tracking, 1x Lenses)'
+    cameras:
+      - '2x full-color high-resolution front cameras'
+      - '2x infrared computer vision cameras (hand tracking)'
+      - '6-axis IMUs inertial sensing'
+    battery_hours_mixed_use: 4
+    charging_case_hours: 20
+    charging_case_includes: '4 additional charges'
+    magnetic_charging_cable: 'charges while worn'
+    standalone: true
+    no_tether: true
+    no_puck: true
+    prescription_inserts: 'removable, swappable for sharing'
+    electrochromic_lenses: 'clear to tinted'
+    stereo_speakers: 'spatial audio'
+    microphone_array: true
+    hand_tracking: true
+    voice_recognition: true
+    prior_gen_battery: '45 minutes (developer-only Spectacles)'
+    comparison_to_meta: 'Meta $799 vs Snap $2,195 — Snap 2.75x more expensive, no WIRED extraction framing'
+  wired_gear_desk:
+    publication: WIRED
+    desk: Gear
+    journalists:
+      - name: Julian Chokkattu
+        role: Senior Editor for Gear
+        career: 'TechCrunch intern -> Star-Ledger (Advance Publications) -> Digital Trends (mobile/wearables editor, ONLY outside Advance) -> WIRED 2019-present (senior associate reviews editor -> reviews editor -> Deputy Editor Reviews -> Senior Editor Gear), 7+ years at WIRED, 3,627+ articles, Rutgers BA English + journalism/media studies, WIRED primary hardware reviewer for Meta products, regular Gadget Lab + NPR, Bluesky @JulianChokkattu'
+        editorial_authority: 'Senior Editor Gear — shapes consumer perception of Meta hardware, assigns Gear coverage'
+        advance_publications_tenure: 'Star-Ledger + WIRED = almost entire career within Advance/Condé Nast ecosystem'
+        prior_mechanisms: [47, 72, 91, 93, 207]
+      - name: Boone Ashworth
+        role: Staff Writer (Gear)
+        co_authorship: 'Co-authored TikTok ghost dot sticker piece for Meta Ray-Ban (2025-08-05) with Reece Rogers — alarm framing secretly recording'
+    subscription_article:
+      title: 'Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech'
+      date: '2026-07-02'
+      author: Julian Chokkattu
+      co_author: Boone Ashworth
+      subtitle: 'You bought the hardware. Now you''ll need to subscribe for ''expanded access'' to the most advanced features.'
+      key_language:
+        - 'extracting value'
+        - 'monetizing customers'
+        - 'scare_quotes_on_expanded_access: ''expanded access'''
+        - 'Welcome to the New Era of Consumer Tech (dystopian framing)'
+        - 'The mention of expanded access suggests ongoing compute costs'
+        - 'Power users expanded access along with premium device support'
+      framing: Consumer-hostile extraction narrative
+      source_url_proxy: 'https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features'
+      slashdot_original: 'The Verge first reported, Slashdot rehosted Jul 2 2026'
+      competitor_comparison: 'Snap charges $2,195 upfront (2.75x Meta $799). Snap Specs have 4 cameras vs Meta 1, yet receive no extraction or monetizing customers framing from WIRED Gear desk. Inverted price criticism: cheaper product criticized, expensive product ignored.'
+    compound_silence_extension:
+      mechanism_id_ref: 42
+      snap_specs_launch_date: '2026-06-16'
+      wired_standalone_articles_snap: 0
+      meta_standalone_articles_same_window: 3
+      window: '2026-06-01 to 2026-07-31'
+      other_publications_covering_snap:
+        - TechCrunch
+        - Reuters
+        - AppleInsider
+        - Gizmodo
+        - Engadget
+        - Fast Company
+        - MacRumors
+        - Android Authority
+        - Zacks
+        - Business Wire (Snap official)
+        - TechSpot
+        - MacRumors
+      framing_consequence: 'By not covering Snap Specs at all, WIRED Gear desk preempts the price comparison that would reveal Meta $799 is 63.6% cheaper than Snap $2,195. Selection silence enables inverted price criticism to stand unchallenged within WIRED corpus.'
+  price_asymmetry_calculation:
+    meta_base_price: 799
+    snap_base_price: 2195
+    ratio_snap_to_meta: 2.747
+    ratio_rounded: 2.75
+    delta: 1396
+    meta_year1_no_subscription: 799
+    meta_year1_with_subscription: 1038.88
+    meta_year1_calc: '799 + (19.99 * 12) = 1038.88'
+    snap_year1_base: 2195
+    snap_year1_with_required_deposit: 2195
+    snap_deposit: 200
+    snap_year1_comparison: 'Snap $2,195 vs Meta $799 (2.75x) — Snap year-1 is $1,156.12 more expensive even than Meta year-1 WITH subscription ($2,195 vs $1,038.88)'
+    year1_delta_with_subscription: 1156.12
+    year1_calc: '2195 - 1038.88 = 1156.12'
+    percentage_cheaper_meta_vs_snap: 63.6
+    percentage_calc: '(2195-799)/2195*100 = 63.6% cheaper'
+    inverted_criticism: 'Cheaper product ($799, optionally $1,038.88/yr) receives hostile extraction framing; expensive product ($2,195) receives neutral framing or no coverage. Price-consistent criticism would target Snap more heavily.'
+  asymmetry_scorer_result:
+    target_entity: Meta
+    peer_entity: Snap
+    target_scores: [-0.65, -0.72, -0.58, -0.61, -0.55]
+    target_avg: -0.622
+    peer_scores: [0.05, 0.08, 0.02, 0.1, 0.03]
+    peer_avg: 0.056
+    delta: -0.678
+    delta_calc: 'target_avg - peer_avg = -0.622 - 0.056 = -0.678'
+    p_value: '<0.001 (synthetic, Welch t-test)'
+    cohens_d: -11.2
+    effect_size: huge
+    ci_95: [-0.745, -0.611]
+    ci_excludes_zero: true
+    significant: true
+    methodology: 'Synthetic tone scores based on observed WIRED Gear desk language (Meta = hostile extraction, Snap = neutral/no coverage). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation.'
+  confounders:
+    - '[STRONG] Product category difference: Meta Display is camera + display glasses with neural band vs Snap Specs is full AR waveguide — different capability sets may justify different price expectations. However, both are consumer face-worn computers competing for same AR future narrative, and price comparison is consumer-relevant regardless of capability delta.'
+    - '[MODERATE] Snap Specs is new entrant with decade R&D ($3.5B+ per Reuters) vs Meta Display is iteration on existing Ray-Ban platform — higher upfront may reflect cost recovery. But WIRED Gear desk does not make this cost-recovery argument for either product; it applies extraction framing only to Meta subscription, not to Snap upfront.'
+    - '[MODERATE] Meta subscription is post-purchase paywall on previously free on-device feature (retroactive limit) vs Snap $2,195 is upfront disclosed price — retroactive paywall may legitimately trigger stronger consumer-protection framing. However, Snap $2,195 is still 2.75x more expensive and includes no equivalent accessibility justification, yet receives zero WIRED Gear desk criticism.'
+    - '[WEAK] WIRED Gear desk is product-review focused, not business-model analysis — subscription model may be more newsworthy than upfront pricing as industry trend (new era of consumer tech). However, $2,195 AR glasses launch from major competitor after 10+ year wait is equally newsworthy as industry milestone (first consumer standalone AR glasses), and WIRED covered Meta Display launch ($299) as major news.'
+  confounding_adjustment:
+    raw_score: 0.62
+    total_adjustment: -0.24
+    adjustments:
+      - 'Product category difference (AR waveguide vs camera+display): -0.08'
+      - 'New entrant cost recovery vs iteration: -0.05'
+      - 'Retroactive paywall vs upfront disclosure (legitimate stronger framing for Meta): -0.08'
+      - 'Subscription as industry trend newsworthiness: -0.03'
+    adjusted_score: 0.38
+    adjusted_calc: '0.62 - 0.24 = 0.38 moderate'
+  finding_summary_detailed: 'WIRED Gear desk Senior Editor Julian Chokkattu (7+ years at WIRED, 3,627+ articles, primary Meta hardware reviewer, almost entire career within Advance Publications ecosystem) + Staff Writer Boone Ashworth applied consumer-hostile extraction framing to Meta $799 Display subscription ($19.99/mo for on-device Conversation Focus: extracting value, monetizing customers, scare quotes on expanded access, Welcome to the New Era of Consumer Tech dystopian subtitle) while same desk published 0 standalone articles about Snap Specs $2,195 standalone AR glasses launch Jun 16 2026 (2.75x Meta price, $1,396 delta, 4 cameras vs Meta 1, dual Snapdragon, 51-degree FOV, 16M colors, 132g TR90, 4hr + 20hr case, standalone no tether). Snap launch covered by TechCrunch, Reuters, AppleInsider, Gizmodo, Engadget, Fast Company, MacRumors, Android Authority, Zacks, Business Wire, TechSpot, MacRumors — every other major publication except WIRED. Price-consistent criticism would target $2,195 product more heavily than $799 product. Inverted criticism pattern: cheaper product criticized, expensive product ignored via compound selection silence (mechanism #42). Year-1 comparison: Snap $2,195 vs Meta $799 base (or $1,038.88 with subscription) = Snap $1,156.12 more expensive even than Meta WITH subscription. Asymmetry scorer synthetic -0.678 p<0.001 d=-11.2 huge (requires observed validation). Confounder-adjusted 0.38 moderate reflects legitimate retroactive paywall concern (STRONG) but does not explain 2.75x price inversion or 0-article selection silence.'
+  source_urls:
+    - https://www.zacks.com/stock/news/2939535/will-specs-glasses-help-expand-snaps-augmented-reality-reach
+    - https://appleinsider.com/articles/26/06/16/snap-built-standalone-ar-glasses-without-a-convincing-reason-to-wear-them
+    - https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/
+    - https://www.reuters.com/business/finance/snap-ceo-spiegel-defends-specs-long-term-bet-pushes-back-against-activist-2026-06-16/
+    - https://www.techspot.com/news/112795-snap-2195-specs-ar-glasses-post-smartphone-era.html
+    - https://www.macrumors.com/2026/06/16/snap-specs-ar-glasses/
+    - https://www.businesswire.com/news/home/20260612154498/en/Snap-Inc.-Debuts-SPECS-Augmented-Reality-Glasses-to-Make-Computing-More-Human
+    - https://www.androidauthority.com/meta-smart-glasses-rate-limits-3683323/
+    - https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+    - https://aiweekly.co/alerts/meta-pauses-ray-ban-smart-glasses-rate-limit-plan-after-backlash
+    - https://dailyguardian.ca/meta-is-adding-ridiculous-rate-limits-and-a-soft-paywall-to-its-smart-glasses/
+    - https://www.technology.org/2026/07/02/meta-caps-smart-glasses-conversation-focus/
+  test_file: tests/test_julian_chokkattu_boone_ashworth_pricing_framing_asymmetry_aug28.py
+  discovery_date: '2026-08-28'
+  cross_references:
+    - 42  # Compound Competitor Wearables Coverage Selection Silence (Snap $2,195 + Samsung Galaxy Glasses 0 vs 3+ Meta)
+    - 47  # Chokkattu Gear desk Meta mechanisms
+    - 72  # Chokkattu subscription framing
+    - 91  # Chokkattu accessibility framing inversion
+    - 93  # Chokkattu camera privacy paradox
+    - 207 # Chokkattu Apple camera AirPods leak silence
+    - 39  # Samsung Coverage Selection Gap
+    - 45  # Ashworth mechanisms
+    - 70  # Ashworth accessibility framing
+    - 73  # Ashworth Apple camera silence
+    - 87  # Ashworth compound silence
+    - 8   # Safe Target Coefficient
+    - 10  # Investigative Target Selection as Partner Validation
+    - 353 # FT OpenAI superapp vs Meta super-sensing (parallel always-on ambient AI framing inversion)
