@@ -49,8 +49,8 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 258 | Career data with source URLs |
-| Career-entry migrations | 973 | Across 443+ publications |
+| Journalists tracked | 260 | Career data with source URLs |
+| Career-entry migrations | 974 | Across 443+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
 | Tests | ~23,496 | Across 665 test files |
 
