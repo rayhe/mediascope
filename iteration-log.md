@@ -1,3 +1,45 @@
+## Iteration #335 — Thu 2026-08-27 20:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Focus: Sara Fischer / Axios — Publication-Level OpenAI Funding Deal Cross-Entity Coverage Vocabulary Bifurcation
+
+**Type:** Journalist Cross-Entity Tracking
+**Journalist:** Sara Fischer (Axios, senior media reporter)
+**New Mechanism:** #349 — Sara Fischer Axios Publication-Level OpenAI Funding Deal Cross-Entity Coverage Vocabulary Bifurcation
+**New Test File:** test_sara_fischer_axios_cross_entity_settlement_openai_ad_revenue_publication_funding_deal_vocabulary_bifurcation_aug27.py
+**Tests:** 23 passed (6 test classes)
+**Asymmetry Score:** 0.20 (low-moderate, heavy confounder load: genre -0.08, proven harm -0.10, story type -0.05, beat scope -0.03, house style -0.02)
+
+**CORE FINDING — PUBLICATION-LEVEL FINANCIAL ARCHITECTURE + JOURNALIST VOCABULARY REGISTER INVERSION:**
+
+Sara Fischer, Axios' senior media reporter, covers both Meta and OpenAI's publisher/advertising businesses with different vocabulary registers, while Axios has a direct multi-year OpenAI content licensing and newsroom funding deal.
+
+**VOCABULARY REGISTER INVERSION:**
+- **Meta settlement (Aug 27):** "Big Resistance," "regulatory reckoning," "penalties," "eclipses all [European fines] combined" — Fischer's data table positions Meta alongside decade of European antitrust penalties
+- **OpenAI $2.5B ad revenue (Apr 9):** "revenue growth," "investor presentations," "2.75 billion weekly users" — aspirational business-growth framing; zero child safety vocabulary despite 1B weekly users including minors
+- **OpenAI Ads Manager (May 5):** "self-service advertising," "cost-per-click," "crucial move" — business milestone; zero FTC investigation cross-reference
+- **OpenAI publisher deals (May 2024):** "added momentum in quest for credible content" — aspirational
+- **Meta-Reuters AI deal:** "unclear whether... licensing component" — skeptical framing for same deal type
+
+**FINANCIAL ARCHITECTURE (UNDISCLOSED):**
+- Axios multi-year OpenAI content licensing deal (announced Jan 2025, expanded Jan 2026)
+- OpenAI funds Axios Local newsrooms (4 cities initially, 7-9 more in 2026)
+- Axios uses OpenAI technology for reporter platform + "localizer" tools
+- Not disclosed in Fischer's individual OpenAI coverage articles
+
+**KEY CHILD SAFETY VOCABULARY GAP:**
+Fischer's OpenAI ad revenue reporting (Apr 9, 2026) projects $2.5B ad revenue from 1B weekly users including minors — zero child safety vocabulary. Compare to Meta settlement coverage where child safety is the central narrative frame.
+
+**STRONG CONFOUNDERS (total adjustment -0.28):**
+- Genre convention: settlement inherently uses regulatory vocabulary (-0.08)
+- Meta's proven decade of child safety failures makes adversarial framing defensible (-0.10)
+- Different story types: legal settlement vs business earnings (-0.05)
+- Fischer covers media business broadly, not tech accountability (-0.03)
+- Axios house style consistent across entities (-0.02)
+
+**CROSS-VALIDATES:** #348 (settlement-week ad-monetization asymmetry), #347 (Vanian CNBC register inversion), #128 (CNBC Versant coverage selection)
+
+**Cumulative Stats:** 305 mechanisms (highest ID #349), ~23,462 tests, 664 test files
+
 ## Iteration #334 — Thu 2026-08-27 19:00 PT (Type A: Competitor Coverage Deep Dive)
 
 ### Focus: OpenAI ChatGPT Ads 31-Market European Expansion (Aug 24) vs Meta $18B Settlement (Aug 26) — Settlement-Week Ad-Monetization Scrutiny Asymmetry
