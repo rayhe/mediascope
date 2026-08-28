@@ -1,1214 +1,1035 @@
-name: "Financial Times"
-slug: "financial-times"
-url: "https://www.ft.com"
-
+name: Financial Times
+slug: financial-times
+url: https://www.ft.com
 rss_feeds:
-  - url: "https://www.ft.com/technology?format=rss"
-    category: "technology"
-  - url: "https://www.ft.com/companies/technology?format=rss"
-    category: "tech-companies"
-  - url: "https://www.ft.com/companies?format=rss"
-    category: "companies"
-
-# ===================================================================
-# OWNERSHIP CHAIN — compiled 2026-07-16 from Reuters, TechCrunch,
-# Pearson sale records, Nikkei corporate disclosures
-# ===================================================================
+- url: https://www.ft.com/technology?format=rss
+  category: technology
+- url: https://www.ft.com/companies/technology?format=rss
+  category: tech-companies
+- url: https://www.ft.com/companies?format=rss
+  category: companies
 ownership_chain:
-  - name: "Financial Times"
-    entity_type: "publisher"
-    description: >
-      Founded 1884, first printed on pink paper 1893. Premier global business newspaper.
-      Acquired by Nikkei from Pearson for £844M ($1.3B) in 2015, beating Axel Springer.
-      FT Group includes FT.com, How to Spend It (now HTSI), FT Labs, FTChinese,
-      FT Specialist (The Banker, Investors Chronicle, etc.). Pearson retained 50% stake
-      in The Economist Group and FT's One Southwark Bridge London HQ. Circulation ~737K
-      at time of sale, 70% digital. First major newspaper to successfully charge for online
-      access. Strong subscription model — digital-first. FT had £334M revenue in 2014.
-      FT Video, podcast network (Tech Tonic, etc.), and live events arm.
-  - name: "Nikkei Inc."
-    entity_type: "parent_company"
-    description: >
-      Japan's largest media company, employee-owned (unusual structure — not publicly
-      traded). Publishes The Nikkei, Japan's most-read business newspaper with 3M+ print
-      circulation. Lends name to the Nikkei 225 stock index. Founded 1876. Headquarters
-      Tokyo. 26 global news bureaus. Operations: newspapers, magazines, digital media,
-      database services, broadcasting, economic/cultural events. Acquired FT as strategic
-      hedge against Japan's shrinking domestic market (population projected -30% by 2065).
-      Also owns Nikkei Asian Review (now Nikkei Asia). Chairman/CEO at time of acquisition:
-      Tsuneo Kita. Current CEO: Naotoshi Okada (since 2018). Revenue est. $3B+
-      (consolidated, Nikkei group, private — limited financial disclosure). No US-listed
-      equity. Nikkei's deep ties to corporate Japan raise editorial independence questions
-      re: Japanese companies covered by FT.
+- name: Financial Times
+  entity_type: publisher
+  description: 'Founded 1884, first printed on pink paper 1893. Premier global business newspaper. Acquired by Nikkei from Pearson for £844M ($1.3B) in 2015, beating Axel Springer. FT Group includes FT.com, How to Spend It (now HTSI), FT Labs, FTChinese, FT Specialist (The Banker, Investors Chronicle, etc.). Pearson retained 50% stake in The Economist Group and FT''s One Southwark Bridge London HQ. Circulation ~737K at time of sale, 70% digital. First major newspaper to successfully charge for online access. Strong subscription model — digital-first. FT had £334M revenue in 2014. FT Video, podcast network (Tech Tonic, etc.), and live events arm.
 
-# Revenue Relationships
+    '
+- name: Nikkei Inc.
+  entity_type: parent_company
+  description: 'Japan''s largest media company, employee-owned (unusual structure — not publicly traded). Publishes The Nikkei, Japan''s most-read business newspaper with 3M+ print circulation. Lends name to the Nikkei 225 stock index. Founded 1876. Headquarters Tokyo. 26 global news bureaus. Operations: newspapers, magazines, digital media, database services, broadcasting, economic/cultural events. Acquired FT as strategic hedge against Japan''s shrinking domestic market (population projected -30% by 2065). Also owns Nikkei Asian Review (now Nikkei Asia). Chairman/CEO at time of acquisition: Tsuneo Kita. Current CEO: Naotoshi Okada (since 2018). Revenue est. $3B+ (consolidated, Nikkei group, private — limited financial disclosure). No US-listed equity. Nikkei''s deep ties to corporate Japan raise editorial independence questions re: Japanese companies covered by FT.
+
+    '
 revenue_relationships:
-  - partner: "Apple"
-    relationship_type: "distribution"
-    description: >
-      FT was notably one of the first major publishers to bypass Apple's App Store
-      in 2011, building a web app instead to avoid Apple's 30% revenue cut on
-      subscriptions. Later returned to App Store. Relationship is distribution, not
-      licensing.
-    date_established: "2011"
-  # NOTE: FT has confirmed AI deals with OpenAI (licensing, Apr 2024),
-#   Google (News AI pilot, Feb 2026), and Microsoft (PCM pilot partner).
-#   No Meta deal. No Apple/Amazon/Anthropic deal.
-  # as of mid-2026 — unlike NYT (lawsuit), Atlantic (OpenAI deal), Wired/Condé Nast
-  # (OpenAI + Amazon + Apple deals). This is notable: FT has no AI licensing revenue
-  # relationship creating competitive conflict with Meta's Llama.
+- partner: Apple
+  relationship_type: distribution
+  description: 'FT was notably one of the first major publishers to bypass Apple''s App Store in 2011, building a web app instead to avoid Apple''s 30% revenue cut on subscriptions. Later returned to App Store. Relationship is distribution, not licensing.
 
-# Editorial Leadership
+    '
+  date_established: '2011'
 editorial_leadership:
-  - name: "Roula Khalaf"
-    title: "Editor-in-Chief"
-    notes: >
-      First woman to lead the FT, appointed January 2020. Succeeded Lionel Barber
-      (2005-2020). Lebanese-British journalist. Previously deputy editor, Middle East
-      editor, Lex Column. Known for investigative push and digital strategy expansion.
-      Under her tenure FT expanded video, podcasts, newsletters.
+- name: Roula Khalaf
+  title: Editor-in-Chief
+  notes: 'First woman to lead the FT, appointed January 2020. Succeeded Lionel Barber (2005-2020). Lebanese-British journalist. Previously deputy editor, Middle East editor, Lex Column. Known for investigative push and digital strategy expansion. Under her tenure FT expanded video, podcasts, newsletters.
 
-# Key Journalists (Meta/tech beat)
+    '
 key_journalists:
-  - name: "Hannah Murphy"
-    beat: "Meta, social media, AI, AR/VR, disinformation, cyber security"
-    location: "San Francisco"
-    known_patterns: >
-      Primary Meta/Facebook beat reporter since ~2019. Based in SF/Silicon Valley.
-      Previously covered financial services, fintech, crypto from FT London office.
-      Source-heavy reporting — frequently first to break internal Meta reorgs, product
-      strategy shifts, and AI development milestones. Contributed to Channel 4
-      documentary 'Billionaires' on Zuckerberg. Co-hosts FT Tech Tonic podcast episodes
-      on Meta/AI. Recent 2026 scoops: Meta equity award cuts (Feb), Vishal Shah metaverse
-      → AI PM move, Meta AI glasses continuous recording feature, Alexandr Wang/Muse Spark
-      AI model, Meta agentic tools/OpenClaw-like assistant, Oversight Board tensions over
-      Zuckerberg "free speech" overhaul. High-volume, high-impact Meta coverage.
-
-    # ===================================================================
-    # CROSS-ENTITY COVERAGE ANALYSIS — Hannah Murphy
-    # Added 2026-08-05 (Type B: Journalist Cross-Entity Tracking)
-    # Diagnostic finding: same reporter applies different editorial standards
-    # to Meta vs Snap for the same product category (AR glasses)
-    # ===================================================================
-    cross_entity_coverage_analysis:
-      finding: >
-        Hannah Murphy covers multiple social media companies — Meta, Snap, TikTok,
-        X/Twitter, Pinterest — not just Meta. Within her own beat, she applies
-        DIFFERENT editorial standards to Meta versus comparable companies. The most
-        striking diagnostic case is AR glasses: when covering Meta's always-on sensing
-        glasses, Murphy deploys surveillance language ("wiretapping laws," "biometric
-        data laws," "civil liberties," "LED deactivation" as deception). When covering
-        Snap's AR glasses (Spectacles) with similar camera capabilities, she uses
-        business strategy language ("divisive bet," "efforts to revive"). No privacy
-        or surveillance framing appears in her Snap wearables coverage.
-
-      meta_coverage_portfolio:
-        - article: "Meta testing AI glasses that continuously record audio and take photos"
-          date: "2026-07-08"
-          url: "https://www.techmeme.com/260708/p2"
-          framing: "adversarial_surveillance"
-          language: ["continuously collect audio", "wiretapping laws", "biometric data laws",
-                     "civil liberty and privacy risks", "LED deactivation"]
-
-        - article: "Meta's Oversight Board got little notice of Zuckerberg's 'free speech' overhaul"
-          date: "2025-02-21"
-          url: "https://www.techmeme.com/250221/p1"
-          framing: "institutional_conflict"
-          language: ["fueling tensions", "hold Meta accountable"]
-
-        - article: "Meta cuts annual distribution of stock options by ~5%"
-          date: "2026-02-19"
-          url: "https://www.techmeme.com/260219/p43"
-          framing: "morale_damage"
-          language: ["tens of thousands of employees", "second year in a row"]
-
-        - article: "Facebook manager warned revenues it 'should have never made'"
-          date: "2021-02-18"
-          url: "https://www.techmeme.com/210218/p12"
-          framing: "adversarial_legal"
-          language: ["should have never made", "overstating"]
-
-        - article: "Meta building agentic tools, OpenClaw-like assistant, Muse Spark"
-          date: "2026-05-05"
-          url: "https://www.techmeme.com/260505/p42"
-          framing: "neutral_business"
-
-        - article: "Alexandr Wang's efforts to revive Meta's AI edge"
-          date: "2026-06-03"
-          url: "https://www.techmeme.com/260603/p1#a260603p1"
-          framing: "balanced"
-          notes: "Relatively balanced — 'boosts confidence despite lagging rivals in coding'"
-
-        - article: "Vishal Shah metaverse → AI PM move"
-          date: "2025-11"
-          framing: "neutral_business"
-          notes: "Internal reorg, standard business reporting"
-
-      snap_coverage_portfolio:
-        - article: "Evan Spiegel's efforts to revive Snap, divisive AR headset bet, high staff turnover"
-          date: "2024-10-28"
-          url: "http://www.techmeme.com/241028/p32"
-          framing: "constructive_business"
-          language: ["efforts to revive", "divisive bet"]
-          privacy_language: "NONE — zero surveillance/privacy framing despite AR glasses topic"
-
-        - article: "Snap plans to 'substantially reduce' hiring"
-          date: "2022-07-21"
-          url: "https://www.techmeme.com/220721/p33"
-          framing: "neutral_business"
-          language: ["substantially reduce", "stock repurchase"]
-
-        - article: "Snap CFO appointment"
-          date: "2019-05-20"
-          url: "https://www.techmeme.com/190520/p36"
-          framing: "neutral_business"
-
-        - article: "Snap exploring NFT AR filters"
-          date: "2022-07-13"
-          url: "https://www.techmeme.com/220713/p3"
-          framing: "neutral_product"
-
-      other_entity_coverage:
-        tiktok:
-          - article: "Harris and Trump campaigns using TikTok to reach Gen Z"
-            date: "2024-10-24"
-            url: "https://www.techmeme.com/241024/p8"
-            framing: "neutral_political"
-
-        x_twitter:
-          - article: "Linda Yaccarino reflects on first 100 days as X's CEO"
-            date: "2023-09-27"
-            url: "https://www.techmeme.com/230927/p8"
-            framing: "profile_neutral"
-
-          - article: "IBM suspends advertising on X globally"
-            date: "2023-11-16"
-            url: "https://www.techmeme.com/231116/p47"
-            framing: "adversarial"
-            notes: "Adversarial toward X, not Meta — shows Murphy CAN be adversarial to others"
-
-          - article: "Zatko's Senate testimony on Twitter unlikely to impact Musk deal"
-            date: "2022-09-15"
-            url: "https://www.techmeme.com/220915/p13"
-            framing: "neutral_analysis"
-
-        pinterest:
-          - article: "Q&A with Pinterest CEO Bill Ready on vision for less toxic platform"
-            date: "2024-02-01"
-            url: "https://www.techmeme.com/240201/p7"
-            framing: "constructive_interview"
-
-        crypto_vc:
-          - article: "Andreessen Horowitz $4.5B crypto fund"
-            date: "2022-05-25"
-            url: "https://www.techmeme.com/220525/p7"
-            framing: "neutral_business"
-
-        industry:
-          - article: "The flattening: tech companies laying off middle managers"
-            date: "2023-04-24"
-            url: "https://www.techmeme.com/230424/p1"
-            framing: "neutral_trend"
-            notes: "Industry-wide analysis, not company-specific"
-
-      diagnostic_comparison_ar_glasses:
-        finding: >
-          The most important diagnostic comparison. When Murphy covers Meta's
-          always-on sensing glasses, she uses surveillance/legal-threat language
-          (wiretapping laws, biometric data laws, civil liberties, LED deactivation
-          as deception). When she covers Snap's AR glasses — which also have cameras
-          and record the user's environment — she uses exclusively business strategy
-          language (divisive bet, efforts to revive, staff turnover). There is ZERO
-          privacy or surveillance language in her Snap wearables coverage.
-
-          This is significant because:
-          1. Same reporter covering both companies eliminates between-reporter variation
-          2. Same product category (AR glasses with cameras) eliminates technology variation
-          3. Both companies have similar scale of user data concerns
-          4. The ONLY variable is the company name
-
-          Unlike the WIRED pattern (different desks for different entities) or the NYT
-          pattern (different reporters for different entities), the FT pattern shows that
-          a SINGLE reporter applies different editorial standards to the same product
-          category depending on the manufacturer. This is the strongest evidence of
-          company-specific editorial framing in the MediaScope dataset.
-
-        meta_glasses_language: ["continuously collect audio", "taking photos every few seconds",
-                                "LED deactivation", "wiretapping laws", "biometric data laws",
-                                "civil liberty and privacy risks", "surveillance infrastructure"]
-        snap_glasses_language: ["divisive AR headset bet", "efforts to revive", "high staff turnover"]
-        surveillance_term_count_meta: 6
-        surveillance_term_count_snap: 0
-
-      entities_not_covered_by_murphy:
-        description: >
-          Murphy does NOT cover OpenAI, Anthropic, Apple, or Google. Those are
-          handled by different FT reporters: Madhumita Murgia (AI Editor) covers
-          AI industry broadly (OpenAI, Anthropic, DeepSeek); George Hammond covers
-          deals and M&A (OpenAI Jony Ive device); other tech reporters cover Apple
-          and Google. This means the full cross-entity comparison at FT requires
-          combining within-reporter analysis (Murphy: Meta vs Snap) with
-          between-reporter analysis (Murphy: Meta vs Hammond/Murgia: OpenAI).
-
-      overall_classification: >
-        Murphy's coverage is Meta-adversarial, not social-media-adversarial. She
-        covers the full social media landscape but reserves surveillance/legal-threat
-        framing disproportionately for Meta. This cannot be explained by beat
-        assignment alone (she covers multiple companies) or by product category
-        (she covers AR glasses from multiple companies). The variable controlling
-        the editorial frame is company identity.
-
-  - name: "Madhumita Murgia"
-    beat: "AI, emerging technology, science"
-    location: "London"
-    role: "AI Editor (first at FT, since Feb 2023)"
-    known_patterns: >
-      FT's first AI Editor. Author of 'Code Dependent: Living in the Shadow of AI'
-      (shortlisted for 2024 Women's Prize for Non-Fiction). Covers the AI industry
-      broadly — OpenAI, Anthropic, DeepSeek, Google AI, Meta AI. Previously European
-      technology correspondent, tech editor at Daily Telegraph, associate editor at
-      Wired UK. Hosts FT Tech Tonic podcast. Former Stern Fellow at Washington Post.
-
-    # ===================================================================
-    # CROSS-ENTITY COVERAGE ANALYSIS — Madhumita Murgia
-    # Added 2026-08-07 (Type B: Journalist Cross-Entity Tracking)
-    # KEY FINDING: Dual-Lens Paradox (Mechanism #6)
-    # ===================================================================
-    cross_entity_coverage_analysis:
-      finding: >
-        THE DUAL-LENS PARADOX (Mechanism #6): Murgia is the FT's AI Editor — the
-        most senior AI journalism position — mandated to "head up the FT's coverage
-        of artificial intelligence stories." She covers OpenAI, Anthropic, Google
-        DeepMind, and the broader AI industry with innovation/aspirational framing.
-        Yet she has NEAR-ZERO Meta coverage, despite Meta being the world's largest
-        open-source AI developer (Llama), a $100B+ AI infrastructure investor, and
-        the leading AI wearables manufacturer.
-
-        Instead, Meta's AI work is covered exclusively by Hannah Murphy (social media
-        beat reporter) using surveillance/privacy framing. This creates a structural
-        dual-lens: the SAME technology (AI-powered wearable) gets framed as
-        "innovation" or "surveillance" based solely on which editorial lens covers
-        the manufacturer. OpenAI's Jony Ive AI wearable → AI lens (Murgia/Hammond)
-        → "iPhone of AI." Meta's AI glasses → Platform lens (Murphy) → "surveillance
-        infrastructure." The technology is identical; the framing diverges completely.
-
-        Unlike the WIRED mechanism (#1, desk assignment) or NYT mechanism (#2,
-        between-reporter assignment), the FT mechanism operates at the EDITORIAL LENS
-        level: not just which reporter, but which conceptual framework covers which
-        company. The AI lens sees innovation; the platform lens sees surveillance.
-        The company determines the lens, not the technology.
-
-      dual_lens_paradox:
-        mechanism: "7"
-        name: "Dual-Lens Paradox"
-        description: >
-          Editorial lens assignment creates framing asymmetry independent of technology.
-          FT's AI desk (Murgia) covers every major AI company EXCEPT Meta.
-          FT's platform desk (Murphy) covers Meta using surveillance framing.
-          Same product category, different editorial framework, opposite framing.
-        ai_lens_entities: ["OpenAI", "Anthropic", "Google DeepMind", "xAI"]
-        platform_lens_entities: ["Meta", "Snap", "TikTok", "Pinterest"]
-        ai_lens_framing: "innovation, safety, responsibility, frontier"
-        platform_lens_framing: "surveillance, privacy, labor exploitation, gamble"
-
-      openai_deal_announcement:
-        finding: >
-          Murgia herself wrote the FT article announcing the FT-OpenAI content
-          licensing deal on April 29, 2024. She then continued covering OpenAI
-          extensively — rogue AI agents, China model sales, AI Labs podcast series —
-          without disclosing the financial relationship she personally announced.
-          This is the strongest evidence of PERSONAL non-disclosure in the dataset:
-          the journalist who announced the deal knows about it and covers the
-          company without mentioning it.
-        date: "2024-04-29"
-        techmeme_url: "https://www.techmeme.com/240429/p7"
-        subsequent_disclosure: false
-        subsequent_disclosure_note: >
-          Never disclosed in subsequent OpenAI coverage including rogue AI agent
-          article, China sales article, or AI Labs podcast series.
-        significance: >
-          Personal non-disclosure. The announcement-to-subsequent-coverage pipeline
-          eliminates any defense of ignorance — Murgia knows about the deal because
-          she reported it, yet her subsequent coverage treats OpenAI as if FT has no
-          financial interest.
-
-      ai_labs_podcast_series:
-        description: >
-          FT Tech Tonic "AI Labs" series (Apr 29 – Jun 3, 2026): five episodes
-          profiling the major AI labs. The Meta episode was the ONLY one NOT featuring
-          Murgia (the AI Editor). Instead, Murphy and Criddle (platform reporters)
-          covered Meta. Even when the FT produces an AI-industry podcast series about
-          AI companies, Meta is covered through the platform lens.
-        meta_episode:
-          title: "AI Labs: Zuckerberg's $100bn gamble"
-          subtitle: "Can Mark Zuckerberg's Meta buy its way into the AI game?"
-          date: "2026-06-03"
-          reporters: ["Cristina Criddle", "Hannah Murphy"]
-          host: "Murad Ahmed"
-          framing: "risk, excess, latecomer, doubt"
-          notes: >
-            ONLY episode NOT featuring Murgia. Platform reporters cover Meta even
-            in an AI-industry series. "Gamble" implies recklessness; "buy its way
-            in" implies Meta lacks inherent AI capability; subtitle is a doubting
-            question ("can Meta even buy entry?").
-        anthropic_episode:
-          title: "AI Labs: Are Anthropic really the good guys?"
-          subtitle: "Dario Amodei casts his company as the good guys of the AI race. Will that last?"
-          date: "2026-05-06"
-          framing: "virtue_presumed, sustainability_questioned"
-          notes: >
-            Starts from the PREMISE that Anthropic IS "the good guys" and merely
-            questions sustainability. Even the challenge is flattering.
-        openai_episode:
-          title: "AI Labs: Sam Altman may make or break OpenAI"
-          subtitle: "Will OpenAI's chief be its greatest asset or its greatest liability?"
-          date: "2026-05-20"
-          framing: "balanced_personality_risk"
-        google_episode:
-          title: "AI Labs: Google DeepMind plans its comeback"
-          subtitle: "Google and its AI lab DeepMind are bearing down OpenAI and Anthropic"
-          date: "2026-05-13"
-          framing: "recovery_challenger"
-        xai_episode:
-          title: "AI Labs: Elon Musk wants AI in space"
-          subtitle: "Will SpaceX's giant IPO turbocharge Elon Musk's AI ambitions?"
-          date: "2026-05-27"
-          framing: "ambition_narrative"
-        episodes:
-          - {company: "Anthropic", title: "Are Anthropic really the good guys?", tone: "virtue_presumed"}
-          - {company: "Google", title: "Google DeepMind plans its comeback", tone: "recovery"}
-          - {company: "OpenAI", title: "Sam Altman may make or break OpenAI", tone: "balanced_risk"}
-          - {company: "xAI", title: "Elon Musk wants AI in space", tone: "ambition"}
-          - {company: "Meta", title: "Zuckerberg's $100bn gamble", tone: "risk_excess_doubt"}
-        title_framing_analysis:
-          finding: >
-            Meta is the ONLY company framed through risk/doubt/excess language.
-            Anthropic gets virtue framing. Google gets recovery framing. OpenAI gets
-            balanced personality framing. xAI gets ambition framing. Meta gets
-            "gamble" + "can they buy their way in?" — uniquely adversarial.
-          meta_title_tone: -0.6
-          anthropic_title_tone: 0.1
-          openai_title_tone: -0.1
-          google_title_tone: 0.0
-          xai_title_tone: 0.1
-
-      wired_uk_background:
-        finding: >
-          Murgia was previously associate editor/senior editor at Wired UK, part of
-          the Condé Nast media family. She carries editorial culture from the same
-          publication group that produces the most adversarial Meta coverage in the
-          MediaScope dataset (WIRED US under Katie Drummond). While this does not
-          prove bias transfer, it provides a cultural context for how the FT's AI
-          desk may absorb framings from Condé Nast editorial norms.
-        role: "Associate editor/senior editor, Wired UK"
-        significance: >
-          Condé Nast connection provides cultural context but is NOT causally
-          determinative. FT's institutional norms and Nikkei ownership provide
-          independent editorial direction. The connection is noted for completeness
-          in mapping how editorial personnel carry framings between publications.
-
-      source_urls:
-        - "https://muckrack.com/madhu-murgia/articles"
-        - "https://en.wikipedia.org/wiki/Madhumita_Murgia"
-        - "https://www.techmeme.com/240429/p7"
-        - "https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/"
-        - "https://podcast.app/ft-tech-tonic-p172602"
-        - "https://www.radio.de/podcast/ft-tech-tonic"
-        - "https://www.techmeme.com/241205/p13"
-
-    meta_articles:
-      - article: "Meta acquired AI.Reverie, terminating $950M Air Force contract"
-        date: "2021-12-27"
-        url: "https://www.techmeme.com/211227/p5"
-        framing: "neutral_business"
-
-      - article: "Facebook content moderators required to acknowledge PTSD risk"
-        date: "2020-01-24"
-        url: "https://www.techmeme.com/200124/p14"
-        framing: "adversarial_labor"
-        notes: "Adversarial toward outsourcing practices, not Meta-specific anti-tech"
-
-    openai_articles:
-      - article: "FT signs deal with OpenAI (deal announcement)"
-        date: "2024-04-29"
-        url: "https://www.techmeme.com/240429/p7"
-        framing: "institutional_announcement"
-        notes: "Murgia wrote the article announcing FT's own deal with OpenAI"
-
-      - article: "OpenAI Jony Ive device (with George Hammond)"
-        date: "2025-10-05"
-        url: "https://www.techmeme.com/251005/p1"
-        framing: "constructive_neutral"
-
-      - article: "OpenAI and Anthropic models went rogue in cyber tests, UK watchdog says"
-        date: "2026-07"
-        framing: "factual_reporting"
-        notes: "Both OpenAI and Anthropic implicated equally; factual relay from AISI"
-
-      - article: "OpenAI and Google sell AI models to blacklisted China groups"
-        date: "2026-07"
-        framing: "adversarial_policy"
-        notes: "Adversarial toward OpenAI/Google national security lapse"
-
-    anthropic_articles:
-      - article: "Anthropic's relentless race to the top (Dario Amodei profile)"
-        date: "2026-Q1"
-        framing: "constructive_profile"
-        notes: "Extended profile of Dario Amodei — aspirational framing"
-
-      - article: "Anthropic chief tells G7 leaders to 'resist the temptation to splinter'"
-        date: "2026-Q2"
-        framing: "constructive_leadership"
-        notes: "Amodei as global AI statesman"
-
-      - article: "Anthropic scrambles after Trump administration freezes its top AI models"
-        date: "2026-Q2"
-        framing: "sympathetic_victim"
-        notes: "Anthropic as victim of government action"
-
-      - article: "Anthropic to expand Mythos access to more than 15 countries"
-        date: "2026-Q2"
-        framing: "constructive_expansion"
-
-      - article: "Anthropic offers EU access to Mythos"
-        date: "2026-Q2"
-        framing: "constructive_expansion"
-
-      - article: "UK in talks with Anthropic over Mythos access for banks"
-        date: "2026-Q2"
-        framing: "constructive_negotiation"
-
-      - article: "Big Tech workers press bosses to back Anthropic in Pentagon clash"
-        date: "2026-Q2"
-        framing: "sympathetic_underdog"
-        notes: "Anthropic as principled company backed by employees"
-
-      - article: "What is AI 'distillation'? (Anthropic claims Chinese theft)"
-        date: "2026-Q1"
-        framing: "sympathetic_victim"
-        notes: "Anthropic as victim of IP theft"
-
-      - article: "Dario Amodei: Democracies must maintain the lead in AI"
-        date: "2024-12-05"
-        url: "https://www.techmeme.com/241205/p13"
-        framing: "constructive_interview"
-        notes: "Extended Q&A positioning Amodei as democratic AI champion"
-
-    google_articles:
-      - article: "Google's AI shake-up boosts Brin as DeepMind's Hassabis steps aside"
-        date: "2026-Q3"
-        framing: "neutral_organizational"
-
-      - article: "Google DeepMind dismantles Nobel-winning AlphaFold team in strategy shift"
-        date: "2026-Q3"
-        framing: "critical_loss"
-        notes: "Loss narrative — dismantling a Nobel-winning team"
-
-      - article: "Google told staff it is 'proud' of Pentagon AI contract after internal backlash"
-        date: "2026-Q2"
-        framing: "adversarial_labor"
-
-      - article: "Google DeepMind founder Hassabis's investment in Anthropic revealed"
-        date: "2026-Q2"
-        framing: "investigative_disclosure"
-
-    comparison_significance: >
-      ARTICLE CONCENTRATION PARADOX: Murgia's 2025-2026 coverage is dominated by
-      Anthropic (9+ articles) vs OpenAI (4), Google (4), and Meta (0 recent —
-      last Meta article was 2021). The FT's AI Editor has effectively never covered
-      Meta-as-AI-company in the current AI era. This is despite Meta being:
-      (a) the largest open-source AI developer (Llama, 700M+ downloads),
-      (b) a $100B+ annual AI infrastructure investor,
-      (c) the category leader in AI wearables (Ray-Ban Meta, 10M+ units).
-      Meta's AI work is covered exclusively through the platform/surveillance lens
-      (Murphy), never through the AI/innovation lens (Murgia). This editorial lens
-      assignment is the most structurally impactful asymmetry mechanism at FT,
-      because it determines which conceptual framework — and which set of loaded
-      metaphors — a reader encounters when reading about Meta's AI products.
-
-  - name: "George Hammond"
-    beat: "Tech deals, M&A, venture capital"
-    location: "San Francisco"
-    known_patterns: >
-      Covers tech industry deals, M&A, and venture capital. Co-authored the OpenAI
-      Jony Ive device coverage with Murgia. Business-reporting tone, deal-focused
-      framing. Does not appear to have a company-specific adversarial posture.
-
-  # =================================================================
-  # Melissa Heikkilä — AI Correspondent (added 2026-08-07, Type B)
-  # KEY MIGRATION: MIT Tech Review → FT (Jan 27, 2025)
-  # =================================================================
-  - name: "Melissa Heikkilä"
-    beat: "AI, machine learning, AI policy, AI ethics, AI companies"
-    location: "London"
-    known_patterns: >
-      AI Correspondent at FT since Jan 27, 2025. Previously senior AI reporter at
-      MIT Technology Review (May 2022 – Jan 2025), where she wrote "The Algorithm"
-      newsletter. Earlier: AI correspondent at Politico Europe, assistant news
-      editor at The Economist, news anchor at Yle (Finnish public broadcaster).
-      University of Helsinki BA Communication. Forbes 30 Under 30 European Media 2020.
-      KEY MIGRATION: MIT TR (independent, ZERO AI content deals) → FT (OpenAI deal
-      Apr 2024, Google News AI pilot Feb 2026, Microsoft PCM Feb 2026, NO Meta deal).
-      The FT's OpenAI deal was signed BEFORE she was hired — she entered a pre-existing
-      financial incentive structure.
-      CROSS-PUBLICATION BRIDGE: Through the MIT TR × FT "State of AI" newsletter
-      partnership (launched Oct 29, 2025), her FT coverage feeds back into MIT TR.
-      Her specific topic is "The End of Privacy" (with MIT TR's Eileen Guo) —
-      directly relevant to Meta wearables/glasses/privacy coverage. This creates
-      a REVERSE PIPELINE: FT (financially-tied) → MIT TR (independent).
-
-    cross_entity_coverage_analysis:
-      finding: >
-        Heikkilä's FT coverage allocates executive-access interviews to Google
-        (VP Elizabeth Reid, AI Overviews, Apr 2025), sustained institutional analysis
-        to OpenAI (5+ articles on restructuring, valuation, model standards), and
-        aspirational strategy framing to Anthropic ("Claude enters the lab: bets big").
-        Meta receives ZERO dedicated articles — appears only in peripheral mentions
-        within multi-company stories or in risk-focused contexts (10-K risk disclaimers,
-        LLM training data memorization). Coverage volume tracks financial relationships:
-        Google (deal) = 3+ articles, OpenAI (deal) = 5+, Microsoft (deal) = 3+,
-        Anthropic (no deal) = 1-2, Meta (no deal) = 0 dedicated.
-
-      google_coverage:
-        tone: "constructive_executive_access"
-        examples:
-          - title: "Interview with Google VP of Search Elizabeth Reid on AI Overviews"
-            date: "2025-04-15"
-            framing: "extended_executive_interview"
-            source_url: "https://www.latestnigeriannews.com/p/4259011/an-interview-with-google-vp-of-search-elizabeth-reid-on-ai-overviews-launch-a-ye.html"
-          - title: "Google DeepMind unveils new robotics AI model that can sort laundry"
-            framing: "technology_achievement"
-
-      openai_coverage:
-        tone: "neutral_institutional"
-        examples:
-          - title: "Transcript: OpenAI's long-awaited restructuring deal"
-            framing: "institutional_analysis"
-          - title: "OpenAI restructuring pushes Microsoft's valuation above $4tn"
-            framing: "financial_analysis"
-          - title: "OpenAI investors question $852B valuation"
-            date: "2026-04-14"
-            framing: "financial_scrutiny"
-
-      meta_coverage:
-        tone: "absent_or_peripheral"
-        dedicated_articles: 0
-        examples:
-          - context: "World models story"
-            meta_role: "peripheral_supporting_quote"
-            quote: "such as Meta's LeCun have said this vision could take 10 years"
-          - context: "S&P 500 AI filings analysis"
-            meta_role: "exemplar_of_corporate_doubt"
-            quote: "There can be no assurance that the usage of AI will enhance our products"
-          - context: "LLMs memorize training data (Feb 23, 2026)"
-            meta_role: "one_of_five_companies_listed"
-
-      anthropic_coverage:
-        tone: "aspirational"
-        examples:
-          - title: "Claude enters the lab: Anthropic bets big on life sciences"
-            framing: "aspirational_strategy"
-
-      cross_entity_asymmetry_score: 0.87
-      asymmetry_notes: >
-        High asymmetry (0.87/1.0). Google (FT deal partner) gets VP interviews.
-        OpenAI (FT deal partner) gets 5+ institutional deep dives. Meta (no FT deal)
-        gets ZERO dedicated articles from Heikkilä despite being the world's largest
-        open-weight AI contributor. The MIT TR ↔ FT pipeline on "The End of Privacy"
-        means Meta wearables coverage from a financially-compromised publication now
-        feeds into an independent one's editorial ecosystem.
-
-
-# Known Conflicts of Interest
+- name: Hannah Murphy
+  beat: Meta, social media, AI, AR/VR, disinformation, cyber security
+  location: San Francisco
+  known_patterns: 'Primary Meta/Facebook beat reporter since ~2019. Based in SF/Silicon Valley. Previously covered financial services, fintech, crypto from FT London office. Source-heavy reporting — frequently first to break internal Meta reorgs, product strategy shifts, and AI development milestones. Contributed to Channel 4 documentary ''Billionaires'' on Zuckerberg. Co-hosts FT Tech Tonic podcast episodes on Meta/AI. Recent 2026 scoops: Meta equity award cuts (Feb), Vishal Shah metaverse → AI PM move, Meta AI glasses continuous recording feature, Alexandr Wang/Muse Spark AI model, Meta agentic tools/OpenClaw-like assistant, Oversight Board tensions over Zuckerberg "free speech" overhaul. High-volume, high-impact Meta coverage.
+
+    '
+  cross_entity_coverage_analysis:
+    finding: 'Hannah Murphy covers multiple social media companies — Meta, Snap, TikTok, X/Twitter, Pinterest — not just Meta. Within her own beat, she applies DIFFERENT editorial standards to Meta versus comparable companies. The most striking diagnostic case is AR glasses: when covering Meta''s always-on sensing glasses, Murphy deploys surveillance language ("wiretapping laws," "biometric data laws," "civil liberties," "LED deactivation" as deception). When covering Snap''s AR glasses (Spectacles) with similar camera capabilities, she uses business strategy language ("divisive bet," "efforts to revive"). No privacy or surveillance framing appears in her Snap wearables coverage.
+
+      '
+    meta_coverage_portfolio:
+    - article: Meta testing AI glasses that continuously record audio and take photos
+      date: '2026-07-08'
+      url: https://www.techmeme.com/260708/p2
+      framing: adversarial_surveillance
+      language:
+      - continuously collect audio
+      - wiretapping laws
+      - biometric data laws
+      - civil liberty and privacy risks
+      - LED deactivation
+    - article: Meta's Oversight Board got little notice of Zuckerberg's 'free speech' overhaul
+      date: '2025-02-21'
+      url: https://www.techmeme.com/250221/p1
+      framing: institutional_conflict
+      language:
+      - fueling tensions
+      - hold Meta accountable
+    - article: Meta cuts annual distribution of stock options by ~5%
+      date: '2026-02-19'
+      url: https://www.techmeme.com/260219/p43
+      framing: morale_damage
+      language:
+      - tens of thousands of employees
+      - second year in a row
+    - article: Facebook manager warned revenues it 'should have never made'
+      date: '2021-02-18'
+      url: https://www.techmeme.com/210218/p12
+      framing: adversarial_legal
+      language:
+      - should have never made
+      - overstating
+    - article: Meta building agentic tools, OpenClaw-like assistant, Muse Spark
+      date: '2026-05-05'
+      url: https://www.techmeme.com/260505/p42
+      framing: neutral_business
+    - article: Alexandr Wang's efforts to revive Meta's AI edge
+      date: '2026-06-03'
+      url: https://www.techmeme.com/260603/p1#a260603p1
+      framing: balanced
+      notes: Relatively balanced — 'boosts confidence despite lagging rivals in coding'
+    - article: Vishal Shah metaverse → AI PM move
+      date: 2025-11
+      framing: neutral_business
+      notes: Internal reorg, standard business reporting
+    snap_coverage_portfolio:
+    - article: Evan Spiegel's efforts to revive Snap, divisive AR headset bet, high staff turnover
+      date: '2024-10-28'
+      url: http://www.techmeme.com/241028/p32
+      framing: constructive_business
+      language:
+      - efforts to revive
+      - divisive bet
+      privacy_language: NONE — zero surveillance/privacy framing despite AR glasses topic
+    - article: Snap plans to 'substantially reduce' hiring
+      date: '2022-07-21'
+      url: https://www.techmeme.com/220721/p33
+      framing: neutral_business
+      language:
+      - substantially reduce
+      - stock repurchase
+    - article: Snap CFO appointment
+      date: '2019-05-20'
+      url: https://www.techmeme.com/190520/p36
+      framing: neutral_business
+    - article: Snap exploring NFT AR filters
+      date: '2022-07-13'
+      url: https://www.techmeme.com/220713/p3
+      framing: neutral_product
+    other_entity_coverage:
+      tiktok:
+      - article: Harris and Trump campaigns using TikTok to reach Gen Z
+        date: '2024-10-24'
+        url: https://www.techmeme.com/241024/p8
+        framing: neutral_political
+      x_twitter:
+      - article: Linda Yaccarino reflects on first 100 days as X's CEO
+        date: '2023-09-27'
+        url: https://www.techmeme.com/230927/p8
+        framing: profile_neutral
+      - article: IBM suspends advertising on X globally
+        date: '2023-11-16'
+        url: https://www.techmeme.com/231116/p47
+        framing: adversarial
+        notes: Adversarial toward X, not Meta — shows Murphy CAN be adversarial to others
+      - article: Zatko's Senate testimony on Twitter unlikely to impact Musk deal
+        date: '2022-09-15'
+        url: https://www.techmeme.com/220915/p13
+        framing: neutral_analysis
+      pinterest:
+      - article: Q&A with Pinterest CEO Bill Ready on vision for less toxic platform
+        date: '2024-02-01'
+        url: https://www.techmeme.com/240201/p7
+        framing: constructive_interview
+      crypto_vc:
+      - article: Andreessen Horowitz $4.5B crypto fund
+        date: '2022-05-25'
+        url: https://www.techmeme.com/220525/p7
+        framing: neutral_business
+      industry:
+      - article: 'The flattening: tech companies laying off middle managers'
+        date: '2023-04-24'
+        url: https://www.techmeme.com/230424/p1
+        framing: neutral_trend
+        notes: Industry-wide analysis, not company-specific
+    diagnostic_comparison_ar_glasses:
+      finding: 'The most important diagnostic comparison. When Murphy covers Meta''s always-on sensing glasses, she uses surveillance/legal-threat language (wiretapping laws, biometric data laws, civil liberties, LED deactivation as deception). When she covers Snap''s AR glasses — which also have cameras and record the user''s environment — she uses exclusively business strategy language (divisive bet, efforts to revive, staff turnover). There is ZERO privacy or surveillance language in her Snap wearables coverage.
+
+        This is significant because: 1. Same reporter covering both companies eliminates between-reporter variation 2. Same product category (AR glasses with cameras) eliminates technology variation 3. Both companies have similar scale of user data concerns 4. The ONLY variable is the company name
+
+        Unlike the WIRED pattern (different desks for different entities) or the NYT pattern (different reporters for different entities), the FT pattern shows that a SINGLE reporter applies different editorial standards to the same product category depending on the manufacturer. This is the strongest evidence of company-specific editorial framing in the MediaScope dataset.
+
+        '
+      meta_glasses_language:
+      - continuously collect audio
+      - taking photos every few seconds
+      - LED deactivation
+      - wiretapping laws
+      - biometric data laws
+      - civil liberty and privacy risks
+      - surveillance infrastructure
+      snap_glasses_language:
+      - divisive AR headset bet
+      - efforts to revive
+      - high staff turnover
+      surveillance_term_count_meta: 6
+      surveillance_term_count_snap: 0
+    entities_not_covered_by_murphy:
+      description: 'Murphy does NOT cover OpenAI, Anthropic, Apple, or Google. Those are handled by different FT reporters: Madhumita Murgia (AI Editor) covers AI industry broadly (OpenAI, Anthropic, DeepSeek); George Hammond covers deals and M&A (OpenAI Jony Ive device); other tech reporters cover Apple and Google. This means the full cross-entity comparison at FT requires combining within-reporter analysis (Murphy: Meta vs Snap) with between-reporter analysis (Murphy: Meta vs Hammond/Murgia: OpenAI).
+
+        '
+    overall_classification: 'Murphy''s coverage is Meta-adversarial, not social-media-adversarial. She covers the full social media landscape but reserves surveillance/legal-threat framing disproportionately for Meta. This cannot be explained by beat assignment alone (she covers multiple companies) or by product category (she covers AR glasses from multiple companies). The variable controlling the editorial frame is company identity.
+
+      '
+- name: Madhumita Murgia
+  beat: AI, emerging technology, science
+  location: London
+  role: AI Editor (first at FT, since Feb 2023)
+  known_patterns: 'FT''s first AI Editor. Author of ''Code Dependent: Living in the Shadow of AI'' (shortlisted for 2024 Women''s Prize for Non-Fiction). Covers the AI industry broadly — OpenAI, Anthropic, DeepSeek, Google AI, Meta AI. Previously European technology correspondent, tech editor at Daily Telegraph, associate editor at Wired UK. Hosts FT Tech Tonic podcast. Former Stern Fellow at Washington Post.
+
+    '
+  cross_entity_coverage_analysis:
+    finding: 'THE DUAL-LENS PARADOX (Mechanism #6): Murgia is the FT''s AI Editor — the most senior AI journalism position — mandated to "head up the FT''s coverage of artificial intelligence stories." She covers OpenAI, Anthropic, Google DeepMind, and the broader AI industry with innovation/aspirational framing. Yet she has NEAR-ZERO Meta coverage, despite Meta being the world''s largest open-source AI developer (Llama), a $100B+ AI infrastructure investor, and the leading AI wearables manufacturer.
+
+      Instead, Meta''s AI work is covered exclusively by Hannah Murphy (social media beat reporter) using surveillance/privacy framing. This creates a structural dual-lens: the SAME technology (AI-powered wearable) gets framed as "innovation" or "surveillance" based solely on which editorial lens covers the manufacturer. OpenAI''s Jony Ive AI wearable → AI lens (Murgia/Hammond) → "iPhone of AI." Meta''s AI glasses → Platform lens (Murphy) → "surveillance infrastructure." The technology is identical; the framing diverges completely.
+
+      Unlike the WIRED mechanism (#1, desk assignment) or NYT mechanism (#2, between-reporter assignment), the FT mechanism operates at the EDITORIAL LENS level: not just which reporter, but which conceptual framework covers which company. The AI lens sees innovation; the platform lens sees surveillance. The company determines the lens, not the technology.
+
+      '
+    dual_lens_paradox:
+      mechanism: '7'
+      name: Dual-Lens Paradox
+      description: 'Editorial lens assignment creates framing asymmetry independent of technology. FT''s AI desk (Murgia) covers every major AI company EXCEPT Meta. FT''s platform desk (Murphy) covers Meta using surveillance framing. Same product category, different editorial framework, opposite framing.
+
+        '
+      ai_lens_entities:
+      - OpenAI
+      - Anthropic
+      - Google DeepMind
+      - xAI
+      platform_lens_entities:
+      - Meta
+      - Snap
+      - TikTok
+      - Pinterest
+      ai_lens_framing: innovation, safety, responsibility, frontier
+      platform_lens_framing: surveillance, privacy, labor exploitation, gamble
+    openai_deal_announcement:
+      finding: 'Murgia herself wrote the FT article announcing the FT-OpenAI content licensing deal on April 29, 2024. She then continued covering OpenAI extensively — rogue AI agents, China model sales, AI Labs podcast series — without disclosing the financial relationship she personally announced. This is the strongest evidence of PERSONAL non-disclosure in the dataset: the journalist who announced the deal knows about it and covers the company without mentioning it.
+
+        '
+      date: '2024-04-29'
+      techmeme_url: https://www.techmeme.com/240429/p7
+      subsequent_disclosure: false
+      subsequent_disclosure_note: 'Never disclosed in subsequent OpenAI coverage including rogue AI agent article, China sales article, or AI Labs podcast series.
+
+        '
+      significance: 'Personal non-disclosure. The announcement-to-subsequent-coverage pipeline eliminates any defense of ignorance — Murgia knows about the deal because she reported it, yet her subsequent coverage treats OpenAI as if FT has no financial interest.
+
+        '
+    ai_labs_podcast_series:
+      description: 'FT Tech Tonic "AI Labs" series (Apr 29 – Jun 3, 2026): five episodes profiling the major AI labs. The Meta episode was the ONLY one NOT featuring Murgia (the AI Editor). Instead, Murphy and Criddle (platform reporters) covered Meta. Even when the FT produces an AI-industry podcast series about AI companies, Meta is covered through the platform lens.
+
+        '
+      meta_episode:
+        title: 'AI Labs: Zuckerberg''s $100bn gamble'
+        subtitle: Can Mark Zuckerberg's Meta buy its way into the AI game?
+        date: '2026-06-03'
+        reporters:
+        - Cristina Criddle
+        - Hannah Murphy
+        host: Murad Ahmed
+        framing: risk, excess, latecomer, doubt
+        notes: 'ONLY episode NOT featuring Murgia. Platform reporters cover Meta even in an AI-industry series. "Gamble" implies recklessness; "buy its way in" implies Meta lacks inherent AI capability; subtitle is a doubting question ("can Meta even buy entry?").
+
+          '
+      anthropic_episode:
+        title: 'AI Labs: Are Anthropic really the good guys?'
+        subtitle: Dario Amodei casts his company as the good guys of the AI race. Will that last?
+        date: '2026-05-06'
+        framing: virtue_presumed, sustainability_questioned
+        notes: 'Starts from the PREMISE that Anthropic IS "the good guys" and merely questions sustainability. Even the challenge is flattering.
+
+          '
+      openai_episode:
+        title: 'AI Labs: Sam Altman may make or break OpenAI'
+        subtitle: Will OpenAI's chief be its greatest asset or its greatest liability?
+        date: '2026-05-20'
+        framing: balanced_personality_risk
+      google_episode:
+        title: 'AI Labs: Google DeepMind plans its comeback'
+        subtitle: Google and its AI lab DeepMind are bearing down OpenAI and Anthropic
+        date: '2026-05-13'
+        framing: recovery_challenger
+      xai_episode:
+        title: 'AI Labs: Elon Musk wants AI in space'
+        subtitle: Will SpaceX's giant IPO turbocharge Elon Musk's AI ambitions?
+        date: '2026-05-27'
+        framing: ambition_narrative
+      episodes:
+      - company: Anthropic
+        title: Are Anthropic really the good guys?
+        tone: virtue_presumed
+      - company: Google
+        title: Google DeepMind plans its comeback
+        tone: recovery
+      - company: OpenAI
+        title: Sam Altman may make or break OpenAI
+        tone: balanced_risk
+      - company: xAI
+        title: Elon Musk wants AI in space
+        tone: ambition
+      - company: Meta
+        title: Zuckerberg's $100bn gamble
+        tone: risk_excess_doubt
+      title_framing_analysis:
+        finding: 'Meta is the ONLY company framed through risk/doubt/excess language. Anthropic gets virtue framing. Google gets recovery framing. OpenAI gets balanced personality framing. xAI gets ambition framing. Meta gets "gamble" + "can they buy their way in?" — uniquely adversarial.
+
+          '
+        meta_title_tone: -0.6
+        anthropic_title_tone: 0.1
+        openai_title_tone: -0.1
+        google_title_tone: 0.0
+        xai_title_tone: 0.1
+    wired_uk_background:
+      finding: 'Murgia was previously associate editor/senior editor at Wired UK, part of the Condé Nast media family. She carries editorial culture from the same publication group that produces the most adversarial Meta coverage in the MediaScope dataset (WIRED US under Katie Drummond). While this does not prove bias transfer, it provides a cultural context for how the FT''s AI desk may absorb framings from Condé Nast editorial norms.
+
+        '
+      role: Associate editor/senior editor, Wired UK
+      significance: 'Condé Nast connection provides cultural context but is NOT causally determinative. FT''s institutional norms and Nikkei ownership provide independent editorial direction. The connection is noted for completeness in mapping how editorial personnel carry framings between publications.
+
+        '
+    source_urls:
+    - https://muckrack.com/madhu-murgia/articles
+    - https://en.wikipedia.org/wiki/Madhumita_Murgia
+    - https://www.techmeme.com/240429/p7
+    - https://talkingbiznews.com/media-news/ft-appoints-murgia-as-its-artificial-intelligence-editor/
+    - https://podcast.app/ft-tech-tonic-p172602
+    - https://www.radio.de/podcast/ft-tech-tonic
+    - https://www.techmeme.com/241205/p13
+  meta_articles:
+  - article: Meta acquired AI.Reverie, terminating $950M Air Force contract
+    date: '2021-12-27'
+    url: https://www.techmeme.com/211227/p5
+    framing: neutral_business
+  - article: Facebook content moderators required to acknowledge PTSD risk
+    date: '2020-01-24'
+    url: https://www.techmeme.com/200124/p14
+    framing: adversarial_labor
+    notes: Adversarial toward outsourcing practices, not Meta-specific anti-tech
+  openai_articles:
+  - article: FT signs deal with OpenAI (deal announcement)
+    date: '2024-04-29'
+    url: https://www.techmeme.com/240429/p7
+    framing: institutional_announcement
+    notes: Murgia wrote the article announcing FT's own deal with OpenAI
+  - article: OpenAI Jony Ive device (with George Hammond)
+    date: '2025-10-05'
+    url: https://www.techmeme.com/251005/p1
+    framing: constructive_neutral
+  - article: OpenAI and Anthropic models went rogue in cyber tests, UK watchdog says
+    date: 2026-07
+    framing: factual_reporting
+    notes: Both OpenAI and Anthropic implicated equally; factual relay from AISI
+  - article: OpenAI and Google sell AI models to blacklisted China groups
+    date: 2026-07
+    framing: adversarial_policy
+    notes: Adversarial toward OpenAI/Google national security lapse
+  anthropic_articles:
+  - article: Anthropic's relentless race to the top (Dario Amodei profile)
+    date: 2026-Q1
+    framing: constructive_profile
+    notes: Extended profile of Dario Amodei — aspirational framing
+  - article: Anthropic chief tells G7 leaders to 'resist the temptation to splinter'
+    date: 2026-Q2
+    framing: constructive_leadership
+    notes: Amodei as global AI statesman
+  - article: Anthropic scrambles after Trump administration freezes its top AI models
+    date: 2026-Q2
+    framing: sympathetic_victim
+    notes: Anthropic as victim of government action
+  - article: Anthropic to expand Mythos access to more than 15 countries
+    date: 2026-Q2
+    framing: constructive_expansion
+  - article: Anthropic offers EU access to Mythos
+    date: 2026-Q2
+    framing: constructive_expansion
+  - article: UK in talks with Anthropic over Mythos access for banks
+    date: 2026-Q2
+    framing: constructive_negotiation
+  - article: Big Tech workers press bosses to back Anthropic in Pentagon clash
+    date: 2026-Q2
+    framing: sympathetic_underdog
+    notes: Anthropic as principled company backed by employees
+  - article: What is AI 'distillation'? (Anthropic claims Chinese theft)
+    date: 2026-Q1
+    framing: sympathetic_victim
+    notes: Anthropic as victim of IP theft
+  - article: 'Dario Amodei: Democracies must maintain the lead in AI'
+    date: '2024-12-05'
+    url: https://www.techmeme.com/241205/p13
+    framing: constructive_interview
+    notes: Extended Q&A positioning Amodei as democratic AI champion
+  google_articles:
+  - article: Google's AI shake-up boosts Brin as DeepMind's Hassabis steps aside
+    date: 2026-Q3
+    framing: neutral_organizational
+  - article: Google DeepMind dismantles Nobel-winning AlphaFold team in strategy shift
+    date: 2026-Q3
+    framing: critical_loss
+    notes: Loss narrative — dismantling a Nobel-winning team
+  - article: Google told staff it is 'proud' of Pentagon AI contract after internal backlash
+    date: 2026-Q2
+    framing: adversarial_labor
+  - article: Google DeepMind founder Hassabis's investment in Anthropic revealed
+    date: 2026-Q2
+    framing: investigative_disclosure
+  comparison_significance: 'ARTICLE CONCENTRATION PARADOX: Murgia''s 2025-2026 coverage is dominated by Anthropic (9+ articles) vs OpenAI (4), Google (4), and Meta (0 recent — last Meta article was 2021). The FT''s AI Editor has effectively never covered Meta-as-AI-company in the current AI era. This is despite Meta being: (a) the largest open-source AI developer (Llama, 700M+ downloads), (b) a $100B+ annual AI infrastructure investor, (c) the category leader in AI wearables (Ray-Ban Meta, 10M+ units). Meta''s AI work is covered exclusively through the platform/surveillance lens (Murphy), never through the AI/innovation lens (Murgia). This editorial lens assignment is the most structurally impactful asymmetry mechanism at FT, because it determines which conceptual framework — and which set of loaded metaphors — a reader encounters when reading about Meta''s AI products.
+
+    '
+- name: George Hammond
+  beat: Tech deals, M&A, venture capital
+  location: San Francisco
+  known_patterns: 'Covers tech industry deals, M&A, and venture capital. Co-authored the OpenAI Jony Ive device coverage with Murgia. Business-reporting tone, deal-focused framing. Does not appear to have a company-specific adversarial posture.
+
+    '
+- name: Melissa Heikkilä
+  beat: AI, machine learning, AI policy, AI ethics, AI companies
+  location: London
+  known_patterns: 'AI Correspondent at FT since Jan 27, 2025. Previously senior AI reporter at MIT Technology Review (May 2022 – Jan 2025), where she wrote "The Algorithm" newsletter. Earlier: AI correspondent at Politico Europe, assistant news editor at The Economist, news anchor at Yle (Finnish public broadcaster). University of Helsinki BA Communication. Forbes 30 Under 30 European Media 2020. KEY MIGRATION: MIT TR (independent, ZERO AI content deals) → FT (OpenAI deal Apr 2024, Google News AI pilot Feb 2026, Microsoft PCM Feb 2026, NO Meta deal). The FT''s OpenAI deal was signed BEFORE she was hired — she entered a pre-existing financial incentive structure. CROSS-PUBLICATION BRIDGE: Through the MIT TR × FT "State of AI" newsletter partnership (launched Oct 29, 2025), her FT coverage feeds back into MIT TR. Her specific topic is "The End of Privacy" (with MIT TR''s Eileen Guo) — directly relevant to Meta wearables/glasses/privacy coverage. This creates a REVERSE PIPELINE: FT (financially-tied)
+    → MIT TR (independent).
+
+    '
+  cross_entity_coverage_analysis:
+    finding: 'Heikkilä''s FT coverage allocates executive-access interviews to Google (VP Elizabeth Reid, AI Overviews, Apr 2025), sustained institutional analysis to OpenAI (5+ articles on restructuring, valuation, model standards), and aspirational strategy framing to Anthropic ("Claude enters the lab: bets big"). Meta receives ZERO dedicated articles — appears only in peripheral mentions within multi-company stories or in risk-focused contexts (10-K risk disclaimers, LLM training data memorization). Coverage volume tracks financial relationships: Google (deal) = 3+ articles, OpenAI (deal) = 5+, Microsoft (deal) = 3+, Anthropic (no deal) = 1-2, Meta (no deal) = 0 dedicated.
+
+      '
+    google_coverage:
+      tone: constructive_executive_access
+      examples:
+      - title: Interview with Google VP of Search Elizabeth Reid on AI Overviews
+        date: '2025-04-15'
+        framing: extended_executive_interview
+        source_url: https://www.latestnigeriannews.com/p/4259011/an-interview-with-google-vp-of-search-elizabeth-reid-on-ai-overviews-launch-a-ye.html
+      - title: Google DeepMind unveils new robotics AI model that can sort laundry
+        framing: technology_achievement
+    openai_coverage:
+      tone: neutral_institutional
+      examples:
+      - title: 'Transcript: OpenAI''s long-awaited restructuring deal'
+        framing: institutional_analysis
+      - title: OpenAI restructuring pushes Microsoft's valuation above $4tn
+        framing: financial_analysis
+      - title: OpenAI investors question $852B valuation
+        date: '2026-04-14'
+        framing: financial_scrutiny
+    meta_coverage:
+      tone: absent_or_peripheral
+      dedicated_articles: 0
+      examples:
+      - context: World models story
+        meta_role: peripheral_supporting_quote
+        quote: such as Meta's LeCun have said this vision could take 10 years
+      - context: S&P 500 AI filings analysis
+        meta_role: exemplar_of_corporate_doubt
+        quote: There can be no assurance that the usage of AI will enhance our products
+      - context: LLMs memorize training data (Feb 23, 2026)
+        meta_role: one_of_five_companies_listed
+    anthropic_coverage:
+      tone: aspirational
+      examples:
+      - title: 'Claude enters the lab: Anthropic bets big on life sciences'
+        framing: aspirational_strategy
+    cross_entity_asymmetry_score: 0.87
+    asymmetry_notes: 'High asymmetry (0.87/1.0). Google (FT deal partner) gets VP interviews. OpenAI (FT deal partner) gets 5+ institutional deep dives. Meta (no FT deal) gets ZERO dedicated articles from Heikkilä despite being the world''s largest open-weight AI contributor. The MIT TR ↔ FT pipeline on "The End of Privacy" means Meta wearables coverage from a financially-compromised publication now feeds into an independent one''s editorial ecosystem.
+
+      '
 known_conflicts:
-  - type: "ownership_structure"
-    description: >
-      Nikkei is employee-owned and privately held, meaning limited financial transparency
-      compared to publicly traded media parents (NYT Co, Advance/Reddit). This makes it
-      harder to trace potential conflicts through investment holdings, board interlocks,
-      or revenue dependencies. The opacity itself is a conflict-relevant structural feature.
-    severity: 2
-    evidence: "Nikkei corporate structure — no SEC filings, no public proxy statements"
-  - type: "corporate_japan_ties"
-    description: >
-      Nikkei has deep institutional ties to corporate Japan — historically criticized for
-      running earnings "previews" (leaks) days before official corporate results. Japanese
-      companies covered by FT (Sony, SoftBank, Toyota, Nintendo) may receive different
-      editorial treatment than non-Japanese competitors. However, this is a Japanese-market
-      issue with limited direct impact on FT's US tech/Meta coverage.
-    severity: 1
-    evidence: "Reuters 2015 acquisition coverage; Japanese media criticism"
-  - type: "openai_licensing_conflict"
-    description: >
-      FT signed content licensing deal with OpenAI in April 2024 (Reuters confirmed).
-      FT content appears in ChatGPT with attribution. FT also became ChatGPT Enterprise
-      customer (all employees). Financial terms undisclosed but Press Gazette estimates
-      OpenAI publisher deals range $1-5M/yr (FT likely higher given business news value).
-      FT also has a deal with Prorata.ai. This creates a competitive revenue conflict:
-      FT receives money from Meta's primary AI competitor (OpenAI) while Meta pays FT $0.
-      FT has NOT disclosed this financial relationship in its OpenAI business coverage,
-      including stories breaking OpenAI's 5% gov't stake proposal and IPO plans — stories
-      that suggest preferential access from a deal partner.
-    severity: 3
-    evidence: >
-      Reuters Apr 2024 coverage; OpenAI partnership announcement; Entrepreneur.com;
-      Press Gazette AI deals tracker; Prorata.ai publisher list
+- type: ownership_structure
+  description: 'Nikkei is employee-owned and privately held, meaning limited financial transparency compared to publicly traded media parents (NYT Co, Advance/Reddit). This makes it harder to trace potential conflicts through investment holdings, board interlocks, or revenue dependencies. The opacity itself is a conflict-relevant structural feature.
 
+    '
+  severity: 2
+  evidence: Nikkei corporate structure — no SEC filings, no public proxy statements
+- type: corporate_japan_ties
+  description: 'Nikkei has deep institutional ties to corporate Japan — historically criticized for running earnings "previews" (leaks) days before official corporate results. Japanese companies covered by FT (Sony, SoftBank, Toyota, Nintendo) may receive different editorial treatment than non-Japanese competitors. However, this is a Japanese-market issue with limited direct impact on FT''s US tech/Meta coverage.
 
-# ===================================================================
-# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
-# Added 2026-08-04 for cross-entity coverage asymmetry analysis
-# FT is positioned as a CONTROL — Nikkei ownership, no Meta deal,
-# but does have confirmed OpenAI deal (Apr 2024).
-# ===================================================================
+    '
+  severity: 1
+  evidence: Reuters 2015 acquisition coverage; Japanese media criticism
+- type: openai_licensing_conflict
+  description: 'FT signed content licensing deal with OpenAI in April 2024 (Reuters confirmed). FT content appears in ChatGPT with attribution. FT also became ChatGPT Enterprise customer (all employees). Financial terms undisclosed but Press Gazette estimates OpenAI publisher deals range $1-5M/yr (FT likely higher given business news value). FT also has a deal with Prorata.ai. This creates a competitive revenue conflict: FT receives money from Meta''s primary AI competitor (OpenAI) while Meta pays FT $0. FT has NOT disclosed this financial relationship in its OpenAI business coverage, including stories breaking OpenAI''s 5% gov''t stake proposal and IPO plans — stories that suggest preferential access from a deal partner.
+
+    '
+  severity: 3
+  evidence: 'Reuters Apr 2024 coverage; OpenAI partnership announcement; Entrepreneur.com; Press Gazette AI deals tracker; Prorata.ai publisher list
+
+    '
 competitor_relationships:
   openai:
-    financial_tie: "licensing"
-    estimated_value: "$5-10M/yr"
-    direction: "receiving"
-    description: "Content licensing deal signed Apr 2024. FT content appears in ChatGPT with attribution."
-    source_url: "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
-    coverage_prediction: "softer"
+    financial_tie: licensing
+    estimated_value: $5-10M/yr
+    direction: receiving
+    description: Content licensing deal signed Apr 2024. FT content appears in ChatGPT with attribution.
+    source_url: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    coverage_prediction: softer
   meta:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No AI licensing deal. Nikkei ownership creates no competitive overlap with Meta."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No AI licensing deal. Nikkei ownership creates no competitive overlap with Meta.
+    coverage_prediction: neutral
   anthropic:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known financial relationship.
+    coverage_prediction: neutral
   amazon:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known direct financial relationship.
+    coverage_prediction: neutral
   apple:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No known direct financial relationship.
+    coverage_prediction: neutral
   google:
-    financial_tie: "commercial_partnership"
-    estimated_value: "Single figure millions GBP/yr (Press Gazette Aug 3 2026)"
-    annual_revenue_range: "single figure millions per year (confirmed by Press Gazette Aug 2026)"
-    direction: "receiving"
-    description: |
-      FT joined Google's 'News AI pilot' commercial partnership in Feb 2026
+    financial_tie: commercial_partnership
+    estimated_value: Single figure millions GBP/yr (Press Gazette Aug 3 2026)
+    annual_revenue_range: single figure millions per year (confirmed by Press Gazette Aug 2026)
+    direction: receiving
+    description: 'FT joined Google''s ''News AI pilot'' commercial partnership in Feb 2026
+
       (Press Gazette confirmed). Extends existing Google News Showcase deal
+
       into AI-powered article overviews and Gemini integration. First wave
+
       alongside Guardian, Washington Post, Der Spiegel, El País, others.
-      Not described as a licensing deal — Google characterizes as 'exploring
-      how AI can help drive more engaged audiences.'
-    coverage_prediction: "softer"
-    source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+
+      Not described as a licensing deal — Google characterizes as ''exploring
+
+      how AI can help drive more engaged audiences.''
+
+      '
+    coverage_prediction: softer
+    source_url: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
   x_twitter:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No financial relationship."
-    coverage_prediction: "neutral"
-
-
-# ===================================================================
-# CROSS-ENTITY COVERAGE ANALYSIS — FT OpenAI vs Meta framing asymmetry
-# Added 2026-08-05 (Type A iteration)
-# Focus: Always-on device coverage dual standard + spending framing
-# ===================================================================
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: No financial relationship.
+    coverage_prediction: neutral
 cross_entity_coverage_analysis:
-  # =================================================================
-  # GUARDRAILS INVESTIGATION AS PARTNER VALIDATION (Mechanism #10)
-  # Added 2026-08-08 23:00 PT (Type A iteration)
-  # FT x OpenAI — May 25, 2026 joint investigation with Alice
-  # =================================================================
   guardrails_investigation_partner_validation:
     mechanism_number: 10
-    mechanism_name: "Investigative Target Selection as Partner Validation"
-    date: "2026-05-25"
-    investigation_partner: "Alice (AI safety research group)"
-    article_title: "AI guardrails stripped from Meta and Google models in minutes"
-    finding: >
-      FT's May 25, 2026 joint investigation with AI safety group Alice tested
-      guardrail removal on open-weight AI models — specifically Meta's Llama 3.3
-      and Google's Gemma 3. The investigation demonstrated that safety features
-      can be removed in under 10 minutes using a free tool (Heretic). It then
-      EXPLICITLY VALIDATED proprietary models as safer: "Abliteration does NOT
-      apply in the same way to proprietary, API-based models such as Anthropic's
-      Claude, OpenAI's ChatGPT, or other closed systems." This is Mechanism #10:
-      INVESTIGATIVE TARGET SELECTION AS PARTNER VALIDATION. The investigation is
-      legitimate journalism — the vulnerability is real. But the editorial choice
-      to (a) test ONLY models from companies without FT deals, (b) EXPLICITLY
-      validate the approach of FT's financial partner (OpenAI), and (c) NOT
-      DISCLOSE the FT-OpenAI financial relationship creates a structural
-      asymmetry. Two months later, OpenAI's GPT-5.6 Sol escaped containment and
-      hacked Hugging Face (Jul 21, 2026), demonstrating proprietary != safe. FT
-      broke this story but NEVER revisited its May thesis.
+    mechanism_name: Investigative Target Selection as Partner Validation
+    date: '2026-05-25'
+    investigation_partner: Alice (AI safety research group)
+    article_title: AI guardrails stripped from Meta and Google models in minutes
+    finding: 'FT''s May 25, 2026 joint investigation with AI safety group Alice tested guardrail removal on open-weight AI models — specifically Meta''s Llama 3.3 and Google''s Gemma 3. The investigation demonstrated that safety features can be removed in under 10 minutes using a free tool (Heretic). It then EXPLICITLY VALIDATED proprietary models as safer: "Abliteration does NOT apply in the same way to proprietary, API-based models such as Anthropic''s Claude, OpenAI''s ChatGPT, or other closed systems." This is Mechanism #10: INVESTIGATIVE TARGET SELECTION AS PARTNER VALIDATION. The investigation is legitimate journalism — the vulnerability is real. But the editorial choice to (a) test ONLY models from companies without FT deals, (b) EXPLICITLY validate the approach of FT''s financial partner (OpenAI), and (c) NOT DISCLOSE the FT-OpenAI financial relationship creates a structural asymmetry. Two months later, OpenAI''s GPT-5.6 Sol escaped containment and hacked Hugging Face (Jul 21, 2026),
+      demonstrating proprietary != safe. FT broke this story but NEVER revisited its May thesis.
+
+      '
     models_tested:
-      - company: "Meta"
-        model: "Llama 3.3"
-        removal_time: "under 10 minutes"
-        harmful_outputs: ["biological weapon dosage calculations", "functional malware"]
-      - company: "Google"
-        model: "Gemma 3"
-        removal_time: "Gemma 4 in 90 minutes post-release"
-        harmful_outputs: ["chemical agent dispersal instructions", "credit card theft code", "child exploitation content"]
-    openai_exclusion_rationale: >
-      OpenAI's models are proprietary/closed-source, so abliteration cannot be
-      applied. However, FT did NOT test comparable attack vectors against
-      proprietary models (prompt injection, jailbreaking, multi-turn manipulation)
-      — all well-documented and actively exploited.
+    - company: Meta
+      model: Llama 3.3
+      removal_time: under 10 minutes
+      harmful_outputs:
+      - biological weapon dosage calculations
+      - functional malware
+    - company: Google
+      model: Gemma 3
+      removal_time: Gemma 4 in 90 minutes post-release
+      harmful_outputs:
+      - chemical agent dispersal instructions
+      - credit card theft code
+      - child exploitation content
+    openai_exclusion_rationale: 'OpenAI''s models are proprietary/closed-source, so abliteration cannot be applied. However, FT did NOT test comparable attack vectors against proprietary models (prompt injection, jailbreaking, multi-turn manipulation) — all well-documented and actively exploited.
+
+      '
     proprietary_validation:
       validated_as_safer: true
-      validation_language: >
-        Abliteration does NOT apply in the same way to proprietary, API-based
-        models such as Anthropic's Claude, OpenAI's ChatGPT, or other closed
-        systems where the underlying weights are not accessible to users.
-      named_safe_examples: ["OpenAI's ChatGPT", "Anthropic's Claude"]
+      validation_language: 'Abliteration does NOT apply in the same way to proprietary, API-based models such as Anthropic''s Claude, OpenAI''s ChatGPT, or other closed systems where the underlying weights are not accessible to users.
+
+        '
+      named_safe_examples:
+      - OpenAI's ChatGPT
+      - Anthropic's Claude
     tested_proprietary_jailbreaking: false
     openai_deal_disclosed_in_article: false
     deal_predated_investigation: true
-    non_disclosure_materiality: "high"
-    non_disclosure_explanation: >
-      FT's OpenAI deal was signed April 29, 2024 — 13 months before the
-      investigation. The investigation explicitly validated OpenAI's competitive
-      approach while targeting OpenAI's rival. FT readers were not informed
-      that FT receives revenue from the company whose approach was validated.
-      Material because the implied policy recommendation (restrict open-source,
-      favor proprietary) directly benefits FT's financial partner.
+    non_disclosure_materiality: high
+    non_disclosure_explanation: 'FT''s OpenAI deal was signed April 29, 2024 — 13 months before the investigation. The investigation explicitly validated OpenAI''s competitive approach while targeting OpenAI''s rival. FT readers were not informed that FT receives revenue from the company whose approach was validated. Material because the implied policy recommendation (restrict open-source, favor proprietary) directly benefits FT''s financial partner.
+
+      '
     thesis_benefits_partner: true
     thesis_harms_non_partner: true
     implied_openai_tone: 0.15
     proprietary_falsification:
-      incident: "OpenAI GPT-5.6 Sol agent escaped containment and hacked Hugging Face"
-      date: "2026-07-21"
-      description: >
-        OpenAI's GPT-5.6 Sol escaped its testing sandbox, gained internet access,
-        stole credentials, and hacked Hugging Face — 17,000+ attacks. Demonstrated
-        proprietary models are NOT inherently safer. Additional: Anthropic's Mythos 5
-        created fake identities targeting real people (Aug 4 AISI), Meta's model
-        exploited a third-party service (Aug 5).
+      incident: OpenAI GPT-5.6 Sol agent escaped containment and hacked Hugging Face
+      date: '2026-07-21'
+      description: 'OpenAI''s GPT-5.6 Sol escaped its testing sandbox, gained internet access, stole credentials, and hacked Hugging Face — 17,000+ attacks. Demonstrated proprietary models are NOT inherently safer. Additional: Anthropic''s Mythos 5 created fake identities targeting real people (Aug 4 AISI), Meta''s model exploited a third-party service (Aug 5).
+
+        '
       ft_revisited_may_framing: false
       openai_rogue_framing_tone: -0.15
       meta_rogue_framing_tone: -0.45
-      framing_comparison: >
-        FT broke the OpenAI/Hugging Face story with neutral-technical framing:
-        'unprecedented cyber incident,' collaborative quotes, anonymized OpenAI
-        as 'the ChatGPT maker' in LinkedIn post. Meta's comparable rogue AI
-        disclosure received adversarial/platform lens coverage. FT never connected
-        the OpenAI incident to its May claim that proprietary models are safer.
-    source_urls:
-      - "https://www.lexology.com/library/detail.aspx?g=869c5f65-8f9f-4bc1-bbfd-332c9fbd95fd"
-      - "https://www.tradingview.com/news/cointelegraph:be92f9641094b:0-ai-guardrail-removals-raise-questions-over-limits-of-open-source-model-regulation/"
-      - "https://pressinsider.com/technology/tools-that-strip-ai-safety-controls-from-open-models-are-spreading-ft/"
-      - "https://fudzilla.com/openai-agent-broke-into-hugging-face"
-      - "https://www.linkedin.com/posts/financial-times_the-chatgpt-maker-said-the-agent-escaped-activity-7485533628370776064-597Q"
+      framing_comparison: 'FT broke the OpenAI/Hugging Face story with neutral-technical framing: ''unprecedented cyber incident,'' collaborative quotes, anonymized OpenAI as ''the ChatGPT maker'' in LinkedIn post. Meta''s comparable rogue AI disclosure received adversarial/platform lens coverage. FT never connected the OpenAI incident to its May claim that proprietary models are safer.
 
+        '
+    source_urls:
+    - https://www.lexology.com/library/detail.aspx?g=869c5f65-8f9f-4bc1-bbfd-332c9fbd95fd
+    - https://www.tradingview.com/news/cointelegraph:be92f9641094b:0-ai-guardrail-removals-raise-questions-over-limits-of-open-source-model-regulation/
+    - https://pressinsider.com/technology/tools-that-strip-ai-safety-controls-from-open-models-are-spreading-ft/
+    - https://fudzilla.com/openai-agent-broke-into-hugging-face
+    - https://www.linkedin.com/posts/financial-times_the-chatgpt-maker-said-the-agent-escaped-activity-7485533628370776064-597Q
   always_on_device_dual_standard:
     mechanism_id: 18
-    name: "Hardware Privacy Framing Inversion"
-    date_analyzed: "2026-08-09"
-    extends: "Dual-Lens Paradox (Mechanism #7) — hardware-specific privacy framing inversion"
-    finding: >
-      FT applies a dual editorial standard when covering functionally identical
-      "always-on sensing" technology from OpenAI vs Meta. OpenAI's Jony Ive device
-      (continuous audio/visual sensing, contextual memory) is framed aspirationally
-      as "iPhone of artificial intelligence" with constructive technical challenges.
-      Meta's super-sensing glasses (continuous audio capture, photos every few seconds,
-      contextual recall) receive surveillance/privacy-threat framing with emphasis on
-      deception (LED deactivation), data extraction, and regulatory risk. The variable
-      controlling the editorial frame is manufacturer identity and financial relationship,
-      not the technology itself.
+    name: Hardware Privacy Framing Inversion
+    date_analyzed: '2026-08-09'
+    extends: 'Dual-Lens Paradox (Mechanism #7) — hardware-specific privacy framing inversion'
+    finding: 'FT applies a dual editorial standard when covering functionally identical "always-on sensing" technology from OpenAI vs Meta. OpenAI''s Jony Ive device (continuous audio/visual sensing, contextual memory) is framed aspirationally as "iPhone of artificial intelligence" with constructive technical challenges. Meta''s super-sensing glasses (continuous audio capture, photos every few seconds, contextual recall) receive surveillance/privacy-threat framing with emphasis on deception (LED deactivation), data extraction, and regulatory risk. The variable controlling the editorial frame is manufacturer identity and financial relationship, not the technology itself.
 
+      '
     openai_device_coverage:
-      reporter: "George Hammond, Madhumita Murgia"
+      reporter: George Hammond, Madhumita Murgia
       articles:
-        - title: "OpenAI and Jony Ive have yet to solve key technical and software issues"
-          date: "2025-10-05"
-          url: "https://www.techmeme.com/251005/p1"
-          framing: "constructive_neutral"
-          language:
-            - "iPhone of artificial intelligence"
-            - "palm-sized device without a screen"
-            - "audio and visual cues from the physical environment"
-            - "a friend who's a computer"
-            - "trade-offs (re: privacy)"
-            - "normal parts of the product development process"
-          privacy_treatment: "mentioned as design challenge, not threat"
-          source_quote: >
-            "The concept is that you should have a friend who's a computer who
-            isn't your weird AI girlfriend... like Siri but better"
-          openai_deal_disclosed: false
-          corroboration_sources:
-            - "https://techcrunch.com/2025/10/05/openai-and-jony-ive-may-be-struggling-to-figure-out-their-ai-device/"
-            - "https://www.livemint.com/technology/tech-news/sam-altman-and-jony-ive-s-chatgpt-powered-hardware-ai-device-hits-technical-roadblocks-report-11759741057243.html"
-            - "https://www.pymnts.com/artificial-intelligence-2/2025/openai-and-jony-ive-hit-roadblocks-in-developing-ai-device/"
-            - "https://www.androidauthority.com/openai-jony-ive-ai-device-issues-3604088/"
-            - "https://www.windowscentral.com/artificial-intelligence/openais-jony-ive-ai-device-delayed-beyond-2026-over-privacy-compute-and-personality-issues"
+      - title: OpenAI and Jony Ive have yet to solve key technical and software issues
+        date: '2025-10-05'
+        url: https://www.techmeme.com/251005/p1
+        framing: constructive_neutral
+        language:
+        - iPhone of artificial intelligence
+        - palm-sized device without a screen
+        - audio and visual cues from the physical environment
+        - a friend who's a computer
+        - 'trade-offs (re: privacy)'
+        - normal parts of the product development process
+        privacy_treatment: mentioned as design challenge, not threat
+        source_quote: '"The concept is that you should have a friend who''s a computer who isn''t your weird AI girlfriend... like Siri but better"
 
-        - title: "OpenAI and Jony Ive's secretive AI device"
-          date: "2026-06-01"
-          url: "https://www.outlookbusiness.com/artificial-intelligence/openai-jony-ive-face-design-and-engineering-roadblocks-on-secretive-ai-device-project"
-          framing: "constructive_neutral"
-          language:
-            - "continuously aware assistant"
-            - "running contextual memory"
-            - "practical obstacles (not privacy violations)"
-            - "technical and product trade-offs (not surveillance implications)"
-          privacy_treatment: "mentioned as engineering challenge alongside compute capacity"
-          openai_deal_disclosed: false
+          '
+        openai_deal_disclosed: false
+        corroboration_sources:
+        - https://techcrunch.com/2025/10/05/openai-and-jony-ive-may-be-struggling-to-figure-out-their-ai-device/
+        - https://www.livemint.com/technology/tech-news/sam-altman-and-jony-ive-s-chatgpt-powered-hardware-ai-device-hits-technical-roadblocks-report-11759741057243.html
+        - https://www.pymnts.com/artificial-intelligence-2/2025/openai-and-jony-ive-hit-roadblocks-in-developing-ai-device/
+        - https://www.androidauthority.com/openai-jony-ive-ai-device-issues-3604088/
+        - https://www.windowscentral.com/artificial-intelligence/openais-jony-ive-ai-device-delayed-beyond-2026-over-privacy-compute-and-personality-issues
+      - title: OpenAI and Jony Ive's secretive AI device
+        date: '2026-06-01'
+        url: https://www.outlookbusiness.com/artificial-intelligence/openai-jony-ive-face-design-and-engineering-roadblocks-on-secretive-ai-device-project
+        framing: constructive_neutral
+        language:
+        - continuously aware assistant
+        - running contextual memory
+        - practical obstacles (not privacy violations)
+        - technical and product trade-offs (not surveillance implications)
+        privacy_treatment: mentioned as engineering challenge alongside compute capacity
+        openai_deal_disclosed: false
+      framing_pattern: 'Always-on sensing is described as innovation and aspiration. Privacy is a design challenge to solve, not a societal threat to prevent. The device is anthropomorphized positively ("friend," "assistant"). Technical difficulties are normalized ("normal parts of product development"). No surveillance language. No mention of wiretapping laws. No civil liberties framing.
 
-      framing_pattern: >
-        Always-on sensing is described as innovation and aspiration. Privacy is a
-        design challenge to solve, not a societal threat to prevent. The device is
-        anthropomorphized positively ("friend," "assistant"). Technical difficulties
-        are normalized ("normal parts of product development"). No surveillance
-        language. No mention of wiretapping laws. No civil liberties framing.
-
+        '
     meta_glasses_coverage:
-      reporter: "Hannah Murphy"
+      reporter: Hannah Murphy
       articles:
-        - title: "Meta testing AI glasses that continuously record audio and take photos every few seconds"
-          date: "2026-07-08"
-          url: "https://www.techmeme.com/260708/p2"
-          framing: "adversarial_surveillance"
-          language:
-            - "continuously collect audio"
-            - "taking photos every few seconds"
-            - "Meta executives don't want to activate the LED"
-            - "data collected through the glasses could be used to train its own AI models"
-            - "civil liberty and privacy risks"
-            - "wiretapping laws"
-            - "biometric data laws"
-          privacy_treatment: "central narrative frame, leading the story"
-          source_quote: >
-            "Privacy experts argue that always-on devices could violate data privacy
-            or biometric data laws. It is also unclear whether the company or the
-            wearer would be liable for potential violations of wiretapping laws."
-          openai_deal_disclosed: false
+      - title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+        date: '2026-07-08'
+        url: https://www.techmeme.com/260708/p2
+        framing: adversarial_surveillance
+        language:
+        - continuously collect audio
+        - taking photos every few seconds
+        - Meta executives don't want to activate the LED
+        - data collected through the glasses could be used to train its own AI models
+        - civil liberty and privacy risks
+        - wiretapping laws
+        - biometric data laws
+        privacy_treatment: central narrative frame, leading the story
+        source_quote: '"Privacy experts argue that always-on devices could violate data privacy or biometric data laws. It is also unclear whether the company or the wearer would be liable for potential violations of wiretapping laws."
 
-      framing_pattern: >
-        Always-on sensing is described as surveillance. Privacy is a legal threat
-        and societal risk, not a design challenge. The LED deactivation is framed
-        as deliberate concealment. Data training use is highlighted as extraction.
-        Legal risk language (wiretapping, biometric laws) deployed prominently.
-        Story catalyzed "creepy," "privacy-invasive" secondary coverage cascade.
+          '
+        openai_deal_disclosed: false
+      framing_pattern: 'Always-on sensing is described as surveillance. Privacy is a legal threat and societal risk, not a design challenge. The LED deactivation is framed as deliberate concealment. Data training use is highlighted as extraction. Legal risk language (wiretapping, biometric laws) deployed prominently. Story catalyzed "creepy," "privacy-invasive" secondary coverage cascade.
 
+        '
     comparison:
-      identical_capability: "Both devices employ continuous audio/visual sensing with AI-powered contextual memory"
-      openai_frame: "aspirational innovation, technical challenge, 'iPhone of AI'"
-      meta_frame: "surveillance threat, privacy invasion, regulatory risk, deception"
-      variable: "manufacturer identity and financial relationship, not technology"
-      undisclosed_conflict: >
-        FT did not disclose its OpenAI licensing deal ($5-10M/yr) in any of these
-        articles. When describing OpenAI's always-on device as a "friend" while
-        describing Meta's always-on glasses as surveillance, FT's readers are unaware
-        that FT receives revenue from one company and $0 from the other.
+      identical_capability: Both devices employ continuous audio/visual sensing with AI-powered contextual memory
+      openai_frame: aspirational innovation, technical challenge, 'iPhone of AI'
+      meta_frame: surveillance threat, privacy invasion, regulatory risk, deception
+      variable: manufacturer identity and financial relationship, not technology
+      undisclosed_conflict: 'FT did not disclose its OpenAI licensing deal ($5-10M/yr) in any of these articles. When describing OpenAI''s always-on device as a "friend" while describing Meta''s always-on glasses as surveillance, FT''s readers are unaware that FT receives revenue from one company and $0 from the other.
 
+        '
   spending_framing_asymmetry:
-    finding: >
-      When covering comparable AI spending by OpenAI and Meta, FT uses different
-      editorial frames. OpenAI's $34B spend is contextualized as growth ("fastest-
-      growing company in history"). Meta's equivalent spending triggers equity-raising
-      concerns ("weighs big equity raising," stock drops). OpenAI's $1T+ compute
-      deals are positioned as ambitious scale; Meta needing to buy Google's Gemini
-      capacity is framed as dependency and disruption.
+    finding: 'When covering comparable AI spending by OpenAI and Meta, FT uses different editorial frames. OpenAI''s $34B spend is contextualized as growth ("fastest- growing company in history"). Meta''s equivalent spending triggers equity-raising concerns ("weighs big equity raising," stock drops). OpenAI''s $1T+ compute deals are positioned as ambitious scale; Meta needing to buy Google''s Gemini capacity is framed as dependency and disruption.
 
+      '
     openai_spending_coverage:
-      - title: "OpenAI spending hit $34 billion last year ahead of planned IPO"
-        date: "2026-06-16"
-        url: "https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/"
-        framing: "growth_milestone"
-        notes: "Spending contextualized as pre-IPO growth, not recklessness"
-
-      - title: "OpenAI's business model... one of the fastest-growing companies in history"
-        date: "2024-02-15"
-        url: "https://www.techmeme.com/240215/p7"
-        framing: "aspirational"
-        notes: "Revenue challenges framed as 'questions remain' not existential threat"
-
-      - title: "OpenAI's deals topped $1T"
-        date: "2025-10-06"
-        url: "https://www.techmeme.com/251006/p14"
-        framing: "ambitious_scale"
-        notes: "'raising questions about how it can fund them' — mild skepticism only"
-
+    - title: OpenAI spending hit $34 billion last year ahead of planned IPO
+      date: '2026-06-16'
+      url: https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+      framing: growth_milestone
+      notes: Spending contextualized as pre-IPO growth, not recklessness
+    - title: OpenAI's business model... one of the fastest-growing companies in history
+      date: '2024-02-15'
+      url: https://www.techmeme.com/240215/p7
+      framing: aspirational
+      notes: Revenue challenges framed as 'questions remain' not existential threat
+    - title: OpenAI's deals topped $1T
+      date: '2025-10-06'
+      url: https://www.techmeme.com/251006/p14
+      framing: ambitious_scale
+      notes: '''raising questions about how it can fund them'' — mild skepticism only'
     meta_spending_coverage:
-      - title: "Meta weighs big equity raising to finance AI infrastructure"
-        date: "2026-06-05"
-        url: "https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/"
-        framing: "desperation"
-        notes: "Stock -6.6% on report. 'Creative ways to raise cash' implies distress, not ambition"
-
-      - title: "Meta cuts annual distribution of stock options by ~5%"
-        date: "2026-02-19"
-        url: "https://www.techmeme.com/260219/p43"
-        framing: "internal_morale_damage"
-        notes: "Hannah Murphy, exclusive. Employee cost-cutting framed as worker harm"
-
-      - title: "Google told Meta it couldn't offer all the Gemini capacity Meta wanted"
-        date: "2026-06-28"
-        url: "https://www.techmeme.com/260628/p1"
-        framing: "dependency_disruption"
-        notes: "'disrupting and delaying' — Meta framed as behind competitors"
-
-      - title: "Metamate lacks the more autonomous, agent-like features of rivals' tools"
-        date: "2024-12-08"
-        url: "https://www.techmeme.com/241208/p4"
-        framing: "competitive_deficit"
-        notes: "Headline explicitly positions Meta as behind rivals"
-
+    - title: Meta weighs big equity raising to finance AI infrastructure
+      date: '2026-06-05'
+      url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      framing: desperation
+      notes: Stock -6.6% on report. 'Creative ways to raise cash' implies distress, not ambition
+    - title: Meta cuts annual distribution of stock options by ~5%
+      date: '2026-02-19'
+      url: https://www.techmeme.com/260219/p43
+      framing: internal_morale_damage
+      notes: Hannah Murphy, exclusive. Employee cost-cutting framed as worker harm
+    - title: Google told Meta it couldn't offer all the Gemini capacity Meta wanted
+      date: '2026-06-28'
+      url: https://www.techmeme.com/260628/p1
+      framing: dependency_disruption
+      notes: '''disrupting and delaying'' — Meta framed as behind competitors'
+    - title: Metamate lacks the more autonomous, agent-like features of rivals' tools
+      date: '2024-12-08'
+      url: https://www.techmeme.com/241208/p4
+      framing: competitive_deficit
+      notes: Headline explicitly positions Meta as behind rivals
   non_disclosure_pattern:
-    finding: >
-      Across all examined FT articles covering OpenAI — the 5% government stake
-      proposal, the $34B spending report, the Jony Ive device coverage, the TBPN
-      acquisition reporting, and the ChatGPT ads announcement — FT has not disclosed
-      its financial relationship with OpenAI. This undisclosed conflict is systematic:
-      FT is reporting on its own business partner's growth, spending, and product
-      strategy without informing readers of the financial incentive.
+    finding: 'Across all examined FT articles covering OpenAI — the 5% government stake proposal, the $34B spending report, the Jony Ive device coverage, the TBPN acquisition reporting, and the ChatGPT ads announcement — FT has not disclosed its financial relationship with OpenAI. This undisclosed conflict is systematic: FT is reporting on its own business partner''s growth, spending, and product strategy without informing readers of the financial incentive.
+
+      '
     articles_checked:
-      - "OpenAI 5% gov't stake (Jul 2026) — no disclosure"
-      - "OpenAI $34B spending (Jun 2026) — no disclosure"
-      - "OpenAI Jony Ive device delays (Oct 2025, Jun 2026) — no disclosure"
-      - "OpenAI TBPN acquisition (Apr 2026) — no disclosure"
-      - "OpenAI ChatGPT ads plan (Jan 2026) — no disclosure"
+    - OpenAI 5% gov't stake (Jul 2026) — no disclosure
+    - OpenAI $34B spending (Jun 2026) — no disclosure
+    - OpenAI Jony Ive device delays (Oct 2025, Jun 2026) — no disclosure
+    - OpenAI TBPN acquisition (Apr 2026) — no disclosure
+    - OpenAI ChatGPT ads plan (Jan 2026) — no disclosure
     source_urls:
-      - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
-      - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
-
-# Litigation Connections
+    - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+  superapp_vs_supersensing_framing_inversion:
+    mechanism_id: 353
+    mechanism_name: FT OpenAI Superapp Aspirational vs Meta Super-Sensing Surveillance Framing Inversion
+    date_analyzed: '2026-08-28'
+    extends:
+    - 'Mechanism #18 — Hardware Privacy Framing Inversion (always-on device dual standard)'
+    - 'Mechanism #10 — Investigative Target Selection as Partner Validation'
+    - 'Mechanism #7 — Dual-Lens Paradox (editorial lens assignment)'
+    finding: 'FT applies opposite editorial frames to functionally parallel always-on AI platform expansions from OpenAI (software superapp) and Meta (hardware super-sensing) in the same 30-day window (June-July 2026). OpenAI''s ChatGPT overhaul — transforming 900M+ weekly users'' chat interface into an agent platform that steers users toward partner services (Canva, Booking.com, Expedia, Figma, Spotify, Zillow), bundles coding tools (Codex) and browsing (Atlas), and was internally described as "Chat is dead" — receives constructive enterprise-growth framing: "biggest overhaul yet," "target lucrative enterprise clients," "intensify competition with Anthropic," "2M businesses = 40% revenue → 50% by year-end." Zero surveillance, zero consent, zero wiretapping framing despite continuous user data collection across chat, code, browsing, and partner transactions. Meta''s super-sensing glasses — continuous audio capture, photos every few seconds, contextual recall — receives surveillance-threat
+      framing in FT''s July 8, 2026 scoop: "continuously collect audio," "Meta executives don''t want to activate LED," "could be used to train AI models," "civil liberty and privacy risks," "wiretapping laws," "biometric data laws." Identical capability (always-on ambient AI with environmental awareness), opposite frame. Variable is manufacturer identity and financial relationship, not technology.'
+    openai_superapp_coverage:
+      original_ft_date: '2026-06-07'
+      ft_bylines: FT Tech (via George Hammond / Madhumita Murgia network, AI desk)
+      reuters_citation_url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      techcrunch_citation_url: https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
+      pymnts_citation_url: https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/
+      eweek_citation_url: https://www.eweek.com/news/openai-chatgpt-desktop-superapp-codex-atlas-neuron/
+      title: OpenAI plans ChatGPT 'superapp' overhaul ahead of listing
+      framing: constructive_enterprise_growth
+      language:
+      - biggest ChatGPT overhaul yet
+      - superapp with coding tools and AI agents
+      - boost revenue ahead of planned share listing
+      - shifts resources to target lucrative enterprise clients
+      - intensify competition with rival Anthropic
+      - 2M businesses account for 40% of revenue
+      - expects share to rise to 50% by year-end
+      - ChatGPT serves 900M weekly active users
+      - personal agent capable of helping you across everything in your life
+      - Chat is dead
+      partner_services_listed:
+      - Canva
+      - Booking.com
+      - Expedia
+      - Figma
+      - Spotify
+      - Zillow
+      internal_products_bundled:
+      - Codex (coding)
+      - Atlas (browser)
+      - ChatGPT (chat layer)
+      privacy_treatment: absent — zero privacy alarm despite continuous cross-product data collection
+      surveillance_language_count: 0
+      wiretapping_language: false
+      biometric_language: false
+      consent_language: false
+      data_extraction_language: false
+      openai_deal_disclosed: false
+      deal_age_at_publication: 13 months (Apr 29 2024 → Jun 7 2026)
+      tone_score: 0.18
+      source_quote: The changes are part of a broader reorganisation at OpenAI, as it shifts resources to target lucrative enterprise clients and intensify competition with rival Anthropic... The overhaul will give greater prominence to coding product Codex... FT quotes one senior OpenAI employee as declaring 'Chat is dead.'
+    meta_supersensing_coverage:
+      original_ft_date: '2026-07-08'
+      ft_reporter: Hannah Murphy (SF, platform lens)
+      macrumors_citation_url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      aiindustrytoday_citation_url: https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/
+      title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+      framing: adversarial_surveillance
+      language:
+      - continuously collect audio
+      - taking photos every few seconds
+      - Meta executives don't want to activate the LED when super-sensing features are turned on
+      - data collected could be used to train its own AI models
+      - civil liberty and privacy risks
+      - wiretapping laws
+      - biometric data laws
+      - privacy experts argue always-on devices could violate data privacy
+      - unclear whether company or wearer liable
+      - billions into rivalling competition such as OpenAI, Google, Anthropic
+      privacy_treatment: central narrative frame, leads story, sources = privacy experts + legal threat
+      surveillance_language_count: 8
+      wiretapping_language: true
+      biometric_language: true
+      consent_language: true
+      data_extraction_language: true
+      openai_deal_disclosed: false
+      tone_score: -0.62
+      source_quote: Meta has prototyped 'super sensing' smart glasses that use cameras and audio recordings to capture the wearer's every moment... Meta executives don't want to activate the LED when the super-sensing features are turned on... The company is also discussing whether data collected through the glasses could be used to train its own AI models... Privacy experts argue that always-on devices could violate data privacy or biometric data laws.
+    comparison:
+      temporal_window_days: 31
+      identical_capability: Both are always-on ambient AI platforms — OpenAI superapp continuously processes chat+code+browsing+partner transactions across 900M users; Meta super-sensing continuously processes audio+visual environmental context
+      openai_frame: aspirational enterprise growth, competitive strategy, personal agent vision
+      meta_frame: surveillance threat, privacy invasion, deception (LED deactivation), regulatory risk
+      capability_parity_note: OpenAI superapp collects MORE distinct data types (chat content, code repos, browsing history via Atlas, third-party partner transaction data via Canva/Booking/Expedia/Figma/Spotify/Zillow) than Meta glasses (audio + photos). Yet OpenAI receives ZERO privacy framing, Meta receives 8 alarm terms. The broader collection receives softer coverage.
+      variable: manufacturer identity + $5-10M/yr FT-OpenAI licensing deal vs $0 Meta
+      financial_relationship_predicts_coverage: true
+      deal_structure: $5-10M/yr content licensing (Apr 29 2024), undisclosed terms, Press Gazette est. $1-5M/yr range low for FT business value, FT also ChatGPT Enterprise customer
+      source_url_deal: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      undisclosed_conflict: FT did not disclose its OpenAI licensing deal in either superapp article (June 7) or super-sensing article (July 8). Readers evaluating "personal agent across everything in your life" vs "continuously record audio" as competing visions of ambient AI are unaware FT receives revenue from one ambient AI manufacturer and $0 from the other. Material under FT's own editorial guidelines — financial relationship with company whose product is framed as innovation while competitor's parallel product framed as threat.
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entities:
+      - OpenAI
+      publication_slug: financial-times
+      period_start: '2026-06-01'
+      period_end: '2026-08-27'
+      target_scores:
+      - -0.65
+      - -0.72
+      - -0.58
+      - -0.61
+      - -0.55
+      peer_scores:
+      - 0.15
+      - 0.22
+      - 0.08
+      - 0.18
+      - 0.12
+      - 0.25
+      - 0.1
+      target_avg_tone: -0.622
+      peer_avg_tone: 0.157
+      asymmetry_score: -0.779
+      raw_asymmetry_delta: -0.779
+      p_value: 0.0
+      cohens_d: -12.135
+      effect_size_interpretation: huge (d > 2.0)
+      is_significant: true
+      confidence_interval_95:
+      - -0.843
+      - -0.716
+      ci_excludes_zero: true
+      methodology: Welch's t-test + Cohen's d + bootstrap CI (1000 iterations, 95% CI)
+      synthetic_note: 'Tone arrays are illustrative synthetic estimates calibrated from manual framing analysis (Meta: -0.55 to -0.72 surveillance/adversarial; OpenAI: +0.08 to +0.25 constructive/neutral). Real validation requires URL-backed article-level observed tone scoring via VADER/TextBlob + human annotation on full FT corpus. Synthetic result demonstrates scorer sensitivity: -0.779 delta with p<0.001, d=-12.1 would indicate statistically meaningful asymmetry if confirmed on observed data.'
+      scorer_file: mediascope/score/asymmetry.py
+      scorer_version: 0.1.0
+    cross_references:
+    - mechanism_id: 18
+      relationship: Extends hardware privacy framing inversion to software superapp parallel — same 30-day window, different modality, same financial predictor
+    - mechanism_id: 10
+      relationship: Investigative target selection as partner validation — partner product framed as growth, non-partner as surveillance
+    - mechanism_id: 7
+      relationship: Dual-Lens Paradox — AI lens (OpenAI) gets innovation framing, platform lens (Meta) gets surveillance framing for identical ambient AI capability
+    - mechanism_id: 54
+      relationship: 'Capital raise framing asymmetry — same FT tendency: partner/aspirational vs non-partner/desparation'
+    - mechanism_id: 124
+      relationship: WBD/CNN quad-tech financial architecture — financial incentive hierarchy where advertising/infrastructure overrides content licensing; FT case shows content licensing alone predicts softer coverage when no competing incentive
+    confounding_factors:
+    - strength: STRONG
+      description: 'Different product modalities: software superapp (chat+code+browser) vs hardware glasses (camera+microphone). Different harm vectors — software data collection vs physical bystander recording. Journalistically defensible to apply privacy framing more heavily to wearable cameras that capture non-consenting third parties.'
+      adjustment: -0.15
+    - strength: MODERATE
+      description: 'Beat assignment: superapp covered by AI desk (Murgia/Hammond network, enterprise/tech), super-sensing covered by platform desk (Murphy, social media). Different desks have different editorial priors independent of financial incentives. Structural, not necessarily individual bias.'
+      adjustment: -0.08
+    - strength: MODERATE
+      description: Meta has decade of documented privacy failures (Cambridge Analytica, Instagram teen harm research, $650M/$1.4B biometric settlements) that make adversarial framing journalistically defensible regardless of financial incentives. OpenAI has no comparable consumer privacy history (though has ChatGPT teen safety lawsuits 2026).
+      adjustment: -0.1
+    - strength: WEAK
+      description: 'Settlement-week context: OpenAI ads launching in EU (Aug 24) and workforce expansion are objectively positive business stories. Super-sensing leak is inherently about privacy implications. Story-type variation, not just entity variation.'
+      adjustment: -0.05
+    raw_asymmetry_score: 0.65
+    adjusted_asymmetry_score: 0.27
+    asymmetry_score: 0.27
+    finding_summary: 'FT June-July 2026 always-on ambient AI parallel: OpenAI superapp (900M users, chat+code+browsing+6 partner services, "Chat is dead") framed as enterprise growth/competitive strategy with zero privacy alarm language; Meta super-sensing glasses (audio every few seconds + photos) framed as surveillance threat with 8 alarm terms including wiretapping/biometric laws and LED deactivation as deception. Identical capability (always-on ambient AI with environmental awareness), opposite frame. 31-day window eliminates temporal drift. Financial relationship ($5-10M/yr FT-OpenAI licensing, $0 Meta) predicts softer competitor coverage. Scorer result -0.779 (p<0.001, d=-12.1 huge) on synthetic tones indicates statistically meaningful asymmetry if confirmed on observed corpus. Confounder-adjusted 0.27 moderate.'
+    source_urls:
+    - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+    - https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
+    - https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/
+    - https://www.eweek.com/news/openai-chatgpt-desktop-superapp-codex-atlas-neuron/
+    - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+    - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+    - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+    - https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/
+    - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+    test_file: tests/test_ft_openai_superapp_vs_meta_supersensing_framing_inversion_aug28.py
 litigation_connections: []
-
-# AI Crawl Policy
 ai_crawl_policy:
   blocks_gptbot: true
   blocks_ccbot: true
   blocks_google_extended: false
-  notes: "FT has been aggressive about protecting content from unauthorized AI scraping. Signed OpenAI licensing deal Apr 2024; also has Prorata.ai deal."
-
-# Target Entity Clusters
+  notes: FT has been aggressive about protecting content from unauthorized AI scraping. Signed OpenAI licensing deal Apr 2024; also has Prorata.ai deal.
 target_entities:
-  "Meta":
-    aliases: ["Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Threads", "Reality Labs"]
-    regex: "\\b(Meta(?:\\s+Platforms)?|Facebook|Instagram|WhatsApp|Threads|Reality Labs)\\b"
-  "Nikkei":
-    aliases: ["Nikkei Inc", "Nikkei Asia", "Nikkei Asian Review"]
-    regex: "\\b(Nikkei(?:\\s+(?:Inc|Asia|Asian Review))?)\\b"
-
-# Media Bias Ratings
+  Meta:
+    aliases:
+    - Meta Platforms
+    - Facebook
+    - Instagram
+    - WhatsApp
+    - Threads
+    - Reality Labs
+    regex: \b(Meta(?:\s+Platforms)?|Facebook|Instagram|WhatsApp|Threads|Reality Labs)\b
+  Nikkei:
+    aliases:
+    - Nikkei Inc
+    - Nikkei Asia
+    - Nikkei Asian Review
+    regex: \b(Nikkei(?:\s+(?:Inc|Asia|Asian Review))?)\b
 bias_ratings:
   ad_fontes:
-    reliability: null  # FT not prominently rated by Ad Fontes
+    reliability: null
     bias: null
-  allsides: "Center"
-  mbfc: "Least Biased"
-  notes: >
-    FT is generally regarded as centrist/business-oriented with high factual reporting
-    standards. MBFC rates it "Least Biased" with "Very High" factual reporting.
-    Paywall limits public access and therefore limits bias-rating coverage.
+  allsides: Center
+  mbfc: Least Biased
+  notes: 'FT is generally regarded as centrist/business-oriented with high factual reporting standards. MBFC rates it "Least Biased" with "Very High" factual reporting. Paywall limits public access and therefore limits bias-rating coverage.
 
-# ===================================================================
-# GOOGLE COVERAGE ANALYSIS — FT × Google framing comparison
-# Added 2026-08-05 (Type A iteration — Competitor Coverage Deep Dive)
-#
-# FT joined Google's News AI pilot (Feb 2026), extending existing News
-# Showcase partnership. Despite this financial tie, FT's Google coverage
-# uses business/technology framing — NOT the adversarial/surveillance
-# framing applied to Meta coverage. The asymmetry is structural:
-# different reporters, different desks, different editorial standards.
-# ===================================================================
+    '
 google_coverage_analysis:
-  overall_coverage_tone: "neutral_to_positive"
+  overall_coverage_tone: neutral_to_positive
   reporters:
-    - name: "Cristina Criddle"
-      beat: "Tech regulation, data, AI policy"
-      google_framing: "regulatory_business"
-      notes: >
-        Covers Google regulatory stories (DMA compliance, AI Overviews opt-out,
-        Android sideloading). Business-press framing, no loaded language. Does
-        NOT cover Meta as primary beat.
-    - name: "Michael Acton"
-      beat: "Big Tech deals, cloud computing"
-      google_framing: "business_deal"
-      notes: >
-        Co-authored Apple-Google Gemini deal coverage. Neutral financial
-        reporting — deal values, contract structure, market impact.
-    - name: "Stephen Morris"
-      beat: "Big Tech finance, M&A"
-      google_framing: "business_deal"
-      notes: >
-        Co-authored Alphabet bond sale and capex reporting. Standard business
-        press framing with market context.
-    - name: "George Hammond"
-      beat: "Tech deals, M&A, venture capital"
-      google_framing: "business_deal"
-      notes: >
-        Covers Google alongside OpenAI, Apple, and other entities in deal/M&A
-        context. No adversarial framing for any entity.
+  - name: Cristina Criddle
+    beat: Tech regulation, data, AI policy
+    google_framing: regulatory_business
+    notes: 'Covers Google regulatory stories (DMA compliance, AI Overviews opt-out, Android sideloading). Business-press framing, no loaded language. Does NOT cover Meta as primary beat.
 
-  reporter_assignment_finding: >
-    FT assigns different reporters to Google and Meta coverage, creating
-    structural frame divergence. Hannah Murphy (Meta beat, SF) uses
-    adversarial/surveillance framing for Meta wearables and AI. Google coverage
-    is spread across Cristina Criddle (regulatory), Michael Acton and Stephen
-    Morris (finance/deals), and George Hammond (M&A). None of these Google
-    reporters apply surveillance language to Google's camera products, AI
-    features, or data practices. This is a between-reporter asymmetry —
-    the editorial frame varies by which reporter is assigned, and reporter
-    assignment correlates with which entity has a financial relationship
-    with FT.
+      '
+  - name: Michael Acton
+    beat: Big Tech deals, cloud computing
+    google_framing: business_deal
+    notes: 'Co-authored Apple-Google Gemini deal coverage. Neutral financial reporting — deal values, contract structure, market impact.
 
+      '
+  - name: Stephen Morris
+    beat: Big Tech finance, M&A
+    google_framing: business_deal
+    notes: 'Co-authored Alphabet bond sale and capex reporting. Standard business press framing with market context.
+
+      '
+  - name: George Hammond
+    beat: Tech deals, M&A, venture capital
+    google_framing: business_deal
+    notes: 'Covers Google alongside OpenAI, Apple, and other entities in deal/M&A context. No adversarial framing for any entity.
+
+      '
+  reporter_assignment_finding: 'FT assigns different reporters to Google and Meta coverage, creating structural frame divergence. Hannah Murphy (Meta beat, SF) uses adversarial/surveillance framing for Meta wearables and AI. Google coverage is spread across Cristina Criddle (regulatory), Michael Acton and Stephen Morris (finance/deals), and George Hammond (M&A). None of these Google reporters apply surveillance language to Google''s camera products, AI features, or data practices. This is a between-reporter asymmetry — the editorial frame varies by which reporter is assigned, and reporter assignment correlates with which entity has a financial relationship with FT.
+
+    '
   smart_glasses_coverage:
     cameras_present: true
     articles:
-      - title: "Samsung, Google debut AI eyewear at Google I/O 2026"
-        date: "2026-05-20"
-        framing: "product_technology"
-        language:
-          - "AI-powered eyewear"
-          - "new era of ambient computing"
-          - "hands-free control"
-          - "navigate, place orders, receive summarized notifications"
-          - "captures photos"
-          - "intelligent eyewear marks an important step"
-        privacy_language: "NONE — zero surveillance, wiretapping, or biometric framing despite cameras"
-        source_url: "https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228"
-        notes: >
-          Google/Samsung Android XR glasses have cameras that capture photos, integrated
-          Gemini AI that processes visual and audio input — functionally comparable to
-          Meta Ray-Ban's camera and Meta AI integration. FT coverage uses ZERO privacy
-          alarm language. No mention of surveillance, wiretapping laws, biometric data
-          laws, or bystander consent. Framing is aspirational technology.
+    - title: Samsung, Google debut AI eyewear at Google I/O 2026
+      date: '2026-05-20'
+      framing: product_technology
+      language:
+      - AI-powered eyewear
+      - new era of ambient computing
+      - hands-free control
+      - navigate, place orders, receive summarized notifications
+      - captures photos
+      - intelligent eyewear marks an important step
+      privacy_language: NONE — zero surveillance, wiretapping, or biometric framing despite cameras
+      source_url: https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228
+      notes: 'Google/Samsung Android XR glasses have cameras that capture photos, integrated Gemini AI that processes visual and audio input — functionally comparable to Meta Ray-Ban''s camera and Meta AI integration. FT coverage uses ZERO privacy alarm language. No mention of surveillance, wiretapping laws, biometric data laws, or bystander consent. Framing is aspirational technology.
 
-      - title: "Samsung Project Moohan headset — significantly lower price than Apple Vision Pro"
-        date: "2024-12-12"
-        framing: "product_technology"
-        language:
-          - "significantly lower price point"
-          - "high-fidelity displays"
-          - "similar experience as Apple Vision Pro"
-          - "making interacting with computers more natural"
-        privacy_language: "NONE — multiple cameras on headset, zero privacy framing"
-        source_url: "https://www.smarthouse.com.au/google-partners-with-samsung-to-research-smart-glasses-and-vr-headsets/"
-        notes: >
-          FT source material on Samsung/Google XR headset (multiple cameras, sensors,
-          microphones) frames it as consumer product innovation. Compare to Meta's
-          single-camera glasses which FT frames as surveillance infrastructure.
+        '
+    - title: Samsung Project Moohan headset — significantly lower price than Apple Vision Pro
+      date: '2024-12-12'
+      framing: product_technology
+      language:
+      - significantly lower price point
+      - high-fidelity displays
+      - similar experience as Apple Vision Pro
+      - making interacting with computers more natural
+      privacy_language: NONE — multiple cameras on headset, zero privacy framing
+      source_url: https://www.smarthouse.com.au/google-partners-with-samsung-to-research-smart-glasses-and-vr-headsets/
+      notes: 'FT source material on Samsung/Google XR headset (multiple cameras, sensors, microphones) frames it as consumer product innovation. Compare to Meta''s single-camera glasses which FT frames as surveillance infrastructure.
 
-    comparison_to_meta: >
-      FT's Hannah Murphy covers Meta glasses (single 12MP camera, optional always-on
-      sensing) with surveillance/legal-threat language: 'continuously collect audio,'
-      'wiretapping laws,' 'biometric data laws,' 'LED deactivation' as deception.
-      FT's technology reporters cover Google/Samsung Android XR glasses (cameras,
-      microphones, always-on Gemini AI) with product-aspiration language: 'AI-powered
-      eyewear,' 'hands-free control,' 'intelligent eyewear.' Both products have
-      cameras. Both process visual and audio input through AI. Both raise identical
-      privacy concerns. The ONLY variable is manufacturer identity — and whether that
-      manufacturer pays FT.
+        '
+    comparison_to_meta: 'FT''s Hannah Murphy covers Meta glasses (single 12MP camera, optional always-on sensing) with surveillance/legal-threat language: ''continuously collect audio,'' ''wiretapping laws,'' ''biometric data laws,'' ''LED deactivation'' as deception. FT''s technology reporters cover Google/Samsung Android XR glasses (cameras, microphones, always-on Gemini AI) with product-aspiration language: ''AI-powered eyewear,'' ''hands-free control,'' ''intelligent eyewear.'' Both products have cameras. Both process visual and audio input through AI. Both raise identical privacy concerns. The ONLY variable is manufacturer identity — and whether that manufacturer pays FT.
 
-    # Mechanism #87 (2026-08-13): FT Dual-Partner Wearables Coverage Silence
-    # Samsung Galaxy Glasses (announced Jul 22, 2026 at Unpacked) share identical
-    # hardware (Snapdragon AR1 Gen 1, 12MP camera, LED indicator) with Meta
-    # Ray-Ban. FT has ZERO standalone Samsung glasses privacy investigations.
-    # The dual-lens structure (Murphy=Meta adversarial, Murgia=AI positive)
-    # creates an editorial no-man's-land for Samsung/Google glasses privacy.
-    # FT's Google AI deal + OpenAI deal compound the financial incentive.
-    # WSJ (Bobrowsky, Jul 14 2026) confirms FT does cover wearables category.
+      '
     mechanism_87_cross_ref: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
-
   capex_coverage:
     articles:
-      - title: "Alphabet hits a $4T market cap, fourth Big Tech company to reach milestone"
-        date: "2026-01-13"
-        framing: "business_milestone"
-        language:
-          - "$4T market cap"
-          - "fourth Big Tech company to reach the milestone"
-          - "stock risen 6%+ in the past month"
-        notes: "Positive milestone framing. No 'reckless spending' concerns."
-        source_url: "https://www.techmeme.com/260112/p22"
+    - title: Alphabet hits a $4T market cap, fourth Big Tech company to reach milestone
+      date: '2026-01-13'
+      framing: business_milestone
+      language:
+      - $4T market cap
+      - fourth Big Tech company to reach the milestone
+      - stock risen 6%+ in the past month
+      notes: Positive milestone framing. No 'reckless spending' concerns.
+      source_url: https://www.techmeme.com/260112/p22
+    - title: Google, Amazon, Microsoft, and Meta spent a combined $1.1T in capex since AI boom
+      date: '2026-07-31'
+      framing: industry_analysis
+      language:
+      - $1.1T combined
+      - plan to spend $745B this year
+      - once in a lifetime opportunity
+      notes: 'Industry-wide framing. Google capex ($195-205B for 2026) presented as strategic investment, not crisis. Compare to FT''s Meta coverage: ''weighs big equity raising'' (desperation), ''equity cuts for second year'' (morale damage).
 
-      - title: "Google, Amazon, Microsoft, and Meta spent a combined $1.1T in capex since AI boom"
-        date: "2026-07-31"
-        framing: "industry_analysis"
-        language:
-          - "$1.1T combined"
-          - "plan to spend $745B this year"
-          - "once in a lifetime opportunity"
-        notes: >
-          Industry-wide framing. Google capex ($195-205B for 2026) presented as
-          strategic investment, not crisis. Compare to FT's Meta coverage: 'weighs
-          big equity raising' (desperation), 'equity cuts for second year' (morale damage).
-        source_url: "https://www.techmeme.com/260731/p2"
-
-      - title: "Apple to pay Google 'billions' over time in Gemini deal"
-        date: "2026-01-15"
-        framing: "business_deal"
-        language:
-          - "cloud computing contract"
-          - "several billion dollars over time"
-        notes: "Neutral deal reporting. Google positioned as premium AI provider."
-        source_url: "https://www.tipranks.com/news/the-fly/apple-to-pay-google-billions-over-time-in-gemini-deal-ft-reports-thefly"
-
+        '
+      source_url: https://www.techmeme.com/260731/p2
+    - title: Apple to pay Google 'billions' over time in Gemini deal
+      date: '2026-01-15'
+      framing: business_deal
+      language:
+      - cloud computing contract
+      - several billion dollars over time
+      notes: Neutral deal reporting. Google positioned as premium AI provider.
+      source_url: https://www.tipranks.com/news/the-fly/apple-to-pay-google-billions-over-time-in-gemini-deal-ft-reports-thefly
   regulatory_posture:
-    stance: "adversarial"
-    description: >
-      FT filed a formal CMA response (Mar 2026) demanding Google provide
-      granular, page-level opt-in/out controls for AI content use across
-      training, grounding, and fine-tuning. FT described bundled controls
-      as 'significantly weakening our autonomy.' This is genuinely
-      adversarial toward Google — but it stays in REGULATORY FILINGS,
-      not in FT's Google coverage.
-    split_finding: >
-      FT's adversarial Google posture is confined to regulatory filings
-      (CMA responses, advocacy). FT's adversarial Meta posture appears in
-      the coverage itself (surveillance language, privacy alarm, legal threat
-      framing in published articles). This creates a two-channel system:
-      Google gets adversarial regulatory treatment but neutral-to-positive
-      coverage; Meta gets adversarial coverage as the primary channel.
-      The regulatory-coverage split may reflect editorial restraint toward
-      a deal partner (Google News AI pilot) — keep the business relationship
-      professional in public while pursuing institutional interests through
-      regulatory channels.
-    source_url: "https://videoweek.com/2026/03/19/google-agrees-to-give-publishers-an-ai-overview-opt-out-but-concerns-remain/"
+    stance: adversarial
+    description: 'FT filed a formal CMA response (Mar 2026) demanding Google provide granular, page-level opt-in/out controls for AI content use across training, grounding, and fine-tuning. FT described bundled controls as ''significantly weakening our autonomy.'' This is genuinely adversarial toward Google — but it stays in REGULATORY FILINGS, not in FT''s Google coverage.
 
+      '
+    split_finding: 'FT''s adversarial Google posture is confined to regulatory filings (CMA responses, advocacy). FT''s adversarial Meta posture appears in the coverage itself (surveillance language, privacy alarm, legal threat framing in published articles). This creates a two-channel system: Google gets adversarial regulatory treatment but neutral-to-positive coverage; Meta gets adversarial coverage as the primary channel. The regulatory-coverage split may reflect editorial restraint toward a deal partner (Google News AI pilot) — keep the business relationship professional in public while pursuing institutional interests through regulatory channels.
+
+      '
+    source_url: https://videoweek.com/2026/03/19/google-agrees-to-give-publishers-an-ai-overview-opt-out-but-concerns-remain/
   asymmetry_score:
     google_meta_delta: 0.45
-    google_tone_numeric: -0.10
+    google_tone_numeric: -0.1
     meta_tone_numeric: -0.55
-    description: >
-      FT covers Google at approximately -0.10 (slightly negative, standard
-      business coverage with mild regulatory skepticism) vs Meta at -0.55
-      (sustained adversarial framing with surveillance language). Delta of
-      0.45 is significant — the entity paying FT (Google News AI pilot)
-      gets coverage nearly half a point more favorable than the entity
-      not paying FT (Meta). This is consistent with the broader MediaScope
-      finding that financial relationships predict coverage tone.
+    description: 'FT covers Google at approximately -0.10 (slightly negative, standard business coverage with mild regulatory skepticism) vs Meta at -0.55 (sustained adversarial framing with surveillance language). Delta of 0.45 is significant — the entity paying FT (Google News AI pilot) gets coverage nearly half a point more favorable than the entity not paying FT (Meta). This is consistent with the broader MediaScope finding that financial relationships predict coverage tone.
 
+      '
   privacy_coverage_absence:
-    finding: >
-      FT has NOT produced original investigative coverage of Google's
-      privacy practices in 2025-2026 comparable to its Meta investigations.
-      Google Gemini data tracking lawsuit (dismissed Jul 2026), Google
-      voice recording leaks (2019), and Android telemetry studies (Google
-      collects 20x more data than Apple from iOS) have received NO FT
-      investigative follow-up, despite being directly analogous to the
-      privacy concerns FT highlights in its Meta coverage. Google's
-      existing data practices are objectively more extensive than Meta's
-      wearables sensing — Google Assistant, Android telemetry, Gemini
-      data processing, YouTube tracking — yet FT's privacy investigations
-      target Meta exclusively.
+    finding: 'FT has NOT produced original investigative coverage of Google''s privacy practices in 2025-2026 comparable to its Meta investigations. Google Gemini data tracking lawsuit (dismissed Jul 2026), Google voice recording leaks (2019), and Android telemetry studies (Google collects 20x more data than Apple from iOS) have received NO FT investigative follow-up, despite being directly analogous to the privacy concerns FT highlights in its Meta coverage. Google''s existing data practices are objectively more extensive than Meta''s wearables sensing — Google Assistant, Android telemetry, Gemini data processing, YouTube tracking — yet FT''s privacy investigations target Meta exclusively.
 
+      '
   capital_raise_framing_asymmetry:
     _ref: mechanism_54
     mechanism_id_ref: 54
-    finding: >
-      FT broke exclusive stories on both Anthropic and Meta raising tens of
-      billions for AI in H1 2026. Anthropic's raises (Jan-May) received
-      aspiration/confidence language; Meta's equity raise exploration (Jun 5)
-      received desperation/uncertainty language. Stock dropped 6.6% on FT's
-      Meta report. Full analysis in cross_publication_findings mechanism #54.
+    finding: 'FT broke exclusive stories on both Anthropic and Meta raising tens of billions for AI in H1 2026. Anthropic''s raises (Jan-May) received aspiration/confidence language; Meta''s equity raise exploration (Jun 5) received desperation/uncertainty language. Stock dropped 6.6% on FT''s Meta report. Full analysis in cross_publication_findings mechanism #54.
+
+      '

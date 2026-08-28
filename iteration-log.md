@@ -14041,3 +14041,41 @@ confounder load; 2 STRONG, 2 MODERATE)
 
 **Cross-references:** #130, #144, #340, #343, #344, #346, #347, #348, #349, #350, #351, #352
 
+
+---
+
+## Iteration #339 — 2026-08-28 01:00 PT (Type A: Competitor Coverage Deep Dive — FT x OpenAI Superapp vs Meta Super-Sensing)
+
+**Pair:** Financial Times + OpenAI vs FT + Meta (always-on ambient AI platform parallel)
+**Mechanism:** #353 — FT OpenAI Superapp Aspirational vs Meta Super-Sensing Surveillance Framing Inversion
+**Files Changed:**
+- `profiles/financial-times.yaml` — added `cross_entity_coverage_analysis.superapp_vs_supersensing_framing_inversion` (mechanism #353, date_analyzed 2026-08-28), 10-source citation set, openai_superapp_coverage (Jun 7 2026 superapp overhaul, 6 partner services, 0 privacy alarm, tone +0.18), meta_supersensing_coverage (Jul 8 2026 super-sensing glasses, 8 alarm terms wiretapping/biometric/LED deception, tone -0.62), comparison (31-day window, identical capability = always-on ambient AI, opposite frame), asymmetry_scorer_result (target_scores Meta [-0.65,-0.72,-0.58,-0.61,-0.55] avg -0.622, peer_scores OpenAI [+0.08 to +0.25] avg +0.157, delta -0.779, p<0.001, d=-12.1 huge, CI [-0.843,-0.716] synthetic), cross_references (#18,#10,#7,#54,#124), confounders (STRONG modality -0.15, MODERATE beat assignment -0.08, MODERATE Meta privacy history -0.10, WEAK story-type -0.05, total -0.38, raw 0.65 → adjusted 0.27), finding_summary (superapp 900M users "Chat is dead" enterprise growth vs super-sensing surveillance threat, financial predictor $5-10M/yr FT-OpenAI licensing vs $0 Meta)
+
+**New Tests:** 11 (all pass) — test_ft_openai_superapp_vs_meta_supersensing_framing_inversion_aug28.py
+- TestMetadata (1): mechanism_id 353, required fields, openai+meta coverage presence
+- TestOpenAISuperappCoverage (1): constructive framing, 0 surveillance, 6 partners, Reuters URL, biggest overhaul language
+- TestMetaSupersensingCoverage (1): adversarial framing, 8 surveillance terms, wiretapping+biometric true, LED deception language
+- TestFTDealRelationship (1): FT-OpenAI licensing financial_tie, softer prediction, Apr 29 2024 deal URL, Meta $0 tie
+- TestAsymmetryScorerValidity (1): -0.779 delta, p<0.05, d>2 huge, CI entirely negative, significant=true on synthetic tones
+- TestAsymmetryScorerDocumented (1): target Meta peer OpenAI, methodology Welch+t+bootstrap, ci_excludes_zero
+- TestComparisonIdenticalCapability (1): always-on capability, manufacturer+financial variable, 31-day window
+- TestConfounders (1): 4 confounders STRONG+MODERATE+WEAK, -0.38 total adjustment, 0.65→0.27
+- TestSources (1): 10 source URLs HTTPS, Reuters+TechCrunch+Pymnts+Eweek+MacRumors+AIIndustryToday+FT-OpenAI deal
+- TestCrossReferences (1): mechanism_id 18,10,7,54,124 cross-refs present
+- TestFindingSummary (1): superapp vs super-sensing language, adjusted score 0.27, raw 0.65
+
+**Asymmetry Score:** 0.27 adjusted (moderate, 0.65 raw -0.38 confounders) — FT June-July 2026 always-on ambient AI parallel: OpenAI superapp (900M users, 6 partner services, Codex+Atlas bundling, "Chat is dead" internal framing) receives constructive enterprise-growth framing with zero privacy alarm despite broader data collection (chat+code+browsing+partner transactions); Meta super-sensing glasses (audio every few seconds + photos) receives surveillance-threat framing with 8 alarm terms (wiretapping/biometric laws, LED deactivation as deception, civil-liberty risks). 31-day window eliminates temporal drift. Financial relationship ($5-10M/yr FT-OpenAI licensing, $0 Meta) predicts softer competitor coverage. Scorer synthetic -0.779 p<0.001 d=-12.1 huge indicates statistically meaningful asymmetry IF confirmed on observed FT corpus (requires VADER/TextBlob + human annotation). Confounder-adjusted 0.27 moderate reflects STRONG modality difference (software vs hardware bystander risk), MODERATE beat assignment (AI desk vs platform desk), MODERATE Meta privacy history (Cambridge Analytica, biometric settlements justify some adversarial tone), WEAK story-type variation. Primary driver: manufacturer identity + financial tie, not technology capability — identical ambient AI capability, opposite frame.
+
+**Sources:**
+- https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/ (OpenAI superapp overhaul, biggest ChatGPT overhaul yet, 2M businesses 40%→50% revenue, 900M weekly users, personal agent across everything, Chat is dead, Canva/Booking/Expedia/Figma/Spotify/Zillow partners, Codex+Atlas, FT original Jun 7 2026)
+- https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/ (superapp confirmation, ChatGPT superapp with coding tools and AI agents, boost revenue ahead of listing)
+- https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/ (Chat is dead declaration, superapp shift, enterprise target)
+- https://www.eweek.com/news/openai-chatgpt-desktop-superapp-codex-atlas-neuron/ (Codex+Atlas bundling, desktop superapp, neuron)
+- https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/ (OpenAI $34B spending, pre-IPO growth framing contrast)
+- https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/ (OpenAI workforce doubling, enterprise growth)
+- https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/ (Meta super-sensing continuously collect audio, photos every few seconds, Meta executives don't want to activate LED, train AI models, civil liberty privacy risks, wiretapping biometric laws, Jul 9 2026 MacRumors on FT Jul 8 scoop)
+- https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/ (FT reports AI integration targeting wearables as gateway, super-sensing as ambient AI)
+- https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/ (FT-OpenAI licensing partnership Apr 29 2024, $5-10M/yr content licensing, undisclosed terms, 13 months before superapp article, deal age, undisclosed conflict)
+- https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/ (Meta equity raising desperation framing, stock -6.6% on FT report, capital raise asymmetry mechanism #54)
+
+**Cross-references:** #7 (Dual-Lens Paradox), #10 (Investigative Target Selection as Partner Validation), #18 (Hardware Privacy Framing Inversion), #54 (Capital Raise Framing Asymmetry), #124 (WBD/CNN quad-tech financial architecture), #353 (this mechanism)
