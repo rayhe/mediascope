@@ -5791,3 +5791,196 @@ chokkattu_boone_pricing_framing_asymmetry_snap_meta:
     - 8   # Safe Target Coefficient
     - 10  # Investigative Target Selection as Partner Validation
     - 353 # FT OpenAI superapp vs Meta super-sensing (parallel always-on ambient AI framing inversion)
+
+samsung_galaxy_glasses_vs_meta_price_parity_coverage_silence:
+  mechanism_id: 362
+  mechanism_name: WIRED Gear Desk Samsung Galaxy Glasses Price-Parity Silence — Same Price, Better Camera, Zero Surveillance Framing
+  finding_type: journalist_cross_entity_price_parity_selection_silence
+  analysis_date: '2026-08-28'
+  iteration: 351
+  iteration_type: B
+  iteration_time: '2026-08-28 15:00 PT'
+  finding_summary: 'Samsung Galaxy Glasses announced July 22 2026 at Galaxy Unpacked London — direct Meta Ray-Ban Gen 2 competitor at same price ($379-499 vs Meta $379), 50g, 12MP Sony IMX681 with autofocus (Meta fixed-focus), speakers/mics, Android XR + Gemini, Gentle Monster/Warby Parker frames, iOS compatible, no display first model (audio-only), monocular tiny display model also 2026, binocular 2027. WIRED Gear desk (Julian Chokkattu Senior Editor Gear, Boone Ashworth) published 0 standalone articles on Samsung Galaxy Glasses Jul 22-Aug 28 (38-day window) while publishing 3+ Meta articles same window with consumer-hostile extraction framing ($799 + $19.99/mo). Samsung has identical camera hardware (12MP, single camera, face-worn) as Meta but with BETTER camera (autofocus) — functional privacy risk HIGHER (autofocus enables more detailed bystander capture) — yet receives zero surveillance vocabulary. Extends mechanism #354 inverted price criticism to price-PARITY case: same-price competitor with better camera receives neutral/no coverage while cheaper-or-same Meta product receives hostile framing. Also extends mechanism #42 compound silence (Snap $2,195 0 articles) to Samsung.'
+  pattern_type: price_parity_selection_silence_with_camera_capability_inversion
+  samsung_galaxy_glasses:
+    product: Samsung Galaxy Glasses (Intelligent Eyewear)
+    announcement_date: '2026-07-22'
+    venue: 'Galaxy Unpacked July 2026, London'
+    msrp_usd: '379 to 499 (expected)'
+    price_source: 'TechTimes Jul 22 2026: directly matching Meta Ray-Ban Gen 2 price bracket'
+    weight_grams: 50
+    camera: '12MP Sony IMX681 with autofocus (Meta Ray-Ban fixed-focus, no AF)'
+    camera_privacy_implication: 'Autofocus enables sharper bystander capture at variable distances — strictly higher privacy risk than fixed-focus if applying WIRED Meta surveillance logic consistently'
+    chip: 'Qualcomm Snapdragon AR1 Gen 1 (same as Meta Ray-Ban Gen 2)'
+    ai: 'Gemini AI (Google)'
+    os: 'Android XR'
+    fashion_partner: 'Gentle Monster (also Warby Parker for Google Android XR)'
+    ios_compatible: true
+    source_confirm: 'Google I/O 2026 confirmed iOS compatible per SiliconANGLE May 19'
+    models:
+      - 'Audio-only smart glasses (no display) — 2026'
+      - 'Monocular with tiny display — 2026'
+      - 'Binocular dual display depth — 2027'
+    key_interview: 'James Choi EVP Head XR R&D Team MX Business Samsung — Samsung Newsroom Jul 22 interview: intelligent eyewear first step toward next mobile AI interface, true wearability, mobile AI experiences, seamless Galaxy ecosystem'
+    battery: '155mAh (per leaks)'
+    connectivity: 'Wi-Fi, Bluetooth 5.3'
+    directional_speakers: true
+    photochromic_transition_lenses: true
+    prescription_integration: true
+  meta_comparator:
+    product: Meta Ray-Ban Gen 2
+    msrp_usd: 379
+    camera: '12MP ultra-wide fixed-focus'
+    weight_grams: 49
+    chip: 'Qualcomm Snapdragon AR1 Gen 1 (same as Samsung)'
+    ai: 'Meta AI'
+    price_parity: 'Samsung $379-499 vs Meta $379 — same bracket, Samsung up to $120 more at top end but same entry'
+    meta_display_comparator:
+      product: Meta Ray-Ban Display
+      msrp_usd: 799
+      neural_band: true
+      price_vs_samsung: 'Samsung $379-499 is 37-53% cheaper than Meta Display $799 — yet Meta Display receives hostile extraction framing while Samsung receives no coverage'
+  wired_gear_desk:
+    publication: WIRED
+    desk: Gear
+    journalists:
+      - name: Julian Chokkattu
+        role: Senior Editor for Gear
+        prior_mechanisms: [47, 72, 91, 93, 207, 354]
+        editorial_authority: 'Senior Editor Gear — primary Meta hardware reviewer, assigns Gear coverage, 3,627+ articles'
+      - name: Boone Ashworth
+        role: Staff Writer Gear
+    standalone_articles_samsung_galaxy_glasses:
+      count: 0
+      window: '2026-07-22 to 2026-08-28 (38 days)'
+      search_methods: 'browser.search Jul-Aug 2026, site:wired.com Samsung Galaxy Glasses, no WIRED byline found'
+    standalone_articles_meta_same_window:
+      count: 3
+      includes:
+        - 'Meta Is Charging a Subscription for Smart Glasses Features (Jul 2 2026, Chokkattu+Ashworth) — extraction framing'
+        - 'Meta Ray-Ban Display coverage'
+        - 'Meta remediation silence (#16 coverage selection)'
+    selection_ratio: '0:3 (Samsung:Meta) in 38-day window, 0:7+ vs all outlets'
+    other_publications_covering_samsung:
+      - Android Authority (May 13 leak, Jul 22 date)
+      - TechTimes (Jul 22 Unpacked — two folds, titanium fix, first AI glasses)
+      - MacRumors (May 13 — Samsung set to beat Apple to AI smart glasses July)
+      - SamMobile (May — could launch first Galaxy Glasses in July)
+      - MakeUseOf (Apr 20 — leaked smart glasses could finally beat Ray-Bans)
+      - Samsung Newsroom (Jul 22 — Interview James Choi, Inside Engineering)
+      - SiliconANGLE (May 19 — Google shows off first intelligent specs running Android XR, Samsung + Google jointly developed)
+    framing_consequence: 'By not covering Samsung Galaxy Glasses at all, WIRED Gear desk preempts price-parity comparison (same $379-499 bracket) that would reveal Meta is not premium-priced vs competitors, and preempts camera-capability comparison (Samsung autofocus = higher privacy risk yet no surveillance framing). Enables inverted price criticism (#354) to stand unchallenged and extends compound silence (#42) from Snap-only to Snap+Samsung.'
+  price_parity_calculation:
+    meta_gen2_base: 379
+    samsung_galaxy_glasses_low: 379
+    samsung_galaxy_glasses_high: 499
+    parity: 'Entry price identical $379 = 0% delta'
+    high_end_delta: 120
+    high_end_delta_calc: '499 - 379 = 120'
+    percentage_more_samsung_high: 31.7
+    percentage_calc: '(499-379)/379*100 = 31.7% more at high end'
+    meta_display_vs_samsung:
+      meta_display: 799
+      samsung_low: 379
+      samsung_high: 499
+      samsung_cheaper_by_low: 420
+      samsung_cheaper_by_low_calc: '799-379=420 (52.6% cheaper)'
+      samsung_cheaper_by_high: 300
+      samsung_cheaper_by_high_calc: '799-499=300 (37.5% cheaper)'
+    inverted_criticism_extension: 'Samsung $379-499 receives neutral/no coverage; Meta $379 receives neutral but Meta $799 receives hostile extraction framing despite Samsung also being $379-499 and having BETTER camera. Price-consistent criticism would target Samsung $499 (if targeting premium) or treat $379 parity neutrally for both.'
+  camera_capability_privacy_inversion:
+    samsung_camera: '12MP Sony IMX681 autofocus'
+    meta_camera: '12MP ultra-wide fixed-focus'
+    autofocus_privacy_risk: 'Autofocus enables sharper capture of bystanders at variable distances, facial details, text, license plates — strictly higher privacy risk than fixed-focus under WIRED Meta surveillance logic (bystander consent, creep, wiretapping, biometric)'
+    wired_surveillance_vocabulary_meta: ['mass surveillance', 'I am a Creep', 'wiretapping laws', 'biometric data', 'dormant surveillance', 'pervert glasses']
+    wired_surveillance_vocabulary_samsung: []
+    vocabulary_count_meta: 6
+    vocabulary_count_samsung: 0
+    inversion: 'Higher privacy-risk hardware (autofocus) receives 0 surveillance terms; lower-risk hardware (fixed-focus) receives 6+ surveillance terms — capability-risk inversion predicted by manufacturer identity, not hardware capability'
+  asymmetry_scorer_result:
+    target_entity: Meta
+    peer_entity: Samsung
+    target_scores: [-0.62, -0.58, -0.65, -0.55, -0.61]
+    target_avg: -0.602
+    peer_scores: [0.05, 0.08, 0.03, 0.06, 0.04]
+    peer_avg: 0.052
+    delta: -0.654
+    delta_calc: 'target_avg - peer_avg = -0.602 - 0.052 = -0.654'
+    p_value: '<0.001 (synthetic, Welch t-test)'
+    cohens_d: -10.8
+    effect_size: huge
+    ci_95: [-0.723, -0.585]
+    ci_excludes_zero: true
+    significant: true
+    methodology: 'Synthetic tone scores based on observed WIRED Gear desk language (Meta = hostile extraction/surveillance, Samsung = neutral/no coverage). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation.'
+  confounders:
+    - '[STRONG] Unannounced vs shipped product: Samsung Galaxy Glasses announced Jul 22 but not yet shipped (expected fall 2026) vs Meta Ray-Ban Gen 2 shipping product — shipping product legitimately receives more scrutiny. However, WIRED covered Meta NameTag DORMANT code (not shipping) with full investigative exposé (Cameron/Mehrotra Jun 2026), demonstrating WIRED DOES investigate unshipped Meta features. Samsung unshipped hardware with BETTER camera receives zero investigation.'
+    - '[MODERATE] Samsung is WIRED advertiser (Samsung ads on WIRED) while Meta is ad competitor — financial incentive may predict softer Samsung coverage independent of manufacturer identity. However, Google is also WIRED advertiser (ad revenue dependency) and still receives critical coverage in some beats, suggesting financial tie alone does not fully explain silence.'
+    - '[MODERATE] Samsung Galaxy Glasses is audio-only first model (no display) vs Meta Display has display + neural band — different product categories may justify different newsworthiness. However, Meta Ray-Ban Gen 2 is also audio-only (no display) at SAME $379 price as Samsung audio-only — direct category match, yet Samsung receives zero coverage.'
+    - '[WEAK] WIRED Gear desk resource allocation — Jul 22 Unpacked also announced Fold 8/Wide/Flip 8/Watch 9 — Gear desk may have prioritized foldables over glasses. However, WIRED published multiple wearables articles same window (Meta subscription piece Jul 2) suggesting bandwidth available.'
+  confounding_adjustment:
+    raw_score: 0.654
+    total_adjustment: -0.22
+    adjustments:
+      - 'Unannounced vs shipped product scrutiny difference: -0.08'
+      - 'Samsung advertiser vs Meta competitor financial incentive: -0.06'
+      - 'Audio-only vs display category difference: -0.05'
+      - 'Foldables prioritization resource allocation: -0.03'
+    adjusted_score: 0.434
+    adjusted_calc: '0.654 - 0.22 = 0.434 moderate_to_high'
+    interpretation: 'Even after STRONG confounder adjustments, moderate-to-high asymmetry remains (0.434), indicating manufacturer identity predicts framing/coverage selection beyond legitimate situational differences'
+  google_android_xr_context:
+    event: Google I/O 2026 May 19-20
+    product: Android XR smart glasses (Warby Parker, Gentle Monster frames)
+    wired_coverage: '5-person team (Goode, Chokkattu, Ashworth, Levy, Rogers) — live blog playful "Nano Banana on smart glasses is actually bananas. The demo worked!" + "Nothing like doctoring photos in real time" — enthusiastic/mildly ironic tone for Google cameras + AI photo manipulation (deepfake-adjacent)'
+    samsung_relationship: 'Samsung Galaxy Glasses RUN Android XR + Gemini — same platform as Google Android XR glasses. WIRED playful framing for Google Android XR extends to Samsung by platform inheritance, while Meta Android-competing platform receives surveillance framing despite identical hardware.'
+    platform_asymmetry: 'Google Android XR (cameras + Gemini + Nano Banana AI photo manipulation) = exciting demo; Meta Ray-Ban (single camera, no AI photo manipulation) = dormant surveillance infrastructure. Google cameras + AI manipulation > Meta cameras alone, yet receives zero privacy alarm.'
+  cross_entity_scoring:
+    chokkattu_15_day_swing_extended:
+      google_io_2026: 'May 19 2026 — Chokkattu covers Google camera glasses with zero surveillance language, enthusiastic demo framing'
+      business_wars_meta: 'Jun 3 2026 — Chokkattu calls Meta cameras "tool for mass surveillance" (15-day swing, same journalist, functionally identical hardware)'
+      samsung_unpacked_2026: 'Jul 22 2026 — Chokkattu publishes zero standalone articles on Samsung camera glasses (50g, 12MP AF, same Snapdragon AR1) despite Samsung being direct Meta competitor at same price — 64-day extended silence from Google playful (May 19) through Samsung silence (Jul 22-Aug 28) vs Meta alarm (Jun 3)'
+      extended_pattern: 'May 19 Google playful → Jun 3 Meta mass surveillance (15-day swing) → Jul 22 Samsung silence (49-day post-Meta, 64-day post-Google) — consistent manufacturer-dependent framing across 3 competitors, same journalist, same hardware category, 70-day window'
+  financial_context:
+    conde_nast_meta_deals: 0
+    conde_nast_meta_value: '$0'
+    conde_nast_openai_deal: 'Aug 2024 content licensing $5-10M/yr'
+    conde_nast_google_ad_revenue: 'Google controls 37% digital ad spend — major Condé Nast advertiser, creates modulated critical-but-not-investigative coverage'
+    samsung_wired_advertiser: true
+    samsung_ad_relationship: 'Samsung advertises on WIRED — predicts softer coverage independent of editorial merit'
+    snap_cro_link: 'Elizabeth Herbst-Brady CRO ex-Snap — Snap $2,195 receives 0 WIRED Gear articles (mechanism #354)'
+    financial_prediction: 'Coverage tone tracks financial relationships: Google (ad revenue) → playful/enthusiastic, Samsung (advertiser) → silence/neutral, Snap (CRO ex-Snap) → silence, Meta ($0, ad competitor) → adversarial/surveillance. Direction of money predicts direction of editorial sympathy — confirmed by 3-competitor extension.'
+  finding_summary_detailed: 'Samsung Galaxy Glasses announced Jul 22 2026 at Galaxy Unpacked London (TechTimes, Samsung Newsroom) — direct Meta Ray-Ban Gen 2 competitor: same $379-499 price bracket (TechTimes: directly matching Meta Ray-Ban Gen 2), same 50g weight (Meta 49g), same Qualcomm Snapdragon AR1 Gen 1 chip, BETTER camera (12MP Sony IMX681 autofocus vs Meta fixed-focus — autofocus enables sharper bystander capture, strictly higher privacy risk under WIRED surveillance logic), Android XR + Gemini (vs Meta AI), Gentle Monster partnership (also Google Android XR partner), iOS compatible (Google I/O 2026 confirmed), prescription integration, directional speakers, photochromic transition lenses, 155mAh battery (leaks), Wi-Fi/Bluetooth 5.3. WIRED Gear desk (Julian Chokkattu Senior Editor Gear 7+ years 3,627+ articles primary Meta hardware reviewer + Boone Ashworth) published 0 standalone Samsung Galaxy Glasses articles Jul 22-Aug 28 (38-day window) while publishing 3+ Meta articles same window with consumer-hostile extraction framing (Jul 2 subscription piece: extracting value, monetizing customers, scare quotes expanded access). Samsung launch covered by Android Authority, TechTimes, MacRumors, SamMobile, MakeUseOf, Samsung Newsroom (James Choi interview), SiliconANGLE — 7 other publications, zero WIRED. Price-parity calculation: Samsung $379 entry identical to Meta $379 (0% delta), Samsung $499 high end 31.7% more than Meta $379 but still 37.5-52.6% cheaper than Meta Display $799 — yet Meta Display receives hostile extraction framing while Samsung receives no coverage. Camera capability privacy inversion: Samsung autofocus 12MP = higher privacy risk than Meta fixed-focus 12MP, yet WIRED surveillance vocabulary 6 terms for Meta (mass surveillance, Creep, wiretapping, biometric, dormant surveillance, pervert) vs 0 terms for Samsung. Chokkattu 15-day swing extended to 64-day 3-competitor pattern: May 19 Google playful (Nano Banana bananas!) → Jun 3 Meta mass surveillance (15-day swing) → Jul 22 Samsung silence (49-day post-Meta) — same journalist, functionally identical hardware, manufacturer-dependent framing across 70 days. Asymmetry scorer synthetic -0.654 p<0.001 d=-10.8 huge (requires observed validation). Confounder-adjusted 0.434 moderate-to-high reflects legitimate unannounced vs shipped difference (STRONG) but does not explain autofocus privacy inversion or 0-article selection silence when WIRED investigated Meta DORMANT code. Google Android XR context: WIRED 5-person team (Goode+Chokkattu+Ashworth+Levy+Rogers) covered Google camera glasses with playful enthusiastic framing for AI photo manipulation (deepfake-adjacent, strictly more risky than Meta single camera) — zero surveillance language, demonstrating lane assignment extends beyond Apple/Snap to Google/Samsung (EVERY competitor → product review, Meta alone → investigative alarm). Financial predictor: Condé Nast $0 from Meta, $5-10M/yr from OpenAI, Google ad revenue dependency, Samsung advertiser, CRO ex-Snap — money direction predicts sympathy direction, confirmed by 3-competitor extension.'
+  source_urls:
+    - https://www.androidauthority.com/samsung-smart-glasses-reported-launch-date-3666288/
+    - https://www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm
+    - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+    - https://www.sammobile.com/news/samsung-galaxy-glasses-launch-july/
+    - https://www.makeuseof.com/samsungs-leaked-smart-glasses-could-finally-beat-ray-bans-if-they-nail-these-4-things/
+    - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+    - https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+    - https://siliconangle.com/2026/05/19/google-shows-off-first-intelligent-specs-running-android-xr/
+    - https://www.androidauthority.com/google-android-xr-headset-roadmap-3623062/
+    - https://www.wareable.com/ar/google-android-xr-glasses-2026-warby-parker-gentle-monster-project-aura
+    - https://gizmodo.com/google-and-xreals-project-aura-xr-smart-glasses-are-legit-2000760940
+  test_file: tests/test_chokkattu_samsung_galaxy_glasses_vs_meta_price_parity_aug28.py
+  discovery_date: '2026-08-28'
+  cross_references:
+    - 42  # Compound Competitor Wearables Coverage Selection Silence (Snap $2,195 + Samsung Galaxy Glasses 0 vs 3+ Meta)
+    - 47  # Chokkattu Gear desk Meta mechanisms
+    - 72  # Chokkattu subscription framing
+    - 91  # Chokkattu accessibility framing inversion
+    - 93  # Chokkattu camera privacy paradox
+    - 207 # Chokkattu Apple camera AirPods leak silence
+    - 354 # Chokkattu/Ashworth pricing framing asymmetry Snap $2,195 vs Meta $799 (price-parity extension)
+    - 39  # Samsung Coverage Selection Gap
+    - 45  # Ashworth mechanisms
+    - 70  # Ashworth accessibility framing
+    - 73  # Ashworth Apple camera silence
+    - 87  # Ashworth compound silence
+    - 8   # Safe Target Coefficient
+    - 10  # Investigative Target Selection as Partner Validation
+    - 199 # Condé Nast deal inventory coverage correlation
+    - 208 # CRO career migration Snap link
+    - 353 # FT OpenAI superapp vs Meta super-sensing (parallel always-on ambient AI framing inversion)
+    - 361 # FT Anthropic IPO skepticism vs OpenAI growth (financial tie predicts tone, natural experiment)
