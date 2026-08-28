@@ -1425,6 +1425,83 @@ entities:
         financial leverage over them.
 
         '
+    amazon_triple_channel_financial_incentive_aug28:
+      mechanism_id: 358
+      date_analyzed: '2026-08-28'
+      type: financial_incentive_mapping
+      iteration: 346
+      type_c_focus: Amazon advertising + AWS + dual AI lab equity creates triple financial channel
+      overview: 'Amazon Q2 2026 reported $19.8B advertising revenue (+26% YoY, $76B TTM), $42.2B AWS revenue (+37% YoY), $53.4B non-operating pre-tax gain from Anthropic valuation increase (exceeding $27.5B operating income), $13B cumulative Anthropic investment (Apr 2026: $5B fresh → $13B total, 15-20% stake), $50B OpenAI investment completed Jul 31 2026 (SEC filing, $15B Q1 + $13.7B Q2 + $21.3B post-Jun 30), and $100B+ cloud commitments from Anthropic + $100B expanded AWS/OpenAI deal. Triple channel: (1) advertising infrastructure for publishers, (2) cloud hosting lock-in, (3) dual-lab equity whose success depends on favorable AI coverage. Publishers covering Anthropic/OpenAI IPO favorably boost Amazon''s balance sheet.'
+      financial_channels:
+        channel_1_advertising:
+          q2_2026_b: 19.8
+          yoy_pct: 26
+          ttm_b: 76
+          components:
+          - Sponsored Products (largest, key driver)
+          - Sponsored Prompts (Alexa+ / Alexa for Shopping, +48% conversion)
+          - Prime Video Ads (TNF, NBA, WNBA, NASCAR sold out)
+          - Ads Agent AI tool (8% lower CPM, 6% lower CPA, 11 countries)
+          publisher_dependency: 'Amazon Associates affiliate, APS header bidding, Amazon DSP, Prime Video Ads — publishers with e-commerce content depend on Amazon ad/affiliate ecosystem. Ad revenue growth 26% YoY outpaces most Amazon businesses.'
+        channel_2_aws:
+          q2_2026_b: 42.2
+          yoy_pct: 37
+          annual_run_rate_b: 150
+          media_customers:
+          - BBC
+          - C-SPAN
+          - Newsweek
+          - Time Inc
+          - SoundCloud
+          openai_commitment_b: 100
+          openai_commitment_detail: 'OpenAI expanded $38B agreement by $100B over 8 years, exclusive third-party cloud for Frontier, 2GW Trainium capacity'
+          anthropic_commitment_b: 100
+          anthropic_commitment_detail: 'Anthropic pledged $100B over 10 years, up to 5GW capacity, Trainium2-4 chips'
+          publisher_lock_in: 'Vendor lock-in creates structural dependency — publishers cannot easily migrate without massive costs'
+        channel_3_dual_lab_equity:
+          anthropic_invested_b: 13
+          anthropic_stake_pct: 15-20
+          anthropic_stake_value_at_965b_b: 145-193
+          anthropic_stake_value_at_1200b_b: 180-240
+          anthropic_q2_2026_paper_gain_b: 53.4
+          anthropic_gain_vs_operating_income: 'Gain $53.4B > operating income $27.5B — Anthropic success is MATERIAL to Amazon earnings'
+          openai_invested_b: 50
+          openai_round_total_b: 110
+          openai_valuation_b: 730
+          openai_status: 'Completed Jul 31 2026 per SEC filing: $15B Q1, $13.7B Q2, $21.3B post-Jun 30'
+          combined_investment_b: 63
+          dual_lab_note: 'Largest dual-lab investment by any entity, 3.5x larger than Microsoft $18B. Amazon profits regardless of which lab wins.'
+      triple_channel_dynamics:
+        - name: pre_ipo_coverage_pressure
+          detail: 'Both OpenAI and Anthropic filed confidential S-1s Jun 2026, targeting $1T/$965B-$2T valuations. Positive coverage boosts valuation → boosts Amazon equity gains → boosts Amazon capacity to maintain publisher advertising/cloud terms. Self-reinforcing cycle invisible to traditional disclosure.'
+        - name: materiality_inversion
+          detail: 'Amazon Q2 2026 net income $62.6B included $53.4B Anthropic gain — 85% of profit from company Amazon does not consolidate. Amazon''s earnings are now materially dependent on Anthropic''s private valuation, which is influenced by media coverage.'
+        - name: zero_deal_paradox_compounded
+          detail: 'Anthropic has ZERO voluntary publisher deals, yet Amazon (its largest investor) PAYS publishers for Rufus/Alexa content. Amazon profits from both sides: licensing publisher content for its own AI AND backing AI lab that pays publishers nothing. Publishers receiving Amazon money have no structural reason to scrutinize Anthropic''s zero-deal model.'
+      coverage_prediction:
+        model: 'Publications with highest Amazon ad/affiliate dependency (BuzzFeed, Hearst, Ziff Davis, Pinterest) will produce softest Anthropic/OpenAI IPO coverage. Clean controls: Reuters (minimal ad dependency), Gizmodo (no known deals) will be more neutral. Condé Nast/WIRED (Rufus deal + OpenAI deal + Amazon PCM via Microsoft overlap) most exposed to triple channel.'
+        temporal: 'Q3-Q4 2026 pre-IPO window — Anthropic target Oct 2026, OpenAI potential 2027 — coverage during this window shapes institutional investor sentiment'
+      confounding_factors:
+        - strength: STRONG
+          description: 'Amazon ad revenue ($19.8B) is small relative to total revenue ($200.6B, ~10%). Publisher Amazon ad dependency may be overstated — Google Ad Manager dominates publisher ad tech, not Amazon APS.'
+        - strength: STRONG
+          description: 'Correlation ≠ causation — favorable Anthropic/OpenAI coverage may reflect genuine technological enthusiasm, safety brand positioning, or beat-specific access rather than financial incentive.'
+        - strength: MODERATE
+          description: 'Anthropic secondary valuation $1.2T is mark-to-market estimate, not realized gain. $53.4B paper gain could reverse if valuation falls — materiality is volatile.'
+        - strength: MODERATE
+          description: 'OpenAI $50B Amazon investment completed Jul 31 2026 — after Q2 earnings period. Q2 gain is Anthropic-only; OpenAI equity not yet marked in Q2 2026 financials.'
+        - strength: WEAK
+          description: 'AWS media customer list (BBC, C-SPAN, Newsweek, Time Inc, SoundCloud) includes few MediaScope-profiled adversarial publications — direct AWS leverage over WIRED/FT/Guardian is indirect.'
+      cautious_language: 'Financial correlation does not imply causation. Synthetic tone arrays cannot establish empirical significance. Triple channel creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.'
+      source_urls:
+      - https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-amazon-ads-growth-q2-2026-earnings
+      - https://www.fool.com/earnings/call-transcripts/2026/08/07/amazon-amzn-q2-2026-earnings-call-transcript/
+      - https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
+      - https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/
+      - https://www.geekwire.com/2026/amazon-invests-50b-in-openai-deepens-aws-partnership-with-expanded-100b-cloud-deal/
+      - http://pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/
+      - https://www.reuters.com/business/retail-consumer/openais-110-billion-funding-round-draws-investment-amazon-nvidia-softbank-2026-02-27/
+      - https://www.reuters.com/business/media-telecom/openai-courts-tech-giants-100-billion-dollar-funding-round-2026-01-29/
     publisher_content_marketplace:
       announced: 2026-02
       status: building
