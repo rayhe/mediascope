@@ -33731,3 +33731,171 @@ publications:
     - mechanism_id: 348
       relationship: Extends same-week ad-monetization asymmetry to publication-level financial architecture
     test_file: tests/test_sara_fischer_axios_cross_entity_settlement_openai_ad_revenue_publication_funding_deal_vocabulary_bifurcation_aug27.py
+
+google_news_ai_pilot_two_year_nda_no_sue_deal_structure_cma_neutralization:
+  mechanism_id: 355
+  title: Google News AI Pilot Two-Year NDA/No-Sue Deal Structure as Showcase Replacement and Prisoner's Dilemma Neutralizing CMA Opt-Out Remedy
+  type: financial_incentive_mapping
+  date_analyzed: '2026-08-28'
+  publication_focus:
+  - The Guardian
+  - Financial Times
+  - UK publishers generally
+  competitor: Google / Alphabet
+  financial_architecture:
+    predecessor_showcase:
+      launch: 2020
+      total_value: $1B over 3 years
+      current_scale: 2,800 publications in 33 countries (Google spokesperson Aug 2026 via Press Gazette)
+      uk_annual_for_nationals: £1M+ per year (Press Gazette Aug 2026 understanding)
+      function: Widely seen as invented to dispense cash to buy goodwill and stave off statutory regulation (Press Gazette Aug 2026 analysis, Australia example)
+    successor_news_ai_pilot:
+      announced: '2025-12-10'
+      scale_aug_2026: '>200 publications globally signed up (Google spokesperson Aug 2026 via Press Gazette)'
+      payment_range_uk_majors: Single-figure millions £1-9M per year for Guardian and FT (Press Gazette understanding Aug 2026)
+      term: 2 years (Press Gazette understanding Aug 2026)
+      exit: 90 days notice (major publisher interview Press Gazette Aug 2026)
+      deal_terms:
+      - enhanced content rights (Google pays for extended display rights and content delivery methods like APIs)
+      - specialised delivery via APIs
+      - experimental AI features (AI Overviews, AI Mode, grounding)
+      - broad rights for AI training, grounding, AI Mode (Information/PYMNTS/NY Post Jun 2026 reporting via Press Gazette Aug 2026)
+      confidentiality:
+      - NDAs (Press Gazette Aug 2026)
+      - No-sue clauses described as no-sue deals and renting peace (source with close knowledge of Google Press Gazette Aug 2026)
+      - Take-it-or-leave-it terms (Press Gazette Aug 2026)
+      - Secret deals confidential deals that include allowing access to content for AI training, grounding and AI Mode
+    google_official_statements:
+      news_preferences_change: As people's news preferences change, we've been expanding our partnerships through our News AI pilot program, working with a wide range of publishers to explore how AI can help people cut through information overload, easily decide where to click out, and connect with news. We continue to partner with publishers through Google News Showcase and renew Showcase agreements - this program today has 2,800 participating publications in 33 countries.
+      source: Google spokesperson statement via Press Gazette Aug 2026 and Computer Weekly Jun 4 2026
+      news_ai_definition: Commercial partnership programme that pays for enhanced content rights, specialised delivery and enables experimental AI features. More than 200 publications globally have signed up so far.
+      control_framing: Beginning to roll these features out to a subset of website owners in the UK, allowing for thorough testing before rolling them out to website owners globally. Controls will not be used as a ranking signal for search results outside the generative AI search features.
+      blog_author: Mrinalini Loew, General Manager Google Search Ecosystem, Jun 3 2026 blogpost
+  regulatory_remedy_cma:
+    regulator: UK Competition and Markets Authority
+    designation: Strategic Market Status for Google search and search advertising (Oct 2025)
+    ruling_date: '2026-06-03'
+    publication_date: 2026-06-04 14:52
+    status: World-first requirement on Google search services in UK (CMA CEO Sarah Cardell quote via Computer Weekly Jun 4 2026)
+    quote: Today, we have introduced a world-first requirement on Google's search services in the UK, enabling fair treatment, greater transparency and meaningful choice for businesses and consumers. With features like AI Overviews rapidly reshaping online search, it is crucial that content publishers, including news organisations, have appropriate bargaining power over how their content is used.
+    quote_source: Sarah Cardell CMA chief executive via Computer Weekly Jun 4 2026
+    conduct_requirements:
+    - Provide effective tools allowing publishers to prevent content being used in AI features (AI Overviews, AI Mode)
+    - Allow publishers to opt out of content being used for fine-tuning AI models
+    - Ensure proper attribution with clear links displayed in AI-generated search results
+    - Opt-out must NOT require withdrawal from traditional Google search (prior unable to opt out of AI scraping without withdrawing from search entirely - Foxglove)
+    - Implementation - 9 months for all changes, expects important parts well before deadline (CMA blogpost via Computer Weekly Jun 4 2026)
+    - Compliance - Submit and publish compliance reports every 6 months for first year, frequency reviewed thereafter
+    google_implementation:
+      date: '2026-06-03'
+      action: Begin testing new control on subset of UK-based media sites allowing management of links/content in AI search features (AI Overviews, AI Mode), aim global rollout (Google via Computer Weekly Jun 4 2026)
+      blogpost: Jun 3 2026 Google Search Ecosystem blogpost by Mrinalini Loew
+      engagement_claim: Engaging with regulators such as CMA to ensure website owners have right tools as user preferences evolve
+    traffic_evidence_cited:
+      authoritas_jul_2025: Site ranked first could lose ~79% traffic if listed below AI overview (Authoritas study Jul 2025 via Computer Weekly Jun 4 2026)
+      pew_research: Month-long survey of ~69,000 Google searches - users clicked link under AI summary once every 100 times (1% CTR) (Pew Research Center via Computer Weekly Jun 4 2026)
+      google_response_to_studies: Google spokesperson said Authoritas study inaccurate based on flawed assumptions outdated estimations set of searches not representative; Pew study flawed methodology skewed queryset not representative (Computer Weekly Jun 4 2026)
+    civil_society_response:
+      organization: Foxglove
+      spokesperson: Rosa Curling, co-executive director
+      welcome: Delighted CMA finally standing up to Google theft of journalists work, group urging for past year
+      threat_assessment: Google AI Overviews threat not only to independent news industry but to informed democracy. Google AI Overviews don't only take others' work without payment. They also make it harder for journalists to directly reach audience - threatening survival. Without independent journalism it becomes far harder to hold powerful governments and corporations to account.
+      prior_harm: Until now the only way to stop Google stealing your work was to opt out from being visible at all in Google search. With Google controlling 90% of search this was akin to removing yourself from internet.
+      concerns:
+      - Implementation too slow to end ongoing damage
+      - Further action needed for effective scrutiny
+      - Measures allow Google to mark own homework rather than rigorous independent audit
+      - Timeframe too generous - 9 months no reason, Google aware for years
+      - CMA must watch Google like hawk for compliance and new AI features/agents harm
+  prisoner_dilemma_collective_action:
+    frame: Prisoner's dilemma game theory (Press Gazette explainer Aug 2026) - two accused conspirators offered reduced-sentence deals independently
+    payoff_matrix:
+      both_cooperate_remain_silent: Might serve 1 year (collective bargain for universally applied fair payment model, historical value exchange Google scraped entire websites free for substantial traffic)
+      both_betray_sign: Each serve 2 years (cash + little referral traffic short-term but strengthen Google hold on UK market, 36B UK page views Apr 2026 up 31% YoY greater than next 24 publishers combined)
+      one_betrays_one_silent: Traitor goes free (competitor has deal gets small traffic + cash there is no upside to saying no), other faces 3-year sentence
+    industry_source_quotes:
+      fume_broken_bargain: At industry events publishers fume about broken bargain with Google historically scraped copied entire websites at no charge in exchange for sending substantial amounts traffic (Press Gazette Aug 2026)
+      now_drying_up: Now referral traffic drying up as Google takes all content rewrites turns into directly substitutional products (AI Overviews and AI Mode) (Press Gazette Aug 2026)
+      must_unite: At events most agree publishers must unite to strike new collective bargain based on universally applied fair payment model (Press Gazette Aug 2026)
+      divide_and_rule: Strategy described by well-placed industry source advising major publishers on AI strategy as divide and rule (Press Gazette Aug 2026)
+      no_upside: If your competitor has a deal and you are opting out, they get the small amount of traffic and the cash. There is no upside to saying no. (industry source Press Gazette Aug 2026)
+      already_caved: It is the prisoner's dilemma because your competitors have already caved. (same source)
+      consumer_ai_win: In two years' time Google could have completely won the consumer AI market - as soon as that happens it doesn't have to pay publishers anything. (same source)
+      extended_display_rights: Google says it is paying publishers for extended display rights and content delivery methods like APIs (Google statement Press Gazette Aug 2026)
+      no_sue_renting_peace: More accurately described as no-sue deals / These deals don't have product value, they are renting peace and that means the deals will go away (source with close knowledge of Google Press Gazette Aug 2026)
+      game_dominance: This is Google's game. They're gonna dominate here. There's no fair deal discussions that can happen with Google. It's really a matter of how much money they want to drop on an individual organization. (Jason Kint Digital Content Next CEO via NY Post Jun 26 2026)
+      layoff_risk: You've got that Showcase deal built into your annual plan, and if it goes away because you're not willing to do this new deal, which might be even a little bit more revenue, then you're probably doing layoffs of your newsroom (Kint Press Gazette Aug 2026)
+      legal_cost_barrier: If you go the other route and you say I'm going to instead sue Google for trying to exert force on me to do this, then you're dealing with hundreds of millions of legal costs - Very few are going to want to do anything except sign the deal with Google. (Kint Press Gazette Aug 2026)
+    market_concentration:
+      google_uk_page_views_apr_2026: 36B up 31% YoY more than next 24 publishers combined (Press Gazette Aug 2026 citing Apr data)
+      google_uk_adspend_2025: £21.5B up 7.5% YoY (Press Gazette analysis Aug 2026)
+      newsbrands_magazine_share: £1.1B shrank ~5% (Press Gazette analysis Aug 2026)
+      google_search_share_uk: 90%+ (CMA via Foxglove quote Computer Weekly Jun 4 2026)
+      ai_overviews_scale: 2.5B+ MAU AI Overviews, 1B+ MAU AI Mode (existing stat in cma_ai_overviews_opt_out)
+  neutralization_mechanism:
+    how_cma_remedy_neutralized: If most UK publishers sign 2-year NDA/no-sue deals granting broad AI training/grounding/AI Mode rights in exchange for enhanced content rights payments, they contractually waive the very rights CMA remedy grants them. CMA grants right to opt out of AI features and fine-tuning without losing organic ranking; private contract grants Google right to use content for training/grounding/AI Mode. Private ordering supersedes regulatory default when publishers sign. Google's implementation (controls not ranking signal outside generative features) becomes irrelevant if publisher already licensed content via News AI pilot. Press Gazette Aug 2026 notes secret AI deals could make CMA ruling largely irrelevant if most UK publishers sign hard-fought rights away. 2-year term aligns with prediction that Google could completely win consumer AI market within term after which it doesn't have to pay publishers anything - rendering opt-out moot after training data ingested and
+      models trained.
+    fourth_coercion_channel_update: Updated Aug 2026 coercion structure is quintuple not quadruple - (a) advertising dependency (~37% US digital ad spend, £21.5B UK), (b) search traffic dependency (AI Overviews reducing referrals, 1% CTR, 79% potential loss), (c) Showcase fee leverage (accept AI training or lose annual payments), (d) pilot deal exclusion threat (opt out of AI Overviews loses access to new AI licensing revenue), (e) contract waiver via signed deal (NDA/no-sue 2-year deal grants rights CMA says you can withhold, 90-day exit does not claw back training data already used). This contrasts with Meta's voluntary deal model (no threats, no leverage over existing payments, zero publisher deals for adversarial publications).
+    attribution_vs_traffic: CMA requires clear links in AI responses (Computer Weekly Jun 4 2026) and Google says controls not ranking signal outside generative features (Loew blogpost Jun 3 2026). But attribution without traffic (1% CTR per Pew) does not restore value exchange; publishers receive links users do not click while granting training rights persisting beyond 2-year deal term. Authoritas 79% traffic loss if below AI overview quantifies substitution effect.
+    alternative_framework:
+      author: Madhav Chinnappa, 13 years managing publisher partnerships at Google, visiting fellow Reuters Institute for Study of Journalism
+      assessment: Publishers have not woken up that era of traffic when clear value exchange with Google is over. Need to build products/businesses based around new era of AI content discovery driven by superior customer experience LLMs offer. If optimising for short term doing deal might be viable. If optimising for sustainable pluralistic media ecosystem long term these deals not good.
+      spur_coalition: UK-based publishers coalition SPUR focused on framework for publisher negotiations with AI companies (Press Gazette Aug 2026). Chinnappa sceptical about SPUR plan to persuade AI companies to share usage data but says scheme has good potential.
+      proposed_model: Base model around access not copyright. Together block crawlers then license access via API and subscription fee. Publishers together control access via API and getting information back about usage without need for cooperation from foundational models. Moves conversation to product level.
+      mutual_exclusivity: Doing individual deal and collective access deal not mutually exclusive (Chinnappa via Press Gazette Aug 2026)
+  verification_status:
+    primary_sources_verified:
+    - Computer Weekly Jun 4 2026 14:52 article (CMA ruling details, 9-month implementation, compliance reports, effective tools, attribution, fine-tuning opt-out, Foxglove response with Rosa Curling quotes, Authoritas 79% traffic loss, Pew 1% CTR, Google Loew blogpost Jun 3 2026, Google testing subset UK media global rollout, controls not ranking signal)
+    - Press Gazette Aug 2026 article (Google AI deals short-term gain long-term woe, prisoner dilemma, divide and rule, 36B UK page views up 31% YoY greater than next 24 combined, £21.5B adspend up 7.5% vs £1.1B newsbrands shrink 5%, 2-year deals, single-figure millions Guardian/FT reader revenue, 200 pubs News AI pilot 2,800 Showcase 33 countries, NDA no-sue 90-day exit take-it-or-leave-it renting peace, Kint layoff/legal cost, £1M+ Showcase, Chinnappa 13-year Google Reuters Institute, SPUR coalition, access not copyright API)
+    - Barchart/AP Jun 3 2026 (UK orders Google allow publishers opt out AI scraping, world-first, effective tools, attribution, stronger bargaining)
+    - Register Mar 19 2026 (Google says will let publishers opt out AI overviews, SMS status 2025, consultation Jan 2026, choice screens)
+    - PYMNTS/NY Post Jun 25-26 2026 (broad AI training rights demand, Showcase sunset threat, Google spokesperson news preferences change statement)
+    - TechCrunch Dec 10 2025 (Google testing AI-powered article overviews on select publications Google News pages)
+    secondary_corroboration:
+    - CMA SMS designation Oct 2025 strategic market status (Computer Weekly and Press Gazette and Register)
+    - Google Search Ecosystem blogpost Jun 3 2026 via Computer Weekly (Mrinalini Loew GM, testing subset UK media, global rollout aim, controls not ranking signal)
+    - Information reporting Jun 2026 via PYMNTS/NY Post on broad rights
+    - Press Gazette Platforms page on news publisher AI deals lawsuits OpenAI Google (existing source in google_news_ai_pilot)
+    speculative_elements_labeled:
+    - Future Google consumer AI market dominance within 2 years is industry source prediction (Press Gazette) not observed fact
+    - Deal values single-figure millions are Press Gazette understanding due NDA not official disclosure
+    - Renting peace / deals will go away is close-knowledge source interpretation not Google official
+    - Collective action failure assumes individual rationality not collective - SPUR/API alternative could succeed
+    - Prisoner dilemma payoff matrix is explanatory analogy (Press Gazette) not formal game-theoretic model with quantified utilities
+  confounders_and_alternative_explanations:
+    strong:
+    - Publisher size and business model - Guardian/FT large national brands depend largely on reader revenue rather than advertising and high traffic (Press Gazette Aug 2026) - different incentives than regional publishers £1M+ Showcase baseline; reader-revenue model may reduce ad-dependency confounder but increases Showcase-replacement financial pressure
+    - Existing deal built into annual plan creates operational layoff risk if refused (Kint quote Press Gazette) - not purely financial incentive but budget dependency
+    moderate:
+    - User preference shift - AI Overviews 2.5B+ MAU AI Mode 1B+ MAU represent genuine user preference change Google cites (Google spokesperson as people's news preferences change) - News AI pilot could be legitimate product evolution not purely coercive
+    - Legitimate licensing value - Google pays for extended display rights and content delivery methods like APIs (Google framing) which could be genuine product value not renting peace - competing interpretations of same payment
+    - Jurisdiction - CMA UK-only world-first remedy may not apply globally; 2,800 pubs in 33 countries mostly outside CMA scope; global rollout of controls is Google voluntary not CMA-mandated outside UK
+    - Traffic evidence quality - Google spokesperson disputes Authoritas 79% loss (inaccurate flawed assumptions outdated estimations not representative) and Pew 1% CTR (flawed methodology skewed queryset not representative) - both studies contested
+    weak:
+    - Single-month page view Apr 2026 36B may not represent full-year dynamics
+    - Foxglove advocacy position may overstate democracy threat framing
+    - Press Gazette is UK industry publication with interest in publisher collective bargaining - may overstate divide-and-rule narrative
+  mediascope_relevance: Directly addresses MediaScope gap - existing google_news_ai_pilot and cma_ai_overviews_opt_out entries documented coercion and regulatory response separately but not interaction as financial contract neutralizing regulatory remedy. Prisoner's dilemma framing explains why 2 of 8 MediaScope publications (Guardian, FT) signed despite industry consensus at events that publishers must unite for universally applied fair payment model - individual rationality (cash + little traffic, avoid layoffs, avoid hundreds of millions legal costs) vs collective rationality (fair payment, API access model, pluralistic ecosystem). Both Guardian and FT depend largely on reader revenue rather than advertising (Press Gazette Aug 2026) making them less ad-dependent but more susceptible to Showcase replacement threat because Showcase fees built into annual plan. Mechanism predicts publications with existing Showcase fees face layoff risk if refusing (Kint), those without fees face exclusion
+    from new AI revenue - either way financial coercion. Meta contrast - zero publisher deals, zero ad dependency, zero coercion, zero NDA/no-sue constraints - making Meta safe target for accountability coverage while Google coverage softens due financial dependency and contractual non-disparagement risk (no-sue clause). For wearables - Samsung glasses coverage silence persists because driven by Channel 2 (ad dependency) not Channel 1 (deal payments) - distinct from Google News AI pilot which is Channel 1 deal payments with Channel 2 ad dependency as enforcement. SPUR/API model represents alternative future where publishers collectively block crawlers then license via API with usage data - doing individual deal and collective deal not mutually exclusive per Chinnappa.
+  asymmetry_scorer_note: Synthetic scorer not applicable to financial incentive mapping mechanism - no tone array to compare. Asymmetry prediction - publications with Google News AI pilot deals (Guardian, FT) expected to produce softer Google AI coverage (enterprise growth framing, constructive, no surveillance vocabulary) vs adversarial Meta coverage (surveillance framing) due financial dependency + NDA/no-sue constraints on critical coverage. Requires URL-backed article-level dataset with observed tone scores for empirical validation (Welch's t-test, Cohen's d, bootstrap CI 1000 iterations, 95% CI). Do NOT claim empirical significance from synthetic scores. Every fact needs source URL per project requirement.
+  source_urls:
+  - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
+  - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+  - https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries
+  - https://www.theregister.com/2026/03/19/google_opts_for_optout_on/
+  - https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/
+  - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+  - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+  - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+  cross_references:
+  - mechanism_id: 88
+    relationship: Publisher AI Deal Revolt dual-channel financial leverage decoupling (Channel 1 deals vs Channel 2 ads) - this mechanism specifies News AI pilot deal structure and CMA neutralization as concrete instance of Channel 1 capture
+  - mechanism_id: 124
+    relationship: WBD/CNN quad-tech financial architecture hierarchy advertising > infrastructure > content licensing
+  - mechanism_id: 96
+    relationship: Litigation coverage selectivity natural experiment (Gizmodo 6 vs WIRED 0) - NDA/no-sue clauses may contractually constrain coverage of AI company litigation
+  - mechanism_id: 212
+    relationship: Apple Q3 2026 advertising-Siri AI compound publisher financial capture timing - Apple three-channel vs Google four-channel (now five-channel with contract waiver) capture
+  - mechanism_id: 53
+    relationship: OpenAI triple-layer journalism funding (content licensing + salary funding + philanthropic grants) vs Google News AI pilot single-layer but with coercive sunset threat
+  test_file: tests/test_google_news_ai_pilot_deal_structure_cma_neutralization_aug28.py
