@@ -4,12 +4,12 @@ Iteration #352 — Type C Financial Incentive Mapping — Apple Q3 2026 Services
 Mechanism #363 validates Apple five-channel publisher financial capture Q3 2026:
 - SEC 10-Q filing Jul 31 2026 language progression Q2→Q3 App Store dropped, advertising rising
 - Q3 Services $30.7B record, 12% YoY, 28.1% of $109.4B total, 75.6% gross margin, 1.5B paid subs, 2.5B active devices
-- Siri AI publisher deals WSJ Aug 12 2026 nine-figure variable pay-per-use multiyear
-- Gemini $1B/yr bypass Jan 12 2026, 1.2T params, publishers $0
-- App Store tax 15-30%, Apple One dilution, News+ 50% share 125M MAU
-- Meta 0 channels contrast
+- Siri AI publisher deals WSJ Aug 12 2026 nine-figure variable pay-per-use multiyear (negotiation only as of Aug 20 2026)
+- Gemini ~$1B/yr bypass Jan 12 2026, 1.2T params, structural-risk hypothesis publishers $0 conditional IF flows (reported/estimated not confirmed)
+- App Store tax 15-30%, Apple One dilution, News+ 50% share Apple News total audience (free+paid) 125M MAU not paid subs
+- Meta 0 Apple-specific channels vs 1 global voluntary licensing channel
 
-All source URLs verified HTTPS from primary sources or Reuters/WSJ secondary attribution.
+All source URLs verified HTTPS — Primary sources SEC filings + earnings call + WSJ (tier 1), supplemented by trade/tech coverage MacRumors/GSMArena/Motley Fool/Tech-Insider/PPC Land for corroboration (tier 2).
 """
 
 import yaml
