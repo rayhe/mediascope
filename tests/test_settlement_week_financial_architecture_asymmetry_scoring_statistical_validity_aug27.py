@@ -1,27 +1,39 @@
 """
-Test & Verify — Settlement-Week Financial Architecture Asymmetry Scoring Statistical Validity
+Synthetic Scorer Regression — Settlement-Week Financial Architecture Asymmetry Scoring
 
-Iteration #337 — Type D: Test & Verify
+Iteration #337 — Type D: Test & Verify — CORRECTED 2026-08-28
 Date: Thu 2026-08-27 23:00 PT
+CORRECTION: This file contains SYNTHETIC tone-array regression tests only.
+It does NOT empirically validate mechanism #350's 16-publication corpus.
 
-Mechanism #350 continuation — Verify that asymmetry scoring produces
-statistically meaningful results for the complete settlement-week financial
+Mechanism #350 continuation — Verify that asymmetry scoring PIPELINE behaves
+as expected on controlled synthetic inputs for the settlement-week financial
 architecture convergence index.
 
-CORE VALIDATION TASK:
+CORE VALIDATION TASK (SYNTHETIC ONLY):
 The settlement-week analysis claims 10/16 publications have OpenAI deals
 vs 2/16 Meta deals (5:1 ratio) and that financial relationships predict
-which entities receive scrutiny omission. This test validates that:
+which entities receive scrutiny omission. THIS TEST DOES NOT VALIDATE THAT
+CLAIM with real article data. It validates that:
 
 1. The statistical scoring pipeline (Welch's t-test, Cohen's d, bootstrap CI)
-   produces significant results for the observed coverage patterns
+   produces expected significant results on DELIBERATELY SEPARATED SYNTHETIC
+   tone arrays (e.g., Meta -0.55 to -0.72 vs OpenAI +0.25 to +0.44 simulated)
 2. The asymmetry scores are not artifacts of small sample size or random noise
-3. Effect sizes are interpretable and methodology note is sound
-4. The complete financial architecture matrix correctly categorizes publications
+   IN SYNTHETIC DATA — does not prove real-corpus significance
+3. Effect sizes are interpretable and methodology note contains required strings
+4. The complete financial architecture matrix categorization is tested for
+   internal consistency (exhaustive, mutually exclusive) — not empirical accuracy
 5. Cultural consensus vs financial incentive hypotheses are distinguishable
+   in synthetic framing
 
-This is a Type D iteration: test suite verification, statistical validity,
-and artifact update.
+This is a Type D iteration: synthetic scorer regression, not empirical validation.
+Real empirical validation would require URL-backed article-level dataset with
+observed tone scores, then Welch, Cohen's d, bootstrap CI (1000 iter, 95% CI),
+and confounder analysis on that observed data.
+
+All p<0.001, large d, CI-excludes-zero results in this file are EXPECTED
+OUTCOMES OF SIMULATED SEPARATION, not evidence of real-world corpus significance.
 """
 
 import pytest
@@ -41,7 +53,7 @@ from mediascope.score.asymmetry import calculate_asymmetry, generate_asymmetry_r
 
 
 class TestWelchTTestEdgeCases:
-    """Validate Welch's t-test handles edge cases from settlement-week data."""
+    """Validate Welch's t-test handles edge cases — synthetic inputs, not real corpus."""
 
     def test_insufficient_samples_returns_neutral(self):
         """When either group has <2 samples, test returns (0.0, 1.0) — not significant."""
@@ -69,10 +81,11 @@ class TestWelchTTestEdgeCases:
 
     def test_settlement_week_meta_vs_openai_tone_distribution(self):
         """
-        Simulate settlement-week sentiment:
-        Meta: 11 articles, all accountability vocabulary, tones -0.55 to -0.75
-        OpenAI (same publications): 8 articles, business-expansion, tones +0.2 to +0.5
-        Should yield p < 0.001, large effect size.
+        SYNTHETIC: Simulate settlement-week sentiment with deliberately separated arrays.
+        Meta synthetic: 11 tones -0.55 to -0.75
+        OpenAI synthetic: 8 tones +0.2 to +0.5
+        Should yield p < 0.001, large effect size on synthetic separation.
+        This does NOT validate real corpus.
         """
         # Meta settlement coverage tones (from CNN, AP, Reuters, CNBC, WSJ samples)
         meta_tones = [-0.62, -0.71, -0.58, -0.65, -0.68, -0.55, -0.72, -0.60, -0.66, -0.59, -0.64]
@@ -92,7 +105,7 @@ class TestWelchTTestEdgeCases:
 
 
 class TestCohensDEffectSizeInterpretation:
-    """Validate effect size interpretation matches settlement-week findings."""
+    """Validate effect size interpretation — synthetic thresholds, not corpus findings."""
 
     def test_effect_size_thresholds(self):
         assert interpret_effect_size(0.1) == "negligible"
@@ -103,8 +116,9 @@ class TestCohensDEffectSizeInterpretation:
 
     def test_settlement_week_deal_asymmetry_effect_size(self):
         """
-        OpenAI-deal pubs vs non-deal pubs: vocabulary register bifurcation.
-        Financial architecture predicts which entities receive scrutiny omission.
+        SYNTHETIC: OpenAI-deal pubs vs non-deal pubs — synthetic tone arrays.
+        Financial architecture predicts which entities receive scrutiny omission —
+        synthetic demonstration only, not empirical validation.
         """
         # Publications with OpenAI deals covering Meta (accountability vocab)
         # Tones from WIRED, Verge, Atlantic, Guardian, Axios, AP, Reuters, WSJ, Le Monde, TechCrunch
@@ -118,10 +132,8 @@ class TestCohensDEffectSizeInterpretation:
 
     def test_cultural_consensus_effect_size_smaller(self):
         """
-        NPR / Information (no AI deals) show same compartmentalization but
-        with broader entity scope — effect size should be smaller than
-        financially-entangled group, supporting cultural consensus as primary
-        driver with financial amplification.
+        SYNTHETIC: NPR / Information (no AI deals) synthetic compartmentalization.
+        Synthetic demo — not empirical validation of cultural consensus driver.
         """
         # Non-financially-entangled: Meta accountability + broader entity scope
         npr_meta_tones = [-0.52, -0.48, -0.55, -0.50]
@@ -136,7 +148,7 @@ class TestCohensDEffectSizeInterpretation:
 
 
 class TestBootstrapCI:
-    """Validate bootstrap CI for settlement-week financial architecture."""
+    """Validate bootstrap CI — synthetic, not real corpus architecture."""
 
     def test_bootstrap_ci_excludes_zero_for_significant_asymmetry(self):
         meta = [-0.7, -0.6, -0.65, -0.68, -0.62, -0.71, -0.58]
@@ -162,7 +174,7 @@ class TestBootstrapCI:
 
 
 class TestAsymmetryScorerCompleteFinancialArchitecture:
-    """Test calculate_asymmetry with settlement-week complete financial architecture data."""
+    """Test calculate_asymmetry with synthetic settlement-week-like data — not real corpus."""
 
     def test_calculate_asymmetry_with_settlement_week_data(self):
         meta_scores = [-0.62, -0.71, -0.58, -0.65, -0.68, -0.55, -0.72, -0.60, -0.66, -0.59, -0.64]
@@ -263,12 +275,16 @@ class TestCompleteFinancialArchitectureConvergenceIndex:
             all_pubs.extend(cat_pubs)
         assert len(all_pubs) == len(set(all_pubs)), "Categories should be mutually exclusive"
 
-    def test_ipo_underwriter_compound_incentive(self):
+    def test_ipo_underwriter_compound_incentive_UNVERIFIED(self):
         """
-        Goldman Sachs + Morgan Stanley + JPMorgan underwrite BOTH Anthropic ($2T)
-        and OpenAI ($852B-$1T). Combined fee pool creates structural incentive.
+        UNVERIFIED PROJECTION — requires primary S-1/prospectus URLs ≤ Aug 27 2026.
+        Goldman Sachs + Morgan Stanley + JPMorgan allegedly underwrite BOTH Anthropic ($2T)
+        and OpenAI ($852B-$1T). This test checks arithmetic IF figures were true,
+        not that figures are verified facts. Per project requirement, every fact needs
+        source URL; these IPO targets cite future filings (Oct 2026, 2027) unavailable
+        on Aug 27 2026 and cannot be framed as verified.
         """
-        anthropic_ipo_target = 2.0  # trillion
+        anthropic_ipo_target = 2.0  # trillion — UNVERIFIED projection
         openai_ipo_low = 0.852
         openai_ipo_high = 1.0
         combined_low = anthropic_ipo_target + openai_ipo_low
@@ -277,11 +293,11 @@ class TestCompleteFinancialArchitectureConvergenceIndex:
         assert combined_low == 2.852
         assert combined_high == 3.0
 
-        # At typical 2-3% underwriting fee, fee pool is $50B+
+        # At typical 2-3% underwriting fee, fee pool is $50B+ IF targets true — projection only
         fee_rate = 0.02
         fee_pool_low = combined_low * 1000 * fee_rate  # in billions
         fee_pool_high = combined_high * 1000 * fee_rate
-        assert fee_pool_low > 50, f"Fee pool should be >$50B, got ${fee_pool_low}B"
+        assert fee_pool_low > 50, f"Projection fee pool should be >$50B IF true, got ${fee_pool_low}B"
 
     def test_settlement_week_convergence_rate(self):
         """
