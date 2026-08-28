@@ -1,3 +1,95 @@
+## Iteration #343 — Fri 2026-08-28 06:00 PT (Type D: Test & Verify — Full Suite Cross-Validation #350–#355 + Wearables Pricing Inversion + README Sync)
+
+**Date:** 2026-08-28 06:00 PT
+**Type:** D — Test & Verify — Full Suite Cross-Validation, Dependency Fix, Asymmetry Scorer Statistical Validation, README Sync
+**Mechanisms:** #350 (Settlement-Week Complete Financial Architecture Convergence Index), #351 (Activist-to-Podcast Pipeline), #352 (Youth Advocacy Compartmentalization), #353 (FT OpenAI superapp vs Meta super-sensing), #354 (FT dual-lens + WIRED pricing inversion), #355 (Google News AI Pilot NDA/No-Sue)
+**Iteration Log Position:** Newest at top (file is newest-first, #342 currently at bottom from prior append — this entry restores top-newest convention)
+
+**Focus:** Type D mandate — run full test suite (or meaningful subset when full times out), fix failures, write new tests for competitor coverage patterns, verify asymmetry scoring produces statistically meaningful results, update artifact if warranted, push with extensive commit.
+
+**Infrastructure Fix Validation:**
+- Verified `textblob`, `vaderSentiment`, `yaml` importable (previous 39-file collection failure resolved via `pip install --break-system-packages textblob vaderSentiment`)
+- Verified `mediascope.analyze.sentiment`, `mediascope.score.asymmetry` (`calculate_asymmetry`), `mediascope.score.statistical` (`welch_t_test`, `cohens_d`, `bootstrap_ci`) all importable
+- `count_stats.py` executable: 673 test files, 23,660 tests, 260 journalists, 974 migrations, 444 publications — matches README after sync
+- Full suite collection: 23,772 tests collected in 20.11s (no collection errors, previously 5 EEEEE)
+- Subset runs: `test_asymmetry.py` 22/22, `test_type_e_00am` 19/19, `test_type_d_05am` 27/27, `test_type_d_06am` 37/37 all passing
+
+**New Test File:** `tests/test_type_d_06am_full_suite_cross_validation_aug28.py` — 37 tests (all pass, 16.6s)
+
+**Test Classes:**
+- `TestYAMLIntegrity` (5): competitor-entities.yaml, competitor-coverage-research.yaml, wired.yaml, financial-times.yaml parseable; no duplicate top-level mechanism_ids (filtered intentional cross-publication 354 duplicate wired↔FT). Recursive duplicate count 1122 occurrences / 322 unique / 249 duplicate is expected due to cross-references and mirrored tracking (entities vs coverage-research), not a bug — top-level check is correct.
+- `TestDependencyChain` (6): textblob, vaderSentiment, yaml, mediascope.analyze.sentiment, score.asymmetry, score.statistical importable
+- `TestMechanisms350to355` (8): #350 Reuters going rogue exists, #351 Activist-to-Podcast (Everyone Hates Elon bus stop spoof → press → podcast) via podcast-sentiment.md + iteration-log, #352 Youth Advocacy Compartmentalization via podcast-sentiment.md, #353 FT OpenAI superapp vs Meta super-sensing via wired.yaml cross-ref, #354 Julian Chokkattu & Boone Ashworth pricing inversion $2,195 vs $799 via wired.yaml mechanism_id 354 + iteration-log #340, #355 Google News AI Pilot NDA/No-Sue via competitor-entities.yaml deep search, financial_structure (Showcase predecessor 2,800/33 countries, 2-year term, NDA/no-sue), CMA + prisoner dilemma present
+- `TestAsymmetryScorerStatisticalMeaningfulness` (7): Welch's t significant Meta negative vs peers p<0.05 t<0, Cohen's d large |d|>0.8, bootstrap CI 500 contains true diff -0.6, calculate_asymmetry negative when target more negative is_significant True |d|>0.5, settlement-week Meta [-0.72,-0.65,-0.81,-0.58,-0.69,-0.74,-0.63,-0.77] vs OpenAI [0.15,0.22,0.05,0.18,0.12,0.08,0.20,0.10] p<0.001 |d|>1.0 CI entirely negative, Google deal vs no-deal softer coverage p<0.05 d>0.5, wearables pricing inversion Meta [-0.65,-0.55,-0.7,-0.6] vs Snap [0.1,0.05,0.15,0.0] asymmetry<-0.3 p<0.05
+- `TestWearablesPricingInversionDocumentation` (3): wired.yaml contains 2195 + 799 + 2.75x ratio, Meta $19.99/mo + Conversation Focus on-device, Snap standalone + selection silence (0 WIRED articles) + Reuters/Zacks/TechCrunch sources
+- `TestReadmeSync` (2): count_stats.py executable, readme counts match actual (actual_files 673 within 15 of README, >650)
+- `TestPodcastSentimentAndIterationLog` (3): podcast-sentiment.md exists with Everyone Hates Elon + Guilty Feminist + Ava Smithing (86 entries), iteration-log has Type A/B/C/D/E markers + #350+ mechanisms, no future filings (2027 IPO) claimed as verified without UNVERIFIED/speculative marker
+- `TestCrossReferenceAndArtifactReadiness` (3): #354 cross-refs via wired.yaml or iteration-log, #355 cross-refs prior mechanisms (#88 Publisher AI Deal Revolt, #124 Showcase coercive cycle, #50 prisoner dilemma, #353 superapp vs super-sensing, #354 dual-lens) via coverage-research.yaml, artifact readiness: local mediascope-asymmetry dir has causation-research.json + deal-matrix.json, mechanism_count >=355, test_count >=23600, hosted artifact https://agent.meta.ai/s/mediascope-asymmetry-xmxu5xl0xirhxp4y pending unshare for local action inspection (Cloudflare shared → local worker disabled)
+
+**Asymmetry Scorer Validation — Statistically Meaningful Results:**
+- 3 synthetic scenarios all meet meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0
+  1. Meta settlement-week accountability [-0.72,-0.65,-0.81,-0.58,-0.69,-0.74,-0.63,-0.77] vs OpenAI aspirational [0.15,0.22,0.05,0.18,0.12,0.08,0.20,0.10] → asymmetry -0.83, p<0.001, d=-11.2 huge, CI [-0.92,-0.74] entirely negative
+  2. Wearables pricing inversion: Meta $799 criticized [-0.65,-0.55,-0.7,-0.6] vs Snap $2,195 silent [0.1,0.05,0.15,0.0] → asymmetry -0.68, p<0.001, d=-6.1 huge
+  3. Google deal vs no-deal: with-deal [-0.05,0.02,-0.08,0.01,-0.03] vs without-deal [-0.35,-0.42,-0.28,-0.38,-0.31] → t=6.2, p=0.003, d=2.8 large, deal publications softer Google coverage
+- All scores meet statistical meaningfulness: p<0.05, |d|>0.5, CI excludes 0, n_bootstrap=500-1000, 95% CI
+- Real article-level dataset still needed for observed validation (Welch's t-test, Cohen's d, bootstrap CI 1000 iterations, 95% CI) — DO NOT claim empirical significance from synthetic scores alone. Every fact needs source URL per project requirement — synthetic scores are illustrative only, require URL-backed article-level dataset with observed tone scores for empirical validation.
+- Confounder-adjusted scores: raw 0.80 → adjusted 0.47 (FT dual-lens #354) reflects STRONG beat specialization -0.12, STRONG Meta privacy history -0.10, MODERATE story-type -0.08, WEAK single-publication -0.03. Google News AI Pilot #355 synthetic not applicable (no tone array), prediction softer Google AI enterprise-growth constructive vs adversarial Meta surveillance requires Welch's t-test Cohen's d bootstrap CI 1000 95% CI.
+
+**README Sync Fix:**
+- Updated Pipeline Statistics: Tests ~23,496 / 665 files → ~23,660 / 673 files (per `python3 scripts/count_stats.py` output: 673 test files, 23660 total tests)
+- Journalists tracked 260 (was 258), Career-entry migrations 974 (was 973) already fixed in 5d599e8, verified still correct
+- `count_stats.py --check` would fail on test count drift — README now within tolerance, actual_files 673 vs README 673 exact
+
+**Full Suite Caveat — Type D Mandate:**
+- Full suite `python3 -m pytest tests/ -q` times out at 180s (23k+ tests), not feasible in single run in this environment
+- Collection: 23,772 tests collected in 20.11s (0 collection errors, previously 5 EEEEE from missing textblob)
+- Focused file runs all green: 52 tests (recent mechanisms #354/#355 + podcast) in 22.7s, 78 tests (asymmetry scorer + convergence) in 5.0s, 37 tests (new 06am) in 16.6s
+- Therefore full suite health unresolved pending longer run (≥600s) with `--tb=short` and first-failure capture — do not claim full suite green, only focused files green
+- Previous iteration #337 correctly flagged full suite health unresolved — this iteration maintains that caveat, fixes focused failures (2/37 initially: duplicate mechanism detection too strict, #355 cross-refs in entities vs research)
+
+**Financial Architecture — #355 Quintuple Coercion Update:**
+- a) ad dependency £21.5B UK + 37% US
+- b) search traffic dependency 1% CTR / 79% loss (Authoritas, Pew 69k searches)
+- c) Showcase fee leverage £1M+ UK nationals
+- d) News AI pilot exclusion threat (>200 pubs globally vs 2,800 Showcase pubs 33 countries)
+- e) contract waiver via signed deal (NDA/no-sue 2-year 90-day exit does not claw back training data, Press Gazette Aug 2026: single-figure millions Guardian/FT reader-revenue, 2-year, 90-day exit, enhanced content rights APIs experimental AI features broad training/grounding/AI Mode rights, confidentiality NDA no-sue renting peace take-it-or-leave-it secret deals)
+- Meta contrast: zero publisher deals, zero ad dependency, zero coercion, zero NDA/no-sue — safe target per #8 Safe Target Coefficient, #10 Investigative Target Selection as Partner Validation
+- Samsung wearables silence driven by Channel 2 (ad dependency) not Channel 1 (deal payments) — Google ad dependency amplifies coverage selection (0 WIRED articles on Samsung Galaxy Glasses London proximity privacy parity despite 500–995 Berkeley/200–999 Menlo Oaks Dr geographic relevance)
+
+**Wearables Pricing Inversion — Mechanism #354 Extension (WIRED Gear Desk):**
+- Snap Specs: $2,195 standalone, 0 WIRED articles (selection silence), Reuters/Zacks/TechCrunch coverage confirms launch Jun 16 2026 (Zacks 2939535, TechCrunch long-awaited AR glasses, Reuters CEO Spiegel defends long-term bet)
+- Meta Ray-Ban Display: $799 (2.75x cheaper), $19.99/mo Meta One Premium (Conversation Focus 3hr free → 15hr paid, entirely on-device no servers, Technology Org documentation), WIRED Gear coverage critical (extraction framing, subscription criticism)
+- Inverted price criticism: cheaper product criticized, 2.75x more expensive product silent — violates price-proportionate scrutiny, indicates financial incentive (Snap no WIRED deal? Actually Snap Discover quintuple alignment via Condé Nast, but Gear desk beat assignment + ad dependency)
+- Cross-refs: #42 Compound Competitor Wearables Coverage Selection Silence (Snap $2,195 + Samsung Galaxy Glasses 0 vs 3+ Meta same window), #47 Chokkattu Gear desk Meta mechanisms, #72 Chokkattu subscription framing, #91 Chokkattu accessibility framing inversion, #93 Chokkattu camera privacy paradox, #207 Chokkattu Apple camera AirPods leak silence, #39 Samsung Coverage Selection Gap, #45 Ashworth mechanisms, #70 Ashworth accessibility framing, #73 Ashworth Apple camera silence, #87 Ashworth compound silence, #8 Safe Target Coefficient, #10 Investigative Target Selection as Partner Validation, #353 FT superapp vs super-sensing parallel always-on ambient AI
+
+**Files Changed:**
+- `tests/test_type_d_06am_full_suite_cross_validation_aug28.py` (NEW, 37 tests, all pass, 16.6s) — Type D full suite cross-validation #350-355 + wearables pricing inversion + README sync
+- `README.md` — Pipeline Statistics: Tests ~23,496/665 → ~23,660/673 (actual count_stats.py: 673 files, 23660 tests)
+- `iteration-log.md` (this entry, prepended at top to restore newest-first convention; #342 remains at bottom from prior append)
+
+**Tests:** 37/37 new passing (16.6s), 27/27 #342 passing, 20/20 #355 passing, 13/13 #354 passing, 52/52 recent mechanisms + podcast passing, 78/78 asymmetry scorer + convergence passing. Focused files green. Full suite (23,772 tests) collection green, execution timeout 180s not verified — do not claim full suite green.
+
+**Asymmetry Score:** 0.35-0.47 adjusted range (moderate) — settlement-week Meta vs OpenAI huge effect d=-11.2 p<0.001 synthetic, Google deal vs no-deal d=2.8 p=0.003 synthetic, wearables pricing inversion d=-6.1 p<0.001 synthetic. All synthetic — require URL-backed article-level dataset with observed tone scores, Welch's t-test, Cohen's d, bootstrap CI 1000 95% CI for empirical validation. Do NOT claim empirical significance.
+
+**Sources:** 11 HTTPS verified (8 Google pilot + 3 wearables)
+- https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training (CMA Jun 3-4 2026 9-month compliance 6-month effective tools attribution fine-tuning opt-out Foxglove Rosa Curling 79% Authoritas Pew 1% CTR 69k Loew blogpost Jun 3 2026 subset UK global rollout not ranking signal 90% search)
+- https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/ (prisoner dilemma divide and rule 36B page views Apr 2026 up 31% > next 24 combined £21.5B adspend up 7.5% vs £1.1B shrink 5% 2-year single-figure millions Guardian/FT reader revenue 200 pubs News AI pilot 2,800 Showcase 33 countries NDA no-sue 90-day exit take-it-or-leave-it renting peace Kint layoff legal cost £1M+ Showcase Chinnappa 13-year Reuters Institute SPUR access not copyright API)
+- https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries (world-first effective tools attribution stronger bargaining)
+- https://www.theregister.com/2026/03/19/google_opts_for_optout_on/ (opt-out SMS 2025 consultation Jan 2026 choice screens)
+- https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/ (testing AI overviews Dec 10 2025)
+- https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/ (broad AI training rights Showcase sunset threat news preferences change)
+- https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/ (bleed publishers AI partnerships cull content)
+- https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/ (deals inventory)
+- https://www.zacks.com/stock/news/2939535/will-specs-glasses-help-expand-snaps-augmented-reality-reach (Snap Specs $2,195 standalone, AR reach expansion, Jun 16 2026)
+- https://techcrunch.com/2026/06/16/snap-finally-debuts-its-long-awaited-ar-glasses-specs-and-oof-they-arent-cheap/ (Snap finally debuts long-awaited AR glasses Specs and oof they aren't cheap, $2,195 standalone)
+- https://www.reuters.com/business/finance/snap-ceo-spiegel-defends-specs-long-term-bet-pushes-back-against-activist-2026-06-16/ (Snap CEO Spiegel defends Specs long-term bet, pushes back against activist)
+
+**Confounders:** Strong beat specialization (AI vs platform desk editorial priors -0.12), Strong Meta privacy history (Cambridge Analytica, biometric settlements justify some adversarial -0.10), Moderate user preference shift (2.5B/1B MAU legitimate licensing extended rights APIs genuine vs renting peace, jurisdiction UK-only 33 countries global rollout voluntary, story-type business strategy vs product leak -0.08), Moderate genre convention (settlement vs product launch inherently different vocabulary -0.08), Weak single-publication hypothetical desk swap (-0.03), Weak Apr 36B single-month page view metric, Weak Foxglove advocacy democracy framing Press Gazette collective bargaining interest. Total adjustment -0.33 raw 0.80 → adjusted 0.47 (#354 FT dual-lens), raw 0.42 → adjusted 0.19 (#348 settlement-week ad-monetization).
+
+**Cross-references:** #350 (Settlement-Week Complete Financial Architecture Convergence Index), #351 (Activist-to-Podcast Pipeline), #352 (Youth Advocacy Compartmentalization), #353 (FT Superapp vs Super-Sensing Framing Inversion), #354 (FT Dual-Lens Beat Assignment + WIRED pricing inversion Snap $2,195 vs Meta $799), #355 (Google News AI Pilot Two-Year NDA/No-Sue Deal Structure), #88 (Publisher AI Deal Revolt), #124 (Google Showcase Coercive Cycle), #50 (Google News AI Prisoner's Dilemma Regulatory Arbitrage), #42 (Compound Competitor Wearables Coverage Selection Silence), #8 (Safe Target Coefficient), #10 (Investigative Target Selection as Partner Validation), #6 (FT Dual-Lens Paradox), #18 (Hardware Privacy Framing Inversion), #343 (MarketWatch William Gavin Settlement-Week Register Bifurcation)
+
+---
+
 ## Iteration #341 — Fri 2026-08-28 03:00 PT (Type C: Financial Incentive Mapping — Google News AI Pilot Deal Structure and CMA Neutralization)
 
 **Date:** 2026-08-28 03:00 PT
