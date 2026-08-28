@@ -20867,6 +20867,55 @@ cross_publication_findings:
     - mechanism_id: 46
       relationship: 'extends — #46 documents pre-IPO underwriter convergence; insurance denial applicability to AI labs would
         reduce IPO valuations, directly threatening underwriter fee income'
+  settlement_week_complete_financial_architecture_convergence_index:
+    mechanism_id: 350
+    type: financial_incentive_mapping
+    title: 'Settlement-Week Complete Financial Architecture Convergence Index'
+    date_analyzed: '2026-08-27'
+    asymmetry_score: 0.35
+    description: >
+      Synthesis mechanism mapping ALL documented publication financial relationships against
+      settlement-week coverage patterns (Aug 24-27, 2026). 16 publications analyzed. 10/16
+      have OpenAI content licensing deals; only 2/16 have Meta content deals (5:1 ratio).
+      100% of publications with AI lab content deals applied accountability vocabulary to
+      Meta AND non-accountability vocabulary to their deal partners. Cultural consensus is
+      the PRIMARY driver of compartmentalization (NPR and The Information, with zero financial
+      entanglement, show the same base pattern). Financial relationships predict WHICH specific
+      entities receive scrutiny omission within the cultural consensus frame.
+    key_findings:
+      deal_asymmetry: 'OpenAI has 18+ publisher content deals vs Meta 3. 6:1 structural incentive ratio.'
+      convergence_index: '11/16 publications (69%) show full convergence: Meta accountability + partner scrutiny omission.'
+      cultural_consensus: '2/16 non-financially-entangled surfaces confirm cultural consensus as base driver.'
+      wire_amplification: 'AP and Reuters (both OpenAI deal holders) distribute entity-selective vocabulary globally.'
+      ipo_compound: 'Goldman Sachs + Morgan Stanley + JPMorgan underwrite both Anthropic ($2T) and OpenAI ($852B+) IPOs.'
+    confounders:
+    - 'STRONG: Cultural consensus — non-financial surfaces show same compartmentalization pattern'
+    - 'STRONG: Proven harm record — Meta decade-long documented child safety failures'
+    - 'STRONG: Genre convention — settlement vs product launch inherently different vocabulary'
+    - 'MODERATE: Beat assignment — structural reporter specialization'
+    - 'MODERATE: Litigation maturity — Meta since 2021 Haugen vs OpenAI since late 2025'
+    counter_confounders:
+    - 'FTC active ChatGPT child safety investigation not reflected in any deal-holding publication coverage'
+    - 'CDT May 2026 analysis explicitly connects Delaware insurance ruling to AI lab liability — unreferenced'
+    - 'ChatGPT Ads Europe (31 markets, 1B WAU) received zero child safety vocabulary from any outlet'
+    - 'Anthropic $1.5B piracy settlement receives zero comparable accountability treatment'
+    cross_references:
+    - mechanism_id: 326
+      relationship: WSJ same-day register bifurcation (highest settlement-week score 0.62)
+    - mechanism_id: 337
+      relationship: WSJ settlement-week vocabulary bifurcation
+    - mechanism_id: 340
+      relationship: Public broadcasting entity framing bifurcation
+    - mechanism_id: 343
+      relationship: AP wire service vocabulary bifurcation
+    - mechanism_id: 344
+      relationship: Settlement conditional clause entity selection
+    - mechanism_id: 348
+      relationship: Settlement-week ad-monetization scrutiny asymmetry
+    - mechanism_id: 349
+      relationship: Fischer Axios publication-level vocabulary register inversion
+    test_file: tests/test_settlement_week_complete_financial_architecture_convergence_index_aug27.py
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
