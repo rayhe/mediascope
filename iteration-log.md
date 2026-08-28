@@ -13960,3 +13960,84 @@ confounder load; 2 STRONG, 2 MODERATE)
 - https://www.cnn.com/2026/06/01/business/florida-sues-chatgpt-openai-sam-altman
 - https://www.cnn.com/2026/08/24/tech/openai-subpoena-hugging-face-attorney-general-alabama
 - https://www.cnn.com/2026/05/05/tech/ai-youth-safety-independent-testing-lab
+
+## Iteration #338 — Fri 2026-08-28 00:00 PT (Type E: Podcast Sentiment Tracking)
+
+**Date:** 2026-08-28 00:00 PT
+**Type:** E — Podcast Sentiment Tracking — Everyone Hates Elon / Ava Smithing / Guilty Feminist August Update
+**Publication/Entity:** Cross-podcast synthesis — activist-to-podcast pipeline + youth advocacy + feminist comedy
+**Mechanisms:** #351 (Activist-to-Podcast Pipeline: Bus Stop Spoof → Tech Podcast Amplification), #352 (Youth Advocacy Podcast Compartmentalization)
+
+### Focus: Everyone Hates Elon July 2026 London Campaign, Ava Smithing / Left to Their Own Devices Clarification, Guilty Feminist August Silence
+
+**Everyone Hates Elon (activist group, not podcast):**
+- London-based guerrilla campaign group, previously targeting Musk (Swasticar), Bezos/Met Gala, Andrew Mountbatten-Windsor (Sandringham Feb 2026)
+- July 2026 Meta glasses campaign: 2 bus stops, 3 ad variants
+  - Lenticular Kylie Jenner ad near Meta London HQ (King's Cross): normal "Meta AI glasses" → skeletal monster "Meta: We're always watching" on angle shift, They Live (1988) reference, quote "Recording everything we see and do constantly? It's giving fascism, not fashion", FT claim "continuously record audio while taking photos every few seconds without warning light", #noncegoggles
+  - Pervert tech ad: "The biggest advance in pervert technology since the trenchcoat" / "Hey Meta, start filming"
+  - Epstein spoof (Carnegie Street): Epstein in Meta glasses (NY sex offender registry photo) / "Glasses for people who don't do consent"
+- Group quote: "Meta has spent years tracking us online. Now it wants to track us in the real world too." / "can be used to secretly record women and young people for sexual reasons. Simply put, that's abuse." — Jane spokeswoman
+- Market context: Meta 80%+ smart glasses sales (BBC via AfroTech), 7M+ sold 2024, owners "too nervous to leave the house" (MediaPost), Apple delay to 2027 for privacy rethink (Mashable via MediaPost), Instagram crackdown (Adam Mosseri story banning harassment videos)
+- Podcast amplification: Covered on Shared Security, Utilizing AI, Kill Switch, Waveform, Fortune AI Weekly without EHE as guests (activist → press → podcast pipeline)
+- Sentiment: -9/10 (maximally negative, intentionally inflammatory)
+- Asymmetry: 0.45 high — Meta-exclusive despite Apple, Google/Warby Parker, Samsung AR1 Gen 1, Snap identical hardware; partially justified by 80% market share
+
+**Ava Smithing / Left to Their Own Devices (replaces mis-specified Attention Sphere):**
+- Task spec says "Attention Sphere — media/tech analysis podcast, founded by Ava Smithing" — zero results found; Ava is Advocacy Director Young People's Alliance (YPA), Stevens Institute 2023 grad, All Tech Is Human inaugural affiliate, Student Action Network for Equity advisor
+- Actual podcast: Left to Their Own Devices (Toronto Star, 10-part investigative, Sep 19 2025 intro "We handed kids the most powerful technology in history. Then we walked away", Sep 26 2025 first full episodes, Peabody-nominated 2026)
+- Settlement-week relevant episode: Question Everything Aug 20 2026 (Brian Reed, S-Town/This American Life, Webby/Ambie winner) — "A Gen Z Reporter Questions Jonathan Haidt, author of The Anxious Generation" — Ava Smithing interviews Jonathan Haidt live on stage after jury verdicts against Meta and YouTube, context "Over the past few months, we've been closely covering the major lawsuits against Meta", Haidt ideas some Ava doesn't buy into, courts grappling with holding tech accountable
+- Other appearances: This Matters Sep 26 2025 (Ava 12-year-old rabbit hole nearly took life, walked halls of Congress), Scrolling 2 Death return (engagement algorithms dangers + privacy erosion, tech companies quietly collect/share data across apps)
+- Sentiment: -6/10 (negative toward Big Tech broadly, Meta-inclusive not Meta-exclusive)
+- Asymmetry: 0.28 moderate — systemic youth-harm framing, not entity-selective, but settlement timing makes Meta default example; no OpenAI/ChatGPT teen suicide lawsuits/FTC investigation named
+- Parallel: German HateAid criminal complaint Aug 12 2026 (Frankfurt ZIT, Meta + EssilorLuxottica + MediaMarkt/Fielmann/Apollo-Optik/Mister Spex, federal digital data protection law prohibiting covert filming devices, Josephine Ballon quote "There's no place to escape from smart glasses. You have to expect at any moment to be filmed and then exposed on the internet.", image-based digital violence disproportionately targets women) — legal-institutional counterpart to EHE cultural intervention, same gendered surveillance vocabulary
+
+**Guilty Feminist August 2026 Slate:**
+- Ep 497 Nuance Drought with Natasha Devon (Aug 23 2026, recorded Aug 5 London) — not tech
+- Ep 496 Intimacy with Lena Headey (Aug 17 2026, recorded Jul 29 via Riverside) — not tech
+- Wilderness Festival with The Circle NGO (Aug 11 2026, recorded Aug 2, guests Raakhi Shah/Sukhi Kaur, The Circle/Sikh Women's Aid/SISTERS Annie Lennox) — women/girls global support, not tech
+- Finding: Zero tech episodes Aug 11-24 despite Meta $18B settlement (largest child safety case), EHE feminist framing (glasses = abuse of women/children), HateAid gendered complaint (image-based violence targets women) all being core Guilty Feminist beat
+- April/May tech episodes for contrast: #481 The Algorithm (May 4 2026, Aoife Dunne + Adele Zeynep Walton Logging Off) — algorithmic control, feminist implications; #480 Keep Palantir Out Of Our NHS (Apr 27 2026, Susan Wokoma/Dr Matt Mahmoudi/Linnéa Freear) — Palantir NHS surveillance
+- Sentiment: N/A August (no tech ep) / -5/10 April/May (negative toward tech broadly)
+- Asymmetry: 0.15 low — omission not selective criticism, editorial calendar/festival season not bias
+- Implication: Activist groups (EHE) and legal groups (HateAid) lead gendered surveillance critique while largest feminist comedy podcast (TOP 0.01%, 18.6K Apple reviews, 4.8/5, 478.4K Instagram, 67 min avg long form) stays silent in same London market — genre boundaries prevent cross-pollination
+
+**Cross-Podcast August 2026 Pattern:**
+- Surfaces: EHE (activist, Meta glasses YES, feminist YES, youth NO, competitor NO), Left to Their Own Devices (investigative, Meta glasses NO, feminist NO, youth YES, competitor NO), Question Everything (investigative, Meta glasses NO, feminist NO, youth YES, competitor NO), Guilty Feminist (comedy, Meta glasses NO, feminist N/A, youth N/A, competitor N/A), HateAid (legal advocacy, Meta glasses YES, feminist YES, youth NO, competitor NO)
+- Meta glasses surfaces: 2/5 (EHE + HateAid)
+- Feminist framing surfaces: 2/5 (EHE + HateAid)
+- Key finding: Two parallel feminist frames for Meta glasses that never intersect — UK activist (sexual harassment tool, pervert tech, consent violation, guerrilla ads, bus stops, #noncegoggles, lenticular horror) vs German legal (illegal covert surveillance device, image-based digital violence, criminal complaint, Frankfurt ZIT). Identical vocabulary ("record women and young people for sexual reasons" / "disproportionately targets women") but different jurisdictions/tactics/ecosystems (street art vs court filing). Neither amplified by Guilty Feminist despite London base overlap.
+- Podcast-to-print comparison: Print 11/16 pubs with OpenAI deals omitted OpenAI teen safety risks during settlement week (mechanism #350, 0.35 asymmetry, financial incentive predicts softer competitor coverage). Podcast 6/7 surfaces omit competitor scrutiny entirely but financial incentive does NOT predict this — EHE, HateAid, Guilty Feminist, Left to Their Own Devices, Question Everything all have zero AI lab deals. This is pure cultural consensus + market-share justification (80% Meta) + genre compartmentalization.
+
+**Profile Updates:**
+- podcast-sentiment.md: Added 3 new entries (84: EHE Jul 2026 campaign detailed timeline, 85: Ava Smithing/Left to Their Own Devices clarification + Question Everything Aug 20 + HateAid parallel, 86: Guilty Feminist August slate zero tech coverage), plus cross-podcast August 2026 pattern summary table + asymmetry scores (EHE 0.45, Ava 0.28, Guilty Feminist silence 0.15)
+
+**New Tests:** 19 (all pass) — test_type_e_00am_everyone_hates_elon_ava_smithing_guilty_feminist_aug28.py
+- TestEveryoneHatesElonCampaignDetails (6 tests): metadata, lenticular details, pervert tech, Epstein spoof, group quote, market context
+- TestAvaSmithingAttentionSphereClarification (5 tests): Attention Sphere misspecification, Ava bio, Left to Their Own Devices metadata, Question Everything settlement-week episode, HateAid parallel
+- TestGuiltyFeministAugustSlate (5 tests): Ep 497, Ep 496, Wilderness Festival, August zero tech despite relevance, Feedspot ranking
+- TestCrossPodcastPattern (3 tests): August surfaces, parallel feminist frames, asymmetry scores
+
+**Asymmetry Score:** 0.35 avg (EHE 0.45 high, Ava 0.28 moderate, Guilty Feminist silence 0.15 low) — cultural consensus primary driver, financial incentives not predictive for podcast surfaces (all zero AI deals), market-share (80% Meta) partially justifies entity concentration but not exclusive vocabulary
+
+**Sources:**
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (lenticular, They Live, trenchoat/pervert tech, two bus stops, Kylie Jenner, FT claim, #noncegoggles, Jul 13 2026)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (Kylie Jenner collaboration, skeletal transformation, Meta HQ location, Everybody Hates Elon)
+- http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (billionaires could fund cures for cancer quote, X-ray skeletal, They Live)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (Epstein ad Carnegie Street, Swasticar history, Jane spokeswoman future versions no red light)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (British political campaign group formed to oppose Elon Musk, "Glasses for people who don't do consent", fact-check confirming EHE source)
+- https://afrotech.com/smart-glasses-ethics-and-consent (80% market share BBC, EHE statement "Simply put, that's abuse", human review sensitive footage)
+- https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html (Aug 3 2026 Meta response, Instagram moderation Adam Mosseri, Apple 2027 delay Mashable, 7M owners nervous, contractor review)
+- https://player.fm/episodes/508611024 (This Matters Sep 26 2025, Ava advocacy director YPA, Left to Their Own Devices announcement)
+- https://www.everand.com/podcast/923733485/Has-Big-Tech-rewired-Gen-Z-Guest-Ava-Smithing-advocacy-director-at-the-Young-People-s-Alliance-Young-people-today-have-been-raised-with-the-most-p (31 min, entire childhoods online, 12-year-old nearly took life, walked halls of Congress)
+- https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing (engagement algorithms + privacy erosion, Left to Their Own Devices launch)
+- https://www.iheart.com/podcast/263-left-to-their-own-devices-295506790/ (Toronto Star Sep 19 2025 intro, Sep 26 first full, "We handed kids the most powerful technology in history. Then we walked away", Peabody-nominated)
+- https://toppodcast.com/podcast_feeds/question-everything-3/ (Question Everything Aug 20 2026, Ava + Haidt, major lawsuits against Meta, live stage after jury verdicts Meta/YouTube, Webby/Ambie winner, Zbiotics/Quince ads)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (Ep 497 Nuance Drought Aug 23 recorded Aug 5, Ep 496 Intimacy Aug 17 recorded Jul 29, Wilderness Aug 11 recorded Aug 2, Raakhi Shah/Sukhi Kaur/The Circle/Sikh Women's Aid/SISTERS Annie Lennox)
+- https://zeno.fm/podcast/the-guilty-feminist/ (same episode list, Deborah Frances-White host, format)
+- https://podcast.feedspot.com/podcasts_for_liberal_women/?_src=seealso (TOP 0.01% global, 18.6K Apple reviews 4.8/5, 95.3K FB 79.6K Twitter 478.4K Instagram 67 min avg long form)
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/ (Aug 12 2026 HateAid criminal complaint Frankfurt ZIT, EssilorLuxottica + retailers, federal digital data protection law, Josephine Ballon quote, image-based digital violence targeting women)
+- https://www.theinformation.com/titv/jo9tx (The Information TITV Aug 27 2026 Meta $18B settlement, Nvidia earnings, Bill Gates AI warning — investor podcast settlement coverage no AI lab connection)
+- https://spoken.md/episode/meta-faces-lawsuit-over-ray-ban-smart-glasses-privacy-1000753679191 (Latent Space AI transcript, contractor review Kenya via Swedish newspaper, Super Bowl commercial, sensitive footage bathroom/sex/nudity)
+
+**Cross-references:** #130, #144, #340, #343, #344, #346, #347, #348, #349, #350, #351, #352
+
