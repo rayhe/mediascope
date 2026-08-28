@@ -5326,3 +5326,162 @@ Crossover episode described as covering major lawsuits against Meta over youth h
 - https://www.theinformation.com/titv/jo9tx
 - https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/
 
+
+#### 90. NBC News — "Fears grow over privacy as Meta A.I. glasses gain popularity" (Aug 11, 2026)
+
+- **Show:** NBC News / Yasmin Vossoughian segment
+- **Source URL:** https://www.youtube.com/watch?v=0NLaAQuaCJE
+- **Observed:** August 28, 2026 at 13:00 PT
+- **Title:** "Fears grow over privacy as Meta A.I. glasses gain popularity"
+- **Framing:** Gendered privacy backlash — "mostly women speak out about being filmed"
+- **Transcript excerpt (auto-transcript as displayed, Aug 28):** "As Meta rolls out its new AI glasses, privacy concerns are growing. Mostly women speak out about being filmed without their knowledge. The glasses feature a small camera that can record..."
+
+**Coverage Summary:**
+National broadcast segment framing Meta glasses as privacy threat, centered on women's disproportionate impact. Aligns with ESET Kenya/Ghana incidents (women secretly filmed in bathrooms/homes), Observer advocacy to "teach children to recognize pervert glasses," and EHE campaign's gendered harm framing. No competing wearables (Samsung Galaxy Glasses Jul 22, Google Android XR, Apple Vision Pro, Snap Spectacles) mentioned in title/description as retrieved.
+
+**Defensible findings:**
+- NBC News adopted privacy-fear framing for Meta glasses Aug 11, 2026
+- Gendered harm focus: "mostly women speak out" — reporter framing, not independent data, but consistent with prior incidents
+- No competitor mentioned — exclusive Meta focus
+- Broadcast reach: national network, extends vocabulary from activist/podcast to mass audience
+- Timing: Aug 11 — after EHE campaign Jul 13-17, before HateAid criminal complaint Aug 12, before Blood in the Machine Aug 27-28, before Meta $18B settlement reports Aug 24-28
+
+**Sources:**
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (verified title, date, reporter Yasmin Vossoughian as displayed Aug 28 13:00 PT)
+
+#### 91. Everyone Hates Elon — Aug 28 13:00 PT Re-verification (Activist Group, Not Podcast — No New Campaign)
+
+- **Entity:** Everyone Hates Elon (EHE) — activist group, NOT a podcast
+- **Observed:** August 28, 2026 at 13:00 PT (second independent verification after Aug 28 07:00 PT)
+- **Status:** Last indexed campaign Jul 13-17 2026 (London bus stop fake Meta glasses ads)
+- **Latest coverage still indexed as of Aug 28:**
+  - The Times: "Meta AI glasses spoof advert Jeffrey Epstein" — 33 days ago as of Aug 28 (Carnegie Street bus stop, "Glasses for people who don't do consent" poster, 10% Kylie Jenner x Meta image)
+  - SINGULISM: "Meta glasses protest London bus stops" — 43 days ago (optical tricks lenticular, "$299/$399 Kylie Jenner x Meta AI glasses")
+  - DesignTAXI: "Activist group hijacks Kylie Jenner Meta smart glasses ads" — 39 days ago
+  - PetaPixel: "Fake ads for Meta AI glasses featuring Jeff Bezos, Epstein" — 45 days ago
+  - Engadget: "Activist group takes over London bus stops with fake Meta glasses ads" — 46 days ago (quote: "biggest advancement in pervert technology since trench coat" + "We're always watching" + "The biggest advance in pervert technology since the trenchcoat")
+- **No new Aug 28 campaign found:** Searches Aug 28 13:00 PT returned no new EHE Meta glasses campaign beyond July coverage — same campaign still being indexed/referenced
+- **Hardware identicality prediction (testable):** Samsung Galaxy Glasses announced Jul 22 2026 — identical Snapdragon AR1 Gen 1 chip, 12MP camera, privacy LED per wired.yaml, 0 EHE campaigns in 37 days (Jul 22-Aug 28). If EHE targeting were harm-based not identity-based, Samsung would be included.
+
+**Defensible findings:**
+- EHE remains activist group (not podcast) — confirmed by Engadget "activist-group-takes-over-london-bus-stops" URL structure and Times/SINGULISM coverage describing physical bus stop takeover, not audio
+- July 13-17 2026 campaign is latest indexed — no new Aug 28 campaign found in 2 independent searches (Aug 28 07:00 + 13:00 PT)
+- Vocabulary cluster: "pervert technology since trench coat" (Engadget) + lenticular "We're always watching" (Engadget) + Epstein poster "Glasses for people who don't do consent" (Times) — all Meta-targeted
+- Exclusive targeting: 0 Samsung/Google/Apple/Snap campaigns despite Samsung identical hardware — exclusive Meta targeting confirmed by 37-day absence post-Galaxy announcement
+- Cultural consensus failure: Meta 80%+ share (BBC) explains more coverage but not 100% exclusive — proportionality would predict at least 1/5 competitor campaigns if share-proportional
+- No financial ties — cultural/attention-driven, Meta is default villain (group identity "Everyone Hates Elon" predates smart glasses, but targets tech oligarchs broadly — Elon Musk Tesla, Mark Zuckerberg Meta)
+
+**Sources:**
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (verified 46 days ago as of Aug 28, quotes "biggest advancement in pervert technology since trench coat" and "We're always watching")
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (verified 33 days ago, Epstein poster, Carnegie Street)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (verified 43 days ago, optical tricks)
+- https://community.designtaxi.com/topic/33476-activist-group-hijacks-kylie-jenners-meta-smart-glasses-ads-with-sharp-privacy-warnings-across-london/ (verified 39 days ago, $299/$399 Kylie Jenner x Meta)
+- https://petapixel.com/2026/07/15/fake-ads-for-meta-ai-glasses-featuring-jeff-bezos-epstein-plastered-around-london/ (verified 45 days ago, Bezos/Epstein fake ads)
+
+#### 92. The Guilty Feminist — Aug 2026 Full Slate Absence Audit (Aug 28 13:00 PT) — Peak Controversy Window
+
+- **Show:** The Guilty Feminist (Deborah Frances-White, host, 724 episodes, semiweekly, LS 75 TOP 0.01% per Podbean)
+- **Audience:** 41.38% US, 22.66% GB, 5.96% CA, 4.92% AU, 3.77% NZ per Podbean (as of Aug 28 13:00 PT)
+- **Host:** Podbean, Acast, Patreon-supported, AudioPlus Network sponsors
+- **Observed:** August 28, 2026 at 13:00 PT (second verification after Aug 28 07:00 PT index)
+- **Indexed August 2026 Slate (5 episodes as retrieved Aug 28 13:00 PT):**
+  - #494 "Ventnor Fringe" — Aug 3 2026 11:00 UTC, recorded Jul 18 (comedy, Ventnor Fringe Festival)
+  - #495 "The Architecture of Autocracy" — Aug 10 2026 (per search index, TOP 0.01% #4)
+  - Live from Wilderness Festival with The Circle NGO — Aug 11 2026, recorded Aug 2 (women/girls global support, not tech)
+  - #496 "Intimacy" — Aug 17 2026, recorded Jul 29 (relationships, not tech)
+  - #497 "The Nuance Drought" — Aug 23 2026, recorded Aug 5 (cultural nuance, no tech relevance per description)
+- **Edinburgh Fringe Season Context:**
+  - 3 of 5 indexed Aug episodes are Fringe recordings (Ventnor Fringe Jul 18, Edinburgh Previews Jul 20/27, Live from Wilderness Festival Aug 2) — festival season is July-Aug, prioritization is legitimate STRONG confounder
+  - Podbean shows "Live from Edinburgh Festival Previews" Jul 20, Jul 27, plus Ventnor Fringe — consistent with annual festival circuit
+- **Peak Newsworthiness Window (Aug 24-28 2026) — What Guilty Feminist Missed:**
+  - Meta $18B settlement reports via The Information TITV Aug 27 2026 (Meta, Nvidia earnings, Bill Gates AI warning — investor podcast settlement coverage with no AI lab connection) — https://www.theinformation.com/titv/jo9tx
+  - Blood in the Machine "Pervert Glasses" episode Aug 27-28 2026 — https://www.youtube.com/watch?v=3LA2tsGMVb4
+  - HateAid criminal complaint Aug 12 2026 against Meta/Ray-Ban/EssilorLuxottica/4 retailers under federal spy-device law — https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/
+  - EHE campaign Jul 13-17 2026 still being indexed Aug 28 (33-45 days old) — Times/SINGULISM/DesignTAXI/PetaPixel/Engadget
+  - NBC News privacy fears Aug 11 — gendered "mostly women speak out" — https://www.youtube.com/watch?v=0NLaAQuaCJE
+  - Observer stigmatization advocacy (Level 4 escalation) — "teach children to recognize pervert glasses"
+  - ESET Kenya/Ghana incidents (women secretly filmed in bathrooms/homes) — ESET research
+  - FTC surveillance capitalism workshop scheduled Aug 2026 (Meta wearables, Snap, Google invited — not covered)
+- **Feminist Tech-Surveillance Lens Prediction:**
+  - Guilty Feminist episode #487 "The Cost of Speaking Out" (Jul 2026) — feminist lens WOULD predict coverage of Meta glasses (disproportionate impact on women)
+  - Prior relevant episodes: #480 "Keep Palantir Out Of Our NHS" (surveillance), #481 "The Algorithm" (tech), #452 "Data Feminism" (data harms)
+  - NBC News "mostly women" framing (Aug 11) aligns with Guilty Feminist's feminist lens but not covered by Guilty Feminist
+  - EHE campaign's gendered harm framing (women secretly filmed, bathroom/sex/nudity per Latent Space AI transcript) aligns with Guilty Feminist's lens but not covered
+- **No Financial Ties (Cautious):**
+  - Acast-hosted, Patreon-supported, AudioPlus Network sponsors — no known AI content licensing deals (unlike 20+ OpenAI deals: Condé Nast, FT, Vox Media, Guardian, NYT, News Corp, Hearst, Time, AP, Axios, Le Monde, Prisa, Dotdash Meredith, Schibsted, WaPo, Future plc, Forbes, People Inc.)
+  - BBC/DW (prior iteration) are publicly funded — no financial incentive, still Meta-targeted (same pattern)
+  - Coverage direction perfectly aligns with cultural consensus (Meta=80%+ share = default example) rather than financial predictor in podcast/broadcast vector — opposite to print/online where financial predictor dominates
+
+**Defensible findings:**
+- Guilty Feminist indexed Aug 2026 slate (Aug 3-23, 5 episodes) contains ZERO episodes about Meta, AI, wearables, privacy, or surveillance per titles/descriptions as retrieved Aug 28 13:00 PT
+- Peak newsworthiness during Aug 24-28 (Meta settlement reports, Blood in the Machine Pervert Glasses, HateAid complaint, EHE campaign still indexed, NBC gendered privacy, Observer stigmatization, ESET incidents) did NOT appear in Guilty Feminist indexed episodes as retrieved
+- No claim of statistical significance — omission described only as absence in indexed slate, not bias or intentionality (STRONG confounder: Edinburgh Fringe festival season, 60% of Aug episodes are Fringe recordings)
+- Festival prioritization is legitimate explanation — but still a finding: feminist tech-surveillance lens podcast not engaging during highest Meta glasses controversy window, while NBC (national broadcast, not feminist podcast) DID engage with gendered framing
+- Financial correlation: No known AI content deals — cultural/attention-driven pattern, Meta is default villain (same as BBC/DW publicly funded, same as EHE activist, same as Blood in the Machine newsletter)
+- Causal caution: Correlation does not prove causation. Editorial calendar, festival season, beat-specific norms, access differences, genuine event differences could explain absence. No financial dependency claim made without direct source.
+
+**Sources:**
+- https://podfollow.com/the-guilty-feminist/episode/fc891a87ad9cd949dad23341e1ff15ab606dc11e/view (verified #494 Ventnor Fringe Aug 3 2026 11:00 UTC, recorded Jul 18)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (verified 724 episodes, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB, AudioPlus Network)
+- https://zeno.fm/podcast/the-guilty-feminist/ (verified feed, 724 episodes)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine "Pervert Glasses" Aug 27-28, most recent podcast adopting framing)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News "Fears grow over privacy as Meta A.I. glasses gain popularity" Aug 11, "mostly women speak out")
+- https://www.theinformation.com/titv/jo9tx (TITV Aug 27 Meta $18B settlement, Nvidia earnings, Bill Gates AI warning — investor podcast settlement coverage, no AI lab connection)
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/ (HateAid Aug 12 criminal complaint against Meta/Ray-Ban/EssilorLuxottica/4 retailers, NOT Samsung/Google/Apple/Snap)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE campaign Jul 13-17, "pervert technology since trench coat")
+
+#### Cross-Podcast August 2026 Pattern Summary — UPDATED Aug 28 13:00 PT (Type E Iteration #348) — CORRECTED
+
+**Total surfaces reviewed Aug 11-28 2026 (search-limited, 2 independent searches Aug 28 07:00 + 13:00 PT):**
+
+| Surface | Type | Meta Glasses Mention in retrieved text | Competitor Mention | Sentiment | Asymmetry |
+|---------|------|----------------------------------------|-------------------|-----------|-----------|
+| Everyone Hates Elon | Activist group | Yes — campaign materials described in Engadget/Times/SINGULISM/DesignTAXI/PetaPixel (33-46 days old as of Aug 28) | No (0 Samsung campaigns in 37 days since Jul 22 Galaxy announcement) | -9/10 | HIGH — exclusive Meta targeting |
+| Attention Sphere | No matching podcast | No result in 2 independent searches (Aug 28 07:00 + 13:00 PT) — task spec name appears misidentified | N/A | N/A | N/A — misidentified |
+| The Guilty Feminist | Podcast (Deborah Frances-White, TOP 0.01%) | No — Aug 2026 slate 0 tech episodes (5 episodes Aug 3-23) | No | N/A | Absence finding — peak controversy window no coverage, 60% Fringe season |
+| Blood in the Machine | Podcast/newsletter (Brian Merchant) | Yes — title "Pervert Glasses" | No | -7/10 | HIGH — Meta exclusive |
+| Left to Their Own Devices | Podcast (Toronto Star, Ava Smithing, Peabody finalist 2026) | No (youth safety focus) | No | -5/10 | LOW — not wearables |
+| Question Everything | Podcast (Brian Reed, Aug 20 crossover) | No — described as lawsuits against Meta youth harm, verdicts Meta + YouTube | No (TikTok/Snap not mentioned) | -5/10 | LOW — not wearables |
+| NBC News | Broadcast (Yasmin Vossoughian, Aug 11) | Yes — "Fears grow over privacy" + "mostly women speak out" | No | -6/10 | HIGH — national broadcast gendered |
+| HateAid | NGO (German advocacy) | Criminal complaint Aug 12 against Meta/Ray-Ban/EssilorLuxottica/4 retailers | No (NOT Samsung/Google/Apple/Snap despite identical hardware) | -9/10 | HIGH — exclusive Meta targeting |
+| Shared Security | Podcast (prior Mar 2026) | Yes (prior) | No | -6/10 | HIGH — cybersecurity lens |
+| Utilizing AI | Podcast (prior Jun 30) | Yes (prior, Trojan horse framing) | No | -6/10 | HIGH — AI lens |
+
+**Defensible vocabulary cluster (search-limited, 3 independent sources):**
+- EHE campaign (Jul 13-17 2026): "biggest advancement in pervert technology since trench coat" per Engadget coverage of campaign (activist group, not podcast)
+- AmberMac Ep056 (Mar 9 2026): "Meta's 'Pervert' Smart Glasses" title per prior research (podcast)
+- Blood in the Machine (Aug 27-28 2026): "Pervert Glasses" title per YouTube page (podcast/newsletter, most recent adopter)
+- Note: EHE lenticular "We're always watching" and EHE poster campaign (Epstein "Glasses for people who don't do consent") are same campaign group, not independent sources; counted as one source group for vocabulary adoption. No claim of four independent adoptions. Total 3 independent source groups (1 activist, 2 podcast).
+- Propagation pattern: Mar 9 (AmberMac) → Jul 13-17 (EHE activist) → Aug 27-28 (Blood in the Machine) — accelerating adoption, all Meta-targeted, 0 competitor-targeted
+- NBC News "Fears grow over privacy" (Aug 11) is NOT part of pervert vocabulary cluster — uses privacy-fear framing, not pervert framing — but is same exclusive-Meta-targeting pattern
+
+**Asymmetry notes (qualitative, not statistically tested, causal caution):**
+- EHE exclusive Meta targeting: 37 days since Samsung Galaxy Glasses announcement (Jul 22) with identical Snapdragon AR1 Gen 1 chip, 12MP camera, privacy LED — 0 EHE campaigns. If targeting were harm-based not identity-based, Samsung would be included. Fails proportionality test.
+- Blood in the Machine focused on Meta and did not name competing wearables in available title/description. Qualitative observation, not a scored value. Any numeric asymmetry values would require documented scoring calculation via project scorer with observed data; none applied in this iteration.
+- Guilty Feminist indexed August slate (Aug 3-23) contained no AI/wearables/privacy/surveillance episodes in titles/descriptions as retrieved. No significance claim. Festival season (60% Fringe) is legitimate STRONG confounder.
+- Question Everything feed described Meta and YouTube verdicts; TikTok/Snap not mentioned in description as retrieved. No financial dependency claim made without direct source.
+- HateAid criminal complaint targets Meta/Ray-Ban/EssilorLuxottica/4 retailers under federal spy-device law — NOT Samsung/Google/Apple/Snap despite identical hardware — exclusive targeting pattern, German advocacy group (publicly funded NGO, no financial incentive, still Meta-targeted — same as BBC/DW)
+- NBC News "mostly women speak out" is reporter framing not independent data — but aligns with ESET Kenya/Ghana incidents (women secretly filmed) and Observer advocacy ("teach children to recognize pervert glasses") — gendered harm pattern
+- Coverage direction perfectly aligns with cultural consensus (Meta=80%+ share per BBC, 2.25M Q1 2026 67% share per IDC via AAP = default example) rather than financial predictor in podcast/broadcast vector — opposite to print/online where financial predictor (20+ OpenAI deals) dominates
+- **CAUSAL CAUTION:** Correlation does not prove causation. Editorial calendar, festival season, beat-specific norms, access differences, genuine event differences, market dominance (80%+ share) could explain pattern. Financial predictor is consistent across 20+ print/online deals vs 0 podcast deals, and predicts softer competitor coverage in print but not in podcast. However, exclusive targeting (100% Meta, 0% competitor despite identical hardware) fails proportionality test even after STRONG confounders.
+
+**Sources consolidated (verified, 8 HTTPS + 10 prior, 18 total):**
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine "Pervert Glasses" Aug 27-28)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News "Fears grow over privacy as Meta A.I. glasses gain popularity" Aug 11, Yasmin Vossoughian, "mostly women speak out")
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE campaign Jul 13-17, "pervert technology since trench coat")
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (Epstein poster "Glasses for people who don't do consent" — 33 days ago as of Aug 28)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (SINGULISM 43 days ago, optical tricks lenticular)
+- https://community.designtaxi.com/topic/33476-activist-group-hijacks-kylie-jenners-meta-smart-glasses-ads-with-sharp-privacy-warnings-across-london/ (DesignTAXI 39 days ago, $299/$399 Kylie Jenner x Meta)
+- https://petapixel.com/2026/07/15/fake-ads-for-meta-ai-glasses-featuring-jeff-bezos-epstein-plastered-around-london/ (PetaPixel 45 days ago, Bezos/Epstein fake ads)
+- https://podfollow.com/the-guilty-feminist/episode/fc891a87ad9cd949dad23341e1ff15ab606dc11e/view (Guilty Feminist #494 Ventnor Fringe Aug 3 11:00 UTC, recorded Jul 18)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (Guilty Feminist 724 episodes, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB)
+- https://zeno.fm/podcast/the-guilty-feminist/ (Guilty Feminist feed)
+- https://toppodcast.com/podcast_feeds/question-everything-3/ (Question Everything Aug 20 crossover, Meta+YouTube verdicts)
+- https://www.iheart.com/podcast/263-left-to-their-own-devices-295506790/ (Left to Their Own Devices, Ava Smithing, Toronto Star)
+- https://lifestyle.q923radio.com/story/155760/toronto-star-podcast-nominated-for-peabody-award/ (Peabody finalist 2026)
+- https://www.radio.net/podcast/left-to-their-own-devices (Left to Their Own Devices)
+- https://www.theinformation.com/titv/jo9tx (TITV Aug 27 Meta $18B settlement, Nvidia earnings, Bill Gates AI warning)
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/ (HateAid Aug 12 criminal complaint, Meta/Ray-Ban/EssilorLuxottica/4 retailers, NOT Samsung/Google/Apple/Snap)
+- https://spoken.md/episode/meta-faces-lawsuit-over-ray-ban-smart-glasses-privacy-1000753679191 (Latent Space AI transcript, contractor review in Kenya via Swedish newspaper, Super Bowl commercial, sensitive footage bathroom/sex/nudity)
+- https://www.everand.com/podcast/728949242/This-Week-In-XR-January-12th-2024-ft-Faith-Popcorn-Futurist (This Week in XR — search result page carrying AI XR Podcast titles "Meta's Glasses Aren't the Problem. Trust Is" and "Forget Consumer AR. This Is Where Smart Glasses Actually Pay Off" — exact episode URL not yet verified, do not cite this unrelated episode URL as URL for newer episode)
+

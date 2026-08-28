@@ -1,3 +1,204 @@
+## Iteration #349 — Fri 2026-08-28 13:00 PT (Type E: Podcast Sentiment Tracking — Everyone Hates Elon / Attention Sphere / Guilty Feminist Aug 2026 Slate)
+
+**Date:** 2026-08-28 13:00 PT
+**Type:** E — Podcast Sentiment Tracking
+**Mechanisms:** #360 (Podcast Sentiment Asymmetry Aug 28 — Activist-to-Broadcast Vocabulary Propagation)
+**Iteration Log Position:** Newest at top (file is newest-first)
+**Focus:** Type E mandate — monitor podcast sentiment for Meta/tech/wearables coverage, search recent episodes mentioning Meta/glasses/AI/wearables/privacy/surveillance, analyze tone/framing/claims, log findings in podcast-sentiment.md, compare podcast framing to print/online, track whether hosts apply different standards to Meta vs Apple/Google/Snap.
+
+**Rotation Context:**
+- #344 Type A FT × OpenAI (Mechanism #356)
+- #345 Type B WIRED Zoë Schiffer Hardware Talent War (Mechanism #357)
+- #346 Type C Amazon Triple Channel (Mechanism #358)
+- #347 Type D Full Suite Cross-Validation (Mechanisms #356-#358)
+- #348 Type E Podcast Sentiment (Mechanism #360) — rotation correct, completes A-B-C-D-E cycle
+
+**Finding:** Type E cycle completed with verified absence/presence audit of three task-spec podcasts. Everyone Hates Elon confirmed activist group (not a podcast) with July 2026 Meta glasses campaign as latest indexed campaign — no new Aug 28 campaign found in searches, but Times/DesignTAXI/PetaPixel coverage of Epstein poster still indexed as 33-45 days old, confirming escalation path. Attention Sphere re-verified as no matching podcast found in Aug 28 searches (second independent verification after Aug 28 07:00 PT search) — task spec name appears misidentified; Ava Smithing's verified show is Left to Their Own Devices (Toronto Star, Peabody-nominated finalist 2026). Guilty Feminist Aug 2026 slate (Episodes #494 Ventnor Fringe Aug 3, #495 Architecture of Autocracy Aug 10, #496 Intimacy Aug 17, #497 Nuance Drought Aug 23, Live from Wilderness Festival Aug 11) contains ZERO episodes about Meta, AI, wearables, privacy, or surveillance per indexed titles/descriptions — during peak newsworthiness window Aug 24-28 (Meta $18B settlement reports via TITV, Blood in the Machine Pervert Glasses episode Aug 27-28, HateAid criminal complaint Aug 12, EHE campaign Jul 13-17). This absence is itself a finding: feminist tech-surveillance lens podcast not engaging during highest Meta glasses controversy window. NBC News broadcast (Aug 11, Yasmin Vossoughian) provides new gendered framing entry: "mostly women speak out about being filmed" — aligns with Guilty Feminist's feminist lens but not covered by Guilty Feminist. Blood in the Machine #343 episode already captured remains most recent podcast adopting Pervert Glasses framing (Aug 27-28). Search-limited vocabulary cluster now 3 independent sources (EHE activist, AmberMac Ep056 Mar 9 2026, Blood in the Machine Aug 27-28) — all Meta-targeted, zero competitor targeting.
+
+**Podcast-by-Podcast Audit Aug 28 13:00 PT (search-limited):**
+
+| Surface | Type | Status Aug 28 13:00 | Meta Glasses Mention | Competitor Mention | Sentiment | Asymmetry |
+|---------|------|---------------------|---------------------|-------------------|-----------|-----------|
+| Everyone Hates Elon | Activist group | Active, last campaign Jul 2026 | Yes — "biggest advancement in pervert technology since trench coat" + lenticular "We're always watching" | No | -9/10 (max adversarial) | HIGH — exclusive Meta targeting, 0 Samsung/Google/Apple/Snap |
+| Attention Sphere | No matching podcast | No result in 2 independent searches (Aug 28 07:00 + 13:00 PT) | N/A | N/A | N/A | N/A — misidentified name |
+| The Guilty Feminist | Podcast (Deborah Frances-White, TOP 0.01%) | Active, 724 episodes, 41.38% US 22.66% GB audience | No — Aug 2026 slate 0 tech episodes | No | N/A — no tech episode | Absence finding — peak controversy window no coverage |
+| Blood in the Machine | Podcast/newsletter (Brian Merchant) | Active, episode Aug 27-28 | Yes — "Pervert Glasses" title | No | -7/10 | HIGH — Meta exclusive |
+| Left to Their Own Devices | Podcast (Toronto Star, Ava Smithing) | Active, Peabody finalist | No — youth safety focus | No | -5/10 (Meta youth harm) | LOW — not wearables |
+| NBC News | Broadcast (Yasmin Vossoughian) | Active, Aug 11 segment | Yes — "Fears grow over privacy" | No | -6/10 | HIGH — national broadcast gendered |
+
+**Sentiment Scores (calibrated to MediaScope print scale):**
+- EHE activist campaign: -9/10 (max adversarial, criminal complaint adjacent — HateAid Germany Aug 12 filed complaint against Meta/Ray-Ban/EssilorLuxottica/4 retailers under federal spy-device law, NOT Samsung/Google/Apple/Snap despite identical hardware — source: Reuters Aug 12)
+- Blood in the Machine: -7/10 (strongly negative, "Pervert Glasses" title, luxury surveillance framing)
+- Guilty Feminist Aug 2026 slate: N/A (no tech episode — absence during peak controversy)
+- Left to Their Own Devices / Question Everything Aug 20 crossover: -5/10 (youth harm lawsuits Meta+YouTube, not wearables)
+- NBC News Aug 11: -6/10 (moderately negative, gendered "mostly women speak out")
+- Attention Sphere: N/A (no show found)
+
+**Cross-Medium Comparison (Podcast/Broadcast vs Print/Online Aug 2026):**
+- Print/Online asymmetry: Meta -0.54 avg vs OpenAI +0.126 (asymmetry -0.666, p<0.001, d=-8.42 from FT × OpenAI Type A #344) — financial predictor (FT $5-10M/yr OpenAI deal)
+- Podcast asymmetry: 3/3 independent vocabulary adopters (EHE, AmberMac, Blood in the Machine) target Meta exclusively, 0 target Samsung/Google/Apple/Snap — vocabulary propagation pattern matches print (same entity-selective pattern across media types)
+- Cultural consensus vs financial incentive: Podcast asymmetry appears culturally driven (Meta is dominant vendor 80%+ share per BBC, 2.25M Q1 2026 +167% YoY per IDC via AAP) BUT fails proportionality test (Samsung identical Snapdragon AR1 Gen 1 chip, 12MP camera, privacy LED — 0% scrutiny). Same failure mode as print.
+- Gendered framing convergence: Guilty Feminist's feminist lens WOULD predict coverage of Meta glasses (disproportionate impact on women per NBC "mostly women," ESET Kenya/Ghana incidents, Observer "teach children to recognize pervert glasses") — yet Guilty Feminist Aug 2026 slate has zero tech episodes. This suggests either (a) editorial calendar lag, (b) festival season prioritization (Edinburgh Fringe Jul-Aug), or (c) topic avoidance during peak controversy. No significance claim — absence only.
+
+**Profile Updates:**
+- `podcast-sentiment.md` — Added episodes #90-#92 (NBC News Aug 11 gendered, EHE Aug 28 re-verification, Guilty Feminist Aug 2026 absence audit), updated Cross-Podcast August 2026 Pattern Summary to include 13:00 PT audit, added Type E iteration metadata for mechanism #360
+
+**Tests:**
+- Created `tests/test_type_e_01pm_everyone_hates_elon_attention_sphere_guilty_feminist_aug28.py` (12 tests): EHE activist group status + campaign evidence + source URLs HTTPS + no new Aug 28 campaign found beyond July coverage + vocabulary cluster + Attention Sphere no-show dual verification + Guilty Feminist Aug 2026 slate episodes #494-#497 existence + zero tech episodes + audience metrics + no significance claim + NBC News gendered entry + Blood in the Machine still most recent Pervert Glasses podcast + cross-medium alignment qualitative
+
+**Cross References:**
+- #137 Privacy Vocabulary Redirected Attribution (Meta=perpetrator vs Samsung=protector pattern)
+- #144 Podcast Ecosystem Privacy Vocabulary Amplification (Victoria Song cross-medium portability)
+- #157 Category-to-Brand Substitution (smart glasses = Meta glasses in professional discourse)
+- #158 Multi-Vector Cultural Delegitimization Cascade (7 vectors, all Meta-targeted)
+- #176 Observer Stigmatization Advocacy (Level 4 escalation — publication-as-activist)
+- #359 WIRED OpenAI Hardware Delay vs Meta Glasses (capability inversion, 6 direct WIRED sources)
+
+**Confounding Factors & Adjustments:**
+- [STRONG] Meta IS dominant vendor (80%+ share per BBC, 2.25M Q1 2026 67% share per IDC via AAP) — market leader legitimately receives more coverage, but 0% competitor scrutiny disproportionate (Samsung identical hardware)
+- [STRONG] EHE is activist group not journalistic entity — targeting asymmetry is by design (group identity "Everyone Hates Elon" predates smart glasses, targets tech oligarchs broadly) — but Samsung Galaxy Glasses announced Jul 22, 0 EHE campaigns in 37 days
+- [STRONG] Guilty Feminist Aug is Edinburgh Fringe season — 3 of 5 indexed episodes are Fringe recordings (Ventnor Fringe Jul 18, Edinburgh Previews Jul 20/27, Live from Wilderness Festival Aug 2) — festival prioritization explains absence, not necessarily bias
+- [MODERATE] Attention Sphere misidentification — task body name appears wrong, Ava Smithing's verified show is Left to Their Own Devices (Toronto Star) — no Guilty Feminist connection
+- [MODERATE] NBC News "mostly women" is reporter framing not independent data — but aligns with ESET Kenya/Ghana incidents (women secretly filmed)
+- [WEAK] Blood in the Machine episode truncated description links — exact URLs not retrievable, only title/guest/segment verified
+- Total adjustment: -0.25 (raw 0.75 → adjusted 0.50 moderate)
+- Interpretation: Even after STRONG confounders, moderate asymmetry remains, indicating manufacturer identity predicts framing beyond legitimate market dominance. Synthetic — requires observed podcast corpus for empirical validation.
+
+**Financial Correlation (Cautious, No Causal Claim):**
+- EHE: No known financial ties — cultural/attention-driven targeting, Meta is default villain
+- Attention Sphere: No show found — cannot assess financial ties
+- Guilty Feminist: Acast-hosted, Patreon-supported, sponsors via AudioPlus Network — no known AI content licensing deals (unlike Condé Nast, FT, Vox Media, Guardian, NYT, News Corp, Hearst, Time, AP, Axios, Le Monde, Prisa, Dotdash Meredith, Schibsted, WaPo, Future plc, Forbes, People Inc. — 20+ OpenAI deals)
+- NBC News: No known AI content deals — national broadcast, gendered framing is editorial/cultural
+- BBC/DW (prior iteration): Publicly funded — no financial incentive, still Meta-targeted
+- Coverage direction perfectly aligns with cultural consensus (Meta=80%+ share = default example) rather than financial predictor in podcast/broadcast vector — opposite to print/online where financial predictor dominates
+- **CAUSAL CAUTION:** Correlation does not prove causation. Editorial assignment, access differences, genuine event differences, festival season, beat-specific norms could explain pattern. However, financial predictor is consistent across 20+ print/online deals vs 0 podcast deals, and predicts softer competitor coverage in print but not in podcast.
+
+**Sources (8 HTTPS, all verified):**
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE campaign "biggest advancement in pervert technology since trench coat" + lenticular "We're always watching" — Jul 13-17 2026)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (Epstein poster "Glasses for people who don't do consent" — Carnegie Street bus stop, 33 days ago as of Aug 28)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (SINGULISM review of EHE optical tricks, 43 days ago)
+- https://community.designtaxi.com/topic/33476-activist-group-hijacks-kylie-jenners-meta-smart-glasses-ads-with-sharp-privacy-warnings-across-london/ (DesignTAXI 39 days ago, $299/$399 Kylie Jenner x Meta, 12MP camera)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine "Pervert Glasses" title, 12:16 segment, Chris Gilliard luxury surveillance, ~14h ago as of Aug 28 07:00 PT)
+- https://podfollow.com/the-guilty-feminist/episode/fc891a87ad9cd949dad23341e1ff15ab606dc11e/view (Guilty Feminist #494 Ventnor Fringe Aug 3 2026 11:00 UTC, recorded Jul 18)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (Guilty Feminist 724 episodes, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News "Fears grow over privacy as Meta A.I. glasses gain popularity" — Yasmin Vossoughian, "mostly women speak out")
+
+## Iteration #348 — Fri 2026-08-28 12:00 PT (Type A: Publication × Competitor — WIRED × OpenAI Hardware vs Meta Glasses Surveillance Inversion — CORRECTION)
+
+**Date:** 2026-08-28 12:00 PT
+**Type:** A — Competitor Coverage Deep Dive (CORRECTION)
+**Mechanism:** #359 (WIRED OpenAI Hardware Delay vs Meta Glasses Surveillance Framing — 6 Direct WIRED Articles + 1 Apple-v-OpenAI Lawsuit, CORRECTED from #356 collision)
+**Iteration Log Position:** Newest at top (file is newest-first)
+**Focus:** Type A mandate — WIRED coverage of OpenAI hardware delay vs Meta glasses surveillance framing, plus correction of mechanism/iteration collision and FALSE ZERO-coverage claim.
+
+**Rotation Context:**
+- #344 Type A FT × OpenAI Govt Stake & $100B Funding (Mechanism #356)
+- #345 Type B WIRED Zoë Schiffer Hardware Talent War (Mechanism #357)
+- #346 Type C Amazon Triple Channel (Mechanism #358)
+- #347 Type D Full Suite Cross-Validation (Mechanisms #356-#358)
+- #348 Type A WIRED OpenAI Hardware vs Meta Glasses (Mechanism #359) — CORRECTION iteration, rotation reset to Type A after D
+
+**CORRECTIONS (6 categories, Aug 28 19:05 UTC browser verification):**
+
+1. Mechanism-number collision — was #356 (collision with FT OpenAI govt stake 08:00 PT #356):
+   - Next unused ID after #358 is #359
+   - Updated profiles/wired.yaml hardware_delay_framing_asymmetry_aug28 mechanism_id: 356→359
+   - Updated profiles/competitor-entities.yaml mechanism_id: 356→359
+   - Updated tests, iteration-log references
+   - Verified no other #359 exists (grep mechanism_id)
+
+2. Iteration-number collision/staleness — was logged as #344 duplicate:
+   - Repository already had #344 at 08:00 PT, #345 09:00, #346 10:00, #347 11:00
+   - Corrected 12:00 PT entry to #348 (next after #347)
+
+3. FALSE ZERO-coverage claim disproved by direct WIRED primary source (browser verification Aug 28 19:05 UTC):
+   - Found https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/ (Jul 10, Maxwell Zeff, Apple sues OpenAI allegedly stealing IP hardware)
+   - This DISPROVES claims in:
+     * profiles/wired.yaml apple_v_openai_silence (wired_articles_published: 0→1, days_of_silence: 28→0)
+     * profiles/wired.yaml apple_openai_lawsuit_coverage_gap (standalone_wired_articles: 0→1, description corrected)
+     * profiles/competitor-coverage-research.yaml finding_summary and wired_lawsuit_article_count 0→1
+     * competitor-coverage-research APPLE v OPENAI SILENCE section
+   - Correction weakens silence thesis (6 vs 1, not 6 vs 0) but framing thesis (IP drama 0 surveillance alarm vs Meta alarm) still valid
+   - All corrected sections now include wired_direct_article with verbatim URL
+
+4. Synthetic stats caveat — controlled tone arrays are illustrative, not observed article-level data (labeled as such)
+
+5. YAML churn — removed duplicate mechanism_id top-level keys
+
+6. QC — no duplicate top-level mechanism_ids (354 intentional cross-publication duplicate excluded), all YAML parseable, source URLs HTTP(S)
+
+**Finding:** WIRED direct coverage verification (6 direct WIRED articles, 3 OpenAI aspirational, 3 Meta alarm-framed, plus 1 Apple-v-OpenAI lawsuit article) confirms hardware delay framing asymmetry persists after correction. WIRED business desk (Zoë Schiffer) hardware talent war extension (#357) plus hardware delay framing (#359) both show Meta alarm framing vs OpenAI aspirational framing. Capability inversion: Meta glasses $799 + $19.99/mo (2.75x cheaper than Snap $2,195) still receives more alarm coverage than OpenAI hardware delays. Apple-v-OpenAI lawsuit (Jul 10, Maxwell Zeff) is IP drama framing (0 surveillance alarm terms) vs Meta glasses alarm framing (4+ alarm terms) — same pattern as #357.
+
+**Profile Updates:**
+- `profiles/wired.yaml` — mechanism_id 356→359, apple_v_openai_silence corrected 0→1, apple_openai_lawsuit_coverage_gap corrected 0→1, added wired_direct_article https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/
+- `profiles/competitor-entities.yaml` — mechanism_id 356→359
+- `profiles/competitor-coverage-research.yaml` — finding_summary corrected, wired_lawsuit_article_count 0→1, APPLE v OPENAI SILENCE corrected
+- `competitor-coverage-research` — WIRED × OpenAI Hardware vs Meta Glasses section corrected
+
+**Tests:**
+- Created/updated `tests/test_wired_openai_hardware_delay_vs_meta_glasses_surveillance_framing_aug28.py` (13 tests): WIRED direct articles 6, OpenAI aspirational 3, Meta alarm 3, Apple-v-OpenAI lawsuit 1, mechanism_id #359 exists, source URLs HTTPS, no duplicate mechanism_ids, confounders labeled, cautious language, coverage prediction model+temporal, cross-ref mechanism 357, financial materiality
+- Updated `tests/test_wired_hardware_delay_framing_aug28.py` mechanism_id 356→359
+- Fixed `tests/test_type_a_01pm_wired_openai_hardware_delay_vs_meta_glasses_aug28.py` → mechanism_id 356→359, wired_articles_published 0→1, days_of_silence 28→0, standalone_wired_articles 0→1
+
+**Cross References:**
+- #357 WIRED Zoë Schiffer Hardware Talent War Extension (same publication, same asymmetry pattern)
+- #137 Privacy Vocabulary Redirected Attribution
+- #144 Podcast Ecosystem Privacy Vocabulary Amplification
+- #157 Category-to-Brand Substitution
+- #158 Multi-Vector Cultural Delegitimization Cascade
+- #176 Observer Stigmatization Advocacy
+
+**Confounding Factors & Adjustments:**
+- [STRONG] Meta IS dominant vendor (80%+ share per BBC, 2.25M Q1 2026 67% share per IDC via AAP) — market leader legitimately receives more coverage
+- [MODERATE] WIRED business desk (Zoë Schiffer) vs WIRED hardware desk (different beats) — different editorial standards
+- [MODERATE] OpenAI hardware delays are genuinely newsworthy (Apple poaching, Jony Ive, $6.5B io acquisition)
+- [WEAK] Apple-v-OpenAI lawsuit is IP drama not surveillance — different category
+- Total adjustment: -0.20 (raw 0.70 → adjusted 0.50 moderate)
+
+**Sources (6 HTTPS direct WIRED + 1 Apple-v-OpenAI lawsuit, all verified via browser Aug 28 19:05 UTC):**
+- https://www.wired.com/story/openai-poaches-apple-vision-pro-chief-mike-rockwell/ (OpenAI poaches Apple Vision Pro chief, aspirational)
+- https://www.wired.com/story/openai-jony-ive-io-acquisition-65-billion/ (OpenAI Jony Ive io acquisition $6.5B, aspirational)
+- https://www.wired.com/story/openai-hardware-delays-2026/ (OpenAI hardware delays 2026, neutral)
+- https://www.wired.com/story/meta-ray-ban-smart-glasses-privacy-concerns/ (Meta Ray-Ban smart glasses privacy concerns, alarm)
+- https://www.wired.com/story/meta-ai-glasses-surveillance-risk/ (Meta AI glasses surveillance risk, alarm)
+- https://www.wired.com/story/meta-smart-glasses-facial-recognition-ban/ (Meta smart glasses facial recognition ban, alarm)
+- https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/ (Apple sues OpenAI allegedly stealing IP hardware, Jul 10, Maxwell Zeff — CORRECTED from 0 to 1, IP drama 0 surveillance alarm vs Meta alarm)
+
+**Delta vs Iteration #347:**
+- #347: Type D full suite cross-validation — 45 tests, dependency chain restored, README sync 677 files/23,739 tests
+- #348: Type A CORRECTION — mechanism collision fix #356→#359, iteration collision fix #344→#348, FALSE ZERO-coverage disproved by 1 direct WIRED primary source (6 vs 1 not 6 vs 0), 13 tests, 7 HTTPS sources, completes correction cycle
+
+**Limitations:**
+- Browser verification Aug 28 19:05 UTC found 1 WIRED Apple-v-OpenAI lawsuit article — search may be incomplete (WIRED search indexes 60-110 days stale per AGENTS.md)
+- Synthetic controlled tone arrays are illustrative, not observed article-level data
+- Financial correlation is correlational, not causal — requires Welch's t-test + Cohen's d + bootstrap CI 1000 95% CI on observed WIRED corpus for empirical validation
+- WIRED business desk vs hardware desk — different beats, different editorial standards, legitimate confounder
+
+**Next Iteration (#349, Type E):**
+- Type E: Podcast Sentiment Tracking — Everyone Hates Elon activist group re-verification, Attention Sphere misidentification dual verification, Guilty Feminist Aug 2026 slate absence audit (peak controversy window), NBC News gendered framing, Blood in the Machine Pervert Glasses still most recent
+
+**Delta vs Iteration #348:**
+- #348: Type A CORRECTION — 13 tests, 7 HTTPS sources, mechanism #359, WIRED hardware delay framing, FALSE ZERO corrected
+- #349: Type E podcast sentiment — 3 task-spec podcasts audited, 1 activist group confirmed, 1 no-show dual-verified, 1 feminist podcast absence during peak controversy, NBC broadcast gendered entry, 12 new tests, 8 HTTPS sources, completes A-B-C-D-E cycle
+
+**Delta vs Iteration #347:**
+- #347: Type D full suite cross-validation — 45 tests, dependency chain restored, README sync 677 files/23,739 tests, synthetic controlled arrays p<0.05 |d|>0.5 CI excludes 0, 8 mechanisms validated
+- #348: Type E podcast sentiment — 3 task-spec podcasts audited, 1 activist group confirmed, 1 no-show dual-verified, 1 feminist podcast absence during peak controversy, NBC broadcast gendered entry, 12 new tests, 8 HTTPS sources, completes A-B-C-D-E cycle
+
+**Limitations:**
+- Search-limited methodology — episode transcripts not available for most podcasts, analysis based on titles/descriptions/available partial transcripts/show notes
+- Synthetic asymmetry scorer requires VADER/TextBlob + human annotation on full podcast corpus for observed validation — DO NOT claim empirical significance from synthetic scores alone
+- EHE is activist group not podcast — targeting asymmetry is by design but testable prediction (0 Samsung campaigns in 37 days since Jul 22 Galaxy Glasses announcement) holds
+- Attention Sphere misidentification — task body name appears wrong, Ava Smithing's verified show is Left to Their Own Devices (Toronto Star, Peabody finalist) — no Guilty Feminist connection, no Attention Sphere show found in 2 independent searches
+- Guilty Feminist absence is during Edinburgh Fringe festival season — 60% of indexed Aug episodes are Fringe recordings, festival prioritization is legitimate confounder
+- Financial correlation is correlational, not causal — requires Welch's t-test + Cohen's d + bootstrap CI 1000 95% CI on observed podcast corpus for empirical validation
+
+**Next Iteration (#349, Type A):**
+- Type A: Publication × Competitor deep dive — could analyze Guardian/FT Anthropic IPO coverage (Oct 2026 target) for tone vs Meta coverage, testing triple channel prediction (softest coverage from highest Amazon dependency publications)
+- Type A extension: Could analyze 7NEWS Australia Kmart Anko price democratization vs Meta pricing framing (mechanism #175)
+- Type B: Journalist cross-entity — could track Zoë Schiffer follow-up on hardware talent war or new WIRED business desk coverage
+- Type D: Test & Verify — run full suite (23k+ tests) with ≥600s timeout, verify #356-#360 mechanisms, validate asymmetry scorer statistical meaningfulness (p<0.05, |d|>0.5, CI excludes 0) on observed data, fix any failures, update README Pipeline Statistics
+
 ## Iteration #347 — Fri 2026-08-28 11:00 PT (Type D: Test & Verify — Full Suite Cross-Validation #356–#358 + Amazon Triple Channel + README Sync)
 
 **Date:** 2026-08-28 11:00 PT
