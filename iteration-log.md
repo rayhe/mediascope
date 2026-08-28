@@ -1,3 +1,49 @@
+## Iteration #334 — Thu 2026-08-27 19:00 PT (Type A: Competitor Coverage Deep Dive)
+
+### Focus: OpenAI ChatGPT Ads 31-Market European Expansion (Aug 24) vs Meta $18B Settlement (Aug 26) — Settlement-Week Ad-Monetization Scrutiny Asymmetry
+
+**Type:** Competitor Coverage Deep Dive
+**Publication+Competitor Pair:** Cross-publication (CNBC, Adweek, Le Monde, AFP wire, Notebookcheck, EU Perspectives, Digiday, Reuters, CNN, USA Today) + OpenAI
+**New Mechanism:** #348 — Settlement-Week OpenAI ChatGPT Ads Europe Expansion vs Meta $18B Settlement Ad-Monetization Scrutiny Asymmetry
+**New Test File:** test_cnbc_settlement_week_openai_chatgpt_ads_europe_meta_ad_monetization_scrutiny_asymmetry_aug27.py
+**Tests:** 15 passed (3 test classes)
+**Asymmetry Score:** 0.19 (low-moderate, heavy confounder load from proven harm record + genre convention)
+
+**CORE FINDING — SAME-WEEK NATURAL EXPERIMENT: AD-MONETIZATION VOCABULARY REGISTER INVERSION:**
+
+Within a 48-hour window:
+- **Aug 24**: OpenAI launches ChatGPT Ads in 31 European markets (1B weekly users, most on free/ad tier)
+- **Aug 26**: Meta settles $18B multistate lawsuit over child safety (3B+ users, ad-based model)
+
+Both involve: (1) ad-based user monetization, (2) data practices affecting minors, (3) active regulatory scrutiny, (4) same demographic targets
+
+**VOCABULARY REGISTER INVERSION ON IDENTICAL PRACTICE:**
+- **Meta ad-monetization coverage**: "designed to addict," "violated COPPA," "collect data from children," "monetize engagement," "money machine unscathed," "ad-based business model" as harm engine
+- **OpenAI ad-monetization coverage**: "material expansion," "early innings," "commercial intent," "new way to reach people," "extract more revenue," "burning through cash" as survival/growth necessity
+
+**FIVE COVERAGE GAPS:**
+1. **Zero outlets connected the two events** despite 48-hour temporal proximity (12 outlets checked)
+2. **FTC AI chatbot investigation (Sep 2025, targeting OpenAI)** absent from all OpenAI ads coverage
+3. **OpenAI "age prediction"** for excluding under-18 users from ads received zero scrutiny (vs Meta's age verification failures as central settlement term)
+4. **No outlet examined** whether OpenAI conversation-content ad targeting constitutes equivalent data collection from minors
+5. **OpenAI $21B losses framed as justification** for ads; Meta's $60B+ revenue framed as indictment
+
+**FINANCIAL INCENTIVE ARCHITECTURE:**
+- Le Monde covered ChatGPT Ads France launch AND has OpenAI content licensing deal — zero child safety vocabulary
+- AFP wire copy (distributed to 4+ outlets) lacked child safety framing entirely
+- Anthropic cited in 3+ articles as "virtuous" ad-free counterpoint, creating three-entity hierarchy: Anthropic (virtuous) > OpenAI (pragmatic) > Meta (harmful)
+
+**STRONG CONFOUNDERS:** Meta has decade-long proven harm record (-0.10), genre conventions for product launch vs legal settlement (-0.08), different regulatory stage (-0.05). Raw 0.42 → adjusted 0.19.
+
+**Cross-validates:** Mechanisms #347 (Vanian CNBC vocabulary register inversion), #340 (settlement-week broadcasting bifurcation), #343 (AP wire vocabulary bifurcation), #344 (conditional clause entity selection)
+
+**STATS UPDATE:**
+  - 304 mechanisms (highest: #348)
+  - 662 test files
+  - ~23,439 tests
+
+---
+
 ## Iteration #333 — Thu 2026-08-27 17:00 PT (Type E: Podcast Sentiment Tracking)
 
 ### Focus: Wire Service to Local Broadcast Podcast Cross-Medium Settlement-Week Vocabulary Propagation

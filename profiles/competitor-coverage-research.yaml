@@ -33401,3 +33401,122 @@ publications:
         (social media platforms named, AI labs omitted). This mechanism
         documents the same pattern at the AG-quote level: Uthmeier's
         dual-front enforcement contextualized as single-entity.
+
+  settlement_week_openai_chatgpt_ads_europe_meta_ad_monetization_scrutiny_asymmetry:
+    mechanism_id: 348
+    mechanism_name: Settlement-Week OpenAI ChatGPT Ads Europe Expansion vs Meta $18B Settlement — Ad-Monetization User Data Scrutiny Asymmetry
+    description: >
+      Natural experiment: OpenAI launched ChatGPT Ads in 31 European markets on Aug 24, 2026 —
+      48 hours before Meta's $18B child safety settlement on Aug 26. Both events involve ad-based
+      monetization of large user bases with data practices affecting minors. Meta's ad model is
+      framed as the root cause of child harm ("designed to addict," "violated COPPA," "collect
+      data from children"). OpenAI's simultaneous ad expansion receives business-growth framing
+      ("material expansion," "early innings," "new way to reach people"). Zero outlets in the sample
+      connected the two events despite 48-hour proximity. OpenAI's "age prediction" for excluding
+      under-18 users from ads received no scrutiny, while Meta's age verification failures are a
+      central settlement term. The FTC's active AI chatbot investigation (Sep 2025, targeting
+      OpenAI) is absent from all OpenAI ads expansion coverage. OpenAI has content licensing deals
+      with multiple publishers covering the settlement (Le Monde, AP, News Corp/FT, Condé Nast),
+      creating structural incentives to compartmentalize the two stories.
+    entities:
+    - meta
+    - openai
+    publications:
+    - cnbc
+    - adweek
+    - le_monde
+    - notebookcheck
+    - afp_wire
+    - euperspectives
+    - digiday
+    - reuters
+    - cnn
+    - usa_today
+    evidence:
+    - source: Adweek
+      date: '2026-08-19'
+      url: https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/
+      observation: >
+        OpenAI ads Europe: "material expansion," "early innings," "commercial intent,"
+        "ad revenue grown more than 25%." Zero child safety vocabulary. Zero FTC mention.
+    - source: Le Monde
+      date: '2026-08-25'
+      url: https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html
+      observation: >
+        ChatGPT Ads France launch. Le Monde has OpenAI content licensing deal. Coverage uses
+        "trust" and "sensitive" vocabulary but no child safety, COPPA, or FTC investigation mention.
+        Cites Anthropic Super Bowl ad as competitive context. Age exclusion: "over 18 years old"
+        cited without scrutiny of verification mechanism.
+    - source: AFP wire (via techxplore)
+      date: '2026-08-19'
+      url: https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html
+      observation: >
+        Wire copy distributed to 4+ outlets: "extract more revenue," "burning through cash,"
+        "initial public offering." Financial survival framing positions ads as necessary, not
+        as monetization of user data. Zero child safety vocabulary in wire copy.
+    - source: Notebookcheck
+      date: '2026-08-21'
+      url: https://www.notebookcheck.net/ChatGPT-ads-hit-Europe-on-Monday-but-not-the-personalized-kind.1375456.0.html
+      observation: >
+        Most technical coverage of age prediction: "Accounts that OpenAI judges to belong to
+        someone under 18 are excluded too, which relies on the same age prediction that started
+        rolling out worldwide on 18 August." Notes the mechanism exists but asks no questions
+        about accuracy, false negatives, or COPPA implications.
+    - source: Reuters
+      date: '2026-08-26'
+      url: https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
+      observation: >
+        Meta settlement: "designed to addict children," "misled the public about their safety,"
+        "violated the federal Children's Online Privacy Protection Act," "collecting personal data
+        from users it knew were children." Full accountability register. No reference to OpenAI's
+        ad expansion 48 hours earlier.
+    - source: CNN
+      date: '2026-08-27'
+      url: https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
+      observation: >
+        Analysis piece: "drop in the bucket for nearly $1.5 trillion company," "upend Meta's core,
+        ad-based business model." Frames advertising as Meta's harmful engine. No mention of OpenAI
+        building the same ad engine simultaneously across 31 European markets.
+    - source: Reuters analysis
+      date: '2026-08-27'
+      url: https://www.reuters.com/world/asia-pacific/metas-social-media-settlement-leaves-its-money-machine-unscathed-2026-08-27/
+      observation: >
+        "money machine unscathed," "personalized feeds and ad targeting that underpin its profits."
+        Explicitly frames Meta's ad model as the harmful mechanism. Zero contextualization of
+        OpenAI building identical ad infrastructure.
+    confounders:
+    - id: C1
+      strength: STRONG
+      description: >
+        Meta has a decade of documented child safety issues (Cambridge Analytica, Facebook Files,
+        Frances Haugen, state AG lawsuits). OpenAI has <3 years of consumer deployment. The
+        accumulated record naturally generates more scrutiny.
+      adjustment: -0.10
+    - id: C2
+      strength: STRONG
+      description: >
+        Genre convention: product launches receive aspirational framing in business press; legal
+        settlements receive accountability framing. The vocabulary difference partially reflects
+        story type rather than entity bias.
+      adjustment: -0.08
+    - id: C3
+      strength: MODERATE
+      description: >
+        Meta's settlement is a concluded legal action. OpenAI's FTC investigation is still in
+        fact-finding. Journalists may legitimately cover concluded events with stronger vocabulary.
+      adjustment: -0.05
+    raw_asymmetry_score: 0.42
+    adjusted_asymmetry_score: 0.19
+    cross_validates:
+    - mechanism_id: 347
+      relationship: Jonathan Vanian CNBC vocabulary register inversion (Meta accountability vs Anthropic sympathetic)
+    - mechanism_id: 340
+      relationship: Settlement-week broadcasting bifurcation
+    - mechanism_id: 343
+      relationship: AP wire vocabulary bifurcation
+    - mechanism_id: 344
+      relationship: Conditional clause entity selection
+    extends:
+    - mechanism_id: 128
+      relationship: CNBC Versant post-spinoff coverage selection
+    test_file: tests/test_cnbc_settlement_week_openai_chatgpt_ads_europe_meta_ad_monetization_scrutiny_asymmetry_aug27.py
