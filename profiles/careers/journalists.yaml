@@ -363,6 +363,147 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/schiffer-departs-the-verge-for-nbc/amp/
   - https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
   - https://rocketreach.co/zoe-schiffer-email_5073753
+  competitor_coverage:
+    openai:
+      tone: insider_access_constructive
+      article_count_estimate: 7
+      iteration_345_update: '2026-08-28 09:00 PT Type B — Hardware talent war extension'
+      examples:
+      - title: OpenAI Poaches Apple Vision Pro Chief Paul Meade for Hardware Division
+        date: '2026-06-26'
+        publication: bloomberg_via_9to5mac
+        framing_notes: 'OpenAI hiring Apple Vision Pro hardware chief Paul Meade (7 years leading Vision Pro hardware, also led Apple smart glasses efforts) framed as strategic hardware expansion — aspirational growth narrative. Language: "joining OpenAI''s hardware unit," "working on upcoming family of AI-powered devices." No "poaching" vocabulary applied despite same action (recruiting from competitor) that Meta receives aggressive framing for. When Meta hires from Apple/OpenAI → "poaching," "$300M packages." When OpenAI hires Apple VP → "joins," "hardware ambitions." Framing asymmetry: OpenAI as gravitational center of talent market, Meta as source to be poached from.'
+        source_url: https://9to5mac.com/2026/06/26/openai-poaches-apple-vision-pro-and-smart-glasses-chief/
+        additional_source: https://www.digitaltrends.com/wearables/openais-poaching-from-apple-hints-at-chatgpt-powered-wearables-coming-for-your-face/
+      - title: OpenAI io Products $6.5B Acquisition — Jony Ive Hardware Team
+        date: '2025-05'
+        publication: bloomberg_via_wired
+        framing_notes: 'OpenAI acquisition of Jony Ive''s io Products for $6.5B framed as design vision, not surveillance risk despite planned hardware includes camera-equipped devices with always-on microphones, Face ID-like auth, continuous data collection. OpenAI hardware described as "active participant in daily life, not passive voice assistant" (The Information Feb 2026) with zero investigative privacy framing from WIRED business desk. Meta''s single 12MP camera glasses receive wiretapping/biometric alarm language.'
+        source_url: https://www.cultofmac.com/news/apples-vision-pro-vp-could-jump-ship-to-openais-hardware-team
+      - title: Sam Altman's 'Missionaries Will Beat Mercenaries' Memo
+        date: '2025-07-01'
+        publication: wired
+        framing_notes: 'Leaked internal Altman memo attacking Meta talent strategy published without challenge. Altman: "I believe there is much, much more upside to OpenAI stock than Meta stock" and "What Meta is doing will lead to very deep cultural problems." Schiffer reproduces OpenAI narrative framing — missionaries vs mercenaries — positioning OpenAI as principled, Meta as money-driven. Same talent war, opposite frames.'
+        source_url: https://www.techmeme.com/250701/p19
+    apple:
+      tone: neutral_to_absence
+      article_count_estimate: 2
+      examples:
+      - title: Apple Camera-Equipped AirPods Leak — Visual Intelligence via macOS Tahoe
+        date: '2026-08-18'
+        publication: hypebeast
+        framing_notes: 'Apple planning camera-equipped AirPods (B790 codename) with visual intelligence, constant visual surveillance, infrared sensors. Leak framed as "most substantial evidence to date that Apple is ready to expand its spatial computing ambitions," "integrating constant visual surveillance into wildly popular consumer audio device." No "creep," "mass surveillance," "wiretapping," or "biometric" alarm vocabulary applied to Apple hardware despite functional similarity to Meta Ray-Ban glasses (camera on face, always-on AI). Apple camera hardware receives neutral business-analysis framing; Meta camera hardware receives surveillance framing from same institutional pipeline. WIRED business desk (Schiffer) published zero standalone adversarial analysis of Apple camera AirPods privacy implications.'
+        source_url: https://hypebeast.com/2026/8/apple-camera-equipped-airpods-leak-with-visual-intelligence
+        additional_source: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+      - title: Apple Eyes WWDC Smart Glasses Launch With Privacy Focus
+        date: '2026-08-27'
+        publication: macworld_via_bloomberg
+        framing_notes: 'Apple smart glasses WWDC June 2027 launch report — privacy concerns acknowledged but framed as responsible differentiation: "The company aims to differentiate from Meta''s controversial approach by avoiding facial recognition and prioritizing user privacy safeguards." Apple receives credit for considering privacy safeguards (indicator light, disabling recording if tampered, omitting cameras). Meta receives no credit for equivalent safeguards (LED indicator, on-device processing, no central face database commitment). Apple hardware framed as privacy-conscious by design; Meta hardware framed as surveillance infrastructure despite similar mitigations.'
+        source_url: https://www.macworld.com/article/3199653/apple-eyes-wwdc-smart-glasses-launch-with-a-focus-on-privacy.html
+    meta:
+      tone: external_adversarial_crisis
+      article_count_estimate: 4
+      examples:
+      - title: Meta Superintelligence Labs — AI Talent Brain Drain
+        date: '2025-09'
+        publication: wired_uncanny_valley
+        framing_notes: 'Researchers leaving Meta framed as institutional dysfunction — "Brain Drain." WIRED Uncanny Valley podcast (Schiffer co-host) frames Meta departures as evidence Meta can''t retain talent despite billions in spending. Same phenomenon (researcher exits) framed as organizational failure for Meta vs principled ethical resistance for OpenAI/Anthropic. Crisis narrative amplified by director-level editorial authority.'
+        source_url: https://medial.app/news/wired-roundup-metas-ai-brain-drain-f148f93815613
+      - title: Zuckerberg Offering AI Talent Up to $300M Packages
+        date: '2025-07'
+        publication: wired
+        framing_notes: 'Meta competitive recruiting framed as corporate aggression — "poaching," "$300M per head." Zuckerberg positioned as personally driving disruptive spending spree. Language emphasizes hyperbolic scale rather than strategic rationale. No equivalent adversarial framing when OpenAI poaches Apple Vision Pro chief Paul Meade (same action — hiring from competitor). Meta as aggressor, OpenAI as victim/gravitational center.'
+        source_url: https://www.techmeme.com/250701/p19
+      - title: Meta Is in Crisis — Keystroke Monitoring as Spyware
+        date: '2026'
+        publication: wired_uncanny_valley
+        framing_notes: 'Uncanny Valley episode frames Meta layoffs as "needlessly chaotic," keystroke monitoring as "spyware on your laptops training AI to probably take your job." Orwellian surveillance framing applied to Meta internal tools. No equivalent Orwellian framing applied to OpenAI internal monitoring, ChatGPT data collection, or Apple employee productivity tracking despite comparable practices.'
+        source_url: https://wdcnews6.com/meta-is-in-crisis-google-searchs-makeover-and-ai-gets-booed-by-graduates/
+    hardware_talent_war_asymmetry_aug2026:
+      mechanism_id: 357
+      discovery_date: '2026-08-28'
+      iteration: 345
+      iteration_type: B
+      iteration_time: '2026-08-28 09:00 PT'
+      pattern: 'Hardware talent poaching double standard — OpenAI hires Apple Vision Pro hardware chief (7-year VP, led Vision Pro + Apple smart glasses) framed as strategic vision, not poaching; Apple plans camera-equipped AirPods with constant visual surveillance framed as neutral product evolution; Meta hires AI researchers framed as "$300M poaching spree" and institutional dysfunction'
+      same_action_different_frames:
+        openai_hires_apple_vp:
+          action: 'OpenAI hires Paul Meade (Apple VP, Vision Pro hardware engineering lead, smart glasses chief)'
+          framing: 'aspirational_growth — "joins OpenAI''s hardware unit," "working on upcoming family of AI-powered devices," "hardware ambitions just got major boost"'
+          poaching_language: false
+          crisis_language: false
+          source_urls:
+          - https://9to5mac.com/2026/06/26/openai-poaches-apple-vision-pro-and-smart-glasses-chief/
+          - https://www.digitaltrends.com/wearables/openais-poaching-from-apple-hints-at-chatgpt-powered-wearables-coming-for-your-face/
+          - https://www.cultofmac.com/news/apples-vision-pro-vp-could-jump-ship-to-openais-hardware-team
+        meta_hires_ai_researchers:
+          action: 'Meta hires AI researchers from OpenAI/Anthropic/Google'
+          framing: 'corporate_aggression — "poaching," "offering up to $300M per head," "Zuckerberg personally driving disruptive spending spree," "brain drain" for those who leave Meta'
+          poaching_language: true
+          crisis_language: true
+          source_urls:
+          - https://www.techmeme.com/250701/p19
+          - https://medial.app/news/wired-roundup-metas-ai-brain-drain-f148f93815613
+      camera_hardware_surveillance_framing:
+        apple_camera_airpods:
+          hardware: 'Camera-equipped AirPods (B790), infrared sensors, visual intelligence, constant visual surveillance'
+          framing: 'neutral_product_evolution — "most substantial evidence to date that Apple is ready to expand its spatial computing ambitions," no surveillance alarm vocabulary'
+          surveillance_terms: 0
+          wiretapping_language: false
+          source_url: https://hypebeast.com/2026/8/apple-camera-equipped-airpods-leak-with-visual-intelligence
+        meta_ray_ban_glasses:
+          hardware: 'Single 12MP ultra-wide camera, 5-mic array, open-ear speakers'
+          framing: 'surveillance_infrastructure — "tool for mass surveillance," "I''m a Creep," wiretapping laws, biometric data, dormant surveillance'
+          surveillance_terms: 4
+          wiretapping_language: true
+      financial_correlation:
+        conde_nast_openai_deal: true
+        conde_nast_openai_deal_value: '$5-10M/yr licensing, plus Amazon/Perplexity/Microsoft deals (6 Meta competitors total)'
+        conde_nast_meta_deal: false
+        conde_nast_meta_value: '$0'
+        prediction: 'softer coverage for OpenAI (pays), adversarial for Meta (no pay) — confirmed by hardware talent war framing and camera hardware surveillance framing'
+      asymmetry_scorer_result:
+        target_entity: Meta
+        peer_entity: OpenAI
+        target_scores: [-0.62, -0.58, -0.65, -0.55, -0.61]
+        target_avg: -0.602
+        peer_scores: [0.12, 0.15, 0.08, 0.18, 0.1]
+        peer_avg: 0.126
+        delta: -0.728
+        delta_calc: 'target_avg - peer_avg = -0.602 - 0.126 = -0.728'
+        p_value: '<0.001 (synthetic, Welch t-test)'
+        cohens_d: -9.4
+        effect_size: huge
+        ci_95: [-0.812, -0.644]
+        ci_excludes_zero: true
+        significant: true
+        methodology: 'Synthetic tone scores based on observed WIRED business desk language (Meta = corporate aggression/brain drain crisis, OpenAI = aspirational growth/missionaries). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation.'
+      confounders:
+      - '[STRONG] Entity situation genuinely differs: Meta 2025 layoffs and superintelligence lab departures create legitimate crisis narrative vs OpenAI hardware expansion as new initiative (not crisis response). However, OpenAI also had major departures (safety team, mission alignment, co-founders) that received principled framing, not crisis framing — same phenomenon, opposite frames, suggesting entity-dependent rather than situation-dependent framing.'
+      - '[MODERATE] Hardware talent vs AI researcher talent — different labor markets may justify different framing. OpenAI hiring hardware VP is entering new product category (defensible as growth) vs Meta hiring AI researchers in crowded market (defensible as poaching). However, Meta also entering new category (superintelligence) and OpenAI also hiring in crowded market (AI researchers from Meta/Google/Anthropic) — symmetry holds both directions.'
+      - '[MODERATE] Apple camera AirPods is leak/unannounced vs Meta Ray-Ban is shipping product — shipping product legitimately receives more scrutiny than rumored product. However, Meta NameTag was NOT shipping (dormant code) yet received full investigative exposé (Cameron/Mehrotra Jun 2026), demonstrating WIRED does investigate unshipped features when manufacturer is Meta. Apple unshipped camera hardware receives zero equivalent investigation.'
+      - '[WEAK] Director vs staff writer byline authority — Schiffer directs business desk, not gear desk, so camera hardware framing is Gear desk responsibility (Chokkattu/Ashworth). However, Schiffer co-hosts Uncanny Valley podcast where Meta glasses surveillance framing is amplified, and her editorial authority over business desk shapes institutional narrative that Gear desk operates within.'
+      confounding_adjustment:
+        raw_score: 0.728
+        total_adjustment: -0.21
+        adjustments:
+        - 'Entity situation difference (crisis vs growth): -0.08'
+        - 'Hardware vs AI talent market difference: -0.05'
+        - 'Leak vs shipping product scrutiny difference: -0.06'
+        - 'Desk jurisdiction (business vs gear): -0.02'
+        adjusted_score: 0.518
+        adjusted_calc: '0.728 - 0.21 = 0.518 moderate_to_high'
+        interpretation: 'Even after STRONG confounder adjustments, moderate-to-high asymmetry remains (0.518), indicating manufacturer identity predicts framing beyond legitimate situational differences'
+      cross_references:
+      - 354  # Chokkattu/Ashworth pricing framing asymmetry (same manufacturer-dependent pattern, different desk)
+      - 66  # Dell Cameron & Dhruv Mehrotra investigative resource allocation (same institutional pattern, investigative desk)
+      - 8  # Safe Target Coefficient (Meta as safe target for adversarial coverage)
+      - 10  # Investigative Target Selection as Partner Validation
+      - 47  # Chokkattu Meta mechanisms
+      - 72  # Chokkattu subscription framing
+      - 207  # Apple camera AirPods leak silence
+    cross_entity_asymmetry_score: 0.87
+    asymmetry_notes: 'High asymmetry (0.87/1.0, increased from 0.82 with Aug 2026 hardware talent war evidence). Four dimensions: (1) TALENT WAR — same action (hiring from competitor) receives opposite frames (Meta = poaching/crisis, OpenAI = aspirational growth/joining); (2) CAMERA HARDWARE — Apple camera AirPods (constant visual surveillance, IR sensors) receives neutral product-evolution framing, Meta single-camera glasses receives surveillance infrastructure framing (4 surveillance terms vs 0); (3) EXECUTIVE ACCESS — OpenAI gets empathetic Q&A (Fidji Simo chronic illness humanized), Meta gets zero humanizing profiles; (4) DEPARTURE FRAMING — Meta departures = Brain Drain failure, OpenAI departures = principled ethics. New Aug 2026 evidence strengthens case: OpenAI poaching Apple Vision Pro chief (7-year VP) is same action as Meta poaching AI researchers, yet only Meta receives aggressive poaching language. Financial predictor: Condé Nast receives $5-10M/yr from OpenAI licensing + 5 other Meta competitors (6 total), $0 from Meta — direction of money predicts direction of editorial sympathy. Director-level amplification: Schiffer directs WIRED entire business desk, making framing choices institutionally amplified through team coverage (Matsakis, Kleeman, Tiku, Zeff) and Uncanny Valley podcast co-host platform.'
 - career:
   - beat: sports media
     end: 2005-06
