@@ -2674,6 +2674,128 @@ entities:
       _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
       summary: Apple's smart glasses delay (Jul 26, 2026) framed as "prioritizing privacy" and responsible leadership — "Apple wants none of it" (privacy baggage). Nineteen days earlier, Meta shipped an industry-first camera- disable-on-LED-tampering feature that was framed as reactive damage control. Apple receives aspirational framing for NOT shipping, while Meta receives adversarial framing for shipping an industry-first privacy feature.
       testable_prediction: Apple's eventual smart glasses launch (2027+) will receive "Apple leads on privacy" framing for features Meta already shipped in July 2026, regardless of chronological priority.
+    apple_siri_advertising_compound_leverage_q3_2026:
+      mechanism_id: 363
+      date_analyzed: '2026-08-28'
+      iteration: 352
+      type: Type C Financial Incentive Mapping
+      title: Apple Q3 2026 Services Advertising Record + Siri AI Variable-Pay + Gemini Bypass Compound Publisher Financial Capture
+      overview: 'Apple Q3 FY2026 (Jun 27 2026 quarter, reported Jul 30 2026) consolidates FIVE distinct publisher financial leverage mechanisms into a single quarter, verified through primary SEC filings and earnings calls. Services revenue hit $30.7B (up 12% YoY, 28.1% of total $109.4B), with CFO Kevan Parekh explicitly identifying advertising as setting a June-quarter record within Services alongside App Store, AppleCare, Music, and TV+. Simultaneously, WSJ (Aug 12 2026) reported Apple negotiating nine-figure ($100M+) multiyear Siri AI publisher deals using variable pay-per-use compensation, structurally distinct from fixed-fee OpenAI/Google/Amazon deals. This occurs 7 months after Apple signed a $1B/yr custom Gemini deal (Jan 12 2026) to access publisher content indirectly through Google training, bypassing direct publisher payment. The THREE events together — advertising record (direct revenue sharing 70% in-article), Siri AI per-use dependency (ongoing algorithmic control), and Gemini bypass (zero payment for content flow through 2.5B devices) — create a compound financial architecture where publishers earn from Apple through ads and potentially through Siri per-use, while simultaneously receiving $0 for AI content flowing via Gemini, and paying Apple 15-30% App Store tax on their own subscriptions. Meta has ZERO of these channels.
+
+        '
+      five_channel_consolidation_q3_2026:
+        channel_1_news_plus:
+          name: Apple News+ Platform Revenue Share
+          launch: 2019-03-25
+          mechanism: 50% of $12.99/mo subscription, engagement-weighted across 400+ titles, 125M MAU, 100 editors controlling Top Stories
+          q3_2026_status: active, CIRP 24% US Apple customer penetration (up from 15% 2020), growing 4x faster than publishers own subscription businesses
+          source: https://9to5mac.com/2024/05/29/apple-news-subscriptions-growing-4x-faster-than-major-publishers/
+        channel_2_advertising:
+          name: Apple Advertising Platform Dependency
+          q3_2026_record: true
+          report_date: '2026-07-30'
+          services_revenue_b: 30.7
+          services_yoy_pct: 12
+          cfo_statement: Set June quarter records in advertising, App Store, AppleCare, Apple Music, Apple TV+
+          sec_10q_language: primarily due to higher net sales from advertising and cloud services
+          sec_10q_filing: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm
+          q2_drivers: advertising, the App Store and cloud services
+          q3_drivers: advertising and cloud services
+          app_store_dropped: true
+          significance: App Store DROPPED from growth driver list Q2→Q3, advertising materiality RISING within 75.6% gross margin Services segment
+          estimated_annual_b: 8.5
+          publisher_share_in_article_pct: 70
+          disclosure: Apple discloses NO separate advertising figure — only major tech company with this opacity
+          source_urls:
+          - https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php
+          - https://www.macrumors.com/2026/07/30/apple-3q-2026-earnings/
+          - https://www.marketbeat.com/earnings/reports/2026-7-30-apple-inc-stock/
+          - https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm
+        channel_3_siri_ai_variable_pay:
+          name: Siri AI Content Licensing Variable Per-Use
+          report_date: '2026-08-12'
+          source: Wall Street Journal
+          budget: nine-figure ($100M+)
+          compensation_model: variable pay-per-use when publisher content is used by Siri AI, not lump sum
+          deal_term: multiyear
+          status: in_negotiation
+          distinction: Fixed-fee (OpenAI $300-400M/yr total, Google Showcase, Amazon Rufus) vs variable per-use — ongoing dependency, revenue scales with Siri adoption, Apple controls ranking algorithm determining which publisher surfaces
+          hallucination_motivator: Late-2024 AI-generated news summary produced erroneous headlines, publisher backlash, feature disabled >1 year
+          timeline:
+            dec_2023: Approached Condé Nast, NBC News, IAC with $50M multi-year offers — no deals closed
+            jan_2026: Signed $1B/yr Gemini deal instead — bypass
+            aug_2026: Re-approached with nine-figure Siri AI variable-pay budget
+          source_urls:
+          - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+          - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+          - https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/
+          - https://www.thewrap.com/industry-news/tech/apple-ai-siri-news-media-publishing-deals/
+        channel_4_gemini_bypass:
+          name: Publisher Content Bypass via Google Gemini
+          announcement: '2026-01-12'
+          annual_value_b: 1.0
+          model_parameters: 1.2 trillion
+          mechanism: Apple pays Google $1B/yr for custom Gemini model (trained on publisher content without publisher authorization per Hachette/Cengage/Elsevier Jul 2026 lawsuit), runs on Private Cloud Compute, serves AI responses to 2.5B Apple devices, publishers receive $0
+          search_deal_context: $1B/yr Gemini is only ~5% of $20B/yr Google pays Apple for default search — Apple is clear financial winner
+          anthropic_rejected: Anthropic fees reportedly too high
+          interim_nature: Apple building 1T-parameter own model to replace Gemini as early as next year
+          source_urls:
+          - https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
+          - https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/
+          - https://www.reuters.com/business/google-apple-enter-into-multi-year-ai-deal-gemini-models-2026-01-12/
+        channel_5_app_store_tax:
+          name: App Store Subscription Tax + Apple One Dilution
+          standard_y1_pct: 30
+          standard_y2_pct: 15
+          news_partner_program_pct: 15
+          apple_one_premier_usd: 37.95
+          standalone_news_plus_usd: 12.99
+          dilution_effect: Apple One bundles 6 services at ~3x News+ standalone price — less revenue allocated to News+ per subscriber, Apple does not disclose allocation
+          publishers_affected: NYT 10.8M+ digital subscribers many via iOS, Condé Nast, The Atlantic, WSJ all subject to iOS payment processing
+      meta_contrast:
+        apple_channels: 5
+        meta_channels: 0
+        meta_has_news_app: false
+        meta_has_subscription_tax: false
+        meta_has_ad_platform_paying_publishers: false
+        meta_has_ai_content_bypass: false
+        meta_has_per_use_licensing: false
+        detail: Meta has ZERO financial relationship mechanisms with Apple News+ publishers. Meta's only publisher relationship is voluntary AI content licensing ($50M/yr News Corp + 12 others). Apple has FIVE mechanisms yet receives substantially SOFTER coverage from same publishers Apple extracts from. Condé Nast (WIRED) gives Apple 50% News+ revenue across 16 titles AND gets $0 for Apple AI content pipeline via Gemini — yet directs most sustained adversarial coverage at Meta, which offered voluntary AI licensing deals Condé Nast has not accepted.
+      leverage_ranking_update:
+        microsoft: 7
+        amazon: 6
+        apple: 5
+        google: 4
+        meta: 1
+        note: "Apple 5 channels confirmed Q3 2026 with primary-source SEC filing language progression. Leverage asymmetry persists: most leveraged entities receive softest coverage, least leveraged (Meta) receives most adversarial."
+      confounding_factors:
+      - strength: STRONG
+        description: No Siri AI deals have been SIGNED yet — negotiation phase only as of Aug 20 2026. Mechanism is predictive for per-use channel, not observed financial dependency.
+      - strength: STRONG
+        description: Publisher Apple News+ revenue is modest for large publishers (single-digit millions annually, not existential for Condé Nast $2B+). 50% take rate is high but absolute dollars are small relative to total publisher revenue.
+      - strength: MODERATE
+        description: Apple advertising opacity (no separate disclosure) makes precise dependency quantification impossible. $8.5B estimate (eMarketer) is small relative to Meta $243B and Google $237B ad businesses. Publisher dependency on Apple ads may be overstated.
+      - strength: MODERATE
+        description: Correlation does not prove causation — favorable Apple coverage may reflect genuine product quality, privacy track record, or editorial judgment rather than financial incentive. Apple's privacy marketing and on-device processing history is well-established.
+      - strength: WEAK
+        description: Apple News+ 100 editors may exercise genuine editorial judgment independent of business relationships. No evidence of direct editorial quid pro quo in Apple News+ curation.
+      cautious_language: Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Synthetic tone arrays must be labeled illustrative. Requires primary-source verification against SEC filings, earnings calls, and publisher statements for empirical validation.
+      source_urls:
+      - https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm
+      - https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/a8-kex991q3202606272026.htm
+      - https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php
+      - https://www.macrumors.com/2026/07/30/apple-3q-2026-earnings/
+      - https://www.marketbeat.com/earnings/reports/2026-7-30-apple-inc-stock/
+      - https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+      - https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/
+      - https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
+      - https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/
+      - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
+    privacy_innovation_attribution:
+      _ref_mechanism_id: 55
+      _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
+      summary: Apple's smart glasses delay (Jul 26, 2026) framed as "prioritizing privacy" and responsible leadership — "Apple wants none of it" (privacy baggage). Nineteen days earlier, Meta shipped an industry-first camera-disable-on-LED-tampering feature that was framed as reactive damage control. Apple receives aspirational framing for NOT shipping, while Meta receives adversarial framing for shipping an industry-first privacy feature.
+      testable_prediction: Apple's eventual smart glasses launch (2027+) will receive "Apple leads on privacy" framing for features Meta already shipped in July 2026, regardless of chronological priority.
   google:
     display_name: Google / Alphabet
     aliases:

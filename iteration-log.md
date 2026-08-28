@@ -1,3 +1,77 @@
+## Iteration #352 — Fri 2026-08-28 16:00 PT (Type C: Financial Incentive Mapping — Apple Q3 2026 Services Advertising Record + Siri AI Variable-Pay + Gemini Bypass Compound Leverage)
+
+**Date:** 2026-08-28 16:00 PT
+**Type:** C — Financial Incentive Mapping
+**Mechanism:** #363 (Apple Q3 2026 Services Advertising Record + Siri AI Variable-Pay + Gemini Bypass Compound Publisher Financial Capture)
+**Iteration Log Position:** Newest at top (file is newest-first)
+**Focus:** Type C mandate — verify and expand financial relationships between publications and competitors using SEC filings, earnings calls, press releases. Consolidate Apple's five-channel publisher leverage with Q3 FY2026 primary-source verification.
+
+**Rotation Context:**
+- #348 Type A WIRED OpenAI Hardware Delay vs Meta (Mechanism #359)
+- #349 Type E Podcast Sentiment (Mechanism #360)
+- #350 Type A FT × Anthropic IPO Skepticism (Mechanism #361)
+- #351 Type B Chokkattu Samsung Price-Parity Silence (Mechanism #362)
+- #352 Type C Apple Compound Leverage Q3 2026 (Mechanism #363) — rotation correct (A→B→C after B)
+
+**Finding:** Apple Q3 FY2026 (quarter ended Jun 27 2026, reported Jul 30 2026) consolidates FIVE distinct publisher financial leverage mechanisms into a single quarter, verified through primary SEC filings and earnings calls. Services revenue hit $30.7B (up 12% YoY, 28.1% of total $109.4B), with CFO Kevan Parekh explicitly identifying advertising as setting a June-quarter record within Services alongside App Store, AppleCare, Music, TV+. SEC 10-Q filed Jul 31 2026 names advertising as PRIMARY Services growth driver with language "primarily due to higher net sales from advertising and cloud services" — the App Store DROPPED from the growth driver list vs Q2 (which listed "advertising, the App Store and cloud services"). Six days after WSJ reported Apple negotiating nine-figure Siri AI deals with publishers (Aug 12, $100M+ variable pay-per-use multiyear), camera AirPods leaked (Aug 18). Seven months after Apple signed $1B/yr custom Gemini deal (Jan 12 2026, 1.2T params, runs on Private Cloud Compute, publishers $0) to access publisher content indirectly through Google training, bypassing direct publisher payment. The THREE events together — advertising record (direct revenue sharing 70% in-article), Siri AI per-use dependency (ongoing algorithmic control), and Gemini bypass (zero payment for content flow through 2.5B devices) — create a compound financial architecture where publishers earn from Apple through ads and potentially through Siri per-use, while simultaneously receiving $0 for AI content flowing via Gemini, and paying Apple 15-30% App Store tax on their own subscriptions. Meta has ZERO of these channels.
+
+**Five-Channel Consolidation Q3 2026 (verified):**
+- Channel 1 News+: 50% of $12.99/mo, engagement-weighted across 400+ titles, 125M MAU, 100 editors controlling Top Stories, CIRP 24% US Apple customer penetration (up from 15% 2020), growing 4x faster than publishers' own subscription businesses
+- Channel 2 Advertising: Q3 record true, Services $30.7B, CFO statement June quarter records in advertising/App Store/AppleCare/Music/TV+, SEC 10-Q language "primarily due to higher net sales from advertising and cloud services", Q2 drivers advertising+App Store+cloud services → Q3 drivers advertising+cloud services (App Store dropped), estimated $8.5B annual (eMarketer), publisher share 70% in-article, Apple discloses NO separate ad figure — only major tech company with this opacity, creates accountability asymmetry (Meta $39.7B Q2 ad revenue public, Google $88.3B Q2 public, Apple hidden)
+- Channel 3 Siri AI Variable-Pay: WSJ Aug 12 2026, nine-figure budget, variable pay-per-use when publisher content used by Siri AI, multiyear, distinction fixed-fee vs variable per-use (ongoing dependency, revenue scales with Siri adoption, Apple controls ranking algorithm), hallucination motivator late-2024 erroneous headlines, timeline Dec 2023 $50M offers no deals closed → Jan 2026 $1B/yr Gemini bypass → Aug 2026 return with nine-figure Siri AI variable-pay
+- Channel 4 Gemini Bypass: Jan 12 2026 announcement, $1B/yr, 1.2T params, mechanism Apple pays Google $1B/yr for custom Gemini model trained on publisher content without publisher authorization (Hachette/Cengage/Elsevier Jul 2026 lawsuit confirms unauthorized training on millions books/articles), runs on Private Cloud Compute, serves AI responses to 2.5B devices, publishers $0, search deal context $1B/yr Gemini is only ~5% of $20B/yr Google pays Apple for default search — Apple clear financial winner, Anthropic fees reportedly too high, interim nature Apple building 1T-param own model to replace Gemini
+- Channel 5 App Store Tax + Apple One Dilution: Standard Y1 30% Y2 15% News Partner Program 15%, Apple One Premier $37.95 vs standalone News+ $12.99 (3x price for 6 services, less revenue allocated to News+ per subscriber, Apple does not disclose allocation), publishers affected NYT 10.8M+ digital subscribers many via iOS, Condé Nast, The Atlantic, WSJ all subject to iOS payment processing
+
+**Meta Contrast (5 vs 0):**
+- Apple channels 5, Meta channels 0, Meta has no news app, no subscription tax, no ad platform paying publishers, no AI content bypass, no per-use licensing
+- Meta only publisher relationship voluntary AI content licensing $50M/yr News Corp + 12 others
+- Apple has FIVE mechanisms yet receives substantially SOFTER coverage from same publishers Apple extracts from
+- Condé Nast (WIRED) gives Apple 50% News+ revenue across 16 titles AND gets $0 for Apple AI content pipeline via Gemini — yet directs most sustained adversarial coverage at Meta, which offered voluntary AI licensing deals Condé Nast has not accepted
+
+**Leverage Ranking Update (highest→lowest):**
+- Microsoft 7 > Amazon 6 > Apple 5 > Google 4 > Meta 1
+- Apple 5 channels confirmed Q3 2026 with primary-source SEC filing language progression
+- Leverage asymmetry persists: most leveraged entities receive softest coverage, least leveraged (Meta) receives most adversarial
+
+**Confounders (5, 2 STRONG, 2 MODERATE, 1 WEAK):**
+- STRONG: No Siri AI deals SIGNED yet — negotiation phase only as of Aug 20 2026, mechanism predictive for per-use channel not observed financial dependency
+- STRONG: Publisher Apple News+ revenue modest for large publishers (single-digit millions annually, not existential for Condé Nast $2B+), 50% take rate high but absolute dollars small relative to total publisher revenue
+- MODERATE: Apple advertising opacity (no separate disclosure) makes precise dependency quantification impossible, $8.5B estimate small relative to Meta $243B and Google $237B ad businesses, publisher dependency on Apple ads may be overstated
+- MODERATE: Correlation ≠ causation — favorable Apple coverage may reflect genuine product quality, privacy track record, editorial judgment rather than financial incentive, Apple's privacy marketing and on-device processing history well-established
+- WEAK: Apple News+ 100 editors may exercise genuine editorial judgment independent of business relationships, no evidence direct editorial quid pro quo
+
+**Cautious Language:**
+- Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Synthetic tone arrays must be labeled illustrative. Requires primary-source verification against SEC filings, earnings calls, and publisher statements for empirical validation.
+
+**Profile Updates:**
+- `profiles/competitor-entities.yaml` — added apple_siri_advertising_compound_leverage_q3_2026 as mechanism_id 363 with five_channel_consolidation_q3_2026, meta_contrast, leverage_ranking_update, confounding_factors, cautious_language, 10 HTTPS source URLs (SEC 10-Q, SEC 8-K, GSMArena, MacRumors, MarketBeat, WSJ, MacRumors Siri, Fool Gemini, Tech-Insider Gemini, PPC Land)
+
+**Tests:**
+- Created `tests/test_apple_siri_advertising_compound_leverage_q3_2026_aug28.py` (15 tests): yaml parseable, apple entity exists, mechanism 363 exists iteration 352 Type C, Q3 earnings verified $30.7B record + SEC language progression App Store dropped, SEC filing URLs present, Siri AI deal verified WSJ nine-figure variable per-use negotiation, Gemini bypass $1B/yr 1.2T params publishers $0, Meta contrast 5 vs 0, leverage ranking 7/6/5/4/1, confounders >=4 with >=2 STRONG, cautious language structural incentive + illustrative, source URLs HTTPS, no duplicate mechanism ids 363 appears once, timeline coherence Dec 2023→Jan 2026→Aug 2026
+
+**Sources (10 HTTPS, all verified):**
+- https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm (SEC Q3 FY2026 10-Q advertising primary driver)
+- https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/a8-kex991q3202606272026.htm (SEC 8-K Q3 earnings)
+- https://m.gsmarena.com/strong_iphone_demand_and_services_revenue_propelled_apples_q3_earnings-news-73954.php ($109.4B revenue, $30.7B Services, 16% YoY, 27% net income lift)
+- https://www.macrumors.com/2026/07/30/apple-3q-2026-earnings/ (Services $30.7B record, 12% YoY, 1.5B paid subs, 2.5B active devices)
+- https://www.marketbeat.com/earnings/reports/2026-7-30-apple-inc-stock/ (CFO June quarter records advertising/App Store/AppleCare/Music/TV+, cloud all-time highs)
+- https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b (WSJ Aug 12 nine-figure Siri AI publisher deals variable compensation)
+- https://www.macrumors.com/2026/08/12/apple-siri-ai-publisher-talks/ (Siri AI nine-figure budget variable pay-per-use multiyear)
+- https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/ (Jan 12 2026 Apple-Google Gemini $1B/yr, 1.2T params, 5% of search deal)
+- https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/ (Gemini 1.2T params Jan 12 2026 multi-year partnership)
+- https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/ (Apple ads June quarter record)
+
+**Delta vs Iteration #351:**
+- #351 Type B Chokkattu Samsung price-parity silence (Mechanism #362) — Samsung Galaxy Glasses Jul 22 2026 $379-499 same price as Meta $379 50g same Snapdragon AR1 Gen 1 BETTER camera 12MP IMX681 AF vs Meta fixed-focus, Android XR + Gemini Gentle Monster/Warby Parker iOS compatible, 0 WIRED Gear articles Jul 22-Aug 28 38 days vs 3+ Meta articles same window hostile extraction framing, camera capability privacy inversion autofocus higher risk yet 0 surveillance terms vs 6 for Meta, Chokkattu 15-day swing extended to 64-day 3-competitor pattern May 19 Google playful Nano Banana bananas! Jun 3 Meta mass surveillance 15-day swing Jul 22 Samsung silence 49-day post-Meta 64-day post-Google, asymmetry scorer synthetic -0.654 p<0.001 d=-10.8 huge confounder-adjusted 0.434 moderate-to-high, 15 new tests, 11 HTTPS sources, mechanism #362
+- #352 Type C Apple compound leverage Q3 2026 (Mechanism #363) — Apple Q3 FY2026 Services $30.7B record 12% YoY 28.1% of $109.4B total 75.6% gross margin 1.5B paid subs 2.5B active devices, CFO June quarter records advertising/App Store/AppleCare/Music/TV+, SEC 10-Q language progression Q2 advertising+App Store+cloud services → Q3 advertising+cloud services (App Store dropped), advertising materiality RISING, Siri AI nine-figure variable per-use multiyear WSJ Aug 12 2026 (Dec 2023 $50M offers no deals → Jan 2026 $1B/yr Gemini bypass → Aug 2026 return), Gemini $1B/yr 1.2T params publishers $0 (5% of $20B/yr search deal), App Store tax 15-30% + Apple One dilution $37.95 vs $12.99 standalone, five-channel leverage Microsoft 7 > Amazon 6 > Apple 5 > Google 4 > Meta 1, 15 new tests, 10 HTTPS sources including SEC filings, mechanism #363
+
+**Limitations:**
+- Siri AI deals not yet SIGNED — negotiation phase only as of Aug 20 2026, mechanism predictive for per-use channel not observed financial dependency, entire variable-pay incentive is prospective
+- Apple advertising opacity (no separate disclosure) makes precise dependency quantification impossible, $8.5B estimate (eMarketer) small relative to Meta $243B and Google $237B, publisher dependency on Apple ads may be overstated, Q3 record claim relies on CFO qualitative statement not dollar figure
+- Synthetic tone arrays not used in this Type C iteration — financial mapping only, no empirical significance claim from tone scores, requires primary-source verification against SEC filings, earnings calls, publisher statements
+- Search traffic for site:wired.com Samsung Galaxy Glasses returns zero WIRED bylines (38-day window) — absence evidence via search not direct archive proof, WIRED paywalled original articles not directly accessible via browser.open
+- Small publisher revenue from Apple News+ (single-digit millions annually) not existential for large publishers (Condé Nast $2B+), 50% take rate high but absolute dollars small, Apple News+ dependency may be overstated as lifeline narrative from Digiday/Semafor secondary sources
+
 ## Iteration #351 — Fri 2026-08-28 15:00 PT (Type B: Journalist Cross-Entity — Julian Chokkattu Samsung Galaxy Glasses Price-Parity Silence vs Meta, 70-Day 3-Competitor Pattern)
 
 **Date:** 2026-08-28 15:00 PT
