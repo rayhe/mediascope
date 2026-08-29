@@ -181,9 +181,9 @@
 
 ---
 
-## Iteration #376 - Sat 2026-08-29 20:00 PT (Type C: Quintuple Reverse-Advertiser Alignment - Meta-EssilorLuxottica $3.5B Stake + H1 2026 EUR 14.02B)
+## Iteration #376 - Sat 2026-08-29 16:00 PT (Type C: Quintuple Reverse-Advertiser Alignment - Meta-EssilorLuxottica $3.5B Stake + H1 2026 EUR 14.02B)
 
-**Date:** 2026-08-29 20:00 PT
+**Date:** 2026-08-29 16:00 PT
 **Type:** C - Financial Incentive Mapping
 **Mechanism:** #376 - Quintuple Reverse-Advertiser Alignment Aug 29 (extends Mechanism #372, #358, #367, #103, #53)
 **Rotation:** Type C follows Type B (#375). Rotation correct per log: #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C. Next expected Type D.
