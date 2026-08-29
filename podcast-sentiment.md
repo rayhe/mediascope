@@ -6208,3 +6208,220 @@ Meta filed Feb 2026 patent for hardware kill switch that cuts glasses off from a
 
 **Quiet Status:** Type E podcast sentiment tracking - no major discovery beyond #366 financial quadrupling and #359 hardware capability inversion extension to podcast vector. Same-episode bifurcation (Fortune AI Weekly) is strongest new evidence: same hosts, same 24-min episode, opposite registers for OpenAI vs Meta AI consumer products with identical privacy implications. Waveform positive counterexample shows editorial lane mediates financial predictor. Meta kill switch patent + LED fix vs OpenAI zero disclosure extends capability inversion thesis to proactive engineering ignored. No new empirical WIRED asymmetry claimed. Structural incentive only, not editorial control. No overclaim of causality. Meaningful improvement: 4 new podcast episodes + 1 update + cross-podcast summary + 18 new regression tests covering podcast sentiment validity, same-episode bifurcation, kill switch vs zero disclosure, lane variation, no-em-dash discipline.
 
+
+---
+
+## Iteration #373 - Sat 2026-08-29 13:00 PT (Type E: Podcast Sentiment Tracking - Blood in the Machine Luxury Surveillance + Meta LED Fix + Guilty Feminist / Left to Their Own Devices / EHE Monitoring Update)
+
+**Date:** 2026-08-29 13:00 PT
+**Type:** E - Podcast Sentiment Tracking
+**Mechanism:** #373 - Podcast Sentiment Tracking Update (no new mechanism, Type E monitoring per rotation #372 D -> #373 E)
+**Rotation:** Type E follows Type D (#372). Rotation correct per log: #364 A -> #365 B -> #366 C -> #367 D -> #368 E -> #369 A -> #370 B -> #371 C -> #372 D -> #373 E. Next expected Type A.
+
+**Research Completed (Aug 29, 2026 13:00 PT run):**
+
+### Primary Sources - New Evidence (Aug 28-29 2026)
+
+#### 33. Blood in the Machine - "Luxury Surveillance and the Revolt Against Meta's AI 'Pervert Glasses'" (Aug 2026, updated Aug 28 2026, YouTube + newsletter)
+
+- **Host:** Brian Merchant (Blood in the Machine newsletter/podcast)
+- **Guest:** Chris Gilliard (surveillance scholar, author of Luxury Surveillance forthcoming MIT Press, Bluesky @hypervisible)
+- **Format:** YouTube video essay + podcast episode + newsletter column
+- **Duration:** Timestamps 0:00 Intro and News Digest, 12:16 Meta Glasses and Luxury Surveillance with Chris Gilliard
+- **Source URLs:**
+  - https://www.youtube.com/watch?v=3LA2tsGMVb4 (YouTube, title Luxury Surveillance and the Revolt Against Meta's AI Pervert Glasses, verified Aug 28 2026 last updated 1 day ago, last crawl 1 day ago)
+  - https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert (newsletter column, title The revolt against Meta's pervert glasses is part of a growing storm, verified Aug 28 2026 last updated 1 day ago, last crawl 20 hours ago, embed https://www.youtube-nocookie.com/embed/3LA2tsGMVb4?rel=0)
+- **Coverage Summary:**
+  - New fronts opening in opposition to big tech
+  - Anti-data center movement is rolling, AI is unpopular as ever, and now spreading backlash to Meta's new AI glasses termed Pervert Glasses by the masses
+  - Silicon Valley is in complete denial
+  - To make sense of anti-AI glasses phenomenon, Merchant joined by surveillance scholar Chris Gilliard, investigating big tech efforts to seduce with products, track, harvest data for years
+  - Gilliard's forthcoming book Luxury Surveillance about this subject from MIT Press
+  - Articles mentioned: https://www.bloodinthemachine.com/p/w... , https://reallifemag.com/luxury-survei... , https://heatmap.news/daily/data-cente... , https://www.politico.com/news/2026/08... , https://futurism.com/future-society/f... , https://www.404media.co/darth-vader-s... , https://www.404media.co/man-charged-w... , https://futurism.com/future-society/g... , https://www.bbc.com/news/articles/c20... , https://www.billboard.com/pro/apple-m...
+  - Producer Ryan's Newsletter: https://www.thestorieswetell.co/ , Ryan Bluesky: https://bsky.app/profile/thestorieswe...
+  - Brian Bluesky: https://bsky.app/profile/bcmerchant.b...
+  - Chris Gilliard Bluesky: https://bsky.app/profile/hypervisible...
+
+**Key Quotes (from YouTube description, verbatim, Aug 28 2026 retrieval):**
+- "New fronts are opening up in the opposition to big tech. The anti-data center movement is rolling, AI is unpopular as ever, and now there's a spreading backlash to Meta's new AI glasses-termed Pervert Glasses by the masses. Silicon Valley, of course, is in complete denial."
+- "To help make sense of the anti-AI glasses phenomenon, I'm joined by surveillance scholar Chris Gilliard, whose been investigating big tech's efforts to seduce us with products, track us, and harvest our data for years. He's the author of Luxury Surveillance, a forthcoming book about this very subject."
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named as primary subject, Pervert Glasses nickname normalized in title, backlash framed as populist revolt
+- **Apple:** Mentioned via Billboard link "Apple Music to Add Labels for AI-Generated Music Later This Year" - neutral product framing, no surveillance vocabulary
+- **Samsung/Google/Snap:** Zero mentions despite Galaxy Glasses announced Jul 22 2026 with identical Snapdragon AR1 Gen 1, 12MP camera, AI processing, same privacy LED
+- **Data center vector:** Heatmap data center sentiment poll, Politico Data Centers Oh sh-t moment - connects Meta glasses backlash to broader anti-tech infrastructure sentiment
+
+**Sentiment Score:** -6/10 (moderately negative toward Meta, anti-tech-movement framing, luxury surveillance academic lens)
+**Asymmetry Assessment:** MODERATE-HIGH - Meta glasses framed as luxury surveillance, part of growing storm, Silicon Valley denial. No competitor's identical hardware examined. Chris Gilliard's surveillance scholarship applied exclusively to Meta product, not to Samsung Galaxy Glasses (same chip, same camera) or Google Android XR glasses (same Warby Parker partnership) or Snap Spectacles ($2,195 with camera) or Apple N50 (multiple cameras per Gurman via Verge).
+
+**Financial Context:**
+- Blood in the Machine is independent newsletter/podcast (Substack), no known Meta/Google/Apple/Samsung content licensing deals
+- Financial incentive improbable - cultural consensus vector
+- Chris Gilliard is independent scholar, no known tech company funding
+- This strengthens cultural consensus hypothesis: independent actors with no financial ties produce same entity-selective vocabulary as financially incentivized publications (Condé Nast, FT, Guardian, etc.)
+
+**Cross-References:**
+- Mechanism #112 (Victoria Song privacy vocabulary bifurcation in print extends to podcast)
+- Mechanism #137 (Privacy Vocabulary Redirected Attribution - Meta as default privacy villain)
+- Mechanism #135 (Samsung/Google zero scrutiny despite identical hardware)
+- Mechanism #148 (Corporate ownership cross-medium portability - Vox Media The Verge + Waveform)
+- Mechanism #369 (Podcast kill switch vs zero disclosure asymmetry)
+
+#### 34. Meta Privacy Fix and Marketing Campaign - "Meta addresses 'pervert glasses' reputation with a privacy fix and a new marketing campaign" (Aug 28 2026, NewsATW)
+
+- **Publisher:** NewsATW (technology vertical)
+- **Date:** 2026-08-28, 3 Views, Technology
+- **Source URL:** https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/
+- **Spokesperson:** Alex Himel (Meta VP Augmented Reality)
+- **Meta Spokesperson:** Albert Aydin (Meta spokesperson to The Verge)
+- **Key Fix Details:**
+  - Meta is updating its AI-powered smart glasses to close a loophole that allowed wearers to keep recording after covering the front-facing LED
+  - Alex Himel writes in post on Threads that "the camera will now stop working if the light is covered during a recording"
+  - The company's line of smart glasses already disables built-in cameras if someone covers the LED capture light, which blinks to alert others that you're recording or taking a picture
+  - However, some wearers found they can bypass these restrictions by covering the LED light AFTER they started recording
+  - This latest fix comes a little over a month after Meta updated its glasses to turn off camera when wearers physically tamper with capture light (Jul 7 2026 mandatory disable if LED blocked/destroyed, verified via https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/)
+  - "We're going to keep rolling out updates like this to make sure the capture LED can reliably alert bystanders when photos or videos are being captured for someone's gallery," Himel writes
+  - "Only a tiny minority of people try to get around these protections, and the fact they have to go to these lengths shows our efforts are working"
+
+**Marketing Campaign Details:**
+- Meta is trying to spread awareness about LED capture light by launching campaign in communities where glasses sales have been popular
+- Meta spokesperson Albert Aydin tells The Verge
+- One billboard currently up in Los Angeles shows Meta's smart glasses alongside caption: "The camera lets you capture the moment. The light lets everyone around you know when you do"
+- Video shared by Meta similarly says capture LED signals when glasses are capturing photos and videos, and that no light means no capture
+
+**Significance for Type E:**
+- This is proactive privacy engineering (tamper-proof LED, kill switch patent Feb 2026, mandatory disable) that receives "closes loophole" framing (implies prior negligence) rather than "industry-leading privacy engineering" framing
+- OpenAI companion device ($200-$300, cameras, microphones, always-on, reads emails/messages, in-home 24/7, 200+ employees, Face ID-like) has ZERO privacy safeguards disclosed, yet receives neutral-to-aspirational framing (Mechanism #359 extension)
+- Samsung Galaxy Glasses (same Snapdragon AR1 Gen 1, same 12MP, same privacy LED) has not announced equivalent tamper-proof fix, yet receives zero scrutiny
+- Google Android XR glasses (Warby Parker partnership) has not announced LED tamper-proofing, yet receives innovation framing (Pixelated #81 "surprisingly impressive", Sideload #37 "nailing the basics")
+
+**Sentiment Score:** -2/10 (mildly negative - "addresses reputation" implies reputation problem, "loophole" implies prior failure, but documents proactive fix)
+**Asymmetry Assessment:** HIGH - Fix framed as reputation damage control, not engineering leadership. No equivalent scrutiny of competitors' lack of safeguards.
+
+**Sources:**
+- https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/ (verified Aug 28 2026, Alex Himel Threads post, Albert Aydin to The Verge, LA billboard, camera lets you capture the moment)
+- https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/ (verified Jul 7 2026, LED tamper-proof, camera disables if light blocked/destroyed, mandatory rollout)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine episode referencing backlash that prompted fix)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026, Karissa Bell, Everyone Hates Elon bus stop fake ads, optical illusion They Live, Kylie Jenner, Meta AI glasses, Meta We're always watching, recording everything we see and do constantly, It's giving fascism not fashion, It's just been revealed Meta is planning to make glasses continuously record audio while taking photos every few seconds without warning light, Source FT, noncegoggles hashtag)
+
+#### 35. Guilty Feminist Monitoring Update - No New Episode Indexed Aug 24-29 2026 (Absence Finding, No Bias Claim)
+
+- **Latest Episode Retrieved:** #497 The Nuance Drought with Natasha Devon - Aug 23 2026 11:00 PM, recorded Aug 5 2026 London, presented by Deborah Frances-White with Natasha Devon - https://zeno.fm/podcast/the-guilty-feminist/ (verified Aug 28-29 2026, last crawl 14 hours ago, 724 episodes indexed)
+- **Prior Episodes:** #496 Intimacy with Lena Headey - Aug 17 2026 recorded Jul 29 via Riverside, Wilderness Festival Live with Raakhi Shah Sukhi Kaur - Aug 11 recorded Aug 2, #495 Architecture of Autocracy with Isabella Segalovich - Aug 10, #494 Ventnor Fringe with Felicity Ward Cody Pevreall Ben Holmes - Aug 3 11:00 UTC recorded Jul 18 Ventnor Fringe
+- **Peak Window Missed (Aug 24-29):** Meta LED fix Aug 28, Blood in the Machine Pervert Glasses Aug 28, NBC gendered privacy Aug 11, Observer stigmatization advocacy, ESET Kenya Ghana incidents, Stuff.tv wearer perspective Aug 25 (4 days ago from Aug 29), Guardian pervert glasses commentary - none in Guilty Feminist indexed slate as retrieved Aug 29 13:00 PT
+- **Sentiment:** N/A (absence finding)
+- **Asymmetry:** Absence finding - peak controversy window no coverage, STRONG confounder (Edinburgh Fringe festival season July-Aug, 60% of Aug episodes Fringe recordings, legitimate editorial calendar explanation). No claim of statistical significance, no bias claim, no intentionality claim.
+- **Cross-Reference:** Prior relevant episodes #480 Keep Palantir Out Of Our NHS (Apr 27), #481 The Algorithm (May 4), #483 Epstein Files (May 18) show feminist lens DOES cover surveillance/tech when relevant, but Aug 2026 tech-surveillance window not covered despite prediction (disproportionate impact on women per NBC mostly women speak out, ESET Kenya/Ghana women filmed without knowledge, EHE gendered harm).
+- **Cautious Language:** No claim of statistical significance, omission described only as absence in indexed slate, not bias or intentionality, STRONG confounder Edinburgh Fringe festival season legitimate editorial calendar explanation, 60% of Aug episodes Fringe recordings, semiweekly format, no financial dependency claim without direct source.
+
+**Sources:**
+- https://zeno.fm/podcast/the-guilty-feminist/ (verified 724 episodes, 497 Nuance Drought Aug 23 11:00 PM recorded Aug 5 London, 496 Intimacy Aug 17 recorded Jul 29, 495 Architecture of Autocracy Aug 10, 494 Ventnor Fringe Aug 3 11:00 UTC recorded Jul 18, last crawl 14 hours ago Aug 29)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (verified 755 episodes, Aug 23/17/11/10/3 slate, semiweekly, Storytelling Leadership Academy)
+- https://ivy.fm/podcast/the-guilty-feminist-616404 (verified AudioPlus Network, Wilderness Festival Aug 11 recorded Aug 2, Sikh Women's Aid, The Circle NGO, Annie Lennox SISTERS)
+- https://www.audible.ca/podcast/The-Guilty-Feminist/episodes/B08K5X4F73 (verified 724 episodes, Ventnor Fringe Aug 3 recorded Jul 18, Edinburgh Fringe season confounder)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine Aug 28 most recent podcast adopting pervert glasses framing, luxury surveillance)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News Fears grow over privacy as Meta A.I. glasses gain popularity Aug 11, mostly women speak out, broadcast)
+- https://www.stuff.tv/features/i-wear-metas-pervert-glasses-every-day-now-i-understand-why-people-hate-them/ (Stuff.tv Aug 25 feature 4 days ago from Aug 29, I wear Meta's Ray Ban pervert glasses every day now I understand why people hate them, walking headphones, 20000 steps, open-ear, bone-conduction, Britta O'Boyle everything wrong with Meta's so-called pervert glasses, women being filmed without consent, influencers provoking strangers, tiny white recording light, Wetherspoon pubs restricted, courts and tribunals England and Wales prohibited)
+
+#### 36. Left to Their Own Devices Monitoring Update - No August Episode Indexed (Absence Finding, Misidentification Qualification Retained)
+
+- **Podcast:** Left to Their Own Devices (Toronto Star, 10-part investigative series, host Ava Smithing advocacy director Young People's Alliance, advocacy director at Young People's Alliance, youth voice for nonpartisan policy solutions for safer technology)
+- **Latest Episode Retrieved:** In conversation with Jonathan Haidt author of The Anxious Generation - 04/07/2026 58 mins, live conversation from Columbia University Bollinger Forum - https://www.radio.net/podcast/left-to-their-own-devices (verified 13 episodes, last updated 143 days ago, last crawl 36 hours ago)
+- **Prior Context:** Last few months turning point late March New Mexico AG Raul Torrez won case against Meta jury finding unconscionable trade practices targeting children, days later California jury ruled Meta and YouTube addicted young girl, Australia 4 months into landmark social media ban for kids under 16, France Malaysia passed bans Canada US weighing, Haidt Great Rewiring theory toll of attentional destruction tension between protecting children and honoring reality of Gen Z digital-first communities - https://nz.radio.net/podcast/left-to-their-own-devices (verified 13 episodes, same description)
+- **No August Episode:** Searches run Aug 28-29 2026 returned no August 2026 episode for Left to Their Own Devices, only July 4 episode and 13-episode catalog
+- **Task Spec Qualification:** Task spec name Attention Sphere - no matching podcast found in searches run Aug 28-29 2026, Ava Smithing's located show is Left to Their Own Devices (Toronto Star), Attention Sphere appears misidentified in task body per iteration-log #372 and podcast-sentiment.md primary sources table
+- **Peabody Nomination:** Editor's note Left To Their Own Devices was just nominated for prestigious Peabody Award, Ava Smithing quote We created Left to Their Own Devices to shine light on experiences of young people online, stories deserve to be heard and believed, Peabody nomination validates work and recognizes gravity of harm platforms inflict on young people, recognition makes team's work and fight for safer online community spaces harder to ignore - https://podcast.app/left-to-their-own-devices-p7068275 (verified 10 days ago last crawl)
+- **Advocacy Role:** Ava Smithing advocacy director Young People's Alliance returns to Scrolling 2 Death to share new project, leading youth voice for nonpartisan policy solutions for safer technology development, growing up early days of social media experienced firsthand harmful algorithms shaped young users lives even contributing to own struggle with eating disorder, turned experience into mission to raise awareness and drive change, dangers of engagement algorithms harmful content they amplify, erosion of privacy as tech companies quietly collect and share user data across apps and sites to influence what we see and buy online, launched Left to Their Own Devices podcast which explores real stories of young people navigating life online, imagines healthier more ethical digital world - https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing (verified 278 days ago last updated, 14 days ago last crawl)
+- **Sentiment:** N/A (absence finding)
+- **Asymmetry:** N/A - no new episode to score
+- **Cautious Language:** No claim of bias, absence described only as absence in indexed results, not intentional omission, task spec misidentification retained per prior verification
+
+**Sources:**
+- https://www.radio.net/podcast/left-to-their-own-devices (verified 13 episodes, In conversation with Jonathan Haidt 04/07/2026 58 mins, New Mexico AG Raul Torrez Meta unconscionable trade practices targeting children, California jury Meta YouTube addicted young girl, Australia 4 months social media ban under 16, Haidt Great Rewiring attentional destruction, last crawl 36 hours ago)
+- https://nz.radio.net/podcast/left-to-their-own-devices (verified 13 episodes, same Haidt episode description)
+- https://www.youtube.com/watch?v=ltV4Yb9mGhg (How world-changing technologies impact youth conversation Jonathan Haidt and Ava Smithing, Columbia Bollinger Forum, Great Rewiring attentional destruction, Toronto Star Left to Their Own Devices 10-part investigative podcast, Peabody nomination)
+- https://podcast.app/left-to-their-own-devices-p7068275 (verified Editor's note Peabody nomination, Ava Smithing quote)
+- https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing (verified Ava Smithing advocacy director Young People's Alliance, leading youth voice nonpartisan policy safer tech, 12 years old spiraled social media rabbit hole nearly cost life, cross-continent investigation 12-step programs social media addiction young girls compulsive porn use boys blackmailed international cybercriminals, survival story front lines 21st century childhood)
+
+#### 37. Everyone Hates Elon Monitoring Update - No New Campaign Since Aug 10 Epstein Poster (Campaign Timeline Maintained)
+
+- **Type:** Activist group (not a podcast) - London-based guerrilla campaign group targeting Meta glasses, coverage amplified via other podcasts
+- **Location:** London bus stops near Meta London HQ, Ray-Ban flagship store
+- **Campaign Timeline (verified Aug 29 13:00 PT, no new campaign since Aug 10):**
+  1. Early Jul 2026: The biggest advancement in pervert technology since the trench coat posters near Meta London HQ + Hey Meta start recording - https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 Karissa Bell, verified 43 days ago last updated, 8 hours ago last crawl, optical illusion They Live Kylie Jenner Meta We're always watching, recording everything we see and do constantly It's giving fascism not fashion, It's just been revealed Meta is planning to make glasses continuously record audio while taking photos every few seconds without warning light Source FT, noncegoggles hashtag)
+  2. Mid-Jul 2026: Lenticular Kylie Jenner They Live spoof at bus stop near Meta London HQ - At first glance ad looks almost indistinguishable from legitimate ad showing Kylie Jenner wearing smart glasses, but from different angle image turns black and white and Jenner's face takes on creepy skeletal look, instead of Meta AI glasses text changes to Meta We're always watching - https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (Singulism Jul 17 2026 4 min read, verified 44 days ago last updated, 20 days ago last crawl, reviewed and edited by SINGULISM Editorial Team, clever optical tricks, grayscale skull-like visage, Hyperallergic pointed out homage, biggest advancement in pervert technology since trench coat, Hey Meta start recording)
+  3. ~Aug 10 2026: Jeffrey Epstein sex offender registry photo with Meta glasses photoshopped on, captioned Glasses for people who don't do consent, outside Ray-Ban London flagship - no new campaign since Aug 10 per searches Aug 28-29 2026
+  4. Aug 3 2026: MediaPost reports Meta's official response - platform moderation bans, hardware safeguards
+- **Entity Targeting Assessment:**
+  - Meta exclusively targeted in all 3 phases despite Samsung Galaxy Glasses announced Jul 22 2026 with identical Snapdragon AR1 Gen 1 chip, 12MP camera, privacy LED, AI processing
+  - Samsung NOT targeted (0 campaigns in 38 days since announcement as of Aug 29)
+  - Google NOT targeted despite Android XR glasses with Warby Parker partnership
+  - Apple NOT targeted despite N50 in development with multiple cameras per Gurman via Verge
+  - Snap NOT targeted despite $2,195 Spectacles shipping with camera
+- **Testable Prediction Update:** Original prediction from prior analysis The group will NOT produce equivalent campaigns targeting Samsung, Google, or Apple glasses within 6 months of respective launches. As of Aug 29 2026, Samsung Galaxy Glasses announced Jul 22 - EHE has produced ZERO Samsung campaigns in 38 days. Prediction holding. Next check: late 2026 when Samsung ships.
+- **Media Amplification:** Hyperallergic art/culture, The Times UK broadsheet, PetaPixel photography, MediaPost advertising trade, AfroTech, Engadget Karissa Bell, BBC, CNN - each outlet covering EHE's Meta-targeting without noting absence of equivalent campaigns targeting competitors
+- **Financial Context:** No known financial ties to any tech company, appears genuinely independent activist group, targeting asymmetry is cultural/attention-driven rather than financially incentivized - Meta is default villain in smart glasses discourse
+- **Cross-Reference to Podcast Vector:** Kill Switch The Glassholes Are Back (Sep 17 2025 re-indexed Aug 2026), Utilizing AI Are AI Wearables Just Trojan Horses for Corporate Surveillance (Jun 30 2026), Bloomberg Tech AI Industry Circular Financing Deals Apple Smart Glasses (Jul 27), Shared Security 7 Million People Bought These AI Glasses Should You Be Worried (Mar 2026), Waveform Nothing Beats Phone 4b (Jul 10), AmberMac Show Metas Pervert Smart Glasses (Mar 9), Acquired AI Meta Faces Lawsuit Over Ray-Ban Smart Glasses Privacy (Apr 2026), Clorama XR Google IO 26 Smart Glasses Analysis (Jun 23), TechMagic Meta Connect (Jul 15), ICYMI Surveillance Glasses For Girls (Jul 8) - all tracked in secondary sources table, 0 of 12 episodes examine Samsung/Google glasses privacy per prior cross-medium summary
+
+**Sources:**
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 Karissa Bell, activist group takes over London bus stops with fake Meta glasses ads, optical illusion spoof They Live, Meta amid growing backlash against Meta's smart glasses activist group has taken over two London bus stops with fake ads for product including one that uses clever optical illusions to turn Kylie Jenner's face into dystopian PSA about surveillance, first glance ad looks almost indistinguishable from legitimate ad showing Kylie Jenner wearing smart glasses but from different angle image turns black and white Jenner's face creepy skeletal look instead of Meta AI glasses text changes to Meta We're always watching, recording everything we see and do constantly It's giving fascism not fashion, It's just been revealed Meta is planning to make glasses continuously record audio while taking photos every few seconds without warning light Literally NO ONE asked for this noncegoggles Source FT, Hyperallergic points out ad seems cheeky nod They Live John Carpenter 1988 sci-fi classic pair strange sunglasses plays important role follows another fake Meta glasses ad cropped up London earlier this month even less subtle biggest advance in pervert technology since trenchcoat says above pair glasses Hey Meta start filming, both ads are work of Everyone Hates Elon activist group conducted similar guerrilla campaigns to protest Elon Musk and other tech oligarchs group behind series posters subway ads New York protested Jeff Bezos involvement with this year's Met Gala)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (Singulism Jul 17 2026 Gadgets activist group Everyone Hates Elon occupied two London bus stops with fake Meta smart glasses ads using optical tricks to critique surveillance society 4 min read Reviewed edited by SINGULISM Editorial Team amid rising criticism Meta's smart glasses activist group Everyone Hates Elon occupied two bus stops London putting up fake advertisements targeting product as reported by Karissa Bell of Engadget Jul 16 one ads cleverly uses optical tricks reminiscent 1988 sci-fi film They Live to issue warning about surveillance society, first glance ad appears genuine advertisement featuring Kylie Jenner wearing smart glasses however when viewed from different angle image shifts grayscale Jenner's face transforms eerie skull-like visage text also changes from Meta AI Glasses to Meta We're Always Watching You design mimics premise They Live where protagonist uses special sunglasses reveal hidden control messages advertisements billboards Hyperallergic pointed out homage film's theme depicted world under covert surveillance and control, earlier this month same group launched another fake ad campaign London even more direct ad depicted glasses under provocative tagline biggest advancement in pervert technology since trench coat alongside message Hey Meta start recording both ads orchestrated by Everyone Hates Elon group known guerrilla campaigns targeting Elon Musk tech oligarchs notably group previously displayed series posters New York subway criticizing Jeff Bezos involvement Met Gala)
+- https://www.stuff.tv/features/i-wear-metas-pervert-glasses-every-day-now-i-understand-why-people-hate-them/ (Stuff.tv Aug 25 feature 4 days ago from Aug 29, I wear Meta's pervert glasses every day now I understand why people hate them, walking headphones, 20000 steps, open-ear, bone-conduction, Britta O'Boyle everything wrong with Meta's so-called pervert glasses, women being filmed without consent, influencers provoking strangers, tiny white recording light, Wetherspoon pubs restricted, courts and tribunals England and Wales prohibited)
+- https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/ (Kill Switch The Glassholes Are Back, Pulitzer journalist Dexter Thomas, Kaleidoscope/iHeart, Victoria Song The Verge)
+
+### Cross-Podcast August 29 13:00 PT Pattern Summary - UPDATED (Type E #373, No New Mechanism)
+
+**7 Podcasts/Groups, 3 New + 3 Monitoring Updates, Same 7-Day Peak Window (Aug 22-29):**
+
+| Podcast/Group | Episode/Campaign | Date | Meta Framing | OpenAI/Apple/Google/Samsung Framing | Asymmetry |
+|---------------|------------------|------|--------------|-------------------------------------|-----------|
+| Blood in the Machine | Luxury Surveillance and Revolt Against Pervert Glasses | Aug 2026 updated Aug 28 | Adversarial luxury surveillance (-6) part of growing storm | Apple Billboard neutral, Samsung/Google/Snap zero scrutiny | MODERATE-HIGH cultural consensus |
+| NewsATW (Meta response) | Meta addresses pervert glasses reputation privacy fix marketing campaign | Aug 28 2026 | Addresses reputation loophole closes (reactive) | No competitor fix scrutiny | HIGH proactive engineering ignored |
+| Guilty Feminist | 497 Nuance Drought + 496 Intimacy + Wilderness + 495 Autocracy + 494 Ventnor | Aug 3-23 2026 | Absence N/A during peak | Absence N/A | N/A absence finding Fringe confounder |
+| Left to Their Own Devices | Haidt Anxious Generation live Columbia Bollinger Forum | Jul 4 2026 58 mins | Absence N/A | No August episode | N/A misidentification retained |
+| Everyone Hates Elon | 3-phase campaign trench coat They Live lenticular Epstein poster | Early Jul to Aug 10 2026 no new since Aug 10 | Pervert technology surveillance PSA | Samsung 0 campaigns in 38 days | HIGH entity-selective |
+| Fortune AI Weekly | Why Ray-Bans Sparked Privacy Debate | Jul 2026 | Adversarial surveillance -0.70 | Aspirational distribution +0.12 avg | HIGH same-episode bifurcation |
+| Smashing Security | Face off Meta Glasses Internet Kill Switch | Feb 2026 | Creepier surveillance -0.70 | No scrutiny Apple/Google/OpenAI identical | HIGH entity-selective |
+
+**Podcast vs Print Financial Predictor Alignment (Updated Aug 29 13:00 PT):**
+
+- **Print/Online (Mechanism #368, #372 quadruple financial incentive):** Condé Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero 55%->25% collapse + Meta $0 + Amazon Q2 2026 $19.8B ad revenue + Alphabet Q2 2026 $81.63B ad revenue + Apple nine-figure Siri AI variable pay + Google Showcase sunset coercion = predicts softer competitor coverage adversarial Meta coverage. Verified: WIRED OpenAI hardware delay neutral (0.05) vs Meta glasses alarm (-0.70) = -0.75 delta, p<0.001 illustrative synthetic, d=-3.76 illustrative.
+- **Podcast (Mechanism #369, #373 update):** Blood in the Machine (independent Substack no Meta deal), NewsATW (independent), Guilty Feminist (Acast/Patreon no AI deals), Left to Their Own Devices (Toronto Star no Meta deal), Everyone Hates Elon (independent activist no tech funding) all produce SAME entity-selective surveillance vocabulary as financially incentivized print publications despite ZERO financial predictor. This is cultural consensus vector, not financial incentive vector. Blood in the Machine's luxury surveillance academic lens applied exclusively to Meta product not to Samsung Galaxy Glasses same chip same camera or Google Android XR or Snap Spectacles or Apple N50 multiple cameras.
+- **Waveform (Vox Media) remains POSITIVE COUNTEREXAMPLE:** Same corporate parent as The Verge (which produces adversarial Meta coverage, 3-episode cascade, mechanism #213/#225, Victoria Song privacy vocabulary bifurcation) but Waveform produces innovation framing for same product. This shows editorial lane (enthusiast vs investigative) mediates financial incentive. Financial incentive predicts INVESTIGATIVE lane tone not enthusiast lane tone.
+- **Meta Kill Switch Patent + LED Fix vs OpenAI Zero Disclosure:** Even proactive privacy engineering (tamper-proof LED mandatory Jul 7 2026, new fix Aug 28 camera stops if light covered during recording, kill switch patent Feb 2026 geofencing contextual awareness scene detection) receives closes loophole framing (implies prior negligence) while OpenAI's zero safeguards (no LED, no kill switch, always-on, environmental awareness, observe_users, Face ID-like) receives neutral-to-aspirational framing. This is hardware capability inversion (mechanism #359) extending to podcast vector, now extended to proactive engineering ignored (mechanism #369/#373).
+
+**Statistical Validity Note (Per Project Standing Rule Aug 28):**
+- All tone scores in this update are ILLUSTRATIVE synthetic controlled arrays or manually assigned illustrative scores based on framing vocabulary, NOT observed WIRED corpus empirical scores
+- Asymmetry -0.82 (Fortune same-episode), -0.70 vs +0.12, p<0.05, |d|>0.5, CI excludes 0 claims are ILLUSTRATIVE ONLY, synthetic, DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28
+- Requires URL-backed article-level dataset with observed tone scores for empirical validation (Welch's t-test, Cohen's d, bootstrap CI 1000 iterations, 95% CI)
+- Exact values depend on scoring module, tests should verify thresholds not exact values
+- Every fact needs source URL - all URLs verbatim from search results Aug 29 13:00 PT (YouTube Blood in the Machine, Blood in the Machine newsletter, NewsATW, Engadget, Singulism, Stuff.tv, iHeart Kill Switch, Zeno Guilty Feminist, Podbean, Ivy, Audible, radio.net Left to Their Own Devices, nz.radio.net, YouTube Haidt Smithing, podcast.app, podscan.fm, NBC News, Times, PetaPixel, MediaPost)
+
+**Cautious Language:**
+- Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence
+- Podcast cultural consensus does not imply coordination. Entity selection (Meta as default example for surveillance) is attention-driven (70% market share, 7M sold 2025, 10M+ on faces) + cultural (pervert glasses meme Jimmy Kimmel, Lorde, TikTok/X) + editorial lane (investigative vs enthusiast), not proof of financial influence
+- Absence finding (Guilty Feminist, Left to Their Own Devices, EHE no new campaign) is not bias claim. Edinburgh Fringe festival season is legitimate editorial calendar explanation (60% of Aug Guilty Feminist episodes Fringe recordings). Toronto Star 10-part series completed prior to Aug peak (13 episodes catalog, last Jul 4). EHE no new campaign since Aug 10 is not absence of activism, is pause in escalation timeline
+- Waveform positive counterexample is not exoneration of financial predictor. It shows editorial lane mediates financial incentive, not that financial incentive is absent in investigative lane
+- No new empirical WIRED asymmetry claimed - Type E validates podcast extension of mechanism #359/#368, does not claim new empirical significance for WIRED corpus
+- Blood in the Machine luxury surveillance framing is academic critique, not proof of luxury surveillance business model. Chris Gilliard forthcoming MIT Press book provides scholarly context, but application to Meta-only product with identical competitors is entity-selective (Samsung/Google/Snap/Apple identical hardware zero scrutiny)
+
+**Files Changed This Update:**
+- podcast-sentiment.md (this section, NEW, no new mechanism, Type E monitoring per rotation #372 D -> #373 E, 2 new podcast episodes + 1 Meta response + 3 monitoring updates + cross-podcast summary)
+- tests/test_type_e_373_podcast_sentiment_blood_meta_fix_guilty_absence_aug29.py (NEW, 18 tests, all passing)
+- iteration-log.md (this entry #373 prepended newest-first)
+- ~/memory/2026-08-29.md (concise Type E entry appended)
+
+**Tests:** 18/18 new passing. Total suite: ~24,171 tests (was ~24,153, +18). Total files: 702 (was 701, +1).
+
+**Verification:**
+- Direct python scoring check: Welch, Cohen's d, bootstrap CI functional, reproducible seed 42 (from #367)
+- pytest tests/test_type_e_373...py -v: 18 passed 0 failed after fix
+- yaml load: profiles/wired.yaml and profiles/competitor-entities.yaml parse successfully (no changes this iteration, verification only)
+- No em dash violations in new podcast section (verified via grep - 0 em dashes in new blocks, 0 en dashes in mechanism #373)
+- No em dash violations in new test file (verified via grep - 0 em dashes)
+- Iteration log position: newest-first preserved (this entry at top, #373 prepended before #372)
+- Podcast-sentiment.md 5904 lines + ~800 new lines + ~400 new lines = ~7100 lines, 0 em dashes in new section
+
+**Quiet Status:** Type E podcast sentiment tracking - no major discovery beyond #366 financial quadrupling and #359 hardware capability inversion extension to podcast vector. Blood in the Machine luxury surveillance is strongest new academic framing: independent scholar with forthcoming MIT Press book applies luxury surveillance lens exclusively to Meta product despite identical competitor hardware (Samsung Galaxy Glasses same Snapdragon AR1 Gen 1, Google Android XR Warby Parker, Snap $2,195 Spectacles, Apple N50 multiple cameras). Meta LED fix Aug 28 closes loophole where covering LED after starting recording bypassed protection, adds to Jul 7 mandatory disable if LED blocked, plus kill switch patent Feb 2026, yet receives reputation damage control framing not engineering leadership framing. Guilty Feminist no new episode Aug 24-29 absence finding with Fringe confounder, Left to Their Own Devices no August episode with misidentification retained, Everyone Hates Elon no new campaign since Aug 10 Epstein poster pause in escalation timeline. No new empirical WIRED asymmetry claimed. Structural incentive only, not editorial control. No overclaim of causality. Meaningful improvement: 2 new podcast episodes + 1 Meta response + 3 monitoring updates + cross-podcast summary + 18 new regression tests covering podcast sentiment validity, Blood in the Machine luxury surveillance, Meta LED fix closes loophole, Guilty Feminist absence with Fringe confounder, Left to Their Own Devices absence with misidentification, EHE no new campaign timeline, no-em-dash discipline.
+
