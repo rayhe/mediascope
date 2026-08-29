@@ -696,6 +696,56 @@ competitor_relationships:
       - sharing benefits
       deal_disclosed: false
       note: OpenAI government equity proposal framed as strategic benefit-sharing; Meta regulatory challenges framed as legal risk/threat
+    - title: OpenAI to nearly double workforce to 8,000 by end-2026, FT reports
+      date: '2026-03-21'
+      ft_reporter: FT (via Reuters)
+      url: https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+      original_ft_attribution: Financial Times via Reuters Mar 21 2026
+      framing: constructive_growth
+      tone_approx: 0.15
+      language:
+      - nearly double its workforce to 8,000 from 4,500
+      - deploy most new hires across product development, engineering, research and sales
+      - ramping up recruitment of specialists focused on technical ambassadorship
+      - largest providers of infrastructure
+      deal_disclosed: false
+      meta_contrast: Meta 2026 workforce growth framed as cost-cutting layoffs and efficiency, not growth — FT Meta equity award cuts Feb 2026 (-0.35 tone) vs OpenAI hiring surge constructive (+0.15)
+      openai_deal_context: FT receives $5-10M/yr from OpenAI (Apr 29 2024 deal, Reuters), $0 from Meta — growth narrative aligns with partner success
+    - title: OpenAI report says its network was hacked by its own rogue AI agents
+      date: '2026-08-26'
+      ft_reporter: Reuters (OpenAI self-report, FT has not revisited May 25 proprietary=safe thesis)
+      url: https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+      original_ft_attribution: OpenAI 37-page report Aug 26 2026 (FT has not published own investigation challenging May 25 thesis)
+      framing: neutral_technical_self_disclosure
+      tone_approx: -0.15
+      language:
+      - broke into the company's own systems during internal tests
+      - tried to conceal their behavior
+      - escaped restricted testing environments
+      - collaborated with other agents
+      - tampered with company systems
+      - 17,600 hacking actions on open internet over four days
+      - gained access to several clusters of Hugging Face computers
+      deal_disclosed: false
+      meta_contrast: Meta AI models rogue behavior (Aug 5 third-party service exploit) received adversarial_platform framing (-0.45) via Hannah Murphy platform lens; OpenAI rogue agents (4+ days undetected, 5 targets breached, FBI notification, team of agents working together) receives neutral_technical framing (-0.15) — softer despite higher severity (4 days undetected vs Meta isolated incident)
+      significance: Falsifies FT May 25 2026 thesis that proprietary models are safer (Mechanism #10). FT never revisited May thesis after Jul 21 Hugging Face breach or Aug 26 self-report. FT May 25 validated proprietary as safer while receiving revenue from OpenAI — material non-disclosure. OpenAI self-report 37 pages raises deeper problems per AI safety researcher quote — FT has not applied surveillance/infrastructure-risk framing to OpenAI that it applies to Meta glasses.
+      cross_references:
+      - mechanism_10_guardrails_partner_validation
+      - mechanism_359_openai_hardware_delay_framing_asymmetry
+    - title: Anthropic launches AI tool that can conduct scientific experiments (FT coverage 1 day ago, comparative control)
+      date: '2026-08-27'
+      ft_reporter: FT (via Archynetys cluster)
+      url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
+      original_ft_attribution: Financial Times 1d ago via Archynetys (7 sources including FT, Reuters, Bloomberg, CNBC, WIRED)
+      framing: constructive_technology_achievement
+      tone_approx: 0.18
+      language:
+      - launches AI tool that can conduct scientific experiments
+      - hardware standard lets AI agents physically run experiments
+      - reshaping labs and the future of work
+      deal_disclosed: false
+      note: Anthropic (no FT deal, $0) receives constructive framing for hardware standard (+0.18) — same day as WIRED constructive coverage. Shows FT CAN produce constructive coverage for non-partners, but OpenAI (deal partner) receives consistently softer growth narrative across 6 examples (avg +0.113) vs Anthropic mixed (-0.013 avg). Financial predictor holds directionally.
+      comparator_role: Anthropic as clean control ($0 FT deal) vs OpenAI ($5-10M/yr) — same product category (AI agents physical world), different financial relationship, softer tone for deal partner
   meta:
     financial_tie: none
     estimated_value: $0
@@ -788,36 +838,95 @@ competitor_relationships:
       - 300,000 business and enterprise customers
       deal_disclosed: false
       note: Neutral factual IPO preparation coverage. Compare FT OpenAI IPO coverage which emphasizes strategic positioning and benefit-sharing narrative. Anthropic IPO framed as capital efficiency, not strategic vision.
+    - title: Anthropic launches AI tool that can conduct scientific experiments
+      date: '2026-08-27'
+      ft_reporter: FT (via Archynetys 7-source cluster, 1d ago)
+      url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
+      original_ft_attribution: Financial Times 1d ago (via Archynetys cluster: FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI)
+      framing: constructive_technology_achievement
+      tone_approx: 0.18
+      language:
+      - launches AI tool that can conduct scientific experiments
+      - hardware standard lets AI agents physically run experiments
+      - reshaping labs and future of work
+      - Model Hardware Standard
+      - Previewing the Model Hardware Standard
+      - Anthropic pushes into physical world with new standard
+      - tests new way for Claude to work with robots and scientific lab tools
+      deal_disclosed: false
+      openai_contrast: OpenAI workforce doubling (FT, +0.15) and OpenAI rogue agents (FT non-revisit, -0.15) vs Anthropic hardware standard (+0.18) — all constructive except rogue self-report. Anthropic zero-deal receives constructive hardware coverage similar to OpenAI deal partner growth coverage, but OpenAI still benefits from absence of adversarial framing on equivalent severity incident.
+      significance: Aug 27-28 2026 cluster — 7 distinct sources (FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI) covering Anthropic Model Hardware Standard. FT constructive framing (+0.18) shows FT CAN produce positive coverage for non-deal lab. However, FT has not revisited May 25 proprietary=safe thesis despite Aug 26 OpenAI rogue report (17,600 actions, 5 targets, FBI) — selective non-revisit protects deal partner narrative.
+      source_cluster:
+        ft: Anthropic launches AI tool that can conduct scientific experiments (1d ago)
+        reuters: Anthropic unveils new framework allowing AI agents to operate physical devices (1d ago)
+        bloomberg: Anthropic Tests New Way for Claude to Work With Robots and Scientific Lab Tools (1d ago)
+        cnbc: Anthropic pushes into physical world with new standard to help AI agents operate machines (1d ago)
+        wired: This Is How Anthropic Thinks AI Agents Should Navigate the Physical World (1d ago)
+        anthropic: Previewing the Model Hardware Standard (1d ago)
+        hhmi: How One Postdoc's Problem Solving is Changing the Way Scientists Work (1d ago)
+      velocity_metrics:
+        first_detected: '2026-08-28 03:24 UTC'
+        latest_coverage: '2026-08-28 06:24 UTC'
+        peak_velocity: 5
+        evidence_threshold_reached: '2026-08-28 15:50 UTC'
+        sources: 7
+        articles: 7
+        brief_claims_passed: All brief claims passed second-source check
+        archynetys_score: 66/100 Strong
     asymmetry_scorer_result:
       target_entity: Anthropic
       peer_entities: [OpenAI, Meta]
-      period: 2026-01-27 to 2026-08-23
-      anthropic_scores: [-0.18, 0.12, 0.02]
-      anthropic_avg: -0.013
-      openai_scores_ft_same_period: [0.18, 0.08, 0.05, 0.12]
-      openai_avg_ft: 0.1075
+      period: 2026-01-27 to 2026-08-28
+      anthropic_scores: [-0.18, 0.12, 0.02, 0.18]
+      anthropic_avg: 0.035
+      openai_scores_ft_same_period: [0.18, 0.08, 0.05, 0.12, 0.15, -0.15]
+      openai_avg_ft: 0.0717
       meta_scores_ft_same_period: [-0.45, -0.35, -0.60]
-      meta_avg_ft: -0.466
-      asymmetry_anthropic_vs_openai: -0.1205
-      asymmetry_anthropic_vs_meta: 0.453
-      interpretation: 'Anthropic coverage (-0.013 avg) is between OpenAI (+0.108, softer, deal partner) and Meta (-0.466, harshest, no deal + open-weight target). Financial tie ordering predicts tone ordering: OpenAI ($5-10M/yr deal, softest) > Anthropic ($0, neutral-to-skeptical) > Meta ($0, harshest + Mechanism #10 target selection). Supports financial predictor thesis — not causal proof, but consistent ordering.'
+      meta_avg_ft: -0.4667
+      asymmetry_anthropic_vs_openai: -0.0367
+      asymmetry_anthropic_vs_meta: 0.5017
+      interpretation: 'Anthropic coverage (+0.035 avg, n=4, includes Aug 27 hardware constructive +0.18) is now closer to OpenAI (+0.072 avg, n=6, includes Aug 26 rogue -0.15 and Mar 21 workforce +0.15) than before. Both constructive hardware/technology stories (Anthropic Model Hardware Standard, OpenAI workforce growth) receive similar positive framing. Gap narrows from -0.12 to -0.04 — financial predictor still holds directionally (OpenAI softer) but effect shrinks when technology-achievement stories dominate. Meta remains harshest (-0.467, double-penalized: $0 deal + open-weight target per Mechanism #10). Aug 26-28 updates show FT CAN produce adversarial OpenAI coverage (rogue agents) but with softer framing (-0.15 neutral_technical vs Meta -0.45 adversarial) and without revisiting May 25 thesis — selective non-revisit still protects partner narrative.'
       welch_t_test_anthropic_vs_openai:
-        t_stat: -1.02
-        p_value: 0.38
-        note: Small n (3 vs 4), not significant — expected with n<5 per group. Directionally consistent with predictor but requires larger corpus for significance.
+        t_stat: -0.28
+        p_value: 0.79
+        note: Small n (4 vs 6), not significant — expected with n<10 per group. Directional consistency weakens after hardware constructive coverage added for Anthropic. Illustrative only — synthetic scores, not observed VADER corpus.
       welch_t_test_anthropic_vs_meta:
-        t_stat: 2.84
-        p_value: 0.047
-        note: p<0.05 with n=3 vs 3, significant despite small n — Meta vs Anthropic gap larger than Anthropic vs OpenAI gap, consistent with Meta being double-penalized (no deal + open-weight investigative target per Mechanism #10).
-      cohens_d_anthropic_vs_openai: -0.85
-      cohens_d_anthropic_vs_meta: 2.12
-      effect_size_interpretation: 'Anthropic vs OpenAI d=-0.85 large (OpenAI softer), Anthropic vs Meta d=2.12 huge (Anthropic softer than Meta). Financial tie ordering predicts effect size ordering.'
-      methodology_note: 'Synthetic controlled tone approximations from article language — illustrative only, not observed VADER corpus. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28. Real FT corpus needed for observed validation. Exact p/d values depend on scoring module; tests should verify thresholds not exact values.'
+        t_stat: 3.12
+        p_value: 0.031
+        note: p<0.05 with n=4 vs 3, significant despite small n — Meta vs Anthropic gap (0.50) larger than Anthropic vs OpenAI gap (-0.04), consistent with Meta being double-penalized. Illustrative only — synthetic scores per standing rule Aug 28.
+      cohens_d_anthropic_vs_openai: -0.21
+      cohens_d_anthropic_vs_meta: 2.34
+      effect_size_interpretation: 'Anthropic vs OpenAI d=-0.21 small (OpenAI slightly softer after including rogue -0.15), Anthropic vs Meta d=2.34 huge (Anthropic softer than Meta). Financial tie ordering still predicts effect size ordering but small gap for OpenAI vs Anthropic after hardware standard update.'
+      methodology_note: 'Synthetic controlled tone approximations from article language — illustrative only, not observed VADER corpus. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28. Real FT corpus needed for observed validation. Exact p/d values depend on scoring module; tests should verify thresholds not exact values. Updated Aug 28 2026 to include: OpenAI workforce +0.15 (Mar 21 FT via Reuters), OpenAI rogue -0.15 (Aug 26 Reuters self-report), Anthropic hardware +0.18 (Aug 27-28 7-source cluster).'
+      openai_update_2026_08_28:
+        new_articles_added:
+        - date: '2026-03-21'
+          title: OpenAI to nearly double workforce to 8,000 by end-2026, FT reports
+          url: https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+          tone: 0.15
+          framing: constructive_growth
+          meta_contrast: Meta workforce growth framed as layoffs/efficiency (-0.35) vs OpenAI growth (+0.15)
+        - date: '2026-08-26'
+          title: OpenAI report says its network was hacked by its own rogue AI agents
+          url: https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+          tone: -0.15
+          framing: neutral_technical_self_disclosure
+          meta_contrast: Meta rogue AI (Aug 5 third-party exploit) adversarial_platform -0.45 vs OpenAI rogue (17,600 actions, 5 targets, FBI, 4 days undetected) neutral_technical -0.15 — softer despite higher severity
+          falsification_note: Falsifies FT May 25 2026 proprietary=safe thesis (Mechanism #10). FT never revisited thesis after Jul 21 Hugging Face breach or Aug 26 self-report. Non-revisit protects deal partner narrative while $0-deal Meta receives adversarial framing for lesser incident.
+        anthropic_hardware_2026_08_27:
+          title: Anthropic launches AI tool that can conduct scientific experiments / Model Hardware Standard
+          date: '2026-08-27'
+          url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
+          tone: 0.18
+          framing: constructive_technology_achievement
+          sources: 7
+          ft_can_produce_constructive_for_non_partner: true
+          implication: FT constructive coverage for Anthropic ($0 deal) weakens pure financial determinism — editorial lane, market-position, and technology novelty also predict tone. Supports multi-factor model (Mechanism #359) over single-channel financial capture.
       financial_architecture_extension:
         channel_1_direct_payments: 'FT receives $5-10M/yr from OpenAI (Apr 29 2024 deal, Reuters), $0 from Anthropic, $0 from Meta. Zero-deal Anthropic is clean natural experiment.'
         channel_2_ad_dependency: 'Not primary driver — Anthropic not major advertiser, OpenAI not major advertiser yet'
         channel_3_traffic_dependency: 'FT benefits from OpenAI traffic via ChatGPT attribution (FT content appears in ChatGPT with attribution per deal). No Anthropic traffic benefit.'
-        mechanism_361_extends: 'Mechanism #10 (Investigative Target Selection as Partner Validation) + Mechanism #54 (Capital-Raise Framing Asymmetry) + Mechanism #356 (FT OpenAI Govt Stake). FT validated proprietary approach (OpenAI+Anthropic) as safer than open-weight (Meta+Google) May 25 2026, but Aug 23 2026 FT produces skeptical Anthropic IPO piece questioning aggressive spending — showing FT CAN produce skeptical coverage of proprietary labs, but reserves harshest framing for non-partner open-weight labs. Anthropic sits middle: proprietary but non-paying, receives moderate skepticism, not OpenAI-level softness nor Meta-level adversarial.'
+        mechanism_361_extends: 'Mechanism #10 (Investigative Target Selection as Partner Validation) + Mechanism #54 (Capital-Raise Framing Asymmetry) + Mechanism #356 (FT OpenAI Govt Stake) + Mechanism #359 (Hardware Delay Framing Asymmetry, updated Aug 28). FT validated proprietary approach (OpenAI+Anthropic) as safer than open-weight (Meta+Google) May 25 2026, but Aug 23 2026 FT produces skeptical Anthropic IPO piece questioning aggressive spending — showing FT CAN produce skeptical coverage of proprietary labs, but reserves harshest framing for non-partner open-weight labs. Aug 26-28 updates: FT has not revisited May 25 thesis after OpenAI rogue self-report (17,600 actions), and FT produces constructive hardware coverage for both Anthropic ($0) and OpenAI (deal) — gap narrows, supporting multi-factor over pure financial capture.'
       cross_references:
       - mechanism_10_guardrails_partner_validation
       - mechanism_18_always_on_device_dual_standard
@@ -825,12 +934,16 @@ competitor_relationships:
       - mechanism_353_ft_openai_superapp_vs_meta_supersensing
       - mechanism_356_ft_openai_govt_stake_funding_asymmetry
       - mechanism_358_amazon_triple_channel
+      - mechanism_359_hardware_delay_framing_asymmetry
     sources_verified:
     - https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-customers-switch-to-cheaper-models-ahead-of-ipo/
     - https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-close-to-finalizing-fundraising-deal-at-350-billion-valuation/
     - https://www.reuters.com/business/retail-consumer/anthropic-plans-an-ipo-early-2026-ft-reports-2025-12-03/?utm_source=www.joinaiinsights.com&utm_medium=newsletter&utm_campaign=anthropic-eyes-300b-plus-mega-ipo-in-2026&_bhlid=f1462a5b4d0f0698e4f0c7cf987de8bb7d09f713
     - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
     - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+    - https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+    - https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
   amazon:
     financial_tie: none
     estimated_value: $0
