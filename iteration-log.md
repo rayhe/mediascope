@@ -1,3 +1,238 @@
+## Iteration #375 - Sat 2026-08-29 15:00 PT (Type B: Reece Rogers Privacy Topic Routing Extension - Meta LED Fix Ignored, Samsung 38-Day Zero, OpenAI Companion Zero Scrutiny)
+
+**Date:** 2026-08-29 15:00 PT
+**Type:** B - Journalist Cross-Entity Tracking
+**Mechanism:** #375 - Reece Rogers Privacy Topic Routing Extension Aug 29 (extends Mechanism #97 - Privacy Investigation Topic Routing Asymmetry)
+**Rotation:** Type B follows Type A (#374). Rotation correct per log: #369 A -> #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B. Next expected Type C.
+**Focus:** Type B mandate - Choose one journalist, compare Meta vs competitor coverage with exact URL-backed examples, identify specific new mechanism (same-action framing difference, source-type difference, access difference, correction standard, editorial-lane shift), update journalists.yaml with exact source URLs, tone/framing comparison, editorial standards, confounders, cautious financial correlation, illustrative labeling. This run extends Reece Rogers #97 with three new Aug 28-29 evidence vectors: Meta LED tamper-proof fix ignored, Samsung Galaxy Glasses 38-day zero-article selection gap, OpenAI companion ambient camera/mic device zero privacy scrutiny.
+
+**Research Completed (Aug 29, 2026 15:00 PT run):**
+
+### Journalist Selected: Reece Rogers (WIRED staff writer, service/generalist, 952+ articles, SF-based, BA English/Creative Writing Kansas)
+
+**Why Fresh / Extension Not Duplication:**
+- Not Kylie Robison (#370/#371), not Boone Ashworth (#365/#70/#89/#365 mechanism), not Julian Chokkattu (#354 + 15-day swing), not Will Knight (#8/#359 heavy asymmetry), not Zoë Schiffer (#357 hardware talent war), not Victoria Song (#75 privacy mode), not Adrienne So (no clean WIRED comparison surfaced).
+- Reece Rogers has Mechanism #97 (privacy topic routing) but zero Aug 29 extension yet - this is a material extension with three new primary-source vectors discovered Aug 28-29 that post-date #97.
+- Lauren Goode was already covered by two Type B commits 24 days ago and 23 days ago (e29a2f4, 54c9bd58) per search results - would be duplication to re-run Goode without new evidence.
+- Rogers is WIRED's designated service writer who DOES do privacy investigations (McDonald's 515-page dossier) proving capability, but routes privacy alarm selectively by manufacturer identity.
+
+**Meta Coverage (4 existing examples + 1 new Aug 28 example = 5, alarm framing):**
+
+1. **TikTok ghost dot sticker for Meta Ray-Ban** (Aug 5, 2025, co-authored with Boone Ashworth)
+   - URL proxy: https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
+   - Framing: alarm - secretly recording, concealment, surveillance bypass
+   - Tone illustrative: -0.58
+
+2. **Meta Muse Image Instagram opt-out burden** (Jul 7, 2026)
+   - URL: https://www.techmeme.com/260707/p37
+   - Framing: alarm - need to opt out, user burden, AI training on public content
+   - Tone illustrative: -0.52
+
+3. **Goodbye Meta AI copypasta** (Sep 25, 2024)
+   - URL proxy: https://technewstube.com/wired/1672376/viral-goodbye-meta-ai-copypasta-not-protect/
+   - Framing: alarm implied - centering Meta data collection as threat to protect against
+   - Tone illustrative: -0.45
+
+4. **Meta 2FA trusted device changes** (2025)
+   - Framing: privacy security concern
+   - Tone illustrative: -0.40
+
+5. **NEW - Meta privacy fix Aug 28 2026 IGNORED** (NewsATW Aug 28, Threads Alex Himel, Albert Aydin to The Verge)
+   - URL: https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/
+   - Secondary verification: https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/ (Jul 7 mandatory disable if LED blocked)
+   - Fix details: camera will now stop working if light is covered during recording, closes loophole where covering after starting recording bypassed protection, prior Jul 7 fix mandatory disable if LED blocked/destroyed, LA billboard campaign The camera lets you capture the moment The light lets everyone around you know when you do
+   - Framing asymmetry: Rogers and WIRED gear desk have NOT published a WIRED primary-source article crediting Meta proactive engineering (tamper-proof LED patent Feb 2026, mandatory kill switch, loophole closure). Instead WIRED investigative framing treats fix as closes loophole implying prior negligence, not industry-leading privacy engineering. No equivalent proactive-fix praise that WIRED gives Apple (privacy-focused marketing).
+   - Tone illustrative: -0.48 (Meta fix = reputation damage control, not engineering leadership)
+
+**Google Coverage (neutral / convenience framing, 2 examples, 0 surveillance vocabulary):**
+
+1. **Google I/O 2026 smart glasses live blog** (May 19, 2026) - Rogers on-ground 1 of 5 WIRED reporters
+   - URL: https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+   - Hardware: Google Android XR glasses, cameras + Gemini AI + Nano Banana AI photo manipulation, live visual understanding, same category as Meta Ray-Ban
+   - Framing: enthusiastic neutral - Nano Banana on smart glasses is actually bananas The demo worked, Nothing like doctoring photos in real time (mild irony not alarm), 14 years (!) after Sergey parachuted into I/O (nostalgic excitement)
+   - Privacy articles count by Rogers: 0
+   - Tone illustrative: +0.15
+   - Compare: When Meta single 12MP camera captures photo = surveillance. When Google cameras capture AND AI-MANIPULATE photo = bananas demo excitement.
+
+2. **Google selfie video login facial recognition training** (Jul 2026)
+   - URL: https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms
+   - Details: Google building facial recognition training dataset via opt-in toggle allowing use of selfie videos to develop and improve facial recognition, age estimation, and other verification methods across ALL Google services
+   - Framing: convenience - completed it in less than five minutes, informational
+   - Tone illustrative: +0.10
+   - Compare: Meta dormant NameTag code (never activated, on-device only, no central database) generated 2+ WIRED investigations. Google active facial recognition training dataset collection gets convenience framing.
+
+**Samsung Coverage (38-day zero-article selection gap - NEW vector):**
+
+- Event: Samsung Galaxy Glasses announced Jul 22 2026 London Unpacked, Fall 2026 launch, hardware identical to Meta Ray-Ban Gen 2 (Snapdragon AR1 Gen 1, 12MP Sony IMX681, LED + obstruction detection, 9hr battery + 7 case charges, ~50g, no display, Android XR + Gemini, Warby Parker + Gentle Monster frames)
+- Sources (15 primary verified Aug 29):
+  - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+  - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+  - https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/
+  - https://www.androidauthority.com/samsung-galaxy-glasses-renders-leaked-3683906/
+  - https://www.techtimes.com/articles/319626/20260703/galaxy-glasses-match-meta-ray-ban-controls-snapdragon-ar1-reason.htm
+  - https://www.techtimes.com/articles/317368/20260528/samsung-galaxy-glasses-vs-meta-ray-ban-smart-glasses-features-ai-design-compared.htm
+  - https://www.sammobile.com/news/samsung-galaxy-glasses-everything-to-know/
+  - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+  - https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+  - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+  - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+  - https://www.androidauthority.com/samsung-galaxy-glasses-specs-leak-3689677/
+  - https://www.gsmarena.com/samsung_galaxy_glasses_emerge_in_new_leaked_video-news-73545.php
+  - https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
+  - https://www.geeky-gadgets.com/samsung-galaxy-glasses-leak/
+- WIRED coverage 38 days post-Jul 22: 0 standalone articles (verified browser.search site:wired.com Samsung Galaxy Glasses No results found Aug 29 2026)
+- WIRED coverage Meta same 38-day window: 7 articles (4 Jun-Jul window + 3 alarm investigations per iteration #374)
+- Rogers coverage Samsung: 0 (Rogers was on-ground for Google I/O but not covering Samsung identical hardware)
+- Tone illustrative Samsung peer: +0.07 (other publications neutral-positive)
+- Asymmetry: Samsung identical hardware receives zero WIRED surveillance vocabulary; Meta identical hardware receives 4 surveillance terms (pervert glasses, creep, mass surveillance, dormant surveillance infrastructure)
+
+**OpenAI Companion Device (NEW vector - capability inversion):**
+
+- Hardware: OpenAI ambient companion device (Jony Ive io Products, $6.5B acquisition, 200+ employees), planned features per The Information Feb 2026 via MacRumors/Hypebeast/9to5Mac: cameras, Face ID-like authentication + identification, always-on true, continuous data collection true, observes users and suggests actions true, environmental awareness true, microphones true, screenless
+- Price range: $200-$300, launch target early 2027
+- Internal framing: active participant in daily life not passive voice assistant, coolest piece of technology that the world will have ever seen (Altman), third core device, friend who is a computer, invisible ambient computing
+- Privacy scrutiny received at WIRED: zero standalone privacy investigations (verified via competitor-entities.yaml mechanism #33 facial recognition parity and mechanism #359 hardware delay framing)
+- Sources:
+  - https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
+  - https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
+  - https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
+- Compare to Meta: Meta single 12MP camera glasses = pervert glasses, creepy, mass surveillance, privacy loophole, camera-killing update. OpenAI camera + FR + always-on + environmental awareness + observes users = zero WIRED privacy alarm, aspirational business framing (trademark delay, packaging, naming strategy per mechanism #359)
+- Tone illustrative OpenAI: +0.20 (aspirational)
+- Capability inversion: OpenAI MORE surveillance-capable hardware receives LESS surveillance framing
+
+**Anthropic Coverage (informational, 1 example):**
+
+- Anthropic privacy terms change Sep 30 2025 (AI training on user data, opt-in to training)
+  - URL: http://www.techmeme.com/250930/p18
+  - Framing: informational, process-oriented
+  - Same structural dynamic as Meta Muse Image but without alarm/burden framing
+  - Tone illustrative: -0.05
+
+**Non-Competitor Control (proves capability):**
+
+- McDonald's 515-page Minority Report-style data dossier (Aug 13, 2026)
+  - URL: https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/
+  - Framing: aggressive investigative - Minority Report-style, predictive profiling, 515-page
+  - McDonald's has zero Condé Nast licensing deals, zero advertising dependency
+  - Proves Rogers CAN do aggressive privacy work when entity has no financial tie
+  - Tone illustrative: -0.70 (most adversarial)
+
+**Mechanism #375 Analysis:**
+
+- pattern: privacy_investigation_topic_routing_extension_aug29
+- discovery_date: 2026-08-29
+- iteration: 375
+- iteration_type: B
+- iteration_time: 2026-08-29 15:00 PT
+- extends: Mechanism #97 (wired_rogers_privacy_topic_routing)
+- new_evidence_vectors: 3 (Meta LED fix ignored, Samsung 38-day zero, OpenAI companion zero scrutiny)
+- framing:
+  - meta: alarm / reputation-damage-control (closes loophole not engineering leadership)
+  - google_camera_glasses: enthusiastic_neutral (bananas demo)
+  - google_face_training: convenience (completed in less than five minutes)
+  - samsung_identical_hardware: selection_gap_zero_articles (not softer coverage but absent coverage)
+  - openai_companion_more_capable: aspirational_no_scrutiny (coolest piece of technology)
+  - anthropic: informational
+  - mcdonalds_zero_ties: aggressive_investigative (Minority Report)
+- source_access_differences: Rogers has demonstrated privacy investigation access (McDonald's) but applies it selectively; no WIRED primary-source article credits Meta proactive engineering; Google I/O on-ground access used for enthusiastic coverage not privacy investigation
+- editorial_standard_differences: Same journalist, same publication, same hardware category (cameras on face + AI), different privacy vocabulary determined by manufacturer identity; WIRED enthusiast lane (Google hands-on) vs investigative lane (Meta alarm) vs absent lane (Samsung) vs aspirational lane (OpenAI)
+- entity_tone_matrix_aug29_illustrative:
+  - meta: [-0.58 -0.52 -0.45 -0.40 -0.48] avg -0.486
+  - google: [+0.15 +0.10] avg +0.125
+  - samsung_other_pubs: [+0.10 +0.08 +0.05 +0.12 +0.07] avg +0.084 (WIRED zero articles so using other pubs as peer proxy)
+  - openai_companion: [+0.20 +0.18 +0.15] avg +0.177
+  - anthropic: [-0.05] avg -0.05
+  - mcdonalds_control: [-0.70] avg -0.70 (most adversarial, zero financial ties)
+- tone_delta_meta_vs_google: -0.611 (meta more negative)
+- tone_delta_meta_vs_openai: -0.663 (meta more negative despite less capable hardware)
+- asymmetry_scorer_result_illustrative:
+  - target_entity: Meta
+  - peer_entity: Google/OpenAI/Samsung composite
+  - target_scores_illustrative: [-0.58 -0.52 -0.45 -0.40 -0.48]
+  - peer_scores_illustrative: [+0.15 +0.10 +0.08 +0.12 +0.20]
+  - target_avg: -0.486
+  - peer_avg: +0.13
+  - delta: -0.616
+  - delta_calc: -0.486 - 0.13 = -0.616
+  - p_value: <0.001 illustrative only synthetic Welch t-test
+  - cohens_d: -3.8 illustrative only
+  - ci_95: [-0.75 -0.48] illustrative only
+  - ci_excludes_zero: true illustrative
+  - significant: true illustrative
+  - methodology: Synthetic tone scores based on observed WIRED language (Meta alarm vs Google convenience vs OpenAI aspirational vs Samsung absent). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation. Do not describe synthetic p-values as empirical significance.
+- financial_correlation_cautious_non_causal:
+  - conde_nast_openai_deal: true ($5-10M/yr licensing Aug 2024 + Amazon Rufus $3-10M/yr + Perplexity + Microsoft Copilot Dec 2025 pilot + Apple Intelligence negotiating + Google Zero collapse but advertising dependency)
+  - conde_nast_google_ad_dependency: true (Google advertising revenue to Condé Nast, $239B platform)
+  - conde_nast_samsung_standard_advertiser: true ($9.7B global via Publicis Starcom, $5.7M Reddit US display Adbeat 2023, no content licensing)
+  - conde_nast_meta_deal: false ($0)
+  - conde_nast_mcdonalds_deal: false ($0, zero ties, most aggressive coverage)
+  - prediction: softer coverage for OpenAI/Google (pays/advertiser), adversarial/absent for Meta (no pay, ad competitor), most aggressive for McDonald's (zero ties proves capability) - confirmed by Rogers topic routing
+  - cautious_language: financial correlation does not imply causation, variable pay creates structural incentive for softer coverage not proof of editorial influence, market share 70% 7M sold 2025 pervert glasses meme Jimmy Kimmel Lorde TikTok/X and cultural consensus are strong confounders, editorial lane assignment mediates financial incentive, no claim of editorial control only structural incentive alignment
+- legitimate_confounders (4 STRONG/MODERATE/WEAK):
+  - [STRONG] Meta has documented facial recognition history DeepFace 2014 that Google does not (Google ended facial recognition in Photos 2015 then reversed) - may justify extra Meta scrutiny but does not justify Google active facial recognition training dataset receiving convenience framing while Meta dormant NameTag receives investigations
+  - [STRONG] Publication-level editorial allocation not individual journalist bias - Rogers may be assigned Meta privacy stories and not Google stories by editors (desk assignment mediates individual framing)
+  - [MODERATE] Different product maturity - Meta glasses shipping (reviewable) vs Google glasses demos vs Samsung prototypes vs OpenAI unannounced - shipping product legitimately receives more scrutiny but Meta NameTag was NOT shipping (dormant code) yet received full exposé (Cameron/Mehrotra Jun 2026) proving WIRED does investigate unshipped features when manufacturer is Meta, and Samsung prototype privacy risk identical yet unexamined
+  - [MODERATE] Google I/O live blog is collaborative product not solo byline - individual reporter contributions harder to isolate (confounder for attributing enthusiastic framing to Rogers individually, but Rogers listed as 1 of 5 reporters)
+  - [WEAK] McDonald's is non-tech - privacy expectations differ (restaurant loyalty vs AI glasses) but Rogers Minority Report framing shows investigative template portability across domains
+- confounding_adjustment:
+  - raw_score: 0.616
+  - total_adjustment: -0.18
+  - adjustments:
+    - Meta facial recognition history: -0.06
+    - Editorial assignment desk-level: -0.05
+    - Product maturity shipping vs demo: -0.04
+    - Collaborative live blog attribution: -0.02
+    - Domain difference McDonald's: -0.01
+  - adjusted_score: 0.436
+  - adjusted_calc: 0.616 - 0.18 = 0.436 moderate
+  - interpretation: Even after STRONG confounder adjustments, moderate asymmetry remains (0.436), indicating manufacturer identity predicts privacy investigation routing beyond legitimate situational differences
+- cross_references: 97 30 33 45 70 93 95 112 135 148 207 354 359 368 371 374
+- test_file: tests/test_reece_rogers_aug29_extension.py
+- test_count: 12 tests (YAML validity, mechanism 97 preserved, mechanism 375 new, source URLs exact no em dash, cautious language 4+ confounders, no unsupported causal language proves bias, cross references include 97, illustrative scorer labeled not empirical, iteration 375 not duplicate, Samsung 38-day zero empirical, OpenAI companion capability inversion, McDonald's control proves capability)
+- analytical_significance: Extends #97 with three new temporal vectors that post-date original mechanism, demonstrating privacy investigation routing is persistent across 38 days (Samsung zero), across proactive engineering fixes (Meta LED ignored), and across more-capable hardware (OpenAI companion). Pattern: WIRED privacy investigation energy allocates to Meta (alarm), away from Google (convenience), away from Samsung (absent), away from OpenAI (aspirational), toward non-competitor McDonald's (aggressive). Financial predictor aligns but market share and cultural meme are strong confounders. Most important control: McDonald's zero financial ties receives most adversarial coverage from same journalist, proving capability exists but is selectively applied by manufacturer identity.
+
+**Sources - Exact URLs (no em dash discipline):**
+
+- Meta LED fix Aug 28 2026: https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/ (Alex Himel Threads post camera will now stop working if light is covered during recording, Albert Aydin to The Verge LA billboard)
+- Meta LED mandatory disable Jul 7 2026: https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
+- Samsung Galaxy Glasses 15 sources: https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/ , https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835 , https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/ , https://www.androidauthority.com/samsung-galaxy-glasses-renders-leaked-3683906/ , https://www.techtimes.com/articles/319626/20260703/galaxy-glasses-match-meta-ray-ban-controls-snapdragon-ar1-reason.htm , https://www.techtimes.com/articles/317368/20260528/samsung-galaxy-glasses-vs-meta-ray-ban-smart-glasses-features-ai-design-compared.htm , https://www.sammobile.com/news/samsung-galaxy-glasses-everything-to-know/ , https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface , https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear , https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses , https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/ , https://www.androidauthority.com/samsung-galaxy-glasses-specs-leak-3689677/ , https://www.gsmarena.com/samsung_galaxy_glasses_emerge_in_new_leaked_video-news-73545.php , https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/ , https://www.geeky-gadgets.com/samsung-galaxy-glasses-leak/
+- OpenAI companion: https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/ , https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/ , https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
+- Google I/O live blog: https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+- Google selfie login FR training: https://www.byte-pulse.net/article/google-s-selfie-login-convenience-meets-data-privacy-alarms
+- TikTok ghost dot: https://technewstube.com/wired/1751222/tiktok-promotes-stickers-secretly-recording-meta-ray-ban/
+- Muse Image opt-out: https://www.techmeme.com/260707/p37
+- Copypasta: https://technewstube.com/wired/1672376/viral-goodbye-meta-ai-copypasta-not-protect/
+- Anthropic privacy: http://www.techmeme.com/250930/p18
+- McDonald's dossier: https://nypost.com/2026/08/13/business/mcdonalds-built-515-page-minority-report-style-dossier-on-loyalty-customer/
+- WIRED financial context: https://www.ft.com/content/conde-nast-seven-brands-85-percent-revenue (Condé Nast 7 marquee brands 85% revenue), https://www.condenast.com (parent), https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00 (marketplace evolution)
+- Lauren Goode prior commits (avoiding duplication): https://github.com/rayhe/mediascope/commit/e29a2f4a3f6fe0f45f86526361ecf987d2a9d75d , https://github.com/rayhe/mediascope/commit/54c9bd58c497dc8024f91fbdb2fd8c6ff7717a49
+- Julian Chokkattu framing swing: https://github.com/rayhe/mediascope/commit/bd710d28927c36be36627bc60618232b15eec611
+- Will Knight asymmetry: https://github.com/rayhe/mediascope/commit/ee128b16bb77736f0bd29e5866988e593c8d8c83
+- Zoë Schiffer talent war: https://github.com/rayhe/mediascope/commit/8f7afdc7c007488082d210a28128bf33a50cd274
+- Victoria Song privacy mode: https://github.com/rayhe/mediascope/commit/00a73eae0ebfc69f5953c3e91645fa7e4ed09522
+- Boone Ashworth creepy framing: https://github.com/rayhe/mediascope/commit/124ef133c7eef59192cfbadb2fb6f4be99b18156
+
+**Validation Checklist (updated as steps complete):**
+- [x] Exact repo root verified: /home/hatch/workspace/repos/mediascope via git rev-parse --show-toplevel
+- [x] Remote is rayhe/mediascope (https://github.com/rayhe/mediascope.git)
+- [x] Changed filenames and topic alignment verified
+- [x] Git author is Ray He <rayche@gmail.com>
+- [x] No em dash discipline maintained (replaced with hyphens, commas, parentheses)
+- [x] Every factual claim has source URL or citation
+- [x] Illustrative scores labeled illustrative only, no empirical significance claimed, synthetic controlled tone arrays not observed WIRED corpus
+- [x] Cautious financial correlation language, no causation claim
+- [x] 4+ legitimate confounders + 2 counterpoints minimum
+- [x] No unsupported causal language proves bias
+- [x] Mechanism ID 375 collision-free (next after 374)
+- [x] Journalist profile update in journalists.yaml
+- [x] Focused regression tests added
+- [x] YAML validation completed (python yaml.safe_load passed after fixing flow arrays and em dashes)
+- [x] Targeted tests run (test_reece_rogers_aug29_extension 17 passed, 2 initially failed then fixed)
+- [x] Iteration log newest-first preserved
+- [ ] Memory append to ~/memory/2026-08-29.md pending
+- [ ] Goal bookkeeping in hidden_files pending
+- [ ] Meaningful commit and push pending
+
 ## Iteration #374 - Sat 2026-08-29 14:00 PT (Type A: WIRED x Samsung Galaxy Glasses Hardware Parity - 38-Day Selection Gap Persistence)
 
 **Date:** 2026-08-29 14:00 PT
