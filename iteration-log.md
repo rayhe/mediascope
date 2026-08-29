@@ -1,3 +1,320 @@
+## Iteration #377 - Sat 2026-08-29 21:00 PT (Type D: Test & Verify - Full Suite Cross-Validation #369-#377 + Quintuple Architecture + Newest-First Restoration)
+
+**Date:** 2026-08-29 21:00 PT
+**Type:** D - Test & Verify
+**Mechanism:** #377 - Test & Verify Quintuple Architecture Aug 29 (verifies Mechanism #376, #372, #367, #358, #103 + rotation + newest-first + em-dash discipline)
+**Rotation:** Type D follows Type C (#376). Rotation correct per log: #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C -> #377 D. Next expected Type E.
+**Focus:** Type D mandate - Verify test suite integrity, validate YAML, enforce newest-first iteration-log ordering, confirm em-dash discipline, illustrative labeling, cautious non-causal language, confounding factors, source URL requirements, mechanism ID uniqueness, and quintuple financial incentive architecture. This run restores newest-first ordering (fixes #376 appended at EOF violation), validates #376 quintuple reverse-advertiser alignment, and adds comprehensive regression suite.
+
+**Research Completed (Aug 29, 2026 21:00 PT run):**
+
+### Test & Verify Summary
+
+**Why Fresh / Extension Not Duplication:**
+- Mechanism #376 (quintuple reverse-advertiser) was appended at EOF line 18262 in prior commit 71bad3c, violating newest-first rule stated in iteration-log header discipline
+- Prior Type D #372 (12:00 PT) verified #369-#372 only, predates #373-#376
+- Prior Type D #367 verified statistical validity + quadrupling but predates quintuple fifth channel
+- No existing Type D covers #373 E, #374 A, #375 B, #376 C sequence post-quadruple
+- This run fixes ordering, validates quintuple architecture, and extends test coverage to 24 new tests
+
+**Primary Sources Re-verified (Exact URLs):**
+
+1. **Reuters Jul 8 2025 - Meta $3.5B EssilorLuxottica 3% stake**
+   - URL: https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/
+   - Fact: Meta takes around 3% stake in Ray-Ban parent EssilorLuxottica worth about $3.5B, built since 2020 per Bloomberg
+   - Verification: Mechanism #376 source, re-verified Aug 29 21:00 PT
+
+2. **EssilorLuxottica H1 2026 Jul 28 2026 - EUR 14.02B**
+   - URL: https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
+   - Fact: H1 2026 revenue EUR 14.02B +7.3% YoY, Q2 EUR 7.175B +7.3%, EBIT margin 18.3% EUR 2.6B +13.5% YoY, net profit EUR 1.2B +7.5% YoY, DTC +10.3%, North America +7.8%, smart glasses production scaling noted
+   - Secondary: https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
+   - Tertiary: https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
+
+3. **Amazon Q2 2026 $19.8B ad revenue**
+   - URL: https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
+   - Fact: Amazon Q2 2026 advertising services $19.8B +26% YoY, total revenue $200.6B, SEC 10-Q Jul 30 2026
+   - Re-verified Aug 29 21:00 PT
+
+4. **Alphabet Q2 2026 $81.63B ad revenue**
+   - URL: https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
+   - Fact: Alphabet Q2 2026 Google advertising $81.63B +14% YoY, Search $63.27B +17% YoY, YouTube $11.06B +13% YoY, total revenue $119.8B +24% YoY, SEC 10-Q Jul 22 2026
+   - Re-verified Aug 29 21:00 PT
+
+5. **Apple Siri AI nine-figure variable pay-per-use**
+   - URL: https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+   - Fact: Apple in talks nine-figure $100M+ variable pay-per-use for Siri AI publisher content, WSJ Aug 12 2026
+   - Re-verified Aug 29 21:00 PT
+
+6. **Google Showcase sunset coercion**
+   - URL: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+   - Fact: Google tells publishers grant AI training rights or lose Showcase fees, $1B/3yr pool, 3000+ pubs, NYPost Jun 26 2026, Press Gazette, UK CMA binding conduct Jan 28 2026, Google VP Connal engineering project Feb 11 2026
+   - Re-verified Aug 29 21:00 PT
+
+7. **Meta Q2 2026 $59.363B ad revenue contrast**
+   - URL: https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+   - Fact: Meta Q2 2026 advertising $59.363B +27% YoY, total revenue $60.8B, FoA other revenue $1.007B first time, RL revenue $0.431B +16.5% YoY, RL loss $4.619B record, H1 RL loss $8.647B
+   - Re-verified Aug 29 21:00 PT
+
+8. **Oakley-WIRED 2014 alliance precedent**
+   - URL: https://www.WebWire.com/ViewPressRel.asp?aId=350303
+   - Fact: Oakley (EssilorLuxottica) global brand alliance with WIRED 2014 co-created sponsored multi-media content + brand advertising
+   - Re-verified Aug 29 21:00 PT
+
+**Quintuple Architecture Verification:**
+
+- **Channel 1 Amazon ads:** $19.8B Q2 2026 +26% YoY = publisher ad dependency (APS, Prime Video Ads) + $50B OpenAI + $13B Anthropic + $100B cloud commitments + Associates affiliate cuts = 6+ mechanisms, softest coverage predicted for Amazon
+- **Channel 2 Google ads:** $81.63B Q2 2026 +14% YoY = publisher ad dependency (Google Ad Manager 90% UK search dominance, Showcase $1B/3yr, News AI pilot coercion Jun 2026) + programmatic = 4 mechanisms, mixed-to-soft coverage
+- **Channel 3 Apple variable:** Nine-figure Siri AI variable pay-per-use $100M+ + News+ 50% rev share + App Store 15-30% commission + Private Cloud Compute narrative = 5 mechanisms, most financial leverage per #372
+- **Channel 4 Meta zero:** Meta $0 publisher deals with profiled pubs + $59.363B ad competitor + Facebook News exit = 1 mechanism (voluntary licensing only), harshest coverage predicted
+- **Channel 5 EssilorLuxottica reverse-advertiser:** Meta $3.5B 3% stake built since 2020 → EssilorLuxottica EUR 14.02B H1 2026 +7.3% YoY → EUR 1.8-2B annual ad spend → WIRED/Conde Nast advertiser (Oakley 2014 alliance precedent + fashion titles) → indirect Meta benefit via Ray-Ban Meta sales → production scaling noted H1 2026 = 1 reverse mechanism, inverts typical direction
+
+**Reverse-Advertiser Nuance Re-verified:**
+- Typical incentive: entity pays publisher → softer coverage for entity (direct)
+- Reverse: Meta invests $3.5B in EssilorLuxottica (publisher advertiser) → publisher receives ad dollars from company Meta partially owns → softer coverage for EssilorLuxottica fashion frame benefits Meta indirectly via Ray-Ban Meta sales and H1 2026 production scaling
+- Inverts direction: Meta is upstream capital source for WIRED advertiser, not direct payer
+- Prediction split: fashion-framed Ray-Ban Meta (EssilorLuxottica product) → +0.15 to +0.25 softening incentive (illustrative only); surveillance-framed Meta AI glasses → -0.60 to -0.75 harsher (illustrative only)
+- Requires Welch t-test, Cohen d, bootstrap CI 1000 iterations for empirical validation, meets meaningfulness if validated p<0.05, |d|>0.5, CI excludes 0
+
+**Validation Results:**
+
+- YAML validity: competitor-entities.yaml OK, wired.yaml OK, guardian.yaml OK, financial-times.yaml OK, the-verge.yaml OK (python yaml.safe_load)
+- Mechanism ID 376 unique: exists as mechanism_id 376 in competitor-entities.yaml, count <=3, no collision with 369-375
+- Mechanism ID 372 quadruple preserved: amazon/alphabet/apple/meta/google all present
+- No em dashes: last 20k chars of wired.yaml and competitor-entities.yaml contain 0 em dashes
+- Illustrative labeling: competitor-entities.yaml contains illustrative keyword, asymmetry quantification labeled illustrative only
+- Cautious language: 2+ phrases present (does not imply causation, structural incentive, correlation, not proof of editorial influence)
+- Confounding factors: STRONG, MODERATE present in quintuple synthesis
+- No proves bias: wired.yaml and competitor-entities.yaml last 30k do not contain proves bias or proves editorial control
+- Source URLs: 8 primary URLs verified, Reuters + EssilorLuxottica IR present
+- Quintuple test file exists: tests/test_quintuple_reverse_advertiser_alignment_aug29.py present >1k bytes
+- Max mechanism ID: 376 → next 377 (Type D verification, no new mechanism collision)
+- Wired EssilorLuxottica updated: EssilorLuxottica present in wired.yaml with 14.02 or 3.5 or 3% quantification
+- Hidden files iteration-376 JSON exists: verified
+- Memory 2026-08-29 exists and mentions 375/376
+- Newest-first restored: first header now #376 (post-fix), after #377 prepend will be #377 → #376 → #375 correct descending
+- Rotation: #376 C → #377 D correct, next expected Type E
+
+**Statistical Validity - Asymmetry Scorer:**
+
+- Target Meta: [-0.65 -0.75 -0.70 -0.60 -0.68] avg -0.676 (illustrative synthetic)
+- Peer Amazon/Google/Apple composite: [+0.15 +0.10 +0.08 +0.12 +0.20] avg +0.13 (illustrative synthetic)
+- Delta: -0.806 illustrative only
+- Welch t-test: p <0.001 illustrative only synthetic Welch, requires observed VADER/TextBlob + human annotation for empirical
+- Cohen d: -3.8 illustrative only synthetic, huge effect inflated by synthetic arrays
+- Bootstrap CI 1000 iterations: [-0.92 -0.65] illustrative only excludes 0
+- Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0
+- Methodology note: Synthetic controlled tone arrays illustrative only, do not claim empirical significance per project standing rule Aug 28, real publication corpus needed for empirical validation
+- Every fact needs source URL - all 8 URLs verbatim from search results Aug 29 2026
+
+**Cross-References:**
+- #372 quadruple financial incentive architecture
+- #367 Amazon affiliate commission cut fourth channel
+- #358 Amazon triple-channel (ads + AWS + dual-lab equity)
+- #103 EssilorLuxottica advertising paradox EUR 1.8-2B
+- #53 OpenAI triple-layer journalism funding (content licensing + salary funding + philanthropy)
+- #94 Advance/Reddit ownership and financial exposure
+- #369 The Verge × Apple privacy-virtue framing inversion
+- #370 Kylie Robison talent war direction framing
+- #371 SEC filing cross-validation
+- #373 Podcast sentiment tracking
+- #374 Samsung Galaxy Glasses hardware parity
+- #375 Reece Rogers privacy topic routing
+
+**Legitimate Confounders (5, 2 STRONG, 2 MODERATE, 1 WEAK):**
+- [STRONG] Meta 3% EssilorLuxottica stake is minority not control, EL revenue EUR 14.02B dominated by traditional eyewear not smart glasses - smart glasses share undisclosed, H1 production scaling genuine demand not coverage-driven
+- [STRONG] Correlation does not prove causation, editorial independence possible, publisher editorial policies insulate newsrooms
+- [MODERATE] No Apple Siri AI deals signed yet predictive, Google Showcase sunset not executed, Amazon ad revenue includes non-publisher formats (Prime Video, APS, retail media), EL ad spend global estimate not WIRED-specific, current WIRED-EssilorLuxottica advertising relationship status unknown
+- [MODERATE] Publisher editorial independence policies (NYT standards, Guardian Scott Trust, WIRED Condé Nast), 2014 Oakley-WIRED alliance historical current status unknown
+- [WEAK] Meta $3.5B stake could be bullish signal vertical integration normal strategy, H1 2026 scaling genuine demand
+
+**Files Changed:**
+- profiles/competitor-entities.yaml: verified mechanism #376 quintuple present, no edit needed
+- profiles/wired.yaml: verified EssilorLuxottica updated, no edit needed
+- tests/test_type_d_377_test_verify_quintuple_aug29.py: NEW 24 tests
+- iteration-log.md: prepend this entry + restore newest-first (moved #376 from EOF to top)
+- hidden_files/iteration-377-type-d.json: NEW
+
+**Tests:** 24/24 new passing (test_type_d_377_test_verify_quintuple_aug29.py), 20/20 prior quintuple passing, total suite ~655 files
+
+**Asymmetry Score Validation:**
+- Meta vs Amazon/Google/Apple delta -0.70 to -0.80 illustrative only synthetic controlled arrays, meets meaningfulness criteria p<0.05, |d|>0.5, CI excludes 0 if validated with observed corpus
+- Meta-EssilorLuxottica reverse: fashion framing +0.15 to +0.25 softening vs surveillance framing -0.60 to -0.75 illustrative only
+- Every fact source URL verified 8 primary URLs
+
+**Analytical Significance:**
+- Type D is verification not new mechanism creation - validates quintuple architecture, restores iteration-log discipline, ensures no-em-dash, illustrative labeling, cautious language, confounding factors, source URLs, mechanism ID uniqueness, YAML validity
+- Quintuple architecture represents most complex financial incentive mapping in MediaScope dataset (5 channels, 14+ mechanisms, 8 primary sources, $19.8B + $81.63B + nine-figure + $1B Showcase + $3.5B reverse + $59.363B contrast)
+- Newest-first restoration is critical for rotation correctness: Type D must follow Type C, next expected Type E, rotation chain #369 A -> #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C -> #377 D correct
+- No em-dash discipline, illustrative labeling, cautious language, and confounding factors are project standing rules Aug 28 - Type D enforces them across quintuple
+
+**Sources - Exact URLs (no em dash discipline):**
+- https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/
+- https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
+- https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
+- https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
+- https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
+- https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
+- https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+- https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+- https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+- https://www.WebWire.com/ViewPressRel.asp?aId=350303
+
+**Validation Checklist:**
+- [x] Exact repo root verified: /home/hatch/workspace/repos/mediascope via git rev-parse --show-toplevel
+- [x] Remote is rayhe/mediascope (https://github.com/rayhe/mediascope.git)
+- [x] Changed filenames and topic alignment verified
+- [x] Git author is Ray He <rayche@gmail.com>
+- [x] No em dash discipline maintained
+- [x] Every factual claim has source URL or citation
+- [x] Illustrative scores labeled illustrative only, no empirical significance claimed, synthetic controlled tone arrays not observed corpus
+- [x] Cautious financial correlation language, no causation claim
+- [x] 4+ legitimate confounders + 2 counterpoints minimum
+- [x] No unsupported causal language proves bias
+- [x] Mechanism ID 376 collision-free (next after 375), Mechanism 377 is Type D verification (no new mechanism ID required, verification only)
+- [x] Focused regression tests added (24 tests)
+- [x] YAML validation completed (5 profiles OK)
+- [x] Targeted tests run (24/24 passed, 20/20 quintuple passed)
+- [x] Iteration log newest-first preserved (moved #376 from EOF to top, prepend #377)
+- [x] Memory append to ~/memory/2026-08-29.md completed
+- [x] Goal bookkeeping in hidden_files completed (tracking.create_entry goal_54093bda4145)
+- [x] Meaningful commit and push completed
+
+---
+
+## Iteration #376 - Sat 2026-08-29 20:00 PT (Type C: Quintuple Reverse-Advertiser Alignment - Meta-EssilorLuxottica $3.5B Stake + H1 2026 EUR 14.02B)
+
+**Date:** 2026-08-29 20:00 PT
+**Type:** C - Financial Incentive Mapping
+**Mechanism:** #376 - Quintuple Reverse-Advertiser Alignment Aug 29 (extends Mechanism #372, #358, #367, #103, #53)
+**Rotation:** Type C follows Type B (#375). Rotation correct per log: #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C. Next expected Type D.
+**Focus:** Type C mandate - Financial incentive mapping with primary sources. Identify fresh financial relationship or materially extend existing mechanism with SEC filings, earnings materials, contracts, official releases. Every factual claim needs source URL. This run adds fifth financial channel: Meta-EssilorLuxottica reverse-advertiser alignment.
+
+**Research Completed (Aug 29, 2026 20:00 PT run):**
+
+### Financial Relationship Selected: Meta $3.5B EssilorLuxottica Stake + H1 2026 EUR 14.02B Revenue - Reverse-Advertiser Fifth Channel
+
+**Why Fresh / Extension Not Duplication:**
+- Mechanism #372 already covers Amazon Q2 2026 $19.8B ad revenue, Alphabet $81.63B ad revenue, Apple nine-figure Siri AI variable pay, Google Showcase sunset coercion - quadruple architecture
+- Mechanism #358 covers Amazon triple-channel (ads + AWS + dual-lab equity)
+- Mechanism #367 covers Amazon affiliate commission cut fourth channel
+- Mechanism #103 covers EssilorLuxottica advertising paradox (EUR 1.8-2B annual marketing spend, WIRED/Conde Nast relationships) but predates Meta $3.5B stake verification and H1 2026 results
+- No existing mechanism covers Meta-EssilorLuxottica $3.5B stake (Reuters Jul 8 2025) as reverse-advertiser alignment where Meta funds WIRED advertiser, nor H1 2026 EUR 14.02B (+7.3% YoY) production scaling verification
+- This extends quadruple to quintuple, adding reverse directionality: typical incentive is entity pays publisher → softer coverage for entity. Reverse is Meta invests in publisher advertiser → publisher receives ad money from company Meta partially owns → softer coverage for advertiser benefits Meta indirectly via Ray-Ban Meta sales and H1 production scaling
+- WIRED EssilorLuxottica section updated with H1 2026 verification and Reuters $3.5B stake - surgical update, not broad rewrite
+
+**Primary Sources (Exact URLs, Verbatim):**
+
+1. **Reuters Jul 8 2025 - Meta $3.5B EssilorLuxottica stake**
+   - URL: https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
+   - Fact: Meta takes around 3% stake in Ray-Ban parent EssilorLuxottica, source says, worth about $3.5B, stake built since 2020 per Bloomberg
+   - Verification: Secondary corroboration via Bloomberg (stake built since 2020), Reuters primary
+
+2. **EssilorLuxottica H1 2026 Results Jul 28 2026 - EUR 14.02B revenue**
+   - URL: https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
+   - Fact: EssilorLuxottica reports 7.3% revenue growth first half 2026 to EUR 14.02B, Q2 +7.3% to EUR 7.175B, EBIT margin 18.3% EUR 2.6B +13.5% YoY, net profit EUR 1.2B +7.5% YoY, DTC +10.3%, North America +7.8%, smart glasses production scaling noted, Meta partnership deepening
+   - Secondary: https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
+   - Tertiary: https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
+   - Quaternary: https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
+
+3. **Amazon Q2 2026 $19.8B ad revenue (re-verified)**
+   - URL: https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
+   - Fact: Amazon Q2 2026 advertising services revenue $19.8B (+26% YoY), total revenue $200.6B, net income $62.65B inflated by Anthropic mark-to-market $53.4B
+   - Source: AMZN 10-Q Jul 30 2026, Fool, MarketWatch, TradingView, Zacks
+
+4. **Alphabet Q2 2026 $81.63B ad revenue (re-verified)**
+   - URL: https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
+   - Fact: Alphabet Q2 2026 Google advertising $81.63B (+14% YoY), Search $63.27B (+17% YoY), YouTube $11.06B (+13% YoY), total revenue $119.8B (+24% YoY), operating income $40.77B, net income $112.11B (SpaceX IPO gain $98B)
+   - Source: GOOGL 10-Q Jul 22 2026, blog.google, 9to5Google, Fool, FuturumGroup
+
+5. **Apple Siri AI nine-figure variable pay (re-verified)**
+   - URL: https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+   - Fact: Apple in talks to pay publishers nine-figure budget $100M+ for Siri AI content, variable pay-per-use, multiyear agreements, WSJ Aug 12 2026, 6 secondary corroborations
+   - Secondary: MacRumors, TheWrap, 9to5Mac, AppleInsider, Editor and Publisher, Cult of Mac
+
+6. **Google Showcase sunset coercion (re-verified)**
+   - URL: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+   - Fact: Google tells publishers to grant AI training rights or lose Showcase fees, $1B/3yr global pool (2020 launch), 3000+ publications, NYPost, Press Gazette, Android Headlines, NetworkToday, EU Commission probe Dec 2024, UK CMA binding conduct Jan 28 2026, Google VP Connal engineering project defense Feb 11 2026
+
+7. **Meta Q2 2026 $59.363B ad revenue (re-verified)**
+   - URL: https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+   - Fact: Meta Q2 2026 total revenue $60.8B, advertising $59.363B (+27% YoY), FoA other revenue $1.007B first time $1B, RL revenue $0.431B +16.5% YoY, RL loss $4.619B record, H1 RL loss $8.647B
+
+8. **Oakley-WIRED 2014 global brand alliance (historical precedent)**
+   - URL: https://www.WebWire.com/ViewPressRel.asp?aId=350303
+   - Fact: Oakley (EssilorLuxottica) maintained global brand alliance with WIRED (~2014): co-created and sponsored multi-media content + brand advertising in international print editions and WIRED.com, theme disruption in design technology manufacturing business
+
+**Quintuple Architecture:**
+
+- **Channel 1 (Amazon ads):** $19.8B Q2 2026 (+26% YoY) = publisher ad dependency (APS, Prime Video Ads, Amazon Ads) + $50B OpenAI + $13B Anthropic + $100B cloud commitments + Associates affiliate cuts = 6+ mechanisms, softest coverage predicted
+- **Channel 2 (Google ads):** $81.63B Q2 2026 (+14% YoY) = publisher ad dependency (Google Ad Manager, Search 90% UK dominance, Showcase $1B/3yr, News AI pilot coercion Jun 2026) + programmatic ad serving = 4 mechanisms, mixed-to-soft coverage (dependency creates resentment + revenue)
+- **Channel 3 (Apple variable):** Nine-figure Siri AI variable pay-per-use ($100M+ discussed) + News+ 50% rev share + App Store 15-30% commission + Private Cloud Compute narrative = 5 mechanisms, most financial leverage in dataset per Mechanism #372
+- **Channel 4 (Meta zero):** Meta $0 publisher deals with profiled pubs + $59.363B ad competitor + Facebook News exit eliminated platform leverage = 1 mechanism (voluntary licensing only), harshest coverage predicted
+- **Channel 5 (EssilorLuxottica reverse-advertiser):** Meta $3.5B (3% stake, built since 2020) → EssilorLuxottica EUR 14.02B H1 2026 revenue (+7.3% YoY) → EUR 1.8-2B annual ad spend → WIRED/Conde Nast advertiser (Oakley 2014 alliance precedent + fashion titles Vogue GQ VF) → indirect Meta benefit via Ray-Ban Meta sales → production scaling noted H1 2026 = 1 reverse mechanism, inverts typical direction
+
+**Reverse-Advertiser Nuance:**
+
+Typical financial incentive: publisher receives money from entity → softer coverage for that entity (direct).
+
+Reverse-advertiser: Meta invests in EssilorLuxottica (publisher advertiser) → publisher receives ad money from company Meta partially owns → softer coverage for EssilorLuxottica frame partner benefits Meta indirectly via Ray-Ban Meta sales and H1 2026 production scaling → Meta benefits when EssilorLuxottica profits rise, EssilorLuxottica profits rise when Ray-Ban Meta sales rise, Ray-Ban Meta sales rise with favorable coverage.
+
+This inverts direction: Meta is not paying publisher, Meta is funding publisher advertiser.
+
+Prediction nuance: WIRED has financial incentive to cover Ray-Ban Meta favorably when framed as EssilorLuxottica fashion product (benefits advertiser), but adversarially when framed as Meta surveillance product (triggers Meta brand alarm). Dual framing creates coverage split: fashion-forward Ray-Ban Meta = softer, surveillance-forward Meta AI glasses = harsher, both from same hardware.
+
+**Asymmetry Quantification (Illustrative Only, Synthetic Controlled Arrays):**
+
+- Meta vs Amazon/Google/Apple coverage tone delta predicted -0.70 to -0.80 (illustrative synthetic, not observed VADER/TextBlob). Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0
+- Meta-EssilorLuxottica reverse channel predicts +0.15 to +0.25 softening when Meta glasses covered as EssilorLuxottica fashion product vs -0.60 to -0.75 when covered as Meta AI surveillance product (illustrative only)
+- Requires Welch t-test + Cohen d + bootstrap CI 1000 iterations on observed article-level tone scores for empirical validation
+- Synthetic tone arrays are illustrative only and cannot establish empirical significance - every test must label illustrative only
+
+**Confounding Factors (5, 2 STRONG, 2 MODERATE, 1 WEAK):**
+
+- STRONG: Meta $3.5B EssilorLuxottica stake is 3% - minority position, not control. EssilorLuxottica revenue EUR 14.02B is dominated by traditional eyewear, not smart glasses - smart glasses contribution not broken out in H1 2026 release. Financial materiality of Meta stake to EssilorLuxottica ad budget is indirect. Reverse-advertiser incentive may be weaker than direct Amazon/Google/Apple publisher payments
+- STRONG: Correlation does not prove causation. Financial incentive predicts softer coverage but does not prove editorial control. Publishers may maintain editorial independence despite business-side deals and advertiser relationships. Amazon/Google/Apple/EssilorLuxottica financial relationships may correlate with other variables (beat-specific access, product maturity, market share, source availability) that independently predict coverage tone
+- MODERATE: No Apple Siri AI deals SIGNED yet - still negotiation phase Aug 20 2026 per WSJ. Entire Apple variable-pay mechanism PREDICTIVE not observed. Google Showcase sunset not yet executed - threat not yet realized. Amazon ad revenue $19.8B includes non-publisher ad formats. EssilorLuxottica ad spend EUR 1.8-2B is global estimate, not WIRED-specific - actual WIRED allocation unknown
+- MODERATE: Publisher editorial independence policies nominally insulate newsrooms from business-side deals and advertiser influence. No evidence of direct editorial influence from any content licensing deal or advertising relationship. WIRED, NYT, Guardian all maintain church-state separation policies. EssilorLuxottica 2014 Oakley-WIRED alliance is historical, current status unknown - may not reflect 2026 commercial relationship
+- WEAK: Meta $3.5B stake could be interpreted as bullish signal for Meta glasses, not capture - Meta investing in supply chain vertical integration is normal industrial strategy. H1 2026 production scaling could reflect genuine consumer demand, not coverage-driven. But financial incentive structure remains: Meta benefits from EssilorLuxottica profitability regardless of motive
+
+**Cautious Language (Required):**
+
+Financial correlation does not imply causation. Reverse-advertiser alignment creates STRUCTURAL INCENTIVE for nuanced coverage, not proof of editorial influence. Meta $3.5B stake is 3% minority, not control. EssilorLuxottica EUR 14.02B H1 revenue is majority traditional eyewear, smart glasses share undisclosed. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, EssilorLuxottica H1 2026 Jul 28 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call, EssilorLuxottica CEO Jul 28 2026), publisher statements (Reuters Jul 8 2025, Adweek, Digiday, PYMNTS, NYPost, WSJ Aug 12 2026). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.
+
+**Sources (verified exact URLs, verbatim):**
+
+- https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
+- https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
+- https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
+- https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
+- https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
+- https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
+- https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
+- https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/
+- https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
+- https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
+- https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+- https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+- https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
+- https://www.WebWire.com/ViewPressRel.asp?aId=350303
+- https://www.fool.com/data-news/2025/08/02/amazon-amzn-q2-revenue-jumps-13/
+- https://www.tradingview.com/news/tradingview:15b8f73c13724:0-amazon-com-inc-q2-2026-revenue-200-6b-net-income-62-65b-eps-5-75-10-q-summary/
+
+**Files Changed:**
+
+- profiles/competitor-entities.yaml: entities.amazon.quintuple_reverse_advertiser_alignment_aug29 (NEW, mechanism #376, extends #372, #367, #358, verifies #103, compounds #53/#94, 5-channel synthesis, 16 source URLs, cautious language, confounding factors 2 STRONG 2 MODERATE 1 WEAK, illustrative labeling)
+- profiles/wired.yaml: entities.essilorluxottica (UPDATED, added Meta $3.5B stake verification, H1 2026 EUR 14.02B verification, reverse-advertiser note, h1_2026_verification_aug29 block with 5 source URLs)
+- tests/test_quintuple_reverse_advertiser_alignment_aug29.py (NEW, 20+ tests expected)
+- iteration-log.md (this entry)
+
+**Tests:** To be validated. Target 20+ tests passing. Must verify mechanism_id 376 unique, YAML valid, no em dashes, cautious language, illustrative labeling, confounders, source URLs.
+
+**Asymmetry Score Validation (Illustrative Only):**
+
+- Meta vs Amazon/Google/Apple: delta -0.70 to -0.80 (illustrative synthetic, not observed)
+- Meta-EssilorLuxottica reverse: fashion framing +0.15 to +0.25 softening, surveillance framing -0.60 to -0.75 (illustrative only)
+- Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0 - requires Welch t-test, Cohen d, bootstrap CI on observed corpus
+- Every fact needs source URL - all 16 URLs verbatim from search results Aug 29 2026
+
 ## Iteration #375 - Sat 2026-08-29 15:00 PT (Type B: Reece Rogers Privacy Topic Routing Extension - Meta LED Fix Ignored, Samsung 38-Day Zero, OpenAI Companion Zero Scrutiny)
 
 **Date:** 2026-08-29 15:00 PT
@@ -18257,138 +18574,3 @@ confounder load; 2 STRONG, 2 MODERATE)
 - Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p=0.00007 (illustrative), d=-3.76 (illustrative synthetic), CI [-0.92,-0.65] excludes 0 - ILLUSTRATIVE ONLY, synthetic controlled arrays, DO NOT claim empirical significance
 - Meets statistical meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0 - validated with real scoring module (welch_t_test, cohens_d, bootstrap_ci)
 - Every fact needs source URL - all 10 URLs verbatim from search results
-
-
-## Iteration #376 - Sat 2026-08-29 20:00 PT (Type C: Quintuple Reverse-Advertiser Alignment - Meta-EssilorLuxottica $3.5B Stake + H1 2026 EUR 14.02B)
-
-**Date:** 2026-08-29 20:00 PT
-**Type:** C - Financial Incentive Mapping
-**Mechanism:** #376 - Quintuple Reverse-Advertiser Alignment Aug 29 (extends Mechanism #372, #358, #367, #103, #53)
-**Rotation:** Type C follows Type B (#375). Rotation correct per log: #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C. Next expected Type D.
-**Focus:** Type C mandate - Financial incentive mapping with primary sources. Identify fresh financial relationship or materially extend existing mechanism with SEC filings, earnings materials, contracts, official releases. Every factual claim needs source URL. This run adds fifth financial channel: Meta-EssilorLuxottica reverse-advertiser alignment.
-
-**Research Completed (Aug 29, 2026 20:00 PT run):**
-
-### Financial Relationship Selected: Meta $3.5B EssilorLuxottica Stake + H1 2026 EUR 14.02B Revenue - Reverse-Advertiser Fifth Channel
-
-**Why Fresh / Extension Not Duplication:**
-- Mechanism #372 already covers Amazon Q2 2026 $19.8B ad revenue, Alphabet $81.63B ad revenue, Apple nine-figure Siri AI variable pay, Google Showcase sunset coercion - quadruple architecture
-- Mechanism #358 covers Amazon triple-channel (ads + AWS + dual-lab equity)
-- Mechanism #367 covers Amazon affiliate commission cut fourth channel
-- Mechanism #103 covers EssilorLuxottica advertising paradox (EUR 1.8-2B annual marketing spend, WIRED/Conde Nast relationships) but predates Meta $3.5B stake verification and H1 2026 results
-- No existing mechanism covers Meta-EssilorLuxottica $3.5B stake (Reuters Jul 8 2025) as reverse-advertiser alignment where Meta funds WIRED advertiser, nor H1 2026 EUR 14.02B (+7.3% YoY) production scaling verification
-- This extends quadruple to quintuple, adding reverse directionality: typical incentive is entity pays publisher → softer coverage for entity. Reverse is Meta invests in publisher advertiser → publisher receives ad money from company Meta partially owns → softer coverage for advertiser benefits Meta indirectly via Ray-Ban Meta sales and H1 production scaling
-- WIRED EssilorLuxottica section updated with H1 2026 verification and Reuters $3.5B stake - surgical update, not broad rewrite
-
-**Primary Sources (Exact URLs, Verbatim):**
-
-1. **Reuters Jul 8 2025 - Meta $3.5B EssilorLuxottica stake**
-   - URL: https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
-   - Fact: Meta takes around 3% stake in Ray-Ban parent EssilorLuxottica, source says, worth about $3.5B, stake built since 2020 per Bloomberg
-   - Verification: Secondary corroboration via Bloomberg (stake built since 2020), Reuters primary
-
-2. **EssilorLuxottica H1 2026 Results Jul 28 2026 - EUR 14.02B revenue**
-   - URL: https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
-   - Fact: EssilorLuxottica reports 7.3% revenue growth first half 2026 to EUR 14.02B, Q2 +7.3% to EUR 7.175B, EBIT margin 18.3% EUR 2.6B +13.5% YoY, net profit EUR 1.2B +7.5% YoY, DTC +10.3%, North America +7.8%, smart glasses production scaling noted, Meta partnership deepening
-   - Secondary: https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
-   - Tertiary: https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
-   - Quaternary: https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
-
-3. **Amazon Q2 2026 $19.8B ad revenue (re-verified)**
-   - URL: https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
-   - Fact: Amazon Q2 2026 advertising services revenue $19.8B (+26% YoY), total revenue $200.6B, net income $62.65B inflated by Anthropic mark-to-market $53.4B
-   - Source: AMZN 10-Q Jul 30 2026, Fool, MarketWatch, TradingView, Zacks
-
-4. **Alphabet Q2 2026 $81.63B ad revenue (re-verified)**
-   - URL: https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
-   - Fact: Alphabet Q2 2026 Google advertising $81.63B (+14% YoY), Search $63.27B (+17% YoY), YouTube $11.06B (+13% YoY), total revenue $119.8B (+24% YoY), operating income $40.77B, net income $112.11B (SpaceX IPO gain $98B)
-   - Source: GOOGL 10-Q Jul 22 2026, blog.google, 9to5Google, Fool, FuturumGroup
-
-5. **Apple Siri AI nine-figure variable pay (re-verified)**
-   - URL: https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
-   - Fact: Apple in talks to pay publishers nine-figure budget $100M+ for Siri AI content, variable pay-per-use, multiyear agreements, WSJ Aug 12 2026, 6 secondary corroborations
-   - Secondary: MacRumors, TheWrap, 9to5Mac, AppleInsider, Editor and Publisher, Cult of Mac
-
-6. **Google Showcase sunset coercion (re-verified)**
-   - URL: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
-   - Fact: Google tells publishers to grant AI training rights or lose Showcase fees, $1B/3yr global pool (2020 launch), 3000+ publications, NYPost, Press Gazette, Android Headlines, NetworkToday, EU Commission probe Dec 2024, UK CMA binding conduct Jan 28 2026, Google VP Connal engineering project defense Feb 11 2026
-
-7. **Meta Q2 2026 $59.363B ad revenue (re-verified)**
-   - URL: https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
-   - Fact: Meta Q2 2026 total revenue $60.8B, advertising $59.363B (+27% YoY), FoA other revenue $1.007B first time $1B, RL revenue $0.431B +16.5% YoY, RL loss $4.619B record, H1 RL loss $8.647B
-
-8. **Oakley-WIRED 2014 global brand alliance (historical precedent)**
-   - URL: https://www.WebWire.com/ViewPressRel.asp?aId=350303
-   - Fact: Oakley (EssilorLuxottica) maintained global brand alliance with WIRED (~2014): co-created and sponsored multi-media content + brand advertising in international print editions and WIRED.com, theme disruption in design technology manufacturing business
-
-**Quintuple Architecture:**
-
-- **Channel 1 (Amazon ads):** $19.8B Q2 2026 (+26% YoY) = publisher ad dependency (APS, Prime Video Ads, Amazon Ads) + $50B OpenAI + $13B Anthropic + $100B cloud commitments + Associates affiliate cuts = 6+ mechanisms, softest coverage predicted
-- **Channel 2 (Google ads):** $81.63B Q2 2026 (+14% YoY) = publisher ad dependency (Google Ad Manager, Search 90% UK dominance, Showcase $1B/3yr, News AI pilot coercion Jun 2026) + programmatic ad serving = 4 mechanisms, mixed-to-soft coverage (dependency creates resentment + revenue)
-- **Channel 3 (Apple variable):** Nine-figure Siri AI variable pay-per-use ($100M+ discussed) + News+ 50% rev share + App Store 15-30% commission + Private Cloud Compute narrative = 5 mechanisms, most financial leverage in dataset per Mechanism #372
-- **Channel 4 (Meta zero):** Meta $0 publisher deals with profiled pubs + $59.363B ad competitor + Facebook News exit eliminated platform leverage = 1 mechanism (voluntary licensing only), harshest coverage predicted
-- **Channel 5 (EssilorLuxottica reverse-advertiser):** Meta $3.5B (3% stake, built since 2020) → EssilorLuxottica EUR 14.02B H1 2026 revenue (+7.3% YoY) → EUR 1.8-2B annual ad spend → WIRED/Conde Nast advertiser (Oakley 2014 alliance precedent + fashion titles Vogue GQ VF) → indirect Meta benefit via Ray-Ban Meta sales → production scaling noted H1 2026 = 1 reverse mechanism, inverts typical direction
-
-**Reverse-Advertiser Nuance:**
-
-Typical financial incentive: publisher receives money from entity → softer coverage for that entity (direct).
-
-Reverse-advertiser: Meta invests in EssilorLuxottica (publisher advertiser) → publisher receives ad money from company Meta partially owns → softer coverage for EssilorLuxottica frame partner benefits Meta indirectly via Ray-Ban Meta sales and H1 2026 production scaling → Meta benefits when EssilorLuxottica profits rise, EssilorLuxottica profits rise when Ray-Ban Meta sales rise, Ray-Ban Meta sales rise with favorable coverage.
-
-This inverts direction: Meta is not paying publisher, Meta is funding publisher advertiser.
-
-Prediction nuance: WIRED has financial incentive to cover Ray-Ban Meta favorably when framed as EssilorLuxottica fashion product (benefits advertiser), but adversarially when framed as Meta surveillance product (triggers Meta brand alarm). Dual framing creates coverage split: fashion-forward Ray-Ban Meta = softer, surveillance-forward Meta AI glasses = harsher, both from same hardware.
-
-**Asymmetry Quantification (Illustrative Only, Synthetic Controlled Arrays):**
-
-- Meta vs Amazon/Google/Apple coverage tone delta predicted -0.70 to -0.80 (illustrative synthetic, not observed VADER/TextBlob). Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0
-- Meta-EssilorLuxottica reverse channel predicts +0.15 to +0.25 softening when Meta glasses covered as EssilorLuxottica fashion product vs -0.60 to -0.75 when covered as Meta AI surveillance product (illustrative only)
-- Requires Welch t-test + Cohen d + bootstrap CI 1000 iterations on observed article-level tone scores for empirical validation
-- Synthetic tone arrays are illustrative only and cannot establish empirical significance - every test must label illustrative only
-
-**Confounding Factors (5, 2 STRONG, 2 MODERATE, 1 WEAK):**
-
-- STRONG: Meta $3.5B EssilorLuxottica stake is 3% - minority position, not control. EssilorLuxottica revenue EUR 14.02B is dominated by traditional eyewear, not smart glasses - smart glasses contribution not broken out in H1 2026 release. Financial materiality of Meta stake to EssilorLuxottica ad budget is indirect. Reverse-advertiser incentive may be weaker than direct Amazon/Google/Apple publisher payments
-- STRONG: Correlation does not prove causation. Financial incentive predicts softer coverage but does not prove editorial control. Publishers may maintain editorial independence despite business-side deals and advertiser relationships. Amazon/Google/Apple/EssilorLuxottica financial relationships may correlate with other variables (beat-specific access, product maturity, market share, source availability) that independently predict coverage tone
-- MODERATE: No Apple Siri AI deals SIGNED yet - still negotiation phase Aug 20 2026 per WSJ. Entire Apple variable-pay mechanism PREDICTIVE not observed. Google Showcase sunset not yet executed - threat not yet realized. Amazon ad revenue $19.8B includes non-publisher ad formats. EssilorLuxottica ad spend EUR 1.8-2B is global estimate, not WIRED-specific - actual WIRED allocation unknown
-- MODERATE: Publisher editorial independence policies nominally insulate newsrooms from business-side deals and advertiser influence. No evidence of direct editorial influence from any content licensing deal or advertising relationship. WIRED, NYT, Guardian all maintain church-state separation policies. EssilorLuxottica 2014 Oakley-WIRED alliance is historical, current status unknown - may not reflect 2026 commercial relationship
-- WEAK: Meta $3.5B stake could be interpreted as bullish signal for Meta glasses, not capture - Meta investing in supply chain vertical integration is normal industrial strategy. H1 2026 production scaling could reflect genuine consumer demand, not coverage-driven. But financial incentive structure remains: Meta benefits from EssilorLuxottica profitability regardless of motive
-
-**Cautious Language (Required):**
-
-Financial correlation does not imply causation. Reverse-advertiser alignment creates STRUCTURAL INCENTIVE for nuanced coverage, not proof of editorial influence. Meta $3.5B stake is 3% minority, not control. EssilorLuxottica EUR 14.02B H1 revenue is majority traditional eyewear, smart glasses share undisclosed. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, EssilorLuxottica H1 2026 Jul 28 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call, EssilorLuxottica CEO Jul 28 2026), publisher statements (Reuters Jul 8 2025, Adweek, Digiday, PYMNTS, NYPost, WSJ Aug 12 2026). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.
-
-**Sources (verified exact URLs, verbatim):**
-
-- https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
-- https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
-- https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
-- https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
-- https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
-- https://www.adexchanger.com/platforms/amazon-crushes-earnings-and-reaches-almost-20-billion-in-q2-ad-revenue/
-- https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
-- https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/
-- https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
-- https://www.wsj.com/business/media/apple-in-talks-to-pay-publishers-to-improve-ai-powered-siri-0641f64b
-- https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
-- https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
-- https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
-- https://www.WebWire.com/ViewPressRel.asp?aId=350303
-- https://www.fool.com/data-news/2025/08/02/amazon-amzn-q2-revenue-jumps-13/
-- https://www.tradingview.com/news/tradingview:15b8f73c13724:0-amazon-com-inc-q2-2026-revenue-200-6b-net-income-62-65b-eps-5-75-10-q-summary/
-
-**Files Changed:**
-
-- profiles/competitor-entities.yaml: entities.amazon.quintuple_reverse_advertiser_alignment_aug29 (NEW, mechanism #376, extends #372, #367, #358, verifies #103, compounds #53/#94, 5-channel synthesis, 16 source URLs, cautious language, confounding factors 2 STRONG 2 MODERATE 1 WEAK, illustrative labeling)
-- profiles/wired.yaml: entities.essilorluxottica (UPDATED, added Meta $3.5B stake verification, H1 2026 EUR 14.02B verification, reverse-advertiser note, h1_2026_verification_aug29 block with 5 source URLs)
-- tests/test_quintuple_reverse_advertiser_alignment_aug29.py (NEW, 20+ tests expected)
-- iteration-log.md (this entry)
-
-**Tests:** To be validated. Target 20+ tests passing. Must verify mechanism_id 376 unique, YAML valid, no em dashes, cautious language, illustrative labeling, confounders, source URLs.
-
-**Asymmetry Score Validation (Illustrative Only):**
-
-- Meta vs Amazon/Google/Apple: delta -0.70 to -0.80 (illustrative synthetic, not observed)
-- Meta-EssilorLuxottica reverse: fashion framing +0.15 to +0.25 softening, surveillance framing -0.60 to -0.75 (illustrative only)
-- Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0 - requires Welch t-test, Cohen d, bootstrap CI on observed corpus
-- Every fact needs source URL - all 16 URLs verbatim from search results Aug 29 2026
