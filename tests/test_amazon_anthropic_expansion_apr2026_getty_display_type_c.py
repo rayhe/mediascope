@@ -72,7 +72,8 @@ def test_openai_getty_display_deal():
     data = load_profile()
     openai = data["openai"]
     portfolio = openai.get("publisher_content_deal_portfolio", {})
-    assert portfolio.get("total_deals") >= 24 or "24+" in str(portfolio.get("total_deals"))
+    td = portfolio.get("total_deals")
+    assert (isinstance(td, int) and td >= 24) or ("24" in str(td))
     partners = portfolio.get("notable_partners", [])
     partners_str = " ".join(partners)
     assert "Getty Images" in partners_str
