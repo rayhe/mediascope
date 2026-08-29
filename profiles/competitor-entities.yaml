@@ -395,16 +395,24 @@ entities:
     litigation_coverage_analysis:
       mechanism_id: 96
       date_analyzed: '2026-08-14'
-      finding: 'The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment for coverage selectivity. Gizmodo (zero financial ties) produced 6 standalone articles with adversarial framing (~-0.35 tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024) produced zero standalone articles over 35 days. The lawsuit involves 400+ poached employees, systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction (Aug 4), and motion to dismiss (Aug 6). This is distinct from the hardware privacy coverage gap (#84) — #96 covers litigation/ethics selectivity.
+      date_corrected: '2026-08-28'
+      correction_note: 'CORRECTED Aug 28 2026 — Prior WIRED 0-article claim FALSE. WIRED DID publish 1 direct article Jul 10 2026 (Maxwell Zeff, Apple Sues OpenAI). Browser verification Aug 28. Volume asymmetry 6 vs 1, not 6 vs 0. Framing asymmetry persists (IP drama vs surveillance alarm) but silence thesis invalidated. See iteration #355 log for correction chain. Original mechanism #356 collision avoided via renumbering to #359.'
+      finding: 'The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment for coverage selectivity. Gizmodo (zero financial ties) produced 6 standalone articles with adversarial framing (~-0.35 tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024) produced 1 standalone article (Jul 10, Maxwell Zeff) with competitive-drama framing, not surveillance-alarm. The lawsuit involves 400+ poached employees, systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction (Aug 4), and motion to dismiss (Aug 6). CORRECTED: Volume asymmetry 6 vs 1, not 6 vs 0. Framing asymmetry (IP drama vs surveillance alarm) persists. This is distinct from the hardware privacy coverage gap (#84) — #96 covers litigation/ethics selectivity.'
 
-        '
       gizmodo_coverage:
         article_count: 6
         tone: -0.35
         date_range: Feb 20 - Aug 6, 2026
       wired_coverage:
-        article_count: 0
+        article_count: 1
         date_range: Jul 10 - Aug 14, 2026
+        correction:
+          prior_claim: 0
+          corrected: 1
+          article_url: https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/
+          article_date: '2026-07-10'
+          author: Maxwell Zeff
+          verification: browser_spawn_task Aug 28 2026
       source_urls:
       - https://gizmodo.com/apples-lawsuit-against-openai-sparks-another-musk-altman-online-spat-2000784826
       - https://gizmodo.com/openai-is-trying-to-shame-apple-into-backing-down-from-its-lawsuit-2000794427
@@ -1529,8 +1537,73 @@ entities:
       - http://pymnts.com/news/artificial-intelligence/2026/amazon-completes-50-billion-dollar-investment-openai/
       - https://www.reuters.com/business/retail-consumer/openais-110-billion-funding-round-draws-investment-amazon-nvidia-softbank-2026-02-27/
       - https://www.reuters.com/business/media-telecom/openai-courts-tech-giants-100-billion-dollar-funding-round-2026-01-29/
+    amazon_affiliate_commission_cut_aug28:
+      mechanism_id: 367
+      date_analyzed: '2026-08-28'
+      type: financial_incentive_mapping
+      iteration: 356
+      type_c_focus: Amazon Associates commission cuts up to 50% amplify publisher revenue dependency and diversification pressure
+      overview: 'Adweek reported Aug 2026 (updated story) that Amazon quietly restructured Associates program: slashed commission rates by up to 50% (premium 10% → 4-5%), eliminated milestone-based incentive tiers and year-over-year performance bonuses, degraded reporting (tracking-ID threshold 1→4 sales, removed SKU/ASIN granularity → category-only, revoked premium APIs), concentrated cuts in product development + client services with layoffs, operational directive to cut program costs 20%. Rollout: Asia-Pacific late 2025 → US Mar 9 2026. Publishers learned via individual account managers, not public announcement. One deal-site publisher revised 2026 Amazon revenue forecast down 50%. Recurrent Ventures CEO Andrew Perlman quoted: Google AI Overviews collapsing organic traffic at top funnel + Amazon paying less at bottom = super challenging. Amazon statement: changes affect tiny fraction, highly competitive commissions, continue bonuses. Amazon laid off thousands early 2026, Associates account managers among cuts. Strategic reorientation toward creators/influencers deemed more incremental than traditional affiliate publishers. Some publishers exited entirely as not strategic. Publishers routing commerce traffic to Walmart, Target, Best Buy, Wayfair, eBay. Quote: short-term bad, medium-term excellent — Amazon forced diversification overdue. This is 4th financial channel beyond advertising/AWS/dual-lab-equity: affiliate dependency. Publications with heavy Wirecutter-style affiliate operations (NYT/Wirecutter, Condé Nast, Hearst, Vox Media, Ziff Davis) face amplified Amazon dependency — not just ads but direct commerce revenue — creating structural incentive for softer Amazon/Rufus/Alexa coverage while covering Meta (no affiliate relationship) adversarially.'
+      financial_channels:
+        channel_4_affiliate:
+          program: Amazon Associates
+          commission_cut_pct: up to 50
+          prior_premium_pct: 10
+          new_rate_pct: 4-5
+          milestone_tiers: eliminated
+          yoy_bonuses: gutted for some categories
+          reporting_degradation:
+            tracking_id_threshold: 1→4 sales
+            sku_asin_reporting: removed → category-only
+            premium_apis: revoked → manual portal pulls
+          cost_directive_pct: 20
+          rollout:
+            asia_pacific: late 2025
+            us: ~2026-03-09
+          forecast_impact_example: deal-site publisher -50% Amazon revenue 2026 forecast
+          publisher_quote: Amazon halved affiliate rates across publisher ecosystem
+          amazon_statement: We value our affiliate partnerships and provide highly competitive commissions — these changes affect a tiny fraction of associates. We continue offering bonuses and incentives as new revenue sources, and like any business, we periodically adjust commissions to meet customers changing needs.
+          layoffs_context: Amazon laid off thousands early 2026, Associates team account managers + senior contacts among cuts, survivors 3x workload, reporting bugs/delays
+          strategic_shift: toward creators/influencers more incremental than traditional affiliate publishers, some publishers exited as not strategic
+          diversification_response: routing to Walmart, Target, Best Buy, Wayfair, eBay — short-term bad, medium-term excellent, forced diversification overdue
+          google_ai_overviews_interaction: Google AI Overviews collapsing organic traffic top funnel + Amazon paying less bottom funnel = publisher double squeeze
+      coverage_prediction:
+        model: 'Publications with highest Amazon affiliate dependency (NYT/Wirecutter ~50% Amazon rev cut exposure, BuzzFeed, Hearst, Ziff Davis, Vox Media shopping, Condé Nast) will produce softest Amazon/Rufus/Alexa coverage during 2026 diversification stress. Clean controls: Reuters (minimal affiliate), Gizmodo (no known deals) more neutral. Meta (zero affiliate relationship) faces no comparable constraint — adversarial coverage structurally cheaper.'
+        temporal: 'Mar 9 2026 (US rollout) → Aug 2026 (Adweek reporting) — 5-month absorption window, publishers weighing pivot to competing platforms during this iteration (Aug 28 2026 20:00 PT)'
+      confounding_factors:
+        - strength: STRONG
+          description: 'Correlation ≠ causation — softer Amazon coverage may reflect beat-specific access, genuine product enthusiasm, or editorial calendar rather than affiliate incentive. Recurrent Ventures quote explicitly links Google AI Overviews traffic collapse to Amazon diversification pressure — dual causality, not single-channel.'
+        - strength: STRONG
+          description: 'Amazon affiliate revenue is concentrated in commerce/review verticals (Wirecutter, Strategist, etc.) — not news/investigative desks that produce adversarial Meta coverage. Cross-desk incentive transfer is indirect.'
+        - strength: MODERATE
+          description: 'Commission cuts not uniform — publishers with longstanding editorial relationships retained more favorable terms, while paid-media-driven affiliate businesses absorbed heaviest cuts. Heterogeneity complicates blanket softening prediction.'
+        - strength: MODERATE
+          description: 'Adweek story based on seven publishers + partners with direct knowledge — not Amazon SEC filing. Commission rates 10%→4-5% anecdotal from large performance-marketing operator, not primary Amazon disclosure. Publisher anonymity limits verifiability.'
+        - strength: WEAK
+          description: 'Amazon Associates cost-cut directive 20% and reporting degradation may be operational efficiency, not strategic capture — layoffs concentrated product development + client services across Amazon, not Associates-specific.'
+      cautious_language: 'Financial correlation does not imply causation. Affiliate dependency creates STRUCTURAL INCENTIVE for softer Amazon coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays cannot establish empirical significance.'
+      source_urls:
+      - https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/
+      mechanism_links:
+        extends: 358
+        related: [25, 53, 96, 208]
+      publisher_impact_examples:
+        - publisher: NYT/Wirecutter
+          exposure: HIGH — Wirecutter archetype for affiliate-dependent commerce content, dual Amazon relationship (Alexa $20-25M/yr + Associates + APS + Prime Video Ads)
+        - publisher: Condé Nast/WIRED
+          exposure: HIGH — Rufus deal Jul 2025 + OpenAI deal + Microsoft PCM Dec 2025 pilot + Associates + Amazon advertiser + Google ad 37% overlap
+        - publisher: Hearst
+          exposure: MEDIUM-HIGH — Rufus deal + Associates + magazine commerce content
+        - publisher: Vox Media
+          exposure: MEDIUM — shopping verticals, Microsoft PCM, OpenAI deal
+        - publisher: Ziff Davis/Gizmodo
+          exposure: LOW (Gizmodo) — Gizmodo has zero known Amazon deals per profile, clean control; Ziff Davis parent has commerce but Gizmodo investigative desk independent
+        - publisher: Reuters
+          exposure: LOW — minimal affiliate, wire service, clean control
+
     publisher_content_marketplace:
       announced: 2026-02
+
       status: building
       detail: 'Amazon is building an AI content marketplace where publishers can
 

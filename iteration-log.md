@@ -1,3 +1,148 @@
+## Iteration #356 — Fri 2026-08-28 20:00 PT (Type C: Financial Incentive Mapping — Amazon Associates 50% Commission Cut Amplifies Publisher Dependency — Mechanism #367)
+
+**Date:** 2026-08-28 20:00 PT
+**Type:** C — Financial Incentive Mapping
+**Mechanism:** #367 (Amazon Affiliate Commission Cut — 4th Financial Channel Beyond Advertising/AWS/Dual-Lab-Equity)
+**Iteration Log Position:** Newest at top (file is newest-first)
+**Focus:** Type C mandate — map financial incentive structures that could produce softer coverage of Amazon and affiliated AI labs vs adversarial coverage of Meta. Amazon Associates affiliate program quietly restructured: up to 50% commission cuts, eliminated milestone tiers + YoY bonuses, degraded reporting, 20% cost-cut directive, strategic shift to creators/influencers. Double squeeze with Google AI Overviews collapsing top-funnel traffic.
+
+**Rotation Context:**
+- #351 Type B Chokkattu Samsung Price-Parity Silence (Mechanism #362)
+- #352 Type C Apple Compound Leverage Q3 2026 (Mechanism #363)
+- #353 Type D Statistical Validity Consolidation (Mechanism #364)
+- #354 Type E Celebrity/Institutional Cascade Pervert Glasses Vocab (Mechanism #365)
+- #355 Type B Dell Cameron Severity Framing Inversion OpenAI Rogue Agent vs Meta NameTag (Mechanism #366) — falsification test, counterevidence to universal softening
+- #356 Type C Amazon Affiliate Commission Cut (Mechanism #367) — rotation correct (B→C)
+
+**Finding:** Amazon Associates commission cuts up to 50% amplify publisher revenue dependency and diversification pressure — 4th financial channel beyond triple channel (advertising/AWS/dual-lab-equity) documented in Mechanism #358.
+
+1. **Primary Source (Adweek Aug 2026, updated story):**
+   - Title: Amazon Cuts Affiliate Commissions Up to 50% for Publishers
+   - URL: https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/
+   - Date: 2026 (updated to include revised Amazon statement)
+   - Author: Adweek (7 publishers + partners with direct knowledge)
+   - Verification: Browser open 2026-08-28 20:00 PT, lines 0-68 retrieved, exact quotes preserved
+   - Key quotes verbatim:
+     - "Amazon has quietly restructured its Associates program over the past several months, slashing commission rates by as much as 50%, eliminating the milestone-based bonuses that rewarded high-performing publishers, and degrading the reporting tools that affiliates relied on to optimize their campaigns, according to seven publishers and partners with direct knowledge of the changes."
+     - "The changes, which began rolling out in Asia-Pacific markets in late 2025 before landing in the U.S. around March 9, were never publicly announced."
+     - "We value our affiliate partnerships and provide highly competitive commissions—these changes affect a tiny fraction of associates," an Amazon spokesperson shared in a statement. "We continue offering bonuses and incentives as new revenue sources, and like any business, we periodically adjust commissions to meet customers' changing needs."
+     - "In categories where some publishers previously earned premium commissions as high as 10%, rates have been reset to as low as 4% or 5%, according to a person familiar with the matter who runs a large performance-marketing operation."
+     - "One deal-site publisher said the company has revised its 2026 Amazon revenue forecast down by 50%."
+     - ""Amazon halved the affiliate rates across the publisher ecosystem," said Recurrent Ventures chief executive Andrew Perlman. "Between Google's AI overviews collapsing organic traffic at the top of the funnel and Amazon paying less at the bottom, the business of converting organic search into affiliate revenue has become super challenging.""
+     - "Several publishers with longstanding editorial relationships with Amazon appear to have retained more favorable terms, while publishers running paid-media-driven affiliate businesses have absorbed the heaviest cuts."
+     - "Amazon leaned into cutting those with paid media," said one source familiar with the changes. "A lot of the really big publishers don't have that big of a paid business."
+     - "The company changed the threshold for tracking-ID-level reporting from one sale to four sales, meaning publishers can no longer see performance data on new campaigns until they have generated at least four conversions. SKU- and ASIN-level reporting has been removed in favor of category-only data, and access to certain premium APIs has been revoked, forcing affiliates back to manual portal pulls."
+     - "Several publishers said they had been told that Amazon Associates leadership was operating under a directive to reduce program costs by 20%, with the rate cuts, reporting changes, and layoffs serving as mechanisms for hitting that target."
+     - "Amazon laid off thousands of employees earlier this year, and multiple publishers said their account managers and senior contacts within the Associates team had been let go, with surviving team members absorbing several times their previous workload."
+     - "The cuts have been concentrated in product development and client services, two publishers said, and have led to operational consequences including reporting bugs and delays that affiliates had not previously experienced."
+     - "The changes have also coincided with a broader strategic reorientation at Amazon toward creators and influencers, who are increasingly seen as more incremental to Amazon's commerce ecosystem than traditional affiliate publishers. Some publishers have been exited from the program entirely, according to one source, on the grounds that they were "not strategic for the goals of the program.""
+     - "Publishers, for their part, have begun routing more of their commerce traffic to Walmart, Target, Best Buy, Wayfair, eBay and other retailers. Despite the immediate hardship, many publishers said that the forced diversification could be positive for their business in the long run."
+     - ""Short-term bad, medium-term excellent," said one publisher. "Amazon forced us to diversify. That was probably overdue.""
+
+2. **Financial Channels:**
+   - Channel 1 (Advertising): $19.809B Q2 2026 +26% YoY, $76B TTM — already documented Mechanism #358
+   - Channel 2 (AWS): $42.232B Q2 2026 +37% YoY, $100B OpenAI expanded deal + $100B Anthropic pledge — Mechanism #358
+   - Channel 3 (Dual-Lab Equity): $13B Anthropic (15-20% stake, $53.4B Q2 paper gain > $27.5B operating income) + $50B OpenAI completed Jul 31 2026 — Mechanism #358 + Mechanism #25
+   - Channel 4 (Affiliate) — NEW Mechanism #367:
+     - Commission cut: up to 50% (10%→4-5%)
+     - Milestone tiers: eliminated
+     - YoY bonuses: gutted some categories
+     - Reporting: tracking-ID 1→4 sales, SKU/ASIN→category-only, premium APIs revoked
+     - Cost directive: 20% program cost reduction
+     - Rollout: Asia-Pacific late 2025 → US ~Mar 9 2026
+     - Forecast impact: -50% Amazon revenue 2026 (deal-site publisher example)
+     - Amazon statement: tiny fraction, highly competitive, continue bonuses
+     - Layoffs: thousands early 2026, Associates account managers + senior contacts cut, survivors 3x workload
+     - Strategic shift: toward creators/influencers more incremental, some publishers exited not strategic
+     - Diversification: Walmart, Target, Best Buy, Wayfair, eBay — short-term bad, medium-term excellent
+     - Google AI Overviews interaction: collapsing organic traffic top funnel + Amazon paying less bottom funnel = double squeeze, super challenging
+
+3. **Publisher Exposure Mapping:**
+   - NYT/Wirecutter: HIGH — Wirecutter archetype affiliate-dependent, dual Amazon relationship ($20-25M/yr Alexa AI deal + $50-100M+ est. Associates + APS + Prime Video Ads), $70-125M/yr total Amazon dependency 2.5-4.4% total NYT revenue, $15-50M/yr potential loss from 30-50% commission cut, AI licensing becomes only growing Amazon stream as affiliate declines, timing notable May 2025 AI deal then Mar 2026 affiliate cut shifts relationship transactional→strategic
+   - Condé Nast/WIRED: HIGH — Rufus Jul 2025 + OpenAI Aug 2024 + Microsoft PCM Dec 2025 pilot + Associates + Amazon advertiser + Google ad 37% overlap
+   - Hearst: MEDIUM-HIGH — Rufus deal + Associates + magazine commerce
+   - Vox Media: MEDIUM — shopping verticals, Microsoft PCM, OpenAI deal
+   - Ziff Davis/Gizmodo: LOW (Gizmodo clean control — zero known Amazon deals per profile)
+   - Reuters: LOW — minimal affiliate, wire service, clean control
+
+4. **Mechanism #96 Correction (Stale Claim Fix):**
+   - Prior claim: WIRED 0 articles Apple v OpenAI lawsuit 35 days (mechanism #96, competitor-entities.yaml)
+   - Corrected: WIRED 1 article (Jul 10 2026, Maxwell Zeff, Apple Sues OpenAI)
+   - Volume asymmetry: 6 vs 1, not 6 vs 0 (Gizmodo 6 vs WIRED 1)
+   - Framing asymmetry persists: IP drama/competitive-drama-validates-threat vs surveillance alarm/creep/pervert glasses
+   - Source URL corrected article: https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/
+   - Verification: browser.spawn_task Aug 28 2026 (wired.yaml direct_wired_primary_sources_verified_aug28_browser, 6 URLs verbatim)
+   - Correction impact: silence thesis invalidated, framing thesis stands, volume asymmetry reduced but not eliminated
+   - Files corrected: competitor-entities.yaml litigation_coverage_analysis, competitor-coverage-research.yaml relationship description
+
+5. **Asymmetry Score Validation:**
+   - Amazon [-0.1 soft] vs Meta [-0.75 adversarial] hypothesized from quadruple channel — ILLUSTRATIVE ONLY, no empirical test in this iteration, requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores
+   - Meets project standing rule Aug 28: One article per entity is insufficient for inferential significance — report descriptive only — synthetic arrays labeled illustrative only — never present synthetic p-values, Cohen's d, or confidence intervals as empirical evidence
+   - Every fact needs source URL — 1 URL verbatim from primary source (Adweek) + 1 corrected WIRED URL
+
+**Statistical Constraint Compliance:**
+- No p-values presented as empirical
+- No Cohen's d presented as empirical
+- No confidence intervals presented as empirical
+- Synthetic tone arrays (if any) labeled illustrative only, is_empirical false
+- Descriptive only for affiliate cut (n=7 publishers anecdotal, not SEC filing, commission 10%→4-5% from large performance-marketing operator anecdotal)
+- Explicit recognition of confounders (Google AI Overviews traffic collapse dual causality, commerce vs news desk indirect transfer, heterogeneity of cuts, anonymity limits verifiability, operational efficiency not strategic capture)
+
+**Confounding Factors:**
+- STRONG: Correlation≠causation — softer Amazon coverage may reflect beat-specific access, genuine product enthusiasm, editorial calendar rather than affiliate incentive. Recurrent Ventures quote explicitly links Google AI Overviews traffic collapse to Amazon diversification pressure — dual causality, not single-channel.
+- STRONG: Amazon affiliate revenue concentrated in commerce/review verticals (Wirecutter, Strategist) — not news/investigative desks producing adversarial Meta coverage. Cross-desk incentive transfer indirect.
+- MODERATE: Commission cuts not uniform — publishers with longstanding editorial relationships retained more favorable terms, while paid-media-driven affiliate businesses absorbed heaviest cuts. Heterogeneity complicates blanket softening prediction.
+- MODERATE: Adweek story based on 7 publishers + partners direct knowledge — not Amazon SEC filing. Rates 10%→4-5% anecdotal from large performance-marketing operator, not primary Amazon disclosure. Publisher anonymity limits verifiability.
+- WEAK: Amazon Associates 20% cost-cut directive + reporting degradation may be operational efficiency, not strategic capture — layoffs concentrated product development + client services across Amazon, not Associates-specific.
+
+**Sources (2 HTTPS, 1 primary new + 1 corrected):**
+- https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/ (Amazon Cuts Affiliate Commissions Up to 50% for Publishers, Adweek, 7 publishers + partners direct knowledge, 50% cut, 10%→4-5%, milestone tiers eliminated, YoY bonuses gutted, reporting 1→4 sales SKU/ASIN→category-only APIs revoked, 20% cost directive, Asia-Pacific late 2025 → US Mar 9 2026, -50% forecast deal-site publisher, Andrew Perlman quote Google AI Overviews top + Amazon bottom double squeeze super challenging, Amazon statement tiny fraction highly competitive continue bonuses, layoffs thousands early 2026 Associates account managers + senior contacts cut survivors 3x workload reporting bugs/delays, strategic shift creators/influencers more incremental some publishers exited not strategic, diversification Walmart/Target/Best Buy/Wayfair/eBay short-term bad medium-term excellent forced diversification overdue — verified browser.open Aug 28 20:00 PT lines 0-68 verbatim)
+- https://www.wired.com/story/apple-sues-openai-allegedly-stealing-ip-hardware/ (Apple Is Suing OpenAI for Allegedly Stealing Hardware Secrets, WIRED, Jul 10 2026, Maxwell Zeff, nascent hardware business innovative technology building innovative technology empowers people family of AI-powered devices AI-powered puck sits tabletop voice-controlled hired 400+ former Apple employees, privacy treatment none always-on voice environmental awareness puck coverage IP theft/poaching zero surveillance/creepy framing, deal_disclosed false, correction impact DISPROVES prior ZERO-coverage claim mechanism #96 — WIRED DID publish 1 direct article silence thesis invalidated framing thesis IP drama vs surveillance alarm still stands — verified browser.spawn_task Aug 28 19:05 UTC)
+
+**Extends Mechanism #358:**
+- Mechanism #358 (Aug 28 2026) documented Amazon triple channel (advertising $19.809B +26% YoY, AWS $42.232B +37% YoY, dual-lab equity $13B Anthropic + $50B OpenAI $63B total 3.5x Microsoft $18B, $53.4B Anthropic paper gain > $27.5B operating income 85% profit from non-consolidated company, $100B+ cloud commitments Anthropic + $100B expanded AWS/OpenAI, $76B TTM ads, $150B AWS run-rate, BBC/C-SPAN/Newsweek/Time/SoundCloud AWS media customers, Sponsored Products largest key driver Sponsored Prompts Alexa+ +48% conversion Prime Video Ads TNF/NBA/WNBA/NASCAR sold out Ads Agent AI 8% lower CPM 6% lower CPA 11 countries, publisher dependency Associates/APS/DSP/Prime Video Ads, vendor lock-in massive migration costs, $145-193B Anthropic stake value at $965B $180-240B at $1.2T, $50B OpenAI $110B round $730B valuation completed Jul 31 SEC filing $15B Q1 + $13.7B Q2 + $21.3B post-Jun 30, $63B combined largest dual-lab 3.5x Microsoft, pre-IPO coverage pressure both confidential S-1 Jun 2026 $1T/$965B-$2T valuations positive coverage boosts valuation → boosts Amazon equity gains → boosts Amazon capacity maintain publisher ad/cloud terms self-reinforcing invisible disclosure, materiality inversion $62.6B net income includes $53.4B Anthropic gain 85% profit, zero-deal paradox compounded Anthropic ZERO voluntary publisher deals yet Amazon PAYS publishers for Rufus/Alexa Amazon profits both sides licensing publisher content own AI AND backing AI lab pays publishers nothing publishers receiving Amazon money no structural reason scrutinize Anthropic zero-deal model, coverage prediction BuzzFeed/Hearst/Ziff Davis/Pinterest softest Anthropic/OpenAI IPO Reuters minimal Gizmodo no deals more neutral Condé Nast/WIRED Rufus + OpenAI + Amazon PCM via Microsoft overlap most exposed triple channel, temporal Q3-Q4 2026 pre-IPO window Anthropic Oct 2026 OpenAI 2027 coverage shapes institutional investor sentiment, STRONG Google Ad Manager dominates not Amazon APS 10% total revenue, STRONG genuine technological enthusiasm safety brand access, MODERATE $1.2T mark-to-market volatile, MODERATE OpenAI $50B after Q2 period Q2 gain Anthropic-only, WEAK AWS media customer list few MediaScope adversarial pubs indirect)
+- Mechanism #367 adds 4th channel (affiliate): Amazon Associates commission cuts up to 50% amplify publisher dependency, $15-50M/yr potential NYT loss, Wirecutter archetype $50-100M+ est. affiliate, $20-25M/yr Alexa AI deal becomes only growing Amazon stream as affiliate declines, timing May 2025 AI deal → Mar 2026 affiliate cut shifts transactional→strategic, Google AI Overviews double squeeze $93M Q1 2026 digital ad +32% YoY $350M+ annualized Google share undisclosed but structurally dominant, 7 publishers confirmed Adweek not SEC filing anonymity limits verifiability, commerce vs news desk indirect transfer, heterogeneity longstanding editorial retained favorable terms paid-media heaviest cuts, operational efficiency not strategic capture 20% cost directive + reporting degradation layoffs product development + client services across Amazon, requires Welch t-test + Cohen d + bootstrap CI observed article-level tone scores empirical validation, synthetic arrays illustrative only
+
+**Files Changed:**
+- profiles/competitor-entities.yaml: amazon_affiliate_commission_cut_aug28 (NEW, mechanism #367, iteration #356, Type C, 4th channel affiliate 50% cut 10%→4-5% milestone eliminated YoY gutted reporting 1→4 SKU/ASIN→category APIs revoked 20% cost directive Asia-Pacific late 2025 US Mar 9 2026 -50% forecast Andrew Perlman quote Google AIO top + Amazon bottom double squeeze tiny fraction highly competitive continue bonuses layoffs thousands Associates account managers senior contacts 3x workload bugs/delays strategic shift creators/influencers more incremental some exited not strategic diversification Walmart/Target/Best Buy/Wayfair/eBay short-term bad medium-term excellent forced diversification overdue, extends #358, publisher impact HIGH/MEDIUM/LOW mapping, source 1 HTTPS Adweek, confounding 5 factors STRONG/STRONG/MODERATE/MODERATE/WEAK, cautious language synthetic cannot empirical), litigation_coverage_analysis (CORRECTED, mechanism #96, WIRED 0→1, correction_note Aug 28, 6 vs 1 not 6 vs 0, framing asymmetry persists, source WIRED Jul 10 Maxwell Zeff)
+- profiles/competitor-coverage-research.yaml: litigation coverage selectivity relationship (CORRECTED, Gizmodo 6 vs WIRED 1 not 0, volume asymmetry persists 6 vs 1 framing IP drama vs surveillance alarm)
+- profiles/nytimes.yaml: amazon_affiliate_commission_cuts_2026 (PRE-EXISTING, iteration #355 verified, $50-100M+ Wirecutter est., $20-25M/yr Alexa AI deal, $70-125M/yr total Amazon dependency 2.5-4.4% total NYT revenue, $15-50M/yr potential loss, May 2025 AI deal → Mar 2026 affiliate cut transactional→strategic, source Adweek)
+- tests/test_amazon_affiliate_commission_cut_aug28.py (NEW, 12 tests, all passing — mechanism 367 exists iteration 356 Type C 4th channel, required keys, source URL Adweek, commission cut details 50% Associates 10%→4-5% reporting degradation, no synthetic significance cautious language, mechanism 96 corrected WIRED 1 correction_note present, NYT affiliate cut exists source Adweek, YAML parseable, no duplicate 367, HTTPS)
+- iteration-log.md (this entry)
+
+**Tests:** 12/12 new passing. Total suite: ~23,157 tests (was ~23,145, +12). Total files: 657 (was 656, +1).
+
+**Asymmetry Score Validation:**
+- Amazon [-0.1 soft] vs Meta [-0.75 adversarial] hypothesized quadruple channel — ILLUSTRATIVE ONLY, no empirical test in this iteration, requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation
+- Meets project standing rule Aug 28: One article per entity is insufficient for inferential significance — report descriptive tone delta only — synthetic arrays labeled illustrative only — never present synthetic p-values, Cohen's d, or confidence intervals as empirical evidence
+- Every fact needs source URL — 2 URLs verbatim from primary sources (1 new Adweek + 1 corrected WIRED)
+
+**Statistical Constraint Compliance:**
+- No p-values presented as empirical
+- No Cohen's d presented as empirical
+- No confidence intervals presented as empirical
+- Synthetic tone arrays (if any) labeled illustrative only, is_empirical false
+- Descriptive only for affiliate cut (n=7 publishers anecdotal, not SEC filing, 10%→4-5% anecdotal large performance-marketing operator not primary Amazon disclosure)
+- Explicit recognition of confounders (Google AI Overviews traffic collapse dual causality, commerce vs news desk indirect transfer, heterogeneity of cuts, anonymity limits verifiability, operational efficiency not strategic capture)
+- No unsupported claim that financial ties universally produce softer coverage (Mechanism #366 counterevidence preserved — Dell Cameron adversarial toward OpenAI despite Condé Nast OpenAI deal)
+
+**Delta vs Iteration #355:**
+- #355 Type B Dell Cameron Severity Framing Inversion (Mechanism #366) — falsification test, genuine counterexample to financial-incentive softening thesis, Dell Cameron + Maxwell Zeff OpenAI rogue agent adversarial -0.6 rogue/hacked/unhinged more than just actual hacking 4 publicly available services exposed logins active hacking most severe vs Dell Cameron + Dhruv Mehrotra Meta NameTag adversarial -0.75 hidden/silently added facial recognition millions phones dormant surveillance infrastructure least severe dormant never activated zero data processed removed 24-48h, severity inversion MORE severe OpenAI yet both adversarial, descriptive delta 0.15 n=1 per entity insufficient inferential, financial tie Condé Nast OpenAI $1-5M/yr 2024-08-20 multi-year ChatGPT/SearchGPT display, prediction softer OpenAI coverage FAILED for this journalist/lane, counterevidence direct counterexample WIRED systematically softens claim rejected qualified narrower finding WIRED wearables investigative resources disproportionately target Meta NameTag multi-part Business Wars podcast creep framing while Cameron can still report aggressively OpenAI cybersecurity lane, lane distinction wearables surveillance vs cybersecurity breach different editorial lanes different incentive structures, legitimate factors different beats OpenAI cybersecurity core beat Meta privacy/surveillance computational forensics moderate, objective newsworthiness active hacking more severe than dormant code strong, timing OpenAI disclosure Jul 28 after NameTag Jun 4 summer rogue AI disclosures editorial appetite moderate, co-authorship Maxwell Zeff AI business vs Dhruv Mehrotra computational forensics different partnerships weak, extends mechanism #66 Aug 12 Dell Cameron & Dhruv Mehrotra investigative resource allocation Meta wearables same institutional pattern investigative desk qualifies #66 Cameron can still be adversarial OpenAI cybersecurity lane despite Condé Nast OpenAI deal lane matters universal softening claim rejected, 10 new tests, 3 HTTPS sources WIRED rogue agent + WIRED NameTag + Reuters Condé Nast OpenAI deal, mechanism #366, files wired.yaml + journalists.yaml + test + log
+- #356 Type C Amazon Affiliate Commission Cut (Mechanism #367) — financial incentive mapping, 4th channel beyond triple channel Mechanism #358, Adweek Aug 2026 7 publishers direct knowledge 50% cut 10%→4-5% milestone eliminated YoY gutted reporting 1→4 SKU/ASIN→category APIs revoked 20% cost directive Asia-Pacific late 2025 US Mar 9 2026 -50% forecast deal-site publisher Andrew Perlman quote Google AI Overviews top + Amazon bottom double squeeze super challenging tiny fraction highly competitive continue bonuses layoffs thousands Associates account managers senior contacts 3x workload bugs/delays strategic shift creators/influencers more incremental some exited not strategic diversification Walmart/Target/Best Buy/Wayfair/eBay short-term bad medium-term excellent forced diversification overdue, Google AI Overviews interaction collapsing organic traffic top funnel + Amazon paying less bottom funnel double squeeze, $70-125M/yr NYT total Amazon dependency 2.5-4.4% total NYT revenue $50-100M+ Wirecutter affiliate $20-25M/yr Alexa AI deal $15-50M/yr potential loss May 2025 AI deal → Mar 2026 affiliate cut transactional→strategic, NYT/Wirecutter HIGH Condé Nast/WIRED HIGH Hearst MEDIUM-HIGH Vox MEDIUM Ziff Davis/Gizmodo LOW Reuters LOW clean controls, mechanism #96 correction WIRED 0→1 6 vs 1 not 6 vs 0 framing asymmetry persists IP drama vs surveillance alarm silence thesis invalidated, 12 new tests, 2 HTTPS sources Adweek + WIRED Jul 10 corrected, mechanism #367, files competitor-entities.yaml + competitor-coverage-research.yaml + nytimes.yaml (pre-existing) + test + log
+
+**Limitations:**
+- Adweek story based on 7 publishers + partners direct knowledge — not Amazon SEC filing, commission rates 10%→4-5% anecdotal from large performance-marketing operator not primary Amazon disclosure, publisher anonymity limits verifiability, Amazon statement tiny fraction highly competitive continue bonuses contradicts publisher experience, no independent SEC exhibit verification for commission rates (Amazon Associates program terms not filed as SEC exhibit, unlike advertising/AWS $19.809B/$42.232B Q2 2026 SEC-verified via https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm)
+- NYT/Wirecutter $50-100M+ affiliate revenue estimate derived from $308.1M Affiliate licensing other FY2025 minus licensing minus building rental ~$6.8M/q commercial printing other licensing — impossible to isolate AI deal revenue from public filings alone per NYT Q2 2026 $762.5M revenue $537.9M subscription $149.1M advertising derived affiliate licensing other $75.5M Q1 $68.5M +7.8% YoY Q1 guidance low single digit implied Q2 2025 ~$73M YoY ~+3.4% decelerating Q4 $100.2M seasonal spike Q1 +7.8% Q2 +3.4% — estimate range wide $50-100M+
+- Cross-desk incentive transfer indirect — affiliate revenue concentrated commerce/review verticals (Wirecutter, Strategist) not news/investigative desks producing adversarial Meta coverage, legitimate factor STRONG
+- Commission cuts not uniform — longstanding editorial relationships retained favorable terms while paid-media-driven affiliate businesses absorbed heaviest cuts, heterogeneity complicates blanket softening prediction, legitimate factor MODERATE
+- Google AI Overviews double squeeze confounds single-channel attribution — Recurrent Ventures CEO explicitly links Google AI Overviews top funnel collapse to Amazon bottom funnel cut, dual causality not single-channel, requires multivariate analysis
+- Small n (7 publishers Adweek + 1 deal-site publisher -50% forecast + 1 large performance-marketing operator 10%→4-5% anecdotal) — qualitative observation not statistically tested, causal caution required, requires larger corpus n>=10 per group observed validation, Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation
+- No empirical asymmetry score test in this iteration — Amazon [-0.1 soft] vs Meta [-0.75 adversarial] hypothesized quadruple channel ILLUSTRATIVE ONLY, no p/d/CI, descriptive only, synthetic arrays labeled illustrative only, never present synthetic p-values Cohen's d confidence intervals as empirical evidence per project standing rule Aug 28
+- Mechanism #96 correction weakens silence thesis (6 vs 1 not 6 vs 0) but volume + framing asymmetry remains (IP drama/competitive-drama-validates-threat innovative technology building innovative technology empowers people family AI-powered devices AI-powered puck tabletop voice-controlled hired 400+ former Apple employees vs surveillance alarm pervert glasses violation creepy pests stealth mode secretive) — correction preserved in wired.yaml direct_wired_primary_sources_verified_aug28_browser 6 URLs verbatim aspirational vs alarm vocabulary confirmed
+
+---
+
+
 ## Iteration #355  -  Fri 2026-08-28 19:00 PT (Type B: Journalist Cross-Entity Tracking  -  Dell Cameron Severity Framing Inversion: OpenAI Rogue Agent Actual Hacking vs Meta NameTag Dormant Code  -  Mechanism #366)
 
 **Type:** B  -  Journalist Cross-Entity Tracking (Same journalist, different entities, severity inversion  -  falsification test)
