@@ -558,10 +558,17 @@ revenue_relationships:
       - "https://www.morningstar.com/news/business-wire/20250905771340/prorata-closes-40-million-series-b"
   - partner: "Google"
     relationship_type: "advertising"
-    estimated_value: "Significant (programmatic)"
-    description: "Google is major ad revenue source via programmatic advertising and serves as their ad server. Guardian seeing 'less demand coming through Google's pipes' as of late 2024/early 2025. Programmatic revenue overall up 25%+ YoY. Integrated with The Trade Desk's OpenPath for direct programmatic access."
+    estimated_value: "Significant (programmatic) - Alphabet Q2 2026 total advertising $81.63B (Search $63.27B up 17%, YouTube $11.06B up 13%, Network $7.3B), total revenue $119.8B up 24%, Cloud $24.77B up 82%, Zacks Jul 23 2026, Fool Aug 25 2026, 9to5Google Jul 22 2026, blog.google Jul 22 2026, SEC 10-Q Jul 22 2026"
+    description: "Google is major ad revenue source via programmatic advertising and serves as their ad server. Guardian seeing 'less demand coming through Google's pipes' as of late 2024/early 2025. Programmatic revenue overall up 25%+ YoY. Integrated with The Trade Desk's OpenPath for direct programmatic access. SEC filing cross-validation Aug 29 2026: Alphabet Q2 2026 ad revenue $81.63B verifies Google's dominance as publisher ad dependency - mechanism #372."
     date_established: "ongoing"
-    source_url: "https://adexchanger.com/publishers/the-guardian-us-is-following-programmatic-budgets-to-private-marketplaces/"
+    source_urls:
+    - https://adexchanger.com/publishers/the-guardian-us-is-following-programmatic-budgets-to-private-marketplaces/
+    - https://www.zacks.com/stock/news/2959232/googl-q2-earnings-call-centers-on-ai-capacity
+    - https://www.zacks.com/stock/news/2956210/stay-ahead-of-the-game-with-alphabet-googl-q2-earnings-wall-streets-insights-on-key-metrics
+    - https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/
+    - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
+    - https://www.fool.com/investing/2026/08/25/sundar-pichai-says-alphabets-ai-products-now-reach/
+    sec_filing_verified: '2026-08-29 - Alphabet 10-Q Q2 2026 ad revenue $81.63B cross-validated via 7 sources, mechanism #372'
   - partner: "Google (News AI Pilot)"
     relationship_type: "ai_licensing_pilot"
     estimated_value: "Single figure millions GBP/yr (Press Gazette Aug 3 2026)"

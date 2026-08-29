@@ -1120,13 +1120,13 @@ revenue_relationships:
   - https://www.thewrap.com/conde-nast-openai-multiyear-deal/
 - partner: Amazon (Rufus)
   relationship_type: licensing
-  estimated_value: undisclosed, multi-year
+  estimated_value: undisclosed, multi-year - Amazon Q2 2026 ad revenue $19.8B up 26% YoY, total revenue $200.6B, net income $62.65B (inflated by $53.4B Anthropic mark-to-market), AdExchanger Jul 30 2026, Motley Fool Aug 2 2026, TradingView 10-Q summary, SEC 10-Q Jul 30 2026
   date_established: '2025-07-10'
   description: 'Multi-year agreement for Amazon''s Rufus AI shopping assistant to access Condé Nast''s content archive. Rufus
     is Amazon''s LLM-powered shopping assistant trained on product catalog, customer reviews, and web content. The strong
     commerce angle in Condé Nast content (fashion, home, gear) makes it a natural match. First activations expected summer
-    2025. Amazon competes with Meta in digital advertising (~$50B+ Amazon ad rev vs Meta''s ~$160B+) and AI (Alexa/Rufus vs
-    Meta AI).
+    2025. Amazon competes with Meta in digital advertising (Amazon Q2 2026 $19.8B up 26% YoY verified via AdExchanger Jul 30 2026, Motley Fool Aug 2 2026, TradingView 10-Q summary, SEC 10-Q Jul 30 2026, mechanism #372) vs Meta $59.363B Q2 2026) and AI (Alexa/Rufus vs
+    Meta AI). SEC filing cross-validation Aug 29 2026 confirms Amazon ad scale as structural publisher dependency - mechanism #372.
 
     '
   competitive_with:

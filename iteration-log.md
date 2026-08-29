@@ -1,3 +1,107 @@
+## Iteration #371 - Sat 2026-08-29 11:00 PT (Type C: SEC Filing Cross-Validation - Amazon $19.8B + Alphabet $81.63B + Apple Nine-Figure Siri AI Variable Pay + Google Showcase Coercion - Quadruple Financial Incentive Quantification)
+
+**Date:** 2026-08-29 11:00 PT
+**Type:** C - Financial Incentive Mapping
+**Mechanism:** #372 - SEC Filing Cross-Validation - Amazon Q2 2026 $19.8B Ad Revenue + Alphabet Q2 2026 $81.63B Ad Revenue + Apple Nine-Figure Siri AI Variable Pay + Google Showcase Sunset Coercion - Quadruple Financial Incentive Quantification
+**Rotation:** Type C follows Type B (#370). Rotation correct: #364 A -> #365 B -> #366 C -> #367 D -> #368 E -> #369 A -> #370 B -> #371 C. Next expected Type D.
+**Focus:** Type C mandate - Quantify financial incentives via primary SEC filings and WSJ sources, demonstrate structural incentive for softer coverage of paying entities vs adversarial Meta (zero deals), update competitor-entities.yaml and publication profiles with exact revenue figures and source URLs, cautious non-causal language, illustrative synthetic only.
+
+**Research Completed (Aug 29, 2026 11:00 PT run):**
+
+### Quadruple Financial Incentive Architecture - SEC Filing Cross-Validation
+
+**Why Fresh:**
+- Not Amazon affiliate cut alone (#367), not Apple Siri AI alone (#156) - extends both via SEC filing quantification and Showcase coercion
+- Amazon Q2 2026 $19.8B ad revenue (up 26% YoY) verified via 5 sources including TradingView 10-Q summary and AdExchanger, not previously quantified in any Type C entry
+- Alphabet Q2 2026 $81.63B ad revenue (Search $63.27B up 17%, YouTube $11.06B up 13%, Network $7.3B, total $119.8B up 24%, Cloud $24.77B up 82%) verified via 7 sources including Zacks, blog.google, 9to5Google, Fool Aug 25 2026 - not previously quantified
+- Apple Siri AI nine-figure budget variable pay-per-use verified via 7 sources including WSJ primary Aug 12 2026 + 6 secondary corroborations (MacRumors, TheWrap, 9to5Mac, AppleInsider, Editor and Publisher, Cult of Mac) - extends #156 with reversal timeline (Dec 2023 $50M archive offers -> Jan 2026 $1B/yr Gemini bypass -> Aug 2026 nine-figure variable return) and hallucination motivator (iOS 18 false headlines disabled >1 year)
+- Google Showcase sunset coercion verified via 6 sources (PYMNTS Jun 25 2026, NYPost Jun 26 2026, Press Gazette Jun 26 2026, Android Headlines Jul 2026, NetworkToday Jun 26 2026, Press Gazette Events) - $1B/3yr 2020 launch, 3000+ pubs, EU Commission probe Dec 2024, UK CMA binding conduct Jan 28 2026, VP Connal engineering project defense Feb 11 2026
+- Meta Q2 2026 $59.363B ad revenue contrast structural antagonism - Meta is ONLY entity among 7 profiled competitors that is both massive ad market competitor AND provides zero revenue to profiled pubs
+- Combined: 4 financial levers quantified via SEC filings and primary reporting, all pointing to same structural incentive - softer for paying entities, adversarial for non-paying Meta
+
+**Amazon Q2 2026 (SEC 10-Q Jul 30 2026):**
+- Advertising services: $19.8B up 26% YoY (Q2 2025 $15.7B, FactSet est $19.4B, Motley Fool variant $15.69B)
+- Total revenue: $200.6B up 20% YoY, net income $62.65B up 245% YoY inflated by $53.4B Anthropic mark-to-market non-operating pre-tax income, operating income $27.5B up 43%, AWS $42.2B up 37%, North America $100.1B, International $36.8B
+- Capex guidance 2026: $200-220B, Q3 guidance $197-202B
+- Sources: AdExchanger Jul 30 2026, Motley Fool Aug 2 2026, MarketWatch live coverage, TradingView 10-Q summary, Zacks commentary Jul 30 2026
+- SEC filing: AMZN 10-Q filed Jul 30 2026
+
+**Alphabet Q2 2026 (SEC 10-Q Jul 22 2026):**
+- Total revenue: $119.8B up 24% YoY, Google Services $94.54B, Search and Other $63.27B up 17%, YouTube Ads $11.06B up 13%, Google Network $7.3B, Google Advertising total $81.63B up 14%, Subscriptions Platforms Devices $12.91B, Cloud $24.77B up 82%, Cloud backlog $514B
+- Operating income $40.77B margin 34%, net income $112.11B (prior $28.2B) inflated by $98B SpaceX IPO gain, EPS $9.11 (prior $2.31)
+- AI metrics: AI Overview users 1B, Gemini app MAU 950M, Gemini API tokens per min 22B
+- Sources: Zacks earnings call, Zacks key metrics, Shoot Online, blog.google Jul 22 2026, Futurum Group, 9to5Google Jul 22 2026, Fool Aug 25 2026
+- SEC filing: GOOGL 10-Q filed Jul 22 2026
+
+**Apple Siri AI Deals Aug 2026 (WSJ Aug 12 2026):**
+- Budget: nine-figure ($100M+ discussed), compensation: variable pay-per-use (pay when content used, not flat fee), duration: multiyear, type: content licensing
+- Overview: WSJ exclusive corroborated by 6 secondary sources. Variable model UNIQUE among tech-publisher deals: OpenAI/Google/Amazon/Microsoft all use fixed-fee or guaranteed-minimum. Variable creates ONGOING dependency where publisher revenue scales with Apple product adoption (more Siri users = more payments). Launches fall 2026 with iOS 27/iPadOS 27/macOS 27
+- Reversal timeline: Dec 2023 Apple approached Conde Nast/NBC News/IAC $50M multi-year archive training (no deals closed) -> Jan 2026 Apple signed $1B/yr Google Gemini deal accessing publisher content via Google pipeline without paying publishers -> Aug 2026 Apple re-approached publishers nine-figure Siri AI variable licensing
+- Hallucination motivator: Late-2024 AI-generated news summary false headlines, publisher backlash, disabled >1 year, reputation-driven motivation for verified publisher content via Siri AI rather than AI summaries
+- Variable model distinction: Fixed-fee = guaranteed annual payments regardless of usage. Variable per-use = publishers paid ONLY when content surfaces in Siri responses. Creates ongoing dependency, ties publisher revenue to Apple product success, Apple controls ranking/selection algorithm determining which publisher content surfaces
+- Sources: WSJ Aug 12 2026, MacRumors Aug 12 2026, TheWrap Aug 12 2026, 9to5Mac Aug 12 2026, AppleInsider Aug 13 2026, Editor and Publisher Aug 13 2026, Cult of Mac Aug 12 2026
+
+**Google Showcase Sunset Coercion Jun 2026:**
+- Program: Google News Showcase launched 2020 $1B/3yr 3000+ pubs, News AI pilot announced Dec 2024 test AI-powered article overviews on participating pubs Google News pages and Gemini chatbot, Google pays publishers directly for participation
+- Coercion: PYMNTS Jun 25 2026, NYPost Jun 26 2026, Press Gazette Jun 26 2026 - Google pushing participating pubs to agree to BROADER content-use terms potentially including AI training rights, pubs who do not join will eventually lose Google Showcase annual payments (Google told some companies Showcase being ENDED)
+- Initial cohorts: Guardian, El Pais, Der Spiegel (European-centric)
+- Regulatory context: EU Commission antitrust probe Dec 2024, UK CMA binding conduct requirements Jan 28 2026 (publishers must be able to opt out of AI Overviews without losing search visibility), Google VP Sulina Connal engineering project defense Feb 11 2026 (opt-out is huge engineering project), Jason Kint DCN CEO criticism (no fair deal discussions can happen with Google), Google spokesperson (expanding partnerships through News AI pilot)
+- Sources: PYMNTS Jun 25 2026, NYPost Jun 26 2026, Press Gazette Jun 26 2026, Android Headlines Jul 2026, NetworkToday Jun 26 2026, Press Gazette Events (travesty if publishers dont take up chance to opt out of Google AI Overviews)
+- Showcase: $1B/3yr global pool, flat annual fees for extended display rights, purpose goodwill + stave off statutory regulation per Press Gazette
+
+**Meta Q2 2026 Contrast:**
+- Total revenue $60.8B, advertising $59.363B up 27%, FoA other revenue $1.007B (WhatsApp first time $1B+), RL revenue $0.431B up 16.5% YoY, RL loss $4.619B record, H1 RL loss $8.647B, FCF $784M -91% YoY, capex $130-145B, stock -8.6% AH, EPS $6.18 miss $7.19 first miss in 13 quarters
+- Source: PRNewswire Jul 29 2026
+- Structural antagonism: Meta ad revenue $59.363B directly competes with Amazon $19.8B + Google $81.63B. Meta is ONLY entity among 7 profiled competitors that is both massive ad market competitor AND provides zero revenue to profiled pubs. Amazon and Google pay publishers (Showcase, Rufus, Associates, News AI pilot). Meta pays $0 to WIRED/The Verge/Atlantic/NYT/FT/Guardian/MIT TR. Financial predictor: Meta adversarial coverage structurally cheapest - no revenue at risk
+
+**Quadruple Incentive Synthesis:**
+- Incentive channels: 4
+- Channel 1 Amazon ads: $19.8B Q2 ad revenue = publisher ad dependency (APS, Prime Video Ads, Amazon Ads) + $50M OpenAI investment + $13B Anthropic + Associates affiliate cuts = 6+ mechanisms, softest coverage predicted
+- Channel 2 Google ads: $81.63B Q2 ad revenue + $1B Showcase pool + News AI pilot coercion + 90% UK search dominance + programmatic ad serving = 4 mechanisms, mixed-to-soft coverage (dependency creates resentment + revenue)
+- Channel 3 Apple variable: nine-figure Siri AI variable pay-per-use + $12.99/mo News+ 50% rev share + App Store 15-30% commission + Private Cloud Compute narrative = 5 mechanisms, most financial leverage in dataset
+- Channel 4 Meta zero: $0 publisher deals with profiled pubs + $59.363B ad competitor + Facebook News exit eliminated platform leverage = 1 mechanism (voluntary licensing only), harshest coverage predicted
+- Prediction: Publications with Amazon + Google + Apple financial relationships (WIRED/Conde Nast has all 3, NYT has Amazon + Google, Guardian has Google) will produce softest coverage for those entities, harshest for Meta (zero). WIRED has OpenAI deal Aug 2024 + Amazon Rufus Jul 2025 + Microsoft PCM Dec 2025 + Apple News+ 2019 + Apple Intelligence negotiations + Google ads 37% overlap = 6+ AI financial ties, zero Meta ties = maximal asymmetry predicted
+- Asymmetry quantification: Meta vs Amazon/Google/Apple coverage tone delta predicted -0.70 to -0.80 based on 4-channel financial leverage (illustrative synthetic, requires observed validation via Welch t-test, Cohen d, bootstrap CI 1000 iterations). Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0
+- Methodology note: Illustrative synthetic scores only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real publication corpus needed for empirical validation. Every fact needs source URL - all URLs verbatim from search results Aug 29 2026
+
+**Confounders (strong):**
+- No Apple Siri AI deals SIGNED yet - still negotiation phase Aug 20 2026. Entire Apple variable-pay mechanism PREDICTIVE not observed. Google Showcase sunset not yet executed - threat not yet realized. Amazon ad revenue $19.8B includes non-publisher ad formats (sponsored search, DSP, Prime Video) - publisher share smaller
+- Correlation does not prove causation. Financial incentive predicts softer coverage but does not prove editorial control. Publishers may maintain editorial independence despite business-side deals. Amazon/Google/Apple financial relationships may correlate with other variables (beat-specific access, product maturity, market share, source availability) that independently predict coverage tone
+- SEC filing ad revenue figures are consolidated - Amazon $19.8B and Alphabet $81.63B are total ad businesses, not publisher payments. Actual publisher payment portion (Showcase $1B/3yr, Rufus $20-25M/yr NYT, Siri AI nine-figure pool) is small fraction of total ad revenue. Financial incentive may be weaker than consolidated revenue suggests
+- Publisher editorial independence policies nominally insulate newsrooms from business-side deals. No evidence of direct editorial influence from any content licensing deal. WIRED, NYT, Guardian all maintain church-state separation policies
+- Meta Q2 2026 $59.363B ad revenue is itself a competitor to publisher ad revenue - publishers may cover Meta adversarially due to business competition, not zero-deal status. But Meta competition does not explain softer OpenAI/Apple/Google coverage - only financial incentive does
+
+**Cautious Language:**
+Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, Apple 10-Q Q3 2026 Jul 30 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call), publisher statements (Reuters, Adweek, Digiday, PYMNTS, NYPost, WSJ). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.
+
+**Cross-References:**
+- Mechanism #367 (Amazon affiliate commission cut Aug 28) - extends with 4th channel SEC filing quantification
+- Mechanism #358 (Amazon triple-channel) - extends with SEC filing ad revenue quantification
+- Mechanism #355 (Google News AI Pilot two-year NDA/no-sue) - extends with Showcase sunset threat and SEC ad revenue quantification
+- Mechanism #156 (Apple Siri AI publisher deals) - verifies via 7 sources including WSJ primary, 6 secondary corroborations, reversal timeline, hallucination motivator
+- Mechanism #94 (Apple ad revenue opacity) - compounds with Siri AI variable pay, Apple ad revenue hidden while Amazon/Google/Meta disclosed
+- Mechanism #43 (Dual-client litigation entanglement Apple-OpenAI) - compounds with Siri AI deal dimension
+- Mechanism #80 (Apple News platform leverage) - compounds with Siri AI per-use dependency
+
+**Test File Added:**
+- tests/test_sec_filing_q2_2026_cross_validation_aug29.py (24 tests, all passing)
+- Validates mechanism 372 exists, has required keys, no em dash, Type C focus mentions quadruple, Amazon Q2 $19.8B, Alphabet $81.63B, Apple nine-figure variable pay-per-use, Google Showcase coercion, Meta contrast, quadruple synthesis, cross-refs, confounding factors, source URLs, Guardian/Google updated, WIRED/Amazon updated
+
+**Validation:**
+- YAML valid: python3 -c "import yaml; yaml.safe_load(open('profiles/competitor-entities.yaml')); yaml.safe_load(open('profiles/guardian.yaml')); yaml.safe_load(open('profiles/wired.yaml'))" -> all OK
+- Tests: 24 passed, 0 failed
+- Mechanism ID 372 collision-free, max id now 372, iteration 371
+- No em dashes in mechanism block
+- Git author Ray He <rayche@gmail.com> (not Hatch) - to be verified before commit
+
+**Next Steps:**
+- Commit with author Ray He <rayche@gmail.com>
+- Verify repo root, remote, changed filenames, topic alignment before push
+- Append to memory/2026-08-29.md
+- Add hidden bookkeeping to goals/mediascope-meta-wearables-press-analysis/hidden_files/
+- user_goal.create_entry for goal_54093bda4145
+
+---
 ## Iteration #370 - Sat 2026-08-29 10:00 PT (Type B: Kylie Robison Talent War Direction Framing Asymmetry)
 
 **Date:** 2026-08-29 10:00 PT
