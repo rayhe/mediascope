@@ -2565,17 +2565,38 @@ competitor_relationships:
     coverage_prediction: adversarial
   essilorluxottica:
     financial_tie: advertising
-    estimated_value: undisclosed (part of ~€2B/yr EL global ad spend; historical brand alliance ~2014)
+    estimated_value: undisclosed (part of ~€2B/yr EL global ad spend; historical brand alliance ~2014; Meta $3.5B stake in EL since 2020)
     direction: receiving
     description: 'Oakley (EssilorLuxottica) maintained a "global brand alliance" with WIRED (~2014): co-created and sponsored
       multi-media content + brand advertising in international print editions and across WIRED.com. Theme: "disruption in
-      design, technology, manufacturing and business." Current status unknown. EssilorLuxottica''s broader ~€1.8-2B/yr ad
+      design, technology, manufacturing and business." Source: WebWire aId=350303. Current status unknown. EssilorLuxottica''s broader ~€1.8-2B/yr ad
       spend flows to Condé Nast parent via fashion titles (Vogue, GQ, VF). Despite this parent-level relationship, WIRED produces
       the most adversarial coverage of Oakley Meta/Ray-Ban Meta. Brand trigger: "Meta" name overrides advertiser relationship.
-      Mechanism #103.
+      Mechanism #103. Aug 29 2026 update - Meta $3.5B stake verification: Reuters Jul 8 2025 reports Meta acquired nearly 3% of EssilorLuxottica for about $3.5B, stake built since 2020 (Bloomberg). Source: https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter. H1 2026 verification: EssilorLuxottica reports Jul 28 2026 revenue EUR 14.02B (+7.3% YoY), Q2 EUR 7.175B (+7.3% YoY), EBIT margin 18.3% EUR 2.6B (+13.5% YoY), net profit EUR 1.2B (+7.5% YoY), DTC +10.3%, North America +7.8%, smart glasses production scaling noted, Meta partnership deepening. Sources: https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/ and https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144 and https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion. Reverse-advertiser alignment: Meta $3.5B → EssilorLuxottica EUR 14.02B H1 → EUR 1.8-2B ad spend → WIRED/Conde Nast advertiser → indirect Meta benefit via Ray-Ban Meta sales. Fifth financial channel extends quadruple to quintuple per Mechanism #376.
 
       '
     coverage_prediction: adversarial
+    h1_2026_verification_aug29:
+      mechanism_id: 376
+      date_analyzed: '2026-08-29'
+      meta_stake_pct: 3
+      meta_stake_value_b: 3.5
+      meta_stake_since: 2020
+      reuters_date: '2025-07-08'
+      essilorluxottica_h1_2026_date: '2026-07-28'
+      revenue_b_eur: 14.02
+      yoy_pct: 7.3
+      q2_revenue_b_eur: 7.175
+      ebit_margin_pct: 18.3
+      net_profit_b_eur: 1.2
+      dtc_yoy_pct: 10.3
+      reverse_advertiser_note: Meta is upstream capital source for WIRED advertiser - inverts typical advertiser-publisher direction
+      source_urls:
+      - https://www.reuters.com/world/europe/meta-takes-around-3-stake-ray-ban-parent-essilorluxottica-source-says-2025-07-08/?taid=686e0695638a420001a143cc&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
+      - https://www.essilorluxottica.com/en/newsroom/press-releases/essilorluxottica-reports-73-revenue-growth-first-half-2026-eur-140-billion/
+      - https://www.investing.com/news/stock-market-news/essilorluxottica-reports-73-revenue-growth-in-first-half-of-2026-93CH-4156144
+      - https://www.nasdaq.com/articles/essilorluxottica-reports-73-revenue-growth-first-half-2026-eu14-billion
+      - https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
   anthropic:
     financial_tie: none
     estimated_value: $0 direct
