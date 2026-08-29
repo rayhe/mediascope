@@ -1,6 +1,6 @@
 """
 Test for Iteration #366 Type C Financial Incentive Mapping
-Mechanism #368 — Google Zero 55%→25% + Amazon $70B Ads TTM + OpenAI $1-5M Licensing Marginal Replacement
+Mechanism #368 - Google Zero 55%→25% + Amazon $70B Ads TTM + OpenAI $1-5M Licensing Marginal Replacement
 """
 import yaml
 import pathlib
@@ -100,8 +100,8 @@ def test_wired_mechanism_no_em_dashes():
         str(mech.get('financial_incentive_quadrupling', {}).get('prediction', '')),
     ]
     for txt in text_fields:
-        assert '—' not in txt, f"Em dash found in mechanism text: {txt[:200]}"
-        assert '–' not in txt, f"En dash found in mechanism text: {txt[:200]}"
+        assert '\u2014' not in txt, f"Em dash found in mechanism text: {txt[:200]}"
+        assert '\u2013' not in txt, f"En dash found in mechanism text: {txt[:200]}"
 
 def test_competitor_entities_mechanism_exists():
     comp = load_yaml(REPO / "profiles/competitor-entities.yaml")
