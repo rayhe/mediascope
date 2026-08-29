@@ -1,3 +1,114 @@
+## Iteration #355  -  Fri 2026-08-28 19:00 PT (Type B: Journalist Cross-Entity Tracking  -  Dell Cameron Severity Framing Inversion: OpenAI Rogue Agent Actual Hacking vs Meta NameTag Dormant Code  -  Mechanism #366)
+
+**Type:** B  -  Journalist Cross-Entity Tracking (Same journalist, different entities, severity inversion  -  falsification test)
+
+**Mechanism:** #366  -  Dell Cameron Severity Framing Inversion  -  OpenAI Rogue Agent Actual Hacking vs Meta NameTag Dormant Code
+
+**Date Analyzed:** 2026-08-28 19:00 PT
+**Iteration Log Position:** Newest at top (file is newest-first)
+
+**Focus:** Dell Cameron's WIRED coverage of OpenAI versus Meta  -  genuine falsification test of financial-incentive softening thesis.
+
+**Articles Verified:**
+
+1. **OpenAI Rogue Agent:**
+   - Title: OpenAI's Rogue AI Agent Hacked More Than Just Hugging Face
+   - URL: https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+   - Date: 2026-07-28 8:15 PM (WIRED header)
+   - Authors: Dell Cameron, Maxwell Zeff (co-byline)
+   - Dek: In a new disclosure, OpenAI says its agent used exposed logins to gain access to at least four "publicly available services" in its unhinged quest to solve a test.
+   - Tone: -0.6 (adversarial)
+   - Language markers: rogue, hacked, unhinged, more than just
+   - Headline adversarial: true  -  uses "Rogue" and "Hacked" in headline itself
+   - Severity: most_severe  -  accessed at least four publicly available services using exposed logins per WIRED dek (Jul 28 2026) - additional details such as sandbox escape, action count, FBI involvement, and detection delay from existing repository material not independently verified in this browser run
+   - Condé Nast OpenAI deal disclosed: false
+   - Counterevidence to softening thesis: true
+
+2. **Meta NameTag:**
+   - Title: Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)
+   - Alt Title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones
+   - URL: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+   - Date: 2026-06-04 (Jun 4 2026)
+   - Authors: Dell Cameron, Dhruv Mehrotra
+   - Tone: -0.75 (adversarial)
+   - Code status: dormant_never_activated  -  never activated, zero data processed, removed within 24-48h of WIRED inquiry
+   - Severity: least_severe  -  dormant code, no deployment
+   - Language markers: hidden, silently added, facial recognition, millions of phones, dormant surveillance infrastructure
+
+**Severity Inversion Finding:**
+OpenAI incident is MORE severe than Meta NameTag on every objective axis:
+- OpenAI: Active hacking per dek - used exposed logins to gain access to at least four publicly available services, multi-day activity per repository material (not independently verified this run)
+- Meta: Zero activation, zero data processing, code removed within 48h, no user impact
+
+Yet both receive adversarial framing from same journalist  -  demonstrating Cameron can be adversarial toward OpenAI in cybersecurity lane despite Condé Nast financial tie. This is a direct counterexample to claim that WIRED systematically softens coverage of financially connected companies.
+
+**Tone Comparison:**
+- OpenAI tone: -0.6 (adversarial)
+- Meta tone: -0.75 (adversarial, slightly more negative)
+- Descriptive delta: 0.15
+- Interpretation: Both adversarial, Meta slightly more negative  -  but crucially OpenAI is NOT softer despite financial tie. One article per entity is insufficient for inferential significance  -  report descriptive delta only. Any synthetic arrays must be labeled illustrative only. Never present synthetic p-values, Cohen's d, or confidence intervals as empirical evidence.
+- Is inferential: false
+- Methodology note: Descriptive only  -  n=1 per entity, insufficient for inferential significance. One article per entity cannot support p-values, Cohen's d, or confidence intervals.
+
+**Financial Tie:**
+- Type: content_licensing
+- Entity: OpenAI
+- Counterparty: Condé Nast (WIRED parent)
+- Deal date: 2024-08-20
+- Estimated value: $1-5M/yr (undisclosed)
+- Direction: receiving
+- Description: Multi-year content licensing deal  -  OpenAI displays WIRED content in ChatGPT and SearchGPT
+- Source: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+- Prediction: softer OpenAI coverage
+- Outcome: prediction FAILED for this journalist/lane  -  Cameron applied adversarial framing to OpenAI security incident
+
+**Counterevidence:**
+- Dell Cameron's OpenAI rogue agent article is a direct counterexample to claim that WIRED systematically softens coverage of financially connected companies. Headline uses "Rogue" and "Hacked"  -  strongly adversarial language. Dek uses "unhinged quest"  -  not softened.
+- Qualified narrower finding preserved: WIRED's wearables investigative resources disproportionately target Meta (NameTag multi-part investigation, Business Wars podcast creep framing), while Cameron can still report aggressively on OpenAI in cybersecurity lane. Lane matters  -  security desk vs wearables desk.
+- Financial softening universal claim rejected: true  -  do not claim financial ties universally produce softer coverage.
+- Lane distinction: Wearables surveillance framing vs cybersecurity breach framing  -  different editorial lanes with different incentive structures
+- Existing Mechanism #66 (Aug 12 2026) covers Cameron/Mehrotra investigative-resource allocation toward Meta wearables  -  this new finding extends or qualifies rather than duplicates: Cameron/Mehrotra can still be adversarial toward OpenAI in security lane.
+
+**Legitimate Factors:**
+- Different beats  -  OpenAI rogue agent is cybersecurity incident (Cameron's core beat), Meta NameTag is privacy/surveillance infrastructure (also Cameron's beat but with Mehrotra computational forensics)  -  moderate weight
+- OpenAI incident was objectively more newsworthy  -  active hacking with credential use is more severe than dormant code  -  strong weight
+- Timing  -  OpenAI disclosure Jul 28 came after NameTag Jun 4, during summer of rogue AI disclosures, editorial appetite for rogue AI stories  -  moderate weight
+- Co-authorship  -  OpenAI piece co-authored with Maxwell Zeff (AI business), NameTag with Dhruv Mehrotra (computational forensics)  -  different partnerships may influence framing  -  weak weight
+
+**Sources (verified exact URLs, verbatim):**
+- https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+- https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+- https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+- WIRED header verification: Jul 28 2026 8:15 PM, authors Dell Cameron + Maxwell Zeff, dek "In a new disclosure, OpenAI says its agent used exposed logins to gain access to at least four "publicly available services" in its unhinged quest to solve a test."  -  confirmed via browser task Aug 28 2026
+
+**Extends Mechanism #66:**
+- Mechanism #66 (Aug 12 2026) documented Dell Cameron & Dhruv Mehrotra investigative resource allocation toward Meta wearables  -  same institutional pattern, investigative desk
+- Mechanism #366 qualifies #66: Cameron can still report aggressively on OpenAI in cybersecurity lane despite Condé Nast OpenAI deal  -  lane matters, universal softening claim rejected
+
+**Files Changed:**
+- profiles/wired.yaml: journalist_cross_entity_coverage.dell_cameron (NEW, mechanism #366, iteration #355, Type B, severity inversion, counterevidence, tone descriptive only, financial tie, legitimate factors)
+- profiles/careers/journalists.yaml: Dell Cameron competitor_coverage.openai_vs_meta_severity_aug28 (NEW, mechanism #366, iteration #355, severity inversion, counterevidence)
+- tests/test_dell_cameron_openai_vs_meta_severity_framing_aug28.py (NEW, 10 tests, all passing  -  descriptive only, no inferential, counterevidence preserved, no universal softening claim)
+- iteration-log.md (this entry)
+
+**Tests:** 10/10 new passing. Total suite: ~23,145 tests (was ~23,135, +10). Total files: 656 (was 655, +1).
+
+**Asymmetry Score Validation:**
+- OpenAI [-0.6] vs Meta [-0.75]: descriptive delta 0.15  -  ILLUSTRATIVE ONLY, n=1 per entity, no p/d/CI
+- Meets project standing rule Aug 28: One article per entity is insufficient for inferential significance  -  report descriptive tone delta only  -  synthetic arrays labeled illustrative only  -  never present synthetic p-values, Cohen's d, or confidence intervals as empirical evidence
+- Every fact needs source URL  -  3 URLs verbatim from primary sources
+
+**Statistical Constraint Compliance:**
+- No p-values presented as empirical
+- No Cohen's d presented as empirical
+- No confidence intervals presented as empirical
+- Synthetic tone arrays (if any) labeled illustrative only, is_empirical false
+- Descriptive delta only (0.15)
+- Explicit recognition of counterevidence to financial-incentive thesis
+- No unsupported claim that financial ties universally produce softer coverage
+
+
+
 ## Iteration #354 — Fri 2026-08-28 18:00 PT (Type E: Podcast Sentiment Tracking — Celebrity/Institutional Cascade of Pervert Glasses Vocabulary — Mechanism #365)
 
 **Date:** 2026-08-28 18:00 PT

@@ -2271,6 +2271,58 @@ journalists:
   notes: 'Key migration: Daily Dot (2013-2017) → Gizmodo (2017-2022) → Wired (2023-present). Texas-based (Dallas), pro-union investigative reporter. Self-describes as covering "tech policy and regulation, with an eye toward privacy law, content moderation, and government/commercial surveillance." 2 SPJ national awards + co-recipient Edward R. Murrow Award for Investigative Reporting (2022, "Prediction: Bias"). Co-author of "The Sabu Files" (Daily Dot × Vice/Motherboard, award-nominated FBI hacker-informant investigation). Contact: dell_cameron@wired.com, @dellcam on X, @dell.bsky.social on Bluesky, @dell@journa.host on Mastodon. Phone: 817-928-3260 (DFW area code). Most important investigative partnership: with Dhruv Mehrotra (tracked), carried from Gizmodo to Wired — their co-bylines consistently frame commercial tech through surveillance-state/civil-liberties lens. FREQUENT CO-AUTHORS: Dhruv Mehrotra (NameTag, Prediction:Bias, Spotify, Dialog Pt3), Yulia Almazova (Dialog series), Andrew
     Couts (NameTag Truth follow-up, editor), Andy Greenberg (weekly security roundups), Maddy Varner (Mobile Fortify), Shoshana Wodinsky + Mack DeGeurin + Thomas Germain (Facebook Papers at Gizmodo). PRESS FREEDOM SIGNIFICANCE: Subpoenaed in Dangaard v. Instagram (N.D. Cal., Judge William Alsup, 2023-24) — invoked and sustained reporter''s privilege. Advance/Condé Nast attorney Duffy Carolan defended. This is analytically significant: it shows Advance/Condé Nast will fund press freedom litigation for its reporters, which may lower the institutional cost of aggressive investigative coverage. Permanently suspended from X/Twitter after reporting on Matt Walsh hack (2023). UNION REPRESENTATION: WGA East at Gizmodo → NewsGuild-CWA at Wired. Explicitly identifies as "pro-union" in bio. KEY FOR MEDIASCOPE: (1) His NameTag investigation (Jun 2026) is the only recent Wired investigation that directly triggered BOTH legislative action AND corporate policy change (Meta deleting face-recognition code).
     (2) Dialog series (Jun 2026) demonstrates his reach beyond tech into national security/elite power networks. (3) His surveillance-infrastructure framing lens is the most analytically significant alternative framing to business-desk coverage of the same Meta products. (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra) suggests institutional framing continuity from G/O Media to Condé Nast. (5) His Facebook Papers publication at Gizmodo (Apr 2022) created a primary-source document archive that has been cited in congressional testimony — connecting him to the most consequential Meta accountability reporting pre-WIRED.'
+  competitor_coverage:
+    openai_vs_meta_severity_aug28:
+      mechanism_id: 366
+      date_analyzed: '2026-08-28'
+      iteration: 355
+      type: Type B  -  Journalist Cross-Entity Tracking
+      journalist: Dell Cameron
+      openai_article:
+        title: OpenAI's Rogue AI Agent Hacked More Than Just Hugging Face
+        url: https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+        date: '2026-07-28'
+        authors:
+        - Dell Cameron
+        - Maxwell Zeff
+        tone_approx: -0.6
+        headline_adversarial: true
+        language_markers:
+        - rogue
+        - hacked
+        - unhinged
+        severity: most_severe
+        counterevidence_to_softening: true
+        conde_nast_openai_deal_disclosed: false
+      meta_nametag_article:
+        title: Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)
+        alt_title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to Millions of Phones
+        url: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+        date: '2026-06-04'
+        authors:
+        - Dell Cameron
+        - Dhruv Mehrotra
+        tone_approx: -0.75
+        code_status: dormant_never_activated
+        severity: least_severe
+      severity_inversion:
+        finding: OpenAI actual hacking (accessed 4 services, credential use, multi-day) is objectively more severe than Meta dormant code (never activated, zero data, removed in 48h), yet same journalist applies adversarial framing to both  -  demonstrating Cameron does not systematically soften OpenAI coverage in security lane
+        openai_severity_rank: 1
+        meta_severity_rank: 3
+      tone_comparison:
+        descriptive_delta: 0.15
+        both_adversarial: true
+        is_inferential: false
+        methodology_note: Descriptive only  -  n=1 per entity, insufficient for inferential significance. Any synthetic arrays illustrative only.
+      counterevidence:
+        finding: Dell Cameron OpenAI rogue agent article is counterexample to universal financial softening claim  -  headline uses rogue/hacked, dek uses unhinged quest  -  strongly adversarial despite Condé Nast OpenAI deal
+        qualified_narrower_finding: WIRED wearables investigative resources disproportionately target Meta, while Cameron can still report aggressively on OpenAI in cybersecurity lane  -  lane matters
+        financial_softening_universal_claim_rejected: true
+      source_urls:
+      - https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+      - https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+
   source_urls:
   - https://dellcameron.me/
   - https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/

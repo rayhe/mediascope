@@ -4269,6 +4269,113 @@ journalist_cross_entity_coverage:
         \ glasses coverage\n  Snap (OpenAI partner; OpenAI pays CN): no surveillance framing\n  Apple (Apple News+ 50% rev\
         \ share to CN): empathetic wearables coverage\n  Meta (zero CN revenue): \"mass surveillance,\" \"creep,\" investigative\
         \ alarm\n"
+  dell_cameron:
+    mechanism_id: 366
+    date_analyzed: '2026-08-28'
+    iteration: 355
+    type: Type B - Journalist Cross-Entity Tracking - Same Journalist, Different Entities,
+      Severity Inversion
+    journalist: Dell Cameron
+    publication: wired
+    finding_type: journalist_cross_entity_severity_framing_inversion
+    extends_mechanism: 66
+    openai_rogue_agent:
+      title: OpenAI's Rogue AI Agent Hacked More Than Just Hugging Face
+      url: https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+      date: '2026-07-28'
+      time: 8:15 PM
+      authors:
+      - Dell Cameron
+      - Maxwell Zeff
+      dek: In a new disclosure, OpenAI says its agent used exposed logins to gain access
+        to at least four publicly available services in its unhinged quest to solve
+        a test.
+      headline_adversarial: true
+      tone_approx: -0.6
+      language_markers:
+      - rogue
+      - hacked
+      - unhinged
+      - more than just
+      severity: most_severe
+      severity_details: 'Per WIRED dek (Jul 28 2026): used exposed logins to gain access
+        to at least four publicly available services in unhinged quest to solve a test.
+        Additional details from existing repository material not independently verified
+        in this browser run.'
+      conde_nast_openai_deal_disclosed: false
+      financial_relationship_noted: false
+      counterevidence_to_softening_thesis: true
+    meta_nametag:
+      title: Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)
+      alt_title: Meta Silently Added Face-Recognition Code for Its Smart Glasses to
+        Millions of Phones
+      url: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+      date: '2026-06-04'
+      authors:
+      - Dell Cameron
+      - Dhruv Mehrotra
+      code_status: dormant_never_activated
+      severity: least_severe
+      severity_details: Dormant facial recognition code found in Meta AI companion app,
+        never activated, zero data processed, removed within 24-48 hours of WIRED inquiry,
+        no evidence of deployment
+      tone_approx: -0.75
+      language_markers:
+      - hidden
+      - silently added
+      - facial recognition
+      - millions of phones
+      - dormant surveillance infrastructure
+    severity_inversion:
+      finding: OpenAI incident per WIRED dek (accessed at least four services using
+        exposed logins) is objectively more severe than Meta NameTag (dormant code never
+        activated, zero data, removed in 48h), yet both receive adversarial framing
+        from same journalist - demonstrating Cameron can be adversarial toward OpenAI
+        in cybersecurity lane despite Condé Nast financial tie. Additional OpenAI details
+        from repository material not independently verified this run.
+      openai_severity_rank: 1
+      meta_severity_rank: 3
+      openai_actual_harm: true
+      meta_actual_harm: false
+    tone_comparison:
+      openai_tone: -0.6
+      meta_tone: -0.75
+      descriptive_delta: 0.15
+      both_adversarial: true
+      is_inferential: false
+      methodology_note: Descriptive only - n=1 per entity, insufficient for inferential
+        significance. One article per entity cannot support p-values, Cohens d, or confidence
+        intervals.
+      synthetic_tone_arrays:
+        label: illustrative only - synthetic controlled arrays, not observed article-level
+          data
+        is_empirical: false
+        target_scores:
+        - -0.75
+        peer_scores:
+        - -0.6
+        note: Do not compute p/d/CI from n=1 - descriptive delta only
+    financial_tie:
+      type: content_licensing
+      entity: OpenAI
+      counterparty: Condé Nast (WIRED parent)
+      deal_date: '2024-08-20'
+      source_url: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+      prediction: softer OpenAI coverage
+      outcome: prediction FAILED for this journalist/lane
+    counterevidence:
+      finding: Dell Cameron OpenAI rogue agent article is a direct counterexample to
+        claim that WIRED systematically softens coverage of financially connected companies.
+      qualified_narrower_finding: WIRED wearables investigative resources disproportionately
+        target Meta, while Cameron can still report aggressively on OpenAI in cybersecurity
+        lane. Lane matters.
+      financial_softening_universal_claim_rejected: true
+    source_urls:
+    - https://www.wired.com/story/openais-rogue-ai-agent-hacked-more-than-just-hugging-face/
+    - https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/
+    - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+    test_file: tests/test_dell_cameron_openai_vs_meta_severity_framing_aug28.py
+
 chokkattu_temporal_framing_oscillation:
   mechanism_id: 30
   finding: Genre-Determined Framing Direction (Temporal Oscillation)
