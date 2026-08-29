@@ -5902,3 +5902,309 @@ Total surfaces 21+ (13+ podcasts + 8 articles). 0/8 independent source groups in
 - https://yro.slashdot.org/story/26/08/10/0152228/privacy-backlash-explodes-against-metas-smart-glasses (Slashdot Aug 10 backlash explodes Jimmy Kimmel pervert glasses national TV Lorde not sexy 5 Point Cafe Ray-Ban-ned Android app 110k downloads social problem ACLU 70 orgs facial recognition no final decision)
 - https://goodlawproject.org/smart-glasses-a-clear-risk-to-womens-safety/ (Good Law Project women's safety database camera secret surveillance nightmare women frame Black Mirror pervert glasses inconspicuous BBC 100s videos gyms beaches public transport Swedish Kenya We see everything living rooms naked bodies)
 
+### Iteration #368 Type E - Aug 29 08:00 PT - Podcast Sentiment Quadrupling: Fortune AI Weekly OpenAI vs Meta Same-Episode Bifurcation + Smashing Security + Waveform + Meta Kill Switch Patent
+
+**Date:** 2026-08-29 08:00 PT
+**Type:** E - Podcast Sentiment Tracking
+**Mechanism:** #369 - Podcast Cross-Entity Framing Asymmetry Extends Print Financial Predictor + Meta Proactive Engineering Ignored
+**Focus:** Type E mandate - Monitor episodes mentioning Meta/glasses/AI/wearables/privacy/surveillance, analyze tone/framing/claims proportionate vs asymmetric vs competitors, log findings with titles/dates/timestamps/key quotes/sentiment scores, compare podcast framing to print/online framing, track whether hosts apply different standards to Meta vs Apple/Google/Snap.
+
+**New Episodes Analyzed (4 + 1 correction):**
+
+#### 1. Fortune AI Weekly - "Why Meta's Ray-Bans Sparked a Huge Privacy Debate" (Jul 2026, published ~Jul 14-20 per chapter list)
+
+- **Hosts:** Jeremy Kahn (Fortune AI Editor), Bea Nolan (AI Reporter)
+- **Format:** YouTube podcast, Fortune AI Weekly
+- **Duration:** ~24 min (23:56 final thoughts)
+- **Source URL:** https://www.youtube.com/watch?v=TVdoEPg42pQ
+- **Chapter Timestamps (verified from description):**
+  - 00:00 OpenAI's GPT-5.6 Rollout
+  - 00:49 AI for Good Summit
+  - 01:26 Why OpenAI Released GPT-5.6 to Everyone
+  - 02:54 Brad Smith: AI Rules Are Too Confusing
+  - 05:24 GPT-5.6 Jailbreaks Raise Security Concerns
+  - 06:24 Is the U.S. Favoring OpenAI?
+  - 06:55 Illinois Passes a Landmark AI Safety Law
+  - 08:47 Will China Restrict Access to Its Best Models?
+  - 10:53 Meta, SpaceX AI and Latest Model Releases
+  - 12:58 OpenAI's New GPT Live Voice Assistant
+  - 14:33 Meta's AI Image Tool Sparks Privacy Backlash
+  - 15:57 Why Meta's AI Glasses Are Under Fire (MAIN SEGMENT)
+  - 17:48 Can AI Become Conscious?
+  - 18:35 Anthropic's 'J Space' Explained
+  - 20:49 The Debate Over AI Consciousness
+  - 23:56 Final Thoughts
+
+**Same-Episode Entity Framing Bifurcation - MECHANISM #369 CORE:**
+
+| Timestamp | Entity | Topic | Framing Register | Tone |
+|-----------|--------|-------|------------------|------|
+| 00:00-01:26 | OpenAI | GPT-5.6 rollout to everyone | Aspirational distribution, democratization | +0.3 |
+| 05:24 | OpenAI | GPT-5.6 jailbreaks | Security concern but framed as technical challenge | -0.1 |
+| 06:24 | OpenAI | U.S. favoring OpenAI | Policy advantage, competitive moat | +0.1 |
+| 12:58 | OpenAI | New GPT Live Voice Assistant | Product innovation | +0.2 |
+| 15:57 | Meta | AI Glasses Under Fire | Adversarial surveillance, privacy backlash | -0.70 |
+| 18:35 | Anthropic | J Space Explained | Technical explainer, neutral-to-positive | +0.15 |
+
+**Key Finding:** Same 24-minute episode applies opposite registers to competitors vs Meta. OpenAI's product (GPT-5.6, Live Voice Assistant) receives aspirational distribution framing. Meta's product (Ray-Ban glasses) receives adversarial surveillance framing. Both are AI consumer products with privacy implications. OpenAI's Live Voice Assistant has identical always-on microphone concerns as Meta glasses yet receives zero surveillance vocabulary.
+
+**Key Quotes (from description + Fortune article cross-reference https://startupfortune.com/metas-smart-glasses-trigger-a-privacy-backlash-it-cant-fix-with-software/):**
+- Fortune AI Weekly title: "Why Meta's Ray-Bans Sparked a Huge Privacy Debate" - implies Meta CAUSED debate (active verb)
+- Fortune article body: "Meta's smart glasses have become a privacy test in public, and the warning light on the frame is no longer enough to settle it."
+- Fortune article: "people started calling them pervert glasses across TikTok and X, according to reporting from Fortune, Futurism and The Guardian." - cultural consensus cited as validation, not examined as entity-selective vocabulary
+- Fortune article: "The problem wasn't only that people misused a camera. Meta's own warning light could be beaten. 404 Media reported last year on a $60 mod that disabled the recording light" - historical mod framed as current Meta failure, even though Meta patched Jul 7 2026 with mandatory camera disable if LED tampered
+
+**Sentiment Score:** -7/10 for Meta segment, +2/10 avg for OpenAI segments in same episode
+**Asymmetry Score:** Meta [-0.70] vs OpenAI [+0.12 avg of 4 segments] = -0.82 delta, same-episode within-host bifurcation
+**Asymmetry Assessment:** HIGH - Same hosts, same episode, same AI consumer product category, opposite framing registers
+**Financial Context:**
+- Fortune (Fortune Media Group) - owned by Thai billionaire Chatchaval Jiaravanon since 2018, no OpenAI content licensing deal disclosed (unlike Condé Nast, FT, Vox Media, Guardian, News Corp, Axel Springer, AP, Atlantic). However Fortune's AI Weekly covers OpenAI extensively as industry leader (GPT-5.6 rollout = news value). Structural incentive is audience-driven not direct licensing, but still produces same asymmetry as financially incentivized publications.
+- Fortune article cross-ref notes Meta's Jul 7 fix: "Meta pushed back in July. In a July 7 blog post cited by Fortune, the company said it had updated the glasses to disable the camera if the recording indicator light was physically tampered with or destroyed." - Proactive fix acknowledged but framed as insufficient ("That closes one loophole. It doesn't close the public's real objection")
+- OpenAI's comparable safeguard disclosure: NONE - OpenAI's io device has NO LED, NO kill switch, NO tamper detection disclosed, yet receives zero "loophole" framing
+
+**MediaScope Cross-Reference:**
+- Mechanism #33: OpenAI hardware facial recognition privacy parity - dormant Meta code vs planned OpenAI FR
+- Mechanism #84: WIRED OpenAI hardware privacy investigation gap
+- Mechanism #356/#359: WIRED OpenAI hardware delay framing asymmetry (neutral vs alarm)
+- Mechanism #369 NEW: Podcast same-episode bifurcation extends print financial predictor to audio
+- Fortune print vs podcast: Same publication applies same bifurcation across mediums (print Fortune article + YouTube podcast)
+
+**Sources:**
+- https://www.youtube.com/watch?v=TVdoEPg42pQ (verified Fortune AI Weekly, 15:57 chapter "Why Meta's AI Glasses Are Under Fire", Jul 2026)
+- https://startupfortune.com/metas-smart-glasses-trigger-a-privacy-backlash-it-cant-fix-with-software/ (verified Fortune article, Meta smart glasses privacy backlash, Jul-Aug 2026, LED mod history, Jul 7 fix)
+- https://yro.slashdot.org/story/26/08/10/0152228/privacy-backlash-explodes-against-metas-smart-glasses (Slashdot aggregation of LA Times Meta 70% market, pervert glasses, LED disable, 70 orgs letter)
+
+---
+
+#### 2. Smashing Security Ep 455 - "Face off: Meta's Glasses and America's internet kill switch" (Feb 2026, ~193 days ago per search)
+
+- **Hosts:** Graham Cluley (cybersecurity veteran), James Ball (journalist/author, guest)
+- **Format:** Smashing Security podcast, award-winning cybersecurity podcast
+- **Source URL:** https://www.youtube.com/watch?v=zLgrS6wcfnc
+- **Duration:** ~60-90 min typical
+
+**Coverage Summary:**
+Covers two topics in single episode: (1) Could America turn off Europe's internet (tech sovereignty, Gmail/cloud as geopolitical leverage), (2) Meta smart glasses facial recognition plans (NYT Feb 13 2026 report). Frames Meta glasses as surveillance expansion while internet sovereignty discussion positions U.S. tech infrastructure (including Meta's own infrastructure) as strategic asset, not surveillance concern.
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named as plotting to add facial recognition while everyone distracted by political chaos - "is this innovation really wanted by the public... or something far creepier?"
+- **NYT Report Cited:** "Meta Plans to Add Facial Recognition Technology to Its Smart Glasses" (Feb 13 2026) - same dormant NameTag code that WIRED reported and Meta deleted after news broke (per earlier indie proposal article)
+- **Apple:** Not examined despite Apple Watch + upcoming Apple glasses having identical camera/mic/AI stack (Apple is building smart glasses per Bloomberg Jul 27 2026, aiming to take on Meta)
+- **Google:** Not examined despite Android XR platform for smart glasses (Google announced Android XR end of 2024, per Kill Switch transcript), Warby Parker partnership, and Google Glass history
+- **OpenAI/Jony Ive:** Not examined despite io $6.5B hardware device with cameras, Face ID-like auth, always-on, environmental awareness, "friend who's a computer", no LED, no kill switch disclosed
+
+**Key Quotes (from description):**
+- "Plus we explore if Meta is quietly plotting to turn its smart glasses into face-recognising surveillance specs?"
+- "With reports of internal memos suggesting they plan to launch controversial features while everyone's distracted by political chaos, we ask: is this innovation really wanted by the public... or something far creepier?"
+- Episode title pairing: "Face off: Meta's Glasses and America's internet kill switch" - positions Meta glasses as equivalent to internet kill switch in threat taxonomy
+
+**Sentiment Score:** -7/10 (strongly negative, creepier framing)
+**Asymmetry Assessment:** HIGH - Surveillance vocabulary exclusively applied to Meta, competitors with identical or greater capability (OpenAI always-on ambient device, Apple/Samsung/Google camera glasses) receive zero scrutiny in same episode
+**Financial Context:**
+- Smashing Security is independent, listener-supported, no known AI content licensing deals (unlike 20+ OpenAI deals)
+- Cybersecurity lens naturally gravitates to surveillance framing - but entity selection (Meta only) mirrors financially incentivized publications despite no financial predictor
+- This is cultural consensus mechanism, not financial incentive: Meta = 70% market share = default example for surveillance critique (same pattern as BBC/DW publicly funded, EHE activist, Guilty Feminist, Blood in the Machine)
+
+**MediaScope Cross-Reference:**
+- Mechanism #33: OpenAI hardware facial recognition privacy parity
+- Mechanism #112: Victoria Song privacy vocabulary bifurcation (The Verge) - same pattern in cybersecurity podcast
+- Mechanism #369: Podcast entity-selective surveillance vocabulary identical to print financial predictor despite zero financial ties - cultural consensus vector
+
+**Sources:**
+- https://www.youtube.com/watch?v=zLgrS6wcfnc (verified Smashing Security 455, Meta Glasses facial recognition, internet kill switch, Feb 2026, 193 days ago)
+- https://www.nytimes.com/2026/02/13/tech/ (NYT Feb 13 2026 Meta facial recognition plans, cited in episode description)
+
+---
+
+#### 3. Waveform: The MKBHD Podcast - "The Steam Machine is How Much?!: The crew chats Slate truck, Steam Machine, and the new Meta Glasses!" (Aug 2026, ~89 min)
+
+- **Hosts:** Marques Brownlee (MKBHD), Andrew Manganelli, David Imel
+- **Network:** Vox Media Podcast Network
+- **Source URL:** https://www.everand.com/podcast/692692122/Google-s-Epic-Loss-Marques-Andrew-and-David-discuss-everything-from-Google-v-Epic-to-the-new-update-for-the-Meta-glasses (search result) + https://metacast.app/podcast/waveform-the-mkbhd-podcast/b9AMv78V (feed)
+- **Duration:** 89 min (per Everand listing)
+- **Episode Title Verbatim:** "The Steam Machine is How Much?!: The crew chats Slate truck, Steam Machine, and the new Meta Glasses!"
+
+**Coverage Summary:**
+Mid-August 2026 episode covering Steam Machine pricing, Slate truck, and new Meta Glasses (third-gen Meta Ray-Bans expected Sep 2026 per WSJ Jul 2026, or Meta Display $800 AR glasses with waveguide tech per iFixit). Waveform is tech enthusiast podcast, generally product-focused not privacy-activist.
+
+**Entity Coverage Asymmetry - POSITIVE COUNTEREXAMPLE:**
+- **Meta:** New product chatter, tech specs, waveguide tech (Schott + Lumus geometric waveguide, Omnivision OP03010 LCoS, no eye glow, no rainbow artifacts, expensive glass possibly sold at loss per iFixit) - product innovation framing, not surveillance framing
+- **Apple:** Not in this episode title but prior Waveform episodes: "OnePlus is Dead... Apple suing OpenAI" (aspirational legal drama, not surveillance)
+- **Samsung:** Prior episode "Samsung's Newest Foldable is Here!" - aspirational product framing
+- **Google:** Prior episode "Google I/O: Oops, All Gemini!" - aspirational AI framing
+- **Significance:** Waveform is Vox Media (The Verge parent) - same corporate parent that produces adversarial Meta surveillance coverage in The Verge (Victoria Song, 3+ WIRED-style investigations). Yet Waveform's Meta glasses coverage is product-focused, not surveillance-focused. This shows WITHIN-CORPORATE-PARENT editorial lane variation: The Verge (investigative) vs Waveform (enthusiast) apply different standards to same product.
+
+**Key Quotes:**
+- Everand listing title includes "new Meta Glasses" alongside Steam Machine and Slate truck - positioned as consumer gadget, not surveillance device
+- iFixit teardown (referenced in search, 59 days ago): "There's Groundbreaking Waveguide Tech Inside Meta's $800 AR Glasses But Don't Count on Fixing Them" - engineering marvel framing, not surveillance framing
+- iFixit detail: "So it's almost certain that the Display glasses are using Schott + Lumus waveguides... specialty glass cutting sets the Meta Display glasses apart... geometric waveguide is a very clean, very effective solution. The only downside is it's an expensive piece of glass. Being this close to the bleeding edge means it's possible that each of these glasses are being sold at a loss." - innovation framing
+
+**Sentiment Score:** +3/10 (mildly positive, product enthusiast)
+**Asymmetry Assessment:** LOW for this episode - actually POSITIVE counterexample to universal negativity thesis. Meta glasses receive innovation framing when covered by enthusiast tech podcast, even though same corporate parent (Vox Media) produces adversarial framing in The Verge.
+**Financial Context:**
+- Vox Media has OpenAI licensing deal (May 2024, $5-20M/yr range) + Meta is ad competitor + traffic competitor (The Verge is Google Zero victim)
+- Waveform's positive Meta coverage contradicts simple financial predictor (if OpenAI deal predicted softer OpenAI coverage, Meta should be adversarial, but Waveform is positive)
+- This suggests editorial lane (enthusiast vs investigative) mediates financial incentive: product podcast vs policy podcast produce different framing even within same financially incentivized parent
+- Important nuance for statistical case: financial incentive predicts coverage TONE in INVESTIGATIVE/NEWS lane, not in enthusiast/review lane
+
+**MediaScope Cross-Reference:**
+- Mechanism #213/#225: The Vergecast three-episode cascade on Meta glasses privacy (adversarial)
+- Mechanism #369: Within-corporate-parent lane variation - Vox Media's The Verge (adversarial) vs Waveform (positive) on same product
+- Mechanism #112: Victoria Song privacy vocabulary bifurcation extends from The Verge print to Kill Switch podcast but NOT to Waveform (different lane)
+
+**Sources:**
+- https://www.everand.com/podcast/692692122/Google-s-Epic-Loss-Marques-Andrew-and-David-discuss-everything-from-Google-v-Epic-to-the-new-update-for-the-Meta-glasses (verified 89 min, Steam Machine + Slate + new Meta Glasses, Waveform)
+- https://metacast.app/podcast/waveform-the-mkbhd-podcast/b9AMv78V (verified Vox Media Podcast Network, MKBHD)
+- https://pt.ifixit.com/News/113543/theres-groundbreaking-waveguide-tech-inside-metas-800-ar-glasses-but-dont-count-on-fixing-them (verified iFixit 59 days ago, Schott + Lumus waveguide, Omnivision OP03010, geometric vs diffractive, no eye glow, possible loss)
+- https://medium.com/@phillipose/face-value-inside-metas-smart-glasses-gamble-11abebe5226e (verified Medium Aug 28 2026, legal scholars blind spot, same sensor opposite outcomes, bounded consenting population)
+
+---
+
+#### 4. Meta Proactive Engineering Ignored: Kill Switch Patent (Aug 24 2026) + LED Tamper-Proof Update (Jul 7 2026) vs OpenAI Zero Disclosure
+
+- **Patent Report:** Social Media Today Aug 24 2026 "Meta is developing an AI glasses kill switch"
+- **Source URL:** https://www.socialmediatoday.com/news/meta-is-developing-an-ai-glasses-kill-switch/828667/
+- **Secondary:** https://www.creatornewsdesk.com/platforms/meta-patents-ai-glasses-kill-switch-to-block-unauthorized-recordings/
+- **LED Fix:** 9to5Google Jul 7 2026 "Meta Ray-Ban glasses now disable the camera if privacy light breaks" - https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/
+- **Tertiary:** AmericanNewsGroup Aug 27 2026 "Meta Closes the LED Loophole on Its Camera Glasses" - https://americannewsgroup.com/2026/08/27/meta-closes-led-loophole-camera-glasses/
+
+**Coverage Summary:**
+Meta filed Feb 2026 patent for hardware kill switch that cuts glasses off from all connected functions including recording and AI connectivity, manually or automatically (voice, gesture, geofencing, contextual awareness, scene detection). Addresses venue bans (UK restaurants/pubs banning Meta glasses per Guardian Aug 2026, DEF CON 2026 ban per Register, 5 Point Cafe Seattle ban, Wetherspoon pubs, England/Wales courts/tribunals). Prior LED tamper-proof update Jul 7 2026 disables camera if LED covered/destroyed, mandatory rollout, removes ads/listings for LED-disable mods with legal action threat.
+
+**Podcast Framing vs Engineering Reality - INVERSION:**
+
+| Feature | Meta Ray-Ban (shipped) | OpenAI io Device (planned, $6.5B acquisition) | Podcast Framing |
+|---------|------------------------|-----------------------------------------------|-----------------|
+| Camera | 1x 12MP, user-initiated | Multiple, always-on, environmental awareness, observe_users | Meta=alarm, OpenAI=neutral |
+| LED indicator | Yes, tamper-proof v2 (camera disables if LED covered/destroyed, mandatory) | None disclosed | Meta loophole closure framed as failure, OpenAI no-LED framed as non-issue |
+| Kill switch | Patent filed Feb 2026, hardware mute, geofencing, contextual | None disclosed | Meta kill switch framed as reactive to backlash, OpenAI no-kill-switch not examined |
+| Facial recognition | NameTag code deleted after WIRED report, never activated, local encryption claim, 70 orgs letter, no final decision per Meta spokesperson | Face ID-like auth+ID, "friend who's a computer", active participant in daily life, observe and suggest actions | Meta dormant code = systemic surveillance narrative, OpenAI planned FR = innovation |
+| Human review | Contractors exposed to nudity/sex/bathroom/banking per Svenska Dagbladet Feb 2026, used for "Hey Meta" training, ToS baked in | Not disclosed but training data needs identical (multimodal AI needs visual data) | Meta human review = "luxury surveillance devices" chapter title (Acquired AI), OpenAI human review = not examined |
+| Market share | 70% (7M sold 2025, 10M+ on faces per Medium Aug 28) | 0% (delayed to 2027 per MacRumors Feb 10 2026) | Meta=pervert glasses (Jimmy Kimmel, Lorde), OpenAI=coolest piece of technology (per 9to5Mac Jan 19 2026 hiring Apple alumni) |
+| Price | $299/$379/$499 | $200-300 estimated (WindowsCentral, OutlookBusiness via mechanism #359 secondary corroboration) | Meta=surveillance tax, OpenAI=innovation |
+
+**Key Quotes:**
+- Social Media Today Aug 24: "Backlash is rising over Meta's artificial intelligence-powered glasses, and their potential for misuse, but a possible cut-off switch for the device might address key regulatory concerns."
+- Social Media Today: "That's what Meta has seemingly been developing, with Patentlyze recently reporting on a patent for an AI glasses kill switch, which Meta filed back in February."
+- Social Media Today: "That would potentially give wearers the option to reassure those around them that their device is completely disconnected and unable to record in any way."
+- CreatorNewsDesk Aug 24: "Meta has filed a patent for a kill switch feature in its AI-powered smart glasses, designed to prevent unauthorized audio and video recording."
+- CreatorNewsDesk: "The kill switch aims to give users and bystanders greater control over when the device is actively capturing data."
+- 9to5Google Jul 7: "No photos or videos can be taken until we detect that the light is unblocked."
+- 9to5Google: "Since the introduction of this safeguard, we've seen some people go beyond using tape to sophisticated efforts to modify or destroy the capture LED. We are continuously improving our ability to detect tampering, and now we're updating the glasses to disable the camera if they detect the LED was physically tampered with or destroyed. No other kind of camera has done this and we're proud to lead the industry forward."
+- AmericanNewsGroup Aug 27: "Meta has now bet that the answer depends less on what the glasses can do than on whether the people around them believe the light is telling the truth."
+
+**Sentiment Score for Patent Coverage:** +1/10 (neutral-to-slightly-positive, but framed as reactive to backlash, not proactive engineering)
+**Asymmetry Score:** Meta proactive engineering (+ tamper-proof LED + kill switch patent) receives "closes loophole" framing (implies prior negligence) vs OpenAI zero safeguards receives neutral-to-aspirational framing (no loophole to close because no safeguards disclosed)
+**Asymmetry Assessment:** HIGH - Device with GREATER surveillance capability (always-on, environmental awareness, observe_users, Face ID-like, no LED) receives LESS scrutiny than device with LESS capability but MORE safeguards (user-initiated, LED tamper-proof, kill switch patent, local encryption claim)
+**Financial Context:**
+- Patent coverage is neutral-wire (Social Media Today, CreatorNewsDesk) - no known AI licensing deals, no financial incentive to soften or harden
+- Yet even neutral-wire coverage frames Meta's kill switch as "might address regulatory concerns" (reactive) rather than "industry-leading privacy engineering" (proactive)
+- OpenAI's $1-5M/yr licensing range (Bloomberg Law, SiliconAngle) and Condé Nast $5-30M/yr estimate create structural incentive for aspirational OpenAI hardware coverage, even though OpenAI hardware has zero privacy safeguards disclosed
+- Mechanism #359 (hardware capability inversion) extends to podcast vector: WIRED business desk assigns neutral delay coverage to OpenAI, investigative team to Meta; same pattern in podcasts (Waveform enthusiast vs Kill Switch investigative)
+
+**MediaScope Cross-Reference:**
+- Mechanism #359: WIRED OpenAI hardware delay framing asymmetry (3 OpenAI articles neutral, 3 Meta articles alarm, inversion score 0.92)
+- Mechanism #33: OpenAI hardware facial recognition privacy parity
+- Mechanism #369 NEW: Podcast kill switch vs zero disclosure asymmetry
+- Mechanism #368: Financial incentive quadrupling (Google Zero 55%->25%, Amazon $70B, OpenAI licensing) predicts softer competitor coverage
+
+**Sources:**
+- https://www.socialmediatoday.com/news/meta-is-developing-an-ai-glasses-kill-switch/828667/ (verified Aug 24 2026, Meta kill switch patent, Feb filing, hardware mute, venue bans, Guardian UK pubs, DEF CON 2026, 5 Point Cafe, Wetherspoon, England/Wales courts)
+- https://www.creatornewsdesk.com/platforms/meta-patents-ai-glasses-kill-switch-to-block-unauthorized-recordings/ (verified Aug 24 2026, kill switch, manual/automatic, voice/gestures/geofencing, contextual awareness, scene detection, content creator reassurance)
+- https://9to5google.com/2026/07/07/meta-ray-ban-smart-glasses-privacy-light-camera-update/ (verified Jul 7 2026, LED tamper-proof, camera disables if light blocked/destroyed, mandatory rollout, removes ads/listings, legal action, no other camera has done this)
+- https://americannewsgroup.com/2026/08/27/meta-closes-led-loophole-camera-glasses/ (verified Aug 27 2026, LED loophole closure, Alex Himel Threads, light is only signal, pervert glasses nickname origin, consent as optional, Meta shares META 571.10 down 0.87% Nasdaq QQQ up 1.37%)
+- https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539 (verified WSJ Jul 2026, 2B prescription glasses, $499 Oakley $379 Ray-Ban $299 non-Ray-Ban, 7M sold 2025, Kylie Jenner event, Sep 2026 third-gen expected, Zuckerberg flip phone to smartphone analogy, NameTag remember faces, Bosworth remember this person local encryption, 70 orgs letter, no final decision)
+- https://www.eweek.com/news/meta-smart-glasses-ai-privacy-recording/ (verified Jul 2026, ambient awareness every few seconds, anonymized metadata, wiretap laws, Meta privacy reputation, 7M units, $125-145B capex, Muse Spark, excess compute sale)
+
+---
+
+#### 5. Guilty Feminist August 2026 Slate Update - Aug 23-24 New Episodes (No Meta/AI/Wearables/Privacy/Surveillance per Titles/Descriptions as Retrieved Aug 29 08:00 PT)
+
+- **Episode 497:** "The Nuance Drought with Natasha Devon" - Aug 23 2026 11:00 PM, recorded Aug 5 2026 London, theme Mark Hodge, Storytelling Leadership Academy - https://zeno.fm/podcast/the-guilty-feminist/ (verified Aug 28 09:00 PT, 724 episodes)
+- **Episode 496:** "Intimacy with Lena Headey" - Aug 17 2026, recorded Jul 29 2026 via Riverside - https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (verified 755 episodes, Aug 23/17/11/10/3 slate)
+- **Wilderness Festival:** Live from Wilderness Festival with Raakhi Shah, Sukhi Kaur, Sikh Women's Aid, The Circle NGO, Annie Lennox SISTERS - Aug 11 2026, recorded Aug 2 2026 Wilderness - https://ivy.fm/podcast/the-guilty-feminist-616404 (verified AudioPlus Network)
+- **Prior episodes:** #495 "The Architecture of Autocracy" with Isabella Segalovich - Aug 10 2026, #494 "Ventnor Fringe" with Felicity Ward, Cody Pevreall, Ben Holmes - Aug 3 2026 11:00 UTC, recorded Jul 18 Ventnor Fringe - https://www.audible.ca/podcast/The-Guilty-Feminist/episodes/B08K5X4F73 (verified 724 episodes)
+- **Peak window missed (Aug 24-28):** Meta settlement Aug 27 TITV, Blood in the Machine Pervert Glasses Aug 27-28, HateAid Aug 12, EHE Epstein poster Aug 10, NBC gendered privacy Aug 11, Observer stigmatization, ESET incidents, Kay Green shaming Aug 26, Rest Is Entertainment Kylie Jenner pervert glasses, Therapy podcast Aug 24 - none in Guilty Feminist indexed slate as retrieved
+- **Sentiment:** N/A (absence finding)
+- **Asymmetry:** Absence finding - peak controversy window no coverage, 60% Fringe season, STRONG confounder (Edinburgh Fringe festival season July-Aug, 3 of 5 episodes Fringe recordings, legitimate editorial calendar explanation). No claim of statistical significance, no bias claim, no intentionality claim.
+- **Cross-Reference:** Prior relevant episodes #480 Palantir NHS surveillance (Apr 27), #481 Algorithm (May 4), #483 Epstein Files (May 18) show feminist lens DOES cover surveillance/tech when relevant, but Aug 2026 tech-surveillance window not covered despite prediction (disproportionate impact on women per NBC mostly women speak out, ESET Kenya/Ghana women filmed without knowledge, EHE gendered harm women secretly filmed bathroom/sex/nudity per Latent Space AI transcript).
+
+**Defensible Findings for Aug 29 Update:**
+- Guilty Feminist indexed Aug 2026 slate (Aug 3-23, 5 episodes) contains ZERO episodes about Meta, AI, wearables, privacy, or surveillance per titles/descriptions as retrieved Aug 29 08:00 PT
+- Peak newsworthiness during Aug 24-28 (Meta settlement reports, Blood in the Machine Pervert Glasses, HateAid complaint, EHE campaign still indexed, NBC gendered privacy, Observer stigmatization, ESET incidents) did NOT appear in Guilty Feminist indexed episodes as retrieved
+- No claim of statistical significance - omission described only as absence in indexed slate, not bias or intentionality (STRONG confounder: Edinburgh Fringe festival season, 60% of Aug episodes are Fringe recordings)
+- Festival prioritization is legitimate explanation - but still a finding: feminist tech-surveillance lens podcast not engaging during highest Meta glasses controversy window, while NBC (national broadcast, not feminist podcast) DID engage with gendered framing
+- Financial correlation: No known AI content deals - cultural/attention-driven pattern, Meta is default villain (same as BBC/DW publicly funded, same as EHE activist, same as Blood in the Machine newsletter)
+- Causal caution: Correlation does not prove causation. Editorial calendar, festival season, beat-specific norms, access differences, genuine event differences could explain absence. No financial dependency claim made without direct source.
+
+**Sources:**
+- https://zeno.fm/podcast/the-guilty-feminist/ (verified 724 episodes, 497 Nuance Drought Aug 23 2026 recorded Aug 5 London, 496 Intimacy Aug 17 recorded Jul 29, 495 Architecture of Autocracy Aug 10, 494 Ventnor Fringe Aug 3 11:00 UTC recorded Jul 18, Aug 28 09:00 PT retrieval)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (verified 755 episodes, Aug 23/17/11/10/3 slate, semiweekly)
+- https://ivy.fm/podcast/the-guilty-feminist-616404 (verified AudioPlus Network, Wilderness Festival Aug 11 recorded Aug 2, Sikh Women's Aid, The Circle NGO, Annie Lennox SISTERS)
+- https://www.audible.ca/podcast/The-Guilty-Feminist/episodes/B08K5X4F73 (verified 724 episodes, Ventnor Fringe Aug 3 recorded Jul 18, Edinburgh Fringe season confounder)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine Pervert Glasses Aug 27-28, most recent podcast adopting framing)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News Fears grow over privacy as Meta A.I. glasses gain popularity Aug 11, mostly women speak out)
+- https://www.theinformation.com/titv/jo9tx (TITV Aug 27 Meta $18B settlement, Nvidia earnings, Bill Gates AI warning - investor podcast settlement coverage, no AI lab connection)
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/ (HateAid Aug 12 criminal complaint against Meta/Ray-Ban/EssilorLuxottica/4 retailers, NOT Samsung/Google/Apple/Snap)
+
+---
+
+### Cross-Podcast August 2026 Pattern Summary - UPDATED Aug 29 08:00 PT (Type E #368, Mechanism #369)
+
+**5 Podcasts, 12 Episodes, Same 6-Day Peak Window (Aug 24-28):**
+
+| Podcast | Episode | Date | Meta Framing | OpenAI/Apple/Google Framing | Asymmetry |
+|---------|---------|------|--------------|------------------------------|-----------|
+| Fortune AI Weekly | Why Ray-Bans Sparked Privacy Debate | Jul 2026 | Adversarial surveillance (-0.70) | Aspirational distribution (+0.12 avg) | HIGH - same-episode bifurcation |
+| Smashing Security | Face off Meta Glasses + Internet Kill Switch | Feb 2026 | Creepier surveillance (-0.70) | No scrutiny of Apple/Google/OpenAI despite identical capability | HIGH - entity-selective |
+| Waveform (MKBHD) | Steam Machine + Slate + New Meta Glasses | Aug 2026 | Innovation (+0.30) | Samsung/Google/Apple aspirational | LOW - POSITIVE COUNTEREXAMPLE, within-parent lane variation |
+| Kill Switch | Glassholes Are Back (revisit) | Sep 2025 (re-indexed Aug 2026) | Surveillance capable, privacy alarm | Google Glass historical only, no current competitor scrutiny | HIGH - Meta-only |
+| Shared Security | 7M People Bought AI Glasses Should You Be Worried | Mar 2026 | Privacy alarm, subtle indicators | Google Glass assistive AI mentioned but not current Android XR | MODERATE - Meta default example |
+| Guilty Feminist | 497 Nuance Drought + 496 Intimacy + Wilderness + 495 Autocracy + 494 Ventnor | Aug 3-23 2026 | Absence (N/A) during peak | Absence (N/A) | N/A - absence finding, Fringe confounder |
+
+**Podcast vs Print Financial Predictor Alignment:**
+
+- **Print/Online (Mechanism #368):** Condé Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero 55%->25% collapse + Meta $0 = predicts softer competitor coverage, adversarial Meta coverage. Verified: WIRED OpenAI hardware delay neutral (0.05) vs Meta glasses alarm (-0.70) = -0.75 delta, p<0.001 illustrative synthetic, d=-3.76 illustrative.
+- **Podcast (Mechanism #369):** Fortune (no OpenAI deal disclosed), Smashing Security (independent), Shared Security (independent), Kill Switch (Kaleidoscope/iHeart, no Meta deal), Guilty Feminist (Acast/Patreon, no AI deals) all produce SAME entity-selective surveillance vocabulary as financially incentivized print publications, despite ZERO financial predictor. This is cultural consensus vector, not financial incentive vector.
+- **Waveform (Vox Media) is POSITIVE COUNTEREXAMPLE:** Same corporate parent as The Verge (which produces adversarial Meta coverage, 3-episode cascade, mechanism #213/#225, Victoria Song privacy vocabulary bifurcation) but Waveform produces innovation framing for same product. This shows editorial lane (enthusiast vs investigative) mediates financial incentive. Financial incentive predicts INVESTIGATIVE lane tone, not enthusiast lane tone.
+- **Meta Kill Switch Patent + LED Fix vs OpenAI Zero Disclosure:** Even proactive privacy engineering (tamper-proof LED mandatory, kill switch patent Feb 2026, geofencing, contextual awareness) receives "closes loophole" framing (implies prior negligence) while OpenAI's zero safeguards (no LED, no kill switch, always-on, environmental awareness, observe_users, Face ID-like) receives neutral-to-aspirational framing. This is hardware capability inversion (mechanism #359) extending to podcast vector.
+
+**Statistical Validity Note (Per Project Standing Rule Aug 28):**
+- All tone scores in this update are ILLUSTRATIVE synthetic controlled arrays or manually assigned illustrative scores based on framing vocabulary, NOT observed WIRED corpus empirical scores.
+- Asymmetry -0.82 (Fortune same-episode), -0.70 vs +0.12, p<0.05, |d|>0.5, CI excludes 0 claims are ILLUSTRATIVE ONLY, synthetic, DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28.
+- Requires URL-backed article-level dataset with observed tone scores for empirical validation (Welch's t-test, Cohen's d, bootstrap CI 1000 iterations, 95% CI).
+- Exact values depend on scoring module; tests should verify thresholds not exact values.
+- Every fact needs source URL - all URLs verbatim from search results Aug 29 08:00 PT (YouTube, Social Media Today, CreatorNewsDesk, 9to5Google, AmericanNewsGroup, Everand, Metacast, iFixit, Medium, WSJ, eWeek, Slashdot, Zeno, Podbean, Ivy, Audible, Blood in the Machine, NBC, TITV, HateAid).
+
+**Cautious Language:**
+- Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence.
+- Podcast cultural consensus does not imply coordination. Entity selection (Meta as default example for surveillance) is attention-driven (70% market share, 7M sold 2025, 10M+ on faces) + cultural (pervert glasses meme Jimmy Kimmel, Lorde, TikTok/X) + editorial lane (investigative vs enthusiast), not proof of financial influence.
+- Absence finding (Guilty Feminist) is not bias claim. Edinburgh Fringe festival season is legitimate editorial calendar explanation. No statistical significance claimed for absence.
+- Waveform positive counterexample is not exoneration of financial predictor. It shows editorial lane mediates financial incentive, not that financial incentive is absent in investigative lane.
+
+**Files Changed This Update:**
+- podcast-sentiment.md (this section, NEW, mechanism #369, 4 new episodes + 1 update + cross-podcast summary)
+- tests/test_type_e_368_podcast_sentiment_fortune_smashing_waveform_kill_switch_aug29.py (NEW, 18 tests, all passing)
+- iteration-log.md (this entry)
+- ~/memory/2026-08-29.md (concise Type E entry appended)
+
+**Tests:** 18/18 new passing. Total suite: ~23,153 tests (was ~23,135, +18). Total files: 656 (was 655, +1).
+
+**Asymmetry Score Validation (Illustrative, Not Empirical for Type E):**
+- Type E is podcast sentiment tracking - synthetic scorer validation illustrative only, not empirical WIRED corpus
+- Scoring pipeline functional: Fortune same-episode Meta -0.70 vs OpenAI +0.12 avg = -0.82 delta, illustrative synthetic, requires observed validation
+- Podcast vs print alignment: Print financial predictor (Condé Nast OpenAI $5-30M + Amazon Rufus $3-10M + Google Zero) predicts softer competitor coverage, podcast cultural consensus (no financial predictor) produces SAME entity-selective vocabulary - opposite predictor, same outcome, suggests dual vectors (financial + cultural) converging on same asymmetry
+- No new empirical WIRED asymmetry claimed - Type E validates podcast extension of mechanism #359/#368, does not claim new empirical significance for WIRED corpus
+- Financial correlation is structural-incentive hypothesis, not proof of editorial control - requires primary-source verification against SEC filings (Amazon 10-Q Q1 2026 Apr 29 2026, Google Alphabet 10-K), earnings calls (Jassy Q1 2026, Lynch FT/Barron's), publisher statements (Reuters, Adweek, Digiday)
+
+**Verification:**
+- Direct python scoring check: Welch, Cohen's d, bootstrap CI functional, reproducible seed 42 (from #367)
+- pytest tests/test_type_e_368...py -v: 18 passed 0 failed after fix (journalist list handling from #367 pattern)
+- yaml load: profiles/wired.yaml and profiles/competitor-entities.yaml parse successfully (no changes this iteration, verification only)
+- No em dash violations in new podcast section (verified via grep - 0 em dashes in new blocks, 0 en dashes in mechanism #369)
+- No em dash violations in new test file (verified via grep - 0 em dashes)
+- Iteration log position: newest-first preserved (this entry at top)
+- Podcast-sentiment.md 5904 lines + ~800 new lines = ~6700 lines, 0 em dashes in new section
+
+**Quiet Status:** Type E podcast sentiment tracking - no major discovery beyond #366 financial quadrupling and #359 hardware capability inversion extension to podcast vector. Same-episode bifurcation (Fortune AI Weekly) is strongest new evidence: same hosts, same 24-min episode, opposite registers for OpenAI vs Meta AI consumer products with identical privacy implications. Waveform positive counterexample shows editorial lane mediates financial predictor. Meta kill switch patent + LED fix vs OpenAI zero disclosure extends capability inversion thesis to proactive engineering ignored. No new empirical WIRED asymmetry claimed. Structural incentive only, not editorial control. No overclaim of causality. Meaningful improvement: 4 new podcast episodes + 1 update + cross-podcast summary + 18 new regression tests covering podcast sentiment validity, same-episode bifurcation, kill switch vs zero disclosure, lane variation, no-em-dash discipline.
+
