@@ -229,9 +229,9 @@
 - [x] YAML validation completed (python yaml.safe_load passed after fixing flow arrays and em dashes)
 - [x] Targeted tests run (test_reece_rogers_aug29_extension 17 passed, 2 initially failed then fixed)
 - [x] Iteration log newest-first preserved
-- [ ] Memory append to ~/memory/2026-08-29.md pending
-- [ ] Goal bookkeeping in hidden_files pending
-- [ ] Meaningful commit and push pending
+- [x] Memory append to ~/memory/2026-08-29.md completed
+- [x] Goal bookkeeping in hidden_files completed (tracking.create_entry goal_54093bda4145)
+- [x] Meaningful commit and push completed (a3bc8af main -> main)
 
 ## Iteration #374 - Sat 2026-08-29 14:00 PT (Type A: WIRED x Samsung Galaxy Glasses Hardware Parity - 38-Day Selection Gap Persistence)
 
