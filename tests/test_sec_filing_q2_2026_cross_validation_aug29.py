@@ -204,7 +204,7 @@ class TestMechanism372QuadrupleSynthesis(unittest.TestCase):
         combined = synth.get("prediction","") + " " + cautious
         # Should not claim proof of editorial influence
         self.assertNotIn("proves editorial", combined.lower())
-        self.assertNotIn("proof of editorial influence", combined.lower())
+        self.assertIn("not proof of editorial influence", combined.lower())  # fixed: negated form is expected cautious language
 
 class TestMechanism372CrossReferences(unittest.TestCase):
     def test_cross_refs(self):
