@@ -9909,6 +9909,59 @@ journalists:
   multi_publication: true
   name: Kylie Robison
   notes: 'Fast-rising tech reporter who moved through four publications in four years: Business Insider → Fortune → The Verge → Wired → Core Media. Sacramento State College graduate. Based in San Francisco. Known for breaking news about AI companies (OpenAI, Humane AI) and the Twitter/X implosion. Her rapid moves — especially the brief ~6-month Wired stint — suggest she prioritizes scoop-driven reporting culture over institutional loyalty. KEY FOR MEDIASCOPE: her Business Insider → Fortune → Verge → Wired → Core Media trajectory creates a multi-publication comparison opportunity, though her Wired tenure was too short for meaningful DiD analysis. Her departure from Wired is analytically significant: she left an established publication for Ashlee Vance''s startup, suggesting either dissatisfaction with Wired''s editorial environment or strong pull from Core Media''s editorial model. Four-publication career by age ~28-30 is unusual velocity even for tech journalism.'
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 371
+      pattern: talent_war_direction_framing_asymmetry
+      description: 'Type B: Journalist Cross-Entity Tracking - Kylie Robison (WIRED business desk, Apr-Dec 2025) demonstrates talent-war direction framing asymmetry. Same action (senior AI researcher changes employer) receives divergent framing based on destination. When researchers join Meta (Jason Wei, Hyung Won Chung to Meta Superintelligence Lab; Andrew Tulloch from Thinking Machines to Meta), framing centers Meta as aggressive poacher using language like staggering offers, poaching, break-in analogy from OpenAI CRO Mark Chen. When researchers rejoin OpenAI (Barrett Zoph and Luke Metz leaving Thinking Machines to rejoin OpenAI, Sam Schoenholz also returning), framing shifts to restorative homecoming, win for OpenAI, departure as correction, with neutral to positive tone and reliance on OpenAI internal memo (Fidji Simo) rather than anonymous disgruntled sources. Source-type difference: Meta-poaching stories source WIRED anonymous sources plus OpenAI executive emotional quote (Chen visceral break-in); OpenAI-return stories source Kylie Robison X scoop plus OpenAI memo plus company confirmation, no anonymous Meta employee grievance pipeline. Editorial standard difference: Meta inbound covered as institutional aggression requiring scrutiny; OpenAI inbound covered as talent market normalization or loyalty restoration. Tone comparison (illustrative manual scores, not empirical significance): Meta-poaching pieces illustrative tone -0.30 (mildly adversarial, alarm via third-party quote), OpenAI-return pieces illustrative tone +0.20 (mildly positive, win framing). Difference illustrative only, do not claim statistical significance. Confounders: product maturity (Meta Superintelligence Lab newly formed 2025 vs OpenAI established), timing (mid-2025 peak talent war), editorial lane (WIRED business desk scoop culture prioritizes dramatic moves), market share (OpenAI dominant mindshare), source availability (OpenAI executives more willing to provide on-record grievance), and personal network (Robison built OpenAI sources at Fortune and Verge). Financial correlation (cautious, non-causal): WIRED parent Conde Nast has content licensing deal with OpenAI (Aug 2024, disclosed) but no comparable deal with Meta (Meta is direct advertising competitor to Conde Nast). This structural incentive correlates with coverage allocation but does not demonstrate editorial control or causation. Structural incentives differ from editorial control: licensing revenue creates audience and access incentives, not directive authority. Illustrative scores are manual estimates for comparison, not observed VADER or TextBlob measurements. No causal claim from financial relationship to framing.'
+      meta_examples:
+        - title: OpenAI researcher Jason Wei and Hyung Won Chung joining Meta superintelligence lab
+          date: '2025-07-16'
+          source_url: https://www.techmeme.com/250716/p2
+          original_wired_byline: Kylie Robison / WIRED
+          framing: Meta as aggressive poacher, staggering offers context, talent war escalation
+          tone_illustrative: -0.3
+          notes: Techmeme aggregation of Robison WIRED scoop. Wei worked on o3 and deep research models. Joins Meta new superintelligence lab with Chung.
+        - title: Andrew Tulloch leaves Thinking Machines Lab for Meta
+          date: '2025-11'
+          source_url: https://cnznews.com/two-thinking-machines-lab-cofounders-are-leaving-to-rejoin-openai/
+          framing: Meta as destination for high-profile departures, positioned alongside OpenAI return narrative
+          tone_illustrative: -0.25
+          notes: Cited within same article as Zoph Metz return piece. Tulloch co-founder left Thinking Machines for Meta in Nov 2025, framed as loss for Thinking Machines.
+      competitor_examples:
+        - title: Two Thinking Machines Lab cofounders are leaving to rejoin OpenAI
+          date: '2025-07-16'
+          source_url: https://cnznews.com/two-thinking-machines-lab-cofounders-are-leaving-to-rejoin-openai/
+          secondary_source_url: https://europennews.com/two-thinking-machines-lab-cofounders-are-leaving-to-rejoin-openai-2/
+          original_reporter: Kylie Robison via X scoop
+          framing: OpenAI win, homecoming, return narrative, correction of departure
+          tone_illustrative: +0.2
+          notes: Robison first reported on X that Zoph was fired for unethical conduct. WIRED unable to verify firing reason. OpenAI CEO Applications Fidji Simo memo frames return positively. Third employee Sam Schoenholz also rejoining.
+        - title: A look at Anthropic first developer conference where CPO Mike Krieger said 70 percent of PRs written by Claude
+          date: '2025-05-23'
+          source_url: https://www.techmeme.com/250523/p18
+          original_wired_byline: Kylie Robison / WIRED
+          framing: product innovation, engineering milestone, neutral to positive
+          tone_illustrative: +0.15
+          notes: Anthropic coverage during same WIRED tenure, framing as innovation milestone not institutional risk.
+        - title: OpenAI building a social network
+          date: '2025-04'
+          source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
+          framing: scoop, business strategy, neutral to positive curiosity
+          tone_illustrative: +0.10
+          notes: 'Referenced in Barrett hiring announcement - you likely saw her scoop last week about OpenAI building a social network at The Verge. Demonstrates Robison access to OpenAI product pipeline.'
+      comparison_summary: 'Same journalist, same beat (AI business), same publication window (WIRED Apr-Dec 2025), same action type (senior researcher job change) receives divergent framing by direction. Meta inbound: poaching, staggering, break-in analogy, adversarial third-party emotional quote. OpenAI inbound: rejoining, win, homecoming, memo-based neutral to positive. Source pipeline: Meta pieces use anonymous WIRED sources plus aggrieved competitor executive; OpenAI pieces use Robison primary scoop plus official company memo. Editorial standard difference is topic routing: Meta talent acquisition treated as aggressive market distortion; OpenAI talent recovery treated as natural market correction.'
+      confounders:
+        - product_maturity: Meta Superintelligence Lab newly formed 2025 vs OpenAI established lab, novelty drives poaching frame
+        - timing: mid-2025 talent war peak, simultaneous departures amplify narrative
+        - editorial_lane: WIRED business desk scoop culture prioritizes dramatic poaching language for audience
+        - market_share: OpenAI dominant mindshare means departures from OpenAI more newsworthy as loss
+        - source_availability: OpenAI executives more willing to provide on-record grievance quotes than Meta executives
+        - medium: X scoop plus memo vs full investigation, different formats produce different tone
+        - personal_network: Robison built OpenAI sources at Fortune and Verge, longer relationships may produce softer framing
+      financial_correlation_note: 'Cautious, non-causal: Conde Nast has OpenAI content licensing deal (Aug 2024) but no Meta deal. Meta is direct advertising competitor. Structural incentive correlates with coverage allocation but does not demonstrate editorial control. Distinguish structural incentives from editorial control. No causal claim.'
+      illustrative_scores_note: 'All tone scores above are manual illustrative estimates for comparison, explicitly labeled illustrative, not empirical VADER TextBlob measurements. Do not claim statistical significance from illustrative scores.'
+
   source_urls:
   - https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
   - https://talkingbiznews.com/they-re-hiring/the-verge-hires-robison-to-cover-artificial-intelligence/
