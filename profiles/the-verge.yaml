@@ -15,7 +15,7 @@ rss_feeds:
     category: "creators"
 
 # ===================================================================
-# OWNERSHIP CHAIN — compiled 2026-07-06 from press releases, SEC filings,
+# OWNERSHIP CHAIN - compiled 2026-07-06 from press releases, SEC filings,
 # Wikipedia, news reporting (WSJ, Adweek, TheWrap, Poynter, exchange4media)
 # ===================================================================
 ownership_chain:
@@ -53,7 +53,7 @@ ownership_chain:
       PMX also houses Concert (Vox Media's premium ad marketplace) and Forte (Vox Media's first-party
       data platform), giving it significant ad tech infrastructure.
 
-      CONTEXT — MURDOCH/LUPA SPLIT:
+      CONTEXT - MURDOCH/LUPA SPLIT:
       The PMC acquisition followed the Lupa Systems deal (announced May 20, 2026) in which James
       Murdoch acquired New York Magazine (incl. The Cut, Vulture, Intelligencer, The Strategist,
       Curbed, Grub Street), the Vox Media Podcast Network (~40 shows incl. Pivot, Today Explained,
@@ -81,7 +81,7 @@ ownership_chain:
         now resides at a different company than The Verge itself.
 
       VALUATION CONTEXT: Vox Media was valued at ~$1B in 2015 (NBCUniversal round). PMC's 2023
-      investment valued it at ~$500M. The Lupa deal alone was ~$300M — meaning Vox Media's total
+      investment valued it at ~$500M. The Lupa deal alone was ~$300M - meaning Vox Media's total
       breakup value may have exceeded the 2023 valuation. BuzzFeed sold for $120M (from $1.7B peak).
     source_urls:
       - "https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands"
@@ -111,11 +111,11 @@ ownership_chain:
       followers, 6B video views. These numbers predate the Vox Media brand acquisition (June 2026),
       which added The Verge's tens of millions of monthly uniques, Eater, SB Nation, etc.
 
-      EXTERNAL INVESTMENT — SRMG (CORRECTED):
+      EXTERNAL INVESTMENT - SRMG (CORRECTED):
       In February 2018, PMC received a $200M+ investment from Saudi Research and Media Group
       (SRMG, Tadawul: 4210), valuing PMC at approximately $700M (WWD, Feb 28, 2018; NYPost).
       An additional $25M was committed via a MENA joint venture (Gulf Business). PMC was
-      deliberately opaque about the investor's identity — even its own properties Rolling Stone
+      deliberately opaque about the investor's identity - even its own properties Rolling Stone
       and Variety misidentified the source as "a Saudi fund" or "MBC Group." Only after TheWrap
       investigated and pressured PMC in July 2019 did PMC's WWD.com update its original
       announcement to name SRMG (TheWrap, Sharon Waxman, Jul 2019). SRMG did not respond to
@@ -129,15 +129,15 @@ ownership_chain:
       SRMG is a publicly listed joint-stock company on Saudi Tadawul exchange (since 2006).
       Its majority shareholder is **Al Ahli Capital Fund 13**, an investment vehicle managed
       by **NCB Capital** (the asset management arm of **Saudi National Bank / SNB**). SNB is
-      itself majority owned by the **Public Investment Fund (PIF)** — Saudi Arabia's $1.15
+      itself majority owned by the **Public Investment Fund (PIF)** - Saudi Arabia's $1.15
       trillion sovereign wealth fund. This chain (PIF → SNB → NCB Capital → Al Ahli Capital
       Fund 13 → SRMG → PMC) creates an indirect but institutional linkage between PMC and the
       Saudi government. The State Media Monitor classifies SRMG as "Captured Public/State-Managed
-      (CaPu)" — their highest category of state influence.
+      (CaPu)" - their highest category of state influence.
 
       SRMG GOVERNANCE & POLITICAL CONNECTIONS:
       - **Prince Badr bin Abdullah** was SRMG's head until becoming Saudi Arabia's first Culture
-        Minister — described as a "confidante of Crown Prince Mohammed bin Salman" (TheWrap).
+        Minister - described as a "confidante of Crown Prince Mohammed bin Salman" (TheWrap).
       - **Ahmed bin Aqeel Al-Khatib**, Saudi Arabia's current Minister of Tourism, sits on
         SRMG's board of directors (State Media Monitor).
       - CEO since October 2020: **Jomana Rashed Al-Rashid** (first female CEO of SRMG).
@@ -146,28 +146,28 @@ ownership_chain:
 
       SRMG FINANCIAL DETERIORATION (UPDATED JUL 15, 2026):
       - Share capital: SAR 800M (80M shares at SAR 10 each)
-      - Share price: SAR 68.00 (Jul 15, 2026) — AT 52-WEEK LOW. Down -12% from SAR 77.00 (Jul 13).
+      - Share price: SAR 68.00 (Jul 15, 2026) - AT 52-WEEK LOW. Down -12% from SAR 77.00 (Jul 13).
         52-week range: SAR 68.00–199.00. 1-year return: -46.94%.
-      - Market cap: SAR 5.50B (~$1.47B), down from ~$1.65B (Jul 13) — 11% decline in 2 days
+      - Market cap: SAR 5.50B (~$1.47B), down from ~$1.65B (Jul 13) - 11% decline in 2 days
       - Enterprise Value: SAR 6.06B (~$1.62B)
       - Revenue (TTM): SAR 2.79B (-9.92% YoY); FY2025: SAR 2.67B (-18.09% YoY)
-      - Revenue trajectory: $996M (FY2023) → $872M (FY2024) → $714M (FY2025) — continuous decline
+      - Revenue trajectory: $996M (FY2023) → $872M (FY2024) → $714M (FY2025) - continuous decline
       - Net Income (TTM): -SAR 364.14M; EPS: -SAR 4.55
-      - ROE: -18.66%, ROA: -3.35%, ROIC: -9.81% — deeply unprofitable
+      - ROE: -18.66%, ROA: -3.35%, ROIC: -9.81% - deeply unprofitable
       - Debt/EBITDA: 8.90 (dangerously leveraged)
       - Interest Coverage: -2.31 (CANNOT cover interest payments from operating income)
-      - Employees: DOWN TO 700 (from ~2,000 in prior reporting — 65% workforce reduction!)
+      - Employees: DOWN TO 700 (from ~2,000 in prior reporting - 65% workforce reduction!)
       - Q2 2026 earnings: Aug 12
       Q1 2026 PARTIAL RECOVERY (Decypha, May 10, 2026):
       - Net profit: SAR 33.07M (+6.88% YoY vs Q1 2025's SAR 30.94M)
       - Revenue: SAR 769.63M (+18.26% YoY vs SAR 650.76M)
       - EPS: SAR 0.41 (up from SAR 0.39 YoY)
-      - Sequential: Q4 2025 loss was SAR 357.04M — Q1 2026 recovery is dramatic but fragile
+      - Sequential: Q4 2025 loss was SAR 357.04M - Q1 2026 recovery is dramatic but fragile
       - FY2025 full-year net loss: SAR 366.28M (vs profit SAR 201.69M in FY2024)
       NOTE: SRMG is now at its 52-week low with negative interest coverage and 65% workforce
       reduction. The Q1 2026 profit was a brief respite in a structural decline: revenue down
       ~30% from FY2023 peak, margins collapsed, debt service unsustainable. This raises acute
-      questions about whether SRMG can maintain its $200M+ PMC equity position — a financially
+      questions about whether SRMG can maintain its $200M+ PMC equity position - a financially
       distressed sovereign-linked investor may face pressure to liquidate non-core holdings or
       extract greater commercial value from portfolio companies like PMC. The May 2025 SRMG/PMC
       advertising partnership (routing Saudi government ad revenue through PMC brands) may reflect
@@ -183,14 +183,14 @@ ownership_chain:
       SRMG VENTURES (corporate VC arm, launched ~2022):
       Invests seed-to-Series-B in digital media, generative AI, immersive/interactive
       entertainment. Investments include: Telfaz11 (Saudi creative media studio), VUZ (VR
-      social media app), Anghami (MENA music streaming, Nasdaq-listed — with SRMG board seat),
+      social media app), Anghami (MENA music streaming, Nasdaq-listed - with SRMG board seat),
       Qvest Group JV (2024, media technology services). The AI investment mandate creates an
       additional layer of financial interest in AI ecosystem outcomes relevant to The Verge's
       coverage of AI companies.
 
       KHASHOGGI NON-DIVESTITURE:
       After the October 2018 murder and dismemberment of Washington Post journalist Jamal
-      Khashoggi — ordered by Crown Prince MBS per U.S. intelligence — Endeavor (WME parent)
+      Khashoggi - ordered by Crown Prince MBS per U.S. intelligence - Endeavor (WME parent)
       returned its $400M Saudi PIF investment in March 2019. PMC did NOT return its $200M+
       SRMG investment. The UK opened a state inquiry into Saudi investment in The Independent
       and Evening Standard. PMC's retention of the Saudi investment, combined with its
@@ -208,7 +208,7 @@ ownership_chain:
       SIGNIFICANCE: PIF is financially aligned AGAINST Meta (divested) and WITH Meta's
       competitors (Apple, Arm/chip ecosystem). Through SRMG, PIF has a $200M+ stake in PMC
       (The Verge's parent). The Verge's ultimate beneficial ownership chain includes a sovereign
-      investor that actively sold Meta stock while retaining its media investment — creating
+      investor that actively sold Meta stock while retaining its media investment - creating
       structural financial alignment against The Verge's most-covered company.
 
       AD TECH INFRASTRUCTURE: The June 2026 Vox Media acquisition specifically included Concert
@@ -217,7 +217,7 @@ ownership_chain:
       PMC separately operates its own CDP (Customer Data Platform) infrastructure for first-party
       data collection across all PMC brands. Prior to CDP implementation, 95% of PMC's digital
       visitors were unauthenticated (MarTech). PMC's ad tech stack competes directly with the ad
-      platforms of the companies The Verge covers editorially — Google and Meta chief among them.
+      platforms of the companies The Verge covers editorially - Google and Meta chief among them.
 
       WORKPLACE: In June 2026, Jay Penske issued a return-to-office mandate requiring all PMC
       employees to be in-office at least four days per week or face termination, with an October 4
@@ -231,7 +231,7 @@ ownership_chain:
       editors Robert Levine and Steve Knopper, senior director Dave Brooks, lead analyst Glenn
       Peoples, and executive editor Frank DiGiacomo. These followed September 2025 Rolling Stone
       cuts (executive digital director Lisa Tozzi, chief TV critic Alan Sepinwall).
-      January 2026: Vox Media Union confirmed 8+ unionized employees laid off — "three in-unit
+      January 2026: Vox Media Union confirmed 8+ unionized employees laid off - "three in-unit
       workers from PopSugar, two from The Verge, and three from Eater – not including a number
       of out-of-unit employees." Ash Parrish, The Verge's gaming specialist (ex-Kotaku), was
       among those cut. The Vox Media Union criticized: company has "laid off workers at an average
@@ -245,10 +245,10 @@ ownership_chain:
       (Status) report noted "dozens of people had been impacted" across PMC outlets in late 2025.
       ANALYTICAL SIGNIFICANCE: The layoff pattern is relevant because: (a) PMC's RTO mandate
       (Oct 4 compliance) combined with Dec-Jan layoffs suggests a two-stage workforce reduction
-      — non-compliance attrition followed by direct cuts. (b) The Verge's gaming coverage was
+      - non-compliance attrition followed by direct cuts. (b) The Verge's gaming coverage was
       already hollowed out by the Polygon sale (May 2025); losing Ash Parrish removed the last
       dedicated gaming specialist. (c) The CBA successor clause (§39) means these cuts had to
-      comply with union layoff procedures — including 2 weeks paid non-working notice + minimum
+      comply with union layoff procedures - including 2 weeks paid non-working notice + minimum
       12 weeks severance. (d) Pre-acquisition layoffs at Vox Media properties may have been
       financially motivated to reduce headcount before PMC's full acquisition (June 2026) to
       lower the effective purchase price of remaining Vox Media brands.
@@ -294,7 +294,7 @@ ownership_chain:
 
       SPORTS OWNERSHIP:
       - Chelsea Football Club: Chairman and co-owner (acquired May 30, 2022 for ~$5.3B with
-        BlueCo consortium — Mark Walter, Hansjörg Wyss, Clearlake Capital). Boehly was interim
+        BlueCo consortium - Mark Walter, Hansjörg Wyss, Clearlake Capital). Boehly was interim
         sporting director Jun-Jan 2023. Chelsea won FIFA Club World Cup 2025.
       - Los Angeles Dodgers: co-owner (part of Guggenheim Baseball Management consortium)
       - Los Angeles Lakers: co-owner and board member
@@ -312,7 +312,7 @@ ownership_chain:
       - A24: Indie film studio, Eldridge provided seed funding in 2012. Still minority stakeholder
         (after $225M Stripes-led 2022 raise, founders/employees maintain significant majority).
         A24 was valued at $3.5B (New Yorker, 2025). A24's lead investor Thrive Capital is also
-        a major backer of OpenAI — A24 courted Thrive specifically for AI connections (A24 Labs
+        a major backer of OpenAI - A24 courted Thrive specifically for AI connections (A24 Labs
         initiative, head: Scott Belsky). 87 Academy Award nominations, 21 wins. First studio to
         win top 6 Oscars in one year (2023, Everything Everywhere All at Once).
       - Fulwell Entertainment: entertainment production company
@@ -322,7 +322,7 @@ ownership_chain:
         brought Vivid Seats public ~2021 at ~$2B enterprise value. Boehly on board.
         Current: $6.98/share, market cap ~$77M (Jul 14, 2026). Q1 2026: revenue $125.8M (down 23%
         YoY), net loss $14.6M. 565 employees (down 26% YoY). Marketplace GOV down 25%.
-        Partners include Rolling Stone (PMC property) — circular commercial relationship.
+        Partners include Rolling Stone (PMC property) - circular commercial relationship.
       - Laylo (fan engagement), Viral Nation (influencer marketing), Fixated (content creation)
       - Invested in Dick Clark's New Year's Rockin' Eve (renewed with ABC through 2029)
 
@@ -332,15 +332,15 @@ ownership_chain:
         21p/share offer from Media Concierge.
       - Same period: Reported in talks with David Montgomery about joint offer for Daily Telegraph.
       - Pattern: Boehly is expanding his media empire beyond the PMC JV, specifically targeting
-        British newspaper publishers — a market where editorial independence concerns are acute.
+        British newspaper publishers - a market where editorial independence concerns are acute.
 
       CHELSEA FC × TECH COMPANIES:
       - Infinite Athlete: Chelsea's front-of-shirt sponsor (£40M deal). Parent of Tempus Ex Machina.
         Investors include Clearlake Capital (Chelsea co-owner) and Eldridge (Boehly). Silver Lake
-        also invested — Silver Lake holds stake in City Football Group AND Fanatics. Clearlake and
+        also invested - Silver Lake holds stake in City Football Group AND Fanatics. Clearlake and
         Eldridge are also major Fanatics investors. Premier League scrutinized these cross-ownership
         ties before approving the deal.
-      - Chelsea has 200M+ combined digital reach globally — a significant advertising platform for
+      - Chelsea has 200M+ combined digital reach globally - a significant advertising platform for
         tech companies including Meta (Quest ads, gaming sponsorships, Instagram/Facebook marketing).
       - Twilio: Multi-year fan engagement partnership (announced ~2025)
       - EA Sports: Partnership for Chelsea men's and women's teams
@@ -350,7 +350,7 @@ ownership_chain:
       editorial coverage:
       1. A24 → Thrive Capital → OpenAI: Eldridge's portfolio company A24 explicitly sought
          OpenAI's backer as investor. This creates an indirect but real financial interest in
-         OpenAI ecosystem success — compounding The Verge's existing direct OpenAI licensing deal.
+         OpenAI ecosystem success - compounding The Verge's existing direct OpenAI licensing deal.
       2. Chelsea FC → advertising relationships with major tech companies The Verge covers.
       3. Vivid Seats → Rolling Stone (PMC property) partnership creates circular commercial flow.
       4. Sports ownership (Dodgers, Lakers, Chelsea) → massive advertising/sponsorship relationships
@@ -378,15 +378,15 @@ ownership_chain:
 
       Roger Penske (father): Billionaire founder and chairman of Penske Corporation, a diversified
       transportation and automotive empire. Key holdings:
-      - Penske Automotive Group (NYSE: PAG) — publicly traded, Roger is Chair & CEO, 10%+ owner.
+      - Penske Automotive Group (NYSE: PAG) - publicly traded, Roger is Chair & CEO, 10%+ owner.
         PAG is one of the largest US automotive retail groups. Market cap ~$12.7B (Jul 14, 2026).
-        Stock: $193.55 (Jul 14) — trading near NEW 52-WEEK HIGHS (52W high reached $197.69 on
+        Stock: $193.55 (Jul 14) - trading near NEW 52-WEEK HIGHS (52W high reached $197.69 on
         Jul 10, now slightly retreated). 367 franchised dealerships
         (150 US/Puerto Rico, 217 international).
         27,700 employees. TTM revenue: $31.8B. TTM net income: $935.4M. TTM EPS: $14.13.
         Q1 2026: EPS $3.56 (beat $2.91 consensus by $0.65), revenue $7.86B (+1.2% QoQ). GAAP EPS $3.56.
         Q2 2026 earnings: July 29. Q2 consensus EPS: $3.39 (Barchart: $3.39 avg from 5 est,
-        range $3.30–$3.48). FY 2026 consensus EPS: $13.46 (Barchart, 6 est — slightly revised down
+        range $3.30–$3.48). FY 2026 consensus EPS: $13.46 (Barchart, 6 est - slightly revised down
         from prior $13.60; range $13.30–$13.68). FY 2027 consensus: $14.51 (6 est).
         NOTE: PAG reached $197.69 on Jul 10 (new 52W high) before pulling back to $193.55. The
         Penske family's wealth rally (PAG +38% from 52W low of $140.12) continues alongside
@@ -394,10 +394,10 @@ ownership_chain:
         Dividend: $5.68/year (~2.84% yield), 22 consecutive quarterly increases, 43.88% annualized 5Y growth.
         Analyst consensus: Moderate Buy. Morgan Stanley Overweight ($190), Citi Buy ($199),
         UBS Neutral ($167), JPMorgan Neutral ($170). Simply Wall St fair value: $206.
-      - Penske Truck Leasing (28.9% stake via PTS) — 350,000+ vehicle fleet, leasing/logistics.
-      - Indianapolis Motor Speedway — owner since 2019.
-      - IndyCar — owner of the racing series.
-      - Team Penske — major racing team (IndyCar, NASCAR, IMSA). 600+ major race wins.
+      - Penske Truck Leasing (28.9% stake via PTS) - 350,000+ vehicle fleet, leasing/logistics.
+      - Indianapolis Motor Speedway - owner since 2019.
+      - IndyCar - owner of the racing series.
+      - Team Penske - major racing team (IndyCar, NASCAR, IMSA). 600+ major race wins.
 
       POLITICAL CONNECTIONS (FEC/OpenSecrets verified, 2024 cycle):
       Penske Corp total contributions: **$4,125,256** in 2024 election cycle (OpenSecrets).
@@ -410,14 +410,14 @@ ownership_chain:
       - $123,900 → National Republican Senatorial Cmte (Sep 11, 2024)
       - $24,597 → Donald Trump (R-PRES) direct (cumulative)
       - $10,000 → Republican Party of Ohio (Oct 2024)
-      - $5,600 → Donald Trump (R) ($2,800 × 2, Aug 2, 2019 — first Trump donation)
+      - $5,600 → Donald Trump (R) ($2,800 × 2, Aug 2, 2019 - first Trump donation)
       Earlier: $250,000 → Right To Rise USA (Jeb Bush, 2015). Also donated to Democrats
       including Brenda Lawrence (D-MI, 2013/2018) and Debbie Stabenow (D-MI, 2016).
       Penske Corp lobbying: $150,000 in 2024, $170,000 in 2023.
-      Presidential Medal of Freedom from Trump (2019) — same year as first Trump donation.
+      Presidential Medal of Freedom from Trump (2019) - same year as first Trump donation.
 
       Jay Penske has projected political neutrality publicly, but insiders at multiple PMC brands
-      describe a "quiet realignment toward 'balanced' — often more conservative — voices and priorities"
+      describe a "quiet realignment toward 'balanced' - often more conservative - voices and priorities"
       (Medium/Rosenbaum, SXSW analysis). At SXSW, staff were reportedly "directed to bring more
       conservative voices to the stage" after PMC acquisition.
 
@@ -511,7 +511,7 @@ revenue_relationships:
       CONFLICT SIGNIFICANCE:
       1. Microsoft competes with Meta in AI (Copilot vs Meta AI), cloud (Azure vs Meta's internal
          infra), productivity (Teams vs Workplace), and is OpenAI's largest investor/partner.
-      2. PMC's editorial AI workflows are powered by OpenAI models via Azure — meaning The Verge's
+      2. PMC's editorial AI workflows are powered by OpenAI models via Azure - meaning The Verge's
          own editorial operations depend on OpenAI technology. This creates institutional familiarity
          and alignment with the OpenAI product ecosystem beyond just licensing revenue.
       3. Combined with the content licensing deal, PMC has money flowing in BOTH directions with
@@ -519,7 +519,7 @@ revenue_relationships:
          This bilateral financial relationship is deeper than any other tracked publication's
          single-direction licensing deals.
       4. ClassifAI's architecture allows PMC to switch providers, but as of the case study
-         publication (mid-2025), Azure OpenAI remained the primary provider — suggesting PMC
+         publication (mid-2025), Azure OpenAI remained the primary provider - suggesting PMC
          is operationally locked in to the OpenAI ecosystem for editorial AI.
     date_established: "2023 (enterprise agreement predates AI integration partnership)"
     source_urls:
@@ -534,7 +534,7 @@ revenue_relationships:
       1. AI OVERVIEWS (D.D.C., No. 1:25-cv-03192-APM, filed Sep 13, 2025):
       PMC sued Google alleging AI Overviews use publisher journalism without consent to create
       AI-generated search summaries, reducing traffic and revenue. Claims Google conditions search
-      indexing on permitting AI use of content — a coercive tie under Sherman Act. Six counts:
+      indexing on permitting AI use of content - a coercive tie under Sherman Act. Six counts:
       reciprocal dealing (§1 and §2), monopoly leveraging, monopolization, attempted monopolization,
       unjust enrichment. PMC claims ~20% of Google searches linking to its sites show AI Overviews
       (expected to rise), affiliate revenue down >33% from peak by end of 2024.
@@ -546,7 +546,7 @@ revenue_relationships:
       2. AD TECH ANTITRUST (S.D.N.Y., filed Jan 2026):
       PMC and subsidiary SheMedia sued Google alleging illegal monopolization of publisher ad-server
       and ad-exchange markets. Claims Google manipulated real-time ad auctions using "Last Look,"
-      "Minimum Bid to Win," and related schemes — saw rivals' bids before submitting its own.
+      "Minimum Bid to Win," and related schemes - saw rivals' bids before submitting its own.
       SheMedia operates ad network for ~1,800 websites. Builds on 2025 federal ruling (EDVA) that
       Google holds unlawful monopolies in two ad tech markets (remedies phase ongoing).
 
@@ -573,7 +573,7 @@ revenue_relationships:
       Meta is a major digital advertiser across the media ecosystem. The Verge/Vox Media/PMC properties
       likely receive Meta advertising revenue (programmatic and direct). Meta is also a significant
       source of referral traffic to The Verge via Facebook and Instagram sharing. However, Meta has
-      NOT signed an AI content licensing deal with Vox Media/PMC — unlike OpenAI (which has). This
+      NOT signed an AI content licensing deal with Vox Media/PMC - unlike OpenAI (which has). This
       creates the same revenue asymmetry seen at Condé Nast: The Verge's parent gets paid by Meta's
       AI competitors but not by Meta itself.
 
@@ -587,11 +587,11 @@ revenue_relationships:
       SRMG Media Solutions (SMS), the advertising subsidiary of Saudi Research and Media Group
       (PMC's $200M+ equity investor), announced a strategic advertising partnership with PMC in
       May 2025. This enables Saudi and MENA region advertisers to run programmatic campaigns
-      across PMC's 40+ international media brands — including The Verge — in formats including
+      across PMC's 40+ international media brands - including The Verge - in formats including
       video, banners, and audience layering.
 
       KEY SECTORS TARGETED: tourism, government departments, investment sectors, and mega
-      projects — all Saudi Vision 2030 priorities. The partnership explicitly enables
+      projects - all Saudi Vision 2030 priorities. The partnership explicitly enables
       advertisers to "co-create custom content and campaigns with PMC's premium publishers,
       pending editorial approval."
 
@@ -636,7 +636,7 @@ revenue_relationships:
         52-week range: $5.06–$38.00.
       - Market cap: ~$88M (down ~96% from SPAC valuation of ~$2B)
       - Q1 2026 (May 5): Revenue $125.78M (down 23% YoY, above $124.55M consensus), EPS -$1.35
-        (MISSED consensus -$1.03 by $0.32). Company stated Q1 "exceeded guidance" — distinguishing
+        (MISSED consensus -$1.03 by $0.32). Company stated Q1 "exceeded guidance" - distinguishing
         internal guidance from Wall Street consensus. App GOV up 20% YoY, app share >40%.
         Adjusted EBITDA $9.5M (positive), cash $144M. 2026 outlook reaffirmed with H2 growth expected.
       - TTM revenue: $450.5M. TTM EPS: -$69.61 (reflecting massive impairments).
@@ -646,7 +646,7 @@ revenue_relationships:
       - Lost major Private Label partner (revenues down 64%)
       - Analyst consensus: Hold (9 analysts: 2 Sell, 5 Hold, 2 Buy)
       - Q2 2026 earnings: Aug 4 (before market open)
-      - Warrants (SEATW): $0.0275 — essentially worthless (down 81% YoY)
+      - Warrants (SEATW): $0.0275 - essentially worthless (down 81% YoY)
       - CEO: Lawrence C. Fey
 
       CIRCULAR COMMERCIAL RELATIONSHIP:
@@ -701,7 +701,7 @@ labor_union:
     - DEI: $50K annual DEC budget + $10K conference fund + $50K retention programs
     - PTO: unlimited, with encouragement to take ≥25 days/year (up from 20)
 
-    SUCCESSOR CLAUSE (§39) — critical for PMC acquisition:
+    SUCCESSOR CLAUSE (§39) - critical for PMC acquisition:
     - Equity transaction: CBA binding on successors for its full term
     - Asset transaction: if purchaser hires majority of bargaining unit employees to operate
       acquired assets, purchaser must assume CBA for balance of term as a condition of purchase
@@ -754,15 +754,15 @@ editorial_leadership:
       he brings Condé Nast institutional framing exposure to The Verge's editorial environment.
 
       CAREER PATH (5 publications, 16 years):
-      1. PC Magazine (2010–2011) — Ziff Davis
-      2. The Verge (2011–2015) — First stint, Vox Media, deputy editor
-      3. WIRED (2015–2017) — Condé Nast/Advance Publications, senior writer
-      4. Wall Street Journal (2017–2020) — News Corp/Dow Jones, personal tech columnist
-      5. Protocol (2020–2022) — Politico parent, editorial director (Protocol shut down late 2022)
-      6. The Verge (2022–present) — Boomerang return as Editor-at-Large, PMC/PMX ownership
+      1. PC Magazine (2010–2011) - Ziff Davis
+      2. The Verge (2011–2015) - First stint, Vox Media, deputy editor
+      3. WIRED (2015–2017) - Condé Nast/Advance Publications, senior writer
+      4. Wall Street Journal (2017–2020) - News Corp/Dow Jones, personal tech columnist
+      5. Protocol (2020–2022) - Politico parent, editorial director (Protocol shut down late 2022)
+      6. The Verge (2022–present) - Boomerang return as Editor-at-Large, PMC/PMX ownership
 
       University of Virginia BA in Government and Media Studies. One of the most
-      well-traveled tech journalists in the industry — his 5-publication career creates
+      well-traveled tech journalists in the industry - his 5-publication career creates
       a NATURAL EXPERIMENT for testing whether adversarial Meta coverage is reporter-driven
       (individual response to Meta's behavior) or institution-driven (editorial assignment
       and ownership incentives). Evidence strongly supports institution-driven.
@@ -780,8 +780,8 @@ editorial_leadership:
         the same information.
       analytical_significance: >
         Pierce's career is the strongest natural experiment in the MediaScope dataset.
-        If adversarial framing were reporter-driven — a natural response to Meta's
-        actual behavior — we would expect it to follow Pierce from publication to
+        If adversarial framing were reporter-driven - a natural response to Meta's
+        actual behavior - we would expect it to follow Pierce from publication to
         publication. It does not. His coverage is product-focused and balanced across
         all five employers. The adversarial framing at WIRED comes from editorial
         lane assignment (Goode covers Apple/Snap, not Meta glasses). The adversarial
@@ -817,9 +817,9 @@ editorial_leadership:
               Vergecast episode covering Orion AR glasses at Meta Connect 2024. Pierce
               called Orion "a statement of purpose from Meta: that AR glasses really are
               the future and that we're eventually going to get there." Acknowledged it
-              could be "vaporware" or "the unquestionable future" — honest uncertainty
+              could be "vaporware" or "the unquestionable future" - honest uncertainty
               without dismissal. Brought in Alex Heath for the deep access reporting.
-              The episode title itself — "Meta's new smart glasses look like the future" —
+              The episode title itself - "Meta's new smart glasses look like the future" -
               is positive editorial framing, notable given The Verge's institutional
               adversarial posture on Meta corporate stories.
             source_url: "https://vuink.com/post/guriretr-d-dpbz/2024/9/27/24255557/meta-orion-quest-smart-glasses-ar-connect-vergecast"
@@ -847,7 +847,7 @@ editorial_leadership:
               it as "much better-looking than other AR/VR headsets" with "silver sci-fi
               goggles, cable, and battery pack." Product-focused, no privacy/surveillance
               concerns raised despite Vision Pro having 12 outward-facing cameras, 5 sensors,
-              and 6 microphones — significantly more sensors than Meta's glasses. This creates
+              and 6 microphones - significantly more sensors than Meta's glasses. This creates
               a DIRECT COMPARISON: same journalist, same publication, camera-equipped devices
               from two companies. Zero surveillance language for either.
             source_url: "https://www.techmeme.com/230605/p38"
@@ -882,7 +882,7 @@ editorial_leadership:
             framing: >
               "Unimpressed by its uninteresting and sometimes inaccurate responses."
               Noted that despite Google's insistence that Gemini was not a search engine,
-              its UI resembled one. Honest product critique — same functional criticism
+              its UI resembled one. Honest product critique - same functional criticism
               approach he applies to Meta products. NO existential framing about Google's
               data practices or surveillance capabilities.
 
@@ -916,7 +916,7 @@ editorial_leadership:
               Negative Vergecast episode title for Snap Spectacles coverage. Product
               critique focused on aesthetics and practicality, NOT surveillance or privacy.
               The willingness to be negative about Snap (a company without Meta's adversarial
-              coverage ecosystem) suggests Pierce's Meta coverage isn't artificially softened —
+              coverage ecosystem) suggests Pierce's Meta coverage isn't artificially softened -
               he simply applies product-review criteria consistently across companies.
 
           - title: "Snap AR developer ecosystem"
@@ -944,8 +944,8 @@ editorial_leadership:
         institutional adversarial posture from its consumer tech coverage.
 
         3. MULTI-INSTITUTIONAL NATURAL EXPERIMENT: Pierce's 5-publication career spanning WIRED
-        (Condé Nast/Advance), WSJ (News Corp), and The Verge (PMC) — three publications with
-        different ownership structures and different financial relationships with Meta's competitors —
+        (Condé Nast/Advance), WSJ (News Corp), and The Verge (PMC) - three publications with
+        different ownership structures and different financial relationships with Meta's competitors -
         creates a controlled comparison. His Meta framing stays product-balanced across all contexts.
         The variable that DOES change is the publication's editorial assignment structure, not the
         reporter's tone.
@@ -953,24 +953,24 @@ editorial_leadership:
         4. THE ASSIGNMENT PARADOX: Pierce writes the Quest 3 review (product-balanced) but does NOT
         write investigative pieces about Meta's privacy, surveillance, or corporate practices. Those
         go to Alex Heath or are addressed via editorial commentary (Nilay Patel). Pierce is editorially
-        shielded from adversarial Meta coverage by assignment design — the same mechanism as WIRED's
+        shielded from adversarial Meta coverage by assignment design - the same mechanism as WIRED's
         lane assignment asymmetry, but operating in reverse (product reviewer = balanced, business
         reporter = adversarial).
 
         5. CROSS-ENTITY SENSOR BLINDNESS: Pierce reviews camera-equipped devices from Meta (Quest 3,
         Ray-Ban Meta), Apple (Vision Pro), Google (Pixel), and Snap without raising surveillance
         concerns for ANY company. This proves that surveillance/privacy alarm language in Meta
-        coverage is NOT triggered by the presence of cameras — it is selectively applied by specific
+        coverage is NOT triggered by the presence of cameras - it is selectively applied by specific
         editorial assignments (WIRED investigators, Verge policy editors, NYT privacy reporters).
         Pierce, covering the same devices through a product lens, finds nothing to alarm about.
 
         CONTRAST WITH WIRED'S LANE ASSIGNMENT:
         At WIRED, Lauren Goode covers Apple Vision Pro and Snap Spectacles with product-delight
-        framing but NEVER reviews Meta glasses — those go to investigators. At The Verge, Pierce
+        framing but NEVER reviews Meta glasses - those go to investigators. At The Verge, Pierce
         covers Meta Quest AND Apple Vision Pro through the same balanced product lens. This
         proves that WIRED's lane assignment is a deliberate editorial choice, not an organic
         division of expertise. If product reviewers naturally avoided Meta's camera products,
-        Pierce would too. He doesn't — because the avoidance is institutional.
+        Pierce would too. He doesn't - because the avoidance is institutional.
 
   - name: "Jacob Kastrenakes"
     title: "Executive Editor"
@@ -1029,7 +1029,7 @@ key_journalists:
       Senior reporter and author of the "Optimizer" newsletter. 13+ years of experience. Previously
       at Gizmodo (~2019-2022) and PC Magazine (~2013-2019). The Verge's primary wearables reviewer
       and smart glasses beat reporter. Regular Vergecast contributor. Covers Meta Ray-Ban glasses
-      extensively with genuinely balanced product-reviewer lens — NOT the adversarial framing that
+      extensively with genuinely balanced product-reviewer lens - NOT the adversarial framing that
       characterizes The Verge's institutional Meta coverage via Alex Heath or editorial commentary.
     competitor_coverage_analysis:
       meta_coverage:
@@ -1052,7 +1052,7 @@ key_journalists:
             date: "2026-01-26"
             tone: -0.3
             framing: >
-              Functional product critique — Live AI feature is unhelpful and obvious.
+              Functional product critique - Live AI feature is unhelpful and obvious.
               Criticism is about product utility, NOT surveillance or privacy alarm.
               Uses personal anecdotes (fridge, road trip) not policy language.
             source_url: "https://45179bb5-2a1f-4bc9-a93f-f86df27a1ff5.atarimworker.io/2025/1/26/24351264/live-ai-ray-ban-meta-smart-glasses-wearables"
@@ -1114,7 +1114,7 @@ key_journalists:
       google_android_xr_coverage:
         tone: "positive"
         key_observation: >
-          "I felt as close to Tony Stark in a controlled demo as I'll ever be" — covering
+          "I felt as close to Tony Stark in a controlled demo as I'll ever be" - covering
           Google/Samsung Android XR and Project Moohan. Enthusiastic, no privacy concerns
           raised despite camera-equipped device.
       snap_spectacles_coverage:
@@ -1171,7 +1171,7 @@ key_journalists:
             dedicated privacy pieces about Meta's 1-camera glasses and zero about either
             competitor's camera-equipped wearables.
         podcast_privacy_appearances:
-          - title: "kill switch podcast — 'the glassholes are back'"
+          - title: "kill switch podcast - 'the glassholes are back'"
             entity_discussed: "meta"
             key_quotes:
               - "Someone's going to figure out a way to hack that [LED indicator]"
@@ -1197,7 +1197,7 @@ key_journalists:
           technique_universality_noted: true
           note: >
             The I-XRAY doxing technique (facial recognition + public database lookup via
-            livestream) works with ANY camera device — laptop webcams, phone cameras, any
+            livestream) works with ANY camera device - laptop webcams, phone cameras, any
             smart glasses. The Harvard students chose Meta glasses for their demo, and Song's
             headline names Meta specifically. A journalist applying equal standards might note
             the technique's universality or investigate equivalent risks with Apple/Google
@@ -1216,7 +1216,7 @@ key_journalists:
             description: >
               First privacy-adversarial piece (doxing story, Oct 2024) specifically about
               Meta. Product reviews remain positive. Privacy mode activated only for Meta.
-              Apple Vision Pro launched same year — no privacy pieces about its 12 cameras.
+              Apple Vision Pro launched same year - no privacy pieces about its 12 cameras.
           - stage: "dual_mode_established"
             period: "2025-2026"
             primary_entity: "meta"
@@ -1229,7 +1229,7 @@ key_journalists:
           - factor: "market_share"
             description: >
               Meta has 7M+ glasses sold; Apple/Google have near-zero consumer glasses.
-              Privacy scrutiny scales with deployed units — more devices = more incidents.
+              Privacy scrutiny scales with deployed units - more devices = more incidents.
           - factor: "form_factor"
             description: >
               Meta glasses look like normal glasses (covert recording potential). Vision Pro
@@ -1237,7 +1237,7 @@ key_journalists:
               privacy concerns.
           - factor: "doxing_news_peg"
             description: >
-              I-XRAY demo used Meta glasses specifically — Song reported on the demo as
+              I-XRAY demo used Meta glasses specifically - Song reported on the demo as
               presented, not by choosing to investigate Meta. However, editorial choice to
               cover the demo (vs. noting technique universality) is still a framing decision.
           - factor: "instagram_livestream"
@@ -1249,7 +1249,7 @@ key_journalists:
             description: >
               The Verge may assign privacy investigation pieces to Song because she's the
               primary Meta wearables reviewer. This would be editorial assignment, not
-              personal bias — but the effect on coverage asymmetry is the same.
+              personal bias - but the effect on coverage asymmetry is the same.
           - factor: "chronological_exposure"
             description: >
               Meta glasses launched years before Apple/Google consumer glasses. More time
@@ -1257,7 +1257,7 @@ key_journalists:
               test whether Song applies equal scrutiny.
         subtlety_note: >
           This bifurcation is MORE SUBTLE and MORE EFFECTIVE than WIRED's lane assignment
-          asymmetry. At WIRED, different journalists cover different entities — observable
+          asymmetry. At WIRED, different journalists cover different entities - observable
           and analyzable. With Song, the SAME journalist appears balanced (because her product
           reviews ARE balanced) while selectively activating privacy-adversarial mode only
           for one entity. A reader sees Song praise Meta glasses AND raise privacy concerns
@@ -1275,14 +1275,14 @@ key_journalists:
         investigators. When The Verge is adversarial to Meta, it's through Alex Heath
         (business investigations) and editorial commentary (Nilay Patel), not through
         Song's product reviews. Song's coverage is arguably the strongest evidence that
-        individual journalist framing CAN be fair across entities — and that The Verge's
+        individual journalist framing CAN be fair across entities - and that The Verge's
         institutional adversarial tone toward Meta emerges from editorial assignment and
         executive commentary, not from its dedicated wearables reviewer.
       samsung_health_data_investigation_gap:
         mechanism_ref: "#90"
         finding: >
           Victoria Song published ZERO coverage of Samsung Health's July 2026 AI training
-          data coercion — despite being The Verge's primary reviewer of Samsung wearable
+          data coercion - despite being The Verge's primary reviewer of Samsung wearable
           health products (Galaxy Watch, Galaxy Ring). Samsung Health forced users to consent
           to health data use for AI training (including human review) or face data deletion
           and cloud sync termination. Data categories included menstrual cycles, medication
@@ -1349,7 +1349,7 @@ key_journalists:
             - "Samsung Galaxy Watch Ultra"
             - "Samsung Galaxy Ring"
             - "Samsung Galaxy Watch 9 (Unpacked Jul 2026)"
-          newsletter: "Optimizer — weekly Verge newsletter covering wearable health tech"
+          newsletter: "Optimizer - weekly Verge newsletter covering wearable health tech"
           note: >
             Victoria Song is The Verge's primary Samsung wearables health reviewer. She
             tested Galaxy Watch 7 health metrics, Galaxy Ring sleep/cycle tracking, and
@@ -1385,7 +1385,7 @@ key_journalists:
     known_patterns: >
       Senior Editor. Long-tenured Microsoft beat reporter. Based in UK. Covers Windows, Xbox, Microsoft
       AI (Copilot), and gaming. One of the most-cited sources for Microsoft news. His Microsoft focus
-      creates a natural editorial counterweight — Microsoft (OpenAI's partner) vs Meta in AI.
+      creates a natural editorial counterweight - Microsoft (OpenAI's partner) vs Meta in AI.
 
   - name: "Nilay Patel"
     beat: "editor-in-chief, Decoder host, big tech CEOs, AI policy, product reviews"
@@ -1395,7 +1395,7 @@ key_journalists:
       IP law before tech journalism). His editorial decisions set the tone for The Verge's coverage
       across all beats.
 
-      KEY CROSS-ENTITY PATTERN — EIC DELEGATION PARADOX (Mechanism #6):
+      KEY CROSS-ENTITY PATTERN - EIC DELEGATION PARADOX (Mechanism #6):
       Patel personally interviews competitor CEOs (Google/Sundar Pichai annually at I/O, Microsoft
       AI chief Mustafa Suleyman, Bluesky CEO, Uber CEO) with strategic "big ideas" framing. But he
       DELEGATES Meta CEO interviews to deputy editor Alex Heath, who applies adversarial-investigative
@@ -1428,7 +1428,7 @@ key_journalists:
             format: "Decoder episode (Patel host)"
             tone: -0.4
             framing: >
-              Covers BOTH Meta AND Google — one of the rare cross-entity equal-treatment
+              Covers BOTH Meta AND Google - one of the rare cross-entity equal-treatment
               moments. Subtitle: "Why nuclear options like age limits and repealing Section
               230 won't make social media safer." Adversarial toward the industry broadly,
               not exclusively Meta.
@@ -1436,7 +1436,7 @@ key_journalists:
             format: "Written review (Patel byline)"
             tone: -0.1
             framing: >
-              Patel personally reviews Apple Vision Pro — demonstrates he does direct
+              Patel personally reviews Apple Vision Pro - demonstrates he does direct
               product coverage of competitors. Praised hardware as "astounding" but
               criticized isolation and lack of purpose.
         source_urls:
@@ -1462,7 +1462,7 @@ key_journalists:
             tone: -0.3
             framing: >
               Patel called Google "secretly ruthless" and "an utterly ruthless advertising
-              company." Demonstrates willingness to be adversarial toward Google — but
+              company." Demonstrates willingness to be adversarial toward Google - but
               through media interviews, not sustained investigative campaigns. This is
               editorial commentary, not investigative reporting.
         source_urls:
@@ -1479,7 +1479,7 @@ key_journalists:
             framing: >
               Patel hosted 62-minute deep-dive with Ronan Farrow about New Yorker exposé
               on Sam Altman. Called it an "incredible deep-dive feature." Adversarial toward
-              Altman personally and OpenAI institutionally — but outsourced to Farrow's
+              Altman personally and OpenAI institutionally - but outsourced to Farrow's
               New Yorker reporting, not The Verge's own investigation.
           - title: "The AI industry's existential race for profits"
             date: "2026-04-09"
@@ -1519,7 +1519,7 @@ key_journalists:
             format: "Written review + YouTube video (Patel byline/presenter)"
             tone: -0.1
             framing: >
-              Patel PERSONALLY reviewed Apple Vision Pro — a $3,499 headset with 12
+              Patel PERSONALLY reviewed Apple Vision Pro - a $3,499 headset with 12
               outward-facing cameras, 5 sensors, and 6 microphones. Called it "astounding"
               but criticized isolation. ZERO surveillance or privacy framing despite the
               sensor payload being 3x Meta Ray-Ban's. This is the sensor-count paradox
@@ -1537,14 +1537,14 @@ key_journalists:
           The EIC delegation pattern amplifies the gap: Meta gets investigative
           framing (via Heath), competitors get strategic framing (via Patel directly).
       cross_entity_verdict: >
-        Patel is NOT personally unfair — he has shown genuine adversarial capacity
+        Patel is NOT personally unfair - he has shown genuine adversarial capacity
         toward ALL entities (Google "secretly ruthless," OpenAI "unconstrained,"
         child safety critique naming Meta AND Google). The asymmetry emerges from
         the DELEGATION STRUCTURE: by personally interviewing competitor CEOs with
         his "big ideas" strategic lens and delegating Meta CEO interviews to a
         deputy who applies investigative-adversarial framing, Patel creates
         differential editorial temperature at the EIC level. This is mechanism #6
-        in the taxonomy — distinct from Heath's Access Paradox (#5) because it
+        in the taxonomy - distinct from Heath's Access Paradox (#5) because it
         operates at the level of which CEO gets the EDITOR-IN-CHIEF's personal
         attention vs which gets the deputy's. Combined with the publisher content
         value context (Meta dismisses publisher value, OpenAI/Google/Microsoft pay),
@@ -1563,23 +1563,23 @@ key_journalists:
     known_patterns: >
       Senior Policy Reporter. Previously at CNBC. Covers tech antitrust, FTC/DOJ actions, and
       regulatory developments. Her antitrust reporting directly intersects with PMC's two Google
-      lawsuits — any coverage of Google antitrust occurs in context of her employer suing Google.
+      lawsuits - any coverage of Google antitrust occurs in context of her employer suing Google.
 
   - name: "Hayden Field"
     beat: "AI, artificial intelligence"
     known_patterns: >
       Senior AI Reporter. Joined The Verge from CNBC on June 2, 2025. Covers AI industry
       developments, AI policy, and AI products. Her AI reporting is the most directly affected
-      by The Verge's OpenAI licensing deal — every AI industry comparison (OpenAI vs Meta AI,
+      by The Verge's OpenAI licensing deal - every AI industry comparison (OpenAI vs Meta AI,
       Gemini vs Llama) occurs in context of financial relationships with one competitor but
       not others.
 
       CAREER PATH (2 publications, 5+ years):
-      1. CNBC (~2021–2025) — AI/enterprise reporter, built AI beat covering OpenAI, Anthropic
-      2. The Verge (Jun 2, 2025–present) — Senior AI Reporter, PMC/PMX ownership
+      1. CNBC (~2021–2025) - AI/enterprise reporter, built AI beat covering OpenAI, Anthropic
+      2. The Verge (Jun 2, 2025–present) - Senior AI Reporter, PMC/PMX ownership
 
       HIRING ANNOUNCEMENT (TalkingBizNews): Field would "lead coverage of the biggest names
-      in AI — including OpenAI, Anthropic, Google, Meta, Apple, and others." Six companies
+      in AI - including OpenAI, Anthropic, Google, Meta, Apple, and others." Six companies
       listed equally in the stated mandate.
 
     cross_entity_coverage_analysis:
@@ -1588,7 +1588,7 @@ key_journalists:
       description: >
         Hayden Field's AI beat at The Verge is functionally an OpenAI/Anthropic beat.
         In 14 months (Jun 2025 – Aug 2026), she produced ~15+ articles on OpenAI/Anthropic
-        vs ~2-3 on Meta AI — a volume ratio of roughly 5-7:1. Framing diverges systematically:
+        vs ~2-3 on Meta AI - a volume ratio of roughly 5-7:1. Framing diverges systematically:
         OpenAI/Anthropic receive aspiration/underdog/business-milestone framing ("betting its
         future," "officially filed to go public," "solidarity"), while Meta AI receives
         follower/deficit framing ("reentering the AI race," researchers "rejected Meta's
@@ -1602,46 +1602,46 @@ key_journalists:
         coverage_volume: "~15+ standalone articles and Decoder podcast appearances"
         framing_direction: "aspiration / underdog / business milestone / regulatory drama"
         framing_indicators:
-          - "'betting its future' (Anthropic agents — aspiration vocabulary)"
-          - "'officially filed to go public' (Anthropic — business milestone)"
+          - "'betting its future' (Anthropic agents - aspiration vocabulary)"
+          - "'officially filed to go public' (Anthropic - business milestone)"
           - "'employees across OpenAI and Google support Anthropic' (solidarity/hero framing)"
           - "'fight over Claude Mythos 5' (Anthropic as victim of government overreach)"
           - "'got hit by export rules nobody understands' (sympathetic framing)"
-          - "'$122B at $850B valuation' (OpenAI — financial milestone, neutral)"
-          - "'Who decides when AI is too dangerous?' (Decoder, Anthropic focus — existential framing)"
+          - "'$122B at $850B valuation' (OpenAI - financial milestone, neutral)"
+          - "'Who decides when AI is too dangerous?' (Decoder, Anthropic focus - existential framing)"
         examples:
           - title: "Anthropic has officially filed to go public"
             date: "2026-06-01"
-            framing: "Business milestone — IPO filing as maturation event"
+            framing: "Business milestone - IPO filing as maturation event"
             source_url: "https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/"
           - title: "Employees across OpenAI and Google support Anthropic's lawsuit against the Pentagon"
             date: "2026-03-09"
-            framing: "Solidarity narrative — Anthropic as hero fighting government overreach"
+            framing: "Solidarity narrative - Anthropic as hero fighting government overreach"
             source_url: "https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/"
           - title: "Anthropic cuts off Fable 5 and Mythos 5 access following government order"
-            framing: "Regulatory drama — Anthropic as compliant victim"
+            framing: "Regulatory drama - Anthropic as compliant victim"
           - title: "Anthropic got hit by export rules nobody understands"
-            framing: "Sympathetic — policy complexity, not corporate misconduct"
+            framing: "Sympathetic - policy complexity, not corporate misconduct"
           - title: "The vibes are off at OpenAI"
-            framing: "Insider critical analysis — governance concerns"
+            framing: "Insider critical analysis - governance concerns"
           - title: "Why OpenAI killed Sora"
-            framing: "Strategic analysis — editorial choice, not ethical failure"
+            framing: "Strategic analysis - editorial choice, not ethical failure"
           - title: "OpenAI just bought TBPN"
             framing: "Neutral business news"
           - title: "OpenAI raises another $122B at $850B valuation"
-            framing: "Financial milestone — neutral business reporting"
+            framing: "Financial milestone - neutral business reporting"
           - title: "Decoder: Who decides when AI is too dangerous?"
-            framing: "Anthropic Fable 5 focus — existential/philosophical framing"
+            framing: "Anthropic Fable 5 focus - existential/philosophical framing"
             source_url: "https://www.iheart.com/podcast/996-decoder-with-nilay-patel-28648204/episode/who-decides-when-ai-is-too-337036737/"
           - title: "Decoder: Why Anthropic is betting its future on AI coding agents"
-            framing: "Aspiration — 'betting its future' is forward-looking, confident vocabulary"
+            framing: "Aspiration - 'betting its future' is forward-looking, confident vocabulary"
           - title: "Decoder: The AI industry's existential race for profits"
-            framing: "Anthropic + OpenAI focus — industry-level analysis"
+            framing: "Anthropic + OpenAI focus - industry-level analysis"
           - title: "Decoder: The AI industry is at a major crossroads"
-            framing: "OpenAI DevDay focus — strategic inflection point"
+            framing: "OpenAI DevDay focus - strategic inflection point"
           - title: "Anthropic received a $2.5B revolving credit line"
             date: "2025-05"
-            framing: "Financial milestone (CNBC era — professional network carried over)"
+            framing: "Financial milestone (CNBC era - professional network carried over)"
             source_url: "https://www.techmeme.com/250516/p19"
 
       meta_coverage:
@@ -1649,9 +1649,9 @@ key_journalists:
         coverage_volume: "~2-3 standalone articles plus brief mentions in AI feed"
         framing_direction: "follower / deficit / reentry framing"
         framing_indicators:
-          - "'reentering' implies Meta LEFT the race — follower framing"
-          - "'rejected Meta's offers to stay at jobs that align with their values' — implies Meta doesn't align with researcher values"
-          - "Muse Glimmer brief mention in AI feed — not a standalone article"
+          - "'reentering' implies Meta LEFT the race - follower framing"
+          - "'rejected Meta's offers to stay at jobs that align with their values' - implies Meta doesn't align with researcher values"
+          - "Muse Glimmer brief mention in AI feed - not a standalone article"
         examples:
           - title: "Meta is reentering the AI race with a new model called Muse Spark"
             date: "2026-04-08"
@@ -1663,7 +1663,7 @@ key_journalists:
             source_url: "https://www.techmeme.com/250710/p29"
           - title: "Muse Glimmer AI feed mention"
             date: "2026-08"
-            framing: "Brief mention in aggregate AI coverage — not elevated to standalone article"
+            framing: "Brief mention in aggregate AI coverage - not elevated to standalone article"
         notable_absences:
           - "No Field article on Llama 4 launch (major open-weight release)"
           - "No Field article on Meta's open-weight AI policy (defining industry stance)"
@@ -1672,7 +1672,7 @@ key_journalists:
 
       mandate_vs_reality_gap:
         hiring_description: >
-          TalkingBizNews June 2025: Field would "lead coverage of the biggest names in AI —
+          TalkingBizNews June 2025: Field would "lead coverage of the biggest names in AI -
           including OpenAI, Anthropic, Google, Meta, Apple, and others." Six companies listed
           equally.
         actual_portfolio: >
@@ -1696,7 +1696,7 @@ key_journalists:
           - journalist: "Cade Metz"
             publication: "New York Times"
             pattern: "AI reporter covers OpenAI/Anthropic extensively, near-zero Meta AI articles"
-            counter_example: "Victoria Song at The Verge — wearables reporter covers Meta balanced-to-positive, but covers products not AI research"
+            counter_example: "Victoria Song at The Verge - wearables reporter covers Meta balanced-to-positive, but covers products not AI research"
           - journalist: "Will Knight"
             publication: "WIRED (Condé Nast)"
             pattern: "AI reporter covers OpenAI/Anthropic extensively, zero Meta AI articles"
@@ -1731,7 +1731,7 @@ key_journalists:
     known_patterns: >
       Investigations Editor. Known for deep investigative features on labor conditions, AI in the
       workplace, and tech industry practices. Won awards for Amazon warehouse reporting. His
-      investigative work is editorially independent in tone — test case for whether PMC ownership
+      investigative work is editorially independent in tone - test case for whether PMC ownership
       constrains investigative direction.
 
 # ===================================================================
@@ -1760,7 +1760,7 @@ known_conflicts:
       antitrust damages. Google competes with Meta in search, advertising, AI, and wearables. The
       Verge disclosed the lawsuit on the Vergecast ("Disclosure is our brand") but the adversarial
       financial relationship with Google creates complex incentive structures. Coverage of Google vs
-      Meta dynamics — including smart glasses competition (Android XR vs Meta Ray-Ban) — occurs in the
+      Meta dynamics - including smart glasses competition (Android XR vs Meta Ray-Ban) - occurs in the
       context of an active lawsuit against Google. This could cut either direction: adversarial framing
       of Google (litigation opponent) or sympathetic framing of Google as a counterbalance to Meta.
     severity: 3
@@ -1774,7 +1774,7 @@ known_conflicts:
       (2016) to pro-Trump after the medal. Insiders at multiple PMC brands report a "quiet realignment"
       toward more conservative editorial positioning under PMC ownership. At SXSW (PMC-owned), staff
       were reportedly directed to bring more conservative voices. This political dimension is relevant
-      to coverage of tech regulation, Section 230, and platform governance — all areas The Verge covers
+      to coverage of tech regulation, Section 230, and platform governance - all areas The Verge covers
       extensively. If PMC's political alignment influences editorial direction (as reported at other
       PMC properties), it could modulate The Verge's historically strong editorial voice on regulation.
     severity: 3
@@ -1790,7 +1790,7 @@ known_conflicts:
       and the podcast network from The Verge's new PMX home. The Verge's editorial independence under
       PMC is untested. PMC's track record at other acquisitions (Rolling Stone, Variety, Billboard,
       SXSW) shows a pattern of "editorial independence shrinking, advertiser influence growing"
-      (per Medium/Rosenbaum analysis). This is a live variable — The Verge under PMC may editorially
+      (per Medium/Rosenbaum analysis). This is a live variable - The Verge under PMC may editorially
       diverge from The Verge under Vox Media.
     severity: 4
     evidence: "PMC acquisition announcement June 2026, Vox Media press releases"
@@ -1817,14 +1817,14 @@ known_conflicts:
       embeddings (smart 404 pages), content tagging/taxonomy (21,000+ tags at Rolling Stone alone),
       text expansion/contraction, image tagging/OCR, and content recommendations.
 
-      This is PMC's SECOND distinct financial relationship with the OpenAI ecosystem — separate from
+      This is PMC's SECOND distinct financial relationship with the OpenAI ecosystem - separate from
       the Vox Media/OpenAI content licensing deal (May 2024). Combined, PMC has money flowing in
       BOTH directions: receiving licensing fees FROM OpenAI and paying FOR OpenAI services via Azure.
       No other tracked publication has this bilateral financial relationship.
 
       Microsoft competes with Meta in AI (Copilot vs Meta AI), cloud, and productivity. As OpenAI's
       largest investor/partner, Microsoft's commercial success is structurally linked to OpenAI's.
-      PMC's editorial operations — including The Verge's — are powered by the same AI stack that
+      PMC's editorial operations - including The Verge's - are powered by the same AI stack that
       competes with Meta AI. This creates institutional familiarity, dependency, and financial
       alignment with the OpenAI/Microsoft ecosystem that extends beyond passive licensing revenue
       into active operational integration.
@@ -1848,7 +1848,7 @@ known_conflicts:
       Eldridge seed-funded A24 in 2012 and remains a minority stakeholder. A24 explicitly courted
       Thrive Capital as an investor for its AI connections (New Yorker, 2025). Thrive Capital is
       one of OpenAI's largest backers. This creates an indirect but real financial interest in
-      OpenAI ecosystem success — compounding The Verge's existing direct OpenAI content licensing
+      OpenAI ecosystem success - compounding The Verge's existing direct OpenAI content licensing
       deal (Vox Media/OpenAI, May 2024). Two separate financial pathways from The Verge's ownership
       to OpenAI (Meta's primary AI competitor): (a) direct licensing revenue, (b) JV partner's
       portfolio company's strategic investor relationship.
@@ -1870,7 +1870,7 @@ known_conflicts:
 
       4. CHELSEA FC × INFINITE ATHLETE × CLEARLAKE × SILVER LAKE:
       Chelsea's front-of-shirt sponsor Infinite Athlete (£40M deal) has investors including
-      Clearlake Capital (Chelsea co-owner) and Eldridge (Boehly). Silver Lake also invested —
+      Clearlake Capital (Chelsea co-owner) and Eldridge (Boehly). Silver Lake also invested -
       Silver Lake holds stakes in City Football Group AND Fanatics. Clearlake and Eldridge are
       also major Fanatics investors. The Premier League scrutinized these cross-ownership ties
       before approving the deal. This creates a tightly interconnected sports-tech-finance nexus
@@ -1879,7 +1879,7 @@ known_conflicts:
       DISCLOSURE STATUS: None of these Eldridge cross-holdings have been disclosed in any Verge
       article as of July 2026. The Verge discloses the Google lawsuit ("Disclosure is our brand")
       but not the broader Eldridge/Boehly financial web. This is significant because Eldridge is
-      not a passive investor — it is PMC's active JV partner, with shared economic interests in
+      not a passive investor - it is PMC's active JV partner, with shared economic interests in
       SXSW, Dick Clark Productions, and the broader entertainment events business.
     severity: 4
     evidence: >
@@ -1898,7 +1898,7 @@ known_conflicts:
       PMC's $200M+ equity investor SRMG (Saudi Research and Media Group) is majority-owned by
       the Saudi government via the chain: PIF → Saudi National Bank (SNB) → NCB Capital →
       Al Ahli Capital Fund 13 → SRMG. The State Media Monitor classifies SRMG as "Captured
-      Public/State-Managed (CaPu)" — the highest state influence category. SRMG's board includes
+      Public/State-Managed (CaPu)" - the highest state influence category. SRMG's board includes
       Saudi Arabia's sitting Minister of Tourism (Ahmed bin Aqeel Al-Khatib), and its former head
       Prince Badr bin Abdullah is an MBS confidante who became Saudi Arabia's first Culture Minister.
 
@@ -1906,17 +1906,17 @@ known_conflicts:
 
       1. EDITORIAL INDEPENDENCE: A Saudi sovereign-linked entity holds $200M+ equity in PMC
          with no publicly disclosed editorial guardrails (unlike Bloomberg's SRMG JV, which has
-         explicit editorial termination rights). PMC was deliberately opaque about the investor —
+         explicit editorial termination rights). PMC was deliberately opaque about the investor -
          its own publications misidentified SRMG until TheWrap forced disclosure (Jul 2019).
 
       2. KHASHOGGI NON-DIVESTITURE: After the MBS-ordered murder of WaPo journalist Jamal
          Khashoggi (Oct 2018), Endeavor returned its $400M Saudi PIF investment. PMC did NOT
          return its $200M+ SRMG investment. The Verge covers press freedom and journalist
-         safety — doing so while funded by the Saudi government is a profound editorial tension.
+         safety - doing so while funded by the Saudi government is a profound editorial tension.
 
       3. PIF ANTI-META PORTFOLIO ALIGNMENT: PIF sold ALL its Meta shares (667,996 Class A,
          ~$380M+) in Q2 2025 while retaining its indirect PMC investment via SRMG. PIF
-         simultaneously added positions in Apple, Arm Holdings (~400M share increase), and ASML —
+         simultaneously added positions in Apple, Arm Holdings (~400M share increase), and ASML -
          Meta's semiconductor and hardware competitors. The Verge's ownership chain includes a
          sovereign investor that actively divested from Meta while maintaining its media investment.
 
@@ -1941,7 +1941,7 @@ known_conflicts:
       State Media Monitor: SRMG classified as Captured Public/State-Managed (CaPu).
       BroadcastPro ME (May 2025): SRMG Media Solutions × PMC advertising partnership.
       Gulf Business (Mar 2018): PIF/SRMG $200M+ investment with $25M MENA JV.
-      PitchBook (Jul 2026): SRMG financials — $1.6B EV, -$54M net income LTM (Q1 2026 partial recovery).
+      PitchBook (Jul 2026): SRMG financials - $1.6B EV, -$54M net income LTM (Q1 2026 partial recovery).
       Reuters (Aug 2025): PIF sold all Meta shares in Q2 2025.
       Markets Group (Q2 2025): PIF US portfolio $23.8B, 57 positions, no Meta.
       WSJ (2018): SRMG-Vice JV talks, "soft power" characterization.
@@ -1956,7 +1956,7 @@ known_conflicts:
 
 
 # ===================================================================
-# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# COMPETITOR RELATIONSHIPS - financial ties to Meta's competitors
 # Added 2026-08-04 for cross-entity coverage asymmetry analysis
 # NOTE: Vox Media (original Verge parent) signed OpenAI deal May 2024.
 # PMC acquired Vox Media in 2026. PMC itself sued Google Sep 2025.
@@ -1974,7 +1974,7 @@ competitor_relationships:
     financial_tie: "none"
     estimated_value: "$0"
     direction: "none"
-    description: "No AI licensing deal. SRMG/PIF $200M investment in PMC parent creates structural conflict — PIF divested all META shares."
+    description: "No AI licensing deal. SRMG/PIF $200M investment in PMC parent creates structural conflict - PIF divested all META shares."
     coverage_prediction: "adversarial"
   anthropic:
     financial_tie: "none"
@@ -1996,13 +1996,13 @@ competitor_relationships:
     coverage_prediction: "softer"
   google:
     financial_tie: "adversarial_litigation"
-    estimated_value: "$0 (dual lawsuits — AI Overviews + adtech)"
+    estimated_value: "$0 (dual lawsuits - AI Overviews + adtech)"
     direction: "adversarial"
     description: >
       PMC (The Verge's current parent) has TWO active Google lawsuits:
-      (1) AI Overviews: PMC v. Google (D.D.C., Sep 2025) — first major
+      (1) AI Overviews: PMC v. Google (D.D.C., Sep 2025) - first major
       publisher suit targeting Google's AI search summaries.
-      (2) Adtech: PMC/SheMedia v. Google (SDNY, Jan 2026) — alleges
+      (2) Adtech: PMC/SheMedia v. Google (SDNY, Jan 2026) - alleges
       Google illegally monopolized ad exchange markets.
       Vox Media admitted in its SDNY complaint: "relies on digital advertising
       for well over half of its revenue" and "any revenue generated from
@@ -2044,7 +2044,7 @@ litigation_connections:
   - type: "plaintiff_ai_overviews"
     description: >
       PMC v. Google LLC and Alphabet Inc., No. 1:25-cv-03192-APM (D.D.C.).
-      Filed September 13, 2025 — first major US publisher lawsuit targeting Google AI Overviews.
+      Filed September 13, 2025 - first major US publisher lawsuit targeting Google AI Overviews.
       Six counts under Sherman Act: reciprocal dealing (§1, §2), monopoly leveraging,
       monopolization, attempted monopolization, and common-law unjust enrichment.
       Google filed motion to dismiss January 13, 2026, calling suit "legally defective in every way."
@@ -2077,7 +2077,7 @@ litigation_connections:
 
   - type: "related_google_doj_search_antitrust"
     description: >
-      US v. Google (D.D.C.) — DOJ search monopoly case. Judge Amit P. Mehta (SAME JUDGE as PMC
+      US v. Google (D.D.C.) - DOJ search monopoly case. Judge Amit P. Mehta (SAME JUDGE as PMC
       AI Overviews case, No. 1:25-cv-03192-APM) issued remedies ruling September 2, 2025.
       Key holdings:
       - No Chrome divestiture, no Android divestiture (DOJ's most aggressive asks rejected)
@@ -2106,16 +2106,16 @@ litigation_connections:
 
   - type: "related_munich_ai_overviews_liability"
     description: >
-      Munich Regional Court (Germany) — landmark ruling (~June 13, 2026) finding Google DIRECTLY
+      Munich Regional Court (Germany) - landmark ruling (~June 13, 2026) finding Google DIRECTLY
       LIABLE for defamatory content in AI Overviews. Two German publishers sued after AI Overviews
       falsely linked them to scams and "dubious business practices."
 
       KEY LEGAL HOLDINGS:
-      - AI Overviews generate "independent, new, and substantive statements" — NOT mere indexing
+      - AI Overviews generate "independent, new, and substantive statements" - NOT mere indexing
       - Google classified as DIRECT infringer (not indirect), overturning prior German precedent
         that search engines were only indirect infringers for autocomplete/results
       - AI Overviews treated as Google's OWN content with full publisher liability
-      - "Only Google can adjust the models and the logic" — sole control = sole responsibility
+      - "Only Google can adjust the models and the logic" - sole control = sole responsibility
       - Google's disclaimer ("double-check AI results") insufficient to avoid liability
       - Google failed to respond to cease-and-desist (weighed against them)
       - Preliminary injunction issued; Google announced appeal
@@ -2145,7 +2145,7 @@ litigation_connections:
 
   - type: "related_eu_google_android_fine_confirmed"
     description: >
-      EU Court of Justice (CJEU, Luxembourg) — July 2, 2026. Google/Alphabet lost final appeal
+      EU Court of Justice (CJEU, Luxembourg) - July 2, 2026. Google/Alphabet lost final appeal
       of €4.1B EU antitrust fine (original €4.34B, reduced by General Court in 2022) for abusing
       Android market dominance. Court confirmed Google illegally forced phone manufacturers to
       pre-install Search, Chrome, and Play Store. No further appeal possible.
@@ -2154,11 +2154,11 @@ litigation_connections:
       back in 2018.
 
       SAME WEEK: Swedish court ordered Google to pay ~$1.5B to PriceRunner (Klarna) for favoring
-      its own shopping service — largest Swedish competition case award ever (14.3B SEK).
+      its own shopping service - largest Swedish competition case award ever (14.3B SEK).
 
       SIGNIFICANCE: Accumulating Google antitrust losses globally strengthen PMC's litigation
       position by establishing judicial pattern of Google market abuse. Android ruling confirms
-      Google's pattern of tying products — directly relevant to PMC's argument that Google ties
+      Google's pattern of tying products - directly relevant to PMC's argument that Google ties
       AI Overviews to search indexing.
     case_reference: "Google/Alphabet v. European Commission, CJEU (Jul 2, 2026)"
     source_urls:
@@ -2198,7 +2198,7 @@ litigation_connections:
       
       Each ruling chips away at Google's core defense in PMC v. Google (D.D.C., 1:25-cv-03192-APM):
       that AI Overviews are part of search and content is non-rivalrous. The ZAK ruling specifically
-      addresses Google's "media intermediary" status — relevant to PMC's argument that Google ties
+      addresses Google's "media intermediary" status - relevant to PMC's argument that Google ties
       search indexing to AI content extraction. While German regulatory classifications are
       non-binding in US federal court, the pattern of European authorities independently reaching
       the same conclusion (AI Overviews = provider content, not indexing) creates persuasive
@@ -2212,7 +2212,7 @@ litigation_connections:
 
   - type: "related_ecj_publisher_rights_streamz"
     description: >
-      ECJ case (Streamz et al. v. Belgium) — oral hearing July 6-7, 2026. Google, Meta, Spotify,
+      ECJ case (Streamz et al. v. Belgium) - oral hearing July 6-7, 2026. Google, Meta, Spotify,
       and Sony challenging Belgium's implementation of Article 15 DSM Directive (press publishers'
       rights). Denmark intervened in favor of Belgium/publishers, urging ECJ to "clearly define
       the scope of press publishers' rights" and tech giants' obligation to pay for content.
@@ -2220,7 +2220,7 @@ litigation_connections:
       paying for it." Denmark also participates in separate Google AI training copyright case.
 
       SIGNIFICANCE: If ECJ rules publishers have strong rights under DSM Directive, it creates
-      EU-wide legal precedent that content has monetary value — supportive of PMC's US argument
+      EU-wide legal precedent that content has monetary value - supportive of PMC's US argument
       that Google should pay publishers for AI Overview use. A ruling against publishers could
       weaken the broader publisher rights framework PMC relies on.
     case_reference: "Streamz et al. v. Belgium, ECJ (oral hearing Jul 6-7, 2026)"
@@ -2228,18 +2228,18 @@ litigation_connections:
       - "https://www.reuters.com/denmark-eu-publishers-rights-streamz/"
 
 # ===================================================================
-# LEGAL COUNSEL CROSS-REPRESENTATION — new section, 2026-07-10
+# LEGAL COUNSEL CROSS-REPRESENTATION - new section, 2026-07-10
 # ===================================================================
 legal_counsel_cross_representation:
   firm: "Susman Godfrey LLP"
   description: >
     CRITICAL FINDING: PMC's lead counsel in PMC v. Google (Susman Godfrey, with partners Ian
-    Crosby, Davida Brook, and Geng Chen) is the SAME law firm — and in some cases the SAME
-    individual attorneys — representing The New York Times in NYT v. OpenAI/Microsoft (S.D.N.Y.).
+    Crosby, Davida Brook, and Geng Chen) is the SAME law firm - and in some cases the SAME
+    individual attorneys - representing The New York Times in NYT v. OpenAI/Microsoft (S.D.N.Y.).
     
     Susman Godfrey's confirmed publisher representations (as of Jul 2026):
-    - PMC v. Google (D.D.C.): AI Overviews antitrust — The Verge's parent
-    - NYT v. OpenAI/Microsoft (S.D.N.Y., MDL 25-md-03143): copyright — NYT/Daily News/etc
+    - PMC v. Google (D.D.C.): AI Overviews antitrust - The Verge's parent
+    - NYT v. OpenAI/Microsoft (S.D.N.Y., MDL 25-md-03143): copyright - NYT/Daily News/etc
     - Encyclopaedia Britannica v. Perplexity AI
     - Bartz class action (book authors v. OpenAI)
     
@@ -2278,25 +2278,25 @@ legal_counsel_cross_representation:
     does not represent Apple, its clients' interests are further aligned by Apple's
     lawsuit weakening OpenAI's legal posture ahead of IPO.
 
-    OPENAI MDL SPOLIATION CRISIS (Jul 2026 — MAJOR DEVELOPMENT):
+    OPENAI MDL SPOLIATION CRISIS (Jul 2026 - MAJOR DEVELOPMENT):
     Bloomberg Law reports Judge Ona T. Wang ordered OpenAI to turn over most employee
     Slack messages and emails discussing the deletion of a dataset containing pirated books
     (LibGen), mostly rejecting OpenAI's attorney-client privilege claims. Key developments:
 
     (1) PRIVILEGE PIERCED: Plaintiffs secured access to internal OpenAI communications about
         the LibGen dataset deletion. OpenAI had claimed "non-use" as the reason for deletion,
-        then walked that back — courts treating this as selective waiver of privilege.
+        then walked that back - courts treating this as selective waiver of privilege.
         NYU prof Rebecca Roiphe: "If the attorney conversations confirm [non-use], then why
         are they fighting it so hard?"
 
-    (2) CRIME-FRAUD EXCEPTION: Plaintiffs invoking the crime-fraud exception — arguing OpenAI's
+    (2) CRIME-FRAUD EXCEPTION: Plaintiffs invoking the crime-fraud exception - arguing OpenAI's
         attorney communications may reveal criminal copyright infringement or intentional
         evidence destruction. First known use of crime-fraud exception in a copyright case.
         If attorney-client communications show lawyers advised data destruction anticipating
         litigation, that's spoliation.
 
     (3) SANCTIONS RISK: If spoliation found, court could issue adverse inference instruction
-        — telling juries to assume destroyed evidence was unfavorable to OpenAI and that
+        - telling juries to assume destroyed evidence was unfavorable to OpenAI and that
         OpenAI's conduct was willful. With tens of millions of books at issue, willful
         infringement triggers enhanced damages of up to $150,000 per work (vs $750 baseline).
         Nathan Mammen (Snell & Wilmer): "Juries hear that and it's a very powerful stick."
@@ -2322,7 +2322,7 @@ legal_counsel_cross_representation:
     (b) The Verge's PARENT'S LAW FIRM (Susman Godfrey) is the lead firm prosecuting the MDL
         sanctions motion against OpenAI. The same individual attorneys (Ian Crosby, Davida
         Brook) who represent PMC in its Google lawsuit are building the legal case that could
-        bankrupt OpenAI — The Verge's business partner.
+        bankrupt OpenAI - The Verge's business partner.
 
     (c) The Verge covers this litigation editorially. Any coverage of the MDL occurs in the
         context of: (1) financial dependence on the defendant (OpenAI licensing fees), (2)
@@ -2355,7 +2355,7 @@ legal_counsel_cross_representation:
   last_updated: "2026-07-15"
 
 # ===================================================================
-# AI LICENSING LANDSCAPE — added 2026-07-10 (Type C: Ownership & Funding)
+# AI LICENSING LANDSCAPE - added 2026-07-10 (Type C: Ownership & Funding)
 # ===================================================================
 ai_licensing_landscape:
   snowflake_cortex_knowledge_extensions:
@@ -2367,11 +2367,11 @@ ai_licensing_landscape:
       Publishers are closing "six-figure deals" with financial institutions. Contracts structured
       as flat-fee licenses or usage-based access, often paid from enterprise customers' existing
       multi-year Snowflake spending commitments (pre-paid credit pools). Snowflake takes NO revenue
-      share — charges on compute/storage only, positioning itself as a no-middleman alternative
+      share - charges on compute/storage only, positioning itself as a no-middleman alternative
       to platforms that skim content fees.
 
       KEY QUOTES:
-      - Ben Srour, Principal Product Manager, Snowflake: "You cannot scrape the data — you can't
+      - Ben Srour, Principal Product Manager, Snowflake: "You cannot scrape the data - you can't
         steal it and use it for model training. So that's why the product has really resonated with
         publishers."
       - Prasanna Krishnan, Head of Collaboration and Horizon, Snowflake: Cortex is how enterprises
@@ -2382,7 +2382,7 @@ ai_licensing_landscape:
       Neither Condé Nast, PMC, nor any of the 5 MediaScope-tracked publications are among the 17
       named Snowflake Cortex publishers. This is notable because:
       (a) The Verge's parent PMC already has AI licensing relationships via the OpenAI/Vox Media
-          content deal (May 2024) and the Azure OpenAI enterprise agreement — both with Meta's
+          content deal (May 2024) and the Azure OpenAI enterprise agreement - both with Meta's
           direct AI competitors. The absence from Snowflake's publisher-neutral marketplace may
           suggest PMC prefers bilateral deals with specific AI companies (OpenAI) over neutral
           marketplace distribution.
@@ -2390,7 +2390,7 @@ ai_licensing_landscape:
           model: it's enterprise-to-publisher RAG access, not model training. Publishers retain
           more control, and the marketplace operator (Snowflake) takes no content fee.
       (c) The growing AI licensing marketplace creates a new revenue landscape where publishers
-          monetize content for enterprise AI without ceding training rights — a dynamic that will
+          monetize content for enterprise AI without ceding training rights - a dynamic that will
           increasingly shape how tech publications cover AI companies. Publications that have
           bilateral deals with specific AI companies (like The Verge/PMC with OpenAI) face a
           different incentive structure than those distributing via neutral marketplaces.
@@ -2414,10 +2414,10 @@ ai_licensing_landscape:
 
       RELEVANCE: (1) The 412M monthly users figure is the most specific PMC reach metric publicly
       available, given PMC is a private company with no SEC filings. (2) The partnership with a
-      Saudi media company is relevant alongside PIF's 2018 $200M investment in PMC — together
+      Saudi media company is relevant alongside PIF's 2018 $200M investment in PMC - together
       they show a pattern of Saudi financial entanglement with PMC's business. (3) The partnership
       specifically enables "co-created custom content and campaigns with PMC's premium publishers,
-      pending editorial approval" — meaning commercial content relationships can influence editorial
+      pending editorial approval" - meaning commercial content relationships can influence editorial
       priorities.
     source_urls:
       - "https://www.broadcastprome.com/news/srmg-media-solutions-and-penske-media-to-elevate-mena-advertisers-on-global-stage/"
@@ -2425,7 +2425,7 @@ ai_licensing_landscape:
 
 
 # ===================================================================
-# CROSS-ENTITY COVERAGE ANALYSIS — OpenAI vs Meta (Aug 5, 2026)
+# CROSS-ENTITY COVERAGE ANALYSIS - OpenAI vs Meta (Aug 5, 2026)
 # Type A Competitor Coverage Deep Dive
 # ===================================================================
 cross_entity_coverage_analysis:
@@ -2490,7 +2490,7 @@ cross_entity_coverage_analysis:
         date: "2025-07-09"
         reporter: "Hayden Field"
         tone: +0.15
-        framing: "Business milestone, design legacy, innovation narrative. io device will have cameras and sensors for always-on AI — functionally identical to Meta glasses — but ZERO pre-emptive privacy alarm."
+        framing: "Business milestone, design legacy, innovation narrative. io device will have cameras and sensors for always-on AI - functionally identical to Meta glasses - but ZERO pre-emptive privacy alarm."
         surveillance_terms: 0
         source_url: "https://www.techmeme.com/250709/p35"
         notes: "io device is a camera-equipped AI wearable competing directly with Meta glasses. Framed as aspiration, not threat."
@@ -2501,11 +2501,11 @@ cross_entity_coverage_analysis:
         framing: "Insider access scoop, product launch timeline, competitive landscape."
         surveillance_terms: 0
         source_url: "https://www.techmeme.com/250724/p36"
-      - title: "The OpenAI Files — governance, leadership, organizational culture"
+      - title: "The OpenAI Files - governance, leadership, organizational culture"
         date: "2026-07"
         reporter: "Hayden Field"
         tone: -0.25
-        framing: "Governance critique — the closest to adversarial OpenAI coverage. But this was published in partnership with outside research groups, not an original Verge investigation campaign."
+        framing: "Governance critique - the closest to adversarial OpenAI coverage. But this was published in partnership with outside research groups, not an original Verge investigation campaign."
         surveillance_terms: 0
         source_url: "https://www.techmeme.com/250618/p22"
         notes: "Even when critical of OpenAI, The Verge frames governance issues as institutional/organizational, not as existential privacy threats to consumers."
@@ -2524,7 +2524,7 @@ cross_entity_coverage_analysis:
       sometimes explicitly pro-Meta. The institutional adversarial tone
       emerges from editorial commentary (Nilay Patel), business reporting
       (Alex Heath), consumer protection (Sean Hollister), and regulatory
-      beat reporters (Wes Davis, Jess Weatherbed) — not from product reviews.
+      beat reporters (Wes Davis, Jess Weatherbed) - not from product reviews.
     adversarial_beat_reporters:
       - name: "Alex Heath"
         beat: "Meta/platforms"
@@ -2533,7 +2533,7 @@ cross_entity_coverage_analysis:
       - name: "Sean Hollister"
         beat: "consumer tech"
         tone: "critical"
-        notes: "Conversation Focus paywall coverage — framed as accessibility attack and consumer harm."
+        notes: "Conversation Focus paywall coverage - framed as accessibility attack and consumer harm."
       - name: "Wes Davis"
         beat: "general tech/AI"
         tone: "critical"
@@ -2555,7 +2555,7 @@ cross_entity_coverage_analysis:
         date: "2026-07"
         reporter: "Sean Hollister"
         tone: -0.50
-        framing: "Consumer harm, disability/accessibility attack. Framed as corporate greed — on-device feature paywalled despite no server cost. 9to5Mac called it 'ridiculous.' Gizmodo amplified."
+        framing: "Consumer harm, disability/accessibility attack. Framed as corporate greed - on-device feature paywalled despite no server cost. 9to5Mac called it 'ridiculous.' Gizmodo amplified."
         surveillance_terms: 0
         source_url: "https://9to5mac.com/2026/07/01/an-accessibility-paywall-on-meta-glasses-could-be-good-news-for-apple-glasses/"
       - title: "Meta CTO says demo technical issues were self-inflicted DDoS"
@@ -2569,7 +2569,7 @@ cross_entity_coverage_analysis:
         date: "2024-07-22"
         reporter: "Wes Davis"
         tone: -0.35
-        framing: "Regulatory pressure framing — Meta as corporate exploiter of user data."
+        framing: "Regulatory pressure framing - Meta as corporate exploiter of user data."
         surveillance_terms: 0
         source_url: "https://www.techmeme.com/240722/p12"
 
@@ -2577,7 +2577,7 @@ cross_entity_coverage_analysis:
     description: |
       The io device paradox is the strongest evidence of cross-entity
       coverage asymmetry at The Verge. OpenAI acquired Jony Ive's io
-      Products for $6.5B to build AI-powered hardware — a wearable device
+      Products for $6.5B to build AI-powered hardware - a wearable device
       with cameras, sensors, and always-on AI capabilities that will
       directly compete with Meta's smart glasses. The Verge (via Hayden
       Field) covered the acquisition with innovation/aspiration framing:
@@ -2612,7 +2612,7 @@ cross_entity_coverage_analysis:
 
   disclosure_pattern: |
     Selective disclosure. The Verge discloses its Google lawsuit on the
-    Vergecast ("Disclosure is our brand") — an adversarial financial
+    Vergecast ("Disclosure is our brand") - an adversarial financial
     relationship. But The Verge does NOT disclose:
     (a) OpenAI content licensing deal (aligned financial relationship)
     (b) Azure OpenAI enterprise agreement (aligned financial relationship)
@@ -2631,10 +2631,10 @@ cross_entity_coverage_analysis:
 
     key_finding: >
       The Verge applies systematically different editorial lanes to Snap's camera-equipped
-      AR glasses and Meta's camera-equipped smart glasses. Snap Specs — which have visible
-      light cameras, infrared cameras, and an LED recording indicator bar — receive pure
-      product-review framing. Meta Ray-Ban glasses — which have a single 12MP camera and
-      an LED recording indicator — receive surveillance/harassment/privacy-alarm framing.
+      AR glasses and Meta's camera-equipped smart glasses. Snap Specs - which have visible
+      light cameras, infrared cameras, and an LED recording indicator bar - receive pure
+      product-review framing. Meta Ray-Ban glasses - which have a single 12MP camera and
+      an LED recording indicator - receive surveillance/harassment/privacy-alarm framing.
       The Verge's coverage of Snap Specs contains ZERO privacy or surveillance language
       despite functionally similar camera capabilities. The hardware is the same category;
       the framing diverges by manufacturer identity.
@@ -2666,11 +2666,11 @@ cross_entity_coverage_analysis:
           byline: "Vergecast panel"
           tone: -0.3
           framing: >
-            Negative product critique of Snap Specs — but focused entirely on aesthetics
+            Negative product critique of Snap Specs - but focused entirely on aesthetics
             and practicality. NOT surveillance or privacy. The Verge is willing to be
             CRITICAL of Snap on product grounds while applying zero surveillance framing
             to camera-equipped glasses. This proves the surveillance lens is not triggered
-            by cameras per se — it is selectively applied to Meta.
+            by cameras per se - it is selectively applied to Meta.
           source_note: "Referenced in existing David Pierce cross-entity profile"
       camera_capabilities_acknowledged:
         visible_light_cameras: true
@@ -2708,7 +2708,7 @@ cross_entity_coverage_analysis:
           tone: -0.2
           framing: >
             Reports Meta's proactive tamper-proof response. Even this POSITIVE Meta
-            action story is framed through the surveillance lens — the story exists
+            action story is framed through the surveillance lens - the story exists
             because of privacy concerns, not product capability enthusiasm.
           source_url: "https://www.techmeme.com/260707/p41"
 
@@ -2716,18 +2716,18 @@ cross_entity_coverage_analysis:
       snap_specs:
         cameras: "visible light + infrared (multiple)"
         recording_indicator: "LED bar (center of glasses)"
-        ai_capabilities: "OpenAI, Gemini integration — can identify objects, translate, analyze environment"
-        surveillance_potential: "HIGH — standalone device with 4hr battery, always-on AI, discreet form factor aspirations"
+        ai_capabilities: "OpenAI, Gemini integration - can identify objects, translate, analyze environment"
+        surveillance_potential: "HIGH - standalone device with 4hr battery, always-on AI, discreet form factor aspirations"
         verge_surveillance_framing: false
       meta_ray_ban:
         cameras: "single 12MP"
         recording_indicator: "LED (temple area)"
-        ai_capabilities: "Meta AI — can identify objects, describe scenes, translate"
-        surveillance_potential: "MODERATE — looks like normal glasses, but single camera, shorter video clips"
+        ai_capabilities: "Meta AI - can identify objects, describe scenes, translate"
+        surveillance_potential: "MODERATE - looks like normal glasses, but single camera, shorter video clips"
         verge_surveillance_framing: true
       paradox: >
         Snap Specs have MORE camera hardware (visible + infrared + hand tracking), MORE
-        AI integration partners (OpenAI + Gemini — both Meta AI competitors), and HIGHER
+        AI integration partners (OpenAI + Gemini - both Meta AI competitors), and HIGHER
         surveillance potential (standalone compute, 4hr battery, multiple processors) than
         Meta Ray-Ban glasses. Yet The Verge applies surveillance/privacy framing ONLY to
         Meta. If camera capability drove the editorial alarm, Snap Specs would receive
@@ -2744,7 +2744,7 @@ cross_entity_coverage_analysis:
         relationship: "Snap integrates Google Gemini into Specs for AI Lenses"
         significance: >
           Google is PMC's litigation adversary (2 lawsuits). But Google's Gemini in Snap
-          Specs is framed as exciting ("agentic coding," developer tools) — not the
+          Specs is framed as exciting ("agentic coding," developer tools) - not the
           adversarial framing Google receives in search/ad tech coverage. The Gemini
           integration receives neutral-to-positive treatment.
       meta_no_pmc_deal:
@@ -2774,7 +2774,7 @@ cross_entity_coverage_analysis:
         THE VERGE: Product coverage (Pierce, Song) covers ALL smart glasses including Meta
         through balanced product lens. BUT institutional coverage (Heath investigations,
         Patel editorial commentary, news reporting) adds an adversarial surveillance layer
-        ONLY for Meta. For Snap, coverage stays in product-review lane exclusively —
+        ONLY for Meta. For Snap, coverage stays in product-review lane exclusively -
         no investigative counterpart examining Snap's camera privacy implications.
 
         Result is functionally equivalent: Snap gets net-positive product coverage,
@@ -2861,7 +2861,7 @@ cross_entity_coverage_analysis:
         note: "ZERO financial ties to any tech company"
       samsung:
         global_ad_spend_billions: 9.7
-        note: "4th-largest global advertiser — significant buyer across all profiled publications"
+        note: "4th-largest global advertiser - significant buyer across all profiled publications"
     source_urls:
       - "https://www.techmeme.com/260722/h1525"
       - "https://www.techmeme.com/260722/h1610"
@@ -2920,7 +2920,7 @@ cross_entity_coverage_analysis:
   last_updated: "2026-08-17"
 
   # ===================================================================
-  # MECHANISM #149: PMC DOUBLE FINANCIAL INCENTIVE — GOOGLE AD REVENUE +
+  # MECHANISM #149: PMC DOUBLE FINANCIAL INCENTIVE - GOOGLE AD REVENUE +
   # GOOGLE-WARBY PARKER EQUITY = COMPOUND SAMSUNG/GOOGLE GLASSES COVERAGE
   # CALIBRATION (Aug 17, 2026)
   # ===================================================================
@@ -2937,7 +2937,7 @@ cross_entity_coverage_analysis:
       (mechanism #147), this creates a DOUBLE financial incentive for soft
       Samsung/Google glasses coverage. Samsung Galaxy Glasses have MORE privacy
       features than Meta (inward-facing indicator, wear-detection recording disable)
-      yet receive ZERO privacy vocabulary from The Verge — while identical Meta
+      yet receive ZERO privacy vocabulary from The Verge - while identical Meta
       hardware receives 3+ standalone privacy alarm articles.
     double_incentive_layers:
       layer_1_advertising:
@@ -2961,7 +2961,7 @@ cross_entity_coverage_analysis:
       samsung_unpacked: "2026-07-22"
       note: >
         Google I/O coverage happened under Vox Media. Samsung Unpacked coverage
-        happened under PMC — 34 days post-acquisition. Beat assignment decisions
+        happened under PMC - 34 days post-acquisition. Beat assignment decisions
         are made 1-2 weeks before events, squarely within PMC ownership period.
     samsung_privacy_measures_exceed_meta:
       samsung_features:
@@ -2978,7 +2978,7 @@ cross_entity_coverage_analysis:
       meta_reporters: ["Victoria Song", "Sean Hollister", "Alex Heath"]
       samsung_standalone_privacy_articles: 0
       samsung_standalone_articles_total: 0
-      vocabulary_gap: "binary — alarm vocabulary for Meta, zero for Samsung"
+      vocabulary_gap: "binary - alarm vocabulary for Meta, zero for Samsung"
     control_gizmodo:
       standalone_samsung_articles: 1
       reporter: "Raymond Wong"
@@ -3025,7 +3025,7 @@ cross_entity_coverage_analysis:
     date: "2026-08-25"
     finding: >
       The Verge covers OpenAI ChatGPT Health (medical records, lab results, medications,
-      biometrics — 300M+ queries/week, NOT HIPAA compliant) with aspirational product
+      biometrics - 300M+ queries/week, NOT HIPAA compliant) with aspirational product
       framing and zero surveillance vocabulary, while covering Meta glasses opt-in
       photo/video with "creepy," "surveillance," "dox" vocabulary across 4+ dedicated
       privacy-adversarial pieces by Victoria Song.
@@ -3070,15 +3070,15 @@ cross_entity_coverage_analysis:
     mechanism_id: 370
     mechanism_name: "The Verge Apple Smart Glasses Privacy-Virtue Framing Inversion vs Meta Surveillance Alarm"
     date_analyzed: "2026-08-29"
-    type: "Type A: Competitor Coverage Deep Dive — The Verge covering Apple vs Meta"
+    type: "Type A: Competitor Coverage Deep Dive - The Verge covering Apple vs Meta"
     publication: "The Verge"
     competitor: "Apple"
     key_finding: >
       The Verge's Apple smart glasses coverage (May-Aug 2026) uses privacy-VIRTUE framing
-      — Apple delaying launch to WWDC 2027 to prioritize privacy, testing three camera
+      - Apple delaying launch to WWDC 2027 to prioritize privacy, testing three camera
       configurations (including camera-less), prototyping privacy restrictions that
       mirror Meta's own July 7 2026 LED tamper-proof fix, marketing will "emphasize
-      privacy measures compared to rival products like the Meta Ray-Bans" — while
+      privacy measures compared to rival products like the Meta Ray-Bans" - while
       Meta's identical single-camera hardware receives surveillance-alarm framing
       ("pervert glasses," "erosion of privacy," "surreptitious filming"). Apple's
       device has MORE cameras (multiple, per Gurman/Slashdot citing The Verge) than
@@ -3164,7 +3164,7 @@ cross_entity_coverage_analysis:
           - "drilling out capture LED hardware"
           - "privacy-focused update was meant to follow release of cheaper Meta Glasses"
           - "aware of increasing misuse amid growing adoption"
-        note: "Even Meta's PROACTIVE privacy engineering (tamper-proof LED, mandatory v26, legal action against LED-disable mods) is framed as closing loophole — implying prior negligence — while Apple's PROTOTYPED privacy restriction (not shipped, not mandated) is framed as virtue."
+        note: "Even Meta's PROACTIVE privacy engineering (tamper-proof LED, mandatory v26, legal action against LED-disable mods) is framed as closing loophole - implying prior negligence - while Apple's PROTOTYPED privacy restriction (not shipped, not mandated) is framed as virtue."
       - title: "Instagram banning harassing videos filmed with Meta smart glasses"
         date: "2026-07"
         outlet: "The Verge ecosystem / Virtual Reality News citing The Verge"
@@ -3190,7 +3190,7 @@ cross_entity_coverage_analysis:
       meta_device:
         cameras: "single 12MP"
         chip: "Snapdragon AR1 Gen 1"
-        privacy_features_shipped: "LED tamper-proof v26 (Jul 7 2026), mandatory disable if LED blocked/destroyed, removes ads/listings for LED-disable mods with legal action, inward-facing? No — only front LED"
+        privacy_features_shipped: "LED tamper-proof v26 (Jul 7 2026), mandatory disable if LED blocked/destroyed, removes ads/listings for LED-disable mods with legal action, inward-facing? No - only front LED"
         shipped: true
         units_sold_2025: "7M"
         led_indicator: true
@@ -3247,39 +3247,39 @@ cross_entity_coverage_analysis:
         full Verge corpus. Synthetic result demonstrates scorer sensitivity: -0.58 delta
         with p<0.001, d=-4.2 would indicate statistically meaningful asymmetry if
         confirmed on observed data. Per project standing rule Aug 28, DO NOT claim
-        empirical significance from synthetic scores alone — illustrative only.
+        empirical significance from synthetic scores alone - illustrative only.
       scorer_file: "mediascope/score/asymmetry.py"
       scorer_version: "0.1.0"
     cross_references:
       - mechanism_id: 33
-        relationship: "OpenAI FR parity — dormant Meta code vs planned OpenAI FR, same inversion logic"
+        relationship: "OpenAI FR parity - dormant Meta code vs planned OpenAI FR, same inversion logic"
       - mechanism_id: 112
-        relationship: "Google litigation-vs-wearables paradox — PMC adversarial to Google search but favorable to Google wearables vs Meta"
+        relationship: "Google litigation-vs-wearables paradox - PMC adversarial to Google search but favorable to Google wearables vs Meta"
       - mechanism_id: 149
-        relationship: "PMC double financial incentive — Samsung/Google glasses receive zero privacy scrutiny despite identical hardware"
+        relationship: "PMC double financial incentive - Samsung/Google glasses receive zero privacy scrutiny despite identical hardware"
       - mechanism_id: 304
-        relationship: "OpenAI health data sensitivity inversion — higher sensitivity data receives less scrutiny than Meta glasses"
+        relationship: "OpenAI health data sensitivity inversion - higher sensitivity data receives less scrutiny than Meta glasses"
       - mechanism_id: 359
-        relationship: "WIRED OpenAI hardware delay framing asymmetry — same capability inversion thesis, different publication"
+        relationship: "WIRED OpenAI hardware delay framing asymmetry - same capability inversion thesis, different publication"
       - mechanism_id: 368
-        relationship: "Financial quadrupling — traffic dependency + ad dependency + licensing + portfolio-level Google dependency"
+        relationship: "Financial quadrupling - traffic dependency + ad dependency + licensing + portfolio-level Google dependency"
     financial_architecture:
       channel_1_direct_payments:
         apple: "$0 licensing (no FT/Verge-Apple AI deal disclosed)"
         openai: "$5-20M/yr Vox Media/OpenAI licensing May 2024, $1-5M/yr Condé Nast/OpenAI"
         meta: "$0"
-        note: "Apple receives softer coverage despite $0 direct licensing — suggests access journalism + ad ecosystem + cultural consensus vectors beyond direct licensing"
+        note: "Apple receives softer coverage despite $0 direct licensing - suggests access journalism + ad ecosystem + cultural consensus vectors beyond direct licensing"
       channel_2_ad_dependency:
         apple: "Major App Store distribution partner, high-value advertiser ecosystem"
         google: "PMC 25+ titles depend on Google programmatic via Concert/Forte"
-        meta: "Meta is ad platform competitor to PMC/Concert — structural disincentive for positive Meta coverage"
+        meta: "Meta is ad platform competitor to PMC/Concert - structural disincentive for positive Meta coverage"
         significance: "Meta competes directly with PMC's ad infrastructure (Concert), while Apple/Google are distribution/ad partners"
       channel_3_traffic_dependency:
         google_zero: "Condé Nast Google search 55%→25% (FT Feb 27 2026), Lynch 'Google Zero' directive May 2026 on TBPN (OpenAI-owned show)"
         apple_access: "Apple design scoops via Gurman/Bloomberg drive high-engagement traffic, low legal risk vs Meta privacy investigations which require legal review"
       channel_4_portfolio:
         pmc_structure: "PMC 25+ titles, PMX subsidiary houses The Verge, Eater, SB Nation, etc."
-        pif_divestiture: "PIF sold all Meta shares Q2 2025 (667,996 shares, ~$380M+), retained Apple position (new position per 13F), massive Lucid increase — structurally aligned AGAINST Meta, WITH Apple"
+        pif_divestiture: "PIF sold all Meta shares Q2 2025 (667,996 shares, ~$380M+), retained Apple position (new position per 13F), massive Lucid increase - structurally aligned AGAINST Meta, WITH Apple"
         source: "PIF 13F Q2 2025"
     editorial_lane_assignment_extension:
       pattern: >
@@ -3287,13 +3287,13 @@ cross_entity_coverage_analysis:
         + cultural-consensus mediation of financial incentive:
 
         - Apple glasses: Covered by product/design lens (chip architecture, frame materials,
-          color options, oval lenses) — aspirational innovation framing. Privacy discussed
-          as VIRTUE (Apple delaying for privacy, testing restrictions) — proactive engineering
+          color options, oval lenses) - aspirational innovation framing. Privacy discussed
+          as VIRTUE (Apple delaying for privacy, testing restrictions) - proactive engineering
           celebrated.
 
         - Meta glasses: Covered by surveillance/investigative lens (harassment, pervert glasses,
-          LED tampering, Instagram bans) — adversarial alarm framing. Privacy discussed as
-          THREAT (Meta closing loophole, misuse, surveillance) — proactive engineering
+          LED tampering, Instagram bans) - adversarial alarm framing. Privacy discussed as
+          THREAT (Meta closing loophole, misuse, surveillance) - proactive engineering
           framed as loophole closure.
 
         Same hardware (camera + mic + AI), same privacy feature class (LED indicators,
@@ -3301,11 +3301,11 @@ cross_entity_coverage_analysis:
         surveillance-investigative) mediates financial/cultural incentive, just as
         WIRED's lane assignment mediates Condé Nast OpenAI licensing incentive (mechanism #359).
         Waveform MKBHD (Vox Media Podcast Network) provides positive counterexample for Meta
-        (mechanism #369) — showing lane variation within same corporate parent.
+        (mechanism #369) - showing lane variation within same corporate parent.
       within_corporate_parent_lane_variation:
         waveform_mkbhd: "+0.30 mildly positive product enthusiast (Aug 2026 Meta Display waveguide tech)"
         verge_institutional: "-0.40 to -0.45 adversarial surveillance"
-        interpretation: "Financial incentive predicts INVESTIGATIVE lane tone, not enthusiast lane tone — validates lane-mediation thesis"
+        interpretation: "Financial incentive predicts INVESTIGATIVE lane tone, not enthusiast lane tone - validates lane-mediation thesis"
     confounding_factors:
       - strength: STRONG
         description: "Different product maturity: Meta glasses shipped (7M units 2025, real-world misuse documented), Apple glasses prototyped (no public misuse, privacy work can be aspirational). Journalistically defensible to apply more scrutiny to shipped product with documented misuse."
@@ -3327,11 +3327,11 @@ cross_entity_coverage_analysis:
       WWDC 2027 delay for privacy) receive privacy-virtue + aspirational design framing
       (+0.18 avg, 0 surveillance terms) while Meta Ray-Ban (single 12MP, shipped tamper-proof
       LED, 7M units) receives surveillance-alarm framing (-0.40 avg, 5+ surveillance terms).
-      Same capability (camera + mic + AI), opposite frame. Inversion score 0.88 — device
+      Same capability (camera + mic + AI), opposite frame. Inversion score 0.88 - device
       with GREATER capability and FEWER shipped safeguards receives LESS scrutiny. 107-day
       window (Apr 12-Jul 28 2026). Financial architecture (PMC portfolio Google ad dependency,
       PIF divested Meta/retained Apple, OpenAI licensing, Meta as Concert competitor) predicts
-      softer Apple coverage. Scorer -0.58 (p<0.001, d=-4.2 huge) synthetic illustrative only —
+      softer Apple coverage. Scorer -0.58 (p<0.001, d=-4.2 huge) synthetic illustrative only -
       requires observed corpus validation. Confounder-adjusted 0.22 moderate.
     source_urls:
       - "https://hardware.slashdot.org/story/25/05/08/2011221/apple-is-planning-smart-glasses-with-and-without-ar"
