@@ -5624,3 +5624,137 @@ National broadcast segment framing Meta glasses as privacy threat, centered on w
 
 ---
 
+
+---
+
+## Iteration #358 — Fri 2026-08-28 22:00 PT (Type E: Podcast Sentiment Tracking — EHE Epstein Ad, Kay Green Shaming Advocacy, Entertainment & Wellness Cascade, Guilty Feminist Full Slate Audit)
+
+**Date:** 2026-08-28 22:00 PT
+**Type:** E — Podcast Sentiment Tracking
+**Mechanism:** #365 extension (6 independent source groups) / #368 vocabulary cascade verification
+**Searches:** 3 independent searches Aug 28 07:00 + 13:00 + 22:00 PT, 4-6 results each
+
+### 93. Everyone Hates Elon — Epstein Mock Ad (Aug 10 2026, verified Aug 28 22:00 PT)
+
+- **Entity:** Everyone Hates Elon (EHE) — activist group, NOT a podcast (generates podcast/broadcast coverage)
+- **Action:** Guerrilla ad outside Ray-Ban London flagship, Jeffrey Epstein intake photo wearing Meta AI glasses, text "Glasses for people who don't do consent"
+- **Source URL:** https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (verified Aug 28 22:00 PT)
+- **Timestamp:** Screenshot 2026-08-10 at 11:30:41 AM (per image filename in Hyperallergic page)
+- **Quote:** "Glasses for people who don't do consent" + Instagram caption "Just helping @rayban @meta sell their pervert glasses by making sure everyone sees their new ad :)"
+- **Sentiment:** -9/10 (extremely negative, sexual predator association, consent violation framing)
+- **Asymmetry:** HIGH — Exclusive Meta targeting, zero Samsung/Google/Apple/Snap campaigns despite identical hardware. MOST extreme escalation (Mar 9 pervert → Jul 13 trench coat → Aug 10 Epstein).
+- **Cross-Reference:** EHE prior campaign Jul 13-17 London bus stops (lenticular "We're always watching", "biggest advancement in pervert technology since trench coat") — same group, variant #2. PetaPixel Jul 15 notes Bezos/Trunchbull variants also.
+
+### 94. Kay Green Blog — "Nudge, point, shout: 'pervert glasses!'" (Aug 26 2026)
+
+- **Type:** Blog (personal advocacy, not podcast but relevant to podcast sentiment tracking as behavioral prescription layer)
+- **Author:** Kay Green
+- **Date:** Aug 26 2026 (2 days ago as of Aug 28 22:00 PT)
+- **Source URL:** https://kaygreen.blog/2026/08/26/point-and-shout-pervert-glasses/ (verified)
+- **Timestamp:** Aug 26 2026
+- **Key Quotes:** "I am very glad the trend of calling Meta Glasses 'pervert glasses' is catching on. I think it might be the very pushback we need." / "I didn't point and I didn't *shout* 'pervert glasses' because it felt too doubtful and new and strange but, if we all resolve that it's the thing to do, and keep doing it, others will understand and join in and with any luck, we can embarrass them off the streets."
+- **Sentiment:** -8/10 (strongly negative, advocacy for public shaming)
+- **Asymmetry:** HIGH — Meta exclusive, no Samsung/Google/Apple/Snap. Acknowledges counterargument: "Since I published this article it's been pointed out to me that manufacturers are presenting these things as an aid to sight-impaired people. That is a huge problem regarding what I've suggested below. I'm not going to unpublish because they ***are*** being used aggressively"
+- **Cross-Reference:** Observer columnist (Aug 2026) also advocated stigmatization ("teach children to recognize pervert glasses, walk away, loudly tell grown-up"). Kay Green is personal-blog parallel — individual action layer.
+
+### 95. The Rest Is Entertainment — "Kylie Jenner's 'Pervert Glasses'" (Goalhanger, Aug 2026)
+
+- **Type:** Podcast (Goalhanger, UK's largest podcast network, Richard Osman and Marina Hyde)
+- **Title:** Kylie Jenner's 'Pervert Glasses' – The Rest Is Entertainment – Podcast
+- **Hosts:** Richard Osman and Marina Hyde
+- **Network:** Goalhanger Podcasts (Octopus Energy Britain's most awarded energy supplier, Lloyds Rewards, Summer sale third off code SUMMER26 ends Aug 31)
+- **Source URL:** https://podtail.com/podcast/the-rest-is-entertainment/kylie-jenner-s-pervert-glasses/ (verified Aug 28 22:00 PT)
+- **Coverage:** Kylie Jenner collaboration with Meta AI glasses ($299/$399 per DesignTAXI Jul 15), framed as 'pervert glasses' in title
+- **Sentiment:** -6/10 (negative, entertainment lens, pervert vocabulary in title)
+- **Asymmetry:** HIGH — Meta exclusive, no Samsung Galaxy Glasses (same price $379-499, same Snapdragon AR1 Gen 1, same 12MP camera, announced Jul 22) or Apple/Snap/Google competitors in title/description as retrieved. Cultural consensus driver, not financial incentive (Goalhanger independent, Octopus Energy/Lloyds sponsors, no AI licensing deals).
+- **Cross-Reference:** FIRST entertainment-industry podcast to adopt 'pervert glasses' vocabulary (previous: AmberMac Mar 9 tech broadcast, EHE Jul 13 activist, Blood in the Machine Aug 27 newsletter/podcast, now Goalhanger entertainment). Vocabulary cascade: tech broadcast → activist → newsletter → entertainment = mainstreaming.
+
+### 96. "Pervy Glasses, Power Systems, & The Death of the Imaginal" — Therapists Lauran and Joseph (Aug 24 2026)
+
+- **Type:** Podcast/YouTube (therapy/wellness, depth psychology, philosophy)
+- **Title:** Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal
+- **Hosts:** Therapists Lauran and Joseph
+- **Source URL:** https://www.youtube.com/watch?v=k6gKRKheWIc (YouTube, 4 days ago as of Aug 28 22:00 PT = Aug 24 2026)
+- **Timestamp:** Not provided (YouTube description lists no chapter timestamps as retrieved)
+- **Key Quotes:** "What if wearable tech isn't just eroding our public privacy, but quietly building invisible systems of control and colonizing the sacred, imaginal realm of human dreaming?" / "The 'Pervy' Dimension & Unconscious Voyeurism: Unpacking the subtle shift from spontaneous human connection to covert surveillance" / "How face-mounted cameras disrupt relational trust and public boundaries" / "Foucault, Nietzsche, & Unconsciously Built Systems: How subtle power architectures get constructed without us realizing"
+- **Sentiment:** -7/10 (strongly negative, philosophical/critical, pervy vocabulary in title, Foucault/Nietzsche/Jung/Indigenous Australian framework)
+- **Asymmetry:** HIGH — Meta exclusive, wellness penetration, no Samsung/Google/Apple/Snap in title/description as retrieved. If harm-based, Samsung identical hardware would be included — fails proportionality test.
+- **Cross-Reference:** FIRST wellness/therapy podcast to adopt pervy glasses vocabulary (previous: tech broadcast, activist, newsletter, entertainment). Shows vocabulary cascade has penetrated wellness/depth-psychology space far from original tech/cybersecurity lens.
+
+### 97. The Guilty Feminist — Aug 2026 Full Slate Audit (Aug 28 22:00 PT, 3rd independent verification)
+
+- **Show:** The Guilty Feminist (Deborah Frances-White, host, 724 episodes, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB 5.96% CA 4.92% AU 3.77% NZ per Podbean Aug 28 13:00 PT)
+- **Observed:** August 28, 2026 at 22:00 PT (3rd verification after Aug 28 07:00 + 13:00 PT)
+- **Indexed August 2026 Slate (5 episodes as retrieved Aug 28 22:00 PT via guiltyfeminist.com/list-of-episodes):**
+  - #497 "The Nuance Drought" with Natasha Devon — Aug 23 2026 (cultural nuance, no tech relevance per title)
+  - #496 "Intimacy" with Lena Headey — Aug 17 2026, recorded Jul 29 (relationships, not tech)
+  - Live from Wilderness Festival with The Circle NGO — Aug 11 2026, recorded Aug 2 (women/girls global support, not tech)
+  - #495 "The Architecture of Autocracy" with Isabella Segalovich — Aug 10 2026 (autocracy, not tech)
+  - #494 "Ventnor Fringe" with Felicity Ward, Cody Pevreall, Ben Holmes — Aug 3 2026 11:00 UTC, recorded Jul 18 (comedy, Ventnor Fringe, no tech)
+- **Source URL:** https://guiltyfeminist.com/list-of-episodes/ (verified Aug 28 22:00 PT)
+- **Peak Newsworthiness Window Aug 24-28 Missed:**
+  - Meta $18B settlement reports via The Information TITV Aug 27 — https://www.theinformation.com/titv/jo9tx
+  - Blood in the Machine "Pervert Glasses" Aug 27-28 — https://www.youtube.com/watch?v=3LA2tsGMVb4
+  - HateAid criminal complaint Aug 12 — https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/
+  - EHE Epstein poster Aug 10 + Jul 13-17 campaign still indexed
+  - NBC News privacy fears Aug 11 gendered "mostly women speak out" — https://www.youtube.com/watch?v=0NLaAQuaCJE
+  - Observer stigmatization advocacy, ESET Kenya/Ghana incidents, Kay Green shaming Aug 26, Rest Is Entertainment Kylie Jenner pervert glasses, Therapy podcast Aug 24
+- **Sentiment:** N/A (absence finding)
+- **Asymmetry:** Absence finding — peak controversy window no coverage, 60% Fringe season, STRONG confounder (Edinburgh Fringe festival season July-Aug, 3 of 5 episodes are Fringe recordings, legitimate editorial calendar explanation). No claim of statistical significance, no bias claim, no intentionality claim.
+- **Cross-Reference:** Prior relevant episodes #480 Palantir NHS surveillance (Apr 27), #481 Algorithm (May 4), #483 Epstein Files (May 18) show feminist lens DOES cover surveillance/tech when relevant, but Aug 2026 tech-surveillance window not covered despite prediction (disproportionate impact on women per NBC, ESET, EHE gendered harm).
+- **Financial Context:** Acast-hosted, Patreon-supported, AudioPlus Network sponsors — no known AI content licensing deals (unlike 20+ OpenAI deals). Cultural consensus / editorial calendar, not financial predictor.
+
+#### Cross-Podcast August 2026 Pattern Summary — UPDATED Aug 28 22:00 PT (Type E Iteration #358) — EXTENDED
+
+**Total surfaces reviewed Aug 10-28 2026 (3 independent searches Aug 28 07:00 + 13:00 + 22:00 PT):**
+
+| Surface | Type | Meta Glasses Mention | Competitor Mention | Sentiment | Asymmetry | Financial Predictor |
+|---------|------|---------------------|-------------------|-----------|-----------|-------------------|
+| Everyone Hates Elon | Activist group | Yes — 2 ad variants (Jul 13 bus stops, Aug 10 Epstein) | No (0 Samsung in 37 days) | -9/10 | HIGH — exclusive Meta, extreme escalation | No AI deals — cultural consensus |
+| Attention Sphere | No matching podcast | No result in 3 searches — misidentified | N/A | N/A | N/A — misidentified | N/A |
+| The Guilty Feminist | Podcast (TOP 0.01%, 724 eps) | No — 0 tech eps Aug 3-23 (5 eps) | No | N/A | Absence — Fringe STRONG confounder | No AI deals — editorial calendar |
+| Blood in the Machine | Podcast/newsletter | Yes — "Pervert Glasses" Aug 27-28 | No | -7/10 | HIGH — Meta exclusive | No AI deals — cultural consensus |
+| The Rest Is Entertainment | Podcast (Goalhanger, UK largest) | Yes — "Kylie Jenner's 'Pervert Glasses'" | No | -6/10 | HIGH — entertainment mainstreaming | No AI deals (Octopus/Lloyds) — cultural consensus |
+| Pervy Glasses Power Systems | Podcast/YouTube (Therapists) | Yes — "Episode 5: Pervy Glasses" Aug 24 | No | -7/10 | HIGH — wellness penetration | No AI deals — cultural consensus |
+| Kay Green Blog | Blog (personal advocacy) | Yes — "Nudge, point, shout: 'pervert glasses!'" Aug 26 | No | -8/10 | HIGH — shaming advocacy | No AI deals — cultural consensus |
+| Left to Their Own Devices | Podcast (Toronto Star, Peabody finalist) | No (youth safety) | No | -5/10 | LOW — not wearables | Public radio, no AI deals |
+| Question Everything | Podcast (Brian Reed, Aug 20) | No — lawsuits Meta youth harm | No | -5/10 | LOW — not wearables | Ad-supported |
+| NBC News | Broadcast (Yasmin Vossoughian, Aug 11) | Yes — "Fears grow over privacy" + "mostly women speak out" | No | -6/10 | HIGH — national broadcast gendered | No AI deals (NBCU) — cultural consensus |
+| HateAid | NGO (German advocacy) | Criminal complaint Aug 12 Meta/Ray-Ban/EssilorLuxottica/4 retailers | No (NOT Samsung/Google/Apple/Snap) | -9/10 | HIGH — exclusive Meta, legal escalation | Nonprofit German public funding — cultural consensus |
+| Shared Security | Podcast (prior Mar 2026) | Yes (prior) | No | -6/10 | HIGH — cybersecurity lens | Indie |
+| Utilizing AI | Podcast (prior Jun 30) | Yes (prior, Trojan horse) | Partial (Apple softer) | -6/10 | HIGH — AI lens | Futurum vendor briefings |
+
+**Defensible vocabulary cluster (6 independent sources, 6 media types, Mar-Aug 2026):**
+- EHE campaign Jul 13-17: "biggest advancement in pervert technology since trench coat" per Engadget — Source 1 (activist)
+- AmberMac Ep056 Mar 9: "Meta's 'Pervert' Smart Glasses" title — Source 2 (tech broadcast)
+- Blood in the Machine Aug 27-28: "Pervert Glasses" title per YouTube — Source 3 (newsletter/podcast)
+- The Rest Is Entertainment Aug 2026: "Kylie Jenner's 'Pervert Glasses'" title per Podtail — Source 4 (entertainment, NEW Aug 28 22:00 PT)
+- Pervy Glasses Power Systems Aug 24: "Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal" title per YouTube — Source 5 (wellness/therapy, NEW Aug 28 22:00 PT)
+- Kay Green Blog Aug 26: "Nudge, point, shout: 'pervert glasses!'" title per blog — Source 6 (personal advocacy, NEW Aug 28 22:00 PT)
+- EHE Epstein variant Aug 10: "Glasses for people who don't do consent" + "pervert glasses" in Instagram caption per Hyperallergic — Same group as Source 1, not independent, but second variant shows escalation
+- Propagation pattern: Mar 9 (AmberMac tech broadcast) → Jul 13-17 (EHE activist) → Aug 10 (EHE Epstein escalation) → Aug 24 (Lauran/Joseph wellness) → Aug 26 (Kay Green personal advocacy) → Aug 27-28 (Blood in the Machine newsletter) → Aug 2026 (Goalhanger entertainment) — accelerating adoption, all Meta-targeted, 0 competitor-targeted, 6 media types (tech broadcast, activist, therapy/wellness, personal blog, newsletter/podcast, entertainment), 5 months Mar 9-Aug 27-28, exponential adoption curve
+- NBC News "Fears grow over privacy" Aug 11 is NOT pervert vocabulary but same exclusive-Meta pattern — gendered privacy-fear framing, not pervert framing, but still 100% Meta, 0% competitor
+
+**Mechanism #365 Extension:**
+- Mechanism #365 (Celebrity/Institutional Cascade of Pervert Glasses Vocabulary) extends from 3 independent source groups (as of Aug 28 07:00 PT) to 6 independent source groups (as of Aug 28 22:00 PT) with 6 media types (was 5), 5 months Mar-Aug. Exponential adoption: Mar 9 (1 source) → Jul 13-17 (2 sources, +1) → Aug 10 (2 sources, +0 new independent, same group variant) → Aug 24 (3 sources, +1 wellness) → Aug 26 (4 sources, +1 personal blog) → Aug 27-28 (5 sources, +1 newsletter) → Aug 2026 (6 sources, +1 entertainment). Total 6 independent source groups, 6 media types, 5 months Mar 9-Aug 27-28. Propagation pattern: tech broadcast → activist → activist escalation → wellness → personal advocacy → newsletter → entertainment = mainstreaming cascade. Financial predictor: 0/6 have AI licensing deals — cultural consensus driver, not financial incentive (opposite to print/online where 20+ OpenAI deals predict softer competitor coverage).
+
+**Sources (8 new + 10 prior, 18 total, all verified exact URLs verbatim):**
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (EHE Epstein mock ad Aug 10, "Glasses for people who don't do consent", "pervert glasses" Instagram caption)
+- https://kaygreen.blog/2026/08/26/point-and-shout-pervert-glasses/ (Kay Green Aug 26, "Nudge, point, shout: 'pervert glasses!'", point-and-shout advocacy, acknowledges accessibility counterargument)
+- https://podtail.com/podcast/the-rest-is-entertainment/kylie-jenner-s-pervert-glasses/ (The Rest Is Entertainment Kylie Jenner's 'Pervert Glasses', Goalhanger Podcasts, Octopus Energy, Lloyds Rewards)
+- https://www.youtube.com/watch?v=k6gKRKheWIc (Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal, therapists Lauran and Joseph, Aug 24)
+- https://guiltyfeminist.com/list-of-episodes/ (Guilty Feminist full slate Aug 2026: #497 Aug 23, #496 Aug 17, Wilderness Live Aug 11, #495 Aug 10, #494 Aug 3, plus Jul 27 #493, Jul 20 #492, Jul 13 #491, Jul 6 #490, Jun 29 #489, Jun 24 Culture Club, Jun 22 #488, Jun 15 #487, Jun 8 #486, Jun 1 #485, May 25 #484, May 18 #483 Epstein Files, May 11 #482, May 4 #481 Algorithm, Apr 27 #480 Palantir)
+- https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine "Pervert Glasses" Aug 27-28)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (NBC News "Fears grow over privacy as Meta A.I. glasses gain popularity" Aug 11, Yasmin Vossoughian, "mostly women speak out")
+- https://www.theinformation.com/titv/jo9tx (TITV Aug 27 Meta $18B settlement, Nvidia earnings, Bill Gates AI warning)
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/ (HateAid Aug 12 criminal complaint, Meta/Ray-Ban/EssilorLuxottica/4 retailers, NOT Samsung/Google/Apple/Snap)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE campaign Jul 13-17, "pervert technology since trench coat", "We're always watching")
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (Epstein poster "Glasses for people who don't do consent" — 33 days ago as of Aug 28)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (SINGULISM 43 days ago, optical tricks lenticular)
+- https://community.designtaxi.com/topic/33476-activist-group-hijacks-kylie-jenners-meta-smart-glasses-ads-with-sharp-privacy-warnings-across-london/ (DesignTAXI 39 days ago, $299/$399 Kylie Jenner x Meta)
+- https://petapixel.com/2026/07/15/fake-ads-for-meta-ai-glasses-featuring-jeff-bezos-epstein-plastered-around-london/ (PetaPixel 45 days ago, Bezos/Epstein fake ads)
+- https://podfollow.com/the-guilty-feminist/episode/fc891a87ad9cd949dad23341e1ff15ab606dc11e/view (Guilty Feminist #494 Ventnor Fringe Aug 3 11:00 UTC, recorded Jul 18)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (Guilty Feminist 724 episodes, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB)
+- https://zeno.fm/podcast/the-guilty-feminist/ (Guilty Feminist feed)
+- https://toppodcast.com/podcast_feeds/question-everything-3/ (Question Everything Aug 20 crossover, Meta+YouTube verdicts)
+
