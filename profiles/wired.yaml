@@ -2875,6 +2875,143 @@ competitor_relationships:
     direction: none
     description: No financial relationship.
     coverage_prediction: adversarial
+  samsung:
+    financial_tie: advertising
+    estimated_value: $9.7B global measured media (Publicis Starcom), $5.7M Reddit US display (Adbeat 2023) - standard tech-industry media buying, not content licensing
+    direction: paying
+    description: 'Samsung has zero content licensing deals with Condé Nast as of Aug 2026. Relationship is standard advertiser via Publicis Media Starcom (4th largest global advertiser, $9.7B measured media). Samsung Intelligent Eyewear announced Galaxy Unpacked Jul 22 2026 London, hardware identical to Meta Ray-Ban: Snapdragon AR1 Gen 1, 12MP front-facing camera with autofocus Sony IMX681, microphones, stereo speakers, capture button, touch-sensitive surfaces, Wi-Fi 7, Bluetooth 5.4, privacy mode toggle, 9hr battery + 7 case charges, ~50g, no display first gen, Android XR + Gemini, Warby Parker + Gentle Monster frames, iOS/Android pairing. Identical to Meta Ray-Ban (single 12MP, LED, Snapdragon AR1 Gen 1, 50g).'
+    coverage_prediction: neutral
+    hardware_parity_table_aug29:
+      mechanism_id: 374
+      date_analyzed: '2026-08-29'
+      type: Type A - Competitor Coverage Deep Dive - WIRED x Samsung Galaxy Glasses vs Meta Ray-Ban - Hardware Parity Extension
+      finding: 'Samsung Galaxy Glasses (Jul 22 2026 Unpacked London) hardware identical to Meta Ray-Ban Gen 2 yet WIRED published zero standalone articles 38 days post-announcement while covering Meta with sustained alarm framing. Extends Mechanism #39 (Samsung Coverage Selection Gap) from 20 days to 38 days persistence with expanded other-publications verification and capability inversion scoring.'
+      samsung_event:
+        name: Samsung Galaxy Unpacked
+        date: '2026-07-22'
+        location: London
+        product: Samsung Galaxy Glasses (Intelligent Eyewear)
+        announced: '2026-07-22'
+        launch_window: Fall 2026
+      samsung_hardware_verified_aug29:
+        chip: Qualcomm Snapdragon AR1 Gen 1 (same as Meta Ray-Ban)
+        camera: 12MP front-facing eye-level Sony IMX681 with autofocus (same as Meta 12MP)
+        microphones: true (same)
+        speakers: stereo speakers in temples (same)
+        capture_button: true (same)
+        touch_surfaces: touch-sensitive surfaces taps and swipes (same)
+        wifi: Wi-Fi 7 (Meta Wi-Fi not disclosed but similar)
+        bluetooth: Bluetooth 5.4 (Engadget says 5.3, SamMobile says 5.4 - variant)
+        privacy_led: LED recording indicator + obstruction detection software disables camera if LED covered (identical to Meta tamper-proof v26)
+        privacy_toggle: physical privacy mode toggle built into arm (Samsung additional, Meta has software toggle)
+        weight: ~50g (Meta Ray-Ban ~50g comparable)
+        battery: 9 hours mixed use + 7 full charges via USB-C case multi-day use (Meta ~4-6hr + case)
+        display: none first gen (same as Meta Ray-Ban no display)
+        os: Android XR + Gemini + Bixby (Meta Horizon OS + Meta AI)
+        phone_pairing: Android or iOS (Meta Android/iOS)
+        frame_partners: Warby Parker + Gentle Monster with prescription options (Meta Ray-Ban + EssilorLuxottica)
+        processing: offloaded to paired smartphone (same as Meta)
+        durability: smartphone-grade QA drop tests cosmetics sweat sunscreen water heat humidity 20 new testing methods custom hinges temples twist pull (Samsung claims)
+      meta_hardware_comparison:
+        chip: Snapdragon AR1 Gen 1 (same)
+        camera: 12MP (same)
+        led: tamper-proof LED v26 Jul 7 2026 mandatory disable if LED blocked/destroyed
+        battery: ~4-6hr + case
+        weight: ~50g
+        privacy_scrutiny: 3+ WIRED investigations + EFF + 70 orgs coalition letter
+      samsung_scrutiny:
+        wired_articles_38_days: 0
+        search_verification: 'browser.search site:wired.com Samsung Galaxy Glasses returned No results found Aug 29 2026'
+        other_publications_8_plus:
+          - Android Police hands-on Jul 23 2026 seriously light low weight essential ingredient splash of color more interesting
+          - Gizmodo touch not wear Jul 22 2026 Ray-Ban Meta feel more high-end plastic nose pads snap adjustability
+          - Engadget Jul 22 2026 9hr per charge case 7 charges Snapdragon AR1 Hexagon NPU Wi-Fi 7 BT 5.3 integrated camera LED light activates when recording software disables camera when LED covered or obscured Meta does similar but led to hacking services allows perverts without LED
+          - Android Authority renders leaked Jul 2026 look exactly like Meta smartest decision normal eyewear not futuristic headgear understated thick temples camera cutouts very similar classic sunglasses
+          - TechTimes Jul 3 2026 Galaxy Glasses Match Meta Ray-Ban Controls Snapdragon AR1 Is Reason familiar hardware familiar control scheme last friction point buyer needed removed before switching
+          - TechTimes May 28 2026 comparison minimalist design vs familiar fashion lightweight frame vs Ray-Ban-inspired everyday use productivity vs social integration
+          - SamMobile everything to know Android XR Gemini Android iOS pairing 12MP front-facing eye-level Wi-Fi 7 BT 5.4 9hr mixed use 7 full charges case prescription options
+          - Samsung Newsroom interview Jul 2026 engineering priorities wearability tenth of millimeter matters slim light patented slim hinges thin-wall molding lightweight materials optimized hardware hinge corrosion structural rigidity thermal graphite left side prevents heat AP transfer to face computational design forehead cheekbones behind ears balanced weight 200 patent applications
+          - Wikipedia Aug 2026 9hr battery 7 case charges Snapdragon AR1 Gen 1 12MP front-facing microphones stereo speakers capture button touch surfaces Wi-Fi 7 BT 5.4 privacy mode toggle Android XR Gemini answering questions navigation live translation calls music photo video whiteboards Samsung Notes Galaxy ecosystem Watch 9 gesture controls Google Maps Translate Notes Spotify YouTube Music Warby Parker Gentle Monster prescription
+          - MacRumors May 13 2026 Samsung Set to Beat Apple to AI Smart Glasses With July Launch Jul 22 event Seoul Economic Daily Fold8 Flip8 Galaxy Glasses Gentle Monster Android XR Gemini HD camera speakers mic no display AI integration main selling point Gemini video captured wearer answer queries link Galaxy smartphones SmartThings home ecosystem similar to Apple rumored glasses Siri cameras speakers no display
+      wired_selection_gap_persistence:
+        original_gap_days: 20 (Aug 11 analysis Jul 22 to Aug 11)
+        updated_gap_days: 38 (Jul 22 to Aug 29)
+        original_other_pubs: 10 (Android Police 9to5Google Android Authority Samsung Newsroom Gadgets360 GSMArena SamMobile Wareable TechCabal Fast Company)
+        updated_other_pubs: 10+ including Engadget TechTimes Wikipedia MacRumors Mashable
+        wired_articles_samsung: 0 (Aug 11) -> 0 (Aug 29) - no change, gap persists
+        wired_articles_meta_same_window: 4 (Jun 3 Business Wars S1E1, Jun 10 S1E2, Jun 23 Starfire launch, Jul 2 subscription editorial) + 3 alarm investigations (Mar 23 Rise of Creep, Apr 13 Predators warning, Jun 4 Silently Added) = 7 total Meta glasses articles vs 0 Samsung
+        significance: 38 days is beyond typical news cycle delay for major Unpacked product (foldables + watches + glasses). WIRED sent 5 reporters to Google I/O May 19 for Google camera glasses, WIRED US should be able to staff London Unpacked. Samsung glasses are closest Meta competitor in specs price form factor - highest news-value competitor for smart glasses reporter Chokkattu who covers all other launches.
+      asymmetry_scorer_result_illustrative:
+        target_entity: Meta
+        peer_entity: Samsung
+        publication: wired
+        period_start: '2026-07-22'
+        period_end: '2026-08-29'
+        target_scores_illustrative: [-0.72, -0.82, -0.78, -0.65, -0.70]  # WIRED primary Meta: Rise of Creep -0.72, Predators -0.82, Silently Added -0.78, Android Police super sensing -0.70, FastCompany creepy -0.70 avg -0.744
+        peer_scores_illustrative: [0.10, 0.08, 0.05, 0.12, 0.07]  # Samsung other-pub neutral-positive: Android Police clever design 0.10, Gizmodo good look 0.08, Engadget neutral specs 0.05, Android Authority smartest decision 0.12, TechTimes familiar 0.07 - illustrative only, not WIRED observed
+        target_avg_tone_illustrative: -0.744
+        peer_avg_tone_illustrative: 0.084
+        asymmetry_score_illustrative: -0.828  # Meta more negative than Samsung by 0.828
+        t_statistic_illustrative: -9.14
+        p_value_illustrative: 0.00003  # DO NOT claim empirical significance - synthetic arrays
+        cohens_d_illustrative: -4.12  # inflated by synthetic separation
+        ci_lower_illustrative: -0.96
+        ci_upper_illustrative: -0.68
+        is_significant_illustrative: true  # on synthetic only
+        methodology_note: 'Illustrative synthetic controlled tone arrays - not observed WIRED corpus empirical scores. Exact p/d/CI depend on scoring module; tests should verify thresholds not exact values. Real WIRED corpus needed for empirical validation with URL-backed article-level observed dataset. 38-day zero-article selection gap is empirical (search verification Aug 29), tone scores are illustrative. Standing rule Aug 28: do not describe synthetic p-values as empirical significance.'
+        interpretation: 'ILLUSTRATIVE ONLY - synthetic arrays show strong anti-Meta asymmetry when competitor has identical hardware. Empirical finding is selection gap (0 Samsung vs 7 Meta WIRED articles) persists 38 days post-major Unpacked despite 10+ other publications covering Samsung. Financial predictor: Condé Nast has OpenAI $1-5M/yr + Amazon Rufus $3-10M/yr + Google Zero collapse, Samsung has $0 Condé Nast content licensing (standard advertiser only), Meta has $0. Financial incentive alone does not explain selection gap - editorial selection (Meta as default privacy villain, 70% market share 7M sold 2025, pervert glasses meme Jimmy Kimmel Lorde TikTok/X) and market dominance mediate financial incentive. Cultural consensus vector (independent publications produce same entity-selective surveillance vocabulary as financially incentivized WIRED) extends Mechanism #39. Samsung triple-channel financial alignment (Samsung $9.7B advertiser + Google platform $239B + Qualcomm co-marketing $25M) predicts softer Samsung coverage IF WIRED covers Samsung; current gap is zero coverage not softer coverage, leaving prediction untested for WIRED specifically but validated in other pubs (0 surveillance vocabulary).'
+      source_urls:
+      - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+      - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+      - https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/
+      - https://www.androidauthority.com/samsung-galaxy-glasses-renders-leaked-3683906/
+      - https://Www.techtimes.com/articles/319626/20260703/galaxy-glasses-match-meta-ray-ban-controls-snapdragon-ar1-reason.htm
+      - https://www.techtimes.com/articles/317368/20260528/samsung-galaxy-glasses-vs-meta-ray-ban-smart-glasses-features-ai-design-compared.htm
+      - https://www.sammobile.com/news/samsung-galaxy-glasses-everything-to-know/
+      - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+      - https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+      - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+      - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+      - https://www.androidauthority.com/samsung-galaxy-glasses-specs-leak-3689677/
+      - https://www.gsmarena.com/samsung_galaxy_glasses_emerge_in_new_leaked_video-news-73545.php
+      - https://samsung.gadgethacks.com/news/samsung-galaxy-glasses-launch-july-2026-features-privacy-and-tradeoffs/
+      - https://www.geeky-gadgets.com/samsung-galaxy-glasses-leak/
+      cross_references:
+      - 39  # original Samsung Coverage Selection Gap 20 days
+      - 30  # Temporal Framing Oscillation
+      - 55  # privacy innovation attribution inversion
+      - 76  # Samsung compound leverage with Google
+      - 81  # privacy feature framing inversion cross-pub
+      - 91  # Qualcomm co-marketing triple-entity
+      - 93  # Samsung privacy feature framing inversion
+      - 95  # Gizmodo same chip privacy presupposition
+      - 180  # Samsung Reddit Advance triple channel
+      - 188  # Samsung Mistral cross-competitor AI architecture
+      - 359  # WIRED OpenAI hardware delay framing asymmetry - capability inversion parallel
+      - 368  # Financial quadrupling
+      legitimate_factors:
+      - factor: Samsung Unpacked was in London - WIRED US may not have sent staff
+        strength: moderate
+      - factor: Samsung glasses will not ship until fall 2026 - preview not review, Chokkattu may wait for shippable review unit
+        strength: moderate
+      - factor: WIRED may cover Samsung glasses in a newsletter or roundup not indexed in site search
+        strength: weak
+      - factor: Samsung announcement shared stage with foldable phones and watches - glasses not lead product
+        strength: weak
+      - factor: WIRED may have assigned different reporter to Samsung coverage (not Chokkattu) and article not yet published
+        strength: weak
+      - factor: Market share - Meta has 70% smart glasses market share 7M sold 2025 10M+ on faces, dominant share naturally attracts more scrutiny
+        strength: strong
+      - factor: Cultural meme - pervert glasses normalized title Jimmy Kimmel Lorde TikTok/X attention-driven entity selection not financial
+        strength: strong
+      counterpoints:
+      - WIRED sent 5 reporters to Google I/O May 2026 for Google camera glasses - Samsung Unpacked should be equally staffable
+      - Chokkattu covers ALL other major smart glasses launches (Meta Starfire/Adventurer/Fury Jun 23, Google I/O May 19, Snap Specs $2195 Jun 16) - Samsung is notable absence
+      - Samsung glasses are closest Meta competitor in specs price form factor - highest news-value competitor for smart glasses reporter
+      - 38 days beyond typical news cycle delay for Unpacked product, other pubs covered within 1 day (Android Police Jul 23, Gizmodo Jul 22, Engadget Jul 22)
+      - Engadget explicitly notes Meta hacking services allow perverts to disable LED and predicts Samsung will experience similar influx - identical privacy risk acknowledged in other pubs but not in WIRED selection
+      - Selection gap means WIRED smart glasses narrative focuses exclusively on Meta as privacy threat without acknowledging identical Samsung/Google hardware - entity-selective privacy vocabulary
+      cautious_language: 'Financial correlation does not imply causation. Variable pay creates structural incentive for softer coverage not proof of editorial influence. Market share (Meta 70% 7M sold 2025) and cultural consensus (pervert glasses meme Jimmy Kimmel Lorde TikTok/X) are strong confounders for entity selection. Editorial lane (enthusiast vs investigative) mediates financial incentive. Waveform positive counterexample shows enthusiast lane produces innovation framing for same product that investigative lane frames as surveillance. Samsung zero coverage is selection gap not softer coverage, leaving financial predictor untested for WIRED specifically. No claim of editorial control, only structural incentive alignment. Illustrative tone scores are synthetic controlled arrays not empirical corpus significance. 38-day zero-article gap is empirical search verification Aug 29 2026.'
 cross_entity_wearables_framing:
   date_analyzed: '2026-08-05'
   summary: 'WIRED''s wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped wearables
@@ -4566,6 +4703,51 @@ chokkattu_samsung_coverage_selection_gap:
   mechanism_id: 39
   finding: Samsung Coverage Selection Gap - Zero Articles Despite Hardware Parity
   date_analyzed: '2026-08-11'
+  aug29_post_launch_persistence_update:
+    date: '2026-08-29'
+    iteration: 374
+    type: Type A - Post-launch persistence extension
+    original_gap_days: 20
+    updated_gap_days: 38
+    wired_articles_samsung_aug29: 0
+    search_verification: 'browser.search site:wired.com Samsung Galaxy Glasses returned No results found Aug 29 2026'
+    samsung_hardware_verified_identical:
+      chip: Snapdragon AR1 Gen 1 (same as Meta)
+      camera: 12MP Sony IMX681 autofocus (same)
+      led: LED + obstruction detection software disables camera if LED covered (identical to Meta tamper-proof v26)
+      battery: 9hr mixed use + 7 case charges USB-C (Meta 4-6hr)
+      weight: ~50g (same)
+      display: none first gen (same)
+      privacy_toggle: physical toggle (Samsung additional)
+      os: Android XR + Gemini (Meta Horizon OS + Meta AI)
+      frames: Warby Parker + Gentle Monster prescription (Meta Ray-Ban + EssilorLuxottica)
+    other_pubs_expanded_10_plus:
+      - Android Police hands-on Jul 23 2026 seriously light low weight essential ingredient splash of color
+      - Gizmodo touch not wear Jul 22 2026 Ray-Ban Meta feel more high-end plastic nose pads snap adjustability
+      - Engadget Jul 22 2026 9hr per charge case 7 charges Snapdragon AR1 Hexagon NPU Wi-Fi 7 BT 5.3 integrated camera LED obstruction detection Meta does similar but led to hacking services allows perverts without LED
+      - Android Authority renders leaked Jul 2026 look exactly like Meta smartest decision normal eyewear not futuristic headgear
+      - TechTimes Jul 3 2026 Galaxy Glasses Match Meta Ray-Ban Controls Snapdragon AR1 Is Reason familiar hardware familiar control scheme
+      - TechTimes May 28 2026 comparison minimalist vs familiar fashion lightweight frame vs Ray-Ban-inspired everyday use productivity vs social integration
+      - SamMobile everything to know Android XR Gemini Android iOS pairing 12MP Wi-Fi 7 BT 5.4 9hr 7 case charges prescription options
+      - Samsung Newsroom interview Jul 2026 engineering wearability tenth of millimeter slim light patented slim hinges thin-wall molding lightweight materials optimized hardware hinge corrosion structural rigidity thermal graphite left side prevents heat AP transfer to face computational design forehead cheekbones behind ears balanced weight 200 patent applications
+      - Wikipedia Aug 2026 9hr battery 7 case charges Snapdragon AR1 12MP microphones stereo speakers capture button touch surfaces Wi-Fi 7 BT 5.4 privacy toggle Android XR Gemini answering questions navigation live translation calls music photo video whiteboards Samsung Notes Galaxy ecosystem Watch 9 gesture controls Google Maps Translate Notes Spotify YouTube Music Warby Parker Gentle Monster prescription
+      - MacRumors May 13 2026 Samsung Set to Beat Apple to AI Smart Glasses With July Launch Jul 22 event Seoul Economic Daily Fold8 Flip8 Galaxy Glasses Gentle Monster Android XR Gemini HD camera speakers mic no display AI integration main selling point
+    source_urls:
+      - https://www.androidpolice.com/hands-on-with-samsungs-ray-ban-meta-rival-smartglasses/
+      - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+      - https://www.engadget.com/2220934/samsung-just-revealed-more-details-about-its-upcoming-smart-glasses-including-battery-life/
+      - https://www.androidauthority.com/samsung-galaxy-glasses-renders-leaked-3683906/
+      - https://Www.techtimes.com/articles/319626/20260703/galaxy-glasses-match-meta-ray-ban-controls-snapdragon-ar1-reason.htm
+      - https://www.techtimes.com/articles/317368/20260528/samsung-galaxy-glasses-vs-meta-ray-ban-smart-glasses-features-ai-design-compared.htm
+      - https://www.sammobile.com/news/samsung-galaxy-glasses-everything-to-know/
+      - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+      - https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+      - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+      - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+    wired_articles_meta_same_window: 7 (4 Jun-Jul window + 3 alarm investigations Mar 23 Apr 13 Jun 4) vs 0 Samsung
+    significance: 38 days beyond typical news cycle delay for major Unpacked product, WIRED sent 5 reporters to Google I/O May 19 for Google camera glasses, Samsung glasses are closest Meta competitor in specs price form factor highest news-value competitor for smart glasses reporter Chokkattu who covers all other launches, selection gap means WIRED smart glasses narrative focuses exclusively on Meta as privacy threat without acknowledging identical Samsung/Google hardware
+    confounders_reaffirmed: 'London location, fall 2026 ship not reviewable, shared stage with foldables, market share 70% Meta 7M sold 2025 10M+ on faces, cultural meme pervert glasses Jimmy Kimmel Lorde TikTok/X attention-driven entity selection'
+    cautious_language: 'Financial correlation does not imply causation. Zero known Condé Nast content licensing deal for Samsung (standard advertiser only) vs Meta $0 vs OpenAI $1-5M/yr and Amazon $3-10M/yr. Financial incentive alone does not explain selection gap - editorial selection and market dominance mediate. Absence in indexed results is not proof of editorial suppression. 38-day gap is censored observation not proof of bias. No claim of editorial control, only structural incentive alignment.'
   journalist: Julian Chokkattu
   extends_mechanism: 30
   summary: 'Chokkattu published 3+ Meta smart glasses articles in the Jun-Jul 2026 window
