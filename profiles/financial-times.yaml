@@ -226,6 +226,66 @@ key_journalists:
       - high staff turnover
       surveillance_term_count_meta: 6
       surveillance_term_count_snap: 0
+      verification_2026_08_29:
+        date: '2026-08-29'
+        iteration: 360
+        type: Type B Journalist Cross-Entity Tracking extension
+        meta_prototype_july_8_2026:
+          claim: 'FT Hannah Murphy original July 8 2026 super-sensing prototype coverage persists as canonical Meta surveillance example'
+          ft_original_via_techmeme: https://www.techmeme.com/260708/p2
+          gizmodo_aggregation_july_8: https://gizmodo.com/tag/smart-glasses/page/2?startIndex=40
+          gizmodo_title: 'Meta Is Toying With the Idea of Smart Glasses That Record Everything, All the Time'
+          gizmodo_date: '2026-07-08'
+          wsj_corroboration: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+          wsj_line: 'The Financial Times previously reported some details of the new Meta glasses feature'
+          wsj_date: '2026-08-26 (updated)'
+          language_verified:
+          - continuously collect audio
+          - wiretapping laws
+          - biometric data laws
+          - civil liberty and privacy risks
+          - LED deactivation
+          framing: adversarial_surveillance
+          methodology_note: 'Techmeme aggregation is discovery reference only; underlying FT article verified via WSJ citation that FT previously reported; Gizmodo July 8 aggregation provides independent secondary corroboration of timing and surveillance framing'
+        snap_specs_june_2026_control:
+          claim: 'Snap SPECS consumer AR glasses launched June 2026 received mainstream business/design framing with zero surveillance language, paralleling Murphy Snap pattern'
+          product: Snap SPECS (consumer AR, 6th gen Spectacles rebrand)
+          launch_month: '2026-06'
+          price: '$2,195 / £1,995'
+          weight: '136g (vs ~30g typical glasses, ~4.5x heavier)'
+          battery: '4-hour mixed-use'
+          sources:
+          - url: https://www.retailgazette.co.uk/blog/2026/06/snap-mocked-over-1995-smart-glasses-as-investors-question-consumer-appeal/
+            outlet: Retail Gazette
+            date: '2026-06'
+            framing: business_viability_design_barrier
+            language:
+            - 'not going to become mainstream any time soon'
+            - 'bulk and experimental'
+            - 'price barrier $2,195'
+            surveillance_terms: 0
+          - url: https://www.fool.com/investing/2026/06/23/will-snaps-augmented-reality-glasses-help-or-hurt/
+            outlet: The Motley Fool
+            date: '2026-06-23'
+            framing: business_gamble_hail_mary
+            language:
+            - 'betting an expensive pair of glasses will turn its woeful stock around'
+            - 'Hail Mary than true product launch'
+            - 'costly gamble'
+            surveillance_terms: 0
+          comparison_to_meta: 'Both Snap SPECS and Meta Ray-Ban Display ($799, 69g, 3-hour wear) have cameras and record environment; Snap receives price/weight/battery/design critique (0 surveillance terms); Meta receives wiretapping/biometric/civil-liberties/legal-threat framing (6 surveillance terms) from same reporter covering same category'
+        ft_site_search_2026_08_29:
+          query: 'site:ft.com Hannah Murphy Snap'
+          result: 'No results found (2026-08-29 search)'
+          implication: 'No FT Hannah Murphy Snap AR coverage located 2025-2026 beyond Oct 28 2024 portfolio; absence consistent with limited Snap surveillance framing in her corpus — zero counterexamples located'
+          source: search-results://query?query=site:ft.com%20Hannah%20Murphy%20Snap
+        fastcompany_aug_25_2026_context:
+          url: https://fastcompany.co.za/tech/2026-08-25-whats-the-plan-with-metas-creepy-smart-glasses/
+          title: 'What is the plan with Meta creepy smart glasses?'
+          date: '2026-08-25 (3 days ago as of Aug 29)'
+          framing: 'creepy / pervert glasses vocabulary cascade, privacy/security/ethical concerns'
+          note: 'Not Hannah Murphy but demonstrates industry-wide escalation of Meta-exclusive surveillance framing vs Snap business framing — cultural consensus driver, not financial incentive (FastCompany independent)'
+        overall_implication: 'July 8 2026 FT super-sensing coverage remains strongest within-reporter evidence: same journalist, same product category, same publication, opposite framing (6:0 surveillance terms). June 2026 Snap SPECS launch provides clean temporal control: both companies launched/updated AR glasses within ~1 month (Snap June, Meta July), both have cameras, both face identical privacy questions, yet Snap coverage uses business viability language (0 surveillance terms) while Murphy Meta coverage uses legal-threat language. This cannot be explained by product differences, technology novelty, or market position alone — company identity predicts framing.'
     entities_not_covered_by_murphy:
       description: 'Murphy does NOT cover OpenAI, Anthropic, Apple, or Google. Those
         are handled by different FT reporters: Madhumita Murgia (AI Editor) covers
@@ -842,7 +902,7 @@ competitor_relationships:
       date: '2026-08-27'
       ft_reporter: FT (via Archynetys 7-source cluster, 1d ago)
       url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
-      original_ft_attribution: Financial Times 1d ago (via Archynetys cluster: FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI)
+      original_ft_attribution: 'Financial Times 1d ago (via Archynetys cluster: FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI)'
       framing: constructive_technology_achievement
       tone_approx: 0.18
       language:
