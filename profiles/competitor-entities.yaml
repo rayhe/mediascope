@@ -60,25 +60,21 @@ entities:
         mechanism_id: 359
         date_analyzed: '2026-08-28'
         date_corrected: '2026-08-28'
-        type: Type A - WIRED × OpenAI Hardware vs Meta Glasses - CORRECTED mechanism numbering (was #356 collision, now #359)
-        finding: 'WIRED covers OpenAI Jony Ive device (camera+FR+always-on+environmental awareness+observes users, $6.5B acquisition,
-          200+ employees, "coolest piece of technology that the world will have ever seen", "third core device", "friend who is a computer",
-          "invisible ambient computing") with neutral/constructive business framing (trademark delay, packaging, naming strategy).
-          Zero surveillance language despite hardware having MORE surveillance capability than Meta single-camera glasses.
-          Same publication covers Meta single-camera glasses with alarm language (pervert glasses, creepy, nightmarish super sensing,
-          privacy loophole, camera-killing update). Financial predictor: Condé Nast OpenAI licensing $1-5M/yr predicts softer hardware coverage.
-          Mechanism extends #33 (facial recognition parity) with temporal delay evidence (Feb 10 2026 WIRED via MacRumors) and capability inversion scoring.
-          PRIMARY SOURCE UPDATE Aug 28: 6 direct WIRED articles verified (wired.com/story) - 3 OpenAI aspirational, 3 Meta alarm - plus correction: WIRED DID publish 1 Apple v OpenAI lawsuit article (Jul 10, Maxwell Zeff), disproving prior ZERO-coverage claim in mechanism #96.'
+        type: Type A - WIRED × OpenAI Hardware vs Meta Glasses - CORRECTED mechanism numbering (was
+        finding: 'WIRED covers OpenAI Jony Ive device (camera+FR+always-on+environmental awareness+observes users, $6.5B acquisition, 200+ employees, "coolest piece of technology that the world will have ever seen", "third core device", "friend who is a computer", "invisible ambient computing") with neutral/constructive business framing (trademark delay, packaging, naming strategy). Zero surveillance language despite hardware having MORE surveillance capability than Meta single-camera glasses. Same publication covers Meta single-camera glasses with alarm language (pervert glasses, creepy, nightmarish super sensing, privacy loophole, camera-killing update). Financial predictor: Condé Nast OpenAI licensing $1-5M/yr predicts softer hardware coverage. Mechanism extends #33 (facial recognition parity) with temporal delay evidence (Feb 10 2026 WIRED via MacRumors) and capability inversion scoring. PRIMARY SOURCE UPDATE Aug 28: 6 direct WIRED articles verified (wired.com/story) - 3 OpenAI aspirational,
+          3 Meta alarm - plus correction: WIRED DID publish 1 Apple v OpenAI lawsuit article (Jul 10, Maxwell Zeff), disproving prior ZERO-coverage claim in mechanism #96.'
         wired_openai_articles_count: 3
         wired_meta_articles_count: 3
         wired_direct_primary_sources: 6
         wired_apple_openai_lawsuit_articles: 1
-        asymmetry_score: -0.786  # illustrative synthetic - not observed article-level
-        p_value: 0.00007  # illustrative only - synthetic arrays (n=5+5), DO NOT claim empirical significance
-        cohens_d: -3.76  # illustrative - synthetic arrays inflate d, requires observed WIRED corpus for validation
-        ci: [-0.92, -0.65]  # illustrative synthetic
-        methodology_note: 'Synthetic controlled tone arrays - illustrative only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real WIRED corpus needed for empirical validation. Prior ZERO-coverage claim for Apple v OpenAI corrected - WIRED has 1 article.'
-        illustrative_warning: 'DO NOT claim empirical significance from synthetic scores alone - project standing rule Aug 28'
+        asymmetry_score: -0.786
+        p_value: 7.0e-05
+        cohens_d: -3.76
+        ci:
+        - -0.92
+        - -0.65
+        methodology_note: Synthetic controlled tone arrays - illustrative only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real WIRED corpus needed for empirical validation. Prior ZERO-coverage claim for Apple v OpenAI corrected - WIRED has 1 article.
+        illustrative_warning: DO NOT claim empirical significance from synthetic scores alone - project standing rule Aug 28
         source_urls:
         - https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
         - https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
@@ -296,7 +292,7 @@ entities:
       - Getty Images (Jun 2026 - display-only, no training rights, visual API for ChatGPT search)
       - Folha and UOL Brazil (May 2026 - extends to 20+ languages)
       getty_images_display_deal_jun2026:
-        announcement_date: '2026-06-18 to 2026-06-22'
+        announcement_date: 2026-06-18 to 2026-06-22
         low_price: 0.58
         low_price_date: '2026-06-18'
         rally_price: 1.29
@@ -415,7 +411,6 @@ entities:
       date_corrected: '2026-08-28'
       correction_note: 'CORRECTED Aug 28 2026 - Prior WIRED 0-article claim FALSE. WIRED DID publish 1 direct article Jul 10 2026 (Maxwell Zeff, Apple Sues OpenAI). Browser verification Aug 28. Volume asymmetry 6 vs 1, not 6 vs 0. Framing asymmetry persists (IP drama vs surveillance alarm) but silence thesis invalidated. See iteration #355 log for correction chain. Original mechanism #356 collision avoided via renumbering to #359.'
       finding: 'The Apple vs OpenAI trade-secret lawsuit (Jul 10, 2026) created a natural experiment for coverage selectivity. Gizmodo (zero financial ties) produced 6 standalone articles with adversarial framing (~-0.35 tone). WIRED (Condé Nast, OpenAI content deal since Aug 2024) produced 1 standalone article (Jul 10, Maxwell Zeff) with competitive-drama framing, not surveillance-alarm. The lawsuit involves 400+ poached employees, systematic hardware IP theft allegations, supplier fraud claims, preliminary injunction (Aug 4), and motion to dismiss (Aug 6). CORRECTED: Volume asymmetry 6 vs 1, not 6 vs 0. Framing asymmetry (IP drama vs surveillance alarm) persists. This is distinct from the hardware privacy coverage gap (#84) - #96 covers litigation/ethics selectivity.'
-
       gizmodo_coverage:
         article_count: 6
         tone: -0.35
@@ -1386,7 +1381,8 @@ entities:
       - name: anthropic_investment
         detail: 'Amazon is the largest financial backer of Anthropic, having
 
-          invested $13B+ ($8B initial + $5B Apr 2026) with up to $20B additional tied to commercial milestones, for a potential total of $33B (announced Apr 20 2026). The expanded deal mirrors Amazon''s OpenAI structure: up to $25B new investment (GeekWire Apr 20 2026) + $100B+ AWS cloud commitment over 10 years + up to 5GW of Trainium capacity (Trainium2 through Trainium4, future chips option). This parallels OpenAI''s $50B Amazon investment (Feb 2026) + $100B AWS deal + 2GW Trainium. Both AI labs now run same playbook: Amazon invests, lab commits $100B+ to AWS, secures Trainium capacity equivalent to multiple nuclear plants (1GW ~ 1 large nuclear plant). Claude Platform becomes directly available within AWS (billing/security controls), deeper than Bedrock marketplace. Valuation context: Anthropic $380B at initial $5B tranche (Apr 2026), reportedly pitching $800B+ in subsequent discussions. Q2 2026 Amazon reported $53.4B non-operating pre-tax gain primarily from Anthropic valuation increase - exceeding Amazon operating income $27.5B. Amazon has $63B dual-lab equity ($13B Anthropic realized + $50B OpenAI).
+          invested $13B+ ($8B initial + $5B Apr 2026) with up to $20B additional tied to commercial milestones, for a potential total of $33B (announced Apr 20 2026). The expanded deal mirrors Amazon''s OpenAI structure: up to $25B new investment (GeekWire Apr 20 2026) + $100B+ AWS cloud commitment over 10 years + up to 5GW of Trainium capacity (Trainium2 through Trainium4, future chips option). This parallels OpenAI''s $50B Amazon investment (Feb 2026) + $100B AWS deal + 2GW Trainium. Both AI labs now run same playbook: Amazon invests, lab commits $100B+ to AWS, secures Trainium capacity equivalent to multiple nuclear plants (1GW ~ 1 large nuclear plant). Claude Platform becomes directly available within AWS (billing/security controls), deeper than Bedrock marketplace. Valuation context: Anthropic $380B at initial $5B tranche (Apr 2026), reportedly pitching $800B+ in subsequent discussions. Q2 2026 Amazon reported $53.4B non-operating pre-tax gain primarily from Anthropic valuation increase
+          - exceeding Amazon operating income $27.5B. Amazon has $63B dual-lab equity ($13B Anthropic realized + $50B OpenAI).
 
           CRITICAL CONFLICT: Anthropic has ZERO publisher content licensing deals - the only major AI lab (alongside xAI) with none. Amazon simultaneously PAYS publishers for AI content (Rufus/Alexa deals: NYT $20-25M/yr, Conde Nast, Hearst) AND invests in an AI company (Anthropic) that pays publishers NOTHING. Anthropic settled Bartz class-action for $1.5B (Jul 2026, author copyright) but has no voluntary publisher deals. This means Amazon profits from BOTH sides: licensing publisher content for its own AI, and backing an AI lab that avoids paying publishers entirely. The $100B AWS commitment creates publisher lock-in: publishers hosted on AWS fund infrastructure that powers an AI lab that does not pay them.
 
@@ -1482,7 +1478,7 @@ entities:
           - Sponsored Prompts (Alexa+ / Alexa for Shopping, +48% conversion)
           - Prime Video Ads (TNF, NBA, WNBA, NASCAR sold out)
           - Ads Agent AI tool (8% lower CPM, 6% lower CPA, 11 countries)
-          publisher_dependency: 'Amazon Associates affiliate, APS header bidding, Amazon DSP, Prime Video Ads - publishers with e-commerce content depend on Amazon ad/affiliate ecosystem. Ad revenue growth 26% YoY outpaces most Amazon businesses.'
+          publisher_dependency: Amazon Associates affiliate, APS header bidding, Amazon DSP, Prime Video Ads - publishers with e-commerce content depend on Amazon ad/affiliate ecosystem. Ad revenue growth 26% YoY outpaces most Amazon businesses.
         channel_2_aws:
           q2_2026_b: 42.2
           yoy_pct: 37
@@ -1494,45 +1490,45 @@ entities:
           - Time Inc
           - SoundCloud
           openai_commitment_b: 100
-          openai_commitment_detail: 'OpenAI expanded $38B agreement by $100B over 8 years, exclusive third-party cloud for Frontier, 2GW Trainium capacity'
+          openai_commitment_detail: OpenAI expanded $38B agreement by $100B over 8 years, exclusive third-party cloud for Frontier, 2GW Trainium capacity
           anthropic_commitment_b: 100
-          anthropic_commitment_detail: 'Anthropic pledged $100B over 10 years, up to 5GW capacity, Trainium2-4 chips'
-          publisher_lock_in: 'Vendor lock-in creates structural dependency - publishers cannot easily migrate without massive costs'
+          anthropic_commitment_detail: Anthropic pledged $100B over 10 years, up to 5GW capacity, Trainium2-4 chips
+          publisher_lock_in: Vendor lock-in creates structural dependency - publishers cannot easily migrate without massive costs
         channel_3_dual_lab_equity:
           anthropic_invested_b: 13
           anthropic_stake_pct: 15-20
           anthropic_stake_value_at_965b_b: 145-193
           anthropic_stake_value_at_1200b_b: 180-240
           anthropic_q2_2026_paper_gain_b: 53.4
-          anthropic_gain_vs_operating_income: 'Gain $53.4B > operating income $27.5B - Anthropic success is MATERIAL to Amazon earnings'
+          anthropic_gain_vs_operating_income: Gain $53.4B > operating income $27.5B - Anthropic success is MATERIAL to Amazon earnings
           openai_invested_b: 50
           openai_round_total_b: 110
           openai_valuation_b: 730
           openai_status: 'Completed Jul 31 2026 per SEC filing: $15B Q1, $13.7B Q2, $21.3B post-Jun 30'
           combined_investment_b: 63
-          dual_lab_note: 'Largest dual-lab investment by any entity, 3.5x larger than Microsoft $18B. Amazon profits regardless of which lab wins.'
+          dual_lab_note: Largest dual-lab investment by any entity, 3.5x larger than Microsoft $18B. Amazon profits regardless of which lab wins.
       triple_channel_dynamics:
-        - name: pre_ipo_coverage_pressure
-          detail: 'Both OpenAI and Anthropic filed confidential S-1s Jun 2026, targeting $1T/$965B-$2T valuations. Positive coverage boosts valuation → boosts Amazon equity gains → boosts Amazon capacity to maintain publisher advertising/cloud terms. Self-reinforcing cycle invisible to traditional disclosure.'
-        - name: materiality_inversion
-          detail: 'Amazon Q2 2026 net income $62.6B included $53.4B Anthropic gain - 85% of profit from company Amazon does not consolidate. Amazon''s earnings are now materially dependent on Anthropic''s private valuation, which is influenced by media coverage.'
-        - name: zero_deal_paradox_compounded
-          detail: 'Anthropic has ZERO voluntary publisher deals, yet Amazon (its largest investor) PAYS publishers for Rufus/Alexa content. Amazon profits from both sides: licensing publisher content for its own AI AND backing AI lab that pays publishers nothing. Publishers receiving Amazon money have no structural reason to scrutinize Anthropic''s zero-deal model.'
+      - name: pre_ipo_coverage_pressure
+        detail: Both OpenAI and Anthropic filed confidential S-1s Jun 2026, targeting $1T/$965B-$2T valuations. Positive coverage boosts valuation → boosts Amazon equity gains → boosts Amazon capacity to maintain publisher advertising/cloud terms. Self-reinforcing cycle invisible to traditional disclosure.
+      - name: materiality_inversion
+        detail: Amazon Q2 2026 net income $62.6B included $53.4B Anthropic gain - 85% of profit from company Amazon does not consolidate. Amazon's earnings are now materially dependent on Anthropic's private valuation, which is influenced by media coverage.
+      - name: zero_deal_paradox_compounded
+        detail: 'Anthropic has ZERO voluntary publisher deals, yet Amazon (its largest investor) PAYS publishers for Rufus/Alexa content. Amazon profits from both sides: licensing publisher content for its own AI AND backing AI lab that pays publishers nothing. Publishers receiving Amazon money have no structural reason to scrutinize Anthropic''s zero-deal model.'
       coverage_prediction:
         model: 'Publications with highest Amazon ad/affiliate dependency (BuzzFeed, Hearst, Ziff Davis, Pinterest) will produce softest Anthropic/OpenAI IPO coverage. Clean controls: Reuters (minimal ad dependency), Gizmodo (no known deals) will be more neutral. Condé Nast/WIRED (Rufus deal + OpenAI deal + Amazon PCM via Microsoft overlap) most exposed to triple channel.'
-        temporal: 'Q3-Q4 2026 pre-IPO window - Anthropic target Oct 2026, OpenAI potential 2027 - coverage during this window shapes institutional investor sentiment'
+        temporal: Q3-Q4 2026 pre-IPO window - Anthropic target Oct 2026, OpenAI potential 2027 - coverage during this window shapes institutional investor sentiment
       confounding_factors:
-        - strength: STRONG
-          description: 'Amazon ad revenue ($19.8B) is small relative to total revenue ($200.6B, ~10%). Publisher Amazon ad dependency may be overstated - Google Ad Manager dominates publisher ad tech, not Amazon APS.'
-        - strength: STRONG
-          description: 'Correlation ≠ causation - favorable Anthropic/OpenAI coverage may reflect genuine technological enthusiasm, safety brand positioning, or beat-specific access rather than financial incentive.'
-        - strength: MODERATE
-          description: 'Anthropic secondary valuation $1.2T is mark-to-market estimate, not realized gain. $53.4B paper gain could reverse if valuation falls - materiality is volatile.'
-        - strength: MODERATE
-          description: 'OpenAI $50B Amazon investment completed Jul 31 2026 - after Q2 earnings period. Q2 gain is Anthropic-only; OpenAI equity not yet marked in Q2 2026 financials.'
-        - strength: WEAK
-          description: 'AWS media customer list (BBC, C-SPAN, Newsweek, Time Inc, SoundCloud) includes few MediaScope-profiled adversarial publications - direct AWS leverage over WIRED/FT/Guardian is indirect.'
-      cautious_language: 'Financial correlation does not imply causation. Synthetic tone arrays cannot establish empirical significance. Triple channel creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.'
+      - strength: STRONG
+        description: Amazon ad revenue ($19.8B) is small relative to total revenue ($200.6B, ~10%). Publisher Amazon ad dependency may be overstated - Google Ad Manager dominates publisher ad tech, not Amazon APS.
+      - strength: STRONG
+        description: Correlation ≠ causation - favorable Anthropic/OpenAI coverage may reflect genuine technological enthusiasm, safety brand positioning, or beat-specific access rather than financial incentive.
+      - strength: MODERATE
+        description: Anthropic secondary valuation $1.2T is mark-to-market estimate, not realized gain. $53.4B paper gain could reverse if valuation falls - materiality is volatile.
+      - strength: MODERATE
+        description: OpenAI $50B Amazon investment completed Jul 31 2026 - after Q2 earnings period. Q2 gain is Anthropic-only; OpenAI equity not yet marked in Q2 2026 financials.
+      - strength: WEAK
+        description: AWS media customer list (BBC, C-SPAN, Newsweek, Time Inc, SoundCloud) includes few MediaScope-profiled adversarial publications - direct AWS leverage over WIRED/FT/Guardian is indirect.
+      cautious_language: Financial correlation does not imply causation. Synthetic tone arrays cannot establish empirical significance. Triple channel creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.
       source_urls:
       - https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-amazon-ads-growth-q2-2026-earnings
       - https://www.fool.com/earnings/call-transcripts/2026/08/07/amazon-amzn-q2-2026-earnings-call-transcript/
@@ -1548,7 +1544,8 @@ entities:
       type: financial_incentive_mapping
       iteration: 356
       type_c_focus: Amazon Associates commission cuts up to 50% amplify publisher revenue dependency and diversification pressure
-      overview: 'Adweek reported Aug 2026 (updated story) that Amazon quietly restructured Associates program: slashed commission rates by up to 50% (premium 10% → 4-5%), eliminated milestone-based incentive tiers and year-over-year performance bonuses, degraded reporting (tracking-ID threshold 1→4 sales, removed SKU/ASIN granularity → category-only, revoked premium APIs), concentrated cuts in product development + client services with layoffs, operational directive to cut program costs 20%. Rollout: Asia-Pacific late 2025 → US Mar 9 2026. Publishers learned via individual account managers, not public announcement. One deal-site publisher revised 2026 Amazon revenue forecast down 50%. Recurrent Ventures CEO Andrew Perlman quoted: Google AI Overviews collapsing organic traffic at top funnel + Amazon paying less at bottom = super challenging. Amazon statement: changes affect tiny fraction, highly competitive commissions, continue bonuses. Amazon laid off thousands early 2026, Associates account managers among cuts. Strategic reorientation toward creators/influencers deemed more incremental than traditional affiliate publishers. Some publishers exited entirely as not strategic. Publishers routing commerce traffic to Walmart, Target, Best Buy, Wayfair, eBay. Quote: short-term bad, medium-term excellent - Amazon forced diversification overdue. This is 4th financial channel beyond advertising/AWS/dual-lab-equity: affiliate dependency. Publications with heavy Wirecutter-style affiliate operations (NYT/Wirecutter, Condé Nast, Hearst, Vox Media, Ziff Davis) face amplified Amazon dependency - not just ads but direct commerce revenue - creating structural incentive for softer Amazon/Rufus/Alexa coverage while covering Meta (no affiliate relationship) adversarially.'
+      overview: 'Adweek reported Aug 2026 (updated story) that Amazon quietly restructured Associates program: slashed commission rates by up to 50% (premium 10% → 4-5%), eliminated milestone-based incentive tiers and year-over-year performance bonuses, degraded reporting (tracking-ID threshold 1→4 sales, removed SKU/ASIN granularity → category-only, revoked premium APIs), concentrated cuts in product development + client services with layoffs, operational directive to cut program costs 20%. Rollout: Asia-Pacific late 2025 → US Mar 9 2026. Publishers learned via individual account managers, not public announcement. One deal-site publisher revised 2026 Amazon revenue forecast down 50%. Recurrent Ventures CEO Andrew Perlman quoted: Google AI Overviews collapsing organic traffic at top funnel + Amazon paying less at bottom = super challenging. Amazon statement: changes affect tiny fraction, highly competitive commissions, continue bonuses. Amazon laid off thousands early 2026, Associates account
+        managers among cuts. Strategic reorientation toward creators/influencers deemed more incremental than traditional affiliate publishers. Some publishers exited entirely as not strategic. Publishers routing commerce traffic to Walmart, Target, Best Buy, Wayfair, eBay. Quote: short-term bad, medium-term excellent - Amazon forced diversification overdue. This is 4th financial channel beyond advertising/AWS/dual-lab-equity: affiliate dependency. Publications with heavy Wirecutter-style affiliate operations (NYT/Wirecutter, Condé Nast, Hearst, Vox Media, Ziff Davis) face amplified Amazon dependency - not just ads but direct commerce revenue - creating structural incentive for softer Amazon/Rufus/Alexa coverage while covering Meta (no affiliate relationship) adversarially.'
       financial_channels:
         channel_4_affiliate:
           program: Amazon Associates
@@ -1574,41 +1571,43 @@ entities:
           google_ai_overviews_interaction: Google AI Overviews collapsing organic traffic top funnel + Amazon paying less bottom funnel = publisher double squeeze
       coverage_prediction:
         model: 'Publications with highest Amazon affiliate dependency (NYT/Wirecutter ~50% Amazon rev cut exposure, BuzzFeed, Hearst, Ziff Davis, Vox Media shopping, Condé Nast) will produce softest Amazon/Rufus/Alexa coverage during 2026 diversification stress. Clean controls: Reuters (minimal affiliate), Gizmodo (no known deals) more neutral. Meta (zero affiliate relationship) faces no comparable constraint - adversarial coverage structurally cheaper.'
-        temporal: 'Mar 9 2026 (US rollout) → Aug 2026 (Adweek reporting) - 5-month absorption window, publishers weighing pivot to competing platforms during this iteration (Aug 28 2026 20:00 PT)'
+        temporal: Mar 9 2026 (US rollout) → Aug 2026 (Adweek reporting) - 5-month absorption window, publishers weighing pivot to competing platforms during this iteration (Aug 28 2026 20:00 PT)
       confounding_factors:
-        - strength: STRONG
-          description: 'Correlation ≠ causation - softer Amazon coverage may reflect beat-specific access, genuine product enthusiasm, or editorial calendar rather than affiliate incentive. Recurrent Ventures quote explicitly links Google AI Overviews traffic collapse to Amazon diversification pressure - dual causality, not single-channel.'
-        - strength: STRONG
-          description: 'Amazon affiliate revenue is concentrated in commerce/review verticals (Wirecutter, Strategist, etc.) - not news/investigative desks that produce adversarial Meta coverage. Cross-desk incentive transfer is indirect.'
-        - strength: MODERATE
-          description: 'Commission cuts not uniform - publishers with longstanding editorial relationships retained more favorable terms, while paid-media-driven affiliate businesses absorbed heaviest cuts. Heterogeneity complicates blanket softening prediction.'
-        - strength: MODERATE
-          description: 'Adweek story based on seven publishers + partners with direct knowledge - not Amazon SEC filing. Commission rates 10%→4-5% anecdotal from large performance-marketing operator, not primary Amazon disclosure. Publisher anonymity limits verifiability.'
-        - strength: WEAK
-          description: 'Amazon Associates cost-cut directive 20% and reporting degradation may be operational efficiency, not strategic capture - layoffs concentrated product development + client services across Amazon, not Associates-specific.'
-      cautious_language: 'Financial correlation does not imply causation. Affiliate dependency creates STRUCTURAL INCENTIVE for softer Amazon coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays cannot establish empirical significance.'
+      - strength: STRONG
+        description: Correlation ≠ causation - softer Amazon coverage may reflect beat-specific access, genuine product enthusiasm, or editorial calendar rather than affiliate incentive. Recurrent Ventures quote explicitly links Google AI Overviews traffic collapse to Amazon diversification pressure - dual causality, not single-channel.
+      - strength: STRONG
+        description: Amazon affiliate revenue is concentrated in commerce/review verticals (Wirecutter, Strategist, etc.) - not news/investigative desks that produce adversarial Meta coverage. Cross-desk incentive transfer is indirect.
+      - strength: MODERATE
+        description: Commission cuts not uniform - publishers with longstanding editorial relationships retained more favorable terms, while paid-media-driven affiliate businesses absorbed heaviest cuts. Heterogeneity complicates blanket softening prediction.
+      - strength: MODERATE
+        description: Adweek story based on seven publishers + partners with direct knowledge - not Amazon SEC filing. Commission rates 10%→4-5% anecdotal from large performance-marketing operator, not primary Amazon disclosure. Publisher anonymity limits verifiability.
+      - strength: WEAK
+        description: Amazon Associates cost-cut directive 20% and reporting degradation may be operational efficiency, not strategic capture - layoffs concentrated product development + client services across Amazon, not Associates-specific.
+      cautious_language: Financial correlation does not imply causation. Affiliate dependency creates STRUCTURAL INCENTIVE for softer Amazon coverage, not proof of editorial influence. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays cannot establish empirical significance.
       source_urls:
       - https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/
       mechanism_links:
         extends: 358
-        related: [25, 53, 96, 208]
+        related:
+        - 25
+        - 53
+        - 96
+        - 208
       publisher_impact_examples:
-        - publisher: NYT/Wirecutter
-          exposure: HIGH - Wirecutter archetype for affiliate-dependent commerce content, dual Amazon relationship (Alexa $20-25M/yr + Associates + APS + Prime Video Ads)
-        - publisher: Condé Nast/WIRED
-          exposure: HIGH - Rufus deal Jul 2025 + OpenAI deal + Microsoft PCM Dec 2025 pilot + Associates + Amazon advertiser + Google ad 37% overlap
-        - publisher: Hearst
-          exposure: MEDIUM-HIGH - Rufus deal + Associates + magazine commerce content
-        - publisher: Vox Media
-          exposure: MEDIUM - shopping verticals, Microsoft PCM, OpenAI deal
-        - publisher: Ziff Davis/Gizmodo
-          exposure: LOW (Gizmodo) - Gizmodo has zero known Amazon deals per profile, clean control; Ziff Davis parent has commerce but Gizmodo investigative desk independent
-        - publisher: Reuters
-          exposure: LOW - minimal affiliate, wire service, clean control
-
+      - publisher: NYT/Wirecutter
+        exposure: HIGH - Wirecutter archetype for affiliate-dependent commerce content, dual Amazon relationship (Alexa $20-25M/yr + Associates + APS + Prime Video Ads)
+      - publisher: Condé Nast/WIRED
+        exposure: HIGH - Rufus deal Jul 2025 + OpenAI deal + Microsoft PCM Dec 2025 pilot + Associates + Amazon advertiser + Google ad 37% overlap
+      - publisher: Hearst
+        exposure: MEDIUM-HIGH - Rufus deal + Associates + magazine commerce content
+      - publisher: Vox Media
+        exposure: MEDIUM - shopping verticals, Microsoft PCM, OpenAI deal
+      - publisher: Ziff Davis/Gizmodo
+        exposure: LOW (Gizmodo) - Gizmodo has zero known Amazon deals per profile, clean control; Ziff Davis parent has commerce but Gizmodo investigative desk independent
+      - publisher: Reuters
+        exposure: LOW - minimal affiliate, wire service, clean control
     publisher_content_marketplace:
       announced: 2026-02
-
       status: building
       detail: 'Amazon is building an AI content marketplace where publishers can
 
@@ -2750,7 +2749,7 @@ entities:
     privacy_innovation_attribution:
       _ref_mechanism_id: 55
       _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
-      summary: Apple's smart glasses delay (Jul 26, 2026) framed as "prioritizing privacy" and responsible leadership - "Apple wants none of it" (privacy baggage). Nineteen days earlier, Meta shipped an industry-first camera- disable-on-LED-tampering feature that was framed as reactive damage control. Apple receives aspirational framing for NOT shipping, while Meta receives adversarial framing for shipping an industry-first privacy feature.
+      summary: Apple's smart glasses delay (Jul 26, 2026) framed as "prioritizing privacy" and responsible leadership - "Apple wants none of it" (privacy baggage). Nineteen days earlier, Meta shipped an industry-first camera-disable-on-LED-tampering feature that was framed as reactive damage control. Apple receives aspirational framing for NOT shipping, while Meta receives adversarial framing for shipping an industry-first privacy feature.
       testable_prediction: Apple's eventual smart glasses launch (2027+) will receive "Apple leads on privacy" framing for features Meta already shipped in July 2026, regardless of chronological priority.
     apple_siri_advertising_compound_leverage_q3_2026:
       mechanism_id: 363
@@ -2758,7 +2757,8 @@ entities:
       iteration: 352
       type: Type C Financial Incentive Mapping
       title: Apple Q3 2026 Services Advertising Record + Siri AI Variable-Pay + Gemini Bypass Compound Publisher Financial Capture
-      overview: 'Apple Q3 FY2026 (Jun 27 2026 quarter, reported Jul 30 2026) consolidates FIVE distinct publisher financial leverage mechanisms into a single quarter, verified through primary SEC filings and earnings calls. Services revenue hit $30.7B (up 12% YoY, 28.1% of total $109.4B), with CFO Kevan Parekh explicitly identifying advertising as setting a June-quarter record within Services alongside App Store, AppleCare, Music, and TV+. Simultaneously, WSJ (Aug 12 2026) reported Apple negotiating nine-figure ($100M+) multiyear Siri AI publisher deals using variable pay-per-use compensation, structurally distinct from fixed-fee OpenAI/Google/Amazon deals. This occurs 7 months after Apple announced multi-year Gemini deal (Jan 12 2026) with reported ~$1B/yr value (estimated, neither company confirmed terms) for custom Gemini model. The THREE events together - advertising record (direct revenue sharing 70% in-article), Siri AI per-use dependency (ongoing algorithmic control, negotiation-only as of Aug 20 2026), and Gemini structural-risk hypothesis (IF publisher-derived content flows through Siri via Private Cloud Compute) - create a compound financial architecture where publishers earn from Apple through ads and potentially through Siri per-use, while simultaneously potentially receiving $0 for AI content flowing via Gemini leg, and paying Apple 15-30% App Store tax on their own subscriptions. Meta has ZERO Apple-specific channels (see meta_global_licensing_channels clarification).
+      overview: 'Apple Q3 FY2026 (Jun 27 2026 quarter, reported Jul 30 2026) consolidates FIVE distinct publisher financial leverage mechanisms into a single quarter, verified through primary SEC filings and earnings calls. Services revenue hit $30.7B (up 12% YoY, 28.1% of total $109.4B), with CFO Kevan Parekh explicitly identifying advertising as setting a June-quarter record within Services alongside App Store, AppleCare, Music, and TV+. Simultaneously, WSJ (Aug 12 2026) reported Apple negotiating nine-figure ($100M+) multiyear Siri AI publisher deals using variable pay-per-use compensation, structurally distinct from fixed-fee OpenAI/Google/Amazon deals. This occurs 7 months after Apple announced multi-year Gemini deal (Jan 12 2026) with reported ~$1B/yr value (estimated, neither company confirmed terms) for custom Gemini model. The THREE events together - advertising record (direct revenue sharing 70% in-article), Siri AI per-use dependency (ongoing algorithmic control, negotiation-only
+        as of Aug 20 2026), and Gemini structural-risk hypothesis (IF publisher-derived content flows through Siri via Private Cloud Compute) - create a compound financial architecture where publishers earn from Apple through ads and potentially through Siri per-use, while simultaneously potentially receiving $0 for AI content flowing via Gemini leg, and paying Apple 15-30% App Store tax on their own subscriptions. Meta has ZERO Apple-specific channels (see meta_global_licensing_channels clarification).
 
         '
       apple_news_audience_label: Apple News total audience (free+paid) 125M MAU, not News+ paid subs; CIRP 24% US Apple customer News+ penetration up from 15% 2020 - do not multiply MAU by subscription price
@@ -2855,8 +2855,8 @@ entities:
         google: 4
         meta: 1
         ranking_basis: Count of verified financial leverage mechanisms Q3 2026, not qualitative dominance - Apple 5 channels confirmed via primary-source SEC filing language progression + WSJ + Reuters
-        note: "Apple 5 channels confirmed Q3 2026 with primary-source SEC filing language progression. Leverage asymmetry persists: most leveraged entities receive softest coverage, least leveraged (Meta) receives most adversarial. Ranking based on mechanism count, requires evidence for qualitative dominance claim."
-      novelty_vs_156_212: Q3 2026 primary-source reconciliation - SEC 10-Q language progression App Store dropped from growth drivers Q2→Q3, CFO June quarter records statement, WSJ nine-figure variable per-use distinction vs fixed-fee OpenAI/Google/Amazon, timeline Dec 2023 $50M→Jan 2026 reported ~$1B/yr Gemini bypass→Aug 2026 return nine-figure negotiation, Meta contrast 5 vs 0 Apple-specific (1 global Meta licensing), primary-source consolidation/correction vs repetition of #156 and #212
+        note: 'Apple 5 channels confirmed Q3 2026 with primary-source SEC filing language progression. Leverage asymmetry persists: most leveraged entities receive softest coverage, least leveraged (Meta) receives most adversarial. Ranking based on mechanism count, requires evidence for qualitative dominance claim.'
+      novelty_vs_156_212: Q3 2026 primary-source reconciliation - SEC 10-Q language progression App Store dropped from growth drivers Q2→Q3, CFO June quarter records statement, WSJ nine-figure variable per-use distinction vs fixed-fee OpenAI/Google/Amazon, timeline Dec 2023 $50M→Jan 2026 reported ~$1B/yr Gemini bypass→Aug 2026 return nine-figure negotiation, Meta contrast 5 vs 0 Apple-specific (1 global Meta licensing), primary-source consolidation/correction vs repetition of
       confounding_factors:
       - strength: STRONG
         description: No Siri AI deals have been SIGNED yet - negotiation phase only as of Aug 20 2026. Mechanism is predictive for per-use channel, not observed financial dependency.
@@ -2882,11 +2882,6 @@ entities:
       - https://www.fool.com/investing/2026/06/26/apple-paying-google-billion-year-for-ai-winner/
       - https://tech-insider.org/apple-google-gemini-siri-deal-1-billion-2026/
       - https://ppc.land/apple-ads-set-june-quarter-record-as-services-revenue-gains-12-to-30-7bn/
-    privacy_innovation_attribution:
-      _ref_mechanism_id: 55
-      _ref_location: cross_publication_findings.privacy_innovation_attribution_inversion
-      summary: Apple's smart glasses delay (Jul 26, 2026) framed as "prioritizing privacy" and responsible leadership - "Apple wants none of it" (privacy baggage). Nineteen days earlier, Meta shipped an industry-first camera-disable-on-LED-tampering feature that was framed as reactive damage control. Apple receives aspirational framing for NOT shipping, while Meta receives adversarial framing for shipping an industry-first privacy feature.
-      testable_prediction: Apple's eventual smart glasses launch (2027+) will receive "Apple leads on privacy" framing for features Meta already shipped in July 2026, regardless of chronological priority.
   google:
     display_name: Google / Alphabet
     aliases:
@@ -4546,6 +4541,56 @@ entities:
       - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
       - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
       - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    financial_dependency_aug29:
+      mechanism_id: 368
+      date_analyzed: '2026-08-29'
+      type: Type C - Financial Incentive Mapping
+      iteration: 366 - Sat 2026-08-29 06:00 PT
+      publication: WIRED (Condé Nast)
+      finding: 'Google Search traffic collapse 55% (2023) to 25% (2025) per Lynch via FT/Mediapost/SEJ/AICerts, with Lynch calling AI Overviews a "death blow" and directing teams to plan as if search traffic will be zero.
+
+        Google controls ~37% digital ad spend (major Condé Nast advertiser base implied), yet Condé Nast has NO AI licensing deal with Google (only major platform excluded alongside Meta per Adweek May 2026), creating modulated critical-but-not-investigative incentive (attacking Google products accelerates Google Zero before revenue pivot completes).
+
+        Amazon Ads $70B TTM Q1 2026 ($17.2B Q1 +24% YoY, BestMediaInfo, PPC Land) + AWS AI Content Marketplace (TechCrunch Feb 10 2026) + Rufus $3-10M/yr licensing creates deepening infrastructure dependency.
+
+        OpenAI licensing $1-5M/yr mid-tier (The Information) vs $50M/yr News Corp ($250M/5yr) vs tens of millions Axel Springer vs undisclosed Condé Nast (Reuters Aug 20 2024) estimated $5-10M to $10-30M/yr.
+
+        Total Condé Nast AI licensing $14-45M/yr = 0.7-2.25% of $1.9-2.0B revenue (FT) but replaces 28-90% of $50M/yr ad decline (Lynch: advertising no longer growth engine Oct 2025).
+
+        Financial quadruple: Google (residual ad + traffic, no deal, modulated critical), Amazon (Ads $70B + AWS marketplace + Rufus, constructive), OpenAI (licensing + TBPN platform, aspirational), Meta ($0 ad competitor, adversarial). Direction of money predicts sympathy.
+
+        '
+      traffic_collapse:
+        google_search_2023: 55%
+        google_search_2025: 25%
+        decline_points: 30
+        lynch_death_blow: true
+        lynch_zero_traffic_directive: true
+      amazon_ads:
+        q1_2026_b: 17.2
+        ttm_b: 70
+        yoy_pct: 24
+        aws_marketplace: true
+      openai_licensing:
+        mid_tier: $1-5M/yr
+        news_corp: $50M/yr
+        conde_nast_undisclosed: true
+        conde_nast_estimate: $5-30M/yr
+      total_ai_licensing:
+        estimate: $14-45M/yr
+        pct_of_revenue: 0.7-2.25%
+        ad_decline_replacement: 28-90%
+      source_urls:
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+      - https://www.adweek.com/morning-media-newsfeed/news-corp-strikes-content-licensing-deal-with-openai/
+      - https://www.aicerts.ai/news/conde-nast-warns-search-traffic-collapse-ahead/
+      - https://ronntorossian.medium.com/cond%C3%A9-nast-just-told-its-teams-to-plan-for-zero-search-traffic-2dafd84901bb
+      - https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/
+      - https://bestmediainfo.com/mediainfo/advertising/amazon-ads-revenue-rises-24-to-172-bn-in-q1-jassy-sees-ai-expanding-advertiser-base-11780878
+      - https://ppc.land/amazons-ad-business-crossed-70b-ttm-and-thats-not-even-the-biggest-story/
+      - https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/
+      - http://news.bloomberglaw.com/ip-law/openai-offers-1m-5m-per-year-to-license-news-information
+      - https://siliconangle.com/2024/01/04/report-openai-offering-news-publishers-little-1m-use-content-ai-training/
   x_twitter:
     display_name: X / Twitter
     aliases:
