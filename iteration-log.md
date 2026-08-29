@@ -1,3 +1,90 @@
+## Iteration #361 — Sat 2026-08-29 01:00 PT (Type C: Financial Incentive Mapping — Amazon Apr 20 2026 $25B Anthropic Expansion Mirroring OpenAI + Getty Display-Only Visual Licensing)
+
+**Date:** 2026-08-29 01:00 PT
+**Type:** C — Financial Incentive Mapping
+**Mechanism:** #361 Amazon dual-lab $63B+ closed-loop financial leverage + OpenAI Getty visual licensing materiality
+**Iteration Log Position:** Newest at top (file is newest-first)
+**Focus:** Type C mandate — Map financial incentive channels where Amazon simultaneously pays publishers for AI content AND invests in AI labs that pay publishers nothing, plus OpenAI display-only visual licensing validating premium content monetization.
+
+**Rotation Context:**
+- #357 Type D Statistical Validity Consolidation — 21:00 PT Aug 28
+- #358 Type E Podcast Sentiment Tracking — Epstein Ad, Kay Green, Entertainment Cascade — 22:00 PT Aug 28
+- #359 Type A Competitor Coverage Deep Dive — FT × OpenAI Workforce + Rogue + Anthropic Hardware — 23:00 PT Aug 28
+- #360 Type B Journalist Cross-Entity Tracking — Hannah Murphy FT Meta vs Snap AR Glasses — 00:00 PT Aug 29
+- #361 Type C Financial Incentive Mapping — Amazon Anthropic Expansion + Getty Display — 01:00 PT Aug 29 (rotation correct B→C, next expected D)
+
+**New Financial Mechanisms Verified (Aug 29 2026 UTC Search):**
+
+1. **Amazon Apr 20 2026 Anthropic Expansion — $5B Now + Up to $20B Milestone + $100B AWS 10yr + 5GW Trainium**
+   - Announcement: Apr 20 2026 2:49pm PT (GeekWire Todd Bishop), 4:10pm PDT TechCrunch same day
+   - Structure: $5B immediate at $380B valuation, up to $20B additional tied to commercial milestones, on top of $8B previously invested (2023-2024), total realized $13B, potential $33B
+   - AWS commitment: $100B+ over 10 years, up to 5GW Trainium capacity (Trainium2 through Trainium4, future chips option), 1GW ~ 1 large nuclear plant equivalent (GeekWire: 5GW = 5 nuclear plants computing equivalent)
+   - Integration: Full Claude Platform directly within AWS (billing/security controls), deeper than Bedrock marketplace, 100K customers run Claude on AWS (Barchart AP)
+   - Mirroring: Amazon invested $50B in OpenAI Feb 2026 + $100B AWS 8yr + 2GW Trainium + exclusive Frontier distribution. Anthropic deal mirrors same $100B cloud playbook, same Trainium dependency, same direct console integration. Amazon runs identical $100B playbook with BOTH top AI labs.
+   - Valuation context: Anthropic $380B at deal, reportedly pitching $800B+ in subsequent VC discussions (TechCrunch), Amazon Q2 2026 reported $53.4B non-operating pre-tax gain primarily from Anthropic — exceeding operating income $27.5B (MarketWatch live coverage Jul 30 2026, Insidentity blog Jul 31 2026)
+   - Publisher conflict: Anthropic has ZERO publisher content licensing deals (only major AI lab with none besides xAI), yet Amazon PAYS publishers for Rufus/Alexa content (NYT $20-25M/yr, Conde Nast, Hearst). Amazon profits both sides: licensing publisher content for own AI, backing lab that avoids paying publishers. $100B AWS commitment creates publisher lock-in funding AI lab that does not pay them.
+   - Coverage prediction: Publishers hosted on AWS (BBC, C-SPAN, Newsweek, Time, SoundCloud) and receiving Amazon ad/affiliate revenue ($19.8B Q2 +26% YoY, $76B TTM) have financial incentive to frame Anthropic favorably (safety brand) vs Meta adversarially (zero channels). Anthropic IPO banks (Goldman, Morgan Stanley, JPMorgan) same as Meta coverage banks — see IPO underwriter research pipeline.
+   - Confounders: Safety branding may independently explain soft coverage; $53.4B gain is paper not cash; milestone $20B not guaranteed; Trainium 5GW is capacity option not delivered; publisher AWS dependency does not imply editorial pressure.
+   - Falsification: If Anthropic announces voluntary publisher licensing deals before IPO, Amazon dual-side profit thesis weakens. If publishers migrate off AWS at scale, lock-in thesis weakens.
+
+2. **OpenAI Getty Images Display-Only Deal Jun 18-22 2026 — Visual Infrastructure Licensing Validates Premium Content Thesis**
+   - Announcement: Jun 18 low $0.58 (all-time low, NYSE non-compliance Mar 17 2026 sub-dollar), rally to $1.29 Jun 22 (+122%)
+   - Structure: Strictly display partnership — OpenAI can display licensed images with attribution in ChatGPT search/discovery, NO model training rights. Mirrors Oct 2025 Perplexity AI display contract. Protective IP model: recurring licensing without diluting core assets, low marginal cost.
+   - Financials: Standalone Q1 2026 Creative -8% currency-neutral, enterprise subs 57.4% revenue — AI licensing positions library as licensed API endpoint, high-margin recurring, bypassing legacy transactional friction.
+   - Merger context: Getty-Shutterstock merger DOJ unconditional Feb 2026, UK CMA conditional May 15 2026 (divest UK/global editorial Rex/Splash/Backgrid, undertakings Jun 10), transaction imminent. AI deal validates premium visual infrastructure thesis, re-rating option value.
+   - Publisher deal portfolio extension: OpenAI now 24+ deals (was 20+), 160+ outlets, 20+ languages, Brazil Folha/UOL May 2026 extends language coverage. News Corp $250M/5yr largest, Axel Springer ~$13M/yr second, Getty adds visual licensing dimension beyond text.
+   - Financial incentive: Visual search requires authenticated indemnified content — AI operators must pay. Same logic extends to text publishers but Getty proves willingness to pay for display rights without training rights — a model publishers could adopt if they fear training dilution.
+   - Coverage prediction: Publications with OpenAI deals (24+) receive +48% ChatGPT citation premium (Press Ranger/OtterlyAI Jun 2026 study, 129.3M citations, 7 platforms). Getty deal adds visual citation premium — publishers with image-heavy content (Condé Nast 16 titles, Hearst) benefit disproportionately.
+   - Confounders: Stock rally may reflect merger arbitrage not AI deal; display-only may be less valuable than training rights; Getty distress (58c) makes it price-taker not price-maker.
+   - Falsification: If OpenAI cancels display deal within 12 months, or if Shutterstock stock did not rally in tandem (it did +18% per Barchart), visual licensing thesis weakens.
+
+**Profile Updates:**
+
+- Updated `profiles/competitor-entities.yaml`:
+  - `amazon.sextuple_publisher_leverage.layers[anthropic_investment]`:
+    - Added potential_total_b 33 (8+5+20), initial 8, fresh 5, milestone 20, valuation 380, AWS commitment 100, Trainium 5GW, mirroring true
+    - Expanded detail: $5B now + up to $20B milestone, $100B AWS 10yr, 5GW nuclear plant equivalent, direct Claude console in AWS, 100K customers, $53.4B Q2 gain exceeding operating income, dual-lab $63B closed loop, both-sides profit mechanism, publisher lock-in funding non-paying AI lab, mirroring OpenAI $50B+$100B+2GW structure
+    - Source URLs: GeekWire Apr 20 2026 doubling down, TechCrunch Apr 20 2026 $5B/$100B, MarketWatch Q2 gain, Insidentity blog cross-200B quarter analysis
+  - `openai.publisher_content_deal_portfolio`:
+    - total_deals: 20+ → 24+ (adds Getty + Folha/UOL Brazil May 2026)
+    - notable_partners: Added Getty Images (Jun 2026 display-only no training, visual API) + Folha and UOL Brazil (May 2026 20+ languages)
+    - Added sub-object getty_images_display_deal_jun2026: dates Jun 18-22, low 0.58, rally 1.29, rally_pct 122, structure display-only attribution no training, precedent Oct 2025 Perplexity, market validation Q1 Creative -8% vs enterprise 57.4%, merger DOJ Feb unconditional CMA May conditional divest Rex/Splash/Backgrid undertakings Jun 10 imminent, significance authenticated indemnified visual infrastructure legal precedent must pay for premium distribution, source URLs TradingView MarketBeat and Barchart
+
+**Cautious Language:**
+
+- Amazon dual-lab investment is descriptive financial architecture, not proof of editorial intent. Confounders acknowledged:
+  - Anthropic safety brand may independently explain soft coverage vs Meta — not purely financial
+  - $53.4B Q2 gain is unrealized paper gain (valuation increase), not cash profit — AWS revenue $42.2B is operational
+  - $20B milestone is contingent on commercial milestones (unspecified) — may never materialize
+  - 5GW is capacity reservation/option (up to), not delivered chips — Trainium4 not available Dec 2026 (Trainium3 latest)
+  - Publisher AWS dependency does not prove editorial capture — vendor lock-in is structural not intentional
+  - n=1 per company in investment size comparison (Amazon $13B vs Meta $0) is descriptive not statistically significant — no p-value
+  - Synthetic framing scores illustrative only per Iteration #357 standing rule — do not claim empirical significance from synthetic arrays
+
+- Getty display deal is descriptive market event, not causal proof of publisher monetization model:
+  - Stock rally 58c→$1.29 (+122%) confounded by merger arbitrage (DOJ Feb, CMA May) — cannot isolate AI deal contribution
+  - Display-only structure may be less lucrative than training deals — $5-10M/yr FT vs unknown Getty value (undisclosed)
+  - Visual licensing may not generalize to text licensing — images have clearer copyright than news facts
+  - Single company (Getty) is distressed seller (NYSE non-compliance) — may accept terms healthy publishers would reject
+
+**Tests Added:**
+
+- `tests/test_amazon_anthropic_expansion_apr2026_getty_display_type_c.py`: 7 tests validating profile loads (entities key), amazon anthropic expansion fields (13 total, 33 potential, 5 fresh, 20 milestone, 100 AWS, 5GW, mirroring true, source URLs geekwire/techcrunch), no em dash in detail, openai Getty display deal (total_deals 24+, partners include Getty display, sub-object exists, structure display-only no training, low 0.58 rally 1.29, source URLs tradingview/barchart), no em dash in Getty block, all source URLs https, dual-lab financial mechanism (both openai_investment and anthropic_investment layers exist, detail contains both sides).
+
+**Commit:** `type-c: Amazon Apr 20 $5B+20M Anthropic expansion $100B AWS 5GW mirroring OpenAI + Getty display-only visual licensing`
+
+**Sources Verified:**
+- Amazon Anthropic expansion Apr 20 2026: https://www.geekwire.com/2026/amazon-doubles-down-on-anthropic-with-25b-investment-mirroring-its-openai-cloud-deal/
+- Anthropic $5B/$100B TechCrunch Apr 20 2026: https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/
+- Amazon Q2 $53.4B Anthropic gain: https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3 + https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
+- Getty OpenAI display deal TradingView: https://www.tradingview.com/news/marketbeat:6504963f6094b:0-getty-images-openai-deal-gives-the-stock-a-new-ai-licensing-story/
+- Getty OpenAI display deal Barchart: https://www.barchart.com/story/news/3000014/getty-images-openai-deal-gives-the-stock-a-new-ai-licensing-story
+- OpenAI publisher deals map (20+ publishers 160+ outlets): https://llmpulse.ai/blog/openai-publisher-deals/
+- Google telling publishers share content for AI or lose fees (existing mechanism, already in profile): https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+- Amazon OpenAI $50B investment: https://www.geekwire.com/2026/amazon-invests-50b-in-openai-deepens-aws-partnership-with-expanded-100b-cloud-deal/ (context for mirroring)
+
+---
+
 ## Iteration #360 — Sat 2026-08-29 00:00 PT (Type B: Journalist Cross-Entity Tracking — Hannah Murphy FT Meta vs Snap AR Glasses — Verification Extension with 2026 Controls)
 
 **Date:** 2026-08-29 00:00 PT

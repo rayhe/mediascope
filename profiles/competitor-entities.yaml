@@ -268,7 +268,7 @@ entities:
       - https://www.thewrap.com/media-platforms/journalism/why-openai-bought-tbpn/
       - https://www.pymnts.com/acquisitions/2026/openai-buys-tech-talk-show-tbpn-in-media-expansion/
     publisher_content_deal_portfolio:
-      total_deals: 20+
+      total_deals: 24+
       total_outlets: 160+
       languages: 20+
       estimated_total_annual_value_m: 300-400
@@ -293,6 +293,23 @@ entities:
       - Time (Jun 2024)
       - Schibsted Media (Feb 2025)
       - Axios (Jan 2025)
+      - Getty Images (Jun 2026 — display-only, no training rights, visual API for ChatGPT search)
+      - Folha and UOL Brazil (May 2026 — extends to 20+ languages)
+      getty_images_display_deal_jun2026:
+        announcement_date: '2026-06-18 to 2026-06-22'
+        low_price: 0.58
+        low_price_date: '2026-06-18'
+        rally_price: 1.29
+        rally_date: '2026-06-22'
+        rally_pct: 122
+        structure: display-only integration — licensed visual libraries in ChatGPT search/discovery with attribution, strictly NO model training rights
+        precedent: Mirrors Oct 2025 Perplexity AI display contract — protective IP model establishing recurring licensing without diluting core assets
+        market_validation: Getty standalone Q1 2026 Creative -8% currency-neutral, enterprise subs 57.4% revenue — AI licensing positions library as licensed API endpoint, high-margin recurring
+        merger_context: Getty-Shutterstock merger cleared DOJ Feb 2026 unconditional, UK CMA conditional May 15 2026 (divest UK/global editorial Rex/Splash/Backgrid, undertakings Jun 10), transaction imminent — AI deal validates premium visual infrastructure thesis amid merger
+        deal_significance: Validates that generative search requires authenticated indemnified visual infrastructure, legal precedent that AI operators must pay for premium distribution
+        source_urls:
+        - https://www.tradingview.com/news/marketbeat:6504963f6094b:0-getty-images-openai-deal-gives-the-stock-a-new-ai-licensing-story/
+        - https://www.barchart.com/story/news/3000014/getty-images-openai-deal-gives-the-stock-a-new-ai-licensing-story
       deal_vs_ad_revenue_ratio: 'Publisher content deals ($300-400M/yr) represent only 12-16% of projected 2026 advertising revenue ($2.5B). By 2030, deals would be <0.4% of projected ad revenue ($100B). Content licensing is becoming a LOSS LEADER for OpenAI — a small cost to secure publisher cooperation while the advertising platform that will eclipse publisher revenue grows underneath. '
       source_urls:
       - https://llmpulse.ai/blog/openai-publisher-deals/
@@ -1369,39 +1386,27 @@ entities:
       - name: anthropic_investment
         detail: 'Amazon is the largest financial backer of Anthropic, having
 
-          invested $13B+ ($8B initial + $5B Apr 2026). Q2 2026 reported
+          invested $13B+ ($8B initial + $5B Apr 2026) with up to $20B additional tied to commercial milestones, for a potential total of $33B (announced Apr 20 2026). The expanded deal mirrors Amazon''s OpenAI structure: up to $25B new investment (GeekWire Apr 20 2026) + $100B+ AWS cloud commitment over 10 years + up to 5GW of Trainium capacity (Trainium2 through Trainium4, future chips option). This parallels OpenAI''s $50B Amazon investment (Feb 2026) + $100B AWS deal + 2GW Trainium. Both AI labs now run same playbook: Amazon invests, lab commits $100B+ to AWS, secures Trainium capacity equivalent to multiple nuclear plants (1GW ~ 1 large nuclear plant). Claude Platform becomes directly available within AWS (billing/security controls), deeper than Bedrock marketplace. Valuation context: Anthropic $380B at initial $5B tranche (Apr 2026), reportedly pitching $800B+ in subsequent discussions. Q2 2026 Amazon reported $53.4B non-operating pre-tax gain primarily from Anthropic valuation increase — exceeding Amazon operating income $27.5B. Amazon has $63B dual-lab equity ($13B Anthropic realized + $50B OpenAI).
 
-          a $53.4B non-operating pre-tax gain primarily from Anthropic''s
+          CRITICAL CONFLICT: Anthropic has ZERO publisher content licensing deals — the only major AI lab (alongside xAI) with none. Amazon simultaneously PAYS publishers for AI content (Rufus/Alexa deals: NYT $20-25M/yr, Conde Nast, Hearst) AND invests in an AI company (Anthropic) that pays publishers NOTHING. Anthropic settled Bartz class-action for $1.5B (Jul 2026, author copyright) but has no voluntary publisher deals. This means Amazon profits from BOTH sides: licensing publisher content for its own AI, and backing an AI lab that avoids paying publishers entirely. The $100B AWS commitment creates publisher lock-in: publishers hosted on AWS fund infrastructure that powers an AI lab that does not pay them.
 
-          valuation increase. Amazon''s Anthropic investment generated more
-
-          paper profit ($53.4B) than Amazon''s entire operating income
-
-          ($27.5B) in Q2 2026.
-
-          CRITICAL CONFLICT: Anthropic has ZERO publisher content licensing
-
-          deals — the only major AI lab (alongside xAI) with none. Amazon
-
-          simultaneously PAYS publishers for AI content (Rufus/Alexa deals)
-
-          AND invests in an AI company (Anthropic) that pays publishers
-
-          NOTHING. Anthropic settled the Bartz class-action for $1.5B
-
-          (Jul 2026, author copyright) but has no voluntary publisher deals.
-
-          This means Amazon profits from BOTH sides: licensing publisher
-
-          content for its own AI, and backing an AI lab that avoids paying
-
-          publishers entirely.
+          MIRRORING OPENAI DEAL (Feb 2026): OpenAI $50B investment + $138B AWS infrastructure + 2GW Trainium + exclusive Frontier distribution. Anthropic $5B now + up to $20B milestone + $100B+ AWS + 5GW Trainium + direct Claude console in AWS. Amazon runs same $100B cloud playbook with both top AI labs.
 
           '
         anthropic_total_invested_b: 13
+        anthropic_potential_total_b: 33
+        anthropic_initial_b: 8
+        anthropic_apr_2026_fresh_b: 5
+        anthropic_milestone_additional_b: 20
+        anthropic_valuation_at_deal_b: 380
+        anthropic_aws_commitment_b: 100
+        anthropic_trainium_gw: 5
         anthropic_q2_2026_gain_b: 53.4
         anthropic_publisher_deals: 0
+        anthropic_openai_mirroring: true
         source_urls:
+        - https://www.geekwire.com/2026/amazon-doubles-down-on-anthropic-with-25b-investment-mirroring-its-openai-cloud-deal/
+        - https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/
         - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-posts-a-big-gain-on-its-anthropic-investment-H0PZCbIeYiLLhY0mUTS3
         - https://insidentity.blog/2026/07/31/amazon-crossed-200-billion-in-a-quarter-53-4-billion-of-its-profit-came-from-a-company-it-does-not-consolidate-the-same-audit-firm-signs-off-on-the-other-half-of-that-asset-at-alphabet/
       - name: openai_investment
