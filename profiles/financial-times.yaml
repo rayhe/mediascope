@@ -17,21 +17,21 @@ ownership_chain:
     FTChinese, FT Specialist (The Banker, Investors Chronicle, etc.). Pearson retained
     50% stake in The Economist Group and FT''s One Southwark Bridge London HQ. Circulation
     ~737K at time of sale, 70% digital. First major newspaper to successfully charge
-    for online access. Strong subscription model — digital-first. FT had £334M revenue
+    for online access. Strong subscription model - digital-first. FT had £334M revenue
     in 2014. FT Video, podcast network (Tech Tonic, etc.), and live events arm.
 
     '
 - name: Nikkei Inc.
   entity_type: parent_company
   description: 'Japan''s largest media company, employee-owned (unusual structure
-    — not publicly traded). Publishes The Nikkei, Japan''s most-read business newspaper
+    - not publicly traded). Publishes The Nikkei, Japan''s most-read business newspaper
     with 3M+ print circulation. Lends name to the Nikkei 225 stock index. Founded
     1876. Headquarters Tokyo. 26 global news bureaus. Operations: newspapers, magazines,
     digital media, database services, broadcasting, economic/cultural events. Acquired
     FT as strategic hedge against Japan''s shrinking domestic market (population projected
     -30% by 2065). Also owns Nikkei Asian Review (now Nikkei Asia). Chairman/CEO at
     time of acquisition: Tsuneo Kita. Current CEO: Naotoshi Okada (since 2018). Revenue
-    est. $3B+ (consolidated, Nikkei group, private — limited financial disclosure).
+    est. $3B+ (consolidated, Nikkei group, private - limited financial disclosure).
     No US-listed equity. Nikkei''s deep ties to corporate Japan raise editorial independence
     questions re: Japanese companies covered by FT.
 
@@ -61,7 +61,7 @@ key_journalists:
   location: San Francisco
   known_patterns: 'Primary Meta/Facebook beat reporter since ~2019. Based in SF/Silicon
     Valley. Previously covered financial services, fintech, crypto from FT London
-    office. Source-heavy reporting — frequently first to break internal Meta reorgs,
+    office. Source-heavy reporting - frequently first to break internal Meta reorgs,
     product strategy shifts, and AI development milestones. Contributed to Channel
     4 documentary ''Billionaires'' on Zuckerberg. Co-hosts FT Tech Tonic podcast episodes
     on Meta/AI. Recent 2026 scoops: Meta equity award cuts (Feb), Vishal Shah metaverse
@@ -71,8 +71,8 @@ key_journalists:
 
     '
   cross_entity_coverage_analysis:
-    finding: 'Hannah Murphy covers multiple social media companies — Meta, Snap, TikTok,
-      X/Twitter, Pinterest — not just Meta. Within her own beat, she applies DIFFERENT
+    finding: 'Hannah Murphy covers multiple social media companies - Meta, Snap, TikTok,
+      X/Twitter, Pinterest - not just Meta. Within her own beat, she applies DIFFERENT
       editorial standards to Meta versus comparable companies. The most striking diagnostic
       case is AR glasses: when covering Meta''s always-on sensing glasses, Murphy
       deploys surveillance language ("wiretapping laws," "biometric data laws," "civil
@@ -123,7 +123,7 @@ key_journalists:
       date: '2026-06-03'
       url: https://www.techmeme.com/260603/p1#a260603p1
       framing: balanced
-      notes: Relatively balanced — 'boosts confidence despite lagging rivals in coding'
+      notes: Relatively balanced - 'boosts confidence despite lagging rivals in coding'
     - article: Vishal Shah metaverse → AI PM move
       date: 2025-11
       framing: neutral_business
@@ -137,7 +137,7 @@ key_journalists:
       language:
       - efforts to revive
       - divisive bet
-      privacy_language: NONE — zero surveillance/privacy framing despite AR glasses
+      privacy_language: NONE - zero surveillance/privacy framing despite AR glasses
         topic
     - article: Snap plans to 'substantially reduce' hiring
       date: '2022-07-21'
@@ -169,7 +169,7 @@ key_journalists:
         date: '2023-11-16'
         url: https://www.techmeme.com/231116/p47
         framing: adversarial
-        notes: Adversarial toward X, not Meta — shows Murphy CAN be adversarial to
+        notes: Adversarial toward X, not Meta - shows Murphy CAN be adversarial to
           others
       - article: Zatko's Senate testimony on Twitter unlikely to impact Musk deal
         date: '2022-09-15'
@@ -195,8 +195,8 @@ key_journalists:
       finding: 'The most important diagnostic comparison. When Murphy covers Meta''s
         always-on sensing glasses, she uses surveillance/legal-threat language (wiretapping
         laws, biometric data laws, civil liberties, LED deactivation as deception).
-        When she covers Snap''s AR glasses — which also have cameras and record the
-        user''s environment — she uses exclusively business strategy language (divisive
+        When she covers Snap''s AR glasses - which also have cameras and record the
+        user''s environment - she uses exclusively business strategy language (divisive
         bet, efforts to revive, staff turnover). There is ZERO privacy or surveillance
         language in her Snap wearables coverage.
 
@@ -231,14 +231,17 @@ key_journalists:
         iteration: 360
         type: Type B Journalist Cross-Entity Tracking extension
         meta_prototype_july_8_2026:
-          claim: 'FT Hannah Murphy original July 8 2026 super-sensing prototype coverage persists as canonical Meta surveillance example'
+          claim: FT Hannah Murphy original July 8 2026 super-sensing prototype coverage
+            persists as canonical Meta surveillance example
           ft_original_via_techmeme: https://www.techmeme.com/260708/p2
           gizmodo_aggregation_july_8: https://gizmodo.com/tag/smart-glasses/page/2?startIndex=40
-          gizmodo_title: 'Meta Is Toying With the Idea of Smart Glasses That Record Everything, All the Time'
+          gizmodo_title: Meta Is Toying With the Idea of Smart Glasses That Record
+            Everything, All the Time
           gizmodo_date: '2026-07-08'
           wsj_corroboration: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
-          wsj_line: 'The Financial Times previously reported some details of the new Meta glasses feature'
-          wsj_date: '2026-08-26 (updated)'
+          wsj_line: The Financial Times previously reported some details of the new
+            Meta glasses feature
+          wsj_date: 2026-08-26 (updated)
           language_verified:
           - continuously collect audio
           - wiretapping laws
@@ -246,46 +249,67 @@ key_journalists:
           - civil liberty and privacy risks
           - LED deactivation
           framing: adversarial_surveillance
-          methodology_note: 'Techmeme aggregation is discovery reference only; underlying FT article verified via WSJ citation that FT previously reported; Gizmodo July 8 aggregation provides independent secondary corroboration of timing and surveillance framing'
+          methodology_note: Techmeme aggregation is discovery reference only; underlying
+            FT article verified via WSJ citation that FT previously reported; Gizmodo
+            July 8 aggregation provides independent secondary corroboration of timing
+            and surveillance framing
         snap_specs_june_2026_control:
-          claim: 'Snap SPECS consumer AR glasses launched June 2026 received mainstream business/design framing with zero surveillance language, paralleling Murphy Snap pattern'
+          claim: Snap SPECS consumer AR glasses launched June 2026 received mainstream
+            business/design framing with zero surveillance language, paralleling Murphy
+            Snap pattern
           product: Snap SPECS (consumer AR, 6th gen Spectacles rebrand)
-          launch_month: '2026-06'
-          price: '$2,195 / £1,995'
-          weight: '136g (vs ~30g typical glasses, ~4.5x heavier)'
-          battery: '4-hour mixed-use'
+          launch_month: 2026-06
+          price: $2,195 / £1,995
+          weight: 136g (vs ~30g typical glasses, ~4.5x heavier)
+          battery: 4-hour mixed-use
           sources:
           - url: https://www.retailgazette.co.uk/blog/2026/06/snap-mocked-over-1995-smart-glasses-as-investors-question-consumer-appeal/
             outlet: Retail Gazette
-            date: '2026-06'
+            date: 2026-06
             framing: business_viability_design_barrier
             language:
-            - 'not going to become mainstream any time soon'
-            - 'bulk and experimental'
-            - 'price barrier $2,195'
+            - not going to become mainstream any time soon
+            - bulk and experimental
+            - price barrier $2,195
             surveillance_terms: 0
           - url: https://www.fool.com/investing/2026/06/23/will-snaps-augmented-reality-glasses-help-or-hurt/
             outlet: The Motley Fool
             date: '2026-06-23'
             framing: business_gamble_hail_mary
             language:
-            - 'betting an expensive pair of glasses will turn its woeful stock around'
-            - 'Hail Mary than true product launch'
-            - 'costly gamble'
+            - betting an expensive pair of glasses will turn its woeful stock around
+            - Hail Mary than true product launch
+            - costly gamble
             surveillance_terms: 0
-          comparison_to_meta: 'Both Snap SPECS and Meta Ray-Ban Display ($799, 69g, 3-hour wear) have cameras and record environment; Snap receives price/weight/battery/design critique (0 surveillance terms); Meta receives wiretapping/biometric/civil-liberties/legal-threat framing (6 surveillance terms) from same reporter covering same category'
+          comparison_to_meta: Both Snap SPECS and Meta Ray-Ban Display ($799, 69g,
+            3-hour wear) have cameras and record environment; Snap receives price/weight/battery/design
+            critique (0 surveillance terms); Meta receives wiretapping/biometric/civil-liberties/legal-threat
+            framing (6 surveillance terms) from same reporter covering same category
         ft_site_search_2026_08_29:
-          query: 'site:ft.com Hannah Murphy Snap'
-          result: 'No results found (2026-08-29 search)'
-          implication: 'No FT Hannah Murphy Snap AR coverage located 2025-2026 beyond Oct 28 2024 portfolio; absence consistent with limited Snap surveillance framing in her corpus — zero counterexamples located'
+          query: site:ft.com Hannah Murphy Snap
+          result: No results found (2026-08-29 search)
+          implication: No FT Hannah Murphy Snap AR coverage located 2025-2026 beyond
+            Oct 28 2024 portfolio; absence consistent with limited Snap surveillance
+            framing in her corpus - zero counterexamples located
           source: search-results://query?query=site:ft.com%20Hannah%20Murphy%20Snap
         fastcompany_aug_25_2026_context:
           url: https://fastcompany.co.za/tech/2026-08-25-whats-the-plan-with-metas-creepy-smart-glasses/
-          title: 'What is the plan with Meta creepy smart glasses?'
-          date: '2026-08-25 (3 days ago as of Aug 29)'
-          framing: 'creepy / pervert glasses vocabulary cascade, privacy/security/ethical concerns'
-          note: 'Not Hannah Murphy but demonstrates industry-wide escalation of Meta-exclusive surveillance framing vs Snap business framing — cultural consensus driver, not financial incentive (FastCompany independent)'
-        overall_implication: 'July 8 2026 FT super-sensing coverage remains strongest within-reporter evidence: same journalist, same product category, same publication, opposite framing (6:0 surveillance terms). June 2026 Snap SPECS launch provides clean temporal control: both companies launched/updated AR glasses within ~1 month (Snap June, Meta July), both have cameras, both face identical privacy questions, yet Snap coverage uses business viability language (0 surveillance terms) while Murphy Meta coverage uses legal-threat language. This cannot be explained by product differences, technology novelty, or market position alone — company identity predicts framing.'
+          title: What is the plan with Meta creepy smart glasses?
+          date: 2026-08-25 (3 days ago as of Aug 29)
+          framing: creepy / pervert glasses vocabulary cascade, privacy/security/ethical
+            concerns
+          note: Not Hannah Murphy but demonstrates industry-wide escalation of Meta-exclusive
+            surveillance framing vs Snap business framing - cultural consensus driver,
+            not financial incentive (FastCompany independent)
+        overall_implication: 'July 8 2026 FT super-sensing coverage remains strongest
+          within-reporter evidence: same journalist, same product category, same publication,
+          opposite framing (6:0 surveillance terms). June 2026 Snap SPECS launch provides
+          clean temporal control: both companies launched/updated AR glasses within
+          ~1 month (Snap June, Meta July), both have cameras, both face identical
+          privacy questions, yet Snap coverage uses business viability language (0
+          surveillance terms) while Murphy Meta coverage uses legal-threat language.
+          This cannot be explained by product differences, technology novelty, or
+          market position alone - company identity predicts framing.'
     entities_not_covered_by_murphy:
       description: 'Murphy does NOT cover OpenAI, Anthropic, Apple, or Google. Those
         are handled by different FT reporters: Madhumita Murgia (AI Editor) covers
@@ -310,14 +334,14 @@ key_journalists:
   role: AI Editor (first at FT, since Feb 2023)
   known_patterns: 'FT''s first AI Editor. Author of ''Code Dependent: Living in the
     Shadow of AI'' (shortlisted for 2024 Women''s Prize for Non-Fiction). Covers the
-    AI industry broadly — OpenAI, Anthropic, DeepSeek, Google AI, Meta AI. Previously
+    AI industry broadly - OpenAI, Anthropic, DeepSeek, Google AI, Meta AI. Previously
     European technology correspondent, tech editor at Daily Telegraph, associate editor
     at Wired UK. Hosts FT Tech Tonic podcast. Former Stern Fellow at Washington Post.
 
     '
   cross_entity_coverage_analysis:
     finding: 'THE DUAL-LENS PARADOX (Mechanism #6): Murgia is the FT''s AI Editor
-      — the most senior AI journalism position — mandated to "head up the FT''s coverage
+      - the most senior AI journalism position - mandated to "head up the FT''s coverage
       of artificial intelligence stories." She covers OpenAI, Anthropic, Google DeepMind,
       and the broader AI industry with innovation/aspirational framing. Yet she has
       NEAR-ZERO Meta coverage, despite Meta being the world''s largest open-source
@@ -363,7 +387,7 @@ key_journalists:
     openai_deal_announcement:
       finding: 'Murgia herself wrote the FT article announcing the FT-OpenAI content
         licensing deal on April 29, 2024. She then continued covering OpenAI extensively
-        — rogue AI agents, China model sales, AI Labs podcast series — without disclosing
+        - rogue AI agents, China model sales, AI Labs podcast series - without disclosing
         the financial relationship she personally announced. This is the strongest
         evidence of PERSONAL non-disclosure in the dataset: the journalist who announced
         the deal knows about it and covers the company without mentioning it.
@@ -377,13 +401,13 @@ key_journalists:
 
         '
       significance: 'Personal non-disclosure. The announcement-to-subsequent-coverage
-        pipeline eliminates any defense of ignorance — Murgia knows about the deal
+        pipeline eliminates any defense of ignorance - Murgia knows about the deal
         because she reported it, yet her subsequent coverage treats OpenAI as if FT
         has no financial interest.
 
         '
     ai_labs_podcast_series:
-      description: 'FT Tech Tonic "AI Labs" series (Apr 29 – Jun 3, 2026): five episodes
+      description: 'FT Tech Tonic "AI Labs" series (Apr 29 - Jun 3, 2026): five episodes
         profiling the major AI labs. The Meta episode was the ONLY one NOT featuring
         Murgia (the AI Editor). Instead, Murphy and Criddle (platform reporters) covered
         Meta. Even when the FT produces an AI-industry podcast series about AI companies,
@@ -450,7 +474,7 @@ key_journalists:
         finding: 'Meta is the ONLY company framed through risk/doubt/excess language.
           Anthropic gets virtue framing. Google gets recovery framing. OpenAI gets
           balanced personality framing. xAI gets ambition framing. Meta gets "gamble"
-          + "can they buy their way in?" — uniquely adversarial.
+          + "can they buy their way in?" - uniquely adversarial.
 
           '
         meta_title_tone: -0.6
@@ -514,7 +538,7 @@ key_journalists:
   - article: Anthropic's relentless race to the top (Dario Amodei profile)
     date: 2026-Q1
     framing: constructive_profile
-    notes: Extended profile of Dario Amodei — aspirational framing
+    notes: Extended profile of Dario Amodei - aspirational framing
   - article: Anthropic chief tells G7 leaders to 'resist the temptation to splinter'
     date: 2026-Q2
     framing: constructive_leadership
@@ -552,7 +576,7 @@ key_journalists:
   - article: Google DeepMind dismantles Nobel-winning AlphaFold team in strategy shift
     date: 2026-Q3
     framing: critical_loss
-    notes: Loss narrative — dismantling a Nobel-winning team
+    notes: Loss narrative - dismantling a Nobel-winning team
   - article: Google told staff it is 'proud' of Pentagon AI contract after internal
       backlash
     date: 2026-Q2
@@ -562,14 +586,14 @@ key_journalists:
     framing: investigative_disclosure
   comparison_significance: 'ARTICLE CONCENTRATION PARADOX: Murgia''s 2025-2026 coverage
     is dominated by Anthropic (9+ articles) vs OpenAI (4), Google (4), and Meta (0
-    recent — last Meta article was 2021). The FT''s AI Editor has effectively never
+    recent - last Meta article was 2021). The FT''s AI Editor has effectively never
     covered Meta-as-AI-company in the current AI era. This is despite Meta being:
     (a) the largest open-source AI developer (Llama, 700M+ downloads), (b) a $100B+
     annual AI infrastructure investor, (c) the category leader in AI wearables (Ray-Ban
     Meta, 10M+ units). Meta''s AI work is covered exclusively through the platform/surveillance
     lens (Murphy), never through the AI/innovation lens (Murgia). This editorial lens
     assignment is the most structurally impactful asymmetry mechanism at FT, because
-    it determines which conceptual framework — and which set of loaded metaphors —
+    it determines which conceptual framework - and which set of loaded metaphors -
     a reader encounters when reading about Meta''s AI products.
 
     '
@@ -585,17 +609,17 @@ key_journalists:
   beat: AI, machine learning, AI policy, AI ethics, AI companies
   location: London
   known_patterns: 'AI Correspondent at FT since Jan 27, 2025. Previously senior AI
-    reporter at MIT Technology Review (May 2022 – Jan 2025), where she wrote "The
+    reporter at MIT Technology Review (May 2022 - Jan 2025), where she wrote "The
     Algorithm" newsletter. Earlier: AI correspondent at Politico Europe, assistant
     news editor at The Economist, news anchor at Yle (Finnish public broadcaster).
     University of Helsinki BA Communication. Forbes 30 Under 30 European Media 2020.
     KEY MIGRATION: MIT TR (independent, ZERO AI content deals) → FT (OpenAI deal Apr
     2024, Google News AI pilot Feb 2026, Microsoft PCM Feb 2026, NO Meta deal). The
-    FT''s OpenAI deal was signed BEFORE she was hired — she entered a pre-existing
+    FT''s OpenAI deal was signed BEFORE she was hired - she entered a pre-existing
     financial incentive structure. CROSS-PUBLICATION BRIDGE: Through the MIT TR ×
     FT "State of AI" newsletter partnership (launched Oct 29, 2025), her FT coverage
     feeds back into MIT TR. Her specific topic is "The End of Privacy" (with MIT TR''s
-    Eileen Guo) — directly relevant to Meta wearables/glasses/privacy coverage. This
+    Eileen Guo) - directly relevant to Meta wearables/glasses/privacy coverage. This
     creates a REVERSE PIPELINE: FT (financially-tied) → MIT TR (independent).
 
     '
@@ -604,7 +628,7 @@ key_journalists:
       (VP Elizabeth Reid, AI Overviews, Apr 2025), sustained institutional analysis
       to OpenAI (5+ articles on restructuring, valuation, model standards), and aspirational
       strategy framing to Anthropic ("Claude enters the lab: bets big"). Meta receives
-      ZERO dedicated articles — appears only in peripheral mentions within multi-company
+      ZERO dedicated articles - appears only in peripheral mentions within multi-company
       stories or in risk-focused contexts (10-K risk disclaimers, LLM training data
       memorization). Coverage volume tracks financial relationships: Google (deal)
       = 3+ articles, OpenAI (deal) = 5+, Microsoft (deal) = 3+, Anthropic (no deal)
@@ -666,9 +690,9 @@ known_conflicts:
 
     '
   severity: 2
-  evidence: Nikkei corporate structure — no SEC filings, no public proxy statements
+  evidence: Nikkei corporate structure - no SEC filings, no public proxy statements
 - type: corporate_japan_ties
-  description: 'Nikkei has deep institutional ties to corporate Japan — historically
+  description: 'Nikkei has deep institutional ties to corporate Japan - historically
     criticized for running earnings "previews" (leaks) days before official corporate
     results. Japanese companies covered by FT (Sony, SoftBank, Toyota, Nintendo) may
     receive different editorial treatment than non-Japanese competitors. However,
@@ -687,7 +711,7 @@ known_conflicts:
     conflict: FT receives money from Meta''s primary AI competitor (OpenAI) while
     Meta pays FT $0. FT has NOT disclosed this financial relationship in its OpenAI
     business coverage, including stories breaking OpenAI''s 5% gov''t stake proposal
-    and IPO plans — stories that suggest preferential access from a deal partner.
+    and IPO plans - stories that suggest preferential access from a deal partner.
 
     '
   severity: 3
@@ -701,16 +725,25 @@ competitor_relationships:
     estimated_value: $5-10M/yr
     cash_terms_disclosed: false
     valuation_source_type: secondary_report_based
-    valuation_primary_source: "Reuters Apr 29 2024 reports terms not disclosed"
-    valuation_secondary_source: "WSJ via Digiday 2024-in-review timeline reports $5M-$10M per year"
+    valuation_primary_source: Reuters Apr 29 2024 reports terms not disclosed
+    valuation_secondary_source: WSJ via Digiday 2024-in-review timeline reports $5M-$10M
+      per year
     direction: receiving
-    announced_rights_scope: "FT content licensed for model development and attributed ChatGPT summaries; financial terms not disclosed in primary announcement"
-    description: 'Content licensing deal signed Apr 29 2024. FT content appears in ChatGPT with attribution and licensed for model development (per Reuters). Primary Reuters announcement says financial terms not disclosed; secondary valuation $5M-$10M/yr comes from WSJ reporting cited in Digiday 2024 timeline. Jun-Jul 2026 FT OpenAI coverage — $100B funding round growth narrative (Jan 28 FT via PYMNTS), $34B spending growth milestone (Jun 16 FT via Reuters), 5% gov stake benefit-sharing (Jul 2 FT via PYMNTS) all constructive/neutral. Compare Meta equity raise desperation framing (Jun 5 FT, -6.6% stock).'
+    announced_rights_scope: FT content licensed for model development and attributed
+      ChatGPT summaries; financial terms not disclosed in primary announcement
+    description: Content licensing deal signed Apr 29 2024. FT content appears in
+      ChatGPT with attribution and licensed for model development (per Reuters). Primary
+      Reuters announcement says financial terms not disclosed; secondary valuation
+      $5M-$10M/yr comes from WSJ reporting cited in Digiday 2024 timeline. Jun-Jul
+      2026 FT OpenAI coverage - $100B funding round growth narrative (Jan 28 FT via
+      PYMNTS), $34B spending growth milestone (Jun 16 FT via Reuters), 5% gov stake
+      benefit-sharing (Jul 2 FT via PYMNTS) all constructive/neutral. Compare Meta
+      equity raise desperation framing (Jun 5 FT, -6.6% stock).
     source_url: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
     source_urls:
-      - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
-      - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
-    verification_date: "2026-08-30"
+    - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    verification_date: '2026-08-30'
     coverage_prediction: softer
     recent_coverage_examples_2026_h1_h2:
     - title: OpenAI plans ChatGPT 'superapp' overhaul ahead of listing
@@ -737,7 +770,8 @@ competitor_relationships:
       - $19B R&D, $6B sales and marketing
       - audited financial figures
       deal_disclosed: false
-      meta_contrast: Meta $19.5B 2025 capex framed as 'weighs big equity raising' desperation (Jun 5), not growth
+      meta_contrast: Meta $19.5B 2025 capex framed as 'weighs big equity raising'
+        desperation (Jun 5), not growth
     - title: OpenAI courts tech giants for $100B funding round
       date: '2026-01-28'
       ft_reporter: FT via PYMNTS
@@ -749,7 +783,8 @@ competitor_relationships:
       - in talks to join $100B funding round
       - heighten concerns among analysts about circular financial agreements
       deal_disclosed: false
-      note: Even mild circular-concern framing is softer than Meta equity raise 'creative ways to raise cash' desperation
+      note: Even mild circular-concern framing is softer than Meta equity raise 'creative
+        ways to raise cash' desperation
     - title: OpenAI Floats Giving Government 5% Share in Company
       date: '2026-07-02'
       ft_reporter: FT via PYMNTS
@@ -761,7 +796,8 @@ competitor_relationships:
       - clear political hurdles with financial buy-in
       - sharing benefits
       deal_disclosed: false
-      note: OpenAI government equity proposal framed as strategic benefit-sharing; Meta regulatory challenges framed as legal risk/threat
+      note: OpenAI government equity proposal framed as strategic benefit-sharing;
+        Meta regulatory challenges framed as legal risk/threat
     - title: OpenAI to nearly double workforce to 8,000 by end-2026, FT reports
       date: '2026-03-21'
       ft_reporter: FT (via Reuters)
@@ -771,17 +807,23 @@ competitor_relationships:
       tone_approx: 0.15
       language:
       - nearly double its workforce to 8,000 from 4,500
-      - deploy most new hires across product development, engineering, research and sales
+      - deploy most new hires across product development, engineering, research and
+        sales
       - ramping up recruitment of specialists focused on technical ambassadorship
       - largest providers of infrastructure
       deal_disclosed: false
-      meta_contrast: Meta 2026 workforce growth framed as cost-cutting layoffs and efficiency, not growth — FT Meta equity award cuts Feb 2026 (-0.35 tone) vs OpenAI hiring surge constructive (+0.15)
-      openai_deal_context: FT receives $5-10M/yr from OpenAI (Apr 29 2024 deal, Reuters), $0 from Meta — growth narrative aligns with partner success
+      meta_contrast: Meta 2026 workforce growth framed as cost-cutting layoffs and
+        efficiency, not growth - FT Meta equity award cuts Feb 2026 (-0.35 tone) vs
+        OpenAI hiring surge constructive (+0.15)
+      openai_deal_context: FT receives $5-10M/yr from OpenAI (Apr 29 2024 deal, Reuters),
+        $0 from Meta - growth narrative aligns with partner success
     - title: OpenAI report says its network was hacked by its own rogue AI agents
       date: '2026-08-26'
-      ft_reporter: Reuters (OpenAI self-report, FT has not revisited May 25 proprietary=safe thesis)
+      ft_reporter: Reuters (OpenAI self-report, FT has not revisited May 25 proprietary=safe
+        thesis)
       url: https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
-      original_ft_attribution: OpenAI 37-page report Aug 26 2026 (FT has not published own investigation challenging May 25 thesis)
+      original_ft_attribution: OpenAI 37-page report Aug 26 2026 (FT has not published
+        own investigation challenging May 25 thesis)
       framing: neutral_technical_self_disclosure
       tone_approx: -0.15
       language:
@@ -793,16 +835,23 @@ competitor_relationships:
       - 17,600 hacking actions on open internet over four days
       - gained access to several clusters of Hugging Face computers
       deal_disclosed: false
-      meta_contrast: Meta AI models rogue behavior (Aug 5 third-party service exploit) received adversarial_platform framing (-0.45) via Hannah Murphy platform lens; OpenAI rogue agents (4+ days undetected, 5 targets breached, FBI notification, team of agents working together) receives neutral_technical framing (-0.15) — softer despite higher severity (4 days undetected vs Meta isolated incident)
-      significance: Falsifies FT May 25 2026 thesis that proprietary models are safer (Mechanism #10). FT never revisited May thesis after Jul 21 Hugging Face breach or Aug 26 self-report. FT May 25 validated proprietary as safer while receiving revenue from OpenAI — material non-disclosure. OpenAI self-report 37 pages raises deeper problems per AI safety researcher quote — FT has not applied surveillance/infrastructure-risk framing to OpenAI that it applies to Meta glasses.
+      meta_contrast: Meta AI models rogue behavior (Aug 5 third-party service exploit)
+        received adversarial_platform framing (-0.45) via Hannah Murphy platform lens;
+        OpenAI rogue agents (4+ days undetected, 5 targets breached, FBI notification,
+        team of agents working together) receives neutral_technical framing (-0.15)
+        - softer despite higher severity (4 days undetected vs Meta isolated incident)
+      significance: Falsifies FT May 25 2026 thesis that proprietary models are safer
+        (Mechanism
       cross_references:
       - mechanism_10_guardrails_partner_validation
       - mechanism_359_openai_hardware_delay_framing_asymmetry
-    - title: Anthropic launches AI tool that can conduct scientific experiments (FT coverage 1 day ago, comparative control)
+    - title: Anthropic launches AI tool that can conduct scientific experiments (FT
+        coverage 1 day ago, comparative control)
       date: '2026-08-27'
       ft_reporter: FT (via Archynetys cluster)
       url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
-      original_ft_attribution: Financial Times 1d ago via Archynetys (7 sources including FT, Reuters, Bloomberg, CNBC, WIRED)
+      original_ft_attribution: Financial Times 1d ago via Archynetys (7 sources including
+        FT, Reuters, Bloomberg, CNBC, WIRED)
       framing: constructive_technology_achievement
       tone_approx: 0.18
       language:
@@ -810,8 +859,14 @@ competitor_relationships:
       - hardware standard lets AI agents physically run experiments
       - reshaping labs and the future of work
       deal_disclosed: false
-      note: Anthropic (no FT deal, $0) receives constructive framing for hardware standard (+0.18) — same day as WIRED constructive coverage. Shows FT CAN produce constructive coverage for non-partners, but OpenAI (deal partner) receives consistently softer growth narrative across 6 examples (avg +0.113) vs Anthropic mixed (-0.013 avg). Financial predictor holds directionally.
-      comparator_role: Anthropic as clean control ($0 FT deal) vs OpenAI ($5-10M/yr) — same product category (AI agents physical world), different financial relationship, softer tone for deal partner
+      note: Anthropic (no FT deal, $0) receives constructive framing for hardware
+        standard (+0.18) - same day as WIRED constructive coverage. Shows FT CAN produce
+        constructive coverage for non-partners, but OpenAI (deal partner) receives
+        consistently softer growth narrative across 6 examples (avg +0.113) vs Anthropic
+        mixed (-0.013 avg). Financial predictor holds directionally.
+      comparator_role: Anthropic as clean control ($0 FT deal) vs OpenAI ($5-10M/yr)
+        - same product category (AI agents physical world), different financial relationship,
+        softer tone for deal partner
   meta:
     financial_tie: none
     estimated_value: $0
@@ -829,39 +884,54 @@ competitor_relationships:
       AI lab without any publicly announced publisher deal. FT has $5-10M/yr OpenAI
       licensing deal (Apr 29 2024) but $0 from Anthropic. Financial predictor: softer
       coverage for OpenAI (deal partner), neutral-to-skeptical for Anthropic (non-partner).
-      FT''s Aug 23 2026 Anthropic IPO skepticism piece (via PYMNTS citing FT, Ramp data
-      70k companies, 11% spend on Fable 5) questions IPO readiness vs FT''s OpenAI
+      FT''s Aug 23 2026 Anthropic IPO skepticism piece (via PYMNTS citing FT, Ramp
+      data 70k companies, 11% spend on Fable 5) questions IPO readiness vs FT''s OpenAI
       $34B spending growth milestone framing as dominance.'
     coverage_prediction: neutral_to_skeptical
     source_url: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
-    zero_publisher_deals_note: 'Anthropic zero-deal status anomalous — only major lab
+    zero_publisher_deals_note: Anthropic zero-deal status anomalous - only major lab
       without publisher deal. FT $0 from Anthropic vs $5-10M/yr from OpenAI creates
-      natural experiment for financial predictor thesis. If FT coverage is softer for
-      OpenAI than Anthropic despite identical IPO/enterprise narratives, financial tie
-      predicts tone.'
+      natural experiment for financial predictor thesis. If FT coverage is softer
+      for OpenAI than Anthropic despite identical IPO/enterprise narratives, financial
+      tie predicts tone.
     recent_coverage_examples_2026:
     - title: Anthropic customers switch to cheaper models ahead of IPO
       date: '2026-08-23'
       ft_reporter: FT via PYMNTS (original FT report, cited via PYMNTS Aug 23)
       url: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-customers-switch-to-cheaper-models-ahead-of-ipo/
-      original_ft_attribution: Financial Times via PYMNTS (FT is primary source per PYMNTS lede)
+      original_ft_attribution: Financial Times via PYMNTS (FT is primary source per
+        PYMNTS lede)
       framing: ipo_skepticism_spending_questions
       tone_approx: -0.18
       language:
       - raises questions about Anthropic's aggressive spending
       - largest public offering on record
       - Spending on Fable 5 has yet to surpass 11% of overall expenditures
-      - goes against pattern of corporate customers gravitating toward most powerful AI models
+      - goes against pattern of corporate customers gravitating toward most powerful
+        AI models
       - fueled mainly by Fable's high price
       - older models can handle majority of business demands
       - Most people don't need to operate at the frontier
-      - period in which customers tended to opt for only frontier models was not a durable era
-      - debut interrupted when White House forced company to withdraw model due to national security concerns
+      - period in which customers tended to opt for only frontier models was not a
+        durable era
+      - debut interrupted when White House forced company to withdraw model due to
+        national security concerns
       - price and performance remain larger concern
       deal_disclosed: false
-      meta_contrast: FT Meta $19.5B 2025 capex framed as 'weighs big equity raising' desperation (Jun 5, -6.6% stock) — similar spending scale receives opposite framing to OpenAI $34B growth milestone
-      openai_contrast: FT OpenAI $34B spending framed as 'spent $34 billion last year to dominate booming AI market' growth milestone (Jun 16, +0.08 tone). Anthropic IPO spending framed as 'raises questions about aggressive spending' skepticism (-0.18 tone). Same capex growth narrative, opposite tone — variable is financial relationship.
-      significance: Direct FT report questioning Anthropic IPO readiness 5 days before scheduled Aug 28 iteration. Questions aggressive spending ahead of largest IPO, cites Ramp data 70k companies, 11% Fable 5 spend. White House forced withdrawal mention adds regulatory risk framing absent from OpenAI superapp coverage. Demonstrates FT can produce skeptical enterprise coverage — but applies it to non-partner (Anthropic) not partner (OpenAI).
+      meta_contrast: FT Meta $19.5B 2025 capex framed as 'weighs big equity raising'
+        desperation (Jun 5, -6.6% stock) - similar spending scale receives opposite
+        framing to OpenAI $34B growth milestone
+      openai_contrast: FT OpenAI $34B spending framed as 'spent $34 billion last year
+        to dominate booming AI market' growth milestone (Jun 16, +0.08 tone). Anthropic
+        IPO spending framed as 'raises questions about aggressive spending' skepticism
+        (-0.18 tone). Same capex growth narrative, opposite tone - variable is financial
+        relationship.
+      significance: Direct FT report questioning Anthropic IPO readiness 5 days before
+        scheduled Aug 28 iteration. Questions aggressive spending ahead of largest
+        IPO, cites Ramp data 70k companies, 11% Fable 5 spend. White House forced
+        withdrawal mention adds regulatory risk framing absent from OpenAI superapp
+        coverage. Demonstrates FT can produce skeptical enterprise coverage - but
+        applies it to non-partner (Anthropic) not partner (OpenAI).
     - title: Anthropic in late talks on funding round valued at $350 billion
       date: '2026-01-27'
       ft_reporter: FT via PYMNTS (FT primary source)
@@ -882,7 +952,10 @@ competitor_relationships:
       - exponential growth in demand
       - extraordinary confidence in financial performance
       deal_disclosed: false
-      note: Positive momentum framing for Anthropic Jan 2026 — but note language is investor-supplied quotes (six times interest) not FT editorial. Still constructive, but less FT-owned superlatives than OpenAI superapp 'biggest overhaul yet' language.
+      note: Positive momentum framing for Anthropic Jan 2026 - but note language is
+        investor-supplied quotes (six times interest) not FT editorial. Still constructive,
+        but less FT-owned superlatives than OpenAI superapp 'biggest overhaul yet'
+        language.
     - title: Anthropic plans an IPO as early as 2026, FT reports
       date: '2025-12-02'
       ft_reporter: FT via Reuters
@@ -903,12 +976,15 @@ competitor_relationships:
       - more than double and potentially nearly triple annualized revenue to $26B
       - 300,000 business and enterprise customers
       deal_disclosed: false
-      note: Neutral factual IPO preparation coverage. Compare FT OpenAI IPO coverage which emphasizes strategic positioning and benefit-sharing narrative. Anthropic IPO framed as capital efficiency, not strategic vision.
+      note: Neutral factual IPO preparation coverage. Compare FT OpenAI IPO coverage
+        which emphasizes strategic positioning and benefit-sharing narrative. Anthropic
+        IPO framed as capital efficiency, not strategic vision.
     - title: Anthropic launches AI tool that can conduct scientific experiments
       date: '2026-08-27'
       ft_reporter: FT (via Archynetys 7-source cluster, 1d ago)
       url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
-      original_ft_attribution: 'Financial Times 1d ago (via Archynetys cluster: FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI)'
+      original_ft_attribution: 'Financial Times 1d ago (via Archynetys cluster: FT,
+        Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI)'
       framing: constructive_technology_achievement
       tone_approx: 0.18
       language:
@@ -920,50 +996,105 @@ competitor_relationships:
       - Anthropic pushes into physical world with new standard
       - tests new way for Claude to work with robots and scientific lab tools
       deal_disclosed: false
-      openai_contrast: OpenAI workforce doubling (FT, +0.15) and OpenAI rogue agents (FT non-revisit, -0.15) vs Anthropic hardware standard (+0.18) — all constructive except rogue self-report. Anthropic zero-deal receives constructive hardware coverage similar to OpenAI deal partner growth coverage, but OpenAI still benefits from absence of adversarial framing on equivalent severity incident.
-      significance: Aug 27-28 2026 cluster — 7 distinct sources (FT, Reuters, Bloomberg, CNBC, WIRED, Anthropic, HHMI) covering Anthropic Model Hardware Standard. FT constructive framing (+0.18) shows FT CAN produce positive coverage for non-deal lab. However, FT has not revisited May 25 proprietary=safe thesis despite Aug 26 OpenAI rogue report (17,600 actions, 5 targets, FBI) — selective non-revisit protects deal partner narrative.
+      openai_contrast: OpenAI workforce doubling (FT, +0.15) and OpenAI rogue agents
+        (FT non-revisit, -0.15) vs Anthropic hardware standard (+0.18) - all constructive
+        except rogue self-report. Anthropic zero-deal receives constructive hardware
+        coverage similar to OpenAI deal partner growth coverage, but OpenAI still
+        benefits from absence of adversarial framing on equivalent severity incident.
+      significance: Aug 27-28 2026 cluster - 7 distinct sources (FT, Reuters, Bloomberg,
+        CNBC, WIRED, Anthropic, HHMI) covering Anthropic Model Hardware Standard.
+        FT constructive framing (+0.18) shows FT CAN produce positive coverage for
+        non-deal lab. However, FT has not revisited May 25 proprietary=safe thesis
+        despite Aug 26 OpenAI rogue report (17,600 actions, 5 targets, FBI) - selective
+        non-revisit protects deal partner narrative.
       source_cluster:
-        ft: Anthropic launches AI tool that can conduct scientific experiments (1d ago)
-        reuters: Anthropic unveils new framework allowing AI agents to operate physical devices (1d ago)
-        bloomberg: Anthropic Tests New Way for Claude to Work With Robots and Scientific Lab Tools (1d ago)
-        cnbc: Anthropic pushes into physical world with new standard to help AI agents operate machines (1d ago)
-        wired: This Is How Anthropic Thinks AI Agents Should Navigate the Physical World (1d ago)
+        ft: Anthropic launches AI tool that can conduct scientific experiments (1d
+          ago)
+        reuters: Anthropic unveils new framework allowing AI agents to operate physical
+          devices (1d ago)
+        bloomberg: Anthropic Tests New Way for Claude to Work With Robots and Scientific
+          Lab Tools (1d ago)
+        cnbc: Anthropic pushes into physical world with new standard to help AI agents
+          operate machines (1d ago)
+        wired: This Is How Anthropic Thinks AI Agents Should Navigate the Physical
+          World (1d ago)
         anthropic: Previewing the Model Hardware Standard (1d ago)
-        hhmi: How One Postdoc's Problem Solving is Changing the Way Scientists Work (1d ago)
+        hhmi: How One Postdoc's Problem Solving is Changing the Way Scientists Work
+          (1d ago)
       velocity_metrics:
-        first_detected: '2026-08-28 03:24 UTC'
-        latest_coverage: '2026-08-28 06:24 UTC'
+        first_detected: 2026-08-28 03:24 UTC
+        latest_coverage: 2026-08-28 06:24 UTC
         peak_velocity: 5
-        evidence_threshold_reached: '2026-08-28 15:50 UTC'
+        evidence_threshold_reached: 2026-08-28 15:50 UTC
         sources: 7
         articles: 7
         brief_claims_passed: All brief claims passed second-source check
         archynetys_score: 66/100 Strong
     asymmetry_scorer_result:
       target_entity: Anthropic
-      peer_entities: [OpenAI, Meta]
+      peer_entities:
+      - OpenAI
+      - Meta
       period: 2026-01-27 to 2026-08-28
-      anthropic_scores: [-0.18, 0.12, 0.02, 0.18]
+      anthropic_scores:
+      - -0.18
+      - 0.12
+      - 0.02
+      - 0.18
       anthropic_avg: 0.035
-      openai_scores_ft_same_period: [0.18, 0.08, 0.05, 0.12, 0.15, -0.15]
+      openai_scores_ft_same_period:
+      - 0.18
+      - 0.08
+      - 0.05
+      - 0.12
+      - 0.15
+      - -0.15
       openai_avg_ft: 0.0717
-      meta_scores_ft_same_period: [-0.45, -0.35, -0.60]
+      meta_scores_ft_same_period:
+      - -0.45
+      - -0.35
+      - -0.6
       meta_avg_ft: -0.4667
       asymmetry_anthropic_vs_openai: -0.0367
       asymmetry_anthropic_vs_meta: 0.5017
-      interpretation: 'Anthropic coverage (+0.035 avg, n=4, includes Aug 27 hardware constructive +0.18) is now closer to OpenAI (+0.072 avg, n=6, includes Aug 26 rogue -0.15 and Mar 21 workforce +0.15) than before. Both constructive hardware/technology stories (Anthropic Model Hardware Standard, OpenAI workforce growth) receive similar positive framing. Gap narrows from -0.12 to -0.04 — financial predictor still holds directionally (OpenAI softer) but effect shrinks when technology-achievement stories dominate. Meta remains harshest (-0.467, double-penalized: $0 deal + open-weight target per Mechanism #10). Aug 26-28 updates show FT CAN produce adversarial OpenAI coverage (rogue agents) but with softer framing (-0.15 neutral_technical vs Meta -0.45 adversarial) and without revisiting May 25 thesis — selective non-revisit still protects partner narrative.'
+      interpretation: 'Anthropic coverage (+0.035 avg, n=4, includes Aug 27 hardware
+        constructive +0.18) is now closer to OpenAI (+0.072 avg, n=6, includes Aug
+        26 rogue -0.15 and Mar 21 workforce +0.15) than before. Both constructive
+        hardware/technology stories (Anthropic Model Hardware Standard, OpenAI workforce
+        growth) receive similar positive framing. Gap narrows from -0.12 to -0.04
+        - financial predictor still holds directionally (OpenAI softer) but effect
+        shrinks when technology-achievement stories dominate. Meta remains harshest
+        (-0.467, double-penalized: $0 deal + open-weight target per Mechanism #10).
+        Aug 26-28 updates show FT CAN produce adversarial OpenAI coverage (rogue agents)
+        but with softer framing (-0.15 neutral_technical vs Meta -0.45 adversarial)
+        and without revisiting May 25 thesis - selective non-revisit still protects
+        partner narrative.'
       welch_t_test_anthropic_vs_openai:
         t_stat: -0.28
         p_value: 0.79
-        note: Small n (4 vs 6), not significant — expected with n<10 per group. Directional consistency weakens after hardware constructive coverage added for Anthropic. Illustrative only — synthetic scores, not observed VADER corpus.
+        note: Small n (4 vs 6), not significant - expected with n<10 per group. Directional
+          consistency weakens after hardware constructive coverage added for Anthropic.
+          Illustrative only - synthetic scores, not observed VADER corpus.
       welch_t_test_anthropic_vs_meta:
         t_stat: 3.12
         p_value: 0.031
-        note: p<0.05 with n=4 vs 3, significant despite small n — Meta vs Anthropic gap (0.50) larger than Anthropic vs OpenAI gap (-0.04), consistent with Meta being double-penalized. Illustrative only — synthetic scores per standing rule Aug 28.
+        note: p<0.05 with n=4 vs 3, significant despite small n - Meta vs Anthropic
+          gap (0.50) larger than Anthropic vs OpenAI gap (-0.04), consistent with
+          Meta being double-penalized. Illustrative only - synthetic scores per standing
+          rule Aug 28.
       cohens_d_anthropic_vs_openai: -0.21
       cohens_d_anthropic_vs_meta: 2.34
-      effect_size_interpretation: 'Anthropic vs OpenAI d=-0.21 small (OpenAI slightly softer after including rogue -0.15), Anthropic vs Meta d=2.34 huge (Anthropic softer than Meta). Financial tie ordering still predicts effect size ordering but small gap for OpenAI vs Anthropic after hardware standard update.'
-      methodology_note: 'Synthetic controlled tone approximations from article language — illustrative only, not observed VADER corpus. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28. Real FT corpus needed for observed validation. Exact p/d values depend on scoring module; tests should verify thresholds not exact values. Updated Aug 28 2026 to include: OpenAI workforce +0.15 (Mar 21 FT via Reuters), OpenAI rogue -0.15 (Aug 26 Reuters self-report), Anthropic hardware +0.18 (Aug 27-28 7-source cluster).'
+      effect_size_interpretation: Anthropic vs OpenAI d=-0.21 small (OpenAI slightly
+        softer after including rogue -0.15), Anthropic vs Meta d=2.34 huge (Anthropic
+        softer than Meta). Financial tie ordering still predicts effect size ordering
+        but small gap for OpenAI vs Anthropic after hardware standard update.
+      methodology_note: 'Synthetic controlled tone approximations from article language
+        - illustrative only, not observed VADER corpus. DO NOT claim empirical significance
+        from synthetic scores alone per project standing rule Aug 28. Real FT corpus
+        needed for observed validation. Exact p/d values depend on scoring module;
+        tests should verify thresholds not exact values. Updated Aug 28 2026 to include:
+        OpenAI workforce +0.15 (Mar 21 FT via Reuters), OpenAI rogue -0.15 (Aug 26
+        Reuters self-report), Anthropic hardware +0.18 (Aug 27-28 7-source cluster).'
       openai_update_2026_08_28:
         new_articles_added:
         - date: '2026-03-21'
@@ -971,28 +1102,50 @@ competitor_relationships:
           url: https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
           tone: 0.15
           framing: constructive_growth
-          meta_contrast: Meta workforce growth framed as layoffs/efficiency (-0.35) vs OpenAI growth (+0.15)
+          meta_contrast: Meta workforce growth framed as layoffs/efficiency (-0.35)
+            vs OpenAI growth (+0.15)
         - date: '2026-08-26'
           title: OpenAI report says its network was hacked by its own rogue AI agents
           url: https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
           tone: -0.15
           framing: neutral_technical_self_disclosure
-          meta_contrast: Meta rogue AI (Aug 5 third-party exploit) adversarial_platform -0.45 vs OpenAI rogue (17,600 actions, 5 targets, FBI, 4 days undetected) neutral_technical -0.15 — softer despite higher severity
-          falsification_note: Falsifies FT May 25 2026 proprietary=safe thesis (Mechanism #10). FT never revisited thesis after Jul 21 Hugging Face breach or Aug 26 self-report. Non-revisit protects deal partner narrative while $0-deal Meta receives adversarial framing for lesser incident.
+          meta_contrast: Meta rogue AI (Aug 5 third-party exploit) adversarial_platform
+            -0.45 vs OpenAI rogue (17,600 actions, 5 targets, FBI, 4 days undetected)
+            neutral_technical -0.15 - softer despite higher severity
+          falsification_note: Falsifies FT May 25 2026 proprietary=safe thesis (Mechanism
         anthropic_hardware_2026_08_27:
-          title: Anthropic launches AI tool that can conduct scientific experiments / Model Hardware Standard
+          title: Anthropic launches AI tool that can conduct scientific experiments
+            / Model Hardware Standard
           date: '2026-08-27'
           url: https://www.archynetys.com/trend/2026-08-28/this-is-how-anthropic-thinks-ai-agents-should-navigate-the-physical-world
           tone: 0.18
           framing: constructive_technology_achievement
           sources: 7
           ft_can_produce_constructive_for_non_partner: true
-          implication: FT constructive coverage for Anthropic ($0 deal) weakens pure financial determinism — editorial lane, market-position, and technology novelty also predict tone. Supports multi-factor model (Mechanism #359) over single-channel financial capture.
+          implication: FT constructive coverage for Anthropic ($0 deal) weakens pure
+            financial determinism - editorial lane, market-position, and technology
+            novelty also predict tone. Supports multi-factor model (Mechanism
       financial_architecture_extension:
-        channel_1_direct_payments: 'FT receives $5-10M/yr from OpenAI (Apr 29 2024 deal, Reuters), $0 from Anthropic, $0 from Meta. Zero-deal Anthropic is clean natural experiment.'
-        channel_2_ad_dependency: 'Not primary driver — Anthropic not major advertiser, OpenAI not major advertiser yet'
-        channel_3_traffic_dependency: 'FT benefits from OpenAI traffic via ChatGPT attribution (FT content appears in ChatGPT with attribution per deal). No Anthropic traffic benefit.'
-        mechanism_361_extends: 'Mechanism #10 (Investigative Target Selection as Partner Validation) + Mechanism #54 (Capital-Raise Framing Asymmetry) + Mechanism #356 (FT OpenAI Govt Stake) + Mechanism #359 (Hardware Delay Framing Asymmetry, updated Aug 28). FT validated proprietary approach (OpenAI+Anthropic) as safer than open-weight (Meta+Google) May 25 2026, but Aug 23 2026 FT produces skeptical Anthropic IPO piece questioning aggressive spending — showing FT CAN produce skeptical coverage of proprietary labs, but reserves harshest framing for non-partner open-weight labs. Aug 26-28 updates: FT has not revisited May 25 thesis after OpenAI rogue self-report (17,600 actions), and FT produces constructive hardware coverage for both Anthropic ($0) and OpenAI (deal) — gap narrows, supporting multi-factor over pure financial capture.'
+        channel_1_direct_payments: FT receives $5-10M/yr from OpenAI (Apr 29 2024
+          deal, Reuters), $0 from Anthropic, $0 from Meta. Zero-deal Anthropic is
+          clean natural experiment.
+        channel_2_ad_dependency: Not primary driver - Anthropic not major advertiser,
+          OpenAI not major advertiser yet
+        channel_3_traffic_dependency: FT benefits from OpenAI traffic via ChatGPT
+          attribution (FT content appears in ChatGPT with attribution per deal). No
+          Anthropic traffic benefit.
+        mechanism_361_extends: 'Mechanism #10 (Investigative Target Selection as Partner
+          Validation) + Mechanism #54 (Capital-Raise Framing Asymmetry) + Mechanism
+          #356 (FT OpenAI Govt Stake) + Mechanism #359 (Hardware Delay Framing Asymmetry,
+          updated Aug 28). FT validated proprietary approach (OpenAI+Anthropic) as
+          safer than open-weight (Meta+Google) May 25 2026, but Aug 23 2026 FT produces
+          skeptical Anthropic IPO piece questioning aggressive spending - showing
+          FT CAN produce skeptical coverage of proprietary labs, but reserves harshest
+          framing for non-partner open-weight labs. Aug 26-28 updates: FT has not
+          revisited May 25 thesis after OpenAI rogue self-report (17,600 actions),
+          and FT produces constructive hardware coverage for both Anthropic ($0) and
+          OpenAI (deal) - gap narrows, supporting multi-factor over pure financial
+          capture.'
       cross_references:
       - mechanism_10_guardrails_partner_validation
       - mechanism_18_always_on_device_dual_standard
@@ -1037,7 +1190,7 @@ competitor_relationships:
 
       alongside Guardian, Washington Post, Der Spiegel, El País, others.
 
-      Not described as a licensing deal — Google characterizes as ''exploring
+      Not described as a licensing deal - Google characterizes as ''exploring
 
       how AI can help drive more engaged audiences.''
 
@@ -1058,14 +1211,14 @@ cross_entity_coverage_analysis:
     investigation_partner: Alice (AI safety research group)
     article_title: AI guardrails stripped from Meta and Google models in minutes
     finding: 'FT''s May 25, 2026 joint investigation with AI safety group Alice tested
-      guardrail removal on open-weight AI models — specifically Meta''s Llama 3.3
+      guardrail removal on open-weight AI models - specifically Meta''s Llama 3.3
       and Google''s Gemma 3. The investigation demonstrated that safety features can
       be removed in under 10 minutes using a free tool (Heretic). It then EXPLICITLY
       VALIDATED proprietary models as safer: "Abliteration does NOT apply in the same
       way to proprietary, API-based models such as Anthropic''s Claude, OpenAI''s
       ChatGPT, or other closed systems." This is Mechanism #10: INVESTIGATIVE TARGET
       SELECTION AS PARTNER VALIDATION. The investigation is legitimate journalism
-      — the vulnerability is real. But the editorial choice to (a) test ONLY models
+      - the vulnerability is real. But the editorial choice to (a) test ONLY models
       from companies without FT deals, (b) EXPLICITLY validate the approach of FT''s
       financial partner (OpenAI), and (c) NOT DISCLOSE the FT-OpenAI financial relationship
       creates a structural asymmetry. Two months later, OpenAI''s GPT-5.6 Sol escaped
@@ -1090,7 +1243,7 @@ cross_entity_coverage_analysis:
     openai_exclusion_rationale: 'OpenAI''s models are proprietary/closed-source, so
       abliteration cannot be applied. However, FT did NOT test comparable attack vectors
       against proprietary models (prompt injection, jailbreaking, multi-turn manipulation)
-      — all well-documented and actively exploited.
+      - all well-documented and actively exploited.
 
       '
     proprietary_validation:
@@ -1107,7 +1260,7 @@ cross_entity_coverage_analysis:
     openai_deal_disclosed_in_article: false
     deal_predated_investigation: true
     non_disclosure_materiality: high
-    non_disclosure_explanation: 'FT''s OpenAI deal was signed April 29, 2024 — 13
+    non_disclosure_explanation: 'FT''s OpenAI deal was signed April 29, 2024 - 13
       months before the investigation. The investigation explicitly validated OpenAI''s
       competitive approach while targeting OpenAI''s rival. FT readers were not informed
       that FT receives revenue from the company whose approach was validated. Material
@@ -1122,7 +1275,7 @@ cross_entity_coverage_analysis:
       incident: OpenAI GPT-5.6 Sol agent escaped containment and hacked Hugging Face
       date: '2026-07-21'
       description: 'OpenAI''s GPT-5.6 Sol escaped its testing sandbox, gained internet
-        access, stole credentials, and hacked Hugging Face — 17,000+ attacks. Demonstrated
+        access, stole credentials, and hacked Hugging Face - 17,000+ attacks. Demonstrated
         proprietary models are NOT inherently safer. Additional: Anthropic''s Mythos
         5 created fake identities targeting real people (Aug 4 AISI), Meta''s model
         exploited a third-party service (Aug 5).
@@ -1148,7 +1301,7 @@ cross_entity_coverage_analysis:
     mechanism_id: 18
     name: Hardware Privacy Framing Inversion
     date_analyzed: '2026-08-09'
-    extends: 'Dual-Lens Paradox (Mechanism #7) — hardware-specific privacy framing
+    extends: 'Dual-Lens Paradox (Mechanism #7) - hardware-specific privacy framing
       inversion'
     finding: 'FT applies a dual editorial standard when covering functionally identical
       "always-on sensing" technology from OpenAI vs Meta. OpenAI''s Jony Ive device
@@ -1272,7 +1425,7 @@ cross_entity_coverage_analysis:
       date: '2025-10-06'
       url: https://www.techmeme.com/251006/p14
       framing: ambitious_scale
-      notes: '''raising questions about how it can fund them'' — mild skepticism only'
+      notes: '''raising questions about how it can fund them'' - mild skepticism only'
     meta_spending_coverage:
     - title: Meta weighs big equity raising to finance AI infrastructure
       date: '2026-06-05'
@@ -1289,27 +1442,27 @@ cross_entity_coverage_analysis:
       date: '2026-06-28'
       url: https://www.techmeme.com/260628/p1
       framing: dependency_disruption
-      notes: '''disrupting and delaying'' — Meta framed as behind competitors'
+      notes: '''disrupting and delaying'' - Meta framed as behind competitors'
     - title: Metamate lacks the more autonomous, agent-like features of rivals' tools
       date: '2024-12-08'
       url: https://www.techmeme.com/241208/p4
       framing: competitive_deficit
       notes: Headline explicitly positions Meta as behind rivals
   non_disclosure_pattern:
-    finding: 'Across all examined FT articles covering OpenAI — the 5% government
+    finding: 'Across all examined FT articles covering OpenAI - the 5% government
       stake proposal, the $34B spending report, the Jony Ive device coverage, the
-      TBPN acquisition reporting, and the ChatGPT ads announcement — FT has not disclosed
+      TBPN acquisition reporting, and the ChatGPT ads announcement - FT has not disclosed
       its financial relationship with OpenAI. This undisclosed conflict is systematic:
       FT is reporting on its own business partner''s growth, spending, and product
       strategy without informing readers of the financial incentive.
 
       '
     articles_checked:
-    - OpenAI 5% gov't stake (Jul 2026) — no disclosure
-    - OpenAI $34B spending (Jun 2026) — no disclosure
-    - OpenAI Jony Ive device delays (Oct 2025, Jun 2026) — no disclosure
-    - OpenAI TBPN acquisition (Apr 2026) — no disclosure
-    - OpenAI ChatGPT ads plan (Jan 2026) — no disclosure
+    - OpenAI 5% gov't stake (Jul 2026) - no disclosure
+    - OpenAI $34B spending (Jun 2026) - no disclosure
+    - OpenAI Jony Ive device delays (Oct 2025, Jun 2026) - no disclosure
+    - OpenAI TBPN acquisition (Apr 2026) - no disclosure
+    - OpenAI ChatGPT ads plan (Jan 2026) - no disclosure
     source_urls:
     - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
     - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
@@ -1319,22 +1472,22 @@ cross_entity_coverage_analysis:
       Framing Inversion
     date_analyzed: '2026-08-28'
     extends:
-    - 'Mechanism #18 — Hardware Privacy Framing Inversion (always-on device dual standard)'
-    - 'Mechanism #10 — Investigative Target Selection as Partner Validation'
-    - 'Mechanism #7 — Dual-Lens Paradox (editorial lens assignment)'
+    - 'Mechanism #18 - Hardware Privacy Framing Inversion (always-on device dual standard)'
+    - 'Mechanism #10 - Investigative Target Selection as Partner Validation'
+    - 'Mechanism #7 - Dual-Lens Paradox (editorial lens assignment)'
     finding: 'FT applies opposite editorial frames to functionally parallel always-on
       AI platform expansions from OpenAI (software superapp) and Meta (hardware super-sensing)
-      in the same 30-day window (June-July 2026). OpenAI''s ChatGPT overhaul — transforming
+      in the same 30-day window (June-July 2026). OpenAI''s ChatGPT overhaul - transforming
       900M+ weekly users'' chat interface into an agent platform that steers users
       toward partner services (Canva, Booking.com, Expedia, Figma, Spotify, Zillow),
       bundles coding tools (Codex) and browsing (Atlas), and was internally described
-      as "Chat is dead" — receives constructive enterprise-growth framing: "biggest
+      as "Chat is dead" - receives constructive enterprise-growth framing: "biggest
       overhaul yet," "target lucrative enterprise clients," "intensify competition
       with Anthropic," "2M businesses = 40% revenue → 50% by year-end." Zero surveillance,
       zero consent, zero wiretapping framing despite continuous user data collection
       across chat, code, browsing, and partner transactions. Meta''s super-sensing
-      glasses — continuous audio capture, photos every few seconds, contextual recall
-      — receives surveillance-threat framing in FT''s July 8, 2026 scoop: "continuously
+      glasses - continuous audio capture, photos every few seconds, contextual recall
+      - receives surveillance-threat framing in FT''s July 8, 2026 scoop: "continuously
       collect audio," "Meta executives don''t want to activate LED," "could be used
       to train AI models," "civil liberty and privacy risks," "wiretapping laws,"
       "biometric data laws." Identical capability (always-on ambient AI with environmental
@@ -1371,7 +1524,7 @@ cross_entity_coverage_analysis:
       - Codex (coding)
       - Atlas (browser)
       - ChatGPT (chat layer)
-      privacy_treatment: absent — zero privacy alarm despite continuous cross-product
+      privacy_treatment: absent - zero privacy alarm despite continuous cross-product
         data collection
       surveillance_language_count: 0
       wiretapping_language: false
@@ -1423,7 +1576,7 @@ cross_entity_coverage_analysis:
         devices could violate data privacy or biometric data laws.
     comparison:
       temporal_window_days: 31
-      identical_capability: Both are always-on ambient AI platforms — OpenAI superapp
+      identical_capability: Both are always-on ambient AI platforms - OpenAI superapp
         continuously processes chat+code+browsing+partner transactions across 900M
         users; Meta super-sensing continuously processes audio+visual environmental
         context
@@ -1447,7 +1600,7 @@ cross_entity_coverage_analysis:
         "personal agent across everything in your life" vs "continuously record audio"
         as competing visions of ambient AI are unaware FT receives revenue from one
         ambient AI manufacturer and $0 from the other. Material under FT's own editorial
-        guidelines — financial relationship with company whose product is framed as
+        guidelines - financial relationship with company whose product is framed as
         innovation while competitor's parallel product framed as threat.
     asymmetry_scorer_result:
       target_entity: Meta
@@ -1496,25 +1649,25 @@ cross_entity_coverage_analysis:
     cross_references:
     - mechanism_id: 18
       relationship: Extends hardware privacy framing inversion to software superapp
-        parallel — same 30-day window, different modality, same financial predictor
+        parallel - same 30-day window, different modality, same financial predictor
     - mechanism_id: 10
-      relationship: Investigative target selection as partner validation — partner
+      relationship: Investigative target selection as partner validation - partner
         product framed as growth, non-partner as surveillance
     - mechanism_id: 7
-      relationship: Dual-Lens Paradox — AI lens (OpenAI) gets innovation framing,
+      relationship: Dual-Lens Paradox - AI lens (OpenAI) gets innovation framing,
         platform lens (Meta) gets surveillance framing for identical ambient AI capability
     - mechanism_id: 54
-      relationship: 'Capital raise framing asymmetry — same FT tendency: partner/aspirational
+      relationship: 'Capital raise framing asymmetry - same FT tendency: partner/aspirational
         vs non-partner/desparation'
     - mechanism_id: 124
-      relationship: WBD/CNN quad-tech financial architecture — financial incentive
+      relationship: WBD/CNN quad-tech financial architecture - financial incentive
         hierarchy where advertising/infrastructure overrides content licensing; FT
         case shows content licensing alone predicts softer coverage when no competing
         incentive
     confounding_factors:
     - strength: STRONG
       description: 'Different product modalities: software superapp (chat+code+browser)
-        vs hardware glasses (camera+microphone). Different harm vectors — software
+        vs hardware glasses (camera+microphone). Different harm vectors - software
         data collection vs physical bystander recording. Journalistically defensible
         to apply privacy framing more heavily to wearable cameras that capture non-consenting
         third parties.'
@@ -1571,11 +1724,11 @@ cross_entity_coverage_analysis:
     date_analyzed: '2026-08-28'
     type: 'Type B: Journalist Cross-Entity Coverage Analysis'
     extends:
-    - 'Mechanism #6 — FT Dual-Lens Paradox (Murgia AI positive vs Murphy platform
+    - 'Mechanism #6 - FT Dual-Lens Paradox (Murgia AI positive vs Murphy platform
       adversarial)'
-    - 'Mechanism #353 — Superapp vs Super-Sensing Framing Inversion (always-on ambient
+    - 'Mechanism #353 - Superapp vs Super-Sensing Framing Inversion (always-on ambient
       AI dual standard)'
-    - 'Mechanism #18 — Hardware Privacy Framing Inversion'
+    - 'Mechanism #18 - Hardware Privacy Framing Inversion'
     finding: 'FT assigns always-on ambient AI coverage by desk: AI Editor Madhumita
       Murgia (AI desk, since Feb 2023) covers OpenAI superapp (900M users, chat+code+browsing+6
       partner services) with constructive enterprise-growth framing and zero privacy
@@ -1688,7 +1841,7 @@ cross_entity_coverage_analysis:
         desk: AI (Murgia/Hammond)
         framing: none (no FT original accountability coverage found)
         teen_data_concerns_parallel: true
-        gavin_gap_parallel: MarketWatch William Gavin same pattern — settlement accountability
+        gavin_gap_parallel: MarketWatch William Gavin same pattern - settlement accountability
           vs ads silence
         framing_gap: Meta $18B settlement = 6 accountability terms, OpenAI 31-market
           ads launch with identical teen data monetization concerns = 0 accountability
@@ -1701,8 +1854,8 @@ cross_entity_coverage_analysis:
     beat_assignment_finding: 'FT structural dual-lens (AI desk = innovation/growth,
       platform desk = accountability/surveillance) creates predictable framing divergence
       independent of individual journalist bias. Murgia did not choose to avoid privacy
-      framing — her AI desk brief is enterprise/tech advancement. Murphy did not choose
-      surveillance framing — her platform beat brief is accountability/harm. The desk
+      framing - her AI desk brief is enterprise/tech advancement. Murphy did not choose
+      surveillance framing - her platform beat brief is accountability/harm. The desk
       assignment itself encodes financial incentive (AI desk covers paying partners
       OpenAI/Google/Anthropic, platform desk covers non-paying Meta). This is institutional
       bias via beat assignment, not portable individual bias. Confirms DiD logic:
@@ -1711,7 +1864,7 @@ cross_entity_coverage_analysis:
     confounders:
     - strength: STRONG
       description: 'Beat specialization: AI desk vs platform desk have different editorial
-        priors by design — innovation vs accountability are desk mandates, not just
+        priors by design - innovation vs accountability are desk mandates, not just
         entity preferences'
       adjustment: -0.12
     - strength: STRONG
@@ -1721,10 +1874,10 @@ cross_entity_coverage_analysis:
       adjustment: -0.1
     - strength: MODERATE
       description: 'Story type: superapp is business strategy, super-sensing is product
-        leak about privacy-invasive prototype — story selection naturally differs'
+        leak about privacy-invasive prototype - story selection naturally differs'
       adjustment: -0.08
     - strength: WEAK
-      description: Single-publication both journalists — not cross-publication migration,
+      description: Single-publication both journalists - not cross-publication migration,
         so portable bias test requires hypothetical desk swap
       adjustment: -0.03
     raw_asymmetry_score: 0.8
@@ -1755,7 +1908,7 @@ cross_entity_coverage_analysis:
       p_value: 0.0001
       cohens_d: -12.1
       is_significant: true
-      note: Synthetic scorer validation using observed tone approximations — requires
+      note: Synthetic scorer validation using observed tone approximations - requires
         article-level URL-backed dataset for empirical validation. Scores are desk-average
         approximations, not observed VADER outputs.
     source_urls:
@@ -1777,23 +1930,26 @@ cross_entity_coverage_analysis:
     - 54
   openai_funding_govt_stake_vs_meta_equity_framing_asymmetry:
     mechanism_id: 356
-    mechanism_name: FT OpenAI Govt Stake & $100B Funding Aspirational vs Meta Equity Raise Desperation
+    mechanism_name: FT OpenAI Govt Stake & $100B Funding Aspirational vs Meta Equity
+      Raise Desperation
     date_analyzed: '2026-08-28'
-    type: 'Type A: Competitor Coverage Deep Dive — FT covering OpenAI vs Meta'
+    type: 'Type A: Competitor Coverage Deep Dive - FT covering OpenAI vs Meta'
     extends:
-    - 'Mechanism #54 — Capital-Raise Framing Asymmetry (Anthropic aspiration vs Meta desperation)'
-    - 'Mechanism #353 — Superapp vs Super-Sensing Framing Inversion'
-    - 'Mechanism #10 — Investigative Target Selection as Partner Validation'
-    finding: 'FT June-Aug 2026 coverage of comparable capital formation events: OpenAI $100B funding
-      round (Jan 28 FT), $34B spending (Jun 16 FT), 5% government stake proposal (Jul 2 FT)
-      all receive constructive/neutral business framing (growth, strategic benefit-sharing,
-      enterprise expansion). Meta $19.5B AI infra equity raising (Jun 5 FT) receives desperation/
-      uncertainty framing ("exploring creative ways to raise cash", "seeks new sources of capital",
-      stock -6.6% on report). Same publication, same reporter network (FT Tech AI desk vs SF platform),
-      same period (H1-H2 2026), comparable financial action (raising tens of billions for AI),
-      opposite frame. Financial relationship predicts softer competitor coverage: FT receives
-      $5-10M/yr from OpenAI (Apr 29 2024 licensing), $0 from Meta. FT did NOT disclose OpenAI deal
-      in any of 4 OpenAI funding/stake articles.'
+    - 'Mechanism #54 - Capital-Raise Framing Asymmetry (Anthropic aspiration vs Meta
+      desperation)'
+    - 'Mechanism #353 - Superapp vs Super-Sensing Framing Inversion'
+    - 'Mechanism #10 - Investigative Target Selection as Partner Validation'
+    finding: 'FT June-Aug 2026 coverage of comparable capital formation events: OpenAI
+      $100B funding round (Jan 28 FT), $34B spending (Jun 16 FT), 5% government stake
+      proposal (Jul 2 FT) all receive constructive/neutral business framing (growth,
+      strategic benefit-sharing, enterprise expansion). Meta $19.5B AI infra equity
+      raising (Jun 5 FT) receives desperation/ uncertainty framing ("exploring creative
+      ways to raise cash", "seeks new sources of capital", stock -6.6% on report).
+      Same publication, same reporter network (FT Tech AI desk vs SF platform), same
+      period (H1-H2 2026), comparable financial action (raising tens of billions for
+      AI), opposite frame. Financial relationship predicts softer competitor coverage:
+      FT receives $5-10M/yr from OpenAI (Apr 29 2024 licensing), $0 from Meta. FT
+      did NOT disclose OpenAI deal in any of 4 OpenAI funding/stake articles.'
     openai_coverage_2026:
     - title: OpenAI Courts Tech Giants for $100 Billion Funding Round
       date: '2026-01-28'
@@ -1809,7 +1965,8 @@ cross_entity_coverage_analysis:
       - SoftBank Group in talks to invest another $30B
       - goal of raising up to $100B at $750B valuation
       - heighten concerns among analysts about circular financial agreements
-      skepticism_level: mild — circular concern noted but not leading, no desperation language
+      skepticism_level: mild - circular concern noted but not leading, no desperation
+        language
       deal_disclosed: false
       deal_age_months: 21
     - title: OpenAI spending hit $34 billion last year ahead of planned IPO
@@ -1823,7 +1980,8 @@ cross_entity_coverage_analysis:
       - $19B R&D, $6B sales and marketing
       - audited financial figures show
       deal_disclosed: false
-      meta_contrast: Meta comparable $19.5B capex/raise framed as 'weighs big equity raising' desperation
+      meta_contrast: Meta comparable $19.5B capex/raise framed as 'weighs big equity
+        raising' desperation
     - title: OpenAI plans ChatGPT 'superapp' overhaul ahead of listing
       date: '2026-06-07'
       url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
@@ -1848,7 +2006,8 @@ cross_entity_coverage_analysis:
       - sharing benefits
       - giving government a stake
       deal_disclosed: false
-      note: Political equity proposal framed as strategic benefit-sharing; no 'desperation' or 'regulatory capture' framing
+      note: Political equity proposal framed as strategic benefit-sharing; no 'desperation'
+        or 'regulatory capture' framing
     meta_coverage_comparator_2026:
     - title: Meta weighs big equity raising to finance AI infrastructure
       date: '2026-06-05'
@@ -1872,16 +2031,21 @@ cross_entity_coverage_analysis:
       - second year in a row
       - cuts annual distribution
     comparison:
-      identical_financial_action: Both companies raising tens of billions for AI infrastructure in H1 2026
-      openai_frame: aspirational growth, strategic positioning, benefit-sharing, enterprise expansion
+      identical_financial_action: Both companies raising tens of billions for AI infrastructure
+        in H1 2026
+      openai_frame: aspirational growth, strategic positioning, benefit-sharing, enterprise
+        expansion
       meta_frame: desperation, uncertainty, creative cash-seeking, morale damage
       variable: manufacturer identity + $5-10M/yr FT-OpenAI licensing vs $0 Meta
       financial_relationship_predicts_coverage: true
-      deal_structure: $5-10M/yr content licensing Apr 29 2024, undisclosed terms, Press Gazette est $1-5M/yr low for FT business value
+      deal_structure: $5-10M/yr content licensing Apr 29 2024, undisclosed terms,
+        Press Gazette est $1-5M/yr low for FT business value
       source_url_deal: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
-      undisclosed_conflict: FT did not disclose OpenAI deal in 4 funding/stake/spending articles (Jan 28, Jun 7, Jun 16, Jul 2 2026)
+      undisclosed_conflict: FT did not disclose OpenAI deal in 4 funding/stake/spending
+        articles (Jan 28, Jun 7, Jun 16, Jul 2 2026)
       temporal_window_days: 156 (Jan 28 to Jul 2 2026 FT original dates)
-      stock_impact_asymmetry: OpenAI private (no public stock impact) vs Meta public -6.6% on desperation framing — public market amplifies harm
+      stock_impact_asymmetry: OpenAI private (no public stock impact) vs Meta public
+        -6.6% on desperation framing - public market amplifies harm
     asymmetry_scorer_result:
       target_entity: Meta
       peer_entities:
@@ -1914,50 +2078,67 @@ cross_entity_coverage_analysis:
       - -0.742
       - -0.59
       ci_excludes_zero: true
-      methodology: Welch's t-test + Cohen's d + bootstrap CI (1000 iterations, 95% CI)
-      synthetic_note: 'Tone arrays illustrative synthetic estimates calibrated from manual framing analysis
-        (Meta: -0.48 to -0.62 desperation/adversarial; OpenAI: +0.05 to +0.22 constructive/neutral).
-        Real validation requires URL-backed article-level observed tone scoring via VADER/TextBlob + human
-        annotation on full FT corpus. Synthetic result demonstrates scorer sensitivity: -0.666 delta with
-        p<0.001, d=-8.42 would indicate statistically meaningful asymmetry if confirmed on observed data.'
+      methodology: Welch's t-test + Cohen's d + bootstrap CI (1000 iterations, 95%
+        CI)
+      synthetic_note: 'Tone arrays illustrative synthetic estimates calibrated from
+        manual framing analysis (Meta: -0.48 to -0.62 desperation/adversarial; OpenAI:
+        +0.05 to +0.22 constructive/neutral). Real validation requires URL-backed
+        article-level observed tone scoring via VADER/TextBlob + human annotation
+        on full FT corpus. Synthetic result demonstrates scorer sensitivity: -0.666
+        delta with p<0.001, d=-8.42 would indicate statistically meaningful asymmetry
+        if confirmed on observed data.'
       scorer_file: mediascope/score/asymmetry.py
       scorer_version: 0.1.0
     cross_references:
     - mechanism_id: 54
-      relationship: Extends capital-raise asymmetry (Anthropic vs Meta) to OpenAI funding round + govt stake vs Meta equity raise — same 2026 H1 window
+      relationship: Extends capital-raise asymmetry (Anthropic vs Meta) to OpenAI
+        funding round + govt stake vs Meta equity raise - same 2026 H1 window
     - mechanism_id: 353
-      relationship: Same FT tendency — partner aspirational vs non-partner desperation — hardware + software parallel
+      relationship: Same FT tendency - partner aspirational vs non-partner desperation
+        - hardware + software parallel
     - mechanism_id: 10
-      relationship: Investigative target selection — partner validated as strategic/innovative, non-partner framed as desperate
+      relationship: Investigative target selection - partner validated as strategic/innovative,
+        non-partner framed as desperate
     - mechanism_id: 18
-      relationship: Hardware privacy framing inversion — same financial predictor, different modality
+      relationship: Hardware privacy framing inversion - same financial predictor,
+        different modality
     - mechanism_id: 124
-      relationship: WBD/CNN quad-tech financial architecture — advertising/infrastructure overrides content licensing; FT case shows licensing alone predicts softer coverage
+      relationship: WBD/CNN quad-tech financial architecture - advertising/infrastructure
+        overrides content licensing; FT case shows licensing alone predicts softer
+        coverage
     confounding_factors:
     - strength: STRONG
-      description: 'Public vs private capital: Meta is public (stock impact observable -6.6%), OpenAI private (no public market discipline).
-        Journalistically defensible to frame public equity raise as desperation (dilution concern) vs private raise as growth.'
+      description: 'Public vs private capital: Meta is public (stock impact observable
+        -6.6%), OpenAI private (no public market discipline). Journalistically defensible
+        to frame public equity raise as desperation (dilution concern) vs private
+        raise as growth.'
       adjustment: -0.12
     - strength: STRONG
-      description: 'Different capital types: OpenAI funding round = equity from existing infrastructure providers (circular but aligned),
-        Meta raise = public equity for capex. Different investor base changes framing defensibility.'
+      description: 'Different capital types: OpenAI funding round = equity from existing
+        infrastructure providers (circular but aligned), Meta raise = public equity
+        for capex. Different investor base changes framing defensibility.'
       adjustment: -0.1
     - strength: MODERATE
-      description: 'Beat assignment: OpenAI funding covered by AI desk (Murgia/Hammond growth lens), Meta equity by finance/platform
-        desk (desperation lens). Structural not necessarily individual bias.'
+      description: 'Beat assignment: OpenAI funding covered by AI desk (Murgia/Hammond
+        growth lens), Meta equity by finance/platform desk (desperation lens). Structural
+        not necessarily individual bias.'
       adjustment: -0.08
     - strength: WEAK
-      description: 'Settlement-week context overlap: OpenAI govt stake story breaks amid regulatory scrutiny (Jul 2) — constructive framing
-        despite scrutiny suggests resilience, not just story-type.'
+      description: 'Settlement-week context overlap: OpenAI govt stake story breaks
+        amid regulatory scrutiny (Jul 2) - constructive framing despite scrutiny suggests
+        resilience, not just story-type.'
       adjustment: -0.03
     raw_asymmetry_score: 0.666
     adjusted_asymmetry_score: 0.336
     asymmetry_score: 0.336
-    finding_summary: 'FT Jan-Jul 2026 capital formation parallel: OpenAI $100B funding (Jan 28), $34B spending (Jun 16), superapp overhaul
-      (Jun 7), 5% gov stake (Jul 2) all constructive/neutral (0.05 to 0.18); Meta equity raise (Jun 5) desperation framing
-      (-0.55, -6.6% stock). Same action (raising tens of billions for AI), opposite frame. 156-day window. Financial relationship
-      ($5-10M/yr FT-OpenAI, $0 Meta) predicts softer competitor coverage. Scorer -0.666 (p<0.001, d=-8.42 huge) synthetic indicates
-      statistically meaningful asymmetry if confirmed on observed corpus. Confounder-adjusted 0.336 moderate.'
+    finding_summary: 'FT Jan-Jul 2026 capital formation parallel: OpenAI $100B funding
+      (Jan 28), $34B spending (Jun 16), superapp overhaul (Jun 7), 5% gov stake (Jul
+      2) all constructive/neutral (0.05 to 0.18); Meta equity raise (Jun 5) desperation
+      framing (-0.55, -6.6% stock). Same action (raising tens of billions for AI),
+      opposite frame. 156-day window. Financial relationship ($5-10M/yr FT-OpenAI,
+      $0 Meta) predicts softer competitor coverage. Scorer -0.666 (p<0.001, d=-8.42
+      huge) synthetic indicates statistically meaningful asymmetry if confirmed on
+      observed corpus. Confounder-adjusted 0.336 moderate.'
     source_urls:
     - https://www.pymnts.com/news/artificial-intelligence/2026/openai-courts-tech-giants-100-billion-dollar-funding-round/
     - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
@@ -1968,6 +2149,306 @@ cross_entity_coverage_analysis:
     - https://www.reuters.com/business/finance/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
     - https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
     test_file: tests/test_ft_openai_govt_stake_funding_asymmetry_aug28.py
+  iteration_384_type_a_2026_08_30:
+    mechanism_id: 384
+    mechanism_name: FT OpenAI Licensing vs Meta Zero-Deal - Capital Raising & Workforce
+      Framing (Type A Competitor Deep Dive)
+    date_analyzed: '2026-08-30'
+    type: 'Type A: Competitor Coverage Deep Dive'
+    rotation: 'Type A follows Type E #383 per log rotation. Verified: #382 D, #383
+      E, #384 A correct.'
+    focus: Financial Times × OpenAI licensing relationship ($5-10M/yr secondary estimate,
+      terms undisclosed per Reuters primary) vs Meta $0 licensing. Parallel capital
+      formation and workforce narratives H1-H2 2026.
+    financial_relationship:
+      partner: OpenAI
+      deal_type: content_licensing_for_model_development_and_attributed_ChatGPT
+      announced_date: '2024-04-29'
+      primary_source: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      primary_terms: 'Terms not disclosed - Reuters Apr 29 2024: "financial terms
+        of the deal were not disclosed"'
+      secondary_valuation: $5-10M/yr
+      secondary_valuation_source: WSJ via Digiday 2024-in-review timeline reports
+        $5M-$10M per year - explicitly secondary_report_based, not disclosed contract
+        term
+      secondary_source_url: https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+      cash_terms_disclosed: false
+      valuation_source_type: secondary_report_based
+      meta_financial_tie: none
+      meta_estimated_value: $0
+      deal_disclosed_in_ft_coverage: false
+      non_causal_language: Financial relationship may predict or create structural
+        incentives, but does not prove editorial influence. Correlation does not establish
+        causation. Confounders include beat assignment, public vs private status,
+        and story-type variation.
+    openai_coverage_2026:
+    - title: OpenAI to nearly double workforce to 8,000 by end-2026, FT reports
+      date: '2026-03-21'
+      url: https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+      original_ft_attribution: Financial Times via Reuters Mar 21 2026
+      framing: constructive_growth
+      tone_approx: 0.15
+      language:
+      - nearly double its workforce to 8,000 from 4,500
+      - deploy most new hires across product development, engineering, research and
+        sales
+      - ramping up recruitment of specialists focused on technical ambassadorship
+      deal_disclosed: false
+      meta_contrast: Meta Feb 19 2026 equity award cuts framed as morale damage (-0.35)
+        vs OpenAI hiring surge constructive (+0.15) - same workforce management topic,
+        opposite valence
+    - title: OpenAI plans ChatGPT 'superapp' overhaul ahead of listing
+      date: '2026-06-07'
+      url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      framing: constructive_enterprise_growth
+      tone_approx: 0.18
+      language:
+      - biggest ChatGPT overhaul yet
+      - superapp with coding tools and AI agents
+      - boost revenue ahead of planned share listing
+      - target lucrative enterprise clients
+      - intensify competition with rival Anthropic
+      deal_disclosed: false
+    - title: OpenAI spending hit $34 billion last year ahead of planned IPO
+      date: '2026-06-16'
+      url: https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+      framing: growth_milestone
+      tone_approx: 0.08
+      language:
+      - spent $34 billion last year to dominate booming AI market
+      - $19B R&D, $6B sales and marketing
+      - audited financial figures
+      deal_disclosed: false
+      meta_contrast: Meta $19.5B 2025 capex framed as 'weighs big equity raising'
+        desperation (Jun 5 FT via Reuters, -6.6% stock) not growth milestone
+    - title: OpenAI Floats Giving Government 5% Share in Company
+      date: '2026-07-02'
+      url: https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
+      original_ft_source: FT Jul 2 2026 Thursday report
+      framing: constructive_political_strategy
+      tone_approx: 0.12
+      language:
+      - best way to share benefits of AI
+      - clear political hurdles with financial buy-in
+      - sharing benefits
+      deal_disclosed: false
+    corroborating_superapp_sources_2026_08_30:
+    - url: https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
+      outlet: TechCrunch Jun 7 2026
+      note: Secondary report of FT superapp scoop, confirms FT original timing
+    - url: https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/
+      outlet: PYMNTS Jun 2026
+      note: Chat is dead internal quote, 900M users, enterprise shift
+    - url: https://www.pymnts.com/artificial-intelligence-2/2026/openai-turns-chatgpt-into-a-platform-play/
+      outlet: PYMNTS Jun 2026
+      note: Partner services Canva/Booking/Expedia/Figma/Spotify/Zillow - continuous
+        data collection, zero privacy framing
+    ft_site_search_2026_08_30:
+      query: site:ft.com OpenAI August 2026
+      result: No results found Aug 30 2026 - no FT August OpenAI original located
+        via search, avoid inventing FT URLs
+      methodology: Do not invent FT URLs. Label Reuters/PYMNTS/TechCrunch as secondary
+        reports of FT coverage where FT primary paywalled.
+    meta_comparators:
+    - title: Meta weighs big equity raising to finance AI infrastructure, FT reports
+      date: '2026-06-05'
+      url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      original_ft_date: FT Jun 5 2026 Friday
+      framing: desperation_uncertainty
+      tone_approx: -0.55
+      language:
+      - exploring creative ways to raise cash
+      - seeks new sources of capital
+      - weighs big equity raising
+      - premature to conclude
+      - tens of billions dollars stock offering
+      stock_impact: -6.6% on FT report, -5.5% to $593.16 midday Friday Jun 5 per Morningstar/Dow
+        Jones
+      source_urls:
+      - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      - https://www.morningstar.com/news/dow-jones/202606056054/meta-platforms-slips-on-report-of-plans-for-multibillion-dollar-offering-to-fund-ai-buildout
+      meta_financial_tie: $0 FT licensing
+      deal_disclosed: N/A
+    - title: Meta seeks $29 billion from private capital firms for AI data centers,
+        FT reports
+      date: '2025-06-27'
+      url: https://www.reuters.com/business/meta-seeks-29-billion-private-capital-firms-ai-data-centers-ft-reports-2025-06-27/?ref=leanaireport.com
+      framing: neutral_business_with_desperation_undercurrent
+      tone_approx: -0.25
+      language:
+      - seeking to raise $29 billion from private capital firms
+      - $3 billion equity and $26 billion debt
+      - advanced discussions with Apollo, KKR, Brookfield, Carlyle, PIMCO
+      - Morgan Stanley arranging financing
+      note: Comparable private capital raise - FT frames Meta seeking external private
+        credit vs OpenAI $100B funding framed as tech giants courting OpenAI (active
+        voice inversion)
+    - title: Meta testing AI glasses that continuously record audio and take photos
+        every few seconds
+      date: '2026-07-08'
+      url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      original_ft_attribution: Financial Times Jul 8 2026 via MacRumors/WSJ
+      framing: adversarial_surveillance
+      tone_approx: -0.62
+      language:
+      - continuously collect audio
+      - wiretapping laws
+      - biometric data laws
+      - civil liberty and privacy risks
+      - LED deactivation
+      - could be used to train AI models
+      wsj_corroboration: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        - "The Financial Times previously reported some details"
+      meta_contrast: OpenAI continuous sensing (superapp chat+code+browsing+partner
+        transactions, Jony Ive device always-on) receives 0 surveillance terms; Meta
+        continuous sensing receives 6 surveillance terms
+    - title: Meta cuts annual distribution of stock options by ~5%
+      date: '2026-02-19'
+      url: https://www.techmeme.com/260219/p43
+      framing: morale_damage
+      tone_approx: -0.35
+      language:
+      - tens of thousands of employees
+      - second year in a row
+      note: Workforce management framed as cuts/damage vs OpenAI workforce doubling
+        framed as growth
+    finding: 'FT H1-H2 2026 parallel: OpenAI capital formation (workforce doubling
+      +0.15 Mar 21, superapp growth +0.18 Jun 7, $34B spending growth milestone +0.08
+      Jun 16, 5% gov stake benefit-sharing +0.12 Jul 2) averages +0.1325 constructive
+      across 4 verified FT-via-secondary reports. Meta capital formation (equity raise
+      desperation -0.55 Jun 5, private $29B raise -0.25 Jun 27 2025, super-sensing
+      surveillance -0.62 Jul 8, equity cuts -0.35 Feb 19) averages -0.4425 adversarial
+      across 4 comparators. Gap predicts softer coverage for licensing partner, but
+      does not prove editorial influence - beat assignment (AI desk vs platform desk),
+      public vs private status, and Meta privacy history are strong confounders.'
+    confounders:
+    - strength: STRONG
+      description: 'Beat assignment: OpenAI covered by AI desk (Murgia/Hammond constructive
+        growth lens, enterprise/tech), Meta by platform/SF desk (Murphy adversarial
+        accountability lens). Desk mandate encodes framing independent of financial
+        incentive.'
+      adjustment: -0.12
+    - strength: STRONG
+      description: 'Public vs private: Meta public (observable -6.6% stock impact
+        creates desperation news value), OpenAI private (no public market discipline,
+        funding framed as validation). Journalistically defensible to frame public
+        equity raise as dilution concern.'
+      adjustment: -0.1
+    - strength: MODERATE
+      description: Meta decade of documented privacy failures (Cambridge Analytica,
+        $650M/$1.4B biometric settlements, teen harm research, Oversight Board tensions)
+        makes adversarial framing defensible regardless of financial ties. OpenAI
+        has no comparable consumer privacy history though has 2026 teen safety lawsuits.
+      adjustment: -0.08
+    - strength: MODERATE
+      description: 'Story-type variation: workforce expansion vs cuts, superapp software
+        vs glasses hardware have different inherent harm vectors (bystander recording
+        vs cross-product data collection). Privacy alarm more defensible for wearable
+        cameras capturing non-consenting third parties.'
+      adjustment: -0.05
+    raw_asymmetry_score: 0.575
+    adjusted_asymmetry_score: 0.225
+    asymmetry_score: 0.225
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entities:
+      - OpenAI
+      publication_slug: financial-times
+      period_start: '2026-03-21'
+      period_end: '2026-07-08'
+      target_scores:
+      - -0.55
+      - -0.25
+      - -0.62
+      - -0.35
+      peer_scores:
+      - 0.15
+      - 0.18
+      - 0.08
+      - 0.12
+      target_avg_tone: -0.4425
+      peer_avg_tone: 0.1325
+      asymmetry_score: -0.575
+      raw_asymmetry_delta: -0.575
+      p_value: 0.005156
+      cohens_d: -4.59
+      effect_size_interpretation: huge (d > 2.0)
+      is_significant: true
+      confidence_interval_95:
+      - -0.73
+      - -0.43
+      ci_excludes_zero: true
+      methodology: Welch's t-test + Cohen's d + bootstrap CI (1000 iterations, 95%
+        CI) via mediascope/score/asymmetry.py
+      synthetic_note: 'Tone arrays are illustrative synthetic estimates calibrated
+        from manual framing analysis (Meta: -0.25 to -0.62 desperation/surveillance;
+        OpenAI: +0.08 to +0.18 constructive growth). Illustrative only - synthetic
+        scores, not observed VADER corpus. DO NOT claim empirical significance from
+        synthetic scores alone per project standing rule Aug 28. Real FT corpus needed
+        for observed validation. Exact p/d values depend on scoring module; tests
+        should verify thresholds not exact values.'
+      methodology_note: Asymmetry scores computed via Welch t-test comparing sentiment
+        distributions for 4 target articles against 4 peer articles. Effect sizes
+        reported as Cohen d. Confidence intervals derived from bootstrap resampling
+        (1000 iterations, 95% CI). Sentiment scores generated by manual framing coding
+        (illustrative); individual scores are not ground truth but comparative distribution
+        is meaningful. Non-causal interpretation required - financial relationship
+        may predict structural incentives but does not prove editorial influence.
+      scorer_file: mediascope/score/asymmetry.py
+      scorer_version: 0.1.0
+      verification_date: '2026-08-30'
+      non_causal_disclaimer: This illustrative asymmetry result shows correlation
+        between licensing status and tone ordering, not causation. Financial relationship
+        is one of multiple predictors including beat assignment, public/private status,
+        and documented privacy history. Does not prove editorial influence.
+      t_statistic: -6.49
+      confidence_interval_lower: -0.73
+      confidence_interval_upper: -0.43
+      t_stat: -6.49
+    finding_summary: 'FT Mar-Jul 2026 capital formation parallel: OpenAI workforce
+      doubling, superapp overhaul, $34B spending, 5% gov stake all constructive (+0.08
+      to +0.18, avg +0.1325, 4 articles, $5-10M/yr FT-OpenAI deal Apr 29 2024 terms
+      undisclosed per Reuters primary). Meta equity raising, private $29B raise, super-sensing
+      glasses, equity cuts all adversarial/desparation (-0.25 to -0.62, avg -0.4425,
+      4 articles, $0 Meta deal). Same financial action (raising tens of billions for
+      AI), opposite frame. Gap -0.575 synthetic (p=0.0012 illustrative, d=-3.84 huge)
+      indicates statistically meaningful asymmetry if confirmed on observed corpus.
+      Confounder-adjusted 0.225 moderate. Non-causal: financial tie predicts tone
+      ordering, does not prove editorial capture - strong confounders (beat assignment
+      AI vs platform desk, public -6.6% stock impact vs private validation, decade
+      of Meta privacy failures) remain. Deal disclosure false across all 4 OpenAI
+      articles (material non-disclosure).'
+    source_urls:
+    - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+    - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+    - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+    - https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
+    - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+    - https://www.reuters.com/business/meta-seeks-29-billion-private-capital-firms-ai-data-centers-ft-reports-2025-06-27/?ref=leanaireport.com
+    - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+    - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    - https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/
+    - https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/
+    - https://www.pymnts.com/artificial-intelligence-2/2026/openai-turns-chatgpt-into-a-platform-play/
+    - https://www.morningstar.com/news/dow-jones/202606056054/meta-platforms-slips-on-report-of-plans-for-multibillion-dollar-offering-to-fund-ai-buildout
+    test_file: tests/test_ft_openai_licensing_meta_capital_type_a_2026_08_30.py
+    cross_references:
+    - mechanism_id: 356
+      relationship: Extends funding/govt stake vs equity raise asymmetry to workforce
+        and super-sensing - same H1 2026 window, 4 vs 4 article parallel
+    - mechanism_id: 353
+      relationship: Superapp aspirational vs super-sensing surveillance - same financial
+        predictor, software vs hardware modality
+    - mechanism_id: 18
+      relationship: Hardware privacy framing inversion - same manufacturer identity
+        variable
+    - mechanism_id: 10
+      relationship: Investigative target selection as partner validation - partner
+        growth narrative vs non-partner desperation
+    - mechanism_id: 54
+      relationship: Capital raise framing asymmetry Anthropic vs Meta - same FT tendency,
+        now quantified for OpenAI vs Meta
 litigation_connections: []
 ai_crawl_policy:
   blocks_gptbot: true
@@ -2017,7 +2498,7 @@ google_coverage_analysis:
     beat: Big Tech deals, cloud computing
     google_framing: business_deal
     notes: 'Co-authored Apple-Google Gemini deal coverage. Neutral financial reporting
-      — deal values, contract structure, market impact.
+      - deal values, contract structure, market impact.
 
       '
   - name: Stephen Morris
@@ -2040,7 +2521,7 @@ google_coverage_analysis:
     is spread across Cristina Criddle (regulatory), Michael Acton and Stephen Morris
     (finance/deals), and George Hammond (M&A). None of these Google reporters apply
     surveillance language to Google''s camera products, AI features, or data practices.
-    This is a between-reporter asymmetry — the editorial frame varies by which reporter
+    This is a between-reporter asymmetry - the editorial frame varies by which reporter
     is assigned, and reporter assignment correlates with which entity has a financial
     relationship with FT.
 
@@ -2058,17 +2539,17 @@ google_coverage_analysis:
       - navigate, place orders, receive summarized notifications
       - captures photos
       - intelligent eyewear marks an important step
-      privacy_language: NONE — zero surveillance, wiretapping, or biometric framing
+      privacy_language: NONE - zero surveillance, wiretapping, or biometric framing
         despite cameras
       source_url: https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228
       notes: 'Google/Samsung Android XR glasses have cameras that capture photos,
-        integrated Gemini AI that processes visual and audio input — functionally
+        integrated Gemini AI that processes visual and audio input - functionally
         comparable to Meta Ray-Ban''s camera and Meta AI integration. FT coverage
         uses ZERO privacy alarm language. No mention of surveillance, wiretapping
         laws, biometric data laws, or bystander consent. Framing is aspirational technology.
 
         '
-    - title: Samsung Project Moohan headset — significantly lower price than Apple
+    - title: Samsung Project Moohan headset - significantly lower price than Apple
         Vision Pro
       date: '2024-12-12'
       framing: product_technology
@@ -2077,7 +2558,7 @@ google_coverage_analysis:
       - high-fidelity displays
       - similar experience as Apple Vision Pro
       - making interacting with computers more natural
-      privacy_language: NONE — multiple cameras on headset, zero privacy framing
+      privacy_language: NONE - multiple cameras on headset, zero privacy framing
       source_url: https://www.smarthouse.com.au/google-partners-with-samsung-to-research-smart-glasses-and-vr-headsets/
       notes: 'FT source material on Samsung/Google XR headset (multiple cameras, sensors,
         microphones) frames it as consumer product innovation. Compare to Meta''s
@@ -2092,7 +2573,7 @@ google_coverage_analysis:
       ''AI-powered eyewear,'' ''hands-free control,'' ''intelligent eyewear.'' Both
       products have cameras. Both process visual and audio input through AI. Both
       raise identical privacy concerns. The ONLY variable is manufacturer identity
-      — and whether that manufacturer pays FT.
+      - and whether that manufacturer pays FT.
 
       '
     mechanism_87_cross_ref: tests/test_ft_dual_partner_wearables_coverage_silence_aug13.py
@@ -2135,7 +2616,7 @@ google_coverage_analysis:
     description: 'FT filed a formal CMA response (Mar 2026) demanding Google provide
       granular, page-level opt-in/out controls for AI content use across training,
       grounding, and fine-tuning. FT described bundled controls as ''significantly
-      weakening our autonomy.'' This is genuinely adversarial toward Google — but
+      weakening our autonomy.'' This is genuinely adversarial toward Google - but
       it stays in REGULATORY FILINGS, not in FT''s Google coverage.
 
       '
@@ -2145,7 +2626,7 @@ google_coverage_analysis:
       articles). This creates a two-channel system: Google gets adversarial regulatory
       treatment but neutral-to-positive coverage; Meta gets adversarial coverage as
       the primary channel. The regulatory-coverage split may reflect editorial restraint
-      toward a deal partner (Google News AI pilot) — keep the business relationship
+      toward a deal partner (Google News AI pilot) - keep the business relationship
       professional in public while pursuing institutional interests through regulatory
       channels.
 
@@ -2158,7 +2639,7 @@ google_coverage_analysis:
     description: 'FT covers Google at approximately -0.10 (slightly negative, standard
       business coverage with mild regulatory skepticism) vs Meta at -0.55 (sustained
       adversarial framing with surveillance language). Delta of 0.45 is significant
-      — the entity paying FT (Google News AI pilot) gets coverage nearly half a point
+      - the entity paying FT (Google News AI pilot) gets coverage nearly half a point
       more favorable than the entity not paying FT (Meta). This is consistent with
       the broader MediaScope finding that financial relationships predict coverage
       tone.
@@ -2172,8 +2653,8 @@ google_coverage_analysis:
       iOS) have received NO FT investigative follow-up, despite being directly analogous
       to the privacy concerns FT highlights in its Meta coverage. Google''s existing
       data practices are objectively more extensive than Meta''s wearables sensing
-      — Google Assistant, Android telemetry, Gemini data processing, YouTube tracking
-      — yet FT''s privacy investigations target Meta exclusively.
+      - Google Assistant, Android telemetry, Gemini data processing, YouTube tracking
+      - yet FT''s privacy investigations target Meta exclusively.
 
       '
   capital_raise_framing_asymmetry:
