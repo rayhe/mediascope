@@ -185,7 +185,7 @@ def test_no_ai_slop_language_recent_mechanisms():
 def test_iteration_log_ordering_and_rotation():
     """Iteration log newest-first ordering and rotation Type D after Type C."""
     text = ITER_LOG.read_text()
-    # Must contain #386 header at top before #387 added
+    # Must contain newest header at top - allow for newer iterations beyond #386 (e.g., #391)
     lines = text.split("\n")
     # Find first Iteration header
     first_header = None
@@ -194,9 +194,14 @@ def test_iteration_log_ordering_and_rotation():
             first_header = line
             break
     assert first_header is not None, "Iteration log must have header in first 5 lines"
-    assert "386" in first_header, f"Newest-first: first header should be #386, got {first_header}"
-    # Verify rotation sequence mentioned in #386
-    assert "Type C" in first_header or "386" in first_header
+    # Newest-first: first header should be a valid iteration number >=386 (repair for post-386 iterations)
+    import re
+    m = re.search(r'#(\d+)', first_header)
+    assert m is not None, f"First header should contain iteration number, got {first_header}"
+    iter_num = int(m.group(1))
+    assert iter_num >= 386, f"Newest-first: first header should be >= #386, got #{iter_num} ({first_header})"
+    # Verify rotation type present (A,B,C,D,E) and iteration format
+    assert "Type" in first_header, f"First header should contain Type, got {first_header}"
 
 def test_threshold_not_exact_compliance():
     """Tests verify thresholds not exact values per Aug 28 standing rule - meta check."""
