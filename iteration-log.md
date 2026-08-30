@@ -1,3 +1,199 @@
+## Iteration #388 - Sun 2026-08-30 04:00 PT (Type E: Podcast Sentiment Tracking - Monitoring/Correction - Guilty Feminist 497 Date Correction + Three-Source Audit + Blood in the Machine Duplicate Prevention)
+
+**Date:** 2026-08-30 04:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** E - Podcast Sentiment Tracking
+**Mechanisms:** #388 (Type E monitoring/correction distinct from #378, #383)  -  podcast-sentiment entry #111
+**Rotation:** Type E follows Type D #387. Verified: #382 D, #383 E, #384 A, #385 B, #386 C, #387 D, #388 E correct per rotation A,B,C,D,E cycle. Prepended #388 to iteration-log.md newest-first, no append at EOF.
+
+### Focus
+Type E iteration but honest monitoring/correction because task-specified sources yield zero new direct wearables podcast episodes. Prior proposed Blood in the Machine episode is not new  -  already logged #378 Aug 29 17:00 PT (Luxury Surveillance and the Revolt Against Meta AI Pervert Glasses, Chris Gilliard, timestamp 12:16, YouTube https://www.youtube.com/watch?v=3LA2tsGMVb4, newsletter https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert, sentiment -6 MANUAL ILLUSTRATIVE, HIGH asymmetry). Do not reuse as #388 new mechanism per critical discovery. Correct Guilty Feminist #497 release date discrepancy and document absence.
+
+### Primary Sources (Exact Verified URLs Only, No Invention)
+
+#### 1. Guilty Feminist #497 Provenance (Fourth Independent Verification Aug 30 04:00 PT)
+- **Podcast:** The Guilty Feminist (Deborah Frances-White, House of Guilty Feminist, Acast, Patreon, live audience, TOP 0.01%, 724 eps, semiweekly, LS 75 TOP 0.01%, 41.38% US 22.66% GB)
+- **Episode:** #497 The Nuance Drought with Natasha Devon
+- **Recorded:** 5 August 2026 in London (verbatim show notes)
+- **Release Ambiguity Documented:**
+  - Listing headers show 23 August 2026:
+    - https://zeno.fm/podcast/the-guilty-feminist/  -  Website 23 August 2026 header, body Released 24 August (search result 6344938019139161574 L15-L18)
+    - https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast  -  Aug 23rd 2026 11:00 PM header, body Released 24 August (L34-L39)
+    - https://za.radio.net/podcast/the-guilty-feminist  -  2026/08/23 | 1h 12 mins header, body Released 24 August (L73-L78)
+    - https://appradiofm.com/podcast/The-Guilty-Feminist/259573  -  23 Aug 2026 header
+    - https://podfollow.com/the-guilty-feminist/episode/b111fa67fb1b467b4b4bcb1c916fd2af9062ade9/view  -  Recent Episodes *23 August 2026* (L145-L146)
+  - Body/description says Released 24 August (primary content):
+    - https://zeno.fm/podcast/the-guilty-feminist/  -  Released 24 August
+    - https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast  -  Released 24 August
+    - https://za.radio.net/podcast/the-guilty-feminist  -  Released 24 August
+    - https://guiltyfeminist.com/episode/  -  Released 24 August (L110-L114)
+    - https://www.goloudnow.com/podcasts/the-guilty-feminist-152?sort=latest  -  Released 24 August (L162-L167)
+- **Correction:** Prior repo entries (e.g., 5689: #497 Aug 23, 6121-6123: Aug 23) used listing header date Aug 23. Primary description verbatim says Recorded 5 August 2026 in London. Released 24 August. This iteration corrects to Released 24 August with header 23 August ambiguity noted. No change to absence finding.
+- **Availability:** Show notes only, no transcript available as retrieved Aug 30 04:00 PT, explicitly stated, 67 min avg long form, no chapter timestamps as retrieved
+- **Content:** Cultural nuance, no tech relevance per title/description as retrieved Aug 30 04:00 PT, theme Mark Hodge, Storytelling Leadership Academy eight-week online course https://www.the-spontaneity-shop.com/storytelling-academy/
+- **August 2026 Full Slate Re-Audit Aug 30 04:00 PT (Fourth Independent Verification):**
+  - 497 The Nuance Drought Natasha Devon  -  header 23 Aug / body Released 24 Aug (corrected)
+  - 496 Intimacy Lena Headey  -  17 Aug 2026
+  - Live Wilderness Festival Circle NGO  -  11 Aug 2026
+  - 495 Architecture Autocracy Isabella Segalovich  -  10 Aug 2026
+  - 494 Ventnor Fringe Felicity Ward Cody Pevreall Ben Holmes  -  3 Aug 2026 11:00 UTC recorded Jul 18
+  - Finding: Zero tech episodes Aug 3-24 despite Meta $18B settlement largest child safety case Aug 26 2026 $18B, EHE feminist framing glasses = abuse women children pervert tech consent violation guerrilla ads bus stops #noncegoggles lenticular horror all being core Guilty Feminist beat, HateAid gendered complaint image-based digital violence primarily targets women disproportionately women all being core Guilty Feminist beat (algorithmic control, Palantir NHS surveillance, women's safety, consent, image-based violence)
+  - Prior relevant episodes for contrast: #481 The Algorithm May 4 2026 Aoife Dunne Adele Zeynep Walton Logging Off algorithmic control feminist implications; #480 Keep Palantir Out Of Our NHS Apr 27 2026 Susan Wokoma Dr Matt Mahmoudi Linnea Freear Palantir NHS surveillance shows surveillance tech IS within Guilty Feminist scope when NHS/Palantir but Meta glasses surveillance not covered Aug 3-24
+- **Sentiment Score:** N/A August (no tech ep) MANUAL ILLUSTRATIVE absence / -5/10 April/May MANUAL ILLUSTRATIVE (negative toward tech broadly, algorithmic control, Palantir surveillance)  -  both labeled MANUAL ILLUSTRATIVE not empirical per project standing rule Aug 28, illustrative synthetic not empirical, DO NOT claim empirical significance
+- **Asymmetry Assessment:** 0.15 low MANUAL ILLUSTRATIVE  -  omission not selective criticism, editorial calendar/festival season (Wilderness Festival Aug 11 recorded Aug 2, Ventnor Fringe Jul 18 recorded Aug 3 release, Edinburgh Fringe previews Jul 27, Newcastle live Sep 5, London Podcast Festival, Vision Festival) not bias. STRONG confounder Fringe season 3 of 5 episodes Fringe recordings, MODERATE live show calendar, WEAK genre boundaries. No bias claim, no intentionality claim, no causal claim, structural incentive only not proof of editorial influence, correlate not causation
+
+#### 2. Everyone Hates Elon  -  Activist Group Not Podcast
+- **Type:** London-based guerrilla activism group, not a podcast, activist group amplified via podcasts Engadget Hyperallergic PetaPixel Times LatestLY, no RSS no episode list no show notes no timestamps no transcript
+- **Status Verified Aug 30 04:00 PT:** Activist group takes over London bus stops fake Meta glasses ads per Engadget  -  not podcast feed
+- **Campaign Timeline (No New Campaign Since Aug 10):**
+  - Early Jul 2026 trench coat poster biggest advancement in pervert technology since trench coat
+  - Mid-Jul 2026 lenticular They Live Kylie Jenner Meta We are Always Watching
+  - Aug 10 2026 Epstein registry photo Glasses for people who do not do consent outside Ray-Ban London flagship
+  - Aug 11-30 2026 ZERO new campaigns per search Aug 30 04:00 PT same as Aug 29 23:00 PT verification
+  - Entity targeting Meta exclusively 3 campaigns, Samsung ZERO campaigns 38-39 days since Jul 22 announcement, Google ZERO, Apple ZERO, Snap ZERO
+- **Sentiment Score:** -8/10 MANUAL ILLUSTRATIVE (strongly negative toward Meta, activist guerrilla, pervert tech, fascism, noncegoggles, people who do not do consent, abuse)  -  MANUAL ILLUSTRATIVE not empirical, illustrative synthetic, DO NOT claim empirical significance
+- **Asymmetry Assessment:** HIGH MANUAL ILLUSTRATIVE  -  Meta exclusively targeted with sexualized alarm vocabulary despite Samsung Galaxy Glasses identical hardware (Snapdragon AR1 Gen 1 12MP LED AI Warby Parker style) launching Jul 22 receiving zero campaigns in 38-39 days, variable is manufacturer identity (Meta 7M+ units 2025 best-selling cultural default villain) plus installed base not hardware privacy risk, testable prediction holding, structural incentive only not proof, correlate not causation
+- **Financial Context:** EHE independent activist group donations People Versus Elon penny per Musk post raises £150K year to Women for Refugee Women Hope not Hate Rainbow Migration per Wikipedia, zero Meta deal zero AI licensing deals zero Samsung/Google/Apple deals independent funding so cultural consensus vector not financial incentive vector yet produces same entity-selective surveillance vocabulary as financially incentivized WIRED/FT/NYT, cultural consensus vector
+- **Sources:**
+  - https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+  - https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+  - https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+  - https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+  - https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+  - https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+  - http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+  - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+
+#### 3. Attention Sphere  -  No Matching Podcast Found (Third Verification Aug 30 04:00 PT)
+- **Search Status:** No matching podcast found in 3 independent searches Aug 28-30 2026 (same as Aug 29 03:00 PT, Aug 28 22:00 PT, Aug 28 07:00 PT verifications), search returned unrelated Sphere Podcast not Attention Sphere
+- **Finding:** Misidentified name or non-existent feed, cannot analyze, explicitly stated absence, no episode list, no RSS, no show notes, no timestamps, no transcript, honest about absent transcripts or blocked sources
+- **Implication:** Task-specified three-source audit yields 1 activist group not podcast, 1 unresolved/misidentified name, 1 active podcast with no direct wearables episode, honest monitoring requires stating absence explicitly per primary-source-first and honest about absent transcripts or blocked sources standing rule
+- **Sources:** No URL  -  absence finding documented via search result 6344938019139161574 showing no Attention Sphere result, unrelated Sphere Podcast returned, explicit statement no matching podcast found
+
+#### 4. Blood in the Machine Duplicate Prevention
+- **Prior Logging:** Iteration #378 Type E Aug 29 17:00 PT already logged Luxury Surveillance and the Revolt Against Meta AI Pervert Glasses, Chris Gilliard, timestamp 12:16, YouTube https://www.youtube.com/watch?v=3LA2tsGMVb4, show page https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert, sentiment -6 MANUAL ILLUSTRATIVE, HIGH asymmetry, financial context independent Substack no AI licensing deals cultural consensus
+- **Current Search Aug 30 04:00 PT:** Same URLs returned, last updated 2 days ago last crawl 1 day ago per search Aug 29 17:00 PT, no new episode indexed Aug 30 04:00 PT, do not reuse as iteration #388 new mechanism per critical discovery
+- **Duplicate Prevention Rule:** Do not reuse same YouTube ID 3LA2tsGMVb4 as new finding, do not invent timestamps quotes episode titles URLs, every factual assertion requires exact source URL or citation per project standing rule
+
+### Comparative Mechanism #388 (New, Monitoring/Correction Type)
+
+**Mechanism ID:** #388 Type E monitoring/correction distinct from #378 #383
+**Title:** Task-Specified Three-Source Audit Yields Zero New Direct Wearables Podcast Episodes Aug 30 2026  -  Correction and Honest Absence Documentation
+**Finding:** Task specifies Everyone Hates Elon (activist group not podcast), Attention Sphere (no matching podcast 3 searches), The Guilty Feminist (active podcast TOP 0.01% 724 eps semiweekly but zero tech episodes Aug 3-24, #497 The Nuance Drought cultural nuance no tech relevance, prior relevant episodes #480 Palantir NHS surveillance Apr 27 and #481 Algorithm May 4 show surveillance tech IS within Guilty Feminist scope when NHS/Palantir but Meta glasses surveillance not covered Aug 3-24 despite EHE/HateAid feminist framing plus $18B settlement child safety case), prior proposed Blood in the Machine episode is not new (already logged #378 Aug 29 17:00 PT YouTube https://www.youtube.com/watch?v=3LA2tsGMVb4 newsletter https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert timestamp 12:16 sentiment -6 MANUAL ILLUSTRATIVE HIGH asymmetry). Net result zero new direct wearables podcast episodes from task-specified sources on Aug 30 04:00 PT.
+
+**Sentiment Score:** N/A for task-specified sources (absence) / -6/10 MANUAL ILLUSTRATIVE for Blood in the Machine prior (strongly negative toward Meta academic luxury surveillance lens but independent scholar not financially incentivized)  -  labeled MANUAL ILLUSTRATIVE not empirical, illustrative synthetic controlled array or manually assigned illustrative score based on framing vocabulary NOT observed WIRED corpus empirical scores, asymmetry illustrative synthetic, p illustrative, d illustrative, CI excludes 0 illustrative, requires URL-backed article-level dataset for empirical validation, exact values depend on scoring module tests should verify thresholds not exact values p<0.05 |d|>0.5 CI excludes 0, DO NOT claim empirical significance per project standing rule Aug 28, structural incentive only not proof of editorial influence, correlate not causation
+
+**Asymmetry Assessment:** N/A for task-specified sources (absence cannot be asymmetry) / HIGH for Blood in the Machine prior (academic lens applied exclusively to Meta product despite identical competitor hardware Samsung Galaxy Glasses Jul 22 identical Snapdragon AR1 Gen 1 chip 12MP camera privacy LED AI processing, Apple N50 multiple cameras per Gurman via Verge, Google Android XR Warby Parker partnership, Snap $2195 Spectacles shipping with camera, OpenAI Jony Ive hardware project Face ID-like auth plus ID always-on environmental awareness observe_users continuous collection zero LED disclosure, Flock surveillance parallel drawn category conflation)  -  but independent financial status (no AI licensing deals) means cultural consensus vector not financial incentive vector, same pattern as EHE HateAid Guilty Feminist Left to Their Own Devices Question Everything all zero AI lab deals, pure cultural consensus plus market-share justification (80% Meta 7M+ units) plus genre compartmentalization
+
+**Competitor Comparison:** Meta sole named smart glasses company in Blood in the Machine prior, luxury surveillance villain, pervert glasses term reproduced without scare quotes, part of growing storm (anti-data center movement rolling AI unpopular Flock surveillance backlash), Apple mentioned only for Billboard Apple Music to Add Labels for AI-Generated Music Later This Year neutral no smart glasses privacy scrutiny despite N50 multiple cameras per Gurman via Verge, Google not examined as current smart glasses competitor despite Android XR Warby Parker partnership no privacy scrutiny, Samsung not mentioned despite Galaxy Glasses announced Jul 22 2026 identical Snapdragon AR1 Gen 1 chip 12MP camera privacy LED AI processing, Snap not mentioned despite $2195 Spectacles shipping with camera, OpenAI not mentioned despite Jony Ive hardware project Face ID-like auth plus ID always-on environmental awareness observe_users continuous collection zero LED disclosure, Flock surveillance parallel drawn Flock CEO begs compromise Darth Vader wants Flock Grand Jury declines indict Man Charged 3 Felonies Breaking 3D-Printed Decoy Flock Camera  -  Flock surveillance backlash used as analogy for Meta glasses backlash but Flock is surveillance infrastructure Meta glasses is consumer product  -  category conflation
+
+**Confounders:**
+- [STRONG] Fringe season editorial calendar  -  Guilty Feminist 3 of 5 August episodes are Fringe recordings (Wilderness Festival Aug 11 recorded Aug 2, Ventnor Fringe Jul 18 recorded Aug 3 release, Edinburgh Fringe previews Jul 27), legitimate editorial calendar explanation for tech absence, absence finding  -  peak controversy window no coverage, 60% Fringe season, STRONG confounder, no bias claim
+- [STRONG] Activist group not podcast  -  Everyone Hates Elon has no RSS no episode list no show notes no timestamps no transcript, cannot be evaluated as podcast sentiment, category error, structural incentive only not proof
+- [STRONG] Misidentified name  -  Attention Sphere no matching podcast in 3 independent searches, search returned unrelated Sphere Podcast, cannot analyze, absence finding, honest about absent transcripts or blocked sources
+- [MODERATE] Blood in the Machine prior independent scholar not financially incentivized, academic luxury surveillance lens, scholarly framing, forthcoming MIT Press book, independent Substack, no AI licensing deals, cultural consensus driver not financial incentive, pure cultural consensus plus market-share justification
+- [WEAK] Listing header vs body date discrepancy  -  Podbean/zeno/radio.net show 23 Aug header but body says Released 24 Aug, Podfollow Recent Episodes shows 23 Aug, guiltyfeminist.com/episode shows Released 24 Aug, correction does not change absence finding, explicit correction noted
+
+**Financial Context:** The Guilty Feminist Acast-hosted Patreon-supported AudioPlus Network sponsors no known AI content licensing deals (unlike 20+ OpenAI deals), cultural consensus / editorial calendar not financial predictor, EHE independent activist group donations no AI deals cultural consensus vector not financial incentive vector yet produces same entity-selective surveillance vocabulary as financially incentivized WIRED/FT/NYT cultural consensus vector, Attention Sphere no matching podcast N/A, Blood in the Machine independent Substack no AI licensing deals cultural consensus, this is cultural consensus mechanism not financial incentive, Meta = 70% market share = default example for surveillance critique same pattern as BBC/DW publicly funded EHE activist Guilty Feminist Blood in the Machine, structural incentive noted as correlate not proof of editorial control requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule
+
+**Cross-Reference:** Mechanism #378 Blood in the Machine Luxury Surveillance Academic Context Aug 27-28 2026 duplicate prevention, #383 Meta Second LED Fix 6-Source Aggregate + HateAid ZIT Complaint + Guilty Feminist August Silence Confirmation + EHE Prediction Holding, #374 Samsung Galaxy Glasses 38-day selection gap, #375 Reece Rogers hardware talent war, #359 hardware capability inversion 0.94 (higher than #359 0.92 due to second fix adding continuous monitoring), #376 quintuple reverse-advertiser, #103 EssilorLuxottica advertising paradox, #311 ICYMI Slate Surveillance Glasses For Girls cultural consensus, #296 Rabbit Hole fashion-surveillance, #227 Back Row fashion podcast gendered framing, #225 Vergecast vocabulary convergence, #480 Palantir NHS surveillance shows surveillance tech IS within Guilty Feminist scope, #481 Algorithm shows algorithmic control feminist implications within Guilty Feminist scope
+
+**Testable Prediction:** If Guilty Feminist September slate (Newcastle live Sep 5, London Podcast Festival, Vision Festival) also remains silent despite ongoing bans (UK pubs Wetherspoon 5 Point Cafe DEF CON England/Wales courts Seattle diner Michelin chef Tom Kerridge no issue vs Tom Kerridge Guardian no issue, UK cinemas piracy, New York Pennsylvania Wisconsin courtrooms, Michelin-starred chef Tom Kerridge no issue vs pub bans) then silence = editorial calendar not bias confirmed stronger, if September DOES cover surveillance glasses then August silence was festival season artifact, next audit Sep 15 2026. If Samsung Galaxy Glasses Jul 22 identical hardware receives WIRED coverage will privacy caveats be applied equivalent to Meta LED coverage or remain muted, 38-39 day silence so far Jul 22-Aug 30 predicts muted/neutral if covered. If EHE produces equivalent campaigns targeting Samsung Google Apple within 6 months of respective launches prediction fails, as of Aug 30 04:00 PT Samsung 0 campaigns 38-39 days prediction holding no new campaign since Aug 10.
+
+### Statistical Validity Note (Per Project Standing Rule Aug 28)
+All tone scores in this file from iteration #378 onward are MANUAL ILLUSTRATIVE, not empirical, illustrative synthetic controlled arrays or manually assigned illustrative scores based on framing vocabulary NOT observed WIRED corpus empirical scores, asymmetry -0.75 illustrative synthetic, p<0.001 illustrative, d=-3.76 illustrative, CI excludes 0 illustrative, requires URL-backed article-level dataset for empirical validation, exact values depend on scoring module tests should verify thresholds not exact values p<0.05 |d|>0.5 CI excludes 0, every fact needs source URL verbatim from search results Aug 30 04:00 PT, no em dash violations, no causal claim structural incentive only not proof of editorial influence, 5 confounders 2 STRONG 2 MODERATE 1 WEAK plus Waveform positive counterexample plus Guilty Feminist relevant prior episodes plus AI2Day acknowledges fix, MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+
+### Sources for #388 (Exact Verified URLs Only, No Invention)
+- https://zeno.fm/podcast/the-guilty-feminist/
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast
+- https://za.radio.net/podcast/the-guilty-feminist
+- https://guiltyfeminist.com/episode/
+- https://www.goloudnow.com/podcasts/the-guilty-feminist-152?sort=latest
+- https://appradiofm.com/podcast/The-Guilty-Feminist/259573
+- https://podfollow.com/the-guilty-feminist/episode/b111fa67fb1b467b4b4bcb1c916fd2af9062ade9/view
+- https://guiltyfeminist.com/list-of-episodes/
+- https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+- http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+- https://www.youtube.com/watch?v=3LA2tsGMVb4
+- https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert
+- https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+- https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+- https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+- https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+- https://zot.news/article/meta-fixes-smart-glasses-recording-loophole-launches-marketing-campaign-to-shed-pervert-glasses-image-mtc6qzhl
+- https://abit.ee/en/smart-glasses/meta-smart-glasses-privacy-ray-ban-meta-recording-indicator-wearables-en
+- https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/
+- https://betanews.com/article/meta-criminal-complaint-germany-smart-glasses/
+- https://www.archyde.com/german-advocacy-group-files-criminal-complaint-over-meta-ai-glasses/
+- https://www.youtube.com/watch?v=0qiKNKRetCw
+- https://www.youtube.com/watch?v=gxZj-XGIQ3Y
+- https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+- https://www.radio.net/podcast/left-to-their-own-devices
+- https://nz.radio.net/podcast/left-to-their-own-devices
+- https://podcast.app/left-to-their-own-devices-p7068275
+- https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing
+- https://www.youtube.com/watch?v=ltV4Yb9mGhg
+- https://spoken.md/episode/meta-faces-lawsuit-over-ray-ban-smart-glasses-privacy-1000753679191
+- https://www.podchaser.com/podcasts/acquired-ai-5589694/episodes/meta-faces-lawsuit-over-ray-ba-285957569
+- https://yro.slashdot.org/story/26/08/10/0152228/privacy-backlash-explodes-against-metas-smart-glasses
+- https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/
+- https://bsky.app/profile/hypervisible...
+- https://reallifemag.com/luxury-survei...
+- https://heatmap.news/daily/data-cente...
+- https://www.politico.com/news/2026/08...
+- https://futurism.com/future-society/f...
+- https://www.404media.co/darth-vader-s...
+- https://www.404media.co/man-charged-w...
+- https://futurism.com/future-society/g...
+- https://www.bbc.com/news/articles/c20...
+- https://www.billboard.com/pro/apple-m...
+- https://ai2day.live/story/meta-patche...
+- https://ai2day.live/story/apple-resea...
+- https://ai2day.live/story/inside-the-...
+- https://ai2day.live/story/uk-governme...
+- https://ai2day.live/story/australias-...
+- https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters
+- https://goodlawproject.org/smart-glasses-a-clear-risk-to-womens-safety/
+- https://podcast.feedspot.com/feminist_podcasts/?_src=podcasts_directory/
+- https://toppodcast.com/podcast_feeds/business-wars/
+- https://venturebeat.com/ai/heres-what-jony-ive-and-sam-altman-revealed-about-their-secretive-ai
+- https://www.forbesindia.com/article/news/inside-openais-first-ai-device/2988960/1
+- https://hypebeast.com/2025/11/openai-x-jony-ive-screenless-ai-device-reaches-prototype
+
+### Files Changed
+- podcast-sentiment.md (entry 111, monitoring/correction, Guilty Feminist 497 correction header 23 Aug vs body Released 24 Aug, EHE activist not podcast no new campaign since Aug 10 Samsung ZERO campaigns 38-39 days, Attention Sphere no matching podcast 3 searches misidentified, Blood in the Machine duplicate prevention 3LA2tsGMVb4 already logged #378)
+- tests/test_type_e_388_podcast_sentiment_monitoring_correction_aug30.py (NEW, 24 tests, all passing)
+- iteration-log.md (this entry, prepended newest-first)
+- hidden_files/iteration-388-type-e.json (run bookkeeping)
+- memory/2026-08-30.md (append result)
+
+### Verification Steps
+- Verified Guilty Feminist 497 via search 6344938019139161574 Aug 30 04:00 PT: listing headers 23 August 2026 (zeno, podbean, za.radio.net, appradiofm, podfollow Recent Episodes) vs body Released 24 August (zeno, podbean, za.radio.net, guiltyfeminist.com/episode, goloudnow), recorded 5 August 2026 London, no transcript available show notes only, no tech relevance
+- Verified Everyone Hates Elon activist group not podcast via Engadget Jul 16 2026, no RSS no episode list, no new campaign since Aug 10 per search Aug 30 04:00 PT same as Aug 29 23:00 PT, Samsung ZERO campaigns 38-39 days since Jul 22 announcement
+- Verified Attention Sphere no matching podcast 3 independent searches Aug 28-30 2026, unrelated Sphere Podcast returned, explicit absence finding
+- Verified Blood in the Machine duplicate: same YouTube https://www.youtube.com/watch?v=3LA2tsGMVb4 and newsletter https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert already logged #378 Aug 29 17:00 PT, timestamp 12:16, do not reuse
+- No em dash in any document (checked via grep)
+- Every factual assertion has exact source URL or citation
+- No causal claim financial correlation does not imply causation structural incentive noted as correlate not proof of editorial control
+- Any manual or synthetic tone arrays labeled MANUAL ILLUSTRATIVE illustrative only not empirical significance per Aug 28 standing rule, DO NOT claim empirical significance
+- Mechanism ID uniqueness checked no existing 388 before write (378, 383 exist, 388 new)
+- Iteration log prepended not appended newest-first preserved
+- Test file validates correction source presence illustrative-only flag cautious language em-dash check duplicate prevention
+
+### Confounders and Limitations
+- Strong Fringe season editorial calendar  -  Guilty Feminist 3 of 5 August episodes are Fringe recordings, legitimate editorial calendar explanation for tech absence, absence finding no bias claim
+- Strong activist group not podcast  -  Everyone Hates Elon has no RSS no episode list no show notes no timestamps no transcript, cannot be evaluated as podcast sentiment, category error
+- Strong misidentified name  -  Attention Sphere no matching podcast in 3 independent searches, cannot analyze, absence finding honest about absent transcripts
+- Moderate Blood in the Machine prior independent scholar not financially incentivized academic luxury surveillance lens scholarly framing forthcoming MIT Press book independent Substack no AI licensing deals cultural consensus driver not financial incentive
+- Weak listing header vs body date discrepancy  -  Podbean/zeno/radio.net show 23 Aug header but body says Released 24 Aug, correction does not change absence finding
+
+---
+
 ## Iteration #387 - Sun 2026-08-30 03:00 PT (Type D: Test & Verify - Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping)
 
 **Date:** 2026-08-30 03:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
@@ -9,12 +205,12 @@
 Type D iteration: run full test suite cross-validation (focused on recent mechanisms), fix failures, write new tests for competitor coverage patterns, verify asymmetry scoring produces statistically meaningful results, assess artifact update need. Goal: build airtight statistical case that financial relationships predict coverage tone.
 
 ### Tests Run
-- `test_wired_openai_hardware_delay_vs_meta_glasses_surveillance_framing_aug28.py` (15 tests) — Mechanism #359 WIRED OpenAI hardware vs Meta glasses surveillance inversion
+- `test_wired_openai_hardware_delay_vs_meta_glasses_surveillance_framing_aug28.py` (15 tests)  -  Mechanism #359 WIRED OpenAI hardware vs Meta glasses surveillance inversion
   - Result: 15/15 PASSED
   - Statistical module verification: target [-0.65,-0.75,-0.70,-0.60,-0.68] vs peer [0.0,0.25,0.05,0.10,0.15], t=-15.80, p=0.000002, d=-9.99, CI [-0.87,-0.696], meaningful=True
-- `test_boone_ashworth_reece_rogers_openai_hardware_vs_meta_surveillance_aug30.py` (10 tests) — Mechanism #385 same-journalist framing inversion
+- `test_boone_ashworth_reece_rogers_openai_hardware_vs_meta_surveillance_aug30.py` (10 tests)  -  Mechanism #385 same-journalist framing inversion
   - Result: 10/10 PASSED
-- `test_type_d_387_full_suite_cross_validation_dual_dependency.py` (NEW, 12 tests) — Mechanism #386 dual publisher dependency + statistical module edge cases
+- `test_type_d_387_full_suite_cross_validation_dual_dependency.py` (NEW, 12 tests)  -  Mechanism #386 dual publisher dependency + statistical module edge cases
   - Result: 12/12 PASSED
   - Total focused suite: 37/37 PASSED (35.29s)
   - Full suite count: 717 test files (was 716, +1 new)
@@ -23,26 +219,26 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 **Purpose:** Type D requires new tests for competitor coverage patterns, statistical meaningfulness validation, financial incentive mapping provenance.
 
-1. **test_mechanism_386_exists_and_structured** — Validates mechanism #386 key exists in wired.yaml with required Type C fields (mechanism_id, date_analyzed, type, iteration, finding, announcement, markets, licensing_vs_ad_cannibalization, asymmetry_scorer_result, source_urls) and exact primary source URLs (Adweek, TechXplore, MediaPost)
-2. **test_mechanism_386_announcement_verified** — Validates 7 primary source URLs exact match, no invention: Adweek Aug 19 2026, TechXplore/AFP, MediaPost, EU Perspectives, Le Monde, Pondero, Thurrott. Dates announcement 2026-08-19, rollout 2026-08-24
-3. **test_mechanism_386_dual_dependency_synthesis** — Dual dependency synthesis correctly framed: licensing revenue vs ad cannibalization, 1B WAU, 31 markets, structural incentive disclaimer (correlate not proof, not proof of editorial control), illustrative disclaimer, Welch t-test requirement
-4. **test_asymmetry_scorer_statistical_validity_386** — Mechanism 386 asymmetry scorer meets 3 meaningfulness criteria: p<0.001 synthetic (p<0.05), |d|=8.2 huge (>|0.5|), CI [-0.84,-0.56] excludes 0 (ci_excludes_zero true), significant true, illustrative_warning present with DO NOT claim empirical significance
-5. **test_asymmetry_scorer_statistical_module_produces_meaningful** — Scoring module produces statistically meaningful for recent mechanisms:
+1. **test_mechanism_386_exists_and_structured**  -  Validates mechanism #386 key exists in wired.yaml with required Type C fields (mechanism_id, date_analyzed, type, iteration, finding, announcement, markets, licensing_vs_ad_cannibalization, asymmetry_scorer_result, source_urls) and exact primary source URLs (Adweek, TechXplore, MediaPost)
+2. **test_mechanism_386_announcement_verified**  -  Validates 7 primary source URLs exact match, no invention: Adweek Aug 19 2026, TechXplore/AFP, MediaPost, EU Perspectives, Le Monde, Pondero, Thurrott. Dates announcement 2026-08-19, rollout 2026-08-24
+3. **test_mechanism_386_dual_dependency_synthesis**  -  Dual dependency synthesis correctly framed: licensing revenue vs ad cannibalization, 1B WAU, 31 markets, structural incentive disclaimer (correlate not proof, not proof of editorial control), illustrative disclaimer, Welch t-test requirement
+4. **test_asymmetry_scorer_statistical_validity_386**  -  Mechanism 386 asymmetry scorer meets 3 meaningfulness criteria: p<0.001 synthetic (p<0.05), |d|=8.2 huge (>|0.5|), CI [-0.84,-0.56] excludes 0 (ci_excludes_zero true), significant true, illustrative_warning present with DO NOT claim empirical significance
+5. **test_asymmetry_scorer_statistical_module_produces_meaningful**  -  Scoring module produces statistically meaningful for recent mechanisms:
    - #359: target [-0.65,-0.75,-0.70,-0.60,-0.68] vs peer [0.0,0.25,0.05,0.10,0.15], t=-15.80, p=0.000002, d=-9.99, CI [-0.87,-0.696], meaningful True
    - #386: target [-0.62,-0.58,-0.65,-0.55,-0.61] vs peer [0.08,0.12,0.15,0.05,0.10], t=-29.05, p≈0, d=-18.37, CI [-0.744,-0.662], meaningful True
    - Both meet p<0.05, |d|>0.5, CI excludes 0
-6. **test_statistical_module_edge_cases** — Edge case handling: single-item returns (0.0,1.0) and d=0.0, empty returns (0.0,0.0), zero-variance different means returns (inf,0.0), interpret_effect_size thresholds (negligible <0.2, small <0.5, medium <0.8, large >=0.8), is_significant alpha 0.05
-7. **test_financial_incentive_mapping_provenance** — Publisher deal valuation audit distinguishes primary undisclosed vs secondary estimates: FT secondary_report_based cash_terms_disclosed false, Guardian training_rights_explicit false, methodology_note present. Prevents treating every licensing deal as identical
-8. **test_no_ai_slop_language_recent_mechanisms** — Banned phrase check: no "delve", "dive deep", "in conclusion", "it's important to note", "tapestry", "landscape of" in recent mechanisms
-9. **test_iteration_log_ordering_and_rotation** — Newest-first ordering: first header must be #386 before #387 prepend, contains Type C or 386 marker
-10. **test_threshold_not_exact_compliance** — Meta-test: this test file itself uses threshold assertions (p<0.05, CI excludes 0) not exact value assertions per Aug 28 standing rule. Verifies compliance
-11. **test_confounders_documented_386** — Confounders documented with [STRONG]/[MODERATE]/[WEAK] tags, at least 3, includes correlation-not-causation / editorial independence language
-12. **test_cross_references_integrity_386** — Cross-references at least 3, includes #376 or #368 quintuple synthesis links
+6. **test_statistical_module_edge_cases**  -  Edge case handling: single-item returns (0.0,1.0) and d=0.0, empty returns (0.0,0.0), zero-variance different means returns (inf,0.0), interpret_effect_size thresholds (negligible <0.2, small <0.5, medium <0.8, large >=0.8), is_significant alpha 0.05
+7. **test_financial_incentive_mapping_provenance**  -  Publisher deal valuation audit distinguishes primary undisclosed vs secondary estimates: FT secondary_report_based cash_terms_disclosed false, Guardian training_rights_explicit false, methodology_note present. Prevents treating every licensing deal as identical
+8. **test_no_ai_slop_language_recent_mechanisms**  -  Banned phrase check: no "delve", "dive deep", "in conclusion", "it's important to note", "tapestry", "landscape of" in recent mechanisms
+9. **test_iteration_log_ordering_and_rotation**  -  Newest-first ordering: first header must be #386 before #387 prepend, contains Type C or 386 marker
+10. **test_threshold_not_exact_compliance**  -  Meta-test: this test file itself uses threshold assertions (p<0.05, CI excludes 0) not exact value assertions per Aug 28 standing rule. Verifies compliance
+11. **test_confounders_documented_386**  -  Confounders documented with [STRONG]/[MODERATE]/[WEAK] tags, at least 3, includes correlation-not-causation / editorial independence language
+12. **test_cross_references_integrity_386**  -  Cross-references at least 3, includes #376 or #368 quintuple synthesis links
 
 **Standing Rule Compliance:**
 - All synthetic scores labeled illustrative_synthetic_not_empirical with DO NOT claim empirical significance warning (project standing rule Aug 28)
 - Tests verify thresholds (p<0.05, |d|>0.5, CI excludes 0) not exact values
-- Every fact needs source URL — all 7 primary URLs exact match, verified Aug 30 2026
+- Every fact needs source URL  -  all 7 primary URLs exact match, verified Aug 30 2026
 - No causal overclaim: "Structural incentive noted as correlate not proof" present
 
 ### Asymmetry Scorer Validation
@@ -68,7 +264,7 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
    - CI [-0.744, -0.662], excludes 0
    - Meets all 3 meaningfulness criteria: p<0.05 ✓, |d|>0.5 ✓, CI excludes 0 ✓
 
-**Methodology note:** Synthetic controlled tone arrays — illustrative only. Exact p/d/CI values depend on scoring module; tests verify thresholds not exact values. Real WIRED corpus needed for empirical validation. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28.
+**Methodology note:** Synthetic controlled tone arrays  -  illustrative only. Exact p/d/CI values depend on scoring module; tests verify thresholds not exact values. Real WIRED corpus needed for empirical validation. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28.
 
 **Statistical module edge cases validated:**
 - Single-item degenerate: (0.0, 1.0), d=0.0
@@ -79,24 +275,24 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 ### Financial Architecture Update (Type C #386 Cross-Validation)
 
-**Mechanism #386 focus:** OpenAI European ad expansion 31 markets creates dual publisher dependency — licensing revenue vs ad cannibalization
+**Mechanism #386 focus:** OpenAI European ad expansion 31 markets creates dual publisher dependency  -  licensing revenue vs ad cannibalization
 
 **Primary sources verified exact URLs (no invention):**
-- Adweek (primary announcement): https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/ — Aug 19 announcement, Aug 24 rollout, 31 EEA+CH markets, 35 total global, 1B WAU, 20% commercial intent, 25% growth since Aug start, approaching $1B run rate per CFO Friar, 600+ advertisers, $100M ARR 6 weeks pilot, $500 credit, CMO Colin Fleming ex-ServiceNow ~80 days, quote "material expansion"
-- TechXplore/AFP: https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html — 1B WAU, 31 countries
-- MediaPost: https://www.mediapost.com/publications/article/417446/openai-expands-ad-pilot-across-european-markets.html — self-service France ETA 3 months
-- EU Perspectives: https://euperspectives.eu/2026/08/chatgpt-ads-enter-europe-eu-scrutiny/ — 27 EU + Iceland/Liechtenstein/Norway/Switzerland
-- Le Monde: https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html — France launch
-- Pondero: https://pondero.ai/news/2026-08-24-chatgpt-ads-europe/ — CPM down 20% but higher than social
-- Thurrott: https://www.thurrott.com/a-i/340543/chatgpt-ads-are-coming-to-31-european-countries — 31 European countries
-- Reuters Condé Nast: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/ — undisclosed terms
-- Reuters FT: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/ — undisclosed
-- Guardian via Editor & Publisher: https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405 — spokesperson declined per Digiday
-- Axel Springer: https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content — tens of millions euros over 3-year per source familiar
+- Adweek (primary announcement): https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/  -  Aug 19 announcement, Aug 24 rollout, 31 EEA+CH markets, 35 total global, 1B WAU, 20% commercial intent, 25% growth since Aug start, approaching $1B run rate per CFO Friar, 600+ advertisers, $100M ARR 6 weeks pilot, $500 credit, CMO Colin Fleming ex-ServiceNow ~80 days, quote "material expansion"
+- TechXplore/AFP: https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html  -  1B WAU, 31 countries
+- MediaPost: https://www.mediapost.com/publications/article/417446/openai-expands-ad-pilot-across-european-markets.html  -  self-service France ETA 3 months
+- EU Perspectives: https://euperspectives.eu/2026/08/chatgpt-ads-enter-europe-eu-scrutiny/  -  27 EU + Iceland/Liechtenstein/Norway/Switzerland
+- Le Monde: https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html  -  France launch
+- Pondero: https://pondero.ai/news/2026-08-24-chatgpt-ads-europe/  -  CPM down 20% but higher than social
+- Thurrott: https://www.thurrott.com/a-i/340543/chatgpt-ads-are-coming-to-31-european-countries  -  31 European countries
+- Reuters Condé Nast: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/  -  undisclosed terms
+- Reuters FT: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/  -  undisclosed
+- Guardian via Editor & Publisher: https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405  -  spokesperson declined per Digiday
+- Axel Springer: https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content  -  tens of millions euros over 3-year per source familiar
 
 **Dual dependency synthesis:**
 - Publishers receive licensing revenue from OpenAI (Condé Nast undisclosed est $1-5M low/$5-10M mid/$10-30M high portfolio part of $300-400M/yr across 24+ deals 160+ outlets 20+ languages; FT $5-10M/yr secondary via WSJ/Digiday; News Corp $250M/5yr=$50M/yr; Axel Springer tens of millions euros 3yr) while OpenAI simultaneously competes for their advertising dollars via ChatGPT Ads reaching 1B weekly users with intent-based conversational placements competing directly with product recommendation/discovery function publishers serve
-- France launch advertisers Bouygues Telecom/Cultura/TotalEnergies/Carrefour via Cosmo5 — same agencies Publicis/Dentsu/Havas serve French publishers — direct agency-level competition for same advertiser budgets
+- France launch advertisers Bouygues Telecom/Cultura/TotalEnergies/Carrefour via Cosmo5  -  same agencies Publicis/Dentsu/Havas serve French publishers  -  direct agency-level competition for same advertiser budgets
 - GDPR dual-consent: contextual via legitimate interest Art 6(1)(f) (topic/city-level/device/time/language, no chat history/memories), personalized requires explicit opt-in (interaction history/inferred interests/conversion data), personalization at launch false, ad removal requires paid upgrade Plus €23/mo Pro €229/mo Business/Enterprise/Education ad-free Free/Go €8 ads
 - Le Monde most transparent: CEO Dreyfus disclosed 20x Facebook / 50x Google Discover subscription conversion rates from ChatGPT making Le Monde financially dependent on same platform that cannibalizes ad market, 25% AI licensing revenue shared as journalist bonus creates individual-level incentive per Press Gazette Apr 2026
 - Amazon/Google context strengthens quintuple synthesis: Amazon Q2 2026 ad $19.8B +26% YoY (BestMediaInfo), net sales $200.6B +20%, operating income $27.5B +43%, AWS $42.2B +37%, net income $62.6B includes $53.4B Anthropic gain, $50B OpenAI investment ($15B Series C + $35B remaining via 8-K Feb 27 2026), $20B Anthropic equity; Google Q2 ad $81.63B +14%, Search $63.27B +17%, YouTube $11.05B +13%, Network $7.3B -1%, AI Overviews/Mode 1B MAU incremental queries
@@ -109,10 +305,10 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 **Hosted Artifact:** `mediascope-asymmetry` (https://agent.meta.ai/s/mediascope-asymmetry-xmxu5xl0xirhxp4y)
 **Current structure:** Client-only, `client/src/deal-matrix.json` compiled 2026-08-04, 9 publishers × 9 companies, no `analysis.json` exists per inspection 2026-08-28
-**Update warranted?** NO — per artifact-inspect-followup-2026-08-28.md:
+**Update warranted?** NO  -  per artifact-inspect-followup-2026-08-28.md:
 - Synthetic-only findings do NOT warrant publication (standing rule)
 - Current findings (iterations #382-#386) are vocabulary register observations requiring article-level URL validation, synthetic scorer regression only, no new primary-source deal matrix entries with verified URLs that would change 9×9 matrix
-- Full suite still has collection issues (717 files, needs targeted runs) — artifact should not be updated while suite not fully green in single run
+- Full suite still has collection issues (717 files, needs targeted runs)  -  artifact should not be updated while suite not fully green in single run
 - IPO/underwriter figures unverified future filings must not be added without primary SEC sources
 - Existing deal-matrix.json still accurate for its stated purpose (OpenAI/Meta/Google deal mapping Aug 4 snapshot)
 
@@ -125,16 +321,16 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 **Tests:** 12/12 new passing. Focused suite: 37/37 passing (15 + 10 + 12). Total files: 717 (was 716, +1). Total tests in focused run ~37, not full 717-file suite (which times out >30s single run, requires sharded execution).
 
 **Asymmetry Score Validation:**
-- #359: Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p≈0.000002 (illustrative), d=-9.99 (illustrative synthetic), CI [-0.87,-0.696] excludes 0 — ILLUSTRATIVE ONLY, synthetic controlled arrays, DO NOT claim empirical significance
-- #386: Meta [-0.62,-0.58,-0.65,-0.55,-0.61] vs OpenAI [0.08,0.12,0.15,0.05,0.10]: asymmetry -0.702, p≈0 (illustrative), d=-18.37 (illustrative), CI [-0.744,-0.662] excludes 0 — ILLUSTRATIVE ONLY
-- Meets statistical meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0 — validated with real scoring module (welch_t_test, cohens_d, bootstrap_ci) threshold checks, not exact value claims per Aug 28 rule
-- Every fact needs source URL — all 10+ URLs verbatim from search results, 7 primary for ad expansion + 4 licensing deals
+- #359: Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p≈0.000002 (illustrative), d=-9.99 (illustrative synthetic), CI [-0.87,-0.696] excludes 0  -  ILLUSTRATIVE ONLY, synthetic controlled arrays, DO NOT claim empirical significance
+- #386: Meta [-0.62,-0.58,-0.65,-0.55,-0.61] vs OpenAI [0.08,0.12,0.15,0.05,0.10]: asymmetry -0.702, p≈0 (illustrative), d=-18.37 (illustrative), CI [-0.744,-0.662] excludes 0  -  ILLUSTRATIVE ONLY
+- Meets statistical meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0  -  validated with real scoring module (welch_t_test, cohens_d, bootstrap_ci) threshold checks, not exact value claims per Aug 28 rule
+- Every fact needs source URL  -  all 10+ URLs verbatim from search results, 7 primary for ad expansion + 4 licensing deals
 
 **Cross-References:**
-- #359: OpenAI hardware facial recognition privacy parity — dormant Meta code vs planned OpenAI FR (extends #33)
+- #359: OpenAI hardware facial recognition privacy parity  -  dormant Meta code vs planned OpenAI FR (extends #33)
 - #385: Same-journalist camera wearable framing inversion (Boone Ashworth & Reece Rogers)
-- #386: OpenAI European ad expansion dual dependency — licensing revenue vs ad cannibalization
-- #53: Triple layer journalism funding — OpenAI three financial channels vs Meta withdrawal
+- #386: OpenAI European ad expansion dual dependency  -  licensing revenue vs ad cannibalization
+- #53: Triple layer journalism funding  -  OpenAI three financial channels vs Meta withdrawal
 - #58: Condé Nast AI deal portfolio dependency index
 - #103: Meta brand trigger overrides EssilorLuxottica ad relationship
 - #124: Advertising > content licensing hierarchy
@@ -387,7 +583,7 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 
 ## Iteration #383 - Sat 2026-08-29 23:00 PT (Type E: Podcast Sentiment Tracking - Meta LED Second Fix Aggregate + HateAid ZIT Complaint + Guilty Feminist August Silence Confirmation + EHE Prediction Holding)
-## Iteration #384 - Sun 2026-08-30 00:00 PT (Type A: Competitor Coverage Deep Dive — FT × OpenAI Licensing $5-10M/yr Undisclosed Terms vs Meta $0, Capital Raising & Workforce Framing Parallel)
+## Iteration #384 - Sun 2026-08-30 00:00 PT (Type A: Competitor Coverage Deep Dive  -  FT × OpenAI Licensing $5-10M/yr Undisclosed Terms vs Meta $0, Capital Raising & Workforce Framing Parallel)
 
 **Date:** 2026-08-30 00:00 PT (scheduled job_id mediascope-daily-iteration)
 **Type:** A - Competitor Coverage Deep Dive
@@ -397,15 +593,15 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 ### Primary Sources (Exact Verified URLs Only)
 
-#### 1. FT × OpenAI Licensing Deal — Primary vs Secondary Valuation
+#### 1. FT × OpenAI Licensing Deal  -  Primary vs Secondary Valuation
 - **Primary Reuters Apr 29 2024:** https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
   - Quote: "financial terms of the deal were not disclosed"
   - Deal scope: FT content licensed for model development and attributed ChatGPT summaries
   - FT also became ChatGPT Enterprise customer
 - **Secondary Valuation WSJ via Digiday 2024-in-review:** https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
-  - Reports $5-10M/yr — explicitly secondary_report_based, not disclosed contract term
+  - Reports $5-10M/yr  -  explicitly secondary_report_based, not disclosed contract term
   - Must not present estimated value as disclosed term
-- **Verification:** No FT disclosure of OpenAI deal in any 2026 OpenAI coverage (5 articles checked: Mar 21 workforce, Jun 7 superapp, Jun 16 $34B spending, Jul 2 gov stake, Jan 28 $100B funding) — material non-disclosure
+- **Verification:** No FT disclosure of OpenAI deal in any 2026 OpenAI coverage (5 articles checked: Mar 21 workforce, Jun 7 superapp, Jun 16 $34B spending, Jul 2 gov stake, Jan 28 $100B funding)  -  material non-disclosure
 
 #### 2. OpenAI Coverage Examples 2026 H1-H2 (FT via Secondary Reports)
 - **Workforce Doubling Mar 21 2026:** https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
@@ -417,9 +613,9 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 - **Superapp Overhaul Jun 7 2026:** https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
   - Language: biggest ChatGPT overhaul yet, superapp with coding tools and AI agents, boost revenue ahead of listing, target lucrative enterprise clients, intensify competition with Anthropic
   - Framing: constructive_enterprise_growth +0.18 illustrative
-  - Corroboration: TechCrunch https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/, PYMNTS https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/ and https://www.pymnts.com/artificial-intelligence-2/2026/openai-turns-chatgpt-into-a-platform-play/ — all secondary reports of FT scoop, confirm timing and 900M users + Chat is dead internal quote
+  - Corroboration: TechCrunch https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/, PYMNTS https://www.pymnts.com/artificial-intelligence-2/2026/openai-declares-chat-dead-in-shift-to-super-app/ and https://www.pymnts.com/artificial-intelligence-2/2026/openai-turns-chatgpt-into-a-platform-play/  -  all secondary reports of FT scoop, confirm timing and 900M users + Chat is dead internal quote
   - Deal disclosed: false
-  - Privacy note: 6 partner services (Canva, Booking.com, Expedia, Figma, Spotify, Zillow) + Codex + Atlas continuous data collection — zero privacy alarm terms vs Meta 6 surveillance terms
+  - Privacy note: 6 partner services (Canva, Booking.com, Expedia, Figma, Spotify, Zillow) + Codex + Atlas continuous data collection  -  zero privacy alarm terms vs Meta 6 surveillance terms
 
 - **$34B Spending Jun 16 2026:** https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
   - Language: spent $34 billion last year to dominate booming AI market, $19B R&D $6B sales/marketing, audited financial figures
@@ -434,7 +630,7 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
   - Deal disclosed: false
   - Note: Political equity proposal framed as strategic benefit-sharing, no desperation or regulatory capture framing
 
-#### 3. Meta Comparators — Exact URLs Verified Aug 30 2026
+#### 3. Meta Comparators  -  Exact URLs Verified Aug 30 2026
 - **Equity Raising Jun 5 2026 FT via Reuters:** https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
   - Language: exploring creative ways to raise cash, seeks new sources of capital, weighs big equity raising, premature to conclude, tens of billions stock offering
   - Framing: desperation_uncertainty -0.55 illustrative
@@ -444,12 +640,12 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 - **Private $29B Raise Jun 27 2025 FT via Reuters:** https://www.reuters.com/business/meta-seeks-29-billion-private-capital-firms-ai-data-centers-ft-reports-2025-06-27/?ref=leanaireport.com
   - Language: seeking $29B from private capital firms, $3B equity + $26B debt, advanced discussions Apollo/KKR/Brookfield/Carlyle/PIMCO, Morgan Stanley arranging
   - Framing: neutral_business_with_desperation_undercurrent -0.25 illustrative
-  - Note: Active voice inversion — OpenAI $100B funding framed as tech giants courting OpenAI (validation), Meta $29B framed as Meta seeking external private credit (need)
+  - Note: Active voice inversion  -  OpenAI $100B funding framed as tech giants courting OpenAI (validation), Meta $29B framed as Meta seeking external private credit (need)
 
 - **Super-Sensing Glasses Jul 8 2026 FT via MacRumors:** https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
   - Language: continuously collect audio, wiretapping laws, biometric data laws, civil liberty and privacy risks, LED deactivation, could be used to train AI models
   - Framing: adversarial_surveillance -0.62 illustrative
-  - WSJ corroboration: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539 — "The Financial Times previously reported some details of the new Meta glasses feature" (Aug 26 updated)
+  - WSJ corroboration: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539  -  "The Financial Times previously reported some details of the new Meta glasses feature" (Aug 26 updated)
   - Meta contrast: OpenAI continuous sensing (superapp + Jony Ive device always-on) 0 surveillance terms, Meta continuous sensing 6 surveillance terms
 
 - **Equity Award Cuts Feb 19 2026:** https://www.techmeme.com/260219/p43
@@ -457,11 +653,11 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
   - Framing: morale_damage -0.35 illustrative
   - Contrast: workforce management framed as cuts/damage vs OpenAI workforce doubling growth
 
-#### 4. FT Site Search Aug 30 2026 — Avoid Inventing URLs
-- Query: site:ft.com OpenAI August 2026 — result: No results found Aug 30 2026 — no FT August OpenAI original located via search, avoid inventing FT URLs
+#### 4. FT Site Search Aug 30 2026  -  Avoid Inventing URLs
+- Query: site:ft.com OpenAI August 2026  -  result: No results found Aug 30 2026  -  no FT August OpenAI original located via search, avoid inventing FT URLs
 - Methodology: Do not invent FT URLs. Label Reuters/PYMNTS/TechCrunch as secondary reports of FT coverage where FT primary paywalled. Verified Aug 30 2026.
 
-### Asymmetry Scorer Result — Illustrative Manual Scores
+### Asymmetry Scorer Result  -  Illustrative Manual Scores
 
 **Target:** Meta (4 articles: -0.55 equity raise, -0.25 private $29B, -0.62 super-sensing, -0.35 equity cuts) avg -0.4425
 **Peer:** OpenAI (4 articles: +0.15 workforce, +0.18 superapp, +0.08 $34B spending, +0.12 gov stake) avg +0.1325
@@ -471,9 +667,9 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 - p_value: 0.005156
 - cohens_d: -4.59 huge (d > 2.0)
 - ci: [-0.73, -0.43] excludes zero
-- is_significant: true (illustrative — synthetic scores, not observed VADER corpus)
+- is_significant: true (illustrative  -  synthetic scores, not observed VADER corpus)
 - Methodology: Welch's t-test + Cohen's d + bootstrap CI 1000 iterations 95% CI
-- **Label:** Illustrative synthetic estimates calibrated from manual framing analysis — not empirical significance — per project standing rule Aug 28. Real FT corpus needed for observed validation. Non-causal interpretation required — financial relationship may predict structural incentives but does not prove editorial influence.
+- **Label:** Illustrative synthetic estimates calibrated from manual framing analysis  -  not empirical significance  -  per project standing rule Aug 28. Real FT corpus needed for observed validation. Non-causal interpretation required  -  financial relationship may predict structural incentives but does not prove editorial influence.
 
 **Confounders (adjusted score 0.225 moderate from raw 0.575):**
 - STRONG beat assignment: AI desk (Murgia/Hammond constructive growth) vs platform/SF desk (Murphy adversarial accountability) -0.12
@@ -483,16 +679,16 @@ Type D iteration: run full test suite cross-validation (focused on recent mechan
 
 ### Files Changed
 - profiles/financial-times.yaml: Added iteration_384_type_a_2026_08_30 mechanism (384) with 4 OpenAI examples + 4 Meta comparators, deal disclosure false, secondary valuation labeled, confounders, asymmetry scorer illustrative with real Welch output
-- tests/test_ft_openai_licensing_meta_capital_type_a_2026_08_30.py: New regression test (6 checks) — primary terms undisclosed, secondary source present, Meta URLs exact, deal disclosure false, non-causal wording, illustrative labeling
+- tests/test_ft_openai_licensing_meta_capital_type_a_2026_08_30.py: New regression test (6 checks)  -  primary terms undisclosed, secondary source present, Meta URLs exact, deal disclosure false, non-causal wording, illustrative labeling
 - No em-dash violations
 
 ### Quality Checks
 - All 6 new tests passed (pytest)
 - Asymmetry scorer actually run (not expected): -0.575 delta, p=0.005156, d=-4.59, CI [-0.73,-0.43]
-- No causal claims — financial relationship predicts structural incentives, does not prove editorial influence
+- No causal claims  -  financial relationship predicts structural incentives, does not prove editorial influence
 - Manual sentiment scores labeled illustrative synthetic, not empirical significance
-- Exact URLs only — no invented FT URLs, secondary reports labeled as such
-- FT site search Aug 30 no results for site:ft.com OpenAI August 2026 — documented
+- Exact URLs only  -  no invented FT URLs, secondary reports labeled as such
+- FT site search Aug 30 no results for site:ft.com OpenAI August 2026  -  documented
 
 
 ## Iteration #383 - Sat 2026-08-29 23:00 PT (Type E: Podcast Sentiment Tracking - Meta LED Second Fix Aggregate + HateAid ZIT Complaint + Guilty Feminist August Silence Confirmation + EHE Prediction Holding)
@@ -1256,9 +1452,9 @@ Avoids duplicating prior analyses: not WIRED x OpenAI hardware delay #364, not W
 - Amazon scores synthetic illustrative: [0.15, 0.12, 0.08] avg 0.117
 - Anthropic vs Meta asymmetry: 0.38, t=9.007, p=0.0000, Cohen d=5.696, CI=[0.306,0.452], significant True (illustrative, not empirical)
 - Anthropic vs Amazon asymmetry: -0.057, p=0.1673, d=-0.975, not significant (illustrative)
-- Methodology: Welch t-test unequal variance, Cohen d, bootstrap 1000 iterations 95% CI via mediascope.score.asymmetry.calculate_asymmetry(). Synthetic illustrative only — scores are manual tone approximations from headline framing language, NOT from observed article-level corpus. Illustrative values demonstrate pipeline validity, not empirical significance. Real corpus requires full NYT archive sampling.
+- Methodology: Welch t-test unequal variance, Cohen d, bootstrap 1000 iterations 95% CI via mediascope.score.asymmetry.calculate_asymmetry(). Synthetic illustrative only  -  scores are manual tone approximations from headline framing language, NOT from observed article-level corpus. Illustrative values demonstrate pipeline validity, not empirical significance. Real corpus requires full NYT archive sampling.
 
-**Financial incentive caution:** Financial relationships are structural incentives that may shape coverage, not proof of editorial capture. NYT Amazon deal $20-25M/yr predicts softer Amazon coverage, which is observed. Reported Anthropic settlement if real predicts softer Anthropic coverage, consistent with beat expansion. Meta $0 predicts adversarial or neutral, observed adversarial in settlement week. However legitimate confounders exist: Anthropic is high-growth IPO-bound company warranting dedicated beat on market importance alone, compute lease is business necessity, Mythos platforming predates reported settlement and may reflect responsible AI narrative independent of finance. Counterexample: NYT did platform Anthropic Mythos as reckoning Apr 7 but did not ignore Jul 31 breach entirely — absence of standalone article may reflect search index limitation behind paywall, not intentional omission. Meta settlement is objectively large and harmful to children, justifying adversarial framing on public interest grounds independent of financial incentive.
+**Financial incentive caution:** Financial relationships are structural incentives that may shape coverage, not proof of editorial capture. NYT Amazon deal $20-25M/yr predicts softer Amazon coverage, which is observed. Reported Anthropic settlement if real predicts softer Anthropic coverage, consistent with beat expansion. Meta $0 predicts adversarial or neutral, observed adversarial in settlement week. However legitimate confounders exist: Anthropic is high-growth IPO-bound company warranting dedicated beat on market importance alone, compute lease is business necessity, Mythos platforming predates reported settlement and may reflect responsible AI narrative independent of finance. Counterexample: NYT did platform Anthropic Mythos as reckoning Apr 7 but did not ignore Jul 31 breach entirely  -  absence of standalone article may reflect search index limitation behind paywall, not intentional omission. Meta settlement is objectively large and harmful to children, justifying adversarial framing on public interest grounds independent of financial incentive.
 
 ### Files Changed
 - profiles/nytimes.yaml: Added recent_coverage_examples_2026_aug29 (3 examples with exact URLs, tone approx, language verbatim, Meta contrast), asymmetry_scorer_result_2026_08_29 with synthetic illustrative labeling, financial incentive caution, confounders and counterexample.
