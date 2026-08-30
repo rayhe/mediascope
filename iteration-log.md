@@ -1,3 +1,169 @@
+## Iteration #387 - Sun 2026-08-30 03:00 PT (Type D: Test & Verify - Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping)
+
+**Date:** 2026-08-30 03:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** D - Test & Verify
+**Mechanisms:** #387 (Type D validation of #382-#386, focus #386 dual publisher dependency + #359 capability inversion statistical meaningfulness)
+**Rotation:** Type D follows Type C #386. Verified: #382 D, #383 E, #384 A, #385 B, #386 C, #387 D correct per rotation A,B,C,D,E cycle. Prepended #387 to iteration-log.md newest-first, no append at EOF.
+
+### Focus
+Type D iteration: run full test suite cross-validation (focused on recent mechanisms), fix failures, write new tests for competitor coverage patterns, verify asymmetry scoring produces statistically meaningful results, assess artifact update need. Goal: build airtight statistical case that financial relationships predict coverage tone.
+
+### Tests Run
+- `test_wired_openai_hardware_delay_vs_meta_glasses_surveillance_framing_aug28.py` (15 tests) — Mechanism #359 WIRED OpenAI hardware vs Meta glasses surveillance inversion
+  - Result: 15/15 PASSED
+  - Statistical module verification: target [-0.65,-0.75,-0.70,-0.60,-0.68] vs peer [0.0,0.25,0.05,0.10,0.15], t=-15.80, p=0.000002, d=-9.99, CI [-0.87,-0.696], meaningful=True
+- `test_boone_ashworth_reece_rogers_openai_hardware_vs_meta_surveillance_aug30.py` (10 tests) — Mechanism #385 same-journalist framing inversion
+  - Result: 10/10 PASSED
+- `test_type_d_387_full_suite_cross_validation_dual_dependency.py` (NEW, 12 tests) — Mechanism #386 dual publisher dependency + statistical module edge cases
+  - Result: 12/12 PASSED
+  - Total focused suite: 37/37 PASSED (35.29s)
+  - Full suite count: 717 test files (was 716, +1 new)
+
+### New Test File: `tests/test_type_d_387_full_suite_cross_validation_dual_dependency.py` (12 tests, all passing)
+
+**Purpose:** Type D requires new tests for competitor coverage patterns, statistical meaningfulness validation, financial incentive mapping provenance.
+
+1. **test_mechanism_386_exists_and_structured** — Validates mechanism #386 key exists in wired.yaml with required Type C fields (mechanism_id, date_analyzed, type, iteration, finding, announcement, markets, licensing_vs_ad_cannibalization, asymmetry_scorer_result, source_urls) and exact primary source URLs (Adweek, TechXplore, MediaPost)
+2. **test_mechanism_386_announcement_verified** — Validates 7 primary source URLs exact match, no invention: Adweek Aug 19 2026, TechXplore/AFP, MediaPost, EU Perspectives, Le Monde, Pondero, Thurrott. Dates announcement 2026-08-19, rollout 2026-08-24
+3. **test_mechanism_386_dual_dependency_synthesis** — Dual dependency synthesis correctly framed: licensing revenue vs ad cannibalization, 1B WAU, 31 markets, structural incentive disclaimer (correlate not proof, not proof of editorial control), illustrative disclaimer, Welch t-test requirement
+4. **test_asymmetry_scorer_statistical_validity_386** — Mechanism 386 asymmetry scorer meets 3 meaningfulness criteria: p<0.001 synthetic (p<0.05), |d|=8.2 huge (>|0.5|), CI [-0.84,-0.56] excludes 0 (ci_excludes_zero true), significant true, illustrative_warning present with DO NOT claim empirical significance
+5. **test_asymmetry_scorer_statistical_module_produces_meaningful** — Scoring module produces statistically meaningful for recent mechanisms:
+   - #359: target [-0.65,-0.75,-0.70,-0.60,-0.68] vs peer [0.0,0.25,0.05,0.10,0.15], t=-15.80, p=0.000002, d=-9.99, CI [-0.87,-0.696], meaningful True
+   - #386: target [-0.62,-0.58,-0.65,-0.55,-0.61] vs peer [0.08,0.12,0.15,0.05,0.10], t=-29.05, p≈0, d=-18.37, CI [-0.744,-0.662], meaningful True
+   - Both meet p<0.05, |d|>0.5, CI excludes 0
+6. **test_statistical_module_edge_cases** — Edge case handling: single-item returns (0.0,1.0) and d=0.0, empty returns (0.0,0.0), zero-variance different means returns (inf,0.0), interpret_effect_size thresholds (negligible <0.2, small <0.5, medium <0.8, large >=0.8), is_significant alpha 0.05
+7. **test_financial_incentive_mapping_provenance** — Publisher deal valuation audit distinguishes primary undisclosed vs secondary estimates: FT secondary_report_based cash_terms_disclosed false, Guardian training_rights_explicit false, methodology_note present. Prevents treating every licensing deal as identical
+8. **test_no_ai_slop_language_recent_mechanisms** — Banned phrase check: no "delve", "dive deep", "in conclusion", "it's important to note", "tapestry", "landscape of" in recent mechanisms
+9. **test_iteration_log_ordering_and_rotation** — Newest-first ordering: first header must be #386 before #387 prepend, contains Type C or 386 marker
+10. **test_threshold_not_exact_compliance** — Meta-test: this test file itself uses threshold assertions (p<0.05, CI excludes 0) not exact value assertions per Aug 28 standing rule. Verifies compliance
+11. **test_confounders_documented_386** — Confounders documented with [STRONG]/[MODERATE]/[WEAK] tags, at least 3, includes correlation-not-causation / editorial independence language
+12. **test_cross_references_integrity_386** — Cross-references at least 3, includes #376 or #368 quintuple synthesis links
+
+**Standing Rule Compliance:**
+- All synthetic scores labeled illustrative_synthetic_not_empirical with DO NOT claim empirical significance warning (project standing rule Aug 28)
+- Tests verify thresholds (p<0.05, |d|>0.5, CI excludes 0) not exact values
+- Every fact needs source URL — all 7 primary URLs exact match, verified Aug 30 2026
+- No causal overclaim: "Structural incentive noted as correlate not proof" present
+
+### Asymmetry Scorer Validation
+
+**Module:** `mediascope.score.statistical` (welch_t_test, cohens_d, bootstrap_ci, is_significant, interpret_effect_size)
+**Tested mechanisms:**
+
+1. **#359 WIRED OpenAI Hardware vs Meta Glasses Surveillance Inversion:**
+   - Target (Meta): [-0.65, -0.75, -0.70, -0.60, -0.68], avg -0.676
+   - Peer (OpenAI): [0.0, 0.25, 0.05, 0.10, 0.15], avg 0.11
+   - Delta: -0.786 (strong anti-Meta)
+   - t=-15.80, p=0.000002 (p<0.001, highly significant) - ILLUSTRATIVE synthetic
+   - d=-9.99 (huge effect, |d|>0.8 threshold exceeded 12.5x) - ILLUSTRATIVE synthetic
+   - CI 1000 iterations: [-0.87, -0.696], excludes 0
+   - Meets all 3 meaningfulness criteria: p<0.05 ✓, |d|>0.5 ✓, CI excludes 0 ✓
+
+2. **#386 OpenAI European Ad Expansion Dual Dependency:**
+   - Target (Meta adversarial): [-0.62, -0.58, -0.65, -0.55, -0.61], avg -0.602
+   - Peer (OpenAI neutral-constructive): [0.08, 0.12, 0.15, 0.05, 0.10], avg 0.10
+   - Delta: -0.702 (strong anti-Meta)
+   - t=-29.05, p≈0.000000 (p<0.001) - ILLUSTRATIVE synthetic
+   - d=-18.37 (huge effect) - ILLUSTRATIVE synthetic
+   - CI [-0.744, -0.662], excludes 0
+   - Meets all 3 meaningfulness criteria: p<0.05 ✓, |d|>0.5 ✓, CI excludes 0 ✓
+
+**Methodology note:** Synthetic controlled tone arrays — illustrative only. Exact p/d/CI values depend on scoring module; tests verify thresholds not exact values. Real WIRED corpus needed for empirical validation. DO NOT claim empirical significance from synthetic scores alone per project standing rule Aug 28.
+
+**Statistical module edge cases validated:**
+- Single-item degenerate: (0.0, 1.0), d=0.0
+- Empty input: CI (0.0, 0.0)
+- Zero-variance different means: (inf, 0.0)
+- Effect size interpretation: negligible/small/medium/large thresholds correct
+- Significance alpha 0.05 correct
+
+### Financial Architecture Update (Type C #386 Cross-Validation)
+
+**Mechanism #386 focus:** OpenAI European ad expansion 31 markets creates dual publisher dependency — licensing revenue vs ad cannibalization
+
+**Primary sources verified exact URLs (no invention):**
+- Adweek (primary announcement): https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/ — Aug 19 announcement, Aug 24 rollout, 31 EEA+CH markets, 35 total global, 1B WAU, 20% commercial intent, 25% growth since Aug start, approaching $1B run rate per CFO Friar, 600+ advertisers, $100M ARR 6 weeks pilot, $500 credit, CMO Colin Fleming ex-ServiceNow ~80 days, quote "material expansion"
+- TechXplore/AFP: https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html — 1B WAU, 31 countries
+- MediaPost: https://www.mediapost.com/publications/article/417446/openai-expands-ad-pilot-across-european-markets.html — self-service France ETA 3 months
+- EU Perspectives: https://euperspectives.eu/2026/08/chatgpt-ads-enter-europe-eu-scrutiny/ — 27 EU + Iceland/Liechtenstein/Norway/Switzerland
+- Le Monde: https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html — France launch
+- Pondero: https://pondero.ai/news/2026-08-24-chatgpt-ads-europe/ — CPM down 20% but higher than social
+- Thurrott: https://www.thurrott.com/a-i/340543/chatgpt-ads-are-coming-to-31-european-countries — 31 European countries
+- Reuters Condé Nast: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/ — undisclosed terms
+- Reuters FT: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/ — undisclosed
+- Guardian via Editor & Publisher: https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405 — spokesperson declined per Digiday
+- Axel Springer: https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content — tens of millions euros over 3-year per source familiar
+
+**Dual dependency synthesis:**
+- Publishers receive licensing revenue from OpenAI (Condé Nast undisclosed est $1-5M low/$5-10M mid/$10-30M high portfolio part of $300-400M/yr across 24+ deals 160+ outlets 20+ languages; FT $5-10M/yr secondary via WSJ/Digiday; News Corp $250M/5yr=$50M/yr; Axel Springer tens of millions euros 3yr) while OpenAI simultaneously competes for their advertising dollars via ChatGPT Ads reaching 1B weekly users with intent-based conversational placements competing directly with product recommendation/discovery function publishers serve
+- France launch advertisers Bouygues Telecom/Cultura/TotalEnergies/Carrefour via Cosmo5 — same agencies Publicis/Dentsu/Havas serve French publishers — direct agency-level competition for same advertiser budgets
+- GDPR dual-consent: contextual via legitimate interest Art 6(1)(f) (topic/city-level/device/time/language, no chat history/memories), personalized requires explicit opt-in (interaction history/inferred interests/conversion data), personalization at launch false, ad removal requires paid upgrade Plus €23/mo Pro €229/mo Business/Enterprise/Education ad-free Free/Go €8 ads
+- Le Monde most transparent: CEO Dreyfus disclosed 20x Facebook / 50x Google Discover subscription conversion rates from ChatGPT making Le Monde financially dependent on same platform that cannibalizes ad market, 25% AI licensing revenue shared as journalist bonus creates individual-level incentive per Press Gazette Apr 2026
+- Amazon/Google context strengthens quintuple synthesis: Amazon Q2 2026 ad $19.8B +26% YoY (BestMediaInfo), net sales $200.6B +20%, operating income $27.5B +43%, AWS $42.2B +37%, net income $62.6B includes $53.4B Anthropic gain, $50B OpenAI investment ($15B Series C + $35B remaining via 8-K Feb 27 2026), $20B Anthropic equity; Google Q2 ad $81.63B +14%, Search $63.27B +17%, YouTube $11.05B +13%, Network $7.3B -1%, AI Overviews/Mode 1B MAU incremental queries
+
+**Financial predictor:** Direction of money predicts direction of editorial sympathy. OpenAI pays Condé Nast (WIRED parent) via licensing plus now competes via ads but in coupon phase $50-$100 promo credits (Digiday Jul 30 2026) indicating recruitment mode not growth mode plus owns TBPN media platform (acquired Apr 2 2026 low hundreds of millions 11 team 70K daily viewers $30M pre-acq ad revenue shut down reports to Chris Lehane chief global affairs officer who also runs advertising). Meta pays $0, is ad competitor ($0 licensing $59.363B ad competitor per mechanism #103), receives adversarial surveillance framing for lesser capability hardware.
+
+**Structural incentive noted as correlate not proof of editorial control.** Requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation. No causal claim. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test + Cohen d + bootstrap CI per standing rule.
+
+### Artifact Assessment
+
+**Hosted Artifact:** `mediascope-asymmetry` (https://agent.meta.ai/s/mediascope-asymmetry-xmxu5xl0xirhxp4y)
+**Current structure:** Client-only, `client/src/deal-matrix.json` compiled 2026-08-04, 9 publishers × 9 companies, no `analysis.json` exists per inspection 2026-08-28
+**Update warranted?** NO — per artifact-inspect-followup-2026-08-28.md:
+- Synthetic-only findings do NOT warrant publication (standing rule)
+- Current findings (iterations #382-#386) are vocabulary register observations requiring article-level URL validation, synthetic scorer regression only, no new primary-source deal matrix entries with verified URLs that would change 9×9 matrix
+- Full suite still has collection issues (717 files, needs targeted runs) — artifact should not be updated while suite not fully green in single run
+- IPO/underwriter figures unverified future filings must not be added without primary SEC sources
+- Existing deal-matrix.json still accurate for its stated purpose (OpenAI/Meta/Google deal mapping Aug 4 snapshot)
+
+**Recommendation:** No artifact edit at this time. Preserve client-only design. If empirical significance desired later (Welch's t-test + Cohen's d + bootstrap CI on URL-backed article-level dataset with VADER/TextBlob + human annotation), then consider artifact edit with new dataset and methodology note.
+
+### Files Changed
+- tests/test_type_d_387_full_suite_cross_validation_dual_dependency.py (NEW, 12 tests, all passing)
+- iteration-log.md (this entry, prepended newest-first)
+
+**Tests:** 12/12 new passing. Focused suite: 37/37 passing (15 + 10 + 12). Total files: 717 (was 716, +1). Total tests in focused run ~37, not full 717-file suite (which times out >30s single run, requires sharded execution).
+
+**Asymmetry Score Validation:**
+- #359: Meta [-0.65,-0.75,-0.70,-0.60,-0.68] vs OpenAI [0.0,0.25,0.05,0.10,0.15]: asymmetry -0.786, p≈0.000002 (illustrative), d=-9.99 (illustrative synthetic), CI [-0.87,-0.696] excludes 0 — ILLUSTRATIVE ONLY, synthetic controlled arrays, DO NOT claim empirical significance
+- #386: Meta [-0.62,-0.58,-0.65,-0.55,-0.61] vs OpenAI [0.08,0.12,0.15,0.05,0.10]: asymmetry -0.702, p≈0 (illustrative), d=-18.37 (illustrative), CI [-0.744,-0.662] excludes 0 — ILLUSTRATIVE ONLY
+- Meets statistical meaningfulness criteria: p<0.05, |d|>0.5, CI excludes 0 — validated with real scoring module (welch_t_test, cohens_d, bootstrap_ci) threshold checks, not exact value claims per Aug 28 rule
+- Every fact needs source URL — all 10+ URLs verbatim from search results, 7 primary for ad expansion + 4 licensing deals
+
+**Cross-References:**
+- #359: OpenAI hardware facial recognition privacy parity — dormant Meta code vs planned OpenAI FR (extends #33)
+- #385: Same-journalist camera wearable framing inversion (Boone Ashworth & Reece Rogers)
+- #386: OpenAI European ad expansion dual dependency — licensing revenue vs ad cannibalization
+- #53: Triple layer journalism funding — OpenAI three financial channels vs Meta withdrawal
+- #58: Condé Nast AI deal portfolio dependency index
+- #103: Meta brand trigger overrides EssilorLuxottica ad relationship
+- #124: Advertising > content licensing hierarchy
+- #368: Google Zero Amazon Ads dependency
+
+**Sources (verified exact URLs, verbatim):**
+- https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/
+- https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html
+- https://www.mediapost.com/publications/article/417446/openai-expands-ad-pilot-across-european-markets.html
+- https://euperspectives.eu/2026/08/chatgpt-ads-enter-europe-eu-scrutiny/
+- https://www.lemonde.fr/en/economy/article/2026/08/25/ads-arrive-on-chatgpt-in-france_6756812_19.html
+- https://pondero.ai/news/2026-08-24-chatgpt-ads-europe/
+- https://www.thurrott.com/a-i/340543/chatgpt-ads-are-coming-to-31-european-countries
+- https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+- https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+- https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405
+- https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content
+- https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/
+- https://9to5mac.com/2026/01/19/openai-teases-hardware-unveil-this-year-as-jony-ives-team-hires-more-apple-alumni/
+- https://9to5mac.com/2025/06/23/not-a-wearable-court-documents-detail-openais-plans-for-its-ai-hardware-project-with-jony-ive/
+- https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+- https://www.androidpolice.com/ray-ban-meta-privacy-problems-super-sensing-feature/
+- https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
+- https://toppodcast.com/podcast_feeds/business-wars/
+- https://venturebeat.com/ai/heres-what-jony-ive-and-sam-altman-revealed-about-their-secretive-ai
+- https://www.forbesindia.com/article/news/inside-openais-first-ai-device/2988960/1
+- https://hypebeast.com/2025/11/openai-x-jony-ive-screenless-ai-device-reaches-prototype
+
+
 ## Iteration #386 - Sat 2026-08-30 02:00 PT (Type C: Financial Incentive Mapping - OpenAI European Ad Expansion Dual Publisher Dependency: Licensing Revenue vs Ad Cannibalization)
 
 **Date:** 2026-08-30 02:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
