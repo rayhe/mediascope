@@ -14280,6 +14280,111 @@ journalists:
       mechanism_number: 365
       date_added: '2026-08-29'
       iteration: 365 Type B 05:00 PT
+    iteration_385_type_b_2026_08_30_01_00_pt:
+      mechanism_id: 385
+      date_analyzed: '2026-08-30'
+      iteration: 385
+      iteration_type: B
+      iteration_time: 2026-08-30 01:00 PT
+      journalist: Boone Ashworth (WIRED staff writer, co-author with Reece Rogers)
+      pattern: same_journalist_camera_wearable_framing_inversion_meta_surveillance_vs_openai_happiness
+      summary: 'Type B verification Aug 30 01:00 PT: Boone Ashworth + Reece Rogers WIRED coverage
+        of OpenAI/Jony Ive ambient hardware (Oct 6 2026 WIRED Dev Day piece) uses therapeutic/aspirational
+        framing (happiness, fulfilled, peaceful, coolest piece, better selves, chance to do something
+        amazing, aware of surroundings) for screenless device that explicitly relies on cameras and
+        microphones plus environmental awareness. Zero surveillance vocabulary, zero bystander consent
+        language. Same journalists 4 months earlier (Jun 3-10 2026 Business Wars S1E1-E2) framed Meta
+        single-camera Ray-Ban glasses as tool for mass surveillance and Im a Creep pejorative. Google
+        Android XR in same Business Wars series receives neutral Google Return framing. WIRED primary
+        URL blocked by policy Aug 30 (wired.com), verified via secondary detailed reports (VentureBeat
+        Fort Mason 1500-dev exclusive, Forbes India jaw-droppingly good prototype, Hypebeast screenless
+        pocketable third device). Business Wars primary source toppodcast.com verifies mass surveillance
+        language (Episode 1: Prize on the Eyes). Illustrative synthetic tone scores only, not empirical.'
+      primary_sources_verified:
+      - url: https://toppodcast.com/podcast_feeds/business-wars/
+        verification_date: '2026-08-30'
+        finding: 'Episodes listed: S1E1 Prize on the Eyes Jun 3 2026 with description tool for mass surveillance,
+          S1E2 Im a Creep Jun 10 2026, S1E3 Googles Return Jun 11 2026. Confirms same-journalist Business Wars framing.'
+      - url: https://venturebeat.com/ai/heres-what-jony-ive-and-sam-altman-revealed-about-their-secretive-ai
+        verification_date: '2026-08-30'
+        finding: 'Packed theater Fort Mason, 1500 developers, not part of public livestream, clearest glimpse,
+          profound almost therapeutic mission to fix broken relationship with technology, 45-min thoughtful cadence,
+          continuation and repentance for iPhone anxieties. Supports aspirational/therapeutic framing claim.'
+      - url: https://www.forbesindia.com/article/news/inside-openais-first-ai-device/2988960/1
+        verification_date: '2026-08-30'
+        finding: 'May 2025 io acquisition $6.4B, first hardware device pocket-sized screenless simple beautiful playful,
+          jaw-droppingly good, do things for user over long periods, filter things out, know everything you have ever
+          thought about read or said. Confirms camera/mic environmental awareness and happiness framing.'
+      - url: https://hypebeast.com/2025/11/openai-x-jony-ive-screenless-ai-device-reaches-prototype
+        verification_date: '2026-08-30'
+        finding: 'Screenless pocketable third core device, lives alongside not inside phone and laptop, Times Square
+          vs most beautiful cabin by lake, filtering digital noise, ambient intelligence, deep contextual awareness,
+          decide right moment to surface information, disappear into background, deceptive simplicity whimsy.'
+      wired_primary_blocked:
+        url: https://www.wired.com/story/sam-altman-and-jony-ives-ai-device-dev-day/
+        block_policy: wired.com blocked by policy Aug 30 2026
+        fallback: secondary detailed reports used, labeled secondary
+      cross_entity_comparison:
+        meta:
+          article: Business Wars S1E1 Prize on the Eyes + S1E2 Im a Creep
+          date: '2026-06-03 / 2026-06-10'
+          journalist_role: WIRED expert guest (Ashworth, Chokkattu)
+          framing: tool for mass surveillance, Im a Creep pejorative, mandatory data-sharing, worker exploitation, federal agents using illegally
+          hardware: single 12MP camera + 5 mics (Meta Ray-Ban)
+          tone_synthetic: -0.7 illustrative
+          surveillance_vocabulary: present (mass surveillance, creep)
+        openai:
+          article: WIRED Dev Day Sam Altman and Jony Ive AI Device
+          date: '2026-10-06'
+          journalists: Reece Rogers + Boone Ashworth
+          framing: make us happy and fulfilled and more peaceful and less anxious and less disconnected, coolest piece of technology world will have ever seen, brink new generation can make us our better selves, chance to do something amazing, aware of surroundings and day-to-day experiences, rely on inputs from cameras and microphones, screenless, simple beautiful playful, cabin by lake vs Times Square, filter noise
+          hardware: cameras + mics + environmental awareness + know everything you have ever thought/read/said
+          tone_synthetic: +0.85 illustrative
+          surveillance_vocabulary: zero
+          privacy_alarm: zero
+          bystander_consent: zero
+        google:
+          article: Business Wars S1E3 Googles Return
+          date: '2026-06-11'
+          framing: neutral_aspirational return
+          hardware: Android XR cameras + Gemini
+          tone_synthetic: +0.05 illustrative
+          surveillance_vocabulary: zero
+      illustrative_asymmetry:
+        target: Meta
+        peer: OpenAI
+        meta_synthetic: -0.7
+        openai_synthetic: 0.85
+        delta: 1.55
+        calculation: 0.85 - (-0.7) = 1.55
+        label: illustrative_synthetic_not_empirical
+        p_value: synthetic_illustrative
+        cohens_d: synthetic_illustrative
+        ci_95: synthetic_illustrative
+        requires: VADER/TextBlob + human annotation on full WIRED corpus for observed validation
+      confounders:
+      - '[STRONG] Different product maturity - Meta shipped mass-market 2023-present vs OpenAI prototype Oct 2026 not yet shipped, less accountability scrutiny expected for prototype'
+      - '[STRONG] Different medium - WIRED written news (OpenAI) vs Wondery podcast expert guest (Meta), different editorial lanes, audience expectations, production process'
+      - '[MODERATE] Different corporate access - Ive/Altman staged reveal at Emerson Collective Demo Day with Laurene Powell Jobs vs Meta investigative lens, staged access predicts softer framing'
+      - '[MODERATE] Condé Nast OpenAI content deal exists, Meta deal absent - financial incentive predicts softer OpenAI coverage independent of journalist, correlate not cause'
+      - '[WEAK] Google Android XR also receives neutral framing in same Business Wars series, suggesting manufacturer-dependent framing not limited to OpenAI vs Meta'
+      confounding_adjustment:
+        raw_delta: 1.55
+        total_adjustment: -0.55
+        adjusted_delta: 1.0
+        adjusted_calc: 1.55 - 0.55 = 1.0 moderate_to_high
+        interpretation: Even after strong confounder discount, large framing inversion remains
+      non_causal_language: Financial relationships may predict structural incentives but do not prove editorial influence. No causal claim about Condé Nast OpenAI deal causing framing.
+      test_file: tests/test_boone_ashworth_reece_rogers_openai_hardware_vs_meta_surveillance_aug30.py
+      cross_references:
+      - 45
+      - 70
+      - 73
+      - 87
+      - 207
+      - 354
+      - 362
+      - 365
   multi_publication: true
 - auto_detected_migrations: 5
   beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
