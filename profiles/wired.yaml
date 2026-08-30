@@ -1788,8 +1788,32 @@ key_journalists:
   known_patterns: First-ever Wired politics editor. Now Director of Politics & Science. Hosts WIRED Politics Lab podcast.
     Key DOGE coverage driver. 252+ articles. Recruited from Vice News by Drummond. Columbia J-School, Dartmouth.
 - name: Amanda Hoover
-  beat: Social media, AI
-  known_patterns: Social media platform criticism
+  beat: Social media, AI, e-commerce platforms, AI workplace displacement
+  known_patterns: Balanced cross-platform consumer-protection criticism (Meta Marketplace, TikTok Shop, Airbnb)
+  competitor_coverage:
+    mechanism_id: 75
+    type: Type B control - balanced platform criticism
+    meta_marketplace:
+      beat: Facebook Marketplace scams, layoffs
+      framing: consumer_protection_critical
+      publication: wired
+      source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
+    tiktok_shop:
+      beat: TikTok Shop consumer experience, platform commerce critique
+      framing: consumer_protection_critical
+      publication: wired
+      source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+    airbnb_governance:
+      title: Airbnb platform governance coverage via Today Explained podcast
+      significance: Same consumer lens applied to non-Meta platform
+      source_url: https://www.everand.com/podcast/678975573/Airbnbanned-To-Airbnb-or-not-to-Airbnb-that-is-the-question-Wired-s-Amanda-Hoover-and-the-Atlantic-s-Kate-Lindsay-have-the-answers
+    migration_test:
+      from: wired
+      to: business-insider
+      start: 2025-03
+      role: senior_correspondent
+      source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+      question: Does balanced framing persist outside Condé Nast?
 - name: Will Knight
   beat: AI research and policy
   known_patterns: AI safety and regulation focus

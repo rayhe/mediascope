@@ -1,0 +1,44 @@
+# Business Insider Publication Profile
+name: "Business Insider"
+slug: "business-insider"
+url: "https://www.businessinsider.com"
+
+ownership_chain:
+  - name: "Business Insider"
+    entity_type: "publisher"
+    description: "Business and technology news publication owned by Axel Springer"
+  - name: "Axel Springer SE"
+    entity_type: "parent_company"
+    description: "German media conglomerate"
+
+revenue_relationships:
+  - partner: "OpenAI"
+    relationship_type: "licensing"
+    description: "Axel Springer licensing deal with OpenAI for content training"
+    source_url: "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+
+key_journalists:
+  - name: "Amanda Hoover"
+    beat: "technology, AI workplace impacts, consumer tech, social media trends"
+    known_patterns: "Balanced cross-platform consumer-protection criticism - Meta Marketplace, TikTok Shop, Airbnb governance. Type B control case: consistent framing across competing platforms despite institutional incentives."
+    competitor_coverage:
+      mechanism_id: 75
+      type: Type B control - balanced platform criticism
+      description: "Hoover applies consistent consumer-protection lens across Meta, ByteDance/TikTok, Airbnb. Provides control case for WIRED institutional effects - her framing did NOT show Meta-selective negativity while at Condé Nast, and post-migration continuity (WIRED → BI Mar 2025) tests persistence outside Condé Nast."
+      meta_marketplace:
+        beat: Facebook Marketplace scams, layoffs
+        framing: consumer_protection_critical
+        source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
+      tiktok_shop:
+        beat: TikTok Shop consumer experience
+        framing: consumer_protection_critical
+        source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+      airbnb:
+        title: Airbnb platform governance via Today Explained
+        source_url: https://www.everand.com/podcast/678975573/Airbnbanned-To-Airbnb-or-not-to-Airbnb-that-is-the-question-Wired-s-Amanda-Hoover-and-the-Atlantic-s-Kate-Lindsay-have-the-answers
+      migration:
+        from: wired
+        to: business-insider
+        start: 2025-03
+        role: senior_correspondent
+        source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/

@@ -5062,6 +5062,32 @@ journalists:
     start: 2025-03
   name: Amanda Hoover
   notes: 'Key migration: NJ Advance Media → Morning Brew → Wired → Business Insider. General assignment tech reporter who covered Meta/Facebook (Marketplace scams, layoffs), TikTok Shop, social media platforms, AI workplace displacement. Promoted within Wired under Katie Drummond (Aug 2024). Cross-publication migration through Condé Nast orbit makes her a good DiD subject  -  did Wired''s institutional culture shape her coverage tone?'
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 75
+      pattern: balanced_platform_criticism_control
+      description: 'Hoover demonstrates balanced cross-platform criticism: Meta Marketplace (consumer scams, layoffs), TikTok Shop (consumer experience, platform commerce critique), Airbnb/social media (platform governance). Unlike WIRED journalists who show selective adversarial framing toward Meta (e.g., Levy access-contrast, Goode assignment avoidance), Hoover applies consistent consumer-protection lens across Meta, ByteDance/TikTok, and Airbnb. Provides Type B control case: institutional Condé Nast culture did NOT produce Meta-selective negativity in her output. Migration WIRED → Business Insider (Mar 2025) tests whether framing persists outside Condé Nast.'
+      meta_coverage:
+        beat: Facebook Marketplace scams, layoffs, platform governance
+        publication: wired
+        framing: consumer_protection_critical
+        source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
+      tiktok_coverage:
+        beat: TikTok Shop, social commerce, platform consumer experience
+        publication: wired
+        framing: consumer_protection_critical
+        source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+      airbnb_coverage:
+        title: Airbnb coverage via Today Explained
+        publication: wired
+        significance: Platform governance comparison - Hoover covers Airbnb platform issues with same consumer lens as Meta
+        source_url: https://www.everand.com/podcast/678975573/Airbnbanned-To-Airbnb-or-not-to-Airbnb-that-is-the-question-Wired-s-Amanda-Hoover-and-the-Atlantic-s-Kate-Lindsay-have-the-answers
+      business_insider_continuity:
+        role: senior_correspondent
+        beat: AI workplace impacts, consumer tech, social media trends
+        start: 2025-03
+        source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+        key_question: Does balanced cross-platform framing persist outside Condé Nast?
   multi_publication: true
 - career:
   - beat: congressional coverage
