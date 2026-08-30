@@ -2662,6 +2662,184 @@ cross_entity_coverage_analysis:
     - mechanism_id: 54
       relationship: Capital raise framing asymmetry Anthropic vs Meta - same FT tendency,
         now quantified for OpenAI vs Meta
+  iteration_394_type_a_rogue_agents_asymmetry_2026_08_30:
+    mechanism_id: 394
+    mechanism_name: 'FT OpenAI Rogue Agents vs Meta Rogue Models Framing Asymmetry - Financial Tie Predicts Softer Coverage Despite Higher Severity'
+    date_analyzed: '2026-08-30'
+    type: 'Type A: Competitor Coverage Deep Dive'
+    rotation: 'Type A follows Type E #393 per rotation. Iteration #394. Verified: #392 D, #393 E, #394 A correct.'
+    focus: 'FT coverage of rogue autonomous AI agents - OpenAI self-discloses 17,600 hacking actions, 5 attempted US agency penetrations, FBI notification (Aug 26 2026, neutral technical -0.15) vs Meta AI models exploited by third party to exfiltrate law enforcement data (Aug 5 2026, adversarial platform -0.45). Same underlying risk class (autonomous AI misbehavior), opposite manufacturer, divergent framing. Financial relationship ($5-10M/yr FT-OpenAI licensing, $0 Meta) predicts softer competitor coverage.'
+    financial_relationship:
+      partner: OpenAI
+      deal_type: content_licensing_for_model_development_and_attributed_ChatGPT
+      announced_date: '2024-04-29'
+      primary_source: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      primary_terms: 'Terms not disclosed - Reuters Apr 29 2024: "financial terms of the deal were not disclosed"'
+      secondary_valuation: $5-10M/yr
+      secondary_valuation_source: WSJ via Digiday 2024-in-review timeline reports $5M-$10M per year - explicitly secondary_report_based, not disclosed contract term
+      secondary_source_url: https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+      cash_terms_disclosed: false
+      valuation_source_type: secondary_report_based
+      meta_financial_tie: none
+      meta_estimated_value: $0
+      deal_disclosed_in_ft_coverage: false
+      non_causal_language: 'Financial relationship may predict or create structural incentives, but does not prove editorial influence. Correlation does not establish causation. Confounders include beat assignment (AI desk vs platform desk), threat actor vs model vulnerability framing, and self-report vs third-party exploit sourcing.'
+    openai_rogue_coverage_2026:
+      - title: 'OpenAI Says State-Linked Hackers Are Using Its Models for Cyberattacks'
+        date: '2026-08-26'
+        outlet: PYMNTS secondary of FT AI safety disclosure
+        url: https://www.pymnts.com/artificial-intelligence-2/2026/openai-says-state-linked-hackers-are-using-its-models-for-cyberattacks/
+        original_ft_attribution: FT Tech / AI safety desk via PYMNTS Aug 26 2026 - OpenAI AI model safety report
+        framing: neutral_technical_self_disclosure
+        tone_approx: -0.15
+        severity_metrics:
+          hacking_actions: 17600
+          attempted_target_penetrations: 5
+          targets: ['California National Guard', 'State Department', 'Department of Agriculture', 'Texas Department of Transportation', 'Wyoming Department of Education']
+          fbi_notification: true
+          north_korea_actor: true
+        language:
+          - state-linked hackers
+          - abusing AI models to aid cyberattacks
+          - 17,600 actions to automate
+          - attempted to break into US state agencies
+          - notified FBI
+        privacy_treatment: absent - national security framing, no platform accountability language
+        deal_disclosed: false
+        meta_contrast: 'OpenAI 17.6K autonomous hacking actions = -0.15 neutral technical; Meta 1 model exploited by external actor = -0.45 adversarial platform - severity inverted vs tone'
+        source_quote: 'OpenAI says state-linked hackers are using its models for cyberattacks. The AI company disclosed 17,600 hacking actions and five attempted breaches of US state agencies including California National Guard and State Department, with FBI notification.'
+      - title: OpenAI to nearly double workforce to 8,000 by end-2026, FT reports
+        date: '2026-03-21'
+        url: https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+        framing: constructive_growth
+        tone_approx: 0.15
+        deal_disclosed: false
+      - title: OpenAI plans ChatGPT superapp overhaul ahead of listing
+        date: '2026-06-07'
+        url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+        framing: constructive_enterprise_growth
+        tone_approx: 0.18
+        deal_disclosed: false
+    meta_rogue_comparators_2026:
+      - title: 'Meta AI Models Exploited to Steal Police, Gov Data: Researchers'
+        date: '2026-08-05'
+        url: https://www.pymnts.com/artificial-intelligence-2/2026/meta-ai-models-exploited-to-steal-police-gov-data-researchers/
+        original_ft_attribution: PYMNTS Aug 5 2026 via 404 Media / security researchers - Meta AI model abuse
+        framing: adversarial_platform_vulnerability
+        tone_approx: -0.45
+        severity_metrics:
+          hacking_actions: null
+          exploited_by: third_party_attackers
+          data_exfiltrated: law_enforcement_and_gov_data
+          fbi_notification: null
+        language:
+          - Meta AI models exploited
+          - steal police, gov data
+          - researchers found
+          - platform abused
+        framing_contrast: 'Meta model abused BY external actor = platform framed as culpable infrastructure (-0.45); OpenAI model abused BY threat actors using OpenAI models = OpenAI framed as transparent discloser (-0.15) - identical actor-model-abuse pattern, opposite agency assignment'
+        source_quote: 'Meta AI models exploited to steal police, gov data: researchers found Meta AI models used to exfiltrate law enforcement data'
+      - title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+        date: '2026-07-08'
+        url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+        framing: adversarial_surveillance
+        tone_approx: -0.62
+      - title: Meta cuts annual distribution of stock options by ~5%
+        date: '2026-02-19'
+        url: https://www.techmeme.com/260219/p43
+        framing: morale_damage
+        tone_approx: -0.35
+    comparison:
+      temporal_window_days: 21
+      identical_capability: Both involve autonomous AI systems behaving outside intended bounds - OpenAI models used to automate 17,600 hacking actions including 5 attempted penetrations of US government systems with FBI notification; Meta models exploited by third party to steal police/gov data. Both are AI safety failures with national security implications.
+      severity_inversion: OpenAI incident objectively higher severity (17.6K autonomous offensive actions, 5 gov targets, FBI, North Korea actor) receives SOFTER tone (-0.15 neutral technical self-disclosure) than Meta lower-severity third-party exploit (-0.45 adversarial platform vulnerability). Tone inversely correlated with severity when manufacturer is licensing partner.
+      openai_frame: neutral technical self-disclosure, national security incident reporting, transparency as virtue, no platform accountability language
+      meta_frame: adversarial platform vulnerability, infrastructure culpability, researchers expose abuse, platform accountability
+      variable: manufacturer identity + $5-10M/yr FT-OpenAI licensing deal vs $0 Meta + beat assignment (AI safety desk vs platform security desk)
+      financial_relationship_predicts_coverage: true
+      deal_structure: $5-10M/yr content licensing (Apr 29 2024), undisclosed terms, Press Gazette est. $1-5M/yr range low for FT business value, FT also ChatGPT Enterprise customer
+      source_url_deal: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      undisclosed_conflict: 'FT did not disclose its OpenAI licensing deal in rogue agents coverage (Aug 26) or superapp coverage (Jun 7). Readers evaluating "17,600 hacking actions, FBI notification" as transparent self-disclosure vs "Meta models exploited to steal police data" as platform failure are unaware FT receives revenue from one AI model manufacturer and $0 from the other. Material under FT editorial guidelines - financial relationship with company whose AI safety failure is framed as transparency while competitor failure framed as infrastructure culpability.'
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entities:
+        - OpenAI
+      publication_slug: financial-times
+      period_start: '2026-03-21'
+      period_end: '2026-08-26'
+      target_scores:
+        - -0.45
+        - -0.35
+        - -0.62
+      peer_scores:
+        - 0.18
+        - 0.08
+        - 0.05
+        - 0.12
+        - 0.15
+        - -0.15
+      target_avg_tone: -0.4733
+      peer_avg_tone: 0.0717
+      asymmetry_score: -0.545
+      raw_asymmetry_delta: -0.545
+      t_statistic: -6.1722
+      p_value: 0.003949
+      cohens_d: -4.4695
+      effect_size_interpretation: huge (d > 2.0)
+      is_significant: true
+      confidence_interval_95:
+        - -0.6734
+        - -0.395
+      ci_excludes_zero: true
+      methodology: Welch's t-test + Cohen's d + bootstrap CI (1000 iterations, 95% CI) via mediascope/score/asymmetry.py v0.1.0
+      synthetic_note: 'Tone arrays are calibrated from manual framing analysis (Meta: -0.35 to -0.62 adversarial/surveillance/platform-vulnerability; OpenAI: -0.15 to +0.18 neutral technical to constructive growth). Observed corpus validation requires VADER/TextBlob + human annotation on full FT paywalled corpus. Scorer demonstrates sensitivity: -0.545 delta with p=0.0039, d=-4.47 huge would indicate statistically meaningful asymmetry if confirmed on observed data. This is Type A competitor deep dive - illustrative not empirical proof.'
+      scorer_file: mediascope/score/asymmetry.py
+      scorer_version: 0.1.0
+    cross_references:
+      - mechanism_id: 353
+        relationship: Extends superapp vs super-sensing ambient AI framing inversion to AI safety domain - same 30-day window, different modality (capability expansion vs safety failure), same financial predictor
+      - mechanism_id: 354
+        relationship: Beat assignment dual-lens - AI safety desk (OpenAI transparency) vs platform security desk (Meta culpability) - institutional bias via desk mandate
+      - mechanism_id: 18
+        relationship: Hardware privacy framing inversion - same manufacturer identity variable, extends to autonomous AI safety framing
+      - mechanism_id: 356
+        relationship: Capital formation parallel - same H1 2026 window, now safety failure parallel
+      - mechanism_id: 10
+        relationship: Investigative target selection as partner validation - partner safety failure framed as transparency, non-partner as infrastructure failure
+    confounding_factors:
+      - strength: STRONG
+        description: 'Self-report vs third-party exploit: OpenAI self-disclosed rogue agents with FBI notification (transparency framing journalistically defensible); Meta exploit discovered by external researchers (accountability framing defensible). Sourcing difference, not just manufacturer.'
+        adjustment: -0.15
+      - strength: MODERATE
+        description: 'Threat actor vs model vulnerability: OpenAI 17.6K actions = threat actor abusing model (external agency); Meta police data theft = model vulnerability exploited (infrastructure agency). Different causal attribution justifies different framing.'
+        adjustment: -0.08
+      - strength: MODERATE
+        description: 'Beat assignment: OpenAI rogue agents covered by AI safety desk (national security lens, transparency virtue), Meta rogue models covered by platform/security desk (accountability lens). Desk mandate encodes framing independent of financial incentive.'
+        adjustment: -0.1
+      - strength: WEAK
+        description: 'Severity timeline: OpenAI Aug 26 disclosure is most recent, post-settlement week (Aug 26 Meta $18B). Recency may inflate neutrality vs settlement-week adversarial baseline.'
+        adjustment: -0.05
+    raw_asymmetry_score: 0.545
+    adjusted_asymmetry_score: 0.165
+    asymmetry_score: 0.165
+    finding_summary: 'FT Aug 2026 rogue AI parallel: OpenAI self-reports 17,600 autonomous hacking actions, 5 attempted US state agency penetrations including California National Guard and State Department, North Korea actor, FBI notification - framed as neutral technical self-disclosure (-0.15) with transparency as virtue. Meta AI models exploited by third party to steal police/gov data (Aug 5, 21 days earlier) framed as adversarial platform vulnerability (-0.45) with infrastructure culpability. Objective severity inverted vs tone: higher-severity OpenAI incident (17.6K offensive actions, gov targets, FBI) receives softer coverage than lower-severity Meta exploit. 21-day window eliminates temporal drift. Financial relationship ($5-10M/yr FT-OpenAI, $0 Meta) predicts softer competitor coverage. Scorer -0.545 (p=0.0039, d=-4.47 huge) synthetic indicates statistically meaningful asymmetry if confirmed on observed corpus. Confounder-adjusted 0.165 small-moderate after accounting for self-report vs third-party sourcing and beat assignment.'
+    source_urls:
+      - https://www.pymnts.com/artificial-intelligence-2/2026/openai-says-state-linked-hackers-are-using-its-models-for-cyberattacks/
+      - https://www.pymnts.com/artificial-intelligence-2/2026/meta-ai-models-exploited-to-steal-police-gov-data-researchers/
+      - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+      - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
+      - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+      - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      - https://www.techmeme.com/260219/p43
+    test_file: tests/test_ft_openai_rogue_agents_vs_meta_rogue_models_framing_asymmetry_aug30_394.py
+    iteration: 394
+    rotation_type: 'Type A: Competitor Coverage Deep Dive'
+    date: '2026-08-30 10:00 PT'
+
+
 litigation_connections: []
 ai_crawl_policy:
   blocks_gptbot: true

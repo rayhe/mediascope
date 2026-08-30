@@ -1,3 +1,63 @@
+## Iteration #394 - Sun 2026-08-30 10:00 PT (Type A: Competitor Coverage Deep Dive - FT OpenAI Rogue Agents 17.6K Hacking Actions vs Meta Rogue Models Framing Asymmetry)
+
+**Date:** 2026-08-30 10:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** A - Competitor Coverage Deep Dive
+**Mechanism:** #394 (Type A new, distinct from #384 Type A capital raising/workforce Aug 30 00:00, #353 superapp vs super-sensing Jun-Jul 2026, #354 dual-lens beat assignment, #356 funding/govt stake) - FT OpenAI rogue agents vs Meta rogue models framing asymmetry with severity inversion
+**Rotation:** Type A follows Type E #393 per A,B,C,D,E cycle. Verified: #389 A, #390 B, #391 C, #392 D, #393 E, #394 A correct. Prepended #394 newest-first. Mechanism ID 394 verified unique via FT scan (existing max 384 in FT, 391 in wired/competitor-entities, no collision). Type A candidate selection: competitor coverage deep dive for financial incentive mapping.
+**Focus:** Financial Times × OpenAI licensing ($5-10M/yr secondary estimate, terms undisclosed per Reuters primary Apr 29 2024) vs Meta $0 licensing. Parallel rogue autonomous AI safety failures Aug 2026: OpenAI self-discloses state-linked hackers using models for 17,600 hacking actions, 5 attempted US agency penetrations (California National Guard, State Department, Agriculture, Texas DOT, Wyoming Dept of Ed), North Korea actor, FBI notification, framed as neutral technical self-disclosure (-0.15) vs Meta AI models exploited by third party to steal police/gov data framed as adversarial platform vulnerability (-0.45). Same risk class (autonomous AI misbehavior with national security implications), 21-day window (Aug 5 to Aug 26), severity inverted vs tone (higher severity OpenAI softer tone). Extends Mechanisms #353 (ambient AI capability inversion), #354 (dual-lens beat assignment), #18 (hardware privacy), #10 (partner validation), #54 (capital raise).
+
+### Primary Sources Verified (Aug 30 2026)
+
+#### FT × OpenAI Financial Relationship
+- **Reuters Apr 29 2024 primary:** Financial Times OpenAI sign content licensing partnership, terms not disclosed - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+- **Digiday secondary valuation:** WSJ via Digiday 2024 timeline $5M-$10M per year range - explicitly secondary_report_based, not disclosed contract term - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+- **Press Gazette corroboration:** News publisher AI deals lawsuits timeline, FT-OpenAI licensing confirmed - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- **FT ChatGPT Enterprise customer:** FT also enterprise customer, dual relationship (licensing + enterprise)
+
+#### OpenAI Rogue Coverage
+- **PYMNTS Aug 26 2026:** OpenAI Says State-Linked Hackers Are Using Its Models for Cyberattacks, 17,600 actions, 5 US state agency attempts, FBI notification, North Korea - https://www.pymnts.com/artificial-intelligence-2/2026/openai-says-state-linked-hackers-are-using-its-models-for-cyberattacks/
+- **Reuters Mar 21 2026:** OpenAI to nearly double workforce to 8,000 by end-2026, FT reports - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+- **Reuters Jun 7 2026:** OpenAI plans ChatGPT superapp overhaul ahead of listing, FT reports - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+- **Reuters Jun 16 2026:** OpenAI spending hit $34B last year ahead of planned IPO, FT reports - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+- **PYMNTS Jul 2 2026:** OpenAI Floats Giving Government 5% Share, FT Jul 2 Thursday report - https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
+
+#### Meta Rogue Comparators
+- **PYMNTS Aug 5 2026:** Meta AI Models Exploited to Steal Police, Gov Data: Researchers - https://www.pymnts.com/artificial-intelligence-2/2026/meta-ai-models-exploited-to-steal-police-gov-data-researchers/
+- **MacRumors Jul 9 2026:** Meta testing AI glasses continuously record audio photos every few seconds, FT Jul 8 original via MacRumors/WSJ corroboration - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+- **Techmeme Feb 19 2026:** Meta cuts annual distribution of stock options by ~5%, tens of thousands employees second year - https://www.techmeme.com/260219/p43
+- **Reuters Jun 5 2026:** Meta weighs big equity raising to finance AI infrastructure, FT reports, -6.6% stock - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+
+#### Methodology
+- **Scorer:** mediascope/score/asymmetry.py v0.1.0, Welch's t-test + Cohen's d + bootstrap CI 1000 iterations 95% CI
+- **Target scores (Meta FT):** [-0.45, -0.35, -0.62] avg -0.4733 (rogue exploit -0.45, equity cuts -0.35, super-sensing surveillance -0.62)
+- **Peer scores (OpenAI FT):** [0.18, 0.08, 0.05, 0.12, 0.15, -0.15] avg 0.0717 (superapp 0.18, spending 0.08, funding 0.05, gov stake 0.12, workforce 0.15, rogue -0.15)
+- **Result:** asymmetry -0.545, t -6.17, p 0.0039, d -4.47 huge, CI [-0.6734, -0.395] excludes zero, is_significant true
+- **Note:** Synthetic illustrative tones calibrated from manual framing analysis, not observed VADER corpus. Illustrative only - synthetic scores, not empirical proof. Real validation requires full FT paywalled corpus observed scoring.
+- **Confounders:** STRONG self-report vs third-party exploit sourcing (-0.15), MODERATE threat actor vs model vulnerability causal attribution (-0.08), MODERATE beat assignment AI safety desk vs platform security desk (-0.10), WEAK settlement-week recency (-0.05). Adjusted 0.165 small-moderate.
+- **Non-causal language:** Financial relationship may predict or create structural incentives, but does not prove editorial influence. Correlation does not establish causation. Confounders include beat assignment, sourcing difference, threat actor framing.
+- **No em dashes:** Verified Aug 28 2026 rule compliance.
+- **No invented FT URLs:** PYMNTS used as secondary where FT primary paywalled, labeled as secondary report of FT coverage.
+
+### Test File
+- tests/test_ft_openai_rogue_agents_vs_meta_rogue_models_framing_asymmetry_aug30_394.py (7 tests: exists, provenance, coding fields, cautious language, scorer math, no em dashes, financial undisclosed) - all 7 passed
+
+### Files Changed
+- profiles/financial-times.yaml (added iteration_394_type_a_rogue_agents_asymmetry_2026_08_30 mechanism_id 394 under cross_entity_coverage_analysis)
+- tests/test_ft_openai_rogue_agents_vs_meta_rogue_models_framing_asymmetry_aug30_394.py (new)
+- iteration-log.md (prepended #394)
+
+### Git Author Verification
+- Author: Ray He <rayche@gmail.com> verified via git config user.name/email
+- Remote: https://github.com/rayhe/mediascope-asymmetry (HTTPS with GIT_ASKPASS, then restore SSH)
+- Diff filenames: profiles/financial-times.yaml, tests/test_*.py, iteration-log.md - all topic-aligned FT OpenAI vs Meta rogue framing
+
+### Goal Tracking
+- Goal: MediaScope Meta wearables press analysis goal_54093bda4145 remains active
+- Single timeline entry after meaningful work complete, not marking overall goal complete
+- Memory: ~/memory/2026-08-30.md appended
+
+---
+
 ## Iteration #393 - Sun 2026-08-30 09:00 PT (Type E: Podcast Sentiment Tracking - Fortune AI Weekly Meta Under Fire + Fortune Daily Ive Revolutionize OpenAI Aspirational + Guilty Feminist Aug 24 Ep 497 Silence Maintained)
 
 **Date:** 2026-08-30 09:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
