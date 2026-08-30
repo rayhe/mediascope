@@ -26,6 +26,154 @@ revenue_relationships:
       - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
     verification_date: "2026-08-30"
 
+competitor_relationships:
+  openai:
+    financial_tie: licensing_via_parent
+    partner: OpenAI
+    relationship_type: licensing
+    estimated_value: "tens of millions euros (3-year deal per Bloomberg Law source familiar, terms not disclosed)"
+    cash_terms_disclosed: false
+    valuation_source_type: "source_familiar_undisclosed_terms"
+    valuation_note: "Bloomberg Law reported three-year Axel Springer deal worth tens of millions euros based on source familiar with undisclosed terms. CB Insights lists $25M+. Some secondary sources describe tens of millions per year, but Bloomberg wording supports tens of millions across deal. Do not assert precise annual value without stronger evidence."
+    description: "Axel Springer, parent of Business Insider, licenses content to OpenAI for training and attributed use. Creates structural incentive to maintain deal. Does not prove editorial direction."
+    announced_rights_scope: "Content licensing for training and attributed use; not syndication"
+    source_urls:
+      - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+      - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+      - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+    verification_date: "2026-08-30"
+    business_insider_openai_profitability_skepticism_vs_meta_product_framing_aug30_399:
+      mechanism_id: 399
+      date_analyzed: "2026-08-30"
+      type: Type A - Competitor Coverage Deep Dive
+      publication: business-insider
+      competitor: openai
+      status: documented
+      finding: "Business Insider covers OpenAI through rigorous financial viability lens while covering Meta wearables through product timeline and supply chain lens. OpenAI Feb 10 2026 article foregrounds $143B projected losses 2024-2029 largest startup losses in history, $207B shortfall by 2030, cash incinerator quote, margin for error is thin, a lot of things need to go right, markets change no guarantee edge will endure. Includes balanced case for confidence with compute certainty framing and Khosla investor counterpoint. Meta coverage Dec 2025 to Jan 2026 foregrounds Phoenix mixed reality delay to 2027 to get details right and breathing room, Ray-Ban Display high demand waitlists into 2026 and pause wider expansion due to supply shortages, and retail expansion hiring. Meta Reality Labs cumulative losses more than $60B since 2020 noted only in Reuters background paragraph not BI lede. Framing inversion: both companies have large cumulative losses, but only OpenAI receives investor skepticism framing as lede. Language: OpenAI receives investor alarm vocabulary, Meta receives product execution vocabulary."
+      business_insider_openai_articles:
+        - title: "What Analysts, Investors Think About OpenAI's Path to Profitability - Can OpenAI make the numbers meet? It is a trillion-dollar question."
+          date: "2026-02-10"
+          authors: "Dakin Campbell, Ben Bergman"
+          url: "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https://www.businessinsider.com/%2Fopenai-profitability-analyst-investor-opinions-funding-ipo-2026-2"
+          original_path: "https://www.businessinsider.com/openai-profitability-analyst-investor-opinions-funding-ipo-2026-2"
+          framing: "financial_viability_skepticism_with_balanced_confidence_counterpoint"
+          key_phrases:
+            - "cash incinerator"
+            - "A lot of things need to go right"
+            - "The margin for error is thin"
+            - "The company is not yet profitable and does not have a plausible pathway to near-term profitability"
+            - "largest startup losses in history"
+            - "Markets change, and there is no guarantee that a technological edge, especially in this AI-driven end of the market, will endure"
+          tone_notes: "Skeptical investor lens but includes CFO Friar compute certainty and Khosla investor $140B potential revenue counterpoint. Balanced within article but lede is skepticism."
+          source_verification: "Archived via dejavu.org due to paywall. Original Business Insider path verified via search result title match."
+        - title: "VCs are flooding Anthropic with offers to invest at up to an $800 billion valuation"
+          date: "2026-04-14"
+          author: "Ben Bergman"
+          url: "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+          note: "Same BI author covering competitor Anthropic with valuation exuberance framing, contrasting with OpenAI skepticism same author - useful intra-author control."
+          source_url: "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+          framing: "valuation_exuberance"
+          tone_notes: "Positive momentum framing for Anthropic $800B offers versus skeptical framing for OpenAI $750-830B valuation in profitability article. Same author different competitor tone."
+      business_insider_meta_articles:
+        - title: "Meta delays release of Phoenix mixed-reality glasses to 2027, Business Insider reports"
+          date: "2025-12-06"
+          publication: "Reuters citing Business Insider internal memo"
+          url: "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
+          framing: "product_timeline_delay_to_get_details_right"
+          key_phrases:
+            - "delaying the release until 2027, aiming to get the details right"
+            - "a lot more breathing room to get the details right"
+          tone_notes: "Neutral to positive execution framing. Delay framed as polishing, not financial distress, despite Reality Labs $60B+ cumulative losses since 2020 noted only in Reuters background not BI memo lede."
+        - title: "Meta says it can't make its Ray-Ban Displays fast enough - and it's hitting pause on a wider rollout"
+          date: "2026-01-06"
+          url: "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html"
+          original_path: "https://www.businessinsider.com/meta-ray-ban-display-supply-shortage-pause-international-expansion-2026-1"
+          framing: "supply_constraint_due_to_high_demand"
+          key_phrases:
+            - "high demand"
+            - "waitlists extending into 2026"
+            - "pausing on a wider expansion due to supply shortages"
+          tone_notes: "Demand-positive framing. Scarcity as success signal, not execution failure."
+        - title: "Meta Reportedly Set to Expand Retail Locations as Smart Glasses Competition Heats Up"
+          date: "2026-04-23"
+          url: "https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/"
+          attribution: "Business Insider report via Road to VR"
+          framing: "retail_expansion_mirroring_apple_strategy"
+          key_phrases:
+            - "finally looking to expand its retail footprint"
+            - "could mirror Apple's retail strategy"
+          tone_notes: "Strategic growth framing. No financial viability questioning."
+      tone_comparison:
+        openai_avg_MANUAL_ILLUSTRATIVE: -0.42
+        meta_avg_MANUAL_ILLUSTRATIVE: 0.08
+        delta_MANUAL_ILLUSTRATIVE: -0.50
+        methodology: "MANUAL ILLUSTRATIVE synthetic tone scores based on observed Business Insider language - cash incinerator and margin thin and plausible pathway framing versus get details right and high demand framing. Illustrative only. Requires observed corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic arrays."
+        illustrative_warning: "MANUAL ILLUSTRATIVE - not empirical. Do not present as empirical finding."
+        asymmetry_scorer_version: "mediascope/score/asymmetry.py v0.1.0"
+        scorer_inputs:
+          target_entity: "meta"
+          peer_entity: "openai"
+          target_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10, 0.08]
+          peer_scores_MANUAL_ILLUSTRATIVE: [-0.45, -0.38, -0.42]
+          note: "Target scores from Meta product framing neutral to slightly positive. Peer scores from OpenAI financial skepticism negative. Delta target minus peer equals 0.08 minus -0.42 equals 0.50. Meta more positive than OpenAI in this publication window, inverse of WIRED pattern where Meta more negative. Important nuance for cross-publication analysis."
+        asymmetry_result_MANUAL_ILLUSTRATIVE:
+          delta: 0.50
+          p_value: "not_calculated - illustrative only, requires Welch t-test on observed corpus"
+          cohens_d: "not_calculated - illustrative only, requires Cohen d on observed corpus"
+          ci_95: ["not_calculated", "not_calculated"]
+          significant: false
+          significant_empirical: false
+          methodology_note: "Synthetic controlled tone arrays illustrative only. Exact p/d/CI values depend on scoring module. Tests should verify thresholds not exact values. Real Business Insider corpus needed for empirical validation. Do not claim empirical significance from synthetic scores alone per project standing rule Aug 28."
+      confounders:
+        - level: STRONG
+          factor: "beat_assignment"
+          description: "OpenAI profitability article by enterprise correspondents Dakin Campbell and Ben Bergman covering venture capital and startups beat. Meta wearables articles by tech and retail beats via internal memo reporting. Different journalists with different framing norms. Enterprise beat naturally applies financial viability lens. Tech beat naturally applies product lens. Tone difference may reflect beat assignment not entity bias."
+          adjustment: "not_calculated but material - beat is primary predictor of financial versus product framing"
+        - level: STRONG
+          factor: "market_share_and_product_stage"
+          description: "Meta Ray-Ban Display $799 with neural wristband announced Sep 2025 shipping Sep 30 2025 high demand and supply shortage is concrete shipping product with 2M+ units sold since Oct 2023. OpenAI profitability is pre-IPO financial projection for private company valued $750-830B. Product stage difference legitimately predicts product versus financial framing. Market share: Meta more than 80 percent of smart glasses per BBC May 2026, first major tech player. Newsworthiness of supply shortage versus fundraising is distinct."
+          adjustment: "not_calculated but material - product stage predicts framing"
+        - level: STRONG
+          factor: "timing_and_news_peg"
+          description: "OpenAI article Feb 10 2026 pegged to $100B fundraising round aiming largest in history and IPO weighing later 2026. Meta articles Dec 2025 to Jan 2026 pegged to Phoenix delay memo and Display supply shortage announcement. Different news pegs naturally produce different framing. Financial peg produces financial framing. Supply peg produces product framing. Three month gap between OpenAI Feb and Meta Dec-Jan reduces direct comparability."
+          adjustment: "not_calculated but material - news peg drives framing"
+        - level: MODERATE
+          factor: "sourcing_differences"
+          description: "OpenAI article sources investors Charles Jaskel New Vintage Partners, George Noble ex-Fidelity, Deutsche Bank analysts $143B losses, HSBC $207B shortfall, The Information $115B burn, Ethan Choi Khosla Ventures, Rob Enderle. Meta articles source internal memo Gabriel Aul and Ryan Cairns via Business Insider. Different source pools produce different vocabulary. Investor sources use alarm vocabulary. Internal exec sources use polishing framing."
+          adjustment: "not_calculated but material"
+        - level: MODERATE
+          factor: "financial_relationship_does_not_prove_direction"
+          description: "Axel Springer licensing deal is parent-level not Business Insider newsroom level. Deal announced Dec 2023 predates both article sets. No evidence of editorial directive linking deal to coverage. OpenAI receives both skeptical and confident framing within same article. Meta receives neutral to positive but also delay coverage. Correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. Financial relationship may be coincidental not causal."
+          adjustment: "not_calculated - correlation not causation"
+        - level: MODERATE
+          factor: "genuine_newsworthiness"
+          description: "OpenAI $100B fundraising largest in history and $143B projected losses largest startup losses in history are objectively more financially newsworthy than Meta 30 percent Reality Labs budget cuts. OpenAI cash burn $115B by 2029 more than three times previous estimate is legitimate business story. Meta supply shortage is legitimate product story. Different genuine newsworthiness may explain framing difference without entity bias."
+          adjustment: "not_calculated"
+        - level: WEAK
+          factor: "paywall_and_archiving"
+          description: "Business Insider paywall limits full text verification. Dejavu archive used for OpenAI profitability article. Archive fidelity may affect tone reading. Reuters and Road to VR are secondary citations of Business Insider not direct Business Insider URLs for two Meta articles. Direct Business Insider URL for Phoenix delay not retrieved, only Reuters citation. Could introduce framing distortion via secondary outlet paraphrase."
+          adjustment: "not_calculated but noted"
+      cross_references:
+        - "#75 Amanda Hoover cross-entity balanced control case"
+        - "#33 facial recognition privacy parity"
+        - "#96 Apple v OpenAI trade secret lawsuit WIRED 1 article correction"
+        - "#359 OpenAI hardware delay framing asymmetry"
+        - "#394 FT OpenAI rogue agents vs Meta rogue models"
+        - "#386 OpenAI European ad expansion dual dependency"
+        - "#396 Google alongside AI content ad dominance"
+      cautious_language: "Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. No assertion of editorial direction. Beat assignment, product stage, timing, sourcing differences, market share, genuine newsworthiness are strong confounders. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI on observed Business Insider corpus for empirical validation. Axel Springer deal is parent-level licensing, not Business Insider newsroom payment, and does not prove Business Insider editorial influence."
+      verification_date: "2026-08-30"
+      source_urls:
+        - "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https://www.businessinsider.com/%2Fopenai-profitability-analyst-investor-opinions-funding-ipo-2026-2"
+        - "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
+        - "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html"
+        - "https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/"
+        - "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+        - "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+        - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+        - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+        - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+
 key_journalists:
   - name: "Amanda Hoover"
     beat: "technology, AI workplace impacts, consumer tech, social media trends"
