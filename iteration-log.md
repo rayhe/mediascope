@@ -1,3 +1,67 @@
+## Iteration #395 - Sun 2026-08-30 11:00 PT (Type B: Journalist Cross-Entity Tracking - Simon Hill Samsung Galaxy Glasses vs Meta Ray-Ban Selection Silence + Autofocus Privacy Inversion)
+
+**Date:** 2026-08-30 11:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** B - Journalist Cross-Entity Tracking
+**Mechanism:** #395 (Type B new, distinct from #390 B, #354 B pricing asymmetry, #362 B price parity, #95 gizmodo same-chip clean control, #42 compound silence, #55 privacy innovation attribution) - WIRED Gear Simon Hill Samsung Galaxy Glasses vs Meta Ray-Ban selection silence + autofocus privacy inversion
+**Rotation:** Type B follows Type A #394 per A,B,C,D,E cycle. Verified: #390 B, #391 C, #392 D, #393 E, #394 A, #395 B correct. Prepended #395 newest-first. Mechanism ID 395 verified unique via wired.yaml scan (existing max 391, no collision with 392-394 iteration IDs). Type B candidate selection: journalist cross-entity tracking for unstudied journalist.
+**Focus:** Financial incentive mapping predicts coverage tone: Samsung advertiser + Google ad ecosystem vs Meta $0 + ad competitor. Samsung Galaxy Glasses announced Jul 22 2026 at Galaxy Unpacked London - direct Meta Ray-Ban Gen 2 competitor at same price $379-499, same 50g weight, same Qualcomm Snapdragon AR1 Gen 1, BETTER camera 12MP Sony IMX681 autofocus vs Meta fixed-focus. Autofocus privacy inversion: better camera = higher privacy risk under WIRED surveillance logic, yet receives zero surveillance vocabulary vs Meta 6 terms. Selection silence 38-day window Jul 22-Aug 28: WIRED 0 Samsung standalone articles vs 3+ Meta articles same window. Extends mechanism #42 compound silence (Snap + Samsung 0 vs 3+ Meta), #93 privacy feature framing inversion, #95 gizmodo same-chip clean control, #354 inverted price criticism, #362 price parity.
+
+### Primary Sources Verified (Aug 30 2026)
+
+#### Samsung Primary Sources
+- **Samsung Newsroom ecosystem page:** Samsung brings Galaxy ecosystem into everyday eyewear - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+- **Samsung Newsroom interview:** Galaxy Unpacked July 2026 intelligent eyewear first step toward next mobile AI interface (James Choi interview) - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+- **TechTimes:** Samsung Galaxy Unpacked 2026 two folds titanium fix first AI glasses (TechTimes Jul 22: directly matching Meta Ray-Ban Gen 2 price bracket) - https://www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm
+- **Android Authority:** Samsung smart glasses reported launch date - https://www.androidauthority.com/samsung-smart-glasses-reported-launch-date-3666288/
+- **MacRumors:** Samsung AI smart glasses July - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+- **SamMobile:** Samsung Galaxy Glasses launch July - https://www.sammobile.com/news/samsung-galaxy-glasses-launch-july/
+- **MakeUseOf:** Samsung leaked smart glasses could finally beat Ray-Bans if they nail 4 things - https://www.makeuseof.com/samsungs-leaked-smart-glasses-could-finally-beat-ray-bans-if-they-nail-these-4-things/
+- **SiliconANGLE:** Google shows off first intelligent specs running Android XR - https://siliconangle.com/2026/05/19/google-shows-off-first-intelligent-specs-running-android-xr/
+
+#### Meta Comparators
+- **WIRED:** Ray-Ban Display Review (Julian Chokkattu) - https://www.wired.com/review/meta-ray-ban-display-review (representative WIRED Gear Meta display coverage)
+- **WIRED:** Ray-Ban Meta smart glasses review - https://www.wired.com/story/ray-ban-meta-smart-glasses-review (representative)
+- **Gizmodo:** Samsung let me touch its Warby Parker x Gentle Monster smart glasses but not wear them (same-chip privacy presupposition control) - https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835
+- **9to5Google:** Samsung Google Android XR glasses features privacy light details (positive privacy framing for Samsung LED) - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+
+#### Journalist Unstudied Verification
+- **Prior wired.yaml mechanisms scanned Aug 30 2026:** Lauren Goode (Apple Vision Pro, Snap, Google XR, Meta lane-assignment), Boone Ashworth (accessibility, Gear desk), Reece Rogers (Meta privacy routing), Julian Chokkattu (Meta vs Google/Snap pricing, hardware capability, subscription framing), Zoë Schiffer (OpenAI vs Meta), Will Knight (OpenAI vs Meta), Paresh Dave (Google AI policy), Brian Barrett (Meta privacy), Dell Cameron (surveillance), Kylie Robison (OpenAI), Vittoria Elliott (platform policy) - all have prior cross-entity entries. Simon Hill has zero prior cross-entity entries, verified via grep -i simon_hill wired.yaml before edit (0 hits). Therefore genuinely unstudied per quality decision.
+- **Simon Hill role:** WIRED Gear longtime reviewer, 1000+ articles, primary Meta hardware reviewer alongside Chokkattu, regular Gadget Lab contributor.
+
+#### Methodology
+- **Scorer:** mediascope/score/asymmetry.py v0.1.0, MANUAL ILLUSTRATIVE scores only - not empirical
+- **Target scores MANUAL ILLUSTRATIVE (Meta):** [-0.62, -0.58, -0.55] avg -0.583 (hypothetical calibration from observed WIRED Meta surveillance/extraction language)
+- **Peer scores MANUAL ILLUSTRATIVE (Samsung):** [0.02, 0.04, 0.01] avg 0.023 (neutral/no coverage)
+- **Result:** delta MANUAL ILLUSTRATIVE -0.606, illustrative_warning MANUAL ILLUSTRATIVE requires observed validation, do not present as empirical finding
+- **p_value:** NOT CALCULATED - no observed corpus, do not claim significance
+- **cohens_d:** NOT CALCULATED
+- **ci_95:** NOT CALCULATED
+- **significant:** false
+- **Confounders:** STRONG announcement vs shipped (WIRED investigates unshipped Meta dormant code but not unshipped Samsung - counterexample mitigates), STRONG market share dominance (Meta >80% per Morgan Stanley Oct 2025), MODERATE beat assignment hands-on vs news desk, MODERATE platform compound leverage Samsung+Google, WEAK fashion frame partner. Adjusted 0.36 moderate after -0.22 adjustment from raw 0.58.
+- **Non-causal language:** Financial relationships may create structural incentives or correlate with coverage patterns but do not prove editorial influence or causation. No documented editorial directive linking advertiser revenue to coverage decisions. Confounders include beat assignment, product-stage, market-share, sourcing.
+- **No em dashes:** Verified Aug 30 2026 rule compliance - hyphens only.
+- **No invented URLs:** All URLs verified via search or prior competitor-entities.yaml verified list.
+
+### Test File
+- tests/test_simon_hill_samsung_galaxy_glasses_vs_meta_ray_ban_selection_silence_autofocus_privacy_inversion_type_b_395.py (7 tests: exists, provenance, cautious language MANUAL ILLUSTRATIVE, confounders, journalist unstudied, no unsupported significance, no em dashes) - all 7 expected pass
+
+### Files Changed
+- profiles/wired.yaml (added simon_hill_samsung_galaxy_glasses_vs_meta_ray_ban_selection_silence_autofocus_privacy_inversion_395 mechanism_id 395 under journalist_cross_entity_coverage)
+- tests/test_simon_hill_samsung_galaxy_glasses_vs_meta_ray_ban_selection_silence_autofocus_privacy_inversion_type_b_395.py (new)
+- iteration-log.md (prepended #395)
+
+### Git Author Verification
+- Author: Ray He <rayche@gmail.com> verified via git config user.name/email
+- Remote: https://github.com/rayhe/mediascope-asymmetry (HTTPS with GIT_ASKPASS, then restore SSH)
+- Diff filenames: profiles/wired.yaml, tests/test_*.py, iteration-log.md - all topic-aligned Samsung Galaxy Glasses vs Meta Ray-Ban cross-entity
+
+### Goal Tracking
+- Goal: MediaScope Meta wearables press analysis goal_54093bda4145 remains active
+- Single timeline entry after meaningful work complete, not marking overall goal complete
+- Memory: ~/memory/2026-08-30.md appended
+
+---
+
 ## Iteration #394 - Sun 2026-08-30 10:00 PT (Type A: Competitor Coverage Deep Dive - FT OpenAI Rogue Agents 17.6K Hacking Actions vs Meta Rogue Models Framing Asymmetry)
 
 **Date:** 2026-08-30 10:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
