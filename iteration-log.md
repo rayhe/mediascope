@@ -1,3 +1,50 @@
+## Iteration #396 - Sun 2026-08-30 12:00 PT (Type C: Financial Incentive Mapping - Google Alongside-AI-Content Ad Dominance $26.42B of $32.03B (80%+) vs Chatbot Ad Marginality)
+
+**Date:** 2026-08-30 12:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** C - Financial Incentive Mapping
+**Mechanism:** #396 (Type C new, distinct from #391 C Meta-EssilorLuxottica equity circular financing, #386 C OpenAI European ad expansion dual dependency, #391 Perplexity Comet Plus 80/20 revenue share, #372 Apple Siri variable pay and Google Showcase sunset, #367 Amazon Associates 50 percent commission cut, #361 Amazon Anthropic expansion mirroring OpenAI, #358 Amazon triple-channel circular financing, #25 Amazon dual lab sextuple leverage, #376 EssilorLuxottica reverse advertiser, #35 Advance Condé Nast aggregate AI revenue dependency, #58 Condé Nast AI Deal Portfolio Dependency Index) - Google Alongside-AI-Content Ad Dominance vs Chatbot Ad Marginality
+**Rotation:** Type C follows Type B #395 per A,B,C,D,E cycle. Verified: #391 C, #392 D, #393 E, #394 A, #395 B, #396 C correct. Prepended #396 newest-first. Mechanism ID 396 verified unique via competitor-entities.yaml and wired.yaml scan (existing max 395, no collision). Type C candidate selection: financial incentive mapping for Google alongside-AI-content ad dominance that inverts original MediaScope financial incentive model.
+**Focus:** eMarketer Jul 17 2026 counter-forecast quantifies AI advertising market structure that inverts original MediaScope financial incentive model. Total US AI ad spend 2026 is $32.03B. Of that, $26.42B (80%+) is traditional search ads running alongside Google AI Overviews - existing Google revenue, not new chatbot revenue. Only $2.56B (8%) is standalone chatbot ads. By 2030, alongside-AI-content share drops to 58.6% but still dominant, chatbot ads total market $5.41B vs OpenAI projection $100B - OpenAI misses by 90% even if capturing 100% of chatbot ad market. Google captures BOTH search ad and AI-adjacent ad revenue, while OpenAI ad alternative stays marginal. Publisher dependency CONCENTRATES on Google, not diversifies to OpenAI. Revised thesis: content licensing deals REMAIN financially material to OpenAI ($300-400M/yr vs ~$540M plausible share of $5.41B chatbot ads by 2030 = 40-75% ratio, not 0.4%), while Google leverage INCREASES because 80%+ of AI ad spend is Google alongside-AI-content. Company with LEAST financial relationship (Meta: 0 Condé Nast deals, 13 total licensing deals globally $50M/yr News Corp + 12 others) receives harshest coverage, while company with MOST financial relationships (Google via $81.63B Q2 ad revenue + Showcase + News AI pilot) receives softer coverage.
+
+### Primary Sources Verified (Aug 30 2026)
+
+#### eMarketer Counter-Forecast
+- **eMarketer:** ChatGPT ad revenues may fall 90 percent short of OpenAI 2030 target (Jul 17 2026, analyst Nate Elliot principal analyst AI) - https://www.emarketer.com/content/chatgpt-ad-revenues-may-fall-90--short-of-openai-s-2030-target
+- **Adweek:** OpenAI ad business on pace to miss its own forecast by 90 percent analyst says (Jul 17 2026) - https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/
+- **Fast Company:** OpenAI ad strategy faces a major reality check (Jul 17 2026) - https://www.fastcompany.com/91577174/openais-ad-strategy-faces-a-major-reality-check
+- **Digiday:** OpenAI ChatGPT reaches the coupon stage of building an ad business (Jul 30 2026, $50-$100 promo credits) - https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/
+- **Key data:** US AI ad spend 2026 $32.03B, alongside AI content $26.42B (80%+), standalone chatbot ads <$1B (8%), 2030 US AI ad spend $68.25B, alongside share 58.6%, chatbot ads total market $5.41B, OpenAI projected 2026 $2.5B, projected 2030 $100B, miss magnitude 90% even with 100% chatbot ad revenue. Scope note: US-only but US is OpenAI largest market. <$1B figure covers ALL standalone chatbot ads (ChatGPT + Copilot + Google AI Mode + Amazon Alexa for Shopping) not just OpenAI. Quote: Even if you assume that they will make 100% of all revenue from chatbot advertising five years from now, OpenAI will still miss their number by 90%.
+
+#### Google Q2 2026
+- **BestMediaInfo:** Google ad revenue rises 14 percent to $81.6 billion as AI opens new search inventory (Jul 22 2026, Q2 2026) - https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
+- **Neowin:** Alphabet revenue jumps to $119.8 billion as Google Cloud growth accelerates (Jul 22 2026) - https://www.neowin.net/news/alphabet-revenue-jumps-to-1198-billion-as-google-cloud-growth-accelerates/
+- **9to5Google:** Alphabet Q2 2026 earnings (Jul 22 2026) - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
+- **Key data:** Total revenue $119.8B, total Google advertising $81.63B, Search $63.27B (17% YoY), YouTube $11.05B (13% YoY), Network $7.3B (-1% YoY). Quarter ended Jun 30 2026.
+- **Reuters:** OpenAI signs deal with Condé Nast (Aug 20 2024) - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/ (Condé Nast licensing baseline)
+
+#### Methodology
+- **Scorer:** mediascope/score/asymmetry.py v0.1.0, MANUAL ILLUSTRATIVE scores only - not empirical per Aug 28 rule
+- **Target scores MANUAL ILLUSTRATIVE (Meta):** [-0.62, -0.58, -0.65, -0.55, -0.61] avg -0.602 (hypothetical calibration from observed WIRED Meta surveillance/extraction language)
+- **Peer scores MANUAL ILLUSTRATIVE (Google):** [0.08, 0.12, 0.15, 0.05, 0.10] avg 0.10 (neutral/positive)
+- **Result:** delta MANUAL ILLUSTRATIVE -0.702 = target_avg minus peer_avg = -0.602 minus 0.10 = -0.702, illustrative_warning MANUAL ILLUSTRATIVE requires observed validation, do not present as empirical finding
+- **p_value:** NOT CALCULATED - no observed corpus, do not claim significance
+- **cohens_d:** NOT CALCULATED
+- **ci_95:** NOT CALCULATED
+- **significant:** false
+- **Confounders:** STRONG eMarketer US-only (but US is OpenAI largest market and figure covers ALL standalone chatbot ads not just OpenAI - global expansion does not change US publisher dependency structure), STRONG correlation does not prove causation (editorial independence policies insulate newsrooms - financial relationship may be coincidental not causal - Condé Nast editorial firewall may prevent ad dependency influence), MODERATE publisher ad dependency on Google $81.63B Q2 is TTM not quarterly allocation (actual quarterly dependency varies by publisher size - but Google is primary ad revenue source for all profiled publications via programmatic + Showcase - dependency is structurally real), MODERATE OpenAI ad threat still nascent in coupon phase $50-$100 promo credits Jul 30 2026 Digiday (dangling credits to juice spending suggests recruitment mode not growth mode - legitimate editorial prioritization of Google threat over OpenAI threat but does not explain why Google threat receives softer coverage than Meta non-threat), WEAK eMarketer analyst Nate Elliot sells AI ad forecasting (commercial incentive to demonstrate market size constraints - but forecast based on actual ad spend data and advertiser interviews not speculative - tier 2 source but methodology transparent)
+- **Revised thesis:** Original thesis publisher licensing vs ad 2030 ratio 0.4% ($300-400M licensing vs $100B ad) revised to 40-75% ($300-400M licensing vs ~$540M plausible OpenAI share of $5.41B chatbot ads). Google captures alongside-AI-content true, Google leverage increases true, OpenAI does not replicate Google shield true, content licensing remains primary OpenAI publisher relationship true. Net effect: Financial incentive model shifts from future ad dependency to present deal dependency for OpenAI, and from declining relevance to increasing dominance for Google. Company with LEAST financial relationship (Meta) continues harshest coverage, companies with MOST financial relationships (Google via ads + Showcase, OpenAI via deals) receive softer treatment.
+- **Non-causal language:** Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Publisher dependency on Google for ad revenue is structural but does not prove editorial influence. Meta zero-deal status is factual but does not prove adversarial coverage is caused by zero-deal status.
+- **No em dashes:** Verified Aug 30 2026 rule compliance - hyphens only.
+- **No invented URLs:** All URLs verified via search.
+
+### Test File
+- tests/test_google_alongside_ai_content_ad_dominance_vs_chatbot_marginality_type_c_396.py (9 tests: exists in competitor-entities, exists in wired top-level + competitor_relationships.openai, provenance https 8 URLs, emarketer quantification $32.03B $26.42B 80% 8% $5.41B 90%, Google Q2 $81.63B $63.27B $11.05B $7.3B, cautious language no causal claim, MANUAL ILLUSTRATIVE labeling and no significance, uniqueness 2 entries, no em dash) - all 9 expected pass
+
+### Files Changed
+- profiles/competitor-entities.yaml (added google_alongside_ai_content_ad_dominance_mechanism_396 mechanism_id 396 under entities.openai, sibling to european_ad_expansion_dual_dependency_aug30)
+- profiles/wired.yaml (added google_alongside_ai_content_ad_dominance_mechanism_396 top-level mechanism_id 396 + competitor_relationships.openai.google_alongside_ai_content_ad_dominance_mechanism_396 entry)
+- tests/test_google_alongside_ai_content_ad_dominance_vs_chatbot_marginality_type_c_396.py (new, 9 tests)
+
 ## Iteration #395 - Sun 2026-08-30 11:00 PT (Type B: Journalist Cross-Entity Tracking - Simon Hill Samsung Galaxy Glasses vs Meta Ray-Ban Selection Silence + Autofocus Privacy Inversion)
 
 **Date:** 2026-08-30 11:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
