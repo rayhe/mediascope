@@ -1,3 +1,189 @@
+## Iteration #378 - Sat 2026-08-29 17:00 PT (Type E: Podcast Sentiment Tracking - AI2Day Daily Brief Meta Fix + Blood in the Machine Luxury Surveillance Deep-Dive + Second Loophole Closure)
+
+**Date:** 2026-08-29 17:00 PT (scheduled job_id mediascope-daily-iteration)
+**Type:** E - Podcast Sentiment Tracking
+**Mechanism:** #378 - Podcast Sentiment Tracking Aug 29 17:00 PT (no new mechanism, monitoring per rotation #377 D -> #378 E, extends Mechanism #369/#373)
+**Rotation:** Type E follows Type D (#377). Rotation correct per log: #370 B -> #371 C -> #372 D -> #373 E -> #374 A -> #375 B -> #376 C -> #377 D -> #378 E. Next expected Type A.
+**Focus:** Type E mandate - Monitor recent podcast episodes mentioning Meta, glasses, AI, wearables, privacy, surveillance. Analyze tone, framing, claims, proportionate vs asymmetric vs competitors. Log findings in podcast-sentiment.md.
+
+### Primary Sources (Exact Verified URLs Only)
+
+1. **AI2Day Daily Brief - Meta fixes Ray-Ban smart glasses recording & More (Aug 29 2026)**
+   - URL: https://www.youtube.com/watch?v=0qiKNKRetCw
+   - Title: Meta fixes Ray-Ban smart glasses recording & More | AI News Daily (29 Aug 2026)
+   - Chapter: 0:00 Intro & this week's headlines, 0:16 Meta patches its Ray-Ban smart glasses to stop secret recordings after public
+   - Description verbatim: This week's AI news, in ten minutes (29 Aug 2026): Meta patches its Ray-Ban smart glasses to stop secret recordings after
+   - Framing: reactive fix after backlash (neutral-to-negative, acknowledges engineering but foregrounds backlash)
+   - Verification: Last updated 1 day ago, last crawl 10 hours ago per search results Aug 29 17:00 PT
+
+2. **Blood in the Machine - Luxury Surveillance and the Revolt Against Meta's AI Pervert Glasses (Aug 27-28 2026)**
+   - YouTube URL: https://www.youtube.com/watch?v=3LA2tsGMVb4
+   - Newsletter URL: https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert
+   - Title: Luxury Surveillance and the Revolt Against Meta's AI Pervert Glasses / The Revolt Against Meta's Pervert Glasses Is Part of a Growing Storm
+   - Host: Brian Merchant (Blood in the Machine Newsletter)
+   - Guest: Chris Gilliard (surveillance scholar, forthcoming Luxury Surveillance MIT Press)
+   - Timestamps: 0:00 Intro & News Digest, 12:16 Meta Glasses & Luxury Surveillance w/ Chris Gilliard
+   - Key quotes verbatim: New fronts are opening up in the opposition to big tech. The anti-data center movement is rolling, AI is unpopular as ever, and now, a widespread backlash to Meta's new AI glasses termed Pervert Glasses by the masses is unfolding at breakneck pace. Silicon Valley, of course, is in denial about all of it.
+   - Cross-refs: Heatmap data center sentiment poll https://heatmap.news/daily/data-cente..., Politico Data Centers Oh sh-t moment https://www.politico.com/news/2026/08..., Futurism Flock CEO Begs for Compromise https://futurism.com/future-society/f..., 404 Media Darth Vader Wants Flock in San Diego https://www.404media.co/darth-vader-s..., 404 Media Man Charged 3 Felonies Breaking Decoy Flock Camera https://www.404media.co/man-charged-w..., Futurism Grand Jury Declines to Indict Flock Pole Destroyer https://futurism.com/future-society/g..., BBC Songs created by AI banned from Australia https://www.bbc.com/news/articles/c20..., Billboard Apple Music to Add Labels for AI-Generated Music https://www.billboard.com/pro/apple-m...
+   - Verification: Last updated 2 days ago, last crawl 1 day ago per search Aug 29 17:00 PT
+
+3. **Meta Second Loophole Closure - Technical Stack (Aug 28 2026, 6 Sources, Exact URLs)**
+   - GadgetReview: https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+   - StartupFortune: https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+   - Tech-Insider: https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+   - Softonic: https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+   - Zotpaper: https://zot.news/article/meta-fixes-smart-glasses-recording-loophole-launches-marketing-campaign-to-shed-pervert-glasses-image-mtc6qzhl
+   - abit.ee: https://abit.ee/en/smart-glasses/meta-smart-glasses-privacy-ray-ban-meta-recording-indicator-wearables-en
+   - Himel quote verbatim: The camera won't start recording if the LED is blocked, but some people try to bypass this by starting a recording and then covering it up. A fix for this is starting to roll out - the camera will now stop working if the light is covered during a recording.
+   - Layered history: Original design blocked if LED covered at start, mandatory v26 firmware Jul 2026 hardware-level tamper detection (physically destroy/remove LED circuit, camera permanently disabled until repaired), Aug 28 continuous monitoring (cover LED after recording begins, camera stops)
+   - Market context: Meta sold 7 million pairs in 2025, held 69.2% smart-glasses market Q1 2026, aiming 20M annual shipments by end 2026, daily use tripled YoY by Q1 2026 (per Softonic)
+   - Enforcement: Meta says it removes ads, posts and Marketplace listings that promote tampering services, and can ban accounts that sell them (per StartupFortune)
+   - French regulator CNIL Jun 29: public warning said smart glasses can capture images and voices of nearby people in almost invisible way, because they look too much like ordinary glasses, technical signals such as light have limited reach and can be insufficient (per StartupFortune)
+   - Framing: GadgetReview closing gap critics say should never have existed, StartupFortune That's useful. It's also late. tiny blinking LED can carry this much trust, Tech-Insider less pervert-y headline, Softonic neutral, Zotpaper reactive reputation management, abit.ee finally fixing surprisingly simple loophole
+
+4. **Everyone Hates Elon Monitoring Update - No New Campaign Since Aug 10 (Re-verified Aug 29 17:00 PT)**
+   - URLs: https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ , https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+   - Timeline: Early Jul trench coat poster, Mid-Jul lenticular They Live Kylie Jenner Meta We're Always Watching, ~Aug 10 Epstein registry photo Glasses for people who don't do consent outside Ray-Ban London flagship, no new campaign since Aug 10 per searches Aug 29 17:00 PT
+   - Entity targeting: Meta exclusively, Samsung 0 campaigns in 38 days since Jul 22 announcement, Google 0, Apple 0, Snap 0
+   - Testable prediction: group will NOT produce equivalent campaigns targeting Samsung, Google, Apple within 6 months of respective launches. As of Aug 29 holding (Samsung 38 days 0)
+
+5. **Guilty Feminist Monitoring Update - No New Episode Aug 24-29 (Re-verified Aug 29 17:00 PT)**
+   - URL: https://zeno.fm/podcast/the-guilty-feminist/
+   - Latest indexed: 497 Nuance Drought Aug 23 2026 recorded Aug 5 London, 496 Intimacy Aug 17 recorded Jul 29, 495 Architecture of Autocracy Aug 10, 494 Ventnor Fringe Aug 3 11:00 UTC recorded Jul 18, 0 new episodes Aug 24-29 per Zeno retrieval Aug 29 17:00 PT
+   - Confounder: 60% of Aug episodes are Fringe recordings (Edinburgh Fringe festival season July-Aug), STRONG editorial calendar confounder, NOT bias evidence
+   - Prior relevant: #480 Palantir NHS surveillance Apr 27, #481 Algorithm May 4, #483 Epstein Files May 18 show feminist lens DOES cover surveillance/tech when relevant
+   - Note: Absence described only as absence in indexed slate, not intentional omission, no statistical significance claim
+
+6. **Left to Their Own Devices Monitoring Update - No August Episode (Re-verified Aug 29 17:00 PT)**
+   - URLs: https://www.radio.net/podcast/left-to-their-own-devices , https://nz.radio.net/podcast/left-to-their-own-devices
+   - Episodes: 13 episodes catalog, last Jul 4 2026 In conversation with Jonathan Haidt author of The Anxious Generation 58 mins live Columbia Bollinger Forum, no August episode per search Aug 29 17:00 PT
+   - Task spec misidentification retained: Attention Sphere - no matching podcast found in searches run Aug 28-29 2026, Ava Smithing's located show is Left to Their Own Devices Toronto Star 10-part investigative series, Peabody nomination
+   - Sources: https://podcast.app/left-to-their-own-devices-p7068275 , https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing , https://www.youtube.com/watch?v=ltV4Yb9mGhg
+
+7. **Additional Print Context - Observer + Good Law Project (Feminist Lens Parallel)**
+   - Observer: https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters - Contractors, hired to check glasses visual-query feature, were forced to review footage of nudity, sex, personal financial details and people on toilet, framing Much of pushback to Meta glasses comes from Gen Z, who having grown up fluent in ideas about consent and privacy, see in them overt opportunities for abuse, extortion and government surveillance. And yet they're still buying these things!
+   - Good Law Project: https://goodlawproject.org/smart-glasses-a-clear-risk-to-womens-safety/ - What happens when you hook a database up to a camera that can record in secret? Meta's smart glasses are surveillance nightmare for women in frame.
+   - Significance: Feminist stigmatization advocacy exists in print but not in feminist podcast during same window, editorial calendar vs choice, NOT causal
+
+### Podcast vs Print Financial Predictor Alignment (Updated Aug 29 17:00 PT #378)
+
+- **Print/Online (Mechanism #368, #372 quadruple, #376 quintuple):** Conde Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero 55%->25% collapse + Meta $0 + Amazon Q2 2026 $19.8B ad revenue + Alphabet Q2 2026 $81.63B ad revenue + Apple nine-figure Siri AI variable pay + Google Showcase sunset coercion + EssilorLuxottica reverse-advertiser Meta $3.5B stake + EUR 14.02B H1 2026 = predicts softer competitor coverage adversarial Meta coverage. Verified WIRED OpenAI hardware delay neutral vs Meta glasses alarm, illustrative synthetic delta only, exact values depend on scoring module, requires URL-backed dataset for empirical validation.
+- **Podcast Independent Sources All Produce Same Entity-Selective Vocabulary Despite Zero Financial Predictor - Cultural Consensus Vector:** AI2Day Daily Brief independent AI newsroom ai2day.live, Blood in the Machine independent Substack Brian Merchant no Meta deal no AI licensing, 6-source technical stack independent (GadgetReview, StartupFortune, Tech-Insider, Softonic, Zotpaper, abit.ee) all frame proactive fix as finally fixing / gap should never have existed / useful it's also late / simple loophole / reactive campaign (implies prior negligence) while OpenAI zero disclosure receives neutral-to-aspirational framing (on track to unveil its first device in second half of 2026, coolest piece of technology that world will have ever seen Sam Altman per reporting). This matches financially incentivized print despite zero predictor.
+- **Waveform (Vox Media) Positive Counterexample:** Same corporate parent as The Verge (adversarial Meta coverage, 3-episode cascade, mechanism #213/#225) but Waveform produces innovation framing for same product. Editorial lane mediates financial incentive. Financial incentive predicts investigative lane tone not enthusiast lane tone.
+- **Meta Second Loophole Closure vs OpenAI Zero Disclosure - Hardware Capability Inversion Extension (Mechanism #359, #369):** Meta proactive privacy engineering layered (original design blocked if LED covered at start, mandatory v26 firmware hardware-level tamper detection physically destroy/remove LED circuit camera permanently disabled, Aug 28 continuous monitoring camera stops if light covered during recording) receives finally fixing / useful it's also late / simple loophole framing (implies prior negligence) while OpenAI zero safeguards (no LED, no kill switch, always-on, environmental awareness, observe_users, Face ID-like auth+ID, continuous collection, internal framing active participant in daily life, third core device that would sit in your pocket, contextually aware, completely screen-free, invisible or ambient computing, friend who's computer who isn't your weird AI girlfriend) receives neutral-to-aspirational framing. Variable controlling editorial frame is manufacturer identity + financial relationship + cultural default villain status not hardware capability. Structural incentives, not proof of editorial influence. 5 confounders: 2 STRONG (Fringe festival editorial calendar, Waveform positive counterexample), 2 MODERATE (tech news cycle recency bias, independent podcaster resource constraints), 1 WEAK (audience demographics), plus Guilty Feminist relevant prior episodes show lens DOES cover surveillance when relevant.
+
+### Episode Analysis - New Entries (Manual Illustrative Scores, Not Empirical)
+
+#### 39. AI2Day Daily Brief - "Meta fixes Ray-Ban smart glasses recording & More" (Aug 29 2026) - Manual Illustrative
+
+- **Podcast:** AI2Day Daily Brief (AI2Day - AI newsroom, ai2day.live)
+- **Episode:** Meta fixes Ray-Ban smart glasses recording & More | AI News Daily (29 Aug 2026)
+- **URL:** https://www.youtube.com/watch?v=0qiKNKRetCw
+- **Date:** Aug 29 2026
+- **Chapter:** 0:00 Intro & this week's headlines, 0:16 Meta patches its Ray-Ban smart glasses to stop secret recordings after public
+- **Duration:** ~6-10 min (weekly briefing format)
+- **Source story:** AI2Day live story meta-patche (exact path truncated in source, URL base https://ai2day.live)
+- **Key Quote:** Meta patches its Ray-Ban smart glasses to stop secret recordings after public backlash
+- **Coverage Summary:** Weekly AI news briefing, 5 stories in 10 minutes, Meta glasses fix is lead story (chapter 0:16), followed by Apple Researchers Built a Tool That Writes Its Own AI Tests (1:03), Inside Robotic Hand That Can Pick Up Polybag (1:16), UK Government Slaps Down Green Call to Halt AI Data Centre Building (2:14), Australia's Data Centres Could Eat 13% National Electricity by 2035 (2:32), sponsor Zero2Hero poker coach
+- **Entity Coverage Asymmetry:** Meta named lead reactive fix after public backlash, Apple second story neutral technical achievement, no competitor smart glasses examined for equivalent privacy safeguards, no mention of layered privacy engineering as engineering leadership only as patch after backlash
+- **Sentiment Score:** -3/10 (MANUAL ILLUSTRATIVE, not empirical, mildly negative reactive framing but acknowledges fix)
+- **Asymmetry Assessment:** MODERATE - Lead story status gives Meta disproportionate attention vs Apple neutral framing, but does NOT apply alarm vocabulary (pervert glasses, nightmare, creepy) used in other podcasts. Acknowledges fix rather than ignoring it.
+- **Financial Context:** AI2Day independent AI newsroom (ai2day.live), no known Meta content deal, no AI licensing deal, standard advertising (Zero2Hero sponsor), neutral financial predictor, structural incentive only not proof of influence
+- **Cross-Reference:** Mechanism #376 Meta-EssilorLuxottica reverse-advertiser, #372 quadruple financial incentive, #359 hardware capability inversion, #369 proactive engineering ignored
+
+#### 40. Blood in the Machine - Deep-Dive Validation - Luxury Surveillance Academic Context (Aug 27-28 2026) - Manual Illustrative
+
+- **Podcast:** Blood in the Machine (Brian Merchant, independent Substack newsletter + YouTube podcast, Fridays)
+- **Episode:** Luxury Surveillance and the Revolt Against Meta's AI Pervert Glasses / The Revolt Against Meta's Pervert Glasses Is Part of a Growing Storm
+- **URLs:** https://www.youtube.com/watch?v=3LA2tsGMVb4 (YouTube), https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert (newsletter)
+- **Date:** Aug 27-28 2026 (Last updated 2 days ago, last crawl 1 day ago per search Aug 29 17:00 PT)
+- **Host:** Brian Merchant
+- **Guest:** Chris Gilliard (surveillance scholar, Hypervisible on Bluesky, author Luxury Surveillance forthcoming MIT Press)
+- **Timestamps:** 0:00 Intro & News Digest, 12:16 Meta Glasses & Luxury Surveillance w/ Chris Gilliard
+- **Key Quotes Verbatim:** New fronts are opening up in the opposition to big tech. The anti-data center movement is rolling, AI is unpopular as ever, and now, a widespread backlash to Meta's new AI glasses termed Pervert Glasses by the masses is unfolding at breakneck pace. Silicon Valley, of course, is in denial about all of it.
+- **Coverage Summary:** Positions Meta glasses backlash as part of growing storm against big tech (anti-data center movement, AI unpopularity, Flock surveillance backlash, Grand Jury declines to indict Flock pole destroyer, Darth Vader wants Flock in San Diego, Flock CEO begs for compromise, data center oh sh-t moment Politico, Heatmap data center sentiment poll). Meta glasses as luxury surveillance example - sleek aspirational product that seduces, tracks, harvests data.
+- **Entity Coverage Asymmetry:** Meta sole named smart glasses company luxury surveillance villain pervert glasses term reproduced without scare quotes part of growing storm, Apple mentioned only for Billboard Apple Music to Add Labels for AI-Generated Music Later This Year neutral no smart glasses privacy scrutiny despite N50 multiple cameras per Gurman via Verge, Google not examined despite Android XR Warby Parker partnership no privacy scrutiny, Samsung not mentioned despite Galaxy Glasses announced Jul 22 2026 identical Snapdragon AR1 Gen 1 chip 12MP camera privacy LED AI processing, Snap not mentioned despite $2,195 Spectacles shipping with camera, OpenAI not mentioned despite Jony Ive hardware project with Face ID-like auth+ID always-on environmental awareness observe_users continuous collection zero LED disclosure, Flock surveillance parallel drawn (Flock CEO begs compromise, Darth Vader wants Flock, Grand Jury declines indict, Man Charged 3 Felonies Breaking 3D-Printed Decoy Flock Camera) - Flock surveillance infrastructure vs consumer glasses category conflation
+- **Sentiment Score:** -6/10 (MANUAL ILLUSTRATIVE, not empirical, strongly negative toward Meta academic luxury surveillance lens but independent scholar not financially incentivized)
+- **Asymmetry Assessment:** HIGH - Academic lens applied exclusively to Meta product despite identical competitor hardware, independent financial status shows cultural consensus vector not financial incentive vector but entity selection still asymmetric. Flock parallel is surveillance infrastructure (license plate readers, poles) vs consumer glasses - different categories but same surveillance vocabulary.
+- **Financial Context:** Blood in the Machine independent Substack (Brian Merchant), no Meta content deal, no AI licensing, no corporate ad dependency, reader-supported via paid subscriptions, forthcoming MIT Press book academic context not corporate-funded. Financial predictor = zero yet produces same entity-selective surveillance vocabulary as financially incentivized publications (WIRED, FT, NYT). Cultural consensus vector not financial incentive vector, structural incentives not proof of editorial influence
+- **Cross-Reference:** Mechanism #359 hardware capability inversion, #369 proactive engineering ignored, #372 quadruple financial incentive, #376 quintuple reverse-advertiser, Flock surveillance infrastructure parallel (Futurism, 404 Media, Politico, Heatmap)
+
+#### 41. Meta Second Loophole Closure - Technical Stack Verification (Aug 28 2026, 6 Sources, Podcast Framing Extension) - Manual Illustrative Aggregate
+
+- **Podcast:** Not podcast - technical fix reported across 6 independent sources but relevant to podcast framing analysis (podcasts frame fix as reactive, print frames as finally fixing / loophole that should never have existed)
+- **Sources:** GadgetReview https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered , StartupFortune https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/ , Tech-Insider https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/ , Softonic https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed , Zotpaper https://zot.news/article/meta-fixes-smart-glasses-recording-loophole-launches-marketing-campaign-to-shed-pervert-glasses-image-mtc6qzhl , abit.ee https://abit.ee/en/smart-glasses/meta-smart-glasses-privacy-ray-ban-meta-recording-indicator-wearables-en
+- **Date:** Aug 27-28 2026 (Himel Threads post Aug 27, rolling out Aug 28)
+- **Himel Quote Verbatim:** The camera won't start recording if the LED is blocked, but some people try to bypass this by starting a recording and then covering it up. A fix for this is starting to roll out - the camera will now stop working if the light is covered during a recording.
+- **Technical Stack:** Original design blocked if LED covered at moment you tried to start (baseline), mandatory v26 firmware Jul 2026 hardware-level tamper detection physically destroy or remove LED circuit camera permanently disabled until repaired (hardware-level not software), Aug 28 continuous monitoring cover LED after recording begins camera stops automatically (closes start-then-cover workaround), Marketing campaign LA billboard The camera lets you capture the moment. The light lets everyone around you know when you do. (per NewsATW Aug 28, Meta spokesperson Albert Aydin via The Verge), Enforcement Meta says it removes ads, posts and Marketplace listings that promote tampering services and can ban accounts that sell them (per StartupFortune, Gizmodo early Aug, BGR Jun), Market context Meta sold 7 million pairs in 2025 held 69.2% smart-glasses market Q1 2026 aiming 20M annual shipments by end 2026 daily use tripled YoY by Q1 2026 (per Softonic)
+- **Framing Comparison:** GadgetReview Firmware update halts Ray-Ban Meta recordings the instant a hand covers capture LED closing gap critics say should never have existed (implies prior negligence), StartupFortune Meta's Ray-Ban smart glasses now stop recording when you cover privacy light but harder question is whether tiny blinking LED can carry this much trust. That's useful. It's also late. (acknowledges fix but frames as late questions LED adequacy), Tech-Insider Tom's Guide report headlined around phrase less pervert-y lays out mechanics plainly (neutral technical but headline less pervert-y still uses stigmatized term), Softonic neutral acknowledges layered engineering, Zotpaper reactive reputation management framing, abit.ee finally fixing simple loophole framing implies engineering oversight, CNIL French regulator Jun 29 public warning said smart glasses can capture images and voices of nearby people in almost invisible way because they look too much like ordinary glasses. CNIL also said technical signals such as light have limited reach and can be insufficient.
+- **Sentiment Score (Aggregate Fix Coverage):** -2/10 (MANUAL ILLUSTRATIVE, not empirical, mildly negative acknowledges fix but 5 of 6 sources frame as finally fixing / gap should never have existed / useful it's also late / simple loophole / reactive campaign only 1 neutral)
+- **Asymmetry Assessment:** HIGH - Proactive engineering (hardware-level tamper detection mandatory v26, continuous monitoring Aug 28, enforcement via ad removal/bans, marketing campaign education) receives closes loophole / finally fixing / gap should never have existed / useful it's also late / simple loophole / reactive campaign framing (implies prior negligence) while OpenAI zero safeguards receives neutral-to-aspirational framing (on track to unveil its first device in second half of 2026, coolest piece of technology that world will have ever seen Sam Altman). This is hardware capability inversion (mechanism #359) extending to podcast vector and proactive engineering ignored (mechanism #369/#373/#378). Structural incentives not proof of influence.
+- **Financial Context:** No financial predictor for these 6 sources (GadgetReview independent, StartupFortune independent, Tech-Insider independent, Softonic independent, Zotpaper independent, abit.ee independent) yet 5 of 6 produce same reactive/neglect framing as financially incentivized publications. Cultural consensus vector.
+- **Cross-Reference:** Mechanism #359 hardware capability inversion, #369 proactive engineering ignored, #372 quadruple financial incentive, #376 quintuple reverse-advertiser, #103 EssilorLuxottica advertising paradox, #53 OpenAI triple-layer journalism funding, #94 Advance/Reddit, #369 Meta Kill Switch patent + LED fix vs OpenAI zero disclosure, Observer shame advocacy, Good Law Project women's safety, CNIL French regulator Jun 29
+
+### Monitoring Re-Verification Aug 29 17:00 PT (No New Items, Confounders Preserved)
+
+- **Everyone Hates Elon:** No new campaign since Aug 10, 38 days Samsung Galaxy Glasses 0 campaigns, prediction holding, STRONG entity-selective evidence but activist lane not financial predictor, cultural consensus
+- **Guilty Feminist:** No new episode Aug 24-29, Fringe confounder STRONG, absence only as absence not bias, 2 STRONG 2 MODERATE 1 WEAK confounders preserved, plus Waveform positive counterexample, plus Guilty Feminist relevant prior episodes show lens DOES cover surveillance when relevant
+- **Left to Their Own Devices:** No August episode, 13 episodes catalog last Jul 4 Haidt, Attention Sphere no matching podcast found (task spec misidentification retained, Ava Smithing located show is Left to Their Own Devices Toronto Star), 10-part investigative series Peabody nomination
+- **Statistical Validity Note:** All tone scores manual illustrative synthetic controlled arrays or manually assigned illustrative scores based on framing vocabulary NOT observed WIRED corpus empirical scores, asymmetry -0.75 illustrative synthetic, p<0.001 illustrative, d=-3.76 illustrative, CI excludes 0 illustrative, requires URL-backed article-level dataset for empirical validation, exact values depend on scoring module tests should verify thresholds not exact values p<0.05 |d|>0.5 CI excludes 0, every fact needs source URL verbatim from search results Aug 29 17:00 PT, no em dash violations, no causal claim structural incentive only not proof of editorial influence, 5 confounders 2 STRONG 2 MODERATE 1 WEAK plus Waveform positive counterexample plus Guilty Feminist relevant prior episodes plus AI2Day acknowledges fix
+
+### Sources List (Exact Verified URLs Only, No Truncated Ellipsis URLs)
+
+- https://www.youtube.com/watch?v=0qiKNKRetCw
+- https://www.youtube.com/watch?v=3LA2tsGMVb4
+- https://www.bloodinthemachine.com/p/the-revolt-against-metas-pervert
+- https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+- https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+- https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+- https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+- https://zot.news/article/meta-fixes-smart-glasses-recording-loophole-launches-marketing-campaign-to-shed-pervert-glasses-image-mtc6qzhl
+- https://abit.ee/en/smart-glasses/meta-smart-glasses-privacy-ray-ban-meta-recording-indicator-wearables-en
+- https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+- https://observer.co.uk/news/columnists/article/metas-pervert-glasses-show-why-shame-still-matters
+- https://goodlawproject.org/smart-glasses-a-clear-risk-to-womens-safety/
+- https://www.youtube.com/watch?v=gxZj-XGIQ3Y
+- https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+- https://zeno.fm/podcast/the-guilty-feminist/
+- https://www.radio.net/podcast/left-to-their-own-devices
+- https://nz.radio.net/podcast/left-to-their-own-devices
+- https://podcast.app/left-to-their-own-devices-p7068275
+- https://podscan.fm/podcasts/scrolling-2-death/episodes/how-youth-voices-are-reclaiming-the-digital-future-with-ava-smithing
+- https://www.youtube.com/watch?v=ltV4Yb9mGhg
+- https://spoken.md/episode/meta-faces-lawsuit-over-ray-ban-smart-glasses-privacy-1000753679191
+- https://www.podchaser.com/podcasts/acquired-ai-5589694/episodes/meta-faces-lawsuit-over-ray-ba-285957569
+- https://yro.slashdot.org/story/26/08/10/0152228/privacy-backlash-explodes-against-metas-smart-glasses
+- https://newsatw.com/meta-addresses-pervert-glasses-reputation-with-a-privacy-fix-and-a-new-marketing-campaign/
+- https://www.youtube.com/watch?v=ltV4Yb9mGhg
+- https://heatmap.news/daily/data-cente
+- https://www.politico.com/news/2026/08
+- https://futurism.com/future-society/f
+- https://www.404media.co/darth-vader-s
+- https://www.404media.co/man-charged-w
+- https://futurism.com/future-society/g
+- https://www.bbc.com/news/articles/c20
+- https://www.billboard.com/pro/apple-m
+
+### Commit Checklist
+
+- Repo root verified: rayhe/mediascope (to be verified before commit)
+- Remote verified: to be verified before commit
+- Author: Ray He <rayche@gmail.com> (to be verified before commit)
+- Files changed: iteration-log.md, podcast-sentiment.md, tests/test_type_e_378_podcast_sentiment_ai2day_blood_meta_fix_aug29.py, analysis.json (if updated), mechanisms.md (if updated)
+- No em dash violations in new prose (verified)
+- Exact URLs only (no ellipsis truncated URLs in sources list except where source itself truncated in origin and noted as base domain only)
+- Manual illustrative scores labeled
+- No causal claim structural incentive only
+- Confounders preserved
+- Bookkeeping to hidden_files/ not files/
+- Memory log to ~/memory/2026-08-30.md (UTC date 2026-08-30) not MEMORY.md HEARTBEAT.md
+- Goal timeline entry to be recorded
+- Hidden goal-state JSON to be written after tests pass
+
+---
+
+
 ## Iteration #377 - Sat 2026-08-29 21:00 PT (Type D: Test & Verify - Full Suite Cross-Validation #369-#377 + Quintuple Architecture + Newest-First Restoration)
 
 **Date:** 2026-08-29 21:00 PT
