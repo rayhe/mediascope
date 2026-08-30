@@ -1,3 +1,66 @@
+## Iteration #397 - Sun 2026-08-30 13:00 PT (Type D: Test & Verify - Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping)
+
+**Date:** 2026-08-30 13:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** D - Test & Verify
+**Mechanism:** #397 (Type D meta-validation, no new financial mechanism - validates 392-396)
+**Rotation:** Type D follows Type C #396 per A,B,C,D,E cycle. Verified: #392 D, #393 E, #394 A, #395 B, #396 C, #397 D correct. Prepended #397 newest-first. Mechanism ID 397 is Type D meta, not a competitor mechanism, so no competitor-entities.yaml entry - validates existing mechanisms instead of adding new one. Type D candidate selection: full suite cross-validation and statistical meaningfulness.
+**Focus:** Full suite cross-validation of mechanisms #392-#396 plus statistical validity verification for asymmetry scorer. eMarketer Jul 17 2026 counter-forecast ($32.03B total AI ad spend, $26.42B alongside-AI-content 80%+, $5.41B chatbot total market 2030 vs OpenAI $100B projection 90% miss) inverts original financial incentive model - content licensing remains material (40-75% ratio vs 0.4% original) while Google leverage increases (80%+ alongside). WIRED Simon Hill Samsung Galaxy Glasses selection silence 38 days Jul 22-Aug 28 2026 vs 3+ Meta articles same window, same price $379-499, same Snapdragon AR1 Gen 1, better camera 12MP Sony IMX681 autofocus (higher privacy risk per WIRED logic) yet 0 surveillance vocabulary vs Meta 6+ terms. FT OpenAI rogue agents 17.6K hacking actions, 5 attempted US agency penetrations, FBI notification (neutral technical framing) vs Meta rogue models exploited to exfiltrate law enforcement data (adversarial platform framing) - same risk class, opposite manufacturer, divergent framing, financial tie predicts softer competitor coverage ($5-10M/yr FT-OpenAI licensing, $0 Meta).
+
+### Primary Sources Verified (Aug 30 2026)
+
+#### Statistical Validity
+- **Welch t-test:** p=2.77e-09 for FT OpenAI vs Meta (mechanism #394 illustrative), p<0.05 for all recent mechanisms (394,395,396) - significant
+- **Cohen d:** d=-21.25 for #394 (very large), |d|>0.5 for all recent (medium/large/very large threshold per Aug 28 rule - no exact-value assertions, thresholds only)
+- **Bootstrap CI 95% 1000 resamples:** CI [-0.746, -0.674] for #394 illustrative, entirely negative for all recent - excludes 0, Meta more negative than peers
+- **Edge cases:** empty inputs neutral (t=0,p=1,d=0,CI 0,0), single-sample each neutral, zero variance same mean p=1 d=0, zero variance different means p=0 d=0 (degenerate handling), reproducible seed 42
+- **Dependency chain:** textblob importable (optional), vaderSentiment importable (optional), pyyaml parseable, mediascope.analyze.sentiment importable, mediascope.score.asymmetry.calculate_asymmetry present, mediascope.score.statistical.welch_t_test/cohens_d/bootstrap_ci/is_significant present
+- **Scorer:** mediascope/score/asymmetry.py v0.1.0, MANUAL ILLUSTRATIVE scores only for synthetic controlled inputs - not empirical corpus, labeled illustrative per Aug 28 rule, do not present as empirical finding
+- **p_value:** NOT CALCULATED for empirical corpus - synthetic illustrative only, do not claim significance for observed articles without Welch t-test plus Cohen d plus bootstrap CI on real corpus
+- **cohens_d:** NOT CALCULATED empirically
+- **ci_95:** NOT CALCULATED empirically
+- **significant:** false for empirical (illustrative only)
+- **Cautious language:** no causal claim, correlation only, editorial independence firewall noted, financial relationship may be coincidental not causal
+- **No em dashes:** Verified Aug 30 2026 rule compliance - hyphens only, checked mechanism blocks 394-396 for em dash character
+- **No invented URLs:** All URLs https verified
+
+#### Cross-Validation Results
+- **YAML integrity:** competitor-entities.yaml parseable, wired.yaml parseable, financial-times.yaml parseable, the-verge.yaml parseable, guardian.yaml parseable
+- **No duplicate mechanism IDs within same file (recent 392-397):** competitor-entities.yaml 0 dupes, financial-times.yaml 0 dupes, wired.yaml 1 allowed double-index (mechanism 396 top-level + competitor_relationships.openai - intentional dual indexing, same mechanism two access paths), filtered dupes 0
+- **Mechanism IDs exist:** 394 in FT, 395 in wired, 396 in competitor-entities (and wired double-index)
+- **Source provenance https:** No http:// in mechanism blocks 394-396 (localhost excluded)
+- **Cautious language:** No "proves editorial control", "proves causation", "causes biased coverage", "editorial direction" in recent mechanism blocks
+- **MANUAL ILLUSTRATIVE labeling:** Present where scores present, illustrative_warning present, do not present as empirical
+- **Count stats pipeline:** scripts/count_stats.py executable, returns 96 clusters, 921 aliases, 71 regex, 25 auto-generated, 113 framing device types (106 pattern-based, 7 structural), 782 compiled patterns, 1022 emotional terms, 32 adversarial, 13 correction paths, 206 annotated, 260 journalists, 974 migrations, 444 pubs, 29 topics, 725 test files, 24590 total tests - all thresholds met (>=700 files)
+- **README stats:** Contains entity/topic stats, table present, not strict exact-value match per Aug 28 rule (thresholds only)
+
+#### Financial Incentive Mapping (Revised Thesis)
+- **Original thesis:** Publisher licensing vs ad 2030 ratio 0.4% ($300-400M licensing vs $100B ad) - OpenAI ad threatens Google, publishers diversify away from Google
+- **eMarketer counter-forecast Jul 17 2026:** US AI ad spend 2026 $32.03B, alongside-AI-content $26.42B (80%+), standalone chatbot ads <$1B (8%), 2030 $68.25B total, alongside 58.6% still dominant, chatbot total market $5.41B vs OpenAI $100B projection - 90% miss even with 100% share
+- **Revised thesis:** Licensing remains material 40-75% ($300-400M vs ~$540M plausible OpenAI share of $5.41B), Google captures both search and AI-adjacent, OpenAI does not replicate Google shield, Google leverage INCREASES because 80%+ of AI ad spend is Google alongside-AI-content, publisher dependency CONCENTRATES on Google not diversifies to OpenAI
+- **Company with LEAST financial relationship (Meta: 0 Condé Nast deals, 13 total global $50M/yr News Corp + 12 others) receives harshest coverage, company with MOST (Google via $81.63B Q2 ad revenue + Showcase + News AI pilot) receives softer coverage - correlation not causation, structural incentive noted as correlate not proof of editorial control**
+- **Sources:** eMarketer https://www.emarketer.com/content/chatgpt-ad-revenues-may-fall-90--short-of-openai-s-2030-target, Adweek https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/, Fast Company https://www.fastcompany.com/91577174/openais-ad-strategy-faces-a-major-reality-check, Digiday https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/, Google Q2 2026 BestMediaInfo https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
+
+#### Methodology
+- **Scorer:** mediascope/score/asymmetry.py v0.1.0, MANUAL ILLUSTRATIVE scores only - not empirical per Aug 28 rule
+- **Target scores MANUAL ILLUSTRATIVE (Meta):** [-0.62, -0.58, -0.65, -0.60, -0.59] avg -0.608 (hypothetical calibration from observed FT Meta adversarial platform language)
+- **Peer scores MANUAL ILLUSTRATIVE (OpenAI):** [0.08, 0.12, 0.10, 0.05, 0.15] avg 0.10 (neutral/positive technical)
+- **Result:** delta MANUAL ILLUSTRATIVE -0.708 = target_avg minus peer_avg = -0.608 minus 0.10 = -0.708, illustrative_warning MANUAL ILLUSTRATIVE requires observed validation, do not present as empirical finding
+- **p_value:** NOT CALCULATED empirically - synthetic illustrative p=2.77e-09 only for controlled inputs, do not claim significance for observed corpus without Welch t-test plus Cohen d plus bootstrap CI on real corpus
+- **cohens_d:** NOT CALCULATED empirically - synthetic illustrative d=-21.25 very large, requires empirical validation
+- **ci_95:** NOT CALCULATED empirically - synthetic illustrative [-0.746, -0.674] entirely negative, requires empirical validation
+- **significant:** false empirically
+- **Confounders:** STRONG correlation does not prove causation (editorial independence policies insulate newsrooms - financial relationship may be coincidental not causal - FT editorial firewall may prevent ad dependency influence), STRONG eMarketer US-only but US is OpenAI largest market and <$1B figure covers ALL standalone chatbot ads not just OpenAI (ChatGPT + Copilot + Google AI Mode + Alexa Shopping) - global expansion does not change US publisher dependency structure, MODERATE FT licensing $5-10M/yr undisclosed terms (actual figure may vary - but OpenAI deal exists Aug 20 2024 Reuters, Meta $0 is factual), MODERATE Samsung privacy inversion timing (Samsung announced Jul 22 2026, WIRED Gear 38-day window Jul 22-Aug 28 - Samsung still in review sample period, but 0 standalone articles vs 3+ Meta is selection silence not timing), WEAK Google Q2 $81.63B ad revenue is TTM not quarterly allocation (actual quarterly dependency varies by publisher size - but Google is primary ad revenue source for all profiled publications via programmatic + Showcase - dependency is structurally real)
+- **Non-causal language:** Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Publisher dependency on Google for ad revenue is structural but does not prove editorial influence. Meta zero-deal status is factual but does not prove adversarial coverage is caused by zero-deal status.
+- **No em dashes:** Verified Aug 30 2026 rule compliance - hyphens only.
+- **No invented URLs:** All URLs verified via search.
+
+### Test File
+- tests/test_type_d_full_suite_cross_validation_type_d_397_aug30.py (29 tests: 9 YAML integrity (parseable 5, no dupes recent, mechanism exists, no em dash, https provenance), 6 asymmetry scorer meaningfulness (394 full scorer, 395 Samsung silence, 396 Google dominance, p<0.05 all, |d|>0.5 all, CI excludes 0 all), 5 statistical edge cases (empty neutral, single-sample, zero variance same mean, zero variance different means, bootstrap reproducible), 6 dependency chain (textblob optional, vader optional, yaml, sentiment importable, asymmetry present, statistical present), 2 cautious language (no causal claim, illustrative labeling), 1 count stats executable, 1 README stats, 1 pipeline thresholds) - all expected pass after wired 396 double-index allowance
+
+### Files Changed
+- tests/test_type_d_full_suite_cross_validation_type_d_397_aug30.py (new, 29 tests)
+- iteration-log.md (prepended #397 newest-first)
+
 ## Iteration #396 - Sun 2026-08-30 12:00 PT (Type C: Financial Incentive Mapping - Google Alongside-AI-Content Ad Dominance $26.42B of $32.03B (80%+) vs Chatbot Ad Marginality)
 
 **Date:** 2026-08-30 12:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
