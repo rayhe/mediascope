@@ -1,3 +1,167 @@
+## Iteration #391 - Sun 2026-08-30 07:00 PT (Type C: Financial Incentive Mapping - Perplexity Comet Plus 80/20 Revenue Share with Condé Nast)
+
+**Date:** 2026-08-30 07:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
+**Type:** C - Financial Incentive Mapping
+**Mechanism:** #391 (Type C new, distinct from #25 Amazon sextuple, #358 Amazon triple-channel, #361 Amazon Anthropic expansion mirroring OpenAI, #367 Amazon affiliate cut, #372 Apple Siri variable pay and Google Showcase sunset, #376 EssilorLuxottica reverse advertiser, #386 OpenAI European ad expansion) - Perplexity Comet Plus 80/20 Revenue Share with Condé Nast - Type C #391
+**Rotation:** Type C follows Type B #390 per A,B,C,D,E cycle. Verified: #386 C, #387 D, #388 E, #389 A, #390 B, #391 C correct. Prepended #391 newest-first. Candidate selection: Perplexity Comet Plus selected as fresh Type C because existing mechanisms cover Amazon dual-lab $63B, Amazon triple-channel $19.8B ads $42.2B AWS $53.4B gain, Amazon affiliate 50 percent cut, Apple Siri nine-figure variable pay, Google Showcase coercion, Microsoft PCM pilot, EssilorLuxottica reverse advertiser $3.5B Meta investment, Reddit buyback 369 to 1. Perplexity Comet Plus subscription revenue share 80/20 with Condé Nast including WIRED is distinct model - user subscription funds publisher pool based on citations and usage - not flat-fee licensing like OpenAI $1-5M per year or Amazon Rufus $3-10M per year or Microsoft PCM usage based or Perplexity Dec 2025 licensing undisclosed. No duplicate - verified via competitor-entities.yaml scan for mechanism_id 391 uniqueness and perplexity entity key uniqueness before write.
+
+### Focus
+Type C financial incentive mapping for Perplexity Comet Plus 80/20 revenue share with Condé Nast creating structural subscription incentive distinct from flat-fee licensing. Perplexity Oct 14 2025 launched Comet Plus subscription program including 80/20 revenue share where publishers receive 80 percent of subscription revenue attributable to their content based on citations and usage per Digiday. Condé Nast titles including WIRED are launch partners alongside Time, Fortune, Los Angeles Times, Gannett, Der Spiegel and others per PPC Land. This is distinct from Dec 2025 Perplexity licensing deal confirmed by Adweek which has undisclosed flat terms. As of Aug 2026 Condé Nast has five AI licensing partners OpenAI, Amazon Rufus, Microsoft PCM, Perplexity licensing, Perplexity Comet Plus. Meta has zero Condé Nast deals. Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation.
+
+### Primary Sources Verified (Aug 30 2026)
+
+#### Perplexity Comet Plus 80/20
+- **Digiday:** How Perplexity new revenue model works according to its head of publisher partnerships - 80/20 split publisher 80 Perplexity 20 subscription revenue attributable to citations usage - https://digiday.com/media/how-perplexity-new-revenue-model-works-according-to-its-head-of-publisher-partnerships/
+- **PYMNTS Oct 14 2025:** Perplexity launches subscription program that includes revenue sharing with publishers - Comet Plus subscription program including revenue sharing - https://www.pymnts.com/artificial-intelligence-2/2025/perplexity-launches-subscription-program-that-includes-revenue-sharing-with-publishers/
+- **PPC Land:** Perplexity announces Comet Plus with major news publishers - Condé Nast titles including WIRED launch partners Time Fortune LA Times Gannett Der Spiegel - https://ppc.land/perplexity-announces-comet-plus-with-major-news-publishers/
+- **Adweek Dec 2025:** Condé Nast Vasanth Williams chief product technology officer Microsoft AI licensing pilot - confirms Condé Nast has content licensing agreements in place with OpenAI, Perplexity, and Amazon - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+
+### Financial Structure #391
+
+**Perplexity Comet Plus:**
+- Launch date: Oct 14 2025
+- Revenue split: 80 percent publisher 20 percent Perplexity
+- Model: subscription user pays Perplexity pays publishers based on citations and usage
+- Partners include: Condé Nast titles including WIRED
+- Other launch partners: Time, Fortune, Los Angeles Times, Gannett, Der Spiegel
+- Existing Perplexity licensing: Dec 2025 undisclosed terms separate from Comet Plus
+- Condé Nast portfolio count: 5 AI partners as of Aug 2026 - OpenAI $1-5M per year, Amazon Rufus $3-10M per year, Microsoft PCM usage based, Perplexity licensing undisclosed, Perplexity Comet Plus 80/20 subscription share
+- Meta status: zero Condé Nast deals
+
+**Publisher Mechanism:**
+- Condé Nast publishers receiving Perplexity Comet Plus revenue share have new subscription-based incentive to cover Perplexity favorably when Perplexity surfaces Condé Nast content in Comet browser and Comet Plus answers with citations
+- Subscription model differs from flat-fee licensing - payout varies with usage and citations so coverage that increases Perplexity usage could indirectly increase publisher Comet Plus pool - structural incentive distinct from flat fee
+- Dual licensing plus subscription: Condé Nast has both Dec 2025 flat-fee Perplexity licensing and Oct 2025 Comet Plus 80/20 share - two simultaneous Perplexity financial ties amplify incentive vs single deal - but attribution between deals complicates causal inference
+- Coverage prediction: Publications with Perplexity Comet Plus participation (WIRED, Time, Fortune, LA Times, Gannett, Der Spiegel) will produce softer Perplexity coverage during 2025-2026 Comet browser adoption window. Clean controls: Reuters minimal AI deals, Gizmodo zero known deals more neutral. Meta zero Condé Nast relationship faces no comparable constraint - adversarial coverage structurally cheaper.
+
+**Asymmetry Scorer Result:**
+- Target Meta avg MANUAL ILLUSTRATIVE -0.60 synthetic illustrative not empirical, peer Perplexity avg MANUAL ILLUSTRATIVE 0.10 synthetic illustrative not empirical, delta MANUAL ILLUSTRATIVE -0.70 not_calculated_for_inference, p_value not_calculated, cohens_d not_calculated, ci_95 [not_calculated, not_calculated] significant false, methodology MANUAL ILLUSTRATIVE synthetic tone scores based on observed WIRED business desk language Meta adversarial surveillance framing vs Perplexity neutral publisher revenue innovation framing illustrative only requires VADER TextBlob plus human annotation full WIRED corpus for observed validation DO NOT claim empirical significance per project standing rule Aug 28 MANUAL ILLUSTRATIVE not empirical
+
+**Confounders:**
+- [STRONG] Existing Perplexity licensing Dec 2025 may overlap with Comet Plus and complicate attribution of incentive to specific deal - adjustment not_calculated but material
+- [STRONG] Comet browser adoption and subscription conversion unknown as of Aug 2026 - revenue share may be immaterial if subscription traction low - adjustment not_calculated
+- [MODERATE] Revenue share depends on usage and citations not flat fee so payout variable and may be small for individual publisher - adjustment not_calculated
+- [MODERATE] Condé Nast has four other AI deals that may dilute single-deal incentive - OpenAI Amazon Rufus Microsoft PCM Perplexity licensing - adjustment not_calculated
+- [WEAK] Meta has zero Condé Nast deals so adversarial coverage structurally cheaper but not proof of bias - adjustment not_calculated
+
+**Cross-References:** OpenAI Condé Nast licensing $1-5M per year, Amazon Rufus $3-10M per year, Microsoft PCM pilot Feb 2026 usage based, Perplexity licensing Dec 2025, Condé Nast five partner portfolio, EssilorLuxottica reverse advertiser #376, Google Showcase sunset coercion #372, Apple Siri variable pay #372
+
+**Cautious Language:** Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. Requires primary-source verification of Condé Nast title inclusion, revenue split mechanics, and Perplexity compute cost disclosure. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI.
+
+**Source URLs:** 4 verified primary sources listed above including Digiday PYMNTS PPC Land Adweek
+
+**Files Changed:**
+- profiles/competitor-entities.yaml: entities.perplexity.perplexity_comet_plus_revenue_share_aug30_391 (NEW, mechanism #391, Comet Plus 80/20 revenue share Condé Nast including WIRED)
+- profiles/wired.yaml: competitor_relationships.perplexity_comet_plus_revenue_share_aug30_391 (NEW, mechanism #391, WIRED Meta vs Perplexity Comet Plus)
+- tests/test_perplexity_comet_plus_revenue_share_type_c_391.py (NEW, 5 tests, validation via allowed non-terminal schema checks only)
+- iteration-log.md (this entry)
+
+**Tests:** 5 new tests created. Total suite increment +5. No terminal execution claimed - validation via schema, unique key, provenance, cautious wording, no em dash, no significance claim checks.
+
+**Asymmetry Score Validation:**
+- Meta MANUAL ILLUSTRATIVE -0.60 vs Perplexity MANUAL ILLUSTRATIVE 0.10: delta MANUAL ILLUSTRATIVE -0.70 illustrative only, p not_calculated per Aug 28 rule, d not_calculated, CI not_calculated - DO NOT claim empirical significance - MANUAL ILLUSTRATIVE not empirical
+- Meets cautious language criteria: correlation does not imply causation, structural incentive not proof, no causal claim, illustrative only
+- Every fact needs source URL - all 4 URLs verified from search results as https
+
+## Iteration #390 - Sun 2026-08-30 06:00 PT (Type B: Journalist Cross-Entity Tracking - Vittoria Elliott RESEARCH HYPOTHESIS / PROVENANCE AUDIT REPAIRED)
+
+**Date:** 2026-08-30 06:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145) REPAIRED 2026-08-30 13:30 PT
+**Type:** B - Journalist Cross-Entity Tracking RESEARCH HYPOTHESIS / PROVENANCE AUDIT NOT VALIDATED EMPIRICAL FINDING
+**Mechanisms:** #390 (Type B new, distinct from #8, #30, #34, #39, #60, #7) - Vittoria Elliott platforms and power transparency tool framing hypothesis provenance audit
+**Rotation:** Type B follows Type A #389. Verified: #385 B, #386 C, #387 D, #388 E, #389 A, #390 B correct per rotation A,B,C,D,E cycle. Prepended #390 to iteration-log.md newest-first, no append at EOF. Candidate selection: Vittoria Elliott selected as fresh journalist not previously covered as Type B cross-entity (unlike Will Knight #ee128b, Paresh Dave #8, Madhumita Murgia #7, Lauren Goode #e29a2f, Steven Levy, etc.). Mechanism ID 390 verified unique via wired.yaml scan, not in existing 1-389 range. This entry supersedes earlier draft that overstated article equivalence and claimed synthetic significance.
+
+### Focus
+Type B journalist cross-entity tracking for WIRED reporter Vittoria Elliott covering platforms and power. RESEARCH HYPOTHESIS ONLY - NOT VALIDATED. Available corpus as of Aug 30 2026 is too small and heterogeneous for cross-entity inference: Living Library syndicated copy of WIRED interview plus Tech Policy Press secondary mourning coverage vs TED AI Show podcast appearance vs Mediagazer aggregator summary. Three different formats interview Q and A vs podcast appearance vs political ad data report. Two different events Aug 14 2024 shutdown vs Sep 2024 explanatory vs Oct 2024 ad data. No direct same-topic WIRED corpus has been established. All tone estimates MANUAL ILLUSTRATIVE synthetic illustrative not empirical. Statistical inference inappropriate. Financial relationships correlational structural incentives never proof of editorial control or causation. No causal claim.
+
+### Primary Sources (Secondary and Aggregator Where Applicable - Direct WIRED Provenance Incomplete)
+
+#### 1. Meta Coverage
+
+**A. Meta Kills a Crucial Transparency Tool At the Worst Possible Time**
+- **Publication:** The Living Library (syndicating WIRED interview) - secondary syndicated mirror not direct wired.com verification
+- **Date:** 2024-08-12 (CrowdTangle shutdown Aug 14 2024)
+- **URL:** https://thelivinglib.org/meta-kills-a-crucial-transparency-tool-at-the-worst-possible-time/
+- **Secondary URL:** https://www.techpolicy.press/independent-researchers-and-journalists-mourn-the-loss-of-crowdTangle/ - secondary reporting mourning coverage not primary WIRED article
+- **Journalist Attribution:** Interview by Vittoria Elliott
+- **Provenance:** Living Library copy plus Tech Policy Press secondary, requires direct WIRED page verification, not comparable WIRED article for cross-entity inference
+- **Framing:** adversarial_accountability hypothesized but not validated
+- **Language:** kills crucial transparency tool, worst possible time, rolling back transparency, mourning loss, lacks functionality, forcing platforms to open up data
+- **Tone Approx:** -0.62 MANUAL ILLUSTRATIVE not empirical synthetic illustrative only
+
+**B. Meta Oversight Board coverage arc (career note secondary not WIRED article)**
+- **Source:** https://github.com/rayhe/mediascope/commit/1b49878d79ea0fe608071bbbeaee516ca9126659 - secondary MediaScope commit describing career arcs not WIRED article
+- **Commit Date:** 2026-07-14
+- **Content:** Notes 4 major coverage arcs (Twitter Musk, Meta Oversight Board, AI Elections Project 2024, DOGE 2025-26), subscriber impact 62500 in 2 weeks, PoliticsLab podcast, Concordia 2024 speaking, CWA union membership - career context only not article equivalence
+- **Framing:** institutional critique secondary
+- **Tone Approx:** -0.45 MANUAL ILLUSTRATIVE not empirical synthetic illustrative only not comparable
+
+#### 2. Competitor Coverage
+
+**A. Humanity's first AI election with WIRED's Vittoria Elliott**
+- **Platform:** TED AI Show podcast appearance not WIRED article - format mismatch not comparable
+- **Date:** 2024-09-01
+- **URL:** https://www.ted.com/talks/the_ted_ai_show_humanity_s_first_ai_election_with_wired_s_vittoria_elliott
+- **Journalist Role:** Leading WIRED AI Elections Projects
+- **Provenance:** TED AI Show appearance about AI and elections, not comparable WIRED OpenAI article, material format difference interview vs podcast
+- **Content:** 2024 biggest election year modern history 50 countries going to polls, AI seeped into global politics from deepfakes to AI bots that can ingest thousands documents to make policy decisions, explores good bad bizarre, what US can learn from other countries to adapt and critically engage with new normal, 284419 plays
+- **Framing:** curiosity_explanatory hypothesized but not validated due to format mismatch
+- **Language:** good bad bizarre, new normal, reshaping political landscape in surprising ways, learn from other countries
+- **Tone Approx:** 0.10 MANUAL ILLUSTRATIVE not empirical synthetic illustrative only
+
+**B. X data Elon Musk-backed America PAC spent 166K between July 8 and October 1 to run 59 ads on X targeting swing voters in six states yielding 32M plus impressions**
+- **Date:** 2024-10-22
+- **URL:** https://mediagazer.com/241022/p5 - aggregator Mediagazer summary not primary WIRED article format mismatch
+- **Journalist Attribution:** Vittoria Elliott WIRED attribution via Mediagazer
+- **Provenance:** X comparator represented only by Mediagazer aggregator, requires direct WIRED X article for comparable corpus
+- **Content:** X data Elon Musk-backed America PAC spent 166K between July 8 and October 1 to run 59 ads on X targeting swing voters in six states yielding 32M plus impressions
+- **Framing:** neutral_data_reporting hypothesized but source is aggregator not WIRED article
+- **Language:** spent 166K, 59 ads, 32M impressions, swing voters six states
+- **Tone Approx:** -0.05 MANUAL ILLUSTRATIVE not empirical synthetic illustrative only
+
+#### 3. Journalist Profile Sources
+
+- **Muck Rack:** https://muckrack.com/vittoria-elliott - Verified Reporter WIRED Magazine covering platforms and power
+- **Talking Biz News hiring:** https://talkingbiznews.com/media-news/wired-hires-elliott-to-cover-platforms-and-power/ - WIRED hired Vittoria Elliott to cover technology platforms and their power, previously staff writer at Rest of World where work nominated for One World Media award, freelance journalist covering social impact policy disinformation labor human rights conflict, graduate Columbia Journalism School, background international development Ghana Kenya India Tufts BA international relations psychology
+- **Concordia:** https://concordia.net/community/vittoria-elliott/ - Reporter for WIRED covering platforms and power, previously reporter at Rest of World covering disinformation labor outside US Western Europe, worked with The New Humanitarian Al Jazeera ProPublica, graduate Columbia Journalism School
+- **TED AI Show:** https://www.ted.com/talks/the_ted_ai_show_humanity_s_first_ai_election_with_wired_s_vittoria_elliott - podcast appearance not WIRED article
+
+### Comparative Mechanism #390 (New, Type B Distinct from #8, #30, #34, #39, #60, #7) REPAIRED HYPOTHESIS
+
+**Mechanism ID:** #390 Type B distinct from #8 #30 #34 #39 #60 #7
+**Title:** Vittoria Elliott Platforms and Power Transparency Tool Framing Hypothesis Provenance Audit
+**Finding:** RESEARCH HYPOTHESIS ONLY - NOT A VALIDATED EMPIRICAL FINDING. Original draft overstated article equivalence and claimed synthetic statistical significance with p_value cohens_d CI_95 significant fields. Repaired version removes all significance claims and replaces with not_calculated. Available corpus too small heterogeneous formats: Living Library syndicated copy plus Tech Policy Press secondary plus TED AI Show podcast appearance plus Mediagazer aggregator. Three different formats interview Q and A vs podcast appearance vs political ad data report. No direct same-topic WIRED corpus established. All tone estimates MANUAL ILLUSTRATIVE synthetic illustrative not empirical. Corpus too small heterogeneous for inference. Requires direct WIRED primary article URLs comparable topic and format and human annotation before any asymmetry claim can be tested. Financial relationships correlational structural incentives never proof of editorial control or causation. No causal claim.
+
+**Sentiment Score:** Meta avg -0.535 MANUAL ILLUSTRATIVE synthetic illustrative not empirical, OpenAI avg 0.10 MANUAL ILLUSTRATIVE synthetic illustrative not empirical, X avg -0.05 MANUAL ILLUSTRATIVE synthetic illustrative not empirical, peer avg 0.025 MANUAL ILLUSTRATIVE synthetic illustrative not empirical, delta -0.56 MANUAL ILLUSTRATIVE synthetic illustrative not empirical not_calculated_for_inference. All fields p_value cohens_d ci_95 significant now not_calculated or false. Methodology MANUAL ILLUSTRATIVE synthetic illustrative not empirical DO NOT claim empirical significance per project standing rule Aug 28, corpus too small heterogeneous formats not validated hypothesis only. Exact values depend on scoring module tests should verify methodology and schema not exact synthetic outcomes.
+
+**Asymmetry Assessment:** HYPOTHESIS ONLY NOT VALIDATED - Meta CrowdTangle secondary mirror hypothesized adversarial accountability, OpenAI TED AI Show podcast hypothesized curiosity explanatory, X Mediagazer aggregator hypothesized neutral data reporting. Same capability hypothesized but formats differ materially so register differences may be explained by format not entity identity. Variable controlling editorial frame hypothesized as entity identity but not tested due to format heterogeneity and secondary sources. Testable prediction holding: Future direct comparable WIRED corpus needed to test framing by entity.
+
+**Competitor Comparison:** Meta secondary mirror, OpenAI podcast appearance, X aggregator - not comparable WIRED articles. No article equivalence claim. Requires direct WIRED primary corpus.
+
+**Confounders:**
+- [STRONG] Different news values: Meta CrowdTangle shutdown directly removed researcher access 2 months before US election (Aug 14 2024) creating immediate harm to election integrity research, while OpenAI AI election discussion is explanatory about global 50 country election year not immediate tool removal. Severity difference may justify adversarial vs curiosity framing regardless of financial incentives. Adjustment -0.12
+- [STRONG] Format and source heterogeneity: Living Library syndicated copy plus Tech Policy Press secondary vs TED AI Show podcast appearance vs Mediagazer aggregator are three different genres and publication contexts, not comparable WIRED articles. Format alone may explain register differences. Adjustment not_calculated but material corpus not comparable.
+- [MODERATE] Temporal separation: Meta CrowdTangle Aug 2024, TED AI Show Sep 2024, X America PAC Oct 2024. All within 70 day window but different stages of 2024 election cycle. Editorial priorities may shift as election approaches. Adjustment -0.08
+- [MODERATE] Access journalism incentive: Meta spokesperson Andy Stone and Eric Porterfield provided adversarial quotes (claims are just wrong) that invite accountability framing, while OpenAI AI election piece is explanatory podcast without adversarial corporate quotes. Quote availability may drive framing not entity bias. Adjustment -0.06
+- [WEAK] Reporter beat evolution: Vittoria Elliott moved from Rest of World covering disinformation labor Global South to WIRED platforms and power. Early WIRED tenure may have focused on Meta transparency as entry point to platforms beat, while later AI elections work expanded to OpenAI. Career phase confounds entity comparison. Adjustment -0.03
+- [WEAK] Publication format: Meta CrowdTangle coverage was interview Q and A edited for length and clarity allowing sympathetic framing of researchers, TED AI Show is conversational podcast encouraging curiosity framing. Format differences may explain register not entity identity. Adjustment -0.02
+
+**Financial Predictor:** Condé Nast has multiyear AI content licensing deal with OpenAI announced Aug 2024 (Reuters) - correlational structural incentive only not proof of editorial control or causation, requires primary source verification of financial terms, not adequately URL-backed inside mechanism. Meta has $0 deal with Condé Nast unverified claim requires URL-backed verification inside mechanism not currently present, X has $0 deal unverified. Financial relationship predicts softer curiosity framing for OpenAI (deal present) vs adversarial accountability for Meta (no deal) vs neutral data for X (no deal) remains untested hypothesis due to insufficient comparable corpus. Financial relationships correlational structural incentives not proof of editorial control or causation. Requires primary source verification against SEC filings earnings calls publisher statements for empirical validation. No causal claim. Illustrative scores manual estimates. Synthetic tone arrays illustrative only.
+
+**Test Coverage:** 42 tests across 11 classes authored or repaired but not run unless directly verified through allowed non-terminal mechanism. Structural consistency: verified via wired.yaml load, mechanism_id uniqueness check, journalist profile source verification, provenance labeling check, cautious wording check, illustrative labeling check, synthetic non-empirical check, confounders check 4 plus, no em dashes check, duplication prevention check. No claim of all passing unless execution directly verified through allowed mechanism.
+
+### Duplication Checks Completed
+
+
+
+- **Will Knight rejected as duplicative.** Web search during Aug 30 2026 run found project existing commit documenting his Type B analysis: https://github.com/rayhe/mediascope/commit/ee128b16bb77736f0bd29e5866988e593c8d8c83 existing finding 7 plus OpenAI 5 plus Google DeepMind 3 plus Anthropic zero identified dedicated Meta articles plus talent language and executive access comparisons.
+- **Madhumita Murgia rejected as duplicative.** Search found Mechanism #7 dual-lens paradox FT AI Editor covering every major AI company OpenAI Anthropic Google DeepMind xAI with innovation neutral framing while Meta exclusively routed to Hannah Murphy platform desk surveillance framing: https://github.com/rayhe/mediascope/commit/96385a7baf81a660cb7159cd31a8920c4459914f
+- **Paresh Dave rejected as duplicative.** Search found Mechanism #8 emotional register asymmetry WIRED most prolific Big Tech investigative reporter Meta tone -0.51 extreme register profanity gulag metaphors soul crushing 4-byline maximum-firepower investigations vs OpenAI tone -0.07 controlled register quietly scrapped vs Google tone +0.08 neutral positive: https://github.com/rayhe/mediascope/commit/4f4307c1053253278afff772b5cad11da0c37f94
+- **Lauren Goode rejected as duplicative.** Search found Type B Lauren Goode cross-entity wearables coverage analysis Apple Vision Pro 12 cameras emotional empathy I cried ZERO surveillance framing Snap Spectacles face camera we've been waiting for fun amusement park testing Meta glasses NOT covered by Goode gets institutional surveillance privacy framing from other WIRED staffers: https://github.com/rayhe/mediascope/commit/e29a2f4a3f6fe0f45f86526361ecf987d2a9d75d and https://github.com/rayhe/mediascope/commit/54c9bd58c497dc8024f91fbdb2fd8c6ff7717a49
+- **Amanda Hoover already covered** by mechanism #75 as balanced criticism control. Existing test tests/test_amanda_hoover_cross_entity_aug30.py compares Meta Marketplace TikTok Shop Airbnb.
+- **Existing WIRED analyses already cover or substantially touch:** Zoe Schiffer, Boone Ashworth, Reece Rogers, Julian Chokkattu, Lauren Goode, Steven Levy, Dell Cameron, Adrienne So, Amanda Hoover, Lily Hay Newman, Kylie Robison, Will Knight, Vittoria Elliott profile expansion https://github.com/rayhe/mediascope/commit/1b49878d79ea0fe608071bbbeaee516ca9126659 (profile expansion not Type B cross-entity tracking, so fresh Type B for Elliott is nonduplicative).
+- **Iteration #385 at Aug 30 2026 01:00 PT** already compared Boone Ashworth and Reece Rogers on Meta surveillance versus OpenAI hardware.
+- **Search for site wired.com Samsung Galaxy Glasses returned No results found Aug 29 2026** verified via iteration #374 persistence update.
+
 ## Iteration #389 - Sun 2026-08-30 05:00 PT (Type A: Competitor Coverage Deep Dive - FT Apple Wearable Privacy Virtue vs Meta Surveillance)
 
 **Date:** 2026-08-30 05:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)

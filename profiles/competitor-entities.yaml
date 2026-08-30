@@ -7306,6 +7306,73 @@ entities:
       note: Regent's Lovable investment press release published via its own Military Times property.
     - url: https://mergr.com/investor/regent
       note: Mergr profile showing 28 transactions, 26 portfolio companies.
+  perplexity:
+    display_name: Perplexity AI
+    aliases:
+    - Perplexity
+    - Comet
+    - Comet Plus
+    regex: \b(Perplexity|Comet(\s+Plus)?)\b
+    category: ai_lab
+    ceo: Aravind Srinivas
+    perplexity_comet_plus_revenue_share_aug30_391:
+      mechanism_id: 391
+      title: Perplexity Comet Plus 80/20 Revenue Share with Condé Nast
+      type: C
+      type_label: financial_incentive_mapping
+      iteration: 391
+      pattern: subscription_revenue_share
+      status: provisional
+      risk_level: medium
+      first_observed: 2025-10-14
+      observed_date: 2026-08-30
+      entity: perplexity
+      competitor_scope: [openai, anthropic, meta, google, amazon, microsoft]
+      publisher_scope: [wired]
+      financial_tie:
+        program: Comet Plus
+        revenue_split: 80_percent_publisher_20_percent_perplexity
+        launch_date: 2025-10-14
+        partners_include: Condé Nast titles including WIRED
+        other_partners: Time, Fortune, Los Angeles Times, Gannett, Der Spiegel
+        subscription_model: user_pays_perplexity_pays_publishers_based_on_usage_and_citations
+        existing_perplexity_licensing: Dec 2025 undisclosed terms separate from Comet Plus
+        condé_nast_portfolio_count: 5_ai_licensing_partners_as_of_aug2026
+      correlational_note: This mapping describes a structural financial incentive where Perplexity pays Condé Nast via Comet Plus revenue share. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.
+      wired_coverage_context:
+        - wired_has_reported_on_perplexity_licensing
+        - no_claim_of_bias_without_comparable_corpus
+      cautious_language_required: true
+      tone_analysis:
+        wired_tone_on_perplexity_comet_plus: MANUAL ILLUSTRATIVE - neutral to slightly positive on publisher revenue innovation pending subscription traction
+        tone_basis: headline and summary framing in secondary reporting
+        comparative_tone: not_calculated
+      statistical_claims:
+        significance: not_calculated
+        comparable_corpus: not_available
+        effect_size: not_calculated
+      confounders:
+        - existing_perplexity_licensing_dec2025_may_overlap_with_comet_plus_and_complicate_attribution
+        - comet_browser_adoption_and_subscription_conversion_unknown_as_of_aug2026
+        - revenue_share_depends_on_usage_and_citations_not_flat_fee_so_payout_variable
+        - condé_nast_has_four_other_ai_deals_openai_amazon_rufus_microsoft_pcm_perplexity_licensing_may_dilute_single_deal_incentive
+        - meta_has_zero_condé_nast_deals_so_adversarial_coverage_structurally_cheaper_but_not_proof_of_bias
+      cross_references:
+        - openai_condé_nast_licensing_1to5M_per_year
+        - amazon_rufus_3to10M_per_year
+        - microsoft_pcm_pilot_feb2026_usage_based
+        - perplexity_licensing_dec2025
+        - condé_nast_five_partner_portfolio
+      source_urls:
+        - https://digiday.com/media/how-perplexity-new-revenue-model-works-according-to-its-head-of-publisher-partnerships/
+        - https://www.pymnts.com/artificial-intelligence-2/2025/perplexity-launches-subscription-program-that-includes-revenue-sharing-with-publishers/
+        - https://ppc.land/perplexity-announces-comet-plus-with-major-news-publishers/
+        - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+      validation:
+        schema: pending
+        unique_key_check: pending
+        mechanism_id_unique: pending
+        provenance: url_backed
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
