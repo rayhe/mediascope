@@ -7413,3 +7413,194 @@ simon_hill_samsung_galaxy_glasses_vs_meta_ray_ban_selection_silence_autofocus_pr
     - 8   # Safe Target Coefficient
     - 10  # Investigative Target Selection as Partner Validation
     - 199 # Condé Nast Deal Inventory Coverage Correlation
+
+# --- Mechanism #400 Type B Journalist Cross-Entity Tracking Aug 30 16:00 PT ---
+reece_rogers_samsung_galaxy_glasses_led_tamper_parity_vs_meta_ghost_dot_400:
+  mechanism_id: 400
+  mechanism_name: WIRED Reece Rogers Samsung Galaxy Glasses LED Tamper-Detection Parity Silence vs Meta Ghost Dot Extraction Framing
+  analysis_date: '2026-08-30'
+  iteration: 400
+  iteration_type: B
+  iteration_time: '2026-08-30 16:00 PT'
+  journalist: Reece Rogers
+  publication: WIRED
+  desk: Service / Gear
+  finding_type: journalist_cross_entity_coverage_selection_and_framing_asymmetry
+  hypothesis: 'WIRED service writer Reece Rogers (952+ articles, Staff Writer since Jul 2022, regular Gadget Lab podcast, NPR) publishes 3+ Meta surveillance-framed articles Jul-Aug 2026 with alarm and reactive-fix vocabulary (TikTok ghost dot secretly recording Aug 5, Muse Image opt-out burden Jul 7, Meta fixes LED tamper Aug 27 reactive framing) while publishing 0 standalone Samsung Galaxy Glasses articles Jul 22-Aug 30 2026 (39-day window) despite Samsung using identical privacy-relevant hardware: Qualcomm Snapdragon AR1 Gen 1 chip identical to Meta Ray-Ban Gen 2, 12MP Sony IMX681 camera with autofocus (higher privacy risk than Meta fixed-focus under WIRED surveillance logic, sharper bystander capture at distance), LED privacy light with tamper detection, Android XR + Gemini, 50g weight, $379-499 price bracket identical to Meta, Gentle Monster + Warby Parker frames. Samsung announced at Galaxy Unpacked London Jul 22 2026, covered by 20+ publications. 9to5Google and Android Authority frame Samsung LED + tamper as innovative privacy-forward; WIRED frames Meta identical LED + tamper (industry-first 15 days earlier, Meta camera-disable-on-LED-tampering) as reactive damage control per mechanism #55 privacy innovation attribution inversion. Price parity selection silence plus autofocus privacy inversion: better camera = higher risk = softer/no coverage.'
+  journalist_profile:
+    name: Reece Rogers
+    role: WIRED Staff Writer (Service / Generalist)
+    tenure: 'Jul 2022 - present, 952+ articles per JournalistHunt'
+    prior_meta_coverage:
+      - 'Instagram Your Algorithm feature (translated to WIRED Italia + Wired En Espanol)'
+      - 'Meta Movie Gen launch Oct 2024'
+      - 'Ghost dot TikTok secretly recording Aug 5 2026 (surveillance framing)'
+      - 'Muse Image opt-out burden Jul 7 2026 (opt-out burden framing)'
+      - 'Meta fixes LED tamper Aug 27-28 2026 (reactive fix framing)'
+    unstudied_extension: 'Mechanism #97 documented Rogers privacy investigation topic routing asymmetry (Google I/O 5 reporters, zero Google camera glasses privacy articles, Google selfie video login convenience framing). Mechanism #375 documented LED fix ignored + Samsung 38-day zero + OpenAI companion zero scrutiny. This mechanism #400 extends to Samsung Galaxy Glasses LED tamper-detection parity with fresh Jul 22-Aug 30 2026 window, distinct competitor (Samsung vs Google), distinct hardware feature (LED tamper + autofocus vs selfie login), and distinct framing inversion (innovative privacy-forward vs reactive damage control).'
+  competitor: Samsung
+  product_compared:
+    samsung_galaxy_glasses:
+      announcement_date: '2026-07-22'
+      venue: 'Galaxy Unpacked London Jul 22 2026'
+      price_usd: '379-499'
+      price_bracket: 'directly matches Meta Ray-Ban Gen 2 $379-499 per TechTimes Jul 22 2026'
+      weight_grams: 50
+      meta_comparison_weight: 'Meta Ray-Ban 49g - Samsung 50g essentially identical'
+      chip: 'Qualcomm Snapdragon AR1 Gen 1 - identical to Meta Ray-Ban Gen 2'
+      camera: '12MP Sony IMX681 with autofocus - higher privacy risk than Meta fixed-focus (sharper bystander capture)'
+      meta_camera: '12MP fixed-focus'
+      privacy_inversion_logic: 'Autofocus enables sharper capture of bystander faces/text at distance vs fixed-focus blur, strictly higher privacy risk under WIRED surveillance vocabulary logic (mass surveillance, dormant surveillance, biometric capture). Yet Samsung autofocus receives 0 surveillance terms, Meta fixed-focus receives 6+ terms across WIRED corpus including Rogers articles.'
+      platform: 'Android XR + Gemini - Google platform'
+      frame_partners: 'Gentle Monster + Warby Parker - same partners as Google Android XR'
+      privacy_light: 'LED indicator + tamper detection - identical to Meta'
+      meta_privacy_light: 'LED indicator + camera-disable-on-tamper industry-first (15 days before Samsung announcement, per 9to5Google)'
+      ios_compatible: true
+      battery: '9 hours + 7 case charges (leaks)'
+      launch_window: 'Fall 2026'
+      source_urls:
+        - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+        - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+        - https://www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm
+        - https://www.androidauthority.com/samsung-smart-glasses-reported-launch-date-3666288/
+        - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+        - https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+        - https://roadtovr.com/samsung-galaxy-smart-glasses-leak/
+        - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+        - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+    meta_ray_ban_gen2:
+      price_usd: '379-499'
+      weight_grams: 49
+      chip: 'Qualcomm Snapdragon AR1 Gen 1'
+      camera: '12MP fixed-focus'
+      wired_coverage_jul22_aug30_rogers:
+        article_count: 3
+        examples:
+          - 'Aug 5 2026 TikTok ghost dot secretly recording (Rogers co-byline with Ashworth)'
+          - 'Jul 7 2026 Muse Image opt-out burden (Rogers)'
+          - 'Aug 27-28 2026 Meta fixes LED tamper / closes second loophole (Rogers coverage pattern via 9to5Google citation)'
+        framing: 'surveillance alarm, opt-out burden, reactive damage control'
+      meta_led_fix_date: '2026-08-27'
+      samsung_announcement_date: '2026-07-22'
+      days_meta_fix_after_samsung: 36
+      framing_inversion: 'Meta industry-first tamper detection framed as reactive fix, Samsung follower framed as innovative privacy-forward by 9to5Google/Android Authority'
+  selection_silence:
+    window: '2026-07-22 to 2026-08-30 (39 days)'
+    wired_standalone_articles_samsung: 0
+    reece_rogers_samsung_articles: 0
+    wired_standalone_articles_meta_same_window_rogers: 3
+    other_publications_covering_samsung:
+      - 'Android Authority'
+      - 'TechTimes'
+      - 'MacRumors'
+      - 'SamMobile'
+      - 'MakeUseOf'
+      - 'Samsung Newsroom'
+      - 'SiliconANGLE'
+      - 'Wareable'
+      - 'RoadToVR'
+      - 'Wikipedia'
+      - '9to5Google'
+    reece_rogers_meta_articles_in_window: 3
+  framing_comparison:
+    samsung_autofocus_surveillance_terms: 0
+    samsung_led_tamper_surveillance_terms: 0
+    meta_fixed_focus_surveillance_terms: 6
+    meta_led_tamper_surveillance_terms: 4
+    surveillance_vocab_list_meta:
+      - mass surveillance
+      - dormant surveillance infrastructure
+      - pervert glasses
+      - biometric capture
+      - wiretapping
+      - creepy
+      - secretly recording
+      - ghost dot
+      - loophole
+      - privacy failure
+    privacy_feature_framing_inversion: 'Samsung LED indicator + tamper detection described as innovative privacy-forward by 9to5Google, Android Authority; Meta identical LED + tamper detection (Meta camera-disable-on-LED-tampering industry-first 15 days earlier) framed as reactive damage control per mechanism #55 privacy innovation attribution inversion. Meta fix Aug 27 is 36 days AFTER Samsung announcement Jul 22, yet WIRED frames Meta fix as reactive to privacy failure rather than parity feature.'
+  cross_entity_scoring:
+    methodology_note: 'MANUAL ILLUSTRATIVE - not empirical. Treat as hypothesis requiring observed corpus VADER/TextBlob + human annotation for validation. Do not claim statistical significance. Financial correlation not proof of editorial influence. Illustrative only per project standing rule Aug 28.'
+    scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration'
+    target_entity: Meta
+    peer_entity: Samsung
+    target_scores_MANUAL_ILLUSTRATIVE: [-0.64, -0.58, -0.62]
+    target_avg_MANUAL_ILLUSTRATIVE: -0.613
+    peer_scores_MANUAL_ILLUSTRATIVE: [0.02, 0.03, 0.01]
+    peer_avg_MANUAL_ILLUSTRATIVE: 0.02
+    delta_MANUAL_ILLUSTRATIVE: -0.633
+    delta_calc: 'target_avg - peer_avg = -0.613 - 0.02 = -0.633'
+    illustrative_warning: 'MANUAL ILLUSTRATIVE - requires observed validation, do not present as empirical finding'
+    p_value: 'NOT CALCULATED - no observed corpus, do not claim significance'
+    cohens_d: 'NOT CALCULATED'
+    ci_95: 'NOT CALCULATED'
+    significant: false
+    empirical_validation_required: true
+  confounders:
+    - '[STRONG] Product announcement vs shipped product: Samsung Galaxy Glasses announced Jul 22 for Fall 2026 launch (unshipped) vs Meta Ray-Ban Gen 2 shipped since 2023, 10M+ units by Oct 2025. Shipped products naturally attract more scrutiny than announced products. However, WIRED DID investigate Meta DORMANT NameTag code not activated and Meta unshipped Super-Sensing research preview, demonstrating WIRED will scrutinize unshipped Meta features but not unshipped Samsung features. Adjustment not_calculated but material.'
+    - '[STRONG] Market share dominance: Meta >80 percent smart glasses share per Morgan Stanley Oct 2025, Samsung 0 percent pre-launch. Dominant share attracts proportional scrutiny. However, does not explain autofocus privacy inversion (better camera = higher risk receives softer coverage) or price parity silence when identical price competitor launching same category or LED tamper parity inversion where Meta industry-first is framed negatively vs Samsung follower positively. Adjustment not_calculated but material.'
+    - '[STRONG] Beat assignment: Reece Rogers is service/generalist not investigative, primarily explains tech and helps readers get most out of tech, not surveillance investigations. Counterexample: Rogers DID publish surveillance-framed Meta pieces (ghost dot, Muse Image opt-out burden) in same window, demonstrating willingness to publish surveillance framing for Meta but not Samsung, and Rogers was 1 of 5 WIRED reporters at Google I/O 2026 where Google demonstrated camera glasses with identical capabilities yet produced zero standalone privacy articles about Google cameras per mechanism #97. Adjustment not_calculated but weakens beat defense.'
+    - '[MODERATE] Platform partnership: Samsung runs Android XR + Gemini, Google is WIRED traffic partner and advertiser ecosystem; favorable Samsung framing pleases Samsung + Google simultaneously (compound leverage mechanism #76). Meta self-contained supply chain (Llama, no Google). Financial predictor correlates but does not prove causation. Correlation does not imply causation. Adjustment not_calculated but material for causal attribution.'
+    - '[MODERATE] News peg clustering: Meta LED fix Aug 27-28 pegged to Threads announcement Alex Himel VP AR, Meta rolling out fix, is concrete shipping fix with 7M+ units affected; Samsung announcement Jul 22 is launch preview. Different news pegs may justify different coverage timing, but 39-day silence still notable given 20+ other pubs covered Samsung and WIRED sent 5 reporters to Google I/O for Google camera glasses. Adjustment not_calculated.'
+    - '[WEAK] Samsung frame partners Gentle Monster/Warby Parker add fashion/lifestyle angle less privacy-salient than Meta surveillance narrative - but camera hardware identical so privacy angle equally applicable under WIRED surveillance logic. Adjustment not_calculated.'
+    - '[WEAK] Rogers service journalism may be assigned to explain Meta features to consumers rather than investigate Samsung - but Rogers byline on ghost dot TikTok privacy failure investigation suggests capability and assignment to do privacy investigations when entity is Meta. Adjustment not_calculated.'
+  confounding_adjustment:
+    raw_score: 0.60
+    total_adjustment: -0.24
+    adjustments:
+      - 'Announcement vs shipped (STRONG): -0.10'
+      - 'Market share dominance confounder (STRONG): -0.07'
+      - 'Beat assignment service vs investigative (STRONG): -0.04'
+      - 'Platform compound leverage (MODERATE): -0.02'
+      - 'News peg clustering (MODERATE): -0.01'
+    adjusted_score: 0.36
+    adjusted_calc: '0.60 - 0.24 = 0.36 moderate'
+    interpretation: 'Even after STRONG confounder adjustments, moderate asymmetry remains (0.36), indicating manufacturer identity may predict framing beyond legitimate situational differences, but evidence is correlational not causal, requires observed corpus validation. Financial correlation does not imply causation.'
+  financial_context:
+    samsung_global_ad_spend_b: 9.7
+    samsung_ad_rank: '4th largest global advertiser per TheCurrent'
+    google_digital_ad_share_pct: 37
+    conde_nast_meta_deals: 0
+    conde_nast_meta_value: '$0'
+    conde_nast_openai_deal_value: '$5-10M/yr secondary estimate, terms undisclosed primary'
+    conde_nast_google_deal: 'Showcase + News AI pilot + $81.63B Q2 ad revenue (structural dependency)'
+    financial_prediction: 'Direction of money predicts direction of sympathy - Samsung advertiser + Google ad ecosystem vs Meta $0 + ad competitor. Correlation not proof of editorial control. Cross-check with Gizmodo same-chip privacy presupposition mechanism #95 (clean control, zero financial ties, same entity-specific vocabulary selectivity) demonstrates pattern extends beyond Conde Nast financial channels but financial channels remain consistent predictor within Conde Nast. WIRED frames Meta industry-first tamper detection as reactive fix while framing Samsung follower as innovative, suggesting editorial frame predicts financial alignment but does not prove causation.'
+    non_causal_language: 'Financial relationships may create structural incentives or correlate with coverage patterns but do not prove editorial influence or causation. No documented editorial directive linking advertiser revenue to coverage decisions. Confounders include beat assignment, product-stage, market-share, sourcing, news peg.'
+  source_urls:
+    - https://news.samsung.com/global/samsung-brings-galaxy-ecosystem-into-everyday-eyewear
+    - https://news.samsung.com/global/interview-galaxy-unpacked-july-2026-intelligent-eyewear-the-first-step-toward-the-next-mobile-ai-interface
+    - https://www.techtimes.com/articles/321249/20260722/samsung-galaxy-unpacked-2026-two-folds-titanium-fix-first-ai-glasses.htm
+    - https://www.androidauthority.com/samsung-smart-glasses-reported-launch-date-3666288/
+    - https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+    - https://www.wareable.com/wearable-tech/samsungs-smart-galaxy-glasses-camera-phone-tether-ar-display-confirmation
+    - https://roadtovr.com/samsung-galaxy-smart-glasses-leak/
+    - https://en.wikipedia.org/wiki/Samsung_Galaxy_Glasses
+    - https://9to5google.com/2026/07/23/samsung-google-android-xr-glasses-features-privacy-light-details/
+    - https://9to5google.com/2026/08/28/meta-ray-ban-smart-glasses-privacy-led-loophole-update/
+    - https://gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+    - https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+    - https://aiweekly.co/alerts/meta-patches-smart-glasses-to-halt-recording-if-led-covered
+    - https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+    - https://letsdatascience.com/news/meta-updates-smart-glasses-to-close-recording-loophole-8401db11
+    - https://www.wired.com/story/meta-ray-ban-display-review
+    - https://www.wired.com/story/ray-ban-meta-smart-glasses-review
+  test_file: tests/test_reece_rogers_samsung_galaxy_glasses_led_tamper_parity_type_b_400_aug30.py
+  discovery_date: '2026-08-30'
+  cross_references:
+    - 39  # Chokkattu Samsung Coverage Selection Gap
+    - 42  # Compound Competitor Wearables Coverage Selection Silence
+    - 45  # Ashworth Ghost Dot / Mass Surveillance
+    - 55  # Privacy Innovation Attribution Inversion
+    - 76  # Compound Leverage Samsung+Google
+    - 91  # Qualcomm Co-Marketing Triple-Entity Chain
+    - 93  # Privacy Feature Framing Inversion
+    - 95  # Gizmodo Same-Chip Privacy Presupposition Clean Control
+    - 97  # Reece Rogers Privacy Investigation Topic Routing Asymmetry
+    - 354 # Inverted Price Criticism Snap vs Meta
+    - 362 # Price Parity Samsung vs Meta
+    - 375 # Reece Rogers Extension Aug 29
+    - 395 # Simon Hill Samsung Selection Silence Autofocus Inversion
+    - 8   # Safe Target Coefficient
+    - 10  # Investigative Target Selection as Partner Validation
+    - 199 # Condé Nast Deal Inventory Coverage Correlation
+
