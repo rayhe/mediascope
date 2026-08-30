@@ -6870,12 +6870,18 @@ vittoria_elliott_cross_entity_aug30:
   - X political ads also affect election integrity but receive neutral not adversarial framing despite 32M impressions targeting swing voters but source is aggregator not WIRED article
   - Genre excuse explains direction but not entity selectivity yet genre is confounded with entity because comparable same-genre WIRED articles have not been established
   provenance_audit:
-    meta_primary_verified: false - Living Library syndicated mirror not direct wired.com verification, Tech Policy Press secondary mourning coverage
-    openai_primary_verified: false - TED AI Show podcast appearance not WIRED OpenAI article, not comparable
-    x_primary_verified: false - Mediagazer aggregator only not primary WIRED X article
-    comparable_corpus_established: false - three different formats interview Q and A vs podcast appearance vs political ad data report, two different events, secondary and aggregator sources
-    statistical_inference_valid: false - corpus too small heterogeneous formats insufficient for t-test effect size CI
-    financial_claims_url_backed: false - Condé Nast OpenAI deal and absence of Meta X deals not adequately URL-backed inside mechanism
+    meta_primary_verified: false
+    meta_primary_verified_note: Living Library syndicated mirror not direct wired.com verification, Tech Policy Press secondary mourning coverage
+    openai_primary_verified: false
+    openai_primary_verified_note: TED AI Show podcast appearance not WIRED OpenAI article, not comparable
+    x_primary_verified: false
+    x_primary_verified_note: Mediagazer aggregator only not primary WIRED X article
+    comparable_corpus_established: false
+    comparable_corpus_established_note: three different formats interview Q and A vs podcast appearance vs political ad data report, two different events, secondary and aggregator sources
+    statistical_inference_valid: false
+    statistical_inference_valid_note: corpus too small heterogeneous formats insufficient for t-test effect size CI
+    financial_claims_url_backed: false
+    financial_claims_url_backed_note: Condé Nast OpenAI deal and absence of Meta X deals not adequately URL-backed inside mechanism
   source_urls:
   - https://thelivinglib.org/meta-kills-a-crucial-transparency-tool-at-the-worst-possible-time/
   - https://www.ted.com/talks/the_ted_ai_show_humanity_s_first_ai_election_with_wired_s_vittoria_elliott
