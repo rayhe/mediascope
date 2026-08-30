@@ -101,7 +101,56 @@ entities:
       ipo_banks_reported:
       - Goldman Sachs
       - Morgan Stanley
-      transparency_inflection: 'When the S-1 becomes public, OpenAI must disclose revenue breakdowns, publisher deal terms, advertising metrics, and cost structure. This is the FIRST TIME publisher content licensing deal values will be verifiable from primary SEC filings rather than press reports. Currently, only News Corp ($250M/5yr) and Axel Springer (~$13M/yr) have publicly reported values - the other 18+ deals remain undisclosed. '
+      transparency_inflection: 'When the S-1 becomes public, OpenAI must disclose revenue breakdowns, publisher deal terms, advertising metrics, and cost structure. This is the FIRST TIME publisher content licensing deal values will be verifiable from primary SEC filings rather than press reports. As of Aug 30 2026, publicly reported values include: News Corp ($250M/5yr), Axel Springer (tens of millions euros over 3-year deal per Bloomberg Law; CB Insights lists $25M+; secondary sources describe tens of millions per year but Bloomberg wording supports tens of millions across deal), Financial Times ($5-10M/yr per WSJ via Digiday timeline, primary Reuters says terms not disclosed), Guardian (undisclosed, spokesperson declined per Digiday, announced scope attributed extracts/summaries with no explicit training-rights mention), Atlantic (undisclosed). Amazon-NYT AI deal $20-25M/yr (WSJ people familiar via Editor & Publisher) provides valuation control for non-OpenAI AI licensing. Most other OpenAI deals remain undisclosed. '
+      publisher_deal_valuation_audit_2026_08_30:
+        financial_times:
+          estimated_value: "$5-10M/yr"
+          cash_terms_disclosed: false
+          valuation_source_type: "secondary_report_based"
+          primary_source: "Reuters Apr 29 2024 - terms not disclosed"
+          secondary_source: "WSJ via Digiday 2024-in-review timeline - $5M-$10M per year"
+          announced_rights_scope: "licensed content for model development and attributed ChatGPT summaries"
+          source_urls:
+            - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
+            - "https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/"
+        guardian:
+          estimated_value: "Undisclosed"
+          cash_terms_disclosed: false
+          announced_rights_scope: "Guardian reporting and archive journalism available as news source in ChatGPT; attributed short summaries and extracts; no explicit training-rights mention in announcement"
+          training_rights_explicit: false
+          in_kind: "ChatGPT Enterprise access"
+          spokesperson_comment: "Declined to disclose terms per Digiday"
+          language_shift: "Announcement wording shifted away from training-data framing similar to Washington Post deal"
+          source_urls:
+            - "https://digiday.com/media/media-briefing-what-the-washington-posts-deal-with-openai-says-about-the-future-of-ai-content-licensing/"
+            - "https://www.engadget.com/ai/the-guardian-is-the-latest-news-organization-to-partner-with-openai-155555243.html?src=rss/"
+            - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+        atlantic:
+          estimated_value: "Undisclosed"
+          cash_terms_disclosed: false
+          announced_date: "2024-05-29"
+          announced_rights_scope: "Licensing plus technology access; not syndication; does not permit reproduction of full articles or lengthy excerpts per TechCrunch"
+          journalist_concern: "Atlantic journalists questioned derivative-work compensation"
+          source_urls:
+            - "https://techcrunch.com/2024/06/22/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-openai/"
+            - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+        axel_springer:
+          estimated_value: "tens of millions euros (3-year deal)"
+          cash_terms_disclosed: false
+          valuation_source_type: "source_familiar_undisclosed_terms"
+          primary_source: "Bloomberg Law - three-year deal worth tens of millions euros per source familiar with undisclosed terms"
+          secondary_claim: "Some secondary sources describe tens of millions per year; Bloomberg wording supports tens of millions across deal, not necessarily per year - do not assert $13M/yr without stronger evidence"
+          cb_insights_listing: "$25M+ (Dec 13 2023)"
+          source_urls:
+            - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+            - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+        nyt_amazon_control:
+          estimated_value: "$20-25M/yr"
+          deal_type: "AI licensing (Amazon, not OpenAI) - valuation control"
+          valuation_source: "WSJ people familiar via Editor & Publisher - $20M-$25M per year, nearly 1% of NYT 2024 revenue"
+          significance: "Useful valuation control for AI licensing market; shows non-OpenAI AI licensing scale"
+          source_url: "https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961"
+        methodology_note: "Publisher-AI deals differ materially in rights scope - attributed search/display access vs model-training rights vs syndication. Financial-incentive scoring must not treat every 'licensing deal' as identical. Distinguish primary 'terms not disclosed' from secondary valuation estimates; label secondary/report-based valuations explicitly."
       source_urls:
       - https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
       - https://www.fool.com/investing/2026/06/28/openai-reportedly-considers-delaying-its-ipo-shoul/

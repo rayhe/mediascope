@@ -14,8 +14,17 @@ ownership_chain:
 revenue_relationships:
   - partner: "OpenAI"
     relationship_type: "licensing"
-    description: "Axel Springer licensing deal with OpenAI for content training"
-    source_url: "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+    estimated_value: "tens of millions euros (3-year deal per Bloomberg Law source familiar)"
+    cash_terms_disclosed: false
+    valuation_source_type: "source_familiar_undisclosed_terms"
+    valuation_note: "Bloomberg Law reported three-year deal worth tens of millions euros based on source familiar with undisclosed terms. CB Insights lists $25M+. Some secondary sources describe tens of millions per year, but Bloomberg wording supports tens of millions across deal. Do not assert precise $13M/yr without stronger evidence."
+    description: "Axel Springer licensing deal with OpenAI for content training and attributed use. Parent company of Business Insider."
+    announced_rights_scope: "Content licensing for training and attributed use; not syndication"
+    source_urls:
+      - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+      - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+      - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+    verification_date: "2026-08-30"
 
 key_journalists:
   - name: "Amanda Hoover"

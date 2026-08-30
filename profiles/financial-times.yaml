@@ -699,12 +699,18 @@ competitor_relationships:
   openai:
     financial_tie: licensing
     estimated_value: $5-10M/yr
+    cash_terms_disclosed: false
+    valuation_source_type: secondary_report_based
+    valuation_primary_source: "Reuters Apr 29 2024 reports terms not disclosed"
+    valuation_secondary_source: "WSJ via Digiday 2024-in-review timeline reports $5M-$10M per year"
     direction: receiving
-    description: 'Content licensing deal signed Apr 2024. FT content appears in ChatGPT
-      with attribution. Jun-Jul 2026 FT OpenAI coverage — $100B funding round growth narrative (Jan 28 FT via PYMNTS),
-      $34B spending growth milestone (Jun 16 FT via Reuters), 5% gov stake benefit-sharing (Jul 2 FT via PYMNTS)
-      all constructive/neutral. Compare Meta equity raise desperation framing (Jun 5 FT, -6.6% stock).'
+    announced_rights_scope: "FT content licensed for model development and attributed ChatGPT summaries; financial terms not disclosed in primary announcement"
+    description: 'Content licensing deal signed Apr 29 2024. FT content appears in ChatGPT with attribution and licensed for model development (per Reuters). Primary Reuters announcement says financial terms not disclosed; secondary valuation $5M-$10M/yr comes from WSJ reporting cited in Digiday 2024 timeline. Jun-Jul 2026 FT OpenAI coverage — $100B funding round growth narrative (Jan 28 FT via PYMNTS), $34B spending growth milestone (Jun 16 FT via Reuters), 5% gov stake benefit-sharing (Jul 2 FT via PYMNTS) all constructive/neutral. Compare Meta equity raise desperation framing (Jun 5 FT, -6.6% stock).'
     source_url: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    source_urls:
+      - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+      - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    verification_date: "2026-08-30"
     coverage_prediction: softer
     recent_coverage_examples_2026_h1_h2:
     - title: OpenAI plans ChatGPT 'superapp' overhaul ahead of listing

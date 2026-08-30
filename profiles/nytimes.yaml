@@ -629,8 +629,10 @@ revenue_relationships:
     source_urls:
       - "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
       - "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
+      - "https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961"
       - "https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/"
       - "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
+    verification_date: "2026-08-30"
 
   - partner: "OpenAI"
     relationship_type: "litigation"

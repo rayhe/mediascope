@@ -528,10 +528,24 @@ revenue_relationships:
   - partner: "OpenAI"
     relationship_type: "licensing_deal"
     estimated_value: "Undisclosed"
-    description: "Strategic partnership announced Feb 19, 2025. Guardian reporting and archive journalism available as news source in ChatGPT. Attributed short summaries and article extracts. Guardian also rolling out ChatGPT Enterprise internally for new products, features, and tools. OpenAI is Meta's #1 AI competitor."
+    cash_terms_disclosed: false
+    in_kind_benefits:
+      - "ChatGPT Enterprise access for internal product development"
+      - "Attributed extracts and summaries in ChatGPT with Guardian as news source"
+    announced_rights_scope: "Guardian reporting and archive journalism available as news source in ChatGPT; attributed short summaries and article extracts; no explicit mention of model training rights in announcement"
+    training_rights_explicit: false
+    valuation_source_type: "primary_undisclosed_with_spokesperson_decline"
+    description: "Strategic partnership announced Feb 14-19, 2025. Guardian reporting and archive journalism available as news source in ChatGPT. Attributed short summaries and article extracts. Guardian also rolling out ChatGPT Enterprise internally for new products, features, and tools. Terms were not disclosed; Guardian spokesperson declined to disclose terms (per Digiday). Announcement language shifted away from training-data framing similar to Washington Post deal — Digiday specifically reported announcement did NOT mention training rights. OpenAI is Meta's #1 AI competitor. Structural distinction: attributed search/display access in ChatGPT is not equivalent to model-training rights."
     date_established: "2025-02"
+    date_announced: "2025-02-14"
     competitive_with: ["Meta"]
     source_url: "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
+    source_urls:
+      - "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
+      - "https://digiday.com/media/media-briefing-what-the-washington-posts-deal-with-openai-says-about-the-future-of-ai-content-licensing/"
+      - "https://www.engadget.com/ai/the-guardian-is-the-latest-news-organization-to-partner-with-openai-155555243.html?src=rss/"
+      - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    verification_date: "2026-08-30"
   - partner: "ProRata"
     relationship_type: "licensing_deal"
     estimated_value: "Undisclosed (revenue share model — ProRata pays 50% of all revenue to publisher partners based on content usage)"
