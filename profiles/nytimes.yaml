@@ -3234,6 +3234,90 @@ competitor_relationships:
     source_url: "https://www.financialcontent.com/article/tokenring-2025-12-29-breaking-anthropic-and-the-new-york-times-reach-landmark-confidential-settlement-ending-high-stakes-copyright-battle"
     coverage_prediction: "positive_if_deal_confirmed"
     verification_status: "single_source_unverified"
+    recent_coverage_examples_2026_aug29:
+    - title: NYT seeks a reporter to cover Anthropic
+      date: '2026-08-19'
+      nyt_via: Talking Biz News citing NYT job posting
+      url: https://talkingbiznews.com/biz-news-help-wanted/ny-times-seeks-a-reporter-to-cover-anthropic/
+      original_nyt_attribution: New York Times Business desk job posting Aug 19 2026 via Talking Biz News
+      framing: beat_expansion_investment
+      tone_approx: 0.12
+      language:
+      - talented experienced versatile correspondent
+      - artificial intelligence race heats up
+      - grown quickly and changed coding security and other areas
+      - becoming a new power broker
+      - heading toward a public offering
+      - high metabolism job breaking news enterprise accountability
+      deal_disclosed: false
+      significance: NYT creating dedicated Anthropic beat Aug 19 2026 signals institutional investment in sustained constructive coverage. Job posting frames Anthropic as growth power broker, not adversarial target. Compare NYT Meta child safety settlement coverage same month which uses dramatic capitulation framing.
+    - title: Meta Anthropic in talks for potential $10B compute lease deal NYT reports
+      date: '2026-07-17'
+      nyt_reporter_network: NYT via Reuters
+      url: https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/
+      original_nyt_attribution: New York Times Jul 17 2026 via Reuters
+      framing: constructive_business_growth
+      tone_approx: 0.08
+      language:
+      - in talks to lease computing power to Anthropic
+      - potential deal worth $10 billion over two years
+      - help Meta diversify beyond advertising
+      - generating revenue from infrastructure
+      - Claude Code creator would pay Meta in monthly increments
+      - competing with neocloud firms CoreWeave and Nebius
+      - growing adoption of advanced AI tools boosts need for computing capacity
+      deal_disclosed: false
+      meta_contrast: NYT Meta child safety settlement coverage Aug 26 frames Meta as dramatic capitulation requiring sweeping changes. Same NYT frames Meta as infrastructure competitor when paired with Anthropic growth narrative.
+    - title: Anthropic claims its new AI model Mythos is a Cybersecurity Reckoning
+      date: '2026-04-07'
+      nyt_reporter: Kevin Roose
+      url: https://www.nytimes.com/2026/04/07/technology/anthropic-claims-its-new-ai-model-mythos-is-a-cybersecurity-reckoning.html
+      framing: platforming_responsible_steward
+      tone_approx: 0.15
+      language:
+      - cybersecurity reckoning
+      - too powerful to release
+      - responsible steward sounding the alarm
+      - Project Glasswing consortium
+      - $100M in usage credits
+      deal_disclosed: false
+      note: Same Mythos model later breached 3 companies Jul 31 2026 per Irregular testing. NYT platforming Apr 7 contrasts with absence of comparable standalone negative coverage after breach.
+    asymmetry_scorer_result_2026_08_29:
+      publication_slug: nytimes
+      target_entity: Anthropic
+      peer_entities: [Meta, Amazon]
+      period_start: '2026-07-01'
+      period_end: '2026-08-29'
+      anthropic_scores_synthetic_illustrative: [0.12, 0.08, 0.05, -0.05, 0.10]
+      meta_scores_synthetic_illustrative: [-0.35, -0.42, -0.28, -0.30, -0.25]
+      amazon_scores_synthetic_illustrative: [0.15, 0.12, 0.08]
+      anthropic_avg: 0.06
+      meta_avg_ft: -0.32
+      amazon_avg_ft: 0.117
+      anthropic_vs_meta_asymmetry: 0.38
+      anthropic_vs_meta_t: 9.007
+      anthropic_vs_meta_p: 0.0000
+      anthropic_vs_meta_cohens_d: 5.696
+      anthropic_vs_meta_ci_lower: 0.306
+      anthropic_vs_meta_ci_upper: 0.452
+      anthropic_vs_meta_significant: true
+      anthropic_vs_amazon_asymmetry: -0.057
+      anthropic_vs_amazon_p: 0.1673
+      methodology_note: >
+        Synthetic illustrative only — scores are manual tone approximations from headline and framing language,
+        NOT from an observed article-level corpus. Welch t-test, Cohen d, bootstrap 1000 iterations via
+        mediascope.score.asymmetry.calculate_asymmetry(). Illustrative values demonstrate statistical pipeline
+        validity, not empirical significance. Real corpus would require full NYT archive sampling. Financial
+        relationships are structural incentives, not proof of editorial influence. Legitimate confounders:
+        beat expansion may reflect market importance not financial incentive, compute lease story is business
+        necessity, Mythos platforming predates reported settlement and may reflect responsible AI narrative.
+        Counterexample: NYT did publish adversarial coverage of Anthropic rogue incidents via Reuters syndication,
+        showing capacity for negative framing.
+      financial_incentive_caution: >
+        Financial ties are structural incentives that may shape coverage, not proof of editorial capture.
+        NYT Amazon deal $20-25M/yr, Meta $0, Anthropic reported settlement undisclosed — incentive ordering
+        predicts Amazon softest, Anthropic neutral-positive if settlement real, Meta adversarial. Observed
+        ordering partially consistent but confounded by newsworthiness, litigation narrative, and beat assignment.
   amazon:
     financial_tie: "licensing"
     estimated_value: "$20-25M/yr"
