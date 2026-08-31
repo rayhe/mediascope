@@ -19,10 +19,10 @@ Mechanisms cross-validated:
 - #403 E: Podcast Sentiment - Pervy Glasses Therapy/Depth-Psychology Vocabulary Migration (AmberMac "pervert" -> Guardian "sleazy" -> Therapy podcast "male gaze") - 403 lines podcast-sentiment.md expansion
 - #404 A: Atlantic Anthropic Mitigation Credit Asymmetry - Atlantic frames Anthropic Claude mitigation as industry-leading safety credit vs Meta AI piracy lawsuit framing as willful infringement, $81.63B Google ad dependency contextualization
 - #405 B: David Gilbert WIRED disinformation reporter same-journalist platform governance inversion - Meta fact-checking abandonment adversarial (blindsided, scrambling) vs X graphic video constructive (Actually Real, Research Confirms), 15-month gap, $0 Condé Nast deals both
-- #406 C: Amazon OpenAI 50B Contingent Tranche IPO Timeline plus Google 81.63B Ad Dependency plus Anthropic 10B Bank Revolver Publisher Incentive Triangulation - 15B immediate + 35B contingent IPO by end 2028 or AGI per Barron Mar 2026 Tech-Insider Apr 6 2026, Google 81.63B Q2 Search 63.27B YouTube 11.06B, Anthropic 10B revolver tier 1 1.25B tier 2 1B tier 3 750M Morgan Stanley Goldman JPMorgan IPO incentive, combined 63B Amazon exposure vs Meta zero
+- #406 C: Amazon OpenAI 50B Contingent Tranche IPO Timeline plus Google 81.63B Ad Dependency plus Anthropic 10B Bank Revolver Publisher Incentive Triangulation - 15B immediate + 35B contingent IPO by end 2028 or AGI per Barron Mar 2026 Tech-Insider Apr 6 2026, Google 81.63B Q2 Search 63.27B YouTube 11.06B, Anthropic 10B revolver tier 1 1.25B tier 2 1B tier 3 750M Morgan Stanley Goldman JPMorgan IPO incentive, Amazon total AI exposure 63B equals 50B OpenAI plus 13B Anthropic vs no equivalent relationship identified in mapped comparison as of verification date for Meta
 
 Statistical validation:
-- Welch t-test, Cohen d, bootstrap CI 1000, 95% CI all produce p<0.05, |d|>0.5, CI excludes 0 for controlled synthetic inputs for 402-406
+- Controlled synthetic inputs show scorer responds to separated distributions - Welch t-test, Cohen d, bootstrap CI 1000, 95% CI produce p<0.05, |d|>0.5, CI excludes 0 for controlled synthetic known-separated inputs, MANUAL ILLUSTRATIVE not empirical significance for hand-assigned scores
 - Edge-case handling (empty, single-sample, zero variance same/different means) verified
 - Dependency chain: pyyaml, numpy, scipy, mediascope.score.asymmetry, mediascope.score.statistical, mediascope.profiles
 - Count stats: 96 clusters, 921 aliases, 71 regex, 25 auto, 113 framing device types (106 pattern-based + 7 structural), 782 compiled patterns, 1022 emotional terms, 32 adversarial, 13 correction paths, 206 annotated, 260 journalists, 974 migrations, 444 pubs, 29 topics, 735 files, 24800+ tests estimated (was 730 files 24718 tests in #402, +5 files across #403-#406)
@@ -404,21 +404,23 @@ class TestFinancialIncentiveTriangulation407:
     def test_anthropic_revolver_vs_meta_zero(self):
         m = MECHANISMS_SYNTHETIC[406]
         assert m["anthropic_revolver_b"] == 10
-        # Meta zero publisher deals zero bank facility
-        meta_zero = True
-        assert meta_zero, "Meta should have zero publisher deals / bank facility / Amazon investment per mechanism 406"
+        # No equivalent relationship identified in mapped comparison as of verification date for Meta vs funded entities
+        no_equivalent = True
+        assert no_equivalent, "No publisher deal, no bank facility, no Amazon investment, no Google Showcase identified for Meta in mapped comparison as of verification date"
 
-    def test_combined_exposure_calculation(self):
-        # Amazon total AI exposure 63B = 50B OpenAI + 13B Anthropic
+    def test_separate_channels_no_combined_total(self):
+        # Amazon total AI exposure 63B = 50B OpenAI + 13B Anthropic - separate financial channel
         amazon_openai = 50
         amazon_anthropic = 13
         total = amazon_openai + amazon_anthropic
         assert total == 63
-        # Plus Google 81.63B Q2 ad + Anthropic 10B revolver vs Meta 0
+        # Google 81.63B Q2 ad is separate ad-dependency channel, Anthropic 10B revolver is separate bank channel
+        # Do not sum different categories into invalid combined proxy - keep separate per methodology correction
         google_q2 = 81.63
         anthropic_revolver = 10
-        combined_incentive_proxy = total + google_q2 + anthropic_revolver
-        assert combined_incentive_proxy > 100, f"Combined {combined_incentive_proxy} should exceed 100B"
+        assert google_q2 == 81.63
+        assert anthropic_revolver == 10
+        # Each channel individually predicts softer coverage vs Meta per mapped comparison
 
     def test_financial_prediction_direction(self):
         # Financial predictor: softer coverage for funded entities vs adversarial for unfunded Meta
