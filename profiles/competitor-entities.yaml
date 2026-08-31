@@ -933,6 +933,46 @@ entities:
       - DST Global
       - Fidelity
       series_h_infrastructure_note: 'Samsung, SK Hynix, and Micron - chip supply chain companies - invested in the Series H. This is significant for MediaScope: Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor) and investing in Anthropic. The Samsung-Anthropic financial alignment means publications covering Samsung glasses favorably also align with Anthropic investor interests. No equivalent financial alignment exists between Meta and any chip supply chain investor.'
+      series_h_hyperscaler_recycling_401:
+        mechanism_id: 401
+        type: 'Type C - Financial Incentive Mapping'
+        title: Series H Hyperscaler Capital Recycling - $15B Previously Committed Inside $65B Narrative Boost
+        finding: 'May 28 2026 Series H reported as $65B financing at $965B post-money (Morningstar, PYMNTS). PYMNTS noted round included $15B of previously committed hyperscaler investments, including $5B from Amazon. This means $15B counted as fresh Series H was not new capital that week, but conversion/recognition of prior commitments (Amazon $5B Apr 2026 immediate tranche, plus Google $10B Apr 2026 immediate tranche). Net new third-party capital that week was ~$50B, not $65B, but headline framing as $65B creates 30% inflation of perceived financing momentum (65 vs 50). Publisher incentive: publications dependent on Google ($81.63B Q2 ad revenue) and Amazon ($76B TTM ad, $42.2B AWS) have structural incentive to amplify $65B headline rather than dissect $15B recycling, because larger Anthropic financing boosts perceived health of their own ad/cloud revenue sources. Correlation only, not proof of editorial direction.'
+        date_reported: '2026-05-28'
+        reported_round_b: 65
+        reported_valuation_b: 965
+        hyperscaler_included_b: 15
+        amazon_included_b: 5
+        google_included_implied_b: 10
+        net_new_estimated_b: 50
+        recycling_pct: 23.1
+        headline_inflation_pct: 30.0
+        amazon_total_prior_b: 8
+        amazon_apr_2026_immediate_b: 5
+        amazon_total_after_immediate_b: 13
+        amazon_potential_total_b: 33
+        google_apr_2026_immediate_b: 10
+        google_conditional_b: 30
+        google_total_commitment_b: 40
+        google_prior_b: 3
+        tpu_commitment_gw: 3.5-5.0
+        amazon_compute_commitment_b: 100
+        amazon_trainium_gw: 5
+        source_urls:
+        - https://www.morningstar.com/news/marketwatch/20260528233/anthropic-nears-1-trillion-valuation-leapfrogging-openai
+        - https://gmg-wjxt-prod.cdn.arcpublishing.com/business/2026/05/28/anthropic-vaults-to-a-965-billion-valuation-with-new-funding-as-claude-demand-surges/
+        - https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-becomes-worlds-most-valuable-ai-startup-at-965-billion/
+        - https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/
+        - https://www.engadget.com/ai/google-plans-to-invest-even-more-money-into-anthropic-185000776.html
+        - https://www.geekwire.com/2024/amazon-boosts-total-anthropic-investment-to-8b-deepens-ai-partnership-with-claude-maker/
+        - https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+        cautious_language: Financial correlation does not imply causation. Headline framing analysis is correlational structural incentive only. No assertion of editorial control. Requires primary source verification against Anthropic announcement and SEC S-1 for empirical validation. Distinguish immediate investment from conditional commitments. Distinguish equity capital from compute purchases and cloud revenue recycling. Do not claim empirical significance from synthetic scores.
+        test_file: tests/test_anthropic_series_h_hyperscaler_recycling_publisher_narrative_boost_type_c_401.py
+        cross_refs:
+        - 203
+        - 361
+        - 25
+        - 396
       target_raise_b: 75-86.2
       target_valuation_range_t: 2.0
       target_valuation_range_note: 'FT (Aug 13, 2026) citing 6 Anthropic investors: $2T valuation expected, surpassing SpaceX record (~$1.8T). Up from earlier $1.75-1.8T range. PYMNTS (Aug 20): Anthropic "expects its IPO to reach a record high, equaling or surpassing SpaceX." SpaceX raised $75B initially, $86.2B with overallotment.'

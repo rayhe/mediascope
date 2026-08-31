@@ -7604,3 +7604,67 @@ reece_rogers_samsung_galaxy_glasses_led_tamper_parity_vs_meta_ghost_dot_400:
     - 10  # Investigative Target Selection as Partner Validation
     - 199 # Condé Nast Deal Inventory Coverage Correlation
 
+
+# --- Mechanism #401 Type C Financial Incentive Mapping Aug 30 17:00 PT ---
+anthropic_series_h_hyperscaler_recycling_401:
+  mechanism_id: 401
+  type: 'Type C - Financial Incentive Mapping'
+  type_label: financial_incentive_mapping
+  title: Anthropic Series H $65B Hyperscaler Recycling - $15B Previously Committed Inside $65B Headline Inflation and Publisher Narrative Boost
+  finding: 'Series H May 28 2026 reported as $65B at $965B post-money (Morningstar, PYMNTS). PYMNTS reported round included $15B of previously committed hyperscaler investments, including $5B from Amazon. Net new third-party capital that week was therefore ~$50B, not $65B, but headline framing as $65B creates 30% inflation of perceived financing momentum. Amazon prior: $8B total Nov 2024 (GeekWire Nov 22 2024: $4B added bringing total to $8B, AWS primary training partner, minority investor no board seat). Amazon Apr 2026: $5B immediate + up to $20B conditional = $25B incremental, bringing total invested to $13B with potential total $33B (5GW Trainium, $100B AWS commitment per TechCrunch). Google Apr 2026: $10B immediate + up to $30B conditional = $40B total commitment (Engadget, TechCrunch Apr 24-25), 3.5-5GW TPU capacity beginning 2027, hundreds of billions implied TPU deal. Combined Google+Amazon conditional commitments $65B equals Series H headline size, illustrating circular capital architecture. WIRED relevance: WIRED parent Condé Nast has OpenAI deal (Aug 2024), Amazon Rufus deal (Jul 2025), but $0 Meta deals (13 total licensing deals globally $50M/yr News Corp + 12 others, $0 Condé Nast per FT Feb 27 2026 revenue analysis). WIRED also covers Samsung Galaxy Glasses (Jul 22 2026) which is simultaneously Samsung building direct Meta Ray-Ban competitor AND Series H strategic investor (Samsung, SK Hynix, Micron). Samsung financial alignment means favorable Samsung glasses coverage aligns with Anthropic investor interests. WIRED has structural incentive to amplify $65B headline not dissect $15B recycling because larger Anthropic financing boosts perceived health of Google ($81.63B Q2 ad revenue, Showcase, News AI pilot) and Amazon ($76B TTM ad, $42.2B AWS) revenue sources that fund Condé Nast via advertising and Amazon Publisher Services. Meta has zero financial relationship with WIRED, receives harshest coverage despite being only Meta to have shipping wearables product with 7M+ units. Correlation only, not proof of editorial control.'
+  date_added: '2026-08-30'
+  publication: wired
+  parent_company: conde_nast
+  competitor_entities:
+    - anthropic
+    - amazon
+    - google
+  financial_structure:
+    series_h_reported_b: 65
+    series_h_valuation_b: 965
+    hyperscaler_included_b: 15
+    amazon_included_b: 5
+    google_included_implied_b: 10
+    net_new_estimated_b: 50
+    recycling_pct: 23.1
+    headline_inflation_pct: 30.0
+    amazon_total_nov2024_b: 8
+    amazon_apr2026_immediate_b: 5
+    amazon_total_after_immediate_b: 13
+    amazon_potential_total_b: 33
+    amazon_compute_commitment_b: 100
+    amazon_trainium_gw: 5
+    google_apr2026_immediate_b: 10
+    google_conditional_b: 30
+    google_total_commitment_b: 40
+    google_prior_b: 3
+    tpu_capacity_gw: 3.5-5.0
+    combined_hyperscaler_conditional_b: 65
+    amazon_ad_ttm_b: 76
+    amazon_ad_q2_b: 19.8
+    amazon_ad_yoy_pct: 26
+    aws_q2_b: 42.2
+    aws_yoy_pct: 37
+    google_q2_ad_b: 81.63
+  source_urls:
+    - https://www.geekwire.com/2024/amazon-boosts-total-anthropic-investment-to-8b-deepens-ai-partnership-with-claude-maker/
+    - http://techxplore.com/news/2024-11-amazon-invest-additional-billion-ai.html
+    - https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/
+    - https://www.engadget.com/ai/google-plans-to-invest-even-more-money-into-anthropic-185000776.html
+    - https://www.morningstar.com/news/marketwatch/20260528233/anthropic-nears-1-trillion-valuation-leapfrogging-openai
+    - https://gmg-wjxt-prod.cdn.arcpublishing.com/business/2026/05/28/anthropic-vaults-to-a-965-billion-valuation-with-new-funding-as-claude-demand-surges/
+    - https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-becomes-worlds-most-valuable-ai-startup-at-965-billion/
+    - https://www.adweek.com/commerce/amazons-ad-revenue-hits-76b/
+  correlational_note: Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Publisher dependency on Google for ad revenue is structural but does not prove editorial influence. Meta zero-deal status is factual but does not prove adversarial coverage is caused by zero-deal status. Headline inflation calculation 65 vs 50 = 30 percent is arithmetic not causal claim. Recycling pct 15/65 = 23.1 percent is arithmetic.
+  test_file: tests/test_anthropic_series_h_hyperscaler_recycling_publisher_narrative_boost_type_c_401.py
+  cross_references:
+    - 25   # Amazon Dual Lab Sextuple Leverage
+    - 203  # Google Circular Capital Architecture
+    - 361  # Amazon Anthropic Expansion Mirroring OpenAI
+    - 358  # Amazon Triple-Channel Circular Financing
+    - 396  # Google Alongside AI Content Ad Dominance
+    - 400  # Reece Rogers Samsung Galaxy Glasses LED Tamper Parity
+  confounders:
+    - '[STRONG] Editorial independence - Condé Nast editorial firewall may prevent deal influence, WIRED may genuinely believe Anthropic financing story is newsworthy without dissecting hyperscaler accounting, no documented editorial directive linking ad revenue to coverage decisions'
+    - '[MODERATE] Product-stage - Meta Ray-Ban shipping product with 7M+ units vs Anthropic financing news are different news values, financing coverage vs product review different desks may justify different treatment'
+    - '[MODERATE] Sourcing - Maxwell Zeff WIRED AI reporter has deep Anthropic source access per mechanism #62, may receive financing scoops from Anthropic directly, creating access journalism incentive independent of financial structure'
