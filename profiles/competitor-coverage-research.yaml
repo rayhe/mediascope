@@ -33899,3 +33899,114 @@ google_news_ai_pilot_two_year_nda_no_sue_deal_structure_cma_neutralization:
   - mechanism_id: 53
     relationship: OpenAI triple-layer journalism funding (content licensing + salary funding + philanthropic grants) vs Google News AI pilot single-layer but with coercive sunset threat
   test_file: tests/test_google_news_ai_pilot_deal_structure_cma_neutralization_aug28.py
+
+google_news_ai_pilot_permanent_weights_temporary_payment_412:
+  mechanism_id: 412
+  title: Google News AI Pilot Two-Year Payment for Permanent Model Weights - Training Data Persistence Beyond 90-Day Exit as Financial Asymmetry
+  type: financial_incentive_mapping
+  date_analyzed: '2026-08-31'
+  iteration: 412 - Sun 2026-08-31 02:00 PT
+  competitor: Google / Alphabet
+  publication_focus:
+  - The Guardian
+  - Financial Times
+  - UK publishers generally
+  summary: Primary-source triangulation of share-or-lose coercive framing (PYMNTS Jun 25 2026 headline Google Tells News Publishers to Share Content for AI Training or Lose Fees, NY Post Jun 26 2026 Google Looks to Bleed Publishers, AndroidHeadlines Jul 2026 death of classic license, The Information Jun 2026 broad rights via PYMNTS) with Showcase sunset threat. Google pays single-figure millions GBP 1-9M per year for 2 years (Guardian, FT, Press Gazette Aug 2026 understanding, total GBP 2-18M MANUAL ILLUSTRATIVE) for enhanced content rights including broad AI training, grounding, AI Mode rights, but 90-day exit does not require model unlearning or training data deletion, so payment temporary while model weights improvement permanent. Showcase was temporary display rights for temporary payment revocable; News AI pilot converts to permanent training rights for temporary payment irrevocable. Training data persistence beyond contract term creates financial asymmetry where 2-year payment purchases irrevocable capability. Contrasts with CMA world-first remedy Jun 3-4 2026 requiring effective opt-out tools, fine-tuning opt-out, attribution, 9-month implementation, compliance reports every 6 months, controls not ranking signal. Private contract waives CMA-granted opt-out rights. Industry prediction in two years Google could completely win consumer AI market then does not have to pay publishers anything aligns with 2-year term enabling training extraction before dominance obviates payments.
+  financial_architecture:
+    predecessor_showcase:
+      launch: 2020
+      value: $1B over 3 years
+      current_scale: 2,800 publications in 33 countries (Google spokesperson Aug 2026 via Press Gazette)
+      uk_annual_nationals: GBP 1M+ per year (Press Gazette Aug 2026)
+      rights_type: temporary display revocable
+    successor_news_ai_pilot:
+      announced: '2025-12-10 TechCrunch Dec 10 2025'
+      scale_aug_2026: '200+ publications globally (Google spokesperson Aug 2026 via Press Gazette)'
+      payment_range_uk_majors: 'Single-figure millions GBP 1-9M per year Guardian FT (Press Gazette understanding Aug 2026)'
+      term_years: '2 (Press Gazette understanding Aug 2026)'
+      exit_clause: '90 days notice (Press Gazette Aug 2026 major publisher interview)'
+      total_payment_range_2yr: 'GBP 2-18M (MANUAL ILLUSTRATIVE 1-9M x 2 years not Google official)'
+      deal_terms: enhanced content rights, specialised delivery via APIs, experimental AI features (AI Overviews, AI Mode, grounding), broad rights for AI training grounding AI Mode (The Information Jun 2026 via PYMNTS Jun 25 2026, NY Post Jun 26 2026, AndroidHeadlines Jul 2026)
+      confidentiality: NDAs, no-sue deals renting peace, take-it-or-leave-it, secret deals (Press Gazette Aug 2026)
+      rights_type: permanent broad AI training grounding AI Mode rights persisting in model weights beyond contract term
+  training_data_persistence:
+    exit_does_not_claw_back: 90-day exit does not require model unlearning or training data deletion - no clause reported (Press Gazette Aug 2026, Computer Weekly Jun 4 2026 CMA remedy requires future opt-out not retroactive unlearning)
+    temporary_vs_permanent: Showcase temporary payment for temporary display rights revocable vs News AI pilot temporary payment for permanent model weights irrevocable capability gain
+    financial_asymmetry: GBP 2-18M over 2 years (MANUAL ILLUSTRATIVE) for perpetual model improvement vs Showcase GBP 1M+ annual for ephemeral panel placement
+    industry_prediction_alignment: In two years time Google could have completely won consumer AI market - as soon as that happens it doesn't have to pay publishers anything (Press Gazette Aug 2026 industry source) - 2-year term enables training extraction before market dominance obviates need for future payments
+  regulatory_remedy_cma:
+    regulator: UK Competition and Markets Authority
+    designation: Strategic Market Status for Google search and search advertising (Oct 2025)
+    ruling_date: '2026-06-03'
+    status: World-first requirement on Google search services in UK (CMA CEO Sarah Cardell quote via Computer Weekly Jun 4 2026)
+    conduct_requirements:
+    - effective tools allowing publishers to prevent content being used in AI features (Computer Weekly Jun 4 2026)
+    - opt out of fine-tuning (Computer Weekly Jun 4 2026)
+    - attribution with clear links (Computer Weekly Jun 4 2026)
+    - opt-out must NOT require withdrawal from traditional search (Foxglove via Computer Weekly Jun 4 2026)
+    - 9 months implementation, compliance reports every 6 months (Computer Weekly Jun 4 2026)
+    neutralization: If most UK publishers sign 2-year NDA/no-sue deals granting broad AI training rights, they waive CMA-granted rights. Private ordering supersedes regulatory default. Press Gazette Aug 2026 notes secret AI deals could make CMA ruling largely irrelevant if most UK publishers sign rights away.
+  prisoner_dilemma:
+    divide_and_rule: well-placed industry source advising major publishers as divide and rule (Press Gazette Aug 2026)
+    no_upside: If your competitor has a deal and you are opting out, they get the small amount of traffic and the cash. There is no upside to saying no. (Press Gazette Aug 2026)
+    already_caved: It is the prisoner's dilemma because your competitors have already caved (Press Gazette Aug 2026)
+    consumer_ai_win: In two years time Google could have completely won consumer AI market - as soon as that happens it doesn't have to pay publishers anything (Press Gazette Aug 2026)
+    renting_peace: These deals don't have product value they are renting peace and that means deals will go away (source with close knowledge Press Gazette Aug 2026)
+    no_sue: More accurately described as no-sue deals (Press Gazette Aug 2026)
+    game_dominance: This is Google's game. They are gonna dominate here. There is no fair deal discussions that can happen with Google. It is really a matter of how much money they want to drop on an individual organization. (Jason Kint via NY Post Jun 26 2026)
+    layoff_risk: You've got that Showcase deal built into your annual plan, and if it goes away because you're not willing to do this new deal, which might be even a little bit more revenue, then you're probably doing layoffs of your newsroom (Kint Press Gazette Aug 2026)
+    legal_cost_barrier: If you go the other route and you say I'm going to instead sue Google for trying to exert force on me to do this, then you're dealing with hundreds of millions of legal costs - Very few are going to want to do anything except sign the deal with Google. (Kint Press Gazette Aug 2026)
+  quintuple_coercion:
+    channel_a: advertising dependency about 37% US digital ad spend, GBP 21.5B UK (Press Gazette Aug 2026)
+    channel_b: search traffic dependency 1% CTR under AI summaries (Pew via Computer Weekly Jun 4 2026), 79% potential traffic loss if below AI overview (Authoritas via Computer Weekly Jun 4 2026)
+    channel_c: Showcase fee leverage accept AI training or lose annual payments (PYMNTS Jun 25 2026, NY Post Jun 26 2026)
+    channel_d: pilot deal exclusion threat opt out loses access to new AI licensing revenue (Press Gazette Aug 2026)
+    channel_e: contract waiver via signed deal NDA/no-sue 2-year deal grants rights CMA says you can withhold, 90-day exit does not claw back training data already used, training data persistence beyond term (Press Gazette Aug 2026, Computer Weekly Jun 4 2026)
+  confounders:
+    strong:
+    - Editorial independence - no documented editorial directive linking deal to coverage, requires internal evidence
+    - Publisher size and business model - Guardian/FT reader-revenue vs regional GBP 1M+ Showcase baseline, different incentives
+    - Existing deal built into annual plan creates layoff risk not purely financial incentive
+    moderate:
+    - User preference shift - AI Overviews 2.5B+ MAU AI Mode 1B+ MAU genuine preference change Google cites
+    - Legitimate licensing value - Google pays for extended display rights and APIs could be genuine product value not renting peace
+    - Jurisdiction - CMA UK-only world-first remedy may not apply globally 2,800 pubs 33 countries mostly outside CMA scope
+    - Traffic evidence quality - Google disputes Authoritas 79% loss and Pew 1% CTR as flawed (Computer Weekly Jun 4 2026)
+    weak:
+    - Single-month page view Apr 2026 36B may not represent full-year
+    - Foxglove advocacy may overstate democracy threat
+    - Press Gazette UK industry publication may overstate divide-and-rule narrative
+  verification_status:
+    primary_sources:
+    - Computer Weekly Jun 4 2026 14:52 CMA ruling (9-month, compliance reports, effective tools, attribution, fine-tuning opt-out, Foxglove Rosa Curling, Authoritas 79%, Pew 1% CTR, Loew blogpost Jun 3 2026)
+    - Press Gazette Aug 2026 (prisoner dilemma, divide and rule, 36B page views, GBP 21.5B adspend, 2-year single-figure millions Guardian/FT, 200 pubs News AI pilot 2,800 Showcase 33 countries, NDA no-sue 90-day exit take-it-or-leave-it renting peace, Kint layoff/legal cost, GBP 1M+ Showcase, Chinnappa, SPUR)
+    - PYMNTS Jun 25 2026 broad AI training rights Showcase sunset threat
+    - NY Post Jun 26 2026 bleed publishers broad rights Kint game dominance
+    - TechCrunch Dec 10 2025 testing AI overviews
+    - AndroidHeadlines Jul 2026 death of classic license via PYMNTS citation
+    speculative_elements_labeled:
+    - Future Google consumer AI market dominance within 2 years is industry source prediction not observed fact
+    - Deal values single-figure millions Press Gazette understanding due NDA not official, total GBP 2-18M MANUAL ILLUSTRATIVE
+    - Renting peace / deals will go away close-knowledge source interpretation not Google official
+    - Prisoner dilemma payoff matrix explanatory analogy not formal game-theoretic model
+    - Training data persistence assumes no unlearning clause - absence of reporting does not prove absence, requires contract verification
+  mediascope_relevance: Isolates temporary vs permanent value asymmetry as new contribution beyond mechanism 355 - mechanism 355 documented coercion and CMA neutralization broadly, mechanism 412 quantifies that GBP 2-18M over 2 years (MANUAL ILLUSTRATIVE) purchases perpetual model improvement vs Showcase GBP 1M+ annual for ephemeral placement. Training data persistence beyond 90-day exit distinguishes temporary display rights revocable from permanent training rights irrevocable weights. Explains why Guardian and FT signed despite industry consensus for universal fair payment model - individual rationality vs collective rationality. Meta contrast zero publisher deals zero ad dependency zero coercion zero NDA/no-sue. For wearables Samsung glasses coverage silence persists because driven by Channel 2 ad dependency not Channel 1 deal payments. Training persistence intensifies asymmetry because even after exit Google retains capability while publisher loses future payments and CMA opt-out becomes moot for already-ingested content.
+  asymmetry_scorer_note: Synthetic scorer not applicable - no tone array. Asymmetry prediction publications with Google News AI pilot deals expected softer Google AI coverage vs adversarial Meta coverage due financial dependency + NDA/no-sue + training persistence. Requires URL-backed article-level dataset with observed tone scores for empirical validation (Welch's t-test, Cohen's d, bootstrap CI). Do NOT claim empirical significance from synthetic scores. Scores labeled MANUAL ILLUSTRATIVE if synthetic.
+  source_urls:
+  - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
+  - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+  - https://www.barchart.com/story/news/2276635/uk-orders-google-to-allow-publishers-to-opt-out-of-ai-scraping-for-search-summaries
+  - https://www.theregister.com/2026/03/19/google_opts_for_optout_on/
+  - https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/
+  - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+  - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+  - https://www.androidheadlines.com/2026/07/google-forces-publishers-ai-training-rights-news-showcase.html
+  - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+  cross_references:
+  - mechanism_id: 355
+    relationship: Extends mechanism 355 deal structure CMA neutralization with temporary vs permanent value asymmetry quantification - 355 documented coercion broadly, 412 isolates training data persistence beyond 90-day exit as distinct financial asymmetry
+  - mechanism_id: 88
+    relationship: Publisher AI Deal Revolt dual-channel financial leverage decoupling - this mechanism specifies permanent weights vs temporary payment as concrete instance of Channel 1 capture intensification
+  - mechanism_id: 96
+    relationship: Litigation coverage selectivity - NDA/no-sue clauses may contractually constrain coverage of AI company litigation
+  test_file: tests/test_google_news_ai_pilot_permanent_weights_temporary_payment_412_aug31.py

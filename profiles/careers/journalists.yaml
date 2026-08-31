@@ -10797,6 +10797,188 @@ journalists:
     - 208
     - 353
     - 361
+  mechanism_411_google_android_xr_tamper_detection_enforcement_gap:
+    mechanism_id: 411
+    discovery_date: '2026-08-31'
+    iteration: 411
+    iteration_type: B
+    iteration_time: 2026-08-31 01:00 PDT
+    journalist: Julian Chokkattu (WIRED Senior Editor Gear, 7+ years, 3,627+ articles, primary Meta hardware reviewer)
+    pattern: 'Privacy enforcement strength inversion - Google Android XR glasses announce tamper detection but NOT automatic camera shutdown (weaker enforcement) receives enthusiastic / aspirational WIRED Gear desk framing (Nano Banana is actually bananas, Nothing like doctoring photos in real time) while Meta Ray-Ban glasses with stronger enforcement (July 7 2026 LED physical tamper -> camera disabled mandatory v26 firmware + Aug 27 2026 mid-recording cover -> camera stops) receive adversarial mass surveillance and pervert glasses framing from same WIRED Gear desk journalist within 15-day swing.'
+    meta_enforcement:
+      july_7_2026_tamper_proof:
+        title: Meta disables glasses camera if recording light is tampered
+        date: '2026-07-07'
+        description: Meta FAQ July 7 2026 states camera automatically disabled if capture LED physically tampered with or destroyed. Since Gen 2, camera already disabled if LED blocked. Update extends to physical destruction detection. Mandatory firmware v26 rolling out to Ray-Ban Meta, Oakley Meta, Meta Glasses $300. Meta VP Wearables Alex Himel told The Verge update meant to follow cheaper Meta Glasses launch. 404 Media documented $60 mod disabling light. WSJ Joanna Stern investigation found ads for stealth service in 30 states, drilled housing with Dremel and resin fill.
+        source_urls:
+        - https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+        - https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+        - https://petapixel.com/2026/07/08/if-users-conceal-the-recording-light-on-smart-glasses-meta-says-it-will-disable-the-camera/
+        - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
+        - https://www.archyde.com/meta-glasses-camera-disabled-led-tampering/
+        original_verge_article_url: NOT_INDEPENDENTLY_RECOVERED - search Aug 31 2026 returned only secondary citations (RoadToVR, Archyde citing The Verge Alex Himel interview), no direct The Verge article URL found in search results
+        journalist_credit: Victoria Song (The Verge) noticed July 8 per Gizmodo citation - as noticed by the Verges Victoria Song on Tuesday - origin node for cascade to Gizmodo, PetaPixel, RoadToVR, 9to5Google, TheStreet, 8+ outlets - author page https://www.theverge.com/authors/victoria-song used as secondary proxy since direct article URL blocked/not returned by search
+      aug_27_2026_mid_recording_cover_fix:
+        title: Meta closes second loophole mid-recording LED cover stops camera
+        date: '2026-08-27'
+        description: Alex Himel Threads post Aug 27 2026 reported by Engadget, The Verge, 9to5Google. Glasses already refused to start recording if LED covered. Users bypassed by starting recording first then covering LED. New fix monitors LED continuously during active recording, stops camera the moment light is covered. Rolling out across Ray-Ban Meta, Oakley Meta, Meta AI glasses broadly. Tom's Guide headline around phrase less pervert-y. Gadget Review and Softonic document closure of obvious loophole that should have been shut from start.
+        source_urls:
+        - https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+        - https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+        - https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+        - https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+        - https://theibulletin.com/meta-smart-glasses-capture-led-loophole-billboard-campaign/
+        journalist_credit: Alex Himel via Threads, coverage by Engadget, The Verge, 9to5Google secondary verification Aug 30 2026
+    google_android_xr_enforcement:
+      title: Google Android XR Glasses Add Tamper Detection but Key Privacy Questions Remain
+      date: '2026-07-19'
+      date_verified: eWeek search result Jul 19 2026 via browser.search 2026-08-31 - corrected from Aug 15 estimate
+      description: Google announces tamper detection for Android XR glasses (Samsung, XREAL, Warby Parker, Gentle Monster partnerships, audio-only 2026, monocular 2026, binocular 2027, Snapdragon AR1 Gen 1, 12MP Sony IMX681, Gemini, 50g, 155mAh). eWeek Jul 19 2026 reports Google has NOT published technical spec, NOT confirmed tampering disables camera, enforcement layer unknown (tied directly to sensor vs firmware vs OS behavior unknown), wording may not cover every instance Gemini analyzes live feed without saving photo, organizations should verify visual data processing and storage, whether data used to improve AI models, bystander rights under GDPR and EU AI Act, enforcement mechanism if hardware partner data practices diverge from Googles own.
+      source_urls:
+      - https://www.eweek.com/news/android-xr-tamper-detection/
+      - https://www.androidauthority.com/google-android-xr-headset-roadmap-3623062/
+      - https://www.androidauthority.com/android-xr-glasses-preview-google-io-2026-3665773/
+      - https://www.wareable.com/ar/google-android-xr-glasses-2026-warby-parker-gentle-monster-project-aura
+      - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+      enforcement_gap:
+        google_tamper_detection_announced: true
+        google_camera_automatic_shutdown_confirmed: false
+        google_technical_spec_published: false
+        meta_camera_shutdown_on_block: true
+        meta_camera_shutdown_on_block_detail: since Gen 2 2024
+        meta_camera_shutdown_on_tamper_destroy: true
+        meta_camera_shutdown_on_tamper_destroy_detail: July 7 2026 mandatory v26
+        meta_camera_shutdown_on_mid_recording_cover: true
+        meta_camera_shutdown_on_mid_recording_cover_detail: Aug 27 2026 rolling out
+        inversion: Meta stronger enforcement receives adversarial framing, Google weaker enforcement receives enthusiastic framing
+    wired_gear_desk:
+      journalists:
+      - Julian Chokkattu (Senior Editor Gear, 7+ years, 3,627+ articles, primary Meta hardware reviewer)
+      - Boone Ashworth (Staff Writer Gear)
+      google_io_2026_framing:
+        event: Google I/O 2026 May 19
+        live_blog_examples:
+        - 'Nano Banana on smart glasses is actually bananas! The demo worked!'
+        - 'Nothing like doctoring photos in real time'
+        tone: playful enthusiastic
+        hardware: cameras + Gemini + AI photo manipulation (deepfake-adjacent, higher privacy risk than Meta unaltered capture)
+        surveillance_vocabulary: 0
+        surveillance_vocabulary_detail: 0 terms
+        privacy_alarm: 0
+      meta_business_wars_framing:
+        event: Business Wars podcast S1E1-E2 Jun 3-10 2026
+        participants: Julian Chokkattu, Boone Ashworth as WIRED expert guests
+        titles: S1E1 Prize on the Eyes, S1E2 Im a Creep
+        language: tool for mass surveillance, Im a Creep pejorative, mandatory data-sharing, worker exploitation, federal agents using illegally
+        hardware: single 12MP camera + 5 mics Meta Ray-Ban
+        tone_synthetic: -0.7 illustrative
+        surveillance_vocabulary: present (mass surveillance, creep, pervert glasses)
+      temporal_gap: 15 days May 19 Google zero surveillance language vs Jun 3 Meta mass surveillance from same journalist
+      chokkattu_3_competitor_70_day_extended_to_90_day:
+        may_19_google: Google I/O 2026 - playful enthusiastic zero surveillance, cameras + AI manipulation
+        jun_3_meta: Business Wars - tool for mass surveillance, Im a Creep 15-day swing identical hardware
+        jul_7_meta_led_fix: Meta stronger enforcement July 7 - WIRED Gear desk does not publish standalone praise for tamper-proof improvement, continues pervert glasses framing via FastCompany Aug 25 echo, WSJ flooding market Aug 2026 echo
+        jul_22_samsung: Samsung Unpacked London - 0 standalone articles 49-day post-Meta 64-day post-Google consistent manufacturer-dependent framing across 70 days 3 competitors
+        aug_15_google_tamper: Google Android XR tamper detection weaker enforcement - 0 WIRED Gear investigative pieces about enforcement gap vs 3+ Meta adversarial pieces same window
+        pattern: 5-competitor 90-day manufacturer-dependent framing consistent across Google-Samsung-Meta-Snap-Apple
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entity: Google
+      target_scores_MANUAL_ILLUSTRATIVE: [-0.62, -0.58, -0.65]
+      target_avg_MANUAL_ILLUSTRATIVE: -0.6167
+      peer_scores_MANUAL_ILLUSTRATIVE: [0.12, 0.15, 0.10]
+      peer_avg_MANUAL_ILLUSTRATIVE: 0.1233
+      delta_MANUAL_ILLUSTRATIVE: -0.74
+      calculation: -0.6167 - 0.1233 = -0.74
+      label: MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL
+      p_value: NOT_CALCULATED - no observed corpus
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      significant: false
+      empirical_validation_required: true
+      methodology: Synthetic tone scores based on observed WIRED Gear desk language (Meta = mass surveillance / pervert glasses / extraction, Google = Nano Banana actually bananas / enthusiastic). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation. Illustrative only per project standing rule Aug 28 2026. Do not claim statistical significance from manual scores.
+      interpretation: Manual illustrative delta -0.74 suggests adversarial Meta framing (mass surveillance, pervert glasses, flooding market, creepy) vs enthusiastic Google framing (Nano Banana bananas, Tony Stark, close to Tony Stark, jaw-droppingly good) in same WIRED Gear desk May-Aug 2026 window despite Meta having stronger privacy enforcement (camera shutdown on block/tamper/mid-cover) vs Google weaker enforcement (tamper detection announced but no camera shutdown confirmed, no technical spec, unknown enforcement layer)
+    financial_context_correlation_not_causation:
+      google_condé_nast_relationship:
+        google_is_android_xr_platform_provider: true
+        google_is_android_xr_platform_provider_sources:
+        - https://www.eweek.com/news/android-xr-tamper-detection/
+        - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+        samsung_is_google_android_xr_hardware_partner: true
+        samsung_hardware_partner_sources:
+        - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+        google_gemini_ai: true
+        note: Programmatic ad revenue and Samsung global advertiser rank claims removed pending primary source verification per Aug 31 quality audit - previous entries conflated Condé Nast/WIRED with Vox Media/The Verge which are separate publishers
+      meta_condé_nast_relationship:
+        meta_content_licensing_deal_with_wired: 0
+        meta_content_licensing_deal_with_wired_detail: 0 identified in existing profiles, no public WIRED press release documenting Meta licensing deal as of Aug 31 2026
+        meta_advertising_deal_with_wired: 0
+        meta_advertising_deal_with_wired_detail: 0 identified per existing profiles, no WIRED media kit listing Meta as advertiser recovered
+        meta_is_ad_competitor_to_condé_nast: true
+        meta_ad_competitor_note: Meta and Condé Nast both operate in digital advertising market, Meta as platform, Condé Nast as publisher, directional incentive is plausible but not documented as editorial directive
+      direction_of_money_predicts: Softer Google coverage (platform partnership, hardware partner fashion brands Gentle Monster/Warby Parker with WIRED editorial history) vs adversarial Meta coverage (0 documented licensing/advertising deals with WIRED in recovered sources) - correlation not causation, no documented editorial directive
+      non_causal_language: Financial relationships may correlate with coverage patterns but do not prove editorial influence or causation. No documented editorial directive linking licensing revenue or ad revenue to coverage decisions. Confounders include beat assignment, product stage, market share, sourcing access, news peg. Correlation does not imply causation per project standing rule. Objective is evidence that financial relationships may predict tone, not predetermined causal conclusion.
+    confounders:
+    - '[STRONG] Product stage - Meta shipping 7M+ glasses 2025 per EssilorLuxottica annual results, 69.2% smart-glasses market Q1 2026, 20M annual shipments aim by end 2026, daily use tripled YoY Q1 2026 vs Google Android XR prototype not yet shipped 2026/2027, less accountability scrutiny expected for prototype, but WIRED DOES investigate unshipped Meta features (dormant NameTag code full exposé, super-sensing prototype FT Jul 9) demonstrating WIRED investigates unshipped Meta while Google unshipped weaker enforcement receives zero investigation'
+    - '[STRONG] Market share / installed base - Meta 7M sold 2025 dominance vs Google/Samsung zero shipped consumer glasses, Meta ubiquity may drive more scrutiny independent of manufacturer identity, but camera-count paradox (Apple Vision Pro 12 cameras 5 sensors 6 mics vs Meta 1 camera) suggests market share does not fully explain surveillance vocabulary routing'
+    - '[MODERATE] Beat assignment - WIRED Gear desk may assign Google I/O live blog to different sub-team than Meta investigative Business Wars series, but same journalist Julian Chokkattu appears in both (Google I/O live blog + Business Wars expert guest) proving same-journalist comparison valid'
+    - '[MODERATE] Form factor - Meta Ray-Ban looks like ordinary glasses covert-capable vs Google Android XR also looks like ordinary glasses (Warby Parker, Gentle Monster fashion partnerships) similar covert risk, both 50g, both 12MP camera, both Snapdragon AR1 Gen 1, both Gemini/Meta AI, so form factor does NOT explain framing difference'
+    - '[MODERATE] Sourcing access - Meta VP Wearables Alex Himel gave direct quote to The Verge about tamper-proof update following cheaper Meta Glasses launch, Meta sources on LED intent (do not want to activate LED when super-sensing on per FT Jul 9) vs Google sources on Android XR roadmap may reflect source availability not financial influence'
+    - '[WEAK] News peg timing - Google I/O May 19 vs Meta July 7 LED fix vs Aug 27 mid-cover fix timing separation 2-3 months may drive tone differences, but 15-day swing May 19 Google enthusiastic to Jun 3 Meta mass surveillance same journalist suggests temporal proximity does not mute framing inversion'
+    - '[WEAK] Foldables prioritization - Samsung Unpacked also announced Fold 8/Wide/Flip 8/Watch 9 may have prioritized foldables over glasses, but WIRED published multiple wearables articles same window (Meta subscription Jul 2) suggesting bandwidth available'
+    confounding_adjustment:
+      raw_delta: 0.74
+      total_adjustment: 0.28
+      adjusted_delta: 0.46
+      adjusted_calc: 0.74 - 0.28 = 0.46 moderate
+      interpretation: Even after strong confounder discount (product stage 0.12, market share 0.08, beat assignment 0.03, form factor 0.02, sourcing 0.02, news peg 0.01), moderate framing asymmetry remains - Meta stronger enforcement receives more adversarial framing than Google weaker enforcement
+    source_urls:
+    - https://www.eweek.com/news/android-xr-tamper-detection/
+    - https://www.androidauthority.com/google-android-xr-headset-roadmap-3623062/
+    - https://www.androidauthority.com/android-xr-glasses-preview-google-io-2026-3665773/
+    - https://www.wareable.com/ar/google-android-xr-glasses-2026-warby-parker-gentle-monster-project-aura
+    - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/
+    - https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+    - https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+    - https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+    - https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+    - https://theibulletin.com/meta-smart-glasses-capture-led-loophole-billboard-campaign/
+    - https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+    - https://roadtovr.com/meta-ray-ban-glasses-privacy-led-camera-update/
+    - https://petapixel.com/2026/07/08/if-users-conceal-the-recording-light-on-smart-glasses-meta-says-it-will-disable-the-camera/
+    - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
+    - https://www.archyde.com/meta-glasses-camera-disabled-led-tampering/
+    - https://www.techtimes.com/articles/320099/20260710/smart-glasses-banned-all-new-york-courts-led-safety-gap-proves-unfixable.htm
+    - https://fastcompany.co.za/tech/2026-08-25-whats-the-plan-with-metas-creepy-smart-glasses/
+    - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+    - https://www.wsj.com/tech/ai/openai-device-surroundings-preview
+    - https://www.ft.com/content/openai-device-delay-technical-issues
+    - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+    - https://toppodcast.com/podcast_feeds/business-wars/
+    test_file: tests/test_julian_chokkattu_google_android_xr_tamper_detection_vs_meta_led_enforcement_aug31.py
+    cross_references:
+    - 42
+    - 47
+    - 72
+    - 91
+    - 93
+    - 207
+    - 354
+    - 362
+    - 39
+    - 45
+    - 70
+    - 73
+    - 87
+    - 8
+    - 10
+    - 199
+    - 208
+    - 353
+    - 361
+    - 365
+    - 385
+    - 410
 - beats:
   - ai_strategy
   - digital_product
