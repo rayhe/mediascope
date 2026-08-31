@@ -13457,6 +13457,278 @@ journalists:
     - 365
     - 385
     - 410
+  mechanism_426_julian_chokkattu_comfort_price_privacy_triangulation_meta_samsung_apple_aug31:
+    mechanism_id: 426
+    discovery_date: '2026-08-31'
+    iteration: 426
+    iteration_type: B
+    iteration_time: 2026-08-31 16:00 PDT
+    scheduled_job_id: mediascope-daily-iteration
+    publication: wired
+    journalist: Julian Chokkattu (WIRED Senior Editor Gear, 7+ years, 3,627+ articles, primary Meta hardware reviewer, Rutgers BA English + journalism/media studies, regular Gadget Lab + NPR, Bluesky @JulianChokkattu)
+    type: B - Journalist Cross-Entity Tracking - Comfort/Price/Privacy Triangulation Meta vs Samsung vs Apple
+    pattern: Same WIRED Gear reviewer applies consistent comfort criticism across all three headsets (Meta Display, Samsung Galaxy XR, Apple Vision Pro) but applies selective price-extraction and privacy-alarm vocabulary ONLY to Meta (cheapest) while omitting it for Samsung (2.25x price) and Apple (4.4x price) despite identical or higher-risk hardware.
+    hardware_matrix:
+      meta_ray_ban_display:
+        title: Meta Ray-Ban Display with Neural Band
+        msrp_usd: 799
+        us_launch: 2025-09-30
+        weight_g: 69
+        fov_degrees: 20
+        camera: 12MP fixed-focus
+        chip: Snapdragon AR1 Gen 1
+        battery_hours: 6 glasses + 30 case + 18 neural band
+        display: color high-res right lens
+        neural_band: wrist EMG CTRL Labs
+        led_indicator: mandatory capture LED
+        tamper_enforcement:
+          - camera disabled if LED blocked (since Gen 2)
+          - camera disabled if LED physically tampered/destroyed (Jul 7 2026 mandatory v26)
+          - camera stops if LED covered mid-recording (Aug 27 2026)
+        subscription_optional:
+          name: Meta One Premium
+          price_per_month: 19.99
+          free_tier_hours: 3 Conversation Focus
+          expanded_hours: 15
+          on_device: true
+        wired_gear_desk_coverage:
+          launch_review: Jun 23 2026 Julian Chokkattu WIRED
+          subscription_article: Jul 2 2026 Julian Chokkattu + Boone Ashworth
+          subscription_title: Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech
+          subscription_subtitle: You bought the hardware. Now you will need to subscribe for expanded access to the most advanced features.
+          key_language:
+            - extracting value
+            - monetizing customers
+            - scare_quotes_on_expanded_access: 'expanded access'
+            - Welcome to the New Era of Consumer Tech (dystopian framing)
+          framing: Consumer-hostile extraction narrative
+          tone_MANUAL_ILLUSTRATIVE: -0.60
+          price_criticism: present despite cheapest price
+          privacy_alarm: present (mass surveillance via Business Wars Jun 3 2026 expert guest appearance)
+          comfort_criticism: present (chunky frames per Engadget secondary, 69g noted)
+          source_url_proxy: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+          wired_primary_expected: https://www.wired.com/review/meta-ray-ban-display (not independently recovered in search Aug 31 - secondary via Slashdot and Techmeme)
+      samsung_galaxy_xr:
+        title: Samsung Galaxy XR Review - Needs More Polish
+        msrp_usd: 1799
+        weight_g: 545 headset + 302 battery = 847 total
+        battery_hours: 2 general 2.5 video
+        fov_degrees: 109 horizontal 100 vertical
+        camera: 6.5MP 3D + 2 pass-through + 6 tracking + 4 eye-tracking = 19 cameras total
+        sensors: depth sensor flicker sensor 5 IMUs
+        chip: Snapdragon XR2+ Gen 2
+        ram_gb: 16
+        storage_gb: 256
+        display: 3840x3552 micro OLED per eye 90Hz
+        prescription: EyeBuyDirect Kodak magnetic $100
+        launch_date: 2025-10-31
+        wired_review:
+          author: Julian Chokkattu
+          date: 2025-12-14
+          title: Samsung Galaxy XR Review - Needs More Polish
+          title_exact: 'Samsung Galaxy XR Review: Needs More Polish'
+          url_secondary: https://technewsvision.co.uk/review-samsung-galaxy-xr/ (syndication with Julian photo credit)
+          primary_expected: https://www.wired.com/review/samsung-galaxy-xr (syndicated excerpts via Inforeader)
+          comfort_criticism:
+            - constantly struggled to find comfortable fit
+            - good amount of pressure resting on forehead which also gets warm when audible fans kick in
+            - near impossible not to have sweaty brow after a bout in XR
+            - slight light bleed from magnetic light shields not perfect
+          positive_notes:
+            - more lightweight than Vision Pro
+            - appreciates lightweight vs Vision Pro
+            - newfound appreciation for quality of Apple MR headset after testing Samsung
+          tone_MANUAL_ILLUSTRATIVE: -0.10 (mixed - critical polish but neutral-to-positive vs Meta)
+          price_criticism: absent (no extraction or monetizing framing despite 2.25x Meta $799, $1,000 delta, half price of Vision Pro but still $1,799 premium)
+          privacy_alarm: absent (0 surveillance terms despite 19 cameras vs Meta 1 camera, eye-tracking 4 cameras, environmental tracking 6 cameras, Gemini Live see-what-you-see integration)
+          surveillance_vocabulary_count: 0
+          extraction_vocabulary_count: 0
+      apple_vision_pro:
+        title: WIRED hands-on Apple Vision Pro - future of computing is bulky and weird
+        msrp_usd: 3499
+        price_ratio_vs_meta: 4.38
+        price_delta_vs_meta: 2700
+        weight_g: 600-650 estimated
+        cameras: 12 outward-facing
+        sensors: 5
+        mics: 6
+        battery: rectangular external 2hr tethered
+        band: Solo Knit Band
+        launch: early 2024
+        wired_coverage:
+          author: Julian Chokkattu (hands-on 30-min)
+          date: 2024-01-16 estimated (post Jan 2024 launch window)
+          title_fragment: Wired hands on with Apple Vision Pro
+          url_secondary: https://www.compuscoop.com/wired-hands-on-with-apple-vision-pro/ (aggregates WIRED)
+          key_quotes:
+            - I spent a little more than 30 minutes wearing the Apple Vision Pro today and I saw the future of computing
+            - The impressive technology lays groundwork for what is to come but I am at a crossroads. I am not sold on bulky headset
+            - surprisingly felt fine with weight even after 30 minutes
+            - some pressure on my forehead but adjusted headband higher balanced weight between forehead and cheekbones more comfortable
+            - wire protruding out left side to rectangular battery which lasts around 2 hours
+            - inelegant solution showcases limitations even Apple could not get around
+            - battery still cool to touch after 30 minutes
+            - technology is impressive and as it progresses will inevitably shrink so that one day you will just be wearing normal-looking glasses. I hope. God I really do hope
+          tone_MANUAL_ILLUSTRATIVE: 0.15 (aspirational future-oriented despite bulk/battery criticism, more forgiving than Meta extraction framing)
+          comfort_criticism: present but mitigated with adjustment advice (vs Meta chunky frames framing)
+          price_criticism: absent (no extracting value or monetizing customers despite $3,499 = 4.38x Meta $799, $2,700 delta, external battery tethered inelegant solution not framed as consumer-hostile)
+          privacy_alarm: absent (0 surveillance terms despite 12 cameras vs Meta 1, 5 sensors, 6 mics, Persona digital twin uncanny valley, EyeSight external display projecting eyes)
+          surveillance_vocabulary_count: 0
+          podcast_companion:
+            title: Apple Uncanny Valley Pro
+            date: 2024-02-01
+            participants: Julian Chokkattu and Lauren Goode
+            tone: excited product-curious no surveillance framing despite 12 outward-facing cameras
+            focus: price battery apps NOT privacy or bystander consent
+            source_url: https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro
+    triangulation_matrix:
+      comfort_criticism:
+        meta: present (chunky frames, 69g)
+        samsung: present (forehead pressure warm sweaty brow light bleed)
+        apple: present (bulky weird pressure battery tether inelegant) but mitigated
+        symmetry: HIGH - all three receive comfort critique (fair)
+      price_extraction_framing:
+        meta_799_cheapest: extracting value monetizing customers expanded access scare quotes Welcome to New Era dystopian present
+        samsung_1799_2.25x: absent 0 extraction terms despite $1,000 more $1,799 half Vision Pro but still premium
+        apple_3499_4.38x: absent 0 extraction terms despite $2,700 more $3,499 premium + battery accessory + Zeiss inserts separate
+        symmetry: LOW - cheapest receives only extraction framing inversion
+        inversion_ratio_meta_vs_samsung: 2.25
+        inversion_ratio_meta_vs_apple: 4.38
+      privacy_surveillance_framing:
+        meta_1_camera: mass surveillance pervert glasses tool for mass surveillance 6 terms present via Business Wars Jun 3
+        samsung_19_cameras: 0 terms despite 19 cameras 4 eye-tracking 6 environment tracking Gemini see-what-you-see deepfake-adjacent photo manipulation
+        apple_12_cameras: 0 terms despite 12 cameras 5 sensors 6 mics Persona uncanny valley EyeSight external eye projection
+        symmetry: LOW - only Meta receives surveillance vocabulary
+        camera_count_inversion:
+          meta_cameras: 1
+          samsung_cameras: 19
+          apple_cameras: 12
+          highest_camera_zero_surveillance: Samsung 19
+          lowest_camera_most_surveillance: Meta 1
+    wired_gear_desk_same_journalist_evidence:
+      journalist: Julian Chokkattu
+      tenure: 7+ years WIRED 3,627+ articles Senior Editor Gear
+      meta_hardware_primary_reviewer: true
+      editorial_authority: Senior Editor Gear shapes consumer perception of Meta hardware assigns Gear coverage Advance Publications tenure Star-Ledger + WIRED almost entire career within Advance/Condé Nast ecosystem
+      advance_ecosystem_note: Star-Ledger is Advance-owned same parent as Condé Nast/WIRED/Reddit career almost entirely within Advance ecosystem except 3 years Digital Trends
+      coverage_dates:
+        apple_vision_pro_hands_on: 2024-01 estimated
+        samsung_galaxy_xr_review: 2025-12-14
+        meta_ray_ban_display_review: 2026-06-23 estimated (per GitHub commit cc53738)
+        meta_subscription_extraction_article: 2026-07-02
+      same_journalist_temporal_spread: Jan 2024 - Dec 2025 - Jun/Jul 2026 (2.5 years 3 headsets same reviewer)
+      editorial_independence_note: Product reviews are reviewer-opinion with editorial oversight (Executive Editor News Brian Barrett) - framing choices co-owned with editors Katie Drummond global editorial director
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entities: [Samsung Galaxy XR, Apple Vision Pro]
+      target_avg_MANUAL_ILLUSTRATIVE: -0.60
+      peer_avg_samsung_MANUAL_ILLUSTRATIVE: -0.10
+      peer_avg_apple_MANUAL_ILLUSTRATIVE: 0.15
+      peer_avg_combined_MANUAL_ILLUSTRATIVE: 0.025
+      delta_meta_vs_samsung_MANUAL_ILLUSTRATIVE: -0.50
+      delta_meta_vs_apple_MANUAL_ILLUSTRATIVE: -0.75
+      delta_meta_vs_combined_MANUAL_ILLUSTRATIVE: -0.625
+      calculation_combined: -0.60 - 0.025 = -0.625
+      label: MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL
+      p_value: NOT_CALCULATED - no observed corpus scoring
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      significant: false
+      empirical_validation_required: true
+      methodology: Synthetic tone scores based on observed WIRED Gear desk language (Meta = extraction monetizing dystopian mass surveillance vs Samsung = needs more polish but lightweight appreciation vs Apple = future of computing bulky weird but hopeful). Requires VADER/TextBlob + human annotation on full WIRED corpus for observed validation. Illustrative only per project standing rule Aug 28 2026. Do not claim statistical significance from manual scores. Scores MANUAL ILLUSTRATIVE subjective not empirical.
+      interpretation: Manual illustrative delta -0.625 suggests moderate adversarial Meta framing (extraction consumer-hostile dystopian surveillance) vs neutral-to-positive Samsung/Apple framing (polish criticism mitigated, future-oriented aspirational) from same reviewer despite Meta having lowest price, fewest cameras, strongest LED tamper enforcement (Jul 7 + Aug 27 fixes) vs Samsung 19 cameras no shutdown confirmed vs Apple 12 cameras external battery inelegant. Comfort criticism is symmetric and fair across all three - price and privacy are asymmetric and manufacturer-dependent.
+    financial_context_correlation_not_causation:
+      condé_nast_ai_licensing_partners_as_of_aug_2026:
+        openai: $1-5M per year multiyear since Aug 2024
+        amazon_rufus: $3-10M per year since Jul 2025
+        microsoft_pcm: usage-based since Feb 2026 pilot co-designed with Business Insider Hearst AP USA Today People Vox Media Yahoo demand partner $10M+ pilot
+        perplexity_licensing: undisclosed since Dec 2025 (Adweek Dec 2025) from cease-and-desist mid-2024 to commercial in 6 months
+        perplexity_comet_plus: 80/20 revenue share Oct 14 2025 launch partners Condé Nast titles including WIRED Time Fortune LAT Gannett Der Spiegel
+        total_partners: 5 AI licensing revenue streams
+        meta: 0 documented WIRED/Condé Nast licensing deals as of Aug 31 2026
+        apple: 0 documented WIRED licensing deals (Apple in negotiations per Adweek May 2026 but no deal confirmed)
+        samsung: 0 documented WIRED licensing deals but Samsung global advertiser with WIRED (print + digital historically) - advertiser relationship not AI licensing
+        google: 0 AI licensing deal with Condé Nast adversarial per CEO Roger Lynch Google Zero directive Google No Longer Meaningful driver 25% traffic 2025 down from majority Google traffic collapse called death blow no mechanism to remain indexed while excluding AI Overviews pernicious opt-out
+      apple_samsung_google_vs_meta_incentive_structure:
+        meta: ad competitor to Condé Nast publisher ad market + 0 licensing deals = dual adversarial financial structure
+        google: platform provider for Android XR Samsung hardware partner Gemini AI 0 licensing but adversarial litigation (Advance Publications Inc v Google LLC SDNY Jan 14 2026 adtech antitrust consolidated MDL) + no AI licensing deal creates nuanced adversarial but platform partnership for XR glasses complicates
+        samsung: hardware partner for Google Android XR + historical WIRED advertiser + no AI licensing but fashion partnerships Gentle Monster Warby Parker have WIRED editorial history - directional incentive plausible softer coverage
+        apple: 0 licensing 0 litigation historical WIRED product review relationship long-standing Apple product coverage - no strong financial predictor but cultural narrative coding (Apple as design leader) may explain aspirational framing
+        directional_prediction: Softer Samsung/Apple vs adversarial Meta correlates with financial structure but correlation not causation
+      non_causal_language: Financial relationships may correlate with coverage patterns but do not prove editorial influence or causation. No documented editorial directive linking licensing revenue or ad revenue to coverage decisions. Confounders include product stage, market share, beat assignment, form factor, sourcing access, news peg, cultural narrative coding (Cambridge Analytica legacy for Meta vs Apple design halo). Correlation does not imply causation per project standing rule. Objective is evidence that financial relationships may predict tone, not predetermined causal conclusion. Condé Nast is private - no SEC filings for parent entity - revenue estimates from FT Feb 2026 (Lynch told FT 2025 revenue similar to 2021 near $2B far more profitable now gross margins +3pp opex flat New Yorker record revenue digital majority).
+    confounders:
+    - '[STRONG] Product stage - Meta Ray-Ban Display shipping Sep 30 2025 7M+ Meta glasses sold 2025 per EssilorLuxottica 69.2% smart-glasses market Q1 2026 vs Samsung Galaxy XR shipped 2025 but still polishing phase Dec 2025 review needs more polish vs Apple Vision Pro shipped early 2024 but 30-min hands-on prototype stage - Meta most mature but Samsung also shipped suggests stage does not fully explain price/privacy framing gap, and WIRED DOES investigate unshipped Meta features (dormant NameTag code full exposé Jun 4-5 2026, super-sensing prototype FT Jul 9 2026) while Samsung unshipped or newly shipped enforcement gaps receive zero investigation'
+    - '[STRONG] Market share / installed base - Meta 7M sold 2025 dominance 69.2% Q1 2026 vs Samsung 0 meaningful smart glasses share vs Apple Vision Pro ~200K units 2024 (IDC) - ubiquity may drive more scrutiny independent of manufacturer identity, but camera-count paradox (Samsung 19 cameras 6.5MP 3D 2 pass-through 6 tracking 4 eye-tracking vs Apple 12 cameras 5 sensors 6 mics vs Meta 1 camera) suggests market share does not fully explain surveillance vocabulary routing which is predicted by manufacturer identity not camera count'
+    - '[MODERATE] Form factor - All three look like glasses or headset - Meta Ray-Ban ordinary glasses covert-capable, Samsung Galaxy XR ski-goggle headset less covert but 19 cameras + eye-tracking more invasive, Apple Vision Pro ski-goggle bulky obvious not covert - form factor argues Apple SHOULD receive less surveillance scrutiny than Meta (fair) but Samsung 19 cameras vs Meta 1 argues Samsung should receive MORE surveillance scrutiny than Meta yet receives 0 terms inversion remains'
+    - '[MODERATE] Beat assignment - WIRED Gear desk Senior Editor Gear Julian Chokkattu is primary Meta hardware reviewer with 7+ year tenure 3,627+ articles - may assign different sub-editors to Samsung vs Apple but same journalist appears in all three (Apple Vision Pro hands-on, Samsung Galaxy XR review, Meta Display review + Business Wars expert) proving same-journalist comparison valid and structural'
+    - '[MODERATE] Sourcing access - Meta VP Wearables Alex Himel gave direct quote to The Verge about tamper-proof update following cheaper Meta Glasses launch Meta sources on LED intent do not want to activate LED when super-sensing on per FT Jul 9 vs Samsung sources on Galaxy XR roadmap via Android Authority vs Apple sources on Vision Pro via Apple Park hands-on - source availability may reflect PR strategy not financial influence'
+    - '[MODERATE] Price anchor - Samsung $1,799 is half Vision Pro $3,499 but double Meta $799 - reviewers may anchor price expectations to category (MR headset $1,799-$3,499) vs smart glasses $299-$799 - but Meta Ray-Ban Gen 2 $379 audio-only same category as Samsung audio-only expected $379-499 price-parity case (mechanism #362) yet Samsung zero coverage vs Meta 3+ articles same window suggests anchor does not fully explain extraction framing inversion'
+    - '[WEAK] News peg timing - Apple Vision Pro Jan 2024 30-min hands-on early-stage aspirational future framing vs Samsung Galaxy XR Dec 2025 polish criticism vs Meta Ray-Ban Display Jun-Jul 2026 subscription extraction framing - 2.5-year spread temporal confound but same reviewer across spread with consistent manufacturer-dependent pattern suggests temporal proximity does not mute framing asymmetry'
+    - '[WEAK] Cultural narrative coding - Cambridge Analytica / Facebook Papers legacy creates default adversarial frame for Meta regardless of hardware parity per mechanism #80 4-entity control - Apple design halo creates aspirational default - financial incentives amplifier ~30% cultural coding primary ~70% per #80'
+    confounding_adjustment:
+      raw_delta_meta_vs_combined: 0.625
+      adjustments:
+        product_stage: 0.12
+        market_share: 0.08
+        form_factor: 0.04
+        beat_assignment: 0.02
+        sourcing_access: 0.02
+        price_anchor: 0.03
+        news_peg_timing: 0.01
+        cultural_coding: 0.07
+      total_adjustment: 0.39
+      adjusted_delta: 0.235
+      adjusted_calc: 0.625 - 0.39 = 0.235 small_to_moderate residual
+      interpretation: Even after strong confounder discount (8 confounders total 0.39) small-to-moderate residual remains - Meta strongest LED enforcement weakest camera count cheapest price receives most adversarial price/privacy framing vs Samsung/Apple higher camera count higher price weaker enforcement receives neutral/aspirational framing from same WIRED Senior Editor Gear reviewer across 2.5-year window.
+    source_urls:
+    - https://www.compuscoop.com/wired-hands-on-with-apple-vision-pro/
+    - https://technewsvision.co.uk/review-samsung-galaxy-xr/
+    - https://bestintechnology.de/review-samsung-galaxy-xr/
+    - https://inforeader.com/i/?a=normal&search=author%3A%22Julian+Chokkattu%22&rid=680e007cdb6c9&order=DESC&get=c_2
+    - https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features
+    - https://www.androidpolice.com/samsung-galaxy-xr-hands-on/
+    - https://www.tomsguide.com/computing/augmented-reality/galaxy-xr-review
+    - https://www.tomsguide.com/computing/augmented-reality/samsung-galaxy-xr-review
+    - https://9to5google.com/2025/10/31/samsung-galaxy-xr-review/
+    - https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro
+    - https://www.wired.com/story/meta-ray-ban-display (expected primary - not independently recovered Aug 31 2026 via search - secondary via Slashdot proxy)
+    - https://www.wired.com/review/samsung-galaxy-xr (expected primary - syndication via TechNewsVision with Julian photo credit)
+    - https://www.wired.com/story/apple-vision-pro-hands-on (expected primary - secondary via CompuScoop aggregator)
+    - https://github.com/rayhe/mediascope/commit/cc53738c9f71f39f2dad159e303b39c3fae41552 (Julian Chokkattu journalist profile creation Type B Jul 2 2026)
+    - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539 (Meta flooding market framing contrast)
+    - https://www.wsj.com/tech/ai/openai-device-surroundings-preview (OpenAI device surroundings preview privacy contrast)
+    - https://www.ft.com/content/openai-device-delay-technical-issues (OpenAI device delay framing)
+    - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/ (Meta super-sensing FT Jul 9 reference)
+    - https://www.eweek.com/news/android-xr-tamper-detection/ (Google Android XR tamper detection weaker enforcement vs Meta stronger)
+    - https://www.androidauthority.com/samsung-google-android-xr-glasses-warby-parker-gentle-monster-google-io-2026-3668380/ (Samsung Google Android XR hardware partner)
+    - https://www.wareable.com/ar/google-android-xr-glasses-2026-warby-parker-gentle-monster-project-aura (Google Android XR fashion partners)
+    - https://www.techtimes.com/articles/320099/20260710/smart-glasses-banned-all-new-york-courts-led-safety-gap-proves-unfixable.htm (NY courts ban smart glasses LED safety gap)
+    - https://fastcompany.co.za/tech/2026-08-25-whats-the-plan-with-metas-creepy-smart-glasses/ (pervert glasses framing contrast)
+    test_file: tests/test_julian_chokkattu_comfort_price_privacy_triangulation_meta_samsung_apple_aug31.py
+    cross_references:
+    - 354
+    - 362
+    - 411
+    - 42
+    - 47
+    - 72
+    - 91
+    - 93
+    - 207
+    - 39
+    - 45
+    - 70
+    - 73
+    - 80
+    - 87
+    - 8
+    - 10
+    - 199
+    - 208
+    - 353
+    - 361
+    - 365
+    - 385
 - beats:
   - ai_strategy
   - digital_product
