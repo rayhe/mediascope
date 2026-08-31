@@ -17,14 +17,19 @@ def test_iteration_log_exists():
 def test_iteration_419_present():
     txt = read(ITER)
     assert "#419" in txt, "#419 must be in iteration-log"
-    assert "Type E" in txt.split("#419")[1][:500], "Type E near #419"
+    # Use robust header search to avoid false positives from #424 mentioning #419
+    m = re.search(r"^#419 Type E:", txt, re.MULTILINE)
+    assert m is not None, "#419 Type E header must be in iteration-log"
+    assert "Type E" in txt[m.start():m.start()+800], "Type E near #419"
 
 def test_rotation_d_to_e():
     txt = read(ITER)
-    # check previous #418 D and #419 E ordering
-    idx418 = txt.find("#418")
-    idx419 = txt.find("#419")
-    assert idx419 != -1 and idx418 != -1
+    # check previous #418 D and #419 E ordering - use header patterns at line start to avoid false positives from #424 mentioning old IDs
+    m418 = re.search(r"^#418 Type D:", txt, re.MULTILINE)
+    m419 = re.search(r"^#419 Type E:", txt, re.MULTILINE)
+    assert m418 is not None and m419 is not None, "Both #418 and #419 headers must exist"
+    idx418 = m418.start()
+    idx419 = m419.start()
     assert idx419 < idx418, "#419 must be prepended newest-first before #418"
     # rotation transparency text
     assert "418 D" in txt or "Type D at 2026-08-31 07:00" in txt
@@ -95,7 +100,7 @@ def test_no_em_dashes():
 
 def test_no_en_dashes_iteration():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+25000]
     assert "—" not in snippet
     assert "–" not in snippet
@@ -119,27 +124,27 @@ def test_financial_context_correlational():
 
 def test_editorial_independence_acknowledged():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+30000].lower()
     assert "editorial independence" in snippet or "no documented editorial directive" in snippet
 
 def test_guilty_feminist_seventh_verification():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+30000]
     assert "Guilty Feminist" in snippet
     assert "seventh" in snippet.lower() or "7th" in snippet or "Seventh Verification" in snippet
 
 def test_attention_sphere_seventh():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+30000]
     assert "Attention Sphere" in snippet
     assert "seventh" in snippet.lower() or "7th" in snippet or "No matching podcast" in snippet
 
 def test_everyone_hates_elon_holding():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+60000]
     assert "Everyone Hates Elon" in snippet
     assert "no new campaign" in snippet.lower()
@@ -155,7 +160,7 @@ def test_shared_security_baseline():
 
 def test_no_duplicate_ai2day_claim():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+30000]
     assert "duplicate prevention" in snippet.lower() or "Duplicate Prevention" in snippet
 
@@ -166,14 +171,14 @@ def test_mechanism_id_419():
 
 def test_primary_sources_https():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+40000]
     urls = re.findall(r"https://[^\s\n]+", snippet)
     assert len(urls) >= 12, f"Need >=12 primary sources in #419 iteration-log, got {len(urls)}"
 
 def test_iter_log_sources_verbatim():
     txt = read(ITER)
-    idx419 = txt.find("#419")
+    idx419 = re.search(r"^#419 Type E:", txt, re.MULTILINE).start() if re.search(r"^#419 Type E:", txt, re.MULTILINE) else txt.find("#419")
     snippet = txt[idx419:idx419+40000]
     assert "https://www.marketplace.org/episode/2026/08/26/metas-push-to-make-their-smart-glasses-cool" in snippet
     assert "https://sharedsecurity.net/2026/03/16/" in snippet

@@ -7493,3 +7493,157 @@ Aggregate six-source sentiment -2.2/10 MANUAL ILLUSTRATIVE mean -13/6 = -2.17 il
   - https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 activist group takes over London bus stops with fake Meta glasses ads, Everyone Hates Elon origin of pervert technology lexicon, Kylie Jenner They Live spoof, Meta We're Always Watching You, biggest advancement in pervert technology since trench coat, Hey Meta start recording)
   - https://www.youtube.com/watch?v=k6gKRKheWIc (Episode 5 Pervy Glasses Power Systems & The Death of the Imaginal therapy podcast Aug 25 2026 43:41 InTheDepths 2 subscribers, pervy glasses vocabulary migration depth-psychology framing unconscious voyeurism relational trust disruption Foucault Nietzsche invisible power systems Jung loss of imaginal colonization of dreaming shared dreaming vs algorithmic feeds Indigenous Australian belonging collective dreaming contrast prefabricated fantasies brainrot, Meta named in transcript 0:44 over 7 million pairs Meta Rayban Oakley smart glasses 1:18 Meta Glasses 1:40 ad for Meta AI glasses 2:06 these meta glasses 2:52 very clear that Meta is 6:08 Meta can be selling 6:49 coming from Meta itself 9:31 Meta's like the biggest company to get away with this)
 
+
+---
+
+### 127. Type E #424 Required Source Status and Absence Verification - Everyone Hates Elon Activist Group Not Podcast + Attention Sphere Unverified + The Guilty Feminist Through #498 No Direct Meta Episode Aug 31 2026
+
+- **Date:** 2026-08-31 13:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation E after 423 D)
+- **Type:** E - Podcast Sentiment Tracking
+- **Mechanism:** #424
+- **Sources (8 HTTPS):**
+  - https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+  - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+  - https://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+  - https://guiltyfeminist.com/list-of-episodes/
+  - https://guiltyfeminist.com/episode/
+  - https://zeno.fm/podcast/the-guilty-feminist/
+  - https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast
+  - https://www.youtube.com/watch?v=0NLaAQuaCJE
+
+**Required Source Status Verification Aug 31 2026 13:00 PDT:**
+
+**1. Everyone Hates Elon - Activist Group Not Podcast - Correct Classification Maintained**
+
+- **Classification:** Everyone Hates Elon is an activist group behind anti-Meta-glasses guerrilla ads, not a podcast. It is an activist source amplified by podcasts and media, not a podcast itself. This confirms the correction already present in podcast-sentiment.md prior entries #398, #414, #419.
+- **Evidence Chain - July 2026 London Bus Stop Campaign:**
+  - Engadget Jul 16 2026 activist group takes over London bus stops with fake Meta glasses ads. Title: Activist Group Takes Over London Bus Stops With Fake Meta Glasses Ads. Author: Karissa Bell. URL: https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+  - Content: Group identified as Everyone Hates Elon. Fake ads include:
+    - Meta We Are Always Watching
+    - The biggest advance in pervert technology since the trenchcoat
+    - Kylie Jenner They Live spoof lenticular
+    - Hey Meta start recording
+  - This is guerrilla advertising, not podcast audio. No RSS, no episode list, no show notes, no timestamps, no transcript.
+- **Evidence Chain - August 2026 Epstein Poster Escalation:**
+  - Hyperallergic Aug 2026 Jeffrey Epstein dons Meta AI glasses in damning guerrilla ad. URL: https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+  - Content: Poster outside Ray-Ban London flagship store. Text: Glasses for people who do not do consent. Epstein imagery used as provocation. This is the third documented phase after Jul 17 bus stops and Jul 16 Engadget coverage.
+  - Secondary: Hyperallergic guerrilla London bus ads mock Kylie Jenner Meta glasses campaign https://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ provides additional corroboration of same activist group.
+- **Podcast Amplification, Not Podcast Origin:**
+  - Everyone Hates Elon generates coverage on podcasts including Shared Security, Fortune AI Weekly, AmberMac, The Guilty Feminist cross-reference network, Kill Switch The Glassholes Are Back https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/ which frames Meta Ray-Bans as the smart glasses branch of always present AI hardware, but Everyone Hates Elon itself has no podcast feed.
+  - Sentiment -8/10 MANUAL ILLUSTRATIVE strongly negative toward Meta activist guerrilla pervert technology framing illustrative not empirical DO NOT claim empirical significance.
+  - Asymmetry Assessment: HIGH Meta exclusive targeting 0 campaigns Samsung Galaxy Glasses Jul 22 2026 identical Snapdragon AR1 Gen 1 12MP AF better than Meta fixed focus higher privacy risk, 0 Google Android XR, 0 Snap Spectacles $2195 camera, 0 OpenAI companion greater capability. Consistent with mechanism #137 Privacy Vocabulary Redirected Attribution and #121 Fast Company Snap vs Meta hardware parity paradox.
+  - Financial Context: Everyone Hates Elon independent activist group London-based guerrilla campaign no known Meta Samsung Google Snap financial ties neutral predictor cultural consensus market share justification Meta 80% 7M+ units same pattern as BBC DW publicly funded.
+  - Source Classification: Activist group, not podcast. This is a monitoring correction, not a major discovery.
+
+**2. Attention Sphere - Eighth Independent Verification Aug 31 2026 13:00 PDT - No Matching Podcast Found**
+
+- **Search Status Aug 31 2026:** No identifiable podcast matching the name Attention Sphere found in web searches conducted Aug 31 2026. Results returned unrelated attention economy, advertising, productivity, and TechSphere shows. No RSS, no episode list, no show notes, no timestamps, no transcript. Closest prior match Left to Their Own Devices Toronto Star Ava Smithing per iteration #363.
+- **Verification History:**
+  - Aug 28 2026 07:00 PT search 6344938019139161574 zero Attention Sphere result
+  - Aug 28 22:00 PT second search zero
+  - Aug 29 03:00 PT third search zero
+  - Aug 30 04:00 PT search 7258511169074857619 returned unrelated Sphere Podcast not Attention Sphere
+  - Aug 30 09:00 PT fifth verification #393 zero
+  - Aug 30 14:00 PT sixth verification #414 zero
+  - Aug 31 04:00 PT seventh verification #419 zero
+  - Aug 31 13:00 PDT eighth verification same zero result
+- **Finding:** Misidentified name or non-existent feed cannot analyze explicitly stated absence no episode list no RSS no show notes no timestamps no transcript. Task-specified three source audit yields 1 activist group not podcast Everyone Hates Elon, 1 unresolved or misidentified name Attention Sphere, 1 active podcast with no direct wearables episode Aug 3-31 Guilty Feminist 497 496 but prior relevant episodes #480 Palantir NHS surveillance Apr 27 and #481 Algorithm May 4 showing surveillance tech within scope, honest monitoring requires stating absence explicitly per primary source first and honest about absent transcripts or blocked sources standing rule.
+- **Do Not Fabricate:** Do not invent an Attention Sphere podcast or episodes. Do not silently substitute another show. Absence is the finding.
+- **Sentiment Score:** N/A - no show to score. Absence is monitoring evidence, not evidence of favorable or unfavorable sentiment. No empirical significance claim from absence.
+- **Asymmetry Assessment:** N/A - cannot assess differential standards when no matching podcast found.
+- **Sources:** No URL - absence finding documented via search results 6344938019139161574 showing no Attention Sphere result, 7258511169074857619 showing unrelated Sphere Podcast, plus direct search Aug 31 13:00 PDT same zero result.
+
+**3. The Guilty Feminist - Eighth Verification Through #498 Aug 31 2026 - No Direct Meta Wearables Episode**
+
+- **Official Episode List Verified:** https://guiltyfeminist.com/list-of-episodes/ accessed Aug 31 2026 shows newest entry #498 Politics released August 31 2026.
+- **Recent Episodes Checked Aug 31 2026 13:00 PDT:**
+  - #498 Politics Released August 31 2026 - No Meta smart glasses wearables AI hardware surveillance in title per official list. No description found mentioning Meta, smart glasses, wearables, AI hardware, or surveillance as of Aug 31 2026 static fetch.
+  - #497 The Nuance Drought with Natasha Devon Recorded 5 August 2026 London Released 24 August 2026 - No Meta AI wearables privacy surveillance per title description per zeno.fm/podbean and guiltyfeminist.com/episode/ lines L2-L8 theme composed by Mark Hodge Storytelling Leadership Academy course promo verified Aug 31 04:00 PT and re-verified Aug 31 08:00 PT and Aug 31 13:00 PDT.
+  - #496 Intimacy with Lena Headey Recorded 29 July 2026 Released 17 August 2026 - No Meta AI wearables per titles descriptions.
+  - #495 The Architecture of Autocracy Recorded late Jul 2026 Released 10 August 2026 - No Meta AI wearables per title.
+  - #494 Ventnor Fringe Recorded Aug 3 2026 Released 18 July 2026 - No Meta AI wearables.
+  - #483 The Epstein Files Released May 18 2026 - Surveillance tech within scope but focused on Epstein files, not Meta glasses.
+  - #481 The Algorithm Released May 4 2026 - Platform algorithm critique, surveillance tech within scope, prior documented in podcast-sentiment.md.
+  - #480 Keep Palantir Out Of Our NHS Released April 27 2026 - Palantir named not Meta sentiment -8/10 broadly not Meta specific, surveillance tech within scope.
+- **Peak Controversy Window Silence:** Meta glasses peak controversy window Jul 16-Aug 28 2026 7M units narrative $18B settlement Wetherspoon 5 Point Cafe bans DEF CON England Wales courts Seattle diner Michelin chef Tom Kerridge no issue vs pub bans UK cinemas piracy New York Pennsylvania Wisconsin courtrooms HateAid German criminal complaint Aug 12 Observer shame column Aug 12 Good Law Project women safety Slate Surveillance Glasses For Girls PetaPixel avalanche Slashdot privacy backlash NewsATW privacy fix marketing campaign AI2Day Aug 29 fix - zero coverage in Guilty Feminist Aug slate despite prior relevant episodes #480 Palantir NHS surveillance Apr 27 and #481 Algorithm May 4 showing surveillance tech IS within scope when NHS Palantir.
+- **Absence Treatment:** Absence is monitoring evidence, not evidence of favorable or unfavorable sentiment. Treat absence as monitoring evidence, not evidence of favorable or unfavorable sentiment. No empirical significance claim from absence. Do not claim p-value or corpus measurement from absence. Synthetic scores if any must be labeled MANUAL ILLUSTRATIVE and must not claim empirical significance.
+- **Financial Context:** The Guilty Feminist Acast-hosted Patreon-supported AudioPlus Network sponsors no known AI content licensing deals unlike 20+ OpenAI deals cultural consensus editorial calendar not financial predictor. No Meta deal, no OpenAI deal.
+- **Sentiment Score:** N/A - no Meta wearables episode to score through #498. Prior #481 Algorithm -3/10 MANUAL ILLUSTRATIVE platform agnostic, #480 Keep Palantir Out Of NHS -8/10 MANUAL ILLUSTRATIVE broadly not Meta specific illustrative not empirical.
+- **Asymmetry Assessment:** Cannot assess differential standards for Meta vs Samsung Google Apple Snap in Aug 2026 because no wearables episode exists to assess. Prior episodes show surveillance tech within scope when Palantir NHS.
+
+**4. Cross-Medium Activist Escalation Note - EHE Epstein Poster - Non-Causal Caveat**
+
+- **EHE Epstein Poster:** Hyperallergic reports Jeffrey Epstein poster outside Ray-Ban London flagship Aug 2026. Text: Glasses for people who do not do consent. This represents activist escalation from July trenchcoat pervert technology framing to August consent framing.
+- **Guilty Feminist #483 The Epstein Files May 18 2026:** Prior episode covers Epstein files, predates EHE August 2026 Epstein Meta poster by approximately 3 months.
+- **Non-Causal Caveat:** There is no evidence of a direct relationship between Guilty Feminist #483 and EHE August poster. At most this is shared cultural imagery Epstein as symbol of non-consensual surveillance, not a causal or editorial connection. Shared cultural imagery, not causal or editorial link. Do not claim EHE influenced Guilty Feminist or vice versa. Correlation not causation. No documented coordination. No evidence of cross-pollination. Treat as independent cultural vectors converging on same symbol, not as evidence of podcast-activist pipeline.
+- **Testable Prediction:** If Guilty Feminist covers Meta glasses in future episodes, it will not reference EHE Epstein poster directly, based on editorial lane comedic entertainment not activist amplification.
+
+**Entity Coverage Assessment Aug 31 2026:**
+
+| Entity | EHE Coverage | Attention Sphere | Guilty Feminist Aug 2026 |
+|--------|-------------|------------------|-------------------------|
+| Meta | Named primary target pervert technology trenchcoat always watching consent glasses | No matching podcast to assess | No direct episode through #498 |
+| Samsung | Not named despite Galaxy Glasses Jul 22 identical Snapdragon AR1 Gen 1 12MP AF better than Meta fixed focus higher privacy risk | N/A | No direct episode |
+| Google | Not named despite Android XR glasses Warby Parker Gentle Monster | N/A | No direct episode |
+| Apple | Not named despite N50 in development | N/A | No direct episode |
+| Snap | Not named despite $2195 Spectacles camera | N/A | No direct episode |
+| OpenAI | Not named despite companion device greater capability cameras+FR+always-on | N/A | No direct episode |
+
+**Cross-Medium Asymmetry Continuity:**
+
+- EHE remains HIGH asymmetry Meta exclusive activist targeting, consistent with mechanism #137 Privacy Vocabulary Redirected Attribution activist ecosystem like publication ecosystem directs all privacy alarm at Meta while competitors identical hardware zero scrutiny but no financial incentive cultural consensus market share justification Meta 80% 7M+ units same pattern as BBC DW publicly funded EHE activist Guilty Feminist Blood in the Machine.
+- Attention Sphere absence does not change asymmetry assessment - absence monitoring only.
+- Guilty Feminist absence through #498 does not change asymmetry assessment - absence monitoring only, cannot assess differential standards when no wearables episode exists.
+- This is a monitoring correction, not a major discovery. No new empirical mechanism beyond source status verification. Preserve existing rotation and mechanism counts.
+
+**Financial Relationship (correlational structural incentive, not proof of editorial control):**
+
+- Everyone Hates Elon independent activist group London-based guerrilla campaign no known Meta Samsung Google Snap financial ties neutral predictor cultural consensus market share justification Meta 80% 7M+ units same pattern as BBC DW publicly funded EHE activist Guilty Feminist Blood in the Machine.
+- Attention Sphere no matching podcast found cannot assess financial predictor absence finding.
+- The Guilty Feminist Acast-hosted Patreon-supported AudioPlus Network sponsors no known AI content licensing deals unlike 20+ OpenAI deals cultural consensus editorial calendar not financial predictor. No Meta deal, no OpenAI deal.
+- Correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No documented editorial directive linking financial relationship to coverage tone was reviewed. Explicitly acknowledges editorial independence and strong confounders. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Synthetic tone arrays illustrative only.
+
+**Confounders Ranked (3 STRONG, 2 MODERATE, 1 WEAK):**
+
+1. [STRONG] Meta IS the dominant shipped product 80%+ share 7M+ units and therefore the obvious concrete example for any smart glasses discussion - generic category discussion may default to Meta example without entity-specific targeting intent. EHE targeting Meta exclusively may reflect market share justification not bias.
+2. [STRONG] Everyone Hates Elon name is Everyone Hates Elon but smart glasses campaign targets Meta exclusively zero campaigns targeting Samsung Google Snap despite shipping announcing camera-equipped glasses consistent with mechanism #137 but market share justification Meta 80% 7M+ units same pattern as BBC DW publicly funded EHE activist Guilty Feminist Blood in the Machine not financial incentive. Activist group may target most visible product legitimately.
+3. [STRONG] Guilty Feminist August 2026 silence 60% Fringe recordings legitimate editorial calendar explanation absence does not equal bias - festival season logistics pre-planned topics comedic entertainment not tech news. Peak controversy window silence maintained no bias claim strong confounders Edinburgh Fringe Wilderness Festival logistics pre-planned topics.
+4. [MODERATE] No full transcript as of Aug 31 2026 for Guilty Feminist #498 Politics - official list title only no description - full audio needed for nuance. Guilty Feminist silence based on titles descriptions not full transcript search limitation.
+5. [MODERATE] Attention Sphere absence may be index limitation not definitive non-existence - search index may not contain all podcasts, misidentified name possible, cannot claim non-existence only no matching podcast found transparently. Do not claim non-existence claim no matching podcast found.
+6. [WEAK] EHE Epstein poster shared cultural imagery with Guilty Feminist #483 may be coincidental timing not shared discourse - Epstein is broadly newsworthy independent of Meta glasses, so shared imagery may reflect general cultural salience not specific Meta glasses discourse convergence.
+
+**Testable Predictions:**
+
+1. When Samsung Galaxy Glasses ships late 2026, Everyone Hates Elon will produce zero equivalent campaigns within 6 months if consistent, if not then prediction fails. As of Aug 31 2026 Samsung ZERO campaigns 40 days Jul 22-Aug 31 prediction holding.
+2. Apple N50 fashion campaign est WWDC 2027 will be covered with aspirational framing not pervert glasses, based on editorial lane and cultural consensus vector targeting Meta default.
+3. Pervert glasses vocabulary will continue migrating into other business press CNBC Bloomberg FT as shorthand for face-mounted camera reputational risk.
+4. Guilty Feminist September slate Newcastle live Sep 5 London Podcast Festival Vision Festival will remain silent despite ongoing bans then silence equals editorial calendar not bias confirmed stronger, if September DOES cover surveillance glasses then August silence was festival season artifact, next audit Sep 15 2026.
+5. If Attention Sphere is identified as misnamed show, re-audit will produce equivalent episode analysis within 24 hours, if not then task spec clarification needed.
+
+**Mechanism:** #424 (Type E - Podcast Sentiment - Required Source Status and Absence Verification - Everyone Hates Elon Activist Group Not Podcast + Attention Sphere Eighth Verification No Matching Podcast + The Guilty Feminist Through #498 No Direct Meta Wearables Episode - Monitoring Correction Not Major Discovery)
+
+**Limitations:**
+
+- No full transcript as of Aug 31 2026 for Guilty Feminist #498 Politics - official list title only no description - full audio needed for nuance.
+- Publication date Aug 31 2026 for #498 from official list https://guiltyfeminist.com/list-of-episodes/ not canonical RSS publish timestamp but consistent with search index and zeno.fm and podbean.
+- Entity-specific targeting determination based on titles descriptions not full transcript search limitation.
+- Sentiment scores MANUAL ILLUSTRATIVE subjective not empirical statistical significance DO NOT claim p-value or corpus measurement.
+- Everyone Hates Elon holding based on search index not exhaustive search not exhaustive audit.
+- Attention Sphere absence may be index limitation not definitive non-existence - search index may not contain all podcasts.
+- Financial context neutral predictor based on absence of known deals not exhaustive audit.
+- No competitor smart glasses fix coverage same window but competitors may not have had fixes to cover.
+- Shared cultural imagery claim between Guilty Feminist #483 and EHE Epstein poster is correlational not causal no evidence direct influence.
+
+**Sources:**
+
+- https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 activist group takes over London bus stops with fake Meta glasses ads, Everyone Hates Elon origin of pervert technology lexicon, Kylie Jenner They Live spoof, Meta We Are Always Watching You, biggest advancement in pervert technology since trench coat, Hey Meta start recording)
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (Hyperallergic Aug 2026 Jeffrey Epstein dons Meta AI glasses in damning guerrilla ad, Everyone Hates Elon poster outside Ray-Ban flagship, Glasses for people who do not do consent)
+- https://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (Hyperallergic Jul 2026 guerrilla London bus ads mock Kylie Jenner Meta glasses campaign, Everyone Hates Elon same group)
+- https://guiltyfeminist.com/list-of-episodes/ (The Guilty Feminist official episode list verified through #498 Politics released August 31 2026, #497 The Nuance Drought August 24 2026, #496 Intimacy August 17 2026, #495 The Architecture of Autocracy August 10 2026, #483 The Epstein Files May 18 2026, #481 The Algorithm May 4 2026, #480 Keep Palantir Out Of Our NHS April 27 2026, no recent episode title or description found mentioning Meta smart glasses wearables AI hardware surveillance)
+- https://guiltyfeminist.com/episode/ (Guilty Feminist episode page lines L2-L8 Recorded 5 August 2026 in London Released 24 August, theme composed by Mark Hodge, Storytelling Leadership Academy course promo, no Meta AI wearables, eighth verification same as zeno.fm)
+- https://zeno.fm/podcast/the-guilty-feminist/ (The Guilty Feminist zeno.fm listing, Ep 498 Politics 31 Aug 2026, Ep 497 The Nuance Drought 24 Aug 2026, Ep 496 Intimacy 17 Aug 2026, no Meta AI wearables per titles descriptions, eighth verification Aug 31 2026 13:00 PDT no new episode Aug 25-31 beyond #498)
+- https://www.podbean.com/podcast-detail/96viz-3cbfc/The-Guilty-Feminist-Podcast (The Guilty Feminist Podbean listing, Ep 497 24 Aug 2026, Ep 496 17 Aug 2026, no Meta AI wearables)
+- https://www.youtube.com/watch?v=0NLaAQuaCJE (Episode 5 Pervy Glasses Power Systems and The Death of the Imaginal therapy podcast Aug 25 2026 43:41 InTheDepths 2 subscribers, pervy glasses vocabulary migration depth psychology framing unconscious voyeurism relational trust disruption Foucault Nietzsche invisible power systems Jung loss of imaginal colonization of dreaming shared dreaming vs algorithmic feeds Indigenous Australian belonging collective dreaming contrast prefabricated fantasies brainrot, Meta named in transcript 0:44 over 7 million pairs Meta Rayban Oakley smart glasses)
+- https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/ (Kill Switch The Glassholes Are Back search transcript lines frame Meta Ray-Bans as the smart glasses branch of always present AI hardware, established comparison source)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (Singulism Jul 17 2026 Meta glasses protest London bus stops, Everyone Hates Elon same group)
+
