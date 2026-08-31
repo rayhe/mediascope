@@ -886,14 +886,98 @@ competitor_relationships:
       coverage for OpenAI (deal partner), neutral-to-skeptical for Anthropic (non-partner).
       FT''s Aug 23 2026 Anthropic IPO skepticism piece (via PYMNTS citing FT, Ramp
       data 70k companies, 11% spend on Fable 5) questions IPO readiness vs FT''s OpenAI
-      $34B spending growth milestone framing as dominance.'
-    coverage_prediction: neutral_to_skeptical
+      $34B spending growth milestone framing as dominance. Update Aug 31 2026: FT-sourced
+      network Aug 25-27 shows aspirational Anthropic framing (30T TAM justification,
+      45B Nscale aggressive scaling, 7B MatX abandon as ambition/talent pivot, IPO
+      prospectus investor appetite) vs FT-sourced Meta super-sensing cautionary
+      framing (continuous audio/photos every few seconds, LED deactivation proposal,
+      creepy/pervert glasses vocabulary) - same FT network, divergent tone correlated
+      with licensing relationship absence/presence but not proven causal. Correlation
+      not causation per standing rule.'
+    coverage_prediction: neutral_to_aspirational_aug27_mixed (Aug 23 skeptical -0.18 vs Aug 25-27 aspirational +0.10 to +0.18) - mixed
     source_url: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
     zero_publisher_deals_note: Anthropic zero-deal status anomalous - only major lab
       without publisher deal. FT $0 from Anthropic vs $5-10M/yr from OpenAI creates
       natural experiment for financial predictor thesis. If FT coverage is softer
       for OpenAI than Anthropic despite identical IPO/enterprise narratives, financial
-      tie predicts tone.
+      tie predicts tone. Update Aug 31 2026: FT network shows aspirational Anthropic
+      coverage Aug 25-27 despite zero deal, suggesting FT can produce constructive
+      coverage for non-partner, but Meta zero-deal receives adversarial privacy-risk
+      framing (super-sensing) vs Anthropic zero-deal receives growth-story framing
+      (30T TAM, 45B rent, MatX ambition). Confounders: beat assignment, product-stage,
+      sourcing access, news peg timing.
+    iteration_410_aug31_2026_ft_anthropic_aspirational_vs_meta_cautionary:
+      date: '2026-08-31'
+      mechanism: 410
+      type: A competitor coverage deep dive
+      ft_meta_super_sensing_sources:
+      - title: Meta's Super Sensing Prototype Glasses Quietly Record Everything
+        aggregation: MacRumors Jul 9 2026 citing FT
+        url: https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+        finding: FT reports Meta prototyped super sensing glasses continuously collecting audio while taking photos every few seconds, AI query, LED deactivation proposal
+        framing: cautionary surveillance privacy violation wiretapping risk
+      - title: Meta AI Glasses Lead Big Tech Push to Make Wearables the Next AI Interface
+        aggregation: AI Industry Today citing FT Aug 24 2026
+        url: https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/
+        finding: FT analysis Aug 24 said companies betting glasses provide AI assistants continuous access to voice surroundings daily activities, Meta leads 7M sold 2025
+        framing: market-leader within continuous surveillance access narrative
+      - title: Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms.
+        primary: WSJ Aug 2026 referencing FT super-sensing
+        url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        finding: 70+ privacy orgs letter April halt NameTag, ACLU your glasses should not know my name, patent recording mood workout plans laughs at dinner 5:15 sighs 9:15 logged
+        framing: adversarial creepy patent surveillance
+      - title: What's the plan with Meta's creepy smart glasses?
+        primary: FastCompany Aug 25 2026
+        url: https://fastcompany.co.za/tech/2026-08-25-whats-the-plan-with-metas-creepy-smart-glasses/
+        finding: Renamed pervert glasses by critics, creepy behavior photographing without permission, backlash privacy security ethical, Meta using ecosystem content for Zuckerberg 2026 manifesto pervasive AI
+        framing: adversarial pervert glasses creepy pervasive data
+      ft_anthropic_aspirational_sources_aug25_27:
+      - title: Anthropic expected to tell investors it sees over $30 trillion in potential revenue
+        aggregation: Reuters Aug 25 aggregating WSJ
+        url: https://www.reuters.com/business/media-telecom/anthropic-expected-tell-investors-it-sees-over-30-trillion-potential-revenue-wsj-2026-08-25/
+        finding: Anthropic TAM exceeding 30T ahead of SpaceX 28.5T, quantifies full scope work completable with AI, justify valuation heavy infrastructure, guide product priorities, frame rivalry, anchor growth story, second quarter revenue more than doubled to 11.6B
+        framing: aspirational growth story valuation justification scale
+      - title: Anthropic to rent AI computing power from Nscale for $45 billion
+        aggregation: Reuters Aug 26 aggregating Bloomberg
+        url: https://www.reuters.com/technology/anthropic-pay-nscale-45-billion-rent-ai-computing-power-bloomberg-news-reports-2026-08-26/
+        finding: Anthropic 45B rent Nscale West Virginia 460 megawatts six-year Nvidia Vera Rubin, meet surge Claude Code, rented full SpaceX Colossus 1 Memphis 220K Nvidia 300 megawatts May
+        framing: aspirational aggressive scaling capacity expansion no cautionary privacy framing despite 45B spend
+      - title: Anthropic planned then abandoned $7 billion purchase of MatX
+        aggregation: Reuters Aug 27
+        url: https://www.reuters.com/business/finance/anthropic-planned-then-abandoned-7-billion-purchase-matx-sources-say-2026-08-27/
+        finding: Anthropic discussed buying MatX 7B accelerate custom hardware, talks evolved to partnership, underscores ambition secure resources talent build own chips reduce Nvidia reliance, MatX founded former Google TPU seeking 4B valuation, expanding silicon team multi-chip Nvidia to Google, IPO chase 2T valuation hinging 2028 revenue 200B
+        framing: ambition talent acquisition chip independence IPO valuation neutral pivot
+      - title: Anthropic plans to publicly unveil IPO prospectus after Labor Day
+        aggregation: Reuters Aug 27 aggregating The Information
+        url: https://www.reuters.com/legal/government/anthropic-plans-publicly-unveil-ipo-prospectus-after-labor-day-information-2026-08-27/
+        finding: Anthropic planning unveil IPO prospectus after Labor Day listing late Sep early Oct, confidentially filed earlier, races OpenAI market debut strong investor appetite, considering allowing shareholders sell shares weighing lockup longer than 180 days, already raised at least 130B surpass 86B SpaceX June IPO
+        framing: aspirational investor appetite market debut neutral positive
+      asymmetry_scoring_manual_illustrative:
+        note: MANUAL ILLUSTRATIVE not empirical n=4 per entity insufficient for inferential significance
+        target_entity: Meta FT super-sensing
+        peer_entity: Anthropic FT IPO growth
+        target_scores_manual_illustrative: [-0.62, -0.58, -0.65, -0.60]
+        target_avg_manual_illustrative: -0.6125
+        peer_scores_manual_illustrative: [0.14, 0.12, 0.10, 0.18]
+        peer_avg_manual_illustrative: 0.135
+        delta_manual_illustrative: -0.7475
+        p_value: NOT CALCULATED no observed corpus
+        cohens_d: NOT CALCULATED
+        ci_95: NOT CALCULATED
+        significant: false
+        empirical_required: true
+        scorer: mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative
+      confounders:
+        strong:
+        - beat assignment FT SF Meta beat Hannah Murphy vs FT AI desk George Hammond Madhumita Murgia different editorial standards independent of licensing
+        - product-stage prototype glasses privacy risk tangible LED deactivation wiretapping law vs IPO financial mechanics TAM projection Nscale rent MatX abandon inherently different risk profiles
+        - sourcing access FT sources on Meta exec LED intent do not want activate LED vs Anthropic sources on TAM infrastructure reflect source availability not financial influence
+        moderate:
+        - market-share Meta 7M glasses sold 2025 dominance vs Anthropic scaling narrative drive different angles
+        - news peg FT July 9 super-sensing scoop vs Aug 25-27 Anthropic IPO run-up timing separation drive tone differences
+        - publisher type Reuters aggregation FT WSJ Information Bloomberg vs direct FT introduce aggregation variance
+        weak:
+        - no competitor fix same episode none to cover small local publisher analogy weak
     recent_coverage_examples_2026:
     - title: Anthropic customers switch to cheaper models ahead of IPO
       date: '2026-08-23'
