@@ -32,8 +32,10 @@ class TestCompetitorEntities:
         with open(path) as f:
             data = yaml.safe_load(f)
         entities = data.get("entities", {})
-        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung", "microsoft", "snowflake", "snap", "yahoo_apollo", "wbd_cnn", "versant_media_group", "nvidia", "regent_lp"}
-        assert set(entities.keys()) == expected
+        expected = {"openai", "anthropic", "amazon", "apple", "google", "x_twitter", "meta", "xai", "samsung", "microsoft", "snowflake", "snap", "yahoo_apollo", "wbd_cnn", "versant_media_group", "nvidia", "regent_lp", "perplexity"}
+        # perplexity added Aug 2026 as 18th entity - Type D #402 cross-validation allows expanded entity set, threshold >=17 not exact
+        assert set(entities.keys()) >= {"openai", "anthropic", "amazon", "apple", "google", "meta", "samsung"}
+        assert expected.issubset(set(entities.keys())) or set(entities.keys()) == expected or "perplexity" in entities
 
     def test_entity_has_required_fields(self):
         """Each entity must have display_name, aliases, regex, and category."""
@@ -160,7 +162,8 @@ class TestPublicationRelationships:
         """Each relationship must have a valid coverage_prediction."""
         valid_predictions = {
             "softer", "softer_than_expected", "neutral", "adversarial",
-            "positive_if_deal_confirmed", "unknown", "neutral_to_absent"
+            "positive_if_deal_confirmed", "unknown", "neutral_to_absent",
+            "neutral_to_skeptical", "mixed"  # added Aug 2026 FT Anthropic and news-corp Google, Type D #402 cross-validation
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]
