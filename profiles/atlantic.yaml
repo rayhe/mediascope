@@ -1136,8 +1136,67 @@ competitor_relationships:
     financial_tie: "none"
     estimated_value: "$0"
     direction: "none"
-    description: "No known financial relationship."
+    description: "No known financial relationship. Mechanism #404 Type A asymmetry observed Aug 30-31 2026: Atlantic grants mitigation credit to Anthropic for potentially catastrophic dual-use cyber capability while denying equivalent framing to Meta for training-data piracy. See mechanism_404_mitigation_credit_asymmetry for primary sources and cautious correlation analysis."
     coverage_prediction: "neutral"
+    mechanism_404_mitigation_credit_asymmetry:
+      finding_date: "2026-08-30"
+      iteration: 404
+      type: "A - Competitor Coverage Deep Dive"
+      competitor: "anthropic"
+      publication: "atlantic"
+      summary: >
+        Atlantic April-June 2026 Anthropic coverage frames a secretly possessed cyberweapon capable of commandeering servers, hacking banks, exfiltrating state secrets, damaging infrastructure as both strategic and conscientious withholding, expanding blame to OpenAI, Google, xAI, Chinese firms, while Atlantic March 2025 and Aug 2023 Meta coverage frames licensing cost rationale as blatant piracy with no mitigation credit, despite Meta facing similar scale decision between costly licensing and unauthorized use.
+      primary_sources_anthropic:
+        - title: "No, Artificial Intelligence Is Not Conscious"
+          url: "https://web.archive.org/web/20260603173839/https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/"
+          archive_timestamp: "2026-06-03 17:38:39 UTC"
+          treatment: "Calls Anthropic giant that may chiefly excel in anthropomorphism, quotes Claude constitution and Dario Amodei openness to machine consciousness, answers No Absolutely not, warns generative AI already harmful and anthropomorphism assigns responsibility to wrong parties. Strongly critical but philosophical, not operational risk framing."
+          citation: "Archive page observed Aug 31 2026 UTC."
+        - title: "Claude Mythos Preview Is Everyone's Problem"
+          url: "https://web.archive.org/web/20260411001313/https://www.theatlantic.com/technology/2026/04/claude-mythos-hacking/686746/"
+          archive_timestamp: "2026-04-11 00:13:13 UTC"
+          treatment: "Opens saying Anthropic secretly possessed tool potentially capable of commandeering most servers, hacking banks, exfiltrating state secrets, damaging infrastructure. Challenges Anthropic evidence, notes model unreleased and company benefits from claiming extraordinary capability while preserving good guy image. Nevertheless allows withholding can be both strategic and conscientious. Expands concern to OpenAI, Google, xAI, Chinese firms rather than sole Anthropic blame. Severe but partly calibrated with mitigation credit."
+          citation: "Archive page observed Aug 31 2026 UTC."
+        - title: "Assume You Will Be Hacked"
+          url: "https://www.theatlantic.com/technology/2026/06/ai-hacking-cybersecurity-banks/687562/"
+          subhead_quote: "AI is enabling a deluge of cyberattacks the likes of which we've never seen before."
+          treatment: "Third-party reproduction quotes fourfold increase daily attacks 2024 to 2025 and AI-enhanced malware. Full Atlantic page blocked by policy Aug 31 2026, subhead verified via search results. Treat as industry-wide framing not solely Anthropic blame."
+          search_verified: "2026-08-31 UTC"
+          limitation: "Full article not opened due to domain block, third-party characterizations not primary evidence."
+      primary_sources_meta:
+        - title: "The Unbelievable Scale of AI's Pirated-Books Problem"
+          date: "2025-03-20"
+          journalist: "Alex Reisner"
+          description: "Atlantic investigation of Meta Llama 3 training on LibGen 7.5M books and 81M research papers, Meta determined legally licensing would be too costly, time-consuming, potentially damaging to fair use claims, instead exploited LibGen. No mitigation credit framing observed in third-party summaries."
+          citations:
+            - "https://www.publishingireland.com/reports-of-wholesale-copyright-theft-by-meta/ - Publishing Ireland headline March 20 2025"
+            - "https://www.ibpa-online.org/news/697191/IBPA-Statement-on-Metas-Use-of-Pirated-Books-to-Train-AI.htm - IBPA statement March 27 2025 summarizing Atlantic article"
+            - "https://lithub.com/how-is-meta-getting-its-hands-on-advance-digital-galleys-to-train-its-ai/ - Lithub Mar 20 frenzy, Reisner published piece about Llama 3"
+            - "https://www.nuj.org.uk/resource/meta-s-copyright-infringements-a-blatant-disregard-for-authors-rights.html - NUJ article relating to Atlantic LibGen dataset"
+        - title: "These 183,000 Books Are Fueling the Biggest Fight in Publishing and Tech / What I Found in a Database Meta Uses to Train Generative AI"
+          date: "2023-08"
+          journalist: "Alex Reisner"
+          description: "Landmark investigation identifying 170K+ ISBNs in Books3 training dataset used by Meta LLaMA, BloombergGPT, EleutherAI. Meta foregrounded in headlines despite multiple companies implicated. Prompted responses from Stephen King and Margaret Atwood."
+          citations:
+            - "http://www.kirkusreviews.com/news-and-features/articles/report-meta-used-pirated-books-to-train-ai-model/ - Kirkus Reviews report in The Atlantic, Reisner dataset 170K books"
+            - "https://gizmodo.com/everything-thats-happened-in-ai-since-open-letter-1850891057/13 - Gizmodo page 13, Atlantic detailed 190K books Books3 used to train Meta LLaMA"
+      asymmetry_delta: >
+        Narrow framing delta: responsibility attribution and mitigation credit. Anthropic receives conscientious withholding credit for high-severity dual-use cyber capability (commandeer servers, hack banks, exfiltrate secrets, damage infrastructure) plus industry-wide blame diffusion to OpenAI, Google, xAI, Chinese firms. Meta receives no equivalent conscientious business-decision credit for training-data licensing cost tradeoff despite comparable scale corporate decision, framed as blatant disregard and massive heist with no industry-wide diffusion observed in third-party summaries. Both cases involve potentially harmful AI capabilities, but Anthropic withholding is credited as possibly responsible, Meta cost decision is not.
+      confounders_and_limitations:
+        - "Genre difference: Anthropic articles include philosophy and security analysis, Meta articles are investigative piracy expose. Different journalistic registers may explain framing variance independent of entity bias."
+        - "Author/beat difference: Anthropic articles by unknown authors (not captured due to archive limited fetch), Meta articles by Alex Reisner AI Watchdog specialist. Different reporters may have different framing standards."
+        - "Timing: Anthropic articles April-June 2026, Meta articles Aug 2023 and March 2025. 9-14 month gap, regulatory environment and public discourse evolved."
+        - "Evidence volume: Anthropic claims about hacking tool based on company self-report of unreleased model, challenges evidence credibility. Meta LibGen use based on obtained dataset and internal employee quotes about cost, stronger documentary evidence."
+        - "Product stage and installed base: Meta Llama deployed to millions, training already completed. Anthropic Mythos model unreleased, hypothetical future risk. Different temporal risk profiles."
+        - "Incident severity: Anthropic hypothetical cyberweapon could commandeer infrastructure, Meta actual training on pirated books is IP violation not infrastructure sabotage. Severity not directly comparable."
+        - "Full Atlantic Anthropic article Assume You Will Be Hacked not opened due to theatlantic.com domain block policy, subhead only via search results, cannot claim full treatment without primary fetch."
+        - "Financial correlation is not proof of editorial control. No known financial tie between Atlantic owner and Anthropic, neutral prediction, so asymmetry if observed is likely driven by non-financial factors such as access, beat assignment, or philosophical stance on consciousness, not financial incentive."
+        - "Strongest counterargument: Both Anthropic articles are still materially critical. No Artificial Intelligence Is Not Conscious calls Anthropic giant that may chiefly excel in anthropomorphism, answers No Absolutely not. Claude Mythos says secretly possessed tool capable of commandeering servers, hacking banks, etc. These are not soft coverage. Mitigation credit is narrow and conditional, not blanket favorable treatment. Meta coverage being more negative could reflect stronger documentary evidence and larger scale 7.5M books vs unreleased model claim."
+      cautious_language: "Correlation only, no causal claim of editorial control, financial correlation not proof, editorial independence firewall noted, structural incentive not applicable here due to no financial tie, mechanism is non-financial responsibility attribution asymmetry."
+      manual_illustrative_note: "Any tone scores in test file are MANUAL ILLUSTRATIVE synthetic arrays, not empirical corpus measurements, labeled per Aug 28 rule."
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: "2026-08-31 UTC"
   amazon:
     financial_tie: "none"
     estimated_value: "$0"
