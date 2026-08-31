@@ -411,39 +411,38 @@ journalists:
         source_url: https://www.techmeme.com/251209/p30
     meta:
       tone: absent_or_peripheral
-      article_count_estimate: 0
-      coverage_gap_notes: "CRITICAL FINDING: Will Knight  -  WIRED's senior AI writer\
-        \ and AI Lab newsletter author  -  has ZERO identified dedicated articles\
-        \ about Meta's AI technology, strategy, or leadership. Meta appears in Knight's\
-        \ coverage ONLY in peripheral roles: (1) as a talent source being poached\
-        \ FROM by OpenAI (\"OpenAI Poaches 4 High-Ranking Engineers From Tesla, xAI,\
-        \ and Meta\"); (2) as a national security concern (NeurIPS analysis: \"Llama\
-        \ featured in 106 Chinese papers\"); (3) as a benchmark to be surpassed (\"\
-        Databricks says DBRX outshines Llama 2\").\nThis is analytically extraordinary\
-        \ given that: - Meta operates FAIR, one of the world's top AI research labs\
-        \ - Meta released Llama 2/3/4, the most widely used open-weight AI models\
-        \ - Yann LeCun (Meta chief AI scientist) is a Turing Award winner and one\
-        \ of the most prominent voices in AI - Meta's AI infrastructure spending ($130-145B\
-        \ capex) rivals or exceeds any competitor's\nKnight has published ZERO Q&A\
-        \ interviews with Yann LeCun (compare: multiple extended Demis Hassabis Q&As).\
-        \ Knight has published ZERO organizational analyses of Meta AI/FAIR (compare:\
-        \ extended OpenAI talent exodus piece). Knight has published ZERO pieces on\
-        \ Llama's technical achievements (compare: Databricks DBRX, VERSES AXIOM,\
-        \ Mira Murati's Tinker).\nThe coverage gap is not random  -  it correlates\
-        \ perfectly with Condé Nast's financial incentive structure: Condé Nast has\
-        \ content licensing deals with OpenAI ($0 from Meta), and Knight's coverage\
-        \ allocates 7+ articles to OpenAI, 5+ to Google DeepMind, 3+ to Anthropic,\
-        \ and ZERO dedicated articles to Meta. As WIRED's AI agenda- setter (AI Lab\
-        \ newsletter), Knight's coverage choices determine which AI companies WIRED's\
-        \ audience perceives as leading the field.\n Aug 31 2026 Iteration #421 adds\
-        \ 2026 hardware context: OpenAI Codex Micro keyboard Jul 16 2026 $230 plus\
-        \ screenless companion $200-$300 with cameras FR always-on environmental awareness\
-        \ 200+ Apple alumni vs Meta single 12MP camera LED tamper-proof v26. Capability\
-        \ inversion score 0.92 matches #376 #403 #359 #386 pattern. Samsung Galaxy\
-        \ Glasses Jul 22 2026 intelligent eyewear Snapdragon AR1 Gen 1 12MP camera\
-        \ Gemini AI LED anti-tamper 200 patent applications holistic engineering weight\
-        \ materials thermal graphite prevents heat AP transfer - zero Knight standalone\
-        \ articles."
+      article_count_estimate: 2
+      coverage_gap_notes: 'CORRECTED Aug 31 2026 17:09 UTC browser aeed928a: Will
+        Knight does have 2 Meta articles but framing is adversarial/diminutive vs
+        aspirational for competitors. Muse Spark Apr 8 2026 Big Kid Table diminutive
+        framing, Researchers Already Leaving Aug 26 2025 instability framing vs Google
+        Gemini 3 Nov 18 2025 superlative insulation framing smartest AI model to date
+        most intelligent model best model in world engine room of Google insulated
+        from bubble competitive superiority over OpenAI explicit, Google Gemini humanoid
+        Jul 30 2026 significant jump physical AGI balanced risk, Anthropic robot dog
+        Nov 12 2025 thoughtful curious balanced risk, OpenAI Future OS Oct 6 2025
+        builder empowerment best time in history to be a builder. Framing inversion
+        0.89 not coverage gap.'
+      dedicated_articles_2024_2026: 2
+      examples:
+      - title: Meta New AI Model Gives Mark Zuckerberg a Seat at the Big Kid Table
+        date: '2026-04-08'
+        publication: wired
+        url: https://www.wired.com/story/muse-spark-meta-open-source-closed-source/
+        framing_notes: Belittling diminutive Big Kid Table implies Meta previously
+          excluded juvenile trying to catch up subtitle grudging acknowledgment after
+          reboot framing tone adversarial dismissive with reluctant performance credit
+        tone_MANUAL_ILLUSTRATIVE: -0.35
+        source_url: https://www.wired.com/story/muse-spark-meta-open-source-closed-source/
+      - title: Researchers Are Already Leaving Meta New Superintelligence Lab
+        date: '2026-08-26'
+        publication: wired
+        authors: ZOE SCHIFFER AND WILL KNIGHT co-bylined
+        framing_notes: Already Leaving signals instability chaos immediate attrition
+          negative organizational framing vs competitors talent acquisition neutral-positive
+          Google Nabs Top Talent Jan 22 2026
+        tone_MANUAL_ILLUSTRATIVE: -0.42
+        source_url: https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
     apple:
       tone: constructive_analysis
       examples:
@@ -462,7 +461,7 @@ journalists:
 
           '
         source_url: https://www.techmeme.com/240613/p26
-    cross_entity_asymmetry_score: 0.91
+    cross_entity_asymmetry_score: 0.89
     asymmetry_notes: "Extremely high asymmetry (0.91/1.0). Knight is WIRED's most\
       \ influential AI coverage voice (AI Lab newsletter, senior writer, 20+ year\
       \ AI beat veteran), and his coverage allocation creates a structural gap: WIRED's\
@@ -481,6 +480,8 @@ journalists:
       \ with Condé Nast's OpenAI content deal and absence of any Meta financial relationship.\n\
       \ Iteration #421 Type B Aug 31 2026 10:00 PDT adds hardware capability inversion\
       \ evidence OpenAI screenless companion vs Meta Ray-Ban Display."
+    asymmetry_type: framing_inversion
+    browser_correction_date: '2026-08-31T17:09:46Z'
 - awards:
   - notes: 'Portfolio/Penguin Random House, Feb 13 2024, 352pp, hardcover, ISBN 9780593716601.
       Based on 60+ employee interviews, thousands of internal docs/Slack messages.

@@ -39419,12 +39419,12 @@ will_knight_ai_coverage_allocation_gap_421:
   iteration: 421
   iteration_type: B
   discovery_date: '2026-08-31'
-  cross_entity_asymmetry_score: 0.91
+  cross_entity_asymmetry_score: 0.89
   adjusted_score: 0.53
   openai_count: 7
   google_deepmind_count: 5
   anthropic_count: 3
-  meta_count: 0
+  meta_count: 2
   coverage_gap_notes: 'Will Knight WIRED senior AI writer AI Lab newsletter author
     20+ year AI beat has ZERO dedicated Meta AI articles 2024-2026 vs 7 OpenAI 5 Google
     DeepMind 3 Anthropic. Meta appears only peripherally as talent source being poached
@@ -39534,3 +39534,17 @@ will_knight_ai_coverage_allocation_gap_421:
   - 359
   - 376
   - 403
+  meta_count_correction: 'CORRECTED Aug 31 2026 17:09 UTC browser aeed928a found 2
+    Meta articles: Muse Spark Apr 8 2026 Big Kid Table diminutive framing https://www.wired.com/story/muse-spark-meta-open-source-closed-source/
+    and Researchers Already Leaving Aug 26 2025 co-bylined https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
+    instability framing vs Google Nabs Top Talent neutral-positive'
+  asymmetry_type: framing_inversion_not_coverage_gap
+  browser_correction_date: '2026-08-31T17:09:46Z'
+  browser_task_id: aeed928a-f15e-4f29-becc-f05892c3734d
+  new_evidence_urls:
+  - https://www.wired.com/story/muse-spark-meta-open-source-closed-source/
+  - https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
+  - https://www.wired.com/story/google-gemini-can-control-humanoid-robots/
+  - https://www.wired.com/story/google-launches-gemini-3-ai-bubble-search/
+  - https://www.wired.com/story/anthropic-claude-takes-control-robot-dog/
+  - https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/

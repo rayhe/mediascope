@@ -8,7 +8,7 @@ Date: 2026-08-31 10:00 PDT
 KEY PATTERN: WIRED's senior AI writer Will Knight (AI Lab newsletter author, 20+ year AI beat,
 Cambridge MA, MIT Tech Review 2008-2019 -> WIRED Sep 2019 present) covers OpenAI, Google DeepMind,
 Anthropic with deep institutional access but has ZERO dedicated Meta AI articles 2024-2026.
-Meta appears only peripherally: talent source being poached FROM, national security concern
+CORRECTED Aug 31 2026 browser aeed928a: Meta appears in 2 articles but with adversarial diminutive framing vs aspirational for competitors: Muse Spark Apr 8 2026 Big Kid Table https://www.wired.com/story/muse-spark-meta-open-source-closed-source/ and Researchers Already Leaving Aug 26 2025 https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/ vs Google Gemini 3 Nov 18 2025 superlative insulation framing https://www.wired.com/story/google-launches-gemini-3-ai-bubble-search/ - original zero count corrected to framing inversion
 (Llama in 106 Chinese papers), benchmark to be surpassed.
 
 New 2026 hardware evidence strengthens capability inversion:
@@ -129,19 +129,26 @@ class TestWillKnightMetaGap:
     def test_meta_zero_dedicated(self):
         mech = get_mech_421()
         meta = mech.get("meta_coverage", {})
-        assert meta.get("dedicated_articles_2024_2026") == 0
-        assert meta.get("article_count_estimate") == 0
+        # CORRECTED Aug 31 2026 browser aeed928a found 2 Meta articles with adversarial framing vs aspirational for competitors
+        assert meta.get("dedicated_articles_2024_2026") == 2
+        assert meta.get("article_count_estimate") == 2
 
     def test_meta_coverage_gap_notes(self):
         mech = get_mech_421()
         notes = mech.get("meta_coverage", {}).get("coverage_gap_notes", "")
-        assert "ZERO" in notes or "zero" in notes.lower()
+        # CORRECTED Aug 31 browser found 2 Meta articles with adversarial framing
         assert "Meta" in notes
+        assert "adversarial" in notes.lower() or "diminutive" in notes.lower() or "Big Kid" in notes
 
     def test_meta_peripheral_roles(self):
         mech = get_mech_421()
-        notes = mech.get("meta_coverage", {}).get("coverage_gap_notes", "")
-        assert "poached" in notes.lower() or "poaching" in notes.lower() or "talent source" in notes.lower()
+        meta = mech.get("meta_coverage", {})
+        notes = meta.get("coverage_gap_notes", "")
+        examples = meta.get("examples", [])
+        # CORRECTED: check for adversarial framing markers from browser research
+        assert len(examples) == 2
+        assert any("Big Kid" in str(e) or "Muse Spark" in str(e.get("title","")) for e in examples)
+        assert "Already Leaving" in notes or "instability" in notes.lower()
 
 
 class TestWillKnightHardwareInversion:
