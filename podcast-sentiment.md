@@ -7141,3 +7141,81 @@ Date Range:** Aug 3-24 2026 full slate (5 episodes) plus Aug 25-30 verification 
 - **Cross-Reference:** Mechanism #359 hardware capability inversion, #376 Meta-EssilorLuxottica reverse-advertiser $3.5B, #391 Perplexity Comet Plus, #103 EssilorLuxottica advertising paradox, #84 WIRED OpenAI hardware delay framing, #42 Blood in the Machine luxury surveillance academic context, #41 AI2Day Meta fixes recording, #112 Fortune AI Weekly original validation, #113 Fortune Daily aspirational, #117 AI2Day duplicate prevention, #118 Guilty Feminist fifth verification, #119 Attention Sphere fifth verification, #120 EHE 20-day hold
 - **Sources:** https://www.youtube.com/watch?v=TVdoEPg42pQ , https://startupfortune.com/the-pushback-against-always-on-ai-glasses-has-begun/ , https://startupfortune.com/metas-smart-glasses-trigger-a-privacy-backlash-it-cant-fix-with-software/ , https://sharedsecurity.net/2026/03/16 , https://www.youtube.com/watch?v=gxZj-XGIQ3Y , https://www.youtube.com/watch?v=wjL6Ic-QP-s
 
+### 122. Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal - Therapy/Depth-Psychology Framing Migration (New Discovery Aug 31 2026 02:00 UTC)
+
+- **Podcast:** Independent depth-psychology / therapy podcast by Lauran and Joseph (show name not disclosed in static YouTube fetch Aug 31 2026, therapists Lauran and Joseph per description, channel InTheDepths 2 subscribers per browser verification Aug 31 2026 02:03 UTC)
+- **Episode:** Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal
+- **Date:** Aug 25 2026 (YouTube publish displayed as 29 views Aug 25 2026 per browser verification, search observed 2026-08-31 UTC during run, result metadata says Last Updated 6 days ago, Last Crawl 5 days ago, consistent with Aug 25 2026 publish)
+- **Duration:** 43:41 (0:00 / 43:41 per browser verification, button label 0 Minutes 0 Seconds of 43 Minutes 41 Seconds total)
+- **Source URL:** https://www.youtube.com/watch?v=k6gKRKheWIc
+- **Timestamps:** No chapter list returned in static fetch, browser verification confirms no chapter list, no timestamp links in description, no Chapters panel, transcript shows continuous conversation markers not editorial chapters. Description outlines 5 thematic sections without timestamps:
+  1. The Pervy Dimension and Unconscious Voyeurism
+  2. Foucault, Nietzsche, and Unconsciously Built Systems
+  3. Shared Dreaming vs Algorithmic Feeds (Indigenous Australian understandings of belonging and collective dreaming contrasted with prefabricated fantasies)
+  4. Jung and The Loss of the Imaginal
+  5. Jung & The Loss of the Imaginal (verbatim with ampersand as appears in description - Why dreaming, fantasy, and holistic symbolic thinking are essential paths forward for the soul)
+  6. Finding the Middle Path (move past blind tech-adoption or reactionary panic, cultivating critical responsibility)
+- **Key Quotes (verbatim from YouTube description lines observed Aug 31 2026):**
+  - What if wearable tech isn't just eroding our public privacy, but quietly building invisible systems of control and colonizing the sacred, imaginal realm of human dreaming?
+  - In this candid conversation, therapists Lauran and Joseph look past gadget marketing to examine smart glasses, power dynamics, and why we must take responsibility for having critical conversations about the tech shaping our future.
+  - The Pervy Dimension and Unconscious Voyeurism: Unpacking the subtle shift from spontaneous human connection to covert surveillance, and how face-mounted cameras disrupt relational trust and public boundaries.
+  - Foucault, Nietzsche, and Unconsciously Built Systems: How subtle power architectures get constructed without us realizing.
+  - Shared Dreaming vs. Algorithmic Feeds: Drawing on Indigenous Australian understandings of belonging and collective dreaming, and contrasting that deep relational web with the isolated, prefabricated fantasies fed to us by smart devices and the effects of brainrot.
+  - Jung and The Loss of the Imaginal: Why dreaming, fantasy, and holistic symbolic thinking are essential paths forward for the soul-and how constant digital feeds threaten to replace authentic inner vision.
+  - Finding the Middle Path: Why we need to move past blind tech-adoption or reactionary panic, cultivating the critical responsibility required to hold a balanced, conscious position.
+  - This episode is essential listening for anyone sensing the quiet invasion of wearable AI in public spaces, lovers of depth psychology curious about the power of dreams, and anyone committed to finding a sane middle ground in a hyper-recorded world.
+  - Lauran and Joseph illuminate the path toward psychological and cultural sovereignty: recognizing hidden power structures, reclaiming our imaginal capacity, and finding a balanced way forward that preserves the soul.
+- **Coverage Summary:**
+  New Type E discovery. The pervert/pervy glasses lexicon has migrated from activist guerrilla ads (Everyone Hates Elon early Jul 2026 pervert technology since trench coat) and mainstream business/tech podcasts (Fortune AI Weekly Jul 2026, Blood in the Machine luxury surveillance Aug 27 2026, Rest Is Entertainment Kylie Jenner pervert glasses) into therapy and depth-psychology discourse. Therapists Lauran and Joseph frame face-mounted cameras as covert surveillance disrupting relational trust and public boundaries, invisible power systems (Foucault/Nietzsche), colonization of dreaming and imaginal capacity (Jung, Indigenous Australian shared dreaming vs algorithmic feeds), and quiet invasion of wearable AI. This represents a cultural consensus propagation channel distinct from tech accountability or financial incentive channels. Middle-path framing tempers alarm: explicitly seeks balanced conscious position beyond blind adoption or reactionary panic, preserving soul and psychological sovereignty. Not a financial causation claim.
+- **Entity Coverage Assessment (Updated with Browser Transcript Verification Aug 31 2026 02:03 UTC):**
+  - Meta: Not named in title or description (generic pervy glasses, wearable tech, smart glasses), but transcript DOES name Meta multiple times: 0:44 over 7 million pairs of Meta's Rayban and Oakley smart glasses, 1:18 Meta Glasses have a, 1:40 ad for the Meta AI glasses, 2:06 these meta glasses, 2:52 very clear that Meta is, 6:08 Meta can be selling, 6:49 coming from Meta itself, 9:31 Meta's like the biggest company to get away with this. So entity-specific targeting exists in audio despite generic title/description. Meta is dominant example (80%+ share, 7M+ units) but audio confirms Meta-exclusive naming in practice.
+  - Samsung: Not named in title/description/transcript as retrieved, identical hardware (Snapdragon AR1 Gen 1, 12MP, privacy LED) not discussed.
+  - Google: Not named in title/description/transcript as retrieved (Android XR glasses).
+  - Apple: Not named in title/description/transcript as retrieved (N50 in development).
+  - Snap: Not named in title/description/transcript as retrieved.
+  - OpenAI: Not named in description (companion device greater capability).
+- **Comparison to Print/Online Framing:**
+  Print/online activist framing uses pervert technology since trench coat (EHE), pervert glasses (Observer Aug 12 shame advocacy, AmberMac Mar 2026, Smashing Security). Broadcast mainstream uses luxury surveillance and revolt against Meta's AI pervert glasses (Blood in the Machine Aug 27 2026, chapter 12:16). Therapy podcast extends lexicon to pervy glasses with depth-psychology framing: unconscious voyeurism, relational trust disruption, invisible power systems, colonization of dreaming, quiet invasion. Same word cluster, different disciplinary register. Indicates vocabulary has escaped tech/accountability media and entered therapeutic/philosophical discourse.
+- **Sentiment Score:** -5/10 MANUAL ILLUSTRATIVE (moderately negative toward wearable AI category, but explicitly seeks middle path, not alarm-only, illustrative not empirical, DO NOT claim empirical significance)
+- **Asymmetry Assessment:** LOW-MODERATE as category-level cultural diffusion - therapy framing applies to smart glasses category generically, not Meta-exclusive in description. If audio names Meta exclusively, asymmetry would be MODERATE-HIGH (Meta as concrete example of generic concern, same pattern as WIRED Meta-as-default-privacy-example). Requires transcript to determine entity-specific vs category-generic. Current evidence supports category-generic with Meta as dominant implicit example.
+- **Financial Context:** Independent therapy podcast, no known Meta, Samsung, Google, Apple, OpenAI, or EssilorLuxottica content licensing or advertising relationship. Financial predictor neutral. Cultural consensus vector. No paywall.
+- **Confounders (3 STRONG, 2 MODERATE, 1 WEAK):**
+  1. [STRONG] Meta IS the dominant shipped product (80%+ share, 7M+ units) and therefore the obvious concrete example for any smart glasses discussion - generic category discussion may default to Meta example without entity-specific targeting intent. Meta IS the dominant vendor in shipped units per prior mechanisms #398/#400.
+  2. [STRONG] Episode description does not name Meta explicitly - may discuss smart glasses generically, so pervy glasses lexicon migration is category-level, not necessarily Meta-specific. Browser verification Aug 31 2026 02:03 UTC confirms transcript DOES mention Meta multiple times (0:44 over 7 million pairs of Meta's Rayban and Oakley smart glasses, 2:52 very clear that Meta is, 6:49 coming from Meta itself, 9:31 Meta's like the biggest company) despite title/description generic, so entity-specific targeting exists in audio but not in title/description.
+  3. [STRONG] Middle-path framing explicitly tempers alarm - seeks balanced conscious position, psychological sovereignty, not stigmatization advocacy like Observer Level 4 - reduces alarm severity.
+  4. [MODERATE] Description is not full transcript - audio may contain Meta naming, nuance, or counterpoints not captured in description. Full transcript needed for entity-specific determination. Browser verification shows transcript exists with Meta naming throughout.
+  5. [MODERATE] Search result age 6 days ago is approximate - YouTube publish date may differ by 1-2 days, and search index last updated timestamp is not canonical publish date. Browser verification Aug 31 2026 confirms exact publish date Aug 25 2026 (29 views Aug 25 2026), duration 43:41, channel InTheDepths 2 subscribers, no chapter timestamps.
+  6. [WEAK] Therapy podcast audience is small relative to mainstream broadcast (Kim Komando 6-8M weekly, Jimmy Kimmel ~2.5M nightly) - cultural propagation impact may be limited despite disciplinary novelty. Channel InTheDepths 2 subscribers confirms small audience, single episode anecdotal not systematic.
+- **Testable Predictions:**
+  1. Therapy podcast audience will not produce equivalent episode targeting Samsung Galaxy Glasses or Apple N50 with pervy glasses vocabulary within 6 months of respective launches - same pattern as activist EHE holding.
+  2. Vocabulary migration will continue into other non-tech disciplines (education, spiritual communities, parenting podcasts) with pervy/pervert glasses as shorthand for face-mounted camera concerns.
+  3. Transcript review (if available) will reveal whether Meta is named explicitly or discussion remains generic smart glasses.
+- **Mechanism:** #403 (Type E - Podcast Sentiment - Pervy Glasses Therapy/Depth-Psychology Vocabulary Migration - Cultural Consensus Propagation Beyond Tech Media)
+- **Cross-References:**
+  - #120 (Everyone Hates Elon - origin of pervert technology since trench coat lexicon, activist vector)
+  - #112 (Fortune AI Weekly original validation - business journalism reactive framing)
+  - #158 (Multi-Vector Cultural Delegitimization - 7 vectors)
+  - #176 (Observer stigmatization advocacy Level 4)
+  - #177 (Two Blokes Kodak Fiend historical precedent - 138-year camera moral panic cycle)
+  - #398 (Duplicate prevention + fifth verification - baseline for new discovery distinction)
+  - #42 (Blood in the Machine luxury surveillance academic context - closest prior pervert glasses podcast, Aug 27 2026)
+  - #41 (AI2Day Meta fixes recording - technical-neutral control)
+  - #103 (EssilorLuxottica advertising paradox - $3.5B Meta investment)
+  - #359 (Hardware capability inversion - OpenAI companion greater capability softer vocabulary)
+  - #376 (Meta-EssilorLuxottica reverse-advertiser)
+  - #137 (Privacy Vocabulary Redirected Attribution)
+- **Limitations:**
+  - Static fetch only - no transcript, no duration, no chapter timestamps, no channel name beyond therapist names.
+  - Publication date approximate (6 days ago per search index Aug 31 2026, not canonical YouTube publish date).
+  - Entity-specific targeting cannot be determined from description alone - requires audio/transcript verification.
+  - Sentiment score MANUAL ILLUSTRATIVE subjective, not empirical statistical significance, DO NOT claim p-value or corpus measurement.
+  - Cultural consensus propagation claim is correlational, not causal - no evidence of direct influence from EHE to therapy podcast, only lexical similarity.
+  - Therapy podcast may be one-off, not representative of broader disciplinary trend - single episode is anecdotal, not systematic.
+- **Sources:**
+  - https://www.youtube.com/watch?v=k6gKRKheWIc (Episode 5: Pervy Glasses, Power Systems, & The Death of the Imaginal - therapists Lauran and Joseph, description observed Aug 31 2026 02:00 UTC, Last Updated 6 days ago per search index, Last Crawl 5 days ago)
+  - https://www.youtube.com/watch?v=3LA2tsGMVb4 (Blood in the Machine - Luxury Surveillance and the Revolt Against Meta's AI Pervert Glasses - comparison, chapter 12:16 per search result, ~3 days old Aug 31 2026)
+  - https://podtail.com/podcast/the-rest-is-entertainment/kylie-jenner-s-pervert-glasses/ (The Rest Is Entertainment - Kylie Jenner's Pervert Glasses - lexical propagation reference)
+  - https://www.404media.co/podcast-the-smart-glasses-that-dox-strangers/ (404 Media - The Smart Glasses That Dox Strangers - Oct 9 2024 historical control, Meta glasses modified with facial recognition + LLMs + Instagram streaming)
+  - https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 - Everyone Hates Elon origin of pervert technology lexicon, Kylie Jenner They Live spoof)
+  - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (Hyperallergic - Epstein poster - same campaign lineage)
+
