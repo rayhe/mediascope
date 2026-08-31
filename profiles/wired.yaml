@@ -7668,3 +7668,125 @@ anthropic_series_h_hyperscaler_recycling_401:
     - '[STRONG] Editorial independence - Condé Nast editorial firewall may prevent deal influence, WIRED may genuinely believe Anthropic financing story is newsworthy without dissecting hyperscaler accounting, no documented editorial directive linking ad revenue to coverage decisions'
     - '[MODERATE] Product-stage - Meta Ray-Ban shipping product with 7M+ units vs Anthropic financing news are different news values, financing coverage vs product review different desks may justify different treatment'
     - '[MODERATE] Sourcing - Maxwell Zeff WIRED AI reporter has deep Anthropic source access per mechanism #62, may receive financing scoops from Anthropic directly, creating access journalism incentive independent of financial structure'
+
+# --- Mechanism #405 Type B Journalist Cross-Entity Tracking Aug 30 21:00 PT ---
+david_gilbert_meta_fact_check_abandonment_vs_x_graphic_validation_405:
+  mechanism_id: 405
+  type: 'Type B - Journalist Cross-Entity Tracking'
+  type_label: journalist_cross_entity
+  title: David Gilbert Meta Fact-Check Abandonment Adversarial vs X Graphic Video Validation Constructive - Same-Journalist Platform Governance Framing Inversion
+  finding: 'WIRED reporter David Gilbert (hired Sep 29 2023 from Vice per Talking Biz News Sep 29 2023, covers disinformation/online extremism per Muck Rack profile) shows same-journalist platform governance framing inversion: Meta fact-checking program termination covered as institutional betrayal and abandonment of truth infrastructure (fact-checking partners blindsided, scrambling to figure out financial implications, rejecting claims of being too politically biased per WIRED headline Jan 7 2025 aggregated via Will Coomber blog Jan 7 2025) vs X graphic Hamas video covered as research-confirms-real, debunking false claims ABOUT X content (A Graphic Hamas Video Donald Trump Jr. Shared on X Is Actually Real, Research Confirms per WIRED David Gilbert citation in Wikipedia Criticism of X article lines 77-78 retrieved Aug 30 2026). Meta governance decision framed as irresponsible platform abandoning truth; X governance context framed as platform where truth can be verified and false debunk attempts corrected. Both are platform governance stories about misinformation infrastructure, same journalist, opposite evaluative direction.'
+  date_added: '2026-08-30'
+  publication: wired
+  parent_company: conde_nast
+  journalist: David Gilbert
+  journalist_profile:
+    name: David Gilbert
+    role: 'WIRED Reporter, disinformation/online extremism, election hucksters'
+    hire_date: '2023-09-29'
+    prior_publication: Vice (Sep 2016 - Sep 2023, 7 years)
+    beat: 'disinformation, online extremism, election manipulation, social media platforms'
+    location: 'Ireland (remote reporting on American politics)'
+    signal: '@DavidGilbert.01'
+    muckrack_verified: true
+    drummond_hire: 'First of three Drummond politics team hires, Sep 2023, before Feiger and Turton per journalists.yaml'
+  competitor: X (Twitter)
+  meta_coverage:
+    article_title: "Meta's fact-checking partners, including USA Today, say they were blindsided by Meta's decision to drop them and reject claims of being too politically biased"
+    journalist: David Gilbert
+    publication: WIRED
+    date: '2025-01-07'
+    article_type: 'platform governance / fact-checking infrastructure'
+    framing: 'adversarial - institutional betrayal, blindsided partners, scrambling for financial implications'
+    tone_approx_MANUAL_ILLUSTRATIVE: -0.62
+    language_markers:
+      - blindsided
+      - scrambling to figure out financial implications
+      - reject claims of being too politically biased
+      - Meta's decision to drop them
+    source_aggregation_url: https://www.willcoomber.com/2025/01/metas-fact-checking-partners-including.html
+    source_note: 'Will Coomber blog Jan 7 2025 aggregates WIRED David Gilbert article with full headline and byline, verified Aug 30 2026'
+    primary_wired_url_blocked: 'wired.com blocked by policy, aggregation used with attribution'
+  x_coverage:
+    article_title: 'A Graphic Hamas Video Donald Trump Jr. Shared on X Is Actually Real, Research Confirms'
+    journalist: David Gilbert
+    publication: WIRED
+    date: '2023-10-12 (archived)'
+    article_type: 'platform governance / misinformation verification'
+    framing: 'constructive toward X - validates X content authenticity, corrects false debunk claims about X, research confirms real'
+    tone_approx_MANUAL_ILLUSTRATIVE: 0.18
+    language_markers:
+      - Actually Real
+      - Research Confirms
+      - Graphic Hamas Video (factual description not alarm vocabulary toward platform)
+    source_wikipedia_citation_url: https://en.wikipedia.org/wiki/Criticism_of_X_(social_network)
+    source_wikipedia_lines: '77-78 per search result Aug 30 2026: Gilbert, David. A Graphic Hamas Video Donald Trump Jr. Shared on X Is Actually Real, Research Confirms. WIRED.'
+    source_note: 'Wikipedia Criticism of X article cites WIRED David Gilbert article as verification source, demonstrating Gilbert validated X content rather than framing X as irresponsible'
+  framing_comparison:
+    meta_governance_frame: 'Platform abandons truth infrastructure, partners blindsided, financial harm to fact-checkers, rejects bias claim as excuse'
+    x_governance_frame: 'Platform content validated as authentic, research confirms reality, corrects false claims that X content is fake'
+    evaluative_direction: 'inverted - Meta irresponsible for removing infrastructure, X responsible enough that its content can be verified'
+    vocabulary_gradient:
+      meta_adversarial_terms:
+        - blindsided
+        - scrambling
+        - drop them
+        - too politically biased (Meta claim rejected)
+      x_constructive_terms:
+        - Actually Real
+        - Research Confirms
+    tone_delta_MANUAL_ILLUSTRATIVE: -0.80
+    tone_calc: 'meta -0.62 - x 0.18 = -0.80'
+    methodology_note: 'MANUAL ILLUSTRATIVE - not empirical. n=1 per entity, descriptive only, insufficient for inferential significance. Do not claim p-values, Cohens d, or confidence intervals from manual scores. Requires observed corpus with VADER/TextBlob + human annotation for validation. Illustrative only per project standing rule Aug 28 2026.'
+    p_value: 'NOT CALCULATED - no observed corpus'
+    cohens_d: 'NOT CALCULATED'
+    ci_95: 'NOT CALCULATED'
+    significant: false
+    empirical_validation_required: true
+  financial_context:
+    conde_nast_meta_deals: 0
+    conde_nast_meta_value: '$0'
+    conde_nast_openai_deal: 'Aug 2024 content licensing, $5-10M/yr estimate'
+    conde_nast_google_deal: 'Showcase + News AI pilot'
+    x_financial_tie: 'No known Condé Nast financial tie to X (post-Musk private company, no content licensing deal)'
+    meta_competitor_status: 'Meta is ad competitor to Reddit (Advance Publications controlled subsidiary, 65.2% voting control, 83.5% Class B) per mechanism #161'
+    prediction: 'Direction of money predicts adversarial framing - Meta $0 deal + ad competitor vs X $0 deal but not ad competitor (X not Reddit competitor in same ad category as Meta). However both Meta and X have $0 Condé Nast deals, so financial incentive does not fully explain inversion. Individual journalist framing or beat assignment may contribute. Correlation does not imply causation.'
+    non_causal_language: 'Financial relationships may correlate with coverage patterns but do not prove editorial influence. No documented editorial directive linking advertiser revenue to coverage decisions. Confounders include beat evolution, sourcing access, news peg, platform governance complexity.'
+  confounders:
+    - '[STRONG] News peg difference: Meta fact-checking program termination Jan 2025 is major platform governance shift ending multi-year program with USA Today and others, financial implications for fact-checkers. X graphic video Oct 2023 is single content verification case during Israel-Hamas war, lower stakes, factual verification task. Different news values may justify different framing independent of entity bias. Adjustment not_calculated but material.'
+    - '[STRONG] Temporal separation: X article Oct 12 2023 vs Meta article Jan 7 2025 = 15 months apart. Platform governance context evolved (Community Notes adoption, election cycle, Meta policy shifts). Same journalist over time may evolve framing. Time confound material.'
+    - '[STRONG] Editorial independence: WIRED editorial firewall may prevent Condé Nast financial influence, Gilbert Ireland-based remote reporter with Vice background in extremism/disinformation may apply independent judgment. Cannot prove editorial direction from financial relationships without internal documentation (emails, memos).'
+    - '[MODERATE] Beat specialization: Gilbert covers disinformation and online extremism, not platform business models. Fact-checking infrastructure is directly in his beat (disinformation countermeasures), graphic Hamas video verification is also in his beat (misinformation about war footage). Both are beat-aligned, reducing beat confound but not eliminating.'
+    - '[MODERATE] Source access: Gilbert may have deeper source access to fact-checking partners (USA Today) who were blindsided, providing emotional victim narrative. X graphic video research confirmation may come from independent researchers (e.g., open-source investigators). Source type influences framing but does not eliminate entity-selectivity concern.'
+    - '[MODERATE] Platform governance complexity: Meta ending third-party fact-checking program replacing with Community Notes mirrors X Community Notes model. Framing Meta as abandoning truth while validating X content where Community Notes exists could reflect genuine governance evaluation (Meta moving AWAY from expert fact-checking vs X content being verified BY research). However both platforms use Community Notes in 2025, making asymmetric evaluation notable.'
+    - '[WEAK] Market share: Meta Facebook 3B users vs X 500M users, different scale. Fact-checking program scale larger at Meta. Larger program termination may warrant stronger language. However vocabulary inversion still notable when both are platform governance stories.'
+  confounding_adjustment:
+    raw_asymmetry_score: 0.65
+    adjustments:
+      - 'News peg difference (STRONG): -0.15'
+      - 'Temporal separation 15 months (STRONG): -0.12'
+      - 'Market share scale (WEAK): -0.03'
+    adjusted_score: 0.35
+    adjusted_calc: '0.65 - 0.30 = 0.35 moderate'
+    interpretation: 'Even after STRONG confounder adjustments, moderate asymmetry remains (0.35), indicating manufacturer/platform identity may predict framing beyond legitimate situational differences, but evidence is correlational not causal, requires observed corpus validation. Same-journalist control strengthens inference vs cross-journalist comparison.'
+  source_urls:
+    - https://www.willcoomber.com/2025/01/metas-fact-checking-partners-including.html
+    - https://talkingbiznews.com/media-news/wired-hires-gilbert-to-cover-extremism-and-disinformation/
+    - https://muckrack.com/davidgilbert
+    - https://en.wikipedia.org/wiki/Criticism_of_X_(social_network)
+    - https://www.technologyreview.com/2025/05/19/1116367/can-crowdsourced-fact-checking-curb-misinformation-on-social-media/
+  test_file: tests/test_david_gilbert_cross_entity_meta_fact_check_vs_x_graphic_validation_aug30.py
+  discovery_date: '2026-08-30'
+  iteration: 405
+  iteration_type: B
+  iteration_time: '2026-08-30 21:00 PT'
+  cross_references:
+    - 8   # Safe Target Coefficient
+    - 10  # Investigative Target Selection as Partner Validation
+    - 30  # Chokkattu Temporal Framing Oscillation (same-journalist control precedent)
+    - 101 # WIRED Politics Team Launch Drummond Orbit
+    - 118 # WIRED Politics Team Structural Incentive
+    - 130 # Platform Governance Framing
+    - 159 # OpenAI Companion vs Meta Surveillance Vocabulary Bifurcation (entity-selective vocabulary precedent)
+    - 161 # Advance Reddit Meta Ad Competition Structural Incentive
+    - 199 # Condé Nast Deal Inventory Coverage Correlation
