@@ -1178,7 +1178,7 @@ competitor_relationships:
           journalist: "Alex Reisner"
           description: "Landmark investigation identifying 170K+ ISBNs in Books3 training dataset used by Meta LLaMA, BloombergGPT, EleutherAI. Meta foregrounded in headlines despite multiple companies implicated. Prompted responses from Stephen King and Margaret Atwood."
           citations:
-            - "http://www.kirkusreviews.com/news-and-features/articles/report-meta-used-pirated-books-to-train-ai-model/ - Kirkus Reviews report in The Atlantic, Reisner dataset 170K books"
+            - "https://www.kirkusreviews.com/news-and-features/articles/report-meta-used-pirated-books-to-train-ai-model/ - Kirkus Reviews report in The Atlantic, Reisner dataset 170K books"
             - "https://gizmodo.com/everything-thats-happened-in-ai-since-open-letter-1850891057/13 - Gizmodo page 13, Atlantic detailed 190K books Books3 used to train Meta LLaMA"
       asymmetry_delta: >
         Narrow framing delta: responsibility attribution and mitigation credit. Anthropic receives conscientious withholding credit for high-severity dual-use cyber capability (commandeer servers, hack banks, exfiltrate secrets, damage infrastructure) plus industry-wide blame diffusion to OpenAI, Google, xAI, Chinese firms. Meta receives no equivalent conscientious business-decision credit for training-data licensing cost tradeoff despite comparable scale corporate decision, framed as blatant disregard and massive heist with no industry-wide diffusion observed in third-party summaries. Both cases involve potentially harmful AI capabilities, but Anthropic withholding is credited as possibly responsible, Meta cost decision is not.

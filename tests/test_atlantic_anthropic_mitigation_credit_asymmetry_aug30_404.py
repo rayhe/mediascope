@@ -93,8 +93,8 @@ class TestAtlanticAnthropicPrimarySources404(unittest.TestCase):
             citations = src.get('citations', [])
             self.assertGreater(len(citations), 0)
             for cit in citations:
-                # citation string contains https/http url before dash
-                self.assertTrue('https://' in cit or 'http://' in cit)
+                # citation string contains https url before dash - HTTPS-only provenance restored after verifying Kirkus HTTPS
+                self.assertTrue('https://' in cit, f"Expected https citation, got {cit[:80]}")
 
 class TestAtlanticAnthropicAsymmetryContent404(unittest.TestCase):
     @classmethod
