@@ -23169,3 +23169,17 @@ WIRED (Condé Nast) directs adversarial coverage at Meta - the ONLY major AI/tec
 **Test file:** `test_fastco_snap_meta_privacy_vocabulary_asymmetry_aug15.py` - 9 classes, 43 tests
 **Cumulative:** 121 mechanisms, 13,935 tests, 401 files
 
+
+## CORRECTION Aug 31 2026 17:09 UTC - Browser Task aeed928a
+
+Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in initial zero-count claim. Mechanism #421 corrected from coverage gap to framing inversion:
+
+- Meta Muse Spark Apr 8 2026 https://www.wired.com/story/muse-spark-meta-open-source-closed-source/ Big Kid Table diminutive framing
+- Researchers Already Leaving Aug 26 2025 https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/ instability framing co-bylined Zoe Schiffer and Will Knight
+- Google Gemini 3 Nov 18 2025 https://www.wired.com/story/google-launches-gemini-3-ai-bubble-search/ superlative insulation most intelligent best model engine room vs OpenAI GPT-5 disappointment
+- Google Gemini humanoid Jul 30 2026 https://www.wired.com/story/google-gemini-can-control-humanoid-robots/ significant jump physical AGI
+- Anthropic robot dog Nov 12 2025 https://www.wired.com/story/anthropic-claude-takes-control-robot-dog/ thoughtful curious
+- OpenAI Future OS Oct 6 2025 https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/ builder empowerment best time in history
+
+Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
+
