@@ -1,3 +1,14 @@
+
+#409 Finalize Type E #408 — The IT Guys Aug 28 2026 technical-neutral counterexample (timeout recovery)
+- Date: 2026-08-31 00:00 PDT
+- Type: E (Podcast/Broadcast Sentiment)
+- Entry: #123 The IT Guys Aug 28 2026 "5 PM Technology News Recap" — broadcast-ready KittenTTS Bella MP3, technical-neutral Meta firmware fix coverage
+- Novelty: The IT Guys not previously in corpus, date Aug 28 2026, balanced framing distinct from pervert-glasses alarm vocabulary (Guardian/Blood in Machine contrast)
+- Confounders preserved: 3 STRONG (newsworthy news peg, publisher type IT service provider, small local publisher), 2 MODERATE (synthesized narration vs human-hosted, reporting cutoff uncertainty), 1 WEAK (no competitor fix same episode but none to cover)
+- Sources: 6 URLs cited including theitguysfix.com article + MP3, NewsATW, 9to5Google Jul 7, CNET Aug 28, Guardian Opinion video
+- Test: tests/test_type_e_408_the_it_guys_meta_fix_counterexample_aug28.py added
+- Commit: finalize after timeout — no major discovery requiring alert
+
 ## Iteration #407 - Sun 2026-08-30 23:00 PT (Type D: Test & Verify - Full Suite Cross-Validation #402-#406 + Statistical Validity + Financial Triangulation)
 
 **Date:** 2026-08-30 23:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
