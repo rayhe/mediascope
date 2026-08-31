@@ -1,4 +1,4 @@
-#414 Type E: Podcast/Broadcast Sentiment - Meta Second LED Fix Six-Source Aggregate + Guilty Feminist August Silence + Attention Sphere Fifth Verification + Everyone Hates Elon Holding Aug 31 2026
+#414 Type E: Podcast/Broadcast Sentiment - Meta Second LED Fix Six-Source Aggregate + Guilty Feminist August Silence + Attention Sphere Sixth Verification + Everyone Hates Elon Holding Aug 31 2026
 
 **Date:** 2026-08-31 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation E after 413 D)
 **Type:** E - Podcast Sentiment Tracking
@@ -308,7 +308,7 @@ Evidence from this iteration:
 
 **Date:** 2026-08-31 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation A after 407 D / 408-409 E)
 **Type:** A - Competitor Coverage Deep Dive
-**Mechanism:** #410 FT Anthropic pre-IPO aspirational growth framing vs FT Meta super-sensing cautionary surveillance framing — FT OpenAI licensing revenue relationship (5-10M/yr secondary valuation, terms not disclosed primary) predicts softer OpenAI/Anthropic-adjacent coverage vs no equivalent Meta licensing relationship predicts adversarial Meta coverage; FT via secondary aggregations documents Meta prototype continuously recording audio + photos every few seconds with LED deactivation proposal vs FT via Reuters on Anthropic 45B Nscale rent, 7B MatX abandon, 30T TAM projection framed as ambition/scale not privacy risk
+**Mechanism:** #410 FT Anthropic pre-IPO aspirational growth framing vs FT Meta super-sensing cautionary surveillance framing -- FT OpenAI licensing revenue relationship (5-10M/yr secondary valuation, terms not disclosed primary) predicts softer OpenAI/Anthropic-adjacent coverage vs no equivalent Meta licensing relationship predicts adversarial Meta coverage; FT via secondary aggregations documents Meta prototype continuously recording audio + photos every few seconds with LED deactivation proposal vs FT via Reuters on Anthropic 45B Nscale rent, 7B MatX abandon, 30T TAM projection framed as ambition/scale not privacy risk
 **Rotation:** Type A per A,B,C,D,E cycle. Verified: #407 D, #408 E, #409 E finalize, #410 A correct. Prepended #410 newest-first. Mechanism ID 410 unique.
 
 **Focus:** Publication-competitor pair FT × Anthropic vs FT × Meta. Evaluate 2-3 recent FT-sourced articles about Anthropic from same FT network (Aug 25-27 2026 Reuters aggregations of FT/WSJ/Information) and 2-3 recent FT-sourced articles about Meta from same FT network (Jul 9 MacRumors FT, Aug 24 AI Industry Today FT, Aug 25 FastCompany pervert-glasses echoing FT, Aug 28 WSJ flooding market referencing FT super-sensing). Update FT competitor_relationships anthropic entry and coverage prediction. Run asymmetry scorer and document delta MANUAL ILLUSTRATIVE.
@@ -420,15 +420,15 @@ Evidence from this iteration:
 - Test execution blocked because pytest not installed (python available, pytest absent, 737 test files). Repository contains 737 test files. Do not claim tests passed. Record as verification blocker if relevant per prior iteration guidance.
 - No shell git commit/push performed: no product Git/GitHub tool available per tool search, shell imitation prohibited per execution fence. Files changed locally, pending product-tool commit.
 
-#409 Finalize Type E #408 — The IT Guys Aug 28 2026 technical-neutral counterexample (timeout recovery)
+#409 Finalize Type E #408 -- The IT Guys Aug 28 2026 technical-neutral counterexample (timeout recovery)
 - Date: 2026-08-31 00:00 PDT
 - Type: E (Podcast/Broadcast Sentiment)
-- Entry: #123 The IT Guys Aug 28 2026 "5 PM Technology News Recap" — broadcast-ready KittenTTS Bella MP3, technical-neutral Meta firmware fix coverage
+- Entry: #123 The IT Guys Aug 28 2026 "5 PM Technology News Recap" -- broadcast-ready KittenTTS Bella MP3, technical-neutral Meta firmware fix coverage
 - Novelty: The IT Guys not previously in corpus, date Aug 28 2026, balanced framing distinct from pervert-glasses alarm vocabulary (Guardian/Blood in Machine contrast)
 - Confounders preserved: 3 STRONG (newsworthy news peg, publisher type IT service provider, small local publisher), 2 MODERATE (synthesized narration vs human-hosted, reporting cutoff uncertainty), 1 WEAK (no competitor fix same episode but none to cover)
 - Sources: 6 URLs cited including theitguysfix.com article + MP3, NewsATW, 9to5Google Jul 7, CNET Aug 28, Guardian Opinion video
 - Test: tests/test_type_e_408_the_it_guys_meta_fix_counterexample_aug28.py added
-- Commit: finalize after timeout — no major discovery requiring alert
+- Commit: finalize after timeout -- no major discovery requiring alert
 
 ## Iteration #407 - Sun 2026-08-30 23:00 PT (Type D: Test & Verify - Full Suite Cross-Validation #402-#406 + Statistical Validity + Financial Triangulation)
 
@@ -1568,7 +1568,7 @@ Unlike Observer Level 4 stigmatization advocacy (no shame in shaming wearers, te
 
 ---
 
-## Iteration #398 - Sun 2026-08-30 14:00 PT (Type E: Podcast Sentiment Tracking - AI2Day Meta Fix Duplicate Prevention + Guilty Feminist 497 Fifth Verification + Attention Sphere Fifth Verification + EHE 20-Day Hold + Fortune AI Weekly Valence Re-Validation)
+## Iteration #398 - Sun 2026-08-30 14:00 PT (Type E: Podcast Sentiment Tracking - AI2Day Meta Fix Duplicate Prevention + Guilty Feminist 497 Sixth Verification + Attention Sphere Sixth Verification + EHE 20-Day Hold + Fortune AI Weekly Valence Re-Validation)
 
 **Date:** 2026-08-30 14:00 PT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145)
 **Type:** E - Podcast Sentiment Tracking
@@ -3412,20 +3412,20 @@ Methodology note: Publisher-AI deals differ materially in rights scope - attribu
 ### Focus
 Type C mandate - Audit financial incentive structure, valuation evidence, and rights scope for publisher-AI licensing relationships. Avoid treating unlike deals as equivalent.
 
-Selected focus: **Publisher–OpenAI licensing valuation provenance** - FT, Guardian, Atlantic, Axel Springer (Business Insider parent), with NYT-Amazon as valuation control. Rationale: Existing profiles tended to collapse all "licensing deals" into identical category, while primary vs secondary evidence and rights scope differ materially. Primary Reuters announcement says terms not disclosed; secondary WSJ via Digiday provides $5-10M/yr estimate. Guardian announcement shifts language away from training data (similar to WaPo) and spokesperson declines terms. Atlantic not syndication, no full reproduction. Axel Springer Bloomberg Law wording supports tens of millions euros across 3-year deal, not precise $13M/yr. NYT-Amazon $20-25M/yr provides non-OpenAI AI licensing valuation control.
+Selected focus: **Publisher-OpenAI licensing valuation provenance** - FT, Guardian, Atlantic, Axel Springer (Business Insider parent), with NYT-Amazon as valuation control. Rationale: Existing profiles tended to collapse all "licensing deals" into identical category, while primary vs secondary evidence and rights scope differ materially. Primary Reuters announcement says terms not disclosed; secondary WSJ via Digiday provides $5-10M/yr estimate. Guardian announcement shifts language away from training data (similar to WaPo) and spokesperson declines terms. Atlantic not syndication, no full reproduction. Axel Springer Bloomberg Law wording supports tens of millions euros across 3-year deal, not precise $13M/yr. NYT-Amazon $20-25M/yr provides non-OpenAI AI licensing valuation control.
 
 This iteration corrects structural scoring risk: financial-incentive scoring must not treat every "licensing deal" as identical financial tie; must distinguish attributed search/display access vs model-training rights vs syndication, and primary undisclosed vs secondary report-based valuation.
 
 ### Primary Sources (Exact Verified URLs Only - Aug 30 2026 verification)
 
-1. **Financial Times–OpenAI - Reuters Apr 29 2024 (terms not disclosed)**
+1. **Financial Times-OpenAI - Reuters Apr 29 2024 (terms not disclosed)**
    - URL: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
    - Claim: FT licensed content for model development and attributed ChatGPT summaries; financial terms were not disclosed (primary)
-   - Secondary valuation: Digiday 2024 timeline says deal worth $5M–$10M per year, citing WSJ
+   - Secondary valuation: Digiday 2024 timeline says deal worth $5M-$10M per year, citing WSJ
    - URL: https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
    - Existing FT profile already estimated $5-10M/yr but provenance should distinguish Reuters undisclosed primary vs Digiday secondary WSJ citation
 
-2. **Guardian–OpenAI - Feb 14-19 2025**
+2. **Guardian-OpenAI - Feb 14-19 2025**
    - Announced Feb 14-19 2025, Guardian reporting appears in ChatGPT as attributed extracts/summaries, Guardian receives ChatGPT Enterprise access
    - Digiday specifically reported announcement did NOT mention training rights, Guardian spokesperson declined to disclose terms, language shift similar to Washington Post deal away from training-data framing
    - URLs:
@@ -3435,7 +3435,7 @@ This iteration corrects structural scoring risk: financial-incentive scoring mus
      - https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405
    - Existing guardian.yaml said licensing_deal Undisclosed but could explicitly record narrower announced scope and avoid implying model-training rights
 
-3. **The Atlantic–OpenAI - May 29 2024**
+3. **The Atlantic-OpenAI - May 29 2024**
    - Deal announced May 29 2024, financial terms not disclosed, Atlantic received licensing fees plus OpenAI technology access
    - TechCrunch reported not syndication license, did not permit reproduction of full articles or lengthy excerpts, Atlantic journalists questioned derivative-work compensation
    - URLs:
@@ -3443,15 +3443,15 @@ This iteration corrects structural scoring risk: financial-incentive scoring mus
      - https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
    - Existing atlantic.yaml documents compound relationship extensively but deal-scope fields could be more precise
 
-4. **Axel Springer–OpenAI - Dec 13 2023**
+4. **Axel Springer-OpenAI - Dec 13 2023**
    - Bloomberg Law reported three-year deal worth tens of millions euros, based on source familiar with undisclosed terms
    - URL: https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content
    - Secondary sources describe tens of millions per year, while Bloomberg wording supports tens of millions across 3-year deal. Do not preserve or add precise $13M/yr claim without stronger evidence
    - Supporting: https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/
    - CB Insights lists $25M+ (Dec 13 2023)
 
-5. **New York Times–Amazon - May 29 2025 (valuation control)**
-   - Editor & Publisher citing WSJ people familiar says Amazon pays $20M–$25M per year, nearly 1% of NYT 2024 revenue
+5. **New York Times-Amazon - May 29 2025 (valuation control)**
+   - Editor & Publisher citing WSJ people familiar says Amazon pays $20M-$25M per year, nearly 1% of NYT 2024 revenue
    - URL: https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961
    - LiveMint also reports at least $20M/yr: https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html
    - Useful valuation control but iteration stays focused rather than broad multi-company rewrite
