@@ -1,5 +1,67 @@
 aggregate_findings:
 
+  bi_anthropic_valuation_hype_vs_meta_product_delay_420_aug31_2026:
+    date: '2026-08-31'
+    publication: Business Insider
+    competitor_pair: Anthropic vs Meta
+    type: A competitor coverage deep dive - control case against financial determinism
+    mechanism: 420
+    financial_relationship_primary: https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism
+    financial_relationship_secondary: https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content
+    financial_relationship_tertiary: https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/
+    financial_tie_anthropic: "$0 direct publisher incentive, no Axel Springer-Anthropic licensing deal"
+    financial_tie_meta: "$0 direct publisher incentive, no Axel Springer-Meta licensing deal"
+    financial_tie_openai: "tens of millions euros 3-year deal per Bloomberg Law source familiar with undisclosed terms, Axel Springer parent of BI"
+    bi_anthropic_sources:
+      - https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation
+      - https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-to-800-billion-valuation-business-insider-2026-04-14/
+    bi_meta_sources:
+      - https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/
+      - https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html
+      - https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/
+    delta_manual_illustrative: 0.34
+    note: MANUAL ILLUSTRATIVE not empirical n=3 per entity insufficient for inferential significance p_value NOT CALCULATED cohens_d NOT CALCULATED significant false editorial independence and confounders required financial relationships correlational structural incentives not proof of causation this is explicitly a CONTROL CASE where financial incentive does NOT predict softer coverage OpenAI with licensing deal gets hardest coverage Anthropic $0 gets softest Meta $0 gets middle beat_assignment vc_hype_cycle timing sourcing genuine_newsworthiness strong confounders
+    methodology_fix: Used Reuters secondary citation for BI original to preserve exact headline and valuation figure when BI paywall limits full verification Dejavu archive used for Meta supply shortage Yahoo secondary RoadToVR secondary for retail expansion all URLs exact no invented wired.com URLs where secondary used MANUAL ILLUSTRATIVE labeling required per Aug 28 rule synthetic arrays labeled p_value not_calculated cohens_d not_calculated ci not_calculated significant false significant_empirical false
+    wired_verification_annex:
+      date_verified: '2026-08-31 UTC'
+      method: "Browser direct navigation, rendered accessibility tree and meta tags, 5 WIRED primary story URLs actually loaded"
+      anthropic_functional_emotions:
+        url: https://www.wired.com/story/anthropic-claude-research-functional-emotions/
+        title: "Anthropic Says That Claude Contains Its Own Kind of Emotions"
+        date: "APR 2 2026 12:00 PM"
+        author: "Will Knight"
+        framing: "fascinating science neutral-exploratory, digital representations of human emotions, perform functions similar to human feelings, findings relevant to why AI models sometimes break guardrails, strong emotional vector for desperation when pushed, 0 surveillance privacy alarm, 1 blackmail mention framed as safety research not surveillance alarm, no financial disclosure"
+        strengthens_mechanism: 118
+      anthropic_cowork_corrected:
+        guessed_url_404: https://www.wired.com/story/hands-on-anthropics-claude-cowork-an-ai-agent-that-actually-works
+        actual_url: https://www.wired.com/story/anthropic-claude-cowork-agent/
+        title: "Hands On With Anthropic's Claude Cowork, an AI Agent That Actually Works"
+        date: "JAN 15 2026 12:40 PM"
+        author: "Reece Rogers"
+        framing: "aspirational hands-on positive with balanced caution, user-friendly version of Claude Code, tested a lot of shitty agents they just didnt work, nice surprise, cult following, 3-4 safety security mentions security risk inherent susceptible to prompt injection be cautious multiple safety mitigations not alarmist, no financial disclosure"
+        strengthens_mechanism: 62
+        correction: "Guessed URL 404 corrected to actual /anthropic-claude-cowork-agent/"
+      anthropic_claude_code_business_model:
+        url: https://www.wired.com/story/claude-code-success-anthropic-business-model/
+        title: "How Claude Code Is Reshaping Software and Anthropic"
+        date: "JAN 22 2026 2:00 PM meta property article:published_time 2026-01-22T19:00:00.000Z"
+        author: "Maxwell Zeff"
+        framing: "aspirational business success narrative, engineers raving same new coding tool, buzz fever pitch, viral coding tool changing way Anthropic works, 0 surveillance privacy alarm, no disclosure"
+        new_article: true
+      meta_creep_alarmist:
+        url: https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+        title: "The Rise of the Ray-Ban Meta Creep"
+        date: "MAR 23 2026 7:00 AM"
+        author: "Miles Klee"
+        framing: "alarmist surveillance-critical category SURVEILLANCE STATE, between pickup artists and juvenile pranksters wearable device becoming associated with pest, title itself alarm, 5+ alarm terms vs 0-1 in Anthropic pieces, no disclosure"
+        strengthens_mechanism: "118 62 154 312 Meta alarm corpus"
+      meta_best_glasses_ironic:
+        url: https://www.wired.com/story/best-meta-glasses/
+        title: "Best Meta Glasses (2026): Ray-Ban, Oakley, AR | WIRED H1 The Best Meta Glasses for Looking Hot and Invading Everyone's Privacy"
+        date: "APR 19 2026 7:00 AM"
+        author: "Adrienne So"
+        framing: "mixed aspirational ironic buyer guide wry privacy acknowledgment Invading Everyone's Privacy in H1 tongue-in-cheek surveillance awareness but commerce-driven, 1 mild privacy mention humorous not alarmist, standard commerce affiliate disclaimer may earn portion of sales"
+        shows: "polarized framing within Meta coverage itself one strongly alarmist surveillance-state high alarm count one commerce ironic mild privacy mention vs Anthropic 3 articles all fascinating science or aspirational-positive zero surveillance privacy alarm zero financial disclosures"
   ft_openai_growth_vs_meta_capital_privacy_415_aug31_2026:
     date: '2026-08-31'
     publication: Financial Times

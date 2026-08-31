@@ -173,6 +173,163 @@ competitor_relationships:
         - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
         - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
         - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known Axel Springer-Anthropic licensing deal. Anthropic has no content licensing with Business Insider parent. Amazon $13B+ and Google $3B+ Anthropic stakes are investor-level, not publisher-level, so $0 direct publisher incentive."
+    coverage_prediction: "neutral_to_aspirational"
+    source_urls:
+      - "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+      - "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+    verification_date: "2026-08-31"
+    business_insider_anthropic_valuation_hype_vs_meta_product_delay_aug31_420:
+      mechanism_id: 420
+      date_analyzed: "2026-08-31"
+      type: Type A - Competitor Coverage Deep Dive
+      publication: business-insider
+      competitor: anthropic
+      status: documented
+      finding: "Business Insider covers Anthropic $800B valuation with aspirational VC flooding framing while covering Meta wearables through neutral product timeline and supply chain lens. Anthropic Apr 14 2026 article foregrounds VCs flooding Anthropic with offers up to $800B valuation, largest offers language, no burn rate, no profitability skepticism, no cash incinerator language despite Anthropic $1.5B annualized revenue and heavy compute costs. No disclosure of Amazon $13B+ or Google $3B+ Anthropic stakes that drive valuation narrative. Meta coverage Dec 2025 to Jan 2026 foregrounds Phoenix mixed reality delay to 2027 to get details right and breathing room, Ray-Ban Display high demand waitlists into 2026 and pause wider expansion due to supply shortages, and retail expansion mirroring Apple strategy. Both companies face capital intensity, but only OpenAI receives investor skepticism framing in this publication, Anthropic receives validation framing, Meta receives product execution framing. Financial tie does NOT predict this pattern: Axel Springer has OpenAI licensing deal worth tens of millions euros, no Anthropic deal, no Meta deal. If financial incentive drove coverage, OpenAI should be softest, but Anthropic is softest, OpenAI is hardest. Suggests beat assignment, VC hype cycle, and product stage dominate over direct licensing incentive in this window. Control case for financial determinism."
+      business_insider_anthropic_articles:
+        - title: "VCs flooding Anthropic with offers up to $800 billion valuation"
+          date: "2026-04-14"
+          authors: "Business Insider staff"
+          url: "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+          original_path: "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+          archive_url: "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+          archive_attribution: "Reuters secondary citation of Business Insider report"
+          framing: "aspirational_valuation_flooding"
+          key_phrases:
+            - "flooding with offers"
+            - "up to $800 billion valuation"
+            - "largest AI fundraising interest"
+          tone_notes: "Aspirational, validation-heavy, no burn skepticism, no cash incinerator language, no profitability questioning despite pre-IPO status and high compute costs."
+          disclosure_present: false
+          disclosure_note: "No disclosure of Amazon $13B+ or Google $3B+ Anthropic investor stakes that are material to valuation narrative. No disclosure of Axel Springer $0 Anthropic tie. BI paywall limits full verification, Reuters secondary confirms headline and valuation figure."
+        - title: "Anthropic draws offers VCs invest up to $800B valuation - Business Insider"
+          date: "2026-04-14"
+          authors: "Reuters staff citing Business Insider"
+          url: "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+          framing: "aspirational_secondary"
+          key_phrases:
+            - "draws offers"
+            - "up to $800 billion"
+          tone_notes: "Secondary citation reinforces flooding and high valuation framing without critical lens."
+          disclosure_present: false
+      business_insider_meta_articles:
+        - title: "Meta delays release Phoenix mixed reality glasses 2027 - Business Insider reports"
+          date: "2025-12-06"
+          authors: "Business Insider via Reuters"
+          url: "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
+          original_path: "https://www.businessinsider.com/meta-phoenix-mixed-reality-delay-2027"
+          framing: "product_delay_get_details_right"
+          key_phrases:
+            - "delays release"
+            - "to get details right"
+            - "breathing room"
+          tone_notes: "Neutral product timeline framing, no financial viability questioning, no cash burn language, internal memo sourcing."
+          disclosure_present: false
+        - title: "Meta says can't make enough Ray-Ban Display - supply shortage pause international expansion"
+          date: "2026-01"
+          authors: "Business Insider via Yahoo"
+          url: "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html"
+          original_path: "https://www.businessinsider.com/meta-ray-ban-display-supply-shortage-pause-international-expansion-2026-1"
+          framing: "supply_shortage_high_demand"
+          key_phrases:
+            - "can't make enough"
+            - "high demand"
+            - "waitlists into 2026"
+          tone_notes: "Neutral to slightly positive, high demand validation, supply chain lens, no profitability skepticism."
+        - title: "Meta retail stores smart glasses competition Apple Google"
+          date: "2026-01"
+          authors: "Business Insider via Road to VR"
+          url: "https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/"
+          attribution: "Business Insider report via Road to VR"
+          framing: "retail_expansion_mirroring_apple_strategy"
+          key_phrases:
+            - "finally looking to expand its retail footprint"
+            - "could mirror Apple's retail strategy"
+          tone_notes: "Strategic growth framing, no financial viability questioning."
+      tone_comparison:
+        anthropic_avg_MANUAL_ILLUSTRATIVE: 0.42
+        meta_avg_MANUAL_ILLUSTRATIVE: 0.08
+        delta_MANUAL_ILLUSTRATIVE: 0.34
+        methodology: "MANUAL ILLUSTRATIVE synthetic tone scores based on observed Business Insider language - flooding with offers and up to $800B validation framing versus delays to get details right and high demand and can't make enough neutral framing. Illustrative only. Requires observed corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic arrays."
+        illustrative_warning: "MANUAL ILLUSTRATIVE - not empirical. Do not present as empirical finding."
+        asymmetry_scorer_version: "mediascope/score/asymmetry.py v0.1.0"
+        scorer_inputs:
+          target_entity: "anthropic"
+          peer_entity: "meta"
+          target_scores_MANUAL_ILLUSTRATIVE: [0.45, 0.38, 0.42]
+          peer_scores_MANUAL_ILLUSTRATIVE: [0.05, 0.10, 0.08]
+          note: "Target scores from Anthropic valuation aspirational framing positive. Peer scores from Meta product delay neutral to slightly positive. Delta target minus peer equals 0.42 minus 0.08 equals 0.34. Anthropic more positive than Meta in this publication window, inverse of financial incentive prediction where OpenAI with licensing deal should be softest. Important nuance for cross-publication analysis and control case for financial determinism."
+        asymmetry_result_MANUAL_ILLUSTRATIVE:
+          delta: 0.34
+          p_value: "not_calculated - illustrative only, requires Welch t-test on observed corpus"
+          cohens_d: "not_calculated - illustrative only, requires Cohen d on observed corpus"
+          ci_95: ["not_calculated", "not_calculated"]
+          significant: false
+          significant_empirical: false
+          methodology_note: "Synthetic controlled tone arrays illustrative only. Exact p/d/CI values depend on scoring module. Tests should verify thresholds not exact values. Real Business Insider corpus needed for empirical validation. Do not claim empirical significance from synthetic scores alone per project standing rule Aug 28."
+      confounders:
+        - level: STRONG
+          factor: "beat_assignment"
+          description: "Anthropic valuation article by venture capital and startups beat. Meta wearables articles by tech and retail beats via internal memo reporting. Different journalists with different framing norms. VC beat naturally applies funding hype lens. Tech beat naturally applies product lens. Tone difference may reflect beat assignment not entity bias."
+          adjustment: "not_calculated but material - beat is primary predictor of funding versus product framing"
+        - level: STRONG
+          factor: "vc_hype_cycle_and_product_stage"
+          description: "Anthropic Apr 2026 $800B valuation offers coincide with pre-IPO fundraising frenzy Oct 2026 target IPO at ~$1T valuation. VC flooding language reflects actual market dynamics, not necessarily editorial bias. Meta Dec 2025 to Jan 2026 Phoenix delay and Ray-Ban Display supply shortage are concrete shipping product execution stories with 2M+ units sold since Oct 2023. Product stage difference legitimately predicts funding versus product framing. Market share: Meta more than 80 percent of smart glasses per BBC May 2026, first major tech player. Anthropic is private AI lab pre-IPO. Different genuine newsworthiness."
+          adjustment: "not_calculated but material - product stage and fundraising cycle predict framing"
+        - level: STRONG
+          factor: "timing_and_news_peg"
+          description: "Anthropic article Apr 14 2026 pegged to VC offers up to $800B valuation ahead of IPO. Meta articles Dec 2025 to Jan 2026 pegged to Phoenix delay memo and Display supply shortage announcement. Four month gap between Anthropic Apr and Meta Dec-Jan reduces direct comparability. Different news pegs naturally produce different framing. Funding peg produces funding framing. Supply peg produces product framing."
+          adjustment: "not_calculated but material - news peg drives framing"
+        - level: MODERATE
+          factor: "sourcing_differences"
+          description: "Anthropic article sources VCs flooding offers, investor interest. Meta articles source internal memo Gabriel Aul and Ryan Cairns via Business Insider. Different source pools produce different vocabulary. VC sources use hype vocabulary. Internal exec sources use operational framing."
+          adjustment: "not_calculated but material"
+        - level: MODERATE
+          factor: "financial_relationship_does_not_prove_direction"
+          description: "Axel Springer licensing deal is parent-level not Business Insider newsroom level, OpenAI only not Anthropic or Meta. Deal announced Dec 2023 predates both article sets. No evidence of editorial directive linking deal to coverage. Anthropic receives aspirational framing without financial tie, OpenAI receives skeptical framing despite financial tie, Meta receives neutral framing without financial tie. Pattern is opposite of simple financial determinism. Correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. Financial relationship may be coincidental not causal. This mechanism is explicitly a CONTROL CASE showing where financial incentive does NOT predict softer coverage."
+          adjustment: "not_calculated - correlation not causation, control case"
+        - level: MODERATE
+          factor: "genuine_newsworthiness"
+          description: "Anthropic $800B valuation offers up to $800B are objectively large fundraising interest and largest AI pre-IPO valuation signals. Meta Phoenix delay to 2027 and Ray-Ban Display supply shortage are legitimate product execution stories. Different genuine newsworthiness may explain framing difference without entity bias."
+          adjustment: "not_calculated"
+        - level: WEAK
+          factor: "paywall_and_archiving"
+          description: "Business Insider paywall limits full text verification. Reuters secondary used for Anthropic valuation and Meta Phoenix delay. Dejavu archive used for Meta supply shortage. Archive fidelity may affect tone reading. Reuters and Road to VR are secondary citations of Business Insider not direct Business Insider URLs for two Meta articles. Direct Business Insider URL for Phoenix delay not retrieved, only Reuters citation. Could introduce framing distortion via secondary outlet paraphrase."
+          adjustment: "not_calculated but noted"
+      cross_references:
+        - "#75 Amanda Hoover cross-entity balanced control case"
+        - "#33 facial recognition privacy parity"
+        - "#96 Apple v OpenAI trade secret lawsuit WIRED 1 article correction"
+        - "#359 OpenAI hardware delay framing asymmetry"
+        - "#394 FT OpenAI rogue agents vs Meta rogue models"
+        - "#386 OpenAI European ad expansion dual dependency"
+        - "#396 Google alongside AI content ad dominance"
+        - "#399 Business Insider OpenAI profitability skepticism vs Meta product framing"
+      cautious_language: "Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No causal claim. No assertion of editorial direction. Beat assignment, product stage, VC hype cycle, timing, sourcing differences, market share, genuine newsworthiness are strong confounders. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI on observed Business Insider corpus for empirical validation. Axel Springer deal is parent-level licensing for OpenAI only, not Anthropic or Meta, and does not predict this Anthropic softer than Meta pattern, this is explicitly a control case against financial determinism. Editorial independence firewall noted."
+      verification_date: "2026-08-31"
+      source_urls:
+        - "https://www.businessinsider.com/vcs-flooding-anthropic-offers-up-to-800-billion-valuation"
+        - "https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-800-billion-valuation-business-insider-2026-04-14/"
+        - "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
+        - "https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html"
+        - "https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/"
+        - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
+        - "https://www.axelspringer.com/en/press-releases/axel-springer-and-openai-partner-to-deepen-beneficial-use-of-ai-in-journalism"
+        - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known Axel Springer-Meta licensing deal. No AI content licensing with Business Insider parent. $0 direct publisher incentive."
+    coverage_prediction: "neutral"
+    source_urls:
+      - "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
+    verification_date: "2026-08-31"
 
 key_journalists:
   - name: "Amanda Hoover"
