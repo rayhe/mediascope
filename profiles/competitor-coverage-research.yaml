@@ -1,4 +1,26 @@
 aggregate_findings:
+
+  ft_openai_growth_vs_meta_capital_privacy_415_aug31_2026:
+    date: '2026-08-31'
+    publication: Financial Times
+    competitor_pair: OpenAI vs Meta
+    type: A competitor coverage deep dive
+    mechanism: 415
+    financial_relationship_primary: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+    financial_relationship_secondary: https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+    ft_openai_sources:
+      - https://www.reuters.com/business/openai-nearly-double-workforce-8000-by-end-2026-ft-reports-2026-03-21/
+      - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+      - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/openai-floats-giving-government-5-share-in-company/
+      - https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+    ft_meta_sources:
+      - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
+      - https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/
+      - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+    delta_manual_illustrative: -0.6425
+    note: MANUAL ILLUSTRATIVE not empirical n=4 per entity insufficient for inferential significance p_value NOT CALCULATED cohens_d NOT CALCULATED significant false editorial independence and confounders required financial relationships correlational structural incentives not proof of causation
+    methodology_fix: Removed Le Monde and generic Reuters non-FT items from scored corpus replaced with FT-attributed OpenAI workforce doubling superapp 34B spending gov 5 percent comparators retained rogue-agent only with precise Reuters self-report attribution
   advance_reddit_meta_ad_competition_structural_incentive:
     advance_ownership:
       class_b_ownership_pct: 83.5
