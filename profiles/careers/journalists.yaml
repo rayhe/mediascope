@@ -2560,6 +2560,131 @@ journalists:
     capacity to move policy. (5) NYT has AI licensing deals with Google, Apple, Amazon  -  the same companies Kang covers
     on the regulation beat  -  creating an undisclosed institutional conflict parallel to the Wired/Condé Nast conflicts MediaScope
     tracks.'
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 416
+      mechanism_name: nyt_policy_beat_adversarial_spillover
+      pattern: policy_beat_adversarial_spillover
+      journalist: Cecilia Kang
+      publication: New York Times
+      date_range: 2024-04-06 to 2026-08-26
+      type: B - Journalist Cross-Entity Tracking
+      date: '2026-08-31'
+      description: 'Cecilia Kang cross-entity framing comparison 2024-2026: Meta youth safety settlement vs Google antitrust remedy vs cross-entity AI training data anchor covering OpenAI Google Meta in same investigation. Meta coverage uses adversarial legal-risk vocabulary Pay Up Landmark Addiction Dramatic Capitulation Violating Federal Child Privacy Endangered Children. Google remedy uses procedural business continuity vocabulary Ruling to Fix Positioned to Keep Keep business running largely without interruption. Same journalist same desk same window. MANUAL ILLUSTRATIVE tone values Meta -6 Google -1 anchor -2 p_value NOT CALCULATED cohens_d NOT CALCULATED significant false no empirical significance claimed.'
+      meta_coverage:
+        title: Meta to Pay Up to $17.1 Billion in Landmark Settlement Over Social Media Addiction Claims
+        date: '2026-08-26'
+        publication: New York Times
+        byline: Cecilia Kang and Eli Tan
+        url: https://muckrack.com/ceciliakang/articles
+        verification:
+        - https://muckrack.com/ceciliakang/articles
+        source_urls:
+        - https://muckrack.com/ceciliakang/articles
+        headline_vocabulary:
+        - Pay Up to $17.1 Billion
+        - Landmark Settlement
+        - Addiction Claims
+        - Dramatic Capitulation
+        - Violating Federal Child Privacy
+        - Endangered Children
+        tone_manual_illustrative: -6
+        privacy_terms_count: 7
+        legal_terms_count: 9
+        note: Muck Rack portfolio lists bellwether coverage excerpts use endangered children landmark settlement dramatic capitulation. Exact NYT URL not independently opened in this run using portfolio URL as primary verification.
+      google_coverage:
+        title: What a Ruling to Fix Google Search Monopoly Means for the Company
+        date: '2025-09-02'
+        publication: New York Times
+        byline: Tripp Mickle and Cecilia Kang
+        url: https://www.nytimes.com/2025/09/02/technology/google-search-antitrust-decision.html
+        url_verified: https://www.nytimes.com/2025/09/02/technology/google-search-antitrust-decision.html
+        verification:
+        - https://muckrack.com/ceciliakang/articles
+        - https://www.benton.org/newsletter/daily-digest-932025-mark-nathan-knoller
+        source_urls:
+        - https://muckrack.com/ceciliakang/articles
+        - https://www.benton.org/newsletter/daily-digest-932025-mark-nathan-knoller
+        headline_vocabulary:
+        - Ruling to Fix
+        - Means for the Company
+        - Positioned to Keep
+        - Keep That Business Running Largely Without Interruption
+        tone_manual_illustrative: -1
+        privacy_terms_count: 0
+        legal_terms_count: 3
+      cross_entity_anchor:
+        title: How tech giants cut corners to harvest data for AI
+        date: '2024-04-06'
+        publication: New York Times
+        byline: Cade Metz, Cecilia Kang, Sheera Frenkel, Stuart A. Thompson, Nico Grant
+        verification:
+        - https://www.editorandpublisher.com/stories/how-tech-giants-cut-corners-to-harvest-data-for-ai,249102
+        - https://spyglass.org/meta-operation-kick-puppies/
+        source_urls:
+        - https://www.editorandpublisher.com/stories/how-tech-giants-cut-corners-to-harvest-data-for-ai,249102
+        - https://spyglass.org/meta-operation-kick-puppies/
+        tone_manual_illustrative: -2
+        equivalent_conduct: harvesting copyrighted training data without license described with different agency and intent vocabulary across entities
+        note: Covers OpenAI Google Meta in same investigation. Meta framing intent heavy buying publisher to procure long works even if lawsuits vs Google framing technical conditional transcribed YouTube potentially violating.
+      openai_cross_entity:
+        title: How tech giants cut corners to harvest data for AI
+        date: '2024-04-06'
+        byline: Cade Metz, Cecilia Kang, Sheera Frenkel, Stuart A. Thompson, Nico Grant
+        source_urls:
+        - https://www.editorandpublisher.com/stories/how-tech-giants-cut-corners-to-harvest-data-for-ai,249102
+        - https://spyglass.org/meta-operation-kick-puppies/
+        verification:
+        - https://www.editorandpublisher.com/stories/how-tech-giants-cut-corners-to-harvest-data-for-ai,249102
+        - https://spyglass.org/meta-operation-kick-puppies/
+        covers:
+        - OpenAI
+        - Google
+        - Meta
+        entities:
+        - OpenAI
+        - Google
+        - Meta
+        tone_manual_illustrative: -2
+      analysis:
+        headline_tone: Meta adversarial legal-risk vs Google procedural business continuity same journalist same window
+        agency_attribution: Meta is actor vs Google is subject of judicial restraint Judge barred Judge declined allow market forces
+        privacy_language: Meta 7 vs Google 0 same policy reporter
+        equivalent_conduct_standards: Same harvesting copyrighted training data without license Meta buying procuring conferring vs Google transcribed potentially
+        confounders_strong:
+        - beat specialization DC policy deeper FTC/state AG sourcing for Meta
+        - prior book An Ugly Truth 400+ Meta interviews institutionalizes adversarial Meta
+        - newsworthiness Meta $17.1B 47-state larger than Google remedy sharing data but keeping Chrome
+        confounders_moderate:
+        - maturity youth safety longer-established
+        - legal stage capitulation vs judge declining drastic changes
+        - access Kang-Frenkel partnership Silicon Valley source network for Meta
+        confounders_weak:
+        - NYT licensing deals Google Apple Amazon not Meta would predict softer Google consistent but opposite simple capture for Meta
+        financial_relationship_note: NYT AI licensing deals Google Apple Amazon create structural incentive softer coverage those companies yet Meta no deal receives more adversarial coverage correlation does not imply causation correlational structural incentives not proof of editorial control opposite simple capture prediction suggests reporter assignment and institutional history outweigh direct licensing incentive explicitly acknowledges editorial independence and strong confounders no documented editorial directive
+        editorial_independence_acknowledgment: true
+      confounders:
+        strong:
+        - beat specialization DC policy deeper FTC/state AG sourcing for Meta
+        - prior book An Ugly Truth 400+ interviews institutionalizes adversarial Meta
+        - newsworthiness Meta $17.1B 47-state larger than Google remedy
+        moderate:
+        - maturity youth safety longer-established
+        - legal stage capitulation vs judge declining drastic changes
+        - access Kang-Frenkel partnership Silicon Valley source network for Meta
+        weak:
+        - NYT licensing deals Google Apple Amazon not Meta would predict softer Google consistent but opposite simple capture for Meta
+      editorial_independence_note: No documented editorial directive linking coverage tone to financial relationships. Framing differences may reflect source network depth beat history regulatory lens and prior book partnership rather than institutional instruction. Explicitly acknowledges editorial independence and strong confounders.
+      financial_relationship_note: NYT AI licensing deals with Google Apple Amazon create structural incentive for softer coverage of those companies yet Meta no deal receives more adversarial coverage. Correlation does not imply causation. Financial relationships are correlational structural incentives not proof of editorial control. Opposite of simple capture prediction suggests reporter assignment and institutional history outweigh direct licensing incentive.
+      methodology: primary-source-first direct NYT bylines Muck Rack portfolio verification Editor and Publisher syndication for paywall bypass Benton Foundation digest for Google remedy corroboration Spyglass secondary for cross-entity verification all tone values MANUAL ILLUSTRATIVE no p-values or confidence intervals calculated no empirical significance claimed avoids synthetic inference every factual claim needs source URL or citation avoids em dashes
+      sources:
+      - https://muckrack.com/ceciliakang/articles
+      - https://www.nytimes.com/2025/09/02/technology/google-search-antitrust-decision.html
+      - https://www.benton.org/newsletter/daily-digest-932025-mark-nathan-knoller
+      - https://www.editorandpublisher.com/stories/how-tech-giants-cut-corners-to-harvest-data-for-ai,249102
+      - https://spyglass.org/meta-operation-kick-puppies/
+      - https://politics.georgetown.edu/profiles/cecilia-kang/
+      test_file: tests/test_cecilia_kang_cross_entity_416.py
   source_urls:
   - https://www.nytco.com/press/cecilia-kang-joining-technology-team/
   - https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-desk-hires-kang-as-tech-regulation-reporter/

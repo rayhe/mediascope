@@ -101,56 +101,57 @@ entities:
       ipo_banks_reported:
       - Goldman Sachs
       - Morgan Stanley
-      transparency_inflection: 'When the S-1 becomes public, OpenAI must disclose revenue breakdowns, publisher deal terms, advertising metrics, and cost structure. This is the FIRST TIME publisher content licensing deal values will be verifiable from primary SEC filings rather than press reports. As of Aug 30 2026, publicly reported values include: News Corp ($250M/5yr), Axel Springer (tens of millions euros over 3-year deal per Bloomberg Law; CB Insights lists $25M+; secondary sources describe tens of millions per year but Bloomberg wording supports tens of millions across deal), Financial Times ($5-10M/yr per WSJ via Digiday timeline, primary Reuters says terms not disclosed), Guardian (undisclosed, spokesperson declined per Digiday, announced scope attributed extracts/summaries with no explicit training-rights mention), Atlantic (undisclosed). Amazon-NYT AI deal $20-25M/yr (WSJ people familiar via Editor & Publisher) provides valuation control for non-OpenAI AI licensing. Most other OpenAI deals remain undisclosed. '
+      transparency_inflection: 'When the S-1 becomes public, OpenAI must disclose revenue breakdowns, publisher deal terms, advertising metrics, and cost structure. This is the FIRST TIME publisher content licensing deal values will be verifiable from primary SEC filings rather than press reports. As of Aug 30 2026, publicly reported values include: News Corp ($250M/5yr), Axel Springer (tens of millions euros over 3-year deal per Bloomberg Law; CB Insights lists $25M+; secondary sources describe tens of millions per year but Bloomberg wording supports tens of millions across deal), Financial Times ($5-10M/yr per WSJ via Digiday timeline, primary Reuters says terms not disclosed), Guardian (undisclosed, spokesperson declined per Digiday, announced scope attributed extracts/summaries with no explicit training-rights mention), Atlantic (undisclosed). Amazon-NYT AI deal $20-25M/yr (WSJ people familiar via Editor & Publisher) provides valuation control for non-OpenAI AI licensing. Most other
+        OpenAI deals remain undisclosed. '
       publisher_deal_valuation_audit_2026_08_30:
         financial_times:
-          estimated_value: "$5-10M/yr"
+          estimated_value: $5-10M/yr
           cash_terms_disclosed: false
-          valuation_source_type: "secondary_report_based"
-          primary_source: "Reuters Apr 29 2024 - terms not disclosed"
-          secondary_source: "WSJ via Digiday 2024-in-review timeline - $5M-$10M per year"
-          announced_rights_scope: "licensed content for model development and attributed ChatGPT summaries"
+          valuation_source_type: secondary_report_based
+          primary_source: Reuters Apr 29 2024 - terms not disclosed
+          secondary_source: WSJ via Digiday 2024-in-review timeline - $5M-$10M per year
+          announced_rights_scope: licensed content for model development and attributed ChatGPT summaries
           source_urls:
-            - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
-            - "https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/"
+          - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+          - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
         guardian:
-          estimated_value: "Undisclosed"
+          estimated_value: Undisclosed
           cash_terms_disclosed: false
-          announced_rights_scope: "Guardian reporting and archive journalism available as news source in ChatGPT; attributed short summaries and extracts; no explicit training-rights mention in announcement"
+          announced_rights_scope: Guardian reporting and archive journalism available as news source in ChatGPT; attributed short summaries and extracts; no explicit training-rights mention in announcement
           training_rights_explicit: false
-          in_kind: "ChatGPT Enterprise access"
-          spokesperson_comment: "Declined to disclose terms per Digiday"
-          language_shift: "Announcement wording shifted away from training-data framing similar to Washington Post deal"
+          in_kind: ChatGPT Enterprise access
+          spokesperson_comment: Declined to disclose terms per Digiday
+          language_shift: Announcement wording shifted away from training-data framing similar to Washington Post deal
           source_urls:
-            - "https://digiday.com/media/media-briefing-what-the-washington-posts-deal-with-openai-says-about-the-future-of-ai-content-licensing/"
-            - "https://www.engadget.com/ai/the-guardian-is-the-latest-news-organization-to-partner-with-openai-155555243.html?src=rss/"
-            - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+          - https://digiday.com/media/media-briefing-what-the-washington-posts-deal-with-openai-says-about-the-future-of-ai-content-licensing/
+          - https://www.engadget.com/ai/the-guardian-is-the-latest-news-organization-to-partner-with-openai-155555243.html?src=rss/
+          - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
         atlantic:
-          estimated_value: "Undisclosed"
+          estimated_value: Undisclosed
           cash_terms_disclosed: false
-          announced_date: "2024-05-29"
-          announced_rights_scope: "Licensing plus technology access; not syndication; does not permit reproduction of full articles or lengthy excerpts per TechCrunch"
-          journalist_concern: "Atlantic journalists questioned derivative-work compensation"
+          announced_date: '2024-05-29'
+          announced_rights_scope: Licensing plus technology access; not syndication; does not permit reproduction of full articles or lengthy excerpts per TechCrunch
+          journalist_concern: Atlantic journalists questioned derivative-work compensation
           source_urls:
-            - "https://techcrunch.com/2024/06/22/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-openai/"
-            - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+          - https://techcrunch.com/2024/06/22/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-openai/
+          - https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media
         axel_springer:
-          estimated_value: "tens of millions euros (3-year deal)"
+          estimated_value: tens of millions euros (3-year deal)
           cash_terms_disclosed: false
-          valuation_source_type: "source_familiar_undisclosed_terms"
-          primary_source: "Bloomberg Law - three-year deal worth tens of millions euros per source familiar with undisclosed terms"
-          secondary_claim: "Some secondary sources describe tens of millions per year; Bloomberg wording supports tens of millions across deal, not necessarily per year - do not assert $13M/yr without stronger evidence"
-          cb_insights_listing: "$25M+ (Dec 13 2023)"
+          valuation_source_type: source_familiar_undisclosed_terms
+          primary_source: Bloomberg Law - three-year deal worth tens of millions euros per source familiar with undisclosed terms
+          secondary_claim: Some secondary sources describe tens of millions per year; Bloomberg wording supports tens of millions across deal, not necessarily per year - do not assert $13M/yr without stronger evidence
+          cb_insights_listing: $25M+ (Dec 13 2023)
           source_urls:
-            - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content"
-            - "https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/"
+          - https://news.bloomberglaw.com/tech-and-telecom-law/openai-to-pay-axel-springer-tens-of-millions-to-use-news-content
+          - https://the-decoder.com/axel-springer-and-openai-license-agreement-is-worth-tens-of-millions-of-euros-per-year/
         nyt_amazon_control:
-          estimated_value: "$20-25M/yr"
-          deal_type: "AI licensing (Amazon, not OpenAI) - valuation control"
-          valuation_source: "WSJ people familiar via Editor & Publisher - $20M-$25M per year, nearly 1% of NYT 2024 revenue"
-          significance: "Useful valuation control for AI licensing market; shows non-OpenAI AI licensing scale"
-          source_url: "https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961"
-        methodology_note: "Publisher-AI deals differ materially in rights scope - attributed search/display access vs model-training rights vs syndication. Financial-incentive scoring must not treat every 'licensing deal' as identical. Distinguish primary 'terms not disclosed' from secondary valuation estimates; label secondary/report-based valuations explicitly."
+          estimated_value: $20-25M/yr
+          deal_type: AI licensing (Amazon, not OpenAI) - valuation control
+          valuation_source: WSJ people familiar via Editor & Publisher - $20M-$25M per year, nearly 1% of NYT 2024 revenue
+          significance: Useful valuation control for AI licensing market; shows non-OpenAI AI licensing scale
+          source_url: https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961
+        methodology_note: Publisher-AI deals differ materially in rights scope - attributed search/display access vs model-training rights vs syndication. Financial-incentive scoring must not treat every 'licensing deal' as identical. Distinguish primary 'terms not disclosed' from secondary valuation estimates; label secondary/report-based valuations explicitly.
       source_urls:
       - https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
       - https://www.fool.com/investing/2026/06/28/openai-reportedly-considers-delaying-its-ipo-shoul/
@@ -636,7 +637,7 @@ entities:
       date_analyzed: '2026-08-30'
       iteration: 386
       iteration_type: C
-      iteration_time: '2026-08-30 02:00 PT'
+      iteration_time: 2026-08-30 02:00 PT
       scheduled_job_id: mediascope-daily-iteration
       publication_pair: WIRED x OpenAI and Guardian x OpenAI and FT x OpenAI and Le Monde x OpenAI
       financial_channels: 2
@@ -749,10 +750,20 @@ entities:
       asymmetry_scorer_result:
         target_entity: Meta
         peer_entity: OpenAI
-        target_scores: [-0.62, -0.58, -0.65, -0.55, -0.61]
+        target_scores:
+        - -0.62
+        - -0.58
+        - -0.65
+        - -0.55
+        - -0.61
         target_avg: -0.602
-        peer_scores: [0.08, 0.12, 0.15, 0.05, 0.10]
-        peer_avg: 0.10
+        peer_scores:
+        - 0.08
+        - 0.12
+        - 0.15
+        - 0.05
+        - 0.1
+        peer_avg: 0.1
         delta: -0.702
         delta_calc: target_avg minus peer_avg = -0.602 minus 0.10 = -0.702
         p_value: <0.001 synthetic illustrative only
@@ -772,16 +783,16 @@ entities:
       - '[MODERATE] OpenAI ad expansion announced Aug 19-24 2026 is very recent - limited time for WIRED or other publications to produce investigative coverage - absence of adversarial coverage may reflect timing lag not financial incentive'
       - '[WEAK] France launch advertisers Bouygues Telecom Cultura TotalEnergies Carrefour via Cosmo5 are not direct Condé Nast advertisers - French agency overlap Publicis Dentsu Havas serves French publishers Le Monde but not necessarily WIRED US editorial - geographic and organizational distance weakens direct incentive channel'
       cross_references:
-      - 376  # Quintuple Reverse-Advertiser Alignment - EssilorLuxottica
-      - 53  # Triple Layer Journalism Funding - OpenAI three financial channels
-      - 35  # Advance Condé Nast Aggregate AI Revenue Dependency - Omni-Deal Publisher
-      - 58  # Condé Nast AI Deal Portfolio Dependency Index
-      - 88  # Publisher AI Deal Revolt dual-channel financial leverage decoupling
-      - 124  # Advertising > content licensing hierarchy
-      - 286  # OpenAI Aug 3 feature parity automatic advanced matching
-      - 367  # Amazon Associates 50 percent Commission Cut Amplifies Publisher Dependency
-      - 361  # Amazon Apr 20 2026 25B Anthropic Expansion
-      - 53  # Meta contrast - active withdrawal from journalism funding
+      - 376
+      - 53
+      - 35
+      - 58
+      - 88
+      - 124
+      - 286
+      - 367
+      - 361
+      - 53
       source_urls:
       - https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/
       - https://techxplore.com/news/2026-08-openai-ads-chatgpt-europe-week.html
@@ -799,8 +810,6 @@ entities:
       - https://blockonomi.com/amazon-amzn-stock-completes-50-billion-openai-investment-after-q2-surge/
       - https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
       - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
-
-
     google_alongside_ai_content_ad_dominance_mechanism_396:
       mechanism_id: 396
       iteration: 396
@@ -808,11 +817,12 @@ entities:
       type_label: financial_incentive_mapping
       date_analyzed: '2026-08-30'
       title: Google Alongside-AI-Content Ad Dominance - $26.42B of $32.03B (80%+) Publisher Dependency Concentration vs Chatbot Ad Marginality
-      finding: 'eMarketer Jul 17 2026 counter-forecast quantifies AI advertising market structure that inverts the original MediaScope financial incentive model. Total US AI ad spend 2026 is $32.03B. Of that, $26.42B (80%+) is traditional search ads running alongside Google AI Overviews - existing Google revenue, not new chatbot revenue. Only $2.56B (8%) is standalone chatbot ads (ChatGPT, Copilot, Google AI Mode, Alexa Shopping). By 2030, total US AI ad spend grows to $68.25B but alongside-AI-content share drops to 58.6% - still dominant. Chatbot ads total market by 2030 is $5.41B (eMarketer) vs OpenAI projection $100B - OpenAI misses its own forecast by 90% even if it captures 100% of chatbot ad market. This means Google captures BOTH search ad revenue AND AI-adjacent ad revenue, while OpenAI ad alternative stays marginal. Publisher dependency CONCENTRATES on Google, not diversifies to OpenAI. Revised MediaScope thesis: content licensing deals REMAIN financially material to OpenAI ($300-400M/yr vs ~$540M plausible share of $5.41B chatbot ads by 2030 = 40-75% ratio, not 0.4%), while Google financial leverage over publishers INCREASES because 80%+ of AI ad spend is Google alongside-AI-content. Company with LEAST financial relationship with publishers (Meta: 0 Condé Nast deals, 13 total licensing deals globally $50M/yr News Corp + 12 others) receives harshest coverage, while company with MOST financial relationships (Google via $81.63B Q2 ad revenue + Showcase + News AI pilot) receives softer coverage.'
+      finding: 'eMarketer Jul 17 2026 counter-forecast quantifies AI advertising market structure that inverts the original MediaScope financial incentive model. Total US AI ad spend 2026 is $32.03B. Of that, $26.42B (80%+) is traditional search ads running alongside Google AI Overviews - existing Google revenue, not new chatbot revenue. Only $2.56B (8%) is standalone chatbot ads (ChatGPT, Copilot, Google AI Mode, Alexa Shopping). By 2030, total US AI ad spend grows to $68.25B but alongside-AI-content share drops to 58.6% - still dominant. Chatbot ads total market by 2030 is $5.41B (eMarketer) vs OpenAI projection $100B - OpenAI misses its own forecast by 90% even if it captures 100% of chatbot ad market. This means Google captures BOTH search ad revenue AND AI-adjacent ad revenue, while OpenAI ad alternative stays marginal. Publisher dependency CONCENTRATES on Google, not diversifies to OpenAI. Revised MediaScope thesis: content licensing deals REMAIN financially material to OpenAI ($300-400M/yr
+        vs ~$540M plausible share of $5.41B chatbot ads by 2030 = 40-75% ratio, not 0.4%), while Google financial leverage over publishers INCREASES because 80%+ of AI ad spend is Google alongside-AI-content. Company with LEAST financial relationship with publishers (Meta: 0 Condé Nast deals, 13 total licensing deals globally $50M/yr News Corp + 12 others) receives harshest coverage, while company with MOST financial relationships (Google via $81.63B Q2 ad revenue + Showcase + News AI pilot) receives softer coverage.'
       emarketer_counter_forecast:
         report_date: '2026-07-17'
         analyst: Nate Elliot (principal analyst, AI)
-        us_chatbot_ad_market_2026_b: '<1.0'
+        us_chatbot_ad_market_2026_b: <1.0
         us_chatbot_ad_market_2030_b: 5.41
         us_ai_ad_spend_2026_b: 32.03
         us_ai_ad_spend_alongside_ai_content_2026_b: 26.42
@@ -823,7 +833,7 @@ entities:
         openai_projected_2026_b: 2.5
         openai_projected_2030_b: 100
         miss_magnitude_pct: 90
-        key_quote: 'Even if you assume that they will make 100% of all revenue from chatbot advertising five years from now, OpenAI will still miss their number by 90%.'
+        key_quote: Even if you assume that they will make 100% of all revenue from chatbot advertising five years from now, OpenAI will still miss their number by 90%.
         source_urls:
         - https://www.emarketer.com/content/chatgpt-ad-revenues-may-fall-90--short-of-openai-s-2030-target
         - https://www.adweek.com/media/openais-ad-business-is-on-pace-to-miss-its-own-forecast-by-90-analyst-says/
@@ -844,26 +854,38 @@ entities:
         - https://www.neowin.net/news/alphabet-revenue-jumps-to-1198-billion-as-google-cloud-growth-accelerates/
         - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
       revised_thesis:
-        original_thesis_publisher_licensing_vs_ad_2030_ratio: '0.4% ($300-400M licensing vs $100B ad)'
-        revised_ratio: '40-75% ($300-400M licensing vs ~$540M plausible OpenAI share of $5.41B chatbot ads)'
+        original_thesis_publisher_licensing_vs_ad_2030_ratio: 0.4% ($300-400M licensing vs $100B ad)
+        revised_ratio: 40-75% ($300-400M licensing vs ~$540M plausible OpenAI share of $5.41B chatbot ads)
         google_captures_alongside_ai_content: true
         google_leverage_increases: true
         openai_does_not_replicate_google_shield: true
         content_licensing_remains_primary_openai_publisher_relationship: true
-        net_effect: 'Financial incentive model shifts from future ad dependency to present deal dependency for OpenAI, and from declining relevance to increasing dominance for Google. Company with LEAST financial relationship (Meta) continues harshest coverage, companies with MOST financial relationships (Google via ads + Showcase, OpenAI via deals) receive softer treatment.'
+        net_effect: Financial incentive model shifts from future ad dependency to present deal dependency for OpenAI, and from declining relevance to increasing dominance for Google. Company with LEAST financial relationship (Meta) continues harshest coverage, companies with MOST financial relationships (Google via ads + Showcase, OpenAI via deals) receive softer treatment.
       asymmetry_scorer_result:
         methodology: MANUAL ILLUSTRATIVE synthetic illustrative only per Aug 28 rule - requires VADER TextBlob plus human annotation on full WIRED corpus for observed validation. DO NOT claim empirical significance.
         target_entity: Meta
         peer_entity: Google
-        target_scores_MANUAL_ILLUSTRATIVE: [-0.62, -0.58, -0.65, -0.55, -0.61]
+        target_scores_MANUAL_ILLUSTRATIVE:
+        - -0.62
+        - -0.58
+        - -0.65
+        - -0.55
+        - -0.61
         target_avg_MANUAL_ILLUSTRATIVE: -0.602
-        peer_scores_MANUAL_ILLUSTRATIVE: [0.08, 0.12, 0.15, 0.05, 0.10]
-        peer_avg_MANUAL_ILLUSTRATIVE: 0.10
+        peer_scores_MANUAL_ILLUSTRATIVE:
+        - 0.08
+        - 0.12
+        - 0.15
+        - 0.05
+        - 0.1
+        peer_avg_MANUAL_ILLUSTRATIVE: 0.1
         delta_MANUAL_ILLUSTRATIVE: -0.702
         delta_calc: target_avg minus peer_avg = -0.602 minus 0.10 = -0.702
         p_value: not_calculated
         cohens_d: not_calculated
-        ci_95: [not_calculated, not_calculated]
+        ci_95:
+        - not_calculated
+        - not_calculated
         significant: false
         illustrative_warning: MANUAL ILLUSTRATIVE - requires observed validation, do not present as empirical finding
       confounders:
@@ -875,7 +897,7 @@ entities:
       financial_channels:
         google_alongside_ai_content_2026_b: 26.42
         google_alongside_pct: 80
-        chatbot_ads_total_market_2026_b: '<1.0'
+        chatbot_ads_total_market_2026_b: <1.0
         chatbot_ads_pct: 8
         google_q2_ad_b: 81.63
         openai_ad_run_rate_aug_2026_b: 1.0
@@ -891,11 +913,6 @@ entities:
       - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
       - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
       correlational_note: Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Publisher dependency on Google for ad revenue is structural but does not prove editorial influence. Meta zero-deal status is factual but does not prove adversarial coverage is caused by zero-deal status.
-
-
-
-
-
     amazon_openai_contingent_tranche_ipo_timeline_mechanism_406:
       mechanism_id: 406
       type: C
@@ -906,7 +923,8 @@ entities:
       iteration_type: C
       scheduled_job_id: mediascope-daily-iteration
       publication_pair: WIRED x OpenAI and FT x OpenAI and Guardian x Anthropic and NYT x Amazon
-      finding: 'Amazon 50B commitment to OpenAI March 31 2026 122B round at 852B valuation structured as 15B immediate plus 35B contingent on IPO by end 2028 or AGI achievement creates firm IPO timeline pressure. Tech-Insider Apr 6 2026 reports conditional nature tied to IPO by 2028 or AGI has been widely interpreted as establishing firm IPO timeline with most projections targeting 2027. Barron Mar 2026 confirms Amazon single largest commitment up to 50B with 15B investment followed by 35B tranche contingent on milestones. OpenAI generating 2B monthly revenue 900M weekly active users plans 2GW Trainium from Amazon diversifying from Microsoft. Google Q2 2026 ad revenue 81.63B up 14.4 percent Search 63.27B up 17 percent YouTube 11.06B up 13 percent per Zacks Aug 27 2026 and BestMediaInfo Jul 2026 and afaqs Jul 2026 shows structural publisher dependency on Google as primary ad source 68 percent of Alphabet total quarterly revenue. Anthropic pre-IPO revolving credit facility exceeding 10B target up from 2.5B facility per Reuters Aug 18 2026 and Hindu Businessline Aug 19 2026 and Webull Aug 2026 with tier 1 banks 1.25B each tier 2 1B each tier 3 750M or less creates bank incentive to secure IPO underwriting roles. Morgan Stanley Goldman Sachs JPMorgan working on Anthropic IPO per Bloomberg. Bank of America 520M credit line to OpenAI boosting to 5B per Bloomberg. Combined triangulation: Amazon funds OpenAI 50B plus Anthropic 13B total 63B exposure plus Google funds publisher ad revenue 81.63B Q2 plus banks fund Anthropic 10B revolver for IPO fees 50M each vs 7M credit revenue 7 to 1 loss leader per Lex Substack. Meta has zero publisher deals zero bank credit facility zero Amazon investment. Financial predictor: softer coverage for Amazon-funded AI labs and Google-funded publishers vs adversarial coverage for zero-funded Meta. Correlation only not proof of editorial control.'
+      finding: 'Amazon 50B commitment to OpenAI March 31 2026 122B round at 852B valuation structured as 15B immediate plus 35B contingent on IPO by end 2028 or AGI achievement creates firm IPO timeline pressure. Tech-Insider Apr 6 2026 reports conditional nature tied to IPO by 2028 or AGI has been widely interpreted as establishing firm IPO timeline with most projections targeting 2027. Barron Mar 2026 confirms Amazon single largest commitment up to 50B with 15B investment followed by 35B tranche contingent on milestones. OpenAI generating 2B monthly revenue 900M weekly active users plans 2GW Trainium from Amazon diversifying from Microsoft. Google Q2 2026 ad revenue 81.63B up 14.4 percent Search 63.27B up 17 percent YouTube 11.06B up 13 percent per Zacks Aug 27 2026 and BestMediaInfo Jul 2026 and afaqs Jul 2026 shows structural publisher dependency on Google as primary ad source 68 percent of Alphabet total quarterly revenue. Anthropic pre-IPO revolving credit facility exceeding 10B target
+        up from 2.5B facility per Reuters Aug 18 2026 and Hindu Businessline Aug 19 2026 and Webull Aug 2026 with tier 1 banks 1.25B each tier 2 1B each tier 3 750M or less creates bank incentive to secure IPO underwriting roles. Morgan Stanley Goldman Sachs JPMorgan working on Anthropic IPO per Bloomberg. Bank of America 520M credit line to OpenAI boosting to 5B per Bloomberg. Combined triangulation: Amazon funds OpenAI 50B plus Anthropic 13B total 63B exposure plus Google funds publisher ad revenue 81.63B Q2 plus banks fund Anthropic 10B revolver for IPO fees 50M each vs 7M credit revenue 7 to 1 loss leader per Lex Substack. Meta has zero publisher deals zero bank credit facility zero Amazon investment. Financial predictor: softer coverage for Amazon-funded AI labs and Google-funded publishers vs adversarial coverage for zero-funded Meta. Correlation only not proof of editorial control.'
       amazon_openai_commitment:
         announcement_date: '2026-03-31'
         round_size_b: 122
@@ -914,9 +932,9 @@ entities:
         amazon_commitment_b: 50
         amazon_immediate_b: 15
         amazon_contingent_b: 35
-        contingent_milestone: 'IPO by end of 2028 or AGI achievement'
-        amazon_structure_source: 'Barron Mar 2026 - structured with 15B investment followed by 35B tranche contingent on certain milestones'
-        tech_insider_structure_source: 'Tech-Insider Apr 6 2026 - 50B commitment of which 35B is contingent on OpenAI completing an IPO by end of 2028 or achieving AGI'
+        contingent_milestone: IPO by end of 2028 or AGI achievement
+        amazon_structure_source: Barron Mar 2026 - structured with 15B investment followed by 35B tranche contingent on certain milestones
+        tech_insider_structure_source: Tech-Insider Apr 6 2026 - 50B commitment of which 35B is contingent on OpenAI completing an IPO by end of 2028 or achieving AGI
         other_investors:
           nvidia_b: 30
           softbank_b: 30
@@ -956,7 +974,7 @@ entities:
         - https://bestmediainfo.com/mediainfo/mediainfo-digital/google-ad-revenue-rises-14-to-816-billion-as-ai-opens-new-search-inventory-12189700
         - https://www.afaqs.com/news/media/alphabets-q2-revenue-jumps-24-to-1198-billion-as-ai-powers-search-cloud-and-youtube-12190610
         - https://www.seroundtable.com/google-ad-revenue-earnings-41738.html
-        structural_dependency_note: 'Google advertising 81.63B is largest business during quarter per afaqs. Search and YouTube drive growth. Retail and finance biggest contributors per Zacks. AI Max 500K advertisers 15 percent more conversions. Publisher dependency concentrates on Google not OpenAI per mechanism 396 alongside AI content 26.42B of 32.03B 80 percent.'
+        structural_dependency_note: Google advertising 81.63B is largest business during quarter per afaqs. Search and YouTube drive growth. Retail and finance biggest contributors per Zacks. AI Max 500K advertisers 15 percent more conversions. Publisher dependency concentrates on Google not OpenAI per mechanism 396 alongside AI content 26.42B of 32.03B 80 percent.
       anthropic_credit_facility:
         facility_target_b: 10
         facility_current_b: 10
@@ -1016,20 +1034,32 @@ entities:
         meta_publisher_deals: 0
         meta_bank_facility: 0
         meta_amazon_investment: 0
-        predictor: 'Publisher financial relationship 0 for Meta vs 50B Amazon OpenAI plus 13B Amazon Anthropic plus 81.63B Google ad revenue plus 10B Anthropic bank revolver predicts softer coverage for funded entities vs adversarial for unfunded Meta. Meta zero-deal status factual.'
+        predictor: Publisher financial relationship 0 for Meta vs 50B Amazon OpenAI plus 13B Amazon Anthropic plus 81.63B Google ad revenue plus 10B Anthropic bank revolver predicts softer coverage for funded entities vs adversarial for unfunded Meta. Meta zero-deal status factual.
       asymmetry_scorer_result:
         methodology: MANUAL ILLUSTRATIVE synthetic illustrative only per Aug 28 rule - requires VADER TextBlob plus human annotation on full WIRED corpus for observed validation. DO NOT claim empirical significance.
         target_entity: Meta
         peer_entity: OpenAI
-        target_scores_MANUAL_ILLUSTRATIVE: [-0.58, -0.62, -0.55, -0.60, -0.57]
+        target_scores_MANUAL_ILLUSTRATIVE:
+        - -0.58
+        - -0.62
+        - -0.55
+        - -0.6
+        - -0.57
         target_avg_MANUAL_ILLUSTRATIVE: -0.584
-        peer_scores_MANUAL_ILLUSTRATIVE: [0.12, 0.15, 0.08, 0.18, 0.10]
+        peer_scores_MANUAL_ILLUSTRATIVE:
+        - 0.12
+        - 0.15
+        - 0.08
+        - 0.18
+        - 0.1
         peer_avg_MANUAL_ILLUSTRATIVE: 0.126
         delta_MANUAL_ILLUSTRATIVE: -0.71
         delta_calc: target_avg minus peer_avg = -0.584 minus 0.126 = -0.71
         p_value: not_calculated
         cohens_d: not_calculated
-        ci_95: [not_calculated, not_calculated]
+        ci_95:
+        - not_calculated
+        - not_calculated
         significant: false
         illustrative_warning: MANUAL ILLUSTRATIVE - requires observed validation, do not present as empirical finding
       confounders:
@@ -1049,8 +1079,6 @@ entities:
       - https://www.webull.com/news/15425870307107840
       - https://www.outlookbusiness.com/corporate/anthropic-may-expand-credit-facility-beyond-10-bn-ahead-of-ipo
       correlational_note: Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Amazon investment structure factual per Barron and Tech-Insider. Google ad revenue factual per Zacks and BestMediaInfo and afaqs. Anthropic credit facility factual per Reuters and Hindu Businessline. Triangulation inference is correlational not causal.
-
-
   anthropic:
     display_name: Anthropic
     aliases:
@@ -1091,7 +1119,7 @@ entities:
       series_h_infrastructure_note: 'Samsung, SK Hynix, and Micron - chip supply chain companies - invested in the Series H. This is significant for MediaScope: Samsung is simultaneously building Galaxy Glasses (direct Meta Ray-Ban competitor) and investing in Anthropic. The Samsung-Anthropic financial alignment means publications covering Samsung glasses favorably also align with Anthropic investor interests. No equivalent financial alignment exists between Meta and any chip supply chain investor.'
       series_h_hyperscaler_recycling_401:
         mechanism_id: 401
-        type: 'Type C - Financial Incentive Mapping'
+        type: Type C - Financial Incentive Mapping
         title: Series H Hyperscaler Capital Recycling - $15B Previously Committed Inside $65B Narrative Boost
         finding: 'May 28 2026 Series H reported as $65B financing at $965B post-money (Morningstar, PYMNTS). PYMNTS noted round included $15B of previously committed hyperscaler investments, including $5B from Amazon. This means $15B counted as fresh Series H was not new capital that week, but conversion/recognition of prior commitments (Amazon $5B Apr 2026 immediate tranche, plus Google $10B Apr 2026 immediate tranche). Net new third-party capital that week was ~$50B, not $65B, but headline framing as $65B creates 30% inflation of perceived financing momentum (65 vs 50). Publisher incentive: publications dependent on Google ($81.63B Q2 ad revenue) and Amazon ($76B TTM ad, $42.2B AWS) have structural incentive to amplify $65B headline rather than dissect $15B recycling, because larger Anthropic financing boosts perceived health of their own ad/cloud revenue sources. Correlation only, not proof of editorial direction.'
         date_reported: '2026-05-28'
@@ -2124,7 +2152,8 @@ entities:
       type: financial_incentive_mapping
       iteration: 371
       type_c_focus: SEC filing cross-validation - Amazon $19.8B Q2 ad revenue + Alphabet $81.63B ad revenue + Apple nine-figure Siri AI variable pay + Google Showcase sunset coercion - quadruple financial incentive quantification via primary SEC and WSJ sources
-      overview: 'Quadruple financial incentive architecture quantified via primary sources Aug 29 2026: (1) Amazon Q2 2026 advertising services revenue $19.8B (up 26% YoY, AdExchanger Jul 30 2026, $15.69B Motley Fool variant, $19.4B FactSet estimate, TradingView 10-Q summary $200.6B total revenue, $62.65B net income inflated by Anthropic mark-to-market), (2) Alphabet Q2 2026 Google advertising $81.63B (up 14% YoY, Search $63.27B up 17%, YouTube $11.06B up 13%, Google Network $7.3B, total revenue $119.8B up 24%, Zacks Jul 23 2026, Fool Aug 25 2026, 9to5Google Jul 22 2026, blog.google Jul 22 2026), (3) Apple Siri AI publisher deals nine-figure budget ($100M+), variable pay-per-use compensation (pay when content used, not flat fee), multiyear agreements, WSJ Aug 12 2026, MacRumors Aug 12 2026, TheWrap Aug 12 2026, 9to5Mac Aug 12 2026, AppleInsider Aug 13 2026, Editor and Publisher Aug 13 2026, Cult of Mac Aug 12 2026, reversal from Jan 2026 $1B/yr Gemini bypass strategy, hallucination motivator (iOS 18 notification summary false headlines disabled >1 year), (4) Google News Showcase sunset + News AI pilot coercion (PYMNTS Jun 25 2026, NYPost Jun 26 2026, Press Gazette Jun 26 2026, Android Headlines Jul 2026, NetworkToday Jun 26 2026) - publishers who do not grant AI training rights lose annual Showcase fees, Showcase $1B/3yr global pool (2020 launch), 3000+ publications, EU Commission antitrust probe Dec 2024, UK CMA binding conduct requirements Jan 28 2026, Google VP Connal engineering project defense Feb 11 2026. Combined: 4 financial levers quantified via SEC filings and primary reporting, all pointing to same structural incentive - softer coverage for paying entities, adversarial for non-paying Meta (zero deals with profiled pubs). Meta Q2 2026 ad revenue $59.363B (up 27%, PRNewswire Jul 29 2026) is direct competitor to both Amazon and Google ad businesses - structural antagonism, not neutral market.'
+      overview: 'Quadruple financial incentive architecture quantified via primary sources Aug 29 2026: (1) Amazon Q2 2026 advertising services revenue $19.8B (up 26% YoY, AdExchanger Jul 30 2026, $15.69B Motley Fool variant, $19.4B FactSet estimate, TradingView 10-Q summary $200.6B total revenue, $62.65B net income inflated by Anthropic mark-to-market), (2) Alphabet Q2 2026 Google advertising $81.63B (up 14% YoY, Search $63.27B up 17%, YouTube $11.06B up 13%, Google Network $7.3B, total revenue $119.8B up 24%, Zacks Jul 23 2026, Fool Aug 25 2026, 9to5Google Jul 22 2026, blog.google Jul 22 2026), (3) Apple Siri AI publisher deals nine-figure budget ($100M+), variable pay-per-use compensation (pay when content used, not flat fee), multiyear agreements, WSJ Aug 12 2026, MacRumors Aug 12 2026, TheWrap Aug 12 2026, 9to5Mac Aug 12 2026, AppleInsider Aug 13 2026, Editor and Publisher Aug 13 2026, Cult of Mac Aug 12 2026, reversal from Jan 2026 $1B/yr Gemini bypass strategy, hallucination motivator
+        (iOS 18 notification summary false headlines disabled >1 year), (4) Google News Showcase sunset + News AI pilot coercion (PYMNTS Jun 25 2026, NYPost Jun 26 2026, Press Gazette Jun 26 2026, Android Headlines Jul 2026, NetworkToday Jun 26 2026) - publishers who do not grant AI training rights lose annual Showcase fees, Showcase $1B/3yr global pool (2020 launch), 3000+ publications, EU Commission antitrust probe Dec 2024, UK CMA binding conduct requirements Jan 28 2026, Google VP Connal engineering project defense Feb 11 2026. Combined: 4 financial levers quantified via SEC filings and primary reporting, all pointing to same structural incentive - softer coverage for paying entities, adversarial for non-paying Meta (zero deals with profiled pubs). Meta Q2 2026 ad revenue $59.363B (up 27%, PRNewswire Jul 29 2026) is direct competitor to both Amazon and Google ad businesses - structural antagonism, not neutral market.'
       amazon_q2_2026:
         report_date: '2026-07-30'
         quarter_ended: '2026-06-30'
@@ -2154,7 +2183,7 @@ entities:
         - https://www.marketwatch.com/livecoverage/amazon-earnings-stock-results-guidance-q2/card/amazon-s-ad-business-is-expected-to-be-red-hot-ffppwQQS3xtldU160gqb
         - https://www.tradingview.com/news/tradingview:15b8f73c13724:0-amazon-com-inc-q2-2026-revenue-200-6b-net-income-62-65b-eps-5-75-10-q-summary/
         - https://www.zacks.com/commentary/2966133/amazon-stock-soars-after-q2-earnings-buy-hold-or-take-profits?cid=CS-STOCKTWITS-HL-investment_ideas-2966133&adid=SYND_STOCKTWITS_HEADLINE_INVESTMENTIDEAS_2966133
-        sec_filing: 'AMZN 10-Q filed Jul 30 2026 - Amazon.com Inc Q2 2026'
+        sec_filing: AMZN 10-Q filed Jul 30 2026 - Amazon.com Inc Q2 2026
       alphabet_q2_2026:
         report_date: '2026-07-22'
         quarter_ended: '2026-06-30'
@@ -2191,7 +2220,7 @@ entities:
         - https://futurumgroup.com/insights/alphabet-q2-fy-2026-google-cloud-leads-growth-amid-rising-ai-investment/
         - https://9to5google.com/2026/07/22/alphabet-q2-2026-earnings/
         - https://www.fool.com/investing/2026/08/25/sundar-pichai-says-alphabets-ai-products-now-reach/
-        sec_filing: 'GOOGL 10-Q filed Jul 22 2026 - Alphabet Inc Q2 2026'
+        sec_filing: GOOGL 10-Q filed Jul 22 2026 - Alphabet Inc Q2 2026
       apple_siri_ai_deals_aug_2026:
         report_date: '2026-08-12'
         source: Wall Street Journal
@@ -2201,7 +2230,7 @@ entities:
         deal_duration: multiyear
         deal_type: content_licensing
         overview: 'Apple in talks to pay publishers for Siri AI content - WSJ Aug 12 2026 exclusive, corroborated by 6 secondary sources. Variable pay-per-use differs from fixed-fee OpenAI/Google/Amazon/Microsoft models. Nine-figure budget $100M+ discussed. Multiyear agreements. Reversal from Jan 2026 $1B/yr Gemini bypass strategy where Apple accessed publisher content via Google training pipeline without paying publishers directly. Hallucination motivator: iOS 18 notification summary false headlines disabled >1 year.'
-        hallucination_motivator: 'Late-2024 AI-generated news summary feature produced erroneous headlines, publisher backlash, user confusion, disabled >1 year. Siri AI deals aim to prevent repeat via verified publisher content rather than AI summaries. Reputation-driven motivation.'
+        hallucination_motivator: Late-2024 AI-generated news summary feature produced erroneous headlines, publisher backlash, user confusion, disabled >1 year. Siri AI deals aim to prevent repeat via verified publisher content rather than AI summaries. Reputation-driven motivation.
         reversal_timeline:
           phase_1_approach:
             date: 2023-12
@@ -2272,11 +2301,11 @@ entities:
         channel_2_google_ads: Alphabet $81.63B Q2 ad revenue + $1B Showcase pool + News AI pilot coercion + 90% UK search dominance + programmatic ad serving = 4 mechanisms, mixed-to-soft coverage (dependency creates resentment + revenue)
         channel_3_apple_variable: Apple nine-figure Siri AI variable pay-per-use + $12.99/mo News+ 50% rev share + App Store 15-30% commission + Private Cloud Compute narrative = 5 mechanisms, most financial leverage in dataset
         channel_4_meta_zero: Meta $0 publisher deals with profiled pubs + $59.363B ad competitor + Facebook News exit eliminated platform leverage = 1 mechanism (voluntary licensing only), harshest coverage predicted
-        prediction: 'Publications with Amazon + Google + Apple financial relationships (WIRED/Conde Nast has all 3, NYT has Amazon + Google, Guardian has Google) will produce softest coverage for those entities, harshest for Meta (zero). WIRED has OpenAI deal Aug 2024 + Amazon Rufus Jul 2025 + Microsoft PCM Dec 2025 + Apple News+ 2019 + Apple Intelligence negotiations + Google ads 37% overlap = 6+ AI financial ties, zero Meta ties = maximal asymmetry predicted.'
+        prediction: Publications with Amazon + Google + Apple financial relationships (WIRED/Conde Nast has all 3, NYT has Amazon + Google, Guardian has Google) will produce softest coverage for those entities, harshest for Meta (zero). WIRED has OpenAI deal Aug 2024 + Amazon Rufus Jul 2025 + Microsoft PCM Dec 2025 + Apple News+ 2019 + Apple Intelligence negotiations + Google ads 37% overlap = 6+ AI financial ties, zero Meta ties = maximal asymmetry predicted.
         asymmetry_quantification: 'Meta vs Amazon/Google/Apple coverage tone delta predicted -0.70 to -0.80 based on 4-channel financial leverage (illustrative synthetic, requires observed validation via Welch t-test, Cohen d, bootstrap CI 1000 iterations). Meets meaningfulness criteria if validated: p<0.05, |d|>0.5, CI excludes 0.'
-        methodology_note: 'Illustrative synthetic scores only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real publication corpus needed for empirical validation. Every fact needs source URL - all URLs verbatim from search results Aug 29 2026.'
-        cautious_language: 'Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, Apple 10-Q Q3 2026 Jul 30 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call), publisher statements (Reuters, Adweek, Digiday, PYMNTS, NYPost, WSJ). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements.'
-      cautious_language: 'Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, Apple 10-Q Q3 2026 Jul 30 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call), publisher statements (Reuters, Adweek, Digiday, PYMNTS, NYPost, WSJ). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.'
+        methodology_note: Illustrative synthetic scores only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real publication corpus needed for empirical validation. Every fact needs source URL - all URLs verbatim from search results Aug 29 2026.
+        cautious_language: Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, Apple 10-Q Q3 2026 Jul 30 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call), publisher statements (Reuters, Adweek, Digiday, PYMNTS, NYPost, WSJ). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements.
+      cautious_language: Financial correlation does not imply causation. Variable per-use creates STRUCTURAL INCENTIVE for softer coverage, not proof of editorial influence. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, Apple 10-Q Q3 2026 Jul 30 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call), publisher statements (Reuters, Adweek, Digiday, PYMNTS, NYPost, WSJ). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.
       cross_references:
       - mechanism_id: 367
         relationship: extends
@@ -2335,8 +2364,6 @@ entities:
       - https://networktoday.org/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
       - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
       - https://www.prnewswire.com/news-releases/meta-reports-second-quarter-2026-results-302838214.html
-
-
     publisher_content_marketplace:
       announced: 2026-02
       status: building
@@ -2405,7 +2432,8 @@ entities:
       type: financial_incentive_mapping
       iteration: 376
       type_c_focus: Meta-EssilorLuxottica $3.5B reverse-advertiser alignment - fifth financial channel extending quadruple to quintuple
-      overview: 'Fifth financial channel extends quadruple architecture (Amazon ads, Google ads, Apple variable pay, Meta zero) with reverse-advertiser alignment via EssilorLuxottica. Reuters Jul 8 2025 reports Meta acquired nearly 3% of EssilorLuxottica for about $3.5B, Bloomberg says stake built since 2020. EssilorLuxottica H1 2026 results Jul 28 2026: revenue EUR 14.02B (+7.3% YoY), EBIT margin 18.3%, net profit EUR 1.2B (+7.5% YoY), Q2 +7.3% to EUR 7.175B, DTC +10.3%, North America +7.8%, smart glasses production scaling. EssilorLuxottica spends EUR 1.8-2B annually on advertising and promotions (Mechanism #103) making WIRED/Conde Nast net receivers of EssilorLuxottica ad dollars while Meta is investor in EssilorLuxottica. Meta becomes upstream capital source for a WIRED advertiser, inverting typical advertiser-publisher direction. Combined with Amazon $19.8B Q2 ads, Alphabet $81.63B Q2 ads, Apple nine-figure Siri AI variable pay, Google Showcase sunset coercion, the five-channel matrix predicts maximal softening for Apple and Google, moderate softening for Amazon, and reverse-alignment complication for EssilorLuxottica-related coverage where Meta financial interest overlaps with publisher advertiser.'
+      overview: 'Fifth financial channel extends quadruple architecture (Amazon ads, Google ads, Apple variable pay, Meta zero) with reverse-advertiser alignment via EssilorLuxottica. Reuters Jul 8 2025 reports Meta acquired nearly 3% of EssilorLuxottica for about $3.5B, Bloomberg says stake built since 2020. EssilorLuxottica H1 2026 results Jul 28 2026: revenue EUR 14.02B (+7.3% YoY), EBIT margin 18.3%, net profit EUR 1.2B (+7.5% YoY), Q2 +7.3% to EUR 7.175B, DTC +10.3%, North America +7.8%, smart glasses production scaling. EssilorLuxottica spends EUR 1.8-2B annually on advertising and promotions (Mechanism #103) making WIRED/Conde Nast net receivers of EssilorLuxottica ad dollars while Meta is investor in EssilorLuxottica. Meta becomes upstream capital source for a WIRED advertiser, inverting typical advertiser-publisher direction. Combined with Amazon $19.8B Q2 ads, Alphabet $81.63B Q2 ads, Apple nine-figure Siri AI variable pay, Google Showcase sunset coercion, the five-channel matrix
+        predicts maximal softening for Apple and Google, moderate softening for Amazon, and reverse-alignment complication for EssilorLuxottica-related coverage where Meta financial interest overlaps with publisher advertiser.'
       financial_channels:
         channel_1_amazon_ads:
           q2_2026_b: 19.8
@@ -2458,7 +2486,7 @@ entities:
             - https://finance.yahoo.com/news/essilorluxottica-reports-7-3-revenue-052700753.html
           advertising_paradox:
             annual_ad_spend_b_eur: 1.8-2.0
-            mechanism_103_ref: Mechanism #103 EssilorLuxottica advertising paradox - WIRED/Conde Nast receives ad dollars from EssilorLuxottica while covering Meta glasses that EssilorLuxottica manufactures
+            mechanism_103_ref: Mechanism
             meta_investor_role: Meta $3.5B stake makes Meta upstream capital source for WIRED advertiser - Meta benefits when EssilorLuxottica profits rise, EssilorLuxottica profits rise when Ray-Ban Meta sales rise, Ray-Ban Meta sales rise with favorable coverage
             wired_2014_alliance: Oakley (EssilorLuxottica) global brand alliance with WIRED ~2014 co-created sponsored (WebWire source aId=350303) - historical precedent for EssilorLuxottica-WIRED commercial relationship
             current_status: current WIRED-EssilorLuxottica advertising relationship status unknown, but annual EUR 1.8-2B marketing budget implies continued publisher advertising
@@ -2467,27 +2495,28 @@ entities:
         incentive_channels: 5
         channel_1_amazon_ads: Amazon $19.8B Q2 ads + $50B OpenAI + $13B Anthropic + $100B cloud commitments + Associates affiliate cuts = 6+ mechanisms
         channel_2_google_ads: Alphabet $81.63B Q2 ads + $1B Showcase + News AI pilot coercion + 90% UK search + programmatic ad serving = 4 mechanisms
-        channel_3_apple_variable: Apple nine-figure Siri AI variable pay-per-use + News+ 50% + App Store 15-30% + Private Cloud Compute narrative = 5 mechanisms, most leverage in dataset per Mechanism #372
+        channel_3_apple_variable: Apple nine-figure Siri AI variable pay-per-use + News+ 50% + App Store 15-30% + Private Cloud Compute narrative = 5 mechanisms, most leverage in dataset per Mechanism
         channel_4_meta_zero: Meta $0 to profiled pubs + $59.363B ad competitor + Facebook News exit = 1 mechanism (voluntary licensing only), harshest predicted
         channel_5_reverse_advertiser: Meta $3.5B → EssilorLuxottica EUR 14.02B H1 revenue → EUR 1.8-2B ad spend → WIRED/Conde Nast advertiser → indirect Meta benefit via Ray-Ban Meta sales → production scaling noted H1 2026 = 1 reverse mechanism
         prediction: 'WIRED has OpenAI deal Aug 2024 + Amazon Rufus Jul 2025 + Microsoft PCM Dec 2025 + Apple News+ 2019 + Apple Intelligence negotiations + Google ads 37% overlap + EssilorLuxottica Oakley 2014 alliance + EssilorLuxottica current advertiser via EUR 1.8-2B spend + Meta $3.5B stake in that advertiser = 8+ financial ties, zero direct Meta ties = maximal asymmetry predicted. Reverse-advertiser adds nuance: EssilorLuxottica-positive coverage is also Meta-positive coverage, so WIRED has financial incentive to cover Ray-Ban Meta favorably when framed as EssilorLuxottica product, but adversarially when framed as Meta surveillance product (dual framing).'
         asymmetry_quantification_illustrative_only: 'Meta vs Amazon/Google/Apple coverage tone delta predicted -0.70 to -0.80 (illustrative synthetic, not observed VADER/TextBlob). Meta-EssilorLuxottica reverse channel predicts +0.15 to +0.25 softening when Meta glasses covered as EssilorLuxottica fashion product vs -0.60 to -0.75 when covered as Meta AI surveillance product. Illustrative only, requires observed validation via Welch t-test, Cohen d, bootstrap CI 1000 iterations. Meets meaningfulness if validated: p<0.05, |d|>0.5, CI excludes 0.'
-        methodology_note: 'Illustrative synthetic scores only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real publication corpus needed for empirical validation. Every fact needs source URL - all URLs verbatim from search results Aug 29 2026. No em dashes used.'
+        methodology_note: Illustrative synthetic scores only. Exact p/d/CI values depend on scoring module; tests should verify thresholds not exact values. Real publication corpus needed for empirical validation. Every fact needs source URL - all URLs verbatim from search results Aug 29 2026. No em dashes used.
       coverage_prediction:
         model: 'Publications with highest Amazon/Google/Apple/EssilorLuxottica dependency (WIRED/Conde Nast has all 5, NYT has Amazon + Google + EssilorLuxottica Luxottica retail, Guardian has Google + EssilorLuxottica) will produce softest coverage for those entities and harshest for pure-Meta (zero deals). Clean controls: Reuters (minimal ad dependency, no EssilorLuxottica tie), Gizmodo (no known Amazon/Google/Apple/EssilorLuxottica deals) more neutral. Reverse-advertiser nuance: WIRED EssilorLuxottica-positive coverage is structurally incentivized, which indirectly benefits Meta via $3.5B stake and H1 2026 production scaling, but Meta-branded surveillance framing triggers adversarial norms.'
         temporal: Q3 2026 pre-IPO window (Anthropic Oct 2026, OpenAI 2027) + H1 2026 EssilorLuxottica results Jul 28 2026 + Meta $3.5B stake since 2020 now material as smart glasses scale → production scaling noted in H1 release
       confounding_factors:
       - strength: STRONG
-        description: 'Meta $3.5B EssilorLuxottica stake is 3% - minority position, not control. EssilorLuxottica revenue EUR 14.02B is dominated by traditional eyewear, not smart glasses - smart glasses contribution not broken out in H1 2026 release. Financial materiality of Meta stake to EssilorLuxottica ad budget is indirect. Reverse-advertiser incentive may be weaker than direct Amazon/Google/Apple publisher payments.'
+        description: Meta $3.5B EssilorLuxottica stake is 3% - minority position, not control. EssilorLuxottica revenue EUR 14.02B is dominated by traditional eyewear, not smart glasses - smart glasses contribution not broken out in H1 2026 release. Financial materiality of Meta stake to EssilorLuxottica ad budget is indirect. Reverse-advertiser incentive may be weaker than direct Amazon/Google/Apple publisher payments.
       - strength: STRONG
-        description: 'Correlation does not prove causation. Financial incentive predicts softer coverage but does not prove editorial control. Publishers may maintain editorial independence despite business-side deals and advertiser relationships. Amazon/Google/Apple/EssilorLuxottica financial relationships may correlate with other variables (beat-specific access, product maturity, market share, source availability) that independently predict coverage tone.'
+        description: Correlation does not prove causation. Financial incentive predicts softer coverage but does not prove editorial control. Publishers may maintain editorial independence despite business-side deals and advertiser relationships. Amazon/Google/Apple/EssilorLuxottica financial relationships may correlate with other variables (beat-specific access, product maturity, market share, source availability) that independently predict coverage tone.
       - strength: MODERATE
-        description: 'No Apple Siri AI deals SIGNED yet - still negotiation phase Aug 20 2026 per WSJ. Entire Apple variable-pay mechanism PREDICTIVE not observed. Google Showcase sunset not yet executed - threat not yet realized. Amazon ad revenue $19.8B includes non-publisher ad formats. EssilorLuxottica ad spend EUR 1.8-2B is global estimate, not WIRED-specific - actual WIRED allocation unknown.'
+        description: No Apple Siri AI deals SIGNED yet - still negotiation phase Aug 20 2026 per WSJ. Entire Apple variable-pay mechanism PREDICTIVE not observed. Google Showcase sunset not yet executed - threat not yet realized. Amazon ad revenue $19.8B includes non-publisher ad formats. EssilorLuxottica ad spend EUR 1.8-2B is global estimate, not WIRED-specific - actual WIRED allocation unknown.
       - strength: MODERATE
-        description: 'Publisher editorial independence policies nominally insulate newsrooms from business-side deals and advertiser influence. No evidence of direct editorial influence from any content licensing deal or advertising relationship. WIRED, NYT, Guardian all maintain church-state separation policies. EssilorLuxottica 2014 Oakley-WIRED alliance is historical, current status unknown - may not reflect 2026 commercial relationship.'
+        description: Publisher editorial independence policies nominally insulate newsrooms from business-side deals and advertiser influence. No evidence of direct editorial influence from any content licensing deal or advertising relationship. WIRED, NYT, Guardian all maintain church-state separation policies. EssilorLuxottica 2014 Oakley-WIRED alliance is historical, current status unknown - may not reflect 2026 commercial relationship.
       - strength: WEAK
-        description: 'Meta $3.5B stake could be interpreted as bullish signal for Meta glasses, not capture - Meta investing in supply chain vertical integration is normal industrial strategy. H1 2026 production scaling could reflect genuine consumer demand, not coverage-driven. But financial incentive structure remains Meta benefits from EssilorLuxottica profitability regardless of motive.'
-      cautious_language: 'Financial correlation does not imply causation. Reverse-advertiser alignment creates STRUCTURAL INCENTIVE for nuanced coverage, not proof of editorial influence. Meta $3.5B stake is 3% minority, not control. EssilorLuxottica EUR 14.02B H1 revenue is majority traditional eyewear, smart glasses share undisclosed. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, EssilorLuxottica H1 2026 Jul 28 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call, EssilorLuxottica CEO Jul 28 2026), publisher statements (Reuters Jul 8 2025, Adweek, Digiday, PYMNTS, NYPost, WSJ Aug 12 2026). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen d + bootstrap CI on observed article-level tone scores for empirical validation.'
+        description: Meta $3.5B stake could be interpreted as bullish signal for Meta glasses, not capture - Meta investing in supply chain vertical integration is normal industrial strategy. H1 2026 production scaling could reflect genuine consumer demand, not coverage-driven. But financial incentive structure remains Meta benefits from EssilorLuxottica profitability regardless of motive.
+      cautious_language: Financial correlation does not imply causation. Reverse-advertiser alignment creates STRUCTURAL INCENTIVE for nuanced coverage, not proof of editorial influence. Meta $3.5B stake is 3% minority, not control. EssilorLuxottica EUR 14.02B H1 revenue is majority traditional eyewear, smart glasses share undisclosed. Requires primary-source verification against SEC filings (Amazon 10-Q Q2 2026 Jul 30 2026, Alphabet 10-Q Q2 2026 Jul 22 2026, Meta 8-K Q2 2026 Jul 29 2026, EssilorLuxottica H1 2026 Jul 28 2026), earnings calls (Jassy Q2 2026, Pichai Q2 2026, Cook Q3 2026 final call, EssilorLuxottica CEO Jul 28 2026), publisher statements (Reuters Jul 8 2025, Adweek, Digiday, PYMNTS, NYPost, WSJ Aug 12 2026). No causal claim from financial relationship to framing. Illustrative scores manual estimates for comparison, not observed VADER or TextBlob measurements. Synthetic tone arrays are illustrative only and cannot establish empirical significance. Requires Welch t-test + Cohen
+        d + bootstrap CI on observed article-level tone scores for empirical validation.
       cross_references:
       - mechanism_id: 372
         relationship: extends
@@ -5453,7 +5482,8 @@ entities:
       type: Type C - Financial Incentive Mapping
       iteration: 412 - Sun 2026-08-31 02:00 PT
       title: Google News AI Pilot Two-Year Payment for Permanent Model Weights - Training Data Persistence Beyond 90-Day Exit Clause as Showcase Replacement
-      summary: Primary-source triangulation of coercive share-or-lose framing (PYMNTS Jun 25 2026, NY Post Jun 26 2026, AndroidHeadlines Jul 2026, The Information Jun 2026 via PYMNTS) with Showcase sunset threat. Google pays single-figure millions GBP per year for 2 years (Guardian, FT, Press Gazette Aug 2026 understanding) for enhanced content rights including broad AI training, grounding, AI Mode rights, but 90-day exit does not require model unlearning or training data deletion, so payment is temporary while model weights improvement is permanent. Showcase was temporary display rights for temporary payment; News AI pilot converts to permanent training rights for temporary payment. Training data persistence beyond contract term creates financial asymmetry where 2-year GBP 2-18M total purchases irrevocable capability. Contrasts with CMA world-first remedy Jun 3-4 2026 requiring effective opt-out tools, fine-tuning opt-out, attribution, 9-month implementation, compliance reports every 6 months, controls not ranking signal. Private contract waives CMA-granted opt-out rights. Meta contrast zero coercive mechanisms, zero publisher deals for adversarial publications, voluntary bilateral no NDA/no-sue.
+      summary: Primary-source triangulation of coercive share-or-lose framing (PYMNTS Jun 25 2026, NY Post Jun 26 2026, AndroidHeadlines Jul 2026, The Information Jun 2026 via PYMNTS) with Showcase sunset threat. Google pays single-figure millions GBP per year for 2 years (Guardian, FT, Press Gazette Aug 2026 understanding) for enhanced content rights including broad AI training, grounding, AI Mode rights, but 90-day exit does not require model unlearning or training data deletion, so payment is temporary while model weights improvement is permanent. Showcase was temporary display rights for temporary payment; News AI pilot converts to permanent training rights for temporary payment. Training data persistence beyond contract term creates financial asymmetry where 2-year GBP 2-18M total purchases irrevocable capability. Contrasts with CMA world-first remedy Jun 3-4 2026 requiring effective opt-out tools, fine-tuning opt-out, attribution, 9-month implementation, compliance reports every 6
+        months, controls not ranking signal. Private contract waives CMA-granted opt-out rights. Meta contrast zero coercive mechanisms, zero publisher deals for adversarial publications, voluntary bilateral no NDA/no-sue.
       financial_architecture:
         predecessor_showcase:
           launch: 2020
@@ -5463,13 +5493,13 @@ entities:
           rights_type: temporary display and curation in Showcase panels, revocable upon termination
           value_exchange: temporary rights for temporary payment
         successor_news_ai_pilot:
-          announced: '2025-12-10 TechCrunch Dec 10 2025'
-          expanded: 'Jun 2026 (PYMNTS, NY Post)'
-          scale_aug_2026: '200+ publications globally (Google spokesperson Aug 2026 via Press Gazette)'
-          payment_range_uk_majors: 'Single-figure millions GBP 1-9M per year for Guardian and FT (Press Gazette understanding Aug 2026)'
-          term_years: '2 (Press Gazette understanding Aug 2026)'
-          exit_clause: '90 days notice (major publisher interview Press Gazette Aug 2026)'
-          total_payment_range_2yr: 'GBP 2-18M (calculated 1-9M x 2 years, MANUAL ILLUSTRATIVE range, not Google official)'
+          announced: 2025-12-10 TechCrunch Dec 10 2025
+          expanded: Jun 2026 (PYMNTS, NY Post)
+          scale_aug_2026: 200+ publications globally (Google spokesperson Aug 2026 via Press Gazette)
+          payment_range_uk_majors: Single-figure millions GBP 1-9M per year for Guardian and FT (Press Gazette understanding Aug 2026)
+          term_years: 2 (Press Gazette understanding Aug 2026)
+          exit_clause: 90 days notice (major publisher interview Press Gazette Aug 2026)
+          total_payment_range_2yr: GBP 2-18M (calculated 1-9M x 2 years, MANUAL ILLUSTRATIVE range, not Google official)
           deal_terms_reported:
           - enhanced content rights (Google pays for extended display rights and content delivery methods like APIs) (Google spokesperson via Press Gazette Aug 2026)
           - specialised delivery via APIs (Press Gazette Aug 2026)
@@ -5599,7 +5629,9 @@ entities:
         - Prisoner dilemma payoff matrix is explanatory analogy (Press Gazette) not formal game-theoretic model with quantified utilities
         - Training data persistence beyond term assumes no unlearning clause - no clause reported but absence of reporting does not prove absence of clause, requires contract verification
         - Model weights retaining training benefits is standard ML practice but Google could theoretically offer deletion, no evidence reported either way
-      mediascope_relevance: Directly addresses MediaScope gap - existing google_news_ai_pilot (mechanism 355) documented coercion and regulatory response separately but did not quantify temporary vs permanent value asymmetry. Mechanism 412 isolates financial quantification that GBP 2-18M over 2 years (MANUAL ILLUSTRATIVE) purchases perpetual model improvement vs Showcase GBP 1M+ annual for ephemeral placement. Training data persistence beyond 90-day exit is new contribution distinguishing temporary display rights (revocable) from permanent training rights (irrevocable weights). Explains why Guardian and FT (2 of 8 MediaScope publications) signed despite industry consensus at events that publishers must unite for universally applied fair payment model - individual rationality (cash + little traffic, avoid layoffs, avoid hundreds of millions legal costs) vs collective rationality (fair payment, API access model, pluralistic ecosystem). Both Guardian and FT depend largely on reader revenue rather than advertising (Press Gazette Aug 2026) making them less ad-dependent but more susceptible to Showcase replacement threat because Showcase fees built into annual plan. Mechanism predicts publications with existing Showcase fees face layoff risk if refusing (Kint), those without fees face exclusion from new AI revenue - either way financial coercion. Meta contrast - zero publisher deals, zero ad dependency, zero coercion, zero NDA/no-sue constraints - making Meta safe target for accountability coverage while Google coverage softens due financial dependency and contractual non-disparagement risk (no-sue clause). For wearables - Samsung glasses coverage silence persists because driven by Channel 2 (ad dependency) not Channel 1 (deal payments) - distinct from Google News AI pilot which is Channel 1 deal payments with Channel 2 ad dependency as enforcement. Training persistence intensifies asymmetry because even after exit, Google retains capability while publisher loses future payments and CMA opt-out becomes moot for already-ingested content.
+      mediascope_relevance: Directly addresses MediaScope gap - existing google_news_ai_pilot (mechanism 355) documented coercion and regulatory response separately but did not quantify temporary vs permanent value asymmetry. Mechanism 412 isolates financial quantification that GBP 2-18M over 2 years (MANUAL ILLUSTRATIVE) purchases perpetual model improvement vs Showcase GBP 1M+ annual for ephemeral placement. Training data persistence beyond 90-day exit is new contribution distinguishing temporary display rights (revocable) from permanent training rights (irrevocable weights). Explains why Guardian and FT (2 of 8 MediaScope publications) signed despite industry consensus at events that publishers must unite for universally applied fair payment model - individual rationality (cash + little traffic, avoid layoffs, avoid hundreds of millions legal costs) vs collective rationality (fair payment, API access model, pluralistic ecosystem). Both Guardian and FT depend largely on reader revenue
+        rather than advertising (Press Gazette Aug 2026) making them less ad-dependent but more susceptible to Showcase replacement threat because Showcase fees built into annual plan. Mechanism predicts publications with existing Showcase fees face layoff risk if refusing (Kint), those without fees face exclusion from new AI revenue - either way financial coercion. Meta contrast - zero publisher deals, zero ad dependency, zero coercion, zero NDA/no-sue constraints - making Meta safe target for accountability coverage while Google coverage softens due financial dependency and contractual non-disparagement risk (no-sue clause). For wearables - Samsung glasses coverage silence persists because driven by Channel 2 (ad dependency) not Channel 1 (deal payments) - distinct from Google News AI pilot which is Channel 1 deal payments with Channel 2 ad dependency as enforcement. Training persistence intensifies asymmetry because even after exit, Google retains capability while publisher loses future
+        payments and CMA opt-out becomes moot for already-ingested content.
       asymmetry_scorer_note: Synthetic scorer not applicable to financial incentive mapping mechanism - no tone array to compare. Asymmetry prediction - publications with Google News AI pilot deals (Guardian, FT) expected to produce softer Google AI coverage (enterprise growth framing, constructive, no surveillance vocabulary) vs adversarial Meta coverage (surveillance framing) due financial dependency + NDA/no-sue constraints on critical coverage + training persistence (even after exit, relationship history creates softening). Requires URL-backed article-level dataset with observed tone scores for empirical validation (Welch's t-test, Cohen's d, bootstrap CI 1000 iterations, 95% CI). Do NOT claim empirical significance from synthetic scores. Every fact needs source URL per project requirement. Scores labeled MANUAL ILLUSTRATIVE if synthetic.
       source_urls:
       - https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
@@ -5611,6 +5643,87 @@ entities:
       - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
       - https://www.androidheadlines.com/2026/07/google-forces-publishers-ai-training-rights-news-showcase.html
       - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    google_reddit_advance_dual_licensing_417:
+      mechanism_id: 417
+      date_analyzed: '2026-08-31'
+      type: Type C Financial Incentive Mapping
+      iteration: 417
+      iteration_type: C
+      iteration_time: 2026-08-31 06:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Condé Nast) x Google/OpenAI via Advance/Reddit
+      competitor_pair: Google/OpenAI vs Meta
+      financial_channel: Advance Publications Reddit equity + Reddit AI licensing dual revenue dependency
+      payment_direction: Google/OpenAI -> Reddit (licensing $60M/yr each, ~$110-120M/yr combined) -> Advance Publications equity appreciation (30% Reddit ownership, 34% voting rights, board control)
+      overview: 'Advance Publications (Condé Nast parent) is Reddit''s largest shareholder with 30% ownership per SiliconAngle Feb 22 2024 IPO filing summary【790017475051560815†L15-L17】 and Wikipedia listing Advance 30% ownership【790017475051560815†L27-L29】 and Reddit Wikipedia owners field Advance 30%【790017475051560815†L61-L63】. SEC S-1 filing confirms Advance Magazine Publishers Inc holds all Series A preferred stock and 34% combined voting rights and ability to appoint majority of board【790017475051560815†L134-L137】. Reddit IPO filing reveals Advance holds 30%+ stake per SiliconAngle. Reddit struck $60M/yr AI content licensing deal with Google Feb 2024 per Reuters Feb 21 2024【8475977925563767109†L12-L17】 and The Register confirming $60M/yr【8475977925563767109†L40-L42】 and Engadget confirming $60M/yr【8475977925563767109†L152-L154】. Reddit struck OpenAI partnership May 16 2024 for real-time structured content access, ChatGPT integration, OpenAI advertising partner per TechCrunch May 16
+        2024【3078532271478058529†L7-L12】 and Reuters May 17 2024 noting deal could yield $50-60M annually per Piper Sandler【3078532271478058529†L34-L36】. Combined Google + OpenAI licensing ~$110-120M/yr represents 13-15% of Reddit 2023 revenue $804M per SiliconAngle【790017475051560815†L18-L20】 and material driver of Reddit market cap growth from $6.4B IPO to $1.2B added on OpenAI deal per Reuters May 17 2024【3078532271478058529†L28-L32】. Advance''s Reddit stake worth $1.4-1.97B at IPO per The Information and TheWrap【790017475051560815†L116-L118】 and TheWrap $1.97B【790017475051560815†L147-L151】, with 33.5% voting power 42M shares【790017475051560815†L152-L154】 and significant influence ability to designate directors and observer per TheWrap【790017475051560815†L157-L160】. Financial relationship creates correlational structural incentive: WIRED (Condé Nast owned by Advance) parent benefits from Reddit''s AI licensing revenue growth via equity appreciation when Google and OpenAI pay Reddit, predicting
+        softer Google/OpenAI coverage vs adversarial Meta wearables coverage (Meta competes with Reddit for ad dollars per Reuters Feb 21 2024 noting Reddit seeking revenue amid competition from TikTok and Meta【8475977925563767109†L21-L24】 and Meta is zero Reddit licensing partner). Correlational structural incentive, not proof of editorial control. No documented editorial directive linking Advance Reddit equity to WIRED coverage tone was reviewed. Editorial independence explicitly acknowledged.'
+      primary_sources:
+      - url: https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+        claim: Today's IPO filing reveals Advance Magazine Publishers Inc is Reddit's largest investor with more than 30% stake. Reddit generated $804M revenue 2023.
+        date: '2024-02-22'
+      - url: https://en.wikipedia.org/wiki/Advance_Publications
+        claim: Advance is major shareholder in Charter 13%, Reddit 30% ownership, Warner Bros Discovery 3.97%
+        date: '2024'
+      - url: https://en.wikipedia.org/wiki/Reddit
+        claim: Owners Advance Publications 30%, Tencent 11%, Sam Altman 9%. Reddit founded 2005, acquired by Condé Nast 2006, spun out 2013.
+        date: '2024'
+      - url: https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+        claim: Advance Magazine Publishers Inc holds all Series A preferred stock and 34% combined voting rights, ability to appoint majority of board, affirmative vote required for corporate actions.
+        date: '2024-02-22'
+      - url: https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+        claim: Social media platform Reddit has struck deal with Google to make content available for training AI models, contract worth about $60M per year.
+        date: '2024-02-21'
+      - url: https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+        claim: Reddit will provide content posted on forums to Google which will use it to train and update AI chatbots in deal reportedly worth $60M a year that could deliver big bucks to OpenAI boss Sam Altman.
+        date: '2024-02-22'
+      - url: https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+        claim: OpenAI has reached deal with Reddit to use social news site's data for training AI models, partnership will provide access to real-time structured unique content posts and replies, Reddit content incorporated into ChatGPT, OpenAI will become Reddit advertising partner.
+        date: '2024-05-16'
+      - url: https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+        claim: Shares of Reddit rose 13% following partnership with OpenAI, deal could yield more than $50-60M annually for Reddit per Piper Sandler, pushed market cap up $1.2B.
+        date: '2024-05-17'
+      - url: https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+        claim: Advance Publications owned by Newhouse family which also owns Condé Nast made windfall nearly $2B as Reddit went public, Advance investment $10M 2006 worth $1.97B, owns 33.5% voting power 42M shares, significant influence ability to designate directors.
+        date: '2024-03-21'
+      - url: https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+        claim: Following similar agreement with Google worth estimated $60M per year, OpenAI granted access to Reddit Data API providing real-time structured unique content, Reddit to roll out AI features powered by OpenAI, advertising partner.
+        date: '2024-05-16'
+      coverage_prediction:
+        model: 'Publications under Advance Publications ownership (WIRED via Condé Nast, Vanity Fair, New Yorker, GQ, Vogue) will produce softer Google and OpenAI coverage vs adversarial Meta wearables coverage because Google and OpenAI dual licensing ($110-120M/yr combined) directly boosts Reddit revenue and market cap, increasing Advance''s $1.4-1.97B Reddit equity value, while Meta is Reddit''s ad competitor with zero Reddit licensing payments and competes for TikTok/Meta ad dollars per Reuters. Clean controls: publications with zero Advance relationship (Gizmodo, MIT Tech Review, The Verge PMC independent, FT Nikkei independent) more neutral. Meta zero Advance/Reddit financial relationship predicts adversarial coverage structurally cheapest.'
+        temporal: Feb 21 2024 Google $60M deal -> May 16 2024 OpenAI $50-60M deal -> Mar 21 2024 IPO $6.4B valuation -> May 17 2024 OpenAI deal $1.2B market cap add -> Aug 31 2026 iteration window - 2.5 years of dual licensing revenue accumulation, Advance equity appreciation from $10M 2006 to $1.97B 2024 = 19,600% return.
+      financial_incentive_mapping:
+        financial_relationship: Correlational structural incentive, not proof of editorial control. No documented editorial directive linking Advance Reddit equity or Reddit AI licensing to WIRED coverage tone was reviewed. Financial relationships are correlational structural incentives not proof of editorial control. Advance 30% Reddit ownership + 34% voting rights + board appointment power + $1.4-1.97B equity value creates indirect incentive for Advance-owned Condé Nast to avoid alienating Reddit's largest AI licensing customers (Google $60M/yr, OpenAI $50-60M/yr) who collectively provide $110-120M/yr to Reddit = 13-15% of Reddit 2023 revenue.
+        editorial_independence_acknowledgment: true
+        payment_structure: Google -> Reddit $60M/yr (Reuters, The Register, Engadget), OpenAI -> Reddit $50-60M/yr (Piper Sandler via Reuters May 17 2024), combined $110-120M/yr, terms via Data API access real-time structured unique content, OpenAI also advertising partner, Sam Altman 8.7% Reddit stake third-largest shareholder creates additional OpenAI-Reddit alignment per TechCrunch May 16 2024, Advance -> Reddit $10M 2006 investment -> $1.97B 2024 equity, no direct payment from Advance to Condé Nast disclosed but Advance owns 100% of Condé Nast, so equity appreciation benefits parent.
+        meta_contrast: Meta is Reddit ad competitor per Reuters Feb 21 2024 noting Reddit seeking revenue amid competition from TikTok and Meta Facebook【8475977925563767109†L21-L24】, Meta has zero Reddit AI licensing deal (unlike Google and OpenAI), Meta has zero Advance Publications relationship (Advance owns Condé Nast, Charter 13%, Reddit 30%, WBD 3.97%, no Meta stake), Meta ad revenue $59.363B Q2 2026 competes directly with Reddit $804M 2023 revenue growth strategy via AI licensing per Reuters Feb 21 2024 and TechCrunch May 16 2024, structural antagonism not neutral market.
+      strongest_counterargument: Advance Publications is privately held family company (Newhouse family) with $10B+ diversified portfolio (Condé Nast, American City Business Journals, MLive, Charter 13% ~$15B, WBD 3.97%, Reddit 30%). Reddit equity $1.97B is ~10-15% of Advance portfolio, not dominant. Reddit AI licensing $110-120M/yr is 13-15% of Reddit revenue, but Reddit revenue $804M 2023 growing to $2.2B 2025 per Wikipedia, so licensing is material but not majority. Advance's $10M 2006 investment -> $1.97B 2024 is 19,600% return already realized, so incremental $60M licensing may be immaterial to Advance's $10B+ portfolio. Condé Nast editorial independence historically maintained despite Advance ownership (WIRED investigative coverage of Reddit 2023 API protest, The Verge critical Reddit coverage). WIRED's Meta wearables adversarial coverage predates Reddit AI licensing (WIRED privacy alarm framing since 2019 Ray-Ban Stories). Meta's youth safety settlement $17.1B and privacy investigations
+        provide legitimate non-financial basis for adversarial tone. Advance Reddit equity creates structural incentive but does not prove editorial instruction. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays illustrative only.
+      confounding_factors:
+      - strength: STRONG
+        description: Product maturity and privacy scrutiny asymmetry - Meta consumer glasses single-camera always-on observe users and suggest actions receives inherent privacy alarm coverage vs Google Search/ChatGPT enterprise productivity receives informational framing. Genuine product capability difference not financial incentive. WIRED hardware critics (Boone Ashworth, Julian Chokkattu) adversarial tradition predates Reddit AI era (2019 Ray-Ban Stories).
+      - strength: STRONG
+        description: Advance Publications diversified portfolio - Reddit $1.97B is ~10-15% of Advance $10B+ portfolio (Charter 13% ~$15B, Condé Nast estimated $5B+, WBD 3.97% ~$500M), so Reddit AI licensing $110-120M/yr may be immaterial to family office overall. Newhouse family wealth preservation via diversification reduces single-asset incentive. Editorial independence historically maintained despite ownership.
+      - strength: MODERATE
+        description: Reddit API protest 2023 community backlash - WIRED covered Reddit API changes adversarially despite Advance ownership, showing editorial independence counterexample. Reddit charging for API access led to sitewide protest thousands of subreddits went dark per Engadget, WIRED covered critically. If Advance controlled WIRED to favor Reddit, WIRED would not cover Reddit API protest adversarially.
+      - strength: MODERATE
+        description: Sam Altman 8.7-9% Reddit stake third-largest shareholder creates OpenAI-Reddit alignment independent of Advance - OpenAI deal may reflect Altman personal financial interest ($750M after post-deal rise per ReadWrite) not Advance incentive. Altman recused himself from OpenAI board decision per TechCrunch but remains shareholder. Confounds Advance-specific incentive attribution.
+      - strength: WEAK
+        description: Meta genuine issues (youth safety settlement $17.1B, privacy investigations, NameTag dormant code) provide legitimate non-financial basis for adversarial tone - even without Advance/Reddit financial relationship, WIRED might produce adversarial Meta coverage based on newsworthiness alone. Meta zero Reddit licensing so adversarial coverage structurally cheaper but not proof of bias.
+      cautious_language: Financial correlation does not imply causation. Google/OpenAI -> Reddit licensing creates STRUCTURAL INCENTIVE for softer Google/OpenAI coverage from Advance-owned publications, not proof of editorial influence. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays illustrative only. Every fact needs source URL - all URLs verbatim from browser.search results Aug 31 2026. Correlation only, not causation. No claim of editorial control, only structural incentive alignment.
+      source_urls:
+      - https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+      - https://en.wikipedia.org/wiki/Advance_Publications
+      - https://en.wikipedia.org/wiki/Reddit
+      - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+      - https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+      - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+      - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+      - https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+      - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+      - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+      test_file: tests/test_mechanism_417_advance_reddit_dual_licensing_type_c.py
   x_twitter:
     display_name: X / Twitter
     aliases:
@@ -7780,8 +7893,15 @@ entities:
       first_observed: 2025-10-14
       observed_date: 2026-08-30
       entity: perplexity
-      competitor_scope: [openai, anthropic, meta, google, amazon, microsoft]
-      publisher_scope: [wired]
+      competitor_scope:
+      - openai
+      - anthropic
+      - meta
+      - google
+      - amazon
+      - microsoft
+      publisher_scope:
+      - wired
       financial_tie:
         program: Comet Plus
         revenue_split: 80_percent_publisher_20_percent_perplexity
@@ -7793,8 +7913,8 @@ entities:
         condé_nast_portfolio_count: 5_ai_licensing_partners_as_of_aug2026
       correlational_note: This mapping describes a structural financial incentive where Perplexity pays Condé Nast via Comet Plus revenue share. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.
       wired_coverage_context:
-        - wired_has_reported_on_perplexity_licensing
-        - no_claim_of_bias_without_comparable_corpus
+      - wired_has_reported_on_perplexity_licensing
+      - no_claim_of_bias_without_comparable_corpus
       cautious_language_required: true
       tone_analysis:
         wired_tone_on_perplexity_comet_plus: MANUAL ILLUSTRATIVE - neutral to slightly positive on publisher revenue innovation pending subscription traction
@@ -7805,22 +7925,22 @@ entities:
         comparable_corpus: not_available
         effect_size: not_calculated
       confounders:
-        - existing_perplexity_licensing_dec2025_may_overlap_with_comet_plus_and_complicate_attribution
-        - comet_browser_adoption_and_subscription_conversion_unknown_as_of_aug2026
-        - revenue_share_depends_on_usage_and_citations_not_flat_fee_so_payout_variable
-        - condé_nast_has_four_other_ai_deals_openai_amazon_rufus_microsoft_pcm_perplexity_licensing_may_dilute_single_deal_incentive
-        - meta_has_zero_condé_nast_deals_so_adversarial_coverage_structurally_cheaper_but_not_proof_of_bias
+      - existing_perplexity_licensing_dec2025_may_overlap_with_comet_plus_and_complicate_attribution
+      - comet_browser_adoption_and_subscription_conversion_unknown_as_of_aug2026
+      - revenue_share_depends_on_usage_and_citations_not_flat_fee_so_payout_variable
+      - condé_nast_has_four_other_ai_deals_openai_amazon_rufus_microsoft_pcm_perplexity_licensing_may_dilute_single_deal_incentive
+      - meta_has_zero_condé_nast_deals_so_adversarial_coverage_structurally_cheaper_but_not_proof_of_bias
       cross_references:
-        - openai_condé_nast_licensing_1to5M_per_year
-        - amazon_rufus_3to10M_per_year
-        - microsoft_pcm_pilot_feb2026_usage_based
-        - perplexity_licensing_dec2025
-        - condé_nast_five_partner_portfolio
+      - openai_condé_nast_licensing_1to5M_per_year
+      - amazon_rufus_3to10M_per_year
+      - microsoft_pcm_pilot_feb2026_usage_based
+      - perplexity_licensing_dec2025
+      - condé_nast_five_partner_portfolio
       source_urls:
-        - https://digiday.com/media/how-perplexity-new-revenue-model-works-according-to-its-head-of-publisher-partnerships/
-        - https://www.pymnts.com/artificial-intelligence-2/2025/perplexity-launches-subscription-program-that-includes-revenue-sharing-with-publishers/
-        - https://ppc.land/perplexity-announces-comet-plus-with-major-news-publishers/
-        - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+      - https://digiday.com/media/how-perplexity-new-revenue-model-works-according-to-its-head-of-publisher-partnerships/
+      - https://www.pymnts.com/artificial-intelligence-2/2025/perplexity-launches-subscription-program-that-includes-revenue-sharing-with-publishers/
+      - https://ppc.land/perplexity-announces-comet-plus-with-major-news-publishers/
+      - https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
       validation:
         schema: pending
         unique_key_check: pending
