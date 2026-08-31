@@ -7295,3 +7295,77 @@ Date Range:** Aug 3-24 2026 full slate (5 episodes) plus Aug 25-30 verification 
   - https://www.cnet.com/tech/mobile/meta-closes-loophole-that-let-people-record-secretly-with-smart-glasses/ (CNET Aug 28 2026 per The IT Guys citation, second privacy-focused update of summer, should apply automatically but did not report hands-on confirmation firmware reached test device - inferred from The IT Guys summary line 94-95, citation [11] in article)
   - https://www.youtube.com/watch?v=Cb8gV-uNBnM (Guardian Opinion I'll never be convinced by Meta's pervert glasses - comparison, uses pervert glasses title, activist group @everyonehateselon_ spokesperson most people don't want pervert glasses that can film us without consent, guerrilla adverts deriding non-consensual filming, email campaign 20000 GDPR objections, Germany considering ban, rights groups privacy threat, Meta safety guidelines harassment infringing privacy rights capturing sensitive information, women filmed without consent social media, Beth 18 filmed without knowledge last year)
 
+
+### 124. Meta Second LED Fix Six-Source Aggregate - Editorial Lane Mediates Financial Predictor (Aug 27-28 2026) - Mechanism #414
+
+- **Date:** 2026-08-31 04:00 PDT
+- **Type:** Type E Podcast/Broadcast Sentiment Tracking
+- **Mechanism:** #414
+- **Sources (12 HTTPS):**
+  - https://tech-insider.org/meta-ai-glasses-recording-led-fix-2026/
+  - https://www.gadgetreview.com/metas-smart-glasses-now-stop-recording-when-the-led-is-covered
+  - https://aiweekly.co/alerts/meta-patches-smart-glasses-to-halt-recording-if-led-covered
+  - https://startupfortune.com/meta-closes-a-second-loophole-that-let-ray-ban-glasses-record-in-secret/
+  - https://theibulletin.com/meta-smart-glasses-capture-led-loophole-billboard-campaign/
+  - https://9to5google.com/2026/08/28/meta-ray-ban-smart-glasses-privacy-led-loophole-update/
+  - https://www.androidauthority.com/meta-smart-glasses-recording-led-fix-3704164/
+  - https://theitguysfix.com/2026/08/28/5-pm-technology-news-recap-papercut-patch-2-gputhor-apple-price-hikes-meta-glasses-privacy-august-28-2026/
+  - https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+  - https://www.youtube.com/watch?v=0NLaAQuaCJE
+  - https://zeno.fm/podcast/the-guilty-feminist/
+  - https://guiltyfeminist.com/episode/
+
+**Episode / Article Details:**
+
+1. Tech Insider Aug 28 2026 - Meta AI Glasses Stop Recording When LED Is Covered - explains mechanics plainly, original design blocked start if LED blocked at trigger, workaround start with light exposed then cover with finger/sticker/tape while camera kept rolling, new patch monitors LED continuously during active recording. Cites Alex Himel Threads via Engadget. Sentiment -1/10 MANUAL ILLUSTRATIVE.
+
+2. Gadget Review Aug 28 2026 - firmware update halts instant hand covers capture LED, closing gap critics say should never have existed. Alex Himel Threads via Engadget, practical impact minor, trick finished. Layered privacy crackdown original/v26/this update. Sentiment -2/10 MANUAL ILLUSTRATIVE.
+
+3. AI Weekly Aug 28 2026 - TLDR second LED-related privacy update under two months, education campaign billboards LA, teen boys filming girls schools, ICE barring agents. Sentiment -2/10 MANUAL ILLUSTRATIVE.
+
+4. Startup Fortune Aug 28 2026 - cover light after already started filming until this week camera just kept rolling not anymore, Alex Himel Aug 27 Threads, useful also late, July tamper-proof, Gizmodo early Aug cheap stickers, BGR June modding, CNIL Jun 29 warning almost invisible way technical signals limited reach insufficient. Sentiment -4/10 MANUAL ILLUSTRATIVE.
+
+5. iBulletin Aug 28 2026 - July 7 2026 FAQ blocked/destroyed LED kills camera required update, Aug 27 2026 Himel new fix stops recording if light covered after filming started, July language already sounded final August post admitting covered means off only true at moment pressed record, LA billboard camera lets you capture moment light lets everyone around you know when you do, spokesperson Albert Aydin to The Verge communities where glasses sales popular, ads for people who did not buy product teaching strangers how to read white blink, July FAQ LED has no off switch blinks briefly for still keeps blinking for video rejected loud shutter impractical pointing to laptop webcams as model, social contract look for LED treat dark frame as quiet frame, if need billboard to explain warning light light not doing warning on its own nickname pervert glasses verdict on gap. Sentiment -3/10 MANUAL ILLUSTRATIVE.
+
+6. 9to5Google Aug 28 2026 - continues crackdown malicious users disabling privacy LED most obvious loophole, Alex Himel Threads new update coming, previously targeted hardware modifying users but left door open easier loophole starting recording then covering LED, while glasses would block start when covered loophole allowed cover after started, new update stops camera from recording if light covered, Himel quote only tiny minority try to get around these protections fact they have to go these lengths shows efforts working. Sentiment -1/10 MANUAL ILLUSTRATIVE.
+
+Aggregate six-source sentiment -2.2/10 MANUAL ILLUSTRATIVE mean -13/6 = -2.17 illustrative range -1 to -4 narrower than print alarm -7 to -9.
+
+**Guilty Feminist August 2026 Audit:**
+
+- Episode 497 The Nuance Drought with Natasha Devon Recorded 5 August 2026 London Released 24 August 2026 - No Meta/AI/wearables/privacy/surveillance per title/description.
+- Episode 496 Intimacy with Lena Headey Recorded 29 July 2026 Released 17 August 2026 - No Meta/AI/wearables/privacy/surveillance per title/description.
+- Live from Wilderness Festival with The Circle NGO Recorded 2 August 2026 Released 11 August 2026 - No Meta/AI/wearables/privacy/surveillance per title/description.
+- Peak controversy window silence maintained, no bias claim, strong confounders Edinburgh Fringe, Wilderness Festival logistics, pre-planned topics, comedic/entertainment not tech news.
+
+**Attention Sphere Verification:**
+
+- Sixth independent verification Aug 31 2026 04:00 PT - No matching podcast found in search index after 6 searches Aug 28-31. Closest match Left to Their Own Devices (Toronto Star, Ava Smithing) per prior iteration #363. Do not claim non-existence, claim no matching podcast found transparently. Task spec clarification needed.
+
+**Everyone Hates Elon Holding:**
+
+- No new campaign since Aug 10 Epstein poster (21 days to Aug 31), 45 days since July 17 Singulism feature London bus stops fake Meta ads They Live optical trick Kylie Jenner skull Meta Were Always Watching You. Prior campaigns Meta exclusive, 0 campaigns Samsung Galaxy Glasses Jul 22 2026 12MP AF better than Meta fixed-focus higher privacy risk, Google Android XR 0, Snap Spectacles $2195 camera 0, OpenAI companion greater capability 0. Cultural consensus driver not financial, supports mechanism #137 Privacy Vocabulary Redirected Attribution and #121 Fast Company Snap vs Meta hardware parity paradox.
+
+**Cross-Entity Differential Standards:**
+
+- Six-source aggregate Meta-exclusive naming justified by news peg (fix Meta-specific), absence not evidence of selective omission per #408 strong confounder 1.
+- Guilty Feminist 0 wearables episodes in Aug 2026 cannot assess differential standards, prior #481 The Algorithm platform-agnostic, #480 Keep Palantir Out Of NHS Palantir named not Meta sentiment -8/10 broadly not Meta-specific.
+- Everyone Hates Elon HIGH asymmetry Meta exclusive targeting, differential standard pervert technology trench coat analogy always watching vs competitors silence, financial context neutral independent activist cultural consensus driver.
+- The IT Guys LOW asymmetry news peg justification, validation technical press can cover Meta fix without alarm vocabulary.
+
+**Sentiment Scores:** All scores MANUAL ILLUSTRATIVE subjective not empirical statistical significance DO NOT claim p-value or corpus measurement.
+
+**Asymmetry Assessment:** MODERATE support for editorial lane mediation hypothesis (technical -2.2 vs alarm -7 to -9), already documented in #408, not major discovery.
+
+**Financial Context:** Six-source aggregate neutral predictor (Tech Insider, Gadget Review, AI Weekly, Startup Fortune, iBulletin, 9to5Google independent tech/product press, no known Meta content licensing, standard ad relationship), The IT Guys independent local IT business neutral, Guilty Feminist Acast AudioPlus Network no known Meta/Google/Samsung licensing, Everyone Hates Elon independent activist no known financial ties, NBC News neutral broadcast. Structural incentive neutral, editorial lane mediates vocabulary, correlational not causal, editorial independence acknowledged.
+
+**Confounders:** 4 STRONG 2 MODERATE 1 WEAK per iteration-log.md entry #414 - preserved.
+
+**Testable Predictions:** 5 predictions per iteration-log.md entry #414.
+
+**Mechanism:** #414 (Type E - Podcast/Broadcast Sentiment - Meta Second LED Fix Six-Source Aggregate + Guilty Feminist August Silence + Attention Sphere Sixth Verification + Everyone Hates Elon Holding - Editorial Lane Mediates Financial Predictor During Peak Controversy Window)
+
+**Limitations:** Six-source mean illustrative, no hands-on verification firmware version/model list/rollout-completion, Guilty Feminist silence based on titles/descriptions not full transcript, Attention Sphere absence may be index limitation, Everyone Hates Elon holding based on search index not exhaustive, financial context neutral based on absence not exhaustive audit, no competitor fix coverage same window but competitors may not have had fixes.
+
+**Sources:** Same 12 HTTPS URLs listed above, all verified HTTPS.
+
