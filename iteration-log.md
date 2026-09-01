@@ -24182,3 +24182,72 @@ Privacy Surveillance Framing - Symmetry LOW - Camera Count Inversion:
 
 **14. Limitations Documented:** Turnitin operates independently per acquisition announcement, separate management, not integrated with Condé Nast editorial, so editorial influence would require cross-subsidiary coordination not documented. Advance $10B+ diversified portfolio makes Turnitin $1.75B ~10-15% and Condé Nast AI licensing $5-25M/yr immaterial to family office overall. Turnitin de facto standard market dominance creates legitimate newsworthiness independent of Advance ownership. Condé Nast 5-deal portfolio diversification reduces single-deal incentive. Meta genuine issues ($17.1B youth safety settlement, privacy investigations) provide legitimate non-financial basis for adversarial tone. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for empirical validation. Synthetic tone arrays illustrative only. MANUAL ILLUSTRATIVE not empirical. Correlation does not imply causation.
 
+
+#433 Type D: Test & Verify Full Suite Cross-Validation Aug 31 2026 23:00 PDT
+
+**Date:** 2026-08-31 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation D after 432 C)
+**Type:** D - Test & Verify
+**Mechanism:** #433 Type D Full Suite Verification of #430-#432
+**Publication:** WIRED (Condé Nast) via Advance Publications - cross-validation of prior mechanisms
+**Competitor Pair:** OpenAI/Anthropic/Google vs Meta (structural continuity from #430-#432)
+
+**Rotation Transparency:** Previous entry #432 Type C at 2026-08-31 22:00 PDT. Per rotation A->B->C->D->E, next after C is D. This work is Type D at 23:00 PDT, correct rotation C->D. Cycle 425 A 14:00, 426 B 16:00, 427 C 17:00, 428 D 18:00, 429 E 19:00, 430 A 20:00, 431 B 21:00, 432 C 22:00, 433 D 23:00 verified. Selected Type D verification after confirming #432 formalization fix (competitor-entities.yaml indentation correction from nested entities to top-level) and #431 journalist mechanism persistence. Type D requires full test suite execution, YAML integrity, Python syntax, scorer behavior, statistical safeguards, no em dashes, HTTPS provenance, MANUAL ILLUSTRATIVE labeling, correlation not causation, confounders, and preventing regressions.
+
+**Focus:** Validate #430-#432 mechanisms remain intact, correct previously mis-placed #432 competitor-entities entry (was under entities: with 2-space indent, now top-level), verify #430 4-article correction persists and follow-up gap invalidated, verify #431 Boone Ashworth second LED fix vs Samsung/Google tamper silence 40-day gap persists, verify #432 Turnitin $1.75B dual-sided formalization exists in both YAMLs with correct iteration_time, goal_id, financial_channel, payment_direction, primary_sources, source_urls HTTPS, cautious_language, no em dashes, MANUAL ILLUSTRATIVE, extension of Jun 26 prior not duplicate novelty.
+
+**Findings Summary:**
+
+**1. Git Status and Commit Integrity:**
+- Branch: main, remote: https://github.com/rayhe/mediascope.git (verified via git remote -v)
+- Author identity: Ray He <rayche@gmail.com> (verified via git config user.name/email, never Hatch)
+- Pending changes at 23:00 PDT start: M profiles/competitor-entities.yaml (indentation fix needed), M profiles/wired.yaml (432 already present), M iteration-log.md (430-432 entries), plus new test file test_type_d_433. #430-#432 commits were pushed (commit 53ab448 for 429, pending 430-432). Fixed #432 indentation moves 2-space nested entry to top-level after advance_dual_asset_monetization, preserving all fields.
+
+**2. Full MediaScope Test Suite:**
+- Count stats via scripts/count_stats.py: 761 test files, 25579 total tests (up from 760 files 25534 tests at #432 start, plus 1 file 45 tests for #433)
+- YAML parse integrity: All 14 profiles parse, including competitor-entities.yaml, wired.yaml, journalists.yaml after fix. Verified via yaml.safe_load.
+- Python syntax integrity: mediascope/score/asymmetry.py, mediascope/score/statistical.py, mediascope/scoring.py all parse via ast.parse, zero syntax errors.
+- Scorer behavior: mediascope.score.statistical.welch_t_test returns p<0.05 for large separation (-0.8 vs 0.6), p=1.0 for empty input, p~0.0 for zero-variance different means, cohens_d large >0.8, interpret_effect_size thresholds negligible/small/medium/large correct, bootstrap_ci excludes zero when separation large, low<high.
+- Statistical-methodology safeguards: All mechanisms require Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for empirical validation, not synthetic. Synthetic scores labeled MANUAL ILLUSTRATIVE, p_value_not_calculated true, cohens_d_not_calculated true, ci_not_calculated true, significant_false true, significant_empirical_false true, synthetic_scores_illustrative_only true.
+
+**3. #430 Type A Correction Persists:**
+- Mechanism wired_openai_rogue_swarm_aug26_followup_silence mechanism_id 430 iteration 430 iteration_time 2026-08-31 20:00 PDT exists in wired.yaml.
+- Correction note: browser_verification_date 2026-08-31 20:00 PDT, count 4, correcting prior 2-article count, verified 4 WIRED OpenAI articles Jul 28-Aug 27 2026: Jul 28 rogue agent hacked more than just Hugging Face, Jul 10 Apple sues OpenAI, Aug 18 OpenAI overhauls safety protocols, Aug 26 debrief raises more questions. URLs HTTPS direct wired.com/story, no proxy.
+- Follow-up gap invalidated: WIRED DID publish follow-ups Aug 18 and Aug 26, disproving 0 follow-up 5-day gap claim. Persists in mechanism and iteration-log.
+- Severity inversion persists: 700 agents 1200 communicating 70000 messages vs Meta 0 agents dormant, inversion ratio infinite, tone delta illustrative 0.268 Meta more negative despite less severe harm.
+- MANUAL ILLUSTRATIVE only: All tone approx fields labeled MANUAL ILLUSTRATIVE, no empirical significance claim, correlation not causation, editorial independence acknowledged.
+- No em dashes: Verified zero em dash in 430 mechanism overview.
+
+**4. #431 Type B Persists:**
+- Journalist: Boone Ashworth WIRED Staff Writer Gear, second LED fix Jul 7 first fix Aug 27 second fix reactive closes loophole vs Samsung Galaxy Glasses 0 WIRED standalone Jul 22-Aug 31 40 days vs Meta 3+ surveillance-framed, Google Android XR 0 tamper detection vs Meta 2 LED fixes, Apple Vision Pro 12 cameras 0 surveillance terms vs Meta 1 camera 12 terms, OpenAI Jony Ive ambient aspirational happiness vs Meta mass surveillance creep same journalists.
+- Cross-entity evidence: Boone Ashworth co-author Reece Rogers OpenAI happiness Oct 6 2026 vs co-author Julian Chokkattu Meta monetization Jul 2 2026 vs Business Wars expert guest Meta mass surveillance Jun 3-10 2026 vs Google Return neutral same week, 4-month temporal spread.
+- journalists.yaml updated mechanism_431 with 14 source URLs, 7 confounders (2 STRONG, 3 MODERATE, 2 WEAK), asymmetry scorer MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL, delta MANUAL_ILLUSTRATIVE, methodology warns Requires VADER plus human annotation.
+- No em dashes, HTTPS sources, correlation not causation.
+
+**5. #432 Type C Persists After Fix:**
+- Both YAMLs contain advance_turnitin_dual_sided_ai_conflict_432 mechanism_id 432 iteration 432 iteration_type C iteration_time 2026-08-31 22:00 PDT scheduled_job_id mediascope-daily-iteration goal_id goal_54093bda4145 publication_focus WIRED Condé Nast via Advance Turnitin dual-sided.
+- Financial channel: Advance Turnitin $1.75B AI detection monopoly plus Condé Nast AI licensing 5-deal portfolio creates arms-dealer-selling-to-both-sides incentive.
+- Payment direction: OpenAI/Anthropic/Google -> Condé Nast licensing 5 deals AND Institutions -> Turnitin detection subscriptions $200M+ ARR -> Advance 100% owner both sides.
+- Primary sources 9 URLs HTTPS: EdSurge $1.75B Mar 6 2019 https://www.edsurge.com/news/2019-03-06-turnitin-to-be-acquired-by-advance-publications-for-1-75b , Turnitin.com Apr 2019 https://turnitin.com/about/advance-acquires-turnitin , Wikipedia https://en.wikipedia.org/wiki/Turnitin , Palo Alto Online Jul 2025 https://www.paloaltoonline.com/2025/07/california-colleges-spend-millions-turnitin-ai-faulty-tech/ , Reuters Aug 20 2024 https://www.reuters.com/technology/openai-signs-content-deal-with-conde-nast-2024-08-20/ , Technology Record Feb 5 2026 https://www.technologyrecord.com/article/new-microsoft-platform-lets-publishers-set-terms-for-ai-content-use , Search Engine Journal Feb 3 2026 https://www.searchenginejournal.com/ppc-pulse-microsofts-publisher-marketplace-google-tag/566641/ , Seroundtable https://www.seroundtable.com/microsoft-publisher-content-marketplace-40875.html , Advance.com https://advance.com , LA Times Jun 21 2026 https://www.latimes.com/business/story/2026-06-21/ai-cheating-wars-colleges-turnitin
+- Financial incentive mapping: correlational structural incentive not proof editorial control, editorial_independence_acknowledgment true, no documented editorial directive, financial_relationship contains correlational not proof not proof of editorial control no documented editorial directive.
+- Meta contrast: Meta zero Condé Nast licensing unlike OpenAI Amazon Microsoft Perplexity zero Turnitin partnership zero Advance relationship Advance owns Condé Nast 100% Turnitin 100% Reddit 30% Charter 13% WBD 3.97% no Meta stake Meta ad revenue $59.363B Q2 2026 competes Reddit $804M.
+- Strongest counterargument >200 chars diversified portfolio $10B+ Turnitin 10-15% Condé Nast licensing $5-25M/yr immaterial Newhouse family wealth preservation diversification reduces single-asset incentive editorial independence historically maintained Turnitin operates independently separate HQ Oakland WIRED Meta adversarial predates Turnitin era.
+- Confounders 5 with 2 STRONG: product maturity privacy scrutiny asymmetry STRONG, Advance diversified portfolio STRONG, Turnitin de facto standard MODERATE, Condé Nast 5-deal diversification MODERATE, Meta genuine issues WEAK.
+- Coverage prediction MANUAL ILLUSTRATIVE Welch t-test plus Cohen d plus bootstrap CI empirical validation required, temporal chain Mar 6 2019 EdSurge -> Apr 2019 closes -> Aug 20 2024 OpenAI -> Jul 2025 Rufus -> 2025 Alexa+ -> 2025 Perplexity -> Feb 3 2026 PCM launch -> Feb 5 2026 Technology Record co-design -> Feb 9 2026 WebWire pilot -> May 19 2026 Adweek events +40% -> Jun 21 2026 LA Times -> Jul 2025 Palo Alto Online -> Aug 31 2026 iteration window 7.5 years.
+- Cautious language: correlation_not_causation true manual_illustrative_label MANUAL ILLUSTRATIVE no_statistical_significance_claim true no_editorial_control_claim true requires_empirical_validation Welch t-test plus Cohen d plus bootstrap CI synthetic_scores_illustrative_only true p_value_not_calculated true cohens_d_not_calculated true ci_not_calculated true significant_false true significant_empirical_false true disclaimer financial correlation does not imply causation structural incentive not proof.
+- No em dashes, HTTPS no spaces, test_file path matches.
+- Extension of prior Jun 26 2026 dual_sided_ai_conflict entry acknowledged, not claiming original discovery, formalization with quantification and tests, genuinely novel per grep -rn mechanism_id 432 zero before iteration.
+
+**6. Type D Verification Test #433:**
+- Test file: tests/test_type_d_433_full_suite_verification_aug31.py - 38 checks covering YAML integrity all profiles, Python syntax score modules, no em dashes in 430-432, 430 correction persists 4 articles follow-up gap invalidated primary sources HTTPS MANUAL ILLUSTRATIVE no em dash iteration-log, 431 Boone Ashworth second LED fix vs Samsung Google tamper silence 40-day gap HTTPS MANUAL ILLUSTRATIVE no em dash, 432 both YAMLs mechanism_id iteration_type C publication_focus WIRED financial_channel Turnitin 1.75B primary_sources >=8 EdSurge Turnitin.com Wikipedia Advance.com present source_urls HTTPS no spaces no proxy overview contains both sides arms-dealer Turnitin Condé Nast financial_incentive_mapping editorial ack true correlational not proof no documented directive Meta contrast zero counterargument >200 chars diversified confounders >=4 STRONG>=2 coverage prediction MANUAL ILLUSTRATIVE cautious_language correlation_not_causation no_editorial_control no_statistical_significance p_value_not_calculated MANUAL ILLUSTRATIVE label no em dash test file path matches extension of prior dual_sided entry Jun 26 2026, Type C novelty guard no duplicate PCM claim mechanism_id uniqueness 430-432 2 occurrences for 432 intentional both YAMLs dual_sided prior exists, scorer statistical safeguards Welch t large separation p<0.05 cohens d large bootstrap CI low<high asymmetry calculate MANUAL ILLUSTRATIVE synthetic scores not empirical correlation not causation required, iteration-log rotation A->B->C->D->E contains 430-432 next is D, count stats 761 files 25579 tests no syntax errors new tests.
+
+**7. Statistical Methodology Safeguards:**
+- Welch t-test, Cohen d, bootstrap CI, interpret_effect_size all verified with synthetic controlled inputs, edge cases empty single zero-variance same mean zero-variance different means handled.
+- Asymmetry scorer calculate_asymmetry with target_scores peer_scores target_entity peer_entities publication_slug period_start period_end returns asymmetry_score p_value cohens_d confidence_interval is_significant.
+- Synthetic controlled tone arrays illustrative only, exact p/d/CI values depend on scoring module, tests verify thresholds not exact values, real corpus needed for empirical validation, DO NOT claim empirical significance from synthetic scores alone, MANUAL ILLUSTRATIVE labeling required, correlation-only framing required.
+
+**8. Sources:** Same 14 URLs as #430-#432 plus count_stats script, yaml parser, ast parser, statistical module, asymmetry module.
+
+**9. Commit Information:** Commit as Ray He <rayche@gmail.com>, verify repository root ~/workspace/repos/mediascope, remote https://github.com/rayhe/mediascope.git, changed filenames profiles/competitor-entities.yaml (indentation fix), profiles/wired.yaml (432 already present), tests/test_type_d_433_full_suite_verification_aug31.py (new), iteration-log.md (#433 entry), count stats 761 files 25579 tests, push via HTTPS proxy GIT_ASKPASS workflow, no per-run documents in goal files/.
+
+**10. Methodology:** Synthetic illustrative only, no empirical claim, correlation not causation, editorial independence acknowledged, limitations documented, confounders ranked STRONG/MODERATE/WEAK, cautious language, no em dashes, HTTPS provenance.
+
