@@ -24774,3 +24774,114 @@ Privacy Surveillance Framing - Symmetry LOW - Camera Count Inversion:
 
 **10. Methodology:** Synthetic illustrative only, no empirical claim, correlation not causation, editorial independence acknowledged, limitations documented, confounders ranked STRONG/MODERATE/WEAK, cautious language, no em dashes, HTTPS provenance.
 
+
+#440 Type A: WIRED OpenAI Unshipped Hardware vs Meta Dormant NameTag Activation-Status Evidentiary Standard - Sep 1 2026 06:00 PDT
+
+**Date:** 2026-09-01 06:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation E->A 439 E to 440 A)
+**Type:** A - Competitor Coverage Deep Dive
+**Mechanism:** #440 Type A - Activation-Status Evidentiary Standard Asymmetry - WIRED treats OpenAI unshipped prototype as neutral business detail vs Meta dormant code as concealed surveillance infrastructure
+**Publication:** WIRED (Condé Nast via Advance Publications)
+**Competitor Pair:** OpenAI vs Meta - hardware surveillance capability with divergent activation-status handling
+**Rotation Transparency:** Previous entries #435 Type A 01:00 PDT Sep 1, #436 Type B 02:00 PDT, #437 Type C 03:00 PDT, #438 Type D 04:00 PDT, #439 Type E 05:00 PDT Sep 1. Per rotation A->B->C->D->E, next after E is A. This work is Type A at 06:00 PDT Sep 1 2026, correct rotation E->A. Cycle verified: 430 A 20:00 Aug 31, 431 B 21:00, 432 C 22:00, 433 D 23:00, 434 E 00:00 Sep 1, 435 A 01:00, 436 B 02:00, 437 C 03:00, 438 D 04:00, 439 E 05:00, 440 A 06:00. Selected Type A after confirming #439 E full podcast sentiment verification passed. Type A requires competitor coverage deep dive with direct WIRED primary sources, MANUAL ILLUSTRATIVE labeling, correlation not causation, confounders ranked STRONG/MODERATE/WEAK, no em dashes, HTTPS provenance, novelty vs existing mechanisms.
+
+**Focus:** Document WIRED evidentiary standard divergence for inactive/unshipped surveillance-capable tech. OpenAI Jony Ive device - explicitly won't ship before end Feb 2027 per court filing, no packaging/marketing materials exist, screenless desk puck, family of AI devices from $6.5B io acquisition - receives neutral business-delay framing. Meta dormant NameTag code - never activated, deleted Jun 5 2026, removed Jun 8, inaccessible, on-device not central DB, assistive use for blind mentioned - receives adversarial surveillance framing (dormant surveillance infrastructure, Pentagon supplier Rank One, biometric signatures, faceprints, revive banned tech). Both technologies inactive at time of coverage, but evidentiary burden differs: OpenAI absence-of-packaging framed as business detail, Meta deletion framed as concealment. Extends Mechanism #33 (facial recognition planned vs dormant) and #359 (hardware capability inversion) by adding activation-status evidentiary dimension. Financial prediction: Condé Nast OpenAI licensing $1-5M/yr predicts softer evidentiary standard for competitor vs Meta $0.
+
+**Findings Summary:**
+
+**1. Git Status and Commit Integrity at 06:00 PDT Start:**
+- Branch: main, remote: https://github.com/rayhe/mediascope.git (verified via git remote -v)
+- Author identity: Ray He <rayche@gmail.com> (verified via git config user.name/email, never Hatch)
+- Pending changes at 06:00 PDT start: M profiles/wired.yaml (existing 359 364 + new 440), M iteration-log.md (439 entries), new test file test_wired_openai_unshipped_vs_meta_dormant_activation_status_440.py pending. #439 commit pushed (commit history shows 439 E at 05:00). No staged changes to competitor-entities.yaml at start, profiles parse clean after YAML fix (hash escaping for #33 #359). Count stats ~762 test files before this iteration.
+
+**2. OpenAI Unshipped Hardware Coverage - Direct WIRED Primary Source:**
+- WIRED primary: https://www.wired.com/story/openai-drops-io-branding-hardware-devices/ Feb 10 2026 Maxwell Zeff - title OpenAI Abandons io Branding for Its AI Hardware - language will not use the name io, first hardware device won't ship before end of February 2027, not created any packaging or marketing materials for its first hardware device, screenless device that can sit on a user's desk, family of AI hardware devices from $6.5B io acquisition.
+- Framing: neutral_business_delay - trademark lawsuit iyO audio startup, product-naming strategy, technical trade-offs, prototype existence as of November, hiring Apple alumni.
+- Tone approx: MANUAL ILLUSTRATIVE 0.05 - neutral to slightly positive.
+- Privacy treatment: none - desk puck with camera/mic + Face ID-like auth + environmental awareness + observes users suggests actions described as feature not surveillance - 0 surveillance terms, 0 bystander consent, 0 wiretapping.
+- Deal disclosed: false.
+- Secondary corroboration attributing WIRED:
+  - PhoneArena Feb 10 2026 https://www.phonearena.com/news/OpenAIs-secret-gadget-is-getting-delayed-until-next-year_id178098 - attribution court filing reported by Wired - language leading AI company is yet to join hardware market, won't ship first hardware device to customers before end of February 2027, mysterious AI device, openness to being proven wrong.
+  - MacRumors Feb 10 2026 https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/ - attribution new court filings show (via Wired) - language first Jony Ive-designed hardware device won't ship until next year, trademark infringement lawsuit filed by iyO audio startup, not created any packaging or marketing materials, not an in-ear device nor a wearable, third core device that would sit in pocket or on desk alongside MacBook Pro and iPhone.
+  - 9to5Mac Feb 10 2026 https://9to5mac.com/2026/02/10/jony-ives-ai-hardware-is-delayed-to-2027-and-wont-be-called-io/ - attribution Wired reports - language mysterious AI hardware device delayed, prototype was said to exist as of November, company has hired more Apple alumni, completely new concept in AI hardware.
+- All secondary sources frame delay as neutral business/legal story, zero surveillance alarm despite always-on camera/mic/environmental awareness + Face ID-like auth + observes users suggests actions capability (from court filings).
+
+**3. Meta Dormant NameTag Coverage - Direct WIRED Primary Source:**
+- WIRED primary: https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/ Jun 4 2026 Dhruv Mehrotra + Dell Cameron - title Meta Silently Added Face-Recognition Code - language Silently Added, Quietly embedded, discreetly added, distributed surveillance machine, biometric signatures, faceprints, revive banned tech, initially called NameTag later renamed Connections.
+- Framing: adversarial_dormant_surveillance_infrastructure - maximum alarm vocabulary despite dormant code not enabled, on-device not central DB, assistive use for blind mentioned but overshadowed.
+- Tone approx: MANUAL ILLUSTRATIVE -0.78.
+- Activation status: dormant_never_activated_removed_Jun_8_deleted_Jun_5_inaccessible - code never enabled, removed Jun 8, deleted Jun 5, inaccessible to users, on-device not central DB.
+- Deal disclosed: false.
+- Rank One follow-up attributing WIRED Jun 15:
+  - Cybernoz Jun 15 2026 https://cybernoz.com/meta-tapped-a-pentagon-supplier-to-prototype-face-recognition-for-its-glasses/ - reproduces WIRED Jun 15 report - language licensed Rank One Computing technology, Pentagon supplier contracts with US Marshals FBI police military, long-range recognition, thin line between military surveillance and consumer products, none of the systems was ever active for users, deleted them on 2026-06-05, dormant NameTag system could not be accessed by users.
+  - Framing: adversarial_military_surveillance_infrastructure - even while stating none active/deleted/dormant/inaccessible, framing centers Pentagon/FBI/police/military long-range surveillance - MANUAL ILLUSTRATIVE -0.82.
+- Digital Trends summary: https://www.digitaltrends.com/wearables/meta-accused-of-preparing-facial-recognition-features-for-ai-smart-glasses/ - summary of WIRED NameTag investigation - framing preparatory_accusation - accused of preparing facial recognition features, dormant code investigation.
+- All Meta sources frame dormant code as concealed surveillance capability requiring investigative exposé despite stronger evidence of non-deployment (deletion + inaccessibility + on-device) than OpenAI (prospective non-shipment).
+
+**4. Activation-Status Evidentiary Comparison:**
+- OpenAI:
+  - Status: unshipped_prototype_no_packaging_no_marketing_delayed_to_2027
+  - Evidence of non-deployment: court filing stating won't ship before end Feb 2027, no packaging/marketing exists
+  - WIRED framing of evidence: neutral business detail - trademark lawsuit, naming strategy, prototype existence as of November, hiring Apple alumni
+  - Surveillance vocab: 0 terms
+  - Bystander consent: 0
+  - Wiretapping law: 0
+- Meta:
+  - Status: dormant_code_never_activated_removed_48h_deleted_Jun_5_inaccessible
+  - Evidence of non-deployment: code never enabled, removed Jun 8, deleted Jun 5, inaccessible to users, on-device not central DB
+  - WIRED framing of evidence: adversarial concealment - silently/quietly/discreetly added, deleted after discovery framed as response to exposure rather than routine cleanup, Pentagon supplier framing despite no active deployment
+  - Surveillance vocab: 7+ terms (dormant surveillance infrastructure, biometric signatures, faceprints, distributed surveillance machine, revive banned tech, Pentagon supplier, biometric)
+  - Bystander consent: present (implied non-consensual facial recognition)
+  - Wiretapping law: implied via biometric/wiretapping discourse in follow-ups
+- Asymmetry: both inactive, but OpenAI non-shipment treated as neutral product timeline detail, Meta non-activation treated as concealed surveillance capability requiring investigative exposé despite stronger evidence of non-deployment (deletion + inaccessibility + on-device). Financial tie (Condé Nast OpenAI $1-5M/yr vs Meta $0) predicts softer evidentiary standard for competitor.
+
+**5. Asymmetry Scorer Result (MANUAL ILLUSTRATIVE - Illustrative Only):**
+- Target entity: Meta
+- Peer entity: OpenAI
+- Publication: wired
+- Target scores: MANUAL ILLUSTRATIVE [-0.78, -0.82, -0.70] - primary NameTag -0.78, Rank One follow-up -0.82, Digital Trends summary -0.70
+- Peer scores: MANUAL ILLUSTRATIVE [0.05, 0.0, 0.05] - WIRED primary 0.05, PhoneArena 0.0, MacRumors 0.05
+- Target avg tone: MANUAL ILLUSTRATIVE -0.767
+- Peer avg tone: MANUAL ILLUSTRATIVE 0.033
+- Asymmetry score: MANUAL ILLUSTRATIVE -0.80
+- t_statistic: not_calculated - requires observed VADER/TextBlob + human annotation on full WIRED corpus
+- p_value: not_calculated
+- cohens_d: not_calculated
+- ci_lower: not_calculated
+- ci_upper: not_calculated
+- is_significant: false - illustrative only
+- Methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level scores from VADER/TextBlob + human annotation for empirical validation. DO NOT claim empirical significance from synthetic scores alone. Real WIRED corpus needed. 3+3 direct WIRED primary sources exist for #359/#364 but activation-status dimension adds evidentiary-standard nuance not capability dimension.
+- Interpretation: ILLUSTRATIVE ONLY - synthetic tone approximations (n=3+3), not observed corpus. Large apparent asymmetry (|delta|~0.8) in how WIRED treats proof of non-deployment: OpenAI absence-of-packaging framed as neutral business detail, Meta deletion/inaccessibility framed as concealment warranting surveillance alarm. Financial tie (Condé Nast OpenAI $1-5M/yr vs Meta $0) predicts softer evidentiary standard for competitor, consistent with structural incentive hypothesis. Correlation does not imply causation. Requires empirical validation.
+
+**6. Novelty vs #33 and #359:**
+- Mechanism #33: Facial Recognition Privacy Parity (OpenAI planned cameras vs Meta dormant NameTag) - technology comparison (planned FR vs dormant code) - FR technology dimension.
+- Mechanism #359: Hardware Capability Inversion (OpenAI always-on FR + environmental awareness + observes users suggests actions vs Meta single 12MP LED user-initiated) - capability dimension (more cameras = less scrutiny).
+- Mechanism #440 distinct: Activation-status evidentiary standard - both inactive/unshipped but WIRED treats OpenAI non-shipment as neutral business fact (no packaging, no marketing, court filing detail) vs Meta non-activation as active concealment (silently added, quietly embedded, deleted after discovery). Adds evidentiary burden asymmetry: what counts as proof of dormancy and how deletion is framed. Financial prediction: Condé Nast OpenAI licensing $1-5M/yr predicts softer evidentiary standard for competitor. Extends but does not duplicate #33/#359 - adds evidentiary-standard dimension. Verified via grep -rn mechanism_id 33 359 440 profiles/wired.yaml - distinct IDs, distinct dimensions.
+
+**7. Confounding Factors Ranked:**
+- [STRONG] Product category differs: OpenAI desk puck/third core device vs Meta eyewear glasses - glasses have established privacy discourse that may independently drive surveillance framing regardless of financial tie - adjustment not_calculated
+- [STRONG] Source type differs: OpenAI delay from court filing trademark lawsuit (iyO audio startup) vs Meta NameTag from code repo investigation - court filings naturally frame as legal/business story, code discovery naturally frames as hidden feature - adjustment not_calculated
+- [MODERATE] Temporal separation: OpenAI Feb 10 2026 vs Meta Jun 4-15 2026 - 4-month gap, news cycle and editorial staffing may differ - adjustment not_calculated
+- [MODERATE] Activation status evidence differs in kind: OpenAI non-shipment is prospective (will not ship) vs Meta non-activation is retrospective (was never active, then deleted) - retrospective deletion may legitimately invite concealment framing more than prospective delay - adjustment not_calculated
+- [MODERATE] Hardware capability disclosure: OpenAI device Face ID-like auth + environmental awareness + observes users suggests actions is from leaks/court filings not WIRED primary testing - Meta NameTag facial recognition is from code inspection - different evidentiary confidence may affect framing - adjustment not_calculated
+- [WEAK] User base scale: Meta Ray-Ban 5M+ installed, 50M+ app downloads vs OpenAI 0 shipped - larger installed base may warrant more scrutiny independent of financial incentive - adjustment not_calculated
+
+**8. Cautious Language:** Financial correlation does not imply causation. Structural incentive noted as correlate not proof of editorial control. No assertion of editorial direction. Illustrative scores manual estimates only. Synthetic tone arrays illustrative only. Requires Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation. Activation-status comparison extends but does not duplicate 33 (FR technology) and 359 (capability inversion) - adds evidentiary-standard dimension. Real article-level dataset required. No claim of editorial control, only structural incentive alignment. MANUAL ILLUSTRATIVE scores not statistically significant. p_value not_calculated, cohens_d not_calculated, ci not_calculated, significant false, significant_empirical false.
+
+**9. Coverage Prediction:** WIRED will continue applying softer evidentiary standard for OpenAI unshipped hardware (absence-of-packaging as neutral business detail, delay as trademark/product-naming story, 0 surveillance terms) vs adversarial evidentiary standard for Meta dormant code (deletion/inaccessibility as concealment, Pentagon supplier framing, 7+ surveillance terms) because Condé Nast receives $1-5M/yr OpenAI licensing (WIRED content in ChatGPT/SearchGPT) vs $0 Meta. Clean controls: publications with zero Condé Nast OpenAI deal (Gizmodo, MIT Tech Review, The Verge PMC independent, FT Nikkei independent) more likely to apply consistent evidentiary standard regardless of manufacturer. Financial predictor: Condé Nast OpenAI licensing predicts softer competitor coverage. MANUAL ILLUSTRATIVE illustrative not empirical.
+
+**10. Sources:**
+- https://www.wired.com/story/openai-drops-io-branding-hardware-devices/ (WIRED primary Feb 10 2026 Maxwell Zeff - OpenAI Abandons io Branding - won't ship before end Feb 2027, no packaging/marketing, screenless desk device, $6.5B io acquisition)
+- https://www.phonearena.com/news/OpenAIs-secret-gadget-is-getting-delayed-until-next-year_id178098 (PhoneArena Feb 10 2026 secondary corroboration attributing WIRED - court filing reported by Wired, leading AI company, won't ship before end Feb 2027, mysterious AI device)
+- https://www.macrumors.com/2026/02/10/openais-jony-ive-designed-device-delayed-to-2027/ (MacRumors Feb 10 2026 secondary corroboration attributing WIRED - first Jony Ive-designed hardware won't ship until next year, trademark infringement lawsuit iyO, not created any packaging/marketing, not an in-ear nor wearable, third core device pocket/desk alongside MacBook Pro and iPhone)
+- https://9to5mac.com/2026/02/10/jony-ives-ai-hardware-is-delayed-to-2027-and-wont-be-called-io/ (9to5Mac Feb 10 2026 secondary corroboration attributing WIRED - mysterious AI hardware delayed, prototype as of November, hired Apple alumni, completely new concept)
+- https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/ (WIRED primary Jun 4 2026 Mehrotra/Cameron - Silently Added Face-Recognition Code - dormant surveillance infrastructure, biometric signatures, faceprints, distributed surveillance machine, revive banned tech)
+- https://cybernoz.com/meta-tapped-a-pentagon-supplier-to-prototype-face-recognition-for-its-glasses/ (Cybernoz Jun 15 2026 reproducing WIRED Jun 15 - Meta licensed Rank One Computing technology, Pentagon supplier contracts US Marshals FBI police military, long-range recognition, thin line military surveillance and consumer products, none active for users, deleted Jun 5, dormant NameTag inaccessible)
+- https://www.digitaltrends.com/wearables/meta-accused-of-preparing-facial-recognition-features-for-ai-smart-glasses/ (Digital Trends summary WIRED NameTag investigation - accused of preparing facial recognition features, dormant code investigation)
+- https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/ (Reuters Aug 20 2024 Condé Nast OpenAI multi-year licensing - $1-5M/yr estimate financial tie)
+
+**11. Test File:** tests/test_wired_openai_unshipped_vs_meta_dormant_activation_status_440.py - 10 checks covering mechanism_id 440, Type A, iteration 440, publication wired, competitor openai vs meta, activation_status fields unshipped vs dormant deleted, evidentiary comparison surveillance vocab 0 vs 7+, novelty vs 33 359 distinct evidentiary-standard dimension, asymmetry scorer MANUAL ILLUSTRATIVE is_significant false p_value not_calculated, confounders >=5 STRONG>=2 MODERATE>=2 WEAK>=1 adjustment not_calculated, no em dashes, cautious language correlation not causation structural incentive illustrative scores empirical validation, source attribution WIRED direct primary vs secondary attributing WIRED, deal_disclosed false, no synthetic significance overclaim.
+
+**12. Extension vs Duplicate Justification:** Existing mechanism #33 covers facial recognition technology parity (OpenAI planned FR vs Meta dormant NameTag) - FR technology dimension. Mechanism #359 covers hardware capability inversion (OpenAI always-on FR + environmental awareness + observes users vs Meta single 12MP LED user-initiated - more capability = less scrutiny) - capability dimension. Mechanism #440 does NOT duplicate either - adds activation-status evidentiary standard dimension: how WIRED treats proof-of-non-deployment. OpenAI non-shipment (prospective, court filing, no packaging/marketing) framed as neutral business detail vs Meta non-activation (retrospective, code never enabled, removed Jun 8, deleted Jun 5, inaccessible, on-device) framed as concealed surveillance infrastructure despite stronger evidence of non-deployment. Verified via grep -rn mechanism_id 33 359 440 profiles/wired.yaml - distinct IDs, distinct dimensions, no overlap. Search profiles, tests, git history before claiming Type A novelty completed - genuinely novel extension per Aug 31 2026 standing rule.
+
+**13. Limitations Documented:** Product category differs (desk puck vs glasses) may independently drive surveillance framing - glasses have established privacy discourse. Source type differs (court filing vs code repo) may naturally frame as legal/business vs hidden feature. Temporal separation 4 months Feb vs Jun may differ editorial staffing/news cycle. Activation status evidence differs in kind prospective vs retrospective - retrospective deletion may legitimately invite concealment framing. Hardware capability disclosure from leaks/court filings not WIRED primary testing - different evidentiary confidence. User base scale Meta 5M+ installed vs OpenAI 0 shipped may warrant more scrutiny. Requires Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation. Synthetic tone arrays illustrative only. MANUAL ILLUSTRATIVE not empirical. Correlation does not imply causation.
+
