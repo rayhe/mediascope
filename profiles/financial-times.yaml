@@ -904,6 +904,177 @@ competitor_relationships:
         - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/
         - https://aiindustrytoday.com/news/financial-times-reports-ai-integration-targeting-wearables-as-gateway/
         - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+
+    iteration_435_sep01_2026_ft_openai_govt_stake_vs_meta_equity_raise_framing_asymmetry:
+      date: '2026-09-01'
+      mechanism: 435
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: Financial Times
+      competitor_pair: OpenAI vs Meta
+      iteration: 435
+      iteration_type: A
+      iteration_time: '2026-09-01 01:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      financial_relationship:
+        partner: OpenAI
+        deal_type: licensing
+        estimated_value: $5-10M/yr
+        cash_terms_disclosed: false
+        valuation_source_type: secondary_report_based
+        primary_source: https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+        secondary_source: WSJ via Digiday 2024-in-review timeline reports $5M-$10M per year
+        meta_estimated_value: $0
+        deal_disclosed_in_ft_coverage: false
+        non_causal_language: Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence.
+        editorial_independence_note: FT editorial standards require source verification and balance. No evidence of direct directive linking licensing to coverage tone was reviewed. Financial incentives are correlational, not causal proof.
+      ft_openai_sources_sep01_2026:
+        - title: OpenAI proposes handing Trump administration 5 percent stake, FT reports
+          date: '2026-07-02'
+          url: https://www.reuters.com/business/openai-proposes-handing-trump-administration-5-stake-ft-reports-2026-07-02/
+          original_ft_attribution: Financial Times Jul 2 2026 via Reuters citing FT, two people familiar talks
+          framing: constructive_benefit_sharing
+          tone_manual_illustrative: 0.10
+          language:
+            - proposes handing Trump administration 5 percent stake
+            - benefit-sharing proposal
+            - sweeten ties with administration increasingly active role regulating technology
+            - managing regulatory uncertainty critical ahead planned IPOs
+            - exploring options give public stake in leading AI companies
+          deal_disclosed: false
+          source_urls:
+            - https://www.reuters.com/business/openai-proposes-handing-trump-administration-5-stake-ft-reports-2026-07-02/
+        - title: OpenAI plans ChatGPT superapp overhaul ahead of listing, FT reports
+          date: '2026-06-07'
+          url: https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+          original_ft_attribution: Financial Times Jun 7 2026 via Reuters citing FT, reporters George Hammond Madhumita Murgia
+          framing: constructive_enterprise_growth
+          tone_manual_illustrative: 0.18
+          language:
+            - biggest ChatGPT overhaul yet
+            - superapp with coding tools and AI agents
+            - boost revenue ahead planned share listing
+            - target lucrative enterprise clients
+            - intensify competition with rival Anthropic
+          deal_disclosed: false
+        - title: OpenAI spending hit $34 billion last year ahead of planned IPO, FT reports
+          date: '2026-06-16'
+          url: https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+          framing: growth_milestone
+          tone_manual_illustrative: 0.08
+          language:
+            - spent $34 billion last year to dominate booming AI market
+            - growth milestone ahead of planned IPO
+            - audited financial figures $19B R&D $6B sales marketing
+          deal_disclosed: false
+      ft_meta_sources_sep01_2026:
+        - title: Meta weighs big equity raising to finance AI infrastructure, FT reports
+          date: '2026-06-05'
+          url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+          framing: desperation_capital_raise
+          tone_manual_illustrative: -0.55
+          language:
+            - weighs big equity raising
+            - finance AI infrastructure
+            - creative ways to raise cash
+            - seeks new sources of capital
+            - stock dropped 6.6 percent on report
+            - premature to say company decided
+            - pure speculation
+          deal_disclosed: false
+        - title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+          date: '2026-07-08'
+          url: https://www.techmeme.com/260708/p2
+          framing: adversarial_surveillance
+          tone_manual_illustrative: -0.62
+          language:
+            - continuously collect audio
+            - taking photos every few seconds
+            - Meta executives do not want to activate LED when super-sensing features turned on
+            - raw footage audio not stored but metadata extracted uploaded server for Meta AI query
+            - discussing whether data collected could be used to train own AI models
+            - civil liberty and privacy risks
+            - violate data privacy or biometric data laws
+            - liable for potential violations of wiretapping laws
+          surveillance_terms: 7
+          deal_disclosed: false
+        - title: Meta Is Flooding the Market With Smartglasses Privacy Advocates Are Up in Arms
+          date: '2026-08-26'
+          url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+          original_ft_attribution: Financial Times previously reported some details new Meta glasses feature per WSJ Aug 26 2026
+          framing: surveillance_threat_market_flooding
+          tone_manual_illustrative: -0.58
+          language:
+            - flooding market with smartglasses
+            - privacy advocates up in arms
+            - halt publicly disavow plans equip glasses NameTag feature
+            - Your glasses should not know my name
+            - constantly capture audio visuals without notifying those around user via white light
+            - privacy-protective technologies designed help people throughout day without capturing photos videos like traditional camera
+            - committed getting glasses right for people wearing them those around them
+            - patent application record user throughout day assess mood create customized workout plans
+            - User laughs with friend at dinner 5:15 pm Audio recognized logged AI
+            - User sighs 9:15 pm AI listening smart home device logs it
+            - New York state court System memo prohibiting courthouses wearing devices
+          deal_disclosed: false
+      asymmetry_scoring_manual_illustrative:
+        note: MANUAL ILLUSTRATIVE not empirical n=3 per entity insufficient for inferential significance
+        target_entity: Meta FT capital and privacy
+        peer_entity: OpenAI FT growth benefit-sharing
+        target_scores_manual_illustrative: [-0.55, -0.62, -0.58]
+        target_avg_manual_illustrative: -0.5833
+        peer_scores_manual_illustrative: [0.10, 0.18, 0.08]
+        peer_avg_manual_illustrative: 0.12
+        delta_manual_illustrative: -0.7033
+        p_value: NOT CALCULATED no observed corpus
+        cohens_d: NOT CALCULATED
+        ci_95: NOT CALCULATED
+        significant: false
+        empirical_required: true
+        scorer: mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative
+        synthetic_note: Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed FT corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full FT corpus Jul 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives, not proof editorial control causation.
+        welch_t_test_synthetic:
+          t_stat: inf
+          p_value: 0.0
+          interpretation: Zero variance within each group different between groups synthetic only not empirical
+        cohens_d_synthetic: 0.0
+        bootstrap_ci_synthetic: [-0.75, -0.55]
+      confounders:
+        strong:
+          - beat assignment FT SF Meta beat Hannah Murphy vs FT AI desk George Hammond Madhumita Murgia different editorial standards independent licensing
+          - product-stage prototype glasses privacy risk tangible LED deactivation wiretapping law vs workforce growth superapp enterprise $34B spending gov benefit-sharing inherently different risk profiles but same scale billions
+        moderate:
+          - market-share Meta 7M glasses sold 2025 dominance vs OpenAI 1B weekly ChatGPT users drive different angles
+          - news peg FT July 9 super-sensing scoop vs Jun-Jul 2026 OpenAI growth milestones timing separation drive tone differences
+          - sourcing access FT sources on Meta exec LED intent do not want activate LED vs OpenAI sources on workforce hiring superapp $34B gov share reflect source availability not financial influence
+        weak:
+          - regulatory risk Meta wiretapping biometric laws vs OpenAI gov 5 percent share governance proposal not directly comparable but both regulatory
+      finding_summary: FT OpenAI coverage Jun-Jul 2026 constructive growth benefit-sharing enterprise aspirational +0.08 to +0.18 range even gov 5 percent stake neutral benefit-sharing vs FT Meta coverage Jun-Jul 2026 desperation capital raise -0.55 surveillance privacy violation -0.62 market flooding -0.58 range. Same capex scale tens of billions, same continuous sensing always-on AI access risk profile, opposite framing. Financial relationship FT receives $5-10M per year from OpenAI Apr 29 2024 deal Reuters primary terms undisclosed secondary WSJ via Digiday $5M-$10M per year vs $0 from Meta predicts softer OpenAI tone. Does not prove editorial causation. Editorial independence confounder requires internal evidence. MANUAL ILLUSTRATIVE scoring delta -0.7033 insufficient n for inferential significance requires observed corpus validation. Systematic non-disclosure FT never disclosed OpenAI deal across 3 articles covering OpenAI strategy spending products Jul 2026 window.
+      source_urls:
+        - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+        - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+        - https://www.reuters.com/business/openai-proposes-handing-trump-administration-5-stake-ft-reports-2026-07-02/
+        - https://www.reuters.com/business/openai-plans-chatgpt-superapp-overhaul-ahead-listing-ft-reports-2026-06-07/
+        - https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/
+        - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+        - https://www.techmeme.com/260708/p2
+        - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: MANUAL ILLUSTRATIVE
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only.
+
+
   google:
     financial_tie: commercial_partnership
     estimated_value: Single figure millions GBP/yr (Press Gazette Aug 3 2026)
