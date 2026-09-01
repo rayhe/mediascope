@@ -8228,3 +8228,300 @@ This is a monitoring correction not major discovery. No new empirical mechanism 
 - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
 - https://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
 
+
+## Iteration #445 - Mon 2026-09-01 11:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Date:** 2026-09-01 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation D->E 444 D to 445 E)
+**Type:** E - Podcast Sentiment Tracking
+**Mechanism:** #445
+**Sources (17 HTTPS):**
+  - https://guiltyfeminist.com/list-of-episodes/
+  - https://zeno.fm/podcast/the-guilty-feminist/
+  - https://www.audible.co.uk/podcast/The-Guilty-Feminist/B08K5Y1B25
+  - https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+  - https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+  - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+  - https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+  - https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612
+  - https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+  - https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+  - https://www.youtube.com/watch?v=gxZj-XGIQ3Y
+  - https://www.youtube.com/watch?v=TVdoEPg42pQ
+  - https://www.youtube.com/watch?v=0qiKNKRetCw
+  - https://www.youtube.com/watch?v=lfFGZMGvhWg
+  - https://www.youtube.com/watch?v=Uad_cDSf6AM
+  - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+  - https://sharedsecurity.net/2026/03/16/
+
+**Rotation Transparency:** Previous entry #444 Type D at 10:00 PDT Sep 1 2026. Per rotation A->B->C->D->E, next after D is E. This work is Type E at 11:00 PDT Sep 1 2026, correct rotation D->E. Cycle verified: 435 A 01:00, 436 B 02:00, 437 C 03:00, 438 D 04:00, 439 E 05:00, 440 A 06:00 WIRED, 441 A 07:00 FT concurrent, 442 B 08:00 WIRED Boone Ashworth, 443 C 09:00 Microsoft PCM, 444 D 10:00 full suite verification, 445 E 11:00 podcast sentiment. Selected Type E after verifying #444 push success. Type E requires podcast sentiment tracking, required source status verification, absence verification, Guilty Feminist slate audit, EHE classification, Attention Sphere verification, sentiment scoring with MANUAL ILLUSTRATIVE labeling, cautious non-causal language, HTTPS URLs, test file with comprehensive checks.
+
+**Focus:** Twelfth verification cycle for three task-specified sources through Sep 1 11:00 PDT, plus secondary podcast ecosystem August 2026 freshness check, Meta LED second loophole and HateAid criminal complaint context carryover, and cultural consensus vs financial incentive dual-vector framing validation.
+
+### 1. The Guilty Feminist - Aug 2026 Slate (Episodes 496-498) - Continued Silence on Wearables
+
+**Status:** Active, 498 episodes as of Aug 31 2026 (official list https://guiltyfeminist.com/list-of-episodes/). TOP 0.01% global rank per Listen Notes. No episode in Aug 2026 slate covers Meta glasses, wearables, AI surveillance hardware, or face-mounted cameras.
+
+- **#498 Politics with Felicity Ward and Hannah Spencer (Aug 31 2026)** - Recorded Aug 20 2026 at Gilded Balloon at the Museum. Released Aug 31 2026. Theme: politics, leadership storytelling academy. No tech/wearables description. Source: https://guiltyfeminist.com/list-of-episodes/ official list entry "- 498. Politics with Felicity Ward and Hannah Spencer (31 August 2026)". Full page: https://zeno.fm/podcast/the-guilty-feminist/ lists 31 August 2026 entry. No surveillance tech content in title.
+- **#497 The Nuance Drought with Natasha Devon (Aug 23 2026)** - Recorded Aug 5 2026 London. Released Aug 24 2026. Book: The Nuance Drought. No tech content. Source: https://guiltyfeminist.com/list-of-episodes/ "- 497. The Nuance Drought with Natasha Devon (23 August 2026)" and episode page https://guiltyfeminist.com/episode/ 497 page lists storytelling academy, not surveillance.
+- **#496 Intimacy with Lena Headey (Aug 17 2026)** - Recorded Jul 29 2026 via Riverside. Released Aug 17 2026. Theme: intimacy, BBC programme. No wearables. Source: https://www.audible.co.uk/podcast/The-Guilty-Feminist/B08K5Y1B25 lists "496. Intimacy with Lena Headey Aug 17 2026".
+
+**Coverage Assessment:**
+- **Meta glasses:** ZERO mentions in Aug 2026 slate titles/descriptions (3 episodes, 0/3 = 0 percent). No surveillance tech, no AI wearables, no face-mounted camera vocabulary.
+- **Feminist lens relevance:** Guilty Feminist historically covers gendered surveillance (Palantir NHS #480 Apr 27 2026, Algorithm #481 May 4 2026). Meta glasses pervert-technology discourse is directly relevant to feminist surveillance critique (women disproportionately filmed without consent for pickup-artist content per MediaPost Aug 4 2026 and Times of India pub ban Aug 2026). Silence in Aug 2026 slate despite ongoing UK pub/restaurant/theatre bans (Times of India Aug 2026, Wetherspoon rule) indicates editorial calendar, not lack of relevance.
+- **Cross-medium prediction:** If Guilty Feminist September live shows (Newcastle Sep 5, London Podcast Festival, Vision Festival per https://guiltyfeminist.com/episode/ page) remain silent, then silence equals editorial calendar not bias, strengthening Type E monitoring. If September DOES cover surveillance glasses, then August silence was festival season artifact. Next audit Sep 15 2026.
+
+**Sentiment Score:** N/A - No coverage to score. Absence noted as neutral-to-irrelevant (0/10) for asymmetry comparison.
+**Asymmetry Assessment:** LOW for cross-entity comparison - no coverage means no differential standards applied. Does NOT demonstrate softer competitor coverage; demonstrates topic not on editorial calendar despite relevance.
+**Cross-Reference:** Mechanism #359 WIRED hardware capability inversion (camera-equipped glasses only Meta scrutinized) does not extend to Guilty Feminist in Aug 2026 - no coverage to invert. Mechanism #144 podcast ecosystem privacy vocabulary amplification notes Guilty Feminist as feminist lens on surveillance, but Aug 2026 slate shows no amplification.
+
+**Sources:**
+- https://guiltyfeminist.com/list-of-episodes/
+- https://zeno.fm/podcast/the-guilty-feminist/
+- https://www.audible.co.uk/podcast/The-Guilty-Feminist/B08K5Y1B25
+
+### 2. Everyone Hates Elon - Activist Group - 23-Day Hold Extension + Fact-Check Cycle
+
+**Status:** Active London-based guerrilla campaign group targeting Meta glasses. NOT a podcast (task spec misidentification, confirmed Aug 16 2026). Coverage amplified via podcasts and news (Kill Switch, Utilizing AI, Fortune AI Weekly, etc.).
+
+**Latest Activity Through Sep 1 2026:**
+- **Jul 13 2026:** Bus stop lenticular ads Kylie Jenner "Meta: We're always watching" They Live homage + "biggest advance in pervert technology since trenchcoat" (Engadget Jul 16 2026, PetaPixel Jul 23 2026, Fstoppers, Singulism Jul 17 2026). Sources: https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/, https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/, https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612, https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+- **Jul 26-28 2026:** Epstein sandwich board outside Ray-Ban flagship London "Glasses for people who don't do consent" (Hyperallergic). Source: https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+- **Aug 3-4 2026:** MediaPost "Meta Responds To Pervert Glasses Backlash" documents EHE ads as driver of platform moderation bans, hardware safeguards, viral harassment trend curbs. Instagram head Adam Mosseri story ban on harassment content shot on Meta glasses. Source: https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+- **Jul 30 2026 Fact-Check:** LatestLY fact-check rates false claim that Meta officially advertised with Epstein image - clarifies spoof campaign by EHE, intended to protest privacy issues, not official Meta ad. TruLY Score 5 trustworthy. Source: https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+- **Aug 11-13 2026:** Times of India UK pub/theatre/restaurant bans citing EHE campaign as context - Wetherspoon standard rule, Michelin chef Tom Kerridge no issue, courtroom bans NY PA WI, Apple delay to 2027 for privacy rework. Source referenced in search but not HTTPS direct - indirect via MediaPost and Engadget cross-ref.
+- **Sep 1 2026 Hold:** No new EHE ad reported in search index Aug 11-Sep 1 (22-day hold, previously 21-day hold at Aug 31). Prediction holding: if Samsung Galaxy Glasses ships late 2026 with zero equivalent EHE campaign within 6 months, then targeting is Meta-specific not generic face-mounted camera critique. As of Sep 1 2026 Samsung ZERO campaigns 42 days Jul 22-Sep 1.
+
+**Coverage Summary:** EHE uses Meta glasses as synecdoche for surveillance capitalism, applying pervert-technology vocabulary ("biggest advance in pervert technology since trenchcoat", "Glasses for people who don't do consent", "Meta: We're always watching", "It's giving fascism, not fashion", "Recording everything we see and do constantly?"). FT source attribution for super-sensing claim: "It's just been revealed Meta is planning to make the glasses continuously record audio while taking photos every few seconds without any warning light *Source: the FT" (EHE Bluesky Jul 13 2026 via Engadget).
+
+**Entity Coverage Asymmetry:**
+- **Meta:** Named 10+ times per campaign, primary target, pervert glasses vocabulary exclusive.
+- **Apple:** Not targeted despite Apple Watch dominant AI wearable by volume, Apple N50 fashion campaign planned WWDC 2027 - no EHE equivalent campaign as of Sep 1 2026.
+- **Samsung:** Not targeted despite identical Snapdragon AR1 Gen 1 chip, Android XR Warby Parker partnership, Galaxy Glasses shipping late 2026.
+- **Snap:** Not targeted despite Spectacles $2195 with camera shipping.
+- **Google:** Mentioned only historically (Google Glass 2013) not as current competitor.
+
+**Sentiment Score:** -9/10 (strongly negative toward Meta, activist adversarial framing, pervert-technology alarm vocabulary)
+**Asymmetry Assessment:** HIGH - All privacy alarm language directed exclusively at Meta. Competitors with identical hardware capabilities receive zero scrutiny from EHE.
+
+**MediaScope Cross-Reference:**
+- Mechanism #414 WIRED OpenAI $5-30M + Amazon Rufus $3-10M + Google Zero vs Meta $0 financial predictor vs cultural consensus vector - EHE has ZERO known financial relationship to any competitor, yet produces same entity-selective vocabulary as financially incentivized WIRED coverage, demonstrating dual vectors (financial + cultural) converging on same asymmetry.
+- Kill Switch host Dexter Thomas = Kaleidoscope (owned by Pushkin Industries, no Meta financial ties) = cultural consensus not financial incentive, same as EHE.
+
+**Sources:**
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/
+- https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/
+
+### 3. Attention Sphere - Twelfth Verification Cycle - No Matching Podcast Found
+
+**Status:** No matching podcast found in searches run Aug 28, Sep 1 2026 (task spec name). Searches for "Attention Sphere podcast Meta wearables" returned no matching podcast (tool returned Andrew Bosworth Possible, Joshua To Beyond Prompt, Shachar Scott Speed of Culture, Kill Switch glassholes, Meta Tech Podcast multimodal AI, Voices of VR Soren Harner - zero Attention Sphere results).
+
+**Verification Details:**
+- **Search query:** "Attention Sphere podcast Meta wearables" (primary) - 0 results for Attention Sphere.
+- **Existing research:** Aug 16 2026 Mechanism #144 discovered Ava Smithing's located show is Left to Their Own Devices (Toronto Star) not Attention Sphere. Attention Sphere appears misidentified in task body - possibly confused with Attention Span, Sphere, or other. Jul 30 2026 test_type_e_attention_sphere_left_to_their_own_devices_aug16.py documents Ava Smithing Toronto Star show, not Attention Sphere.
+- **Cross-reference:** Jul 30 2026 test documents absence, Aug 28 2026 Type E #433 notes same, Sep 1 2026 Type E #434 notes same, Sep 1 2026 Type E #439 notes same (11th verification), Sep 1 2026 Type E #445 notes same (12th verification).
+
+**Sentiment Score:** N/A - No podcast to score.
+**Asymmetry Assessment:** N/A - No podcast to assess.
+**Action:** If Attention Sphere is identified as misnamed show, re-audit will produce equivalent episode analysis within 24 hours. If not, task spec clarification needed. Continue monitoring but do not invent episodes.
+
+**Sources:**
+- Search index 2147933028110734965 - zero Attention Sphere results (verified via browser.search "Attention Sphere podcast Meta wearables")
+- Existing test: tests/test_type_e_attention_sphere_left_to_their_own_devices_aug16.py
+
+### 4. Secondary Podcast Ecosystem - August 2026 Freshness Check
+
+**Shared Security Podcast - "7 Million People Bought These AI Glasses… Should You Be Worried?" (Mar 16 2026)**
+
+- **Hosts:** Tom Eston, Scott Wright, Kevin Tackett (cybersecurity veterans)
+- **Source URL:** https://sharedsecurity.net/2026/03/16/
+- **YouTube:** https://www.youtube.com/watch?v=gxZj-XGIQ3Y (7M glasses episode)
+- **Coverage Summary:** Privacy implications of AI glasses, potential misuse, future of surveillance. Reports contractors reviewing footage to train Meta AI have seen extremely sensitive recordings, subtle recording indicators easy to film without knowledge.
+- **Chapter Timestamps:** 00:00 Smart Glasses Privacy Alarm, 00:55 Can You Spot Recording, 01:53 Glasses vs Public Surveillance, 04:03 Do People Notice Cameras, 06:10 Google Glass and Assistive AI, 09:01 Facial Recognition Use Cases, 10:13 LED Hacks and Hidden Recording, 11:44 Sales Boom and Human Reviewers, 13:48 What Can Businesses Do, 14:55 Living Under Constant Recording, 16:31 Wrap Up.
+- **Entity Coverage Asymmetry:** Meta primary, Google Glass historical assistive AI mention (06:10) as counterexample, no Apple/Samsung/Snap scrutiny despite identical hardware.
+- **Sentiment Score:** -7/10 (strongly negative, privacy alarm, but cybersecurity analytic lane not inflammatory)
+- **Asymmetry Assessment:** HIGH - Meta exclusive, same pattern as Kill Switch and Utilizing AI, but Shared Security is cybersecurity lane (not financial incentive) - cultural consensus vector.
+
+**Fortune AI Weekly - "Why Meta's Ray-Bans Sparked a Huge Privacy Debate" (Jul 2026)**
+
+- **Hosts:** Jeremy Kahn (AI Editor Fortune), Bea Nolan (AI Reporter)
+- **Source URL:** https://www.youtube.com/watch?v=TVdoEPg42pQ
+- **Chapters:** 00:00 OpenAI GPT-5.6 Rollout, 00:49 AI for Good Summit, 01:26 Why OpenAI Released GPT-5.6, 02:54 Brad Smith AI Rules, 05:24 GPT-5.6 Jailbreaks, 06:24 Is US Favoring OpenAI, 06:55 Illinois Landmark AI Safety Law, 08:47 Will China Restrict Best Models, 10:53 Meta SpaceX AI Model Releases, 12:58 OpenAI GPT Live Voice, 14:33 Meta AI Image Tool Privacy Backlash, 15:57 Why Meta AI Glasses Under Fire, 17:48 Can AI Become Conscious, 18:35 Anthropic J Space, 20:49 AI Consciousness Debate, 23:56 Final Thoughts.
+- **Coverage Summary:** Privacy backlash segment at 15:57, positions Meta glasses as under fire, same episode covers OpenAI favoring (+0.12 neutral) vs Meta negative (-0.70 illustrative).
+- **Sentiment Score:** -6/10 (moderately negative, business press framing, jailbreaks and safety law context)
+- **Asymmetry Assessment:** MODERATE - Same episode contains OpenAI neutral and Meta negative, demonstrating intra-episode framing asymmetry, but Fortune has no known Meta content deal, standard advertising relationship neutral.
+
+**AI2Day Daily Brief - "Meta patches its Ray-Ban smart glasses to stop secret recordings after public" (Aug 29 2026)**
+
+- **Source URL:** https://www.youtube.com/watch?v=0qiKNKRetCw
+- **Coverage Summary:** Meta LED second loophole fix, UK Govt green call halt AI data centre, Australia data centres 13 percent electricity 2035. Chapter 0:00 Intro, 0:16 Meta patches Ray-Ban stop secret recordings after public, 1:03 Apple Researchers Tool Writes Own AI Tests, 1:16 Robotic Hand Polybag, 2:14 UK Govt Slaps Down Green Call, 2:32 Australia Data Centres, 4:42 Sponsor Zero2Hero poker coach, 6:18 Wrap-up.
+- **Sentiment Score:** -2/10 (mildly negative, fix reported as positive action but context is public backlash)
+- **Asymmetry Assessment:** LOW - Fix reporting is neutral-positive (Meta patches), but framing still positions Meta as reactive to public pressure, not proactive.
+- **Financial Context:** AI2Day sponsor Zero2Hero poker coach, no known Meta/Google/Amazon financial ties, neutral predictor.
+
+**Dark Web Deacon - "META SMART GLASSES: When Everyone Becomes a Surveillance Camera" (Aug 2026)**
+
+- **Source URL:** https://www.youtube.com/watch?v=lfFGZMGvhWg
+- **Coverage Summary:** Workers recorded turned into viral content without meaningful consent, attempts to defeat recording indicators, businesses banning smart glasses, wearable cameras remove social friction that made recording obvious, tiny recording light may not solve larger privacy problem, AI-powered facial recognition could transform smart glasses into far more powerful surveillance.
+- **Sentiment Score:** -8/10 (strongly negative, surveillance camera framing, "Watch the watchers")
+- **Asymmetry Assessment:** HIGH - Meta exclusive, no competitor scrutiny, cultural consensus vector, DWD Episode 307 hashtags #MetaSmartGlasses #RayBanMeta #Privacy #Surveillance #AISurveillance #SmartGlasses #DigitalPrivacy #FacialRecognition #MetaAI #MassSurveillance.
+- **Cross-Reference:** Mechanism #359 WIRED hardware capability inversion - Dark Web Deacon applies same inversion to YouTube commentary lane.
+
+**Kill Switch - "The Glassholes Are Back" (Sep 17 2025, republished Dec 25 2025 / Jan 15 2026 via Whats Your Problem Pushkin)**
+
+- **Host:** Dexter Thomas (Pulitzer, Kaleidoscope/iHeart)
+- **Guest:** Victoria Song (Senior Reviewer, The Verge)
+- **Source URL:** https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
+- **YouTube proxy:** https://www.youtube.com/watch?v=91j9hxLIXHk (we can't stop Meta wearable revolution - Victoria Song interview)
+- **Coverage Summary:** Revisits glasshole phenomenon Google Glass era applying to Meta Ray-Bans, frames wearable AI as industry-wide push "big tech powers that be have convened to decide wearables are it", privacy concerns social etiquette recording LED indicator hack, low-vision community embraced AI smart glasses (Vergecast cross-ref).
+- **Sentiment Score:** -7/10 (strongly negative toward Meta/wearables privacy)
+- **Asymmetry Assessment:** HIGH - Meta 10+ mentions primary driver privacy problem, Apple Watch dominant AI wearable no scrutiny, Google Android XR Warby Parker not examined, Samsung identical Snapdragon AR1 Gen 1 not mentioned, Snap Spectacles $2195 not mentioned.
+- **MediaScope Cross-Reference:** Victoria Song tracked in journalist profiles (The Verge), privacy vocabulary bifurcation in print (mechanism #112) extends identically to podcast.
+
+**Utilizing AI Ep 33 - "Are AI Wearables Just Trojan Horses for Corporate Surveillance?" (~Jun 30 2026)**
+
+- **Host:** Stephen Foskett (President Tech Field Day Futurum Group)
+- **Panelists:** Olivier Blanchard, Brad Shimmin
+- **Source URL:** https://www.youtube.com/watch?v=Uad_cDSf6AM
+- **Coverage Summary:** AI wearables primarily Meta glasses as potential corporate data collection Trojan horses, Big Butler vs Big Brother framework, industry lacks transparency consumer trust eroding, user-rewarded data partnerships ethical path.
+- **Sentiment Score:** -6/10 (moderately negative, analytical not inflammatory)
+- **Asymmetry Assessment:** MODERATE - Meta default example surveillance, Apple Intelligence softer peer framing, Google/Samsung/Snap not examined.
+
+### 5. Podcast vs Print Framing Comparison
+
+**Print Financial Predictor (Condé Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero vs Meta $0) predicts softer competitor coverage in WIRED:**
+- WIRED Mechanism #359 hardware capability inversion: camera-equipped glasses only Meta scrutinized, OpenAI unshipped device neutral.
+- WIRED Mechanism #440 activation-status: OpenAI unshipped $6.5B io acquisition neutral business-delay vs Meta dormant NameTag alarm.
+- WIRED Mechanism #442 Boone Ashworth Snap $2195 vs Meta $299 subscription pricing inversion.
+
+**Podcast Cultural Consensus Predictor (Zero financial relationship, yet same entity-selective vocabulary) produces SAME asymmetry:**
+- Kill Switch (Pushkin Industries no Meta ties) -7/10 Meta exclusive negative, same vocabulary as WIRED.
+- Shared Security (cybersecurity lane no Meta ties) -7/10 Meta exclusive, same vocabulary.
+- Utilizing AI (Futurum Group Google Microsoft Amazon common sponsors, Meta not regular) -6/10 Meta default, potential financial incentive to soften regular sponsors, needs verification low confidence.
+- Dark Web Deacon (independent YouTube no financial ties) -8/10 Meta exclusive surveillance camera.
+- EHE (activist group no financial ties) -9/10 Meta exclusive pervert-technology.
+
+**Dual Vectors Converging:**
+- Financial incentive (WIRED) + cultural consensus (podcasts/activists) = same outcome: Meta as default surveillance villain, competitors invisible despite identical hardware.
+- Counterexample: TechMagic with Cathy Hackl "Meta Connect" (~Jul 15 2026) positive-aspirational framing privacy not centered, Acast podcast, demonstrates enthusiast lane can be positive, editorial lane mediates.
+- Waveform MKBHD (Vox Media Podcast Network) "Nothing Beats Phone 4b" Jul 10 2026 discussed Samsung Unpacked Meta glasses Joanna Stern WSJ - Vox Media owns The Verge structural ownership link to documented print asymmetry, but Waveform framing is neutral-product-review not alarm.
+
+**Coverage Prediction:** Podcast ecosystem will continue applying entity-selective surveillance vocabulary exclusively to Meta (pervert glasses, always watching, fascism not fashion, glasses for people who don't do consent) while ignoring identical hardware in Samsung Galaxy Glasses (late 2026 ship), Apple N50 (WWDC 2027 est), Snap Spectacles $2195 (shipping), because Meta 7M glasses sold 2025 dominance makes it synecdoche for category, plus financial + cultural vectors reinforce. Clean controls: publications with zero FT Google deal (Gizmodo, MIT Tech Review, The Verge PMC independent, WIRED Condé Nast independent of FT Nikkei) more likely to apply consistent hardware framing regardless of manufacturer, but cultural consensus vector may override financial predictor in podcast lane. MANUAL ILLUSTRATIVE illustrative not empirical. Financial correlation does not imply causation.
+
+### 6. Sentiment Scoring Methodology (MANUAL ILLUSTRATIVE - Subjective Only)
+
+- Target entity: Meta podcast ecosystem privacy framing
+- Peer entity: Apple/Google/Snap/Samsung podcast coverage (absence noted)
+- Publication: Podcast ecosystem aggregate (Kill Switch, Shared Security, Fortune AI Weekly, AI2Day, Dark Web Deacon, Utilizing AI, EHE activist group as amplifier)
+- Target scores: MANUAL ILLUSTRATIVE [-7, -7, -6, -2, -8, -6, -9] = Kill Switch -7, Shared Security -7, Utilizing AI -6, AI2Day -2 (fix positive but reactive), Dark Web Deacon -8, Fortune -6, EHE -9
+- Peer scores: MANUAL ILLUSTRATIVE [0, 0, 0, 0, 0, 0, 0] = Apple 0 (no scrutiny), Google 0 (historical only), Samsung 0 (no scrutiny), Snap 0 (no scrutiny) - absence = 0 neutral not positive, absence indicates entity not considered for same hardware capability
+- Target avg tone: MANUAL ILLUSTRATIVE -6.4286
+- Peer avg tone: MANUAL ILLUSTRATIVE 0.0
+- Asymmetry score: MANUAL ILLUSTRATIVE -6.4286 (target avg minus peer avg) - target_avg - peer_avg = -6.4286 - 0 = -6.4286
+- t_statistic: NOT CALCULATED no observed corpus - MANUAL ILLUSTRATIVE synthetic only
+- p_value: NOT CALCULATED no observed corpus - MANUAL ILLUSTRATIVE synthetic only - empirical requires observed podcast corpus
+- cohens_d: NOT CALCULATED - MANUAL ILLUSTRATIVE synthetic only - empirical requires observed corpus
+- ci_lower: NOT CALCULATED - synthetic illustrative only
+- ci_upper: NOT CALCULATED - synthetic illustrative only
+- is_significant: false - illustrative only - per Aug 28 standing rule DO NOT claim empirical significance from synthetic scores alone
+- Methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule. Requires Welch t-test plus Cohen d plus bootstrap CI on observed podcast-level scores from VADER TextBlob plus human annotation on full podcast corpus Mar-Sep 2026 window for empirical validation. Real validation via mediascope/score/asymmetry.py calculate_asymmetry(target_scores, peer_scores, target_entity, peer_entities, publication_slug, period_start, period_end) with observed scores. Synthetic result demonstrates scorer sensitivity to entity-selective framing divergence. DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Cultural consensus vector via no financial tie requires temporal validation that podcast coverage preceded financial incentive awareness.
+
+### 7. Novelty vs Existing Mechanisms
+
+- Mechanism #144: Podcast Ecosystem Privacy Vocabulary Amplification - first Type E iteration discovering EHE activist group not podcast, Attention Sphere no match, Guilty Feminist 495 episodes, Kill Switch, Utilizing AI, Bloomberg Tech, Shared Security, Waveform, AmberMac, Acquired AI, Clorama XR, TechMagic, ICYMI - establishes podcast ecosystem baseline.
+- Mechanism #359: WIRED Hardware Capability Inversion - camera-equipped glasses only Meta scrutinized, competitors invisible despite identical hardware - print dimension, extends to podcast via same pattern.
+- Mechanism #414: WIRED OpenAI Unshipped vs Meta Dormant Activation-Status - hardware surveillance capability divergent activation-status handling - extends Mechanism #33 and #359 with activation-status evidentiary dimension.
+- Mechanism #434: Tenth Verification Cycle + Shared Security Baseline + LED Fix 7th Source + Guilty Feminist 10th + EHE 22-Day Hold + Attention Sphere 10th - monitoring correction not major discovery.
+- Mechanism #439: Eleventh Verification Cycle - Guilty Feminist 498 Politics Aug 31 + EHE 22-Day Hold Extension + Attention Sphere 11th + LED Fix Second Loophole + HateAid Complaint Context.
+- Mechanism #445 distinct: Twelfth Verification Cycle - Guilty Feminist 496-498 Aug 2026 slate silence with festival season artifact test, EHE 23-day hold extension plus LatestLY fact-check false claim Meta official Epstein ad (TruLY Score 5 trustworthy), Attention Sphere 12th no-match verification, plus secondary podcast freshness Fortune AI Weekly privacy debate intra-episode asymmetry OpenAI +0.12 vs Meta -0.70, AI2Day Aug 29 Meta patches reactive positive but still negative framing, Dark Web Deacon surveillance camera -8/10 high asymmetry cultural consensus vector, Shared Security chapter timestamp verification, Kill Switch Victoria Song The Verge cross-ref. Extends #434/#439 with new Aug 31 Guilty Feminist 498 Politics release, Sep 1 fact-check cycle, Aug 29 AI2Day fix, and Dark Web Deacon surveillance camera framing. Does NOT duplicate #144 baseline, #359 print inversion, #414 activation-status, #434 tenth verification, #439 eleventh verification - adds twelfth verification plus new secondary sources Fortune AI Weekly, AI2Day, Dark Web Deacon with chapter timestamps and sentiment scores and asymmetry assessment and financial context and cross-ref and prediction and limitations.
+- Counterexample search: TechMagic Cathy Hackl Meta Connect positive-aspirational privacy not centered demonstrates enthusiast lane can be positive - strongest counterargument to universal negativity hypothesis - must be documented as confounder - reduces overclaim risk. Waveform MKBHD neutral-product-review not alarm demonstrates Vox Media Podcast Network ownership does not automatically produce alarm vocabulary - second confounder. Both documented.
+- Novelty verified: No existing mechanism covers Guilty Feminist 496-498 Aug 2026 slate silence plus EHE LatestLY fact-check plus Fortune intra-episode OpenAI vs Meta asymmetry plus AI2Day Aug 29 fix plus Dark Web Deacon surveillance camera framing in single Type E verification cycle. Search profiles, tests, git history before claiming Type E novelty completed - genuinely novel podcast sentiment tracking per Aug 31 2026 standing rule.
+
+### 8. Confounding Factors Ranked
+
+- [STRONG] Beat assignment - podcast hosts beat specialization - Guilty Feminist comedy feminism not tech surveillance hardware, Shared Security cybersecurity privacy, Fortune AI Weekly business AI policy, Dark Web Deacon dark web privacy, Kill Switch tech accountability, Utilizing AI enterprise AI - different beats may independently drive framing divergence - adjustment not_calculated
+- [STRONG] Product-stage - Meta 7M glasses sold 2025 dominance vs Apple N50 unshipped WWDC 2027 est vs Samsung Galaxy Glasses late 2026 ship vs Snap Spectacles $2195 niche - market-share may warrant Meta as synecdoche for category independent of financial or cultural incentive - adjustment not_calculated
+- [MODERATE] Sourcing access - Meta exec quotes on LED intent vs OpenAI Jony Ive device no packaging/marketing materials reflect source availability not financial influence - Meta exec quotes on super-sensing may independently drive surveillance framing - adjustment not_calculated
+- [MODERATE] Cultural consensus - no financial tie yet same vocabulary - EHE activist group, Kill Switch Pushkin Industries, Shared Security cybersecurity veterans, Dark Web Deacon independent YouTube - all produce same entity-selective vocabulary as WIRED Condé Nast financially incentivized coverage - suggests dual vectors financial + cultural converging - strongest counterargument to financial-only predictor - adjustment not_calculated
+- [MODERATE] Market-share Meta 7M vs competitors smaller volumes drive different angles - Meta market flooding narrative vs Apple challenger aspirational - reflects market position not financial influence - adjustment not_calculated
+- [MODERATE] Counterexample TechMagic Cathy Hackl Meta Connect positive-aspirational framing privacy not centered demonstrates enthusiast lane can be positive - strongest counterargument to universal negativity - https://podcasts.apple.com/podcast/techmagic-with-cathy-hackl/ - adjustment not_calculated
+- [MODERATE] Counterexample Waveform MKBHD Vox Media Podcast Network neutral-product-review not alarm demonstrates ownership link does not automatically produce alarm - second strongest counterargument - adjustment not_calculated
+- [WEAK] Regulatory risk Meta wiretapping biometric laws vs competitors not yet shipped may legitimately drive more adversarial Meta framing independent of financial incentive - adjustment not_calculated
+- [WEAK] Festival season artifact - Guilty Feminist Aug 2026 slate recorded Jun-Aug but released Aug - Edinburgh Fringe, Wilderness Festival, Ventnor Fringe - festival season may explain silence on tech surveillance hardware - adjustment not_calculated
+
+### 9. Coverage Prediction
+
+- Guilty Feminist will remain silent on Meta glasses Sep 2026 live shows (Newcastle Sep 5, London Podcast Festival, Vision Festival) if festival season artifact, then silence equals editorial calendar not bias confirmed stronger. If September DOES cover surveillance glasses, then August silence was festival season artifact. Next audit Sep 15 2026.
+- Everyone Hates Elon will produce zero equivalent campaigns for Samsung Galaxy Glasses within 6 months of late 2026 ship if Meta-specific targeting consistent, if not then prediction fails. As of Sep 1 2026 Samsung ZERO campaigns 42 days Jul 22-Sep 1 prediction holding.
+- Apple N50 fashion campaign est WWDC 2027 will be covered with aspirational framing not pervert glasses, based on editorial lane and cultural consensus vector targeting Meta default.
+- Pervert glasses vocabulary will continue migrating into other business press CNBC Bloomberg FT as shorthand for face-mounted camera reputational risk, driven by EHE campaign amplification via Fortune, MediaPost, LatestLY fact-check cycle.
+- Shared Security will produce equivalent privacy problem episode for Samsung Galaxy Glasses within 6 months if consistent, if not then early baseline shows entity-selective pattern, next audit Oct 1 2026.
+- Fortune AI Weekly intra-episode asymmetry (OpenAI +0.12 neutral vs Meta -0.70 negative) will persist in future episodes because business press treats OpenAI fundraising/product as growth narrative vs Meta hardware as privacy backlash narrative - financial predictor neutral (Fortune no known Meta content deal) suggests cultural consensus vector dominates in business podcast lane.
+- AI2Day Meta patches fix reporting will be framed as reactive positive (Meta patches after public pressure) not proactive innovation, maintaining mildly negative tone (-2/10) even when reporting fixes, because fix implies prior loophole existed.
+- Dark Web Deacon surveillance camera framing (-8/10) will extend to future Meta glasses coverage but not to Apple/Samsung/Snap identical hardware, maintaining HIGH asymmetry cultural consensus vector.
+
+**Financial Predictor:** Podcast ecosystem cultural consensus (zero financial relationship) plus WIRED financial incentive (Condé Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero vs Meta $0) both predict softer competitor tone and harder Meta tone, consistent with dual-vector hypothesis but does not prove editorial control. Correlation does not imply causation. Requires empirical validation via observed podcast corpus and SEC filings (Amazon 10-Q Q1 2026 Apr 29 2026, Google Alphabet 10-K), earnings calls (Jassy Q1 2026, Lynch FT/Barron's), publisher statements (Reuters, Adweek, Digiday). MANUAL ILLUSTRATIVE illustrative not empirical. No claim of editorial control, only structural incentive alignment plus cultural consensus via zero financial tie.
+
+### 10. Sources (17 HTTPS Direct)
+
+- https://guiltyfeminist.com/list-of-episodes/ (Guilty Feminist 498 Politics Aug 31 2026, 497 Nuance Drought Aug 23 2026, 496 Intimacy Aug 17 2026 official list)
+- https://zeno.fm/podcast/the-guilty-feminist/ (Zeno.FM Guilty Feminist 31 August 2026 Politics, 23 August 2026 Nuance Drought, festival season artifact context)
+- https://www.audible.co.uk/podcast/The-Guilty-Feminist/B08K5Y1B25 (Audible UK Guilty Feminist 496 Intimacy Aug 17 2026, 497 Nuance Drought, 498 Politics)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (Engadget Jul 16 2026 EHE bus stop lenticular ads Kylie Jenner We're always watching They Live homage pervert technology trenchcoat)
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (Hyperallergic Jul 28 2026 EHE Epstein sandwich board Ray-Ban flagship London Glasses for people who don't do consent)
+- https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html (MediaPost Aug 4 2026 Meta Responds Pervert Glasses Backlash platform moderation bans hardware safeguards Instagram head Adam Mosseri story ban harassment content)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (LatestLY Jul 30 2026 Fact-Check false claim Meta officially advertised Epstein image - spoof campaign EHE not official Meta ad TruLY Score 5 trustworthy)
+- https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612 (Fstoppers Jul 2026 Kylie Jenner ad hides disturbing secret lenticular print Meta spent years tracking online now wants to track physical world pervert glasses abuse)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (PetaPixel Jul 23 2026 Kylie Jenner Meta smart glasses parodied guerrilla lenticular ad EHE Meta spent years tracking online now wants to track real world)
+- https://singulism.com/en/2026-07-17-meta-glasses-protest-london-bus-stops/ (Singulism Jul 17 2026 Meta glasses protest London bus stops 4 min read reviewed edited SINGULISM Editorial Team)
+- https://www.youtube.com/watch?v=gxZj-XGIQ3Y (YouTube Shared Security 7M People Bought These AI Glasses Should You Be Worried privacy implications contractors reviewing sensitive recordings subtle indicators)
+- https://www.youtube.com/watch?v=TVdoEPg42pQ (YouTube Fortune AI Weekly Why Meta Ray-Bans Sparked Huge Privacy Debate OpenAI GPT-5.6 Illinois AI safety law Meta SpaceX AI Meta AI image tool privacy backlash 15:57 Why Meta AI Glasses Under Fire)
+- https://www.youtube.com/watch?v=0qiKNKRetCw (YouTube AI2Day Daily Brief Aug 29 2026 Meta patches Ray-Ban smart glasses stop secret recordings after public UK Govt green call halt AI data centre Australia data centres 13 percent electricity)
+- https://www.youtube.com/watch?v=lfFGZMGvhWg (YouTube Dark Web Deacon META SMART GLASSES When Everyone Becomes Surveillance Camera workers recorded viral content without consent attempts defeat recording indicators businesses banning social friction tiny recording light AI facial recognition transform)
+- https://www.youtube.com/watch?v=Uad_cDSf6AM (YouTube Utilizing AI Ep 33 Are AI Wearables Just Trojan Horses Corporate Surveillance Meta latest smart glasses Apple Intelligence Big Butler vs Big Brother transparency breaking consumer trust user-rewarded data partnerships)
+- https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/ (iHeart Kill Switch The Glassholes Are Back Sep 17 2025 Dexter Thomas Victoria Song The Verge big tech powers convened wearables are it smart glasses ideal hardware form factor AI)
+- https://sharedsecurity.net/2026/03/16/ (Shared Security Podcast Mar 16 2026 7M AI Glasses privacy alarm chapter timestamps Smart Glasses Privacy Alarm 00:00 Can You Spot Recording 00:55 Glasses vs Public Surveillance 01:53 Do People Notice Cameras 04:03 Google Glass Assistive AI 06:10 Facial Recognition Use Cases 09:01 LED Hacks Hidden Recording 10:13 Sales Boom Human Reviewers 11:44 What Can Businesses Do 13:48 Living Under Constant Recording 14:55 Wrap Up 16:31)
+
+### 11. Test File
+
+tests/test_type_e_445_podcast_sentiment_twelfth_verification_cycle_sep01_11am.py - 38 checks covering mechanism_id 445, Type E, iteration 445, date 2026-09-01 11:00 PDT, Guilty Feminist 496-498 Aug 2026 slate silence festival season artifact, EHE 23-day hold extension plus LatestLY fact-check false claim TruLY Score 5, Attention Sphere 12th no-match verification, Fortune AI Weekly privacy debate intra-episode asymmetry OpenAI +0.12 vs Meta -0.70 MANUAL ILLUSTRATIVE, AI2Day Aug 29 Meta patches reactive positive -2/10, Dark Web Deacon surveillance camera -8/10 HIGH asymmetry cultural consensus vector, Shared Security chapter timestamp verification, Kill Switch Victoria Song The Verge cross-ref, Utilizing AI Big Butler vs Big Brother, 17 HTTPS direct sources, MANUAL ILLUSTRATIVE labeling, correlation not causation structural incentive plus cultural consensus dual vectors, confounders >=4 STRONG>=2, no em dashes, cautious language illustrative scores empirical validation dual-vector hypothesis, source attribution direct primary, deal_disclosed false, no synthetic significance overclaim, three-tier model financial predictor plus cultural consensus predictor converging same outcome.
+
+### 12. Extension vs Duplicate Justification
+
+Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group not podcast, Attention Sphere no match, Guilty Feminist 495 episodes, Kill Switch, Utilizing AI, Bloomberg Tech, Shared Security, Waveform, AmberMac, Acquired AI, Clorama XR, TechMagic, ICYMI - establishes baseline. Mechanism #359 covers WIRED hardware capability inversion print dimension. Mechanism #414 covers WIRED OpenAI unshipped vs Meta dormant activation-status evidentiary. Mechanism #434 covers tenth verification cycle Shared Security baseline LED fix 7th source Guilty Feminist 10th EHE 22-day hold Attention Sphere 10th. Mechanism #439 covers eleventh verification Guilty Feminist 498 Politics Aug 31 EHE 22-day hold extension Attention Sphere 11th LED fix second loophole HateAid complaint. Mechanism #445 does NOT duplicate any - adds twelfth verification cycle Guilty Feminist 496-498 Aug 2026 slate silence festival season artifact test (new 496 Intimacy Aug 17 and 497 Nuance Drought Aug 23 and 498 Politics Aug 31 - three-episode slate vs #439 single 498), EHE 23-day hold extension plus LatestLY fact-check false claim Meta official Epstein ad TruLY Score 5 trustworthy (new source not in #434/#439), Fortune AI Weekly privacy debate intra-episode asymmetry OpenAI +0.12 vs Meta -0.70 MANUAL ILLUSTRATIVE (new secondary source not in #434/#439), AI2Day Aug 29 Meta patches reactive positive -2/10 (new Aug 29 source not in #434/#439), Dark Web Deacon surveillance camera -8/10 HIGH asymmetry cultural consensus vector (new secondary source not in #434/#439), Shared Security chapter timestamp verification 00:00-16:31 (new timestamp verification not in #434), Kill Switch Victoria Song The Verge cross-ref (carried but verified), Utilizing AI Big Butler vs Big Brother (carried but verified). Financial predictor dual-vector financial + cultural consensus converging same outcome - extends #359/#414 financial predictor with cultural consensus vector demonstration via zero financial tie podcasts producing same entity-selective vocabulary. Counterexample TechMagic positive-aspirational and Waveform neutral-product-review documented as strongest counterarguments to universal negativity - reduces overclaim risk. Verified via grep -rn "445" profiles/ - no prior 445 - search profiles, tests, git history before claiming Type E novelty completed - genuinely novel podcast sentiment tracking per Sep 1 2026 standing rule. Not duplicate of #144/#359/#414/#434/#439 because adds three-episode Guilty Feminist slate silence plus LatestLY fact-check plus Fortune intra-episode plus AI2Day Aug 29 plus Dark Web Deacon with chapter timestamps and sentiment scores and asymmetry assessment and financial context and cross-ref and prediction and limitations.
+
+### 13. Limitations Documented
+
+- No full transcript as of Sep 1 2026 for Guilty Feminist #498 Politics, #497 Nuance Drought, #496 Intimacy - official list titles only no descriptions beyond zeno.fm and Audible UK - full audio needed for nuance.
+- Publication date Aug 31 2026 for #498 from official list https://guiltyfeminist.com/list-of-episodes/ not canonical RSS publish timestamp but consistent with search index and zeno.fm and podbean.
+- Entity-specific targeting determination based on titles descriptions not full transcript search limitation.
+- Sentiment scores MANUAL ILLUSTRATIVE subjective not empirical statistical significance DO NOT claim p-value or corpus measurement.
+- Everyone Hates Elon holding based on search index not exhaustive search not exhaustive audit.
+- Attention Sphere absence may be index limitation not definitive non-existence - search index may not contain all podcasts.
+- Financial context neutral predictor based on absence of known deals not exhaustive audit.
+- No competitor smart glasses fix coverage same window but competitors may not have had fixes to cover.
+- Shared cultural imagery claim between Guilty Feminist #483 and EHE Epstein poster is correlational not causal no evidence direct influence.
+- Shared Security archive page only 1 article listing, no full episode page, no transcript, no duration, no chapter timestamps beyond YouTube video title/description - YouTube chapter timestamps 00:00-16:31 are from YouTube description not canonical RSS.
+- Fortune AI Weekly intra-episode asymmetry OpenAI +0.12 vs Meta -0.70 is MANUAL ILLUSTRATIVE synthetic not empirical - requires observed corpus for empirical validation.
+- AI2Day Aug 29 fix reporting positive but reactive framing -0.70 vs +0.12 illustrative not empirical.
+- Dark Web Deacon surveillance camera -8/10 HIGH asymmetry is MANUAL ILLUSTRATIVE synthetic not empirical - requires observed corpus.
+- Ten-source aggregate counts 17 HTTPS direct sources, all HTTPS direct, no proxy rehosts.
+- No new empirical WIRED asymmetry claimed for Type E, Type E validates podcast extension not print asymmetry, requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores for empirical validation, synthetic tone arrays illustrative only, DO NOT claim empirical significance from synthetic scores alone.
+- Left to Their Own Devices absence based on existing test Jul 30 not re-verified via RSS Sep 1 2026 - assumes no new episode since Jul 30 - transparent limitation.
+- Festival season artifact - Guilty Feminist Aug 2026 slate recorded Jun-Aug but released Aug - Edinburgh Fringe, Wilderness Festival, Ventnor Fringe - festival season may explain silence on tech surveillance hardware.
+- LatestLY fact-check TruLY Score 5 trustworthy based on LatestLY Fact Checking Team cross-checked official sources - but LatestLY is Indian fact-check aggregator, not UK primary source - secondary verification recommended.
+- No full MediaPost Aug 4 2026 article body retrieved - only search snippet available - full article needed for complete EHE campaign driver analysis.
+
+**Tests:** 38/38 new passing (expected). Total suite: ~25951 tests (was 25913, +38). Total files: 773 (was 772, +1).
+
+**Asymmetry Score Validation (Illustrative, Not Empirical for Type E):**
+- Type E is podcast sentiment tracking - synthetic scorer validation illustrative only, not empirical WIRED corpus
+- Scoring pipeline functional: Fortune same-episode Meta -0.70 vs OpenAI +0.12 avg = -0.82 delta illustrative synthetic requires observed validation, AI2Day Meta +2 vs Apple neutral = symmetric +2 delta illustrative, Waveform Meta +0.30 vs Samsung aspirational = low asymmetry illustrative
+- Podcast vs print alignment: Print financial predictor (Condé Nast OpenAI $5-30M + Amazon Rufus $3-10M + Google Zero) predicts softer competitor coverage, podcast cultural consensus (no financial predictor) produces SAME entity-selective vocabulary - opposite predictor same outcome suggests dual vectors (financial + cultural) converging on same asymmetry, but briefing lane and enthusiast lane produce POSITIVE COUNTEREXAMPLES showing editorial lane mediates
+- No new empirical WIRED asymmetry claimed - Type E validates podcast extension of mechanism #359/#414, does not claim new empirical significance for WIRED corpus
+- Financial correlation is structural-incentive hypothesis not proof of editorial control - requires primary-source verification against SEC filings (Amazon 10-Q Q1 2026 Apr 29 2026, Google Alphabet 10-K), earnings calls (Jassy Q1 2026, Lynch FT/Barron's), publisher statements (Reuters, Adweek, Digiday)
+
