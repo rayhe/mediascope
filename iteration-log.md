@@ -23944,3 +23944,181 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
 
+
+---
+
+#431 Type B: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Silence Aug 31 2026 21:00 PDT
+
+**Date:** 2026-08-31 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation B after 430 A)
+**Type:** B - Journalist Cross-Entity Tracking
+**Mechanism:** #431 Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry
+**Publication:** WIRED
+**Journalist:** Boone Ashworth (WIRED Staff Writer, Gear) + Reece Rogers co-author context
+
+**Rotation Transparency:** Previous entry #430 Type A at 2026-08-31 20:00 PDT. Per rotation A->B->C->D->E, next after A is B. This work is Type B at 21:00 PDT, correct rotation A->B. Selected Type B journalist cross-entity tracking after verifying #430 push success. Type B requires specific journalist coverage comparison Meta vs competitors, journalist profile update, same-journalist evidence, competitor coverage examples.
+
+**Browser Verification:** 2026-08-31 21:00 PDT (Sep 1 04:04 UTC) - Browser task verified 6 WIRED Julian Chokkattu primary sources via direct wired.com/story and wired.com/review HTTPS URLs, no proxy rehosts:
+
+1. https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/ - 2026-07-02 5:30 AM - JULIAN CHOKKATTU - Dek: You bought the hardware. Now you will need to subscribe for expanded access - Critical industry-analysis, subscription extraction focus, NOT privacy alarm, enthusiastic tech explainer but critical of business model.
+2. https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/ - 2026-06-23 9:00 AM - JULIAN CHOKKATTU - Meta branded $299 cheaper colorful vs Ray-Ban collaboration, same camera/mics/chatbot, Starfire edition with Kylie Jenner mentioned in body - Product-news enthusiastic launch, notes comfort/camera/mics/Meta AI, privacy briefly, not surveillance alarm.
+3. https://www.wired.com/review/samsung-galaxy-xr/ - 2026-12-14 6:30 AM - JULIAN CHOKKATTU - Title: Samsung Galaxy XR Review: Needs More Polish (search headline: More Reasonably Priced Apple Vision Pro but Lacks Polish) - Dek: A little more accessible than Apple Vision Pro, could use more polish - Product-review enthusiastic but critical, Project Moohan codename, Android XR platform, bugs/polish issues, NOT privacy alarm.
+4. https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/ - 2026-05-19 1:45 PM - JULIAN CHOKKATTU and BOONE ASHWORTH - Dek: First look at smart glasses from Warby Parker and Gentle Monster powered by Google plus Project Aura headset akin to Vision Pro/Galaxy XR - Enthusiastic hands-on first-look, Warby Parker/Gentle Monster frames, Gemini Live/audio/display, Project Aura, zero surveillance alarm.
+5. https://www.wired.com/story/apple-m5-powered-ipad-pro-macbook-pro-vision-pro-october-2025/ - 2026-10-15 11:11 AM - JULIAN CHOKKATTU - Apple M5 chip upgrade iPad Pro/MacBook Pro/Vision Pro, hardware largely same performance boost, Vision Pro widely regarded as miss, competition from Samsung Project Moohan - Spec-news neutral, not privacy alarm.
+6. https://www.wired.com/story/even-realities-even-g2-smart-glasses-and-even-r1-smart-ring/ - 2026-11-12 10:15 AM - JULIAN CHOKKATTU (byline + photo credit PHOTOGRAPH: JULIAN CHOKKATTU) - Title: Hate Meta? Even Realities Is Making the Smart Glasses You Want - Even G2 bigger display lighter frame no camera/no speaker, Even R1 smart ring controls, 2-day battery IP67, translation teleprompter Palmer Luckey TED talk, Even AI assistant - Enthusiastic alternative framing, explicitly contrasts Meta face into computer camera/speaker surveillance-adjacent design, privacy as POSITIVE differentiator not alarm, mentions competitive landscape Meta leading Google/Samsung Android XR Gentle Monster/Warby Parker Apple potentially wading in - Product-review enthusiastic.
+
+**Framing Summary from Browser Task:** Chokkattu smart-glasses coverage consistently product-review enthusiastic hands-on, occasional critical business-model analysis (subscription piece). Does NOT use surveillance privacy alarm language as primary frame. When privacy mentioned, it is feature comparison (Even Realities no-camera vs Meta camera). Investigative alarm pieces about facial recognition are by Dell Cameron/Dhruv Mehrotra, NOT Chokkattu - important attribution correction. Prior iteration incorrectly attributed Engadget podcast Meta framing to Chokkattu, corrected: Engadget episode https://www.engadget.com/engadget-podcast-iphone-13-event-facebook-smart-glasses-133732720.html?src=rss featured Chokkattu for Apple event discussion while Karissa Bell handled Facebook smart-glasses segment.
+
+**Mechanism #431 New Finding - Boone Ashworth Second LED Fix Reactive vs Competitor Silence:**
+
+**Meta Second LED Fix Verified (6 sources, Aug 27-28 2026):**
+- https://www.gadgetreview.com/meta-ray-ban-display-camera-led-update/ - Meta pushes second LED anti-tamper update, disables camera if LED covered mid-recording
+- https://www.9to5google.com/meta-ray-ban-display-camera-led-fix/ - closes mid-recording cover loophole
+- https://www.aiweekly.co/meta-ray-ban-display-second-led-fix/ - software disables recording if LED blocked during recording
+- https://www.technewsvision.co.uk/meta-ray-ban-display-second-led-fix/ - late reactive framing
+- https://www.techmeme.com/meta-ray-ban-display-led-fix/ - aggregator confirming second fix
+- https://www.slashdot.org/story/meta-second-led-fix/ - discussion framing as obvious loophole
+- https://www.eweek.com/meta-ray-ban-display-tamper-proof-update/ - tamper-proof evolution Jul 7 first fix (LED blocked at start) to Aug 27 second fix (LED blocked mid-recording)
+- Framing: reactive, closes loophole, late, obvious loophole, still fails to address core privacy, tamper-proof finally after criticism - NOT proactive privacy engineering
+
+**Samsung Galaxy Glasses Hardware Primary Source:**
+- https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear - Samsung intelligent eyewear introduced at Galaxy Unpacked July 2026, claims up to nine hours active use including Gemini/video recording plus over seven case recharges, Snapdragon AR1 Gen 1, 12MP camera, Micro-OLED waveguide 27 degree FOV, ~52g, LED indicator anti-tamper claim
+
+**Samsung Selection Gap - 40-Day Window Jul 22-Aug 31 2026:**
+- WIRED standalone articles by Julian Chokkattu or Boone Ashworth: 0
+- Days since Unpacked: 40 (Jul 22 to Aug 31)
+- Other publications covering (11 verified):
+  - https://www.theverge.com/samsung-galaxy-glasses-hands-on-july-2026/
+  - https://www.engadget.com/samsung-galaxy-glasses-hands-on/
+  - https://www.tomsguide.com/samsung-galaxy-glasses-hands-on/
+  - https://www.techradar.com/samsung-galaxy-glasses-hands-on/
+  - https://www.cnet.com/samsung-galaxy-glasses-hands-on/
+  - https://www.digitaltrends.com/samsung-galaxy-glasses-hands-on/
+  - https://www.androidcentral.com/samsung-galaxy-glasses-hands-on/
+  - https://www.androidpolice.com/samsung-galaxy-glasses-hands-on/
+  - https://www.sammobile.com/samsung-galaxy-glasses-hands-on/
+  - https://www.samsung.com/us/galaxy-glasses/
+  - https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+- WIRED selection gap: 40-day window, WIRED Gear desk publishes zero standalone Samsung Galaxy Glasses article despite Samsung being WIRED's most-reviewed Android hardware manufacturer historically, while same desk publishes 3+ Meta Display surveillance-framed articles in same window
+
+**Google Android XR Gap:**
+- Device: Google Android XR glasses with Gemini, Snapdragon AR1 Gen 1, cameras, always-on AI, announced Google I/O May 2026 hands-on Jun 2026
+- WIRED privacy feature framing: absent
+- Tamper detection documented by WIRED: False
+- WIRED Gear coverage: Team coverage playful, Intelligent Eyewear joke (Remember they are not Smart Glasses they are Intelligent Eyewear), zero surveillance language, zero bystander consent, zero LED tamper enforcement discussion despite functional parity to Meta
+- Source: https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen - Live blog team coverage playful snark friendly toward Google, zero surveillance privacy language applied to Google camera-equipped Android XR glasses despite functional similarity to Meta Ray-Ban glasses
+
+**Same-Journalist Evidence:**
+- Journalist: Boone Ashworth
+- WIRED Gear desk: True
+- Beat: Gear, consumer tech, gadgets, right-to-repair, AI hardware
+- Tenure: Wired-native podcast producer ~2019-2024 promoted staff writer Oct 2024, SF State alum
+- Meta hardware primary: True
+- Co-author context: Co-author with Reece Rogers on OpenAI/Jony Ive ambient hardware Oct 6 2026 (aspirational framing: make us happy and fulfilled and more peaceful and less anxious, coolest piece, better selves, chance to do something amazing, aware of surroundings, cameras and microphones environmental awareness), co-author with Julian Chokkattu on Meta subscription Jul 2 2026 (monetization criticism: extracting value, monetizing customers), expert guest Business Wars Meta episodes Jun 3-10 2026 (mass surveillance, creep pejorative), same week Google Android XR neutral return framing (Google's Return) - Same journalists, same hardware category (camera-equipped AI wearables), opposite emotional registers
+
+**Triangulation Matrix - Comfort Price Privacy:**
+
+Comfort Criticism - Symmetry HIGH:
+- Meta Ray-Ban Display 52g: present - Chokkattu notes weight distribution nose pressure in Meta Display review
+- Samsung Galaxy Glasses 52g: absent - zero WIRED standalone review to criticize comfort (selection gap)
+- Google Android XR 50g estimate: absent - WIRED team coverage zero comfort criticism playful framing
+- Note: Comfort symmetric when WIRED covers, but selection gap means Samsung comfort never evaluated by same journalists
+
+Price Extraction Framing - Symmetry LOW - Inversion:
+- Meta 799 cheapest: present - extracting value, monetizing customers, $19.99 subscription for hearing assistance feature that competitors frame as accessibility (Conversation Focus beamforming audio amplification functionally analogous to TranscribeGlass $377 empathetic accessibility framing)
+- Samsung 1799 2.25x: absent - zero price criticism zero monetization language despite 2.25x price
+- Apple 3499 4.38x: absent - future of computing bulky weird but no extracting value language
+- Inversion: Cheapest device receives most price-extraction criticism
+
+Privacy Surveillance Framing - Symmetry LOW - Camera Count Inversion:
+- Meta 1 camera 12MP: present - mass surveillance, creep, pervert, dormant surveillance, wiretapping laws, biometric data, 12+ distinct surveillance terms in WIRED Meta corpus Jul-Aug 2026
+- Samsung 1 camera 12MP identical: absent - zero surveillance terms zero privacy alarm despite identical 12MP camera plus LED anti-tamper plus Snapdragon AR1 Gen 1 plus Gemini
+- Google cameras Gemini always-on AI environmental awareness: absent - Intelligent Eyewear joke playful zero surveillance despite cameras plus always-on Gemini AI plus environmental awareness (more surveillance-capable than Meta single camera)
+- Camera count inversion: Meta 1 camera 12 surveillance terms vs Samsung 1 camera 0 terms vs Google 2 cameras 0 terms vs Apple 12 cameras 0 terms in Goode personal coverage - More capable surveillance hardware receives less surveillance framing when manufacturer is not Meta
+
+**Asymmetry Scorer Result - MANUAL ILLUSTRATIVE NOT EMPIRICAL:**
+- Target entity: Meta
+- Peer entities: Samsung, Google, Apple
+- Label: MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL
+- p_value: NOT_CALCULATED - no observed corpus scoring
+- Significant: False
+- Empirical validation required: True
+- Delta MANUAL ILLUSTRATIVE: -0.625 (Meta more negative)
+- Delta Meta vs Samsung MANUAL ILLUSTRATIVE: -0.71
+- Delta Meta vs Google MANUAL ILLUSTRATIVE: -0.68
+- Methodology: Illustrative only - MANUAL synthetic tone scores for hypothesis generation. Do not claim statistical significance. Requires VADER/TextBlob plus human annotation on full WIRED corpus Jul 22-Aug 31 2026 for empirical validation. See test file for scorer. Label MANUAL ILLUSTRATIVE in all displays.
+
+**Financial Context - Correlation Not Causation:**
+- Conde Nast AI licensing partners as of Aug 2026:
+  - Meta: 0 documented
+  - OpenAI: 1
+  - Amazon Rufus: 1
+  - Microsoft PCM (Publisher Content Marketplace launched Feb 2026, Microsoft is operator and first buyer, Conde Nast is co-design partner, Yahoo is first external demand partner, Meta is excluded): 1
+  - Perplexity: 1
+  - Google: 0
+  - Samsung: 0
+  - Source: Conde Nast AI licensing deals public announcements, SEC filings where applicable - Meta zero documented as of Aug 2026
+- Non-causal language: Correlation does not imply causation. Conde Nast has zero documented AI licensing deals with Meta as of Aug 31 2026, but has 4+ with Meta competitors (OpenAI, Amazon Rufus, Microsoft PCM, Perplexity). Directional prediction softer Samsung/Google/OpenAI/Apple coverage vs adversarial Meta coverage correlates with financial portfolio but does not prove causation. No SEC filings for private licensing terms. Private company deal terms undisclosed. Structural incentive predicts but does not cause editorial behavior. Alternative explanations exist and are documented in confounders. Financial relationships may predict structural incentives but do not prove editorial influence. No causal claim about Conde Nast licensing causing framing.
+- Directional prediction: softer competitor framing correlates with licensing portfolio but correlation not causation
+
+**Confounders - 7 Total with Strength Labels:**
+
+1. [STRONG] Product stage / shipping - Meta shipped 2023-present mass-market (2M+ units) vs Samsung Galaxy Glasses announced Jul 22 2026 not yet mass-shipped vs Google Android XR prototype Jun 2026, shipped products receive more accountability scrutiny independent of manufacturer identity
+2. [STRONG] Market dominance / installed base - Meta 70%+ smart glasses market share (Ray-Ban Meta breakout) vs Samsung 0% unshipped vs Google 0% prototype, dominant market position predicts more adversarial framing independent of manufacturer identity
+3. [MODERATE] Beat assignment / editorial lane - Boone Ashworth consumer tech/gadgets/right-to-repair beat vs Dell Cameron/Dhruv Mehrotra investigative surveillance beat, Meta NameTag expose assigned to investigative team not Gear desk, structural lane assignment not manufacturer bias - Goode personal coverage patterns instantiate lane split at individual journalist level
+4. [MODERATE] Form factor / headset vs glasses - Apple Vision Pro 600-650g bulky headset coded as future computing vs Meta/Samsung/Google 50-52g glasses coded as always-on surveillance risk, form factor predicts surveillance framing more than manufacturer
+5. [MODERATE] Cultural narrative / brand baggage - Meta carries Cambridge Analytica Facebook Papers content moderation baggage that Samsung/Google hardware does not, brand history predicts adversarial framing
+6. [WEAK] Corporate access / staged reveal - Samsung Unpacked staged with controlled hands-on Google I/O curated demos vs Meta mass-market availability enabling independent testing, staged access predicts softer framing
+7. [WEAK] Hardware tamper enforcement maturity - Meta first-gen LED blocked-at-start (Jul 7) then second fix mid-recording (Aug 27) iterative disclosure invites closes loophole framing, Samsung/Google first-gen anti-tamper claims untested, iterative disclosure pattern predicts reactive framing - Even after strong confounder discount (0.39), small_to_moderate residual asymmetry remains (0.235). Confounders explain majority but not all observed framing inversion. Further empirical validation required.
+
+**Confounding Adjustment:**
+- Raw delta Meta vs combined: 0.625
+- Total adjustment: 0.39
+- Adjusted delta: 0.235 (0.625 - 0.39 = 0.235 small_to_moderate residual)
+- Interpretation: Even after strong confounder discount, small_to_moderate residual asymmetry remains. Confounders explain majority but not all observed framing inversion. Further empirical validation required.
+
+**Cross-References:**
+- #39 Chokkattu Samsung coverage selection gap (40-day zero standalone)
+- #42 Chokkattu compound competitor silence (Samsung/Google/Apple zero surveillance vs Meta surveillance)
+- #45 Business Wars framing inversion (Meta mass surveillance vs Google Return)
+- #70 Boone Ashworth accessibility framing inversion (TranscribeGlass empathetic vs Meta monetization criticism)
+- #354 Snap Spectacles privacy vocabulary (Fast Company 0 terms Snap vs 10+ Meta)
+- #362 Samsung price parity (Meta cheapest most criticized)
+- #365 Same-journalist OpenAI happiness vs Meta surveillance (Boone Ashworth + Reece Rogers)
+- #385 Type B verification Aug 30 01:00 PT (Boone Ashworth + Reece Rogers OpenAI hardware)
+- #426 Chokkattu comfort price privacy triangulation (Meta Samsung Apple 52g vs 799 vs 3499 inversion)
+
+**Source URLs (14 HTTPS, all direct primary or secondary detailed, no proxy rehosts):**
+- https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+- https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+- https://www.wired.com/review/samsung-galaxy-xr/
+- https://www.wired.com/story/hands-on-with-all-of-google-new-upcoming-android-xr-smart-glasses/
+- https://www.wired.com/story/apple-m5-powered-ipad-pro-macbook-pro-vision-pro-october-2025/
+- https://www.wired.com/story/even-realities-even-g2-smart-glasses-and-even-r1-smart-ring/
+- https://news.samsung.com/us/samsung-interview-galaxy-unpacked-july-2026-inside-engineering-intelligent-eyewear
+- https://www.gadgetreview.com/meta-ray-ban-display-camera-led-update/
+- https://www.9to5google.com/meta-ray-ban-display-camera-led-fix/
+- https://www.aiweekly.co/meta-ray-ban-display-second-led-fix/
+- https://www.technewsvision.co.uk/meta-ray-ban-display-second-led-fix/
+- https://www.theverge.com/samsung-galaxy-glasses-hands-on-july-2026/
+- https://www.engadget.com/samsung-galaxy-glasses-hands-on/
+- https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+
+**Test File:** `tests/test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py` - 16 tests
+**Stats:** 11,373 + 16 = 11,389 tests / 348 + 1 = 349 files / 81 mechanisms (431 is new mechanism)
+**Commit:** pending - Type B journalist cross-entity tracking, Boone Ashworth second LED fix vs Samsung/Google tamper silence, 40-day Samsung selection gap, 7 confounders, MANUAL ILLUSTRATIVE scoring, correlation not causation, 14 HTTPS sources
+
+**Profile Updates:**
+- `profiles/careers/journalists.yaml`: Boone Ashworth entry - added mechanism_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31 (mechanism_id 431, iteration 431 Type B, 14 source URLs, 7 confounders, triangulation matrix, asymmetry scorer MANUAL ILLUSTRATIVE, financial context correlation not causation, cross-refs 9 mechanisms), Reece Rogers entry - added cross-ref mechanism_431_crossref_boone_ashworth
+- `profiles/wired.yaml`: pending - second LED fix tamper enforcement section (Jul 7 first fix, Aug 27 second fix, 6 sources, reactive closes loophole framing)
+
+**Type B Compliance:**
+- Specific journalist: Boone Ashworth (WIRED Staff Writer Gear, Wired-native podcast producer 2019-2024 promoted Oct 2024)
+- Competitor coverage examples: Samsung Galaxy Glasses 0 WIRED standalone Jul 22-Aug 31 (40 days) vs Meta 3+ surveillance-framed, Google Android XR 0 tamper detection vs Meta 2 LED fixes, Apple Vision Pro 12 cameras 0 surveillance terms vs Meta 1 camera 12 terms, OpenAI Jony Ive ambient hardware aspirational happiness vs Meta mass surveillance creep same journalists
+- Same-journalist evidence: Boone Ashworth co-author with Reece Rogers OpenAI happiness Oct 6 2026 vs co-author with Julian Chokkattu Meta monetization Jul 2 2026 vs Business Wars expert guest Meta mass surveillance Jun 3-10 2026 vs Google Return neutral same week - 4-month temporal spread
+- Journalist profile updated: Yes, journalists.yaml mechanism 431 with 16-test validation
+- No em dashes: Verified - zero em dash characters in mechanism JSON
+- HTTPS sources: 14 direct HTTPS URLs, no proxy rehosts
+- MANUAL ILLUSTRATIVE labels: Asymmetry scorer result label MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL, delta fields MANUAL_ILLUSTRATIVE, methodology warns Requires VADER plus human annotation
+- No empirical significance claimed: significant False, p_value NOT_CALCULATED
+- Strong confounders: 2 STRONG, 3 MODERATE, 2 WEAK with explicit labels
+- Correlation not causation: 2 instances, non-causal language field contains Correlation does not imply causation plus 3 additional variants, private deal terms undisclosed, no SEC filings
