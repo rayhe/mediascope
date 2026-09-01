@@ -1132,6 +1132,166 @@ competitor_relationships:
         deal_disclosed_in_ft_coverage: false
         non_causal_language: Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence.
         editorial_independence_note: FT editorial standards require source verification and balance. No evidence of direct directive linking licensing to coverage tone was reviewed. Financial incentives are correlational, not causal proof.
+  anthropic:
+    financial_tie: none_direct_indirect_via_google
+    estimated_value: $0 direct FT to Anthropic, indirect via FT Google commercial partnership single figure millions GBP/yr plus Google up to $40B investment in Anthropic and Amazon up to $25B
+    cash_terms_disclosed: false
+    direction: none
+    description: 'FT has no direct content licensing deal with Anthropic unlike OpenAI $5-10M/yr. However FT has commercial partnership with Google News AI pilot single figure millions GBP/yr per Press Gazette Aug 3 2026. Google is Anthropic largest strategic investor planning up to $40B per Bloomberg News Apr 24 2026 $10B immediate at $350B valuation plus $30B contingent and prior $3B+ 14 percent stake per MarketWatch. Amazon also investing up to $25B per Reuters Apr 24 2026. Google partnership creates indirect financial channel FT receives revenue from Google who invests heavily in Anthropic while Meta provides $0. Financial incentive predicts softer Anthropic fundraising coverage aspirational vs Meta capital raise desperation. Does not prove editorial causation.'
+    coverage_prediction: softer via Google channel
+    source_url: https://www.reuters.com/technology/anthropic-weighs-fundraising-near-1-trillion-valuation-ft-reports-2026-05-08/
+    source_urls:
+    - https://www.reuters.com/technology/anthropic-weighs-fundraising-near-1-trillion-valuation-ft-reports-2026-05-08/
+    - https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/
+    - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+    verification_date: '2026-09-01'
+    iteration_441_sep01_2026_ft_anthropic_fundraising_vs_meta_equity_raise_framing_asymmetry:
+      date: '2026-09-01'
+      mechanism: 441
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: Financial Times
+      competitor_pair: Anthropic vs Meta
+      iteration: 441
+      iteration_type: A
+      iteration_time: '2026-09-01 07:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      financial_relationship:
+        anthropic_direct: $0 FT Anthropic direct licensing zero
+        ft_google_partnership: Single figure millions GBP/yr commercial partnership News AI pilot Feb 2026 Press Gazette Aug 3 2026
+        google_anthropic_investment: Up to $40B Google planned investment in Anthropic $10B immediate at $350B valuation plus $30B contingent Bloomberg News Apr 24 2026 via Reuters plus prior $3B+ 14 percent stake
+        amazon_anthropic_investment: Up to $25B Amazon investment in Anthropic per Reuters Apr 24 2026 immediate $5B plus $20B contingent
+        combined_indirect: FT receives revenue from Google who funds Anthropic vs Meta $0
+        meta_estimated_value: $0
+        deal_disclosed_in_ft_coverage: false
+        non_causal_language: Correlation does not establish causation. Financial relationship is structural incentive predictor not proof of editorial control. Does not prove editorial influence. Indirect channel via Google investment.
+        editorial_independence_note: FT editorial standards require source verification and balance. No evidence of direct directive linking commercial partnership to Anthropic coverage tone was reviewed. Financial incentives are correlational not causal proof.
+      ft_anthropic_sources_sep01_2026:
+        - title: Anthropic weighs fundraising for near $1 trillion valuation FT reports
+          date: '2026-05-08'
+          url: https://www.reuters.com/technology/anthropic-weighs-fundraising-near-1-trillion-valuation-ft-reports-2026-05-08/
+          original_ft_attribution: Financial Times May 7 2026 via Reuters citing FT
+          framing: aspirational_growth_fundraising_ahead_of_OpenAI
+          tone_manual_illustrative: 0.22
+          language:
+            - weighing raising tens of billions dollars this summer to fund major expansion computing capacity
+            - could lift valuation to nearly $1 trillion
+            - put it ahead of rival OpenAI
+            - aggressive expansion
+            - major expansion
+          deal_disclosed: false
+        - title: Anthropic raises $65 billion now valued at $965 billion
+          date: '2026-05-29'
+          url: https://www.pymnts.com/news/ipo/2026/anthropic-sets-stage-for-trillion-dollar-stock-market-listing/
+          original_ft_attribution: Financial Times May 29 2026 via PYMNTS citing FT race to go public Anthropic OpenAI SpaceX three largest listings ever
+          framing: constructive_growth_milestone_market_leader
+          tone_manual_illustrative: 0.18
+          language:
+            - becomes worlds most valuable AI startup
+            - raised $65 billion Series H
+            - $965 billion post-money valuation
+            - soaring value enterprise adoption
+            - exponential growth demand
+          deal_disclosed: false
+        - title: Anthropic plans IPO as early as 2026 FT reports
+          date: '2025-12-03'
+          url: https://www.reuters.com/business/retail-consumer/anthropic-plans-an-ipo-early-2026-ft-reports-2025-12-03/?utm_source=www.joinaiinsights.com&utm_medium=newsletter&utm_campaign=anthropic-eyes-300b-plus-mega-ipo-in-2026&_bhlid=f1462a5b4d0f0698e4f0c7cf987de8bb7d09f713
+          framing: constructive_enterprise_growth_ipo_readiness
+          tone_manual_illustrative: 0.15
+          language:
+            - hired Wilson Sonsini prepare potential IPO as early as 2026
+            - more efficient way raise capital provide leverage bigger acquisitions
+            - AI adoption gains pace driven higher enterprise tech spending growing investor appetite
+          deal_disclosed: false
+      ft_meta_sources_sep01_2026:
+        - title: Meta weighs big equity raising to finance AI infrastructure FT reports
+          date: '2026-06-05'
+          url: https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+          framing: desperation_capital_raise
+          tone_manual_illustrative: -0.55
+          language:
+            - weighs big equity raising
+            - finance AI infrastructure
+            - creative ways to raise cash
+            - seeks new sources capital
+            - stock dropped 6.6 percent on report
+          deal_disclosed: false
+        - title: Meta testing AI glasses that continuously record audio and take photos every few seconds
+          date: '2026-07-08'
+          url: https://www.techmeme.com/260708/p2
+          framing: adversarial_surveillance
+          tone_manual_illustrative: -0.62
+          language:
+            - continuously collect audio
+            - taking photos every few seconds
+            - Meta executives do not want to activate LED when super-sensing features turned on
+            - metadata extracted uploaded server for Meta AI query
+            - civil liberty and privacy risks
+            - violate data privacy or biometric data laws
+            - liable potential violations wiretapping laws
+          surveillance_terms: 7
+          deal_disclosed: false
+        - title: Meta Is Flooding Market With Smartglasses Privacy Advocates Are Up in Arms
+          date: '2026-08-26'
+          url: https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+          original_ft_attribution: Financial Times previously reported some details new Meta glasses feature per WSJ Aug 26 2026
+          framing: surveillance_threat_market_flooding
+          tone_manual_illustrative: -0.58
+          language:
+            - flooding market with smartglasses
+            - privacy advocates up in arms
+            - halt publicly disavow plans equip glasses NameTag feature
+            - constantly capture audio visuals without notifying those around user via white light
+          deal_disclosed: false
+      asymmetry_scoring_manual_illustrative:
+        note: MANUAL ILLUSTRATIVE not empirical n=3 per entity insufficient for inferential significance
+        target_entity: Meta FT capital and privacy
+        peer_entity: Anthropic FT fundraising growth
+        target_scores_manual_illustrative: [-0.55, -0.62, -0.58]
+        target_avg_manual_illustrative: -0.5833
+        peer_scores_manual_illustrative: [0.22, 0.18, 0.15]
+        peer_avg_manual_illustrative: 0.1833
+        delta_manual_illustrative: -0.7666
+        p_value: NOT CALCULATED no observed corpus
+        cohens_d: NOT CALCULATED
+        ci_95: NOT CALCULATED
+        significant: false
+        empirical_required: true
+        scorer: mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative
+        synthetic_note: Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed FT corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full FT corpus May-Jun 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation.
+      confounders:
+        strong:
+          - beat assignment FT SF Meta beat Hannah Murphy vs FT AI desk George Hammond Madhumita Murgia different editorial standards independent of commercial partnership
+          - product-stage fundraising growth narrative inherently aspirational vs equity raise desperation and surveillance privacy tangible risk different news pegs but same scale tens of billions capex
+        moderate:
+          - market-share Meta 7M glasses sold 2025 dominance vs Anthropic $30B run-rate revenue enterprise coding tools drive different angles
+          - sourcing access FT sources on Meta exec LED intent vs Anthropic sources on fundraising $1T valuation reflect source availability not financial influence
+          - Google investment timing Apr 24 2026 up to $40B occurs after FT Anthropic fundraising coverage May 8 2026 but before FT continues growth framing May 29 2026 temporal adjacency
+        weak:
+          - regulatory risk Meta wiretapping biometric laws vs Anthropic gov fundraising valuation not directly comparable but both capital formation
+      finding_summary: FT Anthropic coverage May 2026 aspirational growth fundraising ahead of OpenAI constructive 0.15 to 0.22 range vs FT Meta coverage Jun-Jul 2026 desperation capital raise -0.55 surveillance -0.62 market flooding -0.58 range. Same capex scale tens of billions, same fundraising need, opposite framing. Indirect financial relationship FT receives single figure millions GBP/yr from Google Feb 2026 News AI pilot who plans up to $40B investment in Anthropic Apr 24 2026 immediate $10B at $350B valuation plus $30B contingent plus prior $3B+ 14 percent stake per MarketWatch plus Amazon up to $25B vs $0 from Meta predicts softer Anthropic tone. Does not prove editorial causation. Editorial independence confounder requires internal evidence. MANUAL ILLUSTRATIVE scoring delta -0.7666 insufficient n for inferential significance requires observed corpus validation. Systematic non-disclosure FT never disclosed Google partnership or Google Anthropic investment in Anthropic fundraising coverage.
+      source_urls:
+        - https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/
+        - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+        - https://www.reuters.com/technology/anthropic-weighs-fundraising-near-1-trillion-valuation-ft-reports-2026-05-08/
+        - https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/
+        - https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/
+        - https://www.techmeme.com/260708/p2
+        - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539
+        - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: MANUAL ILLUSTRATIVE
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only indirect channel via Google investment.
   x_twitter:
     financial_tie: none
     estimated_value: $0
