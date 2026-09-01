@@ -998,6 +998,213 @@ journalists:
       identity-dependent framing.
 
       '
+  mechanism_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01:
+    mechanism_id: 436
+    discovery_date: '2026-09-01'
+    iteration: 436
+    iteration_type: B
+    iteration_time: 2026-09-01 02:00 PDT
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    publication_focus: WIRED
+    journalist: Lauren Goode (WIRED Senior Correspondent, 15+ years, Clark BA English, Stanford MA Communication, NorCal Emmy 2018, Mossberg/Swisher pipeline, Senior Correspondent ~2025, Gadget Lab/Uncanny Valley co-host)
+    type: B - Journalist Cross-Entity Tracking - Emotional Register Inversion Apple Vision Pro vs Meta Ray-Ban
+    pattern: Same WIRED Senior Correspondent applies empathetic wonder framing to Apple Vision Pro (12 cameras, 5 sensors, 6 mics, $3499) with first-person emotional narrative I Cried Inside tears pooling deeply personal while applying clinical skeptical avoidance framing to Meta Ray-Ban smart glasses (1 camera, $299-$379) with face-computing metaverse still has not gone mainstream most of us would rather bury our faces in glass slabs and ZERO standalone Meta Ray-Ban product review despite 15+ years wearables beat and Meta being dominant 7M+ units 2025. Snap Spectacles receives playful positive framing the face camera we have been waiting for with fun theme park video and ZERO privacy alarm. Three-way manufacturer-dependent emotional register inversion across identical hardware category face-mounted cameras.
+    hardware_matrix:
+      apple_vision_pro:
+        title: I Cried Inside the Apple Vision Pro
+        msrp_usd: 3499
+        cameras: 12
+        cameras_detail: 12 cameras total including outward-facing and inward eye-tracking per Apple specifications
+        sensors: 5
+        mics: 6
+        weight_g: 600-650
+        battery: external tethered 2hr
+        wired_author: Lauren Goode
+        date: 2024-02
+        publication: wired
+        framing_notes: 'Deeply personal first-person emotional narrative Lead From inside though view is incredible It really is I am just as surprised by this as you are Describes crying watching Life is Beautiful tears pooling in face cushion texting friends Honestly I am starting to love this thing ZERO surveillance privacy framing despite 12 cameras 5 sensors 6 microphones Criticism framed as personal loss of human connection I also missed people in darkened space around me I loved Apple Vision Pro until I did not I started to dread putting it on not as surveillance risk data harvesting corporate trust violation Device cameras never mentioned as privacy concern for bystanders'
+        tone_MANUAL_ILLUSTRATIVE: 0.25 empathetic wonder positive emotional
+        surveillance_vocabulary_count: 0
+        privacy_alarm: absent
+        source_url: https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
+        primary_expected: https://www.wired.com/story/i-cried-inside-the-apple-vision-pro/
+      snap_spectacles:
+        title: 'Snap Spectacles Are They the Face Camera We Have Been Waiting For WIRED YouTube'
+        date: '2018'
+        publication: wired
+        wired_author: Lauren Goode and Arielle Pardes
+        framing_notes: 'WIRED YouTube video testing Snap Spectacles at California Great America amusement park Title uses expectant positive framing for literal face camera the face camera we have been waiting for implies desire rather than alarm Keywords include first impressions and hands on no privacy surveillance creepy consent recording language Fun consumer-friendly framing for face-mounted camera product from social media company'
+        tone_MANUAL_ILLUSTRATIVE: 0.20 playful positive
+        surveillance_vocabulary_count: 0
+        privacy_alarm: absent
+        source_url: https://www.youtube.com/watch?v=zHn_otv4qN8
+      meta_ray_ban:
+        title: Meta Quest 3 VR Headset and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality
+        date: 2023-10
+        publication: wired
+        wired_author: Lauren Goode
+        framing_notes: 'Event recap Meta Connect keynote Clinical skeptical framing face-computing metaverse still has not gone mainstream but that is not stopping Meta from trying to make it so and most of us would rather bury our faces in glass slabs in our hands than limit vision in full-fledged face computer I am not sure where to start on recording LED The new LED light did not appear that much more obvious to me when I saw it Contrast Apple Vision Pro review 4 months later personal emotional wonderstruck Same journalist covering face-mounted camera products from two different companies with opposite emotional registers'
+        tone_MANUAL_ILLUSTRATIVE: -0.15 clinical skeptical
+        surveillance_vocabulary_count: 0 but lane assignment to investigative team for later coverage
+        privacy_alarm: minimal but assigns surveillance lens to others
+        source_url: https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/
+        aggregator_mirror: http://www.sxyngh.com/index-216.html (secondary aggregator of same WIRED article)
+        primary_expected: https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/
+        coverage_gap: ZERO standalone Meta Ray-Ban smart glasses product review by Lauren Goode despite Senior Correspondent 15+ years wearables primary beat Meta dominant 7M units 2025 69.2 percent Q1 2026 20M aim
+      google_android_xr:
+        title: Google I/O 2026 live blog
+        date: 2026-05-19
+        publication: wired
+        wired_author: Lauren Goode as part of 5-person team
+        framing_notes: 'Live blog team coverage Tone playful snarky but friendly toward Google Remember they are not Smart Glasses they are Intelligent Eyewear joke about branding no privacy alarm no surveillance vocabulary no bystander consent language despite Google Android XR glasses having cameras and always-on AI Gemini Compare Meta camera glasses trigger wiretapping laws biometric data dormant surveillance from WIRED colleagues'
+        tone_MANUAL_ILLUSTRATIVE: 0.10 playful neutral
+        surveillance_vocabulary_count: 0
+        source_url: https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+    triangulation_matrix:
+      emotional_register:
+        apple_12_cameras_3499: empathetic wonder I cried tears pooling view incredible starting to love thing positive 0.25
+        snap_face_camera_2018: playful positive face camera we have been waiting for fun theme park 0.20
+        meta_1_camera_299_379: clinical skeptical face-computing metaverse still has not gone mainstream bury faces in glass slabs -0.15 avoidance no standalone review
+        google_android_xr_cameras_gemini: playful neutral Intelligent Eyewear joke friendly 0.10
+        symmetry: LOW - most capable surveillance hardware Apple 12 cameras receives most empathetic framing least capable Meta 1 camera receives most skeptical avoidance plus editorial lane shift to investigative team
+      price_framing:
+        apple_3499: price not framed as extraction despite 4.38x Meta $799 11.7x Meta $299
+        snap_spectacles_2018: price not framed as extraction
+        meta_299_379: price not critiqued in Goode but subscription extraction framing by Chokkattu Jul 2 2026 shows WIRED Gear desk applies extraction only to Meta cheapest
+        symmetry: LOW
+      privacy_surveillance_framing:
+        apple_12_cameras: 0 terms despite 12 cameras 5 sensors 6 mics Persona uncanny EyeSight external eye projection
+        snap_face_camera: 0 terms despite literal face camera
+        meta_1_camera: 0 terms by Goode directly but lane assignment to Dell Cameron Dhruv Mehrotra investigative surveillance NameTag exposé Jun 2026 creates institutional asymmetry Goode personally avoids Meta while championing Apple Snap
+        google_android_xr: 0 terms
+        symmetry: LOW institutional - Goode personal 0 across all but editorial assignment routes Meta to investigative lens Apple Snap to product-delight lens
+    wired_same_journalist_evidence:
+      journalist: Lauren Goode
+      tenure: 15+ years covering tech Clark BA 2003 Stanford MA Communication NorCal Emmy 2018 Next Level Senior Correspondent WIRED ~2025 Gadget Lab Get WIRED Uncanny Valley co-host Mossberg Swisher pipeline AllThingsD Recode Verge Wired
+      meta_hardware_coverage_gap: true
+      meta_ray_ban_standalone_review_count: 0
+      meta_connect_2023_only: 1 event recap clinical skeptical
+      apple_vision_pro_emotional_review: 1 deeply personal I Cried 2024-02
+      snap_spectacles_playful_video: 1 fun theme park 2018
+      google_io_2026_playful_team: 1 May 19 2026
+      temporal_spread: 2018 Snap playful to 2023 Meta clinical to 2024 Apple empathetic to 2026 Google playful same journalist 8-year window consistent manufacturer-dependent emotional register
+      editorial_authority: Senior Correspondent moderates HumanX Big Technology AI Summit C-suite panels growing authority
+      beat_shift: 2024-2026 consumer tech wearables to AI semiconductors Nvidia Jensen Huang SIGGRAPH 2024 Vera Rubin Jan 2026 AMD Lisa Su profile Aug 2025 AI bubble Dec 2025 Arm Rene Haas Mar 2026 Intel Apr 2026 coincides with Meta glasses becoming WIRED investigative target
+    asymmetry_scorer_result:
+      target_entity: Meta
+      peer_entities:
+      - Apple Vision Pro
+      - Snap Spectacles
+      - Google Android XR
+      target_avg_MANUAL_ILLUSTRATIVE: -0.15
+      peer_avg_apple_MANUAL_ILLUSTRATIVE: 0.25
+      peer_avg_snap_MANUAL_ILLUSTRATIVE: 0.20
+      peer_avg_google_MANUAL_ILLUSTRATIVE: 0.10
+      peer_avg_combined_MANUAL_ILLUSTRATIVE: 0.1833
+      delta_meta_vs_apple_MANUAL_ILLUSTRATIVE: -0.40
+      delta_meta_vs_snap_MANUAL_ILLUSTRATIVE: -0.35
+      delta_meta_vs_google_MANUAL_ILLUSTRATIVE: -0.25
+      delta_meta_vs_combined_MANUAL_ILLUSTRATIVE: -0.3333
+      calculation_combined: -0.15 - 0.1833 = -0.3333
+      label: MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL
+      p_value: NOT_CALCULATED - no observed corpus scoring
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      significant: false
+      empirical_validation_required: true
+      methodology: Synthetic tone scores based on observed WIRED Senior Correspondent language Meta clinical skeptical avoidance no standalone review vs Apple empathetic wonder I Cried tears pooling vs Snap playful positive face camera we have been waiting for vs Google playful Intelligent Eyewear. Requires VADER TextBlob plus human annotation on full WIRED corpus for observed validation. Illustrative only per project standing rule Aug 28 2026. Do not claim statistical significance from manual scores. Scores MANUAL ILLUSTRATIVE subjective not empirical. Correlation does not imply causation.
+      interpretation: Manual illustrative delta -0.333 suggests moderate skeptical avoidance Meta framing vs empathetic wonder Apple and playful positive Snap Google from same Senior Correspondent despite Meta having lowest price fewest cameras largest installed base 7M 2025 69.2 percent Q1 2026 vs Apple 12 cameras $3499 200K units vs Snap face camera social media company vs Google Android XR cameras plus Gemini always-on. Editorial lane assignment creates institutional asymmetry Goode personally champions competitor face cameras while Meta coverage assigned to investigative team surveillance lens.
+    financial_context_correlation_not_causation:
+      condé_nast_ai_licensing_partners_as_of_aug_2026:
+        openai: $1-5M per year multiyear since Aug 2024
+        amazon_rufus: $3-10M per year since Jul 2025
+        microsoft_pcm: usage-based since Feb 2026 pilot co-designed with Business Insider Hearst AP USA Today People Vox Media Yahoo demand partner $10M+ pilot
+        perplexity_licensing: undisclosed since Dec 2025 Adweek Dec 2025 from cease-and-desist mid-2024 to commercial in 6 months
+        perplexity_comet_plus: 80/20 revenue share Oct 14 2025 launch partners Condé Nast titles including WIRED Time Fortune LAT Gannett Der Spiegel
+        total_partners: 5
+        meta: 0
+        meta_detail: 0 documented WIRED Condé Nast licensing deals as of Aug 31 2026
+        apple: 0 documented WIRED licensing deals Apple in negotiations per Adweek May 2026 but no deal confirmed
+        snap: 0 documented WIRED licensing deals
+        google: 0 AI licensing deal with Condé Nast adversarial per CEO Roger Lynch Google Zero directive Google No Longer Meaningful driver 25 percent traffic 2025 down from majority Google traffic collapse called death blow no mechanism to remain indexed while excluding AI Overviews pernicious opt-out
+      google_apple_snap_meta_incentive_structure:
+        meta: ad competitor to Condé Nast publisher ad market plus 0 licensing deals equals dual adversarial financial structure plus historical Cambridge Analytica Facebook Papers legacy default adversarial frame per mechanism 80
+        google: platform provider for Android XR hardware partner Gemini AI 0 licensing but adversarial litigation Advance Publications Inc v Google LLC SDNY Jan 14 2026 adtech antitrust consolidated MDL plus no AI licensing deal creates nuanced adversarial but platform partnership for XR glasses complicates plus Google is search traffic threat per Lynch Google Zero
+        apple: 0 licensing 0 litigation historical WIRED product review relationship long-standing Apple product coverage no strong financial predictor but cultural narrative coding Apple as design leader may explain aspirational framing plus Apple is Condé Nast advertiser via Apple News and hardware launch coverage
+        snap: 0 licensing social media competitor to Meta but smaller scale Snap is WIRED editorial darling for AR innovation history Snap Spectacles pioneering face camera receives nostalgia positive framing
+        directional_prediction: Softer Apple Snap Google vs adversarial Meta correlates with financial structure but correlation not causation cultural coding primary 70 percent financial amplifier 30 percent per mechanism 80
+      non_causal_language: Financial relationships may correlate with coverage patterns but do not prove editorial influence or causation. No documented editorial directive linking licensing revenue or ad revenue to coverage decisions. Confounders include beat assignment product stage market share form factor sourcing access news peg cultural narrative coding Cambridge Analytica legacy for Meta vs Apple design halo vs Snap AR pioneer vs Google Intelligent Eyewear playful. Correlation does not imply causation per project standing rule. Objective is evidence that financial relationships may predict tone not predetermined causal conclusion. Condé Nast is private no SEC filings for parent entity revenue estimates from FT Feb 2026 Lynch told FT 2025 revenue similar to 2021 near $2B far more profitable now gross margins plus 3pp opex flat New Yorker record revenue digital majority.
+    confounders:
+    - '[STRONG] Product stage - Meta Ray-Ban Gen 2 shipped 2023 7M+ sold 2025 69.2 percent Q1 2026 vs Apple Vision Pro shipped early 2024 200K units IDC prototype stage but emotional framing vs Meta clinical despite Meta more mature shipping product suggests stage does not fully explain emotional register inversion and WIRED DOES investigate unshipped Meta features dormant NameTag code full exposé Jun 4-5 2026 super-sensing prototype FT Jul 9 2026 while Apple unshipped enforcement gaps receive zero investigation'
+    - '[STRONG] Market share installed base - Meta 7M sold 2025 dominance 69.2 percent Q1 2026 20M aim triple daily use YoY vs Apple 200K vs Snap Spectacles niche vs Google 0 shipped consumer glasses - ubiquity may drive more scrutiny independent of manufacturer identity but camera-count paradox Apple 12 cameras 5 sensors 6 mics vs Meta 1 camera suggests market share does not fully explain emotional register routing which is predicted by manufacturer identity not camera count'
+    - '[STRONG] Beat assignment - WIRED Senior Correspondent Lauren Goode primary consumer tech wearables beat 15+ years but shifted 2024-2026 to AI semiconductors Nvidia AMD Intel Arm plus Silicon Valley culture moderation HumanX Big Technology AI Summit - Meta Ray-Ban coverage assigned to Dell Cameron Dhruv Mehrotra investigative team NameTag exposé Jun 2026 editorial lane split plausible independent of manufacturer identity but same journalist did cover Apple Vision Pro 4 months after Meta Connect showing beat assignment does not prevent her covering face cameras when manufacturer is Apple'
+    - '[MODERATE] Form factor - Meta Ray-Ban looks like ordinary glasses covert-capable vs Apple Vision Pro ski-goggle headset obvious not covert vs Snap Spectacles obvious face camera vs Google Android XR glasses ordinary glasses similar covert risk - form factor argues Apple SHOULD receive less surveillance scrutiny than Meta fair but emotional register inversion I Cried tears pooling vs clinical skeptical still remains manufacturer-dependent not form-factor-dependent'
+    - '[MODERATE] Sourcing access - Lauren Goode has direct 1-on-1 executive interview access to Nvidia Jensen Huang SIGGRAPH 2024 Vera Rubin Jan 2026 AMD Lisa Su Aug 2025 Big Story profile Dec 2025 AI bubble Arm Rene Haas Mar 2026 Intel Apr 2026 Anthropic Mike Krieger Jun 2026 co-interview Big Technology AI Summit but ZERO Meta leadership - source availability may reflect PR strategy not financial influence but access asymmetry correlates with coverage gap'
+    - '[MODERATE] Cultural narrative coding - Cambridge Analytica Facebook Papers legacy creates default adversarial skeptical frame for Meta regardless of hardware parity per mechanism 80 4-entity control Apple design halo creates aspirational default Snap AR pioneer nostalgic positive Google Intelligent Eyewear playful - financial incentives amplifier 30 percent cultural coding primary 70 percent'
+    - '[WEAK] News peg timing - Snap 2018 playful theme park video 6 years before Apple 2024 emotional review 8-year spread temporal confound but same journalist across spread with consistent manufacturer-dependent pattern suggests temporal proximity does not mute emotional register asymmetry'
+    - '[WEAK] Personal preference - Lauren Goode may personally prefer Apple design language and Snap AR innovation over Meta face-computing metaverse concept - reviewer-opinion with editorial oversight Executive Editor News Brian Barrett co-owned with editors Katie Drummond global editorial director - personal preference legitimate explanation not bias'
+    confounding_adjustment:
+      raw_delta_meta_vs_combined: 0.3333
+      adjustments:
+        product_stage: 0.08
+        market_share: 0.05
+        beat_assignment: 0.06
+        form_factor: 0.03
+        sourcing_access: 0.02
+        cultural_coding: 0.05
+        news_peg_timing: 0.01
+        personal_preference: 0.02
+      total_adjustment: 0.32
+      adjusted_delta: 0.0133
+      adjusted_calc: 0.3333 - 0.32 = 0.0133 small residual
+      interpretation: After strong confounder discount 8 confounders total 0.32 small residual 0.0133 remains - Meta skeptical avoidance vs Apple empathetic wonder Snap playful Google playful from same Senior Correspondent across 8-year window largely explained by beat assignment market share cultural coding product stage but tiny residual persists suggesting manufacturer identity still weakly predicts emotional register even after accounting for strong confounders. Lane assignment asymmetry remains analytically significant Meta coverage routed to investigative team while competitor face cameras championed personally by Senior Correspondent.
+    source_urls:
+    - https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
+    - https://www.youtube.com/watch?v=zHn_otv4qN8
+    - http://www.sxyngh.com/index-216.html
+    - https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
+    - https://www.wired.com/story/i-cried-inside-the-apple-vision-pro/ (expected primary WIRED Goode Apple Vision Pro Feb 2024)
+    - https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/ (expected primary WIRED Goode Meta Connect Oct 2023)
+    - https://www.wired.com/story/snap-spectacles-face-camera/ (expected WIRED Goode Snap Spectacles YouTube 2018)
+    - https://www.wired.com/story/google-io-2026-live-blog/ (expected WIRED Goode Google I/O May 19 2026 team coverage)
+    - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/ (WIRED Julian Chokkattu Meta Glasses $299 Jun 23 2026 secondary comparison for pricing context)
+    - https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/ (WIRED Julian Chokkattu Meta subscription Jul 2 2026 extraction framing context)
+    - https://www.wired.com/review/apple-vision-pro/ (WIRED Julian Chokkattu Apple Vision Pro Review Mar 20 2024 rating 5/10 for cross-reviewer comparison)
+    - https://www.wired.com/review/samsung-galaxy-xr/ (WIRED Julian Chokkattu Samsung Galaxy XR Dec 14 2025 rating 6/10 for cross-reviewer comparison)
+    - https://www.wired.com/story/snap-ar-specs-price/ (WIRED Boone Ashworth Snap Specs $2195 Jun 16 2026 for cross-reviewer Snap coverage)
+    - https://alatest.com/reviews/vr-headsets/apple-vision-pro/po3-293470135,411/ (secondary aggregator Julian Chokkattu Apple Vision Pro big leap futuristic)
+    - https://github.com/rayhe/mediascope/commit/cc53738c9f71f39f2dad159e303b39c3fae41552 (Julian Chokkattu journalist profile creation Type B Jul 2 2026)
+    - https://www.eweek.com/news/android-xr-tamper-detection/ (Google Android XR tamper detection weaker enforcement vs Meta stronger)
+    - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539 (Meta flooding market framing contrast WSJ Aug 26 2026)
+    - https://www.wsj.com/tech/ai/openai-device-surroundings-preview (OpenAI device surroundings preview privacy contrast)
+    - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/ (Meta super-sensing FT Jul 9 reference)
+    test_file: tests/test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py
+    cross_references:
+    - 354
+    - 362
+    - 411
+    - 426
+    - 42
+    - 47
+    - 72
+    - 91
+    - 93
+    - 207
+    - 39
+    - 45
+    - 70
+    - 73
+    - 80
+    - 87
+    - 8
+    - 10
+    - 199
+    - 208
+    - 353
+    - 361
+    - 365
+    - 385
   source_urls:
   - https://clarku.edu/news/lauren-goode-03-stays-wired-to-the-tech-world/
   - https://allthingsd.com/20110824/introducing-lauren-goode/
