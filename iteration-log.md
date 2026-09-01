@@ -247,7 +247,7 @@
 - No em dashes HTTPS no spaces test_file path matches
 - Extension of prior individual OpenAI and Google ties not claiming original discovery of FT OpenAI or FT Google deals but formalizing DUAL portfolio combined value payment_direction OpenAI->FT AND Google->FT vs Meta $0 as Type C financial incentive mapping with quantification confounders tests genuinely novel per grep -rn mechanism_id 437 zero before iteration
 
-**6. Type D Verification Test #433 style:** Not run full suite this iteration due to time, but validated 437 manually via python yaml safe_load both files, required fields, confounders >=4 STRONG>=2, no em dashes, HTTPS no spaces, test_file path matches, mechanism_id uniqueness 437 1 occurrence in competitor-entities.yaml, scorer statistical safeguards MANUAL ILLUSTRATIVE labeling required correlation-only framing required.
+**6. Type D Verification Test 433 style:** Not run full suite this iteration due to time, but validated 437 manually via python yaml safe_load both files, required fields, confounders >=4 STRONG>=2, no em dashes, HTTPS no spaces, test_file path matches, mechanism_id uniqueness 437 1 occurrence in competitor-entities.yaml, scorer statistical safeguards MANUAL ILLUSTRATIVE labeling required correlation-only framing required.
 
 **7. Sources:** Same 6 URLs as #437 primary sources, yaml parser, statistical module, iteration-log rotation A->B->C->D->E contains 435-437 next is D, count stats pending full run.
 
