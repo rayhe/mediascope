@@ -50,9 +50,9 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 260 | Career data with source URLs |
-| Career-entry migrations | 974 | Across 443+ publications |
+| Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 25448 | Across 754 test files |
+| Tests | 26113 | Across 777 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **260 journalists** (60 with structured education records) across 443+ publications (759 tracked migrations). Notable high-value migrations include:
+Ships with verified career data for **260 journalists** (60 with structured education records) across 444 publications (974 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|

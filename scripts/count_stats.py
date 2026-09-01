@@ -380,6 +380,7 @@ def main():
             ("Journalists tracked", r"\|\s*Journalists tracked\s*\|\s*(\d+)"),
             ("Career-entry migrations", r"\|\s*Career-entry migrations\s*\|\s*(\d+)"),
             ("Tests", r"\|\s*Tests\s*\|\s*([\d,]+)"),
+            ("Test files", r"\|\s*Tests\s*\|\s*[\d,]+\s*\|\s*Across\s+(\d+)\s+test files"),
         ]
 
         actual_map = {
@@ -393,6 +394,7 @@ def main():
             "Journalists tracked": careers["journalists"],
             "Career-entry migrations": careers["migrations"],
             "Tests": test_files["total_tests"],
+            "Test files": test_files["test_files"],
         }
 
         for label, pattern in checks:
