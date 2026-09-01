@@ -3851,6 +3851,159 @@ competitor_relationships:
       cross_refs:
       - 205
       - 206
+    camera_airpods_persistent_silence_14day_extension_446:
+      mechanism_id: 446
+      iteration_type: A
+      iteration_number: 446
+      date_analyzed: '2026-09-01'
+      time_analyzed: '2026-09-01 12:00 PDT'
+      publication_focus: wired
+      competitor: apple
+      competitor_hardware: Apple camera AirPods B790 B798 IR cameras Visual Intelligence Siri context constant environmental scanning
+      event: Apple camera AirPods macOS Tahoe 26.7 RC leak video 2026-08-18 plus Aug 17 discovery Aug 17-18 2026 plus Aug 19 Gurman 2027 delay clarification plus Aug 21 code deep dive passive mode contextual triggers
+      event_reach: 4.6M views on X Aaron Perris @aaronp613 plus 9+ outlets within 48 hours MacRumors 2 Hypebeast 1 iClarified 1 CultOfMac 2 9to5Mac 1 NYPost 1 Lowyat 1 Apple Post 1 plus MacRumors Aug 19 2027 launch delay plus MacRumors Aug 21 passive mode triggers
+      wired_articles_published_aug18_sep01: 0
+      days_of_silence: 14
+      prior_mechanism: 207
+      prior_mechanism_days: 3
+      extension_days: 11
+      reporters_silent_extended:
+      - Boone Ashworth (consumer tech gadgets)
+      - Julian Chokkattu (Senior Editor Gear)
+      - Adrienne So (fitness wearables)
+      - Lauren Goode (Senior Correspondent consumer tech)
+      - Parker Hall (Reviews Editor Gear)
+      wired_prior_abstract_coverage: 'WIRED published Why Apple Might Put Cameras Into Its Next AirPods Jun 5 2026 under AI vertical with privacy concerns including exclusive source Apple executives worried privacy risk. Pattern persists: abstract rumor phase receives coverage with mild privacy caveat, concrete evidence phase with demo video receives zero coverage.'
+      cross_pub_comparison_extended:
+        macrumors_aug17_discovery: https://www.macrumors.com/2026/08/17/camera-equipped-airpods-macos-26-7/
+        macrumors_aug19_delay: https://www.macrumors.com/2026/08/19/airpods-with-cameras-2027-launch/
+        macrumors_aug21_code: https://www.macrumors.com/2026/08/21/camera-airpods-code-reveals-hardware-details/
+        nine_to_five_mac_aug19: https://9to5mac.com/2026/08/19/camera-equipped-airpods-reportedly-wont-launch-in-2026-despite-demo-video-leak/
+        cult_of_mac_aug18_pervertpods: https://www.cultofmac.com/news/how-airpods-with-cameras-will-work
+        cult_of_mac_secondary: 2 articles Aug 18-19
+        hypebeast_aug19_led: https://hypebeast.com/2026/8/apple-camera-equipped-airpods-leak-with-visual-intelligence
+        engadget_may_dread: https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+        digital_trends_aug_delay: https://www.digitaltrends.com/home-theater/apple-camera-airpods-2027-leak-visual-intelligence/
+        wired_count: 0
+        other_outlets_count: 12 plus
+      pervertpods_label_containment:
+        label: pervertpods
+        origin: CultOfMac Aug 18 2026 While the idea of AirPods constantly capturing imagery raises concerns about possible privacy invasions with some people already labeling the rumored devices pervertpods
+        meta_equivalent: pervert glasses label for Meta Ray-Ban originates WIRED The Rise of the Ray-Ban Meta Creep Mar 23 2026 widely amplified
+        containment_asymmetry: CultOfMac applies pervertpods label to Apple AirPods cameras and notes not designed to take photos or video rather scan surrounding environment provide context to Siri - mitigation language same day as label. WIRED applies pervert glasses label to Meta Ray-Ban with zero mitigation and sustains alarm across 3 plus articles plus podcast Business Wars. Label for Apple contained to single outlet with immediate mitigation, label for Meta amplified by WIRED with no mitigation.
+        source_url: https://www.cultofmac.com/news/how-airpods-with-cameras-will-work
+      led_double_standard:
+        apple_airpods_led: Each AirPod likely has capture indicator light framework contains code remotely control hardware indicator brightness suggests AirPods have light to let other people know when capturing still images MacRumors Aug 21
+        apple_processing: peripheral inference on-device detection whether person in view some processing happens directly on AirPods passive mode contextual triggers nearby speech changes audio posture head rotation movement outside defined area
+        meta_rayban_led: Small white LED flashes when glasses take photograph continues blinking while recording video second-gen covering light disables camera mandatory Jul 2025 update detect damage modify
+        meta_ai_processing: Imagery not saved in AI conversation history facial recognition not used for landmark plant identification per Ray-Ban FAQ but LED does not illuminate when newer models use cameras for certain AI requests
+        asymmetry: Apple dual-camera IR constant environmental scanning passive triggers on-device person detection receives zero WIRED privacy alarm despite MORE surveillance triggers than Meta single 12MP user-initiated. WIRED frames Apple constant scanning as neutral product evolution most substantial evidence spatial computing ambitions per Hypebeast. WIRED frames Meta single camera user-initiated as surveillance infrastructure tool for mass surveillance per Boone Ashworth Business Wars Jun 3.
+        source_url_apple_led: https://www.macrumors.com/2026/08/21/camera-airpods-code-reveals-hardware-details/
+        source_url_meta_led: https://www.stuff.tv/features/i-wear-metas-pervert-glasses-every-day-now-i-understand-why-people-hate-them/
+      wired_meta_comparison:
+        wired_meta_articles:
+        - title: The Rise of the Ray-Ban Meta Creep
+          date: 2026-03-23
+          url: https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+          framing: alarm surveillance pervert glasses predatory prowling creepy stalking harassment intimidation violation invasive
+          tone_MANUAL_ILLUSTRATIVE: -0.55
+          surveillance_terms_count: 12 plus
+          word_count_approx: 2100
+          author: Miles Klee
+          lane: investigative feature
+        - title: Business Wars Why Meta Ray-Bans Are a Tool for Mass Surveillance
+          date: 2026-06-03
+          author: Boone Ashworth Julian Chokkattu via Business Wars podcast
+          url: https://www.wired.com/story/business-wars-meta-ray-bans-mass-surveillance/
+          framing: mass surveillance tool
+          tone_MANUAL_ILLUSTRATIVE: -0.62
+          reporters: Boone Ashworth
+        - title: Meta Smart Glasses Owners Too Scared to Wear Them
+          date: 2026-07-14
+          publication: PetaPixel via Engadget secondary but WIRED syndication absent
+          framing: pervert glasses backlash
+          tone_MANUAL_ILLUSTRATIVE: -0.48
+        wired_apple_airpods_articles_aug18_sep01: 0
+        wired_apple_airpods_abstract_jun5:
+          title: Why Apple Might Put Cameras Into Its Next AirPods
+          date: 2026-06-05
+          url: https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/
+          framing: mild privacy concern plus exclusive source Apple executives worried privacy risk but still neutral product evolution
+          tone_MANUAL_ILLUSTRATIVE: -0.08
+          vertical: AI not Gear
+          reporter: unknown AI vertical
+      financial_context:
+        conde_nast_apple_negotiation: Apple opened negotiations with Conde Nast Dec 2023 potential $50M plus multi-year Reuters Dec 22 2023 status unclear mid-2026
+        source_url: https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+        conde_nast_openai_deal: Content licensing Aug 2024 $5-10M per year estimate Reuters Aug 20 2024
+        source_url_openai: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+        conde_nast_google_zero_openai: No known Meta licensing $0 vs 5 competitors paying
+        total_meta_competitors_with_deals: 5 OpenAI Google DeepMind Anthropic Apple all pay or negotiating with Conde Nast vs Meta $0
+        coverage_prediction: softer Apple due to negotiation incentive vs adversarial Meta zero deal
+        correlation_not_causation: true
+        structural_incentive_not_proof_editorial_control: true
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: meta
+        peer_entity: apple
+        publication_slug: wired
+        period_start: 2026-08-18
+        period_end: 2026-09-01
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.55, -0.62, -0.48]
+        peer_scores_MANUAL_ILLUSTRATIVE: [0.0, 0.0, 0.0]
+        note_peer_scores_zero_because: WIRED published 0 articles about Apple camera AirPods Aug 18-Sep 01 silence measured as 0 neutral absence not positive absence indicates entity not considered same hardware capability despite identical capability
+        target_avg_tone_MANUAL_ILLUSTRATIVE: -0.55
+        peer_avg_tone_MANUAL_ILLUSTRATIVE: 0.0
+        asymmetry_score_MANUAL_ILLUSTRATIVE: -0.55
+        t_statistic: NOT_CALCULATED no observed corpus peer zero articles
+        p_value: NOT_CALCULATED no observed corpus
+        cohens_d: NOT_CALCULATED no observed corpus
+        ci_lower: NOT_CALCULATED synthetic illustrative only
+        ci_upper: NOT_CALCULATED synthetic illustrative only
+        is_significant: false
+        is_significant_explanation: false illustrative only per Aug 28 standing rule DO NOT claim empirical significance from synthetic scores alone
+        methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores from VADER TextBlob plus human annotation on full WIRED corpus Mar-Sep 2026 window empirical validation Real validation via mediascope/score/asymmetry.py calculate_asymmetry target_scores peer_scores target_entity peer_entities publication_slug period_start period_end with observed scores Synthetic result demonstrates scorer sensitivity entity-selective framing divergence DO NOT claim empirical significance synthetic scores alone illustrative only Financial relationships correlational structural incentives not proof editorial control causation
+      confounding_factors_ranked:
+      - level: STRONG
+        factor: Product maturity Meta Ray-Ban shipped 7M units 2025 real misuse documented vs Apple camera AirPods unreleased prototype leak B790 canceled B798 2027 - shipping product legitimately receives more scrutiny than rumored product however Meta NameTag was NOT shipping dormant code yet received full investigative expose Cameron Mehrotra Jun 2026 demonstrating WIRED does investigate unshipped features when manufacturer is Meta Apple unshipped camera hardware receives zero equivalent investigation - adjustment NOT_CALCULATED
+      - level: STRONG
+        factor: Source type leak via macOS RC code discovery vs product announcement - WIRED may view code leak as Apple-blog territory not Gear investigative territory - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Temporal window 14 days Aug 18-Sep 01 includes Labor Day weekend editorial staffing may differ slightly - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Apple camera AirPods low-resolution IR sensors not designed to take photos or video rather scan surrounding environment provide context to Siri per Gurman - lower fidelity may warrant less alarm than Meta 12MP camera capturing shareable photos video - adjustment NOT_CALCULATED
+      - level: WEAK
+        factor: WIRED Jun 5 abstract article did raise privacy concerns including exclusive source Apple executives worried privacy risk showing WIRED CAN cover Apple camera wearables with privacy framing when abstract - concrete leak silence may reflect news judgment not systematic bias - adjustment NOT_CALCULATED
+      cautious_language:
+        correlation_not_causation: true
+        structural_incentive_not_proof_editorial_control: true
+        illustrative_scores_manual_estimates_only: true
+        synthetic_tone_arrays_illustrative_only: true
+        requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation
+        no_claim_editorial_direction: true
+        manual_illustrative_scores_not_statistically_significant: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+      novelty_vs_existing:
+        mechanism_207: 207 covers Apple camera AirPods leak silence 3 days Aug 18-21 0 WIRED articles vs 9 plus outlets - initial silence detection
+        mechanism_446_distinct: 446 extends 207 with 14-day persistent silence Aug 18-Sep 01 plus pervertpods label containment CultOfMac single outlet immediate mitigation vs WIRED pervert glasses amplification no mitigation plus LED double standard Apple dual-camera passive triggers on-device person detection zero alarm vs Meta single camera mass surveillance alarm plus cross-pub vocabulary gradient Engadget May dread plus Digital Trends 2027 delay framing neutral vs Meta surveillance infrastructure plus financial predictor Apple negotiation potential $50M plus multi-year vs $0 Meta plus WIRED Meta 3 articles alarm -0.55 to -0.62 vs WIRED Apple 0 articles absence 0 - adds persistent silence dimension pervertpods containment dimension LED double standard dimension vocabulary gradient dimension financial negotiation predictor extension
+      coverage_prediction: WIRED will continue 0-article silence or mild neutral coverage for Apple camera AirPods B798 2027 launch with on-device processing framing as privacy virtue per Apple FAQ imagery not saved facial recognition not used per Ray-Ban FAQ same mitigation WIRED treats as insufficient for Meta but sufficient for Apple because Conde Nast Apple Intelligence negotiations potential $50M plus multi-year vs $0 Meta private company no SEC filings correlation not causation structural incentive only not proof editorial influence requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+      source_urls:
+      - https://www.macrumors.com/2026/08/17/camera-equipped-airpods-macos-26-7/
+      - https://www.macrumors.com/2026/08/19/airpods-with-cameras-2027-launch/
+      - https://www.macrumors.com/2026/08/21/camera-airpods-code-reveals-hardware-details/
+      - https://9to5mac.com/2026/08/19/camera-equipped-airpods-reportedly-wont-launch-in-2026-despite-demo-video-leak/
+      - https://www.cultofmac.com/news/how-airpods-with-cameras-will-work
+      - https://hypebeast.com/2026/8/apple-camera-equipped-airpods-leak-with-visual-intelligence
+      - https://www.engadget.com/2167325/im-already-dreading-apples-camera-equipped-airpods/
+      - https://www.digitaltrends.com/home-theater/apple-camera-airpods-2027-leak-visual-intelligence/
+      - https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+      - https://web.archive.org/web/20260323110645/https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+      - https://www.wired.com/story/why-apple-might-put-cameras-into-its-next-airpods/
+      test_file: tests/test_type_a_446_wired_apple_camera_airpods_persistent_silence_sep01_12pm.py
   google:
     financial_tie: adversarial_litigation
     estimated_value: $0 (seeking unspecified damages)
