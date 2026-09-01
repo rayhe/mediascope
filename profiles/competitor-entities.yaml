@@ -5814,6 +5814,239 @@ entities:
       - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
       test_file: tests/test_mechanism_417_advance_reddit_dual_licensing_type_c.py
 
+    google_reddit_10k_rpo_materiality_427:
+      mechanism_id: 427
+      date_analyzed: '2026-08-31'
+      type: Type C Financial Incentive Mapping
+      iteration: 427
+      iteration_type: C
+      iteration_time: 2026-08-31 17:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Condé Nast) x Google/OpenAI via Advance/Reddit
+      competitor_pair: Google/OpenAI vs Meta
+      financial_channel: Reddit 2025 10-K RPO disclosure quantifies AI licensing materiality
+        reinforcing Advance equity incentive
+      payment_direction: Google/OpenAI -> Reddit (licensing $60M/yr each, $110-120M/yr
+        combined, RPO $143.7M Dec 31 2025) -> Advance Publications equity appreciation
+        (30% Reddit ownership, 34% voting rights, board control)
+      overview: 'Reddit 2025 10-K SEC filing discloses remaining performance obligations
+        primarily from long-term content licensing: $143.7M at December 31, 2025, with
+        expected recognition $118.9M in 2026 and $24.8M in 2027. This is primary-source
+        quantification that AI licensing is not one-off but multi-year contracted future
+        revenue. Filing at https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+        strengthens mechanism #417 by providing SEC-verified forward revenue visibility.
+        Combined with existing facts: Advance Publications is Reddit largest shareholder
+        with 30% ownership per SiliconAngle Feb 22 2024 IPO filing and Wikipedia listing
+        Advance 30% and Reddit owners Advance 30% and SEC S-1 Advance Magazine Publishers
+        Inc holds all Series A preferred and 34% combined voting rights and ability
+        to appoint majority of board. Reddit struck $60M/yr AI content licensing deal
+        with Google Feb 2024 per Reuters Feb 21 2024 and The Register confirming $60M/yr
+        and Engadget confirming $60M/yr. Reddit struck OpenAI partnership May 16 2024
+        for real-time structured content access, ChatGPT integration, OpenAI advertising
+        partner per TechCrunch May 16 2024 and Reuters May 17 2024 noting deal could
+        yield $50-60M annually per Piper Sandler. Combined Google + OpenAI licensing
+        ~$110-120M/yr represents 13-15% of Reddit 2023 revenue $804M per SiliconAngle
+        and material driver of Reddit market cap. RPO $143.7M represents 17.9% of
+        2023 revenue in contracted future licensing, with $118.9M (82.7% of RPO) expected
+        in 2026 providing near-term revenue certainty. Advance stake $1.4-1.97B at IPO
+        per The Information and TheWrap with 33.5% voting power 42M shares and significant
+        influence ability to designate directors and observer per TheWrap. Financial
+        relationship creates correlational structural incentive: WIRED (Condé Nast
+        owned by Advance) parent benefits from Reddit AI licensing revenue growth
+        via equity appreciation when Google and OpenAI pay Reddit, predicting softer
+        Google/OpenAI coverage vs adversarial Meta wearables coverage (Meta competes
+        with Reddit for ad dollars per Reuters Feb 21 2024 noting Reddit seeking revenue
+        amid competition from TikTok and Meta and Meta is zero Reddit licensing partner).
+        Correlational structural incentive, not proof of editorial control. No documented
+        editorial directive linking Advance Reddit equity to WIRED coverage tone was
+        reviewed. Editorial independence explicitly acknowledged. This mechanism extends
+        #417 with new primary source SEC 10-K quantification, not a duplicate of #417.'
+      primary_sources:
+      - url: https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+        claim: Remaining performance obligations primarily from long-term content licensing
+          $143.7M at December 31, 2025, expected recognition $118.9M in 2026 and $24.8M
+          in 2027. Filing is Reddit 2025 10-K.
+        date: '2026-02-18'
+      - url: https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+        claim: Today's IPO filing reveals Advance Magazine Publishers Inc is Reddit's largest
+          investor with more than 30% stake. Reddit generated $804M revenue 2023.
+        date: '2024-02-22'
+      - url: https://en.wikipedia.org/wiki/Advance_Publications
+        claim: Advance is major shareholder in Charter 13%, Reddit 30% ownership, Warner
+          Bros Discovery 3.97%
+        date: '2024'
+      - url: https://en.wikipedia.org/wiki/Reddit
+        claim: Owners Advance Publications 30%, Tencent 11%, Sam Altman 9%. Reddit founded
+          2005, acquired by Condé Nast 2006, spun out 2013.
+        date: '2024'
+      - url: https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+        claim: Advance Magazine Publishers Inc holds all Series A preferred stock and 34%
+          combined voting rights, ability to appoint majority of board, affirmative vote
+          required for corporate actions.
+        date: '2024-02-22'
+      - url: https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+        claim: Social media platform Reddit has struck deal with Google to make content
+          available for training AI models, contract worth about $60M per year.
+        date: '2024-02-21'
+      - url: https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+        claim: Reddit will provide content posted on forums to Google which will use it
+          to train and update AI chatbots in deal reportedly worth $60M a year that could
+          deliver big bucks to OpenAI boss Sam Altman.
+        date: '2024-02-22'
+      - url: https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+        claim: OpenAI has reached deal with Reddit to use social news site's data for training
+          AI models, partnership will provide access to real-time structured unique content
+          posts and replies, Reddit content incorporated into ChatGPT, OpenAI will become
+          Reddit advertising partner.
+        date: '2024-05-16'
+      - url: https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+        claim: Shares of Reddit rose 13% following partnership with OpenAI, deal could yield
+          more than $50-60M annually for Reddit per Piper Sandler, pushed market cap up
+          $1.2B.
+        date: '2024-05-17'
+      - url: https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+        claim: Advance Publications owned by Newhouse family which also owns Condé Nast
+          made windfall nearly $2B as Reddit went public, Advance investment $10M 2006 worth
+          $1.97B, owns 33.5% voting power 42M shares, significant influence ability to designate
+          directors.
+        date: '2024-03-21'
+      - url: https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+        claim: Following similar agreement with Google worth estimated $60M per year, OpenAI
+          granted access to Reddit Data API providing real-time structured unique content,
+          Reddit to roll out AI features powered by OpenAI, advertising partner.
+        date: '2024-05-16'
+      coverage_prediction:
+        model: 'Publications under Advance Publications ownership (WIRED via Condé Nast,
+          Vanity Fair, New Yorker, GQ, Vogue) will produce softer Google and OpenAI coverage
+          vs adversarial Meta wearables coverage because Google and OpenAI dual licensing
+          ($110-120M/yr combined) directly boosts Reddit revenue and RPO $143.7M provides
+          forward revenue certainty 82.7% recognized in 2026 $118.9M, increasing Advance
+          $1.4-1.97B Reddit equity value, while Meta is Reddit ad competitor with zero
+          Reddit licensing payments and competes for TikTok/Meta ad dollars per Reuters.
+          Clean controls: publications with zero Advance relationship (Gizmodo, MIT Tech
+          Review, The Verge PMC independent, FT Nikkei independent) more neutral. Meta
+          zero Advance/Reddit financial relationship predicts adversarial coverage structurally
+          cheapest. RPO quantification strengthens materiality: $143.7M is 17.9% of 2023
+          revenue in contracted future licensing, not one-off, with $118.9M near-term 2026
+          providing revenue certainty that supports Reddit valuation and Advance equity.'
+        temporal: Feb 21 2024 Google $60M deal -> May 16 2024 OpenAI $50-60M deal -> Mar
+          21 2024 IPO $6.4B valuation -> May 17 2024 OpenAI deal $1.2B market cap add
+          -> Dec 31 2025 RPO $143.7M $118.9M 2026 $24.8M 2027 SEC filing Feb 2026 -> Aug
+          31 2026 iteration window - 2.5 years of dual licensing revenue accumulation
+          plus forward contracted revenue visibility, Advance equity appreciation from
+          $10M 2006 to $1.97B 2024 = 19,600% return plus RPO-backed future revenue certainty.
+      financial_incentive_mapping:
+        financial_relationship: Correlational structural incentive, not proof of editorial
+          control. No documented editorial directive linking Advance Reddit equity or Reddit
+          AI licensing or Reddit RPO to WIRED coverage tone was reviewed. Financial relationships
+          are correlational structural incentives not proof of editorial control. Advance
+          30% Reddit ownership + 34% voting rights + board appointment power + $1.4-1.97B
+          equity value + Reddit RPO $143.7M forward revenue certainty creates indirect
+          incentive for Advance-owned Condé Nast to avoid alienating Reddit largest AI
+          licensing customers (Google $60M/yr, OpenAI $50-60M/yr) who collectively provide
+          $110-120M/yr to Reddit = 13-15% of Reddit 2023 revenue and $143.7M RPO = 17.9%
+          of 2023 revenue in contracted future.
+        editorial_independence_acknowledgment: true
+        payment_structure: Google -> Reddit $60M/yr (Reuters, The Register, Engadget), OpenAI
+          -> Reddit $50-60M/yr (Piper Sandler via Reuters May 17 2024), combined $110-120M/yr,
+          RPO $143.7M Dec 31 2025 primarily long-term content licensing $118.9M 2026 $24.8M
+          2027 (SEC 10-K), terms via Data API access real-time structured unique content,
+          OpenAI also advertising partner, Sam Altman 8.7% Reddit stake third-largest shareholder
+          creates additional OpenAI-Reddit alignment per TechCrunch May 16 2024, Advance
+          -> Reddit $10M 2006 investment -> $1.97B 2024 equity, no direct payment from
+          Advance to Condé Nast disclosed but Advance owns 100% of Condé Nast, so equity
+          appreciation benefits parent, RPO provides forward revenue certainty supporting
+          Reddit valuation.
+        meta_contrast: Meta is Reddit ad competitor per Reuters Feb 21 2024 noting Reddit
+          seeking revenue amid competition from TikTok and Meta Facebook, Meta has zero
+          Reddit AI licensing deal (unlike Google and OpenAI), Meta has zero Advance
+          Publications relationship (Advance owns Condé Nast, Charter 13%, Reddit 30%,
+          WBD 3.97%, no Meta stake), Meta ad revenue $59.363B Q2 2026 competes directly
+          with Reddit $804M 2023 revenue growth strategy via AI licensing per Reuters
+          Feb 21 2024 and TechCrunch May 16 2024, structural antagonism not neutral market,
+          Meta zero RPO beneficiary unlike Google/OpenAI who fund RPO.
+      strongest_counterargument: Advance Publications is privately held family company (Newhouse
+        family) with $10B+ diversified portfolio (Condé Nast, American City Business Journals,
+        MLive, Charter 13% ~$15B, WBD 3.97%, Reddit 30%). Reddit equity $1.97B is ~10-15%
+        of Advance portfolio, not dominant. Reddit RPO $143.7M is 17.9% of 2023 revenue
+        but Reddit revenue growing to $2.2B 2025 per Wikipedia, so RPO 6.5% of 2025 revenue,
+        material but not majority. SEC filing says RPO primarily from long-term content
+        licensing, not exclusively AI licensing, could include other licensing. Advance
+        $10M 2006 -> $1.97B 2024 is 19,600% return already realized, so incremental $60M
+        licensing and $143.7M RPO may be immaterial to Advance $10B+ portfolio. Condé
+        Nast editorial independence historically maintained despite Advance ownership (WIRED
+        investigative coverage of Reddit 2023 API protest, The Verge critical Reddit coverage).
+        WIRED Meta wearables adversarial coverage predates Reddit AI licensing (WIRED
+        privacy alarm framing since 2019 Ray-Ban Stories). Meta youth safety settlement
+        $17.1B and privacy investigations provide legitimate non-financial basis for adversarial
+        tone. Advance Reddit equity creates structural incentive but does not prove editorial
+        instruction. Reddit RPO disclosure is forward-looking and subject to recognition
+        timing and customer concentration risk. Requires Welch t-test plus Cohen d plus
+        bootstrap CI on observed article-level tone scores for empirical validation. Synthetic
+        tone arrays illustrative only. MANUAL ILLUSTRATIVE not empirical.
+      confounding_factors:
+      - strength: STRONG
+        description: Product maturity and privacy scrutiny asymmetry - Meta consumer glasses
+          single-camera always-on observe users and suggest actions receives inherent privacy
+          alarm coverage vs Google Search/ChatGPT enterprise productivity receives informational
+          framing. Genuine product capability difference not financial incentive. WIRED
+          hardware critics adversarial tradition predates Reddit AI era (2019 Ray-Ban Stories).
+      - strength: STRONG
+        description: Advance Publications diversified portfolio - Reddit $1.97B is ~10-15%
+          of Advance $10B+ portfolio (Charter 13% ~$15B, Condé Nast estimated $5B+, WBD
+          3.97% ~$500M), so Reddit AI licensing $110-120M/yr and RPO $143.7M may be immaterial
+          to family office overall. Newhouse family wealth preservation via diversification
+          reduces single-asset incentive. Editorial independence historically maintained
+          despite ownership. SEC filing does not disclose Advance current ownership percentage
+          as of Dec 31 2025, need to check proxy for current stake.
+      - strength: MODERATE
+        description: Reddit API protest 2023 community backlash - WIRED covered Reddit API
+          changes adversarially despite Advance ownership, showing editorial independence
+          counterexample. Reddit charging for API access led to sitewide protest thousands
+          of subreddits went dark per Engadget, WIRED covered critically. If Advance controlled
+          WIRED to favor Reddit, WIRED would not cover Reddit API protest adversarially.
+          RPO includes long-term licensing but not necessarily AI-only, could include other
+          content licensing not tied to Google/OpenAI.
+      - strength: MODERATE
+        description: Sam Altman 8.7-9% Reddit stake third-largest shareholder creates OpenAI-Reddit
+          alignment independent of Advance - OpenAI deal may reflect Altman personal financial
+          interest ($750M after post-deal rise per ReadWrite) not Advance incentive. Altman
+          recused himself from OpenAI board decision per TechCrunch but remains shareholder.
+          Confounds Advance-specific incentive attribution. RPO recognition $118.9M in 2026
+          $24.8M in 2027 subject to performance obligations and customer payment, not guaranteed.
+      - strength: WEAK
+        description: Meta genuine issues (youth safety settlement $17.1B, privacy investigations,
+          NameTag dormant code) provide legitimate non-financial basis for adversarial tone
+          - even without Advance/Reddit financial relationship, WIRED might produce adversarial
+          Meta coverage based on newsworthiness alone. Meta zero Reddit licensing so adversarial
+          coverage structurally cheaper but not proof of bias. RPO forward-looking subject
+          to change.
+      cautious_language: Financial correlation does not imply causation. Google/OpenAI ->
+        Reddit licensing and RPO $143.7M creates STRUCTURAL INCENTIVE for softer Google/OpenAI
+        coverage from Advance-owned publications, not proof of editorial influence. RPO
+        primarily from long-term content licensing per SEC 10-K, not exclusively AI licensing,
+        limitation acknowledged. Requires Welch t-test plus Cohen d plus bootstrap CI on
+        observed article-level tone scores for empirical validation. Synthetic tone arrays
+        illustrative only. Every fact needs source URL - all URLs verbatim from browser.search
+        results Aug 31 2026 and SEC filing. Correlation only, not causation. No claim
+        of editorial control, only structural incentive alignment. MANUAL ILLUSTRATIVE
+        scores not statistically significant. p_value not_calculated, cohens_d not_calculated,
+        ci not_calculated, significant false, significant_empirical false.
+      source_urls:
+      - https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+      - https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+      - https://en.wikipedia.org/wiki/Advance_Publications
+      - https://en.wikipedia.org/wiki/Reddit
+      - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+      - https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+      - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+      - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+      - https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+      - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+      - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+      test_file: tests/test_mechanism_427_reddit_10k_rpo_type_c.py
+
   x_twitter:
     display_name: X / Twitter
     aliases:

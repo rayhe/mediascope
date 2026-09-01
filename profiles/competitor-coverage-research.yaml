@@ -19,7 +19,7 @@ aggregate_findings:
     - https://www.reuters.com/legal/transactional/anthropic-draws-offers-vcs-invest-up-to-800-billion-valuation-business-insider-2026-04-14/
     bi_meta_sources:
     - https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/
-    - https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html
+    - 'https://www.dejavu.org/cgi-bin/get.cgi?ver=95&url=https%3A%2F%2Ftech.yahoo.com%2Far-vr%2Farticles%2Fmeta-says-cant-ray-ban-192237610.html'
     - https://roadtovr.com/meta-retail-stores-smart-glasses-competition-apple-google/
     delta_manual_illustrative: 0.34
     note: MANUAL ILLUSTRATIVE not empirical n=3 per entity insufficient for inferential
@@ -1111,7 +1111,7 @@ aggregate_findings:
     significance: Marketplace model scales Meta's exclusion — every new PCM demand
       partner is another AI company paying WIRED's parent while Meta doesn't
     source_urls:
-    - https://www.WebWire.com/ViewPressRel.asp?aId=350303
+    - 'https://www.WebWire.com/ViewPressRel.asp?aId=350303'
     - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
     - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
   - description: 'As of Aug 2026, Condé Nast has AI content deals with OpenAI
@@ -1735,7 +1735,7 @@ aggregate_findings:
     - https://vuink.com/post/guriretr-d-dpbz/2024/10/2/24260262/ray-ban-meta-smart-glasses-doxxing-privacy
     - https://www.techmeme.com/260707/p41
     - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
-    - https://www.youtube.com/watch?v=pgu0a9QK75E
+    - 'https://www.youtube.com/watch?v=pgu0a9QK75E'
     - https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr
     test_count: 46
     test_file: tests/test_victoria_song_privacy_vocabulary_bifurcation_aug12.py
@@ -2052,7 +2052,7 @@ aggregate_findings:
     - https://gizmodo.com/openai-launches-cheaper-subscriptions-starts-testing-ads-because-its-time-to-pay-the-piper-2000711284
     - https://gizmodo.com/metas-new-privacy-policy-opens-up-ai-chats-for-targeted-ads-2000704852
     - https://ppc.land/chatgpt-advertisers-face-10-days-to-opt-out-of-automatic-advanced-matching/
-    - https://www.seroundtable.com/openai-chatgpt-ads-updates-41828.html?utm_src=newsraid.com
+    - 'https://www.seroundtable.com/openai-chatgpt-ads-updates-41828.html?utm_src=newsraid.com'
     - https://digiday.com/marketing/openai-builds-tool-to-track-whether-chatgpt-ads-convert/
     - https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/
     - https://www.pymnts.com/news/artificial-intelligence/2026/83percent-chatgpt-ad-triggers-dont-exist-in-traditional-search/
@@ -2087,7 +2087,8 @@ aggregate_findings:
       (Meta competes with Reddit for ad dollars per Reuters, Meta zero Reddit licensing).
       Correlational structural incentive not proof editorial control.
     coverage_prediction:
-      model: Advance-owned publications WIRED Vanity Fair New Yorker GQ Vogue will
+      model: >
+        Advance-owned publications WIRED Vanity Fair New Yorker GQ Vogue will
         produce softer Google OpenAI coverage vs adversarial Meta wearables because
         Google OpenAI dual licensing $110-120M/yr boosts Reddit revenue market cap
         increasing Advance $1.4-1.97B equity, while Meta Reddit ad competitor zero
@@ -2102,10 +2103,10 @@ aggregate_findings:
     - https://en.wikipedia.org/wiki/Advance_Publications
     - https://en.wikipedia.org/wiki/Reddit
     - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
-    - https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+    - 'https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me'
     - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
     - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
-    - https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+    - 'https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft'
     - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
     - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
     source_urls:
@@ -2113,10 +2114,10 @@ aggregate_findings:
     - https://en.wikipedia.org/wiki/Advance_Publications
     - https://en.wikipedia.org/wiki/Reddit
     - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
-    - https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me
+    - 'https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me'
     - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
     - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
-    - https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft
+    - 'https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft'
     - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
     - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
     financial_incentive_mapping:
@@ -2186,6 +2187,172 @@ aggregate_findings:
       source URL all URLs verbatim browser.search results Aug 31 2026. Correlation
       only not causation. No claim editorial control only structural incentive alignment.
     test_file: tests/test_mechanism_417_advance_reddit_dual_licensing_type_c.py
+  google_reddit_10k_rpo_materiality_427_aug31_2026:
+    mechanism: 427
+    type: Type C Financial Incentive Mapping
+    type_label: Financial Incentive Mapping
+    date: '2026-08-31'
+    iteration: 427
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    publication_focus: WIRED (Condé Nast) x Google/OpenAI via Advance/Reddit
+    competitor_pair: Google/OpenAI vs Meta
+    financial_channel: Reddit 2025 10-K RPO disclosure quantifies AI licensing materiality
+      reinforcing Advance equity incentive
+    payment_direction: Google/OpenAI -> Reddit $60M/yr each $110-120M/yr combined RPO
+      $143.7M Dec 31 2025 $118.9M 2026 $24.8M 2027 -> Advance 30% ownership 34% voting
+      $1.4-1.97B equity
+    overview: 'Reddit 2025 10-K SEC filing discloses remaining performance obligations
+      primarily from long-term content licensing: $143.7M at December 31, 2025, with
+      expected recognition $118.9M in 2026 and $24.8M in 2027. Primary source https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+      This is SEC-verified forward revenue visibility that AI licensing is multi-year
+      contracted not one-off. Combined with Advance Publications 30% Reddit ownership
+      largest shareholder per SiliconAngle Feb 22 2024 IPO filing and Wikipedia Advance
+      30% and Reddit owners Advance 30% and SEC S-1 Advance Magazine Publishers Inc
+      holds all Series A preferred and 34% combined voting rights and ability to appoint
+      majority of board. Reddit Google $60M/yr deal Feb 21 2024 Reuters and The Register
+      confirming $60M/yr and Engadget confirming $60M/yr. Reddit OpenAI May 16 2024
+      real-time structured content ChatGPT integration advertising partner per TechCrunch
+      and Reuters May 17 2024 noting $50-60M annually per Piper Sandler. Combined Google
+      + OpenAI licensing ~$110-120M/yr represents 13-15% of Reddit 2023 revenue $804M
+      per SiliconAngle and material driver of Reddit market cap. RPO $143.7M represents
+      17.9% of 2023 revenue in contracted future licensing with $118.9M (82.7% of RPO)
+      expected in 2026 providing near-term revenue certainty. Advance stake $1.4-1.97B
+      at IPO per The Information and TheWrap with 33.5% voting power 42M shares and
+      significant influence ability to designate directors and observer per TheWrap.
+      Financial relationship creates correlational structural incentive: WIRED (Condé
+      Nast owned by Advance) parent benefits from Reddit AI licensing revenue growth
+      via equity appreciation when Google and OpenAI pay Reddit predicting softer Google/OpenAI
+      coverage vs adversarial Meta wearables coverage (Meta competes with Reddit for
+      ad dollars per Reuters Feb 21 2024 noting Reddit seeking revenue amid competition
+      from TikTok and Meta and Meta is zero Reddit licensing partner). Correlational
+      structural incentive not proof of editorial control. No documented editorial directive
+      linking Advance Reddit equity to WIRED coverage tone was reviewed. Editorial independence
+      explicitly acknowledged. This mechanism extends #417 with new primary source SEC
+      10-K quantification not duplicate.'
+    coverage_prediction:
+      model: >
+        Advance-owned publications WIRED Vanity Fair New Yorker GQ Vogue will
+        produce softer Google OpenAI coverage vs adversarial Meta wearables because
+        Google OpenAI dual licensing $110-120M/yr boosts Reddit revenue and RPO $143.7M
+        provides forward revenue certainty 82.7% recognized in 2026 $118.9M increasing
+        Advance $1.4-1.97B Reddit equity value while Meta is Reddit ad competitor zero
+        licensing. Clean controls Gizmodo MIT Tech Review The Verge PMC independent
+        FT Nikkei independent more neutral. Meta zero Advance Reddit relationship predicts
+        adversarial cheapest. RPO quantification strengthens materiality: $143.7M is
+        17.9% of 2023 revenue in contracted future licensing not one-off with $118.9M
+        near-term 2026 providing revenue certainty that supports Reddit valuation and
+        Advance equity.
+      temporal: Feb 21 2024 Google $60M deal -> May 16 2024 OpenAI $50-60M deal -> Mar
+        21 2024 IPO $6.4B valuation -> May 17 2024 OpenAI deal $1.2B market cap add
+        -> Dec 31 2025 RPO $143.7M $118.9M 2026 $24.8M 2027 SEC filing Feb 2026 -> Aug
+        31 2026 iteration window - 2.5 years dual licensing revenue accumulation plus
+        forward contracted revenue visibility Advance equity appreciation from $10M
+        2006 to $1.97B 2024 = 19,600% return plus RPO-backed future revenue certainty.
+    primary_sources:
+    - https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+    - https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+    - https://en.wikipedia.org/wiki/Advance_Publications
+    - https://en.wikipedia.org/wiki/Reddit
+    - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+    - 'https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me'
+    - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+    - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+    - 'https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft'
+    - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+    - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+    source_urls:
+    - https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000062/redditinc10-k2025.pdf
+    - https://siliconangle.com/2024/02/22/reddit-files-ipo-annual-revenue-tops-800m/
+    - https://en.wikipedia.org/wiki/Advance_Publications
+    - https://en.wikipedia.org/wiki/Reddit
+    - https://www.sec.gov/Archives/edgar/data/1713445/000162828024006294/reddits-1q423.htm
+    - 'https://www.reuters.com/technology/reddit-ai-content-licensing-deal-with-google-sources-say-2024-02-22/?ref=blog.cansincengiz.me'
+    - https://www.theregister.com/2024/02/22/reddit_google_license_ipo_altman/
+    - https://techcrunch.com/2024/05/16/openai-inks-deal-to-train-ai-on-reddit-data/
+    - 'https://www.reuters.com/technology/reddit-stock-jumps-after-openai-partnership-2024-05-17/?utm_source=www.carbonfinance.io&utm_medium=referral&utm_campaign=this-stock-is-beating-apple-microsoft'
+    - https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/
+    - https://readwrite.com/reddit-openai-chatgpt-deal-partnership-announced/
+    financial_incentive_mapping:
+      financial_relationship: Correlational structural incentive not proof editorial
+        control. Advance 30% Reddit ownership 34% voting board appointment $1.4-1.97B
+        equity creates indirect incentive for Advance-owned Condé Nast to avoid alienating
+        Reddit largest AI licensing customers Google $60M OpenAI $50-60M $110-120M
+        combined 13-15% Reddit 2023 revenue plus RPO $143.7M 17.9% 2023 revenue in contracted
+        future.
+      editorial_independence_acknowledgment: true
+      payment_structure: Google -> Reddit $60M/yr, OpenAI -> Reddit $50-60M/yr combined
+        $110-120M/yr Data API real-time structured unique content OpenAI advertising
+        partner Sam Altman 8.7% Reddit stake third-largest, Advance -> Reddit $10M
+        2006 -> $1.97B 2024, Advance owns 100% Condé Nast equity appreciation benefits
+        parent, RPO $143.7M Dec 31 2025 $118.9M 2026 $24.8M 2027 SEC 10-K primarily long-term
+        content licensing forward revenue certainty.
+      meta_contrast: Meta Reddit ad competitor per Reuters Feb 21 2024 Reddit seeking
+        revenue amid competition TikTok Meta Facebook, Meta zero Reddit AI licensing
+        deal unlike Google OpenAI, Meta zero Advance Publications relationship, Meta
+        ad revenue $59.363B Q2 2026 competes directly Reddit $804M 2023 growth strategy
+        AI licensing, structural antagonism not neutral, Meta zero RPO beneficiary unlike
+        Google/OpenAI who fund RPO.
+    strongest_counterargument: Advance privately held Newhouse family $10B+ diversified
+      portfolio Condé Nast American City Business Journals MLive Charter 13% ~$15B
+      WBD 3.97% Reddit 30%. Reddit equity $1.97B ~10-15% Advance portfolio not dominant.
+      Reddit RPO $143.7M is 17.9% 2023 revenue but Reddit revenue growing to $2.2B 2025
+      per Wikipedia so RPO 6.5% 2025 revenue material not majority. SEC filing says RPO
+      primarily from long-term content licensing not exclusively AI licensing could include
+      other licensing. Advance $10M 2006 -> $1.97B 2024 19600% already realized incremental
+      $60M may be immaterial. Condé Nast editorial independence historically maintained
+      despite Advance ownership WIRED investigative Reddit 2023 API protest The Verge
+      critical. WIRED Meta wearables adversarial predates Reddit AI licensing 2019 Ray-Ban
+      Stories. Meta youth safety $17.1B privacy investigations legitimate non-financial
+      basis adversarial. Requires Welch t-test plus Cohen d plus bootstrap CI. Synthetic
+      illustrative only.
+    confounding_factors:
+    - strength: STRONG
+      description: Product maturity privacy scrutiny asymmetry - Meta consumer glasses
+        single-camera always-on observe users suggest actions receives privacy alarm
+        vs Google Search ChatGPT enterprise productivity informational framing. Genuine
+        capability difference not financial incentive. WIRED hardware critics adversarial
+        tradition predates Reddit AI era 2019.
+    - strength: STRONG
+      description: Advance diversified portfolio Reddit $1.97B ~10-15% Advance $10B+
+        portfolio Charter 13% ~$15B Condé Nast $5B+ WBD 3.97% ~$500M Reddit AI licensing
+        $110-120M/yr and RPO $143.7M may be immaterial family office overall. Newhouse
+        wealth preservation diversification reduces single-asset incentive. Editorial
+        independence historically maintained. SEC filing does not disclose Advance current
+        ownership percentage as of Dec 31 2025 need to check proxy for current stake.
+    - strength: MODERATE
+      description: Reddit API protest 2023 community backlash WIRED covered Reddit API
+        changes adversarially despite Advance ownership showing editorial independence
+        counterexample. Reddit charging API led sitewide protest thousands subreddits
+        went dark per Engadget WIRED covered critically. If Advance controlled WIRED
+        to favor Reddit WIRED would not cover Reddit API protest adversarially. RPO
+        includes long-term licensing but not necessarily AI-only could include other
+        content licensing not tied to Google/OpenAI.
+    - strength: MODERATE
+      description: Sam Altman 8.7-9% Reddit stake third-largest shareholder creates
+        OpenAI-Reddit alignment independent Advance - OpenAI deal may reflect Altman
+        personal financial interest $750M after post-deal rise per ReadWrite not Advance
+        incentive. Altman recused OpenAI board decision per TechCrunch but remains shareholder.
+        Confounds Advance-specific incentive attribution. RPO recognition $118.9M in 2026
+        $24.8M in 2027 subject to performance obligations and customer payment not guaranteed.
+    - strength: WEAK
+      description: Meta genuine issues youth safety settlement $17.1B privacy investigations
+        NameTag dormant code provide legitimate non-financial basis adversarial tone
+        - even without Advance/Reddit financial relationship WIRED might produce adversarial
+        Meta coverage based newsworthiness alone. Meta zero Reddit licensing so adversarial
+        structurally cheaper but not proof bias. RPO forward-looking subject to change.
+    cautious_language: Financial correlation does not imply causation. Google/OpenAI ->
+      Reddit licensing and RPO $143.7M creates STRUCTURAL INCENTIVE for softer Google/OpenAI
+      coverage from Advance-owned publications not proof editorial influence. RPO primarily
+      from long-term content licensing per SEC 10-K not exclusively AI licensing limitation
+      acknowledged. Requires Welch t-test plus Cohen d plus bootstrap CI on observed
+      article-level tone scores empirical validation. Synthetic tone arrays illustrative
+      only. Every fact needs source URL all URLs verbatim browser.search results Aug
+      31 2026 and SEC filing. Correlation only not causation. No claim editorial control
+      only structural incentive alignment. MANUAL ILLUSTRATIVE scores not statistically
+      significant. p_value not_calculated cohens_d not_calculated ci not_calculated
+      significant false significant_empirical false.
+    test_file: tests/test_mechanism_427_reddit_10k_rpo_type_c.py
   nyt_policy_beat_adversarial_spillover_416_cecilia_kang_aug31_2026:
     mechanism: 416
     type: Type B Journalist Cross-Entity Tracking
@@ -4653,8 +4820,8 @@ cross_publication_findings:
     - YourLifeChoices
     - SecurityBrief.com.au
     source_urls:
-    - https://www.youtube.com/watch?v=4ZXgcpVVfjM
-    - https://www.youtube.com/watch?v=cYBEvIuIsN8
+    - 'https://www.youtube.com/watch?v=4ZXgcpVVfjM'
+    - 'https://www.youtube.com/watch?v=cYBEvIuIsN8'
     - https://aapnews.aap.com.au/news/smart-glasses-in-sharp-focus-over-privacy-concerns
     - https://securitybrief.com.au/story/australia-urged-to-ban-smart-glasses-over-covert-filming
     - https://www.karmactive.com/kmart-anko-smart-glasses-privacy-concerns/
@@ -6071,7 +6238,7 @@ cross_publication_findings:
     - https://www.reuters.com/business/meta-says-us-states-are-seeking-14-trillion-penalties-august-youth-safety-trial-2026-07-07/
     - https://www.motleyrice.com/news/social-media-lawsuit-verdict-jury-send-message-protect-children
     - https://www.fastcompany.com/91516835/social-media-meta-youtube-instagram-trials
-    - https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law?t
+    - 'https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law?t'
     - https://www.reuters.com/sustainability/boards-policy-regulation/google-settles-youtube-childrens-privacy-lawsuit-2025-08-19/
     - https://www.thetimes.com/business/companies-markets/article/big-tech-meta-courts-youtube-flnx9xzlk
     - https://assets.alm.com/7f/b9/e4659b1943ad912e11f78cebfa78/in-re-social-media-adolescent-candce-22-03047-2332-0.pdf
@@ -8963,7 +9130,7 @@ cross_publication_findings:
     mechanism_name: YouTube Tech Review Affiliate-Privacy Revenue Paradox — GadgetEvolution
     mechanism_type: cross_platform_affiliate_revenue_privacy_paradox
     source_urls:
-    - https://www.youtube.com/watch?v=gadgetevolution-samsung-meta-comparison
+    - 'https://www.youtube.com/watch?v=gadgetevolution-samsung-meta-comparison'
     test_count: 18
     test_file: test_gadgetevolution_affiliate_privacy_paradox_aug20.py
   gemini_android_xr_data_retention_investigation_gap:
@@ -9822,7 +9989,7 @@ cross_publication_findings:
     - https://www.businessday.co.za/lifestyle/gadgets-and-gear/2026-07-15-podcast-what-privacy-and-security-risks-do-ai-smart-glasses-pose/
     - https://www.moneyweb.co.za/moneyweb-podcasts/moneyweb-midday/through-the-looking-glass-the-hidden-dangers-of-smart-glasses/
     - https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/
-    - https://www.youtube.com/watch?v=0NLaAQuaCJE
+    - 'https://www.youtube.com/watch?v=0NLaAQuaCJE'
     - https://www.androidauthority.com/samsung-smart-glasses-perverts-3693148/
     test_file: tests/test_global_institutional_podcast_meta_category_proxy_aug18.py
     testable_predictions:
@@ -10249,7 +10416,7 @@ cross_publication_findings:
     - https://www.fastcompany.com/91544045/warby-parker-google-intelligent-eyewear
     - https://www.ainvest.com/news/warby-parker-google-deal-real-capital-doesn-rewrite-architecture-2605/
     - https://Www.Entrepreneur.com/business-news/google-is-developing-ai-smart-glasses-with-warby-parker/492015
-    - https://www.theregister.com/2025/05/21/google_warby_parker_glass/?td=readmore
+    - 'https://www.theregister.com/2025/05/21/google_warby_parker_glass/?td=readmore'
     - https://news.bloomberglaw.com/california-brief/warby-parker-climbs-on-google-pact-for-ai-powered-eyewear-2
     test_file: tests/test_google_warby_parker_equity_publisher_feedback_loop_aug17.py
     testable_predictions:
@@ -11108,7 +11275,7 @@ cross_publication_findings:
     - https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/
     - https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/
     - https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/
-    - https://www.youtube.com/watch?v=8WGEky2D3iY
+    - 'https://www.youtube.com/watch?v=8WGEky2D3iY'
     test_count: 48
     test_file: tests/test_hayden_field_ai_beat_concentration_aug11.py
   inc_mansueto_smart_glasses_privacy_redirected_attribution:
@@ -11530,8 +11697,8 @@ cross_publication_findings:
     - https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/
     - https://www.livemint.com/technology/the-ai-gadget-that-can-make-your-life-better-and-two-that-definitely-wont-11714736399659.html
     - https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/
-    - https://www.youtube.com/watch?v=TA4Wo08vGqk
-    - https://www.youtube.com/watch?v=EaJSPeJmqis
+    - 'https://www.youtube.com/watch?v=TA4Wo08vGqk'
+    - 'https://www.youtube.com/watch?v=EaJSPeJmqis'
     - https://www.nprillinois.org/2026-06-19/are-snaps-2-195-smart-glasses-the-next-big-thing-in-tech
     - https://muckrack.com/joannastern/articles
     - https://www.androidauthority.com/meta-smart-glasses-led-camera-3685162/
@@ -12396,7 +12563,7 @@ cross_publication_findings:
     - https://www.deezer.com/en/show/1272032
     - https://www.komando.com/playlist/smart-devices-gadgets/
     - https://www.podbean.com/media/share/dir-panfa-2fdf9aa7
-    - https://www.youtube.com/watch?v=LspLdcz9uqQ
+    - 'https://www.youtube.com/watch?v=LspLdcz9uqQ'
     test_file: tests/test_mass_market_vocabulary_propagation_cycle_aug19.py
     type: podcast_broadcast_vocabulary_propagation
   matt_wille_gizmodo_smart_glasses_beat_reporter_vocabulary_bifurcation:
@@ -13618,7 +13785,7 @@ cross_publication_findings:
     - https://cybernews.com/tech/smartglasses-england-courts/
     - https://www.techtimes.com/articles/324064/20260812/germany-invokes-cayla-spy-device-law-against-meta-smart-glasses-owners-face-destruction-risk.htm
     - https://betanews.com/article/apple-smart-glasses-wwdc-2027-privacy/
-    - https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud?cid=external-feeds_iluminar_meta
+    - 'https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud?cid=external-feeds_iluminar_meta'
     - https://www.mediapost.com/publications/article/416992/meta-responds-to-pervert-glasses-backlash.html
     test_file: tests/test_multi_vector_cultural_delegitimization_cascade_aug18.py
     testable_predictions:
@@ -14178,8 +14345,8 @@ cross_publication_findings:
     - 9to5Mac
     - 9to5Google
     source_urls:
-    - https://www.youtube.com/watch?v=mcz5ZnH_YPY
-    - https://www.youtube.com/watch?v=EWOvH-BDWe8
+    - 'https://www.youtube.com/watch?v=mcz5ZnH_YPY'
+    - 'https://www.youtube.com/watch?v=EWOvH-BDWe8'
     - http://9to5google.com/2026/06/22/the-sideload-037-specs-for-your-specs/
     - https://9to5google.com/2026/07/23/inbox-newsletter-4/
     - https://digiday.com/media/9to5-google-apple/
@@ -15236,7 +15403,7 @@ cross_publication_findings:
     - https://rightstech.com/2026/06/openai-not-planning-to-share-advertising-revenue-with-publishers/
     - https://searchengineland.com/openai-searchgpt-chatgpt-integration-447379
     - https://www.twipemobile.com/openai-shares-ai-strategies-for-publishers/
-    - https://support.google.com/adsense/answer/180195?hl=en
+    - 'https://support.google.com/adsense/answer/180195?hl=en'
     - https://wan-ifra.org/newsroom-ai-catalyst-prototype-development-fund/
     - http://openai.com/index/newsroom-ai-catalyst-global-program-with-wan-ifra/
     - https://digiday.com/marketing/openais-chatgpt-reaches-the-coupon-stage-of-building-an-ad-business/
@@ -15996,7 +16163,7 @@ cross_publication_findings:
     mechanism_type: cross_medium_vocabulary_asymmetry
     source_urls:
     - https://grahamcluley.com/smashing-security-podcast-455/
-    - https://www.youtube.com/watch?v=TVdoEPg42pQ
+    - 'https://www.youtube.com/watch?v=TVdoEPg42pQ'
     - https://au.radio.net/podcast/ai-inside
     - https://www.listennotes.com/podcasts/what-in-the-world/why-are-smart-glasses-so-OGIk4bCXi5E/
     - https://nz.radio.net/podcast/double-tap-canada
@@ -17451,7 +17618,7 @@ cross_publication_findings:
     - https://www.bestmediainfo.com/digital/qualcomm-cmo-don-mcguire-50-percent-will-be-qualcomm-s-snapdragon-50-percent-will-be-partner
     - https://www.sammobile.com/news/snapdragon-summit-2024-qualcomm-samsung-partnership/
     - https://www.thestreet.com/technology/qualcomm-samsung-expanded-partnership-jul-2026
-    - https://www.theinvestor.co.kr/view.php?ud=20260115000123
+    - 'https://www.theinvestor.co.kr/view.php?ud=20260115000123'
     - https://www.marketingdive.com/news/qualcomm-snapdragon-thats-how-campaign-72andsunny/741892/
     - https://www.businessinsider.com/samsung-global-advertising-spend-2024
     - https://www.statista.com/statistics/1368689/samsung-electronics-advertising-spending/
@@ -21003,7 +21170,7 @@ cross_publication_findings:
     source_urls:
     - https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
     - https://www.podchaser.com/podcasts/acquired-ai-5589694/episodes/meta-faces-lawsuit-over-ray-ba-285957569
-    - https://www.youtube.com/watch?v=-qJ_R1KqBuk
+    - 'https://www.youtube.com/watch?v=-qJ_R1KqBuk'
     testable_predictions:
     - Waveform will not produce a Meta glasses privacy scrutiny segment comparable
       to The Verge's print coverage intensity within 3 months of Samsung Galaxy Glasses
@@ -21709,7 +21876,7 @@ cross_publication_findings:
     publications:
     - wired
     source_urls:
-    - https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://www.wired.com/story/anthropic-claude-research-functional-emotions/
+    - 'https://appwritefunc.yet-another-testing-domain.com/api/grab?url=https://www.wired.com/story/anthropic-claude-research-functional-emotions/'
     - https://technologistmag.com/anthropic-walks-back-policy-that-could-have-sabotaged-ai-researchers-using-claude/
     - https://bestintechnology.de/hands-on-with-anthropics-claude-cowork-an-ai-agent-that-actually-works/
     - https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
@@ -23804,7 +23971,7 @@ cross_publication_findings:
         The vocabulary differential in #307 is the SURFACE manifestation of these
         financial incentives.'
     source_urls:
-    - https://www.youtube.com/watch?v=Zd6gw1SEoqQ
+    - 'https://www.youtube.com/watch?v=Zd6gw1SEoqQ'
     - https://www.fastcompany.com/91594615/metas-creepy-smart-glasses-are-part-of-a-much-bigger-plan
     - https://www.techrepublic.com/article/news-openai-chatgpt-ads-europe-emea/
     - https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/
@@ -24527,7 +24694,7 @@ publications:
     publication: CNET
     source_urls:
     - https://twit.tv/shows/tech-news-weekly/episodes/356
-    - https://www.youtube.com/watch?v=z1X3URWpk04
+    - 'https://www.youtube.com/watch?v=z1X3URWpk04'
     - http://abraralheeti.com/
     - https://en.wikipedia.org/wiki/CNET
     - https://www.engadget.com/2238891/apple-appears-to-have-leaked-its-camera-equipped-airpods/
@@ -27738,11 +27905,11 @@ publications:
       Privacy Vocabulary Zero
     publication: MacRumors (Apple-ecosystem podcast)
     source_urls:
-    - https://www.youtube.com/watch?v=H2_EVCRNfds
+    - 'https://www.youtube.com/watch?v=H2_EVCRNfds'
     - https://9to5mac.com/2026/08/21/daily-august-21-2026/
     - https://www.iheart.com/podcast/105-kill-switch-30880104/episode/the-glassholes-are-back-294858162/
     - https://ambermac.com/the-ambermac-show-ep056-metas-pervert-smart-glasses-openais-canadian-safety-promise/
-    - https://www.youtube.com/watch?v=gxZj-XGIQ3Y
+    - 'https://www.youtube.com/watch?v=gxZj-XGIQ3Y'
     test_count: 45
     test_file: tests/test_type_e_5pm_macrumors_show_apple_camera_airpods_aspirational_framing_cross_medium_privacy_vocabulary_zero_aug22.py
     type: E
@@ -27997,9 +28164,9 @@ publications:
     publication: Cross-publication (Rabbit Hole podcast, 7NEWS Australia, Digital
       Trends, Clayton Utz, EFA, GetUp)
     source_urls:
-    - https://www.youtube.com/watch?v=HwzD7EWak5I
-    - https://www.youtube.com/watch?v=4ZXgcpVVfjM
-    - https://www.youtube.com/watch?v=M6e26ybtJqk
+    - 'https://www.youtube.com/watch?v=HwzD7EWak5I'
+    - 'https://www.youtube.com/watch?v=4ZXgcpVVfjM'
+    - 'https://www.youtube.com/watch?v=M6e26ybtJqk'
     test_count: 30
     test_file: tests/test_type_e_4pm_rabbit_hole_fashion_surveillance_kmart_price_democratization_aug21.py
     type: E
@@ -28264,7 +28431,7 @@ publications:
     publication: The Verge (PMX / PMC)
     source_urls:
     - https://muckrack.com/miasato/articles
-    - https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC
+    - 'https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC'
     - https://arc-codex.com/article/4f9d85a7173e165b47b494bb453e99d3
     - https://www.fiercebymitu.com/p/can-you-actually-protect-yourself
     test_count: 38
@@ -28714,7 +28881,7 @@ publications:
     name: NBC News Broadcast Gender-Framed Camera Wearable Entity Selection
     publication: NBC News (Comcast/NBCUniversal)
     sources:
-    - https://www.youtube.com/watch?v=0NLaAQuaCJE
+    - 'https://www.youtube.com/watch?v=0NLaAQuaCJE'
     - https://www.inc.com/kit-eaton/why-apples-controversial-new-airpods-could-get-banned-in-offices-and-gyms/91394097
     - https://gizmodo.com/no-airpods-with-cameras-arent-smart-glasses-for-your-ears-2000801471
     subtitle: Cross-Medium Alarm Vocabulary Portability
@@ -29198,10 +29365,10 @@ publications:
       source_urls:
       - https://www.niemanlab.org/2026/05/tech-journalist-joanna-stern-on-leaving-the-wall-street-journal-and-moving-on-to-new-things/
       - https://www.thewrap.com/media-platforms/journalism/joanna-stern-nbc-scott-macfarlane-pablo-torre-new-independent-model/
-      - https://www.youtube.com/watch?v=EaJSPeJmqis
+      - 'https://www.youtube.com/watch?v=EaJSPeJmqis'
       - https://betanews.com/article/meta-ray-bans-turned-spy-glasses-privacy-light/
       - https://9to5mac.com/2024/03/04/joanna-stern-would-not-buy-vision-pro/
-      - https://www.youtube.com/watch?v=Bhzno-IjuiY
+      - 'https://www.youtube.com/watch?v=Bhzno-IjuiY'
       wsj_apple_tone: -0.2
       wsj_meta_tone: 0.35
     wsj_disclosure_practice:
@@ -30454,8 +30621,8 @@ publications:
       date: '2026-08-07'
       finding: 'EIC Delegation Paradox — Mechanism #6'
       source_urls:
-      - https://www.youtube.com/watch?v=ANV3tE5ywv0
-      - https://www.youtube.com/watch?v=TfN5ket9L8Q
+      - 'https://www.youtube.com/watch?v=ANV3tE5ywv0'
+      - 'https://www.youtube.com/watch?v=TfN5ket9L8Q'
       - https://www.nprillinois.org/2023-09-04/the-verges-nilay-patel-talks-googles-legacy
       - https://www.everand.com/podcast/773063094/
       - https://podcastrepublic.net/podcast/1011668648
@@ -30850,7 +31017,7 @@ publications:
     - https://ie.radio.net/podcast/thevergecast
     - https://podscan.fm/podcasts/the-vergecast
     - https://muckrack.com/miasato/articles
-    - https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC
+    - 'https://inforeader.com/i/?a=reader&search=author%3A%22Mia+Sato%22&rid=6801e6e788f01&get=f_2&order=DESC'
     test_file: tests/test_type_e_03am_vergecast_three_episode_camera_vocabulary_convergence_aug22.py
     type: Podcast Sentiment Tracking (Type E)
   vergecast_two_episode_camera_vocabulary_cascade:
@@ -32430,7 +32597,7 @@ publications:
       description: Podcast Ecosystem Privacy Vocabulary Amplification — AI Inside
         contributes to the overall podcast alarm vocabulary concentration on Meta
     source_urls:
-    - https://www.youtube.com/watch?v=9J0OdVGhXQg
+    - 'https://www.youtube.com/watch?v=9J0OdVGhXQg'
     - https://jasonhowell.substack.com/p/ai-is-eating-its-own-tail
     - https://www.podbean.com/podcast-detail/2c4i8-2e6ad6/AI-Inside-Podcast
     - https://podcast.app/ai-inside-p6026878
@@ -32947,7 +33114,7 @@ publications:
       '
     asymmetry_score: 0.78
     source_urls:
-    - https://www.youtube.com/watch?v=p8uFJZJ8pG0
+    - 'https://www.youtube.com/watch?v=p8uFJZJ8pG0'
     cross_references:
     - mechanism_id: 146
       type: cross-medium extension
@@ -33826,7 +33993,7 @@ publications:
       description: Meta is market-leading camera glasses brand — some concentration
         expected
     sources:
-    - https://www.youtube.com/watch?v=HwzD7EWak5I
+    - 'https://www.youtube.com/watch?v=HwzD7EWak5I'
     test_file: tests/test_type_e_05am_rabbit_hole_fashion_surveillance_cross_domain_propagation_aug25.py
   katie_couric_mainstream_single_entity_expert_authority_direction:
     mechanism_id: 297
@@ -37805,7 +37972,7 @@ publications:
     - https://www.theinformation.com/titv/jo9tx
     - https://foxbusiness.com/fox-news-tech/metas-up-18b-settlement-could-first-domino-big-tech-tennessee-ag-says
     - https://muckrack.com/jonathan-vanian/articles
-    - https://www.youtube.com/watch?v=5xniF9sqVpo
+    - 'https://www.youtube.com/watch?v=5xniF9sqVpo'
   cross_publication_going_rogue_agency_deflection_vocabulary_convergence:
     mechanism_id: 341
     test_file: tests/test_cross_publication_going_rogue_agency_deflection_vocabulary_convergence_aug27.py
