@@ -11234,3 +11234,150 @@ advance_turnitin_dual_sided_ai_conflict_432:
     no_editorial_control_claim: true
     requires_empirical_validation: Welch t-test Cohen d bootstrap CI on observed article-level tone scores
 
+
+boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_442:
+  mechanism_id: 442
+  date_analyzed: '2026-09-01'
+  type: Type B Journalist Cross-Entity Pricing Framing Asymmetry
+  iteration: 442
+  iteration_type: B
+  iteration_time: 2026-09-01 08:00 PDT
+  scheduled_job_id: mediascope-daily-iteration
+  goal_id: goal_54093bda4145
+  publication_focus: WIRED (Condé Nast)
+  journalist: Boone Ashworth
+  journalist_role: Staff Writer Gear
+  competitor_pair: Snap vs Meta - AR glasses pricing and subscription framing divergence
+  finding_type: journalist_cross_entity_pricing_framing_asymmetry
+  overview: 'WIRED Staff Writer Boone Ashworth covers Snap AR Specs and Meta Ray-Ban subscription with divergent price framing despite comparable hardware category and 7.3x price gap. Snap Spectacles $2195 Jun 16 2026 - title You Can Finally Buy Snaps New AR Specs For $2195 - framed as aspirational availability milestone, finally buy, no price extraction language, zero subscription alarm, neutral product announcement. Meta Ray-Ban $299 Jun 23 2026 plus optional $19.99 per month subscription Jul 2 2026 co-bylined Julian Chokkattu and Boone Ashworth - title Meta Is Charging a Subscription for Smart Glasses Features Welcome to the New Era of Consumer Tech - framed as price extraction, extracting value, monetizing customers, scare quotes on expanded access, deficit framing despite on-device features working without subscription. Most expensive competitor receives least price criticism, cheapest receives most. Pricing inversion: $2195 is 7.34x $299, yet $2195 receives zero extraction framing, $299 plus optional subscription receives maximal extraction framing. Same journalist across both entities, same beat Gear, same window Jun-Jul 2026, 16-day gap. Financial context correlation not causation Condé Nast private no SEC filings OpenAI licensing undisclosed per Reuters Aug 20 2024 multi-year partnership financial terms undisclosed, Amazon Rufus undisclosed commercial partnership Jul 2025, Microsoft PCM usage-based pilot exact terms not publicly disclosed, correlation does not imply causation, structural incentive not proof of editorial control. MANUAL ILLUSTRATIVE only.'
+  snap_specs_coverage:
+    title: You Can Finally Buy Snaps New AR Specs For $2195
+    date: '2026-06-16'
+    author: Boone Ashworth
+    publication: WIRED
+    url: https://www.wired.com/story/you-can-finally-buy-snaps-new-ar-specs-for-2195/
+    price: 2195
+    price_multiple_vs_meta: 7.34
+    framing: neutral_product_announcement_aspirational_availability
+    language_markers:
+    - finally buy
+    - new AR Specs
+    price_extraction_terms: 0
+    subscription_framing: none
+    surveillance_terms: 0
+    tone_MANUAL_ILLUSTRATIVE: 0.12
+    source_verification: browser_verified Jun 16 2026 9:00 AM WIRED primary via QA audit 2026-09-01 10:15 UTC, author page https://www.wired.com/author/boone-ashworth/
+  meta_subscription_coverage:
+    title: Meta Is Charging a Subscription for Smart Glasses Features Welcome to the New Era of Consumer Tech
+    date: '2026-07-02'
+    authors: Julian Chokkattu and Boone Ashworth
+    primary_author_for_this_mechanism: Boone Ashworth co-author
+    publication: WIRED
+    url: https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+    price_hardware: 299
+    subscription_price: 19.99
+    subscription_optional: true
+    on_device_works_without_subscription: true
+    framing: adversarial_price_extraction_deficit
+    language_markers:
+    - extracting value
+    - monetizing customers
+    - scare quotes expanded access
+    - subscription for on-device features
+    price_extraction_terms: 3
+    subscription_framing: extraction_monetization
+    surveillance_terms: 0
+    tone_MANUAL_ILLUSTRATIVE: -0.48
+    source_verification: browser_verified Jul 2 2026 5:30 AM WIRED primary via QA audit 2026-09-01 10:15 UTC, secondary Slashdot https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features/ attributes to Julian and Boone Jul 2
+    secondary_source_url: https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features/
+  meta_cheaper_hardware_context:
+    title: Meta New Smart Glasses Are Cheaper Colorful and Meta Branded
+    date: '2026-06-23'
+    author: Julian Chokkattu
+    publication: WIRED
+    url: https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+    price: 299
+    framing: neutral_product_announcement
+    tone_MANUAL_ILLUSTRATIVE: 0.05
+    source_verification: browser_verified Jun 23 2026 9:00 AM WIRED primary via QA audit
+  pricing_inversion_analysis:
+    snap_price: 2195
+    meta_price: 299
+    multiple: 7.34
+    subscription_optional: true
+    subscription_price: 19.99
+    inversion_type: most_expensive_least_criticism
+    expected_rational_framing: higher_price_more_scrutiny
+    observed_framing: higher_price_less_scrutiny_lower_price_more_scrutiny
+    framing_score_MANUAL_ILLUSTRATIVE:
+      snap_tone: 0.12
+      meta_tone: -0.48
+      delta: -0.60
+      target_avg: -0.48
+      peer_avg: 0.12
+      asymmetry_score: -0.60
+      t_statistic: NOT_CALCULATED
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_lower: NOT_CALCULATED
+      ci_upper: NOT_CALCULATED
+      is_significant: false
+      methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level scores from VADER TextBlob plus human annotation for empirical validation. DO NOT claim empirical significance from synthetic scores alone. Real WIRED corpus needed. 2 plus 1 WIRED primaries exist for 442 but pricing dimension adds framing nuance not capability dimension.
+      interpretation: ILLUSTRATIVE ONLY synthetic tone approximations n=1 plus 1, not observed corpus. Large apparent pricing framing inversion delta 0.60 in how WIRED treats $2195 vs $299 plus $19.99 optional. Financial tie correlation does not imply causation. Requires empirical validation.
+  novelty_vs_existing:
+    mechanism_426: 'WIRED Senior Editor Gear Julian Chokkattu Comfort Price Privacy Triangulation Meta vs Samsung vs Apple - 3-product same-reviewer triangulation with comfort price privacy symmetry scoring - $799 69g 1 camera vs $1799 545g plus 302g 19 cameras 2.25x vs $3499 600-650g 12 cameras 4.38x - price criticism absent despite $1799 2.25x and $3499 4.38x - distinct from Snap $2195 7.34x vs Meta $299 plus subscription extraction framing - different competitor Snap vs Samsung Apple, different price point $2195 vs $1799 $3499, different journalist Boone Ashworth vs Julian Chokkattu, different framing dimension subscription extraction vs comfort price privacy'
+    mechanism_431: 'Boone Ashworth Meta second LED fix vs Samsung Google tamper enforcement asymmetry - LED tamper detection parity silence vs Meta ghost dot extraction framing - different dimension hardware privacy tamper enforcement not pricing subscription'
+    mechanism_365: 'Boone Ashworth OpenAI vs Meta same journalist - OpenAI aspirational make us happy vs Meta secretly recording alarm - different competitor OpenAI vs Snap, different dimension emotional register not pricing'
+    mechanism_400: 'Reece Rogers Samsung Galaxy Glasses LED tamper-detection parity silence vs Meta ghost dot extraction framing - different journalist Reece Rogers vs Boone Ashworth, different hardware feature LED vs pricing subscription'
+    mechanism_442_distinct: 'Pricing subscription framing asymmetry - Snap $2195 aspirational availability finally buy zero extraction vs Meta $299 cheap plus $19.99 optional subscription extraction monetization scare quotes deficit framing despite on-device working without subscription - adds pricing subscription dimension, most expensive least criticism inversion 7.34x, same journalist Boone Ashworth across both entities, same beat Gear, same window Jun-Jul 2026 16-day gap, browser-verified WIRED primaries, financial prediction correlation not causation'
+  confounding_factors_ranked:
+    - level: STRONG
+      factor: Product category maturity and market positioning - Snap Spectacles developer kit AR $2195 5th generation limited production vs Meta Ray-Ban consumer mass market $299 5M plus units - developer pricing may naturally receive less consumer price criticism independent of financial incentive - adjustment NOT_CALCULATED
+    - level: STRONG
+      factor: Source type and announcement timing - Snap announcement finally available after years of developer-only vs Meta subscription new business model announcement - availability milestone naturally frames as positive vs monetization naturally frames as negative - adjustment NOT_CALCULATED
+    - level: MODERATE
+      factor: Temporal separation 16 days Jun 16 vs Jul 2 2026 - same window but news cycle and editorial staffing may differ slightly - adjustment NOT_CALCULATED
+    - level: MODERATE
+      factor: Subscription model novelty - $19.99 optional for on-device features is new consumer tech trend worth covering as business model story - Snap has no subscription - legitimate business model critique may drive extraction framing independent of financial incentive - adjustment NOT_CALCULATED
+    - level: MODERATE
+      factor: Hardware capability disclosure - Snap Specs standalone AR with spatial computing vs Meta Ray-Ban camera plus AI - different product categories may warrant different price sensitivity - adjustment NOT_CALCULATED
+    - level: WEAK
+      factor: User base scale Meta 5M plus installed vs Snap limited developer units - larger installed base may warrant more scrutiny independent of financial incentive - adjustment NOT_CALCULATED
+  cautious_language:
+    correlation_not_causation: true
+    structural_incentive_not_proof_editorial_control: true
+    illustrative_scores_manual_estimates_only: true
+    synthetic_tone_arrays_illustrative_only: true
+    requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation
+    no_claim_editorial_direction: true
+    manual_illustrative_scores_not_statistically_significant: true
+    p_value_not_calculated: true
+    cohens_d_not_calculated: true
+    ci_not_calculated: true
+    significant_false: true
+    significant_empirical_false: true
+  coverage_prediction: WIRED will continue applying softer price framing for Snap $2195 AR Specs aspirational availability finally buy neutral vs adversarial price extraction framing for Meta $299 plus $19.99 optional subscription extracting value monetizing customers scare quotes expanded access because Condé Nast receives undisclosed OpenAI licensing per Reuters Aug 20 2024 vs $0 Meta, private company no SEC filings, correlation not causation, structural incentive only not proof of editorial influence, correlate not causation, requires primary-source verification against SEC filings earnings calls publisher statements for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule, MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+  source_urls:
+  - https://www.wired.com/story/you-can-finally-buy-snaps-new-ar-specs-for-2195/
+  - https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+  - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+  - https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features/
+  - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+  test_file: tests/test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py
+  cross_references:
+  - 33
+  - 70
+  - 87
+  - 89
+  - 97
+  - 118
+  - 199
+  - 354
+  - 362
+  - 365
+  - 400
+  - 426
+  - 431
+  - 436
+  browser_verification_date: '2026-09-01T10:15:00Z'
+  browser_task_verification: QA audit Sep 1 2026 10:15 UTC browser-verified Julian Chokkattu Apple Vision Pro Mar 20 2024, Meta $299 Jun 23 2026, Meta subscription Jul 2 2026, Boone Ashworth Snap Specs $2195 Jun 16 2026
