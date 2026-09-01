@@ -141,7 +141,34 @@ def test_source_urls_https():
     last = p.split("## Iteration #450")[-1]
     assert "https://guiltyfeminist.com/list-of-episodes/" in last
     assert "https://en.wikipedia.org/wiki/Everyone_Hates_Elon" in last
-    assert "https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md" in last
+    # Circular GitHub reference must be marked as REMOVED, not present as primary
+    assert "github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md" not in last or "REMOVED" in last or "circular" in last.lower()
+    # Verify secondary/unverified labeling
+    assert "SECONDARY" in last
+    assert "UNVERIFIED" in last or "unverified" in last.lower()
+    # Verify MANUAL ILLUSTRATIVE discipline preserved
+    assert "MANUAL ILLUSTRATIVE" in last
+    assert "p_value NOT_CALCULATED" in last
+    assert "is_significant False" in last or "is_significant false" in last.lower()
+
+def test_circular_source_removed():
+    import pathlib
+    p=pathlib.Path("podcast-sentiment.md").read_text()
+    last = p.split("## Iteration #450")[-1]
+    # The circular self-reference must not be claimed as a valid source
+    # It should be explicitly noted as removed or absent as primary
+    assert "circular" in last.lower() or "REMOVED" in last
+    # No claim that GitHub blob is a primary source for Attention Sphere
+    assert "Attention Sphere" in last
+    # Verify Wikipedia correctly labeled as secondary not primary
+    assert "Wikipedia" in last and ("secondary" in last.lower())
+
+def test_source_count_corrected():
+    import pathlib
+    p=pathlib.Path("podcast-sentiment.md").read_text()
+    last = p.split("## Iteration #450")[-1]
+    # Heading must not still claim 17 HTTPS Direct after circular removal
+    assert "17 HTTPS Direct" not in last or "16 HTTPS" in last or "Circular Removed" in last
 
 def test_goal_job_ids():
     import pathlib

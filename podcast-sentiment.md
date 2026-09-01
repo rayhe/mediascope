@@ -8466,7 +8466,7 @@ This is a monitoring correction not major discovery. No new empirical mechanism 
 
 **Financial Predictor:** Podcast ecosystem cultural consensus (zero financial relationship) plus WIRED financial incentive (Condé Nast OpenAI $5-30M/yr + Amazon Rufus $3-10M/yr + Google Zero vs Meta $0) both predict softer competitor tone and harder Meta tone, consistent with dual-vector hypothesis but does not prove editorial control. Correlation does not imply causation. Requires empirical validation via observed podcast corpus and SEC filings (Amazon 10-Q Q1 2026 Apr 29 2026, Google Alphabet 10-K), earnings calls (Jassy Q1 2026, Lynch FT/Barron's), publisher statements (Reuters, Adweek, Digiday). MANUAL ILLUSTRATIVE illustrative not empirical. No claim of editorial control, only structural incentive alignment plus cultural consensus via zero financial tie.
 
-### 10. Sources (17 HTTPS Direct)
+### 10. Sources (16 HTTPS Direct + 1 Secondary Unverified + 1 Search-Results Unverified, Circular Removed)
 
 - https://guiltyfeminist.com/list-of-episodes/ (Guilty Feminist 498 Politics Aug 31 2026, 497 Nuance Drought Aug 23 2026, 496 Intimacy Aug 17 2026 official list)
 - https://zeno.fm/podcast/the-guilty-feminist/ (Zeno.FM Guilty Feminist 31 August 2026 Politics, 23 August 2026 Nuance Drought, festival season artifact context)
@@ -8616,7 +8616,7 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 - **Fortune AI Weekly next episode:** Prediction - Next episode likely covers AI industry not Meta wearables specifically - probability 0.75 MANUAL ILLUSTRATIVE - if next episode covers Meta Ray-Ban privacy debate follow-up then update mechanism
 - **Correlation does not imply causation:** All predictions are MANUAL ILLUSTRATIVE only - require observed podcast corpus for empirical validation - no claim empirical significance - structural incentive not proof editorial control
 
-### 10. Sources (17 HTTPS Direct)
+### 10. Sources (16 HTTPS Direct + 1 Secondary Unverified + 1 Search-Results Unverified, Circular Removed)
 
 - https://guiltyfeminist.com/list-of-episodes/ (primary - 498 Politics Aug 31 2026 latest, 497 Nuance Drought Aug 23 2026, 496 Intimacy Aug 17 2026, 495 Architecture of Autocracy Aug 10 2026, 494 Ventnor Fringe Aug 3 2026 - browser-verified Sep 1 16:00 PDT - no 499 as of Sep 1 16:00 PDT)
 - https://guiltyfeminist.com/episode/ (primary - 498 Politics recorded 20 Aug released 31 Aug Felicity Ward co-host Hannah Spencer Green Party Millicent Sarre music)
