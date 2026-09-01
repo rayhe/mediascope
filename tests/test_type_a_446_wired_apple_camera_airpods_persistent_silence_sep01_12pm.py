@@ -362,7 +362,7 @@ class TestMechanism446Confounders(unittest.TestCase):
         mech = next((v for v in apple.values() if isinstance(v, dict) and v.get('mechanism_id') == 446), None)
         import json
         mech_str = str(mech)
-        self.assertNotIn('-', mech_str, "No em dashes allowed per project standing rule")
+        self.assertNotIn('—', mech_str, "No em dashes allowed per project standing rule")
         self.assertNotIn('–', mech_str, "No en dashes allowed per project standing rule")
 
     def test_test_file_reference(self):
