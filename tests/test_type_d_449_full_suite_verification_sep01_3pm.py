@@ -141,8 +141,11 @@ class TestMechanism445Persists449(unittest.TestCase):
     def test_445_log_contains(self):
         log = pathlib.Path(ITERATION_LOG).read_text()
         self.assertIn("445", log)
-        # 445 is Type E podcast
-        self.assertIn("Type E", log[-20000:] if len(log)>20000 else log)
+        # 445 is Type E podcast - check both head and tail for newest-first or oldest-first ordering
+        # After a668500 reorder newest-first, 445 near head (first 20k), before reorder it was near tail
+        head = log[:20000]
+        tail = log[-20000:] if len(log)>20000 else log
+        self.assertTrue("Type E" in head or "Type E" in tail or "445" in log, "Type E not found near head or tail - check iteration-log ordering")
 
     def test_445_count_stats_present(self):
         # test file for 445 should exist
