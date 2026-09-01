@@ -107,7 +107,11 @@ def test_meta_rayban_coverage_gap():
     assert "face-computing metaverse still has not gone mainstream" in str(meta["framing_notes"]).lower() or "glass slabs" in str(meta["framing_notes"]).lower()
     assert "not sure where to start" in str(meta["framing_notes"]).lower() or "LED" in str(meta["framing_notes"])
     assert "ZERO" in str(meta["coverage_gap"]) or "0" in str(meta["coverage_gap"])
-    assert meta["source_url"].startswith("http")
+    assert meta["source_url"].startswith("https://")
+    # QA FIX: ensure no HTTP aggregator mirror remains
+    assert "aggregator_mirror" not in meta or not str(meta.get("aggregator_mirror","")).startswith("http://")
+    # QA FIX: no primary_expected remains
+    assert "primary_expected" not in meta
 
 
 def test_google_android_xr_playful_neutral():
@@ -206,11 +210,17 @@ def test_source_urls_https():
     mech = entry[mech_key]
     urls = mech["source_urls"]
     assert len(urls) >= 10
-    https_count = sum(1 for u in urls if u.startswith("https://"))
-    assert https_count >= 8, "At least 8 URLs must be HTTPS per project rule"
+    # QA FIX: enforce ALL URLs HTTPS, no HTTP mirrors
+    for u in urls:
+        assert u.startswith("https://"), f"URL must be HTTPS after QA fix, got {u}"
+        assert not u.startswith("http://"), f"HTTP URL found after QA fix {u}"
     assert any("macdailynews.com" in u for u in urls)
     assert any("youtube.com" in u for u in urls)
     assert any("wired.com" in u for u in urls)
+    # New authoritative sources must be present
+    assert any("macrumors.com/2024/01/19/apple-vision-pro-tech-specs" in u for u in urls)
+    assert any("softonic.com" in u for u in urls or "skift.com" in u for u in urls)
+    assert any("reuters.com" in u for u in urls)
 
 
 def test_no_em_dashes():
@@ -284,6 +294,57 @@ def test_no_duplicate_julian_mechanism():
     # Lauren's mechanism should mention emotional register inversion, not comfort/price/privacy triangulation as primary
     assert "emotional" in mech["pattern"].lower() or "empathetic" in mech["pattern"].lower()
     assert mech["journalist"].startswith("Lauren Goode")
+
+
+
+def test_no_expected_urls():
+    # QA FIX: ensure no primary_expected or expected label remains anywhere in mechanism
+    entry = get_journalist("Lauren Goode")
+    mech_key = [k for k in entry.keys() if "436" in str(k)][0]
+    mech = entry[mech_key]
+    import json
+    def _serial(o):
+        if hasattr(o, "isoformat"):
+            return str(o)
+        raise TypeError
+    mech_str = json.dumps(mech, default=_serial).lower()
+    assert "primary_expected" not in mech_str
+    assert "expected primary" not in mech_str
+
+def test_no_http_mirrors():
+    # QA FIX: no http:// anywhere in mechanism after fix
+    entry = get_journalist("Lauren Goode")
+    mech_key = [k for k in entry.keys() if "436" in str(k)][0]
+    mech = entry[mech_key]
+    import json
+    def _serial(o):
+        if hasattr(o, "isoformat"):
+            return str(o)
+        raise TypeError
+    mech_str = json.dumps(mech, default=_serial)
+    assert "http://www.sxyngh.com" not in mech_str
+    assert "http://en.zicos.com" not in mech_str
+    # ensure no http:// at start of any URL in source_urls (already checked) plus hardware_matrix
+    for hw_key in ["apple_vision_pro", "snap_spectacles", "meta_ray_ban", "google_android_xr"]:
+        hw = mech["hardware_matrix"].get(hw_key, {})
+        if "source_url" in hw:
+            assert hw["source_url"].startswith("https://")
+
+def test_authoritative_sources_present():
+    # QA FIX: authoritative sources for concrete claims must be present
+    entry = get_journalist("Lauren Goode")
+    mech_key = [k for k in entry.keys() if "436" in str(k)][0]
+    mech = entry[mech_key]
+    urls = mech["source_urls"]
+    # Apple Vision Pro 12 cameras spec authoritative
+    assert any("macrumors.com/2024/01/19/apple-vision-pro-tech-specs" in u for u in urls), "Apple spec authoritative missing"
+    # Meta 7M units 69.2 percent
+    assert any("softonic.com" in u for u in urls), "Softonic Meta 7M 69.2 percent missing"
+    assert any("skift.com" in u for u in urls or "androidcentral.com" in u for u in urls), "Meta 7M secondary missing"
+    # Condé Nast OpenAI licensing
+    assert any("reuters.com" in u and "cond-nast" in u for u in urls), "Reuters Condé Nast OpenAI missing"
+    # Meta Connect secondary
+    assert any("siliconangle.com" in u for u in urls), "SiliconAngle Meta Connect missing"
 
 
 def test_iteration_log_will_be_updated():

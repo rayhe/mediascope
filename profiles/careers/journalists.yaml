@@ -1028,7 +1028,6 @@ journalists:
         surveillance_vocabulary_count: 0
         privacy_alarm: absent
         source_url: https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
-        primary_expected: https://www.wired.com/story/i-cried-inside-the-apple-vision-pro/
       snap_spectacles:
         title: 'Snap Spectacles Are They the Face Camera We Have Been Waiting For WIRED YouTube'
         date: '2018'
@@ -1048,9 +1047,7 @@ journalists:
         tone_MANUAL_ILLUSTRATIVE: -0.15 clinical skeptical
         surveillance_vocabulary_count: 0 but lane assignment to investigative team for later coverage
         privacy_alarm: minimal but assigns surveillance lens to others
-        source_url: https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/
-        aggregator_mirror: http://www.sxyngh.com/index-216.html (secondary aggregator of same WIRED article)
-        primary_expected: https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/
+        source_url: https://siliconangle.com/2023/09/27/meta-introduces-mixed-reality-quest-3-headset-next-generation-ray-ban-smart-glasses/
         coverage_gap: ZERO standalone Meta Ray-Ban smart glasses product review by Lauren Goode despite Senior Correspondent 15+ years wearables primary beat Meta dominant 7M units 2025 69.2 percent Q1 2026 20M aim
       google_android_xr:
         title: Google I/O 2026 live blog
@@ -1162,12 +1159,7 @@ journalists:
     source_urls:
     - https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
     - https://www.youtube.com/watch?v=zHn_otv4qN8
-    - http://www.sxyngh.com/index-216.html
     - https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen
-    - https://www.wired.com/story/i-cried-inside-the-apple-vision-pro/ (expected primary WIRED Goode Apple Vision Pro Feb 2024)
-    - https://www.wired.com/story/metas-quest-3-ray-ban-smart-glasses/ (expected primary WIRED Goode Meta Connect Oct 2023)
-    - https://www.wired.com/story/snap-spectacles-face-camera/ (expected WIRED Goode Snap Spectacles YouTube 2018)
-    - https://www.wired.com/story/google-io-2026-live-blog/ (expected WIRED Goode Google I/O May 19 2026 team coverage)
     - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/ (WIRED Julian Chokkattu Meta Glasses $299 Jun 23 2026 secondary comparison for pricing context)
     - https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/ (WIRED Julian Chokkattu Meta subscription Jul 2 2026 extraction framing context)
     - https://www.wired.com/review/apple-vision-pro/ (WIRED Julian Chokkattu Apple Vision Pro Review Mar 20 2024 rating 5/10 for cross-reviewer comparison)
@@ -1179,6 +1171,14 @@ journalists:
     - https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539 (Meta flooding market framing contrast WSJ Aug 26 2026)
     - https://www.wsj.com/tech/ai/openai-device-surroundings-preview (OpenAI device surroundings preview privacy contrast)
     - https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/ (Meta super-sensing FT Jul 9 reference)
+    - https://www.macrumors.com/2024/01/19/apple-vision-pro-tech-specs/
+    - https://en.softonic.com/articles/meta-ray-ban-smart-glasses-update-privacy-loophole-now-closed
+    - https://skift.com/2026/03/31/meta-ray-ban-prescriptions-translation-travel/
+    - https://www.androidcentral.com/wearables/meta-early-bet-on-smart-glasses-is-starting-to-look-smart
+    - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+    - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    - https://siliconangle.com/2023/09/27/meta-introduces-mixed-reality-quest-3-headset-next-generation-ray-ban-smart-glasses/
+
     test_file: tests/test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py
     cross_references:
     - 354
