@@ -14329,10 +14329,37 @@ publisher_ai_revenue_opacity_index:
       meta_coverage_adversariality: MODERATE - adversarial on privacy/antitrust, balanced
         on product
     - name: USA Today Co. (Gannett)
-      ownership: 'Public (NYSE: GCI)'
+      ownership: 'Public (NYSE: TDAY; company renamed from Gannett, ticker changed from GCI)'
       bundle_label: Other digital revenue (includes digital content syndication, affiliate,
         content and AI partnerships and licensing)
       q1_2026_bundle: $33.75M (+125.6% YoY)
+      q2_2026_data:
+        report_date: '2026-08-06'
+        total_revenue_m: 536.3
+        revenue_yoy_pct: -8.3
+        digital_other_revenue_m: 20.4
+        digital_other_yoy_pct: 20.2
+        digital_other_drivers: syndication, licensing agreements, commerce (AI licensing
+          not separately broken out)
+        partners_named: 0
+        ceo_content_licensing_quote: expect this revenue stream to continue expanding
+          as we broaden our portfolio of content licensing partners
+        lumpiness: Reed confirmed Q2 saw content licensing lumpiness, cited as partial
+          driver of the 8.3% total revenue decline; validates Gosser Q1 lumpy warning
+        ai_deals_guidance: Reed expects more AI licensing deals in 2026; declined specifics
+          pending announcements
+        machine_readable: reformatting content to machine readable to unlock more value
+          in current deals and attract new AI platform partners
+        google_posture: prepared to cut off Google crawlers to force a fair licensing
+          deal; expects summary judgment ruling in USA TODAY Co. v Google in September 2026
+        release_forward_looking: names expand AI-related monetization opportunities,
+          pipeline of AI opportunities, growth of AI content licensing as strategic pillar
+        mechanism_note: disclosure-without-disclosure - AI licensing moves total revenue
+          but no dollars and no partner names are disclosed; Tier 2 BUNDLED confirmed
+        correlation_not_causation: true
+        source_urls:
+        - https://www.businesswire.com/news/home/20260806055001/en/USA-TODAY-Co.-Announces-Second-Quarter-Results-Reiterates-Business-Outlook
+        - https://www.fool.com/earnings/call-transcripts/2026/08/13/usa-today-tday-q2-2026-earnings-call-transcript/
       ai_revenue_isolatable: false
       cfo_warning: Gosser warned AI revenue would be 'lumpy or unpredictable' in the
         short term
