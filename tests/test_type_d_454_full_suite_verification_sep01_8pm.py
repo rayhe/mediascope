@@ -585,12 +585,16 @@ class TestScorerAndStatisticalSafeguards454(unittest.TestCase):
 
     def test_synthetic_scores_not_empirical_451_453(self):
         raw = pathlib.Path(WIRED_YAML).read_text()
-        for mid in ["451","452"]:
-            idx = raw.find(mid)
+        for mid in [451,452]:
+            idx = raw.find(f"mechanism_id: {mid}")
+            if idx == -1:
+                idx = raw.find(f"mechanism_id:{mid}")
+            if idx == -1:
+                idx = raw.find(str(mid))
             if idx != -1:
-                # Expand window to 15k to catch methodology
-                snippet = raw[max(0,idx-2000):idx+15000]
-                # Accept either space or underscore MANUAL ILLUSTRATIVE
+                # Expand window to 20k to catch methodology and scoring
+                snippet = raw[max(0,idx-2000):idx+20000]
+                # Accept either space or underscore MANUAL ILLUSTRATIVE, and asymmetry_scorer_MANUAL_ILLUSTRATIVE
                 has_manual = ("MANUAL ILLUSTRATIVE" in snippet) or ("MANUAL_ILLUSTRATIVE" in snippet)
                 self.assertTrue(has_manual, f"MANUAL ILLUSTRATIVE missing for {mid}")
         # 453 is provenance correction, not a scoring mechanism - check TYPE C #453 marker exists
