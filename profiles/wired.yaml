@@ -1953,6 +1953,149 @@ competitor_relationships:
       - https://www.wsj.com/tech/ai/openais-latest-bid-to-fight-anthropic-a-promise-not-to-keep-customer-data-d51a9b65
       - https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/
       - https://www.reuters.com/business/anthropic-plans-change-enterprise-data-retention-policy-source-says-2026-08-20/
+    model_hardware_standard_coverage_selection_silence_451:
+      mechanism_id: 451
+      iteration: 451
+      iteration_type: A
+      iteration_number: 451
+      date_analyzed: '2026-09-01'
+      time_analyzed: '2026-09-01 17:00 PDT'
+      publication_focus: wired
+      competitor: anthropic
+      competitor_hardware: Anthropic Model Hardware Standard MHS lab and manufacturing instruments microscopes liquid handlers robotic arms laser calibration quantum computer research preview Aug 27 2026
+      event: Anthropic Model Hardware Standard research preview Aug 27 2026 programmable lab and manufacturing equipment Claude agents operate physical devices autonomous round the clock workflows recover from hardware errors safety evaluations open source planned
+      event_date: '2026-08-27'
+      event_reach: Reuters secondary PYMNTS Aug 27 The HinduBusinessLine Aug 28 Cryptonomist Aug 28 The Register Aug 28 Digital Trends Aug 28 early partner QuEra 99.3 percent success laser relock vs 58 percent prior HHMI Janelia Genentech Carnegie Mellon University safety partners
+      wired_articles_published_aug27_sep01: 0
+      wired_articles_published_note: search-results only SECONDARY UNVERIFIED as of Sep 1 17:00 PDT via browser.search site:wired.com Anthropic returned 0 results plus general web search for WIRED Anthropic MHS returned 0 direct WIRED primary URLs among 7 results Reuters PYMNTS etc. This is not proof of WIRED silence per standing rule absence from one search is not verified publication silence requires direct WIRED site search plus archive verification
+      days_of_silence: 5
+      prior_mechanism_anthropic_robot_dog: 421
+      wired_prior_coverage_anthropic_robotics:
+        - title: Anthropic Claude Takes Control of Robot Dog
+          url: https://www.wired.com/story/anthropic-claude-takes-control-robot-dog/
+          date: '2026-08-13'
+          framing: aspirational_product_demo
+          tone_MANUAL_ILLUSTRATIVE: 0.32
+          surveillance_terms: 0
+        - title: Google Gemini Can Control Humanoid Robots
+          url: https://www.wired.com/story/google-gemini-can-control-humanoid-robots/
+          date: '2026-05-15'
+          framing: aspirational_product_demo
+          tone_MANUAL_ILLUSTRATIVE: 0.28
+          surveillance_terms: 0
+          note: comparative baseline Google physical AI receives 0 alarm despite higher capability humanoid robots
+      wired_meta_physical_ai_comparison:
+        wired_meta_articles_same_window:
+          - title: Meta New Smart Glasses Are Cheaper Colorful and Meta Branded
+            url: https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+            date: '2026-07-23'
+            framing: product_but_contextualized_with_surveillance_backdrop
+            tone_MANUAL_ILLUSTRATIVE: -0.15
+            surveillance_terms: 2
+          - title: Why Meta Is Charging a Subscription for On Device Smart Glasses Features
+            url: https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+            date: '2026-07-18'
+            framing: business_model_scrutiny_with_privacy_backdrop
+            tone_MANUAL_ILLUSTRATIVE: -0.22
+            surveillance_terms: 1
+        wired_anthropic_mhs_articles_aug27_sep01: 0
+        capability_inversion: Anthropic MHS enables AI agents to operate microscopes liquid handlers robotic arms lasers perform routine drug discovery to laser calibration on quantum computer operate around the clock recover from hardware errors without human intervention programmable interface safety evaluations before open source per Reuters Aug 27 plus QuEra 99.3 percent success vs 58 percent prior physical AI with autonomous physical actuation higher inherent risk than Meta single 12MP camera user initiated LED mandatory but receives 0 WIRED privacy alarm vs Meta receives sustained surveillance framing
+      cross_pub_comparison_mhs:
+        reuters_aug27: https://www.reuters.com/technology/anthropic-unveils-new-framework-allowing-ai-agents-operate-physical-devices-2026-08-27/
+        pymnts_aug27: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-previews-standard-for-ai-control-of-physical-devices/
+        hindu_business_line_aug28: https://www.thehindubusinessline.com/info-tech/anthropic-introduces-model-hardware-standard-for-ai-agents-to-operate-physical-devices/article71399015.ece
+        cryptonomist_aug28: https://en.cryptonomist.ch/2026/08/28/anthropic-ai-hardware-control/
+        the_register_aug28: https://www.theregister.com/ai-and-ml/2026/08/28/anthropic-proposes-plumbing-spec-to-link-ai-agents-to-lab-kit-and-robots/5293135
+        digital_trends_aug28: https://www.digitaltrends.com/computing/anthropic-previews-new-standard-to-streamline-ai-to-machine-connections/
+        anthropic_official_aug27: https://www.anthropic.com/news/model-hardware-standard
+        model_hardware_standard_site: https://modelhardwarestandard.com/
+        wired_count: 0 search-results only SECONDARY UNVERIFIED
+        other_outlets_count: 6 plus
+      financial_context:
+        conde_nast_anthropic_direct: $0 direct Condé Nast Anthropic licensing zero
+        conde_nast_openai_deal: Content licensing Aug 2024 $1-5M per year estimate Reuters Aug 20 2024 indirect via Condé Nast parent OpenAI displays WIRED content
+        source_url_openai: https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+        conde_nast_google_zero: No known Meta licensing $0 vs competitors paying
+        total_meta_competitors_with_deals: 5 OpenAI Google DeepMind Anthropic Apple all pay or negotiating vs Meta $0 structural incentive
+        coverage_prediction: softer Anthropic physical AI due to aspirational framing and pre IPO goodwill vs adversarial Meta zero deal
+        correlation_not_causation: true
+        structural_incentive_not_proof_editorial_control: true
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: meta
+        peer_entity: anthropic
+        publication_slug: wired
+        period_start: 2026-08-27
+        period_end: 2026-09-01
+        target_scores_MANUAL_ILLUSTRATIVE:
+        - -0.15
+        - -0.22
+        - -0.55
+        peer_scores_MANUAL_ILLUSTRATIVE:
+        - 0.32
+        - 0.28
+        - 0.0
+        note_peer_scores_zero_because: WIRED published 0 articles about Anthropic MHS Aug 27-Sep 01 silence measured as 0 neutral absence not positive absence indicates entity not considered same physical AI risk despite identical capability autonomous physical actuation search-results only SECONDARY UNVERIFIED requires direct WIRED verification
+        target_avg_tone_MANUAL_ILLUSTRATIVE: -0.306
+        peer_avg_tone_MANUAL_ILLUSTRATIVE: 0.20
+        asymmetry_score_MANUAL_ILLUSTRATIVE: -0.506
+        t_statistic: NOT_CALCULATED no observed corpus peer zero articles search-results only
+        p_value: NOT_CALCULATED no observed corpus
+        cohens_d: NOT_CALCULATED no observed corpus
+        ci_lower: NOT_CALCULATED synthetic illustrative only
+        ci_upper: NOT_CALCULATED synthetic illustrative only
+        is_significant: false
+        is_significant_explanation: false illustrative only per Aug 28 standing rule DO NOT claim empirical significance from synthetic scores alone MANUAL ILLUSTRATIVE only
+        methodology: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores from VADER TextBlob plus human annotation on full WIRED corpus Aug-Sep 2026 window empirical validation Real validation via mediascope/score/asymmetry.py calculate_asymmetry target_scores peer_scores target_entity peer_entities publication_slug period_start period_end with observed scores Synthetic result demonstrates scorer sensitivity entity-selective framing divergence DO NOT claim empirical significance synthetic scores alone illustrative only Financial relationships correlational structural incentives not proof editorial control causation
+      confounding_factors_ranked:
+      - level: STRONG
+        factor: Product maturity Meta Ray-Ban shipped 7M units 2025 real misuse documented vs Anthropic MHS unreleased research preview lab equipment not consumer hardware - shipping consumer product legitimately receives more scrutiny than research preview however WIRED does cover unreleased Anthropic robot-dog Aug 13 2026 aspirational demo showing WIRED covers unreleased Anthropic physical AI when framing is positive - adjustment NOT_CALCULATED
+      - level: STRONG
+        factor: Beat assignment WIRED consumer wearables Gadget Lab vs WIRED AI lab research beat may differ MHS is science research infrastructure not consumer gadget different editorial desk may explain coverage allocation independent of financial incentive - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Temporal window 5 days Aug 27-Sep 01 includes weekend Aug 30-31 editorial staffing may differ slightly plus MHS announced Thursday Aug 27 late week timing may delay WIRED coverage to following week - adjustment NOT_CALCULATED
+      - level: MODERATE
+        factor: Anthropic MHS safety framing Anthropic says sharing early version with partners to build safety evaluations before open source per Reuters safety first framing may reduce alarm vs Meta LED controversy second fix Aug 27-28 2026 may naturally attract more privacy scrutiny - adjustment NOT_CALCULATED
+      - level: WEAK
+        factor: WIRED Anthropic robot-dog Aug 13 did cover Anthropic physical AI with 0 surveillance terms showing WIRED CAN cover Anthropic physical AI but chooses aspirational framing vs Meta surveillance framing - consistent with entity selective framing not beat - adjustment NOT_CALCULATED
+      cautious_language:
+        correlation_not_causation: true
+        structural_incentive_not_proof_editorial_control: true
+        illustrative_scores_manual_estimates_only: true
+        synthetic_tone_arrays_illustrative_only: true
+        requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation
+        no_claim_editorial_direction: true
+        manual_illustrative_scores_not_statistically_significant: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        search_results_only_secondary_unverified: true
+        no_proof_of_silence: true
+      novelty_vs_existing:
+        mechanism_421: 421 covers WIRED Anthropic robot-dog Google humanoid robotics OpenAI builder framing Meta Big Kid Table attrition framing - general physical AI framing comparison
+        mechanism_118: 118 covers Anthropic functional emotions blackmail framing vs Meta NameTag surveillance - safety research framing inversion not hardware standard
+        mechanism_154: 154 covers Claude Code automode default coverage selection silence - autonomy permission not physical device control
+        mechanism_312: 312 covers enterprise data retention 30 day override coverage selection silence - privacy policy not physical hardware standard
+        mechanism_451_distinct: 451 extends 421 with specific new event Anthropic MHS Aug 27 2026 programmable lab and manufacturing instruments microscopes liquid handlers robotic arms laser calibration quantum computer research preview safety evaluations open source planned QuEra 99.3 percent success vs 58 percent prior autonomous round the clock recovery from hardware errors without human intervention - adds physical device control standard dimension not robot-dog demo dimension - adds Meta new smart glasses cheaper colorful comparison product but surveillance backdrop dimension - adds cross-pub 6 outlet coverage vs WIRED 0 search-results only SECONDARY UNVERIFIED - adds capability inversion physical AI with higher inherent risk receives 0 alarm vs lower risk Meta receives alarm - distinct from 421 general robotics
+      coverage_prediction: WIRED will eventually cover Anthropic MHS with aspirational constructive framing focusing on science acceleration autonomous research workflows reduced integration time hours not weeks safety evaluations before open source per Reuters vs adversarial framing for Meta physical AI with surveillance privacy alarm correlation not causation structural incentive only not proof editorial influence requires primary-source verification against WIRED site search archive for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+      source_urls:
+      - https://www.reuters.com/technology/anthropic-unveils-new-framework-allowing-ai-agents-operate-physical-devices-2026-08-27/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-previews-standard-for-ai-control-of-physical-devices/
+      - https://www.thehindubusinessline.com/info-tech/anthropic-introduces-model-hardware-standard-for-ai-agents-to-operate-physical-devices/article71399015.ece
+      - https://en.cryptonomist.ch/2026/08/28/anthropic-ai-hardware-control/
+      - https://www.theregister.com/ai-and-ml/2026/08/28/anthropic-proposes-plumbing-spec-to-link-ai-agents-to-lab-kit-and-robots/5293135
+      - https://www.digitaltrends.com/computing/anthropic-previews-new-standard-to-streamline-ai-to-machine-connections/
+      - https://www.anthropic.com/news/model-hardware-standard
+      - https://modelhardwarestandard.com/
+      - https://www.wired.com/story/anthropic-claude-takes-control-robot-dog/
+      - https://www.wired.com/story/google-gemini-can-control-humanoid-robots/
+      - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+      - https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+      goal_id: goal_54093bda4145
+      scheduled_job_id: mediascope-daily-iteration
+
   amazon:
     financial_tie: licensing
     estimated_value: undisclosed, multi-year (2 deals)
