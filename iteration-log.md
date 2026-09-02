@@ -1,3 +1,35 @@
+#458 Type C: Financial Incentive Mapping - Fox Corp Q4 FY2026 DARK PUBLIC Disclosure Posture (New Tier 4 in Opacity Index) - Sep 2 2026 00:00 PDT
+
+**Date:** 2026-09-02 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation B->C 457 B to 458 C)
+**Type:** C - Financial Incentive Mapping (Disclosure Opacity)
+**Mechanism:** #458 Type C - Fox Corporation (Nasdaq: FOXA/FOX) holds 2 KNOWN Meta AI licensing deals (Fox News, Fox Sports, announced Dec 5 2025) yet disclosed ZERO AI licensing revenue in its Q4/FY2026 earnings release (Aug 6 2026) and earnings call highlights, 8 months later. "Content and other" ($262M Q4, $1.729B FY2026) is attributed entirely to sports sublicensing timing/growth. Adds Tier 4 (DARK PUBLIC - Public Company, Zero AI Disclosure) to publisher_ai_revenue_opacity_index: a public SEC filer with known AI deals and zero earnings disclosure of any kind. Fits neither Tier 1 (private black box), Tier 2 (bundled but named), nor Tier 3 (transparent). Falsifies the assumption that public-company status yields AI-revenue visibility. Structural explanation is materiality (inference, not a company statement).
+
+**Publication:** Fox Corporation (Fox News, Fox Sports)
+**Competitor Pair:** Meta (known AI licensor; amounts undisclosed) vs public-disclosure baseline
+**Rotation Transparency:** Previous entry #457 Type B at 23:00 PDT Sep 1 2026 (WIRED Adrienne So counter-example). Per rotation A->B->C->D->E, next after B is C. This work is Type C at 00:00 PDT Sep 2 2026, correct rotation B->C after #457. Cycle verified: 453 C 19:00 Conde Nast provenance correction, 454 D 20:00 verification, 455 E 21:00 podcast, 456 A 22:00 FT Anthropic, 457 B 23:00 Adrienne So. Selected Type C after verifying #457 commit present and confirming Fox Corp had zero presence in the opacity index and zero earnings-disclosure tests.
+
+**Focus:** Disclosure-posture mapping: does a public publisher with known AI deals disclose any AI licensing revenue?
+
+**Evidence (primary, observed Sep 2 2026 UTC):**
+- **Release:** PR Newswire Aug 6 2026, FOX Q4/FY2026 earnings. Q4 revenue $4.212B (+28% YoY); FY2026 revenue $17.126B (+5%). "Content and other revenue was $262 million as compared to the $269 million reported in the prior year quarter, primarily due to the timing of sports sublicensing revenue." FY: "Content and other revenue increased 4%, primarily due to higher sports sublicensing revenue." Full 579-line release read (narrative, operating review, financial statements, notes): zero mentions of AI licensing, Meta, or tech-company content licensing.
+- **Call:** MarketBeat Aug 6 2026 Q4 earnings call highlights (Murdoch, Tomsic remarks: World Cup, Tubi, FOX One, Roku acquisition, political advertising): zero AI licensing mentions. Scoped secondary check, not a full-transcript audit; YAML labels this scope explicitly.
+- **Deal provenance:** Digiday and TechCrunch Dec 5 2025 (Meta 13-partner AI group incl. Fox News, Fox Sports); corroborated by this repo's Meta content-licensing partner list (competitor-entities.yaml line 8504).
+
+**Finding:** Fox defines a fourth disclosure posture. Tier 1 assumes darkness comes from private ownership (no filings); Tier 2 assumes public filers at least bundle AI revenue into a named line; Tier 3 is explicit naming. Fox breaks the Tier 2 assumption: a Nasdaq-listed SEC filer whose only "Content and other" explanation is sports sublicensing. The structural reason is materiality: AI licensing dollars are presumably immaterial against $17.1B annual revenue, so GAAP/Reg S-K does not compel line-item disclosure. That keeps the omission fully compliant while leaving external analysts with zero visibility. The undisclosed universe is therefore larger than the privately-held Tier 1 set. No coverage-tone claim is made: Fox News tone toward Meta is NOT_RATED in this index.
+
+**Novelty Verification (per AGENTS.md Type C rule):** Searched profiles/tests for Fox earnings disclosure: zero hits (existing test_foxbusiness_* files cover a Louisiana datacenter, a Meta penalty, layoffs, and a Muse shutdown, not earnings). Fox absent from all three opacity tiers. Distinct from #443 (Microsoft PCM), #448 (Reddit/Advance), Apple Siri variable-comp mechanism #196, and #453 (Conde Nast non-participation). Gannett Q2 2026 earnings not locatable via search as of Sep 2 2026; not used.
+
+**Confounders Ranked:** STRONG Materiality compliance (omission is compliant, not deceptive; the mechanism is about visibility, not wrongdoing) NOT_CALCULATED; MODERATE Revenue-recognition timing (Dec 2025 multiyear deals; Q4 FY2026 may predate recognized dollars) NOT_CALCULATED; MODERATE Call evidence is highlights-summary, not full transcript NOT_CALCULATED; WEAK Single-quarter observation (Q3 FY2026 not checked; claim scoped to Q4/FY2026) NOT_CALCULATED.
+
+**Sources (2 HTTPS, primary + scoped secondary):** https://www.prnewswire.com/news-releases/fox-reports-fourth-quarter-fiscal-2026-revenue-of-4-21-billion-net-income-of-696-million-and-adjusted-ebitda-of-1-20-billion-302844930.html (primary, full release read Sep 2 2026 UTC) https://www.marketbeat.com/instant-alerts/fox-q4-earnings-call-highlights-2026-08-06/ (scoped secondary for call)
+
+**Confidence:** MEDIUM-HIGH - full primary release read with exact figures and verbatim attribution quotes; call claim explicitly scoped; materiality framed as inference; no tone claim; correlation not causation; structural only.
+
+**Test file:** `tests/test_type_c_458_fox_corp_q4_fy2026_dark_public_disclosure_sep02.py` - 18 tests, all passed (venv pytest)
+**Counter:** scripts/count_stats.py reports 786 test files, 26,406 total tests (counter convention differs from #457 log figures; reporting counter output verbatim)
+
+---
+
 #457 Type B: Journalist Cross-Entity Tracking - WIRED Adrienne So Meta vs Apple Even-Handed Gear-Desk Counter-Example - Sep 1 2026 23:00 PDT
 
 **Date:** 2026-09-01 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation A->B 456 A to 457 B)

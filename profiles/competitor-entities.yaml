@@ -14419,6 +14419,65 @@ publisher_ai_revenue_opacity_index:
       companies.
 
       '
+  - tier: 4
+    label: DARK PUBLIC - Public Company, Zero AI Disclosure
+    description: 'Publicly traded publishers that file SEC reports (10-K, 10-Q, 8-K)
+      and hold publicly KNOWN AI licensing deals, yet disclose ZERO AI licensing
+      revenue in earnings releases and calls. Not Tier 1 (they are not private and
+      do file), not Tier 2 (no identifiable bundle even names AI revenue), not Tier 3
+      (no partner named, no financial impact discussed). The structural explanation
+      is materiality: AI licensing revenue is presumably immaterial against
+      multibillion-dollar total revenue, so SEC rules do not compel line-item
+      disclosure. That explanation is an inference, not a company statement. The
+      posture proves public-company status alone does not guarantee AI-revenue
+      visibility.
+
+      '
+    publishers:
+    - name: Fox Corporation (Fox News, Fox Sports)
+      ownership: 'Public (Nasdaq: FOXA, FOX)'
+      ai_deals_known: 2
+      ai_deal_details: 'Meta AI content licensing, announced Dec 5 2025. Fox News and
+        Fox Sports were both named in Meta''s 13-partner group (Digiday and TechCrunch,
+        Dec 5 2025; also recorded in this repo''s Meta content-licensing partner list).'
+      report_date: '2026-08-06'
+      report: Q4 and full-year FY2026 earnings release (fiscal year ended Jun 30 2026)
+      q4_fy2026_revenue: $4.212B (+28% YoY)
+      fy2026_revenue: $17.126B (+5% YoY)
+      content_and_other_q4: '$262M vs $269M prior-year quarter; release attributes the
+        line ''primarily due to the timing of sports sublicensing revenue''; no AI
+        licensing component named'
+      content_and_other_fy: '$1.729B (+4% YoY); release attributes the increase ''primarily
+        due to higher sports sublicensing revenue''; no AI licensing component named'
+      ai_licensing_mentions_in_release: 0
+      ai_licensing_mentions_in_call: 0
+      verification_scope: 'Full 579-line PR Newswire release read Sep 2 2026 (narrative,
+        operating review, financial statements, notes); zero mentions of AI licensing,
+        Meta, or tech-company content licensing. Call coverage via MarketBeat Q4 FY2026
+        earnings call highlights (Murdoch and Tomsic remarks); scoped secondary check,
+        not a full-transcript audit.'
+      months_between_deal_announcement_and_earnings: 8
+      disclosed_values: 0
+      meta_coverage_adversariality: NOT_RATED - Fox News tone toward Meta is not scored
+        in this index; no coverage-tone claim is made here
+      structural_implication: 'First documented case of a public SEC filer with known
+        AI deals and zero earnings disclosure of any kind. Breaks the implicit Tier 2
+        assumption that public status yields at least bundled visibility. Correlation
+        not causation: no claim that non-disclosure affects Fox News or Fox Sports
+        coverage of Meta. MANUAL ILLUSTRATIVE only.'
+      source_urls:
+      - https://www.prnewswire.com/news-releases/fox-reports-fourth-quarter-fiscal-2026-revenue-of-4-21-billion-net-income-of-696-million-and-adjusted-ebitda-of-1-20-billion-302844930.html
+      - https://www.marketbeat.com/instant-alerts/fox-q4-earnings-call-highlights-2026-08-06/
+      mechanism_id: 458
+      finding_type: financial_incentive_mapping
+      rotation: Type C
+    tier_summary: 'Tier 4 has 1 publisher family so far. Known AI deals: 2. Disclosed
+      deal values: 0. The index now covers 8 publication families across 4 tiers.
+      Tier 4 matters structurally: it falsifies the assumption that SEC filing
+      obligations produce AI-revenue transparency, so the undisclosed universe is
+      larger than the privately-held Tier 1 set.
+
+      '
   cross_tier_correlation:
     finding: 'Inverse Transparency-Adversariality Pattern: Publishers that disclose
       MORE about their AI financial relationships produce LESS adversarial coverage
