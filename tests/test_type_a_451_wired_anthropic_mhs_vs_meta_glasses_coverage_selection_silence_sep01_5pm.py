@@ -138,7 +138,7 @@ class TestWIREDPriorCoverage:
 
     def test_robot_dog_no_em_dash(self):
         import json as _json
-        dumped = _json.dumps(_entry()["wired_prior_coverage_anthropic_robotics"])
+        dumped = _json.dumps(_entry()["wired_prior_coverage_anthropic_robotics"], default=str)
         assert "—" not in dumped and "–" not in dumped
 
 # ===================================================================
@@ -274,7 +274,7 @@ class TestConfoundersCautious:
 
     def test_no_em_dashes_anywhere(self):
         import json as _json
-        dumped = _json.dumps(_entry())
+        dumped = _json.dumps(_entry(), default=str)
         assert "—" not in dumped, "em dash found"
         assert "–" not in dumped, "en dash found"
 
