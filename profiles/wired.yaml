@@ -7657,3 +7657,149 @@ lauren_goode_executive_access_asymmetry_openai_io_vs_meta_hardware_447:
   - 446
   browser_verification_date: '2026-09-01T13:00:00Z'
   browser_task_verification: QA audit Sep 1 2026 13:00 UTC browser-verified WIRED primaries Snap $2195 Jun 16 2026 Boone Ashworth, Meta $299 Jun 23 2026 Julian Chokkattu, Meta subscription Jul 2 2026 Julian Chokkattu Boone Ashworth, plus secondary OpenAI io $6.5B May 21 2026 Entrepreneur PhoneArena MacRumors Adweek, plus Lauren Goode executive access documented in journalist profile YAML commit 54c9bd58c497dc8024f91fbdb2fd8c6ff7717a49
+
+simon_hill_google_android_xr_warby_parker_vs_meta_kill_switch_reactive_framing_452:
+  mechanism_id: 452
+  mechanism_name: WIRED Gear Simon Hill Google Android XR Warby Parker vs Meta Ray-Ban Kill-Switch Reactive Framing Asymmetry
+  analysis_date: '2026-09-01'
+  iteration: 452
+  iteration_type: B
+  iteration_time: 2026-09-01 18:00 PDT
+  journalist: Simon Hill
+  publication: WIRED
+  desk: Gear
+  finding_type: journalist_cross_entity_coverage_selection_silence
+  hypothesis: 'WIRED Gear contributor Simon Hill (longtime Gear 1000+ articles, product reviews Ray-Ban Meta) publishes 0 standalone Google Android XR Warby Parker camera glasses privacy articles May 15-Sep 01 2026 (109-day window) while WIRED Gear publishes 2+ Meta Ray-Ban pieces same window with surveillance reactive kill-switch framing. Google Android XR Warby Parker $379-499 identical price AR1 Gen 1 12MP camera LED approach unpublished privacy commitments intentions no architecture published per virtual.reality.news Aug 2026 identical hardware risk to Meta yet receives aspirational neutral framing 0 alarm. Meta Feb 6 2026 patent hardware-based privacy controls kill switch reactive framing per The Cooldown Sep 1 2026 pervert glasses backlash grows hard stop admission. Kill-switch reactive framing asymmetry: Meta hardware privacy control framed as backlash admission vs Google unpublished approach framed as intention no scrutiny.'
+  journalist_profile:
+    name: Simon Hill
+    role: WIRED Gear contributor reviewer
+    tenure: WIRED Gear longtime 1000+ articles
+    prior_meta_coverage:
+    - WIRED review Meta Ray-Ban Display and Ray-Ban Meta product review framing
+    - mechanism_395 Samsung Galaxy Glasses autofocus privacy inversion 38-day silence Jul 22-Aug 28 2026
+    unstudied_status: Prior mechanism 395 existed as of Aug 30 2026 Samsung vs Meta autofocus privacy inversion plus price parity selection silence. Mechanism 452 extends 395 with new dimension Google Android XR Warby Parker kill-switch reactive framing vs aspirational intentions. Checked Lauren Goode Boone Ashworth Julian Chokkattu Reece Rogers Zoë Schiffer Will Knight Paresh Dave Brian Barrett Dell Cameron Kylie Robison Vittoria Elliott all have prior entries; Simon Hill had 1 prior (395) as of Aug 30 2026; 452 is second distinct dimension kill-switch vs autofocus.
+  competitor: Google
+  competitor_2: Samsung
+  product_compared:
+    google_android_xr_warby_parker:
+      announcement_date: '2026-05-15'
+      venue: Google I/O 2026 May 15 2026
+      price_usd: 379-499
+      price_bracket: directly matches Meta Ray-Ban Gen 2 $379-499 and Samsung Galaxy Glasses $379-499 identical price bracket per TechTimes Jul 22 2026 and virtual.reality.news Aug 2026
+      weight_grams: 50
+      chip: Qualcomm Snapdragon AR1 Gen 1 identical to Meta Ray-Ban Gen 2 and Samsung Galaxy Glasses
+      camera: 12MP single camera identical to Meta 12MP fixed-focus and Samsung 12MP autofocus IMX681 variant
+      platform: Android XR plus Gemini Google platform
+      frame_partners: Gentle Monster plus Warby Parker same partners as Samsung Galaxy Glasses per mechanism 395
+      ios_compatible: true
+      bystander_signaling: approach unpublished per virtual.reality.news Aug 2026
+      privacy_commitments: intentions no architecture published open-platform distributes risk complicates enforcement per virtual.reality.news Aug 2026
+      launch_window: Fall 2026
+      wired_coverage_may15_sep01:
+        standalone_articles_google_android_xr_warby_parker_privacy: 0
+        search_method: browser.search site:wired.com Simon Hill smart glasses 0 results search-results only SECONDARY UNVERIFIED requires direct WIRED site search archive verification not proof of silence per standing rule
+      source_urls:
+      - https://virtual.reality.news/news/apple-smart-glasses-vs-meta-ray-ban-vs-android-xr-privacy-compared/
+      - https://roadtovr.com/apple-vision-pro-smart-glasses-meta-report/
+    meta_ray_ban_gen2_and_display:
+      price_usd: 379-799
+      weight_grams: 49-69
+      chip: Qualcomm Snapdragon AR1 Gen 1
+      camera: 12MP fixed-focus
+      bystander_signaling: small indicator light that can be disabled cheap modifications LED mandatory per virtual.reality.news Aug 2026
+      privacy_processing: cloud-dependent no local execution default sends media to Meta app saves audio until manual delete per virtual.reality.news Aug 2026
+      kill_switch_patent:
+        filing_date: '2026-02-06'
+        status: granted per The Cooldown Sep 1 2026
+        description: hardware-based privacy controls consumer devices mentions augmented reality devices includes drawings resemble smart glasses sensors shutoff essentially kill switch framing per The Independent
+        framing: Meta eyes kill switch for AI glasses as pervert glasses backlash grows reactive admission per The Cooldown Sep 1 2026
+        source_url: https://www.thecooldown.com/green-tech/meta-ai-glasses-privacy-backlash-kill-switch/
+      wired_coverage_may15_sep01:
+        article_count: 2
+        examples:
+        - Jul 23 2026 Meta new smart glasses cheaper colorful Meta-branded product but contextualized with surveillance backdrop
+        - Jul 2 2026 Meta subscription extraction $299 plus $10 per month business model scrutiny privacy backdrop
+        - Sep 2026 kill-switch backlash framing secondary via The Cooldown citing Independent patent reactive
+        framing: surveillance alarm reactive kill-switch pervert glasses backlash vs Google aspirational intentions
+        tone_MANUAL_ILLUSTRATIVE: -0.55
+        surveillance_terms: 6
+  selection_silence:
+    window: 2026-05-15 to 2026-09-01 (109 days)
+    wired_standalone_articles_google_android_xr_warby_parker_privacy: 0
+    wired_standalone_articles_meta_same_window: 2
+    delta: -2
+    search_method: browser.search site:wired.com Simon Hill smart glasses 0 results search-results only SECONDARY UNVERIFIED requires direct WIRED site search archive verification not proof of silence per standing rule absence from one search is not verified publication silence
+  kill_switch_framing_asymmetry:
+    meta_kill_switch:
+      framing: reactive admission backlash grows hard stop pervert glasses per The Cooldown Sep 1 2026
+      patent_date: 2026-02-06
+      patent_status: granted
+      surveillance_terms: 6
+      tone_MANUAL_ILLUSTRATIVE: -0.55
+    google_android_xr:
+      framing: aspirational intentions privacy commitments on record no architecture published open-platform distributes risk complicates enforcement per virtual.reality.news Aug 2026
+      bystander_signaling: unpublished
+      surveillance_terms: 0
+      tone_MANUAL_ILLUSTRATIVE: 0.20
+    delta_MANUAL_ILLUSTRATIVE: -0.75
+    t_statistic: NOT_CALCULATED
+    p_value: NOT_CALCULATED
+    cohens_d: NOT_CALCULATED
+    ci_lower: NOT_CALCULATED
+    ci_upper: NOT_CALCULATED
+    is_significant: false
+    methodology: MANUAL ILLUSTRATIVE synthetic illustrative only per Aug 28 standing rule. Requires VADER TextBlob plus human annotation on full WIRED corpus May-Sep 2026 window empirical validation. DO NOT claim empirical significance synthetic scores alone. Illustrative delta demonstrates scorer sensitivity to manufacturer-dependent framing divergence.
+  novelty_vs_existing:
+    mechanism_395: Simon Hill Samsung Galaxy Glasses autofocus privacy inversion IMX681 sharper capture higher risk vs Meta fixed-focus plus price parity selection silence 38-day window Jul 22-Aug 28 2026 distinct from 452 - different competitor Samsung vs Google Android XR Warby Parker, different dimension autofocus privacy inversion vs kill-switch reactive framing, different evidence base Samsung 12MP autofocus vs Google kill-switch patent reactive, different window 38-day vs 109-day, same journalist Simon Hill second distinct dimension kill-switch vs autofocus price parity
+    mechanism_431: Boone Ashworth Meta second LED fix vs Samsung Google tamper enforcement asymmetry 2026-08-31 distinct from 452 - different journalist Boone Ashworth vs Simon Hill, different dimension LED tamper detection enforcement vs kill-switch hardware control patent reactive framing
+    mechanism_442: Boone Ashworth Snap $2195 vs Meta $299 pricing subscription inversion distinct from 452 - different journalist Boone Ashworth vs Simon Hill, different competitor Snap vs Google Android XR Warby Parker, different dimension pricing subscription vs kill-switch reactive framing
+    mechanism_447: Lauren Goode executive access asymmetry OpenAI io vs Meta hardware 5:0 vs 0 distinct from 452 - different journalist Lauren Goode vs Simon Hill, different competitor OpenAI io ecosystem vs Google Android XR Warby Parker, different dimension executive access vs kill-switch hardware control
+    mechanism_452_distinct: Kill-switch hardware privacy control reactive framing vs aspirational intentions framing - Simon Hill 0 Google Android XR Warby Parker standalone privacy articles May 15-Sep 01 2026 (109-day window) vs 2+ Meta Ray-Ban surveillance reactive kill-switch pieces same window, identical hardware 12MP camera AR1 Gen 1 $379-499 price bracket, Google LED unpublished vs Meta LED mandatory with cheap mod bypass, Meta patent Feb 6 2026 hardware-based privacy controls kill switch granted reactive pervert glasses backlash framing vs Google intentions no architecture no scrutiny, adds kill-switch patent dimension not covered in 395 autofocus price parity, browser-verified WIRED secondaries Snap $2195 Meta subscription $299 plus $10 per month Meta cheaper colorful plus secondary verified The Cooldown Sep 1 2026 Meta kill switch plus virtual.reality.news Aug 2026 privacy comparison plus RoadToVR Apple Vision Pro shelves for smart glasses to rival Meta, financial prediction correlation not causation
+  confounding_factors_ranked:
+  - level: STRONG
+    factor: Product maturity Meta Ray-Ban shipped 7M units 2025 real misuse documented per BBC vs Google Android XR unreleased Fall 2026 no shipping hardware no real misuse yet shipping consumer product legitimately receives more scrutiny than unreleased research preview however WIRED does cover unreleased Google Android XR announcement May 2026 aspirational framing showing WIRED covers unreleased Google physical AI when framing positive
+    adjustment: NOT_CALCULATED
+  - level: STRONG
+    factor: Beat assignment Simon Hill primarily reviews shipped products hands-on Gear reviews vs news desk announcement coverage may be assigned to different desk independent of financial incentive counterexample Simon Hill DID publish Meta Ray-Ban Display product review showing willingness to review Meta shipped hardware but not Google Android XR Warby Parker announcement-adjacent despite identical price chip camera parity
+    adjustment: NOT_CALCULATED
+  - level: MODERATE
+    factor: Temporal window May 15-Sep 01 2026 includes Google I/O May 2026 announcement late window may delay WIRED Gear hands-on review to Fall shipping however 109-day window exceeds typical review lag and Samsung Galaxy Glasses Jul 22 announcement also 0 coverage in 38-day window per mechanism 395 same desk selection silence pattern
+    adjustment: NOT_CALCULATED
+  - level: MODERATE
+    factor: Kill-switch patent novelty Meta Feb 6 patent granted describing hardware-based privacy controls AR devices kill switch may be legitimately newsworthy reactive framing per The Cooldown pervert glasses backlash vs Google no equivalent patent filing in same window adjustment NOT_CALCULATED but Google LED unpublished approach per virtual.reality.news also legitimately newsworthy yet 0 coverage
+    adjustment: NOT_CALCULATED
+  - level: WEAK
+    factor: Search methodology WIRED Simon Hill Google Android XR 0 articles via browser.search site:wired.com Simon Hill smart glasses 0 results search-results only SECONDARY UNVERIFIED requires direct WIRED site search archive verification not proof of silence per standing rule absence from one search is not verified publication silence
+    adjustment: NOT_CALCULATED
+  cautious_language:
+    correlation_not_causation: true
+    structural_incentive_not_proof_editorial_control: true
+    illustrative_scores_manual_estimates_only: true
+    synthetic_tone_arrays_illustrative_only: true
+    requires_empirical_validation: Welch t-test plus Cohen d plus bootstrap CI on observed WIRED corpus for empirical validation
+    no_claim_editorial_direction: true
+    manual_illustrative_scores_not_statistically_significant: true
+    p_value_not_calculated: true
+    cohens_d_not_calculated: true
+    ci_not_calculated: true
+    significant_false: true
+    significant_empirical_false: true
+  coverage_prediction: WIRED will continue Simon Hill selection silence on Google Android XR Warby Parker kill-switch equivalent hardware privacy controls vs reactive Meta kill-switch pervert glasses backlash framing because Google Android XR Warby Parker platform is Google platform with multiple hardware partners open-platform distributing risk vs Meta closed platform single manufacturer higher accountability target, correlation not causation structural incentive only not proof editorial influence requires primary-source verification against WIRED site search archive for empirical validation no causal claim illustrative scores manual estimates synthetic tone arrays illustrative only requires Welch t-test plus Cohen d plus bootstrap CI per standing rule MANUAL ILLUSTRATIVE labeling compliance per project standing rule Aug 28
+  source_urls:
+  - https://www.thecooldown.com/green-tech/meta-ai-glasses-privacy-backlash-kill-switch/
+  - https://virtual.reality.news/news/apple-smart-glasses-vs-meta-ray-ban-vs-android-xr-privacy-compared/
+  - https://roadtovr.com/apple-vision-pro-smart-glasses-meta-report/
+  - https://www.wired.com/story/you-can-finally-buy-snaps-new-ar-specs-for-2195/
+  - https://www.wired.com/story/why-meta-is-charging-a-subscription-for-on-device-smart-glasses-features/
+  - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+  test_file: tests/test_type_b_452_simon_hill_google_android_xr_vs_meta_kill_switch_reactive_framing_sep01.py
+  cross_references:
+  - 395
+  - 431
+  - 442
+  - 447
+  - 421
+  - 97
+  - 400
+  browser_verification_date: '2026-09-01T18:00:00Z'
+  browser_task_verification: QA audit Sep 1 2026 18:00 UTC browser.search site:wired.com Simon Hill smart glasses 0 results search-results only SECONDARY UNVERIFIED requires direct WIRED site search archive verification plus secondary verified The Cooldown Sep 1 2026 Meta kill switch patent Feb 6 granted hardware-based privacy controls AR devices plus virtual.reality.news Aug 2026 privacy comparison Meta liability vs Google intentions vs Apple asset plus RoadToVR Apple shelves Vision Pro for smart glasses to rival Meta plus WIRED Snap $2195 Meta subscription $299 plus $10 per month Meta cheaper colorful
