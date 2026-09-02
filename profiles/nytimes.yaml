@@ -3246,6 +3246,115 @@ competitor_relationships:
     description: "NYT sued OpenAI and Microsoft for copyright infringement, Dec 2023. Claims billions in damages. Highest-profile publisher-vs-AI-company litigation."
     source_url: "https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html"
     coverage_prediction: "adversarial"
+    nyt_openai_litigation_posture_boundary_condition_471:
+      mechanism: 471
+      iteration: 471
+      iteration_type: A
+      type: "Type A: Competitor Coverage Deep Dive"
+      date: "2026-09-02"
+      publication: "New York Times"
+      competitor: "OpenAI"
+      publication_pair: "NYT x OpenAI"
+      comparison_entity: "Meta"
+      goal_id: "goal_54093bda4145"
+      job_id: "mediascope-daily-iteration"
+      finding: "The New York Times is itself the plaintiff in a multi-billion-dollar copyright suit against OpenAI (filed Dec 2023; Times seeks billions in damages plus model destruction; Aug 2026 Times statement via Reuters accuses 'widespread theft of millions of The Times's works'). A naive financial-determinism read of the project theory predicts adversarial OpenAI coverage across the board. Observed: Times newsroom coverage of OpenAI OUTSIDE the lawsuit domain is neutral to substantive, not adversarial. Three data points: (1) 'The OpenAI Trial Is Set to Start' (DealBook, Apr 27 2026) frames Musk v. Altman as 'the trial of the artificial intelligence age' with industry-governance stakes, not as an OpenAI hit piece; (2) 'Microsoft's C.E.O. Intervened When OpenAI Fired Sam Altman, Musk's Lawyer Claims' (May 11 2026, Cade Metz and Mike Isaac) is document-driven trial reporting with neutral 'lawyer claims' attribution; (3) 'OpenAI's Sora Video App Is Jaw-Dropping (for Better and Worse)' (Oct 2 2025) reviews an OpenAI product in a balanced register (delight plus safety-expert deepfake criticism) while the Times' own lawsuit was active. Contrast with Times Meta coverage (mechanism #69): bifurcated, adversarial on execution and social platforms. Interpretation: adversarial financial posture predicts tone WITHIN the relationship domain (lawsuit coverage is adversarial by plaintiff position) but does not mechanically produce blanket entity-level adversarial tone. Recorded as a scope boundary condition and partial falsification of naive financial determinism, strengthening the project by bounding the theory."
+      nyt_openai_non_lawsuit_articles:
+      - title: "The OpenAI Trial Is Set to Start"
+        date: "2026-04-27"
+        desk: "DealBook"
+        url: "https://www.nytimes.com/2026/04/27/business/dealbook/musk-altman-ai-trial.html?smid=nytcore-ios-share"
+        url_provenance: "Quoted verbatim inside third-party legal blog coverage of the NYT piece (lexblog.com, May 1 2026). nytimes.com is blocked by policy in this environment; full NYT text not directly fetched."
+        framing: "substantive_governance_stakes"
+        key_phrases:
+        - "the trial of the artificial intelligence age"
+        - "what matters most is what the outcome might mean for the future of the A.I. industry"
+        - "The fight promises lots of dirt"
+        tone_notes: "Acknowledges sensational material ('lots of dirt', $150B damages sought) but centers governance precedent, not OpenAI wrongdoing. Neutral to substantive register."
+        attesting_secondary: "https://www.lexblog.com/2026/05/01/openai-trial-begins-which-may-impact-the-future-of-the-ai-industry/"
+      - title: "Microsoft's C.E.O. Intervened When OpenAI Fired Sam Altman, Musk's Lawyer Claims"
+        date: "2026-05-11"
+        authors: "Cade Metz and Mike Isaac"
+        url: "https://www.nytimes.com/2026/05/11/technology/satya-nadella-openai-sam-altman.html"
+        url_provenance: "Quoted verbatim inside third-party legal blog coverage of the NYT piece (lexblog.com and vogelitlawblog.com, May 12 2026). nytimes.com blocked by policy; full NYT text not directly fetched."
+        framing: "document_driven_trial_reporting"
+        key_phrases:
+        - "Musk's Lawyer Claims (headline attribution)"
+        - "sent an email to Satya Nadella"
+        - "betrayed its founding mission (attributed to Musk claim)"
+        tone_notes: "Email-revelation reporting; adverse claims attributed to Musk's lawyer rather than asserted by the newsroom. Neutral attribution discipline."
+        attesting_secondaries:
+        - "https://www.lexblog.com/2026/05/12/trial-update-microsoft-ceo-intervened-when-openai-fired-sam-altman/"
+        - "https://www.vogelitlawblog.com/2026/05/trial-update-microsoft-ceo-intervened-when-openai-fired-sam-altman/"
+      - title: "OpenAI's Sora Video App Is Jaw-Dropping (for Better and Worse)"
+        date: "2025-10-02"
+        url: "https://web.archive.org/web/20251002200503/https://www.nytimes.com/2025/10/02/technology/openai-sora-video-app.html"
+        url_provenance: "Wayback Machine capture of the original NYT page, URL returned verbatim by web search this run."
+        framing: "balanced_product_review"
+        key_phrases:
+        - "Jaw-Dropping (for Better and Worse)"
+        - "surprise, delight and disgust"
+        - "slop"
+        tone_notes: "Product review in balanced register: delight plus safety-expert deepfake warnings and 'slop' criticism. Adversarial elements present but genre-normal for a product launch, published while the Times' own anti-OpenAI lawsuit was active."
+      lawsuit_domain_status_sep02_2026:
+      - event: "US government filed brief backing OpenAI fair-use position in NYT case (SDNY), Sep 1-2 2026; first US government intervention in AI training copyright cases"
+        times_response: "Times spokespeople did not respond to Reuters requests for comment"
+        source: "https://www.reuters.com/legal/litigation/us-government-backs-openai-new-york-times-copyright-case-2026-09-02/"
+      - event: "Judge Sidney Stein refused OpenAI motion to dismiss NYT copyright claims; DMCA claims narrowed (late Aug 2026)"
+        times_statement: "All of our copyright claims will continue against Microsoft and OpenAI for their widespread theft of millions of The Times's works"
+        source: "https://www.globallegalpost.com/news/us-judge-refuses-openais-motion-to-dismiss-new-york-times-copyright-infringement-claims-887263879"
+      - event: "Times-led group sought sanctions over alleged OpenAI discovery obstruction ('lied', 'stolen journalism'), Jul 9 2026"
+        note: "Adversarial posture is real and current in the litigation domain, which is exactly what makes the neutral non-lawsuit coverage a boundary condition"
+        source: "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
+      meta_contrast_mechanism_69:
+        note: "Times Meta coverage is bifurcated: positive on open-source AI philosophy (serves anti-OpenAI litigation narrative), adversarial on AI execution and social platforms. The open-source-positive arm is itself instrumental to the anti-OpenAI posture, which complicates any simple 'NYT is uniformly adversarial' baseline."
+      institutional_context:
+      - event: "Times moved Cade Metz (lead AI correspondent, co-author of May 11 OpenAI trial piece) to the Science desk to inaugurate a dedicated AI beat, Aug 2026"
+        implication: "Institutional reframing of AI as a science and discovery story, not only a business and litigation story; consistent with substantive rather than adversarial default register"
+        source: "https://www.citybiz.co/article/889210/new-york-times-moves-cade-metz-to-science-desk-to-cover-ai/"
+      financial_posture:
+        nyt_openai: "adversarial (plaintiff, Dec 2023, billions sought)"
+        nyt_meta: "none ($0 licensing); profile prediction adversarial"
+        direction: "boundary condition: adversarial posture predicts adversarial tone within the litigation domain only, not blanket entity tone; correlation scope-limited, not proof of editorial influence"
+      asymmetry_scoring_manual_illustrative:
+        target_entity: "NYT OpenAI non-lawsuit coverage tone (Sora review, Musk trial x2)"
+        peer_entity: "NYT Meta execution and social coverage tone (mechanism #69 adversarial arm)"
+        target_scores_illustrative: [0.10, 0.05, 0.15]
+        peer_scores_illustrative: [-0.55, -0.60, -0.50]
+        delta_manual_illustrative: 0.65
+        significant: false
+        p_value: "NOT CALCULATED"
+        cohens_d: "NOT CALCULATED"
+        confidence_interval: "NOT CALCULATED"
+        scorer: "mediascope/score/asymmetry.py calculate_asymmetry, run on illustrative arrays in test file"
+        synthetic_note: "MANUAL ILLUSTRATIVE ONLY - synthetic tone arrays encoding observed register (neutral-substantive vs adversarial), not observed corpus measurements. No empirical significance claimed. Delta sign is POSITIVE (OpenAI coverage less adversarial than Meta coverage) despite NYT suing OpenAI for billions: the inversion that bounds the theory."
+      confounders:
+        strong:
+        - "church_state_firewall: the null hypothesis is newsroom independence from the business and legal sides; neutral product coverage is exactly what editorial separation predicts, no financial theory needed"
+        - "plaintiff_position_confounds_lawsuit_domain: adversarial lawsuit coverage follows from being the plaintiff, not from a financial incentive mechanism; the two are observationally entangled"
+        - "genre_norms: product reviews and trial reporting follow neutral-register genre conventions; comparing them to Meta execution investigations mixes genres"
+        moderate:
+        - "beat_and_author: Metz and Isaac are tech-desk reporters with researcher relationships; Meta execution coverage may come from different desks with different standards"
+        - "timing: Sora review Oct 2025 predates 2026 lawsuit escalations (sanctions motion Jul 2026, Stein ruling Aug 2026); the neutral data points are older than the most adversarial litigation phase"
+        weak:
+        - "url_provenance: two of three NYT article URLs are third-party attested, not directly fetched; tone characterization rests on secondary quotation, not full-text analysis"
+      counter_evidence:
+      - "The Times' litigation-domain language IS strongly adversarial ('widespread theft', 'lied', 'stolen journalism'), so the financial-posture prediction holds where the posture is directly at issue"
+      - "No evidence of an editorial directive toward neutrality; the church-state firewall is the simpler explanation"
+      - "If Times product coverage of OpenAI turns adversarial as the trial approaches, this boundary condition narrows to a timing artifact"
+      cautious_language:
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        manual_illustrative_label: "MANUAL ILLUSTRATIVE"
+        partial_falsification: "Recorded as a scope boundary on the theory, not a confirmation; naive financial determinism fails this case"
+        bounded_claim: "Three articles, secondary-attested; full-text NYT corpus analysis required before any stronger claim"
+      distinct_from_prior:
+      - "Distinct from #379 (NYT x Anthropic beat expansion vs Meta settlement framing, Aug 29): that covers a different competitor and a reported licensing settlement; this covers OpenAI with an adversarial (not deal) posture and a falsification-bounding interpretation."
+      - "Distinct from #416 (NYT Cecilia Kang cross-entity, Type B, Aug 31): journalist-level analysis, not publication-level financial-posture scope test."
+      - "Distinct from #420 (BI Anthropic valuation hype control case, Aug 31): that was a same-publication cross-competitor control; this is a same-publication same-competitor domain split (lawsuit vs product coverage)."
+      - "Novelty verified per Aug 31 standing rule: grep of iteration-log and profiles shows no prior NYT x OpenAI Type A deep dive."
+      rotation_transparency: "Previous entry #470 Type E at 12:00 PDT Sep 2 2026. Per rotation A-B-C-D-E, next after E is A. This is Type A #471 at 13:00 PDT Sep 2 2026."
   meta:
     financial_tie: "none"
     estimated_value: "$0"

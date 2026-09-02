@@ -1,3 +1,31 @@
+#471 Type A: NYT x OpenAI Litigation-Posture Boundary Condition - Adversarial Financial Posture Does Not Produce Blanket Adversarial Coverage (Partial Falsification) - Sep 2 2026 13:00 PDT
+
+**Date:** 2026-09-02 13:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 470 E -> 471 A)
+**Type:** A - Competitor Coverage Deep Dive
+**Mechanism:** #471 Type A - NYT x OpenAI litigation-posture boundary condition. The Times is itself the plaintiff suing OpenAI for billions (Dec 2023; Aug 2026 statement: "widespread theft of millions of The Times's works"; Sep 2 2026 Reuters: US government filed brief backing OpenAI fair-use position, first government intervention in AI training copyright cases; Judge Stein refused OpenAI motion to dismiss late Aug 2026). Naive financial determinism predicts adversarial OpenAI coverage. Observed: Times newsroom coverage of OpenAI OUTSIDE the lawsuit domain is neutral to substantive: "The OpenAI Trial Is Set to Start" (DealBook, Apr 27 2026) frames Musk v. Altman as "the trial of the artificial intelligence age" with governance stakes; "Microsoft's C.E.O. Intervened When OpenAI Fired Sam Altman, Musk's Lawyer Claims" (May 11 2026, Cade Metz and Mike Isaac) uses neutral "lawyer claims" attribution on email revelations; "OpenAI's Sora Video App Is Jaw-Dropping (for Better and Worse)" (Oct 2 2025, Wayback archived) reviews an OpenAI product in balanced register while the lawsuit was active. Contrast: Times Meta coverage is bifurcated per mechanism #69, adversarial on execution/social. Interpretation: adversarial financial posture predicts tone WITHIN the relationship domain but not blanket entity tone. Recorded as scope boundary condition and partial falsification, bounding the theory rather than confirming it. Institutional context: Times moved Cade Metz to Science desk Aug 2026 to inaugurate dedicated AI beat (science/discovery framing, not only business/litigation).
+**Publication:** New York Times
+**Competitor Pair:** NYT x OpenAI vs Meta (mechanism #69 contrast)
+**Rotation Transparency:** Previous entry #470 Type E at 12:00 PDT Sep 2 2026. Per rotation A-B-C-D-E, next after E is A. Cycle verified: 466 A 08:00, 467 B 09:00, 468 C 10:00, 469 D 11:00, 470 E 12:00, 471 A 13:00. Selected Type A after verifying #470 commit present and pushed. Candidate selection: no prior NYT x OpenAI Type A deep dive exists (verified via iteration-log and profile grep); distinct from #379 (NYT x Anthropic), #416 (NYT Cade Metz Type B journalist-level), #420 (BI cross-competitor control).
+**Focus:** Type A mandate - publication+competitor pair deep dive with 3 recent articles, tone comparison vs same publication's Meta coverage, competitor_relationships update, asymmetry scorer run, documented delta.
+
+**Evidence discipline notes (honest limitations):**
+- nytimes.com is blocked by policy in this environment (browser.open refused). Two of three NYT article URLs are third-party attested via verbatim quotation inside lexblog.com / vogelitlawblog.com coverage; full NYT text not directly fetched. The Sora piece is Wayback-archived (primary capture). Tone characterizations for the two 2026 pieces rest on secondary quotation, flagged WEAK confounder.
+- All tone scores MANUAL ILLUSTRATIVE synthetic arrays per Aug 28 rule. Delta +0.65 (OpenAI non-lawsuit coverage less adversarial than Meta execution coverage) is illustrative only; significant=false, p/d/CI NOT CALCULATED.
+- Strongest confounder is the church-state firewall null: neutral product coverage is exactly what newsroom independence predicts, no financial theory needed.
+
+**New Type A file:** `tests/test_type_a_471_nyt_openai_litigation_posture_boundary_condition_sep02_1pm.py` - 25 tests. Covers 471 iteration/date/rotation/goal-job IDs, 3 NYT articles with dates/authors/attribution, URL provenance discipline, lawsuit-domain status (govt brief Sep 2, Stein ruling, sanctions motion Jul 9), Metz Science desk context, financial posture boundary, MANUAL ILLUSTRATIVE scorer run (delta +0.65), ranked confounders, counter-evidence, cautious language with partial_falsification flag, distinct-from-prior (#379/#416/#420), no-em-dash, mechanism uniqueness.
+
+**Profile update:** `profiles/nytimes.yaml` competitor_relationships.openai gained `nyt_openai_litigation_posture_boundary_condition_471` section (finding, 3 articles, lawsuit-domain status, Meta contrast, institutional context, financial posture, illustrative scoring, confounders, counter-evidence, cautious language, distinct-from-prior, rotation transparency).
+
+**README sync:** `scripts/count_stats.py --check` passes (26902 tests across 799 files).
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #471 file: 25 passed, 0 failed
+
+**Confidence:** MEDIUM-HIGH - the core asymmetry (adversarial litigation posture vs neutral product coverage) rests on well-attested secondary quotations and primary lawsuit-domain sources; the boundary-condition interpretation is honestly flagged as partial falsification with the firewall null as strongest confounder. Downgraded from HIGH only because two NYT article bodies were not directly fetched.
+
+---
+
 #470 Type E: Podcast Sentiment Seventeenth Verification - GF 498 Hold No 499, EHE 23-Day Hold, Feminist Majority Foundation Fifth Vertical, Attention Sphere 17th No-Match - Sep 2 2026 12:00 PDT
 
 **Date:** 2026-09-02 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 469 D -> 470 E)
