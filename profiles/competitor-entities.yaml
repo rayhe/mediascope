@@ -513,6 +513,7 @@ entities:
       - Le Monde (Mar 2024)
       - Prisa Media (Mar 2024)
       - Dotdash Meredith (May 2024)
+      - Future plc (Dec 2024)
       - Time (Jun 2024)
       - Schibsted Media (Feb 2025)
       - Axios (Jan 2025)
@@ -1501,6 +1502,100 @@ entities:
         and Tech-Insider. Google ad revenue factual per Zacks and BestMediaInfo and
         afaqs. Anthropic credit facility factual per Reuters and Hindu Businessline.
         Triangulation inference is correlational not causal.
+    mechanism_473_future_plc_openai_strategic_partnership:
+      mechanism_id: 473
+      iteration: 473
+      rotation: Type C
+      date: '2026-09-02'
+      time_pdt: '15:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      title: Future plc OpenAI Strategic Partnership (Dec 5 2024) - Tech-Review
+        Publisher With Direct OpenAI Financial Tie, Payment Self-Described as
+        Not Financially Material, Ranked Number 1 AI Citation Beneficiary
+      publisher: 'Future plc (UK specialist publisher, LSE: FUTR; 200+ media brands)'
+      tech_counterparty: OpenAI
+      deal_date: '2024-12-05'
+      deal_type: strategic partnership and content licensing, involves payment
+      key_brands:
+      - Tom's Guide
+      - TechRadar
+      - PC Gamer
+      - Tom's Hardware
+      - Marie Claire
+      - Who What Wear
+      - GamesRadar
+      - Edge
+      - Retro Gamer
+      - The Week
+      - Cycling Weekly
+      scope: ChatGPT users access Future portfolio content with attribution and
+        links to full original articles
+      payment_terms: payment involved but described as not financially material
+        to Future, per company statement via Press Gazette tracker
+      preexisting_deployment: Future had already launched OpenAI-powered AI chatbots
+        on Tom's Hardware and Who What Wear, and uses OpenAI tools across sales,
+        marketing, and editorial functions
+      executive_quotes:
+        brad_lightcap_openai_coo: partnership enhances ChatGPT with engaging,
+          up-to-date, reliable information from specialist sources; goal is to help
+          publishers benefit from advanced AI technology and expand reach
+        jon_steinberg_future_ceo: ChatGPT provides a new avenue for discovery of
+          Future specialist content; Future at forefront of deploying AI for user
+          engagement and staff productivity
+      wearables_beat_relevance: 'Tom''s Guide and TechRadar are leading consumer-tech
+        review outlets covering smart glasses and AI wearables. Repo-internal
+        cross-check: tests/test_amanda_caswell_tomsguide_cross_entity_coverage_scope_asymmetry_aug18.py
+        tracks Tom''s Guide (Future PLC) AI editor smart-glasses coverage scope.
+        The OpenAI financial tie sits directly on the wearables-review beat.'
+      citation_study_link: Press Ranger and OtterlyAI study (mechanism 249, Aug 20
+        2026) ranks Future plc the number 1 citation beneficiary among OpenAI-licensed
+        publishers; licensed publishers earn 48 percent more AI citations on ChatGPT
+      meta_contrast: zero known AI licensing or content deals between Future plc
+        and Meta (asserted in Aug 18 Caswell test; Meta's 13-partner AI content list
+        as of Aug 2026 contains no Future brand)
+      disclosure_posture: LSE-listed public company; deal value undisclosed beyond
+        the company's own not-financially-material characterization. Self-minimizing
+        disclosure, consistent with Tier 2 BUNDLED opacity logic (value exists but
+        is not isolatable), though no formal tier assignment is made here
+      portfolio_list_gap_closed: publisher_content_deal_portfolio notable_partners
+        previously omitted Future plc; added by this iteration
+      statistical_discipline:
+        correlation_not_causation: true
+        is_significant: false
+        no_tone_scores: true
+        no_p_value: true
+      confounders_ranked:
+        strong:
+        - not-financially-material characterization is a Press Gazette paraphrase
+          of a Future company statement, single secondary source, not verified
+          against Future annual report filings this run
+        - deal value described as immaterial by the company itself, so the direct
+          cash incentive magnitude is small; any incentive effect would run through
+          the citation-visibility channel (mechanism 249), not payment size
+        moderate:
+        - 'technology-adoption confounder: Future was already an OpenAI technology
+          customer (chatbots, sales and marketing tooling), so the licensing deal
+          may reflect an existing vendor relationship rather than a new financial
+          inducement'
+        weak:
+        - UK-listed publisher with primarily specialist (non-news) content; the
+          MediaScope thesis was built on news publishers, so generalization to
+          enthusiast tech press needs separate validation
+      novelty_verification: 'grep for Future plc across tests/test_type_c* returned
+        zero hits; git log --grep=Future shows only the 445 podcast false positive;
+        not Microsoft PCM related; distinct from 468 (Reach/Amazon), 249 (citation
+        study names Future only as a beneficiary, no deal mapping), and the Aug 18
+        Caswell test (asserts no Meta deal, does not mention the OpenAI deal)'
+      distinct_from_prior: '#468 Reach Amazon usage-based, #463 USA Today BUNDLED,
+        #458 Fox DARK PUBLIC, #453 Conde Nast non-participation, #443 Microsoft PCM,
+        #249 citation amplification (beneficiary ranking only)'
+      source_urls:
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - https://digiday.com/media/2024-in-review-a-timeline-of-the-major-deals-between-publishers-and-ai-companies/
+      - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
+      - https://www.Gamedeveloper.com/business/future-publishing-signs-content-partnership-with-openai
+      - https://www.maginative.com/article/openais-lands-publishing-deal-with-future-2/
   anthropic:
     display_name: Anthropic
     aliases:

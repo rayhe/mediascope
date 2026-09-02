@@ -1,3 +1,37 @@
+#473 Type C: Financial Incentive Mapping - Future plc OpenAI Strategic Partnership (Dec 5 2024), Tech-Review Publisher With Direct OpenAI Financial Tie on the Wearables-Review Beat - Sep 2 2026 15:00 PDT
+
+**Date:** 2026-09-02 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 472 B -> 473 C)
+**Type:** C - Financial Incentive Mapping
+**Mechanism:** #473 Type C - Future plc (UK specialist publisher, LSE: FUTR, 200+ brands) signed a content licensing and strategic partnership deal with OpenAI on Dec 5 2024. ChatGPT surfaces Future portfolio content with attribution and links to full articles. Payment involved but described by the company as "not financially material" (Press Gazette tracker paraphrase of company statement). Pre-existing OpenAI technology relationship: AI chatbots already deployed on Tom's Hardware and Who What Wear; OpenAI tools used across sales, marketing, and editorial. Executive quotes on record: OpenAI COO Brad Lightcap (enhance ChatGPT with specialist sources; help publishers benefit and expand reach) and Future CEO Jon Steinberg (new discovery avenue; forefront of AI deployment). Wearables-beat relevance is direct: Tom's Guide and TechRadar are leading smart-glasses review outlets, so the OpenAI financial tie sits on the exact beat covering Meta vs competitor wearables (repo cross-check: Aug 18 Amanda Caswell Tom's Guide AI-editor smart-glasses test). Mechanism 249 (Press Ranger/OtterlyAI, Aug 20 2026) independently ranks Future plc the number 1 AI citation beneficiary among OpenAI-licensed publishers (+48% ChatGPT citations), giving the deal a quantified visibility channel even though the cash itself is company-described as immaterial. Meta contrast: zero known AI licensing or content deals between Future plc and Meta (Aug 18 Caswell test assertion; Meta's 13-partner AI content list contains no Future brand). Disclosure posture: LSE-listed public company, value undisclosed beyond the self-minimizing not-material characterization; no formal opacity-tier assignment made. Also closed a portfolio list gap: publisher_content_deal_portfolio notable_partners previously omitted Future plc. Structural mapping only: correlation_not_causation true, is_significant false, no tone scores, no p_value.
+**Publication/Portfolio:** OpenAI publisher content deal portfolio (competitor-entities.yaml entities.openai)
+**Rotation Transparency:** Previous entry #472 Type B at 14:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after B is C. Cycle verified: 468 C 10:00, 469 D 11:00, 470 E 12:00, 471 A 13:00, 472 B 14:00. Selected Type C after verifying #472 commit present and pushed. Candidate selection: Future plc had zero dedicated Type C coverage and was missing from the portfolio notable_partners list (verified via grep); distinct from #468 (Reach/Amazon), #249 (citation beneficiary ranking only, no deal mapping), and the Aug 18 Caswell test (no-Meta-deal assertion only).
+**Focus:** Type C financial incentive mapping - verify and expand a publisher-competitor financial relationship with SEC-filing-adjacent disclosure posture (LSE-listed, company materiality characterization), per the Type C mandate.
+
+**Evidence discipline notes (honest limitations):**
+- Deal facts rest on secondary trade-press reports (Digiday timeline, Press Gazette tracker updated Sep 1 2026, Technology Mag, GameDeveloper, Maginative); the OpenAI announcement post itself was not fetched this run. "Not financially material" is a Press Gazette paraphrase of a Future company statement, not verified against Future plc annual report filings this run. Flagged as STRONG confounder.
+- Cash incentive magnitude is small by the company's own account; any incentive effect would run through the citation-visibility channel (mechanism 249), not payment size. Stated explicitly to avoid overstating.
+- Qualitative only per Aug 28 rule. No tone arrays constructed, no numeric delta computed or claimed. significant=false.
+
+**Novelty Verification (per AGENTS.md Type C rule):** grep for Future plc across tests/test_type_c*: zero hits. git log --grep=Future: only the #445 podcast false positive. Checked profiles/wired.yaml and competitor-entities.yaml: only passing mentions (citation study beneficiary ranking, Caswell test parent-company field). Not Microsoft PCM related. Distinct from #468 (Reach/Amazon usage-based), #463 (USA Today BUNDLED), #458 (Fox DARK PUBLIC), #453 (Conde Nast non-participation), #443 (Microsoft PCM).
+
+**New Type C file:** `tests/test_type_c_473_future_plc_openai_deal_sep02_3pm.py` - 21 tests. Covers 473 iteration/date/rotation/goal-job IDs, YAML parsability, publisher identity (200+ brands), counterparty and deal date, key brands incl. Tom's Guide/TechRadar/PC Gamer, attribution-and-links scope, not-financially-material payment terms, pre-existing OpenAI deployment (Tom's Hardware/Who What Wear chatbots, sales/marketing/editorial tooling), both executive quotes, wearables-beat relevance with Caswell cross-reference, citation-study number-1 link (mechanism 249, 48 percent), Meta zero-deal contrast, statistical discipline (correlation_not_causation true, is_significant false, no tone scores, no p_value), ranked confounders (2 strong incl. single-secondary-source, 1 moderate, 1 weak), novelty notes, portfolio gap closure, HTTPS-only source URLs (5), no-em-dash hygiene on the new block, mechanism uniqueness, no-causal-claim language.
+
+**Profile updates:**
+- `profiles/competitor-entities.yaml` - entities.openai gained `mechanism_473_future_plc_openai_strategic_partnership` (full deal mapping: brands, scope, payment terms, pre-existing deployment, executive quotes, wearables-beat relevance, citation-study link, Meta contrast, disclosure posture, portfolio gap note, statistical discipline, ranked confounders, novelty verification, distinct-from-prior, 5 source URLs)
+- `profiles/competitor-entities.yaml` - publisher_content_deal_portfolio notable_partners gained `- Future plc (Dec 2024)` (previously omitted)
+
+**YAML fixes during edit (durable lesson):** unquoted plain scalars containing `: ` (e.g. `LSE: FUTR`) and mid-line ` #` sequences (e.g. `#445`, `#468`) break PyYAML parsing of multiline block scalars; single-quote any value containing them. Verified with minimal repro in /tmp.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #473 file: 21 passed, 0 failed
+- `scripts/count_stats.py --check`: passes (README synced)
+
+**Confidence:** MEDIUM-HIGH - the deal, date, brand list, attribution scope, and both executive quotes are corroborated across 5 independent secondary sources including the Press Gazette tracker updated Sep 1 2026; the wearables-beat relevance is grounded in a repo-internal test. Downgraded from HIGH only because the "not financially material" characterization was not verified against Future plc filings this run.
+
+**Test file:** `tests/test_type_c_473_future_plc_openai_deal_sep02_3pm.py` - 21 tests, all passed (venv pytest)
+
+---
+
 #472 Type B: Guardian Johana Bhuiyan Same-Day OpenAI vs Meta Discipline Check - Accountability Consistency Bounds Financial-Incentive Theory - Sep 2 2026 14:00 PDT
 
 **Date:** 2026-09-02 14:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 471 A -> 472 B)
