@@ -1,3 +1,32 @@
+#467 Type B: NYT Tripp Mickle Source-Access Deference Baseline - Apple Omerta Elegy vs Arm's-Length Standard, Google Beat Natural Experiment Watchlist - Sep 2 2026 09:00 PDT
+
+**Date:** 2026-09-02 09:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 466 A -> 467 B)
+**Type:** B - Journalist Cross-Entity Tracking (NYT x Tripp Mickle, source-access driver class)
+**Mechanism:** #467 Type B - First Mickle mechanism in repo. Three Apple deference signatures tied to 8 years of insider source capital: (1) After Steve (200+ executive interviews, May 2022) frames Apple secrecy as elegiac tragedy (lost its soul, operations eclipsed creativity); Jan 2026 Ternus succession profile (co-byline Kalley Huang) built on three people close to the company speaking anonymously about Apple confidential deliberations with sympathetic threading the needle framing. (2) Self-coined culture of corporate omerta framed as a reporter sourcing challenge, not a governance problem (verbatim via Talking Biz News beat interview). (3) Retrospective datapoint: May 23 2026 NYT piece headlined Is Trump's Made in America iPhone a Fantasy declined to answer its own headline, keeping maybe alive solely via analyst quotes (Wayne Lam, TechInsights $2000 figure), per John Gruber documented critique May 24 2026. Companion datapoint: Nvidia headline Nvidia Accuses Rivals of Being A.I. Doomers adopts corporate pejorative as frame (Muck Rack listing, full text unverified). Prospective natural experiment: Mickle took the Google/Alphabet beat Sep 2026 after Nico Grant departure (Talking Biz News, crawled Sep 1 2026), continuing Apple until replacement found. Baseline prediction logged: cold-start Google coverage should read colder than warm Apple elegy; if so, the within-journalist delta indicates access-driven rather than entity-neutral standards. Watchlist status: no Mickle Google-beat articles verified as of 2026-09-02 09:00 PDT. Driver class explicitly source-access, NOT financial (NYT holds no Apple licensing deal; NYT litigates against OpenAI/Microsoft). Complements the Isaac institutional-assignment finding: here the variable is reporter source capital. Ranked confounders: STRONG (Gruber Apple-partisan critic; book-vs-news genre gap), MODERATE (beat newness makes cold Google coverage the null; analyst-quote hedging is standard desk practice), WEAK (tariff-news timing).
+
+**Publication:** The New York Times
+**Journalist:** Tripp Mickle (NYT 2022-present; WSJ 2014-2022; Wake Forest BA, Columbia MS Journalism)
+**Rotation Transparency:** Previous entry #466 Type A at 08:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after A is B. Cycle verified: 461 A 03:00, 462 B 04:00, 463 C 05:00, 464 D 06:00, 465 E 07:00, 466 A 08:00, 467 B 09:00. Selected Type B after verifying #466 commit present and pushed.
+
+**Focus:** Type B same-journalist standards check on a reporter covering two Meta competitors (Apple + Google), logged honestly as baseline-plus-watchlist rather than a completed finding.
+
+**New Type B file:** `tests/test_type_b_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02_9am.py` - 27 tests. Covers 467 iteration/date/rotation/goal-job IDs, both YAML stores (nytimes.yaml key_journalists + careers/journalists.yaml), baseline-not-finding status, three Apple signatures (insider depth with Ternus/200+, omerta verbatim, Gruber/Lam deference datapoint), Nvidia Doomers headline with unverified-text honesty note, Google experiment event/prediction/watchlist, source-access-not-financial driver class, 5 verbatim HTTPS URLs in both stores, ranked confounders (Gruber in strong), distinct-from-prior (Isaac, Goode), no-em-dash / HTTPS-only hygiene, filename convention, iteration-log presence.
+
+**Profile updates:**
+- `profiles/nytimes.yaml` - Tripp Mickle entry: beat updated to Apple plus Google/Alphabet Sep 2026 (Nico Grant departure), added cross_entity_coverage_analysis with mechanism_467
+- `profiles/careers/journalists.yaml` - Tripp Mickle entry: added mechanism_467 summary + source URLs (entry already reflected Google beat)
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #467 file: 30 passed, 0 failed
+- `scripts/count_stats.py --check`: passes (README synced)
+
+**Confidence:** MEDIUM - all five source URLs verified verbatim this session (two Talking Biz News pages, Daring Fireball critique opened and read, 9to5Mac Ternus piece, Muck Rack portfolio); the Gruber characterization is secondhand and flagged as such; the Google experiment is prospective only. No causal or financial claims made.
+
+**Test file:** `tests/test_type_b_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02_9am.py` - 27 tests, all passed (venv pytest)
+**Cumulative:** 795 test files, 26,792 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
 #466 Type A: WIRED x Amazon - FTC Ad-Auction Lawsuit 44-Hour Coverage-Selection Observation, Sep 2025 Haskins Same-Day Precedent as Counter-Evidence - Sep 2 2026 08:00 PDT
 
 **Date:** 2026-09-02 08:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 465 E -> 466 A)
@@ -149,7 +178,7 @@ Finalized at #465 commit time (placeholders left unfilled by the #464 run):
 
 **Focus:** Type E fifteenth verification - freshness check plus one genuinely new-to-log EHE campaign data point with explicit surfaced-not-new dating discipline.
 
-**New Type E file:** `tests/test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py` - 30 tests, all passed. Covers 460 iteration/date/rotation/goal-job IDs, GF 498 hold with official HTTPS URL and bounded language, EHE activist-not-podcast plus 23-day hold plus 9000 email drive with surfaced-not-new and dating-bound assertions, Attention Sphere 15th no-match with circular rejection, The Drum + AfroTech HTTPS secondary, MANUAL ILLUSTRATIVE / no-false-significance / correlation-not-causation / no-em-dash / HTTPS-only hygiene, distinct-from-455, no Microsoft PCM novelty claim, iteration-log presence and newest-first ordering.
+**New Type E file:** `tests/test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py` - 27 tests, all passed. Covers 460 iteration/date/rotation/goal-job IDs, GF 498 hold with official HTTPS URL and bounded language, EHE activist-not-podcast plus 23-day hold plus 9000 email drive with surfaced-not-new and dating-bound assertions, Attention Sphere 15th no-match with circular rejection, The Drum + AfroTech HTTPS secondary, MANUAL ILLUSTRATIVE / no-false-significance / correlation-not-causation / no-em-dash / HTTPS-only hygiene, distinct-from-455, no Microsoft PCM novelty claim, iteration-log presence and newest-first ordering.
 
 **Verification runs (venv pytest, -p no:cacheprovider):**
 - New #460 file: 30 passed, 0 failed

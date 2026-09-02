@@ -2276,8 +2276,49 @@ key_journalists:
         meta_ai_restructuring_by_isaac: "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
         data_harvesting_multi_byline: "https://www.nytimes.com/2024/04/06/technology/tech-giants-harvest-data-artificial-intelligence.html"
   - name: "Tripp Mickle"
-    beat: "Apple"
-    known_patterns: "Joined from WSJ (2022). 'After Steve' author (2022) — thesis that Apple lost its soul under Cook. 8 years covering Apple at WSJ."
+    beat: "Apple (2022 to Aug 2026); added Google/Alphabet Sep 2026 after Nico Grant departure, continuing Apple until replacement found"
+    known_patterns: "Joined from WSJ (2022). 'After Steve' author (2022) - thesis that Apple lost its soul under Cook. 8 years covering Apple at WSJ."
+    cross_entity_coverage_analysis:
+      mechanism_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02:
+        mechanism_id: 467
+        discovery_date: '2026-09-02'
+        iteration: 467
+        iteration_type: B
+        iteration_time: 2026-09-02 09:00 PDT
+        scheduled_job_id: mediascope-daily-iteration
+        goal_id: goal_54093bda4145
+        publication_focus: The New York Times
+        journalist: Tripp Mickle
+        type: B - Journalist Cross-Entity Tracking - source-access deference asymmetry baseline
+        status: BASELINE plus ONE RETROSPECTIVE DATAPOINT - prospective watchlist, not a completed asymmetry finding
+        apple_framing_signatures:
+          insider_sourcing_depth: 'After Steve built on 200+ current and former Apple executive interviews (William Morrow, May 2022, 512 pages). Jan 2026 John Ternus CEO-succession profile (co-byline Kalley Huang) built on three people close to the company speaking anonymously about Apple confidential deliberations, with sympathetic threading the needle character framing of Ternus.'
+          omerta_framing: 'Mickle coined culture of corporate omerta for Apple secrecy and frames it as a reporter sourcing challenge, not a governance or accountability problem. Verbatim: The biggest challenge is always getting people to talk. Apple has what I call a culture of corporate omerta, where they collectively take a vow of secrecy and do not talk about the work that they are doing.'
+          deference_datapoint: 'May 2026-05-23 NYT piece headlined Is Trump Made in America iPhone a Fantasy declined to answer its own headline with the obvious yes. Per John Gruber documented critique (Daring Fireball, May 24 2026), the piece kept maybe alive solely through analyst quotes (Wayne Lam, TechInsights, $2000 figure) with not a single fact backing anything other than fantasy. Same journalist, same company: unwillingness to state a plainly true negative about Apple.'
+        nvidia_framing_datapoint:
+          headline: 'Nvidia Accuses Rivals of Being A.I. Doomers as US Debates Sale of Chips to China'
+          note: 'Headline adopts Nvidia corporate pejorative (Doomers) as the news frame. Attested via Muck Rack portfolio headline listing; full text not verified this session.'
+        google_beat_natural_experiment:
+          event: 'Mickle took on the Google/Alphabet beat in Sep 2026 following Nico Grant departure, continuing Apple until a replacement is found.'
+          baseline_prediction: 'With no 8-year insider base at Google, his early Google coverage should show a colder, more arm''s-length register than his Apple elegy. If Apple warmth persists while Google coverage stays transactional, the within-journalist delta indicates access-driven rather than entity-neutral standards.'
+          watchlist_status: 'No Mickle Google-beat articles verified as of 2026-09-02 09:00 PDT. Revisit in future Type B iterations.'
+        driver_class: 'Source-access asymmetry, NOT financial. NYT holds no Apple content-licensing deal; NYT is in active copyright litigation against OpenAI/Microsoft. Complements the Isaac institutional-assignment finding: here the variable is the journalist own source capital, not the desk assignment.'
+        source_urls:
+          - https://talkingbiznews.com/media-news/how-nyts-mickle-approaches-the-apple-beat/
+          - https://talkingbiznews.com/media-news/mickle-to-take-on-google-alphabet-beat-at-ny-times/
+          - https://daringfireball.net/2025/05/idiocy_or_jackassery_you_make_the_call_made_in_america_iphone
+          - https://9to5mac.com/2026/01/08/the-new-york-times-profiles-apples-expected-next-ceo/
+          - https://muckrack.com/tripp-mickle/articles
+        confounders_ranked:
+          strong:
+            - 'Gruber is an Apple-aligned partisan critic; his characterization of the iPhone piece may overstate deference.'
+            - 'Genre difference: book-length elegy (After Steve) vs daily news imposes different registers regardless of entity.'
+          moderate:
+            - 'Beat newness makes colder early Google coverage the null expectation, weakening the experiment power.'
+            - 'Analyst-quote deference is standard NYT business-desk practice, not necessarily Mickle-specific.'
+          weak:
+            - 'Timing: the iPhone piece ran during tariff news chaos, which rewards hedged framing.'
+        distinct_from_prior: 'First Mickle mechanism in repo (no prior Mickle test file exists). Distinct from Isaac cross-entity (institutional assignment) and Goode emotional register (product-review wonder): this is reporter-source-capital deference toward a single Meta competitor, logged as baseline only.'
   - name: "Kate Conger"
     beat: "Tech labor, social media"
     known_patterns: "Joined from TechCrunch 2018. Co-authored 'Character Limit' on Elon Musk's Twitter."

@@ -1899,6 +1899,25 @@ journalists:
     institution: Columbia University Graduate School of Journalism
     source_url: https://muckrack.com/tripp-mickle
   multi_publication: true
+  mechanism_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02:
+    mechanism_id: 467
+    discovery_date: '2026-09-02'
+    iteration: 467
+    iteration_type: B
+    iteration_time: 2026-09-02 09:00 PDT
+    scheduled_job_id: mediascope-daily-iteration
+    goal_id: goal_54093bda4145
+    publication_focus: The New York Times
+    journalist: Tripp Mickle
+    type: B - Journalist Cross-Entity Tracking - source-access deference asymmetry baseline
+    status: BASELINE plus ONE RETROSPECTIVE DATAPOINT - prospective watchlist, not a completed asymmetry finding
+    summary: 'Mickle Apple coverage shows three deference signatures tied to 8 years of insider source capital: (1) 200+ interview book framing Apple secrecy as elegiac tragedy (lost its soul), (2) self-coined culture of corporate omerta framed as a reporter challenge rather than an accountability problem, (3) May 2025 Made in America iPhone piece declining to answer its own headline, keeping maybe alive via analyst quotes per Gruber documented critique. Sep 2026 Google/Alphabet beat addition (post Nico Grant departure) creates a within-journalist natural experiment: cold-start Google coverage vs warm Apple coverage. Driver class is source-access, not financial.'
+    source_urls:
+      - https://talkingbiznews.com/media-news/how-nyts-mickle-approaches-the-apple-beat/
+      - https://talkingbiznews.com/media-news/mickle-to-take-on-google-alphabet-beat-at-ny-times/
+      - https://daringfireball.net/2025/05/idiocy_or_jackassery_you_make_the_call_made_in_america_iphone
+      - https://9to5mac.com/2026/01/08/the-new-york-times-profiles-apples-expected-next-ceo/
+      - https://muckrack.com/tripp-mickle/articles
 - career:
   - beat: N/A (education)
     end: 2017-01
