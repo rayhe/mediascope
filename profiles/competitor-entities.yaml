@@ -2531,7 +2531,9 @@ entities:
 
           Condé Nast (multi-year, Rufus, Jul 2025), Hearst (multi-year,
 
-          Rufus, Jul 2025). Building an AI content marketplace to scale
+          Rufus, Jul 2025), Reach plc (usage-based, Nova AI plus Alexa,
+
+          Mar 2026, mechanism 468). Building an AI content marketplace to scale
 
           publisher licensing to all AI builders (announced Feb 2026).
 
@@ -3645,6 +3647,80 @@ entities:
       - https://www.WebWire.com/ViewPressRel.asp?aId=350303
       - https://www.fool.com/data-news/2025/08/02/amazon-amzn-q2-revenue-jumps-13/
       - https://www.tradingview.com/news/tradingview:15b8f73c13724:0-amazon-com-inc-q2-2026-revenue-200-6b-net-income-62-65b-eps-5-75-10-q-summary/
+    mechanism_468_reach_plc_amazon_usage_based_deal:
+      mechanism_id: 468
+      iteration: 468
+      rotation: Type C
+      date: '2026-09-02'
+      time_pdt: '10:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      title: Reach plc Amazon Usage-Based AI Licensing Deal (Mar 2 2026) - Fourth
+        Amazon Publisher Deal With Novel Compensation Structure
+      publisher: Reach plc (UK national and regional publisher; Daily Mirror and
+        Daily Express publisher per Press Gazette)
+      tech_counterparty: Amazon (AWS)
+      deal_date: '2026-03-02'
+      scope: Reach content feeds Amazon Nova AI model and serves as a source for
+        answers Alexa gives to users
+      compensation_structure: usage-based (explicitly not one flat fee for universal
+        access)
+      deal_terms_disclosed: false
+      ceo_memo_quotes:
+      - 'There has to be a fair return for content creators - without our information,
+        analysis, rich archive material and breaking news, AI models quickly lose
+        their value.'
+      - 'This deal is an interesting one for us and has potential as a repeatable
+        model, as it is not just one flat fee for universal access, but actually
+        based on usage. This gives us more control over how our content is used,
+        what we get in return, and crucially, more visibility.'
+      ceo: Piers North (memo to staff, via Press Gazette)
+      sign_sue_bifurcation: Reach signed with Amazon while separately considering
+        legal action against OpenAI (Press Gazette understands, not a Reach statement)
+      amazon_publisher_portfolio_after_deal:
+      - NYT ($20-25M/yr flat, May 2025, Alexa plus model training)
+      - Conde Nast (multi-year, Rufus, Jul 2025)
+      - Hearst (multi-year, Rufus, Jul 2025)
+      - Reach plc (usage-based, Nova plus Alexa, Mar 2026)
+      structural_significance: First usage-based (non-flat-fee) AI licensing structure
+        in the MediaScope Amazon portfolio. Usage-based compensation gives the publisher
+        contractual visibility into how its content is used, which is the opposite
+        of the Tier 1 BLACK BOX opacity posture. North explicitly frames it as a
+        repeatable model, meaning other publishers may adopt it, which would increase
+        industry-wide visibility into AI licensing economics over time.
+      meta_comparison: Meta has zero known AI licensing deals with Reach plc
+      correlation_not_causation: true
+      is_significant: false
+      statistical_note: No tone scores computed in this mechanism. No p_value, no
+        effect size, no significance claim. Structural financial mapping only.
+      confounders_ranked:
+        strong:
+        - Single secondary source (Press Gazette tracker, updated Sep 1 2026); CEO
+          memo quotes are via Press Gazette, not the primary memo text
+        - Deal value undisclosed (usage-based by design, no dollar figure to anchor
+          materiality)
+        moderate:
+        - Considering legal action against OpenAI is Press Gazette understanding,
+          not an on-record Reach statement
+        - Reach titles are UK-focused; limited direct bearing on US publication
+          coverage-tone comparisons
+        weak:
+        - Single-deal observation, not a portfolio trend by itself
+      source_urls:
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      novelty_verification: No existing test file or YAML block references a Reach
+        plc publisher Amazon deal (grep Sep 2 2026). Distinct from Microsoft PCM
+        marketplace (mechanism 443), Meta non-participation (453), Fox DARK PUBLIC
+        (458), USA Today Co. BUNDLED (463).
+      cross_references:
+      - mechanism_id: 371
+        relationship: extends
+        description: Amazon publisher licensing portfolio grows from three to four
+          known deals with the Reach usage-based addition
+      - mechanism_id: 372
+        relationship: extends
+        description: Amazon multi-layer publisher leverage extended with a fourth
+          licensing counterparty on a novel compensation structure
   apple:
     display_name: Apple
     aliases:

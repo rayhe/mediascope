@@ -1,3 +1,34 @@
+#468 Type C: Financial Incentive Mapping - Reach plc Amazon Usage-Based Deal (Mar 2 2026), Fourth Amazon Publisher Deal, First Non-Flat-Fee Structure - Sep 2 2026 10:00 PDT
+
+**Date:** 2026-09-02 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 467 B -> 468 C)
+**Type:** C - Financial Incentive Mapping (Publisher Licensing Portfolio Expansion)
+**Mechanism:** #468 Type C - Reach plc (UK national and regional publisher; Daily Mirror and Daily Express publisher per Press Gazette) signed a deal on Mar 2 2026 for its content to feed Amazon's Nova AI model and serve as a source for Alexa assistant answers, with compensation based on usage, explicitly not one flat fee for universal access. First usage-based (non-flat-fee) AI licensing structure in the MediaScope Amazon portfolio: NYT ($20-25M/yr flat, May 2025), Conde Nast (multi-year Rufus, Jul 2025), Hearst (multi-year Rufus, Jul 2025). CEO Piers North staff memo frames it as a potential repeatable model giving Reach more control and crucially more visibility into usage, the structural opposite of the Tier 1 BLACK BOX opacity posture. Sign/sue bifurcation: Reach signed with Amazon while separately considering legal action against OpenAI (Press Gazette understands, not an on-record Reach statement). Meta has zero known AI licensing deals with Reach plc. Amazon publisher licensing portfolio now four known deals. No tone scores, no p_value, no significance claim; structural mapping only, correlation not causation.
+
+**Publication:** Reach plc (counterparty: Amazon/AWS)
+**Competitor Pair:** Amazon (expanding licensor) vs Meta (zero Reach deals)
+**Rotation Transparency:** Previous entry #467 Type B at 09:00 PDT Sep 2 2026 (NYT Tripp Mickle). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 463 C 05:00, 464 D 06:00, 465 E 07:00, 466 A 08:00, 467 B 09:00, 468 C 10:00. Selected Type C after verifying #467 commit present and pushed.
+
+**Focus:** Type C financial incentive mapping - fourth Amazon publisher deal with a novel compensation structure, sourced from the Press Gazette AI deals/lawsuits tracker (updated Sep 1 2026).
+
+**New Type C file:** `tests/test_type_c_468_reach_amazon_usage_based_deal_sep02_10am.py` - 21 tests. Covers 468 iteration/date/rotation/goal-job IDs, YAML parsability, publisher identity (Mirror/Express), Nova+Alexa scope, usage-based structure with undisclosed terms, North memo verbatim quotes (fair return, repeatable model, more visibility), sign/sue bifurcation with scoped sourcing honesty, 4-deal Amazon portfolio, Meta-zero comparison, statistical discipline (correlation_not_causation true, is_significant false, no p_value), ranked confounders (2 strong incl. single-secondary-source, 2 moderate, 1 weak), HTTPS-only source URL, no-em-dash / no-causal-claim hygiene on the new block, ai_content_licensing layer update, mechanism 468 uniqueness, novelty markers (443/453/458/463), cross-references to 371/372, test-file self-reference.
+
+**YAML updates:**
+- `profiles/competitor-entities.yaml` - new `mechanism_468_reach_plc_amazon_usage_based_deal` block at end of amazon entity (16 fields: portfolio, memo quotes, bifurcation, confounders, sources, novelty, cross-refs)
+- `profiles/competitor-entities.yaml` - `ai_content_licensing` layer detail now lists Reach plc (usage-based, Nova AI plus Alexa, Mar 2026, mechanism 468)
+
+**Novelty Verification (per AGENTS.md Type C rule):** grep for Reach plc publisher Amazon deal across profiles/tests: zero hits. git log --grep="Reach": only false positives. Not Microsoft PCM related. Distinct from #443 (PCM paradox), #453 (Meta non-participation), #458 (Fox DARK PUBLIC), #463 (USA Today BUNDLED).
+
+**Confounders Ranked:** STRONG Single secondary source (Press Gazette tracker; memo quotes via Press Gazette, not primary memo); STRONG Deal value undisclosed (usage-based by design, no dollar figure for materiality); MODERATE OpenAI legal-action note is Press Gazette understanding, not on-record; MODERATE UK-focused titles, limited US coverage-tone bearing; WEAK Single-deal observation.
+
+**Sources (1 HTTPS, trade-press tracker):** https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/ (tracker updated Sep 1 2026; Reach-Amazon section dated 2 March 2026; read Sep 2 2026 UTC)
+
+**Confidence:** MEDIUM-HIGH - deal facts and memo quotes read verbatim from the tracker; compensation structure and bifurcation explicitly bounded; no tone or causal claims made.
+
+**Test file:** `tests/test_type_c_468_reach_amazon_usage_based_deal_sep02_10am.py` - 21 tests, all passed (venv pytest)
+**Cumulative:** 796 test files, 26,813 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
 #467 Type B: NYT Tripp Mickle Source-Access Deference Baseline - Apple Omerta Elegy vs Arm's-Length Standard, Google Beat Natural Experiment Watchlist - Sep 2 2026 09:00 PDT
 
 **Date:** 2026-09-02 09:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 466 A -> 467 B)
