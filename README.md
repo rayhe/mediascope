@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 26954 | Across 801 test files |
+| Tests | 26980 | Across 802 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **26954 tests** across 801 test files, each covering a different analytical capability:
+MediaScope has **26980 tests** across 802 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1280,6 +1280,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_459_full_suite_verification_sep02_1am.py` | 31 | Type D #459: Full Suite Verification Sep 2 2026 01:00 PDT. |
 | `test_type_d_464_full_suite_verification_sep02_6am.py` | 38 | Type D #464: Full Suite Verification Sep 2 2026 06:00 PDT. |
 | `test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py` | 34 | Type D #469: scorer consistency and full-suite health verification - Sep 2 2026 11:00 PDT. |
+| `test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py` | 26 | Type D #474: full-suite health and recent-mechanism persistence - Sep 2 2026 16:00 PDT. |
 | `test_type_d_4pm_cross_validation_aug27.py` | 26 | Type D Cross-Validation - Thu 2026-08-27 4 PM PT |
 | `test_type_d_full_suite_cross_validation_type_d_397_aug30.py` | 31 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
 | `test_type_d_statistical_validity_comprehensive_aug28.py` | 19 | Type D - Comprehensive Statistical Validity & Pipeline Health |

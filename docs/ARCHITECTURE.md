@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 26847 tests across 797 test files (all from real articles)
+├── tests/                       # 26980 tests across 802 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1032,6 +1032,7 @@ mediascope/
 │   ├── test_type_d_459_full_suite_verification_sep02_1am.py  # Type D #459: Full Suite Verification Sep 2 2026 01:00 PDT.
 │   ├── test_type_d_464_full_suite_verification_sep02_6am.py  # Type D #464: Full Suite Verification Sep 2 2026 06:00 PDT.
 │   ├── test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py  # Type D #469: scorer consistency and full-suite health verification - Sep 2 2026 11:00 PDT.
+│   ├── test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py  # Type D #474: full-suite health and recent-mechanism persistence - Sep 2 2026 16:00 PDT.
 │   ├── test_type_d_4pm_cross_validation_aug27.py  # Type D Cross-Validation - Thu 2026-08-27 4 PM PT
 │   ├── test_type_d_full_suite_cross_validation_type_d_397_aug30.py  # Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping
 │   ├── test_type_d_statistical_validity_comprehensive_aug28.py  # Type D - Comprehensive Statistical Validity & Pipeline Health

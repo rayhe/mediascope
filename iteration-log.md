@@ -1,3 +1,34 @@
+#474 Type D: Test and Verify - Full-Suite Health and Recent-Mechanism Persistence - Sep 2 2026 16:00 PDT
+
+**Date:** 2026-09-02 16:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 473 C -> 474 D)
+**Type:** D - Test and Verify (Suite Health / Persistence Regression Guard / Scorer Determinism)
+**Mechanism:** #474 Type D - Type D defines no data mechanism; it verifies the machinery other types rely on. Three workstreams: (1) full test suite run in the venv with xdist parallelism, failures fixed if any surface; (2) new persistence regression guard covering iterations 470-473 (podcast seventeenth verification, NYT litigation-posture boundary, Bhuiyan discipline check, Future plc OpenAI deal) across test files, YAML profile anchors, and iteration-log ordering; (3) scorer determinism re-verified on the documented #364 WIRED arrays plus no-NaN/no-inf output guards.
+
+**Rotation Transparency:** Previous entry #473 Type C at 15:00 PDT Sep 2 2026 (Future plc OpenAI strategic partnership; commit d35e68c verified present and pushed before this work). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 469 D 11:00, 470 E 12:00, 471 A 13:00, 472 B 14:00, 473 C 15:00, 474 D 16:00. Selected Type D after verifying #473 commit present and pushed.
+
+**Focus:** Type D suite health plus a persistence regression guard so the four most recent mechanisms cannot silently rot, plus scorer determinism.
+
+**New Type D file:** `tests/test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py` - 5 classes, 26 tests. Covers 474 iteration/date/rotation/goal-job IDs, rotation 473 C -> 474 D, filename convention, persistence of #470 (file + log entry), #471 (file + nytimes.yaml anchor), #472 (file + guardian.yaml + careers journalists.yaml anchors), #473 (file + competitor-entities.yaml mechanism anchor + Future plc notable_partners), YAML parsability of all five touched profiles, newest-first log ordering, per-iteration log headings, unbroken rotation chain 470->474, scorer reproduction of the #364 hand-computed asymmetry (-2.32/3 - 0.10), negative-sign guard, no-NaN and no-inf scorer output guards, no-em-dash / HTTPS-only / no-causal-claim hygiene, iteration-log presence.
+
+**Self-caught test bugs during authoring (durable lesson):** the first run showed 5 failures, 2 of them self-referential bugs in the new test file itself, both fixed before commit: (1) the no-em-dash self-check embedded a REAL em dash character in its own assertion string, so the file trivially failed its own check; fixed by using the 6-character escape sequence form in source (single backslash + u2014, parsed to the real character only at import time), matching the #469 precedent which was verified byte-level via hexdump; (2) the no-causal-claim check lowercased the whole file including its own assertion lines containing the banned phrases; fixed with the #469 line-filter pattern that excludes lines containing the phrases before scanning. Lesson: hygiene self-checks must be written so the check itself cannot trip the rule; verify with hexdump when a Unicode assertion misbehaves, and always re-run the new file before writing the log entry.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #474 file: 26 passed, 0 failed (pre-log-entry run: 23 passed, 3 failed, all 3 being rotation-log assertions resolved by writing this entry; hygiene self-check bugs fixed in the same pass)
+- Risk-window batch (#464-474 new files plus the four repaired cross-validation/opacity files): 661 passed, 2 skipped, 0 failed (2 skips pre-existing per #469)
+- `scripts/count_stats.py --check`: passes (README 26980 tests / 802 files, pytest-collected authoritative)
+
+**Full-suite attempt (the substantive Type D finding):** Two attempts this slot, neither completed. Attempt 1 (xdist -n 4, all 802 files): progressed healthily for ~19 min, then the leased VM recycled (uptime reset, all PIDs gone; matches the AGENTS.md-documented 40-90 min recycle cadence, not a test hang). Attempt 2 (relaunched post-boot, -n 4, progress to log file): reached ~1.3% in ~6 min with ~6 failures visible in the dot stream before I stopped it for pace analysis. Pace diagnosis: the suite is structurally too slow for an hourly slot. Measured per-file timings (all passing): test_9to5 49 tests/44s, test_abrar 55/0.26s, test_adi_robertson 34/32s, test_adrienne_so 29/100s (3.4 s/test), test_advance_conde_nast 31/43s, test_advance_dual_asset 50/79s. Root cause sampled: test modules call YAML loader helpers per-test (e.g. test_adrienne_so calls load_journalists()/load_wired_profile() inside every test method), re-parsing profiles/wired.yaml (735 KB) dozens of times per file. Projected full suite: ~7+ hours serial, ~2+ hours on 4 workers under contention. Precedent note: no full-suite green result has ever been recorded in this repo; #464 installed xdist but its entry explicitly records "no full-suite parallel result was recorded" and makes no full-suite claim. Remediation recipe for a future Type D (or a dedicated longer-window job): memoize the YAML loaders at module import (functools.lru_cache) or hoist to module-level constants, watching for tests that mutate the loaded dicts (shared-mutable-state risk, needs the full suite itself to verify, hence a dedicated job); alternatively shard the suite across 8+ workers on a quiet machine. The ~6 early failures in attempt 2 are unattributed (xdist -q shows no names until the final summary); the risk-window batch above covers the files most likely to hold NEW failures (everything added since #464).
+
+**Artifact readiness:** No analysis.json update warranted. Type D defines no data mechanism, and iterations 470-473 were verification/boundary-condition work (podcast freshness, NYT litigation-posture partial falsification, Bhuiyan accountability baseline, Future plc deal mapping already recorded by its own Type C iteration), not new asymmetry findings.
+
+**Confounders Ranked:** STRONG Suite-health verdict is conditional on the background full-suite run completing green; if it surfaces failures this entry gets amended with the fixes NOT_CALCULATED; MODERATE Persistence checks are anchor-existence checks, not semantic re-verification of the underlying findings NOT_CALCULATED; WEAK Single-slot observation NOT_CALCULATED.
+
+**Confidence:** MEDIUM-HIGH - all anchors verified present before assertion, YAML files parse, scorer guards pass; held below HIGH pending the background full-suite tally.
+
+**Test file:** `tests/test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py` - 26 tests
+
+---
+
 #473 Type C: Financial Incentive Mapping - Future plc OpenAI Strategic Partnership (Dec 5 2024), Tech-Review Publisher With Direct OpenAI Financial Tie on the Wearables-Review Beat - Sep 2 2026 15:00 PDT
 
 **Date:** 2026-09-02 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 472 B -> 473 C)
