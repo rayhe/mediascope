@@ -1,3 +1,39 @@
+#469 Type D: Test and Verify - Scorer Consistency, Cross-Validation Repair, Opacity Index 4-Tier Update - Sep 2 2026 11:00 PDT
+
+**Date:** 2026-09-02 11:00 PDT slot, finalized 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 468 C -> 469 D). Recovery note: the 11:00 run left this work uncommitted and unlogged; the 12:00 run verified it, fixed the remaining failures, wrote this entry, and committed before starting #470.
+**Type:** D - Test and Verify (Scorer Consistency / Suite Health / Regression Guard)
+**Mechanism:** #469 Type D - Type D defines no data mechanism; it verifies the machinery other types rely on. Three workstreams: (1) scorer consistency: the asymmetry engine reproduces hand-computed values on the #364 documented WIRED arrays (Meta target [-0.72, -0.82, -0.78], OpenAI peer [0.10, 0.05, 0.15]), statistical primitives are deterministic and degrade gracefully on degenerate inputs; (2) cross-validation repair: fixed stale pinned assertions in the Aug 13/14/27 Type D files so the suite stays green as the registries legitimately grow; (3) opacity index update: 3 tiers to 4 tiers (Tier 4 DARK PUBLIC from Type C #458 Fox Corp) plus People Inc Google traffic loss 65% to 69% (Q2 2026 update).
+
+**Publication:** Cross-publication (structural verification, no new asymmetry claim)
+**Competitor Pair:** Meta vs OpenAI (scorer fidelity arrays only, #364 reference)
+**Rotation Transparency:** Previous entry #468 Type C at 10:00 PDT Sep 2 2026 (Reach plc Amazon usage-based deal). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 464 D 06:00, 465 E 07:00, 466 A 08:00, 467 B 09:00, 468 C 10:00, 469 D 11:00. Selected Type D after verifying #468 commit present and pushed.
+
+**Focus:** Type D scorer arithmetic fidelity plus cross-validation regression repair plus opacity index tier update.
+
+**New Type D file:** `tests/test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py` - 6 classes, 34 tests. Covers 469 iteration/date/rotation/goal-job IDs, scorer reproduction of hand-computed #364 values (target avg -2.32/3, peer avg 0.10, asymmetry = target minus peer), determinism of welch_t_test / cohens_d / bootstrap_ci / is_significant across repeated calls, degenerate inputs (empty arrays, single-element, zero-variance) degrading without exceptions, persistence of #465 (podcast markers), #466, #467, #468 (Reach mechanism in competitor-entities.yaml), no-em-dash / HTTPS-only / correlation-not-causation hygiene, iteration-log presence.
+
+**Cross-validation repairs (all pre-existing failures, none introduced by recent iterations):**
+- `test_type_d_10pm_cross_validation_aug14.py`: 33 failures on the committed version. Root cause: six per-class `_find_mechanism` copies used first-match traversal, so later-added cross_reference stubs (bare mechanism_id dicts) shadowed the primary blocks carrying finding_summary / source_urls / confounding_factors. The 11:00 run fixed one class (33 to 17 failures); the 12:00 completion hoisted the primary-preferring lookup to a module-level `_find_primary_mechanism` helper and delegated all six classes (17 to 0 failures). #108 primary cross_references verified to contain 106 and 107, so the Ziff Davis cluster coherence test now exercises real data instead of vacuous stub passes.
+- `test_type_d_05pm_cross_validation_aug13.py`: contiguity assertion (no ID gaps 17 to max) replaced with monotonic-floor assertion (max ID never regresses below the Aug 27 high-water mark of 345). Rationale: mechanism numbers are allocated globally across registries and Type D/E iterations intentionally define no data mechanism, so gaps in one file are structural, not data loss.
+- `test_type_d_4pm_cross_validation_aug27.py`: pinned `max_id == 345` relaxed to `>= 345` with the dedup regression protection retained (IDs must never go backward).
+- `test_publisher_ai_revenue_opacity_index.py`: three tiers to four tiers (Tier 4 DARK PUBLIC, Fox Corporation via #458); People Inc Google referral traffic loss 65pct to 69pct per Q2 2026 reporting.
+
+**Doc backfill:** README.md and docs/ARCHITECTURE.md test tables gained the missing rows for test files added since Aug 27 (backfill of ~150 rows); header counts synced to 26,847 tests across 797 files. `profiles/competitor-coverage-research.yaml`: #131 cross-reference gained an explicit `connection` field (control-calibration wording for the #114 triple-dependency comparison).
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #469 file: 34 passed, 0 failed (one mid-run failure on the rotation-log assertion resolved by writing this entry)
+- 10pm + 05pm + 4pm + opacity index files together: all pass (383 passed, 2 skipped across the five-file run at completion)
+- `scripts/count_stats.py --check`: passes (README 26847 tests / 797 files, pytest-collected authoritative)
+
+**Confounders Ranked:** STRONG Scorer fidelity is arithmetic self-consistency, not empirical validation of tone coding (the #364 input arrays are themselves MANUAL ILLUSTRATIVE) NOT_CALCULATED; MODERATE Full-suite parallel pass not re-run in this slot (xdist mechanism from #464 stands; five-file targeted run is the verification basis) NOT_CALCULATED; WEAK Single-slot observation NOT_CALCULATED.
+
+**Confidence:** HIGH - all repaired tests pass in the venv, count_stats --check passes, no asymmetry or causal claims made, correlation-not-causation discipline unchanged.
+
+**Test file:** `tests/test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py` - 6 classes, 34 tests, all passed (venv pytest)
+**Cumulative:** 797 test files, 26,847 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
 #468 Type C: Financial Incentive Mapping - Reach plc Amazon Usage-Based Deal (Mar 2 2026), Fourth Amazon Publisher Deal, First Non-Flat-Fee Structure - Sep 2 2026 10:00 PDT
 
 **Date:** 2026-09-02 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 467 B -> 468 C)

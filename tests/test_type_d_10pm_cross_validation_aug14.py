@@ -98,6 +98,34 @@ def all_ce_ids(ce_data):
     return collect_ce_mechanism_ids(ce_data)
 
 
+def _find_primary_mechanism(data, mech_id):
+    """Find a mechanism by ID, preferring the primary metadata block.
+
+    Later iterations add cross_references stubs (bare {'mechanism_id': N,
+    ...} dicts) earlier in traversal order, which shadow the primary blocks
+    carrying finding_summary / source_urls / confounding_factors. Collect
+    all candidates, then prefer the one with finding_summary or key_finding.
+    Centralized Sep 2 2026, Type D #469 completion: all per-class
+    _find_mechanism copies delegate here.
+    """
+    candidates = []
+
+    def _collect(node):
+        if isinstance(node, dict):
+            if node.get('mechanism_id') == mech_id:
+                candidates.append(node)
+            for v in node.values():
+                _collect(v)
+        elif isinstance(node, list):
+            for item in node:
+                _collect(item)
+
+    _collect(data)
+    for cand in candidates:
+        if 'finding_summary' in cand or 'key_finding' in cand:
+            return cand
+    return candidates[0] if candidates else None
+
 class TestMechanismPresenceInCCR:
     """All 5 mechanisms should be findable in competitor-coverage-research.yaml."""
 
@@ -133,20 +161,7 @@ class TestMetadataCompleteness:
     """Each mechanism should have required metadata fields."""
 
     def _find_mechanism(self, data, mech_id):
-        """Find a mechanism by ID in a nested dict."""
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     @pytest.mark.parametrize("mech_id", MECHANISMS_UNDER_TEST)
     def test_has_finding_summary(self, ccr_data, mech_id):
@@ -184,19 +199,7 @@ class TestConfoundingFactorQuality:
     """Confounding factors should have multiple strength levels."""
 
     def _find_mechanism(self, data, mech_id):
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     @pytest.mark.parametrize("mech_id", MECHANISMS_UNDER_TEST)
     def test_has_strong_factor(self, ccr_data, mech_id):
@@ -250,19 +253,7 @@ class TestCrossReferenceIntegrity:
     """Cross-references should point to existing mechanisms."""
 
     def _find_mechanism(self, data, mech_id):
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     @pytest.mark.parametrize("mech_id", MECHANISMS_UNDER_TEST)
     def test_cross_refs_exist(self, ccr_data, all_ccr_ids, mech_id):
@@ -281,19 +272,7 @@ class TestSourceURLQuality:
     """Source URLs should all use HTTPS."""
 
     def _find_mechanism(self, data, mech_id):
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     @pytest.mark.parametrize("mech_id", MECHANISMS_UNDER_TEST)
     def test_source_urls_https(self, ccr_data, mech_id):
@@ -318,19 +297,7 @@ class TestZiffDavisClusterCoherence:
     """Mechanisms #106, #107, #108 form a Ziff Davis cluster and should cross-reference."""
 
     def _find_mechanism(self, data, mech_id):
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     def test_108_references_106_and_107(self, ccr_data):
         """#108 (corporate) should reference #106 (Stein) and #107 (Wan)."""
@@ -351,19 +318,7 @@ class TestFieldNameConsistency:
     """Regression guard: all mechanisms ≥98 must use finding_summary, not finding."""
 
     def _find_mechanism(self, data, mech_id):
-        if isinstance(data, dict):
-            if data.get('mechanism_id') == mech_id:
-                return data
-            for v in data.values():
-                result = self._find_mechanism(v, mech_id)
-                if result:
-                    return result
-        elif isinstance(data, list):
-            for item in data:
-                result = self._find_mechanism(item, mech_id)
-                if result:
-                    return result
-        return None
+        return _find_primary_mechanism(data, mech_id)
 
     @pytest.mark.parametrize("mech_id", MECHANISMS_UNDER_TEST)
     def test_uses_finding_summary(self, ccr_data, mech_id):

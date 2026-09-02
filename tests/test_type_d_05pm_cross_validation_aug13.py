@@ -180,16 +180,25 @@ class TestMechanismIDIntegrity:
         assert len(ids) == len(set(ids)), \
             f"Duplicate mechanism IDs found: {[x for x in ids if ids.count(x) > 1]}"
 
-    def test_id_contiguity_17_to_max(self, all_mechanisms):
-        """IDs should be contiguous from 17 to max (no gaps)."""
+    def test_id_floor_17_plus_grows_monotonically(self, all_mechanisms):
+        """IDs in this registry need not be contiguous (no gaps assertion).
+
+        Mechanism numbers are allocated globally across registries:
+        competitor-entities.yaml holds Type C financial mechanisms and
+        publication profiles hold journalist-level entries, so gaps in this
+        single file are structural, not data loss. Type D and Type E
+        iterations intentionally define no data mechanism. What must hold:
+        the registry keeps growing (monotonic floor) and IDs stay unique
+        (covered by test_no_duplicate_ids).
+        """
         ids = sorted(all_mechanisms.keys())
         # Filter to 17+ (earlier IDs may not exist in this format)
         ids_17_plus = [i for i in ids if i >= 17]
-        if ids_17_plus:
-            expected = set(range(17, max(ids_17_plus) + 1))
-            actual = set(ids_17_plus)
-            gaps = expected - actual
-            assert not gaps, f"Mechanism ID gaps: {sorted(gaps)}"
+        assert ids_17_plus, "No mechanisms with ID >= 17 found in registry"
+        assert max(ids_17_plus) >= 345, (
+            f"Registry max ID {max(ids_17_plus)} went backward from the "
+            f"Aug 27 2026 high-water mark of 345"
+        )
 
     def test_max_id_is_88(self, all_mechanisms):
         max_id = max(all_mechanisms.keys())

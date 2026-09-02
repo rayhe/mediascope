@@ -57,9 +57,12 @@ class TestOpacityIndexStructure:
         thesis = opacity_index.get('thesis', '')
         assert len(thesis) > 100, "Thesis too short"
 
-    def test_has_three_tiers(self, opacity_index):
+    def test_has_four_tiers(self, opacity_index):
+        # Four tiers since Sep 2 2026: Tier 4 DARK PUBLIC (Fox Corporation,
+        # Type C #458) covers public companies with known AI deals but zero
+        # AI revenue disclosure. Updated from three tiers by Type D #469.
         tiers = opacity_index.get('opacity_tiers', [])
-        assert len(tiers) == 3, f"Expected 3 tiers, got {len(tiers)}"
+        assert len(tiers) == 4, f"Expected 4 tiers, got {len(tiers)}"
 
     def test_tiers_numbered_correctly(self, opacity_index):
         tiers = opacity_index.get('opacity_tiers', [])
@@ -204,10 +207,10 @@ class TestTier2Bundled:
         assert 'Meta' in pi.get('ai_attribution', '')
 
     def test_people_inc_google_traffic_loss(self, tier2):
-        """Barry Diller: People Inc. lost 65% of Google referral traffic."""
+        """Barry Diller: People Inc. lost 69% of Google referral traffic (Q2 2026 update)."""
         pubs = tier2.get('publishers', [])
         pi = next((p for p in pubs if 'People Inc' in p['name']), None)
-        assert '65%' in pi.get('google_traffic_loss', '')
+        assert '69%' in pi.get('google_traffic_loss', '')
 
     def test_all_tier2_moderate_adversariality(self, tier2):
         """Tier 2 publishers should show MODERATE or LOW adversariality."""

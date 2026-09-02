@@ -8956,6 +8956,9 @@ cross_publication_findings:
       strength: WEAK
     cross_references:
     - mechanism_id: 131
+      connection: 'Control calibration confirms triple dependency produces amplification
+        beyond baseline: mechanism #131 is the no-financial-incentive control case
+        against which #114s triple-layer dependency amplification is measured'
       relationship: Control calibration confirms triple dependency produces amplification
         beyond baseline
     - connection: 'Mechanism #110 documented the EDITORIAL EFFECT (Tom''s Guide combative

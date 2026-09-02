@@ -169,10 +169,16 @@ class TestSettlementWeekMechanismStructure:
         duplicates = [mid for mid in set(all_ids) if all_ids.count(mid) > 1]
         assert not duplicates, f"Duplicate mechanism IDs found: {duplicates}"
 
-    def test_highest_mechanism_is_345(self, mechs):
-        """The highest mechanism ID should be 345 (after dedup fix)."""
+    def test_highest_mechanism_at_least_345(self, mechs):
+        """The highest mechanism ID should be at least 345 (after dedup fix).
+
+        Pinned to == 345 on Aug 27 2026; relaxed to a monotonic floor on Sep 2
+        2026 (Type D #469) because later iterations legitimately add mechanisms
+        to this registry. The dedup regression protection is retained: IDs must
+        never go backward.
+        """
         max_id = max(mechs.keys())
-        assert max_id == 345, f"Expected highest mechanism ID 345, got {max_id}"
+        assert max_id >= 345, f"Expected highest mechanism ID >= 345, got {max_id}"
 
 
 class TestSettlementWeekConfounderQuality:

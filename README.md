@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 26813 | Across 796 test files |
+| Tests | 26847 | Across 797 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **~25,536 tests** across 782 test files, each covering a different analytical capability:
+MediaScope has **26847 tests** across 797 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1170,3 +1170,156 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_6pm_podcast_settlement_ipo_cross_medium_editorial_compartmentalization_aug26.py` | 22 | Settlement-day podcast cross-medium editorial compartmentalization — 3/3 podcasts omit AI lab connection, 87.5% financial correlation. Aug 26 — Type E |
 | `test_wsj_same_day_meta_settlement_anthropic_ipo_self_referencing_register_bifurcation_aug26.py` | 37 | WSJ same-day register bifurcation — Meta $18B settlement vs Anthropic $30T TAM, self-referencing Facebook Files accountability loop. Aug 26 — Type A |
 | `test_type_d_midnight_cross_validation_aug27.py` | 32 | Cross-validation of mechanisms #326-#332 from Aug 26 sprint — existence, confounders, asymmetry scores, source URLs, cross-references, inter-mechanism consistency, settlement cross-validation. Aug 27 — Type D |
+| `test_amanda_hoover_cross_entity_aug30.py` | 8 | Type B #380: Amanda Hoover cross-entity balanced criticism control. |
+| `test_amazon_affiliate_commission_cut_aug28.py` | 12 | Test: Amazon Associates Affiliate Commission Cut Aug 28 - Mechanism #367 |
+| `test_amazon_anthropic_expansion_apr2026_getty_display_type_c.py` | 7 | Iteration #361 Type C - Amazon Apr 20 2026 Anthropic Expansion Mirroring OpenAI + Getty Display-Only Deal |
+| `test_amazon_openai_50b_contingent_tranche_ipo_timeline_publisher_incentive_type_c_406.py` | 8 | Type C Financial Incentive Mapping - Mechanism 406 |
+| `test_anthropic_series_h_hyperscaler_recycling_publisher_narrative_boost_type_c_401.py` | 9 | Mechanism #401 Type C - Anthropic Series H $65B Hyperscaler Recycling Publisher Narrative Boost |
+| `test_apple_siri_advertising_compound_leverage_q3_2026_aug28.py` | 15 | Iteration #352 - Type C Financial Incentive Mapping - Apple Q3 2026 Services Advertising Record + Siri AI Variable-Pay + Gemini Bypass Compound Leverage |
+| `test_atlantic_anthropic_mitigation_credit_asymmetry_aug30_404.py` | 33 | Test: Atlantic × Anthropic vs Meta - Mitigation Credit Asymmetry |
+| `test_barbara_ortutay_ap_cross_entity_settlement_week_accountability_vocabulary_bifurcation_aug27.py` | 16 | Test: Barbara Ortutay (AP) Cross-Entity Settlement-Week Accountability Vocabulary Bifurcation |
+| `test_bloomberg_lp_upstream_narrative_originator_meta_settlement_anthropic_ipo_framing_aug26.py` | 23 | Test Mechanism #334: Bloomberg LP - Upstream Narrative Originator for Anthropic |
+| `test_boone_ashworth_openai_vs_meta_same_journalist_iteration_365.py` | 7 | Iteration #365 Type B 05:00 PT - Boone Ashworth same-journalist OpenAI vs Meta ambient camera hardware comparison |
+| `test_boone_ashworth_reece_rogers_openai_hardware_vs_meta_surveillance_aug30.py` | 10 | Type B #385: Boone Ashworth + Reece Rogers cross-entity camera wearable framing inversion. |
+| `test_business_insider_openai_profitability_skepticism_vs_meta_product_framing_aug30_399.py` | 14 | Test #399 Type A: Business Insider OpenAI profitability skepticism vs Meta product framing |
+| `test_cecilia_kang_cross_entity_416.py` | 28 | #416 Type B: NYT Policy Beat Adversarial Spillover - Cecilia Kang Cross-Entity Tracking Aug 31 2026 05:00 PDT |
+| `test_chokkattu_samsung_galaxy_glasses_vs_meta_price_parity_aug28.py` | 15 | Iteration #351 - Type B Journalist Cross-Entity Tracking |
+| `test_cnbc_settlement_week_openai_chatgpt_ads_europe_meta_ad_monetization_scrutiny_asymmetry_aug27.py` | 15 | Test: CNBC Settlement-Week OpenAI ChatGPT Ads Europe Expansion vs Meta $18B Settlement |
+| `test_cnn_wbd_settlement_week_ag_uthmeier_cross_entity_contextualization_gap_aug27.py` | 27 | CNN/WBD Settlement-Week AG Uthmeier Cross-Entity Contextualization Gap |
+| `test_cross_publication_going_rogue_agency_deflection_vocabulary_convergence_aug27.py` | 21 | Test: Cross-Publication "Going Rogue" Agency-Deflection Vocabulary Convergence |
+| `test_david_gilbert_cross_entity_meta_fact_check_vs_x_graphic_validation_aug30.py` | 7 | Cross-entity analysis: David Gilbert (WIRED) - Mechanism #405 |
+| `test_dell_cameron_openai_vs_meta_severity_framing_aug28.py` | 10 | Test: Dell Cameron Severity Framing Inversion - OpenAI Rogue Agent Actual Hacking vs Meta NameTag Dormant Code |
+| `test_ft_anthropic_ipo_skepticism_vs_openai_growth_narrative_aug28.py` | 12 | Type A Iteration #350 - FT × Anthropic IPO Skepticism vs FT × OpenAI Growth Narrative |
+| `test_ft_apple_wearable_privacy_virtue_vs_meta_surveillance_framing_aug30.py` | 7 | Iteration #389 Type A - FT Apple wearable privacy virtue vs Meta surveillance framing |
+| `test_ft_dual_lens_beat_assignment_hannah_murphy_madhumita_murgia_settlement_week_aug28.py` | 13 | Test: FT Dual-Lens Beat Assignment - Hannah Murphy vs Madhumita Murgia Settlement-Week Framing Asymmetry |
+| `test_ft_openai_govt_stake_funding_asymmetry_aug28.py` | 10 | Test: FT OpenAI Govt Stake & Funding vs Meta Equity Raise Framing Asymmetry (Mechanism #356) |
+| `test_ft_openai_licensing_meta_capital_type_a_2026_08_30.py` | 6 | Type A: FT × OpenAI licensing - competitor coverage deep dive |
+| `test_ft_openai_rogue_agents_vs_meta_rogue_models_framing_asymmetry_aug30_394.py` | 7 | Test FT OpenAI Rogue Agents vs Meta Rogue Models Framing Asymmetry - Iteration #394 Type A |
+| `test_ft_openai_superapp_vs_meta_supersensing_framing_inversion_aug28.py` | 10 | Test: FT OpenAI Superapp vs Meta Super-Sensing Framing Inversion (Mechanism #353) |
+| `test_ft_openai_workforce_rogue_2026_08_28.py` | 10 | Type A Iteration #359 - FT × OpenAI Workforce + Rogue + Anthropic Hardware Control |
+| `test_google_alongside_ai_content_ad_dominance_vs_chatbot_marginality_type_c_396.py` | 10 | Type C Financial Incentive Mapping - Google Alongside-AI-Content Ad Dominance vs Chatbot Marginality - Iteration 396 |
+| `test_google_news_ai_pilot_deal_structure_cma_neutralization_aug28.py` | 20 | Test: Google News AI Pilot Two-Year NDA/No-Sue Deal Structure as Showcase Replacement and Prisoner's Dilemma Neutralizing CMA Opt-Out Remedy |
+| `test_google_news_ai_pilot_permanent_weights_temporary_payment_412_aug31.py` | 24 | Test: Google News AI Pilot Two-Year Payment for Permanent Model Weights - Training Data Persistence Beyond 90-Day Exit |
+| `test_google_zero_amazon_70b_openai_licensing_marginal_revenue_aug29.py` | 10 | Test for Iteration #366 Type C Financial Incentive Mapping |
+| `test_hannah_murphy_ft_2026_08_29_type_b_extension.py` | 14 | Iteration #360 Type B extension - Hannah Murphy cross-entity verification Aug 29 2026. |
+| `test_jonathan_vanian_cnbc_cross_entity_government_action_vocabulary_register_inversion_aug27.py` | 12 | Test: Jonathan Vanian (CNBC) Cross-Entity Government-Action Vocabulary Register Inversion |
+| `test_julian_chokkattu_boone_ashworth_pricing_framing_asymmetry_aug28.py` | 31 | Test for Mechanism #354 - Julian Chokkattu & Boone Ashworth Pricing Framing Asymmetry |
+| `test_julian_chokkattu_comfort_price_privacy_triangulation_meta_samsung_apple_aug31.py` | 16 | Test Julian Chokkattu comfort/price/privacy triangulation Meta vs Samsung vs Apple Aug 31 2026 Type B #426 |
+| `test_julian_chokkattu_google_android_xr_tamper_detection_vs_meta_led_enforcement_aug31.py` | 13 | Test Julian Chokkattu Google Android XR tamper detection enforcement gap vs Meta LED tamper-proof enforcement Aug 31 2026 Type B #411 |
+| `test_kylie_robison_cross_entity_talent_war_direction_framing_asymmetry_aug29.py` | 15 | Cross-entity analysis: Kylie Robison (WIRED) - Mechanism #371 |
+| `test_mechanism_358_amazon_triple_channel_financial_incentive_aug28.py` | 15 | Test for Mechanism #358: Amazon Triple Channel Financial Incentive (Type C) |
+| `test_mechanism_417_advance_reddit_dual_licensing_type_c.py` | 30 | Mechanism #417 Type C: Advance Publications Reddit Equity + Reddit AI Licensing Dual Revenue Dependency |
+| `test_mechanism_427_reddit_10k_rpo_type_c.py` | 32 | Mechanism #427 Type C: Reddit 2025 10-K RPO Disclosure Quantifies AI Licensing Materiality Reinforcing Advance Equity Incentive |
+| `test_mechanism_448_reddit_q2_2026_earnings_meta_competitor_google_ai_headwind_advance_margin_loan_type_c.py` | 49 | Test mechanism #448 Type C: Reddit Q2 2026 earnings Meta competitor Google AI headwind Advance margin loan |
+| `test_meghan_bobrowsky_wsj_settlement_week_cross_entity_vocabulary_bifurcation_aug27.py` | 20 | Test: Meghan Bobrowsky (WSJ) Settlement-Week Cross-Entity Vocabulary Bifurcation |
+| `test_meta_insurance_denial_asymmetric_financial_materiality_ai_lab_precedent_gap_aug27.py` | 31 | Test: Meta Insurance Denial - Asymmetric Financial Materiality Architecture |
+| `test_meta_settlement_conditional_clause_chatgpt_ads_regulatory_boundary_financial_architecture_aug27.py` | 31 | Test: Meta Settlement Conditional Clause + ChatGPT Ads Europe Regulatory Boundary Financial Architecture |
+| `test_nyt_anthropic_beat_expansion_vs_meta_settlement_aug29.py` | 10 | Type A Iteration #379 - NYT × Anthropic beat expansion vs Meta adversarial settlement framing |
+| `test_openai_european_ad_expansion_dual_dependency_aug30.py` | 3 | Test OpenAI European Ad Expansion Dual Dependency - Mechanism 386 Type C |
+| `test_perplexity_comet_plus_revenue_share_type_c_391.py` | 5 | Type C Financial Incentive Mapping - Perplexity Comet Plus 80/20 Revenue Share - Iteration 391 |
+| `test_publisher_openai_licensing_valuation_provenance_aug30.py` | 25 | Type C Financial Incentive Mapping - Aug 30 2026 iteration #381 |
+| `test_quintuple_reverse_advertiser_alignment_aug29.py` | 20 | Iteration #376 - Type C Financial Incentive Mapping |
+| `test_reece_rogers_aug29_extension.py` | 19 | Test suite for Reece Rogers Mechanism #375 Privacy Topic Routing Extension Aug 29 |
+| `test_reece_rogers_samsung_galaxy_glasses_led_tamper_parity_type_b_400_aug30.py` | 15 | Type B #400: Reece Rogers Samsung Galaxy Glasses LED Tamper-Detection Parity Silence vs Meta Ghost Dot Extraction Framing. |
+| `test_sara_fischer_axios_cross_entity_settlement_openai_ad_revenue_publication_funding_deal_vocabulary_bifurcation_aug27.py` | 23 | Test: Sara Fischer / Axios - Cross-Entity Settlement-Week vs OpenAI Ad Revenue |
+| `test_sec_filing_q2_2026_cross_validation_aug29.py` | 24 | Test: SEC Filing Q2 2026 Cross-Validation - Mechanism #372 |
+| `test_settlement_week_complete_financial_architecture_convergence_index_aug27.py` | 34 | Settlement-Week Complete Financial Architecture Convergence Index (Mechanism #350) |
+| `test_settlement_week_financial_architecture_asymmetry_scoring_statistical_validity_aug27.py` | 22 | Synthetic Scorer Regression - Settlement-Week Financial Architecture Asymmetry Scoring |
+| `test_simon_hill_samsung_galaxy_glasses_vs_meta_ray_ban_selection_silence_autofocus_privacy_inversion_type_b_395.py` | 7 | Test for Iteration #395 Type B Journalist Cross-Entity Tracking |
+| `test_srmg_pif_pmc_dual_revenue_anti_meta_aug31.py` | 19 | Mechanism #422 Type C: PIF SRMG PMC Dual Revenue Anti-Meta |
+| `test_techcrunch_yahoo_openai_chatgpt_ads_europe_coverage_selection_silence_aug27.py` | 25 | TechCrunch (Yahoo/Apollo) OpenAI ChatGPT Ads Europe Expansion Coverage Selection Silence (Aug 2026) |
+| `test_type_a_410_ft_anthropic_ipo_aspirational_vs_meta_super_sensing_aug31.py` | 8 | Type A #410: FT Anthropic IPO aspirational vs Meta super-sensing cautionary bifurcation |
+| `test_type_a_415_ft_openai_growth_vs_meta_privacy_capital_aug31.py` | 8 | Type A #415: FT OpenAI growth vs Meta capital/privacy asymmetry - Aug 31 2026 |
+| `test_type_a_420_bi_anthropic_valuation_vs_meta_delay_aug31.py` | 10 | Type A #420: Business Insider Anthropic valuation hype vs Meta product delay - Aug 31 2026 |
+| `test_type_a_435_ft_openai_govt_stake_vs_meta_equity_raise_framing_asymmetry_sep01.py` | 35 | Tests for Financial Times Type A iteration #435 Sep 1 2026 01:00 PDT |
+| `test_type_a_441_ft_anthropic_fundraising_vs_meta_equity_raise_framing_asymmetry_sep01.py` | 44 | Tests for Financial Times Type A iteration #441 Sep 1 2026 07:00 PDT |
+| `test_type_a_446_wired_apple_camera_airpods_persistent_silence_sep01_12pm.py` | 36 | Test Mechanism #446: WIRED Apple Camera AirPods Persistent Silence 14-Day Extension |
+| `test_type_a_451_wired_anthropic_mhs_vs_meta_glasses_coverage_selection_silence_sep01_5pm.py` | 61 | Tests for WIRED Type A iteration #451 Sep 1 2026 17:00 PDT |
+| `test_type_a_456_ft_anthropic_20b_double_target_vs_meta_equity_raise_sep01_10pm.py` | 17 | Type A 456: FT Anthropic $20B double target fundraising vs Meta equity raise framing asymmetry |
+| `test_type_a_461_verge_microsoft_copilot_retrenchment_dedicated_beat_sep02_3am.py` | 16 | Type A 461: The Verge x Microsoft Copilot retrenchment dedicated-beat framing asymmetry |
+| `test_type_a_466_wired_amazon_ftc_ad_lawsuit_coverage_selection_sep02_8am.py` | 30 | Type A #466 (2026-09-02 08:00 PDT): WIRED x Amazon - FTC ad-auction deception |
+| `test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py` | 14 | Test Type B #431: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry Aug 31 2026 |
+| `test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py` | 24 | Test Type B #436: Lauren Goode Apple Vision Pro vs Meta Ray-Ban Emotional Register Asymmetry Sep 01 2026 |
+| `test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py` | 21 | Type B #442 Boone Ashworth Snap vs Meta pricing subscription framing asymmetry |
+| `test_type_b_447_lauren_goode_executive_access_asymmetry_openai_io_vs_meta_hardware_sep01_1pm.py` | 23 | Type B #447 Lauren Goode Executive Access Asymmetry OpenAI io vs Meta hardware |
+| `test_type_b_452_simon_hill_google_android_xr_vs_meta_kill_switch_reactive_framing_sep01.py` | 12 | Type B #452 - Simon Hill Google Android XR Warby Parker vs Meta Ray-Ban Kill-Switch Reactive Framing Asymmetry |
+| `test_type_b_457_adrienne_so_meta_vs_apple_evenhanded_counterexample_sep01.py` | 15 | Type B #457 - Adrienne So Meta vs Apple Even-Handed Gear-Desk Counter-Example |
+| `test_type_b_462_jess_weatherbed_tiktok_vs_meta_apple_cross_entity_sep02_4am.py` | 20 | Type B #462 - Jess Weatherbed same-journalist cross-entity discipline check: |
+| `test_type_b_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02_9am.py` | 27 | Type B #467 Tripp Mickle (NYT) source-access deference asymmetry baseline. |
+| `test_type_c_432_advance_turnitin_dual_sided_ai_conflict_aug31.py` | 21 | Type C #432: Advance Publications Turnitin Dual-Sided AI Conflict Formalization Aug 31 2026 22:00 PDT |
+| `test_type_c_437_ft_dual_ai_payer_portfolio_sep01.py` | 23 | Type C #437: FT Dual AI Payer Portfolio Sep 1 2026 03:00 PDT |
+| `test_type_c_443_microsoft_pcm_marketplace_transparency_paradox_sep01.py` | 26 | Mechanism #443 Type C: Microsoft Publisher Content Marketplace (PCM) Transparency Paradox |
+| `test_type_c_453_meta_conde_nast_nonparticipation_provenance_correction_sep01.py` | 47 | Type C #453: Meta publisher licensing non-participation provenance correction |
+| `test_type_c_458_fox_corp_q4_fy2026_dark_public_disclosure_sep02.py` | 18 | Type C #458: Fox Corp Q4 FY2026 - DARK PUBLIC disclosure posture (new Tier 4) |
+| `test_type_c_463_usa_today_co_q2_2026_bundled_lumpiness_sep02_5am.py` | 19 | Type C #463: USA TODAY Co. Q2 2026 - Tier 2 BUNDLED posture deepened |
+| `test_type_c_468_reach_amazon_usage_based_deal_sep02_10am.py` | 21 | Type C #468: Reach plc - Amazon usage-based AI licensing deal (Mar 2 2026) |
+| `test_type_d_05am_full_suite_cross_validation_aug28.py` | 30 | Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion |
+| `test_type_d_06am_full_suite_cross_validation_aug28.py` | 37 | Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026 |
+| `test_type_d_07am_cross_validation_aug27.py` | 21 | Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT) |
+| `test_type_d_08am_cross_validation_aug27.py` | 30 | Type D Cross-Validation: ChatGPT Ads Coverage Selection Silence Continued Validation |
+| `test_type_d_11am_full_suite_cross_validation_aug28.py` | 45 | Type D: Full Suite Cross-Validation - 11:00 PT Aug 28 2026 |
+| `test_type_d_12pm_full_suite_cross_validation_aug29.py` | 44 | Type D: Full Suite Cross-Validation - 12:00 PT Aug 29 2026 |
+| `test_type_d_357_statistical_validity_mechanisms_364_367_aug28.py` | 26 | Type D - Test & Verify - Statistical Validity Consolidation Mechanisms #364-#367 |
+| `test_type_d_362_asymmetry_scoring_financial_incentive_validity_aug29.py` | 18 | Iteration #362 Type D - Test & Verify - Asymmetry Scoring & Financial Incentive Validity |
+| `test_type_d_367_statistical_validity_quadrupling_financial_incentive_aug29.py` | 23 | Iteration #367 Type D - Test & Verify - Statistical Validity + Quadrupling Financial Incentive |
+| `test_type_d_377_test_verify_quintuple_aug29.py` | 24 | Type D #377 - Test and Verify full suite cross-validation #369-#377 |
+| `test_type_d_382_full_suite_cross_validation_aug29.py` | 39 | Type D #382 - Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
+| `test_type_d_387_full_suite_cross_validation_dual_dependency.py` | 12 | Type D #387: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
+| `test_type_d_392_statistical_validity_and_cross_publication_asymmetry.py` | 20 | Test suite for Type D #392 - Full suite cross-validation + statistical validity + cross-publication asymmetry |
+| `test_type_d_402_full_suite_cross_validation_aug30.py` | 37 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
+| `test_type_d_407_full_suite_cross_validation_aug30.py` | 32 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Triangulation |
+| `test_type_d_413_full_suite_verification_aug31.py` | 36 | Test & Verify Full Suite Cross-Validation #407-#412 |
+| `test_type_d_418_full_suite_verification_aug31.py` | 40 | Test & Verify Full Suite Cross-Validation #413-#417 |
+| `test_type_d_423_full_suite_verification_aug31.py` | 45 | Test & Verify Full Suite Cross-Validation #418-#422 |
+| `test_type_d_428_full_suite_verification_aug31.py` | 58 | Test & Verify Full Suite Cross-Validation #427-#428 |
+| `test_type_d_433_full_suite_verification_aug31.py` | 45 | Type D #433: Full Suite Verification Aug 31 2026 23:00 PDT |
+| `test_type_d_438_full_suite_verification_sep01.py` | 48 | Type D #438: Full Suite Verification Sep 1 2026 04:00 PDT |
+| `test_type_d_444_full_suite_verification_sep01.py` | 55 | Type D #444: Full Suite Verification Sep 1 2026 10:00 PDT |
+| `test_type_d_449_full_suite_verification_sep01_3pm.py` | 57 | Type D #449: Full Suite Verification Sep 1 2026 15:00 PDT |
+| `test_type_d_454_full_suite_verification_sep01_8pm.py` | 69 | Type D #454: Full Suite Verification Sep 1 2026 20:00 PDT - CORRECTED |
+| `test_type_d_459_full_suite_verification_sep02_1am.py` | 31 | Type D #459: Full Suite Verification Sep 2 2026 01:00 PDT. |
+| `test_type_d_464_full_suite_verification_sep02_6am.py` | 38 | Type D #464: Full Suite Verification Sep 2 2026 06:00 PDT. |
+| `test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py` | 34 | Type D #469: scorer consistency and full-suite health verification - Sep 2 2026 11:00 PDT. |
+| `test_type_d_4pm_cross_validation_aug27.py` | 26 | Type D Cross-Validation - Thu 2026-08-27 4 PM PT |
+| `test_type_d_full_suite_cross_validation_type_d_397_aug30.py` | 31 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
+| `test_type_d_statistical_validity_comprehensive_aug28.py` | 19 | Type D - Comprehensive Statistical Validity & Pipeline Health |
+| `test_type_e_00am_everyone_hates_elon_ava_smithing_guilty_feminist_aug28.py` | 19 | Test: Type E Aug 28 - Everyone Hates Elon / Ava Smithing / Guilty Feminist August Update |
+| `test_type_e_01pm_everyone_hates_elon_attention_sphere_guilty_feminist_aug28.py` | 12 | Type E Aug 28 13:00 PT - Everyone Hates Elon / Attention Sphere / Guilty Feminist audit |
+| `test_type_e_03am_pervert_glasses_mainstreaming_peak_privacy_fix_counter_narrative_aug29.py` | 18 | Iteration #363 - Type E 03:00 PT Aug 29 2026 |
+| `test_type_e_10am_settlement_week_public_broadcasting_political_podcast_entity_framing_bifurcation_aug27.py` | 27 | Type E: Podcast Sentiment Tracking - Settlement-Week Public Broadcasting + |
+| `test_type_e_1am_settlement_week_investor_podcast_publisher_financial_architecture_convergence_aug27.py` | 31 | Type E: Post-Settlement Political-Investor Podcast Cross-Surface Financial Architecture Convergence |
+| `test_type_e_368_podcast_sentiment_fortune_smashing_waveform_kill_switch_aug29.py` | 28 | Type E #368 - Podcast Sentiment Tracking: Fortune Same-Episode Bifurcation + Smashing Security + Waveform + Kill Switch |
+| `test_type_e_373_podcast_sentiment_blood_meta_fix_guilty_absence_aug29.py` | 29 | Type E #373 - Podcast Sentiment Tracking: Blood in the Machine Luxury Surveillance + Meta LED Fix + Guilty Feminist / Left to Their Own Devices / EHE Monitoring Update |
+| `test_type_e_378_podcast_sentiment_ai2day_blood_meta_fix_aug29.py` | 34 | Type E #378 - Podcast Sentiment Tracking: AI2Day Daily Brief Meta Fix + Blood in the Machine Luxury Surveillance Deep-Dive + Second Loophole Closure Stack |
+| `test_type_e_383_podcast_sentiment_meta_second_fix_hateaid_guilty_ehe_aug29.py` | 42 | Type E #383: Podcast Sentiment Tracking - Meta Second Fix 6-Source Aggregate + HateAid ZIT Criminal Complaint + Guilty Feminist August Silence Third Verification + EHE Prediction Holding 38 Days |
+| `test_type_e_388_podcast_sentiment_monitoring_correction_aug30.py` | 39 | Type E #388: Podcast Sentiment Tracking - Monitoring/Correction - Guilty Feminist 497 Date Correction + Three-Source Audit + Blood in the Machine Duplicate Prevention |
+| `test_type_e_398_podcast_sentiment_duplicate_prevention_and_fifth_verification_aug30.py` | 59 | Type E #398: Podcast Sentiment Tracking - Duplicate Prevention + Fifth Verification - AI2Day Meta Fix Duplicate + Guilty Feminist 497 Fifth Verification + Attention Sphere Fifth + EHE 20-Day Hold + Fortune Re-Validation |
+| `test_type_e_403_therapy_podcast_pervy_glasses_vocabulary_migration_aug30.py` | 68 | Type E #403: Podcast Sentiment Tracking - Pervy Glasses Therapy/Depth-Psychology Vocabulary Migration - Cultural Consensus Propagation Beyond Tech Media |
+| `test_type_e_408_the_it_guys_meta_fix_counterexample_aug28.py` | 1 | Test Type E #408 - The IT Guys Meta fix counterexample Aug 28 2026 |
+| `test_type_e_414_second_led_fix_six_source_aggregate_aug31.py` | 23 | Iteration #414 Type E - Meta Second LED Fix Six-Source Aggregate + Guilty Feminist August Silence + Attention Sphere Sixth Verification + Everyone Hates Elon Holding Aug 31 2026 |
+| `test_type_e_419_marketplace_sharedsecurity_post_mitigation_aug31.py` | 30 | Regression tests (module docstring pending) |
+| `test_type_e_424_required_source_status_absence_verification_aug31.py` | 16 | Regression tests (module docstring pending) |
+| `test_type_e_429_meta_second_led_fix_mid_recording_ai2day_guilty_feminist_498_attention_sphere_9th_ehe_21day_aug31.py` | 22 | Regression tests (module docstring pending) |
+| `test_type_e_434_tenth_verification_shared_security_baseline_led_fix_seven_source_sep1.py` | 23 | Regression tests (module docstring pending) |
+| `test_type_e_439_podcast_sentiment_guilty_feminist_498_led_fix_verification_sep01.py` | 25 | Regression tests (module docstring pending) |
+| `test_type_e_445_podcast_sentiment_twelfth_verification_cycle_sep01_11am.py` | 35 | Type E #445: Podcast Sentiment Twelfth Verification Cycle - Guilty Feminist Aug 2026 Slate 496-498 Silence + EHE 23-Day Hold + LatestLY Fact-Check + Attention Sphere 12th No-Match + Fortune Intra-Episode + AI2Day Fix + D |
+| `test_type_e_450_podcast_sentiment_thirteenth_verification_sep01_4pm.py` | 27 | Type E #450: Podcast Sentiment Tracking - Thirteenth Verification Sep 1 2026 16:00 PDT |
+| `test_type_e_455_podcast_sentiment_fourteenth_verification_sep01_9pm.py` | 27 | Type E #455 - Podcast Sentiment Tracking Fourteenth Verification Sep 1 21:00 PDT |
+| `test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py` | 28 | Type E #460 - Podcast Sentiment Tracking Fifteenth Verification Sep 2 02:00 PDT |
+| `test_type_e_465_podcast_sentiment_sixteenth_verification_sep02_7am.py` | 28 | Type E #465 - Podcast Sentiment Tracking Sixteenth Verification Sep 2 07:00 PDT |
+| `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
+| `test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` | 25 | Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication |
+| `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
+| `test_verge_apple_smart_glasses_privacy_virtue_vs_meta_surveillance_aug29.py` | 18 | Mechanism #370: The Verge Apple Smart Glasses Privacy-Virtue Framing Inversion vs Meta Surveillance Alarm |
+| `test_verge_openai_aspiration_vs_meta_deficit_aug31.py` | 18 | Iteration 425 Type A - The Verge OpenAI Aspiration vs Meta Deficit Framing |
+| `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
+| `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
+| `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
+| `test_wired_adrienne_so_biometric_privacy_inversion_aug29_380.py` | 11 | Test Mechanism #380: WIRED Adrienne So Biometric Privacy Inversion + Proactive Remediation Silence |
+| `test_wired_openai_hardware_delay_framing_iteration_364.py` | 7 | Type A Iteration #364 - WIRED x OpenAI Hardware Delay Framing Reverification |
+| `test_wired_openai_hardware_delay_vs_meta_glasses_surveillance_framing_aug28.py` | 15 | Test: WIRED OpenAI Hardware Delay vs Meta Glasses Surveillance Framing Inversion (Mechanism #359 (corrected from #356 collision)) |
+| `test_wired_openai_rogue_swarm_followup_silence_aug31.py` | 88 | Iteration #430 Type A - WIRED x OpenAI Rogue Swarm vs Meta Dormant Code |
+| `test_wired_openai_unshipped_vs_meta_dormant_activation_status_440.py` | 10 | Type A Iteration #440 - WIRED x OpenAI Unshipped Hardware vs Meta Dormant NameTag |
+| `test_wired_samsung_hardware_parity_selection_gap_persistence_aug29.py` | 9 | Iteration #374 Type A - WIRED x Samsung Galaxy Glasses hardware parity extension |
+| `test_wsj_news_corp_google_youtube_child_safety_settlement_coverage_accountability_asymmetry_aug27.py` | 15 | Test: WSJ/News Corp Google/YouTube Child Safety Settlement-Week Coverage Accountability Asymmetry |
+| `test_zoe_schiffer_hardware_talent_war_aug2026.py` | 9 | Regression tests (module docstring pending) |
