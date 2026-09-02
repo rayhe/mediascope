@@ -3947,3 +3947,146 @@ cross_entity_coverage_analysis:
     test_file: "tests/test_verge_openai_aspiration_vs_meta_deficit_aug31.py"
     test_count: 18
 
+
+jess_weatherbed_tiktok_vs_meta_apple_same_journalist_cross_entity_462:
+  mechanism_id: 462
+  mechanism_name: The Verge Jess Weatherbed TikTok vs Meta Apple Same-Journalist Cross-Entity Discipline Check
+  analysis_date: '2026-09-02'
+  iteration: 462
+  iteration_type: B
+  iteration_time: 2026-09-02 04:00 PDT
+  goal_id: goal_54093bda4145
+  scheduled_job_id: mediascope-daily-iteration
+  journalist: Jess Weatherbed
+  publication: The Verge
+  desk: News writer, creative industries, computing, internet culture (ex-TechRadar)
+  finding_type: journalist_cross_entity_coverage_counterexample
+  hypothesis: >-
+    The Verge news writer Jess Weatherbed applies her hardest accountability
+    framing to TikTok, a company with no PMC financial relationship, while her
+    Meta and Apple coverage in the same period stays neutral product-news. Her
+    March 28 2026 TikTok investigation ("TikTok's policy for AI ads isn't
+    working") is first-person and adversarial: "What irks me is that someone
+    knows for sure if the content is AI-generated. They are just not telling
+    the rest of us." Samsung did not respond to her requests for comment;
+    TikTok declined to provide an on-record statement. Her Meta items in the
+    same window use neutral feature language ("adds", "rolls out") per
+    mechanism 56: Threads group chats, the Muse Glimmer open-weight model,
+    WhatsApp translation, AI system cards, scam detection tools. Her Apple
+    items are neutral announcements: Apple Music AI Transparency Tags
+    (Mar 5 2026), US Mac Mini production (Feb 24 2026). The sharpest
+    controlled pair is topical: AI disclosure labeling, same journalist,
+    same month, opposite valence. TikTok's mandatory-labeling enforcement
+    failure (Mar 28) gets "isn't working"; Apple's voluntary-labeling program
+    announcement (Mar 5) gets neutral "adds optional labels". This falsifies
+    any simple claim that non-deal entities receive uniform treatment or that
+    Weatherbed is structurally soft: she does adversarial accountability
+    journalism, just not against Meta. It strengthens the lane-assignment
+    account from mechanisms 56 and 457. At the individual-journalist level,
+    genre and news peg dominate entity identity: a weeks-long first-person
+    enforcement investigation she conducted herself produces accountability
+    framing, while announcement-driven news posts produce neutral framing,
+    regardless of which company is the subject. Correlation not causation;
+    structural incentive observation is not proof of editorial control.
+  journalist_profile:
+    name: Jess Weatherbed
+    role: The Verge news writer, creative industries, computing, internet culture; ex-TechRadar computing writer
+    prior_cross_entity: mechanism 56 (Aug 11) studied Weatherbed vs Hayden Field on the SAME entity (Meta), different journalists, different beats. No prior same-journalist different-entity Weatherbed entry as of Sep 2 2026. Checked pierce, heath, field, song, patel, hollister, sato profiles, all have dedicated cross-entity tests.
+  tiktok_evidence:
+    article_title: TikTok's policy for AI ads isn't working
+    article_date: '2026-03-28'
+    byline: Jess Weatherbed
+    framing_register: first-person accountability investigation
+    dek_quote_1: "I've been struggling to tell whether the ads appearing in my TikTok feeds have been made with generative AI tools."
+    dek_quote_2: "What irks me is that someone knows for sure if the content is AI-generated. They are just not telling the rest of us."
+    accountability_markers:
+      - Samsung did not respond to requests for comment on its unlabeled AI-generated TikTok ads
+      - TikTok pointed to its AI labeling requirements and C2PA partnership but declined an on-record statement on why the ads received a pass
+      - Follow-up documented unlabeled Cazoo ads later gaining "advertiser labeled as AI-generated" notices, evidencing the enforcement gap
+    article_tone_manual_illustrative: -0.55
+    topic: AI disclosure labeling enforcement failure
+  apple_evidence:
+    article_1_title: Apple Music adds optional labels for AI songs and visuals
+    article_1_date: '2026-03-05'
+    article_1_framing: "Neutral announcement: Apple is asking artists and record labels to voluntarily label AI-made songs via Transparency Tags metadata."
+    article_1_tone_manual_illustrative: 0.10
+    article_2_title: Apple will soon make (some) Mac Minis in the US
+    article_2_date: '2026-02-24'
+    article_2_framing: Neutral production news quoting Tim Cook on American manufacturing commitment.
+    article_2_tone_manual_illustrative: 0.10
+    apple_avg_manual_illustrative: 0.10
+    topic: AI disclosure labeling program announcement (article 1), manufacturing (article 2)
+  meta_evidence:
+    basis: mechanism 56 (Aug 11 2026) coded Weatherbed Meta items as neutral feature language
+    items:
+      - Meta adds group chats to Threads, up to 50 followers (Oct 2025)
+      - Muse Glimmer new open-weight AI model (Aug 10 2026)
+      - WhatsApp translation rollout
+      - AI system cards deep dive
+      - Scam detection tools
+    register: neutral product-news, verbs "adds" and "rolls out"
+    meta_avg_manual_illustrative: 0.05
+    within_sample_counterpoint: "The Sep 2025 Meta CTO demo item ('Meta CTO says demo technical issues were self-inflicted DDoS', coded -0.30 in this profile) is her most critical Meta headline, but the adversarial content is the CTO's own quoted words, not reporter editorializing. Bounded as headline-level only."
+  controlled_pair_ai_labeling:
+    description: Same journalist, same topic (AI disclosure labeling), same month, opposite valence.
+    tiktok_side: Mar 28 2026, mandatory-labeling enforcement failure, "isn't working", -0.55 MANUAL ILLUSTRATIVE
+    apple_side: Mar 5 2026, voluntary-labeling program announcement, "adds optional labels", +0.10 MANUAL ILLUSTRATIVE
+    irony_noted: Apple's ask was voluntary (weaker than TikTok's mandatory policy) yet drew neutral coverage; the enforcement-failure peg, not the policy strictness, drove the TikTok tone. This is legitimate journalism, not entity bias, and it is the core discipline check on the thesis.
+  tone_delta_manual_illustrative: TikTok -0.55 vs Meta avg 0.05 vs Apple avg 0.10. Hardest treatment goes to TikTok, a non-deal entity like Meta. MANUAL ILLUSTRATIVE only, not empirical. Requires VADER TextBlob plus human annotation on full Verge corpus for empirical validation. DO NOT claim empirical significance.
+  asymmetry_scoring_manual_illustrative:
+    target_entity: TikTok
+    peer_entities: [Meta, Apple]
+    target_tones_manual_illustrative: [-0.55]
+    peer_tones_manual_illustrative: [0.05, 0.05, 0.10, 0.10]
+    delta_manual_illustrative: -0.65
+    synthetic_note: MANUAL ILLUSTRATIVE, scorer run on synthetic arrays in test file, NOT CALCULATED on observed corpus, p_value NOT CALCULATED no observed corpus
+    p_value: "NOT_CALCULATED"
+    cohens_d: "NOT_CALCULATED"
+    ci_lower: "NOT_CALCULATED"
+    ci_upper: "NOT_CALCULATED"
+    is_significant: false
+    correlation_not_causation: true
+  financial_context:
+    - TikTok/ByteDance has no PMC/Vox Media content licensing relationship documented in this profile; same $0 posture as Meta on the licensing channel
+    - Apple has no PMC AI licensing deal documented in this profile
+    - Prediction check: financial-tie theory predicts softness toward deal partners (OpenAI, Microsoft). It makes no prediction distinguishing TikTok from Meta, yet Weatherbed is hardest on TikTok. The observation is consistent with journalist-level independence from the financial structure, not with financial determinism
+    - coverage_prediction: not applicable, counterexample
+  confounding_factors_ranked:
+  - level: STRONG
+    factor: Story-type confound. The TikTok piece is a first-person investigation of an enforcement failure she personally documented over weeks; the Meta and Apple items are announcement-driven news posts. Genre, not entity, may drive the tone gap.
+    adjustment: NOT_CALCULATED
+  - level: STRONG
+    factor: Factual peg. TikTok's policy genuinely failed (unlabeled Samsung AI ads documented with screenshots; enforcement gap later confirmed by Cazoo labels appearing). Apple's March 5 item announced a new voluntary program with nothing yet to criticize. Tone tracks the news peg.
+    adjustment: NOT_CALCULATED
+  - level: MODERATE
+    factor: Split adversarial target. In the TikTok piece the primary violator is Samsung (the advertiser); TikTok is criticized for non-enforcement. The -0.55 codes the article, not a pure anti-TikTok stance.
+    adjustment: NOT_CALCULATED
+  - level: MODERATE
+    factor: Secondary sourcing. Verge primary not directly fetched this run (theverge.com fetch constraints noted in iteration 461); quotes verified verbatim across three independent mirrors plus a digest. Full-text tone coding not done.
+    adjustment: NOT_CALCULATED
+  - level: WEAK
+    factor: Sample size. One TikTok investigation versus five-plus Meta items and two Apple items; a single investigation cannot establish a reporter-level TikTok stance.
+    adjustment: NOT_CALCULATED
+  novelty_vs_existing:
+    mechanism_56: Intra-publication beat segregation (Weatherbed vs Field, same entity Meta) distinct from 462. Different design (different-journalist same-entity vs same-journalist different-entity). 462 builds on 56's Meta coding without duplicating it.
+    mechanism_457: Adrienne So WIRED Gear counter-example distinct from 462. Different publication, different journalist, different direction (So warmer on Meta than Apple; Weatherbed hardest on TikTok, neutral on Meta and Apple). Both are falsification-style entries that tighten the theory.
+    mechanism_436_442_447_452: Prior Type B asymmetry instances all document Meta-unfavorable gradients. 462 documents a non-Meta entity receiving the hardest treatment from a neutral-on-Meta journalist, a new direction in the corpus.
+    mechanism_462_distinct: First same-journalist cross-entity entry for Weatherbed; first Type B to use a same-topic (AI labeling) same-month controlled pair across two entities; first to show the accountability register applied to a non-deal entity, disciplining financial-determinist readings.
+  cross_references: [56, 431, 436, 442, 447, 452, 457]
+  methodology: >-
+    Dek and excerpt-level analysis only. Verge primary not directly fetched
+    this run (theverge.com fetch constraints noted in iteration 461). TikTok article text verified verbatim
+    across three independent secondary mirrors of the Verge original. Apple and
+    Meta items via digest and prior mechanism 56 coding. Tone scores are MANUAL
+    ILLUSTRATIVE. Correlation not causation. No claim of editorial control. No
+    statistical significance claimed or calculable from this sample.
+  coverage_prediction: not applicable, counterexample
+  source_urls:
+    - https://techiemag.co.uk/tiktoks-policy-for-ai-ads-isnt-working/
+    - https://newsatw.com/tiktoks-policy-for-ai-ads-isnt-working/
+    - https://blogs.taoremtls.in/daily-digest/the-verge/the-verge-digest-march-28-2026/
+    - https://blogs.taoremtls.in/daily-digest/the-verge/the-verge-digest-march-5-2026/
+    - https://blogs.taoremtls.in/daily-digest/the-verge/the-verge-digest-february-24-2026/
+    - https://www.techmeme.com/251015/p33
+  test_file: tests/test_type_b_462_jess_weatherbed_tiktok_vs_meta_apple_cross_entity_sep02_4am.py
+  test_count: 20
