@@ -130,16 +130,20 @@ class TestYamlHealth(unittest.TestCase):
         entities = data.get("entities") or data.get("competitor_entities")
         ids = []
         def scan(d):
+            # Cross-references are pointers to mechanisms, not definitions:
+            # skip those subtrees so legitimate references do not count as duplicates.
             if isinstance(d, dict):
                 if "mechanism_id" in d:
                     ids.append(d["mechanism_id"])
-                for v in d.values():
+                for k, v in d.items():
+                    if k == "cross_references":
+                        continue
                     scan(v)
             elif isinstance(d, list):
                 for item in d:
                     scan(item)
         scan(entities)
-        # 367 should appear exactly once
+        # 367 should be defined exactly once (cross_references excluded)
         self.assertEqual(ids.count(367), 1, f"Mechanism 367 appears {ids.count(367)} times, expected 1")
 
     def test_source_urls_https(self):

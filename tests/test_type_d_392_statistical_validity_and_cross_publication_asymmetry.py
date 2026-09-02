@@ -315,10 +315,22 @@ class TestFinancialIncentiveMapping392:
 
 # ---- 5 Iteration Log and Rotation ----
 
+def _iteration_headers_392(text):
+    """Extract iteration headers in file order, supporting both the legacy
+    '## Iteration #NNN' format and the current '#NNN Type X:' format
+    (adopted ~#440, newest entries prepended at top of file)."""
+    headers = []
+    for line in text.split("\n"):
+        if re.match(r"^#\d+ Type [A-E]:", line):
+            headers.append(line)
+        elif "Iteration #" in line and line.lstrip().startswith("##"):
+            headers.append(line)
+    return headers
+
 class TestIterationLog392:
     def test_iteration_log_newest_first(self):
         text = ITER_LOG.read_text()
-        headers = [line for line in text.split("\n") if "Iteration #" in line]
+        headers = _iteration_headers_392(text)
         assert len(headers) >= 5, "Need at least 5 iterations logged"
         # First header should be #391 or newer
         first = headers[0]
@@ -329,7 +341,7 @@ class TestIterationLog392:
 
     def test_rotation_cycle(self):
         text = ITER_LOG.read_text()
-        headers = [line for line in text.split("\n") if "Iteration #" in line][:6]
+        headers = _iteration_headers_392(text)[:6]
         # Extract types
         types = []
         for h in headers:

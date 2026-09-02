@@ -59,7 +59,9 @@ def test_meta_exclusion_contains_13_partners():
 
 def test_meta_exclusion_contains_none_are_conde_nast():
     raw = get_wired_raw()
-    assert 'NONE of these 13 are Condé Nast' in raw or 'NONE of these 13' in raw
+    # Type D #454 provenance correction reworded all-caps NONE to sentence case;
+    # match case-insensitively against the corrected canonical language.
+    assert 'none of these 13 are condé nast' in raw.lower()
 
 def test_meta_exclusion_contains_no_publicly_reported():
     raw = get_wired_raw()

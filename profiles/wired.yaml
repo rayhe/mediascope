@@ -1804,8 +1804,8 @@ competitor_relationships:
         cohens_d: not_calculated
         ci_lower: not_calculated
         ci_upper: not_calculated
-        is_significant: false - illustrative only
-        methodology_note: MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28 rule. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level scores from VADER/TextBlob + human annotation for empirical validation. DO NOT claim empirical significance from synthetic scores alone. Real WIRED corpus needed. 3+3 direct WIRED primary sources exist for 359/364 but activation-status dimension adds evidentiary-standard nuance not capability dimension.
+        is_significant: false  # illustrative only - synthetic scores, not empirical
+        methodology_note: MANUAL ILLUSTRATIVE synthetic tone approximations, illustrative only, per Aug 28 rule. Requires Welch t-test plus Cohen d plus bootstrap CI on observed article-level scores from VADER/TextBlob + human annotation for empirical validation. DO NOT claim empirical significance from synthetic scores alone. Real WIRED corpus needed. 3+3 direct WIRED primary sources exist for 359/364 but activation-status dimension adds evidentiary-standard nuance not capability dimension.
         interpretation: 'ILLUSTRATIVE ONLY - synthetic tone approximations (n=3+3),
 
           not observed corpus. Large apparent asymmetry (|delta|~0.8) in how WIRED

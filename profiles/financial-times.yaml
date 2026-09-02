@@ -1075,6 +1075,16 @@ competitor_relationships:
         disclaimer: Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only.
 
 
+  meta:
+    financial_tie: none
+    estimated_value: $0
+    direction: none
+    description: 'No AI licensing deal. Nikkei ownership creates no competitive overlap
+      with Meta. Restored by Type D 459 Sep 2 2026 - removed as collateral in the
+      415 section rewrite Aug 31 2026; zero-Meta-deal fact re-verified by 437 FT Dual
+      AI Payer and 456 (FT receives $0 from Meta).'
+    coverage_prediction: neutral
+
   google:
     financial_tie: commercial_partnership
     estimated_value: Single figure millions GBP/yr (Press Gazette Aug 3 2026)

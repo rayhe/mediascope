@@ -516,13 +516,10 @@ class TestIterationLogRotation449(unittest.TestCase):
         # after D 449, next should be E 450 per rotation
         log = pathlib.Path(ITERATION_LOG).read_text()
         self.assertIn("449", log)
-        # documentation: next is E - check head (newest-first) or tail (oldest-first)
-        head = log[:10000]
-        tail = log[-5000:] if len(log)>5000 else log
-        combined = head + "\n" + tail
-        self.assertTrue("Type D" in combined and "449" in combined)
-        # also ensure 450 E exists as next
-        self.assertIn("450", log)
+        # 450 ran as Type E immediately after 449 D; assert the new-format header
+        # (legacy head-window check rotted once later entries pushed 449 out of
+        # the first 10000 chars, so match the full log instead).
+        self.assertIn("#450 Type E", log)
 
 class TestCountStats449(unittest.TestCase):
     def test_445_448_tests_exist(self):

@@ -223,7 +223,7 @@ def test_openai_licensing_range_fields():
     # Getty deal should exist
     getty = portfolio.get("getty_images_display_deal_jun2026")
     assert getty is not None
-    dumped = json.dumps(getty, ensure_ascii=False)
+    dumped = json.dumps(getty, ensure_ascii=False, default=str)
     assert "—" not in dumped
     assert "–" not in dumped
 
@@ -232,7 +232,7 @@ def test_openai_hardware_delay_no_em_dash():
     openai = entities.get("openai", {})
     hardware = openai.get("hardware_devices", {}).get("hardware_delay_framing_asymmetry_aug28", {})
     if hardware:
-        dumped = json.dumps(hardware, ensure_ascii=False)
+        dumped = json.dumps(hardware, ensure_ascii=False, default=str)
         assert "—" not in dumped, "em dash in hardware_delay block"
 
 def test_financial_incentive_quadrupling_prediction_logic():
@@ -253,7 +253,7 @@ def test_no_em_dash_in_critical_blocks_comprehensive():
     openai = entities.get("openai", {})
     hardware = openai.get("hardware_devices", {}).get("hardware_delay_framing_asymmetry_aug28", {})
     if hardware:
-        dumped = json.dumps(hardware, ensure_ascii=False)
+        dumped = json.dumps(hardware, ensure_ascii=False, default=str)
         assert "—" not in dumped
     # Check amazon layers
     amazon = entities.get("amazon", {}).get("sextuple_publisher_leverage", {}).get("layers", [])
@@ -263,13 +263,13 @@ def test_no_em_dash_in_critical_blocks_comprehensive():
             assert "—" not in detail
     # Check wired.yaml ownership chain for em dashes (should be replaced)
     wired = load_wired()
-    wired_dump = json.dumps(wired, ensure_ascii=False)
+    wired_dump = json.dumps(wired, ensure_ascii=False, default=str)
     # Allow em dash check only in specific known safe areas? Project requires no em dashes anywhere
     # But wired.yaml historically contains em dashes in source quotes - enforce in new mechanism blocks only
     # For this test, check only competitor_relationships section if exists
     comp_rel = wired.get("competitor_relationships", {})
     if comp_rel:
-        dumped = json.dumps(comp_rel, ensure_ascii=False)
+        dumped = json.dumps(comp_rel, ensure_ascii=False, default=str)
         assert "—" not in dumped, "em dash found in wired competitor_relationships"
 
 def test_wired_competitor_relationships_openai_entry_exists():
@@ -344,7 +344,7 @@ def test_wired_openai_hardware_tone_labels_valid():
             if "tone" in str(val).lower() or "framing" in str(val).lower():
                 found = True
                 # Verify no em dashes in this entry
-                dumped = json.dumps(val, ensure_ascii=False)
+                dumped = json.dumps(val, ensure_ascii=False, default=str)
                 assert "—" not in dumped
                 break
     # If not found in competitor_relationships, check raw file for iteration_364

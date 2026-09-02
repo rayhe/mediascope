@@ -14471,6 +14471,9 @@ publisher_ai_revenue_opacity_index:
       mechanism_id: 458
       finding_type: financial_incentive_mapping
       rotation: Type C
+      goal_id: goal_54093bda4145
+      scheduled_job_id: mediascope-daily-iteration
+      iteration_time: '2026-09-02 00:00 PDT'
     tier_summary: 'Tier 4 has 1 publisher family so far. Known AI deals: 2. Disclosed
       deal values: 0. The index now covers 8 publication families across 4 tiers.
       Tier 4 matters structurally: it falsifies the assumption that SEC filing
