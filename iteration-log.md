@@ -1,3 +1,29 @@
+#470 Type E: Podcast Sentiment Seventeenth Verification - GF 498 Hold No 499, EHE 23-Day Hold, Feminist Majority Foundation Fifth Vertical, Attention Sphere 17th No-Match - Sep 2 2026 12:00 PDT
+
+**Date:** 2026-09-02 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 469 D -> 470 E)
+**Type:** E - Podcast Sentiment Tracking (Seventeenth Verification Cycle)
+**Mechanism:** #470 Type E - Seventeenth verification extends #465 (Sep 2 07:00 PDT) by 5 hours. Guilty Feminist official zeno.fm episode list (opened via browser.open this run) still shows 498 Politics (Aug 31) as latest, no 499 observed as of 12:00 PDT Sep 2 (bounded absence); weekly cadence note holds (next numbered episode plausibly near Sep 7, so absence is not a signal). Everyone Hates Elon 23-day hold continues since Aug 10 Epstein poster claim (still unverified pending primary Instagram). New-to-log secondary: Feminist Majority Foundation (feminist.org) "Helpful or Hurtful? The Growing Privacy Debate Over Meta Glasses" (page updated about 1 day prior, crawled under 1 hour prior), extending the EHE amplification loop into a fifth press vertical (feminist advocacy press joins tech, ethics, trade, photo). The FMF piece is recorded honestly as a counterweight datapoint: it covers genuine benefits (blind and low-vision reading and object identification, live translation) and safeguard framing alongside the EHE alarm material, a more measured register than prior verticals. LatestLY Jul 30 2026 fact check stands as provenance guard (Epstein image was EHE spoof activism, not a Meta ad). Attention Sphere seventeenth no-match; only result was this repository's own GitHub page, rejected as circular. No competitor-equivalent guerrilla campaign or consent drive surfaced across all seventeen cycles (bounded absence).
+
+**Publication:** Cross-vertical (podcast corpus primary, feminist advocacy press secondary)
+**Competitor Pair:** Meta vs Apple / Google / Samsung / Snap (no competitor guerrilla-equivalent surfaced)
+**Rotation Transparency:** Previous entry #469 Type D at 11:00 PDT Sep 2 2026 (scorer consistency, cross-validation repair, opacity index 4-tier update; finalized and pushed in the 12:00 slot before this work). Per rotation A->B->C->D->E, next after D is E. Cycle verified: 464 D 06:00, 465 E 07:00, 466 A 08:00, 467 B 09:00, 468 C 10:00, 469 D 11:00, 470 E 12:00. Selected Type E after verifying #469 commit present and pushed.
+
+**Focus:** Type E seventeenth verification - freshness check plus one genuinely new-to-log secondary (FMF fifth vertical with honest balance note) with explicit excerpt-bounded and dating discipline.
+
+**New Type E file:** `tests/test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py` - 30 tests. Covers 470 iteration/date/rotation/goal-job IDs, GF 498 hold with official zeno.fm HTTPS URL opened this run plus cadence note plus extension-not-duplicate, EHE activist-not-podcast plus 23-day hold plus FMF fifth vertical plus balance note plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 17th no-match with circular rejection, MANUAL ILLUSTRATIVE / no-false-significance / correlation-not-causation / ranked confounders / no-em-dash / HTTPS-only hygiene, distinct-from-465, no Microsoft PCM novelty claim, iteration-log presence and newest-first ordering.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #470 file: 30 passed, 0 failed
+- #465 file re-run (persistence): all passed, confirms no edit collateral on prior block
+- `scripts/count_stats.py --check`: passes (README synced, pytest-collected authoritative)
+
+**Confidence:** HIGH - GF hold verified against the official episode list opened this run; the one new data point (FMF fifth vertical) is excerpt-bounded with explicit dating; the balance note is recorded rather than suppressed; no new asymmetry claims beyond bounded observations; correlation-not-causation discipline unchanged.
+
+**Test file:** `tests/test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py` - 30 tests, all passed (venv pytest)
+**Cumulative:** 798 test files, 26,877 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
 #469 Type D: Test and Verify - Scorer Consistency, Cross-Validation Repair, Opacity Index 4-Tier Update - Sep 2 2026 11:00 PDT
 
 **Date:** 2026-09-02 11:00 PDT slot, finalized 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 468 C -> 469 D). Recovery note: the 11:00 run left this work uncommitted and unlogged; the 12:00 run verified it, fixed the remaining failures, wrote this entry, and committed before starting #470.

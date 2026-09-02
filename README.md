@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 26847 | Across 797 test files |
+| Tests | 26877 | Across 798 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **26847 tests** across 797 test files, each covering a different analytical capability:
+MediaScope has **26877 tests** across 798 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1307,6 +1307,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_455_podcast_sentiment_fourteenth_verification_sep01_9pm.py` | 27 | Type E #455 - Podcast Sentiment Tracking Fourteenth Verification Sep 1 21:00 PDT |
 | `test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py` | 28 | Type E #460 - Podcast Sentiment Tracking Fifteenth Verification Sep 2 02:00 PDT |
 | `test_type_e_465_podcast_sentiment_sixteenth_verification_sep02_7am.py` | 28 | Type E #465 - Podcast Sentiment Tracking Sixteenth Verification Sep 2 07:00 PDT |
+| `test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py` | 30 | Type E #470 - Podcast Sentiment Tracking Seventeenth Verification Sep 2 12:00 PDT |
 | `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
 | `test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` | 25 | Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication |
 | `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
