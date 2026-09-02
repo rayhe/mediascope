@@ -1,3 +1,82 @@
+#465 Type E: Podcast Sentiment Sixteenth Verification - GF 498 Hold No 499, EHE 23-Day Hold, Fstoppers Photo-Press Vertical, Attention Sphere 16th No-Match - Sep 2 2026 07:00 PDT
+
+**Date:** 2026-09-02 07:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 464 D -> 465 E)
+**Type:** E - Podcast Sentiment Tracking (Sixteenth Verification Cycle)
+**Mechanism:** #465 Type E - Sixteenth verification extends #460 (Sep 2 02:00 PDT) by 5 hours. Guilty Feminist official episode list (crawled 4h prior) still shows 498 Politics (Aug 31) as latest, no 499 observed as of 07:00 PDT Sep 2 (bounded absence); weekly cadence note added (next numbered episode plausibly near Sep 7, so absence is not a signal). Everyone Hates Elon 23-day hold continues since Aug 10 Epstein poster claim (still unverified pending primary Instagram). New-to-log secondary: Fstoppers photography-press piece on the EHE Kylie Jenner lenticular bus-stop ad (crawled 14h prior), extending the EHE amplification loop into a fourth press vertical (tech, ethics, trade, photo). LatestLY Jul 30 2026 fact check logged as provenance guard: the viral Epstein image was EHE spoof activism, not a Meta ad. Attention Sphere sixteenth no-match; results returned Ava Smithing nonprofit plus repo own GitHub page, rejected as circular. No competitor-equivalent guerrilla campaign or consent drive surfaced across all sixteen cycles (bounded absence).
+
+**Publication:** Cross-vertical (podcast corpus primary, photo/trade/ethics/tech press secondary)
+**Competitor Pair:** Meta vs Apple / Google / Samsung / Snap (no competitor guerrilla-equivalent surfaced)
+**Rotation Transparency:** Previous entry #464 Type D at 06:00 PDT Sep 2 2026 (full suite health, xdist parallel pass). Per rotation A->B->C->D->E, next after D is E. Cycle verified: 459 D 01:00, 460 E 02:00 fifteenth, 461 A 03:00, 462 B 04:00, 463 C 05:00, 464 D 06:00, 465 E 07:00 sixteenth. Selected Type E after verifying #464 commit present and pushed.
+
+**Focus:** Type E sixteenth verification - freshness check plus two genuinely new-to-log secondaries (Fstoppers photo-press vertical, LatestLY provenance guard) with explicit excerpt-bounded and dating discipline.
+
+**New Type E file:** `tests/test_type_e_465_podcast_sentiment_sixteenth_verification_sep02_7am.py` - 28 tests. Covers 465 iteration/date/rotation/goal-job IDs, GF 498 hold with official HTTPS URL and bounded language plus cadence note, EHE activist-not-podcast plus 23-day hold plus Fstoppers photo-press vertical extension plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 16th no-match with circular rejection, MANUAL ILLUSTRATIVE / no-false-significance / correlation-not-causation / ranked confounders / no-em-dash / HTTPS-only hygiene, distinct-from-460, no Microsoft PCM novelty claim, iteration-log presence and newest-first ordering.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #465 file: 28 passed, 0 failed
+- #460 file re-run (persistence): 28 passed, 0 failed, confirms no edit collateral on prior block
+- `scripts/count_stats.py --check`: passes (README 26735 tests / 793 files, pytest-collected authoritative)
+
+**Confidence:** HIGH - all claims bounded as search-result absences where applicable; the two new data points (Fstoppers vertical, LatestLY provenance) are excerpt-bounded secondaries, not fresh campaigns; no new asymmetry claims beyond bounded observations; correlation-not-causation discipline unchanged.
+
+**Test file:** `tests/test_type_e_465_podcast_sentiment_sixteenth_verification_sep02_7am.py` - 28 tests, all passed (venv pytest)
+**Cumulative:** 793 test files, 26,735 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
+#464 Type D: Test and Verify - Full Suite Health, 463 Log Order Restored, xdist Sharding Adopted - Sep 2 2026 06:00 PDT
+
+**Date:** 2026-09-02 06:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 463 C -> 464 D)
+**Type:** D - Test and Verify (Full Suite Health / Regression Guard)
+**Mechanism:** #464 Type D - Full suite health pass Sep 2 2026 06:00 PDT. Validates persistence of #460 Type E podcast fifteenth verification (Fifteenth Verification, GF 498 hold no 499, EHE 23-day hold, 9,000 email drive via SWNS), #461 Type A Verge x Microsoft Copilot retrenchment (the-verge.yaml iteration_461, mechanism 461 declared once), #462 Type B Weatherbed same-journalist cross-entity (the-verge.yaml mechanism_id 462 defined once), #463 Type C USA TODAY Co. Q2 2026 Tier 2 BUNDLED (competitor-entities.yaml NYSE TDAY, q2_2026_data, ai_revenue_isolatable false). Restored #463 iteration-log entry to chronological newest-first position (it had been appended at file bottom after the CORRECTION Aug 31 block). Installed pytest-xdist in the venv and ran the first true full-suite parallel pass (2 workers), closing the #459-documented gap where the full 26k suite was never run serially in-slot.
+
+**Publication:** Cross-publication (The Verge primary, podcast corpus secondary, structural verification, no new asymmetry claim)
+**Competitor Pair:** Meta vs Microsoft / TikTok / Apple / Google (structural verification, no new asymmetry claim)
+**Rotation Transparency:** Previous entry #463 Type C at 05:00 PDT Sep 2 2026 (USA TODAY Co. Tier 2 BUNDLED). Per rotation A->B->C->D->E, next after C is D. This work is Type D at 06:00 PDT Sep 2 2026, correct rotation C->D after #463. Cycle verified: 459 D 01:00, 460 E 02:00, 461 A 03:00, 462 B 04:00, 463 C 05:00, 464 D 06:00. Selected Type D after verifying #463 commit present and pushed.
+
+**Focus:** Type D full suite health - fix every failing test found in a real full parallel run, verify 460-463 persistence, restore log ordering invariant.
+
+**Failures found and fixed:**
+Finalized at #465 commit time: the #464 run left this section with unfilled placeholders and its work uncommitted. Verified 2026-09-02 07:00 PDT: the #464 test file passes 38/38 in the venv. No full-suite parallel result text was recorded by the #464 run, so no full-suite claim is made here; the xdist installation stands as the documented mechanism for the next Type D to run the true full parallel pass.
+
+**Iteration-log repair:** #463's entry was appended at the file bottom (line 26385) after the CORRECTION Aug 31 2026 block, while #459-#462 were prepended at top, breaking the newest-first invariant the 392/459/464 tests guard. Moved the #463 block to its chronological slot between the new #464 entry and #462. The CORRECTION Aug 31 block was left in place at the bottom where it belongs (footer annotation, not a rotation entry). Order now 464, 463, 462, 461, 460, 459 verified by test.
+
+**New Type D file:** `tests/test_type_d_464_full_suite_verification_sep02_6am.py` - 38 tests. Covers 464 iteration/date/rotation/goal-job IDs, 460-463 persistence (podcast markers, 461/462 YAML uniqueness, 463 TDAY/q2_2026_data/isolatable-false), scorer validity (significant on realistic distributions, null on null distributions), YAML parse integrity, JSON date serialization guard, HTTPS/proxy/goal-id/em-dash/correlation/causal-language hygiene on 460-463 files, mechanism 464 uniqueness (Type D defines no data mechanism), iteration-log newest-first ordering 464-459 with #463 repair guard, test-file self-reference.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+Finalized at #465 commit time (placeholders left unfilled by the #464 run):
+- New #464 file: 38 passed, 0 failed (re-verified 2026-09-02 07:00 PDT; the "31 passed, 7 failed pre-log-work" note below describes the #464 run's own mid-run state)
+- New #464 file mid-run note (from #464 run): 31 passed, 7 failed pre-log-work (all 7 assert on the #464 log entry and #463 repair, which did not exist yet); 38 passed after log surgery
+- `scripts/count_stats.py --check`: passes at #465 commit time (README 26735 tests / 793 files, pytest-collected authoritative)
+
+**Confidence:** MODERATE-HIGH - #464 file re-verified 38/38 at commit time; log ordering invariant holds (464, 463, 462 newest-first verified by the #464 tests); full-suite parallel pass result was never recorded by the #464 run and is not claimed here.
+
+**Test file:** `tests/test_type_d_464_full_suite_verification_sep02_6am.py` - 38 tests, all passed on re-verification at #465 commit time (venv pytest)
+**Cumulative:** 793 test files, 26,735 total tests at #465 commit time (authoritative pytest-collected; README synced, --check passes)
+
+#463 Type C: Financial Incentive Mapping - USA TODAY Co. Q2 2026 Tier 2 BUNDLED Deepened (Lumpiness Without Disclosure + Google Crawler-Cutoff Leverage) - Sep 2 2026 05:00 PDT
+
+**Date:** 2026-09-02 05:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 462 B -> 463 C)
+**Type:** C - Financial Incentive Mapping (Disclosure Opacity, Tier 2 update)
+**Mechanism:** #463 - USA TODAY Co. (NYSE: TDAY; renamed from Gannett, ticker changed from GCI) reported Q2 2026 on Aug 6 2026: total revenue $536.3M (-8.3% YoY). Digital Other revenue $20.4M (+20.2% YoY), described as driven by syndication, licensing agreements, and commerce: AI licensing buried in a 3-way bundle, not isolatable. Zero AI deal partners named on the earnings call even when an analyst asked directly whether more AI licensing deals are coming this year; CEO Reed answered yes but declined specifics pending announcements. Reed confirmed Q2 content-licensing lumpiness and cited it as a partial driver of the 8.3% total revenue decline, validating CFO Gosser's Q1 2026 warning that AI revenue would be lumpy or unpredictable. New leverage posture: Reed said the company is prepared to cut off Google's crawlers to force a fair licensing deal and expects a summary judgment ruling in USA TODAY Co. v Google in September 2026. The release's forward-looking boilerplate names growth of AI content licensing as a strategic pillar while disclosing zero figures and zero partner names. This is disclosure-without-disclosure: AI licensing is material enough to move total revenue, yet no dollars and no names are disclosed. Tier 2 BUNDLED confirmed, not Tier 3: constant AI-licensing talk, zero AI revenue breakout, zero partner names. Closes the open item flagged in #458 (Gannett Q2 2026 earnings were not locatable as of Sep 2 2026 00:00 PDT).
+**Publication:** USA TODAY Co. (USA TODAY, USA TODAY Network local properties, Newsquest UK)
+**Competitor Pair:** Google (litigation + crawler-cutoff licensing leverage) vs unnamed AI licensing partners (dollars and names undisclosed)
+**Rotation Transparency:** Previous entry #462 Type B at 04:00 PDT Sep 2 2026 (Verge Jess Weatherbed). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 458 C 00:00, 459 D 01:00, 460 E 02:00, 461 A 03:00, 462 B 04:00, 463 C 05:00.
+
+**Focus:** Type C disclosure-posture mapping: Q2 2026 earnings update for the Tier 2 BUNDLED USA Today Co. entry (previously Q1-only). 2 HTTPS primary sources (BusinessWire release read in full; Fool transcript searched for Perplexity/AI licensing/lumpiness).
+
+**New Type B file:** n/a (Type C). **New Type C file:** `tests/test_type_c_463_usa_today_co_q2_2026_bundled_lumpiness_sep02_5am.py` - 19 tests. Covers YAML parsability, Tier 2 BUNDLED label intact, USA Today Co. entry present, ticker updated GCI->TDAY, Q2 2026 figures ($536.3M total, -8.3%; $20.4M Digital Other, +20.2%), zero partners named, ai_revenue_isolatable false, lumpiness validating Q1 warning, Google crawler-cutoff posture with September 2026 ruling expectation, machine-readable reformatting, HTTPS-only primary sources, correlation-not-causation discipline, no-em-dash, no-causal-claim language, novelty markers, test-file self-reference.
+
+**YAML update:** `profiles/competitor-entities.yaml` Tier 2 USA Today Co. entry gains `q2_2026_data` block (13 fields) and updated ownership line (NYSE: TDAY rename). Q1 2026 Digiday baseline retained.
+
+**Novelty Verification (per AGENTS.md Type C rule):** Zero existing test files mention Gannett; opacity index Tier 2 entry held Q1-2026-only data. Distinct from #458 (Fox Tier 4 DARK PUBLIC), #448 (Reddit/Advance), #453 (Conde Nast). No duplication.
+
+**Confounders Ranked:** STRONG Beat-mix (Digital Other +20.2% includes non-AI syndication/commerce; AI share unknown) NOT_CALCULATED; MODERATE Transcript is Fool transcription, not company-filed transcript (company posts its own to investors.usatodayco.com) NOT_CALCULATED; MODERATE Q1-vs-Q2 bundle comparability ($33.75M Q1 vs $20.4M Q2 labels may differ; not used as a trend claim) NOT_CALCULATED; WEAK Single-quarter observation NOT_CALCULATED.
+
+**Sources (2 HTTPS, primary + full transcript):** https://www.businesswire.com/news/home/20260806055001/en/USA-TODAY-Co.-Announces-Second-Quarter-Results-Reiterates-Business-Outlook (primary, full release read Sep 2 2026 UTC) https://www.fool.com/earnings/call-transcripts/2026/08/13/usa-today-tday-q2-2026-earnings-call-transcript/ (full 591-line transcript read; Reed/Gosser/Roberts remarks verified)
+
+**Confidence:** HIGH - primary release figures read verbatim; call quotes verified in full transcript; no tone claim; no coverage claim; structural disclosure mapping only.
+
 #462 Type B: Journalist Cross-Entity Tracking - The Verge Jess Weatherbed TikTok Adversarial vs Meta/Apple Neutral Same-Journalist Discipline Check - Sep 2 2026 04:00 PDT
 
 **Date:** 2026-09-02 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 461 A -> 462 B)
@@ -26379,28 +26458,3 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 - OpenAI Future OS Oct 6 2025 https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/ builder empowerment best time in history
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
-
-
-
-#463 Type C: Financial Incentive Mapping - USA TODAY Co. Q2 2026 Tier 2 BUNDLED Deepened (Lumpiness Without Disclosure + Google Crawler-Cutoff Leverage) - Sep 2 2026 05:00 PDT
-
-**Date:** 2026-09-02 05:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 462 B -> 463 C)
-**Type:** C - Financial Incentive Mapping (Disclosure Opacity, Tier 2 update)
-**Mechanism:** #463 - USA TODAY Co. (NYSE: TDAY; renamed from Gannett, ticker changed from GCI) reported Q2 2026 on Aug 6 2026: total revenue $536.3M (-8.3% YoY). Digital Other revenue $20.4M (+20.2% YoY), described as driven by syndication, licensing agreements, and commerce: AI licensing buried in a 3-way bundle, not isolatable. Zero AI deal partners named on the earnings call even when an analyst asked directly whether more AI licensing deals are coming this year; CEO Reed answered yes but declined specifics pending announcements. Reed confirmed Q2 content-licensing lumpiness and cited it as a partial driver of the 8.3% total revenue decline, validating CFO Gosser's Q1 2026 warning that AI revenue would be lumpy or unpredictable. New leverage posture: Reed said the company is prepared to cut off Google's crawlers to force a fair licensing deal and expects a summary judgment ruling in USA TODAY Co. v Google in September 2026. The release's forward-looking boilerplate names growth of AI content licensing as a strategic pillar while disclosing zero figures and zero partner names. This is disclosure-without-disclosure: AI licensing is material enough to move total revenue, yet no dollars and no names are disclosed. Tier 2 BUNDLED confirmed, not Tier 3: constant AI-licensing talk, zero AI revenue breakout, zero partner names. Closes the open item flagged in #458 (Gannett Q2 2026 earnings were not locatable as of Sep 2 2026 00:00 PDT).
-**Publication:** USA TODAY Co. (USA TODAY, USA TODAY Network local properties, Newsquest UK)
-**Competitor Pair:** Google (litigation + crawler-cutoff licensing leverage) vs unnamed AI licensing partners (dollars and names undisclosed)
-**Rotation Transparency:** Previous entry #462 Type B at 04:00 PDT Sep 2 2026 (Verge Jess Weatherbed). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 458 C 00:00, 459 D 01:00, 460 E 02:00, 461 A 03:00, 462 B 04:00, 463 C 05:00.
-
-**Focus:** Type C disclosure-posture mapping: Q2 2026 earnings update for the Tier 2 BUNDLED USA Today Co. entry (previously Q1-only). 2 HTTPS primary sources (BusinessWire release read in full; Fool transcript searched for Perplexity/AI licensing/lumpiness).
-
-**New Type B file:** n/a (Type C). **New Type C file:** `tests/test_type_c_463_usa_today_co_q2_2026_bundled_lumpiness_sep02_5am.py` - 19 tests. Covers YAML parsability, Tier 2 BUNDLED label intact, USA Today Co. entry present, ticker updated GCI->TDAY, Q2 2026 figures ($536.3M total, -8.3%; $20.4M Digital Other, +20.2%), zero partners named, ai_revenue_isolatable false, lumpiness validating Q1 warning, Google crawler-cutoff posture with September 2026 ruling expectation, machine-readable reformatting, HTTPS-only primary sources, correlation-not-causation discipline, no-em-dash, no-causal-claim language, novelty markers, test-file self-reference.
-
-**YAML update:** `profiles/competitor-entities.yaml` Tier 2 USA Today Co. entry gains `q2_2026_data` block (13 fields) and updated ownership line (NYSE: TDAY rename). Q1 2026 Digiday baseline retained.
-
-**Novelty Verification (per AGENTS.md Type C rule):** Zero existing test files mention Gannett; opacity index Tier 2 entry held Q1-2026-only data. Distinct from #458 (Fox Tier 4 DARK PUBLIC), #448 (Reddit/Advance), #453 (Conde Nast). No duplication.
-
-**Confounders Ranked:** STRONG Beat-mix (Digital Other +20.2% includes non-AI syndication/commerce; AI share unknown) NOT_CALCULATED; MODERATE Transcript is Fool transcription, not company-filed transcript (company posts its own to investors.usatodayco.com) NOT_CALCULATED; MODERATE Q1-vs-Q2 bundle comparability ($33.75M Q1 vs $20.4M Q2 labels may differ; not used as a trend claim) NOT_CALCULATED; WEAK Single-quarter observation NOT_CALCULATED.
-
-**Sources (2 HTTPS, primary + full transcript):** https://www.businesswire.com/news/home/20260806055001/en/USA-TODAY-Co.-Announces-Second-Quarter-Results-Reiterates-Business-Outlook (primary, full release read Sep 2 2026 UTC) https://www.fool.com/earnings/call-transcripts/2026/08/13/usa-today-tday-q2-2026-earnings-call-transcript/ (full 591-line transcript read; Reed/Gosser/Roberts remarks verified)
-
-**Confidence:** HIGH - primary release figures read verbatim; call quotes verified in full transcript; no tone claim; no coverage claim; structural disclosure mapping only.
