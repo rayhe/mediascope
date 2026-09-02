@@ -1,3 +1,36 @@
+#472 Type B: Guardian Johana Bhuiyan Same-Day OpenAI vs Meta Discipline Check - Accountability Consistency Bounds Financial-Incentive Theory - Sep 2 2026 14:00 PDT
+
+**Date:** 2026-09-02 14:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 471 A -> 472 B)
+**Type:** B - Journalist Cross-Entity Tracking (Guardian x Johana Bhuiyan, beat/institutional driver class)
+**Mechanism:** #472 Type B - First Bhuiyan mechanism in repo (zero prior iteration-log mentions; no test file references her). Same-day pair 2026-08-18, verified against her BuzzSumo journalist profile opened via browser.open this run: "OpenAI announces slowing pace of development after hack by rogue agent" and "Reel-ing it in: Meta is paying influencers to promote teen accounts". Third-party full-text excerpts of the OpenAI piece (europesays mirror of the Guardian article; Flipboard attribution "The Guardian - Johana Bhuiyan") show genuine accountability markers: OpenAI "did not reply to questions about when the slowdown began or when it planned to return to its normal pace"; Mia Glaese quote selected ("We are very far from everything running back to normal"); heated Anthropic race plus both-chasing-IPO structural context. Meta-side register in the same window is comparably adversarial: "Meta misses earnings forecasts after Zuckerberg media push to promote AI" (Jul 29; "media push" diminishes the announcement), "Zuckerberg claims superintelligence is now in sight as Meta lavishes billions on AI" (Muck Rack; "claims" distancing plus "lavishes" pejorative), plus historical "Meta removes AI profiles after controversial interactions" (Jan 2025, 28 personas, unblockable bug) and "Meta allows ads crowdfunding for IDF drones" (Eko, 117 ads). Interpretation: Bhuiyan presses the licensing-deal partner (Guardian x OpenAI, Feb 2025) and Meta with comparable accountability standards. This bounds the financial-incentive theory rather than confirming it: the naive prediction (deal predicts softer OpenAI coverage) fails at this journalist. Parallel in function to #471 (NYT litigation-posture boundary) and #462 (Weatherbed discipline check). Driver class recorded as beat/institutional (firewall), NOT financial, NOT source-access (contrast with #467 Mickle).
+
+**Publication:** The Guardian (Guardian US)
+**Journalist:** Johana Bhuiyan (senior tech reporter and editor, Guardian US; surveillance/accountability beat since Aug 2021; ex-LA Times, Recode, BuzzFeed News)
+**Rotation Transparency:** Previous entry #471 Type A at 13:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after A is B. Cycle verified: 467 B 09:00, 468 C 10:00, 469 D 11:00, 470 E 12:00, 471 A 13:00. Selected Type B after verifying #471 commit present and pushed. Candidate selection: zero prior Bhuiyan mentions in iteration-log (verified via grep); distinct journalist from #29 (Dan Milmo rogue-AI allocation finding); distinct unit from #471 (publication-pair) and #462 (different journalist/publication).
+
+**Focus:** Type B same-journalist standards check on a reporter covering a licensing-deal partner (OpenAI) and Meta, logged honestly as baseline-plus-discipline-check rather than a completed asymmetry finding.
+
+**Evidence discipline notes (honest limitations):**
+- theguardian.com is blocked by policy in this environment (browser.open refused, same as #471 nytimes.com). Meta-side tone rests on headlines plus third-party summaries (smartcontentreport, frontierpost excerpts); OpenAI side has fuller third-party full-text excerpts. Asymmetry of evidence strength flagged as STRONG confounder.
+- Qualitative only per Aug 28 rule. No tone arrays constructed, no numeric delta computed or claimed. significant=false.
+- Strongest confounder is the beat-driven null: Bhuiyan's beat IS tech accountability, so symmetric toughness needs no financial theory.
+
+**New Type B file:** `tests/test_type_b_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02_2pm.py` - 31 tests. Covers 472 iteration/date/rotation/goal-job IDs, both YAML stores, type B label, baseline-not-finding status, NOT-financial driver class, same-day pair date and headlines, OpenAI dek, three OpenAI accountability markers (evasiveness, Glaese quote, race/IPO context), Meta markers (three headlines plus two historical pieces, headline-only honesty), financial context (Feb 2025 deal), qualitative-only scorer note, ranked confounders (beat-driven null and headline-only in strong), Milmo #29 cross-reference with explicit no-contradiction, #471/#462 parallels, 7 verbatim HTTPS URLs in guardian store (5 in careers store), distinct-from-prior, no-em-dash, HTTPS-only hygiene, filename convention, iteration-log presence.
+
+**Profile updates:**
+- `profiles/guardian.yaml` - Johana Bhuiyan key_journalists entry gained `cross_entity_coverage_analysis.mechanism_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02` (same-day pair, accountability markers both sides, financial context, scorer note, ranked confounders, cross-references incl. #29/#471/#462, 7 source URLs, distinct-from-prior, type and driver_class fields)
+- `profiles/careers/journalists.yaml` - Johana Bhuiyan entry gained mechanism_472 summary plus 5 source URLs (edit misfire into Casey Newton entry caught and reverted before commit; unique-anchor redo verified)
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #472 file: 28 passed, 0 failed
+- `scripts/count_stats.py --check`: passes (README synced)
+
+**Confidence:** MEDIUM-HIGH - the same-day pair is verified against the journalist profile opened this run; OpenAI accountability markers rest on two independent third-party excerpts of the full Guardian text; the boundary-condition interpretation is honestly flagged with the beat-driven null as strongest confounder. Downgraded from HIGH only because Meta-side bodies were not directly fetched.
+
+**Test file:** `tests/test_type_b_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02_2pm.py` - 31 tests, all passed (venv pytest)
+
+---
+
 #471 Type A: NYT x OpenAI Litigation-Posture Boundary Condition - Adversarial Financial Posture Does Not Produce Blanket Adversarial Coverage (Partial Falsification) - Sep 2 2026 13:00 PDT
 
 **Date:** 2026-09-02 13:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 470 E -> 471 A)

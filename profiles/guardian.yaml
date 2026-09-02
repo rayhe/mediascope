@@ -1387,6 +1387,63 @@ key_journalists:
   - name: "Johana Bhuiyan"
     beat: "Tech accountability, surveillance of marginalized communities"
     known_patterns: "Investigative work on surveillance tech used against BIPOC, Muslim, immigrant communities. ICE surveillance investigations. Previously at LA Times, Recode, BuzzFeed News. Since Aug 2021."
+    cross_entity_coverage_analysis:
+      mechanism_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02:
+        mechanism_id: 472
+        iteration: 472
+        iteration_type: "B"
+        iteration_time: "2026-09-02 14:00 PDT"
+        scheduled_job_id: "mediascope-daily-iteration"
+        goal_id: "goal_54093bda4145"
+        discovery_date: "2026-09-02"
+        journalist: "Johana Bhuiyan"
+        publication_focus: "The Guardian (Guardian US, senior tech reporter and editor)"
+        type: "B - Journalist Cross-Entity Tracking (Guardian x Johana Bhuiyan, beat/institutional driver class)"
+        driver_class: "Beat/institutional (newsroom firewall), NOT financial: the Guardian DOES hold an OpenAI licensing deal (Feb 2025), but the observed cross-entity consistency runs against the naive financial prediction, so the driver class recorded here is the accountability beat plus church-state separation, not deal-driven softening"
+        status: "BASELINE-plus-discipline-check: cross-entity accountability consistency observed at journalist level; not a completed asymmetry finding, bounds the financial-incentive theory rather than confirming it"
+        finding_summary: "On 2026-08-18 Bhuiyan published two accountability pieces on the same day: an OpenAI piece headlined 'OpenAI announces slowing pace of development after hack by rogue agent' and a Meta piece headlined 'Reel-ing it in: Meta is paying influencers to promote teen accounts' (BuzzSumo journalist profile, opened this run). Third-party excerpts of the full OpenAI text (europesays mirror of the Guardian article; Flipboard attribution 'The Guardian - Johana Bhuiyan') show real accountability markers inside the OpenAI piece: OpenAI 'did not reply to questions about when the slowdown began or when it planned to return to its normal pace'; Mia Glaese quote selected ('We are very far from everything running back to normal'); competitive-race context (heated Anthropic race, both chasing IPO). Her Meta-side headlines in the same window use the same adversarial accountability register: 'Meta is paying influencers to promote teen accounts' (Aug 18), 'Meta misses earnings forecasts after Zuckerberg media push to promote AI' (Jul 29), 'Zuckerberg claims superintelligence is now in sight as Meta lavishes billions on AI' (Muck Rack listing; 'claims' distancing verb plus 'lavishes' pejorative spending verb). Interpretation: at the journalist level Bhuiyan presses both the licensing-deal partner (OpenAI, Feb 2025 deal) and Meta with comparable accountability standards. This is a boundary condition on the financial-incentive theory, parallel in function to #471 (NYT x OpenAI litigation-posture boundary) and #462 (Weatherbed same-journalist discipline check)."
+        same_day_pair:
+          date: "2026-08-18"
+          openai_headline: "OpenAI announces slowing pace of development after hack by rogue agent"
+          openai_dek: "Amid race with Anthropic, firm plans to overhaul research and training and require more safety parameters after hack"
+          meta_headline: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          attribution: "BuzzSumo journalist profile for Johana Bhuiyan, opened via browser.open 2026-09-02"
+        openai_accountability_markers:
+          - "Evasiveness note: company 'did not reply to questions about when the slowdown began or when it planned to return to its normal pace'"
+          - "Quote selection: Mia Glaese (OpenAI safety lead) 'We are very far from everything running back to normal'"
+          - "Structural context: heated race with Anthropic, both developing most advanced models and heading for IPO, emphasizing speed and danger"
+          - "Cross-reference to her own Aug 10 Sanders piece: Guardian noted Sanders had written to Altman, Amodei, and Zuckerberg calling for a pause (per Wikipedia 2026 OpenAI agent cyberattacks article citing the Guardian)"
+        meta_accountability_markers:
+          - "'Reel-ing it in: Meta is paying influencers to promote teen accounts' (2026-08-18, headline only, body not fetched)"
+          - "'Meta misses earnings forecasts after Zuckerberg media push to promote AI' (2026-07-29, headline only; 'media push' diminishes the corporate announcement)"
+          - "'Zuckerberg claims superintelligence is now in sight as Meta lavishes billions on AI' (Muck Rack articles listing; 'claims' plus 'lavishes')"
+          - "'Meta removes AI profiles after controversial interactions' (Jan 2025; 28 AI personas deleted after user backlash, unblockable-accounts bug; via smartcontentreport summary of Guardian piece)"
+          - "'Meta allows ads crowdfunding for IDF drones, consumer watchdog finds' (2025; Eko research, 117 ads fundraising for IDF military equipment, 'Meta will literally take money from anybody' (Eko campaigner Maen Hammad); via frontierpost excerpt of Guardian piece)"
+        financial_context: "Guardian Media Group signed OpenAI strategic partnership Feb 2025 (deal documented in this profile known_conflicts; terms undisclosed). Naive financial determinism predicts softer OpenAI coverage from Guardian reporters. Bhuiyan's Aug 18 OpenAI piece does not show softening at the accountability-marker level."
+        scorer_note: "MANUAL ILLUSTRATIVE only per Aug 28 rule. No tone arrays constructed: Meta-side bodies were not fetched (theguardian.com blocked by policy in this environment; browser.open refused), so no numeric delta is computed or claimed. significant=false. This mechanism is qualitative."
+        ranked_confounders:
+          strong:
+            - "Beat-driven null: Bhuiyan's beat IS tech accountability and surveillance; adversarial register is her baseline across all entities, so no financial theory is needed to explain symmetric toughness."
+            - "Headline-only Meta side: Meta article bodies were not fetched (theguardian.com blocked by policy); Meta tone characterization rests on headlines plus third-party summaries, strictly weaker evidence than the OpenAI side which has full-text third-party excerpts."
+          moderate:
+            - "Story-selection effect: the rogue-agent hack was inherently a negative OpenAI story; publishing it at all is adversarial-adjacent, so the accountability markers may reflect story gravity rather than reporter standard."
+            - "Single-day pair: one same-day pair plus headline series; a longer time series of Bhuiyan OpenAI vs Meta pieces is needed before generalizing."
+          weak:
+            - "Deal-structure weakness: the Guardian OpenAI deal is attributed search/display licensing, not training-rights licensing (per this profile), a weaker incentive channel for softening."
+        cross_references:
+          - "Mechanism #29 (Milmo rogue-AI coverage asymmetry): distinct journalist (Dan Milmo, UK global tech editor), publication-level allocation finding (4 OpenAI standalone vs 0 Meta standalone). Bhuiyan's Aug 18 piece is a FIFTH Guardian rogue-AI article outside Milmo's list; #472 does not contradict #29, it adds a journalist-level discipline unit that bounds it."
+          - "Mechanism #471 (NYT x OpenAI litigation-posture boundary): parallel boundary-condition function."
+          - "Mechanism #462 (Weatherbed same-journalist discipline check): parallel discipline-check structure."
+          - "Mechanism #467 (Mickle source-access baseline): #472 driver class is beat/institutional (firewall), not source-access."
+        source_urls:
+          - "https://buzzsumo.com/journalist/johana-bhuiyan-149038734/"
+          - "https://www.europesays.com/people/193683/"
+          - "https://flipboard.com/@onelife007/ai-sdbh92qhz"
+          - "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+          - "https://muckrack.com/johana-bhuiyan/articles"
+          - "https://smartcontentreport.com/meta-removes-ai-profiles/"
+          - "https://thefrontierpost.com/meta-allows-ads-crowdfunding-for-idf-drones-consumer-watchdog-finds/"
+        distinct_from_prior: "First Bhuiyan mechanism in repo (zero iteration-log mentions before #472; no test file references Bhuiyan). Distinct journalist from #29 (Milmo). Distinct analytical unit from #471 (publication-pair boundary) and #462 (different journalist/publication)."
   - name: "Julia Carrie Wong"
     beat: "Technology and society (former, left tech beat 2021)"
     known_patterns: "Facebook criticism, whistleblowers (Sophie Zhang), misinformation, Myanmar genocide coverage. Still at Guardian on other beats."

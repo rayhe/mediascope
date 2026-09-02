@@ -2993,6 +2993,24 @@ journalists:
   - https://followfridaypodcast.com/johana-bhuiyan
   notes: 'Pronounced "Boo-Yah". Born October 22, 1991, New York. Hijab-wearing Muslim woman journalist whose personal experience growing up in post-9/11 NYC shaped her surveillance beat focus (discussed on Muslim in Plain Sight podcast). Based in New York (formerly SF). Career arc: transportation/ride-hailing (BuzzFeed/Recode) → tech accountability (LA Times) → surveillance of marginalized groups (Guardian). Covers BIPOC, Muslim, immigrant communities, and gig workers. Amazon driver tipping investigation led to FTC $61.7M + DC AG $3.95M settlements. Cattle monitoring company ICE investigation exposed 75-year data retention. Podcast appearances: Muslim in Plain Sight, Muslims Doing Things, FannBoy Friday, Follow Friday. X: @JMBooyah. Phone: 4156303604. Contact: Johana.Bhuiyan@theguardian.com.'
   multi_publication: true
+  mechanism_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02:
+    mechanism_id: 472
+    iteration: 472
+    iteration_type: "B"
+    iteration_time: "2026-09-02 14:00 PDT"
+    scheduled_job_id: "mediascope-daily-iteration"
+    goal_id: "goal_54093bda4145"
+    discovery_date: "2026-09-02"
+    journalist: "Johana Bhuiyan"
+    publication: "The Guardian (Guardian US)"
+    status: "BASELINE-plus-discipline-check, not a completed asymmetry finding"
+    finding_summary: "Same-day pair 2026-08-18: 'OpenAI announces slowing pace of development after hack by rogue agent' and 'Reel-ing it in: Meta is paying influencers to promote teen accounts'. Full-text third-party excerpts of the OpenAI piece show accountability markers (evasiveness note: OpenAI 'did not reply to questions'; Glaese 'very far from normal' quote; Anthropic IPO-race context) comparable to her Meta-side accountability register. Bounds the financial-incentive theory: Guardian OpenAI deal (Feb 2025) does not produce visibly softer OpenAI coverage from this reporter. Qualitative only, no numeric delta claimed. Cross-references mechanism #29 (Milmo, distinct journalist) without contradicting it."
+    source_urls:
+    - "https://buzzsumo.com/journalist/johana-bhuiyan-149038734/"
+    - "https://www.europesays.com/people/193683/"
+    - "https://flipboard.com/@onelife007/ai-sdbh92qhz"
+    - "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+    - "https://muckrack.com/johana-bhuiyan/articles"
 - beats:
   - technology
   - breaking_news
