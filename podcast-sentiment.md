@@ -8790,3 +8790,84 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 
 ---
 
+## Iteration #460 - Wed 2026-09-02 02:00 PDT (Type E: Podcast Sentiment Tracking)
+
+### Type E #460: Podcast Sentiment Tracking - Guilty Feminist 498 Hold No 499 as of Sep 2 02:00 PDT Fifteenth Verification + EHE 23-Day Hold + New EHE 9000 Email Drive Surfaced via SWNS + Attention Sphere 15th No-Match
+
+**Date:** 2026-09-02 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation D->E 459 D to 460 E)
+**Type:** E - Podcast Sentiment Tracking (Fifteenth Verification Cycle)
+**Mechanism:** #460 Type E - Podcast sentiment tracking fifteenth verification cycle - Guilty Feminist no new episode beyond 498 Politics Aug 31 2026 as of Sep 2 02:00 PDT (official episode list crawled 4 hours prior still shows 498 latest, 5-hour extension from Sep 1 21:00) - Everyone Hates Elon activist group not podcast 23-day hold since Aug 10 Epstein poster claim still unverified pending primary Instagram - NEW EHE campaign data point surfaced this cycle: "Do you consent to being filmed by AI glasses?" email drive, 9,000+ people emailed Meta objecting to being filmed, created by EHE, distributed via SWNS wire (Ben Barry) - Attention Sphere fifteenth verification no matching podcast found, results return Ava Smithing nonprofit plus repository own page rejected as circular - secondary ecosystem freshness: The Drum Mark Palmer Aug 2026 Ray-Ban partnership cool-loss analysis citing EHE Times coverage, UK pub bans, EU ban rumors
+
+**Rotation Transparency:** Previous entry #459 Type D at 01:00 PDT Sep 2 2026 full suite health 7 latent failures fixed. Per rotation A->B->C->D->E, next after D is E. This work is Type E at 02:00 PDT Sep 2 2026, correct rotation D->E after #459. Cycle verified: 454 D 20:00, 455 E 21:00 fourteenth, 456 A 22:00, 457 B 23:00, 458 C 00:00, 459 D 01:00, 460 E 02:00 fifteenth. Selected Type E after verifying #459 commit present and pushed. Type E requires podcast sentiment tracking, primary source verification, ranked confounders, correlation not causation, clear distinction from earlier mechanisms, MANUAL ILLUSTRATIVE only, no false significance, browser-verified podcast primaries plus secondary verified sources, distinct from existing mechanisms 455 450 445 440 434. Microsoft PCM already exhaustively covered per AGENTS.md novelty rule, no PCM novelty claim here.
+
+### 1. The Guilty Feminist - No New Episode Beyond 498 as of Sep 2 02:00 PDT (Fifteenth Verification)
+
+- **Latest episode as of Sep 2 02:00 PDT:** 498 Politics with Felicity Ward and Hannah Spencer (31 Aug 2026), unchanged from Sep 1 21:00 PDT check. Official episode list https://guiltyfeminist.com/list-of-episodes/ crawled 4 hours prior to this run still shows 498 as latest. No 499.
+- **Bounded claim:** no new episode observed in search results as of 02:00 PDT Sep 2 2026, a 5-hour extension of the Sep 1 21:00 PDT verification. Bounded search-result absence, not universal proof of non-existence.
+- **Relevance hold:** 496-498 slate (Intimacy, Nuance Drought, Politics) contains no Meta/AI/wearables/privacy/surveillance per titles and descriptions. Titles/descriptions only, full transcripts not retrieved.
+
+### 2. Everyone Hates Elon - 23-Day Hold Plus New Email-Drive Data Point Surfaced
+
+- **Hold:** activist group, not a podcast. Aug 10 Epstein poster claim remains unverified pending primary Instagram verification (23 days since Aug 10 as of Sep 2). July 2026 bus-stop campaigns (Epstein "Glasses for people who do not do consent" Carnegie Street, Kylie Jenner lenticular "Meta: We are always watching" near Meta London HQ) remain the last primary-verified campaigns via Engadget https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ and The Times https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- **NEW data point surfaced this cycle:** EHE "Do you consent to being filmed by AI glasses?" email drive. More than 9,000 people emailed Meta saying they do not consent to being filmed by Meta AI glasses. Drive created by EHE, distributed via SWNS wire service, bylined Ben Barry. Source: https://muckrack.com/ben-barry-4/articles
+- **Dating bound:** exact publication date not shown in search results. Muck Rack profile page last crawled 27 days prior to Sep 2 2026 (approx Aug 6), which bounds earliest surfacing; article references the June 23 2026 Meta glasses model launch, bounding earliest possible date after Jun 23 2026. Treat as surfaced-not-new: the drive may predate this verification cycle by weeks. It is new to this log, not claimed as a new campaign.
+- **Asymmetry note:** no equivalent consent-email drive against Apple (camera AirPods per 9to5Mac), Google (Android XR), Samsung, or Snap camera wearables has surfaced in any verification cycle to date. Bounded search-result absence.
+- **Amplification loop extension:** EHE campaigns continue generating cross-vertical print coverage without competitor-equivalent campaigns noted, consistent with mechanism documented at line 509.
+
+### 3. Attention Sphere - Fifteenth No-Match Verification
+
+- **Result:** Sep 2 02:00 PDT search for "Attention Sphere" podcast returned no matching podcast (fifteenth consecutive no-match verification).
+- **What results returned:** Ava Smithing nonprofit The Attention Sphere (youth tech advocacy, Purposeful Empathy podcast appearances) and this repository's own podcast-sentiment.md page, which is rejected as circular evidence per established discipline and is not cited as independent verification.
+- **Status unchanged:** task-spec name remains misidentified; Ava Smithing's actual show is Left to Their Own Devices (Toronto Star). Nonprofit claim remains secondary-only, not elevated.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. Secondary Ecosystem Freshness (Sep 2 02:00 PDT)
+
+- **The Drum (Mark Palmer, surfaced Aug 2026, crawled 1 hour prior):** "Is the glasses partnership with Meta making Ray-Ban lose its cool?" https://www.thedrum.com/opinion/mark-palmer-is-the-glasses-partnership-with-meta-making-ray-ban-lose-its-cool - UK high-end restaurants, clubs, and Wetherspoons hanging signs banning Ray-Ban Meta glasses; Reddit owners hiding glasses on flights; EU/Germany ban rumors; cites EHE fake Epstein ad outside Ray-Ban flagship via The Times. Trade-press (advertising) vertical now carrying the Meta-glasses-backlash frame, extending the amplification loop into a new vertical.
+- **AfroTech (surfaced, crawled 2 hours prior):** smart glasses ethics piece https://afrotech.com/smart-glasses-ethics-and-consent - cites BBC 80%+ smart-glasses market share stat for Meta, EHE "Simply put, that is abuse" statement, two-party consent law framing. No equivalent scrutiny of competitor camera wearables in the piece per search-result excerpt.
+- **No new Guilty Feminist, no new EHE primary campaign, no Attention Sphere podcast as of 02:00 PDT Sep 2 2026.** All bounded absences.
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- EHE email-drive entity-selective sentiment: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced: bounded absence.
+- The Drum trade-press backlash frame: MANUAL ILLUSTRATIVE -6/10 toward Meta/Ray-Ban partnership. No competitor-partnership equivalent (e.g., Google/Warby Parker) framed comparably in the excerpt: bounded absence.
+- Correlation not causation. Structural incentive not proof of editorial control. No claim of empirical significance. Do not claim empirical significance without Welch t-test plus Cohen d plus bootstrap CI on the observed corpus.
+
+### 6. Sources (HTTPS only)
+
+- https://guiltyfeminist.com/list-of-episodes/ (official episode list, 498 latest as of crawl 4h prior)
+- https://muckrack.com/ben-barry-4/articles (EHE 9,000 email drive via SWNS, Ben Barry)
+- https://www.thedrum.com/opinion/mark-palmer-is-the-glasses-partnership-with-meta-making-ray-ban-lose-its-cool (trade-press backlash frame)
+- https://afrotech.com/smart-glasses-ethics-and-consent (ethics piece, EHE statement, BBC 80% stat)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE July campaign primary)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (EHE Epstein poster, Times)
+- https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/ (EHE lenticular ad)
+
+### 7. Confounders (ranked)
+
+- Search-result dating: Muck Rack crawl timestamps bound surfacing, not publication; the email drive could be weeks old. Weakens any "new campaign" reading; logged as surfaced-not-new.
+- EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence.
+- Secondary excerpts via search results, not full-article fetch, for The Drum and AfroTech; framing characterizations are excerpt-bounded.
+- No new Guilty Feminist episode / no EHE primary campaign / no Attention Sphere podcast are bounded search-result absences, not universal proofs.
+- MANUAL ILLUSTRATIVE scores are subjective only.
+
+### 8. Test File
+
+- tests/test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py - checks covering mechanism_id 460, Type E, iteration 460, date 2026-09-02 02:00 PDT, rotation D->E, Guilty Feminist 498 hold no 499 bounded official HTTPS, EHE 23-day hold plus 9000 email drive surfaced-not-new SWNS bounded dating, Attention Sphere 15th no-match circular rejection bounded, The Drum and AfroTech secondary HTTPS, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 455, no Microsoft PCM novelty claim, iteration-log entry present.
+
+### 9. Extension vs Duplicate Justification
+
+- Extension not duplicate - 15th verification cycle adds Sep 2 02:00 PDT freshness check, 5-hour extension from Sep 1 21:00 - no new Guilty Feminist episode beyond 498 - EHE 23-day hold - genuinely new-to-log EHE 9,000 email-drive data point via SWNS with explicit surfaced-not-new dating bound - Attention Sphere 15th no-match with circular rejection - The Drum trade-press vertical extension of amplification loop - distinct from 455.
+
+### 10. Limitations Documented
+
+- Podcast discovery via search may miss niche feeds.
+- Guilty Feminist titles/descriptions only, full transcripts not retrieved for 496-498.
+- EHE campaign timeline via secondary sources may lag real-time; primary Instagram @everyonehateselon not directly verified.
+- The Drum and AfroTech characterized from search-result excerpts, not full-article fetch.
+- MANUAL ILLUSTRATIVE sentiment scores subjective only; no empirical significance claimed.
+- All absences (no 499, no new EHE primary campaign, no Attention Sphere podcast, no competitor email drive) are bounded search-result absences, not universal proofs.
+
+---
+
