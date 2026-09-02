@@ -1,3 +1,28 @@
+#466 Type A: WIRED x Amazon - FTC Ad-Auction Lawsuit 44-Hour Coverage-Selection Observation, Sep 2025 Haskins Same-Day Precedent as Counter-Evidence - Sep 2 2026 08:00 PDT
+
+**Date:** 2026-09-02 08:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 465 E -> 466 A)
+**Type:** A - Competitor Coverage Deep Dive (WIRED x Amazon, selection-speed dimension)
+**Mechanism:** #466 Type A - On Aug 31 2026 (Monday) the FTC plus 22 US states sued Amazon in W.D. Wash. alleging seven years of secret ad-auction price manipulation (internal soft reserve, post-hoc pricing adjustments across Sponsored Products/Brands/Display since 2018), $20B+ alleged harm across 1M+ advertisers, plus junk-ad boosting and Signal disappearing-message spoliation allegations (Bloomberg Law). Third major FTC case vs Amazon (2023 monopolization suit headed to trial; $2.5B Prime dark-patterns settlement Sep 2025). Amazon denies (misguided, misunderstands ad tech; claims $8B advertiser savings 2021-2025). WSJ broke the story. As of Sep 2 2026 08:00 PDT (about 44 hours post-filing) web search returns zero wired.com results on the lawsuit: a bounded coverage-selection observation, explicitly SECONDARY UNVERIFIED (search-index absence only, not a wired.com crawl). The honest comparator is WIRED's own demonstrated capacity: Caroline Haskins covered the $2.5B Prime settlement same-day in Sep 2025 with two pieces (news plus $51 service explainer), attested via secondary aggregators (WIRED URLs not directly verified this session). The new suit alleges 8x the dollar harm with a Signal-spoliation hook squarely in WIRED security-desk territory, yet shows no indexed WIRED coverage at 44 hours. Structural tie: 2 Condé Nast Amazon AI licensing deals (Rufus Jul 2025, Alexa+ May 2026) vs 0 Meta deals, recorded as correlate not proof. Scorer run on MANUAL ILLUSTRATIVE intensity proxies only (delta -0.75, significant false, p/d/CI NOT CALCULATED). Ranked confounders: STRONG (search-index lag, 44h window too short, WSJ scoop ownership), MODERATE (newsroom bandwidth, filing-vs-settlement editorial standards), WEAK (Amazon 3000-word rebuttal slowing turnaround). Counter-evidence preserved: Haskins Sep 2025 proves adversarial capacity toward a licensing partner; if WIRED publishes this week the gap closes to a speed note. Distinct from surveillance_parity_paradox (same amazon section, Ring/NameTag hardware) and all prior WIRED Type A (#430, #440, #446, #451): new event, new domain (adtech deception), selection-speed not tone.
+
+**Publication:** WIRED (Condé Nast)
+**Competitor Pair:** Amazon (target) vs Meta (comparison); Sep 2025 Haskins Amazon pieces as within-publication precedent
+**Rotation Transparency:** Previous entry #465 Type E at 07:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after E is A. Cycle verified: 461 A 03:00, 462 B 04:00, 463 C 05:00, 464 D 06:00, 465 E 07:00, 466 A 08:00. Selected Type A after verifying #465 commit present and pushed.
+
+**Focus:** Type A coverage-selection deep dive on a <48h-old event, using the publication's own prior speed precedent as the honest baseline and keeping the absence claim explicitly bounded and secondary-unverified.
+
+**New Type A file:** `tests/test_type_a_466_wired_amazon_ftc_ad_lawsuit_coverage_selection_sep02_8am.py` - 30 tests. Covers 466 iteration/date/rotation/goal-job IDs, Aug 31 filing details ($20B, 1M+ advertisers, Signal/junk-ad/third-case hooks, Amazon denial, WSJ scoop), 6 verbatim HTTPS source URLs, Haskins Sep 2025 precedent with attested-secondary honesty note, bounded 44h zero-indexed observation with SECONDARY UNVERIFIED status, 2-deal financial tie as correlate, MANUAL ILLUSTRATIVE scorer run (delta -0.75, no false significance), ranked confounders (3 strong incl. search-index lag), counter-evidence, cautious language, distinct-from-prior (surveillance_parity_paradox, #430/#440/#446/#451), no-em-dash / HTTPS-only hygiene, mechanism-count uniqueness.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #466 file: 30 passed, 0 failed (2 initial failures fixed: missing `competitor` key in YAML, case-sensitive hook assertion in test)
+- `scripts/count_stats.py --check`: passes (README 26765 tests / 794 files, pytest-collected authoritative)
+
+**Confidence:** MEDIUM-HIGH - the event, its scale hooks, and the Haskins precedent are URL-backed; the core absence claim is honestly bounded as a 44-hour search-index observation and could close within days. No tone or significance claims made.
+
+**Test file:** `tests/test_type_a_466_wired_amazon_ftc_ad_lawsuit_coverage_selection_sep02_8am.py` - 30 tests, all passed (venv pytest)
+**Cumulative:** 794 test files, 26,765 total tests (authoritative pytest-collected; README synced, --check passes)
+
+---
+
 #465 Type E: Podcast Sentiment Sixteenth Verification - GF 498 Hold No 499, EHE 23-Day Hold, Fstoppers Photo-Press Vertical, Attention Sphere 16th No-Match - Sep 2 2026 07:00 PDT
 
 **Date:** 2026-09-02 07:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 464 D -> 465 E)

@@ -2210,6 +2210,97 @@ competitor_relationships:
       - https://techcrunch.com/2025/07/22/amazon-acquires-bee-the-ai-wearable-that-records-everything-you-say/
       - https://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
       - https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
+    ftc_ad_auction_lawsuit_coverage_selection_466:
+      mechanism: 466
+      iteration: 466
+      iteration_type: A
+      type: "Type A: Competitor Coverage Deep Dive"
+      date: "2026-09-02"
+      publication: "WIRED"
+      competitor: "Amazon"
+      publication_pair: "WIRED x Amazon"
+      comparison_entity: "Meta"
+      goal_id: "goal_54093bda4145"
+      job_id: "mediascope-daily-iteration"
+      finding: "On Aug 31 2026 (Monday) the FTC plus 22 US states sued Amazon alleging seven years of secret ad-auction price manipulation (internal soft reserve, post-hoc pricing adjustments), $20B+ alleged advertiser harm across 1M+ advertisers, plus allegations of junk-ad boosting and Signal disappearing-message spoliation. As of Sep 2 2026 08:00 PDT (about 44 hours post-filing) no WIRED article on the lawsuit is indexed by web search. This is a bounded coverage-selection observation, not a tone finding. It is directly comparable to WIRED's own demonstrated capacity: Caroline Haskins covered Amazon's $2.5B Prime dark-patterns FTC settlement same-day in Sep 2025 with two pieces (news plus $51 service explainer). The new suit alleges 8x the dollar harm, is the third major FTC case against Amazon, and carries a Signal-spoliation hook squarely in WIRED security-desk territory, yet has no indexed WIRED coverage at 44 hours. Absence is SECONDARY UNVERIFIED (search-index absence only); WIRED may publish later this week."
+      event_ftc_ad_auction_lawsuit:
+        filed: "2026-08-31"
+        plaintiffs: "FTC plus 22 US states, bipartisan"
+        court: "US District Court, Western District of Washington"
+        core_allegation: "Secret soft-reserve pricing and post-hoc pricing adjustments in Sponsored Products, Sponsored Brands, and Sponsored Display auctions since 2018; advertisers told second-price rules applied"
+        alleged_harm: "$20B+ across 1M+ advertisers, nearly half small or midsize businesses; costs allegedly passed to shoppers"
+        extra_hooks:
+        - "Junk-ad boosting allegation (Bloomberg Law)"
+        - "Signal disappearing-message spoliation allegation: 2+ years of internal communications destroyed, Jun 2019 to early 2022"
+        - "Third major FTC case vs Amazon (2023 monopolization suit headed to trial; $2.5B Prime settlement Sep 2025)"
+        amazon_response: "Denies allegations as misguided; says advertisers saved $8B 2021-2025 via relevance prioritization"
+        first_reported_by: "Wall Street Journal"
+      source_urls:
+      - https://www.reuters.com/legal/litigation/ftc-file-lawsuit-alleging-amazon-deceived-advertisers-wsj-reports-2026-08-31/
+      - https://www.wsj.com/business/media/how-amazons-secret-ad-pricing-system-worked-according-to-the-ftc-24c0d78a
+      - https://www.cnn.com/2026/08/31/business/ftc-sues-amazon-for-allegedly-overcharging-advertisers-on-its-platform?cid=external-feeds_iluminar_meta
+      - https://www.usatoday.com/story/money/personal-finance/income/2026/09/01/ftc-sues-amazon-over-alleged-hidden-ad-surcharges/91565438007/
+      - https://news.bloomberglaw.com/litigation/amazon-boosted-junk-ads-hid-messages-with-signal-ftc-says
+      - https://www.thetimes.com/business/wsj/article/ftc-sues-amazon-advertisers-prices-8t03sv5lc
+      wired_capacity_precedent_sep2025:
+        note: "Counter-evidence proving WIRED can and does cover Amazon adversarially at speed. WIRED article URLs not directly verified this session; titles, author, and same-day timing attested via secondary aggregators below."
+        article_1_title: "Amazon Will Pay $2.5 Billion to Settle FTC Suit That Alleged Dark Patterns in Prime Sign-Ups"
+        article_1_author: "Caroline Haskins"
+        article_2_title: "Amazon Might Owe You $51. Here's How to Find Out if You're Eligible"
+        speed: "Same-day (aggregator timestamps show WIRED pieces within minutes to one hour of settlement news)"
+        attesting_secondaries:
+        - https://asuselj.org/dark-patterns-in-digital-media-why-amazons-ftc-settlement-matters-for-streaming-entertainment-and-sports/
+        - https://www.maharlikanews.com/amazon-will-pay-2-5-billion-to-settle-ftc-suit-that-alleged-dark-patterns-in-prime-sign-ups/
+        - https://www.thetechstreetnow.com/tech/14080583665003486625/
+      coverage_selection_observation:
+        window: "About 44 hours post-filing as of 2026-09-02 08:00 PDT"
+        wired_articles_indexed: 0
+        verification_method: "Web search queries for wired.com coverage of the Aug 31 2026 FTC Amazon advertiser lawsuit returned zero wired.com results"
+        evidence_status: "SECONDARY UNVERIFIED - search-index absence only, not a crawl of wired.com"
+        bounded: true
+      financial_tie:
+        conde_nast_amazon_deals: 2
+        deal_1: "Amazon Rufus AI shopping assistant licensing, Jul 2025, multi-year"
+        deal_2: "Alexa+ shopping integration, May 2026"
+        meta_deals: 0
+        direction: "structural incentive correlate, not proof of editorial influence"
+      asymmetry_scoring_manual_illustrative:
+        target_entity: "Amazon FTC ad-auction lawsuit WIRED coverage intensity, 44h window"
+        peer_entity: "Amazon FTC Prime settlement WIRED coverage intensity, Sep 2025 same-day precedent"
+        target_scores_illustrative: [0.0]
+        peer_scores_illustrative: [0.8, 0.7]
+        delta_manual_illustrative: -0.75
+        significant: false
+        p_value: "NOT CALCULATED"
+        cohens_d: "NOT CALCULATED"
+        confidence_interval: "NOT CALCULATED"
+        scorer: "mediascope/score/asymmetry.py calculate_asymmetry, run on illustrative arrays in test file"
+        synthetic_note: "MANUAL ILLUSTRATIVE ONLY - scores encode indexed-article presence and same-day speed as intensity proxies, not observed article tone. No empirical significance claimed."
+      confounders:
+        strong:
+        - "search_index_lag: search-index absence is weak evidence; a WIRED piece may exist but be unindexed at 44 hours"
+        - "window_too_short: 44 hours is brief; WIRED enterprise or analysis pieces often take days; the Sep 2025 precedent was a settlement (scheduled news) while this is a filed complaint requiring legal review"
+        - "scoop_ownership: WSJ broke the story; WIRED may follow rather than lead, delaying its own angle"
+        moderate:
+        - "newsroom_bandwidth: WIRED security and business desks may be staffed on other investigations this week"
+        - "filing_vs_settlement: a complaint alleges; a settlement resolves. Editorial standards for covering unproven allegations differ from covering a done deal"
+        weak:
+        - "amazon_pr_timing: Amazon's 3000-word rebuttal (CNN) gave reporters more to chew on, slowing turnaround"
+      counter_evidence:
+      - "WIRED covered Amazon's $2.5B Prime settlement adversarially and same-day in Sep 2025 (Haskins), proving adversarial capacity toward a licensing partner"
+      - "No evidence of an editorial directive; structural incentive is a correlate only"
+      - "If WIRED publishes within the week, the selection gap closes and this mechanism becomes a speed note, not a gap"
+      cautious_language:
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        no_statistical_significance_claim: true
+        manual_illustrative_label: "MANUAL ILLUSTRATIVE"
+        bounded_absence: "44-hour search-index absence only; re-check required before any stronger claim"
+      distinct_from_prior:
+      - "Distinct from surveillance_parity_paradox (Aug 8, mechanism in this same amazon section): that covers Ring Familiar Faces vs Meta NameTag dormant-code hardware surveillance. This covers a Sep 1 2026 adtech deception lawsuit, a new event in a different domain."
+      - "Distinct from all prior WIRED Type A mechanisms (#430, #440 OpenAI; #446 Apple; #451 Anthropic): new competitor-event pair and selection-speed dimension, not tone framing."
+      - "Novelty verified per Aug 31 standing rule: grep of iteration-log and profiles shows no prior mechanism on the Aug 31 2026 FTC Amazon advertiser lawsuit."
+      rotation_transparency: "Previous entry #465 Type E at 07:00 PDT Sep 2 2026. Per rotation A-B-C-D-E, next after E is A. This is Type A #466 at 08:00 PDT Sep 2 2026."
   apple:
     financial_tie: negotiating
     estimated_value: potential $50M+ multi-year
