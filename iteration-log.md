@@ -1,3 +1,21 @@
+#461 Type A: The Verge x Microsoft Copilot Retrenchment Dedicated-Beat Framing Asymmetry - Sep 2 2026 03:00 PDT
+
+**Date:** 2026-09-02 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 460 E -> 461 A)
+**Type:** A - Competitor Coverage Deep Dive (first Verge x Microsoft Type A; novel pair per git log and test-file scan)
+**Mechanism:** #461 - The Verge x Microsoft Copilot retrenchment dedicated-beat framing asymmetry. Aug 2026 Microsoft consumer AI retrenchment carried severe markers: Copilot Podcasts, free-tier Deep Research, and Group Chat killed effective Aug 18 2026 with group threads/messages/images WIPED and no migration; leaked July 2026 "earn the right to exist" memo from Copilot chief Jacob Andreou to 11,000-person org (via The Information); ~4,800-employee layoff memo (~2.1%, ~20% Xbox cuts by end FY2027) broken by The Verge's own Tom Warren Jul 6 2026; Sensor Tower 38.5M monthly Copilot users vs 1B ChatGPT, ~7% of 450M M365 seats paying. The Verge's dedicated-beat register stayed product-news: TechRepublic Aug 14 2026 cites "The Verge reports that existing threads, messages and shared content will not carry into the updated experience," adopting Microsoft's "simpler, more cohesive experience" frame. Same peg at TechCrunch: "an admission that Copilot has lost its way," headline "Microsoft kills off unsuccessful AI features." Cross-publication contrast isolates The Verge's register, not event severity, as the variable. Financial triangulation: (1) Vox Media/PMC is Microsoft PCM co-design partner and pilot publisher (Feb 2026, Meta not a participant); (2) PMC enterprise agreement with Microsoft Azure for OpenAI services (revenue PMC TO Microsoft); (3) Tom Warren Senior Editor on Microsoft beat since 2012, access-journalism structure; (4) Meta $0 on all channels. Counter-evidence logged honestly: Warren's Vergecast Build 2026 segment called Microsoft's AI strategy "contradictory" ("strategy in flux," "quietly walking it back"), so the beat CAN be critical; asymmetry is retrenchment-framing specific, not blanket softness. Extends profile's meta_vs_microsoft_gap 0.50 (Patel EIC delegation, mechanism #6) to beat-reporter level. All tone scores MANUAL ILLUSTRATIVE, delta -0.55, correlation not causation.
+
+**Publication:** The Verge (PMC)
+**Competitor Pair:** Microsoft (peer) vs Meta (target)
+**Rotation Transparency:** Previous entry #460 Type E at 02:00 PDT Sep 2 2026 (podcast fifteenth verification). Per rotation A->B->C->D->E, next after E is A. Cycle verified: 456 A 22:00, 457 B 23:00, 458 C 00:00, 459 D 01:00, 460 E 02:00, 461 A 03:00.
+
+**Focus:** Type A deep dive - 3 Verge Microsoft sources (Aug 14 Copilot merger via TechRepublic attestation, Jul 6 layoffs memo via biztoc, Jun Vergecast Build 2026 via BigGo), financial triangulation, MANUAL ILLUSTRATIVE asymmetry scoring, ranked confounders, cautious language.
+
+**New Type A file:** `tests/test_type_a_461_verge_microsoft_copilot_retrenchment_dedicated_beat_sep02_3am.py` - 16 tests. Covers 461 iteration/date/rotation/goal-job IDs, YAML parsability, 3 sources with HTTPS and framing, severity markers, PCM/Azure/Warren/Meta-zero triangulation, MANUAL ILLUSTRATIVE delta -0.55 with scorer run on synthetic arrays, STRONG>=3/MODERATE>=2/WEAK>=1 confounders, no-em-dash, HTTPS-only, cautious language, distinct-from-#6, mechanism uniqueness, source URL hygiene.
+
+**Constraint note:** theverge.com direct fetch blocked by tool policy this run; Verge article contents attested via secondary citations (TechRepublic, biztoc, BigGo Finance) with explicit attestation fields. No tone claim exceeds what the cited snippets support; all scores labeled MANUAL ILLUSTRATIVE.
+
+**Confidence:** MODERATE-HIGH - financial ties and events are primary/secondary-sourced with URLs; framing claims bounded to attested snippets; counter-evidence included; no statistical significance claimed.
+
 #460 Type E: Podcast Sentiment Fifteenth Verification - GF 498 Hold No 499, EHE 23-Day Hold, New 9000 Email Drive Surfaced via SWNS - Sep 2 2026 02:00 PDT
 
 **Date:** 2026-09-02 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation D->E 459 D to 460 E)
