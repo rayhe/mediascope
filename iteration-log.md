@@ -1,3 +1,34 @@
+#457 Type B: Journalist Cross-Entity Tracking - WIRED Adrienne So Meta vs Apple Even-Handed Gear-Desk Counter-Example - Sep 1 2026 23:00 PDT
+
+**Date:** 2026-09-01 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation A->B 456 A to 457 B)
+**Type:** B - Journalist Cross-Entity Tracking (Counter-Example / Falsification)
+**Mechanism:** #457 Type B - WIRED Senior Reviews Editor Adrienne So (Gear desk, fitness/wearables beat) shows no reporter-level anti-Meta bias: her Meta glasses coverage is warmer than her Apple coverage in the same WIRED Recommends product-review format. First documented counter-example in the Type B series; falsifies the simple reporter-bias hypothesis and strengthens the editorial lane-assignment mechanism.
+
+**Publication:** WIRED (Gear desk)
+**Competitor Pair:** Meta vs Apple (same-reviewer product-review tone)
+**Rotation Transparency:** Previous entry #456 Type A at 22:00 PDT Sep 1 2026 FT Anthropic $20B double target vs Meta equity raise. Per rotation A->B->C->D->E, next after A is B. This work is Type B at 23:00 PDT Sep 1 2026, correct rotation A->B after #456. Cycle verified: 441 A 07:00, 442 B 08:00 Boone Ashworth Snap vs Meta pricing, 443 C 09:00, 444 D 10:00, 445 E 11:00, 446 A 12:00, 447 B 13:00 Lauren Goode executive access, 448 C 14:00, 449 D 15:00, 450 E 16:00, 451 A 17:00, 452 B 18:00 Simon Hill Google Android XR kill-switch, 453 C 19:00, 454 D 20:00, 455 E 21:00, 456 A 22:00 FT Anthropic $20B, 457 B 23:00 Adrienne So counter-example. Selected Type B after verifying #456 commit present and profiles/wired.yaml had zero prior Adrienne So cross-entity entries (name only in analyst lists). Type B requires journalist cross-entity tracking, ranked confounders, correlation not causation, MANUAL ILLUSTRATIVE only, no false significance, distinction from prior Type B mechanisms 431 436 442 447 452.
+
+**Focus:** Same-reviewer Meta vs Apple product-review tone comparison.
+
+**Evidence (secondary-verified, WIRED primary paywalled, dek-level analysis only):**
+- **Meta 1:** Best Meta Glasses (2026): Ray-Ban, Oakley, AR - Adrienne So, Apr 19 2026. Dek: "Meta is unquestionably winning the face-wearable war. Can you trust the company? Maybe not. But these are some of the nicest glasses I have ever worn." Tone 0.45 MANUAL ILLUSTRATIVE. Confirmed via Muck Rack (WIRED original listed) plus taorem digest, times42, technewstube (4 independent secondaries).
+- **Meta 2:** The Best Meta Glasses for Looking Hot and Invading Everyone's Privacy (undated 2026). Dek: "I am a lifelong Ray-Ban Wayfarer wearer, and I am also WIRED's resident Meta wearer. I grab a pair of Meta glasses whenever I leave the house because I like being able to use one device instead of two or three on a walk." Tone 0.40 MANUAL ILLUSTRATIVE. Headline privacy joke is self-aware/playful, not adversarial. Via Muck Rack (www.wired.com original).
+- **Apple:** Review: Apple AirPods Max 2 (undated 2026), 8/10. WIRED: gorgeous, comfortable, iconic design. TIRED: battery life still disappointing, no customizable EQ, live translation hilariously bad. Tone 0.30 MANUAL ILLUSTRATIVE. Via Muck Rack (www.wired.com original).
+- **Delta:** Meta avg 0.42 vs Apple 0.30, +0.12 favoring Meta (MANUAL ILLUSTRATIVE, not empirical).
+
+**Finding:** No evidence So applies harsher standards to Meta; the observed gradient runs Meta-warmer. Prior Type B mechanisms (431, 436, 442, 447, 452) all document Meta-unfavorable asymmetry; 457 is the first counter-example. This tightens the theory: the publication-level Meta adversarial pattern is better explained by desk-level lane assignment (investigative desk gets Meta surveillance stories; Gear reviewers get product tests) than by individual reviewer animus. Directly supports the editorial_lane_assignment_mechanism already in wired.yaml.
+
+**Confounders Ranked:** STRONG Product merit (Meta glasses may genuinely be better products than AirPods Max 2 refresh) NOT_CALCULATED; STRONG Beat passion (glasses are her beat and daily carry) NOT_CALCULATED; MODERATE Category mismatch (glasses vs headphones; no So Apple Vision Pro byline found) NOT_CALCULATED; MODERATE Secondary sourcing (WIRED primary paywalled, dek-level only) NOT_CALCULATED; WEAK Single Apple data point NOT_CALCULATED.
+
+**Sources (4 HTTPS, secondary-verified):** https://muckrack.com/adrienne-so/articles (secondary verified - lists WIRED originals with deks, opened via browser.open Sep 2 2026 UTC) https://blogs.taoremtls.in/daily-digest/wired/wired-digest-april-19-2026/ (secondary - confirms dek, date, byline) https://times42.com/10430092 (secondary - confirms dek) https://technewstube.com/wired/1824515/meta-glasses-2026-ray-ban-oakley-ar/ (secondary - confirms byline/date/dek)
+
+**Confidence:** MEDIUM - deks confirmed across 4+ independent secondary sources via browser.open; full-text tone coding not done; single Apple data point; no causal claim; correlation not causation; structural only.
+
+**Test file:** `tests/test_type_b_457_adrienne_so_meta_vs_apple_evenhanded_counterexample_sep01.py` - 15 classes, 15 tests, all passed (one initial failure fixed: uniqueness assertion counted test filename; corrected to YAML key-line match)
+**Cumulative:** 125 mechanisms (124 prior plus 1 counter-example mechanism #457), 14,040 tests (14,025 prior plus 15 new), 785 test files (784 prior plus 1 new)
+
+---
+
 #455 Type E: Podcast Sentiment Tracking - Fourteenth Verification - Guilty Feminist 496-498 Hold No 499 as of Sep 1 21:00 PDT + EHE 22-Day Hold + Attention Sphere 14th No-Match - Sep 1 2026 21:00 PDT
 
 **Date:** 2026-09-01 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation D->E 454 D to 455 E)
