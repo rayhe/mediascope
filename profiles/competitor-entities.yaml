@@ -884,6 +884,129 @@ entities:
       - https://www.livemint.com/companies/news/facebook-to-end-payments-to-us-news-publishers-11659025905218.html
       - https://www.nasdaq.com/articles/metas-facebook-is-done-paying-publishers-for-news-tab-content
       - https://www.fastcompany.com/90963282/meta-was-never-really-the-medias-friend
+    mechanism_478_axios_openai_disclosure_posture:
+      mechanism_id: 478
+      mechanism_name: Axios x OpenAI Disclosure Posture and Deal-Terms Opacity Mapping
+      type: financial_incentive_mapping
+      type_c_focus: Disclosure opacity and confidentiality terms around OpenAI's
+        direct newsroom-funding deal with Axios, extending mechanism 53 Layer 2
+      date_analyzed: '2026-09-02'
+      iteration: 478
+      rotation: Type C
+      time_pdt: '20:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      extends_mechanism: 53
+      extension_scope: Deal-structure mapping lives in mechanism 53
+        triple_layer_journalism_funding layer_2_salary_funding axios. This mechanism
+        maps ONLY the disclosure posture, confidentiality terms, and CEO-stance
+        reversal documented by CJR and Nieman Lab reporting opened first-hand this
+        run. No duplicate deal-structure mapping.
+      finding: OpenAI's first-ever direct newsroom-funding deal (Axios, Jan 2025,
+        three-year term) operates under confidential payment terms with a documented
+        pattern of non-disclosure in the funded outlet's own OpenAI coverage and
+        job listings, plus a CEO stance reversal from public criticism of AI-company
+        publisher payments (Apr 2024) to deal acceptance (Jan 2025).
+      deal_terms_confidentiality:
+        exact_amount_undisclosed: true
+        amount_characterization: '"significant" figure per VandeHei (Nieman Lab)'
+        legal_action_waiver_status_undisclosed: true
+        on_record: Kayla Wood, OpenAI spokesperson - terms are confidential under
+          the agreement (CJR)
+        training_rights: Axios allows OpenAI to train models on Axios free published
+          coverage; Axios staff receive enterprise tool credits (CJR)
+        term_years: 3
+      disclosure_gap:
+        job_listings: OpenAI deal not disclosed in Axios Local job listings
+          advertising salaries $65K-$125K (CJR, as of early Aug 2026)
+        own_coverage: Deal not disclosed in most Axios coverage about OpenAI,
+          disclosed only when coverage explicitly relates to media deals (CJR)
+        rank_and_file_unease: Anonymous Axios staffer cited lack of transparency
+          contributing to unease; Axios Local executive editor Holly Moore
+          acknowledged early questions about letting OpenAI train on stories (CJR)
+      vandehei_stance_reversal:
+        april_2024: '"What I do not like is the welfare-state mentality of companies
+          begging OpenAI and Google for money" - Jim VandeHei to New York Magazine
+          (via Nieman Lab, Jan 2025)'
+        same_quote_continuation: '"I do think these companies, because they are
+          training their machine on all of our collective IP, they probably should
+          pay us something, and I would be happy to take that check."'
+        january_2025: Accepted three-year OpenAI newsroom-funding deal after six
+          months of brainstorming including direct conversations with Sam Altman
+          from late 2023 (Nieman Lab, CJR)
+        interval_months: 9
+      editorial_firewall_posture:
+        deal_text: Deal is silent on the editorial firewall subject (VandeHei to CJR)
+        rationale_given: Both sides took Axios editorial independence as a given
+        vandehei_quote: '"There is an assumption that we are going to write what
+          we write."'
+        conflict_of_interest_test: '"The market will set the relationship" - readers
+          determine whether coverage is biased (VandeHei to CJR)'
+        counter_evidence_noted: CJR notes Axios continued covering damning OpenAI
+          allegations (teen suicide claims, Musk court battle); local reporters in
+          OpenAI-funded cities covered data center fights
+      deepening:
+        second_round: January 2026 - nine additional newsletters added (CJR, Adweek)
+        bankrolled_count_cjr: 13 Axios Local newsletters under three-year deal
+        target: 43 cities by end of 2026 (Press Gazette via CJR)
+        vandehei_ambition: 1000 communities someday
+        phase_2_character: Smaller one-reporter geographies grouped into regional
+          local supersystems (Adweek)
+      structural_context:
+        owner: Cox Enterprises (acquired Aug 2022, reported $525M valuation plus
+          $25M expansion investment, per CJR)
+        pre_deal_layoffs: 10 percent staff cut months before OpenAI deal (NYT via CJR)
+        2026_cuts: 11 more jobs across news desk, visual, social (CJR)
+        union_status: Not unionized (CJR)
+        openai_deal_champion: Chris Lehane, OpenAI chief of global affairs,
+          ex-Clinton White House operative (CJR)
+        vandehei_on_openai_motive: '"They need some wins."'
+        collective_action_critique: Matt Pearce (Rebuild Local News) - direct AI
+          partnerships benefit the outlet but not the systemic problem (CJR)
+      statistical_discipline:
+        correlation_not_causation: true
+        is_significant: false
+        no_tone_scores: true
+        no_p_value: true
+        qualitative_only: true
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: Single-investigative-feature sourcing for the disclosure gap;
+            CJR is one outlet and Axios disputes nothing on record but also confirms
+            little beyond VandeHei quotes
+        - rank: 2
+          strength: strong
+          confounder: Continued adversarial OpenAI coverage by Axios (teen suicide
+            allegations, Musk litigation) bounds any capture claim; disclosure gap
+            does not equal coverage softening
+        - rank: 3
+          strength: moderate
+          confounder: Non-disclosure in job listings may reflect HR-template inertia
+            rather than deliberate opacity
+        - rank: 4
+          strength: weak
+          confounder: VandeHei reversal is consistent with his stated
+            take-the-check position in the same April 2024 quote
+      cross_references:
+        - Mechanism 53 triple_layer_journalism_funding (deal structure, this extends it)
+        - Type B 349 Sara Fischer Axios vocabulary bifurcation (coverage-side
+          companion; this mechanism is the disclosure-side companion)
+      novelty_verification:
+        - Zero mentions of VandeHei anywhere in profiles or tests before this run
+        - Zero mentions of welfare-state quote in repo
+        - Axios disclosure posture in own OpenAI coverage previously unmapped
+        - Distinct from mechanism 53 (structure) and Type B 349 (coverage vocabulary)
+        - Not Microsoft PCM related
+      source_urls:
+        - https://www.cjr.org/feature/axios-wants-to-save-local-news-with-ai-jim-vandehei-tech-newsletters.php
+        - https://www.niemanlab.org/2025/01/openai-will-fund-four-axios-local-newsrooms-as-part-of-a-broader-partnership-focused-on-juicing-local-news/
+        - https://techcrunch.com/2025/01/15/openai-is-bankrolling-axios-expansion-into-four-new-markets/
+        - https://www.adweek.com/media/axios-local-openai-2026/
+        - https://openai.com/index/partnering-with-axios-expands-openai-work-with-the-news-industry/
+      caution: Structural mapping only. Documents disclosure posture and
+        confidentiality, not editorial capture. Axios continued adversarial OpenAI
+        coverage is recorded above and bounds the finding.
     european_ad_expansion_dual_dependency_aug30:
       mechanism_id: 386
       mechanism_name: OpenAI European Ad Expansion Dual Publisher Dependency - Licensing
