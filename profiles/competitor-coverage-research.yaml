@@ -5336,6 +5336,33 @@ cross_publication_findings:
         Unpacked
       standalone_samsung_glasses_articles: 0
     verification_date: '2026-08-13'
+    within_journalist_followup:
+      date: '2026-09-03'
+      type_b_iteration: 488
+      finding: 'Within-journalist cross-entity contrast now documented in Welch''s own
+        byline, tightening mechanism #85 from a between-person comparison to a within-person
+        one. At The Verge (May 1 2025) Welch wrote privacy-adversarial copy about Meta
+        camera glasses in "Meta tightens privacy policy around Ray-Ban glasses to boost
+        AI training" ("giving Meta AI a more frequent view of the world", "Meta is taking
+        after Amazon", "heaps of data"). At Bloomberg (Jul 22 2026) he covered Samsung
+        Galaxy Glasses, camera-equipped glasses whose Gemini AI analyzes the wearer''s
+        camera feed in real time, with neutral-positive framing and privacy as a product
+        attribute, zero adversarial vocabulary. The adversarial privacy register appears
+        in his Verge output and is absent from his Bloomberg output for structurally
+        similar hardware.'
+      corrects: journalists.yaml previously recorded verge_era adversarial_pieces 0
+        for Welch; corrected to 1 with full citation (Type B #488).
+      confounder_update: 'Weakens the MODERATE confounder ("Welch was a product reviewer,
+        not a privacy investigator; he may not have written adversarial privacy pieces
+        even if he stayed at The Verge"). He demonstrably did. New MODERATE confounder
+        added: genre asymmetry, the Verge piece covered a privacy-policy rollback while
+        the Bloomberg piece covered a product launch.'
+      verge_piece_source_urls:
+      - https://www.techmeme.com/250501/p23
+      - https://old.thelemmy.club/comment/18411988?source
+      - http://www.grc.com/sn/sn-1024.htm
+      - https://techcrunch.com/2025/04/30/if-you-own-ray-ban-meta-glasses-you-should-double-check-your-privacy-settings/
+      test_file: tests/test_chris_welch_within_journalist_meta_vs_samsung_privacy_sep03.py
   bloomberg_mark_gurman:
     confounding_factors:
     - 'Apple Glasses genuinely MIGHT be better made — acetate IS a premium material.

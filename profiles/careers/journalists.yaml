@@ -14043,11 +14043,61 @@ journalists:
   competitor_coverage:
     meta_glasses:
       verge_era:
-        adversarial_pieces: 0
-        note: Welch was product reviewer at Verge, NOT privacy investigator. Adversarial Meta glasses coverage was done by Song, Cameron, Mehrotra. His product reviews were neutral/positive.
+        adversarial_pieces: 1
+        flagship_piece:
+          title: Meta tightens privacy policy around Ray-Ban glasses to boost AI training
+          date: '2025-05-01'
+          publication: the-verge
+          author_byline: Chris Welch
+          note: Direct Verge URL not recovered (Verge is JS-heavy; search index did
+            not surface it). Authorship, date, and headline confirmed via Techmeme
+            citation; full text verified via thevergenews mirror and verbatim quotes
+            in the Security Now #1024 transcript.
+          source_urls:
+          - https://www.techmeme.com/250501/p23
+          - https://old.thelemmy.club/comment/18411988?source
+          - http://www.grc.com/sn/sn-1024.htm
+          - https://techcrunch.com/2025/04/30/if-you-own-ray-ban-meta-glasses-you-should-double-check-your-privacy-settings/
+          adversarial_vocabulary:
+          - "giving Meta AI a more frequent view of the world"
+          - "Meta will frequently be analyzing whatever's captured by the built-in camera"
+          - "Meta is taking after Amazon by no longer allowing Ray-Ban Meta owners to opt out"
+          - "The motivation behind these changes is clear: Meta wants to continue providing
+            its AI models with heaps of data on which to train and improve subsequent results"
+          subject: April 29 2025 Ray-Ban Meta privacy policy update (Hey Meta default-on,
+            voice recording cloud storage opt-out removed, 1-year retention)
+        note: 'CORRECTION Sep 3 2026 (Type B #488): Welch DID write privacy-adversarial
+          Meta glasses copy at The Verge himself. Prior note claiming zero adversarial
+          pieces and pure product-reviewer neutrality was incomplete. The adversarial
+          Meta glasses coverage at The Verge was not exclusively Song/Cameron/Mehrotra.'
       bloomberg_era:
         adversarial_pieces: 0
         note: No adversarial Meta glasses coverage at Bloomberg yet. Coverage focus has been Samsung and Sonos.
+    type_b_488_within_journalist_followup:
+      date: '2026-09-03'
+      finding: Within-journalist cross-entity contrast now documented in Welch's own
+        byline. At The Verge (May 1 2025) he wrote privacy-adversarial copy about
+        Meta's camera glasses ("heaps of data", "taking after Amazon", "more frequent
+        view of the world"). At Bloomberg (Jul 22 2026) he covered Samsung Galaxy
+        Glasses, camera-equipped glasses whose Gemini AI analyzes the wearer's camera
+        feed in real time, with neutral-positive framing and privacy as a product
+        attribute ("nine-hour battery life and privacy features"), zero adversarial
+        vocabulary. The adversarial privacy vocabulary appears in his Verge output
+        and is absent from his Bloomberg output for structurally similar hardware.
+      confounder_update: 'Weakens mechanism #85 MODERATE confounder ("Welch was a product
+        reviewer, not a privacy investigator; he may not have written adversarial privacy
+        pieces even if he stayed at The Verge"). He demonstrably did write one. The
+        remaining question is institutional: the same journalist privacy-adversarial
+        register appears under Vox Media and disappears under Bloomberg.'
+      new_confounders:
+      - factor: Genre asymmetry. The Verge piece covered a privacy-policy rollback (removing
+          an opt-out), which is inherently more adversarial-news-shaped than a product
+          launch event (Samsung Unpacked). The framing gap may reflect news genre, not
+          institution.
+        strength: MODERATE
+      - factor: Fourteen-month gap. Welch's personal editorial judgment may have evolved
+          between May 2025 and July 2026 independent of institution.
+        strength: WEAK
     samsung_glasses:
       bloomberg_era:
         articles: 1
