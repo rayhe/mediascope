@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27512 tests across 823 test files (all from real articles)
+├── tests/                       # 27545 tests across 824 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1085,6 +1085,7 @@ mediascope/
 │   ├── test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py  # Type E #480: podcast sentiment sifted sixth vertical - Sep 2 2026 22:00 PDT
 │   ├── test_type_e_486_podcast_sentiment_twentieth_verification_sep03_4am.py  # Type E #486: podcast sentiment twentieth verification - Sep 3 2026 04:00 PDT
 │   ├── test_type_e_491_podcast_sentiment_twentyfirst_verification_sep03_9am.py  # Type E #491: podcast sentiment twenty-first verification - Sep 3 2026 09:00 PDT - 7 classes, 33 tests
+│   ├── test_type_e_496_podcast_sentiment_twentysecond_verification_sep03_2pm.py  # Type E #496: podcast sentiment twenty-second verification - Sep 3 2026 14:00 PDT - 7 classes, 33 tests
 │   ├── test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py  # Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast
 │   ├── test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py  # Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication
 │   ├── test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py  # Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365)
