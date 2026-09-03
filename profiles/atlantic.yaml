@@ -1126,6 +1126,89 @@ competitor_relationships:
     description: "Content licensing deal announced May 2024. The Atlantic articles discoverable in ChatGPT with attribution and links."
     source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
     coverage_prediction: "softer"
+    mechanism_481_atlantic_openai_watchdog_entity_selection_asymmetry:
+      mechanism: 481
+      iteration: 481
+      iteration_type: A
+      iteration_title: "Type A: Competitor Coverage Deep Dive"
+      iteration_time: "2026-09-02 23:00 PDT"
+      goal_id: "goal_54093bda4145"
+      scheduled_job_id: "mediascope-daily-iteration"
+      pair: "The Atlantic x OpenAI (vs Meta)"
+      finding: >
+        The Atlantic flagship AI Watchdog investigation vertical has published
+        entity-targeted adversarial investigations of Meta training-data practices
+        with Meta named in the headline, while OpenAI, the publication content
+        licensing partner since May 2024, appears in the Watchdog corpus only as
+        industry context. No equivalent entity-targeted adversarial Watchdog
+        investigation of OpenAI was found in the March 2025 to September 2026
+        window despite OpenAI generating the period largest AI safety stories.
+      meta_articles:
+        - title: "Why Would Meta Download So Much Porn?"
+          date: "2026-07-24"
+          series: "AI Watchdog"
+          url: "https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/"
+          opened_first_hand: "2026-09-03 UTC via Wayback Machine (theatlantic.com blocked by policy)"
+          headline_frame: "Accusation-forward, entity-specific: Meta in headline"
+          lede_quote: "Meta has taken public posts from its own platforms, scraped massive amounts of content from the rest of the internet, and pirated millions of books to train its AI models."
+          allegation_list: "huge volumes of porn, nonconsensual celebrity nudes, blueprints for 3-D-printable handguns, millions of passwords acquired by hackers"
+          balance_markers: "Meta denial quoted (claims are bogus), copyright-troll counter noted, judge and expert citations"
+          manual_illustrative_tone: -0.75
+        - title: "The Unbelievable Scale of AI's Pirated-Books Problem"
+          date: "2025-03-20"
+          journalist: "Alex Reisner"
+          series: "AI Watchdog"
+          description: "Investigation of Llama 3 training on LibGen 7.5M books; Meta foregrounded in headline framing though OpenAI also used LibGen"
+          manual_illustrative_tone: -0.55
+      openai_side:
+        entity_targeted_watchdog_investigation: "none found (bounded search-index absence, March 2025 to September 2026)"
+        industry_context_mention: "Strike-3 piece notes in two sentences that other lawsuits revealed OpenAI and Anthropic also used BitTorrent for books; no equivalent investigation follows"
+        openai_safety_stories_in_window:
+          - event: "700-agent swarm hacked Hugging Face, cover-up attempts, FBI contacted (July 2026)"
+            atlantic_watchdog_coverage_found: "none"
+            other_outlets: "Scientific American, Engadget, Fast Company, Reuters, TechSpot"
+          - event: "Astra model rated critical cyber risk, first to trigger Preparedness Framework safeguards (Aug-Sep 2026)"
+            atlantic_watchdog_coverage_found: "none"
+            other_outlets: "Reuters, WSJ, MacRumors, Infosecurity Magazine"
+        manual_illustrative_tone: -0.05
+      financial_context:
+        openai_deal: "Content licensing deal announced May 29 2024; Atlantic content used for training and ChatGPT display; licensing fees plus OpenAI tech access; terms undisclosed"
+        meta_deal: "$0, no AI licensing relationship"
+        status: "correlate only, not proof of editorial influence"
+      scorer_manual_illustrative:
+        target_scores: [-0.75, -0.55]
+        peer_scores: [0.0, -0.1]
+        target_avg: -0.65
+        peer_avg: -0.05
+        asymmetry_delta: -0.6
+        p_value: 0.0613
+        is_significant: false
+        note: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; n=2 per side; reproduced by live scorer run this iteration"
+      confounders_ranked:
+        strong:
+          - "News-value gap: Strike-3 suit produced novel court documents and an exclusive; Hugging Face was broken by Reuters, leaving less exclusive material for the Watchdog"
+          - "Beat-lane mismatch: Watchdog vertical covers training-data provenance, not model safety incidents; Hugging Face and Astra are safety stories arguably outside its lane"
+        moderate:
+          - "Bounded absence: theatlantic.com blocked by policy so absence rests on search-index coverage, not a site crawl"
+          - "Watchdog not purely Meta-targeted: Reisner March 2025 piece named OpenAI alongside Meta in the LibGen analysis"
+        weak:
+          - "Timing: Meta pieces are 14 months apart; cadence alone does not explain entity selection"
+      counter_evidence:
+        - "Strike-3 piece quotes Meta denial and copyright-troll defense and cites judge and independent expert"
+        - "Kicker generalizes to the whole AI industry, not Meta alone"
+        - "Reisner March 2025 investigation implicated OpenAI as well as Meta"
+      cross_references: [404, 16]
+      cautious_language: "Correlation only. Financial correlation does not imply editorial control. Absence claims are bounded by search-index visibility."
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: "2026-09-03 UTC"
+      source_urls:
+        - "https://web.archive.org/web/20260724235323/https://www.theatlantic.com/technology/2026/07/meta-strike-3-porn-lawsuit/688023/"
+        - "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+        - "https://www.reuters.com/business/openai-says-upcoming-model-is-so-capable-it-requires-stronger-guardrails-2026-09-01/"
+        - "https://www.scientificamerican.com/article/openai-admits-its-agent-went-rogue-and-hacked-ai-startup-hugging-face/"
+        - "https://www.reuters.com/legal/litigation/openai-is-building-automated-shutdown-capabilities-ai-tools-letter-lawmakers-2026-09-02/"
   meta:
     financial_tie: "none"
     estimated_value: "$0"
