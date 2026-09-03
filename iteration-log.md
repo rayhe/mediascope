@@ -26970,3 +26970,43 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 - OpenAI Future OS Oct 6 2025 https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/ builder empowerment best time in history
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
+
+## Iteration 458 - Thu 2026-09-03 02:00 PT (Type B: Journalist Cross-Entity Tracking)
+
+### Mechanism #458: Brian X. Chen (NYT) Meta vs Apple Privacy Vocabulary Bifurcation
+
+**Finding:** NYT lead consumer tech columnist Brian X. Chen evaluated two camera-equipped
+face computers about seven weeks apart with bifurcated privacy standards:
+
+| Dimension | Meta Ray-Ban glasses (Dec 2023) | Apple Vision Pro (Jan/Feb 2024) |
+|-----------|--------------------------------|---------------------------------|
+| Cameras/sensors | 1x 12MP camera | 12 cameras, LiDAR, eye tracking, Optic ID iris scan |
+| Price | $299 | $3,500 |
+| Privacy experiment | 200 covert photos/videos testing LED indicator | None |
+| Critic interviewed | Chris Gilliard (surveillance critic) | None on privacy |
+| Privacy vocabulary in quotes | 5+ terms | 0 terms |
+| Criticism register | Privacy alarm (LED inadequacy, "spy glasses") | Product utility ("lacks purpose", "impressive but incomplete") |
+| Face-scan discomfort | n/a | Coded as aesthetic uncanny-valley "ick", not biometric consent |
+
+**Why it matters:** The device with roughly 12x the cameras plus iris biometrics
+received none of the privacy scrutiny the same reviewer applied to the single-camera
+device. Timing proximity (7 weeks, same news cycle) strengthens comparability.
+
+**Confounders:** STRONG: Meta's genuine privacy history legitimizes sharper scrutiny.
+MODERATE: column format (Tech Fix explainer vs review), though both are first-person
+hands-on evaluations. WEAK: dek/quote-level analysis only (NYT primary paywalled).
+
+**Relation to #457:** Adrienne So's counter-example showed Gear-desk even-handedness,
+falsifying reviewer-animus as the driver. Chen #458 is consistent: the bifurcation is
+at the privacy-register level, not personal animus, and survives the STRONG confounder
+as a documented article-level asymmetry regardless of cause.
+
+**Sources (secondary-verified, NYT primary paywalled):**
+- https://pxlnv.com/linklog/meta-ray-bans-privacy/
+- https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/
+- https://talk.tidbits.com/t/impressions-and-thoughts-from-early-vision-pro-reviews/26653?page=3
+- https://www.cultofmac.com/news/first-look-apple-vision-pro
+
+**Test file:** `tests/test_type_b_458_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py` - 7 tests, all passing
+**Changes:** `profiles/nytimes.yaml` (+mechanism #458 top-level key, +Brian X. Chen `key_journalists` entry)
+**Cautious language:** correlation not causation; MANUAL ILLUSTRATIVE quote-level counts only; p_value NOT_CALCULATED; is_significant False. Confidence: MEDIUM.

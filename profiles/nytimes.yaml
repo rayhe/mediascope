@@ -2978,6 +2978,59 @@ key_journalists:
         publishers_weekly_review: "https://www.publishersweekly.com/9780062960672"
         palo_alto_online_interview: "https://www.paloaltoonline.com/technology/2021/07/15/meet-the-authors-of-the-book-facebook-is-telling-employees-not-to-read/"
 
+  - name: "Brian X. Chen"
+    beat: "Lead consumer technology columnist (Tech Fix)"
+    known_patterns: "NYT consumer tech columnist for 10+ years. First-person hands-on evaluation style. Wore 12+ face computers over 12 years (Google, Meta, Snap, Samsung, Sony, Apple)."
+    cross_entity_coverage_analysis:
+      mechanism_id: 458
+      iteration: 458
+      iteration_type: "B"
+      date: "2026-09-03"
+      summary: |
+        Brian X. Chen evaluated two camera-equipped face computers about seven
+        weeks apart with sharply bifurcated privacy standards. Meta's Ray-Ban
+        glasses (Dec 2023, one 12MP camera, $299) got a 200-photo covert-capture
+        experiment plus an interview with surveillance critic Chris Gilliard about
+        private-space implications. Apple's Vision Pro (Jan/Feb 2024, 12 cameras,
+        LiDAR, eye tracking, Optic ID iris authentication, $3,500) got zero
+        privacy vocabulary in the quoted review text: Chen's criticisms were
+        product-utility ("lacks purpose", "impressive but incomplete") and his
+        discomfort with face-scan Personas was coded as aesthetic uncanny-valley
+        "ick", not as a biometric consent issue. No surveillance critic was
+        interviewed for the Apple review. The device with roughly 12x the cameras
+        plus iris biometrics received none of the privacy scrutiny applied to the
+        single-camera device.
+      meta_evidence:
+        piece: "NYT Tech Fix column on Ray-Ban Meta smart glasses"
+        date: "Dec 2023"
+        experiment: "Shot 200 photos and videos in public (BART trains, hiking trails, parks) to test whether bystanders notice the LED recording indicator"
+        critic_interviewed: "Chris Gilliard on private-space implications"
+        framing: "Privacy-alarm: LED indicator inadequate, 'spy glasses' mainstreaming concern"
+        verification: "Secondary (NYT primary paywalled): Pixel Envy linklog quoting the column verbatim"
+        source_url: "https://pxlnv.com/linklog/meta-ray-bans-privacy/"
+      apple_evidence:
+        piece1: "Making VR Headsets Cool Won't Be Easy, Even for Apple"
+        piece1_date: "Jan 27 2024"
+        piece2: "NYT Apple Vision Pro review"
+        piece2_date: "Feb 2024"
+        device_sensors: "12 cameras, LiDAR scanner, eye tracking, Optic ID iris authentication"
+        criticism_register: "Product utility only: 'lacks purpose', 'impressive but incomplete first-generation product', 'a computer for people to use alone'"
+        personas_framing: "Face-scan avatar discomfort coded as aesthetic uncanny-valley 'ick', not biometric consent concern"
+        privacy_vocabulary_in_quotes: 0
+        critic_interviewed: "None on privacy"
+        verification: "Secondary (NYT primary paywalled): DNS Africa mirror, TidBITS review roundup, Cult of Mac"
+        source_urls:
+          - "https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/"
+          - "https://talk.tidbits.com/t/impressions-and-thoughts-from-early-vision-pro-reviews/26653?page=3"
+          - "https://www.cultofmac.com/news/first-look-apple-vision-pro"
+      confounders:
+        - "STRONG: Meta's genuine privacy history (Cambridge Analytica et al) gives legitimate basis for sharper Meta scrutiny"
+        - "MODERATE: Column-format difference (Tech Fix explainer vs product review), though both are first-person hands-on evaluations"
+        - "WEAK: Timing proximity (7 weeks) strengthens comparability; both predate NYT AI-licensing deal era"
+        - "WEAK: Dek/quote-level analysis only; full-text tone coding not done (NYT primary paywalled)"
+      cautious_language: "Correlation not causation. MANUAL ILLUSTRATIVE counts from secondary quotes only. No claim of editorial direction."
+      confidence: "MEDIUM"
+
 notable_departures:
   - name: "Nico Grant"
     beat: "Google, Alphabet, AI"
@@ -4454,3 +4507,37 @@ triple_chain_anthropic_incentive:
 
   test_file: "tests/test_nyt_anthropic_triple_chain_incentive_aug10.py"
   test_count: 27
+
+# ===================================================================
+# MECHANISM #458: Brian X. Chen Meta vs Apple Privacy Vocabulary Bifurcation
+# Type B: Journalist Cross-Entity Tracking - Sep 3, 2026 02:00 PT
+# ===================================================================
+brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_458:
+  mechanism_id: 458
+  iteration: 458
+  iteration_type: "B"
+  date: "2026-09-03"
+  journalist: "Brian X. Chen"
+  publication: "nytimes"
+  job_id: "mediascope-daily-iteration"
+  goal_id: "goal_54093bda4145"
+  finding: "Same NYT reviewer applied privacy-alarm framing (200-photo covert-capture experiment + surveillance-critic interview) to Meta's single-camera $299 glasses, and zero privacy vocabulary to Apple's 12-camera + LiDAR + eye-tracking + iris-scan $3,500 Vision Pro seven weeks later."
+  manual_illustrative:
+    meta_privacy_terms_in_quotes: 5
+    apple_privacy_terms_in_quotes: 0
+    note: "Counts from secondary-source quotes only, NOT full-text coding"
+  is_significant: false
+  p_value: "NOT_CALCULATED"
+  cohens_d: "NOT_CALCULATED"
+  ci: "NOT_CALCULATED"
+  confidence: "MEDIUM"
+  sources:
+    - "https://pxlnv.com/linklog/meta-ray-bans-privacy/"
+    - "https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/"
+    - "https://talk.tidbits.com/t/impressions-and-thoughts-from-early-vision-pro-reviews/26653?page=3"
+    - "https://www.cultofmac.com/news/first-look-apple-vision-pro"
+  cross_references:
+    - "mechanism #121 (Fast Company structural ad-competition class: Meta as publisher ad competitor)"
+    - "mechanism #457 (Adrienne So counter-example: Gear-desk even-handedness shows asymmetry is assignment-level, not reviewer animus)"
+    - "profiles/nytimes.yaml key_journalists: Kashmir Hill (premiere privacy reporter, Meta-concentrated investigations)"
+  test_file: "tests/test_type_b_458_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py"
