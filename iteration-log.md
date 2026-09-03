@@ -1,3 +1,26 @@
+#483 Type C: Schibsted Media x OpenAI Real-Time Content Deal (Feb 12 2025) - Terms Opacity and Pre-Existing Entanglement Mapping - Sep 3 2026 01:00 PDT
+
+**Date:** 2026-09-03 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 482 B -> 483 C)
+**Type:** C - Financial Incentive Mapping (Schibsted Media x OpenAI)
+**Mechanism:** #483 Type C - First dedicated Schibsted mechanism in the repo. Schibsted Media (Feb 2025) previously appeared only as a portfolio-list name in publisher_content_deal_portfolio.notable_partners; iteration #478's novelty note explicitly flagged Schibsted as the remaining Type C candidate. Novelty verified per durable rule: grep shows zero dedicated mechanism, zero test coverage; not Microsoft PCM related.
+**Rotation Transparency:** Previous entry #482 Type B at 00:00 PDT Sep 3 2026 (commit 821f234 verified present via git log before this work). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 479 D 21:00, 480 E 22:00, 481 A 23:00, 482 B 00:00. Selected Type C.
+**Findings (both party announcements opened first-hand via browser.open this run):**
+- Deal structure: strategic partnership for REAL-TIME news article integration into ChatGPT (up-to-date news summaries with clear attribution), distinct from archive-only training licenses. Brands named: VG, Aftenposten (Norway), Aftonbladet, Svenska Dagbladet (Sweden), described as "a selection". Both announcements claim 300M ChatGPT users reach. OpenAI counterparty: Varun Shetty, Head of Media Partnerships. Announced Feb 11-12 2025 (Press Gazette tracker: 12 February 2025).
+- Terms opacity: NO financial terms, term length, or exclusivity disclosed in either announcement; Press Gazette tracker lists the deal with no value; ENMNews notes terms and exclusivity undisclosed. Benchmark only: The Information Jan 2024 reporting of 1-5M USD/yr typical OpenAI publisher offers (via Fast Company), predates this deal by a year. Opacity matches the portfolio-wide most_deals_undisclosed flag and Axios #478 pattern; Schibsted is a further instance, not an outlier.
+- What Schibsted receives: additional resources earmarked for newsroom innovation/AI development, OpenAI insights and new technology access, real-time productivity/audience-engagement data.
+- Pre-existing entanglement (bounds sudden-capture readings): ChatGPT enterprise agreement for 1000+ employees with mandatory AI-as-an-Assistant training, GitHub Copilot for all engineers since Jul 2023, CDTO Sven Stormer Thaulow photographed with Sam Altman at the OpenAI Executive Summit in London, Aftonbladet AI chatbot answered 600,000+ reader questions. The content deal deepens an existing enterprise relationship rather than initiating one.
+- Nordic significance: first major Nordic publisher cluster in the 24+ deal portfolio; extends licensed journalism to Norwegian/Swedish-language news.
+**Statistical discipline:** qualitative structural mapping only; correlation_not_causation true; is_significant false; no tone scores; no p_value. No coverage-tone claim; reserved for a future Type A/B.
+**Ranked confounders:** 1 STRONG (both primary sources are party-issued announcements, no independent terms reporting); 2 MODERATE (enterprise relationship predates content deal, consistent with organic deepening); 3 MODERATE (no Schibsted coverage-tone analysis exists yet); 4 WEAK (1-5M benchmark band is Jan 2024 reporting on earlier vintages).
+**New Type C file:** `tests/test_type_c_483_schibsted_openai_realtime_deal_sep03_1am.py` - 17 tests, all passing.
+**Profile update:** `profiles/competitor-entities.yaml` gained `mechanism_483_schibsted_openai_realtime_content_deal` as sibling of `triple_layer_journalism_funding` under `entities.openai` (all-ASCII, YAML-parsed; two self-caught authoring bugs fixed: quoted phrase at continuation-line start, and `#` starting a YAML comment mid-scalar).
+**Verification runs (venv pytest, -p no:cacheprovider):** new #483 file: 17 passed, 0 failed. `scripts/count_stats.py --check`: passes after README sync (27209 tests across 811 files; #482 had not updated README, so this run synced both deltas: +31 tests/+1 file from #482, +17 tests/+1 file from #483).
+**Confidence:** HIGH - every factual claim rests on the two party announcements opened and read first-hand this run plus the Press Gazette tracker; causality fenced as correlation-only with the leading counter-evidence (pre-existing entanglement bounds capture readings) recorded in-profile.
+**Artifact readiness:** No analysis.json update warranted. Type C structural mapping defines no new asymmetry tone data.
+**Cumulative:** mechanism #483 logged, 27,209 tests, 811 files
+
+---
+
 #482 Type B: NYT Karen Weise Amazon vs Microsoft Headline-Verb Asymmetry - Deception-Framed Enforcement vs Access-Soft Gates Platform Sep 3 2026 00:00 PDT
 
 **Date:** 2026-09-03 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation B after 481 A)

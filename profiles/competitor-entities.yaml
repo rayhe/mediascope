@@ -1007,6 +1007,114 @@ entities:
       caution: Structural mapping only. Documents disclosure posture and
         confidentiality, not editorial capture. Axios continued adversarial OpenAI
         coverage is recorded above and bounds the finding.
+    mechanism_483_schibsted_openai_realtime_content_deal:
+      mechanism_id: 483
+      mechanism_name: Schibsted Media x OpenAI Real-Time Content Deal and Terms Opacity Mapping
+      type: financial_incentive_mapping
+      type_c_focus: Deal structure, payment-terms opacity, and pre-existing entanglement
+        of the February 2025 Schibsted Media x OpenAI strategic partnership, the
+        first Nordic publisher cluster in OpenAI's 24+ deal portfolio. Extends the
+        portfolio listing only; no prior dedicated mechanism exists.
+      date_analyzed: '2026-09-03'
+      iteration: 483
+      rotation: Type C
+      time_pdt: '01:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      announcement_date: '2025-02-12'
+      deal_structure:
+        form: strategic partnership for real-time news integration into ChatGPT
+        content_scope: real-time news articles from a selection of Schibsted Media brands,
+          used to deliver up-to-date news summaries with clear attribution
+        brands_named:
+        - VG (Norway)
+        - Aftenposten (Norway)
+        - Aftonbladet (Sweden)
+        - Svenska Dagbladet (Sweden)
+        reach_claim: ChatGPT 300 million users (stated in both announcements)
+        integration_model: live product surfaces (news summaries with attribution),
+          distinct from archive-only training-data licenses
+        openai_counterparty: Varun Shetty, Head of Media Partnerships at OpenAI
+        schibsted_counterparty: Siv Juvik Tveitnes, CEO of Schibsted Media
+      what_schibsted_receives:
+        - additional resources earmarked for innovation and AI development in newsrooms
+        - access to OpenAI insights and new technology
+        - real-time data insights on productivity gains and audience engagement
+      deal_terms_opacity:
+        exact_amount_undisclosed: true
+        term_length_undisclosed: true
+        exclusivity_window_undisclosed: true
+        evidence: neither the Schibsted nor the OpenAI announcement states any payment
+          amount, term length, or exclusivity terms; Press Gazette deal tracker lists
+          the deal with no value
+        benchmark_band: The Information January 2024 reporting that OpenAI offered
+          publishers annual deals in the 1 to 5 million USD range (via Fast Company);
+          indicative only, predates this deal by a year and covers earlier deal vintages
+        opacity_pattern: matches Axios mechanism 478 (confidential terms) and the portfolio-wide
+          most_deals_undisclosed flag; Schibsted is a further instance, not an outlier
+      pre_existing_entanglement:
+        - ChatGPT enterprise agreement covering 1000+ Schibsted employees with a
+          mandatory AI-as-an-Assistant training program
+        - GitHub Copilot available to all software engineers since July 2023
+        - CDTO Sven Stormer Thaulow photographed with Sam Altman at the OpenAI
+          Executive Summit in London (schibsted.com)
+        - Aftonbladet AI chatbot answered 600,000+ reader questions on the US
+          presidential election; AI text-to-speech and text-to-video already in production
+        - content deal deepens an existing enterprise relationship rather than initiating
+          one; this bounds sudden-capture readings
+      nordic_significance:
+        - first major Nordic publisher cluster in the OpenAI portfolio
+        - extends licensed-journalism coverage to Norwegian and Swedish language news
+        - Schibsted Media titles (VG, Aftenposten) are among Europe's largest
+          digital news brands by reach
+      mediascope_relevance: Schibsted titles are major European tech-press outlets
+        covering Meta wearables and AI policy. This mechanism maps the financial
+        relationship only; any coverage-tone analysis is reserved for a future
+        Type A or Type B iteration.
+      statistical_discipline:
+        correlation_not_causation: true
+        is_significant: false
+        tone_scores: none
+        p_value: NOT_CALCULATED
+        scope: qualitative structural mapping only
+      ranked_confounders:
+        - rank: 1
+          strength: strong
+          confounder: Both primary sources are party-issued announcements (Schibsted
+            and OpenAI); no independent reporting on terms was found
+        - rank: 2
+          strength: moderate
+          confounder: Enterprise and tooling relationship predates the content deal,
+            consistent with organic deepening rather than a sudden financial inducement
+        - rank: 3
+          strength: moderate
+          confounder: No Schibsted coverage-tone analysis exists yet, so no
+            coverage effect can be asserted from this mechanism alone
+        - rank: 4
+          strength: weak
+          confounder: The 1 to 5 million USD benchmark band is January 2024 reporting
+            on earlier deal vintages and may not apply to 2025 real-time integrations
+      cross_references:
+        - publisher_content_deal_portfolio notable_partners (this mechanism extends
+          the Schibsted Media Feb 2025 listing)
+        - Mechanism 478 Axios disclosure opacity (terms-confidentiality companion)
+        - Mechanism 473 Future plc OpenAI partnership (same portfolio-mapping pattern)
+        - Mechanism 468 Reach plc Amazon deal (Amazon-side portfolio companion)
+      novelty_verification:
+        - Schibsted appears in profiles and tests only as a portfolio-list name
+          before this run; zero dedicated mechanism (grep verified)
+        - Iteration 478 novelty note explicitly flagged Schibsted as the remaining
+          candidate for a future Type C
+        - Not Microsoft PCM related
+      source_urls:
+        - https://schibsted.com/news/schibsted-media-partners-with-openai/
+        - https://openai.com/index/openai-partners-with-schibsted-media-group
+        - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+        - https://www.FASTCOMPANY.COM/91116001/financial-times-openai-licensing-deal
+        - https://enmnews.com/2026/07/07/openai-taps-major-european-media-house-chatgpt-news-feed
+        - https://schibsted.com/news/how-schibsted-sets-up-its-employees-for-ai-success/
+      caution: Structural mapping only. Documents deal structure, terms opacity, and
+        prior entanglement, not editorial capture. No coverage-tone claim is made.
     european_ad_expansion_dual_dependency_aug30:
       mechanism_id: 386
       mechanism_name: OpenAI European Ad Expansion Dual Publisher Dependency - Licensing
