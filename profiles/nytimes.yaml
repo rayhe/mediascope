@@ -2982,8 +2982,8 @@ key_journalists:
     beat: "Lead consumer technology columnist (Tech Fix)"
     known_patterns: "NYT consumer tech columnist for 10+ years. First-person hands-on evaluation style. Wore 12+ face computers over 12 years (Google, Meta, Snap, Samsung, Sony, Apple)."
     cross_entity_coverage_analysis:
-      mechanism_id: 458
-      iteration: 458
+      mechanism_id: 484
+      iteration: 484
       iteration_type: "B"
       date: "2026-09-03"
       summary: |
@@ -4509,12 +4509,12 @@ triple_chain_anthropic_incentive:
   test_count: 27
 
 # ===================================================================
-# MECHANISM #458: Brian X. Chen Meta vs Apple Privacy Vocabulary Bifurcation
+# MECHANISM #484: Brian X. Chen Meta vs Apple Privacy Vocabulary Bifurcation
 # Type B: Journalist Cross-Entity Tracking - Sep 3, 2026 02:00 PT
 # ===================================================================
-brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_458:
-  mechanism_id: 458
-  iteration: 458
+brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_484:
+  mechanism_id: 484
+  iteration: 484
   iteration_type: "B"
   date: "2026-09-03"
   journalist: "Brian X. Chen"
@@ -4540,4 +4540,4 @@ brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_458:
     - "mechanism #121 (Fast Company structural ad-competition class: Meta as publisher ad competitor)"
     - "mechanism #457 (Adrienne So counter-example: Gear-desk even-handedness shows asymmetry is assignment-level, not reviewer animus)"
     - "profiles/nytimes.yaml key_journalists: Kashmir Hill (premiere privacy reporter, Meta-concentrated investigations)"
-  test_file: "tests/test_type_b_458_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py"
+  test_file: "tests/test_type_b_484_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py"

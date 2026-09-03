@@ -1,3 +1,46 @@
+#485 Type D: Test and Verify - Mechanism-Number Collision Repair (458 -> 484) and 480-484 Window Persistence - Sep 3 2026 03:00 PDT
+
+**Date:** 2026-09-03 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 483 C -> 485 D)
+**Type:** D - Test and Verify (Collision Repair / Window Persistence / README Sync)
+**Mechanism:** #485 Type D - Type D defines no data mechanism; it repairs the machinery other types rely on. Three workstreams: (1) collision repair - the 02:00 PDT Sep 3 run committed its Type B Brian X. Chen finding as mechanism #458, colliding with the pre-existing #458 (Type C Fox Corp DARK PUBLIC, Sep 2 2026 00:00 PDT, committed first as 25a78a1 and referenced by #459's persistence guard). Renumbered the Chen mechanism to #484, the chronological successor of #483: test file renamed via git mv with all 15 in-file 458 refs moved to 484 (cross-refs to #457/#121 verified intact by assertion, not by eye); `profiles/nytimes.yaml` top-level anchor and `key_journalists` Brian X. Chen entry both moved to `mechanism_id: 484` / `iteration: 484` (YAML re-parsed after edit); the non-standard bottom-appended "## Iteration 458" log entry removed and replaced with a standard newest-first #484 entry at file top. Fox #458 verified untouched and sole owner of 458 across both YAML stores. (2) window persistence - regression guard extended to the 480-484 window: test files, iteration-log headings, and YAML anchors for #480 podcast-sentiment, #481 atlantic.yaml, #482 nytimes.yaml, #483 competitor-entities.yaml, #484 nytimes.yaml all asserted present; newest-first ordering 485 > 484 > 483 asserted. (3) README sync - added the missing table rows for #483 (17 tests; the #483 run synced header counts but not the table row, the same class of gap #479 repaired for #470-478), #484 (renamed Chen file, 7 tests), and #485.
+**Rotation Transparency:** Previous entry #483 Type C at 01:00 PDT Sep 3 2026 (commit cd8d86e verified present and pushed before this work; `git status -sb` shows main in sync with origin/main). Per rotation A->B->C->D->E, next after C is D. The intervening 02:00 run executed Type B off-rotation (documented in the #484 entry, finding preserved); this run absorbs the missed D slot. Cycle verified: 481 A 23:00, 482 B 00:00, 483 C 01:00, [484 B 02:00 off-rotation], 485 D 03:00. Selected Type D.
+**Novelty Verification (per AGENTS.md durable rule):** No existing test file references mechanism 484; no existing test asserts cross-store mechanism_id uniqueness for 458/484; the 480-484 window guard is new (prior guards covered 470-473 in #474 and 475-478 in #479). Not Microsoft PCM related.
+**Self-caught authoring bug (extends #479/#480 lesson):** the first renumber script asserted 13 `\b458\b` regex matches in the Chen test file but found 8, because `_458` (underscore-adjacent) has no word boundary. The assert fired AFTER `git mv` had already succeeded, so the re-run had to skip the move. Fixed by grepping the exact 15 lines containing "458", verifying none were cross-ref lines, and replacing the plain substring. Durable extension: never assert a regex count on identifier-adjacent numbers; grep the literal lines first and check cross-ref collisions explicitly.
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- Renamed #484 file + Fox #458 file: 25 passed, 0 failed (7 + 18)
+- New #485 file: 30 passed, 0 failed (post-log-entry run; rotation-log assertions resolved by writing this entry)
+- Structural consistency (tests/test_structural_consistency.py): 124 passed, 0 failed (after fixing 4 doc-sync failures same run: ARCHITECTURE tree missing #480/#481/#483/#484/#485 rows, ARCHITECTURE header stale at 27106/807, README header stale at 27209/811, README per-file counts stale for #480 40->38 and #485 29->30)
+- `scripts/count_stats.py --check` via .venv python (per #479 lesson): authoritative pytest-collected counts, README synced
+**Statistical discipline:** correlation_not_causation applies to the repair itself: this iteration asserts metadata and numbering integrity, not the truth of any asymmetry claim. No tone scores, no p_value, no significance claimed.
+**Confounders Ranked:** STRONG: the 02:00 run's finding substance is preserved as-authored; only numbering, placement, and log format were changed, so any error in the underlying Chen analysis is inherited, not introduced. MODERATE: off-rotation slot means the D cadence skipped one hour; absorbed, not backfilled. WEAK: single-slot observation.
+**Confidence:** HIGH - every renamed anchor re-parsed from YAML, both colliding test files green post-repair, uniqueness asserted by count not by eye.
+**Artifact readiness:** No analysis.json update warranted. Type D defines no data mechanism.
+**New Type D file:** `tests/test_type_d_485_collision_repair_and_window_persistence_sep03_3am.py` - 30 tests.
+**Cumulative:** mechanism #485 logged.
+
+---
+
+#484 Type B: Brian X. Chen (NYT) Meta vs Apple Privacy Vocabulary Bifurcation - Sep 3 2026 02:00 PDT (renumbered 458 -> 484 by #485)
+
+**Date:** 2026-09-03 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145); renumber repair applied 2026-09-03 03:00 PDT inside Type D iteration #485
+**Type:** B - Journalist Cross-Entity Tracking (NYT Brian X. Chen)
+**Mechanism:** #484 Type B - Within-journalist privacy-standard bifurcation. NYT lead consumer tech columnist Brian X. Chen evaluated two camera-equipped face computers about seven weeks apart with sharply different privacy registers. Meta Ray-Ban glasses (Dec 2023, 1x 12MP camera, $299): 200-photo/video covert-capture experiment testing the LED indicator plus an interview with surveillance critic Chris Gilliard on private-space implications; privacy-alarm framing ("spy glasses" mainstreaming concern in secondary coverage). Apple Vision Pro (Jan/Feb 2024, 12 cameras, LiDAR, eye tracking, Optic ID iris authentication, $3,500): zero privacy vocabulary in quoted review text; criticism confined to product utility ("lacks purpose", "impressive but incomplete"); face-scan Persona discomfort coded as aesthetic uncanny-valley "ick", not biometric consent; no surveillance critic interviewed. The device with roughly 12x the cameras plus iris biometrics received none of the privacy scrutiny the same reviewer applied to the single-camera device. Timing proximity (7 weeks, same news cycle) strengthens comparability.
+**Rotation Transparency:** The 02:00 PDT run executed Type B while the rotation (481 A 23:00, 482 B 00:00, 483 C 01:00) called for Type D next after C. Rotation anomaly documented, not repaired: the finding itself is valid Type B work, only the slot was off-rotation. This #485 Type D run absorbed the missed D slot.
+**Renumber Repair (by #485, reason: mechanism-number collision):** The 02:00 run numbered this mechanism #458, colliding with the existing #458 (Type C Fox Corp DARK PUBLIC, Sep 2 2026 00:00 PDT, committed first and referenced by #459's persistence guard). Two mechanisms sharing one number breaks the repo's unique-sequential-numbering invariant. Repaired: test file renamed to `tests/test_type_b_484_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py` (all 15 in-file 458 refs to 484; cross-refs to #457/#121 verified intact); `profiles/nytimes.yaml` anchor renamed to `brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_484` with `mechanism_id: 484` / `iteration: 484` in both the top-level block and the `key_journalists` Brian X. Chen entry (YAML re-parsed after edit); this log entry rewritten in standard newest-first format at file top, replacing the non-standard bottom-appended "## Iteration 458" entry (which also used a divergent heading format).
+**Confounders (from 02:00 run, preserved):** STRONG: Meta's genuine privacy history (Cambridge Analytica et al) gives legitimate basis for sharper Meta scrutiny. MODERATE: column-format difference (Tech Fix explainer vs product review), though both are first-person hands-on evaluations. WEAK: dek/quote-level analysis only (NYT primary paywalled); timing proximity strengthens comparability.
+**Relation to #457:** Adrienne So's counter-example showed Gear-desk even-handedness, falsifying reviewer-animus as the driver. Chen #484 is consistent: the bifurcation is at the privacy-register level, not personal animus, and survives the STRONG confounder as a documented article-level asymmetry regardless of cause.
+**Sources (secondary-verified, NYT primary paywalled):**
+- https://pxlnv.com/linklog/meta-ray-bans-privacy/
+- https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/
+- https://talk.tidbits.com/t/impressions-and-thoughts-from-early-vision-pro-reviews/26653?page=3
+- https://www.cultofmac.com/news/first-look-apple-vision-pro
+**Statistical discipline:** correlation_not_causation; MANUAL ILLUSTRATIVE quote-level counts only (Meta 5+, Apple 0); p_value NOT_CALCULATED; is_significant False. Confidence: MEDIUM (quotes confirmed across 4 independent secondary sources).
+**Test file:** `tests/test_type_b_484_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py` - 7 tests, all passing (re-verified post-renumber by #485 alongside Fox #458: 25 passed, 0 failed)
+**Profile updates:** `profiles/nytimes.yaml` (top-level mechanism block + `key_journalists` Brian X. Chen entry)
+**Artifact readiness:** No analysis.json update warranted. Single-journalist illustrative finding with significant=false defines no new artifact-grade tone data.
+
+---
+
 #483 Type C: Schibsted Media x OpenAI Real-Time Content Deal (Feb 12 2025) - Terms Opacity and Pre-Existing Entanglement Mapping - Sep 3 2026 01:00 PDT
 
 **Date:** 2026-09-03 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 482 B -> 483 C)
@@ -26970,43 +27013,3 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 - OpenAI Future OS Oct 6 2025 https://www.wired.com/story/openai-dev-day-sam-altman-chatgpt-apps/ builder empowerment best time in history
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
-
-## Iteration 458 - Thu 2026-09-03 02:00 PT (Type B: Journalist Cross-Entity Tracking)
-
-### Mechanism #458: Brian X. Chen (NYT) Meta vs Apple Privacy Vocabulary Bifurcation
-
-**Finding:** NYT lead consumer tech columnist Brian X. Chen evaluated two camera-equipped
-face computers about seven weeks apart with bifurcated privacy standards:
-
-| Dimension | Meta Ray-Ban glasses (Dec 2023) | Apple Vision Pro (Jan/Feb 2024) |
-|-----------|--------------------------------|---------------------------------|
-| Cameras/sensors | 1x 12MP camera | 12 cameras, LiDAR, eye tracking, Optic ID iris scan |
-| Price | $299 | $3,500 |
-| Privacy experiment | 200 covert photos/videos testing LED indicator | None |
-| Critic interviewed | Chris Gilliard (surveillance critic) | None on privacy |
-| Privacy vocabulary in quotes | 5+ terms | 0 terms |
-| Criticism register | Privacy alarm (LED inadequacy, "spy glasses") | Product utility ("lacks purpose", "impressive but incomplete") |
-| Face-scan discomfort | n/a | Coded as aesthetic uncanny-valley "ick", not biometric consent |
-
-**Why it matters:** The device with roughly 12x the cameras plus iris biometrics
-received none of the privacy scrutiny the same reviewer applied to the single-camera
-device. Timing proximity (7 weeks, same news cycle) strengthens comparability.
-
-**Confounders:** STRONG: Meta's genuine privacy history legitimizes sharper scrutiny.
-MODERATE: column format (Tech Fix explainer vs review), though both are first-person
-hands-on evaluations. WEAK: dek/quote-level analysis only (NYT primary paywalled).
-
-**Relation to #457:** Adrienne So's counter-example showed Gear-desk even-handedness,
-falsifying reviewer-animus as the driver. Chen #458 is consistent: the bifurcation is
-at the privacy-register level, not personal animus, and survives the STRONG confounder
-as a documented article-level asymmetry regardless of cause.
-
-**Sources (secondary-verified, NYT primary paywalled):**
-- https://pxlnv.com/linklog/meta-ray-bans-privacy/
-- https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/
-- https://talk.tidbits.com/t/impressions-and-thoughts-from-early-vision-pro-reviews/26653?page=3
-- https://www.cultofmac.com/news/first-look-apple-vision-pro
-
-**Test file:** `tests/test_type_b_458_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py` - 7 tests, all passing
-**Changes:** `profiles/nytimes.yaml` (+mechanism #458 top-level key, +Brian X. Chen `key_journalists` entry)
-**Cautious language:** correlation not causation; MANUAL ILLUSTRATIVE quote-level counts only; p_value NOT_CALCULATED; is_significant False. Confidence: MEDIUM.

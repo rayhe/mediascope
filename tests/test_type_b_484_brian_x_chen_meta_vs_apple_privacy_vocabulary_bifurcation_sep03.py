@@ -1,8 +1,8 @@
 """
-Type B #458 - Brian X. Chen Meta vs Apple Privacy Vocabulary Bifurcation
+Type B #484 - Brian X. Chen Meta vs Apple Privacy Vocabulary Bifurcation
 Sep 3 2026 02:00 PDT - scheduled job_id mediascope-daily-iteration goal_54093bda4145 rotation A->B
 
-Mechanism #458 documents a within-journalist privacy-standard bifurcation at the
+Mechanism #484 documents a within-journalist privacy-standard bifurcation at the
 NYT: lead consumer tech columnist Brian X. Chen evaluated two camera-equipped
 face computers about seven weeks apart with sharply different privacy registers.
 
@@ -30,7 +30,7 @@ none of the privacy scrutiny the same reviewer applied to the single-camera
 device (MANUAL ILLUSTRATIVE quote-level counts: Meta 5+, Apple 0).
 
 Novelty checks:
-- grep nytimes.yaml brian_x_chen -> 458 only (no prior Chen mechanism)
+- grep nytimes.yaml brian_x_chen -> 484 only (no prior Chen mechanism)
 - grep tests/ brian_x_chen -> no prior test file
 - distinct journalist from all prior Type B entries (457 Adrienne So, 452 Simon
   Hill, 447/442/436/431 earlier)
@@ -52,13 +52,13 @@ done.
 Confidence: MEDIUM - quotes confirmed across 4 independent secondary sources;
 timing proximity (7 weeks) strengthens comparability.
 
-Goal and job IDs: goal_54093bda4145 mediascope-daily-iteration iteration 458 Type B 2026-09-03 02:00 PDT
+Goal and job IDs: goal_54093bda4145 mediascope-daily-iteration iteration 484 Type B 2026-09-03 02:00 PDT
 """
 
 import yaml
 from pathlib import Path
 
-MECH_KEY = "brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_458"
+MECH_KEY = "brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_484"
 SOURCES = [
     "https://pxlnv.com/linklog/meta-ray-bans-privacy/",
     "https://www.resource.dnsafrica.org/2024/01/27/making-vr-headsets-cool-wont-be-easy-even-for-apple-the-new-york-times/",
@@ -71,12 +71,12 @@ def _nyt():
     return yaml.safe_load(Path("profiles/nytimes.yaml").read_text())
 
 
-def test_mechanism_458_exists_in_nyt_yaml():
+def test_mechanism_484_exists_in_nyt_yaml():
     d = _nyt()
-    assert MECH_KEY in d, "mechanism 458 top-level key must exist"
+    assert MECH_KEY in d, "mechanism 484 top-level key must exist"
     m = d[MECH_KEY]
-    assert m["mechanism_id"] == 458
-    assert m["iteration"] == 458
+    assert m["mechanism_id"] == 484
+    assert m["iteration"] == 484
     assert m["iteration_type"] == "B"
     assert m["journalist"] == "Brian X. Chen"
 
@@ -87,12 +87,12 @@ def test_brian_x_chen_journalist_entry_exists():
     assert "Brian X. Chen" in names
     entry = next(j for j in d["key_journalists"] if j.get("name") == "Brian X. Chen")
     cca = entry["cross_entity_coverage_analysis"]
-    assert cca["mechanism_id"] == 458
+    assert cca["mechanism_id"] == 484
     assert "Gilliard" in cca["summary"]
     assert "200" in cca["summary"]
 
 
-def test_mechanism_458_meta_evidence():
+def test_mechanism_484_meta_evidence():
     m = _nyt()[MECH_KEY]
     assert m["manual_illustrative"]["meta_privacy_terms_in_quotes"] >= 5
     assert m["manual_illustrative"]["apple_privacy_terms_in_quotes"] == 0
@@ -100,13 +100,13 @@ def test_mechanism_458_meta_evidence():
     assert m["p_value"] == "NOT_CALCULATED"
 
 
-def test_mechanism_458_sources_present():
+def test_mechanism_484_sources_present():
     m = _nyt()[MECH_KEY]
     for s in SOURCES:
         assert s in m["sources"], f"missing source {s}"
 
 
-def test_mechanism_458_confounder_documented():
+def test_mechanism_484_confounder_documented():
     d = _nyt()
     entry = next(j for j in d["key_journalists"] if j.get("name") == "Brian X. Chen")
     confounders = entry["cross_entity_coverage_analysis"]["confounders"]
@@ -114,7 +114,7 @@ def test_mechanism_458_confounder_documented():
     assert any("Cambridge" in c or "privacy history" in c for c in confounders)
 
 
-def test_mechanism_458_cautious_language():
+def test_mechanism_484_cautious_language():
     m = _nyt()[MECH_KEY]
     assert m["cohens_d"] == "NOT_CALCULATED"
     assert m["ci"] == "NOT_CALCULATED"
@@ -125,7 +125,7 @@ def test_mechanism_458_cautious_language():
     assert "Correlation not causation" in cl
 
 
-def test_mechanism_458_cross_references():
+def test_mechanism_484_cross_references():
     m = _nyt()[MECH_KEY]
     refs = " ".join(m["cross_references"])
     assert "457" in refs
