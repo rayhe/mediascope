@@ -1385,6 +1385,72 @@ key_journalists:
   - name: "Karen Hao"
     beat: "AI (former, departed 2022 for The Atlantic)"
     known_patterns: "Highly adversarial AI beat. Wrote landmark 'How Facebook got addicted to spreading misinformation' (2021) based on internal Meta AI ethics investigation. Departure is key test case for individual-vs-institutional bias."
+  - name: "Grace Huckins"
+    beat: "AI"
+    known_patterns: "AI reporter, SF-based. Stanford PhD neuroscience and philosophy; Rhodes Scholar (Oxford). Nine Dots Prize 2024/25 winner. National Academies Eric and Wendy Schmidt Award for Excellence in Science Communications 2024. Previously wrote for Wired, Scientific American, Slate. MIT TR Roundtables participant with Mat Honan and Will Douglas Heaven."
+    cross_entity_coverage_analysis:
+      mechanism_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02:
+        mechanism_id: 477
+        iteration: 477
+        iteration_type: "B"
+        iteration_time: "2026-09-02 19:00 PDT"
+        scheduled_job_id: "mediascope-daily-iteration"
+        goal_id: "goal_54093bda4145"
+        discovery_date: "2026-09-02"
+        journalist: "Grace Huckins"
+        publication_focus: "MIT Technology Review (AI reporter)"
+        type: "B - Journalist Cross-Entity Tracking (MIT TR x Grace Huckins, mixed driver class)"
+        driver_class: "MIXED: beat/institutional with event gravity as leading explanation. MIT financial nexus is two-sided (Google: MIT-Google Program plus Schmidt Intelligence Quest funding; Meta: FAIR funding per #476), so cooperative-conflict logic cannot cleanly attribute the register delta. Bounds the financial-incentive theory rather than confirming it."
+        status: "BASELINE-plus-discipline-check: same-journalist fortnight pair shows asymmetric accountability machinery across entities; not a completed asymmetry finding."
+        finding_summary: "Same journalist, same AI beat, 14 days apart. Huckins 2026-05-22 Google I/O piece ('Google I/O showed how the path for AI-driven science is shifting', opened via browser.open this run) applies skepticism to Hassabis singularity rhetoric but pairs it with extensive credit (WeatherNext 'enormous and meaningful achievement', AlphaFold Nobel, 3M researchers, Isomorphic Labs $2B) and quotes Google leadership at length (Hassabis, Kohli) plus an enthusiastic third party (Peltz). Her 2026-06-05 Meta piece ('The Meta hack shows there's more to AI security than Mythos'; full repo analysis in examples/sample_output with primary-source access) deploys heavier accountability machinery: title-level juxtaposition as competence deflation, 'practically mindless'/'simple'/'unsophisticated' repetition, 4/4 experts critical with zero defenders, double 'did not respond to request for comment' refusal amplification, and an expert-warning kicker ('I think it's a very dangerous thing'). Huckins is not soft on Google: she plainly states Google took 'a reputational hit because its coding tools don't currently stand up to those offered by Anthropic and OpenAI'. The asymmetry is in enforcement machinery, not in whether criticism occurs. Interpretation: journalist-level discipline is real but event-contingent; the naive financial prediction (MIT-Google money predicts softer Google coverage) is not cleanly testable here because Meta also funds MIT via FAIR."
+        fortnight_pair:
+          google_headline: "Google I/O showed how the path for AI-driven science is shifting"
+          google_date: "2026-05-22"
+          google_url: "https://www.technologyreview.com/2026/05/22/1137813/"
+          google_access: "Full text opened via browser.open 2026-09-02"
+          meta_headline: "The Meta hack shows there's more to AI security than Mythos"
+          meta_date: "2026-06-05"
+          meta_url: "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/"
+          meta_access: "Full text accessed directly from technologyreview.com; deep analysis in examples/sample_output/mit_tech_review_meta_ai_agent_instagram_hack_2026_06_05_analysis.md"
+          window_days: 14
+        google_register_markers:
+          - "Rhetoric deflation without alarm: Hassabis 'foothills of the singularity' met with 'hardly evidence of an impending singularity'; analytical, no alarm vocabulary"
+          - "Extensive credit ledger: WeatherNext 'enormous and meaningful achievement', AlphaFold Nobel Prize, 3M researchers using AlphaFold predictions, Isomorphic Labs $2B Series B"
+          - "Company voices quoted at length: Hassabis (I/O keynote plus Daedalus interview), Pushmeet Kohli (Google Cloud chief scientist); enthusiastic third party Gary Peltz ('consulting the oracle of Delphi')"
+          - "One genuine competitive criticism, plainly stated: 'reputational hit because its coding tools don't currently stand up to those offered by Anthropic and OpenAI' (John Jumper reassignment, via LA Times)"
+          - "Zero refusal-amplification, zero expert pile-on, zero alarm kicker"
+        meta_register_markers:
+          - "Title juxtaposition as competence deflation: 'The Meta hack' vs Mythos, the restricted frontier model"
+          - "Simplicity emphasis as editorial weapon: 'practically mindless', 'simple'/'simply', 'unsophisticated', 'far simpler'"
+          - "Expert-outsourced judgment: 4/4 experts critical (Gong, Ji, Jha, Li), zero defenders, zero deployment-context experts"
+          - "Refusal amplification: 'has not commented publicly' plus 'did not respond to a request for comment' in the same piece"
+          - "Expert-warning kicker: 'I think it's a very dangerous thing' as closing impression"
+          - "Conditional editorial judgment: 'As embarrassing a moment as this might be for Meta'"
+        register_delta_prose: "Both pieces deflate corporate rhetoric. The Google piece deflates a claim (singularity) while crediting products; the Meta piece deflates competence while withholding credit. Enforcement machinery (expert selection, refusal framing, kicker) is markedly heavier on the Meta side. No numeric tone delta is claimed."
+        financial_context: "MIT-Google Program is a named bilateral partnership ('relevance to Google' funding language, per #476); Eric Schmidt personally funds MIT's AI initiative (Intelligence Quest). Huckins herself won a Schmidt-funded National Academies science communication award in 2024. Counterweight: Meta also funds MIT via FAIR (per #476), so the cooperative-conflict channel exists on both sides and cannot cleanly explain the delta. No causal claim is made."
+        scorer_note: "MANUAL ILLUSTRATIVE qualitative only per Aug 28 rule. No tone arrays constructed and no numeric delta computed; significant=false, p_value NOT_CALCULATED, cohens_d NOT_CALCULATED. This mechanism is qualitative."
+        ranked_confounders:
+          strong:
+            - "Event gravity differs genuinely: a real account-takeover exploit via Meta's support agent (victims including high-profile Instagram accounts) versus a keynote strategy analysis. Different news values justify different accountability intensity."
+            - "Genre difference: incident-driven accountability reporting versus conference dispatch and analysis. The machinery of the former is inherently adversarial."
+          moderate:
+            - "Two-sided financial nexus: MIT takes money from Google (bilateral program, Schmidt IQ fund) and from Meta (FAIR). Cooperative-conflict logic applies to both sides, so the delta cannot be attributed to Google-side money."
+            - "Single pair: one fortnight pair from one journalist; a longer Huckins time series across entities is needed before generalizing."
+          weak:
+            - "Award-funding chain: Huckins won a Schmidt-funded communication award, but the award predates and is independent of MIT TR editorial; included for completeness, not as evidence."
+        cross_references:
+          - "Mechanism #472 (Bhuiyan same-day discipline check): parallel journalist-level discipline-check structure; #477 is the MIT TR instantiation with a fortnight window instead of same-day."
+          - "Mechanism #476 (MIT TR Google vs Meta tone, Type A): publication-level pair in the same fortnight window (May 18-Jun 11); #477 is the journalist-level unit inside the same publication and window, distinct analytical level."
+          - "Repo sample analyses: examples/sample_output/mit_tech_review_meta_ai_agent_instagram_hack_2026_06_05_analysis.md (Meta side baseline, primary access); examples/sample_output/mit_tr_deepmind_multi_agent_safety_2026_06_11_analysis.md (WDH Google-side baseline by different journalist)."
+          - "Mechanism #467 (Mickle source-access baseline): #477 driver class is mixed/event-gravity-led, not source-access."
+        source_urls:
+          - "https://www.technologyreview.com/2026/05/22/1137813/"
+          - "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/"
+          - "https://www.technologyreview.com/author/grace-huckins/"
+          - "https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/"
+          - "https://ninedotsprize.org/winners/grace-huckins/"
+          - "https://www.nationalacademies.org/news/explaining-the-brain-scientist-writer-grace-huckins-shares-the-depth-and-wonder-of-our-minds"
+        distinct_from_prior: "First Huckins mechanism in repo (zero iteration-log mentions before #477; no test file references her; not in mit-tech-review.yaml key_journalists before this entry). Distinct journalist from WDH (#476 publication-level) and Heikkila. Distinct analytical unit from #472 (different journalist, publication, entity pair, window)."
 
 known_conflicts:
   - type: "institutional_governance"

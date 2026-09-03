@@ -4155,6 +4155,23 @@ journalists:
   notes: 'AI reporter at MIT Tech Review. Extraordinary academic pedigree: Harvard BA (MCB), Oxford Rhodes Scholar (dual MSc Neuroscience + Gender Studies), Stanford PhD (Neuroscience & Philosophy) + lecturer (CGLE program). AAAS Mass Media Fellow at Wired (summer 2020). Former Spectrum (The Transmitter) news intern covering autism research. Won Nine Dots Prize 2024/25 ($100K + Cambridge UP book deal) for "Is data failing us?" essay arguing AI deprioritizes scientific understanding in favor of prediction. National Academies Eric & Wendy Schmidt Award for Excellence in Science Communications 2024. Published in Wired, Scientific American, Popular Science, Slate. Uses they/them pronouns. Based in San Francisco. KEY FOR MEDIASCOPE: (1) Most elite academic pedigree in the corpus  -  triple Harvard/Oxford/Stanford background gives them unique credibility but also unique distance from industry sources that other tech reporters cultivate. (2) Their neuroscience PhD gives them genuine subject-matter
     expertise to evaluate AI consciousness, cognition, and agent behavior claims that other reporters must take on faith. (3) Their Nine Dots Prize thesis ("data vs understanding") is an explicit philosophical framework that shapes their AI coverage  -  prediction-first approaches (the core business model of Meta, Google, etc.) are positioned as epistemically inferior, which could produce systematic bias in coverage of companies whose value proposition is prediction at scale. (4) AAAS Wired fellowship → MIT TR migration tests whether Wired framing exposure during PhD influenced their subsequent MIT TR coverage.'
   multi_publication: true
+  mechanism_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02:
+    mechanism_id: 477
+    iteration: 477
+    iteration_type: "B"
+    iteration_time: "2026-09-02 19:00 PDT"
+    scheduled_job_id: "mediascope-daily-iteration"
+    goal_id: "goal_54093bda4145"
+    discovery_date: "2026-09-02"
+    journalist: "Grace Huckins"
+    publication: "MIT Technology Review"
+    status: "BASELINE-plus-discipline-check: same-journalist fortnight pair shows asymmetric accountability machinery; bounds the financial-incentive theory rather than confirming it; not a completed asymmetry finding"
+    finding_summary: "Fortnight pair 2026-05-22 to 2026-06-05, same journalist and AI beat. Google I/O piece (https://www.technologyreview.com/2026/05/22/1137813/, full text opened this run) deflates Hassabis singularity rhetoric but pairs skepticism with extensive credit (WeatherNext 'enormous and meaningful achievement', AlphaFold Nobel, 3M researchers, Isomorphic $2B) and long Google-leadership quotes; its one competitive criticism ('reputational hit because its coding tools don't currently stand up to those offered by Anthropic and OpenAI') is plainly stated. Meta hack piece (https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/, repo deep analysis with primary access) deploys heavier machinery: title juxtaposition as competence deflation, 'practically mindless'/'simple' repetition, 4/4 critical experts with zero defenders, double refusal amplification, expert-warning kicker. Driver class MIXED: event gravity (real exploit vs keynote analysis) is the leading explanation, and MIT's financial nexus is two-sided (Google program plus Schmidt funding; Meta via FAIR), so no clean financial attribution. Qualitative only, significant=false."
+    source_urls:
+      - "https://www.technologyreview.com/2026/05/22/1137813/"
+      - "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/"
+      - "https://www.technologyreview.com/author/grace-huckins/"
+      - "https://ninedotsprize.org/winners/grace-huckins/"
 - career:
   - beat: technology
     end: 2018-12
