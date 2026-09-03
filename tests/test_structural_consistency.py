@@ -1994,7 +1994,11 @@ class TestJournalistCountConsistency:
         for j in journalists:
             pubs = set()
             for ev in j.get("career", []):
-                pubs.add(ev.get("publication", ""))
+                # Skip career events with no publication (e.g. pre-journalism
+                # employer stints); an empty string is not a publication.
+                pub = ev.get("publication") or ""
+                if pub:
+                    pubs.add(pub)
             if len(pubs) >= 2:
                 multi_pub += 1
         return total, multi_pub

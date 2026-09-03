@@ -284,7 +284,15 @@ def count_tests_pytest():
     except (subprocess.TimeoutExpired, FileNotFoundError, OSError):
         pass
 
-    # Fall back to regex count
+    # Fall back to regex count (warn: the regex estimate undercounts
+    # parametrize expansions, so --check may report a false STALE).
+    # Always run this script with a python that has pytest (e.g.
+    # .venv/bin/python) for the authoritative collected count.
+    print(
+        "warning: pytest --collect-only unavailable or timed out; "
+        "falling back to regex test-count estimate",
+        file=sys.stderr,
+    )
     return count_tests()
 
 

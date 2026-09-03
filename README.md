@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27077 | Across 806 test files |
+| Tests | 27106 | Across 807 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **260 journalists** (60 with structured education records) across 444 publications (974 tracked migrations). Notable high-value migrations include:
+Ships with verified career data for **260 journalists** (60 with structured education records) across 440+ publications (974 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27077 tests** across 806 test files, each covering a different analytical capability:
+MediaScope has **27106 tests** across 807 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1238,6 +1238,8 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_456_ft_anthropic_20b_double_target_vs_meta_equity_raise_sep01_10pm.py` | 17 | Type A 456: FT Anthropic $20B double target fundraising vs Meta equity raise framing asymmetry |
 | `test_type_a_461_verge_microsoft_copilot_retrenchment_dedicated_beat_sep02_3am.py` | 16 | Type A 461: The Verge x Microsoft Copilot retrenchment dedicated-beat framing asymmetry |
 | `test_type_a_466_wired_amazon_ftc_ad_lawsuit_coverage_selection_sep02_8am.py` | 30 | Type A #466 (2026-09-02 08:00 PDT): WIRED x Amazon - FTC ad-auction deception |
+| `test_type_a_471_nyt_openai_litigation_posture_boundary_condition_sep02_1pm.py` | 25 | Type A #471: NYT x OpenAI litigation-posture boundary condition - adversarial financial posture does not produce blanket adversarial coverage (partial falsification) - Sep 2 2026 13:00 PDT |
+| `test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py` | 19 | Type A #476: MIT TR x Google coverage tone vs Meta - same-day natural experiment - Sep 2 2026 18:00 PDT |
 | `test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py` | 14 | Test Type B #431: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry Aug 31 2026 |
 | `test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py` | 24 | Test Type B #436: Lauren Goode Apple Vision Pro vs Meta Ray-Ban Emotional Register Asymmetry Sep 01 2026 |
 | `test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py` | 21 | Type B #442 Boone Ashworth Snap vs Meta pricing subscription framing asymmetry |
@@ -1246,6 +1248,8 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_457_adrienne_so_meta_vs_apple_evenhanded_counterexample_sep01.py` | 15 | Type B #457 - Adrienne So Meta vs Apple Even-Handed Gear-Desk Counter-Example |
 | `test_type_b_462_jess_weatherbed_tiktok_vs_meta_apple_cross_entity_sep02_4am.py` | 20 | Type B #462 - Jess Weatherbed same-journalist cross-entity discipline check: |
 | `test_type_b_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02_9am.py` | 27 | Type B #467 Tripp Mickle (NYT) source-access deference asymmetry baseline. |
+| `test_type_b_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02_2pm.py` | 31 | Type B #472: Guardian Johana Bhuiyan same-day OpenAI vs Meta discipline check - Sep 2 2026 14:00 PDT |
+| `test_type_b_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02_7pm.py` | 29 | Type B #477: Grace Huckins (MIT TR) fortnight Google vs Meta discipline check - Sep 2 2026 19:00 PDT |
 | `test_type_c_432_advance_turnitin_dual_sided_ai_conflict_aug31.py` | 21 | Type C #432: Advance Publications Turnitin Dual-Sided AI Conflict Formalization Aug 31 2026 22:00 PDT |
 | `test_type_c_437_ft_dual_ai_payer_portfolio_sep01.py` | 23 | Type C #437: FT Dual AI Payer Portfolio Sep 1 2026 03:00 PDT |
 | `test_type_c_443_microsoft_pcm_marketplace_transparency_paradox_sep01.py` | 26 | Mechanism #443 Type C: Microsoft Publisher Content Marketplace (PCM) Transparency Paradox |
@@ -1253,6 +1257,8 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_458_fox_corp_q4_fy2026_dark_public_disclosure_sep02.py` | 18 | Type C #458: Fox Corp Q4 FY2026 - DARK PUBLIC disclosure posture (new Tier 4) |
 | `test_type_c_463_usa_today_co_q2_2026_bundled_lumpiness_sep02_5am.py` | 19 | Type C #463: USA TODAY Co. Q2 2026 - Tier 2 BUNDLED posture deepened |
 | `test_type_c_468_reach_amazon_usage_based_deal_sep02_10am.py` | 21 | Type C #468: Reach plc - Amazon usage-based AI licensing deal (Mar 2 2026) |
+| `test_type_c_473_future_plc_openai_deal_sep02_3pm.py` | 21 | Type C #473: Future plc OpenAI strategic partnership (Dec 5 2024) - Sep 2 2026 15:00 PDT |
+| `test_type_c_478_axios_openai_disclosure_posture_sep02_8pm.py` | 19 | Type C #478: Axios x OpenAI disclosure posture and deal-terms opacity - Sep 2 2026 20:00 PDT |
 | `test_type_d_05am_full_suite_cross_validation_aug28.py` | 30 | Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion |
 | `test_type_d_06am_full_suite_cross_validation_aug28.py` | 37 | Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026 |
 | `test_type_d_07am_cross_validation_aug27.py` | 21 | Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT) |
@@ -1281,6 +1287,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_464_full_suite_verification_sep02_6am.py` | 38 | Type D #464: Full Suite Verification Sep 2 2026 06:00 PDT. |
 | `test_type_d_469_scorer_consistency_and_suite_health_sep02_11am.py` | 34 | Type D #469: scorer consistency and full-suite health verification - Sep 2 2026 11:00 PDT. |
 | `test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py` | 26 | Type D #474: full-suite health and recent-mechanism persistence - Sep 2 2026 16:00 PDT. |
+| `test_type_d_479_boundary_discipline_registry_and_window_persistence_sep02_9pm.py` | 29 | Type D #479: boundary-discipline registry and 475-478 window persistence - Sep 2 2026 21:00 PDT. |
 | `test_type_d_4pm_cross_validation_aug27.py` | 26 | Type D Cross-Validation - Thu 2026-08-27 4 PM PT |
 | `test_type_d_full_suite_cross_validation_type_d_397_aug30.py` | 31 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
 | `test_type_d_statistical_validity_comprehensive_aug28.py` | 19 | Type D - Comprehensive Statistical Validity & Pipeline Health |
@@ -1309,6 +1316,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_460_podcast_sentiment_fifteenth_verification_sep02_2am.py` | 28 | Type E #460 - Podcast Sentiment Tracking Fifteenth Verification Sep 2 02:00 PDT |
 | `test_type_e_465_podcast_sentiment_sixteenth_verification_sep02_7am.py` | 28 | Type E #465 - Podcast Sentiment Tracking Sixteenth Verification Sep 2 07:00 PDT |
 | `test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py` | 30 | Type E #470 - Podcast Sentiment Tracking Seventeenth Verification Sep 2 12:00 PDT |
+| `test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py` | 30 | Type E #475: podcast sentiment eighteenth verification - GF 498 hold, EHE 23-day hold, Attention Sphere 18th no-match - Sep 2 2026 17:00 PDT |
 | `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
 | `test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` | 25 | Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication |
 | `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
