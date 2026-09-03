@@ -1,3 +1,29 @@
+#475 Type E: Podcast Sentiment Eighteenth Verification - GF 498 Hold No 499, EHE 23-Day Hold No New Vertical, Attention Sphere 18th No-Match - Sep 2 2026 17:00 PDT
+
+**Date:** 2026-09-02 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 474 D -> 475 E)
+**Type:** E - Podcast Sentiment Tracking (Eighteenth Verification Cycle)
+**Mechanism:** #475 Type E - Eighteenth verification extends #470 (Sep 2 12:00 PDT) by 5 hours. Guilty Feminist official zeno.fm episode list (opened via browser.open this run) still shows 498 Politics (Aug 31) as latest, no 499 observed as of 17:00 PDT Sep 2 (bounded absence); weekly cadence note holds (next numbered episode plausibly near Sep 7). Everyone Hates Elon 23-day hold continues since Aug 10 Epstein poster claim (still unverified pending primary Instagram); this run's search returned only the known July/August corpus (Times, LatestLY, Engadget, PetaPixel, Hyperallergic, AfroTech, Fstoppers), so no new primary campaign and no sixth press vertical surfaced. Five-vertical count stands (tech, ethics, trade, photo, feminist advocacy press). LatestLY Jul 30 2026 provenance fact check and 9,000-email drive (SWNS/Ben Barry) stand. Attention Sphere eighteenth no-match; only result was this repository's own podcast-sentiment.md GitHub page, rejected as circular. No competitor-equivalent guerrilla campaign or consent drive surfaced across all eighteen cycles (bounded absence).
+
+**Publication:** Cross-vertical (podcast corpus primary, press secondaries)
+**Competitor Pair:** Meta vs Apple / Google / Samsung / Snap (no competitor guerrilla-equivalent surfaced)
+**Rotation Transparency:** Previous entry #474 Type D at 16:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after D is E. Cycle verified: 470 E 12:00, 471 A 13:00, 472 B 14:00, 473 C 15:00, 474 D 16:00, 475 E 17:00. Selected Type E after verifying #474 commit present and pushed.
+
+**Focus:** Type E eighteenth verification - freshness check with no new-to-log secondary this cycle; holds extended with fresh primary opens.
+
+**New Type E file:** `tests/test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py` - 30 tests. Covers 475 iteration/date/rotation/goal-job IDs, eighteenth-cycle label, GF 498 hold with official zeno.fm HTTPS URL opened this run plus cadence note plus extension-not-duplicate, EHE activist-not-podcast plus 23-day hold plus no-new-vertical this cycle plus five-vertical count plus LatestLY provenance guard plus 9000 email drive standing plus no-competitor-equivalent bounded, Attention Sphere 18th no-match with circular rejection, MANUAL ILLUSTRATIVE / no-false-significance / correlation-not-causation / ranked confounders / no-em-dash (escape-sequence form, NUL-byte incident fixed) / HTTPS-only hygiene, distinct-from-470, no Microsoft PCM novelty claim, iteration-log presence and newest-first ordering.
+
+**Self-caught test bug during authoring (durable lesson):** the em-dash self-check was authored with the intended `\u2014` escape, but the file-writing path materialized it as a literal em dash, and a shell-quoted python fix then left a NUL byte (0x00) in its place; fixed via heredoc script using `chr(92)`. Verified byte-level: 0 NUL, 0 literal U+2014, exactly 1 six-char escape. Lesson: never trust a Unicode-escape fix done through shell double quotes; verify with python char counts, not grep (grep binary-mode confusion gave a bogus 203 count on the fixed file).
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #475 file: 30 passed, 0 failed (post-log-entry run; rotation-log assertions resolved by writing this entry)
+- `scripts/count_stats.py --check`: passes (README synced)
+
+**Confidence:** HIGH - GF hold verified against the official episode list opened this run; EHE and Attention Sphere checks are bounded search-result absences honestly labeled; no new asymmetry claims beyond bounded observations; correlation-not-causation discipline unchanged.
+
+**Test file:** `tests/test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py` - 30 tests, all passed (venv pytest)
+
+---
+
 #474 Type D: Test and Verify - Full-Suite Health and Recent-Mechanism Persistence - Sep 2 2026 16:00 PDT
 
 **Date:** 2026-09-02 16:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 473 C -> 474 D)

@@ -9031,3 +9031,63 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py - checks covering mechanism_id 470, Type E, iteration 470, date 2026-09-02 12:00 PDT, rotation D->E, Guilty Feminist 498 hold no 499 bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE 23-day hold plus Feminist Majority Foundation fifth vertical plus balance note plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 17th no-match circular rejection bounded, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 465, no Microsoft PCM novelty claim, iteration-log entry present and newest-first.
+---
+
+## Iteration #475 - Wed 2026-09-02 17:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Rotation:** 474 D -> 475 E. Extends #470 (Sep 2 12:00 PDT) by 5 hours.
+
+### 1. Guilty Feminist - 498 Hold Continues, No 499 (Eighteenth Verification Cycle)
+
+- **Latest episode as of Sep 2 17:00 PDT:** 498 Politics with Felicity Ward and Hannah Spencer (31 Aug 2026), unchanged from Sep 2 12:00 PDT check. Official episode list https://zeno.fm/podcast/the-guilty-feminist/ opened via browser.open this run still shows 498 as latest, with 497 The Nuance Drought and 496 Intimacy below it. No 499.
+- **Bounded claim:** no new episode observed as of 17:00 PDT Sep 2 2026, a 5-hour extension of the Sep 2 12:00 PDT verification (#470). Bounded absence, not universal proof of non-existence.
+- **Relevance hold:** 496-498 slate (Intimacy, Nuance Drought, Politics) contains no Meta/AI/wearables/privacy/surveillance per titles and descriptions. Titles/descriptions only, full transcripts not retrieved.
+- **Cadence note:** weekly release pattern puts the next numbered episode plausibly near Sep 7; absence of 499 two days after 498 is consistent with normal cadence, not a signal.
+- **Extension not duplicate:** this check extends #470 by 5 hours with a fresh primary open (zeno.fm opened this run); the hold finding is identical, the verification is new.
+
+### 2. Everyone Hates Elon - 23-Day Hold Continues, No New Secondary Vertical This Cycle
+
+- **Hold:** activist group, not a podcast. Aug 10 Epstein poster claim remains unverified pending primary Instagram verification (23 days since Aug 10 as of Sep 2). July 2026 bus-stop campaigns (Epstein "Glasses for people who do not do consent" Carnegie Street, Kylie Jenner lenticular "Meta: We are always watching" near Meta London HQ) remain the last primary-verified campaigns via Engadget https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ and The Times https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- **Search this run:** query "Everyone Hates Elon" Meta glasses activist campaign returned only the known July/August corpus (Times, LatestLY, Engadget, PetaPixel, Hyperallergic, AfroTech, Fstoppers). No new primary campaign and no sixth press vertical surfaced. Bounded search-result absence.
+- **Prior cycle data points stand:** EHE "Do you consent to being filmed by AI glasses?" email drive, 9,000+ people emailed Meta, via SWNS wire (Ben Barry), logged #460. Feminist Majority Foundation advocacy-press fifth vertical with balance note, logged #470. Source: https://muckrack.com/ben-barry-4/articles and https://feminist.org/news/helpful-or-hurtful-the-growing-privacy-debate-over-meta-glasses/
+- **Vertical count unchanged:** tech press (Engadget, PetaPixel), ethics press (AfroTech), trade press (The Drum), photography press (Fstoppers), feminist advocacy press (Feminist Majority Foundation). No competitor-equivalent guerrilla campaign against Apple, Google, Samsung, or Snap camera wearables has surfaced in any of the eighteen verification cycles. Bounded search-result absence.
+- **Provenance guard stands:** LatestLY Jul 30 2026 fact check rated the viral "Epstein in Meta ad" claim as spoof activism by EHE, not an official Meta advertisement. Source: https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+
+### 3. Attention Sphere - Eighteenth No-Match Verification
+
+- **Result:** Sep 2 17:00 PDT search for "Attention Sphere" podcast Meta AI wearables returned no matching podcast (eighteenth consecutive no-match verification).
+- **What results returned:** only this repository's own podcast-sentiment.md GitHub page (https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md), which is rejected as circular evidence per established discipline and is not cited as independent verification.
+- **Status unchanged:** task-spec name remains misidentified; Ava Smithing's actual show is Left to Their Own Devices (Toronto Star). Nonprofit claim remains secondary-only, not elevated.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. Secondary Ecosystem Freshness (Sep 2 17:00 PDT)
+
+- **No new items this cycle.** Prior secondaries stand: Feminist Majority Foundation fifth vertical (#470), Fstoppers photography-press piece (#465), LatestLY provenance fact check (#465), The Drum trade-press backlash piece and AfroTech ethics piece (#460) remain the latest in their verticals.
+- **No new Guilty Feminist episode, no new EHE primary campaign, no sixth vertical, no Attention Sphere podcast as of 17:00 PDT Sep 2 2026.** All bounded absences.
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across eighteen cycles: bounded absence.
+- Correlation not causation. Structural incentive not proof of editorial control. No claim of empirical significance. Do not claim empirical significance without Welch t-test plus Cohen d plus bootstrap CI on the observed corpus.
+
+### 6. Sources (HTTPS only)
+
+- https://zeno.fm/podcast/the-guilty-feminist/ (official episode list, opened this run, 498 latest, no 499)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (EHE Epstein poster, Times)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE July campaign primary)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (Epstein spoof provenance fact check, from #465)
+- https://muckrack.com/ben-barry-4/articles (EHE 9,000 email drive via SWNS, Ben Barry, from #460)
+- https://feminist.org/news/helpful-or-hurtful-the-growing-privacy-debate-over-meta-glasses/ (feminist advocacy-press fifth vertical, from #470)
+- https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md (Attention Sphere search only-result, rejected as circular, not cited as evidence)
+
+### 7. Confounders (ranked)
+
+- STRONG No new Guilty Feminist episode / no EHE primary campaign / no sixth vertical / no Attention Sphere podcast are bounded search-result absences, not universal proofs. NOT_CALCULATED.
+- MODERATE EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence. NOT_CALCULATED.
+- MODERATE Five-hour cadence means genuinely new developments can land between cycles; the hold finding is time-bounded to 17:00 PDT Sep 2. NOT_CALCULATED.
+- WEAK MANUAL ILLUSTRATIVE scores are subjective only. NOT_CALCULATED.
+
+### 8. Test File
+
+- tests/test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py - checks covering mechanism_id 475, Type E, iteration 475, date 2026-09-02 17:00 PDT, rotation D->E, Guilty Feminist 498 hold no 499 bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE 23-day hold plus no-new-vertical this cycle plus five-vertical count plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 18th no-match circular rejection bounded, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 470, no publisher-marketplace novelty claim, iteration-log entry present and newest-first.
