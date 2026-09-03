@@ -1,3 +1,52 @@
+#482 Type B: NYT Karen Weise Amazon vs Microsoft Headline-Verb Asymmetry - Deception-Framed Enforcement vs Access-Soft Gates Platform Sep 3 2026 00:00 PDT
+
+**Date:** 2026-09-03 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation B after 481 A)
+**Type:** B - Journalist Cross-Entity Tracking
+**Mechanism:** #482 Type B - NYT Karen Weise within-journalist Amazon vs Microsoft headline-verb asymmetry
+**Publication:** NYT
+**Journalist:** Karen Weise (NYT Seattle tech correspondent since 2018, Amazon + Microsoft beat, ex-Bloomberg/Bloomberg Businessweek)
+
+**Rotation Transparency:** Previous entry mechanism 481 Type A at 2026-09-02 23:00 PDT. Per rotation A->B->C->D->E, next after A is B. This work is Type B at 00:00 PDT Sep 3, correct rotation A->B. Novelty verified per durable rule: no existing test_karen_weise_cross_entity.py; existing Weise references (Feb 2026 Ring paradox, beat-assignment notes) are publication-level, this is within-journalist.
+
+**Finding:** Same NYT correspondent applies deception/coercion headline verbs to Amazon across five post-deal enforcement stories while giving Microsoft's co-founder an hourlong sympathetic 1-on-1 platform eight days before this iteration, despite NYT's own active copyright lawsuit against Microsoft/OpenAI.
+
+**Weise on Amazon (all post May 2025 $20-25M/yr AI licensing deal):**
+1. "Amazon to Pay $2.5 Billion to Settle Claims It Tricked Prime Customers" (2025-09-25, co-byline Cecilia Kang) - headline verb "tricked"
+2. "Amazon's Robot Takeover / Power and Peril" (2025-10) - "aggressive corporate culture", 75% automation goal
+3. "F.T.C. and 22 States Claim in Lawsuit That Amazon Secretly Inflated Ad Prices" (2026-08) - "secretly inflated"
+4. "N.J. Sues Amazon, Saying It Suppresses Pay for Delivery Drivers" (2026) - "suppresses"
+5. "Amazon Retaliated Against Workers Who Supported Regulating Data Centers" (2026) - "retaliated"
+
+**Weise on Microsoft:**
+1. "Bill Gates Warns A.I. Is More Dangerous Than Big Tech Will Admit" (2026-08-26, solo byline) - hourlong 1-on-1 in Gates's Seattle offices, truth-teller lead ("loudly warning"), Epstein emails compressed to one subordinate clause. https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.htm
+2. "Microsoft Unveils A.I. Cybersecurity Tools" - product-positive
+3. "Microsoft Disclosure Provides Rare Glimpse of Tax Haven Tactics" - COUNTER-DATAPOINT, adversarial (bounds the claim)
+4. "Xbox Hits Reset Button, Laying Off Thousands" - neutral business
+
+**Headline-verb tally:** Amazon 5/5 deception/coercion verbs vs Microsoft 0/4. Asymmetry score 0.66 (headline-verb channel only).
+
+**Answers repo open question:** nytimes.yaml asked "Does Amazon coverage soften after the compound $70-125M/yr dependency is established?" Answer: NO. Four of five pieces post-date the March 2026 affiliate commission cuts.
+
+**Novel insight (BOUNDARY CONDITION):** The financial effect operates via beat assignment and investigative-resource allocation (Hill kept off Ring, Feb 2026 paradox), NOT via softening the beat reporter's enforcement coverage. Weise covers the company paying her employer $70-125M+/yr with unsoftened deception-framed reporting. This strengthens the thesis by specifying its channel.
+
+**Institutional inversion:** NYT sues Microsoft/OpenAI for copyright (Weise's Muck Rack page lists her DOJ-sides-with-OpenAI coverage), yet the litigation adversary's co-founder gets access-soft treatment. Double inversion against both naive financial and naive litigation predictors.
+
+**Confounders:** 2 STRONG (genuine enforcement news events; Seattle geography cuts both ways since Microsoft is in Redmond), 2 MODERATE (Kang co-byline; Gates essay news value), 1 WEAK (affiliate-cut embitterment, speculative).
+
+**Source URLs:**
+- https://muckrack.com/kyweise/articles
+- https://www.nytimes.com/2026/08/26/technology/bill-gates-ai-risks.htm
+- https://www.economie.gouv.fr/files/files/directions_services/rejoignez-nous/DGCCRF/recrutement-par-concours/categorie-A_licence/Sujet%201%20-%20MR%20-%20Amazon%20to%20Pay%20%242.5%20Billion%20to%20Settle%20Claims.pdf
+- https://www.knkx.org/2025-10-22/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs
+- https://www.wsj.com/tech/ftc-to-file-lawsuit-alleging-amazon-deceived-advertisers-d71039ee
+- https://globalcommunityweekly.substack.com/p/nyt-bill-gates-warns-ai-is-more-dangerous
+
+**Cross-references:** Feb 2026 Ring paradox (publication-level), test_type_b_467 (Mickle access-driver precedent), nytimes.yaml Amazon compound dependency section.
+
+**Test file:** `tests/test_type_b_482_karen_weise_amazon_microsoft_headline_verb_asymmetry_sep03.py` - 7 classes, 31 tests, all passing
+**YAML updates:** profiles/nytimes.yaml (key_journalists -> Karen Weise -> cross_entity_coverage_analysis), profiles/careers/journalists.yaml (Weise entry)
+**Cumulative:** mechanism #482 logged, 27,192 tests, 810 files
+
 #481 Type A: The Atlantic x OpenAI AI Watchdog Entity-Selection Asymmetry - Licensing Partner Gets Industry-Context Mentions While Meta Gets Headline Investigations - Sep 2 2026 23:00 PDT
 
 **Date:** 2026-09-02 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 480 E -> 481 A)

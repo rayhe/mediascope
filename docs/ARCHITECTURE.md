@@ -1002,6 +1002,7 @@ mediascope/
 │   ├── test_type_b_467_tripp_mickle_apple_omerta_deference_google_beat_baseline_sep02_9am.py  # Type B #467 Tripp Mickle (NYT) source-access deference asymmetry baseline.
 │   ├── test_type_b_472_johana_bhuiyan_guardian_openai_meta_same_day_discipline_check_sep02_2pm.py  # Type B #472: Guardian Johana Bhuiyan same-day OpenAI vs Meta discipline check - Sep 2 2026 14:00 PDT
 │   ├── test_type_b_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02_7pm.py  # Type B #477: Grace Huckins (MIT TR) fortnight Google vs Meta discipline check - Sep 2 2026 19:00 PDT
+│   ├── test_type_b_482_karen_weise_amazon_microsoft_headline_verb_asymmetry_sep03.py  # Type B #482: NYT Karen Weise Amazon vs Microsoft headline-verb asymmetry - Sep 3 2026 00:00 PDT
 │   ├── test_type_c_432_advance_turnitin_dual_sided_ai_conflict_aug31.py  # Type C #432: Advance Publications Turnitin Dual-Sided AI Conflict Formalization Aug 31 2026 22:00 PDT
 │   ├── test_type_c_437_ft_dual_ai_payer_portfolio_sep01.py  # Type C #437: FT Dual AI Payer Portfolio Sep 1 2026 03:00 PDT
 │   ├── test_type_c_443_microsoft_pcm_marketplace_transparency_paradox_sep01.py  # Mechanism #443 Type C: Microsoft Publisher Content Marketplace (PCM) Transparency Paradox
