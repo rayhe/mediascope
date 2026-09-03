@@ -1,3 +1,27 @@
+#476 Type A: MIT TR x Google Coverage Tone vs Meta - Same-Day Natural Experiment, Responsible-Steward vs Incompetence Registers - Sep 2 2026 18:00 PDT
+
+**Date:** 2026-09-02 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 475 E -> 476 A)
+**Type:** A - Competitor Coverage Deep Dive (MIT Technology Review x Google)
+**Mechanism:** #476 Type A - First deep dive on MIT TR's Google coverage tone vs Meta tone. Novelty verified per durable rule: zero test files match mit*google, no prior mechanism covers this pair (mechanism #15 covered Anthropic vs Meta; Aug 8 Wong test covered Atlantic OpenAI/Anthropic/Meta). Two Google articles opened via browser.open this run: Jun 11 2026 "Google DeepMind is worried about what happens when millions of agents start to interact" (responsible-steward register, proactive $10M safety fund, undisclosed two-sided Schmidt nexus: Schmidt Sciences co-funds the pot while Eric Schmidt funds MIT's AI initiative) and May 18 2026 "What to expect from Google this week" (mixed: real competitive criticism "clear third place", "outgunned", "coding crisis" paired with science validation "only frontier AI company to have earned a Nobel Prize", "shapes the cutting edge"). Meta baseline same window: Jun 5 "The Meta hack" ("practically mindless", "embarrassing moment for Meta") and May 18 "Inside Anduril and Meta's quest to make smart glasses for warfare" (weapons-system framing). Same-day natural experiment May 18 2026 (Google Nobel science leadership vs Meta weapons enabler, same publication same day) and six-day proximity pair Jun 5 vs Jun 11 (agent safety shared topic, inverted registers). MANUAL ILLUSTRATIVE scorer delta -0.65 (Meta worse), p=0.2085 not significant at n=2 per side, Cohen d -2.87 descriptive only. Leading confounder ranked STRONG and stated plainly: Meta also funds MIT via FAIR (this profile lines 1187-1190) while competitor_relationships.meta codes financial_tie "none", so cooperative-conflict logic applies to both sides and the delta cannot be cleanly attributed to Google-side money. Correlation only, no editorial control claim.
+
+**Publication:** MIT Technology Review (Technology Review Inc.)
+**Competitor Pair:** Google vs Meta
+**Rotation Transparency:** Previous entry #475 Type E at 17:00 PDT Sep 2 2026. Per rotation A->B->C->D->E, next after E is A. Cycle verified: 471 A 13:00, 472 B 14:00, 473 C 15:00, 474 D 16:00, 475 E 17:00, 476 A 18:00. Selected Type A after verifying #475 commit present and pushed.
+
+**Focus:** Type A deep dive - Google coverage tone vs Meta coverage tone with same-day natural experiment; profile competitor_relationships.google expanded with mechanism, examples, URLs, scorer delta.
+
+**New Type A file:** `tests/test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py` - 19 tests. Covers 476 iteration/date/rotation/goal-job IDs, two Google HTTPS technologyreview.com URLs opened this run with registers and hand-assigned tones, two Meta baseline URLs same window, same-day experiment and six-day proximity documentation, MANUAL ILLUSTRATIVE delta -0.65 with scorer reproduction and not-significant flag, financial triangulation (MIT-Google Program "relevance to Google", Schmidt two-sided nexus, Meta-also-funds-MIT FAIR tension), ranked confounders 3/2/1, cautious language flags, no-em-dash and HTTPS-only hygiene, distinct-from-15 and #471 boundary cross-reference, iteration-log newest-first presence.
+
+**Verification runs (venv pytest, -p no:cacheprovider):**
+- New #476 file: 19 passed, 0 failed
+- `scripts/count_stats.py --check`: passes (README synced)
+
+**Confidence:** HIGH - both Google articles opened and read this run (framing quotes verified against page text); Meta baseline reuses already-documented mechanism #15 articles; scorer delta reproduced by direct scorer run; leading confounder (Meta also funds MIT) stated in-profile rather than buried; all causality claims fenced as correlation-only.
+
+**Test file:** `tests/test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py` - 19 tests, all passed (venv pytest)
+
+---
+
 #475 Type E: Podcast Sentiment Eighteenth Verification - GF 498 Hold No 499, EHE 23-Day Hold No New Vertical, Attention Sphere 18th No-Match - Sep 2 2026 17:00 PDT
 
 **Date:** 2026-09-02 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 474 D -> 475 E)

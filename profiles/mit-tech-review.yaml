@@ -2229,6 +2229,156 @@ competitor_relationships:
     direction: "mutual"
     description: "Google/DeepMind is an MIT corporate partner. Funds research programs. No direct MIT Tech Review licensing deal."
     coverage_prediction: "softer"
+    iteration_476_sep02_2026_mittr_google_coverage_tone_vs_meta:
+      mechanism: 476
+      iteration: 476
+      iteration_type: A
+      date: "2026-09-02"
+      title: "Type A #476: MIT TR x Google coverage tone vs Meta - same-day natural experiment, responsible-steward vs incompetence registers"
+      summary: >
+        First Type A deep dive comparing MIT Technology Review's Google coverage
+        tone against its Meta coverage tone (novelty verified: zero existing test
+        files match mit*google, no prior mechanism covers this pair; mechanism #15
+        covered Anthropic vs Meta, Aug 8 Wong test covered OpenAI/Anthropic/Meta).
+        Two Google articles from May-Jun 2026 (both opened via browser.open this
+        run) show a mixed-but-structurally-kinder register than the uniformly
+        adversarial Meta baseline: Google receives competitive-performance
+        criticism plus science validation and proactive-responsibility framing,
+        while Meta receives competence and morality framing (mindless,
+        embarrassing, warfare). A same-day natural experiment (May 18, 2026)
+        sharpens the comparison. MANUAL ILLUSTRATIVE scorer delta -0.65
+        (Meta worse), p=0.2085 not significant at n=2 per side, flagged
+        illustrative only. Correlation only, not proof of editorial control.
+      google_articles:
+        - title: "Google DeepMind is worried about what happens when millions of agents start to interact"
+          date: "2026-06-11"
+          url: "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
+          register: "responsible_steward"
+          tone_manual_illustrative: 0.35
+          key_framing: >
+            Headline casts Google DeepMind as proactively worried and acting:
+            teamed up with Schmidt Sciences, ARIA, Cooperative AI Foundation,
+            and Google.org on a $10M funding pot "to prevent unsafe scenarios"
+            and "kick-start research outside tech companies." Only mild
+            skepticism ("dwarfed by the budgets commanded by Google DeepMind's
+            own research teams"). Zero alarm vocabulary, zero adversarial
+            personalization. Undisclosed nexus: Schmidt Sciences (Eric and Wendy
+            Schmidt foundation) co-funds the pot while Eric Schmidt personally
+            funds MIT's AI initiative (this profile, line 582). Two-sided
+            Schmidt nexus appears nowhere in the article.
+          verified: "browser.open this run 2026-09-02"
+        - title: "What to expect from Google this week"
+          date: "2026-05-18"
+          url: "https://www.technologyreview.com/2026/05/18/1137439/what-to-expect-from-google-this-week/"
+          register: "mixed_competitive_critical_plus_science_validating"
+          tone_manual_illustrative: -0.10
+          key_framing: >
+            Competitive criticism is real ("clear third place in the foundation
+            model race", "outgunned", "AI coding crisis", "claw its way back",
+            "we should not expect anything transformative"), which bounds any
+            softness claim: MIT TR does criticize Google. But the criticism is
+            performance and strategy framed, never ethics or safety alarm
+            framed, and it is paired with institutional validation ("shapes the
+            cutting edge, such as AI for science", "the only frontier AI company
+            to have earned a Nobel Prize", "solidified its lead", "doing some of
+            the best research out there on LLM-based health tools"). No
+            surveillance vocabulary, no personalized mockery.
+          verified: "browser.open this run 2026-09-02"
+      meta_articles_same_window:
+        - title: "The Meta hack shows there's more to AI security than Mythos"
+          date: "2026-06-05"
+          url: "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/"
+          register: "security_failure_incompetence"
+          tone_manual_illustrative: -0.55
+          key_framing: >
+            "Practically mindless." "Embarrassing moment for Meta." Expert quote:
+            "I don't understand why they didn't find this simple problem."
+            Already documented in mechanism #15 (this file). Six days before the
+            DeepMind responsibility-framed piece: Meta's agent-security failure
+            gets incompetence framing while Google DeepMind's agent-safety
+            funding gets stewardship framing.
+        - title: "Inside Anduril and Meta's quest to make smart glasses for warfare"
+          date: "2026-05-18"
+          url: "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/"
+          register: "warfare_military"
+          tone_manual_illustrative: -0.50
+          key_framing: >
+            "Optimize the human as a weapons system." "Ordering drone strikes
+            via eye-tracking." Published the SAME DAY as the Google I/O preview:
+            Meta's AR display engineering framed as weapons-enabling while
+            Google's AI work is framed as Nobel-winning science leadership.
+            Same-day natural experiment controls for news-cycle timing.
+      same_day_natural_experiment: >
+        May 18, 2026: MIT TR published both "What to expect from Google this
+        week" (Google as "shapes the cutting edge", Nobel science leadership)
+        and "Inside Anduril and Meta's quest to make smart glasses for warfare"
+        (Meta as weapons-system enabler). Same publication, same day, opposite
+        registers for the two companies' advanced R&D.
+      six_day_proximity_pair: >
+        Jun 5, 2026 Meta hack ("practically mindless", "embarrassing") vs Jun 11,
+        2026 DeepMind multi-agent safety (proactive $10M stewardship). Agent
+        safety is the shared topic; the editorial register inverts by company.
+      asymmetry_scoring_manual_illustrative:
+        target_entity: "Meta"
+        target_tones: [-0.55, -0.50]
+        peer_entities: ["Google"]
+        peer_tones: [0.35, -0.10]
+        publication_slug: "mit-technology-review"
+        window: "2026-05-18 to 2026-06-11"
+        target_avg_tone: -0.525
+        peer_avg_tone: 0.125
+        delta_manual_illustrative: -0.65
+        t_statistic: -2.8712
+        p_value: 0.2085
+        significant: false
+        cohens_d: -2.8712
+        ci_lower: -0.9
+        ci_upper: -0.4
+        synthetic_note: >
+          MANUAL ILLUSTRATIVE: tones hand-assigned from headline and body
+          framing reads this run, n=2 per side, p=0.2085 not significant.
+          Large descriptive effect size only. Not empirical evidence of bias;
+          documents the analyst's reading for reproducibility and challenge.
+        scorer: "mediascope.score.asymmetry.calculate_asymmetry"
+      financial_triangulation:
+        mit_google_program: >
+          MIT-Google Program for Computing Innovation (Schwarzman College):
+          bilateral program, funded via unrestricted gift, projects must show
+          "relevance to Google" (this profile, lines 471-476).
+        schmidt_two_sided_nexus: >
+          Eric and Wendy Schmidt fund MIT's AI initiative (this profile, line
+          582) AND Schmidt Sciences co-funds the $10M multi-agent safety pot
+          covered in the Jun 11 article. Neither side disclosed in the article.
+        meta_also_funds_mit: >
+          CONFOUNDER, ranked STRONG: this profile's meta_relationship section
+          (lines 1187-1190) states Meta funds MIT research including FAIR
+          collaborations, a DIRECT financial relationship, while
+          competitor_relationships.meta codes financial_tie as "none" / $0.
+          Internal tension flagged; the cooperative-conflict logic applies to
+          both companies here, which weakens any financial-determinism reading
+          of the tone delta and is recorded as the leading alternative
+          explanation alongside genuine news-value differences.
+        meta_zero_note: "No MIT TR AI content licensing deal with Meta confirmed; licensing-deal channel is $0 for both Google and Meta."
+      confounders_ranked:
+        strong:
+          - "Meta also funds MIT (FAIR collaborations per this profile lines 1187-1190): cooperative conflict applies to both sides, so the tone delta cannot be cleanly attributed to Google-side money."
+          - "Genuine news-value differences: the Meta hack was a real exploited security failure; the DeepMind $10M fund is a real proactive act. Different facts can justify different registers."
+          - "Reporter and desk differences across the four articles; no single-journalist control."
+        moderate:
+          - "MIT TR demonstrably criticizes Google on competitive performance (third-place framing), bounding the softness claim to register-type rather than blanket positivity."
+          - "n=2 per side: descriptive only, no statistical significance (p=0.2085)."
+        weak:
+          - "Six-day and same-day proximities control timing but not story selection."
+      cautious_language:
+        correlation_not_causation: true
+        no_editorial_control_claim: true
+        manual_illustrative_label: "MANUAL ILLUSTRATIVE - hand-assigned tones, not empirical sentiment measurement"
+      cross_references:
+        - "Mechanism #15 (this file, anthropic pre-IPO product validation vs Meta, Aug 9): same Meta baseline articles reused; Google now added as second peer."
+        - "Aug 8 Wong cross-entity test (tests/test_atlantic_wong_cross_entity_framing_aug8.py): different publication (Atlantic), same three-tier pattern family."
+        - "Type A #471 (NYT x OpenAI litigation-posture boundary): adversarial-financial-posture boundary condition; this mechanism is the cooperative-conflict mirror."
+      job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"
