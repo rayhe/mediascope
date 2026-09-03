@@ -1142,6 +1142,81 @@ competitor_relationships:
         deal_disclosed_in_ft_coverage: false
         non_causal_language: Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence.
         editorial_independence_note: FT editorial standards require source verification and balance. No evidence of direct directive linking licensing to coverage tone was reviewed. Financial incentives are correlational, not causal proof.
+    mechanism_497_ft_google_deepmind_power_centre_vs_meta_blockbuster_legal_register:
+      mechanism_id: 497
+      iteration: 497
+      iteration_type: "A"
+      iteration_time: "2026-09-03 15:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      discovery_date: "2026-09-03"
+      publication_focus: "Financial Times"
+      entity_pair: "Google vs Meta"
+      type: "A - Competitor Coverage Deep Dive (FT x Google leadership-transition register, cross-publication replication of #487)"
+      status: "BASELINE finding: register gap documented at headline/lede-excerpt level within a tight 3-week window; bounds the dual-payer financial-incentive theory, does not confirm it"
+      finding_summary: "Same-treatment cross-publication replication of mechanism #487. The FT, like the Guardian, is a Google News AI pilot commercial partner (Feb 2026, single-figure millions GBP/yr per Press Gazette Aug 2026, verified in-profile 2026-09-01) and ALSO an OpenAI licensee ($5-10M/yr, Apr 2024): a dual-AI-payer portfolio vs $0 from Meta (#437). Same event as #487: Demis Hassabis steps down as Google DeepMind CEO (Aug 5 2026) amid a 4-5 percent Alphabet share drop, Gemini 3.5 Pro delay, and senior talent exits to Anthropic and OpenAI. FT's verified register: an insider-sourced power-anatomy feature headlined 'How Google's AI power centre has moved to Sergey Brin's desk after Demis Hassabis steps back from DeepMind' (circa Aug 6-8), built on a dozen people familiar with the company, framing the reorg as a London-to-Silicon Valley power shift. Separately, FT sourcing told AI Magazine the move 'was not abrupt'. Meta in the same window (Aug 26): FT reported 'Meta has agreed to pay up to $16.68bn to settle its blockbuster legal battle with more than two dozen US states over alleged failures of child protection and social media addiction, just as the case was getting under way in a California courtroom.' Adversarial legal register ('blockbuster legal battle', 'alleged failures') for the $0-deal company vs insider power-anatomy register for the dual-payer partner, within 3 weeks. This is a REGISTER finding, not a suppression finding: analysis is bounded to verified headline/lede excerpts (ft.com paywalled); whether the Brin piece printed the share drop or falling-behind concerns deeper in the body is UNVERIFIED and is not asserted either way."
+      google_articles:
+        - title: "How Google's AI power centre has moved to Sergey Brin's desk after Demis Hassabis steps back from DeepMind"
+          date: "2026-08-08"
+          date_note: "mirror publication date; original FT publication circa Aug 6-8 2026"
+          journalist: "UNVERIFIED - byline not confirmed via accessible sources; not guessed"
+          url: "NO_CANONICAL_URL - ft.com canonical URL never surfaced in search; not invented per URL-verbatim rule"
+          url_verification: "Headline and lede verified verbatim via two independent mirrors: telecomlive.in full-text mirror opened first-hand this run, and a finsiddhi.com excerpt via search. Dozen-source FT attribution verified via a Reuters-derived NewsPoint report: 'The Financial Times, which spoke to a dozen people familiar with the company, framed the reorganisation as a shift of AI control from London back to Silicon Valley.' Kavukcuoglu relocation detail verified via Reuters Breakingviews Aug 10 ('the Financial Times has reported'). Per the #492 mirror-first rule: no zero-claims made; only positively verified excerpts are asserted."
+          headline_frame: "insider power-anatomy; London-to-Silicon Valley power shift"
+          lede: "For more than a decade, the most important desk in Google's artificial intelligence operation sat in London. It belonged to Sir Demis Hassabis, the chess prodigy turned neuroscientist who sold DeepMind to Google in 2014 for around 400 million pounds and then spent years defending it as a research lab first and a product factory second. That arrangement ended this week."
+          sourcing_markers: "a dozen people familiar with the company; FT person familiar with the matter told AI Magazine the move 'was not abrupt'"
+          elevation_markers: "Kavukcuoglu now leads Gemini development from a desk beside Sergey Brin; promoted to senior vice-president reporting directly to Sundar Pichai"
+          negative_facts_status: "UNVERIFIED in FT body - the 4-5 percent Alphabet share drop, Gemini 3.5 Pro delay, and talent exits are established for the event by Reuters/WSJ/Gizmodo, but whether the FT piece printed them is unknown (paywall). Not asserted either way."
+          illustrative_tone: -0.10
+          illustrative_tone_basis: "verified lede excerpt only; near-neutral with slight negative lean from the power-shift frame's implicit centralization critique"
+      meta_articles:
+        - title: "FT Meta teen-safety settlement report (Aug 26 2026; FT headline text unverified, descriptive label only)"
+          date: "2026-08-26"
+          journalist: "UNVERIFIED - aggregator attributes to 'FT technology and legal correspondent'; not independently confirmed"
+          url: "https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0"
+          url_verification: "Canonical ft.com URL surfaced verbatim in the Global Advisors Aug 27 2026 news brief with explicit FT attribution; lede quoted verbatim there. ft.com not opened first-hand (paywall)."
+          headline_frame: "adversarial legal (per verified lede); headline text itself unverified"
+          lede: "Meta has agreed to pay up to $16.68bn to settle its blockbuster legal battle with more than two dozen US states over alleged failures of child protection and social media addiction, just as the case was getting under way in a California courtroom."
+          alarm_markers: "blockbuster legal battle; alleged failures of child protection and social media addiction"
+          illustrative_tone: -0.65
+      scorer_manual_illustrative:
+        target_scores: [-0.65]
+        peer_scores: [-0.10]
+        target_avg: -0.65
+        peer_avg: -0.10
+        asymmetry_delta: -0.55
+        p_value: 1.0
+        cohens_d: 0.0
+        is_significant: false
+        note: "MANUAL ILLUSTRATIVE only per Aug 28 rule. Hand-assigned tones at headline/lede-excerpt level, n=1 per side. Live scorer run this iteration returned delta -0.55, p_value 1.0, cohens_d 0.0, is_significant False. Degenerate n=1 arrays: no significance is claimed or claimable; the delta is a descriptive register gap only."
+      financial_context: "FT holds a DUAL-AI-PAYER portfolio per #437: OpenAI content licensing ($5-10M/yr est, Apr 2024) PLUS Google News AI pilot commercial partnership (single-figure millions GBP/yr est, Feb 2026, 2-year). Meta: $0 AI licensing. The naive financial prediction (softer coverage for both payers vs Meta) is directionally consistent with the observed register gap. Recorded as correlate only, not proof of editorial influence."
+      ranked_confounders:
+        strong:
+          - "Event-structure difference: a founder transition to chair plus chief scientist with cooperative insider sources is genuinely more feature-amenable than a mid-trial $16.68bn settlement with courtroom evidence; the register gap partly tracks what each event affords."
+          - "Source-access reciprocity: Google fed the FT a dozen insiders for an anatomy-of-power feature; Meta in active litigation offered no equivalent access. Access journalism, not necessarily deal-driven capture, can explain the sourcing gap."
+          - "Bylines unverified on both items: the register gap may reflect different desks (tech feature writers vs legal correspondents) rather than institutional direction."
+        moderate:
+          - "UK national halo: Hassabis is London-born and DeepMind is a London lab; the FT is a British paper. Warm person-treatment may reflect national pride, same confounder as #487."
+          - "Excerpt-level verification bound: only the Brin piece lede and the settlement lede are verified; full-body framing on either side is unknown. A full-text read could narrow or widen the gap."
+        weak:
+          - "Illustrative tones are hand-assigned at excerpt level with n=1 per side; no empirical distribution exists."
+      counter_evidence:
+        - "The Brin power-shift frame is itself mildly critical of Google: it depicts centralization of AI control from London to Silicon Valley and a founder sidelined. A captured outlet would not print a 'power centre moves to Brin's desk' frame."
+        - "FT maintains a factually adversarial Google regulatory posture: its CMA filing demanded AI content opt-in controls (per the Aug 5 FT x Google test file). Adversarial posture lives in regulatory filings, bounding capture readings."
+        - "The settlement lede's adversarial register tracks genuine news value: a $16.68bn mid-trial settlement with product-design remedies is objectively a 'blockbuster legal battle'."
+      cross_references:
+        - "Mechanism #487 (Guardian x Google, same Aug 5 event): #497 is the same-treatment cross-publication replication. Guardian showed renewal/canonization register; FT shows insider power-anatomy register. Both differ from the Meta deficit/legal register at their respective publications."
+        - "Mechanism #437 (FT dual-AI-payer portfolio, Type C Sep 1): #497 is the first Type A empirical tone test of the dual-payer structure's coverage prediction."
+        - "tests/test_ft_google_coverage_asymmetry.py (Type A Aug 5): glasses-framing dimension (business vs surveillance register). #497 is a new dimension (leadership-transition register) and new event window, not a duplicate."
+      statistical_discipline: "correlation_not_causation true; MANUAL ILLUSTRATIVE tones only; n=1 per side; is_significant false; p_value 1.0 reproduced by live scorer; no empirical significance claimed. Qualitative register finding per Aug 28 rule."
+      source_urls:
+        - "https://telecomlive.in/web/2026/08/08/how-googles-ai-power-centre-has-moved-to-sergey-brins-desk-after-demis-hassabis-steps-back-from-deepmind/"
+        - "https://www.newspointapp.com/english/tech/google-co-founder-sergey-brin-has-a-message-for-deepmind-staff-after-demis-hassabis-exits-as-ceo-catch-up-to-the-toi/articleshow/145048208f60866961bd5d7e982c352781e7bca8"
+        - "https://aimagazine.com/news/why-did-google-deepmind-ceo-demis-hassabis-step-down"
+        - "https://www.reuters.com/commentary/breakingviews/london-ai-scene-can-thrive-despite-deepmind-reset-2026-08-10/"
+        - "https://globaladvisors.biz/2026/08/27/global-advisors-news-brief-2026-08-27/"
+        - "https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0"
+      distinct_from_prior: "Zero test_type_a files pair FT with Google on the leadership-transition event (verified via ls grep). The Aug 5 FT x Google Type A (test_ft_google_coverage_asymmetry.py) is the glasses-framing dimension, a different analytical unit. #487 is Guardian x Google, a different publication. First FT x Google Type A on the dual-payer portfolio prediction (#437). Not Microsoft PCM related."
   anthropic:
     financial_tie: none_direct_indirect_via_google
     estimated_value: $0 direct FT to Anthropic, indirect via FT Google commercial partnership single figure millions GBP/yr plus Google up to $40B investment in Anthropic and Amazon up to $25B
