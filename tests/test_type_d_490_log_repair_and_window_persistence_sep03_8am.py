@@ -91,6 +91,20 @@ def _segment_between(start_prefix, end_prefix):
     return "\n".join(lines[start:end])
 
 
+def _count_stats():
+    """Authoritative test/file counts via scripts/count_stats.py.
+
+    Added #495: feeds the dynamic header-sync checks so hardcoded
+    "N tests across M test files" strings never go stale again.
+    """
+    import sys
+
+    sys.path.insert(0, str(REPO / "scripts"))
+    import count_stats
+
+    return count_stats.count_tests_pytest()
+
+
 class TestIteration490Metadata:
     def test_docstring_ids(self):
         doc = __doc__
@@ -118,19 +132,25 @@ class TestLog488PlacementRepair:
         assert not any(l.startswith("## Type B #488") for l in _log_lines())
 
     def test_top_has_newest_first_490_then_488_headings(self):
+        # Relative newest-first ordering (fixed #495): asserting absolute
+        # top-3 position broke when #491-#494 were legitimately prepended.
+        # The repair invariant is relative order 490 > 489 > 488.
         headings = _headings()
-        assert headings[0].startswith("#490 Type D:")
-        assert headings[1].startswith("#489 Type C:")
-        assert headings[2].startswith("#488 Type B:")
+        idx = {h.split(" ")[0]: i for i, h in enumerate(headings)}
+        assert idx["#490"] < idx["#489"] < idx["#488"]
 
     def test_488_heading_appears_exactly_once(self):
         assert sum(1 for l in _log_lines() if l.startswith("#488 Type B:")) == 1
 
     def test_newest_first_ordering_490_to_485(self):
+        # Relative ordering across the 485-490 window (fixed #495): the
+        # window keeps its newest-first invariant wherever it sits in the
+        # log, instead of asserting it occupies the absolute top-6 slots.
         headings = _headings()
-        expected = ["#490", "#489", "#488", "#487", "#486", "#485"]
-        actual = [h.split(" ")[0] for h in headings[:6]]
-        assert actual == expected
+        idx = {h.split(" ")[0]: i for i, h in enumerate(headings)}
+        order = ["#490", "#489", "#488", "#487", "#486", "#485"]
+        positions = [idx[m] for m in order]
+        assert positions == sorted(positions), positions
 
     def test_488_body_preserved_followup_marker(self):
         seg = _segment_between("#488 Type B:", "#487 Type A:")
@@ -204,12 +224,24 @@ class TestReadmeArchitectureSync:
         assert fname in ARCH.read_text(encoding="utf-8")
 
     def test_readme_header_counts_synced(self):
+        # Dynamic sync check (fixed #495): hardcoded "27383 tests across 818
+        # test files" went stale with every later iteration. Compare the
+        # README header numbers against scripts/count_stats.py actuals.
+        stats = _count_stats()
         text = README.read_text(encoding="utf-8")
-        assert "**27383 tests** across 818 test files" in text
+        m = re.search(r"\*\*(\d[\d,]*) tests\*\* across (\d+) test files", text)
+        assert m, "README header test-count line not found"
+        assert int(m.group(1).replace(",", "")) == stats["total_tests"]
+        assert int(m.group(2)) == stats["test_files"]
 
     def test_architecture_header_counts_synced(self):
+        # Dynamic sync check (fixed #495): see test_readme_header_counts_synced.
+        stats = _count_stats()
         text = ARCH.read_text(encoding="utf-8")
-        assert "27383 tests across 818 test files" in text
+        m = re.search(r"(\d[\d,]*) tests across (\d+) test files", text)
+        assert m, "ARCHITECTURE.md header test-count line not found"
+        assert int(m.group(1).replace(",", "")) == stats["total_tests"]
+        assert int(m.group(2)) == stats["test_files"]
 
 
 class TestYamlIntegrity:

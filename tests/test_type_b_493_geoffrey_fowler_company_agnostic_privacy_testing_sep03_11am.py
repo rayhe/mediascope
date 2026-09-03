@@ -250,12 +250,32 @@ class TestMechanism493Discipline:
 # ===================================================================
 # Class 7: Iteration log records #493 newest-first
 # ===================================================================
+def _heading_pos(marker):
+    # Line-anchored search (fixed #495b): plain str.index() matched quoted
+    # mentions of the heading literal inside newer entries' prose (the #495
+    # entry quotes '#493 Type B:' when describing the repaired assertion).
+    import re as _re
+    log = open(os.path.join(REPO_ROOT, 'iteration-log.md'), encoding='utf-8').read()
+    m = _re.search(r'^' + _re.escape(marker), log, _re.MULTILINE)
+    assert m, "heading not found: %s" % marker
+    return m.start(), log
+
+
 class TestIterationLog493:
-    def test_log_starts_with_493(self):
-        log = open(os.path.join(REPO_ROOT, 'iteration-log.md'), encoding='utf-8').read()
-        assert log.startswith('#493 Type B:'), "iteration log must start with the #493 entry (newest-first)"
+    def test_log_orders_493_newest_first(self):
+        # Relative newest-first ordering (fixed #495): the absolute
+        # log.startswith('#493 Type B:') assertion broke when #494 was
+        # legitimately prepended. The rotation invariant is relative order.
+        i494, _ = _heading_pos('#494 Type C:')
+        i493, _ = _heading_pos('#493 Type B:')
+        i492, _ = _heading_pos('#492 Type A:')
+        assert i494 < i493 < i492, "iteration log must keep #494 > #493 > #492 newest-first order"
 
     def test_log_names_fowler(self):
-        log = open(os.path.join(REPO_ROOT, 'iteration-log.md'), encoding='utf-8').read(4000)
-        assert 'Geoffrey Fowler' in log
-        assert 'Type B' in log
+        # Scoped to the #493 entry segment (fixed #495): the old first-4000
+        # chars slice broke once #494 pushed #493 past the slice boundary.
+        i493, log = _heading_pos('#493 Type B:')
+        i492, _ = _heading_pos('#492 Type A:')
+        seg = log[i493:i492]
+        assert 'Geoffrey Fowler' in seg
+        assert 'Type B' in seg

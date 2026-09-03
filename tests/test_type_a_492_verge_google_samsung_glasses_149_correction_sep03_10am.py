@@ -268,19 +268,43 @@ def test_artifact_readiness_no_update():
     assert "No analysis.json update warranted" in mech["artifact_readiness"]
 
 
-def test_iteration_log_rotation():
+def _heading_pos(marker):
+    # Line-anchored search (fixed #495b): plain str.index() matched quoted
+    # mentions of the heading literal inside newer entries' prose (the #495
+    # entry quotes "#492 Type A:" when describing the repaired assertion).
+    m = re.search(r"^" + re.escape(marker), ITER_LOG.read_text(), re.MULTILINE)
+    assert m, f"heading not found: {marker}"
+    return m.start()
+
+
+def _segment_between(start_marker, end_marker):
     log = ITER_LOG.read_text()
-    assert log.startswith("#492 Type A:")
-    assert "Previous entry #491 Type E at 09:00 PDT Sep 3 2026" in log
-    assert "next after E is A" in log
+    start = _heading_pos(start_marker)
+    end = _heading_pos(end_marker)
+    assert start < end
+    return log[start:end]
+
+
+def test_iteration_log_rotation():
+    # Relative newest-first ordering (fixed #495): the absolute
+    # log.startswith("#492 Type A:") assertion broke when #493 was
+    # legitimately prepended. The rotation invariant is relative order.
+    i493 = _heading_pos("#493 Type B:")
+    i492 = _heading_pos("#492 Type A:")
+    i491 = _heading_pos("#491 Type E:")
+    assert i493 < i492 < i491
+    seg = _segment_between("#492 Type A:", "#491 Type E:")
+    assert "Previous entry #491 Type E at 09:00 PDT Sep 3 2026" in seg
+    assert "next after E is A" in seg
 
 
 def test_novelty_block_present():
-    log = ITER_LOG.read_text()
-    head = log[:6000]
-    assert "Novelty Verification" in head
-    assert "#149" in head
-    assert "Zero test_type_a files pair Verge with Google" in head
+    # Scoped to the #492 entry segment (fixed #495): the old head-slice
+    # check broke once newer entries pushed #492 past 6000 chars.
+    seg = _segment_between("#492 Type A:", "#491 Type E:")
+    assert "Novelty Verification" in seg
+    assert "#149" in seg
+    assert "Zero test_type_a files pair Verge with Google" in seg
 
 
 def test_self_reference():

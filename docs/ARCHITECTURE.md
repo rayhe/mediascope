@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27470 tests across 821 test files (all from real articles)
+├── tests/                       # 27512 tests across 823 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1021,6 +1021,7 @@ mediascope/
 │   ├── test_type_c_483_schibsted_openai_realtime_deal_sep03_1am.py  # Type C #483: Schibsted Media x OpenAI real-time content deal - Sep 3 2026 01:00 PDT
 │   ├── test_type_c_489_hearst_openai_dual_payer_sep03_7am.py  # Type C #489: Hearst x OpenAI strategic content partnership (Oct 8 2024) and Amazon Rufus dual-AI-payer mapping - Sep 3 2026 07:00 PDT
 │   ├── test_type_c_494_vox_media_openai_partnership_sep03_12pm.py  # Type C #494: Vox Media x OpenAI strategic partnership (May 29 2024) - owner-level tie to The Verge - Sep 3 2026 12:00 PDT
+│   ├── test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py  # Type D #495: brittle self-top assertion repair + ban guard + 491-494 window persistence - Sep 3 2026 13:00 PDT
 │   ├── test_type_d_05am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion
 │   ├── test_type_d_06am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026
 │   ├── test_type_d_07am_cross_validation_aug27.py  # Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT)
@@ -1051,7 +1052,7 @@ mediascope/
 │   ├── test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py  # Type D #474: full-suite health and recent-mechanism persistence - Sep 2 2026 16:00 PDT.
 │   ├── test_type_d_479_boundary_discipline_registry_and_window_persistence_sep02_9pm.py  # Type D #479: boundary-discipline registry and 475-478 window persistence - Sep 2 2026 21:00 PDT.
 │   ├── test_type_d_485_collision_repair_and_window_persistence_sep03_3am.py  # Type D #485: mechanism-number collision repair (458 to 484) and 480-484 window persistence - Sep 3 2026 03:00 PDT
-│   ├── test_type_d_490_log_repair_and_window_persistence_sep03_8am.py  # Type D #490: iteration-log placement repair (#488 newest-first) and 485-489 window persistence - Sep 3 2026 08:00 PDT - 6 classes, 40 tests
+│   ├── test_type_d_490_log_repair_and_window_persistence_sep03_8am.py  # Type D #490: iteration-log placement repair (#488 newest-first) and 485-489 window persistence - Sep 3 2026 08:00 PDT - 6 classes, 28 defs (40 collected)
 │   ├── test_type_d_4pm_cross_validation_aug27.py  # Type D Cross-Validation - Thu 2026-08-27 4 PM PT
 │   ├── test_type_d_full_suite_cross_validation_type_d_397_aug30.py  # Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping
 │   ├── test_type_d_statistical_validity_comprehensive_aug28.py  # Type D - Comprehensive Statistical Validity & Pipeline Health

@@ -1,3 +1,29 @@
+#495 Type D: Test and Verify - Brittle Self-Top Assertion Repair (492/493/490), README Def-Count Convention Fix, 491-494 Window Persistence - Sep 3 2026 13:00 PDT
+
+**Date:** 2026-09-03 13:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 494 C -> 495 D)
+**Type:** D - Test and Verify (failure repair, durable guards, doc sync)
+**Failure inventory at run start:** 10 failures across 5 files. Every one was caused by a legitimate newest-first prepend or a stale hardcoded count, not by a data regression:
+- #492 file (2): `test_iteration_log_rotation` asserted `log.startswith("#492 Type A:")`, broke when #493 prepended; `test_novelty_block_present` asserted inside `log[:6000]`, broke when #493/#494 pushed #492 past the slice
+- #493 file (2): `test_log_starts_with_493` asserted `log.startswith('#493 Type B:')`, broke when #494 prepended; `test_log_names_fowler` read only the first 4000 chars, broke when #494 prepended
+- #490 file (4): `test_top_has_newest_first_490_then_488_headings` and `test_newest_first_ordering_490_to_485` asserted absolute top-3/top-6 slots, broke at #491; `test_readme_header_counts_synced` / `test_architecture_header_counts_synced` hardcoded "27383 tests across 818 test files", stale by design
+- test_structural_consistency.py (2): `test_readme_per_file_test_counts` - README said 40 for the #490 file (pytest-collected with parametrize) vs the table's raw-def-count convention (28); `test_architecture_test_file_count_header` - stale header
+**Risk-window verification (491-494 files, pre-repair):** 100 passed, 4 failed - the 4 failures are exactly the #492/#493 self-top assertions above; #491 and #494 files fully green.
+**Repairs (all in the owning files, additive "fixed #495" notes, no test logic weakened):**
+- #492: absolute-top -> relative newest-first ordering (493 > 492 > 491); novelty block scoped to the #492 entry segment instead of `log[:6000]`
+- #493: absolute-top -> relative ordering (494 > 493 > 492); Fowler block scoped to the #493 entry segment instead of `.read(4000)`
+- #490: absolute top-3/top-6 -> relative window ordering (490 > 489 > 488 > 487 > 486 > 485); hardcoded header strings -> dynamic checks via `scripts/count_stats.py::count_tests_pytest()` (new `_count_stats()` helper)
+- #495b second-order fix (caught by this run's own verification): the #495 entry prose quotes the exact heading literals it describes (e.g. `` `log.startswith("#492 Type A:")` ``), so naive `str.index("#492 Type A:")` matched the quote inside the #495 entry instead of the real heading. All three repaired files now use line-anchored (`^...`, re.MULTILINE) heading search. Durable rule amendment: never match iteration headings with unanchored substring search; always anchor to line start.
+- README: #490 per-file row 40 -> 28. Convention verified: the per-file table counts raw `def test_` (e.g. test_ap_appeals_deep_dive.py has 11 defs + 2 parametrize decorators, README says 11). The #493 log entry misdiagnosed this as a guard bug; the guard was right, the row was wrong. Near-miss: this iteration initially wrote 25 (collected) on its own #495 row; the structural guard caught it pre-commit and the row now reads 16 defs.
+**Durable rule established:** iteration-log.md is newest-first, so no test may assert its own entry is at the absolute top (`log.startswith("#NNN")`, `headings[0].startswith("#NNN")`) or inside a fixed head slice. The durable form is relative newest-first ordering between neighboring entries, or segment-scoped content checks. Existence checks over lines (`any(l.startswith("#488"))`) remain allowed.
+**Rotation Transparency:** Previous entry #494 Type C at 12:00 PDT Sep 3 2026 (commit 765d634 verified present via git log). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 490 D 08:00, 491 E 09:00, 492 A 10:00, 493 B 11:00, 494 C 12:00. Selected Type D.
+**Statistical discipline:** Metadata and repair integrity only; correlation_not_causation unchanged; no tone scores, no p_value, no significance claimed.
+**Artifact readiness:** No analysis.json update warranted. Type D defines no data mechanism.
+**New Type D files:** `tests/test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py` - 25 tests (metadata, repo-wide brittle-assertion ban via tokenize comment-stripping, 491-494 relative window persistence, count_stats --check gate, YAML integrity).
+**Doc sync:** README row + ARCHITECTURE tree row added for #495; #490 row count corrected 40 -> 28 in both; headers re-synced via `scripts/count_stats.py --check --pytest` (venv python, authoritative collected count).
+**Cumulative:** mechanism count unchanged at #494 (Type D defines no data mechanism); test/file counts re-synced via count_stats.
+**Throughput note:** full 27.5k-test suite runs at ~1.6 tests/s even with `pytest -n 2` (xdist, 2 CPUs) - roughly 5 hours, exceeding the hourly budget. Per the #490/#485 precedent, hourly Type D verifies the risk window + structural suite (both green this run); full-suite verification belongs to dedicated cross-validation iterations.
+
+---
 #494 Type C: Vox Media x OpenAI Strategic Content and Product Partnership (May 29 2024) - Owner-Level Tie to Tracked Publication The Verge - Sep 3 2026 12:00 PDT
 
 **Date:** 2026-09-03 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 493 B -> 494 C)

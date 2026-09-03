@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27487 | Across 822 test files |
+| Tests | 27512 | Across 823 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27487 tests** across 822 test files, each covering a different analytical capability:
+MediaScope has **27512 tests** across 823 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1269,6 +1269,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_483_schibsted_openai_realtime_deal_sep03_1am.py` | 17 | Type C #483: Schibsted Media x OpenAI real-time content deal - terms opacity and pre-existing entanglement - Sep 3 2026 01:00 PDT |
 | `test_type_c_489_hearst_openai_dual_payer_sep03_7am.py` | 19 | Type C #489: Hearst x OpenAI strategic content partnership (Oct 8 2024) and Amazon Rufus dual-AI-payer mapping - Sep 3 2026 07:00 PDT |
 | `test_type_c_494_vox_media_openai_partnership_sep03_12pm.py` | 17 | Type C #494: Vox Media x OpenAI strategic content and product partnership (May 29 2024) - owner-level tie to tracked publication The Verge; Forte ad-tech collaboration; newsroom/union opposition - Sep 3 2026 12:00 PDT |
+| `test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py` | 16 | Type D #495: brittle self-top assertion repair (492/493/490 -> relative newest-first ordering), repo-wide brittle-assertion ban guard, 491-494 window persistence - Sep 3 2026 13:00 PDT (16 defs, 25 collected with parametrize) |
 | `test_type_d_05am_full_suite_cross_validation_aug28.py` | 30 | Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion |
 | `test_type_d_06am_full_suite_cross_validation_aug28.py` | 37 | Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026 |
 | `test_type_d_07am_cross_validation_aug27.py` | 21 | Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT) |
@@ -1299,7 +1300,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_474_suite_health_and_mechanism_persistence_sep02_4pm.py` | 26 | Type D #474: full-suite health and recent-mechanism persistence - Sep 2 2026 16:00 PDT. |
 | `test_type_d_479_boundary_discipline_registry_and_window_persistence_sep02_9pm.py` | 29 | Type D #479: boundary-discipline registry and 475-478 window persistence - Sep 2 2026 21:00 PDT. |
 | `test_type_d_485_collision_repair_and_window_persistence_sep03_3am.py` | 30 | Type D #485: mechanism-number collision repair (458 to 484) and 480-484 window persistence - Sep 3 2026 03:00 PDT |
-| `test_type_d_490_log_repair_and_window_persistence_sep03_8am.py` | 40 | Type D #490: iteration-log placement repair (#488 newest-first) and 485-489 window persistence - Sep 3 2026 08:00 PDT |
+| `test_type_d_490_log_repair_and_window_persistence_sep03_8am.py` | 28 | Type D #490: iteration-log placement repair (#488 newest-first) and 485-489 window persistence - Sep 3 2026 08:00 PDT (28 defs, 40 collected with parametrize; table convention is def counts, fixed #495) |
 | `test_type_d_4pm_cross_validation_aug27.py` | 26 | Type D Cross-Validation - Thu 2026-08-27 4 PM PT |
 | `test_type_d_full_suite_cross_validation_type_d_397_aug30.py` | 31 | Type D: Full Suite Cross-Validation + Statistical Validity + Financial Incentive Mapping |
 | `test_type_d_statistical_validity_comprehensive_aug28.py` | 19 | Type D - Comprehensive Statistical Validity & Pipeline Health |
