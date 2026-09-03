@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27246 tests across 813 test files (all from real articles)
+├── tests/                       # 27299 tests across 815 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -993,6 +993,7 @@ mediascope/
 │   ├── test_type_a_471_nyt_openai_litigation_posture_boundary_condition_sep02_1pm.py  # Type A #471: NYT x OpenAI litigation-posture boundary condition (partial falsification) - Sep 2 2026 13:00 PDT
 │   ├── test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py  # Type A #476: MIT TR x Google coverage tone vs Meta - same-day natural experiment - Sep 2 2026 18:00 PDT
 │   ├── test_type_a_481_atlantic_openai_watchdog_entity_selection_asymmetry_sep02_11pm.py  # Type A #481: The Atlantic x OpenAI AI Watchdog entity-selection asymmetry vs Meta - Sep 2 2026 23:00 PDT
+│   ├── test_type_a_487_guardian_google_deepmind_leadership_renewal_vs_meta_deficit_framing_sep03_5am.py  # Type A #487: Guardian x Google DeepMind leadership-transition renewal register vs Meta deficit register - Sep 3 2026 05:00 PDT
 │   ├── test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py  # Test Type B #431: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry Aug 31 2026
 │   ├── test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py  # Test Type B #436: Lauren Goode Apple Vision Pro vs Meta Ray-Ban Emotional Register Asymmetry Sep 01 2026
 │   ├── test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py  # Type B #442 Boone Ashworth Snap vs Meta pricing subscription framing asymmetry
@@ -1075,6 +1076,7 @@ mediascope/
 │   ├── test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py  # Type E #470 - Podcast Sentiment Tracking Seventeenth Verification Sep 2 12:00 PDT
 │   ├── test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py  # Type E #475: podcast sentiment eighteenth verification - GF 498 hold, EHE 23-day hold, Attention Sphere 18th no-match - Sep 2 2026 17:00 PDT
 │   ├── test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py  # Type E #480: podcast sentiment sifted sixth vertical - Sep 2 2026 22:00 PDT
+│   ├── test_type_e_486_podcast_sentiment_twentieth_verification_sep03_4am.py  # Type E #486: podcast sentiment twentieth verification - Sep 3 2026 04:00 PDT
 │   ├── test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py  # Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast
 │   ├── test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py  # Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication
 │   ├── test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py  # Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365)

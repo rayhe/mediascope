@@ -1857,6 +1857,92 @@ competitor_relationships:
     direction: "receiving"
     description: "Google Digital News Initiative funding recipient. Google AI pilot program participant. Relationship is pragmatic — Guardian takes Google money but covers Google critically."
     coverage_prediction: "neutral"
+    mechanism_487_guardian_google_deepmind_leadership_renewal_vs_meta_deficit_framing:
+      mechanism_id: 487
+      iteration: 487
+      iteration_type: "A"
+      iteration_time: "2026-09-03 05:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      discovery_date: "2026-09-03"
+      publication_focus: "The Guardian"
+      entity_pair: "Google vs Meta"
+      type: "A - Competitor Coverage Deep Dive (Guardian x Google leadership-transition register)"
+      status: "BASELINE finding: register gap documented at headline/dek/body-excerpt level; bounds the financial-incentive theory, does not confirm it"
+      finding_summary: "August 2026 leadership-transition natural experiment. Google: DeepMind CEO Demis Hassabis steps down (Aug 5) as two senior engineers leave to launch a startup amid reported fears Google is falling behind in the AI race, with Alphabet shares closing down 4%. Guardian headline register stays institutional-neutral to aspirational: Aug 5 'Big shake-up in Google's AI team as DeepMind chief executive steps down', body canonizes Hassabis ('totemic figure', 'Nobel prize recipient', 'thoughtful, statesmanlike role', 'As befits a Nobel winner') and frames the exit as elevation (chair of DeepMind, chief scientist of Alphabet, 'focus on the big picture'). Aug 8 follow-up: 'Google DeepMind enters a new era as co-founder Demis Hassabis shifts AI role' ('new era' renewal framing for a CEO departure). Meta in the same window: Jul 29 'Meta misses earnings forecasts after Zuckerberg media push to promote AI' ('media push' diminishes the announcement around a genuine first-in-13-quarters miss); Aug 18 'Reel-ing it in: Meta is paying influencers to promote teen accounts' (adversarial accountability). Negative corporate news draws a renewal/canonization register for the News AI pilot partner versus a deficit/distancing register for the $0-deal company. This is a REGISTER finding, not a suppression finding: the Guardian printed the falling-behind fears (Aug 5 dek) and the 4% share drop, so no fact was buried; the asymmetry is in headline framing and person-treatment."
+      google_articles:
+        - title: "Big shake-up in Google's AI team as DeepMind chief executive steps down"
+          date: "2026-08-05"
+          journalist: "Dan Milmo"
+          url: "https://www.theguardian.com/technology/2026/aug/05/big-shake-up-in-googles-ai-team-as-deepmind-chief-executive-steps-down"
+          url_verification: "canonical URL surfaced verbatim via AI News Digest; theguardian.com blocked by policy so full text verified via three mirrors (cloudfront, europesays, grocliq) carrying identical Guardian text"
+          headline_frame: "institutional-neutral 'shake-up'; no deficit language"
+          dek: "Two senior engineers are leaving company to launch startup amid fears Google is falling behind in AI race"
+          canonization_markers: "totemic figure; Nobel prize recipient; thoughtful, statesmanlike role; As befits a Nobel winner"
+          elevation_markers: "becoming chair of DeepMind; chief scientist of Alphabet; focus on the big picture"
+          negative_facts_printed: "falling-behind fears in dek; Alphabet shares closed down 4%"
+          illustrative_tone: -0.15
+        - title: "Google DeepMind enters a new era as co-founder Demis Hassabis shifts AI role"
+          date: "2026-08-08"
+          journalist: "Dan Milmo"
+          url: "https://www.theguardian.com/technology/2026/aug/08/google-demis-hassabis-deepmind-shifts-role"
+          url_verification: "canonical URL surfaced verbatim via AI News Digest; lede excerpt verified via Muck Rack; theguardian.com blocked by policy"
+          headline_frame: "'enters a new era' renewal/aspiration framing for a CEO departure"
+          lede: "When Sir Demis Hassabis said AI had brought the world to a 'pivotal moment in human history' last month, he knew another big change was imminent"
+          counterweight_printed: "Observers express concern that the division has lost its independence and commercial reality has taken over (per AI News Digest dek excerpt)"
+          illustrative_tone: -0.05
+      meta_articles:
+        - title: "Meta misses earnings forecasts after Zuckerberg media push to promote AI"
+          date: "2026-07-29"
+          journalist: "Johana Bhuiyan"
+          headline_frame: "genuine first-in-13-quarters EPS miss coupled with 'media push' diminishment of the corporate announcement"
+          illustrative_tone: -0.45
+        - title: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          date: "2026-08-18"
+          journalist: "Johana Bhuiyan"
+          headline_frame: "adversarial accountability; paid-influencer teen marketing"
+          illustrative_tone: -0.5
+      scorer_manual_illustrative:
+        target_scores: [-0.45, -0.5]
+        peer_scores: [-0.15, -0.05]
+        target_avg: -0.475
+        peer_avg: -0.1
+        asymmetry_delta: -0.375
+        p_value: 0.0445
+        cohens_d: -6.71
+        is_significant: false
+        note: "MANUAL ILLUSTRATIVE only per Aug 28 rule. Hand-assigned tones, n=2 per side, headline/dek/body-excerpt level; theguardian.com blocked so Google-side bodies verified via mirrors. Live scorer run this iteration returned p_value 0.0445 and is_significant True on these tight synthetic arrays; documented is_significant False is a human discipline override per the #479 scorer-honesty precedent: synthetic arrays must never inherit scorer significance."
+      financial_context: "Guardian is an INITIAL PARTNER in Google's News AI pilot (Dec 2025; 'single figure millions' GBP/yr per Press Gazette Aug 2026) plus programmatic ad dependency (Alphabet Q2 2026 ad revenue $81.63B, mechanism #372). Meta: $0 AI licensing. Naive financial prediction (softer Google coverage) is consistent with the observed renewal register. Recorded as correlate only, not proof of editorial influence."
+      ranked_confounders:
+        strong:
+          - "UK national halo: Hassabis is London-born, a British Nobel laureate; the Guardian is a British paper. The warm person-register may reflect national pride rather than financial incentive. This alternative explains the canonization markers without any deal."
+          - "Different journalists and desks: Google pieces by Dan Milmo (UK global technology editor); Meta pieces by Johana Bhuiyan (US tech reporter). The register gap may reflect individual or desk style, not institutional direction."
+          - "Event-structure difference: a planned founder transition to chair plus chief scientist is genuinely more elevation-like than an earnings miss, so the 'new era' frame partly tracks the announced event shape."
+        moderate:
+          - "Critical facts were printed: falling-behind fears in the Aug 5 dek, the 4% share drop in the body, and the independence-loss observer concern in the Aug 8 dek. The finding is register-only, not suppression; a captured outlet would bury these facts."
+          - "Single fortnight window with two articles per side; no time series yet. A longer Milmo Google vs Bhuiyan Meta series is needed before generalizing."
+        weak:
+          - "Illustrative tone scores are hand-assigned at headline/dek/excerpt level, not derived from an empirical corpus."
+      counter_evidence:
+        - "Aug 5 dek carries 'fears Google is falling behind in AI race' and the body reports the 4% Alphabet close: negative facts not suppressed."
+        - "Aug 8 dek carries observer concern that DeepMind 'lost its independence and commercial reality has taken over'."
+        - "Milmo covers Google regulation factually-adversarially (EU 890M euro fine Jul 2026) per the journalist_cross_entity record; the Guardian covers AI Overviews traffic harm to publishers."
+      cross_references:
+        - "Mechanism #59 (Guardian Google dual-role paradox): structural finding; #487 is its first empirical tone-register test and is consistent with its testable prediction of no editorial escalation for Google, but the UK-halo confounder bounds attribution."
+        - "journalist_cross_entity.dan_milmo (Type B Aug 6): journalist-level regulatory-lens comparison (Meta -0.45 vs Google -0.35); #487 is publication-level and uses a new event window (Aug 5-8 leadership transition) and a new dimension (renewal vs deficit register), not the big-tobacco escalation dimension."
+        - "Mechanism #29 (Milmo rogue-AI allocation): allocation dimension (4 OpenAI vs 0 Meta standalone); #487 is the register dimension for Google, distinct pair and dimension."
+        - "Mechanism #472 (Bhuiyan discipline check): journalist-level boundary on the OpenAI pair; #487 uses Bhuiyan's Meta pieces only as the publication-level Meta comparator."
+      statistical_discipline: "correlation_not_causation true; MANUAL ILLUSTRATIVE tones only; is_significant false; no empirical significance claimed. Qualitative register finding per Aug 28 rule."
+      source_urls:
+        - "https://buzzsumo.com/journalist/dan-milmo-1645912/"
+        - "https://muckrack.com/danmilmo"
+        - "https://d33gy59ovltp76.cloudfront.net/news/big-shake-up-in-googles-ai-team-as-deepmind-chief-executive-steps-down"
+        - "https://www.europesays.com/3177366/"
+        - "https://github.com/isabella665/news/issues/60"
+        - "https://github.com/isabella665/news/issues/63"
+        - "https://buzzsumo.com/journalist/johana-bhuiyan-149038734/"
+        - "https://muckrack.com/johana-bhuiyan/articles"
+      distinct_from_prior: "First Guardian x Google Type A deep dive (zero test_type_a files pair Guardian with Google; iteration log has no Guardian x Google Type A). Zero prior 'hassabis' mentions in profiles/guardian.yaml. Distinct analytical unit from #59 (structural), the Milmo journalist cross-entity (journalist-level, regulatory lens), #29 (allocation dimension, OpenAI pair), and #472 (journalist-level boundary, OpenAI pair). Not Microsoft PCM related."
   samsung:
     financial_tie: "indirect"
     estimated_value: "undisclosed"

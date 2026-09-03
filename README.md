@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27246 | Across 813 test files |
+| Tests | 27299 | Across 815 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27246 tests** across 813 test files, each covering a different analytical capability:
+MediaScope has **27299 tests** across 815 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1241,6 +1241,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_471_nyt_openai_litigation_posture_boundary_condition_sep02_1pm.py` | 25 | Type A #471: NYT x OpenAI litigation-posture boundary condition - adversarial financial posture does not produce blanket adversarial coverage (partial falsification) - Sep 2 2026 13:00 PDT |
 | `test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py` | 19 | Type A #476: MIT TR x Google coverage tone vs Meta - same-day natural experiment - Sep 2 2026 18:00 PDT |
 | `test_type_a_481_atlantic_openai_watchdog_entity_selection_asymmetry_sep02_11pm.py` | 17 | Type A #481: The Atlantic x OpenAI AI Watchdog entity-selection asymmetry vs Meta - Sep 2 2026 23:00 PDT |
+| `test_type_a_487_guardian_google_deepmind_leadership_renewal_vs_meta_deficit_framing_sep03_5am.py` | 20 | Type A #487: Guardian x Google DeepMind leadership-transition renewal register vs Meta deficit register - Sep 3 2026 05:00 PDT |
 | `test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py` | 14 | Test Type B #431: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry Aug 31 2026 |
 | `test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py` | 24 | Test Type B #436: Lauren Goode Apple Vision Pro vs Meta Ray-Ban Emotional Register Asymmetry Sep 01 2026 |
 | `test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py` | 21 | Type B #442 Boone Ashworth Snap vs Meta pricing subscription framing asymmetry |
@@ -1323,6 +1324,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_470_podcast_sentiment_seventeenth_verification_sep02_12pm.py` | 30 | Type E #470 - Podcast Sentiment Tracking Seventeenth Verification Sep 2 12:00 PDT |
 | `test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py` | 30 | Type E #475: podcast sentiment eighteenth verification - GF 498 hold, EHE 23-day hold, Attention Sphere 18th no-match - Sep 2 2026 17:00 PDT |
 | `test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py` | 38 | Type E #480: podcast sentiment sifted sixth vertical - GF 498 hold 19th cycle, Attention Sphere 19th no-match - Sep 2 2026 22:00 PDT |
+| `test_type_e_486_podcast_sentiment_twentieth_verification_sep03_4am.py` | 33 | Type E #486: podcast sentiment twentieth verification - GF 498 hold 20th cycle, EHE 24-day hold, Attention Sphere 20th no-match - Sep 3 2026 04:00 PDT |
 | `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
 | `test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` | 25 | Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication |
 | `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
