@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27584 tests across 825 test files (all from real articles)
+├── tests/                       # 27615 tests across 826 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1087,6 +1087,7 @@ mediascope/
 │   ├── test_type_e_491_podcast_sentiment_twentyfirst_verification_sep03_9am.py  # Type E #491: podcast sentiment twenty-first verification - Sep 3 2026 09:00 PDT - 7 classes, 33 tests
 │   ├── test_type_e_496_podcast_sentiment_twentysecond_verification_sep03_2pm.py  # Type E #496: podcast sentiment twenty-second verification - Sep 3 2026 14:00 PDT - 7 classes, 33 tests
 │   ├── test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py  # Type A #497: FT x Google DeepMind leadership-transition register - Sep 3 2026 15:00 PDT - 11 classes, 39 tests
+│   ├── test_type_b_498_kara_swisher_vox_openai_deal_falsification_sep03_4pm.py  # Type B #498: Kara Swisher vs #494 Vox-OpenAI deal prediction - deal-partner falsification - Sep 3 2026 16:00 PDT - 7 classes, 31 tests
 │   ├── test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py  # Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast
 │   ├── test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py  # Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication
 │   ├── test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py  # Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365)

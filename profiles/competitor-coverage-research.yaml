@@ -24582,6 +24582,88 @@ cross_publication_findings:
     - https://www.marketplace.org/episode/2019/06/28/when-a-tech-columnist-digs-into-the-secret-life-of-his-data
     - https://yro.slashdot.org/story/17/12/09/0414237/reporter-regrets-letting-amazons-delivery-people-into-his-house
     - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=bc9f63cc-eb9d-4028-9880-61de14178b88
+  vox_kara_swisher_openai_deal_partner_falsification:
+    mechanism: vox_kara_swisher_openai_deal_partner_falsification
+    mechanism_id: 498
+    journalist: Kara Swisher
+    publication: vox-media (On with Kara Swisher, Vox Media Podcast Network; editor-at-large Sep 2022-present)
+    publication_owner: Vox Media (owns The Verge, a tracked publication)
+    deal_mechanism_id: 494
+    deal_date: '2024-05-29'
+    deal_summary: 'Vox Media x OpenAI strategic content and product partnership (May 29 2024): OpenAI gets Vox/Verge current content plus full archive for training; Vox builds on OpenAI tech including ad-targeting extensions. Terms undisclosed.'
+    role: editor-at-large, podcast host
+    discovery_date: '2026-09-03'
+    verification_date: '2026-09-03'
+    date_added: '2026-09-03'
+    iteration: 498
+    iteration_type: B
+    finding_type: deal_partner_falsification
+    finding_summary: Within-journalist cross-entity discipline check. Swisher applies a uniformly adversarial register to Meta, OpenAI, and Apple across 2018-2025. No puff-piece bifurcation toward the deal partner found in the verified corpus.
+    key_finding: 'Deal-partner falsification of the naive mechanism-494 prediction. Vox Media took OpenAI money on May 29 2024, yet Swisher''s two hardest-hitting OpenAI items post-date the deal: the Jul 5 2024 live Murati interview pressing the Scarlett Johansson voice-theft controversy and profit-over-safety accusations (five weeks post-deal), and the Sep 25 2025 episode platforming parents suing OpenAI and Sam Altman personally over the ChatGPT teen-suicide case (sixteen months post-deal).'
+    cross_entity_corpus:
+      meta_dangerous:
+        piece: Burn Book memoir framing of Zuckerberg, requoted Jan 2025
+        result: 'the most dangerous person in the tech world'
+        register: adversarial
+      meta_arms_dealers:
+        piece: NYT column on Silicon Valley controversies (Aug 7 2018)
+        result: Facebook and other giants called 'digital arms dealers'
+        register: adversarial
+      meta_education:
+        piece: NYT Opinion column on the information wars
+        result: 'why the public is paying for Mark Zuckerbergs education'
+        register: adversarial
+      openai_blip_pre_deal:
+        piece: Nov 21 2023 episode on the Altman ouster
+        result: Broke the 505 of 700 employee letter; called the board 'stupid' and 'bad'
+        register: adversarial
+      openai_gpt4_pre_deal:
+        piece: Mar 2023 Altman interview on GPT-4 and the AI arms race
+        result: Pressed hallucinations, closed-source capped-profit conversion, Section 230 immunity
+        register: adversarial
+      openai_murati_post_deal:
+        piece: Jul 5 2024 live Murati interview (five weeks post-deal)
+        result: Pressed ScarJo voice-theft controversy and profit-over-safety accusations
+        register: adversarial
+      openai_raine_post_deal:
+        piece: Sep 25 2025 episode platforming parents suing OpenAI and Altman personally (sixteen months post-deal)
+        result: 'Did ChatGPT Encourage a Teen Suicide? The Parents Suing OpenAI Say Yes'
+        register: adversarial
+      apple_cook:
+        piece: Apr 5 2021 Sway interview with Tim Cook
+        result: Pressed Epic antitrust, sideloading, Parler removal, 'most vulnerable part of the business'
+        register: adversarial
+    falsification_family: [457, 471, 472, 492, 493]
+    related_mechanisms: [493, 494, 457, 471, 472, 492]
+    confounding_factors:
+    - level: STRONG
+      factor: Star-franchise confound. Swisher's brand is adversarial access journalism across five outlets and 40 years; the uniform register may be the product itself rather than evidence about institutional incentive structure.
+    - level: STRONG
+      factor: Temporal spread. Corpus spans Aug 2018 to Sep 2025; only two OpenAI items fall in the post-deal window, so the falsification rests on a small post-deal sample.
+    - level: MODERATE
+      factor: Secondary-source dependence. Quotes verified via search-result excerpts and mirror pages (Out, Becker's, iHeart, Podfollow, MacStories, MacRumors, GitHub transcript mirror); no primary vox.com or NYT page opened first-hand this run.
+    - level: MODERATE
+      factor: Genre difference. The OpenAI corpus is interview/podcast format while the Meta corpus is column/memo format; adversarial intensity may not be directly comparable across genres.
+    - level: WEAK
+      factor: Hand-assigned illustrative tones only; no empirical corpus scoring.
+    statistical_discipline:
+      is_significant: false
+      correlation_not_causation: true
+      tone_scores: MANUAL ILLUSTRATIVE ONLY
+      p_value: NOT_CALCULATED
+    test_file: tests/test_type_b_498_kara_swisher_vox_openai_deal_falsification_sep03_4pm.py
+    source_urls:
+    - https://www.out.com/media/mark-zuckerberg-kara-swisher-criticism-reactions?xrs=RebelMouse_fb&ts=1737136481
+    - https://www.publicradioeast.org/us/2018-08-07/silicon-valley-cant-outrun-its-controversies-so-what-should-it-do
+    - https://www.nytco.com/press/kara-swisher-is-departing-times-opinion/
+    - https://www.beckershospitalreview.com/disruptors/what-openais-fight-says-about-boards/
+    - https://www.thewrap.com/openai-employees-call-board-resign-sam-altman/
+    - https://www.podchaser.com/podcasts/on-with-kara-swisher-4865725/episodes/openai-ceo-sam-altman-on-gpt-4-167533271
+    - https://podfollow.com/pivot/episode/62ed6c2612259e2bb41c35c7ed77abf18932586d/view
+    - https://www.iheart.com/podcast/1319-on-with-kara-swisher-101646907/episode/did-chatgpt-encourage-a-teen-suicide-296670345/
+    - https://www.macstories.net/news/kara-swisher-interviews-apple-ceo-cook-for-sway/
+    - https://www.macrumors.com/2021/04/05/tim-cook-sideloading-apps-would-break-the-iphone/
+    - https://canadian-podcasts.com/podcast/on-with-kara-swisher/sam-altman-openai-and-the-future-of-artificial-gen
 
 methodology: 'For each profiled publication, we compared coverage tone and framing
 

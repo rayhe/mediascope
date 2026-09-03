@@ -1553,6 +1553,85 @@ journalists:
     institution: Columbia University Graduate School of Journalism
     source_url: https://en.wikipedia.org/wiki/Kara_Swisher
   multi_publication: true
+  competitor_coverage:
+    type_b_498_within_journalist_finding:
+      mechanism_id: 498
+      iteration: 498
+      description: 'Uniform adversarial register toward Meta, OpenAI, and Apple across 2018-2025. Falsifies the naive mechanism-494 prediction that the Vox Media x OpenAI strategic partnership (May 29 2024) would soften Swisher coverage of OpenAI: the two hardest-hitting OpenAI items post-date the deal.'
+      pattern: deal_partner_falsification
+      falsification_family: [457, 471, 472, 492, 493]
+    meta_zuckerberg_most_dangerous:
+      piece: 'Burn Book memoir framing of Mark Zuckerberg, requoted in Jan 2025 Threads post'
+      date: '2025-01'
+      adversarial_register: true
+      adversarial_vocabulary: 'the most dangerous person in the tech world'
+      result: 'Zuckerberg labeled the most dangerous person in tech who did not know it, now knows it'
+      source_urls:
+      - https://www.out.com/media/mark-zuckerberg-kara-swisher-criticism-reactions?xrs=RebelMouse_fb&ts=1737136481
+    meta_digital_arms_dealers:
+      piece: 'NYT column on Silicon Valley controversies'
+      date: '2018-08-07'
+      adversarial_register: true
+      adversarial_vocabulary: 'digital arms dealers'
+      result: 'Facebook and other Silicon Valley giants called digital arms dealers'
+      source_urls:
+      - https://www.publicradioeast.org/us/2018-08-07/silicon-valley-cant-outrun-its-controversies-so-what-should-it-do
+    meta_zuckerberg_education_column:
+      piece: 'NYT Opinion column on fighting the information wars'
+      date: '2018-2022'
+      adversarial_register: true
+      adversarial_vocabulary: 'why the public is paying for Mark Zuckerbergs education'
+      result: 'Column argued the public pays for Zuckerbergs education'
+      source_urls:
+      - https://www.nytco.com/press/kara-swisher-is-departing-times-opinion/
+    openai_board_blip_criticism:
+      piece: 'On with Kara Swisher Nov 21 2023 episode on the Altman ouster'
+      date: '2023-11-21'
+      adversarial_register: true
+      adversarial_vocabulary: 'stupid boards, bad board, inexperienced board'
+      result: 'Broke the 505 of 700 employee letter demanding the board resign and reinstate Altman'
+      post_deal: false
+      source_urls:
+      - https://www.beckershospitalreview.com/disruptors/what-openais-fight-says-about-boards/
+      - https://www.thewrap.com/openai-employees-call-board-resign-sam-altman/
+    openai_altman_gpt4_interview:
+      piece: 'On with Kara Swisher interview with Sam Altman on GPT-4 and the AI arms race'
+      date: '2023-03'
+      adversarial_register: true
+      adversarial_vocabulary: 'hallucinations of ChatGPT, closed-source capped-profit shift, Section 230 immunity'
+      result: 'Pressed Altman on hallucinations, the nonprofit-to-capped-profit conversion, and why AI developers should not enjoy Section 230 immunity'
+      post_deal: false
+      source_urls:
+      - https://www.podchaser.com/podcasts/on-with-kara-swisher-4865725/episodes/openai-ceo-sam-altman-on-gpt-4-167533271
+    openai_murati_scarjo_interview:
+      piece: 'Live on-stage interview with OpenAI CTO Mira Murati at Johns Hopkins Bloomberg Center'
+      date: '2024-07-05'
+      adversarial_register: true
+      adversarial_vocabulary: 'Scarlett Johansson voice theft controversy, profit over safety accusations'
+      result: 'Pressed Murati on the ScarJo voice controversy and profit-over-safety accusations five weeks after the Vox-OpenAI deal'
+      post_deal: true
+      source_urls:
+      - https://podfollow.com/pivot/episode/62ed6c2612259e2bb41c35c7ed77abf18932586d/view
+    openai_raine_teen_suicide_episode:
+      piece: 'Did ChatGPT Encourage a Teen Suicide? The Parents Suing OpenAI Say Yes'
+      date: '2025-09-25'
+      adversarial_register: true
+      adversarial_vocabulary: 'parents suing OpenAI and CEO Sam Altman, chatbot helped teen die'
+      result: 'Platformed parents suing OpenAI and Altman personally, alleging ChatGPT isolated their son and helped him die; 16 months after the Vox-OpenAI deal'
+      post_deal: true
+      targets_altman_personally: true
+      source_urls:
+      - https://www.iheart.com/podcast/1319-on-with-kara-swisher-101646907/episode/did-chatgpt-encourage-a-teen-suicide-296670345/
+    apple_cook_sway_antitrust_interview:
+      piece: 'Sway interview with Apple CEO Tim Cook'
+      date: '2021-04-05'
+      adversarial_register: true
+      adversarial_vocabulary: 'Epic going their own way, sideloading, most vulnerable part of the business'
+      result: 'Pressed Cook on Epic antitrust, why Apple must control the App Store, sideloading, and Parler removal'
+      source_urls:
+      - https://www.macstories.net/news/kara-swisher-interviews-apple-ceo-cook-for-sway/
+      - https://www.macrumors.com/2021/04/05/tim-cook-sideloading-apps-would-break-the-iphone/
+      - https://github.com/extratone/bilge/blob/HEAD/documentation/Tim%20Cook%20Interview%202021%20Transcript%20-%20Kara%20Swisher.md
 - awards:
   - category: Distinguished Business Reporting
     for: Uber coverage at NYT
