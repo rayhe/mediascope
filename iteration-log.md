@@ -1,3 +1,16 @@
+#490 Type D: Test and Verify - Iteration-Log Placement Repair (#488 Newest-First) and 485-489 Window Persistence - Sep 3 2026 08:00 PDT
+
+**Date:** 2026-09-03 08:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 489 C -> 490 D)
+**Type:** D - Test and Verify (log repair, window persistence, doc sync)
+**Repair:** The 06:00 PDT Sep 3 run appended its Type B Chris Welch within-journalist follow-up as a bottom-appended "## Type B #488" entry. Per the #485 precedent (which repaired the identically malformed "## Iteration 458" entry), moved it to file top in newest-first format as "#488 Type B: Chris Welch Within-Journalist Follow-Up ...", reordered so 489 > 488 > 487, content preserved byte-for-byte (mechanism #85 follow-up marker, all 5 source URLs, files-changed list). Zero "## Type B #488" headings remain; "#488 Type B:" appears exactly once.
+**Workstreams:** (1) risk-window verification - the 4 test files added since the last Type D (#485, 03:00 PDT): 97 passed, 0 failed, 0 skipped; (2) new persistence regression guard `tests/test_type_d_490_log_repair_and_window_persistence_sep03_8am.py` (6 classes, 40 tests collected): #488 placement repair, 485-489 window persistence (test files, log headings, YAML anchors; #488 correctly holds no new mechanism_id by design), README/ARCHITECTURE row presence, header counts, YAML parse integrity, #364 scorer determinism; (3) doc sync - `scripts/count_stats.py --check` (authoritative pytest-collected count) found README stale at 27299/815 vs actual 27343/817: the #488 (25 tests) and #489 (19 tests) rows were never registered. Added all 3 missing rows (#488, #489, #490) to README and ARCHITECTURE; headers synced to 27383 tests across 818 files.
+**Rotation Transparency:** Previous entry #489 Type C at 07:00 PDT Sep 3 2026 (commit 7e1b359 verified present via git log). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 485 D 03:00, 486 E 04:00, 487 A 05:00, 488 B 06:00, 489 C 07:00. Selected Type D.
+**Statistical discipline:** Metadata and repair integrity only; correlation_not_causation unchanged; no tone scores, no p_value, no significance claimed.
+**Artifact readiness:** No analysis.json update warranted. Type D defines no data mechanism.
+**New Type D files:** `tests/test_type_d_490_log_repair_and_window_persistence_sep03_8am.py` - 40 tests.
+**Cumulative:** mechanism count unchanged at #489; 27383 tests across 818 files.
+
+---
 #489 Type C: Hearst x OpenAI Strategic Content Partnership (Oct 8 2024) and Amazon Rufus Dual-AI-Payer Mapping - Sep 3 2026 07:00 PDT
 
 **Date:** 2026-09-03 07:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 488 B -> 489 C)
@@ -11,6 +24,34 @@
 **Artifact readiness:** No analysis.json update warranted. Structural financial-mapping mechanism with significant=false defines no new artifact-grade tone data.
 **New Type C files:** `profiles/competitor-entities.yaml` gained `mechanism_489_hearst_openai_dual_ai_payer_partnership` under entities.openai (all-ASCII byte-verified, YAML-parsed); `tests/test_type_c_489_hearst_openai_dual_payer_sep03_7am.py` - 19 tests.
 **Cumulative:** mechanism #489 logged.
+
+
+---
+
+#488 Type B: Chris Welch Within-Journalist Follow-Up (Mechanism #85 Correction, Verge-Era Adversarial Piece Found) - Sep 3 2026 06:00 PDT
+
+**Mechanism #85 follow-up (within-journalist correction, NOT a new mechanism): Chris Welch Verge-era adversarial piece found and profile corrected.**
+
+**Correction:** profiles/careers/journalists.yaml recorded Welch's Verge-era Meta-glasses adversarial piece count as 0 ("product reviewer, NOT privacy investigator"). Web research this run found his May 1 2025 Verge byline "Meta tightens privacy policy around Ray-Ban glasses to boost AI training," covering the April 29 2025 Ray-Ban Meta privacy update (Hey Meta default-on, voice-recording cloud-storage opt-out removed, 1-year retention). Corrected to adversarial_pieces: 1 with full citation. Direct Verge URL not recovered (Verge is JS-heavy); byline/date/headline confirmed via Techmeme, full text via mirror, verbatim quotes via Security Now #1024 transcript.
+
+**Within-journalist contrast (tightens #85 from between-person to within-person):** At The Verge, Welch's own copy used adversarial privacy vocabulary ("giving Meta AI a more frequent view of the world", "Meta is taking after Amazon", "heaps of data"). At Bloomberg (Jul 22 2026), covering Samsung Galaxy Glasses whose Gemini AI analyzes the wearer's camera feed in real time, his framing was neutral-positive with privacy as a product attribute and zero adversarial vocabulary. The adversarial register appears in his Verge output and is absent from his Bloomberg output for structurally similar hardware.
+
+**Confounder update:** Weakens #85's MODERATE confounder ("Welch was a product reviewer, not a privacy investigator; he may not have written adversarial privacy pieces even if he stayed at The Verge") - he demonstrably did. New MODERATE confounder: genre asymmetry (privacy-policy rollback vs product launch). New WEAK confounder: fourteen-month gap.
+
+**Source URLs (Verge piece):**
+- https://www.techmeme.com/250501/p23
+- https://old.thelemmy.club/comment/18411988?source
+- http://www.grc.com/sn/sn-1024.htm
+- https://techcrunch.com/2025/04/30/if-you-own-ray-ban-meta-glasses-you-should-double-check-your-privacy-settings/
+- Samsung Gemini real-time camera analysis: https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
+
+**Files changed:**
+- profiles/careers/journalists.yaml (verge_era correction + type_b_488_within_journalist_followup)
+- profiles/competitor-coverage-research.yaml (within_journalist_followup on mechanism #85, mechanism_id stays 85)
+- tests/test_chris_welch_within_journalist_meta_vs_samsung_privacy_sep03.py (new, 25 tests, 4 classes)
+
+**Test file:** `test_chris_welch_within_journalist_meta_vs_samsung_privacy_sep03.py` - 4 classes, 25 tests (profile correction, follow-up block, mechanism #85 follow-up, comparison symmetry)
+
 
 ---
 
@@ -27060,27 +27101,3 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
 
-
-## Type B #488 - Journalist Cross-Entity Tracking - September 3, 2026 06:00 PDT
-
-**Mechanism #85 follow-up (within-journalist correction, NOT a new mechanism): Chris Welch Verge-era adversarial piece found and profile corrected.**
-
-**Correction:** profiles/careers/journalists.yaml recorded Welch's Verge-era Meta-glasses adversarial piece count as 0 ("product reviewer, NOT privacy investigator"). Web research this run found his May 1 2025 Verge byline "Meta tightens privacy policy around Ray-Ban glasses to boost AI training," covering the April 29 2025 Ray-Ban Meta privacy update (Hey Meta default-on, voice-recording cloud-storage opt-out removed, 1-year retention). Corrected to adversarial_pieces: 1 with full citation. Direct Verge URL not recovered (Verge is JS-heavy); byline/date/headline confirmed via Techmeme, full text via mirror, verbatim quotes via Security Now #1024 transcript.
-
-**Within-journalist contrast (tightens #85 from between-person to within-person):** At The Verge, Welch's own copy used adversarial privacy vocabulary ("giving Meta AI a more frequent view of the world", "Meta is taking after Amazon", "heaps of data"). At Bloomberg (Jul 22 2026), covering Samsung Galaxy Glasses whose Gemini AI analyzes the wearer's camera feed in real time, his framing was neutral-positive with privacy as a product attribute and zero adversarial vocabulary. The adversarial register appears in his Verge output and is absent from his Bloomberg output for structurally similar hardware.
-
-**Confounder update:** Weakens #85's MODERATE confounder ("Welch was a product reviewer, not a privacy investigator; he may not have written adversarial privacy pieces even if he stayed at The Verge") - he demonstrably did. New MODERATE confounder: genre asymmetry (privacy-policy rollback vs product launch). New WEAK confounder: fourteen-month gap.
-
-**Source URLs (Verge piece):**
-- https://www.techmeme.com/250501/p23
-- https://old.thelemmy.club/comment/18411988?source
-- http://www.grc.com/sn/sn-1024.htm
-- https://techcrunch.com/2025/04/30/if-you-own-ray-ban-meta-glasses-you-should-double-check-your-privacy-settings/
-- Samsung Gemini real-time camera analysis: https://www.macrumors.com/2026/05/13/samsung-ai-smart-glasses-july/
-
-**Files changed:**
-- profiles/careers/journalists.yaml (verge_era correction + type_b_488_within_journalist_followup)
-- profiles/competitor-coverage-research.yaml (within_journalist_followup on mechanism #85, mechanism_id stays 85)
-- tests/test_chris_welch_within_journalist_meta_vs_samsung_privacy_sep03.py (new, 25 tests, 4 classes)
-
-**Test file:** `test_chris_welch_within_journalist_meta_vs_samsung_privacy_sep03.py` - 4 classes, 25 tests (profile correction, follow-up block, mechanism #85 follow-up, comparison symmetry)
