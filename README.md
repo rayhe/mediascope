@@ -49,10 +49,10 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 260 | Career data with source URLs |
-| Career-entry migrations | 974 | Across 444 publications |
+| Journalists tracked | 261 | Career data with source URLs |
+| Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27441 | Across 820 test files |
+| Tests | 27470 | Across 821 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **260 journalists** (60 with structured education records) across 440+ publications (974 tracked migrations). Notable high-value migrations include:
+Ships with verified career data for **261 journalists** (60 with structured education records) across 440+ publications (975 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -376,7 +376,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 13 distinct correction paths (A–N), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 260 journalists, 759 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 261 journalists, 760 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27441 tests** across 820 test files, each covering a different analytical capability:
+MediaScope has **27470 tests** across 821 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1256,6 +1256,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02_7pm.py` | 29 | Type B #477: Grace Huckins (MIT TR) fortnight Google vs Meta discipline check - Sep 2 2026 19:00 PDT |
 | `test_type_b_482_karen_weise_amazon_microsoft_headline_verb_asymmetry_sep03.py` | 31 | Type B #482: NYT Karen Weise within-journalist Amazon vs Microsoft headline-verb asymmetry - Sep 3 2026 00:00 PDT |
 | `test_type_b_484_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py` | 7 | Type B #484: NYT Brian X. Chen Meta vs Apple privacy vocabulary bifurcation - Sep 3 2026 02:00 PDT (renumbered from 458 by #485) |
+| `test_type_b_493_geoffrey_fowler_company_agnostic_privacy_testing_sep03_11am.py` | 29 | Type B #493: WaPo Geoffrey Fowler company-agnostic adversarial privacy testing - ownership-level falsification (Meta/Apple/Amazon/Google same register; "I review all tech the same") - Sep 3 2026 11:00 PDT |
 | `test_type_c_432_advance_turnitin_dual_sided_ai_conflict_aug31.py` | 21 | Type C #432: Advance Publications Turnitin Dual-Sided AI Conflict Formalization Aug 31 2026 22:00 PDT |
 | `test_type_c_437_ft_dual_ai_payer_portfolio_sep01.py` | 23 | Type C #437: FT Dual AI Payer Portfolio Sep 1 2026 03:00 PDT |
 | `test_type_c_443_microsoft_pcm_marketplace_transparency_paradox_sep01.py` | 26 | Mechanism #443 Type C: Microsoft Publisher Content Marketplace (PCM) Transparency Paradox |

@@ -24514,6 +24514,75 @@ cross_publication_findings:
     - mechanism_id: 349
       relationship: Fischer Axios publication-level vocabulary register inversion
     test_file: tests/test_settlement_week_complete_financial_architecture_convergence_index_aug27.py
+  wapo_geoffrey_fowler_company_agnostic_privacy_testing:
+    mechanism: wapo_geoffrey_fowler_company_agnostic_privacy_testing
+    mechanism_id: 493
+    journalist: Geoffrey Fowler
+    publication: washington-post
+    publication_owner: Nash Holdings (Jeff Bezos, personal ownership since 2013)
+    role: technology columnist (San Francisco)
+    discovery_date: '2026-09-03'
+    verification_date: '2026-09-03'
+    date_added: '2026-09-03'
+    iteration: 493
+    iteration_type: B
+    finding_type: company_agnostic_adversarial_privacy_testing
+    finding_summary: Within-journalist cross-entity discipline check. Fowler's first-person privacy-testing column ("The Secret Life of My Data") applies an identical adversarial register to Meta, Apple, Amazon, and Google across 2017-2021. No puff-piece bifurcation found in the verified corpus.
+    key_finding: Ownership-level inversion of the naive financial-incentive prediction. The strongest possible financial tie (the publication owner company, Amazon, via Bezos/Nash Holdings) received two of Fowler's hardest-hitting adversarial tests (Alexa four-year audio retention; Amazon Key removal after two weeks), with an on-the-record "I review all tech the same" addressing the ownership directly.
+    cross_entity_corpus:
+      meta:
+        piece: Two-week Facebook/Instagram cut-off experiment (2019)
+        result: Facebook tracked him across at least 95 apps, websites, and businesses
+        register: adversarial ("hired a private eye to prepare a dossier about my life")
+      apple_airtag:
+        piece: AirTag mock-stalking test (May 5 2021)
+        result: AirTags are a new means of inexpensive, effective stalking; safeguards "just are not sufficient"
+        register: adversarial
+      apple_iphone:
+        piece: Overnight iPhone network capture (2019)
+        result: Thousands of third-party trackers took data while he slept
+        register: adversarial
+      amazon_alexa:
+        piece: Alexa voice archive request (2019)
+        result: Four years of retained home audio including medication conversations
+        register: adversarial
+      amazon_key:
+        piece: Amazon Key smart lock two-week install (Dec 2017)
+        result: Removed after two weeks; "the biggest downsides ... it has been Amazon"
+        register: adversarial
+      google_chrome:
+        piece: Chrome tracker measurement (2019)
+        result: 11,000+ trackers in a single week
+        register: adversarial
+    meta_glasses_bounded_absence: No Fowler byline conducting a Meta smart-glasses adversarial privacy test surfaced in four targeted searches this run. The Sep 2021 Ray-Ban Stories launch piece ("Smart Glasses Made Google Look Dumb...") is NYT/Mike Isaac, verified via byline attribution. Per the iteration-492 rule this absence is search-bounded, not a zero claim.
+    falsification_family: [457, 471, 472, 492]
+    related_mechanisms: [85, 457, 471, 472, 488, 492]
+    confounding_factors:
+    - level: STRONG
+      factor: Column-format confound. Adversarial first-person privacy testing is the explicit premise of Fowler's column, so the uniform register may reflect beat definition rather than institutional incentive structure.
+    - level: STRONG
+      factor: Temporal spread. Corpus spans Dec 2017 to May 2021; Meta camera glasses were not available to test for most of the window (Ray-Ban Stories launched Sep 2021), so the Meta-glasses test absence may be a calendar artifact.
+    - level: MODERATE
+      factor: Secondary-source dependence. WaPo primary pages are paywalled; quotes verified via two or more independent secondary sources each (MacRumors, Tom's Guide, 9to5Mac for AirTag; NPR Fresh Air and Marketplace for Alexa/Chrome/iPhone; Slashdot summary for Amazon Key; WaPo print-replica page for the Facebook experiment).
+    - level: MODERATE
+      factor: Ownership structure. Bezos owns WaPo personally via Nash Holdings, not via Amazon corporate; no documented editorial-interference channel. The "I review all tech the same" assertion is self-reported.
+    - level: WEAK
+      factor: Hand-assigned illustrative tones only; no empirical corpus scoring.
+    statistical_discipline:
+      is_significant: false
+      correlation_not_causation: true
+      tone_scores: MANUAL ILLUSTRATIVE ONLY
+      p_value: NOT_CALCULATED
+    test_file: tests/test_type_b_493_geoffrey_fowler_company_agnostic_privacy_testing_sep03_11am.py
+    source_urls:
+    - https://www.macrumors.com/2021/05/05/airtags-anti-stalking-measures-not-sufficient/
+    - https://www.tomsguide.com/news/airtag-anti-stalking-measures-tested-and-theyre-not-good-enough
+    - https://9to5mac.com/2021/05/06/airtag-stalking
+    - https://www.publicradioeast.org/us/2019-07-31/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale
+    - https://www.marketplace.org/episode/2019/06/28/when-a-tech-columnist-digs-into-the-secret-life-of-his-data
+    - https://yro.slashdot.org/story/17/12/09/0414237/reporter-regrets-letting-amazons-delivery-people-into-his-house
+    - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=bc9f63cc-eb9d-4028-9880-61de14178b88
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via

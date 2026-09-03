@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27441 tests across 820 test files (all from real articles)
+├── tests/                       # 27470 tests across 821 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1008,6 +1008,7 @@ mediascope/
 │   ├── test_type_b_477_grace_huckins_mittr_google_meta_fortnight_discipline_check_sep02_7pm.py  # Type B #477: Grace Huckins (MIT TR) fortnight Google vs Meta discipline check - Sep 2 2026 19:00 PDT
 │   ├── test_type_b_482_karen_weise_amazon_microsoft_headline_verb_asymmetry_sep03.py  # Type B #482: NYT Karen Weise Amazon vs Microsoft headline-verb asymmetry - Sep 3 2026 00:00 PDT
 │   ├── test_type_b_484_brian_x_chen_meta_vs_apple_privacy_vocabulary_bifurcation_sep03.py  # Type B #484: NYT Brian X. Chen Meta vs Apple privacy vocabulary bifurcation - Sep 3 2026 02:00 PDT (renumbered from 458 by #485)
+│   ├── test_type_b_493_geoffrey_fowler_company_agnostic_privacy_testing_sep03_11am.py  # Type B #493: WaPo Geoffrey Fowler company-agnostic adversarial privacy testing - ownership-level falsification - Sep 3 2026 11:00 PDT
 │   ├── test_type_c_432_advance_turnitin_dual_sided_ai_conflict_aug31.py  # Type C #432: Advance Publications Turnitin Dual-Sided AI Conflict Formalization Aug 31 2026 22:00 PDT
 │   ├── test_type_c_437_ft_dual_ai_payer_portfolio_sep01.py  # Type C #437: FT Dual AI Payer Portfolio Sep 1 2026 03:00 PDT
 │   ├── test_type_c_443_microsoft_pcm_marketplace_transparency_paradox_sep01.py  # Mechanism #443 Type C: Microsoft Publisher Content Marketplace (PCM) Transparency Paradox

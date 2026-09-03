@@ -15426,6 +15426,114 @@ journalists:
       anthropic_failure_framing: surprising
   name: Rebecca Bellan
   publication: techcrunch
+- name: Geoffrey Fowler
+  multi_publication: true
+  career:
+  - publication: wall-street-journal
+    role: personal tech columnist
+    beat: consumer technology, Silicon Valley, national affairs, China
+    start: '~2001'
+    end: '2017'
+    event_type: hired
+    notes: 16 years at the Wall Street Journal before joining the Washington Post in 2017. Start year is circa, inferred from NPR Fresh Air Jul 2019.
+    source_url: https://www.publicradioeast.org/us/2019-07-31/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale
+  - publication: washington-post
+    role: technology columnist
+    beat: consumer technology, first-person privacy testing ("The Secret Life of My Data")
+    start: '2017'
+    end: present
+    event_type: hired
+    notes: Writes the Post's consumer technology column from San Francisco. Column premise is first-person adversarial privacy testing of products from every major tech company.
+    source_url: https://www.publicradioeast.org/us/2019-07-31/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale
+  notes: 'KEY for MediaScope: Fowler is the strongest ownership-level falsification case in the journalist corpus. His first-person privacy-testing column applies an identical adversarial register to Meta, Apple, Amazon, and Google. His hardest-hitting tests targeted Amazon (Alexa four-year audio retention; Amazon Key removal after two weeks), the company whose founder owns his publication via Nash Holdings, with an on-the-record "I review all tech the same." The naive financial-incentive prediction (ownership softens coverage of the owner company) is inverted. Type B #493 (Sep 3 2026).'
+  competitor_coverage:
+    meta_facebook_tracking_experiment:
+      date: '2019'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: Two-week Facebook and Instagram cut-off, tallying which apps, websites, and businesses sent data to Facebook.
+      result: Facebook tracked him across at least 95 different apps, websites, and businesses.
+      adversarial_vocabulary:
+      - hired a private eye to prepare a dossier about my life
+      - no surprising Facebook when you are expecting a baby
+      adversarial_register: true
+      provenance: WaPo print-replica page; first-person Fowler voice verified ("told me", "I tried my own version").
+      source_urls:
+      - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=bc9f63cc-eb9d-4028-9880-61de14178b88
+    apple_airtag_stalking_test:
+      date: '2021-05-05'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: First-person mock-stalking test; a colleague planted an AirTag in his bag and tracked him for a week across San Francisco.
+      adversarial_vocabulary:
+      - AirTags are a new means of inexpensive, effective stalking
+      - Apple's efforts to stop the misuse of its trackers just are not sufficient
+      - just 15 seconds of light chirping
+      adversarial_register: true
+      source_urls:
+      - https://www.macrumors.com/2021/05/05/airtags-anti-stalking-measures-not-sufficient/
+      - https://www.tomsguide.com/news/airtag-anti-stalking-measures-tested-and-theyre-not-good-enough
+      - https://9to5mac.com/2021/05/06/airtag-stalking
+    apple_iphone_overnight_tracker_test:
+      date: '2019'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: Captured all network data moving in and out of his iPhone overnight while he slept.
+      result: Thousands of third-party data trackers took information overnight.
+      adversarial_register: true
+      source_urls:
+      - https://www.marketplace.org/episode/2019/06/28/when-a-tech-columnist-digs-into-the-secret-life-of-his-data
+    amazon_alexa_audio_retention:
+      date: '2019'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: Requested his Alexa voice archive as part of "The Secret Life of My Data".
+      result: Amazon had kept four years of recorded audio from his home, including family conversations about medications and a friend doing a business transaction.
+      adversarial_register: true
+      ownership_dimension: Amazon founder Jeff Bezos owns the Washington Post via Nash Holdings; the Alexa test targeted the owner company with full adversarial register.
+      source_urls:
+      - https://www.publicradioeast.org/us/2019-07-31/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale
+    amazon_key_smart_lock_test:
+      date: '2017-12'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: Installed the Amazon Key smart lock plus camera for two weeks.
+      result: Removed the lock and camera after two weeks; missed delivery windows four of eight times; cited a security-researcher freeze-camera finding.
+      adversarial_vocabulary:
+      - The biggest downsides to the experience have not been the strangers, it has been Amazon
+      - Who is really being locked in
+      - I review all tech the same
+      adversarial_register: true
+      ownership_note: Column explicitly addresses Bezos ownership of the Post and asserts identical review standards; quotes verified via secondary summary of the column.
+      source_urls:
+      - https://yro.slashdot.org/story/17/12/09/0414237/reporter-regrets-letting-amazons-delivery-people-into-his-house
+    google_chrome_tracker_test:
+      date: '2019'
+      publication: washington-post
+      author_byline: Geoffrey Fowler
+      experiment: Measured third-party trackers on his Chrome browser for a week.
+      result: More than 11,000 trackers watched his browsing in a single week.
+      adversarial_register: true
+      source_urls:
+      - https://www.marketplace.org/episode/2019/06/28/when-a-tech-columnist-digs-into-the-secret-life-of-his-data
+    type_b_493_within_journalist_finding:
+      date: '2026-09-03'
+      iteration: 493
+      mechanism_id: 493
+      finding: Company-agnostic adversarial privacy testing. Fowler applies the same first-person adversarial testing register to Meta, Apple, Amazon, and Google. No puff-piece bifurcation found. The ownership-level financial tie (Bezos/Nash Holdings owns WaPo) did not soften his Amazon coverage; two of his hardest-hitting tests named Amazon data practices. Falsification-family member with iterations 457, 471, 472, 492.
+      meta_glasses_bounded_absence: No Fowler byline conducting a Meta smart-glasses adversarial privacy test surfaced in four targeted searches this run. The Sep 2021 Ray-Ban Stories launch piece ("Smart Glasses Made Google Look Dumb...") is NYT/Mike Isaac, verified via byline attribution. Per the iteration-492 rule this absence is search-bounded, not a zero claim.
+      statistical_discipline:
+        is_significant: false
+        correlation_not_causation: true
+        tone_scores: MANUAL ILLUSTRATIVE ONLY
+        p_value: NOT_CALCULATED
+  source_urls:
+  - https://www.macrumors.com/2021/05/05/airtags-anti-stalking-measures-not-sufficient/
+  - https://www.publicradioeast.org/us/2019-07-31/how-tech-companies-track-your-every-move-and-put-your-data-up-for-sale
+  - https://www.marketplace.org/episode/2019/06/28/when-a-tech-columnist-digs-into-the-secret-life-of-his-data
+  - https://yro.slashdot.org/story/17/12/09/0414237/reporter-regrets-letting-amazons-delivery-people-into-his-house
+  - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=bc9f63cc-eb9d-4028-9880-61de14178b88
+
 jacob_krol:
   name: Jacob Krol
   current_role: US Managing Editor, News
