@@ -162,8 +162,9 @@ class TestPMCAcquisitionTimeline:
         samsung_paradox = cea.get('samsung_unpacked_beat_assignment_paradox', {})
         assert samsung_paradox.get('date') == '2026-07-22', \
             "Samsung Unpacked date should be July 22, 2026 (post-PMC acquisition)"
-        assert samsung_paradox.get('standalone_glasses_articles_count') == 0, \
-            "Verge published ZERO standalone Samsung glasses articles at Unpacked"
+        assert samsung_paradox.get('standalone_glasses_articles_count') == 1, \
+            "CORRECTED #492 Sep 3 2026: Verge published ONE standalone Samsung glasses article at Unpacked " \
+            "(Dominic Preston Jul 22 2026 hands-on; the original 0-count missed it)"
 
 
 class TestDoubleFinancialIncentiveStructure:
@@ -274,23 +275,31 @@ class TestCoverageVocabularyAsymmetry:
         assert len(meta_privacy_vocabulary) >= 5, \
             "Meta glasses coverage uses 5+ distinct privacy-alarm terms"
 
-    def test_samsung_glasses_privacy_vocabulary_absent(self):
-        """The Verge has ZERO privacy-alarm vocabulary for Samsung/Google glasses."""
-        samsung_privacy_vocabulary_from_verge = []
-        # No standalone Samsung glasses articles from The Verge
+    def test_samsung_glasses_privacy_vocabulary_dek_level_not_zero(self):
+        """CORRECTED #492 Sep 3 2026: the Verge applied dek-level privacy-problems
+        vocabulary to Google/Samsung glasses (Preston Jul 22 2026 dek). The
+        original zero-vocabulary assertion was falsified; the asymmetry is an
+        escalation gradient, not a binary."""
+        samsung_privacy_vocabulary_from_verge = [
+            "With a camera on every pair, Google's and Samsung's AI glasses "
+            "face the same privacy problems as Meta's.",  # Preston Jul 22 2026 dek
+        ]
+        # One standalone Samsung glasses article from The Verge (was asserted zero)
         # YouTube recap: 67 seconds of design praise, zero privacy mentions
         # Victoria Song praised design (Seoul Economic Daily report)
-        assert len(samsung_privacy_vocabulary_from_verge) == 0, \
-            "Verge has zero privacy-alarm vocabulary for Samsung/Google glasses"
+        assert len(samsung_privacy_vocabulary_from_verge) == 1, \
+            "Verge has dek-level (not zero) privacy vocabulary for Google/Samsung glasses"
 
-    def test_vocabulary_asymmetry_is_binary(self):
-        """For identical hardware, Meta gets alarm vocabulary, Samsung gets zero."""
+    def test_vocabulary_asymmetry_is_gradient_not_binary(self):
+        """CORRECTED #492 Sep 3 2026: for near-identical hardware, Meta gets
+        multi-article adversarial escalation while Samsung/Google got one
+        dek-level privacy equivalence inside a product-forward hands-on.
+        The asymmetry is a gradient in escalation depth, not a binary."""
         meta_alarm_articles = 3  # Victoria Song alone: 3+ standalone pieces
-        samsung_alarm_articles = 0
-        vocabulary_gap = meta_alarm_articles - samsung_alarm_articles
-        assert vocabulary_gap >= 3, \
-            f"Binary vocabulary asymmetry: {meta_alarm_articles} Meta alarm articles vs " \
-            f"{samsung_alarm_articles} Samsung — gap of {vocabulary_gap}"
+        samsung_dek_level_privacy_items = 1  # Preston Jul 22 2026 dek
+        assert meta_alarm_articles > samsung_dek_level_privacy_items, \
+            "Escalation gradient survives: %d Meta adversarial pieces vs %d dek-level Samsung item" % (
+                meta_alarm_articles, samsung_dek_level_privacy_items)
 
     def test_verge_samsung_framing_is_innovation(self):
         """What coverage exists frames Samsung/Google as innovation, not concern."""
@@ -383,7 +392,8 @@ class TestConfounders:
         # Counter-evidence: The Verge publishes multiple standalone Meta glasses
         # articles, proving smart glasses ARE a beat they cover regularly
         meta_standalone_glasses_articles = 3  # minimum from Victoria Song alone
-        samsung_standalone_glasses_articles = 0
+        # CORRECTED #492 Sep 3 2026: Preston Jul 22 2026 hands-on exists
+        samsung_standalone_glasses_articles = 1
         # If clicks were the driver, they'd also skip Meta glasses articles
         assert meta_standalone_glasses_articles > 0, \
             "Verge covers Meta glasses as standalone beat — proving reader interest exists"

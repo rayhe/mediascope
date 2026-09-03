@@ -2015,6 +2015,165 @@ competitor_relationships:
     source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
     adtech_lawsuit_source: "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
     coverage_prediction: "adversarial"
+    mechanism_492_verge_google_samsung_glasses_149_correction_privacy_equivalence_dek:
+      mechanism_id: 492
+      iteration: 492
+      iteration_type: "A"
+      iteration_time: "2026-09-03 10:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Verge"
+      entity_pair: "Google/Samsung vs Meta"
+      type: "Type A - Competitor Coverage Deep Dive - Correction of #149 binary zero-claim"
+      discovery_summary: >
+        Mechanism #149 (Aug 17 2026) claimed The Verge applied ZERO privacy
+        vocabulary to Samsung/Google camera glasses and published ZERO
+        standalone Samsung glasses articles, a binary asymmetry against 3+
+        Meta adversarial pieces. That zero-claim is factually wrong: The
+        Verge published a standalone Samsung/Google glasses hands-on on
+        Jul 22 2026 (Dominic Preston) whose dek states verbatim "With a
+        camera on every pair, Google's and Samsung's AI glasses face the
+        same privacy problems as Meta's." The binary framing is therefore
+        corrected to a gradient: dek-level privacy equivalence for
+        Google/Samsung vs multi-article adversarial escalation for Meta.
+        The escalation asymmetry survives; the coverage/vocabulary
+        absolute-zero claim does not.
+      new_evidence:
+        title: "Here is what Samsung's smart glasses actually look like"
+        author: "Dominic Preston"
+        publication: "The Verge"
+        date: "2026-07-22"
+        dek_verbatim: "With a camera on every pair, Google's and Samsung's AI glasses face the same privacy problems as Meta's."
+        dek_significance: >
+          The dek explicitly names Google (not just Samsung) and applies the
+          privacy-problems frame to Google's AI glasses. This is the first
+          documented Verge item applying privacy-problems vocabulary to the
+          Google entity in the wearables domain, notable because PMC is in
+          active adversarial litigation against Google on two fronts.
+        body_characterization: >
+          Product-forward hands-on per mirror excerpts: first in-person look
+          at four frames (Gentle Monster, Warby Parker), "impressive 9-hour
+          battery life", fall 2026 launch, Samsung executive quotes. Privacy
+          discussion is confined to the dek level in the verified excerpts;
+          full body text not directly verified (theverge.com policy-blocked
+          for direct fetch this run).
+        verification_method: >
+          Secondary verification via three independent mirrors attributing
+          title, byline, date, and dek to The Verge/Dominic Preston:
+          TechNewsTube ("The Verge, By Dominic Preston, Jul 22 2026,
+          12:35 pm", dek quoted verbatim), Amkio (dek quoted verbatim with
+          "Photo: Dominic Preston / The Verge"), TheTechStreetNow
+          ("Copyright of this story solely belongs to theverge.com",
+          platform.theverge.com image CDN). theverge.com direct fetch is
+          policy-blocked; no primary fetch was possible this run.
+        attributed_primary_url_unverified: "https://www.theverge.com/samsung-galaxy-glasses-hands-on-july-2026/"
+        primary_url_note: >
+          URL appears in this repo's own iteration log (#431 evidence list);
+          not directly fetched or independently confirmed this run.
+        mirror_urls:
+          - "https://technewstube.com/theverge/1852147/samsungs-smart-glasses-actually-look-like/"
+          - "https://www.amkio.com/heres-what-samsungs-smart-glasses-actually-look-like/"
+          - "https://thetechstreetnow.com/heres-what-samsungs-smart-glasses-actually-look-like/"
+      corrected_claims:
+        - claim: "#149 samsung_standalone_articles_total: 0"
+          corrected_to: 1
+          status: "falsified - Preston Jul 22 piece exists"
+        - claim: "#149 ZERO privacy vocabulary from The Verge for Samsung/Google glasses"
+          corrected_to: "one dek-level privacy-problems equivalence naming Google"
+          status: "falsified as absolute; reframed as gradient"
+        - claim: "#81 samsung_unpacked_beat_assignment_paradox standalone_glasses_articles_count: 0"
+          corrected_to: 1
+          status: "falsified - same Preston piece; foldables 2 vs glasses 1 narrows the beat-assignment gap"
+        - claim: "#149 vocabulary_gap binary"
+          corrected_to: "gradient"
+          status: "reframed - escalation asymmetry survives (Meta 3+ adversarial standalone pieces with activist-amplified vocabulary vs 1 dek equivalence in product-forward hands-on)"
+      surviving_asymmetry: >
+        Meta at The Verge (Jul 2026): 3+ standalone adversarial pieces with
+        escalating vocabulary - Song Jul 7 LED-tamper origin story, Song
+        Jul 20 "pervert glasses" editorial on the EssilorLuxottica
+        executive's post, Song late-Jul "holds all the cards" piece opening
+        with the Everyone Hates Elon "mass surveillance predator glasses"
+        campaign. Google/Samsung at The Verge: 1 standalone hands-on,
+        product-forward body, privacy frame confined to the dek. The
+        asymmetry is now measured in escalation depth, not in
+        coverage existence.
+      meta_comparator_set:
+        - title: "Meta Ray-Ban glasses will disable the camera if the privacy light is tampered with"
+          author: "Victoria Song"
+          date: "2026-07-07"
+          tone_illustrative: -0.55
+        - title: "Leaning into 'pervert glasses' sure is a choice"
+          author: "Victoria Song"
+          date: "2026-07-20"
+          tone_illustrative: -0.6
+        - title: "With smart glasses, Meta holds all the cards but fails to play them well"
+          author: "Victoria Song"
+          date: "2026-07-late"
+          tone_illustrative: -0.5
+      google_samsung_set:
+        - title: "Here is what Samsung's smart glasses actually look like"
+          author: "Dominic Preston"
+          date: "2026-07-22"
+          tone_illustrative: -0.2
+          tone_note: "dek-driven; body product-forward per mirror excerpts"
+      scorer_manual_illustrative:
+        target_scores: [-0.55, -0.6, -0.5]
+        peer_scores: [-0.2]
+        target_avg: -0.55
+        peer_avg: -0.2
+        asymmetry_delta: -0.35
+        p_value: 1.0
+        is_significant: false
+        note: >
+          MANUAL ILLUSTRATIVE synthetic tone approximations only per Aug 28
+          standing rule. Live scorer reproduced this run: target_avg -0.55,
+          peer_avg -0.2, delta -0.35, p_value 1.0, is_significant False
+          (n=1 peer side). Hand-assigned tones at headline/dek/excerpt
+          level, not empirical corpus scores. Requires Welch t-test plus
+          Cohen d plus bootstrap CI on observed article-level tone scores
+          for empirical validation. DO NOT claim empirical significance.
+      ranked_confounders:
+        strong:
+          - "Product maturity and news-peg asymmetry: Meta glasses shipped (7M+ units 2025) with documented misuse incidents, lawsuits, and LED-tamper mods; Samsung/Google glasses were unreleased at Jul 22 (fall 2026 launch) with no incident record. Adversarial escalation tracks available news pegs, not just entity identity."
+          - "Author and genre difference: Song writes opinion-forward reviewer columns; Preston writes news hands-ons. Deks are often editor-written, so the dek equivalence may reflect desk-level rather than author-level framing."
+          - "Adversarial-legal-posture confound: PMC sues Google twice (AI Overviews, adtech). A privacy-forward dek on Google glasses is consistent with adversarial-posture coverage, so the dek does not isolate the ad-dependency softening mechanism in #149."
+        moderate:
+          - "Single-article peer sample (n=1); no time series on the Google/Samsung side."
+          - "Mirror-truncated body: full Preston body text not directly verified; body characterization bounded to mirror excerpts."
+        weak:
+          - "Hand-assigned illustrative tones."
+      counter_evidence:
+        - "The dek itself names Google with privacy problems, cutting against the #149 soft-coverage prediction at the acknowledgment level."
+        - "#112 documented Song's aspirational J.A.R.V.I.S. framing of Android XR, showing within-outlet variance across Google wearables items."
+        - "Samsung's hardware privacy features (inward indicator, wear-detection disable) exceed Meta's, giving legitimate product grounds for softer treatment."
+      financial_context: >
+        PMC dual Google lawsuits (adversarial, $0 licensing) plus portfolio-level
+        Google ad dependency (admitted in SDNY complaint) plus Google $150M Warby
+        Parker equity (#147). The dek equivalence is consistent with the
+        adversarial-litigation posture and bounds the ad-dependency softening
+        claim: the lawsuits-plus-dependency structure did not suppress a
+        privacy-problems dek naming Google. Correlate only, not proof of
+        editorial influence. Correlation not causation.
+      statistical_discipline: "correlation_not_causation; MANUAL ILLUSTRATIVE only; p_value 1.0 live-reproduced; is_significant false; n=1 peer side"
+      cross_references:
+        - "#149 (corrected: binary zero-claim falsified, gradient reframing)"
+        - "#112 (Google litigation-vs-wearables paradox; within-outlet variance)"
+        - "#81 (beat-assignment paradox; count corrected 0 -> 1)"
+        - "#431 (cited the Preston URL as existing publication; first Verge-profile incorporation of its framing)"
+        - "#471 (partial falsification precedent)"
+        - "#472 (boundary-condition precedent)"
+      distinct_from_prior: >
+        First Verge x Google Type A correction. #149 asserted absolute zero
+        coverage and zero vocabulary; #112 compared Song's aspirational
+        Android XR item; #81 measured the Unpacked beat-assignment gap;
+        #431 listed the Preston URL without analyzing its framing. #492 is
+        the first mechanism to (a) verify the Preston piece's dek content,
+        (b) correct the 0 -> 1 counts in #149 and #81, and (c) reframe the
+        asymmetry as an escalation gradient. Not Microsoft PCM related.
+      testable_predictions:
+        - "When Samsung/Google glasses ship (fall 2026), watch whether The Verge publishes a standalone privacy investigation: escalation test of the gradient."
+        - "If a Google-glasses misuse incident occurs, Verge escalation vocabulary should match Meta's if the driver is news-peg rather than entity."
+      artifact_readiness: "No analysis.json update warranted. Single-article correction with significant=false defines no new artifact-grade tone data."
   microsoft:
     financial_tie: "licensing"
     estimated_value: "usage-based (undisclosed)"
@@ -2924,7 +3083,15 @@ cross_entity_coverage_analysis:
       - reporter: "Dominic Preston"
         topic: "Fold 8 hands-on"
         format: "standalone article"
-    standalone_glasses_articles_count: 0
+    standalone_glasses_articles_count: 1
+    correction_492_note: >
+      CORRECTED Sep 3 2026 (#492): the original 0-count missed Dominic
+      Preston's Jul 22 2026 standalone Verge hands-on "Here is what
+      Samsung's smart glasses actually look like" (dek: "With a camera on
+      every pair, Google's and Samsung's AI glasses face the same privacy
+      problems as Meta's", verified via three independent mirrors).
+      Count corrected 0 -> 1. The beat-assignment gap narrows (foldables 2
+      standalone pieces vs glasses 1) but does not close.
     youtube_roundup_video:
       title: "Samsung Galaxy Unpacked in 15 minutes"
       url: "https://www.youtube.com/watch?v=c-MWq-DFTwo"
@@ -3080,8 +3247,9 @@ cross_entity_coverage_analysis:
       meta_standalone_privacy_articles: 3
       meta_reporters: ["Victoria Song", "Sean Hollister", "Alex Heath"]
       samsung_standalone_privacy_articles: 0
-      samsung_standalone_articles_total: 0
-      vocabulary_gap: "binary - alarm vocabulary for Meta, zero for Samsung"
+      samsung_standalone_articles_total: 1
+      samsung_standalone_article_correction_492: "Dominic Preston, Jul 22 2026, Verge hands-on; dek applies explicit privacy-problems equivalence to Google/Samsung glasses (three-mirror verified)"
+      vocabulary_gap: "gradient, not binary (corrected #492): Meta draws multi-article adversarial escalation with activist-amplified vocabulary; Google/Samsung drew one dek-level privacy equivalence inside a product-forward hands-on"
     control_gizmodo:
       standalone_samsung_articles: 1
       reporter: "Raymond Wong"
@@ -3122,6 +3290,16 @@ cross_entity_coverage_analysis:
       - "https://en.sedaily.com/news/2026/07/02/gentle-monster-to-launch-ai-smart-glasses-with-google"
       - "https://gizmodo.com/samsung-let-me-touch-its-warby-parker-x-gentle-monster-smart-glasses-but-not-wear-them-2000788835"
       - "https://www.youtube.com/watch?v=c-MWq-DFTwo"
+    correction_492_sep03_2026:
+      corrects:
+        - "samsung_standalone_articles_total 0 -> 1"
+        - "vocabulary_gap binary -> gradient"
+        - "ZERO privacy vocabulary claim falsified by Preston Jul 22 dek"
+      mechanism_ref: "#492"
+      note: >
+        The binary asymmetry claim is superseded. Escalation asymmetry
+        survives: Meta 3+ adversarial standalone pieces vs one dek-level
+        equivalence for Google/Samsung. Testable predictions unchanged.
 
   health_data_privacy_vocabulary_inversion:
     mechanism_ref: "#304"

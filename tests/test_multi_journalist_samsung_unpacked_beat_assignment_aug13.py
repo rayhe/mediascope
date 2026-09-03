@@ -152,10 +152,12 @@ class TestSectionStructure:
         )
 
     def test_has_glasses_article_count(self, unpacked_gap):
+        # CORRECTED #492 Sep 3 2026: the original 0-count missed Dominic
+        # Preston's Jul 22 2026 standalone Verge hands-on.
         count = unpacked_gap.get('standalone_glasses_articles_count', -1)
-        assert count == 0, (
+        assert count == 1, (
             f"The Verge published {count} standalone Samsung glasses articles "
-            "from Unpacked. Expected 0."
+            "from Unpacked. Expected 1 (Preston Jul 22 2026)."
         )
 
 
@@ -242,13 +244,15 @@ class TestCrossPublicationComparison:
             "Samsung glasses in standalone or live-blog format"
         )
 
-    def test_verge_zero_glasses_vs_gizmodo(self, unpacked_gap, gizmodo):
+    def test_verge_glasses_vs_gizmodo_parity_not_zero(self, unpacked_gap, gizmodo):
+        # CORRECTED #492 Sep 3 2026: Verge 0 -> 1 (Preston Jul 22 2026).
+        # The outlet contrast is now framing depth, not coverage existence.
         verge_count = unpacked_gap.get('standalone_glasses_articles_count', -1)
         gizmodo_count = len(
             gizmodo.get('samsung_unpacked_glasses_coverage', {})
             .get('standalone_articles', [])
         )
-        assert verge_count == 0, "Verge published 0 standalone glasses articles"
+        assert verge_count == 1, "Verge published 1 standalone glasses article (Preston)"
         assert gizmodo_count >= 1, "Gizmodo published 1+ standalone glasses articles"
 
     def test_wired_zero_glasses_at_unpacked(self, wired):

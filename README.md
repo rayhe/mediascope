@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27416 | Across 819 test files |
+| Tests | 27441 | Across 820 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27416 tests** across 819 test files, each covering a different analytical capability:
+MediaScope has **27441 tests** across 820 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1243,6 +1243,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_476_mittr_google_coverage_tone_vs_meta_sep02_6pm.py` | 19 | Type A #476: MIT TR x Google coverage tone vs Meta - same-day natural experiment - Sep 2 2026 18:00 PDT |
 | `test_type_a_481_atlantic_openai_watchdog_entity_selection_asymmetry_sep02_11pm.py` | 17 | Type A #481: The Atlantic x OpenAI AI Watchdog entity-selection asymmetry vs Meta - Sep 2 2026 23:00 PDT |
 | `test_type_a_487_guardian_google_deepmind_leadership_renewal_vs_meta_deficit_framing_sep03_5am.py` | 20 | Type A #487: Guardian x Google DeepMind leadership-transition renewal register vs Meta deficit register - Sep 3 2026 05:00 PDT |
+| `test_type_a_492_verge_google_samsung_glasses_149_correction_sep03_10am.py` | 25 | Type A #492: The Verge x Google/Samsung glasses - #149 binary zero-claim corrected (Preston privacy-equivalence dek, escalation gradient) - Sep 3 2026 10:00 PDT |
 | `test_type_b_431_boone_ashworth_meta_second_led_fix_vs_samsung_google_tamper_enforcement_asymmetry_aug31.py` | 14 | Test Type B #431: Boone Ashworth Meta Second LED Fix vs Samsung/Google Tamper Enforcement Asymmetry Aug 31 2026 |
 | `test_type_b_436_lauren_goode_apple_vision_pro_vs_meta_rayban_emotional_register_asymmetry_sep01.py` | 24 | Test Type B #436: Lauren Goode Apple Vision Pro vs Meta Ray-Ban Emotional Register Asymmetry Sep 01 2026 |
 | `test_type_b_442_boone_ashworth_snap_vs_meta_pricing_subscription_framing_asymmetry_sep01.py` | 21 | Type B #442 Boone Ashworth Snap vs Meta pricing subscription framing asymmetry |
