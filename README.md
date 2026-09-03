@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 260 | Career data with source URLs |
 | Career-entry migrations | 974 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27383 | Across 818 test files |
+| Tests | 27416 | Across 819 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27383 tests** across 818 test files, each covering a different analytical capability:
+MediaScope has **27416 tests** across 819 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1328,6 +1328,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py` | 30 | Type E #475: podcast sentiment eighteenth verification - GF 498 hold, EHE 23-day hold, Attention Sphere 18th no-match - Sep 2 2026 17:00 PDT |
 | `test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py` | 38 | Type E #480: podcast sentiment sifted sixth vertical - GF 498 hold 19th cycle, Attention Sphere 19th no-match - Sep 2 2026 22:00 PDT |
 | `test_type_e_486_podcast_sentiment_twentieth_verification_sep03_4am.py` | 33 | Type E #486: podcast sentiment twentieth verification - GF 498 hold 20th cycle, EHE 24-day hold, Attention Sphere 20th no-match - Sep 3 2026 04:00 PDT |
+| `test_type_e_491_podcast_sentiment_twentyfirst_verification_sep03_9am.py` | 33 | Type E #491: podcast sentiment twenty-first verification - GF 498 hold 21st cycle, EHE 24-day hold, Attention Sphere 21st no-match - Sep 3 2026 09:00 PDT |
 | `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
 | `test_type_e_9am_titv_cnbc_settlement_week_subscription_cultural_consensus_compartmentalization_aug27.py` | 25 | Type E: Podcast Sentiment Tracking - Settlement-Week Subscription-Only Publication |
 | `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
