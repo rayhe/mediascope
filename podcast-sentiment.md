@@ -9091,3 +9091,72 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_475_podcast_sentiment_eighteenth_verification_sep02_5pm.py - checks covering mechanism_id 475, Type E, iteration 475, date 2026-09-02 17:00 PDT, rotation D->E, Guilty Feminist 498 hold no 499 bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE 23-day hold plus no-new-vertical this cycle plus five-vertical count plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 18th no-match circular rejection bounded, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 470, no publisher-marketplace novelty claim, iteration-log entry present and newest-first.
+
+---
+
+## Iteration #480 - Wed 2026-09-02 22:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Rotation:** 479 D -> 480 E. Extends #475 (Sep 2 17:00 PDT) by 5 hours. Goal goal_54093bda4145, job mediascope-daily-iteration.
+
+### 1. Guilty Feminist - 498 Hold Continues, No 499 (Nineteenth Verification Cycle)
+
+- **Latest episode as of Sep 2 22:00 PDT:** 498 Politics with Felicity Ward and Hannah Spencer (31 Aug 2026), unchanged from Sep 2 17:00 PDT check. Official episode list https://zeno.fm/podcast/the-guilty-feminist/ opened via browser.open this run still shows 498 as latest, with 497 The Nuance Drought and 496 Intimacy below it. No 499.
+- **Bounded claim:** no new episode observed as of 22:00 PDT Sep 2 2026, a 5-hour extension of the Sep 2 17:00 PDT verification (#475). Bounded absence, not universal proof of non-existence.
+- **Relevance hold:** 496-498 slate (Intimacy, Nuance Drought, Politics) contains no Meta/AI/wearables/privacy/surveillance per titles and descriptions. Titles/descriptions only, full transcripts not retrieved.
+- **Cadence note:** weekly release pattern puts the next numbered episode plausibly near Sep 7; absence of 499 two days after 498 is consistent with normal cadence, not a signal.
+- **Extension not duplicate:** this check extends #475 by 5 hours with a fresh primary open (zeno.fm opened this run); the hold finding is identical, the verification is new.
+
+### 2. Everyone Hates Elon - NEW Sixth Vertical: Sifted European Startup Press (First-Hand Open This Run)
+
+- **NEW-TO-LOG this cycle:** Sifted (sifted.eu) "Should tech events ban Meta's smart glasses?" surfaced via this run's EHE search (search stamp "7 days ago", i.e. circa Aug 26 2026) and opened first-hand via browser.open this run. Repo-wide grep for "sifted" this run confirms zero prior mentions of this article: existing hits are unrelated (a journalist-pickup mention, a corroboration mention, a Streetbees administration story). Genuinely new to the log.
+- **EHE linkage (first-hand):** the piece cites EHE's Epstein mock ad directly: "An activist group in London that calls itself Everyone Hates Elon recently created a mock ad featuring the late sex offender Jeffrey Epstein wearing a pair (the poster tagline: 'Glasses for people who don't do consent')." It also carries the "pervert glasses" / "stalkerware" vocabulary.
+- **New datapoints (first-hand):** stopsmartglasses.com UK/Ireland petition with thousands of signatures; UK cinemas reportedly considering a ban amid piracy concerns (via the Guardian and the industry trade body); Wetherspoons effective ban on recording with the glasses in pubs; Defcon hacker convention ban (via Aikido Security cofounder Madeline Lawrence); organizer positions from TechBBQ Copenhagen (no ban), HumanX Amsterdam (no ban), Rebase Dublin (effective ban for Chatham House sessions), Deep Tech London (opt-in mulling).
+- **Balance note (first-hand, full-article read, not excerpt-bounded):** unlike earlier verticals the piece includes Meta's position ("Meta insists it designed its AI glasses with privacy and safety features built in from the start"), states "Sifted contacted Meta for comment", and gives real space to counterpoints: TechBBQ's "The issue isn't the device, it's the behaviour. You can just as easily covertly record someone using a smartphone", HumanX's "It would be like banning smartphones at a computer show in 2008", and the accessibility benefit for visually impaired users. This is the most counterpointed EHE-amplifying piece logged to date.
+- **Structural observation (bounded, correlation only):** Sifted is FT-backed (Financial Times venture). The FT's own OpenAI content licensing deal is separately documented in this repo's Type C mechanisms. No causal claim is made: the observation only notes that the sixth vertical sits inside the same corporate family whose AI-deal posture MediaScope tracks. Correlation not causation.
+- **Vertical count now six:** tech press (Engadget, PetaPixel), ethics press (AfroTech), trade press (The Drum), photography press (Fstoppers), feminist advocacy press (Feminist Majority Foundation, #470), European startup/tech press (Sifted, this cycle). No competitor-equivalent guerrilla campaign or event-ban debate against Apple, Google, Samsung, or Snap camera wearables has surfaced in any of the nineteen verification cycles. Bounded search-result absence.
+- **Hold:** activist group, not a podcast. Aug 10 Epstein poster claim remains unverified pending primary Instagram verification (23 days since Aug 10 as of Sep 2). July 2026 bus-stop campaigns remain the last primary-verified campaigns via Engadget https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ and The Times https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- **Prior cycle data points stand:** EHE "Do you consent to being filmed by AI glasses?" email drive, 9,000+ people emailed Meta, via SWNS wire (Ben Barry), logged #460. Source: https://muckrack.com/ben-barry-4/articles
+- **Provenance guard stands:** LatestLY Jul 30 2026 fact check rated the viral "Epstein in Meta ad" claim as spoof activism by EHE, not an official Meta advertisement. Source: https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html
+
+### 3. Attention Sphere - Nineteenth No-Match Verification
+
+- **Result:** Sep 2 22:00 PDT search for "Attention Sphere" podcast Meta AI wearables returned no matching podcast (nineteenth consecutive no-match verification).
+- **What results returned:** only this repository's own podcast-sentiment.md GitHub pages (https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md and prior commit pages), which are rejected as circular evidence per established discipline and are not cited as independent verification.
+- **Status unchanged:** task-spec name remains misidentified; Ava Smithing's actual show is Left to Their Own Devices (Toronto Star). Nonprofit claim remains secondary-only, not elevated.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. Secondary Ecosystem Freshness (Sep 2 22:00 PDT)
+
+- **Sifted European startup-press piece (new-to-log, circa Aug 26 2026):** sixth vertical joins the EHE amplification loop with the most counterpointed register logged to date. See section 2 for detail. Source: https://sifted.eu/articles/should-tech-events-ban-smart-glasses/
+- **Prior secondaries stand:** Feminist Majority Foundation fifth vertical (#470), Fstoppers photography-press piece (#465), LatestLY provenance fact check (#465), The Drum trade-press backlash piece and AfroTech ethics piece (#460) remain the latest in their verticals; no newer items surfaced this cycle.
+- **No new Guilty Feminist episode, no new EHE primary campaign, no Attention Sphere podcast as of 22:00 PDT Sep 2 2026.** All bounded absences.
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- Sifted event-ban piece: MANUAL ILLUSTRATIVE -4/10 toward Meta glasses (carries EHE alarm framing, "pervert glasses"/"stalkerware" vocabulary, and a ban roster, but includes Meta's privacy-by-design line, a contacted-for-comment statement, and three event organizers declining bans plus an accessibility benefit; full-article read this run). No competitor-equivalent event-ban debate covered: bounded absence.
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across nineteen cycles: bounded absence.
+- Correlation not causation. Structural incentive not proof of editorial control. No claim of empirical significance. Do not claim empirical significance without Welch t-test plus Cohen d plus bootstrap CI on the observed corpus.
+
+### 6. Sources (HTTPS only)
+
+- https://zeno.fm/podcast/the-guilty-feminist/ (official episode list, opened this run, 498 latest, no 499)
+- https://sifted.eu/articles/should-tech-events-ban-smart-glasses/ (European startup-press sixth vertical, opened first-hand this run, new-to-log)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (EHE Epstein poster, Times)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE July campaign primary)
+- https://www.latestly.com/social-viral/fact-check/did-jeffrey-epstein-feature-on-meta-smart-glasses-billboard-ad-in-london-fact-check-finds-viral-claim-fake-7538349.html (Epstein spoof provenance fact check, from #465)
+- https://muckrack.com/ben-barry-4/articles (EHE 9,000 email drive via SWNS, Ben Barry, from #460)
+- https://feminist.org/news/helpful-or-hurtful-the-growing-privacy-debate-over-meta-glasses/ (feminist advocacy-press fifth vertical, from #470)
+- https://github.com/rayhe/mediascope/blob/HEAD/podcast-sentiment.md (Attention Sphere search only-result, rejected as circular, not cited as evidence)
+
+### 7. Confounders (ranked)
+
+- STRONG Search-result dating: Sifted "7 days ago" and EHE corpus crawl stamps bound surfacing, not publication; the Sifted piece may have been indexed late. Does not support a "new campaign" reading for EHE itself. NOT_CALCULATED.
+- MODERATE Sifted structural note is FT-backing only; no evidence connects FT's OpenAI deal to this article's editorial choices. Recorded as bounded observation, not as an incentive claim. NOT_CALCULATED.
+- MODERATE EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence. NOT_CALCULATED.
+- MODERATE No new Guilty Feminist episode / no new EHE primary campaign / no Attention Sphere podcast are bounded search-result absences, not universal proofs. NOT_CALCULATED.
+- WEAK MANUAL ILLUSTRATIVE scores are subjective only. NOT_CALCULATED.
+
+### 8. Test File
+
+- tests/test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py - checks covering mechanism_id 480, Type E, iteration 480, date 2026-09-02 22:00 PDT, rotation D->E, Guilty Feminist 498 hold no 499 nineteenth cycle bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE Sifted sixth vertical new-to-log first-hand open plus EHE linkage quote plus ban-roster datapoints plus balance note plus FT-backing bounded structural observation plus 23-day hold plus LatestLY provenance guard plus 9000 email drive standing, Attention Sphere 19th no-match circular rejection bounded, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 475, no Microsoft PCM novelty claim, iteration-log entry present and newest-first.

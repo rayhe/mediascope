@@ -1,3 +1,20 @@
+#480 Type E: Podcast Sentiment Tracking - Sifted Sixth Vertical (European Startup Press), Guilty Feminist 498 Hold 19th Cycle, Attention Sphere 19th No-Match - Sep 2 2026 22:00 PDT
+
+**Date:** 2026-09-02 22:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 479 D -> 480 E)
+**Type:** E - Podcast Sentiment Tracking (EHE amplification loop sixth vertical / GF episode hold / Attention Sphere no-match)
+**Mechanism:** #480 Type E - Extends #475 (17:00 PDT) by 5 hours. One genuine new finding: Sifted (sifted.eu) "Should tech events ban Meta's smart glasses?" (circa Aug 26 2026) becomes the sixth EHE-amplification press vertical (European startup/tech press), opened first-hand via browser.open this run; repo-wide grep confirms zero prior mentions. The piece cites EHE's Epstein mock ad ("Glasses for people who don't do consent"), carries "pervert glasses"/"stalkerware" vocabulary, and adds new datapoints (stopsmartglasses.com petition, UK cinema ban mulling, Wetherspoons effective ban, Defcon ban, TechBBQ/HumanX/Rebase organizer positions) while including the most counterpoints logged to date (Meta privacy-by-design line, contacted-for-comment, three organizers declining bans, accessibility benefit). FT-backing structural note recorded as bounded observation only, correlation not causation. Guilty Feminist: 498 hold, no 499, nineteenth verification (zeno.fm opened this run). Attention Sphere: nineteenth consecutive no-match, circular self-citation rejected.
+**Rotation Transparency:** Previous entry #479 Type D at 21:00 PDT Sep 2 2026 (commit b5551ea verified present). Per rotation A->B->C->D->E, next after D is E. Cycle verified: 475 E 17:00, 476 A 18:00, 477 B 19:00, 478 C 20:00, 479 D 21:00. Selected Type E.
+**Novelty Verification:** grep -rin "sifted" across md/py/yaml shows only unrelated hits (journalist pickup mention, corroboration mention, Streetbees story); the Sifted EHE/ban piece has zero prior mentions. Not Microsoft PCM related.
+**New Type E files:** `podcast-sentiment.md` Iteration #480 section (appended, chronological); `tests/test_type_e_480_podcast_sentiment_sifted_sixth_vertical_sep02_10pm.py` - 8 classes, 40 tests.
+**Self-caught authoring bug (extends #474/#479 lesson):** the no-em-dash assertion was written with a literal em dash that the write path converted to U+2028 LINE SEPARATOR (od showed 342 200 250 = E2 80 A8, misread at first as U+2014). Python repr of the split line plus hexdump confirmed U+2028, not U+2014. Fixed via chr(0x2028) -> chr(92)+'u2014' byte-precise replacement; file now all-ASCII. Durable extension: when a unicode assertion misbehaves, check for U+2028/U+2029 via repr/ord, not just visual inspection; od octal 250 = A8 = U+2028, 224 = 94 = U+2014.
+**Verification runs (venv pytest, -p no:cacheprovider):** new #480 file: 40 passed, 0 failed. count_stats --check via .venv python (per #479 lesson).
+**Statistical discipline:** correlation_not_causation, is_significant False, MANUAL ILLUSTRATIVE scores only (-4/10 Sifted piece, -8/10 EHE posture). No p_value, no significance claimed.
+**Confounders Ranked:** STRONG Search-result dating bounds Sifted surfacing not publication. MODERATE FT-backing note is structural only, no editorial-link evidence. MODERATE EHE is activist group not podcast. WEAK Illustrative scores subjective.
+**Confidence:** HIGH - Sifted piece opened and read first-hand this run; GF list opened first-hand; novelty grep-verified; all absences bounded.
+**Artifact readiness:** No analysis.json update warranted. Type E sentiment tracking defines no new asymmetry tone data for the artifact.
+
+---
+
 #479 Type D: Test and Verify - Boundary-Discipline Registry, 475-478 Window Persistence, Scorer-Honesty Contrast - Sep 2 2026 21:00 PDT
 
 **Date:** 2026-09-02 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 478 C -> 479 D)
