@@ -71,6 +71,160 @@ competitor_relationships:
     direction: none
     description: No financial relationship.
     coverage_prediction: neutral
+    mechanism_512_gizmodo_google_null_tie_symmetric_adversarial:
+      mechanism_id: 512
+      date_analyzed: '2026-09-04'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 512
+      iteration_type: A
+      iteration_time: 2026-09-04 06:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: Gizmodo (Keleops AG, acquired from G/O Media 2024-06-04)
+      finding: 'Null-tie control Type A for the core thesis. Gizmodo carries $0 documented
+        financial ties to Google, Meta, OpenAI, and Anthropic (all competitor_relationships
+        blocks: none / $0), so the thesis predicts symmetric registers with no tie-driven
+        softening. Observed: Gizmodo applies an adversarial, sarcastic register to BOTH
+        Google and Meta in the controversy/privacy domain, with a negligible +0.10 tone
+        lean toward Google. Google side (both first-hand opened this run): (1) ''Not So
+        Fast, Google: That Lenient Monopoly Ruling from Last Year Is Being Appealed'' (Feb
+        2026) - ''Tech god-kings like Alphabet CEO Sundar Pichai tend to win in the courts'',
+        ''some really ugly, but real, payola deals'', remedies decision ''must have been
+        better than the best case scenario Google had in mind''; tone -0.55. (2) ''It''s
+        a Big Week for Google Privacy Violation Settlements'' (Feb 2026) - $135M cellular-data
+        conversion settlement plus $68M Google Assistant recording settlement; ''Of course,
+        Google will also admit no wrongdoing as part of the whole deal'', ''But who among
+        us hasn''t paid out a collective $200 million for things we definitely didn''t do?'';
+        tone -0.50. Meta side: (1) ''The World Is on Fire, and Meta Sees an Opportunity
+        to Add Facial Recognition to Smart Glasses'' (Feb 2026, first-hand opened this run)
+        - ''Meta hopes you''ll be too distracted by the federal government kidnapping both
+        nonviolent immigrants and citizens off the street... to care if they stick facial
+        recognition capabilities inside their smart glasses. That''s not hyperbole.'', glasses
+        as ''a one-man band of surveillance'' via a single piece of tape; tone -0.70. (2)
+        ''The Public Got So Mad at Meta''s New AI Photo Tool That It''s Scrapped Already''
+        (Jul 2026, excerpt-bounded second-hand) - ''I don''t know what the world record
+        is for killing bad AI features quickly, but this has to be a competitor'', SAG-AFTRA
+        ''utter miscalculation''; tone -0.55. Live scorer: delta +0.10 (google mean -0.525
+        vs meta mean -0.625), p_value 0.396, cohens_d 1.265, is_significant False. The +0.10
+        lean is noise at n=2 vs n=2. Net: at a zero-tie publication, the adversarial register
+        fires on both the deal-absent competitor and Meta symmetrically. This is the control
+        case the thesis needs: it bounds the claim so that softening at deal publications
+        (FT-OpenAI, Verge-OpenAI product domain #425) cannot be dismissed as generic big-tech
+        house style - Gizmodo''s house style is equal-opportunity adversarial and it shows
+        here, symmetric. Correlation is not causation; n is thin.'
+      articles:
+      - title: 'Not So Fast, Google: That Lenient Monopoly Ruling from Last Year Is Being
+          Appealed'
+        date: 2026-02
+        format: news (Gizmodo)
+        url: https://gizmodo.com/not-so-fast-google-that-lenient-monopoly-ruling-from-last-year-is-being-appealed-2000717092
+        register: adversarial sarcastic (monopoly framing, payola vocabulary)
+        key_phrases:
+        - Tech god-kings like Alphabet CEO Sundar Pichai tend to win in the courts
+        - some really ugly, but real, payola deals
+        - must have been better than the best case scenario Google had in mind
+        manual_illustrative_tone: -0.55
+        verification: first-hand opened via browser.open this run
+      - title: It's a Big Week for Google Privacy Violation Settlements
+        date: 2026-02
+        format: news (Gizmodo)
+        url: https://gizmodo.com/its-a-big-week-for-google-privacy-violation-settlements-2000715678
+        register: adversarial sarcastic (privacy-settlement pile-on)
+        key_phrases:
+        - $135M cellular-data conversion settlement (largest ever in a conversion case,
+          per Reuters)
+        - $68M Google Assistant recording settlement
+        - Of course, Google will also admit no wrongdoing as part of the whole deal
+        - But who among us hasn't paid out a collective $200 million for things we definitely
+          didn't do?
+        manual_illustrative_tone: -0.5
+        verification: first-hand opened via browser.open this run
+      - title: The World Is on Fire, and Meta Sees an Opportunity to Add Facial Recognition
+          to Smart Glasses
+        date: 2026-02
+        format: news (Gizmodo)
+        url: https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+        register: adversarial alarm (surveillance framing)
+        key_phrases:
+        - Meta hopes you'll be too distracted... to care if they stick facial recognition
+          capabilities inside their smart glasses. That's not hyperbole.
+        - a single piece of tape can turn anybody into a one-man band of surveillance
+        - Meta's glasses already collect all your pictures and conversation transcripts
+          for the purpose of advertising
+        manual_illustrative_tone: -0.7
+        verification: first-hand opened via browser.open this run
+      - title: The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already
+        date: 2026-07
+        format: news (Gizmodo)
+        url: https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+        register: adversarial mocking (killed feature)
+        key_phrases:
+        - I don't know what the world record is for killing bad AI features quickly, but
+          this has to be a competitor
+        - 'SAG-AFTRA: ''utter miscalculation of public sentiment'''
+        manual_illustrative_tone: -0.55
+        verification: second-hand via search excerpts, bounded
+      asymmetry_scorer_result:
+        target_entity: google
+        peer_entities:
+        - meta
+        target_avg_tone: -0.525
+        peer_avg_tone: -0.625
+        asymmetry_score: 0.1
+        p_value: 0.396
+        cohens_d: 1.265
+        is_significant: false
+        confidence_interval:
+        - 0.0
+        - 0.2
+        methodology: MANUAL ILLUSTRATIVE tones at article level, n=2 vs n=2; calculate_asymmetry
+          live-reproduced this run; correlation_not_causation true
+      confounders:
+      - 'STRONG: genre confound - all four items are controversy/news pieces; no product-review
+        Google piece sampled even though the profile''s own tone-history block shows Gizmodo
+        praising Google XR hardware (''Project Aura XR Smart Glasses Are Legit'', May 2026),
+        so product-domain softness exists within Gizmodo and this unit covers only the controversy
+        register'
+      - 'STRONG: Google search-traffic dependence (unmeasured) is a structural dependence
+        with no tie; the adversarial register observed here bounds the traffic-dependence
+        softening variant, but dependence itself is not quantified'
+      - 'MODERATE: n=2 vs n=2 thin corpus; p_value 0.396 rules out any significance claim'
+      - 'MODERATE: Meta photo-tool item is excerpt-bounded second-hand, not opened first-hand'
+      - 'WEAK: hand-assigned illustrative tones are subjective'
+      counter_evidence:
+      - The repo's own tone-history block in this profile records a POSITIVE Gizmodo register
+        toward Google XR hardware ('Project Aura XR Smart Glasses Are Legit', May 19 2026)
+        and skeptical framing of Google's smart-glasses strategy (May 20 2026) - evidence
+        the symmetric-adversarial claim is domain-bounded to controversy/privacy coverage,
+        not a universal Gizmodo x Google register
+      - The +0.10 delta, though non-significant, leans toward Google rather than Meta; with
+        n=2 it is noise, but the direction is the opposite of what a Meta-favoring bias
+        would produce
+      research_method: 'browser.search this run (2 targeted query sets, verbatim full-URL
+        listings); browser.open first-hand on the two Google pieces and the Meta facial-recognition
+        piece this run; Meta photo-tool piece excerpt-bounded second-hand. Per the iteration-492
+        rule, no zero-coverage claims. No canonical URLs constructed: all four URLs are
+        carried verbatim from search-result full-URL listings. Prior repo analyses (gizmodo_meta_led_tamper_disable_2026_07_08,
+        gizmodo_smart_glasses_hit_privacy_pile_up_2026_07_30) used as corroborating Meta-register
+        evidence only, not re-argued.'
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only (article level, n=2 vs n=2);
+        live scorer reproduced: delta 0.10, p_value 0.396, cohens_d 1.265, is_significant
+        False; correlation_not_causation true. No empirical significance claimed. cohens_d
+        1.265 at n=2 is a small-sample artifact, reported not interpreted.'
+      source_urls:
+      - https://gizmodo.com/not-so-fast-google-that-lenient-monopoly-ruling-from-last-year-is-being-appealed-2000717092
+      - https://gizmodo.com/its-a-big-week-for-google-privacy-violation-settlements-2000715678
+      - https://gizmodo.com/the-world-is-on-fire-and-meta-sees-an-opportunity-to-add-facial-recognition-to-smart-glasses-2000721970
+      - https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000784400
+      distinct_from:
+      - 'No prior Type A works Gizmodo x Google (repo-wide grep verified): the profile''s
+        tone-history block has product-domain Google examples but no mechanism'
+      - Repo analyses gizmodo_meta_led_tamper_disable_2026_07_08 and gizmodo_smart_glasses_hit_privacy_pile_up_2026_07_30
+        are Meta-only units, zero Google article overlap
+      - 'Type A #502 (WIRED x Microsoft) and #497 (FT x Google DeepMind) are different publications
+        and units'
+      - 'Complements the falsification family (#457, #471, #472, #492, #493, #498, #502,
+        #503) as a CONTROL rather than a falsifier: confirms the null prediction at $0 tie'
   x_twitter:
     financial_tie: none
     estimated_value: $0

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27989 | Across 839 test files |
+| Tests | 28039 | Across 840 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27989 tests** across 839 test files, each covering a different analytical capability:
+MediaScope has **28039 tests** across 840 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1354,6 +1354,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py` | 29 | Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365) |
 | `test_verge_apple_smart_glasses_privacy_virtue_vs_meta_surveillance_aug29.py` | 18 | Mechanism #370: The Verge Apple Smart Glasses Privacy-Virtue Framing Inversion vs Meta Surveillance Alarm |
 | `test_verge_openai_aspiration_vs_meta_deficit_aug31.py` | 18 | Iteration 425 Type A - The Verge OpenAI Aspiration vs Meta Deficit Framing |
+| `test_type_a_512_gizmodo_google_null_tie_symmetric_adversarial_sep04_6am.py` | 50 | Type A #512: Gizmodo x Google null-tie control - symmetric adversarial register toward deal-absent entities, delta +0.10 n.s. (control for deal-publication softening claims) - Sep 4 2026 06:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

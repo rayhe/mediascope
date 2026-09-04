@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27989 tests across 839 test files (all from real articles)
+├── tests/                       # 28039 tests across 840 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1106,6 +1106,7 @@ mediascope/
 │   ├── test_type_e_celebrity_institutional_cascade_pervert_glasses_vocab_mainstreaming_aug28.py  # Test: Celebrity/Institutional Cascade of Pervert Glasses Vocabulary - Activist → Mainstream Entertainment → Therapy/Wellness → Newsletter → Print (Mechanism #365)
 │   ├── test_verge_apple_smart_glasses_privacy_virtue_vs_meta_surveillance_aug29.py  # Mechanism #370: The Verge Apple Smart Glasses Privacy-Virtue Framing Inversion vs Meta Surveillance Alarm
 │   ├── test_verge_openai_aspiration_vs_meta_deficit_aug31.py  # Iteration 425 Type A - The Verge OpenAI Aspiration vs Meta Deficit Framing
+│   ├── test_type_a_512_gizmodo_google_null_tie_symmetric_adversarial_sep04_6am.py  # Type A #512: Gizmodo x Google null-tie control - symmetric adversarial register - Sep 4 2026 06:00 PDT - 8 classes, 50 tests
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation
