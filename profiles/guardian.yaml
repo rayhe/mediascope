@@ -1837,8 +1837,147 @@ competitor_relationships:
     financial_tie: "none"
     estimated_value: "$0"
     direction: "none"
-    description: "No known financial relationship. Guardian joined lawsuit against Cohere (not Anthropic) for unauthorized content use."
+    description: "No known financial relationship. Guardian joined lawsuit against Cohere (not Anthropic) for unauthorized content use. See mechanism_517 for piracy-coverage register asymmetry vs deal partner OpenAI."
     coverage_prediction: "neutral"
+    mechanism_517_guardian_anthropic_piracy_editorial_vs_openai_deal_partner:
+      mechanism_id: 517
+      iteration: 517
+      iteration_type: "A"
+      iteration_time: "2026-09-04 11:00 PDT"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      publication_focus: "The Guardian"
+      entity_pair: "Anthropic (piracy) vs OpenAI (deal partner, Feb 2025 strategic partnership)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: >
+        The Guardian applies its book-piracy adversarial frame in the opinion-editorial
+        register against Anthropic while the same piracy frame for OpenAI, its Feb 14
+        2025 strategic partner, stays confined to the news register. Kathryn James'
+        Aug 5 2026 Guardian comment piece "Why is Anthropic destroying books?" is
+        entity-targeted editorial treatment of Anthropic's Project Panama destructive
+        scanning and pirated-source acquisition, cross-linking the Guardian-view
+        editorial line that authors should be protected over big tech. OpenAI's
+        documented book piracy (Books1/Books2 training corpora disclosed in OpenAI's
+        own 2020 GPT paper; Tremblay v. OpenAI alleging 290,000+ shadow-library
+        titles; Authors Guild class action; AI Disclosures Project O'Reilly DE-COP
+        study Apr 2025) produced no equivalent Guardian editorial in a bounded
+        site:theguardian.com search. This is a GRADIENT, not a binary: the Guardian
+        does cover OpenAI copyright fights adversarially in news register (NYT-led
+        sanctions motion, Jul 2026; Dan Milmo rogue-agent pieces). The asymmetry is
+        register depth, editorial companionship, and the piracy frame's opinion
+        instantiation existing for the non-partner but not the partner.
+      anthropic_articles:
+        - title: "Why is Anthropic destroying books?"
+          author: "Kathryn James"
+          publication: "The Guardian"
+          date: "2026-08-05"
+          register: "comment/opinion"
+          guardian_url_pattern: "theguardian.com (mirrored full text verified)"
+          mirror_url: "https://drwebdomain.blog/2026/08/06/why-is-anthropic-destroying-books-kathryn-james-the-guardian/"
+          dateline_verified: "Wed 5 Aug 2026 07.00 EDT"
+          framing: "entity_targeted_adversarial_editorial"
+          key_phrases:
+            - "Anthropic had a choice: it could have secured copyright permission to use existing e-books"
+            - "Rather than engage with the texts' owners, Anthropic first chose to use pirated sources instead"
+            - "destructively scan all the books in the world"
+            - "we do not want it to be known that we are working on this"
+          editorial_cross_link: "The Guardian view on changes to copyright laws: authors should be protected over big tech"
+          manual_illustrative_tone: -0.65
+          tone_note: "Adversarial opinion register; full text verified via mirror; original Guardian URL known via mirror page outlinks"
+        - title: "Anthropic has agreed to pay $1.5bn to settle a class-action lawsuit by book authors"
+          publication: "The Guardian"
+          date: "2025-09-05"
+          register: "news"
+          url: "https://www.theguardian.com/technology/2025/sep/05/anthropic-settlement-ai-book-lawsuit"
+          archive_record: "https://www.newssniffer.co.uk/versions/16485671"
+          framing: "straight_news_adversarial_facts"
+          key_facts:
+            - "$1.5bn settlement, largest copyright recovery ever per plaintiff lawyer Justin Nelson"
+            - "about $3,000 for each of an estimated 500,000 books"
+            - "pirated copies from LibGen and PiLiMi"
+            - "Judge William Alsup preliminary approval Sep 2025; final approval Jul 20 2026 by Judge Araceli Martinez-Olguin"
+          final_approval_source: "https://firstamendment.mtsu.edu/post/judge-approves-1-5b-anthropic-settlement-over-pirated-books-used-to-train-chatbot/"
+          manual_illustrative_tone: -0.3
+      openai_articles_deal_partner:
+        partnership: "Guardian x OpenAI strategic partnership announced Feb 14 2025 (mechanism_514): Guardian reporting/archive in ChatGPT with attribution; Guardian rolls out ChatGPT Enterprise; terms undisclosed"
+        articles:
+        - title: "News outlets seek sanctions against OpenAI in copyright battle"
+          publication: "The Guardian"
+          date: "2026-07-approx"
+          register: "news"
+          mirror_url: "https://dailyguardian.eu/news-outlets-seek-sanctions-against-openai-in-copyright-battle/"
+          framing: "adversarial_facts_news_register"
+          key_phrases:
+            - "chose obstruction over releasing datasets"
+            - "hiding and destroying evidence showing how ChatGPT was trained on stolen journalism"
+          manual_illustrative_tone: -0.25
+          tone_note: "Adversarial facts in news register; proves Guardian capacity for negative OpenAI framing outside editorial register"
+        - title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+          author: "Dan Milmo"
+          publication: "The Guardian"
+          date: "2026-07"
+          register: "news"
+          framing: "straight_news_self_disclosure"
+          manual_illustrative_tone: -0.1
+        - title: "Boss of startup hacked by rogue OpenAI agent urges 'radical transparency'"
+          author: "Dan Milmo"
+          publication: "The Guardian"
+          date: "2026-07"
+          register: "news"
+          framing: "adversarial_followup_news_register"
+          manual_illustrative_tone: -0.15
+      openai_piracy_editorial_absence:
+        status: "bounded absence - no equivalent editorial found"
+        method: "site:theguardian.com query 'OpenAI books training copyright piracy'; returned zero Guardian pieces (only The Register, Fast Company, Harvard Gazette, Bloomberg Law)"
+        openai_documented_piracy_that_lacks_guardian_editorial:
+          - "Books1/Books2: OpenAI's own 2020 GPT paper states 15% of training data from 'two internet-based books corpora'; Authors Guild complaint alleges shadow-library provenance"
+          - "Tremblay v. OpenAI class action: ChatGPT trained on books 'copied by OpenAI without consent, without credit, and without compensation'; complaint cites 290,000+ title book dataset from 'flagrantly illegal shadow libraries' LibGen and Sci-Hub"
+          - "AI Disclosures Project (Apr 2025): DE-COP inference study finds GPT-4o likely trained on 34 copyrighted O'Reilly books without permission"
+        source_urls:
+          - "https://www.theregister.com/2023/09/21/authors_guild_openai_lawsuit/"
+          - "https://news.bloomberglaw.com/tech-and-telecom-law/openai-facing-another-copyright-suit-over-ai-training-on-novels"
+          - "https://www.theregister.com/software/2025/04/03/study-suggests-openai-isnt-waiting-for-copyright-exemption/1097658?td=keepreading"
+      scorer_manual_illustrative:
+        target_scores: [-0.65, -0.3]
+        peer_scores: [-0.25, -0.1, -0.15]
+        target_entity: "Anthropic"
+        peer_entities: ["OpenAI"]
+        target_avg: -0.475
+        peer_avg: -0.1667
+        asymmetry_delta: -0.31
+        t_statistic: -1.7085
+        p_value: 0.3154
+        cohens_d: -1.9777
+        ci_lower: -0.5333
+        ci_upper: -0.0833
+        is_significant: false
+        reproduced_by_live_scorer: true
+        note: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores; n=2 vs n=3; directionally consistent with deal-partner softening but NOT statistically significant. No significance claimed."
+      financial_context:
+        guardian_openai_deal: "Strategic partnership Feb 14 2025 (mechanism_514): ChatGPT news-source access, attributed summaries, ChatGPT Enterprise rollout; terms undisclosed"
+        guardian_anthropic_deal: "$0, no licensing relationship"
+        sue_one_sign_other: "Feb 13 2025: Guardian joined News/Media Alliance Cohere copyright suit one day before OpenAI deal announcement - selective enforcement posture"
+        status: "correlate only, not proof of editorial influence"
+      confounders_ranked:
+        strong:
+          - "Register mismatch: James piece is comment/opinion; OpenAI items are news. Opinion writers get adversarial license news reporters do not. James is a comment writer, not an AI-beat reporter."
+          - "News-value gap: the $1.5bn settlement was the largest copyright recovery ever, a genuine news peg; OpenAI book-piracy stories are older and litigated incrementally with no single comparable peg in the window."
+        moderate:
+          - "Bounded absence: theatlantic-style site: search-index evidence, not a Guardian site crawl; a Guardian editorial on OpenAI books could exist outside the index."
+          - "James piece is partly cultural-philosophical (bookishness, cultural heritage), not a pure piracy expose; its adversarial energy targets the law and the industry as much as Anthropic."
+        weak:
+          - "Guardian-view editorial cross-link is cross-promotion, not proof the editorial board targeted Anthropic."
+      counter_evidence:
+        - "Guardian DID publish adversarial OpenAI copyright news: 'chose obstruction', 'hiding and destroying evidence' in the sanctions-motion coverage - proves no editorial firewall for the deal partner in news register."
+        - "Guardian joined the NYT-led sanctions motion reporting, not OpenAI's defense; the Guardian-view copyright line ('authors should be protected over big tech') is entity-general, not Anthropic-specific."
+        - "Milmo's rogue-agent coverage shows sustained capacity for negative OpenAI framing."
+        - "Guardian sued Cohere alongside other publishers, not Anthropic; piracy adversarialness may track litigation posture more than licensing deals."
+      cross_references: [514, 275, 481, 404]
+      cautious_language: "Correlation only. Financial correlation does not imply editorial control. Absence claims are bounded by search-index visibility. Gradient finding, not binary."
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: "2026-09-04"
   amazon:
     financial_tie: "none"
     estimated_value: "$0"

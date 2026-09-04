@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28106 tests across 843 test files (all from real articles)
+├── tests/                       # 28202 tests across 845 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1110,6 +1110,8 @@ mediascope/
 │   ├── test_type_b_513_dara_kerr_meta_openai_genre_conditioned_register_split_sep04_7am.py  # Type B #513: Dara Kerr (Guardian) Meta vs OpenAI genre-conditioned register split - Sep 4 2026 07:00 PDT - 6 classes, 35 tests
 │   ├── test_type_c_514_guardian_openai_strategic_partnership_sep04_8am.py  # Type C #514: Guardian x OpenAI strategic partnership (Feb 2025) - Sep 4 2026 08:00 PDT - 17 bare test functions, 17 tests
 │   ├── test_type_d_515_window_audit_and_sibling_key_uniqueness_sep04_9am.py  # Type D #515: 511-514 window audit + sibling key uniqueness + scorer delta audit - Sep 4 2026 09:00 PDT - 7 classes, 15 tests
+│   ├── test_type_e_516_podcast_sentiment_twenty_sixth_verification_sep04_10am.py  # Type E #516: podcast sentiment 26th verification - Guilty Feminist hold, IBTimes UK seventh vertical - Sep 4 2026 10:00 PDT - 8 classes, 40 tests
+│   ├── test_type_a_517_guardian_anthropic_piracy_editorial_vs_openai_sep04_11am.py  # Type A #517: Guardian x Anthropic book-piracy editorial register vs OpenAI deal-partner register - Sep 4 2026 11:00 PDT - 10 classes, 56 tests
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation
