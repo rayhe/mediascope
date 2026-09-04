@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27807 | Across 833 test files |
+| Tests | 27841 | Across 834 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27807 tests** across 833 test files, each covering a different analytical capability:
+MediaScope has **27841 tests** across 834 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1339,6 +1339,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_491_podcast_sentiment_twentyfirst_verification_sep03_9am.py` | 33 | Type E #491: podcast sentiment twenty-first verification - GF 498 hold 21st cycle, EHE 24-day hold, Attention Sphere 21st no-match - Sep 3 2026 09:00 PDT |
 | `test_type_e_496_podcast_sentiment_twentysecond_verification_sep03_2pm.py` | 33 | Type E #496: podcast sentiment twenty-second verification - GF 498 hold 22nd cycle, EHE 24-day hold, Attention Sphere 22nd no-match - Sep 3 2026 14:00 PDT |
 | `test_type_e_501_podcast_sentiment_twentythird_verification_sep03_7pm.py` | 33 | Type E #501: podcast sentiment twenty-third verification - GF 498 hold 23rd cycle, EHE 24-day hold, Attention Sphere 23rd no-match - Sep 3 2026 19:00 PDT |
+| `test_type_e_506_podcast_sentiment_twentyfourth_verification_sep04_12am.py` | 34 | Type E #506: podcast sentiment twenty-fourth verification - GF 498 hold 24th cycle, EHE 25-day hold, Attention Sphere 24th no-match (nonprofit-org corroboration secondary-only) - Sep 4 2026 00:00 PDT |
 | `test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py` | 39 | Type A #502: WIRED x Microsoft PCM adversarial boundary condition - "Massive" emissions piece after Feb 2026 deal, register cushioning vs Meta CSAM-ads comparator - Sep 3 2026 20:00 PDT |
 | `test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py` | 35 | Type B #503: Dominic Preston (The Verge) inverted privacy-vocabulary application - privacy dek on Google/Samsung glasses, straight relay on Meta Muse Spark 1.1 and Google Search Live - Sep 3 2026 21:00 PDT |
 | `test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py` | 39 | Type A #497: FT x Google DeepMind leadership-transition register - same-treatment replication of #487, first Type A test of #437 dual-payer portfolio - Sep 3 2026 15:00 PDT |
