@@ -2569,6 +2569,80 @@ entities:
       - rank: 5
         strength: weak
         confounder: the early-March-2026 date for the QuitGPT piece is inferred from a search-result relative timestamp, not a verified byline date
+    mechanism_519_newscorp_openai_dual_payer_woo_and_sue:
+      mechanism_name: News Corp x OpenAI Content Licensing Deal (May 2024) - Largest OpenAI Publisher Deal, Dual-AI-Payer Owner With Meta Leg and Woo-and-Sue Litigation Posture
+      mechanism_id: 519
+      iteration: 519
+      rotation: Type C
+      date_analyzed: '2026-09-04'
+      time_pdt: '14:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      announcement_date: '2024-05-22'
+      deal_structure:
+        form: landmark multi-year global partnership - OpenAI gains access to current and archived content from News Corp major news and information publications for BOTH model training and surfacing as answers to ChatGPT user queries (joint press releases); the answer-use clause distinguishes it from training-only deals in the portfolio
+        reported_value: more than $250 million over five years (approx $50M per year), via WSJ self-reporting; neither company disclosed length or value officially; compensation includes cash and credits for use of OpenAI technology (WSJ, via Adweek)
+        us_mastheads: The Wall Street Journal, Barron's, MarketWatch, Investor's Business Daily, FN, New York Post
+        uk_mastheads: The Times, The Sunday Times, The Sun
+        au_mastheads: The Australian, news.com.au, The Daily Telegraph, The Courier Mail, The Advertiser, The Herald Sun
+        exclusions: does not include HarperCollins book publishing nor Realtor.com real estate listings; Fox News is a separate company (Fox Corporation, spun out in 2019) and is not covered
+        counterparties:
+        - Robert Thomson (CEO, News Corp) - called Altman a principled partner who understands the commercial and social significance of journalists and journalism; this landmark accord is not an end, but the beginning of a beautiful friendship
+        - Sam Altman (CEO, OpenAI) - a proud moment for journalism and technology
+        largest_openai_publisher_deal: largest documented OpenAI publisher payment in the repo value lists at approx $50M per year, vs about $16M per year Dotdash Meredith (Press Gazette) and tens of millions Axel Springer
+      meta_second_leg:
+        announcement_date: '2026-03-04'
+        reported_by: Alexandra Bruell, The Wall Street Journal - WSJ itself broke the story of its own owner second AI deal
+        terms: up to $50 million a year for at least three years; US and UK content for Meta AI training and retrieval of new information for users of Meta AI products
+        meta_prior_deals_context: Meta had already completed deals with People Inc., USA Today, CNN and Fox News, terms undisclosed (WSJ)
+        dual_payer_status: News Corp is the only tracked-publication owner with AI content licensing deals from BOTH Meta and OpenAI
+      sue_one_sign_other_sequence:
+        event: Dow Jones and NY Post sued Perplexity AI, SDNY, 2024-10-21 (case 1:24-cv-07984)
+        claims: massive amount of illegal copying into a RAG database for the answer engine; verbatim or near-verbatim reproductions; false attribution of erroneous statements to WSJ and NY Post trademarks; diversion of readers and advertising and subscription revenue
+        relief_sought: injunction, destruction of any RAG database or index, up to $150,000 per infringement plus actual damages and profits
+        prelude: July 2024 licensing-demand letter to Perplexity went unanswered (Reuters)
+        thomson_quote: Perplexity perpetrates an abuse of intellectual property that harms journalists, writers, publishers and News Corp
+        sequencing_note: 'signed OpenAI 2024-05-22, sued Perplexity 2024-10-21 - the same sign-the-licensed sue-the-unlicensed sequencing as #514 (Guardian sued Cohere one day BEFORE signing OpenAI), here stretched over five months'
+      woo_and_sue_strategy:
+        thomson_quote: We have what you might call a woo and a sue strategy. We will woo you. We would like you to be our partner. But if you are stealing our stuff, we are going to sue you. So there will be a discount for those who hand themselves in, and there will be a penalty for those that resist.
+        venue: Morgan Stanley Technology, Media and Telecom conference, March 2026, ahead of the Meta deal announcement (Engadget)
+        mediascope_relevance: the issuer names the strategy outright - selective enforcement of copyright is stated corporate policy, which bounds any reading of the Perplexity suit as general anti-AI posture
+      prediction_for_tracked_coverage:
+        text: as the only dual-deal owner in the tracked set, the mechanism predicts WSJ coverage carries symmetric softening incentives toward BOTH Meta and OpenAI (and harder or neutral registers toward Anthropic, Google, Amazon, Perplexity - entities with no News Corp deal), conditional on the owner-level incentive transmitting to the newsroom
+        control_validation: WSJ tech columnist Christopher Mims already carries systematic disclosure notes (News Corp has deals with both Meta and OpenAI) in his columns - the repo only publication-level disclosure practice (opacity index, balanced 0.6 percent)
+        timing_bound: the Meta leg (Mar 2026) post-dates most tracked WSJ coverage in the repo window; the OpenAI leg (May 2024) covers the full tracked period
+      meta_contrast: unlike single-deal owners (Conde Nast, Atlantic, Vox Media, Guardian - OpenAI-only), News Corp collects from both sides, neutralizing any net Meta-vs-OpenAI directional prediction from the incentive while predicting symmetric positivity vs no-deal entities
+      extends: '#514 Guardian sue-one-sign-the-other sequencing; tier-1 bilateral OpenAI-News Corp $50M per year data row in marketplace_intermediary_landscape'
+      correlation_not_causation: true
+      is_significant: false
+      statistical_scope: qualitative structural mapping only
+      tone_scores: NOT_SCORED
+      p_value: NOT_CALCULATED
+      ranked_confounders:
+        strong:
+        - 'owner-newsroom separation: deal signed at News Corp corporate level; WSJ newsroom editorial independence may attenuate or null the incentive transmission'
+        - 'timing skew: Meta leg began March 2026 while OpenAI leg ran since May 2024, so any observed asymmetry has differential exposure periods'
+        moderate:
+        - reported value is WSJ self-reporting; official terms undisclosed; exact cash-vs-credits split unknown
+        - woo-and-sue is an issuer strategy statement, not evidence of coverage direction
+        weak:
+        - exclusions list (HarperCollins, Realtor.com) from secondary summaries, not the deal text
+      counter_evidence:
+      - The Register own deal coverage was skeptical, flagging the non-disclosure non-disparagement framing - press skepticism of the deal exists
+      - NYT sued OpenAI and Microsoft while News Corp signed, showing the sue-vs-sign split is industry-wide not a News Corp anomaly (Fast Company two paths framing)
+      - 'dual-deal owners are becoming the norm: Amazon-NYT $20M to $25M per year May 2025 (WSJ) - the balanced-control prediction weakens as more owners collect from multiple labs'
+      source_urls:
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - http://firstamendment.mtsu.edu/post/openai-to-start-using-news-content-from-news-corp-in-multiyear-deal/
+      - https://www.theregister.com/2024/05/23/openai_news_corp/?td=rt-9cs
+      - https://venturebeat.com/ai/openai-partners-with-wall-street-journal-publisher-news-corp
+      - https://www.adweek.com/morning-media-newsfeed/news-corp-strikes-content-licensing-deal-with-openai/
+      - https://www.reuters.com/legal/murdoch-firms-dow-jones-new-york-post-sue-perplexity-ai-2024-10-21/
+      - https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471
+      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+      - https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
+      - https://www.medianama.com/2024/10/223-news-corp-sues-perplexity-ai-copyright-infringement-seeks-150k-per-violation/?trk=article-ssr-frontend-pulse_little-text-block
+      research_method: browser.search this run (3 query sets, verbatim full-URL listings); all items via search-result excerpts, second-hand and marked bounded in-mechanism; per the iteration-492 rule, no zero-coverage claims
   anthropic:
     display_name: Anthropic
     aliases:
