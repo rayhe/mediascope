@@ -1,3 +1,21 @@
+#500 Type D: Test and Verify - ARCHITECTURE.md Stale Header Repair (499 Miss), Cross-Doc Header-Agreement Guard, 490-500 Rotation-Cycle Check - Sep 3 2026 18:00 PDT
+
+**Date:** 2026-09-03 18:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 499 C -> 500 D)
+**Type:** D - Test and Verify (failure repair, durable guards, doc sync)
+**Failure inventory at run start:** 1 failure across the 496-499 window files + structural suite (244 passed): `test_structural_consistency.py::TestTestFileListingConsistency::test_architecture_test_file_count_header` - "ARCHITECTURE.md claims 826 test files, but 827 exist on disk." Root cause: the #499 run re-synced README.md headers via `scripts/count_stats.py --check` (which only covers README.md) and missed the parallel "N tests across M test files" header in the docs/ARCHITECTURE.md tests/ tree section (line 458, still 27615/826 from the #498 sync).
+**Fix (docs only, no test logic touched):** docs/ARCHITECTURE.md tests/ tree header -> 27660/828 authoritative (pytest --collect-only via `count_stats.py --pytest`) after the #500 file and its doc rows landed. README.md stats-table row and prose header re-synced 27633/827 -> 27660/828 in the same pass.
+**Rotation Transparency:** Previous entry #499 Type C at 17:00 PDT Sep 3 2026 (commit 913817e verified present via git log). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 490 D 08:00, 491 E 09:00, 492 A 10:00, 493 B 11:00, 494 C 12:00, 495 D 13:00, 496 E 14:00, 497 A 15:00, 498 B 16:00, 499 C 17:00. Selected Type D.
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_d_500 files (glob verified); no prior iteration covers the README<->ARCHITECTURE header-agreement invariant or the 490-500 rotation-cycle check. Distinct from #495 (brittle-assertion ban, 491-494 window).
+**Self-caught ordering error (this run):** the new file's six entry-dependent tests were first run BEFORE the log prepend and failed as expected (no 500/D heading existed yet) - a verification-ordering mistake in this run, not a test bug; all green after the prepend. Separately the header regex initially missed the README prose header's `**bold**` markup (`**27660 tests** across`); fixed with a bold-tolerant `\*{0,2}` in the test, not by weakening it.
+**Second-order finding (count_stats.py convention):** plain `count_stats.py` (regex estimate) reported 27505 while `--pytest` (authoritative) reported 27660 - the regex path undercounts parametrize expansions. The --check/--pytest path is what the README gate and the structural header test use; noted here so future runs do not sync to the regex number.
+**Statistical discipline:** Metadata and repo-integrity only; correlation_not_causation unchanged; no tone scores, no p_value, no significance claimed.
+**Counter-evidence / limits:** The cross-doc agreement guard compares the FIRST "N tests across M test files" header per doc; other prose mentions are out of scope. Full 27.6k suite still ~5h; hourly Type D keeps the risk-window + structural precedent per #495.
+**Artifact readiness:** No analysis.json update warranted. Type D defines no data mechanism.
+**New Type D files:** `tests/test_type_d_500_architecture_header_sync_and_rotation_cycle_sep03_6pm.py` - 18 tests, all passing.
+**Doc sync:** README row + ARCHITECTURE tree row added for #500; all three header spots re-synced via `scripts/count_stats.py --pytest` (authoritative collected count): README stats table, README prose, ARCHITECTURE tree header - 27633/827 -> 27660/828.
+**Cumulative:** mechanism count unchanged at #499 (Type D defines no data mechanism); 27660 tests across 828 files.
+
+---
 #499 Type C: The Atlantic x OpenAI Strategic Content and Product Partnership (May 29 2024) - Tracked-Publication Direct Deal, Lessin Pre-Deal Op-Ed Irony - Sep 3 2026 17:00 PDT
 
 **Date:** 2026-09-03 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 498 B -> 499 C)
