@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27955 | Across 838 test files |
+| Tests | 27989 | Across 839 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27955 tests** across 838 test files, each covering a different analytical capability:
+MediaScope has **27989 tests** across 839 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1344,6 +1344,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_508_kurt_wagner_meta_x_symmetric_accountability_sep04_2am.py` | 25 | Type B #508: Kurt Wagner (Bloomberg) Meta vs X symmetric accountability framing - genre-driven registers, no entity-selective softening - Sep 4 2026 02:00 PDT |
 | `test_type_c_509_anthropic_adweek_zero_deal_posture_sep04_3am.py` | 14 | Type C #509: Anthropic institutionalized zero-deal posture (Adweek Aug 26 2026) - named partnerships VP, fair-use ideological line, publisher-suit economics - Sep 4 2026 03:00 PDT |
 | `test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py` | 15 | Type D #510: #509 doc-sync miss repair audit + 506-510 rotation-cycle integrity + window data-mechanism integrity + asymmetry-scorer engine consistency audit (28 blocks, 0 violations) - Sep 4 2026 04:00 PDT |
+| `test_type_e_511_podcast_sentiment_twentyfifth_verification_sep04_5am.py` | 34 | Type E #511: podcast sentiment twenty-fifth verification - GF 498 hold 25th cycle, EHE 25-day hold, Attention Sphere 25th no-match (nonprofit identification stays secondary-only) - Sep 4 2026 05:00 PDT |
 | `test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py` | 39 | Type A #502: WIRED x Microsoft PCM adversarial boundary condition - "Massive" emissions piece after Feb 2026 deal, register cushioning vs Meta CSAM-ads comparator - Sep 3 2026 20:00 PDT |
 | `test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py` | 35 | Type B #503: Dominic Preston (The Verge) inverted privacy-vocabulary application - privacy dek on Google/Samsung glasses, straight relay on Meta Muse Spark 1.1 and Google Search Live - Sep 3 2026 21:00 PDT |
 | `test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py` | 39 | Type A #497: FT x Google DeepMind leadership-transition register - same-treatment replication of #487, first Type A test of #437 dual-payer portfolio - Sep 3 2026 15:00 PDT |
