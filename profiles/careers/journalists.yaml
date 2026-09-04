@@ -3368,6 +3368,82 @@ journalists:
   name: Dara Kerr
   notes: 'CNET → The Markup → NPR → Guardian pipeline. Hired Jan 2025, likely replacing Kari Paul''s departure (2024). Covers tech accountability with labor/surveillance focus. Colorado native, Bay Area based. Three degrees (NYU, Columbia, Berkeley). ANALYTICAL VALUE: Fresh hire  -  her coverage patterns at Guardian vs NPR/Markup will be a clean natural experiment for institutional framing effects. Strong investigative background. Previously lived in Latin America.'
   multi_publication: true
+  competitor_coverage:
+    type_b_513_dara_kerr_meta_openai_genre_conditioned_register_split:
+      iteration: 513
+      date: '2026-09-04'
+      type: B
+      design: 'Within-journalist cross-entity comparison: Dara Kerr (Guardian US tech reporter) on Meta vs OpenAI. Tests whether the Guardian-OpenAI licensing deal (Feb 2025) softens a reporter''s register for the deal partner relative to a non-partner.'
+      hypothesis: 'At a deal-holding publication, the reporter''s register softens for the licensing partner: adversarial accountability on Meta, neutral business news on OpenAI.'
+      finding: 'DIRECTIONAL SUPPORT for the deal-incentive theory, heavily bounded and not causal evidence. Kerr applies an adversarial accountability register to Meta (Aug 18 2026 courtroom report: states accuse Meta of covering up teen-addiction research, complaint quoted directly, Kentucky AG tobacco-blueprint; Mar 2026 landmark-losses analysis: "most powerful social media company in the world faced a more severe public reckoning than it has in years") while her OpenAI coverage runs as neutral business news (Jun 8 2026 confidential S-1/IPO filing: $850bn+ valuation relayed unchallenged) and balanced race-frame reporting (Aug 9 2025 AGI analysis: Altman''s "significant step on the path to AGI" relayed with his own caveat plus independent expert skepticism, Zuckerberg/Google/Anthropic claims in the same frame). Direction matches the incentive: deal partner gets the softer register, non-partner gets adversarial. The genre confound dominates interpretation: lawsuit/trial events draw the adversarial register and IPO/launch events draw business news, so the observed split is equally consistent with genre-driven framing. First dedicated deal-partner-side Type B data point; directionally consistent with the deal-incentive theory''s confirmation side. CORRELATION NOT CAUSATION.'
+      incentive_context:
+        deal: 'Guardian-OpenAI content licensing deal'
+        deal_date: '2025-02-14'
+        deal_url: 'http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/'
+        deal_scope: 'Guardian reporting and archive journalism as a news source in ChatGPT (attributed summaries and extracts); ChatGPT Enterprise rollout across GMG for product development. Recorded in profiles/guardian.yaml as relationship_type licensing_deal.'
+        reporter_hire_date: '2025-01'
+        hire_source_url: 'https://talkingbiznews.com/media-news/guardian-hires-kerr-as-a-tech-reporter/'
+        timing_note: 'Kerr hired Jan 2025, one month before the Feb 14 2025 OpenAI deal; deal effect cannot be separated from fresh-hire institutional absorption.'
+      meta_corpus:
+      - title: 'US states accuse Meta of covering up research on teen social media addiction in pivotal trial'
+        date: '2026-08-18'
+        byline: 'Dara Kerr (solo)'
+        url: 'https://www.theguardian.com/technology/2026/aug/18/meta-child-safety-addiction-lawsuit-states'
+        verification: 'Article documented in de-amplify single-source distillation (fetched 2026-08-18): Kerr reported from the courtroom; only outlet to quote the 233-page complaint document itself; carried Kentucky AG tobacco-blueprint framing; Meta''s response included. theguardian.com direct fetch policy-blocked this run; canonical URL and content via repo-adjacent distillation (second-hand, bounded).'
+        source_note_url: 'https://github.com/geeks-accelerator/de-amplify/blob/HEAD/docs/research/single-source/2026-08-18-guardian.md'
+        register: 'adversarial accountability'
+        verbatim_markers: '"US states accuse Meta of covering up research on teen social media addiction"; complaint quoted directly; Kentucky AG tobacco-and-opioid blueprint; "mounting lawsuits" docket frame; $200bn ask adjacent to the 1998 tobacco $200bn payout (reporter-level adjacency device, flagged in the distillation).'
+      - title: 'Landmark losses for Meta and YouTube as Big Tech misses point'
+        date: '2026-03'
+        date_note: 'Late March 2026 per verdict timeline; exact newsletter date bounded'
+        byline: 'Dara Kerr (analysis; quoted via Guardian TechScape newsletter mirror)'
+        url: 'https://d33gy59ovltp76.cloudfront.net/news/landmark-losses-for-meta-and-youtube-as-big-tech-misses-point'
+        verification: 'Newsletter mirror quoting Kerr''s analysis of the Mar 2026 addiction verdicts (NM $375M jury verdict Mar 24 2026; CA $6M coordinated-case verdict). Guardian canonical URL not confirmed this run (bounded, second-hand).'
+        register: 'adversarial accountability'
+        verbatim_markers: '"In the span of just two days, the most powerful social media company in the world faced a more severe public reckoning than it has in years."'
+      openai_corpus:
+      - title: 'OpenAI confidentially files for initial public offering on US stock market'
+        date: '2026-06-08'
+        byline: 'Blake Montgomery and Dara Kerr'
+        url: 'https://www.theguardian.com/technology/2026/jun/08/openai-ipo-files-for-public-stock-market'
+        verification: 'Canonical Guardian URL via AI News Digest tracking index; byline via Muck Rack journalist index. theguardian.com direct fetch policy-blocked this run (bounded, second-hand).'
+        register: 'neutral business news'
+        verbatim_markers: '"ChatGPT maker expected to be valued at more than $850bn, one of most highly valued listings in market history"; confidential S-1 details relayed straight, no adversarial framing.'
+      - title: "'It's missing something': AGI, superintelligence and a race for the future"
+        date: '2025-08-09'
+        byline: 'Dan Milmo and Dara Kerr'
+        url: 'https://www.theguardian.com/technology/2025/aug/09/its-missing-something-agi-superintelligence-and-a-race-for-the-future'
+        verification: 'Canonical URL via academic-kickstart full-text mirror of the Guardian piece (published Aug 9 2025; links the Aug 7 GPT-5 launch story). theguardian.com direct fetch policy-blocked this run (bounded, second-hand).'
+        register: 'balanced race-frame reporting'
+        verbatim_markers: 'Altman "significant step on the path to AGI" relayed with his own caveat ("missing something quite important") plus independent skepticism (Evans "very vibes-based", Bader "nowhere near that threshold"); Zuckerberg "superintelligence is now in sight" quoted in the same shared frame as Google, Anthropic and DeepSeek.'
+      asymmetry_scorer_result_illustrative:
+        methodology: 'MANUAL ILLUSTRATIVE tones only, hand-assigned per article-level register reading on a -1 (maximally adversarial) to +1 (maximally favorable) scale. n=2 vs n=2. NOT an empirical measurement; no inference can be drawn from these scores. p_value is deliberately NOT_CALCULATED: a mechanical significance test on two hand-scored items per side would manufacture precision that does not exist. is_significant is false. correlation_not_causation is true.'
+        target_entity: Meta
+        target_scores:
+        - -0.75
+        - -0.65
+        target_avg: -0.7
+        peer_entity: OpenAI
+        peer_scores:
+        - 0.0
+        - -0.1
+        peer_avg: -0.05
+        delta: -0.65
+        delta_calc: 'target_avg - peer_avg = -0.70 - (-0.05) = -0.65'
+        p_value: NOT_CALCULATED
+        is_significant: false
+        correlation_not_causation: true
+      confounders:
+      - '[STRONG] Genre asymmetry: Meta items are lawsuit/trial accountability events (child-safety trial, landmark verdicts); OpenAI items are an IPO filing and a product-launch race analysis. The register difference is equally consistent with genre-driven framing, the standing Type B boundary condition (#493 Fowler, #498 Swisher, #503 Preston, #508 Wagner).'
+      - '[STRONG] Fresh-hire timing: Kerr joined the Guardian Jan 2025, one month before the Feb 14 2025 OpenAI deal; deal effect cannot be separated from institutional absorption by a new hire.'
+      - '[MODERATE] Co-byline: both OpenAI items are co-bylined (Montgomery, Milmo); the Meta flagship trial piece is solo Kerr. Register cannot be attributed solely to Kerr on the OpenAI side.'
+      - '[MODERATE] Evidence bounded: theguardian.com direct fetch policy-blocked this run; canonical URLs and content notes via search snippets, mirrors and repo-adjacent distillation docs (second-hand).'
+      - '[WEAK] Date span: OpenAI corpus Aug 2025 to Jun 2026, Meta corpus Mar 2026 to Aug 2026; partially overlapping but not event-matched.'
+      counterevidence:
+      - 'Same-event symmetry: Kerr''s landmark-losses analysis applies the accountability frame to YouTube/Google as well as Meta, weakening an entity-selective Meta reading.'
+      - 'Shared race frame: the Aug 2025 AGI analysis treats OpenAI, Meta, Google and Anthropic in one frame with independent skepticism applied to Altman''s claims too; no entity favoritism visible.'
+      - 'Outlet-consistent: the Guardian holds no Meta deal and has an adversarial Meta history since Cambridge Analytica (2018, Cadwalladr); hard Meta coverage is outlet-consistent regardless of the OpenAI deal.'
+      - 'Legitimate courtroom reporting: the distillation notes the tobacco analogy is the AGs'' own stated method (not press framing) and Meta''s response is included; the Meta pieces are adversarial-register journalism, not hit pieces.'
 - career:
   - beat: architecture, urban planning, RIBA, CABE
     end: 2001-06
