@@ -11072,6 +11072,29 @@ journalists:
   - https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
   - https://muckrack.com/dominic-preston/articles
   - https://intelligentrelations.com/media-database/dominic-preston/
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 503
+      iteration: 503
+      date_added: '2026-09-03'
+      pattern: inverted_privacy_vocabulary_application
+      description: 'Within-journalist cross-entity discipline check (first dedicated Preston Type B; no prior test files or competitor_coverage block). Preston, The Verge news editor, applies privacy-problems vocabulary to Google/Samsung camera hardware while his Meta and Google AI-launch coverage runs as straight news-desk relay with zero privacy vocabulary. (1) Jul 22 2026: Samsung/Google smart glasses hands-on, dek verbatim: "With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s." (three-mirror verified, #492). (2) Jul 9 2026: "Meta says its new AI model is ready to compete on coding" (Muse Spark 1.1 launch) - company-claim relay ("Meta says... a ''step-change''"), mild deficit frame ("reentering the AI race"), one controversy note (Muse Image/Instagram), zero privacy vocabulary. (3) May 20 2025: "Google debuts Search Live" (camera field-of-view AI feature) - straight launch news, headline-level zero privacy framing (bounded). INVERSION vs naive prediction: the outlet carries Google ad dependency (#81) and the owner carries the OpenAI deal (#494); the naive prediction is softer Google treatment, yet the only privacy-problems language in Preston''s verified corpus lands on Google/Samsung, not Meta. Joins the falsification family (#457, #471, #472, #492, #493, #498). Reading: privacy vocabulary is event/genre-driven (camera-hardware hands-on draws the privacy dek) rather than entity-driven. CORRELATION NOT CAUSATION. theverge.com direct fetch policy-blocked; all items verified via mirrors/excerpts, marked second-hand.'
+      finding_type: inverted_application_falsification
+      falsification_family: [457, 471, 472, 492, 493, 498]
+      related_mechanisms: [81, 492, 494, 498]
+      statistical_discipline: 'MANUAL ILLUSTRATIVE ONLY; is_significant false; correlation_not_causation true; p_value NOT_CALCULATED'
+      confounding_factors:
+      - 'STRONG: genre/beat difference - hands-on hardware piece vs AI-model launch news-desk items; privacy vocabulary may be genre-driven, not entity-driven'
+      - 'STRONG: deks are often editor-written, so the privacy-equivalence dek may not be Preston''s own language (byline still his; bounded)'
+      - 'MODERATE: n=1 per entity side; thin corpus (news editor, not beat columnist)'
+      - 'MODERATE: second-hand verification - theverge.com policy-blocked; mirrors and excerpts only'
+      - 'WEAK: 14-month span (May 2025-Jul 2026) across the three items'
+      source_urls:
+      - https://technewstube.com/theverge/1852147/samsungs-smart-glasses-actually-look-like/
+      - https://thetechstreetnow.com/meta-says-its-new-ai-model-is-ready-to-compete-on-coding/
+      - https://www.techmeme.com/260709/p20#a260709p20
+      - https://www.techmeme.com/250520/p43
+      test_file: tests/test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py
 - career:
   - beat: consumer tech, gadgets, gaming
     end: '2014'

@@ -24665,6 +24665,62 @@ cross_publication_findings:
     - https://www.macrumors.com/2021/04/05/tim-cook-sideloading-apps-would-break-the-iphone/
     - https://canadian-podcasts.com/podcast/on-with-kara-swisher/sam-altman-openai-and-the-future-of-artificial-gen
 
+  verge_dominic_preston_inverted_privacy_vocabulary:
+    mechanism: verge_dominic_preston_inverted_privacy_vocabulary
+    mechanism_id: 503
+    journalist: Dominic Preston
+    publication: the-verge (news editor, Feb 2025-present; ex-Android Police managing reviews editor)
+    publication_owner: Vox Media (owns The Verge, a tracked publication)
+    deal_mechanism_id: 494
+    deal_context: 'Vox Media x OpenAI strategic partnership (May 29 2024, #494); The Verge carries Google/Samsung ad dependency (#81). Naive prediction: softer Google treatment, harder Meta treatment.'
+    role: news editor
+    discovery_date: '2026-09-03'
+    verification_date: '2026-09-03'
+    date_added: '2026-09-03'
+    iteration: 503
+    iteration_type: B
+    finding_type: inverted_application_falsification
+    finding_summary: Within-journalist cross-entity discipline check. Preston applies privacy-problems vocabulary to Google/Samsung camera hardware while his Meta AI-launch coverage and Google camera-AI launch coverage run as straight news relay with zero privacy vocabulary. The privacy language lands on the deal-adjacent entity, not Meta.
+    key_finding: 'Inverted application vs the naive financial-incentive prediction. Jul 22 2026 Samsung/Google smart glasses hands-on carries the dek verbatim "With a camera on every pair, Google''s and Samsung''s AI glasses face the same privacy problems as Meta''s" (three-mirror verified, #492), while Preston''s Jul 9 2026 Meta Muse Spark 1.1 launch piece ("Meta says its new AI model is ready to compete on coding") relays company claims with zero privacy vocabulary, and his May 20 2025 Google Search Live piece (a camera field-of-view AI feature) is straight launch news with zero privacy framing at headline level. The journalist willing to name privacy problems does so for Google/Samsung hardware, not for Meta.'
+    cross_entity_corpus:
+      samsung_google_glasses_hands_on:
+        piece: Jul 22 2026 Verge hands-on "Here is what Samsung's smart glasses actually look like"
+        result: Dek verbatim "With a camera on every pair, Google's and Samsung's AI glasses face the same privacy problems as Meta's"
+        register: privacy-problems vocabulary applied to Google/Samsung at dek level
+      meta_muse_spark_launch:
+        piece: Jul 9 2026 Verge news "Meta says its new AI model is ready to compete on coding" (Muse Spark 1.1)
+        result: Company-claim relay ("Meta says... a 'step-change'"); mild deficit frame ("reentering the AI race"); one controversy note (Muse Image/Instagram); zero privacy vocabulary
+        register: straight news-desk relay
+      google_search_live_launch:
+        piece: May 20 2025 Verge news "Google debuts Search Live" (camera field-of-view AI feature)
+        result: Straight launch-news headline; zero privacy framing at headline level (bounded, excerpt-level)
+        register: straight news-desk relay
+    falsification_family: [457, 471, 472, 492, 493, 498]
+    related_mechanisms: [81, 492, 494, 498]
+    confounding_factors:
+    - level: STRONG
+      factor: Genre/beat difference. The privacy vocabulary appears in a camera-hardware hands-on; the zero-privacy items are AI software launch news. Application may be genre-driven (hardware with cameras draws privacy deks) rather than entity-driven.
+    - level: STRONG
+      factor: Dek authorship. Deks are often editor-written; the privacy-equivalence dek may not be Preston's own language. Byline is his; the inference about his personal stance is bounded.
+    - level: MODERATE
+      factor: Thin corpus. n=1 per entity side; Preston is a news editor filing across beats, not a columnist with a deep single-entity corpus.
+    - level: MODERATE
+      factor: Secondary-source dependence. theverge.com direct fetch is policy-blocked per standing rule; all three items verified via mirrors (TechNewsTube, TheTechStreetNow) and aggregator excerpts (Techmeme), marked second-hand.
+    - level: WEAK
+      factor: Temporal spread. Items span May 2025 to Jul 2026 (14 months); editorial context may have shifted.
+    statistical_discipline:
+      is_significant: false
+      correlation_not_causation: true
+      tone_scores: MANUAL ILLUSTRATIVE ONLY
+      p_value: NOT_CALCULATED
+    test_file: tests/test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py
+    source_urls:
+    - https://technewstube.com/theverge/1852147/samsungs-smart-glasses-actually-look-like/
+    - https://thetechstreetnow.com/meta-says-its-new-ai-model-is-ready-to-compete-on-coding/
+    - https://www.techmeme.com/260709/p20#a260709p20
+    - https://www.techmeme.com/250520/p43
+    - https://muckrack.com/dominic-preston
+
 methodology: 'For each profiled publication, we compared coverage tone and framing
 
   of Meta against coverage of companies that pay the publication (via
