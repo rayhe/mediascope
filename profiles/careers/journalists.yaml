@@ -10793,6 +10793,92 @@ journalists:
   - https://muckrack.com/kurt-wagner-3
   - https://twit.tv/people/kurt-wagner
   - https://gdg.community.dev/events/details/google-gdg-on-campus-university-of-rochester-rochester-united-states-presents-speaker-series-kurt-wagner-bloomberg/
+  competitor_coverage:
+    type_b_508_meta_x_symmetric_accountability:
+      date: '2026-09-04'
+      iteration: 508
+      type: B
+      design: 'within-journalist, same-publication (Bloomberg), Meta vs X cross-entity'
+      finding: 'Wagner applies symmetric accountability framing to Meta and X: adversarial when the news event is adversarial, executive-claim relay when the news event is business. No entity-selective softening detected in the verified corpus. Meta side: the Mar 26 2026 addiction-trial piece (co-byline Alexandra S. Levine) puts Meta and Google in the same category as Big Tobacco and opioid makers over products designed to be addictive, calling the verdict a black eye that invites regulation; metaverse-budget-cut and 600-AI-job-cut scoops are sourced accountability reporting; the Jul 2026 Zuckerberg interview on Muse Spark 1.1 relays aggressive pricing and state-of-the-art agentic-reasoning claims. X side: the Mar 31 2025 xAI-acquires-X piece frames the $33B all-stock deal as an unexpected win for X investors (investor-sympathetic business register, parallel to the Zuckerberg claim-relay); the ex-Twitter executives $128M severance suit against Musk is reported adversarially; Battle for the Bird (2024) carries deeply critical Musk passages. Framing tracks news genre, not entity. Joins the falsification/boundary-condition family (Type B #493 Fowler, #498 Swisher, #503 Preston): at Bloomberg, which holds no AI content-licensing deal with any lab, the beat reporter shows journalist-level consistency, constraining the financial-incentive theory to deal-holding publications.'
+      meta_corpus:
+      - title: 'Meta, Google risk big tobacco-like fallout after addiction trial'
+        date: '2026-03-26'
+        byline: 'Kurt Wagner and Alexandra S. Levine'
+        register: 'adversarial accountability'
+        markers:
+        - 'same category as Big Tobacco and opioid makers'
+        - 'products designed to be addictive'
+        - 'black eye'
+        url: 'https://businessmirror.com.ph/2026/03/26/meta-google-risk-big-tobacco-like-fallout-after-addiction-trial/'
+        verification: 'full text read 2026-09-04 (Bloomberg syndication)'
+      - title: 'Meta Plans Deep Cuts to Metaverse Efforts'
+        date: '2026-03'
+        register: 'sourced accountability'
+        markers:
+        - 'budget cuts as high as 30% for the metaverse group'
+        - 'would most likely include layoffs as early as January'
+        url: 'https://pxlnv.com/linklog/meta-cuts-metaverse/'
+        verification: 'headline and excerpt verified 2026-09-04; independently confirmed by NYT and WSJ per citation'
+      - title: 'Meta Cutting Roughly 600 AI Jobs as Company Aims to Move Faster'
+        date: '2025-10'
+        register: 'straight business news'
+        url: 'https://muckrack.com/kurtwagner8/articles'
+        verification: 'byline index verified 2026-09-04'
+      - title: 'Zuckerberg Sets Aggressive Price With Meta Pay-to-Use AI'
+        date: '2026-07'
+        date_note: 'approximate; video upload ~57 days before 2026-09-04'
+        register: 'executive-claim relay (granted-access interview)'
+        markers:
+        - 'pricing is going to be very aggressive and attractive'
+        - 'state-of-the-art or very close to it'
+        url: 'https://www.youtube.com/watch?v=oaTNCiTmASM'
+        verification: 'segment description with verbatim Zuckerberg quotes verified 2026-09-04'
+      x_corpus:
+      - title: 'Musk XAI Deal Offers an Unexpected Win for X Investors'
+        date: '2025-03-31'
+        register: 'investor-sympathetic business'
+        markers:
+        - 'unexpected win for X investors'
+        - 'values X at $33 billion, not including debt'
+        url: 'https://news.bloomberglaw.com/private-equity/musks-xai-deal-offers-an-unexpected-win-for-x-investors'
+        verification: 'headline and lede verified 2026-09-04 (Bloomberg Law mirror); full text paywalled, marked bounded'
+      - title: 'Ex-Twitter Executives Sue Elon Musk for $128 Million in Severance Pay'
+        register: 'adversarial accountability'
+        markers:
+        - 'sued company owner Elon Musk'
+        - 'stiffing them on more than $128 million in severance'
+        url: 'https://muckrack.com/kurt-wagner-16/articles'
+        verification: 'byline index verified 2026-09-04'
+      - title: 'Battle for the Bird'
+        date: '2024-02'
+        register: 'adversarial long-form (book)'
+        markers:
+        - 'darker, yet-to-be-defined motives'
+        - 'employees growing horror'
+        url: 'https://www.platformer.news/kurt-wagner-battle-for-the-bird-interview-zoe-schiffer-extremely-hardcore/'
+        verification: 'publisher and interview copy verified 2026-09-04'
+      - title: 'Elon Musk X Is Testing Adult Content Groups for Users'
+        register: 'neutral product news'
+        url: 'https://muckrack.com/kurt-wagner-16/articles'
+        verification: 'byline index verified 2026-09-04'
+      confounders:
+      - factor: 'genre asymmetry'
+        strength: 'STRONG'
+        note: 'The most adversarial Meta item is a jury-verdict story and the most adversarial X items are a lawsuit story and a book; the softest items on both sides are granted-access or deal reporting. Genre may fully explain the register split.'
+      - factor: 'co-byline on flagship Meta item'
+        strength: 'MODERATE'
+        note: 'The Big Tobacco framing is co-bylined with Alexandra S. Levine, so the adversarial register cannot be attributed to Wagner alone.'
+      - factor: 'date gap'
+        strength: 'MODERATE'
+        note: 'Flagship X business item (Mar 2025) predates the flagship Meta accountability item (Mar 2026) by a year; news cycles and editorial priorities shifted.'
+      - factor: 'paywall-bounded X evidence'
+        strength: 'WEAK'
+        note: 'Full text of the xAI-deal piece is paywalled; the investor-sympathetic reading rests on headline and lede, both verified.'
+      newsroom_update_2026_07:
+        event: 'Promoted to Big Tech team leader (announced by Sarah Frier); oversees Google, Amazon, Microsoft, Meta coverage while based in Denver; parental leave from August 2026.'
+        implication: 'Wagner byline volume on the Meta beat is expected to dip during leave; Alexandra Levine expands to Meta alongside Riley Griffin, making Levine the Meta byline to watch for continuity.'
+        url: 'https://www.citybiz.co/article/877466/bloomberg-promotes-kurt-wagner-to-lead-big-tech-coverage-team/'
+        verification: 'verified 2026-09-04'
 - career:
   - beat: tech, business, investigative features
     end: 2020-02

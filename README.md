@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27885 tests** across 835 test files, each covering a different analytical capability:
+MediaScope has **27910 tests** across 836 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1341,6 +1341,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_501_podcast_sentiment_twentythird_verification_sep03_7pm.py` | 33 | Type E #501: podcast sentiment twenty-third verification - GF 498 hold 23rd cycle, EHE 24-day hold, Attention Sphere 23rd no-match - Sep 3 2026 19:00 PDT |
 | `test_type_e_506_podcast_sentiment_twentyfourth_verification_sep04_12am.py` | 34 | Type E #506: podcast sentiment twenty-fourth verification - GF 498 hold 24th cycle, EHE 25-day hold, Attention Sphere 24th no-match (nonprofit-org corroboration secondary-only) - Sep 4 2026 00:00 PDT |
 | `test_type_a_507_verge_openai_ad_monetization_register_boundary_sep04_1am.py` | 44 | Type A #507: The Verge x OpenAI ad-monetization register boundary condition - adversarial register on deal partner and Meta alike, soft register confined to Decoder access-interview genre - Sep 4 2026 01:00 PDT |
+| `test_type_b_508_kurt_wagner_meta_x_symmetric_accountability_sep04_2am.py` | 25 | Type B #508: Kurt Wagner (Bloomberg) Meta vs X symmetric accountability framing - genre-driven registers, no entity-selective softening - Sep 4 2026 02:00 PDT |
 | `test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py` | 39 | Type A #502: WIRED x Microsoft PCM adversarial boundary condition - "Massive" emissions piece after Feb 2026 deal, register cushioning vs Meta CSAM-ads comparator - Sep 3 2026 20:00 PDT |
 | `test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py` | 35 | Type B #503: Dominic Preston (The Verge) inverted privacy-vocabulary application - privacy dek on Google/Samsung glasses, straight relay on Meta Muse Spark 1.1 and Google Search Live - Sep 3 2026 21:00 PDT |
 | `test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py` | 39 | Type A #497: FT x Google DeepMind leadership-transition register - same-treatment replication of #487, first Type A test of #437 dual-payer portfolio - Sep 3 2026 15:00 PDT |
