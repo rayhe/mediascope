@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27841 tests across 834 test files (all from real articles)
+├── tests/                       # 27885 tests across 835 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1092,6 +1092,7 @@ mediascope/
 │   ├── test_type_e_496_podcast_sentiment_twentysecond_verification_sep03_2pm.py  # Type E #496: podcast sentiment twenty-second verification - Sep 3 2026 14:00 PDT - 7 classes, 33 tests
 │   ├── test_type_e_501_podcast_sentiment_twentythird_verification_sep03_7pm.py  # Type E #501: podcast sentiment twenty-third verification - Sep 3 2026 19:00 PDT - 7 classes, 33 tests
 │   ├── test_type_e_506_podcast_sentiment_twentyfourth_verification_sep04_12am.py  # Type E #506: podcast sentiment twenty-fourth verification - Sep 4 2026 00:00 PDT - 7 classes, 34 tests
+│   ├── test_type_a_507_verge_openai_ad_monetization_register_boundary_sep04_1am.py  # Type A #507: The Verge x OpenAI ad-monetization register boundary condition - Sep 4 2026 01:00 PDT - 8 classes, 44 tests
 │   ├── test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py  # Type A #502: WIRED x Microsoft PCM adversarial boundary condition - Sep 3 2026 20:00 PDT - 8 classes, 39 tests
 │   ├── test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py  # Type B #503: Dominic Preston inverted privacy-vocabulary application - Sep 3 2026 21:00 PDT - 7 classes, 35 tests
 │   ├── test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py  # Type A #497: FT x Google DeepMind leadership-transition register - Sep 3 2026 15:00 PDT - 11 classes, 39 tests
