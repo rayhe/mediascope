@@ -1021,6 +1021,7 @@ mediascope/
 │   ├── test_type_c_483_schibsted_openai_realtime_deal_sep03_1am.py  # Type C #483: Schibsted Media x OpenAI real-time content deal - Sep 3 2026 01:00 PDT
 │   ├── test_type_c_489_hearst_openai_dual_payer_sep03_7am.py  # Type C #489: Hearst x OpenAI strategic content partnership (Oct 8 2024) and Amazon Rufus dual-AI-payer mapping - Sep 3 2026 07:00 PDT
 │   ├── test_type_c_494_vox_media_openai_partnership_sep03_12pm.py  # Type C #494: Vox Media x OpenAI strategic partnership (May 29 2024) - owner-level tie to The Verge - Sep 3 2026 12:00 PDT
+│   ├── test_type_c_499_atlantic_openai_partnership_sep03_5pm.py  # Type C #499: The Atlantic x OpenAI strategic partnership (May 29 2024) - tracked-publication direct deal, Lessin op-ed irony - Sep 3 2026 17:00 PDT
 │   ├── test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py  # Type D #495: brittle self-top assertion repair + ban guard + 491-494 window persistence - Sep 3 2026 13:00 PDT
 │   ├── test_type_d_05am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion
 │   ├── test_type_d_06am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026
