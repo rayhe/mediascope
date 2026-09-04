@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27784 | Across 832 test files |
+| Tests | 27807 | Across 833 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27784 tests** across 832 test files, each covering a different analytical capability:
+MediaScope has **27807 tests** across 833 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1273,6 +1273,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_499_atlantic_openai_partnership_sep03_5pm.py` | 18 | Type C #499: The Atlantic x OpenAI strategic content and product partnership (May 29 2024) - tracked-publication direct deal; Lessin pre-deal anti-licensing op-ed irony; Beres devil's bargain; union opposition; Thompson response - Sep 3 2026 17:00 PDT |
 | `test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py` | 16 | Type D #495: brittle self-top assertion repair (492/493/490 -> relative newest-first ordering), repo-wide brittle-assertion ban guard, 491-494 window persistence - Sep 3 2026 13:00 PDT (16 defs, 25 collected with parametrize) |
 | `test_type_d_500_architecture_header_sync_and_rotation_cycle_sep03_6pm.py` | 18 | Type D #500: ARCHITECTURE.md stale tests/ tree header repair (27615/826 -> current), README<->ARCHITECTURE header-agreement guard, 490-500 rotation-cycle integrity (D,C,B,A,E x2 + D), 496-499 window persistence - Sep 3 2026 18:00 PDT |
+| `test_type_d_505_yaml_parse_guard_and_rotation_cycle_sep03_11pm.py` | 15 | Type D #505: repo-wide profiles YAML parse guard (16 files, novel vs #423 named-file list), 501-505 rotation-cycle integrity (E,A,B,C,D), iteration-entry section-completeness guard, adjacent-transition rotation check - Sep 3 2026 23:00 PDT |
 | `test_type_d_05am_full_suite_cross_validation_aug28.py` | 30 | Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion |
 | `test_type_d_06am_full_suite_cross_validation_aug28.py` | 37 | Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026 |
 | `test_type_d_07am_cross_validation_aug27.py` | 21 | Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT) |

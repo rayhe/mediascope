@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27784 tests across 832 test files (all from real articles)
+├── tests/                       # 27807 tests across 833 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1025,6 +1025,7 @@ mediascope/
 │   ├── test_type_c_499_atlantic_openai_partnership_sep03_5pm.py  # Type C #499: The Atlantic x OpenAI strategic partnership (May 29 2024) - tracked-publication direct deal, Lessin op-ed irony - Sep 3 2026 17:00 PDT
 │   ├── test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py  # Type D #495: brittle self-top assertion repair + ban guard + 491-494 window persistence - Sep 3 2026 13:00 PDT
 │   ├── test_type_d_500_architecture_header_sync_and_rotation_cycle_sep03_6pm.py  # Type D #500: ARCHITECTURE header sync repair + cross-doc agreement guard + 490-500 rotation-cycle check - Sep 3 2026 18:00 PDT
+│   ├── test_type_d_505_yaml_parse_guard_and_rotation_cycle_sep03_11pm.py  # Type D #505: repo-wide YAML parse guard + 501-505 rotation-cycle check + entry section-completeness - Sep 3 2026 23:00 PDT
 │   ├── test_type_d_05am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - Mechanisms #350-#355 + Wearables Pricing Inversion
 │   ├── test_type_d_06am_full_suite_cross_validation_aug28.py  # Type D: Full Suite Cross-Validation - 06:00 PT Aug 28 2026
 │   ├── test_type_d_07am_cross_validation_aug27.py  # Type D Cross-Validation: Mechanisms #333-#338 (Aug 27, 2026, 07:00 PT)
