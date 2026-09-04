@@ -2055,9 +2055,10 @@ entities:
         response, and ownership-layer cross-reference for The Atlantic x OpenAI
         strategic partnership. First dedicated deal-structure mechanism for The
         Atlantic in the repo; The Atlantic is itself a tracked publication (not
-        owner-level), making this the most direct publication-to-competitor
-        financial tie mapped to date. Companion to mechanism 494 (Vox Media,
-        announced the same day via the same Axios scoop).
+        owner-level), making this a direct publication-to-competitor
+        financial tie (FT's OpenAI deal is the other direct
+        tracked-publication tie in the repo). Companion to mechanism 494
+        (Vox Media, announced the same day via the same Axios scoop).
       announcement_date: '2024-05-29'
       deal_structure:
         form: strategic content and product partnership (OpenAI announcement,

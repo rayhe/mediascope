@@ -196,6 +196,8 @@ def test_mediascope_relevance_tracked_publication():
     assert 'tracked publication' in rel
     assert '481' in rel
     assert 'Type A' in rel
+    # FT's OpenAI deal is also a direct tracked-publication tie: no superlative.
+    assert 'most direct' not in rel
 
 
 def test_statistical_discipline():
