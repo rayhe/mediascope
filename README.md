@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 27660 | Across 828 test files |
+| Tests | 27693 | Across 829 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **27660 tests** across 828 test files, each covering a different analytical capability:
+MediaScope has **27693 tests** across 829 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1336,6 +1336,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_486_podcast_sentiment_twentieth_verification_sep03_4am.py` | 33 | Type E #486: podcast sentiment twentieth verification - GF 498 hold 20th cycle, EHE 24-day hold, Attention Sphere 20th no-match - Sep 3 2026 04:00 PDT |
 | `test_type_e_491_podcast_sentiment_twentyfirst_verification_sep03_9am.py` | 33 | Type E #491: podcast sentiment twenty-first verification - GF 498 hold 21st cycle, EHE 24-day hold, Attention Sphere 21st no-match - Sep 3 2026 09:00 PDT |
 | `test_type_e_496_podcast_sentiment_twentysecond_verification_sep03_2pm.py` | 33 | Type E #496: podcast sentiment twenty-second verification - GF 498 hold 22nd cycle, EHE 24-day hold, Attention Sphere 22nd no-match - Sep 3 2026 14:00 PDT |
+| `test_type_e_501_podcast_sentiment_twentythird_verification_sep03_7pm.py` | 33 | Type E #501: podcast sentiment twenty-third verification - GF 498 hold 23rd cycle, EHE 24-day hold, Attention Sphere 23rd no-match - Sep 3 2026 19:00 PDT |
 | `test_type_a_497_ft_google_deepmind_power_centre_replication_sep03_3pm.py` | 39 | Type A #497: FT x Google DeepMind leadership-transition register - same-treatment replication of #487, first Type A test of #437 dual-payer portfolio - Sep 3 2026 15:00 PDT |
 | `test_type_b_498_kara_swisher_vox_openai_deal_falsification_sep03_4pm.py` | 31 | Type B #498: Kara Swisher vs the #494 Vox-OpenAI deal prediction - deal-partner falsification, uniform adversarial register Meta/OpenAI/Apple - Sep 3 2026 16:00 PDT |
 | `test_type_e_5pm_wire_service_local_broadcast_podcast_cross_medium_settlement_week_vocabulary_propagation_aug27.py` | 38 | Type E: Podcast Sentiment Tracking - Wire Service to Local Broadcast Podcast |
