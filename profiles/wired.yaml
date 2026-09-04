@@ -2510,6 +2510,91 @@ competitor_relationships:
     digiday_source: https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
     coverage_prediction: softer
     date_established: 2026-02
+    mechanism_502_wired_microsoft_pcm_adversarial_boundary_condition:
+      mechanism_id: 502
+      date_analyzed: '2026-09-03'
+      type: Type A - Competitor Coverage Deep Dive
+      iteration: 502
+      iteration_type: A
+      iteration_time: 2026-09-03 20:00 PDT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: WIRED (Conde Nast)
+      finding: 'Boundary-condition Type A on the Microsoft PCM softer-coverage prediction. WIRED published an adversarial Microsoft investigation AFTER the Feb 2026 Publisher Content Marketplace deal (''Microsoft
+        Reports a Massive 25 Percent Jump in Emissions'', Jul 2026, opened first-hand via archive.org mirror; wired.com policy-blocked): headline uses ''Massive'', documents the Chevron West Texas gas plant
+        at 11.5M tons CO2e per year. The PCM deal therefore does not buy immunity from adversarial WIRED coverage. Within-article register analysis against the Meta comparator (''Meta Ran Ads That Contained
+        AI-Generated Child Sexual Abuse Imagery'', Matt Burgess, Aug 2026, via mirror excerpts, marked second-hand) still shows cushioning devices present for Microsoft and absent for Meta: (1) industry-diffusion
+        framing, Google and Amazon named as fellow emissions risers in the lede; (2) executive voice share, Brad Smith and Melanie Nakagawa quoted at length plus a direct Nakagawa statement to WIRED; (3) sympathetic
+        expert close, ''highly commendable'' on REC reform; (4) pledge close, ''carbon negative by 2030'' responsibility framing; (5) zero watchdog or advocacy voices. The Meta piece personalizes (''Mark Zuckerberg''''s
+        Meta''), centers a watchdog moral frame (Tech Transparency Project: ads ''reviewed, approved, and allowed to run by Meta ... while the company collected the ad dollars''), and applies pattern framing
+        (''second time in recent weeks''). A third register data point, the Scout product-launch piece (Reece Rogers, Jun 2026, via mirror excerpts), shows zero privacy-vocabulary terms in excerpts for an always-on
+        agent that ''can go through your work messages, calendar, and email inbox'' (excerpt-bounded claim; full-text verification pending, wired.com policy-blocked). Net: mixed evidence. The strong softening
+        claim is falsified at the coverage-selection level; a weaker register-cushioning claim survives subject to heavy confounders. Correlation is not causation.'
+      articles:
+      - title: Microsoft Reports a Massive 25 Percent Jump in Emissions
+        date: 2026-07
+        url: https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/
+        mirror_opened_first_hand: https://web.archive.org/web/20260710232642/https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/
+        register: adversarial investigation with cushioning devices
+        manual_illustrative_tone: -0.35
+      - title: Meet Microsoft Scout, Your AI Coworker That Never Logs Off
+        author: Reece Rogers
+        date: '2026-06-03'
+        url: https://www.wired.com/story/meet-microsoft-scout-your-ai-coworker-that-never-logs-off/
+        mirror_excerpt_second_hand: https://technologistmag.com/meet-microsoft-scout-your-ai-coworker-that-never-logs-off/
+        register: product-launch, playful, executive-voiced, zero privacy vocabulary in excerpts
+        manual_illustrative_tone: 0.45
+      - title: Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery
+        author: Matt Burgess
+        date: '2026-08-06'
+        url: https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/
+        mirror_excerpts_second_hand:
+        - https://www.resetera.com/threads/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery-some-ran-as-recently-as-this-week.1596640/
+        - https://www.engadget.com/2231100/meta-apps-displayed-ads-that-contained-ai-generated-csam/
+        register: accusatory investigation, watchdog moral frame, personalized lede
+        manual_illustrative_tone: -0.85
+      asymmetry_scorer_result:
+        method: mediascope.score.asymmetry.calculate_asymmetry (live run this iteration)
+        target_entity: microsoft
+        target_tones_manual_illustrative:
+        - -0.35
+        - 0.45
+        target_avg: 0.05
+        peer_entities:
+        - meta
+        peer_tones_manual_illustrative:
+        - -0.85
+        peer_avg: -0.85
+        asymmetry_score: 0.9
+        p_value: 1.0
+        cohens_d: 1.591
+        is_significant: false
+        ci_95:
+        - 0.5
+        - 1.3
+        methodology: MANUAL ILLUSTRATIVE tones at article level, n=2 vs n=1. p_value 1.0, is_significant False. No empirical significance claimed or claimable. Correlation is not causation.
+      confounders:
+      - '[STRONG] Moral-gravity gap: paid CSAM ads vs emissions accounting are categorically different news events; harsher Meta register may track genuine news value, not entity identity. No adjustment calculated.'
+      - '[STRONG] Beat and byline differences: emissions piece vs security-desk (Burgess) vs product-launch (Rogers); desk norms may explain register differences. Bylines on Microsoft pieces unverified in excerpts.'
+      - '[MODERATE] Excerpt-level verification bound: 2 of 3 articles verified only via mirror/search excerpts (wired.com policy-blocked); full-text tone could differ.'
+      - '[MODERATE] n=2 vs n=1: single-comparator design; one additional Meta or Microsoft article could swing the illustrative delta.'
+      - '[WEAK] Hand-assigned tones are subjective; scorer inputs are illustrative, not observed.'
+      counter_evidence:
+      - The emissions piece itself is adversarial toward a PCM deal partner ('Massive', 11.5M-ton Chevron plant figure), which cuts against any strong softening claim.
+      - WIRED ran adversarial Microsoft security coverage historically (Entra ID vulnerability, Sep 2025, via archive.org).
+      - Microsoft received no watchdog-driven moral condemnation here partly because the underlying event (emissions rise) has no direct victim-advocacy counterpart.
+      research_method: browser.open first-hand on the archive.org mirror of the WIRED emissions piece (44 lines, full text); browser.search excerpts for the Meta CSAM-ads piece (ResetEra, Engadget, Muck Rack,
+        Resemble AI mirrors) and the Scout piece (Technologist Mag and 5 verbatim mirrors), all marked second-hand; wired.com policy-blocked per standing rule, no zero-coverage claims made; canonical WIRED
+        URLs cited verbatim from search-result URL listings, never constructed.
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones only; live scorer reproduced: delta 0.90, p_value 1.0, cohens_d 1.591, is_significant False. No significance claimed or claimable. correlation_not_causation
+        true.'
+      source_urls:
+      - https://web.archive.org/web/20260710232642/https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/
+      - https://www.wired.com/story/meet-microsoft-scout-your-ai-coworker-that-never-logs-off/
+      - https://technologistmag.com/meet-microsoft-scout-your-ai-coworker-that-never-logs-off/
+      - https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/
+      - https://www.engadget.com/2231100/meta-apps-displayed-ads-that-contained-ai-generated-csam/
+      - https://www.resemble.ai/resources/the-deepfake-watchlist-week-of-july-31---august-6-2026
   perplexity:
     financial_tie: licensing
     estimated_value: undisclosed
