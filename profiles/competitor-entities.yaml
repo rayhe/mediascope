@@ -2487,6 +2487,88 @@ entities:
       - https://technologymag.org/openai-strikes-content-deal-with-toms-guide-owner-future/
       - https://www.Gamedeveloper.com/business/future-publishing-signs-content-partnership-with-openai
       - https://www.maginative.com/article/openais-lands-publishing-deal-with-future-2/
+    mechanism_514_guardian_openai_strategic_partnership:
+      mechanism_name: Guardian x OpenAI Strategic Partnership (Feb 2025) - Sue-One-Sign-the-Other Sequence, Fifth Lightcap-Signed Publisher Deal, SPUR Anti-Scraping Co-Founding While Licensed
+      mechanism_id: 514
+      iteration: 514
+      rotation: Type C
+      date_analyzed: '2026-09-04'
+      time_pdt: '08:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      announcement_date: '2025-02-14 (GMG press release; trade-press reprints dated Feb 17-20 2025)'
+      extends: publisher_content_deal_portfolio (Guardian listed as Feb 2025 partner; first dedicated Type C deal mechanism for it)
+      deal_structure:
+        form: strategic partnership - Guardian reporting and archive journalism available as a news source in ChatGPT; attributed short summaries and article extracts; Guardian rolls out ChatGPT Enterprise internally to develop new products, features and tools
+        announced_scale: ChatGPT 300M weekly global users gain direct access and extended summaries of Guardian trusted reporting, with attribution and links back to the Guardian (OpenAI announcement)
+        training_rights_explicit: false
+        training_rights_note: announcement did NOT mention model-training rights (Digiday), the same framing shift as the Washington Post deal; structural distinction between attributed search/display access and training rights
+        counterparties:
+        - Keith Underwood (CFO/COO, Guardian Media Group - business-side signatory; neither CEO Anna Bateson nor EIC Katharine Viner quoted on the deal announcement)
+        - Brad Lightcap (COO, OpenAI - quoted in the OpenAI announcement)
+        lightcap_fifth: 'Lightcap is the OpenAI counterparty on the fifth Lightcap-signed publisher deal in the repo, after #489 Hearst, #494 Vox, #499 Atlantic and #504 Conde Nast, confirming the portfolio-wide signer pattern'
+        deal_terms_opacity:
+          exact_amount_undisclosed: true
+          term_length_undisclosed: true
+          evidence: Guardian spokesperson declined to disclose terms (Digiday); matches the portfolio-wide most_deals_undisclosed flag and mechanisms 478, 483, 489, 494, 499, 504
+        proactive_pre_deal_posture: 'unlike #504 (Lynch Senate-testimony reversal), the Guardian entered the deal from a proactive AI posture - published its AI approach in 2023/2024 under human-oversight framing and was a 2024 founding partner of ProRata revenue-share licensing; Bateson described agreements with numerous partners (Press Gazette), confirming a plural licensing strategy rather than a single-deal exception'
+      sue_one_sign_other_sequence:
+        suit_date: '2025-02-13'
+        suit: News/Media Alliance-organized copyright suit against Cohere Inc filed in the U.S. District Court for the Southern District of New York; plaintiffs included The Guardian alongside Conde Nast, The Atlantic, Forbes, Business Insider, Politico, Vox Media and others; 4,000+ copyrighted works alleged; up to $150,000 per infringed work sought plus destruction of copyrighted works in Cohere possession
+        suit_conduct_alleged: widespread unauthorised use of publisher content in developing and running generative AI systems - verbatim regurgitations, substitutional summaries, paywall and bot-block circumvention, and hallucinated fake pieces under publisher names; one exhibit was a Guardian Nova music festival article conflated with the 2020 Nova Scotia shootings
+        bateson_suit_quote: 'As part of a considered approach to generative AI, the Guardian has explored and signed agreements with numerous partners to ensure fair compensation and attribution for the Guardian''s award-winning investigative journalism. Unfortunately, Cohere has demonstrated an egregious pattern of scraping and copying news articles to produce full verbatim copies of original content without compensation - or even worse, complete hallucinations. The Guardian is proud to stand with some of the world''s top publishers in an attempt to stop Cohere''s brazen theft and distortion of original journalism.'
+        deal_date: '2025-02-14 (announcement; trades Feb 17-20)'
+        sequence_gap: one day separated the anti-scraping suit filing from the OpenAI partnership announcement - the same conduct class (AI training on Guardian content) litigated against the $5B-valued Canadian lab and licensed to OpenAI within 24 hours
+        status_update: Press Gazette tracker (updated Sep 2 2026) reports news publishers won the first round of the copyright claim against Cohere
+        analytical_note: the sequence is a selective-enforcement posture - scrapers sued, licensees embraced; the suit hallucination exhibit makes the OpenAI deal attributed-summaries framing read as the licensed cure to the unlicensed disease
+      spur_tension:
+        launch: Feb 2026 - Guardian CEO Anna Bateson co-signed the open letter launching SPUR (Standards for Publisher Usage Rights) with the BBC (Tim Davie), Financial Times (Jon Slade), Sky News (David Rhodes) and Telegraph Media Group (Anna Jones)
+        spur_complaint: publisher reporting, archives and original journalism have become foundational training material for AI systems, scraped, copied and reused with no common standards to enable permission or payment, weakening the economic model that supports journalism
+        spur_goal: shared technical standards and responsible licensing frameworks so AI developers access journalism in legitimate, responsible and convenient ways
+        tension: the Guardian demands industry-wide permission-or-payment standards one year after signing its own bilateral OpenAI license on undisclosed terms; by mid-2026 SPUR had 30 publisher members plus AP as first U.S. founding member (Digiday)
+        coherence_reading: SPUR is a leverage play for better bilateral terms industry-wide (Fast Company), not a repudiation of the OpenAI deal; holding a license while demanding standards is the deal-partner version of the sue-one-sign-the-other posture
+      quitgpt_editorial_tension:
+        event: 'in early March 2026 (inferred from a search-result relative timestamp 177 days before the Sep 4 2026 read; bounded) the Guardian published a Rutger Bregman comment piece headlined ''Quit ChatGPT: right now! Your subscription is bankrolling authoritarianism'', calling for a consumer boycott of ChatGPT (quitgpt.org) on grounds including ICE use of a ChatGPT-powered screening tool and a reported $125M OpenAI lobbying initiative and Super PAC'
+        flag: former Observer journalist Carole Cadwalladr publicly flagged the contradiction with the February 2025 strategic partnership
+        bounded_note: comment pages routinely publish views at odds with business deals; this is an editorial-independence datapoint, not evidence the deal failed
+      meta_contrast: 'zero known AI content licensing or product deals between the Guardian (or Guardian Media Group) and Meta as of Sep 4 2026 (per #513); the Guardian holds adversarial Meta history since Cambridge Analytica (2018, Cadwalladr). The owner of a tracked publication takes licensing revenue from Meta competitor OpenAI and $0 from Meta. CORRELATION NOT CAUSATION.'
+      mediascope_relevance: 'first dedicated Type C deal mechanism for the Guardian-OpenAI partnership (novelty verified - zero mechanism keys matching guardian in competitor-entities.yaml before this run; the guardian.yaml profile carries a licensing_deals list entry but no mechanism_id-bearing mechanism). The Guardian is a tracked publication; this gives future Type A work on Guardian OpenAI coverage a dated deal baseline plus the suit, SPUR and QuitGPT posture baselines. Direct cross-reference to #513 (Dara Kerr hired Jan 2025, one month before the Feb 2025 deal announcement) - the journalist-level and deal-level units of the same incentive structure.'
+      source_urls:
+      - http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/
+      - http://EditorAndPublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405
+      - https://InPublishing.co.uk/articles/guardian-announces-partnership-with-openai-25060
+      - https://www.engadget.com/ai/the-guardian-is-the-latest-news-organization-to-partner-with-openai-155555243.html?src=rss/
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - https://www.pymnts.com/artificial-intelligence-2/2025/ai-firm-cohere-sued-by-publishers-over-copyright-infringement/?ref=biztoc.com
+      - https://www.engadget.com/ai/major-publishers-sue-ai-startup-cohere-over-copyright-infringement-165352238.html
+      - https://siliconangle.com/2025/02/13/major-publishers-launch-copyright-lawsuit-ai-startup-cohere/
+      - https://www.atvtoday.co.uk/279514-ai/
+      - https://www.televisual.com/news/media-leaders-call-for-ai-standards-coalition/
+      - https://www.fastcompany.com/91504520/publishers-are-finally-getting-serious-about-ai-scraping
+      - https://www.thenewworld.co.uk/rats-in-a-sack-the-guardians-hypocrisy-over-openai/
+      - https://www.editorandpublisher.com/stories/untitled,261955
+      research_method: browser.search this run (4 query sets, verbatim full-URL listings); no pages opened first-hand - all items via search-result excerpts (marked second-hand in-mechanism); OpenAI announcement, GMG press release via Editor and Publisher, InPublishing, Engadget, PYMNTS, SiliconANGLE, Press Gazette tracker, ATV Today, Televisual, Fast Company, The New World via excerpts. Per the iteration-492 rule, no zero-coverage claims are made.
+      correlation_not_causation: true
+      is_significant: false
+      statistical_scope: qualitative structural mapping only
+      tone_scores: none
+      p_value: NOT_CALCULATED
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: the one-day suit-to-deal sequencing may be coincidence of independent long-running tracks - the Cohere suit was organized over months by the News/Media Alliance coalition and the OpenAI deal negotiated over months; temporal proximity does not prove linkage, and the sue-one decision was collective, not unilateral
+      - rank: 2
+        strength: strong
+        confounder: both announcements are issuer communications; deal terms undisclosed; all evidence this run is second-hand via search excerpts with no first-hand page reads
+      - rank: 3
+        strength: moderate
+        confounder: SPUR is a standards-and-leverage coalition, not a boycott - holding a bilateral license while demanding industry-wide permission-or-payment frameworks is coherent bargaining, not necessarily contradiction
+      - rank: 4
+        strength: moderate
+        confounder: the QuitGPT item is a commissioned comment piece (Bregman), not an editorial-board position; op-ed pages routinely run views at odds with the business side
+      - rank: 5
+        strength: weak
+        confounder: the early-March-2026 date for the QuitGPT piece is inferred from a search-result relative timestamp, not a verified byline date
   anthropic:
     display_name: Anthropic
     aliases:

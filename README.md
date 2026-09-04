@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28074 | Across 841 test files |
+| Tests | 28091 | Across 842 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28074 tests** across 841 test files, each covering a different analytical capability:
+MediaScope has **28091 tests** across 842 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1356,6 +1356,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_verge_openai_aspiration_vs_meta_deficit_aug31.py` | 18 | Iteration 425 Type A - The Verge OpenAI Aspiration vs Meta Deficit Framing |
 | `test_type_a_512_gizmodo_google_null_tie_symmetric_adversarial_sep04_6am.py` | 50 | Type A #512: Gizmodo x Google null-tie control - symmetric adversarial register toward deal-absent entities, delta +0.10 n.s. (control for deal-publication softening claims) - Sep 4 2026 06:00 PDT |
 | `test_type_b_513_dara_kerr_meta_openai_genre_conditioned_register_split_sep04_7am.py` | 35 | Type B #513: Dara Kerr (Guardian) Meta vs OpenAI genre-conditioned register split - directional support for deal-incentive theory, heavily bounded (n=2 vs n=2 illustrative, p_value NOT_CALCULATED, is_significant false) - Sep 4 2026 07:00 PDT |
+| `test_type_c_514_guardian_openai_strategic_partnership_sep04_8am.py` | 17 | Type C #514: Guardian x OpenAI strategic partnership (Feb 2025) - sue-one-sign-the-other sequence (Cohere suit Feb 13, OpenAI deal Feb 14), fifth Lightcap-signed publisher deal, SPUR anti-scraping tension - Sep 4 2026 08:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
