@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 27767 tests across 831 test files (all from real articles)
+├── tests/                       # 27784 tests across 832 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1021,6 +1021,7 @@ mediascope/
 │   ├── test_type_c_483_schibsted_openai_realtime_deal_sep03_1am.py  # Type C #483: Schibsted Media x OpenAI real-time content deal - Sep 3 2026 01:00 PDT
 │   ├── test_type_c_489_hearst_openai_dual_payer_sep03_7am.py  # Type C #489: Hearst x OpenAI strategic content partnership (Oct 8 2024) and Amazon Rufus dual-AI-payer mapping - Sep 3 2026 07:00 PDT
 │   ├── test_type_c_494_vox_media_openai_partnership_sep03_12pm.py  # Type C #494: Vox Media x OpenAI strategic partnership (May 29 2024) - owner-level tie to The Verge - Sep 3 2026 12:00 PDT
+│   ├── test_type_c_504_conde_nast_openai_partnership_sep03_10pm.py  # Type C #504: Conde Nast x OpenAI strategic partnership (Aug 20 2024) - owner-level tie to WIRED, Senate-testimony reversal baseline - Sep 3 2026 22:00 PDT
 │   ├── test_type_c_499_atlantic_openai_partnership_sep03_5pm.py  # Type C #499: The Atlantic x OpenAI strategic partnership (May 29 2024) - tracked-publication direct deal, Lessin op-ed irony - Sep 3 2026 17:00 PDT
 │   ├── test_type_d_495_brittle_assertion_repair_and_window_persistence_sep03_1pm.py  # Type D #495: brittle self-top assertion repair + ban guard + 491-494 window persistence - Sep 3 2026 13:00 PDT
 │   ├── test_type_d_500_architecture_header_sync_and_rotation_cycle_sep03_6pm.py  # Type D #500: ARCHITECTURE header sync repair + cross-doc agreement guard + 490-500 rotation-cycle check - Sep 3 2026 18:00 PDT

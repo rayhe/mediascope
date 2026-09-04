@@ -2261,6 +2261,138 @@ entities:
         strength: weak
         confounder: The 'two-year contract' term length rests on a single
           TechCrunch report carried from mechanism 494
+    mechanism_504_conde_nast_openai_strategic_partnership:
+      mechanism_name: Conde Nast x OpenAI Strategic Content Partnership (Aug 20 2024) - Owner-Level Tie to Tracked Publication WIRED, CEO Senate-Testimony Reversal Baseline
+      mechanism_id: 504
+      iteration: 504
+      rotation: Type C
+      date_analyzed: '2026-09-03'
+      time_pdt: '22:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      announcement_date: '2024-08-20'
+      deal_structure:
+        form: multi-year strategic content partnership (announced Aug 20 2024; Reuters)
+        brands_in_scope:
+        - Vogue
+        - The New Yorker
+        - Conde Nast Traveler
+        - GQ
+        - Architectural Digest
+        - Vanity Fair
+        - WIRED
+        - Bon Appetit
+        content_flow_to_openai: Conde Nast brand content displayed inside OpenAI products,
+          ChatGPT and the SearchGPT prototype, with direct links to news stories
+          (Reuters; Neowin; OpenAI blog via Press Gazette)
+        searchgpt_context: SearchGPT prototype launched Jul 25 2024; OpenAI said it
+          is collaborating with news partners to collect feedback and insights on
+          SearchGPT design and performance (Reuters)
+        counterparties: Roger Lynch (CEO, Conde Nast, via internal staff memo); Brad
+          Lightcap (COO, OpenAI - same OpenAI counterparty as mechanisms 489 Hearst,
+          494 Vox, 499 Atlantic; fourth Lightcap-signed publisher deal in the repo)
+        lynch_memo_quote: Over the last decade, news and digital media have faced
+          steep challenges as many technology companies eroded publishers' ability
+          to monetize content, most recently with traditional search. Our partnership
+          with OpenAI begins to make up for some of that revenue (Neowin; Press
+          Gazette)
+        lightcap_quote: We are committed to working with Conde Nast and other news
+          publishers to ensure that as AI plays a larger role in news discovery and
+          delivery, it maintains accuracy, integrity, and respect for quality reporting
+          (Neowin; Verdict; Reuters)
+      deal_terms_opacity:
+        exact_amount_undisclosed: true
+        term_length_undisclosed: true
+        evidence: Reuters reports 'Financial terms of the deal were not disclosed'
+        opacity_pattern: matches mechanisms 478 (Axios), 483 (Schibsted), 489 (Hearst),
+          494 (Vox), 499 (Atlantic) and the portfolio-wide most_deals_undisclosed
+          flag; Conde Nast is a further instance, not an outlier
+      pre_deal_adversarial_baseline:
+        senate_hearing: "Senate Judiciary Subcommittee on Privacy, Technology and the Law hearing on Oversight of AI and the Future of Journalism, Jan 10 2024 (Editor and Publisher)"
+        lynch_fair_use_quote: Fair use is to allow criticism, parody, scholarship,
+          research, news reporting. The law is clear when there is an adverse effect
+          on the market for the copyrighted material. Fair use is not intended
+          to simply enrich tech companies that prefer not to pay (The Register)
+        lynch_value_extraction_quote: Today's Gen AI tools maintain complete copies
+          of the works they train on, including our content, and output the substance
+          - sometimes verbatim, sometimes paraphrased - while keeping 100 percent
+          of the value for themselves (Editor and Publisher, hearing report)
+        lynch_existential_warning: Lynch told Congress many media companies could
+          go out of business by the time AI-copyright litigation passes through the
+          courts, urging 'immediate action' via clarification that creators be compensated
+          for training use (Press Gazette deal tracker)
+        reversal_arc: seven months separated the January 2024 sworn-adversarial testimony
+          from the August 2024 partnership signing; the strongest CEO-level pre/post
+          posture reversal in the repo portfolio (stronger than the Atlantic Lessin
+          op-ed irony in mechanism 499, which was days-before and author-level, not
+          CEO-testimony-level)
+        analytical_note: frames a controlled future Type A pre/post-deal coverage-tone
+          comparison for WIRED's OpenAI coverage; no tone claim is made in this mechanism
+      newsroom_reaction_bounded:
+        status: no newsroom or union opposition items surfaced in this run's targeted
+          searches (bounded absence per the iteration-492 rule, not a zero claim)
+        contrast: unlike mechanisms 494 (Vox union blindsided statement), 499 (Atlantic
+          union 'deeply troubled'), and 489 (Hearst WGAE), no documented internal
+          opposition is on record for the Conde Nast deal in the sources consulted
+          this run
+      meta_contrast: zero known AI content licensing or product deals between Conde
+        Nast (or WIRED) and Meta as of Sep 3 2026 (mechanism 453 established Meta-Conde
+        Nast non-participation). The owner of a tracked publication takes licensing
+        revenue from Meta competitor OpenAI and $0 from Meta. CORRELATION NOT CAUSATION.
+      mediascope_relevance: First dedicated Conde Nast-deal mechanism in the repo
+        (novelty check found zero Conde Nast mechanism_name entries in competitor-entities.yaml
+        and competitor-coverage-research.yaml, zero test_type_c Conde Nast files, and
+        no Type C commit mapping the Conde Nast x OpenAI deal). Conde Nast is the
+        corporate owner of WIRED, a tracked publication central to this goal, making
+        this an owner-level financial tie between a tracked publication's parent and
+        a competitor entity (OpenAI) - the same structural class as mechanism 494
+        (Vox/Verge). Directly goal-relevant - any future Type A on WIRED OpenAI coverage
+        now has a dated owner-level deal baseline.
+      source_urls:
+      - https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/?outputType=chromeless
+      - https://www.neowin.net/news/cond-nast-joins-the-growing-list-of-openais-content-partners/
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      - http://EditorAndPublisher.com/stories/cond-nast-inks-multiyear-openai-deal-for-its-magazine-brands,251539
+      - https://www.techtarget.com/ai/news/366608126/OpenAI-Conde-Nast-searchGPT-deal-addresses-copyright-concerns
+      - https://www.adweek.com/morning-media-newsfeed/conde-nast-openai-strike-multiyear-partnership-in-new-ai-deal/
+      - https://www.verdict.co.uk/newsletters/openai-partners-with-conde-nast-extending-its-reach-into-the-media-industry/
+      - https://www.theregister.com/software/2024/01/12/congress-told-ai-firms-should-pay-for-copyrighted-content/1381839?td=keepreading
+      - https://www.editorandpublisher.com/stories/senate-judiciary-committee-to-hold-hearing-on-oversight-of-artificial-intelligence-ai-future-of,247546
+      - https://www.EditorandPublisher.com/stories/senators-hear-testimony-that-ai-is-worsening-news-industrys-troubles,247579
+      - https://dig.watch/updates/us-media-executives-call-for-legislation-on-ai-content-compensation
+      research_method: browser.search this run (2 query sets, verbatim full-URL listings);
+        no page opened first-hand - all items via search-result excerpts (marked second-hand
+        in-mechanism); Reuters announcement text, Neowin, Press Gazette, Editor and
+        Publisher, Adweek, Verdict, TechTarget via excerpts; Lynch Senate testimony
+        via The Register, Editor and Publisher, dig.watch excerpts. Per the iteration-492
+        rule, no zero-coverage claims are made; the newsroom-reaction observation is
+        search-bounded.
+      statistical_discipline:
+        correlation_not_causation: true
+        is_significant: false
+        tone_scores: none
+        p_value: NOT_CALCULATED
+        scope: qualitative structural mapping only
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: Both August 2024 party announcements are issuer communications;
+          no independent reporting on payment terms was found; all items second-hand
+          via search excerpts, none opened first-hand
+      - rank: 2
+        strength: moderate
+        confounder: The seven-month testimony-to-deal arc is consistent with a genuine
+          business rationale (Lynch memo frames the deal as search-revenue replacement),
+          not only with capture; the memo's 'meet audiences where they are' framing
+          is coherent on its own terms
+      - rank: 3
+        strength: moderate
+        confounder: No WIRED post-deal OpenAI coverage-tone analysis exists yet, so
+          no coverage effect can be asserted from this mechanism alone
+      - rank: 4
+        strength: weak
+        confounder: The newsroom-reaction bounded absence rests on one targeted search
+          set; internal opposition may exist but be unreported
     mechanism_473_future_plc_openai_strategic_partnership:
       mechanism_id: 473
       iteration: 473
