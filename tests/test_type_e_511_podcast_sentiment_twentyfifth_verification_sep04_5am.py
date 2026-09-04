@@ -230,8 +230,15 @@ class TestIterationLog:
     def test_log_newest_first_relative(self):
         # Durable rule (fixed #495): relative newest-first ordering between
         # neighboring entries, never absolute-top assertions.
+        # Fix #516: anchor to line-start entry headings. The unanchored
+        # find("#510 Type D") matched the #515 entry's prose ("the #510 Type D
+        # guard hardcoded its own window's static commit list"), a test-staleness
+        # failure of the same class #515 repaired in the #510 file. Entry
+        # headings are line-start "#NNN Type X", so MULTILINE anchors resolve
+        # to the actual entries. Guard intent (relative newest-first between
+        # neighboring entries) is unchanged.
         log_text = LOG_PATH.read_text(encoding="utf-8")
-        idx_511 = log_text.find("#511 Type E")
-        idx_510 = log_text.find("#510 Type D")
-        assert idx_511 != -1 and idx_510 != -1
-        assert idx_511 < idx_510, "#511 entry must precede #510 (newest-first)"
+        m511 = re.search(r"^#511 Type E", log_text, re.MULTILINE)
+        m510 = re.search(r"^#510 Type D", log_text, re.MULTILINE)
+        assert m511 is not None and m510 is not None
+        assert m511.start() < m510.start(), "#511 entry must precede #510 (newest-first)"
