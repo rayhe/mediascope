@@ -129,8 +129,13 @@ class TestRotationCycle506to510:
 
 class TestGitOrderConsistency:
     def test_five_type_commits_precede_this_run_in_order(self):
+        # REPAIRED in iteration #515 (Type D, 2026-09-04 09:00 PDT): the original
+        # assertion hardcoded the 506..510-era window ([509, 508, 507, 506, 505])
+        # and went stale the moment the 511-514 commits landed. The guard's intent
+        # is that the most recent Type commits are consecutive and newest-first,
+        # so it is now anchored to the live newest number instead of a static list.
         proc = subprocess.run(
-            ["git", "log", "--format=%s", "-10"],
+            ["git", "log", "--format=%s", "-15"],
             cwd=REPO,
             capture_output=True,
             text=True,
@@ -143,9 +148,14 @@ class TestGitOrderConsistency:
                 nums.append(int(m.group(1)))
             if len(nums) == 5:
                 break
-        assert nums == [509, 508, 507, 506, 505], (
-            f"expected the five pre-run Type commits 509..505 newest-first, "
-            f"got {nums}"
+        assert len(nums) == 5, f"fewer than five Type commits in git log: {nums}"
+        newest = nums[0]
+        assert newest >= 510, (
+            f"newest Type commit #{newest} predates this guard's window"
+        )
+        assert nums == [newest - i for i in range(5)], (
+            f"the five most recent Type commits are not consecutive "
+            f"newest-first, got {nums}"
         )
 
 
