@@ -1,3 +1,20 @@
+#520 Type D: Test & Verify - #514 String-Mangle Fix, Scorer Known-Answer Validity, Fresh Full-Suite Run - Sep 4 2026 15:00 PDT
+
+**Date:** 2026-09-04 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 519 C -> 520 D)
+**Type:** D - Test & Verify (no new research data; data-audit and statistical-integrity window)
+
+**Work performed:**
+1. **Fixed the pre-existing suite failure flagged in the #517 log.** Iteration #514 wrote `target_raise_b: 75-86.2` (unquoted) in profiles/competitor-entities.yaml; per the 2026-09-04 YAML plain-scalar silent-mangle rule it parsed as a STRING, and `tests/test_apple_siri_ai_triple_layer_publisher_financial_architecture_aug17.py::TestDataFreshness::test_anthropic_ipo_could_be_largest` TypeErrored on `target_raise >= 50` on every full-suite run since. Split into numeric `target_raise_b_low: 75` / `target_raise_b_high: 86.2` with a provenance note. The aug17 test now asserts both fields are numeric, low <= high, and low >= 50.
+2. **New regression tests caught three more silently-mangled fields in the same block** that no existing test flagged: `arr_projection_eoy_2026_b: 100-120`, `revenue_2028_projection_b: 190-200`, `projected_revenue_2028_b: 190-200`. All three split into numeric low/high fields (`arr_projection_eoy_2026_b_low/high`, `revenue_2028_projection_b_low/high`, `projected_revenue_2028_b_low/high`). Three consumer tests updated to the new fields (aug23 `test_arr_eoy_projection_exists`, aug25 `test_revenue_2028_projection`, aug20 `test_projected_revenue_2028`).
+3. **Scorer statistical-validity known-answer tests** on mediascope.score.asymmetry.calculate_asymmetry: symmetric input -> delta ~0 and is_significant False; strongly separated input -> correctly signed delta, significant, large Cohen's d, CI excludes zero; the real #517 Guardian numbers (target [-0.65,-0.30], peer [-0.25,-0.10,-0.15]) reproduce the logged result (delta -0.3083, p ~0.315, not significant) - guards the live engine against silently changing under #517's documented illustrative tones; degenerate inputs (n=1, empty) never crash and never claim false significance; is_significant boundary at p=0.05.
+4. **Doc sync:** README per-file table row + Tests count header (28256 -> 28272, 847 -> 848 files) + ARCHITECTURE.md tree row; `count_stats.py --check` green.
+5. **Full suite:** fresh full-suite run started post-fix in background, logging to goals/mediascope-meta-wearables-press-analysis/hidden_files/type-d-520-full-suite.log for the next Type D window to reconcile (28K tests single-threaded, exceeds this window). The one pre-existing failure this run was superseded and fixed; targeted verification of all 5 affected files: **184 passed**.
+
+**New test file:** `tests/test_type_d_520_numeric_monetary_integrity_scorer_validity_sep04_3pm.py` - 5 classes, 16 tests.
+**Commit:** Type D #520 (this run).
+
+---
+
 #519 Type C: Financial Incentive Mapping - News Corp x OpenAI Content Licensing Deal (May 2024, >$250M/5yr) - Largest OpenAI Publisher Deal, Dual-AI-Payer Owner With Meta Leg and Woo-and-Sue Posture - Sep 4 2026 14:00 PDT
 
 **Date:** 2026-09-04 14:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 518 B -> 519 C)

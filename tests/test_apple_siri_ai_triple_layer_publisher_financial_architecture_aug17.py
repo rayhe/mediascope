@@ -419,7 +419,13 @@ class TestDataFreshness:
         """$75B raise at $1.75-1.8T would be largest IPO in history."""
         data = load_competitor_entities()
         ipo = data["entities"]["anthropic"]["ipo_filing"]
-        # The potential raise amount should be documented
-        target_raise = ipo.get("target_raise_b")
-        if target_raise:
-            assert target_raise >= 50, "Expected target raise to be $50B+"
+        # Numeric range fields (fixed iteration 520: plain-scalar '75-86.2'
+        # silently parsed as string and TypeErrored on >= 50)
+        low = ipo.get("target_raise_b_low")
+        high = ipo.get("target_raise_b_high")
+        assert isinstance(low, (int, float)) and not isinstance(low, bool), \
+            "target_raise_b_low must be numeric"
+        assert isinstance(high, (int, float)) and not isinstance(high, bool), \
+            "target_raise_b_high must be numeric"
+        assert low <= high, "range low must not exceed high"
+        assert low >= 50, "Expected target raise to be $50B+"

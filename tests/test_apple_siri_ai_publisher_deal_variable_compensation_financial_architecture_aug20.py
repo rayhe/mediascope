@@ -299,7 +299,10 @@ class TestAnthropicRevenueUpdate(unittest.TestCase):
         self.assertGreaterEqual(self.anthropic['ipo_filing']['arr_jul_2026_b'], 65)
 
     def test_projected_revenue_2028(self):
-        self.assertIn('projected_revenue_2028_b', self.anthropic.get('ipo_filing', {}))
+        self.assertIn('projected_revenue_2028_b_low', self.anthropic.get('ipo_filing', {}))
+        self.assertIn('projected_revenue_2028_b_high', self.anthropic.get('ipo_filing', {}))
+        self.assertEqual(self.anthropic['ipo_filing']['projected_revenue_2028_b_low'], 190)
+        self.assertEqual(self.anthropic['ipo_filing']['projected_revenue_2028_b_high'], 200)
 
     def test_pre_ipo_credit_facility(self):
         self.assertIn('pre_ipo_credit_facility_b', self.anthropic.get('ipo_filing', {}))

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28256 | Across 847 test files |
+| Tests | 28272 | Across 848 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -1362,6 +1362,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_517_guardian_anthropic_piracy_editorial_vs_openai_sep04_11am.py` | 56 | Type A #517: Guardian x Anthropic book-piracy editorial register vs OpenAI deal-partner register - gradient not binary, delta -0.31 n.s. (p 0.315, manual illustrative n=2 vs n=3) - Sep 4 2026 11:00 PDT |
 | `test_type_b_518_erin_griffith_business_beat_register_symmetry_sep04_1pm.py` | 34 | Type B #518: Erin Griffith (NYT) Meta vs OpenAI/Anthropic business-beat register symmetry - company-agnostic counterexample, heavily bounded (n=2 vs n=2 illustrative, delta +0.275 anti-prediction direction, p_value NOT_CALCULATED, is_significant false) - Sep 4 2026 13:00 PDT |
 | `test_type_c_519_newscorp_openai_dual_payer_woo_and_sue_sep04_2pm.py` | 20 | Type C #519: News Corp x OpenAI content licensing deal (May 2024, >$250M/5yr, largest OpenAI publisher deal) - dual-AI-payer owner with Meta second leg (Mar 2026, up to $50M/yr), sue-one-sign-the-other (Perplexity suit Oct 2024), Thomson woo-and-sue strategy - Sep 4 2026 14:00 PDT |
+| `test_type_d_520_numeric_monetary_integrity_scorer_validity_sep04_3pm.py` | 16 | Type D #520: monetary scalar integrity regression (iteration #514 silent string-mangle: target_raise_b '75-86.2' TypeErrored on >= 50; split into numeric low/high - also fixed arr_projection_eoy_2026_b, revenue_2028_projection_b, projected_revenue_2028_b) + asymmetry scorer statistical validity known-answer tests (symmetric input no-claim, strong asymmetry signed+significant, #517 numbers reproduce p 0.315 n.s., degenerate input no-crash) - Sep 4 2026 15:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

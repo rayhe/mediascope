@@ -1114,6 +1114,7 @@ mediascope/
 │   ├── test_type_a_517_guardian_anthropic_piracy_editorial_vs_openai_sep04_11am.py  # Type A #517: Guardian x Anthropic book-piracy editorial register vs OpenAI deal-partner register - Sep 4 2026 11:00 PDT - 10 classes, 56 tests
 │   ├── test_type_b_518_erin_griffith_business_beat_register_symmetry_sep04_1pm.py  # Type B #518: Erin Griffith (NYT) Meta vs OpenAI/Anthropic business-beat register symmetry - Sep 4 2026 13:00 PDT - 6 classes, 34 tests
 │   ├── test_type_c_519_newscorp_openai_dual_payer_woo_and_sue_sep04_2pm.py  # Type C #519: News Corp x OpenAI deal (May 2024, >$250M/5yr) - dual-AI-payer owner with Meta leg (Mar 2026), Perplexity suit, woo-and-sue - Sep 4 2026 14:00 PDT - 20 bare test functions, 20 tests
+│   ├── test_type_d_520_numeric_monetary_integrity_scorer_validity_sep04_3pm.py  # Type D #520: #514 string-mangle regression (target_raise_b low/high numeric) + asymmetry scorer known-answer validity (symmetric/strong/#517 n.s./degenerate) - Sep 4 2026 15:00 PDT - 16 tests, 5 classes
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation

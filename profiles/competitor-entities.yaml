@@ -2748,7 +2748,9 @@ entities:
         - 361
         - 25
         - 396
-      target_raise_b: 75-86.2
+      target_raise_b_low: 75
+      target_raise_b_high: 86.2
+      target_raise_b_note: 'Range source: SpaceX comparison - $75B initial, $86.2B with overallotment. Numeric fields per iteration 520 fix (unquoted 75-86.2 silently parsed as string).'
       target_valuation_range_t: 2.0
       target_valuation_range_note: 'FT (Aug 13, 2026) citing 6 Anthropic investors:
         $2T valuation expected, surpassing SpaceX record (~$1.8T). Up from earlier
@@ -2765,7 +2767,8 @@ entities:
       q2_2026_revenue_yoy_multiple: 14x
       q2_2026_revenue_prior_year_m: 787
       q2_2026_revenue_source: https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-aims-for-largest-ever-ipo/
-      arr_projection_eoy_2026_b: 100-120
+      arr_projection_eoy_2026_b_low: 100
+      arr_projection_eoy_2026_b_high: 120
       arr_projection_eoy_2026_source: FT (Aug 13, 2026) citing 6 Anthropic investors.
         More than 10x where it was at the start of the year (~$9B).
       pre_ipo_credit_facility_b: 10
@@ -2800,7 +2803,8 @@ entities:
       q2_2026_operating_profit_note: First quarterly operating profit in company history.
         Revenue more than doubled QoQ. Signals path to profitability ahead of IPO.
       q2_2026_operating_profit_source: https://www.tradingview.com/news/benzinga:e3a9d0a3e094b:0-anthropic-s-revenue-could-soar-from-47-billion-to-200-billion-by-2028-as-bankers-build-a-massive-ai-valuation-case-ahead-of-its-ipo-report/
-      revenue_2028_projection_b: 190-200
+      revenue_2028_projection_b_low: 190
+      revenue_2028_projection_b_high: 200
       revenue_2028_projection_note: 'Bankers using enterprise value-to-revenue multiples
         based on 2028 forecasts (Reuters, Aug 15). Looking two years ahead is "less
         typical" but reflects speed of expansion. Comp multiples: Palantir 53x 2026
@@ -2858,7 +2862,8 @@ entities:
         history. '
       arr_jul_2026_b: 65
       arr_jul_2026_source: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
-      projected_revenue_2028_b: 190-200
+      projected_revenue_2028_b_low: 190
+      projected_revenue_2028_b_high: 200
       projected_revenue_2028_source: https://www.reuters.com/technology/anthropic-revenue-run-rate-tops-65-billion-source-says-2026-08-17/
       zero_publisher_deal_ipo_paradox: 'Anthropic is heading to IPO at ~$1T valuation
         with the fastest revenue growth in enterprise software history AND zero publisher

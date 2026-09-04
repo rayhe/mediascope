@@ -113,11 +113,12 @@ class TestAnthropicIPOAcceleration(unittest.TestCase):
         self.assertGreaterEqual(float(ipo["arr_jul_2026_b"]), 65)
 
     def test_arr_eoy_projection_exists(self):
-        """ARR projected $100-120B by end of 2026."""
+        """ARR projected $100-120B by end of 2026 (numeric low/high, iteration 520)."""
         ipo = self.anthropic["ipo_filing"]
-        self.assertIn("arr_projection_eoy_2026_b", ipo)
-        projection = str(ipo["arr_projection_eoy_2026_b"])
-        self.assertIn("100", projection)
+        self.assertIn("arr_projection_eoy_2026_b_low", ipo)
+        self.assertIn("arr_projection_eoy_2026_b_high", ipo)
+        self.assertEqual(ipo["arr_projection_eoy_2026_b_low"], 100)
+        self.assertEqual(ipo["arr_projection_eoy_2026_b_high"], 120)
 
     def test_public_filing_timeline_documented(self):
         """Public filing as soon as end of August 2026."""

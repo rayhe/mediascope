@@ -121,8 +121,10 @@ class TestRevenueTrajectoryValidation:
         assert anthropic['ipo_filing']['arr_jul_2026_b'] == 65
 
     def test_revenue_2028_projection(self, anthropic):
-        proj = anthropic['ipo_filing']['revenue_2028_projection_b']
-        assert '190' in str(proj)
+        low = anthropic['ipo_filing']['revenue_2028_projection_b_low']
+        high = anthropic['ipo_filing']['revenue_2028_projection_b_high']
+        assert low == 190
+        assert high == 200
 
     def test_h1_2026_booked_revenue(self, anthropic):
         h1 = anthropic['ipo_filing']['h1_2026_booked_revenue_b']
