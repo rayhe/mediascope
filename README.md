@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28202 | Across 845 test files |
+| Tests | 28236 | Across 846 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28202 tests** across 845 test files, each covering a different analytical capability:
+MediaScope has **28236 tests** across 846 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1360,6 +1360,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_515_window_audit_and_sibling_key_uniqueness_sep04_9am.py` | 15 | Type D #515: 511-514 window audit + sibling mechanism-key uniqueness + scorer delta consistency since #510 + #510 stale git-order assertion repair - Sep 4 2026 09:00 PDT |
 | `test_type_e_516_podcast_sentiment_twenty_sixth_verification_sep04_10am.py` | 40 | Type E #516: podcast sentiment 26th verification - Guilty Feminist 498 hold, EHE 25-day hold, IBTimes UK seventh press vertical, Attention Sphere 26th no-match - Sep 4 2026 10:00 PDT |
 | `test_type_a_517_guardian_anthropic_piracy_editorial_vs_openai_sep04_11am.py` | 56 | Type A #517: Guardian x Anthropic book-piracy editorial register vs OpenAI deal-partner register - gradient not binary, delta -0.31 n.s. (p 0.315, manual illustrative n=2 vs n=3) - Sep 4 2026 11:00 PDT |
+| `test_type_b_518_erin_griffith_business_beat_register_symmetry_sep04_1pm.py` | 34 | Type B #518: Erin Griffith (NYT) Meta vs OpenAI/Anthropic business-beat register symmetry - company-agnostic counterexample, heavily bounded (n=2 vs n=2 illustrative, delta +0.275 anti-prediction direction, p_value NOT_CALCULATED, is_significant false) - Sep 4 2026 13:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

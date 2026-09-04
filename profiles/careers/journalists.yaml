@@ -6295,6 +6295,82 @@ journalists:
   name: Erin Griffith
   notes: 'KEY MIGRATION: Fortune → Wired → NYT. Clean three-publication pipeline traversing two of MediaScope''s tracked outlets. Short Wired tenure (~10 months under Nicholas Thompson) produced notable pieces including "The Other Tech Bubble" (Dec 2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with very different ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine, peHub) gives her a finance-native analytical lens distinct from most tech reporters.'
   multi_publication: true
+  competitor_coverage:
+    type_b_518_erin_griffith_meta_openai_anthropic_business_beat_register_symmetry:
+      iteration: 518
+      iteration_type: 'B'
+      date: '2026-09-04'
+      journalist: 'Erin Griffith'
+      publication: 'nytimes'
+      beat: 'startups, venture capital, AI business economics'
+      temporal_bound: 'NYT-era only (2018-08 onward); Fortune to Wired to NYT migration per career block'
+      finding: 'COMPANY-AGNOSTIC COUNTEREXAMPLE, heavily bounded: no detectable cross-entity register split. Griffith covers Meta and OpenAI/Anthropic in the same finance-native business register - funding rounds, investor returns, deal geopolitics. Her OpenAI/Anthropic coverage is investor-positive (not harder despite NYT suing OpenAI), and her Meta coverage is geopolitics-framed (not harder despite Meta being the accountability target elsewhere in the paper). The deal-incentive softening theory predicts nothing here and observes nothing here: NYT has no AI licensing deal, and the lawsuit-incentive hardening theory also fails on this evidence.'
+      meta_corpus:
+      - title: 'The Split Between China and Silicon Valley Just Got Wider'
+        date: '2026-04-30'
+        byline: 'solo'
+        summary: 'Beijing demanded Meta unwind its $2 billion Manus acquisition; framed as escalation in the geopolitical fight over advanced tech. Meta is positioned as caught in a geopolitical crossfire, not as the wrongdoer.'
+        quotes:
+        - 'Beijing''s insistence that Meta unwind its deal with a Chinese A.I. start-up escalates the geopolitical fight over advanced tech.'
+        - 'Manus had drawn the attention of Silicon Valley investors with an AI agent capable of carrying out tasks on its own. By year''s end, Meta had agreed to acquire Manus.'
+        tone: 0.05
+        url: 'https://www.japantimes.co.jp/business/2026/04/30/tech/china-silicon-valley-split-wider/'
+        url_note: 'Japan Times mirror of the NYT piece, lede verified first-hand 2026-09-04; canonical NYT URL not captured verbatim from search listings'
+      - title: 'Meta as acquirer in the Manus narrative (corpus-depth note)'
+        date: '2026-04-30'
+        byline: 'solo'
+        summary: 'Meta appears in Griffith''s recent corpus primarily as the $2 billion acquirer of Manus. No second deep standalone Meta byline found in the 2026 Muck Rack window; the thinness of her Meta corpus is itself a recorded limit on the comparison.'
+        tone: 0.0
+        url: 'https://muckrack.com/eringriffith/articles'
+        url_note: 'Muck Rack profile listing, full 283-line window viewed 2026-09-04'
+      openai_anthropic_corpus:
+      - title: 'Silicon Valley''s Big Money Is About to Get a Lot Bigger'
+        date: '2026-09-03'
+        byline: 'solo'
+        summary: 'PitchBook data: at least 95 investors backed both Anthropic and OpenAI as the labs prepare IPOs. Framed as investor windfall; VC norm-breaking (backing direct competitors, dropping board-seat and ownership norms) treated as industry evolution, not captured governance.'
+        quotes:
+        - 'As the artificial intelligence companies Anthropic and OpenAI prepare to go public, the question around Silicon Valley is which investors will win big.'
+        - 'Investing in the big AI companies is looking more like passive index fund investing (where access is the challenge!) than old-school VC.'
+        quote_source: 'second quote from the author''s LinkedIn summary of the piece, viewed 2026-09-04'
+        tone: 0.35
+        url: 'https://www.linkedin.com/posts/eringriffith_silicon-valleys-big-money-is-about-to-get-activity-7501320526422949888-tE8v'
+        url_note: 'author LinkedIn post summarizing the NYT piece; canonical NYT URL not captured verbatim from search listings'
+      - title: 'A.I. Companies Shatter Fund-Raising Records, as Boom Accelerates'
+        date: '2026-04'
+        byline: 'solo'
+        summary: 'OpenAI, Anthropic, Waymo shattered fund-raising records with a $297 billion Q1 2026 haul per Crunchbase. Boom-acceleration framing; no accountability register present.'
+        quotes:
+        - 'OpenAI, Anthropic, Waymo and other artificial intelligence companies shattered fund-raising records in the first three months of the year with a $297 billion haul'
+        tone: 0.25
+        url: 'https://muckrack.com/eringriffith/articles'
+        url_note: 'Muck Rack profile listing, viewed 2026-09-04; canonical NYT URL not captured verbatim; month bounded, day not verified'
+      manual_illustrative_tones:
+        meta: [0.05, 0.0]
+        openai_anthropic: [0.35, 0.25]
+        meta_avg: 0.025
+        openai_anthropic_avg: 0.3
+        delta: 0.275
+        note: 'MANUAL ILLUSTRATIVE only. Positive delta means the OpenAI/Anthropic side scored warmer, opposite the direction a deal-softening prediction would imply. n=2 vs n=2. No significance claimed.'
+      statistical_discipline:
+        p_value: 'NOT_CALCULATED'
+        is_significant: false
+        correlation_not_causation: true
+        note: 'A mechanical significance test on two hand-scored items per side would manufacture precision that does not exist.'
+      confounders_ranked:
+        strong:
+        - 'Beat-genre dominance: Griffith is a VC/business reporter; both corpora sit in the funding-deal register, which structurally favors warm tones regardless of entity. Genre, not entity, likely drives the register.'
+        - 'Event asymmetry: the Meta item is a geopolitical demand story; the OpenAI/Anthropic items are funding and IPO windfall stories. The news pegs differ in valence, confounding entity comparison.'
+        moderate:
+        - 'Thin Meta corpus: only one deep standalone Meta byline in the 2026 window; the comparison is 1-deep-plus-mention vs 2-deep.'
+        - 'Earlier OpenAI items (Sep 2024 Isaac co-byline, Jan 2025 Metz co-byline) excluded from the scored set; the scored OpenAI items are both solo, matching the Meta item byline status.'
+        weak:
+        - 'URL provenance: Meta item verified via Japan Times mirror lede; PitchBook piece via author LinkedIn summary; canonical NYT URLs not captured verbatim from search listings.'
+      counter_evidence:
+      - 'NYT is actively suing OpenAI for copyright infringement, which predicts harder OpenAI coverage; observed coverage is investor-positive. This cuts against both deal-softening AND lawsuit-hardening theories, leaving beat-genre as the dominant register driver.'
+      - 'Her 2017 Wired piece ''The Other Tech Bubble'' shows she is capable of adversarial tech-business framing, so the warm register is a beat choice, not a capability gap.'
+      - 'Guardian #517 shows deal-partner coverage CAN carry register asymmetry; Griffith shows it need not. Any general theory must condition on beat genre.'
+      novelty: 'First dedicated Type B on Erin Griffith. Zero prior test_type_b_518 files (glob verified). No existing competitor_coverage block on her profile (YAML-parsed verified). Prior repo mentions of Griffith are co-byline credits in OpenAI funding coverage, never a cross-entity unit.'
+      research_method: 'browser.search (6 queries: Griffith OpenAI, Griffith Meta, Muck Rack profile, PitchBook piece text, Manus piece) + browser.open on Muck Rack profile (full 283-line listing viewed), Japan Times mirror (lede verified), biztoc stub, LinkedIn author summary. All URLs carried verbatim from search full-URL listings; no canonical URLs constructed.'
 - awards:
   - name: Sandy Hume Memorial Award for Excellence in Political Journalism
     notes: For series on Donald Trump's attempts to stop Biden certification at the Jan 6 joint session of Congress. Reporting led House select committee to issue subpoenas to Trump's personal lawyers.
