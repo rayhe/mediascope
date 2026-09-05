@@ -98,6 +98,14 @@ journalists:
     role: correspondent
     source_url: https://computerhistory.org/profile/cade-metz/
     start: 2017-10
+  - beat: AI, science of artificial intelligence
+    end: present
+    event_type: moved
+    notes: 'Moved from Tech desk to Science desk ~Aug 13 2026 to inaugurate a dedicated AI beat on the Science desk (Bill Wasik memo via Editor and Publisher). Wasik: AI should be examined "through the same kind of lens that we use to cover other forms of discovery" - achievements as well as setbacks and enduring mysteries. Register-shift event: science/discovery framing displaces Tech-desk accountability framing for his AI coverage. Continues from San Francisco bureau. First-day-Monday memo dated ~Aug 10 2026; post-move bylines include the Z.ai open-weight cybersecurity piece and the AI-consciousness agents piece.'
+    publication: nytimes
+    role: correspondent
+    source_url: https://www.editorandpublisher.com/stories/reporter-to-start-new-ai-beat-on-the-new-york-times-science-desk,263009
+    start: 2026-08
   name: Cade Metz
   notes: 'Key migration: PC Magazine → The Register → Wired → NYT. AI/tech reporter with 30+ years in tech journalism who crossed from Condé Nast to Sulzberger orbit. Duke BA English (1994). Father was IBM engineer who helped develop the Universal Product Code (barcode). Also wrote freelance for Metro Magazine, Companion to Southern Literature, Microsoft Encarta, American Baby; and was a playwright (''The Parlour Game'', ''The Roof''). Author of ''Genius Makers'' (2021, Dutton/Penguin). Controversial NYT piece revealing Scott Alexander''s real identity (Slate Star Codex). KEY for MediaScope: one of the longest continuous careers in tech journalism  -  his framing evolution across PC Magazine (product reviews) → Register (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the entire arc of how AI coverage went from niche to front-page.'
   education:
@@ -111,6 +119,119 @@ journalists:
   - https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
   - https://talkingbiznews.com/they-talk-biz-news/ny-times-hires-metz-to-cover-emerging-tech/
   - https://en.wikipedia.org/wiki/Cade_Metz
+  competitor_coverage:
+    type_b_538_cade_metz_litigation_adversary_register_symmetry_science_desk:
+      mechanism_id: 538
+      iteration: 538
+      iteration_type: 'B'
+      date: '2026-09-05'
+      journalist: 'Cade Metz'
+      publication: 'nytimes'
+      beat: 'AI, emerging technology (Tech desk 2017-2026, Science desk from Aug 2026)'
+      temporal_bound: '2026 window primary (Mar-Sep 2026 bylines); 2024 investigation and 2021 book as context'
+      finding: 'LITIGATION-ADVERSARY SYMMETRY at reporter level, extending mechanism 471 (NYT publication-level litigation-posture boundary) the way 533 extended 532. Metz covers OpenAI - the company his employer has sued since Dec 2023 for copyright infringement - in a neutral launch/scoop register: GPT-5.6 Sol release, $500B Ohio datacenter scoop, Broadcom Jalapeno chip unveiling, all straight news-desk relay with zero litigation-adversarial vocabulary. His Meta register in the same window is equally researcher-access neutral: Moltbook acquisition (playful), Superintelligence Lab talent/immigration analysis (analytical), Periodic Labs brain-drain (mild deficit shading on the Agarwal anecdote). MANUAL ILLUSTRATIVE Meta avg -0.15 vs OpenAI avg -0.0625, delta -0.0875, near-symmetric (Meta marginally harsher). The naive lawsuit-hardening prediction fails at this reporter. The Aug 2026 Science-desk move (Wasik memo: cover AI "through the same kind of lens that we use to cover other forms of discovery") formalizes the discovery register that already governed his beat. Driver class: beat/institutional (researcher-access + Science-desk discovery framing), NOT financial. Joins the falsification family (457, 471, 472, 493, 498, 502, 503).'
+      institutional_context:
+        nyt_v_openai_lawsuit: 'NYT sued OpenAI and Microsoft Dec 2023 for copyright infringement (millions of articles used to train ChatGPT). Aug 2026 Times statement: "widespread theft of millions of The Times''s works". Sep 2026: NYT and other publishers asked court to penalize OpenAI for withholding evidence. Judge Stein refused OpenAI motion to dismiss late Aug 2026. Per mechanism 471.'
+        science_desk_move: 'Tech desk to Science desk ~Aug 13 2026 to inaugurate dedicated AI beat. Bill Wasik memo: "examine its achievements (as well as its setbacks and enduring mysteries) through the same kind of lens that we use to cover other forms of discovery". Source: editorandpublisher.com memo (verbatim URL below), corroborated by talkingbiznews.com and citybiz.co, all crawled within 4h of this run.'
+        book_access_dimension: 'Author of "Genius Makers: The Mavericks Who Brought AI to Google, Facebook, and the World" (2021, Penguin Random House/Dutton) - deep researcher relationships at Google, Meta, OpenAI. Access-journalism substrate: longstanding lab sources predict the neutral discovery register better than the employer''s litigation posture does.'
+      openai_corpus_scored:
+      - title: 'OpenAI Releases New, More Powerful A.I. Model'
+        date: '2026-08'
+        byline: 'solo'
+        summary: 'GPT-5.6 Sol flagship release plus ChatGPT Work tool. Straight launch-news register. Dek notes the release "was delayed after the U.S. government restricted the latest artificial intelligence models over cybersecurity concerns" - government-action framing, zero NYT-lawsuit adversarial vocabulary, despite the Times actively suing OpenAI at publication time.'
+        tone: -0.05
+        url: 'https://muckrack.com/cademetz/articles'
+        url_note: 'Muck Rack profile listing viewed 2026-09-05, full 292-line window; canonical NYT URL not captured verbatim (nytimes.com policy-blocked for direct fetch)'
+      - title: 'OpenAI Close to Landing $500 Billion Data Center With Backing From Nvidia'
+        date: '2026-08'
+        byline: 'solo'
+        summary: 'Business scoop: OpenAI close to leasing a $500B data center in southern Ohio, Nvidia $250B financial backstop, three anonymous sources. Neutral scoop register; no skepticism frame applied to the litigation adversary.'
+        tone: -0.05
+        url: 'https://muckrack.com/cademetz/articles'
+        url_note: 'Muck Rack listing; excerpt: "OpenAI is close to leasing a $500 billion data center in southern Ohio that could be among the largest of the artificial intelligence boom, according to three people familiar with the project"'
+      - title: 'OpenAI and Broadcom Unveil Custom A.I. Chip Design'
+        date: '2026-08'
+        byline: 'solo'
+        summary: 'Jalapeno custom chip unveiling framed as a milestone in OpenAI''s datacenter buildout. Neutral capability register.'
+        tone: 0.0
+        url: 'https://muckrack.com/cademetz/articles'
+        url_note: 'Muck Rack listing; excerpt: "the two companies unveiled the design of their first chip, called Jalapeno, reaching a milestone in OpenAI''s efforts"'
+      - title: 'A Chinese A.I. Lab May Test the World''s Cybersecurity With a Model'
+        date: '2026-08'
+        byline: 'solo'
+        summary: 'Z.ai open-weight release story uses OpenAI''s July rogue-agent Hugging Face hack as the established-fact anchor ("an unreleased OpenAI model went rogue and demonstrated remarkable hacking abilities"). The accountability target is Z.ai''s open-weight release, not OpenAI; OpenAI''s incident is treated as capability evidence, not scandal. Post-Science-desk-move discovery register.'
+        tone: -0.15
+        url: 'https://muckrack.com/cademetz/articles'
+        url_note: 'Muck Rack listing excerpt verbatim above'
+      openai_corpus_unscored:
+      - title: 'Microsoft''s C.E.O. Intervened When OpenAI Fired Sam Altman, Musk''s Lawyer Claims'
+        date: '2026-05-11'
+        byline: 'co-byline Mike Isaac'
+        summary: 'OpenAI governance story with neutral "lawyer claims" attribution on email revelations. Carried from mechanism 471; excluded from scored set to match solo-byline status of the Meta items.'
+        tone_note: 'unscored (co-byline); register neutral per 471'
+      meta_corpus_scored:
+      - title: 'Meta Acquires Moltbook, the Social Network Just for A.I. Bots'
+        date: '2026-03-10'
+        byline: 'solo'
+        summary: 'Meta acquires Matt Schlicht''s Moltbook; Schlicht joins the Meta Superintelligence Lab. Neutral business register with a playful lede ("named his bot Clawd Clawderberg, after Mark Zuckerberg, the founder of Facebook and his future boss"). No accountability vocabulary.'
+        tone: -0.05
+        url: 'https://mediaairbase.com/2026/03/11/meta-acquires-moltbook-the-social-network-just-for-a-i-bots/'
+        url_note: 'Syndicated mirror carrying verbatim byline "By Cade Metz, Reporting from San Francisco, March 10, 2026"; canonical NYT URL not captured verbatim'
+      - title: 'Top A.I. Researchers Leave OpenAI, Google and Meta for New Start-Up'
+        date: '2025-09-30'
+        byline: 'solo'
+        summary: 'Periodic Labs founding; Zuckerberg offered Meta researcher Rishabh Agarwal "millions of dollars in stock and salary" to join the Superintelligence Lab and was turned down ("But although Dr. Agarwal was already a Meta employee, he turned down the offer"). Mild Meta-deficit shading on the anecdote; the OpenAI and Google departures in the same piece get no equivalent personalization.'
+        tone: -0.25
+        url: 'https://www.thetermspot.com/sources/download/2a78bb1f17599c41d984f28b395a12345a9a85f1b1eee832c884b7e288041e76-12535a42-3106-4a8f-a09e-feb1c20e1427'
+        url_note: 'Mirror excerpt carrying verbatim byline "By Cade Metz" and Sep 30 2025 date; snippet-bounded'
+      meta_corpus_unscored:
+      - title: 'In the A.I. Race, Chinese Talent Still Drives American Research'
+        date: '2026-07'
+        byline: 'co-byline Eli Tan'
+        summary: 'Pegged to Zuckerberg unveiling the Superintelligence Lab (June 2026, 11 researchers, 7 born in China per Times-viewed memo). Analytical immigration-policy framing; Meta as news peg, not wrongdoer. Excluded from scored set (co-byline); would score approximately -0.15.'
+        url: 'https://www.mutualfundobserver.com/discuss/discussion/65003/in-the-a-i-race-chinese-talent-still-drives-american-research'
+        url_note: 'Discussion excerpt of the NYT piece, byline "By Cade Metz and Eli Tan"; snippet-bounded'
+      symmetric_accountability_capacity:
+      - title: '2024 NYT investigation into AI training-data harvesting'
+        date: '2024'
+        summary: 'Metz LED a Times investigation into the ways OpenAI, Google and Meta harvested data from across the internet to train AI systems. Symmetric adversarial treatment of all three labs, pre-dating the Science-desk move. Proves adversarial capacity toward the litigation adversary AND Meta alike; bounds the claim to the 2026 launch/scoop register, not a blanket firewall.'
+        source: 'https://www.editorandpublisher.com/stories/reporter-to-start-new-ai-beat-on-the-new-york-times-science-desk,263009'
+      manual_illustrative_tones:
+        meta: [-0.05, -0.25]
+        openai: [-0.05, -0.05, 0.0, -0.15]
+        meta_avg: -0.15
+        openai_avg: -0.0625
+        delta: -0.0875
+        note: 'MANUAL ILLUSTRATIVE only. Negative delta means the Meta side scored marginally harsher; magnitude 0.0875 is near-symmetric (n=2 vs n=4). Solo bylines only; co-byline items excluded from scoring. No significance claimed.'
+      statistical_discipline:
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci: 'NOT_CALCULATED'
+        is_significant: false
+        correlation_not_causation: true
+      confounders:
+        strong:
+        - 'Snippet/excerpt-bounded evidence: nytimes.com is policy-blocked for direct fetch; no full texts opened this run. Headline/dek/excerpt register only.'
+        - 'Beat-genre confound: Metz covers AI as a science/tech beat reporter; the launch/scoop register may track genre, not entity. The Science-desk move may be the actual register driver.'
+        - 'Volume asymmetry: 4 solo OpenAI bylines vs 2 solo Meta bylines in the 2026 window. The coverage-volume skew itself favors the litigation adversary, inverting the naive prediction at the allocation level.'
+        moderate:
+        - 'Co-byline exclusions bound the claim: the Eli Tan Meta piece and Mike Isaac OpenAI piece are corpus-depth only.'
+        - 'The 2024 investigation was symmetric by design (adversarial to all three labs); the symmetry claim is specific to the 2026 launch/scoop register.'
+        weak:
+        - 'Post-Science-desk-move corpus is tiny (3 weeks); the discovery-register read on the Z.ai piece is one data point.'
+        - 'Muck Rack attribution of the GPT-5.6 and datacenter pieces to Metz is listing-level, not byline-verified on the canonical page.'
+      counter_evidence:
+      - 'The Periodic Labs piece DOES personalize Meta negatively (Agarwal turning down Zuckerberg''s millions) with no equivalent OpenAI personalization in the same article - the largest single-item gap in the scored set, bounded by its n=1 status.'
+      - 'The volume skew (4 vs 2) could be read as access asymmetry favoring OpenAI; the scored-register symmetry does not address allocation.'
+      - 'NYT''s sanctions motion against OpenAI (Sep 2026) post-dates all four scored OpenAI bylines; a hardening effect could still emerge.'
+      artifact_readiness: 'No analysis.json update warranted. MANUAL ILLUSTRATIVE Type B, n=2 vs n=4, not significant; per standing rule, below artifact-grade threshold. Follows 512/513/518 precedent of profile-mechanism-only data writes.'
+      novelty: 'First dedicated Type B on Cade Metz. Zero test_type_b_538 files present in repo (glob verified). No Type B commit with 538 in title (git log --grep verified). No existing competitor_coverage block on his profile (YAML-parsed verified over entry lines 69-121 pre-insert). Prior repo mentions of Metz are co-byline credits (May 2026 Altman/Musk piece in mechanism 471) and boilerplate ("covered A.I. for more than 15 years"), never a cross-entity unit. The Science-desk move (~Aug 13 2026) is new to the corpus: this run adds the first career entry for it. Distinct from mechanism 471 (NYT publication-level litigation boundary) and 474 (Type D persistence of 471).'
+      research_method: 'browser.search (4 query sets: Metz OpenAI 2026; "By Cade Metz" Meta 2026; Muse Image byline check; Metz Science desk move) + browser.open on muckrack.com/cademetz/articles (full 292-line listing viewed 2026-09-05) + E&P Wasik memo and talkingbiznews/citybiz corroboration (crawled within 4h of run) + mirror excerpts (mediaairbase, mutualfundobserver, thetermspot) for byline/date verification. nytimes.com policy-blocked for direct fetch per standing rule; canonical NYT URLs not constructed. All URLs carried verbatim from search full-URL listings.'
+      cross_references:
+      - 'mechanism 471 (Type A, NYT publication-level litigation-posture boundary): this run extends it to reporter level, same as 533 extended 532'
+      - 'mechanism 474 (Type D persistence of 471/472/473 window)'
+      - 'mechanism 32 (Wells dual-beat control) and 533 (Hagey reporter-level extension): same extension pattern'
+      - 'falsification family: 457, 471, 472, 493, 498, 502, 503'
   multi_publication: true
 - career:
   - beat: technology, robotics, cybersecurity, space tech
