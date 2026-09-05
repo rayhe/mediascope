@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28475 | Across 855 test files |
+| Tests | 28516 | Across 856 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28475 tests** across 855 test files, each covering a different analytical capability:
+MediaScope has **28516 tests** across 856 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1370,6 +1370,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_525_wsj_perplexity_repro_newscorp_quadruple_bootstrap_ci_sep04_9pm.py` | 25 | Type D #525: #522 WSJ x Perplexity known-answer reproduction (delta -0.125 n.s. p 0.154, CI-excludes-zero vs Welch-n.s. tension pinned) + bootstrap CI behavior known-answers + News Corp quadruple-AI-revenue data integrity + scorer sensitivity/specificity at n=60 (2 initial test-logic failures fixed in-test: translation invariance direction, single-seed specificity assertion) + competitor-citation ratchet (45 uncited entries baseline, must not grow) - Sep 4 2026 21:00 PDT |
 | `test_type_e_526_podcast_sentiment_twenty_eighth_verification_sep04_10pm.py` | 41 | Type E #526: podcast sentiment 28th verification - Guilty Feminist 498 hold, EHE 25-day hold, Attention Sphere 28th no-match, NEW IFU Primetime Live FOX Local video surface (Meta-exclusive alarm register, snippet-bounded, -7/10 MANUAL ILLUSTRATIVE), Sarkar Medium counterpoint essay (0/10), Dark Web Deacon false-freshness guard - Sep 4 2026 22:00 PDT |
 | `test_type_a_527_wsj_microsoft_woo_side_register_sep04_11pm.py` | 26 | Type A #527: WSJ x Microsoft woo-side register - first empirical test of #524 woo-and-sue prediction (Copilot skeptical-with-cushioning -0.15 / Nadella elder-statesman access +0.10 / earnings celebratory +0.25, delta -0.517 vs Meta -0.45 n.s. illustrative, adjusted -0.167, Gallagher within-journalist gradient vs Perplexity -0.30) - Sep 4 2026 23:00 PDT |
+| `test_type_b_528_julian_chokkattu_apple_flagship_vs_meta_glasses_review_sep05_12am.py` | 41 | Type B #528: Julian Chokkattu Apple flagship vs Meta glasses review register - first dedicated Type B competitor_coverage block on Chokkattu; iPhone 17 9/10 "Close to perfection" (+0.80) + M5 iPad Pro (+0.75) vs Jun 23 Meta $299 glasses product review (surveillance-consumer juxtaposition + negative kicker, +0.15) + Jul 2 subscription extraction framing (-0.65); delta -1.025 MANUAL ILLUSTRATIVE n.s. n=2 vs n=2; extends #426 Vision Pro 5/10 triangulation; strong confounders: product maturity, 9-month time window - Sep 5 2026 00:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

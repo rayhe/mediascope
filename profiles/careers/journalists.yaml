@@ -8727,6 +8727,112 @@ journalists:
       impact_on_mechanism_validity: 'Mechanism survives with narrowed claim: comfort criticism MODERATE not HIGH symmetric (Meta praised for comfort improvements vs Samsung Apple heavily critiqued), price extraction framing LOW asymmetric remains (subscription extracting value vs hardware price praise), privacy surveillance framing LOW asymmetric remains (Meta most scrutiny despite fewest cameras covert-capable form factor justification possible), aspirational vs dystopian framing LOW asymmetric remains (Meta most aspirational except subscription dystopian, Apple most dystopian existential). Novel contribution remains three-product same-reviewer triangulation with symmetry matrix, now with primary source verification and corrected product identification $299 vs $799. Confounders 8 total 3 STRONG form factor product stage market share remain valid, form factor STRONG confounder especially relevant given 69g vs 847g vs 600g weight class differences and covert-capable glasses vs obvious headset
         distinction.'
       primary_source_verification_method: Browser task WIRED.com direct navigation Aug 31 2026 23:08 UTC - WIRED site search and Google site:wired.com searches for Julian Chokkattu + Meta Ray-Ban Display return zero reviews by Julian - only Julian-authored Meta glasses coverage June 2026 is Meta-branded $299 glasses - actual Ray-Ban Display name change article by Verity Burns Sep 18 2025 - Apple Vision Pro review Mar 20 2024 5/10 - Samsung Galaxy XR review Dec 14 2025 6/10 - Snap Spectacles coverage by Julian zero results - all URLs verified live as of Aug 31 2026
+
+  competitor_coverage:
+    type_b_528_julian_chokkattu_apple_flagship_vs_meta_glasses_review_register:
+      mechanism_id: 528
+      discovery_date: '2026-09-05'
+      iteration: 528
+      iteration_type: B
+      iteration_time: 2026-09-05 00:00 PT
+      novelty: 'First dedicated Type B competitor_coverage block on Julian Chokkattu. Zero test_type_b_528 files (glob verified). No Type B commit with 528 in title (git log --grep verified). Chokkattu carries mechanisms 207, 354, 362, 411, 426 but no competitor_coverage block (Python-verified over block lines 8075-8777). The two Apple reviews (iPhone 17 9/10, M5 iPad Pro) are novel to the corpus: repo grep for iphone 17 / m5 ipad / close to perfection / makes it shine returns only the unrelated iPhone 17e budget model. Extends #426 (Aug 31 Vision Pro 5/10 vs Meta glasses triangulation) from headsets to Apple flagship phone/tablet hardware reviews.'
+      pattern: 'Same-reviewer product-review genre register gradient: Chokkattu assigns Apple flagship hardware heroic review registers (iPhone 17: 9/10, quote I do not think there has ever been a better base model in the annual iPhone lineup; M5 iPad Pro: iPadOS 26 makes it shine, the touchscreen Mac of your dreams) while his Meta glasses product/launch pieces carry surveillance-anchored registers (Jun 23 Meta 299 glasses product review: surveillance-consumer juxtaposition with WIRED-discovered face-recognition code trained by a company that builds surveillance tools for the US military and police, negative kicker on workforce morale all-time low, manual tone +0.15; Jul 2 subscription article: consumer-hostile extraction framing extracting value and monetizing customers, tone -0.65). Both Apple reviews contain honest cons (iPhone 17 heavy-game stutter/heat, no vapor chamber; iPad Pro get by with the older M4 model and maybe save some cash) but verdict framing stays heroic. MANUAL ILLUSTRATIVE tones: apple [0.80, 0.75] avg 0.775; meta [0.15, -0.65] avg -0.25; delta -1.025. Same journalist, same product-review genre, bounded Sep 2025 - Jul 2026 window.'
+      apple_side:
+        iphone_17_review:
+          title: 'Wired reviews Apple new iPhone 17: Close to perfection (MacDailyNews mirror headline)'
+          publication: wired
+          reviewer: Julian Chokkattu
+          date: '2025-09'
+          wired_rating: '9/10'
+          key_quotes:
+          - 'I do not think there has ever been a better base model in the annual iPhone lineup.'
+          - 'I have been very impressed with battery life. After a week of use, I am consistently hitting more than six hours of screen-on time.'
+          - 'The A19 chip powering the whole phone is an excellent performer. Seriously, for the vast majority of apps and games, this processor kills.'
+          cons_noted:
+          - 'heavy mobile games stutter/freeze; phone gets hot; no vapor chamber cooling'
+          privacy_note: 'New Center Stage front camera (takes selfies to the next level) - inward-facing, privacy-sensitive - receives zero privacy framing in the review.'
+          tone_manual_illustrative: 0.80
+          provenance: 'First-hand via browser.open on macdailynews.com mirror quoting WIRED directly (wired.com blocked by policy this run); quotes carried verbatim from mirror; WIRED byline confirmed by mirror.'
+          mirror_url: https://macdailynews.com/2025/09/23/wired-reviews-apples-new-iphone-17-close-to-perfection/
+        m5_ipad_pro_review:
+          title: 'Wired reviews Apple M5 iPad Pro: iPadOS 26 makes it shine (MacDailyNews mirror headline)'
+          publication: wired
+          reviewer: Julian Chokkattu
+          date: '2025-10'
+          key_quotes:
+          - 'I have been able to work faster than I ever have before on an iPad.'
+          - 'I do not think you will have to wait too long until the iPad Pro finally becomes the touchscreen Mac of your dreams.'
+          cons_noted:
+          - 'you can certainly get by with the older M4 model and maybe save some cash'
+          tone_manual_illustrative: 0.75
+          provenance: 'First-hand via browser.open on macdailynews.com mirror quoting WIRED directly; quotes verbatim from mirror; WIRED byline confirmed by mirror.'
+          mirror_url: https://macdailynews.com/2025/10/21/wired-reviews-apples-m5-ipad-pro-ipados-26-makes-it-shine/
+      meta_side:
+        meta_self_branded_glasses_launch:
+          title: 'Meta Very Own Smart Glasses Go on Sale Today for 299'
+          publication: wired
+          reviewer: Julian Chokkattu
+          date: '2026-06-23'
+          article_type: press-event product review
+          framing_devices:
+          - 'surveillance_consumer_juxtaposition: WIRED-discovered face-recognition code trained by a company that builds surveillance tools for the US military and police embedded in a consumer product review (para 16)'
+          - 'negative_kicker: final paragraph on workforce morale all-time low - last impression carried by readers'
+          - 'loaded_language: nefarious (privacy concerns about blocking recording LED), discreetly (wearable cameras), comically (Snap glasses)'
+          tone_manual_illustrative: 0.15
+          repo_grounding: 'examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_analysis.md (manual tone +0.15; toolkit composite +0.67 overestimates)'
+          url: https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+        meta_subscription_article:
+          title: 'Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech'
+          publication: wired
+          reviewer: Julian Chokkattu
+          date: '2026-07-02'
+          framing_devices:
+          - 'consumer_hostile_extraction: extracting value, monetizing customers'
+          - 'scare_quotes: expanded access'
+          tone_manual_illustrative: -0.65
+          url_grounding: 'mechanism_354 (this file); repo examples wired_meta_glasses_subscription_era_2026_07_02_analysis.md'
+      asymmetry_scorer_result:
+        target_entity: meta
+        peer_entity: apple
+        target_avg: -0.25
+        peer_avg: 0.775
+        delta: -1.025
+        p_value: NOT_CALCULATED
+        is_significant: false
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        manual_illustrative: true
+        correlation_not_causation: true
+        not_artifact_grade: true
+      statistical_discipline: 'MANUAL ILLUSTRATIVE tones at article level, n=2 vs n=2; p_value NOT_CALCULATED per standing rule Aug 28; is_significant False; delta -1.025 is direction-only; NOT artifact-grade.'
+      confounders_ranked:
+        strong:
+        - 'product maturity: iPhone 17 is a mature product line with genuinely excellent battery/display; Meta 299 glasses are a first-generation rebrand with real comfort/privacy friction - verdict gap may be quality-driven'
+        - 'time window: Apple reviews Sep-Oct 2025, Meta pieces Jun-Jul 2026 - nine months apart; the Meta reviews sit inside the post-Everyone-Hates-Elon backlash window while Apple reviews predate it'
+        moderate:
+        - 'camera direction asymmetry: iPhone Center Stage is inward-facing (selfies); Meta glasses cameras are outward-facing (bystanders) - the surveillance register has a defensible literal basis for glasses but not phones'
+        - 'mirror provenance: WIRED originals blocked by policy this run; quotes carried verbatim from MacDailyNews mirrors quoting WIRED directly'
+        weak:
+        - 'illustrative tones subjective; n=2 vs n=2'
+      counter_evidence:
+      - 'Chokkattu DID note real iPhone 17 cons (gaming stutter, heat, no vapor chamber) and DID steer buyers away from the M5 iPad Pro (get by with the older M4 model and maybe save some cash) - the heroic verdicts are not unconditional'
+      - '#426 documents Apple Vision Pro reviewed 5/10 by WIRED (Mar 2024) - Apple hardware CAN receive harsh review registers; the gradient here is Apple-flagship-phone/tablet vs Meta-glasses, not Apple-universal'
+      - 'The Jul 2 subscription article criticizes a pricing practice, not hardware quality; the register asymmetry could be topic-driven (pricing vs product) rather than entity-driven'
+      cross_references:
+      - 30
+      - 39
+      - 42
+      - 207
+      - 252
+      - 354
+      - 362
+      - 411
+      - 426
+      source_urls:
+      - https://macdailynews.com/2025/09/23/wired-reviews-apples-new-iphone-17-close-to-perfection/
+      - https://macdailynews.com/2025/10/21/wired-reviews-apples-m5-ipad-pro-ipados-26-makes-it-shine/
+      - https://www.wired.com/story/meta-new-smart-glasses-are-cheaper-colorful-and-meta-branded/
+      test_file: tests/test_type_b_528_julian_chokkattu_apple_flagship_vs_meta_glasses_review_sep05_12am.py
 - beats:
   - ai_strategy
   - digital_product
