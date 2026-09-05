@@ -1,3 +1,33 @@
+#531 Type E: Podcast Sentiment 29th Verification - Guilty Feminist 498 hold, EHE 26-day hold, Attention Sphere 29th no-match, NEW Jezebel press surface (LED-loophole adversarial register) - Sep 5 2026 03:00 PDT
+
+**Date:** 2026-09-05 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 530 D -> 531 E)
+**Type:** E - Podcast Sentiment Tracking
+
+**Finding:** Twenty-ninth verification cycle. Three holds verified plus one newly-logged surface:
+1. Guilty Feminist 498 hold, no 499 (zeno.fm official list opened first-hand this run; weekly cadence, 499 plausibly near Sep 7; 5-hour extension of #526, not a duplicate). Zero Meta/wearables episodes across all twenty-nine verification cycles (Aug 3-Sep 5).
+2. EHE 26-day hold on new primary campaign motif (Aug 10 Epstein sandwich-board remains last; July bus stops last primary-verified via Engadget + Times + PetaPixel). Two secondary press items returned by this run's search verified already-in-corpus before logging: feminist.org "Helpful or Hurtful? The Growing Privacy Debate Over Meta Glasses" (~Sep 1, logged since #470 via profiles/advocacy-coalitions.yaml) and sifted.eu "Should tech events ban Meta's smart glasses?" (~Aug 26, logged as sixth vertical in #480) - both classified as launch-backlash press, NOT new EHE campaigns.
+3. Attention Sphere 29th no-match (quoted search returned only this repo's own GitHub pages, rejected as circular, plus Anita Nowak/Ava Smithing listings confirming Attention Sphere is Smithing's nonprofit, not a podcast; misidentification stands).
+4. NEW press surface: Jezebel "Hey Meta: If You Didn't Put Spy Cameras in Your Smart Glasses, Maybe People Wouldn't Use Them for Spying?" (~Sep 4, repo grep zero matches before this run, verbatim https://www.jezebel.com/meta-smart-glasses-cameras-spying-secret-recording-led-lights-privacy-tampering-updates-consent) - snippet-bounded, adversarial entity-selective register (headline frames Meta at fault), covers the LED-loophole closure sequence with Alex Himel quote ("Only a tiny minority of people try to get around these protections..."). MANUAL ILLUSTRATIVE -6/10 toward Meta glasses. The piece's secondary citations (manualdousuario.net Bluesky link, thecrosswiredaily Sep 2 post) are cited content within the Jezebel piece, not claimed as independent surfaces.
+
+**Statistical discipline:** MANUAL ILLUSTRATIVE only; p_value/cohens_d/CI NOT_CALCULATED, is_significant False. No claim of empirical significance. All holds are bounded search-result absences; the new surface is snippet-bounded (search result, not full article).
+
+**Confounders Ranked:** STRONG: (1) snippet-bounded search results are not full articles; register claims bounded to retrieved text; (2) three holds are bounded absences, not universal non-existence; (3) five-hour cadence - developments can land between cycles, findings time-bounded to 03:00 PDT Sep 5. MODERATE: (1) EHE is an activist group, not a podcast, tracked per task spec as an amplification source. WEAK: MANUAL ILLUSTRATIVE scores subjective.
+
+**Counter-evidence / limits:** The Sarkar counterpoint (#526) already shows the ecosystem is not monolithically negative; the finding is entity-selectivity of the alarm register, not unanimity. No competitor-targeted campaign or alarm-register surface appeared in twenty-nine cycles, but search methodology is bounded.
+
+**Artifact readiness:** No analysis.json update warranted. Test infrastructure + podcast tracking only; no new artifact-grade tone data.
+
+**New Type E files:** `tests/test_type_e_531_podcast_sentiment_twenty_ninth_verification_sep05_3am.py` - 9 classes, 38 tests.
+
+**Rotation Transparency:** Previous entry #530 Type D at 02:00 PDT Sep 5 2026 (commit 96ba7f6 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after D is E. Cycle verified: 526 E 22:00, 527 A 23:00, 528 B 00:00, 529 C 01:00, 530 D 02:00. Selected Type E.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_e_531 files on disk before this run (glob verified); no Type E commit with 531 in the title (git log --grep verified); "jezebel" repo grep (md/yaml/py) returned zero matches before this run (only secondary-citation names manualdousuario/thecrosswiredaily, both cited-within, not separately logged); feminist.org and sifted items caught as already-in-corpus before logging, not double-counted.
+
+**Research method:** browser.search 2 query sets ("Everyone Hates Elon" Meta glasses campaign; Meta smart glasses podcast episode September 2026 privacy) with verbatim full-URL listings; browser.open first-hand on zeno.fm official Guilty Feminist episode list. All facts via search-result excerpts or first-hand opens; per iteration-492 rule, no zero-coverage claims (all absences stated as bounded search-result absences).
+
+**Cumulative:** 29 Type E verification cycles; 9 EHE press verticals (Jezebel #531 + IFU #526, on the 7 that stood through #521); 0 Guilty Feminist Meta/wearables episodes Aug 3-Sep 5; Attention Sphere remains task-spec misidentification.
+
+---
 #530 Type D: Test & Verify - Count-Gate False-STALE Fix, Scorer Cross-Mechanism Consistency, Doc-Sync Ratchet, Stale-Test Repair - Sep 5 2026 02:00 PDT
 
 **Date:** 2026-09-05 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 529 C -> 530 D)

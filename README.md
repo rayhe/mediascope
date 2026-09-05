@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28554 | Across 858 test files |
+| Tests | 28592 | Across 859 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28554 tests** across 858 test files, each covering a different analytical capability:
+MediaScope has **28592 tests** across 859 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1373,6 +1373,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_528_julian_chokkattu_apple_flagship_vs_meta_glasses_review_sep05_12am.py` | 41 | Type B #528: Julian Chokkattu Apple flagship vs Meta glasses review register - first dedicated Type B competitor_coverage block on Chokkattu; iPhone 17 9/10 "Close to perfection" (+0.80) + M5 iPad Pro (+0.75) vs Jun 23 Meta $299 glasses product review (surveillance-consumer juxtaposition + negative kicker, +0.15) + Jul 2 subscription extraction framing (-0.65); delta -1.025 MANUAL ILLUSTRATIVE n.s. n=2 vs n=2; extends #426 Vision Pro 5/10 triangulation; strong confounders: product maturity, 9-month time window - Sep 5 2026 00:00 PDT |
 | `test_type_c_529_google_canada_c18_100m_meta_zero_sep05_1am.py` | 21 | Type C #529: Canada Online News Act (C-18) - Google C$100M/yr publisher dependency (CJC exemption, C$22.19M to 108 publishers by Apr 2025, C$55.2M to 338 by Jul 2025) vs Meta zero-payment news block - same-market natural experiment, first dedicated C-18 mechanism; coverage-tone prediction explicitly deferred to Type A follow-up - Sep 5 2026 01:00 PDT |
 | `test_type_d_530_count_gate_and_scorer_verification_sep05_2am.py` | 17 | Type D #530: count-gate false-STALE incident fix (venv auto-detect, loud fallback warning, 300s timeout) + scorer cross-mechanism consistency (#527/#528 engine reproduces manual illustrative deltas, all-quantitative-delta sign consistency, bootstrap determinism) + doc-sync ratchet (#529 rows added, #526 class count 9→8) - Sep 5 2026 02:00 PDT |
+| `test_type_e_531_podcast_sentiment_twenty_ninth_verification_sep05_3am.py` | 38 | Type E #531: podcast sentiment 29th verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand this run), EHE 26-day hold with feminist.org + sifted.eu secondary items verified already-in-corpus NOT new campaigns, Attention Sphere 29th no-match (circular GitHub rejection, nonprofit confirmed), NEW Jezebel press surface (LED-loophole adversarial entity-selective register, -6/10 MANUAL ILLUSTRATIVE, snippet-bounded), secondary citations not independent surfaces - Sep 5 2026 03:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

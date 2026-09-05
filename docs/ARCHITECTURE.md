@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28537 tests across 857 test files (all from real articles)
+├── tests/                       # 28592 tests across 859 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1125,6 +1125,7 @@ mediascope/
 │   ├── test_type_b_528_julian_chokkattu_apple_flagship_vs_meta_glasses_review_sep05_12am.py  # Type B #528: Chokkattu Apple flagship (iPhone 17 9/10, M5 iPad Pro) vs Meta glasses review register gradient - first dedicated Type B competitor_coverage on Chokkattu; delta -1.025 MANUAL ILLUSTRATIVE n.s., extends #426 - Sep 5 2026 00:00 PDT - 41 tests, 8 classes
 │   ├── test_type_c_529_google_canada_c18_100m_meta_zero_sep05_1am.py  # Type C #529: Canada Online News Act (C-18) - Google C$100M/yr publisher dependency vs Meta zero-payment news block - same-market natural experiment, first dedicated C-18 mechanism; coverage-tone prediction deferred - Sep 5 2026 01:00 PDT - 21 tests, 0 classes (bare module-level test functions)
 │   ├── test_type_d_530_count_gate_and_scorer_verification_sep05_2am.py  # Type D #530: count-gate false-STALE fix + scorer cross-mechanism consistency (#527/#528 engine reproduces manual deltas) + bootstrap determinism + doc-sync ratchet - Sep 5 2026 02:00 PDT - 17 tests, 4 classes
+│   ├── test_type_e_531_podcast_sentiment_twenty_ninth_verification_sep05_3am.py  # Type E #531: podcast sentiment 29th verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand), EHE 26-day hold, feminist.org + sifted.eu verified already-in-corpus, Attention Sphere 29th no-match, NEW Jezebel surface (LED-loophole adversarial register, -6/10 MANUAL ILLUSTRATIVE, snippet-bounded) - Sep 5 2026 03:00 PDT - 38 tests, 9 classes
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation
