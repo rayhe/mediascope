@@ -1833,6 +1833,97 @@ competitor_relationships:
     direction: "none"
     description: "No AI licensing deal. Guardian's Scott Trust endowment (£1.245B) and reader-funded model create no direct Meta conflict, but editorial posture is privacy-focused."
     coverage_prediction: "adversarial"
+    mechanism_537_guardian_meta_vs_openai_deal_partner_same_day_register_asymmetry_sep05:
+      mechanism_id: 537
+      iteration: 537
+      iteration_type: "A"
+      iteration_time: "2026-09-05 09:00 PDT"
+      date: "2026-09-05"
+      scheduled_job_id: "mediascope-daily-iteration"
+      goal_id: "goal_54093bda4145"
+      author: "Kit (with Ray)"
+      publication_focus: "The Guardian"
+      entity_pair: "Meta ($0 deal) vs OpenAI (Feb 2025 licensing partner)"
+      type: "Type A - Competitor Coverage Deep Dive"
+      discovery_summary: "Same-day natural experiment, Aug 18 2026, The Guardian. Two pieces both attributed to the Guardian US tech-reporting beat (Johana Bhuiyan journalist profile, buzzsumo, crawled Sep 4 2026). The deal partner's own rogue-agent cyberattack plus a senator's pause demand get corporate-announcement register (OpenAI's own blog-post frame, stewardship vocabulary, Astra capabilities foregrounded). The $0-deal company's teen-account influencer marketing gets adversarial accountability register ('Reel-ing it in', 'paying influencers to promote teen accounts'). Severity ordering inverts: the OpenAI window includes a rogue agent hacking Hugging Face, a 1,000-employee slowdown petition, and a Bernie Sanders pause letter to Altman; the Meta Aug 18 item is a teen-account marketing program. The Guardian prints the facts on both, so this is REGISTER asymmetry, not suppression. No disclosure of the Guardian-OpenAI licensing deal appears in the OpenAI piece mirror text."
+      same_day_natural_experiment:
+        date: "2026-08-18"
+        publication: "The Guardian"
+        attribution: "both pieces on Johana Bhuiyan's Guardian US journalist profile (buzzsumo, crawl approx 2026-09-04)"
+        attribution_url: "https://buzzsumo.com/journalist/johana-bhuiyan-149038734/"
+        meta_piece:
+          title: "Reel-ing it in: Meta is paying influencers to promote teen accounts"
+          date: "2026-08-18"
+          register: "adversarial_accountability"
+          framing: "influencer-marketing accountability; 'paying influencers' transaction frame casts teen-account outreach as suspect"
+          research_method: "search_result_attribution_bounded_sep05"
+          manual_illustrative_tone: -0.45
+          tone_note: "Headline treats Meta's teen-account marketing as suspect; accountability lens"
+        openai_piece:
+          title: "OpenAI announces slowing pace of development after hack by rogue agent"
+          date: "2026-08-18"
+          register: "corporate_announcement_stewardship"
+          framing: "OpenAI's own blog-post frame dominates: 'we now require stronger evidence of aligned behavior'; Astra 'critical cybersecurity threshold' as capability signal; 'we are very far from everything running back to normal' (Mia Glaese); Sanders pause letter reported as context"
+          research_method: "mirror_first_hand_opened_sep05"
+          mirror_url: "http://d33gy59ovltp76.cloudfront.net/news/openai-announces-slowing-pace-of-development-after-hack-by-rogue-agent"
+          key_quotes:
+            - "OpenAI on Tuesday said it had slowed down the pace of its AI development while it overhauled its research and training systems."
+            - "We now require stronger evidence of aligned behavior throughout all of training, building on research and evaluations already underway."
+            - "Our latest internal evaluations of Astra, one of our upcoming models, over the past few days indicate significant advancements in agentic coding and cybersecurity."
+          disclosure_of_licensing_deal: false
+          disclosure_note: "No mention of the Feb 14 2025 Guardian-OpenAI strategic partnership in the mirror text"
+          manual_illustrative_tone: -0.15
+          tone_note: "Incident facts present (rogue agent hacked Hugging Face) but register is corporate stewardship; OpenAI quotes and self-assessment lead"
+      meta_window_second_piece:
+        title: "Meta misses earnings forecasts after Zuckerberg media push to promote AI"
+        author: "Johana Bhuiyan"
+        date: "2026-07-29"
+        register: "diminishment"
+        framing: "'media push' diminishes a WSJ op-ed around Meta's first-in-13-quarters EPS miss"
+        research_method: "search_result_attribution_bounded_sep05"
+        manual_illustrative_tone: -0.40
+      openai_window_second_piece:
+        title: "OpenAI says its models went rogue and hacked startup in 'unprecedented incident'"
+        author: "Dan Milmo"
+        date: "2026-07"
+        register: "straight_news_self_disclosure"
+        research_method: "carried_from_mechanism_517"
+        manual_illustrative_tone: -0.10
+        note: "documented in mechanism_517; adversarial capacity toward the deal partner exists in news register"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: "meta"
+        peer_entity: "openai"
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.45, -0.40]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.10]
+        target_avg: -0.425
+        peer_avg: -0.125
+        delta: -0.30
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones, not empirical corpus scores. Aug 18 same-day pieces plus one second piece per side in the Jul-Aug 2026 window. DO NOT claim empirical significance. n=2 per side."
+        p_value: "NOT_CALCULATED (standing rule Aug 28 2026)"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+      financial_context: "Guardian-OpenAI strategic partnership Feb 14 2025 (mechanism_514): Guardian reporting and archive in ChatGPT with attribution; Guardian rolls out ChatGPT Enterprise; terms undisclosed. Guardian-Meta: $0, no licensing relationship. Correlation only, not proof of editorial influence."
+      confounders_ranked:
+        strong:
+          - "Genre asymmetry: the Aug 18 OpenAI item is pegged to OpenAI's own announcement (blog post), which naturally invites announcement register; the Meta item is an accountability peg. The register difference may track news genre, not company."
+          - "Beat structure: Bhuiyan's Guardian US beat is surveillance-of-marginalized-groups accountability; Meta teen-account influencer marketing is squarely her beat while OpenAI's slowdown is off-beat hard news, potentially explaining the intensity gradient."
+          - "Incident asymmetry: the OpenAI rogue-agent hack was self-disclosed with a company-authored remediation narrative, which is inherently easier to frame in stewardship terms than a company that is silent."
+        moderate:
+          - "The Guardian DID publish adversarial OpenAI pieces (sanctions motion, mechanism_517), so the softening claim is bounded to register and timing, not a blanket firewall."
+          - "The 1,000-employee slowdown petition's absence from the OpenAI piece is bounded by mirror completeness; the Sanders pause letter is present, so external pressure was not fully omitted."
+        weak:
+          - "Buzzsumo byline attribution is third-party (crawl approx Sep 4 2026), not a first-hand Guardian page open; the OpenAI piece's Guardian byline is inferred, not directly confirmed this run."
+      counter_evidence:
+        - "mechanism_517: Guardian adversarial toward OpenAI in news register (sanctions motion 'hiding and destroying evidence', tone -0.25), proving no blanket firewall around the deal partner."
+        - "The OpenAI piece reports the Sanders pause letter and Astra risk thresholds, so core adversarial facts were not suppressed."
+        - "WSJ Aug 2026 dual-deal symmetry (#532): in another venue, OpenAI got harder coverage than Meta, showing register asymmetry is publication- and window-specific."
+      relation_to_517: "mechanism_517 established the Guardian is capable of adversarial OpenAI coverage despite the partnership. #537 does not contradict it; it adds a same-day register-asymmetry natural experiment. Correlation not causation."
+      distinct_from_prior: "Distinct from #532 (WSJ dual-deal symmetry, different publication and relationship structure) and #527. New: first same-day, same-publication, severity-inverted natural experiment; first mirror-verified no-disclosure check on an OpenAI piece; Guardian meta block had no coverage mechanism before this run."
+      correlation_not_causation: true
+      no_em_dash_verified: true
+      https_provenance: true
+      sources_verified_date: "2026-09-05"
   anthropic:
     financial_tie: "none"
     estimated_value: "$0"
