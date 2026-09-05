@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28347 tests across 850 test files (all from real articles)
+├── tests/                       # 28408 tests across 853 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1117,6 +1117,9 @@ mediascope/
 │   ├── test_type_d_520_numeric_monetary_integrity_scorer_validity_sep04_3pm.py  # Type D #520: #514 string-mangle regression (target_raise_b low/high numeric) + asymmetry scorer known-answer validity (symmetric/strong/#517 n.s./degenerate) - Sep 4 2026 15:00 PDT - 16 tests, 5 classes
 │   ├── test_type_e_521_podcast_sentiment_twenty_seventh_verification_sep04_4pm.py  # Type E #521: podcast sentiment 27th verification - Guilty Feminist 498 hold, Hyperallergic arts-press first-hand verified (new-vertical claim withdrawn, self-correction recorded) - Sep 4 2026 16:00 PDT - 51 tests, 8 classes
 │   ├── test_type_a_522_wsj_perplexity_sue_side_register_sep04_5pm.py  # Type A #522: WSJ x Perplexity sue-side register - first empirical test of #519 woo-and-sue prediction (delta -0.125 n.s. p 0.154, Meta deal-partner -0.45 counter-register) - Sep 4 2026 17:00 PDT - 24 tests, 5 classes
+│   ├── test_type_b_523_zoe_schiffer_co_byline_brain_drain_narrative_asymmetry_sep04.py  # Type B #523: Zoe Schiffer co-byline brain-drain narrative asymmetry (journalist cross-entity tracking) - Sep 4 2026 19:00 PDT - 15 bare test functions
+│   ├── test_type_c_524_newscorp_microsoft_harpercollins_quadruple_sep04_8pm.py  # Type C #524: News Corp x Microsoft HarperCollins book licensing (Nov 2024) - quadruple-AI-revenue owner - Sep 4 2026 20:00 PDT - 21 tests
+│   ├── test_type_d_525_wsj_perplexity_repro_newscorp_quadruple_bootstrap_ci_sep04_9pm.py  # Type D #525: #522 WSJ x Perplexity known-answer reproduction + bootstrap CI behavior + News Corp quadruple-revenue integrity + scorer sensitivity/specificity at n=60 + competitor-citation ratchet - Sep 4 2026 21:00 PDT - 25 tests, 5 classes
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation

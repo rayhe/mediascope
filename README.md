@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28347 | Across 850 test files |
+| Tests | 28408 | Across 853 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28347 tests** across 850 test files, each covering a different analytical capability:
+MediaScope has **28408 tests** across 853 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1365,6 +1365,9 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_d_520_numeric_monetary_integrity_scorer_validity_sep04_3pm.py` | 16 | Type D #520: monetary scalar integrity regression (iteration #514 silent string-mangle: target_raise_b '75-86.2' TypeErrored on >= 50; split into numeric low/high - also fixed arr_projection_eoy_2026_b, revenue_2028_projection_b, projected_revenue_2028_b) + asymmetry scorer statistical validity known-answer tests (symmetric input no-claim, strong asymmetry signed+significant, #517 numbers reproduce p 0.315 n.s., degenerate input no-crash) - Sep 4 2026 15:00 PDT |
 | `test_type_a_522_wsj_perplexity_sue_side_register_sep04_5pm.py` | 24 | Type A #522: WSJ x Perplexity sue-side register - first empirical test of #519 woo-and-sue prediction (business-failure/quixotic-dismissal/security-threat registers, delta -0.125 n.s. p 0.154, Meta deal-partner -0.45 counter-register documented) - Sep 4 2026 17:00 PDT |
 | `test_type_e_521_podcast_sentiment_twenty_seventh_verification_sep04_4pm.py` | 51 | Type E #521: podcast sentiment 27th verification - Guilty Feminist 498 hold, EHE 25-day hold, Hyperallergic arts-press first-hand verified (eighth-vertical claim withdrawn via repo grep self-correction, seven-vertical count stands), Attention Sphere 27th no-match - Sep 4 2026 16:00 PDT |
+| `test_type_b_523_zoe_schiffer_co_byline_brain_drain_narrative_asymmetry_sep04.py` | 15 | Type B #523: Zoe Schiffer co-byline brain-drain narrative asymmetry (journalist cross-entity tracking) - Sep 4 2026 19:00 PDT |
+| `test_type_c_524_newscorp_microsoft_harpercollins_quadruple_sep04_8pm.py` | 21 | Type C #524: News Corp x Microsoft HarperCollins book licensing (Nov 2024) - quadruple-AI-revenue owner (OpenAI + Meta + Microsoft + Anthropic settlement) - Sep 4 2026 20:00 PDT |
+| `test_type_d_525_wsj_perplexity_repro_newscorp_quadruple_bootstrap_ci_sep04_9pm.py` | 25 | Type D #525: #522 WSJ x Perplexity known-answer reproduction (delta -0.125 n.s. p 0.154, CI-excludes-zero vs Welch-n.s. tension pinned) + bootstrap CI behavior known-answers + News Corp quadruple-AI-revenue data integrity + scorer sensitivity/specificity at n=60 (2 initial test-logic failures fixed in-test: translation invariance direction, single-seed specificity assertion) + competitor-citation ratchet (45 uncited entries baseline, must not grow) - Sep 4 2026 21:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
