@@ -123,6 +123,89 @@ competitor_relationships:
       notes: 'Compare with Meta rogue AI coverage: same publication, same incident class, EQUAL financial incentive (~$50M/yr
         each), but Meta gets adversarial framing while OpenAI gets adventure.'
     rogue_ai_framing_tone: -0.2
+    mechanism_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05:
+      mechanism_id: 532
+      mechanism_name: 'WSJ x OpenAI Astra-Cycle vs Meta Settlement-Cycle - Dual-Deal Symmetry Test'
+      iteration: 532
+      iteration_type: 'A'
+      date: '2026-09-05'
+      summary: 'First Type A empirical test of #519 Type C dual-deal symmetric-softening prediction on a fresh balanced event window. News Corp collects ~$50M/yr from BOTH OpenAI (May 2024) and Meta (Mar 2026); #519 predicted symmetric softening toward both vs no-deal entities. Aug-Sep 2026 gave both companies major negative news: OpenAI Astra critical cyber rating plus Hugging Face hack fallout; Meta $18B teen-safety settlement. Two WSJ articles per side, all via search-result excerpts (wsj.com paywalled, none opened first-hand this run). MANUAL ILLUSTRATIVE tones: OpenAI [-0.15, -0.25] avg -0.20; Meta [-0.30, -0.25] avg -0.275; delta -0.075 (Meta trivially harder). Directionally consistent with #519 symmetry (gap far smaller than the rogue-AI window minus 0.25), but n=2 per side, p_value NOT_CALCULATED, not significant. Correlation not causation.'
+      financial_context: 'News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr, training plus answer-surfacing); Meta leg Mar 2026 (up to $50M/yr, 3yr, US+UK content for Meta AI training/retrieval). Both predict softer WSJ coverage per incentive theory; #519 predicts the softening is SYMMETRIC, neutralizing any net Meta-vs-OpenAI directional gap.'
+      articles_openai:
+        - title: 'OpenAI to Restrict Astra Model After Rating It Critical Cyber Risk'
+          date: '2026-09-02'
+          byline: 'Sam Schechner and Keach Hagey'
+          url: 'https://www.wsj.com/tech/ai/openai-to-restrict-astra-model-after-rating-it-critical-cyber-risk-499b5a46'
+          register: 'measured_safety_reporting_with_disclosure'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          research_method: 'search_result_excerpt_bounded_sep05'
+          key_quotes:
+            - 'OpenAI said that its new Astra model was able to compromise web browser sandboxes to run commands on the browser computer'
+            - 'Those capabilities led the company to rate the model as critical for cybersecurity in its in-house framework, the first time the company said it has done so'
+            - 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'
+          note: 'Straight reporting of OpenAI own critical rating; safeguards framed as company action; disclosure present. No adversarial headline, no negligence framing.'
+        - title: 'OpenAI Pauses Some Work on New AI Model Over Cybersecurity Concerns'
+          date: '2026-08-08'
+          url: 'https://www.wsj.com/tech/ai/openai-pauses-some-work-on-new-ai-model-over-cybersecurity-concerns-8473a86f'
+          register: 'industry_context_safety_reporting'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          research_method: 'search_result_excerpt_bounded_sep05'
+          key_quotes:
+            - 'The development punctuates a series of disclosures of incidents in which advanced AI models escaped from testing environments'
+            - 'Jeffrey Ladish said he believed OpenAI should have paused work on Astra after learning of the Hugging Face hack. It is definitely late.'
+            - 'We are clearly at the point where we should be losing a lot of trust in AI companies to actually self-regulate.'
+          note: 'Strongest critical voice is an outside expert (Ladish/Palisade), not the WSJ editorial voice. Industry-context framing names Anthropic, Meta, Moonshot alongside OpenAI.'
+      articles_meta:
+        - title: 'Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims'
+          date: '2026-08-26'
+          byline: 'Meghan Bobrowsky (per WSJ CMO Today internal attribution)'
+          url: 'https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b'
+          register: 'accountability_reporting_with_investigative_lineage'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+          research_method: 'search_result_excerpt_bounded_sep05'
+          key_quotes:
+            - 'comes a few years after The Wall Street Journal reported on the company own internal research showing its products were harming users in an award-winning series called The Facebook Files'
+            - 'The AGs in that case had asked for roughly $200 billion in damages, more than 200 times the amount that Meta was recently ordered to pay'
+            - 'Florida Attorney General James Uthmeier said the state did not join the settlement because the payouts are peanuts compared to the profound harms'
+          note: 'Facebook Files self-reference invokes WSJ adversarial investigative lineage toward Meta. $200B-ask vs $18B-settlement contrast is implicitly critical. Peanuts quote selected.'
+        - title: 'New Teen Safety Measures for Instagram and Facebook Are Coming. Will They Work?'
+          date: '2026-08-26'
+          url: 'https://www.wsj.com/tech/personal-tech/meta-teen-safety-instagram-facebook-ae83287d'
+          register: 'skeptical_product_analysis'
+          tone_MANUAL_ILLUSTRATIVE: -0.25
+          research_method: 'search_result_excerpt_bounded_sep05'
+          key_quotes:
+            - 'To understand whether these changes will effectively lead to a safer experience, we spoke to top legal and product executives at Meta as well as online-safety experts.'
+            - 'Here is a breakdown of what the new safety measures will achieve, and where they might fall short.'
+          note: 'Will They Work headline is skeptical-framed; piece is analytical not adversarial. Meta executives given voice alongside experts.'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'meta'
+        peer_entity: 'openai'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.30, -0.25]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.15, -0.25]
+        delta: -0.075
+        delta_note: 'Meta avg -0.275 minus OpenAI avg -0.20 equals -0.075. Direction: Meta trivially harder, gap far smaller than the rogue-AI window (-0.25).'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        is_significant: false
+        methodology: 'MANUAL ILLUSTRATIVE hand-assigned tones from search-result excerpts, n=2 per side, not empirical corpus scores. DO NOT claim empirical significance.'
+      confounders_ranked:
+        strong:
+          - 'Event-type mismatch: AI safety incident (OpenAI) vs legal settlement (Meta) carry different news values and reporter pools; not a matched pair.'
+          - 'n=2 per side; article selection could drive the small observed gap.'
+          - 'WSJ Facebook Files lineage gives Meta a pre-existing adversarial baseline independent of the licensing deal.'
+        moderate:
+          - 'Timing skew: OpenAI deal 28 months old, Meta deal 6 months old; differential incentive exposure periods.'
+          - 'All four articles via search-result excerpts only; wsj.com paywalled, none opened first-hand this run.'
+        weak:
+          - 'Byline pool differs (Schechner/Hagey vs Bobrowsky); individual reporter style may confound.'
+      counter_evidence:
+        - 'Rogue-AI window (Jul-Aug 2026) showed a LARGER gap (OpenAI -0.2 vs Meta -0.45, delta -0.25) in the same publication; asymmetry persists in some windows.'
+        - 'WSJ disclosure practice is transparency, not softening evidence.'
+        - 'Will They Work skeptical framing demonstrates retained adversarial capacity toward the newer ($50M/yr) Meta payer.'
+      relation_to_519: 'Directionally consistent with #519 symmetric-softening prediction (near-zero gap in this window), but does not confirm it: n is tiny, the rogue-AI window contradicts symmetry, and straight news reporting of negative events is the null expectation for a quality newsroom regardless of incentives. Correlation not causation.'
+      distinct_from_prior: 'Distinct from the profile rogue_ai_framing_tone entries (Jul-Aug rogue-AI window, -0.2 vs -0.45) and from #522/#527 (Perplexity/Microsoft registers). New event window (Astra cycle Sep 2026, settlement Aug 2026), new articles, new theoretical test (#519 dual-deal symmetry).'
+      author: 'Kit (with Ray)'
+      correlation_not_causation: true
   meta:
     financial_tie: licensing
     estimated_value: up to $50M/yr

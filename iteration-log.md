@@ -1,3 +1,44 @@
+#532 Type A: WSJ x OpenAI Astra-Cycle vs Meta Settlement-Cycle - Dual-Deal Symmetry Test (delta -0.075 illustrative, n.s.) - Sep 5 2026 04:00 PDT
+
+**Date:** 2026-09-05 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 531 E -> 532 A)
+**Type:** A - Competitor Coverage Deep Dive (WSJ x OpenAI vs Meta)
+
+**Mechanism:** #532 Type A - First empirical test of #519 Type C's dual-deal symmetric-softening prediction on a fresh balanced event window. News Corp collects ~$50M/yr from BOTH OpenAI (May 2024, $250M/5yr, training + answer-surfacing) and Meta (Mar 2026, up to $50M/yr, 3yr, US+UK content). #519 predicted symmetric softening toward both vs no-deal entities (Anthropic, Google, Amazon, Perplexity). Aug-Sep 2026 gave both companies major negative news in the same window: OpenAI's Astra "critical" cyber rating (Sep 2, first-ever under its Preparedness Framework) plus Hugging Face hack fallout (Aug 8); Meta's $18B teen-safety settlement with 48 states (Aug 26). Two WSJ articles per side, all via search-result excerpts (wsj.com paywalled, none opened first-hand this run - honestly labeled as bounded).
+
+**Rotation Transparency:** Previous entry #531 Type E at 03:00 PDT Sep 5 2026 (commit b6136da verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Cycle verified: 527 A 23:00, 528 B 00:00, 529 C 01:00, 530 D 02:00, 531 E 03:00. Selected Type A.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_a_532 files on disk before this run (glob verified); no Type A commit with 532 in the title (git log --grep verified); iteration-log grep for "WSJ x OpenAI" Type A returns zero (WSJ Type As were #522 Perplexity sue-side, #527 Microsoft woo-side; #481 was Atlantic x OpenAI, different publication). All four articles new to profiles/news-corp.yaml (not in coverage_examples). Distinct from the profile's rogue_ai_framing_tone entries (Jul-Aug rogue-AI window, OpenAI -0.2 vs Meta -0.45). Not Microsoft PCM related.
+
+**OpenAI side (WSJ, search-result excerpts):**
+- "OpenAI to Restrict Astra Model After Rating It 'Critical' Cyber Risk" (Sep 2, 2026, Sam Schechner and Keach Hagey, https://www.wsj.com/tech/ai/openai-to-restrict-astra-model-after-rating-it-critical-cyber-risk-499b5a46): measured safety reporting; "able to compromise web browser sandboxes"; disclosure present ("News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI"). MANUAL ILLUSTRATIVE -0.15.
+- "OpenAI Pauses Some Work on New AI Model Over Cybersecurity Concerns" (Aug 8, 2026, https://www.wsj.com/tech/ai/openai-pauses-some-work-on-new-ai-model-over-cybersecurity-concerns-8473a86f): industry-context framing (Anthropic, Meta, Moonshot named); strongest critical voice is outside expert Ladish ("It's definitely late... we should be losing a lot of trust in AI companies to actually self-regulate"). MANUAL ILLUSTRATIVE -0.25.
+
+**Meta side (WSJ, search-result excerpts):**
+- "Meta Reaches $18 Billion Settlement With 48 States Over Child-Safety Claims" (Aug 26, 2026, Meghan Bobrowsky per WSJ CMO Today attribution, https://www.wsj.com/tech/meta-reaches-18-billion-settlement-with-48-states-over-child-safety-claims-cf725a2b): Facebook Files self-reference invokes adversarial investigative lineage; "$200 billion in damages, more than 200 times the amount" contrast; Florida AG "peanuts" quote selected. MANUAL ILLUSTRATIVE -0.30.
+- "New Teen Safety Measures for Instagram and Facebook Are Coming. Will They Work?" (Aug 26, 2026, https://www.wsj.com/tech/personal-tech/meta-teen-safety-instagram-facebook-ae83287d): "Will They Work?" skeptical headline; analytical not adversarial; Meta executives given voice. MANUAL ILLUSTRATIVE -0.25.
+
+**Scorer (MANUAL ILLUSTRATIVE, reproduced live this run):** OpenAI [-0.15, -0.25] avg -0.20 vs Meta [-0.30, -0.25] avg -0.275; delta -0.075 (Meta trivially harder). p_value NOT_CALCULATED (standing rule Aug 28 2026), is_significant False. NOT artifact-grade. Gap far smaller than the rogue-AI window's -0.25.
+
+**Statistical discipline:** MANUAL ILLUSTRATIVE hand-assigned tones from excerpts, n=2 per side, not empirical corpus scores. DO NOT claim empirical significance. Per iteration-492 rule, no zero-coverage claims; all article characterizations bounded to retrieved excerpts.
+
+**Confounders Ranked:** STRONG: (1) event-type mismatch - AI safety incident (OpenAI) vs legal settlement (Meta) carry different news values and reporter pools, not a matched pair; (2) n=2 per side, article selection could drive the small gap; (3) WSJ Facebook Files lineage gives Meta a pre-existing adversarial baseline independent of the licensing deal. MODERATE: (1) timing skew - OpenAI deal 28 months old vs Meta deal 6 months old, differential incentive exposure; (2) all four via excerpts only, none opened first-hand. WEAK: byline pool differs (Schechner/Hagey vs Bobrowsky).
+
+**Counter-evidence / limits:** (1) Rogue-AI window (Jul-Aug) showed a LARGER gap (OpenAI -0.2 vs Meta -0.45, delta -0.25) in the same publication - asymmetry persists in some windows, so this window's symmetry does not generalize; (2) WSJ disclosure practice is transparency, not softening evidence; (3) "Will They Work?" skeptical framing demonstrates retained adversarial capacity toward the newer Meta payer; (4) straight news reporting of negative events is the null expectation for a quality newsroom regardless of incentives.
+
+**Relation to #519:** Directionally consistent with the dual-deal symmetric-softening prediction (near-zero gap in this window), but does NOT confirm it: n is tiny, the rogue-AI window contradicts symmetry, and the null (quality newsroom covers negative news straight) predicts the same observation. Correlation not causation.
+
+**Artifact readiness:** No analysis.json update warranted. Single-pair illustrative finding with significant=false defines no new artifact-grade tone data.
+
+**New Type A files:** `profiles/news-corp.yaml` competitor_relationships.openai gained `mechanism_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05` (ASCII-verified block, YAML-parsed, author Kit (with Ray)); `tests/test_type_a_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05_4am.py` - 6 classes, 28 tests.
+
+**Research method:** browser.search (4 query sets: WSJ OpenAI Astra Critical, WSJ OpenAI Astra pause, WSJ Meta $18B settlement, site:wsj.com Meta settlement; verbatim full-URL listings carried, no URLs constructed). wsj.com paywalled - all four articles characterized from search-result excerpts only, explicitly bounded. No pages opened first-hand this run.
+
+**Verification runs (venv pytest, -p no:cacheprovider):** New #532 file: 28 passed, 0 failed. `scripts/count_stats.py --pytest`: 28620 tests across 860 files (authoritative).
+
+**Test file:** `tests/test_type_a_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05_4am.py` - 28 tests, all passed (venv pytest)
+**Cumulative:** mechanism #532 logged; 28620 tests across 860 test files (authoritative pytest-collected; README synced, --check passes).
+
+---
 #531 Type E: Podcast Sentiment 29th Verification - Guilty Feminist 498 hold, EHE 26-day hold, Attention Sphere 29th no-match, NEW Jezebel press surface (LED-loophole adversarial register) - Sep 5 2026 03:00 PDT
 
 **Date:** 2026-09-05 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 530 D -> 531 E)
