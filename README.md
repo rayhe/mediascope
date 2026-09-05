@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28653 | Across 861 test files |
+| Tests | 28684 | Across 862 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28653 tests** across 861 test files, each covering a different analytical capability:
+MediaScope has **28684 tests** across 862 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1374,6 +1374,9 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_529_google_canada_c18_100m_meta_zero_sep05_1am.py` | 21 | Type C #529: Canada Online News Act (C-18) - Google C$100M/yr publisher dependency (CJC exemption, C$22.19M to 108 publishers by Apr 2025, C$55.2M to 338 by Jul 2025) vs Meta zero-payment news block - same-market natural experiment, first dedicated C-18 mechanism; coverage-tone prediction explicitly deferred to Type A follow-up - Sep 5 2026 01:00 PDT |
 | `test_type_d_530_count_gate_and_scorer_verification_sep05_2am.py` | 17 | Type D #530: count-gate false-STALE incident fix (venv auto-detect, loud fallback warning, 300s timeout) + scorer cross-mechanism consistency (#527/#528 engine reproduces manual illustrative deltas, all-quantitative-delta sign consistency, bootstrap determinism) + doc-sync ratchet (#529 rows added, #526 class count 9→8) - Sep 5 2026 02:00 PDT |
 | `test_type_e_531_podcast_sentiment_twenty_ninth_verification_sep05_3am.py` | 38 | Type E #531: podcast sentiment 29th verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand this run), EHE 26-day hold with feminist.org + sifted.eu secondary items verified already-in-corpus NOT new campaigns, Attention Sphere 29th no-match (circular GitHub rejection, nonprofit confirmed), NEW Jezebel press surface (LED-loophole adversarial entity-selective register, -6/10 MANUAL ILLUSTRATIVE, snippet-bounded), secondary citations not independent surfaces - Sep 5 2026 03:00 PDT |
+| `test_type_a_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05_4am.py` | 28 | Type A #532: WSJ x OpenAI Astra-cycle vs Meta settlement-cycle - first empirical test of #519 dual-deal symmetric-softening prediction (OpenAI avg -0.20 vs Meta avg -0.275, delta -0.075 MANUAL ILLUSTRATIVE n.s.); wsj.com paywalled, all four articles excerpt-bounded; rogue-AI window contradiction documented - Sep 5 2026 04:00 PDT |
+| `test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py` | 33 | Type B #533: Keach Hagey (WSJ) matched-story-type symmetry - Meta Wynn-Williams lawsuit (-0.35) vs OpenAI state-AG investigation (-0.30), delta -0.05 MANUAL ILLUSTRATIVE n.s.; mismatched-type gap (Astra -0.15) is genre artifact; co-byline dilution confounder; extends #532/#32 from publication to reporter level - Sep 5 2026 05:00 PDT |
+| `test_type_c_534_dotdash_meredith_openai_sep05_6am.py` | 31 | Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - first dedicated DDM mechanism; earliest Lightcap-counterparty publisher deal (corrects #489/#494/#499/#504/#514 mechanism-order sequence); $16M/yr fixed + variable structure (Adweek), quarterly ~$4M in licensing line (also Apple News+); D/Cipher ad-tech leg (contrast Hearst #489 no-ad-tech); Lifewire consumer-tech review beat exposure (rigorous product reviews licensed), PCMag-is-Ziff-Davis boundary; no coverage-tone claim, Type A/B follow-ups flagged - Sep 5 2026 06:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
