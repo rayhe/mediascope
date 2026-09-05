@@ -45,6 +45,18 @@ revenue_relationships:
   scope: US and UK content for Meta AI training and retrieval. Archives included.
   source_url: https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
   verified: true
+- partner: Microsoft
+  type: ai_licensing
+  value: '$5,000 per title (50/50 author/publisher split), 3-year term, aggregate undisclosed'
+  signed: November 2024
+  scope: 'HarperCollins backlist nonfiction licensed for training an undisclosed Microsoft AI model. Author opt-in required;
+    Microsoft selects titles; output capped at 200 consecutive words or 5% of book text; no new-book generation. First Big
+    Five publisher AI licensing deal. Microsoft identity is Bloomberg-reported via anonymous sources, never officially confirmed
+    (HarperCollins confirmed only a technology company; Microsoft declined to comment).'
+  source_url: https://www.eweek.com/news/harpercollins-books-train-microsoft-ai-models/
+  verified: true
+  notes: 'Fourth AI revenue leg for the News Corp owner alongside OpenAI (news licensing), Meta (news licensing), and Anthropic
+    (copyright settlement). Mechanism 524 in competitor-entities.yaml.'
 - partner: Anthropic
   type: settlement_revenue
   value: Expected share of $1.5B class-action settlement
@@ -55,7 +67,8 @@ revenue_relationships:
   source_url: https://www.marketbeat.com/earnings/reports/2026-8-5-news-co-stock-1/
   verified: true
   notes: 'Makes News Corp the FIRST publisher receiving revenue from THREE major AI companies simultaneously: OpenAI (licensing),
-    Meta (licensing), Anthropic (settlement).'
+    Meta (licensing), Anthropic (settlement). With the Microsoft/HarperCollins book-licensing leg (Nov 2024), the owner-level
+    count is FOUR - the only tracked-publication owner collecting AI revenue from four labs through four distinct channels.'
 - partner: Apple
   type: news_distribution
   value: undisclosed
@@ -256,6 +269,15 @@ competitor_relationships:
         $50M/yr and Apple News+ active, Meta deal NOT yet signed ($0).
         By Jun 2026, Meta deal active but newest (4 months). Persistent
         Meta dismissal despite market data contradicting it.'
+  microsoft:
+    financial_tie: licensing
+    estimated_value: $5,000 per title (50/50 author/publisher), 3-year term, aggregate undisclosed
+    direction: receiving
+    description: HarperCollins book-licensing deal (Nov 2024) for training an undisclosed Microsoft AI model. Author opt-in
+      required; Microsoft selects titles; first Big Five publisher AI licensing deal. Microsoft identity Bloomberg-reported
+      via anonymous sources, never officially confirmed. Fourth AI revenue leg for the News Corp owner (mechanism 524).
+    source_url: https://www.eweek.com/news/harpercollins-books-train-microsoft-ai-models/
+    coverage_prediction: softer
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)

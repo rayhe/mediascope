@@ -2643,6 +2643,76 @@ entities:
       - https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
       - https://www.medianama.com/2024/10/223-news-corp-sues-perplexity-ai-copyright-infringement-seeks-150k-per-violation/?trk=article-ssr-frontend-pulse_little-text-block
       research_method: browser.search this run (3 query sets, verbatim full-URL listings); all items via search-result excerpts, second-hand and marked bounded in-mechanism; per the iteration-492 rule, no zero-coverage claims
+    mechanism_524_newscorp_microsoft_harpercollins_quadruple_ai_revenue:
+      mechanism_name: 'News Corp x Microsoft HarperCollins Book Licensing (Nov 2024) - Quadruple-AI-Revenue Owner: OpenAI + Meta + Microsoft + Anthropic Settlement'
+      mechanism_id: 524
+      iteration: 524
+      rotation: 'Type C'
+      date_analyzed: '2026-09-04'
+      time_pdt: '20:00'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      microsoft_harpercollins_deal:
+        break_date: '2024-11-18'
+        broken_by: '404 Media - HarperCollins confirmed a deal with an unnamed technology company for select nonfiction AI training with author opt-in'
+        identity_attribution: 'Bloomberg, 2024-11-19 (anonymous sources): the technology company is Microsoft, training an undisclosed new AI model; Microsoft declined to comment'
+        attribution_caveat: 'Microsoft identity is Bloomberg-reported via anonymous sources and was never officially confirmed by either party; HarperCollins confirmed only a technology company'
+        term_years: 3
+        per_title_payment: '$5,000 per nonfiction title, split 50/50: $2,500 to the consenting author, $2,500 to HarperCollins'
+        author_opt_in: 'required - authors must opt in (affirmative consent); Microsoft selects which titles are offered; non-participants are excluded from the training set and receive no payout; deal does not count against existing advances'
+        corpus_scope: 'backlist nonfiction, select titles only (Microsoft-curated)'
+        output_guardrails: 'no more than 200 consecutive words and/or 5 percent of a book text in model output; no new-book generation; pledge not to scrape text from piracy websites'
+        first_big_five: 'first Big Five publisher to sign an AI licensing deal (Sherwood)'
+        author_reactions:
+        - 'Daniel Kibblesmith (Bluesky): called the offer abominable; posted his agent email showing a fixed $2,500 per title for the three-year term'
+        - 'Alice Robb (Bloomberg, Feb 2025): confirmed her 2018 nonfiction book Why We Dream was offered under the Microsoft agreement'
+      quadruple_revenue_frame:
+        leg_1_openai: 'news licensing, $250M over 5 years (approx $50M per year), May 2024 - mechanism 519; the OpenAI deal explicitly EXCLUDES HarperCollins'
+        leg_2_meta: 'news licensing, up to $50M per year for at least three years, Mar 2026 - mechanism 519'
+        leg_3_microsoft: 'book licensing via HarperCollins, Nov 2024, per-title $5K split - THIS mechanism; aggregate deal value undisclosed'
+        leg_4_anthropic: 'settlement revenue share of the $1.5B Bartz v. Anthropic class action (final approval Jul 20 2026) - news-corp.yaml revenue_relationships; Thomson on the Q4 FY2026 call'
+        status: 'News Corp is the first and only tracked-publication owner receiving AI revenue from FOUR major AI companies through four distinct channels: two news-licensing deals, one book-licensing deal, one copyright settlement'
+        division_separation: 'legs 1, 2 and the Perplexity suit sit in the Dow Jones news division; leg 3 sits in the HarperCollins book-publishing division; leg 4 is publisher-side settlement revenue'
+      voluntary_vs_involuntary_pricing:
+        microsoft_voluntary_rate: 'approx $2,500 per book to the author for a forward-looking, opt-in, three-year training license with output guardrails'
+        anthropic_settlement_rate: 'approx $3,000 per work in the Bartz class for past unlicensed copying, court-supervised, no opt-in'
+        illustrative_note: 'comparison is illustrative, not apples-to-apples: different rights bundles (prospective license vs retrospective settlement), different corpora (opt-in backlist vs piracy-library class), different payers; it bounds voluntary-vs-involuntary price discovery for the same underlying asset class'
+      woo_and_sue_extension:
+        thomson_doctrine: 'woo and a sue strategy - a discount for those who hand themselves in, a penalty for those that resist (Morgan Stanley TMT conference, Mar 2026; mechanism 519)'
+        woos: 'OpenAI (news license), Meta (news license), Microsoft (book license via HarperCollins)'
+        sues: 'Perplexity AI (Dow Jones + NY Post, SDNY, Oct 2024)'
+        irony: 'Microsoft is the co-defendant alongside OpenAI in NYT v. Microsoft/OpenAI (the NYT has spent nearly $30M on that case per Adweek Aug 2026), yet News Corp collects Microsoft money through its book division while its news division sues a different AI firm'
+      prediction_for_tracked_coverage:
+        text: 'as the only quadruple-revenue owner in the tracked set, the mechanism predicts symmetric softening incentives toward OpenAI, Meta, AND Microsoft for WSJ coverage, vs harder or neutral registers toward no-deal entities (Google, Amazon, xAI, Perplexity); Anthropic sits in a distinct adversarial slot (settlement counterparty Thomson publicly celebrates)'
+        transmission_caveat: 'the Microsoft leg sits in HarperCollins, a separate division from the Dow Jones newsroom - owner-level incentive transmission to WSJ tech coverage is more attenuated for this leg than for the Dow Jones legs'
+        control_note: 'the existing repo finding that the equal $50M OpenAI and Meta legs produced cultural-not-financial framing differences (news-corp.yaml known_conflicts severity_framing_inversion) bounds how much any single leg can explain'
+      extends: '519 (News Corp dual-payer baseline and woo-and-sue doctrine); 509 (Anthropic zero-deal posture plus $1.5B Bartz settlement); 489 (Hearst dual-payer companion)'
+      correlation_not_causation: true
+      is_significant: false
+      statistical_scope: 'qualitative structural mapping only'
+      tone_scores: 'NOT_SCORED'
+      p_value: 'NOT_CALCULATED'
+      ranked_confounders:
+        strong:
+        - 'Microsoft identity never officially confirmed - rests on Bloomberg anonymous-source reporting; Microsoft declined comment; HarperCollins confirmed only a technology company'
+        - 'owner-newsroom separation: the deal sits at HarperCollins corporate level; WSJ newsroom editorial independence may attenuate or null the incentive transmission, especially for a book-division deal'
+        moderate:
+        - 'aggregate deal value undisclosed - per-title $5K with unknown title count and unknown opt-in rate could be small in dollar terms next to the $50M per year news legs'
+        - 'book-content vs news-coverage mismatch: the Microsoft leg licenses books, not journalism - its relevance to news-coverage incentives is indirect'
+        weak:
+        - 'the fiction-title offer to Kibblesmith suggests the select-nonfiction scope had exceptions, muddying the corpus description'
+        - 'the Sherwood tri-company AI-news-features claim (Microsoft partnered with Reuters, Hearst, Axel Springer) is a secondary summary, not deal text'
+      source_urls:
+      - 'https://www.computerworld.com/article/3619928/has-microsoft-finally-agreed-to-pay-for-intellectual-property-to-train-its-genai-tools.html'
+      - 'https://www.emarketer.com/content/microsoft-harpercollins-sign-ai-licensing-deal--author-opt-in-still-required'
+      - 'https://www.eweek.com/news/harpercollins-books-train-microsoft-ai-models/'
+      - 'https://www.medianama.com/2024/11/223-microsoft-inks-deal-harpercollins-train-ai-books/'
+      - 'https://www.idaireland.fr/latest-news/insights/harpercollins-pens-deal-with-microsoft-to-train-ai-on-its-books'
+      - 'https://www.wizcase.com/news/microsoft-partners-with-harpercollins-for-nonfiction-ai-training/'
+      - 'https://sherwood.news/snacks/tech/harpercollins-will-let-microsoft-license-some-of-its-authors-books-for-ai/'
+      - 'http://musically.com/2025/02/10/author-reveals-more-details-on-harpercollins-ai-deal-royalties/'
+      - 'https://www.adweek.com/media/anthropic-content-licensing-lawsuits-publishers/'
+      research_method: 'browser.search this run (2 query sets, verbatim full-URL listings); all items via search-result excerpts, second-hand and marked bounded in-mechanism; per the iteration-492 rule, no zero-coverage claims'
   anthropic:
     display_name: Anthropic
     aliases:

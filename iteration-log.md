@@ -1,3 +1,41 @@
+#524 Type C: News Corp x Microsoft HarperCollins Book Licensing (Nov 2024) - Quadruple-AI-Revenue Owner - Sep 4 2026 20:00 PDT
+
+**Date:** 2026-09-04 20:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 523 B -> 524 C)
+**Type:** C - Financial Incentive Mapping (extends #519's News Corp dual-payer mechanism to a fourth AI revenue leg)
+
+**Finding:** News Corp is the first and only tracked-publication owner receiving AI revenue from FOUR major AI companies through four distinct channels:
+1. OpenAI news licensing ($250M/5yr, May 2024) - mechanism 519; explicitly EXCLUDES HarperCollins
+2. Meta news licensing (up to $50M/yr, Mar 2026) - mechanism 519
+3. Microsoft book licensing via HarperCollins (Nov 2024, per-title $5K split) - THIS mechanism (524)
+4. Anthropic settlement share of $1.5B Bartz v. Anthropic (approved Jul 20 2026)
+
+**Microsoft x HarperCollins deal (researched this run, 2 browser.search query sets, verbatim URLs):**
+- 404 Media broke it 2024-11-18: HarperCollins confirmed a deal with an unnamed technology company for select nonfiction AI training, author opt-in
+- Bloomberg 2024-11-19 (anonymous sources): the company is Microsoft, training an undisclosed new AI model; Microsoft declined to comment
+- Terms: 3-year license; $5,000/title split 50/50 ($2,500 author + $2,500 HarperCollins); author opt-in required; Microsoft selects titles; backlist nonfiction only; output capped at 200 consecutive words and/or 5% of book text; no new-book generation; pledge not to scrape piracy sites
+- First Big Five publisher to sign an AI licensing deal (Sherwood)
+- Author reactions: Daniel Kibblesmith called it 'abominable' (Bluesky); Alice Robb (Bloomberg Feb 2025) confirmed her 2018 book Why We Dream was offered
+
+**Key caveats (all in-mechanism as strong confounders):**
+- Microsoft identity is Bloomberg-reported via anonymous sources, NEVER officially confirmed by either party
+- Book-division deal: owner-to-WSJ-newsroom incentive transmission is attenuated vs the Dow Jones news legs
+- Voluntary $2,500/book (Microsoft) vs involuntary $3,000/work (Anthropic settlement) comparison is illustrative only - different rights bundles, corpora, payers
+
+**Woo-and-sue extension:** Thomson's stated doctrine now reads: woo OpenAI/Meta/Microsoft, sue Perplexity. Irony: Microsoft is the co-defendant alongside OpenAI in NYT v. Microsoft/OpenAI (NYT has spent nearly $30M per Adweek Aug 2026), yet News Corp collects Microsoft money through its book division while its news division sues a different AI firm.
+
+**Prediction (structural, unscored):** symmetric softening incentives toward OpenAI, Meta, AND Microsoft for WSJ vs no-deal entities; Anthropic in a distinct adversarial slot (settlement counterparty Thomson publicly celebrates). Bounded by the existing repo finding that equal $50M OpenAI/Meta legs produced cultural-not-financial framing differences.
+
+**New Type C files:** `tests/test_type_c_524_newscorp_microsoft_harpercollins_quadruple_sep04_8pm.py` - 21 tests, all passing (1 initial failure fixed: author_opt_in scalar lacked the literal "opt in", YAML corrected and re-validated). YAML insertion validated by re-parse with leaf-type/value assertions; all scalars single-quoted per AGENTS.md rule; no mangle.
+
+**Profile updates:** `profiles/news-corp.yaml` - added Microsoft/HarperCollins entry to revenue_relationships (4th AI leg); updated Anthropic note from THREE to FOUR; added microsoft to competitor_relationships.
+
+**Artifact readiness:** No analysis.json update warranted. Structural mapping only; correlation not causation; is_significant false.
+
+**Rotation Transparency:** Previous entry #523 Type B at 19:00 PDT Sep 4 2026 (commit 2eae0ce verified present via git log and git ls-remote HEAD match before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C.
+
+**Novelty Verification:** Zero mechanism_name containing HarperCollins in competitor-entities.yaml or competitor-coverage-research.yaml (grep verified); no Type C commit with HarperCollins in title (git log --grep verified); zero test_type_c_524 files on disk before this run (glob verified).
+
+---
 #522 Type A: WSJ x Perplexity Sue-Side Register - Woo-and-Sue Prediction Directionally Supported (delta -0.125, p 0.154 n.s.) - Sep 4 2026 17:00 PDT
 
 **Date:** 2026-09-04 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 521 E -> 522 A)
