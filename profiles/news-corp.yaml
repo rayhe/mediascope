@@ -2295,6 +2295,132 @@ journalist_profiles:
       - "https://www.wsj.com/tech/ai/meta-ai-model-hacked-outside-company-adding-to-concerns-over-rogue-bots-dd5f6e45"
     test_file: "tests/test_georgia_wells_cross_entity.py"
     test_count: 28
+- name: Keach Hagey
+  current_role: senior_reporter
+  publication: The Wall Street Journal
+  beat: AI companies, OpenAI, technology business
+  background: >
+    Keach Hagey is a Wall Street Journal reporter covering AI companies with a
+    focus on OpenAI. She authored 'The Optimist: Sam Altman, OpenAI, and the
+    Race to Invent the Future' (2025), called 'a wonder of fair-minded
+    investigation' by Pulitzer winner Steve Coll. Her bylines span entity
+    boundaries: she co-authors OpenAI safety and governance coverage AND Meta
+    legal-accountability coverage, making her the second WSJ dual-beat
+    cross-entity control case after Georgia Wells (mechanism 32).
+  cross_entity_coverage_analysis:
+    mechanism_id: 533
+    iteration: 533
+    iteration_type: B
+    date: '2026-09-05'
+    mechanism_name: 'Keach Hagey matched-story-type symmetry - Meta vs OpenAI legal-enforcement register'
+    key_finding: >
+      Matched-story-type symmetry at reporter level. On legal/regulatory
+      enforcement stories, Hagey's Meta register (Wynn-Williams lawsuit, Jun 25
+      2026) and OpenAI register (state AG investigation, Jun 13 2026) are
+      essentially symmetric: Meta MANUAL ILLUSTRATIVE -0.35 vs OpenAI -0.30,
+      delta -0.05, p_value NOT_CALCULATED, is_significant false. The larger
+      apparent gap (Meta lawsuit -0.35 vs OpenAI Astra safety eval -0.15,
+      delta -0.20) is a story-type mismatch artifact, consistent with mechanism
+      32 (Wells: register difference explained by story type, not financial
+      relationship) and iteration 532 (WSJ publication-level near-symmetry,
+      delta -0.075). Correlation not causation.
+    meta_coverage:
+      articles:
+        - title: 'Meta Tried to Silence Her. Now She''s Suing.'
+          date: '2026-06-25'
+          co_author: 'Meghan Bobrowsky'
+          topic: 'whistleblower_lawsuit'
+          tone_category: 'legal_accountability_adversarial'
+          tone_MANUAL_ILLUSTRATIVE: -0.35
+          source_url: 'https://www.wsj.com/us-news/law/meta-tried-to-silence-her-now-shes-suing-b228997c'
+          research_method: 'search_result_excerpt_bounded_sep05'
+          framing_notes: >
+            Headline assigns Meta active-aggressor role ('Tried to Silence
+            Her'); whistleblower-protagonist frame for Sarah Wynn-Williams
+            ('Careless People' memoir). Serious allegations aired high: handing
+            Chinese and US user data to the CCP for market access, sexual
+            harassment by Joel Kaplan and Sheryl Sandberg. Meta defense included
+            (Andy Stone: 'trying to use the legal process to sell books';
+            arbitrator ruled she violated her 2017 severance non-disparagement
+            clause) but positioned after the allegations. Headline accurately
+            describes the legal claim (arbitration order barred her speech),
+            which bounds the adversarial reading.
+    openai_coverage:
+      articles:
+        - title: 'OpenAI Investigated by Coalition of State Attorneys General'
+          date: '2026-06-13'
+          co_author: 'Georgia Wells'
+          topic: 'ag_investigation'
+          tone_category: 'regulatory_enforcement'
+          tone_MANUAL_ILLUSTRATIVE: -0.30
+          source_url: 'https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928'
+          framing_notes: >
+            Adversarial regulatory coverage of OpenAI co-authored with Georgia
+            Wells (see mechanism 32). State AGs investigating OpenAI data
+            practices, published despite News Corp's $250M+ OpenAI deal.
+            Closest story-type match to the Meta Wynn-Williams lawsuit piece:
+            both are legal/regulatory enforcement stories.
+        - title: 'OpenAI to Restrict Astra Model After Rating It Critical Cyber Risk'
+          date: '2026-09-02'
+          co_author: 'Sam Schechner'
+          topic: 'ai_safety_eval'
+          tone_category: 'measured_safety_reporting'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          source_url: 'https://www.wsj.com/tech/ai/openai-to-restrict-astra-model-after-rating-it-critical-cyber-risk-499b5a46'
+          research_method: 'search_result_excerpt_bounded_sep05'
+          framing_notes: >
+            Measured safety-process framing of OpenAI's own first-ever
+            'critical' cyber rating; News Corp-OpenAI disclosure present;
+            strongest critical voice is outside expert (Ladish), not the WSJ
+            editorial voice. Mismatched story type vs the Meta lawsuit piece:
+            comparing this to the Wynn-Williams piece conflates safety-eval
+            process reporting with legal-accountability reporting.
+    matched_comparison:
+      story_type: 'legal_regulatory_enforcement'
+      meta_tone_MANUAL_ILLUSTRATIVE: -0.35
+      openai_tone_MANUAL_ILLUSTRATIVE: -0.30
+      delta: -0.05
+      delta_note: 'Meta trivially harder; gap is noise-level. p_value NOT_CALCULATED per standing rule Aug 28 2026; is_significant false. NOT artifact-grade.'
+      mismatched_comparison_note: 'Meta lawsuit (-0.35) vs OpenAI Astra safety eval (-0.15) gives delta -0.20, but the two are different story types; the delta measures genre, not entity bias.'
+    financial_context: >
+      News Corp dual-AI-payer: OpenAI leg May 2024 (~$50M/yr, $250M/5yr); Meta
+      leg Mar 2026 (up to $50M/yr, 3yr). Hagey writes adversarially about BOTH
+      payers on enforcement stories (OpenAI AG investigation Jun 13; Meta
+      Wynn-Williams lawsuit Jun 25), consistent with symmetric softening or
+      with story-type-driven registers independent of the deals. Correlation
+      not causation.
+    book_context: >
+      Hagey's 2025 Altman biography ('The Optimist') represents deep OpenAI
+      insider access, the kind of access dependency that could predict softer
+      OpenAI coverage. Yet she co-authored adversarial OpenAI regulatory
+      coverage (Jun 13 AG investigation) the year after the book. Access did
+      not purchase uniformly soft coverage; enforcement stories stay
+      adversarial regardless of entity.
+    confounders_ranked:
+      strong:
+        - 'Co-byline dilution: Hagey is never sole byline in this corpus (Bobrowsky on Meta piece; Wells on OpenAI AG piece; Schechner on Astra piece). Framing decisions are shared.'
+        - 'Event gravity mismatch: Wynn-Williams allegations (CCP data handover, named-executive sexual harassment) are inherently more dramatic than an AG investigation announcement; genuine news-value difference.'
+      moderate:
+        - 'wsj.com paywalled: Wynn-Williams piece characterized from search-result excerpts only this run, explicitly bounded per iteration-492 rule.'
+        - 'Twelve-day window (Jun 13 vs Jun 25): close but not simultaneous; news cycles differ.'
+      weak:
+        - 'Book-project access: deep Altman/OpenAI access could soften OpenAI tone independent of story type; the Jun 13 adversarial piece cuts against this.'
+        - 'n=1 per side on the matched comparison; thin for a reporter-level claim.'
+    counter_evidence:
+      - 'Astra piece (-0.15) shows Hagey measured on OpenAI safety while adversarial on the Meta lawsuit (-0.35); story-type mismatch is the leading explanation, but entity-level softening cannot be ruled out from this pair alone.'
+      - 'The Jun 13 AG piece is already analyzed from Wells'' angle in mechanism 32; this entry analyzes the same article from Hagey''s angle as primary subject. Distinct subject, shared evidence.'
+      - 'The Wynn-Williams headline may simply be accurate (arbitration order literally barred her speech), so the adversarial reading of the Meta piece may overstate register asymmetry.'
+      - 'Rogue-AI window (Jul-Aug 2026) showed publication-level asymmetry (OpenAI -0.2 vs Meta -0.45) in WSJ; reporter-level symmetry in June does not generalize across windows.'
+    cross_references:
+      - 'mechanism_32_georgia_wells_dual_beat_control (same AG article, Wells angle)'
+      - 'iteration_532_wsj_dual_deal_symmetry (publication-level, Astra vs settlement window)'
+      - 'iteration_519_type_c_dual_deal_prediction'
+    distinct_from_prior: 'First Type B entry with Keach Hagey as primary subject (novelty verified: zero profile mentions of keach_hagey before this run; one iteration-log mention from #532 as co-byline only; zero test_type_b_533 files; no Type B commit with 533). Distinct from mechanism 32 (Wells primary) and iteration 532 (publication-level Type A with different article set).'
+    author: 'Kit (with Ray)'
+    correlation_not_causation: true
+    artifact_readiness: 'No analysis.json update warranted. Illustrative-only scorer output; matched-pair n=1 per side; is_significant false.'
+    test_file: 'tests/test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py'
+    research_method: 'browser.search (Hagey Meta coverage; Wynn-Williams WSJ piece; Hagey OpenAI Muck Rack portfolio); verbatim URLs from search results; Grassley Senate letter (Jul 22 2026) confirming Hagey/Bobrowsky byline; Muck Rack profile confirming Hagey bylines. wsj.com paywalled: Wynn-Williams piece excerpt-bounded.'
 journalist_cross_entity:
   joanna_stern:
     name: Joanna Stern
