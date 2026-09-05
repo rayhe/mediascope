@@ -1,3 +1,42 @@
+#543 Type B: Roose Hard Fork Late-Window Matched-Episode Framing - Zuckerberg "Anti-Doom Fantasy" vs OpenAI "Two-Week Pause", Hugging Face Open-Source Control (delta -0.525 illustrative, n.s.) - Sep 5 2026 15:00 PDT
+
+**Date:** 2026-09-05 15:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 542 A -> 543 B)
+**Type:** B - Journalist Cross-Entity Tracking (Kevin Roose, NYT tech columnist 2017-Aug 2026, Hard Fork co-host; first NUMBERED Type B on Roose)
+
+**Findings:**
+
+1. **Four consecutive Hard Fork episodes (Aug 14-Sep 4 2026) form a matched-window test** spanning Roose's NYT departure transition (announced Aug 2026 exit to launch an independent AI media venture with Casey Newton; pair signed with UTA for representation):
+   - **Aug 14: "Zuckerberg's Anti-Doom Fantasy + Finally an A.I. Detector That Works + A.I. Math"** - on Zuckerberg's essay "The Future Is for Everyone" (his positive AI vision). Title uses dismissive "Fantasy" register personalized to "Zuckerberg"; dek immediately questions credibility: "But do we think it's credible?" MANUAL ILLUSTRATIVE -0.50. Episode deks/titles cross-verified on podbean, deezer, bestpodcasts.co.uk mirrors. URL: https://www.podbean.com/podcast-detail/bv3xk-e2b35/Hard-Fork-Podcast
+   - **Aug 21: "OpenAI's Two-Week Pause + Jill Lepore on the Threat of the 'Artificial State' + Train of Thought"** - on OpenAI stopping model training to review security measures after the Hugging Face hack. Neutral-descriptive title, company-named (no "Altman's Pause"); dek extends safety-leadership framing: "Will this encourage other labs to hit the brakes too?" No credibility question, unlike the Zuckerberg essay dek one week earlier. MANUAL ILLUSTRATIVE +0.10. URL: https://zeno.fm/podcast/hard-fork/
+   - **Aug 28: "Meta Shifts the Blame + Do Data Center Bans Work? + The Final HatGPT"** - on Meta agreeing to pay up to $17.1B and make major Facebook/Instagram changes over child-safety/addiction claims. Blame-shifting verb in title; dek: "We discuss why it capitulated". MANUAL ILLUSTRATIVE -0.35. URL: https://zeno.fm/podcast/hard-fork/ (corroborated by Princeton CITP news page: https://citp.princeton.edu/news/2026/arvind-narayanan-featured-hard-fork-podcast-meta-shifts-blame-do-data-center-bans-work)
+   - **Sep 4 CONTROL: "The A.I. Mob That Attacked Hugging Face + METR's Ajeya Cotra"** - Hugging Face, an open-source AI lab, gets sympathetic victim framing (+0.25); additional reading includes "Nvidia Buys Hugging Face in $12.9 Billion Deal". This falsifies the alternative that Roose is hostile to open-source AI per se; the dismissiveness tracks Meta/Zuckerberg specifically, not the open-source thesis.
+
+2. **Persistence through the departure-transition window.** The gradient (Meta-targeted avg -0.425 vs OpenAI +0.10, delta -0.525 MANUAL ILLUSTRATIVE) persists in output post-dating the Aug 8 triple-capture analysis, consistent with professional-identity capture (AGI Chronicles book Oct 6 2026, Sydney career-defining interaction, access-dependent venture) rather than NYT institutional capture. Caveat: all four episodes remain NYT-branded Hard Fork, so the institutional/personal separation is not clean.
+
+3. **Reporter-specific, not newsroom-wide.** #538 (Cade Metz) in the same late-Aug 2026 NYT AI window showed near-symmetry (delta -0.0875). The Roose gradient is reporter-specific, which tightens rather than weakens the capture theory by relocating the mechanism from newsroom posture to individual professional identity.
+
+**Scorer (MANUAL ILLUSTRATIVE, not empirical):** Meta/Zuckerberg [-0.50, -0.35] avg -0.425 vs OpenAI [+0.10] avg +0.10: delta -0.525 (Meta side harsher). Hugging Face control +0.25 (excluded from delta). p_value NOT_CALCULATED (standing rule Aug 28 2026); cohens_d NOT_CALCULATED; ci NOT_CALCULATED; is_significant False. n=2 vs n=1 (+1 control). NOT artifact-grade. Correlation not causation.
+
+**Rotation Transparency:** Previous entry #542 Type A at 14:00 PDT Sep 5 2026 (commit 2314601 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after A is B. Selected Type B.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_b_543 files on disk before this run (glob verified); no Type B commit with 543 in the title (git log --grep verified; hits were substring matches on 403/449/386/387); no mechanism_543 key in profiles/ or tests/ (grep verified); Roose's journalists.yaml entry had no competitor_coverage block before insertion (entry lines 2088-2142 verified). Distinct from the unnumbered Aug 8 Roose Type B (commit 1149ad2, triple professional identity capture): new temporal window (Aug 14-Sep 4 output post-dating that analysis), new matched-episode data, and the new Hugging Face open-source control which falsifies the anti-open-source alternative the Aug 8 analysis did not test.
+
+**Research method:** browser.search 3 query sets (Roose/Newton venture + UTA signing; Roose Sep 2026 output; Hard Fork episode descriptions for the three titles) with verbatim full-URL listings; episode titles and deks cross-verified across podbean, zeno.fm, deezer, bestpodcasts.co.uk mirrors (NYT canonical pages not fetched). No pages opened first-hand this run; dek-bounded characterizations. Per iteration-492 rule, no zero-coverage claims.
+
+**Confounders Ranked:** STRONG: (1) titles/deks may be producer-written; Hard Fork co-hosted with Newton, so register attribution is show-level, not Roose-solo; (2) genre mismatch - a CEO vision essay naturally invites credibility-testing ("do we think it's credible?") while an operational security pause is a factual event, so the "Fantasy" frame may track essay genre, not entity; (3) the $17.1B child-safety settlement is genuinely adverse news, so blame/capitulation framing may be news-driven. MODERATE: (1) n=4, thin; tones hand-assigned; (2) all four episodes aired under NYT Hard Fork branding during the departure transition - the window does not cleanly separate NYT-institutional from personal capture; (3) "Anti-Doom Fantasy" could be read as playful, but the dek's credibility question anchors the skeptical read. WEAK: (1) Aug 28 additional reading included "Mark Zuckerberg Wants to Make Sure His Competitors Share His Pain" - a less adversarial angle inside the episode package; (2) mirror-sourced deks, not NYT canonical pages.
+
+**Strongest counterargument:** The genre-mismatch objection is load-bearing: vision essays and operational pauses are different news pegs that default to different registers. A fairer matched pair would be Zuckerberg's essay vs an Altman/Amodei vision essay, which this window does not provide. The Hugging Face control mitigates the anti-open-source alternative, but hack-victim sympathy is itself genre-default. The claim therefore stays bounded to title/dek register in a 3-week window, MANUAL ILLUSTRATIVE, correlation-only - it does not establish entity bias as the driver.
+
+**Artifact readiness:** No analysis.json update warranted (MANUAL ILLUSTRATIVE, thin n, not significant; per standing rule, below artifact-grade threshold). Follows 512/513/518/538 precedent of profile-mechanism-only data writes.
+
+**New Type B files:** `profiles/careers/journalists.yaml` gained `competitor_coverage` block on Kevin Roose's entry with `type_b_543_kevin_roose_hard_fork_late_window_matched_framing` (YAML-parsed, subtree walked with leaf-type/value assertions, no nulls, author Kit (with Ray)); `tests/test_type_b_543_kevin_roose_hard_fork_late_window_matched_framing_sep05_3pm.py` - 6 classes, 41 tests.
+
+**Verification runs (venv pytest, -p no:cacheprovider):** New #543 file: 41 passed, 0 failed (1 initial failure fixed: URL-count floor 8 -> 6 to match the mechanism's 6 http-prefixed URL fields). Targeted regression: #538 Type B + unnumbered Roose cross-entity test - 99 passed, 0 failed.
+
+**Test file:** `tests/test_type_b_543_kevin_roose_hard_fork_late_window_matched_framing_sep05_3pm.py` - 41 tests, all passed (venv pytest)
+**Cumulative:** mechanism #543 logged; 28986 tests across 871 test files (authoritative pytest-collected; README + ARCHITECTURE synced, --check passes).
+
+---
 #542 Type A: BI x Google Chase/Deficit Register vs Anthropic Aspirational - First Dedicated BI x Google Mechanism, Falsification-Family Quad Completion (delta -0.195 illustrative, n.s.) - Sep 5 2026 14:00 PDT
 
 **Date:** 2026-09-05 14:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 541 E -> 542 A)

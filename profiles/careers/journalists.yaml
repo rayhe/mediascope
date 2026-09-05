@@ -2140,6 +2140,99 @@ journalists:
   - https://adweek.com/performance-marketing/kevin-roose-leaves-new-york-times-for-new-york/
   - https://en.wikipedia.org/wiki/List_of_Brown_University_alumni
   - https://westtown.edu
+  competitor_coverage:
+    type_b_543_kevin_roose_hard_fork_late_window_matched_framing:
+      mechanism_id: 543
+      iteration: 543
+      iteration_type: 'B'
+      date: '2026-09-05'
+      type: 'Type B - Journalist Cross-Entity Tracking'
+      journalist: 'Kevin Roose'
+      publication: 'nytimes'
+      beat: 'Technology and society, AI, automation (The Shift column; Hard Fork co-host Oct 2022-Aug 2026)'
+      temporal_bound: '2026-08-14 to 2026-09-04: four consecutive Hard Fork episodes spanning the NYT departure transition'
+      goal_id: 'goal_54093bda4145'
+      job_id: 'mediascope-daily-iteration'
+      status: 'documented'
+      author: 'Kit (with Ray)'
+      finding: 'Four consecutive Hard Fork episodes (Aug 14-Sep 4 2026) spanning Roose''s NYT departure transition form a new matched-window test of the Aug 8 triple-capture analysis. (1) Zuckerberg''s pro-AI essay ''The Future Is for Everyone'' is titled ''Zuckerberg''s Anti-Doom Fantasy'' with a dek that immediately questions credibility (''But do we think it''s credible?'') - personalized to ''Zuckerberg'', dismissive ''Fantasy'' register, MANUAL ILLUSTRATIVE -0.50. (2) One week later OpenAI''s two-week training halt (a security response to the Hugging Face hack) is titled ''OpenAI''s Two-Week Pause'' with a neutral dek extending safety-leadership framing (''Will this encourage other labs to hit the brakes too?'') - company-named, no credibility question, MANUAL ILLUSTRATIVE +0.10. (3) Meta''s $17.1B child-safety settlement is titled ''Meta Shifts the Blame'' (''why it capitulated''), blame-shifting verb, MANUAL ILLUSTRATIVE -0.35. (4) CONTROL: Hugging Face, an open-source AI lab, gets sympathetic victim framing (''The A.I. Mob That Attacked Hugging Face'', +0.25), falsifying the alternative that Roose is hostile to open-source AI per se - the dismissiveness tracks Meta/Zuckerberg specifically, not the open-source thesis. Meta-targeted avg -0.425 vs OpenAI +0.10: delta -0.525 MANUAL ILLUSTRATIVE. The gradient persists through the departure-transition window, consistent with professional-identity capture (AGI Chronicles book, Sydney career-defining interaction, access-dependent venture) rather than NYT institutional capture, though all four episodes remain NYT-branded so the institutional/personal separation is not clean. Correlation not causation. NOT artifact-grade.'
+      departure_context: 'Roose announced leaving NYT in August 2026 after nine-plus years to start an independent AI-focused media venture with Casey Newton (Hard Fork co-host); the pair signed with UTA for representation in all areas. Roose: ''take the thing that makes Hard Fork work and extend it into new formats and directions.'' Newton keeps Platformer; Roose keeps the book (The AGI Chronicles, FSG, Oct 6 2026) and side projects. All four scored episodes aired under NYT Hard Fork branding during this transition.'
+      departure_sources:
+      - 'https://talkingbiznews.com/media-news/roose-newton-sign-with-talent-agency/'
+      - 'https://talkingbiznews.com/media-news/tech-columnist-roose-departing-ny-times/'
+      meta_corpus_scored:
+      - title: 'Zuckerberg''s Anti-Doom Fantasy + Finally an A.I. Detector That Works + A.I. Math'
+        date: '2026-08-14'
+        byline: 'co-host (with Casey Newton)'
+        summary: 'Hard Fork episode on Zuckerberg''s essay ''The Future Is for Everyone'' (his positive AI vision). Title uses dismissive ''Fantasy'' register personalized to ''Zuckerberg''; dek immediately questions credibility: ''But do we think it''s credible?'' Additional reading paired the essay with ''Meta Unveils an Open Version of Its Most Powerful A.I. Model'' and ''Meta Ordered to Pay $567 Million in New Mexico Child Safety Case''.'
+        dek: 'This week we''re talking about Mark Zuckerberg''s latest essay, ''The Future Is for Everyone,'' which outlines his positive new vision about the potential of A.I. But do we think it''s credible?'
+        tone: -0.5
+        url: 'https://www.podbean.com/podcast-detail/bv3xk-e2b35/Hard-Fork-Podcast'
+        url_note: 'Podbean Hard Fork listing, crawled ~7h before run; title and dek verbatim. Corroborated by deezer.com/us/show/2507892 and bestpodcasts.co.uk/podcast/hard-fork.'
+      - title: 'Meta Shifts the Blame + Do Data Center Bans Work? + The Final HatGPT'
+        date: '2026-08-28'
+        byline: 'co-host (with Casey Newton)'
+        summary: 'Hard Fork episode on Meta agreeing to pay up to $17.1B and make major Facebook/Instagram changes over child-safety/addiction claims. Title applies blame-shifting verb (''Shifts the Blame''); dek uses capitulation framing (''why it capitulated''). Guest: Princeton professor Arvind Narayanan (data-center segment).'
+        dek: 'This week, Meta agreed to pay up to $17.1 billion and make major changes to Facebook and Instagram over claims it endangered children with addictive social media platforms. We discuss why it capitulated and what it means for the entire social media industry.'
+        tone: -0.35
+        url: 'https://zeno.fm/podcast/hard-fork/'
+        url_note: 'Zeno.FM Hard Fork listing, crawled ~1d before run; title and dek verbatim. Corroborated by podbean and Princeton CITP news page.'
+      openai_corpus_scored:
+      - title: 'OpenAI''s Two-Week Pause + Jill Lepore on the Threat of the ''Artificial State'' + Train of Thought'
+        date: '2026-08-21'
+        byline: 'co-host (with Casey Newton)'
+        summary: 'Hard Fork episode on OpenAI stopping training of new models while reviewing security measures after the Hugging Face hack. Title is neutral-descriptive (''Two-Week Pause'', company-named, no personalization to Altman); dek extends safety-leadership framing: ''Will this encourage other labs to hit the brakes too?'' No credibility question, unlike the Zuckerberg essay dek one week earlier.'
+        dek: 'This week, we learned that OpenAI had stopped training new artificial intelligence models while the company reviewed its security measures. Will this encourage other labs to hit the brakes too?'
+        tone: 0.1
+        url: 'https://zeno.fm/podcast/hard-fork/'
+        url_note: 'Zeno.FM Hard Fork listing, crawled ~1d before run; title and dek verbatim. Additional reading: ''OpenAI Slows Model Training to Bolster Security After Hugging Face Hack'' (podbean listing).'
+      control_corpus_scored:
+      - title: 'The A.I. Mob That Attacked Hugging Face + METR''s Ajeya Cotra'
+        date: '2026-09-04'
+        byline: 'co-host (with Casey Newton)'
+        summary: 'CONTROL CASE. Hard Fork episode on the OpenAI-Hugging Face hack reports. Hugging Face - an open-source AI lab and Meta''s open-source ally - receives sympathetic victim framing (''Mob That Attacked''); dek treats the incident as industry-significant (''fundamentally change our understanding of what happened''). Additional reading: ''Nvidia Buys Hugging Face in $12.9 Billion Deal'', ''The Hugging Face Attack Surprised Me'', ''The Hugging Face Incident and the Road Ahead''. Falsifies the alternative that Roose''s dismissiveness tracks hostility to open-source AI per se.'
+        dek: 'This week, we''re diving into two new reports about the OpenAI-Hugging Face hack. We discuss what''s new and how they fundamentally change our understanding of what happened.'
+        tone: 0.25
+        url: 'https://www.podbean.com/podcast-detail/bv3xk-e2b35/Hard-Fork-Podcast'
+        url_note: 'Podbean Hard Fork listing, crawled ~7h before run; title, dek, and additional reading verbatim. Episode also listed on buzzsumo.com journalist profile for Kevin Roose.'
+      manual_illustrative_tones:
+        meta: [-0.5, -0.35]
+        openai: [0.1]
+        huggingface_control: [0.25]
+        meta_avg: -0.425
+        openai_avg: 0.1
+        delta: -0.525
+        note: 'MANUAL ILLUSTRATIVE only. Negative delta means the Meta/Zuckerberg side scored harsher; magnitude 0.525 over a 3-week matched window (n=2 vs n=1, plus one control). Co-hosted show; title/dek register only, no full transcripts opened. No significance claimed.'
+      statistical_discipline:
+        p_value: 'NOT_CALCULATED'
+        cohens_d: 'NOT_CALCULATED'
+        ci: 'NOT_CALCULATED'
+        is_significant: false
+        correlation_not_causation: true
+      confounders:
+        strong:
+        - 'Title/dek register may be producer-written; Hard Fork is co-hosted with Casey Newton, so register attribution is show-level, not Roose-solo.'
+        - 'Genre mismatch: a CEO vision essay naturally invites credibility-testing (''do we think it''s credible?'') while an operational security pause is a factual event; the ''Fantasy'' frame may track essay genre, not entity.'
+        - 'The $17.1B child-safety settlement is genuinely adverse news; blame/capitulation framing may be news-driven rather than entity-driven.'
+        moderate:
+        - 'n=4 episodes is thin; tones are hand-assigned MANUAL ILLUSTRATIVE.'
+        - 'All four episodes aired under NYT Hard Fork branding during the departure transition (Roose announced his August 2026 exit; final NYT episodes aired August 2026). The window does not cleanly separate NYT-institutional from personal capture.'
+        - '''Anti-Doom Fantasy'' could be read as playful rather than dismissive; the dek''s credibility question (''But do we think it''s credible?'') anchors the skeptical read.'
+        weak:
+        - 'Aug 28 additional reading included ''Mark Zuckerberg Wants to Make Sure His Competitors Share His Pain'' - a less adversarial angle present inside the episode package.'
+        - 'Episode titles/deks retrieved from podcast-directory mirrors (podbean, zeno.fm, deezer, bestpodcasts.co.uk), not NYT canonical pages; dek-bounded characterizations only.'
+      counter_evidence:
+      - 'The Hugging Face control cuts both ways: hack-victim sympathy is genre-default, so it falsifies only blanket anti-open-source hostility, not entity-specific skepticism toward Meta/Zuckerberg.'
+      - 'The OpenAI pause dek''s ''Will this encourage other labs to hit the brakes too?'' can be read as neutral industry analysis rather than leadership framing.'
+      - 'Newton co-hosts every episode; the gradient could be a show-level editorial posture rather than Roose''s individual register.'
+      - 'A fairer matched pair would be Zuckerberg''s essay vs an Altman/Amodei vision essay; this window does not provide one, so the genre-mismatch objection bounds the claim.'
+      artifact_readiness: 'No analysis.json update warranted. MANUAL ILLUSTRATIVE Type B, n=2 vs n=1 (+1 control), not significant; per standing rule, below artifact-grade threshold. Follows 512/513/518/538 precedent of profile-mechanism-only data writes.'
+      novelty: 'First numbered Type B mechanism on Kevin Roose. Zero test_type_b_543 files on disk (glob verified). No Type B commit with 543 in title (git log --grep verified; hits were substring matches on 403/449/386/387). No mechanism_543 key in profiles/ or tests/ (grep verified). Roose''s journalists.yaml entry had no competitor_coverage block before insertion (entry lines 2088-2142 verified). Distinct from the unnumbered Aug 8 Roose Type B (commit 1149ad2, triple professional identity capture): new temporal window (Aug 14-Sep 4 output, post-dating that analysis), new matched-episode data, and the new Hugging Face open-source control which falsifies the anti-open-source alternative the Aug 8 analysis did not test.'
+      research_method: 'browser.search (3 query sets: Roose/Newton venture name and UTA signing; Roose substack September 2026 Meta/OpenAI; Hard Fork episode descriptions for ''Zuckerberg''s Anti-Doom Fantasy'', ''Meta Shifts the Blame'', ''A.I. Mob That Attacked Hugging Face'') with verbatim full-URL listings; episode titles and deks cross-verified across podbean, zeno.fm, deezer, and bestpodcasts.co.uk mirrors (NYT canonical pages not fetched). No pages opened first-hand this run; dek-bounded characterizations. Per iteration-492 rule, no zero-coverage claims.'
+      cross_references:
+      - 'Unnumbered Aug 8 Roose Type B (commit 1149ad2): triple professional identity capture - this mechanism tests its persistence prediction against Aug 14-Sep 4 output in the departure-transition window'
+      - 'mechanism 24 (Type B, Casey Newton disclosure-as-inoculation paradox): co-host confound - Newton co-hosts every scored episode'
+      - '#538 (Type B, Cade Metz litigation-adversary symmetry): same late-Aug 2026 NYT AI window, near-symmetric counterexample - shows the gradient is reporter-specific, not newsroom-wide'
 - career:
   - beat: N/A (education)
     event_type: education
