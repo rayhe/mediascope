@@ -1,3 +1,41 @@
+#530 Type D: Test & Verify - Count-Gate False-STALE Fix, Scorer Cross-Mechanism Consistency, Doc-Sync Ratchet, Stale-Test Repair - Sep 5 2026 02:00 PDT
+
+**Date:** 2026-09-05 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 529 C -> 530 D)
+**Type:** D - Test & Verify (rotation A->B->C->D->E; previous entry #529 Type C at 01:00 PDT Sep 5 2026, commit 8e7a2ba verified present via git log before this run's commit)
+
+**Findings:**
+
+1. **Count-gate false-STALE incident (root-caused and fixed).** This run opened with `python3 scripts/count_stats.py --check` under the system python (no pytest installed) reporting README STALE (README=28537, actual=28382). Investigation showed the README was correct: the script's pytest-collection path failed silently under the wrong interpreter, fell back to the regex estimate (which undercounts parametrize expansions), and the --check verdict compared the authoritative README number against the estimate. Authoritative count verified via .venv/bin/python: 28537 tests collected in 32s. **Fix in scripts/count_stats.py:** new `_find_pytest_python()` auto-detects the repo .venv when sys.executable lacks pytest; collection timeout 120s -> 300s; fallback warning now states explicitly that the --check verdict is NOT authoritative. Verified: system-python `--check` now auto-detects venv and reports green. Lesson for the corpus: a verification gate that silently degrades to an estimate is worse than no gate; the estimate direction (regex undercounts) is now documented in-code.
+
+2. **Scorer cross-mechanism consistency.** Verified `calculate_asymmetry` reproduces the hand-logged MANUAL ILLUSTRATIVE deltas exactly: #527 Meta [-0.45] vs Microsoft [-0.15, 0.10, 0.25] -> engine -0.5167 = logged -0.5167; #528 Meta [0.15, -0.65] vs Apple [0.80, 0.75] -> engine -1.025 = logged -1.025 (#522 -0.125 locked in #525). All three quantitative deltas share the same sign (Meta covered harsher). #528 at n=2 vs n=2: p=0.2357 n.s. with Cohen's d=-2.5575, documenting the low-power regime the illustrative deltas live in. Bootstrap CI deterministic on #522 data (reproduces #525's (-0.225, -0.025)). Per Aug 28 2026 standing rule these remain illustrative, not empirical.
+
+3. **Doc-sync repair.** #529 shipped without per-file rows in README.md / docs/ARCHITECTURE.md (added: 21 tests, 0 classes, bare module-level functions); #526 ARCHITECTURE row claimed 9 classes for an 8-class file (fixed); README headers re-synced to 28554 tests / 858 files after this run's new file. New doc-sync ratchet tests: per-file rows must exist with true counts (covers 526-530), ARCHITECTURE #526 row must state 8 classes.
+
+4. **Stale-test repair.** `test_iteration_log_entry_present_newest_first` in the #526 file hardcoded first-entry == 526 and broke when #527-#529 landed. Repaired to assert the real invariant (leading run of recent entries in strictly descending order; #526 entry present). Note: #523's entry sits deep in the log from a historical late append, so global strict-descending does not hold; the test documents this.
+
+5. **Full suite:** attempted twice; pytest-timeout plugin absent (first attempt exited 4), second attempt showed ~180 tests passing in 5 min before termination - at that throughput 28,554 tests would take ~13h, consistent with #525's 36min-hang note. Targeted regression of the six recent/new files run instead (see below). Full-suite throughput remains a standing infra risk.
+
+**Rotation Transparency:** Previous entry #529 Type C at 01:00 PDT Sep 5 2026 (commit 8e7a2ba verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test_type_d_530 files on disk before this run (glob verified); no Type D commit with 530 in the title (git log --grep verified); _find_pytest_python novel to scripts/count_stats.py (grep verified).
+
+**Research method:** No browser research this run (Type D, code-only). All numbers reproduced locally via the repo's own engine and pytest collection.
+
+**Statistical discipline:** Scorer outputs remain MANUAL ILLUSTRATIVE per Aug 28 2026 standing rule; the new tests lock engine/manual arithmetic agreement, not empirical significance. p_value NOT_CALCULATED for #527/#528 manual deltas (unchanged).
+
+**Confounders Ranked:** N/A (Type D infrastructure run). The sign-consistency test documents direction only.
+
+**Strongest counterargument:** N/A (Type D infrastructure run).
+
+**Artifact readiness:** No analysis.json update warranted. No new asymmetry findings; infrastructure fixes and verification only, per #527 precedent.
+
+**New Type D files:** `tests/test_type_d_530_count_gate_and_scorer_verification_sep05_2am.py` - 17 tests, 4 classes.
+
+**Doc sync:** README/ARCHITECTURE per-file rows for #529 + #530; #526 class-count fix; count headers re-synced to authoritative `count_stats.py --check` (venv python) numbers: 28537/857 -> 28554/858. `count_stats.py --check` green.
+
+**
+
+
 #529 Type C: Financial Incentive Mapping - Canada Online News Act (C-18) Google C$100M/yr Publisher Dependency vs Meta Zero-Payment News Block Natural Experiment - Sep 5 2026 01:00 PDT
 
 **Date:** 2026-09-05 01:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 528 B -> 529 C)

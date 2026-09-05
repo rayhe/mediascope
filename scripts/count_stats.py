@@ -257,6 +257,26 @@ def count_tests():
     return {"test_files": file_count, "total_tests": total + extra}
 
 
+def _find_pytest_python():
+    """Return a python executable that has pytest available.
+
+    Prefers sys.executable, then falls back to the repo's .venv. The repo
+    ships without pytest on the system python, and running the gate under
+    the wrong interpreter silently degrades to the regex estimate, which
+    undercounts parametrize expansions and produces a FALSE STALE verdict
+    (incident: 2026-09-05 Type D #530 --check reported README stale when the
+    README was correct, because system python3 has no pytest).
+    """
+    import importlib.util
+
+    if importlib.util.find_spec("pytest") is not None:
+        return sys.executable
+    venv_py = os.path.join(REPO_ROOT, ".venv", "bin", "python")
+    if os.path.isfile(venv_py):
+        return venv_py
+    return sys.executable  # triggers the explicit fallback warning below
+
+
 def count_tests_pytest():
     """Count tests using pytest --collect-only (authoritative, slower).
 
@@ -269,12 +289,13 @@ def count_tests_pytest():
     test_files = glob.glob(os.path.join(test_dir, "test_*.py"))
     file_count = len(test_files)
 
+    python = _find_pytest_python()
     try:
         result = subprocess.run(
-            [sys.executable, "-m", "pytest", "--collect-only", "-q"],
+            [python, "-m", "pytest", "--collect-only", "-q", "-p", "no:cacheprovider"],
             capture_output=True,
             text=True,
-            timeout=120,
+            timeout=300,
             cwd=REPO_ROOT,
         )
         for line in result.stdout.strip().split("\n"):
@@ -286,11 +307,15 @@ def count_tests_pytest():
 
     # Fall back to regex count (warn: the regex estimate undercounts
     # parametrize expansions, so --check may report a false STALE).
-    # Always run this script with a python that has pytest (e.g.
-    # .venv/bin/python) for the authoritative collected count.
+    # This fallback is now LOUD: any --check verdict below is an estimate.
     print(
         "warning: pytest --collect-only unavailable or timed out; "
         "falling back to regex test-count estimate",
+        file=sys.stderr,
+    )
+    print(
+        "warning: --check verdict below uses the REGEX ESTIMATE and is NOT "
+        "authoritative; re-run with the repo .venv python for the exact count",
         file=sys.stderr,
     )
     return count_tests()

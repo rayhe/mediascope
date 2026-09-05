@@ -261,11 +261,18 @@ class TestSourcesAndHygiene:
 
     def test_iteration_log_entry_present_newest_first(self):
         log = LOG_PATH.read_text(encoding="utf-8")
-        first_iter = re.search(r"^#(\d+) Type", log, re.MULTILINE)
-        assert first_iter, "no iteration entry found at line start in iteration-log.md"
-        assert first_iter.group(1) == str(ITERATION), (
-            f"newest-first violated: first entry is #{first_iter.group(1)}, expected #526"
+        numbers = [int(n) for n in re.findall(r"^#(\d+) Type", log, re.MULTILINE)]
+        assert numbers, "no iteration entry found at line start in iteration-log.md"
+        # Newest-first invariant applies to the leading run of recent entries
+        # (older entries have a historical out-of-order artifact: #523 sits
+        # deep in the log from a late append). The invariant is that the most
+        # recent entries are prepended in strictly descending order.
+        # (Was: hardcoded first == 526; broke when #527-#529 landed.)
+        head = numbers[:6]
+        assert head == sorted(head, reverse=True), (
+            f"newest-first violated in recent entries: {head}"
         )
+        assert ITERATION in numbers, f"#{ITERATION} entry missing from iteration-log.md"
 
     def test_no_zero_coverage_claim(self):
         block = get_526_block()
