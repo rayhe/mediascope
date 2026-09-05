@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28986 | Across 871 test files |
+| Tests | 29016 | Across 872 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28986 tests** across 871 test files, each covering a different analytical capability:
+MediaScope has **29016 tests** across 872 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1383,6 +1383,8 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_e_536_podcast_sentiment_thirtieth_verification_sep05_8am.py` | 36 | Type E #536: podcast sentiment 30th verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand this run), EHE 26-day hold with fstoppers/Ben-Barry items verified already-in-corpus NOT new, Attention Sphere 30th no-match (nonprofit confirmed), no new press surfaces since Jezebel #531 LED-loophole piece - Sep 5 2026 08:00 PDT |
 | `test_type_a_537_guardian_meta_openai_same_day_register_asymmetry_sep05_9am.py` | 29 | Type A #537: Guardian Meta-vs-OpenAI same-day register asymmetry (Aug 18 2026 natural experiment) - deal partner in corporate-stewardship register vs $0-deal company in accountability register, severity ordering inverts, mirror-verified no-disclosure of Feb 2025 partnership, delta -0.30 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 09:00 PDT |
 | `test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py` | 52 | Type B #538: Cade Metz (NYT) litigation-adversary register symmetry - OpenAI covered in neutral launch/scoop register despite NYT lawsuit vs OpenAI; Science-desk discovery framing extends mechanism 471 to reporter level; delta -0.0875 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 10:00 PDT |
+| `test_type_b_543_kevin_roose_hard_fork_late_window_matched_framing_sep05_3pm.py` | 41 | Type B #543: Kevin Roose (NYT, Hard Fork) late-window matched-episode framing (Aug 14-Sep 4 2026) - Zuckerberg "Anti-Doom Fantasy" vs OpenAI "Two-Week Pause", Meta blame-shift vs Hugging Face open-source control; delta -0.525 MANUAL ILLUSTRATIVE n.s.; reporter-specific gradient, persistence through departure-transition window - Sep 5 2026 15:00 PDT |
+| `test_type_c_544_vox_media_microsoft_pcm_pay_per_use_leg_sep05_4pm.py` | 30 | Type C #544: Vox Media x Microsoft PCM pay-per-use leg (Feb 2026) - first dedicated Vox dual-payer architecture extending mechanism 494: OpenAI flat/undisclosed leg + PCM pay-per-use co-design leg (eight-publisher pilot, Copilot first buyer, $10M+ Microsoft publisher spend); RSL pay-per-crawl leverage leg (Nov 2025); Meta $0 - DDM #539 Meta-leg mirror; no coverage-tone claim - Sep 5 2026 16:00 PDT |
 | `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
 | `test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` | 25 | Type D #540: scorer cross-mechanism consistency extended to #537 (-0.30) and #538 (-0.0875) with engine bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p computed but not promoted - YAML keeps NOT_CALCULATED/n.s.); #539 qualitative boundary (no tone delta); 536-539 rotation-cycle adjacency guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |

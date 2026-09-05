@@ -2929,6 +2929,148 @@ entities:
       - https://www.adweek.com/media/anthropic-content-licensing-lawsuits-publishers/
       - https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/
       caution: Structural mapping only. Documents the triple-payer revenue architecture, pricing-model distinction, Google adversarial leg, and zero-deal entity set, not editorial capture. No coverage-tone claim is made.
+    mechanism_544_vox_media_microsoft_pcm_pay_per_use_leg:
+      mechanism_id: 544
+      iteration: 544
+      rotation: Type C
+      date_analyzed: '2026-09-05'
+      time_pdt: '16:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: Vox Media x Microsoft Publisher Content Marketplace Pay-Per-Use Leg (Feb 2026) - OpenAI-Plus-Microsoft Dual Payer, Meta $0, Co-Design Partner
+      type: financial_incentive_mapping
+      type_c_focus: Deal structure, pay-per-use pricing model, co-design-partner
+        status, dual-payer incentive structure (OpenAI + Microsoft), RSL pay-per-crawl
+        leverage leg, and Meta zero-deal contrast for the Vox Media x Microsoft
+        Publisher Content Marketplace leg. Extends mechanism 494 (Vox Media x OpenAI,
+        May 29 2024) into the corpus first dedicated Vox Media dual-payer architecture -
+        the owner of tracked publication The Verge now collects AI licensing revenue
+        from two Meta competitors (OpenAI flat/undisclosed + Microsoft PCM pay-per-use)
+        while Meta pays Vox $0.
+      announcement_date: '2026-02'
+      deal_structure:
+        form: Publisher Content Marketplace (PCM) - Microsoft Advertising AI content
+          licensing marketplace; publishers license premium content to AI products
+          and get paid based on how that content is used (usage-based / pay-per-use)
+        launch: announced ~Feb 2026 by Microsoft Advertising (launch coverage dated
+          ~214 days before Sep 5 2026); Microsoft used Copilot to test PCM in its
+          early stages; an invite-only publisher summit in Monaco in Sep 2025 preceded it
+        vox_role: Vox Media explicitly named as a PCM co-design partner - Microsoft
+          'codesigning PCM with companies including Verge parent Vox Media'
+        first_wave_partners: Business Insider Inc, Vox Media Inc, USA Today Co.,
+          People Inc, The Associated Press, Hearst Magazines, Conde Nast (Digiday,
+          Nikhil Kolar VP Microsoft AI interview)
+        pilot_scale: eight publishers per WSJ (~Jul 2026); Microsoft invested north
+          of $10M including on payments to publishers, expects to rise (Tim Frank,
+          corporate vice president at Microsoft)
+        first_buyer: Microsoft Copilot; Yahoo onboarding as demand partner
+        pricing_model: publishers set licensing and usage terms; usage-based reporting
+          with visibility into how content performs and where it creates most value;
+          'publishers will be paid on delivered value'
+        ownership: participation voluntary; ownership remains with publishers;
+          editorial independence stays intact per Microsoft
+      dual_payer_matrix:
+        openai_leg: May 29 2024 strategic content and product partnership (mechanism 494);
+          financial terms undisclosed; content flow plus OpenAI ad-tech extending
+          Vox Media Forte first-party data platform
+        microsoft_leg: PCM co-design partner, Feb 2026; pay-per-use; pilot-scale
+          payments within Microsoft $10M+ publisher spend
+        pricing_distinction: OpenAI flat/undisclosed leg vs PCM pay-per-use leg -
+          Vox now spans both models, the same flat-fee-plus-usage stack first
+          documented at DDM in mechanism 539 - Vogel called OpenAI 'all-you-can-eat' vs
+          PCM 'a la carte')
+        payer_nexus: both payers sit in the same corporate nexus - Microsoft has
+          invested $13.75B in OpenAI (in-corpus datum, mechanism 82) - so the two
+          legs are not fully independent incentives; the directional prediction
+          aggregates at the OpenAI-Microsoft nexus level
+      rsl_leverage_leg:
+        joined: Nov 26 2025 - Vox Media joined the Really Simple Licensing (RSL)
+          Collective AI licensing framework alongside Arena Group, BuzzFeed,
+          USA Today Co. (Digiday, Sara Guaglione)
+        structure: 50+ partners; co-founder Doug Leeds; publishers can ask AI
+          companies for pay-per-crawl or pay-per-inference fees through the RSL
+          standard; machine-readable licensing terms in robots.txt; Fastly CDN
+          enforcement that only allows agreed licensees to scrape
+        exclusivity: non-exclusive (RSL participation does not preclude direct deals)
+        role: leverage infrastructure, not a payer - RSL is an industry standard,
+          not a Meta competitor; it documents Vox publicly pursuing
+          compensation-on-use as industry norms (compare DDM Cloudflare
+          crawler-blocking in mechanism 539)
+      google_context:
+        google_showcase: Vox Media has a Google Showcase revenue tie (in-corpus datum,
+          coverage_prediction note; not re-verified this run) - Google pays Vox via
+          Showcase while Vox has no AI licensing leg with Google as of Sep 5 2026
+          (bounded)
+        ad_dependency: TechCrunch first-hand (mechanism 494) notes tech giants
+          Meta and Google rake in the lion's share of digital ad revenue - the
+          structural ad-competition driver of mechanism 127 operating at owner level
+      meta_contrast: Vox Media is absent from Meta's known AI content licensing
+        partnerships (mechanism 494 meta_contrast, Sep 3 2026); zero known AI
+        licensing or content deals between Vox Media and Meta as of Sep 5 2026;
+        this run's searches returned no Vox Media x Meta AI deal (bounded
+        search-result absence, per iteration-492 rule). The Verge's parent collects
+        AI licensing revenue from two Meta competitors and $0 from Meta - the
+        cleanest owner-level Meta-$0 asymmetry among tracked publications.
+      directional_predictions:
+        - 'Microsoft: softer (direct pay-per-use payer; incentive scales with Copilot content usage; pilot-scale but growing)'
+        - 'OpenAI: softer (flat/undisclosed leg, mechanism 494)'
+        - 'Google: mixed (Showcase revenue + ad dependency predict softer; no AI licensing leg; adversarial ad-competitor dynamics from mechanism 127)'
+        - 'Meta: harder (zero-deal; ad-competition driver; The Verge wearables coverage of Meta vs Apple/Snap is the controlled future Type A)'
+      predictions_not_findings: true
+      structural_contrasts:
+        - Mechanism 539 DDM triple-payer (OpenAI + Microsoft PCM + Meta) - Vox is
+          DDM's Meta-leg mirror - DDM collects from all three; Vox collects from the
+          same two competitors but $0 from Meta, making Vox the cleaner test of
+          the $0-deal Meta prediction
+        - Mechanism 504 Conde Nast - CN is also a PCM co-design partner with OpenAI
+          (+ Amazon, Perplexity) and $0 from Meta; both parents of tracked
+          publications (WIRED, The Verge) with dual/multi-payer stacks
+        - Mechanism 489 Hearst dual-payer (OpenAI + Amazon Rufus) - Hearst is also
+          a PCM first-wave partner, one leg short of a full multi-payer writeup
+        - Mechanism 82 publisher revenue collapse - PCM/RSL usage-priced payments
+          materialize exactly as ad supply fell up to 40% (Digiday); the dependency
+          spiral amplifies all of these legs
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: PCM payments are pilot-scale - Microsoft's $10M+ figure covers all eight pilot publishers and includes non-payment spend; per-publisher Vox amounts are undisclosed, so incentive magnitude is bounded
+      - rank: 2
+        strength: strong
+        confounder: No The Verge post-PCM coverage-tone analysis of Microsoft/Copilot exists, so no coverage effect can be asserted from this mechanism alone
+      - rank: 3
+        strength: moderate
+        confounder: The OpenAI-Microsoft $13.75B investment nexus means the two legs are not independent; treating them as a single nexus incentive is the conservative aggregation
+      - rank: 4
+        strength: moderate
+        confounder: All PCM facts this run are second-hand via search-result excerpts (no first-hand page opens); partner lists and dates are bounded to retrieved text
+      - rank: 5
+        strength: weak
+        confounder: Pay-per-use pricing may attenuate rather than strengthen capture - payment tracks delivered usage, which could reward heavily-cited critical coverage as much as favorable coverage
+      strongest_counterargument: Vox Media publicly backs industry-wide compensation standards (RSL, PCM co-design), so the deals implement stated industry norms rather than purchase favorable coverage; PCM pay-per-use is the corpus most transparent pricing structure, and usage-priced payment could reward heavily-cited critical coverage equally; Microsoft pilot spend is modest and per-publisher amounts unknown; the null (independent review standards at The Verge) predicts no tone effect.
+      cross_references:
+      - Mechanism 494 (Vox Media x OpenAI leg dedicated source; this mechanism extends its matrix, not duplicating)
+      - Mechanism 539 DDM triple-payer (Meta-leg mirror template)
+      - Mechanism 504 Conde Nast (PCM co-design + $0 Meta companion)
+      - Mechanism 489 Hearst dual-payer (PCM first-wave companion)
+      - Mechanism 82 publisher revenue collapse dependency spiral
+      - meta_ai_deals partners list (Meta $0 source datum)
+      novelty_verification:
+      - Zero Vox Media x Microsoft PCM mechanism in competitor-entities.yaml before insertion (repo grep verified)
+      - Zero Vox Media x Meta mechanism in competitor-entities.yaml before insertion (repo grep verified)
+      - Zero test_type_c_544 files on disk before this run (glob verified)
+      - No Type C commit with 544 in the title (git log --grep verified)
+      - Distinct from mechanism 494 (OpenAI leg only) and mechanism 539 (DDM, different publisher)
+      - The PCM co-design role existed only as profile notes in the-verge.yaml/wired.yaml; this is the first competitor-entities mechanism formalizing it for a tracked publication's parent
+      statistical_discipline: 'qualitative structural mapping only; correlation not causation; p_value NOT_CALCULATED; is_significant False; tone_scores NOT_SCORED'
+      source_urls:
+      - https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+      - https://www.gadgets360.com/ai/news/microsoft-publisher-content-marketplace-licensing-platform-ai-usage-introduced-10946054?pfrom=home-ndtvworld_world_gadgets&technology
+      - https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      - https://technologymag.org/microsoft-says-its-building-an-app-store-for-ai-content-licensing/
+      - http://digiday.com/media/arena-group-buzzfeed-usa-today-co-vox-media-join-rsls-ai-content-licensing-efforts/
+      - https://www.voxmedia.com/2024/5/29/24166483/vox-media-openai-strategic-content-and-product-partnership/
+      caution: Structural mapping only. Documents the Vox Media dual-payer revenue architecture, PCM pay-per-use pricing, RSL leverage infrastructure, and Meta zero-deal contrast, not editorial capture. No coverage-tone claim is made.
 
   anthropic:
     display_name: Anthropic
