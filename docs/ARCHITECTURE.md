@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28876 tests across 868 test files (all from real articles)
+├── tests/                       # 28913 tests across 869 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1130,6 +1130,7 @@ mediascope/
 │   ├── test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py  # Type B #533: Keach Hagey (WSJ) matched-story-type symmetry - Meta lawsuit -0.35 vs OpenAI AG probe -0.30, delta -0.05 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 05:00 PDT - 33 tests, 7 classes
 │   ├── test_type_c_534_dotdash_meredith_openai_sep05_6am.py  # Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - earliest Lightcap-counterparty deal, $16M fixed + variable structure, D/Cipher ad-tech leg, Lifewire consumer-tech review beat exposure - Sep 5 2026 06:00 PDT - 31 tests, 6 classes
 │   ├── test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py  # Type D #535: #505 brittle novelty-guard repair (iteration-aware successor exemption) + scorer consistency for #532 (-0.075) and #533 (-0.05, n=1 vs n=1) with #527/#528 re-locks + ARCHITECTURE tree-header stale repair + 531-535 doc-sync ratchet - Sep 5 2026 07:00 PDT - 17 tests, 4 classes
+│   ├── test_type_e_541_podcast_sentiment_thirtyfirst_verification_sep05_1pm.py  # Type E #541: podcast sentiment 31st verification - Guilty Feminist 498 hold no 499, EHE 26-day hold, Attention Sphere 31st no-match, no new press surfaces - Sep 5 2026 13:00 PDT - 37 tests, 7 classes
 │   ├── test_type_e_536_podcast_sentiment_thirtieth_verification_sep05_8am.py  # Type E #536: podcast sentiment 30th verification - Guilty Feminist 498 hold no 499, EHE 26-day hold, Attention Sphere 30th no-match, no new press surfaces - Sep 5 2026 08:00 PDT - 36 tests, 7 classes
 │   ├── test_type_a_537_guardian_meta_openai_same_day_register_asymmetry_sep05_9am.py  # Type A #537: Guardian same-day register asymmetry (Aug 18 2026) - deal partner in stewardship register vs $0-deal company in accountability register, delta -0.30 illustrative n.s. - Sep 5 2026 09:00 PDT - 29 tests, 5 classes
 │   ├── test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py  # Type B #538: Cade Metz (NYT) litigation-adversary register symmetry, Science-desk discovery framing extends mechanism 471 to reporter level - Sep 5 2026 10:00 PDT - 52 tests, 7 classes
