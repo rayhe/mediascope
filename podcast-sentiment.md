@@ -9680,3 +9680,74 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_521_podcast_sentiment_twenty_seventh_verification_sep04_4pm.py - checks covering mechanism_id 521, Type E, iteration 521, date 2026-09-04 16:00 PDT, rotation 520 D -> 521 E, Guilty Feminist 498 hold no 499 twenty-seventh cycle bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE 25-day hold plus Hyperallergic arts-press first-hand verification with self-correction (previously-known outlet per repo grep, NOT a new vertical, seven-vertical count stands; both pieces opened first-hand this run: Epstein sandwich-board piece with Rhea Nayyar byline, Aug-10-era article via embedded Instagram screenshot stamp, intake-photo quote, sandwich-board Ray-Ban flagship quote, "pervert glasses" Instagram quote, News/Protest Art tags; Kylie lenticular piece with EHE spokesperson quotes "track us in the real world too" and "that's abuse", Harvard facial-recognition reference, LED-tampering update), second-hand Instagram corroboration of the Aug 10 primary post (bounded, full post still not opened), no competitor campaign across twenty-seven cycles bounded, LatestLY provenance guard standing, Attention Sphere 27th no-match with circular GitHub rejection and Purposeful Empathy secondary nonprofit corroboration not elevated, webpronews and glassalmanac snippet-bounded secondaries, MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 516, iteration-log entry present and newest-first, no Microsoft PCM novelty claim.
+
+## Iteration #526 - Fri 2026-09-04 22:00 PDT (Type E: Podcast Sentiment Tracking)
+
+**Rotation:** 525 D -> 526 E. Goal goal_54093bda4145, job mediascope-daily-iteration. Twenty-eighth verification cycle.
+
+### 1. Guilty Feminist - 498 Hold Continues, No 499 (Twenty-Eighth Verification Cycle)
+
+- **Latest episode as of Sep 4 22:00 PDT:** 498 Politics with Felicity Ward and Hannah Spencer (released 31 Aug 2026), unchanged from the Sep 4 16:00 PDT check (#521). Official episode list https://zeno.fm/podcast/the-guilty-feminist/ opened first-hand this run via browser.open; the page still shows 498 as latest, with 497 The Nuance Drought (23 Aug) and 496 Intimacy with Lena Headey (17 Aug) below it. No 499.
+- **Bounded claim:** no new episode observed as of 22:00 PDT Sep 4 2026, a 6-hour extension of the Sep 4 16:00 PDT verification (#521). Bounded absence, not universal proof of non-existence.
+- **Relevance hold:** 496-498 slate (Intimacy, Nuance Drought, Politics) contains no Meta/AI/wearables/privacy/surveillance per titles and descriptions. Titles/descriptions only, full transcripts not retrieved.
+- **Cadence note:** weekly release pattern puts the next numbered episode plausibly near Sep 7; absence of 499 four days after 498 is consistent with normal cadence, not a signal.
+- **Extension not duplicate:** this check extends #521 by 6 hours with a fresh primary open (zeno.fm opened this run); the hold finding is identical, the verification is new. Distinct from #521 (fresh open, new timestamp, 28th cycle count, new broadcast-adjacent video surface this cycle).
+
+### 2. Everyone Hates Elon - 25-Day Hold Continues (Twenty-Eighth Verification Cycle)
+
+- **Hold:** activist group, not a podcast. Aug 10 Epstein sandwich-board poster remains the last primary campaign (25 days since Aug 10 as of Sep 4); July 2026 bus-stop campaigns remain the last primary-verified campaigns via Engadget https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ and The Times https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- **Search this run:** query "Everyone Hates Elon Meta glasses campaign September 2026" returned the known corpus (July bus stops, Aug 10 Epstein poster, Hyperallergic pieces, SINGULISM) with no new primary campaign motif. Bounded search-result absence.
+- **New secondary press item this cycle (snippet-bounded, not opened):** adnews.com.au "Meta Glasses launch sparks surveillance backlash and advertiser reckoning" https://www.adnews.com.au/news/meta-glasses-launch-sparks-surveillance-backlash-and-advertiser-reckoning . Snippet covers the Kylie Jenner campaign backlash (social-adoption risk, reputation lens, gendered marketing debate). This is a secondary press item about the launch backlash, NOT a new EHE campaign; it is not attributed to EHE. Novelty: repo grep for "adnews" returned zero matches before this run, so it is a newly-logged secondary.
+- **No competitor-equivalent guerrilla campaign** against Apple, Google, Samsung, or Snap camera wearables has surfaced in any of the twenty-eight verification cycles. Bounded search-result absence.
+
+### 3. Attention Sphere - Twenty-Eighth No-Match Verification
+
+- **Result:** Sep 4 22:00 PDT quoted search for "Attention Sphere" podcast Meta glasses wearables privacy returned no matching podcast (twenty-eighth consecutive no-match verification).
+- **What results returned:** this repository's own GitHub commit and blob pages (rejected as circular evidence per established discipline, not cited as independent verification); one unrelated AEI transcript page (Rob Sherman / Shane Tews, Meta privacy migration discussion, no Attention Sphere podcast). The repo-owned pages dominating the results for the task-spec name is itself evidence of misidentification: the name surfaces the repo, not a show.
+- **Status unchanged:** task-spec name remains misidentified; Ava Smithing's actual show is Left to Their Own Devices (Toronto Star). Nonprofit identification stays secondary-only.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. New Video Surface This Cycle: IFU Primetime Live (FOX Local) - "The Creepy Reality of AI Wearables: Is Your Privacy Gone Forever?"
+
+- **NEW to the corpus:** repo grep for "ifu primetime", "isiah carey", and "creepy reality" all returned zero matches before this run. Snippet-bounded, full video not opened: https://www.youtube.com/watch?v=mYTLMe-xPcA (search stamp "Last Updated: 2 days ago", approximately Sep 2 2026).
+- **Description vocabulary (verbatim from search result):** "Meta's highly controversial AI smart glasses are raising major red flags, forcing the tech giant to scramble and issue emergency security fixes." / "could quickly turn into a digital surveillance nightmare" / "anyone on the street could be secretly recording you or running facial recognition without your consent". Hosted by Isiah Carey on IFU Primetime Live (FOX Local / YouTube), with Keisean Marshall, Senora Harris, and tech expert Patrick Jones.
+- **Bounded Meta-exclusivity:** the description as returned mentions no Samsung, Google, Apple, or Snap product; the alarm register ("emergency security fixes", "digital surveillance nightmare") is Meta-directed. Snippet-bounded, so the exclusivity claim is bounded to description content, not the full video.
+- **Cascade significance:** first mainstream broadcast-adjacent surface (FOX Local) logged adopting the Meta-exclusive alarm register, extending the cascade from activist (EHE) to indie video (Dark Web Deacon, already in corpus) to broadcast-adjacent. MANUAL ILLUSTRATIVE -7/10 toward Meta glasses (alarm register; snippet-bounded, description only).
+- **Novelty guard:** the same search returned the Dark Web Deacon Episode 307 video "META SMART GLASSES: When Everyone Becomes a Surveillance Camera" https://www.youtube.com/watch?v=lfFGZMGvhWg already logged in the corpus (prior iteration block, scored -8/10). Its "4 days ago" stamp is a search-index freshness artifact, not evidence of a new upload. Same URL, same description: not double-counted.
+
+### 5. Counterpoint: Shayeri Sarkar First-Person Owner Essay (Medium, Sep 2026)
+
+- **NEW to the corpus:** repo grep for "sarkar" returned zero matches before this run. Snippet-bounded, not opened: https://medium.com/@shayeri_sarkar/i-bought-a-pair-of-meta-ai-glasses-recently-a51988768a4d (search stamp "Last Updated: 2 days ago", approximately Sep 2 2026).
+- **Measured register (verbatim from search snippet):** owner essay, unresolved verdict ("I remain unresolved"), governance framing ("Governance has to catch up", consent/retention/inference rules for "the data belonging to people who never opted into anything at all"), self-aware privacy tradeoff ("if the benefit isn't transformative, how much privacy am I willing to trade for it?"). The glasses stay. Not alarm vocabulary.
+- **Function:** counterpoint to universal-negativity readings; the asymmetry finding is entity-selectivity of the alarm register, not unanimity of tone. MANUAL ILLUSTRATIVE 0/10 (neutral/unresolved, measured owner register; snippet-bounded).
+
+### 6. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- IFU Primetime description sentiment: MANUAL ILLUSTRATIVE -7/10 toward Meta glasses (alarm register; snippet-bounded, description only). Same bounded Meta-exclusivity as the established corpus.
+- Sarkar essay: MANUAL ILLUSTRATIVE 0/10 (neutral/unresolved, measured owner register; snippet-bounded). Counterpoint, not asymmetry evidence.
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across twenty-eight cycles: bounded absence.
+- Correlation not causation. Structural incentive not proof of editorial control. No claim of empirical significance. Do not claim empirical significance without Welch t-test plus Cohen d plus bootstrap CI on the observed corpus.
+
+### 7. Sources (verbatim full URLs from search full-URL listings or pages opened this run)
+
+- https://zeno.fm/podcast/the-guilty-feminist/ (official episode list, opened this run, 498 latest, no 499)
+- https://www.youtube.com/watch?v=mYTLMe-xPcA (IFU Primetime Live "The Creepy Reality of AI Wearables", snippet-bounded, not opened)
+- https://medium.com/@shayeri_sarkar/i-bought-a-pair-of-meta-ai-glasses-recently-a51988768a4d (Sarkar first-person essay, snippet-bounded, not opened)
+- https://www.youtube.com/watch?v=lfFGZMGvhWg (Dark Web Deacon Ep 307, already in corpus from prior iteration, not double-counted)
+- https://www.adnews.com.au/news/meta-glasses-launch-sparks-surveillance-backlash-and-advertiser-reckoning (secondary press item, snippet-bounded, not opened)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (EHE Epstein poster, Times)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE July campaign primary)
+
+### 8. Confounders (ranked)
+
+- STRONG YouTube "Last Updated" stamps are search-index freshness artifacts, not upload-date evidence (Dark Web Deacon false-freshness caught this run: same URL already in corpus, not a new upload). NOT_CALCULATED.
+- STRONG Snippet-bounded descriptions are not transcripts; register claims are bounded to description text. NOT_CALCULATED.
+- STRONG No new Guilty Feminist episode / no new EHE primary campaign motif / no Attention Sphere podcast are bounded search-result absences, not universal proofs. NOT_CALCULATED.
+- MODERATE Six-hour cadence means genuinely new developments can land between cycles; the hold findings are time-bounded to 22:00 PDT Sep 4. NOT_CALCULATED.
+- MODERATE EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence. NOT_CALCULATED.
+- WEAK MANUAL ILLUSTRATIVE scores are subjective only. NOT_CALCULATED.
+
+### 9. Test File
+
+- tests/test_type_e_526_podcast_sentiment_twenty_eighth_verification_sep04_10pm.py - checks covering mechanism_id 526, Type E, iteration 526, date 2026-09-04 22:00 PDT, rotation 525 D -> 526 E, Guilty Feminist 498 hold no 499 twenty-eighth cycle bounded official HTTPS (zeno.fm opened this run) with cadence note, EHE 25-day hold with new adnews.com.au secondary logged as NOT an EHE campaign (repo grep novelty verified), Attention Sphere 28th no-match with circular GitHub rejection and AEI unrelated result, NEW IFU Primetime Live FOX Local video surface ("The Creepy Reality of AI Wearables", snippet-bounded, -7/10 MANUAL ILLUSTRATIVE, Meta-exclusive alarm register bounded to description, first broadcast-adjacent surface in corpus), Dark Web Deacon false-freshness guard (same URL already in corpus, not double-counted), NEW Sarkar Medium counterpoint essay (measured owner register, 0/10, not asymmetry evidence), MANUAL ILLUSTRATIVE no false significance, no em dashes, HTTPS only, distinct from 521, iteration-log entry present and newest-first.

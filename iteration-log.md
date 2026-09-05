@@ -1,3 +1,32 @@
+#526 Type E: Podcast Sentiment 28th Verification - Guilty Feminist 498 hold, EHE 25-day hold, Attention Sphere 28th no-match, NEW IFU Primetime Live FOX Local video surface, Sarkar Medium counterpoint - Sep 4 2026 22:00 PDT
+
+**Date:** 2026-09-04 22:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 525 D -> 526 E)
+**Type:** E - Podcast Sentiment Tracking
+
+**Finding:** Twenty-eighth verification cycle. Three holds verified plus two newly-logged surfaces:
+1. Guilty Feminist 498 hold, no 499 (zeno.fm official list opened first-hand this run; weekly cadence, 499 plausibly near Sep 7; 6-hour extension of #521, not a duplicate).
+2. EHE 25-day hold on new primary campaign motif (Aug 10 Epstein sandwich-board remains last; July bus stops last primary-verified via Engadget + Times). New secondary press item logged: adnews.com.au "Meta Glasses launch sparks surveillance backlash and advertiser reckoning" (snippet-bounded, repo-grep novelty verified) - classified as launch-backlash press, NOT a new EHE campaign.
+3. Attention Sphere 28th no-match (quoted search returned only this repo's own GitHub pages, rejected as circular, plus one unrelated AEI transcript; misidentification stands).
+4. NEW video surface: IFU Primetime Live (FOX Local) "The Creepy Reality of AI Wearables: Is Your Privacy Gone Forever?" (~Sep 2, snippet-bounded, https://www.youtube.com/watch?v=mYTLMe-xPcA) - Meta-exclusive alarm register ("emergency security fixes", "digital surveillance nightmare"), first mainstream broadcast-adjacent surface in the corpus. MANUAL ILLUSTRATIVE -7/10, Meta-exclusivity bounded to description content. Novelty verified by repo grep (zero matches before this run).
+5. NEW counterpoint: Shayeri Sarkar first-person owner essay (Medium, ~Sep 2, snippet-bounded, https://medium.com/@shayeri_sarkar/i-bought-a-pair-of-meta-ai-glasses-recently-a51988768a4d) - measured register, unresolved verdict, governance framing; MANUAL ILLUSTRATIVE 0/10. Recorded as counterpoint to universal-negativity readings, not asymmetry evidence. Novelty verified by repo grep.
+6. False-freshness guard: the same search surfaced the Dark Web Deacon Ep 307 video (https://www.youtube.com/watch?v=lfFGZMGvhWg) already in the corpus with a "4 days ago" stamp - same URL, search-index freshness artifact, NOT double-counted.
+
+**Statistical discipline:** MANUAL ILLUSTRATIVE only; p_value/cohens_d/CI NOT_CALCULATED, is_significant False. No claim of empirical significance. All holds are bounded search-result absences; both new surfaces are snippet-bounded (descriptions, not transcripts).
+
+**Confounders Ranked:** STRONG: (1) YouTube "Last Updated" stamps are index-freshness artifacts, not upload evidence (DWD false-freshness caught); (2) snippet-bounded descriptions are not transcripts. MODERATE: (1) three holds are bounded absences; (2) six-hour cadence. WEAK: MANUAL ILLUSTRATIVE scores subjective.
+
+**Counter-evidence / limits:** The Sarkar essay shows the ecosystem is not monolithically negative; the finding is entity-selectivity of the alarm register, not unanimity. No competitor-targeted campaign or alarm-register video surfaced in twenty-eight cycles, but search methodology is bounded.
+
+**Artifact readiness:** No analysis.json update warranted. Test infrastructure + podcast tracking only; no new artifact-grade tone data.
+
+**New Type E files:** `tests/test_type_e_526_podcast_sentiment_twenty_eighth_verification_sep04_10pm.py` - 9 classes, tests covering mechanism_id 526, Type E, rotation 525 D -> 526 E, the three holds, IFU novelty (-7/10 bounded), DWD false-freshness guard, Sarkar counterpoint (0/10), statistical discipline, hygiene (HTTPS only, no em/en dashes, no truncated URLs, bounded no-competitor claims, iteration-log newest-first).
+
+**Rotation Transparency:** Previous entry #525 Type D at 21:00 PDT Sep 4 2026 (commit 6171b5d verified present via git log and git ls-remote HEAD match before this run's commit). Per rotation A->B->C->D->E, next after D is E. Selected Type E.
+
+**Novelty Verification:** Zero test_type_e_526 files on disk before this run (glob verified); no Type E commit with 526 in the title (git log --grep verified); IFU/Sarkar/adnews novelty verified by repo grep before claiming (DWD caught as already-logged, not re-counted).
+
+---
+
 #525 Type D: WSJ x Perplexity Known-Answer Reproduction + Bootstrap CI Behavior + News Corp Quadruple-Revenue Integrity + Scorer Sensitivity/Specificity at n=60 + Competitor-Citation Ratchet - Sep 4 2026 21:00 PDT
 
 **Date:** 2026-09-04 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 524 C -> 525 D)
