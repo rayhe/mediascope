@@ -7949,6 +7949,78 @@ entities:
       - https://www.fastly.com/blog/google-ai-deal-no-publisher-wanted
       - https://www.reuters.com/world/americas/google-pay-publishers-1-bln-over-three-years-their-news-2020-10-01/
       - https://pressgazette.co.uk/news/google-ai-deals-uk-publishers/
+    mechanism_529_canada_c18_google_100m_meta_zero_natural_experiment:
+      mechanism_id: 529
+      iteration: 529
+      rotation: 'Type C'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      date_analyzed: '2026-09-05'
+      time_pdt: '01:00'
+      mechanism_name: 'Canada Online News Act (C-18): Google C$100M/yr Publisher Dependency vs Meta Zero-Payment News Block - A Same-Market Natural Experiment'
+      summary: 'Bill C-18 applied to exactly two companies (threshold: C$1B annual revenue + 20M monthly users - only Google and Meta). Their responses are the cleanest financial-incentive natural experiment in the MediaScope corpus: Google negotiated an exemption by paying C$100M/yr (indexed to inflation) for 5 years to the Canadian Journalism Collective, now disbursing to ~450 Canadian news businesses (~C$13,798 per publisher FTE/yr, max single payment C$4.27M). Meta refused entirely, permanently ended news on Facebook/Instagram in Canada (Aug 2023), pays C$0, and the CRTC confirmed in Dec 2025 it will not punish Meta - monitoring only. Result: Google buys a measurable, quantified financial dependency from hundreds of Canadian publishers while Meta accumulates structural industry resentment. Same law, same market, diametrically opposed publisher financial relationships.'
+      google_leg:
+        deal_announcement: '2023-11-29'
+        annual_contribution_cad_m: 100
+        inflation_indexed: true
+        term_years: 5
+        distributor: 'Canadian Journalism Collective (CJC), federally incorporated non-profit founded May 2024 by independent publishers and broadcasters'
+        exemption_granted_by: 'CRTC (Oct 2024 decision)'
+        distribution_basis: 'full-time equivalent journalists producing original news content (2023 FTE baseline), not audience or links'
+        estimated_per_fte_publisher: 'C$13,798/yr (2,000-hour year at C$6.90/claimed hour, pre-verification estimate)'
+        estimated_per_fte_broadcaster: 'C$6,806/yr (C$3.40/claimed hour)'
+        first_disbursement: '2025-03'
+        disbursement_as_of_2025_04_23: 'C$22,193,608.09 to 108 news businesses (60 percent partial first-year payment)'
+        disbursement_as_of_2025_07_21: 'C$55.2M to 338 news businesses (partial payments, 60 percent of estimated total)'
+        eligible_applicants: '~450 of ~600 applicants'
+        max_single_payment_observed: 'C$4.27M to one publisher'
+        largest_recipients_reported: 'CBC and Postmedia (per Unifor Local 2000, Aug 2026)'
+        news_media_canada_feb_2026: 'Google is now providing C$100 million in monetary compensation annually to news businesses. These funds are being reinvested in newsrooms, and we are seeing publishers hire journalists after years of job losses. (News Media Canada submission to UK CMA, Feb 13, 2026)'
+      meta_leg:
+        news_block_announcement: '2023-06-22'
+        news_block_effective: '2023-08'
+        payments_to_canadian_publishers: 0
+        crtc_dec_2025: 'CRTC VP Broadcasting Scott Shortliffe to Meta counsel (Osler, Hoskin and Harcourt) Dec 3, 2025: Commission staff examined Meta submissions, will continue to monitor; no enforcement action - Ottawa will not punish Meta for the block'
+        govt_talks_2026: 'Canadian government in preliminary talks with Meta (Globe and Mail reporting via Social Media Today, early 2026) about restoring news under revised Act; US government seeking changes to the Act in trade negotiations'
+        meta_rationale: 'Meta stated news has no economic value to the company; users do not use the platform for news; Act misrepresents the value news outlets receive'
+      natural_experiment_structure:
+        same_law: 'Online News Act (Bill C-18), royal assent Jun 2023'
+        same_threshold: 'Only Google and Meta met the C$1B revenue + 20M user designation threshold'
+        google_response: 'exemption via C$100M/yr payment (60-day open call drew 1,400 news-business attestations)'
+        meta_response: 'total exit from news (legally compliant compliance path per Geist - companies could comply by stopping news links entirely)'
+        prediction: 'Canadian publishers receiving Google money (CBC, Postmedia, Torstar, Globe and Mail) now have a quantified, recurring financial incentive aligned with Google - the direct Meta competitor in wearables (Android XR), AI search, and ads. Meta has the opposite: C$0 and a two-year-old block that hurt independents dependent on Facebook referral traffic. NOT VERIFIED as coverage-tone delta this run - requires Type A follow-up on Canadian outlets.'
+        geist_assessment: 'Michael Geist (Oct 2024, post-CRTC decision): the law has been disastrous for many independents, who were more reliant on the lost Facebook referral traffic and now find that many of their journalists do not count for the purposes of Google money. Many now acknowledge that Bill C-18 was a major miscalculation.'
+      us_contagion: 'News/Media Alliance frames C-18 as proof of concept for US JCPA and state bills (Oregon Journalism Protection Act, Illinois Journalism Preservation Act SB 1732, NY A7178/S4401) - the Google-Canada payment model, if replicated, would extend this dependency structure into US publishers.'
+      extends:
+      - '519'
+      - '524'
+      ranked_confounders:
+        strong:
+        - 'Compelled, not voluntary: Google paid under regulatory threat of uncapped arbitration liability, not goodwill - the financial relationship is a compliance cost, which may weaken the warmth mechanism relative to voluntary deals'
+        - 'Per-publisher amounts are modest: C$13,798 per FTE is small against newsroom budgets; the max C$4.27M went to one publisher. Financial-incentive thesis predicts influence proportional to dependency, and for most recipients this is marginal'
+        moderate:
+        - 'Meta resentment is documented but diffuse: Geist documents independent-publisher harm from the block, but no tracked Canadian outlet is in the MediaScope 7-publication corpus - no within-corpus coverage comparison exists yet'
+        - 'Timing: Google payments began flowing Mar 2025; any coverage-tone effect postdates most annotated articles in the corpus. The mechanism predicts FUTURE framing gradients, testable via Type A'
+        weak:
+        - 'CJC governance disputes (2 percent admin fee approved, transparency provisions) are an administrative detail, not an editorial-influence channel'
+        - 'News Media Canada is an industry advocate with an interest in portraying the model as successful - the Feb 2026 hiring claim is self-reported'
+      correlation_not_causation: true
+      is_significant: false
+      p_value: 'NOT_CALCULATED'
+      statistical_scope: 'qualitative structural mapping only'
+      tone_scores: 'NOT_SCORED'
+      source_urls:
+      - 'https://assets.publishing.service.gov.uk/media/69b970dc635612b767a46666/News_Media_Canada.pdf'
+      - 'https://www.michaelgeist.ca/2024/10/crtc-approves-googles-100-million-online-news-act-exemption-deal/'
+      - 'http://mediapost.com/publications/article/405544/google-makes-initial-payments-to-canadian-publishe.html'
+      - 'https://www.editorandpublisher.com/stories/canadian-journalism-payments-show-proof-of-concept,255578'
+      - 'https://www.thewirereport.ca/2024/12/16/canadian-journalism-collective-announces-estimated-amounts-it-expects-to-pay-out/'
+      - 'https://unifor2000.ca/how-googles-funding-for-canadian-news-publishers-is-split-and-who-benefits-the-most/'
+      - 'https://publications.gc.ca/collections/collection_2025/crtc/BC9-44-2025-eng.pdf'
+      - 'https://jdi.queensu.ca/wp-content/uploads/2026/01/Kushniryk-Making-Platforms-Pay-%20JDI-Policy-Insight.pdf'
+      - 'https://www.reuters.com/technology/meta-end-access-news-facebook-instagram-canada-2023-06-22/'
+      - 'https://www.iphoneincanada.ca/2025/12/04/ottawa-wont-punish-facebook-for-blocking-news-links-regulator-says/'
+      - 'https://Www.socialmediatoday.com/news/canadian-government-looks-to-bring-news-content-back-to-facebook/810763/'
     cma_regulatory_neutralization:
       cma_ruling_date: '2026-06-04'
       opt_out_without_search_penalty: true
