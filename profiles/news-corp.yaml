@@ -383,6 +383,64 @@ competitor_relationships:
       pattern: WSJ disclosed its OpenAI financial conflict in the favorable Jul 31 article but did NOT disclose its Anthropic
         (settlement revenue via HarperCollins) or Meta (up to $50M/yr licensing) financial conflicts in the Aug 5 articles.
         Selective disclosure — transparency appears only alongside favorable framing.
+  perplexity:
+    financial_tie: lawsuit_active
+    estimated_value: $0 (litigated, not licensed)
+    direction: none
+    description: 'Dow Jones (WSJ parent) and NY Post sued Perplexity AI in SDNY on 2024-10-21 (case 1:24-cv-07984) for massive illegal copying into a RAG answer-engine database, verbatim reproductions, false attribution to WSJ/NY Post trademarks, up to $150,000 per infringement plus RAG-database destruction sought; July 2024 licensing-demand letter went unanswered. The sue-side pole of News Corp''s woo-and-sue strategy (Thomson, Morgan Stanley TMT Mar 2026). No licensing deal exists. #519 predicts harder or neutral registers toward no-deal entities.'
+    source_url: https://www.reuters.com/legal/murdoch-firms-dow-jones-new-york-post-sue-perplexity-ai-2024-10-21/
+    coverage_prediction: harder
+    coverage_examples:
+    - title: Snap, Perplexity Mutually End AI Deal
+      publication: Wall Street Journal
+      date: '2026-05-06'
+      reporter: Kelly Cloonan
+      tone: -0.2
+      framing: 'Business-failure register - Perplexity framed as the failing partner: the scuttled integration had boosted investor hopes for Snap profitability; Perplexity kept only a defensive statement (companies determined implementation was not the right fit). The $400M/year cash-plus-equity lifeline evaporated. No sympathetic CEO voice, no product-promise framing. First-hand verified this run via browser.open.'
+      source_url: https://www.wsj.com/business/earnings/snap-perplexity-mutually-end-ai-deal-071f83ed
+      notes: 'Dated ~121 days before Sep 4 2026 via search recency stamp; headline lead emphasizes the scuttling, not the original deal ambition.'
+      verification: first_hand_open
+    - title: Google's Big Win Is Even Bigger for Apple
+      publication: Wall Street Journal
+      date: '2026-06-01'
+      reporter: Dan Gallagher / Asa Fitch
+      tone: -0.3
+      framing: 'Quixotic-dismissal register - Perplexity appears only as the company whose unsolicited $34.5B Chrome bid "was always a long shot, and the judge dismissed it as an overreach." Editorial-voice verdict delivered with zero Perplexity rebuttal quote. Apple/Google get hero framing ("dodged a missile," "major win"); Perplexity gets the foil role. First-hand verified this run via browser.open.'
+      loaded_language:
+      - 'was always a long shot'
+      - 'the judge dismissed it as an overreach'
+      source_url: https://www.wsj.com/tech/googles-big-win-is-even-bigger-for-apple-6a4ffc40
+      notes: 'Dated ~95 days before Sep 4 2026 via search recency stamp. The irony framing (Perplexity''s existence helped stave off the payment ban) still denies Perplexity any strategic credit - it is the accidental helper, not the winner.'
+      verification: first_hand_open
+    - title: I Gave an AI Agent Access to My Passwords. Here's What Happened.
+      publication: Wall Street Journal
+      date: '2026-07-16'
+      tone: -0.4
+      framing: 'Security-threat register - Perplexity''s Comet browser agent is the vector through which researchers demonstrated a "prompt injection attack" capable of hidden password-master-key theft ("terrifying cleverness of AI in action"). Perplexity is the product under the security microscope; fixes noted but the headline association is Perplexity equals attack surface.'
+      loaded_language:
+      - 'terrifying cleverness of AI in action'
+      - 'prompt injection attack'
+      source_url: https://www.wsj.com/tech/ai/1password-for-claude-ai-agents-password-manager-111a7a8a
+      notes: 'Dated ~50 days before Sep 4 2026 via search recency stamp. Second-hand via search excerpt, bounded this run.'
+      verification: bounded_search_excerpt
+    sue_side_register_tone: -0.3
+    asymmetry_scorer_result:
+      run: type_a_522
+      target_entity: Perplexity
+      peer_entities: [OpenAI, Anthropic]
+      publication_slug: wsj
+      period: 2026-05-01 to 2026-09-04
+      target_scores: [-0.2, -0.3, -0.4]
+      peer_scores: [-0.2, -0.15]
+      target_avg_tone: -0.3
+      peer_avg_tone: -0.175
+      delta: -0.125
+      p_value: 0.1537
+      cohens_d: -1.4852
+      confidence_interval: [-0.225, -0.025]
+      is_significant: false
+      significance_interpretation: 'NOT statistically significant (Welch p 0.154 at n 3 vs 2). Directional support for the #519 woo-and-sue prediction (harder registers toward the no-deal litigated entity), large Cohen''s d offset by tiny n; CI excludes zero but Welch test is n.s. - illustrative manual scores, NOT artifact-grade.'
+      statistical_discipline: 'p_value reported honestly as n.s.; is_significant false; tone scores are MANUAL ILLUSTRATIVE; correlation not causation.'
   amazon:
     financial_tie: none
     estimated_value: $0
