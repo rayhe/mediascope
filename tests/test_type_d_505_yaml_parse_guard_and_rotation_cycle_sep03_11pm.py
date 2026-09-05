@@ -42,6 +42,20 @@ TESTS_DIR = REPO / "tests"
 
 FILE_505 = "test_type_d_505_yaml_parse_guard_and_rotation_cycle_sep03_11pm.py"
 
+_TYPE_ITER_RE = re.compile(r"^test_type_[a-e]_(\d+)_")
+
+
+def _iteration_number(name: str):
+    """Iteration number from the numbered test-file convention, else None.
+
+    The test_type_<x>_<NNN>_ convention started at iteration 410; every
+    test file added since #505 follows it (git-verified in #535: all 29
+    files added after 32ce001 are numbered). Non-numbered files are all
+    pre-numbering-era, hence strictly older than #505.
+    """
+    m = _TYPE_ITER_RE.match(name)
+    return int(m.group(1)) if m else None
+
 # Newest-first expectation, verified against the log 2026-09-03
 # (501 E 19:00 through 504 C 22:00, plus this 505 D 23:00 run).
 EXPECTED_NEWEST_FIRST = [
@@ -130,16 +144,24 @@ class TestRepoWideYamlParse:
         assert isinstance(doc, dict) and "cross_publication_findings" in doc
 
     def test_no_prior_repo_wide_yaml_guard(self):
-        # Novelty: no earlier test file globs the profiles tree for parsing.
-        # This file itself is excluded from the search.
+        # Novelty (durable form, #535): no test file from BEFORE iteration
+        # 505 globs the profiles tree for parsing. Iteration 505 itself and
+        # numbered successors (iteration >= 505 - e.g. #510's doc-sync
+        # landmine scan, committed Sep 4 in a0a1a47) are exempt: numbers are
+        # assigned sequentially, so a numbered iteration >= 505 cannot
+        # predate #505, and every non-numbered file is pre-numbering-era
+        # (before #410). The bare self-exclusion form broke the moment #510
+        # legitimately landed; per #530's repair precedent the owning file is
+        # fixed, not bypassed.
         hits = []
         for f in TESTS_DIR.glob("test_*.py"):
-            if f.name == FILE_505:
+            num = _iteration_number(f.name)
+            if f.name == FILE_505 or (num is not None and num >= 505):
                 continue
             src = f.read_text(encoding="utf-8")
             if "rglob" in src and ".yaml" in src and "safe_load" in src:
                 hits.append(f.name)
-        assert not hits, f"prior repo-wide yaml guard exists: {hits}"
+        assert not hits, f"prior (pre-#505) repo-wide yaml guard exists: {hits}"
 
 
 class TestRotationCycle501to505:

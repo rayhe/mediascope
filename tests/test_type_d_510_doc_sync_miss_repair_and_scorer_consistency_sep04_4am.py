@@ -128,12 +128,48 @@ class TestRotationCycle506to510:
 
 
 class TestGitOrderConsistency:
+    # Commit-subject formats have drifted across runs ("Type C #534",
+    # "#532 Type A", "MediaScope #531 (Type E)"), so the iteration number
+    # is parsed format-agnostically. Add new formats here, not new tests.
+    _SUBJECT_PATTERNS = (
+        re.compile(r"Type ([A-E]) #(\d+)"),
+        re.compile(r"#(\d+) Type ([A-E])\b"),
+        re.compile(r"#(\d+) \(Type ([A-E])\)"),
+    )
+
+    @classmethod
+    def _parse_subject(cls, subject):
+        for pat in cls._SUBJECT_PATTERNS:
+            m = pat.search(subject)
+            if m:
+                groups = m.groups()
+                # Pattern 1 yields (letter, number); 2 and 3 yield
+                # (number, letter) - normalize to (number, letter).
+                if pat is cls._SUBJECT_PATTERNS[0]:
+                    return int(groups[1]), groups[0]
+                return int(groups[0]), groups[1]
+        return None
+
+    def test_subject_parser_covers_known_formats(self):
+        parse = self._parse_subject
+        assert parse("Type C #534: Dotdash Meredith") == (534, "C")
+        assert parse("#532 Type A: WSJ x OpenAI") == (532, "A")
+        assert parse("MediaScope #531 (Type E): podcast") == (531, "E")
+        assert parse("Type A #527 (Sep 4 2026 23:00 PDT): WSJ") == (527, "A")
+        assert parse("docs: fix typo") is None
+
     def test_five_type_commits_precede_this_run_in_order(self):
         # REPAIRED in iteration #515 (Type D, 2026-09-04 09:00 PDT): the original
         # assertion hardcoded the 506..510-era window ([509, 508, 507, 506, 505])
         # and went stale the moment the 511-514 commits landed. The guard's intent
         # is that the most recent Type commits are consecutive and newest-first,
         # so it is now anchored to the live newest number instead of a static list.
+        # REPAIRED in iteration #535 (Type D, 2026-09-05 07:00 PDT): the #515
+        # repair's single regex (Type [A-E] #N) silently skipped the #530/#531
+        # "MediaScope #N (Type X)" and #532 "#N Type X" subject formats, so the
+        # five most recent parsed commits were [534, 533, 529, 528, 527] and the
+        # consecutiveness assertion failed on a healthy history. Parsing is now
+        # format-agnostic over all observed subject shapes.
         proc = subprocess.run(
             ["git", "log", "--format=%s", "-15"],
             cwd=REPO,
@@ -143,9 +179,9 @@ class TestGitOrderConsistency:
         )
         nums = []
         for line in proc.stdout.splitlines():
-            m = re.search(r"Type [A-E] #(\d+)", line)
-            if m:
-                nums.append(int(m.group(1)))
+            parsed = self._parse_subject(line)
+            if parsed:
+                nums.append(parsed[0])
             if len(nums) == 5:
                 break
         assert len(nums) == 5, f"fewer than five Type commits in git log: {nums}"

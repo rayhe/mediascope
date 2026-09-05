@@ -1,3 +1,42 @@
+#535 Type D: Brittle Novelty-Guard Repair (#505 Iteration-Aware), Scorer Consistency Extended to #532/#533, ARCHITECTURE Tree-Header Stale Repair - Sep 5 2026 07:00 PDT
+
+**Date:** 2026-09-05 07:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 534 C -> 535 D)
+**Type:** D - Test & Verify
+
+**Findings:**
+
+1. **#505 brittle-guard failure root-caused and repaired (pre-existing, surfaced by #533).** The #533 run reported `test_no_prior_repo_wide_yaml_guard` failing, tripped by `test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py` (committed Sep 4 in a0a1a47). Root cause: the #505 novelty guard used a bare self-exclusion (`if f.name == FILE_505: continue`), so the first legitimate successor that also globbed the profiles tree broke it. The guard's true intent was "no file from BEFORE iteration 505 does this" - repaired in the owning #505 file (per #530's repair precedent): new `_iteration_number()` helper parses the `test_type_<x>_<NNN>_` convention; the guard now exempts #505 itself and every numbered successor (iteration >= 505 - sequential numbering git-verified: all 29 test files added after 32ce001 are numbered, zero non-numbered). Non-numbered legacy files (all pre-numbering-era, before #410) and numbered files below 505 remain covered. The original novelty claim still holds on the live tree (zero pre-#505 files match). Durable lesson: novelty guards that assert repo-wide absence must be iteration-aware, not self-exclusion-only - the next legitimate successor is always one commit away.
+
+2. **Scorer cross-mechanism consistency extended to #532 and #533.** `calculate_asymmetry` reproduces the hand-logged MANUAL ILLUSTRATIVE deltas exactly: #532 Meta [-0.30, -0.25] vs OpenAI [-0.15, -0.25] -> -0.075; #533 Meta [-0.35] vs OpenAI [-0.30] -> -0.05 (n=1 vs n=1 exercises the degenerate-input path: welch returns p 1.0, cohens_d 0.0, mean-difference arithmetic still agrees). #527 (-0.5167) and #528 (-1.025) re-locked against engine drift; all four quantitative deltas share the Meta-harsher sign. Tolerance abs=1e-4 per #530's convention (one initial failure: bare pytest.approx was tighter than the 4-decimal hand rounding on #527 - fixed to the corpus convention). Per Aug 28 2026 standing rule these remain illustrative, not empirical.
+
+3. **ARCHITECTURE tree-header stale repair.** docs/ARCHITECTURE.md line 458 still claimed "28592 tests across 859 test files" after #534 synced the README to 28684/862 - the #534 run added the per-file row but missed the tree header (structural-consistency's `test_architecture_test_file_count_header` would have caught it on a full run). Repaired to the authoritative 28702/863 this run (28701 after the new #535 file landed, +1 from the #510 guard repair's new parser test). New ratchet: 531-535 per-file window must exist in both docs with true counts.
+
+4. **Two more stale-test repairs found during regression (same brittleness class).** (a) #510's `test_five_type_commits_precede_this_run_in_order` (repaired once in #515 for a hardcoded window) failed on the live tree: the #515 repair's single regex `Type [A-E] #N` silently skips the #530/#531 "MediaScope #N (Type X)" and #532 "#N Type X" subject formats, so the five most recent parsed commits were [534, 533, 529, 528, 527] - non-consecutive on a healthy history. Repaired in the owning #510 file with format-agnostic subject parsing (three observed shapes + a unit test pinning each), following the #515 precedent. (b) #534's `test_iteration_534_entry_near_top_and_descending` asserted `ids[0] == 534`, stale the moment #535 was prepended (same hardcoded-first bug #530 fixed in #526). Repaired in the owning #534 file: the durable invariant is 534 inside the leading descending run with 533 immediately after (rotation adjacency). Neither repair changed def-test counts except #510's +1 parser test (rows re-synced).
+
+**Rotation Transparency:** Previous entry #534 Type C at 06:00 PDT Sep 5 2026 (commit 79a155c verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 530 D 02:00, 531 E 03:00, 532 A 04:00, 533 B 05:00, 534 C 06:00. Selected Type D.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_d_535 files on disk before this run (glob verified); no Type D commit with 535 in the title (git log --grep verified); `_iteration_number` novel to the #505 file (grep verified); no prior scorer test covers #532/#533 deltas (grep for 532/533 in tests/test_type_d_530* returns zero - the #530 file locks 522/527/528 only).
+
+**Research method:** No browser research this run (Type D, code-only). All numbers reproduced locally via the repo's own engine and pytest collection. Git-verified the numbering-convention claim (`git diff --name-only --diff-filter=A 32ce001..HEAD -- tests/` -> 29 numbered, 0 non-numbered).
+
+**Statistical discipline:** Scorer outputs remain MANUAL ILLUSTRATIVE per Aug 28 2026 standing rule; the new tests lock engine/manual arithmetic agreement (abs=1e-4), not empirical significance. p_value NOT_CALCULATED for #532/#533 manual deltas (unchanged); #533's n=1 vs n=1 yields p 1.0 by degenerate-input design.
+
+**Confounders Ranked:** N/A (Type D infrastructure run). The sign-consistency test documents direction only.
+
+**Strongest counterargument:** N/A (Type D infrastructure run). On the guard repair: a skeptic could argue the successor-exempt form weakens the novelty claim into unfalsifiability for future files - but the claim was always time-bound ("at #505's commit, nothing prior did this"); the repair makes the time bound explicit rather than weakening it. The independent data check (zero pre-#505 matches) keeps the claim falsifiable.
+
+**Artifact readiness:** No analysis.json update warranted. No new asymmetry findings; infrastructure fixes and verification only, per #527/#530 precedent.
+
+**New Type D files:** `tests/test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py` - 4 classes, 17 tests.
+
+**Doc sync:** README + ARCHITECTURE per-file rows for #535 (17 tests, 4 classes); #510 rows bumped 15 -> 16 (new parser-format test); ARCHITECTURE tree header repaired (28592/859 -> 28702/863); all count headers re-synced to authoritative `count_stats.py --pytest` numbers: 28684/862 -> 28702/863 (+17 new file, +1 #510 repair). `count_stats.py --check` green.
+
+**Verification runs (venv pytest, -p no:cacheprovider):** New #535 file: 17 passed. Repaired #505 file: 23 passed (the previously failing guard now green). Repaired #510 file: 32 passed (git-order guard now format-agnostic; +1 new parser test). Repaired #534 file: 31 passed. Targeted regression: #526 log-order, #525, #530, #531, #532, #533 - all passed. Structural-consistency TestFileListingConsistency: 8 passed.
+
+**Test file:** `tests/test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py` - 17 tests, all passed (venv pytest)
+**Cumulative:** mechanism #535 logged; 28702 tests across 863 test files (authoritative pytest-collected; README synced, --check passes).
+
+---
 #534 Type C: Dotdash Meredith x OpenAI (May 7 2024) - Earliest Lightcap-Counterparty Deal, $16M Fixed Plus Variable Structure, D/Cipher Ad-Tech Leg, Consumer-Tech Review Beat Exposure - Sep 5 2026 06:00 PDT
 
 **Date:** 2026-09-05 06:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 533 B -> 534 C)

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 975 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28684 | Across 862 test files |
+| Tests | 28702 | Across 863 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28684 tests** across 862 test files, each covering a different analytical capability:
+MediaScope has **28702 tests** across 863 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1343,7 +1343,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_507_verge_openai_ad_monetization_register_boundary_sep04_1am.py` | 44 | Type A #507: The Verge x OpenAI ad-monetization register boundary condition - adversarial register on deal partner and Meta alike, soft register confined to Decoder access-interview genre - Sep 4 2026 01:00 PDT |
 | `test_type_b_508_kurt_wagner_meta_x_symmetric_accountability_sep04_2am.py` | 25 | Type B #508: Kurt Wagner (Bloomberg) Meta vs X symmetric accountability framing - genre-driven registers, no entity-selective softening - Sep 4 2026 02:00 PDT |
 | `test_type_c_509_anthropic_adweek_zero_deal_posture_sep04_3am.py` | 14 | Type C #509: Anthropic institutionalized zero-deal posture (Adweek Aug 26 2026) - named partnerships VP, fair-use ideological line, publisher-suit economics - Sep 4 2026 03:00 PDT |
-| `test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py` | 15 | Type D #510: #509 doc-sync miss repair audit + 506-510 rotation-cycle integrity + window data-mechanism integrity + asymmetry-scorer engine consistency audit (28 blocks, 0 violations) - Sep 4 2026 04:00 PDT |
+| `test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py` | 16 | Type D #510: #509 doc-sync miss repair audit + 506-510 rotation-cycle integrity + window data-mechanism integrity + asymmetry-scorer engine consistency audit (28 blocks, 0 violations) - Sep 4 2026 04:00 PDT |
 | `test_type_e_511_podcast_sentiment_twentyfifth_verification_sep04_5am.py` | 34 | Type E #511: podcast sentiment twenty-fifth verification - GF 498 hold 25th cycle, EHE 25-day hold, Attention Sphere 25th no-match (nonprofit identification stays secondary-only) - Sep 4 2026 05:00 PDT |
 | `test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py` | 39 | Type A #502: WIRED x Microsoft PCM adversarial boundary condition - "Massive" emissions piece after Feb 2026 deal, register cushioning vs Meta CSAM-ads comparator - Sep 3 2026 20:00 PDT |
 | `test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py` | 35 | Type B #503: Dominic Preston (The Verge) inverted privacy-vocabulary application - privacy dek on Google/Samsung glasses, straight relay on Meta Muse Spark 1.1 and Google Search Live - Sep 3 2026 21:00 PDT |
@@ -1377,6 +1377,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05_4am.py` | 28 | Type A #532: WSJ x OpenAI Astra-cycle vs Meta settlement-cycle - first empirical test of #519 dual-deal symmetric-softening prediction (OpenAI avg -0.20 vs Meta avg -0.275, delta -0.075 MANUAL ILLUSTRATIVE n.s.); wsj.com paywalled, all four articles excerpt-bounded; rogue-AI window contradiction documented - Sep 5 2026 04:00 PDT |
 | `test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py` | 33 | Type B #533: Keach Hagey (WSJ) matched-story-type symmetry - Meta Wynn-Williams lawsuit (-0.35) vs OpenAI state-AG investigation (-0.30), delta -0.05 MANUAL ILLUSTRATIVE n.s.; mismatched-type gap (Astra -0.15) is genre artifact; co-byline dilution confounder; extends #532/#32 from publication to reporter level - Sep 5 2026 05:00 PDT |
 | `test_type_c_534_dotdash_meredith_openai_sep05_6am.py` | 31 | Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - first dedicated DDM mechanism; earliest Lightcap-counterparty publisher deal (corrects #489/#494/#499/#504/#514 mechanism-order sequence); $16M/yr fixed + variable structure (Adweek), quarterly ~$4M in licensing line (also Apple News+); D/Cipher ad-tech leg (contrast Hearst #489 no-ad-tech); Lifewire consumer-tech review beat exposure (rigorous product reviews licensed), PCMag-is-Ziff-Davis boundary; no coverage-tone claim, Type A/B follow-ups flagged - Sep 5 2026 06:00 PDT |
+| `test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py` | 17 | Type D #535: #505 brittle novelty-guard repair (iteration-aware successor exemption; #510 was the tripwire) + scorer consistency extended to #532 (-0.075) and #533 (-0.05, n=1 vs n=1 degenerate path) with #527/#528 re-locks + ARCHITECTURE tree-header stale repair (28592/859 -> authoritative) + 531-535 doc-sync ratchet - Sep 5 2026 07:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

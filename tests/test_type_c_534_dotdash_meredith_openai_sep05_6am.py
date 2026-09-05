@@ -288,13 +288,21 @@ class TestIterationLog:
         text = ITERATION_LOG.read_text(encoding='utf-8')
         ids = [int(x) for x in re.findall(r'^#(\d+) Type', text, re.M)]
         assert 534 in ids
-        assert ids[0] == 534
-        # leading run of recent entries must be strictly descending (#523 sits
-        # deep in the log from a historical late append, per #530 repair note)
+        # Leading run of recent entries must be strictly descending (#523 sits
+        # deep in the log from a historical late append, per #530 repair note).
+        # REPAIRED in #535 (Type D, 2026-09-05 07:00 PDT): the original asserted
+        # ids[0] == 534 and run[:2] == [534, 533], which went stale the moment
+        # #535 was prepended. The durable invariant is that 534 sits inside the
+        # leading descending run with 533 immediately after it (rotation
+        # adjacency), wherever the run starts.
         run = []
         for i in ids:
             if run and i >= run[-1]:
                 break
             run.append(i)
         assert run == sorted(run, reverse=True)
-        assert run[:2] == [534, 533]
+        idx = run.index(534)
+        assert idx + 1 < len(run), f"534 is last in the leading run: {run[:6]}"
+        assert run[idx + 1] == 533, (
+            f"533 does not immediately follow 534 in leading run: {run[:6]}"
+        )

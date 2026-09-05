@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28592 tests across 859 test files (all from real articles)
+├── tests/                       # 28702 tests across 863 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1095,7 +1095,7 @@ mediascope/
 │   ├── test_type_a_507_verge_openai_ad_monetization_register_boundary_sep04_1am.py  # Type A #507: The Verge x OpenAI ad-monetization register boundary condition - Sep 4 2026 01:00 PDT - 8 classes, 44 tests
 │   ├── test_type_b_508_kurt_wagner_meta_x_symmetric_accountability_sep04_2am.py  # Type B #508: Kurt Wagner (Bloomberg) Meta vs X symmetric accountability framing - Sep 4 2026 02:00 PDT - 4 classes, 25 tests
 │   ├── test_type_c_509_anthropic_adweek_zero_deal_posture_sep04_3am.py  # Type C #509: Anthropic institutionalized zero-deal posture (Adweek Aug 26 2026) - Sep 4 2026 03:00 PDT - 14 bare test functions, 14 tests
-│   ├── test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py  # Type D #510: #509 doc-sync miss repair audit + scorer engine consistency audit - Sep 4 2026 04:00 PDT - 5 classes, 15 tests
+│   ├── test_type_d_510_doc_sync_miss_repair_and_scorer_consistency_sep04_4am.py  # Type D #510: #509 doc-sync miss repair audit + scorer engine consistency audit - Sep 4 2026 04:00 PDT - 5 classes, 16 tests
 │   ├── test_type_e_511_podcast_sentiment_twentyfifth_verification_sep04_5am.py  # Type E #511: podcast sentiment twenty-fifth verification - Sep 4 2026 05:00 PDT - 7 classes, 34 tests
 │   ├── test_type_a_502_wired_microsoft_pcm_adversarial_boundary_condition_sep03_8pm.py  # Type A #502: WIRED x Microsoft PCM adversarial boundary condition - Sep 3 2026 20:00 PDT - 8 classes, 39 tests
 │   ├── test_type_b_503_dominic_preston_inverted_privacy_vocabulary_sep03_9pm.py  # Type B #503: Dominic Preston inverted privacy-vocabulary application - Sep 3 2026 21:00 PDT - 7 classes, 35 tests
@@ -1129,6 +1129,7 @@ mediascope/
 │   ├── test_type_a_532_wsj_openai_astra_vs_meta_settlement_dual_deal_symmetry_sep05_4am.py  # Type A #532: WSJ x OpenAI Astra-cycle vs Meta settlement-cycle dual-deal symmetry test - delta -0.075 MANUAL ILLUSTRATIVE n.s., excerpt-bounded - Sep 5 2026 04:00 PDT - 28 tests, 6 classes
 │   ├── test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py  # Type B #533: Keach Hagey (WSJ) matched-story-type symmetry - Meta lawsuit -0.35 vs OpenAI AG probe -0.30, delta -0.05 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 05:00 PDT - 33 tests, 7 classes
 │   ├── test_type_c_534_dotdash_meredith_openai_sep05_6am.py  # Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - earliest Lightcap-counterparty deal, $16M fixed + variable structure, D/Cipher ad-tech leg, Lifewire consumer-tech review beat exposure - Sep 5 2026 06:00 PDT - 31 tests, 6 classes
+│   ├── test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py  # Type D #535: #505 brittle novelty-guard repair (iteration-aware successor exemption) + scorer consistency for #532 (-0.075) and #533 (-0.05, n=1 vs n=1) with #527/#528 re-locks + ARCHITECTURE tree-header stale repair + 531-535 doc-sync ratchet - Sep 5 2026 07:00 PDT - 17 tests, 4 classes
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation
