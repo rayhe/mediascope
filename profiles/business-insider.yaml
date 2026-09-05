@@ -330,6 +330,104 @@ competitor_relationships:
     source_urls:
       - "https://www.reuters.com/business/meta-delays-release-phoenix-mixed-reality-glasses-2027-business-insider-reports-2025-12-06/"
     verification_date: "2026-08-31"
+  google:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known Axel Springer-Google AI content licensing deal as of Sep 5 2026. Google has no content licensing with Business Insider parent. $0 direct publisher incentive, same null-tie status as Anthropic and Meta at BI."
+    coverage_prediction: "neutral_to_chase_register"
+    source_urls:
+      - "https://finance.biggo.com/news/c496b9d1-a325-4039-8083-3f37865c63d4"
+      - "https://letsdatascience.com/news/google-reportedly-tests-gemini-38-flash-internally-4de352e8"
+      - "https://www.gadgets360.com/ai/news/google-gemini-ai-ads-in-the-future-philipp-schindler-earnings-call-11434747"
+    verification_date: "2026-09-05"
+    mechanism_542_bi_google_chase_register_vs_anthropic_aspirational_sep05:
+      mechanism_id: 542
+      iteration: 542
+      iteration_type: "A"
+      date: "2026-09-05"
+      type: "Type A - Competitor Coverage Deep Dive"
+      publication: "business-insider"
+      competitor: "google"
+      publication_pair: "BI x Google"
+      comparison_entities: ["anthropic", "meta"]
+      goal_id: "goal_54093bda4145"
+      job_id: "mediascope-daily-iteration"
+      status: "documented"
+      author: "Kit (with Ray)"
+      finding: "Business Insider covers Google AI through a chase/deficit register while covering Anthropic through valuation exuberance and Meta through neutral product-execution framing, completing the BI four-entity quad (#399 OpenAI skepticism, #420 Anthropic aspirational vs Meta product-execution, #542 Google chase-deficit). Two new BI Google data points this run, both via attested secondaries (BI paywalled, excerpt-bounded, no BI-original URLs returned verbatim in search results): (1) BI scoop on Google employees testing Gemini 3.8 Flash Preview on internal Jetski platform (Aug 27 2026; attested by letsdatascience Sep 1 2026 citing an August 27 Business Insider report, biggo, archyde, itechpost; WSJ Sep 2 2026 corroborates that Business Insider previously reported the testing) frames Google as frantic and trailing: frantic cadence of the current AI race, mounting pressure on Google to close the gap with OpenAI and Anthropic, Gemini 3.5 Pro months behind schedule with a conspicuous hole at the top of Google's portfolio. (2) BI on Alphabet earnings call (early May 2026, Q1 2026 call; attested by gadgets360 in two articles): CBO Philipp Schindler says ads expected to play a key role in growing Gemini, a format that works well in AI Mode would transfer successfully to the Gemini app. Monetization and business register, growth-framed. Falsification-family interpretation: among BI's three $0-deal entities the register splits by narrative position, not financial tie. Anthropic (hype-cycle darling) gets valuation exuberance (+0.12, #420), Meta gets product-execution neutral-positive (+0.08, #399), Google (incumbent) gets chase-deficit (-0.075). No financial tie explains the Google-Anthropic split since both are $0 at BI. The Axel Springer-OpenAI licensing deal predicts OpenAI softest, but OpenAI is hardest (-0.42, #399). Beat assignment, hype-cycle position, and product stage dominate over direct licensing incentive in this window. Correlation not causation. NOT artifact-grade."
+      business_insider_google_articles:
+        - title: "Google employees testing Gemini 3.8 Flash Preview on Jetski"
+          date: "2026-08-27"
+          framing: "insider_scoop_chase_deficit"
+          key_phrases:
+            - "frantic cadence of the current AI race"
+            - "mounting pressure on Google to close the gap with OpenAI and Anthropic"
+            - "conspicuous hole at the top of Google's portfolio"
+            - "noticeably better than 3.7 Flash"
+          tone_MANUAL_ILLUSTRATIVE: -0.20
+          tone_notes: "Scoop gives Google a platform (employee says preview noticeably better than 3.7 Flash) but the company-level framing is deficit: frantic, trailing, schedule slips. Deficit register, not aspirational."
+          provenance: "BI original paywalled; no businessinsider.com URL returned verbatim in this run's search results. Attested by letsdatascience.com Sep 1 2026 (citing August 27 Business Insider report), finance.biggo.com, archyde.com, itechpost.com; corroborated by WSJ Sep 2 2026 (Business Insider previously reported that Google employees had been testing 3.8 Flash)."
+          attesting_secondaries:
+            - "https://letsdatascience.com/news/google-reportedly-tests-gemini-38-flash-internally-4de352e8"
+            - "https://finance.biggo.com/news/c496b9d1-a325-4039-8083-3f37865c63d4"
+            - "https://www.archyde.com/google-employees-test-gemini-3-8-flash-preview-amid-rapid-ai-race/"
+            - "https://www.itechpost.com/articles/237205/20260902/google-reportedly-nears-launch-gemini-38-flash-new-coding-focused-deepmind-ai-model.htm"
+            - "https://www.wsj.com/tech/ai/new-google-ai-model-said-to-narrow-gap-on-coding-ability-264c6052"
+        - title: "Google mulls ads in the Gemini AI app (Schindler earnings-call remarks)"
+          date: "2026-05-01"
+          framing: "monetization_business_register"
+          key_phrases:
+            - "ads are expected to play a key role in growing Gemini"
+            - "a format that works well in AI Mode would transfer successfully to the Gemini app"
+          tone_MANUAL_ILLUSTRATIVE: 0.05
+          tone_notes: "Neutral business register; growth-framed monetization. No deficit vocabulary; no exuberance either."
+          provenance: "BI original reported via gadgets360 (two articles, crawled ~May 2026): a Business Insider report claims that during the company's quarterly results conference call, Google's CBO Philipp Schindler said the company is open to commercials and sponsored results in the Gemini AI app. Date bounded to early May 2026 via secondary crawl metadata (127 days before Sep 5 2026); Alphabet Q1 2026 call."
+          attesting_secondaries:
+            - "https://www.gadgets360.com/ai/news/google-gemini-ai-ads-in-the-future-philipp-schindler-earnings-call-11434747"
+      corpus_comparators:
+        anthropic:
+          source: "mechanism 420 (business_insider_anthropic_valuation_hype_vs_meta_product_delay_aug31_420)"
+          article: "VCs flooding Anthropic with offers up to $800 billion valuation (2026-04-14, Ben Bergman)"
+          tone_approx: 0.12
+          framing: "valuation_exuberance"
+        meta:
+          source: "mechanism 399 (business_insider_openai_profitability_skepticism_vs_meta_product_framing_aug30_399)"
+          articles: "Meta Phoenix delay to 2027, Ray-Ban Display supply shortage, retail expansion"
+          tone_avg_MANUAL_ILLUSTRATIVE: 0.08
+          framing: "product_execution_neutral_positive"
+        openai:
+          source: "mechanism 399"
+          tone_avg_MANUAL_ILLUSTRATIVE: -0.42
+          framing: "profitability_skepticism"
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: "google"
+        peer_entity: "anthropic"
+        google_scores: [-0.20, 0.05]
+        anthropic_scores: [0.12]
+        google_avg: -0.075
+        anthropic_avg: 0.12
+        delta: -0.195
+        google_vs_meta_delta: -0.155
+        p_value: "NOT_CALCULATED"
+        cohens_d: "NOT_CALCULATED"
+        ci: "NOT_CALCULATED"
+        is_significant: false
+        methodology: "MANUAL ILLUSTRATIVE hand-assigned tones from secondary attestations of BI originals (n=2) vs corpus tone_approx values (Anthropic n=1 from #420, Meta n=3 from #399). Standing rule Aug 28 2026: no empirical significance claims from manual arrays. NOT artifact-grade."
+        illustrative_warning: "MANUAL ILLUSTRATIVE - not empirical. Do not present as empirical finding."
+      confounders_ranked:
+        strong:
+          - "Both Google pieces characterized from secondary attestations, not first-hand BI opens (BI paywalled; no BI-original URLs returned verbatim this run). Register claims bounded to retrieved text."
+          - "Thin n: Google n=2 vs Anthropic n=1 (corpus tone_approx) vs Meta n=3 (corpus). Article selection could drive the gaps."
+          - "Event-type mismatch: internal-testing scoop and earnings-call monetization are business-beat items, not matched to Anthropic's funding-news peg or Meta's product-delay peg."
+        moderate:
+          - "The Jetski scoop's deficit framing may track genuine news: WSJ independently reports scrapped 3.5 Pro candidates, flagship gap, and researcher departures (Shazeer, Dean), so deficit framing may be accurate reporting, not entity bias."
+          - "The Schindler piece is earnings-call reporting, a neutral genre; its mild positivity may be genre, not company."
+        weak:
+          - "Tone scores hand-assigned; the -0.20 on the scoop balances a positive employee quote against deficit company framing."
+      strongest_counterargument: "The chase register may be entirely news-driven rather than narrative-position-driven: Google genuinely trailed on frontier coding models in this window (WSJ independently documents scrapped 3.5 Pro candidates, the flagship hole, and high-profile researcher departures), so deficit framing is accurate reporting. And the Anthropic aspirational piece was a funding-news peg where exuberance is the genre default. The $0-deal split could be pure news-value, not hype-cycle position. Accepted as confounder, not rebutted; the claim stays bounded, correlation-only, and MANUAL ILLUSTRATIVE."
+      cross_references: [399, 420]
+      artifact_readiness: "No analysis.json update warranted. MANUAL ILLUSTRATIVE, thin n, not significant; per standing rule, below artifact-grade threshold. Follows 512/513/518 precedent of profile-mechanism-only data writes."
 
 key_journalists:
   - name: "Amanda Hoover"
