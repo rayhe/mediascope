@@ -533,6 +533,147 @@ journalists:
     cross_entity_asymmetry_score: 0.87
     asymmetry_notes: 'High asymmetry (0.87/1.0, increased from 0.82 with Aug 2026 hardware talent war evidence). Four dimensions: (1) TALENT WAR  -  same action (hiring from competitor) receives opposite frames (Meta = poaching/crisis, OpenAI = aspirational growth/joining); (2) CAMERA HARDWARE  -  Apple camera AirPods (constant visual surveillance, IR sensors) receives neutral product-evolution framing, Meta single-camera glasses receives surveillance infrastructure framing (4 surveillance terms vs 0); (3) EXECUTIVE ACCESS  -  OpenAI gets empathetic Q&A (Fidji Simo chronic illness humanized), Meta gets zero humanizing profiles; (4) DEPARTURE FRAMING  -  Meta departures = Brain Drain failure, OpenAI departures = principled ethics. New Aug 2026 evidence strengthens case: OpenAI poaching Apple Vision Pro chief (7-year VP) is same action as Meta poaching AI researchers, yet only Meta receives aggressive poaching language. Financial predictor: Condé Nast receives $5-10M/yr from OpenAI licensing
       + 5 other Meta competitors (6 total), $0 from Meta  -  direction of money predicts direction of editorial sympathy. Director-level amplification: Schiffer directs WIRED entire business desk, making framing choices institutionally amplified through team coverage (Matsakis, Kleeman, Tiku, Zeff) and Uncanny Valley podcast co-host platform.'
+    mechanism_523_zoe_schiffer_co_byline_brain_drain_narrative_asymmetry_sep04:
+      mechanism_id: 523
+      discovery_date: '2026-09-04'
+      iteration: 523
+      iteration_type: B
+      iteration_time: 2026-09-04 19:00 PT
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication_focus: wired
+      journalist: Zoe Schiffer, Director of Business and Industry, WIRED
+      type: journalist_cross_entity_tracking
+      pattern: 'Co-byline brain-drain narrative asymmetry: Schiffer''s written WIRED bylines
+        frame Meta talent/morale departures as institutional pathology (''Record Low Morale'',
+        ''Already Leaving''); the same stories position OpenAI as the aspirational destination
+        and absorb zero scrutiny in-story; her co-hosted Uncanny Valley runs Meta in crisis
+        register (''Meta Is in Crisis'', ''Meta''s AI Workers Are Revolting'') while OpenAI
+        coverage runs in legal-drama register (''Lawsuits, Bidding Wars and Power Plays'').
+        Distinct from mechanism 357 (podcast/hardware-talent-war) by using written co-byline
+        articles with verified WIRED URLs.'
+      meta_articles_co_byline:
+      - title: 'Meta''s New Reality: Record High Profits. Record Low Morale'
+        date: '2026-05-14'
+        publication: wired
+        bylines:
+        - Paresh Dave
+        - Lauren Goode
+        - Steven Levy
+        - Zoe Schiffer
+        framing_notes: 'Four-byline A-team deployment against a single company story:
+          WIRED''s business/industry director plus two senior reporters plus Steven Levy
+          documenting Meta''s internal morale crisis pre-layoffs. Repo analysis (examples/sample_output/wired_meta_dark_mood_2026_05_14_analysis.md)
+          identifies this as the opening salvo of a multi-week investigative arc (Applied
+          AI ''soul-crushing'' expose Jun 13, Bosworth ''atrocious'' admission Jun 16,
+          NameTag facial recognition investigation Jun 5). Resource commitment of this
+          scale (four senior bylines on one morale story) has no observed OpenAI-side
+          equivalent under Schiffer''s desk leadership despite OpenAI''s 2026 executive
+          churn.'
+        source_url: https://www.wired.com/story/meta-new-reality-record-high-profits-record-low-morale/
+      - title: Researchers Already Leaving Meta Superintelligence Labs for OpenAI
+        date: '2025-08-26'
+        publication: wired
+        bylines:
+        - Will Knight
+        - Zoe Schiffer
+        framing_notes: 'WITHIN-STORY ASYMMETRY: Meta framed as hemorrhaging talent (''Already
+          Leaving'', instability narrative); OpenAI positioned in the same headline as
+          the destination of choice and absorbs zero institutional scrutiny in-story.
+          The entity losing researchers gets pathology framing; the entity gaining them
+          gets aspirational-by-implication framing. Mechanism 421 correction (Aug 31 2026)
+          verified the two Knight Meta articles with adversarial framing. This entry extends
+          the discipline check to the co-bylined Schiffer half.'
+        source_url: https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
+      openai_comparator_register:
+        podcast_episode: Lawsuits, Bidding Wars and Power Plays over Open AI
+        register: legal_drama_power_plays
+        framing_notes: 'Schiffer-co-hosted Uncanny Valley episode frames OpenAI''s disputes
+          as legal drama and power plays (adversarial-process register, implies two-sided
+          contest), never as morale crisis or institutional failure. Contrast with Meta
+          episodes on the same show in crisis register: ''Meta Is in Crisis'', ''Meta''s
+          AI Workers Are Revolting'', and the episode titled with profanity about Meta''s
+          new AI unit being ''a Total Mess''.'
+        source_url: https://play.prx.org/listen?ge=prx_5901_3546f4ad-92d0-4e39-b004-7e4912a8efe4&uf=https%3A%2F%2Fpublicfeeds.net%2Ff%2F5901%2Fgadget-lab
+      meta_podcast_register_contrast:
+      - Meta Is in Crisis, Google Search's Makeover, and AI Gets Booed by Graduates
+      - Meta's AI Workers Are Revolting, Peter Thiel's Secret Society, and SBF's Plea
+        to Trump
+      - Episode titled with profanity framing Meta's new AI unit as 'a Total Mess'
+      asymmetry_scorer_result:
+        label: MANUAL_ILLUSTRATIVE_NOT_EMPIRICAL
+        methodology: 'Manual illustrative tone scores: Meta target = average of two co-bylined
+          written pieces (May 2026 four-byline morale crisis piece -0.45, Aug 2025 researchers-leaving
+          piece -0.35) = -0.40. OpenAI peer = 0.0 (zero in-story scrutiny in the Aug 2025
+          piece where OpenAI is the destination; podcast legal-drama register scored neutral-positive
+          0.0). Delta = -0.40. NOT empirical: n=2 target articles, no corpus annotation,
+          no Welch test run. Illustrative only per project standing rule Aug 28 2026.
+          Requires full WIRED corpus annotation for empirical validation.'
+        target_entity: Meta
+        peer_entity: OpenAI
+        target_avg_MANUAL_ILLUSTRATIVE: -0.4
+        peer_avg_MANUAL_ILLUSTRATIVE: 0.0
+        delta_meta_vs_openai_MANUAL_ILLUSTRATIVE: -0.4
+        calculation: -0.40 - 0.0 = -0.40
+        interpretation: 'Manual illustrative delta -0.40 suggests moderate Meta-selective
+          negative framing from the same journalist''s written bylines: institutional-pathology
+          frame applied to Meta departures, zero-scrutiny destination frame applied to
+          OpenAI in the same story.'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        significant: false
+        empirical_validation_required: true
+      confounders_ranked:
+      - '[STRONG] Co-byline dilution: Knight, Dave, Goode, Levy share framing decisions
+        on both pieces; Schiffer''s individual voice cannot be isolated from co-authors.
+        Mitigant: she lent her name and Director-level authority to both pieces, and the
+        four-byline deployment was an institutional choice she co-signed.'
+      - '[STRONG] Entity situation genuinely differs: Meta''s 2025-26 superintelligence-lab
+        departures and pre-layoff morale slump gave legitimate crisis basis; OpenAI''s
+        2026 churn centered on a medical leave (Fidji Simo, POTS) which legitimately invites
+        sympathy register, not crisis register.'
+      - '[MODERATE] Timing mismatch: the Aug 2025 Meta departures piece predates OpenAI''s
+        2026 executive churn (Simo step-down Jul 2026, Lightcap role change, Rouch leave,
+        Achiam departure), so it is not a same-period comparison. The within-story OpenAI
+        destination framing, however, is contemporaneous by construction.'
+      - '[MODERATE] Podcast episode titles may be written by producers, not Schiffer;
+        register attribution for Uncanny Valley is institutional rather than individual.'
+      - '[WEAK] Sample size: two written co-bylines is a thin corpus for a journalist-level
+        claim; mechanism is directional, not dispositive.'
+      confounding_adjustment:
+        raw_score: 0.4
+        total_adjustment: -0.17
+        adjustments:
+        - 'Co-byline voice dilution (shared framing decisions): -0.08'
+        - 'Genuine Meta turmoil basis (layoffs, lab departures): -0.06'
+        - 'Timing mismatch (2025 vs 2026 churn): -0.03'
+        adjusted_score: 0.23
+        adjusted_calc: 0.40 - 0.17 = 0.23 weak_to_moderate
+        interpretation: 'After confounder adjustments, weak-to-moderate residual asymmetry
+          (0.23): Meta departures receive institutional-pathology framing while OpenAI
+          absorbs zero in-story scrutiny as the destination, beyond what co-byline dilution
+          and genuine situational differences explain.'
+      financial_context_correlation_not_causation: Conde Nast receives $5-10M/yr from
+        OpenAI licensing plus 5 other Meta competitors (6 total), $0 from Meta (per entry
+        asymmetry_notes, mechanism 357). Direction of money predicts direction of editorial
+        sympathy at publication level. 'This is correlation, not causation:' journalist-level
+        mechanism 523 is consistent with that incentive gradient but does not prove it
+        caused Schiffer''s framing choices.
+      source_urls:
+      - https://www.wired.com/story/meta-new-reality-record-high-profits-record-low-morale/
+      - https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
+      - https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
+      - http://EditorandPublisher.com/stories/wired-welcomes-ze-schiffer-as-director-business-industry,252748
+      - https://muckrack.com/zoe-schiffer/articles
+      - https://www.wsj.com/tech/openai-top-executive-fidji-simo-to-step-down-c3daca47
+      test_file: tests/test_type_b_523_zoe_schiffer_co_byline_brain_drain_narrative_asymmetry_sep04.py
+      cross_references:
+      - 421
+      - 357
+      - 436
+      - 447
+
 - career:
   - beat: sports media
     end: 2005-06

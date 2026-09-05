@@ -27682,3 +27682,32 @@ Browser research completed 17:09:46Z found 2 Will Knight Meta articles missed in
 
 Asymmetry 0.91->0.89 framing inversion not coverage gap, adjusted 0.53 remains moderate-high. 2 Meta articles with adversarial framing vs 7-8 OpenAI 5 Google DeepMind 3 Anthropic aspirational strengthens inversion argument. Commit 135017a pushed.
 
+
+#523 Type B: Zoe Schiffer Co-Byline Brain-Drain Narrative Asymmetry - Meta pathology frame vs OpenAI zero-scrutiny destination frame (delta -0.40 illustrative, adjusted 0.23) - Sep 4 2026 19:00 PDT
+
+**Date:** 2026-09-04 19:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 522 A -> 523 B)
+**Type:** B - Journalist Cross-Entity Tracking (Zoë Schiffer, WIRED Director, Business and Industry; distinct from mechanism 357 which covered her podcast/hardware-talent-war register)
+
+**Finding:** Schiffer's WRITTEN WIRED co-bylines (not just her podcast register) show a brain-drain narrative asymmetry:
+1. "Meta's New Reality: Record High Profits. Record Low Morale" (2026-05-14) - four-byline A-team deployment (Paresh Dave, Lauren Goode, Steven Levy, Zoe Schiffer) against a single Meta morale story, the opening salvo of a multi-week investigative arc (Applied AI "soul-crushing" Jun 13, Bosworth "atrocious" admission Jun 16, NameTag facial-recognition investigation Jun 5; per repo examples/sample_output/wired_meta_dark_mood_2026_05_14_analysis.md). URL: https://www.wired.com/story/meta-new-reality-record-high-profits-record-low-morale/
+2. "Researchers Already Leaving Meta Superintelligence Labs for OpenAI" (2025-08-26, Will Knight + Zoe Schiffer) - WITHIN-STORY asymmetry: Meta gets the institutional-pathology frame ("Already Leaving", instability) while OpenAI, positioned in the same headline as the destination of choice, absorbs ZERO scrutiny in-story. The entity losing researchers is pathologized; the entity gaining them is aspirational-by-implication. URL: https://www.wired.com/story/researchers-leave-meta-superintelligence-labs-openai/
+3. Register contrast on her co-hosted Uncanny Valley: Meta episodes run crisis register ("Meta Is in Crisis", "Meta's AI Workers Are Revolting", profanity-titled "Meta's New AI Unit Is a Total Mess") while OpenAI coverage runs legal-drama register ("Lawsuits, Bidding Wars and Power Plays over Open AI" - adversarial-process frame implying a two-sided contest, never a morale crisis).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Meta target avg -0.40 (two adversarial co-bylines) vs OpenAI peer 0.0 (zero in-story scrutiny / neutral podcast register): delta -0.40. p_value NOT_CALCULATED, significant False. After confounder adjustments (co-byline dilution -0.08, genuine Meta turmoil -0.06, timing mismatch -0.03): adjusted 0.23 weak_to_moderate.
+
+**Confounders Ranked:** STRONG: (1) co-byline dilution - Knight/Dave/Goode/Levy share framing decisions; mitigant: Schiffer co-signed both with Director-level authority; (2) genuine Meta 2025-26 turmoil (superintelligence-lab departures, pre-layoff slump) gives legitimate crisis basis, while OpenAI's 2026 churn centered on a medical leave (Fidji Simo, POTS) inviting sympathy register. MODERATE: (1) timing mismatch - Aug 2025 Meta piece predates OpenAI's 2026 churn (Simo step-down Jul 2026, Lightcap role change, Rouch leave, Achiam departure); (2) podcast episode titles may be producer-written, register attribution institutional not individual. WEAK: n=2 written co-bylines is thin for a journalist-level claim - directional, not dispositive.
+
+**Financial context (correlation, not causation):** Condé Nast receives $5-10M/yr from OpenAI licensing plus 5 other Meta competitors (6 total), $0 from Meta. Direction of money predicts direction of editorial sympathy at publication level; consistent with Schiffer's framing gradient but does not prove causation of her individual choices.
+
+**Cross-references:** 421 (Will Knight Meta framing inversion correction), 357 (Schiffer hardware talent war), 436/447 (Lauren Goode cross-entity).
+
+**Research method:** browser.search for Schiffer WIRED author attribution (Muck Rack profile, Editor & Publisher hire announcement, talkingbiznews); Muck Rack episode-title register comparison; techxplore/WSJ for OpenAI 2026 churn comparator context. URLs copied verbatim from search results; no zero-coverage claims per iteration-492 rule.
+
+**New Type B files:** `tests/test_type_b_523_zoe_schiffer_co_byline_brain_drain_narrative_asymmetry_sep04.py` - 5 classes, 15 tests, all passing (2 initial failures fixed: Editor & Publisher URL is http not https per verbatim source, test relaxed to allow http for non-WIRED sources; financial_context string lacked the literal phrase "correlation, not causation", YAML fixed). YAML insertion validated by re-parse with leaf-type/value assertions; one mid-run YAML plain-scalar `: ` mangle caught and fixed (quoted per AGENTS.md rule).
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; mechanism is directional.
+
+**Rotation Transparency:** Previous entry #522 Type A at 17:00 PDT Sep 4 2026 (commit 7f10804 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after A is B. Selected Type B.
+
+**Novelty Verification:** Zero test_type_b_523 files on disk before this run (glob verified); no Type B commit with 523 in the title (git log --grep verified); Schiffer entry had no written-co-byline mechanism before insertion (only mechanism 357 hardware-talent-war).
+
