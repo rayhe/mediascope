@@ -2816,6 +2816,120 @@ entities:
       - https://en.wikipedia.org/wiki/Dotdash_Meredith
       caution: Structural mapping only. Documents deal structure, payment anatomy, ad-tech leg, earnings impact, Lightcap sequencing correction, and consumer-tech review beat exposure, not editorial capture. No coverage-tone claim is made.
 
+    mechanism_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm:
+      mechanism_name: Dotdash Meredith (People Inc) Triple-Payer AI Revenue Architecture - OpenAI Flat-Fee Plus Meta Dec 2025 Plus Microsoft PCM Pay-Per-Use
+      mechanism_id: 539
+      iteration: 539
+      rotation: 'Type C'
+      job_id: 'mediascope-daily-iteration'
+      goal_id: 'goal_54093bda4145'
+      date_analyzed: '2026-09-05'
+      time_pdt: '11:00'
+      type: 'financial_incentive_mapping'
+      type_c_focus: First triple-payer mechanism in the corpus (extends the #519 dual-payer and #534 OpenAI-leg templates). Formalizes People Inc (Dotdash Meredith, rebranded Jul 31 2025) as a publisher collecting AI revenue from THREE Meta competitors: OpenAI (May 7 2024 flat-fee roughly $16M per year, mechanism 534), Microsoft (Nov 5 2025 Publisher Content Marketplace launch partner, pay-per-use), Meta (Dec 5 2025 multi-year, undisclosed). Documents the Vogel pricing-model distinction (all-you-can-eat vs a la carte), the Google adversarial leg (search referrals 54 percent to 24 percent, AI Overviews blamed, Cloudflare bot-blocking as leverage), and the zero-deal entity set (Anthropic, Google, Amazon, Apple). No coverage-tone claim is made; Type A follow-ups flagged.
+      leg_1_openai:
+        summary: Covered in mechanism 534; carried here as the flat-fee leg of the triple-payer matrix
+        announcement_date: '2024-05-07'
+        payment: approximately $16M per year fixed plus variable appearance-frequency component (floor $16M, no verified ceiling)
+        model: 'flat-fee (Vogel: all-you-can-eat)'
+        adtech_leg: OpenAI models deployed to enhance D/Cipher cookieless intent-based ad targeting
+      leg_2_microsoft_pcm:
+        announcement_date: '2025-11-05'
+        announced_at: IAC Q3 2025 earnings (per Yahoo Finance via indexbox.io; dig.watch and findarticles.com corroborate)
+        form: People Inc as launch partner in Microsoft Publisher Content Marketplace (PCM)
+        model: pay-per-use - Vogel described it as an essentially pay-per-use market where AI players directly compensate publishers for use of their content on a sort of a la carte basis
+        first_buyer: Microsoft Copilot
+        terms: undisclosed
+        vogel_endorsement: very strong endorsement of us to be in the room with them (praising Microsoft commitment to paying for content)
+        sequence: second AI deal after OpenAI
+      leg_3_meta:
+        announcement_date: '2025-12-05'
+        reported_by: Reuters reporting Axios
+        form: multi-year AI content licensing, terms undisclosed
+        scope: entertainment and lifestyle content for Meta AI
+        included_in_meta_round: People Inc (Dotdash Meredith) among the 8 Dec 2025 publishers (CNN, Fox News, Fox Sports, USA Today Network, Le Monde, Daily Caller, Washington Examiner)
+        source: corpus meta_ai_deals partners list
+      zero_deal_entities:
+      - entity: Anthropic
+        status: zero-deal posture re-confirmed Aug 2026 (Adweek; Tom Turvey quote - his job is to pick up the phone twice a day and say no)
+        mechanism: 509
+      - entity: Google
+        status: no publicly reported Google AI licensing deal with DDM as of Sep 5 2026; relationship is adversarial on traffic (see google_adversarial_leg)
+      - entity: Amazon
+        status: no publicly reported DDM-Amazon AI licensing deal as of Sep 5 2026
+      - entity: Apple
+        status: no standalone AI licensing deal known; Apple News+ payments commingle in the DDM licensing revenue line (mechanism 534)
+      google_adversarial_leg:
+        search_referrals_two_years_ago: 54 percent of People Inc traffic
+        search_referrals_q3_2025: 24 percent of traffic
+        attributed_to: Google AI Overviews (per People Inc executives, IAC Q3 2025 earnings)
+        leverage: Cloudflare-based blocking of non-paying AI crawlers; Vogel said blocking brought almost everyone to the table
+        directional_note: DDM publicly attributes revenue-relevant traffic collapse to Google - an adversarial financial relationship parallel to the PMC Google lawsuit (pmc_deal_fragmentation)
+      vogel_pricing_distinction:
+        openai_model: flat-fee all-you-can-eat
+        microsoft_pcm_model: pay-per-use a la carte
+        significance: same publisher stacked two different payment models within 18 months; usage-based pricing is the more transparent structure and the corpus first documented flat-fee-plus-usage stack
+      earnings_signal:
+        iac_q3_2025: People Inc digital revenue up 9 percent to $269M; performance marketing up 38 percent; licensing up 24 percent
+        significance: AI licensing revenue is materializing in the P and L, not just announced
+      directional_predictions:
+      - OpenAI: positive financial incentive (flat-fee payer since May 2024) - predicts softer coverage
+      - Microsoft: positive financial incentive (PCM launch partner) - predicts softer coverage
+      - Meta: positive financial incentive (Dec 2025 payer) - predicts softer coverage; CORRECTS any assumption that DDM is Meta-zero
+      - Google: adversarial financial incentive (traffic destruction attributed to AI Overviews) - predicts harder coverage
+      - Anthropic: zero financial incentive - no softening pressure (zero-deal posture)
+      - Amazon: zero financial incentive - no softening pressure
+      - Apple: zero financial incentive (News+ only) - no softening pressure
+      structural_contrast:
+      - news_corp_dual_payer_519: News Corp collects from OpenAI and Meta; DDM extends the pattern to three payers (first triple-payer in corpus)
+      - conde_nast_504: Conde Nast collects from OpenAI, Amazon (Rufus, Alexa+), Microsoft PCM, Perplexity - but $0 from Meta; DDM is the mirror image on the Meta leg (DDM has Meta, CN does not)
+      - hearst_489: Hearst has OpenAI plus Amazon Rufus (dual); DDM adds Microsoft PCM and Meta on top of OpenAI
+      tech_review_beat_exposure:
+        lifewire: Lifewire is the DDM consumer-tech review vertical; product reviews explicitly in OpenAI licensed scope (mechanism 534); PCM is usage-based and grounds Copilot in licensed content, so review content is plausibly monetized per-use
+        type_a_followup: Lifewire Meta-vs-OpenAI-vs-Microsoft coverage tone comparison flagged as future Type A, NOT verified this run (iteration-492 rule)
+        boundary_note: PCMag is Ziff Davis, NOT DDM-owned; this mechanism asserts no PCMag claim
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: Meta and Microsoft legs have undisclosed terms; only the OpenAI leg has a reported value, so triple-payer incentive strength is bounded by one known figure
+      - rank: 2
+        strength: strong
+        confounder: No Lifewire coverage-tone analysis exists, so no coverage effect is assertable from this mechanism alone
+      - rank: 3
+        strength: moderate
+        confounder: The PCM deal was announced as a pilot; realized revenue may be far below the OpenAI flat fee, so the three legs are not necessarily equal incentives
+      - rank: 4
+        strength: moderate
+        confounder: The Google traffic decline is attributed by DDM executives, an interested party; AI Overviews causality is asserted not independently verified
+      - rank: 5
+        strength: weak
+        confounder: The rebrand date (Jul 31 2025) and earnings figures are second-hand via search excerpts
+      strongest_counterargument: DDM publicly campaigns for paid content and blocks non-paying crawlers, so the deals implement stated industry norms rather than purchase favorable coverage; the PCM pay-per-use model is the corpus most transparent pricing structure; Vogel bot-blocking extracted concessions from almost everyone, suggesting leverage works on all labs equally rather than favoritism toward payers; the $16M OpenAI floor is roughly 3.6 percent of quarterly-scale revenue - a real but modest dependency. The null (independent review standards) predicts no tone effect.
+      cross_references:
+      - Mechanism 534 (OpenAI leg dedicated source; this mechanism extends its matrix, not duplicating)
+      - Mechanism 519 News Corp dual-payer (template; DDM is the first triple-payer extension)
+      - Mechanism 509 Anthropic zero-deal posture (zero-deal entity confirmation)
+      - Mechanism 504 Conde Nast x OpenAI (Meta-leg mirror contrast)
+      - Mechanism 489 Hearst dual-payer (pattern companion)
+      - pmc_deal_fragmentation (Google adversarial-leg parallel)
+      - meta_ai_deals partners list (Meta leg source datum)
+      novelty_verification:
+      - Zero triple-payer mechanism in competitor-entities.yaml before insertion (repo grep verified)
+      - Zero People Inc or Microsoft PCM DDM-leg mechanism before insertion (repo grep verified)
+      - Zero DDM Meta-leg mechanism before insertion (only the meta_ai_deals bullet)
+      - Zero test_type_c_539 files on disk before this run (glob verified)
+      - No Type C commit with 539 or triple-payer in the title (git log --grep verified)
+      - Distinct from mechanism 534 (OpenAI leg only) and mechanism 519 (dual, different publisher)
+      statistical_discipline: 'qualitative structural mapping only; correlation not causation; p_value NOT_CALCULATED; is_significant False; tone_scores NOT_SCORED'
+      source_urls:
+      - https://www.indexbox.io/blog/people-inc-signs-ai-content-licensing-deal-with-microsoft/
+      - https://dig.watch/updates/microsoft-deal-signals-pay-per-use-path-for-ai-access-to-people-inc-content
+      - https://www.findarticles.com/people-inc-signs-microsoft-ai-licensing-deal/
+      - https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+      - https://www.adweek.com/media/anthropic-content-licensing-lawsuits-publishers/
+      - https://www.adweek.com/media/openai-dotdash-meredith-licensing-payment/
+      caution: Structural mapping only. Documents the triple-payer revenue architecture, pricing-model distinction, Google adversarial leg, and zero-deal entity set, not editorial capture. No coverage-tone claim is made.
+
   anthropic:
     display_name: Anthropic
     aliases:

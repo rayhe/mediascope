@@ -1,3 +1,46 @@
+#539 Type C: Dotdash Meredith (People Inc) Triple-Payer AI Revenue Architecture - OpenAI Flat-Fee, Meta Dec 2025, Microsoft PCM Pay-Per-Use; Google Adversarial Traffic Leg - Sep 5 2026 11:00 PDT
+
+**Date:** 2026-09-05 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 538 B -> 539 C)
+**Type:** C - Financial Incentive Mapping (People Inc, formerly Dotdash Meredith, triple-payer)
+
+**Finding:** First triple-payer mechanism in the corpus. People Inc (DDM, rebranded Jul 31 2025) collects AI revenue from THREE Meta competitors, formalizing a structure whose fragments existed as notes and bullets but never as a mechanism: (1) OpenAI flat-fee leg, May 7 2024, approximately $16M/yr fixed plus variable appearance-frequency component (floor $16M, no verified ceiling; Adweek Nov 2024), ad-tech leg (OpenAI models enhance D/Cipher cookieless intent targeting) - dedicated mechanism 534; (2) Microsoft PCM leg, Nov 5 2025, announced during IAC Q3 2025 earnings - People Inc as LAUNCH PARTNER in Microsoft's Publisher Content Marketplace, pay-per-use model, Copilot first buyer, terms undisclosed; (3) Meta leg, Dec 5 2025, Reuters reporting Axios - People Inc among 8 Dec 2025 Meta publishers (CNN, Fox News, Fox Sports, USA Today Network, Le Monde, Daily Caller, Washington Examiner), multi-year, undisclosed, entertainment/lifestyle content for Meta AI.
+
+**Vogel pricing distinction (novel structural datum):** CEO Neil Vogel characterized the OpenAI deal as "all-you-can-eat" flat-fee and the PCM deal as "essentially a pay-per-use market where AI players directly can compensate publishers for use of their content on, sort of like an a la carte basis". Same publisher stacked two different payment models within 18 months - the corpus's first documented flat-fee-plus-usage stack, and PCM is the corpus's most transparent pricing structure. Vogel praised Microsoft's commitment to paying for content ("very strong endorsement of us to be in the room with them").
+
+**Google adversarial leg:** People Inc executives disclosed at IAC Q3 2025 that Google search referrals fell from 54 percent of traffic two years prior to 24 percent in the quarter, attributed to Google AI Overviews. DDM blocks non-paying AI crawlers via Cloudflare; Vogel said blocking "brought almost everyone to the table". A publisher that publicly attributes revenue-relevant traffic collapse to Google is an adversarial financial relationship parallel to the PMC Google lawsuit (pmc_deal_fragmentation) - predicting harder Google coverage, not softer.
+
+**Zero-deal entity set:** Anthropic (zero-deal posture re-confirmed Aug 2026, Adweek: Tom Turvey's job is to "pick up the phone twice a day and say no"; mechanism 509), Google (no AI licensing deal; adversarial leg above), Amazon (no publicly reported DDM-Amazon AI licensing deal as of Sep 5 2026), Apple (no standalone AI deal known; Apple News+ payments commingle in the licensing revenue line per mechanism 534). All absence claims bounded to public reporting as of Sep 5 2026 (iteration-492 rule).
+
+**Directional predictions (predictions, not findings):** OpenAI/Microsoft/Meta softer (three payers); Google harder (adversarial); Anthropic/Amazon/Apple neutral (zero-deal, no softening pressure). The Meta-leg prediction CORRECTS any assumption that DDM is Meta-zero: DDM is a Meta payer, unlike Conde Nast.
+
+**Structural contrasts:** (a) News Corp #519 dual-payer (OpenAI + Meta) is the template; DDM extends it to three - first triple-payer in corpus. (b) Conde Nast #504 is the mirror image on the Meta leg: CN collects from OpenAI, Amazon (Rufus, Alexa+), Microsoft PCM, Perplexity but $0 from Meta; DDM has Meta, CN does not. (c) Hearst #489 dual (OpenAI + Amazon Rufus) is one leg short of DDM.
+
+**Earnings signal:** IAC Q3 2025 - People Inc digital revenue up 9 percent to $269M, performance marketing up 38 percent, licensing up 24 percent. AI licensing revenue is materializing in the P&L, not just announced.
+
+**Rotation Transparency:** Previous entry #538 Type B at 10:00 PDT Sep 5 2026 (commit 5191bbe verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 534 C 06:00, 535 D 07:00, 536 E 08:00, 537 A 09:00, 538 B 10:00. Selected Type C.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero triple-payer mechanism in competitor-entities.yaml before insertion (repo grep verified); zero People Inc or Microsoft PCM DDM-leg mechanism before insertion (repo grep verified); zero DDM Meta-leg mechanism before insertion (only the meta_ai_deals bullet); zero test_type_c_539 files on disk before this run (glob verified); no Type C commit with 539 or triple-payer in the title (git log --grep verified). Distinct from mechanism 534 (OpenAI leg only) and mechanism 519 (dual-payer, different publisher). Placement correction: no placement issue - inserted directly under entities.openai next to mechanism_534, verified via YAML path check.
+
+**Research method:** browser.search 4 query sets (Anthropic publisher licensing 2026 - confirmed zero-deal posture holds, Adweek Aug 2026; publishers v Google AI copyright 2026 - found already in corpus, rejected as duplicate; Ziff Davis v OpenAI 2026 - found #108 covered, rejected; DDM Microsoft PCM - novel, selected) with verbatim full-URL listings; all facts via search-result excerpts, second-hand, marked bounded in-mechanism. Two rejected candidates verified in-corpus before abandoning (Hachette/Cengage/Elsevier/Turow suits; Ziff Davis #108). No zero-coverage claims (iteration-492 rule).
+
+**Statistical discipline:** Qualitative Type C structural mapping only; correlation not causation; p_value NOT_CALCULATED; is_significant False; tone_scores NOT_SCORED.
+
+**Confounders Ranked:** STRONG: (1) Meta and Microsoft legs have undisclosed terms - only the OpenAI leg has a reported value, so triple-payer incentive strength is bounded by one known figure; (2) no Lifewire coverage-tone analysis exists, so no coverage effect is assertable from this mechanism alone. MODERATE: (3) PCM announced as a pilot - realized revenue may be far below the OpenAI flat fee, the three legs are not necessarily equal incentives; (4) the Google traffic decline is attributed by DDM executives, an interested party; AI Overviews causality asserted not independently verified. WEAK: (5) rebrand date and earnings figures are second-hand via search excerpts.
+
+**Strongest counterargument:** DDM publicly campaigns for paid content and blocks non-paying crawlers, so the deals implement stated industry norms rather than purchase favorable coverage; PCM pay-per-use is the corpus's most transparent pricing structure; Vogel's bot-blocking extracted concessions from "almost everyone", suggesting leverage works on all labs equally rather than favoritism toward payers; the $16M OpenAI floor is roughly 3.6 percent of quarterly-scale revenue - a real but modest dependency. The null (independent review standards) predicts no tone effect.
+
+**Artifact readiness:** No analysis.json update warranted. Qualitative Type C; follows #489/#494/#499/#504/#514/#534 precedent of YAML-mechanism-only data writes with no artifact regeneration claim.
+
+**New Type C files:** `profiles/competitor-entities.yaml` gained `mechanism_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm` under entities.openai (ASCII-verified block, YAML-parsed, subtree verified, author Kit (with Ray)); `tests/test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` - 7 classes, 32 tests.
+
+**Doc sync (ratchet repair):** README + ARCHITECTURE per-file rows added for #536, #537, #538 (missing from the 08:00/09:00/10:00 runs) plus #539, per the #525/#530/#534 precedent; all count headers re-synced to authoritative `count_stats.py --pytest` numbers: 28702/863 -> 28851/867 (+36 #536, +29 #537, +52 #538, +32 #539). Career-entry migrations 975 -> 976 (#538's Cade Metz Science-desk entry). `count_stats.py --check` green.
+
+**Verification runs (venv pytest, -p no:cacheprovider):** New #539 file: 32 passed, 0 failed (2 initial failures were test-logic bugs: YAML single-key-dict parsing of "- Key: value" list items and a case-sensitivity slip; 1 YAML value fixed to name Lifewire explicitly - data fix, not test weakening). Targeted regression: #505 guard file + #529 Type C + #534 Type C - 75 passed.
+
+**Test file:** `tests/test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` - 32 tests, all passed (venv pytest)
+**Cumulative:** mechanism #539 logged; 28851 tests across 867 test files (authoritative pytest-collected; README synced, --check passes).
+
+---
 #538 Type B: Cade Metz (NYT) Litigation-Adversary Register Symmetry - Science-Desk Discovery Framing Extends Mechanism 471 to Reporter Level - Sep 5 2026 10:00 PDT
 
 **Date:** 2026-09-05 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 537 A -> 538 B)

@@ -50,9 +50,9 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
 | Annotated articles | 206 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 261 | Career data with source URLs |
-| Career-entry migrations | 975 | Across 444 publications |
+| Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28702 | Across 863 test files |
+| Tests | 28851 | Across 867 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **261 journalists** (60 with structured education records) across 440+ publications (975 tracked migrations). Notable high-value migrations include:
+Ships with verified career data for **261 journalists** (60 with structured education records) across 440+ publications (976 tracked migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28702 tests** across 863 test files, each covering a different analytical capability:
+MediaScope has **28851 tests** across 867 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1378,6 +1378,10 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_533_keach_hagey_matched_story_type_symmetry_sep05_5am.py` | 33 | Type B #533: Keach Hagey (WSJ) matched-story-type symmetry - Meta Wynn-Williams lawsuit (-0.35) vs OpenAI state-AG investigation (-0.30), delta -0.05 MANUAL ILLUSTRATIVE n.s.; mismatched-type gap (Astra -0.15) is genre artifact; co-byline dilution confounder; extends #532/#32 from publication to reporter level - Sep 5 2026 05:00 PDT |
 | `test_type_c_534_dotdash_meredith_openai_sep05_6am.py` | 31 | Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - first dedicated DDM mechanism; earliest Lightcap-counterparty publisher deal (corrects #489/#494/#499/#504/#514 mechanism-order sequence); $16M/yr fixed + variable structure (Adweek), quarterly ~$4M in licensing line (also Apple News+); D/Cipher ad-tech leg (contrast Hearst #489 no-ad-tech); Lifewire consumer-tech review beat exposure (rigorous product reviews licensed), PCMag-is-Ziff-Davis boundary; no coverage-tone claim, Type A/B follow-ups flagged - Sep 5 2026 06:00 PDT |
 | `test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py` | 17 | Type D #535: #505 brittle novelty-guard repair (iteration-aware successor exemption; #510 was the tripwire) + scorer consistency extended to #532 (-0.075) and #533 (-0.05, n=1 vs n=1 degenerate path) with #527/#528 re-locks + ARCHITECTURE tree-header stale repair (28592/859 -> authoritative) + 531-535 doc-sync ratchet - Sep 5 2026 07:00 PDT |
+| `test_type_e_536_podcast_sentiment_thirtieth_verification_sep05_8am.py` | 36 | Type E #536: podcast sentiment 30th verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand this run), EHE 26-day hold with fstoppers/Ben-Barry items verified already-in-corpus NOT new, Attention Sphere 30th no-match (nonprofit confirmed), no new press surfaces since Jezebel #531 LED-loophole piece - Sep 5 2026 08:00 PDT |
+| `test_type_a_537_guardian_meta_openai_same_day_register_asymmetry_sep05_9am.py` | 29 | Type A #537: Guardian Meta-vs-OpenAI same-day register asymmetry (Aug 18 2026 natural experiment) - deal partner in corporate-stewardship register vs $0-deal company in accountability register, severity ordering inverts, mirror-verified no-disclosure of Feb 2025 partnership, delta -0.30 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 09:00 PDT |
+| `test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py` | 52 | Type B #538: Cade Metz (NYT) litigation-adversary register symmetry - OpenAI covered in neutral launch/scoop register despite NYT lawsuit vs OpenAI; Science-desk discovery framing extends mechanism 471 to reporter level; delta -0.0875 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 10:00 PDT |
+| `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
