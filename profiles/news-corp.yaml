@@ -278,6 +278,113 @@ competitor_relationships:
       via anonymous sources, never officially confirmed. Fourth AI revenue leg for the News Corp owner (mechanism 524).
     source_url: https://www.eweek.com/news/harpercollins-books-train-microsoft-ai-models/
     coverage_prediction: softer
+    mechanism_527_wsj_microsoft_woo_side_register_sep04:
+      mechanism_id: 527
+      mechanism_name: 'WSJ x Microsoft Woo-Side Register - First Empirical Test of the #524 Woo-and-Sue Prediction'
+      iteration: 527
+      iteration_type: 'A'
+      date: '2026-09-04'
+      summary: 'Direct follow-up to #524 Type C (News Corp x Microsoft HarperCollins book licensing, Nov 2024) and complement to #522 Type A (WSJ x Perplexity sue-side register). Tests #524''s structural prediction: woo-side entities (OpenAI, Meta, Microsoft) receive symmetric softening incentives for WSJ coverage vs no-deal entities. Three first-hand WSJ Microsoft articles (Apr to Jul 2026) show a financially-scrutinized-but-cushioned register averaging +0.07 illustrative, vs Meta''s -0.45 rogue-AI comparator: delta -0.517, directionally consistent with the prediction but heavily confounded.'
+      financial_context: 'News Corp receives Microsoft AI revenue through the HarperCollins book-licensing leg (Nov 2024, $5K per title 50/50 split, 3-year term, Bloomberg-reported via anonymous sources, NEVER officially confirmed by either party - mechanism 524). Direction of money predicts direction of editorial sympathy (correlation, not causation). Book-division deal means owner-to-WSJ-newsroom incentive transmission is attenuated vs the Dow Jones news legs (OpenAI $250M/5yr, Meta up to $50M/yr).'
+      articles:
+        - title: 'Microsoft Needs Copilot to Get Back in the Air'
+          date: '2026-04-23'
+          byline: 'Dan Gallagher and Asa Fitch'
+          url: 'https://www.wsj.com/tech/ai/microsoft-needs-copilot-to-get-back-in-the-air-6a9746d5'
+          register: 'skeptical_financial_scrutiny_with_cushioning'
+          tone_MANUAL_ILLUSTRATIVE: -0.15
+          research_method: 'first_hand_browser_open_sep04'
+          key_quotes:
+            - 'going from ''AI winner'' to ''AI loser'' status in six months seems excessive'
+            - 'The company has lost more than $800 billion in market cap from its peak in late October'
+            - 'they represent only about 3.5% of its enormous user base... That isn''t tremendous 2.5 years in'
+            - 'competitors are eating its lunch in serving AI workloads'
+            - 'But patient investors should be rewarded'
+            - 'its prospects in the AI era haven''t faded as much as many investors seem to think'
+          note: 'Same Dan Gallagher who wrote the #522 Perplexity quixotic-dismissal piece (-0.30, zero Perplexity rebuttal). Within-journalist gradient: Microsoft gets hard numbers PLUS cushioned landing; Perplexity gets editorial-voice verdict with no rebuttal.'
+        - title: 'Microsoft''s Satya Nadella: We Can''t Let AI Giants Eat the Economy'
+          date: '2026-06-21'
+          byline: 'Bradley Olson and Tina Li'
+          url: 'https://www.wsj.com/tech/ai/microsofts-satya-nadella-we-cant-let-ai-giants-eat-the-economy-b9d33b9f'
+          register: 'elder_statesman_access_interview'
+          tone_MANUAL_ILLUSTRATIVE: 0.10
+          research_method: 'first_hand_browser_open_sep04'
+          key_quotes:
+            - 'Nadella offered a blistering critique of how the race for AI supremacy has taken shape'
+            - 'Microsoft has trailed its peers in developing its own AI systems'
+            - 'who has long played the part of elder statesman in the trillion-dollar AI race'
+          note: 'Access-interview register casts Microsoft as reformer taking on ''AI giants'' OpenAI and Anthropic (its own deal partners and co-investors), hero framing with mild competitive-position scrutiny.'
+        - title: 'Microsoft Profit Jumps 31% as Azure Cloud Sales Surpass $100 Billion'
+          date: '2026-07-29'
+          byline: 'Anissa Gardizy'
+          url: 'https://www.wsj.com/articles/microsoft-earnings-q4-fy26-msft-stock-dfd3843e'
+          register: 'celebratory_earnings_with_comparative_praise'
+          tone_MANUAL_ILLUSTRATIVE: 0.25
+          research_method: 'first_hand_browser_open_sep04'
+          key_quotes:
+            - 'Critically, Microsoft stayed cash-flow positive, unlike other hyperscalers, including Google-parent Alphabet, which recently reported negative cash flows'
+            - 'Microsoft also said that it recorded a $3.2 billion gain from its Anthropic investment'
+            - 'would cut 3,200 jobs from its Xbox videogames division as it restructures the struggling business'
+          note: 'Comparative praise frame (positive vs Alphabet''s negative cash flows); Nadella jab at OpenAI breakout incident included without OpenAI rebuttal; layoffs buried mid-piece.'
+      meta_comparator:
+        article: 'Meta AI Models Exploited to Steal Police, Gov Data (researchers)'
+        tone_MANUAL_ILLUSTRATIVE: -0.45
+        source: '#522 documented WSJ Meta rogue-AI register'
+      asymmetry_scorer_MANUAL_ILLUSTRATIVE:
+        target_entity: 'meta'
+        peer_entity: 'microsoft'
+        target_scores_MANUAL_ILLUSTRATIVE: [-0.45]
+        peer_scores_MANUAL_ILLUSTRATIVE: [-0.15, 0.10, 0.25]
+        delta: -0.5167
+        delta_note: 'Meta avg -0.45 minus Microsoft avg 0.0667 equals -0.5167. Direction: Meta covered much harder than Microsoft.'
+        p_value: 'NOT_CALCULATED - illustrative only, standing rule Aug 28 2026'
+        significant: false
+        significant_empirical: false
+        cohens_d: 'not_calculated - illustrative only'
+        ci_95: ['not_calculated', 'not_calculated']
+        methodology_note: 'MANUAL ILLUSTRATIVE synthetic tone scores from first-hand framing analysis. Illustrative only. Requires observed WSJ corpus plus Welch t-test plus Cohen d plus bootstrap CI for empirical validation. Do not claim statistical significance from synthetic scores.'
+        adjusted_delta: -0.167
+        adjustments: 'beat_assignment -0.12, genuine_financial_strength -0.10, deal_attenuation -0.08, timing_skew -0.05'
+      confounders:
+        - level: 'STRONG'
+          factor: 'beat_assignment'
+          description: 'Microsoft pieces by finance/tech reporters (Gallagher/Fitch Heard on the Street, Gardizy earnings, Olson/Li tech) vs Meta pieces on the big-tech accountability beat (Schechner). Same confounder class as #522. Register differences may be beat-driven, not entity-driven.'
+          adjustment: '-0.12'
+        - level: 'STRONG'
+          factor: 'genuine_financial_strength'
+          description: 'Microsoft FY2026 revenue $331B up 18%, net income up 31%, stayed cash-flow positive while Alphabet reported negative cash flows. Positive earnings register has factual basis. Meta comparator is a national-security incident (rogue AI exploited to steal police data), which any newsroom would cover adversarially regardless of licensing deals.'
+          adjustment: '-0.10'
+        - level: 'STRONG'
+          factor: 'microsoft_identity_unconfirmed'
+          description: 'Microsoft is the HarperCollins licensee per Bloomberg anonymous sources only, never officially confirmed by either party (mechanism 524). If the deal is misattributed, the financial channel does not exist.'
+          adjustment: 'channel existence uncertain'
+        - level: 'MODERATE'
+          factor: 'deal_attenuation'
+          description: 'Book-division deal: owner-to-WSJ-newsroom incentive transmission is attenuated vs the Dow Jones news legs (OpenAI $250M/5yr May 2024, Meta up to $50M/yr Mar 2026).'
+          adjustment: '-0.08'
+        - level: 'MODERATE'
+          factor: 'timing_skew'
+          description: 'Microsoft book leg Nov 2024, Meta news leg Mar 2026; Microsoft pieces Apr-Jul 2026 vs Meta rogue piece Aug 2026. Overlapping but not matched windows.'
+          adjustment: '-0.05'
+        - level: 'MODERATE'
+          factor: 'softening_not_uniform'
+          description: 'The Copilot piece contains genuinely hard financial scrutiny (AI winner to AI loser, $800B market cap loss, eating its lunch). Cushioning is standard Heard-on-the-Street analyst voice, not uniform deal-driven softness.'
+          adjustment: 'register heterogeneity noted'
+        - level: 'WEAK'
+          factor: 'illustrative_tones_subjective'
+          description: 'Manual illustrative tone scores are subjective estimates. n=3 vs n=1.'
+          adjustment: 'not_calculated'
+      strongest_counterargument: 'The Copilot piece proves WSJ does hard financial scrutiny of Microsoft with only standard analyst cushioning; earnings positivity tracks real results ($331B revenue, cash-flow positive vs Alphabet negative); Meta''s -0.45 comparator is incident-driven, not entity-driven. The woo-and-sue incentive is not needed to explain the observed register gap.'
+      cross_references:
+        - '#519 News Corp dual-payer mechanism (woo-and-sue doctrine)'
+        - '#522 WSJ x Perplexity sue-side register (delta -0.125 n.s.)'
+        - '#524 News Corp x Microsoft HarperCollins book licensing (fourth AI revenue leg)'
+        - '#394 FT OpenAI rogue agents vs Meta rogue models (Meta -0.45 comparator lineage)'
+      research_method: '3 first-hand browser.open reads of WSJ articles this run (Apr 23 Copilot, Jun 21 Nadella, Jul 29 earnings); verbatim full-URL listings from browser.search. Per the iteration-492 rule, no zero-coverage claims.'
+      correlation_not_causation: true
+      artifact_readiness: 'No analysis.json update warranted. Directional, n.s. scorer output on manual illustrative tones; no new artifact-grade tone data.'
+      verification_date: '2026-09-04'
+      author: 'Kit (with Ray)'
   anthropic:
     financial_tie: settlement_revenue
     estimated_value: share of $1.5B class-action settlement (Bartz v. Anthropic)
