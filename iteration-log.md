@@ -1,3 +1,31 @@
+#540 Type D: Scorer Cross-Mechanism Consistency Extended to #537 (-0.30) and #538 (-0.0875), Standing-Rule Discipline Ratchet, 536-539 Rotation-Cycle Guard, 536-540 Doc-Sync Ratchet - Sep 5 2026 12:00 PDT
+
+**Date:** 2026-09-05 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 539 C -> 540 D)
+**Type:** D - Test & Verify (full suite regression + new guard file)
+
+**Findings:**
+1. **Scorer cross-mechanism consistency extended to the two newest quantitative mechanisms** (extends #530's lock / #535's #532-#533 extension). The asymmetry engine's mean-difference arithmetic reproduces the logged MANUAL ILLUSTRATIVE deltas: #537 Guardian same-day (-0.30, Meta [-0.45,-0.40] vs OpenAI [-0.15,-0.10], n=2v2, abs=1e-4 per #530 convention) and #538 Cade Metz (-0.0875, Meta [-0.05,-0.25] vs OpenAI [-0.05,-0.05,0.0,-0.15], n=2v4). Engine bootstrap CIs encode the right qualitative structure: #537's CI (-0.35,-0.25) excludes 0 (well-separated), #538's CI (-0.225,0.05) straddles 0 (falsification-family near-symmetry, |delta| < 0.10 corroborated). #532 (-0.075) and #533 (-0.05) re-locked; all four quantitative deltas share the Meta-harsher sign.
+2. **Standing-rule discipline ratchet (new guard class):** the engine computes t/p/CI on the logged arrays - for #537 n=2v2 the engine's own p is ~0.0136 - but significance is NOT promoted to a finding. Pinned cross-run: #537 and #538 YAML scorer sections carry p_value NOT_CALCULATED, is_significant False, and their logged arrays byte-match the engine inputs used in the consistency tests. This separates engine arithmetic (drift-detectable) from significance claims (reserved) as a durable repo invariant for all manual-illustrative mechanisms authored under the Aug 28 2026 rule.
+3. **Qualitative boundary pinned for #539:** the DDM triple-payer mechanism carries no asymmetry_scorer section and statistical_discipline keeps tone_scores NOT_SCORED - scorer consistency explicitly does not apply to qualitative Type C mappings (test would fail loudly if a future edit smuggled a tone delta into it).
+4. **Rotation-cycle guard (new):** format-agnostic git-subject parsing (three observed shapes, per #535) verifies the four newest Type commits are exactly [(539,C),(538,B),(537,A),(536,E)] newest-first with A->B->C->D->E->A adjacency between consecutive pairs. Complements #510's generic five-commit consecutiveness guard with a pinned window.
+5. **Doc-sync ratchet:** README + ARCHITECTURE per-file rows for the 536-540 window (536-539 rows were already present from the #539 run; this run added the #540 row); count headers re-synced to authoritative count_stats.py --pytest totals; --check green.
+
+**Full suite:** a literal whole-tree sweep was started twice this run but progresses at ~4%/14min on the full 28,876-test corpus (est. multi-hour wall clock, exceeding the run window), so verification followed the #535 precedent: targeted regression over the structurally relevant files plus the new guard file plus the authoritative count gate. Result: CLEAN. New #540 file 25 passed (venv pytest, -p no:cacheprovider; 1 initial count-gate failure was the expected stale-header tripwire, repaired by re-syncing the three headers to 28876/868, then green). Targeted regression over 10 files (#505, #510, #526, #532, #533, #535, #537, #538, #539, #540): 312 passed, 0 failed (426s). No stale-test repairs needed this run - the #535 repairs held. Zero failures outside this window were asserted or claimed; the sweep, not the whole tree, is what this run verified.
+
+**Statistical discipline:** MANUAL ILLUSTRATIVE per Aug 28 2026 standing rule; p_value NOT_CALCULATED for manual deltas; is_significant False throughout. No analysis.json update - no new asymmetry findings (Type D infra run).
+
+**Rotation Transparency:** Previous entry #539 Type C at 11:00 PDT Sep 5 2026 (commit 4e452fe verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 536 E 08:00, 537 A 09:00, 538 B 10:00, 539 C 11:00. Selected Type D.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_d_540 files on disk before this run (glob verified); no #540 in git log --grep; scorer consistency never covered #537/#538 (repo grep for "537" in scorer tests returned only their own files); no prior rotation-adjacency window guard; 531-535 doc-sync window from #535 extended, not duplicated.
+
+**New Type D files:** `tests/test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` - 5 classes, 25 tests.
+
+**Test file:** `tests/test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` - 25 tests, all passed (venv pytest)
+
+**Cumulative:** mechanism #540 logged; 28876 tests across 868 test files (authoritative pytest-collected; README + ARCHITECTURE synced, --check passes).
+
+---
+
 #539 Type C: Dotdash Meredith (People Inc) Triple-Payer AI Revenue Architecture - OpenAI Flat-Fee, Meta Dec 2025, Microsoft PCM Pay-Per-Use; Google Adversarial Traffic Leg - Sep 5 2026 11:00 PDT
 
 **Date:** 2026-09-05 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 538 B -> 539 C)

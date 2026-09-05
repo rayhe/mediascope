@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 28851 | Across 867 test files |
+| Tests | 28876 | Across 868 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **28851 tests** across 867 test files, each covering a different analytical capability:
+MediaScope has **28876 tests** across 868 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1382,6 +1382,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_a_537_guardian_meta_openai_same_day_register_asymmetry_sep05_9am.py` | 29 | Type A #537: Guardian Meta-vs-OpenAI same-day register asymmetry (Aug 18 2026 natural experiment) - deal partner in corporate-stewardship register vs $0-deal company in accountability register, severity ordering inverts, mirror-verified no-disclosure of Feb 2025 partnership, delta -0.30 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 09:00 PDT |
 | `test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py` | 52 | Type B #538: Cade Metz (NYT) litigation-adversary register symmetry - OpenAI covered in neutral launch/scoop register despite NYT lawsuit vs OpenAI; Science-desk discovery framing extends mechanism 471 to reporter level; delta -0.0875 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 10:00 PDT |
 | `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
+| `test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` | 25 | Type D #540: scorer cross-mechanism consistency extended to #537 (-0.30) and #538 (-0.0875) with engine bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p computed but not promoted - YAML keeps NOT_CALCULATED/n.s.); #539 qualitative boundary (no tone delta); 536-539 rotation-cycle adjacency guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |

@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 28851 tests across 867 test files (all from real articles)
+├── tests/                       # 28876 tests across 868 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_advance_dual_asset_monetization_aug8.py  # Advance Publications dual-asset AI monetization: Reddit Q2 2026 earnings + Condé Nast strategic pivot + Sam Altman Reddit conflict
 │   ├── test_advance_total_ai_financial_exposure_index_aug11.py  # Advance Publications Total AI Financial Exposure Index: Q2 2026 Reddit earnings quantification + litigation pipeline + Condé Nast editorial cost-reduction + composite exposure index
@@ -1134,6 +1134,7 @@ mediascope/
 │   ├── test_type_a_537_guardian_meta_openai_same_day_register_asymmetry_sep05_9am.py  # Type A #537: Guardian same-day register asymmetry (Aug 18 2026) - deal partner in stewardship register vs $0-deal company in accountability register, delta -0.30 illustrative n.s. - Sep 5 2026 09:00 PDT - 29 tests, 5 classes
 │   ├── test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py  # Type B #538: Cade Metz (NYT) litigation-adversary register symmetry, Science-desk discovery framing extends mechanism 471 to reporter level - Sep 5 2026 10:00 PDT - 52 tests, 7 classes
 │   ├── test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py  # Type C #539: DDM (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee + Microsoft PCM pay-per-use (Nov 2025) + Meta Dec 2025; Google adversarial traffic leg; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT - 32 tests, 7 classes
+│   ├── test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py  # Type D #540: scorer consistency for #537 (-0.30) and #538 (-0.0875) with bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p not promoted); #539 qualitative boundary; 536-539 rotation-cycle guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT - 25 tests, 5 classes
 │   ├── test_vittoria_elliott_cross_entity_aug30.py  # Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED
 │   ├── test_will_knight_ai_coverage_allocation_gap_421_aug31.py  # Cross-entity analysis: Will Knight (WIRED) - Mechanism #421
 │   ├── test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py  # Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation
