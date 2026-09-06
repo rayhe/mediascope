@@ -1,3 +1,26 @@
+#558 Type B: Tim Bradshaw (FT) Business-Register Constancy - No Journalist-Level Anti-Meta Bias (delta +0.133 MANUAL ILLUSTRATIVE n.s., Falsification/Control Extending #548/#553 to FT's Non-Meta-Beat Correspondent) - Sep 6 2026 06:00 PDT
+
+**Date:** 2026-09-06 06:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 557 A -> 558 B)
+**Type:** B - Journalist Cross-Entity Tracking (Tim Bradshaw, Financial Times global technology correspondent)
+
+**Finding:** Bradshaw applies a constant business-press register to Meta and non-Meta entities: neutral-to-mildly-positive deal/partnership/product framing, no standing adversarial vocabulary against Meta. Three Meta items: (1) Meta x K-ID AgeKey age-verification partnership, multi-country rollout planned 2026 (2025-12-17, +0.10, byline verbatim in Techmeme page title, verified by browser.open); (2) Instagram Threads launch take, "throwback to the giddy early days of Twitter", Meta infrastructure as advantage over bug-plagued smaller rivals (2023-07-06, +0.20, byline verbatim, browser.open verified); (3) Sheryl Sandberg and Nick Clegg join Nvidia-backed Nscale board after $2B Series C (2026-03-09, +0.05, Meta-personnel item, byline secondary-attested via BuzzSumo, disclosed). Three non-Meta items: (1) OpenAI/Jony Ive secretive AI device "critical problems" could delay screenless device (co-byline x4, sympathetic "building hardware is hard" framing, -0.10, date not verified, never guessed); (2) Apple acquires Q.AI for nearly $2B, "race to build AI devices", closing the gap "with rivals such as Meta, Google, and OpenAI in next-generation devices" (2026-01-29, +0.20); (3) OpenAI scales back, reworks $500B Stargate project (2026-04-09, -0.15, byline/date secondary-attested, disclosed).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Meta target [+0.10, +0.20, +0.05] avg 0.1167 vs non-Meta [-0.10, +0.20, -0.15] avg -0.0167: delta +0.1333 Meta marginally softer. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False.
+
+**Falsification/control case:** Runs against the journalist-level anti-Meta bias hypothesis (Meta marginally SOFTER, consistent with #553's direction) and against simplistic financial determinism: FT's OpenAI licensing deal (Apr 29, 2024, in-corpus) does not buy uniformly soft OpenAI coverage from Bradshaw (his OpenAI items score -0.10, -0.15). Extends #548/#553 (WIRED surveillance-desk reporters) to the FT's non-Meta-beat technology correspondent. Wearables hook: his two AI-hardware items frame competitor wearables aspirationally/sympathetically while he never covers Meta wearables himself; Meta glasses coverage sits with Murphy's beat (adversarial register), feeding the beat-assignment mechanism story from #552/#557. Strongest counterargument: beat-assignment artifact - Murphy holds FT's Meta beat, Bradshaw's Meta touches are personnel/partnership/launch never investigations, so softness may reflect topic assignment not personal evenhandedness. Confounders: genre (all six are deals/partnerships/product news), time mismatch (Threads 2023 vs rest 2025-26), co-bylines dilute voice, Nscale is personnel-adjacent, n=3 per side.
+
+**Research method:** 6 browser.search query sets this run (Bradshaw Meta/OpenAI/Apple/Anthropic/Google beats, Muck Rack, Nscale) + 2 browser.open byline verifications (both Techmeme pages carry "(Tim Bradshaw/Financial Times)" verbatim in page titles). All URLs carried verbatim from tool output; no ft.com URLs constructed; byline and date gaps disclosed per item, never filled by guessing. No zero-coverage claims per iteration-492 rule.
+
+**New Type B files:** `tests/test_type_b_558_tim_bradshaw_ft_business_register_constancy_sep06.py` - 5 classes, 24 tests (mechanism shape, source attribution, scorer arithmetic, interpretation discipline, rotation/log). YAML insertion as new `key_journalists` Tim Bradshaw entry with `cross_entity_coverage_analysis` block in profiles/financial-times.yaml (mechanism_id 558); YAML re-parse validated, 4-decimal avg rounding verified within 1e-3 tolerance, em-dash discipline checked.
+
+**Artifact readiness:** No analysis.json update warranted. Control-case mechanism with MANUAL ILLUSTRATIVE scorer; directional only, not artifact-grade.
+
+**Rotation Transparency:** Previous entry #557 Type A at 05:00 PDT Sep 6 2026 (commit 66f3d95 verified present via git log before this run's commit). Per rotation A->B->C->D->E, after A comes B. Selected Type B.
+
+**Novelty Verification:** Zero tim_bradshaw keys in financial-times.yaml before this run (grep verified); no #558 in git log (grep verified); zero test_type_b_558 files on disk before this run (glob verified).
+
+---
+
 #557 Type A: The Verge x Anthropic Aspirational-Register vs Meta Deficit Register - First Dedicated Type A Under Verge competitor_relationships.anthropic (delta +0.483 MANUAL ILLUSTRATIVE n.s., Control Case Against Financial Determinism) - Sep 6 2026 05:00 PDT
 
 **Date:** 2026-09-06 05:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 556 E -> 557 A)

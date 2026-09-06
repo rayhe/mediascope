@@ -680,6 +680,165 @@ key_journalists:
       now feeds into an independent one''s editorial ecosystem.
 
       '
+- name: Tim Bradshaw
+  beat: Global technology correspondent; AI deals, M&A, Big Tech strategy
+  location: San Francisco (previously Los Angeles)
+  known_patterns: 'Global technology correspondent at FT; previously SF bureau chief
+    and Los Angeles-based tech/media reporter (Poynter profile, 2017). Covers AI
+    industry deals, M&A, and Big Tech strategy across entities (Apple, OpenAI,
+    Meta, Anthropic, Google). Paired with MIT Technology Review''s Will Douglas
+    Heaven for the "State of AI" editorial partnership (Oct 29, 2025).
+    Business-reporting tone, deal-focused framing; no company-specific
+    adversarial posture detected in Type B #558.
+
+    '
+  cross_entity_coverage_analysis:
+    mechanism_id: 558
+    iteration: 558
+    type: 'Type B - Journalist Cross-Entity Tracking'
+    journalist: Tim Bradshaw
+    date_analyzed: '2026-09-06'
+    finding: 'Bradshaw applies a constant business-press register to Meta and
+      non-Meta entities: neutral-to-mildly-positive deal, partnership, and
+      product framing with no standing adversarial vocabulary against Meta.
+      Meta avg +0.117 vs non-Meta avg -0.017, delta +0.133 (Meta marginally
+      softer), MANUAL ILLUSTRATIVE, is_significant False. Falsification and
+      control case: runs against the journalist-level anti-Meta bias hypothesis
+      and against simplistic financial determinism (FT''s OpenAI licensing deal
+      of Apr 29 2024, in-corpus, does not buy uniformly soft OpenAI coverage
+      from Bradshaw; his two OpenAI items score -0.10 and -0.15).
+
+      '
+    meta_coverage:
+      tone: neutral_to_constructive_business
+      examples:
+      - title: Meta partners with Singapore-based startup K-ID to add its AgeKey
+          age-verification tech to Meta apps, plans multi-country rollout in 2026
+        date: '2025-12-17'
+        date_verified: true
+        framing: neutral_partnership_compliance
+        score: 0.10
+        byline_attribution: direct
+        byline_evidence: Techmeme page title carries "(Tim Bradshaw/Financial
+          Times)" verbatim; verified by browser.open this run
+        source_url: http://www.techmeme.com/251217/p2
+      - title: Instagram Threads launch take; "throwback to the giddy early
+          days of Twitter"; Meta infrastructure as advantage over bug-plagued
+          smaller rivals
+        date: '2023-07-06'
+        date_verified: true
+        framing: constructive_product_launch
+        score: 0.20
+        byline_attribution: direct
+        byline_evidence: Techmeme page title carries "(Tim Bradshaw/Financial
+          Times)" verbatim; verified by browser.open this run
+        source_url: https://www.techmeme.com/230706/p17
+      - title: Sheryl Sandberg and Nick Clegg join Nvidia-backed AI start-up
+          Nscale board after $2B Series C
+        date: '2026-03-09'
+        date_verified: true
+        framing: neutral_deal_personnel
+        score: 0.05
+        byline_attribution: secondary_attested
+        byline_evidence: Listed under Bradshaw's recent articles on his
+          BuzzSumo author page; FT origin confirmed by mypresstoday FT mirror;
+          no verbatim byline seen this run, disclosed
+        meta_adjacency: personnel
+        meta_adjacency_note: Meta-personnel item (ex-COO Sandberg, ex-global-affairs
+          president Clegg), not Meta-company coverage; disclosed as weaker
+          evidence than the two direct Meta items
+        source_url: http://mypresstoday.com/gb/en/post/2534/341444399/sheryl-sandberg-and-nick-clegg-join-nvidia-backed-ai-start-up-nscale.html
+    non_meta_coverage:
+      tone: mixed_business_register
+      examples:
+      - title: OpenAI and Jony Ive struggle with technical details on secretive
+          new AI gadget; "critical problems" could delay screenless
+          audio/visual device
+        date: not_verified
+        date_verified: false
+        framing: sympathetic_hardware_difficulty
+        score: -0.10
+        byline_attribution: direct
+        byline_evidence: Spyglass attributes "The Financial Times Tim Bradshaw,
+          Cristina Criddle, Michael Acton, & Ryan McMorrow" verbatim; co-byline
+          x4 dilutes individual voice, disclosed
+        source_url: https://spyglass.org/openai-digital-assistant-device-jony-ive/
+      - title: Apple acquires Israeli start-up Q.AI for nearly $2B; "race to
+          build AI devices"; Apple closing gap "with rivals such as Meta,
+          Google, and OpenAI in next-generation devices"
+        date: '2026-01-29'
+        date_verified: true
+        framing: aspirational_racer
+        score: 0.20
+        byline_attribution: direct
+        byline_evidence: TipRanks attributes "The Financial Times' Tim Bradshaw
+          and Michael Acton report" verbatim
+        wearables_relevance: Q.AI analyzes facial expressions for "silent
+          speech"; framed as accelerating Apple's AI-enabled wearables push
+        source_url: https://www.tipranks.com/news/the-fly/apple-acquires-israeli-start-up-q-ai-for-nearly-2b-ft-reports-thefly
+      - title: OpenAI scales back, reworks $500B Stargate project
+        date: '2026-04-09'
+        date_verified: false
+        framing: business_restructure
+        score: -0.15
+        byline_attribution: secondary_attested
+        byline_evidence: GitHub news-archive mirror notes "FT (Tim Bradshaw,
+          Apr 9)"; TipRanks carries "FT reports" verbatim; date secondary,
+          disclosed
+        source_url: https://www.tipranks.com/news/the-fly/ai-daily-openai-scales-back-reworks-500b-stargate-project-thefly-news
+    scorer:
+      method: manual_illustrative
+      standing_rule: Aug 28 2026
+      meta_scores: [0.10, 0.20, 0.05]
+      meta_avg: 0.1167
+      non_meta_scores: [-0.10, 0.20, -0.15]
+      non_meta_avg: -0.0167
+      delta_meta_minus_non_meta: 0.1333
+      p_value: NOT_CALCULATED
+      cohens_d: NOT_CALCULATED
+      ci_95: NOT_CALCULATED
+      is_significant: false
+      artifact_grade: false
+    interpretation: 'Falsification family; extends #548 and #553 (WIRED
+      surveillance-desk reporters) to the FT''s non-Meta-beat technology
+      correspondent. Bradshaw''s register is constant across entities: business
+      press, neutral-to-mildly-positive, no standing adversarial vocabulary
+      against Meta. Meta marginally softer (+0.1333), against the
+      journalist-level anti-Meta bias hypothesis. Financial-determinism
+      control: FT''s OpenAI deal does not buy uniformly soft OpenAI coverage
+      from him. Wearables hook: his two AI-hardware items (OpenAI/Ive
+      screenless device, Apple Q.AI "race to build AI devices") frame
+      competitor wearables aspirationally or sympathetically, while he never
+      covers Meta wearables himself; Meta wearables/glasses coverage sits with
+      Murphy''s beat, whose register is adversarial. The register divergence
+      across FT reporters on adjacent topics feeds the beat-assignment
+      mechanism story from #552 and #557 rather than a publication-wide
+      posture.
+
+      '
+    strongest_counterargument: 'Beat-assignment artifact. Bradshaw is not FT''s
+      Meta-beat reporter; that is Hannah Murphy, whose Meta register is
+      adversarial per in-corpus analysis. Bradshaw''s Meta touches are
+      personnel, partnership, and product-launch items, never investigations,
+      so the softness could reflect topic assignment rather than personal
+      evenhandedness. His editors assign adversarial Meta topics to Murphy,
+      and he may simply never be asked to write them. The constancy finding
+      therefore tests his register conditional on topic, not his register
+      across all topics.
+
+      '
+    confounders:
+    - 'genre: all six items are deals, partnerships, or product news, inherently neutral-positive; no adversarial-genre items on either side'
+    - 'time_mismatch: Threads item is Jul 2023; the other five are 2025-26'
+    - 'co-bylines: x4 on the Ive device piece, x2 on Q.AI; individual voice diluted'
+    - 'meta_personnel_adjacency: Nscale item is about ex-Meta executives, not Meta the company'
+    - 'n=3 per side: MANUAL ILLUSTRATIVE only, correlation not causation'
+    - 'secondary_attribution: Nscale byline and Stargate byline/date are secondary-attested, disclosed per item'
+    career_sources:
+    - https://www.poynter.org/business-work/2017/are-tech-and-media-becoming-the-same-beat-financial-times-has-a-reporter-in-l-a-to-cover-the-convergence/
+    - https://talkingbiznews.com/they-talk-biz-news/the-ft-is-expanding-its-tech-coverage/amp/
+    - https://www.morningstar.com/news/pr-newswire/20251029dc10721/mit-technology-review-and-the-financial-times-form-strategic-editorial-partnership-to-explore-the-global-impact-of-artificial-intelligence
+    - https://muckrack.com/tim-bradshaw
 known_conflicts:
 - type: ownership_structure
   description: 'Nikkei is employee-owned and privately held, meaning limited financial
