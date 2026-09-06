@@ -1,3 +1,33 @@
+#564 Type C: Amazon x Conde Nast AI Content Licensing Deal (Jul 10 2025) - Multi-Year Rufus Shopping Assistant Agreement, Terms Undisclosed, Second AI-Lab Payer for WIRED's Owner, First Dedicated Amazon Deal Mechanism for a Tracked Publication's Parent - Sep 6 2026 12:00 PDT
+
+**Date:** 2026-09-06 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 563 B -> 564 C)
+**Type:** C - Financial Incentive Mapping (Amazon x Conde Nast Rufus AI licensing)
+
+**Finding:** Amazon signed a multi-year AI content licensing agreement with Conde Nast for its AI shopping assistant Rufus, reported Jul 10 2025 by Digiday (Jessica Davies), six weeks after the NYT x Amazon deal (May 29 2025, mechanism 559). Conde Nast confirmed; Hearst signed a parallel Rufus deal the same week. Terms fully undisclosed (no payment amount, no term length) across all outlets; first Rufus activations expected summer 2025. Named Conde Nast titles in reporting: Vogue, GQ, The New Yorker (Engadget); Hearst scope covers newspapers and magazines (Good Housekeeping, Cosmopolitan, Harper's Bazaar, per Hearst spokesperson). This is the first dedicated Amazon-deal mechanism for a tracked publication's parent (WIRED is a Conde Nast brand, per mechanism 504's brands_in_scope), and it makes Amazon the second AI-lab payer of WIRED's owner after OpenAI (Aug 2024, mechanism 504). Corpus portfolio line has Conde Nast collecting from OpenAI, Amazon (Rufus, Alexa+), Microsoft PCM, and Perplexity, but $0 from Meta.
+
+**Amazon publisher portfolio sequencing:** NYT ($20-25M/yr flat, May 29 2025, mechanism 559) FIRST -> Conde Nast (multi-year Rufus, Jul 2025, this mechanism) SECOND -> Hearst (multi-year Rufus, Jul 2025, same-week parallel) THIRD -> Reach plc (usage-based, Mar 2 2026, mechanism 468) FOURTH. Flat-fee-to-usage-based arc mirrors mechanism 468's framing.
+
+**Analyst framing:** Matt Prohaska (Prohaska Consulting, via Digiday): "Amazon created the commerce media category that everyone else has been trying to copy"; shopping-content publishers are natural bedfellows for Amazon's LLM ambitions; the NYT showed it is playing offense and defense with AI. Conde Nast's second AI deal reads as the same dual posture.
+
+**Directional predictions (predictions, not findings):** Amazon softer (direct payer, tempered by Rufus product-activation scope vs a training/display deal); OpenAI softer (first payer, deeper ChatGPT/SearchGPT display partnership since Aug 2024); Meta neutral to no-deal ($0 to Conde Nast per corpus; Meta's 13-publisher AI portfolio includes News Corp mechanism 549 but no tracked publication's owner); Anthropic zero-deal slot (mechanism 509 re-confirmed Aug 2026); Google neutral to no-deal.
+
+**Magnitude context:** Mechanism 58 derived an estimated Amazon/Rufus contribution of $3-10M/yr within total AI licensing of $14-45M/yr - a corpus derivation, indicative only, not a disclosure; even at the high end it is 0.7-2.25% of Conde Nast's ~$2B revenue, while Lynch named AI licensing a strategic revenue pillar (Oct 2025).
+
+**Asymmetry scorer:** NOT APPLIED. Type C is qualitative structural mapping only; correlation not causation; p_value NOT_CALCULATED; is_significant false; tone scores NOT_SCORED (standing rule Aug 28 2026). No coverage-tone claim: no WIRED post-deal Amazon-tone analysis exists in corpus.
+
+**Confounders Ranked:** STRONG: (1) terms fully undisclosed - payer direction established, magnitude unknown, Amazon leg cannot be weighted against the OpenAI leg; (2) mechanism 58's $3-10M/yr is a derived estimate, not a disclosure - laundering it into a fact is explicitly guarded against. MODERATE: (1) Rufus is a product-activation deal (shopping assistant content surfacing), not model-training or ChatGPT display - different incentive mechanics, weaker editorial-tone prediction than mechanism 504; (2) reporting rests on trade-press publisher confirmations, not a primary Amazon/Conde Nast announcement (deal facts second-hand, bounded per iteration-492 rule); Jul 10 vs Jul 15 date variant between original report and Digiday's 2025 timeline. WEAK: Amazon Rufus leg is not Conde Nast-exclusive (Hearst same week), diluting WIRED-specific inference.
+
+**Research method:** 2 browser.search query sets this run (Conde Nast Amazon Rufus Jul 2025; terms/activation second set), verbatim full-URL listings (6 sources: Digiday original, Digiday 2025 timeline, Engadget, Glossy, Editor and Publisher, the-decoder.com); deal facts via search-result excerpts (second-hand), bounded per iteration-492 rule. 2013 Adweek and 2011 AllThingsD Amazon-Conde Nast items surfaced in results explicitly excluded as non-AI-deal history. No zero-coverage claims.
+
+**New Type C files:** `tests/test_type_c_564_amazon_conde_nast_rufus_licensing_sep06_12pm.py` - 9 classes, 40 tests, all passing (first run green). YAML insertion under entities.amazon as `mechanism_564_amazon_conde_nast_rufus_ai_licensing_deal` (re-parse validated; 5 confounders, 5 predictions, 6 verbatim sources; ASCII-only; zero em dashes). Distinct from mechanism 58 (portfolio dependency INDEX; this is deal-level) and mechanism 504 (first-payer OpenAI deal).
+
+**Artifact readiness:** No analysis.json update warranted. Qualitative structural mapping; directional predictions are predictions, not findings.
+
+**Rotation Transparency:** Previous entry #563 Type B at 11:00 PDT Sep 6 2026 (commit 76564dc verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after B is C. Selected Type C.
+
+**Novelty Verification:** Zero dedicated Amazon x Conde Nast mechanism blocks in competitor-entities.yaml before insertion (grep verified; #559's own novelty check had confirmed this gap); zero test_type_c_564 files on disk before this run (glob verified); no Type C commit with 564 in the title (git log --grep verified); distinct from mechanisms 559, 468, 504, 489, 58, 437, 549 (documented in structural_contrasts).
+
+
 #563 Type B: Alex Heath (The Verge) Register Constancy Across Meta and OpenAI - Deputy-Editor Meta-Beat Reporter With Matched CEO-Level Access to Both Companies, Delta +0.117 MANUAL ILLUSTRATIVE n.s. (Meta Marginally Softer), Falsification/Control Extending #548/#553/#558 to The Verge's Meta Lane - Sep 6 2026 11:00 PDT
 
 **Date:** 2026-09-06 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 562 A -> 563 B)
