@@ -1,3 +1,32 @@
+#549 Type C: News Corp x Meta AI Content Licensing Deal (Mar 2026) - Up To $50M/Yr, At-Least-Three-Year Term - First Dedicated Meta-Leg Formalization of the Quadruple-Revenue Architecture - Sep 5 2026 21:00 PDT
+
+**Date:** 2026-09-05 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 548 B -> 549 C)
+**Type:** C - Financial Incentive Mapping (News Corp x Meta news-content licensing, Mar 4 2026)
+
+**Finding:** The Meta leg of News Corp's quadruple-AI-revenue architecture now has its own first-class competitor-entities mechanism (mechanism 549, under the meta entity) - previously only a bullet inside the #519/#524 quadruple-frame writeups and the news-corp.yaml revenue_relationships list:
+1. Deal terms (this run's browser.search, verbatim full-URL listings, second-hand via search excerpts, bounded): announced Mar 4 2026, broken by WSJ self-report (Alexandra Bruell) - a tracked publication reporting its own parent's deal; Thomson teased at the Morgan Stanley TMT conference the Monday before ('one very public horizontal deal' near, others at an 'advanced stage'). Value: up to $50M/yr (people familiar with the matter; neither company publicly detailed specifics). Term: at least three years. Scope: News Corp US+UK news content (WSJ, NY Post, Barron's, MarketWatch, Times of London, The Sun - Dow Jones news division); Meta AI retrieval + story-archive training. HarperCollins excluded - news-only leg (book leg sits with Microsoft, #524).
+2. Headline annual parity: OpenAI leg (May 2024, >$250M over 5yr, #519) approx $50M/yr vs Meta leg up to $50M/yr - near-identical headline annual values but different structures (five-year reported aggregate vs at-least-three-year 'up to' ceiling from anonymous sources - not strictly comparable); Meta implied aggregate $150M smaller than OpenAI $250M+.
+3. Woo-and-sue Meta application: Thomson doctrine quote ('discount for those who hand themselves in, penalty for those that resist'); Perplexity sued by two News Corp subsidiaries (Oct 2024); Meta is the second 'wooed' flagship AI lab after OpenAI.
+4. Facebook News irony: Meta shut down the Facebook News tab in 2024 and stopped paying publishers for news ~2 years earlier (Piercom); now pays up to $50M/yr for News Corp news content for AI - the pendulum reversed once the buyer became Meta AI instead of Facebook distribution.
+5. Structural significance: News Corp is the ONLY tracked-publication owner WITH a Meta leg (DDM #539 and Vox #544 have Meta $0) - the inverse mirror of the Meta-$0 payer contrasts; completes the parity pair with #519's OpenAI leg.
+
+**Asymmetry scorer:** QUALITATIVE STRUCTURAL MAPPING ONLY - correlation not causation; p_value NOT_CALCULATED; is_significant False; tone_scores NOT_SCORED (standing Type C boundary). No analysis.json update - qualitative, below artifact-grade threshold.
+
+**Directional predictions (predictions, not findings):** Meta softer (direct payer, headline parity with flagship OpenAI leg); OpenAI softer (#519); Microsoft softer (#524); Anthropic adversarial slot (settlement counterparty Thomson celebrates); Google neutral to no-deal; Perplexity adversarial (active suit).
+
+**Confounders Ranked:** STRONG: (1) 'up to $50M' is a ceiling via anonymous sources, not a confirmed payment; (2) no WSJ post-deal Meta coverage-tone analysis in corpus - no coverage effect assertable. MODERATE: (1) WSJ self-report transparency record consistent with editorial-independence norms; (2) no no-deal WSJ counterfactual (only tracked owner with a Meta leg). WEAK: (1) second-hand search excerpts this run; (2) headline parity masks different deal structures.
+**Strongest counterargument:** woo-and-sue is declared News Corp policy (Thomson announced imminence at an investor conference; WSJ sourced own-parent terms to 'people familiar') - the deal implements stated strategy, not purchased coverage; null (WSJ business desk reports owner deals straight) predicts no directional shift.
+
+**Research method:** browser.search this run (2 query sets: deal headline + announcement/terms; verbatim full-URL listings); 9 source URLs (WSJ self-report, Editor&Publisher, Engadget, Mediaweek, TheWrap, Piercom, afaqs, Dataconomy, Press Gazette). Per the iteration-492 rule, no zero-coverage claims.
+
+**New Type C files:** `tests/test_type_c_549_newscorp_meta_50m_yr_deal_sep05_9pm.py` - 8 classes, 34 tests, all passing (1 initial test-logic failure: novelty assertion used singular 'mechanism 524' vs YAML's plural 'mechanisms 519/524' token; fixed as data-assertion correction, not data weakening). Mid-run corrections: two YAML quote-escapes (single-quoted fragment followed by unquoted text; dangling closing quote after edit) caught by parse-before-splice validation; one entity-placement correction (block initially landed in samsung entity - meta section ends at xai:, verified by post-insertion entity grep). YAML insertion validated by full-file re-parse with leaf-type/value assertions.
+
+**Rotation Transparency:** Previous entry #548 Type B at 20:00 PDT Sep 5 2026 (commit ed3a03d verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after B is C. Cycle verified: 545 D 17:00, 546 E 18:00, 547 A 19:00, 548 B 20:00. Selected Type C.
+
+**Novelty Verification:** Zero mechanism_549 in competitor-entities.yaml before insertion (grep verified); zero test_type_c_549 files on disk before this run (glob verified); no Type C commit with 549 in the title (git log --grep verified); zero dedicated News Corp x Meta mechanism (only quadruple-frame bullets in 519/524 + news-corp.yaml revenue bullet); distinct from 519 (OpenAI leg) and 524 (Microsoft HarperCollins leg).
+
+**Doc sync:** README + ARCHITECTURE per-file rows added; count headers re-synced to authoritative `count_stats.py --pytest` numbers: 29135/876 -> 29169/877 (+34 #549). `count_stats.py --check` green. Targeted regression: #519 + #524 Type C files - 41 passed.
+
 #548 Type B: Dhruv Mehrotra Bloomberg-Boomerang Register Constancy - Adversarial Data-Forensics Register Constant Across Meta and Non-Meta Targets (falsifies reporter-level bias, extends #66) - Sep 5 2026 20:00 PDT
 
 **Date:** 2026-09-05 20:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 547 A -> 548 B)

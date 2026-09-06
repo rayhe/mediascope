@@ -10509,6 +10509,175 @@ entities:
       - https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/
       - https://www.cnn.com/2026/08/27/tech/meta-settlement-impact-on-teens-business
       - https://www.marketwatch.com/story/metas-stock-rises-as-the-company-settles-in-social-media-addiction-trial-78abdfbf
+    mechanism_549_newscorp_meta_50m_yr_deal:
+      mechanism_id: 549
+      iteration: 549
+      rotation: Type C
+      date_analyzed: '2026-09-05'
+      time_pdt: '21:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: News Corp x Meta AI Content Licensing Deal (Mar 2026) - Up To $50M Per Year, At-Least-Three-Year Term, Meta Leg of the Quadruple-Revenue Architecture
+      type: financial_incentive_mapping
+      type_c_focus: Deal structure and terms of the News Corp x Meta news-content
+        licensing agreement; headline annual value parity with the OpenAI leg;
+        WSJ self-report of its own parent's deal; the woo-and-sue doctrine's
+        Meta application; directional softening predictions for WSJ Meta coverage
+        (predictions, not findings). Extends mechanisms 519 (OpenAI leg) and 524
+        (quadruple-revenue frame) with the first dedicated competitor-entities
+        formalization of the Meta leg - previously only a bullet inside the
+        quadruple frame and the news-corp.yaml revenue_relationships list.
+      announcement_date: '2026-03-04'
+      broke_by: Wall Street Journal self-report (Alexandra Bruell) - a tracked
+        publication reporting its own parent's AI licensing deal
+      thomson_tease: Robert Thomson teased at the Morgan Stanley Technology Media
+        and Telecom conference the Monday before, saying 'one very public
+        horizontal deal' was near and others were at an 'advanced stage'
+      deal_terms:
+        value: up to $50 million per year - reported by people familiar with the
+          matter; neither company publicly detailed financial specifics
+          (companies confirmed the multiyear deal but declined terms)
+        term: at least three years (multiyear pact); $150M headline aggregate
+          implied by 50M x 3 (Dataconomy), not company-stated
+        scope: News Corp news content from the U.S. and the U.K. - The Wall
+          Street Journal, New York Post, Barron's, MarketWatch, The Times of
+          London, The Sun (Dow Jones news division)
+        use_cases: retrieve new information for users of Meta AI products;
+          train on other content such as story archives
+        book_division_excluded: HarperCollins not covered - this leg is
+          news-licensing only; the book-licensing leg sits with Microsoft
+          (mechanism 524)
+      headline_value_parity:
+        openai_leg: more than $250 million over five years, May 2024
+          (mechanism 519) - approx $50M per year headline
+        meta_leg: up to $50 million per year, Mar 2026 - approx $50M per year
+          headline ceiling
+        parity_note: the two flagship AI-payer legs carry near-identical
+          headline annual values ($50M/yr), though the OpenAI figure is a
+          five-year reported aggregate and the Meta figure is a per-year
+          'up to' ceiling from anonymous sources - not strictly comparable
+        aggregate_difference: five-year term vs at-least-three-year term means
+          Meta's implied headline aggregate ($150M) is smaller than OpenAI's
+          ($250M+)
+      woo_and_sue_meta_application:
+        doctrine_quote: 'We have what you might call a woo and a sue strategy.
+          We will woo you. We would like you to be our partner. But if you are
+          stealing our stuff, we are going to sue you. So there will be a
+          discount for those who hand themselves in, and there will be a
+          penalty for those that resist. (Robert Thomson, Engadget)'
+        sue_counterpoint: two News Corp subsidiaries sued Perplexity for
+          copyright infringement (Oct 2024); Thomson is a longtime critic of
+          AI companies relying on third-party content
+        meta_as_wooed: Meta is the second 'wooed' flagship AI lab after OpenAI
+      facebook_news_irony: Meta shut down its Facebook News tab in 2024 and
+        stopped paying publishers for news approximately two years earlier
+        (Piercom); the company now pays up to $50M per year for News Corp news
+        content for AI - the news-payment pendulum reversed once the buyer
+        became Meta AI instead of Facebook distribution
+      meta_other_deals: Meta disclosed completed deals with People Inc., USA
+        Today, CNN and Fox News, among others; terms of those deals were not
+        disclosed (per the WSJ report itself)
+      directional_predictions:
+        - 'Meta: softer (direct payer; headline parity with the OpenAI
+          flagship leg; largest single-year AI payment ceiling reported for
+          any Meta publisher deal)'
+        - 'OpenAI: softer (flagship $250M over five years leg, mechanism 519)'
+        - 'Microsoft: softer (HarperCollins book-licensing leg, mechanism 524)'
+        - 'Anthropic: adversarial slot (settlement counterparty Thomson
+          publicly celebrates on earnings calls)'
+        - 'Google: neutral to no-deal (no News Corp AI revenue leg)'
+        - 'Perplexity: adversarial (active copyright suit from two News Corp
+          subsidiaries)'
+      predictions_not_findings: true
+      structural_contrasts:
+        - Mechanism 519 (News Corp x OpenAI dual-payer woo-and-sue - the OpenAI
+          leg this Meta leg completes the parity pair with)
+        - Mechanism 524 (quadruple-revenue frame - this mechanism formalizes
+          leg 2 as a first-class mechanism instead of a quadruple-frame bullet)
+        - Mechanisms 539/544 (DDM and Vox dual/multi-payer owners with Meta $0
+          - News Corp is the ONLY tracked-publication owner WITH a Meta leg,
+          the inverse mirror of the Vox DDM contrast)
+        - news-corp.yaml revenue_relationships (Meta leg already listed there
+          as verified true; this mechanism is the competitor-entities
+          formalization)
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: "'up to $50M' is a ceiling reported via anonymous sources,
+          not a confirmed payment; actual amounts could be substantially
+          lower, and neither company confirmed financial specifics"
+      - rank: 2
+        strength: strong
+        confounder: no WSJ post-deal Meta coverage-tone analysis exists in
+          the corpus, so no coverage effect can be asserted from this mechanism
+          alone
+      - rank: 3
+        strength: moderate
+        confounder: WSJ self-reporting its own parent's deal creates a
+          transparency record consistent with editorial independence norms -
+          the paper disclosed the deal and sourced terms to 'people familiar'
+          rather than a company statement
+      - rank: 4
+        strength: moderate
+        confounder: News Corp is the only tracked owner with a Meta leg, so
+          no no-deal WSJ counterfactual exists; symmetric-softening
+          predictions cannot be tested within this corpus against an
+          equivalent non-payer baseline
+      - rank: 5
+        strength: weak
+        confounder: all facts this run are second-hand via search-result
+          excerpts (no first-hand page opens); dates and terms bounded to
+          retrieved text
+      - rank: 6
+        strength: weak
+        confounder: the headline annual parity ($50M/yr both) masks different
+          deal structures (five-year reported aggregate vs at-least-three-year
+          'up to' ceiling) - the OpenAI leg's aggregate commitment is larger
+      strongest_counterargument: News Corp publicly declares the woo-and-sue
+        doctrine as its stated strategy, so the Meta deal implements declared
+        policy rather than purchasing favorable coverage; Thomson announced
+        the deal's imminence at an investor conference and WSJ reported its
+        own parent's terms from 'people familiar' - the same scrutiny the
+        paper applies to others; Meta is a repeat declared-woo target
+        alongside OpenAI. The null (WSJ business desk reports owner deals
+        straight, no tone effect) predicts no directional shift.
+      cross_references:
+      - Mechanism 519 (OpenAI leg, dual-payer baseline, woo-and-sue doctrine)
+      - Mechanism 524 (quadruple-revenue frame, HarperCollins Microsoft leg,
+        Anthropic settlement leg)
+      - Mechanisms 539/544 (Meta-$0 payer mirrors at DDM/Vox)
+      - news-corp.yaml revenue_relationships (Meta leg verified bullet)
+      - meta_ai_deals partners list (Meta international expansion context)
+      novelty_verification:
+      - Zero News Corp x Meta mechanism in competitor-entities.yaml before
+        insertion (repo grep verified - only quadruple-frame bullets in
+        mechanisms 519/524 and the news-corp.yaml revenue bullet)
+      - Zero test_type_c_549 files on disk before this run (glob verified)
+      - No Type C commit with 549 in the title (git log --grep verified)
+      - Distinct from mechanism 519 (OpenAI leg) and 524 (Microsoft
+        HarperCollins leg) - this is the first first-class formalization of
+        the Meta leg
+      statistical_discipline: 'qualitative structural mapping only; correlation
+        not causation; p_value NOT_CALCULATED; is_significant False; tone_scores
+        NOT_SCORED'
+      research_method: browser.search this run (2 query sets, verbatim full-URL
+        listings); all items via search-result excerpts, second-hand and marked
+        bounded in-mechanism; per the iteration-492 rule, no zero-coverage claims
+      source_urls:
+      - https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+      - https://www.editorandpublisher.com/stories/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year,260471
+      - https://www.engadget.com/ai/meta-signs-a-multimillion-dollar-ai-licensing-deal-with-news-corp-234157902.html
+      - https://www.mediaweek.com.au/meta-to-pay-news-corp-up-to-us50m-a-year-for-ai-content
+      - https://www.thewrap.com/media-platforms/journalism/news-corp-meta-ai-content-deal/
+      - https://www.piercom.com/insight/meta-deal-news-corp-trusted-journalism-drives-ai-systems/
+      - https://www.afaqs.com/news/digital/meta-signs-multi-year-ai-content-licensing-deal-with-news-corp-11177406
+      - https://dataconomy.com/2026/03/04/meta-signs-150-million-ai-content-deal-with-news-corp/
+      - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+      caution: Structural mapping only. Documents the deal terms, headline
+        value parity with the OpenAI leg, WSJ self-report, woo-and-sue Meta
+        application, and directional predictions, not editorial capture. No
+        coverage-tone claim is made.
+      test_file: tests/test_type_c_549_newscorp_meta_50m_yr_deal_sep05_9pm.py
   xai:
     display_name: xAI
     aliases:
