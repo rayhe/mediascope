@@ -3647,6 +3647,135 @@ competitor_relationships:
     description: "AI content licensing deal. Amazon uses NYT articles, NYT Cooking, and The Athletic content for Rufus AI shopping assistant and other AI products."
     source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
     coverage_prediction: "softer"
+    mechanism_567_nyt_amazon_licensing_payer_adversarial_register_vs_meta_bifurcation_sep06:
+      mechanism_id: 567
+      date_analyzed: '2026-09-06'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 567
+      iteration_type: A
+      iteration_time: '2026-09-06 15:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The New York Times
+      competitor_pair: 'Amazon vs Meta'
+      author: 'Kit (with Ray)'
+      finding: 'First dedicated Type A mechanism under competitor_relationships.amazon in nytimes.yaml, which previously held only financial metadata (licensing tie, estimated $20-25M per year, direction receiving, coverage_prediction softer, mapped in #559). The New York Times applies an ADVERSARIAL register to Amazon despite Amazon being the AI licensing payer. Two Amazon data points: (1) NYT reporting by Karen Weise published Oct 22 2025 on internal Amazon board documents describing plans to avoid adding more than 500,000 jobs by 2033 and a robotics goal of automating 75 percent of operations, framed as an aggressive corporate culture of labor displacement, with Amazon responding that the documents were incomplete (NPR interview transcript with Weise; The Daily episode Nov 3 2025 titled Amazons Robot Takeover); (2) NYT reporting Jul 30 2026 on Amazon and Google AI data center spending, framing the capital outlay as investor jitters about whether the spending will pay off. Three Meta comparators from the in-corpus baseline: (1) Meta open-source AI philosophy positive strand per mechanism #69; (2) NYT Meta AI voluntary-review holdout coverage Jun 23 2026, adversarial -0.65; (3) NYT Arena prediction-markets scoop Jun 26 2026, neutral 0.0. MANUAL ILLUSTRATIVE delta -0.3167 (Amazon harsher than Meta by 0.32). Financial predictor check: Amazon pays the NYT an estimated $20-25M per year for AI content licensing covering NYT editorial, NYT Cooking, and The Athletic content for Amazon AI products including Rufus (announced May 29 2025, #559). The money-sympathy direction is INVERTED for the actual payer: the entity writing the check absorbs adversarial labor-investigative coverage and skeptical AI-capex coverage. This is a control case against financial determinism extending #562 (NYT x Google, $0 tie) to the paying counterparty, joining #552, #557, and #193. The registers look publisher-posture instrumental per #471: the Times takes Amazon licensing money for training data while covering Amazon adversarially, the same stance discipline that keeps the anti-OpenAI suit active while non-lawsuit OpenAI coverage stays neutral. Correlation is not causation.'
+      financial_relationship:
+        amazon_direct: 'Estimated $20-25M per year Amazon to NYT AI content licensing (announced May 29 2025, #559), direction receiving for the Times'
+        nyt_openai_microsoft_litigation: 'NYT sued OpenAI and Microsoft Dec 2023 for copyright infringement (ongoing), the context that makes the positive Meta open-source strand instrumental per mechanism #69'
+        meta_financial: '$0 AI licensing deal, no-deal'
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. The money-sympathy direction is INVERTED here: the paying counterparty (Amazon, $20-25M per year) coincides with the harsher register, which falsifies naive financial determinism for this lane. This mechanism is a control case against financial determinism, extending #562 (NYT x Google, $0 tie) to the actual payer, joining #552, #557, and #193.'
+        editorial_independence_note: 'The New York Times editorial standards require source verification and balance. No evidence of direct directive linking the Amazon licensing relationship to Amazon coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      nyt_amazon_sources_sep06_2026:
+        - title: 'NYT reporting: Amazon plans to use robots to avoid adding more than 500,000 jobs'
+          date: '2025-10-22'
+          reporter: 'Karen Weise'
+          url: 'https://www.cfpublic.org/2025-10-22/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs'
+          url_source: 'secondary NPR transcript, verbatim Full-URL listing this run, interview with NYT reporter Karen Weise about her NYT reporting on Amazon internal documents; duplicate publications at https://www.knkx.org/2025-10-22/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs and https://www.npr.org/2025/10/22/nx-s1-5519812/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs'
+          framing: 'labor_displacement_investigative'
+          tone_manual_illustrative: -0.50
+          language:
+            - 'avoid adding more than 500,000 jobs by 2033'
+            - 'automating 75 percent of its operations'
+            - 'aggressive corporate culture'
+            - 'documents were incomplete'
+          notes: 'Adversarial labor-investigative register toward the licensing payer. The Daily episode Nov 3 2025 (https://www.iheart.com/podcast/326-the-daily-28076606/episode/amazons-robot-takeover-304471226/) reproduces the NYT reporting as Amazons Robot Takeover, describing Amazon plans to replace more than half a million jobs. Both secondary sources explicitly attribute the underlying reporting to The New York Times. The Oct 22 2025 publication date postdates the May 29 2025 licensing deal.'
+        - title: 'NYT: jitters growing among investors about Amazon and Google AI data center spending'
+          date: '2026-07-30'
+          url: 'https://www.nytimes.com/2026/07/30/technology/amazon-google-ai-data-center-spending.html'
+          url_source: 'URL surfaced verbatim inside third-party GitHub markdown attribution (https://github.com/joewpb/soflodigital/blob/main/ai/news/2026-08-06-briefing.md) quoting the NYT piece: jitters are growing among investors about the scale of the outlay. nytimes.com itself was not fetched first-hand this run; provenance disclosed.'
+          framing: 'business_skeptical_investor_jitters'
+          tone_manual_illustrative: -0.30
+          language:
+            - 'jitters are growing'
+            - 'whether all that spending will pay off'
+          notes: 'Skeptical business register toward Amazon AI capital expenditure (Amazon and Google plan more than $1.5 trillion combined through 2027). Milder than the labor item but still negative-facing; no softening signal for the payer.'
+      nyt_meta_sources_sep06_2026:
+        - title: 'Meta open-source AI philosophy positive strand'
+          date: 'corpus'
+          url: 'in-repo mechanism #69 pointer'
+          url_source: 'corpus pointer per mechanism #69, Meta coverage is BIFURCATED by topic with open-source AI philosophy receiving POSITIVE framing serving the anti-OpenAI litigation narrative.'
+          framing: 'open_source_philosophy_positive'
+          tone_manual_illustrative: 0.40
+          language:
+            - 'open-source philosophy positive'
+            - 'serves anti-OpenAI litigation narrative'
+          notes: 'Instrumental positive strand. Meta gets the softer register where its stance is useful to the Times litigation posture against OpenAI.'
+        - title: 'NYT Meta AI voluntary review and government review holdout'
+          date: '2026-06-23'
+          url: 'https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html'
+          url_source: 'in-repo corpus pointer, profiles/nytimes.yaml line 1603, with full text at examples/sample_output/nyt_meta_ai_voluntary_review_2026_06_23_article.txt and government-review holdout variant.'
+          framing: 'ai_execution_adversarial_scrutiny'
+          tone_manual_illustrative: -0.65
+          language:
+            - 'voluntary review'
+            - 'government review holdout'
+          notes: 'Adversarial scrutiny on Meta AI execution, the standard adversarial half of the #69 bifurcation.'
+        - title: 'NYT Meta Arena prediction markets partnership scoop'
+          date: '2026-06-26'
+          url: 'https://www.reuters.com/business/zuckerberg-asks-meta-explore-working-with-polymarket-kalshi-nyt-reports-2026-06-26/'
+          url_source: 'secondary Reuters, verbatim Full-URL listing this run, attributes scoop to NYT citing three employees. In-repo reconstruction at examples/sample_output/nyt_meta_arena_polymarket_partnership_2026_06_26_article.txt.'
+          framing: 'neutral_business_scoop'
+          tone_manual_illustrative: 0.0
+          language:
+            - 'citing three employees with knowledge of the matter'
+            - 'may not be released'
+          notes: 'Neutral register business reporting, the midpoint of the Meta baseline.'
+      register_analysis: 'The NYT adversarial register on Amazon is notable precisely because Amazon is the one writing the licensing check. Karen Weise robotics reporting and the Jul 2026 AI-capex jitters piece both apply the adversarial toolkit (internal documents, investor doubt) to the payer, while the same paper runs a bifurcated Meta register that includes a positive open-source strand serving the anti-OpenAI litigation narrative. Amazon has no equivalent instrumental positive strand at the NYT in this window: no Amazon item scored above -0.30. The money-sympathy direction is fully INVERTED for the actual licensing payer. This extends the #562 Google control ($0 tie) into the strongest possible falsification setting: if a $20-25M per year deal could buy softness, this is where softness would appear, and it does not. The registers look publisher-posture instrumental per #471: the Times takes Amazon licensing money for training data while covering Amazon adversarially, the same stance discipline that keeps the anti-OpenAI suit active while non-lawsuit OpenAI coverage stays neutral. Correlation is not causation.'
+      asymmetry_scoring_manual_illustrative:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=2 vs n=3 per entity insufficient for inferential significance'
+        target_entity: 'Amazon NYT adversarial register'
+        peer_entity: 'Meta NYT bifurcated register'
+        target_scores_manual_illustrative: [-0.50, -0.30]
+        target_avg_manual_illustrative: -0.40
+        peer_scores_manual_illustrative: [0.40, -0.65, 0.0]
+        peer_avg_manual_illustrative: -0.0833
+        delta_manual_illustrative: -0.3167
+        delta_direction: 'target harsher than peer by 0.32'
+        p_value: 'NOT CALCULATED no observed corpus'
+        cohens_d: 'NOT CALCULATED'
+        ci_95: 'NOT CALCULATED'
+        significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed NYT corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full NYT corpus Oct 2025 to Sep 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Engine run this iteration: target-minus-peer -0.3167, p not significant, both layers agree not significant (agreement pole with #558 and #562).'
+      confounders:
+        strong:
+          - 'item selection: the two Amazon items were selected for adversarial register from search results; no exhaustive NYT Amazon corpus was scanned this run. A neutral or positive Amazon item (for example Rufus upgrade coverage) would narrow the gap. Disclosed, not treated as a zero-coverage claim per iteration-492 rule.'
+          - 'genre mismatch: labor-investigative and business-skeptical Amazon items vs mixed Meta comparators (philosophy profile, execution holdout, business scoop). The hardest Meta comparator (-0.65) is already harder than the hardest Amazon item (-0.50), which works against the Amazon-harsher reading at item level even though the averages differ.'
+          - 'genuine conduct: Amazon robotics job-displacement plan and $200B-plus AI capex are genuinely adversarial facts. Real facts legitimately shape register; the adversarial tone may be news value, not payer-directed animus.'
+        moderate:
+          - 'secondary-source limitation: neither NYT article was read first-hand (Weise reporting via NPR transcript and iHeart Daily reproduction; Jul 30 2026 piece via third-party GitHub attribution). Tone scores rest on reproduced framing language.'
+          - 'timing mismatch: Amazon sources span Oct 2025 to Jul 2026 while Meta comparators cluster in Jun 2026 with one in-corpus strand. Temporal mismatch weakens the same-window reading.'
+        weak:
+          - 'thin sample: n=2 vs n=3 is directional only, never dispositive for a publication-level claim.'
+          - 'reporter concentration: the hardest Amazon item rides a single byline (Karen Weise); a byline-level effect cannot be separated from the publication-level claim.'
+      open_empirical_test: 'The next major Amazon AI product launch (Alexa+ expansion or next Rufus upgrade, expected window unconfirmed) vs the next major Meta AI release at the NYT. If Amazon launch coverage runs adversarial while Meta open-source coverage stays positive, the falsification strengthens and the selection confounder weakens. If the Amazon launch coverage runs positive or neutral, the selection confounder dominates and this mechanism weakens. Not asserted either way this run.'
+      finding_summary: 'The New York Times covers Amazon with an adversarial register (Karen Weise robotics job-displacement investigation Oct 2025; investor-jitters AI data-center spending piece Jul 2026) at MANUAL ILLUSTRATIVE -0.40, harsher than its bifurcated Meta baseline (-0.08) with delta -0.3167. This FALSIFIES the standing coverage_prediction of softer for NYT x Amazon set in #559, in the strongest available setting: Amazon is the actual $20-25M per year AI licensing payer. The money-sympathy direction is inverted for the payer. This is a control case against financial determinism extending #562 (NYT x Google, $0 tie) to the paying counterparty, joining #552, #557, and #193. Strongest confounders are item selection, genre mismatch, and genuine conduct news value. Open empirical test named: next major Amazon AI launch vs next Meta AI release register comparison. Correlation does not imply causation.'
+      source_urls:
+        - 'https://www.cfpublic.org/2025-10-22/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs'
+        - 'https://www.knkx.org/2025-10-22/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs'
+        - 'https://www.npr.org/2025/10/22/nx-s1-5519812/amazon-wants-to-use-robots-to-avoid-adding-over-500-000-new-jobs'
+        - 'https://www.iheart.com/podcast/326-the-daily-28076606/episode/amazons-robot-takeover-304471226/'
+        - 'https://www.nytimes.com/2026/07/30/technology/amazon-google-ai-data-center-spending.html'
+        - 'https://github.com/joewpb/soflodigital/blob/main/ai/news/2026-08-06-briefing.md'
+        - 'https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html'
+        - 'https://www.reuters.com/business/zuckerberg-asks-meta-explore-working-with-polymarket-kalshi-nyt-reports-2026-06-26/'
+      cross_references: [69, 193, 471, 529, 552, 557, 559, 562]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. The money-sympathy direction is inverted here: the $20-25M per year licensing payer coincides with the harsher register, which falsifies naive financial determinism for this lane. This mechanism is a control case against financial determinism. Item selection and genre mismatch and genuine conduct news value are the strongest confounders.'
+      new_test_file: 'tests/test_type_a_567_nyt_amazon_licensing_payer_adversarial_register_vs_meta_bifurcation_sep06.py'
   apple:
     financial_tie: "mixed"
     estimated_value: "minimal"
