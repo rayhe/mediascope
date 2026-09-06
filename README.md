@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 29198 | Across 878 test files |
+| Tests | 29236 | Across 879 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **29198 tests** across 878 test files, each covering a different analytical capability:
+MediaScope has **29236 tests** across 879 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1379,6 +1379,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_534_dotdash_meredith_openai_sep05_6am.py` | 31 | Type C #534: Dotdash Meredith x OpenAI (May 7 2024) - first dedicated DDM mechanism; earliest Lightcap-counterparty publisher deal (corrects #489/#494/#499/#504/#514 mechanism-order sequence); $16M/yr fixed + variable structure (Adweek), quarterly ~$4M in licensing line (also Apple News+); D/Cipher ad-tech leg (contrast Hearst #489 no-ad-tech); Lifewire consumer-tech review beat exposure (rigorous product reviews licensed), PCMag-is-Ziff-Davis boundary; no coverage-tone claim, Type A/B follow-ups flagged - Sep 5 2026 06:00 PDT |
 | `test_type_d_535_yaml_guard_repair_scorer_doc_sync_sep05_7am.py` | 17 | Type D #535: #505 brittle novelty-guard repair (iteration-aware successor exemption; #510 was the tripwire) + scorer consistency extended to #532 (-0.075) and #533 (-0.05, n=1 vs n=1 degenerate path) with #527/#528 re-locks + ARCHITECTURE tree-header stale repair (28592/859 -> authoritative) + 531-535 doc-sync ratchet - Sep 5 2026 07:00 PDT |
 | `test_type_d_550_scorer_consistency_547_548_rotation_doc_sync_sep05_10pm.py` | 29 | Type D #550: scorer cross-mechanism consistency extended to #547 (+0.923, first positive-sign delta: Google softer than Meta, target-minus-peer convention) and #548 (Mehrotra constancy 1/30 rounding verified); standing-rule discipline ratchet for both (YAML NOT_CALCULATED/n.s., arrays byte-match engine inputs); #549 qualitative boundary (no tone delta, NOT_SCORED); 546-549 rotation-cycle adjacency guard; 546-550 doc-sync ratchet - Sep 5 2026 22:00 PDT |
+| `test_type_e_551_podcast_sentiment_thirtythird_verification_sep05_11pm.py` | 38 | Type E #551: podcast sentiment 33rd verification cycle - GF 498 hold no 499 (search-result secondary, fresh <1h ListenNotes crawl, secondary-only disclosed), EHE 26-day hold (Times/Engadget/PetaPixel/AfroTech/Fstoppers/Sifted re-surfaces all pre-verified in-corpus via grep, zero new motifs), Attention Sphere 33rd no-match (Spotify Creators <1h-fresh re-confirms nonprofit; own GitHub commits rejected circular), no new press surfaces (eurweb 177d shape is same-Clarkson-motif re-report, no new claim; #531 Jezebel remains newest) - Sep 5 2026 23:00 PDT |
 | `test_type_e_546_podcast_sentiment_thirtysecond_verification_sep05_6pm.py` | 38 | Type E #546: podcast sentiment 32nd verification cycle - GF 498 hold no 499 (zeno.fm + ListenNotes opened first-hand), EHE 26-day hold (feminist.org/sifted.eu/LatestLY/afrotech re-surfaces pre-verified in-corpus), Attention Sphere 32nd no-match (nonprofit, not a podcast), no new press surfaces (#531 Jezebel newest) - Sep 5 2026 18:00 PDT |
 | `test_type_e_541_podcast_sentiment_thirtyfirst_verification_sep05_1pm.py` | 37 | Type E #541: podcast sentiment 31st verification - Guilty Feminist 498 hold no 499 (zeno.fm opened first-hand this run), EHE 26-day hold with afaqs/cloudfront/hyperallergic re-surfaces verified already-in-corpus NOT new, Attention Sphere 31st no-match (Spotify Creators reconfirms nonprofit), no new press surfaces since Jezebel #531 LED-loophole piece - Sep 5 2026 13:00 PDT |
 | `test_type_a_542_bi_google_chase_register_vs_anthropic_aspirational_sep05_2pm.py` | 32 | Type A #542: BI x Google chase/deficit register vs Anthropic aspirational - first dedicated BI x Google mechanism (Jetski 3.8 Flash scoop -0.20, Schindler Gemini-ads +0.05, both secondary-attested); Google avg -0.075 vs Anthropic +0.12 (delta -0.195) vs Meta +0.08 (delta -0.155), MANUAL ILLUSTRATIVE n.s.; BI four-entity quad complete - falsification-family, narrative position over financial tie - Sep 5 2026 14:00 PDT |
