@@ -11360,6 +11360,105 @@ journalists:
   - https://hussman.unc.edu/news/best-business-book-year-first-time-author-sarah-frier-11-longtime-bloomberg-tech-reporter
   - https://hussman.unc.edu/news/work-transformed-bloomberg-tech-reporter-sarah-frier-11-adapts-virtual-global-book-tour-no
   - https://sfpressclub.org
+  competitor_coverage:
+    cross_entity_analysis:
+      mechanism_id: 568
+      type: 'Type B: Journalist Cross-Entity Tracking - Sarah Frier (Bloomberg) AI-spend skepticism register constancy'
+      journalist: Sarah Frier
+      publication: bloomberg-news
+      role_at_window: managing_editor_tech
+      pattern: register_constancy_business_press
+      description: 'Bloomberg Managing Editor for Tech applies the same investor-skepticism AI-spend register to Meta and OpenAI. Meta absorbs "almost $700 billion in future spending commitments" filing coverage and "shares plunge on AI spending spree" skepticism while OpenAI absorbs "failed to meet its sales and user targets, rekindling doubts that the hundreds of billions of dollars that big companies are plowing into the technology will deliver sufficient profits" framing. The Big Take "AI reckoning" episode, reported by Frier, applies the pressure frame entity-agnostically: "pressure is building on tech companies to prove all their AI investments will pay off big, and soon." MANUAL ILLUSTRATIVE delta +0.1167 (Meta marginally softer), engine p 0.182, is_significant False, agreement pole with #558/#563. Business-press register is event/market-driven and entity-agnostic, a control against the advocacy gradient at Conde Nast publications and the deal-driven softening predictions. Bloomberg has no documented AI content licensing deal with OpenAI or Meta in-corpus.'
+      meta_items:
+      - title: 'Meta Reports Almost $700 Billion in Future Spending Commitments'
+        outlet: bloomberg
+        byline_attribution: direct
+        byline_evidence: 'Carried on Frier Muck Rack profile (muckrack.com/sarahfrier/articles) as Bloomberg original; filing-based business register: "$349.3 billion of non-cancelable contractual commitments, mostly related to third-party cloud deals, servers and network infrastructure."'
+        tone_manual_illustrative: -0.15
+        framing: investor_skepticism_via_spend_scale
+        source_url: https://muckrack.com/sarahfrier/articles
+      - title: 'Meta Held Deal Talks With Startup Runway in AI Recruiting Push'
+        outlet: bloomberg
+        byline_attribution: direct
+        byline_evidence: 'Carried on Frier Muck Rack profile; "Mark Zuckerberg discussed a possible acquisition with video startup Runway AI Inc., as part of his deal-making drive in artificial intelligence. The deal talks never reached a formal offer level ... and are no longer ongoing."'
+        tone_manual_illustrative: -0.10
+        framing: neutral_business_with_deal_failure_note
+        source_url: https://muckrack.com/sarahfrier/articles
+      - title: 'Meta Shares Plunge on Rising Concern About AI Spending Spree'
+        outlet: bloomberg-law
+        byline_attribution: institutional
+        byline_evidence: 'Bloomberg News institutional register, not Frier-bylined; disclosed. "Reigniting fears that the historic levels of investment that Chief Executive Officer Mark Zuckerberg is making to catch up in the artificial intelligence race will not pay off."'
+        tone_manual_illustrative: -0.30
+        framing: investor_skepticism
+        source_url: https://news.bloomberglaw.com/tech-and-telecom-law/meta-shares-plunge-on-escalating-concerns-over-ai-spending-spree
+      openai_items:
+      - title: 'OpenAI-Linked Stocks Slip; Investors Focus on AI Ahead of Big Tech Earnings'
+        outlet: bloomberg-businessweek
+        byline_attribution: direct
+        byline_evidence: 'Episode features "Sarah Frier, Bloomberg News Big Tech Team Leader" verbatim; "OpenAI reportedly failed to meet its sales and user targets, rekindling doubts that the hundreds of billions of dollars that big companies are plowing into the technology will deliver sufficient profits."'
+        tone_manual_illustrative: -0.35
+        framing: investor_skepticism
+        source_url: https://www.youtube.com/watch?v=vtqQ4sP1n0A
+      - title: 'The coming AI reckoning (Big Take podcast)'
+        outlet: bloomberg
+        byline_attribution: direct
+        byline_evidence: 'Ivy.fm listing: "Reported by Sarah Frier"; "Bloomberg Big Tech editor Sarah Frier joins host Sarah Holder to discuss the coming AI reckoning and why pressure is building on tech companies to prove all their AI investments will pay off big, and soon." Entity-agnostic pressure frame.'
+        tone_manual_illustrative: -0.30
+        framing: entity_agnostic_ai_spend_pressure
+        source_url: https://ivy.fm/tag/sarah-frier
+      - title: 'OpenAI CFO Says Bubble-Wary Market Needs More AI Exuberance'
+        outlet: bloomberg-law
+        byline_attribution: institutional
+        byline_evidence: 'Bloomberg News institutional register, not Frier-bylined; disclosed. The OpenAI CFO is Sarah FRIAR (ex-Nextdoor), a different person from journalist Sarah FRIER; name collision explicitly disambiguated. "Mounting scrutiny in recent months on soaring valuations for AI companies as well as the accelerating spending."'
+        tone_manual_illustrative: -0.25
+        framing: investor_skepticism
+        source_url: https://news.bloomberglaw.com/private-equity/openai-cfo-says-bubble-wary-market-needs-more-ai-exuberance
+      scorer:
+        method: manual_illustrative
+        target_entity: meta
+        peer_entities:
+        - openai
+        target_scores: [-0.15, -0.10, -0.30]
+        peer_scores: [-0.35, -0.30, -0.25]
+        delta_manual_illustrative: 0.1167
+        engine_check:
+          asymmetry: 0.1167
+          p_value: 0.1823
+          cohens_d: 1.429
+          is_significant: false
+          agreement_pole: '#558/#563 class'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+        correlation_not_causation: true
+      confounders_ranked:
+        strong:
+        - 'Mixed attribution: 2 of 6 items are Bloomberg Law institutional register, not Frier-bylined; the within-journalist claim rests on 4 Frier-attributed items.'
+        - 'Item selection: investor-skepticism items surfaced via search; her long-arc Meta-adversarial influence (No Filter shaping FTC antitrust framing, per in-corpus notes) is excluded from this AI-spend window.'
+        - 'Role change: Frier became Managing Editor for Tech in Feb 2026; she edits more than she writes, so personal register is harder to isolate from institutional voice.'
+        moderate:
+        - 'Temporal spread across 2026 items; podcast register (Big Take, Businessweek) vs article register genre mix.'
+        - 'Anthropic-eclipses-OpenAI valuation item considered but excluded: wire attribution too weak for the OpenAI side.'
+        weak:
+        - 'n=3 vs n=3 directional only; thin by design for an hourly iteration.'
+      counter_evidence:
+      - 'Her book No Filter (2020) and its FTC antitrust-framing influence show long-arc Meta-adversarial institutional impact, bounding the constancy claim to the AI-spend window.'
+      - 'Kurt Wagner (reports to Frier) won a San Francisco Press Club award with Frier for "Facebook''s Convenient Alliance," an adversarial Meta piece; the Bloomberg pod under Frier is not uniformly neutral.'
+      financial_context: 'Bloomberg has no documented AI content licensing deal with OpenAI or Meta in-corpus (zero hits in competitor-entities.yaml). Bloomberg revenue is terminal/subscription-driven, not publisher-licensing. Correlation, not causation, throughout.'
+      cross_references:
+      - 558
+      - 563
+      - 552
+      - 557
+      - 562
+      - 567
+      - 193
+      research_method: 'browser.search this run (3 query sets: Frier Meta 2026; Frier OpenAI byline; Frier AI reckoning/Big Take); browser.open on muckrack.com/sarahfrier/articles (282 lines, direct attribution). URLs copied verbatim from search results. No zero-coverage claims per iteration-492 rule. OpenAI CFO Sarah Friar explicitly disambiguated from journalist Sarah Frier.'
+      test_file: tests/test_type_b_568_sarah_frier_bloomberg_register_constancy_sep06.py
+      iteration: 568
+      date: '2026-09-06'
 - career:
   - beat: technology, Silicon Valley
     end: '2013'
