@@ -1,3 +1,39 @@
+#552 Type A: FT x Anthropic Surveillance-Refusal Register Inversion - Principled-Refusal Virtue Framing vs Meta Camera-Alarm Threat Framing (delta +0.763 MANUAL ILLUSTRATIVE n.s., Control Case Against Financial Determinism) - Sep 6 2026 00:00 PDT
+
+**Date:** 2026-09-06 00:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 551 E -> 552 A)
+**Type:** A - Competitor Coverage Deep Dive (FT x Anthropic written coverage, surveillance-refusal register inversion)
+
+**Finding:** Same-topic (surveillance) register inversion within the Financial Times: Anthropic refusing Pentagon "any lawful use" language (red line was the "analysis of bulk acquired data" clause, i.e. mass domestic surveillance, plus autonomous weapons) is framed as a principled underdog resisting government overreach; Meta shipping camera glasses with a mandatory LED indicator is framed through legal-threat vocabulary as a surveillance threat. Refusal of surveillance capability earns virtue framing; deployment of camera hardware earns threat framing.
+
+**Anthropic items (3, FT):**
+1. "Anthropic's relentless race to the top" (Dario Amodei profile, Jun 5 2026) - https://www.ft.com/content/e17665ea-c5ca-428a-839c-be5c1eacc35c (URL verbatim from search output this run). constructive_profile_aspirational_scaling, MANUAL ILLUSTRATIVE +0.22. HN digest notes the irony that the profile landed the same day Anthropic publicly urged others to slow down; FT did not press the contradiction in headline framing.
+2. "Anthropic scrambles after Trump administration freezes its top AI models" (Q2 2026) - FT as original reporter confirmed by two secondaries: https://www.tradingview.com/news/cointelegraph:fcd84680b094b:0-anthropic-reopens-pentagon-talks-as-tech-groups-push-trump-to-drop-risk-tag-ft/ and https://www.inc.com/leila-sheridan/anthropic-took-a-stand-against-the-pentagon-now-its-scrambling-to-save-its-defense-business/91312361. Amodei memo seen by FT called OpenAI's defense deal "safety theater" and messaging "straight up lies"; Emil Michael called Amodei a "liar" with a "God complex". FT frames Anthropic's surveillance-use refusal as principled, not obstruction. sympathetic_underdog_principled_refusal, +0.15. URL is secondary-attributed, stated as such.
+3. "Anthropic chief tells G7 leaders to 'resist the temptation to splinter'" (Q2 2026) - constructive_leadership_statesman, +0.12. Existing corpus entry, no URL; retained for register continuity only.
+
+**Meta comparators (2, FT-attributed):**
+1. "Meta testing AI glasses that continuously record audio and take photos every few seconds" (Hannah Murphy, FT SF platform desk, 2026-07-08, https://www.techmeme.com/260708/p2) - adversarial_surveillance, -0.62, 7 surveillance terms ("continuously collect audio", "wiretapping laws", "biometric data laws", "civil liberty and privacy risks").
+2. "Meta Is Flooding Market With Smartglasses, Privacy Advocates Are Up in Arms" (2026-08-26, WSJ with FT prior reporting, https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539) - surveillance_threat_market_flooding, -0.58.
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Peer Anthropic [+0.22, +0.15, +0.12] avg 0.1633 vs target Meta [-0.62, -0.58] avg -0.60: delta +0.7633 (peer softer than target). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, significant False. n=3 vs n=2, one secondary-attributed URL, one URL-less item: illustrative only, not artifact-grade.
+
+**Financial context (control case, honesty-first):** NO documented FT-Anthropic content licensing deal (verified via dedicated search this run). The FT-OpenAI $5-10M/yr deal (Reuters Apr 29 2024) is with OpenAI, Anthropic's rival. FT's Anthropic touchpoints are attenuated: (a) indirect channel, FT receives single-figure millions GBP/yr from Google's News AI pilot while Google plans up to $40B in Anthropic; (b) FT is an Anthropic product customer (Ask FT beta powered by Claude). The direct financial predictor is ABSENT, so this mechanism is a control case against financial determinism, consistent with #441's honest notes and #193's BI control case.
+
+**Confounders Ranked:** STRONG: (1) beat assignment, Murphy platform desk vs Murgia/Hammond AI desk, different registers independent of commercial relationships; (2) news genre, company-vs-government standoff is inherently an underdog story while product-privacy stories are inherently watchdog stories; (3) genuine conduct difference, Anthropic voluntarily refused a $200M contract to block surveillance use while Meta shipped continuous sensing hardware after documented LED-tamper incidents. MODERATE: indirect Google channel (two hops), Ask FT Claude product affinity, timing (Q2 2026 clash vs Jul 2026 glasses, same quarter). WEAK: OpenAI deal halo (direction ambiguous since Anthropic is OpenAI's rival), HN irony note suggesting FT does not always grant Anthropic a free pass.
+
+**Cross-references:** 441 (FT Anthropic fundraising vs Meta equity asymmetry, same pair, different dimension), 415 (FT OpenAI growth vs Meta capital), 532, 193 (BI control case), 524.
+
+**Research method:** browser.search for FT Anthropic ft.com URLs (one verbatim ft.com URL surfaced), dedicated search for FT-Anthropic licensing deal (zero results, stated as absence-of-evidence not evidence-of-absence), secondary confirmations of FT as original reporter on Pentagon scoop (TradingView, Inc., Fast Company). URLs copied verbatim from search results. Per iteration-492 rule, no zero-coverage claims.
+
+**New Type A files:** `tests/test_type_a_552_ft_anthropic_surveillance_refusal_register_inversion_sep06.py` - 8 classes, 22 tests, all passing (2 initial failures fixed: tolerance relaxed to 1e-3 for 4-decimal peer avg rounding; url test now uses .get() since the G7 corpus entry has no URL by design). YAML insertion validated by re-parse with leaf-type/value assertions.
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; control case directional.
+
+**Rotation Transparency:** Previous entry #551 Type E at 23:00 PDT Sep 5 2026 (commit 424082e verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Cycle verified: 546 E 18:00, 547 A 19:00, 548 B 20:00, 549 C 21:00, 550 D 22:00, 551 E 23:00. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_552 files on disk before this run (glob verified); no "552" mechanism in git log (grep verified); no "surveillance_refusal_register_inversion" key anywhere in profiles/ before this run (grep verified); distinct from #441 (fundraising dimension) by same-topic register inversion (surveillance refusal vs camera alarm).
+
+---
+
 #551 Type E: Podcast Sentiment 33rd Verification Cycle - GF 498 Hold No 499 (secondary-only, fresh <1h ListenNotes crawl), EHE 26-Day Hold (Times/Engadget/PetaPixel/AfroTech/Fstoppers/Sifted re-surfaces all pre-verified in-corpus, zero new motifs), Attention Sphere 33rd No-Match (Spotify Creators <1h-fresh re-confirms nonprofit; own GitHub commits rejected circular), No New Press Surfaces (Sep 1 window returns older items only; eurweb 177d shape is same-Clarkson-motif re-report, no new claim; #531 Jezebel remains newest) - Sep 5 2026 23:00 PDT
 
 **Date:** 2026-09-05 23:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 550 D -> 551 E)

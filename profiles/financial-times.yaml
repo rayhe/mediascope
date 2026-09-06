@@ -1527,6 +1527,142 @@ competitor_relationships:
         significant_false: true
         significant_empirical_false: true
         disclaimer: Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only indirect channel via Google investment. Extension adds Aug 28 2026 $20B double target event with 2-day proximity to Meta flooding market Aug 26 2026 strengthening same-window comparison but still illustrative only.
+    iteration_552_sep06_2026_ft_anthropic_surveillance_refusal_register_inversion:
+      date: '2026-09-06'
+      mechanism: 552
+      type: 'Type A: Competitor Coverage Deep Dive'
+      publication: Financial Times
+      competitor_pair: Anthropic vs Meta
+      iteration: 552
+      iteration_type: A
+      iteration_time: '2026-09-06 00:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      financial_relationship:
+        anthropic_direct: '$0 direct FT to Anthropic licensing confirmed zero this run'
+        ft_anthropic_customer_relationship: 'FT is an Anthropic product customer not a licensing partner. FT beta Ask FT generative search powered by Anthropic Claude large language model per techgindia reporting of Apr 2024 OpenAI deal coverage. Commercial customer relationship creates mild product affinity channel not editorial licensing revenue.'
+        ft_openai_deal: '$5-10M/yr content licensing Apr 29 2024 Reuters primary, secondary WSJ via Digiday. Cash terms undisclosed.'
+        indirect_via_google: 'FT Google commercial partnership single figure millions GBP per yr News AI pilot Feb 2026 Press Gazette Aug 3 2026. Google plans up to $40B Anthropic investment Bloomberg Apr 24 2026 via Reuters plus prior $3B+ 14 percent stake. Amazon up to $25B per Reuters Apr 24 2026 immediate $5B plus $20B contingent.'
+        meta_estimated_value: '$0'
+        deal_disclosed_in_ft_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Does not prove editorial influence. Direct financial predictor is ABSENT for this pair: FT has no documented Anthropic licensing deal. This mechanism is therefore a control case against financial determinism, consistent with iteration 441 honest notes and iteration 193 BI control case.'
+        editorial_independence_note: 'FT editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      ft_anthropic_sources_sep06_2026:
+        - title: 'Anthropic relentless race to the top Dario Amodei profile'
+          date: '2026-06-05'
+          url: 'https://www.ft.com/content/e17665ea-c5ca-428a-839c-be5c1eacc35c'
+          url_source: 'verbatim from browser.search this run via HN digest github.com/deniszheng/agents-radar/issues/1058'
+          framing: 'constructive_profile_aspirational_scaling'
+          tone_manual_illustrative: 0.22
+          language:
+            - 'relentless race to the top'
+            - 'aggressive scaling strategy'
+          notes: 'Hacker News digest notes irony that the profile landed same day Anthropic publicly urged others to slow down. FT did not press the contradiction in headline framing.'
+          deal_disclosed: false
+        - title: 'Anthropic scrambles after Trump administration freezes its top AI models'
+          date: '2026-Q2'
+          url: 'https://www.tradingview.com/news/cointelegraph:fcd84680b094b:0-anthropic-reopens-pentagon-talks-as-tech-groups-push-trump-to-drop-risk-tag-ft/'
+          url_source: 'secondary TradingView cointelegraph confirming FT reported Amodei reopened Pentagon talks with Emil Michael. FT as original reporter per secondary attribution.'
+          framing: 'sympathetic_underdog_principled_refusal'
+          tone_manual_illustrative: 0.15
+          language:
+            - 'refused to accept broader wording'
+            - 'explicitly prohibit certain applications including domestic mass surveillance'
+            - 'analysis of bulk acquired data clause guarded against potential mass domestic surveillance'
+          notes: 'Amodei internal memo seen by FT called OpenAI defense partnership safety theater and messaging straight up lies. Emil Michael called Amodei liar with God complex. FT frames Anthropic refusal of surveillance use as principled stand, not obstruction.'
+          deal_disclosed: false
+        - title: 'Anthropic chief tells G7 leaders to resist the temptation to splinter'
+          date: '2026-Q2'
+          framing: 'constructive_leadership_statesman'
+          tone_manual_illustrative: 0.12
+          language:
+            - 'Amodei as global AI statesman'
+          notes: 'Profile-level statesman framing from existing corpus entry. No URL in corpus, retained for register continuity.'
+          deal_disclosed: false
+      ft_meta_sources_sep06_2026:
+        - title: 'Meta testing AI glasses that continuously record audio and take photos every few seconds'
+          date: '2026-07-08'
+          url: 'https://www.techmeme.com/260708/p2'
+          reporter: 'Hannah Murphy FT SF platform desk'
+          framing: 'adversarial_surveillance'
+          tone_manual_illustrative: -0.62
+          language:
+            - 'continuously collect audio'
+            - 'taking photos every few seconds'
+            - 'Meta executives do not want to activate LED when super-sensing features turned on'
+            - 'civil liberty and privacy risks'
+            - 'violate data privacy or biometric data laws'
+            - 'wiretapping laws'
+          surveillance_terms: 7
+          deal_disclosed: false
+        - title: 'Meta is flooding market with smartglasses privacy advocates are up in arms WSJ with FT prior reporting'
+          date: '2026-08-26'
+          url: 'https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539'
+          original_ft_attribution: 'Financial Times previously reported some details new Meta glasses feature per WSJ Aug 26 2026'
+          framing: 'surveillance_threat_market_flooding'
+          tone_manual_illustrative: -0.58
+          language:
+            - 'flooding market with smartglasses'
+            - 'privacy advocates up in arms'
+            - 'halt publicly disavow plans equip glasses NameTag feature'
+            - 'constantly capture audio visuals without notifying those around user via white light'
+          deal_disclosed: false
+      inversion_register_analysis: 'Same topic surveillance, inverted moral register. Anthropic refusing Pentagon mass surveillance use is framed as principled underdog resisting government overreach. Meta shipping camera glasses with a mandatory LED indicator is framed through legal-threat vocabulary as a surveillance threat. The company refusing surveillance capability receives virtue framing. The company shipping a consumer camera receives threat framing. Register inversion within one publication on the same underlying concern.'
+      asymmetry_scoring_manual_illustrative:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=3 vs n=2 per entity insufficient for inferential significance'
+        target_entity: 'Meta FT surveillance alarm'
+        peer_entity: 'Anthropic FT principled refusal'
+        target_scores_manual_illustrative: [-0.62, -0.58]
+        target_avg_manual_illustrative: -0.6
+        peer_scores_manual_illustrative: [0.22, 0.15, 0.12]
+        peer_avg_manual_illustrative: 0.1633
+        delta_manual_illustrative: 0.7633
+        delta_direction: 'peer softer than target by 0.76'
+        p_value: 'NOT CALCULATED no observed corpus'
+        cohens_d: 'NOT CALCULATED'
+        ci_95: 'NOT CALCULATED'
+        significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed FT corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full FT corpus Jun-Aug 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Direct financial predictor absent for Anthropic pair so delta cannot be attributed to a direct licensing tie.'
+      confounders:
+        strong:
+          - 'beat assignment: Hannah Murphy FT SF platform desk covers Meta with platform surveillance lens, Madhumita Murgia and George Hammond FT AI desk cover Anthropic as AI lab innovation story. Different desks apply different editorial registers independent of commercial relationships.'
+          - 'news genre: company vs government standoff is inherently an underdog David vs Goliath story inviting sympathetic framing. Consumer camera product privacy story is inherently a watchdog story inviting alarm framing. Genre alone can produce the inversion with zero entity favoritism.'
+          - 'genuine conduct difference: Anthropic voluntarily refused a contract worth $200M to block mass surveillance use. Meta shipped continuous sensing hardware after documented LED tamper incidents. Real facts legitimately invite different moral registers.'
+        moderate:
+          - 'indirect financial channel: FT receives single figure millions GBP per yr from Google News AI pilot, Google plans up to $40B Anthropic investment. Indirect channel predicts softer Anthropic tone but attenuated by two hops and beat assignment.'
+          - 'FT as Anthropic customer: Ask FT beta powered by Claude creates product affinity for the AI desk journalists who use the tool daily, separate from any editorial directive.'
+          - 'timing: Anthropic Pentagon clash Q2 2026, Meta glasses super-sensing Jul 2026. Same quarter, adjacent windows, temporal mismatch confounder weak to moderate.'
+        weak:
+          - 'OpenAI deal halo: FT $5-10M per yr OpenAI licensing creates general AI lab goodwill at the publication but Anthropic is OpenAI rival, direction of halo ambiguous.'
+          - 'HN irony note: FT profile of Anthropic aggressive scaling landed same day Anthropic urged others to slow down, suggesting FT does not always grant Anthropic a free pass on contradictions.'
+      finding_summary: 'FT covers Anthropic refusal of Pentagon mass surveillance use with sympathetic underdog framing 0.12 to 0.22 range while covering Meta camera glasses with legal-threat surveillance vocabulary -0.58 to -0.62 range. Delta 0.76 MANUAL ILLUSTRATIVE. Distinct from iteration 441 fundraising asymmetry: this is a register inversion on the SAME underlying concern, surveillance, where refusal of surveillance capability earns virtue framing and deployment of camera hardware earns threat framing. Financial predictor is direct-deal absent: no documented FT Anthropic licensing deal found this run, so this mechanism stands as a control case. Indirect channels exist via Google investment and Ask FT Claude product relationship but both are attenuated. Beat assignment Murphy platform desk vs Murgia Hammond AI desk plus news genre underdog vs watchdog plus genuine conduct difference are the strongest confounders. Correlation does not imply causation.'
+      source_urls:
+        - 'https://www.ft.com/content/e17665ea-c5ca-428a-839c-be5c1eacc35c'
+        - 'https://www.tradingview.com/news/cointelegraph:fcd84680b094b:0-anthropic-reopens-pentagon-talks-as-tech-groups-push-trump-to-drop-risk-tag-ft/'
+        - 'https://www.inc.com/leila-sheridan/anthropic-took-a-stand-against-the-pentagon-now-its-scrambling-to-save-its-defense-business/91312361'
+        - 'https://www.fastcompany.com/91499924/anthropic-refusing-bend-ai-safeguards-dispute-pentagon-nears-deadline?partner=rss&&&&'
+        - 'https://www.techmeme.com/260708/p2'
+        - 'https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539'
+        - 'https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/'
+        - 'https://techgindia.com/financial-times-signs-licensing-agreement-with-openai/'
+        - 'https://www.reuters.com/business/google-plans-invest-up-40-billion-anthropic-bloomberg-news-reports-2026-04-24/'
+        - 'https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/'
+      cross_references: [441, 415, 532, 193, 524]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: no documented FT Anthropic licensing deal found this run. This mechanism is a control case against financial determinism. Beat assignment and news genre are the strongest confounders.'
   x_twitter:
     financial_tie: none
     estimated_value: $0
