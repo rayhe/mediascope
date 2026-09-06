@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 29016 | Across 872 test files |
+| Tests | 29044 | Across 873 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **29016 tests** across 872 test files, each covering a different analytical capability:
+MediaScope has **29044 tests** across 873 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1385,6 +1385,7 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_b_538_cade_metz_litigation_adversary_symmetry_science_desk_sep05_10am.py` | 52 | Type B #538: Cade Metz (NYT) litigation-adversary register symmetry - OpenAI covered in neutral launch/scoop register despite NYT lawsuit vs OpenAI; Science-desk discovery framing extends mechanism 471 to reporter level; delta -0.0875 MANUAL ILLUSTRATIVE n.s. - Sep 5 2026 10:00 PDT |
 | `test_type_b_543_kevin_roose_hard_fork_late_window_matched_framing_sep05_3pm.py` | 41 | Type B #543: Kevin Roose (NYT, Hard Fork) late-window matched-episode framing (Aug 14-Sep 4 2026) - Zuckerberg "Anti-Doom Fantasy" vs OpenAI "Two-Week Pause", Meta blame-shift vs Hugging Face open-source control; delta -0.525 MANUAL ILLUSTRATIVE n.s.; reporter-specific gradient, persistence through departure-transition window - Sep 5 2026 15:00 PDT |
 | `test_type_c_544_vox_media_microsoft_pcm_pay_per_use_leg_sep05_4pm.py` | 30 | Type C #544: Vox Media x Microsoft PCM pay-per-use leg (Feb 2026) - first dedicated Vox dual-payer architecture extending mechanism 494: OpenAI flat/undisclosed leg + PCM pay-per-use co-design leg (eight-publisher pilot, Copilot first buyer, $10M+ Microsoft publisher spend); RSL pay-per-crawl leverage leg (Nov 2025); Meta $0 - DDM #539 Meta-leg mirror; no coverage-tone claim - Sep 5 2026 16:00 PDT |
+| `test_type_d_545_scorer_consistency_542_543_rotation_doc_sync_sep05_5pm.py` | 28 | Type D #545: scorer cross-mechanism consistency extended to #542 (-0.195, first competitor-target mechanism: Google vs Anthropic, target-harsher sign convention holds) and #543 (-0.525, Roose, Hugging Face control excluded from delta); standing-rule discipline ratchet for both (YAML NOT_CALCULATED/n.s., arrays byte-match engine inputs); #544 qualitative boundary (no tone delta); engine is_significant=True on #537 n=2v2 pinned as arithmetic-vs-finding separation; 541-544 rotation-cycle adjacency guard; 541-545 doc-sync ratchet - Sep 5 2026 17:00 PDT |
 | `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
 | `test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` | 25 | Type D #540: scorer cross-mechanism consistency extended to #537 (-0.30) and #538 (-0.0875) with engine bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p computed but not promoted - YAML keeps NOT_CALCULATED/n.s.); #539 qualitative boundary (no tone delta); 536-539 rotation-cycle adjacency guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |

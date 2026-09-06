@@ -1,3 +1,33 @@
+#545 Type D: Scorer Cross-Mechanism Consistency Extended to #542 (-0.195, First Competitor-Target Mechanism) and #543 (-0.525), Standing-Rule Discipline Ratchet, 541-544 Rotation-Cycle Guard, 541-545 Doc-Sync Ratchet - Sep 5 2026 17:00 PDT
+
+**Date:** 2026-09-05 17:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 544 C -> 545 D)
+**Type:** D - Test & Verify (guard file + doc sync)
+
+**Findings:**
+1. **Scorer cross-mechanism consistency extended to the two newest quantitative mechanisms** (extends #540's lock on #537/#538). The asymmetry engine's mean-difference arithmetic reproduces the logged MANUAL ILLUSTRATIVE deltas: #542 BI x Google (Google [-0.20,+0.05] vs Anthropic [+0.12], logged delta -0.195, n=2v1, abs=1e-4 per #530 convention) and #543 Roose Hard Fork (Meta/Zuckerberg [-0.50,-0.35] vs OpenAI [+0.10], logged delta -0.525, n=2v1). #542 is the first engine-checked mechanism whose target entity is a Meta competitor (Google) rather than Meta itself; the target-minus-peer sign convention holds (negative = target harsher). #532 (-0.075), #533 (-0.05), #537 (-0.30), #538 (-0.0875) re-locked; all six quantitative deltas share the target-harsher sign.
+2. **#543 Hugging Face control excluded from delta arithmetic (new boundary test).** The +0.25 control is an open-source falsification control, not a delta input: the logged -0.525 equals meta_avg minus openai_avg exactly, and a with-control recomputation produces a different delta, proving the exclusion is load-bearing rather than decorative.
+3. **Standing-rule discipline ratchet for #542/#543:** both mechanisms keep p_value/cohens_d/ci NOT_CALCULATED and is_significant False in YAML, and their logged arrays byte-match the engine inputs used in the consistency tests. #542 additionally logs the secondary google_vs_meta_delta (-0.155) as a logged field only - engine-unverified, pinned as such so a future edit cannot silently promote it to a consistency claim. Notably, the engine computes is_significant=True on the #537 n=2v2 well-separated arrays (p~0.0136) - this run's re-lock pins that explicitly (correcting the initial test that asserted False) as the canonical example of the standing rule's arithmetic-vs-finding separation.
+4. **Qualitative boundary pinned for #544:** the Vox Media PCM dual-payer mechanism carries no asymmetry_scorer section and statistical_discipline keeps tone_scores NOT_SCORED - scorer consistency explicitly does not apply to qualitative Type C mappings (mirrors the #539 boundary pinned in #540).
+5. **Rotation-cycle guard (extends #540's 536-539 window):** format-agnostic git-subject parsing (three observed shapes) verifies the newest type commits are exactly [(544,C),(543,B),(542,A),(541,E),(540,D)] newest-first with A->B->C->D->E->A adjacency between consecutive pairs.
+6. **Doc-sync ratchet:** README + ARCHITECTURE per-file rows for the 541-545 window (541-544 rows already present from their runs; this run added the #545 row); count headers re-synced to authoritative count_stats.py --pytest totals (29044/873); --check green.
+
+7. **Stale-test repair (pre-existing, surfaced by regression):** the #540 window guard `test_536_through_539_types_in_order` asserted the 536-539 window was the newest-4 type commits - stale the moment #541 was committed. Repaired in the owning #540 file (per the #534 repair precedent): the durable invariant is the window's internal order and adjacency in the type-commit stream, not its head position. `test_cycle_adjacency_holds` repaired the same way. No def-test count changes (rows unchanged).
+
+**Full suite:** A literal whole-tree sweep exceeds the run window (~29K tests, multi-hour), so verification followed the #540 precedent: targeted regression over the structurally relevant files plus the new guard file plus the authoritative count gate. First pass: 192 passed, 1 failed - the stale #540 window guard above (brittle head-position assertion, not a data fault). Repaired in the owning #540 file per the #534/#515 precedent; re-run of #540 + #545: 53 passed, 0 failed. Zero failures outside this window were asserted or claimed.
+
+**Statistical discipline:** MANUAL ILLUSTRATIVE per Aug 28 2026 standing rule; p_value NOT_CALCULATED for manual deltas; is_significant False throughout. No analysis.json update - no new asymmetry findings (Type D infra run).
+
+**Rotation Transparency:** Previous entry #544 Type C at 16:00 PDT Sep 5 2026 (commit 5bc92c1 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 541 E 13:00, 542 A 14:00, 543 B 15:00, 544 C 16:00. Selected Type D.
+
+**Novelty Verification (per AGENTS.md durable rule):** Zero test_type_d_545 files on disk before this run (glob verified); no #545 in git log --grep; scorer consistency never covered #542/#543 (repo grep verified, hits only their own mechanism files); no prior rotation-adjacency guard over the 541-544 window; 536-540 doc-sync window from #540 extended, not duplicated.
+
+**New Type D files:** `tests/test_type_d_545_scorer_consistency_542_543_rotation_doc_sync_sep05_5pm.py` - 5 classes, 28 tests.
+
+**Test file:** `tests/test_type_d_545_scorer_consistency_542_543_rotation_doc_sync_sep05_5pm.py` - 28 tests, all passed (venv pytest)
+**Cumulative:** mechanism #545 logged; 29044 tests across 873 test files (authoritative pytest-collected; README + ARCHITECTURE synced, --check passes).
+
+---
+
 #544 Type C: Vox Media x Microsoft PCM Pay-Per-Use Leg (Feb 2026) - Dual-Payer Architecture Extending Mechanism 494, RSL Pay-Per-Crawl Leverage, Meta $0 (DDM #539 Meta-Leg Mirror) - Sep 5 2026 16:00 PDT
 
 **Date:** 2026-09-05 16:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 543 B -> 544 C)

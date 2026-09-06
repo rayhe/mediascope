@@ -288,14 +288,28 @@ class TestRotationCycleGuard540:
         return commits
 
     def test_536_through_539_types_in_order(self):
-        commits = self._recent_type_commits(4)
-        assert commits == [(539, "C"), (538, "B"), (537, "A"), (536, "E")], (
-            f"expected 539 C / 538 B / 537 A / 536 E newest-first, got {commits}"
+        # REPAIRED in #545 (Sep 5 2026 17:00 PDT): the original asserted the
+        # 536-539 window was the newest-4 type commits, which breaks the
+        # moment a successor (#541+) is committed. Per the #534 repair
+        # precedent (durable invariant over head position), the pinned fact
+        # is the window's internal order and consecutiveness inside the
+        # type-commit stream, not its position at the head.
+        commits = self._recent_type_commits(12)
+        idx = next(i for i, c in enumerate(commits) if c == (536, "E"))
+        window = commits[idx - 3:idx + 1]
+        assert window == [(539, "C"), (538, "B"), (537, "A"), (536, "E")], (
+            f"expected 539 C / 538 B / 537 A / 536 E newest-first, got "
+            f"{window}"
         )
 
     def test_cycle_adjacency_holds(self):
-        commits = self._recent_type_commits(4)
-        for (num_newer, type_newer), (num_older, type_older) in zip(commits, commits[1:]):
+        # REPAIRED in #545 (same staleness as above): adjacency is checked
+        # over the 536-539 window in-stream, not over the newest-4.
+        commits = self._recent_type_commits(12)
+        idx = next(i for i, c in enumerate(commits) if c == (536, "E"))
+        window = commits[idx - 3:idx + 1]
+        for (num_newer, type_newer), (num_older, type_older) in zip(
+                window, window[1:]):
             assert num_newer == num_older + 1, (
                 f"non-consecutive: #{num_newer} after #{num_older}"
             )
