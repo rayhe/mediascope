@@ -1,3 +1,27 @@
+#550 Type D: Scorer Consistency Extended to #547 (First Positive-Sign Delta: Google +0.923 Softer Than Meta) and #548 (Mehrotra Constancy 1/30 Rounding Verified), Standing-Rule Ratchet, 546-549 Rotation Guard, 546-550 Doc Sync - Sep 5 2026 22:00 PDT
+
+**Date:** 2026-09-05 22:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 549 C -> 550 D)
+**Type:** D - Test & Verify (scorer consistency, standing-rule discipline, rotation guard, doc sync)
+
+**Work:**
+1. **Scorer consistency extended to #547 (Type A) and #548 (Type B).** Engine mean-difference arithmetic reproduces both logged MANUAL ILLUSTRATIVE deltas:
+   - #547 (WIRED x Google/Samsung camera glasses vs Meta alarm): engine 0.9233333333333335 exactly matches the block's inline `live_asymmetry_score` (1e-9 tolerance), consistent with the rounded `delta_google_minus_meta` 0.923. FIRST positive-sign delta in the consistency suite (target-minus-peer convention): +0.923 means the target (Google) is SOFTER than the reference (Meta) - opposite direction from every prior mechanism (#532/#533/#537/#538/#542/#543 all target-harsher negative). Pinned as a sign-convention test, not a finding. Degenerate n=1 target gives t=0.0/p=1.0; engine is_significant False - the YAML's NOT_CALCULATED is the deliberate finding-layer choice.
+   - #548 (Mehrotra register constancy): engine 0.0333333333333333 (= 1/30 exactly, meta avg -0.75 minus non-Meta avg -0.7833) vs the YAML's rounded 0.033 - within rounding tolerance 1e-3, pinned explicitly (the per-#530 1e-4 tolerance would have failed on the rounding, so the rounding is asserted rather than hidden). Engine is_significant False agrees with the standing rule. #547's magnitude exceeds #548's by >20x - the falsification finding (#548) is a different claim class from the asymmetry observation (#547).
+   - #549 (Type C) qualitative boundary pinned: mechanism_549_newscorp_meta_50m_yr_deal carries NO asymmetry_scorer section, statistical_discipline tone_scores NOT_SCORED (mirrors #544 boundary from #545).
+2. **Standing-rule discipline ratchet:** #547's `asymmetry_scorer_result` keeps p_value/cohens_d/ci NOT_CALCULATED and is_significant False, artifact_grade false; logged arrays byte-match engine inputs ([0.15] vs [-0.82,-0.72,-0.78]). #548's block keeps p_value NOT_CALCULATED / is_significant False, arrays byte-match ([-0.75,-0.70,-0.75,-0.80] vs [-0.80,-0.80,-0.75]), statistical_discipline tone_scores MANUAL_ILLUSTRATIVE_ONLY.
+3. **Rotation-cycle guard:** git-commit order newest-first 549 C / 548 B / 547 A / 546 E with A->B->C->D->E->A adjacency (extends #545's 541-544 guard); 545 D precedes 546 E; this run #550 D closes the cycle from 549 C (C->D asserted on code metadata, since the #550 commit does not exist until after tests pass - same pre-commit pattern as #545).
+4. **Doc sync:** README + ARCHITECTURE per-file rows added for the 546-550 window with true counts (546: 38, 547: 29, 548: 24, 549: 34, 550: 29); count headers re-synced to authoritative `count_stats.py --pytest` numbers: 29169/877 -> 29198/878 (+29 #550). `count_stats.py --check` green.
+
+**New Type D files:** `tests/test_type_d_550_scorer_consistency_547_548_rotation_doc_sync_sep05_10pm.py` - 5 classes, 29 tests, all passing.
+
+**Rotation Transparency:** Previous entry #549 Type C at 21:00 PDT Sep 5 2026 (commit 30d2710 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Cycle verified: 545 D 17:00, 546 E 18:00, 547 A 19:00, 548 B 20:00, 549 C 21:00. Selected Type D.
+
+**Novelty Verification:** Zero test_type_d_550 files on disk before this run (glob verified); no #550 in git log (grep verified); scorer consistency never covered #547/#548 (repo grep in scorer-consistency test files returned zero); the 546-549 rotation window was never guarded (grep in *rotation* tests returned zero); the 541-545 doc-sync window (from #545) is extended, not duplicated.
+
+**Targeted regression:** #546, #547, #548, #549 test files - 125 passed. New #550 file - 29 passed. Full suite (29,198 tests) was started this run in the background but is still running at commit time (~10+ min); it will be checked on completion and any failure surfaced in the next Type D cycle - the commit rests on the targeted regression + doc-sync gate (both green), same as #545/#549 precedent.
+
+---
+
 #549 Type C: News Corp x Meta AI Content Licensing Deal (Mar 2026) - Up To $50M/Yr, At-Least-Three-Year Term - First Dedicated Meta-Leg Formalization of the Quadruple-Revenue Architecture - Sep 5 2026 21:00 PDT
 
 **Date:** 2026-09-05 21:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 548 B -> 549 C)
