@@ -10132,3 +10132,70 @@ Existing mechanism #144 covers podcast ecosystem baseline - EHE activist group n
 ### 8. Test File
 
 - tests/test_type_e_556_podcast_sentiment_thirtyfourth_verification_sep06_4am.py - checks covering mechanism_id 556, Type E, iteration 556, date 2026-09-06 04:00 PDT, rotation 555 D -> 556 E (8 classes, 36 tests, all passing), Guilty Feminist 498 hold no 499 thirty-fourth cycle bounded secondary-only (search-result snippet, 5h crawl) with cadence note and official-site parity, EHE 27-day hold with Times/LatestLY/PetaPixel/Engadget/feminist.org/AfroTech/Hyperallergic re-surfaces verified already-in-corpus via pre-commit repo grep (NOT new campaigns, no double-counting), Attention Sphere 34th no-match with circular GitHub rejection and Spotify-Creators nonprofit re-confirmation, NO new press surfaces this cycle (Sep 1 search window returned only older items; #531 Jezebel remains newest), MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs incl one http listing as surfaced, distinct from 551, iteration-log entry present and newest-first.
+
+## Iteration #561 - Sun 2026-09-06 09:00 PDT (Type E: Podcast Sentiment Tracking)
+
+### 1. Guilty Feminist - 498 Hold Continues, No 499 (Thirty-Fifth Verification Cycle)
+
+- **Latest episode as of Sep 6 09:00 PDT:** 498 Politics with Felicity Ward and Hannah Spencer (released 31 Aug 2026), unchanged from the Sep 6 04:00 PDT verification (#556). This run verified via fresh search-result secondary: the ListenNotes page (crawled 10 hours before this run) shows "LATEST EPISODE: The Guilty Feminist 498. Politics ... Released 31 August", update frequency weekly on the same page. Secondary-only evidence this cycle, flagged explicitly.
+- **Bounded claim:** no new episode observed as of 09:00 PDT Sep 6 2026, a 5-hour extension of the Sep 6 04:00 PDT verification (#556). Bounded absence, not proof of non-existence.
+- **Relevance hold:** the 494-498 slate contains no Meta/AI/wearables/privacy/surveillance in titles or descriptions as retrieved. Zero Meta/wearables episodes across all thirty-five verification cycles (Aug 3-Sep 6).
+- **Cadence note:** weekly release pattern puts episode 499 plausibly near Sep 7 (tomorrow). Seven-day absence of 499 after the Aug 31 release is consistent with the regular cadence, not a signal. Chortle (crawled 3 hours before this run) confirms the London Podcast Festival live show on Sep 13 (Kings Place), with no new episode announced in the retrieved text.
+- **Extension not duplicate:** this check extends #556 by 5 hours with fresh search evidence this run; the hold finding is identical, the observation window is new.
+
+### 2. Everyone Hates Elon - 28-Day Hold Continues (Thirty-Fifth Verification Cycle)
+
+- **Hold:** activist group, not a podcast. Aug 10 Epstein sandwich-board poster remains the last primary campaign (28 days since Aug 10 as of Sep 6); July bus stops (Kylie Jenner lenticular ad, "pervert technology" poster) remain the last primary-verified amplification via Engadget, Times, PetaPixel.
+- **Search this run:** query "Everyone Hates Elon" Meta glasses campaign (since 2026-08-10) returned only in-corpus items. Pre-commit repo grep verified already-in-corpus status for every re-surfaced shape: the Times Epstein spoof piece (41 days), the Engadget bus-stops take-over (51 days, crawled 2 days), the feminist.org "Helpful or Hurtful?" piece (crawled 1 hour before this run, in corpus 29 hits, logged #470), the hyperallergic.com guerrilla bus-ads piece (53 days, in corpus 5 files), and the hyperallergic.com "Jeffrey Epstein Dons Meta AI Glasses in Damning Guerrilla Ad" piece (27 days, URL slug verified in corpus). This repository's own GitHub commit and blob pages also surfaced and were rejected as circular evidence per established discipline. Re-surfaces, NOT new. No double-counting. (The LatestLY, PetaPixel, and AfroTech items from #556's query did not surface in this cycle's result set; absence of a given item in a single query run is not a finding.)
+- **No new primary campaign motif surfaced.**
+- **No competitor-equivalent guerrilla campaign** against Apple, Google, Samsung, or Snap camera wearables has surfaced in any of the thirty-five verification cycles. Bounded search-result absence.
+
+### 3. Attention Sphere - Thirty-Fifth No-Match Verification
+
+- **Result:** Sep 6 09:00 PDT quoted search for "Attention Sphere" podcast tech returned no matching podcast (thirty-fifth no-match).
+- **What results returned:** this repository's own GitHub commit pages (rejected as circular evidence per established discipline, not cited as discovery), plus a Spotify Creators listing for Anita Nowak's Purposeful Empathy (crawled 3 hours before this run) that re-confirms "The Attention Sphere: Ava's non-profit organization, committed to designing tech that strengthens real-world community" and names her site theattentionstudio.com, inside an episode description covering AI chatbots, children, and the attention economy. Ava Smithing's actual podcast remains Left to Their Own Devices (Toronto Star).
+- **Status unchanged:** task-spec name remains misidentified; Attention Sphere is a nonprofit, not a podcast. The fresh source re-confirms the misidentification finding with new evidence, not new information.
+- **Bounded claim:** bounded search-result absence, not proof of universal non-existence.
+
+### 4. New Press Surfaces This Cycle: ONE New
+
+- **Startup Fortune: "Meta glasses lawsuit says intimate footage trained AI via Kenyan contractors"** (crawled 1 day before this run, ~Sep 5; https://startupfortune.com/meta-glasses-lawsuit-says-intimate-footage-trained-ai-via-kenyan-contractors/): an amended complaint filed August 31 in the U.S. District Court for the Northern District of California extends the in-corpus contractor-review lawsuit (TechCrunch Mar 2026) beyond device-buyer plaintiffs to bystanders, people who never bought the glasses but were caught by someone else's Ray-Bans while Meta's AI features were running. The suit alleges the bystander's face, voice, home, or child could be captured and shipped to Meta's servers, then folded into an AI training pipeline, and that Kenyan contractors reviewed intimate footage. Co-lead counsel Ryan Clarkson (Clarkson Law Firm) is quoted via Fortune describing the corporate race for AI data as "feeding the beast."
+- **Novelty verified:** zero hits for this URL or the piece in podcast-sentiment.md, iteration-log.md, tests/, and examples/ (scoped repo greps this run); the only "Kenyan" hits repo-wide are older mechanisms citing Kenyan contractors as background, not this article.
+- **Assessment:** this is a re-report/extension of an in-corpus story (contractor-review lawsuit lineage), not a new claim class. Framing is bystander-consent and AI-training-pipeline alarm, Meta-exclusive. Niche trade-blog venue (startupfortune.com), not corroborated by a tier-1 outlet or the primary filing this run.
+- **Net finding:** this piece is now the newest in-corpus Meta-glasses press surface, superseding the #531 Jezebel surface (~Sep 4). Other returns this run were older in-corpus items: reuters.com Dec 2025 take-off piece, techcrunch.com Mar 2026 contractor-review lawsuit, livemint.com privacy-controversy piece, forbesindia.com privacy-scandal piece, reuters.com Aug 2026 HateAid German criminal complaint.
+
+### 5. Scores (MANUAL ILLUSTRATIVE only)
+
+- p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci NOT_CALCULATED, is_significant False
+- EHE entity-selective posture unchanged: MANUAL ILLUSTRATIVE -8/10 toward Meta glasses (activist, not press). No competitor equivalent surfaced across thirty-five cycles, bounded search-result absence.
+- Correlation not causation. No claim of empirical significance. Do not claim empirical significance.
+
+### 6. Sources (verbatim full URLs from search full-URL listings this run)
+
+- https://www.listennotes.com/podcasts/the-guilty-feminist-deborah-frances-white--rJKyRn2TWG/ (search-result secondary this run, crawled 10h, 498 latest, weekly cadence)
+- https://www.chortle.co.uk/shows/edinburgh_fringe_2026/g/39124/the_guilty_feminist (crawled 3h; Sep 13 Kings Place live show, no new episode announced in retrieved text)
+- https://startupfortune.com/meta-glasses-lawsuit-says-intimate-footage-trained-ai-via-kenyan-contractors/ (NEW surface this cycle)
+- https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5 (EHE Epstein poster, Times, in corpus)
+- https://WWW.ENGADGET.COM/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/ (EHE July campaign primary, in corpus)
+- https://feminist.org/news/helpful-or-hurtful-the-growing-privacy-debate-over-meta-glasses/ (in corpus 29 hits, logged #470; NOT new)
+- http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/ (verbatim listing was http not https; in corpus 5 files; NOT new)
+- https://hyperallergic.com/jeffrey-epstein-dons-meta-ai-glasses-in-damning-guerrilla-ad/ (in corpus per URL-slug grep; NOT new)
+- https://creators.spotify.com/pod/profile/anita-nowak/ (Attention Sphere nonprofit re-confirmation, crawled 3h before run)
+- https://www.reuters.com/sustainability/boards-policy-regulation/ray-ban-meta-glasses-take-off-face-privacy-competition-test-2025-12-09/ (in corpus; privacy-search return, not new)
+- https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/ (in corpus; privacy-search return, not new)
+- https://www.livemint.com/news/trends/are-mark-zuckerbergs-meta-ai-smart-glasses-watching-you-privacy-row-fuels-online-fears-puts-spotlight-on-dpdp-act-11772781893202.html (in corpus; privacy-search return, not new)
+- https://www.forbesindia.com/article/ai-tracker/why-metas-ray-ban-smart-glasses-are-causing-a-privacy-scandal/2991937/1 (in corpus; privacy-search return, not new)
+- https://www.reuters.com/legal/government/german-advocacy-group-lodges-criminal-complaint-over-meta-ai-glasses-2026-08-12/ (in corpus; privacy-search return, not new)
+
+### 7. Confounders (ranked)
+
+- STRONG Snippet-bounded search results are not full articles or transcripts; register claims are bounded to retrieved text. NOT_CALCULATED.
+- STRONG Guilty Feminist verification this cycle is secondary-only (search-result snippet, not a direct page open), like #551 and #556; the evidence tier is weaker and stated explicitly. NOT_CALCULATED.
+- STRONG No new Guilty Feminist episode / no new EHE primary campaign motif / no Attention Sphere podcast are bounded search-result absences, not universal non-existence. NOT_CALCULATED.
+- STRONG Five-hour cadence means genuinely new developments can land between cycles; the hold findings are time-bounded to 09:00 PDT Sep 6. NOT_CALCULATED.
+- MODERATE EHE is an activist group, not a podcast; its inclusion is per task spec as an amplification source, not as audio sentiment evidence. NOT_CALCULATED.
+- MODERATE The one new press surface is a niche trade-blog re-report of an in-corpus lawsuit's amended complaint; its bystander-class framing is not corroborated this run by the primary filing or a tier-1 outlet. NOT_CALCULATED.
+
+### 8. Test File
+
+- tests/test_type_e_561_podcast_sentiment_thirtyfifth_verification_sep06_9am.py - checks covering mechanism_id 561, Type E, iteration 561, date 2026-09-06 09:00 PDT, rotation 560 D -> 561 E (8 classes, 60 tests, all passing), Guilty Feminist 498 hold no 499 thirty-fifth cycle bounded secondary-only (search-result snippet, 10h crawl) with cadence note Sep 7 and Chortle LPF Sep 13, EHE 28-day hold with Times/Engadget/feminist.org/Hyperallergic-x2 re-surfaces verified already-in-corpus via pre-commit repo grep (NOT new campaigns, no double-counting, circular GitHub rejected), Attention Sphere 35th no-match with circular GitHub rejection and Spotify-Creators nonprofit re-confirmation, ONE new press surface (Startup Fortune Kenyan-contractors amended-complaint re-report, ~Sep 5, newest in-corpus surface superseding #531 Jezebel, no tier-1 corroboration this run), MANUAL ILLUSTRATIVE no false significance, no em dashes, verbatim URLs incl one http listing as surfaced, distinct from 556, iteration-log entry present and newest-first.
