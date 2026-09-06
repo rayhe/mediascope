@@ -423,11 +423,22 @@ class TestNoBrittleSweep560:
 
 
 class TestRotationCycleGuard560:
+    # Rotation-window decay repair (Type D #565, Sep 6 2026 13:00 PDT):
+    # the rotation guard pins the commit window as of the #560 commit
+    # (8c179c9), NOT HEAD. A HEAD-relative assertion decays every hour as
+    # new Type D runs push the window forward - the guard's intent is to
+    # verify the rotation was valid AT THAT TIME, which is immutable. The
+    # anchored form is the correct convention for all future Type D
+    # rotation guards. The anchor is the PARENT of the #560 commit: at the
+    # #560 run's test time the #560 commit did not exist yet, so the window
+    # under test was the 5 commits BEFORE it (559-555).
+    ANCHORED_COMMIT = "8c179c9~1"
+
     @staticmethod
     def _git_subjects(n=5):
         out = subprocess.run(
             ["git", "-C", str(REPO_ROOT), "log", f"-n{n}",
-             "--format=%s"],
+             TestRotationCycleGuard560.ANCHORED_COMMIT, "--format=%s"],
             capture_output=True, text=True, check=True)
         return out.stdout.splitlines()
 

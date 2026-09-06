@@ -534,11 +534,19 @@ class TestNoBrittleSweep565:
 
 
 class TestRotationCycleGuard565:
+    # Rotation-window decay convention (established by the Type D #565
+    # repair of #560's guard): the rotation guard pins the commit window as
+    # of THIS run's commit (a250192), NOT HEAD. A HEAD-relative assertion
+    # decays every hour as new Type D runs push the window forward - the
+    # guard's intent is to verify the rotation was valid AT THAT TIME,
+    # which is immutable.
+    ANCHORED_COMMIT = "a250192"
+
     @staticmethod
     def _git_subjects(n=5):
         out = subprocess.run(
             ["git", "-C", str(REPO_ROOT), "log", f"-n{n}",
-             "--format=%s"],
+             TestRotationCycleGuard565.ANCHORED_COMMIT, "--format=%s"],
             capture_output=True, text=True, check=True)
         return out.stdout.splitlines()
 
