@@ -2093,6 +2093,155 @@ competitor_relationships:
     direction: "none"
     description: "No known financial relationship."
     coverage_prediction: "neutral"
+    mechanism_557_verge_anthropic_aspirational_register_vs_meta_deficit_sep06:
+      mechanism_id: 557
+      date_analyzed: '2026-09-06'
+      type: 'Type A: Competitor Coverage Deep Dive'
+      iteration: 557
+      iteration_type: A
+      iteration_time: '2026-09-06 05:00 PDT'
+      scheduled_job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      publication: The Verge
+      competitor_pair: 'Anthropic vs Meta'
+      author: 'Kit (with Ray)'
+      finding: 'First dedicated Type A mechanism under competitor_relationships.anthropic, which previously held only financial metadata and zero mechanisms. The Verge applies an aspirational business-milestone register to Anthropic despite a $0 direct financial tie, while applying a deficit/follower register to Meta. Three Anthropic data points: (1) Anthropic has officially filed to go public (2026-06-01), IPO filing as maturation event with business-milestone vocabulary; (2) Employees across OpenAI and Google support Anthropic''s lawsuit against the Pentagon (2026-03-09), solidarity and hero framing with rival employees rallying behind Anthropic red lines against mass surveillance and autonomous weapons; (3) The Verge reported Anthropic EU AI Act watermarking (mid-Aug 2026, C2PA image marks plus imperceptible text watermark) in compliance register, Anthropic as responsible rule-follower. Three Meta comparators: (1) Meta is reentering the AI race with a new model called Muse Spark (2026-04-08), where reentering implies Meta left the race, deficit and follower vocabulary; (2) Sources say some AI researchers rejected Meta offers to stay at jobs that align with their values (2025-07-10), Meta framed as employer whose values researchers reject; (3) Meta pauses wider Ray-Ban Display expansion due to supply shortages (2026-01-06), supply-constraint deficit. MANUAL ILLUSTRATIVE delta +0.4833 peer softer. Direct financial predictor is ABSENT: the Vox Media OpenAI strategic partnership (May 29 2024) is with Anthropic chief rival, not Anthropic; Verge-Anthropic financial tie is $0. This is a control case against financial determinism, joining #552 (FT x Anthropic) and #193 (BI). The aspirational register extends beyond the deal partner to the non-deal rival lab, so the licensing deal cannot be the sole driver of register softness. Extends #52 (Hayden Field AI beat functionally an OpenAI/Anthropic beat, 15+ vs 2-3 articles in 14 months) from journalist level to publication level; extends #425 (Verge OpenAI aspiration vs Meta deficit, raw delta 0.46) to the second frontier lab; bounded by #507 (deal-incentive pattern is domain-bounded, genre and access drive register). Correlation is not causation.'
+      financial_relationship:
+        anthropic_direct: '$0 direct Verge to Anthropic licensing confirmed zero this run'
+        verge_openai_deal: 'Vox Media strategic content and product partnership with OpenAI, May 29 2024. The Verge content used in ChatGPT. Cash terms undisclosed. PMC acquired Vox Media in 2026.'
+        meta_financial: '$0'
+        deal_disclosed_in_verge_coverage: false
+        non_causal_language: 'Correlation does not establish causation. Financial relationship is a structural incentive predictor, not proof of editorial control. Direct financial predictor is ABSENT for this pair: Vox Media deal is with OpenAI, Anthropic rival. This mechanism is therefore a control case against financial determinism, consistent with iteration 552 FT Anthropic honest notes and iteration 193 BI control case.'
+        editorial_independence_note: 'The Verge editorial standards require source verification and balance. No evidence of direct directive linking any commercial relationship to Anthropic coverage tone was reviewed. Financial incentives are correlational, not causal proof.'
+      verge_anthropic_sources_sep06_2026:
+        - title: 'Anthropic has officially filed to go public'
+          date: '2026-06-01'
+          url: 'https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/'
+          url_source: 'corpus pointer verified by prior run #52. theverge.com blocked per standing rule.'
+          framing: 'business_milestone_maturation'
+          tone_manual_illustrative: 0.25
+          language:
+            - 'officially filed to go public'
+            - 'IPO filing as maturation event'
+          notes: 'Business milestone register. In-repo corpus from mechanism #52 Hayden Field cross-entity analysis.'
+          deal_disclosed: false
+        - title: "Employees across OpenAI and Google support Anthropic's lawsuit against the Pentagon"
+          date: '2026-03-09'
+          url: 'https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google'
+          url_source: 'verbatim theverge.com URL from browser.search this run, quoted inside source_url field of a GitHub news-archive mirror result'
+          framing: 'solidarity_hero_underdog'
+          tone_manual_illustrative: 0.30
+          language:
+            - 'employees across OpenAI and Google support'
+            - 'red lines against mass surveillance and autonomous weapons'
+            - 'refuse this unilateral use'
+          notes: 'Solidarity narrative. Anthropic as hero fighting government overreach. Corpus pointer https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/ retained as backup.'
+          deal_disclosed: false
+        - title: 'Anthropic plans Claude watermarks as EU AI Act duties start'
+          date: '2026-08-12'
+          url: 'https://stechtimes.com/en/article/anthropic-plans-claude-watermarks-as-eu-ai-act-duties-start-msorz9d6'
+          url_source: 'secondary SendTech Times, verbatim from browser.search Full URLs this run, explicitly attributes reporting to The Verge. No direct theverge.com URL surfaced verbatim this run; recorded as Verge-attributed via secondary.'
+          framing: 'regulatory_compliance_responsible'
+          tone_manual_illustrative: 0.10
+          language:
+            - 'machine-readable marks to Claude-generated text and images'
+            - 'C2PA for supported image files'
+            - 'imperceptible text watermark'
+          notes: 'Compliance register. Anthropic framed as responsible rule-follower under EU AI Act Article 50(2). Verge attribution is via secondary, not direct page view.'
+          deal_disclosed: false
+      verge_meta_sources_sep06_2026:
+        - title: 'Meta is reentering the AI race with a new model called Muse Spark'
+          date: '2026-04-08'
+          url: 'https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/'
+          url_source: 'corpus pointer verified by prior run #52. theverge.com blocked per standing rule.'
+          framing: 'deficit_follower'
+          tone_manual_illustrative: -0.35
+          language:
+            - 'reentering the AI race'
+            - 'implies Meta left the race'
+          notes: 'Deficit and follower vocabulary in headline. In-repo corpus from mechanism #52.'
+          deal_disclosed: false
+        - title: 'Sources: some AI researchers rejected Meta offers to stay at jobs that align with their values'
+          date: '2025-07-10'
+          url: 'https://www.techmeme.com/250710/p29'
+          url_source: 'corpus pointer verified by prior runs #52 and mechanism at lines 4036-4043. theverge.com blocked per standing rule.'
+          framing: 'values_deficit_rejection'
+          tone_manual_illustrative: -0.30
+          language:
+            - 'rejected Meta offers'
+            - 'stay at jobs that align with their values'
+            - 'talent war'
+          notes: 'Meta framed as employer whose values researchers reject. Far fewer defected from Anthropic and DeepMind than OpenAI per corpus note.'
+          deal_disclosed: false
+        - title: 'Meta pauses wider Ray-Ban Display expansion due to supply shortages'
+          date: '2026-01-06'
+          url: 'https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused'
+          url_source: 'verbatim theverge.com URL from iteration-log #425. theverge.com blocked for fresh fetches per standing rule.'
+          framing: 'supply_constraint_deficit'
+          tone_manual_illustrative: -0.15
+          language:
+            - 'expansion paused'
+            - 'supply shortages'
+            - 'waitlists'
+          notes: 'Supply-constraint deficit framing. From #425 Verge Meta deficit corpus. Jess Weatherbed byline per #425 note.'
+          deal_disclosed: false
+      register_analysis: 'The aspirational register is not confined to the licensing deal partner. Anthropic receives the same business-milestone, solidarity-hero, and compliance-responsible registers as OpenAI at The Verge, with a $0 direct financial tie. Meta receives deficit registers: reentering the race (implies prior loss), researchers rejecting offers over values (implies values deficit), supply shortages (implies execution deficit). The register gap crosses the deal boundary, which bounds any claim that the OpenAI licensing deal alone predicts The Verge coverage tone.'
+      asymmetry_scoring_manual_illustrative:
+        note: 'MANUAL ILLUSTRATIVE not empirical n=3 vs n=3 per entity insufficient for inferential significance'
+        target_entity: 'Meta Verge deficit register'
+        peer_entity: 'Anthropic Verge aspirational register'
+        target_scores_manual_illustrative: [-0.35, -0.30, -0.15]
+        target_avg_manual_illustrative: -0.2667
+        peer_scores_manual_illustrative: [0.25, 0.30, 0.10]
+        peer_avg_manual_illustrative: 0.2167
+        delta_manual_illustrative: 0.4833
+        delta_direction: 'peer softer than target by 0.48'
+        p_value: 'NOT CALCULATED no observed corpus'
+        cohens_d: 'NOT CALCULATED'
+        ci_95: 'NOT CALCULATED'
+        significant: false
+        empirical_required: true
+        scorer: 'mediascope/score/asymmetry.py v0.1.0 hypothetical calibration manual illustrative'
+        synthetic_note: 'Tone arrays MANUAL ILLUSTRATIVE manually assigned illustrative scores based on framing vocabulary not observed Verge corpus empirical scores. Real validation requires URL-backed article-level observed tone scoring via VADER TextBlob plus human annotation on full Verge corpus Mar-Aug 2026 window. Synthetic result demonstrates scorer sensitivity. Per project standing rule Aug 28, DO NOT claim empirical significance from synthetic scores alone illustrative only. Financial relationships correlational structural incentives not proof editorial control causation. Direct financial predictor absent for Anthropic pair so delta cannot be attributed to a direct licensing tie.'
+      confounders:
+        strong:
+          - 'beat concentration: Hayden Field Verge AI beat is functionally an OpenAI/Anthropic beat per mechanism #52, about 15+ articles on the two labs vs 2-3 on Meta AI in 14 months Jun 2025 to Aug 2026. A beat structured around the two frontier labs applies lab vocabulary aspirationally independent of any licensing deal.'
+          - 'news genre: IPO filings, industry solidarity letters, and regulatory compliance stories are inherently upbeat genres. Talent-war rejection and supply-constraint stories are inherently deficit genres. Genre alone can produce the register gap with zero entity favoritism.'
+          - 'hype cycle position: Anthropic is the cycle darling with pre-IPO $2T valuation target Oct 2026, a $35B Lambda/Nvidia cloud deal, and a $45B Nscale deal in Aug 2026, while Meta AI is positioned as incumbent follower. Market momentum gives journalists positive pegs for one entity and negative pegs for the other.'
+        moderate:
+          - 'timing: Anthropic sources span Mar to Aug 2026 while Meta sources span Jul 2025 to Jan 2026. Temporal mismatch weakens the same-window reading; the window is bounded by corpus availability, not matched design.'
+          - 'OpenAI deal halo: Vox Media OpenAI licensing deal may create general AI-lab goodwill at The Verge, but Anthropic is OpenAI primary rival so the direction of any halo is ambiguous and it cannot explain the full gap given the $0 direct tie.'
+          - 'genuine conduct: Meta talent scramble was genuinely newsworthy turbulence, and Anthropic red-line stance genuinely invited solidarity framing. Real facts legitimately shape register.'
+        weak:
+          - 'thin sample: n=3 vs n=3 is directional only, never dispositive for a publication-level claim.'
+      open_empirical_test: 'Sony Music Publishing and Warner Chappell Music sued Anthropic Aug 29 2026, calling it one of the largest and most blatant ongoing thefts of intellectual property in history, seeking up to $150,000 per work with potential damages in the billions (Reuters 2026-08-31). The Verge separately confirmed the federal filing per fathom.news. The Verge headline framing of this suit is the next empirical test of its Anthropic register: an adversarial register there supports genre and conduct explanations; a softened register strengthens the asymmetry claim. Not asserted either way this run.'
+      finding_summary: 'The Verge covers Anthropic with aspirational business-milestone, solidarity-hero, and compliance-responsible registers in the 0.10 to 0.30 range while covering Meta with deficit and follower registers in the -0.35 to -0.15 range. Delta 0.4833 MANUAL ILLUSTRATIVE. Distinct from #425 (Verge OpenAI aspiration vs Meta deficit, same domain) because the peer here is the non-deal rival lab: the softness crosses the deal boundary, bounding the licensing-deal predictor. Distinct from #507 (deal-incentive pattern domain-bounded) because the AI-model domain shows register softness for both labs regardless of deal status. Financial predictor is direct-deal absent: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0, so this mechanism stands as a control case. Strongest confounders are beat concentration (#52 Hayden Field), news genre (upbeat genres vs deficit genres), and hype cycle position (Anthropic pre-IPO $2T target vs Meta incumbent follower). Open empirical test named: The Verge framing of the Aug 29 2026 Sony/Warner music lawsuit. Correlation does not imply causation.'
+      source_urls:
+        - 'https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google'
+        - 'https://technewstube.com/theverge/1836630/anthropic-officially-filed-to-go-public/'
+        - 'https://technewstube.com/theverge/1813351/employees-across-openai-google-support-anthropics-lawsuit/'
+        - 'https://stechtimes.com/en/article/anthropic-plans-claude-watermarks-as-eu-ai-act-duties-start-msorz9d6'
+        - 'https://technewstube.com/theverge/1821587/meta-reentering-ai-race-new-model-called-muse-spark/'
+        - 'https://www.techmeme.com/250710/p29'
+        - 'https://www.theverge.com/news/856216/meta-ray-ban-display-smart-glasses-international-expansion-paused'
+        - 'https://www.reuters.com/legal/government/sony-warner-music-sue-anthropic-over-songs-used-ai-training-2026-08-31/'
+        - 'https://www.fathom.news/anthropic-copyright-lawsuit/'
+        - 'https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media'
+      cross_references: [52, 425, 507, 420, 552, 193]
+      cautious_language:
+        correlation_not_causation: true
+        manual_illustrative_label: 'MANUAL ILLUSTRATIVE'
+        no_statistical_significance_claim: true
+        no_editorial_control_claim: true
+        requires_empirical_validation: 'Welch t-test plus Cohen d plus bootstrap CI on observed article-level tone scores'
+        synthetic_scores_illustrative_only: true
+        p_value_not_calculated: true
+        cohens_d_not_calculated: true
+        ci_not_calculated: true
+        significant_false: true
+        significant_empirical_false: true
+        disclaimer: 'Financial correlation does not imply causation. Structural incentive not proof editorial influence. Synthetic scores illustrative only. Direct financial predictor absent for Anthropic pair: Vox Media OpenAI deal is with Anthropic rival, Verge-Anthropic tie is $0. This mechanism is a control case against financial determinism. Beat concentration and news genre and hype cycle position are the strongest confounders.'
+      new_test_file: 'tests/test_type_a_557_verge_anthropic_aspirational_register_vs_meta_deficit_sep06_5am.py'
   amazon:
     financial_tie: "none"
     estimated_value: "$0"

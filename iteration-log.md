@@ -1,3 +1,30 @@
+#557 Type A: The Verge x Anthropic Aspirational-Register vs Meta Deficit Register - First Dedicated Type A Under Verge competitor_relationships.anthropic (delta +0.483 MANUAL ILLUSTRATIVE n.s., Control Case Against Financial Determinism) - Sep 6 2026 05:00 PDT
+
+**Date:** 2026-09-06 05:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 556 E -> 557 A)
+**Type:** A - Competitor Coverage Deep Dive (The Verge x Anthropic vs Meta)
+
+**Finding:** The Verge applies an aspirational register to Anthropic despite a $0 direct financial tie, while applying a deficit/follower register to Meta. Three Verge Anthropic data points: (1) "Anthropic has officially filed to go public" (2026-06-01) - IPO filing as maturation event, business-milestone vocabulary (+0.25, corpus pointer via #52); (2) "Employees across OpenAI and Google support Anthropic's lawsuit against the Pentagon" (2026-03-09) - solidarity/hero framing, rival employees rallying behind Anthropic's red lines against mass surveillance and autonomous weapons (+0.30, verbatim theverge.com URL from this run's browser.search output); (3) The Verge reported Anthropic's EU AI Act watermarking (mid-Aug 2026, C2PA image marks + imperceptible text watermark) in compliance register, Anthropic as responsible rule-follower (+0.10, Verge-attributed via stechtimes.com secondary, no direct theverge.com URL surfaced verbatim this run, recorded explicitly as secondary-attributed). Three Verge Meta comparators: (1) "Meta is reentering the AI race with a new model called Muse Spark" (2026-04-08) - "reentering" implies Meta left the race, deficit/follower (-0.35); (2) "Sources: some AI researchers rejected Meta's offers to stay at jobs that align with their values" (2025-07-10) - Meta as employer whose values researchers reject (-0.30); (3) "Meta pauses wider Ray-Ban Display expansion due to supply shortages" (2026-01-06, Weatherbed) - supply-constraint deficit (-0.15).
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Anthropic peer [+0.25, +0.30, +0.10] avg 0.2167 vs Meta target [-0.35, -0.30, -0.15] avg -0.2667: delta +0.4833 peer softer. p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED, is_significant False.
+
+**Control case (falsification family):** NO documented Verge/Vox/PMC-Anthropic licensing deal exists (verified this run). The Vox Media-OpenAI strategic partnership (May 29 2024) is with Anthropic's primary rival. The aspirational register crosses the deal boundary, so the licensing deal cannot be the sole driver of register softness. Joins #552 (FT x Anthropic), #507 (Verge OpenAI deal-incentive is domain-bounded), #193 (BI). Strongest confounders: (1) beat concentration - Hayden Field's Verge AI beat is functionally an OpenAI/Anthropic beat per #52 (15+ vs 2-3 articles in 14 months); (2) news genre - IPO filings and solidarity letters are inherently upbeat, talent-war and supply-constraint stories inherently deficit; (3) hype-cycle position - Anthropic pre-IPO ~$2T target Oct 2026 with $35B Lambda/Nvidia + $45B Nscale cloud deals (Aug 2026) vs Meta as incumbent follower. MODERATE: timing mismatch (Mar-Aug 2026 vs Jul 2025-Jan 2026), OpenAI-deal halo direction ambiguous, genuine conduct. WEAK: n=3 vs n=3 directional only.
+
+**Open empirical test (named, not asserted):** Sony Music Publishing and Warner Chappell sued Anthropic Aug 29 2026 ("one of the largest and most blatant ongoing thefts of intellectual property in history", up to $150K per work, potential billions; Reuters 2026-08-31). The Verge separately confirmed the federal filing per fathom.news. The Verge's headline framing of this suit tests whether the aspirational register survives genuinely adversarial facts. Not asserted either way this run.
+
+**Cross-references:** 52 (Hayden Field beat concentration, journalist to publication level), 425 (Verge OpenAI aspiration vs Meta deficit, extends to second lab), 507 (domain-bounded), 420 (BI quad), 552 (FT control), 193 (BI control).
+
+**Research method:** 3 browser.search query sets this run (Verge Anthropic Aug 2026; site:theverge.com Anthropic; Verge Sony Warner Anthropic lawsuit). theverge.com blocked for browser.open per standing policy. One verbatim theverge.com URL surfaced inside a search snippet (GitHub news-archive mirror's source_url field, copied verbatim). Watermark item attributed via secondary with explicit disclosure. No zero-coverage claims per iteration-492 rule.
+
+**New Type A files:** `tests/test_type_a_557_verge_anthropic_aspirational_register_vs_meta_deficit_sep06_5am.py` - 6 classes, 22 tests. YAML insertion under competitor_relationships.anthropic validated by re-parse; 4-decimal avg rounding verified within 1e-3 tolerance.
+
+**Artifact readiness:** No analysis.json update warranted. Control-case mechanism with MANUAL ILLUSTRATIVE scorer; directional only.
+
+**Rotation Transparency:** Previous entry #556 Type E at 04:00 PDT Sep 6 2026 (commit aabcd6b verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after E is A. Selected Type A.
+
+**Novelty Verification:** Zero test_type_a_557 files on disk before this run (glob verified); no Type A commit with 557 in the title (git log --grep verified); competitor_relationships.anthropic in the-verge.yaml held only financial metadata ($0 tie) with zero mechanism keys before insertion (parsed-yaml verified).
+
+---
+
 #556 Type E: Podcast Sentiment 34th Verification Cycle - GF 498 Hold No 499 (5h-crawl secondary + official-site parity, 499 plausible near Sep 7), EHE 27-Day Hold (7 in-corpus re-surfaces, zero new motifs), Attention Sphere 34th No-Match (Spotify Creators 5h-fresh re-confirms nonprofit; own GitHub commits rejected circular), No New Press Surfaces (Sep 1 window returns older items only; #531 Jezebel newest) - Sep 6 2026 04:00 PDT
 
 **Date:** 2026-09-06 04:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 555 D -> 556 E)
