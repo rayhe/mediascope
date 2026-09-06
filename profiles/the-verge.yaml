@@ -1362,6 +1362,167 @@ key_journalists:
       Regular Vergecast panelist. Reviews TVs, laptops, consumer electronics. Previously at Gizmodo.
       Consumer-focused rather than platform-critical.
 
+  - name: "Alex Heath"
+    beat: "Meta/platforms, deputy editor, Decoder guest host, Command Line and Sources podcasts"
+    known_patterns: >
+      Deputy Editor and primary Meta/platforms beat reporter. Broke Facebook-to-Meta
+      rebrand (2021). Conducts all Zuckerberg Decoder interviews (delegated from EIC
+      Nilay Patel per mechanism #6). Hosts Command Line newsletter and Sources podcast
+      (launched Sep 2026). Career: Cult of Mac, Business Insider, The Information,
+      The Verge (2021-present).
+    cross_entity_coverage_analysis:
+      mechanism_id: 563
+      iteration: 563
+      type: 'Type B - Journalist Cross-Entity Tracking'
+      journalist: Alex Heath
+      date_analyzed: '2026-09-06'
+      finding: 'Heath applies a constant access-plus-news register to Meta and OpenAI:
+        matched access journalism (CEO dinners, chairman interviews, product hands-ons)
+        with no standing adversarial vocabulary against Meta. Meta avg +0.1333 vs
+        OpenAI avg +0.0167, delta +0.1167 MANUAL ILLUSTRATIVE, engine p ~ 0.575,
+        is_significant False (agreement pole, same class as #558). Falsification and
+        control case: runs against the journalist-level anti-Meta bias hypothesis.
+        His sharpest-question item in this window was aimed at OpenAI (GPT-5 fiasco
+        dinner), while his flagship Sources launch episode gave Altman an
+        unchallenged rebuttal platform on data-center water claims.'
+      meta_coverage:
+        tone: mixed_access_scoop
+        examples:
+        - title: Meta restructures Reality Labs into Wearables and Metaverse
+            organizations; relatively small layoffs
+          date: '2025-12'
+          date_verified: false
+          framing: neutral_scoop
+          score: 0.0
+          byline_attribution: secondary_attested
+          byline_evidence: Road to VR attributes scoop to "The Verge's Alex Heath"
+            and notes the Bosworth memo was "available via Heath's Command Line
+            newsletter" verbatim; no verbatim theverge.com URL surfaced this run,
+            disclosed per iteration-492 rule
+          source_url: http://roadtovr.com/meta-reality-labs-reorg-ray-ban-smart-glasses/
+        - title: Orion AR glasses hands-on; "even as a prototype, they were impressive"
+          date: '2024-09'
+          date_verified: false
+          framing: positive_hands_on
+          score: 0.30
+          byline_attribution: secondary_attested
+          byline_evidence: The Verge TikTok carries "The Verge's Deputy Editor,
+            Alex Heath, tested out the new augmented reality glasses from Meta,
+            called Orion" verbatim; Meta Connect 2024 window, no verbatim
+            theverge.com URL surfaced this run, disclosed
+          source_url: https://www.tiktok.com/@/video/7418651324423703851?_r=1&_d=secCgYIASAHKAESPgo8JQJcC6Ek009OlBbabM5RcK9YPpNR0%2Fwp%2FRIkvDfwBARaa1zNVZAtLBD7GrvcA%2BRLdk6%2B%2F17jqL7b36NiGgA%3D&u_code=d828m00ghlm7a0&share_item_id=7418651324423703851&timestamp=1757611920&share_app_id=1233
+        - title: Zuckerberg Decoder interviews (Meta Connect 2022, 2023, 2024)
+          date: '2024-09'
+          date_verified: false
+          framing: balanced_access_interview
+          score: 0.10
+          byline_attribution: in_corpus
+          byline_evidence: 'In-corpus per mechanism #6 (Patel EIC delegation paradox);
+            Patel delegates all Zuckerberg Decoder interviews to Heath, who applies
+            balanced access framing rather than editorial-commentary adversarial'
+          source_url: in_repo_reference_mechanism_6
+      non_meta_coverage:
+        tone: mixed_access_scoop
+        entity: OpenAI
+        examples:
+        - title: "I talked to Sam Altman about the GPT-5 launch fiasco"
+          date: '2025-08'
+          date_verified: false
+          framing: adversarial_access_interview
+          score: -0.30
+          byline_attribution: secondary_attested
+          byline_evidence: 'gwern.net link-bibliography entry lists URL with
+            "I Talked to Sam Altman about the GPT-5 Launch Fiasco", Alex Heath
+            verbatim; Altman on record: "I think we totally screwed up some things
+            on the rollout"; no verbatim theverge.com page opened this run, disclosed'
+          source_url: https://www.theverge.com/command-line-newsletter/759897/sam-altman-chatgpt-openai-social-media-google-chrome-interview
+        - title: Sources podcast debut episode; Altman rebuts data-center water
+            criticism ("38,000 ChatGPT queries per almond")
+          date: '2026-09-04'
+          date_verified: true
+          framing: sympathetic_access_platform
+          score: 0.25
+          byline_attribution: secondary_attested
+          byline_evidence: NY Post attributes the Tuesday episode of the new
+            "Sources" podcast to "host Alex Heath" verbatim; Altman uses the
+            platform to rebut water-consumption criticism largely unchallenged
+            ("robust meme" framing); Heath-as-host gives the rebuttal a flagship
+            launch slot
+          source_url: https://nypost.com/2026/09/04/business/openai-ceo-sam-altman-says-38k-chatgpt-queries-only-use-amount-of-water-it-takes-to-grow-an-almond/
+        - title: Decoder guest-host live interview with Bret Taylor (Sierra CEO,
+            OpenAI chairman)
+          date: '2025-09'
+          date_verified: false
+          framing: neutral_access_live_event
+          score: 0.10
+          byline_attribution: secondary_attested
+          byline_evidence: Episode description carries "This is Alex Heath... I
+            recently sat down with Bret Taylor, the CEO of AI startup Sierra and
+            the chairman of OpenAI" verbatim; live event in San Francisco hosted
+            by Alix Partners; date secondary (Sep 2025 window, podtail crawl age),
+            disclosed
+          source_url: https://player.fm/episodes/505664291
+      scorer:
+        method: manual_illustrative
+        standing_rule: Aug 28 2026
+        meta_scores: [0.0, 0.30, 0.10]
+        meta_avg: 0.1333
+        non_meta_scores: [-0.30, 0.25, 0.10]
+        non_meta_avg: 0.0167
+        delta_meta_minus_non_meta: 0.1167
+        engine_p_value: 0.5748
+        engine_significant: false
+        engine_cohens_d: 0.5112
+        agreement_pole: 'engine and finding layer agree not significant, same class as #558'
+        p_value: NOT_CALCULATED
+        cohens_d: NOT_CALCULATED
+        ci_95: NOT_CALCULATED
+        is_significant: false
+        artifact_grade: false
+      interpretation: 'Falsification family; extends #548 (Mehrotra), #553 (Haskins),
+        and #558 (Bradshaw) to The Verge''s Meta-beat deputy editor. Heath is the
+        closest thing The Verge has to a Meta-adversarial lane assignment per the
+        lane_assignment_mechanism (Lane 4: Meta business/platform, adversarial), yet
+        his own register across Meta and OpenAI is constant: matched CEO access
+        (Zuckerberg Decoder vs Altman dinner / Sources debut), matched product
+        access (Orion demo vs GPT-5 rollout post-mortem). The adversarial edge in
+        this window is aimed at OpenAI (fiasco framing), while the softest item is
+        Meta (Orion impressed). Meta marginally softer (+0.1167) runs against the
+        journalist-level anti-Meta bias hypothesis at the individual level; the
+        adversarial Meta lane at The Verge therefore reads as assignment/institutional
+        rather than personal.'
+      strongest_counterargument: 'Item selection. The lane_assignment_mechanism''s
+        Lane 4 characterization (Heath adversarial on Meta internal dynamics,
+        layoffs, leaker crackdowns) is built from in-corpus examples NOT
+        represented in this item set; the three Meta items here are access and
+        scoop items, his softest register. The Sources debut softness may reflect
+        launch-episode incentives (a hostile debut would kill the podcast) rather
+        than entity preference. The Orion hands-on was a controlled demo engineered
+        to impress. A different item set (Meta layoffs Command Line items vs
+        OpenAI NDA-scandal items) could invert the delta.'
+      confounders:
+        strong:
+        - 'item selection: access-lane items are his softest register for both
+          entities; his adversarial Meta lane (Command Line layoffs/turmoil) and
+          adversarial OpenAI lane (Hayden Field beat items, not his) are excluded'
+        - 'launch incentives: Sources debut episode incentives favor a cooperative
+          guest (Altman), inflating the OpenAI soft item'
+        - 'demo conditions: Orion was a controlled prototype demo, inflating the
+          Meta soft item'
+        moderate:
+        - 'temporal spread: Meta items span 2024-09 to 2025-12, OpenAI 2025-08 to
+          2026-09; register drift over the window is possible'
+        - 'co-attribution dilution: none in this set (all solo Heath items)'
+        weak:
+        - 'n=3 vs n=3 directional only, engine p ~ 0.575'
+      cross_references: [6, 548, 553, 558, lane_assignment_mechanism]
+      research_method: '4 browser.search query sets this run (Heath Meta glasses;
+        Heath OpenAI Altman 2026; Heath GPT-5 fiasco interview; Heath Meta layoffs
+        2026), verbatim full-URL listings from search results; in-corpus mechanism
+        #6 for Zuckerberg Decoder delegation; engine arithmetic run via
+        calculate_asymmetry before writing. No zero-coverage claims.'
+      artifact_readiness: 'No analysis.json update warranted. Illustrative-only
+        scorer output; falsification-family control mechanism is directional.'
   - name: "Allison Johnson"
     beat: "mobile phones, smartphones"
     known_patterns: >

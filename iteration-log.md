@@ -1,3 +1,35 @@
+#563 Type B: Alex Heath (The Verge) Register Constancy Across Meta and OpenAI - Deputy-Editor Meta-Beat Reporter With Matched CEO-Level Access to Both Companies, Delta +0.117 MANUAL ILLUSTRATIVE n.s. (Meta Marginally Softer), Falsification/Control Extending #548/#553/#558 to The Verge's Meta Lane - Sep 6 2026 11:00 PDT
+
+**Date:** 2026-09-06 11:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 562 A -> 563 B)
+**Type:** B - Journalist Cross-Entity Tracking (Alex Heath, The Verge Deputy Editor / Meta-platforms beat)
+
+**Finding:** Heath applies a constant access-plus-news register to Meta and OpenAI: matched CEO access (Zuckerberg Decoder interviews delegated from EIC Patel per mechanism #6 vs Altman dinner interview and Sources-podcast debut flagship slot) and matched product access (Orion hands-on "impressive" vs GPT-5 rollout post-mortem). The adversarial edge in this window was aimed at OpenAI ("I talked to Sam Altman about the GPT-5 launch fiasco", Aug 2025, Altman: "we totally screwed up"), while the softest item was Meta (Orion). Heath is The Verge's closest thing to a Meta-adversarial lane per the in-corpus lane_assignment_mechanism (Lane 4: Meta business/platform), yet his own register is constant across the two entities, so the adversarial Meta lane reads as assignment/institutional rather than personal.
+
+**Meta items (3):**
+1. Reality Labs reorg scoop via Command Line (Dec 2025) - neutral scoop 0.0. Byline secondary: Road to VR attributes to "The Verge's Alex Heath" verbatim. URL: http://roadtovr.com/meta-reality-labs-reorg-ray-ban-smart-glasses/
+2. Orion AR glasses hands-on (Meta Connect 2024) - positive +0.30, "even as a prototype, they were impressive". Byline secondary: The Verge TikTok carries "The Verge's Deputy Editor, Alex Heath, tested out ... Orion" verbatim.
+3. Zuckerberg Decoder interviews (2022/2023/2024) - balanced access +0.10, in_corpus per mechanism #6.
+
+**OpenAI items (3):**
+1. Altman GPT-5 fiasco dinner (Aug 2025) - adversarial-question access -0.30. URL: https://www.theverge.com/command-line-newsletter/759897/sam-altman-chatgpt-openai-social-media-google-chrome-interview (verbatim via gwern.net link-bibliography "Alex Heath" attribution).
+2. Sources podcast debut episode (Sep 4, 2026) - sympathetic access platform +0.25; Altman uses the launch slot to rebut data-center water criticism ("38,000 ChatGPT queries per almond", "robust meme"). NY Post attributes episode to "host Alex Heath" verbatim; date verified true. URL: https://nypost.com/2026/09/04/business/openai-ceo-sam-altman-says-38k-chatgpt-queries-only-use-amount-of-water-it-takes-to-grow-an-almond/
+3. Decoder guest-host live interview with Bret Taylor (OpenAI chairman, Sep 2025) - neutral access +0.10. URL: https://player.fm/episodes/505664291
+
+**Asymmetry scorer:** MANUAL ILLUSTRATIVE, NOT empirical (standing rule Aug 28 2026). Meta [0.0, 0.30, 0.10] avg 0.1333 vs OpenAI [-0.30, 0.25, 0.10] avg 0.0167: engine target-minus-peer +0.1167 == logged delta_manual_illustrative +0.1167 (1e-3). Engine p ~ 0.575, is_significant False, cohens_d ~ 0.51: BOTH layers agree not significant (agreement pole, same class as #558). p_value NOT_CALCULATED, cohens_d NOT_CALCULATED, ci_95 NOT_CALCULATED.
+
+**Confounders Ranked:** STRONG: (1) item selection - access-lane items are Heath's softest register for both entities; his adversarial Meta lane (Command Line layoffs/turmoil) and adversarial OpenAI items are excluded; (2) launch incentives - Sources debut favors a cooperative guest (Altman), inflating the OpenAI soft item; (3) demo conditions - Orion was a controlled prototype demo engineered to impress. MODERATE: temporal spread (Meta 2024-09 to 2025-12, OpenAI 2025-08 to 2026-09). WEAK: n=3 vs n=3 directional only.
+
+**Research method:** 4 browser.search query sets this run (Heath Meta glasses; Heath OpenAI Altman 2026; Heath GPT-5 fiasco interview; Heath Meta layoffs 2026), verbatim full-URL listings from search results; in-corpus mechanism #6 for Zuckerberg Decoder delegation; engine arithmetic run via calculate_asymmetry before writing. No zero-coverage claims.
+
+**New Type B files:** `tests/test_type_b_563_alex_heath_verge_register_constancy_sep06.py` - 6 classes, 25 tests, all passing (2 initial failures fixed: test assertion wording on date-gap disclosure, and a Bret Taylor byline_evidence missing explicit date disclosure in YAML). YAML insertion as Alex Heath key_journalists entry in profiles/the-verge.yaml with `cross_entity_coverage_analysis` (mechanism_id 563); YAML re-parse validated; two mid-run YAML plain-scalar mangles caught and fixed (quote-led continuation lines and `#` comment truncation per AGENTS.md rule); arithmetic re-verified post-fix; em-dash discipline checked (zero in block).
+
+**Artifact readiness:** No analysis.json update warranted. Illustrative-only scorer output; falsification-family control mechanism is directional, not artifact-grade.
+
+**Rotation Transparency:** Previous entry #562 Type A at 10:00 PDT Sep 6 2026 (commit verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after A is B. Selected Type B.
+
+**Novelty Verification:** Zero alex_heath keys in the-verge.yaml before this run (grep verified); no #563 in git log (grep verified); zero test_type_b_563 files on disk before this run (glob verified); the 558-562 rotation window is extended, not duplicated.
+
+
 #562 Type A: NYT x Google Adversarial Register Confirmed vs Meta Bifurcation - First Dedicated Mechanism Under nytimes.yaml competitor_relationships.google, Delta -0.45 MANUAL ILLUSTRATIVE n.s. (Google Harsher), Control Case Against Financial Determinism (Inverted Money-Sympathy) - Sep 6 2026 10:00 PDT
 
 **Date:** 2026-09-06 10:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 561 E -> 562 A)
