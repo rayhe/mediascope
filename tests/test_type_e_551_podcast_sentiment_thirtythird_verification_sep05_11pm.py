@@ -239,9 +239,13 @@ class TestDiscipline:
         assert "WWW.ENGADGET.COM" in block  # verbatim from search full-URL listing
 
     def test_iteration_log_entry_newest_first(self):
+        # Brittle-assertion repair (Type D #555): this file's run was
+        # current at commit time, but the newest-first heading advances
+        # each hour; assert presence of the #551 entry, not that it is
+        # still the newest. Window persistence is pinned per-run.
         text = LOG_PATH.read_text(encoding="utf-8")
-        first_heading = re.search(r"^#\d+", text, re.MULTILINE)
-        assert first_heading and first_heading.group(0) == "#551"
+        assert re.search(r"^#551 Type E", text, re.MULTILINE), \
+            "iteration-log.md lost the #551 Type E entry"
 
     def test_test_file_self_reference(self):
         block = get_551_block()

@@ -1,3 +1,33 @@
+#555 Type D: Scorer Consistency Extended to #552 (First Engine-Significance/Finding-Layer Divergence) and #553, #551 Brittle-Assertion Repair, 551-554 Rotation Guard, 551-555 Doc-Sync Ratchet (incl #552/#553 Miss Repair) - Sep 6 2026 03:00 PDT
+
+**Date:** 2026-09-06 03:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 554 C -> 555 D)
+**Type:** D - Test & Verify (scorer consistency, standing-rule ratchet, brittle repair, rotation guard, doc-sync)
+
+**Finding:** Suite health good with one genuine new ratchet and one brittle-repair:
+1. #552 (Type A, FT x Anthropic surveillance-refusal register inversion, Sep 6 00:00 PDT): engine target-minus-peer = -0.7633; |delta| == logged delta_manual_illustrative 0.7633 (abs 1e-4). The mechanism frames delta peer-minus-target ('peer softer than target by 0.76'); the engine's negative sign under target-minus-peer convention is the same arithmetic, mirrored. Logged arrays byte-match engine inputs; logged avgs (-0.6 / 0.1633) match engine.
+2. FIRST divergence ratchet: for #552's input pair the engine computes p ~ 0.00023 and is_significant True, while the YAML keeps significant: false with p_value 'NOT CALCULATED no observed corpus' and empirical_required: true. The standing rule (Aug 28) holds the finding layer even when the engine would claim significance - arithmetic layer vs finding layer separation, pinned deliberately, not an oversight. Prior consistency mechanisms never had the engine claim significance, so this boundary was untested until now.
+3. #553 (Type B, Haskins WIRED register constancy, Sep 6 01:00 PDT): engine delta 0.10000000000000003 == logged delta_meta_minus_non_meta 0.10 (1e-4); arrays byte-match; both layers not significant. Directionally distinct from #552: opposite sign classes (target-harsher inversion vs near-zero constancy falsification), |#552| > 7x |#553|.
+4. #554 (Type C, Mistral x AFP) qualitative boundary pinned: mistral block carries no asymmetry_scorer section, statistical_discipline tone_scores NOT_SCORED, p_value NOT_CALCULATED, is_significant false.
+5. Brittle repair: #551's test_iteration_log_entry_newest_first asserted newest-first heading still #551 (false this run - first heading #554); repaired to presence assertion per #495 convention. Repair note embedded in the #551 file.
+6. Rotation: 551 E -> 552 A -> 553 B -> 554 C adjacency verified in git-commit order newest-first (plus #550 D before); this run closes C->D.
+7. Doc-sync: README/ARCHITECTURE rows added for #552 (22 tests), #553 (28 tests), #555 (34 tests) - the #552/#553 rows were missing (#510 miss-repair convention). Window 551-555 all rows present with true counts; count_stats.py --check green.
+
+**Asymmetry scorer:** Arithmetic-layer verification only (engine mean-delta reproduction, sign-convention pinning, divergence ratchet); no finding-layer claims, p_value NOT_CALCULATED per standing rule. No analysis.json update - below artifact-grade threshold.
+
+**Confounders Ranked:** STRONG: (1) the #552 divergence test asserts against a magic p-value (0.00022740128636493896) - engine-implementation coupling; if the engine's test statistic changes, the 'not equal' assertion still holds but the 'is True' assertion needs review. MODERATE: (2) count_stats --check scans 882+ test files - slow gate (~minutes). WEAK: (3) #551 repair touches a prior run's file, a write to history-adjacent test code; justified by the #495 precedent and noted in both files.
+
+**Research method:** Engine probes via calculate_asymmetry directly (fast) + pytest on the 551-554 mechanism files (120/121 initially - the 1 failure was the #551 brittle newest-first assertion, repaired this run) + count_stats.py --check gate. YAML re-parse with leaf-type/value assertions for the mistral #554 block.
+
+**New Type D files:** `tests/test_type_d_555_scorer_consistency_552_553_rotation_doc_sync_sep06_3am.py` - 6 classes, 34 tests. Plus #551 file brittle repair and README/ARCHITECTURE rows for #552/#553/#555.
+
+**Artifact readiness:** No analysis.json update warranted. Test-layer only.
+
+**Rotation Transparency:** Previous entry #554 Type C at 02:00 PDT Sep 6 2026 (commit 0f2ac52 verified present via git log before this run's commit). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test files with 555 on disk before this run (glob verified); no commit with #555 in the title (git log --grep verified); zero '552/553 in scorer-consistency' coverage before this run (repo grep verified); the 551-554 rotation window was never guarded; the 546-550 doc-sync window (from #550) is extended, not duplicated.
+
+---
+
 #554 Type C: Mistral AI x AFP Wire-Service Content Licensing Deal (Jan 2025) - Multi-Year, Terms Undisclosed, First Non-US-Lab Mechanism, Completes the Wire-Service AI-Licensing Triad - Sep 6 2026 02:00 PDT
 
 **Date:** 2026-09-06 02:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 553 B -> 554 C)

@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 261 | Career data with source URLs |
 | Career-entry migrations | 976 | Across 444 publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 29319 | Across 882 test files |
+| Tests | 29353 | Across 883 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **29319 tests** across 882 test files, each covering a different analytical capability:
+MediaScope has **29353 tests** across 883 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -1395,6 +1395,9 @@ The existence of a financial conflict does not prove that coverage is biased bec
 | `test_type_c_539_dotdash_meredith_triple_payer_openai_meta_microsoft_pcm_sep05_11am.py` | 32 | Type C #539: Dotdash Meredith (People Inc) triple-payer AI revenue architecture - OpenAI flat-fee (May 2024, ~$16M/yr, all-you-can-eat) + Microsoft PCM pay-per-use (Nov 5 2025, a la carte, Copilot first buyer) + Meta Dec 5 2025 (undisclosed); Google adversarial leg (search 54pct to 24pct, AI Overviews blamed); first triple-payer in corpus; Conde Nast $0-from-Meta mirror contrast - Sep 5 2026 11:00 PDT |
 | `test_type_d_540_scorer_consistency_537_538_rotation_doc_sync_sep05_12pm.py` | 25 | Type D #540: scorer cross-mechanism consistency extended to #537 (-0.30) and #538 (-0.0875) with engine bootstrap-CI structure checks + #532/#533 re-locks; standing-rule discipline ratchet (engine p computed but not promoted - YAML keeps NOT_CALCULATED/n.s.); #539 qualitative boundary (no tone delta); 536-539 rotation-cycle adjacency guard; 536-540 doc-sync ratchet - Sep 5 2026 12:00 PDT |
 | `test_type_c_554_mistral_afp_wire_service_licensing_sep06_2am.py` | 33 | Type C #554: Mistral AI x AFP wire-service content licensing deal (Jan 16 2025) - multi-year, terms undisclosed; full AFP text archive back to 1983 + ~2,300 stories/day in 6 languages for Le Chat factuality grounding (photos/video excluded); first content partnership of its kind for Mistral; Sifted frames Mistral as European alternative to 'OpenAI, Meta and Google'; completes the wire-service AI-licensing triad (AP->OpenAI/Google, Reuters->Meta Oct 2024, AFP->Mistral); new mistral entity under payer-placement convention; directional predictions only, no coverage-tone claim - Sep 6 2026 02:00 PDT |
+| `test_type_a_552_ft_anthropic_surveillance_refusal_register_inversion_sep06.py` | 22 | Type A #552: FT x Anthropic surveillance-refusal register inversion - principled-refusal virtue framing (0.12-0.22) vs Meta camera-alarm threat framing (-0.58 to -0.62), delta 0.7633 MANUAL ILLUSTRATIVE n.s. (peer softer than target, engine target-minus-peer -0.7633); control case against financial determinism (no documented FT-Anthropic licensing deal; indirect Google/Ask-FT channels attenuated); beat assignment + genre + genuine conduct difference as strongest confounders - Sep 6 2026 00:00 PDT |
+| `test_type_b_553_caroline_haskins_wired_surveillance_register_constancy_sep06.py` | 28 | Type B #553: Caroline Haskins (WIRED) surveillance-beat register constancy - Project Cannes Meta investigation (-0.80) vs Flock ALPR misuse investigations (-0.65/-0.60); Meta avg -0.467 vs non-Meta -0.567, delta +0.10 MANUAL ILLUSTRATIVE n.s., falsifies journalist-level anti-Meta bias; consistent with #548 Mehrotra, #457 Adrienne So, #493 Fowler company-agnostic precedents - Sep 6 2026 01:00 PDT |
+| `test_type_d_555_scorer_consistency_552_553_rotation_doc_sync_sep06_3am.py` | 34 | Type D #555: scorer cross-mechanism consistency extended to #552 (-0.7633 target-minus-peer, |delta| == logged 0.7633; FIRST engine-significance/finding-layer divergence: engine p~0.00023 sig=True but YAML keeps significant:false + empirical_required:true) and #553 (Haskins constancy +0.10, both layers n.s.); #551 brittle-assertion repair (newest-first -> presence assertion, #495 convention); #554 qualitative boundary (no tone delta, NOT_SCORED); 551-554 rotation-cycle adjacency guard; 551-555 doc-sync ratchet incl #552/#553 miss repair - Sep 6 2026 03:00 PDT |
 | `test_vittoria_elliott_cross_entity_aug30.py` | 41 | Test suite for Vittoria Elliott cross-entity tracking mechanism #390 - REPAIRED |
 | `test_will_knight_ai_coverage_allocation_gap_421_aug31.py` | 31 | Cross-entity analysis: Will Knight (WIRED) - Mechanism #421 |
 | `test_william_gavin_marketwatch_cross_entity_settlement_ipo_editorial_register_bifurcation_aug27.py` | 17 | Test: William Gavin (MarketWatch/News Corp) Cross-Entity Settlement-vs-IPO Editorial Register Bifurcation |
