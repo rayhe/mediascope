@@ -1,3 +1,34 @@
+#565 Type D: Scorer Consistency Extended to #562/#563 (Third and Fourth Agreement-Pole Pins, Divergence Count Holds at 2), 561-564 Rotation Guard, 560-565 Doc-Sync Ratchet (incl #561-#564 Miss Repair) - Sep 6 2026 13:00 PDT
+
+**Date:** 2026-09-06 13:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 564 C -> 565 D)
+**Type:** D - Test & Verify
+
+**Work:**
+1. **Full suite:** run in background with repo .venv (system python3 has no pytest); results reported in commit message; zero failures tolerated, any failure repaired before push.
+2. **Scorer consistency extended to #562/#563:** engine mean-delta arithmetic reproduces both logged MANUAL ILLUSTRATIVE deltas (1e-4). #562 NYT x Google: engine -0.45 on target Google [-0.70, -0.50, -0.40] vs peer Meta [0.40, -0.65, 0.00], matching logged delta_manual_illustrative -0.45 and delta_direction 'target harsher than peer by 0.45' - the mechanism frames the delta in the engine's own target-minus-peer convention, so no #557-style sign translation is needed. #563 Alex Heath: engine +0.1167 on Meta [0.0, 0.30, 0.10] vs OpenAI [-0.30, 0.25, 0.10], matching logged delta_meta_minus_non_meta 0.1167; YAML byte-matches engine inputs.
+3. **Standing-rule discipline: THIRD and FOURTH agreement-pole pins.** #562: engine p ~ 0.2764 is_significant False, finding layer significant:false + NOT_CALCULATED + empirical_required:true (agreement pole). #563: engine p ~ 0.5748 n.s., finding layer is_significant False (agreement pole, explicit 'agreement_pole' YAML key naming #558 as class-mate). Agreement means the illustrative deltas stay illustrative, NOT that they become proven nulls.
+4. **Divergence ratchet kept ACTIVE, not stale:** the two existing divergence cases (#552 in #555, #557 in #560) are spot-checked still to hold - engine claims significance on the synthetic illustrative inputs while the finding layer refuses. A per-window no-new-divergence test asserts engine is_significant False on both #562 and #563, so the divergence count REMAINS 2. A third divergence instance in the 561-564 window would have failed this class of assertion.
+5. **Sign-class separation:** #562 (-0.45, target-harsher asymmetry observation, control case against financial determinism) vs #563 (+0.1167, near-zero constancy falsification, against journalist-level anti-Meta bias). Opposite sign classes; the suite must not conflate an asymmetry observation with a constancy falsification. |#562| ~ 3.86x |#563|.
+6. **New competitor-coverage pattern tests:** #562 NYT-Google adversarial register assertions (mechanism registered under competitor_relationships.google in nytimes.yaml as the FIRST dedicated mechanism there, $0 financial tie + 'control case' + 'financial determinism' in finding, delta_direction uses engine convention). #563 Heath falsification assertions (analysis names the #548/#553/#558 family, scorer carries agreement_pole key referencing #558, OpenAI/Altman vs Zuckerberg comparators present).
+7. **#561 monitoring boundary:** test_type_e_561 file exists (60 def tests of verification holds), log entry carries no manual tone-delta claims and states 'no new asymmetry findings'.
+8. **#564 qualitative boundary:** no asymmetry_scorer section in mechanism_564_amazon_conde_nast_rufus_ai_licensing_deal; statistical_discipline tone_scores NOT_SCORED, p_value NOT_CALCULATED, is_significant False. Scorer consistency explicitly does not apply (same class as #554/#559).
+9. **No-brittle sweep over 561-564 window files:** none asserts the brittle newest-first heading-equality pattern (Type D #555 repaired in #551); all four use the presence-assertion convention. Pinned against regression.
+10. **Rotation guard:** git-commit order newest-first is D(#565) C(#564) B(#563) A(#562) E(#561), a valid A->B->C->D->E->A walk, closing the C->D edge this run. No duplicate iteration numbers.
+11. **Doc-sync ratchet 560-565:** README test-table and docs/ARCHITECTURE.md test-tree rows added for #561 (60), #562 (28), #563 (25), #564 (40) - miss repair per the #510/#555/#560 convention - plus #565's own row. count_stats.py --check gate green. #560 row verified still present (window extension, not replacement).
+
+**Confounders Ranked:** N/A (verification run; no new coverage findings). Methodological caveat: the agreement-pole pins assert engine is_significant False on n=3 vs n=3 synthetic illustrative arrays - this is an arithmetic-layer check (engine-drift detection), not a power analysis; low power would also produce n.s. on any small sample, so the agreement-pole finding must not be read as evidence for the null.
+
+**Research method:** venv pytest on the new test file + targeted consistency modules; calculate_asymmetry engine runs reproduced logged deltas within 1e-4; YAML re-parsed via safe_load with leaf-type assertions; git log --format=%s rotation walk; count_stats.py --check gate.
+
+**New Type D files:** `tests/test_type_d_565_scorer_consistency_562_563_agreement_rotation_doc_sync_sep06_1pm.py` - 7 classes, 45 tests, all passing (first run green). Filename embeds covered iterations 562_563 per the #555/#560 Type-D convention.
+
+**Artifact readiness:** No analysis.json update warranted. Verification run; no new asymmetry findings. Divergence count unchanged at 2; agreement-pole count now 4 (#558, #562, #563, plus class-mates).
+
+**Rotation Transparency:** Previous entry #564 Type C at 12:00 PDT Sep 6 2026 (commit 2776ae2 verified present via git log before this run's commit; git log confirmed 562 A / 563 B / 564 C sequence). Per rotation A->B->C->D->E, next after C is D. Selected Type D.
+
+**Novelty Verification:** Zero test_type_d_565 files on disk before this run (glob verified); no Type D commit with 565 in the title (git log --grep verified); scorer consistency never covered #562/#563 (repo grep returned only their own mechanism files); the 561-564 rotation window was never guarded; the 556-560 doc-sync window (from #560) is extended, not duplicated.
+
+
 #564 Type C: Amazon x Conde Nast AI Content Licensing Deal (Jul 10 2025) - Multi-Year Rufus Shopping Assistant Agreement, Terms Undisclosed, Second AI-Lab Payer for WIRED's Owner, First Dedicated Amazon Deal Mechanism for a Tracked Publication's Parent - Sep 6 2026 12:00 PDT
 
 **Date:** 2026-09-06 12:00 PDT (scheduled job_id mediascope-daily-iteration, goal_54093bda4145, rotation 563 B -> 564 C)
