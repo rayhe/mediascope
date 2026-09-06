@@ -5352,6 +5352,107 @@ entities:
         relationship: extends
         description: Amazon multi-layer publisher leverage extended with a fourth
           licensing counterparty on a novel compensation structure
+    mechanism_559_amazon_nyt_ai_licensing_deal:
+      mechanism_id: 559
+      iteration: 559
+      rotation: Type C
+      date_analyzed: '2026-09-06'
+      time_pdt: '07:00'
+      job_id: mediascope-daily-iteration
+      goal_id: goal_54093bda4145
+      mechanism_name: Amazon x New York Times AI Content Licensing Deal (May 29 2025) - $20-25M/Yr, Amazon's First Publisher AI Deal, NYT's First AI Licensing Pact, First Dedicated Mechanism for an Amazon Deal With a Tracked Publication
+      type: financial_incentive_mapping
+      type_c_focus: Deal structure, payment disclosure history (announcement vs terms), scope, the sue-one-lab-deal-another bifurcation (NYT sued OpenAI and Microsoft Dec 2023, licensed to Amazon May 2025), executive quotes, valuation benchmark ($20-25M/yr at nearly 1% of NYT 2024 revenue), Amazon publisher portfolio sequencing, and the Wirecutter affiliate-to-licensing substitution dynamic. First dedicated Amazon x NYT mechanism in the corpus; previously appeared only as portfolio-list lines (mechanism 468 amazon_publisher_portfolio_after_deal), valuation-control citations (Editor and Publisher line), and NYT-profile financial lines (amazon_dependency, amazon_affiliate_commission_cuts_2026). First mechanism for an Amazon AI licensing deal with one of the seven tracked MediaScope publications (NYT).
+      announcement_date: '2025-05-29'
+      announcement_channel: 'NYT company news release (Thursday May 29, 2025); GeekWire May 29 2025 8:17am PT; TechTarget May 29 2025; AFP wire via spacedaily May 29 2025; Digiday 2025 publisher AI deals timeline ''May 29: The New York Times and Amazon'''
+      terms_disclosure_date: '2025-07-30'
+      terms_disclosed_by: Wall Street Journal (Alexandra Bruell), 'people familiar with the matter'; terms reprinted by Editor and Publisher, GeekWire, PYMNTS, The Wrap, eWeek, Engadget, livemint
+      deal_terms:
+        structure: multi-year AI-focused licensing agreement; exact length not disclosed
+        annual_value: '$20-25 million per year (WSJ, Jul 30 2025, people familiar)'
+        relative_materiality: annual payment amounts to nearly 1% of the Times's total 2024 revenue (WSJ)
+        derived_fy2025_contribution: '~$13-17M partial-year contribution to FY2025 affiliate/licensing/other revenue (corpus derivation in nytimes.yaml; deal started May 2025)'
+        scope: NYT editorial content, NYT Cooking (food/cooking), The Athletic (sports); real-time display of summaries and short excerpts of Times content within Amazon products and services including Alexa; training of Amazon's proprietary foundation models; direct links back to Times products
+        firsts:
+        - 'Amazon''s first AI-related licensing agreement with a publisher (multiple outlets, May 2025)'
+        - 'The New York Times'' first AI-related licensing pact (multiple outlets, May 2025)'
+      sue_deal_bifurcation:
+        lawsuit: NYT Co. sued OpenAI and Microsoft for copyright infringement, Dec 2023; alleged training on Times content without payment to build substitute products
+        lawsuit_status_note: federal judge rejected parts of OpenAI/Microsoft motion to dismiss in Apr 2025 (GeekWire), writing the Times produced 'numerous' and 'widely publicized' examples of ChatGPT reproducing Times material; PYMNTS Jul 2025 notes suit ongoing at terms-disclosure time
+        deal_choice: instead of settling with OpenAI or Microsoft, the Times licensed to Amazon, OpenAI's cloud-and-commerce rival
+        mechanism_significance: tracked-publication-level instance of the sign/sue bifurcation documented in mechanism 468 (Reach signed Amazon, eyed OpenAI action) and mechanism 549 (News Corp x Meta woo-and-sue doctrine); NYT is the most prominent sue-one-lab-license-another case in the corpus
+      executive_quotes:
+        levien_announcement: 'The deal is consistent with our long-held principle that high-quality journalism is worth paying for. (Meredith Kopit Levien, NYT CEO, note to staff, May 29 2025)'
+        levien_q1_2026_earnings: 'We have done a partnership with Amazon because it met those conditions. And so far, so good. We are learning a lot there. (Q1 2026 earnings, May 6 2026; conditions = consistent with long-term strategy, sustainable fair value exchange, control over how content is used)'
+        market_reaction: NYT share price +1.85% on announcement day, closing near all-time high (AFP, May 29 2025)
+      amazon_publisher_portfolio_sequencing:
+      - 'NYT ($20-25M/yr flat, May 29 2025, Alexa plus proprietary model training) - FIRST; this mechanism'
+      - 'Conde Nast (multi-year, Rufus shopping assistant, Jul 15 2025; Digiday timeline) - second'
+      - 'Hearst (multi-year, Rufus shopping assistant, Jul 15 2025; Digiday timeline) - third'
+      - 'Reach plc (usage-based, Nova plus Alexa, Mar 2 2026, mechanism 468) - fourth'
+      affiliate_to_licensing_substitution:
+        wirecutter_amazon_affiliate_base: Wirecutter revenue heavily dependent on Amazon Associates affiliate program (largest single affiliate partner); estimated ~$50-100M+ annually in Amazon affiliate revenue (corpus derivation, nytimes.yaml)
+        affiliate_commission_cuts_2026: Amazon quietly restructured Associates program in early 2026 (Adweek; seven publishers/partners confirmed); NYT/Wirecutter among largest affiliate publishers; a 30-50% commission cut could cost NYT $15-50M+/yr (corpus derivation)
+        substitution_dynamic: as Amazon affiliate commissions decline, the fixed $20-25M/yr AI licensing payment becomes a relatively larger and more stable Amazon-origin revenue line; the licensing deal hedges affiliate exposure (structural observation, not a coverage claim)
+      directional_predictions:
+      - 'Amazon: softer (direct payer, first publisher deal, $20-25M/yr disclosed value - largest Amazon publisher payment documented in corpus)'
+      - 'OpenAI: adversarial slot (NYT is actively suing OpenAI; zero-deal; the counterparty that did NOT get licensed)'
+      - 'Microsoft: adversarial slot (co-defendant in the Dec 2023 suit; zero NYT licensing deal)'
+      - 'Meta: neutral to no-deal (no known Meta x NYT AI licensing deal; Meta AI publisher portfolio is 13 partners, none a tracked publication, per corpus overview)'
+      - 'Google: neutral to no-deal (no known Google x NYT AI licensing deal; NYT Q2 2026 10-Q explicitly flags Google traffic reduction as adversarial backdrop)'
+      predictions_not_findings: true
+      structural_contrasts:
+      - Mechanism 468 (Reach plc x Amazon Mar 2026 - usage-based fourth Amazon deal; this is the FIRST deal in the same portfolio, flat-fee not usage-based)
+      - Mechanisms 371/372 (Amazon publisher leverage matrices - this mechanism supplies the flagship tracked-publication anchor deal)
+      - Mechanism 549 (News Corp x Meta $50M/yr Mar 2026 - the Meta-leg counterpart; Meta's biggest publisher deal vs Amazon's biggest publisher deal; NYT is tracked here, News Corp is a control)
+      - Mechanism 509 (Anthropic zero-deal posture - Amazon is the lab that DID pay; NYT sued the lab that did NOT pay)
+      - Mechanism 504 (Conde Nast x OpenAI Aug 2024 - Conde Nast licensed to both OpenAI and Amazon (Rufus Jul 2025); dual-payer publisher)
+      - 'Mechanism 489 (Hearst x OpenAI - Hearst likewise dual-payer: OpenAI deal plus Amazon Rufus deal Jul 2025)'
+      - nytimes.yaml amazon_dependency and amazon_affiliate_commission_cuts_2026 (the financial context this mechanism anchors to)
+      ranked_confounders:
+      - rank: 1
+        strength: strong
+        confounder: 'deal value comes from WSJ ''people familiar with the matter'', not from either party''s disclosure; exact figure and term length remain undisclosed; the $20-25M range could misstate actual payments'
+      - rank: 2
+        strength: strong
+        confounder: no NYT post-deal Amazon-vs-Meta coverage-tone analysis exists in the corpus, so no coverage effect can be asserted from this mechanism alone
+      - rank: 3
+        strength: moderate
+        confounder: the lawsuit-vs-deal framing assumes strategic bifurcation, but NYT may have simply taken the only credible bidder (Amazon was a willing payer; OpenAI litigation posture made a deal unlikely) - commercial availability, not strategy
+      - rank: 4
+        strength: moderate
+        confounder: affiliate-to-licensing substitution math rests on corpus-derived estimates (Wirecutter ~$50-100M affiliate; 30-50% commission cuts), not disclosed figures; the hedge framing is arithmetic, not a stated NYT strategy
+      - rank: 5
+        strength: weak
+        confounder: single-deal observation; Amazon's publisher portfolio grew to four-plus deals with different structures (flat vs usage-based), so NYT terms do not generalize
+      statistical_discipline:
+        scope: qualitative structural mapping only
+        correlation_not_causation: true
+        p_value: NOT_CALCULATED
+        is_significant: false
+        tone_scores: NOT_SCORED
+      cautious_language_required: true
+      correlational_note: This mapping describes a structural financial incentive where Amazon pays the New York Times $20-25M/yr (per WSJ sourcing) for AI content licensing. Financial relationships are correlational structural incentives and do not by themselves demonstrate editorial control or causation. No causal claim.
+      no_coverage_tone_claim: true
+      sources:
+      - https://www.geekwire.com/2025/amazon-inks-deal-with-new-york-times-to-license-newspapers-content-for-ai-platforms/
+      - https://www.editorandpublisher.com/stories/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal,256961
+      - https://www.pymnts.com/news/artificial-intelligence/2025/amazon-paying-new-york-times-25-million-dollars-ai-licensing/
+      - https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/
+      - https://www.techtarget.com/ai/news/366624903/The-New-York-Times-in-multiyear-licensing-deal-with-Amazon
+      - https://www.spacedaily.com/reports/New_York_Times_signs_AI_licensing_deal_with_Amazon_999.html
+      - https://www.geekwire.com/2025/report-amazon-to-pay-at-least-20m-a-year-in-ai-content-deal-with-new-york-times/
+      - https://www.thewrap.com/amazon-pay-20-million-new-york-times/
+      - http://engadget.com/ai/the-new-york-times-and-amazons-ai-licensing-deal-is-reportedly-worth-up-to-25-million-per-year-135523853.html
+      - https://www.eweek.com/news/amazon-new-york-times-licensing-deal-ai-training/
+      research_method: 'browser.search this run (2 query sets - Amazon-NYT terms; May 2025 announcement date), verbatim full-URL listings from search results; deal facts via search-result excerpts (second-hand), bounded per iteration-492 rule; primary NYT release not opened this run'
+      verification:
+        yaml_parse_clean: true
+        goal_id: goal_54093bda4145
+        job_id: mediascope-daily-iteration
+        iteration: 559
+        type: C
+        date: 2026-09-06 07:00 PDT
   apple:
     display_name: Apple
     aliases:
